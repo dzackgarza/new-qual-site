@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $c > 0$ . Find the minimum value of $f ( x ) = e ^ { x } - c x$ among $x \in \mathbb { R }$
+Let $c > 0$ . Find the minimum value of $f ( x ) = e ^ { x } - c x$ among $x \in \RR$
 :::
 
 ::: {.solution}
@@ -76,7 +76,7 @@ x=\log c}.
 
 The exponential function is a bijection
 \[
-\mathbb R\to(0,\infty),
+\RR\to(0,\infty),
 \]
 with inverse \(\log\).
 
@@ -91,7 +91,7 @@ The second derivative is
 \boxed{
 f''(x)=e^x>0}
 \]
-for every \(x\in\mathbb R\).
+for every \(x\in\RR\).
 
 
 ::: pf-proof
@@ -104,7 +104,7 @@ Differentiate step [](#s1-1){.pf-ref}.
 
 ::: pf-step
 
-Hence \(f\) is strictly convex on \(\mathbb R\).
+Hence \(f\) is strictly convex on \(\RR\).
 
 
 ::: pf-proof

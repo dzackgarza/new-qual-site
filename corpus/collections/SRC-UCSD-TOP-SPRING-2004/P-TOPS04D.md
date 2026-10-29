@@ -15,10 +15,10 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the polynomial ring $R := \mathbb{Q}[x, y]$ and make $\mathbb{Q}$ an $R$-module via the zero actions of $x$ and $y$.
+Consider the polynomial ring $R := \QQ[x, y]$ and make $\QQ$ an $R$-module via the zero actions of $x$ and $y$.
 Compute for all $i$
 $$
-\operatorname{Tor}_i^R(\mathbb{Q}, \mathbb{Q})
+\operatorname{Tor}_i^R(\QQ, \QQ)
 $$
 and show that every $R$-module has a free resolution of length $2$ (one longer than a PID).
 :::
@@ -29,7 +29,7 @@ and show that every $R$-module has a free resolution of length $2$ (one longer t
 
 ::: pf-step
 
-Let $R=\mathbb Q[x,y]$ and $k=R/(x,y)\cong\mathbb Q$. The Koszul complex on the regular sequence $x,y$ is a free resolution
+Let $R=\QQ[x,y]$ and $k=R/(x,y)\cong\QQ$. The Koszul complex on the regular sequence $x,y$ is a free resolution
 $$
 0\longrightarrow R\xrightarrow{\binom{-y}{x}}R^2\xrightarrow{(x\;y)}R\longrightarrow k\longrightarrow0.
 $$
@@ -69,7 +69,7 @@ Every $R$-module has projective dimension at most $2$.
 ::: pf-proof
 
 Hilbert's syzygy theorem, equivalently the global-dimension theorem for polynomial rings over a field, gives
-$$\operatorname{gl.dim}\mathbb Q[x,y]=2.$$
+$$\operatorname{gl.dim}\QQ[x,y]=2.$$
 Thus for every $R$-module $M$ there is a projective resolution
 $$0\to P_2\to P_1\to P_0\to M\to0.$$
 

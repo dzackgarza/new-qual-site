@@ -117,7 +117,7 @@ which are different. Therefore the matrices are not similar.
 Every real matrix satisfying the hypotheses is similar to exactly one of $A_1,A_2$.
 
 ::: pf-proof
-All roots of the characteristic polynomial are real, so the Jordan form is defined over $\mathbb R$. [](#minus-one-block){.pf-ref} fixes the $-1$ block, and [](#possible-blocks){.pf-ref} shows that the $1$-blocks have exactly one of the two listed shapes. Thus no other similarity class is possible. Uniqueness follows from uniqueness of Jordan form.
+All roots of the characteristic polynomial are real, so the Jordan form is defined over $\RR$. [](#minus-one-block){.pf-ref} fixes the $-1$ block, and [](#possible-blocks){.pf-ref} shows that the $1$-blocks have exactly one of the two listed shapes. Thus no other similarity class is possible. Uniqueness follows from uniqueness of Jordan form.
 :::
 
 :::

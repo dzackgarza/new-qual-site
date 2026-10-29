@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $d\sigma$ denote surface measure on the unit sphere $S^2\subset\mathbb R^3$, so that $\int_{S^2}d\sigma=4\pi$.
+Let $d\sigma$ denote surface measure on the unit sphere $S^2\subset\RR^3$, so that $\int_{S^2}d\sigma=4\pi$.
 
-(a) For $\xi\in\mathbb R^3$, compute
+(a) For $\xi\in\RR^3$, compute
 \[
 \int_{S^2} e^{i x\cdot \xi}\,d\sigma(x).
 \]
@@ -28,7 +28,7 @@ Let $d\sigma$ denote surface measure on the unit sphere $S^2\subset\mathbb R^3$,
 \[
 f\longmapsto \int_{S^2}\int_{S^2} f(x+y)\,d\sigma(x)\,d\sigma(y)
 \]
-extends uniquely from $C_c^\infty(\mathbb R^3)$ to a bounded linear functional on $L^2(\mathbb R^3)$.
+extends uniquely from $C_c^\infty(\RR^3)$ to a bounded linear functional on $L^2(\RR^3)$.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ Use the Fourier-transform convention
 \[
 \widehat \mu(\xi)
 =
-\int_{\mathbb R^3}e^{ix\cdot\xi}\,d\mu(x)
+\int_{\RR^3}e^{ix\cdot\xi}\,d\mu(x)
 \]
 for finite measures.
 
@@ -45,7 +45,7 @@ for finite measures.
 
 Fix
 \[
-\xi\in\mathbb R^3,
+\xi\in\RR^3,
 \qquad
 \rho=|\xi|.
 \]
@@ -269,12 +269,12 @@ as \(r\to0\), the formula from step [](#s1-8){.pf-ref} extends continuously to t
 
 For every
 \[
-f\in C_c^\infty(\mathbb R^3),
+f\in C_c^\infty(\RR^3),
 \]
 the functional in the problem equals
 \[
 \boxed{
-\int_{\mathbb R^3}f(z)\,d\nu(z)}.
+\int_{\RR^3}f(z)\,d\nu(z)}.
 \]
 
 
@@ -343,9 +343,9 @@ and use step [](#s1-10){.pf-ref}.
 
 ::: {.pf-step #s1-14}
 
-In polar coordinates on \(\mathbb R^3\),
+In polar coordinates on \(\RR^3\),
 \[
-\int_{\mathbb R^3}
+\int_{\RR^3}
 |\widehat\nu(\xi)|^2\,d\xi
 =
 C
@@ -429,7 +429,7 @@ and \(\int_1^\infty r^{-2}\,dr<\infty\).
 Hence
 \[
 \boxed{
-\widehat\nu\in L^2(\mathbb R^3)}.
+\widehat\nu\in L^2(\RR^3)}.
 \]
 
 
@@ -445,14 +445,14 @@ Combine steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref}.
 
 By Plancherel, there exists
 \[
-g\in L^2(\mathbb R^3)
+g\in L^2(\RR^3)
 \]
 whose Fourier transform is \(\widehat\nu\).
 
 
 ::: pf-proof
 
-The Fourier transform is an isomorphism of \(L^2(\mathbb R^3)\) onto itself up to the usual normalization constant.
+The Fourier transform is an isomorphism of \(L^2(\RR^3)\) onto itself up to the usual normalization constant.
 
 :::
 
@@ -478,14 +478,14 @@ The finite measure \(\nu\) defines a tempered distribution whose Fourier transfo
 
 Therefore, for
 \[
-f\in C_c^\infty(\mathbb R^3),
+f\in C_c^\infty(\RR^3),
 \]
 the functional is
 \[
 \boxed{
 \Lambda(f)
 =
-\int_{\mathbb R^3}f(z)g(z)\,dz}.
+\int_{\RR^3}f(z)g(z)\,dz}.
 \]
 
 
@@ -519,7 +519,7 @@ Apply the \(L^2\) Cauchy--Schwarz inequality to step [](#s1-20){.pf-ref}.
 
 ::: pf-step
 
-Hence \(\Lambda\) is bounded with respect to the \(L^2\)-norm on \(C_c^\infty(\mathbb R^3)\).
+Hence \(\Lambda\) is bounded with respect to the \(L^2\)-norm on \(C_c^\infty(\RR^3)\).
 
 
 ::: pf-proof
@@ -534,9 +534,9 @@ Step [](#s1-21){.pf-ref} gives a uniform linear bound.
 
 Since
 \[
-C_c^\infty(\mathbb R^3)
+C_c^\infty(\RR^3)
 \]
-is dense in \(L^2(\mathbb R^3)\), \(\Lambda\) extends uniquely to a bounded linear functional on \(L^2(\mathbb R^3)\).
+is dense in \(L^2(\RR^3)\), \(\Lambda\) extends uniquely to a bounded linear functional on \(L^2(\RR^3)\).
 
 
 ::: pf-proof

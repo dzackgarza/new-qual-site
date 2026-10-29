@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and let $f,g:U\to\mathbb C$ be analytic except for isolated singularities.
+Let $U\subset\CC$ be open and let $f,g:U\to\CC$ be analytic except for isolated singularities.
 Let $z_0\in U$.
 
 1. Is the residue of $f+g$ at $z_0$ equal to the sum of the residues of $f$ and $g$ at $z_0$?
@@ -129,7 +129,7 @@ This is exactly step [](#s1-3){.pf-ref}.
 For products, the coefficient of \((z-z_0)^{-1}\) is generally
 \[
 \boxed{
-\sum_{k\in\mathbb Z}
+\sum_{k\in\ZZ}
 a_kb_{-1-k}},
 \]
 not merely

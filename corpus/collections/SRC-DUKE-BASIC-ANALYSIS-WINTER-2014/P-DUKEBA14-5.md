@@ -52,7 +52,7 @@ For $n\ge1$ this is bounded, for example by $37$. Hence $(x_n)$ is a bounded seq
 Apply Bolzano--Weierstrass.
 
 ::: pf-proof
-Every bounded sequence in $\mathbb R$ has a convergent subsequence. Therefore $(x_n)$ has a convergent subsequence.
+Every bounded sequence in $\RR$ has a convergent subsequence. Therefore $(x_n)$ has a convergent subsequence.
 :::
 
 :::

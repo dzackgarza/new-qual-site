@@ -19,10 +19,10 @@ audit:
 ::: {.problem}
 Let
 \[
-D(t)=\{(x,y)\in\mathbb R^2:x^2+y^2\le r(t)^2\},
+D(t)=\{(x,y)\in\RR^2:x^2+y^2\le r(t)^2\},
 \]
-where $r:\mathbb R\to\mathbb R$ is continuously differentiable.
-For a given smooth nonnegative function $u:\mathbb R^2\times\mathbb R\to\mathbb R$, express
+where $r:\RR\to\RR$ is continuously differentiable.
+For a given smooth nonnegative function $u:\RR^2\times\RR\to\RR$, express
 \[
 \frac{d}{dt}\left(\int_{D(t)}u(x,t)\,dx\right)
 -
@@ -40,7 +40,7 @@ R(t)=|r(t)|.
 \]
 Then
 \[
-D(t)=\{x\in\mathbb R^2:\|x\|\le R(t)\}.
+D(t)=\{x\in\RR^2:\|x\|\le R(t)\}.
 \]
 
 ::: pf

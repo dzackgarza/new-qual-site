@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF82-2
 kind: problem
-title: Reduction modulo the ideal $(7,x-3)$ in $\mathbb Z[x]$
+title: Reduction modulo the ideal $(7,x-3)$ in $\ZZ[x]$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $R=\mathbb Z[x]$ and $I=(7,x-3)$.
+Let $R=\ZZ[x]$ and $I=(7,x-3)$.
 
 (a) Show that for every $r\in R$ there is an integer $0\le\alpha\le6$ such that $r-\alpha\in I$.
 
@@ -34,7 +34,7 @@ Let $R=\mathbb Z[x]$ and $I=(7,x-3)$.
 ::: {.solution}
 Define
 $$
-\varphi:\mathbb Z[x]\longrightarrow\mathbb F_7,
+\varphi:\ZZ[x]\longrightarrow\mathbb F_7,
 \qquad
 \varphi(r)=r(3)\pmod7.
 $$
@@ -60,17 +60,17 @@ $$
 I\subseteq\ker\varphi.
 $$
 
-Conversely, for any $r\in\mathbb Z[x]$, division by the monic polynomial
+Conversely, for any $r\in\ZZ[x]$, division by the monic polynomial
 $x-3$ gives
 $$
 r(x)=(x-3)q(x)+r(3)
 $$
-with $q(x)\in\mathbb Z[x]$. If $r\in\ker\varphi$, then $r(3)$ is divisible
+with $q(x)\in\ZZ[x]$. If $r\in\ker\varphi$, then $r(3)$ is divisible
 by $7$, so
 $$
 r(3)=7m
 $$
-for some $m\in\mathbb Z$. Hence
+for some $m\in\ZZ$. Hence
 $$
 r=(x-3)q+7m\in I.
 $$
@@ -89,7 +89,7 @@ Every polynomial has a unique residue representative among $0,1,\ldots,6$.
 
 ::: pf-proof
 
-For $r\in\mathbb Z[x]$, choose the unique integer
+For $r\in\ZZ[x]$, choose the unique integer
 $$
 0\le\alpha\le6
 $$

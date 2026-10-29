@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF11H
 kind: problem
-title: Jordan form of a companion-like $3\times 3$ matrix over $\mathbb{C}$ and $\overline{\mathbb{F}_3}$
+title: Jordan form of a companion-like $3\times 3$ matrix over $\CC$ and $\overline{\mathbb{F}_3}$
 classification:
   areas:
   - algebra
@@ -97,19 +97,19 @@ m_A(t)=t^3-1.
 :::
 
 ::: pf-step
-Over \(\mathbb C\), the Jordan canonical form is
+Over \(\CC\), the Jordan canonical form is
 \[
 \operatorname{diag}(1,\omega,\omega^2),
 \]
 where \(\omega=e^{2\pi i/3}\).
 
 ::: pf-proof
-Over \(\mathbb C\),
+Over \(\CC\),
 \[
 t^3-1=(t-1)(t-\omega)(t-\omega^2),
 \]
 and the three roots are distinct.
-By step [](#char-and-min-poly){.pf-ref}, the minimal polynomial of \(A\) has no repeated factor over \(\mathbb C\).
+By step [](#char-and-min-poly){.pf-ref}, the minimal polynomial of \(A\) has no repeated factor over \(\CC\).
 Therefore \(A\) is diagonalizable.
 Its eigenvalues are exactly the roots of its characteristic polynomial, namely
 \[

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Does there exist an open dense subset of $\mathbb R$ with Lebesgue measure equal to one?
+Does there exist an open dense subset of $\RR$ with Lebesgue measure equal to one?
 Either construct an example or prove that one does not exist.
 :::
 
@@ -36,12 +36,12 @@ Either construct an example or prove that one does not exist.
 Construct an open dense set of finite positive measure.
 
 ::: pf-proof
-Enumerate the rationals as $\mathbb Q=\{q_1,q_2,\ldots\}$ and set
+Enumerate the rationals as $\QQ=\{q_1,q_2,\ldots\}$ and set
 \[
 U=\bigcup_{n=1}^\infty \left(q_n-2^{-n-3},q_n+2^{-n-3}\right).
 \]
 Then $U$ is open.
-It contains $\mathbb Q$, so it is dense in $\mathbb R$.
+It contains $\QQ$, so it is dense in $\RR$.
 Moreover, by countable subadditivity,
 \[
 m(U)\le \sum_{n=1}^\infty 2^{-n-2}=\frac14<\infty.
@@ -63,12 +63,12 @@ Let $a=m(U)>0$ and define
 \[
 V=a^{-1}U=\{a^{-1}x:x\in U\}.
 \]
-A nonzero dilation is a homeomorphism of $\mathbb R$, so $V$ is again open and dense.
+A nonzero dilation is a homeomorphism of $\RR$, so $V$ is again open and dense.
 By the scaling property of Lebesgue measure,
 \[
 m(V)=a^{-1}m(U)=1.
 \]
-Hence an open dense subset of $\mathbb R$ of Lebesgue measure exactly one does exist.
+Hence an open dense subset of $\RR$ of Lebesgue measure exactly one does exist.
 :::
 
 :::

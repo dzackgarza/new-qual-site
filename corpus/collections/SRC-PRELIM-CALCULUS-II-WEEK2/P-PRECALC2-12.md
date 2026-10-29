@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-For what values of $\alpha , \beta \in \mathbb { R }$ does the series
+For what values of $\alpha , \beta \in \RR$ does the series
 
 $$
 \sum _ { n = 2 } ^ { \infty } { \frac { 1 } { n ^ { \alpha } \log ( n ) ^ { \beta } } }

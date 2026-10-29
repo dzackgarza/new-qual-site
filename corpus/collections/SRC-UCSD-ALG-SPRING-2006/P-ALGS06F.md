@@ -32,8 +32,8 @@ Prove the following.
 
 (c) If $M$ is a flat $R$-module and $N$ is an injective $R$-module, then $\operatorname{Hom}_R(M, N)$ is an injective $R$-module.
 
-(d) Let $p$ be a prime number and let $\mathbb{Z}_{(p)}$ denote the localization of $\mathbb{Z}$ with respect to its prime ideal $p\mathbb{Z}$.
-Show that $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_{(p)}, \mathbb{Q}/\mathbb{Z})$ is an injective $\mathbb{Z}$-module.
+(d) Let $p$ be a prime number and let $\ZZ_{(p)}$ denote the localization of $\ZZ$ with respect to its prime ideal $p\ZZ$.
+Show that $\operatorname{Hom}_\ZZ(\ZZ_{(p)}, \QQ/\ZZ)$ is an injective $\ZZ$-module.
 :::
 
 ::: {.solution}
@@ -153,15 +153,15 @@ extends to $B$. This is precisely the injectivity of $\operatorname{Hom}_R(M,N)$
 
 ::: {.pf-step #s5}
 
-The $\mathbb Z$-module $\mathbb Z_{(p)}$ is flat.
+The $\ZZ$-module $\ZZ_{(p)}$ is flat.
 
 ::: pf-proof
 
 Every localization $S^{-1}R$ is flat as an $R$-module. Here
 \[
-\mathbb Z_{(p)}=S^{-1}\mathbb Z,
+\ZZ_{(p)}=S^{-1}\ZZ,
 \qquad
-S=\mathbb Z\setminus p\mathbb Z.
+S=\ZZ\setminus p\ZZ.
 \]
 
 :::
@@ -170,15 +170,15 @@ S=\mathbb Z\setminus p\mathbb Z.
 
 ::: {.pf-step #s6}
 
-The $\mathbb Z$-module $\mathbb Q/\mathbb Z$ is injective.
+The $\ZZ$-module $\QQ/\ZZ$ is injective.
 
 ::: pf-proof
 
-A $\mathbb Z$-module is injective if and only if it is divisible. The group $\mathbb Q/\mathbb Z$ is divisible: given $q+\mathbb Z$ and a nonzero integer $n$,
+A $\ZZ$-module is injective if and only if it is divisible. The group $\QQ/\ZZ$ is divisible: given $q+\ZZ$ and a nonzero integer $n$,
 \[
-n\left(\frac qn+\mathbb Z\right)=q+\mathbb Z.
+n\left(\frac qn+\ZZ\right)=q+\ZZ.
 \]
-Hence $\mathbb Q/\mathbb Z$ is injective.
+Hence $\QQ/\ZZ$ is injective.
 
 :::
 
@@ -188,19 +188,19 @@ Hence $\mathbb Q/\mathbb Z$ is injective.
 
 Therefore
 \[
-\operatorname{Hom}_\mathbb Z(\mathbb Z_{(p)},\mathbb Q/\mathbb Z)
+\operatorname{Hom}_\ZZ(\ZZ_{(p)},\QQ/\ZZ)
 \]
-is an injective $\mathbb Z$-module.
+is an injective $\ZZ$-module.
 
 ::: pf-proof
 
 Apply part (c), proved in step [](#s4){.pf-ref}, with
 \[
-R=\mathbb Z,
+R=\ZZ,
 \qquad
-M=\mathbb Z_{(p)},
+M=\ZZ_{(p)},
 \qquad
-N=\mathbb Q/\mathbb Z.
+N=\QQ/\ZZ.
 \]
 The hypotheses hold by steps [](#s5){.pf-ref} and [](#s6){.pf-ref}. This proves part (d).
 

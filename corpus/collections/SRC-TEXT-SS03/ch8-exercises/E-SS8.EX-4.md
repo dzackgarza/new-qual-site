@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Does there exist a holomorphic surjection from the unit disc to $\mathbb { C } ?$
+4. Does there exist a holomorphic surjection from the unit disc to $\CC ?$
 
 [Hint: Move the upper half-plane “down” and then square it to get C.]
 :::
@@ -38,9 +38,9 @@ Define
 \[
 F(z)=g(z)^2.
 \]
-This is holomorphic on $\mathbb D$. To prove surjectivity, let $\zeta\in\mathbb C$. Choose one square root $w$ of $\zeta$ with $\Im w\ge0$; one of the two square roots always has nonnegative imaginary part. Then $\Im w>-1$, so $w=g(z)$ for some $z\in\mathbb D$. Consequently
+This is holomorphic on $\mathbb D$. To prove surjectivity, let $\zeta\in\CC$. Choose one square root $w$ of $\zeta$ with $\Im w\ge0$; one of the two square roots always has nonnegative imaginary part. Then $\Im w>-1$, so $w=g(z)$ for some $z\in\mathbb D$. Consequently
 \[
 F(z)=g(z)^2=w^2=\zeta.
 \]
-Thus $F:\mathbb D\to\mathbb C$ is a holomorphic surjection.
+Thus $F:\mathbb D\to\CC$ is a holomorphic surjection.
 :::

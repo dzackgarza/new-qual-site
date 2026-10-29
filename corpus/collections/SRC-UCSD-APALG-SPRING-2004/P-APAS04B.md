@@ -25,17 +25,17 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $A\in M_n$. Show that if $z^HAz=0$ for all $z\in\mathbb{C}^n$ then $A=0$.
+(a) Let $A\in M_n$. Show that if $z^HAz=0$ for all $z\in\CC^n$ then $A=0$.
 
-(b) Give a $2\times 2$ example of $A\in M_2(\mathbb{R})$, where $A\neq 0$, but $x^TAx=0$
-for all $x\in\mathbb{R}^2$.
+(b) Give a $2\times 2$ example of $A\in M_2(\RR)$, where $A\neq 0$, but $x^TAx=0$
+for all $x\in\RR^2$.
 
-(c) Show that $A\in M_n$ is normal iff $\|Ax\|_2=\|A^Hx\|_2$ for all $x\in\mathbb{C}^n$.
+(c) Show that $A\in M_n$ is normal iff $\|Ax\|_2=\|A^Hx\|_2$ for all $x\in\CC^n$.
 
 (d) Show that $A\in M_n$ is normal iff $(Ax,Ay)=(A^Hx,A^Hy)$ for all
-$x,y\in\mathbb{C}^n$.
+$x,y\in\CC^n$.
 
-(Notation: $M_n$ denotes the set of $n\times n$ complex matrices; $M_2(\mathbb{R})$
+(Notation: $M_n$ denotes the set of $n\times n$ complex matrices; $M_2(\RR)$
 denotes the set of $2\times 2$ real matrices.)
 :::
 
@@ -44,7 +44,7 @@ denotes the set of $2\times 2$ real matrices.)
 ::: pf
 
 ::: {.pf-step #diagonal-entries-zero}
-If $z^HAz=0$ for every $z\in\mathbb C^n$, then every diagonal entry of $A$ is
+If $z^HAz=0$ for every $z\in\CC^n$, then every diagonal entry of $A$ is
 zero.
 
 ::: pf-proof
@@ -81,7 +81,7 @@ For part (b), the matrix
 \[
 A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}
 \]
-is nonzero and satisfies $x^TAx=0$ for every $x\in\mathbb R^2$.
+is nonzero and satisfies $x^TAx=0$ for every $x\in\RR^2$.
 
 ::: pf-proof
 For $x=(u,v)^T$,
@@ -94,7 +94,7 @@ The matrix is visibly nonzero.
 :::
 
 ::: pf-step
-If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\mathbb C^n$.
+If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\CC^n$.
 
 ::: pf-proof
 Normality means $A^HA=AA^H$. Therefore
@@ -125,7 +125,7 @@ Thus $A$ is normal.
 :::
 
 ::: pf-step
-If $A$ is normal, then $(Ax,Ay)=(A^Hx,A^Hy)$ for every $x,y\in\mathbb C^n$.
+If $A$ is normal, then $(Ax,Ay)=(A^Hx,A^Hy)$ for every $x,y\in\CC^n$.
 
 ::: pf-proof
 Using the standard Hermitian inner product $(u,v)=u^Hv$ and $A^HA=AA^H$,

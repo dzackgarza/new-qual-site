@@ -29,7 +29,7 @@ Show that the functions
 \[
 e^{\alpha_1t},\ldots,e^{\alpha_nt}
 \]
-are linearly independent over $\mathbb R$.
+are linearly independent over $\RR$.
 :::
 
 ::: {.solution}

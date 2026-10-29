@@ -23,7 +23,7 @@ Problem 11. Suppose a $4\times4$ integer matrix has four distinct real eigenvalu
 \]
 Prove that
 \[
-\lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2\in\mathbb Z.
+\lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2\in\ZZ.
 \]
 :::
 
@@ -33,7 +33,7 @@ Prove that
 
 ::: {.pf-step #s1-1}
 
-The matrix $A$ is diagonalizable over $\mathbb R$.
+The matrix $A$ is diagonalizable over $\RR$.
 
 
 ::: pf-proof
@@ -150,7 +150,7 @@ Therefore
 \[
 \boxed{
 \lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2
-\in\mathbb Z
+\in\ZZ
 }.
 \]
 

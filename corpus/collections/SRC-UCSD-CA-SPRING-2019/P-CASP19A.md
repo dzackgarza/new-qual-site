@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $f$ be an entire function.
-Assume $|f| \leq \log(|f| + 2)$ on $\mathbb{C}$.
+Assume $|f| \leq \log(|f| + 2)$ on $\CC$.
 Prove $f$ is constant.
 :::
 
@@ -29,7 +29,7 @@ Prove $f$ is constant.
 
 ::: {.pf-step #s1}
 
-The inequality $|f(z)| \le \log(|f(z)| + 2)$ holds for all $z \in \mathbb{C}$.
+The inequality $|f(z)| \le \log(|f(z)| + 2)$ holds for all $z \in \CC$.
 
 ::: pf-proof
 

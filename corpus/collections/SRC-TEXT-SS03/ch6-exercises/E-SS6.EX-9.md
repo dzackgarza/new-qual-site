@@ -73,7 +73,7 @@ Multiplying by the prefactor yields exactly the hypergeometric series, proving t
 
 Now let
 \[
-\Omega=\mathbb C\setminus[1,\infty).
+\Omega=\CC\setminus[1,\infty).
 \]
 For $z\in\Omega$ and $0\le t\le1$, the number $1-zt$ never lies on the nonpositive real axis, so the principal branch of $(1-zt)^{-\alpha}$ is holomorphic in $z$. On every compact $K\subset\Omega$ it is uniformly bounded for $0\le t\le1$. Since
 \[

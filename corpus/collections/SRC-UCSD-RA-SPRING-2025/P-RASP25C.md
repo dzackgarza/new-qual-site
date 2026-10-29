@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $E$ be the Banach space $C([0,1])$ endowed with the uniform norm.
-Let $(f_h)_{h \in \mathbb{N}} \subset E$ be a sequence and $f \in E$.
+Let $(f_h)_{h \in \NN} \subset E$ be a sequence and $f \in E$.
 
-(1) Prove that if $f_h$ converges weakly to $f$ then there is $M > 0$ such that $|f_h(x)| \leq M$ for every $x \in [0,1]$ and $h \in \mathbb{N}$.
+(1) Prove that if $f_h$ converges weakly to $f$ then there is $M > 0$ such that $|f_h(x)| \leq M$ for every $x \in [0,1]$ and $h \in \NN$.
 
 (2) Prove that if $f_h$ converges weakly to $f$ then $f_h(x) \to f(x)$ for every $x \in [0,1]$.
 
@@ -48,7 +48,7 @@ Weakly convergent sequences are uniformly bounded.
 
 Suppose $f_h\rightharpoonup f$ in $E=C([0,1])$. Every weakly convergent sequence in a Banach space is norm bounded. Indeed, for each $h$ define
 \[
-T_h:E^*\to\mathbb C,
+T_h:E^*\to\CC,
 \qquad
 T_h(\varphi)=\varphi(f_h).
 \]
@@ -82,7 +82,7 @@ Weak convergence implies pointwise convergence.
 
 Fix $x\in[0,1]$. The evaluation functional
 \[
-\delta_x:E\to\mathbb C,
+\delta_x:E\to\CC,
 \qquad
 \delta_x(g)=g(x),
 \]

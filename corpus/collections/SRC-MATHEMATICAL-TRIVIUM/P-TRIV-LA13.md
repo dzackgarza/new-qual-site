@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA13
 kind: problem
-title: Rotation and reflection matrices in $\mathbb{R}^2$
+title: Rotation and reflection matrices in $\RR^2$
 classification:
   areas: [prelim]
   topics: []
@@ -20,7 +20,7 @@ Consider the matrices $A = { \left[ \begin{array} { l l } { \cos \phi } & { - \s
 
 (a) Calculate $A ^ { - 1 } , B ^ { - 1 }$
 
-(b) Give a geometrical interpretation of the action of A and B on vectors in $\mathbb { R } ^ { 2 }$
+(b) Give a geometrical interpretation of the action of A and B on vectors in $\RR ^ { 2 }$
 
 (c) What can one say about the eigenvectors of A and B?
 :::
@@ -253,7 +253,7 @@ span those two directions.
 
 ::: {.pf-step #s1-10}
 
-Over $\mathbb C$, the rotation matrix $A$ has eigenvalues
+Over $\CC$, the rotation matrix $A$ has eigenvalues
 $$
 e^{i\phi}
 \qquad\text{and}\qquad
@@ -289,7 +289,7 @@ and similarly for $e^{-i\phi}$.
 
 ::: {.pf-step #s1-11}
 
-Over $\mathbb R$, $A$ has real eigenvectors only when
+Over $\RR$, $A$ has real eigenvectors only when
 $$
 \sin\phi=0.
 $$

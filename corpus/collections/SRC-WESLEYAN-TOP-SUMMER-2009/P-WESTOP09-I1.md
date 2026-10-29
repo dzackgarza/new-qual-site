@@ -134,14 +134,14 @@ The class of metrizable spaces is
 
 ::: pf-proof
 
-On the metrizable space $\mathbb R$, identify all nonzero points with one
+On the metrizable space $\RR$, identify all nonzero points with one
 another and leave $0$ in its own equivalence class. The quotient has two
 points, say
 \[
-p=[0],\qquad q=[\mathbb R\setminus\{0\}].
+p=[0],\qquad q=[\RR\setminus\{0\}].
 \]
 The singleton $\{q\}$ is open because its preimage
-$\mathbb R\setminus\{0\}$ is open. The singleton $\{p\}$ is not open because
+$\RR\setminus\{0\}$ is open. The singleton $\{p\}$ is not open because
 its preimage $\{0\}$ is not open. Thus the quotient is not Hausdorff: the two
 points cannot have disjoint open neighborhoods. Every metric space is
 Hausdorff, so this quotient is not metrizable.

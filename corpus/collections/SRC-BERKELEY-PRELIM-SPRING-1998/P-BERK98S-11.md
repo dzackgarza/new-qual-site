@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A,B,C,D,E,F\in\mathbb R$. Show that
+Let $A,B,C,D,E,F\in\RR$. Show that
 \[
 Ax^2+2Bxy+Cy^2+2Dxz+2Eyz+Fz^2
 \]

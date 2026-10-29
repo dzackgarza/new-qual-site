@@ -36,6 +36,6 @@ The sphere meets the torus quotient only at the common point \(c\). Give \(S^2\)
 The trivial sphere attaching map adds no relation to \(\pi_1\). Therefore
 \[
 \pi_1(X)\cong\langle x,y,t\mid [x,y]=1\rangle
-\cong \mathbb Z^2*\mathbb Z.
+\cong \ZZ^2*\ZZ.
 \]
 :::

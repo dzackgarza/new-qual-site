@@ -162,7 +162,7 @@ gives, for \(z\ne0\),
 =
 1-\frac{z^2}{3!}+\frac{z^4}{5!}-\cdots.
 \]
-The right-hand side is a power series converging on all of \(\mathbb C\),
+The right-hand side is a power series converging on all of \(\CC\),
 and its value at \(0\) is \(1\). Thus the apparent singularity at \(0\) is
 removable and the specified extension is entire.
 

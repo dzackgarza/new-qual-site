@@ -58,14 +58,14 @@ $$
 :::
 
 ::: {.pf-step #entire-reciprocal}
-If $p$ had no zero in $\mathbb C$, then
+If $p$ had no zero in $\CC$, then
 $$
 f(z)\coloneqq\frac1{p(z)}
 $$
 would be an entire function.
 
 ::: pf-proof
-Under the stated assumption, the denominator $p(z)$ is nonzero for every $z\in\mathbb C$. Since $p$ is entire, its reciprocal is holomorphic on all of $\mathbb C$.
+Under the stated assumption, the denominator $p(z)$ is nonzero for every $z\in\CC$. Since $p$ is entire, its reciprocal is holomorphic on all of $\CC$.
 :::
 
 :::
@@ -92,7 +92,7 @@ Thus
 $$
 |f(z)|\leq\max\{1,M\}
 $$
-for all $z\in\mathbb C$.
+for all $z\in\CC$.
 :::
 
 :::

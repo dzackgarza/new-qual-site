@@ -40,11 +40,11 @@ Prove (2).
 
 If
 \[
-H_0(C)=\mathbb Z,\qquad H_1(C)=\mathbb Z/3\oplus\mathbb Z,\qquad H_2(C)=\mathbb Z/4,\qquad H_3(C)=\mathbb Z/2,
+H_0(C)=\ZZ,\qquad H_1(C)=\ZZ/3\oplus\ZZ,\qquad H_2(C)=\ZZ/4,\qquad H_3(C)=\ZZ/2,
 \]
 and
 \[
-H_0(D)=\mathbb Z/8,\qquad H_1(D)=\mathbb Z\oplus\mathbb Z/6,\qquad H_2(D)=\mathbb Z/2,
+H_0(D)=\ZZ/8,\qquad H_1(D)=\ZZ\oplus\ZZ/6,\qquad H_2(D)=\ZZ/2,
 \]
 with all other homology groups zero, determine the homology groups of $\underline{\operatorname{Hom}}(C_*,D_*)$.
 Use the same circle of ideas used in proving the Künneth theorem.
@@ -92,11 +92,11 @@ Consider the bounded acyclic complex
 A:
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\times2}
-\mathbb Z
+\ZZ
 \xrightarrow{\bmod 2}
-\mathbb Z/2
+\ZZ/2
 \longrightarrow
 0,
 \]
@@ -106,9 +106,9 @@ concentrated in degrees
 \]
 It is exact:
 \[
-\ker(\mathbb Z\to\mathbb Z/2)
+\ker(\ZZ\to\ZZ/2)
 =
-2\mathbb Z
+2\ZZ
 =
 \operatorname{im}(\times2),
 \]
@@ -124,7 +124,7 @@ E
 \]
 be the chain complex
 \[
-\mathbb Z
+\ZZ
 \]
 concentrated in degree $0$.
 Then
@@ -133,9 +133,9 @@ Then
 \]
 has nonzero terms
 \[
-\mathbb Z
+\ZZ
 \xrightarrow{\times2}
-\mathbb Z
+\ZZ
 \]
 in degrees
 \[
@@ -146,7 +146,7 @@ Therefore
 H_{-2}
 \underline{\operatorname{Hom}}(A,E)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 So adding the acyclic summand $A$ to a complex does not change its homology
@@ -394,7 +394,7 @@ H_i(C),H_j(D)
 
 Over
 \[
-\mathbb Z,
+\ZZ,
 \]
 subgroups of free abelian groups are free.
 Thus a bounded-below free chain complex decomposes, up to chain homotopy,
@@ -402,14 +402,14 @@ into elementary summands representing its homology:
 
 - a free summand
   \[
-  \mathbb Z[i]
+  \ZZ[i]
   \]
   for each free homology generator in degree $i$;
 - a two-term free resolution
   \[
-  0\to\mathbb Z
+  0\to\ZZ
   \xrightarrow{\times m}
-  \mathbb Z\to0
+  \ZZ\to0
   \]
   in degrees
   \[
@@ -417,7 +417,7 @@ into elementary summands representing its homology:
   \]
   for each
   \[
-  \mathbb Z/m
+  \ZZ/m
   \]
   homology summand in degree $i$.
 
@@ -465,33 +465,33 @@ theorem.
 
 The required elementary abelian-group calculations are
 \[
-\operatorname{Hom}(\mathbb Z,B)
+\operatorname{Hom}(\ZZ,B)
 \cong
 B,
 \qquad
-\operatorname{Ext}^1(\mathbb Z,B)=0,
+\operatorname{Ext}^1(\ZZ,B)=0,
 \]
 and
 \[
-\operatorname{Hom}(\mathbb Z/m,\mathbb Z)=0,
+\operatorname{Hom}(\ZZ/m,\ZZ)=0,
 \qquad
-\operatorname{Ext}^1(\mathbb Z/m,\mathbb Z)
+\operatorname{Ext}^1(\ZZ/m,\ZZ)
 \cong
-\mathbb Z/m,
+\ZZ/m,
 \]
 while
 \[
 \operatorname{Hom}
-(\mathbb Z/m,\mathbb Z/n)
+(\ZZ/m,\ZZ/n)
 \cong
-\mathbb Z/\gcd(m,n)
+\ZZ/\gcd(m,n)
 \]
 and
 \[
 \operatorname{Ext}^1
-(\mathbb Z/m,\mathbb Z/n)
+(\ZZ/m,\ZZ/n)
 \cong
-\mathbb Z/\gcd(m,n).
+\ZZ/\gcd(m,n).
 \]
 
 
@@ -501,17 +501,17 @@ The Hom formulas are immediate.
 
 For Ext, resolve
 \[
-\mathbb Z/m
+\ZZ/m
 \]
 by
 \[
 0
 \to
-\mathbb Z
+\ZZ
 \xrightarrow{\times m}
-\mathbb Z
+\ZZ
 \to
-\mathbb Z/m
+\ZZ/m
 \to
 0.
 \]
@@ -521,25 +521,25 @@ Applying
 \]
 shows
 \[
-\operatorname{Ext}^1(\mathbb Z/m,B)
+\operatorname{Ext}^1(\ZZ/m,B)
 \cong
 B/mB.
 \]
 For
 \[
-B=\mathbb Z
+B=\ZZ
 \]
 this is
 \[
-\mathbb Z/m,
+\ZZ/m,
 \]
 and for
 \[
-B=\mathbb Z/n
+B=\ZZ/n
 \]
 it is
 \[
-\mathbb Z/\gcd(m,n).
+\ZZ/\gcd(m,n).
 \]
 
 :::
@@ -557,7 +557,7 @@ n=2,
 H_2
 \underline{\operatorname{Hom}}(C,D)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 }
 \]
 
@@ -577,9 +577,9 @@ j=2.
 Thus the Hom term is
 \[
 \operatorname{Hom}
-(\mathbb Z,\mathbb Z/2)
+(\ZZ,\ZZ/2)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 There is no Ext contribution with
 \[
@@ -601,11 +601,11 @@ n=1,
 H_1
 \underline{\operatorname{Hom}}(C,D)
 \cong
-\mathbb Z
+\ZZ
 \oplus
-\mathbb Z/6
+\ZZ/6
 \oplus
-\mathbb Z/2.
+\ZZ/2.
 }
 \]
 
@@ -621,7 +621,7 @@ are
 \operatorname{Hom}
 (H_0(C),H_1(D))
 \cong
-\mathbb Z\oplus\mathbb Z/6
+\ZZ\oplus\ZZ/6
 \]
 and
 \[
@@ -632,14 +632,14 @@ Now
 \[
 H_1(C)
 =
-\mathbb Z/3\oplus\mathbb Z,
+\ZZ/3\oplus\ZZ,
 \]
 so
 \[
 \operatorname{Hom}
-(H_1(C),\mathbb Z/2)
+(H_1(C),\ZZ/2)
 \cong
-0\oplus\mathbb Z/2.
+0\oplus\ZZ/2.
 \]
 There is no Ext contribution.
 
@@ -658,15 +658,15 @@ n=0,
 H_0
 \underline{\operatorname{Hom}}(C,D)
 \cong
-\mathbb Z
+\ZZ
 \oplus
-\mathbb Z/8
+\ZZ/8
 \oplus
-\mathbb Z/6
+\ZZ/6
 \oplus
-\mathbb Z/3
+\ZZ/3
 \oplus
-\mathbb Z/2.
+\ZZ/2.
 }
 \]
 
@@ -680,27 +680,27 @@ j=i
 are:
 \[
 \operatorname{Hom}
-(\mathbb Z,\mathbb Z/8)
+(\ZZ,\ZZ/8)
 \cong
-\mathbb Z/8,
+\ZZ/8,
 \]
 \[
 \operatorname{Hom}
-(\mathbb Z/3\oplus\mathbb Z,
-\mathbb Z\oplus\mathbb Z/6)
+(\ZZ/3\oplus\ZZ,
+\ZZ\oplus\ZZ/6)
 \cong
-\mathbb Z/3
+\ZZ/3
 \oplus
-\mathbb Z
+\ZZ
 \oplus
-\mathbb Z/6,
+\ZZ/6,
 \]
 and
 \[
 \operatorname{Hom}
-(\mathbb Z/4,\mathbb Z/2)
+(\ZZ/4,\ZZ/2)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 The potential Ext terms require
@@ -709,17 +709,17 @@ j=i+1.
 \]
 The only torsion source that could contribute is
 \[
-\mathbb Z/3
+\ZZ/3
 \subset H_1(C)
 \]
 against
 \[
-H_2(D)=\mathbb Z/2,
+H_2(D)=\ZZ/2,
 \]
 but
 \[
 \operatorname{Ext}^1
-(\mathbb Z/3,\mathbb Z/2)
+(\ZZ/3,\ZZ/2)
 =
 0.
 \]
@@ -740,11 +740,11 @@ n=-1,
 H_{-1}
 \underline{\operatorname{Hom}}(C,D)
 \cong
-\mathbb Z/8
+\ZZ/8
 \oplus
-(\mathbb Z/2)^3
+(\ZZ/2)^3
 \oplus
-(\mathbb Z/3)^2.
+(\ZZ/3)^2.
 }
 \]
 
@@ -760,20 +760,20 @@ are
 \operatorname{Hom}
 (H_1(C),H_0(D))
 \cong
-\mathbb Z/8,
+\ZZ/8,
 \]
 \[
 \operatorname{Hom}
 (H_2(C),H_1(D))
 \cong
-\mathbb Z/2,
+\ZZ/2,
 \]
 and
 \[
 \operatorname{Hom}
 (H_3(C),H_2(D))
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 The Ext terms satisfy
@@ -783,25 +783,25 @@ j=i.
 They are
 \[
 \operatorname{Ext}^1
-(\mathbb Z/3,
-\mathbb Z)
+(\ZZ/3,
+\ZZ)
 \cong
-\mathbb Z/3,
+\ZZ/3,
 \]
 \[
 \operatorname{Ext}^1
-(\mathbb Z/3,
-\mathbb Z/6)
+(\ZZ/3,
+\ZZ/6)
 \cong
-\mathbb Z/3,
+\ZZ/3,
 \]
 and
 \[
 \operatorname{Ext}^1
-(\mathbb Z/4,
-\mathbb Z/2)
+(\ZZ/4,
+\ZZ/2)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 Adding these summands gives the displayed group.
 
@@ -820,9 +820,9 @@ n=-2,
 H_{-2}
 \underline{\operatorname{Hom}}(C,D)
 \cong
-(\mathbb Z/4)^2
+(\ZZ/4)^2
 \oplus
-(\mathbb Z/2)^3.
+(\ZZ/2)^3.
 }
 \]
 
@@ -836,16 +836,16 @@ j-i=-2
 are
 \[
 \operatorname{Hom}
-(\mathbb Z/4,\mathbb Z/8)
+(\ZZ/4,\ZZ/8)
 \cong
-\mathbb Z/4
+\ZZ/4
 \]
 and
 \[
 \operatorname{Hom}
-(\mathbb Z/2,\mathbb Z/6)
+(\ZZ/2,\ZZ/6)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 The Ext terms require
@@ -855,22 +855,22 @@ j=i-1.
 They are
 \[
 \operatorname{Ext}^1
-(\mathbb Z/4,\mathbb Z)
+(\ZZ/4,\ZZ)
 \cong
-\mathbb Z/4,
+\ZZ/4,
 \]
 \[
 \operatorname{Ext}^1
-(\mathbb Z/4,\mathbb Z/6)
+(\ZZ/4,\ZZ/6)
 \cong
-\mathbb Z/2,
+\ZZ/2,
 \]
 and
 \[
 \operatorname{Ext}^1
-(\mathbb Z/2,\mathbb Z/2)
+(\ZZ/2,\ZZ/2)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 :::
@@ -888,9 +888,9 @@ n=-3,
 H_{-3}
 \underline{\operatorname{Hom}}(C,D)
 \cong
-\mathbb Z/4
+\ZZ/4
 \oplus
-(\mathbb Z/2)^3.
+(\ZZ/2)^3.
 }
 \]
 
@@ -900,30 +900,30 @@ H_{-3}
 The Hom contribution is
 \[
 \operatorname{Hom}
-(\mathbb Z/2,\mathbb Z/8)
+(\ZZ/2,\ZZ/8)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 The Ext contributions are
 \[
 \operatorname{Ext}^1
-(\mathbb Z/4,\mathbb Z/8)
+(\ZZ/4,\ZZ/8)
 \cong
-\mathbb Z/4,
+\ZZ/4,
 \]
 \[
 \operatorname{Ext}^1
-(\mathbb Z/2,\mathbb Z)
+(\ZZ/2,\ZZ)
 \cong
-\mathbb Z/2,
+\ZZ/2,
 \]
 and
 \[
 \operatorname{Ext}^1
-(\mathbb Z/2,\mathbb Z/6)
+(\ZZ/2,\ZZ/6)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 :::
@@ -941,7 +941,7 @@ n=-4,
 H_{-4}
 \underline{\operatorname{Hom}}(C,D)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 }
 \]
 
@@ -958,9 +958,9 @@ j=0,
 and equals
 \[
 \operatorname{Ext}^1
-(\mathbb Z/2,\mathbb Z/8)
+(\ZZ/2,\ZZ/8)
 \cong
-\mathbb Z/2.
+\ZZ/2.
 \]
 
 :::
@@ -1021,20 +1021,20 @@ H_n
 \underline{\operatorname{Hom}}(C,D)
 \cong
 \begin{cases}
-\mathbb Z/2,
+\ZZ/2,
 &n=2,\\
-\mathbb Z\oplus\mathbb Z/6\oplus\mathbb Z/2,
+\ZZ\oplus\ZZ/6\oplus\ZZ/2,
 &n=1,\\
-\mathbb Z\oplus\mathbb Z/8\oplus\mathbb Z/6
-\oplus\mathbb Z/3\oplus\mathbb Z/2,
+\ZZ\oplus\ZZ/8\oplus\ZZ/6
+\oplus\ZZ/3\oplus\ZZ/2,
 &n=0,\\
-\mathbb Z/8\oplus(\mathbb Z/2)^3\oplus(\mathbb Z/3)^2,
+\ZZ/8\oplus(\ZZ/2)^3\oplus(\ZZ/3)^2,
 &n=-1,\\
-(\mathbb Z/4)^2\oplus(\mathbb Z/2)^3,
+(\ZZ/4)^2\oplus(\ZZ/2)^3,
 &n=-2,\\
-\mathbb Z/4\oplus(\mathbb Z/2)^3,
+\ZZ/4\oplus(\ZZ/2)^3,
 &n=-3,\\
-\mathbb Z/2,
+\ZZ/2,
 &n=-4,\\
 0,
 &\text{otherwise}.

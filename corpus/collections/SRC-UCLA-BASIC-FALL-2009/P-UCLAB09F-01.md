@@ -21,8 +21,8 @@ audit:
 
 ::: {.pf-step #p1-s1}
 
-For each $n\in\mathbb N$, let $f_n\colon\mathbb N\to\mathbb R$ satisfy $|f_n(m)|\le 1$ for all $m,n\in\mathbb N$.
-Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\mathbb N$, the sequence $f_{n_i}(m)$ converges.
+For each $n\in\NN$, let $f_n\colon\NN\to\RR$ satisfy $|f_n(m)|\le 1$ for all $m,n\in\NN$.
+Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\NN$, the sequence $f_{n_i}(m)$ converges.
 
 :::
 
@@ -52,7 +52,7 @@ also exists and equals $0$.
 
 There is an infinite set
 \[
-N_1\subseteq\mathbb N
+N_1\subseteq\NN
 \]
 such that the sequence
 \[
@@ -129,7 +129,7 @@ n_i\in N_i.
 
 ::: {.pf-step #p2-s4}
 
-For each fixed $m\in\mathbb N$, the sequence
+For each fixed $m\in\NN$, the sequence
 \[
 f_{n_i}(m)
 \]

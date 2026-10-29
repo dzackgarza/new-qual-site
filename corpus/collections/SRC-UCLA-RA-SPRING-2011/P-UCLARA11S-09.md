@@ -13,9 +13,9 @@ Let $E\subset[0,1]$ be the middle-thirds Cantor set,
 \[
 E=\left\{\sum_{i\ge1} b_i3^{-i}: b_i\in\{0,2\}\right\}.
 \]
-Regarding $[0,1]$ as a subset of $\mathbb C$, suppose
+Regarding $[0,1]$ as a subset of $\CC$, suppose
 \[
-f:\mathbb C\setminus E\to\mathbb C
+f:\CC\setminus E\to\CC
 \]
 is holomorphic and uniformly bounded.
 Show that $f$ is constant.
@@ -27,7 +27,7 @@ Choose $M<\infty$ such that
 \[
 |f(z)|\le M
 \qquad
-(z\in\mathbb C\setminus E).
+(z\in\CC\setminus E).
 \]
 
 ::: pf
@@ -96,7 +96,7 @@ Each interval $I_j=(a_j,b_j)$ can be thickened to a closed rectangle
 Q_j
 =
 [a_j,b_j]\times[-\eta_j,\eta_j]
-\subset\mathbb C
+\subset\CC
 \]
 with
 \[
@@ -118,7 +118,7 @@ Moreover,
 
 By step [](#s1-2){.pf-ref}, the finitely many interval closures are pairwise disjoint, so their mutual distances are positive. Choose each $\eta_j>0$ small enough that the rectangles remain disjoint and also $\eta_j\le|I_j|$.
 
-The horizontal sides have nonzero imaginary part and therefore miss $E\subset\mathbb R$. The vertical sides meet the real axis only at $a_j$ and $b_j$, which lie outside $E$ by step [](#s1-2){.pf-ref}. Hence $\partial Q_j\cap E=\varnothing$.
+The horizontal sides have nonzero imaginary part and therefore miss $E\subset\RR$. The vertical sides meet the real axis only at $a_j$ and $b_j$, which lie outside $E$ by step [](#s1-2){.pf-ref}. Hence $\partial Q_j\cap E=\varnothing$.
 
 Finally,
 \[
@@ -300,7 +300,7 @@ Thus it is the desired extension.
 
 ::: {.pf-step #s1-10}
 
-The function $f$ extends to a bounded entire function on $\mathbb C$.
+The function $f$ extends to a bounded entire function on $\CC$.
 
 
 ::: pf-proof
@@ -318,13 +318,13 @@ On the overlap
 \[
 1<|z|<R,
 \]
-the two definitions agree by step [](#s1-8){.pf-ref}, so they glue to an entire function on $\mathbb C$.
+the two definitions agree by step [](#s1-8){.pf-ref}, so they glue to an entire function on $\CC$.
 
-Off $E$, this extension equals the original function and therefore has modulus at most $M$. Since $\mathbb C\setminus E$ is dense and the extension is continuous, the same bound holds on $E$. Hence
+Off $E$, this extension equals the original function and therefore has modulus at most $M$. Since $\CC\setminus E$ is dense and the extension is continuous, the same bound holds on $E$. Hence
 \[
 |\widetilde f(z)|\le M
 \]
-for every $z\in\mathbb C$.
+for every $z\in\CC$.
 
 :::
 
@@ -340,7 +340,7 @@ Therefore
 
 ::: pf-proof
 
-By step [](#s1-10){.pf-ref}, $f$ has a bounded entire extension. Liouville's theorem makes that extension constant, hence the original function on $\mathbb C\setminus E$ is constant.
+By step [](#s1-10){.pf-ref}, $f$ has a bounded entire extension. Liouville's theorem makes that extension constant, hence the original function on $\CC\setminus E$ is constant.
 
 :::
 

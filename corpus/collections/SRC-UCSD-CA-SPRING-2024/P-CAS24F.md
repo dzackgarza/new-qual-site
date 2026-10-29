@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \subset \mathbb{C}$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$.
+Let $U \subset \CC$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$.
 Write
 \[
 f^{(n)} = \underbrace{f \circ f \circ \cdots \circ f}_{n\text{ times}}.
@@ -132,7 +132,7 @@ invariance of $U$ under iteration and boundedness of $U$.
 ::: pf-step
 
 By Montel’s Theorem, $(f^{(n)})$ is a normal family on $U$.
-Let $(f^{(n_k)})$ be any subsequence that converges locally uniformly on $U$ to a holomorphic function $g: U \to \mathbb{C}$.
+Let $(f^{(n_k)})$ be any subsequence that converges locally uniformly on $U$ to a holomorphic function $g: U \to \CC$.
 
 ::: pf-proof
 

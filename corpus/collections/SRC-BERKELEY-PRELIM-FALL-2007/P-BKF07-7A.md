@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(P\in\mathbb R^{n\times n}\) satisfy \(P^3=P\). Let \(r=\operatorname{rank}P>0\). Show that there exist \(U,V\in\mathbb R^{n\times r}\) with
+Let \(P\in\RR^{n\times n}\) satisfy \(P^3=P\). Let \(r=\operatorname{rank}P>0\). Show that there exist \(U,V\in\RR^{n\times r}\) with
 \[
 V^TU=I_r
 \]

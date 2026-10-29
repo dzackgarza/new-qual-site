@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine the number of conjugacy classes of $16 \times 16$ matrices with entries in $\mathbb{Q}$ and minimal polynomial $(x^2+1)^2(x^3+2)^2$.
+Determine the number of conjugacy classes of $16 \times 16$ matrices with entries in $\QQ$ and minimal polynomial $(x^2+1)^2(x^3+2)^2$.
 :::
 
 ::: {.solution}
@@ -52,15 +52,15 @@ irreducible. The polynomial $q$ is Eisenstein at
 two and is also irreducible [@DF04]. They are
 distinct monic irreducibles.
 
-For a matrix $A$, let $x$ act on $V=\mathbb Q^{16}$
+For a matrix $A$, let $x$ act on $V=\QQ^{16}$
 by $A$. The structure theorem over the PID
-$\mathbb Q[x]$ gives a unique multiset of elementary
+$\QQ[x]$ gives a unique multiset of elementary
 divisors [@DF04]. Since the annihilator is generated
 by the minimal polynomial $p^2q^2$, the only
 possible summands are
 $$
-\mathbb Q[x]/(p^2),\quad \mathbb Q[x]/(p),\quad
-\mathbb Q[x]/(q^2),\quad \mathbb Q[x]/(q).
+\QQ[x]/(p^2),\quad \QQ[x]/(p),\quad
+\QQ[x]/(q^2),\quad \QQ[x]/(q).
 $$
 Indeed, the annihilator of a direct sum is the
 intersection of the summands' annihilators, so its
@@ -108,7 +108,7 @@ $(b,d)=(3,0)$ or $(0,2)$.
 These disjoint cases give exactly the four rows.
 
 A companion block $C_f$ represents multiplication
-by $x$ on $\mathbb Q[x]/(f)$. Thus every displayed
+by $x$ on $\QQ[x]/(f)$. Thus every displayed
 matrix realizes its tuple and has the required
 dimension and minimal polynomial by step [](#bijection-with-tuples){.pf-ref}.
 Different rows have different elementary divisors,

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be entire and let \(a_1,\ldots,a_n\) be all of its zeros in \(\mathbb C\). Suppose there exist \(R>0\) and \(\alpha>1\) such that
+Let \(f\) be entire and let \(a_1,\ldots,a_n\) be all of its zeros in \(\CC\). Suppose there exist \(R>0\) and \(\alpha>1\) such that
 \[
 |f(z)|\ge |z|^\alpha
 \]

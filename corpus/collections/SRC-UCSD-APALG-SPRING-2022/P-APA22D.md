@@ -27,7 +27,7 @@ a^8 = e,\quad b^2 = e,\quad b a b^{-1} = a^5.
 
 
 ::: {.solution}
-Let $\rho\colon G\to\mathbb C^\times$ be a one-dimensional representation. Write
+Let $\rho\colon G\to\CC^\times$ be a one-dimensional representation. Write
 \[
 \alpha=\rho(a),\qquad \beta=\rho(b).
 \]

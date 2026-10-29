@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing pairs of faces of a standard cube $I^3$ as shown.
-Compute the homology $H_*(X; \mathbb{Z})$.
+Compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ $$
 
 ::: pf-proof
 
-The $P$- and $Q$-translations identify opposite sides in the two transverse coordinate directions, producing $T^2\times I$. The half-turn of the remaining square face descends to the torus automorphism represented on $H_1(T^2)\cong\mathbb Z^2$ by $-I$.
+The $P$- and $Q$-translations identify opposite sides in the two transverse coordinate directions, producing $T^2\times I$. The half-turn of the remaining square face descends to the torus automorphism represented on $H_1(T^2)\cong\ZZ^2$ by $-I$.
 
 :::
 
@@ -87,18 +87,18 @@ This is the standard homology exact sequence of a mapping torus.
 
 Therefore
 $$
-\boxed{H_k(X;\mathbb Z)\cong
+\boxed{H_k(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,3,\\
-\mathbb Z\oplus(\mathbb Z/2)^2,&k=1,\\
-\mathbb Z,&k=2,\\
+\ZZ,&k=0,3,\\
+\ZZ\oplus(\ZZ/2)^2,&k=1,\\
+\ZZ,&k=2,\\
 0,&k>3.
 \end{cases}}
 $$
 
 ::: pf-proof
 
-On $H_1(T^2)$, $1-f_*=2I$, so its cokernel is $(\mathbb Z/2)^2$ and its kernel is $0$. On $H_0$ and $H_2$, $1-f_*=0$. Thus $H_1$ is an extension of $\mathbb Z$ by $(\mathbb Z/2)^2$, which splits because $\mathbb Z$ is free; $H_2\cong\mathbb Z$; and $H_3\cong\mathbb Z$.
+On $H_1(T^2)$, $1-f_*=2I$, so its cokernel is $(\ZZ/2)^2$ and its kernel is $0$. On $H_0$ and $H_2$, $1-f_*=0$. Thus $H_1$ is an extension of $\ZZ$ by $(\ZZ/2)^2$, which splits because $\ZZ$ is free; $H_2\cong\ZZ$; and $H_3\cong\ZZ$.
 
 :::
 

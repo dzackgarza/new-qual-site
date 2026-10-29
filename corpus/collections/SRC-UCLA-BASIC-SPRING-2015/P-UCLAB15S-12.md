@@ -67,7 +67,7 @@ The characteristic polynomial of $M$ is
 
 ::: pf-step
 
-The matrix $M$ is diagonalizable over $\mathbb R$.
+The matrix $M$ is diagonalizable over $\RR$.
 
 
 ::: pf-proof

@@ -25,7 +25,7 @@ Calculate $J ( y ) = \int _ { 0 } ^ { \infty } e ^ { - a x } \frac { \sin x y } 
 
 ::: pf-step
 
-For each fixed $y\in\mathbb R$, the integral defining $J(y)$ converges.
+For each fixed $y\in\RR$, the integral defining $J(y)$ converges.
 
 
 ::: pf-proof

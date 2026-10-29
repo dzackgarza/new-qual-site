@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1(\mathbb{R}, m)$.
-Prove that $\lim_{n \to \infty} f(n^2 x) = 0$ for almost every $x \in \mathbb{R}$.
+Let $f \in L^1(\RR, m)$.
+Prove that $\lim_{n \to \infty} f(n^2 x) = 0$ for almost every $x \in \RR$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ Estimate the exceptional sets at a fixed threshold.
 
 Fix $\varepsilon>0$ and define
 \[
-E_n(\varepsilon):=\{x\in\mathbb R:|f(n^2x)|>\varepsilon\}.
+E_n(\varepsilon):=\{x\in\RR:|f(n^2x)|>\varepsilon\}.
 \]
 With the change of variables $u=n^2x$,
 \[

@@ -25,19 +25,19 @@ audit:
 ::: {.exercise}
 Describe geometrically the sets of points $z$ in the complex plane defined by the following relations:
 
-(a) $|z-z_1|=|z-z_2|$, where $z_1,z_2\in\mathbb C$.
+(a) $|z-z_1|=|z-z_2|$, where $z_1,z_2\in\CC$.
 
 (b) $1/z=\overline z$.
 
 (c) $\operatorname{Re}(z)=3$.
 
-(d) $\operatorname{Re}(z)>c$ (respectively, $\operatorname{Re}(z)\ge c$), where $c\in\mathbb R$.
+(d) $\operatorname{Re}(z)>c$ (respectively, $\operatorname{Re}(z)\ge c$), where $c\in\RR$.
 
-(e) $\operatorname{Re}(az+b)>0$, where $a,b\in\mathbb C$.
+(e) $\operatorname{Re}(az+b)>0$, where $a,b\in\CC$.
 
 (f) $|z|=\operatorname{Re}(z)+1$.
 
-(g) $\operatorname{Im}(z)=c$, where $c\in\mathbb R$.
+(g) $\operatorname{Im}(z)=c$, where $c\in\RR$.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ Describe geometrically the sets of points $z$ in the complex plane defined by th
 
 ::: pf-step
 
-For (a), if $z_1\ne z_2$, the locus is the perpendicular bisector of the line segment joining $z_1$ and $z_2$; if $z_1=z_2$, the locus is all of $\mathbb C$.
+For (a), if $z_1\ne z_2$, the locus is the perpendicular bisector of the line segment joining $z_1$ and $z_2$; if $z_1=z_2$, the locus is all of $\CC$.
 
 ::: pf-proof
 
@@ -64,7 +64,7 @@ If $z_1\ne z_2$, this is the equation of a real affine line. It consists exactly
 
 ::: pf-step
 
-For (b), the locus is the unit circle $\{z\in\mathbb C:|z|=1\}$.
+For (b), the locus is the unit circle $\{z\in\CC:|z|=1\}$.
 
 ::: pf-proof
 
@@ -104,7 +104,7 @@ Again writing $z=x+iy$, the inequalities become $x>c$ and $x\ge c$.
 
 ::: pf-step
 
-For (e), if $a\ne0$ the locus is an open half-plane; if $a=0$, it is all of $\mathbb C$ when $\operatorname{Re}(b)>0$ and is empty when $\operatorname{Re}(b)\le0$.
+For (e), if $a\ne0$ the locus is an open half-plane; if $a=0$, it is all of $\CC$ when $\operatorname{Re}(b)>0$ and is empty when $\operatorname{Re}(b)\le0$.
 
 ::: pf-proof
 

@@ -294,7 +294,7 @@ different spatial polar angles to that same point.
 
 Apply the same nontrivial pitch or yaw rotation in
 $$
-\mathbb R^3.
+\RR^3.
 $$
 The two resulting rotated spatial directions are different because they
 started from different directions.

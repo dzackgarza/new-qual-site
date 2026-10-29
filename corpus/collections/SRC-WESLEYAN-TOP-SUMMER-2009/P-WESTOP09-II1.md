@@ -48,7 +48,7 @@ A=S^1=\partial D^2.
 \]
 The disk $D^2$ is contractible and therefore simply connected, whereas
 \[
-\pi_1(S^1)\cong\mathbb Z
+\pi_1(S^1)\cong\ZZ
 \]
 is nontrivial. Thus a subspace of a simply connected space need not be simply
 connected.

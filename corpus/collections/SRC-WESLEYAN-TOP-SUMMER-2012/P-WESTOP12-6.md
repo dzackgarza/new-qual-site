@@ -31,7 +31,7 @@ Since $A$ consists of $r$ discrete points,
 H_n(A)
 \cong
 \begin{cases}
-\mathbb Z^r,&n=0,\\
+\ZZ^r,&n=0,\\
 0,&n>0.
 \end{cases}
 \]
@@ -41,7 +41,7 @@ H_n(A)
 
 Each point contributes one path component, so
 \[
-H_0(A)\cong\mathbb Z^r.
+H_0(A)\cong\ZZ^r.
 \]
 Every higher homology group of a discrete space vanishes.
 
@@ -56,7 +56,7 @@ The homology of the sphere is
 H_n(S^2)
 \cong
 \begin{cases}
-\mathbb Z,&n=0,2,\\
+\ZZ,&n=0,2,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -116,7 +116,7 @@ In degree $2$,
 \boxed{
 H_2(S^2,A)
 \cong
-\mathbb Z.
+\ZZ.
 }
 \]
 
@@ -145,7 +145,7 @@ Thus
 \[
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \longrightarrow
 H_2(S^2,A)
 \longrightarrow
@@ -155,7 +155,7 @@ is exact, giving
 \[
 H_2(S^2,A)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -170,9 +170,9 @@ The degree-$1$ and degree-$0$ part of the long exact sequence is
 \longrightarrow
 H_1(S^2,A)
 \xrightarrow{\partial}
-\mathbb Z^r
+\ZZ^r
 \xrightarrow{i_*}
-\mathbb Z
+\ZZ
 \longrightarrow
 H_0(S^2,A)
 \longrightarrow
@@ -186,9 +186,9 @@ Insert
 \[
 H_1(S^2)=0,
 \qquad
-H_0(A)=\mathbb Z^r,
+H_0(A)=\ZZ^r,
 \qquad
-H_0(S^2)=\mathbb Z
+H_0(S^2)=\ZZ
 \]
 into the long exact sequence of the pair.
 
@@ -221,13 +221,13 @@ Each generator of
 \[
 H_0(A)
 \cong
-\mathbb Z^r
+\ZZ^r
 \]
 comes from one point of $A$.
 Under inclusion into the connected space $S^2$, every such point represents
 the same generator of
 \[
-H_0(S^2)\cong\mathbb Z.
+H_0(S^2)\cong\ZZ.
 \]
 Therefore each standard basis vector maps to $1$, giving the augmentation
 map.
@@ -242,7 +242,7 @@ The map $i_*$ is surjective and
 \[
 \ker i_*
 \cong
-\mathbb Z^{r-1}.
+\ZZ^{r-1}.
 \]
 
 
@@ -260,7 +260,7 @@ Its kernel is
 \left\{
 (n_1,\dots,n_r)
 \in
-\mathbb Z^r:
+\ZZ^r:
 n_1+\cdots+n_r=0
 \right\}.
 \]
@@ -286,7 +286,7 @@ Therefore
 \boxed{
 H_1(S^2,A)
 \cong
-\mathbb Z^{r-1}.
+\ZZ^{r-1}.
 }
 \]
 
@@ -310,7 +310,7 @@ H_1(S^2,A)
 \cong
 \ker i_*
 \cong
-\mathbb Z^{r-1}
+\ZZ^{r-1}
 \]
 by step [](#s1-7){.pf-ref}.
 
@@ -332,7 +332,7 @@ H_0(S^2,A)=0.
 
 In step [](#s1-5){.pf-ref}, the map
 \[
-i_*:\mathbb Z^r\to\mathbb Z
+i_*:\ZZ^r\to\ZZ
 \]
 is surjective by step [](#s1-7){.pf-ref}.
 Hence its cokernel is zero.
@@ -353,9 +353,9 @@ The complete answer is
 H_n(S^2,A)
 \cong
 \begin{cases}
-\mathbb Z,
+\ZZ,
 &n=2,\\
-\mathbb Z^{r-1},
+\ZZ^{r-1},
 &n=1,\\
 0,
 &n=0\text{ or }n\ge3.

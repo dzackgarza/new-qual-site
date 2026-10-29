@@ -30,7 +30,7 @@ State and prove the Schur Decomposition Theorem.
 
 ::: pf-step
 
-**Schur Decomposition Theorem.** For every matrix $A\in M_n(\mathbb C)$, there exists a unitary matrix $U\in U(n)$ such that
+**Schur Decomposition Theorem.** For every matrix $A\in M_n(\CC)$, there exists a unitary matrix $U\in U(n)$ such that
 \[
 U^*AU=T
 \]
@@ -58,7 +58,7 @@ Every $1\times1$ matrix is already upper triangular, and the identity matrix is 
 
 ::: pf-step
 
-Assume $n>1$. Since the characteristic polynomial of $A$ splits over $\mathbb C$, choose an eigenvalue $\lambda$ and a unit eigenvector $v_1$ such that
+Assume $n>1$. Since the characteristic polynomial of $A$ splits over $\CC$, choose an eigenvalue $\lambda$ and a unit eigenvector $v_1$ such that
 \[
 Av_1=\lambda v_1.
 \]
@@ -66,7 +66,7 @@ Extend $v_1$ to an orthonormal basis
 \[
 v_1,v_2,\ldots,v_n
 \]
-of $\mathbb C^n$, and let
+of $\CC^n$, and let
 \[
 U_1=[v_1\ v_2\ \cdots\ v_n].
 \]
@@ -78,7 +78,7 @@ U_1^*AU_1=
 0 & B
 \end{pmatrix}
 \]
-for some $B\in M_{n-1}(\mathbb C)$.
+for some $B\in M_{n-1}(\CC)$.
 
 ::: pf-proof
 

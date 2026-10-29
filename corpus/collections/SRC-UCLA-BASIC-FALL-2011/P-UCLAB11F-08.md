@@ -21,13 +21,13 @@ Problem 8. Assume that a complex matrix $A$ satisfies
 \[
 \ker(A-\lambda I)=\ker((A-\lambda I)^2)
 \]
-for every $\lambda\in\mathbb C$.
+for every $\lambda\in\CC$.
 Show from first principles, without using the theory of canonical forms, that $A$ is diagonalizable.
 :::
 
 ::: {.solution}
 
-The proof is by induction on the dimension $n$ of the underlying complex vector space $V=\mathbb C^n$.
+The proof is by induction on the dimension $n$ of the underlying complex vector space $V=\CC^n$.
 
 ::: pf
 
@@ -46,7 +46,7 @@ Every linear operator on a one-dimensional vector space is multiplication by a s
 
 ::: {.pf-step #s1-2}
 
-Assume $n>1$. Then $A$ has an eigenvalue $\lambda\in\mathbb C$ and a nonzero eigenspace
+Assume $n>1$. Then $A$ has an eigenvalue $\lambda\in\CC$ and a nonzero eigenspace
 \[
 E=\ker(A-\lambda I).
 \]
@@ -54,7 +54,7 @@ E=\ker(A-\lambda I).
 
 ::: pf-proof
 
-The characteristic polynomial of $A$ has degree $n$, so by the fundamental theorem of algebra it has a root $\lambda\in\mathbb C$. Hence
+The characteristic polynomial of $A$ has degree $n$, so by the fundamental theorem of algebra it has a root $\lambda\in\CC$. Hence
 \[
 \det(A-\lambda I)=0,
 \]
@@ -196,7 +196,7 @@ Let
 \[
 W=\operatorname{im}B.
 \]
-For every $\mu\in\mathbb C$, the restriction
+For every $\mu\in\CC$, the restriction
 \[
 A_W:=A|_W
 \]

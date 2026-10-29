@@ -12,8 +12,8 @@ audit:
 
 ::: {.problem}
 1. Prove that every second-countable topological space is separable.
-2. Prove that the Sorgenfrey line $\mathbb R_\ell$ is separable but not second countable.
-3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\mathbb R$, where $\mathfrak c=|\mathbb R|$.
+2. Prove that the Sorgenfrey line $\RR_\ell$ is separable but not second countable.
+3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\RR$, where $\mathfrak c=|\RR|$.
 :::
 
 ::: {.solution}
@@ -103,7 +103,7 @@ $$
 
 The Sorgenfrey line
 $$
-\mathbb R_\ell
+\RR_\ell
 $$
 is separable.
 
@@ -112,7 +112,7 @@ is separable.
 
 Recall that a basis for
 $$
-\mathbb R_\ell
+\RR_\ell
 $$
 consists of the half-open intervals
 $$
@@ -122,11 +122,11 @@ a<b.
 $$
 Every such interval contains a rational number. Therefore
 $$
-\mathbb Q
+\QQ
 $$
 meets every nonempty basic open set, hence is dense in
 $$
-\mathbb R_\ell.
+\RR_\ell.
 $$
 Thus the Sorgenfrey line is separable.
 
@@ -151,7 +151,7 @@ were a countable base.
 
 For each
 $$
-x\in\mathbb R,
+x\in\RR,
 $$
 the set
 $$
@@ -215,11 +215,11 @@ a contradiction.
 
 Thus there would be an injection
 $$
-\mathbb R\hookrightarrow\mathbb N,
+\RR\hookrightarrow\NN,
 $$
 which is impossible. Hence
 $$
-\mathbb R_\ell
+\RR_\ell
 $$
 is not second countable.
 
@@ -239,7 +239,7 @@ D\subseteq X.
 $$
 Two continuous maps
 $$
-f,g:X\to\mathbb R
+f,g:X\to\RR
 $$
 that agree on
 $$
@@ -255,7 +255,7 @@ $$
 
 Consider the map
 $$
-(f,g):X\to\mathbb R^2.
+(f,g):X\to\RR^2.
 $$
 The diagonal
 $$
@@ -263,12 +263,12 @@ $$
 =
 \{
 (r,r):
-r\in\mathbb R
+r\in\RR
 \}
 $$
 is closed in
 $$
-\mathbb R^2.
+\RR^2.
 $$
 Hence the equalizer
 $$
@@ -323,9 +323,9 @@ $$
 defines an injection
 $$
 \boxed{
-C(X,\mathbb R)
+C(X,\RR)
 \hookrightarrow
-\mathbb R^D}.
+\RR^D}.
 $$
 
 
@@ -334,9 +334,9 @@ $$
 Define
 $$
 R:
-C(X,\mathbb R)
+C(X,\RR)
 \to
-\mathbb R^D
+\RR^D
 $$
 by
 $$
@@ -364,7 +364,7 @@ is injective.
 
 One has
 $$
-|\mathbb R^D|
+|\RR^D|
 \le
 \mathfrak c.
 $$
@@ -378,7 +378,7 @@ D
 $$
 is finite, then
 $$
-|\mathbb R^D|
+|\RR^D|
 =
 \mathfrak c.
 $$
@@ -388,7 +388,7 @@ D
 $$
 is countably infinite, then
 $$
-|\mathbb R^D|
+|\RR^D|
 =
 \mathfrak c^{\aleph_0}.
 $$
@@ -420,7 +420,7 @@ $$
 Therefore
 $$
 \boxed{
-|C(X,\mathbb R)|
+|C(X,\RR)|
 \le
 \mathfrak c}
 $$

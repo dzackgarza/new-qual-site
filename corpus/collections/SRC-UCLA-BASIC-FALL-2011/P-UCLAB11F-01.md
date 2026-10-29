@@ -28,7 +28,7 @@ Prove that there is a unique point $x\in X$ such that $f(x)=x$.
 
 Define
 \[
-h:X\to\mathbb R,
+h:X\to\RR,
 \qquad
 h(x)=d(x,f(x)).
 \]
@@ -69,7 +69,7 @@ x\longmapsto (x,f(x))
 \]
 from $X$ to $X\times X$ is continuous by step [](#s1-1){.pf-ref}. The metric
 \[
-d:X\times X\to\mathbb R
+d:X\times X\to\RR
 \]
 is continuous, because
 \[

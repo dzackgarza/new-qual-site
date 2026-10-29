@@ -26,11 +26,11 @@ Show that $f$ is homotopic to $g$ if and only if they have the same mapping degr
 ::: {.pf-step #s1}
 
 Since $S^3$ is $2$-connected, obstruction theory gives a natural bijection
-$$[T^3,S^3]\cong H^3(T^3;\mathbb Z).$$
+$$[T^3,S^3]\cong H^3(T^3;\ZZ).$$
 
 ::: pf-proof
 
-For a CW complex of dimension at most $3$ and a $2$-connected target whose first nonzero homotopy group is $\pi_3(S^3)=\mathbb Z$, the primary obstruction/classification class in $H^3(-;\mathbb Z)$ completely classifies maps up to homotopy.
+For a CW complex of dimension at most $3$ and a $2$-connected target whose first nonzero homotopy group is $\pi_3(S^3)=\ZZ$, the primary obstruction/classification class in $H^3(-;\ZZ)$ completely classifies maps up to homotopy.
 
 :::
 
@@ -50,7 +50,7 @@ The universal degree-$3$ class represents the first Postnikov stage of $S^3$ thr
 
 ::: {.pf-step #s3}
 
-Since $H^3(T^3;\mathbb Z)\cong\mathbb Z$, one has
+Since $H^3(T^3;\ZZ)\cong\ZZ$, one has
 $$f^*u=(\deg f)\,v,$$
 where $v$ is the orientation generator of $T^3$.
 

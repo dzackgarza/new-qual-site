@@ -9,7 +9,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove Goursat's theorem: if $f:\mathbb C\to\mathbb C$ is complex differentiable (and hence continuous), then for every triangle $\Delta\subset\mathbb C$,
+Prove Goursat's theorem: if $f:\CC\to\CC$ is complex differentiable (and hence continuous), then for every triangle $\Delta\subset\CC$,
 \[
 \oint_{\partial\Delta}f(z)\,dz=0,
 \]

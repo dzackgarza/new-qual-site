@@ -32,7 +32,7 @@ Construct right ideals via annihilators of vectors:
 
 ::: pf-step
 
-Let $R = M_n(\mathbb{Q})$. The vector space $V = \mathbb{Q}^{1 \times n}$ of row vectors is a simple right $R$-module under matrix multiplication $v \cdot A = vA$.
+Let $R = M_n(\QQ)$. The vector space $V = \QQ^{1 \times n}$ of row vectors is a simple right $R$-module under matrix multiplication $v \cdot A = vA$.
 
 ::: pf-proof
 
@@ -46,7 +46,7 @@ for any $v, w \in V$ with $v \neq 0$, there exists $A \in R$ such that $vA = w$.
 
 For any non-zero row vector $v \in V \setminus \{0\}$, define:
 \[
-I_v = \{A \in M_n(\mathbb{Q}) : vA = 0\} = \operatorname{Ann}_R(v).
+I_v = \{A \in M_n(\QQ) : vA = 0\} = \operatorname{Ann}_R(v).
 \]
 
 ::: pf-proof
@@ -93,11 +93,11 @@ $\Phi_v$ is a homomorphism of right $R$-modules.
 
 ::: pf-step
 
-Since $v \neq 0$, $\Phi_v$ is surjective: for any $w \in V$, completing $v$ to an invertible matrix $P \in \operatorname{GL}_n(\mathbb{Q})$ with first row $v$ and setting $A = P^{-1} \begin{pmatrix} w \\ 0 \\ \vdots \\ 0 \end{pmatrix}$ yields $\Phi_v(A) = vA = w$.
+Since $v \neq 0$, $\Phi_v$ is surjective: for any $w \in V$, completing $v$ to an invertible matrix $P \in \operatorname{GL}_n(\QQ)$ with first row $v$ and setting $A = P^{-1} \begin{pmatrix} w \\ 0 \\ \vdots \\ 0 \end{pmatrix}$ yields $\Phi_v(A) = vA = w$.
 
 ::: pf-proof
 
-linear algebra over $\mathbb{Q}$.
+linear algebra over $\QQ$.
 
 :::
 
@@ -117,7 +117,7 @@ $\ker(\Phi_v) = I_v$.
 
 ::: pf-step
 
-Since $V \cong \mathbb{Q}^n$ is a simple right $R$-module (having no non-trivial proper submodules), $I_v$ is a **maximal right ideal** of $R$.
+Since $V \cong \QQ^n$ is a simple right $R$-module (having no non-trivial proper submodules), $I_v$ is a **maximal right ideal** of $R$.
 
 ::: pf-proof
 
@@ -139,11 +139,11 @@ Show that different 1-dimensional subspaces produce distinct maximal right ideal
 
 ::: {.pf-step #s3-1}
 
-If $v_1, v_2 \in V \setminus \{0\}$ are linearly independent, there exists a matrix $A \in M_n(\mathbb{Q})$ such that $v_1 A = 0$ and $v_2 A \neq 0$.
+If $v_1, v_2 \in V \setminus \{0\}$ are linearly independent, there exists a matrix $A \in M_n(\QQ)$ such that $v_1 A = 0$ and $v_2 A \neq 0$.
 
 ::: pf-proof
 
-rank and linear independence in $\mathbb{Q}^n$.
+rank and linear independence in $\QQ^n$.
 
 :::
 
@@ -163,7 +163,7 @@ Step [](#s3-1){.pf-ref}.
 
 ::: pf-step
 
-Therefore $I_{v_1} = I_{v_2}$ if and only if $\mathbb{Q} v_1 = \mathbb{Q} v_2$.
+Therefore $I_{v_1} = I_{v_2}$ if and only if $\QQ v_1 = \QQ v_2$.
 
 ::: pf-proof
 
@@ -185,7 +185,7 @@ Count the number of maximal right ideals:
 
 ::: pf-step
 
-For $n > 1$, consider the family of vectors $v_c = (1, c, 0, \dots, 0) \in \mathbb{Q}^{1 \times n}$ indexed by $c \in \mathbb{Q}$.
+For $n > 1$, consider the family of vectors $v_c = (1, c, 0, \dots, 0) \in \QQ^{1 \times n}$ indexed by $c \in \QQ$.
 
 ::: pf-proof
 
@@ -197,7 +197,7 @@ construction of pairwise non-proportional vectors.
 
 ::: pf-step
 
-For $c_1 \neq c_2$, the vectors $v_{c_1}$ and $v_{c_2}$ are linearly independent over $\mathbb{Q}$.
+For $c_1 \neq c_2$, the vectors $v_{c_1}$ and $v_{c_2}$ are linearly independent over $\QQ$.
 
 ::: pf-proof
 
@@ -209,11 +209,11 @@ $\det\begin{pmatrix} 1 & c_1 \\ 1 & c_2 \end{pmatrix} = c_2 - c_1 \neq 0$.
 
 ::: pf-step
 
-By step [](#s3){.pf-ref}, the family $\{I_{v_c} : c \in \mathbb{Q}\}$ is an infinite collection of distinct maximal right ideals in $M_n(\mathbb{Q})$.
+By step [](#s3){.pf-ref}, the family $\{I_{v_c} : c \in \QQ\}$ is an infinite collection of distinct maximal right ideals in $M_n(\QQ)$.
 
 ::: pf-proof
 
-$\mathbb{Q}$ is infinite.
+$\QQ$ is infinite.
 
 :::
 
@@ -226,7 +226,7 @@ $\mathbb{Q}$ is infinite.
 ::: pf-step
 
 Conclusion:
-$M_n(\mathbb{Q})$ contains infinitely many maximal right ideals when $n > 1$. Q.E.D.
+$M_n(\QQ)$ contains infinitely many maximal right ideals when $n > 1$. Q.E.D.
 
 ::: pf-proof
 

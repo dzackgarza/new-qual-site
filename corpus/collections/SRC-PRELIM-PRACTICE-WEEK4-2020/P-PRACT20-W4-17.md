@@ -40,7 +40,7 @@ Since $\deg p\le3$, the quotient is constant. Thus
 $$
 p(x)=\alpha x(x-1)(x+1)
 $$
-for some $\alpha\in\mathbb R$.
+for some $\alpha\in\RR$.
 
 :::
 
@@ -54,7 +54,7 @@ The dimension is $\boxed{1}$.
 
 Step [](#s1){.pf-ref} identifies the space with
 $$
-\operatorname{span}_{\mathbb R}\{x(x-1)(x+1)\}.
+\operatorname{span}_{\RR}\{x(x-1)(x+1)\}.
 $$
 The spanning polynomial is nonzero, so this span is one-dimensional.
 

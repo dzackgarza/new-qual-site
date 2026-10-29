@@ -42,7 +42,7 @@ Exercise 31 therefore gives, for all \(i\),
 \pi_i(S^{2n-1})\oplus\pi_{i-1}(S^{n-1}). \tag{*}
 \]
 
-For fixed \(i\), repeated use of (*) terminates: following the first summand increases the sphere dimension from \(n\) to \(2n-1\), so after finitely many such steps the sphere dimension exceeds \(i\) and that summand is zero; following the second summand decreases both indices by one. Hence every \(\pi_i(S^n)\) is obtained by finitely many direct sums from groups \(\pi_j(S^j)\cong\mathbb Z\) and zero groups. Consequently all groups are finitely generated free abelian, and (*) provides an effective recursive computation.
+For fixed \(i\), repeated use of (*) terminates: following the first summand increases the sphere dimension from \(n\) to \(2n-1\), so after finitely many such steps the sphere dimension exceeds \(i\) and that summand is zero; following the second summand decreases both indices by one. Hence every \(\pi_i(S^n)\) is obtained by finitely many direct sums from groups \(\pi_j(S^j)\cong\ZZ\) and zero groups. Consequently all groups are finitely generated free abelian, and (*) provides an effective recursive computation.
 
 It remains to prove nonvanishing for \(i\ge n\ge2\). First consider \(S^2\). The \(n=2\) bundle gives
 \[
@@ -53,7 +53,7 @@ For \(n=3\), (*) gives
 \[
 \pi_i(S^3)\cong\pi_i(S^5)\oplus\pi_{i-1}(S^2).
 \]
-Since \(\pi_2(S^2)\cong\mathbb Z\), induction on \(i\) shows
+Since \(\pi_2(S^2)\cong\ZZ\), induction on \(i\) shows
 \[
 \pi_i(S^2)\ne0\qquad(i\ge2).
 \]

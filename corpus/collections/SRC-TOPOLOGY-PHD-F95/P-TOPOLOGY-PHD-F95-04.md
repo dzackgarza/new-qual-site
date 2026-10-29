@@ -53,7 +53,7 @@ Distinct points of the boundary circle determine distinct points of the quotient
 
 Choose distinct points
 \[
-u,v\in S^1=\{z\in\mathbb C:|z|=1\}.
+u,v\in S^1=\{z\in\CC:|z|=1\}.
 \]
 By definition of the relation, two distinct points can be equivalent only when their common modulus is strictly less than $1$.
 Since

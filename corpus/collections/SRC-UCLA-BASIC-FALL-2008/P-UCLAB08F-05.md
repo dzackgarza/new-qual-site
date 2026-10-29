@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-A rearrangement of a series $\sum_{n=1}^\infty a_n$ is a series $\sum_{k=1}^\infty a_{n(k)}$, where $n\colon\mathbb N\to\mathbb N$ is a bijection.
+A rearrangement of a series $\sum_{n=1}^\infty a_n$ is a series $\sum_{k=1}^\infty a_{n(k)}$, where $n\colon\NN\to\NN$ is a bijection.
 Show that there is a rearrangement of
 \[
 \sum_{n=1}^\infty \frac{(-1)^n}{n}
@@ -95,7 +95,7 @@ Every positive block contains at least one new positive term, because it begins 
 
 Likewise, every negative block contains at least one new negative term, so every $q_k$ eventually occurs. No term is repeated by construction. Therefore the ordering defines a bijection
 \[
-n:\mathbb N\to\mathbb N.
+n:\NN\to\NN.
 \]
 
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-036
 kind: problem
-title: Reducibility of $x^2+1$ over $\mathbb Z_p$ for $p\equiv 1 \pmod 4$
+title: Reducibility of $x^2+1$ over $\ZZ_p$ for $p\equiv 1 \pmod 4$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 1 { \bigl ( } { \mathrm { m o d ~ } } 4 { \bigr ) }$ , then $x ^ { 2 } + 1$ is not irreducible in $\mathbb { Z } _ { p } [ x ]$
+Show that if p is a prime such that $p \equiv 1 { \bigl ( } { \mathrm { m o d ~ } } 4 { \bigr ) }$ , then $x ^ { 2 } + 1$ is not irreducible in $\ZZ _ { p } [ x ]$
 :::
 
 ::: {.solution}

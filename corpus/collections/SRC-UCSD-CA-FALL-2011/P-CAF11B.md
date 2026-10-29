@@ -145,7 +145,7 @@ single term is bounded by the series sum.
 
 **Reverse direction ($\impliedby$):** Assume $\lim_{j \to \infty} \rho_n(x_j, x) = 0$ for all $n \ge 1$.
 Let $\varepsilon > 0$.
-Choose $N \in \mathbb{N}$ large enough such that $\sum_{n = N+1}^\infty \frac{1}{n^2} < \frac{\varepsilon}{2}$.
+Choose $N \in \NN$ large enough such that $\sum_{n = N+1}^\infty \frac{1}{n^2} < \frac{\varepsilon}{2}$.
 
 ::: pf-proof
 
@@ -158,7 +158,7 @@ convergence of $\sum \frac{1}{n^2}$.
 ::: {.pf-step #s2-3}
 
 For the finite sum $\sum_{n=1}^N \frac{1}{n^2} \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)}$:
-Since each of the finitely many terms tends to $0$ as $j \to \infty$, there exists $J \in \mathbb{N}$ such that for all $j \ge J$:
+Since each of the finitely many terms tends to $0$ as $j \to \infty$, there exists $J \in \NN$ such that for all $j \ge J$:
 \[
 \sum_{n=1}^N \frac{1}{n^2} \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)} < \frac{\varepsilon}{2}.
 \]

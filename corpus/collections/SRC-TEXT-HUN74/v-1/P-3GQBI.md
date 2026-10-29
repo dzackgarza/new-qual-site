@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that in $\mathbb{C}$, the fields $\mathbb{Q}(i) \cong \mathbb{Q}(\sqrt 2)$ as vector spaces, but not as fields.
+Show that in $\CC$, the fields $\QQ(i) \cong \QQ(\sqrt 2)$ as vector spaces, but not as fields.
 :::
 
 ::: {.solution}

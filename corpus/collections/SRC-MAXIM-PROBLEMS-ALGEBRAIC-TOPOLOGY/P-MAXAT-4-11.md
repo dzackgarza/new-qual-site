@@ -49,7 +49,7 @@ connected finite-type CW complex is finitely generated.
 
 A finitely generated abelian group $A$ is torsion if and only if
 \[
-A\otimes\mathbb Q=0.
+A\otimes\QQ=0.
 \]
 
 
@@ -57,13 +57,13 @@ A\otimes\mathbb Q=0.
 
 By the structure theorem,
 \[
-A\cong\mathbb Z^r\oplus T
+A\cong\ZZ^r\oplus T
 \]
-with $T$ finite. Tensoring with $\mathbb Q$ gives
+with $T$ finite. Tensoring with $\QQ$ gives
 \[
-A\otimes\mathbb Q
+A\otimes\QQ
 \cong
-\mathbb Q^r.
+\QQ^r.
 \]
 Thus the tensor product vanishes exactly when $r=0$, equivalently exactly
 when $A$ is torsion.
@@ -86,9 +86,9 @@ If $n$ is odd, a minimal Sullivan model for $S^n$ is
 
 The rational cohomology ring of an odd sphere is
 \[
-H^*(S^n;\mathbb Q)
+H^*(S^n;\QQ)
 \cong
-\Lambda_{\mathbb Q}(x_n),
+\Lambda_{\QQ}(x_n),
 \]
 because the degree-$n$ generator is odd and therefore has square zero in a
 graded-commutative algebra. The free graded-commutative DGA
@@ -125,9 +125,9 @@ x_n^2,x_n^3,\dots,
 \]
 whereas
 \[
-H^*(S^n;\mathbb Q)
+H^*(S^n;\QQ)
 \cong
-\mathbb Q\oplus\mathbb Q x_n
+\QQ\oplus\QQ x_n
 \]
 has no cohomology above degree $n$.
 
@@ -158,7 +158,7 @@ $X$, then
 \[
 (V^k)^\vee
 \cong
-\pi_k(X)\otimes\mathbb Q.
+\pi_k(X)\otimes\QQ.
 \]
 
 
@@ -176,10 +176,10 @@ of the minimal model are dual to the degree-$k$ rational homotopy group.
 
 If $n$ is odd and $n\ge3$, then
 \[
-\pi_k(S^n)\otimes\mathbb Q
+\pi_k(S^n)\otimes\QQ
 \cong
 \begin{cases}
-\mathbb Q,&k=n,\\
+\QQ,&k=n,\\
 0,&k\ne n.
 \end{cases}
 \]
@@ -198,11 +198,11 @@ namely $x_n$ in degree $n$. Apply step [](#s1-5){.pf-ref}.
 
 If $n$ is even, then
 \[
-\pi_k(S^n)\otimes\mathbb Q
+\pi_k(S^n)\otimes\QQ
 \cong
 \begin{cases}
-\mathbb Q,&k=n,\\
-\mathbb Q,&k=2n-1,\\
+\QQ,&k=n,\\
+\QQ,&k=2n-1,\\
 0,&k\ne n,2n-1.
 \end{cases}
 \]
@@ -240,7 +240,7 @@ is a torsion group.
 For $k<n$ the group is zero because $S^n$ is $(n-1)$-connected. For
 $k>n$, step [](#s1-1){.pf-ref} gives finite generation and step [](#s1-6){.pf-ref} gives
 \[
-\pi_k(S^n)\otimes\mathbb Q=0.
+\pi_k(S^n)\otimes\QQ=0.
 \]
 Step [](#s1-2){.pf-ref} therefore implies that $\pi_k(S^n)$ is torsion.
 
@@ -265,7 +265,7 @@ is a torsion group.
 
 Again the groups below degree $n$ vanish. For $k\ge n$ outside the two
 exceptional degrees, steps [](#s1-1){.pf-ref} and [](#s1-7){.pf-ref} give a finitely generated group
-whose tensor product with $\mathbb Q$ is zero. Apply step [](#s1-2){.pf-ref}.
+whose tensor product with $\QQ$ is zero. Apply step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -277,7 +277,7 @@ The exceptional degree $n$ is genuinely nontorsion:
 \[
 \pi_n(S^n)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 
@@ -287,9 +287,9 @@ The sphere $S^n$ is $(n-1)$-connected, so the Hurewicz theorem gives
 \[
 \pi_n(S^n)
 \xrightarrow{\cong}
-H_n(S^n;\mathbb Z)
+H_n(S^n;\ZZ)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -309,16 +309,16 @@ has a free rank-one summand.
 
 Step [](#s1-7){.pf-ref} gives
 \[
-\pi_{2n-1}(S^n)\otimes\mathbb Q
+\pi_{2n-1}(S^n)\otimes\QQ
 \cong
-\mathbb Q.
+\QQ.
 \]
 By step [](#s1-1){.pf-ref}, the integral group is finitely generated. Hence its free
 rank is one:
 \[
 \pi_{2n-1}(S^n)
 \cong
-\mathbb Z\oplus T
+\ZZ\oplus T
 \]
 for some finite abelian group $T$.
 
@@ -335,7 +335,7 @@ For $n=1$, the odd-sphere statement also holds.
 
 One has
 \[
-\pi_1(S^1)\cong\mathbb Z
+\pi_1(S^1)\cong\ZZ
 \]
 and
 \[

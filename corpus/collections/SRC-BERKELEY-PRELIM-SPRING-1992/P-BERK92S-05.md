@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^n\to\mathbb R^n$ be differentiable. Suppose there is a differentiable function $g:\mathbb R^n\to\mathbb R$ with no critical points such that
+Let $f:\RR^n\to\RR^n$ be differentiable. Suppose there is a differentiable function $g:\RR^n\to\RR$ with no critical points such that
 \[
 g\circ f=0
 \]

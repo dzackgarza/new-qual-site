@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Give an example of each of the following.
 
-(a) An irreducible polynomial of degree 3 in $\mathbb { Z } _ { 3 } [ x ]$
+(a) An irreducible polynomial of degree 3 in $\ZZ _ { 3 } [ x ]$
 
-(b) A polynomial in $\mathbb { Z } [ x ]$ that is not irreducible in $\mathbb { Z } [ x ]$ but is irreducible in $\mathbb { Q } [ x ]$
+(b) A polynomial in $\ZZ [ x ]$ that is not irreducible in $\ZZ [ x ]$ but is irreducible in $\QQ [ x ]$
 
 (c) A non-commutative ring of characteristic $p , p \mathrm { ~ a ~ }$ prime.
 

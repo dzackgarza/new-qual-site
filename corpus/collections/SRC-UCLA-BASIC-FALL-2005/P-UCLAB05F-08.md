@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-For a real $n\times n$ matrix $A$, let $T_A:\mathbb R^n\to\mathbb R^n$ be the associated linear map.
+For a real $n\times n$ matrix $A$, let $T_A:\RR^n\to\RR^n$ be the associated linear map.
 Use the operator norm
 \[
 \|A\|=\sup_{\|x\|_2=1}\|T_Ax\|_2,
@@ -44,7 +44,7 @@ Suggestion: the $(i,j)$ entry of $A$ is $\langle T_Ae_j,e_i\rangle$, where $e_i$
 
 ::: {.pf-step #s1-1}
 
-For every matrix $A$ and every $x\in\mathbb R^n$,
+For every matrix $A$ and every $x\in\RR^n$,
 \[
 \|T_Ax\|_2\le \|A\|\,\|x\|_2.
 \]
@@ -197,7 +197,7 @@ then every scalar sequence
 \[
 (a_{ij}^{(k)})_{k\ge1}
 \]
-is Cauchy in $\mathbb R$.
+is Cauchy in $\RR$.
 
 
 ::: pf-proof
@@ -239,7 +239,7 @@ for every $i,j$.
 
 ::: pf-proof
 
-By step [](#s1-5){.pf-ref}, each entry sequence is Cauchy in the complete space $\mathbb R$. Define $a_{ij}$ to be its limit. Since there are finitely many entries, these limits assemble into a real $n\times n$ matrix $A$.
+By step [](#s1-5){.pf-ref}, each entry sequence is Cauchy in the complete space $\RR$. Define $a_{ij}$ to be its limit. Since there are finitely many entries, these limits assemble into a real $n\times n$ matrix $A$.
 
 :::
 

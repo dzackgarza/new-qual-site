@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Use the transfer sequence for the covering $S^\infty \to \mathbb{RP}^\infty$ to compute $H_n(\mathbb{RP}^\infty; \mathbb{Z}_2)$.
+Use the transfer sequence for the covering $S^\infty \to \mathbb{RP}^\infty$ to compute $H_n(\mathbb{RP}^\infty; \ZZ_2)$.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Let
 \[
 p:S^\infty\longrightarrow\mathbb{RP}^\infty
 \]
-be the antipodal double cover, and use $\mathbb Z_2$ coefficients throughout. Hatcher's transfer sequence is
+be the antipodal double cover, and use $\ZZ_2$ coefficients throughout. Hatcher's transfer sequence is
 \[
 \cdots\to H_n(\mathbb{RP}^\infty)
 \overset{\tau_*}{\longrightarrow}H_n(S^\infty)
@@ -47,9 +47,9 @@ be the antipodal double cover, and use $\mathbb Z_2$ coefficients throughout. Ha
 
 Since $S^\infty$ is contractible,
 \[
-H_n(S^\infty;\mathbb Z_2)=0\quad(n>0),
+H_n(S^\infty;\ZZ_2)=0\quad(n>0),
 \qquad
-H_0(S^\infty;\mathbb Z_2)=\mathbb Z_2.
+H_0(S^\infty;\ZZ_2)=\ZZ_2.
 \]
 
 ::: pf-proof
@@ -64,9 +64,9 @@ The infinite sphere $S^\infty$ is contractible, so it has the homology of a poin
 
 For every $n\ge2$, the connecting map is an isomorphism
 \[
-\delta:H_n(\mathbb{RP}^\infty;\mathbb Z_2)
+\delta:H_n(\mathbb{RP}^\infty;\ZZ_2)
 \xrightarrow{\cong}
-H_{n-1}(\mathbb{RP}^\infty;\mathbb Z_2).
+H_{n-1}(\mathbb{RP}^\infty;\ZZ_2).
 \]
 
 ::: pf-proof
@@ -87,7 +87,7 @@ since the adjacent positive-dimensional homology groups of $S^\infty$ vanish.
 
 The same conclusion holds for $n=1$:
 \[
-H_1(\mathbb{RP}^\infty;\mathbb Z_2)\cong H_0(\mathbb{RP}^\infty;\mathbb Z_2)\cong\mathbb Z_2.
+H_1(\mathbb{RP}^\infty;\ZZ_2)\cong H_0(\mathbb{RP}^\infty;\ZZ_2)\cong\ZZ_2.
 \]
 
 ::: pf-proof
@@ -99,7 +99,7 @@ At the bottom of the transfer sequence we have
 \overset{\tau_*}{\longrightarrow}H_0(S^\infty)
 \overset{p_*}{\longrightarrow}H_0(\mathbb{RP}^\infty)\to0.
 \]
-Both spaces are connected, so $p_*$ is the identity isomorphism on $H_0\cong\mathbb Z_2$. Exactness therefore forces $\tau_*=0$ and $\delta$ to be an isomorphism.
+Both spaces are connected, so $p_*$ is the identity isomorphism on $H_0\cong\ZZ_2$. Exactness therefore forces $\tau_*=0$ and $\delta$ to be an isomorphism.
 
 :::
 
@@ -109,12 +109,12 @@ Both spaces are connected, so $p_*$ is the identity isomorphism on $H_0\cong\mat
 
 Therefore
 \[
-\boxed{H_n(\mathbb{RP}^\infty;\mathbb Z_2)\cong\mathbb Z_2\quad\text{for every }n\ge0.}
+\boxed{H_n(\mathbb{RP}^\infty;\ZZ_2)\cong\ZZ_2\quad\text{for every }n\ge0.}
 \]
 
 ::: pf-proof
 
-The degree-zero group is $\mathbb Z_2$ because $\mathbb{RP}^\infty$ is connected. Apply the isomorphisms of steps [](#s2){.pf-ref} and [](#s3){.pf-ref} inductively.
+The degree-zero group is $\ZZ_2$ because $\mathbb{RP}^\infty$ is connected. Apply the isomorphisms of steps [](#s2){.pf-ref} and [](#s3){.pf-ref} inductively.
 
 :::
 

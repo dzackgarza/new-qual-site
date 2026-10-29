@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Show that a map $f : S^n \to S^n$ which has no fixed points must be homotopic to the antipodal map.
-Use this to deduce that a non-trivial finite group acting freely on $S^{2n}$ must be isomorphic to $\mathbb{Z}_2$.
+Use this to deduce that a non-trivial finite group acting freely on $S^{2n}$ must be isomorphic to $\ZZ_2$.
 :::
 
 ::: {.solution}
@@ -79,7 +79,7 @@ If $g,h\ne e$ are distinct, then $gh\ne e$ unless $h=g^{-1}$. But degree is mult
 ::: pf-step
 
 Consequently
-$$\boxed{G\cong\mathbb Z/2.}$$
+$$\boxed{G\cong\ZZ/2.}$$
 
 ::: pf-proof
 

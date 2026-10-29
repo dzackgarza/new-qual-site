@@ -26,15 +26,15 @@ audit:
 Let $\{X_\alpha\}_{\alpha\in A}$ be spaces with chosen basepoints $x_\alpha\in X_\alpha$.
 Define the wedge sum $\bigvee_{\alpha\in A}X_\alpha$ as the quotient of the disjoint union $\coprod_\alpha X_\alpha$ by the relation $x_\alpha\sim x_\beta$ for all $\alpha,\beta\in A$.
 
-Show carefully that, for $n\ge 1$, the complement of $p$ distinct points in $\mathbb R^n$ is homotopy equivalent to the wedge sum of $p$ copies of $S^{n-1}$.
+Show carefully that, for $n\ge 1$, the complement of $p$ distinct points in $\RR^n$ is homotopy equivalent to the wedge sum of $p$ copies of $S^{n-1}$.
 :::
 
 ::: {.solution}
 Let
 \[
-A=\{a_1,\dots,a_p\}\subset\mathbb R^n,
+A=\{a_1,\dots,a_p\}\subset\RR^n,
 \qquad
-X=\mathbb R^n\setminus A.
+X=\RR^n\setminus A.
 \]
 
 ::: pf
@@ -47,7 +47,7 @@ After ordering the punctures as
 \[
 a_1<a_2<\cdots<a_p,
 \]
-the complement $\mathbb R\setminus A$ is the disjoint union of the $p+1$ open intervals and rays
+the complement $\RR\setminus A$ is the disjoint union of the $p+1$ open intervals and rays
 \[
 (-\infty,a_1),\ (a_1,a_2),\dots,\ (a_{p-1},a_p),\ (a_p,\infty).
 \]
@@ -55,7 +55,7 @@ Each component is contractible, so $X$ is homotopy equivalent to a discrete spac
 
 Now $S^0$ is a two-point space. Wedge together $p$ copies of $S^0$ by identifying one chosen point from each copy. The result consists of the common basepoint together with one remaining point from each copy, hence exactly $p+1$ discrete points. Therefore
 \[
-\mathbb R\setminus A\simeq\bigvee_{i=1}^p S^0.
+\RR\setminus A\simeq\bigvee_{i=1}^p S^0.
 \]
 :::
 
@@ -139,7 +139,7 @@ K\simeq\bigvee_{i=1}^p S^{n-1}.
 
 Combining steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} gives, for $n\ge2$,
 \[
-\mathbb R^n\setminus\{a_1,\dots,a_p\}
+\RR^n\setminus\{a_1,\dots,a_p\}
 \simeq M
 \simeq K
 \simeq\bigvee_{i=1}^p S^{n-1}.

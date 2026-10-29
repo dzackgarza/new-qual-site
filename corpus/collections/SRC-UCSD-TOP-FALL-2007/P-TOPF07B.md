@@ -47,7 +47,7 @@ If $h=1$, the equation forces $g=1$, and $T^2$ has connected covers of every pos
 
 ::: pf-proof
 
-For $h=1$, the right side of $g-1=d(h-1)$ is zero. Conversely, every finite-index subgroup of $\mathbb Z^2$ gives a connected finite cover of the torus, and subgroups of every positive index exist.
+For $h=1$, the right side of $g-1=d(h-1)$ is zero. Conversely, every finite-index subgroup of $\ZZ^2$ gives a connected finite cover of the torus, and subgroups of every positive index exist.
 
 :::
 
@@ -62,7 +62,7 @@ $$
 
 ::: pf-proof
 
-Solve $g-1=d(h-1)$ with $d\in\mathbb Z_{>0}$ and $g,h\le4$. For $h=2$, $g=1+d$ gives $d=1,2,3$; for $h=3$, $g=1+2d$ gives only $d=1$; for $h=4$, $g=1+3d$ gives only $d=1$.
+Solve $g-1=d(h-1)$ with $d\in\ZZ_{>0}$ and $g,h\le4$. For $h=2$, $g=1+d$ gives $d=1,2,3$; for $h=3$, $g=1+2d$ gives only $d=1$; for $h=4$, $g=1+3d$ gives only $d=1$.
 
 :::
 
@@ -74,7 +74,7 @@ Every listed numerical possibility occurs.
 
 ::: pf-proof
 
-The degree-one cases are identities. For $\Sigma_3\to\Sigma_2$ and $\Sigma_4\to\Sigma_2$, choose respectively index-$2$ and index-$3$ subgroups of the surface group (for example kernels of surjections to $\mathbb Z/2$ and $\mathbb Z/3$); the corresponding connected covers have genera $3$ and $4$ by step [](#s1){.pf-ref}.
+The degree-one cases are identities. For $\Sigma_3\to\Sigma_2$ and $\Sigma_4\to\Sigma_2$, choose respectively index-$2$ and index-$3$ subgroups of the surface group (for example kernels of surjections to $\ZZ/2$ and $\ZZ/3$); the corresponding connected covers have genera $3$ and $4$ by step [](#s1){.pf-ref}.
 
 :::
 

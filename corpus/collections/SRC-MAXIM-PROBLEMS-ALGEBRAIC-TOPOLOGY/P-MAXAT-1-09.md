@@ -24,7 +24,7 @@ Show that the signature $\sigma ( M )$ is congruent mod 2 to the Euler character
 
 Let $M$ be a closed oriented manifold of dimension $4n$, and write
 \[
-b_i=\dim_{\mathbb Q}H^i(M;\mathbb Q).
+b_i=\dim_{\QQ}H^i(M;\QQ).
 \]
 
 ::: pf
@@ -41,8 +41,8 @@ b_i=b_{4n-i}.
 
 The cup-product pairing
 \[
-H^i(M;\mathbb Q)\times H^{4n-i}(M;\mathbb Q)
-\longrightarrow\mathbb Q
+H^i(M;\QQ)\times H^{4n-i}(M;\QQ)
+\longrightarrow\QQ
 \]
 obtained by evaluation on the fundamental class is perfect. Hence the paired vector spaces have equal dimensions.
 
@@ -80,7 +80,7 @@ Let
 \[
 Q(x,y)=\langle x\smile y,[M]\rangle
 \]
-be the middle-dimensional intersection form on $H^{2n}(M;\mathbb R)$. If its positive and negative indices are $b_+$ and $b_-$, then
+be the middle-dimensional intersection form on $H^{2n}(M;\RR)$. If its positive and negative indices are $b_+$ and $b_-$, then
 \[
 b_{2n}=b_++b_-.
 \]
@@ -88,7 +88,7 @@ b_{2n}=b_++b_-.
 
 ::: pf-proof
 
-Poincaré duality makes $Q$ nondegenerate. Since $2n$ is even, graded commutativity makes it symmetric. By Sylvester's law of inertia, the real vector space decomposes into positive- and negative-definite subspaces of dimensions $b_+$ and $b_-$; nondegeneracy leaves no null subspace. Hence its dimension is $b_++b_-$. Scalar extension from $\mathbb Q$ to $\mathbb R$ does not change dimension, so this is $b_{2n}$.
+Poincaré duality makes $Q$ nondegenerate. Since $2n$ is even, graded commutativity makes it symmetric. By Sylvester's law of inertia, the real vector space decomposes into positive- and negative-definite subspaces of dimensions $b_+$ and $b_-$; nondegeneracy leaves no null subspace. Hence its dimension is $b_++b_-$. Scalar extension from $\QQ$ to $\RR$ does not change dimension, so this is $b_{2n}$.
 
 :::
 

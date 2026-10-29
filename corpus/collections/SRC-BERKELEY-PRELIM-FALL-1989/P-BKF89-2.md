@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be continuously differentiable with $f(0)=0$. Suppose there is a constant $M>0$ such that
+Let $f:[0,1]\to\RR$ be continuously differentiable with $f(0)=0$. Suppose there is a constant $M>0$ such that
 \[
 0\le f'(x)\le Mf(x)
 \qquad(0\le x\le1).

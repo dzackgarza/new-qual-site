@@ -147,7 +147,7 @@ and in particular $D/\!\sim$ is Hausdorff.
 
 ::: pf-proof
 By steps [](#bar-r-continuous){.pf-ref}, [](#bar-r-bijective){.pf-ref}, and [](#bar-r-inverse){.pf-ref}, $\bar r$ is a homeomorphism.
-The interval $[0,1)$ is a subspace of the Hausdorff space $\mathbb R$, hence is Hausdorff.
+The interval $[0,1)$ is a subspace of the Hausdorff space $\RR$, hence is Hausdorff.
 Hausdorffness is preserved by homeomorphism, so the quotient is Hausdorff.
 :::
 

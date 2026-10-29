@@ -22,14 +22,14 @@ Prove by a topological argument that $p$ must have a root in the complex plane.
 ::: pf
 
 ::: {.pf-step #suppose-no-root}
-Suppose, for contradiction, that $p(z)\ne0$ for every $z\in\mathbb C$.
+Suppose, for contradiction, that $p(z)\ne0$ for every $z\in\CC$.
 
 ::: pf-proof
 Then the normalized map
 $$
 F(z)=\frac{p(z)}{|p(z)|}
 $$
-is a continuous map $\mathbb C\to S^1$.
+is a continuous map $\CC\to S^1$.
 :::
 
 :::
@@ -52,7 +52,7 @@ which is well-defined by step [](#suppose-no-root){.pf-ref}. Any map $S^1\to S^1
 :::
 
 ::: {.pf-step #homotopic-to-leading-term}
-For all sufficiently large $R$, the loop $\zeta\mapsto p(R\zeta)$ in $\mathbb C\setminus\{0\}$ is homotopic to $\zeta\mapsto a_nR^n\zeta^n$.
+For all sufficiently large $R$, the loop $\zeta\mapsto p(R\zeta)$ in $\CC\setminus\{0\}$ is homotopic to $\zeta\mapsto a_nR^n\zeta^n$.
 
 ::: pf-proof
 Choose $R$ so large that
@@ -67,7 +67,7 @@ On $|\zeta|=1$,
 $$
 |H_t(\zeta)|\ge |a_n|R^n-\sum_{j<n}|a_j|R^j>0,
 $$
-so $H_t$ is a homotopy through loops in $\mathbb C\setminus\{0\}$.
+so $H_t$ is a homotopy through loops in $\CC\setminus\{0\}$.
 :::
 
 :::
@@ -95,7 +95,7 @@ The same map $F_R$ cannot simultaneously have degree $0$ and degree $n\ne0$.
 :::
 
 ::: pf-step
-Therefore $p$ has a root in $\mathbb C$.
+Therefore $p$ has a root in $\CC$.
 
 ::: pf-proof
 The assumption in step [](#suppose-no-root){.pf-ref} is false.

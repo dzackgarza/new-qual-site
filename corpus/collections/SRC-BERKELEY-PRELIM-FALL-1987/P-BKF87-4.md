@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $u,v:\mathbb R^2\to\mathbb R$ be $C^1$. Assume $\nabla u$ is nowhere zero and that $\nabla v$ and $\nabla u$ are linearly dependent at every point. Given $p_0\in\mathbb R^2$, show that there is a $C^1$ function $F$ of one variable such that
+Let $u,v:\RR^2\to\RR$ be $C^1$. Assume $\nabla u$ is nowhere zero and that $\nabla v$ and $\nabla u$ are linearly dependent at every point. Given $p_0\in\RR^2$, show that there is a $C^1$ function $F$ of one variable such that
 \[
 v(x,y)=F(u(x,y))
 \]
@@ -102,7 +102,7 @@ q=\Phi^{-1}(s,t).
 $$
 Let
 $$
-X=\frac{\partial\Phi^{-1}}{\partial t}(s,t)\in T_q\mathbb R^2.
+X=\frac{\partial\Phi^{-1}}{\partial t}(s,t)\in T_q\RR^2.
 $$
 Because the first coordinate of $\Phi$ is $u$, the identity
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: {.pf-step #s3}
 
-There is a $C^1$ function $F:I\to\mathbb R$ such that
+There is a $C^1$ function $F:I\to\RR$ such that
 $$
 \widetilde v(s,t)=F(s)
 $$

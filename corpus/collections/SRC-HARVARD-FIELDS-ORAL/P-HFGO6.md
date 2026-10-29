@@ -34,7 +34,7 @@ Let
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\}
 \]
-and choose a field $k$, for example $k=\mathbb Q$. Introduce algebraically
+and choose a field $k$, for example $k=\QQ$. Introduce algebraically
 independent variables
 \[
 \{x_g:g\in Q_8\}

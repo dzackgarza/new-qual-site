@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB02F-03
 kind: problem
-title: A subset of $\mathbb R$ that is not a $G_\delta$
+title: A subset of $\RR$ that is not a $G_\delta$
 classification:
   areas: [prelim]
   topics: []
@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Show that there is a subset of the real numbers that is not the intersection of a countable collection of open subsets of $\mathbb R$.
+Show that there is a subset of the real numbers that is not the intersection of a countable collection of open subsets of $\RR$.
 :::
 
 ::: {.solution}
 
 Take
 \[
-S=\mathbb Q.
+S=\QQ.
 \]
 
 ::: pf
@@ -32,14 +32,14 @@ S=\mathbb Q.
 
 Suppose, for contradiction, that
 \[
-\mathbb Q=\bigcap_{n=1}^{\infty}U_n
+\QQ=\bigcap_{n=1}^{\infty}U_n
 \]
-for open sets $U_n\subseteq\mathbb R$.
+for open sets $U_n\subseteq\RR$.
 
 
 ::: pf-proof
 
-This is the negation of the desired claim for the proposed example $S=\mathbb Q$.
+This is the negation of the desired claim for the proposed example $S=\QQ$.
 
 :::
 
@@ -47,18 +47,18 @@ This is the negation of the desired claim for the proposed example $S=\mathbb Q$
 
 ::: {.pf-step #s1-2}
 
-Every $U_n$ is dense in $\mathbb R$.
+Every $U_n$ is dense in $\RR$.
 
 
 ::: pf-proof
 
 Since
 \[
-\mathbb Q\subseteq U_n
+\QQ\subseteq U_n
 \]
-for every $n$ and $\mathbb Q$ is dense in $\mathbb R$, the closure of $U_n$ contains
+for every $n$ and $\QQ$ is dense in $\RR$, the closure of $U_n$ contains
 \[
-\overline{\mathbb Q}=\mathbb R.
+\overline{\QQ}=\RR.
 \]
 Hence $U_n$ is dense.
 
@@ -70,13 +70,13 @@ Hence $U_n$ is dense.
 
 If
 \[
-\mathbb Q=\{q_1,q_2,\ldots\},
+\QQ=\{q_1,q_2,\ldots\},
 \]
 then every set
 \[
-V_m=\mathbb R\setminus\{q_m\}
+V_m=\RR\setminus\{q_m\}
 \]
-is open and dense in $\mathbb R$.
+is open and dense in $\RR$.
 
 
 ::: pf-proof
@@ -100,7 +100,7 @@ is nonempty.
 
 ::: pf-proof
 
-By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, all sets appearing in the two countable families are open and dense in $\mathbb R$. Since $\mathbb R$ is a complete metric space, the Baire category theorem implies that the intersection of these countably many open dense sets is dense, hence nonempty.
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, all sets appearing in the two countable families are open and dense in $\RR$. Since $\RR$ is a complete metric space, the Baire category theorem implies that the intersection of these countably many open dense sets is dense, hence nonempty.
 
 :::
 
@@ -115,13 +115,13 @@ The intersection in step [](#s1-4){.pf-ref} is empty.
 
 By step [](#s1-1){.pf-ref},
 \[
-\bigcap_{n=1}^{\infty}U_n=\mathbb Q.
+\bigcap_{n=1}^{\infty}U_n=\QQ.
 \]
 By the definition of the sets $V_m$,
 \[
 \bigcap_{m=1}^{\infty}V_m
 =
-\mathbb R\setminus\mathbb Q.
+\RR\setminus\QQ.
 \]
 Their intersection is therefore empty.
 
@@ -131,7 +131,7 @@ Their intersection is therefore empty.
 
 ::: {.pf-step #s1-6}
 
-The set $\mathbb Q$ is not a countable intersection of open subsets of $\mathbb R$.
+The set $\QQ$ is not a countable intersection of open subsets of $\RR$.
 
 
 ::: pf-proof
@@ -144,7 +144,7 @@ Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in ste
 
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} supplies the required subset of $\mathbb R$.
+Step [](#s1-6){.pf-ref} supplies the required subset of $\RR$.
 
 :::
 

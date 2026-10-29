@@ -31,7 +31,7 @@ Assuming the dimension of a $\QQ$-vector space is well defined, use [[E-SMI-8000
 ::: {.solution}
 Suppose
 $$
-\phi:\mathbb Z^s\xrightarrow{\sim}\mathbb Z^t
+\phi:\ZZ^s\xrightarrow{\sim}\ZZ^t
 $$
 is an isomorphism of abelian groups.
 
@@ -39,30 +39,30 @@ is an isomorphism of abelian groups.
 
 ::: {.pf-step #s1}
 
-Precomposition with $\phi$ gives an isomorphism of $\mathbb Q$-vector spaces on Hom groups.
+Precomposition with $\phi$ gives an isomorphism of $\QQ$-vector spaces on Hom groups.
 
 ::: pf-proof
 
 Define
 $$
-\phi^*:\operatorname{Hom}(\mathbb Z^t,\mathbb Q)
+\phi^*:\operatorname{Hom}(\ZZ^t,\QQ)
 \longrightarrow
-\operatorname{Hom}(\mathbb Z^s,\mathbb Q)
+\operatorname{Hom}(\ZZ^s,\QQ)
 $$
 by
 $$
 \phi^*(f)=f\circ\phi.
 $$
-This map is $\mathbb Q$-linear because addition and rational scalar
+This map is $\QQ$-linear because addition and rational scalar
 multiplication of homomorphisms are defined pointwise. Since $\phi$ is an
 isomorphism, precomposition with $\phi^{-1}$ is the inverse of $\phi^*$.
 Therefore
 $$
-\operatorname{Hom}(\mathbb Z^t,\mathbb Q)
+\operatorname{Hom}(\ZZ^t,\QQ)
 \cong
-\operatorname{Hom}(\mathbb Z^s,\mathbb Q)
+\operatorname{Hom}(\ZZ^s,\QQ)
 $$
-as $\mathbb Q$-vector spaces.
+as $\QQ$-vector spaces.
 
 :::
 
@@ -70,19 +70,19 @@ as $\mathbb Q$-vector spaces.
 
 ::: pf-step
 
-$\mathbb Q^t\cong\mathbb Q^s$ as $\mathbb Q$-vector spaces.
+$\QQ^t\cong\QQ^s$ as $\QQ$-vector spaces.
 
 ::: pf-proof
 
 By [[E-SMI-8000E-GA4]],
 $$
-\operatorname{Hom}(\mathbb Z^r,\mathbb Q)\cong\mathbb Q^r
+\operatorname{Hom}(\ZZ^r,\QQ)\cong\QQ^r
 $$
 for each finite $r$. Hence step [](#s1){.pf-ref} yields
 $$
-\mathbb Q^t\cong\mathbb Q^s
+\QQ^t\cong\QQ^s
 $$
-as vector spaces over $\mathbb Q$.
+as vector spaces over $\QQ$.
 
 :::
 
@@ -96,13 +96,13 @@ Compare dimensions.
 
 Dimension is invariant under vector-space isomorphism, so
 $$
-t=\dim_{\mathbb Q}\mathbb Q^t
-=\dim_{\mathbb Q}\mathbb Q^s
+t=\dim_{\QQ}\QQ^t
+=\dim_{\QQ}\QQ^s
 =s.
 $$
 Thus
 $$
-\boxed{\mathbb Z^s\cong\mathbb Z^t\Longrightarrow s=t.}
+\boxed{\ZZ^s\cong\ZZ^t\Longrightarrow s=t.}
 $$
 Therefore the rank of a finitely generated free abelian group is well defined.
 

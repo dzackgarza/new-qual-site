@@ -55,7 +55,7 @@ are
 \]
 
 ::: pf-proof
-The Specht module \(S^{(4,1)}\) is the standard representation of \(S_5\), obtained from the permutation representation \(\mathbb C^5\) by removing the one-dimensional invariant line spanned by \(e_1+\cdots+e_5\). Hence for every \(\sigma\in S_5\),
+The Specht module \(S^{(4,1)}\) is the standard representation of \(S_5\), obtained from the permutation representation \(\CC^5\) by removing the one-dimensional invariant line spanned by \(e_1+\cdots+e_5\). Hence for every \(\sigma\in S_5\),
 \[
 \chi^{(4,1)}(\sigma)=\#\operatorname{Fix}(\sigma)-1.
 \]
@@ -85,23 +85,23 @@ S^{(4,1)}\!\downarrow_{S_3\times S_2}^{S_5}
 \]
 
 ::: pf-proof
-Restrict first the permutation representation \(\mathbb C^5\). Under \(S_3\times S_2\), the first three basis vectors and the last two basis vectors span invariant subspaces, so
+Restrict first the permutation representation \(\CC^5\). Under \(S_3\times S_2\), the first three basis vectors and the last two basis vectors span invariant subspaces, so
 \[
-\mathbb C^5\!\downarrow_{S_3\times S_2}
+\CC^5\!\downarrow_{S_3\times S_2}
 \cong
-\mathbb C^3\boxtimes \mathbf 1
+\CC^3\boxtimes \mathbf 1
 \oplus
-\mathbf 1\boxtimes \mathbb C^2.
+\mathbf 1\boxtimes \CC^2.
 \]
 The permutation modules decompose as
 \[
-\mathbb C^3\cong S^{(3)}\oplus S^{(2,1)},
+\CC^3\cong S^{(3)}\oplus S^{(2,1)},
 \qquad
-\mathbb C^2\cong S^{(2)}\oplus S^{(1,1)}.
+\CC^2\cong S^{(2)}\oplus S^{(1,1)}.
 \]
 Therefore
 \[
-\mathbb C^5\!\downarrow_{S_3\times S_2}
+\CC^5\!\downarrow_{S_3\times S_2}
 \cong
 2(S^{(3)}\boxtimes S^{(2)})
 \oplus
@@ -111,7 +111,7 @@ Therefore
 \]
 Finally,
 \[
-\mathbb C^5\cong S^{(5)}\oplus S^{(4,1)},
+\CC^5\cong S^{(5)}\oplus S^{(4,1)},
 \]
 and the restricted trivial representation \(S^{(5)}\) is one copy of \(S^{(3)}\boxtimes S^{(2)}\). Subtracting that copy gives the asserted decomposition.
 :::

@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose $f:\mathbb R\to\mathbb R$ is non-decreasing; specifically, for $x,y\in\mathbb R$ we have the implication
+Problem 1. Suppose $f:\RR\to\RR$ is non-decreasing; specifically, for $x,y\in\RR$ we have the implication
 \[
 x\le y \Longrightarrow f(x)\le f(y).
 \]
-Show that if $A\subset\mathbb R$ is a Borel set, then so is
+Show that if $A\subset\RR$ is a Borel set, then so is
 \[
 f(A)=\{f(x):x\in A\}.
 \]
@@ -31,7 +31,7 @@ f(A)=\{f(x):x\in A\}.
 
 Let
 \[
-f:\mathbb R\to\mathbb R
+f:\RR\to\RR
 \]
 be nondecreasing.
 
@@ -41,7 +41,7 @@ We first isolate the values for which the fibers of \(f\) are nontrivial.
 
 ::: {.pf-step #s1-1}
 
-For every \(y\in\mathbb R\), the fiber
+For every \(y\in\RR\), the fiber
 \[
 f^{-1}(\{y\})
 \]
@@ -97,7 +97,7 @@ for each \(y\in Y_0\). The map
 \[
 y\longmapsto q_y
 \]
-is injective from \(Y_0\) into \(\mathbb Q\). Hence \(Y_0\) is countable.
+is injective from \(Y_0\) into \(\QQ\). Hence \(Y_0\) is countable.
 
 :::
 
@@ -109,12 +109,12 @@ For each \(y\in Y_0\), the fiber
 \[
 f^{-1}(\{y\})
 \]
-is a Borel subset of \(\mathbb R\).
+is a Borel subset of \(\RR\).
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, the fiber is an interval. Every interval in \(\mathbb R\), with any choice of open or closed endpoints, is Borel.
+By step [](#s1-1){.pf-ref}, the fiber is an interval. Every interval in \(\RR\), with any choice of open or closed endpoints, is Borel.
 
 :::
 
@@ -137,7 +137,7 @@ By step [](#s1-2){.pf-ref}, the index set \(Y_0\) is countable, and by step [](#
 
 The restriction
 \[
-f|_{X_0}:X_0\to\mathbb R
+f|_{X_0}:X_0\to\RR
 \]
 is injective.
 
@@ -176,14 +176,14 @@ Thus \(x_1=x_2\).
 
 ::: {.pf-step #s1-6}
 
-For every \(a\in\mathbb R\), the set
+For every \(a\in\RR\), the set
 \[
 \boxed{
 \{x:f(x)>a\}}
 \]
 is an interval of the form
 \[
-(c,\infty),\quad[c,\infty),\quad\varnothing,\quad\text{or }\mathbb R.
+(c,\infty),\quad[c,\infty),\quad\varnothing,\quad\text{or }\RR.
 \]
 
 
@@ -218,7 +218,7 @@ By step [](#s1-6){.pf-ref}, the inverse image of every ray
 \[
 (a,\infty)
 \]
-is Borel. Such rays generate the Borel \(\sigma\)-algebra on \(\mathbb R\), so \(f\) is Borel measurable.
+is Borel. Such rays generate the Borel \(\sigma\)-algebra on \(\RR\), so \(f\) is Borel measurable.
 
 :::
 
@@ -252,7 +252,7 @@ f(A_0)\text{ is Borel}.}
 
 ::: pf-proof
 
-The space \(X_0\), with its inherited Borel structure, is a standard Borel space because it is a Borel subset of the Polish space \(\mathbb R\). The map
+The space \(X_0\), with its inherited Borel structure, is a standard Borel space because it is a Borel subset of the Polish space \(\RR\). The map
 \[
 f|_{X_0}
 \]
@@ -324,7 +324,7 @@ f(A\cap N)\text{ is Borel}.}
 
 ::: pf-proof
 
-Every countable subset of \(\mathbb R\) is Borel.
+Every countable subset of \(\RR\) is Borel.
 
 :::
 

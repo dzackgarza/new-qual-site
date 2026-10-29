@@ -15,20 +15,20 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G \subset \mathbb{C}$ be a proper open connected subset.
-Let $\mathbb{C}_\infty = \mathbb{C} \cup \{\infty\}$ denote the extended plane.
+Let $G \subset \CC$ be a proper open connected subset.
+Let $\CC_\infty = \CC \cup \{\infty\}$ denote the extended plane.
 
-(i) Assume $\mathbb{C}_\infty \setminus G$ is connected.
+(i) Assume $\CC_\infty \setminus G$ is connected.
 Prove: Let $f$ be an analytic function from $G$ to $G$ which is not the identity map.
 Then $f$ has at most one fixed point in $G$.
 
-(ii) Is the statement still true if $\mathbb{C}_\infty \setminus G$ is not connected?
+(ii) Is the statement still true if $\CC_\infty \setminus G$ is not connected?
 If true, give a proof.
 If false, give a counterexample.
 :::
 
 ::: {.solution}
-For (i), connectedness of $\mathbb C_\infty\setminus G$ is equivalent to
+For (i), connectedness of $\CC_\infty\setminus G$ is equivalent to
 simple connectedness of the proper plane domain $G$. Choose a Riemann map
 $\phi:G\to\mathbb D$. If $f$ had two distinct fixed points, then
 \[

@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.problem}
-Given $n\geq 1$, let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$.
-Prove if $x^H Ax=0$, for all $x\in\mathbb{C}^n$, then $A=0$.
+Given $n\geq 1$, let $A\in M_n(\CC)=\CC^{n\times n}$.
+Prove if $x^H Ax=0$, for all $x\in\CC^n$, then $A=0$.
 
-(Notationally: for all $m,n\geq 1$, $z^H=\overline{z}^T$ for all $z\in M_{m,n}(\mathbb{C})=\mathbb{C}^{m\times n}$.)
+(Notationally: for all $m,n\geq 1$, $z^H=\overline{z}^T$ for all $z\in M_{m,n}(\CC)=\CC^{m\times n}$.)
 :::
 
 ::: {.solution}
@@ -84,7 +84,7 @@ Hence \(a_{ij}=a_{ji}\).
 Therefore \(A=0\).
 
 ::: pf-proof
-For \(i\ne j\), step [](#off-diagonal-sum-zero){.pf-ref} gives \(a_{ji}=-a_{ij}\), while step [](#off-diagonal-symmetric){.pf-ref} gives \(a_{ji}=a_{ij}\). Hence \(2a_{ij}=0\). Over \(\mathbb C\), this implies \(a_{ij}=0\). Together with step [](#diagonal-entries-zero){.pf-ref}, every entry of \(A\) is zero.
+For \(i\ne j\), step [](#off-diagonal-sum-zero){.pf-ref} gives \(a_{ji}=-a_{ij}\), while step [](#off-diagonal-symmetric){.pf-ref} gives \(a_{ji}=a_{ij}\). Hence \(2a_{ij}=0\). Over \(\CC\), this implies \(a_{ij}=0\). Together with step [](#diagonal-entries-zero){.pf-ref}, every entry of \(A\) is zero.
 :::
 
 :::

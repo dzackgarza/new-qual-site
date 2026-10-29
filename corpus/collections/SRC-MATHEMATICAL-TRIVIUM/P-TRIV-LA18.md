@@ -47,7 +47,7 @@ $$
 
 ::: pf-step
 
-Every vector $v\in\mathbb R^3$ decomposes as
+Every vector $v\in\RR^3$ decomposes as
 $$
 v=v_\parallel+v_\perp,
 $$

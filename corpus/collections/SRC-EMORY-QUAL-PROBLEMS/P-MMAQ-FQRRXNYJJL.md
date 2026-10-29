@@ -27,7 +27,7 @@ Show that $f$ is a polynomial of degree $\leq 2$.
 :::
 
 ::: {.solution}
-We prove the stronger statement $f(z)=c_2z^2$ for a constant $c_2\in\mathbb C$.
+We prove the stronger statement $f(z)=c_2z^2$ for a constant $c_2\in\CC$.
 
 ### Step 1: Taylor Series and Cauchy's Estimates
 
@@ -35,17 +35,17 @@ We prove the stronger statement $f(z)=c_2z^2$ for a constant $c_2\in\mathbb C$.
 
 ::: pf-step
 
-**$f$ is represented by its Taylor series centered at the origin for all $z \in \mathbb{C}$.**
+**$f$ is represented by its Taylor series centered at the origin for all $z \in \CC$.**
 
 ::: pf-proof
 
 ::: pf-step
 
-Since $f$ is entire, $f(z) = \sum_{n=0}^\infty c_n z^n$ converges everywhere on $\mathbb{C}$, with coefficients given by $c_n = \frac{f^{(n)}(0)}{n!}$.
+Since $f$ is entire, $f(z) = \sum_{n=0}^\infty c_n z^n$ converges everywhere on $\CC$, with coefficients given by $c_n = \frac{f^{(n)}(0)}{n!}$.
 
 ::: pf-proof
 
-The Taylor series of a holomorphic function at $0$ converges to it on every open disk centered at $0$ contained in its domain, here $\mathbb C$.
+The Taylor series of a holomorphic function at $0$ converges to it on every open disk centered at $0$ contained in its domain, here $\CC$.
 
 :::
 

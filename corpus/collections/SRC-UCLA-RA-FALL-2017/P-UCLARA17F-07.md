@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-07
 kind: problem
-title: Meromorphic function with zeros at $\mathbb Z$ and poles at $\mathbb Z+\frac13$
+title: Meromorphic function with zeros at $\ZZ$ and poles at $\ZZ+\frac13$
 classification:
   areas:
   - real-analysis
@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Prove that there exists a meromorphic function $f$ on $\mathbb C$ with the following three properties:
+Problem 7. Prove that there exists a meromorphic function $f$ on $\CC$ with the following three properties:
 
-1. $f(z)=0$ if and only if $z\in\mathbb Z$;
-2. $f(z)=\infty$ if and only if $z-\frac13\in\mathbb Z$;
-3. $|f(x+iy)|\le1$ for all $x\in\mathbb R$ and all $y\in\mathbb R$ with $|y|\ge1$.
+1. $f(z)=0$ if and only if $z\in\ZZ$;
+2. $f(z)=\infty$ if and only if $z-\frac13\in\ZZ$;
+3. $|f(x+iy)|\le1$ for all $x\in\RR$ and all $y\in\RR$ with $|y|\ge1$.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ We verify the three required properties.
 
 The numerator vanishes exactly at
 \[
-\boxed{z\in\mathbb Z}.
+\boxed{z\in\ZZ}.
 \]
 
 
@@ -60,7 +60,7 @@ The zeros of \(\sin(\pi z)\) are exactly the integers.
 
 ::: {.pf-step #s1-2}
 
-For every \(n\in\mathbb Z\),
+For every \(n\in\ZZ\),
 \[
 \sin\!\left(
 \pi\left(n-\frac13\right)
@@ -73,9 +73,9 @@ For every \(n\in\mathbb Z\),
 
 One has
 \[
-n-\frac13\notin\mathbb Z.
+n-\frac13\notin\ZZ.
 \]
-Since \(\sin(\pi w)=0\) exactly when \(w\in\mathbb Z\), the denominator is nonzero at \(z=n\).
+Since \(\sin(\pi w)=0\) exactly when \(w\in\ZZ\), the denominator is nonzero at \(z=n\).
 
 :::
 
@@ -88,7 +88,7 @@ Therefore
 \boxed{
 f(z)=0
 \iff
-z\in\mathbb Z}.
+z\in\ZZ}.
 \]
 
 
@@ -105,7 +105,7 @@ The prefactor \(\tanh\pi\) is nonzero, and step [](#s1-2){.pf-ref} shows no nume
 The denominator vanishes exactly when
 \[
 \boxed{
-z-\frac13\in\mathbb Z}.
+z-\frac13\in\ZZ}.
 \]
 
 
@@ -118,7 +118,7 @@ z-\frac13\in\mathbb Z}.
 \]
 if and only if
 \[
-z-\tfrac13\in\mathbb Z.
+z-\tfrac13\in\ZZ.
 \]
 
 :::
@@ -131,7 +131,7 @@ If
 \[
 z=n+\frac13,
 \qquad
-n\in\mathbb Z,
+n\in\ZZ,
 \]
 then the numerator is nonzero.
 
@@ -189,7 +189,7 @@ Therefore
 \boxed{
 f(z)=\infty
 \iff
-z-\frac13\in\mathbb Z}.
+z-\frac13\in\ZZ}.
 \]
 
 

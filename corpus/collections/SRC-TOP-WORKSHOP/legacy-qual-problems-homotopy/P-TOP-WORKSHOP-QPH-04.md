@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:D^2\to D^2$ be a homeomorphism, where $D^2$ is the closed unit disk in $\mathbb R^2$.
+Let $f:D^2\to D^2$ be a homeomorphism, where $D^2$ is the closed unit disk in $\RR^2$.
 Show that every boundary point $x\in\partial D^2$ satisfies
 \[
 f(x)\in\partial D^2.
@@ -53,7 +53,7 @@ x\in\mathring D^2.
 \]
 Choose an open Euclidean disk
 \[
-U\subset\mathbb R^2
+U\subset\RR^2
 \]
 with
 \[
@@ -62,13 +62,13 @@ x\in U\subset\mathring D^2.
 The restriction
 \[
 f|_U:
-U\longrightarrow\mathbb R^2
+U\longrightarrow\RR^2
 \]
 is continuous and injective. By invariance of domain,
 \[
 f(U)
 \]
-is open in $\mathbb R^2$.
+is open in $\RR^2$.
 
 Suppose
 \[

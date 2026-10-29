@@ -40,7 +40,7 @@ The new disk is a second \(2\)-cell whose boundary is attached along the \(a\)-c
 \]
 Van Kampen gives
 \[
-\pi_1(X)\cong\langle a,b\mid [a,b],a\rangle\cong\langle b\rangle\cong\mathbb Z.
+\pi_1(X)\cong\langle a,b\mid [a,b],a\rangle\cong\langle b\rangle\cong\ZZ.
 \]
 This answers both parts: the displayed cells give the requested CW complex, and its fundamental group is infinite cyclic.
 :::

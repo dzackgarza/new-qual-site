@@ -116,7 +116,7 @@ Up to isomorphism, there is exactly one nontrivial semidirect product $C_7\rtime
 
 We have
 \[
-\operatorname{Aut}(C_7)\cong(\mathbb Z/7\mathbb Z)^\times\cong C_6.
+\operatorname{Aut}(C_7)\cong(\ZZ/7\ZZ)^\times\cong C_6.
 \]
 A nontrivial homomorphism $C_3\to C_6$ must be injective, and its image must be a subgroup of order $3$. A cyclic group has a unique subgroup of each order dividing its order, so $C_6$ has exactly one subgroup of order $3$.
 

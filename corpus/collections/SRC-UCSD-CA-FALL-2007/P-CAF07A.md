@@ -28,15 +28,15 @@ Then $\{x_n\}_{n=1}^{\infty}$ is convergent.
 (b) Let $\gamma_+(t) = e^{it}$, $t \in [0, \pi]$, and $\gamma_-(t) = e^{-it}$, $t \in [0, \pi]$.
 Then $\int_{\gamma_+} e^{1/z^2}\,dz = \int_{\gamma_-} e^{1/z^2}\,dz$.
 
-(c) If $f(z)$ is an entire function and there are $\alpha \in \mathbb{C}$, $r > 0$, such that $f(\mathbb{C}) \subset \mathbb{C} \setminus \overline{B(\alpha, r)}$, then $f(z)$ is constant.
+(c) If $f(z)$ is an entire function and there are $\alpha \in \CC$, $r > 0$, such that $f(\CC) \subset \CC \setminus \overline{B(\alpha, r)}$, then $f(z)$ is constant.
 
-(d) There is an analytic bijection (biholomorphism) from $\mathbb{D} \setminus \{0\}$ onto $\mathbb{C} \setminus \{0\}$.
+(d) There is an analytic bijection (biholomorphism) from $\mathbb{D} \setminus \{0\}$ onto $\CC \setminus \{0\}$.
 
-(e) The function $u(z) := \ln|z^2 + 1|$ is harmonic in $\mathbb{C} \setminus \{-i, i\}$.
+(e) The function $u(z) := \ln|z^2 + 1|$ is harmonic in $\CC \setminus \{-i, i\}$.
 :::
 
 ::: {.solution}
-**(a) False.** In $\mathbb R$, let
+**(a) False.** In $\RR$, let
 \[
 x_n=\begin{cases}0,&n\text{ even},\\1,&n\text{ odd}.
 \end{cases}
@@ -60,21 +60,21 @@ integral is $0$, and the two path integrals are equal.
 
 **(c) True.** The hypothesis implies
 \[
-|f(z)-\alpha|\ge r\qquad(z\in\mathbb C).
+|f(z)-\alpha|\ge r\qquad(z\in\CC).
 \]
 Hence $1/(f-\alpha)$ is bounded and entire, so it is constant by Liouville's
 theorem. Thus $f$ is constant.
 
-**(d) False.** If $F:\mathbb D\setminus\{0\}\to\mathbb C\setminus\{0\}$ were
+**(d) False.** If $F:\mathbb D\setminus\{0\}\to\CC\setminus\{0\}$ were
 a biholomorphism, its inverse
 \[
-G:\mathbb C\setminus\{0\}\to\mathbb D\setminus\{0\}
+G:\CC\setminus\{0\}\to\mathbb D\setminus\{0\}
 \]
 would be bounded. The singularity of $G$ at $0$ is removable, so $G$ extends
-to a bounded entire function on $\mathbb C$. Liouville's theorem would make it
+to a bounded entire function on $\CC$. Liouville's theorem would make it
 constant, contradicting bijectivity.
 
-**(e) True.** On $\mathbb C\setminus\{-i,i\}$ the holomorphic function
+**(e) True.** On $\CC\setminus\{-i,i\}$ the holomorphic function
 $z^2+1$ has no zeros. Locally it admits a holomorphic logarithm $L$, and
 \[
 u(z)=\log|z^2+1|=\operatorname{Re}L(z).

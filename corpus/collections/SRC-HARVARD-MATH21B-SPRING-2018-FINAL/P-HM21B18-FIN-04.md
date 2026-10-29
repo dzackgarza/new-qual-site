@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all $(x,y,z,w)\in\mathbb R^4$ satisfying
+Find all $(x,y,z,w)\in\RR^4$ satisfying
 \[
 x+y+z+w=20,
 \qquad
@@ -83,7 +83,7 @@ All solutions are
 =(15,5,0,0)
 +s(-1,0,1,0)
 +t(0,-1,0,1),
-\qquad s,t\in\mathbb R.
+\qquad s,t\in\RR.
 \]
 
 
@@ -153,7 +153,7 @@ Therefore the requested results are
 \begin{gathered}
 (x,y,z,w)
 =(15,5,0,0)+s(-1,0,1,0)+t(0,-1,0,1),\\
-s,t\in\mathbb R,\\
+s,t\in\RR,\\
 (1,1,1,1),\ (1,-1,1,-1)\in(\ker A)^\perp
 \text{ are linearly independent.}
 \end{gathered}}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP07-08
 kind: problem
-title: Covering-space proof that $\pi_1(S^1)\cong\mathbb Z$
+title: Covering-space proof that $\pi_1(S^1)\cong\ZZ$
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft
@@ -18,13 +18,13 @@ Explain the covering-space proof of the fundamental group of the circle $S^1$, f
 
 Use the covering map
 $$
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi it},
 $$
 with basepoints
 $$
-0\in\mathbb R
+0\in\RR
 $$
 and
 $$
@@ -41,7 +41,7 @@ $$
 $$
 has a unique lift
 $$
-\widetilde\gamma:I\to\mathbb R
+\widetilde\gamma:I\to\RR
 $$
 with
 $$
@@ -65,7 +65,7 @@ $$
 The endpoint of such a lift is an integer:
 $$
 \boxed{
-\widetilde\gamma(1)\in\mathbb Z}.
+\widetilde\gamma(1)\in\ZZ}.
 $$
 
 
@@ -89,7 +89,7 @@ is
 $$
 p^{-1}(1)
 =
-\mathbb Z.
+\ZZ.
 $$
 
 :::
@@ -134,7 +134,7 @@ $$
 
 By the homotopy-lifting theorem, there is a unique lift
 $$
-\widetilde H:I\times I\to\mathbb R
+\widetilde H:I\times I\to\RR
 $$
 with
 $$
@@ -150,7 +150,7 @@ $$
 $$
 lies in the discrete fiber
 $$
-\mathbb Z.
+\ZZ.
 $$
 The map
 $$
@@ -162,7 +162,7 @@ I
 $$
 to the discrete space
 $$
-\mathbb Z,
+\ZZ,
 $$
 so it is constant. Therefore the endpoints at
 $$
@@ -185,7 +185,7 @@ $$
 \Phi:
 \pi_1(S^1,1)
 \to
-\mathbb Z,
+\ZZ,
 \qquad
 \Phi([\gamma])
 =
@@ -265,7 +265,7 @@ p(t+m)=p(t)
 $$
 for every
 $$
-m\in\mathbb Z,
+m\in\ZZ,
 $$
 the path
 $$
@@ -326,7 +326,7 @@ is surjective.
 
 For every
 $$
-n\in\mathbb Z,
+n\in\ZZ,
 $$
 define
 $$
@@ -380,11 +380,11 @@ $$
 $$
 so it is a loop in
 $$
-\mathbb R.
+\RR.
 $$
 Since
 $$
-\mathbb R
+\RR
 $$
 is contractible, this loop is based-null-homotopic. Let
 $$
@@ -423,7 +423,7 @@ $$
 \boxed{
 \pi_1(S^1,1)
 \cong
-\mathbb Z}.
+\ZZ}.
 $$
 
 
@@ -516,7 +516,7 @@ p^{-1}(x_0).
 $$
 In general this statement alone does not put a canonical group law on the fiber. In the circle example, the fiber is already canonically the additive group
 $$
-\mathbb Z,
+\ZZ,
 $$
 and translation invariance of the covering makes concatenation correspond to addition, as shown in step [](#s1-5){.pf-ref}.
 

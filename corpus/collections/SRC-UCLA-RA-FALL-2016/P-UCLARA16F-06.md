@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Consider the Banach space $\ell^1$ consisting of all sequences $u=\{x_i\}$ in $\mathbb R$ with
+Consider the Banach space $\ell^1$ consisting of all sequences $u=\{x_i\}$ in $\RR$ with
 \[
 \lVert u\rVert_1=\sum_{i=1}^{\infty}|x_i|<\infty,
 \]
-and the Banach space $\ell^\infty$ consisting of all sequences $v=\{y_i\}$ in $\mathbb R$ with
+and the Banach space $\ell^\infty$ consisting of all sequences $v=\{y_i\}$ in $\RR$ with
 \[
-\lVert v\rVert_\infty=\sup_{i\in\mathbb N}|y_i|<\infty.
+\lVert v\rVert_\infty=\sup_{i\in\NN}|y_i|<\infty.
 \]
 There is a well-defined dual pairing between $\ell^1$ and $\ell^\infty$ given by
 \[
@@ -31,7 +31,7 @@ There is a well-defined dual pairing between $\ell^1$ and $\ell^\infty$ given by
 \]
 With this dual pairing, $\ell^\infty=(\ell^1)^*$ is the dual space of $\ell^1$.
 
-(a) Show that there exists no sequence $\{u_n\}$ in $\ell^1$ such that (i) $\lVert u_n\rVert_1\ge1$ for all $n\in\mathbb N$ and (ii) $\langle u_n,v\rangle\to0$ for each $v\in\ell^\infty$.
+(a) Show that there exists no sequence $\{u_n\}$ in $\ell^1$ such that (i) $\lVert u_n\rVert_1\ge1$ for all $n\in\NN$ and (ii) $\langle u_n,v\rangle\to0$ for each $v\in\ell^\infty$.
 
 (b) Show that every weakly convergent sequence $\{u_n\}$ in $\ell^1$ converges in the norm topology of $\ell^1$.
 :::
@@ -228,7 +228,7 @@ The vector \(v\) belongs to \(\ell^\infty\) and
 
 ::: pf-proof
 
-The blocks \(I_k\) are disjoint and cover a subset of \(\mathbb N\), so the definition is unambiguous. Every coordinate satisfies
+The blocks \(I_k\) are disjoint and cover a subset of \(\NN\), so the definition is unambiguous. Every coordinate satisfies
 \[
 |v_i|\le1.
 \]

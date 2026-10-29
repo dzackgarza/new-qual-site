@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f(z) = \sum_{n=0}^{N} a_n z^n$ where $a_n \in \mathbb{C}$ and $N > 0$.
+Suppose $f(z) = \sum_{n=0}^{N} a_n z^n$ where $a_n \in \CC$ and $N > 0$.
 Let $M$ be the maximum of $|f(z)|$ on the unit circle about the origin.
 
 (a) Show that $|a_0| \leq M$.

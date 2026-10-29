@@ -14,18 +14,18 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the action of the symmetric group $S_4$ on the vector space $V = \mathbb{C}[x_1, x_2, x_3, x_4]_3$ of homogeneous cubic polynomials in the variables $x_1, x_2, x_3,$ and $x_4$ given by subscript permutation:
+Consider the action of the symmetric group $S_4$ on the vector space $V = \CC[x_1, x_2, x_3, x_4]_3$ of homogeneous cubic polynomials in the variables $x_1, x_2, x_3,$ and $x_4$ given by subscript permutation:
 \[
 \sigma \cdot f(x_1, x_2, x_3, x_4) := f(x_{\sigma(1)}, x_{\sigma(2)}, x_{\sigma(3)}, x_{\sigma(4)})
 \]
-for $\sigma \in S_4$ and $f \in \mathbb{C}[x_1, x_2, x_3, x_4]$.
-Calculate the decomposition of $V$ into a direct sum of irreducible $S_4$-modules and determine the structure (as a product of matrix rings over $\mathbb{C}$) of the endomorphism algebra $\operatorname{End}_{S_4}(V)$.
+for $\sigma \in S_4$ and $f \in \CC[x_1, x_2, x_3, x_4]$.
+Calculate the decomposition of $V$ into a direct sum of irreducible $S_4$-modules and determine the structure (as a product of matrix rings over $\CC$) of the endomorphism algebra $\operatorname{End}_{S_4}(V)$.
 :::
 
 ::: {.solution}
-Let \(W=\mathbb C^4\) be the permutation representation of \(S_4\). Then
+Let \(W=\CC^4\) be the permutation representation of \(S_4\). Then
 \[
-V=\mathbb C[x_1,x_2,x_3,x_4]_3\cong \operatorname{Sym}^3(W).
+V=\CC[x_1,x_2,x_3,x_4]_3\cong \operatorname{Sym}^3(W).
 \]
 For a finite-dimensional representation with character \(\chi\), the symmetric-cube character is
 \[
@@ -88,12 +88,12 @@ V\cong\bigoplus_\lambda m_\lambda S^\lambda,
 then Schur's lemma gives
 \[
 \operatorname{End}_{S_4}(V)
-\cong \prod_\lambda M_{m_\lambda}(\mathbb C).
+\cong \prod_\lambda M_{m_\lambda}(\CC).
 \]
 Hence
 \[
 \operatorname{End}_{S_4}(V)
 \cong
-M_3(\mathbb C)\times M_4(\mathbb C)\times\mathbb C\times\mathbb C.
+M_3(\CC)\times M_4(\CC)\times\CC\times\CC.
 \]
 :::

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V=M_n(\mathbb R)$. Prove that
+Let $V=M_n(\RR)$. Prove that
 \[
 \langle A,B\rangle=\operatorname{tr}(A^TB)
 \]
@@ -173,7 +173,7 @@ Therefore
 \]
 defines an inner product on
 \[
-M_n(\mathbb R).
+M_n(\RR).
 \]
 
 
@@ -270,7 +270,7 @@ otherwise.
 
 The four matrices form a basis of
 \[
-M_2(\mathbb R).
+M_2(\RR).
 \]
 
 
@@ -303,7 +303,7 @@ Thus the four matrix units span and are linearly independent.
 
 Hence an orthonormal basis for
 \[
-M_2(\mathbb R)
+M_2(\RR)
 \]
 is
 \[

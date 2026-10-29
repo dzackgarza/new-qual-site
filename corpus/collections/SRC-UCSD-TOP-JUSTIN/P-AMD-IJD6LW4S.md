@@ -37,10 +37,10 @@ Each positive-dimensional cell is attached to the common basepoint, so its cellu
 
 Hence, for $m,n>0$,
 $$
-\boxed{\widetilde H_k(S^m\vee S^n;\mathbb Z)\cong
+\boxed{\widetilde H_k(S^m\vee S^n;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=m\ne n\text{ or }k=n\ne m,\\
-\mathbb Z^2,&k=m=n,\\
+\ZZ,&k=m\ne n\text{ or }k=n\ne m,\\
+\ZZ^2,&k=m=n,\\
 0,&\text{otherwise.}
 \end{cases}}
 $$
@@ -69,14 +69,14 @@ The cells are products of the $0$- and top cells of the two sphere factors. Cell
 
 Therefore, for $m,n>0$,
 $$
-\boxed{H_k(S^m\times S^n;\mathbb Z)\cong
+\boxed{H_k(S^m\times S^n;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,m,n,m+n\text{ when these are distinct},\\
-\mathbb Z^2,&k=m=n,\\
+\ZZ,&k=0,m,n,m+n\text{ when these are distinct},\\
+\ZZ^2,&k=m=n,\\
 0,&\text{otherwise,}
 \end{cases}}
 $$
-with $H_{2m}\cong\mathbb Z$ in the case $m=n$.
+with $H_{2m}\cong\ZZ$ in the case $m=n$.
 
 ::: pf-proof
 

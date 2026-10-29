@@ -18,11 +18,11 @@ review: draft
 ::: {.problem}
 Consider the space $X$ obtained by identifying the edges of the unit square in the following manner: edges labeled $a$ are identified with matching orientation, and edges labeled $b$ are identified with matching orientation.
 
-(a) Compute $H_*(X; \mathbb{Z})$ and $H^*(X; \mathbb{Z})$.
+(a) Compute $H_*(X; \ZZ)$ and $H^*(X; \ZZ)$.
 
 (b) Prove $X$ is an orientable manifold.
 
-(c) Compute the ring structure of $H^*(X; \mathbb{Z})$.
+(c) Compute the ring structure of $H^*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -57,10 +57,10 @@ The $1$-cells are loops, so $\partial_1=0$. The attaching word of the $2$-cell i
 
 Hence
 $$
-H_k(X;\mathbb Z)\cong H^k(X;\mathbb Z)\cong
+H_k(X;\ZZ)\cong H^k(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,2,\\
-\mathbb Z^2,&k=1,\\
+\ZZ,&k=0,2,\\
+\ZZ^2,&k=1,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -87,7 +87,7 @@ It is homeomorphic to $T^2=S^1\times S^1$, a product of oriented $1$-manifolds, 
 
 ::: {.pf-step #s5}
 
-If $\alpha,\beta\in H^1(X;\mathbb Z)$ are the classes dual to the two circle factors and $\omega\in H^2(X;\mathbb Z)$ is the orientation class, then
+If $\alpha,\beta\in H^1(X;\ZZ)$ are the classes dual to the two circle factors and $\omega\in H^2(X;\ZZ)$ is the orientation class, then
 $$
 \alpha^2=\beta^2=0,\qquad \alpha\smile\beta=\omega,\qquad \beta\smile\alpha=-\omega.
 $$
@@ -104,7 +104,7 @@ By the Künneth theorem, $\alpha$ and $\beta$ are pulled back from the two facto
 
 Thus
 $$
-\boxed{H^*(X;\mathbb Z)\cong \Lambda_{\mathbb Z}(\alpha,\beta),\qquad |\alpha|=|\beta|=1.}
+\boxed{H^*(X;\ZZ)\cong \Lambda_{\ZZ}(\alpha,\beta),\qquad |\alpha|=|\beta|=1.}
 $$
 
 ::: pf-proof

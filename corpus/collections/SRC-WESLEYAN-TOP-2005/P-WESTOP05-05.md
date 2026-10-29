@@ -112,7 +112,7 @@ extends uniquely to a continuous function
 
 If
 \[
-f:X\to\mathbb R
+f:X\to\RR
 \]
 is bounded, its image lies in some compact interval
 \[

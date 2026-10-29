@@ -48,7 +48,7 @@ Hence
 \]
 
 ::: pf-proof
-The first identity is the orthogonality relation for the finite abelian group \((\mathbb{Z}/q\mathbb{Z})^\times\). For \(p\nmid q\), the inner sum in the second line is the indicator of \(p\equiv\ell\pmod q\). For \(p\mid q\), every character vanishes at \(p\), and \(p\not\equiv\ell\pmod q\), so these primes contribute nothing to either side. Hence the two sums agree exactly.
+The first identity is the orthogonality relation for the finite abelian group \((\ZZ/q\ZZ)^\times\). For \(p\nmid q\), the inner sum in the second line is the indicator of \(p\equiv\ell\pmod q\). For \(p\mid q\), every character vanishes at \(p\), and \(p\not\equiv\ell\pmod q\), so these primes contribute nothing to either side. Hence the two sums agree exactly.
 :::
 
 :::

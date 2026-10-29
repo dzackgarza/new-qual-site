@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=xe^{2x}$. Find a general formula for the $n$th derivative $f^{(n)}(x)$, and prove it by induction.
+Let $f:\RR\to\RR$ be defined by $f(x)=xe^{2x}$. Find a general formula for the $n$th derivative $f^{(n)}(x)$, and prove it by induction.
 :::
 
 ::: {.solution}

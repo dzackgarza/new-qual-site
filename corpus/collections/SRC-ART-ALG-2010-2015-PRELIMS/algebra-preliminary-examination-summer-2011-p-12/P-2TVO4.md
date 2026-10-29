@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2TVO4
 kind: problem
-title: The splitting field of $(x^p-2)(x^q-2)$ over $\mathbb{Q}$
+title: The splitting field of $(x^p-2)(x^q-2)$ over $\QQ$
 classification:
   areas:
   - algebra
@@ -27,15 +27,15 @@ audit:
 ---
 ::: {.problem}
 Let $p < q$ be two distinct odd primes such that $p \nmid q - 1$.
-Let $n = pq$ and $\zeta_n$ be a primitive $n$-th root of unity in $\mathbb{C}$.
+Let $n = pq$ and $\zeta_n$ be a primitive $n$-th root of unity in $\CC$.
 
-a. Show that the splitting field $E$ of $(x^p - 2)(x^q - 2)$ over $\mathbb{Q}$ is $\mathbb{Q}(\zeta_n, \sqrt[n]{2})$.
+a. Show that the splitting field $E$ of $(x^p - 2)(x^q - 2)$ over $\QQ$ is $\QQ(\zeta_n, \sqrt[n]{2})$.
 
-b. Determine $[E : \mathbb{Q}]$.
+b. Determine $[E : \QQ]$.
 
-c. Find two subgroups of $\mathrm{Gal}(E/\mathbb{Q})$ of order $(p-1)(q-1)$.
+c. Find two subgroups of $\mathrm{Gal}(E/\QQ)$ of order $(p-1)(q-1)$.
 
-d. Show that the Sylow $p$-subgroup of $\mathrm{Gal}(E/\mathbb{Q})$ is normal and determine its fixed field.
+d. Show that the Sylow $p$-subgroup of $\mathrm{Gal}(E/\QQ)$ is normal and determine its fixed field.
 :::
 
 ::: {.hint}
@@ -45,20 +45,20 @@ $pa+qb=1$.
 
 ::: {.solution}
 Put $\alpha=\sqrt[n]{2}>0$, $\zeta=\zeta_n$, and
-$L=\mathbb Q(\zeta)$. Write $m=(p-1)(q-1)$.
+$L=\QQ(\zeta)$. Write $m=(p-1)(q-1)$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The splitting field is $E=\mathbb Q(\zeta,\alpha)$.
+The splitting field is $E=\QQ(\zeta,\alpha)$.
 
 ::: pf-proof
 
 The roots of $x^p-2$ are
 $\alpha^q(\zeta^q)^j$, $0\leq j<p$; the roots of
 $x^q-2$ are $\alpha^p(\zeta^p)^k$, $0\leq k<q$.
-All lie in $\mathbb Q(\zeta,\alpha)$.
+All lie in $\QQ(\zeta,\alpha)$.
 Conversely, the splitting field contains $\alpha^q$ and
 $\alpha^p$, and their nonzero-root ratios give $\zeta^q$
 and $\zeta^p$. Choose integers $a,b$ with $pa+qb=1$.
@@ -79,24 +79,24 @@ This proves equality of the two fields.
 
 The degree is
 $$
-\boxed{[E:\mathbb Q]=pq(p-1)(q-1)=nm}.
+\boxed{[E:\QQ]=pq(p-1)(q-1)=nm}.
 $$
 
 ::: pf-proof
 
 The polynomial $x^n-2$ is Eisenstein at two, so
-$[\mathbb Q(\alpha):\mathbb Q]=n$ [@DF04].
+$[\QQ(\alpha):\QQ]=n$ [@DF04].
 The cyclotomic degree formula gives
-$[L:\mathbb Q]=\varphi(pq)=(p-1)(q-1)=m$ [@DF04].
+$[L:\QQ]=\varphi(pq)=(p-1)(q-1)=m$ [@DF04].
 Neither $p$ nor $q$ divides $m$: for $p$ this uses
 $p\nmid q-1$, and for $q$ it follows from
 $p-1<q$ and $q\nmid q-1$. Thus $\gcd(n,m)=1$.
 
-The degree $[E:\mathbb Q]$ is divisible by both $n$ and
+The degree $[E:\QQ]$ is divisible by both $n$ and
 $m$, since $E$ contains both subfields. It is consequently
 divisible by their product $nm$. On the other hand,
 $E=L(\alpha)$ and $\alpha$ satisfies $x^n-2$ over $L$,
-so $[E:L]\leq n$ and $[E:\mathbb Q]\leq nm$.
+so $[E:L]\leq n$ and $[E:\QQ]\leq nm$.
 Both bounds force equality. In particular $x^n-2$ remains
 irreducible over $L$, and $[E:L]=n$.
 
@@ -108,8 +108,8 @@ irreducible over $L$, and $[E:L]=n$.
 
 The Galois group has the explicit form
 $$
-G=\{\tau^a\sigma_b:a\in\mathbb Z/n\mathbb Z,
-\ b\in(\mathbb Z/n\mathbb Z)^\times\},
+G=\{\tau^a\sigma_b:a\in\ZZ/n\ZZ,
+\ b\in(\ZZ/n\ZZ)^\times\},
 $$
 where
 $$
@@ -152,16 +152,16 @@ automorphisms exhaust its Galois group [@DF04].
 
 Two distinct subgroups of order $m$ are
 $$
-H_0=\{\sigma_b:b\in(\mathbb Z/n\mathbb Z)^\times\},
+H_0=\{\sigma_b:b\in(\ZZ/n\ZZ)^\times\},
 \qquad
 H_1=\tau H_0\tau^{-1}
-=\{\tau^{1-b}\sigma_b:b\in(\mathbb Z/n\mathbb Z)^\times\}.
+=\{\tau^{1-b}\sigma_b:b\in(\ZZ/n\ZZ)^\times\}.
 $$
 
 ::: pf-proof
 
 The composition rule in step [](#s3){.pf-ref} makes $H_0$ a subgroup
-isomorphic to $(\mathbb Z/n\mathbb Z)^\times$, of order
+isomorphic to $(\ZZ/n\ZZ)^\times$, of order
 $m$. Its conjugate $H_1$ is a subgroup of the same order.
 The displayed description of $H_1$ follows from
 $\sigma_b\tau^{-1}=\tau^{-b}\sigma_b$.
@@ -182,7 +182,7 @@ The unique Sylow $p$-subgroup and its fixed field are
 $$
 P=\langle\tau^q\rangle,
 \qquad
-\boxed{E^P=\mathbb Q(\zeta_n,\sqrt[q]{2})}.
+\boxed{E^P=\QQ(\zeta_n,\sqrt[q]{2})}.
 $$
 
 ::: pf-proof
@@ -196,7 +196,7 @@ The elements $\tau$ and all $\sigma_b$ generate $G$,
 so $P$ is normal in $G$. Sylow conjugacy then makes it
 the unique Sylow $p$-subgroup [@DF04].
 
-Put $M=\mathbb Q(\zeta,\alpha^p)$, noting that
+Put $M=\QQ(\zeta,\alpha^p)$, noting that
 $\alpha^p=\sqrt[q]{2}$. The subgroup $P$ fixes both
 generators, because
 $(\tau^q)(\alpha^p)=\zeta^{pq}\alpha^p=\alpha^p$.

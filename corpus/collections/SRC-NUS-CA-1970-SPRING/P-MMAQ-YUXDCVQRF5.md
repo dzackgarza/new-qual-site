@@ -111,7 +111,7 @@ Symmetry: $\int_0^{2\pi} g(\cos\theta)\,d\theta = 2 \int_0^\pi g(\cos\theta)\,d\
 
 ::: pf-step
 
-**Substitute $z = e^{i\theta}$ on the unit circle $C = \{z \in \mathbb{C} : |z| = 1\}$.**
+**Substitute $z = e^{i\theta}$ on the unit circle $C = \{z \in \CC : |z| = 1\}$.**
 
 ::: pf-proof
 

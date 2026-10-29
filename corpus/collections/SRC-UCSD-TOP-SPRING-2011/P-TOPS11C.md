@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Assume that $X$ is a path-connected, locally simply-connected space with fundamental group isomorphic to $\mathbb{Z}_2 \times \mathbb{Z}_2$.
+Assume that $X$ is a path-connected, locally simply-connected space with fundamental group isomorphic to $\ZZ_2 \times \ZZ_2$.
 How many path-connected covering spaces of $X$ are there, up to equivalence (isomorphism)?
 :::
 
@@ -25,7 +25,7 @@ How many path-connected covering spaces of $X$ are there, up to equivalence (iso
 ::: {.pf-step #coverings-correspond-to-subgroups}
 Connected covering spaces of $X$ up to equivalence correspond to conjugacy classes of subgroups of
 $$
-\pi_1(X)\cong(\mathbb Z/2)^2.
+\pi_1(X)\cong(\ZZ/2)^2.
 $$
 
 ::: pf-proof
@@ -44,7 +44,7 @@ Every subgroup is fixed under conjugation in an abelian group.
 :::
 
 ::: {.pf-step #five-subgroups}
-The group $(\mathbb Z/2)^2$ has exactly five subgroups: the trivial subgroup, the whole group, and its three distinct subgroups of order $2$.
+The group $(\ZZ/2)^2$ has exactly five subgroups: the trivial subgroup, the whole group, and its three distinct subgroups of order $2$.
 
 ::: pf-proof
 There are three nonzero elements, and each generates a distinct order-$2$ subgroup. There are no other possible subgroup orders by Lagrange's theorem.

@@ -28,7 +28,7 @@ e^{\operatorname{Tr}L}=\det A,
 $$
 equivalently
 $$
-\operatorname{Tr}L\equiv \log(\det A)\pmod{2\pi i\mathbb Z}.
+\operatorname{Tr}L\equiv \log(\det A)\pmod{2\pi i\ZZ}.
 $$
 The displayed equality in the problem holds when the scalar logarithm of
 $\det A$ is chosen compatibly with the matrix logarithm.
@@ -53,7 +53,7 @@ $$
 
 ::: pf-proof
 
-Triangularize $X$ over $\mathbb C$: there exists an invertible $P$ such that
+Triangularize $X$ over $\CC$: there exists an invertible $P$ such that
 $$
 T=P^{-1}XP
 $$
@@ -137,7 +137,7 @@ $$
 \log(\det A)+2\pi i k
 }
 $$
-for some $k\in\mathbb Z$.
+for some $k\in\ZZ$.
 
 
 ::: pf-proof

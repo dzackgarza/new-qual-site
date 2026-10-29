@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $F:\mathbb R^2\to\mathbb R^2$ is differentiable everywhere, its derivative matrix is continuous everywhere, and its Jacobian determinant is everywhere nonzero.
+Suppose $F:\RR^2\to\RR^2$ is differentiable everywhere, its derivative matrix is continuous everywhere, and its Jacobian determinant is everywhere nonzero.
 Assume also that
 \[
 \|F(x,y)\|\geq1
@@ -41,7 +41,7 @@ Hint: if $U=\{(x,y):x^2+y^2<1\}$, prove that $F(U)\cap U$ is open and closed in 
 
 Let
 \[
-U=\{p\in\mathbb R^2:\|p\|<1\}
+U=\{p\in\RR^2:\|p\|<1\}
 \]
 and define
 \[
@@ -76,7 +76,7 @@ one has
 
 ::: {.pf-step #s1-2}
 
-The set $F(U)$ is open in $\mathbb R^2$.
+The set $F(U)$ is open in $\RR^2$.
 
 
 ::: pf-proof
@@ -98,7 +98,7 @@ such that
 \[
 F(N_p)
 \]
-is open in $\mathbb R^2$.
+is open in $\RR^2$.
 Since
 \[
 F(U)
@@ -118,7 +118,7 @@ The set $Y$ is open in the subspace $U$.
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $F(U)$ is open in $\mathbb R^2$.
+By step [](#s1-2){.pf-ref}, $F(U)$ is open in $\RR^2$.
 Therefore
 \[
 Y=F(U)\cap U
@@ -171,7 +171,7 @@ The closed unit disk
 \[
 \overline U
 =
-\{p\in\mathbb R^2:\|p\|\le1\}
+\{p\in\RR^2:\|p\|\le1\}
 \]
 is compact.
 Every $x_n$ belongs to $U\subseteq\overline U$.

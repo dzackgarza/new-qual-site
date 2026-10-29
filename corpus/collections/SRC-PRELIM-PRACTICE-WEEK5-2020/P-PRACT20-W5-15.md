@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-15
 kind: problem
-title: Group and ring endomorphisms of $\mathbb Z$
+title: Group and ring endomorphisms of $\ZZ$
 classification:
   areas:
   - algebra
@@ -22,20 +22,20 @@ Find all group and ring homomorphisms from $\ZZ \to \ZZ$.
 
 ::: {.solution}
 
-Regard $\mathbb Z$ as an additive group when discussing group homomorphisms.
+Regard $\ZZ$ as an additive group when discussing group homomorphisms.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-If $\phi:(\mathbb Z,+)\to(\mathbb Z,+)$ is a group homomorphism and
+If $\phi:(\ZZ,+)\to(\ZZ,+)$ is a group homomorphism and
 \[
 k=\phi(1),
 \]
 then
 \[
 \phi(n)=kn
-\qquad(n\in\mathbb Z).
+\qquad(n\in\ZZ).
 \]
 
 
@@ -63,7 +63,7 @@ so
 
 ::: {.pf-step #s1-2}
 
-Conversely, for every $k\in\mathbb Z$, the map
+Conversely, for every $k\in\ZZ$, the map
 \[
 \phi_k(n)=kn
 \]
@@ -72,7 +72,7 @@ is a group homomorphism.
 
 ::: pf-proof
 
-For $m,n\in\mathbb Z$,
+For $m,n\in\ZZ$,
 \[
 \phi_k(m+n)
 =k(m+n)
@@ -86,9 +86,9 @@ For $m,n\in\mathbb Z$,
 
 ::: {.pf-step #s1-3}
 
-Hence the group homomorphisms $\mathbb Z\to\mathbb Z$ are exactly
+Hence the group homomorphisms $\ZZ\to\ZZ$ are exactly
 \[
-\boxed{\phi_k(n)=kn,\qquad k\in\mathbb Z}.
+\boxed{\phi_k(n)=kn,\qquad k\in\ZZ}.
 \]
 
 
@@ -102,7 +102,7 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove both directions.
 
 ::: {.pf-step #s1-4}
 
-If $\phi:\mathbb Z\to\mathbb Z$ is a ring homomorphism, then
+If $\phi:\ZZ\to\ZZ$ is a ring homomorphism, then
 \[
 \phi(1)\in\{0,1\}.
 \]
@@ -120,7 +120,7 @@ Multiplicativity gives
 =\phi(1\cdot1)
 =\phi(1)^2.
 \]
-Writing $k=\phi(1)\in\mathbb Z$, this says
+Writing $k=\phi(1)\in\ZZ$, this says
 \[
 k^2=k,
 \]
@@ -128,7 +128,7 @@ or
 \[
 k(k-1)=0.
 \]
-Since $\mathbb Z$ is an integral domain, $k=0$ or $k=1$.
+Since $\ZZ$ is an integral domain, $k=0$ or $k=1$.
 
 :::
 

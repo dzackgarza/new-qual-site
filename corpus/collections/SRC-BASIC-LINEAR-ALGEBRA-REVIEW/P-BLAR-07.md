@@ -43,7 +43,7 @@ In part (1), \(T\) is linear, with matrix
 \]
 
 ::: pf-proof
-For \((x,y)\in\mathbb R^2\),
+For \((x,y)\in\RR^2\),
 \[
 T(x,y)=x(2,0)+y(0,1).
 \]
@@ -94,16 +94,16 @@ Substituting \(\theta=\pi/3\) gives the displayed matrix.
 :::
 
 ::: pf-step
-In part (4), the source as written does \(\boxed{\text{not define a map }\mathbb R^3\to\mathbb R^2}\), so its linearity and a \(2\times3\) transformation matrix are not determined.
+In part (4), the source as written does \(\boxed{\text{not define a map }\RR^3\to\RR^2}\), so its linearity and a \(2\times3\) transformation matrix are not determined.
 
 ::: pf-proof
-An element of \(\mathbb R^3\) has three coordinates, whereas the displayed rule accepts only two inputs, \(T(x,y)\). No dependence on a third coordinate is specified, so the rule does not assign an output to a general element \((x,y,z)\in\mathbb R^3\).
+An element of \(\RR^3\) has three coordinates, whereas the displayed rule accepts only two inputs, \(T(x,y)\). No dependence on a third coordinate is specified, so the rule does not assign an output to a general element \((x,y,z)\in\RR^3\).
 
-If the displayed formula is instead read literally as a map \(\mathbb R^2\to\mathbb R^2\), it is linear and has matrix
+If the displayed formula is instead read literally as a map \(\RR^2\to\RR^2\), it is linear and has matrix
 \[
 \begin{bmatrix}1&2\\1&3\end{bmatrix},
 \]
-because \((x+2y,x+3y)^T=\begin{bmatrix}1&2\\1&3\end{bmatrix}(x,y)^T\). This observation does not determine which \(\mathbb R^3\to\mathbb R^2\) map the source intended.
+because \((x+2y,x+3y)^T=\begin{bmatrix}1&2\\1&3\end{bmatrix}(x,y)^T\). This observation does not determine which \(\RR^3\to\RR^2\) map the source intended.
 :::
 
 :::

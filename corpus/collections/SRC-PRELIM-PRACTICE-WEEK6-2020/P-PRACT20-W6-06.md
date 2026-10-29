@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find examples of a function $f : ( - 1 , 1 ) \to \mathbb { R }$ which is
+Find examples of a function $f : ( - 1 , 1 ) \to \RR$ which is
 
 (A) continuous but not uniformly continuous,
 

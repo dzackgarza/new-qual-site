@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the minimal polynomial of $\sqrt2+\sqrt3$ over $\mathbb Q$.
+Find the minimal polynomial of $\sqrt2+\sqrt3$ over $\QQ$.
 Justify your answer.
 :::
 
@@ -61,7 +61,7 @@ hence
 
 ::: {.pf-step #s2}
 
-The field \(\mathbb Q(\alpha)\) contains both \(\sqrt2\) and \(\sqrt3\).
+The field \(\QQ(\alpha)\) contains both \(\sqrt2\) and \(\sqrt3\).
 
 ::: pf-proof
 
@@ -71,7 +71,7 @@ Since
 \]
 we have
 \[
-\alpha^{-1}=\sqrt3-\sqrt2\in\mathbb Q(\alpha).
+\alpha^{-1}=\sqrt3-\sqrt2\in\QQ(\alpha).
 \]
 Therefore
 \[
@@ -79,7 +79,7 @@ Therefore
 \qquad
 \sqrt2=\frac{\alpha-\alpha^{-1}}2.
 \]
-Thus \(\mathbb Q(\sqrt2,\sqrt3)\subseteq\mathbb Q(\alpha)\), while the reverse inclusion is immediate from the definition of \(\alpha\).
+Thus \(\QQ(\sqrt2,\sqrt3)\subseteq\QQ(\alpha)\), while the reverse inclusion is immediate from the definition of \(\alpha\).
 
 :::
 
@@ -89,16 +89,16 @@ Thus \(\mathbb Q(\sqrt2,\sqrt3)\subseteq\mathbb Q(\alpha)\), while the reverse i
 
 We have
 \[
-[\mathbb Q(\alpha):\mathbb Q]=4.
+[\QQ(\alpha):\QQ]=4.
 \]
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
 \[
-\mathbb Q(\alpha)=\mathbb Q(\sqrt2,\sqrt3).
+\QQ(\alpha)=\QQ(\sqrt2,\sqrt3).
 \]
-Now \([\mathbb Q(\sqrt2):\mathbb Q]=2\), and \(\sqrt3\notin\mathbb Q(\sqrt2)\). Indeed, if \(\sqrt3=a+b\sqrt2\) with \(a,b\in\mathbb Q\), squaring gives
+Now \([\QQ(\sqrt2):\QQ]=2\), and \(\sqrt3\notin\QQ(\sqrt2)\). Indeed, if \(\sqrt3=a+b\sqrt2\) with \(a,b\in\QQ\), squaring gives
 \[
 3=a^2+2b^2+2ab\sqrt2,
 \]
@@ -110,7 +110,7 @@ so \(ab=0\); either case is impossible. Hence adjoining \(\sqrt3\) gives another
 
 ::: pf-step
 
-Therefore the minimal polynomial of \(\sqrt2+\sqrt3\) over \(\mathbb Q\) is
+Therefore the minimal polynomial of \(\sqrt2+\sqrt3\) over \(\QQ\) is
 \[
 \boxed{x^4-10x^2+1}.
 \]

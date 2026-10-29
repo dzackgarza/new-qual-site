@@ -28,7 +28,7 @@ Let $R$ be a ring with the property that $a^2=a$ for all $a\in R$.
 
 - Prove that $R$ is commutative.
 
-- Prove that if $R$ is finite, then $R$ is isomorphic (as a ring) to $(\mathbb Z/2\mathbb Z)^d$ for some $d$.
+- Prove that if $R$ is finite, then $R$ is isomorphic (as a ring) to $(\ZZ/2\ZZ)^d$ for some $d$.
 :::
 
 ::: {.solution}
@@ -102,7 +102,7 @@ By step [](#s2){.pf-ref}, \(-ba=ba\), so \(ab=ba\). Hence \(R\) is commutative.
 
 If \(R\) is finite, then
 \[
-R\cong (\mathbb Z/2\mathbb Z)^d
+R\cong (\ZZ/2\ZZ)^d
 \]
 for some \(d\ge0\).
 
@@ -130,7 +130,7 @@ R/\mathfrak m_i\cong\mathbb F_2.
 \]
 Therefore
 \[
-R\cong \mathbb F_2^d\cong(\mathbb Z/2\mathbb Z)^d.
+R\cong \mathbb F_2^d\cong(\ZZ/2\ZZ)^d.
 \]
 
 :::

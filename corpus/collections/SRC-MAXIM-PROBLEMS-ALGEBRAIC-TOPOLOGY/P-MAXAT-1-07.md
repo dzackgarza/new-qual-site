@@ -75,7 +75,7 @@ The sphere $S^3$ is simply connected. A connected simply connected covering spac
 
 Hence
 \[
-\pi_1(N)\cong\mathbb Z/2\mathbb Z.
+\pi_1(N)\cong\ZZ/2\ZZ.
 \]
 
 

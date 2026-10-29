@@ -37,9 +37,9 @@ For openness, take $w\in\mathcal C_z$. Since $\Omega$ is open, some disc $D(w,r)
 
 The relation $w\sim z$ defined by $w\in\mathcal C_z$ is reflexive (use the constant curve), symmetric (reverse a joining curve), and transitive (concatenate joining curves). Hence it is an equivalence relation. Its equivalence classes are exactly the connected components $\mathcal C_z$, so two components are either equal or disjoint and their union is $\Omega$.
 
-For countability, every component is a nonempty open subset of $\mathbb C\cong\mathbb R^2$, hence contains a point of $\mathbb Q^2$. Distinct components are disjoint, so choosing one rational point from each component gives an injection from the set of components into the countable set $\mathbb Q^2$. Therefore there are at most countably many components.
+For countability, every component is a nonempty open subset of $\CC\cong\RR^2$, hence contains a point of $\QQ^2$. Distinct components are disjoint, so choosing one rational point from each component gives an injection from the set of components into the countable set $\QQ^2$. Therefore there are at most countably many components.
 
-Finally suppose $\Omega=\mathbb C\setminus K$ with $K$ compact. Choose $R>0$ such that $K\subset D(0,R)$. The exterior
+Finally suppose $\Omega=\CC\setminus K$ with $K$ compact. Choose $R>0$ such that $K\subset D(0,R)$. The exterior
 \[
 E=\{z:|z|>R\}
 \]

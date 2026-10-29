@@ -32,18 +32,18 @@ Boundary behavior on the coordinate axes:
 
 ::: pf-step
 
-On the real axis ($y = 0$), $z = x \in \mathbb{R}$:
+On the real axis ($y = 0$), $z = x \in \RR$:
 \[
-|f(x)| \le e^{|x \cdot 0|} = e^0 = 1 \quad \text{for all } x \in \mathbb{R}.
+|f(x)| \le e^{|x \cdot 0|} = e^0 = 1 \quad \text{for all } x \in \RR.
 \]
 
 :::
 
 ::: pf-step
 
-On the imaginary axis ($x = 0$), $z = iy$ with $y \in \mathbb{R}$:
+On the imaginary axis ($x = 0$), $z = iy$ with $y \in \RR$:
 \[
-|f(iy)| \le e^{|0 \cdot y|} = e^0 = 1 \quad \text{for all } y \in \mathbb{R}.
+|f(iy)| \le e^{|0 \cdot y|} = e^0 = 1 \quad \text{for all } y \in \RR.
 \]
 
 :::
@@ -67,7 +67,7 @@ Application of the Phragmén–Lindelöf Principle:
 ::: pf-step
 
 In each quadrant $Q_k$ (where the opening angle is $\pi/2$), $f$ is holomorphic.
-The growth of $f$ satisfies $|f(z)| \le e^{|xy|} \le e^{|z|^2 / 2}$ for all $z \in \mathbb{C}$.
+The growth of $f$ satisfies $|f(z)| \le e^{|xy|} \le e^{|z|^2 / 2}$ for all $z \in \CC$.
 
 :::
 
@@ -97,7 +97,7 @@ Applying the Phragmén–Lindelöf Theorem to the sector of opening angle $\pi/2
 
 ::: pf-step
 
-Applying the identical argument to the remaining quadrants $Q_2, Q_3, Q_4$ yields $|f(z)| \le 1$ on all of $\mathbb{C}$.
+Applying the identical argument to the remaining quadrants $Q_2, Q_3, Q_4$ yields $|f(z)| \le 1$ on all of $\CC$.
 
 :::
 
@@ -113,17 +113,17 @@ Application of Liouville’s Theorem:
 
 ::: pf-step
 
-$f$ is an entire function satisfying $|f(z)| \le 1$ for all $z \in \mathbb{C}$.
+$f$ is an entire function satisfying $|f(z)| \le 1$ for all $z \in \CC$.
 By Liouville’s Theorem, $f$ must be a constant function:
 \[
-f(z) = c \quad \text{for some constant } c \in \mathbb{C} \text{ with } |c| \le 1.
+f(z) = c \quad \text{for some constant } c \in \CC \text{ with } |c| \le 1.
 \]
 
 :::
 
 ::: pf-step
 
-Conversely, for any constant $c \in \mathbb{C}$ with $|c| \le 1$, $|c| \le 1 \le e^{|xy|}$ holds for all $x, y \in \mathbb{R}$.
+Conversely, for any constant $c \in \CC$ with $|c| \le 1$, $|c| \le 1 \le e^{|xy|}$ holds for all $x, y \in \RR$.
 
 :::
 

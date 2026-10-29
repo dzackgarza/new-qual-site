@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M_{n\times n}(\mathbb R)$ be the vector space of real $n\times n$ matrices.
+Let $M_{n\times n}(\RR)$ be the vector space of real $n\times n$ matrices.
 
 (a) Prove that
 \[
@@ -25,7 +25,7 @@ Let $M_{n\times n}(\mathbb R)$ be the vector space of real $n\times n$ matrices.
 \]
 defines an inner product.
 
-(b) For fixed $C\in M_{n\times n}(\mathbb R)$, define
+(b) For fixed $C\in M_{n\times n}(\RR)$, define
 \[
 \Phi_C(A)=CA-AC.
 \]
@@ -142,7 +142,7 @@ Therefore
 \]
 defines an inner product on
 \[
-M_{n\times n}(\mathbb R).
+M_{n\times n}(\RR).
 \]
 
 
@@ -325,7 +325,7 @@ By step [](#s1-8){.pf-ref},
 \]
 The trace-zero matrices form a proper subspace of
 \[
-M_{n\times n}(\mathbb R),
+M_{n\times n}(\RR),
 \]
 because, for example,
 \[

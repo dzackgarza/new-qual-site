@@ -51,13 +51,13 @@ As \(h\) runs through \(G\), so does \(kh\). Hence this sum is exactly \(T\). Th
 :::
 
 ::: {.pf-step #t-is-scalar}
-Since \(V\) is irreducible, there is \(c\in\mathbb C\) such that
+Since \(V\) is irreducible, there is \(c\in\CC\) such that
 \[
 T=cI_V.
 \]
 
 ::: pf-proof
-By step [](#t-commutes-with-phi){.pf-ref}, \(T\) is an endomorphism of the irreducible \(G\)-module \(V\). Schur's lemma over \(\mathbb C\) therefore implies that \(T\) is scalar.
+By step [](#t-commutes-with-phi){.pf-ref}, \(T\) is an endomorphism of the irreducible \(G\)-module \(V\). Schur's lemma over \(\CC\) therefore implies that \(T\) is scalar.
 :::
 
 :::

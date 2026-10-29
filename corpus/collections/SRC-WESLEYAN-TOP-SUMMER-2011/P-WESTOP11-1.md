@@ -252,11 +252,11 @@ A\subseteq X
 \]
 be closed, and let
 \[
-f:A\to\mathbb R
+f:A\to\RR
 \]
 be continuous. Then there exists a continuous extension
 \[
-F:X\to\mathbb R
+F:X\to\RR
 \]
 such that
 \[
@@ -279,7 +279,7 @@ This is the standard real-valued Tietze extension theorem. The bounded form
 is the version often proved first; the unbounded version follows from it by
 composing with a homeomorphism
 \[
-\mathbb R\cong(-1,1)
+\RR\cong(-1,1)
 \]
 and then undoing that homeomorphism.
 

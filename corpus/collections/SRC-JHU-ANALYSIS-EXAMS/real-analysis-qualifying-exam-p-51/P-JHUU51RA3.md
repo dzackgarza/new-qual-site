@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be the set of functions $f:[0,1]\to\mathbb R$ for which
+Let $X$ be the set of functions $f:[0,1]\to\RR$ for which
 \[
 \|f\|:=|f(0)|+\sup_{x\ne y}\frac{|f(x)-f(y)|}{|x-y|^{1/5}}<\infty.
 \]
@@ -49,7 +49,7 @@ $X$ is a vector space and $\|\cdot\|$ is a norm.
 
 ::: pf-proof
 
-If $f,g\in X$ and $a,b\in\mathbb R$, then
+If $f,g\in X$ and $a,b\in\RR$, then
 \[
 [af+bg]_{1/5}\le |a|[f]_{1/5}+|b|[g]_{1/5}<\infty,
 \]
@@ -88,7 +88,7 @@ $X$ is complete.
 
 ::: pf-proof
 
-Let $(f_n)$ be Cauchy in $\|\cdot\|$. By step [](#s2){.pf-ref}, it is uniformly Cauchy, so there is a function $f:[0,1]\to\mathbb R$ such that
+Let $(f_n)$ be Cauchy in $\|\cdot\|$. By step [](#s2){.pf-ref}, it is uniformly Cauchy, so there is a function $f:[0,1]\to\RR$ such that
 \[
 f_n\to f
 \]

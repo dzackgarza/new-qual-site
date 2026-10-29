@@ -24,20 +24,20 @@ audit:
 ---
 
 ::: {.problem}
-Let $g : \mathbb{R}^d \to \mathbb{R}^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $|g(x)| \leq M$ for $m$-a.e. $x \in \mathbb{R}^d$.
-For $f \in L^1(m) := L^1(\mathbb{R}^d, m)$, let
+Let $g : \RR^d \to \RR^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $|g(x)| \leq M$ for $m$-a.e. $x \in \RR^d$.
+For $f \in L^1(m) := L^1(\RR^d, m)$, let
 $$
-(f * g)(x) = \int_{\mathbb{R}^d} f(x-y)g(y)\,dy.
+(f * g)(x) = \int_{\RR^d} f(x-y)g(y)\,dy.
 $$
 
-1. Show $(f * g)(x)$ is well defined (i.e. the integral exists) and $|(f * g)(x)| \leq M\|f\|_1$ for all $x \in \mathbb{R}^d$.
+1. Show $(f * g)(x)$ is well defined (i.e. the integral exists) and $|(f * g)(x)| \leq M\|f\|_1$ for all $x \in \RR^d$.
 
 2. Show $(f * g)(x)$ may also be written as
 $$
-(f * g)(x) = \int_{\mathbb{R}^d} f(y)g(x - y)\,dy.
+(f * g)(x) = \int_{\RR^d} f(y)g(x - y)\,dy.
 $$
 
-3. Verify $(f_n * g)(x)$ is continuous in $x$ for any $f_n \in C_c(\mathbb{R}^d)$.
+3. Verify $(f_n * g)(x)$ is continuous in $x$ for any $f_n \in C_c(\RR^d)$.
 
 4. Show, for $f \in L^1(m)$, that $f * g$ may be written as a uniformly convergent limit of continuous functions and hence $(f * g)(x)$ is continuous in $x$.
 :::
@@ -52,10 +52,10 @@ Prove existence and the uniform bound.
 
 ::: pf-proof
 
-For every $x\in\mathbb R^d$,
+For every $x\in\RR^d$,
 \[
-\int_{\mathbb R^d}|f(x-y)g(y)|\,dy
-\le M\int_{\mathbb R^d}|f(x-y)|\,dy
+\int_{\RR^d}|f(x-y)g(y)|\,dy
+\le M\int_{\RR^d}|f(x-y)|\,dy
 =M\|f\|_1<\infty.
 \]
 Thus $(f*g)(x)$ is well defined for every $x$, and
@@ -80,7 +80,7 @@ In
 make the change of variables $z=x-y$. Since Lebesgue measure is translation invariant,
 \[
 (f*g)(x)
-=\int_{\mathbb R^d} f(z)g(x-z)\,dz.
+=\int_{\RR^d} f(z)g(x-z)\,dz.
 \]
 Renaming $z$ as $y$ gives the desired formula.
 
@@ -90,15 +90,15 @@ Renaming $z$ as $y$ gives the desired formula.
 
 ::: pf-step
 
-Prove continuity for $f_n\in C_c(\mathbb R^d)$.
+Prove continuity for $f_n\in C_c(\RR^d)$.
 
 ::: pf-proof
 
-For $h\in\mathbb R^d$,
+For $h\in\RR^d$,
 \[
 \begin{aligned}
 |(f_n*g)(x+h)-(f_n*g)(x)|
-&\le M\int_{\mathbb R^d}|f_n(x+h-y)-f_n(x-y)|\,dy\\
+&\le M\int_{\RR^d}|f_n(x+h-y)-f_n(x-y)|\,dy\\
 &=M\|\tau_h f_n-f_n\|_1,
 \end{aligned}
 \]
@@ -119,19 +119,19 @@ Approximate a general $f\in L^1$ by compactly supported continuous functions.
 
 ::: pf-proof
 
-Choose $f_n\in C_c(\mathbb R^d)$ such that
+Choose $f_n\in C_c(\RR^d)$ such that
 \[
 \|f_n-f\|_1\longrightarrow0.
 \]
 By Step 1 applied to $f_n-f$,
 \[
-\sup_{x\in\mathbb R^d}|(f_n*g)(x)-(f*g)(x)|
+\sup_{x\in\RR^d}|(f_n*g)(x)-(f*g)(x)|
 \le M\|f_n-f\|_1
 \longrightarrow0.
 \]
 Thus $f_n*g\to f*g$ uniformly. Each $f_n*g$ is continuous by Step 3, so the uniform limit $f*g$ is continuous. Hence
 \[
-\boxed{f*g\in C(\mathbb R^d).}
+\boxed{f*g\in C(\RR^d).}
 \]
 
 :::

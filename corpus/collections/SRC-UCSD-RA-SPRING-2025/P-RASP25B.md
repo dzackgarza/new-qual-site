@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal{B}_{\mathbb{R}^n}$ be the Borel $\sigma$-algebra on $\mathbb{R}^n$ and let $\mu : \mathcal{B}_{\mathbb{R}^n} \to [0, \infty]$ be a measure such that
+Let $\mathcal{B}_{\RR^n}$ be the Borel $\sigma$-algebra on $\RR^n$ and let $\mu : \mathcal{B}_{\RR^n} \to [0, \infty]$ be a measure such that
 
-(1) $\mu(\mathbb{R}^n) = 1$,
+(1) $\mu(\RR^n) = 1$,
 
-(2) $\mu(\{x\}) = 0$ for every $x \in \mathbb{R}^n$.
+(2) $\mu(\{x\}) = 0$ for every $x \in \RR^n$.
 
 Prove that for every $\epsilon > 0$ there is $\delta > 0$ such that
 $$
@@ -43,7 +43,7 @@ Suppose the conclusion were false. Then there would exist
 \[
 \varepsilon_0>0
 \]
-such that for every $j\ge1$ one could find a Borel set $E_j\subset\mathbb R^n$ with
+such that for every $j\ge1$ one could find a Borel set $E_j\subset\RR^n$ with
 \[
 \operatorname{diam}(E_j)<\frac1j
 \qquad\text{and}\qquad
@@ -60,15 +60,15 @@ Reduce to sets inside a fixed compact ball.
 
 Since
 \[
-\overline{B_K(0)}\uparrow\mathbb R^n
+\overline{B_K(0)}\uparrow\RR^n
 \]
-as $K\to\infty$ and $\mu(\mathbb R^n)=1$, continuity from below gives
+as $K\to\infty$ and $\mu(\RR^n)=1$, continuity from below gives
 \[
 \mu(\overline{B_K(0)})\longrightarrow1.
 \]
 Choose $K$ so large that
 \[
-\mu(\mathbb R^n\setminus\overline{B_K(0)})<\frac{\varepsilon_0}{2}.
+\mu(\RR^n\setminus\overline{B_K(0)})<\frac{\varepsilon_0}{2}.
 \]
 Set
 \[
@@ -77,7 +77,7 @@ F_j:=E_j\cap\overline{B_K(0)}.
 Then
 \[
 \mu(F_j)
-\ge \mu(E_j)-\mu(\mathbb R^n\setminus\overline{B_K(0)})
+\ge \mu(E_j)-\mu(\RR^n\setminus\overline{B_K(0)})
 \ge\frac{\varepsilon_0}{2},
 \]
 and

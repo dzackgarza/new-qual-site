@@ -14,9 +14,9 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the monomial ideal $I = \langle x_2^2, \dots, x_n^2 \rangle$ in $\mathbb{C}[x_1, \dots, x_n]$.
+Consider the monomial ideal $I = \langle x_2^2, \dots, x_n^2 \rangle$ in $\CC[x_1, \dots, x_n]$.
 
-(a) Give a basis of the vector space $\mathbb{C}[x_1, \dots, x_n]/I$.
+(a) Give a basis of the vector space $\CC[x_1, \dots, x_n]/I$.
 
 (b) Compute the Hilbert function of the ideal $I$.
 
@@ -27,7 +27,7 @@ Consider the monomial ideal $I = \langle x_2^2, \dots, x_n^2 \rangle$ in $\mathb
 
 Let
 \[
-R=\mathbb C[x_1,\ldots,x_n],
+R=\CC[x_1,\ldots,x_n],
 \qquad
 I=(x_2^2,\ldots,x_n^2).
 \]
@@ -35,7 +35,7 @@ I=(x_2^2,\ldots,x_n^2).
 ::: pf
 
 ::: {.pf-step #quotient-basis}
-A $\mathbb C$-basis of $R/I$ is
+A $\CC$-basis of $R/I$ is
 \[
 \boxed{\left\{
  x_1^a x_2^{\varepsilon_2}\cdots x_n^{\varepsilon_n}
@@ -84,7 +84,7 @@ A basis monomial of total degree $d$ is determined by choosing a subset of $\{x_
 ::: pf-step
 If “the Hilbert function of the ideal $I$” is interpreted literally as
 \[
-H_I(d)=\dim_{\mathbb C} I_d,
+H_I(d)=\dim_{\CC} I_d,
 \]
 then
 \[
@@ -116,7 +116,7 @@ This also records the answer if the source intended the more common convention o
 ::: pf-step
 The affine variety is
 \[
-\boxed{V(I)=\{(a,0,\ldots,0):a\in\mathbb C\}.}
+\boxed{V(I)=\{(a,0,\ldots,0):a\in\CC\}.}
 \]
 
 ::: pf-proof
@@ -124,7 +124,7 @@ A point $(a_1,\ldots,a_n)$ belongs to $V(I)$ exactly when
 \[
 a_i^2=0\qquad(2\le i\le n).
 \]
-Over the field $\mathbb C$, this is equivalent to $a_i=0$ for every $i\ge2$, while $a_1$ is unrestricted.
+Over the field $\CC$, this is equivalent to $a_i=0$ for every $i\ge2$, while $a_1$ is unrestricted.
 :::
 
 :::
@@ -135,7 +135,7 @@ The variety $V(I)$ is irreducible.
 ::: pf-proof
 The map
 \[
-\mathbb A^1_{\mathbb C}\longrightarrow V(I),
+\mathbb A^1_{\CC}\longrightarrow V(I),
 \qquad
 a\longmapsto(a,0,\ldots,0)
 \]
@@ -145,7 +145,7 @@ is an isomorphism of affine varieties. Equivalently,
 \]
 and
 \[
-R/\sqrt I\cong\mathbb C[x_1]
+R/\sqrt I\cong\CC[x_1]
 \]
 is an integral domain. Hence $V(I)$ is irreducible.
 :::

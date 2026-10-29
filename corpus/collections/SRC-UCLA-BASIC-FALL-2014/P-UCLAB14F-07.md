@@ -87,7 +87,7 @@ s\\
 t
 \end{pmatrix},
 \qquad
-s,t\in\mathbb R.
+s,t\in\RR.
 \]
 
 
@@ -181,7 +181,7 @@ Differentiate the quadratic polynomial from step [](#s1-3){.pf-ref}:
 =
 2(23s+42t-19).
 \]
-At an interior minimum in $\mathbb R^2$, both partial derivatives vanish.
+At an interior minimum in $\RR^2$, both partial derivatives vanish.
 
 :::
 

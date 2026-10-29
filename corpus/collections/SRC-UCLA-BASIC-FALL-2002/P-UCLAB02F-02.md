@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB02F-02
 kind: problem
-title: Least-upper-bound completeness implies Cauchy completeness of $\mathbb R$
+title: Least-upper-bound completeness implies Cauchy completeness of $\RR$
 classification:
   areas: [prelim]
   topics: []
@@ -91,7 +91,7 @@ Also step [](#s1-1){.pf-ref} gives a lower bound $M$ for every $a_k$, hence for 
 
 The set
 \[
-\{-s_n:n\in\mathbb N\}
+\{-s_n:n\in\NN\}
 \]
 has a least upper bound, say $-L$.
 
@@ -100,11 +100,11 @@ has a least upper bound, say $-L$.
 
 By step [](#s1-3){.pf-ref}, the sequence $(-s_n)$ is increasing. Since $(s_n)$ is bounded below, $(-s_n)$ is bounded above. Its set of values is nonempty, so the least-upper-bound property gives a real number
 \[
--L=\sup\{-s_n:n\in\mathbb N\}.
+-L=\sup\{-s_n:n\in\NN\}.
 \]
 Equivalently,
 \[
-L=\inf\{s_n:n\in\mathbb N\}.
+L=\inf\{s_n:n\in\NN\}.
 \]
 
 :::

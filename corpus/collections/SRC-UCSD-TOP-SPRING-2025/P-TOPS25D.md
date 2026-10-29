@@ -15,7 +15,7 @@ review: draft
 ::: {.problem}
 For any topological space $X$ whose total homology is a finitely-generated abelian group, let $\chi(X)$ denote the usual Euler characteristic
 \[
-\chi(X) = \sum_i (-1)^i \dim_{\mathbb{Q}} H_i(X; \mathbb{Q})
+\chi(X) = \sum_i (-1)^i \dim_{\QQ} H_i(X; \QQ)
 \]
 and let $\chi_2(X)$ be the "mod-2 homology Euler characteristic"
 \[
@@ -30,7 +30,7 @@ Use the universal coefficient theorem to show that $\chi(X) = \chi_2(X)$.
 
 ::: pf-step
 Write each finitely generated integral homology group as
-$$H_i(X;\mathbb Z)\cong\mathbb Z^{b_i}\oplus T_i,$$
+$$H_i(X;\ZZ)\cong\ZZ^{b_i}\oplus T_i,$$
 with $T_i$ finite.
 
 ::: pf-proof
@@ -45,7 +45,7 @@ $$\dim_{\mathbb F_2}H_i(X;\mathbb F_2)=b_i+t_i+t_{i-1}.$$
 
 ::: pf-proof
 The exact sequence is
-$$0\to H_i(X;\mathbb Z)\otimes\mathbb F_2\to H_i(X;\mathbb F_2)\to\operatorname{Tor}(H_{i-1}(X;\mathbb Z),\mathbb F_2)\to0.$$
+$$0\to H_i(X;\ZZ)\otimes\mathbb F_2\to H_i(X;\mathbb F_2)\to\operatorname{Tor}(H_{i-1}(X;\ZZ),\mathbb F_2)\to0.$$
 For a finite abelian group, the dimensions of $T\otimes\mathbb F_2$ and $\operatorname{Tor}(T,\mathbb F_2)$ agree: both count the cyclic summands of even order.
 :::
 

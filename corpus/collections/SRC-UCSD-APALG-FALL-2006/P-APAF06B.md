@@ -198,7 +198,7 @@ When $\operatorname{rank}(A) < n$, $U$ is uniquely determined on the subspace $\
 
 ::: pf-proof
 
-orthogonal decomposition $\mathbb{C}^n = \operatorname{im}(H) \oplus \ker(H)$.
+orthogonal decomposition $\CC^n = \operatorname{im}(H) \oplus \ker(H)$.
 
 :::
 

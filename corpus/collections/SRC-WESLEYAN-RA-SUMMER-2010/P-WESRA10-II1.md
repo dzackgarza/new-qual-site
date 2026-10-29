@@ -87,7 +87,7 @@ gives the result.
 
 ::: {.pf-step #s1-3}
 
-For part (b), take Lebesgue measure on $\mathbb R$ and
+For part (b), take Lebesgue measure on $\RR$ and
 \[
 A_n=(0,1/n).
 \]

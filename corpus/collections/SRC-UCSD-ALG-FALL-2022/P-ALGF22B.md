@@ -187,7 +187,7 @@ Thus one may also state the answer as
 \[
 r\equiv1\pmod p
 \]
-or else $r\bmod p$ has order $q$ in $(\mathbb Z/p\mathbb Z)^\times$.
+or else $r\bmod p$ has order $q$ in $(\ZZ/p\ZZ)^\times$.
 
 :::
 

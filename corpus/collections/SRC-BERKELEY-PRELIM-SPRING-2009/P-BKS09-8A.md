@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-8A
 kind: problem
-title: Fixed field of $x\mapsto x^{-1}$ on $\mathbb Q(x)$
+title: Fixed field of $x\mapsto x^{-1}$ on $\QQ(x)$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb{Q}(x)$ be the field of rational functions of one variable over $\mathbb{Q}$. Let $i \colon \mathbb{Q}(x) \to \mathbb{Q}(x)$ be the unique field automorphism such that $i(x) = x^{-1}$. Prove that the subfield of elements fixed by $i$ is equal to $\mathbb{Q}(x + x^{-1})$.
+Let $\QQ(x)$ be the field of rational functions of one variable over $\QQ$. Let $i \colon \QQ(x) \to \QQ(x)$ be the unique field automorphism such that $i(x) = x^{-1}$. Prove that the subfield of elements fixed by $i$ is equal to $\QQ(x + x^{-1})$.
 :::
 
 ::: {.solution}

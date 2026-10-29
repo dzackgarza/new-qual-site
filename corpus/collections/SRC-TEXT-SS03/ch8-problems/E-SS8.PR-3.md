@@ -19,7 +19,7 @@ audit:
 ::: {.exercise}
 3.* The Schwarz-Pick lemma (see Exercise 13) is the infinitesimal version of an important observation in complex analysis and geometry.
 
-For complex numbers $w \in \mathbb{C}$ and $z \in \mathbb{D}$ we define the hyperbolic length of $w$ at $z$ by
+For complex numbers $w \in \CC$ and $z \in \mathbb{D}$ we define the hyperbolic length of $w$ at $z$ by
 
 $$
 \| w \| _ {z} = \frac{| w |}{1 - | z | ^ {2}},
@@ -150,7 +150,7 @@ For $z,w$ with $|z|=r$, $|w|=s$, write $c=\cos(\arg z-\arg w)$. Then
 \delta(z,w)^2=\frac{r^2+s^2-2rsc}{1+r^2s^2-2rsc}.
 \tag{5}
 \]
-For fixed $r,s<1$, the right side determines $c$ uniquely. Because $S$ preserves $r,s$ and $\delta$, it preserves $c$, hence preserves the Euclidean inner product and therefore Euclidean distance. Thus $S$ is a Euclidean isometry of the disk fixing $0$. Such a map is the restriction of an orthogonal linear map of $\mathbb R^2$, hence has one of the forms
+For fixed $r,s<1$, the right side determines $c$ uniquely. Because $S$ preserves $r,s$ and $\delta$, it preserves $c$, hence preserves the Euclidean inner product and therefore Euclidean distance. Thus $S$ is a Euclidean isometry of the disk fixing $0$. Such a map is the restriction of an orthogonal linear map of $\RR^2$, hence has one of the forms
 \[
 S(z)=e^{i\theta}z
 \qquad\text{or}\qquad

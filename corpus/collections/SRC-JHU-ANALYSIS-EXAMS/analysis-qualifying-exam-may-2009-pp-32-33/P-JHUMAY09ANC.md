@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be connected and open, and let
-$f_n:U\to\mathbb C$ be holomorphic with $f_n^{-1}(0)=\{c_n\}$
+Let $U\subset\CC$ be connected and open, and let
+$f_n:U\to\CC$ be holomorphic with $f_n^{-1}(0)=\{c_n\}$
 for every $n\geq1$. Suppose $f_n\to f_0$ uniformly on
 $U$, where $f_0$ is nonconstant.
 

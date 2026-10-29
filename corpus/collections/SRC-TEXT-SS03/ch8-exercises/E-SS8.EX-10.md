@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. Let $F : \mathbb { H } \to \mathbb { C }$ be a holomorphic function that satisfies
+10. Let $F : \mathbb { H } \to \CC$ be a holomorphic function that satisfies
 
 $$
 | F (z) | \leq 1 \quad \text { and } \quad F (i) = 0.

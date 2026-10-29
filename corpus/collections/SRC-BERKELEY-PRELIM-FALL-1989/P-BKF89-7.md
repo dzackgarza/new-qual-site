@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ and $B$ be diagonalizable linear transformations of $\mathbb R^n$ satisfying $AB=BA$. Let $E$ be an eigenspace of $A$. Prove that the restriction $B|_E$ is diagonalizable.
+Let $A$ and $B$ be diagonalizable linear transformations of $\RR^n$ satisfying $AB=BA$. Let $E$ be an eigenspace of $A$. Prove that the restriction $B|_E$ is diagonalizable.
 :::
 
 ::: {.solution}

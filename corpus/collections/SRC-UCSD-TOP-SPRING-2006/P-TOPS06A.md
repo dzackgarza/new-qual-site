@@ -36,7 +36,7 @@ Pairing opposite sides of the regular hexagon by the indicated parallel translat
 
 ::: pf-proof
 
-The regular hexagon tiles the plane by translations in a rank-two lattice. Identifying each pair of opposite parallel sides is exactly the quotient of one fundamental hexagon by that lattice, hence produces $\mathbb R^2/\Lambda\cong T^2$.
+The regular hexagon tiles the plane by translations in a rank-two lattice. Identifying each pair of opposite parallel sides is exactly the quotient of one fundamental hexagon by that lattice, hence produces $\RR^2/\Lambda\cong T^2$.
 
 :::
 
@@ -45,11 +45,11 @@ The regular hexagon tiles the plane by translations in a rank-two lattice. Ident
 ::: pf-step
 
 Therefore
-$$\boxed{\pi_1(X)\cong\mathbb Z^2.}$$
+$$\boxed{\pi_1(X)\cong\ZZ^2.}$$
 
 ::: pf-proof
 
-The fundamental group of the torus is the lattice of deck translations of its universal cover $\mathbb R^2$.
+The fundamental group of the torus is the lattice of deck translations of its universal cover $\RR^2$.
 
 :::
 
@@ -57,9 +57,9 @@ The fundamental group of the torus is the lattice of deck translations of its un
 
 ::: pf-step
 
-If $u,v\in H^1(X;\mathbb Z)$ are the dual generators, then
-$$\boxed{H^*(X;\mathbb Z)\cong\Lambda_{\mathbb Z}(u,v),\qquad |u|=|v|=1.}$$
-Equivalently, $u^2=v^2=0$ and $u\smile v$ generates $H^2(X;\mathbb Z)\cong\mathbb Z$.
+If $u,v\in H^1(X;\ZZ)$ are the dual generators, then
+$$\boxed{H^*(X;\ZZ)\cong\Lambda_{\ZZ}(u,v),\qquad |u|=|v|=1.}$$
+Equivalently, $u^2=v^2=0$ and $u\smile v$ generates $H^2(X;\ZZ)\cong\ZZ$.
 
 ::: pf-proof
 

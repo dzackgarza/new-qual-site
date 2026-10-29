@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-Let $f$ be a holomorphic function on the disk $D_{R_0}(0) \subset \mathbb{C}$ of radius $R_0 > 0$.
+Let $f$ be a holomorphic function on the disk $D_{R_0}(0) \subset \CC$ of radius $R_0 > 0$.
 
 (a) Prove that whenever $0 < R < R_0$ and $|z| < R$,
 $$

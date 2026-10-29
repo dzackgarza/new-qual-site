@@ -26,7 +26,7 @@ Prove every $m \times n$ matrix over $R$ can be diagonalized by invertible row a
 :::
 
 ::: {.solution}
-Let $N\colon R\setminus\{0\}\to\mathbb Z_{\ge0}$ be the Euclidean size function. The operations used are: interchanging two rows or two columns, and adding an $R$-multiple of one row (column) to another; each is invertible. Call two matrices equivalent if one is obtained from the other by such operations. We induct on $m+n$.
+Let $N\colon R\setminus\{0\}\to\ZZ_{\ge0}$ be the Euclidean size function. The operations used are: interchanging two rows or two columns, and adding an $R$-multiple of one row (column) to another; each is invertible. Call two matrices equivalent if one is obtained from the other by such operations. We induct on $m+n$.
 
 ::: pf
 

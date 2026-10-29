@@ -17,23 +17,23 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. A function $f:\mathbb R^n\to\mathbb R$ is called convex if
+Problem 2. A function $f:\RR^n\to\RR$ is called convex if
 \[
 f(\alpha x+(1-\alpha)y)\le \alpha f(x)+(1-\alpha)f(y)
 \]
-for all $x,y\in\mathbb R^n$ and $0\le\alpha\le1$.
+for all $x,y\in\RR^n$ and $0\le\alpha\le1$.
 
 Assume that $f$ is continuously differentiable and that for some constant $c>0$,
 \[
 (\nabla f(x)-\nabla f(y))\cdot(x-y)\ge c\,(x-y)\cdot(x-y)
 \]
-for all $x,y\in\mathbb R^n$.
+for all $x,y\in\RR^n$.
 Show that $f$ is convex.
 :::
 
 ::: {.solution}
 
-Fix $x,y\in\mathbb R^n$ and define
+Fix $x,y\in\RR^n$ and define
 \[
 v=x-y,
 \qquad
@@ -172,7 +172,7 @@ f(\alpha x+(1-\alpha)y)
 \le
 \alpha f(x)+(1-\alpha)f(y)
 \]
-for all $x,y\in\mathbb R^n$ and $0\le\alpha\le1$.
+for all $x,y\in\RR^n$ and $0\le\alpha\le1$.
 
 
 ::: pf-proof

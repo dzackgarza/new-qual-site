@@ -68,12 +68,12 @@ is continuous because $U$ is clopen, satisfies $\varphi(x)=0$, and equals $1$ on
 
 ::: {.pf-step #s1-3}
 
-The set $\mathbb Q$ is dense in $S$, so $S$ is separable.
+The set $\QQ$ is dense in $S$, so $S$ is separable.
 
 
 ::: pf-proof
 
-Every nonempty basic interval $[a,b)$ contains a rational number because $a<b$ and $\mathbb Q$ is dense in the ordinary real line. Thus every nonempty open set meets $\mathbb Q$.
+Every nonempty basic interval $[a,b)$ contains a rational number because $a<b$ and $\QQ$ is dense in the ordinary real line. Thus every nonempty open set meets $\QQ$.
 
 :::
 
@@ -86,19 +86,19 @@ The Sorgenfrey line is Lindelöf.
 
 ::: pf-proof
 
-Let $\mathcal U$ be an open cover of $S$. For each $x\in\mathbb R$, choose $U_x\in\mathcal U$ and $b_x>x$ such that
+Let $\mathcal U$ be an open cover of $S$. For each $x\in\RR$, choose $U_x\in\mathcal U$ and $b_x>x$ such that
 \[
 [x,b_x)\subseteq U_x.
 \]
 Let
 \[
-V=\bigcup_{x\in\mathbb R}(x,b_x)
+V=\bigcup_{x\in\RR}(x,b_x)
 \]
 in the ordinary Euclidean topology. This is an open subset of the second-countable real line, so choose countably many points $x_n$ such that
 \[
 V=\bigcup_n(x_n,b_{x_n}).
 \]
-The corresponding countable family $\{U_{x_n}\}$ covers $V$. The complement $C=\mathbb R\setminus V$ has the property that each $x\in C$ is the left endpoint of an interval $[x,b_x)$ and no distinct point of $C$ lies in $(x,b_x)$. Thus the intervals $(x,b_x)$, $x\in C$, contain pairwise distinct rational witnesses, so $C$ is countable. Add one $U_x$ for each $x\in C$. The resulting countable subfamily covers $S$.
+The corresponding countable family $\{U_{x_n}\}$ covers $V$. The complement $C=\RR\setminus V$ has the property that each $x\in C$ is the left endpoint of an interval $[x,b_x)$ and no distinct point of $C$ lies in $(x,b_x)$. Thus the intervals $(x,b_x)$, $x\in C$, contain pairwise distinct rational witnesses, so $C$ is countable. Add one $U_x$ for each $x\in C$. The resulting countable subfamily covers $S$.
 
 :::
 
@@ -111,11 +111,11 @@ The Sorgenfrey line is not second countable.
 
 ::: pf-proof
 
-Suppose $\mathcal B$ were a countable basis. For each $x\in\mathbb R$, choose $B_x\in\mathcal B$ with
+Suppose $\mathcal B$ were a countable basis. For each $x\in\RR$, choose $B_x\in\mathcal B$ with
 \[
 x\in B_x\subseteq[x,x+1).
 \]
-If $x<y$, then $x\in B_x$ but $x\notin[y,y+1)$, so $B_x\ne B_y$. Thus $x\mapsto B_x$ injects the uncountable set $\mathbb R$ into the countable set $\mathcal B$, a contradiction.
+If $x<y$, then $x\in B_x$ but $x\notin[y,y+1)$, so $B_x\ne B_y$. Thus $x\mapsto B_x$ injects the uncountable set $\RR$ into the countable set $\mathcal B$, a contradiction.
 
 :::
 
@@ -141,7 +141,7 @@ The product $S\times S$ is separable.
 
 ::: pf-proof
 
-The countable set $\mathbb Q\times\mathbb Q$ is dense. Indeed, every nonempty basic rectangle
+The countable set $\QQ\times\QQ$ is dense. Indeed, every nonempty basic rectangle
 \[
 [a,b)\times[c,d)
 \]
@@ -155,7 +155,7 @@ contains a pair of rationals.
 
 The anti-diagonal
 \[
-D=\{(x,-x):x\in\mathbb R\}
+D=\{(x,-x):x\in\RR\}
 \]
 is an uncountable closed discrete subspace of $S\times S$.
 
@@ -206,7 +206,7 @@ Suppose it were normal. It is separable by step [](#s1-7){.pf-ref}. In any separ
 \]
 Indeed, for each subset $A\subseteq D$, normality separates the disjoint closed sets $A$ and $D\setminus A$ and Urysohn's lemma gives a continuous $f_A:X\to[0,1]$ with values $0$ and $1$ on them. Distinct $A$ give distinct continuous functions. A continuous real-valued function on a separable space is determined by its values on a countable dense set, so there are at most
 \[
-|\mathbb R|^{\aleph_0}=2^{\aleph_0}
+|\RR|^{\aleph_0}=2^{\aleph_0}
 \]
 such functions. For the anti-diagonal $D$ of step [](#s1-8){.pf-ref}, $|D|=2^{\aleph_0}$, so Cantor's theorem gives
 \[

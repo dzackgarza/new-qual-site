@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF77-5
 kind: problem
-title: Units in $\mathbb Z_n$
+title: Units in $\ZZ_n$
 classification:
   areas:
   - prelim
@@ -25,14 +25,14 @@ audit:
 ::: {.problem}
 (a) Show that the set of all units in a ring with unity forms a group under multiplication.
 
-(b) In $\mathbb Z_n$, show that $k$ is a unit if and only if $k$ and $n$ are relatively prime.
+(b) In $\ZZ_n$, show that $k$ is a unit if and only if $k$ and $n$ are relatively prime.
 
-(c) If $n=pq$ with $p,q$ distinct primes, prove that the number of units in $\mathbb Z_n$ is $(p-1)(q-1)$.
+(c) If $n=pq$ with $p,q$ distinct primes, prove that the number of units in $\ZZ_n$ is $(p-1)(q-1)$.
 :::
 
 ::: {.remark}
 The printed source says only that $p$ and $q$ are primes. Distinctness is
-necessary: if $p=q=2$, then $n=4$ and $\mathbb Z_4$ has the two units
+necessary: if $p=q=2$, then $n=4$ and $\ZZ_4$ has the two units
 $[1]$ and $[3]$, whereas $(p-1)(q-1)=1$.
 :::
 
@@ -76,12 +76,12 @@ inverse $u$. Hence $R^\times$ satisfies all the group axioms.
 
 ::: {.pf-step #s2}
 
-Characterize the units of $\mathbb Z_n$.
+Characterize the units of $\ZZ_n$.
 
 ::: pf-proof
 
-The residue class $[k]\in\mathbb Z_n$ is a unit exactly when there exists
-$[\ell]\in\mathbb Z_n$ such that
+The residue class $[k]\in\ZZ_n$ is a unit exactly when there exists
+$[\ell]\in\ZZ_n$ such that
 $$
 [k][\ell]=[1].
 $$
@@ -99,7 +99,7 @@ $$
 $$
 Therefore
 $$
-\boxed{[k]\in\mathbb Z_n^\times\iff \gcd(k,n)=1.}
+\boxed{[k]\in\ZZ_n^\times\iff \gcd(k,n)=1.}
 $$
 
 :::
@@ -129,7 +129,7 @@ pq-(p+q-1)
 $$
 Thus
 $$
-\boxed{|\mathbb Z_{pq}^\times|=(p-1)(q-1).}
+\boxed{|\ZZ_{pq}^\times|=(p-1)(q-1).}
 $$
 
 :::

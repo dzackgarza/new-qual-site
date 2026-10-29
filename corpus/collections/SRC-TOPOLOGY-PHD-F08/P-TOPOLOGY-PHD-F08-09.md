@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R$ with the usual topology is connected.
+Prove that $\RR$ with the usual topology is connected.
 :::
 
 ::: {.solution}
@@ -39,9 +39,9 @@ Prove that $\mathbb R$ with the usual topology is connected.
 ::: pf-step
 Suppose, for contradiction, that
 \[
-\mathbb R=U\cup V
+\RR=U\cup V
 \]
-is a separation, with $U$ and $V$ disjoint nonempty open subsets of $\mathbb R$.
+is a separation, with $U$ and $V$ disjoint nonempty open subsets of $\RR$.
 Choose
 \[
 u\in U,
@@ -77,7 +77,7 @@ u\le c\le v.
 ::: pf-proof
 Since $u\in U\cap[u,v]$, the set $S$ is nonempty.
 Every element of $S$ lies in $[u,v]$, so $v$ is an upper bound.
-The least-upper-bound property of $\mathbb R$ therefore gives $c=\sup S$.
+The least-upper-bound property of $\RR$ therefore gives $c=\sup S$.
 Since $u\in S$, we have $u\le c$, and since $v$ is an upper bound, $c\le v$.
 :::
 
@@ -146,7 +146,7 @@ Therefore $c\notin V$.
 :::
 
 ::: pf-step
-Therefore $\mathbb R$ is connected.
+Therefore $\RR$ is connected.
 
 ::: pf-proof
 By steps [](#c-not-in-u){.pf-ref} and [](#c-not-in-v){.pf-ref},
@@ -155,9 +155,9 @@ c\notin U\cup V,
 \]
 contradicting the assumed equality
 \[
-\mathbb R=U\cup V.
+\RR=U\cup V.
 \]
-Thus no separation of $\mathbb R$ exists, so $\mathbb R$ is connected.
+Thus no separation of $\RR$ exists, so $\RR$ is connected.
 :::
 
 :::

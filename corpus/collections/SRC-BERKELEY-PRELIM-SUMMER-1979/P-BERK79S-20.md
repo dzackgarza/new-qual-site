@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $x:\mathbb R\to\mathbb R$ solve
+Let $x:\RR\to\RR$ solve
 \[
 5x''+10x'+6x=0.
 \]
@@ -37,7 +37,7 @@ Prove that the function
 \[
 f(t)=\frac{x(t)^2}{1+x(t)^4}
 \]
-attains a maximum value on $\mathbb R$.
+attains a maximum value on $\RR$.
 :::
 
 ::: {.solution}

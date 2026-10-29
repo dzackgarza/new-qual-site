@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-(a) Give an example of two finitely generated $\mathbb{Z}$-modules $M$ and $N$ such that $M$, $N$ are not isomorphic (as $\mathbb{Z}$-modules) but $\mathbb{Q} \otimes_\mathbb{Z} M \cong \mathbb{Q} \otimes_\mathbb{Z} N$ (as $\mathbb{Q}$-modules).
+(a) Give an example of two finitely generated $\ZZ$-modules $M$ and $N$ such that $M$, $N$ are not isomorphic (as $\ZZ$-modules) but $\QQ \otimes_\ZZ M \cong \QQ \otimes_\ZZ N$ (as $\QQ$-modules).
 
-(b) Let $M$ be a finitely generated $\mathbb{R}[x]$-module, described using the classification of finitely generated modules over a PID. Give a similar description of $\mathbb{C}[x] \otimes_{\mathbb{R}[x]} M$ as a $\mathbb{C}[x]$-module.
+(b) Let $M$ be a finitely generated $\RR[x]$-module, described using the classification of finitely generated modules over a PID. Give a similar description of $\CC[x] \otimes_{\RR[x]} M$ as a $\CC[x]$-module.
 
-(c) Show that if $M$ and $N$ are two finitely generated $\mathbb{R}[x]$-modules, and $\mathbb{C}[x] \otimes_{\mathbb{R}[x]} M \cong \mathbb{C}[x] \otimes_{\mathbb{R}[x]} N$ (as $\mathbb{C}[x]$-modules), then $M \cong N$ (as $\mathbb{R}[x]$-modules).
+(c) Show that if $M$ and $N$ are two finitely generated $\RR[x]$-modules, and $\CC[x] \otimes_{\RR[x]} M \cong \CC[x] \otimes_{\RR[x]} N$ (as $\CC[x]$-modules), then $M \cong N$ (as $\RR[x]$-modules).
 :::
 
 ::: {.solution}
@@ -39,22 +39,22 @@ audit:
 ::: pf-step
 Part (a) holds with
 \[
-M=\mathbb Z,
+M=\ZZ,
 \qquad
-N=\mathbb Z\oplus\mathbb Z/2\mathbb Z.
+N=\ZZ\oplus\ZZ/2\ZZ.
 \]
 
 ::: pf-proof
 The two modules are not isomorphic because $N$ contains a nonzero element of order $2$, whereas $M$ is torsion-free.
 On the other hand,
 \[
-\mathbb Q\otimes_{\mathbb Z}\mathbb Z\cong\mathbb Q,
+\QQ\otimes_{\ZZ}\ZZ\cong\QQ,
 \]
 while
 \[
-\mathbb Q\otimes_{\mathbb Z}\mathbb Z/2\mathbb Z=0.
+\QQ\otimes_{\ZZ}\ZZ/2\ZZ=0.
 \]
-Indeed, if $\bar1$ denotes the generator of $\mathbb Z/2\mathbb Z$, then
+Indeed, if $\bar1$ denotes the generator of $\ZZ/2\ZZ$, then
 \[
 1\otimes\bar1
 =\frac12\otimes 2\bar1
@@ -63,12 +63,12 @@ Indeed, if $\bar1$ denotes the generator of $\mathbb Z/2\mathbb Z$, then
 and hence every pure tensor vanishes.
 Therefore
 \[
-\mathbb Q\otimes_{\mathbb Z}N
+\QQ\otimes_{\ZZ}N
 \cong
-\mathbb Q\oplus0
-\cong\mathbb Q
+\QQ\oplus0
+\cong\QQ
 \cong
-\mathbb Q\otimes_{\mathbb Z}M.
+\QQ\otimes_{\ZZ}M.
 \]
 :::
 
@@ -78,39 +78,39 @@ Therefore
 Complexification is obtained from the real elementary-divisor decomposition by splitting each irreducible real quadratic into its two conjugate linear factors.
 
 ::: pf-proof
-The ring $\mathbb R[x]$ is a PID.
+The ring $\RR[x]$ is a PID.
 Thus the structure theorem gives an elementary-divisor decomposition
 \[
-M\cong \mathbb R[x]^r
+M\cong \RR[x]^r
 \oplus
-\bigoplus_{a\in\mathbb R}\bigoplus_{e\ge1}
-\left(\mathbb R[x]/((x-a)^e)\right)^{m_{a,e}}
+\bigoplus_{a\in\RR}\bigoplus_{e\ge1}
+\left(\RR[x]/((x-a)^e)\right)^{m_{a,e}}
 \oplus
 \bigoplus_{z\in S}\bigoplus_{e\ge1}
-\left(\mathbb R[x]/(q_z(x)^e)\right)^{n_{z,e}},
+\left(\RR[x]/(q_z(x)^e)\right)^{n_{z,e}},
 \]
 where only finitely many multiplicities are nonzero, $S$ contains one representative from each conjugate pair of nonreal complex numbers, and
 \[
 q_z(x):=(x-z)(x-\bar z)
 =x^2-2\operatorname{Re}(z)x+|z|^2
-\in\mathbb R[x].
+\in\RR[x].
 \]
-These are exactly the monic irreducible polynomials over $\mathbb R$: the linear factors and the quadratics $q_z$.
+These are exactly the monic irreducible polynomials over $\RR$: the linear factors and the quadratics $q_z$.
 
-For every $f\in\mathbb R[x]$,
+For every $f\in\RR[x]$,
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]/(f)
+\CC[x]\otimes_{\RR[x]}\RR[x]/(f)
 \cong
-\mathbb C[x]/(f).
+\CC[x]/(f).
 \]
 Also
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]^r
-\cong\mathbb C[x]^r.
+\CC[x]\otimes_{\RR[x]}\RR[x]^r
+\cong\CC[x]^r.
 \]
 Hence the real linear blocks remain
 \[
-\mathbb C[x]/((x-a)^e).
+\CC[x]/((x-a)^e).
 \]
 For a nonreal $z$, the ideals
 \[
@@ -118,21 +118,21 @@ For a nonreal $z$, the ideals
 \quad\text{and}\quad
 ((x-\bar z)^e)
 \]
-are comaximal in $\mathbb C[x]$, and
+are comaximal in $\CC[x]$, and
 \[
 q_z(x)^e=(x-z)^e(x-\bar z)^e.
 \]
 The Chinese remainder theorem therefore gives
 \[
-\mathbb C[x]/(q_z^e)
+\CC[x]/(q_z^e)
 \cong
-\mathbb C[x]/((x-z)^e)
+\CC[x]/((x-z)^e)
 \oplus
-\mathbb C[x]/((x-\bar z)^e).
+\CC[x]/((x-\bar z)^e).
 \]
 Consequently
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}M
+\CC[x]\otimes_{\RR[x]}M
 \]
 has free rank $r$, the same elementary divisors $(x-a)^e$ with multiplicities $m_{a,e}$ for real $a$, and for each nonreal conjugate pair $\{z,\bar z\}$ it has both elementary divisors $(x-z)^e$ and $(x-\bar z)^e$, each with multiplicity $n_{z,e}$.
 :::
@@ -140,16 +140,16 @@ has free rank $r$, the same elementary divisors $(x-a)^e$ with multiplicities $m
 :::
 
 ::: pf-step
-The isomorphism type of a finitely generated $\mathbb R[x]$-module is determined by its complexification.
+The isomorphism type of a finitely generated $\RR[x]$-module is determined by its complexification.
 
 ::: pf-proof
 Suppose
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}M
+\CC[x]\otimes_{\RR[x]}M
 \cong
-\mathbb C[x]\otimes_{\mathbb R[x]}N.
+\CC[x]\otimes_{\RR[x]}N.
 \]
-Since $\mathbb C[x]$ is a PID, the structure theorem over $\mathbb C[x]$ implies that the two complexified modules have the same free rank and exactly the same elementary divisors with the same multiplicities.
+Since $\CC[x]$ is a PID, the structure theorem over $\CC[x]$ implies that the two complexified modules have the same free rank and exactly the same elementary divisors with the same multiplicities.
 
 By step [](#complexification-decomposition){.pf-ref}, the real elementary-divisor data can be recovered uniquely from this complex data.
 For each real $a$, every block $(x-a)^e$ comes from the identical real block, so its multiplicity is read off directly.
@@ -160,8 +160,8 @@ q_z(x)^e=((x-z)(x-\bar z))^e.
 \]
 The free rank is also unchanged by scalar extension.
 
-Therefore $M$ and $N$ have the same free rank and the same elementary divisors over $\mathbb R[x]$, with the same multiplicities.
-The structure theorem for finitely generated modules over the PID $\mathbb R[x]$ then yields
+Therefore $M$ and $N$ have the same free rank and the same elementary divisors over $\RR[x]$, with the same multiplicities.
+The structure theorem for finitely generated modules over the PID $\RR[x]$ then yields
 \[
 M\cong N.
 \]

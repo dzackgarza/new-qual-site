@@ -34,7 +34,7 @@ Prove that the initial-value problem
 \frac{dx}{dt}=3x+85\cos x,
 \qquad x(0)=77,
 \]
-has a solution $x(t)$ defined for every $t\in\mathbb R$.
+has a solution $x(t)$ defined for every $t\in\RR$.
 :::
 
 ::: {.solution}

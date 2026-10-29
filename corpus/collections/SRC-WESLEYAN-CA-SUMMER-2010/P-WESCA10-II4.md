@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D\subset\mathbb C$ be a domain and let $f:D\to\mathbb C$ be analytic and injective.
+Let $D\subset\CC$ be a domain and let $f:D\to\CC$ be analytic and injective.
 Prove that
 \[
 f'(z)\ne0\qquad(z\in D).

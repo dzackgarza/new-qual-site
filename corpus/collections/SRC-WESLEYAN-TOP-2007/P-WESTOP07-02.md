@@ -11,7 +11,7 @@ audit:
 ---
 
 ::: {.problem}
-In this problem a *triangle* consists only of its three edges and three vertices. Let $T_1,T_2,T_3\subset\mathbb R^2$ be the triangles with vertices
+In this problem a *triangle* consists only of its three edges and three vertices. Let $T_1,T_2,T_3\subset\RR^2$ be the triangles with vertices
 \[
 (5,5),(7,5),(6,6),
 \]

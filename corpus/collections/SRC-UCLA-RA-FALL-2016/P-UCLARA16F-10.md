@@ -17,17 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Consider the quadratic polynomial $f(z)=z^2-1$ on $\mathbb C$.
-We are interested in the iterates $f^n$ of $f$, defined by $f^0=\operatorname{id}_{\mathbb C}$ and
+Consider the quadratic polynomial $f(z)=z^2-1$ on $\CC$.
+We are interested in the iterates $f^n$ of $f$, defined by $f^0=\operatorname{id}_{\CC}$ and
 \[
 f^n=\underbrace{f\circ\cdots\circ f}_{n\text{ factors}}
 \]
-for $n\in\mathbb N$.
+for $n\in\NN$.
 
-(a) Find an explicit constant $M>0$ such that for each $z\in\mathbb C$ either (i) $|f^n(z)|\to\infty$ as $n\to\infty$, or (ii) $|f^n(z)|\le M$ for all $n\in\mathbb N_0$.
+(a) Find an explicit constant $M>0$ such that for each $z\in\CC$ either (i) $|f^n(z)|\to\infty$ as $n\to\infty$, or (ii) $|f^n(z)|\le M$ for all $n\in\NN_0$.
 
-(b) Let $U$ be the set of all $z\in\mathbb C$ for which (i) holds and $K$ the set of all $z\in\mathbb C$ for which (ii) holds.
-Show that $U$ is open and $K$ is compact without “holes”, i.e. $\mathbb C\setminus K$ has no bounded connected components.
+(b) Let $U$ be the set of all $z\in\CC$ for which (i) holds and $K$ the set of all $z\in\CC$ for which (ii) holds.
+Show that $U$ is open and $K$ is compact without “holes”, i.e. $\CC\setminus K$ has no bounded connected components.
 :::
 
 ::: {.solution}
@@ -194,7 +194,7 @@ If some iterate had modulus \(>2\), step [](#s1-5){.pf-ref} would force escape.
 
 ::: {.pf-step #s1-7}
 
-Thus for every \(z\in\mathbb C\), exactly one of the following holds:
+Thus for every \(z\in\CC\), exactly one of the following holds:
 - \(|f^n(z)|\to\infty\);
 - \(|f^n(z)|\le2\) for all \(n\ge0\).
 
@@ -286,7 +286,7 @@ Use steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} and closure of open set
 One has
 \[
 \boxed{
-K=\mathbb C\setminus U}.
+K=\CC\setminus U}.
 \]
 
 
@@ -344,7 +344,7 @@ Therefore
 
 ::: pf-proof
 
-The set \(K\) is closed by step [](#s1-13){.pf-ref} and bounded by step [](#s1-14){.pf-ref}. Apply Heine--Borel in \(\mathbb C\cong\mathbb R^2\).
+The set \(K\) is closed by step [](#s1-13){.pf-ref} and bounded by step [](#s1-14){.pf-ref}. Apply Heine--Borel in \(\CC\cong\RR^2\).
 
 :::
 
@@ -367,7 +367,7 @@ D(z_0,\rho)\subseteq U.
 \]
 Because \(z_0\in\partial V\), this disk meets \(V\). Thus the disk and \(V\) lie in the same connected component of \(U\), forcing \(z_0\in V\), contradiction. Hence
 \[
-\partial V\subseteq\mathbb C\setminus U=K.
+\partial V\subseteq\CC\setminus U=K.
 \]
 
 :::
@@ -450,7 +450,7 @@ Step [](#s1-19){.pf-ref} is exactly the defining condition for membership in \(K
 
 This contradicts
 \[
-V\subseteq U=\mathbb C\setminus K.
+V\subseteq U=\CC\setminus K.
 \]
 
 
@@ -486,7 +486,7 @@ K\text{ has no holes}.}
 
 ::: pf-proof
 
-By definition in the problem, “no holes” means that \(\mathbb C\setminus K\) has no bounded connected components.
+By definition in the problem, “no holes” means that \(\CC\setminus K\) has no bounded connected components.
 
 :::
 

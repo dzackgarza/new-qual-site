@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $M$ be a connected, closed $n$-dimensional manifold.
-Show that $H_{n-1}(M; \mathbb{Z})$ is torsion-free if and only if $M$ is orientable.
+Show that $H_{n-1}(M; \ZZ)$ is torsion-free if and only if $M$ is orientable.
 :::
 
 ::: {.solution}
@@ -25,11 +25,11 @@ Show that $H_{n-1}(M; \mathbb{Z})$ is torsion-free if and only if $M$ is orienta
 
 ::: {.pf-step #s1}
 
-If $M$ is orientable, then $H_{n-1}(M;\mathbb Z)$ is torsion-free.
+If $M$ is orientable, then $H_{n-1}(M;\ZZ)$ is torsion-free.
 
 ::: pf-proof
 
-Poincaré duality gives $H_{n-1}(M;\mathbb Z)\cong H^1(M;\mathbb Z)$. The universal coefficient theorem gives $H^1(M;\mathbb Z)\cong\operatorname{Hom}(H_1(M),\mathbb Z)$, which is torsion-free.
+Poincaré duality gives $H_{n-1}(M;\ZZ)\cong H^1(M;\ZZ)$. The universal coefficient theorem gives $H^1(M;\ZZ)\cong\operatorname{Hom}(H_1(M),\ZZ)$, which is torsion-free.
 
 :::
 
@@ -37,11 +37,11 @@ Poincaré duality gives $H_{n-1}(M;\mathbb Z)\cong H^1(M;\mathbb Z)$. The univer
 
 ::: {.pf-step #s2}
 
-If $M$ is nonorientable, then $H_{n-1}(M;\mathbb Z)$ has nonzero $2$-torsion.
+If $M$ is nonorientable, then $H_{n-1}(M;\ZZ)$ has nonzero $2$-torsion.
 
 ::: pf-proof
 
-For a connected closed nonorientable manifold, Poincaré duality with the orientation local system gives $H_{n-1}(M;\mathbb Z)\cong H^1(M;\widetilde{\mathbb Z})$. Equivalently, using the orientation double cover and its deck involution, the orientation character contributes a nontrivial order-$2$ class in codimension one. In the standard integral homology form of Poincaré duality for closed manifolds, this is the canonical $\mathbb Z/2$ torsion summand detected by nonorientability.
+For a connected closed nonorientable manifold, Poincaré duality with the orientation local system gives $H_{n-1}(M;\ZZ)\cong H^1(M;\widetilde{\ZZ})$. Equivalently, using the orientation double cover and its deck involution, the orientation character contributes a nontrivial order-$2$ class in codimension one. In the standard integral homology form of Poincaré duality for closed manifolds, this is the canonical $\ZZ/2$ torsion summand detected by nonorientability.
 
 :::
 
@@ -49,7 +49,7 @@ For a connected closed nonorientable manifold, Poincaré duality with the orient
 
 ::: pf-step
 
-Therefore $H_{n-1}(M;\mathbb Z)$ is torsion-free exactly when $M$ is orientable.
+Therefore $H_{n-1}(M;\ZZ)$ is torsion-free exactly when $M$ is orientable.
 
 ::: pf-proof
 

@@ -21,7 +21,7 @@ First construct a Klein bottle $K$ out of two $2$-cells.
 Attach to $K$ two additional $2$-cells.
 The two attaching maps $\partial D^2 \to K$ are taken to be homeomorphisms between $\partial D^2$ and the circles $a$ and $b$ respectively.
 Call the resulting CW complex $S$.
-Calculate $H_*(S, \mathbb{Z})$ using cellular homology.
+Calculate $H_*(S, \ZZ)$ using cellular homology.
 
 (b) Show $S$ is homotopy equivalent to $S^2$.
 :::
@@ -37,7 +37,7 @@ aba^{-1}b.
 $$
 After attaching the two extra disks along $a$ and $b$, the cellular chain groups are
 $$
-C_2\cong\mathbb Z^3,\qquad C_1\cong\mathbb Z^2,\qquad C_0\cong\mathbb Z.
+C_2\cong\ZZ^3,\qquad C_1\cong\ZZ^2,\qquad C_0\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -66,12 +66,12 @@ The Klein-bottle attaching word has exponent sums $(0,2)$ in $(a,b)$. The two ad
 ::: {.pf-step #homology-of-S}
 The matrix $\partial_2$ is surjective and has kernel of rank one. Therefore
 $$
-\boxed{H_i(S;\mathbb Z)\cong
-\begin{cases}\mathbb Z,&i=0,2,\\0,&\text{otherwise}.\end{cases}}
+\boxed{H_i(S;\ZZ)\cong
+\begin{cases}\ZZ,&i=0,2,\\0,&\text{otherwise}.\end{cases}}
 $$
 
 ::: pf-proof
-The last two columns already form the identity matrix on $C_1$, so the cokernel is zero and the kernel of a surjection $\mathbb Z^3\to\mathbb Z^2$ is free of rank one.
+The last two columns already form the identity matrix on $C_1$, so the cokernel is zero and the kernel of a surjection $\ZZ^3\to\ZZ^2$ is free of rank one.
 :::
 
 :::
@@ -89,7 +89,7 @@ Van Kampen adds the relations $a=1$ and $b=1$ to the Klein-bottle presentation.
 Choose a map $S^2\to S$ representing a generator of $H_2(S)$. It is a homology isomorphism.
 
 ::: pf-proof
-Both spaces are simply connected and have homology $\mathbb Z$ in degrees $0,2$ and zero otherwise by step [](#homology-of-S){.pf-ref}.
+Both spaces are simply connected and have homology $\ZZ$ in degrees $0,2$ and zero otherwise by step [](#homology-of-S){.pf-ref}.
 :::
 
 :::

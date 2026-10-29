@@ -63,7 +63,7 @@ This is read directly from the arrows in the retained source figure: on the oute
 :::
 
 ::: pf-step
-Number the vertices by $\mathbb Z/4$, with the base vertex $0$, in clockwise order. Then traversing $a$ adds $1$ and traversing $b$ subtracts $1$ modulo $4$.
+Number the vertices by $\ZZ/4$, with the base vertex $0$, in clockwise order. Then traversing $a$ adds $1$ and traversing $b$ subtracts $1$ modulo $4$.
 
 ::: pf-proof
 This is exactly the monodromy described in step [](#depicted-cover-part-b){.pf-ref}.
@@ -74,7 +74,7 @@ This is exactly the monodromy described in step [](#depicted-cover-part-b){.pf-r
 ::: {.pf-step #subgroup-k}
 Hence the subgroup represented by the depicted based cover is
 $$
-K=\ker\!\left(F(a,b)\longrightarrow\mathbb Z/4\right),
+K=\ker\!\left(F(a,b)\longrightarrow\ZZ/4\right),
 \qquad a\longmapsto1,\quad b\longmapsto-1.
 $$
 

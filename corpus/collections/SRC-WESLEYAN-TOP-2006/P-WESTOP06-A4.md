@@ -58,7 +58,7 @@ The map \(f:X\to[0,1]\) has a continuous extension
 
 ::: pf-proof
 
-By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, \(X\) is a closed subspace of the normal space \(Y\). The bounded form of the Tietze extension theorem therefore extends the continuous map \(f:X\to[0,1]\subset\mathbb R\) to a continuous map \(\overline f:Y\to[0,1]\).
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, \(X\) is a closed subspace of the normal space \(Y\). The bounded form of the Tietze extension theorem therefore extends the continuous map \(f:X\to[0,1]\subset\RR\) to a continuous map \(\overline f:Y\to[0,1]\).
 
 :::
 

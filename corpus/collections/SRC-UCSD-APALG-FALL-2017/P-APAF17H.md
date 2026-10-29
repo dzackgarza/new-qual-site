@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF17H
 kind: problem
-title: Isomorphic subgroups of $\mathrm{GL}_2(\mathbb{C})$ need not have the same invariant Hilbert series
+title: Isomorphic subgroups of $\mathrm{GL}_2(\CC)$ need not have the same invariant Hilbert series
 classification:
   areas:
   - applied-algebra
@@ -21,8 +21,8 @@ audit:
 ---
 
 ::: {.problem}
-Prove or give a counterexample: Let $G$ and $H$ be two subgroups of the matrix group $\mathrm{GL}_2(\mathbb{C})$ which satisfy $G\cong H$ (group isomorphism).
-Then the invariant rings $\mathbb{C}[x,y]^G$ and $\mathbb{C}[x,y]^H$ have the same Hilbert series.
+Prove or give a counterexample: Let $G$ and $H$ be two subgroups of the matrix group $\mathrm{GL}_2(\CC)$ which satisfy $G\cong H$ (group isomorphism).
+Then the invariant rings $\CC[x,y]^G$ and $\CC[x,y]^H$ have the same Hilbert series.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ G=\left\langle\begin{pmatrix}-1&0\\0&1\end{pmatrix}\right\rangle,
 \qquad
 H=\langle -I_2\rangle.
 \]
-Then $G,H\le \mathrm{GL}_2(\mathbb C)$ and $G\cong H\cong C_2$.
+Then $G,H\le \mathrm{GL}_2(\CC)$ and $G\cong H\cong C_2$.
 
 ::: pf-proof
 
@@ -52,11 +52,11 @@ Each displayed generator has order $2$ and is not the identity, so each subgroup
 
 The invariant ring of $G$ is
 \[
-\mathbb C[x,y]^G=\mathbb C[x^2,y],
+\CC[x,y]^G=\CC[x^2,y],
 \]
 and its Hilbert series is
 \[
-\operatorname{Hilb}_{\mathbb C[x,y]^G}(t)
+\operatorname{Hilb}_{\CC[x,y]^G}(t)
 =\frac{1}{(1-t^2)(1-t)}.
 \]
 
@@ -71,7 +71,7 @@ Thus a monomial $x^ay^b$ is invariant exactly when $a$ is even. Therefore the in
 (x^2)^cy^b,
 \qquad b,c\ge0,
 \]
-which form the polynomial ring $\mathbb C[x^2,y]$. Since $x^2$ has degree $2$ and $y$ has degree $1$, its Hilbert series is
+which form the polynomial ring $\CC[x^2,y]$. Since $x^2$ has degree $2$ and $y$ has degree $1$, its Hilbert series is
 \[
 \frac1{(1-t^2)(1-t)}.
 \]
@@ -84,7 +84,7 @@ which form the polynomial ring $\mathbb C[x^2,y]$. Since $x^2$ has degree $2$ an
 
 The invariant ring of $H$ consists of the polynomials all of whose monomials have even total degree. Its Hilbert series is
 \[
-\operatorname{Hilb}_{\mathbb C[x,y]^H}(t)
+\operatorname{Hilb}_{\CC[x,y]^H}(t)
 =\frac12\left(\frac1{(1-t)^2}+\frac1{(1+t)^2}\right)
 =\frac{1+t^2}{(1-t^2)^2}.
 \]
@@ -121,9 +121,9 @@ The two Hilbert series are different.
 
 Already in degree $1$ one has
 \[
-\dim_\mathbb C(\mathbb C[x,y]^G)_1=1,
+\dim_\CC(\CC[x,y]^G)_1=1,
 \qquad
-\dim_\mathbb C(\mathbb C[x,y]^H)_1=0,
+\dim_\CC(\CC[x,y]^H)_1=0,
 \]
 because $y$ is $G$-invariant while $H$ has no nonzero linear invariants. Therefore the Hilbert series cannot agree.
 
@@ -133,7 +133,7 @@ because $y$ is $G$-invariant while $H$ has no nonzero linear invariants. Therefo
 
 ::: pf-step
 
-Thus isomorphic abstract subgroups of $\mathrm{GL}_2(\mathbb C)$ need not have invariant rings with the same Hilbert series.
+Thus isomorphic abstract subgroups of $\mathrm{GL}_2(\CC)$ need not have invariant rings with the same Hilbert series.
 
 ::: pf-proof
 

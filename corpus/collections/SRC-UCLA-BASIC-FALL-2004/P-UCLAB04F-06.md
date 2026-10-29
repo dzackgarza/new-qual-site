@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-The Bolzano--Weierstrass theorem in $\mathbb R^n$ states that if $S\subset\mathbb R^n$ is bounded and closed and $(x_k)$ is a sequence taking values in $S$, then $(x_k)$ has a subsequence converging to a point of $S$.
+The Bolzano--Weierstrass theorem in $\RR^n$ states that if $S\subset\RR^n$ is bounded and closed and $(x_k)$ is a sequence taking values in $S$, then $(x_k)$ has a subsequence converging to a point of $S$.
 
 Assume this theorem for $n=1$ and use it to prove the theorem for $n=2$.
 :::
@@ -25,7 +25,7 @@ Assume this theorem for $n=1$ and use it to prove the theorem for $n=2$.
 
 Let
 \[
-x_k=(a_k,b_k)\in S\subseteq\mathbb R^2.
+x_k=(a_k,b_k)\in S\subseteq\RR^2.
 \]
 
 ::: pf
@@ -37,7 +37,7 @@ The real sequence $(a_k)$ is bounded.
 
 ::: pf-proof
 
-Since $S$ is bounded in $\mathbb R^2$, there is $R>0$ such that
+Since $S$ is bounded in $\RR^2$, there is $R>0$ such that
 \[
 \|(a,b)\|\le R
 \]
@@ -57,7 +57,7 @@ There is a subsequence
 \[
 (a_{k_j})
 \]
-converging to some $a\in\mathbb R$.
+converging to some $a\in\RR$.
 
 
 ::: pf-proof
@@ -98,7 +98,7 @@ The subsequence
 \[
 x_{k_{j_\ell}}
 \]
-converges in $\mathbb R^2$ to
+converges in $\RR^2$ to
 \[
 (a,b).
 \]
@@ -136,7 +136,7 @@ The limit $(a,b)$ belongs to $S$.
 
 ::: pf-proof
 
-Every term $x_{k_{j_\ell}}$ lies in $S$, and $S$ is closed. A closed subset of $\mathbb R^2$ contains the limits of all convergent sequences of its points. Hence
+Every term $x_{k_{j_\ell}}$ lies in $S$, and $S$ is closed. A closed subset of $\RR^2$ contains the limits of all convergent sequences of its points. Hence
 \[
 (a,b)\in S.
 \]
@@ -147,7 +147,7 @@ Every term $x_{k_{j_\ell}}$ lies in $S$, and $S$ is closed. A closed subset of $
 
 ::: {.pf-step #s1-6}
 
-The Bolzano--Weierstrass theorem holds in $\mathbb R^2$.
+The Bolzano--Weierstrass theorem holds in $\RR^2$.
 
 
 ::: pf-proof

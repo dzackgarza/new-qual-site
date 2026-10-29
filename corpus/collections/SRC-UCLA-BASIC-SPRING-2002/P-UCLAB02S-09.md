@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the matrix, in the standard basis of $\mathbb R^4$, for either rotation by an angle $\theta$ in the plane perpendicular to the subspace spanned by
+Find the matrix, in the standard basis of $\RR^4$, for either rotation by an angle $\theta$ in the plane perpendicular to the subspace spanned by
 \[
 (1,1,1,1)
 \qquad\text{and}\qquad
@@ -158,7 +158,7 @@ The ordered list
 \[
 u_1,u_2,u_3,u_4
 \]
-is an orthonormal basis of $\mathbb R^4$.
+is an orthonormal basis of $\RR^4$.
 
 
 ::: pf-proof
@@ -171,7 +171,7 @@ and the last two form an orthonormal basis of
 \[
 \operatorname{span}\{a,b\}.
 \]
-The two subspaces are orthogonal complements, so the full list is an orthonormal basis of $\mathbb R^4$.
+The two subspaces are orthogonal complements, so the full list is an orthonormal basis of $\RR^4$.
 
 :::
 

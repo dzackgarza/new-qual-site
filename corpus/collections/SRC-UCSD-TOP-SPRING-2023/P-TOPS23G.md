@@ -65,7 +65,7 @@ universal property of quotient spaces.
 :::
 
 ::: pf-step
-Show that $\bar{f}^*$ acts non-trivially on $H^1(\mathbb{RP}^k; \mathbb{Z}_2)$:
+Show that $\bar{f}^*$ acts non-trivially on $H^1(\mathbb{RP}^k; \ZZ_2)$:
 
 ::: pf-proof
 
@@ -79,7 +79,7 @@ $S^k$ is path-connected for $k \ge 1$.
 :::
 
 ::: pf-step
-The projection $p \circ \gamma$ is a closed loop in $\mathbb{RP}^k$ representing the unique non-trivial element of $\pi_1(\mathbb{RP}^k) \cong \mathbb{Z}_2$.
+The projection $p \circ \gamma$ is a closed loop in $\mathbb{RP}^k$ representing the unique non-trivial element of $\pi_1(\mathbb{RP}^k) \cong \ZZ_2$.
 
 ::: pf-proof
 paths connecting antipodal points project to generators of $\pi_1(\mathbb{RP}^k)$.
@@ -109,13 +109,13 @@ covering homotopy property.
 Thus $\bar{f}_*: \pi_1(\mathbb{RP}^k) \to \pi_1(\mathbb{RP}^k)$ is the identity isomorphism.
 
 ::: pf-proof
-the only non-trivial endomorphism of $\mathbb{Z}_2$ is the identity.
+the only non-trivial endomorphism of $\ZZ_2$ is the identity.
 :::
 
 :::
 
 ::: {.pf-step #s2-6}
-By the Universal Coefficient Theorem, $H^1(\mathbb{RP}^k; \mathbb{Z}_2) \cong \operatorname{Hom}(\pi_1(\mathbb{RP}^k), \mathbb{Z}_2) \cong \mathbb{Z}_2$.
+By the Universal Coefficient Theorem, $H^1(\mathbb{RP}^k; \ZZ_2) \cong \operatorname{Hom}(\pi_1(\mathbb{RP}^k), \ZZ_2) \cong \ZZ_2$.
 
 ::: pf-proof
 Hurewicz theorem and UCT.
@@ -124,7 +124,7 @@ Hurewicz theorem and UCT.
 :::
 
 ::: {.pf-step #s2-7}
-Thus $\bar{f}^*(\alpha) = \alpha$, where $\alpha \in H^1(\mathbb{RP}^k; \mathbb{Z}_2)$ is the non-zero generator.
+Thus $\bar{f}^*(\alpha) = \alpha$, where $\alpha \in H^1(\mathbb{RP}^k; \ZZ_2)$ is the non-zero generator.
 
 ::: pf-proof
 Step [](#s2-5){.pf-ref} and step [](#s2-6){.pf-ref}.
@@ -142,9 +142,9 @@ Compute the mod 2 degree of $\bar{f}$ and $f$:
 ::: pf-proof
 
 ::: pf-step
-The cohomology ring of $\mathbb{RP}^k$ with $\mathbb{Z}_2$ coefficients is:
+The cohomology ring of $\mathbb{RP}^k$ with $\ZZ_2$ coefficients is:
 \[
-H^*(\mathbb{RP}^k; \mathbb{Z}_2) \cong \mathbb{Z}_2[\alpha] / (\alpha^{k+1}).
+H^*(\mathbb{RP}^k; \ZZ_2) \cong \ZZ_2[\alpha] / (\alpha^{k+1}).
 \]
 
 ::: pf-proof
@@ -154,7 +154,7 @@ standard cell structure and cup product structure of $\mathbb{RP}^k$.
 :::
 
 ::: pf-step
-The top cohomology generator is $\alpha^k \in H^k(\mathbb{RP}^k; \mathbb{Z}_2) \cong \mathbb{Z}_2$.
+The top cohomology generator is $\alpha^k \in H^k(\mathbb{RP}^k; \ZZ_2) \cong \ZZ_2$.
 
 ::: pf-proof
 $k = 2n+1$.

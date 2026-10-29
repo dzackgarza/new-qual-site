@@ -22,13 +22,13 @@ audit:
 ::: {.problem}
 "Trotter product formula".
 Consider $n \times n$ complex matrices $A$, $B$.
-Prove that $e^{A+B} = \lim_{N \to \infty} \left(e^{A/N} e^{B/N}\right)^N$, $N \in \mathbb{R}$.
+Prove that $e^{A+B} = \lim_{N \to \infty} \left(e^{A/N} e^{B/N}\right)^N$, $N \in \RR$.
 :::
 
 ::: {.remark}
-The source writes $N\in\mathbb R$, but the ordinary matrix power
+The source writes $N\in\RR$, but the ordinary matrix power
 $(e^{A/N}e^{B/N})^N$ used here is defined for positive integer $N$. The limit
-is therefore taken along $N\in\mathbb N$.
+is therefore taken along $N\in\NN$.
 :::
 
 ::: {.solution}

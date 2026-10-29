@@ -170,7 +170,7 @@ The conclusion of part (a) fails for noncommutative rings.
 ::: pf-proof
 Take
 \[
-R=M_2(\mathbb Z),
+R=M_2(\ZZ),
 \qquad
 x=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \qquad

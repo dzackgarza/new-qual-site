@@ -23,7 +23,7 @@ Let R be a ring.
 (b) Give an example of a ring R such that for every proper ideal $I , R / I$ is not commutative.
 Verify your example.
 
-(c) For the ring $R = \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \mid a , b , c \in \mathbb { Z } \right\}$ with the usual matrix operations, find the ideal A of part (a).
+(c) For the ring $R = \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \mid a , b , c \in \ZZ \right\}$ with the usual matrix operations, find the ideal A of part (a).
 :::
 
 ::: {.solution}

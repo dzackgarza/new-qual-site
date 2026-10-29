@@ -44,7 +44,7 @@ The relation $g(-x)=-g(x)$ means that $g$ maps antipodal orbits to antipodal orb
 ::: {.pf-step #pi1-map-isomorphism}
 The induced map on fundamental groups is nontrivial, hence an isomorphism
 $$
-\bar g_*:\mathbb Z/2\to\mathbb Z/2.
+\bar g_*:\ZZ/2\to\ZZ/2.
 $$
 
 ::: pf-proof

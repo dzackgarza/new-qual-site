@@ -34,11 +34,11 @@ with oriented \(2\)-simplex \(\sigma=[v_0,v_1,v_2]\). This is the standard \(\De
 
 The chain complex is
 \[
-0\to\mathbb Z\langle\sigma\rangle
+0\to\ZZ\langle\sigma\rangle
 \xrightarrow{\partial_2}
-\mathbb Z\langle e_{01},e_{02},e_{12}\rangle
+\ZZ\langle e_{01},e_{02},e_{12}\rangle
 \xrightarrow{\partial_1}
-\mathbb Z\langle v_0,v_1,v_2\rangle
+\ZZ\langle v_0,v_1,v_2\rangle
 \to0,
 \]
 where

@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $\Gamma(z)$ be the gamma function defined by $\Gamma(z) = \int_0^\infty e^{-t} t^{z-1}\,dt$ for $z$ with $\operatorname{Re}(z) > 0$.
-For $\phi\in C_c^\infty(\mathbb R^n)$, prove that for any $0 < \alpha < n$,
+For $\phi\in C_c^\infty(\RR^n)$, prove that for any $0 < \alpha < n$,
 $$
-\frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}} \int_{\mathbb{R}^n} |x|^{\alpha-n} \hat{\phi}(x)\,dx = \frac{\Gamma(\alpha/2)}{\pi^{\alpha/2}} \int_{\mathbb{R}^n} |\xi|^{-\alpha} \phi(\xi)\,d\xi.
+\frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}} \int_{\RR^n} |x|^{\alpha-n} \hat{\phi}(x)\,dx = \frac{\Gamma(\alpha/2)}{\pi^{\alpha/2}} \int_{\RR^n} |\xi|^{-\alpha} \phi(\xi)\,d\xi.
 $$
 
 Hint: Use the Fourier transform of the Gaussian, the identity $\int \hat{f} g = \int f \hat{g}$ for $L^1$ functions and the change of variables for the integral in the definition of $\Gamma$.
@@ -37,7 +37,7 @@ Hint: Use the Fourier transform of the Gaussian, the identity $\int \hat{f} g = 
 ::: {.solution}
 Use the Fourier-transform convention from the exam,
 \[
-\widehat h(\xi)=\int_{\mathbb R^n}e^{-2\pi i\langle\xi,y\rangle}h(y)\,dy.
+\widehat h(\xi)=\int_{\RR^n}e^{-2\pi i\langle\xi,y\rangle}h(y)\,dy.
 \]
 Set
 \[
@@ -51,17 +51,17 @@ For $x\ne0$, the Gamma-function identity with the substitution $t=\pi\lambda|x|^
 \]
 Therefore the left-hand side equals
 \[
-\int_{\mathbb R^n}\widehat\phi(x)
+\int_{\RR^n}\widehat\phi(x)
 \left(\int_0^\infty e^{-\pi\lambda|x|^2}\lambda^{s-1}\,d\lambda\right)dx.
 \]
 Because $\phi\in C_c^\infty$, its Fourier transform is rapidly decreasing; since $0<\alpha<n$, the weight $|x|^{\alpha-n}$ is locally integrable. Thus the relevant integrals are absolutely convergent, and Fubini applies:
 \[
 \begin{aligned}
 &\frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}}
-\int_{\mathbb R^n}|x|^{\alpha-n}\widehat\phi(x)\,dx\\
+\int_{\RR^n}|x|^{\alpha-n}\widehat\phi(x)\,dx\\
 &\qquad=
 \int_0^\infty \lambda^{s-1}
-\left(\int_{\mathbb R^n}\widehat\phi(x)e^{-\pi\lambda|x|^2}\,dx\right)d\lambda.
+\left(\int_{\RR^n}\widehat\phi(x)e^{-\pi\lambda|x|^2}\,dx\right)d\lambda.
 \end{aligned}
 \]
 
@@ -84,9 +84,9 @@ we obtain
 \begin{aligned}
 \text{LHS}
 &=\int_0^\infty\lambda^{s-1-n/2}
-\left(\int_{\mathbb R^n}
+\left(\int_{\RR^n}
 \phi(\xi)e^{-\pi|\xi|^2/\lambda}\,d\xi\right)d\lambda\\
-&=\int_{\mathbb R^n}\phi(\xi)
+&=\int_{\RR^n}\phi(\xi)
 \left(\int_0^\infty
 \lambda^{-\alpha/2-1}e^{-\pi|\xi|^2/\lambda}\,d\lambda\right)d\xi.
 \end{aligned}
@@ -111,10 +111,10 @@ Substitution into the preceding expression gives
 \[
 \boxed{
 \frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}}
-\int_{\mathbb R^n}|x|^{\alpha-n}\widehat\phi(x)\,dx
+\int_{\RR^n}|x|^{\alpha-n}\widehat\phi(x)\,dx
 =
 \frac{\Gamma(\alpha/2)}{\pi^{\alpha/2}}
-\int_{\mathbb R^n}|\xi|^{-\alpha}\phi(\xi)\,d\xi.
+\int_{\RR^n}|\xi|^{-\alpha}\phi(\xi)\,d\xi.
 }
 \]
 :::

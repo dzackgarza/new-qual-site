@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(a_n)$ be a sequence of nonnegative real numbers such that for every nonnegative sequence $(b_n)\in\ell^2(\mathbb N)$,
+Let $(a_n)$ be a sequence of nonnegative real numbers such that for every nonnegative sequence $(b_n)\in\ell^2(\NN)$,
 \[
 \sum_{n=1}^\infty a_n b_n<\infty.
 \]
@@ -48,7 +48,7 @@ Define the partial-sum functionals.
 
 For each $N\ge1$, define
 \[
-T_N:\ell^2(\mathbb N)\to\mathbb R,
+T_N:\ell^2(\NN)\to\RR,
 \qquad
 T_N(b)=\sum_{n=1}^N a_n b_n.
 \]
@@ -71,7 +71,7 @@ Prove pointwise boundedness.
 
 ::: pf-proof
 
-Fix $b\in\ell^2(\mathbb N)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
+Fix $b\in\ell^2(\NN)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
 \[
 \sum_{n=1}^\infty a_n|b_n|<\infty.
 \]

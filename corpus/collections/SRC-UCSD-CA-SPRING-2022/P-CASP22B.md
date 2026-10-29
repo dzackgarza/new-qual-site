@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $p(z)$ be a nonconstant polynomial.
-Let $G \subset \mathbb{C}$ be a component of the set $\{z : |p(z)| < 1\}$.
+Let $G \subset \CC$ be a component of the set $\{z : |p(z)| < 1\}$.
 
 (a) Show that $p$ has at least one zero in $G$.
 

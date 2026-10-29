@@ -29,9 +29,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $M_{2\times2}(\mathbb R)$ be the four-dimensional vector space of real $2\times2$ matrices and define
+Let $M_{2\times2}(\RR)$ be the four-dimensional vector space of real $2\times2$ matrices and define
 \[
-f:M_{2\times2}(\mathbb R)\to M_{2\times2}(\mathbb R),
+f:M_{2\times2}(\RR)\to M_{2\times2}(\RR),
 \qquad
 f(X)=X^2.
 \]

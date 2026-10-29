@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Construct a simply-connected covering space of the space $X \subset \mathbb{R}^3$ that is the union of a sphere and a diameter.
+Construct a simply-connected covering space of the space $X \subset \RR^3$ that is the union of a sphere and a diameter.
 Do the same when $X$ is the union of a sphere and a circle intersecting it in two points.
 :::
 
@@ -40,7 +40,7 @@ Let $p,q\in S^2$ be the two endpoints of the added diameter in the first space.
 For the sphere-with-diameter space, construct $\widetilde X$ from copies
 \[
 S_n^2\cong S^2,
-\qquad n\in\mathbb Z,
+\qquad n\in\ZZ,
 \]
 by adjoining an interval $I_n$ from the point $q_n\in S_n^2$ to the point $p_{n+1}\in S_{n+1}^2$ for every $n$.
 

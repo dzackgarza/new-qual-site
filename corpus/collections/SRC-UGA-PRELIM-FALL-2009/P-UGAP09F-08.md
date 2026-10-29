@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ and $f_n:[0,1]\to\mathbb R$ be continuous functions, and suppose $f_n\to f$ uniformly.
+Let $f:[0,1]\to\RR$ and $f_n:[0,1]\to\RR$ be continuous functions, and suppose $f_n\to f$ uniformly.
 
 Give the definition of uniform convergence and, using basic properties of integrals and absolute values, show that
 \[

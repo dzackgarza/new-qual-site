@@ -21,7 +21,7 @@ audit:
 9. Here are further results similar to the Phragmén–Lindelöf theorem.
 
 (a) Let $F$ be a holomorphic function in the right half-plane that extends continuously to the boundary, that is, the imaginary axis.
-Suppose that $| F ( i y ) | \le 1$ for all $y \in \mathbb { R }$ , and
+Suppose that $| F ( i y ) | \le 1$ for all $y \in \RR$ , and
 
 $$
 | F (z) | \leq C e ^ {c | z | ^ {\gamma}}

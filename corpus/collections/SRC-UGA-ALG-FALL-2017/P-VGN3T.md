@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 For a commutative ring $R$, let $U(R) = R^\times$ denote the group of units in $R$. Recall that in an integral domain $R$, a non-zero, non-unit element $r \in R$ is called *irreducible* if whenever $r = x y$ with $x, y \in R$, then either $x \in U(R)$ or $y \in U(R)$. A non-zero, non-unit element $r \in R$ is called *prime* in $R$ if $r \mid a b \implies r \mid a \text{ or } r \mid b$.
 
-Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \mathbb{Z}\} \subset \mathbb{C}$.
+Consider the ring $R = \ZZ[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \ZZ\} \subset \CC$.
 
 (a) Prove that $R$ is an integral domain.
 
@@ -30,7 +30,7 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
 :::
 
 ::: {.solution}
-Put $u=\sqrt{-5}$ and define the norm $N:R\to\mathbb Z_{\geq0}$ by $N(a+bu)=(a+bu)(a-bu)=a^2+5b^2$.
+Put $u=\sqrt{-5}$ and define the norm $N:R\to\ZZ_{\geq0}$ by $N(a+bu)=(a+bu)(a-bu)=a^2+5b^2$.
 
 ::: pf
 
@@ -40,7 +40,7 @@ The ring $R$ is an integral domain, and the norm is multiplicative.
 
 ::: pf-proof
 
-For integers $a,b,c,d$, the product $(a+bu)(c+du)=(ac-5bd)+(ad+bc)u$ belongs to $R$, and $R$ is closed under subtraction and contains $1$. Hence $R$ is a unital subring of the field $\mathbb C$, so it is an integral domain. Complex conjugation preserves $R$ and is multiplicative. Therefore $N(\alpha\beta)=\alpha\beta\overline{\alpha\beta}=(\alpha\overline\alpha)(\beta\overline\beta)=N(\alpha)N(\beta)$ for all $\alpha,\beta\in R$.
+For integers $a,b,c,d$, the product $(a+bu)(c+du)=(ac-5bd)+(ad+bc)u$ belongs to $R$, and $R$ is closed under subtraction and contains $1$. Hence $R$ is a unital subring of the field $\CC$, so it is an integral domain. Complex conjugation preserves $R$ and is multiplicative. Therefore $N(\alpha\beta)=\alpha\beta\overline{\alpha\beta}=(\alpha\overline\alpha)(\beta\overline\beta)=N(\alpha)N(\beta)$ for all $\alpha,\beta\in R$.
 
 :::
 
@@ -79,7 +79,7 @@ The irreducible element $3$ is not prime.
 
 ::: pf-proof
 
-The product $(2+u)(2-u)=4-u^2=9$ is divisible by $3$. If $3$ divided either $2+u$ or $2-u$ in $R$, comparison of the integer coefficients of $1$ would give $3a=2$ for some $a\in\mathbb Z$, an impossibility. Thus $3$ divides their product but neither factor.
+The product $(2+u)(2-u)=4-u^2=9$ is divisible by $3$. If $3$ divided either $2+u$ or $2-u$ in $R$, comparison of the integer coefficients of $1$ would give $3a=2$ for some $a\in\ZZ$, an impossibility. Thus $3$ divides their product but neither factor.
 
 :::
 

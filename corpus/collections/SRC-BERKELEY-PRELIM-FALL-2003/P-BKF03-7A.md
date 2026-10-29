@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Let
 \[
-D=\{z\in\mathbb C:|z|\le 1\}\setminus\{1,-1\}.
+D=\{z\in\CC:|z|\le 1\}\setminus\{1,-1\}.
 \]
-Find an explicit continuous function $f:D\to\mathbb R$ satisfying all the following conditions:
+Find an explicit continuous function $f:D\to\RR$ satisfying all the following conditions:
 
 - $f$ is harmonic on the interior of $D$ (the open unit disk),
 
@@ -44,7 +44,7 @@ Define
 \[
 w(z):=\frac{1+z}{1-z}
 \]
-and let $\Log$ be the principal logarithm on $\mathbb C\setminus(-\infty,0]$.
+and let $\Log$ be the principal logarithm on $\CC\setminus(-\infty,0]$.
 Set
 \[
 \boxed{f(z)=\frac{2}{\pi}\operatorname{Im}\Log\!\left(\frac{1+z}{1-z}\right)}.

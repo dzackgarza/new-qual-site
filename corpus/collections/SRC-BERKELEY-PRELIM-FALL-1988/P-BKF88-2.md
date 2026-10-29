@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine the group $\operatorname{Aut}(\mathbb C)$ of all one-to-one analytic maps of $\mathbb C$ onto $\mathbb C$.
+Determine the group $\operatorname{Aut}(\CC)$ of all one-to-one analytic maps of $\CC$ onto $\CC$.
 :::
 
 ::: {.solution}

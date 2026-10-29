@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find Lebesgue measurable sets $A, B \subset \mathbb{R}^2$ such that $A + B$ is not Lebesgue measurable.
+Find Lebesgue measurable sets $A, B \subset \RR^2$ such that $A + B$ is not Lebesgue measurable.
 :::
 
 ::: {.solution}
@@ -39,13 +39,13 @@ Choose a nonmeasurable subset of the real line.
 
 ::: pf-proof
 
-Let $V\subset\mathbb R$ be a non-Lebesgue-measurable set, for example a Vitali set. Define
+Let $V\subset\RR$ be a non-Lebesgue-measurable set, for example a Vitali set. Define
 \[
 A:=V\times\{0\},
 \qquad
-B:=\{0\}\times\mathbb R.
+B:=\{0\}\times\RR.
 \]
-Both $A$ and $B$ are subsets of one-dimensional affine subspaces of $\mathbb R^2$, hence of planar Lebesgue-null sets. Since planar Lebesgue measure is complete, both $A$ and $B$ are Lebesgue measurable in $\mathbb R^2$.
+Both $A$ and $B$ are subsets of one-dimensional affine subspaces of $\RR^2$, hence of planar Lebesgue-null sets. Since planar Lebesgue measure is complete, both $A$ and $B$ are Lebesgue measurable in $\RR^2$.
 
 :::
 
@@ -61,9 +61,9 @@ Every element of $A+B$ has the form
 \[
 (v,0)+(0,t)=(v,t)
 \]
-with $v\in V$ and $t\in\mathbb R$. Thus
+with $v\in V$ and $t\in\RR$. Thus
 \[
-A+B=V\times\mathbb R.
+A+B=V\times\RR.
 \]
 
 :::
@@ -72,24 +72,24 @@ A+B=V\times\mathbb R.
 
 ::: pf-step
 
-Show that $V\times\mathbb R$ is not Lebesgue measurable.
+Show that $V\times\RR$ is not Lebesgue measurable.
 
 ::: pf-proof
 
-Suppose for contradiction that $V\times\mathbb R$ were Lebesgue measurable in $\mathbb R^2$. Then
+Suppose for contradiction that $V\times\RR$ were Lebesgue measurable in $\RR^2$. Then
 \[
-E:=(V\times\mathbb R)\cap(\mathbb R\times[0,1])
+E:=(V\times\RR)\cap(\RR\times[0,1])
 =V\times[0,1]
 \]
 would also be Lebesgue measurable.
 
-For a Lebesgue measurable subset of $\mathbb R^2$, Fubini's theorem implies that its horizontal sections are Lebesgue measurable for almost every $y$. But for every $y\in[0,1]$,
+For a Lebesgue measurable subset of $\RR^2$, Fubini's theorem implies that its horizontal sections are Lebesgue measurable for almost every $y$. But for every $y\in[0,1]$,
 \[
 E_y:=\{x:(x,y)\in E\}=V.
 \]
 Hence $V$ would be Lebesgue measurable, contradicting its choice. Therefore
 \[
-\boxed{A+B=V\times\mathbb R\text{ is not Lebesgue measurable}.}
+\boxed{A+B=V\times\RR\text{ is not Lebesgue measurable}.}
 \]
 
 :::

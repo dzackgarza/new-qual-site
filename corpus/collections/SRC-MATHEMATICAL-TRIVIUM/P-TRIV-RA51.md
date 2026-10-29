@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA51
 kind: problem
-title: Fourier transform of $f_0(\frac1r+\frac1a)e^{-2r/a}$ in $\mathbb{R}^3$
+title: Fourier transform of $f_0(\frac1r+\frac1a)e^{-2r/a}$ in $\RR^3$
 classification:
   areas: [real-analysis]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = f _ { 0 } \left( \frac { 1 } { r } + \frac { 1 } { a } \right) e ^ { - \frac { 2 r } { a } }$ in $\mathbb { R } ^ { 3 }$
+Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = f _ { 0 } \left( \frac { 1 } { r } + \frac { 1 } { a } \right) e ^ { - \frac { 2 r } { a } }$ in $\RR ^ { 3 }$
 :::
 
 ::: {.remark}
@@ -25,7 +25,7 @@ $$
 \widetilde f(\vec k)
 =
 \frac1{(2\pi)^3}
-\int_{\mathbb R^3}
+\int_{\RR^3}
 f(\vec r)e^{-i\vec k\cdot\vec r}
 \,d^3r.
 $$
@@ -50,7 +50,7 @@ $$
 For any radial function $F(r)$,
 $$
 \frac1{(2\pi)^3}
-\int_{\mathbb R^3}
+\int_{\RR^3}
 F(r)e^{-i\vec k\cdot\vec r}
 \,d^3r
 =

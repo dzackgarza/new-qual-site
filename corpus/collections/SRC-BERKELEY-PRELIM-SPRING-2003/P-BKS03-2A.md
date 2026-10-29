@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Define $f:\mathbb R^2\to\mathbb R$ by $f(x,0)=0$ and, for $y\ne0$,
+Define $f:\RR^2\to\RR$ by $f(x,0)=0$ and, for $y\ne0$,
 \[
 f(x,y)=\left(1-\cos\frac{x^2}{y}\right)\sqrt{x^2+y^2}.
 \]

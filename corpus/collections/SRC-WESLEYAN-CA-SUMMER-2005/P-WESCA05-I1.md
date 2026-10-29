@@ -16,8 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subseteq\mathbb C$ be open.
-Define what it means for a function $f:U\to\mathbb C$ to be analytic.
+Let $U\subseteq\CC$ be open.
+Define what it means for a function $f:U\to\CC$ to be analytic.
 :::
 
 ::: {.solution}

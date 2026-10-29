@@ -35,13 +35,13 @@ U\cap V\simeq S^1.
 \]
 Thus
 \[
-H_1(U\cap V)\cong\mathbb Z,
+H_1(U\cap V)\cong\ZZ,
 \qquad
 H_1(U)\oplus H_1(V)=0,
 \qquad
 H_1(X)=0.
 \]
-The proposed first map would be an injection $\mathbb Z\to0$, impossible.
+The proposed first map would be an injection $\ZZ\to0$, impossible.
 
 The Mayer--Vietoris sequence explains the obstruction:
 \[

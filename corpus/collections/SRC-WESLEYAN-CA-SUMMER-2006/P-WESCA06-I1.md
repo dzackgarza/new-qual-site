@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Define the winding number of a path $\gamma$ about a point $z\in\mathbb C$.
+Define the winding number of a path $\gamma$ about a point $z\in\CC$.
 :::
 
 ::: {.solution}
 
 Assume
 \[
-\gamma:[a,b]\to\mathbb C
+\gamma:[a,b]\to\CC
 \]
 is a closed piecewise $C^1$ path and
 \[
@@ -82,7 +82,7 @@ Because
 \]
 one can choose a continuous lifted argument
 \[
-\theta:[a,b]\to\mathbb R
+\theta:[a,b]\to\RR
 \]
 such that
 \[
@@ -115,7 +115,7 @@ so
 \[
 \theta(b)-\theta(a)
 \in
-2\pi\mathbb Z.
+2\pi\ZZ.
 \]
 Thus the winding number is an integer.
 

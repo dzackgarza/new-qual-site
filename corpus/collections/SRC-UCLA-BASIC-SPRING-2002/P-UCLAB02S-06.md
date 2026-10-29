@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R^3\to\mathbb R$ is continuously differentiable and
+Suppose $f:\RR^3\to\RR$ is continuously differentiable and
 \[
 \nabla f(0,0,0)\ne0.
 \]
 Show that there exist continuously differentiable functions
 \[
-g,h:\mathbb R^3\to\mathbb R
+g,h:\RR^3\to\RR
 \]
 such that
 \[
@@ -79,7 +79,7 @@ h(x,y,z)=z.
 \]
 Then the map
 \[
-\Phi:\mathbb R^3\to\mathbb R^3,
+\Phi:\RR^3\to\RR^3,
 \qquad
 \Phi(x,y,z)
 =

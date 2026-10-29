@@ -13,11 +13,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega\subseteq\mathbb C$ be open and define
+Let $\Omega\subseteq\CC$ be open and define
 \[
-|\Omega|=\{|z|:z\in\Omega\}\subseteq\mathbb R_{\ge0}.
+|\Omega|=\{|z|:z\in\Omega\}\subseteq\RR_{\ge0}.
 \]
-Show that $|\Omega|$ is relatively open in $\mathbb R_{\ge0}$.
+Show that $|\Omega|$ is relatively open in $\RR_{\ge0}$.
 :::
 
 ::: {.solution}
@@ -97,7 +97,7 @@ has modulus $t$. Hence $t\in|\Omega|$.
 
 ::: {.pf-step #s1-4}
 
-Every point of $|\Omega|$ has a neighborhood relative to $\mathbb R_{\ge0}$ contained in $|\Omega|$.
+Every point of $|\Omega|$ has a neighborhood relative to $\RR_{\ge0}$ contained in $|\Omega|$.
 
 
 ::: pf-proof
@@ -106,10 +106,10 @@ Let $\rho\in|\Omega|$ and choose $a$ as in step [](#s1-1){.pf-ref}. If $a\ne0$,
 step [](#s1-2){.pf-ref} gives an open interval about $\rho$ contained in
 $|\Omega|$. If $a=0$, then $\rho=0$, and step [](#s1-3){.pf-ref} gives
 $$
-[0,r)=(-r,r)\cap\mathbb R_{\ge0}
+[0,r)=(-r,r)\cap\RR_{\ge0}
 $$
 contained in $|\Omega|$. These are exactly relative neighborhoods in
-$\mathbb R_{\ge0}$.
+$\RR_{\ge0}$.
 
 :::
 
@@ -117,13 +117,13 @@ $\mathbb R_{\ge0}$.
 
 ::: {.pf-step #s1-5}
 
-Therefore $|\Omega|$ is relatively open in $\mathbb R_{\ge0}$.
+Therefore $|\Omega|$ is relatively open in $\RR_{\ge0}$.
 
 
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} is the definition of openness in the subspace topology on
-$\mathbb R_{\ge0}$.
+$\RR_{\ge0}$.
 
 :::
 

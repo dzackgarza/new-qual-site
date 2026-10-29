@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a<b$ and let $f:[a,b]\to\mathbb R$ be such that
+Let $a<b$ and let $f:[a,b]\to\RR$ be such that
 \[
 L(x)=\lim_{y\to x}f(y)
 \]

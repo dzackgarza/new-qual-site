@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 Let $1<p,q<\infty$ with $1/p+1/q=1$.
-Let $f\in L^p(\mathbb R^3)$ and $g\in L^q(\mathbb R^3)$.
+Let $f\in L^p(\RR^3)$ and $g\in L^q(\RR^3)$.
 Show that:
 
-(a) $f*g$ is continuous on $\mathbb R^3$;
+(a) $f*g$ is continuous on $\RR^3$;
 
 (b) $(f*g)(x)\to0$ as $|x|\to\infty$.
 :::
@@ -30,13 +30,13 @@ Show that:
 
 For
 \[
-x\in\mathbb R^3,
+x\in\RR^3,
 \]
 define
 \[
 (f*g)(x)
 =
-\int_{\mathbb R^3}
+\int_{\RR^3}
 f(y)g(x-y)\,dy.
 \]
 
@@ -66,7 +66,7 @@ has the same \(L^q\)-norm as \(g\). Thus
 
 ## Translation continuity in \(L^q\)
 
-For \(h\in\mathbb R^3\), write
+For \(h\in\RR^3\), write
 \[
 (\tau_h u)(z)=u(z+h).
 \]
@@ -75,7 +75,7 @@ For \(h\in\mathbb R^3\), write
 
 ::: {.pf-step #s1-1}
 
-If \(\varphi\in C_c(\mathbb R^3)\), then
+If \(\varphi\in C_c(\RR^3)\), then
 \[
 \boxed{
 \|\tau_h\varphi-\varphi\|_{L^q}\to0
@@ -110,7 +110,7 @@ Therefore
 
 ::: {.pf-step #s1-2}
 
-For every \(u\in L^q(\mathbb R^3)\),
+For every \(u\in L^q(\RR^3)\),
 \[
 \boxed{
 \|\tau_hu-u\|_{L^q}\to0
@@ -122,7 +122,7 @@ For every \(u\in L^q(\mathbb R^3)\),
 
 Fix \(\varepsilon>0\). Choose
 \[
-\varphi\in C_c(\mathbb R^3)
+\varphi\in C_c(\RR^3)
 \]
 with
 \[
@@ -159,7 +159,7 @@ One has
 \boxed{
 (f*g)(x)
 =
-\int_{\mathbb R^3}
+\int_{\RR^3}
 f(y)\,
 (\tau_x\widetilde g)(y)\,dy}.
 \]
@@ -194,7 +194,7 @@ The \(T_x\)-translations satisfy the same norm-continuity as \(\tau_h\).
 
 ::: {.pf-step #s1-4}
 
-For \(x,h\in\mathbb R^3\),
+For \(x,h\in\RR^3\),
 \[
 |(f*g)(x+h)-(f*g)(x)|
 \le
@@ -269,7 +269,7 @@ The final norm tends to \(0\) by step [](#s1-2){.pf-ref}.
 Hence
 \[
 \boxed{
-f*g\in C(\mathbb R^3)}.
+f*g\in C(\RR^3)}.
 \]
 
 
@@ -289,9 +289,9 @@ Let
 \]
 Choose compactly supported functions
 \[
-f_0\in L^p(\mathbb R^3),
+f_0\in L^p(\RR^3),
 \qquad
-g_0\in L^q(\mathbb R^3)
+g_0\in L^q(\RR^3)
 \]
 such that
 \[
@@ -423,7 +423,7 @@ Hence there exists \(R>0\) such that
 
 ::: pf-proof
 
-A compact subset of \(\mathbb R^3\) is bounded. Choose \(R\) containing the compact support from step [](#s1-11){.pf-ref}.
+A compact subset of \(\RR^3\) is bounded. Choose \(R\) containing the compact support from step [](#s1-11){.pf-ref}.
 
 :::
 

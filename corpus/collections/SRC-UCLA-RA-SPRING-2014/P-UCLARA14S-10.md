@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\alpha\in[0,1]\setminus\mathbb Q$ and let $(a_n)\in\ell^1(\mathbb N)$ with $a_n\ne0$ for all $n$.
+Let $\alpha\in[0,1]\setminus\QQ$ and let $(a_n)\in\ell^1(\NN)$ with $a_n\ne0$ for all $n$.
 Show that
 \[
 f(z)=\sum_{n\ge1}\frac{a_n}{z-e^{i\alpha n}}
@@ -33,7 +33,7 @@ converges and defines a function analytic in the unit disk $\mathbb D$, and that
 
 The natural-boundary assertion is false under the literal hypothesis
 \[
-\alpha\in[0,1]\setminus\mathbb Q.
+\alpha\in[0,1]\setminus\QQ.
 \]
 
 
@@ -45,7 +45,7 @@ Take
 \qquad
 a_n=2^{-n}.
 \]
-Then $\alpha\in[0,1]\setminus\mathbb Q$, but
+Then $\alpha\in[0,1]\setminus\QQ$, but
 \[
 e^{i\alpha n}
 =
@@ -72,7 +72,7 @@ f(z)
 \]
 The right-hand side is a rational function, holomorphic on
 \[
-\mathbb C\setminus\{\zeta_1,\dots,\zeta_{10}\}.
+\CC\setminus\{\zeta_1,\dots,\zeta_{10}\}.
 \]
 Choose any point of the unit circle not among these ten poles and a sufficiently small disk around it avoiding all poles. The union of that disk with $\mathbb D$ is a domain properly containing $\mathbb D$ on which the rational expression gives an analytic continuation of $f$. Thus the literal claim is false.
 
@@ -84,7 +84,7 @@ Choose any point of the unit circle not among these ten poles and a sufficiently
 
 The intended statement is correct under the corrected hypothesis
 \[
-\frac{\alpha}{2\pi}\notin\mathbb Q.
+\frac{\alpha}{2\pi}\notin\QQ.
 \]
 Assume this hypothesis for the remainder of the proof.
 
@@ -170,7 +170,7 @@ Let $\Omega$ be a domain properly containing $\mathbb D$. Then $\Omega$ contains
 
 Because $\Omega$ properly contains $\mathbb D$, it contains a point $w\notin\mathbb D$. If $|w|=1$, openness of $\Omega$ gives a nearby point of modulus greater than $1$ that also lies in $\Omega$. Thus $\Omega$ contains a point outside the closed unit disk as well as points inside $\mathbb D$.
 
-Open connected subsets of $\mathbb C$ are path connected, so a path in $\Omega$ from an interior point of $\mathbb D$ to a point outside the closed unit disk must meet the unit circle. Thus $\Omega$ contains some point of $\partial\mathbb D$.
+Open connected subsets of $\CC$ are path connected, so a path in $\Omega$ from an interior point of $\mathbb D$ to a point outside the closed unit disk must meet the unit circle. Thus $\Omega$ contains some point of $\partial\mathbb D$.
 
 Since $\Omega$ is open, it contains a nonempty open arc of the unit circle around that boundary point. By density of the set $\{\zeta_n\}$ from step [](#s1-2){.pf-ref}, that arc contains some $\zeta_k$.
 
@@ -339,7 +339,7 @@ This is a contradiction.
 
 ::: {.pf-step #s1-11}
 
-Under the corrected hypothesis $\alpha/(2\pi)\notin\mathbb Q$, the unit circle is a natural boundary for $f$.
+Under the corrected hypothesis $\alpha/(2\pi)\notin\QQ$, the unit circle is a natural boundary for $f$.
 
 
 ::: pf-proof
@@ -352,7 +352,7 @@ Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} show that no domain properl
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} refutes the literal source statement. Steps [](#s1-2){.pf-ref} through [](#s1-11){.pf-ref} prove the intended theorem under the minimal density hypothesis $\alpha/(2\pi)\notin\mathbb Q$.
+Step [](#s1-1){.pf-ref} refutes the literal source statement. Steps [](#s1-2){.pf-ref} through [](#s1-11){.pf-ref} prove the intended theorem under the minimal density hypothesis $\alpha/(2\pi)\notin\QQ$.
 
 :::
 

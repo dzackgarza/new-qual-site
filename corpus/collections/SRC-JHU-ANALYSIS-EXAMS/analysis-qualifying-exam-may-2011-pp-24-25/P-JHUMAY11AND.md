@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-4. Suppose that $u : \mathbb { C } \to \mathbb { R }$ is a harmonic function such that
+4. Suppose that $u : \CC \to \RR$ is a harmonic function such that
 
 $$
 u ( z ) \leq 1 0 \log ( | z | + 2 ) ,
 $$
 
-for all $z \in \mathbb { C }$ . Prove that u is constant.
+for all $z \in \CC$ . Prove that u is constant.
 :::
 
 ::: {.solution}

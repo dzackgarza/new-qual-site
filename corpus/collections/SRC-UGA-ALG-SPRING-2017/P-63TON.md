@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 (a) Let $R$ be an integral domain with fraction field $F$. Suppose that $p(x), a(x), b(x) \in F[x]$ are non-constant monic polynomials such that $p(x) = a(x) b(x)$ with $p(x) \in R[x]$ and $a(x) \notin R[x]$. Prove that $R$ is not a unique factorization domain (UFD). (You may assume Gauss's Lemma.)
 
-(b) Prove that $\mathbb{Z}[2\sqrt{2}]$ is not a UFD.
+(b) Prove that $\ZZ[2\sqrt{2}]$ is not a UFD.
 :::
 
 ::: {.solution}
@@ -49,11 +49,11 @@ If $R$ were a UFD, step [](#s1){.pf-ref} applied to the stated monic factorizati
 
 ::: {.pf-step #s3}
 
-The ring $\mathbb Z[2\sqrt2]$ is not a UFD.
+The ring $\ZZ[2\sqrt2]$ is not a UFD.
 
 ::: pf-proof
 
-Put $R=\mathbb Z[2\sqrt2]=\{u+2v\sqrt2:u,v\in\mathbb Z\}$ and $F=\mathbb Q(\sqrt2)$, its fraction field. In $R[x]$ the monic polynomial $p=x^2-2$ satisfies
+Put $R=\ZZ[2\sqrt2]=\{u+2v\sqrt2:u,v\in\ZZ\}$ and $F=\QQ(\sqrt2)$, its fraction field. In $R[x]$ the monic polynomial $p=x^2-2$ satisfies
 \[
 p=(x-\sqrt2)(x+\sqrt2)
 \]

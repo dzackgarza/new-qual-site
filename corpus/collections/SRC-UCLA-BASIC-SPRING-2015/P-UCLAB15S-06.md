@@ -21,7 +21,7 @@ Prove that the integral equation
 \[
 f(t)=e^{t^2}+\frac12\int_0^1\cos(s)f(s)\,ds
 \]
-admits a unique continuous solution $f:[0,1]\to\mathbb R$.
+admits a unique continuous solution $f:[0,1]\to\RR$.
 :::
 
 ::: {.solution}

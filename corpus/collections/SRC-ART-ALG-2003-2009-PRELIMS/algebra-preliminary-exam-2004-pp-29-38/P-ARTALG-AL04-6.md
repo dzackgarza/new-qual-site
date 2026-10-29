@@ -63,7 +63,7 @@ AP=PC=\begin{pmatrix}2&25\\7&21\end{pmatrix}.
 $$
 Thus $P^{-1}AP=C$. The cyclic basis $v,Av$ gives the single
 invariant factor $x^2-3x-19$, so this companion matrix is the
-rational canonical form over $\mathbb Q$ [@DF04].
+rational canonical form over $\QQ$ [@DF04].
 
 :::
 
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-Over $\mathbb C$, the characteristic polynomial is
+Over $\CC$, the characteristic polynomial is
 $(x-i)(x+i)(x+1)^2$. Let $f_1\mid\cdots\mid f_r$ be the
 nonconstant monic invariant factors. Their product is the
 characteristic polynomial [@DF04]. If $x-i$ or $x+i$ divided

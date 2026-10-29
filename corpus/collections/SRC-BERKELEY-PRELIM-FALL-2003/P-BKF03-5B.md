@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let n be a positive integer.
-Let $\phi ( n )$ be the Euler phi function, so $\phi ( n ) = \# ( \mathbb { Z } / n \mathbb { Z } ) ^ { * }$ Prove that if $\operatorname* { g c d } ( n , \phi ( n ) ) > 1$ , then there exists a noncyclic group of order n.
+Let $\phi ( n )$ be the Euler phi function, so $\phi ( n ) = \# ( \ZZ / n \ZZ ) ^ { * }$ Prove that if $\operatorname* { g c d } ( n , \phi ( n ) ) > 1$ , then there exists a noncyclic group of order n.
 :::
 
 

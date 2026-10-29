@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let $\{f_n\}$ be a sequence of real-valued Lebesgue measurable functions on $\mathbb R$, and let $f$ be another such function. Assume that
+Problem 1. Let $\{f_n\}$ be a sequence of real-valued Lebesgue measurable functions on $\RR$, and let $f$ be another such function. Assume that
 
 1. $f_n\to f$ Lebesgue almost everywhere;
-2. $\displaystyle \int_{\mathbb R}|x|\,|f_n(x)|\,dx\le100$ for all $n$;
-3. $\displaystyle \int_{\mathbb R}|f_n(x)|^2\,dx\le100$ for all $n$.
+2. $\displaystyle \int_{\RR}|x|\,|f_n(x)|\,dx\le100$ for all $n$;
+3. $\displaystyle \int_{\RR}|f_n(x)|^2\,dx\le100$ for all $n$.
 
 Prove that $f_n\in L^1$ for all $n$, that $f\in L^1$, and that
 \[
@@ -36,7 +36,7 @@ Also show that neither assumption 2 nor assumption 3 can be omitted while making
 
 ::: {.pf-step #s1-1}
 
-Every \(f_n\) lies in \(L^1(\mathbb R)\), and
+Every \(f_n\) lies in \(L^1(\RR)\), and
 \[
 \|f_n\|_{L^1}\le 10\sqrt2+100
 \qquad(n\ge1).
@@ -67,11 +67,11 @@ Adding the two estimates proves the claim.
 
 The limit \(f\) satisfies
 \[
-\boxed{f\in L^1(\mathbb R)},
+\boxed{f\in L^1(\RR)},
 \qquad
-\int_{\mathbb R}|f|^2\,dx\le100,
+\int_{\RR}|f|^2\,dx\le100,
 \qquad
-\int_{\mathbb R}|x|\,|f(x)|\,dx\le100.
+\int_{\RR}|x|\,|f(x)|\,dx\le100.
 \]
 
 
@@ -185,12 +185,12 @@ f_n(x)=f(x)=\frac{1}{1+|x|}
 \]
 Then \(f_n\to f\) everywhere and
 \[
-\int_{\mathbb R}|f_n(x)|^2\,dx
+\int_{\RR}|f_n(x)|^2\,dx
 =2\int_0^\infty\frac{dx}{(1+x)^2}=2\le100,
 \]
 so assumptions 1 and 3 hold. However,
 \[
-\int_{\mathbb R}|f_n(x)|\,dx
+\int_{\RR}|f_n(x)|\,dx
 =2\int_0^\infty\frac{dx}{1+x}=\infty.
 \]
 Thus even the conclusion \(f_n\in L^1\) can fail without assumption 2.
@@ -216,12 +216,12 @@ f_n(x)=f(x)=
 \]
 Then \(f_n\to f\) everywhere and
 \[
-\int_{\mathbb R}|x|\,|f_n(x)|\,dx
+\int_{\RR}|x|\,|f_n(x)|\,dx
 =\int_{-1}^1 1\,dx=2\le100,
 \]
 so assumptions 1 and 2 hold. But
 \[
-\int_{\mathbb R}|f_n(x)|\,dx
+\int_{\RR}|f_n(x)|\,dx
 =2\int_0^1\frac{dx}{x}=\infty.
 \]
 Thus even the conclusion \(f_n\in L^1\) can fail without assumption 3.

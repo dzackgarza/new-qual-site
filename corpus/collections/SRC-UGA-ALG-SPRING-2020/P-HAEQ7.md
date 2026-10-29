@@ -34,7 +34,7 @@ There exists $P\in\operatorname{GL}(V)$ such that $P^{-1}AP=J=\bigoplus_{i=1}^s 
 
 ::: pf-proof
 
-Since $\mathbb C$ is algebraically closed, the Jordan canonical form theorem supplies a basis in which the matrix of $T$ is the displayed block diagonal matrix. Each $N_i$ has ones on its superdiagonal and zero elsewhere, so $N_i^{m_i}=0$.
+Since $\CC$ is algebraically closed, the Jordan canonical form theorem supplies a basis in which the matrix of $T$ is the displayed block diagonal matrix. Each $N_i$ has ones on its superdiagonal and zero elsewhere, so $N_i^{m_i}=0$.
 
 :::
 

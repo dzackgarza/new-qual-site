@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove or disprove: the set $\mathbb Q$ of rational numbers is the intersection of a countable family of open subsets of $\mathbb R$.
+Prove or disprove: the set $\QQ$ of rational numbers is the intersection of a countable family of open subsets of $\RR$.
 :::
 
 ::: {.solution}

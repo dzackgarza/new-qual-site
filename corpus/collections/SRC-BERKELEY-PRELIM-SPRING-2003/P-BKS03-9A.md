@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let
 \[
-R=\{a+3bi:a,b\in\mathbb Z\}.
+R=\{a+3bi:a,b\in\ZZ\}.
 \]
-Prove that $R$ is a subring of $\mathbb C$, an integral domain, and not a unique factorization domain.
+Prove that $R$ is a subring of $\CC$, an integral domain, and not a unique factorization domain.
 :::
 
 ::: {.solution}

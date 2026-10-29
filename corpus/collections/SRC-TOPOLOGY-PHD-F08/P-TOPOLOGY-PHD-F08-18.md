@@ -90,11 +90,11 @@ Since $w$ was arbitrary, $p_n$ is an $n$-sheeted covering.
 ::: {.pf-step #induced-homomorphism}
 Under the standard identification
 \[
-\pi_1(S^1,1)\cong\mathbb Z,
+\pi_1(S^1,1)\cong\ZZ,
 \]
 the induced homomorphism is
 \[
-(p_n)_*:\mathbb Z\to\mathbb Z,
+(p_n)_*:\ZZ\to\ZZ,
 \qquad
 m\longmapsto nm.
 \]
@@ -109,7 +109,7 @@ Its image under $p_n$ is
 (p_n\circ\alpha)(t)
 =e^{2\pi i n t},
 \]
-which winds $n$ times around the circle and therefore represents $n\in\mathbb Z$.
+which winds $n$ times around the circle and therefore represents $n\in\ZZ$.
 Since $(p_n)_*$ is a group homomorphism, it sends $m$ to $nm$.
 :::
 
@@ -118,19 +118,19 @@ Since $(p_n)_*$ is a group homomorphism, it sends $m$ to $nm$.
 ::: {.pf-step #index-n}
 Hence
 \[
-(p_n)_*\pi_1(S^1,1)=n\mathbb Z
+(p_n)_*\pi_1(S^1,1)=n\ZZ
 \]
 and
 \[
-[\mathbb Z:n\mathbb Z]=n.
+[\ZZ:n\ZZ]=n.
 \]
 
 ::: pf-proof
 The image statement follows immediately from step [](#induced-homomorphism){.pf-ref}. The quotient
 \[
-\mathbb Z/n\mathbb Z
+\ZZ/n\ZZ
 \]
-has exactly $n$ elements, so the subgroup $n\mathbb Z$ has index $n$ in $\mathbb Z$.
+has exactly $n$ elements, so the subgroup $n\ZZ$ has index $n$ in $\ZZ$.
 :::
 
 :::

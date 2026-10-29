@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal A\equiv M_n(\mathbb C)$ denote the set of all $n\times n$ matrices with complex entries.
+Let $\mathcal A\equiv M_n(\CC)$ denote the set of all $n\times n$ matrices with complex entries.
 We say that $\mathcal I\subseteq\mathcal A$ is a two-sided ideal in $\mathcal A$ if
 
 (i) for all $A,B\in\mathcal I$, one has $A+B\in\mathcal I$;
@@ -44,5 +44,5 @@ E_{pi}AE_{jq}=a_{ij}E_{pq}\in\mathcal I
 \]
 for every $p,q$.
 Multiplying on either side by the scalar matrix $a_{ij}^{-1}I_n$ shows $E_{pq}\in\mathcal I$ for every $p,q$.
-Closure under addition then gives every matrix in $M_n(\mathbb C)$, so $\mathcal I=\mathcal A$.
+Closure under addition then gives every matrix in $M_n(\CC)$, so $\mathcal I=\mathcal A$.
 :::

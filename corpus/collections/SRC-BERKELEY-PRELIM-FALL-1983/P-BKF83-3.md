@@ -22,7 +22,7 @@ audit:
 ::: {.problem}
 Let
 \[
-f:\mathbb R^n\setminus\{0\}\to\mathbb R
+f:\RR^n\setminus\{0\}\to\RR
 \]
 be $C^1$, and suppose all partial derivatives are uniformly bounded:
 \[
@@ -30,7 +30,7 @@ be $C^1$, and suppose all partial derivatives are uniformly bounded:
 \]
 for every $x\ne0$ and every $i$.
 
-1. If $n\ge2$, prove that $f$ extends continuously to all of $\mathbb R^n$.
+1. If $n\ge2$, prove that $f$ extends continuously to all of $\RR^n$.
 2. Show by counterexample that the assertion is false for $n=1$.
 :::
 
@@ -94,7 +94,7 @@ $$
 \le
 M\abs{r-s}.
 $$
-Thus $g(r)$ is Cauchy as $r\downarrow0$, and completeness of $\mathbb R$
+Thus $g(r)$ is Cauchy as $r\downarrow0$, and completeness of $\RR$
 gives a finite limit $L$.
 
 :::
@@ -114,7 +114,7 @@ $$
 
 Because $n\ge2$, the sphere
 $$
-\{y\in\mathbb R^n:\norm y=r\}
+\{y\in\RR^n:\norm y=r\}
 $$
 contains a great-circle arc joining $x$ to $re_1$ of length at most
 $\pi r$. Indeed, use the plane spanned by $x$ and $e_1$ when the two
@@ -154,7 +154,7 @@ $$
 $$
 gives a continuous function
 $$
-\widetilde f:\mathbb R^n\longrightarrow\mathbb R.
+\widetilde f:\RR^n\longrightarrow\RR.
 $$
 
 ::: pf-proof
@@ -196,7 +196,7 @@ f(x)
 $$
 This function is $C^1$ on
 $$
-\mathbb R\setminus\{0\},
+\RR\setminus\{0\},
 $$
 and
 $$

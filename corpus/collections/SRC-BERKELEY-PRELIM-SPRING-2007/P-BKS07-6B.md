@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let U be a non-empty open subset of $\mathbb { R } ^ { d }$ and let $f : U \to \mathbb { R } ^ { d }$ be a continuous vector field defined on U. Let K be a compact subset of U and let $b > 0$ . Suppose $\varphi : [ 0 , b ) \to K$ is a continuous function satisfying
+Let U be a non-empty open subset of $\RR ^ { d }$ and let $f : U \to \RR ^ { d }$ be a continuous vector field defined on U. Let K be a compact subset of U and let $b > 0$ . Suppose $\varphi : [ 0 , b ) \to K$ is a continuous function satisfying
 
 $$
 \varphi ( t ) = \varphi ( 0 ) + \int _ { 0 } ^ { t } f ( \varphi ( s ) ) d s , \qquad ( 0 \leq t < b ) .
@@ -29,7 +29,7 @@ $$
 
 so $\varphi$ is Lipschitz continuous on [0, b) and hence preserves Cauchy sequences.
 Let $t _ { k } \to b$ from the left.
-Then $\varphi ( t _ { k } )$ is Cauchy and hence converges to some $y _ { 0 } ~ \in ~ \mathbb { R } ^ { d }$ . We claim that $\lim _ { t \to b ^ { - } } \varphi ( t ) = y _ { 0 }$. Let $\varepsilon > 0$ and choose k large enough that $| t _ { k } - b | < \frac { \varepsilon } { 4 ( M + 1 ) }$ and $\| \varphi ( t _ { k } ) - y _ { 0 } \| < \frac { \varepsilon } { 2 }$ . Then for $0 < b - t < \delta = \frac { \varepsilon } { 4 ( M + 1 ) }$ we have $| t - t _ { k } | < \frac { \varepsilon } { 2 ( M + 1 ) }$, so
+Then $\varphi ( t _ { k } )$ is Cauchy and hence converges to some $y _ { 0 } ~ \in ~ \RR ^ { d }$ . We claim that $\lim _ { t \to b ^ { - } } \varphi ( t ) = y _ { 0 }$. Let $\varepsilon > 0$ and choose k large enough that $| t _ { k } - b | < \frac { \varepsilon } { 4 ( M + 1 ) }$ and $\| \varphi ( t _ { k } ) - y _ { 0 } \| < \frac { \varepsilon } { 2 }$ . Then for $0 < b - t < \delta = \frac { \varepsilon } { 4 ( M + 1 ) }$ we have $| t - t _ { k } | < \frac { \varepsilon } { 2 ( M + 1 ) }$, so
 
 $$
 \begin{aligned} \| \varphi ( t ) - y _ { 0 } \| &\le \| \varphi ( t ) - \varphi ( t _ { k } ) \| + \| \varphi ( t _ { k } ) - y _ { 0 } \| \\ &\le M | t - t _ { k } | + \frac { \varepsilon } { 2 } < \frac { \varepsilon } { 2 } + \frac { \varepsilon } { 2 } = \varepsilon \end{aligned}
@@ -39,7 +39,7 @@ as required.
 :::
 
 ::: {.solution}
-Because of the given integral equation, it suffices to apply the following claim to the function $g ( s ) = f ( \varphi ( s ) )$ : for any continuous bounded function $g \colon [ 0 , b ) \to \mathbb { R } ^ { d }$ , the limit $\lim _ { t \to b ^ { - } } \int _ { 0 } ^ { t } g ( s ) \, ds$ exists.
+Because of the given integral equation, it suffices to apply the following claim to the function $g ( s ) = f ( \varphi ( s ) )$ : for any continuous bounded function $g \colon [ 0 , b ) \to \RR ^ { d }$ , the limit $\lim _ { t \to b ^ { - } } \int _ { 0 } ^ { t } g ( s ) \, ds$ exists.
 To prove this, it suffices to prove that for every increasing sequence $\left( t _ { k } \right)$ in $[ 0 , b )$ tending to $b$, the limit $\lim _ { k \to \infty } \int _ { 0 } ^ { t _ { k } } g ( s ) \, ds$ exists.
 This follows from the dominated convergence theorem applied to the sequence of functions
 

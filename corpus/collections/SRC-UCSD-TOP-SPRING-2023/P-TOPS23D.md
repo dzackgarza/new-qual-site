@@ -46,7 +46,7 @@ In odd dimension the Betti numbers pair as $b_i=b_{3-i}$ with opposite signs in 
 
 ::: {.pf-step #h1-h2-vanish-rationally}
 Suppose for contradiction that $\pi_1(M)$ were finite. Then $\pi_1(\widehat M)$ would also be finite, so
-$$H_1(\widehat M;\mathbb Q)=H_2(\widehat M;\mathbb Q)=0.$$
+$$H_1(\widehat M;\QQ)=H_2(\widehat M;\QQ)=0.$$
 
 ::: pf-proof
 The first rational homology is the rationalization of the abelianization of the finite group $\pi_1(\widehat M)$, hence zero. Poincaré duality then gives $H_2\cong H^1=0$ rationally.
@@ -55,7 +55,7 @@ The first rational homology is the rationalization of the abelianization of the 
 :::
 
 ::: pf-step
-The nontrivial deck involution $\tau$ of the orientation cover reverses orientation, hence acts by $-1$ on $H_3(\widehat M;\mathbb Q)$ and by $+1$ on $H_0$.
+The nontrivial deck involution $\tau$ of the orientation cover reverses orientation, hence acts by $-1$ on $H_3(\widehat M;\QQ)$ and by $+1$ on $H_0$.
 
 ::: pf-proof
 By definition, the deck involution exchanges the two local orientations. On the fundamental class of the connected orientable cover it therefore has degree $-1$.

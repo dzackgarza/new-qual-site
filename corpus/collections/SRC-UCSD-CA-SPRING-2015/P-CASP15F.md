@@ -27,7 +27,7 @@ State and prove a theorem regarding $\sum_{j=1}^m a_j - \sum_{k=1}^n b_k$.
 ::: {.solution}
 Let
 \[
-\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2.
+\Lambda=\ZZ\omega_1+\ZZ\omega_2.
 \]
 Then
 \[
@@ -70,5 +70,5 @@ number of the corresponding closed image curve under $f$. Therefore
 \sum_j a_j-\sum_k b_k
 =N_1\omega_1+N_2\omega_2
 \]
-for some $N_1,N_2\in\mathbb Z$, proving the claim.
+for some $N_1,N_2\in\ZZ$, proving the claim.
 :::

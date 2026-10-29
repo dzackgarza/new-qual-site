@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Outline a proof, starting from basic properties of the real numbers, of the following theorem.
 
-Let $f:[a,b]\to\mathbb R$ be continuous and differentiable on $(a,b)$, with
+Let $f:[a,b]\to\RR$ be continuous and differentiable on $(a,b)$, with
 \[
 f'(x)=0\qquad(x\in(a,b)).
 \]

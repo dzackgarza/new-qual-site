@@ -14,9 +14,9 @@ audit:
 1. Give a detailed definition of the singular homology group $H_p(X)$ for a fixed positive integer $p$.
 2. Find a CW complex $X$ such that
    \[
-   H_5(X)\cong\mathbb Z/2011\mathbb Z,
+   H_5(X)\cong\ZZ/2011\ZZ,
    \qquad
-   H_6(X)\cong\mathbb Z,
+   H_6(X)\cong\ZZ,
    \]
    and all other positive-dimensional homology groups vanish.
 3. State the Mayer--Vietoris theorem.
@@ -33,7 +33,7 @@ Let
 \Delta^p
 =
 \left\{
-(t_0,\dots,t_p)\in\mathbb R^{p+1}:
+(t_0,\dots,t_p)\in\RR^{p+1}:
 t_i\ge0,
 \quad
 \sum_{i=0}^p t_i=1
@@ -74,7 +74,7 @@ c
 =
 \sum_{j=1}^m n_j\sigma_j,
 \qquad
-n_j\in\mathbb Z.
+n_j\in\ZZ.
 \]
 Addition is coefficientwise.
 
@@ -222,7 +222,7 @@ Then
 \[
 \widetilde H_5(M)
 \cong
-\mathbb Z/2011
+\ZZ/2011
 \]
 and all other reduced homology groups of $M$ vanish.
 
@@ -234,13 +234,13 @@ The cellular chain complex in positive degrees is
 \[
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\times2011}
-\mathbb Z
+\ZZ
 \longrightarrow
 0,
 \]
-where the first copy of $\mathbb Z$ is $C_6$ and the second is $C_5$.
+where the first copy of $\ZZ$ is $C_6$ and the second is $C_5$.
 
 Therefore
 \[
@@ -256,7 +256,7 @@ H_5(M)
 =
 \operatorname{coker}(\times2011)
 \cong
-\mathbb Z/2011.
+\ZZ/2011.
 \]
 There are no other positive-dimensional cells.
 
@@ -277,11 +277,11 @@ Then
 \boxed{
 H_5(X)
 \cong
-\mathbb Z/2011,
+\ZZ/2011,
 \qquad
 H_6(X)
 \cong
-\mathbb Z,
+\ZZ,
 }
 \]
 and
@@ -302,11 +302,11 @@ Thus
 \[
 C_6(X)
 \cong
-\mathbb Z\oplus\mathbb Z,
+\ZZ\oplus\ZZ,
 \qquad
 C_5(X)
 \cong
-\mathbb Z,
+\ZZ,
 \]
 and the cellular boundary is
 \[
@@ -318,21 +318,21 @@ Hence
 \[
 \ker\partial_6
 =
-\{(0,n):n\in\mathbb Z\}
+\{(0,n):n\in\ZZ\}
 \cong
-\mathbb Z,
+\ZZ,
 \]
 so
 \[
-H_6(X)\cong\mathbb Z.
+H_6(X)\cong\ZZ.
 \]
 Also
 \[
 H_5(X)
 =
-\mathbb Z/(2011\mathbb Z)
+\ZZ/(2011\ZZ)
 \cong
-\mathbb Z/2011.
+\ZZ/2011.
 \]
 All other positive cellular chain groups vanish.
 

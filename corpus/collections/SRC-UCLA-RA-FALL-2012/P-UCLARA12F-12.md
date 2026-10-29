@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M\in\mathbb R$, let $\Omega\subset\mathbb C$ be a bounded open set, and let $u:\Omega\to\mathbb R$ be harmonic.
+Let $M\in\RR$, let $\Omega\subset\CC$ be a bounded open set, and let $u:\Omega\to\RR$ be harmonic.
 
 (a) Show that if
 \[

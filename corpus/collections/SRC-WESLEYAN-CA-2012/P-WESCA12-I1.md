@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Give three equivalent characterizations of analyticity of a complex-valued function $f$ on a domain $D\subset\mathbb C$.
+Give three equivalent characterizations of analyticity of a complex-valued function $f$ on a domain $D\subset\CC$.
 :::
 
 ::: {.solution}
 
 Let
 \[
-f:D\to\mathbb C.
+f:D\to\CC.
 \]
 The following are equivalent.
 
@@ -74,7 +74,7 @@ B(z_0,r)\subseteq D
 \]
 and coefficients
 \[
-a_0,a_1,a_2,\dots\in\mathbb C
+a_0,a_1,a_2,\dots\in\CC
 \]
 such that
 \[

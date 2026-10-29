@@ -119,7 +119,7 @@ so $v$ is a scalar multiple of $e_1+\cdots+e_n$.
 
 ::: {.pf-step #p2-s3}
 
-Let $\lambda\in\mathbb C$ satisfy
+Let $\lambda\in\CC$ satisfy
 \[
 \lambda^n=1.
 \]
@@ -191,7 +191,7 @@ The characteristic polynomial of $T$ is
 
 ::: pf-proof
 
-Over $\mathbb C$, the polynomial
+Over $\CC$, the polynomial
 \[
 t^n-1
 \]
@@ -220,7 +220,7 @@ t^n-1.
 
 ::: {.pf-step #p2-s5}
 
-The operator $T$ is diagonalizable over $\mathbb C$.
+The operator $T$ is diagonalizable over $\CC$.
 
 ::: pf-proof
 

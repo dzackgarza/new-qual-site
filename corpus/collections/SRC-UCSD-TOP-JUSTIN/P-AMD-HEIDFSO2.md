@@ -32,16 +32,16 @@ Show that $H_*(X; \QQ) = H_*(X;\ZZ)\tensor \QQ$ and $H^*(X; \QQ) = \hom(H_*(X; \
 
 The homology statement holds:
 $$
-\boxed{H_n(X;\mathbb Q)\cong H_n(X;\mathbb Z)\otimes\mathbb Q.}
+\boxed{H_n(X;\QQ)\cong H_n(X;\ZZ)\otimes\QQ.}
 $$
 
 ::: pf-proof
 
 The universal coefficient theorem for homology gives a natural short exact sequence
 $$
-0\to H_n(X;\mathbb Z)\otimes\mathbb Q\to H_n(X;\mathbb Q)\to \operatorname{Tor}_1^{\mathbb Z}(H_{n-1}(X;\mathbb Z),\mathbb Q)\to0.
+0\to H_n(X;\ZZ)\otimes\QQ\to H_n(X;\QQ)\to \operatorname{Tor}_1^{\ZZ}(H_{n-1}(X;\ZZ),\QQ)\to0.
 $$
-The group $\mathbb Q$ is flat over $\mathbb Z$, so the Tor term vanishes.
+The group $\QQ$ is flat over $\ZZ$, so the Tor term vanishes.
 
 :::
 
@@ -51,19 +51,19 @@ The group $\mathbb Q$ is flat over $\mathbb Z$, so the Tor term vanishes.
 
 The cohomology statement holds:
 $$
-\boxed{H^n(X;\mathbb Q)\cong \operatorname{Hom}_{\mathbb Z}(H_n(X;\mathbb Z),\mathbb Q).}
+\boxed{H^n(X;\QQ)\cong \operatorname{Hom}_{\ZZ}(H_n(X;\ZZ),\QQ).}
 $$
 
 ::: pf-proof
 
 The cohomological universal coefficient theorem gives
 $$
-0\to \operatorname{Ext}^1_{\mathbb Z}(H_{n-1}(X;\mathbb Z),\mathbb Q)
-\to H^n(X;\mathbb Q)
-\to \operatorname{Hom}_{\mathbb Z}(H_n(X;\mathbb Z),\mathbb Q)
+0\to \operatorname{Ext}^1_{\ZZ}(H_{n-1}(X;\ZZ),\QQ)
+\to H^n(X;\QQ)
+\to \operatorname{Hom}_{\ZZ}(H_n(X;\ZZ),\QQ)
 \to0.
 $$
-The abelian group $\mathbb Q$ is divisible, hence injective as a $\mathbb Z$-module, so the Ext term vanishes.
+The abelian group $\QQ$ is divisible, hence injective as a $\ZZ$-module, so the Ext term vanishes.
 
 :::
 

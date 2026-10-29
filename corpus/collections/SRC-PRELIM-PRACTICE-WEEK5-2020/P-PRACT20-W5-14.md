@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-14
 kind: problem
-title: Which of $p$, $p+q$, $pq$, $p^q$, $q^p$ lie in a proper subgroup of $\mathbb Z$
+title: Which of $p$, $p+q$, $pq$, $p^q$, $q^p$ lie in a proper subgroup of $\ZZ$
 classification:
   areas:
   - algebra
@@ -26,17 +26,17 @@ Let $p, q$ be distinct primes. If $J$ is a proper subgroup of $(\ZZ, +)$ contain
 
 ::: pf-step
 
-Every proper nonzero subgroup of $(\mathbb Z,+)$ has the form
+Every proper nonzero subgroup of $(\ZZ,+)$ has the form
 \[
-d\mathbb Z
+d\ZZ
 \]
 for some integer $d\ge2$.
 
 
 ::: pf-proof
 
-Every subgroup of the infinite cyclic group $\mathbb Z$ is cyclic, hence has
-the form $d\mathbb Z$ for a unique $d\ge0$. The subgroup is proper and
+Every subgroup of the infinite cyclic group $\ZZ$ is cyclic, hence has
+the form $d\ZZ$ for a unique $d\ge0$. The subgroup is proper and
 contains some nonzero element of the displayed set, so $d\ge2$.
 
 :::
@@ -45,13 +45,13 @@ contains some nonzero element of the displayed set, so $d\ge2$.
 
 ::: {.pf-step #s1-2}
 
-If $J=d\mathbb Z$ contains three of the five displayed integers, then
+If $J=d\ZZ$ contains three of the five displayed integers, then
 those three integers have a common divisor $d>1$.
 
 
 ::: pf-proof
 
-Membership in $d\mathbb Z$ means divisibility by $d$. Thus if three elements
+Membership in $d\ZZ$ means divisibility by $d$. Thus if three elements
 belong to $J$, then $d$ divides all three.
 
 :::
@@ -103,7 +103,7 @@ Thus no other triple has a nontrivial common divisor.
 
 The subgroup
 \[
-J=p\mathbb Z
+J=p\ZZ
 \]
 contains exactly
 \[
@@ -123,7 +123,7 @@ and
 \[
 p\nmid q^p.
 \]
-Thus the other two numbers do not belong to $p\mathbb Z$.
+Thus the other two numbers do not belong to $p\ZZ$.
 
 :::
 

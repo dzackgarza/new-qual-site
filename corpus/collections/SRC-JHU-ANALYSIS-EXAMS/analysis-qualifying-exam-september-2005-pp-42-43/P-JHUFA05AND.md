@@ -79,7 +79,7 @@ Strict inequality can occur.
 
 ::: pf-proof
 
-Take $X=\ell^2(\mathbb N)$ and let $e_n$ be the standard orthonormal basis. For every $g=(g_k)\in\ell^2$, one has $g_n\to0$, hence
+Take $X=\ell^2(\NN)$ and let $e_n$ be the standard orthonormal basis. For every $g=(g_k)\in\ell^2$, one has $g_n\to0$, hence
 \[
 \langle e_n,g\rangle=g_n\longrightarrow0.
 \]

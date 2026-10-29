@@ -78,7 +78,7 @@ Radius of convergence: $R = 1$ because the sequence of coefficients is $a_n = (-
 ::: pf-step
 Analyticity at $z = 1$:
 
-- $f(z) = \frac{1}{1 + z}$ is holomorphic on the open set $\mathbb{C} \setminus \{-1\}$.
+- $f(z) = \frac{1}{1 + z}$ is holomorphic on the open set $\CC \setminus \{-1\}$.
 - In particular, $f(z)$ is holomorphic in the open disk $D(1, 1)$, so $f$ is analytic at $z = 1$.
 :::
 
@@ -103,7 +103,7 @@ Suppose for contradiction that $f$ can be analytically continued across every po
 :::
 
 ::: pf-step
-Local extensions: For each point $w \in S^1$, there exists an open disk $D(w, r_w)$ and a holomorphic function $f_w: D(w, r_w) \to \mathbb{C}$ such that $f_w(z) = f(z)$ on $D(w, r_w) \cap \mathbb{D}$.
+Local extensions: For each point $w \in S^1$, there exists an open disk $D(w, r_w)$ and a holomorphic function $f_w: D(w, r_w) \to \CC$ such that $f_w(z) = f(z)$ on $D(w, r_w) \cap \mathbb{D}$.
 :::
 
 ::: pf-step
@@ -118,7 +118,7 @@ Global extension:
 
 - Define the open domain $U = \mathbb{D} \cup \bigcup_{j=1}^m D(w_j, r_j)$.
 - The functions $f$ and $f_{w_j}$ agree on all pairwise intersections by the Identity Theorem for connected domains.
-- Thus they define a single holomorphic function $F: U \to \mathbb{C}$ that extends $f$.
+- Thus they define a single holomorphic function $F: U \to \CC$ that extends $f$.
 :::
 
 ::: pf-step

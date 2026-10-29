@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 a. State the argument principle and explain its name.
 
-b. Reformulate it without contour integrals as a statement about the winding number of an arbitrary continuous map from a domain to $\mathbb C$ with isolated zeros.
+b. Reformulate it without contour integrals as a statement about the winding number of an arbitrary continuous map from a domain to $\CC$ with isolated zeros.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Since $d\log f=f'/f\,dz$ wherever $f\ne0$, the integral measures the total chang
 \]
 This is why it is called the argument principle: the zero-pole count is the net change of $\arg f$ along the boundary, divided by $2\pi$.
 
-For the purely topological version, let $U\subset\mathbb C$ be a domain, let $f:U\to\mathbb C$ be continuous, and suppose the zeros of $f$ are isolated. Let $\gamma$ be a positively oriented Jordan curve whose image contains no zero of $f$, and suppose only finitely many zeros
+For the purely topological version, let $U\subset\CC$ be a domain, let $f:U\to\CC$ be continuous, and suppose the zeros of $f$ are isolated. Let $\gamma$ be a positively oriented Jordan curve whose image contains no zero of $f$, and suppose only finitely many zeros
 \[
 a_1,\dots,a_m
 \]

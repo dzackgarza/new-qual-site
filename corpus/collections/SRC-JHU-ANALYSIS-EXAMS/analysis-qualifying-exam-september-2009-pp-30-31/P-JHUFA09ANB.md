@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-For which $\sigma\in\mathbb R$ does there exist $C_\sigma<\infty$ such that
+For which $\sigma\in\RR$ does there exist $C_\sigma<\infty$ such that
 \[
 \left|\sum_{j,k=1}^\infty (1+|j-k|)^\sigma a_jb_k\right|
 \le C_\sigma\|a\|_{\ell^2}\|b\|_{\ell^2}

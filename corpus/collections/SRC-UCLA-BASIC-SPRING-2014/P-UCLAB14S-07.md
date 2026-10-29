@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Find a doubly infinite sequence $\{a_{n,m}:n,m\in\mathbb Z\}$ such that for every $m$,
+Problem 7. Find a doubly infinite sequence $\{a_{n,m}:n,m\in\ZZ\}$ such that for every $m$,
 \[
 \sum_n a_{n,m}=0,
 \]
@@ -58,7 +58,7 @@ Set
 \[
 a_{n,m}=0
 \]
-for every other pair $(n,m)\in\mathbb Z^2$.
+for every other pair $(n,m)\in\ZZ^2$.
 
 
 ::: pf-proof
@@ -96,7 +96,7 @@ All remaining rows are zero.
 
 ::: {.pf-step #s1-3}
 
-Consequently, for every $n\in\mathbb Z$,
+Consequently, for every $n\in\ZZ$,
 \[
 \sum_m a_{n,m}=0,
 \]
@@ -138,7 +138,7 @@ Every other column is zero.
 
 ::: {.pf-step #s1-5}
 
-Therefore, for every $m\in\mathbb Z$,
+Therefore, for every $m\in\ZZ$,
 \[
 \sum_n a_{n,m}=0,
 \]

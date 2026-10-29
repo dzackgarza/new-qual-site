@@ -34,12 +34,12 @@ Homology groups of $X$:
 ::: pf-proof
 
 ::: pf-step
-Since $X$ is connected, $H_0(X; \mathbb{Z}) \cong \mathbb{Z}$.
+Since $X$ is connected, $H_0(X; \ZZ) \cong \ZZ$.
 :::
 
 ::: pf-step
 Since $X$ is simply connected ($\pi_1(X) = 0$), the Hurewicz Theorem (or abelianization) gives:
-$$H_1(X; \mathbb{Z}) \cong \pi_1(X)_{\text{ab}} = 0.$$
+$$H_1(X; \ZZ) \cong \pi_1(X)_{\text{ab}} = 0.$$
 :::
 
 ::: pf-step
@@ -47,26 +47,26 @@ Since $\pi_1(X) = 0$, the first Stiefel–Whitney class vanishes ($w_1(X) = 0$),
 :::
 
 ::: pf-step
-For a closed, connected, oriented 3-manifold, the top homology is $H_3(X; \mathbb{Z}) \cong \mathbb{Z}$, and $H_k(X; \mathbb{Z}) = 0$ for all $k > 3$.
+For a closed, connected, oriented 3-manifold, the top homology is $H_3(X; \ZZ) \cong \ZZ$, and $H_k(X; \ZZ) = 0$ for all $k > 3$.
 :::
 
 ::: pf-step
 By Poincaré Duality:
-$$H_2(X; \mathbb{Z}) \cong H^1(X; \mathbb{Z}).$$
+$$H_2(X; \ZZ) \cong H^1(X; \ZZ).$$
 :::
 
 ::: pf-step
 By the Universal Coefficient Theorem for cohomology:
-$$H^1(X; \mathbb{Z}) \cong \operatorname{Hom}(H_1(X; \mathbb{Z}), \mathbb{Z}) \oplus \operatorname{Ext}(H_0(X; \mathbb{Z}), \mathbb{Z}) \cong \operatorname{Hom}(0, \mathbb{Z}) \oplus \operatorname{Ext}(\mathbb{Z}, \mathbb{Z}) = 0 \oplus 0 = 0.$$
+$$H^1(X; \ZZ) \cong \operatorname{Hom}(H_1(X; \ZZ), \ZZ) \oplus \operatorname{Ext}(H_0(X; \ZZ), \ZZ) \cong \operatorname{Hom}(0, \ZZ) \oplus \operatorname{Ext}(\ZZ, \ZZ) = 0 \oplus 0 = 0.$$
 :::
 
 ::: pf-step
-Thus $H_2(X; \mathbb{Z}) = 0$.
+Thus $H_2(X; \ZZ) = 0$.
 :::
 
 ::: pf-step
 In summary, the homology of $X$ matches the homology of $S^3$:
-$$H_k(X; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, 3, \\ 0 & k \neq 0, 3. \end{cases}$$
+$$H_k(X; \ZZ) \cong \begin{cases} \ZZ & k = 0, 3, \\ 0 & k \neq 0, 3. \end{cases}$$
 :::
 
 :::
@@ -79,17 +79,17 @@ Homotopy groups via the Hurewicz Theorem:
 ::: pf-proof
 
 ::: pf-step
-Since $\pi_1(X) = 0$ and $\widetilde{H}_1(X) = \widetilde{H}_2(X) = 0$, the Hurewicz Theorem in dimension 2 implies $\pi_2(X) \cong H_2(X; \mathbb{Z}) = 0$.
+Since $\pi_1(X) = 0$ and $\widetilde{H}_1(X) = \widetilde{H}_2(X) = 0$, the Hurewicz Theorem in dimension 2 implies $\pi_2(X) \cong H_2(X; \ZZ) = 0$.
 :::
 
 ::: pf-step
 By the Hurewicz Theorem in dimension 3 for simply connected spaces, the Hurewicz homomorphism
-$$h: \pi_3(X) \to H_3(X; \mathbb{Z}) \cong \mathbb{Z}$$
+$$h: \pi_3(X) \to H_3(X; \ZZ) \cong \ZZ$$
 is an isomorphism.
 :::
 
 ::: pf-step
-Thus $\pi_3(X) \cong \mathbb{Z}$.
+Thus $\pi_3(X) \cong \ZZ$.
 :::
 
 :::
@@ -102,19 +102,19 @@ Homotopy equivalence via Whitehead's Theorem:
 ::: pf-proof
 
 ::: pf-step
-Choose a continuous map $f: S^3 \to X$ representing a generator of $\pi_3(X) \cong \mathbb{Z}$.
+Choose a continuous map $f: S^3 \to X$ representing a generator of $\pi_3(X) \cong \ZZ$.
 :::
 
 ::: pf-step
-By definition of the Hurewicz homomorphism, the induced map $f_*: H_3(S^3; \mathbb{Z}) \to H_3(X; \mathbb{Z})$ sends the fundamental class $[S^3]$ to $h([f])$, which is a generator of $H_3(X; \mathbb{Z})$.
+By definition of the Hurewicz homomorphism, the induced map $f_*: H_3(S^3; \ZZ) \to H_3(X; \ZZ)$ sends the fundamental class $[S^3]$ to $h([f])$, which is a generator of $H_3(X; \ZZ)$.
 :::
 
 ::: pf-step
-Thus $f_*: H_3(S^3; \mathbb{Z}) \to H_3(X; \mathbb{Z})$ is an isomorphism.
+Thus $f_*: H_3(S^3; \ZZ) \to H_3(X; \ZZ)$ is an isomorphism.
 :::
 
 ::: pf-step
-In degree 0, $f_*: H_0(S^3; \mathbb{Z}) \to H_0(X; \mathbb{Z})$ is an isomorphism $\mathbb{Z} \to \mathbb{Z}$ since $S^3$ and $X$ are non-empty and connected.
+In degree 0, $f_*: H_0(S^3; \ZZ) \to H_0(X; \ZZ)$ is an isomorphism $\ZZ \to \ZZ$ since $S^3$ and $X$ are non-empty and connected.
 :::
 
 ::: pf-step

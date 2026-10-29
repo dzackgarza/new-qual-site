@@ -26,12 +26,12 @@ Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex entries,
 
 (a) Consider any Hermitian $A \in M_n$ with eigenvalues ordered so that $\lambda_n(A) \le \cdots \le \lambda_2(A) \le \lambda_1(A)$.
 Prove that:
-$$\lambda_n(A) \le \frac{x^H A x}{x^H x} \le \lambda_1(A) \quad \text{for all nonzero } x \in \mathbb{C}^n.$$
+$$\lambda_n(A) \le \frac{x^H A x}{x^H x} \le \lambda_1(A) \quad \text{for all nonzero } x \in \CC^n.$$
 
 (b) Suppose that $D \in M_n$ with $D = \operatorname{diag}(d_1, d_2, \dots, d_n)$.
 Prove that for all $1 \le p \le \infty$, the induced operator $p$-norm of $D$ is given by $\|D\|_p = \max_{1 \le i \le n} |d_i|$.
 
-(c) Given $a \in \mathbb{C}^n$, find $\|A\|_2$ for the matrices:
+(c) Given $a \in \CC^n$, find $\|A\|_2$ for the matrices:
 $$A_1 = a a^H \quad \text{and} \quad A_2 = \begin{pmatrix} 0 & a^H \\ a & 0 \end{pmatrix}.$$
 :::
 
@@ -48,11 +48,11 @@ Part (a): Rayleigh Quotient Bounds for Hermitian Matrices:
 *Proof:*
 
 ::: pf-step
-By the **Spectral Theorem**, there exists an orthonormal eigenbasis $\{u_1, u_2, \dots, u_n\}$ of $\mathbb{C}^n$ such that $A u_i = \lambda_i(A) u_i$ and $u_i^H u_j = \delta_{ij}$.
+By the **Spectral Theorem**, there exists an orthonormal eigenbasis $\{u_1, u_2, \dots, u_n\}$ of $\CC^n$ such that $A u_i = \lambda_i(A) u_i$ and $u_i^H u_j = \delta_{ij}$.
 :::
 
 ::: pf-step
-Write any non-zero vector $x \in \mathbb{C}^n \setminus \{0\}$ as $x = \sum_{i=1}^n c_i u_i$ with $c_i = u_i^H x \in \mathbb{C}$.
+Write any non-zero vector $x \in \CC^n \setminus \{0\}$ as $x = \sum_{i=1}^n c_i u_i$ with $c_i = u_i^H x \in \CC$.
 :::
 
 ::: pf-step
@@ -85,7 +85,7 @@ Let $M = \max_{1 \le i \le n} |d_i|$.
 :::
 
 ::: pf-step
-For any $x \in \mathbb{C}^n$ and $1 \le p < \infty$:
+For any $x \in \CC^n$ and $1 \le p < \infty$:
 $$\|D x\|_p^p = \sum_{i=1}^n |d_i x_i|^p = \sum_{i=1}^n |d_i|^p |x_i|^p \le \sum_{i=1}^n M^p |x_i|^p = M^p \sum_{i=1}^n |x_i|^p = M^p \|x\|_p^p.$$
 Taking $p$-th roots gives $\|D x\|_p \le M \|x\|_p$, so $\|D\|_p \le M$.
 (For $p = \infty$: $\|D x\|_\infty = \max_i |d_i x_i| \le M \max_i |x_i| = M \|x\|_\infty$).
@@ -123,7 +123,7 @@ The matrix 2-norm is the largest singular value: $\|A\|_2 = \sigma_1(A) = \sqrt{
 :::
 
 ::: pf-step
-**For $A_1 = a a^H$ (where $a \in \mathbb{C}^n$):**
+**For $A_1 = a a^H$ (where $a \in \CC^n$):**
 
 - If $a = 0$, $\|A_1\|_2 = 0 = \|a\|_2^2$.
 - If $a \ne 0$, $A_1 a = (a a^H) a = a (a^H a) = \|a\|_2^2 a$, so $a$ is an eigenvector with eigenvalue $\|a\|_2^2$.
@@ -134,7 +134,7 @@ The matrix 2-norm is the largest singular value: $\|A\|_2 = \sigma_1(A) = \sqrt{
 :::
 
 ::: pf-step
-**For $A_2 = \begin{pmatrix} 0 & a^H \\ a & 0 \end{pmatrix} \in M_{n+1}(\mathbb{C})$:**
+**For $A_2 = \begin{pmatrix} 0 & a^H \\ a & 0 \end{pmatrix} \in M_{n+1}(\CC)$:**
 
 - We compute $A_2^H A_2 = A_2^2$ (since $A_2$ is Hermitian):
   $$A_2^2 = \begin{pmatrix} 0 & a^H \\ a & 0 \end{pmatrix} \begin{pmatrix} 0 & a^H \\ a & 0 \end{pmatrix} = \begin{pmatrix} a^H a & 0 \\ 0 & a a^H \end{pmatrix} = \begin{pmatrix} \|a\|_2^2 & 0 \\ 0 & a a^H \end{pmatrix}.$$

@@ -28,13 +28,13 @@ audit:
 ::: {.problem}
 Let $X$ be the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $S^1 \times \{x_0\}$ in the torus.
 Compute $\pi_1(X)$, describe the universal cover of $X$, and describe the action of $\pi_1(X)$ on the universal cover.
-Do the same for the space $Y$ obtained by attaching a Möbius band to $\mathbb{RP}^2$ via a homeomorphism from its boundary circle to the circle in $\mathbb{RP}^2$ formed by the 1-skeleton of the usual CW structure on $\mathbb{RP}^2$.
+Do the same for the space $Y$ obtained by attaching a Möbius band to $\RP^2$ via a homeomorphism from its boundary circle to the circle in $\RP^2$ formed by the 1-skeleton of the usual CW structure on $\RP^2$.
 :::
 
 ::: {.solution}
 Let $M$ denote the Möbius band and let $c$ generate
 \[
-\pi_1(M)\cong\mathbb Z.
+\pi_1(M)\cong\ZZ.
 \]
 The boundary circle of $M$ represents
 \[
@@ -78,11 +78,11 @@ A*_{D}C,
 \]
 where
 \[
-A=\langle a,b\mid[a,b]=1\rangle\cong\mathbb Z^2,
+A=\langle a,b\mid[a,b]=1\rangle\cong\ZZ^2,
 \quad
-C=\langle c\rangle\cong\mathbb Z,
+C=\langle c\rangle\cong\ZZ,
 \quad
-D=\langle a\rangle=\langle c^2\rangle\cong\mathbb Z.
+D=\langle a\rangle=\langle c^2\rangle\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -97,7 +97,7 @@ This is exactly the van Kampen pushout from step [](#s1){.pf-ref}, and both maps
 
 Construct a simply connected space $\widetilde X$ as follows.
 Its incidence graph is the Bass--Serre tree $T$ for the amalgam $A*_D C$.
-For each $A$-vertex take a copy of $\mathbb R^2$, for each $C$-vertex take a copy of the universal cover of the Möbius band, an infinite strip $\mathbb R\times I$, and glue each incident strip boundary line to the corresponding lift of the $a$-circle in the adjacent plane.
+For each $A$-vertex take a copy of $\RR^2$, for each $C$-vertex take a copy of the universal cover of the Möbius band, an infinite strip $\RR\times I$, and glue each incident strip boundary line to the corresponding lift of the $a$-circle in the adjacent plane.
 
 ::: pf-proof
 
@@ -173,12 +173,12 @@ For the second space $Y$,
 \langle a,c\mid a^2=1,\ a=c^2\rangle
 \cong
 \langle c\mid c^4=1\rangle
-\cong\mathbb Z/4.
+\cong\ZZ/4.
 \]
 
 ::: pf-proof
 
-The usual CW structure on $\mathbb{RP}^2$ has one $1$-cell $a$ and one $2$-cell attached by $a^2$.
+The usual CW structure on $\RP^2$ has one $1$-cell $a$ and one $2$-cell attached by $a^2$.
 The attaching circle for the Möbius band is this $1$-skeleton circle, while the boundary of the Möbius band represents $c^2$.
 Van Kampen therefore gives
 \[
@@ -200,27 +200,27 @@ The universal cover $\widetilde Y$ is a four-sheeted cover built from one annulu
 Restrict the universal cover to the Möbius-band subspace.
 The subgroup of
 \[
-\pi_1(M)=\langle c\rangle\cong\mathbb Z
+\pi_1(M)=\langle c\rangle\cong\ZZ
 \]
 that maps trivially to
 \[
-\pi_1(Y)=\mathbb Z/4
+\pi_1(Y)=\ZZ/4
 \]
-is $4\mathbb Z$.
+is $4\ZZ$.
 The corresponding four-sheeted connected cover of the Möbius band is an annulus $A$.
 Its two boundary circles each map two-to-one onto the boundary of the Möbius band.
 
 The image of
 \[
-\pi_1(\mathbb{RP}^2)=\langle a\mid a^2=1\rangle
+\pi_1(\RP^2)=\langle a\mid a^2=1\rangle
 \]
-inside $\mathbb Z/4$ is the order-two subgroup
+inside $\ZZ/4$ is the order-two subgroup
 \[
 \langle c^2\rangle.
 \]
 Thus the inverse image of the projective-plane piece has two connected components, each the universal double cover
 \[
-S^2\to\mathbb{RP}^2.
+S^2\to\RP^2.
 \]
 In each sphere the inverse image of the $1$-skeleton circle is an equator mapping two-to-one onto that circle.
 
@@ -254,13 +254,13 @@ Hence
 
 The deck group of $\widetilde Y\to Y$ is cyclic of order four.
 Its generator acts on the annulus by the deck transformation induced by one unit of translation in the universal strip of the Möbius band; this interchanges the two boundary circles and therefore interchanges the two sphere components.
-Its square preserves each sphere and acts there by the antipodal deck transformation of $S^2\to\mathbb{RP}^2$.
+Its square preserves each sphere and acts there by the antipodal deck transformation of $S^2\to\RP^2$.
 
 ::: pf-proof
 
 The universal-cover deck group is canonically
 \[
-\pi_1(Y)\cong\mathbb Z/4.
+\pi_1(Y)\cong\ZZ/4.
 \]
 The stated action is exactly the restriction of the generator $c$ to the lifted Möbius and projective-plane pieces.
 After four iterations it is the identity, while no smaller positive power fixes every point.

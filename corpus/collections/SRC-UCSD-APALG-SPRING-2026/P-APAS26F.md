@@ -50,7 +50,7 @@ Hence $\mathcal{B}$ is maximal commutative.
 ::: pf-step
 **Direction ($\Rightarrow$):** Suppose $\mathcal{B}$ is a maximal commutative subalgebra.
 Suppose for contradiction that there exists $x \in C_\mathcal{A}(\mathcal{B}) \setminus \mathcal{B}$.
-Consider the subalgebra $\mathcal{B}[x] = \{ \sum_{k=0}^m b_k x^k \mid b_k \in \mathcal{B}, \, m \in \mathbb{N} \}$.
+Consider the subalgebra $\mathcal{B}[x] = \{ \sum_{k=0}^m b_k x^k \mid b_k \in \mathcal{B}, \, m \in \NN \}$.
 Because $x$ commutes with all elements of $\mathcal{B}$ and powers of $x$ commute with each other, any two elements of $\mathcal{B}[x]$ commute:
 \[
 \left(\sum_{k} b_k x^k\right) \left(\sum_{j} c_j x^j\right) = \sum_{k, j} b_k c_j x^{k+j} = \left(\sum_{j} c_j x^j\right) \left(\sum_{k} b_k x^k\right).
@@ -87,13 +87,13 @@ C_{\operatorname{End}(V)}(\mathcal{B}) \cong \bigoplus_{i=1}^k \operatorname{End
 ::: pf-step
 By step [](#s1){.pf-ref}, $\mathcal{B}$ is maximal commutative if and only if $\mathcal{B} = C_{\operatorname{End}(V)}(\mathcal{B}) \cong \bigoplus_{i=1}^k \operatorname{End}(V_i)$.
 Since $\mathcal{B}$ is commutative, each block algebra $\operatorname{End}(V_i)$ must be commutative, which occurs if and only if $\dim V_i = 1$ for each $i \in \{1, \dots, k\}$.
-Thus $k = n$, and $V = \mathbb{C} e_1 \oplus \cdots \oplus \mathbb{C} e_n$ for an orthonormal basis $\mathcal{E} = \{e_1, \dots, e_n\}$.
+Thus $k = n$, and $V = \CC e_1 \oplus \cdots \oplus \CC e_n$ for an orthonormal basis $\mathcal{E} = \{e_1, \dots, e_n\}$.
 :::
 
 ::: pf-step
 Therefore the maximal commutative $*$-subalgebras of $\operatorname{End}(V)$ are precisely the algebras of operators diagonalized by an orthonormal basis of $V$:
 \[
-\mathcal{D}_\mathcal{E} = \{ T \in \operatorname{End}(V) \mid [T]_\mathcal{E} \text{ is diagonal} \} \cong \mathbb{C}^n.
+\mathcal{D}_\mathcal{E} = \{ T \in \operatorname{End}(V) \mid [T]_\mathcal{E} \text{ is diagonal} \} \cong \CC^n.
 \]
 :::
 

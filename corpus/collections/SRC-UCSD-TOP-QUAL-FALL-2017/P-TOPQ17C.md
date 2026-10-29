@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing the two ends of $S^2 \times I$ via the antipodal map of $S^2$.
-Compute its homology $H_*(X; \mathbb{Z})$.
+Compute its homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ This is the homology long exact sequence of a mapping torus.
 
 ::: pf-step
 
-The antipodal map on $S^2$ has degree $-1$, so it acts by $-1$ on $H_2(S^2)=\mathbb Z$ and by $1$ on $H_0(S^2)=\mathbb Z$.
+The antipodal map on $S^2$ has degree $-1$, so it acts by $-1$ on $H_2(S^2)=\ZZ$ and by $1$ on $H_0(S^2)=\ZZ$.
 
 ::: pf-proof
 
@@ -51,11 +51,11 @@ The antipodal map on $S^n$ has degree $(-1)^{n+1}$.
 ::: pf-step
 
 Hence
-$$\boxed{H_k(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,1,\\\mathbb Z/2,&k=2,\\0,&k\ge3.\end{cases}}$$
+$$\boxed{H_k(X;\ZZ)\cong\begin{cases}\ZZ,&k=0,1,\\\ZZ/2,&k=2,\\0,&k\ge3.\end{cases}}$$
 
 ::: pf-proof
 
-On $H_2$, $1-f_*$ is multiplication by $2$, giving cokernel $\mathbb Z/2$ and zero kernel. On $H_0$, $1-f_*=0$, giving the $H_1\cong\mathbb Z$ term. There is no top $H_3$ because the monodromy reverses the fiber orientation.
+On $H_2$, $1-f_*$ is multiplication by $2$, giving cokernel $\ZZ/2$ and zero kernel. On $H_0$, $1-f_*=0$, giving the $H_1\cong\ZZ$ term. There is no top $H_3$ because the monodromy reverses the fiber orientation.
 
 :::
 

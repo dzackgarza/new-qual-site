@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^2\to\mathbb R$ have continuous partial derivatives of order $3$.
+Let $f:\RR^2\to\RR$ have continuous partial derivatives of order $3$.
 Write down explicitly, in terms of partial derivatives of $f$, a quadratic polynomial $P(x,y)$ such that
 \[
 |f(x,y)-P(x,y)|

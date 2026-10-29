@@ -44,7 +44,7 @@ For every \(g\in G\),
 \]
 
 ::: pf-proof
-Over \(\mathbb C\), the characteristic polynomial of \(\varphi(g)\) splits. Let its eigenvalues, counted with algebraic multiplicity, be \(\lambda_1,\ldots,\lambda_d\). Then
+Over \(\CC\), the characteristic polynomial of \(\varphi(g)\) splits. Let its eigenvalues, counted with algebraic multiplicity, be \(\lambda_1,\ldots,\lambda_d\). Then
 \[
 \chi(g)=\operatorname{Tr}\varphi(g)=\sum_{j=1}^d\lambda_j.
 \]

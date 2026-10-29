@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\mathbb{Z}^n$ (the product of $n$ copies of $\mathbb{Z}$) if $n \leq 2g$.
-For $n = 3$ and $g \geq 3$, describe such a covering space explicitly as a subspace of $\mathbb{R}^3$ with translations of $\mathbb{R}^3$ as deck transformations.
-Show that such a covering space in $\mathbb{R}^3$ exists if there is an embedding of $M_g$ in the 3-torus $T^3 = S^1 \times S^1 \times S^1$ such that the induced map $\pi_1(M_g) \to \pi_1(T^3)$ is surjective.
+Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\ZZ^n$ (the product of $n$ copies of $\ZZ$) if $n \leq 2g$.
+For $n = 3$ and $g \geq 3$, describe such a covering space explicitly as a subspace of $\RR^3$ with translations of $\RR^3$ as deck transformations.
+Show that such a covering space in $\RR^3$ exists if there is an embedding of $M_g$ in the 3-torus $T^3 = S^1 \times S^1 \times S^1$ such that the induced map $\pi_1(M_g) \to \pi_1(T^3)$ is surjective.
 :::
 
 ::: {.solution}
@@ -39,11 +39,11 @@ Show that such a covering space in $\mathbb{R}^3$ exists if there is an embeddin
 
 The abelianization of the genus-$g$ surface group is
 \[
-H_1(M_g;\mathbb Z)
+H_1(M_g;\ZZ)
 \cong
 \pi_1(M_g)_{\mathrm{ab}}
 \cong
-\mathbb Z^{2g}.
+\ZZ^{2g}.
 \]
 
 ::: pf-proof
@@ -69,14 +69,14 @@ The $2g$ generators therefore freely generate the abelianization.
 
 For every $n\le2g$ there is a surjective homomorphism
 \[
-\phi:\pi_1(M_g)\twoheadrightarrow\mathbb Z^n.
+\phi:\pi_1(M_g)\twoheadrightarrow\ZZ^n.
 \]
 
 ::: pf-proof
 
 Compose the abelianization map
 \[
-\pi_1(M_g)\twoheadrightarrow\mathbb Z^{2g}
+\pi_1(M_g)\twoheadrightarrow\ZZ^{2g}
 \]
 with projection onto any $n$ coordinate factors.
 
@@ -92,7 +92,7 @@ H=\ker\phi.
 \]
 The connected covering corresponding to $H$ is normal and has deck group
 \[
-\mathbb Z^n.
+\ZZ^n.
 \]
 
 ::: pf-proof
@@ -107,7 +107,7 @@ the deck group is
 \pi_1(M_g)/H
 \cong
 \operatorname{im}\phi
-\cong\mathbb Z^n.
+\cong\ZZ^n.
 \]
 This proves the first assertion for every $n\le2g$.
 
@@ -123,16 +123,16 @@ i:M_g\hookrightarrow T^3
 \]
 is an embedding such that
 \[
-i_*:\pi_1(M_g)\twoheadrightarrow\pi_1(T^3)\cong\mathbb Z^3
+i_*:\pi_1(M_g)\twoheadrightarrow\pi_1(T^3)\cong\ZZ^3
 \]
 is surjective.
 Then the inverse image
 \[
-\widetilde M_g:=\pi^{-1}(i(M_g))\subset\mathbb R^3,
+\widetilde M_g:=\pi^{-1}(i(M_g))\subset\RR^3,
 \]
 where
 \[
-\pi:\mathbb R^3\to T^3=\mathbb R^3/\mathbb Z^3,
+\pi:\RR^3\to T^3=\RR^3/\ZZ^3,
 \]
 is connected.
 
@@ -149,7 +149,7 @@ i_*\pi_1(M_g)
 \]
 in
 \[
-\pi_1(T^3)=\mathbb Z^3.
+\pi_1(T^3)=\ZZ^3.
 \]
 Since $i_*$ is surjective, there is one coset, hence one component.
 
@@ -163,18 +163,18 @@ The restriction
 \[
 \widetilde M_g\to M_g
 \]
-is a connected normal covering with deck group $\mathbb Z^3$, acting by integer translations of $\mathbb R^3$.
+is a connected normal covering with deck group $\ZZ^3$, acting by integer translations of $\RR^3$.
 
 ::: pf-proof
 
 The universal cover
 \[
-\mathbb R^3\to T^3
+\RR^3\to T^3
 \]
-has deck group $\mathbb Z^3$, acting by
+has deck group $\ZZ^3$, acting by
 \[
 x\longmapsto x+v,
-\qquad v\in\mathbb Z^3.
+\qquad v\in\ZZ^3.
 \]
 Since $\widetilde M_g$ is the full inverse image of $M_g$, it is invariant under every integer translation.
 By step [](#s4){.pf-ref} it is connected, so these translations are precisely the deck transformations of the restricted cover.
@@ -220,7 +220,7 @@ N(\Gamma)\simeq\Gamma
 \]
 followed by inclusion into $T^3$ sends these three generators to the three coordinate generators of
 \[
-\pi_1(T^3)=\mathbb Z^3.
+\pi_1(T^3)=\ZZ^3.
 \]
 Hence the composite
 \[
@@ -234,22 +234,22 @@ is surjective.
 
 ::: {.pf-step #s7}
 
-The resulting cover in $\mathbb R^3$ is the boundary of a regular neighborhood of the standard cubic lattice graph.
+The resulting cover in $\RR^3$ is the boundary of a regular neighborhood of the standard cubic lattice graph.
 
 ::: pf-proof
 
 The full inverse image of $\Gamma$ under
 \[
-\mathbb R^3\to T^3
+\RR^3\to T^3
 \]
-is the graph with vertex set $\mathbb Z^3$ and edges joining nearest-neighbor lattice points in the three coordinate directions.
-Pulling back the regular neighborhood $N(\Gamma)$ gives a $\mathbb Z^3$-periodic regular neighborhood of this cubic lattice graph.
+is the graph with vertex set $\ZZ^3$ and edges joining nearest-neighbor lattice points in the three coordinate directions.
+Pulling back the regular neighborhood $N(\Gamma)$ gives a $\ZZ^3$-periodic regular neighborhood of this cubic lattice graph.
 Therefore
 \[
 \widetilde M_3
 =
 \partial\widetilde{N(\Gamma)}
-\subset\mathbb R^3
+\subset\RR^3
 \]
 is an explicit connected periodic surface, and integer translations are its deck transformations.
 
@@ -268,7 +268,7 @@ Attaching a local surface handle in a ball increases the genus by one.
 Because the modification is disjoint from the three loops on the original surface whose images generate $\pi_1(T^3)$, those loops persist on the new surface and still map to the three coordinate generators.
 Thus surjectivity is preserved.
 
-In the lifted picture in $\mathbb R^3$, the same operation adds $g-3$ handles in every fundamental cube, periodically under the $\mathbb Z^3$ translation action.
+In the lifted picture in $\RR^3$, the same operation adds $g-3$ handles in every fundamental cube, periodically under the $\ZZ^3$ translation action.
 
 :::
 
@@ -278,9 +278,9 @@ In the lifted picture in $\mathbb R^3$, the same operation adds $g-3$ handles in
 
 Hence for $n=3$ and every $g\ge3$ there is an explicit connected normal cover
 \[
-\widetilde M_g\subset\mathbb R^3
+\widetilde M_g\subset\RR^3
 \]
-with deck group $\mathbb Z^3$ acting by translations.
+with deck group $\ZZ^3$ acting by translations.
 
 ::: pf-proof
 

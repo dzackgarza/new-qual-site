@@ -24,16 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{R} \to [0,1]$ be a Borel measurable function.
-For $t \geq 0$, let $\varphi(t) = m(\{x \in \mathbb{R} : f(x) \geq t\})$.
+Let $f : \RR \to [0,1]$ be a Borel measurable function.
+For $t \geq 0$, let $\varphi(t) = m(\{x \in \RR : f(x) \geq t\})$.
 
-1. Assume that $f \in L^1(\mathbb{R}, m)$.
+1. Assume that $f \in L^1(\RR, m)$.
    Prove that $\varphi(t) \leq \frac{1}{t}\|f\|_1$ for all $t > 0$.
 
-2. Prove that $\int_{\mathbb{R}} f\,dm = \int_0^\infty \varphi(t)\,dt$.
+2. Prove that $\int_{\RR} f\,dm = \int_0^\infty \varphi(t)\,dt$.
 
 3. Assume that $\varphi(t) \leq \frac{1}{\sqrt{t}}$ for all $t > 0$.
-   Prove that $f \in L^1(\mathbb{R}, m)$.
+   Prove that $f \in L^1(\RR, m)$.
 :::
 
 ::: {.solution}
@@ -72,10 +72,10 @@ For every \(x\), since \(f(x)\ge0\),
 \[
 f(x)=\int_0^\infty \mathbf1_{\{t\le f(x)\}}\,dt.
 \]
-The integrand is nonnegative and measurable on \(\mathbb R\times(0,\infty)\). Tonelli's theorem gives
+The integrand is nonnegative and measurable on \(\RR\times(0,\infty)\). Tonelli's theorem gives
 \[
 \begin{aligned}
-\int_{\mathbb R}f(x)\,dx
+\int_{\RR}f(x)\,dx
 &=\int_0^\infty
 m(\{x:f(x)\ge t\})\,dt\\
 &=\int_0^\infty\varphi(t)\,dt.
@@ -83,7 +83,7 @@ m(\{x:f(x)\ge t\})\,dt\\
 \]
 Thus
 \[
-\boxed{\int_{\mathbb R}f\,dm=\int_0^\infty\varphi(t)\,dt.}
+\boxed{\int_{\RR}f\,dm=\int_0^\infty\varphi(t)\,dt.}
 \]
 
 :::
@@ -103,14 +103,14 @@ Because \(0\le f\le1\),
 \]
 Using Step 2 and the hypothesis,
 \[
-\int_{\mathbb R}f\,dm
+\int_{\RR}f\,dm
 =\int_0^1\varphi(t)\,dt
 \le \int_0^1 t^{-1/2}\,dt
 =2.
 \]
 Hence
 \[
-\boxed{f\in L^1(\mathbb R).}
+\boxed{f\in L^1(\RR).}
 \]
 
 :::

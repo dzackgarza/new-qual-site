@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be continuous with
+Let $f:[0,1]\to\RR$ be continuous with
 \[
 f(0)=f(1)=0.
 \]

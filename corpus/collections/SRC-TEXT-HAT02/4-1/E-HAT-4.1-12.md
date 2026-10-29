@@ -39,13 +39,13 @@ Suppose some higher homotopy group were nonzero, and let \(m>n\) be the least in
 \]
 Then \(X\) is \((m-1)\)-connected. By the Hurewicz theorem, the Hurewicz map
 \[
-\pi_m(X)\longrightarrow H_m(X;\mathbb Z)
+\pi_m(X)\longrightarrow H_m(X;\ZZ)
 \]
-is an isomorphism. Hence \(H_m(X;\mathbb Z)\ne0\).
+is an isomorphism. Hence \(H_m(X;\ZZ)\ne0\).
 
 But \(X\) has no cells in dimensions greater than \(n\), so its cellular chain complex is zero above dimension \(n\). Therefore
 \[
-H_m(X;\mathbb Z)=0\qquad(m>n),
+H_m(X;\ZZ)=0\qquad(m>n),
 \]
 a contradiction. Thus every homotopy group of \(X\) is trivial.
 

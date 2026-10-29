@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\phi\in C_c^\infty(\mathbb R^n)$ satisfy $\int\phi=1$, and define
+Let $\phi\in C_c^\infty(\RR^n)$ satisfy $\int\phi=1$, and define
 \[
 \phi_\varepsilon(x)=\varepsilon^{-n}\phi(x/\varepsilon).
 \]
-Prove that if $1\le p<\infty$ and $f\in L^p(\mathbb R^n)$, then
+Prove that if $1\le p<\infty$ and $f\in L^p(\RR^n)$, then
 \[
 f*\phi_\varepsilon\to f
 \qquad\text{in }L^p.
@@ -41,7 +41,7 @@ Show that the analogous statement fails for $p=\infty$.
 For $1\le p<\infty$, changing variables $y=\varepsilon z$ gives
 \[
 (f*\phi_\varepsilon)(x)-f(x)
-=\int_{\mathbb R^n}\phi(z)\bigl(f(x-\varepsilon z)-f(x)\bigr)\,dz.
+=\int_{\RR^n}\phi(z)\bigl(f(x-\varepsilon z)-f(x)\bigr)\,dz.
 \]
 By Minkowski's integral inequality,
 \[

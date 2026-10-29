@@ -29,7 +29,7 @@ The answer is
 
 Take
 \[
-Y=\mathbb R^2
+Y=\RR^2
 \]
 with the usual topology. For each \(n\ge1\), define
 \[
@@ -176,7 +176,7 @@ and
 \[
 R=(L\cup R)\cap\{(x,y):x>0\},
 \]
-where the two half-planes are open in \(\mathbb R^2\).
+where the two half-planes are open in \(\RR^2\).
 
 :::
 

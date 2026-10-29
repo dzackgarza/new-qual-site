@@ -25,18 +25,18 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$. Prove that
+Let $f\in L^1(\RR)$. Prove that
 \[
-\lim_{h\to0}\int_{\mathbb R}|f(x+h)-f(x)|\,dx=0.
+\lim_{h\to0}\int_{\RR}|f(x+h)-f(x)|\,dx=0.
 \]
 :::
 
 ::: {.solution}
-Fix $\varepsilon>0$. Choose $g\in C_c(\mathbb R)$ such that
+Fix $\varepsilon>0$. Choose $g\in C_c(\RR)$ such that
 \[
 \|f-g\|_1<\frac{\varepsilon}{3},
 \]
-using density of $C_c(\mathbb R)$ in $L^1(\mathbb R)$.
+using density of $C_c(\RR)$ in $L^1(\RR)$.
 
 Because $g$ is continuous with compact support, it is uniformly continuous. If $K$ is a compact interval containing the support of $g$ and all its sufficiently small translates, then for small $h$ one has
 \[

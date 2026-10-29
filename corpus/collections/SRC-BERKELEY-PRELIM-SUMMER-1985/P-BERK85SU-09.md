@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $u:[0,1]\to\mathbb R$ be a $C^2$ function satisfying
+Let $u:[0,1]\to\RR$ be a $C^2$ function satisfying
 \[
 u''(x)=e^x u(x).
 \]

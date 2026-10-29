@@ -84,7 +84,7 @@ The argument below is unchanged under such a relabeling.
 
 There exist neighborhoods
 \[
-U\subseteq\mathbb R^2
+U\subseteq\RR^2
 \]
 of
 \[
@@ -92,7 +92,7 @@ of
 \]
 and
 \[
-J\subseteq\mathbb R
+J\subseteq\RR
 \]
 of $z_0$, together with a continuously differentiable function
 \[

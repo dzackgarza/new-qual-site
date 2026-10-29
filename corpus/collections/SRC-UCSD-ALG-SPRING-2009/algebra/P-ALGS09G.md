@@ -114,21 +114,21 @@ Thus $R$ is integrally closed in $K$.
 
 The domain
 \[
-R=\mathbb Z[\sqrt{-5}]
+R=\ZZ[\sqrt{-5}]
 \]
 is Noetherian.
 
 ::: pf-proof
 
-As a $\mathbb Z$-module,
+As a $\ZZ$-module,
 \[
-R=\mathbb Z\oplus\mathbb Z\sqrt{-5},
+R=\ZZ\oplus\ZZ\sqrt{-5},
 \]
-so $R$ is finitely generated over the Noetherian ring $\mathbb Z$.
-Hence $R$ is a Noetherian $\mathbb Z$-module.
-Every ideal of $R$ is, in particular, a $\mathbb Z$-submodule of $R$.
+so $R$ is finitely generated over the Noetherian ring $\ZZ$.
+Hence $R$ is a Noetherian $\ZZ$-module.
+Every ideal of $R$ is, in particular, a $\ZZ$-submodule of $R$.
 Therefore every ascending chain of ideals of $R$ stabilizes, so $R$ is a Noetherian ring.
-It is a domain because it is a subring of $\mathbb C$.
+It is a domain because it is a subring of $\CC$.
 
 :::
 
@@ -136,7 +136,7 @@ It is a domain because it is a subring of $\mathbb C$.
 
 ::: {.pf-step #s4}
 
-The ring $\mathbb Z[\sqrt{-5}]$ is not a UFD.
+The ring $\ZZ[\sqrt{-5}]$ is not a UFD.
 
 ::: pf-proof
 
@@ -146,7 +146,7 @@ z=a+b\sqrt{-5}\in R,
 \]
 define
 \[
-N(z)=z\overline z=a^2+5b^2\in\mathbb Z_{\ge0}.
+N(z)=z\overline z=a^2+5b^2\in\ZZ_{\ge0}.
 \]
 The norm is multiplicative:
 \[
@@ -191,7 +191,7 @@ Therefore $R$ does not have unique factorization.
 
 ::: pf-step
 
-Consequently $\mathbb Z[\sqrt{-5}]$ is a Noetherian domain that is not a UFD.
+Consequently $\ZZ[\sqrt{-5}]$ is a Noetherian domain that is not a UFD.
 
 ::: pf-proof
 

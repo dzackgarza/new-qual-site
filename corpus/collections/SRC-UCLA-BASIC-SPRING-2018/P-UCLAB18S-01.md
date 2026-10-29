@@ -40,7 +40,7 @@ t\in[1,2],
 \]
 where
 \[
-c_1,\ldots,c_n\in\mathbb R.
+c_1,\ldots,c_n\in\RR.
 \]
 
 

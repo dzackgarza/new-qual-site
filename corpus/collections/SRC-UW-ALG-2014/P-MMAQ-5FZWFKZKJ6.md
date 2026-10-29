@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5FZWFKZKJ6
 kind: problem
-title: Class sums form a $\mathbb{Z}$-basis of the center of $\mathbb{Z}[G]$, and
+title: Class sums form a $\ZZ$-basis of the center of $\ZZ[G]$, and
   $|C|\chi_\pi(C)/\dim V$ is an algebraic integer
 classification:
   areas:
@@ -18,12 +18,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and $\mathbb{Z}[G]$ its integral group ring.
-Let $\mathcal{Z} = Z(\mathbb{Z}[G])$ be the center of $\mathbb{Z}[G]$.
+Let $G$ be a finite group and $\ZZ[G]$ its integral group ring.
+Let $\mathcal{Z} = Z(\ZZ[G])$ be the center of $\ZZ[G]$.
 For each conjugacy class $C \subseteq G$, let $P_C = \sum_{g \in C} g$ be the class sum.
 
-(1) Show that the class sums $\{P_C\}$ form a $\mathbb{Z}$-basis for $\mathcal{Z}$. Hence $\mathcal{Z} \cong \mathbb{Z}^d$ as an abelian group, where $d$ is the number of conjugacy classes in $G$.
-(2) Show that if a ring $R$ is isomorphic to $\mathbb{Z}^d$ as an abelian group, then every element in $R$ satisfies a monic integral polynomial (i.e. is integral over $\mathbb{Z}$).
+(1) Show that the class sums $\{P_C\}$ form a $\ZZ$-basis for $\mathcal{Z}$. Hence $\mathcal{Z} \cong \ZZ^d$ as an abelian group, where $d$ is the number of conjugacy classes in $G$.
+(2) Show that if a ring $R$ is isomorphic to $\ZZ^d$ as an abelian group, then every element in $R$ satisfies a monic integral polynomial (i.e. is integral over $\ZZ$).
 (3) Let $\pi: G \to \operatorname{GL}(V)$ be an irreducible complex representation of $G$. Show that $\pi(P_C)$ acts on $V$ as multiplication by the scalar:
 $$\omega_\pi(C) = \frac{|C| \chi_\pi(C)}{\dim V}$$
 where $\chi_\pi(C)$ is the value of the character $\chi_\pi$ on any element of $C$.
@@ -31,17 +31,17 @@ where $\chi_\pi(C)$ is the value of the character $\chi_\pi$ on any element of $
 :::
 
 ::: {.solution}
-**Goal:** Prove that class sums form a $\mathbb{Z}$-basis of $Z(\mathbb{Z}[G])$, that finite free $\mathbb{Z}$-algebras are integral, that $\pi(P_C)$ acts by scalar $\omega_\pi(C)$ via Schur's Lemma, and that $\omega_\pi(C)$ is an algebraic integer.
+**Goal:** Prove that class sums form a $\ZZ$-basis of $Z(\ZZ[G])$, that finite free $\ZZ$-algebras are integral, that $\pi(P_C)$ acts by scalar $\omega_\pi(C)$ via Schur's Lemma, and that $\omega_\pi(C)$ is an algebraic integer.
 
 ::: pf
 
 ::: pf-step
-Part 1: Class Sums Form a $\mathbb{Z}$-Basis for $\mathcal{Z} = Z(\mathbb{Z}[G])$:
+Part 1: Class Sums Form a $\ZZ$-Basis for $\mathcal{Z} = Z(\ZZ[G])$:
 
 ::: pf-proof
 
 ::: pf-step
-Let $x = \sum_{g \in G} a_g g \in \mathbb{Z}[G]$ with $a_g \in \mathbb{Z}$.
+Let $x = \sum_{g \in G} a_g g \in \ZZ[G]$ with $a_g \in \ZZ$.
 
 :::
 
@@ -69,17 +69,17 @@ Let $C_1, C_2, \dots, C_d$ be the distinct conjugacy classes of $G$.
 
 ::: pf-step
 Then $x$ can be written uniquely as:
-$$x = \sum_{i=1}^d c_i \left( \sum_{g \in C_i} g \right) = \sum_{i=1}^d c_i P_{C_i} \quad (c_i \in \mathbb{Z}).$$
+$$x = \sum_{i=1}^d c_i \left( \sum_{g \in C_i} g \right) = \sum_{i=1}^d c_i P_{C_i} \quad (c_i \in \ZZ).$$
 
 :::
 
 ::: pf-step
-Since the conjugacy classes $C_i$ partition $G$, the elements $P_{C_1}, \dots, P_{C_d}$ are support-disjoint in $G$, hence linearly independent over $\mathbb{Z}$.
+Since the conjugacy classes $C_i$ partition $G$, the elements $P_{C_1}, \dots, P_{C_d}$ are support-disjoint in $G$, hence linearly independent over $\ZZ$.
 
 :::
 
 ::: pf-step
-Thus $\{P_C\}$ forms a $\mathbb{Z}$-basis of $\mathcal{Z}$, and $\mathcal{Z} \cong \mathbb{Z}^d$ as an abelian group.
+Thus $\{P_C\}$ forms a $\ZZ$-basis of $\mathcal{Z}$, and $\mathcal{Z} \cong \ZZ^d$ as an abelian group.
 
 :::
 
@@ -88,12 +88,12 @@ Thus $\{P_C\}$ forms a $\mathbb{Z}$-basis of $\mathcal{Z}$, and $\mathcal{Z} \co
 :::
 
 ::: pf-step
-Part 2: Rings with $R \cong \mathbb{Z}^d$ are Integral over $\mathbb{Z}$:
+Part 2: Rings with $R \cong \ZZ^d$ are Integral over $\ZZ$:
 
 ::: pf-proof
 
 ::: pf-step
-Let $R$ be a ring whose additive group is free abelian of finite rank $d$, with $\mathbb{Z}$-basis $\{v_1, v_2, \dots, v_d\}$.
+Let $R$ be a ring whose additive group is free abelian of finite rank $d$, with $\ZZ$-basis $\{v_1, v_2, \dots, v_d\}$.
 
 :::
 
@@ -104,7 +104,7 @@ For any fixed element $r \in R$, multiplication by $r$ defines an additive group
 
 ::: pf-step
 Expressing $L_r(v_i)$ in the basis:
-$$r v_i = \sum_{j=1}^d a_{ij} v_j \quad \text{where } A = (a_{ij}) \in M_d(\mathbb{Z}).$$
+$$r v_i = \sum_{j=1}^d a_{ij} v_j \quad \text{where } A = (a_{ij}) \in M_d(\ZZ).$$
 
 :::
 
@@ -120,18 +120,18 @@ $$\det(r I_d - A) \cdot \mathbf{v} = \mathbf{0} \implies \det(r I_d - A) v_i = 0
 :::
 
 ::: pf-step
-Since $\{v_1, \dots, v_d\}$ is a $\mathbb{Z}$-basis of $R$, the identity element $1 = \sum c_i v_i \in R$ satisfies $\det(r I_d - A) \cdot 1 = 0$, so:
+Since $\{v_1, \dots, v_d\}$ is a $\ZZ$-basis of $R$, the identity element $1 = \sum c_i v_i \in R$ satisfies $\det(r I_d - A) \cdot 1 = 0$, so:
 $$\det(r I_d - A) = 0 \in R.$$
 
 :::
 
 ::: pf-step
-The characteristic polynomial $p_A(t) = \det(t I_d - A) \in \mathbb{Z}[t]$ is a **monic polynomial with integer coefficients** of degree $d$.
+The characteristic polynomial $p_A(t) = \det(t I_d - A) \in \ZZ[t]$ is a **monic polynomial with integer coefficients** of degree $d$.
 
 :::
 
 ::: pf-step
-Since $p_A(r) = 0$, every element $r \in R$ is an **algebraic integer** (integral over $\mathbb{Z}$).
+Since $p_A(r) = 0$, every element $r \in R$ is an **algebraic integer** (integral over $\ZZ$).
 
 :::
 
@@ -145,7 +145,7 @@ Part 3: Action of $\pi(P_C)$ via Schur's Lemma:
 ::: pf-proof
 
 ::: pf-step
-Let $(\pi, V)$ be an irreducible complex representation of $G$, and let $n = \dim_\mathbb{C}(V)$.
+Let $(\pi, V)$ be an irreducible complex representation of $G$, and let $n = \dim_\CC(V)$.
 
 :::
 
@@ -156,7 +156,7 @@ Since $P_C \in \mathcal{Z}$, for every $h \in G$, $\pi(h) \pi(P_C) = \pi(h P_C) 
 
 ::: pf-step
 By **Schur's Lemma**, any $G$-equivariant endomorphism of an irreducible complex representation is a scalar multiple of the identity:
-$$\pi(P_C) = \lambda_C \operatorname{id}_V \quad \text{for some scalar } \lambda_C \in \mathbb{C}.$$
+$$\pi(P_C) = \lambda_C \operatorname{id}_V \quad \text{for some scalar } \lambda_C \in \CC.$$
 
 :::
 
@@ -189,18 +189,18 @@ Part 4: $\frac{|C|\chi_\pi(C)}{\dim V}$ is an Algebraic Integer:
 ::: pf-proof
 
 ::: pf-step
-The algebra homomorphism $\pi: \mathbb{Z}[G] \to \operatorname{End}_\mathbb{C}(V)$ restricts on the center to a ring homomorphism:
-$$\pi|_\mathcal{Z}: \mathcal{Z} \longrightarrow \mathbb{C} \cdot \operatorname{id}_V \cong \mathbb{C}, \qquad P_C \longmapsto \lambda_C = \frac{|C|\chi_\pi(C)}{\dim V}.$$
+The algebra homomorphism $\pi: \ZZ[G] \to \operatorname{End}_\CC(V)$ restricts on the center to a ring homomorphism:
+$$\pi|_\mathcal{Z}: \mathcal{Z} \longrightarrow \CC \cdot \operatorname{id}_V \cong \CC, \qquad P_C \longmapsto \lambda_C = \frac{|C|\chi_\pi(C)}{\dim V}.$$
 
 :::
 
 ::: pf-step
-By Part 1, $\mathcal{Z} \cong \mathbb{Z}^d$ as an abelian group.
+By Part 1, $\mathcal{Z} \cong \ZZ^d$ as an abelian group.
 
 :::
 
 ::: pf-step
-By Part 2, the class sum $P_C \in \mathcal{Z}$ satisfies a monic polynomial $p(t) \in \mathbb{Z}[t]$ with $p(P_C) = 0$.
+By Part 2, the class sum $P_C \in \mathcal{Z}$ satisfies a monic polynomial $p(t) \in \ZZ[t]$ with $p(P_C) = 0$.
 
 :::
 
@@ -221,7 +221,7 @@ Since $\lambda_C$ is a root of a monic polynomial with integer coefficients, $\f
 
 ::: pf-step
 Conclusion:
-Class sums form a $\mathbb{Z}$-basis of $\mathcal{Z} \cong \mathbb{Z}^d$, whose elements are integral over $\mathbb{Z}$; by Schur's Lemma $\pi(P_C) = \omega_\pi(C) \operatorname{id}_V$, so $\omega_\pi(C) = \frac{|C|\chi_\pi(C)}{\dim V}$ is an algebraic integer.
+Class sums form a $\ZZ$-basis of $\mathcal{Z} \cong \ZZ^d$, whose elements are integral over $\ZZ$; by Schur's Lemma $\pi(P_C) = \omega_\pi(C) \operatorname{id}_V$, so $\omega_\pi(C) = \frac{|C|\chi_\pi(C)}{\dim V}$ is an algebraic integer.
 :::
 
 :::

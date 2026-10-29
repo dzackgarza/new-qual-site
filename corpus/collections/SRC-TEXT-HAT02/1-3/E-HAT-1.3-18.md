@@ -151,19 +151,19 @@ X=S^1\vee S^1,
 \qquad
 G=F(a,b),
 \]
-the universal abelian cover is the square lattice graph in $\mathbb R^2$.
+the universal abelian cover is the square lattice graph in $\RR^2$.
 
 ::: pf-proof
 
 The abelianization is
 \[
-F(a,b)_{\mathrm{ab}}\cong\mathbb Z^2.
+F(a,b)_{\mathrm{ab}}\cong\ZZ^2.
 \]
 Use one vertex
 \[
 v_{(m,n)}
 \]
-for each $(m,n)\in\mathbb Z^2$.
+for each $(m,n)\in\ZZ^2$.
 Attach an oriented $a$-edge
 \[
 v_{(m,n)}\to v_{(m+1,n)}
@@ -173,15 +173,15 @@ and an oriented $b$-edge
 v_{(m,n)}\to v_{(m,n+1)}.
 \]
 Map all $a$-edges to the first circle and all $b$-edges to the second.
-This is the labelled Cayley covering graph of $\mathbb Z^2$.
+This is the labelled Cayley covering graph of $\ZZ^2$.
 Its deck transformations are the translations
 \[
 (m,n)\mapsto(m+p,n+q),
-\qquad(p,q)\in\mathbb Z^2,
+\qquad(p,q)\in\ZZ^2,
 \]
-so the deck group is $\mathbb Z^2$, and its subgroup is the kernel of
+so the deck group is $\ZZ^2$, and its subgroup is the kernel of
 \[
-F(a,b)\to\mathbb Z^2,
+F(a,b)\to\ZZ^2,
 \]
 namely $[F,F]$.
 
@@ -197,21 +197,21 @@ X=S^1\vee S^1\vee S^1,
 \qquad
 G=F(a,b,c),
 \]
-the universal abelian cover is the cubic lattice graph in $\mathbb R^3$.
+the universal abelian cover is the cubic lattice graph in $\RR^3$.
 
 ::: pf-proof
 
 Now
 \[
-G_{\mathrm{ab}}\cong\mathbb Z^3.
+G_{\mathrm{ab}}\cong\ZZ^3.
 \]
 Put a vertex at every lattice point
 \[
-(m,n,p)\in\mathbb Z^3
+(m,n,p)\in\ZZ^3
 \]
 and join it by oriented $a$-, $b$-, and $c$-edges to the points obtained by adding the three standard basis vectors.
 Map these edge families to the three wedge circles.
-The deck group is the translation group $\mathbb Z^3$, and the corresponding subgroup is the commutator subgroup of $F(a,b,c)$.
+The deck group is the translation group $\ZZ^3$, and the corresponding subgroup is the commutator subgroup of $F(a,b,c)$.
 
 :::
 

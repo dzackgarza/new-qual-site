@@ -23,7 +23,7 @@ For $g\in L^1(\mu)$ let
 \lVert g\rVert_1=\int |g(x)|\,d\mu
 \]
 be the corresponding $L^1$-norm.
-Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ such that
+Suppose that $f$ and $f_n$, for $n\in\NN$, are functions in $L^1(\mu)$ such that
 
 (i) $f_n(x)\to f(x)$ for $\mu$-almost every $x\in X$, and
 

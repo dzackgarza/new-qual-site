@@ -26,15 +26,15 @@ Give a precise definition of the Borel sets on the real line.
 :::
 
 ::: {.solution}
-The **Borel sigma-algebra** on $\mathbb R$ is
+The **Borel sigma-algebra** on $\RR$ is
 \[
-\mathcal B(\mathbb R):=\sigma(\mathcal O),
+\mathcal B(\RR):=\sigma(\mathcal O),
 \]
-where $\mathcal O$ is the family of open subsets of $\mathbb R$.
+where $\mathcal O$ is the family of open subsets of $\RR$.
 Equivalently, it is the smallest sigma-algebra containing every open interval.
 
-A subset $E\subseteq\mathbb R$ is called a **Borel set** exactly when
+A subset $E\subseteq\RR$ is called a **Borel set** exactly when
 \[
-E\in\mathcal B(\mathbb R).
+E\in\mathcal B(\RR).
 \]
 :::

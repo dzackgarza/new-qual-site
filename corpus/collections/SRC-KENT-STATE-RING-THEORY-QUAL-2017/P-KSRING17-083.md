@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-083
 kind: problem
-title: '$\mathbb Z[\sqrt{21}]$ is not a UFD: irreducibility of $x^2-x-5$'
+title: '$\ZZ[\sqrt{21}]$ is not a UFD: irreducibility of $x^2-x-5$'
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \mathbb { Z } ( { \sqrt { 2 1 } } ) = \{ m + n { \sqrt { 2 1 } } \mid m , n \in \mathbb { Z } \}$ and $F = \mathbb { Q } ( { \sqrt { 2 1 } } )$ , the field of fractions of D. Show the following:
+Let $D = \ZZ ( { \sqrt { 2 1 } } ) = \{ m + n { \sqrt { 2 1 } } \mid m , n \in \ZZ \}$ and $F = \QQ ( { \sqrt { 2 1 } } )$ , the field of fractions of D. Show the following:
 
 (a) $x ^ { 2 } - x - 5$ is irreducible in $D [ x ]$ but not in $F [ x ]$
 

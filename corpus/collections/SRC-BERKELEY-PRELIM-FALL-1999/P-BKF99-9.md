@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Describe all three-dimensional vector spaces $V$ of complex-valued $C^\infty$ functions on $\mathbb R$ that are invariant under differentiation.
+Describe all three-dimensional vector spaces $V$ of complex-valued $C^\infty$ functions on $\RR$ that are invariant under differentiation.
 :::
 
 ::: {.solution}

@@ -22,7 +22,7 @@ Find an analytic isomorphism from the open region between $x = 1$ and $x = 3$ to
 :::
 
 ::: {.solution}
-Let $\Omega = \{z = x+iy \in \mathbb{C} : 1 < x < 3\}$ be the vertical strip and $\mathbb{D}^+ = \{w \in \mathbb{C} : |w| < 1 \text{ and } \text{Im}(w) > 0\}$ the upper half unit disk.
+Let $\Omega = \{z = x+iy \in \CC : 1 < x < 3\}$ be the vertical strip and $\mathbb{D}^+ = \{w \in \CC : |w| < 1 \text{ and } \text{Im}(w) > 0\}$ the upper half unit disk.
 
 * * *
 
@@ -31,12 +31,12 @@ Let $\Omega = \{z = x+iy \in \mathbb{C} : 1 < x < 3\}$ be the vertical strip and
 ::: pf
 
 ::: pf-step
-**The affine transformation $\phi_1(z) = \frac{\pi}{2}(i z - i)$ maps the vertical strip $\Omega$ conformally onto the horizontal strip $S = \{\zeta \in \mathbb{C} : 0 < \text{Im}(\zeta) < \pi\}$.**
+**The affine transformation $\phi_1(z) = \frac{\pi}{2}(i z - i)$ maps the vertical strip $\Omega$ conformally onto the horizontal strip $S = \{\zeta \in \CC : 0 < \text{Im}(\zeta) < \pi\}$.**
 
 ::: pf-proof
 
 ::: pf-step
-For $z = x+iy$ with $1 < x < 3$ and $y \in \mathbb{R}$: $$\phi_1(z) = \frac{\pi}{2} i(x - 1 + iy) = -\frac{\pi}{2} y + i \frac{\pi}{2}(x - 1).$$
+For $z = x+iy$ with $1 < x < 3$ and $y \in \RR$: $$\phi_1(z) = \frac{\pi}{2} i(x - 1 + iy) = -\frac{\pi}{2} y + i \frac{\pi}{2}(x - 1).$$
 
 ::: pf-proof
 *Proof:* Algebraic expansion of $i(z-1)$.
@@ -55,10 +55,10 @@ Since $1 < x < 3$, $0 < x - 1 < 2$, which implies $0 < \text{Im}(\phi_1(z)) < \p
 :::
 
 ::: pf-step
-The real part is $\text{Re}(\phi_1(z)) = -\frac{\pi}{2}y$, which takes all values in $\mathbb{R}$ as $y$ ranges over $\mathbb{R}$.
+The real part is $\text{Re}(\phi_1(z)) = -\frac{\pi}{2}y$, which takes all values in $\RR$ as $y$ ranges over $\RR$.
 
 ::: pf-proof
-*Proof:* Linear surjection from $\mathbb{R}$ to $\mathbb{R}$.
+*Proof:* Linear surjection from $\RR$ to $\RR$.
 :::
 
 :::
@@ -89,12 +89,12 @@ Step [](#phi1-biholomorphism){.pf-ref}.
 ::: pf
 
 ::: pf-step
-**The exponential map $\phi_2(\zeta) = e^\zeta$ maps the horizontal strip $S$ conformally onto the upper half-plane $\mathbb{H} = \{u \in \mathbb{C} : \text{Im}(u) > 0\}$.**
+**The exponential map $\phi_2(\zeta) = e^\zeta$ maps the horizontal strip $S$ conformally onto the upper half-plane $\mathbb{H} = \{u \in \CC : \text{Im}(u) > 0\}$.**
 
 ::: pf-proof
 
 ::: pf-step
-For $\zeta = \xi + i\eta \in S$ with $\xi \in \mathbb{R}$ and $\eta \in (0, \pi)$: $$e^\zeta = e^\xi e^{i\eta} = e^\xi(\cos\eta + i\sin\eta).$$
+For $\zeta = \xi + i\eta \in S$ with $\xi \in \RR$ and $\eta \in (0, \pi)$: $$e^\zeta = e^\xi e^{i\eta} = e^\xi(\cos\eta + i\sin\eta).$$
 
 ::: pf-proof
 *Proof:* Euler's formula.
@@ -112,7 +112,7 @@ Since $e^\xi > 0$ and $\sin\eta > 0$ for $\eta \in (0, \pi)$, $\text{Im}(e^\zeta
 :::
 
 ::: {.pf-step #phi2-biholomorphism}
-The map $\zeta \mapsto e^\zeta$ is a biholomorphism from the strip $S = \{\xi + i\eta : \xi \in \mathbb{R}, 0 < \eta < \pi\}$ onto $\mathbb{H}$.
+The map $\zeta \mapsto e^\zeta$ is a biholomorphism from the strip $S = \{\xi + i\eta : \xi \in \RR, 0 < \eta < \pi\}$ onto $\mathbb{H}$.
 
 ::: pf-proof
 *Proof:* Standard property of the complex exponential function.

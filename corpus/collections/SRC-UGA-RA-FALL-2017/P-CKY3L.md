@@ -14,16 +14,16 @@ review: draft
 ---
 
 ::: {.problem}
-Let $S = \operatorname{span}_{\mathbb{C}}\{\chi_{(a, b)} : a, b \in \mathbb{R}, \, a < b\}$ be the complex linear span of characteristic functions of bounded open intervals in $\mathbb{R}$.
+Let $S = \operatorname{span}_{\CC}\{\chi_{(a, b)} : a, b \in \RR, \, a < b\}$ be the complex linear span of characteristic functions of bounded open intervals in $\RR$.
 
-Show that $S$ is dense in $L^1(\mathbb{R})$: for every $f \in L^1(\mathbb{R})$, there exists a sequence $(f_n)_{n=1}^\infty \subset S$ such that
+Show that $S$ is dense in $L^1(\RR)$: for every $f \in L^1(\RR)$, there exists a sequence $(f_n)_{n=1}^\infty \subset S$ such that
 $$
-\lim_{n \to \infty} \|f_n - f\|_{L^1(\mathbb{R})} = 0.
+\lim_{n \to \infty} \|f_n - f\|_{L^1(\RR)} = 0.
 $$
 :::
 
 ::: {.solution}
-**Goal:** Prove that the span of interval indicator functions $S$ is dense in $L^1(\mathbb{R})$ using simple function density and Lebesgue regularity.
+**Goal:** Prove that the span of interval indicator functions $S$ is dense in $L^1(\RR)$ using simple function density and Lebesgue regularity.
 
 ::: pf
 
@@ -33,19 +33,19 @@ Approximation of $f$ by integrable simple functions:
 ::: pf-proof
 
 ::: pf-step
-Let $f \in L^1(\mathbb{R})$ and let $\varepsilon > 0$ be given.
+Let $f \in L^1(\RR)$ and let $\varepsilon > 0$ be given.
 
 :::
 
 ::: pf-step
-By the standard construction of Lebesgue integrals, the set of integrable simple functions is dense in $L^1(\mathbb{R})$.
+By the standard construction of Lebesgue integrals, the set of integrable simple functions is dense in $L^1(\RR)$.
 
 :::
 
 ::: pf-step
 Thus there exists a simple function
 $$\psi = \sum_{k=1}^m c_k \chi_{E_k},$$
-where $c_k \in \mathbb{C}$ and $E_k \subset \mathbb{R}$ are disjoint measurable sets with $m(E_k) < \infty$, such that
+where $c_k \in \CC$ and $E_k \subset \RR$ are disjoint measurable sets with $m(E_k) < \infty$, such that
 $$\|f - \psi\|_{L^1} < \frac{\varepsilon}{2}.$$
 
 :::
@@ -66,7 +66,7 @@ $$m(U_k \setminus E_k) < \frac{\varepsilon}{4 m (|c_k| + 1)}.$$
 :::
 
 ::: pf-step
-Every open set in $\mathbb{R}$ is a countable disjoint union of bounded open intervals: $U_k = \bigsqcup_{j=1}^\infty (a_{k, j}, b_{k, j})$.
+Every open set in $\RR$ is a countable disjoint union of bounded open intervals: $U_k = \bigsqcup_{j=1}^\infty (a_{k, j}, b_{k, j})$.
 
 :::
 
@@ -89,7 +89,7 @@ $$m(E_k \Delta V_k) \le m(U_k \setminus E_k) + m(U_k \setminus V_k) < \frac{\var
 
 ::: pf-step
 Therefore, the $L^1$ distance between indicators satisfies:
-$$\|\chi_{E_k} - \chi_{V_k}\|_{L^1} = \int_\mathbb{R} |\chi_{E_k} - \chi_{V_k}| \, dm = m(E_k \Delta V_k) < \frac{\varepsilon}{2 m (|c_k| + 1)}.$$
+$$\|\chi_{E_k} - \chi_{V_k}\|_{L^1} = \int_\RR |\chi_{E_k} - \chi_{V_k}| \, dm = m(E_k \Delta V_k) < \frac{\varepsilon}{2 m (|c_k| + 1)}.$$
 
 :::
 
@@ -134,7 +134,7 @@ $$\|f - g\|_{L^1} \le \|f - \psi\|_{L^1} + \|\psi - g\|_{L^1} < \frac{\varepsilo
 :::
 
 ::: pf-step
-Since $\varepsilon > 0$ was arbitrary, this establishes that $S$ is dense in $L^1(\mathbb{R})$.
+Since $\varepsilon > 0$ was arbitrary, this establishes that $S$ is dense in $L^1(\RR)$.
 
 :::
 
@@ -146,7 +146,7 @@ Since $\varepsilon > 0$ was arbitrary, this establishes that $S$ is dense in $L^
 Conclusion:
 
 ::: pf-proof
-$S$ is dense in $L^1(\mathbb{R})$.
+$S$ is dense in $L^1(\RR)$.
 :::
 
 :::

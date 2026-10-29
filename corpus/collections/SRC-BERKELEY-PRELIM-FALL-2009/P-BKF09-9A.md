@@ -23,7 +23,7 @@ $$
 \lim_{n \to \infty} \left( 1 + \frac{z}{n} \right)^n = e^z
 $$
 
-uniformly on compact subsets of $\mathbb{C}$.
+uniformly on compact subsets of $\CC$.
 :::
 
 ::: {.solution}

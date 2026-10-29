@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $D$ be the bounded region inside
 \[
-\{z\in\mathbb C:|\operatorname{Re}z|+|\operatorname{Im}z|=1\},
+\{z\in\CC:|\operatorname{Re}z|+|\operatorname{Im}z|=1\},
 \]
 and orient $\partial D$ positively.
 Calculate

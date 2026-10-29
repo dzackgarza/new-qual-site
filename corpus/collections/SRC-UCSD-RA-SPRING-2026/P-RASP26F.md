@@ -24,17 +24,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_k \in L^2(\mathbb{R}^n)$ and $\|f_k\|_2 \leq 1$ for each $k = 1, 2, \ldots$, and assume that
+Let $f_k \in L^2(\RR^n)$ and $\|f_k\|_2 \leq 1$ for each $k = 1, 2, \ldots$, and assume that
 $$
-\lim_{R \to \infty} \sup_{k \geq 1} \int_{\mathbb{R}^n \setminus B_R(0)} (|f_k(x)|^2 + |\hat{f}_k(x)|^2)\,dx = 0
+\lim_{R \to \infty} \sup_{k \geq 1} \int_{\RR^n \setminus B_R(0)} (|f_k(x)|^2 + |\hat{f}_k(x)|^2)\,dx = 0
 $$
 with $B_R(0)$ the ball of radius $R$ centered at the origin.
-Show that $\{f_k\}_{k \geq 1}$ has a convergent subsequence in $L^2(\mathbb{R}^n)$.
+Show that $\{f_k\}_{k \geq 1}$ has a convergent subsequence in $L^2(\RR^n)$.
 :::
 
 ::: {.solution}
 
-Let $\mathcal F$ denote the unitary Fourier transform on $L^2(\mathbb R^n)$. For $R>0$, let
+Let $\mathcal F$ denote the unitary Fourier transform on $L^2(\RR^n)$. For $R>0$, let
 \[
 P_Rh:=\mathbf1_{B_R}h
 \]
@@ -62,18 +62,18 @@ For every $h\in L^2$,
 By Plancherel,
 \[
 \|h-Q_Rh\|_2^2
-=\int_{\mathbb R^n\setminus B_R}|\widehat h(\xi)|^2\,d\xi.
+=\int_{\RR^n\setminus B_R}|\widehat h(\xi)|^2\,d\xi.
 \]
 Hence for the sequence $(f_k)$,
 \[
 \sup_k\|f_k-P_RQ_Rf_k\|_2
 \le
 \sup_k\left(
-\int_{\mathbb R^n\setminus B_R}|f_k|^2
+\int_{\RR^n\setminus B_R}|f_k|^2
 \right)^{1/2}
 +
 \sup_k\left(
-\int_{\mathbb R^n\setminus B_R}|\widehat f_k|^2
+\int_{\RR^n\setminus B_R}|\widehat f_k|^2
 \right)^{1/2}.
 \]
 The hypothesis therefore implies
@@ -106,7 +106,7 @@ K_R(x,\xi)
 \]
 up to the harmless normalization convention for the Fourier transform. Since
 \[
-\int_{\mathbb R^n}\int_{\mathbb R^n}|K_R(x,\xi)|^2\,dx\,d\xi
+\int_{\RR^n}\int_{\RR^n}|K_R(x,\xi)|^2\,dx\,d\xi
 =m(B_R)^2<\infty,
 \]
 $A_R$ is Hilbert--Schmidt, hence compact.
@@ -138,7 +138,7 @@ For each $k$, choose a point of that finite net within $\varepsilon/2$ of $P_RQ_
 \[
 \frac\varepsilon2+\frac\varepsilon2=\varepsilon
 \]
-of $f_k$. Hence $\{f_k:k\ge1\}$ is totally bounded in $L^2(\mathbb R^n)$.
+of $f_k$. Hence $\{f_k:k\ge1\}$ is totally bounded in $L^2(\RR^n)$.
 :::
 
 :::
@@ -147,7 +147,7 @@ of $f_k$. Hence $\{f_k:k\ge1\}$ is totally bounded in $L^2(\mathbb R^n)$.
 Extract a convergent subsequence.
 
 ::: pf-proof
-Every sequence in a totally bounded metric space has a Cauchy subsequence. Since $L^2(\mathbb R^n)$ is complete, that Cauchy subsequence converges in $L^2$.
+Every sequence in a totally bounded metric space has a Cauchy subsequence. Since $L^2(\RR^n)$ is complete, that Cauchy subsequence converges in $L^2$.
 
 Therefore
 \[

@@ -15,10 +15,10 @@ review: draft
 ---
 
 ::: {.problem}
-Consider $A \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$.
+Consider $A \in M_n(\CC) = \CC^{n \times n}$.
 Prove the result: $A$ is unitarily diagonalizable if and only if $A$ is normal.
 
-Note, mathematically, this can be written as: there exists $U \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$, satisfying $U^H U = U U^H = I$, such that $U^H A U$ is diagonal if and only if $A^H A = A A^H$, where $U^H = \overline{U}^T$ and $A^H = \overline{A}^T$.
+Note, mathematically, this can be written as: there exists $U \in M_n(\CC) = \CC^{n \times n}$, satisfying $U^H U = U U^H = I$, such that $U^H A U$ is diagonal if and only if $A^H A = A A^H$, where $U^H = \overline{U}^T$ and $A^H = \overline{A}^T$.
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ Every upper-triangular normal matrix is diagonal.
 ::: pf-proof
 We argue by induction on the size $n$. The case $n=1$ is immediate.
 
-Let $T=(t_{ij})\in M_n(\mathbb C)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
+Let $T=(t_{ij})\in M_n(\CC)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
 \[
 TT^*=T^*T
 \]

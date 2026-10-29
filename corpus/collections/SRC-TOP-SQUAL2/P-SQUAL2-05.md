@@ -31,9 +31,9 @@ There are two geometric cases: the lines are parallel or skew.
 If \(L_1,L_2\) are parallel, an affine change of coordinates sends them to
 \[
 \boxed{
-L_1=\{(x,0,0):x\in\mathbb R\},
+L_1=\{(x,0,0):x\in\RR\},
 \qquad
-L_2=\{(x,0,1):x\in\mathbb R\}}.
+L_2=\{(x,0,1):x\in\RR\}}.
 \]
 
 
@@ -49,11 +49,11 @@ Translate one line to pass through the origin, choose the \(x\)-axis in their co
 
 In these coordinates,
 \[
-\mathbb R^3\setminus(L_1\cup L_2)
+\RR^3\setminus(L_1\cup L_2)
 \cong
-\mathbb R\times
+\RR\times
 \left(
-\mathbb R^2\setminus\{(0,0),(0,1)\}
+\RR^2\setminus\{(0,0),(0,1)\}
 \right).
 \]
 
@@ -66,15 +66,15 @@ Write a point as
 \]
 The deleted lines are exactly
 \[
-\mathbb R\times\{(0,0)\}
+\RR\times\{(0,0)\}
 \]
 and
 \[
-\mathbb R\times\{(0,1)\}
+\RR\times\{(0,1)\}
 \]
 in the product decomposition
 \[
-\mathbb R_x\times\mathbb R^2_{y,z}.
+\RR_x\times\RR^2_{y,z}.
 \]
 
 :::
@@ -83,12 +83,12 @@ in the product decomposition
 
 ::: pf-step
 
-Since \(\mathbb R\) is contractible,
+Since \(\RR\) is contractible,
 \[
 \boxed{
-\pi_1\bigl(\mathbb R^3\setminus(L_1\cup L_2)\bigr)
+\pi_1\bigl(\RR^3\setminus(L_1\cup L_2)\bigr)
 \cong
-\pi_1\bigl(\mathbb R^2\setminus\{(0,0),(0,1)\}\bigr)}.
+\pi_1\bigl(\RR^2\setminus\{(0,0),(0,1)\}\bigr)}.
 \]
 
 
@@ -142,9 +142,9 @@ is the free group on two generators.
 An affine change of coordinates sends them to
 \[
 \boxed{
-L_1=\{(t,0,0):t\in\mathbb R\},
+L_1=\{(t,0,0):t\in\RR\},
 \qquad
-L_2=\{(0,t,1):t\in\mathbb R\}}.
+L_2=\{(0,t,1):t\in\RR\}}.
 \]
 
 
@@ -171,7 +171,7 @@ has the required effect.
 
 Choose a continuous function
 \[
-\theta:\mathbb R\to\mathbb R
+\theta:\RR\to\RR
 \]
 such that
 \[
@@ -197,7 +197,7 @@ works.
 
 Define
 \[
-\Phi:\mathbb R^3\to\mathbb R^3
+\Phi:\RR^3\to\RR^3
 \]
 by rotating each horizontal plane through angle \(\theta(z)\):
 \[
@@ -267,7 +267,7 @@ Since \(\theta(0)=0\),
 The line \(L_2\) is sent to
 \[
 \boxed{
-\{(t,0,1):t\in\mathbb R\}},
+\{(t,0,1):t\in\RR\}},
 \]
 which is parallel to \(L_1\).
 
@@ -324,11 +324,11 @@ Apply step [](#s1-12){.pf-ref} and the parallel-case computation from step [](#s
 
 ::: {.pf-step #s1-14}
 
-Thus for any two disjoint lines in \(\mathbb R^3\),
+Thus for any two disjoint lines in \(\RR^3\),
 \[
 \boxed{
 \pi_1\bigl(
-\mathbb R^3\setminus(L_1\cup L_2)
+\RR^3\setminus(L_1\cup L_2)
 \bigr)
 \cong
 F_2}.

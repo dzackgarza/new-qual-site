@@ -62,8 +62,8 @@ The set $\{v_i \otimes w_j\}$ is linearly independent.
 
 ::: pf-proof
 
-for each pair $(i, j)$, define the bilinear map $\varphi_{ij} : V \times W \to \mathbb{C}$ by $\varphi_{ij}(v, w) = v_i^*(v) w_j^*(w)$ (where $v_i^*, w_j^*$ are the dual basis functionals).
-By the universal property, $\varphi_{ij}$ induces a linear map $\tilde\varphi_{ij} : V \otimes W \to \mathbb{C}$ with $\tilde\varphi_{ij}(v_p \otimes w_q) = \delta_{ip}\delta_{jq}$.
+for each pair $(i, j)$, define the bilinear map $\varphi_{ij} : V \times W \to \CC$ by $\varphi_{ij}(v, w) = v_i^*(v) w_j^*(w)$ (where $v_i^*, w_j^*$ are the dual basis functionals).
+By the universal property, $\varphi_{ij}$ induces a linear map $\tilde\varphi_{ij} : V \otimes W \to \CC$ with $\tilde\varphi_{ij}(v_p \otimes w_q) = \delta_{ip}\delta_{jq}$.
 If $\sum_{i,j} c_{ij}(v_i \otimes w_j) = 0$, applying $\tilde\varphi_{ij}$ gives $c_{ij} = 0$ for each $(i,j)$.
 
 :::

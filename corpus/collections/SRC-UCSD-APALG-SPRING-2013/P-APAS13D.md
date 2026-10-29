@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 (a) Prove that if $A\in M_n$ is positive semidefinite, then there exists a unique positive semidefinite $X$ such that $A=X^2$.
 
-(b) Let $X$ be a matrix whose columns define a basis for a subspace $\mathcal{X}\subset\mathbb{C}^n$.
+(b) Let $X$ be a matrix whose columns define a basis for a subspace $\mathcal{X}\subset\CC^n$.
 Consider the matrix $\widehat{X}=X|X|^{-1}$, where $|X|$ denotes the modulus of $X$, i.e., $|X|=(X^HX)^{1/2}$.
 Prove that $\widehat{X}$ exists and that $\widehat{X}\widehat{X}^H$ is an orthogonal projection onto $\mathcal{X}$.
 :::
@@ -47,7 +47,7 @@ Y|_{E_\lambda}=\sqrt\lambda\,I.
 \]
 Thus \(Y\) agrees with the matrix \(X\) constructed above on every eigenspace of \(A\), and hence \(Y=X\). Therefore the positive semidefinite square root is unique.
 
-For part (b), let \(X\in M_{n,r}(\mathbb C)\), where its \(r\) columns form a basis of \(\mathcal X\). Thus \(X\) has full column rank. For every nonzero \(v\in\mathbb C^r\),
+For part (b), let \(X\in M_{n,r}(\CC)\), where its \(r\) columns form a basis of \(\mathcal X\). Thus \(X\) has full column rank. For every nonzero \(v\in\CC^r\),
 \[
 v^HX^HXv=\|Xv\|_2^2>0.
 \]

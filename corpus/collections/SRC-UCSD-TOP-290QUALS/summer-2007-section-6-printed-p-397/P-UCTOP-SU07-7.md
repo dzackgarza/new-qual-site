@@ -32,7 +32,7 @@ A connected manifold is orientable exactly when its orientation character $\pi_1
 ::: {.pf-step #h1-h2-vanish}
 We have
 $$
-H_1(M;\mathbb Z)=H_2(M;\mathbb Z)=0.
+H_1(M;\ZZ)=H_2(M;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -48,7 +48,7 @@ b_4=b_2=0,\qquad b_5=b_1=0,\qquad b_6=b_0=1.
 $$
 
 ::: pf-proof
-For the closed orientable $6$-manifold $M$, Poincaré duality over $\mathbb Q$ gives $H_i(M;\mathbb Q)\cong H_{6-i}(M;\mathbb Q)^*$. Combine this with step [](#h1-h2-vanish){.pf-ref} and connectedness.
+For the closed orientable $6$-manifold $M$, Poincaré duality over $\QQ$ gives $H_i(M;\QQ)\cong H_{6-i}(M;\QQ)^*$. Combine this with step [](#h1-h2-vanish){.pf-ref} and connectedness.
 :::
 
 :::
@@ -57,7 +57,7 @@ For the closed orientable $6$-manifold $M$, Poincaré duality over $\mathbb Q$ g
 The middle Betti number $b_3$ is even.
 
 ::: pf-proof
-The intersection pairing on the free vector space $H_3(M;\mathbb Q)$ is nondegenerate by Poincaré duality. Graded commutativity in middle dimension gives
+The intersection pairing on the free vector space $H_3(M;\QQ)$ is nondegenerate by Poincaré duality. Graded commutativity in middle dimension gives
 $$
 \lambda(x,y)=(-1)^{3\cdot3}\lambda(y,x)=-\lambda(y,x),
 $$

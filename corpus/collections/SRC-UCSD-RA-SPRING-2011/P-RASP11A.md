@@ -40,9 +40,9 @@ If $f_n, f \in L^1(d\mu)$ are measurable functions such that $f_n \to f$ $\mu$-a
 
 (d) If $f_n \in L^2([0, 1])$ converge weakly to $f \in L^2([0, 1])$, then there is a subsequence such that $f_{n_k} \to f$ pointwise a.e. with respect to Lebesgue measure.
 
-(e) If $\mu$ is a positive finite Borel measure on $\mathbb{R}^n$ which is absolutely continuous with respect to Lebesgue measure, and
+(e) If $\mu$ is a positive finite Borel measure on $\RR^n$ which is absolutely continuous with respect to Lebesgue measure, and
 $$
-\lim_{r \to 0} \frac{\mu(B_r(x))}{|B_r(x)|} = 0 \quad \text{for a.e. } x \in \mathbb{R}^n,
+\lim_{r \to 0} \frac{\mu(B_r(x))}{|B_r(x)|} = 0 \quad \text{for a.e. } x \in \RR^n,
 $$
 then $\mu \equiv 0$.
 Here $B_r(x)$ is the ball of radius $r$ at $x$.
@@ -164,7 +164,7 @@ Part (e) is true.
 
 Because $\mu\ll m$, the Radon--Nikodym theorem gives a nonnegative
 \[
-h\in L^1(\mathbb R^n)
+h\in L^1(\RR^n)
 \]
 such that
 \[

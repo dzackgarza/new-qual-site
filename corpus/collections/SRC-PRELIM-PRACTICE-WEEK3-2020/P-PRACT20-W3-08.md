@@ -34,5 +34,5 @@ $$
 \left( \sum _ { n = 0 } ^ { \infty } c _ { n } x ^ { n } \right) \left( \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n } \right) = \sum _ { n = 0 } ^ { \infty } \left( \sum _ { k = 0 } ^ { n } c _ { k } d _ { n - k } \right) x ^ { n } .
 $$
 
-This formula (along with the binomial formula) is used in proving that $e ^ { x + y } = e ^ { x } e ^ { y }$ for $x , y \in \mathbb { R }$
+This formula (along with the binomial formula) is used in proving that $e ^ { x + y } = e ^ { x } e ^ { y }$ for $x , y \in \RR$
 :::

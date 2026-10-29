@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let real-valued functions $f_1,\ldots,f_{n+1}$ on $\mathbb R$ satisfy
+Let real-valued functions $f_1,\ldots,f_{n+1}$ on $\RR$ satisfy
 \[
 f_{k+1}'+f_k'=(k+1)f_{k+1}-kf_k,
 \qquad k=1,\ldots,n,

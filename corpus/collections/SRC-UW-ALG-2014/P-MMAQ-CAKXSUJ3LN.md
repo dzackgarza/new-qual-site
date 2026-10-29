@@ -21,20 +21,20 @@ audit:
 Let $C_p$ denote the cyclic group of order $p$.
 
 -   Show that $C_p$ has two irreducible representations over
-    $\mathbb Q$ (up to isomorphism), one of dimension 1
+    $\QQ$ (up to isomorphism), one of dimension 1
     and one of dimension $p-1$.
 
 -   Let $G$ be a finite group, and let $\rho:G\rightarrow
-    \GL_n(\mathbb Q)$ be a representation of $G$ over $\mathbb Q$.
-    Let $\rho_{\mathbb C}:G\rightarrow\GL_n(\mathbb C)$ denote
-    $\rho$ followed by the inclusion $\GL_n(\mathbb Q)\rightarrow
-    \GL_n(\mathbb C)$. Thus $\rho_{\mathbb C}$ is a representation
-    of $G$ over $\mathbb C$, called the *complexification*
+    \GL_n(\QQ)$ be a representation of $G$ over $\QQ$.
+    Let $\rho_{\CC}:G\rightarrow\GL_n(\CC)$ denote
+    $\rho$ followed by the inclusion $\GL_n(\QQ)\rightarrow
+    \GL_n(\CC)$. Thus $\rho_{\CC}$ is a representation
+    of $G$ over $\CC$, called the *complexification*
     of $\rho$. We say that an irreducible representation $\rho$
     of $G$ is *absolutely irreducible* if its
-    complexification remains irreducible over $\mathbb C$.\\
+    complexification remains irreducible over $\CC$.\\
     Now suppose $G$ is abelian and that every representation
-    of $G$ over $\mathbb Q$ is absolutely irreducible. Show that
+    of $G$ over $\QQ$ is absolutely irreducible. Show that
     $G\cong(C_2)^k$ for some $k$ (i.e., is a product of
     cyclic groups of order 2).
 :::
@@ -45,21 +45,21 @@ Let $C_p$ denote the cyclic group of order $p$.
 
 ::: pf-step
 
-As a \(\mathbb Q\)-algebra,
+As a \(\QQ\)-algebra,
 \[
-\mathbb Q[C_p]\cong \mathbb Q[x]/(x^p-1)
-\cong \mathbb Q[x]/(x-1)\times \mathbb Q[x]/(\Phi_p(x)).
+\QQ[C_p]\cong \QQ[x]/(x^p-1)
+\cong \QQ[x]/(x-1)\times \QQ[x]/(\Phi_p(x)).
 \]
 
 ::: pf-proof
 
-If \(g\) generates \(C_p\), the map \(\mathbb Q[x]\to\mathbb Q[C_p]\) sending \(x\mapsto g\) has kernel \((x^p-1)\). Since
+If \(g\) generates \(C_p\), the map \(\QQ[x]\to\QQ[C_p]\) sending \(x\mapsto g\) has kernel \((x^p-1)\). Since
 \[
 x^p-1=(x-1)\Phi_p(x)
 \]
-and the two factors are coprime over \(\mathbb Q\), the Chinese remainder theorem gives the product decomposition. The cyclotomic polynomial \(\Phi_p\) is irreducible over \(\mathbb Q\), so
+and the two factors are coprime over \(\QQ\), the Chinese remainder theorem gives the product decomposition. The cyclotomic polynomial \(\Phi_p\) is irreducible over \(\QQ\), so
 \[
-\mathbb Q[x]/(\Phi_p(x))\cong\mathbb Q(\zeta_p).
+\QQ[x]/(\Phi_p(x))\cong\QQ(\zeta_p).
 \]
 
 :::
@@ -72,15 +72,15 @@ Hence \(C_p\) has exactly two irreducible rational representations up to isomorp
 
 ::: pf-proof
 
-The simple modules over a finite product of fields are exactly the simple modules coming from one factor. Thus the two simple \(\mathbb Q[C_p]\)-modules are
+The simple modules over a finite product of fields are exactly the simple modules coming from one factor. Thus the two simple \(\QQ[C_p]\)-modules are
 \[
-\mathbb Q
+\QQ
 \quad\text{and}\quad
-\mathbb Q(\zeta_p).
+\QQ(\zeta_p).
 \]
-Their dimensions over \(\mathbb Q\) are \(1\) and
+Their dimensions over \(\QQ\) are \(1\) and
 \[
-[\mathbb Q(\zeta_p):\mathbb Q]=\varphi(p)=p-1.
+[\QQ(\zeta_p):\QQ]=\varphi(p)=p-1.
 \]
 
 :::
@@ -93,11 +93,11 @@ If \(p>2\), the \((p-1)\)-dimensional rational irreducible representation of \(C
 
 ::: pf-proof
 
-After extending scalars to \(\mathbb C\),
+After extending scalars to \(\CC\),
 \[
-\mathbb Q(\zeta_p)\otimes_{\mathbb Q}\mathbb C
+\QQ(\zeta_p)\otimes_{\QQ}\CC
 \cong
-\bigoplus_{j=1}^{p-1}\mathbb C_{\chi_j},
+\bigoplus_{j=1}^{p-1}\CC_{\chi_j},
 \]
 where \(\chi_j(g)=\zeta_p^j\). Thus its complexification is a direct sum of \(p-1>1\) one-dimensional characters.
 
@@ -113,17 +113,17 @@ The nontrivial two-dimensional rational irreducible representation of \(C_4\) is
 
 We have
 \[
-\mathbb Q[C_4]\cong
-\mathbb Q[x]/(x^4-1),
+\QQ[C_4]\cong
+\QQ[x]/(x^4-1),
 \]
 and the factor \(x^2+1\) gives the simple module
 \[
-\mathbb Q(i),
+\QQ(i),
 \]
 of dimension \(2\). After complexification,
 \[
-\mathbb Q(i)\otimes_{\mathbb Q}\mathbb C
-\cong\mathbb C\oplus\mathbb C,
+\QQ(i)\otimes_{\QQ}\CC
+\cong\CC\oplus\CC,
 \]
 corresponding to the two characters sending a generator of \(C_4\) to \(i\) and \(-i\). Hence this rational irreducible is not absolutely irreducible.
 

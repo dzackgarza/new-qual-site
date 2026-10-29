@@ -44,13 +44,13 @@ $$
 f ( t ) = a e ^ { \alpha t } + b e ^ { \beta t } ,
 $$
 
-where a, $b \in \mathbb { C }$ , and the boundary conditions impose
+where a, $b \in \CC$ , and the boundary conditions impose
 
 $$
 \begin{array} { r } { a + b = 1 } \\ { a e ^ { \alpha } + b e ^ { \beta } = 1 . } \end{array}\tag{1}
 $$
 
-This system is guaranteed to have a solution if $e ^ { \alpha } \neq e ^ { \beta }$ . So assume $e ^ { \alpha } = e ^ { \beta }$ . Then $\alpha - \beta = 2 \pi i k$ for some $k \in \mathbb { Z }$ . By interchanging $\alpha , \beta ,$ , we may assume $k > 0$ . On the other hand, by the quadratic formula,
+This system is guaranteed to have a solution if $e ^ { \alpha } \neq e ^ { \beta }$ . So assume $e ^ { \alpha } = e ^ { \beta }$ . Then $\alpha - \beta = 2 \pi i k$ for some $k \in \ZZ$ . By interchanging $\alpha , \beta ,$ , we may assume $k > 0$ . On the other hand, by the quadratic formula,
 
 $$
 ( \alpha - \beta ) ^ { 2 } = c ^ { 2 } - 6 4 .

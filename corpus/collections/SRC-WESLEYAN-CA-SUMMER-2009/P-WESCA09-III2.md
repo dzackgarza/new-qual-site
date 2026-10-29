@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $u\in C^2(D)$ be harmonic on a simply connected domain $D\subset\mathbb C$.
+Let $u\in C^2(D)$ be harmonic on a simply connected domain $D\subset\CC$.
 Prove that $u$ has a harmonic conjugate $v$, so that $u+iv$ is analytic on $D$.
 Hint: consider $u_x-iu_y$.
 :::

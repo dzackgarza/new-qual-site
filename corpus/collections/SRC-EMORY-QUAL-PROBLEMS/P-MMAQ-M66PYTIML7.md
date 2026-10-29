@@ -76,7 +76,7 @@ automorphism whose square is the identity, and exactly four qualify.
 Cauchy's theorem gives an element $s\in G$ of order two
 [@DF04]. Since $N$ has odd order, $s\notin N$.
 As $[G:N]=2$, every element has a unique form $a^i s^e$,
-where $a$ generates $N$, $i\in\mathbb Z/91\mathbb Z$,
+where $a$ generates $N$, $i\in\ZZ/91\ZZ$,
 and $e\in\{0,1\}$. Conjugation has the form
 $sas^{-1}=a^u$ for a unit $u$ modulo $91$. The relation
 $s^2=1$ forces $u^2\equiv1\pmod{91}$.
@@ -92,7 +92,7 @@ $$
 Each is a unit and satisfies the required square equation.
 
 Conversely, for any such $u$, define multiplication on
-$(\mathbb Z/91\mathbb Z)\times(\mathbb Z/2\mathbb Z)$ by
+$(\ZZ/91\ZZ)\times(\ZZ/2\ZZ)$ by
 $$
 (i,e)(j,f)=(i+u^e j,e+f).
 $$

@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ and $Y$ be independent random variables with values in $\mathbb{Z}^+$ whose tail probabilities are $\mathbb{P}(X>t)=1/3^t$ and $\mathbb{P}(Y>t)=1/4^t$ for $t\in\mathbb{Z}^+$. What is the probability that at least one of the variables $X$ and $Y$ is greater than $2$?
+Let $X$ and $Y$ be independent random variables with values in $\ZZ^+$ whose tail probabilities are $\mathbb{P}(X>t)=1/3^t$ and $\mathbb{P}(Y>t)=1/4^t$ for $t\in\ZZ^+$. What is the probability that at least one of the variables $X$ and $Y$ is greater than $2$?
 
 (A) $5/6$
 (B) $64/81$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-10
 kind: problem
-title: $\mathbb R^2$ does not retract onto $S^1$
+title: $\RR^2$ does not retract onto $S^1$
 classification:
   areas:
   - topology
@@ -29,13 +29,13 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R^2$ cannot be retracted to $S^1$.
+Prove that $\RR^2$ cannot be retracted to $S^1$.
 :::
 
 ::: {.solution}
-Fix a basepoint $x_0\in S^1\subset\mathbb R^2$, and let
+Fix a basepoint $x_0\in S^1\subset\RR^2$, and let
 \[
-i:S^1\hookrightarrow\mathbb R^2
+i:S^1\hookrightarrow\RR^2
 \]
 denote inclusion.
 
@@ -45,7 +45,7 @@ denote inclusion.
 
 If a retraction
 \[
-r:\mathbb R^2\longrightarrow S^1
+r:\RR^2\longrightarrow S^1
 \]
 existed, then
 \[
@@ -90,7 +90,7 @@ r_*\circ i_*
 
 On the other hand, the homomorphism
 \[
-i_*:\pi_1(S^1,x_0)\longrightarrow\pi_1(\mathbb R^2,x_0)
+i_*:\pi_1(S^1,x_0)\longrightarrow\pi_1(\RR^2,x_0)
 \]
 is the zero homomorphism.
 
@@ -98,7 +98,7 @@ is the zero homomorphism.
 
 The plane is contractible, hence simply connected, so
 \[
-\pi_1(\mathbb R^2,x_0)=0.
+\pi_1(\RR^2,x_0)=0.
 \]
 Therefore every homomorphism into this group, in particular $i_*$, is zero.
 
@@ -108,7 +108,7 @@ Therefore every homomorphism into this group, in particular $i_*$, is zero.
 
 ::: pf-step
 
-This contradicts step [](#s2){.pf-ref}, so no retraction $\mathbb R^2\to S^1$ exists.
+This contradicts step [](#s2){.pf-ref}, so no retraction $\RR^2\to S^1$ exists.
 
 ::: pf-proof
 
@@ -118,7 +118,7 @@ r_*\circ i_*=0.
 \]
 But step [](#s2){.pf-ref} says the same composite is the identity on
 \[
-\pi_1(S^1,x_0)\cong\mathbb Z,
+\pi_1(S^1,x_0)\cong\ZZ,
 \]
 which is nontrivial.
 Hence the assumed retraction cannot exist.

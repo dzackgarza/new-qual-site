@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA28
 kind: problem
-title: Orthonormal basis adapted to two vectors in $\mathbb{R}^2$
+title: Orthonormal basis adapted to two vectors in $\RR^2$
 classification:
   areas: [prelim]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\mathbb { R } ^ { 2 }$ with the lengths $| \vec { a } _ { 1 } | = 2 , | \vec { a } _ { 2 } | = 6$ and the angle between them $\phi = \frac { \pi } { 6 }$ . Construct the orthonormal basis $\vec { e } _ { 1 } , \vec { e } _ { 2 }$ such that $\vec { e } _ { 1 } | | \vec { a } _ { 1 }$ , and write the components of $\vec { a } _ { 1 } , \vec { a } _ { 2 }$ in this basis.
+Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\RR ^ { 2 }$ with the lengths $| \vec { a } _ { 1 } | = 2 , | \vec { a } _ { 2 } | = 6$ and the angle between them $\phi = \frac { \pi } { 6 }$ . Construct the orthonormal basis $\vec { e } _ { 1 } , \vec { e } _ { 2 }$ such that $\vec { e } _ { 1 } | | \vec { a } _ { 1 }$ , and write the components of $\vec { a } _ { 1 } , \vec { a } _ { 2 }$ in this basis.
 :::
 
 ::: {.solution}
@@ -59,12 +59,12 @@ Then
 $$
 \{e_1,e_2\}
 $$
-is an orthonormal basis of $\mathbb R^2$.
+is an orthonormal basis of $\RR^2$.
 
 
 ::: pf-proof
 
-In $\mathbb R^2$, the orthogonal complement of the line spanned by $e_1$ is
+In $\RR^2$, the orthogonal complement of the line spanned by $e_1$ is
 one-dimensional and has exactly two unit vectors. Choose the sign for which
 the $e_2$-component of $a_2$ is positive.
 

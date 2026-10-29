@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\gamma:[0,1]\to\mathbb R^2$ be continuous and one-to-one, and define
+Let $\gamma:[0,1]\to\RR^2$ be continuous and one-to-one, and define
 \[
 L(\gamma)=\sup\left\{\sum_{j=1}^{n-1}|\gamma(t_{j+1})-\gamma(t_j)|:0\le t_1<\cdots<t_n\le1,\ n<\infty\right\}.
 \]

@@ -52,17 +52,17 @@ $$
 
 Regard
 $$
-B:\mathbb R^q\to\mathbb R^p,
+B:\RR^q\to\RR^p,
 \qquad
-X:\mathbb R^p\to\mathbb R^n,
+X:\RR^p\to\RR^n,
 \qquad
-A:\mathbb R^n\to\mathbb R^m
+A:\RR^n\to\RR^m
 $$
 as linear maps. Then
 $$
 AXB=0
 $$
-means that for every $v\in\mathbb R^q$,
+means that for every $v\in\RR^q$,
 $$
 A(X(Bv))=0.
 $$
@@ -93,7 +93,7 @@ $$
 The first equality is the definition of the rank of $B$. The second is
 the rank-nullity theorem applied to
 $$
-A:\mathbb R^n\to\mathbb R^m.
+A:\RR^n\to\RR^m.
 $$
 
 :::
@@ -106,7 +106,7 @@ Choose a basis
 $$
 e_1,\ldots,e_p
 $$
-of $\mathbb R^p$ such that
+of $\RR^p$ such that
 $$
 \operatorname{im}B
 =
@@ -116,7 +116,7 @@ and a basis
 $$
 u_1,\ldots,u_n
 $$
-of $\mathbb R^n$ such that
+of $\RR^n$ such that
 $$
 \ker A
 =
@@ -126,9 +126,9 @@ $$
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, a basis of $\operatorname{im}B$ has $s$ vectors and may be
-extended to a basis of $\mathbb R^p$. Likewise, a basis of $\ker A$ has
+extended to a basis of $\RR^p$. Likewise, a basis of $\ker A$ has
 $n-r$ vectors and may be extended by $r$ further vectors to a basis of
-$\mathbb R^n$; relabel the latter so that the kernel basis is
+$\RR^n$; relabel the latter so that the kernel basis is
 $u_{r+1},\ldots,u_n$.
 
 :::

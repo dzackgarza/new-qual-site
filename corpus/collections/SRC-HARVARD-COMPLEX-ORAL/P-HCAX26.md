@@ -42,11 +42,11 @@ $$
 
 ::: {.pf-step #s2}
 
-The Dirichlet-series function has a unique meromorphic continuation to $\mathbb C$, holomorphic away from a simple pole at $s=1$.
+The Dirichlet-series function has a unique meromorphic continuation to $\CC$, holomorphic away from a simple pole at $s=1$.
 
 ::: pf-proof
 
-The construction and uniqueness are given by [[PR-K4KTF|meromorphic continuation of $\zeta$]]. Thus the symbol $\zeta(s)$ is thereafter used for this meromorphic continuation on all of $\mathbb C$.
+The construction and uniqueness are given by [[PR-K4KTF|meromorphic continuation of $\zeta$]]. Thus the symbol $\zeta(s)$ is thereafter used for this meromorphic continuation on all of $\CC$.
 
 :::
 

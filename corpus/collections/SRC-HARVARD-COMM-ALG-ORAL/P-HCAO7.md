@@ -102,7 +102,7 @@ The conclusion fails for infinite rings.
 
 ::: pf-proof
 
-The ring $\mathbb Z$ is infinite, commutative, has an identity, and has no zero
+The ring $\ZZ$ is infinite, commutative, has an identity, and has no zero
 divisors, but for example $2$ is not invertible. Hence an infinite integral
 domain need not be a field.
 

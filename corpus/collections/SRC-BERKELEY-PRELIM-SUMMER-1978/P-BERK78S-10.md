@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb R^n$ be a convex open set and let $f:U\to\mathbb R^n$ be differentiable. Suppose all partial derivatives of $f$ are uniformly bounded, though not necessarily continuous. Prove that $f$ has a unique continuous extension to the closure $\overline U$.
+Let $U\subset\RR^n$ be a convex open set and let $f:U\to\RR^n$ be differentiable. Suppose all partial derivatives of $f$ are uniformly bounded, though not necessarily continuous. Prove that $f$ has a unique continuous extension to the closure $\overline U$.
 :::
 
 ::: {.solution}

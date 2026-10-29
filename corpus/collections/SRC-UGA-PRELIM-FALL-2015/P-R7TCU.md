@@ -36,7 +36,7 @@ The characteristic polynomial of $A$ is $p_A(x)=x^3-x$.
 
 ::: pf-proof
 
-$p_A(x)=\det(xI-A)$ is monic of degree $3$, and its roots in $\mathbb C$ are the eigenvalues of $A$.
+$p_A(x)=\det(xI-A)$ is monic of degree $3$, and its roots in $\CC$ are the eigenvalues of $A$.
 The three eigenvalues $-1,0,1$ are distinct, so they are all the roots, each simple, and $p_A(x)=(x+1)x(x-1)=x^3-x$.
 
 :::

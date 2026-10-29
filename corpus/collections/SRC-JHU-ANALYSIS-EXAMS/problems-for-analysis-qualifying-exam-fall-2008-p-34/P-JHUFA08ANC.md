@@ -31,7 +31,7 @@ Is the Banach space $\ell^\infty$ of bounded complex sequences, with the supremu
 ::: {.solution}
 No. The space $\ell^\infty$ is not separable.
 
-For each subset $A\subset\mathbb N$, let $x^A\in\ell^\infty$ be its characteristic sequence:
+For each subset $A\subset\NN$, let $x^A\in\ell^\infty$ be its characteristic sequence:
 \[
 x^A_n=\begin{cases}1,&n\in A,\\0,&n\notin A.\end{cases}
 \]
@@ -41,7 +41,7 @@ If $A\ne B$, then for some $n$ exactly one of $A,B$ contains $n$, so
 \]
 Thus
 \[
-\{x^A:A\subset\mathbb N\}
+\{x^A:A\subset\NN\}
 \]
 is an uncountable subset of $\ell^\infty$ whose distinct points are pairwise distance $1$.
 
@@ -49,5 +49,5 @@ If $\ell^\infty$ were separable, let $D$ be a countable dense subset. The open b
 \[
 B(x^A,1/3)
 \]
-are pairwise disjoint, and density would require each such ball to contain a point of $D$. This would inject the uncountable power set $\mathcal P(\mathbb N)$ into the countable set $D$, a contradiction. Therefore $\ell^\infty$ is not separable.
+are pairwise disjoint, and density would require each such ball to contain a point of $D$. This would inject the uncountable power set $\mathcal P(\NN)$ into the countable set $D$, a contradiction. Therefore $\ell^\infty$ is not separable.
 :::

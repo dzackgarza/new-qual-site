@@ -24,7 +24,7 @@ You may not use the Spectral Theorem.
 
 ::: {.solution}
 
-Let $T\in M_n(\mathbb R)$ be symmetric. The proof is by induction on $n$.
+Let $T\in M_n(\RR)$ be symmetric. The proof is by induction on $n$.
 
 ::: pf
 
@@ -35,7 +35,7 @@ The matrix $T$ has a real eigenvalue and a nonzero real eigenvector.
 
 ::: pf-proof
 
-Over $\mathbb C$, the characteristic polynomial of $T$ has a root $\lambda$ by the fundamental theorem of algebra. Choose a nonzero vector $z\in\mathbb C^n$ such that
+Over $\CC$, the characteristic polynomial of $T$ has a root $\lambda$ by the fundamental theorem of algebra. Choose a nonzero vector $z\in\CC^n$ such that
 \[
 Tz=\lambda z.
 \]
@@ -50,9 +50,9 @@ so $z^*Tz$ is real. On the other hand,
 \[
 z^*Tz=\lambda z^*z.
 \]
-Since $z^*z>0$, it follows that $\lambda\in\mathbb R$.
+Since $z^*z>0$, it follows that $\lambda\in\RR$.
 
-Write $z=x+iy$ with $x,y\in\mathbb R^n$. Since both $T$ and $\lambda$ are real,
+Write $z=x+iy$ with $x,y\in\RR^n$. Since both $T$ and $\lambda$ are real,
 \[
 Tx=\lambda x,
 \qquad
@@ -111,7 +111,7 @@ By step [](#s1-2){.pf-ref} the restriction is well-defined. For $w_1,w_2\in v^\p
 =
 \langle w_1,T w_2\rangle
 \]
-because $T$ is symmetric on $\mathbb R^n$. Hence the restriction is symmetric.
+because $T$ is symmetric on $\RR^n$. Hence the restriction is symmetric.
 
 :::
 
@@ -126,7 +126,7 @@ For every $n\ge1$, every real symmetric $n\times n$ matrix has an orthonormal ba
 
 For $n=1$ the assertion is immediate.
 
-Assume it holds in dimension $n-1$, and let $T\in M_n(\mathbb R)$ be symmetric. By step [](#s1-1){.pf-ref}, choose a real eigenvector $v_1$ and normalize it so that $\|v_1\|=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
+Assume it holds in dimension $n-1$, and let $T\in M_n(\RR)$ be symmetric. By step [](#s1-1){.pf-ref}, choose a real eigenvector $v_1$ and normalize it so that $\|v_1\|=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
 \[
 v_2,\ldots,v_n
 \]
@@ -134,7 +134,7 @@ consisting of eigenvectors of the restriction, hence of $T$. Therefore
 \[
 v_1,\ldots,v_n
 \]
-is an orthonormal basis of $\mathbb R^n$ consisting of eigenvectors of $T$.
+is an orthonormal basis of $\RR^n$ consisting of eigenvectors of $T$.
 
 :::
 

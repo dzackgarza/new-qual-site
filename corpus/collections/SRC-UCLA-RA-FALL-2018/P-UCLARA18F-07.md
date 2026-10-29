@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $f(z)$ be an analytic function on the entire complex plane $\mathbb C$ such that
+Problem 7. Let $f(z)$ be an analytic function on the entire complex plane $\CC$ such that
 \[
 U(z)=\log|f(z)|
 \]
 is Lebesgue-area integrable:
 \[
-\int_{\mathbb C}|U(z)|\,dx\,dy<\infty.
+\int_{\CC}|U(z)|\,dx\,dy<\infty.
 \]
 Prove that $f$ is constant.
 :::
@@ -36,7 +36,7 @@ Put \(u(z)=\log|f(z)|\).
 
 ::: {.pf-step #s1-1}
 
-If \(f\) is nonconstant, then there is \(z_0\in\mathbb C\) such that
+If \(f\) is nonconstant, then there is \(z_0\in\CC\) such that
 \[
 u(z_0)>1.
 \]
@@ -44,7 +44,7 @@ u(z_0)>1.
 
 ::: pf-proof
 
-If \(|f(z)|\le e\) for every \(z\in\mathbb C\), then Liouville's theorem would make \(f\) constant. Hence a nonconstant entire \(f\) has some \(z_0\) with \(|f(z_0)|>e\), which is equivalent to the displayed inequality.
+If \(|f(z)|\le e\) for every \(z\in\CC\), then Liouville's theorem would make \(f\) constant. Hence a nonconstant entire \(f\) has some \(z_0\) with \(|f(z_0)|>e\), which is equivalent to the displayed inequality.
 
 :::
 
@@ -75,7 +75,7 @@ Step [](#s1-1){.pf-ref} now yields the asserted strict lower bound.
 
 If \(f\) were nonconstant, then
 \[
-\int_{\mathbb C}|u(z)|\,dx\,dy=\infty.
+\int_{\CC}|u(z)|\,dx\,dy=\infty.
 \]
 
 
@@ -91,7 +91,7 @@ By step [](#s1-2){.pf-ref} and the triangle inequality,
 for every \(r>0\). Tonelli's theorem in polar coordinates centered at \(z_0\) therefore gives
 \[
 \begin{aligned}
-\int_{\mathbb C}|u(z)|\,dx\,dy
+\int_{\CC}|u(z)|\,dx\,dy
 &=\int_0^\infty\int_0^{2\pi}|u(z_0+re^{i\theta})|\,r\,d\theta\,dr\\
 &\ge2\pi\int_0^\infty r\,dr
 =\infty.

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Is every extension of $\mathbb Q$ of degree $2$ normal?
+Is every extension of $\QQ$ of degree $2$ normal?
 Justify your answer.
 :::
 

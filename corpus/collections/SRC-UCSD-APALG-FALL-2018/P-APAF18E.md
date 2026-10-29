@@ -22,13 +22,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group, let $V$ be a finite-dimensional complex representation of $G$, and let $\chi\colon G\to\mathbb{C}$ be the character of $V$.
+Let $G$ be a finite group, let $V$ be a finite-dimensional complex representation of $G$, and let $\chi\colon G\to\CC$ be the character of $V$.
 Let $g\in G$ be a group element such that $g$ is conjugate to $g^{-1}$.
 Prove that $\chi(g)$ is a real number.
 :::
 
 ::: {.solution}
-**Goal:** Prove that $\chi(g) \in \mathbb{R}$ for the character $\chi$ of a finite-dimensional complex representation $\rho: G \to \operatorname{GL}(V)$ of a finite group $G$, given that $g$ is conjugate to $g^{-1}$ in $G$.
+**Goal:** Prove that $\chi(g) \in \RR$ for the character $\chi$ of a finite-dimensional complex representation $\rho: G \to \operatorname{GL}(V)$ of a finite group $G$, given that $g$ is conjugate to $g^{-1}$ in $G$.
 
 ::: pf
 
@@ -38,11 +38,11 @@ Characters satisfy $\chi(g^{-1}) = \overline{\chi(g)}$ for all $g \in G$:
 ::: pf-proof
 
 ::: pf-step
-Let $n = \dim_\mathbb{C}(V)$. The representation $\rho: G \to \operatorname{GL}(V)$ assigns to $g$ an operator $\rho(g)$ of finite order dividing $|G|$.
+Let $n = \dim_\CC(V)$. The representation $\rho: G \to \operatorname{GL}(V)$ assigns to $g$ an operator $\rho(g)$ of finite order dividing $|G|$.
 :::
 
 ::: pf-step
-Hence $\rho(g)$ is diagonalizable with eigenvalues $\lambda_1, \dots, \lambda_n \in \mathbb{C}$, each satisfying $\lambda_j^{|G|} = 1$, so $|\lambda_j| = 1$ and $\lambda_j^{-1} = \overline{\lambda_j}$ for all $j \in \{1, \dots, n\}$.
+Hence $\rho(g)$ is diagonalizable with eigenvalues $\lambda_1, \dots, \lambda_n \in \CC$, each satisfying $\lambda_j^{|G|} = 1$, so $|\lambda_j| = 1$ and $\lambda_j^{-1} = \overline{\lambda_j}$ for all $j \in \{1, \dots, n\}$.
 :::
 
 ::: pf-step
@@ -84,10 +84,10 @@ Direct consequence of step [](#s2){.pf-ref} with $a = g^{-1}$ and $b = g$.
 :::
 
 ::: pf-step
-Conclusion: $\chi(g) \in \mathbb{R}$.
+Conclusion: $\chi(g) \in \RR$.
 
 ::: pf-proof
-Combining step [](#s1){.pf-ref} and step [](#s3){.pf-ref} gives $\chi(g) = \overline{\chi(g)}$. Any complex number equal to its complex conjugate is real, so $\chi(g) \in \mathbb{R}$.
+Combining step [](#s1){.pf-ref} and step [](#s3){.pf-ref} gives $\chi(g) = \overline{\chi(g)}$. Any complex number equal to its complex conjugate is real, so $\chi(g) \in \RR$.
 :::
 
 :::

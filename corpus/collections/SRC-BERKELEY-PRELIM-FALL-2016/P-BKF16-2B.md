@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Let K be a compact subset of $\mathbb { R } ^ { n }$ and $\boldsymbol { f } ( \boldsymbol { x } ) = \boldsymbol { d } ( \boldsymbol { x } , K )$ be the Euclidean distance from x to the nearest point of K.
+Let K be a compact subset of $\RR ^ { n }$ and $\boldsymbol { f } ( \boldsymbol { x } ) = \boldsymbol { d } ( \boldsymbol { x } , K )$ be the Euclidean distance from x to the nearest point of K.
 
 (a) Show that f is continuous and $f ( x ) = 0 { \mathrm { ~ i f ~ } } x \in K$
 

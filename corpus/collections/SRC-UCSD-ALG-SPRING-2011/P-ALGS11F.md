@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Given vector spaces $V$ and $W$ over the complex numbers, suppose that $\phi \colon V \to V$ and $\psi \colon W \to W$ are $\mathbb{C}$-linear transformations.
+Given vector spaces $V$ and $W$ over the complex numbers, suppose that $\phi \colon V \to V$ and $\psi \colon W \to W$ are $\CC$-linear transformations.
 
 (i) Show that there is a unique linear transformation
 \[
-\phi \otimes \psi \colon V \otimes_{\mathbb{C}} W \to V \otimes_{\mathbb{C}} W
+\phi \otimes \psi \colon V \otimes_{\CC} W \to V \otimes_{\CC} W
 \]
 with the property that
 \[
@@ -45,7 +45,7 @@ Prove that
 \det(\phi \otimes \psi) = \det(\phi)^n \det(\psi)^m.
 \]
 
-Hint: Choose $\mathbb{C}$-bases for $V$ and $W$ such that the matrices representing $\phi$ and $\psi$ have a special form.
+Hint: Choose $\CC$-bases for $V$ and $W$ such that the matrices representing $\phi$ and $\psi$ have a special form.
 :::
 
 ::: {.solution}
@@ -56,7 +56,7 @@ Hint: Choose $\mathbb{C}$-bases for $V$ and $W$ such that the matrices represent
 
 There is a unique linear map
 \[
-\phi\otimes\psi:V\otimes_{\mathbb C}W\to V\otimes_{\mathbb C}W
+\phi\otimes\psi:V\otimes_{\CC}W\to V\otimes_{\CC}W
 \]
 satisfying
 \[
@@ -67,7 +67,7 @@ satisfying
 
 Define
 \[
-B:V\times W\longrightarrow V\otimes_{\mathbb C}W,\qquad
+B:V\times W\longrightarrow V\otimes_{\CC}W,\qquad
 B(v,w)=\phi(v)\otimes\psi(w).
 \]
 Because $\phi$ and $\psi$ are linear, $B$ is bilinear.
@@ -89,7 +89,7 @@ Choose bases in which the matrices of $\phi$ and $\psi$ are upper triangular.
 
 ::: pf-proof
 
-Over $\mathbb C$, every square matrix is triangularizable: equivalently, by Schur triangularization, there are bases in which
+Over $\CC$, every square matrix is triangularizable: equivalently, by Schur triangularization, there are bases in which
 \[
 [\phi]=A=(a_{ij}),\qquad [\psi]=B=(b_{rs})
 \]

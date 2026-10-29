@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that on $\mathbb{R}^n$, $|\phi(x)| \leq C(1 + |x|)^{-n-\epsilon}$ for some positive $C$ and $\epsilon > 0$.
+Suppose that on $\RR^n$, $|\phi(x)| \leq C(1 + |x|)^{-n-\epsilon}$ for some positive $C$ and $\epsilon > 0$.
 Also assume that $\phi(x)$ is measurable.
-If $f \in L^p(\mathbb{R}^n)$ with $1 \leq p \leq \infty$, define
+If $f \in L^p(\RR^n)$ with $1 \leq p \leq \infty$, define
 $$
 M_\phi(f)(x) := \sup_{t > 0} |f * \phi_t(x)|
 $$
@@ -48,7 +48,7 @@ Decompose the convolution into dyadic annuli.
 
 ::: pf-proof
 
-Fix $x\in\mathbb R^n$ and $t>0$. From the assumed decay,
+Fix $x\in\RR^n$ and $t>0$. From the assumed decay,
 \[
 |\phi_t(y)|
 \le C t^{-n}\left(1+\frac{|y|}{t}\right)^{-n-\varepsilon}.
@@ -56,9 +56,9 @@ Fix $x\in\mathbb R^n$ and $t>0$. From the assumed decay,
 Therefore
 \[
 |f*\phi_t(x)|
-\le \int_{\mathbb R^n}|f(x-y)|\,|\phi_t(y)|\,dy.
+\le \int_{\RR^n}|f(x-y)|\,|\phi_t(y)|\,dy.
 \]
-Split $\mathbb R^n$ into
+Split $\RR^n$ into
 \[
 A_0:=\{|y|<t\},
 \qquad

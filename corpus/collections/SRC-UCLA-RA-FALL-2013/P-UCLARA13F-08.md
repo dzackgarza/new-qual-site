@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Compute the following limits.
 
-(a) For $n\in\mathbb N$,
+(a) For $n\in\NN$,
 \[
 \lim_{k\to\infty}\int_0^k x^n\left(1-\frac{x}{k}\right)^k\,dx.
 \]

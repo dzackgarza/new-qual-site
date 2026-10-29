@@ -76,7 +76,7 @@ The form is linear in the first variable and conjugate-linear in the second.
 
 ::: pf-proof
 
-For $\alpha,\beta\in\mathbb C$,
+For $\alpha,\beta\in\CC$,
 \[
 \begin{aligned}
 \langle \alpha f+\beta h,g\rangle
@@ -321,7 +321,7 @@ Their degrees are
 0,1,2,3,
 \]
 so they are linearly independent.
-Since $\dim_{\mathbb C}V=4$, they form a basis.
+Since $\dim_{\CC}V=4$, they form a basis.
 After normalization, it is orthonormal.
 
 :::

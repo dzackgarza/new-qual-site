@@ -12,11 +12,11 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against Problem 10 of the official UCLA Basic Exam Fall 2004 PDF; the source sets $V=\mathbb R^n$ while allowing $\lambda\in\mathbb C$, so the displayed generalized eigenspace is not defined for nonreal $\lambda$ without complexification.
+  note: Checked against Problem 10 of the official UCLA Basic Exam Fall 2004 PDF; the source sets $V=\RR^n$ while allowing $\lambda\in\CC$, so the displayed generalized eigenspace is not defined for nonreal $\lambda$ without complexification.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Records the source defect and proves both requested assertions after the standard correction $V=\mathbb C^n$ (equivalently, after complexifying the real operator).
+  note: Records the source defect and proves both requested assertions after the standard correction $V=\CC^n$ (equivalently, after complexifying the real operator).
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V=\mathbb C^n$, let $T:V\to V$ be linear, and for $\lambda\in\mathbb C$ define
+Let $V=\CC^n$, let $T:V\to V$ be linear, and for $\lambda\in\CC$ define
 \[
 V(\lambda)=\{v\in V:(T-\lambda I)^Nv=0\text{ for some }N\geq1\}.
 \]
@@ -51,7 +51,7 @@ to a sufficiently high power.
 
 ::: {.solution}
 
-Fix $\lambda\in\mathbb C$ and put
+Fix $\lambda\in\CC$ and put
 \[
 A=T-\lambda I.
 \]
@@ -100,7 +100,7 @@ Repeating this argument shows equality of all later kernels. Since a strictly in
 
 ::: {.pf-step #s1-2}
 
-For every $\lambda\in\mathbb C$,
+For every $\lambda\in\CC$,
 \[
 \boxed{V(\lambda)=\ker((T-\lambda I)^n)}.
 \]
@@ -148,7 +148,7 @@ This is exactly the definition of membership in the two generalized eigenspaces.
 
 ::: {.pf-step #s1-4}
 
-There exist polynomials $a(X),b(X)\in\mathbb C[X]$ such that
+There exist polynomials $a(X),b(X)\in\CC[X]$ such that
 \[
 a(X)(X-\lambda)^r+b(X)(X-\mu)^s=1.
 \]
@@ -162,7 +162,7 @@ Because $\lambda\ne\mu$, the polynomials
 \quad\text{and}\quad
 (X-\mu)^s
 \]
-have no common root and are therefore coprime. Bézout's identity in the principal ideal domain $\mathbb C[X]$ gives the stated polynomials.
+have no common root and are therefore coprime. Bézout's identity in the principal ideal domain $\CC[X]$ gives the stated polynomials.
 
 :::
 

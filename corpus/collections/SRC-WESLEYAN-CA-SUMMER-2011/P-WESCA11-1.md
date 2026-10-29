@@ -29,7 +29,7 @@ be a square root of
 \[
 2-4i,
 \]
-with \(a,b\in\mathbb R\).
+with \(a,b\in\RR\).
 
 ::: pf
 

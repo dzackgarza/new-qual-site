@@ -39,7 +39,7 @@ View $L(p,1)$ as the quotient of $S^3$ by the free action of the cyclic group of
 
 Its fundamental group is
 $$
-\boxed{\pi_1(L(p,1))\cong\mathbb Z/p}.
+\boxed{\pi_1(L(p,1))\cong\ZZ/p}.
 $$
 
 ::: pf-proof
@@ -54,12 +54,12 @@ The $1$-skeleton is a circle with generator $a$, and the $2$-cell is attached by
 
 The cellular chain complex is
 $$
-0\longrightarrow\mathbb Z\xrightarrow{0}\mathbb Z\xrightarrow{p}\mathbb Z\xrightarrow{0}\mathbb Z\longrightarrow0.
+0\longrightarrow\ZZ\xrightarrow{0}\ZZ\xrightarrow{p}\ZZ\xrightarrow{0}\ZZ\longrightarrow0.
 $$
 
 ::: pf-proof
 
-There is one cell in each dimension. The $2$-cell attaching map has degree $p$ on the $1$-cell, so $\partial_2$ is multiplication by $p$. The top boundary is zero because $L(p,1)$ is a closed orientable $3$-manifold, so its top homology is $\mathbb Z$.
+There is one cell in each dimension. The $2$-cell attaching map has degree $p$ on the $1$-cell, so $\partial_2$ is multiplication by $p$. The top boundary is zero because $L(p,1)$ is a closed orientable $3$-manifold, so its top homology is $\ZZ$.
 
 :::
 
@@ -69,10 +69,10 @@ There is one cell in each dimension. The $2$-cell attaching map has degree $p$ o
 
 Therefore
 $$
-\boxed{H_k(L(p,1);\mathbb Z)\cong
+\boxed{H_k(L(p,1);\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,3,\\
-\mathbb Z/p,&k=1,\\
+\ZZ,&k=0,3,\\
+\ZZ/p,&k=1,\\
 0,&\text{otherwise}.
 \end{cases}}
 $$

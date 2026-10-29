@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-Show that any convex subset of $\mathbb R^n$ is contractible.
+Show that any convex subset of $\RR^n$ is contractible.
 :::
 
 ::: {.solution}
-Let $C\subseteq\mathbb R^n$ be convex. If $C=\varnothing$, there is nothing to prove under the usual convention that contractibility is defined for nonempty spaces. Assume therefore that $C\neq\varnothing$, and choose $x_0\in C$.
+Let $C\subseteq\RR^n$ be convex. If $C=\varnothing$, there is nothing to prove under the usual convention that contractibility is defined for nonempty spaces. Assume therefore that $C\neq\varnothing$, and choose $x_0\in C$.
 
 ::: pf
 
@@ -48,7 +48,7 @@ For every $t\in[0,1]$ and $x\in C$, the point $(1-t)x_0+tx$ is a convex combinat
 \]
 Thus $H$ is well defined. It is continuous because it is the restriction of the continuous affine map
 \[
-[0,1]\times\mathbb R^n\to\mathbb R^n,
+[0,1]\times\RR^n\to\RR^n,
 \qquad
 (t,x)\mapsto(1-t)x_0+tx.
 \]

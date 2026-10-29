@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire and suppose that for some nonnegative integers $k,m$,
+Let $f:\CC\to\CC$ be entire and suppose that for some nonnegative integers $k,m$,
 \[
 \frac{f^{(m)}(z)}{1+|z|^k}
 \]
-is bounded on $\mathbb C$.
+is bounded on $\CC$.
 Prove that $f^{(n)}$ is identically zero for all sufficiently large $n$. How large must $n$ be in terms of $k$ and $m$?
 :::
 

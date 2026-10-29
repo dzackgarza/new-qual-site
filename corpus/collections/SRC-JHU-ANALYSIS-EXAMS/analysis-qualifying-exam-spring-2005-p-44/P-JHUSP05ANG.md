@@ -28,10 +28,10 @@ audit:
 Find a bijective holomorphic map $f$ from the quadrant
 
 $$
-Q = \{ x + iy \in \mathbb{C} : x > 0, \ y > 0 \}
+Q = \{ x + iy \in \CC : x > 0, \ y > 0 \}
 $$
 
-onto the unit disk $D = \{ z \in \mathbb{C} : |z| < 1 \}$ with $f(1+i) = 0$.
+onto the unit disk $D = \{ z \in \CC : |z| < 1 \}$ with $f(1+i) = 0$.
 :::
 
 ::: {.solution}

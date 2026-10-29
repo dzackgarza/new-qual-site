@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-$A$ is a matrix in $M_{12}(\mathbb{C})$.
+$A$ is a matrix in $M_{12}(\CC)$.
 The characteristic polynomial of $A$ is $(x+2)^3(x-1)^3(x+1)^6$; the minimal polynomial of $A$ is $(x+2)^2(x-1)(x+1)^4$; $A$ has exactly 3 invariant factors; and $A$ has exactly 7 elementary divisors.
 
 Show that there is exactly one similarity class of such matrices, and find an explicit matrix $A$ in this similarity class.
@@ -79,7 +79,7 @@ J_2(-2)\oplus J_1(-2)\oplus J_1(1)\oplus J_1(1)\oplus J_1(1)
 
 ::: pf-proof
 
-Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}. Over \(\mathbb C\), a matrix is determined up to similarity by its Jordan block multiset.
+Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}. Over \(\CC\), a matrix is determined up to similarity by its Jordan block multiset.
 
 :::
 

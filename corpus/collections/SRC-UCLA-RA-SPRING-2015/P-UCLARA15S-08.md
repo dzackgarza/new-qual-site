@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be holomorphic and suppose
+Let $f:\CC\to\CC$ be holomorphic and suppose
 \[
-\sup_{x\in\mathbb R}\bigl(|f(x)|^2+|f(ix)|^2\bigr)<\infty
+\sup_{x\in\RR}\bigl(|f(x)|^2+|f(ix)|^2\bigr)<\infty
 \]
 and
 \[
-|f(z)|\le e^{|z|}\qquad\text{for all }z\in\mathbb C.
+|f(z)|\le e^{|z|}\qquad\text{for all }z\in\CC.
 \]
 Deduce that $f(z)$ is constant.
 :::
@@ -36,7 +36,7 @@ Choose $M\ge0$ such that
 \qquad
 |f(ix)|\le M
 \qquad
-(x\in\mathbb R).
+(x\in\RR).
 \]
 
 ::: pf
@@ -48,7 +48,7 @@ If $M=0$, then $f\equiv0$.
 
 ::: pf-proof
 
-If $M=0$, then $f(x)=0$ for every real $x$. The real axis has accumulation points in $\mathbb C$, so the identity theorem gives $f\equiv0$.
+If $M=0$, then $f(x)=0$ for every real $x$. The real axis has accumulation points in $\CC$, so the identity theorem gives $f\equiv0$.
 
 :::
 
@@ -265,7 +265,7 @@ The bound
 \[
 |f(z)|\le M
 \]
-holds for every $z\in\mathbb C$.
+holds for every $z\in\CC$.
 
 
 ::: pf-proof

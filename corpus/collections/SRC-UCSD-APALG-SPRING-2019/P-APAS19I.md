@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS19I
 kind: problem
-title: Center of a finite-dimensional $\mathbb{C}$-algebra acts by scalars
+title: Center of a finite-dimensional $\CC$-algebra acts by scalars
 classification:
   areas:
   - applied-algebra
@@ -13,14 +13,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A$ be a finite-dimensional algebra over $\mathbb{C}$ with center $Z(A)$, and let $(V,\rho)$ be an irreducible representation of $A$.
+Let $A$ be a finite-dimensional algebra over $\CC$ with center $Z(A)$, and let $(V,\rho)$ be an irreducible representation of $A$.
 Show that $\rho(z)=\chi(z)I_V$ for each $z\in Z(A)$, where $\chi(z)$ is a scalar.
-Show that the map $\chi\colon Z(A)\to\mathbb{C}$ defined by $z\mapsto\chi(z)$ is an algebra homomorphism.
+Show that the map $\chi\colon Z(A)\to\CC$ defined by $z\mapsto\chi(z)$ is an algebra homomorphism.
 :::
 
 ::: {.solution}
 For \(z\in Z(A)\), the linear map \(
-ho(z)\in\operatorname{End}_{\mathbb C}(V)\) commutes with \(
+ho(z)\in\operatorname{End}_{\CC}(V)\) commutes with \(
 ho(a)\) for every \(a\in A\), because
 \[
 \rho(z)\rho(a)=\rho(za)=\rho(az)=\rho(a)\rho(z).
@@ -29,9 +29,9 @@ Since \(V\) is an irreducible complex representation, Schur's lemma implies that
 \[
 \rho(z)=\chi(z)I_V
 \]
-for a unique scalar \(\chi(z)\in\mathbb C\).
+for a unique scalar \(\chi(z)\in\CC\).
 
-It remains to show that \(\chi\) is an algebra homomorphism. For \(z,w\in Z(A)\) and \(c\in\mathbb C\),
+It remains to show that \(\chi\) is an algebra homomorphism. For \(z,w\in Z(A)\) and \(c\in\CC\),
 \[
 \rho(z+w)=\rho(z)+\rho(w)=(\chi(z)+\chi(w))I_V,
 \]
@@ -56,5 +56,5 @@ ho(1_A)=I_V\),
 \[
 \chi(1_A)=1.
 \]
-Hence \(\chi:Z(A)\to\mathbb C\) is a unital \(\mathbb C\)-algebra homomorphism.
+Hence \(\chi:Z(A)\to\CC\) is a unital \(\CC\)-algebra homomorphism.
 :::

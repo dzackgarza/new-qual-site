@@ -16,7 +16,7 @@ audit:
 ::: {.problem}
 An orthogonal projection on a finite-dimensional inner-product space $V$ is an endomorphism $P$ satisfying $P^2=P$ and $\operatorname{im}(P)=\ker(P)^\perp$.
 
-Suppose $V=\mathbb R^3$ and $P$ is an orthogonal projection with diagonal entries
+Suppose $V=\RR^3$ and $P$ is an orthogonal projection with diagonal entries
 \[
 p_{11}=\frac23,\qquad p_{22}=\frac12,\qquad p_{33}=\frac56.
 \]
@@ -98,7 +98,7 @@ Moreover
 Pv=u.
 \]
 Thus $P$ is the usual orthogonal projection onto $\operatorname{im}P$, hence self-adjoint.
-In the standard orthonormal basis of $\mathbb R^3$, its matrix is symmetric.
+In the standard orthonormal basis of $\RR^3$, its matrix is symmetric.
 
 :::
 
@@ -147,7 +147,7 @@ The kernel of $P$ is one-dimensional.
 
 ::: pf-proof
 
-By rank-nullity in $\mathbb R^3$ and step [](#s1-3){.pf-ref},
+By rank-nullity in $\RR^3$ and step [](#s1-3){.pf-ref},
 \[
 \dim\ker P
 =
@@ -174,7 +174,7 @@ By step [](#s1-2){.pf-ref}, $P$ is the orthogonal projection onto
 \[
 (\ker P)^\perp=u^\perp.
 \]
-For any $v\in\mathbb R^3$,
+For any $v\in\RR^3$,
 \[
 v=(v-(u\cdot v)u)+(u\cdot v)u,
 \]

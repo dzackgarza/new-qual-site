@@ -45,7 +45,7 @@ One has
 \[
 \boxed{
 G\cong
-\mathbb Z/2 * \mathbb Z/3}.
+\ZZ/2 * \ZZ/3}.
 \]
 
 
@@ -55,13 +55,13 @@ The presentation splits into the two factor presentations
 \[
 \langle a\mid a^2=1\rangle
 \cong
-\mathbb Z/2
+\ZZ/2
 \]
 and
 \[
 \langle b\mid b^3=1\rangle
 \cong
-\mathbb Z/3,
+\ZZ/3,
 \]
 with no relation involving both \(a\) and \(b\). This is exactly the free
 product presentation.
@@ -116,8 +116,8 @@ and consecutive letters never both lie in the same factor.
 ::: pf-proof
 
 This is the normal form theorem for free products. Since the only
-nonidentity letters available in the \(\mathbb Z/2\) factor and
-\(\mathbb Z/3\) factor are those listed in step [](#s1-2){.pf-ref}, the stated description
+nonidentity letters available in the \(\ZZ/2\) factor and
+\(\ZZ/3\) factor are those listed in step [](#s1-2){.pf-ref}, the stated description
 is exactly the reduced-sequence normal form.
 
 :::
@@ -166,9 +166,9 @@ Hence
 X\cong
 \mathbb{RP}^2
 \vee
-M(\mathbb Z/3,1)},
+M(\ZZ/3,1)},
 \]
-where \(M(\mathbb Z/3,1)\) is the \(2\)-complex obtained from \(S^1\) by
+where \(M(\ZZ/3,1)\) is the \(2\)-complex obtained from \(S^1\) by
 attaching a \(2\)-cell by a degree-\(3\) map.
 
 
@@ -176,7 +176,7 @@ attaching a \(2\)-cell by a degree-\(3\) map.
 
 The \(a\)-circle together with the \(a^2\)-cell is the standard CW structure
 on \(\mathbb{RP}^2\). The \(b\)-circle together with the \(b^3\)-cell is the
-standard Moore-space presentation complex for \(\mathbb Z/3\). The two
+standard Moore-space presentation complex for \(\ZZ/3\). The two
 subcomplexes meet only at the unique vertex.
 
 :::
@@ -282,7 +282,7 @@ It is the universal covering complex of \(X\).
 One has
 \[
 \boxed{
-H=\{1,a\}\cong\mathbb Z/2}.
+H=\{1,a\}\cong\ZZ/2}.
 \]
 
 
@@ -295,7 +295,7 @@ a^2=1
 shows that every power of \(a\) is \(1\) or \(a\). The generator \(a\) is
 nontrivial in the free product
 \[
-\mathbb Z/2 * \mathbb Z/3,
+\ZZ/2 * \ZZ/3,
 \]
 so \(H\) has exactly two elements.
 
@@ -410,7 +410,7 @@ equivalently
 \[
 gag^{-1}\in H.
 \]
-In the free product \(\mathbb Z/2*\mathbb Z/3\), a conjugate of the factor
+In the free product \(\ZZ/2*\ZZ/3\), a conjugate of the factor
 generator \(a\) lies in \(H=\langle a\rangle\) only when the coset is the
 distinguished one. Thus all remaining \(a\)-orbits have size \(2\).
 
@@ -474,7 +474,7 @@ N_a(w)\text{ is even}}.
 
 ::: pf-proof
 
-The group \(\mathbb Z/2\) has
+The group \(\ZZ/2\) has
 \[
 c^m=1
 \iff
@@ -495,7 +495,7 @@ The subgroup \(K\) has index \(2\) and is normal.
 
 It is the kernel of the surjective homomorphism \(h\). Hence
 \[
-G/K\cong\mathbb Z/2.
+G/K\cong\ZZ/2.
 \]
 
 :::
@@ -685,7 +685,7 @@ Therefore
 \boxed{
 \pi_1(Y/K)
 \cong
-\mathbb Z/3 * \mathbb Z/3}.
+\ZZ/3 * \ZZ/3}.
 \]
 
 
@@ -706,7 +706,7 @@ isomorphic to \(K\):
 \boxed{
 K
 \cong
-\mathbb Z/3 * \mathbb Z/3}.
+\ZZ/3 * \ZZ/3}.
 \]
 
 

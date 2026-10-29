@@ -40,5 +40,5 @@ Projecting its null-homotopy to $SO(3)$ shows that
 \[
 \boxed{\gamma*\gamma\simeq *}.
 \]
-Equivalently, $[\gamma]$ is the nontrivial element of $\pi_1(SO(3))\cong\mathbb Z/2$.
+Equivalently, $[\gamma]$ is the nontrivial element of $\pi_1(SO(3))\cong\ZZ/2$.
 :::

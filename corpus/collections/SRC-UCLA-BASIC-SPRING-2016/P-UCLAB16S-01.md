@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $a<b$ be real numbers, and let
 \[
-f:[a,b]\times[a,b]\to\mathbb R
+f:[a,b]\times[a,b]\to\RR
 \]
 satisfy:
 

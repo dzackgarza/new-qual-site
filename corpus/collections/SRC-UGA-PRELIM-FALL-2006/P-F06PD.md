@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F06PD
 kind: problem
-title: Dimension of $\operatorname{span}\{x^2+x+1,\,x^2+2x,\,x^2+2,\,x-1\}$ over $\mathbb{Q}$
+title: Dimension of $\operatorname{span}\{x^2+x+1,\,x^2+2x,\,x^2+2,\,x-1\}$ over $\QQ$
 classification:
   areas:
   - prelim
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the vector space of polynomials over $\mathbb{Q}$ spanned by $p_1(x) = x^2 + x + 1$, $p_2(x) = x^2 + 2x$, $p_3(x) = x^2 + 2$, $p_4(x) = x - 1$.
+Consider the vector space of polynomials over $\QQ$ spanned by $p_1(x) = x^2 + x + 1$, $p_2(x) = x^2 + 2x$, $p_3(x) = x^2 + 2$, $p_4(x) = x - 1$.
 Find the dimension of this vector space.
 :::
 
@@ -34,14 +34,14 @@ Coordinate representation in standard basis:
 
 ::: pf-step
 
-Represent polynomials in the standard basis $\{x^2, x, 1\}$ of the polynomial subspace $\mathbb{Q}_{\le 2}[x]$:
+Represent polynomials in the standard basis $\{x^2, x, 1\}$ of the polynomial subspace $\QQ_{\le 2}[x]$:
 \[
 p_1(x) = (1, 1, 1), \quad p_2(x) = (1, 2, 0), \quad p_3(x) = (1, 0, 2), \quad p_4(x) = (0, 1, -1).
 \]
 
 ::: pf-proof
 
-coordinate isomorphism $\mathbb{Q}_{\le 2}[x] \cong \mathbb{Q}^3$.
+coordinate isomorphism $\QQ_{\le 2}[x] \cong \QQ^3$.
 
 :::
 

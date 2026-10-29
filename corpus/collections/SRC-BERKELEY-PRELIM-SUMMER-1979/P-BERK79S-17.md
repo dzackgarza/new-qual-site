@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^3\to\mathbb R$ have continuous partial derivatives through order $2$, and suppose
+Let $f:\RR^3\to\RR$ have continuous partial derivatives through order $2$, and suppose
 \[
-f^{-1}(0)=\{v\in\mathbb R^3:\|v\|=1\}.
+f^{-1}(0)=\{v\in\RR^3:\|v\|=1\}.
 \]
-Must there exist a point $p\in\mathbb R^3$ with $\|p\|\le1$ such that
+Must there exist a point $p\in\RR^3$ with $\|p\|\le1$ such that
 \[
 \frac{\partial^2f}{\partial x^2}(p)
 +\frac{\partial^2f}{\partial y^2}(p)

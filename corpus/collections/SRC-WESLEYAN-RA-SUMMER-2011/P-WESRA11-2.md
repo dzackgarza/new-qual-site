@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be Lebesgue measurable.
+Let $f:\RR\to\RR$ be Lebesgue measurable.
 Compare the following conditions:
 
-(i) $f$ is continuous at almost every point of $\mathbb R$.
+(i) $f$ is continuous at almost every point of $\RR$.
 
-(ii) There is a continuous $g:\mathbb R\to\mathbb R$ such that $f=g$ almost everywhere.
+(ii) There is a continuous $g:\RR\to\RR$ such that $f=g$ almost everywhere.
 
 Does either imply the other?
 Give proofs or counterexamples.
@@ -47,7 +47,7 @@ f(x)=\begin{cases}
 \]
 This function is Lebesgue measurable and is continuous at every \(x\ne0\), so it satisfies (i).
 
-Suppose there were a continuous \(g:\mathbb R\to\mathbb R\) with \(f=g\) almost everywhere. On \((-\infty,0)\), the continuous function \(g\) is equal to \(0\) almost everywhere. It must therefore be identically \(0\) there: if \(g(x_0)\ne0\) at some \(x_0<0\), continuity would make \(g\ne0\) on an open interval of positive measure. Similarly, \(g\equiv1\) on \((0,\infty)\). Continuity at \(0\) would then require simultaneously \(g(0)=0\) and \(g(0)=1\), a contradiction. Thus (ii) fails.
+Suppose there were a continuous \(g:\RR\to\RR\) with \(f=g\) almost everywhere. On \((-\infty,0)\), the continuous function \(g\) is equal to \(0\) almost everywhere. It must therefore be identically \(0\) there: if \(g(x_0)\ne0\) at some \(x_0<0\), continuity would make \(g\ne0\) on an open interval of positive measure. Similarly, \(g\equiv1\) on \((0,\infty)\). Continuity at \(0\) would then require simultaneously \(g(0)=0\) and \(g(0)=1\), a contradiction. Thus (ii) fails.
 
 :::
 
@@ -62,13 +62,13 @@ Condition (ii) does not imply condition (i).
 
 Let
 \[
-f=\mathbf 1_{\mathbb Q}
+f=\mathbf 1_{\QQ}
 \qquad\text{and}\qquad
 g\equiv0.
 \]
 The rationals are countable and hence have Lebesgue measure zero, so \(f=g\) almost everywhere. Thus (ii) holds.
 
-However, every open interval contains both rational and irrational points. Consequently every neighborhood of every \(x\in\mathbb R\) contains points where \(f=1\) and points where \(f=0\). Hence \(f\) is discontinuous at every point, so (i) fails.
+However, every open interval contains both rational and irrational points. Consequently every neighborhood of every \(x\in\RR\) contains points where \(f=1\) and points where \(f=0\). Hence \(f\) is discontinuous at every point, so (i) fails.
 
 :::
 

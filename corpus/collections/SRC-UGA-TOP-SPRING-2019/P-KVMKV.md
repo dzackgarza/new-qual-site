@@ -39,7 +39,7 @@ Counterexample definition:
 
 ::: pf-proof
 
-Let $X = \mathbb{N} = \{1, 2, 3, \dots\}$ equipped with the discrete metric:
+Let $X = \NN = \{1, 2, 3, \dots\}$ equipped with the discrete metric:
 $$d(x, y) = \begin{cases} 0 & \text{if } x = y, \\ 1 & \text{if } x \ne y. \end{cases}$$
 
 :::
@@ -94,7 +94,7 @@ Choose $\varepsilon = \frac{1}{2} > 0$.
 
 ::: pf-step
 
-By the definition of a Cauchy sequence, there exists an integer $N \in \mathbb{N}$ such that
+By the definition of a Cauchy sequence, there exists an integer $N \in \NN$ such that
     $$d(x_n, x_m) < \frac{1}{2} \quad \text{for all } n, m \ge N.$$
 
 :::
@@ -149,19 +149,19 @@ Thus each singleton $\{n\}$ is an open set in $(X, d)$.
 ::: pf-step
 
 Consider the open cover of $X$ given by all singletons:
-    $$\mathcal{U} = \{\{n\} \mid n \in \mathbb{N}\}.$$
+    $$\mathcal{U} = \{\{n\} \mid n \in \NN\}.$$
 
 :::
 
 ::: pf-step
 
-The union satisfies $\bigcup_{n \in \mathbb{N}} \{n\} = \mathbb{N} = X$, so $\mathcal{U}$ is an open cover.
+The union satisfies $\bigcup_{n \in \NN} \{n\} = \NN = X$, so $\mathcal{U}$ is an open cover.
 
 :::
 
 ::: pf-step
 
-Since all elements of $\mathcal{U}$ are pairwise disjoint singletons and $X = \mathbb{N}$ is infinite, any finite subcollection $\mathcal{U}' = \{\{n_1\}, \dots, \{n_k\}\}$ covers only the finite set $\{n_1, \dots, n_k\} \subsetneq \mathbb{N}$.
+Since all elements of $\mathcal{U}$ are pairwise disjoint singletons and $X = \NN$ is infinite, any finite subcollection $\mathcal{U}' = \{\{n_1\}, \dots, \{n_k\}\}$ covers only the finite set $\{n_1, \dots, n_k\} \subsetneq \NN$.
 
 :::
 

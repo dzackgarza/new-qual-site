@@ -40,7 +40,7 @@ $$
 :::
 
 ::: pf-step
-Let $a,b\in H^1(\Sigma_g;\mathbb Z)$ be the Poincaré duals of $[\alpha]$ and $[\beta]$.
+Let $a,b\in H^1(\Sigma_g;\ZZ)$ be the Poincaré duals of $[\alpha]$ and $[\beta]$.
 
 ::: pf-proof
 
@@ -49,7 +49,7 @@ The cup-product interpretation of intersection number gives
 $$
 \langle a\smile b,[\Sigma_g]\rangle=I(\alpha,\beta)=\pm1.
 $$
-Thus $a\smile b$ is a generator of $H^2(\Sigma_g;\mathbb Z)$ up to sign.
+Thus $a\smile b$ is a generator of $H^2(\Sigma_g;\ZZ)$ up to sign.
 :::
 
 :::
@@ -57,7 +57,7 @@ Thus $a\smile b$ is a generator of $H^2(\Sigma_g;\mathbb Z)$ up to sign.
 :::
 
 ::: {.pf-step #s3}
-Let $f:S^2\to\Sigma_g$ be continuous. Since $H^1(S^2;\mathbb Z)=0$,
+Let $f:S^2\to\Sigma_g$ be continuous. Since $H^1(S^2;\ZZ)=0$,
 $$
 f^*a=f^*b=0.
 $$

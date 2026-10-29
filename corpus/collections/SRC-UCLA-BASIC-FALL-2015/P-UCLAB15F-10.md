@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F,G:\mathbb R^n\to\mathbb R^n$ be linear operators, with
+Let $F,G:\RR^n\to\RR^n$ be linear operators, with
 \[
 \exp(F)=\sum_{k=0}^{\infty}\frac1{k!}F^k.
 \]

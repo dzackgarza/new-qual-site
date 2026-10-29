@@ -37,6 +37,6 @@ The attaching map winds once positively around each circle factor, so its class 
 \]
 From \(ab=1\) we obtain \(b=a^{-1}\), after which the commutator relation is automatic. Therefore
 \[
-\boxed{\pi_1(X)\cong\mathbb Z}.
+\boxed{\pi_1(X)\cong\ZZ}.
 \]
 :::

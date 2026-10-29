@@ -22,7 +22,7 @@ V=\begin{pmatrix}
 \]
 
 1. Prove that $V$ is invertible if $a_0,\ldots,a_n$ are distinct.
-2. If the $a_i$ are distinct and $b_0,\ldots,b_n\in\mathbb C$, prove that there is a unique complex polynomial $f$ of degree at most $n$ satisfying $f(a_i)=b_i$ for all $i$.
+2. If the $a_i$ are distinct and $b_0,\ldots,b_n\in\CC$, prove that there is a unique complex polynomial $f$ of degree at most $n$ satisfying $f(a_i)=b_i$ for all $i$.
 :::
 
 ::: {.solution}
@@ -92,11 +92,11 @@ Let
 $$
 \mathcal P_n
 \coloneqq
-\{f\in\mathbb C[x]:\deg f\leq n\}.
+\{f\in\CC[x]:\deg f\leq n\}.
 $$
 The evaluation map
 $$
-E:\mathcal P_n\longrightarrow\mathbb C^{n+1},
+E:\mathcal P_n\longrightarrow\CC^{n+1},
 \qquad
 E(f)=\bigl(f(a_0),\ldots,f(a_n)\bigr),
 $$
@@ -131,7 +131,7 @@ This is exactly the matrix representation of $E$ in the stated bases.
 ::: pf-step
 For every
 $$
-(b_0,\ldots,b_n)\in\mathbb C^{n+1},
+(b_0,\ldots,b_n)\in\CC^{n+1},
 $$
 there is a unique polynomial $f\in\mathcal P_n$ such that
 $$

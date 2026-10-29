@@ -40,7 +40,7 @@ which holds for $| x | < 1$
 ::: {.solution}
 We use the Jacobi triple product in the form
 \[
-\sum_{n\in\mathbb Z}z^n q^{n(n+1)/2}
+\sum_{n\in\ZZ}z^n q^{n(n+1)/2}
 =\prod_{m=1}^\infty(1-q^m)(1+zq^m)(1+z^{-1}q^{m-1}),
 \qquad |q|<1.
 \tag{1}
@@ -48,7 +48,7 @@ We use the Jacobi triple product in the form
 
 For part (a), set \(z=1\) and \(q=x\). Then
 \[
-\sum_{n\in\mathbb Z}x^{n(n+1)/2}
+\sum_{n\in\ZZ}x^{n(n+1)/2}
 =\prod_{m=1}^\infty(1-x^m)(1+x^m)(1+x^{m-1}).
 \]
 Since \((1-x^m)(1+x^m)=1-x^{2m}\), this is
@@ -64,9 +64,9 @@ q=x^5,
 \]
 The series side becomes
 \[
-\sum_{n\in\mathbb Z}(-1)^n
+\sum_{n\in\ZZ}(-1)^n
 x^{-n}x^{5n(n+1)/2}
-=\sum_{n\in\mathbb Z}(-1)^n x^{n(5n+3)/2}.
+=\sum_{n\in\ZZ}(-1)^n x^{n(5n+3)/2}.
 \]
 The product side is
 \[

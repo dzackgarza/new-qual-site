@@ -19,7 +19,7 @@ Show that the punctured unit disk $\mathbb{D}^* = \mathbb{D} \setminus \{0\}$ an
 ::: {.solution}
 Suppose $F:\mathbb D^*\to A$ were a biholomorphism. Since $F$ is bounded,
 the isolated singularity at $0$ is removable, so $F$ extends holomorphically
-to $\widetilde F:\mathbb D\to\mathbb C$.
+to $\widetilde F:\mathbb D\to\CC$.
 
 Take any sequence $z_n\to0$, $z_n\ne0$. Compactness of the closed annulus
 $1\le|w|\le2$ gives a subsequence for which $F(z_n)$ converges; continuity of

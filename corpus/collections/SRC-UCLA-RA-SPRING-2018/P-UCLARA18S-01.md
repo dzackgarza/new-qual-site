@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose $f\in L^1(\mathbb R)$ satisfies
+Problem 1. Suppose $f\in L^1(\RR)$ satisfies
 \[
-\limsup_{h\to0}\int_{\mathbb R}\left|\frac{f(x+h)-f(x)}{h}\right|\,dx=0.
+\limsup_{h\to0}\int_{\RR}\left|\frac{f(x+h)-f(x)}{h}\right|\,dx=0.
 \]
 Show that $f=0$ almost everywhere.
 :::
@@ -35,13 +35,13 @@ F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
 
 ::: {.pf-step #s1-1}
 
-For every $x\in\mathbb R$ and every $h\ne0$,
+For every $x\in\RR$ and every $h\ne0$,
 \[
 \left|
 \frac{F(x+h)-F(x)}{h}
 \right|
 \le
-\int_{\mathbb R}
+\int_{\RR}
 \left|
 \frac{f(t+h)-f(t)}{h}
 \right|\,dt.
@@ -76,14 +76,14 @@ Hence
 \bigl||f(t+h)|-|f(t)|\bigr|
 }{h}\,dt\\
 &\le
-\int_{\mathbb R}
+\int_{\RR}
 \frac{|f(t+h)-f(t)|}{h}\,dt.
 \end{aligned}
 \]
 For $h<0$, the same computation with $|h|$ in the denominator gives the
 identical final bound, namely
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \left|
 \frac{f(t+h)-f(t)}{h}
 \right|\,dt.
@@ -98,7 +98,7 @@ identical final bound, namely
 The hypothesis implies
 \[
 \lim_{h\to0}
-\int_{\mathbb R}
+\int_{\RR}
 \left|
 \frac{f(t+h)-f(t)}{h}
 \right|\,dt
@@ -125,7 +125,7 @@ The function $F$ is differentiable at every $x$ and
 
 ::: pf-proof
 
-Fix $x\in\mathbb R$. By step [](#s1-1){.pf-ref},
+Fix $x\in\RR$. By step [](#s1-1){.pf-ref},
 \[
 \left|
 \frac{F(x+h)-F(x)}{h}
@@ -145,7 +145,7 @@ step [](#s1-2){.pf-ref}. Therefore
 
 ::: {.pf-step #s1-4}
 
-The function $F$ is constant on $\mathbb R$.
+The function $F$ is constant on $\RR$.
 
 
 ::: pf-proof
@@ -171,7 +171,7 @@ In fact,
 
 ::: pf-proof
 
-Since $|f|\in L^1(\mathbb R)$,
+Since $|f|\in L^1(\RR)$,
 \[
 \int_{-\infty}^{x}|f(t)|\,dt
 \longrightarrow0
@@ -187,7 +187,7 @@ Thus the constant value from step [](#s1-4){.pf-ref} must be $0$.
 
 Therefore
 \[
-\int_{\mathbb R}|f(t)|\,dt=0.
+\int_{\RR}|f(t)|\,dt=0.
 \]
 
 
@@ -195,7 +195,7 @@ Therefore
 
 By monotone convergence,
 \[
-\int_{\mathbb R}|f(t)|\,dt
+\int_{\RR}|f(t)|\,dt
 =
 \lim_{x\to\infty}
 \int_{-\infty}^{x}|f(t)|\,dt

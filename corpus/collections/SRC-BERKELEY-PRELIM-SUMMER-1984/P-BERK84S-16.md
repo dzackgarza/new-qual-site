@@ -35,7 +35,7 @@ Since $p(a)\neq0$, none of those roots equals $a$.
 
 ::: {.pf-step #s1}
 
-Factor $p$ over $\mathbb R$ as
+Factor $p$ over $\RR$ as
 \[
 p(z)=c\prod_{j=1}^s (z-r_j)^{m_j},
 \]

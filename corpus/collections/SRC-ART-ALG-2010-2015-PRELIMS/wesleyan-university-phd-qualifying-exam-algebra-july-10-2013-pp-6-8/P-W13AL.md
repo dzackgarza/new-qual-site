@@ -28,7 +28,7 @@ audit:
 a. Suppose $K/F$ is a field extension.
 Prove that the elements of $K$ that are algebraic over $F$ form a subfield of $K$.
 
-b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\mathbb{Q}$.
+b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\QQ$.
 :::
 
 ::: {.solution}
@@ -71,24 +71,24 @@ subfield assertion.
 
 ::: {.pf-step #s2}
 
-The field $E=\mathbb Q(\sqrt2,\sqrt3)$ has degree $4$
-over $\mathbb Q$.
+The field $E=\QQ(\sqrt2,\sqrt3)$ has degree $4$
+over $\QQ$.
 
 ::: pf-proof
 
 A square of a nonzero rational number has an even exponent
 at every prime in its factorization. Hence $2$ is not a
 rational square, and $1,\sqrt2$ are a basis of
-$\mathbb Q(\sqrt2)$ over $\mathbb Q$.
-If $(a+b\sqrt2)^2=3$ for $a,b\in\mathbb Q$, comparison
+$\QQ(\sqrt2)$ over $\QQ$.
+If $(a+b\sqrt2)^2=3$ for $a,b\in\QQ$, comparison
 of these two basis coefficients gives
 $a^2+2b^2=3$ and $2ab=0$.
 For $b=0$ this gives $a^2=3$, impossible because the
 exponent of $3$ is odd. For $a=0$ it gives $b^2=3/2$,
 also impossible because the exponent of $3$ is odd.
-Thus $T^2-3$ has no root in $\mathbb Q(\sqrt2)$ and is
+Thus $T^2-3$ has no root in $\QQ(\sqrt2)$ and is
 irreducible over that field. Adjoining $\sqrt3$ has degree
-$2$, and the tower law gives $[E:\mathbb Q]=2\cdot2=4$.
+$2$, and the tower law gives $[E:\QQ]=2\cdot2=4$.
 
 :::
 
@@ -118,7 +118,7 @@ $$
 \sqrt2=\frac{\gamma+5/\gamma}{4},\qquad
 \sqrt3=\frac{5/\gamma-\gamma}{2}.
 $$
-Both radicals belong to $\mathbb Q(\gamma)$, so this field
+Both radicals belong to $\QQ(\gamma)$, so this field
 equals $E$. Step [](#s2){.pf-ref} shows that $\gamma$ has degree $4$.
 Its minimal polynomial is therefore the monic degree-four
 annihilating polynomial displayed above.

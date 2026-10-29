@@ -21,7 +21,7 @@ review: draft
 ::: {.solution}
 Identify
 \[
-B(n)\cong (\mathbb Z/2\mathbb Z)^n
+B(n)\cong (\ZZ/2\ZZ)^n
 \]
 by sending $\tau_i$ to the $i$th standard basis vector $e_i$.
 
@@ -29,9 +29,9 @@ by sending $\tau_i$ to the $i$th standard basis vector $e_i$.
 \[
 h=g\tau_i
 \]
-for some $i$. Under the identification with $(\mathbb Z/2\mathbb Z)^n$, two vertices are adjacent exactly when they differ in one coordinate. Thus $\Gamma$ is the $n$-dimensional hypercube.
+for some $i$. Under the identification with $(\ZZ/2\ZZ)^n$, two vertices are adjacent exactly when they differ in one coordinate. Thus $\Gamma$ is the $n$-dimensional hypercube.
 
-Its adjacency operator on the space $\mathbb C[B(n)]$ of functions on the vertex set is
+Its adjacency operator on the space $\CC[B(n)]$ of functions on the vertex set is
 \[
 (Af)(g)=\sum_{i=1}^n f(g\tau_i).
 \]
@@ -41,7 +41,7 @@ Its adjacency operator on the space $\mathbb C[B(n)]$ of functions on the vertex
 \chi_S\!\left(\tau_1^{\varepsilon_1}\cdots\tau_n^{\varepsilon_n}\right)
 =(-1)^{\sum_{i\in S}\varepsilon_i}.
 \]
-These are precisely the $2^n$ distinct linear characters of $B(n)$, and hence they form an orthogonal basis of $\mathbb C[B(n)]$.
+These are precisely the $2^n$ distinct linear characters of $B(n)$, and hence they form an orthogonal basis of $\CC[B(n)]$.
 
 For such a character,
 \[

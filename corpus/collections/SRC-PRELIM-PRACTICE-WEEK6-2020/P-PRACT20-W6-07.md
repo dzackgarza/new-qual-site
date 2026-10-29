@@ -34,14 +34,14 @@ $$
 
 so 16 is the supremum of the set.
 
-As an aside, for any function $f : [ a , b ]  \mathbb { R }$ one can define
+As an aside, for any function $f : [ a , b ]  \RR$ one can define
 
 $$
 T V ( f , [ a , b ] ) : = \operatorname* { s u p } \left\{ \sum _ { k = 1 } ^ { n } | f ( x _ { k } ) - f ( x _ { k - 1 } ) | : \{ x _ { k } \} _ { k = 0 } ^ { n } { \mathrm { ~ i s ~ a ~ p a r t i t i o n ~ o f ~ } } [ a , b ] \right\} .
 $$
 
 For many such f this number will be $+ \infty$ , but one defines the set $B V ( [ a , b ] )$ to be the functions $f$ such that $T V ( f , [ a , b ] ) < \infty ;$ these are the functions of bounded (pointwise) variation.
-And one can prove that if $f : [ a , b ]  \mathbb { R }$ is continuously differentiable, then
+And one can prove that if $f : [ a , b ]  \RR$ is continuously differentiable, then
 
 $$
 T V ( f , [ a , b ] ) = \int _ { a } ^ { b } \left| f ^ { \prime } ( x ) \right| d x .

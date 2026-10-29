@@ -21,13 +21,13 @@ audit:
 
 ::: {.problem}
 Let $G$ be a finite abelian group.
-Let $f:\mathbb Z^m\rightarrow G$ be a surjection of abelian groups.
-We may think of $f$ as a homomorphism of $\mathbb Z$-modules.
+Let $f:\ZZ^m\rightarrow G$ be a surjection of abelian groups.
+We may think of $f$ as a homomorphism of $\ZZ$-modules.
 Let $K$ be the kernel of $f$.
 
-- Prove that $K$ is isomorphic to $\mathbb Z^m$.
+- Prove that $K$ is isomorphic to $\ZZ^m$.
 
-- We can therefore write the inclusion map $K\rightarrow\mathbb Z^m$ as $\mathbb Z^m\rightarrow\mathbb Z^m$ and represent it by an $m\times m$ integer matrix $A$.
+- We can therefore write the inclusion map $K\rightarrow\ZZ^m$ as $\ZZ^m\rightarrow\ZZ^m$ and represent it by an $m\times m$ integer matrix $A$.
   Prove that $|\det A|=|G|$.
 :::
 
@@ -36,12 +36,12 @@ Let $K$ be the kernel of $f$.
 ::: pf
 
 ::: pf-step
-The subgroup $K\le \mathbb Z^m$ is a free abelian group of rank at most $m$.
+The subgroup $K\le \ZZ^m$ is a free abelian group of rank at most $m$.
 
 ::: pf-proof
 Every subgroup of a finitely generated free abelian group is free abelian of rank at most the rank of the ambient group. Thus
 \[
-K\cong \mathbb Z^r
+K\cong \ZZ^r
 \]
 for some $0\le r\le m$.
 :::
@@ -54,19 +54,19 @@ In fact $r=m$.
 ::: pf-proof
 The first isomorphism theorem gives
 \[
-\mathbb Z^m/K\cong G.
+\ZZ^m/K\cong G.
 \]
 Since $G$ is finite, tensoring the short exact sequence
 \[
-0\longrightarrow K\longrightarrow \mathbb Z^m\longrightarrow G\longrightarrow0
+0\longrightarrow K\longrightarrow \ZZ^m\longrightarrow G\longrightarrow0
 \]
-with $\mathbb Q$ gives
+with $\QQ$ gives
 \[
-K\otimes_{\mathbb Z}\mathbb Q\cong \mathbb Q^m,
+K\otimes_{\ZZ}\QQ\cong \QQ^m,
 \]
-because $G\otimes_{\mathbb Z}\mathbb Q=0$. If $K\cong\mathbb Z^r$, then
+because $G\otimes_{\ZZ}\QQ=0$. If $K\cong\ZZ^r$, then
 \[
-K\otimes_{\mathbb Z}\mathbb Q\cong\mathbb Q^r.
+K\otimes_{\ZZ}\QQ\cong\QQ^r.
 \]
 Therefore $r=m$.
 :::
@@ -76,7 +76,7 @@ Therefore $r=m$.
 ::: pf-step
 Hence
 \[
-K\cong\mathbb Z^m.
+K\cong\ZZ^m.
 \]
 
 :::
@@ -84,19 +84,19 @@ K\cong\mathbb Z^m.
 ::: {.pf-step #s4}
 After choosing a basis of $K$, let
 \[
-A:\mathbb Z^m\longrightarrow\mathbb Z^m
+A:\ZZ^m\longrightarrow\ZZ^m
 \]
-be the integer matrix representing the inclusion $K\hookrightarrow\mathbb Z^m$. Then
+be the integer matrix representing the inclusion $K\hookrightarrow\ZZ^m$. Then
 \[
-\mathbb Z^m/A\mathbb Z^m\cong G.
+\ZZ^m/A\ZZ^m\cong G.
 \]
 
 ::: pf-proof
-Under the chosen identification $K\cong\mathbb Z^m$, the image of $A$ is precisely the subgroup $K$. Hence
+Under the chosen identification $K\cong\ZZ^m$, the image of $A$ is precisely the subgroup $K$. Hence
 \[
-\mathbb Z^m/A\mathbb Z^m
+\ZZ^m/A\ZZ^m
 \cong
-\mathbb Z^m/K
+\ZZ^m/K
 \cong G.
 \]
 :::
@@ -108,7 +108,7 @@ Let
 \[
 UAV=\operatorname{diag}(d_1,\dots,d_m)
 \]
-be a Smith normal form of $A$, with $U,V\in\operatorname{GL}_m(\mathbb Z)$ and each $d_i>0$.
+be a Smith normal form of $A$, with $U,V\in\operatorname{GL}_m(\ZZ)$ and each $d_i>0$.
 Then
 \[
 |G|=d_1\cdots d_m.
@@ -117,9 +117,9 @@ Then
 ::: pf-proof
 The quotient in step [](#s4){.pf-ref} is finite, so $A$ has full rank and all Smith invariants $d_i$ are nonzero. Multiplication by the unimodular matrices $U$ and $V$ does not change the isomorphism type of the cokernel, so
 \[
-G\cong \mathbb Z^m/A\mathbb Z^m
+G\cong \ZZ^m/A\ZZ^m
 \cong
-\bigoplus_{i=1}^m \mathbb Z/d_i\mathbb Z.
+\bigoplus_{i=1}^m \ZZ/d_i\ZZ.
 \]
 Therefore
 \[

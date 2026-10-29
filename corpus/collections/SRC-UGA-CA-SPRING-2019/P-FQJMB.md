@@ -22,7 +22,7 @@ $$
 E(z)=e^{x}(\cos y+i \sin y) .
 $$
 
-- Show that $E(z)$ is the unique function analytic on $\mathbb{C}$ that satisfies
+- Show that $E(z)$ is the unique function analytic on $\CC$ that satisfies
 
 $$
 E^{\prime}(z)=E(z), \quad E(0)=1 .

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA23
 kind: problem
-title: Matrices of stretching transformations of $\mathbb{R}^3$ and their eigenvectors
+title: Matrices of stretching transformations of $\RR^3$ and their eigenvectors
 classification:
   areas: [prelim]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the basis $\vec { e } _ { i } , i = 1 , 2 , 3$ , in the vector space $\mathbb { R } ^ { 3 }$ In this basis, write the matrix of the transformation that
+Consider the basis $\vec { e } _ { i } , i = 1 , 2 , 3$ , in the vector space $\RR ^ { 3 }$ In this basis, write the matrix of the transformation that
 
 (a) stretches all directions by a factor of λ.
 

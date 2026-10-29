@@ -30,7 +30,7 @@ Suppose $A$ is a unital commutative ring.
 Let $A[x]$ be the ring of polynomials, $A^\times$ be the group of units of $A$, and $\mathrm{Nil}(A)$ be the nilradical of $A$.
 Prove that
 \[
-A[x]^\times = \{ a_0 + a_1 x + \cdots + a_n x^n \mid a_0 \in A^\times,\; a_1,\ldots,a_n \in \mathrm{Nil}(A),\; n \in \mathbb{Z}^+ \},
+A[x]^\times = \{ a_0 + a_1 x + \cdots + a_n x^n \mid a_0 \in A^\times,\; a_1,\ldots,a_n \in \mathrm{Nil}(A),\; n \in \ZZ^+ \},
 \]
 where $A[x]^\times$ is the group of units of $A[x]$.
 (Hint.

@@ -72,7 +72,7 @@ Hence
 
 Fix any target
 \[
-L\in\mathbb R.
+L\in\RR.
 \]
 There is a rearrangement of the first series constructed by repeatedly taking unused positive terms until the partial sum first exceeds $L$, then unused negative terms until it first falls below $L$.
 
@@ -136,13 +136,13 @@ The set of finite limiting values obtainable by rearranging
 \]
 is
 \[
-\boxed{\mathbb R}.
+\boxed{\RR}.
 \]
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} constructs, for every prescribed $L\in\mathbb R$, a rearrangement converging to $L$. Conversely, every finite limiting value of a rearrangement is by definition a real number.
+Step [](#s1-3){.pf-ref} constructs, for every prescribed $L\in\RR$, a rearrangement converging to $L$. Conversely, every finite limiting value of a rearrangement is by definition a real number.
 
 :::
 
@@ -180,7 +180,7 @@ Let
 \[
 \sum_{n=1}^{\infty}a_n
 \]
-be absolutely convergent with sum $S$, and let $\sigma:\mathbb N\to\mathbb N$ be a bijection.
+be absolutely convergent with sum $S$, and let $\sigma:\NN\to\NN$ be a bijection.
 Fix $\varepsilon>0$. Choose $N$ such that
 \[
 \sum_{n>N}|a_n|<\varepsilon.

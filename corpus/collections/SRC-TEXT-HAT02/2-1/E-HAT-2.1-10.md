@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Show the quotient space of a finite collection of disjoint 2 simplices obtained by identifying pairs of edges is always a surface, locally homeomorphic to $\mathbb{R}^2$.
+(a) Show the quotient space of a finite collection of disjoint 2 simplices obtained by identifying pairs of edges is always a surface, locally homeomorphic to $\RR^2$.
 
 (b) Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface.
 [This is more difficult.]
@@ -40,7 +40,7 @@ Let $q$ be the quotient map from the disjoint union of the finitely many triangl
 
 ::: {.pf-step #s1}
 
-Every point in the image of the interior of a triangle has a neighborhood homeomorphic to $\mathbb R^2$, and every point in the interior of an identified edge has such a neighborhood as well.
+Every point in the image of the interior of a triangle has a neighborhood homeomorphic to $\RR^2$, and every point in the interior of an identified edge has such a neighborhood as well.
 
 ::: pf-proof
 
@@ -79,7 +79,7 @@ A small neighborhood of $v$ is the cone on the link $L_v$. By step [](#s2){.pf-r
 \[
 C(S^1)\cong D^2.
 \]
-Together with step [](#s1){.pf-ref}, every point of $X$ has a neighborhood homeomorphic to $\mathbb R^2$. Since every original edge was paired, there is no boundary. This proves part (a).
+Together with step [](#s1){.pf-ref}, every point of $X$ has a neighborhood homeomorphic to $\RR^2$. Since every original edge was paired, there is no boundary. This proves part (a).
 
 For part (b), call an orientation of the quotient edges **admissible** if on the boundary of no triangle are the three edge directions cyclic. Equivalently, in each triangle there is a vertex at which both incident edges point outward, and then the three vertices can be ordered uniquely up to the evident choice so that every edge points from the smaller endpoint to the larger one.
 

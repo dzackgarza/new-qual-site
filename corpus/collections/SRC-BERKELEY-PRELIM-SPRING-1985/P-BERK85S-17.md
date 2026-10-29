@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $v_1,v_2:\mathbb R\to\mathbb R$ be continuous and satisfy
+Let $v_1,v_2:\RR\to\RR$ be continuous and satisfy
 \[
 v_1(x)<v_2(x)
 \]

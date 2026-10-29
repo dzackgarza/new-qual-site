@@ -26,12 +26,12 @@ Can you identify any of them?
 
 Connected double covers of the Klein bottle $K$ correspond to nonzero homomorphisms
 $$
-\pi_1(K)\longrightarrow\mathbb Z/2.
+\pi_1(K)\longrightarrow\ZZ/2.
 $$
 
 ::: pf-proof
 
-An index-$2$ subgroup is automatically normal and is the kernel of the quotient map to $\mathbb Z/2$; conversely every nonzero map has index-$2$ kernel.
+An index-$2$ subgroup is automatically normal and is the kernel of the quotient map to $\ZZ/2$; conversely every nonzero map has index-$2$ kernel.
 
 :::
 
@@ -41,17 +41,17 @@ An index-$2$ subgroup is automatically normal and is the kernel of the quotient 
 
 Since
 $$
-H_1(K;\mathbb Z)\cong\mathbb Z\oplus\mathbb Z/2,
+H_1(K;\ZZ)\cong\ZZ\oplus\ZZ/2,
 $$
 we have
 $$
-\operatorname{Hom}(\pi_1(K),\mathbb Z/2)
-\cong\operatorname{Hom}(H_1(K),\mathbb Z/2)\cong(\mathbb Z/2)^2.
+\operatorname{Hom}(\pi_1(K),\ZZ/2)
+\cong\operatorname{Hom}(H_1(K),\ZZ/2)\cong(\ZZ/2)^2.
 $$
 
 ::: pf-proof
 
-Every homomorphism to an abelian group factors through abelianization. Both summands admit an independent map to $\mathbb Z/2$.
+Every homomorphism to an abelian group factors through abelianization. Both summands admit an independent map to $\ZZ/2$.
 
 :::
 
@@ -63,7 +63,7 @@ Hence there are exactly three connected double covers.
 
 ::: pf-proof
 
-The vector space $(\mathbb Z/2)^2$ has three nonzero elements.
+The vector space $(\ZZ/2)^2$ has three nonzero elements.
 
 :::
 
@@ -75,7 +75,7 @@ One is the orientation double cover $T^2\to K$; the other two have total space h
 
 ::: pf-proof
 
-Using $\pi_1(K)=\langle a,b\mid aba^{-1}=b^{-1}\rangle$, the orientation character sends the orientation-reversing generator $a$ to $1$ and $b$ to $0$; its kernel $\langle a^2,b\rangle\cong\mathbb Z^2$ is the torus group. The other two index-$2$ kernels have Klein-bottle group and hence correspond to double covers with Klein-bottle total space.
+Using $\pi_1(K)=\langle a,b\mid aba^{-1}=b^{-1}\rangle$, the orientation character sends the orientation-reversing generator $a$ to $1$ and $b$ to $0$; its kernel $\langle a^2,b\rangle\cong\ZZ^2$ is the torus group. The other two index-$2$ kernels have Klein-bottle group and hence correspond to double covers with Klein-bottle total space.
 
 :::
 

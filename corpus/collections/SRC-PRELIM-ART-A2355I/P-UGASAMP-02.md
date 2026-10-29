@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\mathbb R$ and let $I$ be an open interval containing $a$. For a function $f:I\to\mathbb R$, give the definition of continuity at $a$. Prove that
+Let $a\in\RR$ and let $I$ be an open interval containing $a$. For a function $f:I\to\RR$, give the definition of continuity at $a$. Prove that
 \[
 f(x)=x^2
 \]
@@ -28,7 +28,7 @@ is continuous at $a=2$.
 
 ::: {.pf-step #s1-1}
 
-A function \(f:I\to\mathbb R\) is continuous at \(a\in I\) if for every \(\varepsilon>0\) there exists \(\delta>0\) such that, for every \(x\in I\),
+A function \(f:I\to\RR\) is continuous at \(a\in I\) if for every \(\varepsilon>0\) there exists \(\delta>0\) such that, for every \(x\in I\),
 \[
 |x-a|<\delta
 \quad\Longrightarrow\quad

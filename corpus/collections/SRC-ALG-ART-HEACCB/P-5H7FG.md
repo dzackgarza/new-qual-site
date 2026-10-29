@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5H7FG
 kind: problem
-title: Rational and Jordan canonical forms of a given matrix in $M_4(\mathbb{C})$
+title: Rational and Jordan canonical forms of a given matrix in $M_4(\CC)$
 classification:
   areas:
   - algebra

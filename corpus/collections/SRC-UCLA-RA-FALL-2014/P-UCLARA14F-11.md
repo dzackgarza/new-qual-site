@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega \subset \mathbb{C}$ be open, bounded, and simply connected. Let $u$ be harmonic in $\Omega$ and assume that $u \geq 0$. Show the following: for each compact set $K \subset \Omega$, there exists a constant $C_K > 0$ such that
+Let $\Omega \subset \CC$ be open, bounded, and simply connected. Let $u$ be harmonic in $\Omega$ and assume that $u \geq 0$. Show the following: for each compact set $K \subset \Omega$, there exists a constant $C_K > 0$ such that
 \[
 \sup_{x \in K} u(x) \leq C_K \inf_{x \in K} u(x).
 \]
@@ -42,7 +42,7 @@ By the Riemann mapping theorem, there is a conformal bijection
 ::: pf-proof
 
 The domain $\Omega$ is open, connected, simply connected, and bounded, hence
-is a proper simply connected domain in $\mathbb C$. The Riemann mapping
+is a proper simply connected domain in $\CC$. The Riemann mapping
 theorem therefore applies.
 
 :::

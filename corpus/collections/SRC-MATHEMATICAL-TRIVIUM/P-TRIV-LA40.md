@@ -124,7 +124,7 @@ $$
 =
 t(1,-2,1),
 \qquad
-t\in\mathbb R.
+t\in\RR.
 }
 $$
 
@@ -222,7 +222,7 @@ s(1,-2,1,0,0)\\
 $$
 with
 $$
-s,t,u\in\mathbb R.
+s,t,u\in\RR.
 $$
 
 

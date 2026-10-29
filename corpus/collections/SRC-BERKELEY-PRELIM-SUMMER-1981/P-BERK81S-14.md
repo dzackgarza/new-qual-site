@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:(0,1)\to\mathbb C$ be $C^1$.
+Let $f:(0,1)\to\CC$ be $C^1$.
 Suppose
 \[
 f(t)\to0,

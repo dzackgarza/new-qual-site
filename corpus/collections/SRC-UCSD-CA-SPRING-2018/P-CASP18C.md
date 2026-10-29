@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that if $G \neq \mathbb{C}$ is a simply connected subset of $\mathbb{C}$, $f : G \to G$ is analytic, and $f(z)$ is not identically equal to $z$, then $f$ has at most one fixed point in $G$.
+Show that if $G \neq \CC$ is a simply connected subset of $\CC$, $f : G \to G$ is analytic, and $f(z)$ is not identically equal to $z$, then $f$ has at most one fixed point in $G$.
 :::
 
 ::: {.solution}

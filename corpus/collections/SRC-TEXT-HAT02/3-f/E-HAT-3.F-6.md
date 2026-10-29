@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.F-6
 kind: problem
-title: "$\\operatorname{Ext}(\\mathbb{Z}_{p^\\infty}, \\mathbb{Z}_p)$"
+title: "$\\operatorname{Ext}(\\ZZ_{p^\\infty}, \\ZZ_p)$"
 classification:
   areas:
   - topology
@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\operatorname{Ext}(\mathbb{Z}_{p^\infty}, \mathbb{Z}_p) \approx \mathbb{Z}_p$.
+Show that $\operatorname{Ext}(\ZZ_{p^\infty}, \ZZ_p) \approx \ZZ_p$.
 :::
 
 ::: {.solution}
-Choose generators $x_n$ of $\mathbb Z_{p^\infty}$ with $x_n$ of order $p^n$ and
+Choose generators $x_n$ of $\ZZ_{p^\infty}$ with $x_n$ of order $p^n$ and
 \[
 p x_{n+1}=x_n.
 \]
@@ -41,21 +41,21 @@ r_n=p e_{n+1}-e_n\quad(n\ge1).
 Thus we have a free resolution
 \[
 0\longrightarrow F_1\xrightarrow d F_0
-\longrightarrow\mathbb Z_{p^\infty}\longrightarrow0,
+\longrightarrow\ZZ_{p^\infty}\longrightarrow0,
 \]
 where $F_1$ is free on $r_0,r_1,\dots$ and $d$ is given by the displayed formulas.
 
-Apply $\operatorname{Hom}(-,\mathbb Z_p)$. Since Hom out of a direct sum is a product,
+Apply $\operatorname{Hom}(-,\ZZ_p)$. Since Hom out of a direct sum is a product,
 \[
-\operatorname{Hom}(F_0,\mathbb Z_p)\cong\prod_{n\ge1}\mathbb Z_p,
+\operatorname{Hom}(F_0,\ZZ_p)\cong\prod_{n\ge1}\ZZ_p,
 \qquad
-\operatorname{Hom}(F_1,\mathbb Z_p)\cong\prod_{n\ge0}\mathbb Z_p.
+\operatorname{Hom}(F_1,\ZZ_p)\cong\prod_{n\ge0}\ZZ_p.
 \]
-If a homomorphism $F_0\to\mathbb Z_p$ is represented by $(a_1,a_2,\dots)$, then $d^*$ sends it to
+If a homomorphism $F_0\to\ZZ_p$ is represented by $(a_1,a_2,\dots)$, then $d^*$ sends it to
 \[
 (0,-a_1,-a_2,-a_3,\dots),
 \]
-because multiplication by $p$ is zero in $\mathbb Z_p$.
+because multiplication by $p$ is zero in $\ZZ_p$.
 Therefore
 \[
 \operatorname{im}d^*
@@ -63,10 +63,10 @@ Therefore
 \]
 and hence
 \[
-\operatorname{coker}d^*\cong\mathbb Z_p
+\operatorname{coker}d^*\cong\ZZ_p
 \]
 by projection onto the $r_0$ coordinate. By the definition of Ext from this free resolution,
 \[
-\boxed{\operatorname{Ext}(\mathbb Z_{p^\infty},\mathbb Z_p)\cong\mathbb Z_p.}
+\boxed{\operatorname{Ext}(\ZZ_{p^\infty},\ZZ_p)\cong\ZZ_p.}
 \]
 :::

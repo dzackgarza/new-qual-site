@@ -37,7 +37,7 @@ Compute the following integrals.
 
 (vii) $\displaystyle\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx$
 
-(viii) $\displaystyle\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$, $a \in \mathbb{C}$
+(viii) $\displaystyle\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$, $a \in \CC$
 :::
 
 ::: {.remark}

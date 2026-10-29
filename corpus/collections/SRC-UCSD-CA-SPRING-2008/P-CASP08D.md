@@ -23,7 +23,7 @@ audit:
 (a) Let $m$ be a positive integer.
 Describe the set of all entire functions $f$ for which there exist positive constants $C_1$ and $C_2$ such that $|f(z)| \le C_1 |z|^m$ for all $|z| \ge C_2$.
 
-(b) Describe the set of all functions $R$, meromorphic in $\mathbb{C}$, analytic except at $z = \pm 1$, and satisfying all of the following:
+(b) Describe the set of all functions $R$, meromorphic in $\CC$, analytic except at $z = \pm 1$, and satisfying all of the following:
 (i) $R$ has a simple pole (order 1) at $z = 1$.
 (ii) $R$ has a double pole (order 2) at $z = -1$.
 (iii) $|R(z)| \le C|z|$ for all $|z| \ge 2$.
@@ -69,5 +69,5 @@ Therefore exactly the functions
 $$
 R(z)=\alpha z+\beta+\frac{A}{z-1}+\frac{D}{z+1}+\frac{B}{(z+1)^2},
 $$
-where $A,B\ne0$ and $\alpha,\beta,D\in\mathbb C$, satisfy the requirements.
+where $A,B\ne0$ and $\alpha,\beta,D\in\CC$, satisfy the requirements.
 :::

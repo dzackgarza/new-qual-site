@@ -24,7 +24,7 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-10-02
-  note: Verified the Vieta coefficient formula, surjectivity via factorization of every monic cubic over $\mathbb C$, and noninjectivity under permutation of distinct roots.
+  note: Verified the Vieta coefficient formula, surjectivity via factorization of every monic cubic over $\CC$, and noninjectivity under permutation of distinct roots.
 ---
 
 ::: {.problem}
@@ -41,7 +41,7 @@ is surjective but not injective.
 
 ::: {.pf-step #s1-1}
 
-For every $u,v,w\in\mathbb C$,
+For every $u,v,w\in\CC$,
 $$
 (z-u)(z-v)(z-w)
 =
@@ -71,19 +71,19 @@ The map $F$ is surjective.
 
 ::: pf-proof
 
-Let $(a,b,c)\in\mathbb C^3$. By the fundamental theorem of algebra, the monic cubic
+Let $(a,b,c)\in\CC^3$. By the fundamental theorem of algebra, the monic cubic
 $$
 p(z)=z^3+az^2+bz+c
 $$
-factors over $\mathbb C$ as
+factors over $\CC$ as
 $$
 p(z)=(z-u)(z-v)(z-w)
 $$
-for some $u,v,w\in\mathbb C$, with repeated roots allowed. Comparing with step [](#s1-1){.pf-ref} gives
+for some $u,v,w\in\CC$, with repeated roots allowed. Comparing with step [](#s1-1){.pf-ref} gives
 $$
 F(u,v,w)=(a,b,c).
 $$
-Thus every point of $\mathbb C^3$ has a preimage.
+Thus every point of $\CC^3$ has a preimage.
 
 :::
 

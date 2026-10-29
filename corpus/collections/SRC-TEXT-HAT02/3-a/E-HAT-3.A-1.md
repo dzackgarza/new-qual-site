@@ -24,19 +24,19 @@ audit:
 ---
 
 ::: {.problem}
-Use the universal coefficient theorem to show that if $H_*(X; \mathbb{Z})$ is finitely generated, so the Euler characteristic $\chi(X) = \sum_n (-1)^n \operatorname{rank} H_n(X; \mathbb{Z})$ is defined, then for any coefficient field $F$ we have $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$.
+Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely generated, so the Euler characteristic $\chi(X) = \sum_n (-1)^n \operatorname{rank} H_n(X; \ZZ)$ is defined, then for any coefficient field $F$ we have $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$.
 :::
 
 ::: {.solution}
 Write each finitely generated integral homology group as
 \[
-H_n(X;\mathbb Z)\cong \mathbb Z^{r_n}\oplus T_n,
+H_n(X;\ZZ)\cong \ZZ^{r_n}\oplus T_n,
 \]
 with $T_n$ finite. We compare the alternating sum of the dimensions of homology over a field $F$ with $\sum(-1)^nr_n$.
 
-If $\operatorname{char}F=0$, then $F$ is torsionfree as a $\mathbb Z$-module, so the homology universal coefficient theorem gives
+If $\operatorname{char}F=0$, then $F$ is torsionfree as a $\ZZ$-module, so the homology universal coefficient theorem gives
 \[
-H_n(X;F)\cong H_n(X;\mathbb Z)\otimes F\cong F^{r_n}.
+H_n(X;F)\cong H_n(X;\ZZ)\otimes F\cong F^{r_n}.
 \]
 Thus $\dim_FH_n(X;F)=r_n$ in every degree.
 
@@ -46,9 +46,9 @@ t_n=\dim_{\mathbb F_p}(T_n/pT_n).
 \]
 For a finite abelian group the $p$-torsion subgroup $T_n[p]$ has the same $\mathbb F_p$-dimension $t_n$. The universal coefficient short exact sequence gives
 \[
-0\to H_n(X;\mathbb Z)\otimes\mathbb F_p
+0\to H_n(X;\ZZ)\otimes\mathbb F_p
 \to H_n(X;\mathbb F_p)
-\to \operatorname{Tor}(H_{n-1}(X;\mathbb Z),\mathbb F_p)\to0.
+\to \operatorname{Tor}(H_{n-1}(X;\ZZ),\mathbb F_p)\to0.
 \]
 Hence
 \[

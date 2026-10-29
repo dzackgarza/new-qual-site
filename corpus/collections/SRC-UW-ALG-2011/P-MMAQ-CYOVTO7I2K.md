@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CYOVTO7I2K
 kind: problem
-title: Whether $\mathbb{Z}[x]/(x^2+x+1)$ is Noetherian, Artinian, or an integrally
+title: Whether $\ZZ[x]/(x^2+x+1)$ is Noetherian, Artinian, or an integrally
   closed domain
 classification:
   areas:
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let `\begin{align*} R=\mathbb Z[x]/(x^2+x+1). \end{align*}`{=tex}
+Let `\begin{align*} R=\ZZ[x]/(x^2+x+1). \end{align*}`{=tex}
 
 - Answer the following questions with suitable justification.
 
@@ -38,15 +38,15 @@ Let `\begin{align*} R=\mathbb Z[x]/(x^2+x+1). \end{align*}`{=tex}
 
 The ring
 \[
-R=\mathbb Z[x]/(x^2+x+1)
+R=\ZZ[x]/(x^2+x+1)
 \]
 is a Noetherian integral domain.
 
 ::: pf-proof
 
-The ring $\mathbb Z$ is Noetherian, so by the Hilbert basis theorem $\mathbb Z[x]$ is Noetherian. Every quotient of a Noetherian ring is Noetherian, hence $R$ is Noetherian.
+The ring $\ZZ$ is Noetherian, so by the Hilbert basis theorem $\ZZ[x]$ is Noetherian. Every quotient of a Noetherian ring is Noetherian, hence $R$ is Noetherian.
 
-Also $x^2+x+1$ is irreducible over $\mathbb Q$, since its discriminant is $-3$, not a square in $\mathbb Q$. Being primitive, it is irreducible in $\mathbb Z[x]$ by Gauss's lemma. Since $\mathbb Z[x]$ is a UFD, irreducible elements are prime, so $(x^2+x+1)$ is prime and the quotient $R$ is a domain.
+Also $x^2+x+1$ is irreducible over $\QQ$, since its discriminant is $-3$, not a square in $\QQ$. Being primitive, it is irreducible in $\ZZ[x]$ by Gauss's lemma. Since $\ZZ[x]$ is a UFD, irreducible elements are prime, so $(x^2+x+1)$ is prime and the quotient $R$ is a domain.
 
 :::
 
@@ -84,9 +84,9 @@ Let
 \]
 Then
 \[
-R\cong\mathbb Z[\omega],
+R\cong\ZZ[\omega],
 \qquad
-\operatorname{Frac}(R)=\mathbb Q(\sqrt{-3}).
+\operatorname{Frac}(R)=\QQ(\sqrt{-3}).
 \]
 
 ::: pf-proof
@@ -95,13 +95,13 @@ The element $\omega$ satisfies
 \[
 \omega^2+\omega+1=0.
 \]
-Since this polynomial is irreducible over $\mathbb Q$, evaluation at $\omega$ induces an injective homomorphism
+Since this polynomial is irreducible over $\QQ$, evaluation at $\omega$ induces an injective homomorphism
 \[
-\mathbb Z[x]/(x^2+x+1)\longrightarrow\mathbb C
+\ZZ[x]/(x^2+x+1)\longrightarrow\CC
 \]
-with image $\mathbb Z[\omega]$. Its fraction field is
+with image $\ZZ[\omega]$. Its fraction field is
 \[
-\mathbb Q(\omega)=\mathbb Q(\sqrt{-3}).
+\QQ(\omega)=\QQ(\sqrt{-3}).
 \]
 
 :::
@@ -110,11 +110,11 @@ with image $\mathbb Z[\omega]$. Its fraction field is
 
 ::: {.pf-step #s4}
 
-Every element of $\mathbb Q(\sqrt{-3})$ that is integral over $\mathbb Z$ lies in $\mathbb Z[\omega]$.
+Every element of $\QQ(\sqrt{-3})$ that is integral over $\ZZ$ lies in $\ZZ[\omega]$.
 
 ::: pf-proof
 
-Let $\alpha\in\mathbb Q(\sqrt{-3})$ be integral over $\mathbb Z$. Its conjugate $\bar\alpha$ is also integral, so its trace and norm
+Let $\alpha\in\QQ(\sqrt{-3})$ be integral over $\ZZ$. Its conjugate $\bar\alpha$ is also integral, so its trace and norm
 \[
 T=\alpha+\bar\alpha,
 \qquad
@@ -126,11 +126,11 @@ Write
 \[
 \alpha=\frac{T+q\sqrt{-3}}2
 \]
-for some $q\in\mathbb Q$. Since
+for some $q\in\QQ$. Since
 \[
 T^2-4N=(\alpha-\bar\alpha)^2=-3q^2,
 \]
-we have $3q^2\in\mathbb Z$. Write $q=a/b$ in lowest terms. Then $b^2\mid3a^2$; coprimality gives $b^2\mid3$, hence $b=1$. Thus $q\in\mathbb Z$.
+we have $3q^2\in\ZZ$. Write $q=a/b$ in lowest terms. Then $b^2\mid3a^2$; coprimality gives $b^2\mid3$, hence $b=1$. Thus $q\in\ZZ$.
 
 Moreover,
 \[
@@ -140,7 +140,7 @@ Modulo $4$, this forces $T$ and $q$ to have the same parity: if exactly one were
 \[
 \alpha
 =\frac{T+q\sqrt{-3}}2
-=\frac{T+q}{2}+q\omega\in\mathbb Z[\omega].
+=\frac{T+q}{2}+q\omega\in\ZZ[\omega].
 \]
 
 :::
@@ -155,9 +155,9 @@ The domain $R$ is integrally closed.
 
 Let $\alpha\in\operatorname{Frac}(R)$ be integral over $R$. By step [](#s3){.pf-ref},
 \[
-\operatorname{Frac}(R)=\mathbb Q(\sqrt{-3}).
+\operatorname{Frac}(R)=\QQ(\sqrt{-3}).
 \]
-The ring $R=\mathbb Z[\omega]$ is integral over $\mathbb Z$ because $\omega$ satisfies the monic polynomial $x^2+x+1$. Since $\alpha$ is integral over $R$, transitivity of integrality implies that $\alpha$ is integral over $\mathbb Z$. By step [](#s4){.pf-ref}, $\alpha\in\mathbb Z[\omega]=R$. Therefore $R$ is integrally closed.
+The ring $R=\ZZ[\omega]$ is integral over $\ZZ$ because $\omega$ satisfies the monic polynomial $x^2+x+1$. Since $\alpha$ is integral over $R$, transitivity of integrality implies that $\alpha$ is integral over $\ZZ$. By step [](#s4){.pf-ref}, $\alpha\in\ZZ[\omega]=R$. Therefore $R$ is integrally closed.
 
 :::
 

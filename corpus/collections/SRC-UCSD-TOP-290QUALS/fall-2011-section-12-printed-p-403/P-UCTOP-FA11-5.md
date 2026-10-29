@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $M$ be a closed oriented 4-manifold whose second homology $H_2(M; \mathbb{Z})$ has rank 1. Show that there does not exist a free action of the group $\mathbb{Z}_2$ on $M$.
+Let $M$ be a closed oriented 4-manifold whose second homology $H_2(M; \ZZ)$ has rank 1. Show that there does not exist a free action of the group $\ZZ_2$ on $M$.
 :::
 
 ::: {.solution}
@@ -21,7 +21,7 @@ Let $M$ be a closed oriented 4-manifold whose second homology $H_2(M; \mathbb{Z}
 ::: pf
 
 ::: pf-step
-Suppose a free $\mathbb Z/2$-action existed and let $N=M/(\mathbb Z/2)$.
+Suppose a free $\ZZ/2$-action existed and let $N=M/(\ZZ/2)$.
 
 ::: pf-proof
 A free action of a finite group on a manifold gives a covering map $M\to N$ of degree $2$.
@@ -46,7 +46,7 @@ Euler characteristic multiplies by the degree of a finite covering of finite CW 
 On the other hand, $\chi(M)$ is odd.
 
 ::: pf-proof
-Since $M$ is closed, connected, and oriented of dimension $4$, Poincaré duality over $\mathbb Q$ gives
+Since $M$ is closed, connected, and oriented of dimension $4$, Poincaré duality over $\QQ$ gives
 $$
 b_0=b_4=1,\qquad b_3=b_1.
 $$
@@ -60,7 +60,7 @@ which is odd.
 :::
 
 ::: pf-step
-This contradiction proves that no free $\mathbb Z/2$-action exists on $M$.
+This contradiction proves that no free $\ZZ/2$-action exists on $M$.
 
 ::: pf-proof
 Steps [](#euler-char-even){.pf-ref} and [](#euler-char-odd){.pf-ref} give incompatible parities for $\chi(M)$.

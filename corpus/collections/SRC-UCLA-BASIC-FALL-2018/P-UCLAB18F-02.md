@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\subset\mathbb R^n$ be connected and suppose
+Let $A\subset\RR^n$ be connected and suppose
 \[
-\mathbb R^n\setminus A=B\cup C,
+\RR^n\setminus A=B\cup C,
 \]
 where $B,C$ are separated, meaning
 \[
@@ -118,7 +118,7 @@ every point of $V$ must belong to $B$.
 
 One has
 \[
-\overline V^{\,\mathbb R^n}\cap C=\varnothing.
+\overline V^{\,\RR^n}\cap C=\varnothing.
 \]
 
 
@@ -130,9 +130,9 @@ V\subseteq B,
 \]
 so
 \[
-\overline V^{\,\mathbb R^n}
+\overline V^{\,\RR^n}
 \subseteq
-\overline B^{\,\mathbb R^n}.
+\overline B^{\,\RR^n}.
 \]
 The hypothesis that $B$ and $C$ are separated gives
 \[
@@ -151,7 +151,7 @@ Hence
 
 One has
 \[
-\overline V^{\,\mathbb R^n}\cap U=\varnothing.
+\overline V^{\,\RR^n}\cap U=\varnothing.
 \]
 
 
@@ -165,7 +165,7 @@ the closure of $V$ in the subspace $A\cup B$ is
 \[
 \overline V^{\,A\cup B}
 =
-\overline V^{\,\mathbb R^n}\cap(A\cup B).
+\overline V^{\,\RR^n}\cap(A\cup B).
 \]
 The separation in step [](#s1-1){.pf-ref} gives
 \[
@@ -173,7 +173,7 @@ The separation in step [](#s1-1){.pf-ref} gives
 \]
 Since $U\subseteq A\cup B$, this is exactly
 \[
-\overline V^{\,\mathbb R^n}\cap U=\varnothing.
+\overline V^{\,\RR^n}\cap U=\varnothing.
 \]
 
 :::
@@ -184,7 +184,7 @@ Since $U\subseteq A\cup B$, this is exactly
 
 One has
 \[
-V\cap\overline C^{\,\mathbb R^n}=\varnothing.
+V\cap\overline C^{\,\RR^n}=\varnothing.
 \]
 
 
@@ -211,7 +211,7 @@ V\cap\overline C=\varnothing.
 
 One has
 \[
-V\cap\overline U^{\,\mathbb R^n}=\varnothing.
+V\cap\overline U^{\,\RR^n}=\varnothing.
 \]
 
 
@@ -221,7 +221,7 @@ As in step [](#s1-5){.pf-ref},
 \[
 \overline U^{\,A\cup B}
 =
-\overline U^{\,\mathbb R^n}\cap(A\cup B).
+\overline U^{\,\RR^n}\cap(A\cup B).
 \]
 The separation in step [](#s1-1){.pf-ref} gives
 \[
@@ -229,7 +229,7 @@ V\cap\overline U^{\,A\cup B}=\varnothing.
 \]
 Since $V\subseteq A\cup B$,
 \[
-V\cap\overline U^{\,\mathbb R^n}=\varnothing.
+V\cap\overline U^{\,\RR^n}=\varnothing.
 \]
 
 :::
@@ -244,7 +244,7 @@ V
 \qquad\text{and}\qquad
 U\cup C
 \]
-are separated in $\mathbb R^n$.
+are separated in $\RR^n$.
 
 
 ::: pf-proof
@@ -287,7 +287,7 @@ Thus the two sets are separated.
 
 Moreover,
 \[
-\mathbb R^n
+\RR^n
 =
 V\cup(U\cup C).
 \]
@@ -297,7 +297,7 @@ V\cup(U\cup C).
 
 By the hypotheses,
 \[
-\mathbb R^n
+\RR^n
 =
 A\cup B\cup C.
 \]
@@ -309,7 +309,7 @@ U\cup V.
 \]
 Hence
 \[
-\mathbb R^n
+\RR^n
 =
 U\cup V\cup C
 =
@@ -322,15 +322,15 @@ V\cup(U\cup C).
 
 ::: {.pf-step #s1-10}
 
-Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} contradict connectedness of $\mathbb R^n$.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} contradict connectedness of $\RR^n$.
 
 
 ::: pf-proof
 
 The set $V$ is nonempty by step [](#s1-1){.pf-ref}.
 The set $U\cup C$ is nonempty because $U$ is nonempty.
-Thus steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} express $\mathbb R^n$ as the union of two nonempty separated sets.
-But $\mathbb R^n$ is connected.
+Thus steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} express $\RR^n$ as the union of two nonempty separated sets.
+But $\RR^n$ is connected.
 This is impossible.
 
 :::

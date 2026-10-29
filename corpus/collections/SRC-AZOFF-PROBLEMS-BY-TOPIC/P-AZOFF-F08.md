@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Take $\begin{array} { r } { f ( z ) = \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } } \end{array}$ and $\begin{array} { r } { g ( z ) = \sum _ { n = - \infty } ^ { \infty } \frac { 1 } { ( z - n ) ^ { 2 } } } \end{array}$
 
-a) Show these functions have the same singularities in $\mathbb { C }$
+a) Show these functions have the same singularities in $\CC$
 
 b) Show that $f$ and $g$ have the same singular parts at each of their singularities.
 

@@ -19,9 +19,9 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 
 (a) Show that an $R$-submodule $N$ of $M$ is maximal if and only if the quotient module $M/N$ is a **simple** $R$-module (that is, $M/N \ne \{0\}$ and $M/N$ has no submodules other than $\{0\}$ and $M/N$).
 
-(b) Let $M$ be a $\mathbb{Z}$-module (an abelian group). Show that a submodule $N \subseteq M$ is maximal if and only if the quotient $|M/N| = p$ for some prime number $p$.
+(b) Let $M$ be a $\ZZ$-module (an abelian group). Show that a submodule $N \subseteq M$ is maximal if and only if the quotient $|M/N| = p$ for some prime number $p$.
 
-(c) Let $M = \mu_\infty = \{z \in \mathbb{C}^\times : z^n = 1 \text{ for some } n \in \mathbb{Z}^+\}$ be the multiplicative group of all complex roots of unity, viewed as a $\mathbb{Z}$-module. Show that $M$ has no maximal $\mathbb{Z}$-submodules.
+(c) Let $M = \mu_\infty = \{z \in \CC^\times : z^n = 1 \text{ for some } n \in \ZZ^+\}$ be the multiplicative group of all complex roots of unity, viewed as a $\ZZ$-module. Show that $M$ has no maximal $\ZZ$-submodules.
 :::
 
 ::: {.solution}
@@ -71,7 +71,7 @@ For abelian groups, $N$ is maximal if and only if $M/N$ has prime order.
 
 ::: pf-step
 
-A $\mathbb{Z}$-module is an abelian group, and $\mathbb{Z}$-submodules are subgroups.
+A $\ZZ$-module is an abelian group, and $\ZZ$-submodules are subgroups.
 
 :::
 
@@ -101,13 +101,13 @@ The cyclic subgroup $\langle x \rangle \le A$ is a non-zero submodule of $A$. By
 
 ::: pf-step
 
-If $A \cong \mathbb{Z}$, then the subgroup $\langle 2x \rangle \cong 2\mathbb{Z}$ is a non-zero proper subgroup of $A$, contradicting simplicity. Thus $A$ must be finite.
+If $A \cong \ZZ$, then the subgroup $\langle 2x \rangle \cong 2\ZZ$ is a non-zero proper subgroup of $A$, contradicting simplicity. Thus $A$ must be finite.
 
 :::
 
 ::: pf-step
 
-Since $A$ is finite cyclic, $A \cong \mathbb{Z}/n\mathbb{Z}$ for some integer $n \ge 2$.
+Since $A$ is finite cyclic, $A \cong \ZZ/n\ZZ$ for some integer $n \ge 2$.
 
 :::
 
@@ -129,13 +129,13 @@ Therefore $n = p$ must be prime, so $|M/N| = |A| = p$.
 
 ::: {.pf-step #s3}
 
-The group $\mu_\infty$ of all complex roots of unity has no maximal $\mathbb Z$-submodule.
+The group $\mu_\infty$ of all complex roots of unity has no maximal $\ZZ$-submodule.
 
 ::: pf-proof
 
 ::: pf-step
 
-Suppose for contradiction that $N \subset M$ is a maximal $\mathbb{Z}$-submodule (subgroup).
+Suppose for contradiction that $N \subset M$ is a maximal $\ZZ$-submodule (subgroup).
 
 :::
 
@@ -159,7 +159,7 @@ We show that $M$ is $p$-divisible: let $x \in M$. By definition of $\mu_\infty$,
 
 ::: pf-step
 
-In $\mathbb{C}$, the polynomial $z^p - x = 0$ has $p$ solutions. Let $y \in \mathbb{C}^\times$ be any solution, so $y^p = x$.
+In $\CC$, the polynomial $z^p - x = 0$ has $p$ solutions. Let $y \in \CC^\times$ be any solution, so $y^p = x$.
 
 :::
 
@@ -189,7 +189,7 @@ This implies $M \subseteq N$, so $N = M$, which contradicts the definition of a 
 
 ::: pf-step
 
-Thus no maximal $\mathbb{Z}$-submodule of $M$ exists.
+Thus no maximal $\ZZ$-submodule of $M$ exists.
 
 :::
 

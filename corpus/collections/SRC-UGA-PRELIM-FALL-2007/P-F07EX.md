@@ -22,7 +22,7 @@ audit:
 ::: {.problem}
 Give an example (without proof) of each of the following:
 
-a. An integrable function $f: \mathbb{R} \to \mathbb{R}$ so that the function $F(x) = \int_0^x f(t)\,dt$ is differentiable everywhere but at $x = 1$.
+a. An integrable function $f: \RR \to \RR$ so that the function $F(x) = \int_0^x f(t)\,dt$ is differentiable everywhere but at $x = 1$.
 
 b. A sequence $\{a_n\}$ of real numbers such that $\sum_{n=1}^{\infty} a_n$ converges and $\sum_{n=1}^{\infty} a_n^2$ diverges.
 

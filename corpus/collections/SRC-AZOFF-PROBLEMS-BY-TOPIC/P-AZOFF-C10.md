@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C10
 kind: problem
-title: Conformal map of $\mathbb C\setminus\{x\in\mathbb R:|x|\ge1\}$ onto the disk
+title: Conformal map of $\CC\setminus\{x\in\RR:|x|\ge1\}$ onto the disk
 classification:
   areas: [complex-analysis]
   topics: []
@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $\mathbb { C } \backslash \{ x \in \mathbb { R } : | x | \geq 1 \}$ onto the open unit disk.
+Find a conformal map from $\CC \backslash \{ x \in \RR : | x | \geq 1 \}$ onto the open unit disk.
 :::
 
 ::: {.solution}

@@ -19,41 +19,41 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x)=a_nx^n+a_{n-1}x^{n-1}+\dots+a_0\in\mathbb Z[x]$ (where $a_n\neq 0$) and let $R=\mathbb Z[x]/(f)$.
-Prove that $R$ is a finitely generated module over $\mathbb Z$ if and only if $a_n=\pm 1$.
+Let $f(x)=a_nx^n+a_{n-1}x^{n-1}+\dots+a_0\in\ZZ[x]$ (where $a_n\neq 0$) and let $R=\ZZ[x]/(f)$.
+Prove that $R$ is a finitely generated module over $\ZZ$ if and only if $a_n=\pm 1$.
 :::
 
 ::: {.solution}
 
-**($\Leftarrow$) If $a_n = \pm 1$, then $R$ is a finitely generated $\mathbb{Z}$-module:**
+**($\Leftarrow$) If $a_n = \pm 1$, then $R$ is a finitely generated $\ZZ$-module:**
 
 ::: pf
 
 ::: pf-step
-Since $a_n = \pm 1$, the polynomial $f_0(x) = a_n^{-1} f(x) = x^n + a_n a_{n-1} x^{n-1} + \dots + a_n a_0$ is a monic polynomial in $\mathbb{Z}[x]$ of degree $n$, with $(f) = (f_0)$.
+Since $a_n = \pm 1$, the polynomial $f_0(x) = a_n^{-1} f(x) = x^n + a_n a_{n-1} x^{n-1} + \dots + a_n a_0$ is a monic polynomial in $\ZZ[x]$ of degree $n$, with $(f) = (f_0)$.
 
 ::: pf-proof
-$a_n \in \{1, -1\}$ is a unit in $\mathbb{Z}$, so $(f) = (f_0)$ as ideals in $\mathbb{Z}[x]$.
+$a_n \in \{1, -1\}$ is a unit in $\ZZ$, so $(f) = (f_0)$ as ideals in $\ZZ[x]$.
 :::
 
 :::
 
 ::: pf-step
-By the polynomial division algorithm over $\mathbb{Z}$ for monic polynomials, for every $g(x) \in \mathbb{Z}[x]$, there exist $q(x), r(x) \in \mathbb{Z}[x]$ such that:
+By the polynomial division algorithm over $\ZZ$ for monic polynomials, for every $g(x) \in \ZZ[x]$, there exist $q(x), r(x) \in \ZZ[x]$ such that:
 \[
 g(x) = q(x)f_0(x) + r(x), \quad \text{with } \deg(r) < n \text{ (or } r = 0\text{)}.
 \]
 
 ::: pf-proof
-division algorithm in $\mathbb{Z}[x]$ with monic divisor.
+division algorithm in $\ZZ[x]$ with monic divisor.
 :::
 
 :::
 
 ::: {.pf-step #s3}
-Passing to the quotient $R = \mathbb{Z}[x]/(f)$:
+Passing to the quotient $R = \ZZ[x]/(f)$:
 \[
-g(x) + (f) = r(x) + (f) = c_0 \cdot 1 + c_1 \bar{x} + \dots + c_{n-1} \bar{x}^{n-1}, \quad c_i \in \mathbb{Z}.
+g(x) + (f) = r(x) + (f) = c_0 \cdot 1 + c_1 \bar{x} + \dots + c_{n-1} \bar{x}^{n-1}, \quad c_i \in \ZZ.
 \]
 
 ::: pf-proof
@@ -63,7 +63,7 @@ $q(x)f_0(x) \in (f)$ and $r(x) = \sum_{i=0}^{n-1} c_i x^i$.
 :::
 
 ::: {.pf-step #s4}
-Thus $\{1, \bar{x}, \bar{x}^2, \dots, \bar{x}^{n-1}\}$ spans $R$ as a $\mathbb{Z}$-module, so $R$ is finitely generated over $\mathbb{Z}$.
+Thus $\{1, \bar{x}, \bar{x}^2, \dots, \bar{x}^{n-1}\}$ spans $R$ as a $\ZZ$-module, so $R$ is finitely generated over $\ZZ$.
 
 ::: pf-proof
 step [](#s3){.pf-ref}.
@@ -73,12 +73,12 @@ step [](#s3){.pf-ref}.
 
 :::
 
-**($\Rightarrow$) If $R$ is a finitely generated $\mathbb{Z}$-module, then $a_n = \pm 1$:**
+**($\Rightarrow$) If $R$ is a finitely generated $\ZZ$-module, then $a_n = \pm 1$:**
 
 ::: pf
 
 ::: pf-step
-Suppose $R$ is generated as a $\mathbb{Z}$-module by finitely many elements $\{g_1(\bar{x}), \dots, g_m(\bar{x})\}$.
+Suppose $R$ is generated as a $\ZZ$-module by finitely many elements $\{g_1(\bar{x}), \dots, g_m(\bar{x})\}$.
 
 ::: pf-proof
 hypothesis.
@@ -96,21 +96,21 @@ maximum degree among the finitely many polynomial generators.
 :::
 
 ::: {.pf-step #s7}
-Every element of $R$ can be represented by a polynomial in $\mathbb{Z}[x]$ of degree at most $d$.
+Every element of $R$ can be represented by a polynomial in $\ZZ[x]$ of degree at most $d$.
 
 ::: pf-proof
 
 ::: {.pf-step #s7-1}
-Any element $u \in R$ is a $\mathbb{Z}$-linear combination $u = \sum_{i=1}^m k_i g_i(\bar{x})$ with $k_i \in \mathbb{Z}$.
+Any element $u \in R$ is a $\ZZ$-linear combination $u = \sum_{i=1}^m k_i g_i(\bar{x})$ with $k_i \in \ZZ$.
 
 ::: pf-proof
-$\{g_i(\bar{x})\}$ is a $\mathbb{Z}$-generating set.
+$\{g_i(\bar{x})\}$ is a $\ZZ$-generating set.
 :::
 
 :::
 
 ::: {.pf-step #s7-2}
-The polynomial $h(x) = \sum_{i=1}^m k_i g_i(x) \in \mathbb{Z}[x]$ satisfies $\deg(h) \le \max_i \deg(g_i) = d$.
+The polynomial $h(x) = \sum_{i=1}^m k_i g_i(x) \in \ZZ[x]$ satisfies $\deg(h) \le \max_i \deg(g_i) = d$.
 
 ::: pf-proof
 degree of a sum of polynomials.
@@ -132,7 +132,7 @@ step [](#s7-1){.pf-ref} and step [](#s7-2){.pf-ref}.
 :::
 
 ::: pf-step
-For $k = d + 1$, the element $\bar{x}^k \in R$ satisfies $\bar{x}^k = h(\bar{x})$ for some $h(x) \in \mathbb{Z}[x]$ with $\deg(h) \le d$.
+For $k = d + 1$, the element $\bar{x}^k \in R$ satisfies $\bar{x}^k = h(\bar{x})$ for some $h(x) \in \ZZ[x]$ with $\deg(h) \le d$.
 
 ::: pf-proof
 step [](#s7){.pf-ref} applied to $u = \bar{x}^k$.
@@ -141,7 +141,7 @@ step [](#s7){.pf-ref} applied to $u = \bar{x}^k$.
 :::
 
 ::: pf-step
-The difference $x^k - h(x)$ belongs to the ideal $(f(x)) = f(x)\mathbb{Z}[x]$.
+The difference $x^k - h(x)$ belongs to the ideal $(f(x)) = f(x)\ZZ[x]$.
 
 ::: pf-proof
 $x^k + (f) = h(x) + (f) \iff x^k - h(x) \in (f)$.
@@ -150,10 +150,10 @@ $x^k + (f) = h(x) + (f) \iff x^k - h(x) \in (f)$.
 :::
 
 ::: pf-step
-There exists a polynomial $q(x) \in \mathbb{Z}[x]$ such that $x^k - h(x) = q(x)f(x)$.
+There exists a polynomial $q(x) \in \ZZ[x]$ such that $x^k - h(x) = q(x)f(x)$.
 
 ::: pf-proof
-definition of the principal ideal $(f(x))$ in $\mathbb{Z}[x]$.
+definition of the principal ideal $(f(x))$ in $\ZZ[x]$.
 :::
 
 :::
@@ -176,7 +176,7 @@ $h(x)$ has degree $\le d < k$, so it cannot cancel the $x^k$ term.
 The leading term of the right-hand side $q(x)f(x)$ is $\operatorname{LC}(q) \cdot a_n \cdot x^{\deg(q) + n}$.
 
 ::: pf-proof
-multiplication of polynomials over the integral domain $\mathbb{Z}$.
+multiplication of polynomials over the integral domain $\ZZ$.
 :::
 
 :::
@@ -188,16 +188,16 @@ Equating degrees gives $\deg(q) + n = k$, and equating leading coefficients give
 \]
 
 ::: pf-proof
-coefficients of polynomials in $\mathbb{Z}[x]$.
+coefficients of polynomials in $\ZZ[x]$.
 :::
 
 :::
 
 ::: pf-step
-Since $\operatorname{LC}(q), a_n \in \mathbb{Z}$, $a_n$ is a unit in $\mathbb{Z}$, which implies $a_n = \pm 1$.
+Since $\operatorname{LC}(q), a_n \in \ZZ$, $a_n$ is a unit in $\ZZ$, which implies $a_n = \pm 1$.
 
 ::: pf-proof
-the only units in the ring of integers $\mathbb{Z}$ are $1$ and $-1$.
+the only units in the ring of integers $\ZZ$ are $1$ and $-1$.
 :::
 
 :::
@@ -207,7 +207,7 @@ the only units in the ring of integers $\mathbb{Z}$ are $1$ and $-1$.
 :::
 
 ::: pf-qed
-Conclusion: $R = \mathbb{Z}[x]/(f)$ is a finitely generated $\mathbb{Z}$-module if and only if $a_n = \pm 1$.
+Conclusion: $R = \ZZ[x]/(f)$ is a finitely generated $\ZZ$-module if and only if $a_n = \pm 1$.
 step [](#s4){.pf-ref} and step [](#s11){.pf-ref}.
 :::
 

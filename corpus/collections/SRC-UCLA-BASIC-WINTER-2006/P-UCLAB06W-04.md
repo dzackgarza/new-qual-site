@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a decreasing sequence of continuous functions $f_n:[0,1]\to\mathbb R$ satisfying the uniform bound $|f_n|\leq M$ for some $M\in(0,1)$.
+Let $(f_n)$ be a decreasing sequence of continuous functions $f_n:[0,1]\to\RR$ satisfying the uniform bound $|f_n|\leq M$ for some $M\in(0,1)$.
 Suppose the pointwise limit
 \[
 f(x)=\lim_{n\to\infty}f_n(x)

@@ -32,9 +32,9 @@ audit:
 ::: {.problem}
 Prove by any method you know that:
 
-(a) $\mathbb R$ is not homeomorphic to $\mathbb R^2$.
+(a) $\RR$ is not homeomorphic to $\RR^2$.
 
-(b) $\mathbb R^2$ is not homeomorphic to $\mathbb R^3$.
+(b) $\RR^2$ is not homeomorphic to $\RR^3$.
 :::
 
 ::: {.solution}

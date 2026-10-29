@@ -62,15 +62,15 @@ Hence $G$ has a finite generating set.
 
 ::: pf-step
 
-The additive group $\mathbb Z$ is finitely generated.
+The additive group $\ZZ$ is finitely generated.
 
 ::: pf-proof
 
 Every integer is an integral multiple of $1$, so
 \[
-\mathbb Z=\langle1\rangle.
+\ZZ=\langle1\rangle.
 \]
-Thus $\mathbb Z$ is cyclic, in particular finitely generated.
+Thus $\ZZ$ is cyclic, in particular finitely generated.
 
 :::
 
@@ -78,20 +78,20 @@ Thus $\mathbb Z$ is cyclic, in particular finitely generated.
 
 ::: {.pf-step #s3}
 
-Every finitely generated subgroup of $(\mathbb Q,+)$ is cyclic.
+Every finitely generated subgroup of $(\QQ,+)$ is cyclic.
 
 ::: pf-proof
 
 Let
 \[
-H=\langle q_1,\ldots,q_r\rangle\le\mathbb Q,
+H=\langle q_1,\ldots,q_r\rangle\le\QQ,
 \]
 where
 \[
 q_i=\frac{a_i}{b_i},
 \qquad
-a_i\in\mathbb Z,
-\quad b_i\in\mathbb Z_{>0}.
+a_i\in\ZZ,
+\quad b_i\in\ZZ_{>0}.
 \]
 Choose a common positive denominator, for example
 \[
@@ -99,7 +99,7 @@ k=b_1b_2\cdots b_r.
 \]
 For each $i$, define
 \[
-n_i=a_i\frac{k}{b_i}\in\mathbb Z.
+n_i=a_i\frac{k}{b_i}\in\ZZ.
 \]
 Then
 \[
@@ -142,19 +142,19 @@ so $H$ is cyclic.
 
 ::: {.pf-step #s4}
 
-The additive group $\mathbb Q$ is not cyclic.
+The additive group $\QQ$ is not cyclic.
 
 ::: pf-proof
 
 Suppose
 \[
-\mathbb Q=\langle q\rangle
+\QQ=\langle q\rangle
 \]
-for some $q\in\mathbb Q$.
-If $q=0$, then $\langle q\rangle=\{0\}\ne\mathbb Q$.
+for some $q\in\QQ$.
+If $q=0$, then $\langle q\rangle=\{0\}\ne\QQ$.
 If $q\ne0$, then
 \[
-\frac q2\in\mathbb Q.
+\frac q2\in\QQ.
 \]
 Were $q/2\in\langle q\rangle$, there would be an integer $m$ such that
 \[
@@ -164,8 +164,8 @@ Cancelling the nonzero rational $q$ gives
 \[
 \frac12=m,
 \]
-which is impossible for $m\in\mathbb Z$.
-Thus $\mathbb Q$ is not cyclic.
+which is impossible for $m\in\ZZ$.
+Thus $\QQ$ is not cyclic.
 
 :::
 
@@ -173,16 +173,16 @@ Thus $\mathbb Q$ is not cyclic.
 
 ::: pf-step
 
-The additive group $\mathbb Q$ is not finitely generated.
+The additive group $\QQ$ is not finitely generated.
 
 ::: pf-proof
 
-If $\mathbb Q$ were finitely generated, then step [](#s3){.pf-ref}, applied to the subgroup
+If $\QQ$ were finitely generated, then step [](#s3){.pf-ref}, applied to the subgroup
 \[
-\mathbb Q\le\mathbb Q,
+\QQ\le\QQ,
 \]
-would imply that $\mathbb Q$ is cyclic.
-This contradicts step [](#s4){.pf-ref}. Hence $\mathbb Q$ is not finitely generated.
+would imply that $\QQ$ is cyclic.
+This contradicts step [](#s4){.pf-ref}. Hence $\QQ$ is not finitely generated.
 
 :::
 

@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Let $M$ be an $n$-dimensional compact connected orientable manifold.
-Let $[M] \in H_n(M; \mathbb{Z})$ be the fundamental class.
+Let $[M] \in H_n(M; \ZZ)$ be the fundamental class.
 Suppose $f : S^n \to M$ is a continuous function with $f_*([S^n]) = [M]$.
-Prove $H_*(S^n; \mathbb{Z}) \cong H_*(M; \mathbb{Z})$.
+Prove $H_*(S^n; \ZZ) \cong H_*(M; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -73,11 +73,11 @@ The target $H^k(S^n;F)$ vanishes in these degrees, so injectivity from step [](#
 
 ::: {.pf-step #s4}
 
-Therefore $H_k(M;\mathbb Z)=0$ for $0<k<n$.
+Therefore $H_k(M;\ZZ)=0$ for $0<k<n$.
 
 ::: pf-proof
 
-The homology groups of a compact manifold are finitely generated. If some $H_k(M;\mathbb Z)$ were nonzero in an intermediate degree, then either it had a free summand, detected after tensoring with $\mathbb Q$, or nonzero $p$-torsion, detected with $\mathbb F_p$ coefficients via the universal coefficient theorem. Both contradict step [](#s3){.pf-ref}.
+The homology groups of a compact manifold are finitely generated. If some $H_k(M;\ZZ)$ were nonzero in an intermediate degree, then either it had a free summand, detected after tensoring with $\QQ$, or nonzero $p$-torsion, detected with $\mathbb F_p$ coefficients via the universal coefficient theorem. Both contradict step [](#s3){.pf-ref}.
 
 :::
 
@@ -87,12 +87,12 @@ The homology groups of a compact manifold are finitely generated. If some $H_k(M
 
 Since $M$ is connected and orientable,
 $$
-H_0(M;\mathbb Z)\cong H_n(M;\mathbb Z)\cong\mathbb Z.
+H_0(M;\ZZ)\cong H_n(M;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
 
-Connectedness gives $H_0\cong\mathbb Z$, and the fundamental class gives $H_n\cong\mathbb Z$.
+Connectedness gives $H_0\cong\ZZ$, and the fundamental class gives $H_n\cong\ZZ$.
 
 :::
 
@@ -102,7 +102,7 @@ Connectedness gives $H_0\cong\mathbb Z$, and the fundamental class gives $H_n\co
 
 Thus
 $$
-\boxed{H_*(M;\mathbb Z)\cong H_*(S^n;\mathbb Z).}
+\boxed{H_*(M;\ZZ)\cong H_*(S^n;\ZZ).}
 $$
 
 ::: pf-proof

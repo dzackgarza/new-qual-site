@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R^n)$. Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that if $A$ is measurable and $|A|<\delta$, then
+Let $f\in L^1(\RR^n)$. Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that if $A$ is measurable and $|A|<\delta$, then
 \[
 \left|\int_A f\right|<\varepsilon.
 \]

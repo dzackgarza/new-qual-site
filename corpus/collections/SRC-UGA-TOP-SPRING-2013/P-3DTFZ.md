@@ -46,16 +46,16 @@ Then $g$ has degree $2013$.
 
 With the standard parametrization
 \[
-S^1=\{e^{2\pi i t}:t\in\mathbb R/\mathbb Z\},
+S^1=\{e^{2\pi i t}:t\in\RR/\ZZ\},
 \]
 the map $g$ is induced by
 \[
 t\longmapsto 2013t
 \]
-on $\mathbb R/\mathbb Z$.
+on $\RR/\ZZ$.
 Hence
 \[
-g_*:H_1(S^1;\mathbb Z)\to H_1(S^1;\mathbb Z)
+g_*:H_1(S^1;\ZZ)\to H_1(S^1;\ZZ)
 \]
 is multiplication by $2013$.
 Thus $\deg g=2013$.
@@ -95,9 +95,9 @@ The map $f$ has degree $2013$.
 
 The reduced-homology suspension isomorphism
 \[
-\sigma:\widetilde H_1(S^1;\mathbb Z)
+\sigma:\widetilde H_1(S^1;\ZZ)
 \xrightarrow{\cong}
-\widetilde H_2(\Sigma S^1;\mathbb Z)
+\widetilde H_2(\Sigma S^1;\ZZ)
 \]
 is natural.
 Therefore

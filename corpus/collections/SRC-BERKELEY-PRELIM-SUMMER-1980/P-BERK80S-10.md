@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^n\to\mathbb R$ be a function whose partial derivatives of order at most $2$ are everywhere defined and continuous.
+Let $f:\RR^n\to\RR$ be a function whose partial derivatives of order at most $2$ are everywhere defined and continuous.
 
-1. Let $a\in\mathbb R^n$ be a critical point of $f$, i.e.
+1. Let $a\in\RR^n$ be a critical point of $f$, i.e.
    \[
    \frac{\partial f}{\partial x_j}(a)=0,\qquad j=1,\ldots,n.
    \]
@@ -36,7 +36,7 @@ Let $f:\mathbb R^n\to\mathbb R$ be a function whose partial derivatives of order
    \]
    is positive definite at $x=a$.
 
-2. Assume the Hessian matrix is positive definite at every $x\in\mathbb R^n$.
+2. Assume the Hessian matrix is positive definite at every $x\in\RR^n$.
    Prove that $f$ has at most one critical point.
 :::
 

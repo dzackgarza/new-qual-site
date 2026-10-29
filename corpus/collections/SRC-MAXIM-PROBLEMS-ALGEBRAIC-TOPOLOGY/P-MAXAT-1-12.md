@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb { R } \mathbb { P } ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
+Show that $\RR \mathbb { P } ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
 :::
 
 ::: {.solution}
@@ -49,13 +49,13 @@ The embedded copy of $\mathbb{RP}^{2n}$ in $S^{2n+1}$ is two-sided.
 
 ::: pf-proof
 
-Alexander duality with $\mathbb Z/2$ coefficients gives
+Alexander duality with $\ZZ/2$ coefficients gives
 \[
-\widetilde H_0(S^{2n+1}\setminus\mathbb{RP}^{2n};\mathbb Z/2)
+\widetilde H_0(S^{2n+1}\setminus\mathbb{RP}^{2n};\ZZ/2)
 \cong
-\widetilde H^{2n}(\mathbb{RP}^{2n};\mathbb Z/2).
+\widetilde H^{2n}(\mathbb{RP}^{2n};\ZZ/2).
 \]
-The top mod-$2$ cohomology of the closed connected $2n$-manifold $\mathbb{RP}^{2n}$ is $\mathbb Z/2$, so the complement has exactly two connected components. A closed embedded hypersurface whose complement has two sides has trivial normal line bundle: choose the normal direction pointing into one fixed complementary component. Hence the embedding is two-sided.
+The top mod-$2$ cohomology of the closed connected $2n$-manifold $\mathbb{RP}^{2n}$ is $\ZZ/2$, so the complement has exactly two connected components. A closed embedded hypersurface whose complement has two sides has trivial normal line bundle: choose the normal direction pointing into one fixed complementary component. Hence the embedding is two-sided.
 
 :::
 

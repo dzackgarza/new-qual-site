@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X\subset\mathbb R^d$ be measurable with $\lambda(X)<\infty$.
+Let $X\subset\RR^d$ be measurable with $\lambda(X)<\infty$.
 Let $g,f_n$ be measurable with supports contained in $X$.
 Prove that if
 \[
@@ -24,7 +24,7 @@ f_n\to g\quad\text{in }L^\infty,
 \]
 then
 \[
-\int_{\mathbb R^d}f_n\to\int_{\mathbb R^d}g.
+\int_{\RR^d}f_n\to\int_{\RR^d}g.
 \]
 :::
 
@@ -34,14 +34,14 @@ then
 
 ::: pf-step
 
-Each $f_n$ and $g$ is integrable on $\mathbb R^d$.
+Each $f_n$ and $g$ is integrable on $\RR^d$.
 
 
 ::: pf-proof
 
 Convergence in $L^\infty$ takes place in the normed space $L^\infty$, so $g$ and every $f_n$ have finite essential supremum. Since all supports are contained in $X$ and $\lambda(X)<\infty$,
 $$
-\int_{\mathbb R^d}\abs{f_n}
+\int_{\RR^d}\abs{f_n}
 =\int_X\abs{f_n}
 \leq\lambda(X)\norm{f_n}_{L^\infty}<\infty,
 $$
@@ -55,7 +55,7 @@ and similarly for $g$.
 
 For every $n$,
 $$
-\left|\int_{\mathbb R^d}f_n-\int_{\mathbb R^d}g\right|
+\left|\int_{\RR^d}f_n-\int_{\RR^d}g\right|
 \leq
 \lambda(X)\norm{f_n-g}_{L^\infty}.
 $$
@@ -66,7 +66,7 @@ $$
 The function $f_n-g$ vanishes almost everywhere outside $X$. Therefore
 $$
 \begin{aligned}
-\left|\int_{\mathbb R^d}f_n-\int_{\mathbb R^d}g\right|
+\left|\int_{\RR^d}f_n-\int_{\RR^d}g\right|
 &=\left|\int_X(f_n-g)\right|\\
 &\leq\int_X\abs{f_n-g}\\
 &\leq\lambda(X)\norm{f_n-g}_{L^\infty}.
@@ -81,7 +81,7 @@ $$
 
 One has
 $$
-\boxed{\int_{\mathbb R^d}f_n\longrightarrow\int_{\mathbb R^d}g}.
+\boxed{\int_{\RR^d}f_n\longrightarrow\int_{\RR^d}g}.
 $$
 
 

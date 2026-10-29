@@ -31,7 +31,7 @@ The source gives $X$ only by the picture; the description in the statement is a 
 
 ::: {.solution}
 
-The surface \(X\) is orientable because it is embedded as the boundary of a thickened compact region in \(\mathbb R^3\). Thus \(X\) must be one of the orientable closed surfaces
+The surface \(X\) is orientable because it is embedded as the boundary of a thickened compact region in \(\RR^3\). Thus \(X\) must be one of the orientable closed surfaces
 \[
 S^2,\ T_1,\ T_2,\dots.
 \]

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Define the arc length of a path $\gamma:[a,b]\to\mathbb C$.
+Define the arc length of a path $\gamma:[a,b]\to\CC$.
 :::
 
 ::: {.solution}

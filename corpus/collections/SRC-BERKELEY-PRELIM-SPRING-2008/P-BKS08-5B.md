@@ -29,16 +29,16 @@ audit:
 ::: {.problem}
 Let
 $$
-\zeta=e^{2\pi i/5},\qquad \alpha=\sqrt[5]{2}\in\mathbb R,
+\zeta=e^{2\pi i/5},\qquad \alpha=\sqrt[5]{2}\in\RR,
 $$
 and let
 $$
-E=\mathbb Q(\zeta,\alpha)\subset\mathbb C.
+E=\QQ(\zeta,\alpha)\subset\CC.
 $$
 
-(a) Show that $E/\mathbb Q$ is Galois.
+(a) Show that $E/\QQ$ is Galois.
 
-(b) Compute $[E:\mathbb Q]$.
+(b) Compute $[E:\QQ]$.
 :::
 
 ::: {.solution}

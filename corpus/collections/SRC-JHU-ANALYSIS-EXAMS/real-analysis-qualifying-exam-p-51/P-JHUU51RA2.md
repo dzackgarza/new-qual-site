@@ -89,7 +89,7 @@ Then we can choose a subsequence, still denoted $(c_n)$, such that
 \[
 c_n\to\infty.
 \]
-The phases $c_n^2$ modulo $2\pi$ lie in the compact circle $\mathbb R/(2\pi\mathbb Z)$, so after passing to a further subsequence there exists $\theta\in[0,2\pi]$ such that
+The phases $c_n^2$ modulo $2\pi$ lie in the compact circle $\RR/(2\pi\ZZ)$, so after passing to a further subsequence there exists $\theta\in[0,2\pi]$ such that
 \[
 c_n^2\pmod{2\pi}\to\theta.
 \]

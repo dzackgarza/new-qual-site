@@ -38,7 +38,7 @@ Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for $n > 2$.
 
 Suppose, for contradiction, that there is a homeomorphism
 \[
-h:\mathbb R^2\to\mathbb R^n
+h:\RR^2\to\RR^n
 \]
 with $n>2$.
 
@@ -54,18 +54,18 @@ We will derive a contradiction from the homology of the complements of correspon
 
 Restricting $h$ gives a homeomorphism
 \[
-\mathbb R^2\setminus\{0\}
+\RR^2\setminus\{0\}
 \cong
-\mathbb R^n\setminus\{h(0)\}.
+\RR^n\setminus\{h(0)\}.
 \]
 
 ::: pf-proof
 
 Since $h$ is bijective,
 \[
-h\bigl(\mathbb R^2\setminus\{0\}\bigr)
+h\bigl(\RR^2\setminus\{0\}\bigr)
 =
-\mathbb R^n\setminus\{h(0)\}.
+\RR^n\setminus\{h(0)\}.
 \]
 The restriction of a homeomorphism to a subspace is a homeomorphism onto its image.
 
@@ -77,9 +77,9 @@ The restriction of a homeomorphism to a subspace is a homeomorphism onto its ima
 
 The punctured plane deformation retracts onto $S^1$, so
 \[
-H_1(\mathbb R^2\setminus\{0\};\mathbb Z)
+H_1(\RR^2\setminus\{0\};\ZZ)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 ::: pf-proof
@@ -88,14 +88,14 @@ The radial map
 \[
 r(x)=\frac{x}{\|x\|}
 \]
-is a deformation retraction of $\mathbb R^2\setminus\{0\}$ onto the unit circle $S^1$.
+is a deformation retraction of $\RR^2\setminus\{0\}$ onto the unit circle $S^1$.
 Homotopy invariance of singular homology therefore gives
 \[
-H_1(\mathbb R^2\setminus\{0\})
+H_1(\RR^2\setminus\{0\})
 \cong
 H_1(S^1)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -106,24 +106,24 @@ H_1(S^1)
 
 The punctured $n$-space deformation retracts onto $S^{n-1}$, and for $n>2$,
 \[
-H_1(\mathbb R^n\setminus\{h(0)\};\mathbb Z)=0.
+H_1(\RR^n\setminus\{h(0)\};\ZZ)=0.
 \]
 
 ::: pf-proof
 
 Translation by $-h(0)$ is a homeomorphism
 \[
-\mathbb R^n\setminus\{h(0)\}
+\RR^n\setminus\{h(0)\}
 \cong
-\mathbb R^n\setminus\{0\}.
+\RR^n\setminus\{0\}.
 \]
 Radial deformation retraction gives
 \[
-\mathbb R^n\setminus\{0\}\simeq S^{n-1}.
+\RR^n\setminus\{0\}\simeq S^{n-1}.
 \]
 Since $n>2$, one has $n-1\ge2$, and the homology of a sphere gives
 \[
-H_1(S^{n-1};\mathbb Z)=0.
+H_1(S^{n-1};\ZZ)=0.
 \]
 Hence the displayed punctured-space group vanishes.
 
@@ -135,7 +135,7 @@ Hence the displayed punctured-space group vanishes.
 
 This contradicts step [](#s2){.pf-ref}, so
 \[
-\boxed{\mathbb R^2\not\cong\mathbb R^n\quad(n>2)}.
+\boxed{\RR^2\not\cong\RR^n\quad(n>2)}.
 \]
 
 ::: pf-proof
@@ -143,11 +143,11 @@ This contradicts step [](#s2){.pf-ref}, so
 Homeomorphic spaces have isomorphic homology groups.
 But steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give respectively
 \[
-H_1(\mathbb R^2\setminus\{0\})\cong\mathbb Z
+H_1(\RR^2\setminus\{0\})\cong\ZZ
 \qquad\text{and}\qquad
-H_1(\mathbb R^n\setminus\{h(0)\})=0,
+H_1(\RR^n\setminus\{h(0)\})=0,
 \]
-contradicting the homeomorphism in step [](#s2){.pf-ref}. Therefore no homeomorphism $\mathbb R^2\to\mathbb R^n$ exists for $n>2$.
+contradicting the homeomorphism in step [](#s2){.pf-ref}. Therefore no homeomorphism $\RR^2\to\RR^n$ exists for $n>2$.
 
 :::
 

@@ -17,15 +17,15 @@ audit:
 Find all abelian groups of order $8$, up to isomorphism.
 Then identify which type occurs in each case:
 
-1. $(\mathbb Z_{15})^\times$;
+1. $(\ZZ_{15})^\times$;
 
-2. $(\mathbb Z_{17})^\times/\{\pm1\}$;
+2. $(\ZZ_{17})^\times/\{\pm1\}$;
 
-3. the roots of $z^8-1$ in $\mathbb C$, under multiplication;
+3. the roots of $z^8-1$ in $\CC$, under multiplication;
 
 4. the additive group $\mathbb F_8^+$;
 
-5. $(\mathbb Z_{16})^\times$.
+5. $(\ZZ_{16})^\times$.
 :::
 
 ::: {.solution}

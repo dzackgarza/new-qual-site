@@ -38,7 +38,7 @@ Two other derivations of this identity, using Fourier series, were given in Book
 ::: {.solution}
 Let
 \[
-f(z)=\frac{\pi\cot(\pi z)}{(u+z)^2},\qquad u\notin\mathbb Z,
+f(z)=\frac{\pi\cot(\pi z)}{(u+z)^2},\qquad u\notin\ZZ,
 \]
 and let $C_N$ be $|z|=R_N=N+\tfrac12$, with $N\ge |u|$.
 

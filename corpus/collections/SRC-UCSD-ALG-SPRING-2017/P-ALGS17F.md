@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F$ be a prime field, so that $F$ is either isomorphic to $\mathbb{Q}$ or $\mathbb{F}_p$ for a prime $p$.
+Let $F$ be a prime field, so that $F$ is either isomorphic to $\QQ$ or $\mathbb{F}_p$ for a prime $p$.
 Show that the algebraic closure of $F$ is infinite-dimensional over $F$.
 :::
 
@@ -49,7 +49,7 @@ For each positive integer $n$, there is an irreducible polynomial of degree $n$ 
 
 ::: pf-proof
 
-for $F = \mathbb{Q}$, $x^n - 2$ is irreducible (Eisenstein at $2$); for $F = \mathbb{F}_p$, there is an irreducible polynomial of every degree $n$ (the field $\mathbb{F}_{p^n}$ exists, and its generator over $\mathbb{F}_p$ has degree $n$).
+for $F = \QQ$, $x^n - 2$ is irreducible (Eisenstein at $2$); for $F = \mathbb{F}_p$, there is an irreducible polynomial of every degree $n$ (the field $\mathbb{F}_{p^n}$ exists, and its generator over $\mathbb{F}_p$ has degree $n$).
 
 :::
 

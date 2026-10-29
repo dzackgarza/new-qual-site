@@ -164,7 +164,7 @@ Applying Seifert--van Kampen to the wedge of two circles gives
 \cong
 \pi_1(S^1)*\pi_1(S^1)
 \cong
-\mathbb Z*\mathbb Z
+\ZZ*\ZZ
 =F_2.
 \]
 

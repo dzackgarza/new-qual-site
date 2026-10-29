@@ -31,7 +31,7 @@ Extension to $[1, \infty)$ and pointwise limit:
 ::: pf-proof
 
 ::: pf-step
-Define the sequence of functions $f_n: [1, \infty) \to \mathbb{R}$ by
+Define the sequence of functions $f_n: [1, \infty) \to \RR$ by
 $$f_n(x) = \frac{\chi_{[1, n]}(x)}{\left(1 + \frac{x}{n}\right)^n x^{1/n}}.$$
 
 :::

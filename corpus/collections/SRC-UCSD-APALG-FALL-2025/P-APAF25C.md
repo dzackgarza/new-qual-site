@@ -112,7 +112,7 @@ and
 \]
 
 ::: pf-proof
-The Jordan canonical form over \(\mathbb C\) is determined uniquely up to permutation of blocks by the eigenvalues and the multiset of block sizes for each eigenvalue. By step [](#partitions-satisfying-condition){.pf-ref}, precisely the two displayed multisets occur for eigenvalue \(-2\), while the \(-3\) part is uniquely the single block \([-3]\).
+The Jordan canonical form over \(\CC\) is determined uniquely up to permutation of blocks by the eigenvalues and the multiset of block sizes for each eigenvalue. By step [](#partitions-satisfying-condition){.pf-ref}, precisely the two displayed multisets occur for eigenvalue \(-2\), while the \(-3\) part is uniquely the single block \([-3]\).
 :::
 
 :::

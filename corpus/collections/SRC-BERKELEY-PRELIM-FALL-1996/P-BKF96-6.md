@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF96-6
 kind: problem
-title: Simultaneous normal form for two anticommuting involutions on $\mathbb R^2$
+title: Simultaneous normal form for two anticommuting involutions on $\RR^2$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft

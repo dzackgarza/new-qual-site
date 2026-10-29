@@ -25,11 +25,11 @@ Show that $f$ has a fixed point.
 
 ::: pf-step
 For even $n>0$, the rational homology of $\mathbb{RP}^n$ is
-$$H_0(\mathbb{RP}^n;\mathbb Q)\cong\mathbb Q,$$
+$$H_0(\mathbb{RP}^n;\QQ)\cong\QQ,$$
 with all positive-degree rational homology groups zero.
 
 ::: pf-proof
-Integral homology in positive degrees is $2$-torsion in the odd degrees below $n$, and the top integral homology vanishes because even-dimensional real projective space is nonorientable. Tensoring with $\mathbb Q$ kills the torsion.
+Integral homology in positive degrees is $2$-torsion in the odd degrees below $n$, and the top integral homology vanishes because even-dimensional real projective space is nonorientable. Tensoring with $\QQ$ kills the torsion.
 :::
 
 :::
@@ -39,7 +39,7 @@ Hence every self-map $f:\mathbb{RP}^n\to\mathbb{RP}^n$ has Lefschetz number
 $$L(f)=1.$$
 
 ::: pf-proof
-Only $H_0(-;\mathbb Q)$ contributes to the Lefschetz trace, and any self-map of a connected space induces the identity there.
+Only $H_0(-;\QQ)$ contributes to the Lefschetz trace, and any self-map of a connected space induces the identity there.
 :::
 
 :::

@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-For $A\in M_n(\mathbb R)$ define
+For $A\in M_n(\RR)$ define
 \[
 e^A:=\sum_{k=0}^\infty \frac{A^k}{k!}.
 \]
-Let $v_0\in\mathbb R^n$.
+Let $v_0\in\RR^n$.
 Prove that
 \[
 v(t)=e^{At}v_0
@@ -35,7 +35,7 @@ Explain precisely which theorems from calculus you use and why they apply.
 
 ::: {.solution}
 
-Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\mathbb R)$, for example the operator norm induced by the Euclidean norm.
+Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\RR)$, for example the operator norm induced by the Euclidean norm.
 
 ::: pf
 
@@ -107,7 +107,7 @@ so the Weierstrass $M$-test again gives uniform convergence.
 
 ::: {.pf-step #s1-3}
 
-The function $E:\mathbb R\to M_n(\mathbb R)$ is differentiable and may be differentiated term by term:
+The function $E:\RR\to M_n(\RR)$ is differentiable and may be differentiated term by term:
 \[
 E'(t)
 =
@@ -173,7 +173,7 @@ v'(t)=Av(t).
 
 Multiplication by the fixed vector $v_0$ is a linear continuous map
 \[
-M_n(\mathbb R)\to\mathbb R^n.
+M_n(\RR)\to\RR^n.
 \]
 Hence
 \[

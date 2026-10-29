@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Denote the set of invertible elements of the ring $\mathbb { Z } _ { n }$ by $U _ { n }$
+[NEW] Denote the set of invertible elements of the ring $\ZZ _ { n }$ by $U _ { n }$
 
 (a) List all the elements of $U _ { 2 4 }$
 

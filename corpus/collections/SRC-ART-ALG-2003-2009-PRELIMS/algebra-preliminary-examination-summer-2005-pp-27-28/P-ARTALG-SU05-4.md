@@ -24,7 +24,7 @@ audit:
   note: "Verified that the cubic splitting field has no real quadratic subfield, proved the product Galois group by restriction and degree, and checked Sylow conjugation and every fixed-field degree."
 ---
 ::: {.problem}
-Let $K$ be the splitting field of $(x^3-2)(x^2-3)$ over $\mathbb{Q}$ and $G$ be the Galois group of $K/\mathbb{Q}$.
+Let $K$ be the splitting field of $(x^3-2)(x^2-3)$ over $\QQ$ and $G$ be the Galois group of $K/\QQ$.
 
 (a) For each prime divisor $p$ of $|G|$, decide whether $G$ has a normal Sylow $p$-subgroup.
 
@@ -35,35 +35,35 @@ Determine the corresponding subfields.
 ::: {.solution}
 Choose $a=\sqrt[3]{2}>0$, $b=\sqrt3>0$, and
 $\zeta=(-1+i\sqrt3)/2$, a primitive cube root of unity.
-Then $K=\mathbb Q(a,\zeta,b)$ and $G\cong S_3\times C_2$.
+Then $K=\QQ(a,\zeta,b)$ and $G\cong S_3\times C_2$.
 The Sylow $3$-subgroup is normal, but no Sylow $2$-subgroup is normal.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The field $E=\mathbb Q(a,\zeta)$ has degree $6$ and Galois
-group $S_3$, and its unique quadratic subfield is $\mathbb Q(\zeta)$.
+The field $E=\QQ(a,\zeta)$ has degree $6$ and Galois
+group $S_3$, and its unique quadratic subfield is $\QQ(\zeta)$.
 
 ::: pf-proof
 
 The roots of $x^3-2$ are $a,\zeta a,\zeta^2a$, so their
 splitting field is $E$: the ratio $(\zeta a)/a$ recovers $\zeta$.
 Eisenstein's criterion at $2$ makes $x^3-2$ irreducible over
-$\mathbb Q$, giving $[\mathbb Q(a):\mathbb Q]=3$ [@DF04].
-The field $\mathbb Q(a)$ is real and $\zeta$ is nonreal, with
-$\zeta^2+\zeta+1=0$. Hence $[E:\mathbb Q(a)]=2$ and
-$[E:\mathbb Q]=6$.
+$\QQ$, giving $[\QQ(a):\QQ]=3$ [@DF04].
+The field $\QQ(a)$ is real and $\zeta$ is nonreal, with
+$\zeta^2+\zeta+1=0$. Hence $[E:\QQ(a)]=2$ and
+$[E:\QQ]=6$.
 
-As a splitting field in characteristic zero, $E/\mathbb Q$ is
+As a splitting field in characteristic zero, $E/\QQ$ is
 Galois. Its group acts faithfully on the three roots, since these
 generate $E$. It is therefore a subgroup of $S_3$ of order $6$,
 and must equal $S_3$. This group has exactly one subgroup of
 order $3$: its two $3$-cycles are inverse and generate the same
 subgroup. The Galois correspondence thus gives exactly one
 quadratic subfield [@DF04]. The nonreal root $\zeta$ of
-$x^2+x+1$ has degree $2$ over $\mathbb Q$, so that subfield is
-$\mathbb Q(\zeta)$.
+$x^2+x+1$ has degree $2$ over $\QQ$, so that subfield is
+$\QQ(\zeta)$.
 
 :::
 
@@ -77,25 +77,25 @@ The field $K$ has degree $12$ and $G\cong S_3\times C_2$.
 
 The number $3$ is not a rational square: in a square of a nonzero
 rational number the exponent of the prime $3$ is even, whereas
-in $3$ it is one. Thus $\mathbb Q(b)$ is a real quadratic field.
+in $3$ it is one. Thus $\QQ(b)$ is a real quadratic field.
 If $b\in E$, step [](#s1){.pf-ref} would force
-$\mathbb Q(b)=\mathbb Q(\zeta)$, which is impossible because
+$\QQ(b)=\QQ(\zeta)$, which is impossible because
 the latter contains a nonreal element. Therefore $b\notin E$.
 
 The polynomial $x^2-3$ remains irreducible over $E$, since neither
 of its roots $\pm b$ lies in $E$. Consequently
-$[K:E]=2$ and $[K:\mathbb Q]=12$.
+$[K:E]=2$ and $[K:\QQ]=12$.
 The roots of the product polynomial generate $E$ and contain $b$,
 so $K=E(b)$ is precisely its splitting field, and is Galois over
-$\mathbb Q$.
+$\QQ$.
 
-Every element of $G$ preserves both $E$ and $\mathbb Q(b)$,
+Every element of $G$ preserves both $E$ and $\QQ(b)$,
 because they are splitting fields of the two individual factors.
 Restriction gives an injective homomorphism
 $$
 G\longrightarrow
-\operatorname{Gal}(E/\mathbb Q)\times
-\operatorname{Gal}(\mathbb Q(b)/\mathbb Q).
+\operatorname{Gal}(E/\QQ)\times
+\operatorname{Gal}(\QQ(b)/\QQ).
 $$
 It is injective because $E$ and $b$ generate $K$. Both sides have
 order $12$, so it is an isomorphism. The two factors are $S_3$
@@ -121,8 +121,8 @@ with $r,s$.
 
 ::: pf-proof
 
-Since $[E:\mathbb Q(\zeta)]=3$, the minimal polynomial of $a$
-over $\mathbb Q(\zeta)$ is $x^3-2$. Sending $a$ to $\zeta a$
+Since $[E:\QQ(\zeta)]=3$, the minimal polynomial of $a$
+over $\QQ(\zeta)$ is $x^3-2$. Sending $a$ to $\zeta a$
 therefore defines an automorphism of $E$ fixing $\zeta$: its
 image contains $\zeta$ and $\zeta a$, hence also $a$.
 Complex conjugation on $E$ fixes $a$ and sends $\zeta$ to
@@ -130,7 +130,7 @@ $\zeta^{-1}$. These two automorphisms have orders $3$ and $2$,
 and their six products $r^is^j$ are distinct on $a,\zeta$.
 They generate the $S_3$ factor. The product isomorphism in
 step [](#s2){.pf-ref} lifts them while fixing $b$, and lifts the nontrivial
-automorphism of $\mathbb Q(b)$ while fixing $E$.
+automorphism of $\QQ(b)$ while fixing $E$.
 These lifts are exactly $r,s,t$. The relations follow by
 evaluating on the three field generators, and all elements
 of $G$ have the distinct forms $r^is^jt^k$ with
@@ -170,9 +170,9 @@ $G_2=\langle r\rangle$. The subgroup and fixed-field data are
 $$
 \begin{array}{c|c|c|c}
 i&G_i&|G_i|&K^{G_i}\\\hline
-0&G&12&\mathbb Q\\
-1&\langle r,t\rangle&6&\mathbb Q(\zeta)\\
-2&\langle r\rangle&3&\mathbb Q(\zeta,b)\\
+0&G&12&\QQ\\
+1&\langle r,t\rangle&6&\QQ(\zeta)\\
+2&\langle r\rangle&3&\QQ(\zeta,b)\\
 3&\{1\}&1&K
 \end{array}
 $$
@@ -187,26 +187,26 @@ $2,2,3$, respectively, and each prime-order group is cyclic.
 This proves every requirement on the series.
 
 Both $r$ and $t$ fix $\zeta$, so
-$\mathbb Q(\zeta)\subseteq K^{G_1}$. The two fields have the
-same degree $2$ over $\mathbb Q$, since the Galois correspondence
-gives $[K^{G_1}:\mathbb Q]=12/6=2$ [@DF04]. They are equal.
+$\QQ(\zeta)\subseteq K^{G_1}$. The two fields have the
+same degree $2$ over $\QQ$, since the Galois correspondence
+gives $[K^{G_1}:\QQ]=12/6=2$ [@DF04]. They are equal.
 
 The generator $r$ fixes both $\zeta$ and $b$. The field
-$\mathbb Q(\zeta,b)$ has degree $4$ over $\mathbb Q$:
-$\mathbb Q(b)$ is real quadratic, and adjoining the nonreal
+$\QQ(\zeta,b)$ has degree $4$ over $\QQ$:
+$\QQ(b)$ is real quadratic, and adjoining the nonreal
 root $\zeta$ of $x^2+x+1$ has degree $2$.
-Since $[K^{G_2}:\mathbb Q]=12/3=4$, it equals
-$\mathbb Q(\zeta,b)$. The endpoint fields are $K^G=\mathbb Q$
+Since $[K^{G_2}:\QQ]=12/3=4$, it equals
+$\QQ(\zeta,b)$. The endpoint fields are $K^G=\QQ$
 and $K^{\{1\}}=K$.
 
 Thus the corresponding increasing field tower is
 $$
-\mathbb Q\subset\mathbb Q(\sqrt{-3})
-\subset\mathbb Q(\sqrt{-3},\sqrt3)\subset K,
+\QQ\subset\QQ(\sqrt{-3})
+\subset\QQ(\sqrt{-3},\sqrt3)\subset K,
 $$
 with degrees $2,2,3$ at successive steps. Here
 $\sqrt{-3}=2\zeta+1=ib$, so the middle biquadratic field
-may also be written $\mathbb Q(i,\sqrt3)$.
+may also be written $\QQ(i,\sqrt3)$.
 
 :::
 

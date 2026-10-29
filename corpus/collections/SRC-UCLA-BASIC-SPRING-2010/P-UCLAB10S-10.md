@@ -33,7 +33,7 @@ Prove your answer.
 
 Let
 \[
-v=(a,b)\in\mathbb R^2
+v=(a,b)\in\RR^2
 \]
 be a nonzero direction vector.
 

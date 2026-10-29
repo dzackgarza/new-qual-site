@@ -25,7 +25,7 @@ These denote the total characteristic classes of the tangent bundles. Let
 \[
 a\in H^1(\mathbb{RP}^n;\mathbb F_2),
 \qquad
-x\in H^2(\mathbb{CP}^n;\mathbb Z)
+x\in H^2(\mathbb{CP}^n;\ZZ)
 \]
 be the standard generators, with $x=c_1(\gamma^*)$ for the dual tautological complex line bundle.
 
@@ -43,7 +43,7 @@ where $\gamma^1$ is the tautological real line bundle.
 
 ::: pf-proof
 
-At a line $\ell\subset\mathbb R^{n+1}$,
+At a line $\ell\subset\RR^{n+1}$,
 \[
 T_{\ell}\mathbb{RP}^n\cong\operatorname{Hom}(\ell,\ell^\perp).
 \]
@@ -94,7 +94,7 @@ H^*(\mathbb{RP}^n;\mathbb F_2)
 
 For complex projective space the Euler sequence gives a stable complex bundle isomorphism
 \[
-T\mathbb{CP}^n\oplus\varepsilon^1_{\mathbb C}
+T\mathbb{CP}^n\oplus\varepsilon^1_{\CC}
 \cong(n+1)\gamma^*.
 \]
 
@@ -123,10 +123,10 @@ Therefore
 
 ::: pf-proof
 
-The total Chern class of $\gamma^*$ is $1+x$. Apply Whitney multiplicativity to step [](#s1-3){.pf-ref} and use $c(\varepsilon^1_{\mathbb C})=1$. The formula is interpreted in
+The total Chern class of $\gamma^*$ is $1+x$. Apply Whitney multiplicativity to step [](#s1-3){.pf-ref} and use $c(\varepsilon^1_{\CC})=1$. The formula is interpreted in
 \[
-H^*(\mathbb{CP}^n;\mathbb Z)
-=\mathbb Z[x]/(x^{n+1}).
+H^*(\mathbb{CP}^n;\ZZ)
+=\ZZ[x]/(x^{n+1}).
 \]
 Thus explicitly
 \[
@@ -141,11 +141,11 @@ c_i(T\mathbb{CP}^n)=\binom{n+1}{i}x^i.
 
 For a complex vector bundle $E$, the Pontryagin class of its underlying real bundle satisfies
 \[
-p(E_{\mathbb R})=c(E)c(\overline E)
+p(E_{\RR})=c(E)c(\overline E)
 \]
 after retaining the even-degree signs, equivalently under the splitting principle
 \[
-p(E_{\mathbb R})=\prod_j(1+y_j^2)
+p(E_{\RR})=\prod_j(1+y_j^2)
 \]
 for Chern roots $y_j$.
 
@@ -154,11 +154,11 @@ for Chern roots $y_j$.
 
 By definition,
 \[
-p_i(E_{\mathbb R})=(-1)^ic_{2i}(E_{\mathbb R}\otimes\mathbb C).
+p_i(E_{\RR})=(-1)^ic_{2i}(E_{\RR}\otimes\CC).
 \]
 There is a natural complex-bundle isomorphism
 \[
-E_{\mathbb R}\otimes\mathbb C\cong E\oplus\overline E.
+E_{\RR}\otimes\CC\cong E\oplus\overline E.
 \]
 If the Chern roots of $E$ are $y_j$, those of $\overline E$ are $-y_j$, and the definition yields the product $\prod_j(1+y_j^2)$.
 

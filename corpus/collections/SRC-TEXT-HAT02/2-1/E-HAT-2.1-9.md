@@ -33,7 +33,7 @@ Thus $X$ has a single $k$ simplex for each $k \leq n$.
 ::: {.solution}
 Let $\sigma_k$ denote the unique $k$-simplex of $X$. Then
 \[
-C_k(X)\cong\mathbb Z\langle\sigma_k\rangle
+C_k(X)\cong\ZZ\langle\sigma_k\rangle
 \qquad(0\le k\le n).
 \]
 
@@ -65,21 +65,21 @@ All $(k-1)$-faces of $\sigma_k$ are identified with the unique simplex $\sigma_{
 
 Thus the chain complex is
 \[
-0\longrightarrow\mathbb Z
+0\longrightarrow\ZZ
 \mathop{\longrightarrow}^{\partial_n}
-\mathbb Z
+\ZZ
 \mathop{\longrightarrow}^{\partial_{n-1}}
 \cdots
-\mathbb Z
+\ZZ
 \mathop{\longrightarrow}^{\partial_1}
-\mathbb Z
+\ZZ
 \longrightarrow0,
 \]
 where $\partial_k$ is the identity for even $k$ and zero for odd $k$.
 
 ::: pf-proof
 
-This is exactly step [](#s1){.pf-ref} after identifying each $C_k$ with $\mathbb Z$.
+This is exactly step [](#s1){.pf-ref} after identifying each $C_k$ with $\ZZ$.
 
 :::
 
@@ -96,7 +96,7 @@ H_k(X)=0.
 
 If $k$ is even then $\partial_k=1$, so $\ker\partial_k=0$. If $k$ is odd then $\partial_k=0$, but $k+1$ is even, so
 \[
-\operatorname{im}\partial_{k+1}=\mathbb Z=C_k.
+\operatorname{im}\partial_{k+1}=\ZZ=C_k.
 \]
 Thus the homology vanishes in either case.
 
@@ -110,7 +110,7 @@ The top homology is
 \[
 H_n(X)\cong
 \begin{cases}
-\mathbb Z,&n\text{ odd},\\
+\ZZ,&n\text{ odd},\\
 0,&n\text{ even}.
 \end{cases}
 \]
@@ -132,13 +132,13 @@ By step [](#s1){.pf-ref}, $\partial_n=0$ for odd $n$ and is the identity for eve
 Therefore
 \[
 \boxed{
-H_0(X)\cong\mathbb Z,
+H_0(X)\cong\ZZ,
 \qquad
 H_k(X)=0\ (0<k<n),
 \qquad
 H_n(X)\cong
 \begin{cases}
-\mathbb Z,&n\text{ odd},\\
+\ZZ,&n\text{ odd},\\
 0,&n\text{ even}.
 \end{cases}
 }
@@ -146,7 +146,7 @@ H_n(X)\cong
 
 ::: pf-proof
 
-The space is connected, so $H_0(X)\cong\mathbb Z$. The higher groups are given by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+The space is connected, so $H_0(X)\cong\ZZ$. The higher groups are given by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 

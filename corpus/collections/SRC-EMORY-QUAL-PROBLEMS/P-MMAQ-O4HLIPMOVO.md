@@ -75,7 +75,7 @@ A $d$-dimensional vector space over a field with $q$ elements contains $q^d$ ele
 Since $\# L = p^s$, we have $s = rd$, which implies $r \mid s$ (and therefore $r \le s$).
 
 ::: pf-proof
-Unique factorization in $\mathbb Z$ turns $p^s = p^{rd}$ into $s=rd$.
+Unique factorization in $\ZZ$ turns $p^s = p^{rd}$ into $s=rd$.
 :::
 
 :::

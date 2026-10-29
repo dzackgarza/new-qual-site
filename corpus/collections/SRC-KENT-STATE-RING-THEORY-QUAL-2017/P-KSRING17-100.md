@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-100
 kind: problem
-title: Euclidean algorithm in $\mathbb Z[i]$ for $\gcd(5+i,13)$
+title: Euclidean algorithm in $\ZZ[i]$ for $\gcd(5+i,13)$
 classification:
   areas: [algebra]
   topics: []

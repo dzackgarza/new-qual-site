@@ -36,7 +36,7 @@ Let $$A = \left\{x\in\ell^2: \sum_{n\ge1} n|x_n|^2 \le 1\right\}.$$
 
 a. Show that $A$ is compact in the $\ell^2$ topology.
 
-b. Show that the mapping from $A$ to $\mathbb{R}$ defined by $$x \mapsto \int_0^{2\pi} \left|\sum_{n\ge1} x_n e^{in\theta}\right| \frac{d\theta}{2\pi}$$ achieves its maximum on $A$.
+b. Show that the mapping from $A$ to $\RR$ defined by $$x \mapsto \int_0^{2\pi} \left|\sum_{n\ge1} x_n e^{in\theta}\right| \frac{d\theta}{2\pi}$$ achieves its maximum on $A$.
 :::
 
 ::: {.solution}
@@ -122,11 +122,11 @@ By step [](#s2){.pf-ref}, every $x\in A$ has tail norm
 The first $N$ coordinates of $x\in A$ lie in the finite-dimensional ellipsoid
 \[
 B_N=
-\left\{(z_1,\ldots,z_N)\in\mathbb C^N:
+\left\{(z_1,\ldots,z_N)\in\CC^N:
 \sum_{n=1}^N n|z_n|^2\le1
 \right\}.
 \]
-This set is closed and bounded in the finite-dimensional normed space $\mathbb C^N$, hence compact.
+This set is closed and bounded in the finite-dimensional normed space $\CC^N$, hence compact.
 Therefore it has a finite $\varepsilon/2$-net
 \[
 v^{(1)},\ldots,v^{(M)}.
@@ -246,7 +246,7 @@ The functional $\Phi$ attains its maximum on $A$.
 
 ::: pf-proof
 
-By step [](#s4){.pf-ref}, $A$ is compact, and by step [](#s6){.pf-ref}, $\Phi:A\to\mathbb R$ is continuous.
+By step [](#s4){.pf-ref}, $A$ is compact, and by step [](#s6){.pf-ref}, $\Phi:A\to\RR$ is continuous.
 The extreme-value theorem therefore gives an element $x_\ast\in A$ such that
 \[
 \Phi(x_\ast)=\max_{x\in A}\Phi(x).

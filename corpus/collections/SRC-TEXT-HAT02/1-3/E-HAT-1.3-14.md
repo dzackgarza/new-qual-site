@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-1.3-14
 kind: problem
-title: Connected covering spaces of $\mathbb{RP}^2 \vee \mathbb{RP}^2$
+title: Connected covering spaces of $\RP^2 \vee \RP^2$
 classification:
   areas:
   - topology
@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-Find all the connected covering spaces of $\mathbb{RP}^2 \vee \mathbb{RP}^2$.
+Find all the connected covering spaces of $\RP^2 \vee \RP^2$.
 :::
 
 ::: {.solution}
 Write
 \[
-X=\mathbb{RP}^2\vee\mathbb{RP}^2
+X=\RP^2\vee\RP^2
 \]
 and let $a,b$ be the two order-two generators coming from the two summands.
 Then
@@ -64,7 +64,7 @@ Every subgroup of $D_\infty$ is one of the following types:
 
 The infinite cyclic subgroup
 \[
-\langle r\rangle\cong\mathbb Z
+\langle r\rangle\cong\ZZ
 \]
 has index two in $D_\infty$, and every element outside it is a reflection $r^k a$ of order two.
 
@@ -161,21 +161,21 @@ The subgroup is normal because conjugation sends $r^n$ to $r^{\pm n}$.
 ::: {.pf-step #s5}
 
 These subgroup types have a direct geometric description.
-For each lift of the wedge point, an $a$-orbit of two vertices is joined by a lifted copy of $S^2\to\mathbb{RP}^2$ from the first summand, while an $a$-fixed vertex carries a copy of $\mathbb{RP}^2$ itself; similarly for $b$ and the second summand.
+For each lift of the wedge point, an $a$-orbit of two vertices is joined by a lifted copy of $S^2\to\RP^2$ from the first summand, while an $a$-fixed vertex carries a copy of $\RP^2$ itself; similarly for $b$ and the second summand.
 
 ::: pf-proof
 
 Use the standard CW structure
 \[
-\mathbb{RP}^2=e^0\cup e^1\cup e^2,
+\RP^2=e^0\cup e^1\cup e^2,
 \]
 where the $2$-cell is attached by the degree-two word $a^2$ (or $b^2$).
 In a covering, if the monodromy involution $a$ exchanges two sheets, the two lifted $a$-edges and their lifted $2$-cells form the standard double cover
 \[
-S^2\to\mathbb{RP}^2
+S^2\to\RP^2
 \]
 between those two lifted wedge points.
-If $a$ fixes a sheet, the corresponding summand lifts homeomorphically as $\mathbb{RP}^2$ attached at that vertex.
+If $a$ fixes a sheet, the corresponding summand lifts homeomorphically as $\RP^2$ attached at that vertex.
 The same statement holds for $b$.
 
 :::
@@ -203,8 +203,8 @@ The two reflection subgroups $\langle a\rangle$ and $\langle b\rangle$ give two 
 
 ::: pf-proof
 
-For $\langle a\rangle$, the Schreier graph is a ray whose endpoint is fixed by $a$; therefore the endpoint carries an $a$-type $\mathbb{RP}^2$, followed by an infinite alternating chain of $S^2$ pieces.
-For $\langle b\rangle$, the same construction has a $b$-type $\mathbb{RP}^2$ at the endpoint.
+For $\langle a\rangle$, the Schreier graph is a ray whose endpoint is fixed by $a$; therefore the endpoint carries an $a$-type $\RP^2$, followed by an infinite alternating chain of $S^2$ pieces.
+For $\langle b\rangle$, the same construction has a $b$-type $\RP^2$ at the endpoint.
 The two covers are not isomorphic over $X$ because the two endpoint projective planes map to different wedge summands.
 
 :::
@@ -258,7 +258,7 @@ There is one lifted wedge point fixed by both $a$ and $b$, so both projective-pl
 
 ::: pf-step
 
-The list in steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} contains every connected covering space of $\mathbb{RP}^2\vee\mathbb{RP}^2$, up to unbased covering isomorphism.
+The list in steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} contains every connected covering space of $\RP^2\vee\RP^2$, up to unbased covering isomorphism.
 
 ::: pf-proof
 

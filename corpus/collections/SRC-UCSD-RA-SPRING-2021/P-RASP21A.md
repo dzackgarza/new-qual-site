@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $A, B \subseteq \mathbb{R}$ be Lebesgue measurable and suppose
+Let $A, B \subseteq \RR$ be Lebesgue measurable and suppose
 $$
-\{a+b:a\in A,\ b\in B\}\subseteq\mathbb R\setminus\mathbb Q.
+\{a+b:a\in A,\ b\in B\}\subseteq\RR\setminus\QQ.
 $$
 Prove that either $m(A)=0$ or $m(B)=0$.
 :::
@@ -39,7 +39,7 @@ m(A)>0
 \qquad\text{and}\qquad
 m(B)>0.
 \]
-Because Lebesgue measure on $\mathbb R$ is $\sigma$-finite, there exist bounded measurable subsets
+Because Lebesgue measure on $\RR$ is $\sigma$-finite, there exist bounded measurable subsets
 \[
 A_0\subseteq A,\qquad B_0\subseteq B
 \]
@@ -48,7 +48,7 @@ with
 0<m(A_0)<\infty,\qquad 0<m(B_0)<\infty.
 \]
 
-For $t\in\mathbb R$, set
+For $t\in\RR$, set
 \[
 h(t):=m\bigl(A_0\cap(t-B_0)\bigr).
 \]
@@ -56,9 +56,9 @@ Equivalently,
 \[
 h=\mathbf1_{A_0}*\mathbf1_{B_0}
 \]
-up to the harmless reflection convention for convolution. Since $\mathbf1_{A_0},\mathbf1_{B_0}\in L^1(\mathbb R)$, the function $h$ is continuous. Moreover, by Tonelli,
+up to the harmless reflection convention for convolution. Since $\mathbf1_{A_0},\mathbf1_{B_0}\in L^1(\RR)$, the function $h$ is continuous. Moreover, by Tonelli,
 \[
-\int_{\mathbb R}h(t)\,dt=m(A_0)m(B_0)>0.
+\int_{\RR}h(t)\,dt=m(A_0)m(B_0)>0.
 \]
 Hence $h(t_0)>0$ for some $t_0$. By continuity, $h>0$ on a nonempty open interval $I$ containing $t_0$.
 
@@ -68,7 +68,7 @@ I\subseteq A_0+B_0\subseteq A+B.
 \]
 Every nonempty open interval contains a rational number, contradicting
 \[
-A+B\subseteq\mathbb R\setminus\mathbb Q.
+A+B\subseteq\RR\setminus\QQ.
 \]
 Therefore at least one of $A$ or $B$ must have measure zero.
 :::

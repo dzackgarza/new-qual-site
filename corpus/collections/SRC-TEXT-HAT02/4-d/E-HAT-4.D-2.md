@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.D-2
 kind: problem
-title: Cohomology of $K(\mathbb{Z}_p, 1)$ via Leray--Hirsch
+title: Cohomology of $K(\ZZ_p, 1)$ via Leray--Hirsch
 classification:
   areas:
   - topology
@@ -25,40 +25,40 @@ audit:
 ---
 
 ::: {.problem}
-Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\mathbb{Z}_p \to \mathbb{CP}^\infty$ to compute $H^*(K(\mathbb{Z}_p, 1); \mathbb{Z}_p)$ from $H^*(\mathbb{CP}^\infty; \mathbb{Z}_p)$.
+Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\ZZ_p \to \mathbb{CP}^\infty$ to compute $H^*(K(\ZZ_p, 1); \ZZ_p)$ from $H^*(\mathbb{CP}^\infty; \ZZ_p)$.
 :::
 
 ::: {.solution}
 Consider
 \[
-S^1\longrightarrow S^\infty/\mathbb Z_p\xrightarrow{q}\mathbb{CP}^\infty.
+S^1\longrightarrow S^\infty/\ZZ_p\xrightarrow{q}\mathbb{CP}^\infty.
 \]
 The inclusion of a fiber induces on fundamental groups the reduction map
 \[
-\mathbb Z=\pi_1(S^1)\longrightarrow\pi_1(S^\infty/\mathbb Z_p)=\mathbb Z_p.
+\ZZ=\pi_1(S^1)\longrightarrow\pi_1(S^\infty/\ZZ_p)=\ZZ_p.
 \]
 Therefore the generator
 \[
-a\in H^1(S^\infty/\mathbb Z_p;\mathbb Z_p)
+a\in H^1(S^\infty/\ZZ_p;\ZZ_p)
 \]
-restricts to the generator of \(H^1(S^1;\mathbb Z_p)\). Leray--Hirsch gives
+restricts to the generator of \(H^1(S^1;\ZZ_p)\). Leray--Hirsch gives
 \[
-H^*(K(\mathbb Z_p,1);\mathbb Z_p)
-\cong H^*(\mathbb{CP}^\infty;\mathbb Z_p)\{1,a\}
+H^*(K(\ZZ_p,1);\ZZ_p)
+\cong H^*(\mathbb{CP}^\infty;\ZZ_p)\{1,a\}
 \]
-as a module. If \(b=q^*c\), where \(c\) generates \(H^2(\mathbb{CP}^\infty;\mathbb Z_p)\), then
+as a module. If \(b=q^*c\), where \(c\) generates \(H^2(\mathbb{CP}^\infty;\ZZ_p)\), then
 \[
-H^*(K(\mathbb Z_p,1);\mathbb Z_p)
-\cong \mathbb Z_p[b]\{1,a\},
+H^*(K(\ZZ_p,1);\ZZ_p)
+\cong \ZZ_p[b]\{1,a\},
 \qquad |a|=1,\ |b|=2.
 \]
 For odd \(p\), graded commutativity gives \(a^2=-a^2\), hence \(a^2=0\), so
 \[
-\boxed{H^*(K(\mathbb Z_p,1);\mathbb Z_p)
-\cong \Lambda(a)\otimes\mathbb Z_p[b]\qquad(p\text{ odd}).}
+\boxed{H^*(K(\ZZ_p,1);\ZZ_p)
+\cong \Lambda(a)\otimes\ZZ_p[b]\qquad(p\text{ odd}).}
 \]
-The Bockstein associated to \(0\to\mathbb Z_p\to\mathbb Z_{p^2}\to\mathbb Z_p\to0\) satisfies \(\beta(a)=b\). For \(p=2\), this Bockstein is \(Sq^1\) on degree-one classes, so \(b=a^2\). Hence
+The Bockstein associated to \(0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0\) satisfies \(\beta(a)=b\). For \(p=2\), this Bockstein is \(Sq^1\) on degree-one classes, so \(b=a^2\). Hence
 \[
-\boxed{H^*(K(\mathbb Z_2,1);\mathbb Z_2)\cong\mathbb Z_2[a],\quad |a|=1.}
+\boxed{H^*(K(\ZZ_2,1);\ZZ_2)\cong\ZZ_2[a],\quad |a|=1.}
 \]
 :::

@@ -20,13 +20,13 @@ Give examples of the following. No proofs are required.
 
 (a) A real power series whose domain of convergence is the singleton $\{5\}$.
 
-(b) Functions $f,g:\mathbb R\to\mathbb R$, both differentiable at $0$, such that $f\circ g$ is not differentiable at $0$.
+(b) Functions $f,g:\RR\to\RR$, both differentiable at $0$, such that $f\circ g$ is not differentiable at $0$.
 
-(c) A function $f:\mathbb R^2\to\mathbb R$ that is continuous in each variable separately but is not continuous at $(0,0)$.
+(c) A function $f:\RR^2\to\RR$ that is continuous in each variable separately but is not continuous at $(0,0)$.
 
 (d) A sequence $(a_n)$ converging to $0$ such that the partial sums of $\sum a_n$ are bounded but the series diverges.
 
-(e) A continuously differentiable vector field $F=(M,N)$ on $\mathbb R^2$ such that
+(e) A continuously differentiable vector field $F=(M,N)$ on $\RR^2$ such that
 \[
 \int_C M(x,y)\,dx+N(x,y)\,dy=4,
 \]

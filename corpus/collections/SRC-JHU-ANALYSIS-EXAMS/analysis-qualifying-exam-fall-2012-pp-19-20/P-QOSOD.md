@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\mathbb C:|z|<1\}$. What is the maximum
+Let $D=\{z\in\CC:|z|<1\}$. What is the maximum
 possible value of $|f'(1/2)|$ for a holomorphic function
 $f:D\to D$ satisfying $f(1/2)=3/4$? Find all such
 functions that attain this maximum.

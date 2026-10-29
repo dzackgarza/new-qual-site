@@ -25,24 +25,24 @@ audit:
 ---
 
 ::: {.problem}
-Let $I$ be an ideal in the polynomial ring $\mathbb{C}[x_1, \ldots, x_n]$ for some $n \geq 1$.
+Let $I$ be an ideal in the polynomial ring $\CC[x_1, \ldots, x_n]$ for some $n \geq 1$.
 Prove that the following conditions on $I$ are all equivalent:
 
-(i) $\mathbb{C}[x_1, \ldots, x_n]/I$ is a finite-dimensional $\mathbb{C}$-vector space;
+(i) $\CC[x_1, \ldots, x_n]/I$ is a finite-dimensional $\CC$-vector space;
 
-(ii) $I \cap \mathbb{C}[x_i] \neq (0)$ for all $1 \leq i \leq n$;
+(ii) $I \cap \CC[x_i] \neq (0)$ for all $1 \leq i \leq n$;
 
-(iii) The set of common zeroes in affine $n$-space $\mathbb{C}^n$ of all of the polynomials in $I$ is a finite (or empty) set.
+(iii) The set of common zeroes in affine $n$-space $\CC^n$ of all of the polynomials in $I$ is a finite (or empty) set.
 :::
 
 ::: {.solution}
 Write
 \[
-R:=\mathbb C[x_1,\ldots,x_n]
+R:=\CC[x_1,\ldots,x_n]
 \]
 and let
 \[
-V(I):=\{a\in\mathbb C^n:f(a)=0\text{ for all }f\in I\}.
+V(I):=\{a\in\CC^n:f(a)=0\text{ for all }f\in I\}.
 \]
 
 ::: pf
@@ -55,7 +55,7 @@ Assume
 \[
 R/I
 \]
-is finite-dimensional over $\mathbb C$.
+is finite-dimensional over $\CC$.
 Fix $i$ and let $\bar x_i$ be the image of $x_i$ in $R/I$.
 The infinite sequence
 \[
@@ -64,7 +64,7 @@ The infinite sequence
 lies in a finite-dimensional vector space, so it is linearly dependent.
 Hence there is a nonzero polynomial
 \[
-f_i(T)=c_0+c_1T+\cdots+c_dT^d\in\mathbb C[T]
+f_i(T)=c_0+c_1T+\cdots+c_dT^d\in\CC[T]
 \]
 such that
 \[
@@ -75,9 +75,9 @@ Equivalently,
 \[
 f_i(x_i)\in I.
 \]
-Since $f_i(x_i)\neq0$ in the polynomial ring $\mathbb C[x_i]$,
+Since $f_i(x_i)\neq0$ in the polynomial ring $\CC[x_i]$,
 \[
-I\cap\mathbb C[x_i]\neq(0).
+I\cap\CC[x_i]\neq(0).
 \]
 This holds for every $i$.
 :::
@@ -90,7 +90,7 @@ Condition (ii) implies condition (i).
 ::: pf-proof
 Assume that for each $i$ there is a nonzero polynomial
 \[
-f_i(x_i)\in I\cap\mathbb C[x_i].
+f_i(x_i)\in I\cap\CC[x_i].
 \]
 Multiplying by a nonzero scalar, take each $f_i$ monic, and write
 \[
@@ -103,7 +103,7 @@ Modulo $I$, the relation $f_i(x_i)=0$ expresses
 \[
 x_i^{d_i}
 \]
-as a $\mathbb C$-linear combination of lower powers of $x_i$.
+as a $\CC$-linear combination of lower powers of $x_i$.
 Repeated reduction therefore expresses every monomial in $R/I$ as a linear combination of monomials
 \[
 x_1^{e_1}\cdots x_n^{e_n}
@@ -115,7 +115,7 @@ There are only
 d_1\cdots d_n
 \]
 such monomials.
-Hence $R/I$ is spanned by finitely many vectors over $\mathbb C$, so it is finite-dimensional.
+Hence $R/I$ is spanned by finitely many vectors over $\CC$, so it is finite-dimensional.
 :::
 
 :::
@@ -126,7 +126,7 @@ Condition (ii) implies condition (iii).
 ::: pf-proof
 For each $i$, choose
 \[
-0\neq f_i(x_i)\in I\cap\mathbb C[x_i].
+0\neq f_i(x_i)\in I\cap\CC[x_i].
 \]
 If
 \[
@@ -162,7 +162,7 @@ a^{(j)}=(a_1^{(j)},\ldots,a_n^{(j)}).
 \]
 For each $i$, define the nonzero one-variable polynomial
 \[
-g_i(T):=\prod_{j=1}^r(T-a_i^{(j)})\in\mathbb C[T].
+g_i(T):=\prod_{j=1}^r(T-a_i^{(j)})\in\CC[T].
 \]
 Then
 \[
@@ -181,9 +181,9 @@ Therefore some positive power satisfies
 \[
 g_i(x_i)^{N_i}\in I.
 \]
-This is a nonzero element of $\mathbb C[x_i]$, so
+This is a nonzero element of $\CC[x_i]$, so
 \[
-I\cap\mathbb C[x_i]\neq(0).
+I\cap\CC[x_i]\neq(0).
 \]
 
 If $V(I)=\varnothing$, the Nullstellensatz gives
@@ -193,7 +193,7 @@ If $V(I)=\varnothing$, the Nullstellensatz gives
 Hence $1\in\sqrt I$, so $1\in I$ and $I=R$.
 Then
 \[
-1\in I\cap\mathbb C[x_i]
+1\in I\cap\CC[x_i]
 \]
 for every $i$.
 Thus (ii) holds in the empty case as well.

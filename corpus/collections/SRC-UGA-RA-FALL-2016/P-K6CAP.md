@@ -39,9 +39,9 @@ Let $f, g \in L^2(\RR)$. Show that
 
 Let
 \[
-I_n:=\int_{\mathbb R} f(x)g(x+n)\,dx.
+I_n:=\int_{\RR} f(x)g(x+n)\,dx.
 \]
-Fix $\varepsilon>0$. Choose $h\in L^2(\mathbb R)$ with compact support such that
+Fix $\varepsilon>0$. Choose $h\in L^2(\RR)$ with compact support such that
 \[
 \|g-h\|_2<\frac{\varepsilon}{2(1+\|f\|_2)}.
 \]
@@ -62,8 +62,8 @@ so
 \le \|h\|_2
 \left(\int_{-n-R}^{-n+R}|f(x)|^2\,dx\right)^{1/2}.
 \]
-Since $f\in L^2(\mathbb R)$, its $L^2$ tails tend to zero, and therefore the last expression tends to $0$ as $n\to\infty$. For all sufficiently large $n$ it is below $\varepsilon/2$. Hence $|I_n|<\varepsilon$ eventually, proving
+Since $f\in L^2(\RR)$, its $L^2$ tails tend to zero, and therefore the last expression tends to $0$ as $n\to\infty$. For all sufficiently large $n$ it is below $\varepsilon/2$. Hence $|I_n|<\varepsilon$ eventually, proving
 \[
-\boxed{\lim_{n\to\infty}\int_{\mathbb R}f(x)g(x+n)\,dx=0.}
+\boxed{\lim_{n\to\infty}\int_{\RR}f(x)g(x+n)\,dx=0.}
 \]
 :::

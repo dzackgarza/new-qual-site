@@ -25,13 +25,13 @@ Find a free resolution of $\QQ$ as a $\ZZ$-module.
 
 Let
 $$
-F_0=\bigoplus_{n\ge1}\mathbb Z e_n,
+F_0=\bigoplus_{n\ge1}\ZZ e_n,
 \qquad
-F_1=\bigoplus_{n\ge1}\mathbb Z f_n.
+F_1=\bigoplus_{n\ge1}\ZZ f_n.
 $$
 Define
 $$
-\varepsilon:F_0\to\mathbb Q,
+\varepsilon:F_0\to\QQ,
 \qquad
 \varepsilon(e_n)=\frac1{n!},
 $$
@@ -104,9 +104,9 @@ so $x\equiv0$ modulo $\operatorname{im}d$. Thus $x\in\operatorname{im}d$.
 
 Therefore
 $$
-\boxed{0\longrightarrow F_1\xrightarrow{d}F_0\xrightarrow{\varepsilon}\mathbb Q\longrightarrow0}
+\boxed{0\longrightarrow F_1\xrightarrow{d}F_0\xrightarrow{\varepsilon}\QQ\longrightarrow0}
 $$
-is a free resolution of $\mathbb Q$ as a $\mathbb Z$-module.
+is a free resolution of $\QQ$ as a $\ZZ$-module.
 
 ::: pf-proof
 

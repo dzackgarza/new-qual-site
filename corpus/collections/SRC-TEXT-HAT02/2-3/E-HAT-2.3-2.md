@@ -33,7 +33,7 @@ Show that the axioms for a homology theory are satisfied except that the wedge a
 ::: {.solution}
 Put
 \[
-Q(X)=\prod_{i\in\mathbb Z}\widetilde H_i(X)\big/\bigoplus_{i\in\mathbb Z}\widetilde H_i(X),
+Q(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
 \qquad \widetilde h_n(X)=Q(X).
 \]
 
@@ -89,9 +89,9 @@ Let
 \[
 X=\bigvee_{j\ge1}S^j.
 \]
-Then $\widetilde H_i(X)\cong\mathbb Z$ for every $i\ge1$, so
+Then $\widetilde H_i(X)\cong\ZZ$ for every $i\ge1$, so
 \[
-Q(X)\cong\prod_{i\ge1}\mathbb Z\big/\bigoplus_{i\ge1}\mathbb Z\ne0.
+Q(X)\cong\prod_{i\ge1}\ZZ\big/\bigoplus_{i\ge1}\ZZ\ne0.
 \]
 But each individual sphere $S^j$ is finite-dimensional, hence $Q(S^j)=0$. Therefore
 \[

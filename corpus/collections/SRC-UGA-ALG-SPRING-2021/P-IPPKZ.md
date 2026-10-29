@@ -21,7 +21,7 @@ Show that there is a nonzero $a\in \ZZ/n\ZZ$ with $af(x) = 0$.
 
 ::: {.solution}
 
-Write $R=\mathbb Z/n\mathbb Z$. Choose a nonzero polynomial $g=\sum_{j=0}^m b_jx^j\in R[x]$ of least degree among all nonzero polynomials satisfying $fg=0$, with $b_m\neq0$, and write $f=\sum_{i=0}^d a_ix^i$.
+Write $R=\ZZ/n\ZZ$. Choose a nonzero polynomial $g=\sum_{j=0}^m b_jx^j\in R[x]$ of least degree among all nonzero polynomials satisfying $fg=0$, with $b_m\neq0$, and write $f=\sum_{i=0}^d a_ix^i$.
 
 ::: pf
 

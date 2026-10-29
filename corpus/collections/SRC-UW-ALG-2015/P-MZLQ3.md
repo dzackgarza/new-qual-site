@@ -101,7 +101,7 @@ p\mid(q-1).
 
 Since \(Q\cong C_q\),
 \[
-\operatorname{Aut}(Q)\cong(\mathbb Z/q\mathbb Z)^\times\cong C_{q-1}.
+\operatorname{Aut}(Q)\cong(\ZZ/q\ZZ)^\times\cong C_{q-1}.
 \]
 A nontrivial homomorphism \(C_p\to C_{q-1}\) is injective because \(p\) is prime. Such an injection exists exactly when \(C_{q-1}\) has an element of order \(p\), equivalently when \(p\mid(q-1)\).
 

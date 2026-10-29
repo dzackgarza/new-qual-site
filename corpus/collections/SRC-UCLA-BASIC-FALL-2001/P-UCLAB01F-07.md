@@ -19,7 +19,7 @@ audit:
 Let $V$ be a real vector space and $X\subseteq V$ a subspace.
 Write
 \[
-V^*=\{f:V\to\mathbb R:f\text{ is linear}\}
+V^*=\{f:V\to\RR:f\text{ is linear}\}
 \]
 and
 \[

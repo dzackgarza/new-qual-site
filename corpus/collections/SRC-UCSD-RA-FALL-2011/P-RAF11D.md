@@ -24,17 +24,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $K \in L^1(\mathbb{R}^d)$ with Lebesgue measure.
-Suppose that $\psi_n \in L^2(\mathbb{R}^d)$ is a sequence of functions such that $\psi_n \to \psi$ (weak $L^2$ convergence), and also with the property that $\psi_n \equiv 0$ for $|x| > 1$.
+Let $K \in L^1(\RR^d)$ with Lebesgue measure.
+Suppose that $\psi_n \in L^2(\RR^d)$ is a sequence of functions such that $\psi_n \to \psi$ (weak $L^2$ convergence), and also with the property that $\psi_n \equiv 0$ for $|x| > 1$.
 Show that
 $$
-f_n(x) = \int_{\mathbb{R}^d} K(x-y)\,\psi_n(y)\,dy
+f_n(x) = \int_{\RR^d} K(x-y)\,\psi_n(y)\,dy
 $$
 converges to
 $$
-f(x) = \int_{\mathbb{R}^d} K(x-y)\,\psi(y)\,dy
+f(x) = \int_{\RR^d} K(x-y)\,\psi(y)\,dy
 $$
-strongly in $L^2(\mathbb{R}^d)$.
+strongly in $L^2(\RR^d)$.
 :::
 
 ::: {.solution}
@@ -49,9 +49,9 @@ The weak limit is also supported in the unit ball.
 
 Let
 \[
-B:=\{x\in\mathbb R^d:|x|\le1\}.
+B:=\{x\in\RR^d:|x|\le1\}.
 \]
-If $h\in L^2(\mathbb R^d)$ is supported in $B^c$, then
+If $h\in L^2(\RR^d)$ is supported in $B^c$, then
 \[
 \langle \psi_n,h\rangle=0
 \]
@@ -75,18 +75,18 @@ Define the restricted convolution operator and prove it is bounded.
 
 ::: pf-proof
 
-For $u\in L^2(B)$, extend $u$ by zero to $\mathbb R^d$ and set
+For $u\in L^2(B)$, extend $u$ by zero to $\RR^d$ and set
 \[
 T_Ku:=K*u.
 \]
 Young's convolution inequality gives
 \[
-\|T_Ku\|_{L^2(\mathbb R^d)}
+\|T_Ku\|_{L^2(\RR^d)}
 \le \|K\|_1\|u\|_2.
 \]
 Hence
 \[
-T_K:L^2(B)\to L^2(\mathbb R^d)
+T_K:L^2(B)\to L^2(\RR^d)
 \]
 is bounded.
 
@@ -100,7 +100,7 @@ Approximate $T_K$ in operator norm by Hilbert--Schmidt operators.
 
 ::: pf-proof
 
-Choose $K_m\in C_c(\mathbb R^d)$ such that
+Choose $K_m\in C_c(\RR^d)$ such that
 \[
 \|K_m-K\|_1\longrightarrow0.
 \]
@@ -111,7 +111,7 @@ For $u\in L^2(B)$, Young's inequality gives
 \]
 Therefore
 \[
-\|T_{K_m}-T_K\|_{L^2(B)\to L^2(\mathbb R^d)}
+\|T_{K_m}-T_K\|_{L^2(B)\to L^2(\RR^d)}
 \le \|K_m-K\|_1\longrightarrow0.
 \]
 
@@ -119,13 +119,13 @@ For each $m$, the operator $T_{K_m}$ has integral kernel
 \[
 k_m(x,y)=K_m(x-y),
 \qquad
-x\in\mathbb R^d,\ y\in B.
+x\in\RR^d,\ y\in B.
 \]
-Since $K_m\in L^2(\mathbb R^d)$,
+Since $K_m\in L^2(\RR^d)$,
 \[
 \begin{aligned}
-\int_B\int_{\mathbb R^d}|k_m(x,y)|^2\,dx\,dy
-&=\int_B\int_{\mathbb R^d}|K_m(x-y)|^2\,dx\,dy\\
+\int_B\int_{\RR^d}|k_m(x,y)|^2\,dx\,dy
+&=\int_B\int_{\RR^d}|K_m(x-y)|^2\,dx\,dy\\
 &=|B|\,\|K_m\|_2^2<\infty.
 \end{aligned}
 \]
@@ -167,7 +167,7 @@ contradicting the lower bound by $\varepsilon$. Therefore
 \]
 Since $f_n=T_K\psi_n$ and $f=T_K\psi$, this is exactly
 \[
-\boxed{f_n\to f\text{ strongly in }L^2(\mathbb R^d).}
+\boxed{f_n\to f\text{ strongly in }L^2(\RR^d).}
 \]
 
 :::

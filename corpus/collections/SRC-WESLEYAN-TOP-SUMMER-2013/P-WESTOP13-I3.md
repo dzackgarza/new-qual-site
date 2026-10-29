@@ -11,13 +11,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $C_r$ denote the circle of radius $r$ centered at the origin in $\mathbb R^2$. Determine the connected components, path-connected components, and quasi-components of each of the following subspaces:
+Let $C_r$ denote the circle of radius $r$ centered at the origin in $\RR^2$. Determine the connected components, path-connected components, and quasi-components of each of the following subspaces:
 
 1. \[
    S=\bigcup_{n\ge1}C_{1/n}\cup\{(0,0),(1,1)\};
    \]
 2. \[
-   T=\bigcup_{\substack{r\in\mathbb Q\\0<r<1}}C_r\cup\{(-1,0),(0,0),(1,0)\}.
+   T=\bigcup_{\substack{r\in\QQ\\0<r<1}}C_r\cup\{(-1,0),(0,0),(1,0)\}.
    \]
 :::
 

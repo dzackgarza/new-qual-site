@@ -24,11 +24,11 @@ Prove by a topological argument that $p$ must have a root in the complex plane.
 
 ::: {.pf-step #s1}
 
-Suppose, for contradiction, that $p(z)$ has no zero in $\mathbb C$.
+Suppose, for contradiction, that $p(z)$ has no zero in $\CC$.
 
 ::: pf-proof
 
-Then $p$ defines a continuous map $\mathbb C\to\mathbb C^*$.
+Then $p$ defines a continuous map $\CC\to\CC^*$.
 
 :::
 
@@ -51,7 +51,7 @@ After dividing by $R^n$, the lower-degree terms tend uniformly to zero on the ci
 
 ::: pf-step
 
-The loop $p|_{|z|=R}:S^1\to\mathbb C^*$ is homotopic in $\mathbb C^*$ to the loop $z\mapsto a_nz^n$.
+The loop $p|_{|z|=R}:S^1\to\CC^*$ is homotopic in $\CC^*$ to the loop $z\mapsto a_nz^n$.
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ Hence the winding number of $p|_{|z|=R}$ about $0$ is $n$.
 
 ::: pf-proof
 
-The loop $z\mapsto a_nz^n$ winds exactly $n$ times around the origin, and winding number is invariant under homotopy in $\mathbb C^*$.
+The loop $z\mapsto a_nz^n$ winds exactly $n$ times around the origin, and winding number is invariant under homotopy in $\CC^*$.
 
 :::
 
@@ -83,7 +83,7 @@ The loop $z\mapsto a_nz^n$ winds exactly $n$ times around the origin, and windin
 
 ::: {.pf-step #s5}
 
-But $p|_{|z|=R}$ extends over the disk $|z|\le R$ as a map into $\mathbb C^*$, so it must be null-homotopic and have winding number $0$.
+But $p|_{|z|=R}$ extends over the disk $|z|\le R$ as a map into $\CC^*$, so it must be null-homotopic and have winding number $0$.
 
 ::: pf-proof
 
@@ -95,11 +95,11 @@ Under the assumption in step [](#s1){.pf-ref}, $p$ never vanishes on the whole d
 
 ::: pf-step
 
-Since $n\ge1$, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} contradict each other. Therefore $p$ has a zero in $\mathbb C$.
+Since $n\ge1$, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} contradict each other. Therefore $p$ has a zero in $\CC$.
 
 ::: pf-proof
 
-A loop in $\mathbb C^*$ cannot simultaneously have winding numbers $n\ne0$ and $0$.
+A loop in $\CC^*$ cannot simultaneously have winding numbers $n\ne0$ and $0$.
 
 :::
 

@@ -38,11 +38,11 @@ S^3\longrightarrow S^{4n+3}\longrightarrow\mathbb{HP}^n.
 \]
 Inside \(S^3\) is the subgroup
 \[
-S^1=\{e^{i\theta}\}\subset\mathbb C\subset\mathbb H.
+S^1=\{e^{i\theta}\}\subset\CC\subset\mathbb H.
 \]
 Its action on \(S^{4n+3}\) is precisely complex scalar multiplication after identifying
 \[
-\mathbb H^{n+1}\cong\mathbb C^{2n+2}.
+\mathbb H^{n+1}\cong\CC^{2n+2}.
 \]
 Therefore
 \[

@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $K = \mathbb{Q}(\sqrt{2}, \sqrt{3}, i)$ as a subfield of $\mathbb{C}$, where $i = \sqrt{-1}$.
+Let $K = \QQ(\sqrt{2}, \sqrt{3}, i)$ as a subfield of $\CC$, where $i = \sqrt{-1}$.
 
-(a) Find, with proof, $\operatorname{Gal}(K/\mathbb{Q})$.
+(a) Find, with proof, $\operatorname{Gal}(K/\QQ)$.
 
-(b) Find an element $\beta \in K$ such that $K = \mathbb{Q}(\beta)$.
+(b) Find an element $\beta \in K$ such that $K = \QQ(\beta)$.
 :::
 
 ::: {.solution}
@@ -40,31 +40,31 @@ Let $K = \mathbb{Q}(\sqrt{2}, \sqrt{3}, i)$ as a subfield of $\mathbb{C}$, where
 
 The real subfield
 \[
-L=\mathbb Q(\sqrt2,\sqrt3)
+L=\QQ(\sqrt2,\sqrt3)
 \]
-has degree $4$ over $\mathbb Q$.
+has degree $4$ over $\QQ$.
 
 ::: pf-proof
 
-The field $\mathbb Q(\sqrt2)$ has degree $2$ over $\mathbb Q$.
+The field $\QQ(\sqrt2)$ has degree $2$ over $\QQ$.
 Moreover,
 \[
-\sqrt3\notin\mathbb Q(\sqrt2).
+\sqrt3\notin\QQ(\sqrt2).
 \]
 Indeed, if
 \[
 \sqrt3=a+b\sqrt2
-\qquad(a,b\in\mathbb Q),
+\qquad(a,b\in\QQ),
 \]
 then squaring gives
 \[
 3=a^2+2b^2+2ab\sqrt2.
 \]
 Hence $ab=0$.
-If $b=0$, then $a^2=3$, impossible for $a\in\mathbb Q$; if $a=0$, then $b^2=3/2$, also impossible for $b\in\mathbb Q$.
+If $b=0$, then $a^2=3$, impossible for $a\in\QQ$; if $a=0$, then $b^2=3/2$, also impossible for $b\in\QQ$.
 Thus adjoining $\sqrt3$ gives another quadratic extension, and
 \[
-[L:\mathbb Q]=4.
+[L:\QQ]=4.
 \]
 
 :::
@@ -73,11 +73,11 @@ Thus adjoining $\sqrt3$ gives another quadratic extension, and
 
 ::: {.pf-step #s2}
 
-The extension $K/\mathbb Q$ has degree $8$ and is Galois.
+The extension $K/\QQ$ has degree $8$ and is Galois.
 
 ::: pf-proof
 
-The field $L$ from step [](#s1){.pf-ref} is contained in $\mathbb R$, so
+The field $L$ from step [](#s1){.pf-ref} is contained in $\RR$, so
 \[
 i\notin L.
 \]
@@ -87,14 +87,14 @@ Since $i$ satisfies $x^2+1$, one has
 \]
 Therefore
 \[
-[K:\mathbb Q]=[K:L][L:\mathbb Q]=8.
+[K:\QQ]=[K:L][L:\QQ]=8.
 \]
 
-The field $K$ is the splitting field over $\mathbb Q$ of
+The field $K$ is the splitting field over $\QQ$ of
 \[
 (x^2-2)(x^2-3)(x^2+1).
 \]
-This polynomial is separable in characteristic zero, so $K/\mathbb Q$ is Galois.
+This polynomial is separable in characteristic zero, so $K/\QQ$ is Galois.
 
 :::
 
@@ -104,7 +104,7 @@ This polynomial is separable in characteristic zero, so $K/\mathbb Q$ is Galois.
 
 The Galois group is
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2\times C_2.
+\operatorname{Gal}(K/\QQ)\cong C_2\times C_2\times C_2.
 \]
 
 ::: pf-proof
@@ -119,9 +119,9 @@ i\longmapsto\varepsilon_i i,
 \qquad
 \varepsilon_2,\varepsilon_3,\varepsilon_i\in\{\pm1\},
 \]
-extends to a $\mathbb Q$-automorphism of $K$.
+extends to a $\QQ$-automorphism of $K$.
 These give eight distinct automorphisms.
-By step [](#s2){.pf-ref}, a Galois extension of degree $8$ has exactly eight $\mathbb Q$-automorphisms, so these are all of them.
+By step [](#s2){.pf-ref}, a Galois extension of degree $8$ has exactly eight $\QQ$-automorphisms, so these are all of them.
 
 Every nonidentity sign change has order $2$, and the three elementary sign changes commute.
 Hence the group is the elementary abelian group of order $8$.
@@ -137,7 +137,7 @@ Set
 \[
 \beta=\sqrt2+\sqrt3+i.
 \]
-No nonidentity element of $\operatorname{Gal}(K/\mathbb Q)$ fixes $\beta$.
+No nonidentity element of $\operatorname{Gal}(K/\QQ)$ fixes $\beta$.
 
 ::: pf-proof
 
@@ -157,7 +157,7 @@ The remaining equality is
 (\varepsilon_2-1)\sqrt2
 +(\varepsilon_3-1)\sqrt3=0.
 \]
-The numbers $\sqrt2$ and $\sqrt3$ are linearly independent over $\mathbb Q$, since a nontrivial rational relation would make
+The numbers $\sqrt2$ and $\sqrt3$ are linearly independent over $\QQ$, since a nontrivial rational relation would make
 \[
 \sqrt{3/2}
 \]
@@ -176,21 +176,21 @@ So the stabilizer of $\beta$ is trivial.
 
 One has
 \[
-K=\mathbb Q(\beta).
+K=\QQ(\beta).
 \]
 
 ::: pf-proof
 
-By the Galois correspondence, the stabilizer of $\beta$ in $\operatorname{Gal}(K/\mathbb Q)$ is
+By the Galois correspondence, the stabilizer of $\beta$ in $\operatorname{Gal}(K/\QQ)$ is
 \[
-\operatorname{Gal}(K/\mathbb Q(\beta)).
+\operatorname{Gal}(K/\QQ(\beta)).
 \]
 By step [](#s4){.pf-ref} this subgroup is trivial.
 Hence
 \[
-[K:\mathbb Q(\beta)]=1,
+[K:\QQ(\beta)]=1,
 \]
-so $K=\mathbb Q(\beta)$.
+so $K=\QQ(\beta)$.
 This proves part (b).
 
 :::

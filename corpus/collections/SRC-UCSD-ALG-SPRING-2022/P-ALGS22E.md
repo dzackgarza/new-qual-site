@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\zeta \in \mathbb{C}$ be a primitive $n$th root of unity for $n \geq 3$.
-Let $K = \mathbb{Q}(\zeta)$.
+Let $\zeta \in \CC$ be a primitive $n$th root of unity for $n \geq 3$.
+Let $K = \QQ(\zeta)$.
 
-Prove that $\operatorname{Gal}(K/\mathbb{Q})$ is isomorphic to $\mathbb{Z}_n^\times$, the group of units of integers mod $n$.
-(You may assume that the $n$th cyclotomic polynomial $\Phi_n(x)$ is irreducible over $\mathbb{Q}$.)
+Prove that $\operatorname{Gal}(K/\QQ)$ is isomorphic to $\ZZ_n^\times$, the group of units of integers mod $n$.
+(You may assume that the $n$th cyclotomic polynomial $\Phi_n(x)$ is irreducible over $\QQ$.)
 :::
 
 ::: {.solution}
@@ -36,15 +36,15 @@ Prove that $\operatorname{Gal}(K/\mathbb{Q})$ is isomorphic to $\mathbb{Z}_n^\ti
 
 ::: pf-step
 
-Every \(\sigma\in\operatorname{Gal}(K/\mathbb Q)\) sends \(\zeta\) to another primitive \(n\)th root of unity, hence
+Every \(\sigma\in\operatorname{Gal}(K/\QQ)\) sends \(\zeta\) to another primitive \(n\)th root of unity, hence
 \[
 \sigma(\zeta)=\zeta^a
 \]
-for a unique residue class \(a\in(\mathbb Z/n\mathbb Z)^\times\).
+for a unique residue class \(a\in(\ZZ/n\ZZ)^\times\).
 
 ::: pf-proof
 
-Since \(\sigma\) fixes \(\mathbb Q\), it preserves the relation \(\zeta^n=1\), so \(\sigma(\zeta)^n=1\). It also preserves multiplicative order, so \(\sigma(\zeta)\) still has order \(n\). The primitive \(n\)th roots are exactly the \(\zeta^a\) with \(\gcd(a,n)=1\).
+Since \(\sigma\) fixes \(\QQ\), it preserves the relation \(\zeta^n=1\), so \(\sigma(\zeta)^n=1\). It also preserves multiplicative order, so \(\sigma(\zeta)\) still has order \(n\). The primitive \(n\)th roots are exactly the \(\zeta^a\) with \(\gcd(a,n)=1\).
 
 :::
 
@@ -54,7 +54,7 @@ Since \(\sigma\) fixes \(\mathbb Q\), it preserves the relation \(\zeta^n=1\), s
 
 Define
 \[
-\Theta:\operatorname{Gal}(K/\mathbb Q)\longrightarrow(\mathbb Z/n\mathbb Z)^\times,
+\Theta:\operatorname{Gal}(K/\QQ)\longrightarrow(\ZZ/n\ZZ)^\times,
 \qquad
 \Theta(\sigma)=a\pmod n
 \]
@@ -66,7 +66,7 @@ If \(\sigma(\zeta)=\zeta^a\) and \(\tau(\zeta)=\zeta^b\), then
 \[
 (\sigma\tau)(\zeta)=\sigma(\zeta^b)=\sigma(\zeta)^b=\zeta^{ab},
 \]
-so \(\Theta(\sigma\tau)=\Theta(\sigma)\Theta(\tau)\). If \(\Theta(\sigma)=1\), then \(\sigma(\zeta)=\zeta\); since \(K=\mathbb Q(\zeta)\), this forces \(\sigma=\operatorname{id}\).
+so \(\Theta(\sigma\tau)=\Theta(\sigma)\Theta(\tau)\). If \(\Theta(\sigma)=1\), then \(\sigma(\zeta)=\zeta\); since \(K=\QQ(\zeta)\), this forces \(\sigma=\operatorname{id}\).
 
 :::
 
@@ -78,13 +78,13 @@ The map \(\Theta\) is surjective.
 
 ::: pf-proof
 
-Fix \(a\) with \(\gcd(a,n)=1\). Then \(\zeta^a\) is a primitive \(n\)th root, hence a root of the cyclotomic polynomial \(\Phi_n(x)\). By hypothesis \(\Phi_n\) is irreducible over \(\mathbb Q\), so it is the minimal polynomial of \(\zeta\). Therefore there is a \(\mathbb Q\)-embedding
+Fix \(a\) with \(\gcd(a,n)=1\). Then \(\zeta^a\) is a primitive \(n\)th root, hence a root of the cyclotomic polynomial \(\Phi_n(x)\). By hypothesis \(\Phi_n\) is irreducible over \(\QQ\), so it is the minimal polynomial of \(\zeta\). Therefore there is a \(\QQ\)-embedding
 \[
-\sigma_a:\mathbb Q(\zeta)\hookrightarrow\mathbb C,
+\sigma_a:\QQ(\zeta)\hookrightarrow\CC,
 \qquad
 \sigma_a(\zeta)=\zeta^a.
 \]
-Its image is \(\mathbb Q(\zeta^a)\). Since \(a\) is invertible mod \(n\), choose \(b\) with \(ab\equiv1\pmod n\); then \(\zeta=(\zeta^a)^b\), so \(\mathbb Q(\zeta^a)=\mathbb Q(\zeta)=K\). Thus \(\sigma_a\) is an automorphism of \(K\), and \(\Theta(\sigma_a)=a\).
+Its image is \(\QQ(\zeta^a)\). Since \(a\) is invertible mod \(n\), choose \(b\) with \(ab\equiv1\pmod n\); then \(\zeta=(\zeta^a)^b\), so \(\QQ(\zeta^a)=\QQ(\zeta)=K\). Thus \(\sigma_a\) is an automorphism of \(K\), and \(\Theta(\sigma_a)=a\).
 
 :::
 
@@ -94,7 +94,7 @@ Its image is \(\mathbb Q(\zeta^a)\). Since \(a\) is invertible mod \(n\), choose
 
 Hence
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong(\mathbb Z/n\mathbb Z)^\times.
+\operatorname{Gal}(K/\QQ)\cong(\ZZ/n\ZZ)^\times.
 \]
 
 ::: pf-proof

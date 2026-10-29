@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 Let $R$ be a principal ideal domain (PID), and let $(a_1) \subseteq (a_2) \subseteq (a_3) \subseteq \cdots$ be an ascending chain of ideals in $R$.
 
-Prove that there exists $n \in \mathbb{N}$ such that $(a_j) = (a_n)$ for all $j \ge n$ (that is, $R$ satisfies the ascending chain condition on ideals).
+Prove that there exists $n \in \NN$ such that $(a_j) = (a_n)$ for all $j \ge n$ (that is, $R$ satisfies the ascending chain condition on ideals).
 :::
 
 ::: {.solution}

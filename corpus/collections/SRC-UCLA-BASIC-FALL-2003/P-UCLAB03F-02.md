@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be infinitely differentiable.
+Let $f:\RR\to\RR$ be infinitely differentiable.
 Assume that for each $x\in[0,1]$ there is a positive integer $m$ such that
 \[
 f^{(m)}(x)\ne0.
@@ -45,7 +45,7 @@ Each $U_m$ is open in the subspace $[0,1]$.
 
 The derivative $f^{(m)}$ is continuous because $f$ is infinitely differentiable. Hence
 \[
-U_m=(f^{(m)})^{-1}(\mathbb R\setminus\{0\})\cap[0,1]
+U_m=(f^{(m)})^{-1}(\RR\setminus\{0\})\cap[0,1]
 \]
 is open in the subspace topology on $[0,1]$.
 

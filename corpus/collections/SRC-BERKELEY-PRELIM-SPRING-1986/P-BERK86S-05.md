@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-05
 kind: problem
-title: The identity is the only field automorphism of $\mathbb R$
+title: The identity is the only field automorphism of $\RR$
 classification:
   areas: [prelim]
   topics: []
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the identity is the only field automorphism of $\mathbb R$.
+Prove that the identity is the only field automorphism of $\RR$.
 :::
 
 ::: {.solution}

@@ -28,7 +28,7 @@ Prove that $G$ is cyclic.
 
 ::: pf-step
 
-Write $G$ as a direct product of cyclic groups of prime-power order: $G \cong \prod_i \mathbb{Z}/p_i^{e_i}$.
+Write $G$ as a direct product of cyclic groups of prime-power order: $G \cong \prod_i \ZZ/p_i^{e_i}$.
 
 ::: pf-proof
 
@@ -40,7 +40,7 @@ fundamental theorem of finite abelian groups.
 
 ::: {.pf-step #s2}
 
-Suppose for contradiction that $G$ is not cyclic, so some prime $p$ appears in at least two cyclic factors (i.e. $G$ has a subgroup isomorphic to $\mathbb{Z}/p \times \mathbb{Z}/p$).
+Suppose for contradiction that $G$ is not cyclic, so some prime $p$ appears in at least two cyclic factors (i.e. $G$ has a subgroup isomorphic to $\ZZ/p \times \ZZ/p$).
 
 ::: pf-proof
 
@@ -52,7 +52,7 @@ $G$ is cyclic iff no prime appears in more than one factor.
 
 ::: {.pf-step #s3}
 
-Then $G$ has at least two distinct subgroups of order $p$ (the subgroups $\mathbb{Z}/p \times 0$ and $0 \times \mathbb{Z}/p$ inside $\mathbb{Z}/p \times \mathbb{Z}/p$).
+Then $G$ has at least two distinct subgroups of order $p$ (the subgroups $\ZZ/p \times 0$ and $0 \times \ZZ/p$ inside $\ZZ/p \times \ZZ/p$).
 
 ::: pf-proof
 

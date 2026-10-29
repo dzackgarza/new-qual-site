@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb C_+=\{z\in\mathbb C:\operatorname{Im}z>0\}$ and let $f_n:\mathbb C_+\to\mathbb C_+$ be a sequence of holomorphic functions. Show that unless $|f_n|\to\infty$ uniformly on compact subsets of $\mathbb C_+$, there exists a subsequence converging uniformly on compact subsets of $\mathbb C_+$.
+Let $\CC_+=\{z\in\CC:\operatorname{Im}z>0\}$ and let $f_n:\CC_+\to\CC_+$ be a sequence of holomorphic functions. Show that unless $|f_n|\to\infty$ uniformly on compact subsets of $\CC_+$, there exists a subsequence converging uniformly on compact subsets of $\CC_+$.
 :::
 
 ::: {.solution}
@@ -32,13 +32,13 @@ Let
 =
 i\frac{1+\zeta}{1-\zeta}.
 \]
-Then $\Phi$ is a biholomorphism from $\mathbb C_+$ onto the unit disk $\mathbb D$.
+Then $\Phi$ is a biholomorphism from $\CC_+$ onto the unit disk $\mathbb D$.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\mathbb C_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
+Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\CC_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
 \[
 |f_{n_j}(z_j)|\le M
 \qquad
@@ -48,7 +48,7 @@ Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exis
 
 ::: pf-proof
 
-Failure of uniform divergence on compact subsets means that for some compact $K\subset\mathbb C_+$ there is a number $M>0$ such that, for infinitely many indices $n$, the inequality
+Failure of uniform divergence on compact subsets means that for some compact $K\subset\CC_+$ there is a number $M>0$ such that, for infinitely many indices $n$, the inequality
 \[
 |f_n(z)|>M
 \qquad
@@ -66,9 +66,9 @@ After passing to a further subsequence, the functions
 \[
 g_j
 \coloneqq
-\Phi\circ f_{n_j}:\mathbb C_+\to\mathbb D
+\Phi\circ f_{n_j}:\CC_+\to\mathbb D
 \]
-converge uniformly on compact subsets of $\mathbb C_+$ to a holomorphic function $g:\mathbb C_+\to\overline{\mathbb D}$, and the points $z_j$ converge to some $z_\infty\in K$.
+converge uniformly on compact subsets of $\CC_+$ to a holomorphic function $g:\CC_+\to\overline{\mathbb D}$, and the points $z_j$ converge to some $z_\infty\in K$.
 
 
 ::: pf-proof
@@ -86,7 +86,7 @@ The limit function $g$ is not identically equal to $1$.
 
 ::: pf-proof
 
-For every $w\in\mathbb C_+$,
+For every $w\in\CC_+$,
 \[
 1-\Phi(w)
 =
@@ -124,7 +124,7 @@ Thus $g(z_\infty)\ne1$, so $g$ is not the constant function $1$.
 
 ::: {.pf-step #s1-4}
 
-The function $g$ never takes the value $1$ on $\mathbb C_+$.
+The function $g$ never takes the value $1$ on $\CC_+$.
 
 
 ::: pf-proof
@@ -137,12 +137,12 @@ The limit satisfies $|g|\le1$. If $g(z_0)=1$ at some interior point, then $|g|$ 
 
 ::: {.pf-step #s1-5}
 
-The subsequence $(f_{n_j})$ converges uniformly on compact subsets of $\mathbb C_+$.
+The subsequence $(f_{n_j})$ converges uniformly on compact subsets of $\CC_+$.
 
 
 ::: pf-proof
 
-Let $L\subset\mathbb C_+$ be compact. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the continuous function $1-g$ has no zeros on $L$. Hence
+Let $L\subset\CC_+$ be compact. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the continuous function $1-g$ has no zeros on $L$. Hence
 \[
 \delta
 \coloneqq
@@ -174,7 +174,7 @@ f_{n_j}
 \longrightarrow
 i\frac{1+g}{1-g}
 \]
-uniformly on $L$. Since $L$ was arbitrary, the convergence is uniform on compact subsets of $\mathbb C_+$.
+uniformly on $L$. Since $L$ was arbitrary, the convergence is uniform on compact subsets of $\CC_+$.
 
 :::
 

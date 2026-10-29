@@ -18,10 +18,10 @@ audit:
 ::: {.problem}
 Let
 \[
-U=\{(x,y)\in\mathbb R^2:x^2+y^2<1\}
+U=\{(x,y)\in\RR^2:x^2+y^2<1\}
 \]
 be the open unit disk and let $\partial U$ denote its boundary.
-Suppose $F:\mathbb R^2\to\mathbb R^2$ is continuously differentiable and its Jacobian determinant is everywhere nonzero.
+Suppose $F:\RR^2\to\RR^2$ is continuously differentiable and its Jacobian determinant is everywhere nonzero.
 Assume also that
 
 - $F(p)\in U$ for some $p\in U$, and
@@ -62,20 +62,20 @@ Since also $F(p)\in F(U)$, one has $F(p)\in Y$.
 
 ::: {.pf-step #s1-2}
 
-The set $F(U)$ is open in $\mathbb R^2$.
+The set $F(U)$ is open in $\RR^2$.
 
 
 ::: pf-proof
 
 At every $x\in U$, the Jacobian determinant of $F$ is nonzero. Hence the derivative
 \[
-DF(x):\mathbb R^2\to\mathbb R^2
+DF(x):\RR^2\to\RR^2
 \]
 is invertible. By the inverse function theorem, there is an open neighborhood $N_x\subseteq U$ such that
 \[
 F(N_x)
 \]
-is open in $\mathbb R^2$. Therefore
+is open in $\RR^2$. Therefore
 \[
 F(U)=\bigcup_{x\in U}F(N_x)
 \]
@@ -92,7 +92,7 @@ The set $Y$ is open in the subspace $U$.
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $F(U)$ is open in $\mathbb R^2$. Hence
+By step [](#s1-2){.pf-ref}, $F(U)$ is open in $\RR^2$. Hence
 \[
 Y=F(U)\cap U
 \]
@@ -115,7 +115,7 @@ F(x_n)=y_n.
 \]
 The closed unit disk
 \[
-\overline U=\{x\in\mathbb R^2:\|x\|\le1\}
+\overline U=\{x\in\RR^2:\|x\|\le1\}
 \]
 is compact. Hence some subsequence $(x_{n_j})$ converges to a point
 \[

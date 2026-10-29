@@ -47,7 +47,7 @@ Hence countable additivity gives
 \mu\!\left(\bigcup_{n=1}^\infty A_n\right).
 \]
 
-For the decreasing analogue, take Lebesgue measure on $\mathbb R$ and
+For the decreasing analogue, take Lebesgue measure on $\RR$ and
 \[
 E_n=[n,\infty).
 \]

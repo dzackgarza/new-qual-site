@@ -42,7 +42,7 @@ Hence
 \]
 for all \(n\). In particular, when \(X\) and \(Y\) are path connected,
 \[
-H_0(X\vee Y)\cong\mathbb Z,
+H_0(X\vee Y)\cong\ZZ,
 \qquad
 H_n(X\vee Y)\cong H_n(X)\oplus H_n(Y)\quad(n>0).
 \]

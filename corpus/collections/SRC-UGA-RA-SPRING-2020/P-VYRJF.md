@@ -43,7 +43,7 @@ Pointwise limit of the integrands:
 ::: pf-proof
 
 ::: pf-step
-Define the sequence of functions $f_n: [0, \infty) \to \mathbb{R}$ by
+Define the sequence of functions $f_n: [0, \infty) \to \RR$ by
 $$f_n(x) = \chi_{[0, n]}(x) \left(1 + \frac{x^2}{n}\right)^{-(n+1)}.$$
 
 :::
@@ -145,7 +145,7 @@ Since $e^{-x^2}$ is an even function, $I = \frac{1}{2} \int_{-\infty}^\infty e^{
 
 ::: pf-step
 By Tonelli's Theorem and conversion to polar coordinates:
-$$I^2 = \frac{1}{4} \int_{\mathbb{R}} e^{-x^2} \, dx \int_{\mathbb{R}} e^{-y^2} \, dy = \frac{1}{4} \int_{\mathbb{R}^2} e^{-(x^2 + y^2)} \, dx \, dy = \frac{1}{4} \int_0^{2\pi} \int_0^\infty e^{-r^2} r \, dr \, d\theta.$$
+$$I^2 = \frac{1}{4} \int_{\RR} e^{-x^2} \, dx \int_{\RR} e^{-y^2} \, dy = \frac{1}{4} \int_{\RR^2} e^{-(x^2 + y^2)} \, dx \, dy = \frac{1}{4} \int_0^{2\pi} \int_0^\infty e^{-r^2} r \, dr \, d\theta.$$
 
 :::
 

@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A, C \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$ be Hermitian and suppose the following:
+Let $A, C \in M_n(\CC) = \CC^{n \times n}$ be Hermitian and suppose the following:
 
 - The $n$ eigenvalues of $A$ are notated and ordered as follows:
   \[
@@ -32,7 +32,7 @@ Let $A, C \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$ be Hermitian and suppos
   \lambda_1(C) \geq \lambda_2(C) \geq \cdots \geq \lambda_n(C);
   \]
 
-- We have $C = A + B B^H$ for some rank $2$ matrix $B \in M_{n,m}(\mathbb{C}) = \mathbb{C}^{n \times m}$ with $m \geq 2$.
+- We have $C = A + B B^H$ for some rank $2$ matrix $B \in M_{n,m}(\CC) = \CC^{n \times m}$ with $m \geq 2$.
   Note: $B^H = \overline{B}^T$.
 
 Prove, for all $1 \leq k \leq n - 2$, that
@@ -214,7 +214,7 @@ Now apply the Courant--Fischer min--max formula for the $(k+2)$-nd largest eigen
 \[
 \lambda_{k+2}(C)
 =
-\min_{\substack{M\subseteq\mathbb C^n\\\dim M=n-k-1}}
+\min_{\substack{M\subseteq\CC^n\\\dim M=n-k-1}}
 \max_{0\ne x\in M}
 \frac{x^HCx}{x^Hx}.
 \]
@@ -274,7 +274,7 @@ x^HCx=x^H(A+BB^H)x=x^HAx.
 
 ::: pf-step
 
-For every subspace $S\subseteq\mathbb C^n$ of dimension $k+2$,
+For every subspace $S\subseteq\CC^n$ of dimension $k+2$,
 \[
 \dim(S\cap K)\ge k.
 \]
@@ -427,10 +427,10 @@ By the Courant--Fischer min-max principle,
 \[
 \lambda_{k+2}(C)
 =
-\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-k-1}}
+\min_{\substack{L\subseteq\CC^n\\ \dim L=n-k-1}}
 \max_{0\ne x\in L}R_C(x).
 \]
-Let $E_k\subseteq\mathbb C^n$ be the span of eigenvectors of $A$ corresponding to
+Let $E_k\subseteq\CC^n$ be the span of eigenvectors of $A$ corresponding to
 \[
 \lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
 \]
@@ -500,7 +500,7 @@ x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
 For every \(1\le k\le n-2\),
 \[
 \lambda_{k+2}(C)
-=\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-k-1}}
+=\min_{\substack{L\subseteq\CC^n\\ \dim L=n-k-1}}
 \ \max_{0\ne x\in L}\frac{x^HCx}{x^Hx}.
 \]
 
@@ -625,7 +625,7 @@ be the Rayleigh quotient of a Hermitian matrix $M$.
 
 Since $\operatorname{rank}B=2$, the subspace
 \[
-K:=\ker B^H\subseteq\mathbb C^n
+K:=\ker B^H\subseteq\CC^n
 \]
 has codimension $2$.
 Moreover, for every $x\in K$,
@@ -659,7 +659,7 @@ the Courant--Fischer min--max formula is
 \[
 \lambda_j(M)
 =
-\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-j+1}}
+\min_{\substack{L\subseteq\CC^n\\ \dim L=n-j+1}}
 \ \max_{0\ne x\in L} R_M(x).
 \]
 
@@ -667,7 +667,7 @@ the Courant--Fischer min--max formula is
 
 ::: {.pf-step #p5-s3}
 
-Fix $1\le k\le n-2$ and let $L\subseteq\mathbb C^n$ be any subspace of dimension
+Fix $1\le k\le n-2$ and let $L\subseteq\CC^n$ be any subspace of dimension
 \[
 \dim L=n-k+1.
 \]
@@ -777,7 +777,7 @@ for every nonzero $x\in K$.
 
 ::: {.pf-step #p6-s2}
 
-Fix $1\le k\le n-2$, and let $E\subseteq\mathbb C^n$ be the span of eigenvectors of $C$ corresponding to the eigenvalues
+Fix $1\le k\le n-2$, and let $E\subseteq\CC^n$ be the span of eigenvectors of $C$ corresponding to the eigenvalues
 \[
 \lambda_1(C),\ldots,\lambda_{k+2}(C).
 \]

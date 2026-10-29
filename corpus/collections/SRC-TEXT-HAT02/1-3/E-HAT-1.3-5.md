@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be the subspace of $\mathbb{R}^2$ consisting of the four sides of the square $[0,1] \times [0,1]$ together with the segments of the vertical lines $x = 1/2, 1/3, 1/4, \ldots$ inside the square.
+Let $X$ be the subspace of $\RR^2$ consisting of the four sides of the square $[0,1] \times [0,1]$ together with the segments of the vertical lines $x = 1/2, 1/3, 1/4, \ldots$ inside the square.
 Show that for every covering space $\tilde{X} \to X$ there is some neighborhood of the left edge of $X$ that lifts homeomorphically to $\tilde{X}$.
 Deduce that $X$ has no simply-connected covering space.
 :::
@@ -51,7 +51,7 @@ Then there is an open neighborhood $N$ of $K$ on which $f$ is injective.
 
 Let $d$ be a metric on $M$ and define
 \[
-g:E\times E\to\mathbb R,
+g:E\times E\to\RR,
 \qquad
 g(e,e')=d(f(e),f(e')).
 \]
@@ -152,7 +152,7 @@ Apply step [](#s1){.pf-ref} with
 \[
 E=\widetilde X,
 \qquad
-M=X\subseteq\mathbb R^2,
+M=X\subseteq\RR^2,
 \qquad
 K=\widetilde L.
 \]
@@ -231,7 +231,7 @@ Orient $R_n$ so that it traverses $V_n$ from bottom to top.
 All other portions of $R_n$ map constantly to $1$, while $V_n$ maps once around $S^1$.
 Hence
 \[
-(\varphi_n)_*([R_n])=1\in\pi_1(S^1)\cong\mathbb Z.
+(\varphi_n)_*([R_n])=1\in\pi_1(S^1)\cong\ZZ.
 \]
 Therefore $[R_n]\ne1$ in $\pi_1(X)$.
 

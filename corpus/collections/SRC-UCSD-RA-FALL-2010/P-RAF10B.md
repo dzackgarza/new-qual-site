@@ -24,12 +24,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1(\mathbb{R})$.
+Let $f \in L^1(\RR)$.
 Prove that the function
 $$
-g(y) = \int_{\mathbb{R}} \sin(y^2 x)\,f(x)\,dx
+g(y) = \int_{\RR} \sin(y^2 x)\,f(x)\,dx
 $$
-is continuous and bounded on $\mathbb{R}$.
+is continuous and bounded on $\RR$.
 :::
 
 ::: {.solution}
@@ -42,11 +42,11 @@ Prove boundedness.
 
 ::: pf-proof
 
-For every $y\in\mathbb R$,
+For every $y\in\RR$,
 \[
 |g(y)|
-\le \int_{\mathbb R}|\sin(y^2x)|\,|f(x)|\,dx
-\le \int_{\mathbb R}|f(x)|\,dx
+\le \int_{\RR}|\sin(y^2x)|\,|f(x)|\,dx
+\le \int_{\RR}|f(x)|\,dx
 =\|f\|_1.
 \]
 Hence
@@ -64,7 +64,7 @@ Prove continuity.
 
 ::: pf-proof
 
-Let $y_k\to y$. For each fixed $x\in\mathbb R$,
+Let $y_k\to y$. For each fixed $x\in\RR$,
 \[
 \sin(y_k^2x)f(x)\longrightarrow \sin(y^2x)f(x).
 \]
@@ -72,11 +72,11 @@ Moreover,
 \[
 |\sin(y_k^2x)f(x)|\le|f(x)|,
 \]
-and $f\in L^1(\mathbb R)$. By dominated convergence,
+and $f\in L^1(\RR)$. By dominated convergence,
 \[
 g(y_k)\longrightarrow g(y).
 \]
-Therefore $g$ is continuous on $\mathbb R$.
+Therefore $g$ is continuous on $\RR$.
 
 :::
 

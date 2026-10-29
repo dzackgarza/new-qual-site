@@ -32,7 +32,7 @@ a. If $R[x]$ is a PID, then $R$ is a field.
 
 b. All cyclic subgroups of order 15 in $S_8$ are conjugate.
 
-c. All torsion-free $\mathbb{Z}$-modules are free.
+c. All torsion-free $\ZZ$-modules are free.
 
 d. All degree two field extensions are Galois.
 :::
@@ -92,19 +92,19 @@ that such subgroups exist.
 
 ::: {.pf-step #s3}
 
-The $\mathbb Z$-module $\mathbb Q$ is torsion-free but not free.
+The $\ZZ$-module $\QQ$ is torsion-free but not free.
 
 ::: pf-proof
 
-For a nonzero integer $n$ and $q\in\mathbb Q$, the equation
+For a nonzero integer $n$ and $q\in\QQ$, the equation
 $nq=0$ implies $q=0$, so the module is torsion-free.
-Moreover, $2\mathbb Q=\mathbb Q$, since $q=2(q/2)$.
+Moreover, $2\QQ=\QQ$, since $q=2(q/2)$.
 
-If $\mathbb Q$ were free over $\mathbb Z$, its nonzero underlying
+If $\QQ$ were free over $\ZZ$, its nonzero underlying
 module would have a nonempty basis. A basis vector $e$ could not
 belong to twice the module: in the unique finite basis expansion
 of $2m$, every coefficient is even, whereas the coefficient of
-$e$ in itself is $1$. This contradicts $2\mathbb Q=\mathbb Q$.
+$e$ in itself is $1$. This contradicts $2\QQ=\QQ$.
 
 :::
 

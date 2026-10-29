@@ -30,7 +30,7 @@ $$
 
 ::: {.pf-step #s1}
 
-On the domain $\{x \in \mathbb{R} : \sin(x) \neq 0, \cos(x) \neq 0\}$ of the integrand, $\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \tan(x)$.
+On the domain $\{x \in \RR : \sin(x) \neq 0, \cos(x) \neq 0\}$ of the integrand, $\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \tan(x)$.
 
 ::: pf-proof
 

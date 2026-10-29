@@ -32,7 +32,7 @@ $$
 { \mathcal H } = { \mathcal O } ( D ) \cap L ^ { 2 } ( D ) = \left\{ f \in { \mathcal O } ( D ) : \int _ { D } | f | ^ { 2 } d x d y < + \infty \right\} .
 $$
 
-a) Show that for all compact sets $K \subset D$ , there is a constant $C _ { K } \in \mathbb { R } ^ { + }$ such that
+a) Show that for all compact sets $K \subset D$ , there is a constant $C _ { K } \in \RR ^ { + }$ such that
 
 $$
 \operatorname* { s u p } _ { z \in K } | f ( z ) | \leq C _ { K } \| f \| _ { L ^ { 2 } ( D ) } .
@@ -91,7 +91,7 @@ Suppose $f_n\in\mathcal H$ and $f_n\to F$ in $L^2(D)$.
 Choose a measurable representative of $F$. The sequence
 is Cauchy in $L^2$, so step [](#s1){.pf-ref} applied to $f_n-f_m$
 makes it uniformly Cauchy on each compact subset of $D$.
-Completeness of $\mathbb C$ gives a pointwise limit $f$,
+Completeness of $\CC$ gives a pointwise limit $f$,
 and the same estimates give uniform convergence on every
 compact set. The local uniform limit theorem makes $f$
 holomorphic on $D$ [@SS03].

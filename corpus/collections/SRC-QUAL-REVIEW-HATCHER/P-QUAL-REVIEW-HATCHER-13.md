@@ -129,7 +129,7 @@ the free group on two generators.
 
 The fundamental group of a wedge of two circles is the free product
 \[
-\mathbb Z*\mathbb Z
+\ZZ*\ZZ
 \cong
 F_2.
 \]
@@ -145,7 +145,7 @@ One has
 \boxed{
 \pi_1(X)
 \cong
-\mathbb Z^2}.
+\ZZ^2}.
 \]
 
 
@@ -157,7 +157,7 @@ For the torus,
 \cong
 \pi_1(S^1)\times\pi_1(S^1)
 \cong
-\mathbb Z^2.
+\ZZ^2.
 \]
 
 :::
@@ -166,7 +166,7 @@ For the torus,
 
 ::: {.pf-step #s1-6}
 
-Every subgroup of \(\mathbb Z^2\) is abelian.
+Every subgroup of \(\ZZ^2\) is abelian.
 
 
 ::: pf-proof
@@ -203,13 +203,13 @@ ab\ne ba.
 
 Therefore there is no injective homomorphism
 \[
-F_2\hookrightarrow\mathbb Z^2.
+F_2\hookrightarrow\ZZ^2.
 \]
 
 
 ::: pf-proof
 
-The image of such an injection would be a subgroup of \(\mathbb Z^2\), hence abelian by step [](#s1-6){.pf-ref}. Then \(F_2\) itself would be abelian, contradicting step [](#s1-7){.pf-ref}.
+The image of such an injection would be a subgroup of \(\ZZ^2\), hence abelian by step [](#s1-6){.pf-ref}. Then \(F_2\) itself would be abelian, contradicting step [](#s1-7){.pf-ref}.
 
 :::
 

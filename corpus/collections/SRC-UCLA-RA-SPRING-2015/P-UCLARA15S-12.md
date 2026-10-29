@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all entire functions $f:\mathbb C\to\mathbb C$ that obey
+Find all entire functions $f:\CC\to\CC$ that obey
 \[
 f'(z)^2+f(z)^2=1.
 \]
@@ -34,7 +34,7 @@ Every solution satisfies
 \[
 f'(z)\bigl(f''(z)+f(z)\bigr)=0
 \qquad
-(z\in\mathbb C).
+(z\in\CC).
 \]
 
 
@@ -86,7 +86,7 @@ on that neighborhood. The identity theorem then gives
 \[
 f''+f\equiv0
 \]
-on all of $\mathbb C$. Thus one of the two alternatives holds.
+on all of $\CC$. Thus one of the two alternatives holds.
 
 :::
 
@@ -124,7 +124,7 @@ has the form
 \[
 f(z)=a\cos z+b\sin z
 \]
-for unique constants $a,b\in\mathbb C$.
+for unique constants $a,b\in\CC$.
 
 
 ::: pf-proof
@@ -226,7 +226,7 @@ The complete list of solutions is
 \boxed{
 f(z)=a\cos z+b\sin z,
 \qquad
-a,b\in\mathbb C,
+a,b\in\CC,
 \qquad
 a^2+b^2=1.
 }

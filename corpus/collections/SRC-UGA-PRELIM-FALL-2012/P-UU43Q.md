@@ -21,7 +21,7 @@ Prove that the line integral $\displaystyle\int_C (x+y^3)\,dx + (e^y+3xy^2)\,dy$
 :::
 
 ::: {.solution}
-**Goal:** Prove that the vector field $\mathbf{F}(x, y) = (x + y^3)\mathbf{i} + (e^y + 3xy^2)\mathbf{j}$ is conservative on $\mathbb{R}^2$ by explicitly finding a scalar potential function $f(x, y)$, thereby establishing path-independence.
+**Goal:** Prove that the vector field $\mathbf{F}(x, y) = (x + y^3)\mathbf{i} + (e^y + 3xy^2)\mathbf{j}$ is conservative on $\RR^2$ by explicitly finding a scalar potential function $f(x, y)$, thereby establishing path-independence.
 
 ::: pf
 
@@ -40,7 +40,7 @@ Let $P(x, y) = x + y^3$ and $Q(x, y) = e^y + 3xy^2$ be the components of the 1-f
 
 ::: pf-step
 
-We seek a $C^1$ function $f(x, y)$ on $\mathbb{R}^2$ such that $\nabla f = (P, Q)$, which requires:
+We seek a $C^1$ function $f(x, y)$ on $\RR^2$ such that $\nabla f = (P, Q)$, which requires:
     $$\frac{\partial f}{\partial x} = x + y^3, \qquad \frac{\partial f}{\partial y} = e^y + 3xy^2.$$
 
 :::
@@ -75,7 +75,7 @@ Integrating with respect to $y$ gives $g(y) = e^y + C$. Setting $C = 0$ yields t
 
 ::: pf-step
 
-Direct verification: $\frac{\partial f}{\partial x} = x + y^3 = P(x, y)$ and $\frac{\partial f}{\partial y} = 3xy^2 + e^y = Q(x, y)$, so $\nabla f = (P, Q)$ on all of $\mathbb{R}^2$.
+Direct verification: $\frac{\partial f}{\partial x} = x + y^3 = P(x, y)$ and $\frac{\partial f}{\partial y} = 3xy^2 + e^y = Q(x, y)$, so $\nabla f = (P, Q)$ on all of $\RR^2$.
 
 :::
 
@@ -92,7 +92,7 @@ Path-independence via the Fundamental Theorem for Line Integrals:
 
 ::: pf-step
 
-Let $C$ be any piecewise smooth curve in $\mathbb{R}^2$ parameterized by $\mathbf{r}(t) = (x(t), y(t))$ for $a \le t \le b$, with initial point $A = \mathbf{r}(a)$ and terminal point $B = \mathbf{r}(b)$.
+Let $C$ be any piecewise smooth curve in $\RR^2$ parameterized by $\mathbf{r}(t) = (x(t), y(t))$ for $a \le t \le b$, with initial point $A = \mathbf{r}(a)$ and terminal point $B = \mathbf{r}(b)$.
 
 :::
 

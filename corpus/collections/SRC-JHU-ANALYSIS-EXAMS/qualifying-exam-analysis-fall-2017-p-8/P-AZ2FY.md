@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-3. For a Radon measure $\mu ,$ with $\textstyle \int _ { \mathbb { R } ^ { n } } d \mu = C$ . Prove that for all $\epsilon > 0$ , there exists a set $E _ { \epsilon } \subset \mathbb { R } ^ { n }$ such that
+3. For a Radon measure $\mu ,$ with $\textstyle \int _ { \RR ^ { n } } d \mu = C$ . Prove that for all $\epsilon > 0$ , there exists a set $E _ { \epsilon } \subset \RR ^ { n }$ such that
 \[
 \mathcal M^1(E_\epsilon)
 :=\inf_{E_\epsilon\subset\bigcup_i B_i}
@@ -55,7 +55,7 @@ Set
 \[
 E_\varepsilon
 :=
-\left\{x\in\mathbb R^n:
+\left\{x\in\RR^n:
 \text{there exists }r>0\text{ with }
 \mu(B_r(x))>\frac{Cr}{\varepsilon}
 \right\}.
@@ -78,7 +78,7 @@ Observe that every bad witnessing ball has small radius.
 
 If $x\in E_\varepsilon$ and $B_r(x)$ witnesses membership, then
 \[
-\frac{Cr}{\varepsilon}<\mu(B_r(x))\le\mu(\mathbb R^n)=C.
+\frac{Cr}{\varepsilon}<\mu(B_r(x))\le\mu(\RR^n)=C.
 \]
 If $C>0$, this implies
 \[
@@ -114,7 +114,7 @@ E_\varepsilon\subseteq\bigcup_i B_{5r_i}(x_i).
 Since the selected balls are disjoint,
 \[
 \sum_i\mu(B_{r_i}(x_i))
-\le \mu(\mathbb R^n)=C.
+\le \mu(\RR^n)=C.
 \]
 But every selected ball is bad, so
 \[

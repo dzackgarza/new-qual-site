@@ -56,7 +56,7 @@ so \(H\) is elliptic with periods \(1\) and \(\tau\).
 By the Jacobi product formula, \(\Theta(z|\tau)\) has simple zeros exactly at
 \[
 z_0+\Lambda,
-\qquad \Lambda=\mathbb Z+\mathbb Z\tau.
+\qquad \Lambda=\ZZ+\ZZ\tau.
 \]
 Thus \(H\) has a double pole at every point of \(z_0+\Lambda\). If \(w=z-z_0\), write
 \[

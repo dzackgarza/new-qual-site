@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R$ is not compact.
+Prove that $\RR$ is not compact.
 :::
 
 ::: {.solution}
@@ -38,25 +38,25 @@ Prove that $\mathbb R$ is not compact.
 ::: {.pf-step #cover-is-open}
 The family
 \[
-\mathcal U=\{(-n,n):n\in\mathbb N,\ n\ge1\}
+\mathcal U=\{(-n,n):n\in\NN,\ n\ge1\}
 \]
-is an open cover of $\mathbb R$.
+is an open cover of $\RR$.
 
 ::: pf-proof
 Each interval $(-n,n)$ is Euclidean open.
-Given $x\in\mathbb R$, choose an integer $n>|x|$.
+Given $x\in\RR$, choose an integer $n>|x|$.
 Then
 \[
 -n<x<n,
 \]
 so $x\in(-n,n)$.
-Thus the union of the members of $\mathcal U$ is all of $\mathbb R$.
+Thus the union of the members of $\mathcal U$ is all of $\RR$.
 :::
 
 :::
 
 ::: {.pf-step #no-finite-subcover}
-No finite subfamily of $\mathcal U$ covers $\mathbb R$.
+No finite subfamily of $\mathcal U$ covers $\RR$.
 
 ::: pf-proof
 Take finitely many members
@@ -72,17 +72,17 @@ Since these intervals are nested as their radii increase,
 (-n_1,n_1)\cup\cdots\cup(-n_k,n_k)=(-N,N).
 \]
 The point $N+1$ does not belong to this union.
-Hence the chosen finite subfamily does not cover $\mathbb R$.
+Hence the chosen finite subfamily does not cover $\RR$.
 :::
 
 :::
 
 ::: pf-step
-Therefore $\mathbb R$ is not compact.
+Therefore $\RR$ is not compact.
 
 ::: pf-proof
 Compactness requires every open cover to have a finite subcover.
-The open cover in step [](#cover-is-open){.pf-ref} has no finite subcover by step [](#no-finite-subcover){.pf-ref}, so $\mathbb R$ fails the definition of compactness.
+The open cover in step [](#cover-is-open){.pf-ref} has no finite subcover by step [](#no-finite-subcover){.pf-ref}, so $\RR$ fails the definition of compactness.
 :::
 
 :::

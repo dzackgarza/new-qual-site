@@ -36,7 +36,7 @@ audit:
 
 ::: {.problem}
 Let $G$ be a cyclic group of order $n$.
-For each $a\in\mathbb Z$, define
+For each $a\in\ZZ$, define
 \[
 \sigma_a:G\longrightarrow G,
 \qquad
@@ -49,13 +49,13 @@ Prove that:
 
 2. $\sigma_a=\sigma_b$ if and only if $a\equiv b\pmod n$;
 
-3. every automorphism of $G$ is $\sigma_a$ for some $a\in\mathbb Z$;
+3. every automorphism of $G$ is $\sigma_a$ for some $a\in\ZZ$;
 
 4. $\sigma_a\circ\sigma_b=\sigma_{ab}$.
 
 Deduce that
 \[
-\psi:(\mathbb Z/n\mathbb Z)^\times\longrightarrow\operatorname{Aut}(G),
+\psi:(\ZZ/n\ZZ)^\times\longrightarrow\operatorname{Aut}(G),
 \qquad
 [a]\longmapsto\sigma_a,
 \]
@@ -69,7 +69,7 @@ Fix a generator $g$ of $G$.
 
 ::: pf-step
 
-For every $a\in\mathbb Z$, the map $\sigma_a$ is an endomorphism of $G$.
+For every $a\in\ZZ$, the map $\sigma_a$ is an endomorphism of $G$.
 
 ::: pf-proof
 
@@ -161,16 +161,16 @@ Hence
 
 ::: {.pf-step #s5}
 
-Every automorphism of $G$ is $\sigma_a$ for some $a\in\mathbb Z$.
+Every automorphism of $G$ is $\sigma_a$ for some $a\in\ZZ$.
 
 ::: pf-proof
 
 Let $\tau\in\operatorname{Aut}(G)$.
-Since every element of $G$ is a power of $g$, there is some $a\in\mathbb Z$ such that
+Since every element of $G$ is a power of $g$, there is some $a\in\ZZ$ such that
 \[
 \tau(g)=g^a.
 \]
-For every $r\in\mathbb Z$,
+For every $r\in\ZZ$,
 \[
 \tau(g^r)=\tau(g)^r=(g^a)^r=g^{ar}=\sigma_a(g^r).
 \]
@@ -183,7 +183,7 @@ Moreover, because $\tau(g)$ is again a generator, step [](#s2){.pf-ref} implies 
 
 ::: {.pf-step #s6}
 
-For all $a,b\in\mathbb Z$,
+For all $a,b\in\ZZ$,
 \[
 \sigma_a\circ\sigma_b=\sigma_{ab}.
 \]
@@ -208,7 +208,7 @@ Hence the two maps are equal.
 
 The map
 \[
-\psi:(\mathbb Z/n\mathbb Z)^\times\longrightarrow\operatorname{Aut}(G),
+\psi:(\ZZ/n\ZZ)^\times\longrightarrow\operatorname{Aut}(G),
 \qquad
 [a]\longmapsto\sigma_a,
 \]
@@ -216,7 +216,7 @@ is a well-defined group isomorphism.
 
 ::: pf-proof
 
-If $[a]\in(\mathbb Z/n\mathbb Z)^\times$, then $\gcd(a,n)=1$, so step [](#s3){.pf-ref} shows $\sigma_a\in\operatorname{Aut}(G)$.
+If $[a]\in(\ZZ/n\ZZ)^\times$, then $\gcd(a,n)=1$, so step [](#s3){.pf-ref} shows $\sigma_a\in\operatorname{Aut}(G)$.
 If $[a]=[b]$, then $a\equiv b\pmod n$, so step [](#s4){.pf-ref} gives $\sigma_a=\sigma_b$.
 Thus $\psi$ is well-defined.
 

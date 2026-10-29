@@ -33,7 +33,7 @@ g(z)=z-2.
 For \(0<\varepsilon<1\) and \(R>3\), let
 \[
 D_{R,\varepsilon}
-=\{z\in\mathbb C:\operatorname{Re}z>\varepsilon,\ |z|<R\}.
+=\{z\in\CC:\operatorname{Re}z>\varepsilon,\ |z|<R\}.
 \]
 
 ::: pf

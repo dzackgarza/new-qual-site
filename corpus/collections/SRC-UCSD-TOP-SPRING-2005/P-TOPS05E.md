@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be a closed (compact, without boundary) connected non-orientable $3$-manifold.
-Prove $H^1(X; \mathbb{Z}) \neq 0$.
+Prove $H^1(X; \ZZ) \neq 0$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ The first Betti number satisfies $b_1(X)\ge1$.
 
 ::: pf-proof
 
-A closed odd-dimensional manifold has Euler characteristic $0$, whether orientable or not: pass to the orientation double cover and use multiplicativity of Euler characteristic together with Poincaré duality upstairs. Since $X$ is connected and nonorientable, $H_3(X;\mathbb Q)=0$, while $H_0(X;\mathbb Q)\cong\mathbb Q$. Thus
+A closed odd-dimensional manifold has Euler characteristic $0$, whether orientable or not: pass to the orientation double cover and use multiplicativity of Euler characteristic together with Poincaré duality upstairs. Since $X$ is connected and nonorientable, $H_3(X;\QQ)=0$, while $H_0(X;\QQ)\cong\QQ$. Thus
 $$0=\chi(X)=1-b_1(X)+b_2(X),$$
 so $b_1(X)=1+b_2(X)\ge1$.
 
@@ -44,13 +44,13 @@ so $b_1(X)=1+b_2(X)\ge1$.
 
 ::: pf-step
 
-$$H^1(X;\mathbb Z)\ne0.$$
+$$H^1(X;\ZZ)\ne0.$$
 
 ::: pf-proof
 
 The universal coefficient theorem gives
-$$H^1(X;\mathbb Z)\cong\operatorname{Hom}(H_1(X;\mathbb Z),\mathbb Z).$$
-Since $b_1(X)>0$ by step [](#s2){.pf-ref}, $H_1(X;\mathbb Z)$ has a nonzero free summand, so the Hom group is nonzero.
+$$H^1(X;\ZZ)\cong\operatorname{Hom}(H_1(X;\ZZ),\ZZ).$$
+Since $b_1(X)>0$ by step [](#s2){.pf-ref}, $H_1(X;\ZZ)$ has a nonzero free summand, so the Hom group is nonzero.
 
 :::
 

@@ -19,12 +19,12 @@ audit:
 ::: {.problem}
 Let
 \[
-S=\left\{f\in L^1(\mathbb R^3):\int_{\mathbb R^3}f(x)\,dx=0\right\}.
+S=\left\{f\in L^1(\RR^3):\int_{\RR^3}f(x)\,dx=0\right\}.
 \]
 
 (a) Show that $S$ is closed in the $L^1$ topology.
 
-(b) Show that $S\cap L^2(\mathbb R^3)$ is dense in $L^2(\mathbb R^3)$.
+(b) Show that $S\cap L^2(\RR^3)$ is dense in $L^2(\RR^3)$.
 :::
 
 ::: {.solution}

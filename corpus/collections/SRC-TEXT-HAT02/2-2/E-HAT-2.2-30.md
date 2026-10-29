@@ -58,15 +58,15 @@ For a reflection $f:S^2\to S^2$,
 \[
 H_i(T_f)\cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
-\mathbb Z_2,&i=2,\\
+\ZZ,&i=0,1,\\
+\ZZ_2,&i=2,\\
 0,&i\ge3.
 \end{cases}
 \]
 
 ::: pf-proof
 
-On $H_2(S^2)=\mathbb Z$, a reflection acts by $-1$, so $1-f_*$ is multiplication by $2$. On $H_0$ it is zero. The displayed groups follow immediately from the short exact sequences.
+On $H_2(S^2)=\ZZ$, a reflection acts by $-1$, so $1-f_*$ is multiplication by $2$. On $H_0$ it is zero. The displayed groups follow immediately from the short exact sequences.
 
 :::
 
@@ -78,16 +78,16 @@ If $f:S^2\to S^2$ has degree $2$, then
 \[
 H_i(T_f)\cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
+\ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}
 \]
 
 ::: pf-proof
 
-On $H_2$, the map $1-f_*$ is multiplication by $-1$, hence an isomorphism. On $H_0$ it is zero. Thus there is no homology contribution in degrees $2$ or $3$, while the kernel in degree $0$ produces the usual $\mathbb Z$ in $H_1$.
+On $H_2$, the map $1-f_*$ is multiplication by $-1$, hence an isomorphism. On $H_0$ it is zero. Thus there is no homology contribution in degrees $2$ or $3$, while the kernel in degree $0$ produces the usual $\ZZ$ in $H_1$.
 
-Let $T^2=S^1\times S^1$ and choose the standard basis of $H_1(T^2)=\mathbb Z^2$.
+Let $T^2=S^1\times S^1$ and choose the standard basis of $H_1(T^2)=\ZZ^2$.
 
 :::
 
@@ -99,9 +99,9 @@ If $f$ is the identity on the first factor and a reflection on the second, then
 \[
 H_i(T_f)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^2\oplus\mathbb Z_2,&i=1,\\
-\mathbb Z\oplus\mathbb Z_2,&i=2,\\
+\ZZ,&i=0,\\
+\ZZ^2\oplus\ZZ_2,&i=1,\\
+\ZZ\oplus\ZZ_2,&i=2,\\
 0,&i=3,\\
 0,&i>3.
 \end{cases}
@@ -113,13 +113,13 @@ On $H_1$, $f_*=\operatorname{diag}(1,-1)$, so
 \[
 1-f_*=\operatorname{diag}(0,2).
 \]
-Its kernel is $\mathbb Z$ and its cokernel is $\mathbb Z\oplus\mathbb Z_2$. On $H_2(T^2)=\mathbb Z$, $f_*$ is multiplication by the determinant $-1$, so $1-f_*=2$. Hence
+Its kernel is $\ZZ$ and its cokernel is $\ZZ\oplus\ZZ_2$. On $H_2(T^2)=\ZZ$, $f_*$ is multiplication by the determinant $-1$, so $1-f_*=2$. Hence
 \[
-H_2(T_f)\cong\mathbb Z_2\oplus\mathbb Z,
+H_2(T_f)\cong\ZZ_2\oplus\ZZ,
 \]
 while
 \[
-H_1(T_f)\cong(\mathbb Z\oplus\mathbb Z_2)\oplus\mathbb Z.
+H_1(T_f)\cong(\ZZ\oplus\ZZ_2)\oplus\ZZ.
 \]
 There is no $H_3$ because multiplication by $2$ on $H_2$ has trivial kernel.
 
@@ -133,17 +133,17 @@ If $f$ reflects both factors, then
 \[
 H_i(T_f)\cong
 \begin{cases}
-\mathbb Z,&i=0,2,3,\\
-\mathbb Z\oplus\mathbb Z_2\oplus\mathbb Z_2,&i=1,\\
+\ZZ,&i=0,2,3,\\
+\ZZ\oplus\ZZ_2\oplus\ZZ_2,&i=1,\\
 0,&i>3.
 \end{cases}
 \]
 
 ::: pf-proof
 
-On $H_1$, $f_*=-I$, so $1-f_*=2I$. Its kernel is zero and its cokernel is $(\mathbb Z_2)^2$. On $H_2$, $f_*$ is multiplication by $\det(-I)=+1$, so $1-f_*=0$. Thus $H_3\cong\mathbb Z$, $H_2\cong\mathbb Z$, and
+On $H_1$, $f_*=-I$, so $1-f_*=2I$. Its kernel is zero and its cokernel is $(\ZZ_2)^2$. On $H_2$, $f_*$ is multiplication by $\det(-I)=+1$, so $1-f_*=0$. Thus $H_3\cong\ZZ$, $H_2\cong\ZZ$, and
 \[
-H_1\cong(\mathbb Z_2)^2\oplus\mathbb Z.
+H_1\cong(\ZZ_2)^2\oplus\ZZ.
 \]
 
 :::
@@ -156,8 +156,8 @@ If $f$ interchanges the two factors and then reflects one factor, then
 \[
 H_i(T_f)\cong
 \begin{cases}
-\mathbb Z,&i=0,2,3,\\
-\mathbb Z\oplus\mathbb Z_2,&i=1,\\
+\ZZ,&i=0,2,3,\\
+\ZZ\oplus\ZZ_2,&i=1,\\
 0,&i>3.
 \end{cases}
 \]
@@ -180,9 +180,9 @@ I-A=
 -1&1
 \end{pmatrix}.
 \]
-This matrix has determinant $2$ and Smith normal form $\operatorname{diag}(1,2)$, so its kernel is zero and its cokernel is $\mathbb Z_2$. Since $\det A=1$, the induced map on $H_2$ is the identity, hence $1-f_*=0$ there. Therefore $H_3\cong\mathbb Z$, $H_2\cong\mathbb Z$, and
+This matrix has determinant $2$ and Smith normal form $\operatorname{diag}(1,2)$, so its kernel is zero and its cokernel is $\ZZ_2$. Since $\det A=1$, the induced map on $H_2$ is the identity, hence $1-f_*=0$ there. Therefore $H_3\cong\ZZ$, $H_2\cong\ZZ$, and
 \[
-H_1\cong\mathbb Z_2\oplus\mathbb Z.
+H_1\cong\ZZ_2\oplus\ZZ.
 \]
 
 :::

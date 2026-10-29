@@ -27,7 +27,7 @@ M=\begin{pmatrix}
 \]
 Let $C$ be the set of matrices in $G$ commuting with $M$.
 
-(a) Prove that $C$ is an affine subspace of $\mathbb R^{16}$.
+(a) Prove that $C$ is an affine subspace of $\RR^{16}$.
 
 (b) Find the dimension of $C$.
 :::
@@ -269,7 +269,7 @@ C=
 0&0&1&a\\
 0&0&0&1
 \end{pmatrix}
-:a,b,c\in\mathbb R
+:a,b,c\in\RR
 \right\}.
 }
 \]
@@ -292,7 +292,7 @@ so it satisfies the equations in step [](#s1-4){.pf-ref} and therefore commutes 
 
 ::: {.pf-step #s1-7}
 
-The set $C$ is an affine subspace of $\mathbb R^{16}$.
+The set $C$ is an affine subspace of $\RR^{16}$.
 
 
 ::: pf-proof

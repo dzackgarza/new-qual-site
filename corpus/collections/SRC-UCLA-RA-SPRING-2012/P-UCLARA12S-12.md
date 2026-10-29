@@ -24,7 +24,7 @@ Show that the only entire function $f$ satisfying both
 and
 \[
 f\!\left(\frac{n}{\sqrt{1+|n|}}\right)=0
-\qquad\text{for every }n\in\mathbb Z
+\qquad\text{for every }n\in\ZZ
 \]
 is the zero function.
 :::

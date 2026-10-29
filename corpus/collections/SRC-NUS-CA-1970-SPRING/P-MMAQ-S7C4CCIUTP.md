@@ -25,8 +25,8 @@ Use Green theorem or otherwise to prove the Cauchy theorem.
 ::: {.solution}
 ### Statement of Cauchy's theorem for $C^1$ functions
 
-Let $\Omega \subset \mathbb{C}$ be a simply connected domain.
-Let $f: \Omega \to \mathbb{C}$ be a holomorphic function whose derivative $f'$ is continuous ($f \in C^1(\Omega)$). Let $\gamma$ be a piecewise smooth, positively oriented simple closed curve whose interior $\text{Int}(\gamma)$ is contained in $\Omega$.
+Let $\Omega \subset \CC$ be a simply connected domain.
+Let $f: \Omega \to \CC$ be a holomorphic function whose derivative $f'$ is continuous ($f \in C^1(\Omega)$). Let $\gamma$ be a piecewise smooth, positively oriented simple closed curve whose interior $\text{Int}(\gamma)$ is contained in $\Omega$.
 Then: $$\oint_\gamma f(z) \, dz = 0.$$
 
 * * *
@@ -89,8 +89,8 @@ Linearity of integration.
 
 ::: pf-step
 
-Let $D \subset \mathbb{R}^2$ be the bounded region enclosed by $\gamma = \partial D$.
-If $P, Q: \overline{D} \to \mathbb{R}$ are $C^1$, then: $$\oint_\gamma (P \, dx + Q \, dy) = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA.$$
+Let $D \subset \RR^2$ be the bounded region enclosed by $\gamma = \partial D$.
+If $P, Q: \overline{D} \to \RR$ are $C^1$, then: $$\oint_\gamma (P \, dx + Q \, dy) = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA.$$
 
 ::: pf-proof
 

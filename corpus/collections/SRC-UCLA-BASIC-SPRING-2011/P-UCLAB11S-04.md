@@ -234,7 +234,7 @@ Without the nonzero-pivot hypothesis, normalized $LU$ decompositions need not be
 
 Take
 \[
-A=0\in M_2(\mathbb R).
+A=0\in M_2(\RR).
 \]
 For every real number $\ell$,
 \[

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be an $n$-dimensional $\mathbb{Z}_3$-orientable manifold.
+Let $X$ be an $n$-dimensional $\ZZ_3$-orientable manifold.
 Prove that $X$ is orientable.
 :::
 
@@ -25,7 +25,7 @@ Prove that $X$ is orientable.
 ::: {.pf-step #orientation-monodromy}
 For a connected $n$-manifold $X$, integral orientability is governed by the orientation monodromy
 $$
-\omega:\pi_1(X,x_0)\longrightarrow\operatorname{Aut}(H_n(X,X\setminus\{x_0\};\mathbb Z))\cong\{\pm1\}.
+\omega:\pi_1(X,x_0)\longrightarrow\operatorname{Aut}(H_n(X,X\setminus\{x_0\};\ZZ))\cong\{\pm1\}.
 $$
 
 ::: pf-proof
@@ -35,23 +35,23 @@ Transporting a local orientation around a loop returns either the same orientati
 :::
 
 ::: {.pf-step #mod3-reduction}
-Reducing local homology modulo $3$ sends the two possible monodromies to multiplication by $+1$ and $-1=2$ on $\mathbb Z_3$.
+Reducing local homology modulo $3$ sends the two possible monodromies to multiplication by $+1$ and $-1=2$ on $\ZZ_3$.
 
 ::: pf-proof
-The local homology group with $\mathbb Z_3$ coefficients is
+The local homology group with $\ZZ_3$ coefficients is
 $$
-H_n(X,X\setminus\{x_0\};\mathbb Z_3)\cong\mathbb Z_3,
+H_n(X,X\setminus\{x_0\};\ZZ_3)\cong\ZZ_3,
 $$
-and integral orientation transport reduces modulo $3$. Since $2\ne1$ in $\mathbb Z_3$, the sign is still detected after reduction.
+and integral orientation transport reduces modulo $3$. Since $2\ne1$ in $\ZZ_3$, the sign is still detected after reduction.
 :::
 
 :::
 
 ::: {.pf-step #mod3-monodromy-trivial}
-If $X$ is $\mathbb Z_3$-orientable, the mod-$3$ orientation monodromy is trivial.
+If $X$ is $\ZZ_3$-orientable, the mod-$3$ orientation monodromy is trivial.
 
 ::: pf-proof
-A $\mathbb Z_3$-orientation is a globally consistent choice of nonzero local fundamental classes, equivalently triviality of the orientation local system with $\mathbb Z_3$ coefficients.
+A $\ZZ_3$-orientation is a globally consistent choice of nonzero local fundamental classes, equivalently triviality of the orientation local system with $\ZZ_3$ coefficients.
 :::
 
 :::

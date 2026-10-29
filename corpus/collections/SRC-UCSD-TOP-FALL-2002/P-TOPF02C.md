@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF02C
 kind: problem
-title: A Moore space $M(\mathbb Z_4,2)$ and the homology of $\mathbb{RP}^2\times M(\mathbb Z_4,2)$
+title: A Moore space $M(\ZZ_4,2)$ and the homology of $\mathbb{RP}^2\times M(\ZZ_4,2)$
 classification:
   areas:
   - topology
@@ -20,10 +20,10 @@ audit:
 ::: {.problem}
 (a) Construct a space $Y$ with the following properties:
 $$
-H_k(Y; \mathbb{Z}) = \begin{cases} \mathbb{Z}_4 & \text{if } k = 2 \\ \mathbb{Z} & \text{if } k = 0 \\ 0 & \text{otherwise.} \end{cases}
+H_k(Y; \ZZ) = \begin{cases} \ZZ_4 & \text{if } k = 2 \\ \ZZ & \text{if } k = 0 \\ 0 & \text{otherwise.} \end{cases}
 $$
 
-(b) Compute $H_*(\mathbb{RP}^2 \times Y; \mathbb{Z}_2)$, $H_*(\mathbb{RP}^2 \times Y; \mathbb{Z})$, and $H^*(\mathbb{RP}^2 \times Y; \mathbb{Z})$.
+(b) Compute $H_*(\mathbb{RP}^2 \times Y; \ZZ_2)$, $H_*(\mathbb{RP}^2 \times Y; \ZZ)$, and $H^*(\mathbb{RP}^2 \times Y; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ $$
 ::: pf
 
 ::: {.pf-step #moore-space-construction}
-Part (a): Construction of Moore space $Y = M(\mathbb{Z}_4, 2)$:
+Part (a): Construction of Moore space $Y = M(\ZZ_4, 2)$:
 
 ::: pf-proof
 
@@ -47,7 +47,7 @@ definition of Moore space.
 ::: pf-step
 The cellular chain complex of $Y$ is:
 \[
-C_3 = \mathbb{Z}\langle e^3 \rangle, \quad C_2 = \mathbb{Z}\langle e^2 \rangle, \quad C_1 = 0, \quad C_0 = \mathbb{Z}\langle e^0 \rangle,
+C_3 = \ZZ\langle e^3 \rangle, \quad C_2 = \ZZ\langle e^2 \rangle, \quad C_1 = 0, \quad C_0 = \ZZ\langle e^0 \rangle,
 \]
 with boundary maps $d_3(e^3) = 4 e^2$, $d_2 = 0$, and $d_1 = 0$.
 
@@ -60,7 +60,7 @@ degree of attaching map on 2-cells.
 ::: pf-step
 The resulting integral homology groups are:
 \[
-H_0(Y; \mathbb{Z}) \cong \mathbb{Z}, \quad H_1(Y; \mathbb{Z}) = 0, \quad H_2(Y; \mathbb{Z}) = \ker(d_2)/\operatorname{im}(d_3) \cong \mathbb{Z}/4\mathbb{Z} = \mathbb{Z}_4, \quad H_k(Y; \mathbb{Z}) = 0 \ (k \ge 3).
+H_0(Y; \ZZ) \cong \ZZ, \quad H_1(Y; \ZZ) = 0, \quad H_2(Y; \ZZ) = \ker(d_2)/\operatorname{im}(d_3) \cong \ZZ/4\ZZ = \ZZ_4, \quad H_k(Y; \ZZ) = 0 \ (k \ge 3).
 \]
 
 ::: pf-proof
@@ -74,12 +74,12 @@ homology of cellular chain complex.
 :::
 
 ::: pf-step
-Part (b)(i): Integer homology $H_*(\mathbb{RP}^2 \times Y; \mathbb{Z})$:
+Part (b)(i): Integer homology $H_*(\mathbb{RP}^2 \times Y; \ZZ)$:
 
 ::: pf-proof
 
 ::: pf-step
-Recall $H_*(\mathbb{RP}^2; \mathbb{Z}) = (\mathbb{Z}, \mathbb{Z}_2, 0, \dots)$.
+Recall $H_*(\mathbb{RP}^2; \ZZ) = (\ZZ, \ZZ_2, 0, \dots)$.
 
 ::: pf-proof
 standard homology of real projective plane.
@@ -88,15 +88,15 @@ standard homology of real projective plane.
 :::
 
 ::: pf-step
-Apply the Künneth Theorem $H_n(X \times Y) \cong \bigoplus_{i+j=n} (H_i \otimes H_j) \oplus \bigoplus_{i+j=n-1} \operatorname{Tor}_1^{\mathbb{Z}}(H_i, H_j)$:
+Apply the Künneth Theorem $H_n(X \times Y) \cong \bigoplus_{i+j=n} (H_i \otimes H_j) \oplus \bigoplus_{i+j=n-1} \operatorname{Tor}_1^{\ZZ}(H_i, H_j)$:
 
-- $n = 0$: $H_0 \otimes H_0 \cong \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
+- $n = 0$: $H_0 \otimes H_0 \cong \ZZ \otimes \ZZ \cong \ZZ$.
 
-- $n = 1$: $H_1 \otimes H_0 \cong \mathbb{Z}_2 \otimes \mathbb{Z} \cong \mathbb{Z}_2$.
+- $n = 1$: $H_1 \otimes H_0 \cong \ZZ_2 \otimes \ZZ \cong \ZZ_2$.
 
-- $n = 2$: $H_0 \otimes H_2 \cong \mathbb{Z} \otimes \mathbb{Z}_4 \cong \mathbb{Z}_4$.
+- $n = 2$: $H_0 \otimes H_2 \cong \ZZ \otimes \ZZ_4 \cong \ZZ_4$.
 
-- $n = 3$: $(H_1 \otimes H_2) \oplus \operatorname{Tor}_1^{\mathbb{Z}}(H_1, H_2) \cong (\mathbb{Z}_2 \otimes \mathbb{Z}_4) \oplus \operatorname{Tor}(\mathbb{Z}_2, \mathbb{Z}_4) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$.
+- $n = 3$: $(H_1 \otimes H_2) \oplus \operatorname{Tor}_1^{\ZZ}(H_1, H_2) \cong (\ZZ_2 \otimes \ZZ_4) \oplus \operatorname{Tor}(\ZZ_2, \ZZ_4) \cong \ZZ_2 \oplus \ZZ_2$.
 
 - $n \ge 4$: $H_n = 0$.
 
@@ -111,33 +111,33 @@ Künneth Theorem for integral homology.
 :::
 
 ::: pf-step
-Part (b)(ii): Mod 2 homology $H_*(\mathbb{RP}^2 \times Y; \mathbb{Z}_2)$:
+Part (b)(ii): Mod 2 homology $H_*(\mathbb{RP}^2 \times Y; \ZZ_2)$:
 
 ::: pf-proof
 
 ::: pf-step
-By the Universal Coefficient Theorem, $H_*(\mathbb{RP}^2; \mathbb{Z}_2) = (\mathbb{Z}_2, \mathbb{Z}_2, \mathbb{Z}_2, 0, \dots)$ and $H_*(Y; \mathbb{Z}_2) = (\mathbb{Z}_2, 0, \mathbb{Z}_2, \mathbb{Z}_2, 0, \dots)$.
+By the Universal Coefficient Theorem, $H_*(\mathbb{RP}^2; \ZZ_2) = (\ZZ_2, \ZZ_2, \ZZ_2, 0, \dots)$ and $H_*(Y; \ZZ_2) = (\ZZ_2, 0, \ZZ_2, \ZZ_2, 0, \dots)$.
 
 ::: pf-proof
-UCT over $\mathbb{Z}_2$.
+UCT over $\ZZ_2$.
 :::
 
 :::
 
 ::: pf-step
-By the Künneth Theorem over the field $\mathbb{Z}_2$, $H_n(\mathbb{RP}^2 \times Y; \mathbb{Z}_2) \cong \bigoplus_{i+j=n} H_i(\mathbb{RP}^2; \mathbb{Z}_2) \otimes_{\mathbb{Z}_2} H_j(Y; \mathbb{Z}_2)$:
+By the Künneth Theorem over the field $\ZZ_2$, $H_n(\mathbb{RP}^2 \times Y; \ZZ_2) \cong \bigoplus_{i+j=n} H_i(\mathbb{RP}^2; \ZZ_2) \otimes_{\ZZ_2} H_j(Y; \ZZ_2)$:
 
-- $n = 0$: $H_0 \otimes H_0 \cong \mathbb{Z}_2$.
+- $n = 0$: $H_0 \otimes H_0 \cong \ZZ_2$.
 
-- $n = 1$: $H_1 \otimes H_0 \cong \mathbb{Z}_2$.
+- $n = 1$: $H_1 \otimes H_0 \cong \ZZ_2$.
 
-- $n = 2$: $(H_0 \otimes H_2) \oplus (H_2 \otimes H_0) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$.
+- $n = 2$: $(H_0 \otimes H_2) \oplus (H_2 \otimes H_0) \cong \ZZ_2 \oplus \ZZ_2$.
 
-- $n = 3$: $(H_0 \otimes H_3) \oplus (H_1 \otimes H_2) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$.
+- $n = 3$: $(H_0 \otimes H_3) \oplus (H_1 \otimes H_2) \cong \ZZ_2 \oplus \ZZ_2$.
 
-- $n = 4$: $(H_1 \otimes H_3) \oplus (H_2 \otimes H_2) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$.
+- $n = 4$: $(H_1 \otimes H_3) \oplus (H_2 \otimes H_2) \cong \ZZ_2 \oplus \ZZ_2$.
 
-- $n = 5$: $H_2 \otimes H_3 \cong \mathbb{Z}_2$.
+- $n = 5$: $H_2 \otimes H_3 \cong \ZZ_2$.
 
 - $n \ge 6$: $H_n = 0$.
 
@@ -152,27 +152,27 @@ field Künneth formula.
 :::
 
 ::: {.pf-step #integer-cohomology}
-Part (b)(iii): Integer cohomology $H^*(\mathbb{RP}^2 \times Y; \mathbb{Z})$:
+Part (b)(iii): Integer cohomology $H^*(\mathbb{RP}^2 \times Y; \ZZ)$:
 
 ::: pf-proof
 
 ::: pf-step
-By the Universal Coefficient Theorem for cohomology, $H^n(X; \mathbb{Z}) \cong \operatorname{Free}(H_n(X)) \oplus \operatorname{Tors}(H_{n-1}(X))$:
+By the Universal Coefficient Theorem for cohomology, $H^n(X; \ZZ) \cong \operatorname{Free}(H_n(X)) \oplus \operatorname{Tors}(H_{n-1}(X))$:
 
-- $n = 0$: $\operatorname{Free}(H_0) \cong \mathbb{Z}$.
+- $n = 0$: $\operatorname{Free}(H_0) \cong \ZZ$.
 
 - $n = 1$: $\operatorname{Free}(H_1) \oplus \operatorname{Tors}(H_0) = 0 \oplus 0 = 0$.
 
-- $n = 2$: $\operatorname{Free}(H_2) \oplus \operatorname{Tors}(H_1) = 0 \oplus \mathbb{Z}_2 \cong \mathbb{Z}_2$.
+- $n = 2$: $\operatorname{Free}(H_2) \oplus \operatorname{Tors}(H_1) = 0 \oplus \ZZ_2 \cong \ZZ_2$.
 
-- $n = 3$: $\operatorname{Free}(H_3) \oplus \operatorname{Tors}(H_2) = 0 \oplus \mathbb{Z}_4 \cong \mathbb{Z}_4$.
+- $n = 3$: $\operatorname{Free}(H_3) \oplus \operatorname{Tors}(H_2) = 0 \oplus \ZZ_4 \cong \ZZ_4$.
 
-- $n = 4$: $\operatorname{Free}(H_4) \oplus \operatorname{Tors}(H_3) = 0 \oplus (\mathbb{Z}_2 \oplus \mathbb{Z}_2) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$.
+- $n = 4$: $\operatorname{Free}(H_4) \oplus \operatorname{Tors}(H_3) = 0 \oplus (\ZZ_2 \oplus \ZZ_2) \cong \ZZ_2 \oplus \ZZ_2$.
 
 - $n \ge 5$: $H^n = 0$.
 
 ::: pf-proof
-UCT for cohomology with coefficients in $\mathbb{Z}$.
+UCT for cohomology with coefficients in $\ZZ$.
 :::
 
 :::

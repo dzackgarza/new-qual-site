@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via $180$ degree rotations, as shown.
-Compute the homology $H_*(X; \mathbb{Z})$.
+Compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -26,7 +26,7 @@ Compute the homology $H_*(X; \mathbb{Z})$.
 
 Under the three half-turn face pairings, the eight cube vertices fall into four equivalence classes, the twelve edges into six classes, and the six faces into three classes. Thus the quotient has cellular chain groups
 $$
-0\to \mathbb Z\xrightarrow{\partial_3}\mathbb Z^3\xrightarrow{\partial_2}\mathbb Z^6\xrightarrow{\partial_1}\mathbb Z^4\to0.
+0\to \ZZ\xrightarrow{\partial_3}\ZZ^3\xrightarrow{\partial_2}\ZZ^6\xrightarrow{\partial_1}\ZZ^4\to0.
 $$
 
 ::: pf-proof
@@ -82,7 +82,7 @@ which are exactly the displayed columns.
 
 Collapsing the spanning tree $e_0,e_2,e_4$ identifies
 $$
-H_1(X;\mathbb Z)\cong \operatorname{coker}
+H_1(X;\ZZ)\cong \operatorname{coker}
 \begin{pmatrix}
 0&-1&1\\
 -1&0&-1\\
@@ -106,7 +106,7 @@ $$
 $$
 so
 $$
-H_1(X;\mathbb Z)\cong\mathbb Z/2.
+H_1(X;\ZZ)\cong\ZZ/2.
 $$
 
 ::: pf-proof
@@ -119,7 +119,7 @@ The matrix has determinant $2$, and one of its $2\times2$ minors is $\pm1$. Henc
 
 ::: {.pf-step #s5}
 
-The map $\partial_2$ is injective, so $H_2(X;\mathbb Z)=0$ once $\partial_3=0$.
+The map $\partial_2$ is injective, so $H_2(X;\ZZ)=0$ once $\partial_3=0$.
 
 ::: pf-proof
 
@@ -145,17 +145,17 @@ For each quotient $2$-cell, the two opposite cube faces occur in the boundary of
 
 Therefore
 $$
-\boxed{H_i(X;\mathbb Z)\cong
+\boxed{H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,3,\\
-\mathbb Z/2,&i=1,\\
+\ZZ,&i=0,3,\\
+\ZZ/2,&i=1,\\
 0,&i=2\text{ or }i>3.
 \end{cases}}
 $$
 
 ::: pf-proof
 
-The quotient is connected, giving $H_0\cong\mathbb Z$. Combine steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} with the cellular chain complex in step [](#s1){.pf-ref}.
+The quotient is connected, giving $H_0\cong\ZZ$. Combine steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} with the cellular chain complex in step [](#s1){.pf-ref}.
 
 :::
 

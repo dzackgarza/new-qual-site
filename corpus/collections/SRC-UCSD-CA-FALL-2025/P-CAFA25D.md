@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \mathbb{C}$ be a holomorphic function in the unit disk.
+Let $f : \mathbb{D} \to \CC$ be a holomorphic function in the unit disk.
 Assume that $|f(z)|$ is constant on each circle $|z| = r$ for $0 < r < 1$; i.e., $|f(re^{i\theta})| = \varphi(r)$, for some non-negative function $\varphi$ on $0 < r < 1$.
 
 (i) Assume that $f(0) \neq 0$.

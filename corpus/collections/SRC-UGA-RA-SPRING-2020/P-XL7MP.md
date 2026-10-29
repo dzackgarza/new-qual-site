@@ -28,14 +28,14 @@ audit:
 ::: {.problem}
 (a) Show that
 $$
-L^2([0, 1]) \subseteq L^1([0, 1]) \quad \text{and} \quad \ell^1(\mathbb{Z}) \subseteq \ell^2(\mathbb{Z}).
+L^2([0, 1]) \subseteq L^1([0, 1]) \quad \text{and} \quad \ell^1(\ZZ) \subseteq \ell^2(\ZZ).
 $$
 
 (b) For $f \in L^1([0, 1])$, define the Fourier coefficients by
 $$
-\hat{f}(n) = \int_0^1 f(x) e^{-2\pi i n x} \, dx \quad (n \in \mathbb{Z}).
+\hat{f}(n) = \int_0^1 f(x) e^{-2\pi i n x} \, dx \quad (n \in \ZZ).
 $$
-Prove that if $f \in L^1([0, 1])$ and $(\hat{f}(n))_{n \in \mathbb{Z}} \in \ell^1(\mathbb{Z})$, then the partial sums
+Prove that if $f \in L^1([0, 1])$ and $(\hat{f}(n))_{n \in \ZZ} \in \ell^1(\ZZ)$, then the partial sums
 $$
 S_N f(x) = \sum_{|n| \le N} \hat{f}(n) e^{2\pi i n x}
 $$
@@ -76,28 +76,28 @@ Since $\|f\|_{L^2} < \infty$, $\|f\|_{L^1} < \infty$, so $f \in L^1([0, 1])$.
 :::
 
 ::: pf-step
-Part (a): $\ell^1(\mathbb{Z}) \subseteq \ell^2(\mathbb{Z})$.
+Part (a): $\ell^1(\ZZ) \subseteq \ell^2(\ZZ)$.
 
 ::: pf-proof
 
 ::: pf-step
-Let $c = (c_n)_{n \in \mathbb{Z}} \in \ell^1(\mathbb{Z})$, so $\sum_{n \in \mathbb{Z}} |c_n| < \infty$.
+Let $c = (c_n)_{n \in \ZZ} \in \ell^1(\ZZ)$, so $\sum_{n \in \ZZ} |c_n| < \infty$.
 
 :::
 
 ::: pf-step
-The convergence of the series implies $\|c\|_{\ell^\infty} = \sup_{n \in \mathbb{Z}} |c_n| \le \sum_{n \in \mathbb{Z}} |c_n| = \|c\|_{\ell^1} < \infty$.
+The convergence of the series implies $\|c\|_{\ell^\infty} = \sup_{n \in \ZZ} |c_n| \le \sum_{n \in \ZZ} |c_n| = \|c\|_{\ell^1} < \infty$.
 
 :::
 
 ::: pf-step
 Estimate the $\ell^2$ norm:
-$$\|c\|_{\ell^2}^2 = \sum_{n \in \mathbb{Z}} |c_n|^2 = \sum_{n \in \mathbb{Z}} |c_n| \cdot |c_n| \le \|c\|_{\ell^\infty} \sum_{n \in \mathbb{Z}} |c_n| = \|c\|_{\ell^\infty} \|c\|_{\ell^1} \le \|c\|_{\ell^1}^2 < \infty.$$
+$$\|c\|_{\ell^2}^2 = \sum_{n \in \ZZ} |c_n|^2 = \sum_{n \in \ZZ} |c_n| \cdot |c_n| \le \|c\|_{\ell^\infty} \sum_{n \in \ZZ} |c_n| = \|c\|_{\ell^\infty} \|c\|_{\ell^1} \le \|c\|_{\ell^1}^2 < \infty.$$
 
 :::
 
 ::: pf-step
-Thus $c \in \ell^2(\mathbb{Z})$.
+Thus $c \in \ell^2(\ZZ)$.
 
 :::
 
@@ -111,7 +111,7 @@ Part (b): Uniform convergence to a continuous function $g$.
 ::: pf-proof
 
 ::: pf-step
-For each $n \in \mathbb{Z}$, define the continuous function $u_n(x) = \hat{f}(n) e^{2\pi i n x}$ on $[0, 1]$.
+For each $n \in \ZZ$, define the continuous function $u_n(x) = \hat{f}(n) e^{2\pi i n x}$ on $[0, 1]$.
 
 :::
 
@@ -122,7 +122,7 @@ $$|u_n(x)| = |\hat{f}(n)| \cdot |e^{2\pi i n x}| = |\hat{f}(n)| =: M_n.$$
 :::
 
 ::: pf-step
-By hypothesis, $\sum_{n \in \mathbb{Z}} M_n = \sum_{n \in \mathbb{Z}} |\hat{f}(n)| = \|\hat{f}\|_{\ell^1} < \infty$.
+By hypothesis, $\sum_{n \in \ZZ} M_n = \sum_{n \in \ZZ} |\hat{f}(n)| = \|\hat{f}\|_{\ell^1} < \infty$.
 
 :::
 
@@ -151,7 +151,7 @@ Since $S_N f \to g$ uniformly on $[0, 1]$, we can interchange summation and inte
 :::
 
 ::: pf-step
-For any $k \in \mathbb{Z}$:
+For any $k \in \ZZ$:
 $$\hat{g}(k) = \int_0^1 g(x) e^{-2\pi i k x} \, dx = \lim_{N \to \infty} \int_0^1 \left( \sum_{|n| \le N} \hat{f}(n) e^{2\pi i n x} \right) e^{-2\pi i k x} \, dx.$$
 
 :::
@@ -163,7 +163,7 @@ $$\int_0^1 \left( \sum_{|n| \le N} \hat{f}(n) e^{2\pi i n x} \right) e^{-2\pi i 
 :::
 
 ::: pf-step
-Thus $\hat{g}(k) = \hat{f}(k)$ for every $k \in \mathbb{Z}$.
+Thus $\hat{g}(k) = \hat{f}(k)$ for every $k \in \ZZ$.
 
 :::
 
@@ -182,7 +182,7 @@ Define $h = f - g \in L^1([0, 1])$.
 :::
 
 ::: pf-step
-By linearity of the integral, $\hat{h}(k) = \hat{f}(k) - \hat{g}(k) = 0$ for all $k \in \mathbb{Z}$.
+By linearity of the integral, $\hat{h}(k) = \hat{f}(k) - \hat{g}(k) = 0$ for all $k \in \ZZ$.
 
 :::
 
@@ -219,7 +219,7 @@ Thus $h(x) = 0$ almost everywhere, so $f(x) = g(x)$ almost everywhere on $[0, 1]
 Conclusion:
 
 ::: pf-proof
-$L^2([0, 1]) \subseteq L^1([0, 1])$ by Cauchy–Schwarz, $\ell^1(\mathbb{Z}) \subseteq \ell^2(\mathbb{Z})$ by $\ell^\infty$ bounding, and $S_N f \to g$ uniformly with $g = f$ a.e. by the $M$-test and Fejér uniqueness.
+$L^2([0, 1]) \subseteq L^1([0, 1])$ by Cauchy–Schwarz, $\ell^1(\ZZ) \subseteq \ell^2(\ZZ)$ by $\ell^\infty$ bounding, and $S_N f \to g$ uniformly with $g = f$ a.e. by the $M$-test and Fejér uniqueness.
 :::
 
 :::

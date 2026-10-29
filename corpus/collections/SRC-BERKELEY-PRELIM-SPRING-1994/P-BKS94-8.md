@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all automorphisms of $\mathbb { Z } [ x ]$ , the ring of polynomials over $\mathbb { Z }$
+Find all automorphisms of $\ZZ [ x ]$ , the ring of polynomials over $\ZZ$
 :::
 
 ::: {.solution}

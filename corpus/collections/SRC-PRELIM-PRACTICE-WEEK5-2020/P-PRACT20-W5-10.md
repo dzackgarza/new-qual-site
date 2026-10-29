@@ -80,7 +80,7 @@ The choice $60$ can occur.
 
 Take the cyclic group
 \[
-G=\mathbb Z_{60}.
+G=\ZZ_{60}.
 \]
 Its unique subgroups of orders $12$ and $30$ generate the subgroup whose
 order is
@@ -102,15 +102,15 @@ The choices $120$ and $360$ can occur.
 
 For $120$, take
 \[
-G=\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_3\times\mathbb Z_5.
+G=\ZZ_4\times\ZZ_2\times\ZZ_3\times\ZZ_5.
 \]
 Let
 \[
-H=\mathbb Z_4\times\{0\}\times\mathbb Z_3\times\{0\},
+H=\ZZ_4\times\{0\}\times\ZZ_3\times\{0\},
 \]
 so $|H|=12$, and let
 \[
-K=\{0\}\times\mathbb Z_2\times\mathbb Z_3\times\mathbb Z_5,
+K=\{0\}\times\ZZ_2\times\ZZ_3\times\ZZ_5,
 \]
 so $|K|=30$. These subgroups together generate every direct factor, hence
 \[
@@ -120,12 +120,12 @@ has order $120$.
 
 For $360$, take
 \[
-G=\mathbb Z_4\times\mathbb Z_2\times
-\mathbb Z_3\times\mathbb Z_3\times\mathbb Z_5.
+G=\ZZ_4\times\ZZ_2\times
+\ZZ_3\times\ZZ_3\times\ZZ_5.
 \]
-Let $H$ use the $\mathbb Z_4$ factor and the first $\mathbb Z_3$ factor, and
-let $K$ use the $\mathbb Z_2$ factor, the second $\mathbb Z_3$ factor, and
-the $\mathbb Z_5$ factor. Then
+Let $H$ use the $\ZZ_4$ factor and the first $\ZZ_3$ factor, and
+let $K$ use the $\ZZ_2$ factor, the second $\ZZ_3$ factor, and
+the $\ZZ_5$ factor. Then
 \[
 |H|=12,\qquad |K|=30,
 \]

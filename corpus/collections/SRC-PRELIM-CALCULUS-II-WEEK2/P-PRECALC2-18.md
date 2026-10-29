@@ -169,7 +169,7 @@ Exponentiation is continuous and
 \[
 P_N=e^{\log P_N}.
 \]
-Since \(S\in\mathbb R\), one has
+Since \(S\in\RR\), one has
 \[
 e^S>0.
 \]

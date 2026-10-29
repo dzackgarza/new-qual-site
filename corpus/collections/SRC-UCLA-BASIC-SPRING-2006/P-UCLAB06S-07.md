@@ -239,7 +239,7 @@ Hence $T$ is not diagonalizable.
 
 Therefore for every
 \[
-a,\lambda\in\mathbb C
+a,\lambda\in\CC
 \]
 with
 \[

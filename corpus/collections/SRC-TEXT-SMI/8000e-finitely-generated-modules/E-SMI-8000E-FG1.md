@@ -66,7 +66,7 @@ be the partitions of $3$ and $4$.
 
 For a partition $\lambda=(\lambda_1,\ldots,\lambda_r)$, write
 $$
-A_\lambda(p)=\bigoplus_{j=1}^r\mathbb Z/p^{\lambda_j}\mathbb Z,
+A_\lambda(p)=\bigoplus_{j=1}^r\ZZ/p^{\lambda_j}\ZZ,
 $$
 $$
 M_\lambda(a)=\bigoplus_{j=1}^r
@@ -94,24 +94,24 @@ parts. By the classification theorem for finite abelian $p$-groups, the
 isomorphism types of the $2$-primary part are indexed by the partitions of
 $3$, namely
 $$
-\mathbb Z/8,
+\ZZ/8,
 \qquad
-\mathbb Z/4\oplus\mathbb Z/2,
+\ZZ/4\oplus\ZZ/2,
 \qquad
-(\mathbb Z/2)^3,
+(\ZZ/2)^3,
 $$
 and the isomorphism types of the $3$-primary part are indexed by the
 partitions of $4$, namely
 $$
-\mathbb Z/81,
+\ZZ/81,
 \quad
-\mathbb Z/27\oplus\mathbb Z/3,
+\ZZ/27\oplus\ZZ/3,
 \quad
-\mathbb Z/9\oplus\mathbb Z/9,
+\ZZ/9\oplus\ZZ/9,
 \quad
-\mathbb Z/9\oplus(\mathbb Z/3)^2,
+\ZZ/9\oplus(\ZZ/3)^2,
 \quad
-(\mathbb Z/3)^4.
+(\ZZ/3)^4.
 $$
 
 Consequently the complete list is
@@ -203,7 +203,7 @@ Classify the Jordan matrices in part (c).
 
 ::: pf-proof
 
-Over $\mathbb Q$, a Jordan matrix with characteristic polynomial
+Over $\QQ$, a Jordan matrix with characteristic polynomial
 $$
 (t-2)^3(t-3)^4
 $$

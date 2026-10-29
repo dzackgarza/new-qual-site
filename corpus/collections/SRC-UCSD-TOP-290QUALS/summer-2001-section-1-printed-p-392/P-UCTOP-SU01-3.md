@@ -28,14 +28,14 @@ X=\mathbb{CP}^2\#(S^2\times S^2)
 $$
 are
 $$
-H^0(X;\mathbb Z)\cong H^4(X;\mathbb Z)\cong\mathbb Z,
+H^0(X;\ZZ)\cong H^4(X;\ZZ)\cong\ZZ,
 \qquad
-H^2(X;\mathbb Z)\cong\mathbb Z^3,
+H^2(X;\ZZ)\cong\ZZ^3,
 $$
 and all other groups vanish.
 
 ::: pf-proof
-For connected sums of closed oriented $4$-manifolds, the middle cohomology is the direct sum of the middle cohomologies of the two summands, while degrees $0$ and $4$ remain $\mathbb Z$. This follows from Mayer--Vietoris applied after removing an open $4$-ball from each summand; the common boundary is $S^3$.
+For connected sums of closed oriented $4$-manifolds, the middle cohomology is the direct sum of the middle cohomologies of the two summands, while degrees $0$ and $4$ remain $\ZZ$. This follows from Mayer--Vietoris applied after removing an open $4$-ball from each summand; the common boundary is $S^3$.
 :::
 
 :::
@@ -50,7 +50,7 @@ Thus $x$ generates $H^2(\mathbb{CP}^2)$ and $u,v$ are the pullbacks of the funda
 :::
 
 ::: {.pf-step #square-relations}
-Let $\omega\in H^4(X;\mathbb Z)$ be the orientation class. Then
+Let $\omega\in H^4(X;\ZZ)$ be the orientation class. Then
 $$
 x^2=\omega,
 \qquad

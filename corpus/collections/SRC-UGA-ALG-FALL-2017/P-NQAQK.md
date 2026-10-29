@@ -62,12 +62,12 @@ By step [](#s1){.pf-ref}, an $F[x]$-linear isomorphism $P$ is an invertible $F$-
 
 A simple two-dimensional example is
 \[
-\boxed{F=\mathbb R,\quad V=\mathbb R^2,\quad T=\begin{pmatrix}0&-1\\1&0\end{pmatrix}}.
+\boxed{F=\RR,\quad V=\RR^2,\quad T=\begin{pmatrix}0&-1\\1&0\end{pmatrix}}.
 \]
 
 ::: pf-proof
 
-The $F[x]$-submodules of $V_T$ are precisely the $T$-invariant $F$-linear subspaces. Every proper nonzero subspace of $\mathbb R^2$ is one-dimensional. Such a subspace is $T$-invariant only when it is an eigenspace of $T$ over $\mathbb R$. But the characteristic polynomial $x^2+1$ has no real root, so $T$ has no nonzero real eigenvector. Hence $V_T$ has no proper nonzero submodule and is simple.
+The $F[x]$-submodules of $V_T$ are precisely the $T$-invariant $F$-linear subspaces. Every proper nonzero subspace of $\RR^2$ is one-dimensional. Such a subspace is $T$-invariant only when it is an eigenspace of $T$ over $\RR$. But the characteristic polynomial $x^2+1$ has no real root, so $T$ has no nonzero real eigenvector. Hence $V_T$ has no proper nonzero submodule and is simple.
 
 :::
 

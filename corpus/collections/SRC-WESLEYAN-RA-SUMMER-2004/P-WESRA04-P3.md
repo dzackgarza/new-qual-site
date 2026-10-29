@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $g:[0,1]\to\mathbb R$ be absolutely continuous and let $E\subset[0,1]$ have Lebesgue measure zero.
+Let $g:[0,1]\to\RR$ be absolutely continuous and let $E\subset[0,1]$ have Lebesgue measure zero.
 Prove that $g(E)$ has Lebesgue measure zero.
 :::
 
@@ -37,7 +37,7 @@ one has
 \sum_j|g(b_j)-g(a_j)|<\varepsilon.
 \]
 
-Since $m(E)=0$, choose an open set $U\subset\mathbb R$ with
+Since $m(E)=0$, choose an open set $U\subset\RR$ with
 \[
 E\subset U
 \qquad\text{and}\qquad

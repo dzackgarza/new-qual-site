@@ -57,7 +57,7 @@ W
 =
 \left\{
 \begin{pmatrix}a\\b\\0\\c\end{pmatrix}
-:a,b,c\in\mathbb R
+:a,b,c\in\RR
 \right\}.
 $$
 The vectors

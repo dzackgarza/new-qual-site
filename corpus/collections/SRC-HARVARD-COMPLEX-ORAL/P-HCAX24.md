@@ -24,7 +24,7 @@ Define the modular group and describe its action on the upper half-plane.
 
 The modular group is
 $$
-\boxed{PSL_2(\mathbb Z)=SL_2(\mathbb Z)/\{\pm I\}}.
+\boxed{PSL_2(\ZZ)=SL_2(\ZZ)/\{\pm I\}}.
 $$
 
 ::: pf-proof
@@ -33,7 +33,7 @@ Thus an element is represented by a matrix
 $$
 \gamma=
 \begin{pmatrix}a&b\\ c&d\end{pmatrix},
-\qquad a,b,c,d\in\mathbb Z,
+\qquad a,b,c,d\in\ZZ,
 \quad ad-bc=1,
 $$
 with a matrix identified with its negative.
@@ -50,13 +50,13 @@ The modular group acts on $\mathbb H$ by Möbius transformations.
 
 For
 $$
-\mathbb H=\{z\in\mathbb C:\operatorname{Im}z>0\},
+\mathbb H=\{z\in\CC:\operatorname{Im}z>0\},
 $$
 define
 $$
 \gamma\cdot z=\frac{az+b}{cz+d}.
 $$
-Replacing $\gamma$ by $-\gamma$ does not change this fraction, so the formula is well-defined on $PSL_2(\mathbb Z)$. Moreover,
+Replacing $\gamma$ by $-\gamma$ does not change this fraction, so the formula is well-defined on $PSL_2(\ZZ)$. Moreover,
 $$
 \operatorname{Im}(\gamma\cdot z)
 =\frac{\operatorname{Im}z}{|cz+d|^2}>0,

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UNL871F13-PS3.2
 kind: problem
-title: Product and cofinite topologies on $\mathbb Z^2$
+title: Product and cofinite topologies on $\ZZ^2$
 classification:
   areas: [topology]
   topics: [Product Topology]
@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X=Y=\mathbb Z$, each with the finite-complement topology.
+Let $X=Y=\ZZ$, each with the finite-complement topology.
 Let $\mathcal T_{prod}$ be the product topology on $X\times Y$, and let $\mathcal T_{fc}$ be the finite-complement topology on $X\times Y$.
 
 Determine whether
@@ -31,7 +31,7 @@ holds, and prove your answer.
 
 Write
 \[
-Z=\mathbb Z\times\mathbb Z.
+Z=\ZZ\times\ZZ.
 \]
 
 ::: pf
@@ -85,7 +85,7 @@ Define
 \[
 U
 \coloneqq
-\mathbb Z
+\ZZ
 \setminus
 \{a:(a,b)\in F_1\}
 \]
@@ -93,13 +93,13 @@ and
 \[
 V
 \coloneqq
-\mathbb Z
+\ZZ
 \setminus
 \{b:(x,b)\in F_2\}.
 \]
 
 Only finitely many integers are removed from $U$ and $V$, so both are open
-in the cofinite topology on $\mathbb Z$.
+in the cofinite topology on $\ZZ$.
 Also
 \[
 x\in U.
@@ -160,17 +160,17 @@ Consider
 \[
 W
 \coloneqq
-(\mathbb Z\setminus\{0\})
+(\ZZ\setminus\{0\})
 \times
-\mathbb Z.
+\ZZ.
 \]
 The set
 \[
-\mathbb Z\setminus\{0\}
+\ZZ\setminus\{0\}
 \]
 is cofinite-open in $X$, and
 \[
-\mathbb Z
+\ZZ
 \]
 is open in $Y$.
 Hence
@@ -184,7 +184,7 @@ But
 \[
 Z\setminus W
 =
-\{0\}\times\mathbb Z,
+\{0\}\times\ZZ,
 \]
 which is infinite.
 Therefore $W$ is neither empty nor cofinite, so

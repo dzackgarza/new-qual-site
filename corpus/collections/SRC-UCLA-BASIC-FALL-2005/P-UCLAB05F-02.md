@@ -16,21 +16,21 @@ audit:
 ---
 
 ::: {.problem}
-State some reasonable conditions on a real-valued function $f(x,y)$ on $\mathbb R^2$ which guarantee that
+State some reasonable conditions on a real-valued function $f(x,y)$ on $\RR^2$ which guarantee that
 \[
 \frac{\partial^2f}{\partial x\,\partial y}
 =
 \frac{\partial^2f}{\partial y\,\partial x}
 \]
-at every point of $\mathbb R^2$.
+at every point of $\RR^2$.
 Then prove that your conditions do in fact guarantee this equality.
 :::
 
 ::: {.solution}
 
-Assume that $f\in C^2(\mathbb R^2)$; equivalently, all second partial derivatives of $f$ exist and are continuous on $\mathbb R^2$.
+Assume that $f\in C^2(\RR^2)$; equivalently, all second partial derivatives of $f$ exist and are continuous on $\RR^2$.
 
-Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, define
+Fix $(a,b)\in\RR^2$. For nonzero $h,k$, define
 \[
 \Delta(h,k)
 =
@@ -145,7 +145,7 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that, for each nonzero $h,k
 \frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)(\xi',\eta').
 \]
-As $(h,k)\to(0,0)$, the points $(\xi,\eta)$ and $(\xi',\eta')$ both tend to $(a,b)$. The two mixed second partials are continuous because $f\in C^2(\mathbb R^2)$. Taking limits in the displayed equality therefore gives the claimed equality at $(a,b)$.
+As $(h,k)\to(0,0)$, the points $(\xi,\eta)$ and $(\xi',\eta')$ both tend to $(a,b)$. The two mixed second partials are continuous because $f\in C^2(\RR^2)$. Taking limits in the displayed equality therefore gives the claimed equality at $(a,b)$.
 
 :::
 
@@ -153,12 +153,12 @@ As $(h,k)\to(0,0)$, the points $(\xi,\eta)$ and $(\xi',\eta')$ both tend to $(a,
 
 ::: {.pf-step #s1-4}
 
-The mixed partial derivatives agree at every point of $\mathbb R^2$.
+The mixed partial derivatives agree at every point of $\RR^2$.
 
 
 ::: pf-proof
 
-The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} applies throughout $\mathbb R^2$.
+The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} applies throughout $\RR^2$.
 
 :::
 

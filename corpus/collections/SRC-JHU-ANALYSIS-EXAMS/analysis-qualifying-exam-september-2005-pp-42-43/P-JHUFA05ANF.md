@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANF
 kind: problem
-title: Automorphisms of the right half-plane and of $\mathbb C$
+title: Automorphisms of the right half-plane and of $\CC$
 classification:
   areas:
   - complex-analysis
@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 6. (a) Describe all the automorphisms of the right half-plane
-$H=\{z\in\mathbb C:\operatorname{Re}z>0\}$, meaning holomorphic bijections from $H$ onto itself.
+$H=\{z\in\CC:\operatorname{Re}z>0\}$, meaning holomorphic bijections from $H$ onto itself.
 
-(b) Describe all the automorphisms of C (holomorphic bijective maps from C onto C).
+(b) Describe all the automorphisms of $\CC$ (holomorphic bijective maps from $\CC$ onto $\CC$).
 :::
 
 ::: {.solution}
@@ -46,8 +46,8 @@ a\in D,\ |\lambda|=1\right\},}
 $$
 and
 $$
-\boxed{\operatorname{Aut}(\mathbb C)=
-\{z\longmapsto az+b:a,b\in\mathbb C,\ a\ne0\}.}
+\boxed{\operatorname{Aut}(\CC)=
+\{z\longmapsto az+b:a,b\in\CC,\ a\ne0\}.}
 $$
 
 ::: pf
@@ -96,7 +96,7 @@ A plane automorphism must be a polynomial.
 
 ::: pf-proof
 
-Let $F:\mathbb C\to\mathbb C$ be a holomorphic bijection.
+Let $F:\CC\to\CC$ be a holomorphic bijection.
 Its inverse is holomorphic, hence continuous, by the
 nonvanishing derivative of an injective holomorphic
 function and the inverse function theorem [@SS03].

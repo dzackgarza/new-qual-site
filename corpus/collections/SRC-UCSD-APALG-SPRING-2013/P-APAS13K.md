@@ -39,7 +39,7 @@ z&=v.
 ::: pf
 
 ::: pf-step
-The ideal is $I = (x - u + 2v, y - uv, z - v) \subseteq \mathbb{C}[u, v, x, y, z]$.
+The ideal is $I = (x - u + 2v, y - uv, z - v) \subseteq \CC[u, v, x, y, z]$.
 
 ::: pf-proof
 the parametric equations give the generators $x - (u - 2v)$, $y - uv$, $z - v$.

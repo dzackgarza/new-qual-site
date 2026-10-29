@@ -26,11 +26,11 @@ audit:
 ::: {.problem}
 Prove that
 \[
-\mathbb Q[x,y]/(x^2+y^2-1)
+\QQ[x,y]/(x^2+y^2-1)
 \]
 is an integral domain and that its field of fractions is isomorphic to
 \[
-\mathbb Q(t).
+\QQ(t).
 \]
 :::
 

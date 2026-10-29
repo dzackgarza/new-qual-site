@@ -46,7 +46,7 @@ be the connected covering corresponding to $H$. By the lifting criterion, $f$ li
 
 If $p$ has infinitely many sheets, then $\widetilde N$ is a connected noncompact $n$-manifold. Hence
 \[
-H_n(\widetilde N;\mathbb Z)=0.
+H_n(\widetilde N;\ZZ)=0.
 \]
 Therefore
 \[

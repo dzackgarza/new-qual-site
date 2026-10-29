@@ -30,7 +30,7 @@ Show that
 \]
 but $f$ is not continuous at $(0,0)$.
 
-(b) Give a sufficient condition, stated in terms of the partial derivatives, for a function $g:\mathbb R^2\to\mathbb R$ to be differentiable at a point $P$.
+(b) Give a sufficient condition, stated in terms of the partial derivatives, for a function $g:\RR^2\to\RR$ to be differentiable at a point $P$.
 :::
 
 ::: {.solution}

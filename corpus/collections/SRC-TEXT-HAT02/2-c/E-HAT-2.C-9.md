@@ -54,7 +54,7 @@ Hence there are only countably many isomorphism classes of finite simplicial com
 
 ::: pf-proof
 
-Every finite simplicial complex has some finite number $N$ of vertices and, after labeling the vertices, appears among the finite collection in step [](#s1){.pf-ref}. Take the union over $N\in\mathbb N$.
+Every finite simplicial complex has some finite number $N$ of vertices and, after labeling the vertices, appears among the finite collection in step [](#s1){.pf-ref}. Take the union over $N\in\NN$.
 
 :::
 

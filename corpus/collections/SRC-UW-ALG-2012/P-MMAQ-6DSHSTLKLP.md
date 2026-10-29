@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine the Galois groups of the following polynomials over $\mathbb Q$.
+Determine the Galois groups of the following polynomials over $\QQ$.
 
 - $f(x)=x^4+4x^2+1$
 
@@ -71,25 +71,25 @@ Thus the square roots of the two values of \(y\) are exactly
 
 The splitting field of \(f_1\) is
 \[
-K_1=\mathbb Q(\alpha),
-\qquad [K_1:\mathbb Q]=4.
+K_1=\QQ(\alpha),
+\qquad [K_1:\QQ]=4.
 \]
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(\mathbb Q(\alpha)\) already contains every root, so it is the splitting field. Moreover
+By step [](#s1){.pf-ref}, \(\QQ(\alpha)\) already contains every root, so it is the splitting field. Moreover
 \[
-\sqrt3=\alpha^2+2\in\mathbb Q(\alpha),
+\sqrt3=\alpha^2+2\in\QQ(\alpha),
 \]
 so
 \[
-\mathbb Q\subset \mathbb Q(\sqrt3)\subset \mathbb Q(\alpha).
+\QQ\subset \QQ(\sqrt3)\subset \QQ(\alpha).
 \]
-The first extension has degree \(2\). The element \(-2+\sqrt3\) is not a square in the real quadratic field \(\mathbb Q(\sqrt3)\): under the identity real embedding it is negative, whereas a square is nonnegative. Hence
+The first extension has degree \(2\). The element \(-2+\sqrt3\) is not a square in the real quadratic field \(\QQ(\sqrt3)\): under the identity real embedding it is negative, whereas a square is nonnegative. Hence
 \[
-[\mathbb Q(\alpha):\mathbb Q(\sqrt3)]=2.
+[\QQ(\alpha):\QQ(\sqrt3)]=2.
 \]
-Therefore \([K_1:\mathbb Q]=4\).
+Therefore \([K_1:\QQ]=4\).
 
 :::
 
@@ -99,12 +99,12 @@ Therefore \([K_1:\mathbb Q]=4\).
 
 We have
 \[
-\operatorname{Gal}(K_1/\mathbb Q)\cong C_2\times C_2.
+\operatorname{Gal}(K_1/\QQ)\cong C_2\times C_2.
 \]
 
 ::: pf-proof
 
-Since \(K_1\) is the splitting field of a separable polynomial over \(\mathbb Q\), it is Galois of degree \(4\). Two nontrivial automorphisms are determined by
+Since \(K_1\) is the splitting field of a separable polynomial over \(\QQ\), it is Galois of degree \(4\). Two nontrivial automorphisms are determined by
 \[
 \tau(\alpha)=-\alpha,
 \qquad
@@ -133,7 +133,7 @@ f_2(x)=(x^2-1)(x^2+5).
 \]
 Hence its splitting field is
 \[
-K_2=\mathbb Q(\sqrt{-5}).
+K_2=\QQ(\sqrt{-5}).
 \]
 
 ::: pf-proof
@@ -152,12 +152,12 @@ The roots are \(\pm1\) and \(\pm\sqrt{-5}\), so adjoining \(\sqrt{-5}\) gives al
 
 Therefore
 \[
-\operatorname{Gal}(K_2/\mathbb Q)\cong C_2.
+\operatorname{Gal}(K_2/\QQ)\cong C_2.
 \]
 
 ::: pf-proof
 
-Since \(-5\) is not a square in \(\mathbb Q\), \([K_2:\mathbb Q]=2\). Every quadratic extension in characteristic \(0\) is Galois, with nontrivial automorphism
+Since \(-5\) is not a square in \(\QQ\), \([K_2:\QQ]=2\). Every quadratic extension in characteristic \(0\) is Galois, with nontrivial automorphism
 \[
 \sqrt{-5}\longmapsto-\sqrt{-5}.
 \]

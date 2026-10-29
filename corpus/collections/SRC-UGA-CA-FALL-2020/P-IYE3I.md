@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the function $f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)$ for $z \in \mathbb{C} \backslash\{0\}$.
+Consider the function $f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)$ for $z \in \CC \backslash\{0\}$.
 Let $\mathbb{D}$ denote the open unit disc.
 
 a.
@@ -24,11 +24,11 @@ Show that $f$ is one-to-one on the punctured disc $\mathbb{D} \backslash\{0\}$.
 What is the image of the circle $|z|=r$ under this map when $0<r<1$ ?
 
 b.
-Show that $f$ is one-to-one on the domain $\mathbb{C} \backslash \mathbb{D}$.
+Show that $f$ is one-to-one on the domain $\CC \backslash \mathbb{D}$.
 What is the image of this domain under this map?
 
 c.
-Show that there exists a map $g: \mathbb{C} \backslash[-1,1] \rightarrow \mathbb{D} \backslash\{0\}$ such that $(g \circ f)(z)=z$ for all $z \in \mathbb{D} \backslash\{0\}$.
+Show that there exists a map $g: \CC \backslash[-1,1] \rightarrow \mathbb{D} \backslash\{0\}$ such that $(g \circ f)(z)=z$ for all $z \in \mathbb{D} \backslash\{0\}$.
 Describe the map $g$ by an explicit formula.
 
 :::

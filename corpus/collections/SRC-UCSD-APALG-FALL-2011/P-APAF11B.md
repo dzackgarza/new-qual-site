@@ -38,7 +38,7 @@ C_5&=\{a^kb^2:k=0,\ldots,6\}.
 \end{align*}
 \]
 
-(b) Show that $H=\{a^k:k=0,\ldots,6\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\mathbb{Z}_3$.
+(b) Show that $H=\{a^k:k=0,\ldots,6\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\ZZ_3$.
 Give the character table for the lifting of the $3$ linear characters of $G/H$ to $G$.
 
 (c) Let $\chi$ be the linear character of $H$ given by
@@ -87,7 +87,7 @@ Since $ba^j=a^{4j}b$,
 \[
 a^{-j}ba^j=a^{3j}b.
 \]
-Multiplication by $3$ permutes $\mathbb Z/7\mathbb Z$, so the conjugates of $b$ by $H$ are exactly the seven elements of $Hb$.
+Multiplication by $3$ permutes $\ZZ/7\ZZ$, so the conjugates of $b$ by $H$ are exactly the seven elements of $Hb$.
 Likewise $b^2a^j=a^{2j}b^2$, hence
 \[
 a^{-j}b^2a^j=a^jb^2,

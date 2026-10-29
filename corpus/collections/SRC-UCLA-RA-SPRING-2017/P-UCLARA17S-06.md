@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let
 \[
-\mathbb D=\{z\in\mathbb C:|z|<1\}
+\mathbb D=\{z\in\CC:|z|<1\}
 \]
 be the open unit disk and let $\overline{\mathbb D}$ be the closed unit disk. Let $\{p_n\}$ be distinct points in $\mathbb D$, and let $r_n>0$ be such that the disks
 \[

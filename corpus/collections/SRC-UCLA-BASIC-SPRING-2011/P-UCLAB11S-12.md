@@ -72,7 +72,7 @@ the scalar sequence
 \[
 (f_n(x))
 \]
-is Cauchy in $\mathbb R$, so define
+is Cauchy in $\RR$, so define
 \[
 f(x)=\lim_{n\to\infty}f_n(x).
 \]

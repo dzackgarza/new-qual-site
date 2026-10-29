@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb { C P } ^ { 4 }$ cannot be smoothly embedded in $\mathbb { R } ^ { n }$ with $n \leq 1 1$ . (Hint: use Pontrjagin classes)
+Show that $\mathbb { C P } ^ { 4 }$ cannot be smoothly embedded in $\RR ^ { n }$ with $n \leq 1 1$ . (Hint: use Pontrjagin classes)
 :::
 
 ::: {.solution}
 
 The real dimension of $\mathbb{CP}^4$ is $8$. Suppose, for contradiction, that there is a smooth embedding
 \[
-\mathbb{CP}^4\hookrightarrow\mathbb R^N
+\mathbb{CP}^4\hookrightarrow\RR^N
 \qquad(N\leq11),
 \]
 and let $\nu$ be its normal bundle.
@@ -44,7 +44,7 @@ T\mathbb{CP}^4\oplus\nu\cong\varepsilon^N.
 
 ::: pf-proof
 
-For a smooth embedding, the restricted tangent bundle of Euclidean space splits as the tangent bundle of the submanifold plus its orthogonal normal bundle. Since $\dim_{\mathbb R}\mathbb{CP}^4=8$, the normal rank is $N-8$.
+For a smooth embedding, the restricted tangent bundle of Euclidean space splits as the tangent bundle of the submanifold plus its orthogonal normal bundle. Since $\dim_{\RR}\mathbb{CP}^4=8$, the normal rank is $N-8$.
 
 :::
 
@@ -54,7 +54,7 @@ For a smooth embedding, the restricted tangent bundle of Euclidean space splits 
 
 Let
 \[
-x\in H^2(\mathbb{CP}^4;\mathbb Z)
+x\in H^2(\mathbb{CP}^4;\ZZ)
 \]
 be the positive generator. Then
 \[
@@ -66,7 +66,7 @@ p(T\mathbb{CP}^4)=(1+x^2)^5.
 
 The complex Euler sequence gives the stable complex-bundle identity
 \[
-T\mathbb{CP}^4\oplus\varepsilon^1_{\mathbb C}
+T\mathbb{CP}^4\oplus\varepsilon^1_{\CC}
 \cong5\gamma^*,
 \]
 where $c_1(\gamma^*)=x$. The underlying real bundle of a complex line with first Chern class $x$ has total Pontryagin class $1+x^2$. Pontryagin classes are stable and multiplicative, giving the formula.
@@ -79,8 +79,8 @@ where $c_1(\gamma^*)=x$. The underlying real bundle of a complex line with first
 
 Since
 \[
-H^*(\mathbb{CP}^4;\mathbb Z)
-=\mathbb Z[x]/(x^5),
+H^*(\mathbb{CP}^4;\ZZ)
+=\ZZ[x]/(x^5),
 \]
 the tangent Pontryagin class is
 \[
@@ -165,9 +165,9 @@ p_2(\nu)=15x^4\ne0.
 
 ::: pf-proof
 
-For a real rank-$r$ bundle, $p_i$ vanishes for $2i>r$ because after applying the splitting principle there are only $\lfloor r/2\rfloor$ Pontryagin roots; equivalently $p_i=(-1)^ic_{2i}(E\otimes\mathbb C)$ and the special real structure forces $p_i=0$ for $i>\lfloor r/2\rfloor$. In particular a rank-$3$ bundle has no $p_2$. On the other hand, step [](#s1-5){.pf-ref} identifies $p_2(\nu)$ with $15x^4$, and
+For a real rank-$r$ bundle, $p_i$ vanishes for $2i>r$ because after applying the splitting principle there are only $\lfloor r/2\rfloor$ Pontryagin roots; equivalently $p_i=(-1)^ic_{2i}(E\otimes\CC)$ and the special real structure forces $p_i=0$ for $i>\lfloor r/2\rfloor$. In particular a rank-$3$ bundle has no $p_2$. On the other hand, step [](#s1-5){.pf-ref} identifies $p_2(\nu)$ with $15x^4$, and
 \[
-x^4\ne0\in H^8(\mathbb{CP}^4;\mathbb Z).
+x^4\ne0\in H^8(\mathbb{CP}^4;\ZZ).
 \]
 This is the required contradiction.
 
@@ -181,7 +181,7 @@ Therefore
 \[
 \boxed{
 \mathbb{CP}^4\text{ cannot be smoothly embedded in }
-\mathbb R^N\text{ for }N\leq11.}
+\RR^N\text{ for }N\leq11.}
 \]
 
 

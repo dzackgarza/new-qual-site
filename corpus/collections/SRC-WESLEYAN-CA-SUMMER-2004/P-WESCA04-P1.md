@@ -19,7 +19,7 @@ audit:
 Let $f$ be entire and suppose
 \[
 \operatorname{Re} f(z)\le 10
-\qquad(z\in\mathbb C).
+\qquad(z\in\CC).
 \]
 Show that $f$ is constant.
 :::
@@ -42,7 +42,7 @@ Then $g$ is entire.
 ::: pf-proof
 
 The function $f$ is entire by hypothesis, and the exponential function is
-entire on $\mathbb C$. Therefore their composition
+entire on $\CC$. Therefore their composition
 \[
 g=\exp\circ f
 \]
@@ -60,7 +60,7 @@ The function $g$ is bounded:
 \le
 e^{10}
 \qquad
-(z\in\mathbb C).
+(z\in\CC).
 \]
 
 
@@ -100,7 +100,7 @@ theorem therefore gives
 \[
 g(z)\equiv c
 \]
-for some constant $c\in\mathbb C$.
+for some constant $c\in\CC$.
 
 :::
 
@@ -117,7 +117,7 @@ The exponential function never vanishes:
 \[
 e^w\ne0
 \qquad
-(w\in\mathbb C).
+(w\in\CC).
 \]
 Thus
 \[
@@ -135,7 +135,7 @@ One has
 \[
 f'(z)=0
 \qquad
-(z\in\mathbb C).
+(z\in\CC).
 \]
 
 
@@ -174,7 +174,7 @@ Hence
 ::: pf-proof
 
 An entire function with identically zero derivative is constant on the
-connected plane $\mathbb C$.
+connected plane $\CC$.
 
 :::
 

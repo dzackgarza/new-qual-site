@@ -44,7 +44,7 @@ One has
 \[
 z^2=(x+iy)^2=x^2-y^2+2ixy.
 \]
-For every \(w\in\mathbb C\),
+For every \(w\in\CC\),
 \[
 |e^w|=e^{\operatorname{Re}w}.
 \]

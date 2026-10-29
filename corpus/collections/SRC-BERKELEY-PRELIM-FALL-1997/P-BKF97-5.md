@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let
 \[
-\mathbb D=\{z\in\mathbb C:|z|<1\}.
+\mathbb D=\{z\in\CC:|z|<1\}.
 \]
 Suppose $f:\mathbb D\to\mathbb D$ is analytic and there exist distinct $a,b\in\mathbb D$ with
 \[

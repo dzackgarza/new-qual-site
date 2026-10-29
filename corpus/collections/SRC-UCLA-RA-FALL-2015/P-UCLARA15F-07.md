@@ -28,7 +28,7 @@ Assume that $f(z)$ is analytic in $\{z : |z| < 1\}$ and continuous on $\{z : |z|
 
 Define
 \[
-F:\mathbb C\to\mathbb C
+F:\CC\to\CC
 \]
 by
 \[
@@ -75,7 +75,7 @@ The only overlap of the two regions in the definition is \(|z|=1\), and step [](
 
 ::: pf-step
 
-The function \(F\) is continuous on \(\mathbb C\).
+The function \(F\) is continuous on \(\CC\).
 
 
 ::: pf-proof
@@ -92,7 +92,7 @@ z\mapsto f(1/z)
 \]
 is continuous there.
 
-The two continuous pieces agree on their common boundary by step [](#s1-1){.pf-ref}, so they paste to a continuous function on \(\mathbb C\).
+The two continuous pieces agree on their common boundary by step [](#s1-1){.pf-ref}, so they paste to a continuous function on \(\CC\).
 
 :::
 
@@ -132,7 +132,7 @@ There
 \[
 F(z)=f(1/z).
 \]
-The map \(z\mapsto1/z\) is analytic on \(\mathbb C\setminus\{0\}\), and for \(|z|>1\), one has \(|1/z|<1\), where \(f\) is analytic. Hence the composition is analytic.
+The map \(z\mapsto1/z\) is analytic on \(\CC\setminus\{0\}\), and for \(|z|>1\), one has \(|1/z|<1\), where \(f\) is analytic. Hence the composition is analytic.
 
 :::
 
@@ -167,7 +167,7 @@ Therefore
 
 ::: pf-proof
 
-Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} cover all points of \(\mathbb C\).
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} cover all points of \(\CC\).
 
 :::
 
@@ -240,7 +240,7 @@ Hence
 \[
 \boxed{|F(z)|\le M}
 \]
-for every \(z\in\mathbb C\).
+for every \(z\in\CC\).
 
 
 ::: pf-proof

@@ -32,7 +32,7 @@ Let $p$ be prime. For $1\le k\le p-1$,
 \[
 \binom pk=\frac{p!}{k!(p-k)!}
 \]
-is divisible by $p$: the numerator contains the prime factor $p$, while neither $k!$ nor $(p-k)!$ does. Hence modulo $p$ every intermediate binomial coefficient vanishes. Therefore, as a polynomial identity over $\mathbb Z/p\mathbb Z$,
+is divisible by $p$: the numerator contains the prime factor $p$, while neither $k!$ nor $(p-k)!$ does. Hence modulo $p$ every intermediate binomial coefficient vanishes. Therefore, as a polynomial identity over $\ZZ/p\ZZ$,
 \[
 (x+y)^p\equiv x^p+y^p\pmod p.
 \]

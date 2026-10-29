@@ -21,7 +21,7 @@ Prove that any nondegenerate matrix $X\in M_n(\RR)$ can be written as $X = UT$ w
 
 ::: {.solution}
 
-Write $X=(x_1\ \cdots\ x_n)$, where $x_j\in\mathbb R^n$.
+Write $X=(x_1\ \cdots\ x_n)$, where $x_j\in\RR^n$.
 
 ::: pf
 
@@ -54,7 +54,7 @@ with $U$ orthogonal and $T$ upper triangular.
 
 ::: pf-proof
 
-Let $U=(u_1\ \cdots\ u_n)$. By step [](#s1-1){.pf-ref}, for each $j$ there are unique coefficients $t_{ij}\in\mathbb R$ with $x_j=\sum_{i=1}^j t_{ij}u_i$. Set $t_{ij}=0$ for $i>j$ and define $T=(t_{ij})$. It is upper triangular, and its $j$-th column under multiplication by $U$ is $x_j$, so $UT=X$. Orthonormality gives $U^{\mathsf T}U=I_n$, hence $U$ is orthogonal.
+Let $U=(u_1\ \cdots\ u_n)$. By step [](#s1-1){.pf-ref}, for each $j$ there are unique coefficients $t_{ij}\in\RR$ with $x_j=\sum_{i=1}^j t_{ij}u_i$. Set $t_{ij}=0$ for $i>j$ and define $T=(t_{ij})$. It is upper triangular, and its $j$-th column under multiplication by $U$ is $x_j$, so $UT=X$. Orthonormality gives $U^{\mathsf T}U=I_n$, hence $U$ is orthogonal.
 
 :::
 

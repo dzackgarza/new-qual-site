@@ -32,9 +32,9 @@ This exercise compares the following groups:
 
 - $\langle s,t\mid sts=tst\rangle$;
 
-- the geometric braid group $B_3=\pi_1(C_3)$, where $C_3$ is the configuration space of unordered $3$-element subsets of $\mathbb C$;
+- the geometric braid group $B_3=\pi_1(C_3)$, where $C_3$ is the configuration space of unordered $3$-element subsets of $\CC$;
 
-- $\pi_1(\mathbb C^2\setminus C)$, where $C=\{(X,Y):X^2=Y^3\}$ is the cuspidal cubic.
+- $\pi_1(\CC^2\setminus C)$, where $C=\{(X,Y):X^2=Y^3\}$ is the cuspidal cubic.
 
 1. Show that $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism
    \[
@@ -48,23 +48,23 @@ This exercise compares the following groups:
    \]
    If $s=[\sigma]$ and $t=[\tau]$, check that $sts=tst$, obtaining a homomorphism $\langle s,t\mid sts=tst\rangle\to B_3$.
 
-3. Let $\operatorname{Sym}^3_0(\mathbb C)$ be the unordered triples $\{a,b,c\}$ with $a+b+c=0$.
+3. Let $\operatorname{Sym}^3_0(\CC)$ be the unordered triples $\{a,b,c\}$ with $a+b+c=0$.
    Show that
    \[
-   \operatorname{Sym}^3(\mathbb C)\cong \mathbb C\times\operatorname{Sym}^3_0(\mathbb C),
+   \operatorname{Sym}^3(\CC)\cong \CC\times\operatorname{Sym}^3_0(\CC),
    \]
-   and define a homeomorphism $\operatorname{Sym}^3_0(\mathbb C)\to\mathbb C^2$ by sending $\{a,b,c\}$ to $(x,y)$ such that
+   and define a homeomorphism $\operatorname{Sym}^3_0(\CC)\to\CC^2$ by sending $\{a,b,c\}$ to $(x,y)$ such that
    \[
    (t-a)(t-b)(t-c)=t^3+xt+y.
    \]
    Verify that $a,b,c$ are distinct if and only if $4x^3+27y^2\ne0$.
    Deduce that
    \[
-   C_3\cong\mathbb C\times(\mathbb C^2\setminus C)
+   C_3\cong\CC\times(\CC^2\setminus C)
    \]
-   and hence $B_3\cong\pi_1(\mathbb C^2\setminus C)$.
+   and hence $B_3\cong\pi_1(\CC^2\setminus C)$.
 
-4. Show that $\mathbb C^2\setminus C$ is homotopy equivalent to $S^3\setminus K$.
+4. Show that $\CC^2\setminus C$ is homotopy equivalent to $S^3\setminus K$.
 
 5. Show that going around the resulting circle of homomorphisms gives an automorphism of $\pi_1(S^3\setminus K)$.
 :::
@@ -161,7 +161,7 @@ The loops $\sigma$ and $\tau$ satisfy the braid relation.
 
 The loop $\sigma$ performs a positive half-twist exchanging the two leftmost points $-2$ and $0$ while leaving $2$ fixed. The loop $\tau$ performs the corresponding positive half-twist exchanging the two rightmost points $0$ and $2$ while leaving $-2$ fixed.
 
-Draw the three trajectories in $[0,1]\times\mathbb C$. The concatenation
+Draw the three trajectories in $[0,1]\times\CC$. The concatenation
 \[
 \sigma*\tau*\sigma
 \]
@@ -240,8 +240,8 @@ Therefore
 
 Splitting off the center of mass gives
 \[
-\operatorname{Sym}^3(\mathbb C)\cong
-\mathbb C\times\operatorname{Sym}^3_0(\mathbb C).
+\operatorname{Sym}^3(\CC)\cong
+\CC\times\operatorname{Sym}^3_0(\CC).
 \]
 
 ::: pf-proof
@@ -270,7 +270,7 @@ Hence it is a homeomorphism.
 
 ::: {.pf-step #s5}
 
-Centered unordered triples are homeomorphic to $\mathbb C^2$ by polynomial coefficients.
+Centered unordered triples are homeomorphic to $\CC^2$ by polynomial coefficients.
 
 ::: pf-proof
 
@@ -281,7 +281,7 @@ If $a+b+c=0$, then
 \]
 Thus define
 \[
-h:\operatorname{Sym}^3_0(\mathbb C)\to\mathbb C^2,
+h:\operatorname{Sym}^3_0(\CC)\to\CC^2,
 \qquad
 \{a,b,c\}\longmapsto(x,y)
 \]
@@ -297,7 +297,7 @@ It is bijective by the fundamental theorem of algebra: every monic cubic
 \[
 t^3+xt+y
 \]
-has an unordered multiset of three complex roots, whose sum is zero because the $t^2$ coefficient vanishes. The inverse is continuous because the unordered multiset of roots of a monic polynomial depends continuously on its coefficients. Equivalently, the elementary-symmetric-polynomial map realizes the symmetric product $\operatorname{Sym}^3(\mathbb C)$ homeomorphically as the coefficient space of monic cubics. Hence $h$ is a homeomorphism.
+has an unordered multiset of three complex roots, whose sum is zero because the $t^2$ coefficient vanishes. The inverse is continuous because the unordered multiset of roots of a monic polynomial depends continuously on its coefficients. Equivalently, the elementary-symmetric-polynomial map realizes the symmetric product $\operatorname{Sym}^3(\CC)$ homeomorphically as the coefficient space of monic cubics. Hence $h$ is a homeomorphism.
 
 :::
 
@@ -360,24 +360,24 @@ Thus the two cusp complements are homeomorphic.
 
 Therefore
 \[
-C_3\cong\mathbb C\times(\mathbb C^2\setminus C)
+C_3\cong\CC\times(\CC^2\setminus C)
 \]
 and
 \[
-B_3\cong\pi_1(\mathbb C^2\setminus C).
+B_3\cong\pi_1(\CC^2\setminus C).
 \]
 
 ::: pf-proof
 
-The configuration space $C_3$ is the open subset of $\operatorname{Sym}^3(\mathbb C)$ consisting of triples with distinct entries. By step [](#s4){.pf-ref}, translation by the mean does not affect whether entries are distinct. By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, the centered distinct triples correspond exactly to the complement of the discriminant cusp, which is linearly homeomorphic to $\mathbb C^2\setminus C$. Hence
+The configuration space $C_3$ is the open subset of $\operatorname{Sym}^3(\CC)$ consisting of triples with distinct entries. By step [](#s4){.pf-ref}, translation by the mean does not affect whether entries are distinct. By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, the centered distinct triples correspond exactly to the complement of the discriminant cusp, which is linearly homeomorphic to $\CC^2\setminus C$. Hence
 \[
-C_3\cong\mathbb C\times(\mathbb C^2\setminus C).
+C_3\cong\CC\times(\CC^2\setminus C).
 \]
-Since $\mathbb C$ is contractible, projection onto the second factor is a homotopy equivalence, so
+Since $\CC$ is contractible, projection onto the second factor is a homotopy equivalence, so
 \[
 B_3=\pi_1(C_3)
 \cong
-\pi_1(\mathbb C^2\setminus C).
+\pi_1(\CC^2\setminus C).
 \]
 
 :::
@@ -420,7 +420,7 @@ and
 \[
 H_u(X,Y)=(r_u^3X,r_u^2Y).
 \]
-Weighted scaling preserves both $C$ and its complement, so $H_u$ stays in $\mathbb C^2\setminus C$ whenever it starts there. At $u=1$,
+Weighted scaling preserves both $C$ and its complement, so $H_u$ stays in $\CC^2\setminus C$ whenever it starts there. At $u=1$,
 \[
 |r^3X|^2+|r^2Y|^2=1,
 \]
@@ -428,7 +428,7 @@ so the endpoint lies on $S^3$. If $(X,Y)\in S^3$, uniqueness gives $r=1$, hence 
 
 Thus $H$ is a strong deformation retraction
 \[
-\mathbb C^2\setminus C
+\CC^2\setminus C
 \searrow
 S^3\setminus(C\cap S^3).
 \]
@@ -457,7 +457,7 @@ C\cap S^3
 =
 \left\{
 (r_0^3e^{3i\theta},r_0^2e^{2i\theta})
-:\theta\in\mathbb R/2\pi\mathbb Z
+:\theta\in\RR/2\pi\ZZ
 \right\}.
 \]
 After swapping the two complex coordinates, this becomes a $(2,3)$-torus knot
@@ -486,7 +486,7 @@ S^3\setminus(C\cap S^3)\cong S^3\setminus K.
 \]
 Combining with step [](#s8){.pf-ref} gives
 \[
-\boxed{\mathbb C^2\setminus C\simeq S^3\setminus K}.
+\boxed{\CC^2\setminus C\simeq S^3\setminus K}.
 \]
 
 :::
@@ -509,7 +509,7 @@ H
 \xrightarrow{\eta}
 B_3
 \xrightarrow{\cong}
-\pi_1(\mathbb C^2\setminus C)
+\pi_1(\CC^2\setminus C)
 \xrightarrow{\cong}
 \pi_1(S^3\setminus K).
 \]

@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $A$ be a subset of a compact metric space $(X,d)$. Assume that for every continuous function
 \[
-f:X\to\mathbb R,
+f:X\to\RR,
 \]
 the restriction $f|_A$ attains a maximum on $A$. Prove that $A$ is compact.
 :::

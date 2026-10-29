@@ -28,7 +28,7 @@ Let $N$ be another $R$-module, and let $0\neq v\in N$.
 
 1. If $R$ is a field, prove that there is an $R$-module homomorphism $\varphi:M\to N$ with $\varphi(x)=v$.
 
-2. Give an example over $R=\mathbb Z$ for which no such homomorphism exists.
+2. Give an example over $R=\ZZ$ for which no such homomorphism exists.
 :::
 
 ::: {.solution}
@@ -68,24 +68,24 @@ Thus $\varphi$ is $R$-linear, and $\varphi(x)=v$.
 
 ::: pf-step
 
-The statement fails over $\mathbb Z$.
+The statement fails over $\ZZ$.
 
 ::: pf-proof
 
 Take
 $$
-M=\mathbb Z/n\mathbb Z,
-\qquad N=\mathbb Z,
-\qquad x=1+n\mathbb Z,
+M=\ZZ/n\ZZ,
+\qquad N=\ZZ,
+\qquad x=1+n\ZZ,
 \qquad v=1,
 $$
 for any integer $n\ge2$. The element $x$ is nonzero and generates $M$, while $v\ne0$.
 
-If a $\mathbb Z$-module homomorphism $\varphi:M\to N$ satisfied $\varphi(x)=1$, then
+If a $\ZZ$-module homomorphism $\varphi:M\to N$ satisfied $\varphi(x)=1$, then
 $$
 0=\varphi(nx)=n\varphi(x)=n,
 $$
-which is impossible in $\mathbb Z$. Hence no such homomorphism exists.
+which is impossible in $\ZZ$. Hence no such homomorphism exists.
 
 :::
 

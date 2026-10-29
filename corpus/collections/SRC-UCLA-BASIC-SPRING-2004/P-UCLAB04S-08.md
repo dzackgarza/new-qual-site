@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:\mathbb R^3\to\mathbb R^3$ be a rotation about the axis determined by $(1,0,-1)$ through an angle of $30^\circ$; either orientation may be used.
+Let $T:\RR^3\to\RR^3$ be a rotation about the axis determined by $(1,0,-1)$ through an angle of $30^\circ$; either orientation may be used.
 
-(a) Find the matrix representation $A\in M_3(\mathbb R)$ of $T$ in the standard basis.
+(a) Find the matrix representation $A\in M_3(\RR)$ of $T$ in the standard basis.
 You need not multiply out matrices, but you must evaluate inverses.
 
-(b) Find all eigenvalues of $A$ in $M_3(\mathbb R)$.
+(b) Find all eigenvalues of $A$ in $M_3(\RR)$.
 
-(c) Find all eigenvalues of $A$ when regarded as an element of $M_3(\mathbb C)$.
+(c) Find all eigenvalues of $A$ when regarded as an element of $M_3(\CC)$.
 :::
 
 ::: {.solution}
@@ -181,7 +181,7 @@ Step [](#s1-3){.pf-ref} computes the inverse explicitly.
 
 ::: {.pf-step #s1-5}
 
-Over $\mathbb R$, the only eigenvalue of $A$ is
+Over $\RR$, the only eigenvalue of $A$ is
 \[
 \boxed{1}.
 \]
@@ -211,7 +211,7 @@ The final diagonal entry of $R$ is $1$, so $1$ is the only real eigenvalue.
 
 ::: {.pf-step #s1-6}
 
-Over $\mathbb C$, the eigenvalues are
+Over $\CC$, the eigenvalues are
 \[
 \boxed{
 1,\qquad

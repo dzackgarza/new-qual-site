@@ -34,30 +34,30 @@ audit:
 ::: {.solution}
 Up to biholomorphic equivalence, the complete list is
 $$
-\boxed{\widehat{\mathbb C},\qquad \mathbb C,\qquad \Delta.}
+\boxed{\widehat{\CC},\qquad \CC,\qquad \Delta.}
 $$
 
 ::: pf
 
 ::: pf-step
 
-Every simply connected region in $\widehat{\mathbb C}$ is equivalent to one of these three.
+Every simply connected region in $\widehat{\CC}$ is equivalent to one of these three.
 
 ::: pf-proof
 
-Let $U\subset\widehat{\mathbb C}$ be a nonempty simply connected region.
+Let $U\subset\widehat{\CC}$ be a nonempty simply connected region.
 
-If $U=\widehat{\mathbb C}$, it is already the first model.
+If $U=\widehat{\CC}$, it is already the first model.
 
 Suppose next that the complement consists of exactly one point $p$. A Möbius
 transformation sending $p$ to $\infty$ maps $U$ biholomorphically onto
-$\widehat{\mathbb C}\setminus\{\infty\}=\mathbb C$.
+$\widehat{\CC}\setminus\{\infty\}=\CC$.
 
-Finally suppose that $\widehat{\mathbb C}\setminus U$ contains at least two
+Finally suppose that $\widehat{\CC}\setminus U$ contains at least two
 points. Choose $p$ in the complement and a Möbius transformation $M$ with
 $M(p)=\infty$. Then
 $$
-V=M(U)\subset\mathbb C
+V=M(U)\subset\CC
 $$
 is a simply connected plane domain. It is proper: a second point of the
 complement is carried to a finite point outside $V$. By the Riemann mapping
@@ -77,13 +77,13 @@ No two models in the list are biholomorphic.
 ::: pf-proof
 
 The Riemann sphere is compact. A biholomorphism is in particular a
-homeomorphism, so it preserves compactness. Neither $\mathbb C$ nor $\Delta$
+homeomorphism, so it preserves compactness. Neither $\CC$ nor $\Delta$
 is compact; therefore the sphere is biholomorphic to neither of them.
 
-It remains to distinguish $\mathbb C$ and $\Delta$. If there were a
-biholomorphism $F:\mathbb C\to\Delta$, then $F$ would be a bounded entire
+It remains to distinguish $\CC$ and $\Delta$. If there were a
+biholomorphism $F:\CC\to\Delta$, then $F$ would be a bounded entire
 function. Liouville's theorem would force $F$ to be constant, contradicting
-bijectivity. Thus $\mathbb C$ and $\Delta$ are not biholomorphic.
+bijectivity. Thus $\CC$ and $\Delta$ are not biholomorphic.
 
 Consequently the three displayed regions form a complete and irredundant
 classification.

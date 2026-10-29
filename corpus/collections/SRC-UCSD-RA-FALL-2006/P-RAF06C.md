@@ -34,7 +34,7 @@ Let $H$ be a Hilbert space, $T : H \to H$ a bounded linear operator, $T^* : H \t
 
 (b) Show that $R(T^*)$ is closed if $R(T)$ is closed.
 
-Hint for (b): Show that, for every $y \in N(T)^\perp$, there is a bounded linear functional $\Lambda : R(T) \to \mathbb{C}$ with the property that $\Lambda(Tx) = (x, y)$.
+Hint for (b): Show that, for every $y \in N(T)^\perp$, there is a bounded linear functional $\Lambda : R(T) \to \CC$ with the property that $\Lambda(Tx) = (x, y)$.
 Use this to show that $N(T)^\perp \subset R(T^*)$.
 :::
 
@@ -95,7 +95,7 @@ hypothesis.
 :::
 
 ::: pf-step
-For $y\in N(T)^\perp =\overline{R(T^*)}$, define $\Lambda: R(T)\to\mathbb{C}$ by $\Lambda(Tx)=(x,y)$.
+For $y\in N(T)^\perp =\overline{R(T^*)}$, define $\Lambda: R(T)\to\CC$ by $\Lambda(Tx)=(x,y)$.
 
 ::: pf-proof
 well-defined because if $Tx_1=Tx_2$ then $x_1-x_2\in N(T)\perp y$.

@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal{A}$ be an algebra which admits a faithful state $\sigma \colon \mathcal{A} \to \mathbb{C}$.
-Prove that $\mathcal{A}$ admits a faithful tracial state $\tau \colon \mathcal{A} \to \mathbb{C}$.
+Let $\mathcal{A}$ be an algebra which admits a faithful state $\sigma \colon \mathcal{A} \to \CC$.
+Prove that $\mathcal{A}$ admits a faithful tracial state $\tau \colon \mathcal{A} \to \CC$.
 
 Note: On this exam, an algebra is a finite-dimensional complex vector space equipped with an associative, bilinear, unital multiplication and an antilinear, antimultiplicative, involutive conjugation.
 :::
@@ -53,7 +53,7 @@ GNS construction / finite-dimensional $C^*$-algebra theory.
 ::: pf-step
 By the Artin–Wedderburn theorem for finite-dimensional $C^*$-algebras, $\mathcal{A}$ is $*$-isomorphic to a finite direct sum of full matrix algebras:
 \[
-\mathcal{A} \cong \bigoplus_{k=1}^m M_{n_k}(\mathbb{C}).
+\mathcal{A} \cong \bigoplus_{k=1}^m M_{n_k}(\CC).
 \]
 
 ::: pf-proof
@@ -72,11 +72,11 @@ Construct the candidate tracial state $\tau$:
 ::: pf-proof
 
 ::: pf-step
-Under the decomposition $a = (a_1, \dots, a_m) \in \bigoplus_{k=1}^m M_{n_k}(\mathbb{C})$, define:
+Under the decomposition $a = (a_1, \dots, a_m) \in \bigoplus_{k=1}^m M_{n_k}(\CC)$, define:
 \[
 \tau(a) = \frac{1}{\sum_{k=1}^m n_k} \sum_{k=1}^m \operatorname{Tr}(a_k),
 \]
-where $\operatorname{Tr}$ is the standard matrix trace on $M_{n_k}(\mathbb{C})$.
+where $\operatorname{Tr}$ is the standard matrix trace on $M_{n_k}(\CC)$.
 
 ::: pf-proof
 definition of $\tau$.
@@ -104,7 +104,7 @@ Since the matrix trace is cyclic ($\operatorname{Tr}(a_k b_k) = \operatorname{Tr
 \]
 
 ::: pf-proof
-cyclicity of the matrix trace on $M_{n_k}(\mathbb{C})$.
+cyclicity of the matrix trace on $M_{n_k}(\CC)$.
 :::
 
 :::

@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\times[0,1]\to\mathbb R$ be continuous.
-For $x\in\mathbb R$, define
+Let $f:\RR\times[0,1]\to\RR$ be continuous.
+For $x\in\RR$, define
 \[
 g(x)=\max\{f(x,y):y\in[0,1]\}.
 \]

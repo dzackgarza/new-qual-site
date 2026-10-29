@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $M$ be a $\mathbb{Z}_5$-orientable manifold.
+Let $M$ be a $\ZZ_5$-orientable manifold.
 Show that $M$ is orientable.
 :::
 
@@ -39,16 +39,16 @@ Transport of a local integral orientation around a loop either preserves or reve
 Reducing the orientation local system modulo $5$, an orientation-reversing loop acts by multiplication by $-1\equiv4\pmod5$, which is not the identity.
 
 ::: pf-proof
-The two units $1$ and $-1$ are distinct in $\mathbb Z/5$.
+The two units $1$ and $-1$ are distinct in $\ZZ/5$.
 :::
 
 :::
 
 ::: pf-step
-Since $M$ is $\mathbb Z_5$-orientable, the mod-$5$ orientation local system is trivial, so no loop can act by $-1$.
+Since $M$ is $\ZZ_5$-orientable, the mod-$5$ orientation local system is trivial, so no loop can act by $-1$.
 
 ::: pf-proof
-A global $\mathbb Z_5$-orientation is precisely a trivialization of the rank-one orientation local system over $\mathbb Z/5$, forcing trivial monodromy.
+A global $\ZZ_5$-orientation is precisely a trivialization of the rank-one orientation local system over $\ZZ/5$, forcing trivial monodromy.
 :::
 
 :::

@@ -108,7 +108,7 @@ Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 ::: pf-step
 
-Let \(X\) be connected and let \(f:X\to\mathbb R\) be continuous.
+Let \(X\) be connected and let \(f:X\to\RR\) be continuous.
 If \(r\) lies between \(f(a)\) and \(f(b)\), then there exists \(c\in X\) such that
 \[
 f(c)=r.

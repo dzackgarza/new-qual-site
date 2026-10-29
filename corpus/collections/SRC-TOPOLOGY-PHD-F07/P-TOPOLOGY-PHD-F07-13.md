@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Recall that $S^n$ is defined to be $\{(x_1,x_2,\ldots,x_n,x_{n+1})\in\mathbb R^{n+1}\mid x_1^2+x_2^2+\cdots+x_n^2+x_{n+1}^2=1\}$.
+Recall that $S^n$ is defined to be $\{(x_1,x_2,\ldots,x_n,x_{n+1})\in\RR^{n+1}\mid x_1^2+x_2^2+\cdots+x_n^2+x_{n+1}^2=1\}$.
 We shall be interested in the values $n=1,2$.
 Then define $f,g:S^1\to S^2$ by $f(\cos(s),\sin(s))=(\cos(s),\sin(s),0)$ and $g(\cos(s),\sin(s))=(\cos(s),-\sin(s),0)$.
 Show that $f$ is homotopic to $g$.
@@ -82,7 +82,7 @@ The coordinate functions
 (x,y,t)\longmapsto y\sin(\pi t)
 \]
 are continuous on $S^1\times I$ as restrictions and products of continuous real-valued functions.
-Thus the corresponding map into $\mathbb R^3$ is continuous.
+Thus the corresponding map into $\RR^3$ is continuous.
 By step [](#h-in-s2){.pf-ref} its image lies in the subspace $S^2$, so $H$ is continuous as a map to $S^2$.
 :::
 

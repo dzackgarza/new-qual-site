@@ -79,7 +79,7 @@ a+b+2c=5.
 \]
 
 ::: pf-proof
-Over $\mathbb C$, conjugacy classes are determined uniquely by Jordan normal form.
+Over $\CC$, conjugacy classes are determined uniquely by Jordan normal form.
 If $a$ is the number of $[0]$ blocks, $b$ the number of $[1]$ blocks, and $c$ the number of $J_2(0)$ blocks, then the total dimension is exactly $a+b+2c$.
 Conversely, every nonnegative triple satisfying the displayed equation gives a valid Jordan form annihilated by $x^2(x-1)$.
 :::

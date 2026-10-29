@@ -96,7 +96,7 @@ has image of order at most \(2\).
 
 Since \(C_{503}\) is cyclic of prime order,
 \[
-\operatorname{Aut}(C_{503})\cong (\mathbb Z/503\mathbb Z)^\times\cong C_{502}.
+\operatorname{Aut}(C_{503})\cong (\ZZ/503\ZZ)^\times\cong C_{502}.
 \]
 The image of \(\theta\) has order dividing both \(|H|=4\) and \(502=2\cdot251\). Hence
 \[

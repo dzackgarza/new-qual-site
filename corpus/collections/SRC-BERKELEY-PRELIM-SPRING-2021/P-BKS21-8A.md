@@ -82,7 +82,7 @@ The polynomial
 $$
 p(t)=t^3+t^2-2t-1
 $$
-is irreducible over $\mathbb Z$.
+is irreducible over $\ZZ$.
 
 
 ::: pf-proof
@@ -97,7 +97,7 @@ $$
 \qquad
 \overline p(1)=1+1+1=1
 $$
-in $\mathbb F_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma therefore implies that $p$ is irreducible over $\mathbb Z$.
+in $\mathbb F_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma therefore implies that $p$ is irreducible over $\ZZ$.
 
 :::
 
@@ -107,13 +107,13 @@ in $\mathbb F_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma
 
 One has
 $$
-[\mathbb Q(x):\mathbb Q]=3.
+[\QQ(x):\QQ]=3.
 $$
 
 
 ::: pf-proof
 
-Step [](#s1-1){.pf-ref} shows that $x$ is algebraic and annihilated by $p$. Step [](#s1-2){.pf-ref} shows that $p$ is irreducible of degree $3$, so it is the minimal polynomial of $x$ over $\mathbb Q$.
+Step [](#s1-1){.pf-ref} shows that $x$ is algebraic and annihilated by $p$. Step [](#s1-2){.pf-ref} shows that $p$ is irreducible of degree $3$, so it is the minimal polynomial of $x$ over $\QQ$.
 
 :::
 
@@ -121,24 +121,24 @@ Step [](#s1-1){.pf-ref} shows that $x$ is algebraic and annihilated by $p$. Step
 
 ::: {.pf-step #s1-4}
 
-The number $x$ is not contained in any finite extension $K/\mathbb Q$ whose degree is a power of $2$.
+The number $x$ is not contained in any finite extension $K/\QQ$ whose degree is a power of $2$.
 
 
 ::: pf-proof
 
 Suppose $x\in K$ and
 $$
-[K:\mathbb Q]=2^m.
+[K:\QQ]=2^m.
 $$
 Then
 $$
-\mathbb Q\subseteq\mathbb Q(x)\subseteq K.
+\QQ\subseteq\QQ(x)\subseteq K.
 $$
 By the tower law and step [](#s1-3){.pf-ref},
 $$
-2^m=[K:\mathbb Q]
-=[K:\mathbb Q(x)]\,[\mathbb Q(x):\mathbb Q]
-=3[K:\mathbb Q(x)].
+2^m=[K:\QQ]
+=[K:\QQ(x)]\,[\QQ(x):\QQ]
+=3[K:\QQ(x)].
 $$
 Thus $3$ divides $2^m$, which is impossible.
 

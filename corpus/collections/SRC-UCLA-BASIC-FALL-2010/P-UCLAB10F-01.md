@@ -178,10 +178,10 @@ Part (a) is false if $K$ is assumed only closed.
 
 Take
 \[
-X=\mathbb R^2,
+X=\RR^2,
 \]
 \[
-K=\{(x,0):x\in\mathbb R\},
+K=\{(x,0):x\in\RR\},
 \]
 and
 \[
@@ -195,7 +195,7 @@ To see that $F$ is closed, suppose
 \[
 \left(x_n,\frac1{x_n}\right)\to(a,b)
 \]
-in $\mathbb R^2$. Then $x_n\to a$. If $a=0$, the second coordinates would be unbounded, contradicting convergence. Hence $a>0$, and then
+in $\RR^2$. Then $x_n\to a$. If $a=0$, the second coordinates would be unbounded, contradicting convergence. Hence $a>0$, and then
 \[
 \frac1{x_n}\to\frac1a,
 \]

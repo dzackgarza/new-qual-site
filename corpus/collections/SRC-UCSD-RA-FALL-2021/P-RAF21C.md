@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0^1 f(x + y) \, dy$.
+Let $p \in (1, \infty)$, and for $f \in L^p(\RR)$ define $Tf(x) := \int_0^1 f(x + y) \, dy$.
 
 (a) Show that $\|Tf\|_p \leq \|f\|_p$, and equality holds if and only if $f = 0$ almost everywhere.
 
-(b) Prove that $(I - T)(L^p(\mathbb{R})) \neq L^p(\mathbb{R})$, where $I$ is the identity map on $L^p(\mathbb{R})$.
+(b) Prove that $(I - T)(L^p(\RR)) \neq L^p(\RR)$, where $I$ is the identity map on $L^p(\RR)$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0
 
 ::: pf-step
 
-$\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\mathbb R)$.
+$\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\RR)$.
 
 ::: pf-proof
 
@@ -53,8 +53,8 @@ Integrating in $x$ and using Tonelli together with translation invariance of Leb
 \[
 \begin{aligned}
 \|Tf\|_p^p
-&\le \int_{\mathbb R}\int_0^1|f(x+y)|^p\,dy\,dx\\
-&=\int_0^1\int_{\mathbb R}|f(x+y)|^p\,dx\,dy\\
+&\le \int_{\RR}\int_0^1|f(x+y)|^p\,dy\,dx\\
+&=\int_0^1\int_{\RR}|f(x+y)|^p\,dx\,dy\\
 &=\|f\|_p^p.
 \end{aligned}
 \]
@@ -83,7 +83,7 @@ Thus for almost every $x$ there exists $c_x$ such that
 \[
 f(t)=c_x
 \]
-for almost every $t\in(x,x+1)$. If two such intervals overlap in a set of positive measure, their constants must agree. Chaining overlapping unit intervals shows that $f$ is almost everywhere equal to one constant on $\mathbb R$. Since $f\in L^p(\mathbb R)$, that constant must be $0$. Hence equality occurs only for $f=0$ almost everywhere.
+for almost every $t\in(x,x+1)$. If two such intervals overlap in a set of positive measure, their constants must agree. Chaining overlapping unit intervals shows that $f$ is almost everywhere equal to one constant on $\RR$. Since $f\in L^p(\RR)$, that constant must be $0$. Hence equality occurs only for $f=0$ almost everywhere.
 
 :::
 
@@ -139,11 +139,11 @@ Therefore
 
 ::: pf-step
 
-$(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R)$.
+$(I-T)(L^p(\RR))\ne L^p(\RR)$.
 
 ::: pf-proof
 
-Suppose $(I-T)(L^p)=L^p$. By step [](#s3){.pf-ref}, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\mathbb R)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
+Suppose $(I-T)(L^p)=L^p$. By step [](#s3){.pf-ref}, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\RR)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
 \[
 \|(I-T)f\|_p\ge C\|f\|_p
 \]
@@ -151,7 +151,7 @@ for every $f\in L^p$.
 
 Step [](#s4){.pf-ref} contradicts such a lower bound. Therefore
 \[
-\boxed{(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R).}
+\boxed{(I-T)(L^p(\RR))\ne L^p(\RR).}
 \]
 
 :::

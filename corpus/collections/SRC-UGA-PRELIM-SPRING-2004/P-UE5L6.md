@@ -33,7 +33,7 @@ The function $f$ is differentiable and satisfies
 \[
 f'(x)=3f(x)
 \]
-for every $x\in\mathbb R$.
+for every $x\in\RR$.
 
 ::: pf-proof
 

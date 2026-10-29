@@ -34,12 +34,12 @@ Be sure to name each theorem when you use it.
 (a) Let $\{f_j\}$ be a sequence of real-valued functions in $L^1(\mu)$ such that $f_1 \geq f_2 \geq \cdots \geq 0$.
 Then $\lim_j \int f_j \, d\mu = \int \lim_j f_j \, d\mu$.
 
-(b) Let $f : [a, b] \times [c, d] \to \mathbb{R}$ be continuous.
-Then for all $\varepsilon > 0$ there exists $N > 0$, continuous functions $g_j : [a, b] \to \mathbb{R}$, and continuous functions $h_j : [c, d] \to \mathbb{R}$ such that $\left|f(x, y) - \sum_{j=1}^N g_j(x) h_j(y)\right| < \varepsilon$ for all $(x, y) \in [a, b] \times [c, d]$.
+(b) Let $f : [a, b] \times [c, d] \to \RR$ be continuous.
+Then for all $\varepsilon > 0$ there exists $N > 0$, continuous functions $g_j : [a, b] \to \RR$, and continuous functions $h_j : [c, d] \to \RR$ such that $\left|f(x, y) - \sum_{j=1}^N g_j(x) h_j(y)\right| < \varepsilon$ for all $(x, y) \in [a, b] \times [c, d]$.
 
-(c) Let $C([0, 1], \mathbb{R})$ be the space of all real-valued functions on $[0, 1]$ with the uniform norm topology.
-Suppose that $C([0, 1], \mathbb{R}) = \bigcup_j F_j$ where each $F_j$ is closed.
-Then there exists $\varepsilon > 0$, $j_0 \in \mathbb{N}$, and $f_0 \in F_{j_0}$ such that $\sup_{x \in [0,1]} |f(x) - f_0(x)| < \varepsilon \implies f \in F_{j_0}$.
+(c) Let $C([0, 1], \RR)$ be the space of all real-valued functions on $[0, 1]$ with the uniform norm topology.
+Suppose that $C([0, 1], \RR) = \bigcup_j F_j$ where each $F_j$ is closed.
+Then there exists $\varepsilon > 0$, $j_0 \in \NN$, and $f_0 \in F_{j_0}$ such that $\sup_{x \in [0,1]} |f(x) - f_0(x)| < \varepsilon \implies f \in F_{j_0}$.
 :::
 
 ::: {.solution}
@@ -134,9 +134,9 @@ Prove part (c) by Baire category.
 
 ::: pf-proof
 
-The normed space $C([0,1],\mathbb R)$ with the uniform norm is Banach. By hypothesis,
+The normed space $C([0,1],\RR)$ with the uniform norm is Banach. By hypothesis,
 \[
-C([0,1],\mathbb R)=\bigcup_{j=1}^\infty F_j
+C([0,1],\RR)=\bigcup_{j=1}^\infty F_j
 \]
 with every $F_j$ closed. The Baire Category Theorem therefore implies that at least one $F_{j_0}$ has nonempty interior.
 

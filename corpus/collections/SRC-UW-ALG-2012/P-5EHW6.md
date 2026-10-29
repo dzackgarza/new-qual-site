@@ -86,7 +86,7 @@ Conjugation gives a homomorphism
 \]
 Since \(N\cong C_{503}\),
 \[
-\operatorname{Aut}(N)\cong (\mathbb Z/503\mathbb Z)^\times,
+\operatorname{Aut}(N)\cong (\ZZ/503\ZZ)^\times,
 \]
 a cyclic group of order \(502=2\cdot 251\). The image of the \(2\)-group \(P\) is therefore a \(2\)-subgroup of a cyclic group whose \(2\)-part has order \(2\). Hence
 \[

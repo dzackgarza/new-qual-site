@@ -25,7 +25,7 @@ State the Residue Theorem.
 
 ::: pf-step
 
-Let $U\subset\mathbb C$ be open, let
+Let $U\subset\CC$ be open, let
 \[
 \gamma
 \]
@@ -37,7 +37,7 @@ and the bounded component
 \[
 D
 \]
-of $\mathbb C\setminus\gamma$ has
+of $\CC\setminus\gamma$ has
 \[
 \overline D\subset U.
 \]

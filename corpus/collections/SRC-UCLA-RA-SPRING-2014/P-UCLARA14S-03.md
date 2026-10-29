@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $[a,b]$ be a finite interval and let $f:[a,b]\to\mathbb R$ be bounded and Borel measurable.
+Let $[a,b]$ be a finite interval and let $f:[a,b]\to\RR$ be bounded and Borel measurable.
 
 (a) Prove that the set of points at which $f$ is continuous is Borel measurable.
 

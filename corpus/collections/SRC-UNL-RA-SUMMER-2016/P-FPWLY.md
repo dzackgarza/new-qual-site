@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f \colon [0,2] \to \mathbb{R}$ is continuous on $[0,2]$ , differentiable on $(0,2)$, and such that $f(0) = f(2) = 0$, $f(c) = 1$ for some $c \in (0,2)$.
+Suppose that $f \colon [0,2] \to \RR$ is continuous on $[0,2]$ , differentiable on $(0,2)$, and such that $f(0) = f(2) = 0$, $f(c) = 1$ for some $c \in (0,2)$.
 Prove that there exists $x \in (0,2)$ such that $|f'(x)| >1.$
 :::
 

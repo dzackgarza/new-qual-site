@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be a finite-dimensional complex vector space, $T:V\to V$ linear, and $F(X)\in\mathbb C[X]$. Show that $F(T)$ is invertible if and only if $F$ and the minimal polynomial of $T$ have no common factor.
+Let $V$ be a finite-dimensional complex vector space, $T:V\to V$ linear, and $F(X)\in\CC[X]$. Show that $F(T)$ is invertible if and only if $F$ and the minimal polynomial of $T$ have no common factor.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ Suppose
 \]
 Then there exist polynomials
 \[
-A(X),B(X)\in\mathbb C[X]
+A(X),B(X)\in\CC[X]
 \]
 such that
 \[
@@ -52,7 +52,7 @@ A(X)F(X)+B(X)m_T(X)=1.
 
 The polynomial ring
 \[
-\mathbb C[X]
+\CC[X]
 \]
 is a Euclidean domain.
 Therefore Bézout's identity applies to relatively prime polynomials.
@@ -141,13 +141,13 @@ F(T)^{-1}=A(T).
 Conversely, suppose $F$ and $m_T$ have a nonconstant common factor.
 Then they have a common root
 \[
-\lambda\in\mathbb C.
+\lambda\in\CC.
 \]
 
 
 ::: pf-proof
 
-Over the algebraically closed field $\mathbb C$, every nonconstant polynomial has a root.
+Over the algebraically closed field $\CC$, every nonconstant polynomial has a root.
 Any nonconstant common divisor of $F$ and $m_T$ therefore has a root $\lambda$ that is simultaneously a root of both polynomials.
 
 :::

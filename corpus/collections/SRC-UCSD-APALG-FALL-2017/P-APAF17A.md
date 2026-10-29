@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A \in \mathbb{R}^{n \times n}$ be a square matrix such that:
+Let $A \in \RR^{n \times n}$ be a square matrix such that:
 $$\operatorname{rank}(A^2) \le \operatorname{rank}(A^3).$$
 Show that:
 $$\operatorname{rank}(A^k) \le \operatorname{rank}(A^{k+1})$$
@@ -39,7 +39,7 @@ Monotonicity of Ranks of Matrix Powers:
 ::: pf-proof
 
 ::: pf-step
-For any matrix $A \in M_n(\mathbb{R})$ and any integer $j \ge 1$, we have:
+For any matrix $A \in M_n(\RR)$ and any integer $j \ge 1$, we have:
 $$\operatorname{im}(A^{j+1}) = A(\operatorname{im}(A^j)) \subseteq \operatorname{im}(A^j).$$
 :::
 
@@ -68,7 +68,7 @@ $$\operatorname{rank}(A^2) = \operatorname{rank}(A^3).$$
 :::
 
 ::: pf-step
-Since $\operatorname{im}(A^3) \subseteq \operatorname{im}(A^2)$ are finite-dimensional subspaces of $\mathbb{R}^n$ with identical dimension:
+Since $\operatorname{im}(A^3) \subseteq \operatorname{im}(A^2)$ are finite-dimensional subspaces of $\RR^n$ with identical dimension:
 $$\operatorname{im}(A^3) = \operatorname{im}(A^2).$$
 :::
 

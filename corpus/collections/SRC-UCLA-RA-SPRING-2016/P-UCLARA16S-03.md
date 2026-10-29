@@ -17,15 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be real valued and assume that for each integer $n>0$,
+Let $f\in L^1_{\mathrm{loc}}(\RR)$ be real valued and assume that for each integer $n>0$,
 \[
 f\!\left(x+\frac1n\right)\ge f(x)
 \]
-for almost all $x\in\mathbb R$. Show that for each real number $a\ge0$,
+for almost all $x\in\RR$. Show that for each real number $a\ge0$,
 \[
 f(x+a)\ge f(x)
 \]
-for almost all $x\in\mathbb R$.
+for almost all $x\in\RR$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ For every nonnegative rational number $q$,
 \[
 f(x+q)\ge f(x)
 \]
-for almost every $x\in\mathbb R$.
+for almost every $x\in\RR$.
 
 
 ::: pf-proof
@@ -83,7 +83,7 @@ The case $m=0$ is equality.
 
 ::: {.pf-step #s1-2}
 
-If $a\ge0$ and $(q_k)$ is a sequence of nonnegative rationals with $q_k\to a$, then for every compact interval $K\subset\mathbb R$,
+If $a\ge0$ and $(q_k)$ is a sequence of nonnegative rationals with $q_k\to a$, then for every compact interval $K\subset\RR$,
 \[
 f(\cdot+q_k)
 \longrightarrow
@@ -104,12 +104,12 @@ for all sufficiently large $k$. Set
 \[
 F=f\,\mathbf 1_J.
 \]
-Then $F\in L^1(\mathbb R)$. Continuity of translations in $L^1(\mathbb R)$ gives
+Then $F\in L^1(\RR)$. Continuity of translations in $L^1(\RR)$ gives
 \[
-\|F(\cdot+q_k-a)-F\|_{L^1(\mathbb R)}
+\|F(\cdot+q_k-a)-F\|_{L^1(\RR)}
 \longrightarrow0.
 \]
-Indeed, given $\eta>0$, choose $\varphi\in C_c(\mathbb R)$ with
+Indeed, given $\eta>0$, choose $\varphi\in C_c(\RR)$ with
 \[
 \|F-\varphi\|_1<\eta.
 \]
@@ -141,7 +141,7 @@ After translating variables, this implies
 
 ::: {.pf-step #s1-3}
 
-Fix $a\ge0$. For every compact interval $K\subset\mathbb R$,
+Fix $a\ge0$. For every compact interval $K\subset\RR$,
 \[
 f(x+a)-f(x)\ge0
 \]
@@ -202,7 +202,7 @@ For every real number $a\ge0$,
 \[
 \boxed{
 f(x+a)\ge f(x)
-\quad\text{for almost every }x\in\mathbb R
+\quad\text{for almost every }x\in\RR
 }.
 \]
 
@@ -215,7 +215,7 @@ Apply step [](#s1-3){.pf-ref} to the compact intervals
 \qquad
 N=1,2,\dots.
 \]
-The exceptional set in each interval is null, and the countable union of these exceptional sets is null. Since the intervals exhaust $\mathbb R$, the stated inequality holds almost everywhere on $\mathbb R$.
+The exceptional set in each interval is null, and the countable union of these exceptional sets is null. Since the intervals exhaust $\RR$, the stated inequality holds almost everywhere on $\RR$.
 
 :::
 

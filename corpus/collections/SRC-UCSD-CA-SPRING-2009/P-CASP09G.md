@@ -35,7 +35,7 @@ The endpoint values are irrelevant for convolution.
 
 With the convention
 \[
-\widehat f(t)=\int_{\mathbb R}f(x)e^{itx}\,dx,
+\widehat f(t)=\int_{\RR}f(x)e^{itx}\,dx,
 \]
 the product-convolution formula is
 \[
@@ -45,7 +45,7 @@ Therefore
 \[
 \widehat{s^2}(t)
 =\frac1{2\pi}
-\int_{\mathbb R}\widehat s(u)\widehat s(t-u)\,du.
+\int_{\RR}\widehat s(u)\widehat s(t-u)\,du.
 \]
 The integrand equals $\pi^2$ exactly where
 \[

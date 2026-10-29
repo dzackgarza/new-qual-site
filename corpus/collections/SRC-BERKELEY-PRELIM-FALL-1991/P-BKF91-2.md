@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF91-2
 kind: problem
-title: A continuous distance-expanding map $\mathbb R\to\mathbb R$ is surjective
+title: A continuous distance-expanding map $\RR\to\RR$ is surjective
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and suppose
+Let $f:\RR\to\RR$ be continuous and suppose
 \[
 |f(x)-f(y)|\ge |x-y|
 \]
-for all $x,y\in\mathbb R$. Prove that the range of $f$ is all of $\mathbb R$.
+for all $x,y\in\RR$. Prove that the range of $f$ is all of $\RR$.
 :::
 
 ::: {.solution}

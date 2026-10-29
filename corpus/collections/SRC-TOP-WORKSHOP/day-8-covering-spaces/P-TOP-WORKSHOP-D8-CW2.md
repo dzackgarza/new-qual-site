@@ -29,9 +29,9 @@ The statement is false. The space \(S^2\vee S^2\) is connected. If it covered \(
 
 But \(S^2\vee S^2\) is not homeomorphic to \(S^2\); for example,
 \[
-H_2(S^2\vee S^2)\cong\mathbb Z\oplus\mathbb Z,
+H_2(S^2\vee S^2)\cong\ZZ\oplus\ZZ,
 \qquad
-H_2(S^2)\cong\mathbb Z.
+H_2(S^2)\cong\ZZ.
 \]
 Therefore \(S^2\vee S^2\) cannot be a covering space of \(S^2\).
 :::

@@ -41,7 +41,7 @@ We write $\alpha^{1/2}$ to denote the unique positive definite square-root of $\
 The product of two positive definite self-adjoint maps need not be self-adjoint.
 
 ::: pf-proof
-Take $V=\mathbb R^2$ with its standard inner product and
+Take $V=\RR^2$ with its standard inner product and
 \[
 \alpha=
 \begin{pmatrix}

@@ -39,11 +39,11 @@ V_1,\dots,V_r
 \]
 be representatives of the irreducible complex representations of $G$, and write
 \[
-d_i=\dim_{\mathbb C}V_i.
+d_i=\dim_{\CC}V_i.
 \]
 The left regular representation decomposes as
 \[
-\mathbb C G\cong\bigoplus_{i=1}^r V_i^{\oplus d_i}.
+\CC G\cong\bigoplus_{i=1}^r V_i^{\oplus d_i}.
 \]
 
 ::: pf-proof
@@ -89,7 +89,7 @@ Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\mathbb CG
 
 Every irreducible $\mathbb CG$-module $V$ satisfies
 \[
-\dim_{\mathbb C}V\le\sqrt n.
+\dim_{\CC}V\le\sqrt n.
 \]
 
 ::: pf-proof
@@ -114,23 +114,23 @@ n=|S_3|=6
 \]
 Consider the subspace
 \[
-V=\{(z_1,z_2,z_3)\in\mathbb C^3:z_1+z_2+z_3=0\}
+V=\{(z_1,z_2,z_3)\in\CC^3:z_1+z_2+z_3=0\}
 \]
 of the permutation representation of $S_3$.
 Then
 \[
-\dim_{\mathbb C}V=2.
+\dim_{\CC}V=2.
 \]
 
 ::: pf-proof
 
 The coordinate-sum map
 \[
-\mathbb C^3\longrightarrow\mathbb C,
+\CC^3\longrightarrow\CC,
 \qquad
 (z_1,z_2,z_3)\longmapsto z_1+z_2+z_3
 \]
-is nonzero and linear, and $V$ is its kernel. Hence $V$ has codimension $1$ in $\mathbb C^3$ and therefore dimension $2$. Permuting coordinates preserves the coordinate sum, so $V$ is $S_3$-stable.
+is nonzero and linear, and $V$ is its kernel. Hence $V$ has codimension $1$ in $\CC^3$ and therefore dimension $2$. Permuting coordinates preserves the coordinate sum, so $V$ is $S_3$-stable.
 
 :::
 
@@ -183,6 +183,6 @@ Thus $S_3$ provides the requested sharp example:
 :::
 
 \[
-\dim_{\mathbb C}V=2=\lfloor\sqrt6\rfloor.
+\dim_{\CC}V=2=\lfloor\sqrt6\rfloor.
 \]
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-8B
 kind: problem
-title: Embeddings of $C_6$ into $\mathbb R^*$, $\mathbb C^*$, $C_2\times C_3$, $S_4$ and $\operatorname{SL}_2(\mathbb R)$
+title: Embeddings of $C_6$ into $\RR^*$, $\CC^*$, $C_2\times C_3$, $S_4$ and $\operatorname{SL}_2(\RR)$
 classification:
   areas:
   - prelim

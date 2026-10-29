@@ -25,12 +25,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be an open subset of $\mathbb{C}$.
+Let $U$ be an open subset of $\CC$.
 We use the notation
 
 $$\|f\|_{L^2(U)} = \left(\int_U |f|^2 \, dx \, dy\right)^{1/2}.$$
 
-- Let $f : U \to \mathbb{C}$ be a holomorphic function.
+- Let $f : U \to \CC$ be a holomorphic function.
   Show that for any compact set $K \subset U$, there is a constant $C_K$ such that
 
 $$\sup_{z \in K} |f(z)| \leq C_K \|f\|_{L^2(U)}.$$
@@ -79,9 +79,9 @@ The required compact-set bound holds with a constant independent of $f$.
 
 For nonempty compact $K\subset U$, choose $r>0$ with
 $\overline{D(a,r)}\subset U$ for all $a\in K$.
-If $U\ne\mathbb C$, take half the distance from $K$ to
-the closed set $\mathbb C\setminus U$; this distance is
-positive by compactness and openness. For $U=\mathbb C$,
+If $U\ne\CC$, take half the distance from $K$ to
+the closed set $\CC\setminus U$; this distance is
+positive by compactness and openness. For $U=\CC$,
 take $r=1$. Step [](#s1){.pf-ref} gives
 $$
 \sup_{a\in K}|f(a)|\leq\frac1{\sqrt\pi r}\|f\|_{L^2(U)}.

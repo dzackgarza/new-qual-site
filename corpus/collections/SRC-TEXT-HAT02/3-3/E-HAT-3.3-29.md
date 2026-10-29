@@ -53,7 +53,7 @@ Thus the image $V=r^*H^1(X;F)$ is an isotropic subspace for the nonsingular skew
 \[
 \dim_F V\le g.
 \]
-Taking $F=\mathbb Q$ gives
+Taking $F=\QQ$ gives
 \[
 \boxed{\operatorname{rank}H_1(X)\le g.}
 \]

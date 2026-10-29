@@ -16,8 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $S\subseteq\mathbb R^n$, equipped with the Euclidean distance restricted to $S$.
-Fix $y\in S$ and $r\in\mathbb R$.
+Let $S\subseteq\RR^n$, equipped with the Euclidean distance restricted to $S$.
+Fix $y\in S$ and $r\in\RR$.
 
 (a) Is $E=\{x\in S:d(x,y)\ge r\}$ closed in $S$?
 
@@ -30,7 +30,7 @@ Prove your answers.
 
 Let
 \[
-\delta_y:S\to\mathbb R,
+\delta_y:S\to\RR,
 \qquad
 \delta_y(x)=d(x,y).
 \]
@@ -77,7 +77,7 @@ By step [](#s1-1){.pf-ref},
 \[
 E=\delta_y^{-1}([r,\infty)).
 \]
-The interval $[r,\infty)$ is closed in $\mathbb R$, and the inverse image of a closed set under a continuous map is closed. Hence
+The interval $[r,\infty)$ is closed in $\RR$, and the inverse image of a closed set under a continuous map is closed. Hence
 \[
 \boxed{E\text{ is closed in }S}.
 \]
@@ -99,7 +99,7 @@ E\not\subseteq
 
 Take
 \[
-S=\{0,1\}\subseteq\mathbb R,
+S=\{0,1\}\subseteq\RR,
 \qquad
 y=0,
 \qquad

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X,\mathcal M,\mu)$ and $(Y,\mathcal N,\nu)$ be sigma-finite measure spaces. Let $K:X\times Y\to\mathbb C$ be measurable and suppose
+Let $(X,\mathcal M,\mu)$ and $(Y,\mathcal N,\nu)$ be sigma-finite measure spaces. Let $K:X\times Y\to\CC$ be measurable and suppose
 \[
 \int_Y |K(x,y)|\,d\nu(y)\le A
 \quad\text{for all }x,

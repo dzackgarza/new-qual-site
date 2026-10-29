@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-For fixed $t\in\mathbb R$, let
+For fixed $t\in\RR$, let
 \[
 F(y;t)=y^4+t y^2+t^2y.
 \]
@@ -28,7 +28,7 @@ Show that $F(\,\cdot\,;t)$ attains its global minimum at a unique point $y_0(t)$
 
 Fix
 \[
-t\in\mathbb R.
+t\in\RR.
 \]
 Write
 \[
@@ -41,7 +41,7 @@ y^4+ty^2+t^2y.
 
 ::: {.pf-step #s1-1}
 
-The function $F_t$ attains a global minimum on $\mathbb R$.
+The function $F_t$ attains a global minimum on $\RR$.
 
 
 ::: pf-proof
@@ -489,7 +489,7 @@ F_t'(y)=0.
 
 By step [](#s1-1){.pf-ref}, a global minimizer exists.
 By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}, every global minimizer is strictly negative.
-Since $F_t$ is differentiable on all of $\mathbb R$, every global minimizer is a critical point:
+Since $F_t$ is differentiable on all of $\RR$, every global minimizer is a critical point:
 \[
 F_t'(y)=0.
 \]
@@ -504,7 +504,7 @@ Thus every global minimizer must equal it.
 
 Hence for every
 \[
-t\in\mathbb R,
+t\in\RR,
 \]
 the function
 \[

@@ -18,11 +18,11 @@ audit:
 ::: {.problem}
 Prove directly that the open unit disk
 \[
-\{(x,y)\in\mathbb R^2:x^2+y^2<1\}
+\{(x,y)\in\RR^2:x^2+y^2<1\}
 \]
 is connected.
 
-You may assume that intervals in $\mathbb R$ are connected, but should not simply quote more general connectedness results.
+You may assume that intervals in $\RR$ are connected, but should not simply quote more general connectedness results.
 :::
 
 ::: {.solution}

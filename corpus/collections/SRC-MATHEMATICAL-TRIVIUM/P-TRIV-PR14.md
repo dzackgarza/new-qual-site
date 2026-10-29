@@ -49,7 +49,7 @@ Set $y=0$ in the assumed equation. The right side is $e^0=1$.
 
 ::: {.pf-step #s1-2}
 
-For every $y,t\in\mathbb R$,
+For every $y,t\in\RR$,
 \[
 (y-t)^2+1\leq 2(1+y^2)(1+t^2).
 \]

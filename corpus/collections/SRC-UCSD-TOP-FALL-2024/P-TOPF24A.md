@@ -37,12 +37,12 @@ We will derive a contradiction from the induced map on first cohomology when $g<
 ::: pf-step
 
 The pullback
-$$f^*:H^1(\Sigma_h;\mathbb Q)\to H^1(\Sigma_g;\mathbb Q)$$
+$$f^*:H^1(\Sigma_h;\QQ)\to H^1(\Sigma_g;\QQ)$$
 is injective.
 
 ::: pf-proof
 
-A nonzero-degree map between closed oriented manifolds induces an injection on rational cohomology. Indeed, if $0\ne\alpha\in H^k(\Sigma_h;\mathbb Q)$, Poincaré duality gives $\beta$ with $\langle\alpha\smile\beta,[\Sigma_h]\rangle\ne0$, and naturality yields
+A nonzero-degree map between closed oriented manifolds induces an injection on rational cohomology. Indeed, if $0\ne\alpha\in H^k(\Sigma_h;\QQ)$, Poincaré duality gives $\beta$ with $\langle\alpha\smile\beta,[\Sigma_h]\rangle\ne0$, and naturality yields
 $$\langle f^*\alpha\smile f^*\beta,[\Sigma_g]\rangle
 =\deg(f)\langle\alpha\smile\beta,[\Sigma_h]\rangle\ne0.$$
 
@@ -53,7 +53,7 @@ $$\langle f^*\alpha\smile f^*\beta,[\Sigma_g]\rangle
 ::: pf-step
 
 But
-$$\dim H^1(\Sigma_h;\mathbb Q)=2h>2g=\dim H^1(\Sigma_g;\mathbb Q).$$
+$$\dim H^1(\Sigma_h;\QQ)=2h>2g=\dim H^1(\Sigma_g;\QQ).$$
 
 ::: pf-proof
 

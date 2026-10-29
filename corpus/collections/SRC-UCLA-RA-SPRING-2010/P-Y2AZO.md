@@ -31,8 +31,8 @@ audit:
 ---
 
 ::: {.problem}
-For $f:\mathbb{R}\to\mathbb{R}$ in $L^1(\mathbb{R})$, let $Mf$ be the (centered) Hardy-Littlewood maximal function.
-Prove there is a constant $A$ such that for any $\lambda>0$, $$m\{x\in\mathbb{R}: Mf(x)>\lambda\} \le \frac{A}{\lambda}||f||_{L^1}$$ where $m$ is Lebesgue measure.
+For $f:\RR\to\RR$ in $L^1(\RR)$, let $Mf$ be the (centered) Hardy-Littlewood maximal function.
+Prove there is a constant $A$ such that for any $\lambda>0$, $$m\{x\in\RR: Mf(x)>\lambda\} \le \frac{A}{\lambda}||f||_{L^1}$$ where $m$ is Lebesgue measure.
 If you use a covering lemma, you should prove it.
 :::
 
@@ -43,7 +43,7 @@ Mf(x)=\sup_{r>0}\frac1{2r}\int_{x-r}^{x+r}|f(t)|\,dt
 \]
 and, for $\lambda>0$, set
 \[
-E_\lambda=\{x\in\mathbb R:Mf(x)>\lambda\}.
+E_\lambda=\{x\in\RR:Mf(x)>\lambda\}.
 \]
 
 ::: pf
@@ -63,7 +63,7 @@ Define
 \[
 F(s)=\int_{-\infty}^{s}|f(t)|\,dt.
 \]
-Because $f\in L^1(\mathbb R)$, the function $F$ is continuous.
+Because $f\in L^1(\RR)$, the function $F$ is continuous.
 Hence
 \[
 y\longmapsto \int_{y-r}^{y+r}|f(t)|\,dt

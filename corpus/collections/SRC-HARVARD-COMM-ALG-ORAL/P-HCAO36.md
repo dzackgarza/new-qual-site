@@ -45,17 +45,17 @@ extension.
 ::: pf-proof
 Take
 \[
-A=\mathbb Z,
+A=\ZZ,
 \qquad
-B=\mathbb Q,
+B=\QQ,
 \qquad
 I=(2),
 \qquad
 J=(1).
 \]
-Then $I\subsetneq J$, but $2$ is a unit in $\mathbb Q$, so
+Then $I\subsetneq J$, but $2$ is a unit in $\QQ$, so
 \[
-IB=2\mathbb Q=\mathbb Q=JB.
+IB=2\QQ=\QQ=JB.
 \]
 :::
 

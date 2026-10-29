@@ -18,11 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the subspace $X \subset \mathbb{R}^3$ that is the union of the spheres $S_n$ of radius $1/n$ and center $(1/n, 0, 0)$ for $n = 1, 2, 3, \dots$ is simply-connected.
+Show that the subspace $X \subset \RR^3$ that is the union of the spheres $S_n$ of radius $1/n$ and center $(1/n, 0, 0)$ for $n = 1, 2, 3, \dots$ is simply-connected.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the shrinking union of 2-spheres $X = \bigcup_{n=1}^\infty S_n \subset \mathbb{R}^3$ meeting at the origin is simply connected ($\pi_1(X, 0) = 0$).
+**Goal:** Prove that the shrinking union of 2-spheres $X = \bigcup_{n=1}^\infty S_n \subset \RR^3$ meeting at the origin is simply connected ($\pi_1(X, 0) = 0$).
 
 ::: pf
 
@@ -35,7 +35,7 @@ Geometry and topology of the space $X$:
 
 ::: pf-step
 
-For each $n \ge 1$, let $S_n = \{x \in \mathbb{R}^3 : \|x - (1/n, 0, 0)\| = 1/n\}$ be the 2-sphere of diameter $2/n$ passing through the origin $0 = (0, 0, 0)$.
+For each $n \ge 1$, let $S_n = \{x \in \RR^3 : \|x - (1/n, 0, 0)\| = 1/n\}$ be the 2-sphere of diameter $2/n$ passing through the origin $0 = (0, 0, 0)$.
 
 :::
 
@@ -70,7 +70,7 @@ Retraction of punctured spheres to the origin:
 
 ::: pf-step
 
-The punctured 2-sphere $S_n \setminus \{p_n\}$ is homeomorphic to $\mathbb{R}^2$ via stereographic projection from $p_n$.
+The punctured 2-sphere $S_n \setminus \{p_n\}$ is homeomorphic to $\RR^2$ via stereographic projection from $p_n$.
 
 :::
 

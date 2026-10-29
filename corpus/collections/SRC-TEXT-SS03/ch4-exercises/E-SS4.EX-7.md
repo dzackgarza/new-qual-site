@@ -75,8 +75,8 @@ At $\xi=0$, closing in the upper half-plane gives $\widehat f(0)=0$.
 
 Poisson summation now yields
 \[
-\sum_{n\in\mathbb Z}\frac1{(\tau+n)^k}
-=\sum_{m\in\mathbb Z}\widehat f(m)
+\sum_{n\in\ZZ}\frac1{(\tau+n)^k}
+=\sum_{m\in\ZZ}\widehat f(m)
 =\frac{(-2\pi i)^k}{(k-1)!}
 \sum_{m=1}^{\infty}m^{k-1}e^{2\pi im\tau}.
 \]
@@ -88,7 +88,7 @@ For $k=2$, let $q=e^{2\pi i\tau}$; since $\Im\tau>0$, $|q|<1$. Then
 \]
 so
 \[
-\sum_{n\in\mathbb Z}\frac1{(\tau+n)^2}
+\sum_{n\in\ZZ}\frac1{(\tau+n)^2}
 =-4\pi^2\frac{q}{(1-q)^2}.
 \]
 But
@@ -97,9 +97,9 @@ But
 \]
 hence
 \[
-\sum_{n\in\mathbb Z}\frac1{(\tau+n)^2}
+\sum_{n\in\ZZ}\frac1{(\tau+n)^2}
 =\frac{\pi^2}{\sin^2(\pi\tau)}.
 \]
 
-The identity remains valid for every $\tau\in\mathbb C\setminus\mathbb Z$. Indeed, the series on the left converges normally on compact subsets of $\mathbb C\setminus\mathbb Z$, so it defines a holomorphic function there; the right side is also holomorphic there. They agree on the upper half-plane, and $\mathbb C\setminus\mathbb Z$ is connected, so the identity theorem extends the equality to all nonintegral $\tau$.
+The identity remains valid for every $\tau\in\CC\setminus\ZZ$. Indeed, the series on the left converges normally on compact subsets of $\CC\setminus\ZZ$, so it defines a holomorphic function there; the right side is also holomorphic there. They agree on the upper half-plane, and $\CC\setminus\ZZ$ is connected, so the identity theorem extends the equality to all nonintegral $\tau$.
 :::

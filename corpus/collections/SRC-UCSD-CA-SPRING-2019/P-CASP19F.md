@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be a continuous function on $\{z \in \mathbb{C} : 0 < |z| \leq 1\}$ that is analytic on $\{z \in \mathbb{C} : 0 < |z| < 1\}$.
+Let $f$ be a continuous function on $\{z \in \CC : 0 < |z| \leq 1\}$ that is analytic on $\{z \in \CC : 0 < |z| < 1\}$.
 Assume $f(z) = 0$ for every $z = e^{i\theta}$ with $\frac{\pi}{4} < \theta < \frac{\pi}{3}$.
 Prove $f \equiv 0$.
 :::

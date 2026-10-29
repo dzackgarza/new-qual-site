@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g\in L^2(\mathbb R)$. Prove that
+Let $f,g\in L^2(\RR)$. Prove that
 \[
-(f*g)(x)=\int_{\mathbb R}f(y)g(x-y)\,dy
+(f*g)(x)=\int_{\RR}f(y)g(x-y)\,dy
 \]
-defines a bounded continuous function on $\mathbb R$.
+defines a bounded continuous function on $\RR$.
 :::
 
 ::: {.solution}
@@ -61,10 +61,10 @@ The convolution is uniformly continuous.
 
 ::: pf-proof
 
-For $h\in\mathbb R$,
+For $h\in\RR$,
 $$
 (f*g)(x+h)-(f*g)(x)
-=\int_{\mathbb R}f(y)\bigl(g(x+h-y)-g(x-y)\bigr)\,dy.
+=\int_{\RR}f(y)\bigl(g(x+h-y)-g(x-y)\bigr)\,dy.
 $$
 Applying Cauchy--Schwarz again gives, uniformly in $x$,
 $$

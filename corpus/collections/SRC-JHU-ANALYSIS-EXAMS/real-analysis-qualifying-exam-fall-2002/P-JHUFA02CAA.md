@@ -72,7 +72,7 @@ the Weierstrass $M$-test gives uniform convergence of
 \[
 f(x)=\sum_{n=0}^\infty 2^{-n}\psi(8^n x).
 \]
-Each summand is continuous, so $f$ is continuous on $\mathbb R$.
+Each summand is continuous, so $f$ is continuous on $\RR$.
 
 :::
 
@@ -84,7 +84,7 @@ Construct small increments with a large difference quotient.
 
 ::: pf-proof
 
-Fix $x\in\mathbb R$ and $k\ge1$. Choose
+Fix $x\in\RR$ and $k\ge1$. Choose
 \[
 h_k\in\{8^{-k},-8^{-k}\}
 \]
@@ -92,7 +92,7 @@ so that $8^{k-1}x$ and $8^{k-1}(x+h_k)$ lie in one linear piece of the periodic 
 
 For $n\ge k$,
 \[
-8^n h_k=\pm 8^{n-k}\in\mathbb Z,
+8^n h_k=\pm 8^{n-k}\in\ZZ,
 \]
 so periodicity gives
 \[

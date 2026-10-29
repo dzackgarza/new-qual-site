@@ -37,11 +37,11 @@ be its universal cover. Then \(\widetilde M\) is a simply-connected surface. Sin
 
 A connected noncompact \(2\)-manifold has zero top-dimensional integral homology, so
 \[
-H_2(\widetilde M;\mathbb Z)=0.
+H_2(\widetilde M;\ZZ)=0.
 \]
 Also
 \[
-H_1(\widetilde M;\mathbb Z)=0
+H_1(\widetilde M;\ZZ)=0
 \]
 because \(\widetilde M\) is simply connected, and there is no homology above degree \(2\). Thus \(\widetilde M\) is acyclic.
 

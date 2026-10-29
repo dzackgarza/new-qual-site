@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G \subset \mathbb{C}$ be a bounded, simply connected region and let $f$ be an analytic self-map of $G$ (i.e. $f(G) \subset G$). Assume that $f$ has two fixed points.
+Let $G \subset \CC$ be a bounded, simply connected region and let $f$ be an analytic self-map of $G$ (i.e. $f(G) \subset G$). Assume that $f$ has two fixed points.
 Show that $f(z) = z$.
 :::
 

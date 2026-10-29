@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $D$ be the open unit disk in $\mathbb{C}$, and $f\colon D\to D$ a holomorphic function. Suppose that $f(-\frac12)=0$ and $f(0)=\frac12$. Prove that there is only one possible value for $f(\frac12)$, and find it.
+Let $D$ be the open unit disk in $\CC$, and $f\colon D\to D$ a holomorphic function. Suppose that $f(-\frac12)=0$ and $f(0)=\frac12$. Prove that there is only one possible value for $f(\frac12)$, and find it.
 :::
 
 ::: {.solution}

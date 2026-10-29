@@ -26,15 +26,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $G : \mathbb{R} \to \mathbb{R}$ be a bounded Borel measurable function.
-Define $f_0(t) = 1$ and $f_n : [-1, 1] \to \mathbb{R}$ inductively by
+Let $G : \RR \to \RR$ be a bounded Borel measurable function.
+Define $f_0(t) = 1$ and $f_n : [-1, 1] \to \RR$ inductively by
 $$
 f_{n+1}(t) = 1 + \int_0^t G(f_n(\tau)) \, d\tau.
 $$
 
 Show:
 
-(a) $f_n$ are well defined and $f_n \in C([-1, 1], \mathbb{R})$ for all $n$.
+(a) $f_n$ are well defined and $f_n \in C([-1, 1], \RR)$ for all $n$.
 
 (b) The sequence $\{f_n\}_{n=1}^\infty$ has a uniformly convergent subsequence.
 :::
@@ -51,7 +51,7 @@ Prove that the recursion is well defined and produces continuous functions.
 
 Let
 \[
-M:=\sup_{x\in\mathbb R}|G(x)|<\infty.
+M:=\sup_{x\in\RR}|G(x)|<\infty.
 \]
 The function $f_0\equiv1$ is continuous. Suppose inductively that $f_n$ is continuous. Then $f_n$ is Borel measurable, so the composition $G\circ f_n$ is Borel measurable. It is also bounded by $M$, hence integrable on $[-1,1]$.
 

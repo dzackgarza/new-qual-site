@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the complex Hilbert space $$H := \left\{f:\overline{\mathbb{D}}\to\mathbb{C}: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
+Consider the complex Hilbert space $$H := \left\{f:\overline{\mathbb{D}}\to\CC: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
 
 a. Prove that the linear function $L:f\mapsto f(1)$ is bounded.
 
@@ -37,7 +37,7 @@ The condition $f(0)=0$ is $\widehat{f}(0)=0$.
 So we maximize $\sum_{k=1}^\infty \text{Re}(\widehat{f}(k))$ subject to $\sum_{k=1}^\infty (1+k^2)|\widehat{f}(k)|^2 = 1$.
 The constraint depends only on the moduli $|\widehat{f}(k)|$, and $\text{Re}\,\widehat{f}(k)\le|\widehat{f}(k)|$ with equality if and only if $\widehat{f}(k)\ge0$.
 Hence replacing each $\widehat{f}(k)$ by $|\widehat{f}(k)|$ keeps $f$ in $B$ and strictly increases $\text{Re}(f(1))$ unless every $\widehat{f}(k)\ge0$, so a maximizer has $\widehat{f}(k)\ge 0$ for all $k$.
-Using the same Cauchy-Schwarz argument from part (a), we have $$\sum_{k=1}^\infty \widehat{f}(k) \le \left(\sum_{k=1}^\infty |\widehat{f}(k)|^2(1+k^2)\right)^{1/2}\left(\sum_{k=1}^\infty \frac{1}{1+k^2}\right)^{1/2} = \left(\sum_{k=1}^\infty \frac{1}{1+k^2}\right)^{1/2}$$ and equality holds if and only if $\widehat{f}(k)\sqrt{1+k^2} = \frac{\alpha}{\sqrt{1+k^2}}$ for some $\alpha\in\mathbb{R}$.
+Using the same Cauchy-Schwarz argument from part (a), we have $$\sum_{k=1}^\infty \widehat{f}(k) \le \left(\sum_{k=1}^\infty |\widehat{f}(k)|^2(1+k^2)\right)^{1/2}\left(\sum_{k=1}^\infty \frac{1}{1+k^2}\right)^{1/2} = \left(\sum_{k=1}^\infty \frac{1}{1+k^2}\right)^{1/2}$$ and equality holds if and only if $\widehat{f}(k)\sqrt{1+k^2} = \frac{\alpha}{\sqrt{1+k^2}}$ for some $\alpha\in\RR$.
 This shows that the maximum on $B$ is achieved at a unique point, i.e. $$f(z) = \sum_{k=1}^\infty \frac{\alpha}{1+k^2} z^k.$$ Also, this $\alpha$ is determined by the condition that $f$ has norm 1: $$1 = \sum_{k=1}^\infty (1+k^2)|\widehat{f}(k)|^2 = \sum_{k=1}^\infty \frac{\alpha^2}{1+k^2},$$ so $\alpha = \left(\sum_{k=1}^\infty \frac{1}{1+k^2}\right)^{-1/2}$.
 Thus the maximum value achieved is $$\sum_{k=1}^\infty \frac{\alpha}{1+k^2} = \left(\sum_{k=1}^\infty \frac{1}{1+k^2}\right)^{1/2}. \quad \square$$
 :::

@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Determine if the statements below are True or False.
 
-(a) Suppose $f : [0,1] \to \mathbb{C}$ is a continuous function that is differentiable a.e. with respect to Lebesgue measure.
+(a) Suppose $f : [0,1] \to \CC$ is a continuous function that is differentiable a.e. with respect to Lebesgue measure.
 If $f' \in L^1([0,1])$, then
 $$
 f(1) - f(0) = \int_0^1 f'(x)\,dx.
@@ -150,7 +150,7 @@ so
 =
 \frac{\nu(F)}{\mu(F)}.
 \]
-Thus there is a constant $c\in\mathbb C$ such that
+Thus there is a constant $c\in\CC$ such that
 \[
 \nu(E)=c\mu(E)
 \]

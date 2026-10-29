@@ -22,16 +22,16 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R/\mathbb Z$ is isomorphic to the group of rotations about the origin in the complex plane.
+Prove that $\RR/\ZZ$ is isomorphic to the group of rotations about the origin in the complex plane.
 :::
 
 ::: {.solution}
-Let $\operatorname{Rot}(\mathbb C)$ denote the group of rotations about the
+Let $\operatorname{Rot}(\CC)$ denote the group of rotations about the
 origin. Define
 \[
-\Phi:\mathbb R/\mathbb Z\longrightarrow \operatorname{Rot}(\mathbb C)
+\Phi:\RR/\ZZ\longrightarrow \operatorname{Rot}(\CC)
 \]
-by letting $\Phi(t+\mathbb Z)$ be rotation through angle $2\pi t$.
+by letting $\Phi(t+\ZZ)$ be rotation through angle $2\pi t$.
 
 ::: pf
 
@@ -41,7 +41,7 @@ The map $\Phi$ is well-defined.
 
 ::: pf-proof
 
-If $t-s\in\mathbb Z$, then $2\pi(t-s)$ is an integral multiple of $2\pi$, so
+If $t-s\in\ZZ$, then $2\pi(t-s)$ is an integral multiple of $2\pi$, so
 rotation through angle $2\pi t$ equals rotation through angle $2\pi s$.
 
 :::
@@ -56,9 +56,9 @@ The map $\Phi$ is a homomorphism.
 
 Composition of rotations adds angles. Hence
 \[
-\Phi((s+\mathbb Z)+(t+\mathbb Z))
-=\Phi(s+t+\mathbb Z)
-=\Phi(s+\mathbb Z)\Phi(t+\mathbb Z).
+\Phi((s+\ZZ)+(t+\ZZ))
+=\Phi(s+t+\ZZ)
+=\Phi(s+\ZZ)\Phi(t+\ZZ).
 \]
 
 :::
@@ -72,11 +72,11 @@ The map $\Phi$ is bijective.
 ::: pf-proof
 
 Every rotation about the origin has some angle $\theta$, hence equals
-$\Phi(\theta/(2\pi)+\mathbb Z)$, so $\Phi$ is surjective.
+$\Phi(\theta/(2\pi)+\ZZ)$, so $\Phi$ is surjective.
 
-If $\Phi(t+\mathbb Z)$ is the identity rotation, then
-$2\pi t\in2\pi\mathbb Z$, so $t\in\mathbb Z$ and therefore
-$t+\mathbb Z=\mathbb Z$. Thus the kernel is trivial, and $\Phi$ is injective.
+If $\Phi(t+\ZZ)$ is the identity rotation, then
+$2\pi t\in2\pi\ZZ$, so $t\in\ZZ$ and therefore
+$t+\ZZ=\ZZ$. Thus the kernel is trivial, and $\Phi$ is injective.
 
 :::
 
@@ -84,7 +84,7 @@ $t+\mathbb Z=\mathbb Z$. Thus the kernel is trivial, and $\Phi$ is injective.
 
 ::: pf-step
 
-Therefore $\mathbb R/\mathbb Z\cong\operatorname{Rot}(\mathbb C)$.
+Therefore $\RR/\ZZ\cong\operatorname{Rot}(\CC)$.
 
 ::: pf-proof
 

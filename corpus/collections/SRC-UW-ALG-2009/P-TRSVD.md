@@ -29,8 +29,8 @@ Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 - If $\theta\in K$ denotes a root of $p(x)$, express $\inverseof{\theta}$ in terms of the basis found in part (b).
 
 - Suppose $p(x)=x^3+9x+6$.
-  Show $p(x)$ is irreducible over $\mathbb Q$.
-  If $\theta$ is a root of $p(x)$, compute the inverse of $(1+\theta)$ in $\mathbb Q(\theta)$.
+  Show $p(x)$ is irreducible over $\QQ$.
+  If $\theta$ is a root of $p(x)$, compute the inverse of $(1+\theta)$ in $\QQ(\theta)$.
 :::
 
 ::: {.solution}
@@ -114,7 +114,7 @@ The polynomial
 \[
 p(x)=x^3+9x+6
 \]
-is irreducible over $\mathbb Q$.
+is irreducible over $\QQ$.
 
 ::: pf-proof
 
@@ -122,7 +122,7 @@ A reducible cubic over a field has a root in that field. Since $p$ is monic with
 \[
 \pm1,\ \pm2,\ \pm3,\ \pm6
 \]
-shows that none is a root. Hence $p$ has no rational root and is irreducible over $\mathbb Q$.
+shows that none is a root. Hence $p$ has no rational root and is irreducible over $\QQ$.
 
 :::
 

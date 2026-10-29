@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ be the splitting field over $\mathbb{Q}$ of $f(x) = x^4 - 4x^2 + 1$.
-Find $\mathrm{Gal}(K/\mathbb{Q})$, and find all fields $E$ such that $\mathbb{Q} \subsetneq E \subsetneq K$.
+Let $K$ be the splitting field over $\QQ$ of $f(x) = x^4 - 4x^2 + 1$.
+Find $\mathrm{Gal}(K/\QQ)$, and find all fields $E$ such that $\QQ \subsetneq E \subsetneq K$.
 :::
 
 ::: {.solution}
@@ -74,12 +74,12 @@ Thus the four roots are exactly the displayed elements.
 
 The splitting field is
 \[
-K=\mathbb Q(\alpha).
+K=\QQ(\alpha).
 \]
 
 ::: pf-proof
 
-The field $\mathbb Q(\alpha)$ contains both $\alpha$ and its inverse $\alpha^{-1}$, hence all four roots from step [](#s1){.pf-ref}. Conversely, every splitting field contains $\alpha$. Therefore $\mathbb Q(\alpha)$ is precisely the splitting field.
+The field $\QQ(\alpha)$ contains both $\alpha$ and its inverse $\alpha^{-1}$, hence all four roots from step [](#s1){.pf-ref}. Conversely, every splitting field contains $\alpha$. Therefore $\QQ(\alpha)$ is precisely the splitting field.
 
 :::
 
@@ -89,7 +89,7 @@ The field $\mathbb Q(\alpha)$ contains both $\alpha$ and its inverse $\alpha^{-1
 
 One has
 \[
-K=\mathbb Q(\sqrt2,\sqrt3).
+K=\QQ(\sqrt2,\sqrt3).
 \]
 
 ::: pf-proof
@@ -118,7 +118,7 @@ Hence
 \]
 so
 \[
-\mathbb Q(\sqrt2,\sqrt3)\subseteq K.
+\QQ(\sqrt2,\sqrt3)\subseteq K.
 \]
 
 Conversely,
@@ -126,7 +126,7 @@ Conversely,
 \alpha
 =\frac{(\alpha+\alpha^{-1})+(\alpha-\alpha^{-1})}{2}
 =\frac{\sqrt6+\sqrt2}{2}
-\in\mathbb Q(\sqrt2,\sqrt3).
+\in\QQ(\sqrt2,\sqrt3).
 \]
 Together with step [](#s2){.pf-ref} this proves equality.
 
@@ -136,29 +136,29 @@ Together with step [](#s2){.pf-ref} this proves equality.
 
 ::: pf-step
 
-The extension $K/\mathbb Q$ has degree $4$ and
+The extension $K/\QQ$ has degree $4$ and
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2.
+\operatorname{Gal}(K/\QQ)\cong C_2\times C_2.
 \]
 
 ::: pf-proof
 
-The field $\mathbb Q(\sqrt2)$ has degree $2$ over $\mathbb Q$. Also
+The field $\QQ(\sqrt2)$ has degree $2$ over $\QQ$. Also
 \[
-\sqrt3\notin\mathbb Q(\sqrt2).
+\sqrt3\notin\QQ(\sqrt2).
 \]
-Indeed, if $\sqrt3=a+b\sqrt2$ with $a,b\in\mathbb Q$, then squaring gives
+Indeed, if $\sqrt3=a+b\sqrt2$ with $a,b\in\QQ$, then squaring gives
 \[
 3=a^2+2b^2+2ab\sqrt2.
 \]
-Thus $ab=0$. If $b=0$, then $a^2=3$, impossible for $a\in\mathbb Q$; if $a=0$, then $2b^2=3$, also impossible in $\mathbb Q$. Hence
+Thus $ab=0$. If $b=0$, then $a^2=3$, impossible for $a\in\QQ$; if $a=0$, then $2b^2=3$, also impossible in $\QQ$. Hence
 \[
-[K:\mathbb Q]=4.
+[K:\QQ]=4.
 \]
 
-By step [](#s3){.pf-ref}, independently changing the signs of $\sqrt2$ and $\sqrt3$ defines four $\mathbb Q$-automorphisms of $K$. They exhaust the Galois group because its order is $[K:\mathbb Q]=4$. Each nonidentity sign change has order $2$, so
+By step [](#s3){.pf-ref}, independently changing the signs of $\sqrt2$ and $\sqrt3$ defines four $\QQ$-automorphisms of $K$. They exhaust the Galois group because its order is $[K:\QQ]=4$. Each nonidentity sign change has order $2$, so
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2.
+\operatorname{Gal}(K/\QQ)\cong C_2\times C_2.
 \]
 
 :::
@@ -169,22 +169,22 @@ By step [](#s3){.pf-ref}, independently changing the signs of $\sqrt2$ and $\sqr
 
 The three proper intermediate fields are
 \[
-\mathbb Q(\sqrt2),
+\QQ(\sqrt2),
 \qquad
-\mathbb Q(\sqrt3),
+\QQ(\sqrt3),
 \qquad
-\mathbb Q(\sqrt6).
+\QQ(\sqrt6).
 \]
 
 ::: pf-proof
 
-The Klein four group has exactly three nontrivial proper subgroups, each of order $2$. By the Galois correspondence, the proper nontrivial intermediate fields of $K/\mathbb Q$ are exactly their fixed fields.
+The Klein four group has exactly three nontrivial proper subgroups, each of order $2$. By the Galois correspondence, the proper nontrivial intermediate fields of $K/\QQ$ are exactly their fixed fields.
 
-The automorphism changing the sign of $\sqrt3$ and fixing $\sqrt2$ has fixed field $\mathbb Q(\sqrt2)$. The automorphism changing the sign of $\sqrt2$ and fixing $\sqrt3$ has fixed field $\mathbb Q(\sqrt3)$. Finally, the automorphism changing both signs fixes
+The automorphism changing the sign of $\sqrt3$ and fixing $\sqrt2$ has fixed field $\QQ(\sqrt2)$. The automorphism changing the sign of $\sqrt2$ and fixing $\sqrt3$ has fixed field $\QQ(\sqrt3)$. Finally, the automorphism changing both signs fixes
 \[
 \sqrt6=\sqrt2\sqrt3,
 \]
-so its fixed field is $\mathbb Q(\sqrt6)$. Each of these fields has degree $2$ over $\mathbb Q$, as required for the fixed field of an order-$2$ subgroup. Thus there are no other proper intermediate fields.
+so its fixed field is $\QQ(\sqrt6)$. Each of these fields has degree $2$ over $\QQ$, as required for the fixed field of an order-$2$ subgroup. Thus there are no other proper intermediate fields.
 
 :::
 

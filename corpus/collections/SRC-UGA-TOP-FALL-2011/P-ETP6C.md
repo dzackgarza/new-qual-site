@@ -63,13 +63,13 @@ The relative cellular chain groups are
 C_k(S^n,E)
 \cong
 \begin{cases}
-\mathbb Z^2,&k=n,\\
+\ZZ^2,&k=n,\\
 0,&k\ne n.
 \end{cases}
 \]
 
 ::: pf-proof
-For a CW pair \((X,A)\), the relative cellular chain group \(C_k(X,A)\) is free abelian on the \(k\)-cells of \(X\) that are not cells of \(A\). By step [](#cw-structure){.pf-ref}, exactly two cells of \(S^n\) lie outside the subcomplex \(E\), and both have dimension \(n\). They are \(e_+^n\) and \(e_-^n\). Therefore the relative cellular chain group is \(\mathbb Z^2\) in degree \(n\) and zero in every other degree.
+For a CW pair \((X,A)\), the relative cellular chain group \(C_k(X,A)\) is free abelian on the \(k\)-cells of \(X\) that are not cells of \(A\). By step [](#cw-structure){.pf-ref}, exactly two cells of \(S^n\) lie outside the subcomplex \(E\), and both have dimension \(n\). They are \(e_+^n\) and \(e_-^n\). Therefore the relative cellular chain group is \(\ZZ^2\) in degree \(n\) and zero in every other degree.
 :::
 
 :::
@@ -91,17 +91,17 @@ so \(\partial_n=0\). All other differentials have zero domain.
 Hence, for every \(n\ge1\),
 \[
 \boxed{
-H_k(S^n,E;\mathbb Z)
+H_k(S^n,E;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z\oplus\mathbb Z,&k=n,\\
+\ZZ\oplus\ZZ,&k=n,\\
 0,&k\ne n.
 \end{cases}}
 \]
 
 ::: pf-proof
 Relative cellular homology computes the singular relative homology of a CW pair.
-By step [](#relative-chain-groups){.pf-ref} and step [](#differentials-vanish){.pf-ref}, its chain complex has \(\mathbb Z^2\) in degree \(n\), zero elsewhere, and zero differentials.
+By step [](#relative-chain-groups){.pf-ref} and step [](#differentials-vanish){.pf-ref}, its chain complex has \(\ZZ^2\) in degree \(n\), zero elsewhere, and zero differentials.
 Its homology is therefore exactly the displayed group.
 :::
 

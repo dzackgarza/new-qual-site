@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Prove or find a counterexample to each statement:
 
-(a) $L^2(\mathbb R)\subset L^1(\mathbb R)$;
+(a) $L^2(\RR)\subset L^1(\RR)$;
 
-(b) $L^1(\mathbb R)\subset L^2(\mathbb R)$;
+(b) $L^1(\RR)\subset L^2(\RR)$;
 
 (c) $L^2([0,1])\subset L^1([0,1])$;
 
@@ -54,11 +54,11 @@ Then
 \[
 \int_1^\infty |f(x)|^2\,dx=\int_1^\infty x^{-2}\,dx<\infty,
 \]
-so $f\in L^2(\mathbb R)$, whereas
+so $f\in L^2(\RR)$, whereas
 \[
 \int_1^\infty |f(x)|\,dx=\int_1^\infty x^{-1}\,dx=\infty.
 \]
-Thus $f\notin L^1(\mathbb R)$.
+Thus $f\notin L^1(\RR)$.
 
 :::
 
@@ -78,11 +78,11 @@ Then
 \[
 \int_0^1 |g(x)|\,dx=\int_0^1x^{-2/3}\,dx<\infty,
 \]
-so $g\in L^1(\mathbb R)$, but
+so $g\in L^1(\RR)$, but
 \[
 \int_0^1 |g(x)|^2\,dx=\int_0^1x^{-4/3}\,dx=\infty.
 \]
-Hence $g\notin L^2(\mathbb R)$.
+Hence $g\notin L^2(\RR)$.
 
 :::
 

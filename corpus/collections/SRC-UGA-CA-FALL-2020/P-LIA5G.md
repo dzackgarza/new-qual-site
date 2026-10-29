@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $U$ is a bounded, open and simply connected domain in $\mathbb{C}$ and that $f(z)$ is a complex-valued non-constant continuous function on $\bar{U}$ whose restriction to $U$ is holomorphic.
+Suppose that $U$ is a bounded, open and simply connected domain in $\CC$ and that $f(z)$ is a complex-valued non-constant continuous function on $\bar{U}$ whose restriction to $U$ is holomorphic.
 
 - Prove the maximum modulus principle by showing that if $z_{0} \in U$, then
 

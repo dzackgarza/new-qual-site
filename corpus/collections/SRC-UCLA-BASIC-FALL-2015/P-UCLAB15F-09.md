@@ -26,7 +26,7 @@ Prove that
 
 ::: {.solution}
 
-View $A$ as a complex matrix acting on $\mathbb C^n$.
+View $A$ as a complex matrix acting on $\CC^n$.
 
 ::: pf
 
@@ -43,7 +43,7 @@ Av=\lambda v,
 \qquad
 v\ne0,
 \]
-with $v\in\mathbb C^n$.
+with $v\in\CC^n$.
 Using the standard Hermitian inner product,
 \[
 v^*Av
@@ -97,7 +97,7 @@ The nonzero eigenvalues occur in conjugate pairs
 \[
 i\mu,\ -i\mu
 \]
-with $\mu\in\mathbb R\setminus\{0\}$.
+with $\mu\in\RR\setminus\{0\}$.
 
 
 ::: pf-proof
@@ -108,7 +108,7 @@ By step [](#s1-1){.pf-ref}, every nonzero eigenvalue has the form
 \[
 i\mu
 \]
-with $\mu\in\mathbb R\setminus\{0\}$, and its conjugate is
+with $\mu\in\RR\setminus\{0\}$, and its conjugate is
 \[
 -i\mu.
 \]

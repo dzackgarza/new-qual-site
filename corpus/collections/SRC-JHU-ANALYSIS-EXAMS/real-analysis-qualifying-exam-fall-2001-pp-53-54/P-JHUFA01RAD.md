@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1([0,1])$. For $k\in\mathbb N$, define the step function $f_k$ by
+Let $f\in L^1([0,1])$. For $k\in\NN$, define the step function $f_k$ by
 \[
 f_k(x)=k\int_{j/k}^{(j+1)/k}f(t)\,dt,
 \qquad \frac jk\le x<\frac{j+1}{k}.

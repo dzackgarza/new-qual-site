@@ -44,7 +44,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\gamma$ be a smooth curve joining two distinct points $a, b \in \mathbb{C}$, and let $g$ be continuous on the range of $\gamma$. Prove that the function defined by the formula
+Let $\gamma$ be a smooth curve joining two distinct points $a, b \in \CC$, and let $g$ be continuous on the range of $\gamma$. Prove that the function defined by the formula
 $$
 f(z) = \int_\gamma \frac{g(w)\,dw}{w - z}
 $$

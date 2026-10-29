@@ -25,7 +25,7 @@ Calculate the integral homology of $X$.
 Pairing the three opposite rectangular sides of the prism by translations turns each horizontal hexagonal cross-section into a torus $T^2$.
 
 ::: pf-proof
-A regular hexagon with opposite sides identified by translations is a fundamental polygon for the hexagonal lattice in $\mathbb R^2$, hence its quotient is $\mathbb R^2/\Lambda\cong T^2$. Doing this continuously through the height of the prism gives $T^2\times I$.
+A regular hexagon with opposite sides identified by translations is a fundamental polygon for the hexagonal lattice in $\RR^2$, hence its quotient is $\RR^2/\Lambda\cong T^2$. Doing this continuously through the height of the prism gives $T^2\times I$.
 :::
 
 :::
@@ -46,7 +46,7 @@ $$
 :::
 
 ::: pf-step
-In the lattice basis $u,v$ making an angle of $60^\circ$, the induced map on $H_1(T^2)\cong\mathbb Z^2$ is
+In the lattice basis $u,v$ making an angle of $60^\circ$, the induced map on $H_1(T^2)\cong\ZZ^2$ is
 $$
 A=\begin{pmatrix}0&-1\\1&1\end{pmatrix}.
 $$
@@ -58,7 +58,7 @@ A $60^\circ$ rotation sends $u$ to $v$ and sends $v$ to $v-u$. These are the two
 :::
 
 ::: {.pf-step #a-minus-i-iso}
-The endomorphism $A-I$ of $\mathbb Z^2$ is an isomorphism.
+The endomorphism $A-I$ of $\ZZ^2$ is an isomorphism.
 
 ::: pf-proof
 $$
@@ -75,7 +75,7 @@ Hence it is unimodular.
 On $H_0(T^2)$ and $H_2(T^2)$, the induced map $R_*$ is the identity.
 
 ::: pf-proof
-The torus is connected, so every self-map acts as the identity on $H_0$. The rotation preserves orientation and has determinant $1$ on $H_1$, so it acts by $+1$ on the top homology $H_2(T^2)\cong\mathbb Z$.
+The torus is connected, so every self-map acts as the identity on $H_0$. The rotation preserves orientation and has determinant $1$ on $H_1$, so it acts by $+1$ on the top homology $H_2(T^2)\cong\ZZ$.
 :::
 
 :::
@@ -83,9 +83,9 @@ The torus is connected, so every self-map acts as the identity on $H_0$. The rot
 ::: pf-step
 The Wang exact sequence for the mapping torus gives
 $$
-H_i(X;\mathbb Z)\cong
+H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,1,2,3,\\
+\ZZ,&i=0,1,2,3,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -96,7 +96,7 @@ $$
 \cdots\to H_i(T^2)\xrightarrow{I-R_*}H_i(T^2)\to H_i(X)
 \to H_{i-1}(T^2)\xrightarrow{I-R_*}H_{i-1}(T^2)\to\cdots.
 $$
-In degree $1$, $I-A$ is an isomorphism by step [](#a-minus-i-iso){.pf-ref}, while in degrees $0$ and $2$ the map $I-R_*$ is zero by step [](#r-star-identity-h0-h2){.pf-ref}. Exactness then gives $H_3(X)\cong H_2(T^2)\cong\mathbb Z$, $H_2(X)\cong H_2(T^2)\cong\mathbb Z$, $H_1(X)\cong H_0(T^2)\cong\mathbb Z$, and connectedness gives $H_0(X)\cong\mathbb Z$.
+In degree $1$, $I-A$ is an isomorphism by step [](#a-minus-i-iso){.pf-ref}, while in degrees $0$ and $2$ the map $I-R_*$ is zero by step [](#r-star-identity-h0-h2){.pf-ref}. Exactness then gives $H_3(X)\cong H_2(T^2)\cong\ZZ$, $H_2(X)\cong H_2(T^2)\cong\ZZ$, $H_1(X)\cong H_0(T^2)\cong\ZZ$, and connectedness gives $H_0(X)\cong\ZZ$.
 :::
 
 :::

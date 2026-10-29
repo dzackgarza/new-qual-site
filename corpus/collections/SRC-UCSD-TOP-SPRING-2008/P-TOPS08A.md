@@ -79,11 +79,11 @@ The substitutions are inverse on generators, so the presentations define isomorp
 
 ::: pf-step
 
-In particular, the group is not $\mathbb Z/2*\mathbb Z/2=D_\infty$.
+In particular, the group is not $\ZZ/2*\ZZ/2=D_\infty$.
 
 ::: pf-proof
 
-The Klein-bottle presentation has unique normal forms $a^m b^n$ with $m,n\in\mathbb Z$: using $ba=a^{-1}b$, every word can be put in this form, and the standard deck-transformation model on $\mathbb R^2$ shows distinct pairs give distinct elements. If $(a^m b^n)^k=1$ for $k>0$, projection to the exponent of $b$ gives $kn=0$, hence $n=0$, and then $a^{km}=1$ forces $m=0$. Thus the group is torsion-free, whereas $D_\infty$ contains elements of order $2$.
+The Klein-bottle presentation has unique normal forms $a^m b^n$ with $m,n\in\ZZ$: using $ba=a^{-1}b$, every word can be put in this form, and the standard deck-transformation model on $\RR^2$ shows distinct pairs give distinct elements. If $(a^m b^n)^k=1$ for $k>0$, projection to the exponent of $b$ gives $kn=0$, hence $n=0$, and then $a^{km}=1$ forces $m=0$. Thus the group is torsion-free, whereas $D_\infty$ contains elements of order $2$.
 
 :::
 

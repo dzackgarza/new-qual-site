@@ -36,11 +36,11 @@ The solid lens is a $3$-ball whose boundary is decomposed into the top and botto
 ::: {.pf-step #cellular-chain-complex}
 The standard CW structure on $L(3,1)$ has one cell in each dimension $0,1,2,3$, with cellular chain complex
 $$
-0\to\mathbb Z\xrightarrow{0}\mathbb Z\xrightarrow{\times3}\mathbb Z\xrightarrow{0}\mathbb Z\to0.
+0\to\ZZ\xrightarrow{0}\ZZ\xrightarrow{\times3}\ZZ\xrightarrow{0}\ZZ\to0.
 $$
 
 ::: pf-proof
-The $1$-skeleton is a circle representing the generator of $\pi_1(L(3,1))\cong\mathbb Z/3$. The $2$-cell attaches by the degree-$3$ map on that circle, so $\partial_2$ is multiplication by $3$. The top cell supplies the orientation class of the closed orientable $3$-manifold, hence $\partial_3=0$.
+The $1$-skeleton is a circle representing the generator of $\pi_1(L(3,1))\cong\ZZ/3$. The $2$-cell attaches by the degree-$3$ map on that circle, so $\partial_2$ is multiplication by $3$. The top cell supplies the orientation class of the closed orientable $3$-manifold, hence $\partial_3=0$.
 :::
 
 :::
@@ -48,10 +48,10 @@ The $1$-skeleton is a circle representing the generator of $\pi_1(L(3,1))\cong\m
 ::: pf-step
 Therefore
 $$
-\boxed{H_k(X;\mathbb Z)\cong
+\boxed{H_k(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,3,\\
-\mathbb Z/3,&k=1,\\
+\ZZ,&k=0,3,\\
+\ZZ/3,&k=1,\\
 0,&k=2\text{ or }k>3.
 \end{cases}}
 $$

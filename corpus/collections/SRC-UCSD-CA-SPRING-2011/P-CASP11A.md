@@ -19,20 +19,20 @@ audit:
 ::: {.problem}
 For each of the following, determine if the statement is always true or if it is false.
 
-(a) Let $G = \{z \in \mathbb{C} : \operatorname{Re} z \notin \mathbb{Z}\}$.
+(a) Let $G = \{z \in \CC : \operatorname{Re} z \notin \ZZ\}$.
 Suppose $f \in H(G)$ such that $|f(z)| \leq 1$ for all $z \in G$.
 Then $f$ is constant.
 
 (b) There exists $g \in H(B(0; 2))$ with $|g(z)| < 1$ for all $|z| < 2$, with $z + g(z) \neq 0$ for all $z \in \mathbb{D}$.
 
-(c) There is an analytic function $f$ on $\mathbb{D} \setminus \{0\}$ with an essential singularity at $z = 0$ such that $f$ can be extended as a continuous function from the whole disk $\mathbb{D}$ to the extended plane $\mathbb{C}_\infty$.
+(c) There is an analytic function $f$ on $\mathbb{D} \setminus \{0\}$ with an essential singularity at $z = 0$ such that $f$ can be extended as a continuous function from the whole disk $\mathbb{D}$ to the extended plane $\CC_\infty$.
 
 (d) Suppose that $f$ is a continuous function on $\mathbb{D} \cap \{z : \operatorname{Im} z \leq 0\}$ and analytic in $\mathbb{D} \cap \{z : \operatorname{Im} z < 0\}$.
 If $\operatorname{Re} f(x) = 0$ for all $x$ with $-1 < x < 1$, then $f$ admits an analytic extension to $\mathbb{D}$.
 
-(e) If $G \subset \mathbb{C}$ is a region and $G \cap B(0; r) = \emptyset$ for some $r > 0$, there is a 1-1 analytic function $f$ on $G$ such that $f(G) \subset \mathbb{D}$.
+(e) If $G \subset \CC$ is a region and $G \cap B(0; r) = \emptyset$ for some $r > 0$, there is a 1-1 analytic function $f$ on $G$ such that $f(G) \subset \mathbb{D}$.
 
-(f) If $f: \mathbb{C} \to \mathbb{C}$ is analytic and $\operatorname{Re} f(z) \geq c$ for some real constant $c$, then $f$ is constant.
+(f) If $f: \CC \to \CC$ is analytic and $\operatorname{Re} f(z) \geq c$ for some real constant $c$, then $f$ is constant.
 
 (g) There is a polynomial $p(z)$ such that $|p(z) - 1/z| < 1$ for all $z$ in the annulus $1/2 < |z| < 3/2$.
 :::
@@ -43,10 +43,10 @@ If $\operatorname{Re} f(x) = 0$ for all $x$ with $-1 < x < 1$, then $f$ admits a
 ::: pf
 
 ::: {.pf-step #p1-s1}
-$G = \bigsqcup_{k \in \mathbb{Z}} \{k < \operatorname{Re} z < k+1\}$ is a disjoint union of vertical strips.
+$G = \bigsqcup_{k \in \ZZ} \{k < \operatorname{Re} z < k+1\}$ is a disjoint union of vertical strips.
 
 ::: pf-proof
-$\operatorname{Re} z \notin \mathbb{Z}$ means $z$ lies strictly between consecutive integers.
+$\operatorname{Re} z \notin \ZZ$ means $z$ lies strictly between consecutive integers.
 :::
 
 :::
@@ -109,7 +109,7 @@ step [](#p2-s3){.pf-ref}.
 ::: pf
 
 ::: {.pf-step #p3-s1}
-If $f$ has an essential singularity at $0$, then by Casorati–Weierstrass (or Picard) the image of any punctured neighborhood of $0$ is dense in $\mathbb{C}$.
+If $f$ has an essential singularity at $0$, then by Casorati–Weierstrass (or Picard) the image of any punctured neighborhood of $0$ is dense in $\CC$.
 
 ::: pf-proof
 essential singularity.
@@ -118,7 +118,7 @@ essential singularity.
 :::
 
 ::: {.pf-step #p3-s2}
-A continuous extension $F : \mathbb{D} \to \mathbb{C}_\infty$ would satisfy $F(0) = \lim_{z \to 0} f(z)$, so $f(z) \to F(0)$ as $z \to 0$.
+A continuous extension $F : \mathbb{D} \to \CC_\infty$ would satisfy $F(0) = \lim_{z \to 0} f(z)$, so $f(z) \to F(0)$ as $z \to 0$.
 
 ::: pf-proof
 continuity at $0$.
@@ -142,7 +142,7 @@ step [](#p3-s1){.pf-ref} and step [](#p3-s2){.pf-ref}.
 ::: pf
 
 ::: pf-step
-The condition $\operatorname{Re} f = 0$ on $(-1,1)$ means $f$ maps the interval into $i\mathbb{R}$.
+The condition $\operatorname{Re} f = 0$ on $(-1,1)$ means $f$ maps the interval into $i\RR$.
 
 ::: pf-proof
 hypothesis.
@@ -154,7 +154,7 @@ hypothesis.
 Schwarz reflection for the lower half-disk: define $F(z) = f(z)$ for $\operatorname{Im} z \le 0$ and $F(z) = -\overline{f(\bar z)}$ for $\operatorname{Im} z > 0$.
 
 ::: pf-proof
-reflection principle (the map $w \mapsto -\bar w$ reflects across $i\mathbb{R}$).
+reflection principle (the map $w \mapsto -\bar w$ reflects across $i\RR$).
 :::
 
 :::
@@ -193,7 +193,7 @@ candidate.
 :::
 
 ::: pf-step
-$f$ is analytic and $1$-$1$ on $G$ (it is injective on $\mathbb{C} \setminus \{0\}$).
+$f$ is analytic and $1$-$1$ on $G$ (it is injective on $\CC \setminus \{0\}$).
 
 ::: pf-proof
 $f(z_1) = f(z_2) \Rightarrow z_1 = z_2$.

@@ -57,7 +57,7 @@ An explicit odd holomorphic square root exists on the whole disk.
 
 Since $h'/h$ is holomorphic on the simply connected disk,
 it has a holomorphic primitive $L_0$ with $L_0(0)=0$
-[@SS03]. Choose $c\in\mathbb C$ with $e^c=h(0)$ and set
+[@SS03]. Choose $c\in\CC$ with $e^c=h(0)$ and set
 $L=L_0+c$. Differentiation gives
 $$
 (he^{-L})'=e^{-L}(h'-hL')=0.

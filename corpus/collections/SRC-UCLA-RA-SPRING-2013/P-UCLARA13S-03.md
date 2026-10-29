@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-For continuous $f:\mathbb R^2\to\mathbb R$, define
+For continuous $f:\RR^2\to\RR$, define
 \[
 A_r f(x,y)=\frac1{2\pi}\int_{-\pi}^{\pi} f(x+r\cos\theta,y+r\sin\theta)\,d\theta,
 \qquad
@@ -25,10 +25,10 @@ Mf(x,y)=\sup_{0<r<1} A_r f(x,y).
 \]
 By a theorem of Bourgain, there is an absolute constant $C$ such that
 \[
-\|Mf\|_{L^3(\mathbb R^2)}\le C\|f\|_{L^3(\mathbb R^2)}
+\|Mf\|_{L^3(\RR^2)}\le C\|f\|_{L^3(\RR^2)}
 \]
-for all $f\in C_c(\mathbb R^2)$.
-Use this to show that if $K\subset\mathbb R^2$ is compact, then
+for all $f\in C_c(\RR^2)$.
+Use this to show that if $K\subset\RR^2$ is compact, then
 \[
 A_r\chi_K(x,y)\longrightarrow 1\qquad(r\to0)
 \]
@@ -41,9 +41,9 @@ for almost every $(x,y)\in K$.
 
 ::: {.pf-step #s1}
 
-Let $S\subset\mathbb R^2$ be bounded and open. Then for every $t>0$,
+Let $S\subset\RR^2$ be bounded and open. Then for every $t>0$,
 \[
-m^*\bigl(\{x\in\mathbb R^2:M\chi_S(x)>t\}\bigr)
+m^*\bigl(\{x\in\RR^2:M\chi_S(x)>t\}\bigr)
 \le
 C_0 t^{-3}m(S),
 \]
@@ -56,7 +56,7 @@ where $C_0$ depends only on the constant in Bourgain's estimate.
 
 There exists an increasing sequence
 \[
-0\le f_k\in C_c(\mathbb R^2),
+0\le f_k\in C_c(\RR^2),
 \qquad
 f_k\uparrow\chi_S
 \]
@@ -103,7 +103,7 @@ Because $0\le f_k\le\chi_S$,
 \[
 \|f_k\|_3^3
 =
-\int_{\mathbb R^2}|f_k|^3
+\int_{\RR^2}|f_k|^3
 \le
 m(S).
 \]
@@ -119,7 +119,7 @@ One has
 \[
 Mf_k(x)\uparrow M\chi_S(x)
 \qquad
-(x\in\mathbb R^2).
+(x\in\RR^2).
 \]
 
 

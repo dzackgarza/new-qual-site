@@ -36,13 +36,13 @@ audit:
 
 Let
 \[
-R=\mathbb Z[\sqrt{-5}]=\{a+b\sqrt{-5}:a,b\in\mathbb Z\}.
+R=\ZZ[\sqrt{-5}]=\{a+b\sqrt{-5}:a,b\in\ZZ\}.
 \]
 Then \(R\) is an integral domain.
 
 ::: pf-proof
 
-It is a subring of the field \(\mathbb Q(\sqrt{-5})\).
+It is a subring of the field \(\QQ(\sqrt{-5})\).
 
 :::
 
@@ -71,7 +71,7 @@ There are no elements of norm \(2\) or \(3\) in \(R\).
 
 ::: pf-proof
 
-If \(a^2+5b^2\in\{2,3\}\), then \(b=0\), so \(a^2\in\{2,3\}\), impossible in \(\mathbb Z\).
+If \(a^2+5b^2\in\{2,3\}\), then \(b=0\), so \(a^2\in\{2,3\}\), impossible in \(\ZZ\).
 
 :::
 
@@ -113,18 +113,18 @@ Hence neither \(2\) nor \(3\) is associate to either \(1+\sqrt{-5}\) or \(1-\sqr
 
 ::: {.pf-step #s6}
 
-For part (b), take the UFD \(A=\mathbb Z[x]\) and the ideal
+For part (b), take the UFD \(A=\ZZ[x]\) and the ideal
 \[
 \mathfrak p=(x^2+5).
 \]
 Then
 \[
-A/\mathfrak p\cong \mathbb Z[\sqrt{-5}]=R.
+A/\mathfrak p\cong \ZZ[\sqrt{-5}]=R.
 \]
 
 ::: pf-proof
 
-The evaluation homomorphism \(\mathbb Z[x]\to R\) defined by \(x\mapsto\sqrt{-5}\) is surjective.
+The evaluation homomorphism \(\ZZ[x]\to R\) defined by \(x\mapsto\sqrt{-5}\) is surjective.
 Division by the monic polynomial \(x^2+5\) shows that every polynomial has a unique remainder \(a+bx\); such a remainder maps to zero only when \(a+b\sqrt{-5}=0\), hence \(a=b=0\). Therefore the kernel is exactly \((x^2+5)\), giving the stated isomorphism.
 
 :::
@@ -138,7 +138,7 @@ The ideal \(\mathfrak p\) is prime, but \(A/\mathfrak p\) is not a UFD.
 ::: pf-proof
 
 By step [](#s6){.pf-ref}, the quotient is isomorphic to \(R\), which is an integral domain by step [](#s1){.pf-ref}; hence \(\mathfrak p\) is prime.
-The quotient is not a UFD by step [](#s5){.pf-ref}. Since \(\mathbb Z[x]\) is a UFD by Gauss's lemma, this answers part (b).
+The quotient is not a UFD by step [](#s5){.pf-ref}. Since \(\ZZ[x]\) is a UFD by Gauss's lemma, this answers part (b).
 
 :::
 

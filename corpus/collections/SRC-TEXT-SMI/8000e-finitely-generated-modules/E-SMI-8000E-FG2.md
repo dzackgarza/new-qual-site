@@ -62,20 +62,20 @@ The condition that $6G=0$ implies in particular that every element of
 $G_{(2)}$ has order dividing $2$: multiplication by $3$ is an automorphism of
 the $2$-primary group, so $6x=0$ forces $2x=0$. Hence
 $$
-G_{(2)}\cong(\mathbb Z/2)^3.
+G_{(2)}\cong(\ZZ/2)^3.
 $$
 Similarly, multiplication by $2$ is an automorphism of $G_{(3)}$, so
 $6x=0$ forces $3x=0$, and therefore
 $$
-G_{(3)}\cong(\mathbb Z/3)^4.
+G_{(3)}\cong(\ZZ/3)^4.
 $$
 Thus the unique isomorphism class is
 $$
-\boxed{G\cong(\mathbb Z/2)^3\oplus(\mathbb Z/3)^4.}
+\boxed{G\cong(\ZZ/2)^3\oplus(\ZZ/3)^4.}
 $$
 Equivalently,
 $$
-G\cong(\mathbb Z/6)^3\oplus\mathbb Z/3.
+G\cong(\ZZ/6)^3\oplus\ZZ/3.
 $$
 
 :::

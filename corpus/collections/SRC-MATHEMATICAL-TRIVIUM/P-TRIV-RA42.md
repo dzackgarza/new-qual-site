@@ -28,7 +28,7 @@ Consider the vector field $\vec{A} = \vec{\nabla}\frac{1}{r}$, where $r = \sqrt{
 :::
 
 ::: {.remark}
-The field is classically defined on $\mathbb R^3\setminus\{0\}$. All
+The field is classically defined on $\RR^3\setminus\{0\}$. All
 differential identities below are classical identities on that domain. If one
 extends the calculation distributionally across the origin, then
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-For a radial scalar function $f(r)$ in $\mathbb R^3$,
+For a radial scalar function $f(r)$ in $\RR^3$,
 $$
 \Delta f
 =
@@ -166,7 +166,7 @@ Since
 $$
 \vec A=\nabla u
 $$
-and $u=1/r$ is smooth on $\mathbb R^3\setminus\{0\}$,
+and $u=1/r$ is smooth on $\RR^3\setminus\{0\}$,
 $$
 \nabla\times\nabla u=0.
 $$
@@ -255,7 +255,7 @@ object.
 ::: {.pf-step #s1-10}
 
 In particular, their values remain zero in every regular coordinate
-chart on $\mathbb R^3\setminus\{0\}$.
+chart on $\RR^3\setminus\{0\}$.
 
 
 ::: pf-proof

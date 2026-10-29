@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Let $f$ be an entire function.
-Suppose that for each $z_0 \in \mathbb{C}$, the power series expansion
+Suppose that for each $z_0 \in \CC$, the power series expansion
 
 $$f(z) = \sum_{n=0}^\infty c_n(z - z_0)^n$$
 
@@ -46,16 +46,16 @@ One fixed derivative of $f$ vanishes identically.
 
 For each integer $n\geq0$, set
 $$
-Z_n=\{z\in\mathbb C:f^{(n)}(z)=0\},
+Z_n=\{z\in\CC:f^{(n)}(z)=0\},
 \qquad f^{(0)}=f.
 $$
 The Taylor coefficient of order $n$ at $z_0$ is
 $f^{(n)}(z_0)/n!$ [@SS03]. Thus the hypothesis says
-$\mathbb C=\bigcup_{n\geq0}Z_n$. Each $Z_n$ is closed,
+$\CC=\bigcup_{n\geq0}Z_n$. Each $Z_n$ is closed,
 since the derivative is continuous.
 
 By the Baire category theorem, the nonempty complete
-metric space $\mathbb C$ cannot be a countable union
+metric space $\CC$ cannot be a countable union
 of closed sets with empty interior [@Fol13]. Hence
 some $Z_m$ has nonempty interior. The entire function
 $f^{(m)}$ vanishes on this open set. The identity theorem
@@ -75,7 +75,7 @@ If $m=0$, step [](#s1){.pf-ref} already says $f=0$, a polynomial.
 If $m\geq1$, every derivative of order $n\geq m$
 vanishes identically by differentiating $f^{(m)}=0$.
 The Taylor series at zero, which represents the entire
-function on all of $\mathbb C$, is therefore
+function on all of $\CC$, is therefore
 $$
 f(z)=\sum_{n=0}^{m-1}\frac{f^{(n)}(0)}{n!}z^n.
 $$

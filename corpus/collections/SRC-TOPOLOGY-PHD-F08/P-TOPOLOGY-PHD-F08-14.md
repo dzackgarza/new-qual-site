@@ -63,9 +63,9 @@ S^{n-1}\setminus\{p\}.
 \]
 Stereographic projection from $p$ gives a homeomorphism
 \[
-\sigma:S^{n-1}\setminus\{p\}\longrightarrow\mathbb R^{n-1}.
+\sigma:S^{n-1}\setminus\{p\}\longrightarrow\RR^{n-1}.
 \]
-Choose a point $x_0\in\mathbb R^{n-1}$ and define
+Choose a point $x_0\in\RR^{n-1}$ and define
 \[
 H:X\times I\to S^{n-1}\setminus\{p\}
 \]

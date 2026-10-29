@@ -26,29 +26,29 @@ audit:
 ---
 
 ::: {.problem}
-Describe the ring $\operatorname{End}_{\mathbb Z}(\mathbb Z)$.
+Describe the ring $\operatorname{End}_{\ZZ}(\ZZ)$.
 :::
 
 ::: {.solution}
 There is a ring isomorphism
 \[
-\operatorname{End}_{\mathbb Z}(\mathbb Z)\cong\mathbb Z.
+\operatorname{End}_{\ZZ}(\ZZ)\cong\ZZ.
 \]
 
 ::: pf
 
 ::: {.pf-step #endomorphism-is-multiplication}
-Every $\mathbb Z$-module endomorphism of $\mathbb Z$ is multiplication
+Every $\ZZ$-module endomorphism of $\ZZ$ is multiplication
 by a unique integer.
 
 ::: pf-proof
-Let $f:\mathbb Z\to\mathbb Z$ be $\mathbb Z$-linear and set $n=f(1)$. For every
-$m\in\mathbb Z$,
+Let $f:\ZZ\to\ZZ$ be $\ZZ$-linear and set $n=f(1)$. For every
+$m\in\ZZ$,
 \[
 f(m)=f(m\cdot1)=m f(1)=mn.
 \]
 Thus $f$ is multiplication by $n$, and $n$ is uniquely determined by $f(1)$.
-Conversely, multiplication by any $n\in\mathbb Z$ is a $\mathbb Z$-module
+Conversely, multiplication by any $n\in\ZZ$ is a $\ZZ$-module
 endomorphism.
 :::
 
@@ -57,7 +57,7 @@ endomorphism.
 ::: pf-step
 The map
 \[
-\Phi:\operatorname{End}_{\mathbb Z}(\mathbb Z)\to\mathbb Z,
+\Phi:\operatorname{End}_{\ZZ}(\ZZ)\to\ZZ,
 \qquad
 f\mapsto f(1),
 \]
@@ -73,7 +73,7 @@ while
 (f\circ g)(1)=f(n)=nm.
 \]
 Since integer multiplication is commutative, composition corresponds exactly
-to multiplication in $\mathbb Z$. The identity endomorphism maps to $1$.
+to multiplication in $\ZZ$. The identity endomorphism maps to $1$.
 :::
 
 :::

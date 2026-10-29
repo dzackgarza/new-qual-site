@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x)$ be a polynomial with real coefficients, and let $a\in\mathbb R$ satisfy $f(a)\ne0$. Prove that there is a real polynomial $g(x)$ such that, for
+Let $f(x)$ be a polynomial with real coefficients, and let $a\in\RR$ satisfy $f(a)\ne0$. Prove that there is a real polynomial $g(x)$ such that, for
 \[
 p(x)=f(x)g(x),
 \]

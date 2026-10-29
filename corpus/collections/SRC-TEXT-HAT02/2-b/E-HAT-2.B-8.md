@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb{R}^{2n+1}$ is not a division algebra over $\mathbb{R}$ if $n > 0$ by considering how the determinant of the linear map $x \mapsto ax$ given by the multiplication in a division algebra structure would vary as $a$ moves along a path in $\mathbb{R}^{2n+1} - \{0\}$ joining two antipodal points.
+Show that $\RR^{2n+1}$ is not a division algebra over $\RR$ if $n > 0$ by considering how the determinant of the linear map $x \mapsto ax$ given by the multiplication in a division algebra structure would vary as $a$ moves along a path in $\RR^{2n+1} - \{0\}$ joining two antipodal points.
 :::
 
 ::: {.solution}
-Assume for contradiction that $A=\mathbb R^{2n+1}$, with $n>0$, has the structure of a real division algebra. For $a\in A$ let
+Assume for contradiction that $A=\RR^{2n+1}$, with $n>0$, has the structure of a real division algebra. For $a\in A$ let
 \[
 L_a:A\to A,\qquad L_a(x)=ax.
 \]
@@ -61,7 +61,7 @@ with $\gamma(0)=a$ and $\gamma(1)=-a$.
 
 ::: pf-proof
 
-The punctured Euclidean space $\mathbb R^{2n+1}-\{0\}$ is path-connected when $2n+1>1$; for instance join antipodal points by a semicircle on the sphere of radius $\|a\|$.
+The punctured Euclidean space $\RR^{2n+1}-\{0\}$ is path-connected when $2n+1>1$; for instance join antipodal points by a semicircle on the sphere of radius $\|a\|$.
 
 :::
 
@@ -106,6 +106,6 @@ A continuous nonzero real-valued function on the connected interval $[0,1]$ has 
 
 Hence
 \[
-\boxed{\mathbb R^{2n+1}\text{ admits no real division-algebra structure for }n>0.}
+\boxed{\RR^{2n+1}\text{ admits no real division-algebra structure for }n>0.}
 \]
 :::

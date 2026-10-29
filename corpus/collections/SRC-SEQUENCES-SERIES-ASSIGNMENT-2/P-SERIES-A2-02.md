@@ -14,7 +14,7 @@ review: draft
 ::: {.problem}
 Let $\{a_n\}$ be a sequence of real numbers, and let
 \[
-S=\{x\in\mathbb R:\text{there is a subsequence }a_{n_k}\to x\}.
+S=\{x\in\RR:\text{there is a subsequence }a_{n_k}\to x\}.
 \]
 
 (a) Show that $L=\limsup a_n$ if and only if $L=\sup S$.
@@ -49,7 +49,7 @@ Assume
 L
 \coloneqq
 \limsup_{n\to\infty}a_n
-\in\mathbb R.
+\in\RR.
 \]
 Then there exists a subsequence
 \[
@@ -184,7 +184,7 @@ x\le L.
 
 If
 \[
-L=\limsup a_n\in\mathbb R,
+L=\limsup a_n\in\RR,
 \]
 then
 \[
@@ -232,7 +232,7 @@ S\ne\varnothing
 \]
 and
 \[
-L=\sup S\in\mathbb R.
+L=\sup S\in\RR.
 \]
 If $L\in S$ and every term of the sequence is eventually at most
 \[
@@ -398,7 +398,7 @@ Since $S$ is compact, its infimum is attained, so it is also
 
 If
 \[
-\liminf a_n\in\mathbb R
+\liminf a_n\in\RR
 \]
 but the sequence is not assumed bounded above, the forward implication
 \[

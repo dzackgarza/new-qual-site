@@ -21,9 +21,9 @@ audit:
 ::: {.problem}
 Construct the group $G$ of $3 \times 3$ matrices by applying the Young natural representation indexed by $[2,1,1]$ to the permutations of $S_4$.
 
-(1) Compute the Hilbert series $F_{\mathbb{R}[x_1,x_2,x_3]^G}(q)$ of the ring of $G$-invariants.
+(1) Compute the Hilbert series $F_{\RR[x_1,x_2,x_3]^G}(q)$ of the ring of $G$-invariants.
 
-(2) Rewrite it in the form $$F_{\mathbb{R}[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}.$$
+(2) Rewrite it in the form $$F_{\RR[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}.$$
 
 (3) Calculate the first 10 terms of this series.
 
@@ -31,7 +31,7 @@ Construct the group $G$ of $3 \times 3$ matrices by applying the Young natural r
 
 (5) Compute the Gröbner basis of the ideal $(I_1, I_2, I_3)$.
 
-(6) Verify that $I_1, I_2, I_3$ are a system of parameters by checking that the quotient $\mathbb{Q}[x_1, x_2, x_3]/(I_1, I_2, I_3)$ has finite dimension.
+(6) Verify that $I_1, I_2, I_3$ are a system of parameters by checking that the quotient $\QQ[x_1, x_2, x_3]/(I_1, I_2, I_3)$ has finite dimension.
 If not, go back to step (4).
 
 (7) Construct a $G$-invariant $\eta$ of degree $d$.
@@ -66,9 +66,9 @@ G=\ker(\det:G'\to\{\pm1\}).
 \]
 The $G'$-invariant ring is
 \[
-\mathbb R[x_1,x_2,x_3]^{G'}
+\RR[x_1,x_2,x_3]^{G'}
 =
-\mathbb R[I_1,I_2,I_3],
+\RR[I_1,I_2,I_3],
 \]
 where
 \[
@@ -116,16 +116,16 @@ x_1x_2x_3
 \]
 After division by $\eta$, the quotient is $G'$-invariant. Therefore
 \[
-\mathbb R[x_1,x_2,x_3]^G
+\RR[x_1,x_2,x_3]^G
 =
-\mathbb R[I_1,I_2,I_3]
+\RR[I_1,I_2,I_3]
 \oplus
-\eta\,\mathbb R[I_1,I_2,I_3].
+\eta\,\RR[I_1,I_2,I_3].
 \]
 This simultaneously gives parts (1), (2), (4), and (7). The Hilbert series is
 \[
 \boxed{
-F_{\mathbb R[x_1,x_2,x_3]^G}(q)
+F_{\RR[x_1,x_2,x_3]^G}(q)
 =
 \frac{1+q^9}{(1-q^2)(1-q^4)(1-q^6)}.
 }
@@ -187,8 +187,8 @@ x_1^a x_2^b x_3^c,
 \]
 Hence
 \[
-\dim_\mathbb Q
-\mathbb Q[x_1,x_2,x_3]/(I_1,I_2,I_3)
+\dim_\QQ
+\QQ[x_1,x_2,x_3]/(I_1,I_2,I_3)
 =2\cdot4\cdot6=48<\infty.
 \]
 Thus $I_1,I_2,I_3$ form a homogeneous system of parameters.
@@ -237,7 +237,7 @@ Q(T,U,V,W)
 
 Part (9) is not needed to prove that $\eta$ is not a polynomial in $I_1,I_2,I_3$. Every polynomial in $I_1,I_2,I_3$ is a sum of terms of even degree because the three generators have even degrees $2,4,6$, whereas $\eta$ is a nonzero homogeneous invariant of odd degree $9$. Hence
 \[
-\eta\notin\mathbb R[I_1,I_2,I_3].
+\eta\notin\RR[I_1,I_2,I_3].
 \]
 The Hilbert-series numerator $1+q^9$ gives the same conclusion and shows that $1,\eta$ are exactly the two secondary generators over the polynomial subring of primary invariants.
 

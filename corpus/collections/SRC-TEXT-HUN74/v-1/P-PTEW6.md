@@ -21,9 +21,9 @@ audit:
 ::: {.problem}
 \envlist
 
-1. If $F = \mathbb{Q}(\sqrt 2, \sqrt 3)$, compute $[F: \mathbb{Q}]$ and find a basis of $F/\mathbb{Q}$.
+1. If $F = \QQ(\sqrt 2, \sqrt 3)$, compute $[F: \QQ]$ and find a basis of $F/\QQ$.
 
-2. Do the same for $\mathbb{Q}(i, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a complex third root of 1.
+2. Do the same for $\QQ(i, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a complex third root of 1.
 :::
 
 ::: {.solution}

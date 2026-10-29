@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\times[0,1]\to\mathbb R$ be continuous. Assume that for each $x$, the map $t\mapsto f(x,t)$ is differentiable and that
+Let $f:[0,1]\times[0,1]\to\RR$ be continuous. Assume that for each $x$, the map $t\mapsto f(x,t)$ is differentiable and that
 \[
 \left|\frac{\partial f}{\partial t}(x,t)\right|\le g(x)
 \]

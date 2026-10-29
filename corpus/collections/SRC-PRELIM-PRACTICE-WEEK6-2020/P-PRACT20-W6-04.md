@@ -31,7 +31,7 @@ Define $f_n(x) = \frac{x^n}{1 + x^n}$ for $x \in [0, 1]$, $n \in \NN$. Which of 
 :::
 
 ::: {.solution}
-At $x = 1$ , we see that $f _ { n } ( 1 ) = 1 / 2$ for all $n \in \mathbb { N }$ so $f _ { n } ( 1 ) \to 1 / 2$. For any $x \in [ 0 , 1 )$ , we have
+At $x = 1$ , we see that $f _ { n } ( 1 ) = 1 / 2$ for all $n \in \NN$ so $f _ { n } ( 1 ) \to 1 / 2$. For any $x \in [ 0 , 1 )$ , we have
 
 $$
 0 \leq f _ { n } ( x ) = { \frac { x ^ { n } } { 1 + x ^ { n } } } \leq x ^ { n } \to 0 , \quad { \mathrm { ~ a s ~ } } \ n \to \infty .

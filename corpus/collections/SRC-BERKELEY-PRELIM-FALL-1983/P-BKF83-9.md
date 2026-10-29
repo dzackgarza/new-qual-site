@@ -47,7 +47,7 @@ y'=0,
 \qquad
 y''=0.
 $$
-Hence, for every $p\in\mathbb R$,
+Hence, for every $p\in\RR$,
 $$
 y''+2py'+y
 =
@@ -70,7 +70,7 @@ its derivative vanishes. For the solution in step [](#s1){.pf-ref},
 $$
 y'(x)=0
 $$
-for every $x\in\mathbb R$. Thus every real number is a critical point.
+for every $x\in\RR$. Thus every real number is a critical point.
 
 :::
 
@@ -80,7 +80,7 @@ for every $x\in\mathbb R$. Thus every real number is a critical point.
 
 The required set of parameters is
 $$
-\boxed{\mathbb R}.
+\boxed{\RR}.
 $$
 
 ::: pf-proof

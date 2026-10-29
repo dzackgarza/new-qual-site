@@ -37,11 +37,11 @@ b. A Galois extension $K/F$ and an intermediate field $E$ ($F \subset E \subset 
 
 c. A finite field of size 8.
 
-d. A subfield $E$ of the splitting field of $x^5 + x - 1$ with $[E:\mathbb{Q}] = 7$.
+d. A subfield $E$ of the splitting field of $x^5 + x - 1$ with $[E:\QQ] = 7$.
 
 e. A field extension $K/F$ which is finite dimensional but not separable.
 
-f. An irreducible fifth degree polynomial over $\mathbb{Q}$ which is solvable by radicals.
+f. An irreducible fifth degree polynomial over $\QQ$ which is solvable by radicals.
 :::
 
 ::: {.remark}
@@ -59,14 +59,14 @@ is needed in part (b).
 
 ::: {.pf-step #s1}
 
-In part (a), take $F=\mathbb Q$,
-$E=\mathbb Q(a)$, and $K=\mathbb Q(a,\zeta)$, where
+In part (a), take $F=\QQ$,
+$E=\QQ(a)$, and $K=\QQ(a,\zeta)$, where
 $a=\sqrt[3]{2}>0$ and $\zeta=e^{2\pi i/3}$.
 
 ::: pf-proof
 
 The polynomial $T^3-2$ is Eisenstein at two and therefore
-irreducible over $\mathbb Q$ [@DF04]. Thus $[E:F]=3>1$.
+irreducible over $\QQ$ [@DF04]. Thus $[E:F]=3>1$.
 The field $E$ is real, whereas $\zeta$ is nonreal, so
 $E\subset K$ is also strict.
 The roots $a,\zeta a,\zeta^2a$ generate $K$, because
@@ -126,17 +126,17 @@ No example exists in part (d).
 
 ::: pf-proof
 
-Let $L$ be the splitting field of $T^5+T-1$ over $\mathbb Q$.
+Let $L$ be the splitting field of $T^5+T-1$ over $\QQ$.
 This is a finite Galois extension, since the base field
 has characteristic zero [@DF04]. Its automorphisms act
 faithfully on the distinct roots, because those roots
 generate $L$. There are at most five such roots, so
-this action embeds $\operatorname{Gal}(L/\mathbb Q)$
+this action embeds $\operatorname{Gal}(L/\QQ)$
 into $S_5$, adding fixed letters if necessary.
 Lagrange's theorem gives
-$[L:\mathbb Q]=|\operatorname{Gal}(L/\mathbb Q)|\mid120$.
+$[L:\QQ]=|\operatorname{Gal}(L/\QQ)|\mid120$.
 For an intermediate field $E$, the tower law makes
-$[E:\mathbb Q]$ a divisor of $[L:\mathbb Q]$ and hence
+$[E:\QQ]$ a divisor of $[L:\QQ]$ and hence
 of $120$. Since $7\nmid120$, degree seven is impossible.
 
 :::
@@ -168,14 +168,14 @@ In part (f), take $f(T)=T^5-2$.
 ::: pf-proof
 
 Eisenstein's criterion at two proves irreducibility over
-$\mathbb Q$ [@DF04]. Let $b=\sqrt[5]{2}$ and choose a
+$\QQ$ [@DF04]. Let $b=\sqrt[5]{2}$ and choose a
 primitive fifth root of unity $\xi$. The roots of $f$
 are precisely $\xi^j b$, $0\leq j<5$.
 They all lie in the radical tower
 $$
-\mathbb Q\subset\mathbb Q(\xi)
-\subset\mathbb Q(\xi,b):
-\qquad \xi^5=1\in\mathbb Q,\quad b^5=2\in\mathbb Q(\xi).
+\QQ\subset\QQ(\xi)
+\subset\QQ(\xi,b):
+\qquad \xi^5=1\in\QQ,\quad b^5=2\in\QQ(\xi).
 $$
 Each step adjoins an element having a positive integral
 power in the preceding field. Thus every root of the

@@ -30,9 +30,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:\mathbb C^n\to\mathbb C^n$ be linear.
+Let $T:\CC^n\to\CC^n$ be linear.
 
-1. Prove that $T$ is diagonalizable if, for every $\lambda\in\mathbb C$,
+1. Prove that $T$ is diagonalizable if, for every $\lambda\in\CC$,
    \[
    \ker(T-\lambda I)^n=\ker(T-\lambda I).
    \]

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f=u+iv$ is analytic on a domain $D\subset\mathbb C$ and
+Suppose $f=u+iv$ is analytic on a domain $D\subset\CC$ and
 \[
 v(z)=u(z)^2
 \qquad(z\in D).

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$ and define
+Let $f\in L^1(\RR)$ and define
 \[
 h(x)=\int_x^{x+1}f(t)\,dt.
 \]
@@ -39,7 +39,7 @@ Define
 \[
 F(x)=\int_0^x f(t)\,dt,
 \]
-with the usual signed interpretation when $x<0$. Since $f\in L^1(\mathbb R)$, the indefinite integral $F$ is absolutely continuous, and
+with the usual signed interpretation when $x<0$. Since $f\in L^1(\RR)$, the indefinite integral $F$ is absolutely continuous, and
 \[
 F'(x)=f(x)
 \]
@@ -57,7 +57,7 @@ For part (b),
 \[
 |h(x)|\le\int_x^{x+1}|f(t)|\,dt\le\int_x^\infty|f(t)|\,dt.
 \]
-Because $f\in L^1(\mathbb R)$, the tail integral tends to zero as $x\to\infty$. Hence
+Because $f\in L^1(\RR)$, the tail integral tends to zero as $x\to\infty$. Hence
 \[
 h(x)\longrightarrow0.
 \]

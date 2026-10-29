@@ -66,7 +66,7 @@ Determine the discontinuity set.
 
 ::: pf-proof
 
-Fix $a\in\mathbb R$. Since the series is absolutely and uniformly bounded by
+Fix $a\in\RR$. Since the series is absolutely and uniformly bounded by
 \[
 \sum_{n=1}^\infty2^{-n}=1,
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-8A
 kind: problem
-title: Number of fifth powers in $\mathbb Z/6464\mathbb Z$
+title: Number of fifth powers in $\ZZ/6464\ZZ$
 classification:
   areas:
   - prelim

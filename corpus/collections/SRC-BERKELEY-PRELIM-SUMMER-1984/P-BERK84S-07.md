@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb { R } \to \mathbb { R }$ be $C ^ { 1 }$ and let
+Let $f : \RR \to \RR$ be $C ^ { 1 }$ and let
 
 $$
 \begin{array} { l } { u = f ( x ) } \\ { v = - y + x f ( x ) . } \end{array}

@@ -60,11 +60,11 @@ be a measure space with
 \]
 Let
 \[
-f_n:X\to\mathbb R
+f_n:X\to\RR
 \]
 and
 \[
-f:X\to\mathbb R
+f:X\to\RR
 \]
 be measurable, and suppose
 \[

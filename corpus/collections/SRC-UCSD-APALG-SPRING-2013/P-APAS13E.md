@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $H$ be a subgroup of $G$ and $A\colon H\to\mathrm{GL}_n(\mathbb{C})$ be a representation of $H$.
-Let $\chi^A\colon H\to\mathbb{C}$ be the character of $A$.
-Define $\chi^{\overline{A}}\colon G\to\mathbb{C}$ by
+Let $H$ be a subgroup of $G$ and $A\colon H\to\mathrm{GL}_n(\CC)$ be a representation of $H$.
+Let $\chi^A\colon H\to\CC$ be the character of $A$.
+Define $\chi^{\overline{A}}\colon G\to\CC$ by
 \[
 \chi^{\overline{A}}(\sigma)=
 \begin{cases}
@@ -38,7 +38,7 @@ Define $\chi^{\overline{A}}\colon G\to\mathbb{C}$ by
 Let \(V\) be the representation space of \(A\). The induced representation is
 \[
 \operatorname{Ind}_H^G V
- =\mathbb C[G]\otimes_{\mathbb C[H]}V,
+ =\CC[G]\otimes_{\CC[H]}V,
 \]
 with \(G\) acting by left multiplication on the first tensor factor:
 \[

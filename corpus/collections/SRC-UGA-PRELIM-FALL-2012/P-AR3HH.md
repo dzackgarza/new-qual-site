@@ -22,7 +22,7 @@ Suppose $R$ is a commutative ring (with 1), $I$ is a proper ideal in $R$, and $a
 Suppose $(a) + I = R$.
 Prove that $a+I$ is a unit (i.e., invertible) in the quotient ring $R/I$.
 
-(For half credit: Prove that if $a$ and $n$ are relatively prime integers, then $a+n\mathbb{Z}$ is a unit in $\mathbb{Z}/n\mathbb{Z}$.)
+(For half credit: Prove that if $a$ and $n$ are relatively prime integers, then $a+n\ZZ$ is a unit in $\ZZ/n\ZZ$.)
 :::
 
 ::: {.solution}
@@ -36,5 +36,5 @@ Passing to the quotient gives
 \]
 Thus $r+I$ is an inverse of $a+I$, so $a+I$ is a unit in $R/I$.
 
-For $R=\mathbb Z$ and $I=n\mathbb Z$, the hypothesis $(a)+n\mathbb Z=\mathbb Z$ is exactly $\gcd(a,n)=1$, recovering the familiar statement for $\mathbb Z/n\mathbb Z$.
+For $R=\ZZ$ and $I=n\ZZ$, the hypothesis $(a)+n\ZZ=\ZZ$ is exactly $\gcd(a,n)=1$, recovering the familiar statement for $\ZZ/n\ZZ$.
 :::

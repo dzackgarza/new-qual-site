@@ -57,7 +57,7 @@ Join the $p$ attachment points by a tree in the underlying $S^3$ and contract th
 ::: pf-step
 Therefore
 $$
-H_2(\widetilde{L\vee S^2};\mathbb Z)\cong\mathbb Z^p.
+H_2(\widetilde{L\vee S^2};\ZZ)\cong\ZZ^p.
 $$
 
 ::: pf-proof
@@ -69,7 +69,7 @@ Only the $p$ copies of $S^2$ contribute to degree-$2$ homology.
 ::: pf-step
 Since the universal cover is simply connected, Hurewicz gives
 $$
-\pi_2(\widetilde{L\vee S^2})\cong\mathbb Z^p.
+\pi_2(\widetilde{L\vee S^2})\cong\ZZ^p.
 $$
 
 ::: pf-proof
@@ -81,7 +81,7 @@ For a simply connected space, the Hurewicz homomorphism $\pi_2\to H_2$ is an iso
 ::: pf-step
 Hence
 $$
-\boxed{\pi_2(L\vee S^2)\cong\mathbb Z^p}.
+\boxed{\pi_2(L\vee S^2)\cong\ZZ^p}.
 $$
 
 ::: pf-proof

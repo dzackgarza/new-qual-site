@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $Y$ be a space obtained by attaching a $4$-ball, via a degree $6$ map of its boundary, to a $3$-sphere.
-Calculate the integral homology $H_*(Y \times \mathbb{RP}^2; \mathbb{Z})$.
+Calculate the integral homology $H_*(Y \times \mathbb{RP}^2; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -26,14 +26,14 @@ Calculate the integral homology $H_*(Y \times \mathbb{RP}^2; \mathbb{Z})$.
 ::: pf-step
 The cellular chain complex of $Y$ in positive dimensions is
 $$
-0\longrightarrow \mathbb Z\xrightarrow{6}\mathbb Z\longrightarrow0
+0\longrightarrow \ZZ\xrightarrow{6}\ZZ\longrightarrow0
 $$
 concentrated in degrees $4$ and $3$. Hence
 $$
-H_i(Y;\mathbb Z)\cong
+H_i(Y;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/6,&i=3,\\
+\ZZ,&i=0,\\
+\ZZ/6,&i=3,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -47,7 +47,7 @@ The attaching map of the $4$-cell has degree $6$, so the cellular boundary $C_4\
 ::: pf-step
 The integral homology of $\mathbb{RP}^2$ is
 $$
-H_0\cong\mathbb Z,\qquad H_1\cong\mathbb Z/2,
+H_0\cong\ZZ,\qquad H_1\cong\ZZ/2,
 $$
 with all higher groups zero.
 
@@ -61,21 +61,21 @@ This is the standard cellular calculation for $\mathbb{RP}^2$.
 The Künneth theorem gives
 $$
 \boxed{
-H_i(Y\times\mathbb{RP}^2;\mathbb Z)\cong
+H_i(Y\times\mathbb{RP}^2;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/2,&i=1,4,5,\\
-\mathbb Z/6,&i=3,\\
+\ZZ,&i=0,\\
+\ZZ/2,&i=1,4,5,\\
+\ZZ/6,&i=3,\\
 0,&\text{otherwise}.
 \end{cases}}
 $$
 
 ::: pf-proof
-The tensor contribution $H_3(Y)\otimes H_1(\mathbb{RP}^2)$ is $\mathbb Z/2$ in degree $4$, while
+The tensor contribution $H_3(Y)\otimes H_1(\mathbb{RP}^2)$ is $\ZZ/2$ in degree $4$, while
 $$
-\operatorname{Tor}(\mathbb Z/6,\mathbb Z/2)\cong\mathbb Z/2
+\operatorname{Tor}(\ZZ/6,\ZZ/2)\cong\ZZ/2
 $$
-contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes H_0(\mathbb{RP}^2)\cong\mathbb Z$ in degree $0$, $H_0(Y)\otimes H_1(\mathbb{RP}^2)\cong\mathbb Z/2$ in degree $1$, and $H_3(Y)\otimes H_0(\mathbb{RP}^2)\cong\mathbb Z/6$ in degree $3$.
+contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes H_0(\mathbb{RP}^2)\cong\ZZ$ in degree $0$, $H_0(Y)\otimes H_1(\mathbb{RP}^2)\cong\ZZ/2$ in degree $1$, and $H_3(Y)\otimes H_0(\mathbb{RP}^2)\cong\ZZ/6$ in degree $3$.
 :::
 
 :::
@@ -83,17 +83,17 @@ contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes
 ::: pf-step
 If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
 $$
-H^i(Y\times\mathbb{RP}^2;\mathbb Z)\cong
+H^i(Y\times\mathbb{RP}^2;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/2,&i=2,5,6,\\
-\mathbb Z/6,&i=4,\\
+\ZZ,&i=0,\\
+\ZZ/2,&i=2,5,6,\\
+\ZZ/6,&i=4,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
 
 ::: pf-proof
-Apply the universal coefficient theorem for cohomology to the homology groups in step [](#kunneth-computation){.pf-ref}. Since all positive-degree homology is finite, Hom into $\mathbb Z$ vanishes there and the torsion reappears one degree higher through Ext.
+Apply the universal coefficient theorem for cohomology to the homology groups in step [](#kunneth-computation){.pf-ref}. Since all positive-degree homology is finite, Hom into $\ZZ$ vanishes there and the torsion reappears one degree higher through Ext.
 :::
 
 :::

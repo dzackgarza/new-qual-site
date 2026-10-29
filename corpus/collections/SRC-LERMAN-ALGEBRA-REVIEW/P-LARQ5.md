@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LARQ5
 kind: problem
-title: $\mathbb R[x,y]/(x)\cong\mathbb R[y]$, so $(x)$ is prime but not maximal
+title: $\RR[x,y]/(x)\cong\RR[y]$, so $(x)$ is prime but not maximal
 classification:
   areas: [algebra]
   topics: [Ring Theory]
@@ -23,8 +23,8 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R[x,y]/(x)\cong\mathbb R[y]$.
-Use this isomorphism to decide whether $(x)$ is prime and whether it is maximal in $\mathbb R[x,y]$.
+Prove that $\RR[x,y]/(x)\cong\RR[y]$.
+Use this isomorphism to decide whether $(x)$ is prime and whether it is maximal in $\RR[x,y]$.
 :::
 
 ::: {.solution}
@@ -39,10 +39,10 @@ Evaluation at $x=0$ induces the required quotient isomorphism.
 
 Define
 $$
-\Phi:\mathbb R[x,y]\to\mathbb R[y],\qquad
+\Phi:\RR[x,y]\to\RR[y],\qquad
 \Phi(f(x,y))=f(0,y).
 $$
-This is a surjective ring homomorphism, since every polynomial $g(y)$ is the image of the same polynomial viewed in $\mathbb R[x,y]$.
+This is a surjective ring homomorphism, since every polynomial $g(y)$ is the image of the same polynomial viewed in $\RR[x,y]$.
 
 Its kernel consists exactly of the polynomials divisible by $x$. Indeed, write
 $$
@@ -52,7 +52,7 @@ Then $\Phi(f)=a_0(y)$, so $\Phi(f)=0$ if and only if $a_0(y)=0$, which is equiva
 
 The first isomorphism theorem therefore gives
 $$
-\mathbb R[x,y]/(x)\cong\mathbb R[y].
+\RR[x,y]/(x)\cong\RR[y].
 $$
 
 :::
@@ -65,9 +65,9 @@ The ideal $(x)$ is prime but not maximal.
 
 ::: pf-proof
 
-An ideal $I$ in a commutative ring is prime exactly when the quotient by $I$ is an integral domain, and maximal exactly when that quotient is a field. The ring $\mathbb R[y]$ is an integral domain because $\mathbb R$ is a field, so $(x)$ is prime.
+An ideal $I$ in a commutative ring is prime exactly when the quotient by $I$ is an integral domain, and maximal exactly when that quotient is a field. The ring $\RR[y]$ is an integral domain because $\RR$ is a field, so $(x)$ is prime.
 
-However, $\mathbb R[y]$ is not a field: the nonconstant polynomial $y$ has no multiplicative inverse in $\mathbb R[y]$. Hence $(x)$ is not maximal.
+However, $\RR[y]$ is not a field: the nonconstant polynomial $y$ has no multiplicative inverse in $\RR[y]$. Hence $(x)$ is not maximal.
 
 :::
 

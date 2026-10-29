@@ -26,13 +26,13 @@ Determine all covering spaces of $S^1 \times \mathbb{RP}^3$.
 
 We have
 $$
-\pi_1(S^1\times\mathbb{RP}^3)\cong \mathbb Z\times\mathbb Z/2
+\pi_1(S^1\times\mathbb{RP}^3)\cong \ZZ\times\ZZ/2
 =\langle a,b\mid [a,b]=1,\ b^2=1\rangle.
 $$
 
 ::: pf-proof
 
-Use the product formula for fundamental groups, $\pi_1(S^1)=\mathbb Z$, and $\pi_1(\mathbb{RP}^3)=\mathbb Z/2$.
+Use the product formula for fundamental groups, $\pi_1(S^1)=\ZZ$, and $\pi_1(\mathbb{RP}^3)=\ZZ/2$.
 
 :::
 
@@ -40,7 +40,7 @@ Use the product formula for fundamental groups, $\pi_1(S^1)=\mathbb Z$, and $\pi
 
 ::: pf-step
 
-Connected covering spaces are classified by subgroups $H\le G:=\mathbb Z\times\mathbb Z/2$; conjugacy is irrelevant because $G$ is abelian.
+Connected covering spaces are classified by subgroups $H\le G:=\ZZ\times\ZZ/2$; conjugacy is irrelevant because $G$ is abelian.
 
 ::: pf-proof
 
@@ -62,7 +62,7 @@ $$
 
 ::: pf-proof
 
-Project $H$ to the $\mathbb Z$ factor. Its image is either $0$ or $d\mathbb Z$. If it is $0$, then $H\le\langle b\rangle$, giving the first two cases. If the image is $d\mathbb Z$, choose an element $a^db^\epsilon\in H$. The kernel of the projection $H\to d\mathbb Z$ is either $0$ or $\langle b\rangle$. In the first case $H=\langle a^db^\epsilon\rangle$, giving $\langle a^d\rangle$ or $\langle a^db\rangle$; in the second, $H=\langle a^d,b\rangle$.
+Project $H$ to the $\ZZ$ factor. Its image is either $0$ or $d\ZZ$. If it is $0$, then $H\le\langle b\rangle$, giving the first two cases. If the image is $d\ZZ$, choose an element $a^db^\epsilon\in H$. The kernel of the projection $H\to d\ZZ$ is either $0$ or $\langle b\rangle$. In the first case $H=\langle a^db^\epsilon\rangle$, giving $\langle a^d\rangle$ or $\langle a^db\rangle$; in the second, $H=\langle a^d,b\rangle$.
 
 :::
 
@@ -70,14 +70,14 @@ Project $H$ to the $\mathbb Z$ factor. Its image is either $0$ or $d\mathbb Z$. 
 
 ::: pf-step
 
-Using the universal cover $\mathbb R\times S^3$ with deck actions
+Using the universal cover $\RR\times S^3$ with deck actions
 $$
 a(t,u)=(t+1,u),\qquad b(t,u)=(t,-u),
 $$
 the connected cover corresponding to $H$ is
 $$
-(\mathbb R\times S^3)/H\longrightarrow
-(\mathbb R\times S^3)/G=S^1\times\mathbb{RP}^3.
+(\RR\times S^3)/H\longrightarrow
+(\RR\times S^3)/G=S^1\times\mathbb{RP}^3.
 $$
 
 ::: pf-proof
@@ -91,11 +91,11 @@ This is the standard subgroup construction for coverings from the universal cove
 ::: {.pf-step #s5}
 
 Concretely:
-- $H=0$ gives the universal cover $\mathbb R\times S^3$;
-- $H=\langle b\rangle$ gives $\mathbb R\times\mathbb{RP}^3$;
+- $H=0$ gives the universal cover $\RR\times S^3$;
+- $H=\langle b\rangle$ gives $\RR\times\mathbb{RP}^3$;
 - $H=\langle a^d\rangle$ gives $S^1\times S^3$ with projection $(z,u)\mapsto(z^d,[u])$;
 - $H=\langle a^d,b\rangle$ gives $S^1\times\mathbb{RP}^3$ with projection $(z,[u])\mapsto(z^d,[u])$;
-- $H=\langle a^db\rangle$ gives $(\mathbb R\times S^3)/((t,u)\sim(t+d,-u))$ with the quotient projection induced by $(t,u)\mapsto(e^{2\pi it},[u])$.
+- $H=\langle a^db\rangle$ gives $(\RR\times S^3)/((t,u)\sim(t+d,-u))$ with the quotient projection induced by $(t,u)\mapsto(e^{2\pi it},[u])$.
 
 ::: pf-proof
 

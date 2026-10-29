@@ -28,7 +28,7 @@ $$
 P ( x ) ^ { 2 } = 1 + x + x ^ { m } Q ( x )
 $$
 
-for some $Q ( x ) \in \mathbb { R } [ x ]$ . Then
+for some $Q ( x ) \in \RR [ x ]$ . Then
 
 $$
 P ( N ) ^ { 2 } = I + N + N ^ { m } Q ( N ) = I + N = A ,

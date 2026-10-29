@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible representation of the symmetric group $S_n$ over $\mathbb{C}$.
+For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible representation of the symmetric group $S_n$ over $\CC$.
 
 (a) Calculate the decomposition of the induced module
 \[
@@ -33,7 +33,7 @@ V=(S^{(2)}\otimes S^{(2)}\otimes S^{(1)})\uparrow_{S_2\times S_2\times S_1}^{S_5
 \]
 into irreducible $S_5$-modules.
 
-(b) What is the dimension over $\mathbb{C}$ of the endomorphism algebra $\operatorname{End}_{S_5}(V)$?
+(b) What is the dimension over $\CC$ of the endomorphism algebra $\operatorname{End}_{S_5}(V)$?
 
 (c) For any permutation $\sigma\in S_5$, let $\operatorname{sign}(\sigma)$ be the sign of $\sigma$.
 Define a linear operator $\varphi\colon V\to V$ by
@@ -123,11 +123,11 @@ V\cong\bigoplus_\lambda m_\lambda S^\lambda,
 Schur's lemma gives
 \[
 \operatorname{End}_{S_5}(V)
-\cong\bigoplus_\lambda M_{m_\lambda}(\mathbb C),
+\cong\bigoplus_\lambda M_{m_\lambda}(\CC),
 \]
 so
 \[
-\dim_\mathbb C\operatorname{End}_{S_5}(V)=\sum_\lambda m_\lambda^2.
+\dim_\CC\operatorname{End}_{S_5}(V)=\sum_\lambda m_\lambda^2.
 \]
 Using the multiplicities from step [](#s3){.pf-ref} gives
 \[

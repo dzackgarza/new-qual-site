@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-For $k\in\mathbb N$, let
+For $k\in\NN$, let
 \[
 s_k=1+\frac1{2^2}+\cdots+\frac1{k^2}.
 \]

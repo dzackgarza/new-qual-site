@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be the Lebesgue-Stieltjes measure associated to the increasing and right-continuous function $F : \mathbb{R} \to \mathbb{R}$:
+Let $\mu$ be the Lebesgue-Stieltjes measure associated to the increasing and right-continuous function $F : \RR \to \RR$:
 $$
 F(x) = \begin{cases} 0 & \text{if } x < 0, \\ x + 2 & \text{if } 0 \leq x < 1, \\ 4x^2 & \text{if } 1 \leq x < \infty. \end{cases}
 $$

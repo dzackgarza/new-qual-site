@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the range of every nonconstant entire function is dense in $\mathbb C$.
+Show that the range of every nonconstant entire function is dense in $\CC$.
 :::
 
 ::: {.solution}

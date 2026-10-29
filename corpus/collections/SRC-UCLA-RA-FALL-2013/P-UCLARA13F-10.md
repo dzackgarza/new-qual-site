@@ -17,18 +17,18 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $f\in L^2(\mathbb R)$ and define
+(a) Let $f\in L^2(\RR)$ and define
 \[
-h(x)=\int_{\mathbb R}f(x-y)f(y)\,dy.
+h(x)=\int_{\RR}f(x-y)f(y)\,dy.
 \]
-Show that there exists $g\in L^1(\mathbb R)$ such that
+Show that there exists $g\in L^1(\RR)$ such that
 \[
-h(\xi)=\int_{\mathbb R}e^{-i\xi x}g(x)\,dx.
+h(\xi)=\int_{\RR}e^{-i\xi x}g(x)\,dx.
 \]
 
-(b) Conversely, show that if $g\in L^1(\mathbb R)$, then there exists $f\in L^2(\mathbb R)$ whose self-convolution
+(b) Conversely, show that if $g\in L^1(\RR)$, then there exists $f\in L^2(\RR)$ whose self-convolution
 \[
-h(x)=\int_{\mathbb R}f(x-y)f(y)\,dy
+h(x)=\int_{\RR}f(x-y)f(y)\,dy
 \]
 is the Fourier transform of $g$.
 :::
@@ -37,9 +37,9 @@ is the Fourier transform of $g$.
 
 Use the Fourier-transform convention
 \[
-\widehat q(\xi)=\int_{\mathbb R}e^{-i\xi x}q(x)\,dx.
+\widehat q(\xi)=\int_{\RR}e^{-i\xi x}q(x)\,dx.
 \]
-With this convention, Plancherel extends the Fourier transform to $L^2(\mathbb R)$ and
+With this convention, Plancherel extends the Fourier transform to $L^2(\RR)$ and
 \[
 \widehat{f*f}=\widehat f^{,2}.
 \]
@@ -48,9 +48,9 @@ With this convention, Plancherel extends the Fourier transform to $L^2(\mathbb R
 
 ::: pf-step
 
-Let $f\in L^2(\mathbb R)$. For every $x\in\mathbb R$, the self-convolution
+Let $f\in L^2(\RR)$. For every $x\in\RR$, the self-convolution
 \[
-h(x)=\int_{\mathbb R}f(x-y)f(y)\,dy
+h(x)=\int_{\RR}f(x-y)f(y)\,dy
 \]
 is absolutely convergent.
 
@@ -59,7 +59,7 @@ is absolutely convergent.
 
 Translation preserves the $L^2$ norm. Hence Cauchy--Schwarz gives
 \[
-\int_{\mathbb R}|f(x-y)f(y)|\,dy
+\int_{\RR}|f(x-y)f(y)|\,dy
 \leq\|f(x-\cdot)\|_2\|f\|_2
 =\|f\|_2^2<\infty.
 \]
@@ -76,7 +76,7 @@ F=\widehat f
 \]
 in the $L^2$ Plancherel sense. Then
 \[
-F^2\in L^1(\mathbb R).
+F^2\in L^1(\RR).
 \]
 
 
@@ -84,8 +84,8 @@ F^2\in L^1(\mathbb R).
 
 Plancherel gives $F\in L^2$. Therefore
 \[
-\int_{\mathbb R}|F(\xi)^2|\,d\xi
-=\int_{\mathbb R}|F(\xi)|^2\,d\xi<\infty.
+\int_{\RR}|F(\xi)^2|\,d\xi
+=\int_{\RR}|F(\xi)|^2\,d\xi<\infty.
 \]
 
 :::
@@ -96,7 +96,7 @@ Plancherel gives $F\in L^2$. Therefore
 
 The convolution theorem gives, with the stated normalization,
 \[
-h(x)=\frac1{2\pi}\int_{\mathbb R}e^{ix\xi}F(\xi)^2\,d\xi.
+h(x)=\frac1{2\pi}\int_{\RR}e^{ix\xi}F(\xi)^2\,d\xi.
 \]
 
 
@@ -124,7 +124,7 @@ Define
 \[
 g(t)=\frac1{2\pi}F(-t)^2.
 \]
-Then $g\in L^1(\mathbb R)$ and
+Then $g\in L^1(\RR)$ and
 \[
 h(x)=\widehat g(x).
 \]
@@ -134,8 +134,8 @@ h(x)=\widehat g(x).
 
 Integrability follows from step [](#s1-2){.pf-ref}. Substituting $t=-\xi$ in step [](#s1-3){.pf-ref} gives
 \[
-h(x)=\frac1{2\pi}\int_{\mathbb R}e^{-ixt}F(-t)^2\,dt
-=\int_{\mathbb R}e^{-ixt}g(t)\,dt.
+h(x)=\frac1{2\pi}\int_{\RR}e^{-ixt}F(-t)^2\,dt
+=\int_{\RR}e^{-ixt}g(t)\,dt.
 \]
 This proves part (a).
 
@@ -145,13 +145,13 @@ This proves part (a).
 
 ::: {.pf-step #s1-5}
 
-Conversely, let $g\in L^1(\mathbb R)$. There exists a measurable function $F$ such that
+Conversely, let $g\in L^1(\RR)$. There exists a measurable function $F$ such that
 \[
 F(-t)^2=2\pi g(t)
 \]
 for almost every $t$ and
 \[
-F\in L^2(\mathbb R).
+F\in L^2(\RR).
 \]
 
 
@@ -176,12 +176,12 @@ so
 
 ::: {.pf-step #s1-6}
 
-By Plancherel, there exists $f\in L^2(\mathbb R)$ whose Fourier transform is $F$.
+By Plancherel, there exists $f\in L^2(\RR)$ whose Fourier transform is $F$.
 
 
 ::: pf-proof
 
-The Fourier transform, with the corresponding normalization factor, is a bijective isometry up to the fixed constant on $L^2(\mathbb R)$. Since $F\in L^2$ by step [](#s1-5){.pf-ref}, it has an inverse Fourier transform $f\in L^2$.
+The Fourier transform, with the corresponding normalization factor, is a bijective isometry up to the fixed constant on $L^2(\RR)$. Since $F\in L^2$ by step [](#s1-5){.pf-ref}, it has an inverse Fourier transform $f\in L^2$.
 
 :::
 
@@ -199,12 +199,12 @@ h(x)=\widehat g(x).
 
 Apply step [](#s1-3){.pf-ref} to the $f$ from step [](#s1-6){.pf-ref}:
 \[
-h(x)=\frac1{2\pi}\int_{\mathbb R}e^{ix\xi}F(\xi)^2\,d\xi.
+h(x)=\frac1{2\pi}\int_{\RR}e^{ix\xi}F(\xi)^2\,d\xi.
 \]
 Set $t=-\xi$ and use step [](#s1-5){.pf-ref}:
 \[
-h(x)=\frac1{2\pi}\int_{\mathbb R}e^{-ixt}F(-t)^2\,dt
-=\int_{\mathbb R}e^{-ixt}g(t)\,dt
+h(x)=\frac1{2\pi}\int_{\RR}e^{-ixt}F(-t)^2\,dt
+=\int_{\RR}e^{-ixt}g(t)\,dt
 =\widehat g(x).
 \]
 

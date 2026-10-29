@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the fundamental group and homology groups of the space obtained by removing the union of the three coordinate axes from $\mathbb{R}^3$.
+Compute the fundamental group and homology groups of the space obtained by removing the union of the three coordinate axes from $\RR^3$.
 :::
 
 ::: {.solution}
@@ -23,7 +23,7 @@ Compute the fundamental group and homology groups of the space obtained by remov
 ::: pf-step
 Radial projection gives a deformation retraction
 $$
-\mathbb R^3\setminus\{\text{three coordinate axes}\}\simeq S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}.
+\RR^3\setminus\{\text{three coordinate axes}\}\simeq S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}.
 $$
 
 ::: pf-proof
@@ -54,8 +54,8 @@ and
 $$
 \boxed{H_i\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^5,&i=1,\\
+\ZZ,&i=0,\\
+\ZZ^5,&i=1,\\
 0,&i\ge2.
 \end{cases}}
 $$

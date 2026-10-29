@@ -51,9 +51,9 @@ Removing the interiors of the three disjoint tubular neighborhoods $N(U),N(K_1),
 ::: {.pf-step #alexander-duality}
 Alexander duality gives
 $$
-\widetilde H_i(S^3\setminus L;\mathbb Z)
+\widetilde H_i(S^3\setminus L;\ZZ)
 \cong
-\widetilde H^{2-i}(L;\mathbb Z).
+\widetilde H^{2-i}(L;\ZZ).
 $$
 
 ::: pf-proof
@@ -65,9 +65,9 @@ Apply Alexander duality to the compact locally contractible subset $L\subset S^3
 ::: {.pf-step #link-cohomology}
 Since $L$ is a disjoint union of three circles,
 $$
-\widetilde H^0(L)\cong\mathbb Z^2,
+\widetilde H^0(L)\cong\ZZ^2,
 \qquad
-H^1(L)\cong\mathbb Z^3.
+H^1(L)\cong\ZZ^3.
 $$
 
 ::: pf-proof
@@ -79,11 +79,11 @@ Three connected components give reduced degree-zero rank two, and each circle co
 ::: pf-step
 Consequently
 $$
-\boxed{H_i(X;\mathbb Z)\cong
+\boxed{H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^3,&i=1,\\
-\mathbb Z^2,&i=2,\\
+\ZZ,&i=0,\\
+\ZZ^3,&i=1,\\
+\ZZ^2,&i=2,\\
 0,&i\ge3.
 \end{cases}}
 $$

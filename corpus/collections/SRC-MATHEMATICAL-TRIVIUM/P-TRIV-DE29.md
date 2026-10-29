@@ -70,7 +70,7 @@ The equation is $y''=0$, so $y=A+Bx$. Both boundary conditions reduce to $B=0$.
 
 If $\lambda>0$, write $\lambda=\mu^2$. A nonzero solution exists exactly when
 \[
-\mu=n\in\mathbb N,
+\mu=n\in\NN,
 \]
 and then
 \[
@@ -90,7 +90,7 @@ The condition $y'(0)=0$ gives $B=0$. The second condition becomes
 \[
 -\mu A\sin(\mu\pi)=0.
 \]
-For a nonzero solution $A\ne0$, so $\sin(\mu\pi)=0$, equivalently $\mu=n\in\mathbb N$.
+For a nonzero solution $A\ne0$, so $\sin(\mu\pi)=0$, equivalently $\mu=n\in\NN$.
 
 :::
 

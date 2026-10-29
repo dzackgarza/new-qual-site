@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-5A
 kind: problem
-title: Isomorphism of $\mathbb R[x]/(x^2+x-1)$ and $\mathbb R[x]/(x^2+2x-3)$
+title: Isomorphism of $\RR[x]/(x^2+x-1)$ and $\RR[x]/(x^2+2x-3)$
 classification:
   areas: [prelim]
   topics: []

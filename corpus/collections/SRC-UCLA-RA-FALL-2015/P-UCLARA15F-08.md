@@ -43,7 +43,7 @@ f(x)e^{-inx}\,dx.
 
 ::: {.pf-step #s1-1}
 
-For every \(y\in\mathbb R\),
+For every \(y\in\RR\),
 \[
 \boxed{
 a_n
@@ -60,7 +60,7 @@ Consider the entire function
 \[
 g_n(z)=f(z)e^{-inz}.
 \]
-Since \(f\) is \(2\pi\)-periodic and \(n\in\mathbb Z\),
+Since \(f\) is \(2\pi\)-periodic and \(n\in\ZZ\),
 \[
 g_n(z+2\pi)
 =
@@ -96,7 +96,7 @@ Therefore
 \le
 C e^{\alpha|y|}e^{ny}
 \]
-for every \(y\in\mathbb R\).
+for every \(y\in\RR\).
 
 
 ::: pf-proof
@@ -339,12 +339,12 @@ This is the definition of \(h\) and step [](#s1-9){.pf-ref}.
 
 ::: {.pf-step #s1-11}
 
-Since \(f-a_0\) is entire and vanishes on the real line, it vanishes identically on \(\mathbb C\).
+Since \(f-a_0\) is entire and vanishes on the real line, it vanishes identically on \(\CC\).
 
 
 ::: pf-proof
 
-The real line has accumulation points in \(\mathbb C\). Apply the identity theorem to the entire function
+The real line has accumulation points in \(\CC\). Apply the identity theorem to the entire function
 \[
 f-a_0.
 \]

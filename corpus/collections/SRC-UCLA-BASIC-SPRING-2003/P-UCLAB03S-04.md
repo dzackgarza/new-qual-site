@@ -30,18 +30,18 @@ Consider the equation
 \frac{\partial^2F}{\partial y^2}
 \tag{*}
 \]
-for a function $F(x,y)$ on $\mathbb R^2$.
+for a function $F(x,y)$ on $\RR^2$.
 
 (a) Show that if
 \[
 F(x,y)=f(x+y)+g(x-y),
 \]
-where $f,g:\mathbb R\to\mathbb R$ are twice differentiable, then $F$ satisfies $(*)$.
+where $f,g:\RR\to\RR$ are twice differentiable, then $F$ satisfies $(*)$.
 
 (b) Show that if
 \[
 F(x,y)=ax^2+bxy+cy^2,
-\qquad a,b,c\in\mathbb R,
+\qquad a,b,c\in\RR,
 \]
 satisfies $(*)$, then
 \[

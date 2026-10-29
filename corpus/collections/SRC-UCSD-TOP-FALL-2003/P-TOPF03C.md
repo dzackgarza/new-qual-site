@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by identifying the edges of a solid hexagon as shown.
-Compute $H_*(X; \mathbb{Z})$.
+Compute $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ The three consecutive $a$-arrows and three consecutive $b$-arrows form one direc
 
 ::: pf-step
 Thus the cellular chain complex in positive degrees is
-$$0\to\mathbb Z\xrightarrow{\partial_2}\mathbb Z^2\to0,\qquad \partial_2(1)=(3,3).$$
+$$0\to\ZZ\xrightarrow{\partial_2}\ZZ^2\to0,\qquad \partial_2(1)=(3,3).$$
 
 ::: pf-proof
 The cellular boundary records the exponent sums of $a$ and $b$ in the attaching word.
@@ -44,10 +44,10 @@ The cellular boundary records the exponent sums of $a$ and $b$ in the attaching 
 
 ::: pf-step
 Therefore
-$$\boxed{H_k(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,\\\mathbb Z\oplus\mathbb Z/3,&k=1,\\0,&k\ge2.\end{cases}}$$
+$$\boxed{H_k(X;\ZZ)\cong\begin{cases}\ZZ,&k=0,\\\ZZ\oplus\ZZ/3,&k=1,\\0,&k\ge2.\end{cases}}$$
 
 ::: pf-proof
-The map $\partial_2$ is injective, so $H_2=0$, and $\operatorname{coker}(3,3)\cong\mathbb Z\oplus\mathbb Z/3$ by Smith normal form.
+The map $\partial_2$ is injective, so $H_2=0$, and $\operatorname{coker}(3,3)\cong\ZZ\oplus\ZZ/3$ by Smith normal form.
 :::
 
 :::

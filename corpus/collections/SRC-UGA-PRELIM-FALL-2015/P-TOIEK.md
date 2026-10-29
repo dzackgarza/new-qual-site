@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $(f_n)$ is a sequence of bounded functions from $\mathbb R$ to $\mathbb R$ that converges uniformly to a function $f$. Prove that there is an $M>0$ such that
+Suppose $(f_n)$ is a sequence of bounded functions from $\RR$ to $\RR$ that converges uniformly to a function $f$. Prove that there is an $M>0$ such that
 \[
 |f_n(x)|\le M
 \]
@@ -42,7 +42,7 @@ for all natural numbers $n$ and all real numbers $x$.
 :::
 
 ::: {.solution}
-**Goal:** Let $E$ be a set, and let $(f_n)_{n=1}^\infty$ be a sequence of functions $f_n: E \to \mathbb{R}$ such that each $f_n$ is bounded on $E$. Suppose $f_n \to g$ uniformly on $E$. Prove that the sequence $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$, i.e., there exists a constant $M > 0$ such that $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
+**Goal:** Let $E$ be a set, and let $(f_n)_{n=1}^\infty$ be a sequence of functions $f_n: E \to \RR$ such that each $f_n$ is bounded on $E$. Suppose $f_n \to g$ uniformly on $E$. Prove that the sequence $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$, i.e., there exists a constant $M > 0$ such that $|f_n(x)| \le M$ for all $n \in \NN$ and all $x \in E$.
 
 ::: pf
 
@@ -89,7 +89,7 @@ By hypothesis, each function $f_k$ is bounded on $E$.
 :::
 
 ::: {.pf-step #s4}
-Define $M = \max\{M_1, M_2, \dots, M_{N-1}, M_N + 2\}$. Then $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
+Define $M = \max\{M_1, M_2, \dots, M_{N-1}, M_N + 2\}$. Then $|f_n(x)| \le M$ for all $n \in \NN$ and all $x \in E$.
 
 ::: pf-proof
 
@@ -103,7 +103,7 @@ $$|f_n(x)| < |f_N(x)| + 2 \le M_N + 2 \le M.$$
 :::
 
 ::: pf-step
-In all cases, $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
+In all cases, $|f_n(x)| \le M$ for all $n \in \NN$ and all $x \in E$.
 :::
 
 :::

@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Prove or disprove each of the following statements.
 
-(f) If $E \subset \mathbb{R}$ and
+(f) If $E \subset \RR$ and
 
-    $\mu(E) = \inf\{\sum_{I_i \in S} |I_i| : S = \{I_i\}_{i=1}^n \text{ such that } E \subset \union_{i=1}^n I_i \text{ for some } n \in \mathbb{N}\}$
+    $\mu(E) = \inf\{\sum_{I_i \in S} |I_i| : S = \{I_i\}_{i=1}^n \text{ such that } E \subset \union_{i=1}^n I_i \text{ for some } n \in \NN\}$
 
     then $\mu$ coincides with the outer measure of $E$.
 
@@ -51,7 +51,7 @@ $$
 :::
 
 ::: pf-step
-Counterexample: Let $E = \mathbb{Q} \cap [0, 1]$.
+Counterexample: Let $E = \QQ \cap [0, 1]$.
 :::
 
 ::: pf-step
@@ -73,7 +73,7 @@ Let $\{I_1, \dots, I_n\}$ be any finite collection of open intervals such that $
 :::
 
 ::: pf-step
-Since $E = \mathbb Q \cap [0, 1]$ is dense in $[0, 1]$, the closure of $E$ is $\overline{E} = [0, 1]$.
+Since $E = \QQ \cap [0, 1]$ is dense in $[0, 1]$, the closure of $E$ is $\overline{E} = [0, 1]$.
 :::
 
 ::: pf-step
@@ -189,7 +189,7 @@ Since $E \in \mathcal B \subseteq \mathcal S$, by definition of $\mathcal S$ we 
 :::
 
 ::: pf-qed
-Step [](#statement-f-false){.pf-ref} disproves (f) with $E = \mathbb Q \cap [0, 1]$, and step [](#statement-g-true){.pf-ref} proves (g).
+Step [](#statement-f-false){.pf-ref} disproves (f) with $E = \QQ \cap [0, 1]$, and step [](#statement-g-true){.pf-ref} proves (g).
 :::
 
 :::

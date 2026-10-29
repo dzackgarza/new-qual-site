@@ -20,11 +20,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be differentiable and suppose
+Let $f:\RR\to\RR$ be differentiable and suppose
 \[
 f'(x)>f(x)
 \]
-for every $x\in\mathbb R$. If $f(x_0)=0$, prove that
+for every $x\in\RR$. If $f(x_0)=0$, prove that
 \[
 f(x)>0
 \]

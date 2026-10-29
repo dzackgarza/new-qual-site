@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $D : = \left\{ z \in \mathbb { C } : | z - i | > 1 , \mathrm { R e } ( z ) > 0 \right\}$ onto the open upper half plane.
+Find a conformal map from $D : = \left\{ z \in \CC : | z - i | > 1 , \mathrm { R e } ( z ) > 0 \right\}$ onto the open upper half plane.
 :::
 
 ::: {.solution}

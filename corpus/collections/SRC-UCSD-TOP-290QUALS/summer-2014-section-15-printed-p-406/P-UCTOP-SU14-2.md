@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $K \subseteq V$ be a knotted solid torus $S^1 \times B^2$ inside a larger solid torus $V = S^1 \times B^2$, and let $X = V - \overset{\circ}{K}$ be the complement, obtained by removing the interior of $K$.
-Compute $H_*(X; \mathbb{Z})$.
+Compute $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ Removing the interior of the knotted solid torus $K$ from $V=S^3\setminus\operat
 ::: {.pf-step #alexander-duality}
 Alexander duality for a two-component link $L\subset S^3$ gives
 $$
-\widetilde H_i(S^3\setminus L;\mathbb Z)\cong \widetilde H^{2-i}(L;\mathbb Z).
+\widetilde H_i(S^3\setminus L;\ZZ)\cong \widetilde H^{2-i}(L;\ZZ).
 $$
 
 ::: pf-proof
@@ -58,13 +58,13 @@ This is Alexander duality for the compact locally contractible subset $L\subset 
 ::: {.pf-step #link-cohomology}
 Since $L=S^1\sqcup S^1$,
 $$
-\widetilde H^0(L)\cong\mathbb Z,
-\qquad H^1(L)\cong\mathbb Z^2,
+\widetilde H^0(L)\cong\ZZ,
+\qquad H^1(L)\cong\ZZ^2,
 $$
 and all other reduced cohomology vanishes.
 
 ::: pf-proof
-The reduced degree-zero cohomology of two components is $\mathbb Z$, and each circle contributes one degree-one generator.
+The reduced degree-zero cohomology of two components is $\ZZ$, and each circle contributes one degree-one generator.
 :::
 
 :::
@@ -72,10 +72,10 @@ The reduced degree-zero cohomology of two components is $\mathbb Z$, and each ci
 ::: pf-step
 Hence
 $$
-\boxed{H_i(X;\mathbb Z)\cong
+\boxed{H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,2,\\
-\mathbb Z^2,&i=1,\\
+\ZZ,&i=0,2,\\
+\ZZ^2,&i=1,\\
 0,&i\ge3.
 \end{cases}}
 $$

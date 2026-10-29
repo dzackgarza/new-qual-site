@@ -11,7 +11,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if $g:\mathbb R^n\to\mathbb R^n$ is continuous, then its graph is closed in $\mathbb R^n\times\mathbb R^n$.
+Prove that if $g:\RR^n\to\RR^n$ is continuous, then its graph is closed in $\RR^n\times\RR^n$.
 Is the converse true?
 :::
 
@@ -20,7 +20,7 @@ Let
 $$
 \Gamma_g
 \coloneqq
-\{(x,g(x)):x\in\mathbb R^n\}
+\{(x,g(x)):x\in\RR^n\}
 $$
 denote the graph of $g$.
 
@@ -31,7 +31,7 @@ If $g$ is continuous and
 $$
 (x_m,g(x_m))\longrightarrow(x,y)
 $$
-in $\mathbb R^n\times\mathbb R^n$, then
+in $\RR^n\times\RR^n$, then
 $$
 y=g(x).
 $$
@@ -49,7 +49,7 @@ Continuity of $g$ gives
 $$
 g(x_m)\longrightarrow g(x).
 $$
-Limits in $\mathbb R^n$ are unique, hence $y=g(x)$.
+Limits in $\RR^n$ are unique, hence $y=g(x)$.
 :::
 
 :::
@@ -58,7 +58,7 @@ Limits in $\mathbb R^n$ are unique, hence $y=g(x)$.
 If $g$ is continuous, then $\Gamma_g$ is closed.
 
 ::: pf-proof
-[](#limits-in-graph){.pf-ref} shows that every convergent sequence of points of $\Gamma_g$ has its limit again in $\Gamma_g$. Since $\mathbb R^n\times\mathbb R^n$ is a metric space, sequentially closed subsets are closed.
+[](#limits-in-graph){.pf-ref} shows that every convergent sequence of points of $\Gamma_g$ has its limit again in $\Gamma_g$. Since $\RR^n\times\RR^n$ is a metric space, sequentially closed subsets are closed.
 :::
 
 :::
@@ -69,7 +69,7 @@ The converse is false already for $n=1$.
 ::: pf-proof
 Define
 $$
-h:\mathbb R\longrightarrow\mathbb R,
+h:\RR\longrightarrow\RR,
 \qquad
 h(x)=
 \begin{cases}
@@ -87,14 +87,14 @@ does not tend to $h(0)=0$.
 :::
 
 ::: {.pf-step #counterexample-closed-graph}
-The graph of the function $h$ from [](#counterexample){.pf-ref} is closed in $\mathbb R^2$.
+The graph of the function $h$ from [](#counterexample){.pf-ref} is closed in $\RR^2$.
 
 ::: pf-proof
 Suppose
 $$
 (x_m,h(x_m))\longrightarrow(x,y)
 $$
-in $\mathbb R^2$.
+in $\RR^2$.
 
 If $x\neq0$, then $x_m\neq0$ for all sufficiently large $m$, so
 $$

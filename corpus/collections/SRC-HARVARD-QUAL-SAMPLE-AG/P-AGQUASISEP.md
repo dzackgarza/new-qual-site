@@ -60,7 +60,7 @@ A scheme $X$ is quasi-separated if and only if the intersection of any two affin
 ::: pf-proof
 Regard quasi-separatedness of $X$ as quasi-separatedness of the structure morphism
 \[
-X\longrightarrow\operatorname{Spec}\mathbb Z.
+X\longrightarrow\operatorname{Spec}\ZZ.
 \]
 
 For affine opens $U,V\subseteq X$, the inverse image of

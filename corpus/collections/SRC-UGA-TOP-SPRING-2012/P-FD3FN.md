@@ -138,7 +138,7 @@ The antipodal map on \(S^2\) has degree
 
 More generally, the antipodal map on \(S^n\) is the restriction of the linear automorphism
 \[
--I:\mathbb R^{n+1}\to\mathbb R^{n+1}.
+-I:\RR^{n+1}\to\RR^{n+1}.
 \]
 Its degree is the sign of
 \[
@@ -199,7 +199,7 @@ For part (ii), identify
 \[
 S^3
 =
-\left\{(z_1,z_2)\in\mathbb C^2:
+\left\{(z_1,z_2)\in\CC^2:
 |z_1|^2+|z_2|^2=1\right\}
 \]
 and define
@@ -219,7 +219,7 @@ Multiplication by \(i\) preserves complex absolute value, so
 =1.
 \]
 Thus the formula maps \(S^3\) to itself.
-It is the restriction of a linear map on \(\mathbb R^4\), hence is continuous.
+It is the restriction of a linear map on \(\RR^4\), hence is continuous.
 
 :::
 

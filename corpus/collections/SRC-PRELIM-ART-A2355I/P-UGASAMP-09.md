@@ -30,7 +30,7 @@ Find the three cube roots of $i$ and compute
 The complex number \(i\) has polar representations
 \[
 i=e^{i(\pi/2+2\pi m)},
-\qquad m\in\mathbb Z.
+\qquad m\in\ZZ.
 \]
 
 
@@ -39,7 +39,7 @@ i=e^{i(\pi/2+2\pi m)},
 The modulus of \(i\) is \(1\), and its arguments are exactly
 \[
 \frac{\pi}{2}+2\pi m,
-\qquad m\in\mathbb Z.
+\qquad m\in\ZZ.
 \]
 Hence Euler's formula gives the displayed representations.
 

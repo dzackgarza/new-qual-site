@@ -32,8 +32,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $Tf(x) = \int_{\mathbb{R}^n} K(x,y) f(y) \, dy$, where $K(x,y)$ is a nonnegative measurable function on $\mathbb{R}^n \times \mathbb{R}^n$.
-Suppose that there are measurable functions $p(x) > 0$ and $q(x) > 0$ on $\mathbb{R}^n$ and real numbers $\alpha, \beta > 0$ for which
+Let $Tf(x) = \int_{\RR^n} K(x,y) f(y) \, dy$, where $K(x,y)$ is a nonnegative measurable function on $\RR^n \times \RR^n$.
+Suppose that there are measurable functions $p(x) > 0$ and $q(x) > 0$ on $\RR^n$ and real numbers $\alpha, \beta > 0$ for which
 
 $$\int K(x,y) q(y) \, dy \leq \alpha p(x),$$
 
@@ -42,7 +42,7 @@ for almost all $x$ and
 $$\int p(x) K(x,y) \, dx \leq \beta q(y)$$
 
 for almost all $y$.
-Show that for $f \in L^2(\mathbb{R}^n)$ we have
+Show that for $f \in L^2(\RR^n)$ we have
 
 $$\|Tf\|_{L^2} \leq \sqrt{\alpha \beta} \|f\|_{L^2}.$$
 
@@ -50,7 +50,7 @@ $$\|Tf\|_{L^2} \leq \sqrt{\alpha \beta} \|f\|_{L^2}.$$
 :::
 
 ::: {.solution}
-Let $f\in L^2(\mathbb R^n)$.
+Let $f\in L^2(\RR^n)$.
 
 ::: pf
 
@@ -60,17 +60,17 @@ The integral defining $Tf$ converges absolutely almost everywhere.
 ::: pf-proof
 Set
 $$
-B(x)=\int_{\mathbb R^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
+B(x)=\int_{\RR^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
 $$
 This is a nonnegative measurable function, possibly
 initially infinite. Tonelli and the second kernel inequality
 give [@Fol13]
 $$
 \begin{aligned}
-\int_{\mathbb R^n}p(x)B(x)\,dx
-&=\int_{\mathbb R^n}\frac{|f(y)|^2}{q(y)}
-\left(\int_{\mathbb R^n}p(x)K(x,y)\,dx\right)dy\\
-&\leq\beta\int_{\mathbb R^n}|f(y)|^2\,dy<\infty.
+\int_{\RR^n}p(x)B(x)\,dx
+&=\int_{\RR^n}\frac{|f(y)|^2}{q(y)}
+\left(\int_{\RR^n}p(x)K(x,y)\,dx\right)dy\\
+&\leq\beta\int_{\RR^n}|f(y)|^2\,dy<\infty.
 \end{aligned}
 $$
 Since $p(x)>0$, this implies $B(x)<\infty$ almost
@@ -112,12 +112,12 @@ Integrating in $x$ and using Tonelli's theorem gives [@Fol13]
 \begin{aligned}
 \|Tf\|_2^2
 &\le \alpha
-\int_{\mathbb R^n} p(x)
-\int_{\mathbb R^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy\,dx\\
+\int_{\RR^n} p(x)
+\int_{\RR^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy\,dx\\
 &=\alpha
-\int_{\mathbb R^n}\frac{|f(y)|^2}{q(y)}
-\left(\int_{\mathbb R^n}p(x)K(x,y)\,dx\right)dy\\
-&\le \alpha\beta\int_{\mathbb R^n}|f(y)|^2\,dy
+\int_{\RR^n}\frac{|f(y)|^2}{q(y)}
+\left(\int_{\RR^n}p(x)K(x,y)\,dx\right)dy\\
+&\le \alpha\beta\int_{\RR^n}|f(y)|^2\,dy
 =\alpha\beta\|f\|_2^2.
 \end{aligned}
 \]

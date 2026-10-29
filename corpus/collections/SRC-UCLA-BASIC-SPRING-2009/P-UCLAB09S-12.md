@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F:\mathbb R^3\to\mathbb R^3$ and $\rho:\mathbb R^3\to\mathbb R$ be smooth.
+Let $F:\RR^3\to\RR^3$ and $\rho:\RR^3\to\RR$ be smooth.
 Prove that
 \[
 \operatorname{div}F=\rho
@@ -129,7 +129,7 @@ G(p)>0
 \]
 at some point
 \[
-p\in\mathbb R^3.
+p\in\RR^3.
 \]
 Then there exists a ball $\Omega$ centered at $p$ such that
 \[
@@ -249,7 +249,7 @@ G(p)=0
 \]
 for every
 \[
-p\in\mathbb R^3.
+p\in\RR^3.
 \]
 
 :::

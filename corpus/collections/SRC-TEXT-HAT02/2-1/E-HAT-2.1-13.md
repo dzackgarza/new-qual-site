@@ -67,7 +67,7 @@ The same holds in degree zero.
 
 For a nonempty space $Z$,
 \[
-\widetilde H_0(Z)=\ker\bigl(\epsilon:H_0(Z)\to\mathbb Z\bigr),
+\widetilde H_0(Z)=\ker\bigl(\epsilon:H_0(Z)\to\ZZ\bigr),
 \]
 where $\epsilon$ sends each path-component generator to $1$. Every continuous map commutes with augmentation:
 \[

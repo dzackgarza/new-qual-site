@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 The Gamma function $\Gamma(z) = \int_0^\infty x^{z-1} e^{-x}\,\mathrm{d}x$ is originally defined only for $\operatorname{Re} z > 0$; it can however be analytically continued to negative values of $z$.
-Show that, as $z \to -n$, where $n \in \mathbb{N}_0$, $\Gamma(z)$ has poles; compute the order and the residue of these poles.
+Show that, as $z \to -n$, where $n \in \NN_0$, $\Gamma(z)$ has poles; compute the order and the residue of these poles.
 :::
 
 ::: {.solution}

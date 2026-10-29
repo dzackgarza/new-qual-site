@@ -29,7 +29,7 @@ Let $\{\alpha_1, \ldots, \alpha_n\}$ be the set of zeros of $f$ in $E$.
 
 (a) Prove that if $\operatorname{Gal}(E/F)$ is abelian, then $E = F[\alpha_i]$ for every $i$.
 
-(b) Prove that if $n = p$ is prime, then $E = F[\alpha_1]$ implies that $\operatorname{Gal}(E/F) \simeq \mathbb{Z}/p\mathbb{Z}$.
+(b) Prove that if $n = p$ is prime, then $E = F[\alpha_1]$ implies that $\operatorname{Gal}(E/F) \simeq \ZZ/p\ZZ$.
 :::
 
 ::: {.solution}
@@ -148,7 +148,7 @@ Hence
 \]
 so
 \[
-\operatorname{Gal}(E/F)\cong\mathbb Z/p\mathbb Z.
+\operatorname{Gal}(E/F)\cong\ZZ/p\ZZ.
 \]
 
 ::: pf-proof

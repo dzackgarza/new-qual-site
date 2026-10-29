@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.3-27
 kind: problem
-title: Normal form for skew-symmetric forms over $\mathbb{Z}$
+title: Normal form for skew-symmetric forms over $\ZZ$
 classification:
   areas:
   - topology
@@ -26,15 +26,15 @@ audit:
 ---
 
 ::: {.problem}
-Show that after a suitable change of basis, a skew-symmetric nonsingular bilinear form over $\mathbb{Z}$ can be represented by a matrix consisting of $2 \times 2$ blocks $\bigl(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\bigr)$ along the diagonal and zeros elsewhere.
+Show that after a suitable change of basis, a skew-symmetric nonsingular bilinear form over $\ZZ$ can be represented by a matrix consisting of $2 \times 2$ blocks $\bigl(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\bigr)$ along the diagonal and zeros elsewhere.
 :::
 
 ::: {.solution}
 Let $L$ be a free abelian group of finite rank with a skew-symmetric nonsingular bilinear form
 \[
-B:L\times L\to\mathbb Z.
+B:L\times L\to\ZZ.
 \]
-Nonsingularity over $\mathbb Z$ means the adjoint map $L\to L^*$ is an isomorphism.
+Nonsingularity over $\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
 
 Choose a primitive element $e\in L$. Since the functional $B(e,-)$ is primitive in $L^*$, there exists $f\in L$ with
 \[

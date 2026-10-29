@@ -52,8 +52,8 @@ Since $X$ is contractible and $A$ is totally disconnected, the long exact sequen
 \]
 Each point of $A$ is a path component, so
 \[
-H_0(A)\cong\bigoplus_{a\in A}\mathbb Z[a],
-\qquad H_0(X)\cong\mathbb Z,
+H_0(A)\cong\bigoplus_{a\in A}\ZZ[a],
+\qquad H_0(X)\cong\ZZ,
 \]
 and $\epsilon$ is the augmentation map. Hence
 \[
@@ -93,7 +93,7 @@ The group $H_1(X/A)$ is uncountable.
 
 Let $C_n$ denote the $n$th circle of the shrinking wedge. For each binary sequence
 \[
-\varepsilon=(\varepsilon_1,\varepsilon_2,\dots)\in\{0,1\}^{\mathbb N},
+\varepsilon=(\varepsilon_1,\varepsilon_2,\dots)\in\{0,1\}^{\NN},
 \]
 construct a loop $\gamma_\varepsilon$ by traversing $C_n$ once if $\varepsilon_n=1$ and staying at the wedge point if $\varepsilon_n=0$, using pairwise consecutive time intervals whose lengths tend to zero and accumulate only at the endpoint of the parameter interval. Because the circles $C_n$ shrink to the wedge point, this infinite concatenation is continuous.
 
@@ -103,9 +103,9 @@ r_n:X/A\longrightarrow C_n
 \]
 that collapses all other circles to the wedge point. Hence the induced homomorphism
 \[
-(r_n)_*:H_1(X/A)\longrightarrow H_1(C_n)\cong\mathbb Z
+(r_n)_*:H_1(X/A)\longrightarrow H_1(C_n)\cong\ZZ
 \]
-sends $[\gamma_\varepsilon]$ to $\varepsilon_n$. Therefore distinct binary sequences give distinct homology classes. Since $\{0,1\}^{\mathbb N}$ is uncountable, so is $H_1(X/A)$.
+sends $[\gamma_\varepsilon]$ to $\varepsilon_n$. Therefore distinct binary sequences give distinct homology classes. Since $\{0,1\}^{\NN}$ is uncountable, so is $H_1(X/A)$.
 
 :::
 

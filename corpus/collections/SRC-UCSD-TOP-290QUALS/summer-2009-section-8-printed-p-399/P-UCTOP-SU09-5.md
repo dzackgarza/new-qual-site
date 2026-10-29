@@ -36,7 +36,7 @@ If $M$ is disconnected, the argument applies to any component meeting the bounda
 ::: {.pf-step #boundary-sends-to-fundamental-class}
 The boundary homomorphism in the long exact sequence of the pair sends the relative fundamental class to the fundamental class of the boundary:
 $$
-\partial[M,\partial M]=[\partial M]\in H_{n-1}(\partial M;\mathbb Z).
+\partial[M,\partial M]=[\partial M]\in H_{n-1}(\partial M;\ZZ).
 $$
 
 ::: pf-proof

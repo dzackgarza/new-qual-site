@@ -29,12 +29,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $v$ be a trigonometric polynomial in two variables, i.e. $$v(x,y) = \sum_{n,m\in\mathbb{Z}} a_{n,m} e^{2\pi i(nx+my)}$$ with only finitely many nonzero $a_{n,m}$.
+Let $v$ be a trigonometric polynomial in two variables, i.e. $$v(x,y) = \sum_{n,m\in\ZZ} a_{n,m} e^{2\pi i(nx+my)}$$ with only finitely many nonzero $a_{n,m}$.
 If $u=v-\Delta v$ where $\Delta = \partial_x^2 + \partial_y^2$ is the Laplacian, prove that $$||v||_{L^\infty([0,1]^2)} \le C||u||_{L^2([0,1]^2)}$$ for some constant $C$ independent of $v$.
 :::
 
 ::: {.solution}
-For $(n,m)\in\mathbb Z^2$, set
+For $(n,m)\in\ZZ^2$, set
 \[
 \lambda_{n,m}=1+4\pi^2(n^2+m^2).
 \]
@@ -46,7 +46,7 @@ For $(n,m)\in\mathbb Z^2$, set
 The Fourier expansion of $u=v-\Delta v$ is
 \[
 u(x,y)
-=\sum_{n,m\in\mathbb Z}\lambda_{n,m}a_{n,m}e^{2\pi i(nx+my)}.
+=\sum_{n,m\in\ZZ}\lambda_{n,m}a_{n,m}e^{2\pi i(nx+my)}.
 \]
 
 ::: pf-proof
@@ -75,7 +75,7 @@ Therefore the coefficient of the $(n,m)$ mode in $v-\Delta v$ is
 One has
 \[
 \|u\|_{L^2([0,1]^2)}^2
-=\sum_{n,m\in\mathbb Z}\lambda_{n,m}^2|a_{n,m}|^2.
+=\sum_{n,m\in\ZZ}\lambda_{n,m}^2|a_{n,m}|^2.
 \]
 
 ::: pf-proof
@@ -83,7 +83,7 @@ One has
 The functions
 \[
 e^{2\pi i(nx+my)},
-\qquad (n,m)\in\mathbb Z^2,
+\qquad (n,m)\in\ZZ^2,
 \]
 are orthonormal in $L^2([0,1]^2)$.
 Applying the Pythagorean identity to the finite expansion in step [](#s1){.pf-ref} gives the displayed equality.
@@ -96,7 +96,7 @@ Applying the Pythagorean identity to the finite expansion in step [](#s1){.pf-re
 
 The numerical series
 \[
-S=\sum_{n,m\in\mathbb Z}\frac1{\lambda_{n,m}^2}
+S=\sum_{n,m\in\ZZ}\frac1{\lambda_{n,m}^2}
 \]
 converges.
 
@@ -122,7 +122,7 @@ Therefore
 \[
 S
 \le
-\left(\sum_{n\in\mathbb Z}\frac1{1+n^2}\right)^2
+\left(\sum_{n\in\ZZ}\frac1{1+n^2}\right)^2
 <\infty,
 \]
 since the one-dimensional series is dominated in its tails by a constant multiple of $\sum_{n\ge1}n^{-2}$.

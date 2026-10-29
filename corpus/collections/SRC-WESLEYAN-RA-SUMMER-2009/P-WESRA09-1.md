@@ -87,7 +87,7 @@ for every measurable set \(E\).
 
 ::: {.pf-step #s1-6}
 
-A normed vector space is a vector space \(V\) over \(\mathbb R\) or \(\mathbb C\) together with a function \(\|\cdot\|:V\to[0,\infty)\) such that, for all \(x,y\in V\) and scalars \(\lambda\),
+A normed vector space is a vector space \(V\) over \(\RR\) or \(\CC\) together with a function \(\|\cdot\|:V\to[0,\infty)\) such that, for all \(x,y\in V\) and scalars \(\lambda\),
 \[
 \|x\|=0\Longleftrightarrow x=0,
 \qquad

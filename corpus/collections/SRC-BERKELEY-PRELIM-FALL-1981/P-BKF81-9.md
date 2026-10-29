@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M_{2\times2}(\mathbb R)$ be the space of real $2\times2$ matrices and
+Let $M_{2\times2}(\RR)$ be the space of real $2\times2$ matrices and
 \[
 A=\begin{pmatrix}1&2\\-1&3\end{pmatrix},\qquad
 B=\begin{pmatrix}2&1\\0&4\end{pmatrix}.
@@ -52,7 +52,7 @@ Compute the trace of $L$.
 
 ::: pf-proof
 
-Let $E_{ij}$ be the standard basis of $M_{2\times2}(\mathbb R)$. For a
+Let $E_{ij}$ be the standard basis of $M_{2\times2}(\RR)$. For a
 general matrix $X=(x_{ij})$,
 $$
 (AXB)_{ij}=\sum_{k,\ell}a_{ik}x_{k\ell}b_{\ell j}.

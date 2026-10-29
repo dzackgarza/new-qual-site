@@ -51,7 +51,7 @@ This is a real nonzero matrix with
 $$
 A^2=0.
 $$
-Thus its only eigenvalue is $0$. If $A$ were diagonalizable over $\mathbb R$, it would be similar to a diagonal matrix all of whose diagonal entries are $0$, hence to the zero matrix. Similarity to the zero matrix would force $A=0$, a contradiction.
+Thus its only eigenvalue is $0$. If $A$ were diagonalizable over $\RR$, it would be similar to a diagonal matrix all of whose diagonal entries are $0$, hence to the zero matrix. Similarity to the zero matrix would force $A=0$, a contradiction.
 
 :::
 
@@ -89,7 +89,7 @@ A=
 0&0
 \end{pmatrix}
 $$
-is a complex matrix. The argument in step [](#s1-1){.pf-ref} is field-independent: $A$ is nonzero, $A^2=0$, and its only eigenvalue is $0$, so it cannot be diagonalizable over $\mathbb C$.
+is a complex matrix. The argument in step [](#s1-1){.pf-ref} is field-independent: $A$ is nonzero, $A^2=0$, and its only eigenvalue is $0$, so it cannot be diagonalizable over $\CC$.
 
 :::
 
@@ -123,7 +123,7 @@ i-i&i^2+1
 \end{pmatrix}
 =0.
 $$
-Hence the only eigenvalue of $B$ is $0$. If $B$ were diagonalizable over $\mathbb C$, it would be similar to the zero diagonal matrix and therefore would itself be zero, contradiction.
+Hence the only eigenvalue of $B$ is $0$. If $B$ were diagonalizable over $\CC$, it would be similar to the zero diagonal matrix and therefore would itself be zero, contradiction.
 
 :::
 

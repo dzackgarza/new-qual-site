@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E,F\subset\mathbb R$ be measurable sets of finite measure.
+Let $E,F\subset\RR$ be measurable sets of finite measure.
 
 (a) Show that $\chi_E*\chi_F$ is continuous.
 
@@ -48,9 +48,9 @@ The convolution is continuous.
 
 Since $E$ and $F$ have finite measure,
 \[
-\chi_E,\chi_F\in L^2(\mathbb R).
+\chi_E,\chi_F\in L^2(\RR).
 \]
-For $h\in\mathbb R$,
+For $h\in\RR$,
 \[
 \begin{aligned}
 | (\chi_E*\chi_F)(x+h)-(\chi_E*\chi_F)(x) |
@@ -73,7 +73,7 @@ For every $x$,
 \[
 \begin{aligned}
 n(\chi_E*\chi_{[0,1/n]})(x)
-&=n\int_{\mathbb R}\chi_E(y)\chi_{[0,1/n]}(x-y)\,dy\\
+&=n\int_{\RR}\chi_E(y)\chi_{[0,1/n]}(x-y)\,dy\\
 &=n\int_{x-1/n}^{x}\chi_E(y)\,dy.
 \end{aligned}
 \]

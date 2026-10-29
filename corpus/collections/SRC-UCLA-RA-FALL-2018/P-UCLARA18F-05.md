@@ -29,7 +29,7 @@ Hint: Consider the closed sets
 F_{N,\varepsilon}=\{y\in[0,1]:|f_n(y)-f_m(y)|\le\varepsilon\text{ for all }n,m>N\}.
 \]
 
-(b) Prove that $f$ cannot be the characteristic function $\chi_{\mathbb Q\cap[0,1]}$, where $\mathbb Q$ is the set of rational numbers.
+(b) Prove that $f$ cannot be the characteristic function $\chi_{\QQ\cap[0,1]}$, where $\QQ$ is the set of rational numbers.
 :::
 
 ::: {.solution}
@@ -130,7 +130,7 @@ This is exactly step [](#s1-3){.pf-ref} for every \(x\in D_\varepsilon\).
 
 No continuous function \(g\) on a nonempty open interval \(I\subseteq[0,1]\) can satisfy
 \[
-\sup_{y\in I}|g(y)-\chi_{\mathbb Q\cap[0,1]}(y)|<\frac12.
+\sup_{y\in I}|g(y)-\chi_{\QQ\cap[0,1]}(y)|<\frac12.
 \]
 
 
@@ -156,14 +156,14 @@ Continuity at \(x\) would imply simultaneously \(g(x)\ge1-c\) and \(g(x)\le c\),
 
 ::: {.pf-step #s1-6}
 
-The pointwise limit \(f\) cannot equal \(\boxed{\chi_{\mathbb Q\cap[0,1]}}\).
+The pointwise limit \(f\) cannot equal \(\boxed{\chi_{\QQ\cap[0,1]}}\).
 
 
 ::: pf-proof
 
 Assume otherwise and apply part (a), step [](#s1-4){.pf-ref}, with \(\varepsilon=1/3\). Choose \(x\in D_{1/3}\), and let \(I\ni x\) and \(N_x\) be supplied by step [](#s1-3){.pf-ref}. For any \(n>N_x\), the continuous function \(f_n\) satisfies
 \[
-\sup_{y\in I}|f_n(y)-\chi_{\mathbb Q\cap[0,1]}(y)|\le\frac13<\frac12,
+\sup_{y\in I}|f_n(y)-\chi_{\QQ\cap[0,1]}(y)|\le\frac13<\frac12,
 \]
 contradicting step [](#s1-5){.pf-ref}.
 

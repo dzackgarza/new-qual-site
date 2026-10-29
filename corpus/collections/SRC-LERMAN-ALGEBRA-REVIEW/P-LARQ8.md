@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $m,n\in\mathbb Z$ are relatively prime if and only if $m\mathbb Z+n\mathbb Z=\mathbb Z$.
+Prove that $m,n\in\ZZ$ are relatively prime if and only if $m\ZZ+n\ZZ=\ZZ$.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ Prove that $m,n\in\mathbb Z$ are relatively prime if and only if $m\mathbb Z+n\m
 
 ::: pf-step
 
-If $m$ and $n$ are relatively prime, then they generate $\mathbb Z$.
+If $m$ and $n$ are relatively prime, then they generate $\ZZ$.
 
 ::: pf-proof
 
@@ -40,7 +40,7 @@ Relative primality means $\gcd(m,n)=1$. By Bezout's identity there exist integer
 $$
 am+bn=1.
 $$
-Hence $1\in m\mathbb Z+n\mathbb Z$. Since $m\mathbb Z+n\mathbb Z$ is an ideal of $\mathbb Z$ containing $1$, it equals all of $\mathbb Z$.
+Hence $1\in m\ZZ+n\ZZ$. Since $m\ZZ+n\ZZ$ is an ideal of $\ZZ$ containing $1$, it equals all of $\ZZ$.
 
 :::
 
@@ -48,15 +48,15 @@ Hence $1\in m\mathbb Z+n\mathbb Z$. Since $m\mathbb Z+n\mathbb Z$ is an ideal of
 
 ::: pf-step
 
-If $m\mathbb Z+n\mathbb Z=\mathbb Z$, then $m$ and $n$ are relatively prime.
+If $m\ZZ+n\ZZ=\ZZ$, then $m$ and $n$ are relatively prime.
 
 ::: pf-proof
 
-The equality implies $1\in m\mathbb Z+n\mathbb Z$, so there exist integers $a,b$ with
+The equality implies $1\in m\ZZ+n\ZZ$, so there exist integers $a,b$ with
 $$
 am+bn=1.
 $$
-Any common divisor $d$ of $m$ and $n$ divides every integer linear combination of them, hence divides $1$. Therefore every common divisor is a unit in $\mathbb Z$, so $\gcd(m,n)=1$. Thus $m$ and $n$ are relatively prime.
+Any common divisor $d$ of $m$ and $n$ divides every integer linear combination of them, hence divides $1$. Therefore every common divisor is a unit in $\ZZ$, so $\gcd(m,n)=1$. Thus $m$ and $n$ are relatively prime.
 
 :::
 

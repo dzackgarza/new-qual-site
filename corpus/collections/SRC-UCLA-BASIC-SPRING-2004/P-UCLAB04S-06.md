@@ -16,19 +16,19 @@ audit:
 ---
 
 ::: {.problem}
-Let $\|\cdot\|$ be any norm on $\mathbb R^n$, and let $\|\cdot\|_2$ be the Euclidean norm.
+Let $\|\cdot\|$ be any norm on $\RR^n$, and let $\|\cdot\|_2$ be the Euclidean norm.
 
 (a) Prove that there exists $d>0$ such that
 \[
 \|x\|\leq d\|x\|_2
 \]
-for every $x\in\mathbb R^n$, and use this to show that $N(x)=\|x\|$ is continuous in the usual topology on $\mathbb R^n$.
+for every $x\in\RR^n$, and use this to show that $N(x)=\|x\|$ is continuous in the usual topology on $\RR^n$.
 
 (b) Prove that there exists $c>0$ such that
 \[
 \|x\|\geq c\|x\|_2
 \]
-for every $x\in\mathbb R^n$.
+for every $x\in\RR^n$.
 
 Hint: use continuity of $N$ on the sphere $\{x:\|x\|_2=1\}$.
 
@@ -41,7 +41,7 @@ Let
 \[
 e_1,\ldots,e_n
 \]
-be the standard basis of $\mathbb R^n$.
+be the standard basis of $\RR^n$.
 
 ::: pf
 
@@ -49,7 +49,7 @@ be the standard basis of $\mathbb R^n$.
 
 For every
 \[
-x=(x_1,\ldots,x_n)\in\mathbb R^n,
+x=(x_1,\ldots,x_n)\in\RR^n,
 \]
 one has
 \[
@@ -94,7 +94,7 @@ such that
 \|x\|\le d\|x\|_2
 }
 \]
-for every $x\in\mathbb R^n$.
+for every $x\in\RR^n$.
 
 
 ::: pf-proof
@@ -172,7 +172,7 @@ Let
 \[
 S^{n-1}
 =
-\{x\in\mathbb R^n:\|x\|_2=1\}.
+\{x\in\RR^n:\|x\|_2=1\}.
 \]
 Then there exists
 \[
@@ -208,7 +208,7 @@ c>0.
 
 ::: {.pf-step #s1-5}
 
-For every $x\in\mathbb R^n$,
+For every $x\in\RR^n$,
 \[
 \boxed{
 \|x\|\ge c\|x\|_2
@@ -257,7 +257,7 @@ v_1,\ldots,v_n
 of $L$.
 Define
 \[
-\Phi:\mathbb R^n\to L
+\Phi:\RR^n\to L
 \]
 by
 \[
@@ -275,12 +275,12 @@ such that
 \ge
 c_L\|a\|_2
 \]
-for every $a\in\mathbb R^n$.
+for every $a\in\RR^n$.
 
 
 ::: pf-proof
 
-Define a norm on $\mathbb R^n$ by
+Define a norm on $\RR^n$ by
 \[
 \|a\|_L
 =
@@ -316,7 +316,7 @@ Then
 \[
 \bigl(a^{(k)}\bigr)
 \]
-is a Cauchy sequence in $\mathbb R^n$.
+is a Cauchy sequence in $\RR^n$.
 
 
 ::: pf-proof
@@ -344,7 +344,7 @@ Hence the coordinate sequence is Cauchy in Euclidean space.
 
 There exists
 \[
-a\in\mathbb R^n
+a\in\RR^n
 \]
 such that
 \[
@@ -362,7 +362,7 @@ Euclidean space is complete, so step [](#s1-7){.pf-ref} gives
 \[
 a^{(k)}\to a
 \]
-for some $a\in\mathbb R^n$.
+for some $a\in\RR^n$.
 
 The map $\Phi$ is continuous because
 \[

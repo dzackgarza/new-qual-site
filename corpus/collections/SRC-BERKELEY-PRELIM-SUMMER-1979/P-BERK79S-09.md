@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that every linear transformation $T:\mathbb R^3\to\mathbb R^3$ has
+Prove that every linear transformation $T:\RR^3\to\RR^3$ has
 
 1. a one-dimensional invariant subspace; and
 

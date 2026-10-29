@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS06C
 kind: problem
-title: Non-abelian group of order $p^3$ from $(\mathbb{Z}/p^2\mathbb{Z})^\times$
+title: Non-abelian group of order $p^3$ from $(\ZZ/p^2\ZZ)^\times$
 classification:
   areas:
   - applied-algebra
@@ -22,14 +22,14 @@ audit:
 ::: {.problem}
 Let $p$ be a prime number.
 
-(a) Show that the order of $\widehat{1+p}$ in $(\mathbb{Z}/p^2\mathbb{Z})^\times$ is equal to $p$.
+(a) Show that the order of $\widehat{1+p}$ in $(\ZZ/p^2\ZZ)^\times$ is equal to $p$.
 
 (b) Use (a) above to construct a non-abelian group of order $p^3$.
 
 (c) Describe the non-abelian group you have constructed in (b) above via generators and relations.
 
 Note.
-As usual, $(\mathbb{Z}/p^2\mathbb{Z})^\times$ denotes the multiplicative group consisting of all the congruence classes $\hat{x}\in\mathbb{Z}/p^2\mathbb{Z}$ such that $\gcd(x,p)=1$.
+As usual, $(\ZZ/p^2\ZZ)^\times$ denotes the multiplicative group consisting of all the congruence classes $\hat{x}\in\ZZ/p^2\ZZ$ such that $\gcd(x,p)=1$.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ As usual, $(\mathbb{Z}/p^2\mathbb{Z})^\times$ denotes the multiplicative group c
 ::: pf
 
 ::: {.pf-step #order-of-1-plus-p}
-The class of $1+p$ has order exactly $p$ in $(\mathbb Z/p^2\mathbb Z)^\times$.
+The class of $1+p$ has order exactly $p$ in $(\ZZ/p^2\ZZ)^\times$.
 
 ::: pf-proof
 For every integer $k\ge 0$, the binomial theorem gives
@@ -64,7 +64,7 @@ Thus no positive exponent smaller than $p$ gives the identity, and the order is 
 ::: {.pf-step #phi-automorphism-order-p}
 Let
 \[
-A=\mathbb Z/p^2\mathbb Z
+A=\ZZ/p^2\ZZ
 \]
 with its additive group structure, and define
 \[

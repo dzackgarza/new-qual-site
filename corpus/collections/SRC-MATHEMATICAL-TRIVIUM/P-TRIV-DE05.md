@@ -128,7 +128,7 @@ $$
 y(x)=C_1e^{2x}+C_2e^{-x},
 }
 $$
-with arbitrary constants $C_1,C_2\in\mathbb R$.
+with arbitrary constants $C_1,C_2\in\RR$.
 
 
 ::: pf-proof

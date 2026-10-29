@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Does the Borsuk–Ulam theorem hold for the torus?
-In other words, for every map $f: S^1 \times S^1 \longrightarrow \mathbb{R}^2$ must there exist $(x, y) \in S^1 \times S^1$ such that $f(x, y) = f(-x, -y)$?
+In other words, for every map $f: S^1 \times S^1 \longrightarrow \RR^2$ must there exist $(x, y) \in S^1 \times S^1$ such that $f(x, y) = f(-x, -y)$?
 :::
 
 ::: {.solution}
@@ -37,9 +37,9 @@ No.
 
 ::: {.pf-step #s1}
 
-Regard $S^1$ as the unit circle in $\mathbb R^2$ and define
+Regard $S^1$ as the unit circle in $\RR^2$ and define
 \[
-f:S^1\times S^1\to\mathbb R^2,
+f:S^1\times S^1\to\RR^2,
 \qquad
 f(x,y)=x.
 \]
@@ -51,7 +51,7 @@ This is the composition of the projection
 S^1\times S^1\to S^1,
 \qquad (x,y)\mapsto x,
 \]
-with the inclusion $S^1\hookrightarrow\mathbb R^2$, so it is continuous.
+with the inclusion $S^1\hookrightarrow\RR^2$, so it is continuous.
 
 :::
 
@@ -66,7 +66,7 @@ f(-x,-y)=-x\ne x=f(x,y).
 
 ::: pf-proof
 
-If $x=-x$ as a vector in $\mathbb R^2$, then $2x=0$, hence $x=0$.
+If $x=-x$ as a vector in $\RR^2$, then $2x=0$, hence $x=0$.
 But $x\in S^1$ has norm $1$, so this is impossible.
 
 :::

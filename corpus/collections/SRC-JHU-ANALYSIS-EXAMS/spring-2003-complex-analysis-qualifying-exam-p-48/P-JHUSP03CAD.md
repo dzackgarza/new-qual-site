@@ -33,11 +33,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
+Let $\Delta=\{z\in\CC:|z|<1\}$.
 
 (a) State Rouche's Theorem.
 
-(b) Let $\varphi : \Omega \to \mathbb{C}$ be holomorphic on an open convex set $\Omega$.
+(b) Let $\varphi : \Omega \to \CC$ be holomorphic on an open convex set $\Omega$.
 Show that for $z, w \in \Omega$
 
 $$|\varphi(z) - \varphi(w)| \leq \max_{\xi \in L} |\varphi'(\xi)| \cdot |z - w|,$$

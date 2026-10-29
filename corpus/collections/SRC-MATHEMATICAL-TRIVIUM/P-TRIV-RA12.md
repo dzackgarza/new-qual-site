@@ -89,7 +89,7 @@ The function
 $$
 x\longmapsto\frac{\sin x}{x}
 $$
-is even on $\mathbb R\setminus\{0\}$.
+is even on $\RR\setminus\{0\}$.
 
 
 ::: pf-proof

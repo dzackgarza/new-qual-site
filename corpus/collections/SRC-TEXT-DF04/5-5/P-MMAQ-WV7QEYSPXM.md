@@ -37,7 +37,7 @@ Prove by constructing an explicit isomorphism that
 $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2} K$.
 
 > Suppose $\sigma_{\varphi_1}(K)\inverseof{\sigma}=\varphi_2(K)$
-> so that for some $a\in\mathbb Z$ we have
+> so that for some $a\in\ZZ$ we have
 > $\sigma\varphi_1(k)\inverseof{\sigma}=\varphi_2(k)^a$ for all $k\in K$.
 > Show that the map $\psi:H\rtimes_{\varphi_1}K\rightarrow H\rtimes_{\varphi_2}K$
 > defined by $\psi((h,k))=(\sigma(h),k^a)$ is a homomorphism.

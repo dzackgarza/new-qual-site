@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $n\geq1$, and let $M_n(\mathbb{R})$ be the ring of $n\times n$ matrices over the field of real numbers. What is the dimension of the subspace $V$ of $M_n(\mathbb{R})$ spanned by the matrices of the form $AB-BA$ where $A,B\in M_n(\mathbb{R})$?
+Let $n\geq1$, and let $M_n(\RR)$ be the ring of $n\times n$ matrices over the field of real numbers. What is the dimension of the subspace $V$ of $M_n(\RR)$ spanned by the matrices of the form $AB-BA$ where $A,B\in M_n(\RR)$?
 :::
 
 ::: {.solution}

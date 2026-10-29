@@ -66,7 +66,7 @@ At \(u=0\), \(H\) is the identity; at \(u=1\), its image lies in \(C\); and poin
 Hence
 \[
 \boxed{
-\pi_1(M)\cong\pi_1(C)\cong\mathbb Z}.
+\pi_1(M)\cong\pi_1(C)\cong\ZZ}.
 \]
 
 
@@ -167,7 +167,7 @@ i_*(1)=2}.
 
 ::: pf-proof
 
-By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, one trip around the boundary becomes two trips around the core after applying the deformation retraction that identifies \(\pi_1(M)\) with \(\mathbb Z\).
+By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, one trip around the boundary becomes two trips around the core after applying the deformation retraction that identifies \(\pi_1(M)\) with \(\ZZ\).
 
 :::
 
@@ -213,12 +213,12 @@ Write
 \[
 r_*(1)=m
 \]
-for some \(m\in\mathbb Z\).
+for some \(m\in\ZZ\).
 
 
 ::: pf-proof
 
-Both fundamental groups are isomorphic to \(\mathbb Z\), and every homomorphism \(\mathbb Z\to\mathbb Z\) is determined by the image of \(1\).
+Both fundamental groups are isomorphic to \(\ZZ\), and every homomorphism \(\ZZ\to\ZZ\) is determined by the image of \(1\).
 
 :::
 
@@ -257,7 +257,7 @@ But step [](#s1-9){.pf-ref} requires
 
 ::: pf-proof
 
-The identity homomorphism on \(\mathbb Z\) sends \(1\) to \(1\).
+The identity homomorphism on \(\ZZ\) sends \(1\) to \(1\).
 
 :::
 

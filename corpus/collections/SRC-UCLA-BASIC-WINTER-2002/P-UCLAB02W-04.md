@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the set of irrational numbers in $\mathbb R$ is not a countable union of closed subsets of $\mathbb R$.
+Prove that the set of irrational numbers in $\RR$ is not a countable union of closed subsets of $\RR$.
 :::
 
 ::: {.solution}

@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $F : \mathbb{C} \to \mathbb{C}$ be a bounded Borel measurable function, and $y_0 \in \mathbb{C}$.
-Define a sequence of functions $f_n : [0,1] \to \mathbb{C}$ by the recursion $f_0(x) \equiv y_0$ and
+Let $F : \CC \to \CC$ be a bounded Borel measurable function, and $y_0 \in \CC$.
+Define a sequence of functions $f_n : [0,1] \to \CC$ by the recursion $f_0(x) \equiv y_0$ and
 $$
 f_{n+1}(x) := y_0 + \int_0^x F(f_n(t))\,dt.
 $$
@@ -44,7 +44,7 @@ Show inductively that every $f_n$ is well defined and continuous.
 
 Let
 \[
-M:=\sup_{z\in\mathbb C}|F(z)|<\infty.
+M:=\sup_{z\in\CC}|F(z)|<\infty.
 \]
 The function $f_0\equiv y_0$ is continuous. Suppose $f_n$ is continuous. Then $f_n$ is Borel measurable, hence $F\circ f_n$ is Borel measurable. It is bounded by $M$, so it is Lebesgue integrable on $[0,1]$.
 

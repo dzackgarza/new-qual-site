@@ -92,7 +92,7 @@ Therefore
 
 ::: {.pf-step #s1-3}
 
-If $T\in X$ and $\lambda\in\mathbb C$, then
+If $T\in X$ and $\lambda\in\CC$, then
 \[
 \lambda T\in X.
 \]

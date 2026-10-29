@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q4P4R
 kind: problem
-title: Galois groups over $\mathbb{Q}$ of $x^4+4$ and $x^3+x^2-2x-1$
+title: Galois groups over $\QQ$ of $x^4+4$ and $x^3+x^2-2x-1$
 classification:
   areas:
   - algebra
@@ -25,7 +25,7 @@ audit:
   note: "Expanded the polynomial identity behind the hint and checked the distinct roots and the generator's three-cycle action."
 ---
 ::: {.problem}
-Find the Galois groups, over $\mathbb{Q}$, of the following polynomials.
+Find the Galois groups, over $\QQ$, of the following polynomials.
 
 a. $x^4 + 4$.
 

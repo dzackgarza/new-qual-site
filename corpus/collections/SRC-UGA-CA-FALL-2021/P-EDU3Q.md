@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EDU3Q
 kind: problem
-title: $(1+z/n)^n$ converges uniformly to $e^z$ on compact subsets of $\mathbb{C}$
+title: $(1+z/n)^n$ converges uniformly to $e^z$ on compact subsets of $\CC$
 classification:
   areas:
   - complex-analysis
@@ -16,9 +16,9 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that the sequence $\left(1+\frac{z}{n}\right)^{n}$ converges uniformly to $e^{z}$ on compact subsets of $\mathbb{C}$.
+Prove that the sequence $\left(1+\frac{z}{n}\right)^{n}$ converges uniformly to $e^{z}$ on compact subsets of $\CC$.
 
-> Hint: $e^{n \log w_{n}}=w_{n}^{n}$ and $e^{z}$ is uniform continuous on compact subsets of $\mathbb{C}$.
+> Hint: $e^{n \log w_{n}}=w_{n}^{n}$ and $e^{z}$ is uniform continuous on compact subsets of $\CC$.
 
 :::
 

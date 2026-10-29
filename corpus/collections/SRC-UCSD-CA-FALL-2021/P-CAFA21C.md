@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $a, b : \mathbb{C} \to \mathbb{C}$ be entire functions.
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that
+Let $a, b : \CC \to \CC$ be entire functions.
+Let $f : \CC \to \CC$ be an entire function such that
 $$
 f(z)^2 + a(z)f(z) + b(z) = 0.
 $$
@@ -80,7 +80,7 @@ divide by $|f(z)| > 0$.
 :::
 
 ::: pf-step
-Therefore, for all $z \in \mathbb{C}$:
+Therefore, for all $z \in \CC$:
 \[
 |f(z)| \le 1 + |a(z)| + |b(z)|.
 \]

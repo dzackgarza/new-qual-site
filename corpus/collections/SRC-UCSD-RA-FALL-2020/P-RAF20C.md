@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1(\mathbb{R}^n)$ and $f > 0$ in $\mathbb{R}^n$.
-Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\xi \in \mathbb{R}^n$ with $\xi \neq 0$.
+Let $f \in L^1(\RR^n)$ and $f > 0$ in $\RR^n$.
+Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\xi \in \RR^n$ with $\xi \neq 0$.
 :::
 
 ::: {.solution}
@@ -34,13 +34,13 @@ Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\x
 
 ::: {.pf-step #s1}
 
-$|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\mathbb R^n$.
+$|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\RR^n$.
 
 ::: pf-proof
 
-Since $f>0$ and $f\in L^1(\mathbb R^n)$,
+Since $f>0$ and $f\in L^1(\RR^n)$,
 \[
-\widehat f(0)=\int_{\mathbb R^n}f(x)\,dx>0.
+\widehat f(0)=\int_{\RR^n}f(x)\,dx>0.
 \]
 For any $\xi$,
 \[
@@ -57,7 +57,7 @@ The normalization $e^{-2\pi i x\cdot\xi}$ changes only the phase factor, and the
 
 ::: {.pf-step #s2}
 
-If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\mathbb C$ with $|c|=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
+If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\CC$ with $|c|=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ Then
 \begin{aligned}
 \widehat f(0)
 &=\operatorname{Re}\left(\overline c\,\widehat f(\xi)\right)\\
-&=\int_{\mathbb R^n} f(x)\operatorname{Re}\left(\overline c\,e^{-ix\cdot\xi}\right)\,dx.
+&=\int_{\RR^n} f(x)\operatorname{Re}\left(\overline c\,e^{-ix\cdot\xi}\right)\,dx.
 \end{aligned}
 \]
 Since
@@ -102,9 +102,9 @@ For $\xi\ne0$ and $|c|=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal 
 
 ::: pf-proof
 
-For fixed $\xi\ne0$ and fixed $c\in\mathbb C$ with $|c|=1$, the set
+For fixed $\xi\ne0$ and fixed $c\in\CC$ with $|c|=1$, the set
 \[
-\{x\in\mathbb R^n:e^{-ix\cdot\xi}=c\}
+\{x\in\RR^n:e^{-ix\cdot\xi}=c\}
 \]
 is a countable union of affine hyperplanes perpendicular to $\xi$. It therefore has Lebesgue measure zero.
 

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let A be a 2 $\times$ 2 matrix over C which is not a scalar multiple of the identity matrix I. Show that any 2 $\times$ 2 matrix X over C commuting with A has the form $X = \alpha I + \beta A$ , where $\alpha , \beta \in \mathbb { C }$
+Let A be a 2 $\times$ 2 matrix over C which is not a scalar multiple of the identity matrix I. Show that any 2 $\times$ 2 matrix X over C commuting with A has the form $X = \alpha I + \beta A$ , where $\alpha , \beta \in \CC$
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Let A be a 2 $\times$ 2 matrix over C which is not a scalar multiple of the iden
 
 ::: {.pf-step #s1}
 
-Since $A$ is not scalar, there is a vector $v\in\mathbb C^2$ such that $v$ and $Av$ are linearly independent.
+Since $A$ is not scalar, there is a vector $v\in\CC^2$ such that $v$ and $Av$ are linearly independent.
 
 ::: pf-proof
 
@@ -43,7 +43,7 @@ Ae_1=\lambda e_1,
 \qquad
 Ae_2=\mu e_2
 \]
-for some $\lambda,\mu\in\mathbb C$. Since $e_1+e_2$ is also an eigenvector under the supposition,
+for some $\lambda,\mu\in\CC$. Since $e_1+e_2$ is also an eigenvector under the supposition,
 \[
 A(e_1+e_2)=\lambda e_1+\mu e_2
 \]
@@ -53,7 +53,7 @@ Therefore some $v$ has $v,Av$ linearly independent. Since the space has dimensio
 \[
 (v,Av)
 \]
-is a basis of $\mathbb C^2$.
+is a basis of $\CC^2$.
 
 :::
 
@@ -69,7 +69,7 @@ Let $X$ satisfy $XA=AX$. Using the basis from step [](#s1){.pf-ref}, write
 \[
 Xv=\alpha v+\beta Av
 \]
-for unique $\alpha,\beta\in\mathbb C$. Set
+for unique $\alpha,\beta\in\CC$. Set
 \[
 Y=\alpha I+\beta A.
 \]

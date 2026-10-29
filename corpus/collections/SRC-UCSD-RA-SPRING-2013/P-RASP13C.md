@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : [0, 1] \to \mathbb{R}$ be a continuous function.
+Let $f : [0, 1] \to \RR$ be a continuous function.
 Define the signed Borel measure $\mu$ on $[0, 1]$ by $d\mu = f \, dm$.
 Assume
 $$

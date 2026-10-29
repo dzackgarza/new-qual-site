@@ -44,9 +44,9 @@ Hölder gives the upper bound.
 
 ::: pf-proof
 
-For every $g\in L^q(\mathbb R^n)$ with $\|g\|_q=1$, Hölder's inequality gives
+For every $g\in L^q(\RR^n)$ with $\|g\|_q=1$, Hölder's inequality gives
 \[
-\left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|
+\left|\int_{\RR^n}f(x)g(x)\,dx\right|
 \le \|f\|_p\|g\|_q
 =\|f\|_p.
 \]
@@ -121,7 +121,7 @@ Let $M=\|f\|_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M
 \[
 A_\varepsilon:=\{x:|f(x)|>M-\varepsilon\}
 \]
-has positive measure. Since Lebesgue measure on $\mathbb R^n$ is sigma-finite, there is a measurable set
+has positive measure. Since Lebesgue measure on $\RR^n$ is sigma-finite, there is a measurable set
 \[
 E\subseteq A_\varepsilon,
 \qquad
@@ -160,7 +160,7 @@ All conjugate pairs $1\le p,q\le\infty$ have been covered, so
 \boxed{
 \|f\|_p
 =\sup_{\|g\|_q=1}
-\left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|.}
+\left|\int_{\RR^n}f(x)g(x)\,dx\right|.}
 \]
 
 :::

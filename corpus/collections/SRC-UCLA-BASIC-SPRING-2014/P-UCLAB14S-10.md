@@ -40,13 +40,13 @@ Let $(f_n)$ be an arbitrary sequence in $F$. The proof first obtains convergence
 
 Enumerate the rational points of $[0,1]$ as
 \[
-\mathbb Q\cap[0,1]=\{q_1,q_2,q_3,\ldots\}.
+\QQ\cap[0,1]=\{q_1,q_2,q_3,\ldots\}.
 \]
 
 
 ::: pf-proof
 
-The rational numbers are countable, and $\mathbb Q\cap[0,1]$ is dense in $[0,1]$.
+The rational numbers are countable, and $\QQ\cap[0,1]$ is dense in $[0,1]$.
 
 :::
 
@@ -105,7 +105,7 @@ such that every $x\in[0,1]$ lies within distance $\delta$ of at least one of the
 The intervals
 \[
 (q-\delta,q+\delta),
-\qquad q\in\mathbb Q\cap[0,1],
+\qquad q\in\QQ\cap[0,1],
 \]
 form an open cover of the compact interval $[0,1]$. Compactness gives a finite subcover, yielding the stated rational points.
 

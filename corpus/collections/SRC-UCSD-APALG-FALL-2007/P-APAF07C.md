@@ -36,7 +36,7 @@ Every complex square matrix is arbitrarily close, in Frobenius norm, to a diagon
 
 ::: pf-proof
 
-Let $A\in M_n(\mathbb C)$ and let $\varepsilon>0$. By Schur's theorem there is a unitary matrix $U$ such that
+Let $A\in M_n(\CC)$ and let $\varepsilon>0$. By Schur's theorem there is a unitary matrix $U$ such that
 \[
 T=U^*AU
 \]
@@ -76,7 +76,7 @@ Finally, the Frobenius norm is unitarily invariant, so
 =\left(\sum_{j=1}^n|\delta_j|^2\right)^{1/2}
 <\varepsilon.
 \]
-Thus diagonalizable matrices are dense in $M_n(\mathbb C)$. This proves part (a).
+Thus diagonalizable matrices are dense in $M_n(\CC)$. This proves part (a).
 
 :::
 
@@ -131,7 +131,7 @@ Every upper-triangular normal matrix is diagonal.
 
 We argue by induction on the size $n$. The statement is trivial for $n=1$.
 
-Let $T=(t_{ij})\in M_n(\mathbb C)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
+Let $T=(t_{ij})\in M_n(\CC)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
 \[
 TT^*=T^*T
 \]

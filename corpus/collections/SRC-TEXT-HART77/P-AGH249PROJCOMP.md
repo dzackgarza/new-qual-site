@@ -130,11 +130,11 @@ is a closed immersion.
 
 ::: pf-proof
 
-Over $\Spec\mathbb Z$, the ordinary Segre embedding
+Over $\Spec\ZZ$, the ordinary Segre embedding
 \[
-\mathbb P^r_\mathbb Z\times\mathbb P^s_\mathbb Z
+\mathbb P^r_\ZZ\times\mathbb P^s_\ZZ
 \hookrightarrow
-\mathbb P^{(r+1)(s+1)-1}_\mathbb Z
+\mathbb P^{(r+1)(s+1)-1}_\ZZ
 \]
 is cut out by the $2\times2$ minors of the matrix of homogeneous coordinates, hence is a closed immersion.
 
@@ -142,7 +142,7 @@ Since
 \[
 (r+1)(s+1)-1=r+s+rs,
 \]
-base changing this closed immersion along $Z\to\Spec\mathbb Z$ gives the displayed relative Segre closed immersion.
+base changing this closed immersion along $Z\to\Spec\ZZ$ gives the displayed relative Segre closed immersion.
 
 :::
 

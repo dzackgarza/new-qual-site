@@ -56,7 +56,7 @@ $$
 V
 \coloneqq
 \left\{
-(a_1,a_2,\ldots)\in\mathbb R^{\mathbb N}
+(a_1,a_2,\ldots)\in\RR^{\NN}
 :
 a_n\to0
 \right\}.

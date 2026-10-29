@@ -25,16 +25,16 @@ audit:
 ---
 
 ::: {.problem}
-In the unit sphere $S^{p+q-1} \subset \mathbb{R}^{p+q}$ let $S^{p-1}$ and $S^{q-1}$ be the subspheres consisting of points whose last $q$ and first $p$ coordinates are zero, respectively.
+In the unit sphere $S^{p+q-1} \subset \RR^{p+q}$ let $S^{p-1}$ and $S^{q-1}$ be the subspheres consisting of points whose last $q$ and first $p$ coordinates are zero, respectively.
 
-(a) Show that $S^{p+q-1} - S^{p-1}$ deformation retracts onto $S^{q-1}$, and is in fact homeomorphic to $S^{q-1} \times \mathbb{R}^p$.
+(a) Show that $S^{p+q-1} - S^{p-1}$ deformation retracts onto $S^{q-1}$, and is in fact homeomorphic to $S^{q-1} \times \RR^p$.
 
 (b) Show that $S^{p-1}$ and $S^{q-1}$ are not the boundaries of any pair of disjointly embedded disks $D^p$ and $D^q$ in $D^{p+q}$.
 [The preceding exercise may be useful.]
 :::
 
 ::: {.solution}
-Write points of $S^{p+q-1}$ as $(x,y)\in\mathbb R^p\oplus\mathbb R^q$. Then
+Write points of $S^{p+q-1}$ as $(x,y)\in\RR^p\oplus\RR^q$. Then
 \[
 S^{p-1}=\{(x,0):\|x\|=1\},
 \qquad
@@ -47,7 +47,7 @@ S^{q-1}=\{(0,y):\|y\|=1\}.
 
 There is a homeomorphism
 \[
-S^{p+q-1}-S^{p-1}\cong S^{q-1}\times\mathbb R^p.
+S^{p+q-1}-S^{p-1}\cong S^{q-1}\times\RR^p.
 \]
 
 ::: pf-proof
@@ -72,7 +72,7 @@ Hence $S^{p+q-1}-S^{p-1}$ deformation retracts onto the coordinate sphere $S^{q-
 
 ::: pf-proof
 
-Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\mathbb R^p$ factor linearly to $0$. The subspace $S^{q-1}$ corresponds exactly to $S^{q-1}\times\{0\}$.
+Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\RR^p$ factor linearly to $0$. The subspace $S^{q-1}$ corresponds exactly to $S^{q-1}\times\{0\}$.
 
 :::
 
@@ -87,7 +87,7 @@ D^p,D^q\subset D^{p+q}
 with boundaries the two coordinate spheres $S^{p-1}$ and $S^{q-1}$.
 Then the class
 \[
-[S^{q-1}]\in H_{q-1}(S^{p+q-1}-S^{p-1})\cong\mathbb Z
+[S^{q-1}]\in H_{q-1}(S^{p+q-1}-S^{p-1})\cong\ZZ
 \]
 is a generator.
 

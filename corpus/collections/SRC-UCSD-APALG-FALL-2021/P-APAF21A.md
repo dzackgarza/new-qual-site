@@ -25,12 +25,12 @@ audit:
 ---
 
 ::: {.problem}
-Throughout, $M_n$ denotes the set of $n\times n$ matrices with complex components, $\mathbb{C}^n$ is the set of column vectors with $n$ complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
+Throughout, $M_n$ denotes the set of $n\times n$ matrices with complex components, $\CC^n$ is the set of column vectors with $n$ complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) State, but do not prove, the Schur decomposition theorem for a matrix $A\in M_n$.
 
-(b) Prove that for $A,B\in M_n$, if $x^HAx=x^HBx$ for all $x\in\mathbb{C}^n$, then $A=B$.
-Give an example for which $x^TAx=x^TBx$ for all $x\in\mathbb{C}^n$ but $A\neq B$.
+(b) Prove that for $A,B\in M_n$, if $x^HAx=x^HBx$ for all $x\in\CC^n$, then $A=B$.
+Give an example for which $x^TAx=x^TBx$ for all $x\in\CC^n$ but $A\neq B$.
 
 (c) Suppose $A$ is a projection, i.e. $A^2=A$. Prove that $A$ is an orthogonal projection if and only if $A$ is Hermitian, i.e., $A=A^H$.
 :::
@@ -40,7 +40,7 @@ Give an example for which $x^TAx=x^TBx$ for all $x\in\mathbb{C}^n$ but $A\neq B$
 ::: pf
 
 ::: pf-step
-**Schur decomposition theorem.** For every $A\in M_n(\mathbb C)$ there is a unitary matrix $U$ such that
+**Schur decomposition theorem.** For every $A\in M_n(\CC)$ there is a unitary matrix $U$ such that
 \[
 U^HAU=T
 \]
@@ -53,10 +53,10 @@ This is the requested statement; no proof is required in part (a).
 :::
 
 ::: {.pf-step #hermitian-form-zero-implies-zero-matrix}
-If $C\in M_n(\mathbb C)$ satisfies
+If $C\in M_n(\CC)$ satisfies
 \[
 x^HCx=0
-\qquad\text{for every }x\in\mathbb C^n,
+\qquad\text{for every }x\in\CC^n,
 \]
 then $C=0$.
 
@@ -87,7 +87,7 @@ Thus every entry of $C$ vanishes.
 Hence, if
 \[
 x^HAx=x^HBx
-\qquad\text{for every }x\in\mathbb C^n,
+\qquad\text{for every }x\in\CC^n,
 \]
 then $A=B$.
 
@@ -111,7 +111,7 @@ A=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 \qquad
 B=0.
 \]
-Then $A\ne B$. For every $x=(x_1,x_2)^T\in\mathbb C^2$,
+Then $A\ne B$. For every $x=(x_1,x_2)^T\in\CC^2$,
 \[
 x^TAx
 =(x_1,x_2)

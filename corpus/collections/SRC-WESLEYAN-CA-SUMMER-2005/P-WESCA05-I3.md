@@ -25,7 +25,7 @@ State the global Cauchy Theorem.
 
 ::: {.pf-step #s1-1}
 
-The global Cauchy theorem states: let \(U\subseteq\mathbb C\) be open, let \(f:U\to\mathbb C\) be analytic, and let \(\Gamma\) be a cycle in \(U\) that is homologous to zero in \(U\). Then
+The global Cauchy theorem states: let \(U\subseteq\CC\) be open, let \(f:U\to\CC\) be analytic, and let \(\Gamma\) be a cycle in \(U\) that is homologous to zero in \(U\). Then
 \[
 \boxed{\int_\Gamma f(z)\,dz=0.}
 \]
@@ -37,7 +37,7 @@ Here “\(\Gamma\) is homologous to zero in \(U\)” means that its winding numb
 \[
 \operatorname{Ind}(\Gamma,w)=0
 \qquad
-\text{for every }w\in\mathbb C\setminus U.
+\text{for every }w\in\CC\setminus U.
 \]
 Under this hypothesis the global Cauchy theorem asserts precisely the displayed vanishing of the contour integral.
 

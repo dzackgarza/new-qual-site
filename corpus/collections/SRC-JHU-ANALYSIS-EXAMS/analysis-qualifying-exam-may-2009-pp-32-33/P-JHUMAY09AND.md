@@ -26,10 +26,10 @@ audit:
 ---
 
 ::: {.problem}
-4. Let $f ( x ) = { \frac { 1 } { x ^ { 2 } + 1 } }$ . Use a contour integral consisting of the interval $[ - R , R ] \subset \mathbb { R }$ and a semicircle of radius R to compute the Fourier transform
+4. Let $f ( x ) = { \frac { 1 } { x ^ { 2 } + 1 } }$ . Use a contour integral consisting of the interval $[ - R , R ] \subset \RR$ and a semicircle of radius R to compute the Fourier transform
 
 $$
-{ \widehat { f } } ( 1 ) = \int _ { \mathbb { R } } f ( x ) e ^ { - i x } d x ~ .
+{ \widehat { f } } ( 1 ) = \int _ { \RR } f ( x ) e ^ { - i x } d x ~ .
 $$
 
 Show that the contour integral converges to your answer as $R \to + \infty$

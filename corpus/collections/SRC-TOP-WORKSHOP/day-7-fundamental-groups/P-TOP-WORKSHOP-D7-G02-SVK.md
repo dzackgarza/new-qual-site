@@ -40,11 +40,11 @@ For \(S^n\) with \(n>1\), let
 \[
 U=S^n\setminus\{N\},\qquad V=S^n\setminus\{S\}.
 \]
-Both \(U\) and \(V\) are homeomorphic to \(\mathbb R^n\), hence simply connected. Their intersection deformation retracts onto \(S^{n-1}\), and for \(n>1\) it is path connected. Van Kampen therefore gives
+Both \(U\) and \(V\) are homeomorphic to \(\RR^n\), hence simply connected. Their intersection deformation retracts onto \(S^{n-1}\), and for \(n>1\) it is path connected. Van Kampen therefore gives
 \[
 \pi_1(S^n)=0.
 \]
-For \(n=2\) the intersection has fundamental group \(\mathbb Z\), but both maps into the trivial groups \(\pi_1(U)\) and \(\pi_1(V)\) are trivial, so the conclusion is still \(0\).
+For \(n=2\) the intersection has fundamental group \(\ZZ\), but both maps into the trivial groups \(\pi_1(U)\) and \(\pi_1(V)\) are trivial, so the conclusion is still \(0\).
 
 For \(n=1\), the same cover has
 \[

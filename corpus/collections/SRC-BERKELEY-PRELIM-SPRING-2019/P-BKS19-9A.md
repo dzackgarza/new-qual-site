@@ -42,7 +42,7 @@ converges to a real number that is not in $S$.
 
 ::: {.solution}
 
-Take $\mathbb N=\{1,2,\ldots\}$. If $S=\varnothing$, the choice $g_n(m)=2m$ already suffices, so assume $S\neq\varnothing$. Choose a sequence
+Take $\NN=\{1,2,\ldots\}$. If $S=\varnothing$, the choice $g_n(m)=2m$ already suffices, so assume $S\neq\varnothing$. Choose a sequence
 $$
 s_1,s_2,\ldots
 $$
@@ -56,11 +56,11 @@ Suppose $g_1,\ldots,g_{n-1}$ have been defined and satisfy
 $$
 g_j(m)>2m
 $$
-for every admissible $j,m$. For each $m\in\mathbb N$, let $P_{n,m}$ be the set of numbers
+for every admissible $j,m$. For each $m\in\NN$, let $P_{n,m}$ be the set of numbers
 $$
 p=\sum_{j=1}^n\frac1{a_j}
 $$
-arising from sequences $a_1,\ldots,a_n\in\mathbb N$ such that
+arising from sequences $a_1,\ldots,a_n\in\NN$ such that
 $$
 a_n=m,
 \qquad
@@ -83,7 +83,7 @@ Thus each of $a_1,\ldots,a_{n-1}$ belongs to the finite set $\{1,\ldots,m-1\}$. 
 
 ::: {.pf-step #s1-2}
 
-The functions $g_n:\mathbb N\to\mathbb N$ can be defined recursively so that, for every $m$,
+The functions $g_n:\NN\to\NN$ can be defined recursively so that, for every $m$,
 $$
 g_n(m)>2m,
 $$
@@ -107,7 +107,7 @@ For fixed $n,m$, step [](#s1-1){.pf-ref} shows that $P_{n,m}$ is finite, hence s
 
 ::: {.pf-step #s1-3}
 
-For any $f:\mathbb N\to\mathbb N$ satisfying
+For any $f:\NN\to\NN$ satisfying
 $$
 f(n+1)>g_n(f(n))
 $$
@@ -216,7 +216,7 @@ Thus in every case $A\neq s_n$.
 
 The constructed functions satisfy the required conclusion:
 $$
-\boxed{A\in\mathbb R\setminus S}.
+\boxed{A\in\RR\setminus S}.
 $$
 
 

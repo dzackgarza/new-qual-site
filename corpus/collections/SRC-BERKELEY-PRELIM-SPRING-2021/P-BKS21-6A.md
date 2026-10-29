@@ -122,7 +122,7 @@ $$
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} shows that the linear map defined by the square matrix $A$ is injective. A linear endomorphism of the finite-dimensional space $\mathbb R^n$ is injective if and only if it is invertible, and a square matrix is invertible if and only if its determinant is nonzero.
+Step [](#s1-2){.pf-ref} shows that the linear map defined by the square matrix $A$ is injective. A linear endomorphism of the finite-dimensional space $\RR^n$ is injective if and only if it is invertible, and a square matrix is invertible if and only if its determinant is nonzero.
 
 :::
 

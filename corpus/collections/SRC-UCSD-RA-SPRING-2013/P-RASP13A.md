@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Determine if the statements below are True or False.
 
-(a) (5 points) If the derivative of a real-valued, absolutely continuous function $f$ on $\mathbb{R}$ vanishes almost everywhere, then $f$ must be a constant on $\mathbb{R}$.
+(a) (5 points) If the derivative of a real-valued, absolutely continuous function $f$ on $\RR$ vanishes almost everywhere, then $f$ must be a constant on $\RR$.
 
 (b) (5 points) If $X$ is a locally compact Hausdorff topological space and $x \in X$, then the Dirac delta measure $\delta_x$ is a Radon measure on Borel sets of $X$.
 
@@ -34,7 +34,7 @@ Determine if the statements below are True or False.
 Assume a sequence $\{x_n\}$ converges to $x$ weakly in $H$.
 Then $\lim_{n \to \infty} \|x_n\| = \|x\|$ implies that $\{x_n\}$ converges to $x$ in $H$.
 
-(d) (5 points) Let $f, g$, and $f_n$ and $g_n$ ($n = 1, 2, \ldots$) be all real-valued, Lebesgue measurable functions on $\mathbb{R}$.
+(d) (5 points) Let $f, g$, and $f_n$ and $g_n$ ($n = 1, 2, \ldots$) be all real-valued, Lebesgue measurable functions on $\RR$.
 If $f_n \to f$ and $g_n \to g$ in measure, then $f_n g_n \to fg$ in measure.
 :::
 
@@ -56,7 +56,7 @@ Because $f'=0$ almost everywhere,
 \[
 f(b)-f(a)=0.
 \]
-Thus $f(a)=f(b)$ for all $a,b\in\mathbb R$, so $f$ is constant.
+Thus $f(a)=f(b)$ for all $a,b\in\RR$, so $f$ is constant.
 
 :::
 
@@ -108,7 +108,7 @@ using the assumed convergence $\|x_n\|\to\|x\|$. Hence $x_n\to x$ strongly in $H
 
 ::: pf-step
 
-Part (d) is false on the infinite-measure space $\mathbb R$.
+Part (d) is false on the infinite-measure space $\RR$.
 
 ::: pf-proof
 

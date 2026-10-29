@@ -25,26 +25,26 @@ audit:
 ::: {.problem}
 Suppose $p$ is a prime number and the minimal polynomial of $g \in \operatorname{GL}_p(F)$ is $t^p - 1$.
 
-(a) Find the Jordan form of $g$ if $F = \mathbb{C}$.
+(a) Find the Jordan form of $g$ if $F = \CC$.
 
 (b) Find the Jordan form of $g$ if $F = \overline{\mathbb{F}}_p$ is an algebraic closure of the finite field $\mathbb{F}_p$.
 :::
 
 ::: {.solution}
-**(a). Case $F = \mathbb{C}$:**
+**(a). Case $F = \CC$:**
 
 ::: pf
 
 ::: pf-step
 
-Factor the minimal polynomial over $\mathbb{C}$:
+Factor the minimal polynomial over $\CC$:
 \[
 t^p - 1 = \prod_{k=0}^{p-1} (t - \zeta^k), \quad \text{where } \zeta = e^{2\pi i/p}.
 \]
 
 ::: pf-proof
 
-over $\mathbb{C}$, the $p$-th roots of unity are distinct.
+over $\CC$, the $p$-th roots of unity are distinct.
 
 :::
 
@@ -52,7 +52,7 @@ over $\mathbb{C}$, the $p$-th roots of unity are distinct.
 
 ::: {.pf-step #s2}
 
-The minimal polynomial $m_g(t) = t^p - 1$ has $p$ distinct roots over $\mathbb{C}$, so $g$ is diagonalizable.
+The minimal polynomial $m_g(t) = t^p - 1$ has $p$ distinct roots over $\CC$, so $g$ is diagonalizable.
 
 ::: pf-proof
 
@@ -64,7 +64,7 @@ a matrix is diagonalizable over an algebraically closed field if and only if its
 
 ::: {.pf-step #s3}
 
-Since $g \in \operatorname{GL}_p(\mathbb{C})$ is a $p \times p$ matrix and has $p$ distinct eigenvalues $\{1, \zeta, \zeta^2, \dots, \zeta^{p-1}\}$, each eigenvalue has algebraic and geometric multiplicity 1.
+Since $g \in \operatorname{GL}_p(\CC)$ is a $p \times p$ matrix and has $p$ distinct eigenvalues $\{1, \zeta, \zeta^2, \dots, \zeta^{p-1}\}$, each eigenvalue has algebraic and geometric multiplicity 1.
 
 ::: pf-proof
 

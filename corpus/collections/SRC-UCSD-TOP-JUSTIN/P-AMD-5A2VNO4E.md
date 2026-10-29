@@ -46,7 +46,7 @@ If a letter is specified as a finite one-dimensional CW complex (a finite graph)
 
 Let $G$ be a finite connected graph. Choose a maximal tree $T\subset G$. Collapsing $T$ to a point is a homotopy equivalence and leaves one circle for each edge not in $T$. Since a tree on $V$ vertices has $V-1$ edges, the number of remaining edges is
 $$
-E-(V-1)=E-V+1=1-\chi(G)=\operatorname{rank}H_1(G;\mathbb Z).
+E-(V-1)=E-V+1=1-\chi(G)=\operatorname{rank}H_1(G;\ZZ).
 $$
 Thus
 $$

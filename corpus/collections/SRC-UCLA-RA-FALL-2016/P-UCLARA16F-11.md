@@ -17,15 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb C\to\mathbb C$ is holomorphic and the function
+Suppose $f:\CC\to\CC$ is holomorphic and the function
 \[
 z\longmapsto g(z)=f(z)f(1/z)
 \]
-is bounded on $\mathbb C\setminus\{0\}$.
+is bounded on $\CC\setminus\{0\}$.
 
 (a) Show that if $f(0)\ne0$, then $f$ is constant.
 
-(b) Show that if $f(0)=0$, then there exist $n\in\mathbb N$ and $a\in\mathbb C$ such that $f(z)=az^n$ for all $z\in\mathbb C$.
+(b) Show that if $f(0)=0$, then there exist $n\in\NN$ and $a\in\CC$ such that $f(z)=az^n$ for all $z\in\CC$.
 :::
 
 ::: {.solution}
@@ -142,7 +142,7 @@ The entire function \(f\) is continuous, and the closed disk is compact.
 
 ::: pf-step
 
-Therefore \(f\) is bounded on all of \(\mathbb C\).
+Therefore \(f\) is bounded on all of \(\CC\).
 
 
 ::: pf-proof
@@ -181,7 +181,7 @@ then the desired conclusion holds.
 
 ::: pf-proof
 
-Choose any \(n\in\mathbb N\) and set
+Choose any \(n\in\NN\) and set
 \[
 a=0.
 \]
@@ -272,7 +272,7 @@ The function
 \[
 z\longmapsto h(z)h(1/z)
 \]
-is bounded on \(\mathbb C\setminus\{0\}\).
+is bounded on \(\CC\setminus\{0\}\).
 
 
 ::: pf-proof
@@ -314,7 +314,7 @@ Hence
 \boxed{
 h(z)\equiv a}
 \]
-for some \(a\in\mathbb C\).
+for some \(a\in\CC\).
 
 
 ::: pf-proof
@@ -332,7 +332,7 @@ Therefore
 \boxed{
 f(z)=az^n}
 \]
-for all \(z\in\mathbb C\).
+for all \(z\in\CC\).
 
 
 ::: pf-proof

@@ -28,7 +28,7 @@ audit:
 
 ::: {.problem}
 (a) Given a set $S$, show that the function
-$$\rho_\infty:\mathcal B(S)\times\mathcal B(S)\to\mathbb R,\qquad
+$$\rho_\infty:\mathcal B(S)\times\mathcal B(S)\to\RR,\qquad
 \rho_\infty(f,g):=\operatorname{lub}(\{|f(x)-g(x)|:x\in S\})$$
 is a metric on $\mathcal B(S)$.
 

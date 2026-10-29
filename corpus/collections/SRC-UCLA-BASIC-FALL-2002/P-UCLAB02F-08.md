@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $T$ be the rotation through $60^\circ$ counterclockwise about the origin in the plane perpendicular to $(1,1,2)$ in $\mathbb R^3$.
+Let $T$ be the rotation through $60^\circ$ counterclockwise about the origin in the plane perpendicular to $(1,1,2)$ in $\RR^3$.
 
 (i) Find the matrix of $T$ in the standard basis, and find all real eigenvalues and eigenspaces of $T$.
 
-(ii) What are the eigenvalues and eigenspaces of the same transformation after replacing $\mathbb R^3$ by $\mathbb C^3$?
+(ii) What are the eigenvalues and eigenspaces of the same transformation after replacing $\RR^3$ by $\CC^3$?
 
 You do not have to multiply matrices out, but you must compute any inverses.
 :::
@@ -38,7 +38,7 @@ u_3=\frac1{\sqrt6}(1,1,2).
 
 ::: pf-step
 
-The ordered triple $(u_1,u_2,u_3)$ is a positively oriented orthonormal basis of $\mathbb R^3$.
+The ordered triple $(u_1,u_2,u_3)$ is a positively oriented orthonormal basis of $\RR^3$.
 
 
 ::: pf-proof
@@ -115,13 +115,13 @@ The columns of $Q$ are the orthonormal vectors $u_1,u_2,u_3$. Hence $Q$ is ortho
 
 ::: {.pf-step #s1-4}
 
-Over $\mathbb R$, the only eigenvalue of $T$ is
+Over $\RR$, the only eigenvalue of $T$ is
 \[
 \boxed{1},
 \]
 with eigenspace
 \[
-\boxed{E_1=\operatorname{span}_{\mathbb R}\{(1,1,2)\}}.
+\boxed{E_1=\operatorname{span}_{\RR}\{(1,1,2)\}}.
 \]
 
 
@@ -136,9 +136,9 @@ In the basis $(u_1,u_2,u_3)$, the characteristic polynomial is
 \]
 The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. The $1$-eigenspace is the rotation axis, namely
 \[
-\operatorname{span}_{\mathbb R}\{u_3\}
+\operatorname{span}_{\RR}\{u_3\}
 =
-\operatorname{span}_{\mathbb R}\{(1,1,2)\}.
+\operatorname{span}_{\RR}\{(1,1,2)\}.
 \]
 
 :::
@@ -147,7 +147,7 @@ The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. Th
 
 ::: {.pf-step #s1-5}
 
-Over $\mathbb C$, the eigenvalues are
+Over $\CC$, the eigenvalues are
 \[
 \boxed{
 1,\qquad
@@ -167,14 +167,14 @@ These are the three roots of the characteristic polynomial computed in step [](#
 
 ::: {.pf-step #s1-6}
 
-Over $\mathbb C$, the corresponding eigenspaces are
+Over $\CC$, the corresponding eigenspaces are
 \[
 \boxed{
-E_1=\operatorname{span}_{\mathbb C}\{u_3\},
+E_1=\operatorname{span}_{\CC}\{u_3\},
 \qquad
-E_{\lambda_+}=\operatorname{span}_{\mathbb C}\{u_1-i u_2\},
+E_{\lambda_+}=\operatorname{span}_{\CC}\{u_1-i u_2\},
 \qquad
-E_{\lambda_-}=\operatorname{span}_{\mathbb C}\{u_1+i u_2\}
+E_{\lambda_-}=\operatorname{span}_{\CC}\{u_1+i u_2\}
 }.
 \]
 

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1(S^1)$ such that $\widehat{f} \in \ell^1(\mathbb{Z})$.
+Let $f \in L^1(S^1)$ such that $\widehat{f} \in \ell^1(\ZZ)$.
 Prove that $f \in C(S^1)$ (that is, $f$ is equal almost everywhere to a continuous function on the circle $S^1$).
 :::
 

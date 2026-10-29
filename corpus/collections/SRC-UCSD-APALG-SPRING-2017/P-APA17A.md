@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A \in \mathbb{C}^{10 \times 10}$ be a matrix such that
+Let $A \in \CC^{10 \times 10}$ be a matrix such that
 \[
 \operatorname{rank} A = 7,\quad
 \operatorname{rank} A^2 = 4,\quad

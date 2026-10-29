@@ -165,13 +165,13 @@ v_5=
 
 ::: {.pf-step #s1-4}
 
-The vectors $v_4$ and $v_5$ form a basis of $\mathbb R^2$.
+The vectors $v_4$ and $v_5$ form a basis of $\RR^2$.
 
 
 ::: pf-proof
 
 They correspond to distinct eigenvalues, so they are linearly independent.
-Since $\mathbb R^2$ has dimension $2$, they form a basis.
+Since $\RR^2$ has dimension $2$, they form a basis.
 
 :::
 
@@ -181,7 +181,7 @@ Since $\mathbb R^2$ has dimension $2$, they form a basis.
 
 For arbitrary constants
 \[
-c_4,c_5\in\mathbb R,
+c_4,c_5\in\RR,
 \]
 the function
 \[
@@ -234,7 +234,7 @@ Every solution has the form in step [](#s1-5){.pf-ref}.
 
 For any initial value
 \[
-x(0)\in\mathbb R^2,
+x(0)\in\RR^2,
 \]
 step [](#s1-4){.pf-ref} gives unique constants $c_4,c_5$ such that
 \[
@@ -268,7 +268,7 @@ x_2(t)
 c_5e^{5t},
 \end{aligned}
 \qquad
-c_4,c_5\in\mathbb R.
+c_4,c_5\in\RR.
 }
 \]
 

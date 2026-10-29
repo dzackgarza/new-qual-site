@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\phi: \mathbb{C}[x] \to F$ be a ring homomorphism where $F$ is a field and $\phi(1)\neq 0$.
+Let $\phi: \CC[x] \to F$ be a ring homomorphism where $F$ is a field and $\phi(1)\neq 0$.
 
 (a) Give an example where $\phi$ is not onto.
 
-(b) If $\phi$ is onto, show that $F \cong \mathbb{C}$.
+(b) If $\phi$ is onto, show that $F \cong \CC$.
 :::
 
 ::: {.solution}
@@ -42,17 +42,17 @@ There is a non-surjective example.
 ::: pf-proof
 Take
 \[
-F=\mathbb C(x),
+F=\CC(x),
 \]
 the rational-function field, and let
 \[
-\phi:\mathbb C[x]\hookrightarrow\mathbb C(x)
+\phi:\CC[x]\hookrightarrow\CC(x)
 \]
 be the natural inclusion.
 Then $\phi(1)=1\neq0$.
 The map is not surjective, since
 \[
-\frac1x\in\mathbb C(x)
+\frac1x\in\CC(x)
 \]
 is not a polynomial and hence does not lie in the image.
 :::
@@ -60,7 +60,7 @@ is not a polynomial and hence does not lie in the image.
 :::
 
 ::: pf-step
-For any such homomorphism, $\phi(1)=1_F$ and the restriction of $\phi$ to $\mathbb C$ is injective.
+For any such homomorphism, $\phi(1)=1_F$ and the restriction of $\phi$ to $\CC$ is injective.
 
 ::: pf-proof
 Since
@@ -75,7 +75,7 @@ Thus
 \]
 Consequently the restriction
 \[
-\phi|_{\mathbb C}:\mathbb C\longrightarrow F
+\phi|_{\CC}:\CC\longrightarrow F
 \]
 is a nonzero ring homomorphism from a field.
 Its kernel is therefore the zero ideal, so it is injective.
@@ -84,23 +84,23 @@ Its kernel is therefore the zero ideal, so it is injective.
 :::
 
 ::: pf-step
-If $\phi$ is surjective, then $F\cong\mathbb C$.
+If $\phi$ is surjective, then $F\cong\CC$.
 
 ::: pf-proof
 If $\phi$ is onto, the first isomorphism theorem gives
 \[
-F\cong \mathbb C[x]/\ker\phi.
+F\cong \CC[x]/\ker\phi.
 \]
-Since $F$ is a field, $\ker\phi$ is a maximal ideal of $\mathbb C[x]$.
-Every ideal of the PID $\mathbb C[x]$ is principal, and every irreducible polynomial over the algebraically closed field $\mathbb C$ is linear.
+Since $F$ is a field, $\ker\phi$ is a maximal ideal of $\CC[x]$.
+Every ideal of the PID $\CC[x]$ is principal, and every irreducible polynomial over the algebraically closed field $\CC$ is linear.
 Hence every maximal ideal has the form
 \[
 (x-a)
-\qquad(a\in\mathbb C).
+\qquad(a\in\CC).
 \]
-Therefore, for some $a\in\mathbb C$,
+Therefore, for some $a\in\CC$,
 \[
-F\cong\mathbb C[x]/(x-a)\cong\mathbb C,
+F\cong\CC[x]/(x-a)\cong\CC,
 \]
 where the last isomorphism is evaluation at $a$.
 :::

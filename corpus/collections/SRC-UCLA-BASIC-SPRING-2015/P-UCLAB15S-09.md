@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V=\mathbb R^n$, and let $U_1,U_2,W_1,W_2\subset V$ be subspaces of dimension $d$ such that
+Let $V=\RR^n$, and let $U_1,U_2,W_1,W_2\subset V$ be subspaces of dimension $d$ such that
 \[
 \dim(U_1\cap W_1)=\dim(U_2\cap W_2)=\ell,
 \qquad \ell\le d\le n.

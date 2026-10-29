@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Define $u\in\mathcal D'(\mathbb R)$ formally by
+Define $u\in\mathcal D'(\RR)$ formally by
 \[
 \langle u,\varphi\rangle
 =
@@ -34,7 +34,7 @@ Define $u\in\mathcal D'(\mathbb R)$ formally by
 +
 \int_{\varepsilon}^{\infty}\frac{\varphi(x)}x\,dx
 \right),
-\qquad \varphi\in C_c^\infty(\mathbb R).
+\qquad \varphi\in C_c^\infty(\RR).
 \]
 Show that the limit exists and that
 \[
@@ -53,7 +53,7 @@ The principal-value limit exists.
 
 ::: pf-proof
 
-Fix $\varphi\in C_c^\infty(\mathbb R)$. For $0<\varepsilon<1$, symmetry gives
+Fix $\varphi\in C_c^\infty(\RR)$. For $0<\varepsilon<1$, symmetry gives
 \[
 \int_{-1}^{-\varepsilon}\frac{\varphi(0)}x\,dx
 +
@@ -91,11 +91,11 @@ Since
 \[
 \int_0^1|\log x|\,dx<\infty,
 \]
-we have $\log|x|\in L^1_{\mathrm{loc}}(\mathbb R)$. Hence it defines a distribution by
+we have $\log|x|\in L^1_{\mathrm{loc}}(\RR)$. Hence it defines a distribution by
 \[
 \langle \log|x|,\varphi\rangle
 =
-\int_{\mathbb R}\log|x|\,\varphi(x)\,dx.
+\int_{\RR}\log|x|\,\varphi(x)\,dx.
 \]
 
 :::
@@ -111,7 +111,7 @@ Its distributional derivative equals $u$.
 By definition,
 \[
 \langle (\log|x|)',\varphi\rangle
-=-\int_{\mathbb R}\log|x|\,\varphi'(x)\,dx.
+=-\int_{\RR}\log|x|\,\varphi'(x)\,dx.
 \]
 Split at $\pm\varepsilon$ and integrate by parts:
 \[
@@ -137,14 +137,14 @@ and therefore
 as $\varepsilon\to0^+$. Taking the limit yields
 \[
 \langle (\log|x|)',\varphi\rangle
-=\operatorname{p.v.}\int_{\mathbb R}\frac{\varphi(x)}x\,dx
+=\operatorname{p.v.}\int_{\RR}\frac{\varphi(x)}x\,dx
 =\langle u,\varphi\rangle.
 \]
 Thus
 \[
 \boxed{u=(\log|x|)'}
 \]
-in $\mathcal D'(\mathbb R)$.
+in $\mathcal D'(\RR)$.
 
 :::
 

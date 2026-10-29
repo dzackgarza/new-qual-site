@@ -26,7 +26,7 @@ Show that its second homology group is a free abelian group (in other words, has
 
 Since $W$ is simply connected,
 $$
-H_1(W;\mathbb Z)=0.
+H_1(W;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -41,12 +41,12 @@ The first homology group is the abelianization of the fundamental group.
 
 The universal coefficient theorem gives
 $$
-H^2(W;\mathbb Z)\cong\operatorname{Hom}(H_2(W;\mathbb Z),\mathbb Z).
+H^2(W;\ZZ)\cong\operatorname{Hom}(H_2(W;\ZZ),\ZZ).
 $$
 
 ::: pf-proof
 
-The UCT exact sequence has left term $\operatorname{Ext}(H_1(W),\mathbb Z)=0$ by step [](#s1){.pf-ref}.
+The UCT exact sequence has left term $\operatorname{Ext}(H_1(W),\ZZ)=0$ by step [](#s1){.pf-ref}.
 
 :::
 
@@ -56,7 +56,7 @@ The UCT exact sequence has left term $\operatorname{Ext}(H_1(W),\mathbb Z)=0$ by
 
 Poincaré duality gives
 $$
-H^2(W;\mathbb Z)\cong H_2(W;\mathbb Z).
+H^2(W;\ZZ)\cong H_2(W;\ZZ).
 $$
 
 ::: pf-proof
@@ -69,11 +69,11 @@ A simply connected closed manifold is orientable, so integral Poincaré duality 
 
 ::: pf-step
 
-The group $\operatorname{Hom}(H_2(W),\mathbb Z)$ is free abelian, hence so is $H_2(W)$.
+The group $\operatorname{Hom}(H_2(W),\ZZ)$ is free abelian, hence so is $H_2(W)$.
 
 ::: pf-proof
 
-The homology of a compact manifold is finitely generated. For a finitely generated abelian group $A\cong\mathbb Z^r\oplus T$, one has $\operatorname{Hom}(A,\mathbb Z)\cong\mathbb Z^r$. Combine with steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+The homology of a compact manifold is finitely generated. For a finitely generated abelian group $A\cong\ZZ^r\oplus T$, one has $\operatorname{Hom}(A,\ZZ)\cong\ZZ^r$. Combine with steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 :::
 

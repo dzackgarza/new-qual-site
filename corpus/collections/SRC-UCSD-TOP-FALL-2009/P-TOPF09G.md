@@ -80,12 +80,12 @@ $$\widetilde{H}_k(\Sigma M) \cong \widetilde{H}_{k-1}(U \cap V) \cong \widetilde
 :::
 
 ::: pf-step
-Since $M$ is a homology 3-sphere, its reduced homology is $\widetilde{H}_3(M) \cong \mathbb{Z}$ and $\widetilde{H}_j(M) = 0$ for all $j \neq 3$.
+Since $M$ is a homology 3-sphere, its reduced homology is $\widetilde{H}_3(M) \cong \ZZ$ and $\widetilde{H}_j(M) = 0$ for all $j \neq 3$.
 :::
 
 ::: pf-step
 Therefore, the reduced homology groups of $\Sigma M$ are:
-$$\widetilde{H}_k(\Sigma M) \cong \begin{cases} \mathbb{Z} & k = 4, \\ 0 & k \neq 4. \end{cases}$$
+$$\widetilde{H}_k(\Sigma M) \cong \begin{cases} \ZZ & k = 4, \\ 0 & k \neq 4. \end{cases}$$
 :::
 
 :::
@@ -100,19 +100,19 @@ Homotopy equivalence $\Sigma M \simeq S^4$ via Hurewicz and Whitehead:
 ::: pf-step
 Since $\Sigma M$ is simply connected ($\pi_1(\Sigma M) = 0$) and $\widetilde{H}_k(\Sigma M) = 0$ for $1 \le k \le 3$, the Hurewicz Theorem implies that:
 $$\pi_2(\Sigma M) = 0, \qquad \pi_3(\Sigma M) = 0,$$
-and the Hurewicz homomorphism $h: \pi_4(\Sigma M) \to H_4(\Sigma M) \cong \mathbb{Z}$ is an isomorphism.
+and the Hurewicz homomorphism $h: \pi_4(\Sigma M) \to H_4(\Sigma M) \cong \ZZ$ is an isomorphism.
 :::
 
 ::: pf-step
-Choose a continuous map $f: S^4 \to \Sigma M$ representing a generator of $\pi_4(\Sigma M) \cong \mathbb{Z}$.
+Choose a continuous map $f: S^4 \to \Sigma M$ representing a generator of $\pi_4(\Sigma M) \cong \ZZ$.
 :::
 
 ::: pf-step
-By construction, $f_*: H_4(S^4; \mathbb{Z}) \to H_4(\Sigma M; \mathbb{Z})$ is an isomorphism.
+By construction, $f_*: H_4(S^4; \ZZ) \to H_4(\Sigma M; \ZZ)$ is an isomorphism.
 :::
 
 ::: pf-step
-In all other degrees $k \neq 4$, $H_k(S^4) \cong H_k(\Sigma M)$ are either $\mathbb{Z}$ (for $k = 0$) or $0$ (for $k \neq 0, 4$), so $f_*: H_k(S^4; \mathbb{Z}) \to H_k(\Sigma M; \mathbb{Z})$ is an isomorphism for every $k \ge 0$.
+In all other degrees $k \neq 4$, $H_k(S^4) \cong H_k(\Sigma M)$ are either $\ZZ$ (for $k = 0$) or $0$ (for $k \neq 0, 4$), so $f_*: H_k(S^4; \ZZ) \to H_k(\Sigma M; \ZZ)$ is an isomorphism for every $k \ge 0$.
 :::
 
 ::: pf-step

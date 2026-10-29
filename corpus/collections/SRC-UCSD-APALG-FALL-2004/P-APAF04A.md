@@ -31,7 +31,7 @@ State and prove the Cayley-Hamilton Theorem.
 
 ::: pf-step
 
-**Cayley--Hamilton Theorem.** Let $A\in M_n(\mathbb C)$ and let
+**Cayley--Hamilton Theorem.** Let $A\in M_n(\CC)$ and let
 \[
 p_A(t)=\det(tI_n-A)
 \]
@@ -124,14 +124,14 @@ All factors are polynomials in $T$, hence commute. We may therefore apply them i
 \[
 (T-\lambda_nI),\ (T-\lambda_{n-1}I),\ldots,(T-\lambda_1I).
 \]
-Starting with $V_n=\mathbb C^n$, step [](#s3){.pf-ref} gives successively
+Starting with $V_n=\CC^n$, step [](#s3){.pf-ref} gives successively
 \[
 V_n\xrightarrow{T-\lambda_nI}V_{n-1}
 \xrightarrow{T-\lambda_{n-1}I}V_{n-2}
 \longrightarrow\cdots\longrightarrow
 V_1\xrightarrow{T-\lambda_1I}V_0=0.
 \]
-Thus the product annihilates every vector in $\mathbb C^n$.
+Thus the product annihilates every vector in $\CC^n$.
 
 :::
 

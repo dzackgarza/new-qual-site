@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-06
 kind: problem
-title: Difference-quotient characterization of $H^{1/2}(\mathbb R^d)$
+title: Difference-quotient characterization of $H^{1/2}(\RR^d)$
 classification:
   areas:
   - real-analysis
@@ -21,11 +21,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $u \in L^2(\mathbb{R}^d)$ and let us say that $u \in H^{1/2}(\mathbb{R}^d)$ (a Sobolev space) if
+Let $u \in L^2(\RR^d)$ and let us say that $u \in H^{1/2}(\RR^d)$ (a Sobolev space) if
 \[
-\left( 1 + |\xi|^{1/2} \right) \hat{u}(\xi) \in L^2(\mathbb{R}^d).
+\left( 1 + |\xi|^{1/2} \right) \hat{u}(\xi) \in L^2(\RR^d).
 \]
-Here $\hat{u}$ is the Fourier transform of $u$. Show that $u \in H^{1/2}(\mathbb{R}^d)$ if and only if
+Here $\hat{u}$ is the Fourier transform of $u$. Show that $u \in H^{1/2}(\RR^d)$ if and only if
 \[
 \iint \frac{|u(x+y) - u(x)|^2}{|y|^{d+1}}\,dx\,dy < \infty.
 \]
@@ -37,18 +37,18 @@ Let
 \[
 [u]_{1/2}^2
 =
-\iint_{\mathbb R^d\times\mathbb R^d}
+\iint_{\RR^d\times\RR^d}
 \frac{|u(x+y)-u(x)|^2}{|y|^{d+1}}
 \,dx\,dy.
 \]
 
-Since \(u\in L^2(\mathbb R^d)\), Plancherel's theorem applies.
+Since \(u\in L^2(\RR^d)\), Plancherel's theorem applies.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For fixed \(y\in\mathbb R^d\), the Fourier transform of
+For fixed \(y\in\RR^d\), the Fourier transform of
 \[
 x\longmapsto u(x+y)-u(x)
 \]
@@ -79,10 +79,10 @@ under the chosen convention. Subtract the transform of \(u(x)\).
 Hence, by Plancherel,
 \[
 \boxed{
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |u(x+y)-u(x)|^2\,dx
 =
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |e^{i\xi\cdot y}-1|^2
 |\widehat u(\xi)|^2\,d\xi}.
 \]
@@ -102,8 +102,8 @@ Therefore
 \[
 [u]_{1/2}^2
 =
-\int_{\mathbb R^d}
-\int_{\mathbb R^d}
+\int_{\RR^d}
+\int_{\RR^d}
 \frac{
 |e^{i\xi\cdot y}-1|^2
 }{
@@ -129,10 +129,10 @@ Tonelli's theorem permits interchange of the two integrals:
 \boxed{
 [u]_{1/2}^2
 =
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |\widehat u(\xi)|^2
 \left[
-\int_{\mathbb R^d}
+\int_{\RR^d}
 \frac{
 |e^{i\xi\cdot y}-1|^2
 }{
@@ -218,7 +218,7 @@ Then
 I(\xi)
 =
 |\xi|
-\int_{\mathbb R^d}
+\int_{\RR^d}
 \frac{
 |e^{iw_1}-1|^2
 }{
@@ -262,7 +262,7 @@ Define
 \boxed{
 C_d
 =
-\int_{\mathbb R^d}
+\int_{\RR^d}
 \frac{
 |e^{iw_1}-1|^2
 }{
@@ -354,7 +354,7 @@ The constant \(C_d\) is strictly positive.
 
 The integrand is nonnegative and is positive on any set where
 \[
-w_1\notin2\pi\mathbb Z.
+w_1\notin2\pi\ZZ.
 \]
 Such a set has positive Lebesgue measure.
 
@@ -364,7 +364,7 @@ Such a set has positive Lebesgue measure.
 
 ::: {.pf-step #s1-11}
 
-Therefore, for every \(\xi\in\mathbb R^d\),
+Therefore, for every \(\xi\in\RR^d\),
 \[
 \boxed{
 I(\xi)=C_d|\xi|}.
@@ -387,7 +387,7 @@ Substituting step [](#s1-11){.pf-ref} into step [](#s1-4){.pf-ref} gives
 [u]_{1/2}^2
 =
 C_d
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |\xi|
 \,|\widehat u(\xi)|^2
 \,d\xi}.
@@ -409,7 +409,7 @@ Since \(C_d\in(0,\infty)\),
 \boxed{
 [u]_{1/2}<\infty
 \iff
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |\xi|
 \,|\widehat u(\xi)|^2
 \,d\xi
@@ -428,10 +428,10 @@ Multiplication by a fixed finite positive constant does not affect finiteness.
 
 ::: {.pf-step #s1-14}
 
-Since \(u\in L^2(\mathbb R^d)\),
+Since \(u\in L^2(\RR^d)\),
 \[
 \boxed{
-\widehat u\in L^2(\mathbb R^d)}.
+\widehat u\in L^2(\RR^d)}.
 \]
 
 
@@ -494,7 +494,7 @@ Therefore
 \]
 if and only if
 \[
-\int_{\mathbb R^d}
+\int_{\RR^d}
 (1+|\xi|)
 |\widehat u(\xi)|^2\,d\xi
 <
@@ -515,7 +515,7 @@ Square the \(L^2\)-norm and use the two-sided comparison from step [](#s1-15){.p
 By step [](#s1-14){.pf-ref}, the condition in step [](#s1-16){.pf-ref} is equivalent to
 \[
 \boxed{
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |\xi|
 |\widehat u(\xi)|^2\,d\xi
 <
@@ -540,9 +540,9 @@ is already finite because \(u\in L^2\).
 Combining steps [](#s1-13){.pf-ref} and [](#s1-17){.pf-ref},
 \[
 \boxed{
-u\in H^{1/2}(\mathbb R^d)
+u\in H^{1/2}(\RR^d)
 \iff
-\iint_{\mathbb R^d\times\mathbb R^d}
+\iint_{\RR^d\times\RR^d}
 \frac{|u(x+y)-u(x)|^2}{|y|^{d+1}}
 \,dx\,dy
 <

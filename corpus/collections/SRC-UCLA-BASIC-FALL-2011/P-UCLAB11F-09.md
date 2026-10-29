@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Problem 9. Let $V$ be a finite-dimensional inner-product space and let $L:V\to V$ be self-adjoint.
-Let $\mu\in\mathbb R$ and $\varepsilon>0$.
+Let $\mu\in\RR$ and $\varepsilon>0$.
 Suppose there is a unit vector $x\in V$ such that
 \[
 \|Lx-\mu x\|\le\varepsilon.
@@ -48,7 +48,7 @@ This is the finite-dimensional spectral theorem for self-adjoint operators. Writ
 \[
 Lv_j=\lambda_jv_j,
 \qquad
-\lambda_j\in\mathbb R.
+\lambda_j\in\RR.
 \]
 
 :::

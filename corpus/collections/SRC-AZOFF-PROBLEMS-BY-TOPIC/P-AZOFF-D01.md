@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f , g : [ 0 , 1 ] \to \mathbb { R }$ with $f$ Riemann integrable and
+Suppose $f , g : [ 0 , 1 ] \to \RR$ with $f$ Riemann integrable and
 
 $$
 | g ( x ) - g ( y ) | \leq | f ( x ) - f ( y ) | , \qquad x , y \in [ 0 , 1 ] .

@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $N$ be a knotted solid torus in $S^3$, let $T$ be its boundary torus, and let $X$ be its exterior (that is, the closure of $S^3 - N$). Use Mayer-Vietoris to compute the homology $H_*(X; \mathbb{Z})$.
+Let $N$ be a knotted solid torus in $S^3$, let $T$ be its boundary torus, and let $X$ be its exterior (that is, the closure of $S^3 - N$). Use Mayer-Vietoris to compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ Since $H_2(S^3)=H_1(S^3)=0$, the relevant exact segment is
 $$
 0\to H_1(T^2)\to H_1(N)\oplus H_1(X)\to0.
 $$
-Thus $\mathbb Z^2\cong\mathbb Z\oplus H_1(X)$, so $H_1(X)\cong\mathbb Z$.
+Thus $\ZZ^2\cong\ZZ\oplus H_1(X)$, so $H_1(X)\cong\ZZ$.
 :::
 
 :::
@@ -51,11 +51,11 @@ Thus $\mathbb Z^2\cong\mathbb Z\oplus H_1(X)$, so $H_1(X)\cong\mathbb Z$.
 ::: {.pf-step #degree-3-2-sequence}
 The degree-$3$ and degree-$2$ part of Mayer--Vietoris gives
 $$
-0\to H_3(X)\to\mathbb Z\xrightarrow{\partial}\mathbb Z\to H_2(X)\to0.
+0\to H_3(X)\to\ZZ\xrightarrow{\partial}\ZZ\to H_2(X)\to0.
 $$
 
 ::: pf-proof
-Use $H_3(T^2)=0$, $H_3(N)=0$, $H_3(S^3)=\mathbb Z$, $H_2(T^2)=\mathbb Z$, $H_2(N)=0$, and $H_2(S^3)=0$.
+Use $H_3(T^2)=0$, $H_3(N)=0$, $H_3(S^3)=\ZZ$, $H_2(T^2)=\ZZ$, $H_2(N)=0$, and $H_2(S^3)=0$.
 :::
 
 :::
@@ -72,15 +72,15 @@ The fundamental class $[S^3]$ is sent to the oriented common boundary class $[T^
 ::: pf-step
 Hence
 $$
-H_i(X;\mathbb Z)\cong
+H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
+\ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}
 $$
 
 ::: pf-proof
-By steps [](#degree-3-2-sequence){.pf-ref}--[](#connecting-map-iso){.pf-ref}, $H_3(X)=H_2(X)=0$. By step [](#h1-computation){.pf-ref}, $H_1(X)=\mathbb Z$, and $X$ is connected so $H_0(X)=\mathbb Z$.
+By steps [](#degree-3-2-sequence){.pf-ref}--[](#connecting-map-iso){.pf-ref}, $H_3(X)=H_2(X)=0$. By step [](#h1-computation){.pf-ref}, $H_1(X)=\ZZ$, and $X$ is connected so $H_0(X)=\ZZ$.
 :::
 
 :::

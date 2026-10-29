@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove or give a counterexample: if $f:[0,1]\to\mathbb R$ is nondecreasing, then there is a sequence of continuous functions $f_n:[0,1]\to\mathbb R$ such that
+Prove or give a counterexample: if $f:[0,1]\to\RR$ is nondecreasing, then there is a sequence of continuous functions $f_n:[0,1]\to\RR$ such that
 \[
 \lim_{n\to\infty}f_n(x)=f(x)
 \]

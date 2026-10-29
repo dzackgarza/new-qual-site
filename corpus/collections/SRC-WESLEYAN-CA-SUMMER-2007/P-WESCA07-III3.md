@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f=u+iv$ be analytic on an open set $U\subseteq\mathbb C$ and suppose
+Let $f=u+iv$ be analytic on an open set $U\subseteq\CC$ and suppose
 \[
 v=u^2.
 \]

@@ -31,7 +31,7 @@ The orientation character is a homomorphism $\pi_1(M)\to\{\pm1\}$. Since $\pi_1(
 :::
 
 ::: {.pf-step #h1-zero}
-We have $H_1(M;\mathbb Z)=0$.
+We have $H_1(M;\ZZ)=0$.
 
 ::: pf-proof
 $H_1$ is the abelianization of $\pi_1$.
@@ -42,7 +42,7 @@ $H_1$ is the abelianization of $\pi_1$.
 ::: {.pf-step #h2-cohomology-iso}
 Poincaré duality gives
 $$
-H_2(M;\mathbb Z)\cong H^2(M;\mathbb Z).
+H_2(M;\ZZ)\cong H^2(M;\ZZ).
 $$
 
 ::: pf-proof
@@ -54,13 +54,13 @@ Cap product with the fundamental class is an isomorphism for the closed orientab
 ::: {.pf-step #h2-cohomology-hom}
 The universal coefficient theorem gives
 $$
-H^2(M;\mathbb Z)\cong\operatorname{Hom}(H_2(M;\mathbb Z),\mathbb Z).
+H^2(M;\ZZ)\cong\operatorname{Hom}(H_2(M;\ZZ),\ZZ).
 $$
 
 ::: pf-proof
 The exact sequence
 $$
-0\to\operatorname{Ext}(H_1(M),\mathbb Z)\to H^2(M)\to\operatorname{Hom}(H_2(M),\mathbb Z)\to0
+0\to\operatorname{Ext}(H_1(M),\ZZ)\to H^2(M)\to\operatorname{Hom}(H_2(M),\ZZ)\to0
 $$
 has zero left term by step [](#h1-zero){.pf-ref}.
 :::
@@ -68,10 +68,10 @@ has zero left term by step [](#h1-zero){.pf-ref}.
 :::
 
 ::: pf-step
-Therefore $H_2(M;\mathbb Z)$ is torsion-free.
+Therefore $H_2(M;\ZZ)$ is torsion-free.
 
 ::: pf-proof
-The group $H_2(M)$ is finitely generated because $M$ is compact. By steps [](#h2-cohomology-iso){.pf-ref} and [](#h2-cohomology-hom){.pf-ref} it is isomorphic to the free abelian group $\operatorname{Hom}(H_2(M),\mathbb Z)$. Hence it is free, in particular torsion-free.
+The group $H_2(M)$ is finitely generated because $M$ is compact. By steps [](#h2-cohomology-iso){.pf-ref} and [](#h2-cohomology-hom){.pf-ref} it is isomorphic to the free abelian group $\operatorname{Hom}(H_2(M),\ZZ)$. Hence it is free, in particular torsion-free.
 :::
 
 :::

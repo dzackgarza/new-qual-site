@@ -40,7 +40,7 @@ $$X = M_1' \cup_{S^2} M_2'.$$
 
 ::: pf-step
 Since $\operatorname{codim}(D^3) = 3 \ge 3$, removing an open 3-ball does not affect the fundamental group:
-$$\pi_1(M_1') \cong \pi_1(\mathbb{RP}^3) \cong \mathbb{Z}/2\mathbb{Z}, \qquad \pi_1(M_2') \cong \pi_1(\mathbb{RP}^3) \cong \mathbb{Z}/2\mathbb{Z}.$$
+$$\pi_1(M_1') \cong \pi_1(\mathbb{RP}^3) \cong \ZZ/2\ZZ, \qquad \pi_1(M_2') \cong \pi_1(\mathbb{RP}^3) \cong \ZZ/2\ZZ.$$
 :::
 
 ::: pf-step
@@ -49,7 +49,7 @@ The neck $S^2$ is simply connected ($\pi_1(S^2) = 0$).
 
 ::: pf-step
 Applying the Seifert–van Kampen Theorem to the open collar neighborhood decomposition of $X$:
-$$\pi_1(X) \cong \pi_1(M_1') *_{\pi_1(S^2)} \pi_1(M_2') \cong (\mathbb{Z}/2\mathbb{Z}) *_{\{e\}} (\mathbb{Z}/2\mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z} * \mathbb{Z}/2\mathbb{Z} \cong D_\infty,$$
+$$\pi_1(X) \cong \pi_1(M_1') *_{\pi_1(S^2)} \pi_1(M_2') \cong (\ZZ/2\ZZ) *_{\{e\}} (\ZZ/2\ZZ) \cong \ZZ/2\ZZ * \ZZ/2\ZZ \cong D_\infty,$$
 which is the infinite dihedral group $D_\infty = \langle a, b \mid a^2 = b^2 = 1 \rangle$.
 :::
 
@@ -71,7 +71,7 @@ The space $\widetilde{M}_1' = S^3 \setminus (D_1^3 \cup D_2^3)$ is homeomorphic 
 :::
 
 ::: pf-step
-The Cayley graph of the group $G = \mathbb{Z}/2\mathbb{Z} * \mathbb{Z}/2\mathbb{Z}$ with respect to the generators $\{a, b\}$ is an infinite line (a 1D tree with vertices indexed by $\mathbb{Z}$).
+The Cayley graph of the group $G = \ZZ/2\ZZ * \ZZ/2\ZZ$ with respect to the generators $\{a, b\}$ is an infinite line (a 1D tree with vertices indexed by $\ZZ$).
 :::
 
 ::: pf-step
@@ -80,11 +80,11 @@ The universal cover $\widetilde{X}$ is the tree-like plumbing of building blocks
 
 ::: pf-step
 Collapsing the cylinder intervals gives a homeomorph/deformation retraction of the entire infinite chain to
-$$\widetilde{X} \cong S^2 \times \mathbb{R}.$$
+$$\widetilde{X} \cong S^2 \times \RR.$$
 :::
 
 ::: pf-step
-Thus the universal cover $\widetilde{X}$ is homeomorphic to $S^2 \times \mathbb{R}$, which deformation retracts to $S^2$.
+Thus the universal cover $\widetilde{X}$ is homeomorphic to $S^2 \times \RR$, which deformation retracts to $S^2$.
 :::
 
 :::
@@ -106,12 +106,12 @@ $$\pi_2(X) \cong \pi_2(\widetilde{X}).$$
 :::
 
 ::: pf-step
-Since $\widetilde{X} \simeq S^2 \times \mathbb{R} \simeq S^2$:
-$$\pi_2(\widetilde{X}) \cong \pi_2(S^2 \times \mathbb{R}) \cong \pi_2(S^2) \oplus \pi_2(\mathbb{R}) \cong \mathbb{Z} \oplus 0 \cong \mathbb{Z}.$$
+Since $\widetilde{X} \simeq S^2 \times \RR \simeq S^2$:
+$$\pi_2(\widetilde{X}) \cong \pi_2(S^2 \times \RR) \cong \pi_2(S^2) \oplus \pi_2(\RR) \cong \ZZ \oplus 0 \cong \ZZ.$$
 :::
 
 ::: pf-step
-Therefore $\pi_2(X) \cong \mathbb{Z}$.
+Therefore $\pi_2(X) \cong \ZZ$.
 :::
 
 :::
@@ -122,7 +122,7 @@ Therefore $\pi_2(X) \cong \mathbb{Z}$.
 Conclusion:
 
 ::: pf-proof
-$\pi_1(X) \cong \mathbb{Z}/2\mathbb{Z} * \mathbb{Z}/2\mathbb{Z}$, the universal cover is $\widetilde{X} \cong S^2 \times \mathbb{R} \simeq S^2$, and $\pi_2(X) \cong \mathbb{Z}$.
+$\pi_1(X) \cong \ZZ/2\ZZ * \ZZ/2\ZZ$, the universal cover is $\widetilde{X} \cong S^2 \times \RR \simeq S^2$, and $\pi_2(X) \cong \ZZ$.
 :::
 
 :::

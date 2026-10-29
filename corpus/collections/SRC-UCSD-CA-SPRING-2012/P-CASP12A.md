@@ -17,17 +17,17 @@ Determine if each statement is true or false.
 If false, provide a counterexample.
 If true, give a brief proof.
 
-1. If $f$ is an entire function satisfying $f(0) = 1$ and $f'(1/n) = f(1/n)$ for all integers $n \geq 1$, then $f(z) = e^z$ for all $z \in \mathbb{C}$.
+1. If $f$ is an entire function satisfying $f(0) = 1$ and $f'(1/n) = f(1/n)$ for all integers $n \geq 1$, then $f(z) = e^z$ for all $z \in \CC$.
 
-2. If $f$ is an entire function satisfying $f(0) = 1$ and $f'(n) = f(n)$ for all integers $n \geq 1$, then $f(z) = e^z$ for all $z \in \mathbb{C}$.
+2. If $f$ is an entire function satisfying $f(0) = 1$ and $f'(n) = f(n)$ for all integers $n \geq 1$, then $f(z) = e^z$ for all $z \in \CC$.
 
 3. If $f$ and $g$ are analytic functions defined on a neighborhood of $|z| \leq 1$, $g \neq 0$ on $|z| \leq 1$, and $|f| \leq |g|$ on $|z| = 1$, then $|f| \leq |g|$ on $|z| \leq 1$.
 
-4. There exists a nonconstant analytic function $f$ on $\mathbb{C}$ such that $\operatorname{ran} f \cap \mathbb{D} = \emptyset$.
+4. There exists a nonconstant analytic function $f$ on $\CC$ such that $\operatorname{ran} f \cap \mathbb{D} = \emptyset$.
 
 5. If $f$ is analytic on a neighborhood of $|z| \leq 1$ and $|f(z)| < 1$ for $|z| \leq 1$, then $f$ when viewed as a mapping of $\overline{\mathbb{D}}$ into $\overline{\mathbb{D}}$ has a unique fixed point.
 
-6. There is no complex structure on $\mathbb{R}^2$ such that the function $f: \mathbb{R}^2 \to \mathbb{C}$ defined by $f(x, y) = x - iy$ is analytic.
+6. There is no complex structure on $\RR^2$ such that the function $f: \RR^2 \to \CC$ defined by $f(x, y) = x - iy$ is analytic.
 :::
 
 ::: {.solution}
@@ -73,10 +73,10 @@ The equality case of Schwarz's lemma would make it a disk automorphism. But
 $f(\overline{\mathbb D})$ is compactly contained in $\mathbb D$, impossible
 for an automorphism. Hence the fixed point is unique.
 
-6. **False.** Give $\mathbb R^2$ the complex structure
+6. **False.** Give $\RR^2$ the complex structure
 \[
 J(x,y)=(y,-x),
 \]
 the negative of the standard one. Then $f(x,y)=x-iy$ is complex-linear from
-$(\mathbb R^2,J)$ to the standard complex plane, hence holomorphic.
+$(\RR^2,J)$ to the standard complex plane, hence holomorphic.
 :::

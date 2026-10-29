@@ -43,7 +43,7 @@ The automorphism group of $C_{61}$ contains an element of order $3$.
 
 Since $61$ is prime,
 \[
-\operatorname{Aut}(C_{61})\cong (\mathbb Z/61\mathbb Z)^\times,
+\operatorname{Aut}(C_{61})\cong (\ZZ/61\ZZ)^\times,
 \]
 which is cyclic of order $60$.
 Because $3\mid60$, it contains an element $\varphi$ of order $3$.

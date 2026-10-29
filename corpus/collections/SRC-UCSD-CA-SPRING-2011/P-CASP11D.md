@@ -21,7 +21,7 @@ audit:
 Suppose that every subsequence of $\{x_n\}$ has a subsequence which converges to $x$.
 Show that $\{x_n\}$ converges to $x$.
 
-(b) Let $\{f_n\}$ be a sequence of locally bounded analytic functions in an open region $G \subset \mathbb{C}$.
+(b) Let $\{f_n\}$ be a sequence of locally bounded analytic functions in an open region $G \subset \CC$.
 Let $A := \{z \in G : \lim_{n \to \infty} f_n(z) = 0\}$ and assume that $A$ has a limit point in $G$.
 Show that $\{f_n\}$ converges uniformly on compact subsets of $G$ to $f \equiv 0$.
 :::

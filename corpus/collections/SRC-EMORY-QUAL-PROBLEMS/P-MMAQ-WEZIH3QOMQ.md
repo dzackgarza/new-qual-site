@@ -31,7 +31,7 @@ audit:
 
 ::: {.problem}
 An integral domain $R$ is said to be an *Euclidean domain* if there
-is a function $N: R \to \{n\in\mathbb{Z} \mid n\geq 0\}$ such that
+is a function $N: R \to \{n\in\ZZ \mid n\geq 0\}$ such that
 $N(0)=0$ and for each $a,b\in R$ with $b\neq 0$, there exist
 elements $q,r\in R$ with
 `\begin{align*}

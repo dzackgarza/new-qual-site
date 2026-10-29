@@ -49,19 +49,19 @@ X=S^1\cup_{\varphi}D^2,
 
 With rational coefficients, the cellular chain complex of $X$ is
 \[
-0\longrightarrow \mathbb Q
+0\longrightarrow \QQ
 \xrightarrow{\ d\ }
-\mathbb Q
+\QQ
 \xrightarrow{\ 0\ }
-\mathbb Q
+\QQ
 \longrightarrow0.
 \]
 Hence
 \[
-H_k(X;\mathbb Q)
+H_k(X;\QQ)
 \cong
 \begin{cases}
-\mathbb Q,&k=0,\\
+\QQ,&k=0,\\
 0,&k>0.
 \end{cases}
 \]
@@ -70,7 +70,7 @@ H_k(X;\mathbb Q)
 
 Use the CW structure with one cell in each of dimensions $0,1,2$.
 The boundary of the $1$-cell is zero, and the cellular boundary of the $2$-cell is multiplication by the degree of its attaching map, namely $d$.
-Since $d\ne0$, multiplication by $d$ is an isomorphism of the one-dimensional vector space $\mathbb Q$.
+Since $d\ne0$, multiplication by $d$ is an isomorphism of the one-dimensional vector space $\QQ$.
 The displayed homology groups follow.
 
 :::
@@ -86,7 +86,7 @@ Every continuous map $f:X\to X$ has a fixed point.
 The space $X$ is a finite connected CW complex, so the Lefschetz fixed-point theorem applies.
 By step [](#s1){.pf-ref}, the only nonzero rational homology group is
 \[
-H_0(X;\mathbb Q)\cong\mathbb Q.
+H_0(X;\QQ)\cong\QQ.
 \]
 Because $X$ is connected, every self-map induces the identity on $H_0$.
 Therefore the Lefschetz number is
@@ -94,7 +94,7 @@ Therefore the Lefschetz number is
 L(f)
 =
 \sum_{k\ge0}(-1)^k
-\operatorname{tr}\bigl(f_*:H_k(X;\mathbb Q)\to H_k(X;\mathbb Q)\bigr)
+\operatorname{tr}\bigl(f_*:H_k(X;\QQ)\to H_k(X;\QQ)\bigr)
 =1.
 \]
 Since $L(f)\ne0$, the Lefschetz fixed-point theorem implies that $f$ has a fixed point.
@@ -107,7 +107,7 @@ Since $L(f)\ne0$, the Lefschetz fixed-point theorem implies that $f$ has a fixed
 
 The fundamental group of $X$ is
 \[
-\pi_1(X)\cong\mathbb Z/d\mathbb Z.
+\pi_1(X)\cong\ZZ/d\ZZ.
 \]
 
 ::: pf-proof
@@ -120,7 +120,7 @@ Seifert--van Kampen gives
 \cong
 \langle a\mid a^d=1\rangle
 \cong
-\mathbb Z/d\mathbb Z.
+\ZZ/d\ZZ.
 \]
 
 :::
@@ -138,7 +138,7 @@ It identifies isomorphism classes of connected coverings with conjugacy classes 
 
 By step [](#s3){.pf-ref},
 \[
-\pi_1(X)\cong\mathbb Z/d\mathbb Z
+\pi_1(X)\cong\ZZ/d\ZZ
 \]
 is cyclic and hence abelian.
 For each positive divisor $m\mid d$, it has the unique subgroup
@@ -172,9 +172,9 @@ The attaching map
 has degree $d$.
 It lifts through $p_m$ exactly when
 \[
-\varphi_*\pi_1(S^1)=d\mathbb Z
+\varphi_*\pi_1(S^1)=d\ZZ
 \subseteq
-m\mathbb Z=(p_m)_*\pi_1(S^1),
+m\ZZ=(p_m)_*\pi_1(S^1),
 \]
 which is equivalent to $m\mid d$.
 
@@ -204,9 +204,9 @@ The cell-lifting construction gives an $m$-sheeted covering
 \[
 \widetilde X_m\longrightarrow X.
 \]
-Its restriction over the $1$-skeleton corresponds to the subgroup $m\mathbb Z\le\mathbb Z$, so its subgroup in
+Its restriction over the $1$-skeleton corresponds to the subgroup $m\ZZ\le\ZZ$, so its subgroup in
 \[
-\pi_1(X)=\mathbb Z/d\mathbb Z
+\pi_1(X)=\ZZ/d\ZZ
 \]
 is precisely $H_m$ from step [](#s4){.pf-ref}. Hence these explicit covers realize every connected covering space of $X$.
 

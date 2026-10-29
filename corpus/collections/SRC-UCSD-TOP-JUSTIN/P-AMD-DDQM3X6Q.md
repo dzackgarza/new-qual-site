@@ -25,7 +25,7 @@ Show $\tilde H_i(\Sigma X) \cong \tilde H_{i-1}(X)$
 
 ::: {.solution}
 **Goal:** Let $X$ be a topological space.
-Prove that the suspension $\Sigma X = (X \times [-1, 1]) / (X \times \{1\} \sim N, X \times \{-1\} \sim S)$ satisfies $\widetilde{H}_i(\Sigma X) \cong \widetilde{H}_{i-1}(X)$ for all $i \in \mathbb{Z}$, and prove that $\Sigma S^n \cong S^{n+1}$ for all $n \ge 0$.
+Prove that the suspension $\Sigma X = (X \times [-1, 1]) / (X \times \{1\} \sim N, X \times \{-1\} \sim S)$ satisfies $\widetilde{H}_i(\Sigma X) \cong \widetilde{H}_{i-1}(X)$ for all $i \in \ZZ$, and prove that $\Sigma S^n \cong S^{n+1}$ for all $n \ge 0$.
 
 ::: pf
 
@@ -65,7 +65,7 @@ Substituting the vanishing groups from step [](#s1-3){.pf-ref} gives exact seque
 :::
 
 ::: pf-step
-Therefore, the connecting homomorphism $\partial \colon \widetilde{H}_i(\Sigma X) \xrightarrow{\cong} \widetilde{H}_{i-1}(X)$ is an isomorphism for all $i \in \mathbb{Z}$.
+Therefore, the connecting homomorphism $\partial \colon \widetilde{H}_i(\Sigma X) \xrightarrow{\cong} \widetilde{H}_{i-1}(X)$ is an isomorphism for all $i \in \ZZ$.
 :::
 
 ::: pf-qed
@@ -82,11 +82,11 @@ Prove $\Sigma S^n \cong S^{n+1}$.
 ::: pf-proof
 
 ::: pf-step
-Realize $S^n \subset \mathbb{R}^{n+1}$ as $\{x \in \mathbb{R}^{n+1} \mid \|x\| = 1\}$, and $S^{n+1} \subset \mathbb{R}^{n+2} = \mathbb{R}^{n+1} \times \mathbb{R}$ as $\{(x, t) \in \mathbb{R}^{n+1} \times \mathbb{R} \mid \|x\|^2 + t^2 = 1\}$.
+Realize $S^n \subset \RR^{n+1}$ as $\{x \in \RR^{n+1} \mid \|x\| = 1\}$, and $S^{n+1} \subset \RR^{n+2} = \RR^{n+1} \times \RR$ as $\{(x, t) \in \RR^{n+1} \times \RR \mid \|x\|^2 + t^2 = 1\}$.
 :::
 
 ::: pf-step
-Define a map $f \colon S^n \times [-1, 1] \to S^{n+1}$ by: $$f(u, t) = \left( \sqrt{1 - t^2} \, u, \, t \right) \in \mathbb{R}^{n+1} \times \mathbb{R}.$$
+Define a map $f \colon S^n \times [-1, 1] \to S^{n+1}$ by: $$f(u, t) = \left( \sqrt{1 - t^2} \, u, \, t \right) \in \RR^{n+1} \times \RR.$$
 :::
 
 ::: pf-step

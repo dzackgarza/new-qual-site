@@ -50,7 +50,7 @@ Finally, choose $y = d \xi$ where d is a small constant.]
 :::
 
 ::: {.solution}
-For real $x$, the hypothesis gives $|f(x)|\le c e^{-ax^2}$, so $f|_{\mathbb R}\in L^1(\mathbb R)$. For $\zeta=\xi+i\eta$,
+For real $x$, the hypothesis gives $|f(x)|\le c e^{-ax^2}$, so $f|_{\RR}\in L^1(\RR)$. For $\zeta=\xi+i\eta$,
 \[
 |f(x)e^{-2\pi i x\zeta}|\le c e^{-ax^2+2\pi |\eta||x|},
 \]
@@ -76,7 +76,7 @@ a':=2\pi d-bd^2>0,
 \]
 and therefore $|\widehat f(\xi)|\le C e^{-a'\xi^2}$. For $\xi<0$, shift upward by writing $y=d\xi$ in the same formula; the identical estimate results. Thus
 \[
-|\widehat f(\xi)|\le C e^{-a'\xi^2}\qquad(\xi\in\mathbb R).
+|\widehat f(\xi)|\le C e^{-a'\xi^2}\qquad(\xi\in\RR).
 \tag{2}
 \]
 

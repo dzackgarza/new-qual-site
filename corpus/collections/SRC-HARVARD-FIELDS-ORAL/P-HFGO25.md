@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine the Galois group of $x^8+1$ over $\mathbb Q$.
+Determine the Galois group of $x^8+1$ over $\QQ$.
 :::
 
 ::: {.solution}
@@ -30,24 +30,24 @@ The polynomial is the cyclotomic polynomial
 \[
 x^8+1=\Phi_{16}(x).
 \]
-Hence its splitting field is $\mathbb Q(\zeta_{16})$, where $\zeta_{16}$ is a
+Hence its splitting field is $\QQ(\zeta_{16})$, where $\zeta_{16}$ is a
 primitive sixteenth root of unity.
 
 ::: pf
 
 ::: pf-step
 
-Every automorphism of $\mathbb Q(\zeta_{16})/\mathbb Q$ is determined by
+Every automorphism of $\QQ(\zeta_{16})/\QQ$ is determined by
 \[
 \zeta_{16}\longmapsto \zeta_{16}^a
 \]
-for a unique $a\in(\mathbb Z/16\mathbb Z)^\times$.
+for a unique $a\in(\ZZ/16\ZZ)^\times$.
 
 ::: pf-proof
 
-The conjugates of $\zeta_{16}$ over $\mathbb Q$ are precisely the primitive
+The conjugates of $\zeta_{16}$ over $\QQ$ are precisely the primitive
 sixteenth roots $\zeta_{16}^a$ with $\gcd(a,16)=1$. Conversely, each such choice
-extends to a $\mathbb Q$-automorphism of the cyclotomic field.
+extends to a $\QQ$-automorphism of the cyclotomic field.
 
 :::
 
@@ -57,8 +57,8 @@ extends to a $\mathbb Q$-automorphism of the cyclotomic field.
 
 Therefore
 \[
-\operatorname{Gal}(x^8+1/\mathbb Q)
-\cong (\mathbb Z/16\mathbb Z)^\times.
+\operatorname{Gal}(x^8+1/\QQ)
+\cong (\ZZ/16\ZZ)^\times.
 \]
 
 ::: pf-proof
@@ -85,7 +85,7 @@ order $4$ modulo $16$ because
 \]
 Moreover $-1\notin\langle3\rangle=\{1,3,9,11\}$, so
 \[
-(\mathbb Z/16\mathbb Z)^\times
+(\ZZ/16\ZZ)^\times
 =\langle-1\rangle\times\langle3\rangle
 \cong C_2\times C_4.
 \]

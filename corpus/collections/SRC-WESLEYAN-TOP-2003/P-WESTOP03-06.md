@@ -38,7 +38,7 @@ This is the standard polygonal model of the Klein bottle: one pair of opposite s
 
 ::: pf-step
 
-Define homeomorphisms of $\mathbb R^2$ by
+Define homeomorphisms of $\RR^2$ by
 \[
 a(x,y)=(x+1,y),
 \qquad
@@ -87,7 +87,7 @@ bab^{-1}(x,y)
 Every element of $G$ has the form
 \[
 a^m b^n,
-\qquad m,n\in\mathbb Z,
+\qquad m,n\in\ZZ,
 \]
 and acts by
 \[
@@ -110,7 +110,7 @@ applying $a^m$ gives the formula.
 
 ::: {.pf-step #s1-5}
 
-The action of $G$ on $\mathbb R^2$ is free.
+The action of $G$ on $\RR^2$ is free.
 
 
 ::: pf-proof
@@ -128,7 +128,7 @@ The action is properly discontinuous.
 
 ::: pf-proof
 
-Let $C\subset\mathbb R^2$ be compact. Its $x$- and $y$-coordinates are bounded. If
+Let $C\subset\RR^2$ be compact. Its $x$- and $y$-coordinates are bounded. If
 \[
 a^mb^n(C)\cap C\ne\varnothing,
 \]
@@ -142,7 +142,7 @@ then the formula in step [](#s1-4){.pf-ref} forces $n$ to lie in a bounded set o
 
 The quotient
 \[
-\mathbb R^2/G
+\RR^2/G
 \]
 is homeomorphic to the Klein bottle $K$.
 
@@ -159,7 +159,7 @@ The square $[0,1]\times[0,1]$ is a fundamental polygon for the action. The trans
 
 Therefore the quotient map
 \[
-p:\mathbb R^2\to K\cong\mathbb R^2/G
+p:\RR^2\to K\cong\RR^2/G
 \]
 is a covering map.
 
@@ -174,7 +174,7 @@ A free properly discontinuous action by homeomorphisms has quotient projection a
 
 ::: {.pf-step #s1-9}
 
-Since $\mathbb R^2$ is simply connected, this covering is universal.
+Since $\RR^2$ is simply connected, this covering is universal.
 
 
 ::: pf-proof
@@ -193,13 +193,13 @@ so it is simply connected. A connected simply connected covering space is a univ
 
 Hence the universal covering space of the Klein bottle is
 \[
-\boxed{\mathbb R^2.}
+\boxed{\RR^2.}
 \]
 
 
 ::: pf-proof
 
-Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} exhibit $\mathbb R^2$ as a simply connected covering of the Klein bottle.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} exhibit $\RR^2$ as a simply connected covering of the Klein bottle.
 
 :::
 

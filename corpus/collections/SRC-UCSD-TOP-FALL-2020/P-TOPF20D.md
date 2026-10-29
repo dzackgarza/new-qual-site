@@ -25,11 +25,11 @@ For $n \geq 1$, show that one can not cover the complex projective space $\mathb
 
 ::: {.pf-step #s1}
 
-Let $u\in H^2(\mathbb{CP}^n;\mathbb Z)$ be the standard generator. Then $u^n\ne0$.
+Let $u\in H^2(\mathbb{CP}^n;\ZZ)$ be the standard generator. Then $u^n\ne0$.
 
 ::: pf-proof
 
-$H^*(\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z[u]/(u^{n+1})$.
+$H^*(\mathbb{CP}^n;\ZZ)\cong\ZZ[u]/(u^{n+1})$.
 
 :::
 
@@ -41,7 +41,7 @@ If $U_i\subset\mathbb{CP}^n$ is contractible, then $u|_{U_i}=0$.
 
 ::: pf-proof
 
-$H^2(U_i;\mathbb Z)=0$ for a contractible space.
+$H^2(U_i;\ZZ)=0$ for a contractible space.
 
 :::
 

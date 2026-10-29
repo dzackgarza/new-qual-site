@@ -30,7 +30,7 @@ audit:
 :::
 
 ::: {.solution}
-Write $C_m=\mathbb Z/m\mathbb Z$.
+Write $C_m=\ZZ/m\ZZ$.
 
 ::: pf
 
@@ -40,7 +40,7 @@ The elementary-divisor form of the structure theorem is as follows.
 
 Every finitely generated abelian group $A$ has a decomposition
 $$
-A\cong\mathbb Z^r\oplus
+A\cong\ZZ^r\oplus
 \bigoplus_{p\ \mathrm{prime}}
 \bigoplus_{j=1}^{t_p} C_{p^{e_{p,j}}},
 $$

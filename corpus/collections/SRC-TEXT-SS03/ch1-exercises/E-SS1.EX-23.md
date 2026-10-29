@@ -22,7 +22,7 @@ $$
 f (x) = \left\{ \begin{array}{c l} 0 & \text {if} x \leq 0, \\ e ^ {- 1 / x ^ {2}} & \text {if} x > 0. \end{array} \right.
 $$
 
-Prove that $f$ is indefinitely diferentiable on $\mathbb { R } ,$ and that $f ^ { ( n ) } ( 0 ) = 0$ for all $n \geq 1$ Conclude that $f$ does not have a converging power series expansion $\scriptstyle \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ for x near the origin.
+Prove that $f$ is indefinitely diferentiable on $\RR ,$ and that $f ^ { ( n ) } ( 0 ) = 0$ for all $n \geq 1$ Conclude that $f$ does not have a converging power series expansion $\scriptstyle \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ for x near the origin.
 :::
 
 ::: {.solution}
@@ -51,7 +51,7 @@ We now prove inductively that $f$ is $C^\infty$ at $0$ and $f^{(n)}(0)=0$ for ev
 \frac{f^{(n)}(h)-f^{(n)}(0)}{h}
 =\frac{P_n(1/h)e^{-1/h^2}}{h}\longrightarrow0
 \]
-by the same exponential-decay estimate. Thus $f^{(n+1)}(0)=0$, and (1) shows continuity of the next derivative at $0$. Therefore $f\in C^\infty(\mathbb R)$ and all derivatives at $0$ vanish.
+by the same exponential-decay estimate. Thus $f^{(n+1)}(0)=0$, and (1) shows continuity of the next derivative at $0$. Therefore $f\in C^\infty(\RR)$ and all derivatives at $0$ vanish.
 
 If $f$ were represented near $0$ by a convergent power series $\sum_{n\ge0}a_nx^n$, then necessarily
 \[

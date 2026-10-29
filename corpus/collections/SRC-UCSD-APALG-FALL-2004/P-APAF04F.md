@@ -183,7 +183,7 @@ Applying step [](#s1){.pf-ref} to the conjugate partition $\lambda'$ also gives
 s_{\lambda'}
 =\sum_{\mu\vdash n}\frac{\chi^{\lambda'}_\mu}{z_\mu}p_\mu.
 \]
-The power sums $p_\mu$ for $\mu\vdash n$ form a basis of the degree-$n$ symmetric functions over $\mathbb Q$. Comparing the coefficient of $p_\mu$ with step [](#s5){.pf-ref} yields
+The power sums $p_\mu$ for $\mu\vdash n$ form a basis of the degree-$n$ symmetric functions over $\QQ$. Comparing the coefficient of $p_\mu$ with step [](#s5){.pf-ref} yields
 \[
 \frac{\chi^{\lambda'}_\mu}{z_\mu}
 =

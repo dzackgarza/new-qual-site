@@ -20,7 +20,7 @@ Let $f$ be entire.
 Suppose there are a constant $M$ and a fixed positive integer $n$ such that
 \[
 |f(z)|\le M|z|^n
-\qquad(z\in\mathbb C).
+\qquad(z\in\CC).
 \]
 Prove that $f$ is a polynomial of degree at most $n$.
 :::
@@ -115,7 +115,7 @@ f(z)
 
 ::: pf-proof
 
-Because \(f\) is entire, its Taylor series about \(0\) converges to \(f\) for every \(z\in\mathbb C\):
+Because \(f\) is entire, its Taylor series about \(0\) converges to \(f\) for every \(z\in\CC\):
 \[
 f(z)
 =

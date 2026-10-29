@@ -24,14 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $(\Omega, \mathcal{B}, \mu)$ is a measure space, $\Omega_n \in \mathcal{B}$ with $\Omega_n \uparrow \Omega$ and $\mu(\Omega_n) < \infty$ for all $n \in \mathbb{N}$.
-If $f : \Omega \to \mathbb{C}$ is a measurable function such that
+Suppose that $(\Omega, \mathcal{B}, \mu)$ is a measure space, $\Omega_n \in \mathcal{B}$ with $\Omega_n \uparrow \Omega$ and $\mu(\Omega_n) < \infty$ for all $n \in \NN$.
+If $f : \Omega \to \CC$ is a measurable function such that
 $$
 \int_\Omega |fg|\,d\mu < \infty \quad \text{for all } g \in L^{3/2}(\mu),
 $$
 show $f \in L^3(\mu)$, i.e. $\int_\Omega |f|^3\,d\mu < \infty$.
 
-Hint: consider $f_n := \mathbf{1}_{\Omega_n} f \cdot \mathbf{1}_{|f| \leq n} \in L^3(\mu)$ for $n \in \mathbb{N}$ and recall $L^3(\mu) \cong L^{3/2}(\mu)^*$.
+Hint: consider $f_n := \mathbf{1}_{\Omega_n} f \cdot \mathbf{1}_{|f| \leq n} \in L^3(\mu)$ for $n \in \NN$ and recall $L^3(\mu) \cong L^{3/2}(\mu)^*$.
 :::
 
 ::: {.solution}
@@ -52,7 +52,7 @@ Since $|f_n|\le n$ and $\mu(\Omega_n)<\infty$, we have $f_n\in L^3(\mu)$.
 
 Define
 \[
-T_n:L^{3/2}(\mu)\to\mathbb C,
+T_n:L^{3/2}(\mu)\to\CC,
 \qquad
 T_n(g)=\int_\Omega f_n g\,d\mu.
 \]

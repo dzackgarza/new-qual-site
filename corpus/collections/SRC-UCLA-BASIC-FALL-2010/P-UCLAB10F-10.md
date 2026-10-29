@@ -17,16 +17,16 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ is bounded and Lipschitz continuous.
-For $k\in\mathbb N$, define $x_k:[0,1]\to\mathbb R$ by $x_k(0)=0$ and
+Suppose $f:\RR\to\RR$ is bounded and Lipschitz continuous.
+For $k\in\NN$, define $x_k:[0,1]\to\RR$ by $x_k(0)=0$ and
 \[
 x_k(t)=x_k(n2^{-k})+(t-n2^{-k})f(x_k(n2^{-k}))
 \]
 whenever
 \[
-n2^{-k}<t\le(n+1)2^{-k},\qquad n\in\mathbb N.
+n2^{-k}<t\le(n+1)2^{-k},\qquad n\in\NN.
 \]
-Explain why $x_k$ converges uniformly, as $k\to\infty$, to a solution $x:[0,1]\to\mathbb R$ of
+Explain why $x_k$ converges uniformly, as $k\to\infty$, to a solution $x:[0,1]\to\RR$ of
 \[
 x'(t)=f(x(t)),\qquad x(0)=0.
 \]
@@ -42,7 +42,7 @@ Assume
 \[
 |f(x)|\le M
 \]
-for all $x\in\mathbb R$, and let $L$ be a Lipschitz constant:
+for all $x\in\RR$, and let $L$ be a Lipschitz constant:
 \[
 |f(x)-f(y)|\le L|x-y|.
 \]

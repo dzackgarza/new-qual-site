@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f\in L^1(\mathbb R^n,m)$ satisfies
+Suppose $f\in L^1(\RR^n,m)$ satisfies
 \[
 \left|\int_E f\,dm\right|\le m(E)
 \]

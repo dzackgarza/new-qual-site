@@ -41,14 +41,14 @@ be the mapping cone of the projection.
 
 Coning each fiber \(S^7\) produces a disk \(D^8\). Thus \(C_p\) is the Thom space of the associated cone/disk bundle over \(\mathbb{OP}^2\). Since its boundary is the sphere \(S^{23}\), collapsing this boundary to the cone point gives a closed \(24\)-manifold. The Thom isomorphism (equivalently Poincaré duality in \(C_p\)) gives
 \[
-H^*(C_p;\mathbb Z)
+H^*(C_p;\ZZ)
 \cong
-\mathbb Z\{1,x,x^2,x^3\},
+\ZZ\{1,x,x^2,x^3\},
 \qquad |x|=8,
 \]
 with
 \[
-x^3\ne0\in H^{24}(C_p;\mathbb Z).
+x^3\ne0\in H^{24}(C_p;\ZZ).
 \tag{1}
 \]
 More explicitly, \(x\) restricts to a generator of \(H^8(\mathbb{OP}^2)\), \(x^2\) generates degree \(16\), and Poincaré duality forces the pairing of degrees \(8\) and \(16\) to be unimodular, so \(x^3\) is a generator up to sign.
@@ -65,7 +65,7 @@ P^1P^3=P^4.
 \]
 Since
 \[
-H^{20}(C_p;\mathbb Z_3)=0,
+H^{20}(C_p;\ZZ_3)=0,
 \]
 we have
 \[

@@ -14,9 +14,9 @@ audit:
 1. Determine the fundamental group of each space:
    - $S^1$;
    - the torus;
-   - the infinite cylinder $S^1\times\mathbb R$;
-   - $S^1\cup(\mathbb R\times\{0\})\subset\mathbb R^2$;
-   - $\mathbb R^2\setminus(\mathbb R\times\{0\})$.
+   - the infinite cylinder $S^1\times\RR$;
+   - $S^1\cup(\RR\times\{0\})\subset\RR^2$;
+   - $\RR^2\setminus(\RR\times\{0\})$.
 2. Find the universal covering space of each:
    - $S^1$;
    - $S^2$;
@@ -39,7 +39,7 @@ All homology groups below have integral coefficients.
 One has
 \[
 \boxed{
-\pi_1(S^1)\cong\mathbb Z.
+\pi_1(S^1)\cong\ZZ.
 }
 \]
 
@@ -48,7 +48,7 @@ One has
 
 The exponential covering
 \[
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi i t},
 \]
@@ -56,11 +56,11 @@ has simply connected total space and deck group
 \[
 t\mapsto t+n,
 \qquad
-n\in\mathbb Z.
+n\in\ZZ.
 \]
 Hence
 \[
-\pi_1(S^1)\cong\mathbb Z.
+\pi_1(S^1)\cong\ZZ.
 \]
 
 :::
@@ -75,7 +75,7 @@ T^2=S^1\times S^1,
 \]
 \[
 \boxed{
-\pi_1(T^2)\cong\mathbb Z^2.
+\pi_1(T^2)\cong\ZZ^2.
 }
 \]
 
@@ -88,7 +88,7 @@ The fundamental group preserves products:
 \cong
 \pi_1(S^1)\times\pi_1(S^1)
 \cong
-\mathbb Z\times\mathbb Z.
+\ZZ\times\ZZ.
 \]
 
 :::
@@ -99,13 +99,13 @@ The fundamental group preserves products:
 
 For the infinite cylinder
 \[
-S^1\times\mathbb R,
+S^1\times\RR,
 \]
 \[
 \boxed{
-\pi_1(S^1\times\mathbb R)
+\pi_1(S^1\times\RR)
 \cong
-\mathbb Z.
+\ZZ.
 }
 \]
 
@@ -114,12 +114,12 @@ S^1\times\mathbb R,
 
 The factor
 \[
-\mathbb R
+\RR
 \]
 is contractible, so projection onto the first factor is a homotopy
 equivalence
 \[
-S^1\times\mathbb R
+S^1\times\RR
 \simeq
 S^1.
 \]
@@ -135,9 +135,9 @@ Let
 \[
 X
 \coloneqq
-S^1\cup(\mathbb R\times\{0\})
+S^1\cup(\RR\times\{0\})
 \subseteq
-\mathbb R^2,
+\RR^2,
 \]
 where $S^1$ is the unit circle.
 Then
@@ -197,7 +197,7 @@ Hence
 
 The space
 \[
-\mathbb R^2\setminus(\mathbb R\times\{0\})
+\RR^2\setminus(\RR\times\{0\})
 \]
 has two path components, and the fundamental group of either component is
 trivial.
@@ -230,7 +230,7 @@ fundamental group for the union.
 A universal covering of $S^1$ is
 \[
 \boxed{
-\mathbb R\xrightarrow{,t\mapsto e^{2\pi i t},}S^1.
+\RR\xrightarrow{,t\mapsto e^{2\pi i t},}S^1.
 }
 \]
 
@@ -239,7 +239,7 @@ A universal covering of $S^1$ is
 
 The map is a covering and
 \[
-\mathbb R
+\RR
 \]
 is simply connected.
 
@@ -307,7 +307,7 @@ is simply connected, the covering is universal.
 A universal covering of the torus is
 \[
 \boxed{
-\mathbb R^2
+\RR^2
 \longrightarrow
 T^2,
 \qquad
@@ -325,12 +325,12 @@ e^{2\pi i t}
 
 This is the product of the universal covering
 \[
-\mathbb R\to S^1
+\RR\to S^1
 \]
 with itself.
 The space
 \[
-\mathbb R^2
+\RR^2
 \]
 is simply connected.
 
@@ -346,7 +346,7 @@ The simplicial homology of the circle is
 H_k(S^1)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,1,\\
+\ZZ,&k=0,1,\\
 0,&\text{otherwise}.
 \end{cases}
 }
@@ -362,9 +362,9 @@ so the chain complex is
 \[
 0
 \to
-\mathbb Z
+\ZZ
 \xrightarrow{0}
-\mathbb Z
+\ZZ
 \to
 0.
 \]
@@ -382,7 +382,7 @@ The simplicial homology of the sphere is
 H_k(S^2)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,2,\\
+\ZZ,&k=0,2,\\
 0,&\text{otherwise}.
 \end{cases}
 }
@@ -395,7 +395,7 @@ Any triangulation of $S^2$ computes the same homology as the standard CW
 structure with one $0$-cell and one $2$-cell.
 The cellular differential is zero, giving one copy of
 \[
-\mathbb Z
+\ZZ
 \]
 in degrees $0$ and $2$ and zero elsewhere.
 
@@ -411,8 +411,8 @@ The simplicial homology of the projective plane is
 H_k(\mathbb{RP}^2)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/2,&k=1,\\
+\ZZ,&k=0,\\
+\ZZ/2,&k=1,\\
 0,&k\ge2.
 \end{cases}
 }
@@ -433,11 +433,11 @@ Its cellular chain complex is
 \[
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\times2}
-\mathbb Z
+\ZZ
 \xrightarrow{0}
-\mathbb Z
+\ZZ
 \longrightarrow
 0.
 \]
@@ -448,13 +448,13 @@ H_2=0,
 \[
 H_1
 =
-\mathbb Z/2,
+\ZZ/2,
 \]
 and
 \[
 H_0
 =
-\mathbb Z.
+\ZZ.
 \]
 
 Since simplicial and cellular homology agree with singular homology for

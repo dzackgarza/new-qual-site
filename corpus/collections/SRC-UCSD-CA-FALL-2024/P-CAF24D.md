@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF24D
 kind: problem
-title: 'Entire function real on $\mathbb{R}$ and imaginary on $\operatorname{Re}z=\operatorname{Im}z$ is real on $i\mathbb{R}$'
+title: 'Entire function real on $\RR$ and imaginary on $\operatorname{Re}z=\operatorname{Im}z$ is real on $i\RR$'
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function.
+Let $f : \CC \to \CC$ be an entire function.
 Assume that
 
 (i) $f$ takes real values on the real axis,
@@ -24,11 +24,11 @@ Prove that $f$ takes real values on the imaginary axis.
 :::
 
 ::: {.solution}
-Because $f$ is entire and real-valued on $\mathbb R$, its Taylor series at
+Because $f$ is entire and real-valued on $\RR$, its Taylor series at
 $0$ has real coefficients:
 \[
 f(z)=\sum_{n=0}^\infty a_n z^n,
-\qquad a_n\in\mathbb R.
+\qquad a_n\in\RR.
 \]
 For real $t$ the point $e^{i\pi/4}t$ lies on the line
 $\operatorname{Re}z=\operatorname{Im}z$, so
@@ -52,7 +52,7 @@ n\equiv2\pmod4.
 For such $n$, $i^n=-1$. Consequently, for real $t$,
 \[
 f(it)=\sum_{n\equiv2\, (4)}a_n i^n t^n
-=-\sum_{n\equiv2\, (4)}a_n t^n\in\mathbb R.
+=-\sum_{n\equiv2\, (4)}a_n t^n\in\RR.
 \]
 Therefore $f$ is real-valued on the imaginary axis.
 :::

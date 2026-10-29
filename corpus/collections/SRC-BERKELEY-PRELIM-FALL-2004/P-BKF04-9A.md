@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f\colon[0,1]\to\mathbb{R}$ be a continuous function. Show that
+Let $f\colon[0,1]\to\RR$ be a continuous function. Show that
 
 $$
 \lim_{n\to\infty}\int_0^1 f(x)e^{inx^3}\,dx=0.

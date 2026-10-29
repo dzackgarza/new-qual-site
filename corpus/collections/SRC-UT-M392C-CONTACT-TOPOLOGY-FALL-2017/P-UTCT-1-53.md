@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-1-53
 kind: problem
-title: Contactomorphism from the cylindrically symmetric to the standard contact structure on $\mathbb R^3$
+title: Contactomorphism from the cylindrically symmetric to the standard contact structure on $\RR^3$
 classification:
   areas:
   - topology
@@ -21,12 +21,12 @@ audit:
 ---
 
 ::: {.problem}
-On $\mathbb{R}^3$ let $\alpha = dz + x\,dy$ be the standard contact form, and let $\xi' = \ker(\alpha')$, where
+On $\RR^3$ let $\alpha = dz + x\,dy$ be the standard contact form, and let $\xi' = \ker(\alpha')$, where
 $$
 \alpha' = dz + \tfrac{1}{2} r^2\, d\theta = dz + \frac{x\,dy - y\,dx}{2}
 $$
 is the cylindrically symmetric contact form.
-Let $\phi : \mathbb{R}^3 \to \mathbb{R}^3$ be
+Let $\phi : \RR^3 \to \RR^3$ be
 $$
 \phi(x, y, z) = (x, y, z + xy/2).
 $$

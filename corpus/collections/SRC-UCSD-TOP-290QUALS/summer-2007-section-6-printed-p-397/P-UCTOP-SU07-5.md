@@ -31,7 +31,7 @@ Such curves exist by the hypothesis supplied in the problem. After choosing orie
 :::
 
 ::: {.pf-step #cup-product-intersection}
-Let $u,v\in H^1(\Sigma_g;\mathbb Z)$ be the Poincaré duals of $[\alpha]$ and $[\beta]$. Then
+Let $u,v\in H^1(\Sigma_g;\ZZ)$ be the Poincaré duals of $[\alpha]$ and $[\beta]$. Then
 $$
 \langle u\smile v,[\Sigma_g]\rangle=\pm1.
 $$
@@ -45,7 +45,7 @@ The cup-product pairing of the Poincaré dual classes evaluates on the fundament
 ::: {.pf-step #cup-product-generator}
 Hence $u\smile v$ is a generator, up to sign, of
 $$
-H^2(\Sigma_g;\mathbb Z)\cong\mathbb Z.
+H^2(\Sigma_g;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -58,7 +58,7 @@ Its evaluation on the fundamental class is $\pm1$ by step [](#cup-product-inters
 For any continuous map $f:S^2\to\Sigma_g$, one has $f^*u=f^*v=0$.
 
 ::: pf-proof
-The group $H^1(S^2;\mathbb Z)$ is zero.
+The group $H^1(S^2;\ZZ)$ is zero.
 :::
 
 :::

@@ -29,7 +29,7 @@ Assume $n\geq2$ and use integral coefficients. Put $d=n-1$.
 
 The James--Bott--Samelson theorem gives
 \[
-H_*(\Omega S^n;\mathbb Z)
+H_*(\Omega S^n;\ZZ)
 \cong T(t_d),
 \qquad |t_d|=d,
 \]
@@ -40,7 +40,7 @@ as a graded algebra under the Pontryagin product.
 
 Since $S^n=\Sigma S^{n-1}$, the James construction $J(S^{n-1})$ is homotopy equivalent to $\Omega\Sigma S^{n-1}=\Omega S^n$. The James filtration has associated graded homology the tensor algebra on the reduced homology of $S^{n-1}$. Because
 \[
-\widetilde H_*(S^{n-1};\mathbb Z)=\mathbb Z\{t_d\}
+\widetilde H_*(S^{n-1};\ZZ)=\ZZ\{t_d\}
 \]
 is free on one class of degree $d$, Bott--Samelson identifies the Pontryagin algebra with $T(t_d)$.
 
@@ -52,10 +52,10 @@ is free on one class of degree $d$, Bott--Samelson identifies the Pontryagin alg
 
 Since there is only one generator, additively
 \[
-H_q(\Omega S^n;\mathbb Z)
+H_q(\Omega S^n;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&q=jd\text{ for some }j\geq0,\\
+\ZZ,&q=jd\text{ for some }j\geq0,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -75,7 +75,7 @@ with $|t^j|=jd$. Thus it has rank one exactly in the displayed degrees.
 
 ::: {.pf-step #s1-3}
 
-The cohomology ring is the graded Hopf dual of the homology Hopf algebra. If $x_j\in H^{jd}(\Omega S^n;\mathbb Z)$ is dual to $t^j$, then
+The cohomology ring is the graded Hopf dual of the homology Hopf algebra. If $x_j\in H^{jd}(\Omega S^n;\ZZ)$ is dual to $t^j$, then
 \[
 x_i x_j
 =\sum_{\sigma\in\operatorname{Sh}(i,j)}
@@ -113,7 +113,7 @@ When $d$ is even, interchanging two degree-$d$ factors contributes sign $(-1)^{d
 Thus, for $n=2m+1$,
 \[
 \boxed{
-H^*(\Omega S^{2m+1};\mathbb Z)
+H^*(\Omega S^{2m+1};\ZZ)
 \cong\Gamma_{mathbb Z}(x_{2m}),}
 \]
 the divided-power algebra on a class of degree $2m$.
@@ -136,7 +136,7 @@ Identify $x_j$ from step [](#s1-4){.pf-ref} with $\gamma_j(x_{2m})$.
 
 If $n$ is even, then $d$ is odd. The signed shuffle sum is zero when both $i$ and $j$ are odd and otherwise equals the corresponding unsigned binomial coefficient after pairing adjacent odd letters. Equivalently,
 \[
-H^*(\Omega S^{2m};\mathbb Z)
+H^*(\Omega S^{2m};\ZZ)
 \cong
 \Lambda(a_{2m-1})\otimes
 \Gamma_{mathbb Z}(b_{4m-2}),
@@ -156,12 +156,12 @@ For odd $d$, the basic degree-$d$ class $a=x_1$ satisfies $a^2=0$ by graded comm
 
 Therefore
 \[
-\boxed{H_*(\Omega S^n;\mathbb Z)=T(t_{n-1})}
+\boxed{H_*(\Omega S^n;\ZZ)=T(t_{n-1})}
 \]
 and
 \[
 \boxed{
-H^*(\Omega S^n;\mathbb Z)
+H^*(\Omega S^n;\ZZ)
 \cong
 \begin{cases}
 \Gamma(x_{n-1}),&n\text{ odd},\\

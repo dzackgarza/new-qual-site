@@ -60,11 +60,11 @@ Covering maps induce isomorphisms on all homotopy groups in degrees at least $2$
 ::: pf-step
 Therefore
 $$
-\boxed{\pi_4(X)\cong\pi_4(S^4)\cong\mathbb Z.}
+\boxed{\pi_4(X)\cong\pi_4(S^4)\cong\ZZ.}
 $$
 
 ::: pf-proof
-The identity class generates $\pi_4(S^4)\cong\mathbb Z$.
+The identity class generates $\pi_4(S^4)\cong\ZZ$.
 :::
 
 :::

@@ -56,7 +56,7 @@ The set $A$ is compact.
 
 The set
 \[
-A=\{(x,y)\in\mathbb R^2:h(x,y)=1\}
+A=\{(x,y)\in\RR^2:h(x,y)=1\}
 \]
 is closed because $h$ is continuous and $\{1\}$ is closed. It is bounded because every $(x,y)\in A$ satisfies $x^2+y^2=1$. Hence $A$ is compact by the Heine--Borel theorem.
 
@@ -75,7 +75,7 @@ The polynomial
 \[
 F(x,y)=ax^2+2bxy+cy^2
 \]
-is continuous on $\mathbb R^2$. By step [](#s1-1){.pf-ref}, $A$ is compact and nonempty. The extreme value theorem therefore gives points of $A$ at which $F$ attains its maximum and minimum.
+is continuous on $\RR^2$. By step [](#s1-1){.pf-ref}, $A$ is compact and nonempty. The extreme value theorem therefore gives points of $A$ at which $F$ attains its maximum and minimum.
 
 :::
 
@@ -83,7 +83,7 @@ is continuous on $\mathbb R^2$. By step [](#s1-1){.pf-ref}, $A$ is compact and n
 
 ::: {.pf-step #s1-3}
 
-If $F$ attains its maximum on $A$ at $(x_0,y_0)$, then there is $\lambda\in\mathbb R$ such that
+If $F$ attains its maximum on $A$ at $(x_0,y_0)$, then there is $\lambda\in\RR$ such that
 \[
 \nabla F(x_0,y_0)=\lambda\nabla h(x_0,y_0).
 \]

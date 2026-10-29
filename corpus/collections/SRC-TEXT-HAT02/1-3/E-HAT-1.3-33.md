@@ -40,7 +40,7 @@ acts on the tree $T_{m,n}$, and that
 \[
 K=\ker\chi,
 \]
-where after scaling the translation action to have image $\mathbb Z$ one may take
+where after scaling the translation action to have image $\ZZ$ one may take
 \[
 \chi(a)=n',
 \qquad
@@ -62,22 +62,22 @@ The quotient graph $T_{m,n}/K$ has $m'$ vertices of the type labeled $a$ and $n'
 In the Bass--Serre tree, the vertices labeled $a$ are the cosets of the subgroup $\langle b\rangle$, while the vertices labeled $b$ are the cosets of $\langle a\rangle$.
 Passing to $K$-orbits and using
 \[
-G_{m,n}/K\cong\mathbb Z
+G_{m,n}/K\cong\ZZ
 \]
 gives
 \[
 K\backslash G_{m,n}/\langle b\rangle
 \cong
-\mathbb Z/\chi(\langle b\rangle)
+\ZZ/\chi(\langle b\rangle)
 \cong
-\mathbb Z/m'\mathbb Z,
+\ZZ/m'\ZZ,
 \]
 so there are $m'$ $a$-vertices.
 Similarly,
 \[
 K\backslash G_{m,n}/\langle a\rangle
 \cong
-\mathbb Z/n'\mathbb Z,
+\ZZ/n'\ZZ,
 \]
 so there are $n'$ $b$-vertices.
 
@@ -105,13 +105,13 @@ Since
 \]
 we have
 \[
-\chi(Z)=dm'n'\mathbb Z.
+\chi(Z)=dm'n'\ZZ.
 \]
 Therefore
 \[
 K\backslash G_{m,n}/Z
 \cong
-\mathbb Z/(dm'n')\mathbb Z,
+\ZZ/(dm'n')\ZZ,
 \]
 so there are $dm'n'$ edge orbits.
 
@@ -125,7 +125,7 @@ Each $a$-vertex is joined to each $b$-vertex by exactly $d$ edges.
 
 ::: pf-proof
 
-The quotient action of $G_{m,n}/K\cong\mathbb Z$ is transitive on the vertices of each fixed type modulo the respective stabilizers, so the number of edges joining a given pair of vertex orbits is constant.
+The quotient action of $G_{m,n}/K\cong\ZZ$ is transitive on the vertices of each fixed type modulo the respective stabilizers, so the number of edges joining a given pair of vertex orbits is constant.
 There are
 \[
 m'n'

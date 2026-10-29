@@ -28,7 +28,7 @@ audit:
    \[
    F(z)=(f_{jk}(z))
    \]
-   has entire entries and $F(z)+F(z)^*$ is positive definite for every $z\in\mathbb C$, prove that $F$ is constant.
+   has entire entries and $F(z)+F(z)^*$ is positive definite for every $z\in\CC$, prove that $F$ is constant.
 :::
 
 ::: {.solution}

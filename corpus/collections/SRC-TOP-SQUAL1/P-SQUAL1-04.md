@@ -31,7 +31,7 @@ is open, where $p(A)$ has the subspace topology from $Y$.
 
 Let
 \[
-f:\mathbb R\to\mathbb R
+f:\RR\to\RR
 \]
 be the constant map
 \[
@@ -54,12 +54,12 @@ The map \(f\) is continuous.
 
 ::: pf-proof
 
-For any open set \(V\subseteq\mathbb R\),
+For any open set \(V\subseteq\RR\),
 \[
 f^{-1}(V)
 =
 \begin{cases}
-\mathbb R,&0\in V,\\
+\RR,&0\in V,\\
 \varnothing,&0\notin V.
 \end{cases}
 \]
@@ -91,7 +91,7 @@ The map is constant.
 
 ::: {.pf-step #s1-4}
 
-The singleton \(\{0\}\) is not open in the usual topology on \(\mathbb R\).
+The singleton \(\{0\}\) is not open in the usual topology on \(\RR\).
 
 
 ::: pf-proof

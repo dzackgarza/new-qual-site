@@ -21,7 +21,7 @@ Determine the number of solutions of
 \[
 z-2-e^{-z}=0
 \]
-in the right half-plane $H=\{z\in\mathbb C:\operatorname{Re}z>0\}$.
+in the right half-plane $H=\{z\in\CC:\operatorname{Re}z>0\}$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ For \(R>3\), let
 \[
 D_R
 =
-\{z\in\mathbb C:\operatorname{Re}z>0,\ |z|<R\},
+\{z\in\CC:\operatorname{Re}z>0,\ |z|<R\},
 \]
 whose boundary consists of the vertical segment
 \[

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGQUAL18W-I1
 kind: problem
-title: Normality of $\mathbb Q(\sqrt{2+\sqrt2})/\mathbb Q$
+title: Normality of $\QQ(\sqrt{2+\sqrt2})/\QQ$
 classification: {areas: [algebra], topics: []}
 relations: []
 review: draft
@@ -27,7 +27,7 @@ audit:
 True or false?
 Justify your answer with a proof or counterexample:
 \[
-\mathbb Q\!\left(\sqrt{2+\sqrt2}\right)/\mathbb Q
+\QQ\!\left(\sqrt{2+\sqrt2}\right)/\QQ
 \]
 is a normal extension.
 :::

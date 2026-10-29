@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-002
 kind: problem
-title: Units and ideals of $\mathbb Z/60\mathbb Z$
+title: Units and ideals of $\ZZ/60\ZZ$
 classification:
   areas: [algebra]
   topics: []
@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-(a) How many units does the ring $\mathbb Z/60\mathbb Z$ have?
+(a) How many units does the ring $\ZZ/60\ZZ$ have?
 Explain your answer.
 
-(b) How many ideals does the ring $\mathbb Z/60\mathbb Z$ have?
+(b) How many ideals does the ring $\ZZ/60\ZZ$ have?
 Explain your answer.
 :::
 

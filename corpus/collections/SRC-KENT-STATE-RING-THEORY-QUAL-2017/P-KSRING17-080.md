@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-080
 kind: problem
-title: $\mathbb Z[\sqrt p]$ is not a UFD when $p=b^2+4$
+title: $\ZZ[\sqrt p]$ is not a UFD when $p=b^2+4$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that there is an integer b with $p = b ^ { 2 } + 4$ , then $\mathbb { Z } [ { \sqrt { p } } ]$ is not a unique factorization domain.
+Show that if p is a prime such that there is an integer b with $p = b ^ { 2 } + 4$ , then $\ZZ [ { \sqrt { p } } ]$ is not a unique factorization domain.
 :::
 
 ::: {.solution}

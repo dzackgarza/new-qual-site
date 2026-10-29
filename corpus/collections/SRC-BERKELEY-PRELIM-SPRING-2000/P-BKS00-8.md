@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the cardinality of the set of all subrings of the field $\mathbb Q$.
+Find the cardinality of the set of all subrings of the field $\QQ$.
 :::
 
 ::: {.solution}

@@ -42,7 +42,7 @@ Claim 1 is false.
 
 Consider the zero matrix
 \[
-0\in M_3(\mathbb R).
+0\in M_3(\RR).
 \]
 Suppose matrices with determinant $1$ were dense.
 Then there would exist a sequence
@@ -100,7 +100,7 @@ No such matrix can satisfy
 Claim 2 is true.
 Let
 \[
-A\in M_3(\mathbb C).
+A\in M_3(\CC).
 \]
 By Schur triangularization, there exists a unitary matrix $U$ such that
 \[
@@ -225,7 +225,7 @@ A_\varepsilon\to A.
 
 Therefore matrices with distinct eigenvalues are dense in
 \[
-\boxed{M_3(\mathbb C)}.
+\boxed{M_3(\CC)}.
 \]
 
 

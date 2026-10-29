@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that there is a constant $C$ such that every $C^2$ function $f:\mathbb R\to\mathbb R$ satisfies
+Show that there is a constant $C$ such that every $C^2$ function $f:\RR\to\RR$ satisfies
 \[
 \left|\frac{f(0)+f(1)}2-\int_0^1f(x)\,dx\right|\le C\int_0^1|f''(x)|\,dx.
 \]

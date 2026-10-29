@@ -31,7 +31,7 @@ Show that any two reflections of $S^n$ across different $n$ dimensional hyperpla
 :::
 
 ::: {.solution}
-A reflection of $S^n\subset\mathbb R^{n+1}$ across the hyperplane perpendicular to a unit vector $u$ is
+A reflection of $S^n\subset\RR^{n+1}$ across the hyperplane perpendicular to a unit vector $u$ is
 \[
 R_u(x)=x-2\langle x,u\rangle u.
 \]
@@ -74,5 +74,5 @@ The displayed expression depends continuously on $(x,t)$. For each fixed $t$, it
 
 :::
 
-For $n=0$ there is only one hyperplane in $\mathbb R$, so the assertion is trivial. Hence any two reflections of $S^n$ are homotopic, indeed homotopic through reflections.
+For $n=0$ there is only one hyperplane in $\RR$, so the assertion is trivial. Hence any two reflections of $S^n$ are homotopic, indeed homotopic through reflections.
 :::

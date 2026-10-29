@@ -33,7 +33,7 @@ for its rational Betti numbers.
 
 ::: pf-proof
 
-Integral orientability implies Poincaré duality over $\mathbb Q$.
+Integral orientability implies Poincaré duality over $\QQ$.
 
 :::
 

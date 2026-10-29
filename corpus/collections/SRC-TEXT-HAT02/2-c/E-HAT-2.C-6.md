@@ -60,7 +60,7 @@ The antipodal map has no fixed point on the central sphere. Every point in an at
 
 ::: {.pf-step #s3}
 
-On $H_1(M_{2m};\mathbb Z)$, the map $f_*$ has trace zero.
+On $H_1(M_{2m};\ZZ)$, the map $f_*$ has trace zero.
 
 ::: pf-proof
 
@@ -72,7 +72,7 @@ Choose the standard two generators on each handle. The handles occur in $m$ pair
 
 ::: {.pf-step #s4}
 
-On $H_2(M_{2m};\mathbb Z)\cong\mathbb Z$, the map $f_*$ is multiplication by $-1$.
+On $H_2(M_{2m};\ZZ)\cong\ZZ$, the map $f_*$ is multiplication by $-1$.
 
 ::: pf-proof
 

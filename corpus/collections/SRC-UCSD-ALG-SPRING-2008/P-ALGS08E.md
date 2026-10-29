@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $p(x)$ be a polynomial over $\mathbb{Q}$ with Galois group $\mathbb{Z}_2 \times \mathbb{Z}_2$.
+Let $p(x)$ be a polynomial over $\QQ$ with Galois group $\ZZ_2 \times \ZZ_2$.
 What can be said about the solvability of $p(x)$ by radicals?
 What if the Galois group is $S_3$?
 :::
@@ -36,7 +36,7 @@ What if the Galois group is $S_3$?
 
 ::: {.pf-step #s1}
 
-A polynomial over $\mathbb{Q}$ is solvable by radicals if its Galois group is a solvable group.
+A polynomial over $\QQ$ is solvable by radicals if its Galois group is a solvable group.
 
 ::: pf-proof
 
@@ -48,14 +48,14 @@ Over a field of characteristic $0$, the Galois-theoretic criterion for solvabili
 
 ::: pf-step
 
-If the Galois group is $\mathbb{Z}_2\times\mathbb{Z}_2$, then $p(x)$ is solvable by radicals.
+If the Galois group is $\ZZ_2\times\ZZ_2$, then $p(x)$ is solvable by radicals.
 
 ::: pf-proof
 
-The group $\mathbb{Z}_2\times\mathbb{Z}_2$ is abelian, hence solvable.
+The group $\ZZ_2\times\ZZ_2$ is abelian, hence solvable.
 For example, if $H$ is any subgroup of order $2$, then
 \[
-1\triangleleft H\triangleleft \mathbb{Z}_2\times\mathbb{Z}_2
+1\triangleleft H\triangleleft \ZZ_2\times\ZZ_2
 \]
 has abelian quotients.
 By step [](#s1){.pf-ref}, $p(x)$ is solvable by radicals.

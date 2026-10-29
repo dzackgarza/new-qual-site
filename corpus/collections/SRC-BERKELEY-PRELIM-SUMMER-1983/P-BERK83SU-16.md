@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega\subset\mathbb R^2$ be open and let
+Let $\Omega\subset\RR^2$ be open and let
 \[
-f:\Omega\to\mathbb R^2
+f:\Omega\to\RR^2
 \]
 be smooth. Assume that $f$ preserves orientation and maps every pair of orthogonal curves to a pair of orthogonal curves.
 
-Identifying $\mathbb R^2$ with $\mathbb C$, prove that $f$ is holomorphic.
+Identifying $\RR^2$ with $\CC$, prove that $f$ is holomorphic.
 :::
 
 ::: {.solution}

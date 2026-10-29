@@ -27,7 +27,7 @@ Construct free resolutions of $M,N$ to compute:
 :::
 
 ::: {.solution}
-Let $R=\mathbb Z[x,y]$, $M=R/(x-y)$, and $N=R/(x,y)$.
+Let $R=\ZZ[x,y]$, $M=R/(x-y)$, and $N=R/(x,y)$.
 
 ::: pf
 
@@ -104,17 +104,17 @@ Apply $\operatorname{Hom}_R(-,N)$ to step [](#s1){.pf-ref}. Since $x=y=0$ in $N$
 We have
 $$
 \boxed{\operatorname{Ext}_R^0(N,M)=0,\quad
-\operatorname{Ext}_R^1(N,M)\cong\mathbb Z,\quad
-\operatorname{Ext}_R^2(N,M)\cong\mathbb Z.}
+\operatorname{Ext}_R^1(N,M)\cong\ZZ,\quad
+\operatorname{Ext}_R^2(N,M)\cong\ZZ.}
 $$
 
 ::: pf-proof
 
-Identify $M\cong\mathbb Z[t]$ via $x=y=t$. Applying $\operatorname{Hom}_R(-,M)$ to the Koszul resolution gives
+Identify $M\cong\ZZ[t]$ via $x=y=t$. Applying $\operatorname{Hom}_R(-,M)$ to the Koszul resolution gives
 $$
 0\to M\xrightarrow{m\mapsto(tm,tm)}M^2\xrightarrow{(a,b)\mapsto t(a-b)}M\to0.
 $$
-The first map is injective, so $H^0=0$. The kernel of the second map is the diagonal $\{(a,a)\}$, and modulo the image $tM\cdot(1,1)$ this gives $M/tM\cong\mathbb Z$, hence $H^1\cong\mathbb Z$. The second map has image $tM$, so its cokernel is also $M/tM\cong\mathbb Z$, giving $H^2\cong\mathbb Z$.
+The first map is injective, so $H^0=0$. The kernel of the second map is the diagonal $\{(a,a)\}$, and modulo the image $tM\cdot(1,1)$ this gives $M/tM\cong\ZZ$, hence $H^1\cong\ZZ$. The second map has image $tM$, so its cokernel is also $M/tM\cong\ZZ$, giving $H^2\cong\ZZ$.
 
 :::
 

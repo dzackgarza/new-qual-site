@@ -26,12 +26,12 @@ Let $\Gamma_\tau$ be the map taking an oriented plane field $\xi$ to the class i
 Consequently an oriented plane bundle $\xi$ on $M$ is realized as a plane field if and only if $e(\xi) = 2x$ for some $x \in H_1(M)$.
 
 Example: consider $M = \mathbb{RP}^3$.
-We know $H_1(\mathbb{RP}^3) = \mathbb{Z}/2\mathbb{Z}$.
+We know $H_1(\mathbb{RP}^3) = \ZZ/2\ZZ$.
 Note that only $0 \in H_1$ can be represented as $2x$, so every plane field in $\mathbb{RP}^3$ is trivial as a plane bundle.
 For fixed choice of $\tau$, however, we get two values of $\Gamma_\tau$ and therefore there are at least two different plane fields that are not homotopic.
 
 Analyze the lens space $L(p,q)$ in the same way.
-(Hint: $H_1(L(p,q)) = \mathbb{Z}/p\mathbb{Z}$.)
+(Hint: $H_1(L(p,q)) = \ZZ/p\ZZ$.)
 :::
 
 ::: {.solution}
@@ -42,11 +42,11 @@ M=L(p,q).
 \]
 By the hint,
 \[
-H_1(M;\mathbb Z)\cong\mathbb Z/p.
+H_1(M;\ZZ)\cong\ZZ/p.
 \]
 By Poincaré duality for the closed oriented \(3\)-manifold \(M\),
 \[
-H^2(M;\mathbb Z)\cong H_1(M;\mathbb Z)\cong\mathbb Z/p.
+H^2(M;\ZZ)\cong H_1(M;\ZZ)\cong\ZZ/p.
 \]
 
 ::: pf
@@ -63,7 +63,7 @@ is a surjection
 \Gamma_\tau:
 \{\text{oriented plane fields on }M\}/\simeq
 \twoheadrightarrow
-\mathbb Z/p}.
+\ZZ/p}.
 \]
 
 
@@ -71,7 +71,7 @@ is a surjection
 
 This is the surjectivity statement preceding the exercise, applied to
 \[
-H_1(M)\cong\mathbb Z/p.
+H_1(M)\cong\ZZ/p.
 \]
 
 :::
@@ -88,7 +88,7 @@ homotopy classes of oriented plane fields on \(M\).
 
 Plane fields with different values of \(\Gamma_\tau\) cannot be homotopic,
 since \(\Gamma_\tau\) is a homotopy invariant. Step [](#s1-1){.pf-ref} shows that all
-\(p\) elements of \(\mathbb Z/p\) occur.
+\(p\) elements of \(\ZZ/p\) occur.
 
 :::
 
@@ -105,7 +105,7 @@ For every oriented plane field \(\xi\),
 \]
 in
 \[
-H_1(M)\cong\mathbb Z/p.
+H_1(M)\cong\ZZ/p.
 \]
 
 
@@ -124,7 +124,7 @@ Therefore an oriented \(2\)-plane bundle over \(M\) with Euler class
 \(e\in H^2(M)\) is realizable as a plane field exactly when
 \[
 \boxed{
-\operatorname{PD}(e)\in2(\mathbb Z/p)}.
+\operatorname{PD}(e)\in2(\ZZ/p)}.
 \]
 
 
@@ -145,7 +145,7 @@ under the Poincaré-duality identification with \(H_1(M)\).
 
 If \(p\) is odd, multiplication by \(2\),
 \[
-d_2:\mathbb Z/p\to\mathbb Z/p,
+d_2:\ZZ/p\to\ZZ/p,
 \qquad
 x\longmapsto2x,
 \]
@@ -169,7 +169,7 @@ the class of \(2\) is invertible modulo \(p\).
 Hence, if \(p\) is odd,
 \[
 \boxed{
-2(\mathbb Z/p)=\mathbb Z/p}.
+2(\ZZ/p)=\ZZ/p}.
 \]
 
 
@@ -191,7 +191,7 @@ realizable as a plane field when \(p\) is odd.
 
 Oriented real rank-\(2\) bundles are classified by their Euler class in
 \[
-H^2(M;\mathbb Z)\cong\mathbb Z/p.
+H^2(M;\ZZ)\cong\ZZ/p.
 \]
 By step [](#s1-6){.pf-ref}, every Euler class is divisible by \(2\), so step [](#s1-4){.pf-ref} applies
 to every bundle class.
@@ -239,7 +239,7 @@ distinct Euler classes. There are \(p\) values by step [](#s1-1){.pf-ref}.
 
 ::: {.pf-step #s1-10}
 
-The kernel of multiplication by \(2\) on \(\mathbb Z/p\) is
+The kernel of multiplication by \(2\) on \(\ZZ/p\) is
 \[
 \boxed{
 \ker d_2
@@ -269,7 +269,7 @@ Modulo \(2r\), the two such classes are \(0\) and \(r\).
 The image of multiplication by \(2\) is
 \[
 \boxed{
-2(\mathbb Z/p)
+2(\ZZ/p)
 =
 \{0,2,4,\dots,2r-2\}}
 \]
@@ -286,7 +286,7 @@ first-isomorphism theorem,
 \[
 |\operatorname{im}d_2|
 =
-\frac{|\mathbb Z/p|}{|\ker d_2|}
+\frac{|\ZZ/p|}{|\ker d_2|}
 =
 \frac{p}{2}
 =
@@ -327,7 +327,7 @@ If
 \[
 2x=2y
 \]
-in \(\mathbb Z/p\), then
+in \(\ZZ/p\), then
 \[
 x-y\in\ker d_2
 =
@@ -348,7 +348,7 @@ fields having isomorphic underlying oriented plane bundles.
 
 ::: pf-proof
 
-Let \(x\in\mathbb Z/p\). By surjectivity of \(\Gamma_\tau\), choose plane
+Let \(x\in\ZZ/p\). By surjectivity of \(\Gamma_\tau\), choose plane
 fields
 \[
 \xi,\xi'
@@ -368,7 +368,7 @@ step [](#s1-3){.pf-ref} and
 =
 2x
 \]
-in \(\mathbb Z/p\) show that
+in \(\ZZ/p\) show that
 \[
 e(\xi)=e(\xi').
 \]
@@ -398,7 +398,7 @@ the image of doubling is
 \]
 while
 \[
-H_1\cong\mathbb Z/2
+H_1\cong\ZZ/2
 \]
 has two elements. This is exactly Example 1.22.
 

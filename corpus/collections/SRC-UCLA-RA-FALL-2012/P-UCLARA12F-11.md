@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Find all holomorphic functions $f:\mathbb C\to\mathbb C$ satisfying
+Find all holomorphic functions $f:\CC\to\CC$ satisfying
 \[
 f(z+1)=f(z),\qquad f(z+i)=e^{2\pi}f(z)
 \]
-for every $z\in\mathbb C$.
+for every $z\in\CC$.
 :::
 
 ::: {.solution}

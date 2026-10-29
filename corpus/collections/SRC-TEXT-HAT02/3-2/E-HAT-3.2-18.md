@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.problem}
-For the closed orientable surface $M$ of genus $g \geq 1$, show that for each nonzero $\alpha \in H^1(M; \mathbb{Z})$ there exists $\beta \in H^1(M; \mathbb{Z})$ with $\alpha \beta \neq 0$.
+For the closed orientable surface $M$ of genus $g \geq 1$, show that for each nonzero $\alpha \in H^1(M; \ZZ)$ there exists $\beta \in H^1(M; \ZZ)$ with $\alpha \beta \neq 0$.
 Deduce that $M$ is not homotopy equivalent to a wedge sum $X \vee Y$ of CW complexes with nontrivial reduced homology.
-Do the same for closed nonorientable surfaces using cohomology with $\mathbb{Z}_2$ coefficients.
+Do the same for closed nonorientable surfaces using cohomology with $\ZZ_2$ coefficients.
 :::
 
 ::: {.solution}

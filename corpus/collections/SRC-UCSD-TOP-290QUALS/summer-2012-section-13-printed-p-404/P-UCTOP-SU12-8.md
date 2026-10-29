@@ -46,7 +46,7 @@ represents an element of $\pi_1(\Sigma,x_0)$. Replacing $\eta$ by another path c
 
 In the abelianization
 $$
-H_1(\Sigma;\mathbb Z)\cong\mathbb Z\langle a,b,c,d\rangle,
+H_1(\Sigma;\ZZ)\cong\ZZ\langle a,b,c,d\rangle,
 $$
 the class of $\alpha$ is $b$ and the class of $\beta$ is $a$.
 

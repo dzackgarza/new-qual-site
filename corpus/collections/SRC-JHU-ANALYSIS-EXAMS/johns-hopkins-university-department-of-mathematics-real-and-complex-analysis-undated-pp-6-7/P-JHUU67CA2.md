@@ -25,9 +25,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be an open subset of $\mathbb{C}$.
+Let $U$ be an open subset of $\CC$.
 Let $z_0$ be a point in $U$, and suppose that $f$ is a meromorphic function on $U$ with a pole at $z_0$.
-Prove that there is no holomorphic function $g : U \setminus \{z_0\} \to \mathbb{C}$ such that $e^{g(z)} = f(z)$ for all $z \in U \setminus \{z_0\}$.
+Prove that there is no holomorphic function $g : U \setminus \{z_0\} \to \CC$ such that $e^{g(z)} = f(z)$ for all $z \in U \setminus \{z_0\}$.
 :::
 
 ::: {.solution}

@@ -24,12 +24,12 @@ audit:
 ---
 
 ::: {.problem}
-Compute the groups $H_i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ and $H^i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ for $G = \mathbb{Z}$ and $\mathbb{Z}_2$ via the cellular chain and cochain complexes.
+Compute the groups $H_i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ and $H^i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ for $G = \ZZ$ and $\ZZ_2$ via the cellular chain and cochain complexes.
 [See Example 3B.4.]
 :::
 
 ::: {.solution}
-Give $\mathbb{RP}^r$ its standard CW structure with one cell $e_j$ in each dimension $0\le j\le r$. Its cellular chain complex over $\mathbb Z$ has
+Give $\mathbb{RP}^r$ its standard CW structure with one cell $e_j$ in each dimension $0\le j\le r$. Its cellular chain complex over $\ZZ$ has
 \[
 \partial e_j=\begin{cases}
 0,&j\text{ odd},\\
@@ -48,19 +48,19 @@ F_r=\{0\}\cup\bigl(\{r\}\text{ if $r$ is odd}\bigr),
 \qquad
 T_r=\{j:1\le j<r,\ j\text{ odd}\}.
 \]
-Thus the integral homology of $\mathbb{RP}^r$ is $\mathbb Z$ in degrees in $F_r$, $\mathbb Z_2$ in degrees in $T_r$, and zero otherwise.
+Thus the integral homology of $\mathbb{RP}^r$ is $\ZZ$ in degrees in $F_r$, $\ZZ_2$ in degrees in $T_r$, and zero otherwise.
 
 The cellular tensor complex gives the integral Künneth decomposition
 \[
-H_i(\mathbb{RP}^m\times\mathbb{RP}^n;\mathbb Z)
+H_i(\mathbb{RP}^m\times\mathbb{RP}^n;\ZZ)
 \cong
 \bigoplus_{p+q=i}H_p(\mathbb{RP}^m)\otimes H_q(\mathbb{RP}^n)
 \oplus
 \bigoplus_{p+q=i-1}\operatorname{Tor}(H_p(\mathbb{RP}^m),H_q(\mathbb{RP}^n)).
 \]
-Since the only torsion is $\mathbb Z_2$, this may be written explicitly as
+Since the only torsion is $\ZZ_2$, this may be written explicitly as
 \[
-H_i\cong \mathbb Z^{f_i}\oplus(\mathbb Z_2)^{t_i},
+H_i\cong \ZZ^{f_i}\oplus(\ZZ_2)^{t_i},
 \]
 where
 \[
@@ -76,16 +76,16 @@ t_i={}&\#\{(p,q):p+q=i,\ (p,q)\in
 \]
 This is the complete integral homology calculation.
 
-The integral cohomology follows from the universal coefficient theorem. Since $\operatorname{Hom}(\mathbb Z_2,\mathbb Z)=0$ and $\operatorname{Ext}(\mathbb Z_2,\mathbb Z)\cong\mathbb Z_2$,
+The integral cohomology follows from the universal coefficient theorem. Since $\operatorname{Hom}(\ZZ_2,\ZZ)=0$ and $\operatorname{Ext}(\ZZ_2,\ZZ)\cong\ZZ_2$,
 \[
-\boxed{H^i(\mathbb{RP}^m\times\mathbb{RP}^n;\mathbb Z)
-\cong \mathbb Z^{f_i}\oplus(\mathbb Z_2)^{t_{i-1}}.}
+\boxed{H^i(\mathbb{RP}^m\times\mathbb{RP}^n;\ZZ)
+\cong \ZZ^{f_i}\oplus(\ZZ_2)^{t_{i-1}}.}
 \]
 
-With $\mathbb Z_2$ coefficients every cellular differential is zero, since each nonzero integral differential is multiplication by $2$. Hence both cellular homology and cellular cohomology have one $\mathbb Z_2$ basis vector for each product cell of total dimension $i$. Therefore
+With $\ZZ_2$ coefficients every cellular differential is zero, since each nonzero integral differential is multiplication by $2$. Hence both cellular homology and cellular cohomology have one $\ZZ_2$ basis vector for each product cell of total dimension $i$. Therefore
 \[
-\boxed{H_i(-;\mathbb Z_2)\cong H^i(-;\mathbb Z_2)
-\cong(\mathbb Z_2)^{N_i},}
+\boxed{H_i(-;\ZZ_2)\cong H^i(-;\ZZ_2)
+\cong(\ZZ_2)^{N_i},}
 \]
 where
 \[

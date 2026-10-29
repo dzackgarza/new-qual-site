@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $f ( z )$ be a meromorphic function on the complex plane.
-Suppose that for every polynomial $p ( z ) \in \mathbb { C } [ z ]$ and every closed contour Γ avoiding the poles of $f ,$ we have
+Suppose that for every polynomial $p ( z ) \in \CC [ z ]$ and every closed contour Γ avoiding the poles of $f ,$ we have
 
 $$
 \int _ { \Gamma } p ( z ) ^ { 2 } f ( z ) d z = 0 .
@@ -44,7 +44,7 @@ The hypothesis implies
 \[
 \int_\Gamma q(z)f(z)\,dz=0
 \]
-for every polynomial $q\in\mathbb C[z]$ and every closed contour $\Gamma$ avoiding the poles of $f$.
+for every polynomial $q\in\CC[z]$ and every closed contour $\Gamma$ avoiding the poles of $f$.
 
 ::: pf-proof
 Fix a polynomial $p$.
@@ -57,7 +57,7 @@ Now let $q$ be arbitrary and choose
 \[
 p=\frac{q-1}{2},
 \]
-which is again a polynomial over $\mathbb C$.
+which is again a polynomial over $\CC$.
 Then $2p+1=q$, giving the desired identity.
 :::
 
@@ -92,8 +92,8 @@ contradicting step [](#arbitrary-polynomial-weight){.pf-ref}. Thus $f$ has no po
 Therefore $f$ is entire.
 
 ::: pf-proof
-A meromorphic function on $\mathbb C$ is holomorphic away from its poles.
-By step [](#f-no-poles){.pf-ref} there are no poles, so $f$ is holomorphic on all of $\mathbb C$.
+A meromorphic function on $\CC$ is holomorphic away from its poles.
+By step [](#f-no-poles){.pf-ref} there are no poles, so $f$ is holomorphic on all of $\CC$.
 :::
 
 :::

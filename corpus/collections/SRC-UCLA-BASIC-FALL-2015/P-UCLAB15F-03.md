@@ -27,7 +27,7 @@ Define
 \[
 g_n(x):=\sum_{m=1}^n(-1)^m f_m(x).
 \]
-Prove that $g_n(x)$ converges to some $g(x)\in\mathbb R$ for every $x\in[-1,1]$ and that the resulting function $g:[-1,1]\to\mathbb R$ is continuous.
+Prove that $g_n(x)$ converges to some $g(x)\in\RR$ for every $x\in[-1,1]$ and that the resulting function $g:[-1,1]\to\RR$ is continuous.
 :::
 
 ::: {.solution}

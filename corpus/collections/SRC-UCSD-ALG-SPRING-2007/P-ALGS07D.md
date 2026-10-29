@@ -25,13 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb{C}[x]/\langle x^n \rangle$ denote the evident $\mathbb{C}[x]$-module, and let $m, n \in \mathbb{N}$.
+Let $\CC[x]/\langle x^n \rangle$ denote the evident $\CC[x]$-module, and let $m, n \in \NN$.
 
-(a) Show that there exist $a_1, \ldots, a_k$ such that $$\mathbb{C}[x]/\langle x^n \rangle \otimes_{\mathbb{C}[x]} \mathbb{C}[x]/\langle x^m \rangle \cong \bigoplus_{i=1}^{k} \mathbb{C}[x]/(x^{a_i}).$$
+(a) Show that there exist $a_1, \ldots, a_k$ such that $$\CC[x]/\langle x^n \rangle \otimes_{\CC[x]} \CC[x]/\langle x^m \rangle \cong \bigoplus_{i=1}^{k} \CC[x]/(x^{a_i}).$$
 
 (b) Determine the $a_i$ in terms of $m,n$.
 
-Hint: Figure out the action of $x$ on the obvious $\mathbb{C}$-basis.
+Hint: Figure out the action of $x$ on the obvious $\CC$-basis.
 :::
 
 ::: {.solution}
@@ -88,16 +88,16 @@ Hence $\Phi$ and $\Psi$ are inverse isomorphisms.
 
 ::: {.pf-step #s2}
 
-Applying step [](#s1){.pf-ref} with $R=\mathbb{C}[x]$, $I=(x^n)$, and $J=(x^m)$ gives
+Applying step [](#s1){.pf-ref} with $R=\CC[x]$, $I=(x^n)$, and $J=(x^m)$ gives
 \[
-\mathbb{C}[x]/(x^n)\otimes_{\mathbb{C}[x]}\mathbb{C}[x]/(x^m)
+\CC[x]/(x^n)\otimes_{\CC[x]}\CC[x]/(x^m)
 \cong
-\mathbb{C}[x]/(x^{\min(m,n)}).
+\CC[x]/(x^{\min(m,n)}).
 \]
 
 ::: pf-proof
 
-In $\mathbb{C}[x]$,
+In $\CC[x]$,
 \[
 (x^n)+(x^m)=(x^{\min(m,n)}).
 \]
@@ -119,7 +119,7 @@ and these values answer part (b).
 
 ::: pf-proof
 
-The module on the right side of step [](#s2){.pf-ref} is already one summand of the required form $\mathbb{C}[x]/(x^{a_1})$, so taking $a_1=\min(m,n)$ gives the desired decomposition.
+The module on the right side of step [](#s2){.pf-ref} is already one summand of the required form $\CC[x]/(x^{a_1})$, so taking $a_1=\min(m,n)$ gives the desired decomposition.
 
 :::
 

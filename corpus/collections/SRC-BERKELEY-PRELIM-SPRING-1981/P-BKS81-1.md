@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\vec i,\vec j,\vec k$ be the standard unit vectors in $\mathbb R^3$, and let
+Let $\vec i,\vec j,\vec k$ be the standard unit vectors in $\RR^3$, and let
 \[
 \vec F=(x^2+y-4)\vec i+3xy\vec j+(2xz+z^2)\vec k.
 \]

@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ satisfy the intermediate value property: whenever $0\le a<b\le1$ and $y$ lies between $f(a)$ and $f(b)$, there exists $x\in(a,b)$ such that $f(x)=y$.
-Assume that for every $y\in\mathbb R$, the preimage $f^{-1}(\{y\})$ is closed.
+Let $f:[0,1]\to\RR$ satisfy the intermediate value property: whenever $0\le a<b\le1$ and $y$ lies between $f(a)$ and $f(b)$, there exists $x\in(a,b)$ such that $f(x)=y$.
+Assume that for every $y\in\RR$, the preimage $f^{-1}(\{y\})$ is closed.
 Prove that $f$ is continuous.
 :::
 

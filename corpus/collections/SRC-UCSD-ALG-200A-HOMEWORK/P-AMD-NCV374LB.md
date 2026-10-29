@@ -35,7 +35,7 @@ audit:
 ::: {.problem}
 Let
 \[
-f,g:\mathbb R\longrightarrow\mathbb R,
+f,g:\RR\longrightarrow\RR,
 \qquad
 f(x)=-x,
 \qquad
@@ -43,7 +43,7 @@ g(x)=x+1,
 \]
 and let
 \[
-G=\langle f,g\rangle\le\operatorname{Sym}(\mathbb R).
+G=\langle f,g\rangle\le\operatorname{Sym}(\RR).
 \]
 Prove carefully that
 \[
@@ -67,7 +67,7 @@ The permutations $g$ and $f$ satisfy the defining relations of $P$.
 
 ::: pf-proof
 
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 f^2(x)=-(-x)=x,
 \]
@@ -110,7 +110,7 @@ There is a surjective homomorphism
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, the universal property of the presented group gives a homomorphism $\Phi:P\to\operatorname{Sym}(\mathbb R)$ with the displayed values.
+By step [](#s1){.pf-ref}, the universal property of the presented group gives a homomorphism $\Phi:P\to\operatorname{Sym}(\RR)$ with the displayed values.
 Its image contains both $f$ and $g$, and therefore contains
 \[
 G=\langle f,g\rangle.
@@ -124,7 +124,7 @@ Thus $\operatorname{im}\Phi=G$.
 
 ::: {.pf-step #s3}
 
-For every $m\in\mathbb Z$,
+For every $m\in\ZZ$,
 \[
 ba^m=a^{-m}b
 \]
@@ -157,7 +157,7 @@ Every element of $P$ has a representative of one of the two forms
 a^m
 \qquad\text{or}\qquad
 a^m b,
-\qquad m\in\mathbb Z.
+\qquad m\in\ZZ.
 \]
 
 ::: pf-proof
@@ -182,7 +182,7 @@ The images of these normal forms under $\Phi$ are
 
 ::: pf-proof
 
-Since $\Phi(a)=g$ and $g^m(x)=x+m$ for every $m\in\mathbb Z$,
+Since $\Phi(a)=g$ and $g^m(x)=x+m$ for every $m\in\ZZ$,
 \[
 \Phi(a^m)(x)=x+m.
 \]

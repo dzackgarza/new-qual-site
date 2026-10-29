@@ -21,7 +21,7 @@ p(z)=a_0+a_1z+\cdots+a_nz^n,
 s=\sqrt{1-|z|^2},
 \qquad |z|\le1,
 \]
-and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\mathbb C^{n+1}$.
+and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\CC^{n+1}$.
 
 1. Let $U$ be the $(n+1)\times(n+1)$ matrix whose columns, in order, are
    \[
@@ -50,7 +50,7 @@ Conclude that
 ::: {.solution}
 
 For $|z|\le1$, write $s=\sqrt{1-|z|^2}$ and denote the matrix in part 1 by $U_z$.
-Let $\|\cdot\|$ denote the operator norm induced by the Euclidean norm on $\mathbb C^{n+1}$.
+Let $\|\cdot\|$ denote the operator norm induced by the Euclidean norm on $\CC^{n+1}$.
 
 ::: pf
 
@@ -81,7 +81,7 @@ $$
 $$
 The remaining columns are $e_3,\ldots,e_{n+1}$, which are mutually
 orthonormal and orthogonal to both $c_1$ and $c_{n+1}$. Thus the
-columns of $U_z$ form an orthonormal basis of $\mathbb C^{n+1}$, so
+columns of $U_z$ form an orthonormal basis of $\CC^{n+1}$, so
 $U_z$ is unitary.
 
 If $U_zv=\lambda v$ with $v\ne0$, then unitarity gives

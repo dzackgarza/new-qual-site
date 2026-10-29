@@ -66,7 +66,7 @@ Its orientation double cover is orientable, finite-sheeted, and has Euler charac
 Any two closed orientable surfaces $\Sigma_g,\Sigma_h$ with $g,h\ge2$ are commensurable.
 
 ::: pf-proof
-For every $d\ge1$, $\pi_1(\Sigma_g)$ surjects onto $\mathbb Z/d$, so it has a connected subgroup of index $d$ and hence a connected degree-$d$ cover. Such a cover has genus
+For every $d\ge1$, $\pi_1(\Sigma_g)$ surjects onto $\ZZ/d$, so it has a connected subgroup of index $d$ and hence a connected degree-$d$ cover. Such a cover has genus
 $$
 1+d(g-1).
 $$

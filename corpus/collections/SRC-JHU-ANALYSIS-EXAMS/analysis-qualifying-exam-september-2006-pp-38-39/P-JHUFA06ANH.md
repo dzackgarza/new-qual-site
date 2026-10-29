@@ -28,7 +28,7 @@ Let $X$ be a real Banach space such that for all $x,y\in X$,
 \[
 \|x+y\|^2+\|x-y\|^2\le 2\|x\|^2+2\|y\|^2.
 \]
-Let $f:X\to\mathbb R$ be a linear functional with $\|f\|=1$. Prove that there exists a unique $x\in X$ such that
+Let $f:X\to\RR$ be a linear functional with $\|f\|=1$. Prove that there exists a unique $x\in X$ such that
 \[
 \|x\|=1,
 \qquad

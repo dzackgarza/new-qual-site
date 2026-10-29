@@ -15,14 +15,14 @@ audit:
 ---
 
 ::: {.problem}
-A function $f:\mathbb R\to\mathbb R$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that
+A function $f:\RR\to\RR$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that
 \[
 |x-y|<\delta\implies |f(x)-f(y)|<\varepsilon.
 \]
 
 (a) Give a definition of what it means for $f$ not to be uniformly continuous.
 
-(b) Give an example, with brief explanation, of a function $f:\mathbb R\to\mathbb R$ that is continuous but not uniformly continuous.
+(b) Give an example, with brief explanation, of a function $f:\RR\to\RR$ that is continuous but not uniformly continuous.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ The negation of uniform continuity is:
 \exists\varepsilon_0>0
 \text{ such that }
 \forall\delta>0
-\text{ there exist }x,y\in\mathbb R
+\text{ there exist }x,y\in\RR
 \text{ with }
 |x-y|<\delta
 \text{ and }
@@ -50,7 +50,7 @@ The negation of uniform continuity is:
 
 Uniform continuity is the statement
 \[
-\forall\varepsilon>0+\exists\delta>0+\forall x,y\in\mathbb R,
+\forall\varepsilon>0+\exists\delta>0+\forall x,y\in\RR,
 \quad
 |x-y|<\delta
 \Longrightarrow
@@ -59,7 +59,7 @@ Uniform continuity is the statement
 
 Negating the quantifiers gives
 \[
-\exists\varepsilon_0>0+\forall\delta>0+\exists x,y\in\mathbb R
+\exists\varepsilon_0>0+\forall\delta>0+\exists x,y\in\RR
 \]
 such that the implication fails.
 Failure of
@@ -89,7 +89,7 @@ Take
 f(x)=x^2.
 }
 \]
-Then $f$ is continuous on $\mathbb R$.
+Then $f$ is continuous on $\RR$.
 
 
 ::: pf-proof

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose X is a nonempty set for which $\delta: X \times X \to \mathbb{R}$ is a real-valued function defined on ordered pairs of points on X. Which of the following is NOT a property of the metric function $\delta$?
+Suppose X is a nonempty set for which $\delta: X \times X \to \RR$ is a real-valued function defined on ordered pairs of points on X. Which of the following is NOT a property of the metric function $\delta$?
 
 (A) $\delta(x, y) \ge 0$
 (B) $\delta(x, z) \le \delta(x, y) + \delta(y, z)$

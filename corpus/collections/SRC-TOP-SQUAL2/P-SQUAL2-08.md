@@ -20,7 +20,7 @@ Prove that if $\RR^n$ is homeomorphic to $\RR^m$, then $n=m$.
 
 Suppose there is a homeomorphism
 \[
-h:\mathbb R^n\to\mathbb R^m.
+h:\RR^n\to\RR^m.
 \]
 
 ::: pf
@@ -29,7 +29,7 @@ h:\mathbb R^n\to\mathbb R^m.
 
 If \(n=0\), then
 \[
-\mathbb R^n
+\RR^n
 \]
 is a one-point space.
 
@@ -38,7 +38,7 @@ is a one-point space.
 
 By convention,
 \[
-\mathbb R^0=\{*\}.
+\RR^0=\{*\}.
 \]
 
 :::
@@ -52,7 +52,7 @@ If \(n=0\), then necessarily \(m=0\).
 
 ::: pf-proof
 
-A space homeomorphic to a one-point space has exactly one point. For every \(m\ge1\), the space \(\mathbb R^m\) has infinitely many points. Thus \(m=0\).
+A space homeomorphic to a one-point space has exactly one point. For every \(m\ge1\), the space \(\RR^m\) has infinitely many points. Thus \(m=0\).
 
 :::
 
@@ -62,11 +62,11 @@ A space homeomorphic to a one-point space has exactly one point. For every \(m\g
 
 Let
 \[
-p=0\in\mathbb R^n
+p=0\in\RR^n
 \]
 and set
 \[
-q=h(p)\in\mathbb R^m.
+q=h(p)\in\RR^m.
 \]
 
 
@@ -83,9 +83,9 @@ This selects corresponding points under the homeomorphism.
 The homeomorphism \(h\) restricts to a homeomorphism
 \[
 \boxed{
-\mathbb R^n\setminus\{p\}
+\RR^n\setminus\{p\}
 \cong
-\mathbb R^m\setminus\{q\}}.
+\RR^m\setminus\{q\}}.
 \]
 
 
@@ -105,9 +105,9 @@ it carries the complement of \(\{p\}\) exactly onto the complement of \(\{q\}\).
 
 Translation gives
 \[
-\mathbb R^m\setminus\{q\}
+\RR^m\setminus\{q\}
 \cong
-\mathbb R^m\setminus\{0\}.
+\RR^m\setminus\{0\}.
 \]
 
 
@@ -117,7 +117,7 @@ The map
 \[
 x\longmapsto x-q
 \]
-is a homeomorphism of \(\mathbb R^m\) sending \(q\) to \(0\).
+is a homeomorphism of \(\RR^m\) sending \(q\) to \(0\).
 
 :::
 
@@ -128,7 +128,7 @@ is a homeomorphism of \(\mathbb R^m\) sending \(q\) to \(0\).
 For every \(k\ge1\),
 \[
 \boxed{
-\mathbb R^k\setminus\{0\}
+\RR^k\setminus\{0\}
 \simeq
 S^{k-1}}.
 \]
@@ -146,7 +146,7 @@ H(x,t)
 \]
 for \(x\ne0\). The scalar factor is positive, so the homotopy stays in
 \[
-\mathbb R^k\setminus\{0\}.
+\RR^k\setminus\{0\}.
 \]
 At \(t=0\), it is the identity, and at \(t=1\), it sends \(x\) to
 \[
@@ -163,14 +163,14 @@ Points already on \(S^{k-1}\) remain fixed. Thus this is a deformation retractio
 Therefore
 \[
 \boxed{
-\mathbb R^n\setminus\{p\}
+\RR^n\setminus\{p\}
 \simeq
 S^{n-1}}
 \]
 and
 \[
 \boxed{
-\mathbb R^m\setminus\{q\}
+\RR^m\setminus\{q\}
 \simeq
 S^{m-1}}.
 \]
@@ -205,10 +205,10 @@ Homeomorphic spaces are homotopy equivalent, and homotopy equivalence is transit
 
 For every \(r\ge0\),
 \[
-\widetilde H_j(S^r;\mathbb Z)
+\widetilde H_j(S^r;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&j=r,\\
+\ZZ,&j=r,\\
 0,&j\ne r.
 \end{cases}
 \]
@@ -251,7 +251,7 @@ one has
 \[
 \widetilde H_{n-1}(S^{n-1})
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 
@@ -269,7 +269,7 @@ Hence
 \[
 \widetilde H_{n-1}(S^{m-1})
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 

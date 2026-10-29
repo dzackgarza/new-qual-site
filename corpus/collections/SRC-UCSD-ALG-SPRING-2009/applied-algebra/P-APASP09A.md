@@ -37,7 +37,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-For every $A\in\mathbb C^{n\times n}$ there is a unitary matrix $Q$ such that
+For every $A\in\CC^{n\times n}$ there is a unitary matrix $Q$ such that
 \[
 Q^HAQ=T
 \]
@@ -48,11 +48,11 @@ is upper triangular.
 We argue by induction on $n$.
 For $n=1$ the assertion is immediate.
 Assume $n>1$.
-Since the characteristic polynomial of $A$ splits over $\mathbb C$, choose an eigenvalue $\lambda$ and a unit eigenvector $q_1$ with
+Since the characteristic polynomial of $A$ splits over $\CC$, choose an eigenvalue $\lambda$ and a unit eigenvector $q_1$ with
 \[
 Aq_1=\lambda q_1.
 \]
-Extend $q_1$ to an orthonormal basis $q_1,\ldots,q_n$ of $\mathbb C^n$, and let
+Extend $q_1$ to an orthonormal basis $q_1,\ldots,q_n$ of $\CC^n$, and let
 \[
 Q_1=(q_1\ \cdots\ q_n).
 \]

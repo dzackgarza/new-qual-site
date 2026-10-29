@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-For $f\in L^1(\mathbb R)$, define
+For $f\in L^1(\RR)$, define
 \[
 Mf(x):=\sup_{h>0}\frac1{2h}\int_{x-h}^{x+h}|f(y)|\,dy.
 \]
 Prove that there is a constant $A$ such that for every $\alpha>0$,
 \[
-\lambda\{x\in\mathbb R:Mf(x)>\alpha\}\le \frac{A}{\alpha}\|f\|_{L^1}.
+\lambda\{x\in\RR:Mf(x)>\alpha\}\le \frac{A}{\alpha}\|f\|_{L^1}.
 \]
 If you use a covering lemma, prove it.
 :::
@@ -38,7 +38,7 @@ and set
 \[
 E_\alpha
 =
-\{x\in\mathbb R:Mf(x)>\alpha\}.
+\{x\in\RR:Mf(x)>\alpha\}.
 \]
 
 ## A finite covering lemma
@@ -51,7 +51,7 @@ Let
 \[
 \mathcal I=\{I_1,\dots,I_N\}
 \]
-be a finite family of bounded intervals in \(\mathbb R\). Then there exists a pairwise disjoint subfamily
+be a finite family of bounded intervals in \(\RR\). Then there exists a pairwise disjoint subfamily
 \[
 J_1,\dots,J_m
 \]
@@ -317,7 +317,7 @@ Since the \(J_k\) are pairwise disjoint,
 
 ::: pf-proof
 
-The sum of the integrals over pairwise disjoint measurable sets is the integral over their union, which is bounded by the integral over all of \(\mathbb R\).
+The sum of the integrals over pairwise disjoint measurable sets is the integral over their union, which is bounded by the integral over all of \(\RR\).
 
 :::
 
@@ -355,7 +355,7 @@ Since \(E_\alpha\) is open,
 
 ::: pf-proof
 
-Lebesgue measure is inner regular on open subsets of \(\mathbb R\).
+Lebesgue measure is inner regular on open subsets of \(\RR\).
 
 :::
 

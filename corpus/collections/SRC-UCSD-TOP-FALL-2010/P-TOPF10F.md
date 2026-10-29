@@ -85,7 +85,7 @@ For $\widetilde W$, the first and third Betti numbers vanish and $b_0=b_4=1$.
 
 Therefore
 $$
-\boxed{\operatorname{rank}H_2(\widetilde W;\mathbb Z)=d(r+2)-2.}
+\boxed{\operatorname{rank}H_2(\widetilde W;\ZZ)=d(r+2)-2.}
 $$
 
 ::: pf-proof

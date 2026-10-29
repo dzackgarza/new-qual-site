@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85S-11
 kind: problem
-title: The cubic field $\mathbb Q(\sqrt[3]{2})$ and the inverse of $1-\sqrt[3]{2}$
+title: The cubic field $\QQ(\sqrt[3]{2})$ and the inverse of $1-\sqrt[3]{2}$
 classification:
   areas: [prelim]
   topics: []
@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Let
 \[
-F=\{a+b\sqrt[3]{2}+c\sqrt[3]{4}:a,b,c\in\mathbb Q\}.
+F=\{a+b\sqrt[3]{2}+c\sqrt[3]{4}:a,b,c\in\QQ\}.
 \]
 Prove that $F$ is a field, that every element of $F$ has a unique representation of this form, and find
 \[

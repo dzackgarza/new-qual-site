@@ -34,14 +34,14 @@ Give an example of each of the following:
 :::
 
 ::: {.solution}
-Examples are, respectively, $\mathbb Z$, $\mathbb Z[x]$, and
-$\mathbb Z[\sqrt{-5}]$.
+Examples are, respectively, $\ZZ$, $\ZZ[x]$, and
+$\ZZ[\sqrt{-5}]$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The ring $\mathbb Z$ is Euclidean.
+The ring $\ZZ$ is Euclidean.
 
 ::: pf-proof
 
@@ -55,19 +55,19 @@ $0\leq r<|b|$. Thus $r=0$ or $d(r)<d(b)$, as required.
 
 ::: {.pf-step #s2}
 
-The ring $\mathbb Z[x]$ is a unique factorization domain
+The ring $\ZZ[x]$ is a unique factorization domain
 but not a principal ideal domain.
 
 ::: pf-proof
 
-Unique prime factorization makes $\mathbb Z$ a unique factorization
+Unique prime factorization makes $\ZZ$ a unique factorization
 domain. Gauss's lemma implies that a polynomial ring in one variable
 over a unique factorization domain is again a unique factorization
-domain [@DF04]. Hence $\mathbb Z[x]$ has that property.
+domain [@DF04]. Hence $\ZZ[x]$ has that property.
 
 Its ideal $J=(2,x)$ is not principal. Every element of $J$ has
 even constant coefficient, so $1\notin J$ and $J$ is proper.
-If $J=(f)$, then $2=fg$ for some $g\in\mathbb Z[x]$. Degrees
+If $J=(f)$, then $2=fg$ for some $g\in\ZZ[x]$. Degrees
 of nonzero polynomials add, so $f$ is a constant integer dividing
 $2$: it is $1,-1,2$, or $-2$. The first two possibilities would
 give the whole ring. The last two give $(2)$, which does not contain
@@ -79,12 +79,12 @@ $x$ because its coefficient of $x$ is odd. No generator is possible.
 
 ::: {.pf-step #s3}
 
-The integral domain $R=\mathbb Z[\sqrt{-5}]$ is not a
+The integral domain $R=\ZZ[\sqrt{-5}]$ is not a
 unique factorization domain.
 
 ::: pf-proof
 
-The ring embeds in $\mathbb C$, so it is a domain. For
+The ring embeds in $\CC$, so it is a domain. For
 $z=a+b\sqrt{-5}$ define
 $$
 N(z)=z\overline z=a^2+5b^2.

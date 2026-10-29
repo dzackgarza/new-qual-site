@@ -228,7 +228,7 @@ the actions are also different.
 
 Here
 \[
-G\cong\mathbb Z^2.
+G\cong\ZZ^2.
 \]
 Although this group is abelian, its nonzero elements are not self-inverse.
 For a standard generator $a$,

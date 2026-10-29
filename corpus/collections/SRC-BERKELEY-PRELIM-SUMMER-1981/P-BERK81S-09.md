@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be the $2\pi$-periodic function satisfying $f(x)=x^3$ for $-\pi\le x<\pi$.
+Let $f:\RR\to\RR$ be the $2\pi$-periodic function satisfying $f(x)=x^3$ for $-\pi\le x<\pi$.
 
 1. Prove that the Fourier series of $f$ has the form
    \[

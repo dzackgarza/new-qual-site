@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there exists a sequence of rational functions $R_n$ analytic in $\mathbb{C} \setminus \{3/2\}$, satisfying both of the following:
+Prove that there exists a sequence of rational functions $R_n$ analytic in $\CC \setminus \{3/2\}$, satisfying both of the following:
 
 (i) $\lim_{n \to \infty} R_n(z) = 1$ for all $z \in \mathbb{D}$.
 
@@ -30,11 +30,11 @@ Prove that there exists a sequence of rational functions $R_n$ analytic in $\mat
 
 ::: pf-step
 
-The two compact sets $\overline{\DD}$ and $A = \{2 \le |z| \le 3\}$ are disjoint, and $\mathbb C \setminus \{3/2\}$ is connected.
+The two compact sets $\overline{\DD}$ and $A = \{2 \le |z| \le 3\}$ are disjoint, and $\CC \setminus \{3/2\}$ is connected.
 
 ::: pf-proof
 
-$\overline{\DD} \cap A = \varnothing$, and $\mathbb C \setminus \{3/2\}$ is connected (a punctured plane).
+$\overline{\DD} \cap A = \varnothing$, and $\CC \setminus \{3/2\}$ is connected (a punctured plane).
 
 :::
 
@@ -58,7 +58,7 @@ By Runge's theorem, for each $n$ there is a rational function $R_n$ with poles o
 
 ::: pf-proof
 
-Runge's theorem (rational approximation with prescribed poles at $3/2$ on the connected set $\mathbb C \setminus \{3/2\}$).
+Runge's theorem (rational approximation with prescribed poles at $3/2$ on the connected set $\CC \setminus \{3/2\}$).
 
 :::
 

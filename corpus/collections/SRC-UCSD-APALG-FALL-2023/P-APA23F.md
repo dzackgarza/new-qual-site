@@ -69,7 +69,7 @@ The commutator quotient of $A_4$ is $A_4/V_4\cong C_3$. Inflating the three char
 :::
 
 ::: {.pf-step #chi4-character-values}
-Let $A_4$ act on $\mathbb C^4$ by permuting the standard basis, and let
+Let $A_4$ act on $\CC^4$ by permuting the standard basis, and let
 \[
 W=\{(z_1,z_2,z_3,z_4):z_1+z_2+z_3+z_4=0\}.
 \]
@@ -80,7 +80,7 @@ Then $W$ is a $3$-dimensional representation with character
 on the four classes above.
 
 ::: pf-proof
-The permutation character on $\mathbb C^4$ is the number of fixed points. Its values are
+The permutation character on $\CC^4$ is the number of fixed points. Its values are
 \[
 4,\ 0,\ 1,\ 1
 \]

@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ have derivatives of all orders, and suppose
+Let $f:\RR\to\RR$ have derivatives of all orders, and suppose
 \[
 f(x)=0
 \]
-for every integer $x$. Prove that for each $n\in\mathbb N$, the $n$th derivative $f^{(n)}$ has at least one root.
+for every integer $x$. Prove that for each $n\in\NN$, the $n$th derivative $f^{(n)}$ has at least one root.
 :::
 
 ::: {.solution}
@@ -45,7 +45,7 @@ x_k^{(0)}
 \coloneqq
 k,
 \qquad
-k\in\mathbb Z.
+k\in\ZZ.
 \]
 
 
@@ -102,7 +102,7 @@ is step [](#s1-1){.pf-ref}.
 
 For every
 \[
-k\in\mathbb Z,
+k\in\ZZ,
 \]
 there exists
 \[
@@ -132,7 +132,7 @@ f^{(m)}
 \]
 is differentiable on
 \[
-\mathbb R
+\RR
 \]
 because $f$ has derivatives of all orders.
 Hence it is continuous on the closed interval
@@ -169,7 +169,7 @@ vanishes.
 
 The sequence
 \[
-\{x_k^{(m+1)}\}_{k\in\mathbb Z}
+\{x_k^{(m+1)}\}_{k\in\ZZ}
 \]
 is strictly increasing.
 
@@ -229,7 +229,7 @@ f^{(m+1)}.
 
 By induction, for every
 \[
-n\in\mathbb N,
+n\in\NN,
 \]
 the derivative
 \[
@@ -251,7 +251,7 @@ Step [](#s1-5){.pf-ref} gives the induction step.
 
 In particular, for every
 \[
-n\in\mathbb N,
+n\in\NN,
 \]
 the derivative
 \[

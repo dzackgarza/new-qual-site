@@ -59,7 +59,7 @@ Its denominator could vanish only if $f(x)=-x$. Thus it gives a homotopy from $f
 This would force $\deg f=1$, contradicting step [](#degree-is-minus-one){.pf-ref}. Therefore no such map exists.
 
 ::: pf-proof
-Homotopic maps have equal degree, while $1\ne-1$ in $\mathbb Z$.
+Homotopic maps have equal degree, while $1\ne-1$ in $\ZZ$.
 :::
 
 :::

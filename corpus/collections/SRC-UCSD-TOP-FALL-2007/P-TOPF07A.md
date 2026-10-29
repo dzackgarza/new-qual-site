@@ -65,7 +65,7 @@ The cube interior is a $3$-cell and does not affect the fundamental group.
 ::: pf-step
 
 The side relation gives $b=v^{-1}av$, so the relation $b^4=1$ follows from $a^4=1$. Hence
-$$\boxed{\pi_1(X)\cong\langle a,v\mid a^4=1\rangle\cong (\mathbb Z/4)*\mathbb Z.}$$
+$$\boxed{\pi_1(X)\cong\langle a,v\mid a^4=1\rangle\cong (\ZZ/4)*\ZZ.}$$
 
 ::: pf-proof
 

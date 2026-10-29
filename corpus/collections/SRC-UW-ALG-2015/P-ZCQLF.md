@@ -64,11 +64,11 @@ Thus, among Galois quartic extensions, the minimum number of proper intermediate
 ::: pf-proof
 The bounds follow from step [](#s2){.pf-ref} and step [](#s3){.pf-ref}. They are attained, for example, by
 \[
-\mathbb Q(\zeta_5)/\mathbb Q,
+\QQ(\zeta_5)/\QQ,
 \]
-whose Galois group is \((\mathbb Z/5\mathbb Z)^\times\cong C_4\), and by
+whose Galois group is \((\ZZ/5\ZZ)^\times\cong C_4\), and by
 \[
-\mathbb Q(\sqrt2,\sqrt3)/\mathbb Q,
+\QQ(\sqrt2,\sqrt3)/\QQ,
 \]
 whose Galois group is \(C_2\times C_2\).
 :::
@@ -108,11 +108,11 @@ The minimum under the assumption “separable, not necessarily Galois” is \(0\
 ::: pf-proof
 Let \(\alpha\) be a root of
 \[
-f(x)=x^4-x-1\in\mathbb Q[x],
+f(x)=x^4-x-1\in\QQ[x],
 \]
-and put \(L=\mathbb Q(\alpha)\). The reduction modulo \(2\) is \(x^4+x+1\), which is irreducible over \(\mathbb F_2\); hence \(f\) is irreducible over \(\mathbb Q\), so \([L:\mathbb Q]=4\).
+and put \(L=\QQ(\alpha)\). The reduction modulo \(2\) is \(x^4+x+1\), which is irreducible over \(\mathbb F_2\); hence \(f\) is irreducible over \(\QQ\), so \([L:\QQ]=4\).
 
-Let \(N\) be the splitting field of \(f\). The factorization modulo \(2\) is irreducible, so the Galois group of \(N/\mathbb Q\) contains a \(4\)-cycle. Modulo \(7\),
+Let \(N\) be the splitting field of \(f\). The factorization modulo \(2\) is irreducible, so the Galois group of \(N/\QQ\) contains a \(4\)-cycle. Modulo \(7\),
 \[
 f(x)\equiv (x-3)(x^3+3x^2+2x-2),
 \]
@@ -122,9 +122,9 @@ f(x)\equiv (x+2)(x+5)(x^2-7x+5),
 \]
 and the quadratic factor is irreducible because its discriminant \(29\equiv12\pmod{17}\) is not a square, so the group contains a transposition. A transitive subgroup of \(S_4\) containing a \(4\)-cycle, a \(3\)-cycle, and a transposition is \(S_4\). Hence
 \[
-\operatorname{Gal}(N/\mathbb Q)\cong S_4.
+\operatorname{Gal}(N/\QQ)\cong S_4.
 \]
-The subgroup fixing \(\alpha\) is a point stabilizer \(S_3\), which is maximal in \(S_4\). By the Galois correspondence for \(N/\mathbb Q\), intermediate fields between \(\mathbb Q\) and \(L=N^{S_3}\) correspond to subgroups between \(S_3\) and \(S_4\). Since there are none, \(L/\mathbb Q\) has no proper intermediate fields.
+The subgroup fixing \(\alpha\) is a point stabilizer \(S_3\), which is maximal in \(S_4\). By the Galois correspondence for \(N/\QQ\), intermediate fields between \(\QQ\) and \(L=N^{S_3}\) correspond to subgroups between \(S_3\) and \(S_4\). Since there are none, \(L/\QQ\) has no proper intermediate fields.
 :::
 
 :::
@@ -135,7 +135,7 @@ Therefore, among all separable quartic extensions, the minimum number of proper 
 ::: pf-proof
 The upper bound is step [](#s6){.pf-ref}, the example in step [](#s7){.pf-ref} attains \(0\), and the biquadratic example in step [](#s4){.pf-ref} attains \(3\).
 
-If one restricts specifically to separable quartic extensions that are not Galois, then step [](#s6){.pf-ref} shows there can be at most one intermediate field. Both possibilities occur: step [](#s7){.pf-ref} gives none, while \(\mathbb Q(\sqrt[4]{2})/\mathbb Q\) has the intermediate field \(\mathbb Q(\sqrt2)\), and cannot have a second one because two distinct quadratic intermediate fields would make the quartic extension Galois.
+If one restricts specifically to separable quartic extensions that are not Galois, then step [](#s6){.pf-ref} shows there can be at most one intermediate field. Both possibilities occur: step [](#s7){.pf-ref} gives none, while \(\QQ(\sqrt[4]{2})/\QQ\) has the intermediate field \(\QQ(\sqrt2)\), and cannot have a second one because two distinct quadratic intermediate fields would make the quartic extension Galois.
 :::
 
 :::

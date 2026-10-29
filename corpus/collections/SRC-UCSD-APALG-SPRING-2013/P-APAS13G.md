@@ -24,7 +24,7 @@ a^4=1,\quad a^2=b^2,\quad\text{and}\quad b^{-1}ab=a^3.
 
 (b) Verify that the conjugacy classes of $G$ are $C_1=\{1\}$, $C_2=\{a^2\}$, $C_3=\{a,a^3\}$, $C_4=\{b,a^2b\}$, and $C_5=\{ab,a^3b\}$.
 
-(c) Show that $H=\{1,a^2\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$.
+(c) Show that $H=\{1,a^2\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\ZZ_2\times\ZZ_2$.
 
 (d) Give the character table for the lifting of the four linear characters of $Q/H$ to $Q$.
 

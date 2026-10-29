@@ -21,9 +21,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite positive Borel measure on $\mathbb{C}$.
+Let $\mu$ be a finite positive Borel measure on $\CC$.
 
-a. Prove that $F(z) = \int_\mathbb{C} \frac{1}{z-w}\,d\mu(w)$ exists for almost all $z\in\mathbb{C}$ and that $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K\subseteq\mathbb{C}$.
+a. Prove that $F(z) = \int_\CC \frac{1}{z-w}\,d\mu(w)$ exists for almost all $z\in\CC$ and that $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K\subseteq\CC$.
 
 b. Prove that for almost every horizontal line $L$ and all compact $K\subseteq L$, $\int_K |F(x+iy)|\,dx < \infty$.
 
@@ -42,7 +42,7 @@ Part (a): Local integrability and almost-everywhere existence of $F(z)$:
 
 ::: pf-step
 
-Let $K \subset \mathbb{C}$ be any compact subset. Let $R = \operatorname{diam}(K) + 1$.
+Let $K \subset \CC$ be any compact subset. Let $R = \operatorname{diam}(K) + 1$.
 
 ::: pf-proof
 
@@ -54,7 +54,7 @@ compact sets are bounded.
 
 ::: pf-step
 
-For each fixed $w \in \mathbb{C}$, the shift $z \mapsto z - w$ maps $K$ into the closed disk $\overline{B}(0, R)$.
+For each fixed $w \in \CC$, the shift $z \mapsto z - w$ maps $K$ into the closed disk $\overline{B}(0, R)$.
 Using polar coordinates centered at $w$:
 \[
 \int_K \frac{1}{|z - w|}\,dx\,dy \le \int_{\overline{B}(w, R)} \frac{1}{|z - w|}\,dx\,dy = \int_0^R \int_0^{2\pi} \frac{1}{r} r\,dr\,d\theta = 2\pi R.
@@ -70,9 +70,9 @@ polar integration of $1/r$.
 
 ::: pf-step
 
-By Tonelli’s Theorem, integrating over $K$ and $\mathbb{C}$ gives:
+By Tonelli’s Theorem, integrating over $K$ and $\CC$ gives:
 \[
-\int_K |F(z)|\,dx\,dy \le \int_K \left(\int_\mathbb{C} \frac{1}{|z - w|}\,d\mu(w)\right) dx\,dy = \int_\mathbb{C} \left(\int_K \frac{1}{|z - w|}\,dx\,dy\right) d\mu(w) \le 2\pi R \mu(\mathbb{C}) < \infty.
+\int_K |F(z)|\,dx\,dy \le \int_K \left(\int_\CC \frac{1}{|z - w|}\,d\mu(w)\right) dx\,dy = \int_\CC \left(\int_K \frac{1}{|z - w|}\,dx\,dy\right) d\mu(w) \le 2\pi R \mu(\CC) < \infty.
 \]
 
 ::: pf-proof
@@ -85,7 +85,7 @@ Tonelli's Theorem for non-negative measurable functions and finiteness of $\mu$.
 
 ::: pf-step
 
-Since $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K \subset \mathbb{C}$, $F \in L^1_{\mathrm{loc}}(\mathbb{C})$, which implies $|F(z)| < \infty$ for almost every $z \in \mathbb{C}$ with respect to Lebesgue measure.
+Since $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K \subset \CC$, $F \in L^1_{\mathrm{loc}}(\CC)$, which implies $|F(z)| < \infty$ for almost every $z \in \CC$ with respect to Lebesgue measure.
 
 ::: pf-proof
 
@@ -107,7 +107,7 @@ Part (b): Integrability along almost every horizontal line:
 
 ::: pf-step
 
-For any $n \ge 1$, let $Q_n = [-n, n] \times [-n, n] \subset \mathbb{C}$.
+For any $n \ge 1$, let $Q_n = [-n, n] \times [-n, n] \subset \CC$.
 By Part (a), $\int_{Q_n} |F(x+iy)|\,dx\,dy < \infty$.
 
 ::: pf-proof
@@ -136,7 +136,7 @@ Fubini–Tonelli Theorem on product measure spaces.
 
 ::: pf-step
 
-Taking the countable union of the exceptional null sets over all $n \ge 1$, for almost every $y \in \mathbb{R}$, $\int_{-n}^n |F(x+iy)|\,dx < \infty$ for all $n$.
+Taking the countable union of the exceptional null sets over all $n \ge 1$, for almost every $y \in \RR$, $\int_{-n}^n |F(x+iy)|\,dx < \infty$ for all $n$.
 Thus $\int_K |F(x+iy)|\,dx < \infty$ for every compact $K \subset L_y$.
 
 ::: pf-proof
@@ -186,12 +186,12 @@ Step [](#s2){.pf-ref} applied to the four boundary segments of $\partial S$.
 
 By Fubini’s Theorem, we can interchange the contour integral and the measure integral:
 \[
-\frac{1}{2\pi i} \int_{\partial S} F(z)\,dz = \frac{1}{2\pi i} \int_{\partial S} \left(\int_\mathbb{C} \frac{1}{z - w}\,d\mu(w)\right) dz = \int_\mathbb{C} \left(\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz\right) d\mu(w).
+\frac{1}{2\pi i} \int_{\partial S} F(z)\,dz = \frac{1}{2\pi i} \int_{\partial S} \left(\int_\CC \frac{1}{z - w}\,d\mu(w)\right) dz = \int_\CC \left(\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz\right) d\mu(w).
 \]
 
 ::: pf-proof
 
-Fubini's Theorem on product space $\partial S \times \mathbb{C}$.
+Fubini's Theorem on product space $\partial S \times \CC$.
 
 :::
 
@@ -201,7 +201,7 @@ Fubini's Theorem on product space $\partial S \times \mathbb{C}$.
 
 By Cauchy’s Integral Formula / Residue Theorem for the winding number:
 \[
-\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz = \operatorname{Ind}_{\partial S}(w) = \begin{cases} 1 & w \in S \\ 0 & w \in \mathbb{C} \setminus \overline{S}. \end{cases}
+\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz = \operatorname{Ind}_{\partial S}(w) = \begin{cases} 1 & w \in S \\ 0 & w \in \CC \setminus \overline{S}. \end{cases}
 \]
 
 ::: pf-proof
@@ -217,7 +217,7 @@ Cauchy's Integral Formula.
 Since $\mu(\partial S) = 0$, the integrand equals $\mathbf{1}_S(w)$ $\mu$-almost everywhere.
 Thus:
 \[
-\int_\mathbb{C} \left(\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz\right) d\mu(w) = \int_\mathbb{C} \mathbf{1}_S(w)\,d\mu(w) = \mu(S).
+\int_\CC \left(\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz\right) d\mu(w) = \int_\CC \mathbf{1}_S(w)\,d\mu(w) = \mu(S).
 \]
 
 ::: pf-proof
@@ -235,7 +235,7 @@ Lebesgue integration of characteristic functions.
 ::: pf-step
 
 Conclusion:
-$F \in L^1_{\mathrm{loc}}(\mathbb{C})$, $F$ is integrable along almost every horizontal line segment, and $\mu(S) = \frac{1}{2\pi i}\int_{\partial S} F(z)\,dz$ for almost all axis-parallel squares. Q.E.D.
+$F \in L^1_{\mathrm{loc}}(\CC)$, $F$ is integrable along almost every horizontal line segment, and $\mu(S) = \frac{1}{2\pi i}\int_{\partial S} F(z)\,dz$ for almost all axis-parallel squares. Q.E.D.
 
 ::: pf-proof
 

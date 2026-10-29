@@ -35,7 +35,7 @@ such that
 
 ::: pf-proof
 
-This is the definition of diagonalizability over $\mathbb C$.
+This is the definition of diagonalizability over $\CC$.
 Because $A$ is invertible, none of the diagonal entries $\lambda_i$ is zero, although this is not needed for the positive-power conclusion.
 
 :::

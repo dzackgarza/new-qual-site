@@ -85,7 +85,7 @@ Homeomorphic finite CW complexes have the same singular homology groups, hence t
 $$
 \chi
 =
-\sum_k(-1)^k\operatorname{rank}H_k(-;\mathbb Z).
+\sum_k(-1)^k\operatorname{rank}H_k(-;\ZZ).
 $$
 Thus homeomorphic closed surfaces have equal Euler characteristic.
 

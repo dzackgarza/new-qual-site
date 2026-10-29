@@ -28,7 +28,7 @@ Compute the fundamental group of each space:
 For the Möbius-band product,
 \[
 \boxed{\pi_1(M\times\mathbb{RP}^{\infty})
-\cong \mathbb Z\times\mathbb Z/2}.
+\cong \ZZ\times\ZZ/2}.
 \]
 
 
@@ -36,21 +36,21 @@ For the Möbius-band product,
 
 The Möbius band deformation retracts onto its core circle, so
 \[
-\pi_1(M)\cong\pi_1(S^1)\cong\mathbb Z.
+\pi_1(M)\cong\pi_1(S^1)\cong\ZZ.
 \]
 The universal cover
 \[
 S^\infty\longrightarrow\mathbb{RP}^{\infty}
 \]
-has deck group $\mathbb Z/2$, and $S^\infty$ is contractible, so
+has deck group $\ZZ/2$, and $S^\infty$ is contractible, so
 \[
-\pi_1(\mathbb{RP}^{\infty})\cong\mathbb Z/2.
+\pi_1(\mathbb{RP}^{\infty})\cong\ZZ/2.
 \]
 The fundamental group of a product of path-connected spaces is the direct
 product of their fundamental groups. Therefore
 \[
 \pi_1(M\times\mathbb{RP}^{\infty})
-\cong\mathbb Z\times\mathbb Z/2.
+\cong\ZZ\times\ZZ/2.
 \]
 
 :::
@@ -111,7 +111,7 @@ For the wedge of the lens space and Klein bottle,
 \boxed{
 \pi_1(L(p,q)\vee K)
 \cong
-\mathbb Z/p *
+\ZZ/p *
 \left\langle a,b\mid aba^{-1}=b^{-1}\right\rangle }.
 \]
 
@@ -121,7 +121,7 @@ For the wedge of the lens space and Klein bottle,
 The universal cover of the lens space $L(p,q)$ is $S^3$, with cyclic deck
 group of order $p$, so
 \[
-\pi_1(L(p,q))\cong\mathbb Z/p.
+\pi_1(L(p,q))\cong\ZZ/p.
 \]
 The Klein bottle has the standard presentation
 \[

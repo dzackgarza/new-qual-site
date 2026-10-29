@@ -103,18 +103,18 @@ Combine steps [](#frobenius-characteristic-of-induction){.pf-ref}, [](#pieri-pro
 ::: pf-step
 The endomorphism algebra has dimension
 \[
-\boxed{\dim_{\mathbb C}\operatorname{End}_{S_7}(V)=8}.
+\boxed{\dim_{\CC}\operatorname{End}_{S_7}(V)=8}.
 \]
 
 ::: pf-proof
-Over $\mathbb C$, $S_7$-representations are semisimple. If
+Over $\CC$, $S_7$-representations are semisimple. If
 \[
 V\cong\bigoplus_\lambda m_\lambda S^\lambda,
 \]
 with pairwise nonisomorphic irreducibles $S^\lambda$, then Schur's lemma gives
 \[
 \operatorname{End}_{S_7}(V)
-\cong\bigoplus_\lambda M_{m_\lambda}(\mathbb C),
+\cong\bigoplus_\lambda M_{m_\lambda}(\CC),
 \]
 so
 \[

@@ -24,16 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1(\mathbb{R})$ and put
+Let $f \in L^1(\RR)$ and put
 $$
-g(\xi) := \int_{\mathbb{R}} e^{i\xi \cos x} f(x)\,dx, \quad \xi \in \mathbb{R}.
+g(\xi) := \int_{\RR} e^{i\xi \cos x} f(x)\,dx, \quad \xi \in \RR.
 $$
 
-(a) Show that $g$ is continuous on $\mathbb{R}$.
+(a) Show that $g$ is continuous on $\RR$.
 
-(b) Show that $g$ is infinitely differentiable on $\mathbb{R}$ (i.e. $g \in C^\infty(\mathbb{R})$).
+(b) Show that $g$ is infinitely differentiable on $\RR$ (i.e. $g \in C^\infty(\RR)$).
 
-(c) Show that the sequence $\{g^{(n)}(\xi)\}$ converges uniformly to $0$ on $\mathbb{R}$, where $g^{(n)}(\xi)$ denotes the $n$th derivative of $g$.
+(c) Show that the sequence $\{g^{(n)}(\xi)\}$ converges uniformly to $0$ on $\RR$, where $g^{(n)}(\xi)$ denotes the $n$th derivative of $g$.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ Prove continuity of $g$.
 
 ::: pf-proof
 
-Fix $\xi\in\mathbb R$ and let $\xi_k\to\xi$. For every $x$,
+Fix $\xi\in\RR$ and let $\xi_k\to\xi$. For every $x$,
 \[
 e^{i\xi_k\cos x}f(x)\longrightarrow e^{i\xi\cos x}f(x),
 \]
@@ -54,7 +54,7 @@ and
 \[
 |e^{i\xi_k\cos x}f(x)|=|f(x)|.
 \]
-Since $f\in L^1(\mathbb R)$, dominated convergence gives
+Since $f\in L^1(\RR)$, dominated convergence gives
 \[
 g(\xi_k)\to g(\xi).
 \]
@@ -85,11 +85,11 @@ for every $\xi,x$. Also
 Because $|G_{n+1}(\xi,x)|\le|f(x)|\in L^1$, dominated convergence applied to difference quotients justifies differentiation under the integral. Inductively,
 \[
 \boxed{
-g^{(n)}(\xi)=\int_{\mathbb R}(i\cos x)^n e^{i\xi\cos x}f(x)\,dx.}
+g^{(n)}(\xi)=\int_{\RR}(i\cos x)^n e^{i\xi\cos x}f(x)\,dx.}
 \]
 The same dominated-convergence argument shows each $g^{(n)}$ is continuous. Thus
 \[
-g\in C^\infty(\mathbb R).
+g\in C^\infty(\RR).
 \]
 
 :::
@@ -102,16 +102,16 @@ Prove that $g^{(n)}\to0$ uniformly in $\xi$.
 
 ::: pf-proof
 
-For every $\xi\in\mathbb R$,
+For every $\xi\in\RR$,
 \[
 |g^{(n)}(\xi)|
-\le \int_{\mathbb R}|\cos x|^n|f(x)|\,dx.
+\le \int_{\RR}|\cos x|^n|f(x)|\,dx.
 \]
-For almost every $x\in\mathbb R$,
+For almost every $x\in\RR$,
 \[
 |\cos x|<1,
 \]
-because $|\cos x|=1$ only on the countable set $\pi\mathbb Z$. Hence
+because $|\cos x|=1$ only on the countable set $\pi\ZZ$. Hence
 \[
 |\cos x|^n|f(x)|\longrightarrow0
 \]
@@ -121,14 +121,14 @@ for almost every $x$, while
 \]
 Dominated convergence therefore yields
 \[
-\int_{\mathbb R}|\cos x|^n|f(x)|\,dx\longrightarrow0.
+\int_{\RR}|\cos x|^n|f(x)|\,dx\longrightarrow0.
 \]
 Since the bound is independent of $\xi$,
 \[
 \boxed{
-\sup_{\xi\in\mathbb R}|g^{(n)}(\xi)|\longrightarrow0.}
+\sup_{\xi\in\RR}|g^{(n)}(\xi)|\longrightarrow0.}
 \]
-Thus $g^{(n)}\to0$ uniformly on $\mathbb R$.
+Thus $g^{(n)}\to0$ uniformly on $\RR$.
 
 :::
 

@@ -47,7 +47,7 @@ x,y\in V
 \]
 and
 \[
-a\in\mathbb R,
+a\in\RR,
 \]
 
 1. \[
@@ -422,7 +422,7 @@ y_1,y_2\in Y
 \]
 and
 \[
-a,b\in\mathbb R.
+a,b\in\RR.
 \]
 Set
 \[

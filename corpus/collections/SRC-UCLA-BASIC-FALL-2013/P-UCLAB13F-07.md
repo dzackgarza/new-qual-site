@@ -35,11 +35,11 @@ Let
 \[
 \mathcal P_N
 =
-\{P\in\mathbb C[z]:\deg P\le N\}.
+\{P\in\CC[z]:\deg P\le N\}.
 \]
 Then
 \[
-\dim_{\mathbb C}\mathcal P_N=N+1.
+\dim_{\CC}\mathcal P_N=N+1.
 \]
 
 ::: pf
@@ -50,7 +50,7 @@ Define the linear map
 \[
 \Phi:\mathcal P_N
 \longrightarrow
-\mathbb C^{N+1}
+\CC^{N+1}
 \]
 by
 \[
@@ -223,7 +223,7 @@ The domain has dimension
 \[
 \dim\mathcal P_N=N+1.
 \]
-The codomain $\mathbb C^{N+1}$ also has dimension $N+1$.
+The codomain $\CC^{N+1}$ also has dimension $N+1$.
 By step [](#s1-5){.pf-ref}, $\Phi$ is injective.
 A linear map between finite-dimensional vector spaces of equal dimension is injective if and only if it is surjective.
 Therefore $\Phi$ is bijective.

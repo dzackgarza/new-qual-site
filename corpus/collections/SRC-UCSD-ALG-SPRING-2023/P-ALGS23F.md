@@ -25,15 +25,15 @@ audit:
 ::: {.problem}
 Suppose $p$ is an odd prime and $\zeta_p := e^{2\pi i/p} = \cos(2\pi/p) + i\sin(2\pi/p)$.
 
-(a) Prove that $[\mathbb{Q}[\zeta_p] : \mathbb{Q}[\cos(2\pi/p)]] = 2$.
+(a) Prove that $[\QQ[\zeta_p] : \QQ[\cos(2\pi/p)]] = 2$.
 
-(b) Prove that $\mathbb{Q}[\cos(2\pi/p)]/\mathbb{Q}$ is a Galois extension and its Galois group is a cyclic group of order $(p-1)/2$.
+(b) Prove that $\QQ[\cos(2\pi/p)]/\QQ$ is a Galois extension and its Galois group is a cyclic group of order $(p-1)/2$.
 
-(c) Does there exist an odd prime $p$ such that $\sqrt[3]{2} \in \mathbb{Q}[\cos(2\pi/p)]$?
+(c) Does there exist an odd prime $p$ such that $\sqrt[3]{2} \in \QQ[\cos(2\pi/p)]$?
 :::
 
 ::: {.solution}
-Let \(L=\mathbb Q(\zeta_p)\) and \(K=\mathbb Q(\cos(2\pi/p))\).
+Let \(L=\QQ(\zeta_p)\) and \(K=\QQ(\cos(2\pi/p))\).
 
 **(a).**
 
@@ -43,7 +43,7 @@ Let \(L=\mathbb Q(\zeta_p)\) and \(K=\mathbb Q(\cos(2\pi/p))\).
 
 One has
 \[
-K=\mathbb Q(\zeta_p+\zeta_p^{-1}).
+K=\QQ(\zeta_p+\zeta_p^{-1}).
 \]
 
 ::: pf-proof
@@ -52,7 +52,7 @@ Since
 \[
 \zeta_p+\zeta_p^{-1}=2\cos(2\pi/p),
 \]
-the two generators determine the same field over \(\mathbb Q\).
+the two generators determine the same field over \(\QQ\).
 
 :::
 
@@ -80,7 +80,7 @@ In fact \([L:K]=2\).
 
 ::: pf-proof
 
-The field \(K\) is contained in \(\mathbb R\), while \(\zeta_p\notin\mathbb R\) because \(p\) is odd. Hence \(\zeta_p\notin K\), so \([L:K]>1\). Combine with step [](#s2){.pf-ref}.
+The field \(K\) is contained in \(\RR\), while \(\zeta_p\notin\RR\) because \(p\) is odd. Hence \(\zeta_p\notin K\), so \([L:K]>1\). Combine with step [](#s2){.pf-ref}.
 
 **(b).**
 
@@ -90,15 +90,15 @@ The field \(K\) is contained in \(\mathbb R\), while \(\zeta_p\notin\mathbb R\) 
 
 ::: pf-step
 
-The extension \(L/\mathbb Q\) is Galois with
+The extension \(L/\QQ\) is Galois with
 \[
-\operatorname{Gal}(L/\mathbb Q)\cong (\mathbb Z/p\mathbb Z)^\times,
+\operatorname{Gal}(L/\QQ)\cong (\ZZ/p\ZZ)^\times,
 \]
 a cyclic group of order \(p-1\).
 
 ::: pf-proof
 
-This is the standard Galois description of the \(p\)-th cyclotomic field; an element \(a\in(\mathbb Z/p\mathbb Z)^\times\) acts by \(\zeta_p\mapsto\zeta_p^a\).
+This is the standard Galois description of the \(p\)-th cyclotomic field; an element \(a\in(\ZZ/p\ZZ)^\times\) acts by \(\zeta_p\mapsto\zeta_p^a\).
 
 :::
 
@@ -106,7 +106,7 @@ This is the standard Galois description of the \(p\)-th cyclotomic field; an ele
 
 ::: pf-step
 
-Complex conjugation is the automorphism corresponding to \(-1\in(\mathbb Z/p\mathbb Z)^\times\), and its fixed field is \(K\).
+Complex conjugation is the automorphism corresponding to \(-1\in(\ZZ/p\ZZ)^\times\), and its fixed field is \(K\).
 
 ::: pf-proof
 
@@ -118,16 +118,16 @@ Complex conjugation sends \(\zeta_p\) to \(\zeta_p^{-1}\), so it fixes \(\zeta_p
 
 ::: pf-step
 
-The extension \(K/\mathbb Q\) is Galois and
+The extension \(K/\QQ\) is Galois and
 \[
-\operatorname{Gal}(K/\mathbb Q)
+\operatorname{Gal}(K/\QQ)
 \cong
-(\mathbb Z/p\mathbb Z)^\times/\{\pm1\}.
+(\ZZ/p\ZZ)^\times/\{\pm1\}.
 \]
 
 ::: pf-proof
 
-The subgroup \(\{\pm1\}\) is normal because \((\mathbb Z/p\mathbb Z)^\times\) is abelian. By the fundamental theorem of Galois theory, its fixed field \(K\) is therefore Galois over \(\mathbb Q\), with the displayed quotient as Galois group.
+The subgroup \(\{\pm1\}\) is normal because \((\ZZ/p\ZZ)^\times\) is abelian. By the fundamental theorem of Galois theory, its fixed field \(K\) is therefore Galois over \(\QQ\), with the displayed quotient as Galois group.
 
 :::
 
@@ -155,11 +155,11 @@ There is no odd prime \(p\) such that \(\sqrt[3]{2}\in K\).
 
 Suppose \(\sqrt[3]{2}\in K\). Then
 \[
-\mathbb Q(\sqrt[3]{2})
+\QQ(\sqrt[3]{2})
 \]
-is an intermediate field of the abelian Galois extension \(K/\mathbb Q\). Every subgroup of an abelian Galois group is normal, so every intermediate extension is Galois over \(\mathbb Q\). Hence \(\mathbb Q(\sqrt[3]{2})/\mathbb Q\) would be Galois.
+is an intermediate field of the abelian Galois extension \(K/\QQ\). Every subgroup of an abelian Galois group is normal, so every intermediate extension is Galois over \(\QQ\). Hence \(\QQ(\sqrt[3]{2})/\QQ\) would be Galois.
 
-But \(x^3-2\) is irreducible over \(\mathbb Q\) by Eisenstein at \(2\), and \(\mathbb Q(\sqrt[3]{2})\subset\mathbb R\) contains only the real root of \(x^3-2\), not the two nonreal roots. Thus it is not a normal, hence not a Galois, extension of \(\mathbb Q\). Contradiction.
+But \(x^3-2\) is irreducible over \(\QQ\) by Eisenstein at \(2\), and \(\QQ(\sqrt[3]{2})\subset\RR\) contains only the real root of \(x^3-2\), not the two nonreal roots. Thus it is not a normal, hence not a Galois, extension of \(\QQ\). Contradiction.
 
 :::
 

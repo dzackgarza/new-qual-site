@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\mathbb R^n$, and let $y_1,\ldots,y_n\in\mathbb R^n$ satisfy
+Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\RR^n$, and let $y_1,\ldots,y_n\in\RR^n$ satisfy
 \[
 \sum_i\|y_i\|^2<1.
 \]
@@ -36,7 +36,7 @@ Suppose
 \]
 for some scalars
 \[
-a_1,\ldots,a_n\in\mathbb R.
+a_1,\ldots,a_n\in\RR.
 \]
 
 

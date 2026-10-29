@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-VQUPX
 kind: problem
 title: Taylor coefficients of an entire function as contour integrals, uniform convergence
-  on bounded sets, and uniform convergence on $\mathbb{C}$
+  on bounded sets, and uniform convergence on $\CC$
 classification:
   areas:
   - complex-analysis

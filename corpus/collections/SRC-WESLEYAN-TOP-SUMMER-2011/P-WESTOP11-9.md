@@ -33,7 +33,7 @@ $S$.
 
 For every
 \[
-n\in\mathbb Z,
+n\in\ZZ,
 \]
 let
 \[
@@ -143,7 +143,7 @@ D_N\subset S^2
 together with a short initial half-interval of $e$.
 Its inverse image is the disjoint union, over
 \[
-n\in\mathbb Z,
+n\in\ZZ,
 \]
 of the corresponding disk around $N_n$ together with a short initial
 half-interval of $e_n$, each mapped homeomorphically onto the chosen
@@ -334,7 +334,7 @@ x_n\in S_n^2
 \]
 for every
 \[
-n\in\mathbb Z.
+n\in\ZZ.
 \]
 
 A deck transformation is determined by the image of one point in a connected
@@ -359,7 +359,7 @@ Hence
 =
 \langle T\rangle
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -371,7 +371,7 @@ Hence
 Consequently
 \[
 \boxed{
-\pi_1(X)\cong\mathbb Z.
+\pi_1(X)\cong\ZZ.
 }
 \]
 

@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Discuss continuity and differentiability of the function $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ defined by
+Discuss continuity and differentiability of the function $f : \RR ^ { 2 } \to \RR$ defined by
 
 $$
 f ( x , y ) = \left\{ \begin{array} { l l } { \frac { x y } { \sqrt { x ^ { 2 } + y ^ { 2 } } } , \qquad } & { ( x , y ) \neq ( 0 , 0 ) } \\ { 0 , } & { ( x , y ) = ( 0 , 0 ) } \end{array} . \right.

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that for each $n \in \mathbb{Z}$ there is a unique function $\varphi$ assigning an integer to each finite CW complex, such that (a) $\varphi(X) = \varphi(Y)$ if $X$ and $Y$ are homeomorphic, (b) $\varphi(X) = \varphi(A) + \varphi(X/A)$ if $A$ is a subcomplex of $X$, and (c) $\phi(S^0) = n$.
+Show that for each $n \in \ZZ$ there is a unique function $\varphi$ assigning an integer to each finite CW complex, such that (a) $\varphi(X) = \varphi(Y)$ if $X$ and $Y$ are homeomorphic, (b) $\varphi(X) = \varphi(A) + \varphi(X/A)$ if $A$ is a subcomplex of $X$, and (c) $\phi(S^0) = n$.
 For such a function $\varphi$, show that $\varphi(X) = \varphi(Y)$ if $X \simeq Y$.
 :::
 
@@ -177,7 +177,7 @@ The function $\varphi$ is a homotopy invariant.
 
 For finite CW complexes,
 \[
-\chi(X)=\sum_i(-1)^i\dim_{\mathbb Q}H_i(X;\mathbb Q),
+\chi(X)=\sum_i(-1)^i\dim_{\QQ}H_i(X;\QQ),
 \]
 so Euler characteristic is preserved by homotopy equivalence. Therefore the reduced Euler characteristic, and hence $\varphi=n\widetilde\chi$, is also preserved. Thus
 \[

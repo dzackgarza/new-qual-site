@@ -35,7 +35,7 @@ Let $A=(a_{ij})$, and let $T$ be the real symmetric tridiagonal matrix with $1$ 
 
 ::: {.pf-step #s1-1}
 
-The matrix $A$ is similar over $\mathbb C$ to $iT$.
+The matrix $A$ is similar over $\CC$ to $iT$.
 
 
 ::: pf-proof
@@ -74,7 +74,7 @@ For each $m=1,\ldots,n$, set
 $$
 \theta_m\coloneqq\frac{m\pi}{n+1}
 $$
-and define $v^{(m)}\in\mathbb R^n$ by
+and define $v^{(m)}\in\RR^n$ by
 $$
 v^{(m)}_j\coloneqq\sin(j\theta_m),
 \qquad

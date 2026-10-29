@@ -55,7 +55,7 @@ Isomorphic normal subgroups can give nonisomorphic quotients.
 
 Let
 $$
-G=\mathbb Z_4\times\mathbb Z_2,
+G=\ZZ_4\times\ZZ_2,
 $$
 and take
 $$
@@ -64,15 +64,15 @@ H=\langle(2,0)\rangle,
 K=\langle(0,1)\rangle.
 $$
 Since $G$ is abelian, both subgroups are normal, and both are isomorphic to
-$\mathbb Z_2$. However,
+$\ZZ_2$. However,
 $$
 G/H\cong
-(\mathbb Z_4/\langle2\rangle)\times\mathbb Z_2
-\cong\mathbb Z_2\times\mathbb Z_2,
+(\ZZ_4/\langle2\rangle)\times\ZZ_2
+\cong\ZZ_2\times\ZZ_2,
 $$
 whereas
 $$
-G/K\cong\mathbb Z_4.
+G/K\cong\ZZ_4.
 $$
 The first quotient has no element of order $4$, while the second does, so
 they are not isomorphic.

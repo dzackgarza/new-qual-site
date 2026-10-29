@@ -46,7 +46,7 @@ Give an example in which the conclusion of the implicit function theorem is true
 ::: {.solution}
 For the first part, define
 \[
-F:\mathbb R^4\to\mathbb R^2
+F:\RR^4\to\RR^2
 \]
 by
 \[
@@ -176,11 +176,11 @@ F(0,1,1,-1)=0,
 and by step [](#p2-s3){.pf-ref} the derivative with respect to the dependent variables $(u,v)$ is invertible.
 The implicit function theorem therefore gives neighborhoods
 \[
-N\subseteq\mathbb R^2
+N\subseteq\RR^2
 \]
 of $(0,1)$ and
 \[
-M\subseteq\mathbb R^2
+M\subseteq\RR^2
 \]
 of $(1,-1)$, together with a unique $C^1$ map
 \[
@@ -214,7 +214,7 @@ near
 
 The function
 \[
-G:\mathbb R^2\to\mathbb R
+G:\RR^2\to\RR
 \]
 is smooth and satisfies
 \[
@@ -250,7 +250,7 @@ because the function
 \[
 t\mapsto t^3
 \]
-is injective on $\mathbb R$.
+is injective on $\RR$.
 Thus for every $x$, in particular for every $x$ near $0$, there is exactly one solution
 \[
 y=x.

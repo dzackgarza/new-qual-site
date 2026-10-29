@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E$ be the set of functions $f:\mathbb R\to\mathbb R$ satisfying
+Let $E$ be the set of functions $f:\RR\to\RR$ satisfying
 \[
 f'''+f''-2f=0.
 \]

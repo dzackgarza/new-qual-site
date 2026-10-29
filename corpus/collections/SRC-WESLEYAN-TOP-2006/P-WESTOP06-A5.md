@@ -21,9 +21,9 @@ For a space $X$, put
 \]
 Call $X$ *zero-dimensional* if $\operatorname{clop}(X)$ is a basis, and let $wX$ denote the minimum cardinality of a basis for $X$.
 
-1. Show that $\mathbb Q$ with its usual topology is zero-dimensional and that
+1. Show that $\QQ$ with its usual topology is zero-dimensional and that
    \[
-   w\mathbb Q<|\operatorname{clop}(\mathbb Q)|.
+   w\QQ<|\operatorname{clop}(\QQ)|.
    \]
 2. Prove that if $X$ is infinite, compact Hausdorff, and zero-dimensional, then
    \[
@@ -37,28 +37,28 @@ Call $X$ *zero-dimensional* if $\operatorname{clop}(X)$ is a basis, and let $wX$
 
 ::: {.pf-step #s1-1}
 
-The usual topology on \(\mathbb Q\) has a basis of clopen sets.
+The usual topology on \(\QQ\) has a basis of clopen sets.
 
 
 ::: pf-proof
 
-Let \(q\in\mathbb Q\) and let \(U\) be an open neighborhood of \(q\) in \(\mathbb Q\). Choose real numbers \(a<q<b\) with \(a,b\notin\mathbb Q\) and
+Let \(q\in\QQ\) and let \(U\) be an open neighborhood of \(q\) in \(\QQ\). Choose real numbers \(a<q<b\) with \(a,b\notin\QQ\) and
 \[
-(a,b)\cap\mathbb Q\subseteq U.
+(a,b)\cap\QQ\subseteq U.
 \]
 Then
 \[
-C=(a,b)\cap\mathbb Q
+C=(a,b)\cap\QQ
 \]
-is open in \(\mathbb Q\). It is also closed, because
+is open in \(\QQ\). It is also closed, because
 \[
-\mathbb Q\setminus C
+\QQ\setminus C
 =
-(-\infty,a)\cap\mathbb Q
+(-\infty,a)\cap\QQ
 \;\cup\;
-(b,\infty)\cap\mathbb Q,
+(b,\infty)\cap\QQ,
 \]
-where the irrationality of \(a\) and \(b\) removes any endpoint issue. Thus every neighborhood of every point contains a clopen neighborhood, so \(\operatorname{clop}(\mathbb Q)\) is a basis and \(\mathbb Q\) is zero-dimensional.
+where the irrationality of \(a\) and \(b\) removes any endpoint issue. Thus every neighborhood of every point contains a clopen neighborhood, so \(\operatorname{clop}(\QQ)\) is a basis and \(\QQ\) is zero-dimensional.
 
 :::
 
@@ -66,9 +66,9 @@ where the irrationality of \(a\) and \(b\) removes any endpoint issue. Thus ever
 
 ::: {.pf-step #s1-2}
 
-The weight of \(\mathbb Q\) is
+The weight of \(\QQ\) is
 \[
-w\mathbb Q=\aleph_0.
+w\QQ=\aleph_0.
 \]
 
 
@@ -76,11 +76,11 @@ w\mathbb Q=\aleph_0.
 
 The family
 \[
-\{(a,b)\cap\mathbb Q:a,b\in\mathbb Q,\ a<b\}
+\{(a,b)\cap\QQ:a,b\in\QQ,\ a<b\}
 \]
-is a countable basis, so \(w\mathbb Q\le\aleph_0\).
+is a countable basis, so \(w\QQ\le\aleph_0\).
 
-On the other hand, \(\mathbb Q\) is an infinite \(T_1\) space. A finite basis would generate only finitely many open sets and therefore only finitely many closed sets, whereas the distinct singletons \(\{q\}\) are all closed. Hence no finite basis exists, so \(w\mathbb Q\ge\aleph_0\).
+On the other hand, \(\QQ\) is an infinite \(T_1\) space. A finite basis would generate only finitely many open sets and therefore only finitely many closed sets, whereas the distinct singletons \(\{q\}\) are all closed. Hence no finite basis exists, so \(w\QQ\ge\aleph_0\).
 
 :::
 
@@ -88,28 +88,28 @@ On the other hand, \(\mathbb Q\) is an infinite \(T_1\) space. A finite basis wo
 
 ::: {.pf-step #s1-3}
 
-The set of clopen subsets of \(\mathbb Q\) has cardinality at least \(2^{\aleph_0}\).
+The set of clopen subsets of \(\QQ\) has cardinality at least \(2^{\aleph_0}\).
 
 
 ::: pf-proof
 
 For each irrational number \(a\), define
 \[
-C_a=(-\infty,a)\cap\mathbb Q.
+C_a=(-\infty,a)\cap\QQ.
 \]
-The set \(C_a\) is clopen in \(\mathbb Q\): both it and its complement
+The set \(C_a\) is clopen in \(\QQ\): both it and its complement
 \[
-(a,\infty)\cap\mathbb Q
+(a,\infty)\cap\QQ
 \]
 are open in the subspace topology.
 
-If \(a<b\) are irrational, density of \(\mathbb Q\) in \(\mathbb R\) gives \(q\in\mathbb Q\) with \(a<q<b\). Then \(q\notin C_a\) but \(q\in C_b\), so \(C_a\ne C_b\). Thus
+If \(a<b\) are irrational, density of \(\QQ\) in \(\RR\) gives \(q\in\QQ\) with \(a<q<b\). Then \(q\notin C_a\) but \(q\in C_b\), so \(C_a\ne C_b\). Thus
 \[
-\mathbb R\setminus\mathbb Q\longrightarrow\operatorname{clop}(\mathbb Q),
+\RR\setminus\QQ\longrightarrow\operatorname{clop}(\QQ),
 \qquad
 a\longmapsto C_a,
 \]
-is injective. Since \(|\mathbb R\setminus\mathbb Q|=2^{\aleph_0}\), the claim follows.
+is injective. Since \(|\RR\setminus\QQ|=2^{\aleph_0}\), the claim follows.
 
 :::
 
@@ -119,15 +119,15 @@ is injective. Since \(|\mathbb R\setminus\mathbb Q|=2^{\aleph_0}\), the claim fo
 
 Therefore
 \[
-\boxed{w\mathbb Q<|\operatorname{clop}(\mathbb Q)|.}
+\boxed{w\QQ<|\operatorname{clop}(\QQ)|.}
 \]
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, \(w\mathbb Q=\aleph_0\), while step [](#s1-3){.pf-ref} gives
+By step [](#s1-2){.pf-ref}, \(w\QQ=\aleph_0\), while step [](#s1-3){.pf-ref} gives
 \[
-|\operatorname{clop}(\mathbb Q)|\ge2^{\aleph_0}>\aleph_0
+|\operatorname{clop}(\QQ)|\ge2^{\aleph_0}>\aleph_0
 \]
 by Cantor's theorem.
 

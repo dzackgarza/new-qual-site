@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.2-30
 kind: problem
-title: "Fiber bundle projections from subspaces of $\\mathbb{R}^2$"
+title: "Fiber bundle projections from subspaces of $\\RR^2$"
 classification:
   areas:
   - topology
@@ -24,28 +24,28 @@ audit:
 ---
 
 ::: {.problem}
-Let $E$ be a subspace of $\mathbb{R}^2$ obtained by deleting a subspace of $\{0\} \times \mathbb{R}$.
-For which such spaces $E$ is the projection $E \to \mathbb{R}$, $(x, y) \mapsto x$, a fiber bundle?
+Let $E$ be a subspace of $\RR^2$ obtained by deleting a subspace of $\{0\} \times \RR$.
+For which such spaces $E$ is the projection $E \to \RR$, $(x, y) \mapsto x$, a fiber bundle?
 :::
 
 ::: {.solution}
 Write
 \[
-E=\mathbb R^2-\bigl(\{0\}\times A\bigr),
+E=\RR^2-\bigl(\{0\}\times A\bigr),
 \qquad
 p(x,y)=x.
 \]
-For \(x\ne0\), the fiber is \(\mathbb R\), while
+For \(x\ne0\), the fiber is \(\RR\), while
 \[
-p^{-1}(0)=\mathbb R-A.
+p^{-1}(0)=\RR-A.
 \]
-If \(p\) is a fiber bundle over the connected base \(\mathbb R\), all fibers are homeomorphic. Hence a necessary condition is
+If \(p\) is a fiber bundle over the connected base \(\RR\), all fibers are homeomorphic. Hence a necessary condition is
 \[
-\mathbb R-A\cong\mathbb R.
+\RR-A\cong\RR.
 \]
-As a subspace of \(\mathbb R\), a space homeomorphic to \(\mathbb R\) is a connected one-manifold without boundary, hence is an open interval, allowing infinite endpoints. Thus necessarily
+As a subspace of \(\RR\), a space homeomorphic to \(\RR\) is a connected one-manifold without boundary, hence is an open interval, allowing infinite endpoints. Thus necessarily
 \[
-\mathbb R-A=(a,b)
+\RR-A=(a,b)
 \]
 for some
 \[
@@ -56,7 +56,7 @@ This condition is also sufficient. Put \(I=(a,b)\). Away from \(0\) the projecti
 
 For \(t>0\), choose an increasing homeomorphism
 \[
-h_t:\mathbb R\to I
+h_t:\RR\to I
 \]
 which equals the identity on the portion of \(I\) at distance at least \(t\) from each finite endpoint, compresses the left tail into \((a,a+t]\) when \(a\) is finite, and compresses the right tail into \([b-t,b)\) when \(b\) is finite. For example, at a finite left endpoint use
 \[
@@ -91,6 +91,6 @@ The displayed limiting behavior gives continuity at the central fiber; the same 
 
 Therefore
 \[
-\boxed{p:E\to\mathbb R\text{ is a fiber bundle exactly when }\mathbb R-A\text{ is an open interval (possibly unbounded).}}
+\boxed{p:E\to\RR\text{ is a fiber bundle exactly when }\RR-A\text{ is an open interval (possibly unbounded).}}
 \]
 :::

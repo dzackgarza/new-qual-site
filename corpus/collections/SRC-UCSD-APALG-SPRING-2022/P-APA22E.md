@@ -59,13 +59,13 @@ is an $S_{2n}$-equivariant bijection, and the permutation module of $S_{2n}/H$ i
 :::
 
 ::: {.pf-step}
-The assertion of part (b) is false: for $n=1$ and $k=\mathbb C$ there is no surjective $S_2$-equivariant map $\mathbb C[M_1]\to S^{(1,1)}$.
+The assertion of part (b) is false: for $n=1$ and $k=\CC$ there is no surjective $S_2$-equivariant map $\CC[M_1]\to S^{(1,1)}$.
 
 ::: pf-proof
-There is exactly one perfect matching of $\{1,2\}$, so $\mathbb C[M_1]$ is the trivial one-dimensional representation of $S_2$.
+There is exactly one perfect matching of $\{1,2\}$, so $\CC[M_1]$ is the trivial one-dimensional representation of $S_2$.
 The Specht module $S^{(1,1)}$ is the sign representation, on which the transposition acts by $-1$.
-An equivariant map $\phi$ from the trivial representation satisfies $(12)\phi(v)=\phi(v)$, while $(12)$ acts by $-1$ on the target; since $2\ne0$ in $\mathbb C$, $\phi(v)=0$.
-Thus every equivariant map $\mathbb C[M_1]\to S^{(1,1)}$ is zero, and none is surjective.
+An equivariant map $\phi$ from the trivial representation satisfies $(12)\phi(v)=\phi(v)$, while $(12)$ acts by $-1$ on the target; since $2\ne0$ in $\CC$, $\phi(v)=0$.
+Thus every equivariant map $\CC[M_1]\to S^{(1,1)}$ is zero, and none is surjective.
 :::
 
 :::

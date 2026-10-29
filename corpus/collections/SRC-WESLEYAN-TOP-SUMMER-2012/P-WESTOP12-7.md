@@ -47,7 +47,7 @@ The disk is contractible, hence simply connected:
 
 But
 \[
-\pi_1(S^1)\cong\mathbb Z\ne0.
+\pi_1(S^1)\cong\ZZ\ne0.
 \]
 Thus
 \[

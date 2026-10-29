@@ -25,7 +25,7 @@ Let $\phi : [0,1] \to [0,1]$ be continuous and let $d\mu$ be a Borel probability
 \[
 \int f \circ \phi(x)\,d\mu(x) = \int f(y) w(y)\,d\mu(y)
 \]
-for all continuous $f : [0,1] \to \mathbb{R}$.
+for all continuous $f : [0,1] \to \RR$.
 :::
 
 ::: {.solution}
@@ -130,7 +130,7 @@ Borel representative with values in $[0,\infty)$.
 
 ::: {.pf-step #s1-4}
 
-For every bounded Borel function $f:[0,1]\to\mathbb R$,
+For every bounded Borel function $f:[0,1]\to\RR$,
 \[
 \int_{[0,1]} f(y)\,d\nu(y)
 =
@@ -158,7 +158,7 @@ negative parts gives the bounded real-valued case.
 
 ::: {.pf-step #s1-5}
 
-For every continuous $f:[0,1]\to\mathbb R$,
+For every continuous $f:[0,1]\to\RR$,
 \[
 \boxed{
 \int f\circ\phi(x)\,d\mu(x)

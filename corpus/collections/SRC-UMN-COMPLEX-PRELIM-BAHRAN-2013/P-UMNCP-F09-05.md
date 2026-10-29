@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let \(f\) be entire and suppose
 \[
-f(\mathbb C)\subseteq\{z\in\mathbb C:\operatorname{Im}z>0\}.
+f(\CC)\subseteq\{z\in\CC:\operatorname{Im}z>0\}.
 \]
 Show that \(f\) is constant.
 :::

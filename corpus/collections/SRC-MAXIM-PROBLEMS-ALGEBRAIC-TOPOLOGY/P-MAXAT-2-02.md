@@ -77,13 +77,13 @@ By step [](#s1-1){.pf-ref}, the $p$ cells of each fixed dimension form a single 
 
 For the ordinary cellular chain complex with integral coefficients, the boundary maps alternate as
 \[
-0\longrightarrow\mathbb Z
-\xrightarrow{0}\mathbb Z
-\xrightarrow{p}\mathbb Z
-\xrightarrow{0}\mathbb Z
+0\longrightarrow\ZZ
+\xrightarrow{0}\ZZ
+\xrightarrow{p}\ZZ
+\xrightarrow{0}\ZZ
 \xrightarrow{p}\cdots
-\xrightarrow{p}\mathbb Z
-\xrightarrow{0}\mathbb Z
+\xrightarrow{p}\ZZ
+\xrightarrow{0}\ZZ
 \longrightarrow0.
 \]
 Equivalently,
@@ -98,11 +98,11 @@ p,&k\text{ even},\ 0<k<2n.
 
 ::: pf-proof
 
-The universal cover has deck group $C_p=\langle t\rangle$. In the equivariant cellular chain complex over $\mathbb Z[C_p]$, after suitable choices of lifted cells, the differentials alternate between a factor of $t^{a_k}-1$ and the norm element
+The universal cover has deck group $C_p=\langle t\rangle$. In the equivariant cellular chain complex over $\ZZ[C_p]$, after suitable choices of lifted cells, the differentials alternate between a factor of $t^{a_k}-1$ and the norm element
 \[
 N=1+t+\cdots+t^{p-1},
 \]
-where each $a_k$ is a unit modulo $p$ determined by the lens-space weights. Passing to ordinary cellular chains tensors with the trivial $\mathbb Z[C_p]$-module $\mathbb Z$, so $t$ acts as $1$. Thus $t^{a_k}-1$ becomes $0$, while $N$ becomes multiplication by $p$. Since the top dimension $2n-1$ is odd, this yields the displayed alternating complex.
+where each $a_k$ is a unit modulo $p$ determined by the lens-space weights. Passing to ordinary cellular chains tensors with the trivial $\ZZ[C_p]$-module $\ZZ$, so $t$ acts as $1$. Thus $t^{a_k}-1$ becomes $0$, while $N$ becomes multiplication by $p$. Since the top dimension $2n-1$ is odd, this yields the displayed alternating complex.
 
 :::
 
@@ -112,11 +112,11 @@ where each $a_k$ is a unit modulo $p$ determined by the lens-space weights. Pass
 
 In particular, the CW structure recovers the standard homology groups
 \[
-H_k(L^{2n-1};\mathbb Z)
+H_k(L^{2n-1};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,2n-1,\\
-\mathbb Z/p,&k\text{ odd},\ 0<k<2n-1,\\
+\ZZ,&k=0,2n-1,\\
+\ZZ/p,&k\text{ odd},\ 0<k<2n-1,\\
 0,&k\text{ even},\ 0<k<2n-1.
 \end{cases}
 \]
@@ -124,7 +124,7 @@ H_k(L^{2n-1};\mathbb Z)
 
 ::: pf-proof
 
-Compute kernels modulo images in the cellular chain complex of step [](#s1-3){.pf-ref}. At an interior odd degree, the outgoing differential is zero and the incoming differential is multiplication by $p$, giving $\mathbb Z/p$. At an interior even degree, multiplication by $p$ is injective, giving zero homology. The bottom and top groups are $\mathbb Z$ because the space is connected and the top differential is zero with no incoming differential.
+Compute kernels modulo images in the cellular chain complex of step [](#s1-3){.pf-ref}. At an interior odd degree, the outgoing differential is zero and the incoming differential is multiplication by $p$, giving $\ZZ/p$. At an interior even degree, multiplication by $p$ is injective, giving zero homology. The bottom and top groups are $\ZZ$ because the space is connected and the top differential is zero with no incoming differential.
 
 :::
 
@@ -134,9 +134,9 @@ Compute kernels modulo images in the cellular chain complex of step [](#s1-3){.p
 
 For the classical three-dimensional lens space $L(p,q)$, this specializes to one cell in each dimension $0,1,2,3$ with cellular complex
 \[
-0\to\mathbb Z\xrightarrow{0}\mathbb Z
-\xrightarrow{p}\mathbb Z
-\xrightarrow{0}\mathbb Z\to0.
+0\to\ZZ\xrightarrow{0}\ZZ
+\xrightarrow{p}\ZZ
+\xrightarrow{0}\ZZ\to0.
 \]
 
 

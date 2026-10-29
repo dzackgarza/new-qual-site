@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-AIKDLY3MJC
 kind: problem
-title: The nilradical is the intersection of all primes; $N(\mathbb{Z}/(m))$ and $N(\mathbb{C}[x,y]/(y^2-x^3))$
+title: The nilradical is the intersection of all primes; $N(\ZZ/(m))$ and $N(\CC[x,y]/(y^2-x^3))$
 classification:
   areas:
   - algebra
@@ -29,11 +29,11 @@ Recall that an element $r$ of $R$ is *nilpotent* if $r^n=0$ for some positive in
 
   > Hint: given a non-nilpotent element $r$ of $R$, you may wish to construct a prime ideal that does not contain $r$ or its powers.
 
-- Given a positive integer $m$, determine the nilradical of $\mathbb Z/(m)$.
+- Given a positive integer $m$, determine the nilradical of $\ZZ/(m)$.
 
-- Determine the nilradical of $\mathbb C[x,y]/(y^2-x^3)$.
+- Determine the nilradical of $\CC[x,y]/(y^2-x^3)$.
 
-- Let $p(x,y)$ be a polynomial in $\mathbb C[x,y]$ such that for any complex number $a$, $p(a,a^{3/2})=0$.
+- Let $p(x,y)$ be a polynomial in $\CC[x,y]$ such that for any complex number $a$, $p(a,a^{3/2})=0$.
   Prove that $p(x,y)$ is divisible by $y^2-x^3$.
 :::
 
@@ -83,7 +83,7 @@ m=\prod_{i=1}^s p_i^{e_i}
 \]
 is the prime factorization of $m$, then
 \[
-N(\mathbb Z/(m))
+N(\ZZ/(m))
 =\bigl(\overline{p_1p_2\cdots p_s}\bigr).
 \]
 
@@ -93,7 +93,7 @@ Write
 \[
 \operatorname{rad}(m)=p_1\cdots p_s.
 \]
-If $\bar a\in\mathbb Z/(m)$ is nilpotent, then $m\mid a^N$ for some $N$. Hence every prime divisor $p_i$ of $m$ divides $a^N$, and therefore divides $a$. Thus $\operatorname{rad}(m)\mid a$.
+If $\bar a\in\ZZ/(m)$ is nilpotent, then $m\mid a^N$ for some $N$. Hence every prime divisor $p_i$ of $m$ divides $a^N$, and therefore divides $a$. Thus $\operatorname{rad}(m)\mid a$.
 
 Conversely, if every $p_i$ divides $a$, choose $N\ge\max_i e_i$. Then
 \[
@@ -109,12 +109,12 @@ for every $i$, so $m\mid a^N$. Hence $\bar a$ is nilpotent. Therefore the nilpot
 
 One has
 \[
-N\bigl(\mathbb C[x,y]/(y^2-x^3)\bigr)=0.
+N\bigl(\CC[x,y]/(y^2-x^3)\bigr)=0.
 \]
 
 ::: pf-proof
 
-The polynomial $y^2-x^3$ is irreducible in $\mathbb C[x,y]$. Indeed, regarding it as a monic quadratic in $y$ over the UFD $\mathbb C[x]$, reducibility would force $x^3$ to be a square in $\mathbb C[x]$, which it is not. Since $\mathbb C[x,y]$ is a UFD, irreducible elements are prime. Hence $(y^2-x^3)$ is a prime ideal, so the quotient is an integral domain. An integral domain has no nonzero nilpotent elements.
+The polynomial $y^2-x^3$ is irreducible in $\CC[x,y]$. Indeed, regarding it as a monic quadratic in $y$ over the UFD $\CC[x]$, reducibility would force $x^3$ to be a square in $\CC[x]$, which it is not. Since $\CC[x,y]$ is a UFD, irreducible elements are prime. Hence $(y^2-x^3)$ is a prime ideal, so the quotient is an integral domain. An integral domain has no nonzero nilpotent elements.
 
 :::
 
@@ -124,7 +124,7 @@ The polynomial $y^2-x^3$ is irreducible in $\mathbb C[x,y]$. Indeed, regarding i
 
 Let
 \[
-\phi:\mathbb C[x,y]\longrightarrow\mathbb C[t],
+\phi:\CC[x,y]\longrightarrow\CC[t],
 \qquad
 \phi(x)=t^2,\quad \phi(y)=t^3.
 \]
@@ -135,7 +135,7 @@ Then
 
 ::: pf-proof
 
-Certainly $y^2-x^3\in\ker\phi$. Conversely, divide any $p(x,y)\in\mathbb C[x,y]$ by the monic polynomial $y^2-x^3$ as a polynomial in $y$ over $\mathbb C[x]$. There are unique $q\in\mathbb C[x,y]$ and $a,b\in\mathbb C[x]$ such that
+Certainly $y^2-x^3\in\ker\phi$. Conversely, divide any $p(x,y)\in\CC[x,y]$ by the monic polynomial $y^2-x^3$ as a polynomial in $y$ over $\CC[x]$. There are unique $q\in\CC[x,y]$ and $a,b\in\CC[x]$ such that
 \[
 p=q(y^2-x^3)+a(x)+y b(x).
 \]
@@ -155,11 +155,11 @@ If $p(a,a^{3/2})=0$ for every complex $a$ in the sense of the cusp parametrizati
 
 ::: pf-proof
 
-Take an arbitrary $t\in\mathbb C$ and set $a=t^2$, choosing the square root $t$, so that $a^{3/2}=t^3$. The hypothesis gives
+Take an arbitrary $t\in\CC$ and set $a=t^2$, choosing the square root $t$, so that $a^{3/2}=t^3$. The hypothesis gives
 \[
 p(t^2,t^3)=0
 \]
-for every $t\in\mathbb C$. Hence the polynomial $\phi(p)\in\mathbb C[t]$ has infinitely many roots, so $\phi(p)=0$. By step [](#s4){.pf-ref},
+for every $t\in\CC$. Hence the polynomial $\phi(p)\in\CC[t]$ has infinitely many roots, so $\phi(p)=0$. By step [](#s4){.pf-ref},
 \[
 p\in\ker\phi=(y^2-x^3).
 \]

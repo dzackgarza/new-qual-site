@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Construct a meager (i.e. first category) subset $E$ of $\mathbb{R}$ that is conull in $\mathbb{R}$ with respect to the Lebesgue measure (i.e., $m(\mathbb{R} \setminus E) = 0$).
+Construct a meager (i.e. first category) subset $E$ of $\RR$ that is conull in $\RR$ with respect to the Lebesgue measure (i.e., $m(\RR \setminus E) = 0$).
 :::
 
 ::: {.solution}
 Enumerate the rationals as
 \[
-\mathbb Q=\{q_1,q_2,\ldots\}.
+\QQ=\{q_1,q_2,\ldots\}.
 \]
 For each $n\ge1$, define
 \[
@@ -60,19 +60,19 @@ m(N)=0.
 
 Now put
 \[
-E:=\mathbb R\setminus N.
+E:=\RR\setminus N.
 \]
 Then
 \[
-m(\mathbb R\setminus E)=m(N)=0,
+m(\RR\setminus E)=m(N)=0,
 \]
 so $E$ is conull.
 
 On the other hand,
 \[
-E=\bigcup_{n=1}^\infty(\mathbb R\setminus U_n).
+E=\bigcup_{n=1}^\infty(\RR\setminus U_n).
 \]
-Each $\mathbb R\setminus U_n$ is closed and has empty interior because $U_n$ is dense. Hence each is nowhere dense. Therefore $E$ is a countable union of nowhere dense sets, i.e.
+Each $\RR\setminus U_n$ is closed and has empty interior because $U_n$ is dense. Hence each is nowhere dense. Therefore $E$ is a countable union of nowhere dense sets, i.e.
 \[
 \boxed{E\text{ is meager and conull}.}
 \]

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $(f_n)$ be a sequence of real-valued functions on $\mathbb R$.
+Problem 7. Let $(f_n)$ be a sequence of real-valued functions on $\RR$.
 Assume that there is $B<\infty$ such that
 \[
 |f_n(x)|\le B
@@ -34,7 +34,7 @@ exists for every rational number $r$.
 
 Enumerate the rational numbers as
 \[
-\mathbb Q=\{r_1,r_2,r_3,\ldots\}.
+\QQ=\{r_1,r_2,r_3,\ldots\}.
 \]
 
 ::: pf
@@ -265,7 +265,7 @@ such that
 \[
 \boxed{
 \lim_{k\to\infty}f_{n_k}(r)
-\text{ exists for every }r\in\mathbb Q.
+\text{ exists for every }r\in\QQ.
 }
 \]
 

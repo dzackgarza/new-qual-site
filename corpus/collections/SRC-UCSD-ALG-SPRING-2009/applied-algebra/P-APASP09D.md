@@ -30,7 +30,7 @@ For $n\ge 1$, let
 \[
 p_n=\frac{1}{n!}\sum_{\sigma\in S_n}\sigma,
 \]
-and let $d=\operatorname{diag}(x_1,\ldots,x_N)$, where $V=\mathbb C^N$.
+and let $d=\operatorname{diag}(x_1,\ldots,x_N)$, where $V=\CC^N$.
 The matrix $d$ acts on each factor of $V^{\otimes n}$, and $S_n$ acts on $V^{\otimes n}$ by permuting tensor factors.
 
 (a) Calculate
@@ -161,7 +161,7 @@ V^{\otimes10}
 as a $GL(V)\times S_{10}$-module.
 Thus the multiplicity of $S^\lambda$ is
 \[
-\dim\mathbf S_\lambda(\mathbb C^N)=s_\lambda(1^N).
+\dim\mathbf S_\lambda(\CC^N)=s_\lambda(1^N).
 \]
 For $N=3$, the partition $(3,3,3,1)$ has four nonzero parts, so the Schur functor vanishes and the multiplicity is $0$.
 

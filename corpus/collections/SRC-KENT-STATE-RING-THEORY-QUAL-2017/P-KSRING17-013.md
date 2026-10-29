@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-013
 kind: problem
-title: When $\mathbb Z/n\mathbb Z$ is a direct sum of fields
+title: When $\ZZ/n\ZZ$ is a direct sum of fields
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine for which integers n the ring $\mathbb { Z } / n \mathbb { Z }$ is a direct sum of fields.
+Determine for which integers n the ring $\ZZ / n \ZZ$ is a direct sum of fields.
 Prove your answer.
 :::
 

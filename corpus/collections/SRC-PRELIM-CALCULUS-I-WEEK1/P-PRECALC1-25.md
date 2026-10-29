@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : [ 0 , 1 ] \to \mathbb { R }$ be continuous and suppose that f is differentiable on (0, 1) with $f ( 0 ) = 1 , f ( 1 ) = 0$ . Which of the following are necessarily true?
+Let $f : [ 0 , 1 ] \to \RR$ be continuous and suppose that f is differentiable on (0, 1) with $f ( 0 ) = 1 , f ( 1 ) = 0$ . Which of the following are necessarily true?
 
 (a) There is $x \in ( 0 , 1 )$ such that $f ( x ) = x$
 

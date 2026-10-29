@@ -44,7 +44,7 @@ f\bigl(
 \]
 is dense in
 \[
-\mathbb C.
+\CC.
 \]
 
 
@@ -52,7 +52,7 @@ is dense in
 
 Equivalently, for every
 \[
-w\in\mathbb C
+w\in\CC
 \]
 and every
 \[

@@ -15,7 +15,7 @@ Let $I=[0,1]$. Compare the following three topologies on $I\times I$:
 
 1. the product topology;
 2. the dictionary-order topology on $I\times I$;
-3. the topology inherited by $I\times I$ as a subspace of $\mathbb R\times\mathbb R$ equipped with the dictionary-order topology.
+3. the topology inherited by $I\times I$ as a subspace of $\RR\times\RR$ equipped with the dictionary-order topology.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ order, and
 \]
 for the subspace topology inherited from
 \[
-\mathbb R\times\mathbb R
+\RR\times\RR
 \]
 with the lexicographic order topology.
 
@@ -89,7 +89,7 @@ then
 \[
 (a,b)_{I\times I}
 =
-(a,b)_{\mathbb R\times\mathbb R}
+(a,b)_{\RR\times\RR}
 \cap
 (I\times I).
 \]
@@ -107,7 +107,7 @@ in the ambient lexicographic plane. Then
 \[
 [(0,0),b)_{I\times I}
 =
-(c,b)_{\mathbb R\times\mathbb R}
+(c,b)_{\RR\times\RR}
 \cap
 (I\times I).
 \]

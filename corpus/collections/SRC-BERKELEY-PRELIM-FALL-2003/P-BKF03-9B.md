@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\lambda , a \in \mathbb { R }$ , with $a > 0$ . Let $u ( x , y )$ be an infinitely differentiable function defined on an open neighborhood of $x ^ { 2 } + y ^ { 2 } \leq 1$ such that
+Let $\lambda , a \in \RR$ , with $a > 0$ . Let $u ( x , y )$ be an infinitely differentiable function defined on an open neighborhood of $x ^ { 2 } + y ^ { 2 } \leq 1$ such that
 
 $$
 \begin{array} { c } { { \Delta u + \lambda u = 0 } } \\ { { u _ { n } = - a u } } \end{array}

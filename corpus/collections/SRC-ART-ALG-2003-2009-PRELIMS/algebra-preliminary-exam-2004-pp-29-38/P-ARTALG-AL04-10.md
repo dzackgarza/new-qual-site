@@ -28,10 +28,10 @@ audit:
   note: "Checked irreducibility and failure of normality for the real cubic, both image-order divisibilities in S3, equality of the action kernel with the index-three subgroup, and the final Galois correspondence."
 ---
 ::: {.problem}
-(a) Give an example of an extension of degree 3 over $\mathbb{Q}$ which is not Galois over $\mathbb{Q}$.
+(a) Give an example of an extension of degree 3 over $\QQ$ which is not Galois over $\QQ$.
 
-(b) Suppose $K$ is a Galois extension of $\mathbb{Q}$ with $[K:\mathbb{Q}] = 105$, and that $L$ is a subfield of $K$ with $[L:\mathbb{Q}] = 3$.
-Show that $L$ is Galois over $\mathbb{Q}$.
+(b) Suppose $K$ is a Galois extension of $\QQ$ with $[K:\QQ] = 105$, and that $L$ is a subfield of $K$ with $[L:\QQ] = 3$.
+Show that $L$ is Galois over $\QQ$.
 :::
 
 ::: {.solution}
@@ -40,17 +40,17 @@ Show that $L$ is Galois over $\mathbb{Q}$.
 
 ::: {.pf-step #s1}
 
-For part (a), $\mathbb Q(\sqrt[3]{2})$ is a non-Galois
+For part (a), $\QQ(\sqrt[3]{2})$ is a non-Galois
 extension of degree $3$.
 
 ::: pf-proof
 
 Let $a=\sqrt[3]{2}>0$. Eisenstein's criterion at $2$ makes
-$x^3-2$ irreducible over $\mathbb Q$, so
-$[\mathbb Q(a):\mathbb Q]=3$ [@DF04]. The other two roots
+$x^3-2$ irreducible over $\QQ$, so
+$[\QQ(a):\QQ]=3$ [@DF04]. The other two roots
 are $a\omega$ and $a\omega^2$ for a primitive cube root of
-unity $\omega$. They are nonreal, whereas $\mathbb Q(a)$ is
-contained in $\mathbb R$. Thus an irreducible polynomial over
+unity $\omega$. They are nonreal, whereas $\QQ(a)$ is
+contained in $\RR$. Thus an irreducible polynomial over
 the base field has a root in the extension but does not split
 there. The extension is not normal and hence not Galois.
 
@@ -61,12 +61,12 @@ there. The extension is not normal and hence not Galois.
 ::: {.pf-step #s2}
 
 For part (b), $H=\operatorname{Gal}(K/L)$ is a normal
-subgroup of $G=\operatorname{Gal}(K/\mathbb Q)$.
+subgroup of $G=\operatorname{Gal}(K/\QQ)$.
 
 ::: pf-proof
 
 The finite Galois correspondence gives $|G|=105$ and
-$[G:H]=[L:\mathbb Q]=3$, hence $|H|=35$ [@DF04].
+$[G:H]=[L:\QQ]=3$, hence $|H|=35$ [@DF04].
 Let $G$ act by left multiplication on the three left cosets
 of $H$, giving $\rho:G\to S_3$.
 The action is transitive: $yx^{-1}$ sends $xH$ to $yH$.
@@ -86,7 +86,7 @@ that a subgroup of index three is always normal.
 
 ::: {.pf-step #s3}
 
-The field $L$ in part (b) is Galois over $\mathbb Q$.
+The field $L$ in part (b) is Galois over $\QQ$.
 
 ::: pf-proof
 

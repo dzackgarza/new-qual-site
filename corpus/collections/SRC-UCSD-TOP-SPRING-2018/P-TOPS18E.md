@@ -26,10 +26,10 @@ By using the intersection theory of $S^n \times S^n$, calculate the intersection
 ::: pf-step
 Let
 $$A=[S^n\times\{*\}],\qquad B=[\{*\}\times S^n]$$
-be the standard basis of $H_n(S^n\times S^n;\mathbb Z)$.
+be the standard basis of $H_n(S^n\times S^n;\ZZ)$.
 
 ::: pf-proof
-Künneth gives $H_n(S^n\times S^n)\cong\mathbb Z\oplus\mathbb Z$ with these factor classes as generators.
+Künneth gives $H_n(S^n\times S^n)\cong\ZZ\oplus\ZZ$ with these factor classes as generators.
 :::
 
 :::

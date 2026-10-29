@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $v_1, \dots, v_k$ be vectors in $\mathbb{R}^n$.
+Let $v_1, \dots, v_k$ be vectors in $\RR^n$.
 Define the span $V = \langle v_1, \dots, v_k \rangle$ of the vectors.
 Prove that there is a subset of the vectors $v_1, \dots, v_k$ that forms a basis for $V$.
 :::
@@ -27,7 +27,7 @@ Prove that there is a subset of the vectors $v_1, \dots, v_k$ that forms a basis
 The span of $v_1,\ldots,v_k$ is
 \[
 V=\langle v_1,\ldots,v_k\rangle
-=\left\{\sum_{i=1}^k a_i v_i:a_i\in\mathbb R\right\}.
+=\left\{\sum_{i=1}^k a_i v_i:a_i\in\RR\right\}.
 \]
 
 Among all linearly independent subsets of the finite set $\{v_1,\ldots,v_k\}$, choose one of maximal cardinality, say

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let $\mathbb T$ be the unit circle in the complex plane $\mathbb C$, and for each $\alpha\in\mathbb T$ define the rotation map $R_\alpha:\mathbb T\to\mathbb T$ by
+Problem 4. Let $\mathbb T$ be the unit circle in the complex plane $\CC$, and for each $\alpha\in\mathbb T$ define the rotation map $R_\alpha:\mathbb T\to\mathbb T$ by
 \[
 R_\alpha(z)=\alpha z.
 \]
@@ -29,14 +29,14 @@ for every Borel set $E\subset\mathbb T$.
 
 (a) Let $m$ be Lebesgue measure on $\mathbb T$ (defined, for instance, by identifying $\mathbb T$ with $[0,1)$ through the exponential function). Show that for every $\alpha\in\mathbb T$, $m$ is $\alpha$-invariant.
 
-(b) Prove that if $\alpha$ is not a root of unity, then the set of powers $\{\alpha^n:n\in\mathbb Z\}$ is dense in $\mathbb T$.
+(b) Prove that if $\alpha$ is not a root of unity, then the set of powers $\{\alpha^n:n\in\ZZ\}$ is dense in $\mathbb T$.
 
 (c) Prove that, if we fix a single $\alpha\in\mathbb T$ which is not a root of unity, then $m$ is the only $\alpha$-invariant Borel probability measure on $\mathbb T$.
 :::
 
 ::: {.solution}
 
-Write \(q(t)=e^{2\pi i t}\), so that \(\mathbb T\cong\mathbb R/\mathbb Z\), and let \(m\) be normalized Lebesgue measure under this identification.
+Write \(q(t)=e^{2\pi i t}\), so that \(\mathbb T\cong\RR/\ZZ\), and let \(m\) be normalized Lebesgue measure under this identification.
 
 ::: pf
 
@@ -63,7 +63,7 @@ Then
 \[
 \tau_a(E)=(E_0+a)\sqcup(E_1+a-1).
 \]
-The two pieces are disjoint, and translation invariance of Lebesgue measure on \(\mathbb R\) gives
+The two pieces are disjoint, and translation invariance of Lebesgue measure on \(\RR\) gives
 \[
 m(\tau_a(E))=m(E_0)+m(E_1)=m(E).
 \]
@@ -121,13 +121,13 @@ form an \(\varepsilon\)-net in \(\mathbb T\). Since \(\varepsilon>0\) was arbitr
 
 If \(\alpha\) is not a root of unity, then
 \[
-\boxed{\{\alpha^n:n\in\mathbb Z\}\text{ is dense in }\mathbb T}.
+\boxed{\{\alpha^n:n\in\ZZ\}\text{ is dense in }\mathbb T}.
 \]
 
 
 ::: pf-proof
 
-The cyclic subgroup \(H=\{\alpha^n:n\in\mathbb Z\}\) is finite exactly when \(\alpha\) has finite order, i.e. exactly when \(\alpha\) is a root of unity. Under the hypothesis it is infinite, so step [](#s1-3){.pf-ref} applies.
+The cyclic subgroup \(H=\{\alpha^n:n\in\ZZ\}\) is finite exactly when \(\alpha\) has finite order, i.e. exactly when \(\alpha\) is a root of unity. Under the hypothesis it is infinite, so step [](#s1-3){.pf-ref} applies.
 
 :::
 
@@ -135,7 +135,7 @@ The cyclic subgroup \(H=\{\alpha^n:n\in\mathbb Z\}\) is finite exactly when \(\a
 
 ::: {.pf-step #s1-5}
 
-If \(\mu\) is \(\alpha\)-invariant, then \(\mu\) is invariant under \(R_{\alpha^n}\) for every \(n\in\mathbb Z\).
+If \(\mu\) is \(\alpha\)-invariant, then \(\mu\) is invariant under \(R_{\alpha^n}\) for every \(n\in\ZZ\).
 
 
 ::: pf-proof

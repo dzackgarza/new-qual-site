@@ -25,12 +25,12 @@ audit:
 
 ::: {.problem}
 Let $f, g : X \to [-1,1]$ be measurable functions and $U : L^2(X, \mu) \to L^2(X, \mu)$ be a unitary map such that $UM_fU^{-1} = M_g$.
-Let $\mathcal{H}$ denote the collection of bounded Borel measurable functions $\varphi : [-1,1] \to \mathbb{R}$ such that $UM_{\varphi \circ f}U^{-1} = M_{\varphi \circ g}$.
+Let $\mathcal{H}$ denote the collection of bounded Borel measurable functions $\varphi : [-1,1] \to \RR$ such that $UM_{\varphi \circ f}U^{-1} = M_{\varphi \circ g}$.
 Show:
 
-(a) $\varphi \in \mathcal{H}$ if $\varphi(x) = \sum_{n=0}^{N} \alpha_n x^n$ is a polynomial with $\alpha_n \in \mathbb{R}$.
+(a) $\varphi \in \mathcal{H}$ if $\varphi(x) = \sum_{n=0}^{N} \alpha_n x^n$ is a polynomial with $\alpha_n \in \RR$.
 
-(b) $C([-1,1], \mathbb{R}) \subset \mathcal{H}$.
+(b) $C([-1,1], \RR) \subset \mathcal{H}$.
 
 (c) $\mathcal{H}$ contains all bounded real measurable functions.
 
@@ -107,7 +107,7 @@ UM_{\varphi\circ f}U^{-1}=M_{\varphi\circ g}.
 \]
 Therefore
 \[
-C([-1,1],\mathbb R)\subseteq\mathcal H.
+C([-1,1],\RR)\subseteq\mathcal H.
 \]
 
 :::

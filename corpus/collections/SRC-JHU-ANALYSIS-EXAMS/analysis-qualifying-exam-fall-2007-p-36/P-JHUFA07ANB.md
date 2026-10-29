@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2) Find all entire analytic functions satisfying $| f ( z ) | \leq | e ^ { z } |$ for all $z \in \mathbb { C }$
+2) Find all entire analytic functions satisfying $| f ( z ) | \leq | e ^ { z } |$ for all $z \in \CC$
 :::
 
 ::: {.solution}

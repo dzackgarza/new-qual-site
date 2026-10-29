@@ -102,7 +102,7 @@ is invariant under $A$.
 
 ::: pf-proof
 
-The vectors $v_1,v_2$ are linearly independent, so their orthogonal complement in $\mathbb R^3$ is one-dimensional and equals $L$.
+The vectors $v_1,v_2$ are linearly independent, so their orthogonal complement in $\RR^3$ is one-dimensional and equals $L$.
 
 If $z\in L$, then for $i=1,2$,
 \[
@@ -146,7 +146,7 @@ The eigenvalue corresponding to the vector in step [](#s1-4){.pf-ref} is
 
 ::: pf-proof
 
-Let the third eigenvalue be $\mu$. By step [](#s1-4){.pf-ref}, the three displayed eigenvectors form a basis of $\mathbb R^3$. Hence in that basis the matrix of $A$ is diagonal with diagonal entries
+Let the third eigenvalue be $\mu$. By step [](#s1-4){.pf-ref}, the three displayed eigenvectors form a basis of $\RR^3$. Hence in that basis the matrix of $A$ is diagonal with diagonal entries
 \[
 1,\quad2,\quad\mu.
 \]

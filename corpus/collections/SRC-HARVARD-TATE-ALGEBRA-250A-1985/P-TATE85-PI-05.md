@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-05
 kind: problem
-title: Prime ideals of $\mathbb C[X,Y]$
+title: Prime ideals of $\CC[X,Y]$
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-(5) If C is the field of complex numbers (or any algebraically closed field), apply (4) to$B = \mathbb { C } [ Y ]$to show that the prime ideals$P$in the ring$A = \mathbb { C } [ X , Y ]$are of three distinct types :
+(5) If C is the field of complex numbers (or any algebraically closed field), apply (4) to$B = \CC [ Y ]$to show that the prime ideals$P$in the ring$A = \CC [ X , Y ]$are of three distinct types :
 
 (I)$P = ( 0 )$
 

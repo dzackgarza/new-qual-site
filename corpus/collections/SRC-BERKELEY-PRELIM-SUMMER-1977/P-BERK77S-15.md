@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\subset\mathbb R^n$ be compact, let $x\in A$, and let $(x_i)$ be a sequence in $A$ such that every convergent subsequence of $(x_i)$ converges to $x$.
+Let $A\subset\RR^n$ be compact, let $x\in A$, and let $(x_i)$ be a sequence in $A$ such that every convergent subsequence of $(x_i)$ converges to $x$.
 
 1. Prove that the entire sequence $(x_i)$ converges to $x$.
 2. Give an example showing that if $A$ is not compact, the conclusion in part 1 need not hold.

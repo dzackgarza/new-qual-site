@@ -23,7 +23,7 @@ Show informally that if $\gamma$ is a simple closed curve traveled counterclockw
 
 ::: {.solution}
 
-Assume, as implicit in the statement, that \(f\) is meromorphic on the Riemann sphere and has no pole on \(\gamma\). Let \(I\) be the set of poles of \(f\) in the bounded component of \(\mathbb C\setminus\gamma\), and let \(O\) be the set of all remaining poles on \(\mathbb C^*\), including \(\infty\) when it is a pole.
+Assume, as implicit in the statement, that \(f\) is meromorphic on the Riemann sphere and has no pole on \(\gamma\). Let \(I\) be the set of poles of \(f\) in the bounded component of \(\CC\setminus\gamma\), and let \(O\) be the set of all remaining poles on \(\CC^*\), including \(\infty\) when it is a pole.
 
 ::: pf
 
@@ -57,7 +57,7 @@ The residues on the Riemann sphere satisfy
 
 ::: pf-proof
 
-The total-residue theorem on the Riemann sphere states that the sum of the residues of a meromorphic differential \(f(z)\,dz\) at all points of \(\mathbb C^*\), including \(\infty\), is zero. The sets \(I\) and \(O\) partition those poles because \(\gamma\) contains none of them, so the theorem gives the displayed identity.
+The total-residue theorem on the Riemann sphere states that the sum of the residues of a meromorphic differential \(f(z)\,dz\) at all points of \(\CC^*\), including \(\infty\), is zero. The sets \(I\) and \(O\) partition those poles because \(\gamma\) contains none of them, so the theorem gives the displayed identity.
 
 :::
 

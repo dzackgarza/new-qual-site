@@ -25,16 +25,16 @@ audit:
 ---
 
 ::: {.problem}
-Question 1.2. Fix a measurable function $f : \mathbb { R } ^ { 2 }$ R and, for every $x , y \in \mathbb { R } ,$ , let
+Question 1.2. Fix a measurable function $f : \RR ^ { 2 }$ R and, for every $x , y \in \RR ,$ , let
 
 $$
-f _ { x } : \mathbb { R } \to \mathbb { R } a n d f _ { y } : \mathbb { R } \to \mathbb { R }
+f _ { x } : \RR \to \RR a n d f _ { y } : \RR \to \RR
 $$
 
-be given by $f _ { x } ( z ) = f ( x , z )$ and $f _ { y } ( z ) = f ( z , y )$ . Show that there exists such an f so that $f _ { x } \in L ^ { 1 } ( \mathbb { R } )$ for a.e. x and $f _ { y } \in L ^ { 1 } ( \mathbb { R } )$ for a.e. y but
+be given by $f _ { x } ( z ) = f ( x , z )$ and $f _ { y } ( z ) = f ( z , y )$ . Show that there exists such an f so that $f _ { x } \in L ^ { 1 } ( \RR )$ for a.e. x and $f _ { y } \in L ^ { 1 } ( \RR )$ for a.e. y but
 
 $$
-\int _ { \mathbb { R } } \left( \int _ { \mathbb { R } } f _ { x } ( y ) d y \right) d x \neq \int _ { \mathbb { R } } \left( \int _ { \mathbb { R } } f _ { y } ( x ) d x \right) d y .
+\int _ { \RR } \left( \int _ { \RR } f _ { x } ( y ) d y \right) d x \neq \int _ { \RR } \left( \int _ { \RR } f _ { y } ( x ) d x \right) d y .
 $$
 
 What does Fubini’s theorem imply about such $f ?$ What about Tonelli’s theorem?
@@ -56,7 +56,7 @@ f(x,y)=
 \mathbf1_{(0,1)^2}(x,y)
 \frac{x^2-y^2}{(x^2+y^2)^2},
 \]
-and define $f=0$ on the coordinate axes. This is measurable on $\mathbb R^2$.
+and define $f=0$ on the coordinate axes. This is measurable on $\RR^2$.
 
 For each fixed $x\in(0,1)$,
 \[
@@ -65,11 +65,11 @@ For each fixed $x\in(0,1)$,
 \]
 so
 \[
-\int_{\mathbb R}f_x(y)\,dy
+\int_{\RR}f_x(y)\,dy
 =\int_0^1\frac{x^2-y^2}{(x^2+y^2)^2}\,dy
 =\frac1{1+x^2}.
 \]
-Thus $f_x\in L^1(\mathbb R)$ for every $x\ne0$.
+Thus $f_x\in L^1(\RR)$ for every $x\ne0$.
 
 For each fixed $y\in(0,1)$,
 \[
@@ -78,10 +78,10 @@ For each fixed $y\in(0,1)$,
 \]
 hence
 \[
-\int_{\mathbb R}f_y(x)\,dx
+\int_{\RR}f_y(x)\,dx
 =-\frac1{1+y^2}.
 \]
-Thus $f_y\in L^1(\mathbb R)$ for every $y\ne0$.
+Thus $f_y\in L^1(\RR)$ for every $y\ne0$.
 
 :::
 
@@ -95,13 +95,13 @@ Compute the two iterated integrals.
 
 Therefore
 \[
-\int_{\mathbb R}\left(\int_{\mathbb R}f_x(y)\,dy\right)dx
+\int_{\RR}\left(\int_{\RR}f_x(y)\,dy\right)dx
 =\int_0^1\frac{dx}{1+x^2}
 =\frac\pi4,
 \]
 whereas
 \[
-\int_{\mathbb R}\left(\int_{\mathbb R}f_y(x)\,dx\right)dy
+\int_{\RR}\left(\int_{\RR}f_y(x)\,dx\right)dy
 =-\int_0^1\frac{dy}{1+y^2}
 =-\frac\pi4.
 \]
@@ -117,9 +117,9 @@ Explain what Fubini and Tonelli imply.
 
 ::: pf-proof
 
-Fubini's theorem says that if $f\in L^1(\mathbb R^2)$, then the two iterated integrals must agree. Since they do not, this example necessarily satisfies
+Fubini's theorem says that if $f\in L^1(\RR^2)$, then the two iterated integrals must agree. Since they do not, this example necessarily satisfies
 \[
-f\notin L^1(\mathbb R^2).
+f\notin L^1(\RR^2).
 \]
 
 This can also be seen directly from Tonelli's theorem applied to $|f|$. In polar coordinates in the first quadrant,
@@ -133,7 +133,7 @@ On any angular subinterval where $|\cos(2\theta)|\ge c>0$, the contribution near
 \]
 Hence
 \[
-\iint_{\mathbb R^2}|f(x,y)|\,dx\,dy=\infty.
+\iint_{\RR^2}|f(x,y)|\,dx\,dy=\infty.
 \]
 So Tonelli confirms that absolute integrability fails, exactly as required for the two iterated integrals to differ.
 

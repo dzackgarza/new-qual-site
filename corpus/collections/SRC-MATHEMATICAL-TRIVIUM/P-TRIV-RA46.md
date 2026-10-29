@@ -263,7 +263,7 @@ The integrand
 $$
 \frac{k}{k^2+a^2}
 $$
-is odd, so its symmetric principal value over $\mathbb R$ vanishes.
+is odd, so its symmetric principal value over $\RR$ vanishes.
 
 :::
 

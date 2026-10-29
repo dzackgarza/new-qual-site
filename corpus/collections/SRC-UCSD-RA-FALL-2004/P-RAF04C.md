@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ and $g$ be two real $L^2(\mathbb{R}, m)$-functions.
+Let $f$ and $g$ be two real $L^2(\RR, m)$-functions.
 Show
 $$
-\lim_{n \to \infty} \int_\mathbb{R} f(x) g(x-n) \, dx = 0.
+\lim_{n \to \infty} \int_\RR f(x) g(x-n) \, dx = 0.
 $$
 
-Hint: First prove the result holds if $g \in L^2(\mathbb{R}, m)$ is further assumed to have compact support.
+Hint: First prove the result holds if $g \in L^2(\RR, m)$ is further assumed to have compact support.
 :::
 
 ::: {.solution}
@@ -47,16 +47,16 @@ First assume that $g$ has compact support.
 
 Choose $M>0$ so that $g=0$ almost everywhere outside $[-M,M]$. Then
 \[
-\int_{\mathbb R}f(x)g(x-n)\,dx
+\int_{\RR}f(x)g(x-n)\,dx
 =\int_{n-M}^{n+M}f(x)g(x-n)\,dx.
 \]
 By Cauchy--Schwarz and translation invariance of Lebesgue measure,
 \[
-\left|\int_{\mathbb R}f(x)g(x-n)\,dx\right|
+\left|\int_{\RR}f(x)g(x-n)\,dx\right|
 \le
 \left(\int_{n-M}^{n+M}|f(x)|^2\,dx\right)^{1/2}\|g\|_2.
 \]
-Since $f\in L^2(\mathbb R)$,
+Since $f\in L^2(\RR)$,
 \[
 \int_{n-M}^{n+M}|f(x)|^2\,dx
 \le \int_{n-M}^{\infty}|f(x)|^2\,dx\longrightarrow0.
@@ -77,7 +77,7 @@ Let
 \[
 g_R=g\,\mathbf1_{[-R,R]}.
 \]
-Then $g_R\to g$ in $L^2(\mathbb R)$. For every $n$,
+Then $g_R\to g$ in $L^2(\RR)$. For every $n$,
 \[
 \begin{aligned}
 \left|\int f(x)g(x-n)\,dx\right|
@@ -98,7 +98,7 @@ Given $\varepsilon>0$, choose $R$ so large that this bound is below $\varepsilon
 Thus the limsup of the original correlations is at most $\varepsilon$. Since $\varepsilon$ is arbitrary,
 \[
 \boxed{
-\lim_{n\to\infty}\int_{\mathbb R}f(x)g(x-n)\,dx=0.}
+\lim_{n\to\infty}\int_{\RR}f(x)g(x-n)\,dx=0.}
 \]
 
 :::

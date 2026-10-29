@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF18E
 kind: problem
-title: Subring of $\mathbb{Z}[T]$ missing degree one; fractions, integrality, UFD, generators
+title: Subring of $\ZZ[T]$ missing degree one; fractions, integrality, UFD, generators
 classification:
   areas:
   - algebra
@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let
 \[
-A := \{ a_0 + a_2 T^2 + a_3 T^3 + \cdots + a_n T^n \mid n = 0,2,3,\ldots;\; a_0,a_2,\ldots,a_n \in \mathbb{Z} \}
+A := \{ a_0 + a_2 T^2 + a_3 T^3 + \cdots + a_n T^n \mid n = 0,2,3,\ldots;\; a_0,a_2,\ldots,a_n \in \ZZ \}
 \]
-(no degree one term) be a subring of the ring $\mathbb{Z}[T]$ of polynomials.
+(no degree one term) be a subring of the ring $\ZZ[T]$ of polynomials.
 
 (a) Find the field of fractions of $A$.
 
@@ -37,7 +37,7 @@ A := \{ a_0 + a_2 T^2 + a_3 T^3 + \cdots + a_n T^n \mid n = 0,2,3,\ldots;\; a_0,
 
 (c) Is $A$ a UFD?
 
-(d) Is there $f(T)$ such that $A = \mathbb{Z}[f(T)]$?
+(d) Is there $f(T)$ such that $A = \ZZ[f(T)]$?
 :::
 
 ::: {.solution}
@@ -47,29 +47,29 @@ A := \{ a_0 + a_2 T^2 + a_3 T^3 + \cdots + a_n T^n \mid n = 0,2,3,\ldots;\; a_0,
 ::: {.pf-step #part-a-fraction-field}
 The field of fractions of $A$ is
 \[
-\mathbb Q(T).
+\QQ(T).
 \]
 
 ::: pf-proof
 Since
 \[
-A\subseteq\mathbb Z[T],
+A\subseteq\ZZ[T],
 \]
 we have
 \[
-\operatorname{Frac}(A)\subseteq\mathbb Q(T).
+\operatorname{Frac}(A)\subseteq\QQ(T).
 \]
-Conversely, $\mathbb Z\subseteq A$, so
+Conversely, $\ZZ\subseteq A$, so
 \[
-\mathbb Q\subseteq\operatorname{Frac}(A).
+\QQ\subseteq\operatorname{Frac}(A).
 \]
 Also $T^2,T^3\in A$, and therefore
 \[
 T=\frac{T^3}{T^2}\in\operatorname{Frac}(A).
 \]
-Thus $\mathbb Q(T)\subseteq\operatorname{Frac}(A)$, proving
+Thus $\QQ(T)\subseteq\operatorname{Frac}(A)$, proving
 \[
-\operatorname{Frac}(A)=\mathbb Q(T).
+\operatorname{Frac}(A)=\QQ(T).
 \]
 This answers part (a).
 :::
@@ -129,7 +129,7 @@ Therefore $D$ is integrally closed.
 The ring $A$ is not a UFD.
 
 ::: pf-proof
-The ring $A$ is a domain because it is a subring of the domain $\mathbb Z[T]$.
+The ring $A$ is a domain because it is a subring of the domain $\ZZ[T]$.
 By step [](#part-a-fraction-field){.pf-ref},
 \[
 T\in\operatorname{Frac}(A),
@@ -145,7 +145,7 @@ This answers part (c).
 ::: pf-step
 There is no polynomial $f(T)$ such that
 \[
-A=\mathbb Z[f(T)].
+A=\ZZ[f(T)].
 \]
 
 ::: pf-proof
@@ -155,11 +155,11 @@ Set
 \[
 d:=\deg f\ge1.
 \]
-For every nonconstant polynomial $h(x)\in\mathbb Z[x]$,
+For every nonconstant polynomial $h(x)\in\ZZ[x]$,
 \[
 \deg h(f(T))=(\deg h)d.
 \]
-Since $T^2,T^3\in A=\mathbb Z[f(T)]$, it follows that
+Since $T^2,T^3\in A=\ZZ[f(T)]$, it follows that
 \[
 d\mid2
 \qquad\text{and}\qquad
@@ -169,7 +169,7 @@ Hence
 \[
 d=1.
 \]
-But $f(T)\in\mathbb Z[f(T)]=A$, while no element of $A$ has degree $1$.
+But $f(T)\in\ZZ[f(T)]=A$, while no element of $A$ has degree $1$.
 This contradiction proves that no such $f(T)$ exists, answering part (d).
 :::
 

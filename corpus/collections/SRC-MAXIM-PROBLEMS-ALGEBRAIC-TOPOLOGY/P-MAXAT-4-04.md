@@ -66,7 +66,7 @@ The fibration in step [](#s1-1){.pf-ref} splits up to homotopy:
 
 The connecting map $\Omega\mathbb{CP}^n\to S^1$ induces an isomorphism on $\pi_1$: from the long exact sequence of the Hopf fibration,
 \[
-\pi_2(\mathbb{CP}^n)\cong\pi_1(S^1)\cong\mathbb Z.
+\pi_2(\mathbb{CP}^n)\cong\pi_1(S^1)\cong\ZZ.
 \]
 A loop representing the corresponding generator gives a homotopy section $S^1\to\Omega\mathbb{CP}^n$. The fiber is the H-space $\Omega S^{2n+1}$, and multiplication by the section gives the stated homotopy product decomposition.
 
@@ -82,7 +82,7 @@ The path-loop Serre spectral sequence for
 \]
 gives
 \[
-H^*(\Omega S^{2n+1};\mathbb Z)
+H^*(\Omega S^{2n+1};\ZZ)
 \cong\Gamma_{mathbb Z}(y_{2n}),
 \qquad |y_{2n}|=2n.
 \]
@@ -96,7 +96,7 @@ The total space $PS^{2n+1}$ is contractible. In the cohomology Serre spectral se
 \]
 the divided-power multiplication. Equivalently, this is dual to
 \[
-H_*(\Omega S^{2n+1};\mathbb Z)\cong\mathbb Z[t_{2n}].
+H_*(\Omega S^{2n+1};\ZZ)\cong\ZZ[t_{2n}].
 \]
 
 :::
@@ -108,7 +108,7 @@ H_*(\Omega S^{2n+1};\mathbb Z)\cong\mathbb Z[t_{2n}].
 Hence
 \[
 \boxed{
-H^*(\Omega\mathbb{CP}^n;\mathbb Z)
+H^*(\Omega\mathbb{CP}^n;\ZZ)
 \cong\Lambda_{mathbb Z}(a_1)\otimes
 \Gamma_{mathbb Z}(y_{2n}).}
 \]
@@ -135,7 +135,7 @@ identifies each path component of $\Omega\mathbb{RP}^n$ with a space homotopy eq
 
 The components of a based loop space are indexed by $\pi_1$, so
 \[
-\pi_0(\Omega\mathbb{RP}^n)=\pi_1(\mathbb{RP}^n)=\mathbb Z/2.
+\pi_0(\Omega\mathbb{RP}^n)=\pi_1(\mathbb{RP}^n)=\ZZ/2.
 \]
 Every null-homotopic based loop lifts uniquely to a based loop in the universal cover $S^n$, giving a homeomorphism of the identity component with $\Omega S^n$. Multiplication by any loop representing the nontrivial element of $\pi_1$ is a homotopy equivalence from the identity component to the other component.
 
@@ -148,10 +148,10 @@ Every null-homotopic based loop lifts uniquely to a based loop in the universal 
 Therefore, as a graded ring,
 \[
 \boxed{
-H^*(\Omega\mathbb{RP}^n;\mathbb Z)
+H^*(\Omega\mathbb{RP}^n;\ZZ)
 \cong
-H^*(\Omega S^n;\mathbb Z)\times
-H^*(\Omega S^n;\mathbb Z),
+H^*(\Omega S^n;\ZZ)\times
+H^*(\Omega S^n;\ZZ),
 \qquad n\geq2.}
 \]
 
@@ -168,13 +168,13 @@ Step [](#s1-5){.pf-ref} gives $\Omega\mathbb{RP}^n$ as the disjoint union of two
 
 If $n=2m+1$ is odd, then the component ring has the explicit presentation
 \[
-H^*(\Omega S^{2m+1};\mathbb Z)
+H^*(\Omega S^{2m+1};\ZZ)
 \cong\Gamma_{mathbb Z}(z_{2m}),
 \]
 so
 \[
 \boxed{
-H^*(\Omega\mathbb{RP}^{2m+1};\mathbb Z)
+H^*(\Omega\mathbb{RP}^{2m+1};\ZZ)
 \cong\Gamma(z_{2m})\times\Gamma(z_{2m}).}
 \]
 
@@ -191,7 +191,7 @@ Apply step [](#s1-3){.pf-ref} with $2n+1$ replaced by $2m+1$, then substitute in
 
 For even $n$, the integral component ring is the graded shuffle algebra dual to the tensor Hopf algebra
 \[
-H_*(\Omega S^n;\mathbb Z)\cong T(t_{n-1});
+H_*(\Omega S^n;\ZZ)\cong T(t_{n-1});
 \]
 step [](#s1-6){.pf-ref} remains the complete reduction of the projective-space calculation to the standard sphere-loop calculation.
 
@@ -200,7 +200,7 @@ step [](#s1-6){.pf-ref} remains the complete reduction of the projective-space c
 
 The James--Bott--Samelson calculation gives
 \[
-H_*(\Omega S^n;\mathbb Z)\cong T(\widetilde H_*(S^{n-1};\mathbb Z))=T(t_{n-1}).
+H_*(\Omega S^n;\ZZ)\cong T(\widetilde H_*(S^{n-1};\ZZ))=T(t_{n-1}).
 \]
 The cohomology ring is its graded Hopf dual, whose multiplication is the signed shuffle product. When $n$ is even, $|t|=n-1$ is odd, so the Koszul signs are essential and the ring is not the ordinary divided-power algebra of step [](#s1-7){.pf-ref}.
 

@@ -105,7 +105,7 @@ traverses $S^1$ once.
 If $\alpha$ and $f\circ\alpha$ were homotopic relative to endpoints, composing such a homotopy with $r$ would give a based homotopy between these two loops in $S^1$.
 But the first loop represents $0$ and the second represents $1$ in
 \[
-\pi_1(S^1,\theta_0)\cong\mathbb Z.
+\pi_1(S^1,\theta_0)\cong\ZZ.
 \]
 They therefore cannot be based-homotopic.
 

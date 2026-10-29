@@ -25,34 +25,34 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a Moore space $M(\mathbb{Z}_m, n)$ obtained from $S^n$ by attaching a cell $e^{n+1}$ by a map of degree $m$.
+Let $X$ be a Moore space $M(\ZZ_m, n)$ obtained from $S^n$ by attaching a cell $e^{n+1}$ by a map of degree $m$.
 
-(a) Show that the quotient map $X \to X/S^n = S^{n+1}$ induces the trivial map on $\widetilde{H}_i(-; \mathbb{Z})$ for all $i$, but not on $H^{n+1}(-; \mathbb{Z})$.
+(a) Show that the quotient map $X \to X/S^n = S^{n+1}$ induces the trivial map on $\widetilde{H}_i(-; \ZZ)$ for all $i$, but not on $H^{n+1}(-; \ZZ)$.
 Deduce that the splitting in the universal coefficient theorem for cohomology cannot be natural.
 
-(b) Show that the inclusion $S^n \hookrightarrow X$ induces the trivial map on $\widetilde{H}^i(-; \mathbb{Z})$ for all $i$, but not on $H_n(-; \mathbb{Z})$.
+(b) Show that the inclusion $S^n \hookrightarrow X$ induces the trivial map on $\widetilde{H}^i(-; \ZZ)$ for all $i$, but not on $H_n(-; \ZZ)$.
 :::
 
 ::: {.solution}
 The cellular chain complex of
 \[
-X=M(\mathbb Z_m,n)=S^n\cup_m e^{n+1}
+X=M(\ZZ_m,n)=S^n\cup_m e^{n+1}
 \]
 in the two relevant degrees is
 \[
-0\to\mathbb Z\xrightarrow{\,m\,}\mathbb Z\to0.
+0\to\ZZ\xrightarrow{\,m\,}\ZZ\to0.
 \]
 Hence
 \[
-\widetilde H_n(X;\mathbb Z)=\mathbb Z_m,
+\widetilde H_n(X;\ZZ)=\ZZ_m,
 \qquad
-\widetilde H_i(X;\mathbb Z)=0\quad(i\ne n),
+\widetilde H_i(X;\ZZ)=0\quad(i\ne n),
 \]
 while the cellular cochain complex gives
 \[
-\widetilde H^{n+1}(X;\mathbb Z)=\mathbb Z_m,
+\widetilde H^{n+1}(X;\ZZ)=\ZZ_m,
 \qquad
-\widetilde H^i(X;\mathbb Z)=0\quad(i\ne n+1).
+\widetilde H^i(X;\ZZ)=0\quad(i\ne n+1).
 \]
 
 ::: pf
@@ -77,14 +77,14 @@ The sphere has reduced homology only in degree $n+1$, but $\widetilde H_{n+1}(X)
 
 Nevertheless
 \[
-q^*:H^{n+1}(S^{n+1};\mathbb Z)=\mathbb Z
-\longrightarrow H^{n+1}(X;\mathbb Z)=\mathbb Z_m
+q^*:H^{n+1}(S^{n+1};\ZZ)=\ZZ
+\longrightarrow H^{n+1}(X;\ZZ)=\ZZ_m
 \]
 is reduction modulo $m$, hence is nonzero.
 
 ::: pf-proof
 
-On cellular cochains, the quotient identifies the unique $(n+1)$-cell of $X$ with the top cell of $S^{n+1}$. Thus the cochain map in degree $n+1$ is the identity $\mathbb Z\to\mathbb Z$ before passing to cohomology. The target cohomology is the cokernel of multiplication by $m$, so the induced map is the quotient $\mathbb Z\to\mathbb Z_m$.
+On cellular cochains, the quotient identifies the unique $(n+1)$-cell of $X$ with the top cell of $S^{n+1}$. Thus the cochain map in degree $n+1$ is the identity $\ZZ\to\ZZ$ before passing to cohomology. The target cohomology is the cokernel of multiplication by $m$, so the induced map is the quotient $\ZZ\to\ZZ_m$.
 
 :::
 
@@ -122,13 +122,13 @@ The only nonzero reduced cohomology of $X$ is in degree $n+1$, while the sphere 
 
 But
 \[
-i_*:H_n(S^n;\mathbb Z)=\mathbb Z\to H_n(X;\mathbb Z)=\mathbb Z_m
+i_*:H_n(S^n;\ZZ)=\ZZ\to H_n(X;\ZZ)=\ZZ_m
 \]
 is reduction modulo $m$, hence nonzero.
 
 ::: pf-proof
 
-The $n$-cell of the sphere is the $n$-cell of $X$. Passing from the cellular chain group to $H_n(X)$ quotients by the image $m\mathbb Z$ of the $(n+1)$-cell boundary. Thus $i_*$ is the quotient map $\mathbb Z\to\mathbb Z_m$.
+The $n$-cell of the sphere is the $n$-cell of $X$. Passing from the cellular chain group to $H_n(X)$ quotients by the image $m\ZZ$ of the $(n+1)$-cell boundary. Thus $i_*$ is the quotient map $\ZZ\to\ZZ_m$.
 
 :::
 

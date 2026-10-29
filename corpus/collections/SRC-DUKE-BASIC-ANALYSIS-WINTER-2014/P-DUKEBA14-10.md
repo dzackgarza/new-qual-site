@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there exists $f\in C([0,1],\mathbb R)$ satisfying
+Prove that there exists $f\in C([0,1],\RR)$ satisfying
 \[
 f(x)=\frac1{1066}\int_0^x e^{-s^2x^2}f(s)^2\,ds+\sin(2013x).
 \]

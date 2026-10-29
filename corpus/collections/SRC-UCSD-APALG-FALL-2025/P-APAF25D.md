@@ -13,29 +13,29 @@ review: draft
 ---
 
 ::: {.problem}
-Given $n\geq 1$ and $\|\cdot\|$ a matrix norm of $M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ that is consistent (meaning $\|AB\|\leq\|A\|\|B\|$), let $A\in M_n(\mathbb{C})$.
+Given $n\geq 1$ and $\|\cdot\|$ a matrix norm of $M_n(\CC)=\CC^{n\times n}$ that is consistent (meaning $\|AB\|\leq\|A\|\|B\|$), let $A\in M_n(\CC)$.
 
-(a) Find a vector norm $\|\cdot\|_0$ of $\mathbb{C}^n$ that is compatible with $\|\cdot\|$ (meaning $\|Ax\|_0\leq\|A\|\|x\|_0$).
+(a) Find a vector norm $\|\cdot\|_0$ of $\CC^n$ that is compatible with $\|\cdot\|$ (meaning $\|Ax\|_0\leq\|A\|\|x\|_0$).
 
 (b) Prove, for all eigenvalues $\lambda$ of $A$, that $|\lambda|\leq\|A\|$.
 :::
 
 ::: {.solution}
 
-Fix the first standard basis vector \(e_1\in\mathbb C^n\), regarded as a column vector, and define
+Fix the first standard basis vector \(e_1\in\CC^n\), regarded as a column vector, and define
 \[
 \|x\|_0:=\|x e_1^H\|
-\qquad(x\in\mathbb C^n).
+\qquad(x\in\CC^n).
 \]
-Here \(xe_1^H\in M_n(\mathbb C)\) is the matrix whose first column is \(x\) and whose remaining columns are zero.
+Here \(xe_1^H\in M_n(\CC)\) is the matrix whose first column is \(x\) and whose remaining columns are zero.
 
 ::: pf
 
 ::: pf-step
-The function \(\|\cdot\|_0\) is a vector norm on \(\mathbb C^n\).
+The function \(\|\cdot\|_0\) is a vector norm on \(\CC^n\).
 
 ::: pf-proof
-For \(x,y\in\mathbb C^n\) and \(c\in\mathbb C\), the matrix norm axioms give
+For \(x,y\in\CC^n\) and \(c\in\CC\), the matrix norm axioms give
 \[
 \|x+y\|_0
 =\|(x+y)e_1^H\|
@@ -58,7 +58,7 @@ Also \(\|x\|_0\ge0\). Finally, if \(\|x\|_0=0\), then \(xe_1^H=0\) because a mat
 The vector norm \(\|\cdot\|_0\) is compatible with the given matrix norm:
 \[
 \|Ax\|_0\le \|A\|\,\|x\|_0
-\qquad(A\in M_n(\mathbb C),\ x\in\mathbb C^n).
+\qquad(A\in M_n(\CC),\ x\in\CC^n).
 \]
 
 ::: pf-proof
@@ -82,7 +82,7 @@ Every eigenvalue \(\lambda\) of \(A\) satisfies
 \]
 
 ::: pf-proof
-Let \(0\ne x\in\mathbb C^n\) be an eigenvector with \(Ax=\lambda x\). By step [](#norm0-is-compatible){.pf-ref},
+Let \(0\ne x\in\CC^n\) be an eigenvector with \(Ax=\lambda x\). By step [](#norm0-is-compatible){.pf-ref},
 \[
 |\lambda|\,\|x\|_0
 =\|\lambda x\|_0

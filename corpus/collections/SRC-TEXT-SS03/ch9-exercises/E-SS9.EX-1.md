@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Suppose that a meromorphic function $f$ has two periods $\omega _ { 1 }$ and $\omega _ { 2 }$ , with $\omega _ { 2 } / \omega _ { 1 } \in \mathbb { R }$
+1. Suppose that a meromorphic function $f$ has two periods $\omega _ { 1 }$ and $\omega _ { 2 }$ , with $\omega _ { 2 } / \omega _ { 1 } \in \RR$
 
 (a) Suppose $\omega _ { 2 } / \omega _ { 1 }$ is rational, say equal to $p / q ,$ , where $p$ and $q$ are relatively prime integers.
 Prove that as a result the periodicity assumption is equivalent to the assumption that $f$ is periodic with the simple period $\begin{array} { r } { \omega _ { 0 } = \frac { 1 } { q } \omega _ { 1 } } \end{array}$ [Hint: Since p and q are relatively prime, there exist integers m and n such that $m q + n p = 1$ (Corollary 1.3, Chapter 8, Book I).]
@@ -28,7 +28,7 @@ To prove this, use the fact that $\{ m - n \tau \}$ is dense in R whenever $\tau
 :::
 
 ::: {.solution}
-Write $\tau=\omega_2/\omega_1\in\mathbb R$.
+Write $\tau=\omega_2/\omega_1\in\RR$.
 
 For (a), suppose $\tau=p/q$ with $(p,q)=1$. If $f$ has period $\omega_0=\omega_1/q$, then both
 \[
@@ -49,15 +49,15 @@ Integer linear combinations of periods are periods, so $\omega_0$ is a period. T
 
 For (b), suppose $\tau$ is irrational. The additive subgroup
 \[
-G=\{m-n\tau:m,n\in\mathbb Z\}
+G=\{m-n\tau:m,n\in\ZZ\}
 \]
-is dense in $\mathbb R$. Hence there is a sequence of nonzero periods
+is dense in $\RR$. Hence there is a sequence of nonzero periods
 \[
 h_j=(m_j-n_j\tau)\omega_1\longrightarrow0.
 \]
 A meromorphic function cannot have a pole: if $p$ were a pole, then every $p+h_j$ would also be a pole, producing distinct poles accumulating at $p$, contrary to isolatedness of poles. Thus $f$ is entire.
 
-For every $z\in\mathbb C$,
+For every $z\in\CC$,
 \[
 f'(z)=\lim_{j\to\infty}\frac{f(z+h_j)-f(z)}{h_j}=0,
 \]

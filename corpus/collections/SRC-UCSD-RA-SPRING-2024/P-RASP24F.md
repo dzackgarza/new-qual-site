@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^2(\mathbb{R}^n)$ be such that $f(x) = 0$ for a.e. $x \in \mathbb{R}^n \setminus A$, where $m(A) < \infty$.
-Show that, for any measurable $E \subset \mathbb{R}^n$,
+Let $f \in L^2(\RR^n)$ be such that $f(x) = 0$ for a.e. $x \in \RR^n \setminus A$, where $m(A) < \infty$.
+Show that, for any measurable $E \subset \RR^n$,
 $$
 \int_E |\hat{f}(\xi)|^2\,d\xi \leq m(A)\,m(E)\,\|f\|_{L^2}^2.
 $$
@@ -38,10 +38,10 @@ Since $f=0$ almost everywhere outside $A$ and $m(A)<\infty$, Cauchy--Schwarz giv
 =\int_A|f(x)|\,dx
 \le m(A)^{1/2}\|f\|_2.
 \]
-Thus $f\in L^1(\mathbb R^n)$, so its Fourier transform is defined pointwise by the Fourier integral. For every $\xi\in\mathbb R^n$,
+Thus $f\in L^1(\RR^n)$, so its Fourier transform is defined pointwise by the Fourier integral. For every $\xi\in\RR^n$,
 \[
 |\widehat f(\xi)|
-\le \int_{\mathbb R^n}|f(x)|\,dx
+\le \int_{\RR^n}|f(x)|\,dx
 =\|f\|_1
 \le m(A)^{1/2}\|f\|_2.
 \]

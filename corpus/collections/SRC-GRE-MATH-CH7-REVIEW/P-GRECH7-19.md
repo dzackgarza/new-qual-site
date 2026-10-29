@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH7-19
 kind: problem
-title: Which product of intervals is closed in $\mathbb{R}^2$
+title: Which product of intervals is closed in $\RR^2$
 classification:
   areas: [topology]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Which of the following sets in $\mathbb{R}^2$ is closed?
+Which of the following sets in $\RR^2$ is closed?
 
 (A) $(2, 5) \times (1, 3)$
 (B) $(2, 5] \times [1, 3)$

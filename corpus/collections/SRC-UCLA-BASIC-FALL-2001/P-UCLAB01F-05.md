@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R^2\to\mathbb R$ is continuous, the first partial derivatives
+Suppose $f:\RR^2\to\RR$ is continuous, the first partial derivatives
 \[
 \frac{\partial f}{\partial x},\qquad \frac{\partial f}{\partial y}
 \]
@@ -33,12 +33,12 @@ Prove that
 =
 \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)
 \]
-at every point of $\mathbb R^2$.
+at every point of $\RR^2$.
 :::
 
 ::: {.solution}
 
-Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, set
+Fix $(a,b)\in\RR^2$. For nonzero $h,k$, set
 \[
 D(h,k)=f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
 \]
@@ -132,12 +132,12 @@ As $(h,k)\to(0,0)$, both intermediate points tend to $(a,b)$. Continuity of the 
 
 ::: {.pf-step #s1-4}
 
-The mixed partial derivatives agree at every point of $\mathbb R^2$.
+The mixed partial derivatives agree at every point of $\RR^2$.
 
 
 ::: pf-proof
 
-The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} holds throughout $\mathbb R^2$.
+The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} holds throughout $\RR^2$.
 
 :::
 

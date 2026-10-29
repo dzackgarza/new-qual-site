@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A linear transformation is given by the matrix $e ^ { A }$ in some basis in $\mathbb { R } ^ { n }$ . Consider the change of the basis determined by the transition matrix U. Find the matrix of the transformation in the new basis.
+A linear transformation is given by the matrix $e ^ { A }$ in some basis in $\RR ^ { n }$ . Consider the change of the basis determined by the transition matrix U. Find the matrix of the transformation in the new basis.
 :::
 
 ::: {.solution}

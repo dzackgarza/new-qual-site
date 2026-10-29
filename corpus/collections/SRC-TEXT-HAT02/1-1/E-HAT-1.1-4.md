@@ -27,8 +27,8 @@ audit:
 ---
 
 ::: {.problem}
-A subspace $X \subset \mathbb{R}^n$ is said to be star-shaped if there is a point $x_0 \in X$ such that, for each $x \in X$, the line segment from $x_0$ to $x$ lies in $X$.
-Show that if a subspace $X \subset \mathbb{R}^n$ is locally star-shaped, in the sense that every point of $X$ has a star-shaped neighborhood in $X$, then every path in $X$ is homotopic in $X$ to a piecewise linear path, that is, a path consisting of a finite number of straight line segments traversed at constant speed.
+A subspace $X \subset \RR^n$ is said to be star-shaped if there is a point $x_0 \in X$ such that, for each $x \in X$, the line segment from $x_0$ to $x$ lies in $X$.
+Show that if a subspace $X \subset \RR^n$ is locally star-shaped, in the sense that every point of $X$ has a star-shaped neighborhood in $X$, then every path in $X$ is homotopic in $X$ to a piecewise linear path, that is, a path consisting of a finite number of straight line segments traversed at constant speed.
 Show this applies in particular when $X$ is open or when $X$ is a union of finitely many closed convex sets.
 :::
 
@@ -66,7 +66,7 @@ Then each interval $[t_{i-1},t_i]$ is contained in some $\gamma^{-1}(V_x)$, givi
 
 ::: {.pf-step #s2}
 
-If $V\subseteq\mathbb R^n$ is star-shaped and $a,b\in V$, then every path in $V$ from $a$ to $b$ is homotopic relative to its endpoints to a piecewise linear path from $a$ to $b$.
+If $V\subseteq\RR^n$ is star-shaped and $a,b\in V$, then every path in $V$ from $a$ to $b$ is homotopic relative to its endpoints to a piecewise linear path from $a$ to $b$.
 
 ::: pf-proof
 
@@ -116,7 +116,7 @@ which consists of finitely many straight line segments and is therefore piecewis
 
 ::: {.pf-step #s4}
 
-Every open subspace $X\subseteq\mathbb R^n$ is locally star-shaped.
+Every open subspace $X\subseteq\RR^n$ is locally star-shaped.
 
 ::: pf-proof
 
@@ -132,7 +132,7 @@ The ball $B(x,r)$ is convex, hence star-shaped, and is a neighborhood of $x$ in 
 
 ::: {.pf-step #s5}
 
-A finite union of closed convex subsets of $\mathbb R^n$ is locally star-shaped.
+A finite union of closed convex subsets of $\RR^n$ is locally star-shaped.
 
 ::: pf-proof
 
@@ -165,7 +165,7 @@ Therefore $X\cap B(x,r)$ is star-shaped with center $x$.
 
 ::: pf-step
 
-Hence the conclusion applies both to open subsets of $\mathbb R^n$ and to finite unions of closed convex subsets.
+Hence the conclusion applies both to open subsets of $\RR^n$ and to finite unions of closed convex subsets.
 
 ::: pf-proof
 

@@ -145,7 +145,7 @@ Combine the estimates.
 Steps 1--4 give, for every $p>1$,
 \[
 \boxed{
-\sum_{k\in\mathbb Z}|\widehat f(k)|
+\sum_{k\in\ZZ}|\widehat f(k)|
 \le \|f\|_{L^1}+C_p\|f'\|_{L^p}.}
 \]
 The constant $C_p$ depends only on $p$ and the Fourier normalization.

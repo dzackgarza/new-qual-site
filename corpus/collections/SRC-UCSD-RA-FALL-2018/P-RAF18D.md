@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1([0,1], m)$, $m^2$ be Lebesgue measure on $\mathbb{R}^2$, and
+Let $f \in L^1([0,1], m)$, $m^2$ be Lebesgue measure on $\RR^2$, and
 $$
 A_\varepsilon = \{(x,y) \in [0,1] \times [0,1] : |x - y| \leq \varepsilon\} \quad \text{for all } \varepsilon > 0.
 $$
@@ -84,13 +84,13 @@ Rewrite the thin-strip integral using translations.
 
 ::: pf-proof
 
-Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f\in L^1(\mathbb R)$. With $h=y-x$, the original domain is contained in the set $|h|\le\varepsilon$, so
+Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f\in L^1(\RR)$. With $h=y-x$, the original domain is contained in the set $|h|\le\varepsilon$, so
 \[
 \begin{aligned}
 \int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy
 &\le
 \int_{-\varepsilon}^{\varepsilon}
-\int_{\mathbb R}|f(x)-f(x+h)|\,dx\,dh\\
+\int_{\RR}|f(x)-f(x+h)|\,dx\,dh\\
 &=
 \int_{-\varepsilon}^{\varepsilon}
 \|\tau_hf-f\|_1\,dh,

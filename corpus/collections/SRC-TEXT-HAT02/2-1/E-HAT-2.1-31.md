@@ -28,7 +28,7 @@ audit:
 
 ::: {.problem}
 Using the notation of the five-lemma, give an example where the maps $\alpha, \beta, \delta$, and $\varepsilon$ are zero but $\gamma$ is nonzero.
-This can be done with short exact sequences in which all the groups are either $\mathbb{Z}$ or $0$.
+This can be done with short exact sequences in which all the groups are either $\ZZ$ or $0$.
 :::
 
 ::: {.solution}
@@ -42,22 +42,22 @@ A'&\longrightarrow&B'&\longrightarrow&C'&\longrightarrow&D'&\longrightarrow&E'.
 \]
 Take the upper exact sequence to be
 \[
-0\longrightarrow0\longrightarrow\mathbb Z
-\xrightarrow{\operatorname{id}}\mathbb Z\longrightarrow0
+0\longrightarrow0\longrightarrow\ZZ
+\xrightarrow{\operatorname{id}}\ZZ\longrightarrow0
 \]
 and the lower exact sequence to be
 \[
-0\longrightarrow\mathbb Z
-\xrightarrow{\operatorname{id}}\mathbb Z
+0\longrightarrow\ZZ
+\xrightarrow{\operatorname{id}}\ZZ
 \longrightarrow0\longrightarrow0.
 \]
 Thus
 \[
-(A,B,C,D,E)=(0,0,\mathbb Z,\mathbb Z,0)
+(A,B,C,D,E)=(0,0,\ZZ,\ZZ,0)
 \]
 and
 \[
-(A',B',C',D',E')=(0,\mathbb Z,\mathbb Z,0,0).
+(A',B',C',D',E')=(0,\ZZ,\ZZ,0,0).
 \]
 Define
 \[
@@ -65,7 +65,7 @@ Define
 \qquad
 \beta=0,
 \qquad
-\gamma=\operatorname{id}_{\mathbb Z},
+\gamma=\operatorname{id}_{\ZZ},
 \qquad
 \delta=0,
 \qquad
@@ -80,7 +80,7 @@ Both rows are exact.
 
 ::: pf-proof
 
-In the upper row, exactness is immediate at the zero groups, while at the two copies of $\mathbb Z$ it follows because the middle map is the identity. In the lower row the same argument applies to the identity map $\mathbb Z\to\mathbb Z$.
+In the upper row, exactness is immediate at the zero groups, while at the two copies of $\ZZ$ it follows because the middle map is the identity. In the lower row the same argument applies to the identity map $\ZZ\to\ZZ$.
 
 :::
 
@@ -92,7 +92,7 @@ The diagram commutes.
 
 ::: pf-proof
 
-Every square involving one of $\alpha,\beta,\delta,\varepsilon$ has both composites equal to zero. For the square containing $\gamma$, the upper map into $C$ is the zero map $0\to\mathbb Z$, so both composites there are zero; for the square leaving $C$, the lower map $C'\to D'$ is zero, so both composites are again zero.
+Every square involving one of $\alpha,\beta,\delta,\varepsilon$ has both composites equal to zero. For the square containing $\gamma$, the upper map into $C$ is the zero map $0\to\ZZ$, so both composites there are zero; for the square leaving $C$, the lower map $C'\to D'$ is zero, so both composites are again zero.
 
 :::
 
@@ -110,7 +110,7 @@ By construction
 \]
 whereas
 \[
-\gamma=\operatorname{id}_{\mathbb Z}\ne0.
+\gamma=\operatorname{id}_{\ZZ}\ne0.
 \]
 
 :::
@@ -119,5 +119,5 @@ whereas
 
 :::
 
-This gives the requested example using only the groups $\mathbb Z$ and $0$.
+This gives the requested example using only the groups $\ZZ$ and $0$.
 :::

@@ -25,11 +25,11 @@ Give the definition of a cycle.
 
 ::: {.pf-step #s1-1}
 
-In the contour-integration setting, a cycle in an open set \(U\subseteq\mathbb C\) is a finite formal integer linear combination
+In the contour-integration setting, a cycle in an open set \(U\subseteq\CC\) is a finite formal integer linear combination
 \[
 \boxed{\Gamma=\sum_{j=1}^N n_j\gamma_j}
 \]
-where \(n_j\in\mathbb Z\) and each \(\gamma_j:[a_j,b_j]\to U\) is a closed piecewise \(C^1\) curve:
+where \(n_j\in\ZZ\) and each \(\gamma_j:[a_j,b_j]\to U\) is a closed piecewise \(C^1\) curve:
 \[
 \gamma_j(a_j)=\gamma_j(b_j).
 \]

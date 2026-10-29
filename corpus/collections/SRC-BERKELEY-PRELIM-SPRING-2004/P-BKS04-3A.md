@@ -35,9 +35,9 @@ Prove that if
 \[
 m\le r_1+\cdots+r_n+1,
 \]
-then there exists a rational function $F(z)\in\mathbb C(z)$ satisfying all of the following:
+then there exists a rational function $F(z)\in\CC(z)$ satisfying all of the following:
 
-1. $F(z)$ is holomorphic at $\infty$ and everywhere in $\mathbb C$ except possibly at $a_1,\ldots,a_n$.
+1. $F(z)$ is holomorphic at $\infty$ and everywhere in $\CC$ except possibly at $a_1,\ldots,a_n$.
 
 2. $\operatorname{ord}_{z=a_i}F(z)\ge -r_i$.
 

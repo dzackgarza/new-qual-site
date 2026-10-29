@@ -82,7 +82,7 @@ Hence the attaching loop of the $2$-cell is $aa^{-1}$.
 
 The fundamental group is
 \[
-\boxed{\pi_1(X)\cong\mathbb Z}.
+\boxed{\pi_1(X)\cong\ZZ}.
 \]
 
 ::: pf-proof
@@ -101,7 +101,7 @@ Seifert--van Kampen therefore gives
 \cong
 \langle a\rangle
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -114,11 +114,11 @@ The cellular chain complex of $X$ is
 \[
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\ 0\ }
-\mathbb Z
+\ZZ
 \xrightarrow{\ 0\ }
-\mathbb Z
+\ZZ
 \longrightarrow0.
 \]
 
@@ -147,10 +147,10 @@ Thus $\partial_2=0$.
 The homology groups are
 \[
 \boxed{
-H_k(X;\mathbb Z)
+H_k(X;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,1,2,\\
+\ZZ,&k=0,1,2,\\
 0,&k>2.
 \end{cases}}
 \]
@@ -160,11 +160,11 @@ H_k(X;\mathbb Z)
 All differentials in the cellular chain complex from step [](#s3){.pf-ref} vanish.
 Hence
 \[
-H_2(X)\cong\mathbb Z,
+H_2(X)\cong\ZZ,
 \qquad
-H_1(X)\cong\mathbb Z,
+H_1(X)\cong\ZZ,
 \qquad
-H_0(X)\cong\mathbb Z.
+H_0(X)\cong\ZZ.
 \]
 There are no cells above dimension $2$.
 

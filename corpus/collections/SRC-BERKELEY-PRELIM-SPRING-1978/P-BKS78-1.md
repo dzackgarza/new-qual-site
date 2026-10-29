@@ -13,16 +13,16 @@ audit:
 ::: {.problem}
 Let $k\ge0$ be an integer and define
 \[
-f_n(x)=\frac{x^k}{x^2+n},\qquad x\in\mathbb R,\quad n=1,2,\ldots.
+f_n(x)=\frac{x^k}{x^2+n},\qquad x\in\RR,\quad n=1,2,\ldots.
 \]
-For which values of $k$ does $(f_n)$ converge uniformly on $\mathbb R$? For which values does it converge uniformly on every bounded subset of $\mathbb R$?
+For which values of $k$ does $(f_n)$ converge uniformly on $\RR$? For which values does it converge uniformly on every bounded subset of $\RR$?
 :::
 
 ::: {.solution}
 ::: pf
 
 ::: pf-step
-For every integer $k\geq0$ and every fixed $x\in\mathbb R$,
+For every integer $k\geq0$ and every fixed $x\in\RR$,
 $$
 f_n(x)\longrightarrow0.
 $$
@@ -41,10 +41,10 @@ $$
 :::
 
 ::: {.pf-step #bounded-subsets}
-For every $k\geq0$, the convergence $f_n\to0$ is uniform on every bounded subset of $\mathbb R$.
+For every $k\geq0$, the convergence $f_n\to0$ is uniform on every bounded subset of $\RR$.
 
 ::: pf-proof
-Let $S\subseteq\mathbb R$ be bounded. Choose $M\geq1$ such that
+Let $S\subseteq\RR$ be bounded. Choose $M\geq1$ such that
 $$
 |x|\leq M
 $$
@@ -68,7 +68,7 @@ $$
 :::
 
 ::: {.pf-step #case-zero}
-For $k=0$, the convergence is uniform on $\mathbb R$.
+For $k=0$, the convergence is uniform on $\RR$.
 
 ::: pf-proof
 One has
@@ -79,9 +79,9 @@ $$
 \leq
 \frac1n
 $$
-for every $x\in\mathbb R$. Hence
+for every $x\in\RR$. Hence
 $$
-\sup_{x\in\mathbb R}|f_n(x)|
+\sup_{x\in\RR}|f_n(x)|
 =
 \frac1n
 \longrightarrow0.
@@ -93,11 +93,11 @@ $$
 ::: {.pf-step #case-one}
 For $k=1$,
 $$
-\sup_{x\in\mathbb R}|f_n(x)|
+\sup_{x\in\RR}|f_n(x)|
 =
 \frac1{2\sqrt n},
 $$
-so the convergence is uniform on $\mathbb R$.
+so the convergence is uniform on $\RR$.
 
 ::: pf-proof
 Because the expression is even after taking absolute values, set $t=|x|\geq0$ and consider
@@ -124,7 +124,7 @@ This tends to $0$.
 :::
 
 ::: {.pf-step #case-two}
-For $k=2$, the convergence is not uniform on $\mathbb R$.
+For $k=2$, the convergence is not uniform on $\RR$.
 
 ::: pf-proof
 One has
@@ -137,7 +137,7 @@ $$
 $$
 Hence
 $$
-\sup_{x\in\mathbb R}|f_n(x)|=1
+\sup_{x\in\RR}|f_n(x)|=1
 $$
 for every $n$, so the suprema do not tend to $0$.
 :::
@@ -145,7 +145,7 @@ for every $n$, so the suprema do not tend to $0$.
 :::
 
 ::: {.pf-step #case-greater-than-two}
-For every $k>2$, the convergence is not uniform on $\mathbb R$.
+For every $k>2$, the convergence is not uniform on $\RR$.
 
 ::: pf-proof
 For fixed $n$,
@@ -160,9 +160,9 @@ as $|x|\to\infty$. Since $k-2>0$,
 $$
 |f_n(x)|\longrightarrow\infty.
 $$
-Thus $f_n$ is unbounded on $\mathbb R$ for every $n$, and in particular
+Thus $f_n$ is unbounded on $\RR$ for every $n$, and in particular
 $$
-\sup_{x\in\mathbb R}|f_n(x)|\neq\longrightarrow0.
+\sup_{x\in\RR}|f_n(x)|\neq\longrightarrow0.
 $$
 :::
 
@@ -172,7 +172,7 @@ $$
 Therefore
 $$
 \boxed{
-\text{$f_n\to0$ uniformly on $\mathbb R$ exactly for $k=0,1$}
+\text{$f_n\to0$ uniformly on $\RR$ exactly for $k=0,1$}
 }
 $$
 and
@@ -183,7 +183,7 @@ $$
 $$
 
 ::: pf-proof
-[](#case-zero){.pf-ref}, [](#case-one){.pf-ref}, [](#case-two){.pf-ref}, and [](#case-greater-than-two){.pf-ref} classify uniform convergence on $\mathbb R$, and [](#bounded-subsets){.pf-ref} handles every bounded subset.
+[](#case-zero){.pf-ref}, [](#case-one){.pf-ref}, [](#case-two){.pf-ref}, and [](#case-greater-than-two){.pf-ref} classify uniform convergence on $\RR$, and [](#bounded-subsets){.pf-ref} handles every bounded subset.
 :::
 
 :::

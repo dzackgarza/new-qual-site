@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb C)$ have $n$ distinct eigenvalues.
-Prove that if $B\in M_n(\mathbb C)$ satisfies $AB=BA$, then $B$ is diagonalizable.
+Let $A\in M_n(\CC)$ have $n$ distinct eigenvalues.
+Prove that if $B\in M_n(\CC)$ satisfies $AB=BA$, then $B$ is diagonalizable.
 :::
 
 ::: {.solution}
@@ -81,12 +81,12 @@ The list
 \[
 v_1,\ldots,v_n
 \]
-is a basis of $\mathbb C^n$.
+is a basis of $\CC^n$.
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, it is a linearly independent list of $n$ vectors in the $n$-dimensional space $\mathbb C^n$.
+By step [](#s1-1){.pf-ref}, it is a linearly independent list of $n$ vectors in the $n$-dimensional space $\CC^n$.
 Therefore it is a basis.
 
 :::
@@ -162,7 +162,7 @@ Bv\in E_{\lambda_j}.
 
 For each $j$, there exists
 \[
-\mu_j\in\mathbb C
+\mu_j\in\CC
 \]
 such that
 \[

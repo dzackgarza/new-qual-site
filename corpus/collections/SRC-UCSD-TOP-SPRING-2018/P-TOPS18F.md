@@ -36,22 +36,22 @@ Write the suspension as the union of its two open cones. Each cone is contractib
 
 ::: {.pf-step #reduced-homology-shift}
 Suspension shifts reduced homology:
-$$\widetilde H_i(X;\mathbb Z)\cong\widetilde H_{i-1}(M;\mathbb Z).$$
+$$\widetilde H_i(X;\ZZ)\cong\widetilde H_{i-1}(M;\ZZ).$$
 Thus
-$$\boxed{H_i(X;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,4,\\
+$$\boxed{H_i(X;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,4,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 
 ::: pf-proof
-A homology $3$-sphere has reduced integral homology $\mathbb Z$ only in degree $3$. Apply the suspension isomorphism.
+A homology $3$-sphere has reduced integral homology $\ZZ$ only in degree $3$. Apply the suspension isomorphism.
 :::
 
 :::
 
 ::: {.pf-step #hurewicz-3-connected}
 The space $X$ is $3$-connected and the Hurewicz map
-$$\pi_4(X)\xrightarrow{\cong}H_4(X;\mathbb Z)\cong\mathbb Z$$
+$$\pi_4(X)\xrightarrow{\cong}H_4(X;\ZZ)\cong\ZZ$$
 is an isomorphism.
 
 ::: pf-proof

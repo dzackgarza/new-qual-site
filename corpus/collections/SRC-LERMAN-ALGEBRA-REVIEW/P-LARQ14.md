@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LARQ14
 kind: problem
-title: Evaluation at $2$ identifies $\mathbb R[x]/(x-2)$ with $\mathbb R$
+title: Evaluation at $2$ identifies $\RR[x]/(x-2)$ with $\RR$
 classification:
   areas: [algebra]
   topics: [Ring Theory]
@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R[x]/(x-2)\cong\mathbb R$ as rings.
+Prove that $\RR[x]/(x-2)\cong\RR$ as rings.
 :::
 
 ::: {.solution}
@@ -38,11 +38,11 @@ Evaluation at $2$ has kernel $(x-2)$ and is surjective.
 
 Define
 $$
-\Phi:\mathbb R[x]\to\mathbb R,
+\Phi:\RR[x]\to\RR,
 \qquad
 \Phi(f)=f(2).
 $$
-Evaluation preserves addition and multiplication, so $\Phi$ is a ring homomorphism. It is surjective because every $c\in\mathbb R$ is the image of the constant polynomial $c$.
+Evaluation preserves addition and multiplication, so $\Phi$ is a ring homomorphism. It is surjective because every $c\in\RR$ is the image of the constant polynomial $c$.
 
 By the factor theorem,
 $$
@@ -65,12 +65,12 @@ The first isomorphism theorem gives the desired ring isomorphism.
 
 ::: pf-proof
 
-Since $\operatorname{im}\Phi=\mathbb R$ and $\ker\Phi=(x-2)$,
+Since $\operatorname{im}\Phi=\RR$ and $\ker\Phi=(x-2)$,
 $$
-\mathbb R[x]/(x-2)
-=\mathbb R[x]/\ker\Phi
+\RR[x]/(x-2)
+=\RR[x]/\ker\Phi
 \cong\operatorname{im}\Phi
-=\mathbb R.
+=\RR.
 $$
 
 :::

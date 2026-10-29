@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $c \in \mathbb{R}$ such that $g : \mathbb{R} \to \mathbb{R}$ satisfies $3x^5 + 96 = \int_c^x g(t)\,dt$.
+Find $c \in \RR$ such that $g : \RR \to \RR$ satisfies $3x^5 + 96 = \int_c^x g(t)\,dt$.
 :::
 
 ::: {.solution}
@@ -28,7 +28,7 @@ Assume
 =
 \int_c^x g(t)\,dt
 \]
-for all \(x\in\mathbb R\).
+for all \(x\in\RR\).
 
 ::: pf
 
@@ -134,7 +134,7 @@ Since
 \[
 (-2)^5=-32,
 \]
-and the fifth-power function is strictly increasing on \(\mathbb R\), this
+and the fifth-power function is strictly increasing on \(\RR\), this
 solution is unique.
 
 :::

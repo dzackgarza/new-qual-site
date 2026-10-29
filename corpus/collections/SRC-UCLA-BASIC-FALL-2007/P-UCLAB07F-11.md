@@ -26,7 +26,7 @@ Show that $f$ is Riemann integrable if and only if $f^3$ is Riemann integrable.
 
 ::: {.pf-step #s1-1}
 
-Let $h:[0,1]\to\mathbb R$ be bounded and Riemann integrable, and let $\phi$ be continuous on a closed interval containing the range of $h$. Then $\phi\circ h$ is Riemann integrable.
+Let $h:[0,1]\to\RR$ be bounded and Riemann integrable, and let $\phi$ be continuous on a closed interval containing the range of $h$. Then $\phi\circ h$ is Riemann integrable.
 
 
 ::: pf-proof

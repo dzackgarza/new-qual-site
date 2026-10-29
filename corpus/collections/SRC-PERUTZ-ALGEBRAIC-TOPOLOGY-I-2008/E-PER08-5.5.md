@@ -25,7 +25,7 @@ For a harder exercise, find an example where Y is locally path connected.)
 :::
 
 ::: {.solution}
-Take $X=\mathbb Q$ with its usual subspace topology from $\mathbb R$, take $Y$ to be the same underlying set with the discrete topology, and let
+Take $X=\QQ$ with its usual subspace topology from $\RR$, take $Y$ to be the same underlying set with the discrete topology, and let
 \[
 p:Y\to X
 \]
@@ -40,7 +40,7 @@ $p$ is continuous, surjective, and has unique path lifting.
 ::: pf-proof
 
 Continuity is immediate because every subset of the discrete space $Y$ is open.
-Every continuous path $\gamma:I\to\mathbb Q$ is constant: its image is connected, while every connected subset of $\mathbb Q$ is a singleton.
+Every continuous path $\gamma:I\to\QQ$ is constant: its image is connected, while every connected subset of $\QQ$ is a singleton.
 Thus, given $y\in Y$ over $\gamma(0)$, the only possible lift is the constant path at $y$, and it exists.
 Hence $p$ has unique path lifting.
 
@@ -54,9 +54,9 @@ $p$ is not a covering map.
 
 ::: pf-proof
 
-If $U\subseteq\mathbb Q$ were an evenly covered neighbourhood of $x$, then because $p$ is bijective there could be only one sheet, namely $p^{-1}(U)=U$ with the discrete topology, and $p|_U$ would have to be a homeomorphism onto $U$ with its usual topology.
+If $U\subseteq\QQ$ were an evenly covered neighbourhood of $x$, then because $p$ is bijective there could be only one sheet, namely $p^{-1}(U)=U$ with the discrete topology, and $p|_U$ would have to be a homeomorphism onto $U$ with its usual topology.
 Hence $U$ would be discrete.
-But no nonempty open subset of $\mathbb Q$ is discrete.
+But no nonempty open subset of $\QQ$ is discrete.
 Therefore no point has an evenly covered neighbourhood.
 
 :::

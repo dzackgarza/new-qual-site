@@ -150,7 +150,7 @@ C
 \frac32e^{x^2}
 }
 $$
-for an arbitrary constant $C\in\mathbb R$.
+for an arbitrary constant $C\in\RR$.
 
 
 ::: pf-proof

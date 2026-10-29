@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $f_j:[0,1]\to\mathbb R$ be continuous functions converging uniformly on $[0,1]$ to a continuous function $F:[0,1]\to\mathbb R$.
+(a) Let $f_j:[0,1]\to\RR$ be continuous functions converging uniformly on $[0,1]$ to a continuous function $F:[0,1]\to\RR$.
 Prove that
 \[
 \int_0^1F(x)^2\,dx
@@ -24,7 +24,7 @@ Prove that
 \lim_{j\to\infty}\int_0^1f_j(x)^2\,dx.
 \]
 
-(b) Give a sequence of continuous functions $f_j:[0,1]\to\mathbb R$ converging pointwise to a continuous function $F:[0,1]\to\mathbb R$ such that
+(b) Give a sequence of continuous functions $f_j:[0,1]\to\RR$ converging pointwise to a continuous function $F:[0,1]\to\RR$ such that
 \[
 \lim_{j\to\infty}\int_0^1f_j(x)^2\,dx
 \]
@@ -137,7 +137,7 @@ By step [](#s1-2){.pf-ref},
 
 ::: {.pf-step #s1-4}
 
-For part (b), define $F=0$ and, for each positive integer $j$, define $f_j:[0,1]\to\mathbb R$ by
+For part (b), define $F=0$ and, for each positive integer $j$, define $f_j:[0,1]\to\RR$ by
 \[
 f_j(x)=
 \begin{cases}

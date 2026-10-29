@@ -37,7 +37,7 @@ f_n(x)\longrightarrow0
 :::
 
 ::: {.solution}
-Fix $m\in\mathbb N$ and define
+Fix $m\in\NN$ and define
 \[
 E_{n,m}=\{x\in[0,1]: |f_n(x)|>1/m\}.
 \]

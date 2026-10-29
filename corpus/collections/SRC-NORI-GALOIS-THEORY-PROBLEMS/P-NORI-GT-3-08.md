@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-The cylotomic polynomials $\Phi_n(X) \in \mathbb{Z}[X]$ defined for all natural numbers $n$ have the property
+The cylotomic polynomials $\Phi_n(X) \in \ZZ[X]$ defined for all natural numbers $n$ have the property
 $$
 X^n - 1 = \prod_{d \mid n} \Phi_d(X).
 $$

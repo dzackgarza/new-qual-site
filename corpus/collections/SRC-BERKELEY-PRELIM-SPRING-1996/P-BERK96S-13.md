@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f=u+iv$ be analytic on a connected open set $D\subset\mathbb C$. Suppose there are real constants $a,b,c$ with
+Let $f=u+iv$ be analytic on a connected open set $D\subset\CC$. Suppose there are real constants $a,b,c$ with
 \[
 a^2+b^2\ne0
 \]

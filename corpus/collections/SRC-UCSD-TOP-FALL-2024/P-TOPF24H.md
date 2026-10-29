@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF24H
 kind: problem
-title: $\operatorname{Tor}(\mathbb Z\oplus\mathbb Z_4,\mathbb Z_6\oplus\mathbb Z_8)$
+title: $\operatorname{Tor}(\ZZ\oplus\ZZ_4,\ZZ_6\oplus\ZZ_8)$
 classification:
   areas:
   - topology
@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8)$.
+Compute $\operatorname{Tor}(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8)$.
 :::
 
 ::: {.solution}
-**Goal:** Compute the torsion group $\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8)$.
+**Goal:** Compute the torsion group $\operatorname{Tor}_1^\ZZ(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8)$.
 
 ::: pf
 
@@ -31,23 +31,23 @@ Tor of cyclic abelian groups via projective resolutions:
 ::: pf-proof
 
 ::: pf-step
-For any abelian group $A$, since $\mathbb{Z}$ is a free (hence projective) $\mathbb{Z}$-module, $\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z}, A) = 0$.
+For any abelian group $A$, since $\ZZ$ is a free (hence projective) $\ZZ$-module, $\operatorname{Tor}_1^\ZZ(\ZZ, A) = 0$.
 :::
 
 ::: pf-step
-For cyclic groups $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ and $\mathbb{Z}_m = \mathbb{Z}/m\mathbb{Z}$, consider the standard free resolution of $\mathbb{Z}_n$: $$0 \to \mathbb{Z} \xrightarrow{\times n} \mathbb{Z} \to \mathbb{Z}/n\mathbb{Z} \to 0.$$
+For cyclic groups $\ZZ_n = \ZZ/n\ZZ$ and $\ZZ_m = \ZZ/m\ZZ$, consider the standard free resolution of $\ZZ_n$: $$0 \to \ZZ \xrightarrow{\times n} \ZZ \to \ZZ/n\ZZ \to 0.$$
 :::
 
 ::: pf-step
-Applying the functor $- \otimes_\mathbb{Z} \mathbb{Z}/m\mathbb{Z}$ yields the exact sequence $$0 \to \operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z}_n, \mathbb{Z}_m) \to \mathbb{Z} \otimes \mathbb{Z}_m \xrightarrow{n \otimes \operatorname{id}} \mathbb{Z} \otimes \mathbb{Z}_m \to \mathbb{Z}_n \otimes \mathbb{Z}_m \to 0.$$
+Applying the functor $- \otimes_\ZZ \ZZ/m\ZZ$ yields the exact sequence $$0 \to \operatorname{Tor}_1^\ZZ(\ZZ_n, \ZZ_m) \to \ZZ \otimes \ZZ_m \xrightarrow{n \otimes \operatorname{id}} \ZZ \otimes \ZZ_m \to \ZZ_n \otimes \ZZ_m \to 0.$$
 :::
 
 ::: pf-step
-Identifying $\mathbb{Z} \otimes \mathbb{Z}_m \cong \mathbb{Z}_m$, the map is multiplication by $n$ on $\mathbb{Z}/m\mathbb{Z}$: $$\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z}_n, \mathbb{Z}_m) \cong \ker(\mathbb{Z}/m\mathbb{Z} \xrightarrow{\times n} \mathbb{Z}/m\mathbb{Z}) = \{x \in \mathbb{Z}/m\mathbb{Z} : nx \equiv 0 \pmod m\}.$$
+Identifying $\ZZ \otimes \ZZ_m \cong \ZZ_m$, the map is multiplication by $n$ on $\ZZ/m\ZZ$: $$\operatorname{Tor}_1^\ZZ(\ZZ_n, \ZZ_m) \cong \ker(\ZZ/m\ZZ \xrightarrow{\times n} \ZZ/m\ZZ) = \{x \in \ZZ/m\ZZ : nx \equiv 0 \pmod m\}.$$
 :::
 
 ::: pf-step
-The elements satisfying $nx \equiv 0 \pmod m$ form a cyclic subgroup of $\mathbb{Z}/m\mathbb{Z}$ of order $\gcd(n, m)$, so $$\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z}_n, \mathbb{Z}_m) \cong \mathbb{Z}/\gcd(n, m)\mathbb{Z}.$$
+The elements satisfying $nx \equiv 0 \pmod m$ form a cyclic subgroup of $\ZZ/m\ZZ$ of order $\gcd(n, m)$, so $$\operatorname{Tor}_1^\ZZ(\ZZ_n, \ZZ_m) \cong \ZZ/\gcd(n, m)\ZZ.$$
 :::
 
 :::
@@ -60,11 +60,11 @@ Additivity of Tor across direct sums:
 ::: pf-proof
 
 ::: pf-step
-The Tor functor commutes with arbitrary direct sums in each variable: $$\operatorname{Tor}_1^\mathbb{Z}\left( \bigoplus_i A_i, \bigoplus_j B_j \right) \cong \bigoplus_{i, j} \operatorname{Tor}_1^\mathbb{Z}(A_i, B_j).$$
+The Tor functor commutes with arbitrary direct sums in each variable: $$\operatorname{Tor}_1^\ZZ\left( \bigoplus_i A_i, \bigoplus_j B_j \right) \cong \bigoplus_{i, j} \operatorname{Tor}_1^\ZZ(A_i, B_j).$$
 :::
 
 ::: pf-step
-Expanding the given expression: $$\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8) \cong \operatorname{Tor}(\mathbb{Z}, \mathbb{Z}_6) \oplus \operatorname{Tor}(\mathbb{Z}, \mathbb{Z}_8) \oplus \operatorname{Tor}(\mathbb{Z}_4, \mathbb{Z}_6) \oplus \operatorname{Tor}(\mathbb{Z}_4, \mathbb{Z}_8).$$
+Expanding the given expression: $$\operatorname{Tor}_1^\ZZ(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8) \cong \operatorname{Tor}(\ZZ, \ZZ_6) \oplus \operatorname{Tor}(\ZZ, \ZZ_8) \oplus \operatorname{Tor}(\ZZ_4, \ZZ_6) \oplus \operatorname{Tor}(\ZZ_4, \ZZ_8).$$
 :::
 
 :::
@@ -77,19 +77,19 @@ Evaluation of components:
 ::: pf-proof
 
 ::: pf-step
-$\operatorname{Tor}(\mathbb{Z}, \mathbb{Z}_6) = 0$ and $\operatorname{Tor}(\mathbb{Z}, \mathbb{Z}_8) = 0$.
+$\operatorname{Tor}(\ZZ, \ZZ_6) = 0$ and $\operatorname{Tor}(\ZZ, \ZZ_8) = 0$.
 :::
 
 ::: pf-step
-$\operatorname{Tor}(\mathbb{Z}_4, \mathbb{Z}_6) \cong \mathbb{Z}_{\gcd(4, 6)} = \mathbb{Z}_2$.
+$\operatorname{Tor}(\ZZ_4, \ZZ_6) \cong \ZZ_{\gcd(4, 6)} = \ZZ_2$.
 :::
 
 ::: pf-step
-$\operatorname{Tor}(\mathbb{Z}_4, \mathbb{Z}_8) \cong \mathbb{Z}_{\gcd(4, 8)} = \mathbb{Z}_4$.
+$\operatorname{Tor}(\ZZ_4, \ZZ_8) \cong \ZZ_{\gcd(4, 8)} = \ZZ_4$.
 :::
 
 ::: pf-step
-Summing the components: $$\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8) \cong 0 \oplus 0 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_4 \cong \mathbb{Z}_2 \oplus \mathbb{Z}_4.$$
+Summing the components: $$\operatorname{Tor}_1^\ZZ(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8) \cong 0 \oplus 0 \oplus \ZZ_2 \oplus \ZZ_4 \cong \ZZ_2 \oplus \ZZ_4.$$
 :::
 
 :::
@@ -100,7 +100,7 @@ Summing the components: $$\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z} \oplus \mat
 Conclusion:
 
 ::: pf-proof
-$\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_4 \cong \mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/4\mathbb{Z}$.
+$\operatorname{Tor}(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8) \cong \ZZ_2 \oplus \ZZ_4 \cong \ZZ/2\ZZ \oplus \ZZ/4\ZZ$.
 :::
 
 :::

@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be Lebesgue integrable on $\mathbb R$.
-For each $n\in\mathbb N$, define
+Let $f$ be Lebesgue integrable on $\RR$.
+For each $n\in\NN$, define
 \[
-E_n=\{x\in\mathbb R:|f(x)|\ge n\}.
+E_n=\{x\in\RR:|f(x)|\ge n\}.
 \]
 Show that
 \[
@@ -31,7 +31,7 @@ Show that
 
 For
 \[
-E_n=\{x\in\mathbb R:|f(x)|\ge n\},
+E_n=\{x\in\RR:|f(x)|\ge n\},
 \]
 define
 \[
@@ -65,7 +65,7 @@ n\,\mathbf 1_{E_n}(x)
 \le
 |f(x)|\,\mathbf 1_{E_n}(x)}
 \]
-for every \(x\in\mathbb R\).
+for every \(x\in\RR\).
 
 
 ::: pf-proof
@@ -91,7 +91,7 @@ n\,m(E_n)
 
 ::: pf-proof
 
-Integrate both sides over \(\mathbb R\):
+Integrate both sides over \(\RR\):
 \[
 n\int\mathbf 1_{E_n}\,dm
 \le
@@ -116,14 +116,14 @@ Since \(f\) is Lebesgue integrable,
 \[
 \boxed{|f(x)|<\infty}
 \]
-for almost every \(x\in\mathbb R\).
+for almost every \(x\in\RR\).
 
 
 ::: pf-proof
 
 If \(|f|=\infty\) on a set of positive measure, then
 \[
-\int_{\mathbb R}|f|\,dm
+\int_{\RR}|f|\,dm
 =
 \infty,
 \]
@@ -205,7 +205,7 @@ Multiply by \(|f(x)|\ge0\).
 By the dominated convergence theorem,
 \[
 \boxed{
-\int_{\mathbb R}g_n\,dm
+\int_{\RR}g_n\,dm
 \longrightarrow0}.
 \]
 
@@ -240,9 +240,9 @@ Equivalently,
 
 By definition,
 \[
-\int_{\mathbb R}g_n\,dm
+\int_{\RR}g_n\,dm
 =
-\int_{\mathbb R}|f|\mathbf 1_{E_n}\,dm
+\int_{\RR}|f|\mathbf 1_{E_n}\,dm
 =
 \int_{E_n}|f|\,dm.
 \]

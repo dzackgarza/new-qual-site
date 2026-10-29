@@ -127,13 +127,13 @@ The group $G$ has at least $27$ elements.
 
 Let
 \[
-U=UT_3(\mathbf F_3)
+U=UT_3(\FF_3)
 =\left\{
 \begin{pmatrix}
 1&x&z\\
 0&1&y\\
 0&0&1
-\end{pmatrix}:x,y,z\in\mathbf F_3
+\end{pmatrix}:x,y,z\in\FF_3
 \right\}.
 \]
 This group has $27$ elements.

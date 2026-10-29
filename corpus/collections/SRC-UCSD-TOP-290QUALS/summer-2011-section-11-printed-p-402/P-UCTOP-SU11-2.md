@@ -24,11 +24,11 @@ Can you identify any of them?
 ::: pf-step
 We have
 $$
-\pi_1(\mathbb{RP}^3\times S^1)\cong\mathbb Z/2\oplus\mathbb Z.
+\pi_1(\mathbb{RP}^3\times S^1)\cong\ZZ/2\oplus\ZZ.
 $$
 
 ::: pf-proof
-Use $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$ together with $\pi_1(\mathbb{RP}^3)=\mathbb Z/2$ and $\pi_1(S^1)=\mathbb Z$.
+Use $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$ together with $\pi_1(\mathbb{RP}^3)=\ZZ/2$ and $\pi_1(S^1)=\ZZ$.
 :::
 
 :::
@@ -36,14 +36,14 @@ Use $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$ together with $\pi_1(\mathbb{R
 ::: {.pf-step #three-index2-subgroups}
 Connected double covers correspond to index-$2$ subgroups, equivalently kernels of nonzero homomorphisms
 $$
-\mathbb Z/2\oplus\mathbb Z\longrightarrow\mathbb Z/2.
+\ZZ/2\oplus\ZZ\longrightarrow\ZZ/2.
 $$
 There are exactly three.
 
 ::: pf-proof
-Every index-$2$ subgroup is normal, so it is the kernel of the quotient map to $\mathbb Z/2$. Conversely, every nonzero homomorphism to $\mathbb Z/2$ is surjective and has index-$2$ kernel. Since
+Every index-$2$ subgroup is normal, so it is the kernel of the quotient map to $\ZZ/2$. Conversely, every nonzero homomorphism to $\ZZ/2$ is surjective and has index-$2$ kernel. Since
 $$
-\operatorname{Hom}(\mathbb Z/2\oplus\mathbb Z,\mathbb Z/2)\cong(\mathbb Z/2)^2,
+\operatorname{Hom}(\ZZ/2\oplus\ZZ,\ZZ/2)\cong(\ZZ/2)^2,
 $$
 there are three nonzero homomorphisms.
 :::
@@ -53,9 +53,9 @@ there are three nonzero homomorphisms.
 ::: {.pf-step #kernels-listed}
 Their kernels are
 $$
-0\oplus\mathbb Z,
+0\oplus\ZZ,
 \qquad
-\mathbb Z/2\oplus2\mathbb Z,
+\ZZ/2\oplus2\ZZ,
 \qquad
 \{(\epsilon,m):\epsilon\equiv m\pmod2\}.
 $$

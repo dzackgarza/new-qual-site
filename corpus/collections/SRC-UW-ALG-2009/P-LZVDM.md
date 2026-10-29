@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LZVDM
 kind: problem
-title: The valuation ring of a discrete valuation, and the $p$-adic valuation on $\mathbb{Q}$
+title: The valuation ring of a discrete valuation, and the $p$-adic valuation on $\QQ$
 classification:
   areas:
   - algebra
@@ -20,7 +20,7 @@ audit:
 
 ::: {.problem}
 Let $K$ be a field.
-A discrete valuation on $K$ is a function $\nu: K\setminus\{0\}\rightarrow\mathbb Z$ such that
+A discrete valuation on $K$ is a function $\nu: K\setminus\{0\}\rightarrow\ZZ$ such that
 
 - $\nu(ab)=\nu(a)+\nu(b)$
 
@@ -39,12 +39,12 @@ Prove the following:
 
 - $x$ is a unit of $R$ if and only if $\nu(x)=0$.
 
-- Let $p$ be a prime number, $K=\mathbb Q$, and $\nu_p:\mathbb Q\setminus\{0\}\rightarrow\mathbb Z$ be the function defined by $\nu_p(\frac ab)=n$ where $\frac ab=p^n\frac cd$ and $p$ does not divide $c$ and $d$.
+- Let $p$ be a prime number, $K=\QQ$, and $\nu_p:\QQ\setminus\{0\}\rightarrow\ZZ$ be the function defined by $\nu_p(\frac ab)=n$ where $\frac ab=p^n\frac cd$ and $p$ does not divide $c$ and $d$.
   Prove that the corresponding valuation ring $R$ is the ring of all rational numbers whose denominators are relatively prime to $p$.
 :::
 
 ::: {.solution}
-**Goal:** Prove the foundational properties of the valuation ring $R$ associated with a discrete valuation $\nu$ on a field $K$, and determine the valuation ring of the $p$-adic valuation $\nu_p$ on $\mathbb{Q}$.
+**Goal:** Prove the foundational properties of the valuation ring $R$ associated with a discrete valuation $\nu$ on a field $K$, and determine the valuation ring of the $p$-adic valuation $\nu_p$ on $\QQ$.
 
 ::: pf
 
@@ -57,7 +57,7 @@ Valuation of $1$, $-1$, and inverses: 1. $\nu(1) = 0$.
 
 ::: pf-step
 In $K$, $1 \cdot 1 = 1 \implies \nu(1) = \nu(1 \cdot 1) = \nu(1) + \nu(1)$.
-Subtracting $\nu(1) \in \mathbb{Z}$ gives $\nu(1) = 0$.
+Subtracting $\nu(1) \in \ZZ$ gives $\nu(1) = 0$.
 
 :::
 
@@ -116,7 +116,7 @@ For all $x \in K^\times$, either $x \in R$ or $x^{-1} \in R$:
 
 ::: pf-proof
 Let $x \in K^\times$.
-Since $\nu(x) \in \mathbb{Z}$, either $\nu(x) \ge 0$ or $\nu(x) < 0$.
+Since $\nu(x) \in \ZZ$, either $\nu(x) \ge 0$ or $\nu(x) < 0$.
 If $\nu(x) \ge 0$, then $x \in R$.
 If $\nu(x) < 0$, then $\nu(x^{-1}) = -\nu(x) > 0 \ge 0$ by step [](#s1){.pf-ref}, so $x^{-1} \in R$.
 :::
@@ -153,12 +153,12 @@ Thus $R^\times = \{x \in K^\times : \nu(x) = 0\}$.
 :::
 
 ::: pf-step
-For $K = \mathbb{Q}$ and $\nu_p$, the valuation ring is $R = \{\frac{a}{b} \in \mathbb{Q} : \gcd(a, b) = 1, p \nmid b\}$:
+For $K = \QQ$ and $\nu_p$, the valuation ring is $R = \{\frac{a}{b} \in \QQ : \gcd(a, b) = 1, p \nmid b\}$:
 
 ::: pf-proof
 
 ::: pf-step
-Any nonzero rational $x \in \mathbb{Q}^\times$ can be written uniquely in lowest terms as $x = \frac{u}{v}$ where $u, v \in \mathbb{Z}$, $v > 0$, and $\gcd(u, v) = 1$.
+Any nonzero rational $x \in \QQ^\times$ can be written uniquely in lowest terms as $x = \frac{u}{v}$ where $u, v \in \ZZ$, $v > 0$, and $\gcd(u, v) = 1$.
 
 :::
 
@@ -189,7 +189,7 @@ For $x = 0$, $0 = \frac{0}{1}$ and $p \nmid 1$, which also satisfies the conditi
 :::
 
 ::: pf-qed
-Thus $R = \{\frac{u}{v} \in \mathbb{Q} : \gcd(u, v) = 1, p \nmid v\}$, which is the ring of rational numbers whose denominators (in lowest terms) are relatively prime to $p$ (i.e., the localization $\mathbb{Z}_{(p)}$).
+Thus $R = \{\frac{u}{v} \in \QQ : \gcd(u, v) = 1, p \nmid v\}$, which is the ring of rational numbers whose denominators (in lowest terms) are relatively prime to $p$ (i.e., the localization $\ZZ_{(p)}$).
 :::
 
 :::

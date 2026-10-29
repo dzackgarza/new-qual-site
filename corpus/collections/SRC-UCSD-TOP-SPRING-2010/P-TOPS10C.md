@@ -27,10 +27,10 @@ Calculate the integral cohomology ring of $X$.
 ::: pf
 
 ::: pf-step
-Let $q:\mathbb{CP}^n\to X=\mathbb{CP}^n/\mathbb{CP}^k$ be the quotient map, and let $u\in H^2(\mathbb{CP}^n;\mathbb Z)$ be the standard generator.
+Let $q:\mathbb{CP}^n\to X=\mathbb{CP}^n/\mathbb{CP}^k$ be the quotient map, and let $u\in H^2(\mathbb{CP}^n;\ZZ)$ be the standard generator.
 
 ::: pf-proof
-Recall $H^*(\mathbb{CP}^n;\mathbb Z)=\mathbb Z[u]/(u^{n+1})$.
+Recall $H^*(\mathbb{CP}^n;\ZZ)=\ZZ[u]/(u^{n+1})$.
 :::
 
 :::
@@ -38,11 +38,11 @@ Recall $H^*(\mathbb{CP}^n;\mathbb Z)=\mathbb Z[u]/(u^{n+1})$.
 ::: {.pf-step #positive-cohomology-groups}
 For positive degrees,
 $$
-\widetilde H^*(X;\mathbb Z)\cong H^*(\mathbb{CP}^n,\mathbb{CP}^k;\mathbb Z).
+\widetilde H^*(X;\ZZ)\cong H^*(\mathbb{CP}^n,\mathbb{CP}^k;\ZZ).
 $$
 Hence
 $$
-H^{2j}(X;\mathbb Z)\cong\mathbb Z\quad(k+1\le j\le n),
+H^{2j}(X;\ZZ)\cong\ZZ\quad(k+1\le j\le n),
 $$
 and all other positive-degree groups vanish.
 
@@ -82,8 +82,8 @@ Pulling back by $q$ gives $u^iu^j=u^{i+j}$, and $q^*$ is injective in every posi
 ::: pf-step
 Therefore the cohomology ring is
 $$
-\boxed{H^*(X;\mathbb Z)\cong
-\mathbb Z\oplus u^{k+1}\mathbb Z[u]/(u^{n+1}),}
+\boxed{H^*(X;\ZZ)\cong
+\ZZ\oplus u^{k+1}\ZZ[u]/(u^{n+1}),}
 $$
 where the second summand is viewed as a nonunital ideal and the first summand supplies the unit.
 

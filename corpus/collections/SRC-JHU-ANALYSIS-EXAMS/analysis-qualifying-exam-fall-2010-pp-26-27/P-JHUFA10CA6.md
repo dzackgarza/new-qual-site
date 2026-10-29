@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\mathbb C:|z|<1\}$ and let $f:D\to\mathbb C$
+Let $D=\{z\in\CC:|z|<1\}$ and let $f:D\to\CC$
 be $C^1$ as a function of two real variables. Require
 $f(1/n)=0$ and $Df(1/n)=0$ for each integer $n\geq2$,
 where $Df$ denotes the real differential.

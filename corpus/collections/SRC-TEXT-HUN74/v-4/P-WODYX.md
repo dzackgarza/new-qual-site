@@ -28,11 +28,11 @@ audit:
 ::: {.problem}
 Determine the Galois groups of the following polynomials over the corresponding fields:
 
-1. $x^4- 5$ over $\mathbb Q, \mathbb Q(\sqrt 5), \mathbb Q(i\sqrt 5)$.
+1. $x^4- 5$ over $\QQ, \QQ(\sqrt 5), \QQ(i\sqrt 5)$.
 
-2. $x^3 - 2$ over $\mathbb Q$.
+2. $x^3 - 2$ over $\QQ$.
 
-3. $(x^3-2)(x^2-5)$ over $\mathbb Q$.
+3. $(x^3-2)(x^2-5)$ over $\QQ$.
 :::
 
 ::: {.solution}

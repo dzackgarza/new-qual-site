@@ -29,7 +29,7 @@ audit:
 
 A function
 \[
-f:X\to\mathbb R
+f:X\to\RR
 \]
 on a metric space $(X,\rho)$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $x,y\in X$,
 \[

@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Use Mayer-Vietoris to show that the reduced homology of $S^n$ is $\mathbb{Z}$ in dimension $n$ and zero otherwise, for all $n \geq 0$.
+Use Mayer-Vietoris to show that the reduced homology of $S^n$ is $\ZZ$ in dimension $n$ and zero otherwise, for all $n \geq 0$.
 :::
 
 ::: {.solution}
@@ -23,7 +23,7 @@ Use Mayer-Vietoris to show that the reduced homology of $S^n$ is $\mathbb{Z}$ in
 ::: {.pf-step #s1}
 
 For $n=0$, $S^0$ consists of two points, so
-$$\widetilde H_k(S^0;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,\\0,&k\ne0.\end{cases}$$
+$$\widetilde H_k(S^0;\ZZ)\cong\begin{cases}\ZZ,&k=0,\\0,&k\ne0.\end{cases}$$
 
 ::: pf-proof
 
@@ -49,7 +49,7 @@ Each enlarged hemisphere deformation retracts to a point, while their overlap is
 ::: {.pf-step #s3}
 
 The reduced Mayer--Vietoris sequence gives isomorphisms
-$$\widetilde H_k(S^n;\mathbb Z)\cong\widetilde H_{k-1}(S^{n-1};\mathbb Z)$$
+$$\widetilde H_k(S^n;\ZZ)\cong\widetilde H_{k-1}(S^{n-1};\ZZ)$$
 for all $k$.
 
 ::: pf-proof
@@ -63,8 +63,8 @@ In the reduced Mayer--Vietoris sequence, all reduced homology groups of $U$ and 
 ::: pf-step
 
 Induction on $n$ therefore yields
-$$\boxed{\widetilde H_k(S^n;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&k=n,\\
+$$\boxed{\widetilde H_k(S^n;\ZZ)\cong\begin{cases}
+\ZZ,&k=n,\\
 0,&k\ne n.
 \end{cases}}$$
 for every $n\ge0$.

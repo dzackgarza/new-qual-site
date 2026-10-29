@@ -31,13 +31,13 @@ Provide a presentation of the group $\pi_1(A)$.
 (b) Let $B = \mathbb{RP}^2 \vee T$ be their wedge sum (one-point union).
 Provide a presentation of the group $\pi_1(B)$.
 
-(c) Compute $H_*(A; \mathbb{Z})$.
+(c) Compute $H_*(A; \ZZ)$.
 
-(d) Compute $H_*(B; \mathbb{Z})$.
+(d) Compute $H_*(B; \ZZ)$.
 
-(e) Compute $H^*(A; \mathbb{Z}/2)$ as a ring.
+(e) Compute $H^*(A; \ZZ/2)$ as a ring.
 
-(f) Compute $H^*(B; \mathbb{Z}/2)$ as a ring.
+(f) Compute $H^*(B; \ZZ/2)$ as a ring.
 
 (g) Is $A$ orientable?
 Explain your reason.
@@ -69,7 +69,7 @@ A torus is the connected sum of two projective planes, so $\mathbb{RP}^2\#T^2\co
 ::: pf-step
 
 For $B=\mathbb{RP}^2\vee T^2$,
-$$\boxed{\pi_1(B)\cong\langle r,a,b\mid r^2=1,\ [a,b]=1\rangle\cong(\mathbb Z/2)*\mathbb Z^2.}$$
+$$\boxed{\pi_1(B)\cong\langle r,a,b\mid r^2=1,\ [a,b]=1\rangle\cong(\ZZ/2)*\ZZ^2.}$$
 
 ::: pf-proof
 
@@ -82,15 +82,15 @@ Van Kampen gives the free product of the fundamental groups of the wedge summand
 ::: pf-step
 
 The integral homology of $A$ is
-$$\boxed{H_i(A;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^2\oplus\mathbb Z/2,&i=1,\\
+$$\boxed{H_i(A;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,\\
+\ZZ^2\oplus\ZZ/2,&i=1,\\
 0,&i\ge2.
 \end{cases}}$$
 
 ::: pf-proof
 
-For the closed nonorientable surface $N_g$, one has $H_1(N_g;\mathbb Z)\cong\mathbb Z^{g-1}\oplus\mathbb Z/2$ and $H_2(N_g;\mathbb Z)=0$. Take $g=3$.
+For the closed nonorientable surface $N_g$, one has $H_1(N_g;\ZZ)\cong\ZZ^{g-1}\oplus\ZZ/2$ and $H_2(N_g;\ZZ)=0$. Take $g=3$.
 
 :::
 
@@ -99,15 +99,15 @@ For the closed nonorientable surface $N_g$, one has $H_1(N_g;\mathbb Z)\cong\mat
 ::: pf-step
 
 The integral homology of $B$ is
-$$\boxed{H_i(B;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,2,\\
-\mathbb Z^2\oplus\mathbb Z/2,&i=1,\\
+$$\boxed{H_i(B;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,2,\\
+\ZZ^2\oplus\ZZ/2,&i=1,\\
 0,&i\ge3.
 \end{cases}}$$
 
 ::: pf-proof
 
-Reduced homology of a wedge is the direct sum of the reduced homologies of the summands. Use $H_1(\mathbb{RP}^2)=\mathbb Z/2$, $H_2(\mathbb{RP}^2)=0$, and $H_1(T^2)=\mathbb Z^2$, $H_2(T^2)=\mathbb Z$.
+Reduced homology of a wedge is the direct sum of the reduced homologies of the summands. Use $H_1(\mathbb{RP}^2)=\ZZ/2$, $H_2(\mathbb{RP}^2)=0$, and $H_1(T^2)=\ZZ^2$, $H_2(T^2)=\ZZ$.
 
 :::
 
@@ -148,7 +148,7 @@ The surface $A$ is nonorientable.
 
 ::: pf-proof
 
-It is $N_3$, equivalently it contains a projective-plane crosscap. Also $H_2(A;\mathbb Z)=0$, whereas a closed connected orientable surface has top homology $\mathbb Z$.
+It is $N_3$, equivalently it contains a projective-plane crosscap. Also $H_2(A;\ZZ)=0$, whereas a closed connected orientable surface has top homology $\ZZ$.
 
 :::
 
@@ -160,7 +160,7 @@ Under the standard intended meaning “closed manifold,” $B$ is not homotopy e
 
 ::: pf-proof
 
-Since $H_2(B;\mathbb Z)\cong\mathbb Z$ and all higher homology vanishes, any closed connected manifold homotopy equivalent to $B$ would have dimension $2$ and be orientable. But the first homology of a closed orientable surface is torsion-free, whereas $H_1(B;\mathbb Z)$ contains $\mathbb Z/2$. If manifolds with boundary or noncompact manifolds are allowed, the literal statement needs qualification: finite $2$-complexes can be thickened in sufficiently high dimension to manifolds with boundary having the same homotopy type.
+Since $H_2(B;\ZZ)\cong\ZZ$ and all higher homology vanishes, any closed connected manifold homotopy equivalent to $B$ would have dimension $2$ and be orientable. But the first homology of a closed orientable surface is torsion-free, whereas $H_1(B;\ZZ)$ contains $\ZZ/2$. If manifolds with boundary or noncompact manifolds are allowed, the literal statement needs qualification: finite $2$-complexes can be thickened in sufficiently high dimension to manifolds with boundary having the same homotopy type.
 
 :::
 

@@ -23,13 +23,13 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f(x) \in \mathbb{Q}[x]$ is an irreducible polynomial of degree $p+1$ where $p$ is a prime.
-Let $E$ be a splitting field of $f$ over $\mathbb{Q}$.
-Suppose $[E:\mathbb{Q}] = p(p+1)$.
+Suppose $f(x) \in \QQ[x]$ is an irreducible polynomial of degree $p+1$ where $p$ is a prime.
+Let $E$ be a splitting field of $f$ over $\QQ$.
+Suppose $[E:\QQ] = p(p+1)$.
 
-(a) Prove that for any zero $\alpha \in E$ of $f$, $E/\mathbb{Q}[\alpha]$ is a Galois extension and $\operatorname{Gal}(E/\mathbb{Q}[\alpha]) \cong \mathbb{Z}/p\mathbb{Z}$.
+(a) Prove that for any zero $\alpha \in E$ of $f$, $E/\QQ[\alpha]$ is a Galois extension and $\operatorname{Gal}(E/\QQ[\alpha]) \cong \ZZ/p\ZZ$.
 
-(b) Prove that there is $\beta \in E$ such that $\mathbb{Q}[\beta]/\mathbb{Q}$ is a Galois extension and $\operatorname{Gal}(\mathbb{Q}[\beta]/\mathbb{Q}) \cong \mathbb{Z}/p\mathbb{Z}$.
+(b) Prove that there is $\beta \in E$ such that $\QQ[\beta]/\QQ$ is a Galois extension and $\operatorname{Gal}(\QQ[\beta]/\QQ) \cong \ZZ/p\ZZ$.
 
 Hint: You can use whatever has been proved about groups of order $p(p+1)$.
 :::

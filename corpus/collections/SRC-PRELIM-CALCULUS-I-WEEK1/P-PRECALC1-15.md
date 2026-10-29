@@ -38,7 +38,7 @@ f'(x)=\frac1{1+x^2}}.
 
 ::: pf-proof
 
-The integrand is continuous on \(\mathbb R\), so differentiating the integral
+The integrand is continuous on \(\RR\), so differentiating the integral
 with respect to its upper limit gives the integrand evaluated at \(x\).
 
 :::

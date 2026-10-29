@@ -24,17 +24,17 @@ audit:
 ---
 
 ::: {.problem}
-(1) Let $f \in C(\mathbb{R})$ with $f(0) = 1$.
+(1) Let $f \in C(\RR)$ with $f(0) = 1$.
 Calculate with justification the limit $\lim_{k \to \infty} \int_0^\pi f(\sin^k x)\,dx$.
 
 (2) Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
 Assume that $f$ and $f_k$ ($k = 1, 2, \ldots$) are all real-valued, $\mu$-measurable functions on $X$, and $f_k \to f$ in measure.
-Let $F \in C(\mathbb{R})$ be uniformly continuous.
+Let $F \in C(\RR)$ be uniformly continuous.
 Prove that $F(f_k) \to F(f)$ in measure.
 
-(3) Let $m$ denote the Lebesgue measure on $\mathbb{R}^n$.
+(3) Let $m$ denote the Lebesgue measure on $\RR^n$.
 Assume $g_k \to g$ weakly in $L^1(m)$.
-Prove that $\partial^\alpha g_k \to \partial^\alpha g$ in $\mathcal{D}'(\mathbb{R}^n)$ for any multi-index $\alpha$.
+Prove that $\partial^\alpha g_k \to \partial^\alpha g$ in $\mathcal{D}'(\RR^n)$ for any multi-index $\alpha$.
 :::
 
 ::: {.solution}
@@ -116,12 +116,12 @@ Pass weak $L^1$ convergence to distributional derivatives.
 
 ::: pf-proof
 
-Let $\varphi\in C_c^\infty(\mathbb R^n)$. By definition of distributional derivatives,
+Let $\varphi\in C_c^\infty(\RR^n)$. By definition of distributional derivatives,
 \[
 \langle \partial^\alpha g_k,\varphi\rangle
-=(-1)^{|\alpha|}\int_{\mathbb R^n}g_k(x)\,\partial^\alpha\varphi(x)\,dx.
+=(-1)^{|\alpha|}\int_{\RR^n}g_k(x)\,\partial^\alpha\varphi(x)\,dx.
 \]
-The test function $\partial^\alpha\varphi$ is bounded, hence belongs to $L^\infty(\mathbb R^n)$. Since $g_k\rightharpoonup g$ weakly in $L^1$,
+The test function $\partial^\alpha\varphi$ is bounded, hence belongs to $L^\infty(\RR^n)$. Since $g_k\rightharpoonup g$ weakly in $L^1$,
 \[
 \int g_k\,\partial^\alpha\varphi
 \longrightarrow
@@ -133,9 +133,9 @@ Therefore
 \longrightarrow
 \langle \partial^\alpha g,\varphi\rangle.
 \]
-Since this holds for every $\varphi\in C_c^\infty(\mathbb R^n)$,
+Since this holds for every $\varphi\in C_c^\infty(\RR^n)$,
 \[
-\boxed{\partial^\alpha g_k\to\partial^\alpha g\text{ in }\mathcal D'(\mathbb R^n).}
+\boxed{\partial^\alpha g_k\to\partial^\alpha g\text{ in }\mathcal D'(\RR^n).}
 \]
 
 :::

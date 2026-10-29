@@ -21,7 +21,7 @@ Let $S$ be the set of all sequences $(x_1,x_2,\ldots)$ such that
 x_n\in\{0,1\}
 \]
 for every $n$.
-Prove that there is no bijection from $\mathbb N=\{1,2,\ldots\}$ onto $S$.
+Prove that there is no bijection from $\NN=\{1,2,\ldots\}$ onto $S$.
 :::
 
 ::: {.solution}
@@ -32,13 +32,13 @@ Prove that there is no bijection from $\mathbb N=\{1,2,\ldots\}$ onto $S$.
 
 Suppose, for contradiction, that there is a surjection
 \[
-\phi:\mathbb N\to S.
+\phi:\NN\to S.
 \]
 
 
 ::: pf-proof
 
-If a bijection from $\mathbb N$ onto $S$ existed, then in particular a surjection would exist. It is therefore enough to contradict surjectivity.
+If a bijection from $\NN$ onto $S$ existed, then in particular a surjection would exist. It is therefore enough to contradict surjectivity.
 
 :::
 
@@ -50,7 +50,7 @@ Write
 \[
 \phi(n)=\bigl(x^{(n)}_1,x^{(n)}_2,\ldots\bigr)
 \]
-for each $n\in\mathbb N$, where every $x^{(n)}_j\in\{0,1\}$.
+for each $n\in\NN$, where every $x^{(n)}_j\in\{0,1\}$.
 
 
 ::: pf-proof
@@ -84,7 +84,7 @@ For every $n$, the value $y_n$ is either $0$ or $1$. Hence $y$ is a binary seque
 
 ::: {.pf-step #s1-4}
 
-For every $n\in\mathbb N$,
+For every $n\in\NN$,
 \[
 y\ne \phi(n).
 \]
@@ -104,12 +104,12 @@ Thus $y$ and $\phi(n)$ differ in their $n$th coordinate, so they are distinct se
 
 ::: {.pf-step #s1-5}
 
-No surjection from $\mathbb N$ onto $S$ exists.
+No surjection from $\NN$ onto $S$ exists.
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} gives $y\in S$, while step [](#s1-4){.pf-ref} shows that $y$ is not equal to $\phi(n)$ for any $n\in\mathbb N$. Hence $y$ is not in the image of $\phi$, contradicting the surjectivity assumed in step [](#s1-1){.pf-ref}.
+Step [](#s1-3){.pf-ref} gives $y\in S$, while step [](#s1-4){.pf-ref} shows that $y$ is not equal to $\phi(n)$ for any $n\in\NN$. Hence $y$ is not in the image of $\phi$, contradicting the surjectivity assumed in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -117,7 +117,7 @@ Step [](#s1-3){.pf-ref} gives $y\in S$, while step [](#s1-4){.pf-ref} shows that
 
 ::: {.pf-step #s1-6}
 
-Therefore there is no bijection from $\mathbb N$ onto $S$.
+Therefore there is no bijection from $\NN$ onto $S$.
 
 
 ::: pf-proof

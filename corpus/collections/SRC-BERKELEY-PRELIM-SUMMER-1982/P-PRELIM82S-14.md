@@ -30,8 +30,8 @@ Let $A$ be a real $n\times n$ matrix such that
 \[
 \langle Ax,x\rangle\ge0
 \]
-for every $x\in\mathbb R^n$.
-Show that, for every $u\in\mathbb R^n$,
+for every $x\in\RR^n$.
+Show that, for every $u\in\RR^n$,
 \[
 Au=0
 \quad\Longleftrightarrow\quad

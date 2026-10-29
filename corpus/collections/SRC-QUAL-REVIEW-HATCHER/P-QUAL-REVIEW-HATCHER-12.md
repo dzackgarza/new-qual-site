@@ -41,7 +41,7 @@ and a homeomorphism
 \]
 onto an open set
 \[
-V\subseteq\mathbb R^n
+V\subseteq\RR^n
 \]
 with
 \[
@@ -115,7 +115,7 @@ H_i(V,V\setminus\{0\})
 \]
 with
 \[
-H_i(\mathbb R^n,\mathbb R^n\setminus\{0\}).
+H_i(\RR^n,\RR^n\setminus\{0\}).
 \]
 
 
@@ -133,7 +133,7 @@ H_i(B,B\setminus\{0\}),
 \]
 and the same argument gives
 \[
-H_i(\mathbb R^n,\mathbb R^n\setminus\{0\})
+H_i(\RR^n,\RR^n\setminus\{0\})
 \cong
 H_i(B,B\setminus\{0\}).
 \]
@@ -146,7 +146,7 @@ H_i(B,B\setminus\{0\}).
 
 The space
 \[
-\mathbb R^n\setminus\{0\}
+\RR^n\setminus\{0\}
 \]
 deformation retracts onto
 \[
@@ -167,18 +167,18 @@ v\longmapsto\frac{v}{\|v\|}.
 
 ::: {.pf-step #s1-6}
 
-Since \(\mathbb R^n\) is contractible, the long exact sequence of the pair gives
+Since \(\RR^n\) is contractible, the long exact sequence of the pair gives
 \[
 \boxed{
-H_i(\mathbb R^n,\mathbb R^n\setminus\{0\})
+H_i(\RR^n,\RR^n\setminus\{0\})
 \cong
-\widetilde H_{i-1}(\mathbb R^n\setminus\{0\})}.
+\widetilde H_{i-1}(\RR^n\setminus\{0\})}.
 \]
 
 
 ::: pf-proof
 
-For \(i>0\), the absolute homology groups of \(\mathbb R^n\) vanish, so the connecting maps in the long exact sequence are isomorphisms. The reduced formulation also handles the degree-zero edge cleanly.
+For \(i>0\), the absolute homology groups of \(\RR^n\) vanish, so the connecting maps in the long exact sequence are isomorphisms. The reduced formulation also handles the degree-zero edge cleanly.
 
 :::
 
@@ -188,7 +188,7 @@ For \(i>0\), the absolute homology groups of \(\mathbb R^n\) vanish, so the conn
 
 Therefore
 \[
-H_i(\mathbb R^n,\mathbb R^n\setminus\{0\})
+H_i(\RR^n,\RR^n\setminus\{0\})
 \cong
 \widetilde H_{i-1}(S^{n-1}).
 \]
@@ -207,10 +207,10 @@ Apply step [](#s1-5){.pf-ref} to step [](#s1-6){.pf-ref}.
 Hence
 \[
 \boxed{
-H_i(M,M\setminus\{x\};\mathbb Z)
+H_i(M,M\setminus\{x\};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&i=n,\\
+\ZZ,&i=n,\\
 0,&i\ne n.
 \end{cases}}
 \]
@@ -218,7 +218,7 @@ H_i(M,M\setminus\{x\};\mathbb Z)
 
 ::: pf-proof
 
-By steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref}, the local relative homology is the reduced homology of \(S^{n-1}\), shifted by one degree. The sphere has reduced homology \(\mathbb Z\) only in degree \(n-1\).
+By steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref}, the local relative homology is the reduced homology of \(S^{n-1}\), shifted by one degree. The sphere has reduced homology \(\ZZ\) only in degree \(n-1\).
 
 :::
 
@@ -229,10 +229,10 @@ By steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref}, the local relative homol
 Applying the same local-homology calculation using a \(k\)-dimensional chart gives
 \[
 \boxed{
-H_i(M,M\setminus\{x\};\mathbb Z)
+H_i(M,M\setminus\{x\};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&i=k,\\
+\ZZ,&i=k,\\
 0,&i\ne k.
 \end{cases}}
 \]
@@ -240,7 +240,7 @@ H_i(M,M\setminus\{x\};\mathbb Z)
 
 ::: pf-proof
 
-Repeat steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} with \(\mathbb R^k\) in place of \(\mathbb R^n\).
+Repeat steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} with \(\RR^k\) in place of \(\RR^n\).
 
 :::
 
@@ -273,7 +273,7 @@ Therefore
 
 ::: pf-proof
 
-If \(n\ne k\), then at degree \(i=n\), step [](#s1-8){.pf-ref} gives \(\mathbb Z\) while step [](#s1-9){.pf-ref} gives \(0\), contradiction.
+If \(n\ne k\), then at degree \(i=n\), step [](#s1-8){.pf-ref} gives \(\ZZ\) while step [](#s1-9){.pf-ref} gives \(0\), contradiction.
 
 :::
 

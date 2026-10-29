@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGAP09S-07
 kind: problem
-title: Continuity at the origin of two rational functions on $\mathbb R^2$
+title: Continuity at the origin of two rational functions on $\RR^2$
 classification:
   areas: [prelim]
   topics: []
@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine, with proof, which of the following functions $\mathbb R^2\to\mathbb R$ are continuous:
+Determine, with proof, which of the following functions $\RR^2\to\RR$ are continuous:
 \[
 f(x,y)=
 \begin{cases}
@@ -170,7 +170,7 @@ g(x,y)\to0=g(0,0).
 Therefore
 \[
 \boxed{f\text{ is discontinuous only at }(0,0),\qquad
-g\text{ is continuous on }\mathbb R^2}.
+g\text{ is continuous on }\RR^2}.
 \]
 
 

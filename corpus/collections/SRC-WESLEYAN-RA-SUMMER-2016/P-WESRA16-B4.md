@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to[0,\infty)$ be measurable with $\operatorname{supp}f\subset[0,1]$.
+Let $f:\RR\to[0,\infty)$ be measurable with $\operatorname{supp}f\subset[0,1]$.
 Put
 \[
 X=\{x\in[0,1]:f(x)>1\},\qquad
@@ -25,11 +25,11 @@ Z=\{x\in[0,1]:f(x)<1\}.
 \]
 Assuming
 \[
-\lim_{n\to\infty}\int_{\mathbb R}f^n
+\lim_{n\to\infty}\int_{\RR}f^n
 \]
 exists in $[0,\infty]$, prove that there are $\alpha,\beta,\gamma\in[0,\infty]$ such that
 \[
-\lim_{n\to\infty}\int_{\mathbb R}f^n
+\lim_{n\to\infty}\int_{\RR}f^n
 =\alpha\lambda(X)+\beta\lambda(Y)+\gamma\lambda(Z).
 \]
 Determine the relevant contributions using monotone and dominated convergence.
@@ -39,7 +39,7 @@ Determine the relevant contributions using monotone and dominated convergence.
 
 Because $\operatorname{supp}f\subseteq[0,1]$ and $X,Y,Z$ partition $[0,1]$,
 $$
-\int_{\mathbb R}f^n
+\int_{\RR}f^n
 =\int_Xf^n+\int_Yf^n+\int_Zf^n.
 $$
 
@@ -152,7 +152,7 @@ Since $M$ is arbitrary, $\int h=\infty$.
 
 Therefore
 $$
-\lim_{n\to\infty}\int_{\mathbb R}f^n
+\lim_{n\to\infty}\int_{\RR}f^n
 =
 \begin{cases}
 \lambda(Y),&\lambda(X)=0,\\
@@ -173,7 +173,7 @@ Use the decomposition before step [](#s1-1){.pf-ref}. The $Y$-term equals $\lamb
 
 There exist $\alpha,\beta,\gamma\in[0,\infty]$ such that
 $$
-\boxed{\lim_{n\to\infty}\int_{\mathbb R}f^n
+\boxed{\lim_{n\to\infty}\int_{\RR}f^n
 =\alpha\lambda(X)+\beta\lambda(Y)+\gamma\lambda(Z)}.
 $$
 

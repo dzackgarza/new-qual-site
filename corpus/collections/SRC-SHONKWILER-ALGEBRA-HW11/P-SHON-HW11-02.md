@@ -33,7 +33,7 @@ C=R[x]/(x^2+1).
 
 5. Conclude that $C$ is algebraically closed.
 
-6. Deduce the algebraic closedness of the usual complex numbers from the corresponding properties of $\mathbb R$.
+6. Deduce the algebraic closedness of the usual complex numbers from the corresponding properties of $\RR$.
 :::
 
 ::: {.solution}
@@ -888,12 +888,12 @@ The assumption in step [](#s1-34){.pf-ref} led to a contradiction.
 
 ::: {.pf-step #s1-42}
 
-The usual real field \(\mathbb R\) is ordered, its nonnegative elements are exactly its squares, and real polynomials satisfy the intermediate value theorem.
+The usual real field \(\RR\) is ordered, its nonnegative elements are exactly its squares, and real polynomials satisfy the intermediate value theorem.
 
 
 ::: pf-proof
 
-These are the standard order and completeness properties of \(\mathbb R\).
+These are the standard order and completeness properties of \(\RR\).
 
 :::
 
@@ -903,9 +903,9 @@ These are the standard order and completeness properties of \(\mathbb R\).
 
 The quotient
 \[
-\mathbb R[x]/(x^2+1)
+\RR[x]/(x^2+1)
 \]
-is canonically isomorphic to the usual complex field \(\mathbb C\).
+is canonically isomorphic to the usual complex field \(\CC\).
 
 
 ::: pf-proof
@@ -920,13 +920,13 @@ Send the class of \(x\) to \(i\).
 
 Therefore
 \[
-\boxed{\mathbb C\text{ is algebraically closed}.}
+\boxed{\CC\text{ is algebraically closed}.}
 \]
 
 
 ::: pf-proof
 
-Apply step [](#s1-41){.pf-ref} to \(R=\mathbb R\), then use step [](#s1-43){.pf-ref}.
+Apply step [](#s1-41){.pf-ref} to \(R=\RR\), then use step [](#s1-43){.pf-ref}.
 
 :::
 

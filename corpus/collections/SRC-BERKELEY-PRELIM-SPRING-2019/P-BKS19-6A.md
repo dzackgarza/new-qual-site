@@ -64,7 +64,7 @@ Since $X$ and $Y$ are invertible, $\det(X)\det(Y)\neq0$. Cancelling this product
 
 ::: {.pf-step #s1-2}
 
-Suppose $a^n=1$. On the standard basis $e_0,\ldots,e_{n-1}$ of $\mathbb C^n$, with the convention $e_n=e_0$, define
+Suppose $a^n=1$. On the standard basis $e_0,\ldots,e_{n-1}$ of $\CC^n$, with the convention $e_n=e_0$, define
 $$
 Xe_m=e_{m+1},
 \qquad
@@ -129,7 +129,7 @@ $$
 \boxed{
 a^n=1
 \quad\Longleftrightarrow\quad
-\exists\,X,Y\in\operatorname{GL}_n(\mathbb C)\text{ with }YX=aXY
+\exists\,X,Y\in\operatorname{GL}_n(\CC)\text{ with }YX=aXY
 }.
 $$
 

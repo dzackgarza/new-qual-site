@@ -35,7 +35,7 @@ Any two distinct points of the sphere can be carried to the two poles by a homeo
 
 ::: pf-step
 
-The complement of the two poles is homeomorphic to $S^1\times\mathbb R$.
+The complement of the two poles is homeomorphic to $S^1\times\RR$.
 
 ::: pf-proof
 
@@ -44,7 +44,7 @@ $$
 (\cos\theta\sin\phi,\sin\theta\sin\phi,\cos\phi),
 \qquad \theta\in S^1,\quad 0<\phi<\pi.
 $$
-Thus the complement is $S^1\times(0,\pi)$, and $(0,\pi)\cong\mathbb R$.
+Thus the complement is $S^1\times(0,\pi)$, and $(0,\pi)\cong\RR$.
 
 :::
 
@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-The product $S^1\times\mathbb R$ deformation-retracts onto $S^1\times\{0\}$.
+The product $S^1\times\RR$ deformation-retracts onto $S^1\times\{0\}$.
 
 :::
 

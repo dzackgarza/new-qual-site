@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 No proofs are required.
 
-1. Give an example of a matrix $A\in M_2(\mathbb R)$ that is not diagonalizable.
+1. Give an example of a matrix $A\in M_2(\RR)$ that is not diagonalizable.
 2. Calculate
    \[
    \int_C xy^2\,dy,

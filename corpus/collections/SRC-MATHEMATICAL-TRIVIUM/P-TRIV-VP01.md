@@ -231,7 +231,7 @@ u(t)
 \pm\sqrt{\frac2\lambda}
 \operatorname{sech}(t-t_0)
 $$
-for some $t_0\in\mathbb R$.
+for some $t_0\in\RR$.
 
 
 ::: pf-proof

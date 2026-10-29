@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be holomorphic with $f(z)\ne0$ for every $z\in\mathbb C$.
+Let $f:\CC\to\CC$ be holomorphic with $f(z)\ne0$ for every $z\in\CC$.
 Define
 \[
-U=\{z\in\mathbb C:|f(z)|<1\}.
+U=\{z\in\CC:|f(z)|<1\}.
 \]
 Show that every connected component of $U$ is unbounded.
 :::
@@ -33,7 +33,7 @@ Suppose, toward a contradiction, that
 \]
 is a bounded connected component of
 \[
-U=\{z\in\mathbb C:|f(z)|<1\}.
+U=\{z\in\CC:|f(z)|<1\}.
 \]
 
 ::: pf
@@ -65,7 +65,7 @@ The component \(\Omega\) is open.
 
 ::: pf-proof
 
-Connected components of open subsets of \(\mathbb C\) are open, because \(\mathbb C\) is locally connected.
+Connected components of open subsets of \(\CC\) are open, because \(\CC\) is locally connected.
 
 :::
 
@@ -209,7 +209,7 @@ Since \(\Omega\) is bounded, \(\overline\Omega\) is compact.
 
 ::: pf-proof
 
-The closure is closed and bounded in \(\mathbb C\cong\mathbb R^2\). By Heine--Borel, it is compact.
+The closure is closed and bounded in \(\CC\cong\RR^2\). By Heine--Borel, it is compact.
 
 :::
 
@@ -290,12 +290,12 @@ A holomorphic function on a connected open set that attains a modulus maximum at
 
 ::: pf-step
 
-By the identity theorem, \(g\) is constant on all of \(\mathbb C\).
+By the identity theorem, \(g\) is constant on all of \(\CC\).
 
 
 ::: pf-proof
 
-The entire function \(g\) agrees with a constant function on the nonempty open set \(\Omega\), so the identity theorem extends that equality to the connected domain \(\mathbb C\).
+The entire function \(g\) agrees with a constant function on the nonempty open set \(\Omega\), so the identity theorem extends that equality to the connected domain \(\CC\).
 
 :::
 
@@ -303,7 +303,7 @@ The entire function \(g\) agrees with a constant function on the nonempty open s
 
 ::: pf-step
 
-Hence \(f=1/g\) is also constant on \(\mathbb C\).
+Hence \(f=1/g\) is also constant on \(\CC\).
 
 
 ::: pf-proof

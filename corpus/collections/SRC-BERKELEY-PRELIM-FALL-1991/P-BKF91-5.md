@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be infinitely differentiable. Suppose that, for some positive integer $n$,
+Let $f:\RR\to\RR$ be infinitely differentiable. Suppose that, for some positive integer $n$,
 \[
 f(1)=f(0)=f'(0)=f''(0)=\cdots=f^{(n)}(0)=0.
 \]

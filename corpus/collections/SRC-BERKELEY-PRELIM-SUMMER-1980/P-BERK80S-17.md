@@ -13,7 +13,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-12
-  note: Checked against Problem 17 of the vendored Berkeley Preliminary Exam, Summer 1980; restored the lost arrow in $f:\mathbb R\to\mathbb R$ and the OCR-split endpoint $100$.
+  note: Checked against Problem 17 of the vendored Berkeley Preliminary Exam, Summer 1980; restored the lost arrow in $f:\RR\to\RR$ and the OCR-split endpoint $100$.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-13
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be monotonically increasing, perhaps discontinuous.
+Let $f:\RR\to\RR$ be monotonically increasing, perhaps discontinuous.
 Suppose $0<f(0)$ and $f(100)<100$.
 Prove that $f(x)=x$ for some $x$.
 :::

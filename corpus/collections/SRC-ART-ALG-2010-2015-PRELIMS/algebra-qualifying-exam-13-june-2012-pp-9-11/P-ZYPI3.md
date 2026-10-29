@@ -23,7 +23,7 @@ a. State the structure theorem for finitely generated modules over a PID. You ma
 b. Determine all abelian groups of size 72 up to isomorphism.
 Explain how this relates to part (a).
 
-c. Determine all conjugacy classes of 3x3 matrices over $\mathbb{Q}$ with characteristic polynomial $x^3 - 2x^2 + x$.
+c. Determine all conjugacy classes of 3x3 matrices over $\QQ$ with characteristic polynomial $x^3 - 2x^2 + x$.
 Explain how this relates to part (a).
 :::
 

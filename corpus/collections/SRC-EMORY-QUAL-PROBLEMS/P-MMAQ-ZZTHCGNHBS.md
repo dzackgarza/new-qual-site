@@ -80,7 +80,7 @@ normal of order $15$. Step [](#order-15-is-cyclic){.pf-ref} makes $N$ cyclic.
 
 Since $t\notin N$ and $[G:N]=2$, every element has
 a unique form $a^i t^e$, where $a$ generates $N$,
-$i\in\mathbb Z/15\mathbb Z$, and $e\in\{0,1\}$.
+$i\in\ZZ/15\ZZ$, and $e\in\{0,1\}$.
 This is the asserted semidirect product.
 :::
 

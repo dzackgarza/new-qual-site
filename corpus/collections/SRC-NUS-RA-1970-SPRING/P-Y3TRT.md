@@ -22,7 +22,7 @@ Let g : $[0, 1] \times [0, 1] \to [0, 1]$ be a continuous function and let $\{f_
 
 $$f_n(x)=\begin{cases}{0,   0\leq x\leq 1/n},\\{\int_0^{x-\frac1n} g(t,f_n(t))dt, 1/n\leq x \leq 1.}\end{cases}$$
 
-With the help of the Arzela-Ascoli theorem or otherwise, show that there exists a continuous function $f : [0, 1] \to \mathbb{R}$ such that
+With the help of the Arzela-Ascoli theorem or otherwise, show that there exists a continuous function $f : [0, 1] \to \RR$ such that
 
 $f(x) = \int_0^x g(t, f(t))dt$
 

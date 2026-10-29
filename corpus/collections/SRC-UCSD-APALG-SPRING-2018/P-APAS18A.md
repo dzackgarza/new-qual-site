@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A,B\in\mathbb{C}^{8\times 8}$ be two matrices such that
+Let $A,B\in\CC^{8\times 8}$ be two matrices such that
 \[
 \operatorname{rank} A=\operatorname{rank} B=6,\quad
 \operatorname{rank} A^2=\operatorname{rank} B^2=4,\quad

@@ -26,7 +26,7 @@ Give a precise definition of Lebesgue outer measure on the real line.
 :::
 
 ::: {.solution}
-For $E\subseteq\mathbb R$, the **Lebesgue outer measure** of $E$ is
+For $E\subseteq\RR$, the **Lebesgue outer measure** of $E$ is
 \[
 m^*(E)
 :=\inf\left\{

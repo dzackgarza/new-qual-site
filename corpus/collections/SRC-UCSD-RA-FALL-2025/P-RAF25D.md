@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega$ be a bounded, Lebesgue measurable subset of $\mathbb{R}^n$ such that $L^n(\Omega) > 0$, where $L^n$ is the Lebesgue measure on $\mathbb{R}^n$.
+Let $\Omega$ be a bounded, Lebesgue measurable subset of $\RR^n$ such that $L^n(\Omega) > 0$, where $L^n$ is the Lebesgue measure on $\RR^n$.
 Let
 $$
 C := \left\{f \in L^2(\Omega) : \int_\Omega f(x) \, dx = 0\right\}.
@@ -40,7 +40,7 @@ P_C(g) = g - \frac{1}{L^n(\Omega)} \int_\Omega g(x) \, dx,
 $$
 where $P_C(g)$ denotes the orthogonal projection of $g$ onto $C$.
 
-(3) Prove that $C^\perp = \{g \in L^2(\Omega) : g = c \text{ a.e. in } \Omega \text{ for some } c \in \mathbb{C}\}$.
+(3) Prove that $C^\perp = \{g \in L^2(\Omega) : g = c \text{ a.e. in } \Omega \text{ for some } c \in \CC\}$.
 :::
 
 ::: {.solution}
@@ -55,7 +55,7 @@ Prove that $C$ is a closed subspace.
 
 Define
 \[
-L:L^2(\Omega)\to\mathbb C,
+L:L^2(\Omega)\to\CC,
 \qquad
 L(f):=\int_\Omega f(x)\,dx.
 \]
@@ -139,7 +139,7 @@ Therefore
 \[
 \boxed{
 C^\perp
-=\{g\in L^2(\Omega):g=c\text{ a.e. for some }c\in\mathbb C\}.}
+=\{g\in L^2(\Omega):g=c\text{ a.e. for some }c\in\CC\}.}
 \]
 
 :::

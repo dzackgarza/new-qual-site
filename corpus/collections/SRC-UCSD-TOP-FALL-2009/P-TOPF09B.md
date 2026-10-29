@@ -53,7 +53,7 @@ The triangle relation gives $abc=1$, making the hexagon relation redundant; elim
 
 ::: pf-step
 
-The cellular boundary $\partial_2:\mathbb Z^2\to\mathbb Z^3$ has columns $(2,2,2)^T$ and $(-1,-1,-1)^T$, so its image has rank $1$ and its kernel has rank $1$.
+The cellular boundary $\partial_2:\ZZ^2\to\ZZ^3$ has columns $(2,2,2)^T$ and $(-1,-1,-1)^T$, so its image has rank $1$ and its kernel has rank $1$.
 
 ::: pf-proof
 
@@ -66,11 +66,11 @@ Again cellular boundaries are exponent-sum vectors of the attaching words; the t
 ::: pf-step
 
 Therefore
-$$\boxed{H_k(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,2,\\\mathbb Z^2,&k=1,\\0,&k>2.\end{cases}}$$
+$$\boxed{H_k(X;\ZZ)\cong\begin{cases}\ZZ,&k=0,2,\\\ZZ^2,&k=1,\\0,&k>2.\end{cases}}$$
 
 ::: pf-proof
 
-$H_2=\ker\partial_2\cong\mathbb Z$, while $H_1=\mathbb Z^3/\langle(1,1,1)\rangle\cong\mathbb Z^2$.
+$H_2=\ker\partial_2\cong\ZZ$, while $H_1=\ZZ^3/\langle(1,1,1)\rangle\cong\ZZ^2$.
 
 :::
 

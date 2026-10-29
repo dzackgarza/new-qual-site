@@ -24,11 +24,11 @@ Show that a Möbius transformation maps a straight line or circle onto a straigh
 :::
 
 ::: {.solution}
-A generalized circle in $\widehat{\mathbb C}$ means either an ordinary circle or a straight line together with $\infty$. Such a set has an equation
+A generalized circle in $\widehat{\CC}$ means either an ordinary circle or a straight line together with $\infty$. Such a set has an equation
 \[
 A|z|^2+Bz+\overline B\,\overline z+C=0,
 \]
-where $A,C\in\mathbb R$, $B\in\mathbb C$, and $|B|^2-AC>0$. If $A=0$, this is a line; if $A\ne0$, completing the square gives a circle.
+where $A,C\in\RR$, $B\in\CC$, and $|B|^2-AC>0$. If $A=0$, this is a line; if $A\ne0$, completing the square gives a circle.
 
 Every Möbius map is a composition of translations, nonzero complex dilations, and inversion $z\mapsto1/z$. Indeed, for
 \[

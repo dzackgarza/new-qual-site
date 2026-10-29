@@ -36,7 +36,7 @@ Thus
 \[
 H(z):=\wp''(z)-6\wp(z)^2
 \]
-has a removable singularity at every lattice point. Hence \(H\) extends to an entire elliptic function. It is bounded on a fundamental parallelogram and therefore bounded on \(\mathbb C\); Liouville's theorem gives \(H\equiv C\) for some constant \(C\). Therefore
+has a removable singularity at every lattice point. Hence \(H\) extends to an entire elliptic function. It is bounded on a fundamental parallelogram and therefore bounded on \(\CC\); Liouville's theorem gives \(H\equiv C\) for some constant \(C\). Therefore
 \[
 \boxed{\wp''(z)=6\wp(z)^2+C},
 \]

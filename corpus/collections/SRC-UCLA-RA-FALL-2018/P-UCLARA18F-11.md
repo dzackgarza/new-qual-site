@@ -25,7 +25,7 @@ where $f$ is analytic and one-to-one on an annulus
 \[
 \{r<|z|<1/r\},\qquad 0<r<1.
 \]
-Let $\mathbb C^*=\mathbb C\cup\{\infty\}$ be the Riemann sphere, let $N<\infty$, and let $\Omega\subset\mathbb C^*$ be a domain for which $\partial\Omega$ has $N$ connected components, none of which are single points. Prove there is a conformal (i.e. one-to-one analytic) mapping from $\Omega$ onto a domain bounded by $N$ pairwise disjoint analytic Jordan curves.
+Let $\CC^*=\CC\cup\{\infty\}$ be the Riemann sphere, let $N<\infty$, and let $\Omega\subset\CC^*$ be a domain for which $\partial\Omega$ has $N$ connected components, none of which are single points. Prove there is a conformal (i.e. one-to-one analytic) mapping from $\Omega$ onto a domain bounded by $N$ pairwise disjoint analytic Jordan curves.
 :::
 
 ::: {.solution}
@@ -47,7 +47,7 @@ By hypothesis, \(\partial\Omega\) has exactly \(N<\infty\) connected components,
 
 ::: {.pf-step #s1-2}
 
-There is a conformal map \(h:\Omega\to D\) onto a circle domain \(D\subset\mathbb C^*\) whose boundary has exactly \(N\) nondegenerate round-circle components.
+There is a conformal map \(h:\Omega\to D\) onto a circle domain \(D\subset\CC^*\) whose boundary has exactly \(N\) nondegenerate round-circle components.
 
 
 ::: pf-proof
@@ -60,12 +60,12 @@ Koebe's circle-domain theorem says that every nondegenerate finitely connected d
 
 ::: {.pf-step #s1-3}
 
-After postcomposing \(h\) with a Möbius transformation, every component of the image boundary is an ordinary Euclidean circle contained in \(\mathbb C\).
+After postcomposing \(h\) with a Möbius transformation, every component of the image boundary is an ordinary Euclidean circle contained in \(\CC\).
 
 
 ::: pf-proof
 
-Choose \(p\in D\). There is a Möbius transformation \(M\) of \(\mathbb C^*\) with \(M(p)=\infty\). Since \(p\) lies in the domain rather than on its boundary, \(\infty\) belongs to \(M(D)\) and lies on none of the round circles forming \(\partial M(D)\). Möbius transformations carry generalized circles to generalized circles, so each boundary component of \(M(D)\) is therefore a round circle not containing \(\infty\), hence an ordinary Euclidean circle.
+Choose \(p\in D\). There is a Möbius transformation \(M\) of \(\CC^*\) with \(M(p)=\infty\). Since \(p\) lies in the domain rather than on its boundary, \(\infty\) belongs to \(M(D)\) and lies on none of the round circles forming \(\partial M(D)\). Möbius transformations carry generalized circles to generalized circles, so each boundary component of \(M(D)\) is therefore a round circle not containing \(\infty\), hence an ordinary Euclidean circle.
 
 :::
 
@@ -86,7 +86,7 @@ with \(R>0\). The affine map
 \[
 f(z)=c+Rz
 \]
-is entire and one-to-one on \(\mathbb C\), hence in particular analytic and one-to-one on every annulus \(\{r<|z|<1/r\}\) with \(0<r<1\). Moreover,
+is entire and one-to-one on \(\CC\), hence in particular analytic and one-to-one on every annulus \(\{r<|z|<1/r\}\) with \(0<r<1\). Moreover,
 \[
 f(\{|z|=1\})=C.
 \]

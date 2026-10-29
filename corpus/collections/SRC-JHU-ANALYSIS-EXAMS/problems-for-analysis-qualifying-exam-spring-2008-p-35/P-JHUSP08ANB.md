@@ -29,7 +29,7 @@ audit:
 \lim_{p\to\infty}\left(\int_0^1|f|^p\,dx\right)^{1/p}=\|f\|_\infty.
 \]
 
-(b) Give an example showing that the corresponding statement fails if $[0,1]$ is replaced by $\mathbb R$.
+(b) Give an example showing that the corresponding statement fails if $[0,1]$ is replaced by $\RR$.
 :::
 
 ::: {.solution}
@@ -89,7 +89,7 @@ Combining the two bounds yields
 
 ::: pf-step
 
-The statement fails on $\mathbb R$ for arbitrary $L^\infty$ functions.
+The statement fails on $\RR$ for arbitrary $L^\infty$ functions.
 
 ::: pf-proof
 
@@ -97,13 +97,13 @@ Take
 \[
 f(x)\equiv1.
 \]
-Then $f\in L^\infty(\mathbb R)$ and
+Then $f\in L^\infty(\RR)$ and
 \[
 \|f\|_\infty=1,
 \]
 but for every finite $p$,
 \[
-\int_{\mathbb R}|f(x)|^p\,dx=\infty.
+\int_{\RR}|f(x)|^p\,dx=\infty.
 \]
 Thus the finite-$p$ norms are infinite, so they do not converge to $\|f\|_\infty=1$.
 

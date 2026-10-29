@@ -31,7 +31,7 @@ Determine the image under $f$ of each of the following:
 
 ::: {.solution}
 
-Regard \(f\) as the Möbius transformation of the Riemann sphere \(\mathbb C^*=\mathbb C\cup\{\infty\}\), so that \(f(-1)=\infty\) and \(f(\infty)=1\). For \(w\ne1\), solving \(w=f(z)\) gives
+Regard \(f\) as the Möbius transformation of the Riemann sphere \(\CC^*=\CC\cup\{\infty\}\), so that \(f(-1)=\infty\) and \(f(\infty)=1\). For \(w\ne1\), solving \(w=f(z)\) gives
 \[
 z=\frac{1+w}{1-w}.
 \]
@@ -42,13 +42,13 @@ z=\frac{1+w}{1-w}.
 
 The image of the extended real axis is the extended real axis:
 \[
-\boxed{f(\mathbb R\cup\{\infty\})=\mathbb R\cup\{\infty\}}.
+\boxed{f(\RR\cup\{\infty\})=\RR\cup\{\infty\}}.
 \]
 
 
 ::: pf-proof
 
-If \(z\in\mathbb R\setminus\{-1\}\), then \((z-1)/(z+1)\in\mathbb R\). Also \(f(-1)=\infty\) and \(f(\infty)=1\). Conversely, if \(w\in\mathbb R\setminus\{1\}\), then the inverse formula gives \(z=(1+w)/(1-w)\in\mathbb R\). Thus the image is exactly the extended real axis.
+If \(z\in\RR\setminus\{-1\}\), then \((z-1)/(z+1)\in\RR\). Also \(f(-1)=\infty\) and \(f(\infty)=1\). Conversely, if \(w\in\RR\setminus\{1\}\), then the inverse formula gives \(z=(1+w)/(1-w)\in\RR\). Thus the image is exactly the extended real axis.
 
 :::
 
@@ -88,7 +88,7 @@ The point \(w=1\) does not satisfy this equation, so the inverse formula proves 
 
 The image of \(|z|=1\) is the extended imaginary axis:
 \[
-\boxed{f(\{|z|=1\})=i\mathbb R\cup\{\infty\}}.
+\boxed{f(\{|z|=1\})=i\RR\cup\{\infty\}}.
 \]
 
 
@@ -114,13 +114,13 @@ hence \(u=0\). Conversely, every finite \(w\) with \(\operatorname{Re}w=0\) sati
 
 The image of the extended imaginary axis is the unit circle:
 \[
-\boxed{f(i\mathbb R\cup\{\infty\})=\{|w|=1\}}.
+\boxed{f(i\RR\cup\{\infty\})=\{|w|=1\}}.
 \]
 
 
 ::: pf-proof
 
-If \(z=iy\) with \(y\in\mathbb R\), then
+If \(z=iy\) with \(y\in\RR\), then
 \[
 |f(iy)|
 =\frac{|iy-1|}{|iy+1|}

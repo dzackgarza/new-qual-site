@@ -19,14 +19,14 @@ audit:
 Suppose $\phi:S^1\to S^1$ and $\psi:S^1\to S^1$ are continuous maps.
 Show that the compositions $\phi\circ\psi$ and $\psi\circ\phi$ are homotopic.
 
-Hint: Is this true for $f(z)=z^n$, where $n\in\mathbb Z$?
+Hint: Is this true for $f(z)=z^n$, where $n\in\ZZ$?
 :::
 
 ::: {.solution}
 
 Let
 \[
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi it},
 \]
@@ -44,7 +44,7 @@ f,g:S^1\to S^1
 \]
 have the same degree
 \[
-d\in\mathbb Z.
+d\in\ZZ.
 \]
 
 
@@ -60,7 +60,7 @@ This sets up the classification statement needed below.
 
 Choose lifts
 \[
-F,G:\mathbb R\to\mathbb R
+F,G:\RR\to\RR
 \]
 such that
 \[
@@ -74,7 +74,7 @@ p\circ G=g\circ p.
 
 ::: pf-proof
 
-The domain \(\mathbb R\) is simply connected, so both maps
+The domain \(\RR\) is simply connected, so both maps
 \[
 f\circ p,\qquad g\circ p
 \]
@@ -173,11 +173,11 @@ If
 \[
 p(t)=p(t+k)
 \]
-for \(k\in\mathbb Z\), then repeated use of step [](#s1-5){.pf-ref} gives
+for \(k\in\ZZ\), then repeated use of step [](#s1-5){.pf-ref} gives
 \[
 K_s(t+k)=K_s(t)+kd.
 \]
-Since \(kd\in\mathbb Z\),
+Since \(kd\in\ZZ\),
 \[
 p(K_s(t+k))=p(K_s(t)).
 \]
@@ -243,11 +243,11 @@ Degree is multiplicative under composition:
 
 On fundamental groups,
 \[
-\phi_*:\mathbb Z\to\mathbb Z
+\phi_*:\ZZ\to\ZZ
 \]
 is multiplication by \(m\), and
 \[
-\psi_*:\mathbb Z\to\mathbb Z
+\psi_*:\ZZ\to\ZZ
 \]
 is multiplication by \(n\). Therefore
 \[

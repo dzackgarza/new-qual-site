@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be a finite-dimensional complex linear subspace of $C^\infty(\mathbb R)$ and suppose $V$ is invariant under differentiation:
+Let $V$ be a finite-dimensional complex linear subspace of $C^\infty(\RR)$ and suppose $V$ is invariant under differentiation:
 \[
 f\in V\implies Df\in V.
 \]

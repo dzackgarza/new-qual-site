@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\dots,\lambda_n\in\mathbb{C}$.
+Let $A\in\CC^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\dots,\lambda_n\in\CC$.
 If
 \[
 \|A\|_F^2\leq|\lambda_1|^2+\cdots+|\lambda_n|^2,
@@ -38,7 +38,7 @@ Schur Decomposition and unitary invariance of Frobenius norm:
 
 ::: pf-step
 
-By Schur’s Triangularization Theorem, there exists a unitary matrix $U \in U(n)$ and an upper triangular matrix $T \in \mathbb{C}^{n \times n}$ such that:
+By Schur’s Triangularization Theorem, there exists a unitary matrix $U \in U(n)$ and an upper triangular matrix $T \in \CC^{n \times n}$ such that:
 \[
 A = U T U^*,
 \]

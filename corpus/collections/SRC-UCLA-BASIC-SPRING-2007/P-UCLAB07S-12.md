@@ -80,7 +80,7 @@ x_k^{(m)}-x_k^{(\ell)}
 \le
 \|x^{(m)}-x^{(\ell)}\|_\infty.
 \]
-Since the right side tends to $0$ as $m,\ell\to\infty$, the coordinate sequence is Cauchy in $\mathbb R$.
+Since the right side tends to $0$ as $m,\ell\to\infty$, the coordinate sequence is Cauchy in $\RR$.
 
 :::
 

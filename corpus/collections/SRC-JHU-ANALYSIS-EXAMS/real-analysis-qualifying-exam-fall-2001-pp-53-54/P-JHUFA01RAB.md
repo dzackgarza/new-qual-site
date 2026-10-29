@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g:\mathbb R\to\mathbb R$ be continuous, suppose
+Let $f,g:\RR\to\RR$ be continuous, suppose
 \[
 \lim_{|x|\to\infty}f(x)=0,
 \qquad

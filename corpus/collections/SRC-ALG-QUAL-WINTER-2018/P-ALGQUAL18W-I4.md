@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGQUAL18W-I4
 kind: problem
-title: Semisimplicity over $\mathbb C[x,y]$ versus the coordinate subalgebras
+title: Semisimplicity over $\CC[x,y]$ versus the coordinate subalgebras
 classification: {areas: [algebra], topics: []}
 relations: []
 review: draft
@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 True or false?
-Justify your answer with a proof or counterexample: a $\mathbb C[x,y]$-module is semisimple if and only if its restrictions to both subalgebras $\mathbb C[x]$ and $\mathbb C[y]$ are semisimple.
+Justify your answer with a proof or counterexample: a $\CC[x,y]$-module is semisimple if and only if its restrictions to both subalgebras $\CC[x]$ and $\CC[y]$ are semisimple.
 :::
 
 ::: {.solution}

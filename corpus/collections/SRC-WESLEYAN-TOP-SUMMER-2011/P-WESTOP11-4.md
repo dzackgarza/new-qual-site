@@ -140,7 +140,7 @@ f^{-1}(\{0\})
 \]
 is closed because $f$ is continuous and
 \[
-\{0\}\subseteq\mathbb R
+\{0\}\subseteq\RR
 \]
 is closed. Since
 \[
@@ -199,7 +199,7 @@ p\in X.
 \]
 The evaluation map
 \[
-\operatorname{ev}_p:C(X)\to\mathbb R,
+\operatorname{ev}_p:C(X)\to\RR,
 \qquad
 \operatorname{ev}_p(f)=f(p),
 \]
@@ -232,7 +232,7 @@ Thus it is a unital ring homomorphism.
 
 For any
 \[
-r\in\mathbb R,
+r\in\RR,
 \]
 the constant function
 \[
@@ -290,7 +290,7 @@ By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} and the first isomorphism
 \[
 C(X)/I(\{p\})
 \cong
-\mathbb R.
+\RR.
 \]
 The quotient is a field. Therefore
 \[

@@ -34,7 +34,7 @@ The homology sphere $M$ is connected. The suspension is the union of the two ope
 ::: {.pf-step #suspension-homology-shift}
 Suspension shifts reduced homology by one degree:
 $$
-\widetilde H_i(X;\mathbb Z)\cong\widetilde H_{i-1}(M;\mathbb Z).
+\widetilde H_i(X;\ZZ)\cong\widetilde H_{i-1}(M;\ZZ).
 $$
 
 ::: pf-proof
@@ -46,15 +46,15 @@ Apply the reduced Mayer--Vietoris sequence to the decomposition of $\Sigma M$ in
 ::: {.pf-step #homology-of-x}
 Hence
 $$
-H_i(X;\mathbb Z)\cong
+H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,4,\\
+\ZZ,&i=0,4,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
 
 ::: pf-proof
-By hypothesis $M$ has the homology of $S^3$, so its only nonzero reduced homology group is $\widetilde H_3(M)\cong\mathbb Z$. Apply step [](#suspension-homology-shift){.pf-ref}.
+By hypothesis $M$ has the homology of $S^3$, so its only nonzero reduced homology group is $\widetilde H_3(M)\cong\ZZ$. Apply step [](#suspension-homology-shift){.pf-ref}.
 :::
 
 :::
@@ -71,7 +71,7 @@ By step [](#x-simply-connected){.pf-ref} it is simply connected. If $\pi_2(X)$ w
 ::: {.pf-step #hurewicz-iso-degree4}
 The Hurewicz homomorphism
 $$
-\pi_4(X)\longrightarrow H_4(X)\cong\mathbb Z
+\pi_4(X)\longrightarrow H_4(X)\cong\ZZ
 $$
 is an isomorphism.
 

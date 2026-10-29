@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $f:\mathbb R\to M_{n\times n}$ be continuous, where $M_{n\times n}$ is the space of $n\times n$ matrices.
+Problem 7. Let $f:\RR\to M_{n\times n}$ be continuous, where $M_{n\times n}$ is the space of $n\times n$ matrices.
 Show that
 \[
 g(t)=\operatorname{rank}(f(t))
@@ -35,7 +35,7 @@ Is $g$ always continuous?
 
 ::: {.pf-step #s1-1}
 
-Fix $t\in\mathbb R$ and let
+Fix $t\in\RR$ and let
 \[
 r=\operatorname{rank}(f(t)).
 \]
@@ -78,7 +78,7 @@ The determinant of the corresponding $r\times r$ minor of $f(s)$ is nonzero for 
 
 ::: pf-proof
 
-Fix the row and column indices of the nonzero minor from step [](#s1-2){.pf-ref}. Its determinant is a polynomial in the corresponding entries of $f(s)$. Since $f:\mathbb R\to M_{n\times n}$ is continuous, every matrix entry is continuous, so this minor determinant is a continuous scalar function of $s$.
+Fix the row and column indices of the nonzero minor from step [](#s1-2){.pf-ref}. Its determinant is a polynomial in the corresponding entries of $f(s)$. Since $f:\RR\to M_{n\times n}$ is continuous, every matrix entry is continuous, so this minor determinant is a continuous scalar function of $s$.
 
 Its value at $s=t$ is nonzero. Hence it remains nonzero on some neighborhood of $t$.
 

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f: \mathbb{C} \to \mathbb{C}$ be given by $f(z) = z - \sin z$.
+Let $f: \CC \to \CC$ be given by $f(z) = z - \sin z$.
 
 (a) Show that $f$ is an odd entire function of order less than or equal to 1.
 
@@ -36,7 +36,7 @@ Part (a): $f$ is an odd entire function of order $\le 1$:
 
 ::: pf-step
 
-The function $f(z) = z - \sin z$ is entire because $z$ and $\sin z = \frac{e^{iz} - e^{-iz}}{2i}$ are entire functions on $\mathbb{C}$.
+The function $f(z) = z - \sin z$ is entire because $z$ and $\sin z = \frac{e^{iz} - e^{-iz}}{2i}$ are entire functions on $\CC$.
 
 ::: pf-proof
 
@@ -60,7 +60,7 @@ $\sin(-z) = -\sin z$.
 
 ::: pf-step
 
-For any $z = x + iy \in \mathbb{C}$:
+For any $z = x + iy \in \CC$:
 \[
 |f(z)| \le |z| + |\sin z| \le |z| + \frac{e^{|y|} + e^{-|y|}}{2} \le |z| + e^{|z|} \le C e^{|z|} \quad \text{for some constant } C > 0.
 \]

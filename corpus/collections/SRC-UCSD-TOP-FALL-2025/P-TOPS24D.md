@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 180 degree rotations, as shown.
-Compute the homology $H_*(X; \mathbb{Z})$.
+Compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ the cube has 8 vertices identified to one, 12 edges identified into 3 classes of
 
 ::: {.pf-step #s2}
 
-Cellular chain complex: $0 \to \mathbb{Z} \xrightarrow{\partial_3} \mathbb{Z}^3 \xrightarrow{\partial_2} \mathbb{Z}^3 \xrightarrow{\partial_1} \mathbb{Z} \to 0$.
+Cellular chain complex: $0 \to \ZZ \xrightarrow{\partial_3} \ZZ^3 \xrightarrow{\partial_2} \ZZ^3 \xrightarrow{\partial_1} \ZZ \to 0$.
 
 ::: pf-proof
 
@@ -100,11 +100,11 @@ orientability.
 
 ::: {.pf-step #s7}
 
-Therefore $H_0(X)=\mathbb{Z}$, $H_1(X)=\mathbb{Z}^3/2\mathbb{Z}^3 \cong (\mathbb{Z}/2)^3$, $H_2(X)=0$, $H_3(X)=\mathbb{Z}$.
+Therefore $H_0(X)=\ZZ$, $H_1(X)=\ZZ^3/2\ZZ^3 \cong (\ZZ/2)^3$, $H_2(X)=0$, $H_3(X)=\ZZ$.
 
 ::: pf-proof
 
-Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}; $H_1 = \ker\partial_1/\operatorname{im}\partial_2 = \mathbb{Z}^3/2\mathbb{Z}^3$, $H_2 = \ker\partial_2/\operatorname{im}\partial_3 =0$.
+Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}; $H_1 = \ker\partial_1/\operatorname{im}\partial_2 = \ZZ^3/2\ZZ^3$, $H_2 = \ker\partial_2/\operatorname{im}\partial_3 =0$.
 
 :::
 

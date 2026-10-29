@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Define the operator norm of a real $n\times n$ matrix, considered as a linear transformation from $\mathbb R^n$ to $\mathbb R^n$.
+(a) Define the operator norm of a real $n\times n$ matrix, considered as a linear transformation from $\RR^n$ to $\RR^n$.
 
 (b) Let $I$ be the $n\times n$ identity matrix. Show that
 \[
@@ -51,7 +51,7 @@ The operator norm of a real $n\times n$ matrix $A$ is
 
 ::: pf-proof
 
-This is the norm induced by the Euclidean norm on $\mathbb R^n$.
+This is the norm induced by the Euclidean norm on $\RR^n$.
 Equivalently,
 \[
 \|A\|_{\mathrm{op}}
@@ -141,7 +141,7 @@ e^{\|A\|_{\mathrm{op}}}
 converges.
 Therefore the matrix series converges absolutely in the finite-dimensional normed space
 \[
-M_n(\mathbb R).
+M_n(\RR).
 \]
 
 :::

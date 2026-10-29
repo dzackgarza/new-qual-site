@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-5. Let H denote the upper half plane $\{ z \in \mathbb { C } : \operatorname { I m } z > 0 \}$ . Suppose that $f : H \to H$ is holomorphic, and $f ( 3 + 1 7 i ) = 3 + 1 7 i$ What is the maximum possible value of $f ^ { \prime } ( 3 { + } 1 7 i )$ . Give a reason for your answer (and try not to do any lengthy computations).
+5. Let H denote the upper half plane $\{ z \in \CC : \operatorname { I m } z > 0 \}$ . Suppose that $f : H \to H$ is holomorphic, and $f ( 3 + 1 7 i ) = 3 + 1 7 i$ What is the maximum possible value of $f ^ { \prime } ( 3 { + } 1 7 i )$ . Give a reason for your answer (and try not to do any lengthy computations).
 :::
 
 ::: {.remark}
@@ -38,11 +38,11 @@ all derivatives are real.
 :::
 
 ::: {.solution}
-Let $a=3+17i$ and $D=\{w\in\mathbb C:|w|<1\}$.
+Let $a=3+17i$ and $D=\{w\in\CC:|w|<1\}$.
 The possible values are exactly
 $$
 \boxed{\{f'(a):f:H\to H\text{ holomorphic},\ f(a)=a\}
-=\{\lambda\in\mathbb C:|\lambda|\leq1\}.}
+=\{\lambda\in\CC:|\lambda|\leq1\}.}
 $$
 In particular $\max|f'(a)|=1$, and the largest possible
 real value of $f'(a)$ is also one, attained by $f(z)=z$.

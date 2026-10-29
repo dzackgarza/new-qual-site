@@ -53,7 +53,7 @@ If $d$ is infinite, then $\deg f=0$.
 
 ::: pf-proof
 
-An infinite-sheeted connected cover of the compact manifold $N$ is noncompact. Hence $H_n(\widehat N;\mathbb Z)=0$ for the connected noncompact oriented $n$-manifold $\widehat N$. Thus $\widehat f_*[M]=0$, and consequently $f_*[M]=p_*\widehat f_*[M]=0$.
+An infinite-sheeted connected cover of the compact manifold $N$ is noncompact. Hence $H_n(\widehat N;\ZZ)=0$ for the connected noncompact oriented $n$-manifold $\widehat N$. Thus $\widehat f_*[M]=0$, and consequently $f_*[M]=p_*\widehat f_*[M]=0$.
 
 :::
 

@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is no holomorphic bijection from the punctured disk $0 < | z | < 1$ in $\mathbb { C }$ onto the annulus $r < | z | < R$ , where $0 < r < R < \infty$
+Prove that there is no holomorphic bijection from the punctured disk $0 < | z | < 1$ in $\CC$ onto the annulus $r < | z | < R$ , where $0 < r < R < \infty$
 :::
 
 ::: {.solution}

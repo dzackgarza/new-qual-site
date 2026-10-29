@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{C} \to \mathbb{C}$ be a non-constant entire function.
+Let $f : \CC \to \CC$ be a non-constant entire function.
 Show that there exist complex numbers $z \neq 0$ for which $f(z)$ is positive real.
 
 (You may not use Picard’s theorem for this question.)
@@ -42,7 +42,7 @@ assume the conclusion fails.
 
 ::: {.pf-step #s2}
 
-Then $f(\mathbb{C} \setminus \{0\})$ avoids the positive real axis $(0, \infty)$.
+Then $f(\CC \setminus \{0\})$ avoids the positive real axis $(0, \infty)$.
 
 ::: pf-proof
 
@@ -54,7 +54,7 @@ Step [](#s1){.pf-ref}.
 
 ::: {.pf-step #s3}
 
-Since $f$ is entire (hence continuous), $f(\mathbb{C})$ avoids $(0, \infty)$ except possibly at $f(0)$.
+Since $f$ is entire (hence continuous), $f(\CC)$ avoids $(0, \infty)$ except possibly at $f(0)$.
 
 ::: pf-proof
 
@@ -66,7 +66,7 @@ Step [](#s2){.pf-ref} and continuity.
 
 ::: pf-step
 
-The set $\mathbb{C} \setminus (0, \infty)$ is simply connected (it is the plane slit along the positive real axis).
+The set $\CC \setminus (0, \infty)$ is simply connected (it is the plane slit along the positive real axis).
 
 ::: pf-proof
 
@@ -78,7 +78,7 @@ the slit plane is simply connected.
 
 ::: {.pf-step #s5}
 
-The principal branch of the square root maps $\mathbb{C} \setminus (0, \infty)$ into the upper half-plane $\{w : \operatorname{Im} w > 0\}$.
+The principal branch of the square root maps $\CC \setminus (0, \infty)$ into the upper half-plane $\{w : \operatorname{Im} w > 0\}$.
 
 ::: pf-proof
 
@@ -90,7 +90,7 @@ the square root of a point in the slit plane has argument in $(0, \pi)$.
 
 ::: {.pf-step #s6}
 
-Hence $h(z) = \sqrt{f(z)}$ is an entire function mapping $\mathbb{C}$ into the upper half-plane.
+Hence $h(z) = \sqrt{f(z)}$ is an entire function mapping $\CC$ into the upper half-plane.
 
 ::: pf-proof
 

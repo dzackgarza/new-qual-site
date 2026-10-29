@@ -107,7 +107,7 @@ subsubsequence
 \[
 a_{n_{k_j}}\to b
 \]
-for some \(b\in\mathbb R\).
+for some \(b\in\RR\).
 
 
 ::: pf-proof

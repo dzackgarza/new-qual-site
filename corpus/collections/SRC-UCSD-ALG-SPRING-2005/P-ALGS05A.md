@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $T: M_n(\mathbb{R}) \to M_n(\mathbb{R})$ be the transformation such that
+Let $T: M_n(\RR) \to M_n(\RR)$ be the transformation such that
 $T(X) = \frac{1}{2}(X - X^T)$.
 
 (a) Prove that $T$ is a linear transformation.
@@ -43,7 +43,7 @@ The map \(T\) is linear.
 
 ::: pf-proof
 
-For \(X,Y\in M_n(\mathbb R)\) and \(a,b\in\mathbb R\),
+For \(X,Y\in M_n(\RR)\) and \(a,b\in\RR\),
 \[
 T(aX+bY)
 =\frac12\bigl(aX+bY-(aX+bY)^T\bigr)
@@ -58,7 +58,7 @@ T(aX+bY)
 
 The null space of \(T\) is the space of symmetric matrices:
 \[
-\ker T=\{X\in M_n(\mathbb R):X^T=X\}.
+\ker T=\{X\in M_n(\RR):X^T=X\}.
 \]
 
 ::: pf-proof
@@ -90,7 +90,7 @@ A symmetric \(n\times n\) matrix is determined by its \(n\) diagonal entries and
 
 ::: {.pf-step #s4}
 
-For \(M_3(\mathbb R)\), order the standard basis as
+For \(M_3(\RR)\), order the standard basis as
 \[
 \mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
 \]

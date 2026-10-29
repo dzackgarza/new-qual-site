@@ -17,14 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $R$ be the subring of $M_2(\mathbb Q)$ consisting of matrices commuting with
+Let $R$ be the subring of $M_2(\QQ)$ consisting of matrices commuting with
 \[
 \begin{pmatrix}1&1\\0&1\end{pmatrix}.
 \]
 
-(a) Prove that $R$ is a subring of $M_2(\mathbb Q)$.
+(a) Prove that $R$ is a subring of $M_2(\QQ)$.
 
-(b) Prove that $R\cong\mathbb Q[x]/(x^2)$.
+(b) Prove that $R\cong\QQ[x]/(x^2)$.
 :::
 
 ::: {.solution}

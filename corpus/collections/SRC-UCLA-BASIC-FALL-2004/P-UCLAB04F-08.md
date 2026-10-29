@@ -12,14 +12,14 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against Problem 8 of the official UCLA Basic Exam Fall 2004 PDF. The source denotes the unit sphere in $\mathbb R^n$ by $S^n$; the set itself is unambiguous and is denoted simply by $S$ here.
+  note: Checked against Problem 8 of the official UCLA Basic Exam Fall 2004 PDF. The source denotes the unit sphere in $\RR^n$ by $S^n$; the set itself is unambiguous and is denoted simply by $S$ here.
 ---
 
 ::: {.problem}
 Let $A=(a_{ij})$ be a real symmetric $n\times n$ matrix, and define the associated quadratic form
 \[
 Q(v)=v\mathbin{\cdot}Av,
-\qquad v\in\mathbb R^n.
+\qquad v\in\RR^n.
 \]
 
 (a) Show that
@@ -29,7 +29,7 @@ Q(v)=v\mathbin{\cdot}Av,
 
 (b) Let
 \[
-S=\{v\in\mathbb R^n:\|v\|=1\},
+S=\{v\in\RR^n:\|v\|=1\},
 \]
 let $M$ be the minimum value of $Q$ on $S$, and choose $u\in S$ with $Q(u)=M$.
 Use Lagrange multipliers to prove that $u$ is an eigenvector of $A$ with eigenvalue $M$.
@@ -137,7 +137,7 @@ Since $u\in S$, one has $\|u\|=1$, hence $u\ne0$ and therefore $\nabla h(u)\ne0$
 
 ::: {.pf-step #s1-4}
 
-There exists $\lambda\in\mathbb R$ such that
+There exists $\lambda\in\RR$ such that
 \[
 Au=\lambda u.
 \]
@@ -149,7 +149,7 @@ The point $u$ minimizes $Q$ subject to the regular constraint
 \[
 h(v)=1.
 \]
-By the Lagrange multiplier theorem, there is $\lambda\in\mathbb R$ such that
+By the Lagrange multiplier theorem, there is $\lambda\in\RR$ such that
 \[
 \nabla Q(u)=\lambda\nabla h(u).
 \]

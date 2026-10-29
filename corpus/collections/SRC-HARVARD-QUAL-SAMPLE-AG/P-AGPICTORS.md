@@ -82,7 +82,7 @@ p\circ s=\operatorname{id}_B.
 Under the identification in step [](#pic-b-pic-e-iso){.pf-ref}, the divisor class of the zero section $D$ corresponds to
 \[
 [L]=[\mathcal O_{\mathbb P^1}(3)]
-\in\operatorname{Pic}(\mathbb P^1)\cong\mathbb Z.
+\in\operatorname{Pic}(\mathbb P^1)\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -102,7 +102,7 @@ The localization sequence for the complement of $D$ gives
 \[
 \operatorname{Pic}(V)
 \cong
-\operatorname{Pic}(E)/\mathbb Z[D].
+\operatorname{Pic}(E)/\ZZ[D].
 \]
 
 ::: pf-proof
@@ -112,7 +112,7 @@ Both $E$ and $V$ are regular integral schemes, so
 \]
 on each.  Removing the prime divisor $D$ gives the divisor-class localization sequence
 \[
-\mathbb Z[D]
+\ZZ[D]
 \longrightarrow
 \operatorname{Cl}(E)
 \longrightarrow
@@ -127,20 +127,20 @@ Replacing class groups by Picard groups gives the displayed quotient.
 ::: {.pf-step #pic-v-z3}
 Therefore
 \[
-\boxed{\operatorname{Pic}(V)\cong\mathbb Z/3\mathbb Z.}
+\boxed{\operatorname{Pic}(V)\cong\ZZ/3\ZZ.}
 \]
 
 ::: pf-proof
 One has
 \[
 \operatorname{Pic}(\mathbb P^1)
-\cong\mathbb Z,
+\cong\ZZ,
 \qquad
 [\mathcal O(1)]\longmapsto1.
 \]
 By steps [](#pic-b-pic-e-iso){.pf-ref} and [](#zero-section-class){.pf-ref},
 \[
-\operatorname{Pic}(E)\cong\mathbb Z
+\operatorname{Pic}(E)\cong\ZZ
 \]
 and the class $[D]$ corresponds to
 \[
@@ -150,7 +150,7 @@ Hence step [](#localization-sequence){.pf-ref} gives
 \[
 \operatorname{Pic}(V)
 \cong
-\mathbb Z/3\mathbb Z.
+\ZZ/3\ZZ.
 \]
 Thus such a variety does exist; $V=L^\times$ is a smooth quasi-projective surface.
 :::
@@ -158,12 +158,12 @@ Thus such a variety does exist; $V=L^\times$ is a smooth quasi-projective surfac
 :::
 
 ::: {.pf-step #no-positive-dim-projective}
-No positive-dimensional projective variety can have Picard group $\mathbb Z/3\mathbb Z$.
+No positive-dimensional projective variety can have Picard group $\ZZ/3\ZZ$.
 
 ::: pf-proof
 Suppose $X$ were a positive-dimensional projective variety with
 \[
-\operatorname{Pic}(X)\cong\mathbb Z/3\mathbb Z.
+\operatorname{Pic}(X)\cong\ZZ/3\ZZ.
 \]
 Choose a very ample line bundle $A$ on $X$.  Every element of the Picard group is $3$-torsion, so
 \[
@@ -176,7 +176,7 @@ But a positive tensor power of a very ample line bundle is again very ample.  Th
 :::
 
 ::: {.pf-step #no-zero-dim-projective}
-There is no zero-dimensional projective variety with Picard group $\mathbb Z/3\mathbb Z$ either.
+There is no zero-dimensional projective variety with Picard group $\ZZ/3\ZZ$ either.
 
 ::: pf-proof
 A zero-dimensional variety is affine; if it is integral it is the spectrum of a finite field extension of $k$.  The Picard group of the spectrum of a field is zero.
@@ -188,7 +188,7 @@ A zero-dimensional variety is affine; if it is integral it is the spectrum of a 
 Hence
 \[
 \boxed{
-\text{there are nonprojective varieties with }\operatorname{Pic}=\mathbb Z/3,
+\text{there are nonprojective varieties with }\operatorname{Pic}=\ZZ/3,
 \text{ but no projective varieties with that Picard group.}
 }
 \]

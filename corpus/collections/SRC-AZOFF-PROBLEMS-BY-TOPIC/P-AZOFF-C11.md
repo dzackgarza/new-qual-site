@@ -34,7 +34,7 @@ audit:
 Find a bijective conformal map from
 
 $$
-G : = \{ z \in \mathbb { C } : | z - 1 | < { \sqrt { 2 } } , ~ | z + 1 | < { \sqrt { 2 } } \} ~ \backslash ~ [ 0 , i )
+G : = \{ z \in \CC : | z - 1 | < { \sqrt { 2 } } , ~ | z + 1 | < { \sqrt { 2 } } \} ~ \backslash ~ [ 0 , i )
 $$
 
 onto the open upper half plane.

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(K_n)$ be nonnegative integrable functions on $\mathbb R/\mathbb Z$ such that
+Let $(K_n)$ be nonnegative integrable functions on $\RR/\ZZ$ such that
 \[
 \int K_n=1
 \]
@@ -33,7 +33,7 @@ and for every $0<\varepsilon<1/2$,
 \[
 \int_{\varepsilon\le |t|\le1/2}K_n(t)\,dt\longrightarrow0.
 \]
-For continuous $f$ on $\mathbb R/\mathbb Z$, prove that $f*K_n\to f$ uniformly.
+For continuous $f$ on $\RR/\ZZ$, prove that $f*K_n\to f$ uniformly.
 :::
 
 ::: {.solution}

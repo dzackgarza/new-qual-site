@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-048
 kind: problem
-title: Values of $a$ making $\mathbb Z_5[x]/(x^3+2x^2+ax+3)$ a field
+title: Values of $a$ making $\ZZ_5[x]/(x^3+2x^2+ax+3)$ a field
 classification:
   areas: [algebra]
   topics: []
@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Find all values of a in $\mathbb { Z } _ { 5 }$ such that the quotient ring
+Find all values of a in $\ZZ _ { 5 }$ such that the quotient ring
 
 $$
-\mathbb { Z } _ { 5 } [ x ] / ( x ^ { 3 } + 2 x ^ { 2 } + a x + 3 )
+\ZZ _ { 5 } [ x ] / ( x ^ { 3 } + 2 x ^ { 2 } + a x + 3 )
 $$
 
 is a field.

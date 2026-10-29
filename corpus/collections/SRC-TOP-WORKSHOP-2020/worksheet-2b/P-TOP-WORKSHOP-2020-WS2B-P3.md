@@ -61,7 +61,7 @@ h\circ f=k\circ g
 \]
 identically. However \(f\not\simeq g\), since \(f_*\) is the identity on
 \[
-\pi_1(S^1)\cong\mathbb Z,
+\pi_1(S^1)\cong\ZZ,
 \]
 while \(g_*=0\). Thus homotopy of the composites does not imply homotopy of the individual factors.
 :::

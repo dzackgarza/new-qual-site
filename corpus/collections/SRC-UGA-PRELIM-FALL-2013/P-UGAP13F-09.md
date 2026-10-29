@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGAP13F-09
 kind: problem
-title: Construct a linear map on $\mathbb R^3$ with a prescribed one-dimensional kernel
+title: Construct a linear map on $\RR^3$ with a prescribed one-dimensional kernel
 classification:
   areas: [prelim]
   topics: []
@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Give an example, with proof, of a linear map from $\mathbb R^3$ to some vector space whose kernel is exactly the subspace spanned by $(1,2,3)$.
+Give an example, with proof, of a linear map from $\RR^3$ to some vector space whose kernel is exactly the subspace spanned by $(1,2,3)$.
 :::
 
 ::: {.solution}
@@ -23,7 +23,7 @@ Give an example, with proof, of a linear map from $\mathbb R^3$ to some vector s
 Define
 \[
 \boxed{
-T:\mathbb R^3\to\mathbb R^2,
+T:\RR^3\to\RR^2,
 \qquad
 T(x,y,z)
 =
@@ -49,11 +49,11 @@ It is given by the matrix
 \]
 Hence for
 \[
-u,v\in\mathbb R^3
+u,v\in\RR^3
 \]
 and
 \[
-a,b\in\mathbb R,
+a,b\in\RR,
 \]
 \[
 T(au+bv)

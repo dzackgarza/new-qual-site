@@ -25,9 +25,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $\alpha = \sqrt{2 + \sqrt{2}}$ in $\mathbb{C}$ and let $f$ be the minimal polynomial of $\alpha$ over $\mathbb{Q}$.
-Let $E$ be the splitting field for $f$ over $\mathbb{Q}$.
-Determine the Galois group $\operatorname{Gal}(E/\mathbb{Q})$.
+Let $\alpha = \sqrt{2 + \sqrt{2}}$ in $\CC$ and let $f$ be the minimal polynomial of $\alpha$ over $\QQ$.
+Let $E$ be the splitting field for $f$ over $\QQ$.
+Determine the Galois group $\operatorname{Gal}(E/\QQ)$.
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ Let
 
 ::: {.pf-step #s1}
 
-The minimal polynomial of $\alpha$ over $\mathbb Q$ is
+The minimal polynomial of $\alpha$ over $\QQ$ is
 \[
 f(x)=x^4-4x^2+2.
 \]
@@ -59,10 +59,10 @@ we have
 \]
 so $f(\alpha)=0$.
 The polynomial $f$ is Eisenstein at $2$: every nonleading coefficient is divisible by $2$, and the constant term $2$ is not divisible by $4$.
-Hence $f$ is irreducible over $\mathbb Q$.
+Hence $f$ is irreducible over $\QQ$.
 Therefore $f$ is the minimal polynomial of $\alpha$ and
 \[
-[\mathbb Q(\alpha):\mathbb Q]=4.
+[\QQ(\alpha):\QQ]=4.
 \]
 
 :::
@@ -96,13 +96,13 @@ Taking square roots gives precisely the four displayed roots.
 
 ::: {.pf-step #s3}
 
-The field $\mathbb Q(\alpha)$ already contains $\beta$.
+The field $\QQ(\alpha)$ already contains $\beta$.
 
 ::: pf-proof
 
 We have
 \[
-\sqrt2=\alpha^2-2\in\mathbb Q(\alpha).
+\sqrt2=\alpha^2-2\in\QQ(\alpha).
 \]
 Also
 \[
@@ -113,7 +113,7 @@ Also
 where the positive square root is taken because $\alpha,\beta>0$.
 Thus
 \[
-\beta=\frac{\sqrt2}{\alpha}\in\mathbb Q(\alpha).
+\beta=\frac{\sqrt2}{\alpha}\in\QQ(\alpha).
 \]
 
 :::
@@ -124,17 +124,17 @@ Thus
 
 The splitting field is
 \[
-E=\mathbb Q(\alpha).
+E=\QQ(\alpha).
 \]
 
 ::: pf-proof
 
-By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\mathbb Q(\alpha)$ contains all four roots $\pm\alpha,\pm\beta$ of $f$.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\QQ(\alpha)$ contains all four roots $\pm\alpha,\pm\beta$ of $f$.
 Hence it is the splitting field of $f$.
-Since $f$ is separable over the characteristic-zero field $\mathbb Q$, the extension $E/\mathbb Q$ is Galois.
+Since $f$ is separable over the characteristic-zero field $\QQ$, the extension $E/\QQ$ is Galois.
 By step [](#s1){.pf-ref},
 \[
-|\operatorname{Gal}(E/\mathbb Q)|=[E:\mathbb Q]=4.
+|\operatorname{Gal}(E/\QQ)|=[E:\QQ]=4.
 \]
 
 :::
@@ -143,7 +143,7 @@ By step [](#s1){.pf-ref},
 
 ::: {.pf-step #s5}
 
-There is an automorphism $\sigma\in\operatorname{Gal}(E/\mathbb Q)$ satisfying
+There is an automorphism $\sigma\in\operatorname{Gal}(E/\QQ)$ satisfying
 \[
 \sigma(\alpha)=\beta,
 \]
@@ -151,11 +151,11 @@ and it has order $4$.
 
 ::: pf-proof
 
-Because $\beta$ is another root of the irreducible polynomial $f$, the assignment $\alpha\mapsto\beta$ defines a $\mathbb Q$-embedding
+Because $\beta$ is another root of the irreducible polynomial $f$, the assignment $\alpha\mapsto\beta$ defines a $\QQ$-embedding
 \[
-\mathbb Q(\alpha)\longrightarrow E.
+\QQ(\alpha)\longrightarrow E.
 \]
-Since $E=\mathbb Q(\alpha)$ is finite over $\mathbb Q$, this embedding is an automorphism; call it $\sigma$.
+Since $E=\QQ(\alpha)$ is finite over $\QQ$, this embedding is an automorphism; call it $\sigma$.
 
 Now
 \[
@@ -189,7 +189,7 @@ Thus $\sigma$ has order $4$.
 
 Consequently
 \[
-\operatorname{Gal}(E/\mathbb Q)\cong C_4.
+\operatorname{Gal}(E/\QQ)\cong C_4.
 \]
 
 ::: pf-proof

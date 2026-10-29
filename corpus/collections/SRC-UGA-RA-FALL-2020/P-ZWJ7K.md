@@ -53,7 +53,7 @@ Open strict superlevel sets imply lower semicontinuity.
 
 ::: pf-proof
 
-Assume $\{f>a\}$ is open for every $a\in\mathbb R$. Fix $x$ and $a<f(x)$. Since $x\in\{f>a\}$, every sequence $y_n\to x$ is eventually in $\{f>a\}$, so
+Assume $\{f>a\}$ is open for every $a\in\RR$. Fix $x$ and $a<f(x)$. Since $x\in\{f>a\}$, every sequence $y_n\to x$ is eventually in $\{f>a\}$, so
 \[
 \liminf_{n\to\infty}f(y_n)\ge a.
 \]

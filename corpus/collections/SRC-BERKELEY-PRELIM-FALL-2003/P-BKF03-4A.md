@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-4A
 kind: problem
-title: An irreducible polynomial over $\mathbb Q$ that does not split in its stem field
+title: An irreducible polynomial over $\QQ$ that does not split in its stem field
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Give an example, with proof, of a nonconstant irreducible polynomial $f ( x )$ over Q with the property that $f ( x )$ does not factor into linear factors over the field $K = \mathbb { Q } [ x ] / ( f ( x ) )$ .
+Give an example, with proof, of a nonconstant irreducible polynomial $f ( x )$ over Q with the property that $f ( x )$ does not factor into linear factors over the field $K = \QQ [ x ] / ( f ( x ) )$ .
 :::
 
 
@@ -38,12 +38,12 @@ f(x)=x^3-2.
 ::: pf
 
 ::: {.pf-step #f-irreducible}
-The polynomial $f$ is irreducible over $\mathbb Q$.
+The polynomial $f$ is irreducible over $\QQ$.
 
 ::: pf-proof
 Apply Eisenstein's criterion with the prime $2$.
 The leading coefficient is not divisible by $2$, every other coefficient is divisible by $2$, and the constant term $-2$ is not divisible by $4$.
-Hence $x^3-2$ is irreducible in $\mathbb Q[x]$.
+Hence $x^3-2$ is irreducible in $\QQ[x]$.
 :::
 
 :::
@@ -51,20 +51,20 @@ Hence $x^3-2$ is irreducible in $\mathbb Q[x]$.
 ::: {.pf-step #K-embeds-in-R}
 The quotient field
 \[
-K=\mathbb Q[x]/(x^3-2)
+K=\QQ[x]/(x^3-2)
 \]
-is isomorphic to $\mathbb Q(\sqrt[3]{2})$, and therefore embeds in $\mathbb R$.
+is isomorphic to $\QQ(\sqrt[3]{2})$, and therefore embeds in $\RR$.
 
 ::: pf-proof
-Let $\alpha=\sqrt[3]{2}\in\mathbb R$.
+Let $\alpha=\sqrt[3]{2}\in\RR$.
 Since $f$ is irreducible and $f(\alpha)=0$, evaluation at $\alpha$ gives a surjective homomorphism
 \[
-\mathbb Q[x]\longrightarrow\mathbb Q(\alpha)
+\QQ[x]\longrightarrow\QQ(\alpha)
 \]
 whose kernel is $(x^3-2)$.
 Thus
 \[
-K\cong\mathbb Q(\alpha)\subset\mathbb R.
+K\cong\QQ(\alpha)\subset\RR.
 \]
 :::
 
@@ -74,7 +74,7 @@ K\cong\mathbb Q(\alpha)\subset\mathbb R.
 The polynomial $f$ does not split into linear factors over $K$.
 
 ::: pf-proof
-Over $\mathbb C$, the three roots are
+Over $\CC$, the three roots are
 \[
 \alpha,\qquad \omega\alpha,\qquad \omega^2\alpha,
 \]

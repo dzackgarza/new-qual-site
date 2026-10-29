@@ -106,7 +106,7 @@ $$
 
 ::: {.pf-step #s1-4}
 
-If $a<-1$, then the integral in step [](#s1-3){.pf-ref} converges for every $b\in\mathbb R$.
+If $a<-1$, then the integral in step [](#s1-3){.pf-ref} converges for every $b\in\RR$.
 
 
 ::: pf-proof
@@ -135,7 +135,7 @@ eventually, and the latter function is integrable on $[T,\infty)$.
 
 ::: {.pf-step #s1-5}
 
-If $a>-1$, then the series diverges for every $b\in\mathbb R$.
+If $a>-1$, then the series diverges for every $b\in\RR$.
 
 
 ::: pf-proof

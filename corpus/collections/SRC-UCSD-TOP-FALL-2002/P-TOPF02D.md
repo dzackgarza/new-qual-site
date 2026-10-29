@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be a finite-dimensional cell complex with only even-dimensional cells.
-Prove that $H_*(X; \mathbb{Z})$ is torsion-free.
+Prove that $H_*(X; \ZZ)$ is torsion-free.
 :::
 
 ::: {.solution}
@@ -25,7 +25,7 @@ Prove that $H_*(X; \mathbb{Z})$ is torsion-free.
 ::: pf-step
 In the cellular chain complex of $X$, every odd chain group vanishes:
 $$
-C_{2k+1}(X;\mathbb Z)=0.
+C_{2k+1}(X;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -46,9 +46,9 @@ A differential $\partial_{2k}$ has target $C_{2k-1}=0$, while a differential $\p
 ::: pf-step
 Hence
 $$
-H_{2k}(X;\mathbb Z)\cong C_{2k}(X;\mathbb Z),
+H_{2k}(X;\ZZ)\cong C_{2k}(X;\ZZ),
 \qquad
-H_{2k+1}(X;\mathbb Z)=0.
+H_{2k+1}(X;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -58,7 +58,7 @@ With all differentials zero, homology equals the chain group in each degree.
 :::
 
 ::: pf-step
-Therefore $H_*(X;\mathbb Z)$ is torsion-free.
+Therefore $H_*(X;\ZZ)$ is torsion-free.
 
 ::: pf-proof
 Each nonzero cellular chain group is free abelian, hence torsion-free, and the odd homology groups vanish.

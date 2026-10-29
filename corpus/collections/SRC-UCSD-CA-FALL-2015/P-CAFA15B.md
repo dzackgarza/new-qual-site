@@ -23,7 +23,7 @@ There is a non-constant function $f(z)$ such that $u^2 \leq v^2 + 2015$.
 
 (iii) There is a conformal map from the region $U = \{z = x + iy : 0 < x < 1\}$ to the region $\Delta = \{z : |z| < 1\}$.
 
-(iv) There are polynomials $p_1, p_2, \ldots$ such that $\left|\frac{1}{z(z-4)} - p_n(z)\right|$ converges uniformly to zero on the annulus $U = \{z \in \mathbb{C} : 2 < |z| < 3\}$, as $n$ tends to infinity.
+(iv) There are polynomials $p_1, p_2, \ldots$ such that $\left|\frac{1}{z(z-4)} - p_n(z)\right|$ converges uniformly to zero on the annulus $U = \{z \in \CC : 2 < |z| < 3\}$, as $n$ tends to infinity.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ There is a non-constant function $f(z)$ such that $u^2 \leq v^2 + 2015$.
 \]
 Hence $e^{f^2}$ is a bounded entire function, so by Liouville it is constant. Therefore $f^2$ is constant, hence $f$ is constant.
 
-**(ii) True.** The statement that $g(z)=f(1/z)$ has a pole at $0$ means that $f$ has a pole at infinity. Thus $f$ is a nonconstant polynomial. For every $w\in\mathbb C$, the polynomial $f(z)-w$ is nonconstant, so by the fundamental theorem of algebra it has a zero. Therefore $f$ is surjective.
+**(ii) True.** The statement that $g(z)=f(1/z)$ has a pole at $0$ means that $f$ has a pole at infinity. Thus $f$ is a nonconstant polynomial. For every $w\in\CC$, the polynomial $f(z)-w$ is nonconstant, so by the fundamental theorem of algebra it has a zero. Therefore $f$ is surjective.
 
 **(iii) True.** The map
 \[

@@ -13,7 +13,7 @@ audit:
   note: Checked against Problem 10 of the retained UCLA Basic Examination, Spring 2011.
 ---
 ::: {.problem}
-Let $f$ be defined on an open set $G\subset\mathbb R^2$, and let $(x_0,y_0)\in G$.
+Let $f$ be defined on an open set $G\subset\RR^2$, and let $(x_0,y_0)\in G$.
 
 ::: pf
 
@@ -45,7 +45,7 @@ p_0=(x_0,y_0)
 \]
 if there exists a linear map
 \[
-L:\mathbb R^2\to\mathbb R
+L:\RR^2\to\RR
 \]
 such that
 \[

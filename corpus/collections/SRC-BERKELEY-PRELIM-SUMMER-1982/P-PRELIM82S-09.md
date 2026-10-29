@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine all $z\in\mathbb C$ for which the power series
+Determine all $z\in\CC$ for which the power series
 \[
 \sum_{n=1}^{\infty}\frac{z^n}{n^{\log n}}
 \]

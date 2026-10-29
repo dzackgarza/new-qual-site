@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f(X) \in \mathbb{Z}[X]$ is monic irreducible of degree $7$, has a square discriminant, and has exactly three real roots.
+Suppose $f(X) \in \ZZ[X]$ is monic irreducible of degree $7$, has a square discriminant, and has exactly three real roots.
 Prove that $G_f$ is isomorphic either to $A_7$ or to the group $G_{168} = \mathrm{GL}(3, \mathbb{F}_2) \cong \mathrm{PSL}(2, \mathbb{F}_7)$.
 Note that $G_{168}$ is isomorphic to a subgroup of $S_7$, in fact of $A_7$, via the action of $G_{168} = \mathrm{GL}_3(\mathbb{F}_2)$ on the $7$ nonzero vectors in $\mathbb{F}_2^3$.
 
@@ -29,7 +29,7 @@ But it is even easier if you know that the only non-abelian simple groups of ord
 
 Let \(L\) be the splitting field of \(f\), let
 \[
-G=G_f=\operatorname{Gal}(L/\mathbb Q),
+G=G_f=\operatorname{Gal}(L/\QQ),
 \]
 and identify \(G\) with its faithful permutation action on the seven roots of \(f\).
 
@@ -42,13 +42,13 @@ The group \(G\) is a transitive subgroup of \(A_7\) and contains a double transp
 
 ::: pf-proof
 
-Since \(f\) is irreducible over \(\mathbb Q\), the Galois group acts transitively on its roots.
+Since \(f\) is irreducible over \(\QQ\), the Galois group acts transitively on its roots.
 
 If the roots are \(\alpha_1,\ldots,\alpha_7\), put
 \[
 V=\prod_{i<j}(\alpha_i-\alpha_j).
 \]
-Then \(V^2=\operatorname{disc}(f)\), and a permutation of the roots sends \(V\) to its sign times \(V\). By hypothesis the discriminant is a square in \(\mathbb Q\), so \(V\in\mathbb Q\). Every element of \(G\) therefore fixes \(V\), hence has sign \(+1\). Thus
+Then \(V^2=\operatorname{disc}(f)\), and a permutation of the roots sends \(V\) to its sign times \(V\). By hypothesis the discriminant is a square in \(\QQ\), so \(V\in\QQ\). Every element of \(G\) therefore fixes \(V\), hence has sign \(+1\). Thus
 \[
 G\le A_7.
 \]

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if a disk bundle $D^n \to E \to B$ has a Thom class with $\mathbb{Z}$ coefficients, then it is orientable.
+Show that if a disk bundle $D^n \to E \to B$ has a Thom class with $\ZZ$ coefficients, then it is orientable.
 :::
 
 ::: {.solution}
@@ -35,11 +35,11 @@ Let
 \]
 be the disk-bundle pair and let
 \[
-c\in H^n(E,E';\mathbb Z)
+c\in H^n(E,E';\ZZ)
 \]
 be a Thom class. For each \(b\in B\), its restriction
 \[
-c_b\in H^n(D_b^n,S_b^{n-1};\mathbb Z)\cong\mathbb Z
+c_b\in H^n(D_b^n,S_b^{n-1};\ZZ)\cong\ZZ
 \]
 is a generator, hence determines an orientation of the fiber.
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W5LVB
 kind: problem
-title: Abelian groups of order $60$, and $\mathbb{Q}[x]$-modules of dimension $4$
+title: Abelian groups of order $60$, and $\QQ[x]$-modules of dimension $4$
   annihilated by $x^8-1$
 classification:
   areas:
@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 a. List all abelian groups of order 60.
 
-b. List all $\mathbb{Q}[x]$-modules that are annihilated by $x^8 - 1$ and have dimension 4 when thought of as vector spaces over $\mathbb{Q}$.
+b. List all $\QQ[x]$-modules that are annihilated by $x^8 - 1$ and have dimension 4 when thought of as vector spaces over $\QQ$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ All classifications below are up to isomorphism.
 ::: {.pf-step #s1}
 
 The abelian groups of order $60$ are
-$C_{60}$ and $C_{30}\times C_2$, where $C_n=\mathbb Z/n\mathbb Z$.
+$C_{60}$ and $C_{30}\times C_2$, where $C_n=\ZZ/n\ZZ$.
 
 ::: pf-proof
 
@@ -85,12 +85,12 @@ M\cong E_1^{\oplus a}\oplus E_2^{\oplus b}
 $$
 where the multiplicities are nonnegative integers and
 $$
-E_1=\mathbb Q[x]/(x-1),\quad
-E_2=\mathbb Q[x]/(x+1),\quad
-E_4=\mathbb Q[x]/(x^2+1),\quad
-E_8=\mathbb Q[x]/(x^4+1).
+E_1=\QQ[x]/(x-1),\quad
+E_2=\QQ[x]/(x+1),\quad
+E_4=\QQ[x]/(x^2+1),\quad
+E_8=\QQ[x]/(x^4+1).
 $$
-Each quotient has its natural $\mathbb Q[x]$-module structure.
+Each quotient has its natural $\QQ[x]$-module structure.
 
 ::: pf-proof
 
@@ -108,10 +108,10 @@ monic irreducibles and are therefore pairwise coprime.
 
 The Chinese remainder theorem gives
 $$
-R=\mathbb Q[x]/(f)\cong E_1\times E_2\times E_4\times E_8
+R=\QQ[x]/(f)\cong E_1\times E_2\times E_4\times E_8
 $$
 [@DF04]. In particular, each $E_j$ is a field. Their
-dimensions over $\mathbb Q$ are respectively $1,1,2,4$:
+dimensions over $\QQ$ are respectively $1,1,2,4$:
 for a monic polynomial of degree $r$, polynomial division
 gives the basis $1,x,\ldots,x^{r-1}$ in its quotient.
 
@@ -126,13 +126,13 @@ $M=\bigoplus_j e_jM$.
 
 Each $e_jM$ is a vector space over $E_j$. It is
 finite-dimensional, since any linearly independent family
-over $E_j$ is also linearly independent over $\mathbb Q$
-and $\dim_{\mathbb Q}M=4$. Choose bases of sizes $a,b,c,d$.
+over $E_j$ is also linearly independent over $\QQ$
+and $\dim_{\QQ}M=4$. Choose bases of sizes $a,b,c,d$.
 This proves the claimed decomposition and dimension equation.
 Conversely, every direct sum satisfying that equation has
 dimension $4$ and is annihilated by $f$.
 
-A $\mathbb Q[x]$-module isomorphism commutes with the action
+A $\QQ[x]$-module isomorphism commutes with the action
 of each $e_j$ and hence restricts to an $E_j$-linear
 isomorphism on the corresponding summand. It therefore
 preserves all four multiplicities. Equal multiplicities

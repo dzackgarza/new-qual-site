@@ -69,7 +69,7 @@ c_1\\
 \vdots\\
 c_n
 \end{pmatrix}
-\in\mathbb R^n.
+\in\RR^n.
 \]
 Then
 \[
@@ -172,7 +172,7 @@ Therefore
 
 ::: {.pf-step #s1-5}
 
-For every nonzero $c\in\mathbb R^n$,
+For every nonzero $c\in\RR^n$,
 \[
 \boxed{c^tAc>0}.
 \]

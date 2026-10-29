@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $1\le p<\infty$ and let $U(z)$ be harmonic on $\mathbb C$ such that
+Let $1\le p<\infty$ and let $U(z)$ be harmonic on $\CC$ such that
 \[
-\iint_{\mathbb R\times\mathbb R}|U(x+iy)|^p\,dx\,dy<\infty.
+\iint_{\RR\times\RR}|U(x+iy)|^p\,dx\,dy<\infty.
 \]
-Prove that $U(z)=0$ for all $z=x+iy\in\mathbb C$.
+Prove that $U(z)=0$ for all $z=x+iy\in\CC$.
 :::
 
 ::: {.solution}

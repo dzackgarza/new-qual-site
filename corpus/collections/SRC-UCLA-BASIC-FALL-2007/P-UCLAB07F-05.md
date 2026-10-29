@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $f:[0,1]\to\mathbb R$ be continuous with $f(1)=0$.
+(a) Let $f:[0,1]\to\RR$ be continuous with $f(1)=0$.
 Show that there is a sequence of polynomials, each vanishing at $1$, that converges uniformly to $f$ on $[0,1]$.
 
 (b) If $f$ is continuous on $[0,1]$ and \[\int_0^1 f(x)(x-1)^k\,dx=0\qquad(k=1,2,\ldots),\] show that $f\equiv0$.
@@ -159,7 +159,7 @@ Using linearity of the integral and the moment hypotheses,
 
 ::: {.pf-step #s1-6}
 
-For every continuous function $g:[0,1]\to\mathbb R$ satisfying $g(1)=0$,
+For every continuous function $g:[0,1]\to\RR$ satisfying $g(1)=0$,
 \[
 \int_0^1 f(x)g(x)\,dx=0.
 \]

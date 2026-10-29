@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF80-6
 kind: problem
-title: Complex subrings of $M_2(\mathbb R)$ and a matrix polynomial equation
+title: Complex subrings of $M_2(\RR)$ and a matrix polynomial equation
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft

@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 180 degree rotations.
-Compute the homology $H_*(X; \mathbb{Z})$.
+Compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Compute the homology $H_*(X; \mathbb{Z})$.
 ::: {.pf-step #cellular-chain-groups}
 Under the three half-turn face pairings, the eight cube vertices fall into four equivalence classes, the twelve edges into six classes, and the six faces into three classes. Thus the quotient has cellular chain groups
 $$
-0\to \mathbb Z\xrightarrow{\partial_3}\mathbb Z^3\xrightarrow{\partial_2}\mathbb Z^6\xrightarrow{\partial_1}\mathbb Z^4\to0.
+0\to \ZZ\xrightarrow{\partial_3}\ZZ^3\xrightarrow{\partial_2}\ZZ^6\xrightarrow{\partial_1}\ZZ^4\to0.
 $$
 
 ::: pf-proof
@@ -74,7 +74,7 @@ which are exactly the displayed columns.
 ::: {.pf-step #h1-coker}
 Collapsing the spanning tree $e_0,e_2,e_4$ identifies
 $$
-H_1(X;\mathbb Z)\cong \operatorname{coker}
+H_1(X;\ZZ)\cong \operatorname{coker}
 \begin{pmatrix}
 0&-1&1\\
 -1&0&-1\\
@@ -95,7 +95,7 @@ $$
 $$
 so
 $$
-H_1(X;\mathbb Z)\cong\mathbb Z/2.
+H_1(X;\ZZ)\cong\ZZ/2.
 $$
 
 ::: pf-proof
@@ -105,7 +105,7 @@ The matrix has determinant $2$, and one of its $2\times2$ minors is $\pm1$. Henc
 :::
 
 ::: {.pf-step #h2-zero}
-The map $\partial_2$ is injective, so $H_2(X;\mathbb Z)=0$ once $\partial_3=0$.
+The map $\partial_2$ is injective, so $H_2(X;\ZZ)=0$ once $\partial_3=0$.
 
 ::: pf-proof
 The $3\times3$ minor used in step [](#h1-coker){.pf-ref} has determinant $2\ne0$, hence $\partial_2$ has rank $3$, equal to the rank of its domain.
@@ -125,16 +125,16 @@ For each quotient $2$-cell, the two opposite cube faces occur in the boundary of
 ::: pf-step
 Therefore
 $$
-\boxed{H_i(X;\mathbb Z)\cong
+\boxed{H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,3,\\
-\mathbb Z/2,&i=1,\\
+\ZZ,&i=0,3,\\
+\ZZ/2,&i=1,\\
 0,&i=2\text{ or }i>3.
 \end{cases}}
 $$
 
 ::: pf-proof
-The quotient is connected, giving $H_0\cong\mathbb Z$. Combine steps [](#h1-smith-form){.pf-ref}, [](#h2-zero){.pf-ref} and [](#partial3-zero){.pf-ref} with the cellular chain complex in step [](#cellular-chain-groups){.pf-ref}.
+The quotient is connected, giving $H_0\cong\ZZ$. Combine steps [](#h1-smith-form){.pf-ref}, [](#h2-zero){.pf-ref} and [](#partial3-zero){.pf-ref} with the cellular chain complex in step [](#cellular-chain-groups){.pf-ref}.
 :::
 
 :::

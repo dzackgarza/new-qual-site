@@ -52,14 +52,14 @@ The cellular chain complexes are
 C_k(S^n)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,n,\\
+\ZZ,&k=0,n,\\
 0,&\text{otherwise},
 \end{cases}
 \qquad
 C_k(S^m)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,m,\\
+\ZZ,&k=0,m,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -140,10 +140,10 @@ on the entire cellular chain complex of $S^n\times S^m$.
 
 If $n\ne m$, then
 \[
-H_k(S^n\times S^m;\mathbb Z)
+H_k(S^n\times S^m;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,n,m,n+m,\\
+\ZZ,&k=0,n,m,n+m,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -165,11 +165,11 @@ Therefore cellular homology equals the cellular chain group in each degree, givi
 
 If $n=m\ge1$, then
 \[
-H_k(S^n\times S^n;\mathbb Z)
+H_k(S^n\times S^n;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,2n,\\
-\mathbb Z^2,&k=n,\\
+\ZZ,&k=0,2n,\\
+\ZZ^2,&k=n,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -185,9 +185,9 @@ e^0\times e^n
 have the same dimension $n$.
 Thus
 \[
-C_n(S^n\times S^n)\cong\mathbb Z^2,
+C_n(S^n\times S^n)\cong\ZZ^2,
 \]
-while $C_0$ and $C_{2n}$ are each $\mathbb Z$.
+while $C_0$ and $C_{2n}$ are each $\ZZ$.
 Again step [](#s3){.pf-ref} makes all differentials zero.
 
 :::
@@ -198,9 +198,9 @@ Again step [](#s3){.pf-ref} makes all differentials zero.
 
 Equivalently, for $n,m\ge1$ the answer can be written uniformly as
 \[
-H_k(S^n\times S^m;\mathbb Z)
+H_k(S^n\times S^m;\ZZ)
 \cong
-\bigoplus_{j\in\{0,n,m,n+m\}\,:\,j=k}\mathbb Z,
+\bigoplus_{j\in\{0,n,m,n+m\}\,:\,j=k}\ZZ,
 \]
 where repeated dimensions contribute separate summands.
 
@@ -224,10 +224,10 @@ S^0\times S^m\cong S^m\amalg S^m,
 \]
 so
 \[
-H_k(S^0\times S^m;\mathbb Z)
+H_k(S^0\times S^m;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z^2,&k=0,m,\\
+\ZZ^2,&k=0,m,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -238,7 +238,7 @@ S^0\times S^0
 \]
 is a four-point discrete space, so its only nonzero homology group is
 \[
-H_0(S^0\times S^0;\mathbb Z)\cong\mathbb Z^4.
+H_0(S^0\times S^0;\ZZ)\cong\ZZ^4.
 \]
 
 :::

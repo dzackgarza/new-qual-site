@@ -44,13 +44,13 @@ i:A\hookrightarrow X
 \]
 would be a homotopy equivalence and therefore induce an isomorphism on fundamental groups. But
 \[
-\pi_1(A)\cong\mathbb Z,
+\pi_1(A)\cong\ZZ,
 \qquad
-\pi_1(X)\cong\mathbb Z^2,
+\pi_1(X)\cong\ZZ^2,
 \]
 and, under these identifications, the diagonal inclusion induces
 \[
-i_*:\mathbb Z\to\mathbb Z^2,
+i_*:\ZZ\to\ZZ^2,
 \qquad
 n\longmapsto(n,n),
 \]

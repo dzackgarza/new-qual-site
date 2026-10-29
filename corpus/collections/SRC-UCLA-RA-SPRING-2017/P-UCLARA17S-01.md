@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $K\subset\mathbb R$ be a compact set of positive measure and let $f\in L^\infty(\mathbb R)$. Show that
+Let $K\subset\RR$ be a compact set of positive measure and let $f\in L^\infty(\RR)$. Show that
 \[
 F(x)=\frac1{|K|}\int_K f(x+t)\,dt
 \]
-is uniformly continuous on $\mathbb R$. Here $|K|$ denotes the Lebesgue measure of $K$.
+is uniformly continuous on $\RR$. Here $|K|$ denotes the Lebesgue measure of $K$.
 :::
 
 ::: {.solution}

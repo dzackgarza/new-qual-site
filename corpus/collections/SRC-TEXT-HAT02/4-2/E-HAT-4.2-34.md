@@ -39,7 +39,7 @@ For homotopy groups, \(\pi_1(S^2)=0\), while
 \[
 \pi_i(T^3)=0\qquad(i>1)
 \]
-because the universal cover of \(T^3\) is \(\mathbb R^3\). Hence \(f_*\) is zero on every homotopy group.
+because the universal cover of \(T^3\) is \(\RR^3\). Hence \(f_*\) is zero on every homotopy group.
 
 For reduced homology, \(q_*\) is zero in degrees \(1\) and \(2\) because \(S^3\) has no homology there, and
 \[
@@ -63,9 +63,9 @@ Contravariantly, this gives
 \[
 H^*(C_p)\longrightarrow H^*(C_f).
 \]
-The Hopf mapping cone is \(C_p\simeq\mathbb{CP}^2\). If \(x\in H^2(C_p;\mathbb Z)\) is its standard generator, then
+The Hopf mapping cone is \(C_p\simeq\mathbb{CP}^2\). If \(x\in H^2(C_p;\ZZ)\) is its standard generator, then
 \[
-x^2\ne0\in H^4(C_p;\mathbb Z).
+x^2\ne0\in H^4(C_p;\ZZ).
 \]
 The induced map is an isomorphism in degree \(2\), since it is the identity on the \(S^2\) subspace. In degree \(4\), the quotient description of mapping cones identifies the induced map with the suspension of
 \[

@@ -33,7 +33,7 @@ $$
 :::
 
 ::: {.solution}
-First consider the square lattice. For $p=(m,n)\in\mathbb Z^2\setminus\{0\}$, let $Q_p=p+[-1/2,1/2]^2$. For $|p|\ge2$ and $x\in Q_p$, the mean-value theorem applied to $r\mapsto r^{-2}$ gives
+First consider the square lattice. For $p=(m,n)\in\ZZ^2\setminus\{0\}$, let $Q_p=p+[-1/2,1/2]^2$. For $|p|\ge2$ and $x\in Q_p$, the mean-value theorem applied to $r\mapsto r^{-2}$ gives
 \[
 \left|\frac1{|x|^2}-\frac1{|p|^2}\right|
 \le \frac{C}{|p|^3},
@@ -69,7 +69,7 @@ Now let $\tau\in\mathbb H$. Since the real-linear map
 \[
 (m,n)\longmapsto n+m\tau
 \]
-is an isomorphism $\mathbb R^2\to\mathbb C$, there is $C>0$ such that
+is an isomorphism $\RR^2\to\CC$, there is $C>0$ such that
 \[
 |n+m\tau|\le C\sqrt{m^2+n^2}
 \]

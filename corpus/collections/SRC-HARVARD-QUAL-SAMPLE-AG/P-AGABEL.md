@@ -27,10 +27,10 @@ State Abel's theorem.
 :::
 
 ::: {.solution}
-Let $X$ be a smooth projective connected curve over $\mathbb C$.  Its Jacobian is
+Let $X$ be a smooth projective connected curve over $\CC$.  Its Jacobian is
 \[
 \operatorname{Jac}(X)
-=H^0(X,\Omega_X^1)^\vee/H_1(X,\mathbb Z),
+=H^0(X,\Omega_X^1)^\vee/H_1(X,\ZZ),
 \]
 where the homology group is embedded as the period lattice.
 

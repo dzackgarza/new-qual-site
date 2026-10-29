@@ -58,7 +58,7 @@ X_G\cong\mathbb{RP}^2\vee S^1\vee S^1.
 \]
 By van Kampen,
 \[
-\pi_1(X_G)\cong(\mathbb Z/2)*\mathbb Z*\mathbb Z,
+\pi_1(X_G)\cong(\ZZ/2)*\ZZ*\ZZ,
 \]
 which is precisely the presented group.
 :::

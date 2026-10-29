@@ -14,22 +14,22 @@ audit:
 ---
 
 ::: {.problem}
-A function $f:\mathbb R^d\to\mathbb R$ is convex if
+A function $f:\RR^d\to\RR$ is convex if
 \[
 f(tx+(1-t)y)\le tf(x)+(1-t)f(y)
 \]
-for all $x,y\in\mathbb R^d$ and $0\le t\le1$.
+for all $x,y\in\RR^d$ and $0\le t\le1$.
 
 Assume that $f$ is continuously differentiable and
 \[
 (\nabla f(x)-\nabla f(y))\cdot(x-y)\ge0
 \]
-for all $x,y\in\mathbb R^d$. Prove that $f$ is convex.
+for all $x,y\in\RR^d$. Prove that $f$ is convex.
 :::
 
 ::: {.solution}
 
-Fix $x,y\in\mathbb R^d$ and put
+Fix $x,y\in\RR^d$ and put
 \[
 v=x-y,
 \qquad

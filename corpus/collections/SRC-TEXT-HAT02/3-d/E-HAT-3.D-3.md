@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the Pontryagin ring structure in $H_*(SO(5); \mathbb{Z})$.
+Compute the Pontryagin ring structure in $H_*(SO(5); \ZZ)$.
 :::
 
 ::: {.solution}
@@ -26,7 +26,7 @@ Compute the Pontryagin ring structure in $H_*(SO(5); \mathbb{Z})$.
 
 ::: {.pf-step #s1}
 
-$SO(5)$ has $H_*(SO(5); \mathbb{Z}) \cong \Lambda_\mathbb{Z}[x_1, x_3]$ (exterior algebra on generators of degrees $1$ and $3$), as an abelian group.
+$SO(5)$ has $H_*(SO(5); \ZZ) \cong \Lambda_\ZZ[x_1, x_3]$ (exterior algebra on generators of degrees $1$ and $3$), as an abelian group.
 
 ::: pf-proof
 
@@ -50,7 +50,7 @@ the group structure gives a Hopf algebra structure on homology.
 
 ::: {.pf-step #s3}
 
-Since $H_*(SO(5))$ is an exterior algebra on primitive generators $x_1$ (degree $1$) and $x_3$ (degree $3$), the Pontryagin ring is exactly the exterior algebra $\Lambda_\mathbb{Z}[x_1, x_3]$.
+Since $H_*(SO(5))$ is an exterior algebra on primitive generators $x_1$ (degree $1$) and $x_3$ (degree $3$), the Pontryagin ring is exactly the exterior algebra $\Lambda_\ZZ[x_1, x_3]$.
 
 ::: pf-proof
 
@@ -62,7 +62,7 @@ the generators are primitive (they come from the sphere factors in the CW struct
 
 ::: {.pf-step #s4}
 
-Hence the Pontryagin ring is $H_*(SO(5)) \cong \Lambda_\mathbb{Z}[x_1, x_3]$ with $|x_1| = 1$, $|x_3| = 3$, and $x_1^2 = x_3^2 = 0$, $x_1 x_3 = -x_3 x_1$.
+Hence the Pontryagin ring is $H_*(SO(5)) \cong \Lambda_\ZZ[x_1, x_3]$ with $|x_1| = 1$, $|x_3| = 3$, and $x_1^2 = x_3^2 = 0$, $x_1 x_3 = -x_3 x_1$.
 
 ::: pf-proof
 

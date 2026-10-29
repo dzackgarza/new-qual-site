@@ -36,7 +36,7 @@ Prove every ideal $I$ in $R$ is principal, i.e. is a cyclic module.
 ::: {.solution}
 Let
 $$
-\delta:R\setminus\{0\}\longrightarrow\mathbb Z
+\delta:R\setminus\{0\}\longrightarrow\ZZ
 $$
 be a Euclidean size function.
 
@@ -52,7 +52,7 @@ The set
 $$
 \{\delta(y):0\ne y\in I\}
 $$
-is a nonempty subset of $\mathbb Z$ bounded below, so it has a least element.
+is a nonempty subset of $\ZZ$ bounded below, so it has a least element.
 Choose $0\ne x\in I$ attaining that minimum.
 
 :::

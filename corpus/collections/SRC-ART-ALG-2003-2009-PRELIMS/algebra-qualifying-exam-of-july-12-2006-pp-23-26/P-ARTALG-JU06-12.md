@@ -24,7 +24,7 @@ audit:
   note: "Verified the characteristic polynomial, determinant of the cyclic-basis matrix, and the complete exact matrix identity AP=PC."
 ---
 ::: {.problem}
-Find the rational canonical form over $\mathbb{Q}$ of the following matrix:
+Find the rational canonical form over $\QQ$ of the following matrix:
 
 $$\begin{pmatrix} 3 & -1 & 10 \\ 0 & 2 & 5 \\ 0 & 0 & 3 \end{pmatrix}.$$
 :::
@@ -64,7 +64,7 @@ $$
 P=\begin{pmatrix}0&10&55\\0&5&25\\1&3&9\end{pmatrix},
 \qquad \det P=10\cdot25-55\cdot5=-25\ne0.
 $$
-Thus these three vectors form a basis of $\mathbb Q^3$.
+Thus these three vectors form a basis of $\QQ^3$.
 
 :::
 

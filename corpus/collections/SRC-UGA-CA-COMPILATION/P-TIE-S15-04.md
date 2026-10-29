@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is analytic in an open set containing the unit disc $\mathbb{D}$ and $\abs{f(z)} = 1$ when $\abs{z} = 1$. Show that either $f(z) = e^{i\theta}$ for some $\theta \in \mathbb{R}$ or there are finite number of $z_k \in \mathbb{D}$, $k \le n$ and $\theta \in \mathbb{R}$ such that
+Suppose $f$ is analytic in an open set containing the unit disc $\mathbb{D}$ and $\abs{f(z)} = 1$ when $\abs{z} = 1$. Show that either $f(z) = e^{i\theta}$ for some $\theta \in \RR$ or there are finite number of $z_k \in \mathbb{D}$, $k \le n$ and $\theta \in \RR$ such that
 $$
 f(z) = e^{i\theta} \prod_{k=1}^n \frac{z - z_k}{1 - \bar{z}_k z}.
 $$

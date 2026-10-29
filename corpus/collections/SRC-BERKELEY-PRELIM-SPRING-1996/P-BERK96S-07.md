@@ -29,7 +29,7 @@ Prove that
 \[
 x^4+x^3+x^2+6x+1
 \]
-is irreducible over $\mathbb Q$.
+is irreducible over $\QQ$.
 :::
 
 ::: {.solution}

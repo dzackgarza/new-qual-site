@@ -26,12 +26,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $I\triangleleft\mathbb C[x_1,\ldots,x_n]$ be an ideal such that $\sqrt I$ is maximal.
+Let $I\triangleleft\CC[x_1,\ldots,x_n]$ be an ideal such that $\sqrt I$ is maximal.
 Prove that
 \[
-\mathbb C[x_1,\ldots,x_n]/I
+\CC[x_1,\ldots,x_n]/I
 \]
-is finite-dimensional over $\mathbb C$.
+is finite-dimensional over $\CC$.
 :::
 
 ::: {.solution}

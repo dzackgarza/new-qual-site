@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRELIM82S-07
 kind: problem
-title: Determinant of $X\mapsto(AX+XA)/2$ on $M_3(\mathbb R)$
+title: Determinant of $X\mapsto(AX+XA)/2$ on $M_3(\RR)$
 classification:
   areas:
   - prelim
@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V=M_3(\mathbb R)$ and let
+Let $V=M_3(\RR)$ and let
 \[
 A=\begin{pmatrix}
 1&0&0\\

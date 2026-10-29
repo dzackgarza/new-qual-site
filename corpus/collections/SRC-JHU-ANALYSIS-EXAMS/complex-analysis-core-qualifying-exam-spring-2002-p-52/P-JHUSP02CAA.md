@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Let f be an entire function such that the image of f does not intersect $\{ z \in \mathbb { R } : z \geq 5 \}$ . Prove that $f$ is a constant.
+1. Let f be an entire function such that the image of f does not intersect $\{ z \in \RR : z \geq 5 \}$ . Prove that $f$ is a constant.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ The entire function $5-f$ takes values in $\CC\setminus(-\infty,0]$.
 
 ::: pf-proof
 
-By hypothesis $f(z)\notin[5,\infty)$ for every $z$, so $5-f(z)\notin(-\infty,0]$. Thus the entire function $5-f$ takes values in $\mathbb C\setminus(-\infty,0]$.
+By hypothesis $f(z)\notin[5,\infty)$ for every $z$, so $5-f(z)\notin(-\infty,0]$. Thus the entire function $5-f$ takes values in $\CC\setminus(-\infty,0]$.
 
 :::
 

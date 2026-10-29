@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_1$ and its homotopy fiber $F_f$ has $\tilde{H}_*(F_f; \mathbb{Z}) = 0$.
+Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_1$ and its homotopy fiber $F_f$ has $\tilde{H}_*(F_f; \ZZ) = 0$.
 :::
 
 ::: {.solution}
@@ -44,7 +44,7 @@ is the zero homomorphism.
 
 By Exercise 10, the usual action of \(\pi_1(F_f)\) on every \(\pi_n(F_f)\), including conjugation on \(\pi_1(F_f)\), factors through \(\pi_1(E_f)\). Hence this action is trivial. In particular \(\pi_1(F_f)\) is abelian. Since
 \[
-\widetilde H_1(F_f;\mathbb Z)=0,
+\widetilde H_1(F_f;\ZZ)=0,
 \]
 its abelianization is zero, so
 \[

@@ -25,7 +25,7 @@ Let $\theset{A_i}^n \in \mathbf{Ab}$ be finitely generated, show $\exists X \mid
 
 Write each finitely generated abelian group as
 $$
-A_i\cong \mathbb Z^{r_i}\oplus\bigoplus_{j=1}^{s_i}\mathbb Z/d_{ij},
+A_i\cong \ZZ^{r_i}\oplus\bigoplus_{j=1}^{s_i}\ZZ/d_{ij},
 \qquad d_{ij}\ge2.
 $$
 
@@ -39,11 +39,11 @@ This is the structure theorem for finitely generated abelian groups.
 
 ::: pf-step
 
-For $i\ge1$, realize the free summand $\mathbb Z^{r_i}$ by a wedge of $r_i$ copies of $S^i$.
+For $i\ge1$, realize the free summand $\ZZ^{r_i}$ by a wedge of $r_i$ copies of $S^i$.
 
 ::: pf-proof
 
-The reduced homology of $S^i$ is $\mathbb Z$ in degree $i$ and zero elsewhere.
+The reduced homology of $S^i$ is $\ZZ$ in degree $i$ and zero elsewhere.
 
 :::
 
@@ -51,18 +51,18 @@ The reduced homology of $S^i$ is $\mathbb Z$ in degree $i$ and zero elsewhere.
 
 ::: pf-step
 
-Realize each torsion summand $\mathbb Z/d_{ij}$ in degree $i$ by the Moore space
+Realize each torsion summand $\ZZ/d_{ij}$ in degree $i$ by the Moore space
 $$
-M(\mathbb Z/d_{ij},i)=S^i\cup_{d_{ij}}e^{i+1}.
+M(\ZZ/d_{ij},i)=S^i\cup_{d_{ij}}e^{i+1}.
 $$
 
 ::: pf-proof
 
 Its cellular chain complex in positive degrees has
 $$
-0\to\mathbb Z\xrightarrow{d_{ij}}\mathbb Z\to0
+0\to\ZZ\xrightarrow{d_{ij}}\ZZ\to0
 $$
-concentrated in degrees $i+1$ and $i$, hence reduced homology $\mathbb Z/d_{ij}$ in degree $i$ and zero elsewhere.
+concentrated in degrees $i+1$ and $i$, hence reduced homology $\ZZ/d_{ij}$ in degree $i$ and zero elsewhere.
 
 :::
 
@@ -84,9 +84,9 @@ There are finitely many summands because every $A_i$ is finitely generated and o
 
 Then for every $1\le i\le n$,
 $$
-\widetilde H_i(X;\mathbb Z)\cong A_i,
+\widetilde H_i(X;\ZZ)\cong A_i,
 $$
-and $\widetilde H_k(X;\mathbb Z)=0$ for $k>n$.
+and $\widetilde H_k(X;\ZZ)=0$ for $k>n$.
 
 ::: pf-proof
 
@@ -98,11 +98,11 @@ Reduced homology takes wedges of based CW complexes to direct sums. The only cel
 
 ::: pf-step
 
-If the requested $A_0$ is $\mathbb Z^c$ for some finite $c\ge1$, take the disjoint union of $c$ connected constructions, distributing the positive-degree summands among the components; then $H_0\cong\mathbb Z^c$.
+If the requested $A_0$ is $\ZZ^c$ for some finite $c\ge1$, take the disjoint union of $c$ connected constructions, distributing the positive-degree summands among the components; then $H_0\cong\ZZ^c$.
 
 ::: pf-proof
 
-For any space, $H_0$ is free abelian on its path components. Hence only free abelian groups can occur as $H_0$. In the usual connected formulation one necessarily has $A_0\cong\mathbb Z$.
+For any space, $H_0$ is free abelian on its path components. Hence only free abelian groups can occur as $H_0$. In the usual connected formulation one necessarily has $A_0\cong\ZZ$.
 
 :::
 

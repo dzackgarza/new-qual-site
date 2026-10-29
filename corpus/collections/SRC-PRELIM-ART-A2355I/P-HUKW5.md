@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HUKW5
 kind: problem
-title: The Jacobian matrix of a map $\mathbb{R}^n\to\mathbb{R}^m$, and the Jacobian
+title: The Jacobian matrix of a map $\RR^n\to\RR^m$, and the Jacobian
   of $(r\cos\theta,r\sin\theta)$ at the origin
 classification:
   areas:
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Define the Jacobian matrix of a mapping $f: \mathbb{R}^n \to \mathbb{R}^m$ at a point $a = (a_1, \dots, a_n)$ of $\mathbb{R}^n$.
+Define the Jacobian matrix of a mapping $f: \RR^n \to \RR^m$ at a point $a = (a_1, \dots, a_n)$ of $\RR^n$.
 Compute the Jacobian matrix of $f(r,\theta) = (r\cos\theta, r\sin\theta)$ at $a = (0,0)$.
 :::
 
@@ -32,7 +32,7 @@ Definition of the Jacobian matrix:
 ::: pf-proof
 
 ::: pf-step
-Let $f: \mathbb{R}^n \to \mathbb{R}^m$ be given by coordinate functions $f(x) = (f_1(x), f_2(x), \dots, f_m(x))^T$ for $x = (x_1, \dots, x_n) \in \mathbb{R}^n$.
+Let $f: \RR^n \to \RR^m$ be given by coordinate functions $f(x) = (f_1(x), f_2(x), \dots, f_m(x))^T$ for $x = (x_1, \dots, x_n) \in \RR^n$.
 
 ::: pf-proof
 vector-valued function definition.
@@ -41,7 +41,7 @@ vector-valued function definition.
 :::
 
 ::: pf-step
-If the partial derivatives $\frac{\partial f_i}{\partial x_j}(a)$ exist at $a \in \mathbb{R}^n$ for all $1 \le i \le m$ and $1 \le j \le n$, the \dfn{Jacobian matrix} $J_f(a) \in M_{m \times n}(\mathbb{R})$ is defined as:
+If the partial derivatives $\frac{\partial f_i}{\partial x_j}(a)$ exist at $a \in \RR^n$ for all $1 \le i \le m$ and $1 \le j \le n$, the \dfn{Jacobian matrix} $J_f(a) \in M_{m \times n}(\RR)$ is defined as:
 \[
 J_f(a) = \begin{pmatrix}
 \frac{\partial f_1}{\partial x_1}(a) & \frac{\partial f_1}{\partial x_2}(a) & \cdots & \frac{\partial f_1}{\partial x_n}(a) \\

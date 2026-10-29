@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-For any $n \in \mathbb{N}$, find all Lebesgue measurable sets $E \subseteq \mathbb{R}^n$ such that there exists some $f_E \in L^1(\mathbb{R}^n)$ satisfying
+For any $n \in \NN$, find all Lebesgue measurable sets $E \subseteq \RR^n$ such that there exists some $f_E \in L^1(\RR^n)$ satisfying
 \[
 \lim_{r \to 0} \frac{1}{m(B(r, x))} \int_{B(r, x)} f_E(y)\, dy = \infty
 \quad\text{for each } x \in E.
@@ -41,7 +41,7 @@ Necessity: such a set must have measure zero.
 
 ::: pf-proof
 
-Suppose there exists $f_E\in L^1(\mathbb R^n)$ such that
+Suppose there exists $f_E\in L^1(\RR^n)$ such that
 \[
 \lim_{r\to0}
 \frac1{m(B(r,x))}\int_{B(r,x)}f_E(y)\,dy
@@ -49,7 +49,7 @@ Suppose there exists $f_E\in L^1(\mathbb R^n)$ such that
 \]
 for every $x\in E$.
 
-By the Lebesgue differentiation theorem, for almost every $x\in\mathbb R^n$,
+By the Lebesgue differentiation theorem, for almost every $x\in\RR^n$,
 \[
 \lim_{r\to0}
 \frac1{m(B(r,x))}\int_{B(r,x)}f_E(y)\,dy
@@ -85,9 +85,9 @@ By Tonelli,
 =\sum_{k=1}^\infty m(U_k)
 <\infty,
 \]
-so $f_E\in L^1(\mathbb R^n)$.
+so $f_E\in L^1(\RR^n)$.
 
-Fix $x\in E$ and $N\in\mathbb N$. Since
+Fix $x\in E$ and $N\in\NN$. Since
 \[
 x\in\bigcap_{k=1}^N U_k
 \]
@@ -114,7 +114,7 @@ Thus every measurable null set works.
 
 Consequently the desired sets are exactly
 \[
-\boxed{\{E\subset\mathbb R^n:E\text{ measurable and }m(E)=0\}.}
+\boxed{\{E\subset\RR^n:E\text{ measurable and }m(E)=0\}.}
 \]
 
 :::

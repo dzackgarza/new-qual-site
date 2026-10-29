@@ -159,7 +159,7 @@ so the conclusion can be written as
 
 The antipodal map is the restriction to $S^n$ of the linear isomorphism
 \[
--I:\mathbb R^{n+1}\to\mathbb R^{n+1}.
+-I:\RR^{n+1}\to\RR^{n+1}.
 \]
 The degree of the sphere map induced by an invertible linear map is the sign of its determinant.
 Since

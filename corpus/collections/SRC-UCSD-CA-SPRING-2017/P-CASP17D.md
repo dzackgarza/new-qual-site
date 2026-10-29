@@ -50,7 +50,7 @@ For (ii), the points
 b_n=n\sqrt n
 \]
 form a discrete set. By the Mittag--Leffler theorem there is a meromorphic
-function on $\mathbb C$ whose principal part at $b_n$ is
+function on $\CC$ whose principal part at $b_n$ is
 \[
 \frac{\sqrt n}{z-b_n}
 \]

@@ -27,7 +27,7 @@ $$
 v_1,\ldots,v_n.
 $$
 Since $A$ is orthogonal, these columns form an orthonormal basis of
-$\mathbb R^n$.
+$\RR^n$.
 
 ::: pf
 
@@ -40,7 +40,7 @@ The first column $v_1$ has $n-1$ independent parameters.
 
 The vector $v_1$ lies on the unit sphere
 $$
-S^{n-1}\subset\mathbb R^n,
+S^{n-1}\subset\RR^n,
 $$
 which has dimension $n-1$.
 

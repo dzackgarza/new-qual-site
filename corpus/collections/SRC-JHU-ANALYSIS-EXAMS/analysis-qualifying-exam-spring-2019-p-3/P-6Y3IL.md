@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6Y3IL
 kind: problem
-title: Weak convergence plus pointwise decay need not imply strong convergence in $L^2(\mathbb R^d)$
+title: Weak convergence plus pointwise decay need not imply strong convergence in $L^2(\RR^d)$
 classification:
   areas:
   - real-analysis
@@ -24,16 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-Question 1.1. Suppose that $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { d } ) , j = 1 , 2 , . . . ,$ and $f \in L ^ { 2 } (  { \mathbb { R } } ^ { d } )$ satisfy
+Question 1.1. Suppose that $f _ { j } \in L ^ { 2 } ( \RR ^ { d } ) , j = 1 , 2 , . . . ,$ and $f \in L ^ { 2 } (  { \RR } ^ { d } )$ satisfy
 
 $$
-\operatorname* { l i m } _ { j \to \infty } \int _ { \mathbb { R } ^ { d } } f _ { j } g = \int _ { \mathbb { R } ^ { d } } f g
+\operatorname* { l i m } _ { j \to \infty } \int _ { \RR ^ { d } } f _ { j } g = \int _ { \RR ^ { d } } f g
 $$
 
-for all $g \in L ^ { 2 } (  { \mathbb { R } } ^ { d } )$ . That is, $f _ { j }$ converges to f weakly in $L ^ { 2 } .$ . Suppose that the sequence satisfies the uniform bound
+for all $g \in L ^ { 2 } (  { \RR } ^ { d } )$ . That is, $f _ { j }$ converges to f weakly in $L ^ { 2 } .$ . Suppose that the sequence satisfies the uniform bound
 
 $$
-\operatorname* { s u p } _ { x \in \mathbb { R } ^ { d } } ( 1 + | x | ) ^ { d } | f _ { j } ( x ) | \leq M < \infty .\tag{A}
+\operatorname* { s u p } _ { x \in \RR ^ { d } } ( 1 + | x | ) ^ { d } | f _ { j } ( x ) | \leq M < \infty .\tag{A}
 $$
 
 Determine whether condition (A), together with weak convergence, implies
@@ -63,7 +63,7 @@ f_j(x)=\mathbf1_Q(x)\sin(2\pi jx_1),
 \qquad
 f=0.
 \]
-Then $f_j\in L^2(\mathbb R^d)$ and, on $Q$,
+Then $f_j\in L^2(\RR^d)$ and, on $Q$,
 \[
 (1+|x|)^d|f_j(x)|\le (1+\sqrt d)^d.
 \]
@@ -82,7 +82,7 @@ Prove weak convergence to zero.
 
 ::: pf-proof
 
-Fix $g\in L^2(\mathbb R^d)$. Since $Q$ has finite measure,
+Fix $g\in L^2(\RR^d)$. Since $Q$ has finite measure,
 \[
 g\mathbf1_Q\in L^1(Q)
 \]
@@ -92,13 +92,13 @@ h(t):=\int_{[0,1]^{d-1}}g(t,x')\,dx'.
 \]
 Therefore
 \[
-\int_{\mathbb R^d}f_j(x)g(x)\,dx
+\int_{\RR^d}f_j(x)g(x)\,dx
 =\int_0^1 h(t)\sin(2\pi jt)\,dt.
 \]
 By the Riemann--Lebesgue lemma, the right-hand side tends to $0$. Thus
 \[
 f_j\rightharpoonup0
-\quad\text{in }L^2(\mathbb R^d).
+\quad\text{in }L^2(\RR^d).
 \]
 
 :::

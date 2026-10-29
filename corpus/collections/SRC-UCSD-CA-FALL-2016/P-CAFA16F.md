@@ -22,7 +22,7 @@ For $n \geq 1$, define $f_n: \mathbb{D} \to \mathbb{D}$ by $f_n(z) = \prod_{k=1}
 
 (a) Prove that the sequence $\{f_n\}$ converges to an analytic function $f: \mathbb{D} \to \mathbb{D}$, uniformly on compact subsets of $\mathbb{D}$.
 
-(b) Prove that there do not exist an open set $U \subset \mathbb{C}$ and an analytic function $g: U \to \mathbb{C}$ such that $\overline{\mathbb{D}} \subset U$ and $g(z) = f(z)$ for every $z \in \mathbb{D}$.
+(b) Prove that there do not exist an open set $U \subset \CC$ and an analytic function $g: U \to \CC$ such that $\overline{\mathbb{D}} \subset U$ and $g(z) = f(z)$ for every $z \in \mathbb{D}$.
 :::
 
 ::: {.solution}
@@ -114,7 +114,7 @@ step [](#s2-3){.pf-ref} and Weierstrass $M$-test.
 :::
 
 ::: pf-step
-By the theorem on infinite products of analytic functions, the partial products $f_n(z) = -z \prod_{k=2}^n \frac{a_k - z}{1 - a_k z}$ converge uniformly on compact subsets of $\mathbb{D}$ to an analytic function $f: \mathbb{D} \to \mathbb{C}$.
+By the theorem on infinite products of analytic functions, the partial products $f_n(z) = -z \prod_{k=2}^n \frac{a_k - z}{1 - a_k z}$ converge uniformly on compact subsets of $\mathbb{D}$ to an analytic function $f: \mathbb{D} \to \CC$.
 
 ::: pf-proof
 uniform convergence of $\sum |u_k|$ implies uniform convergence of $\prod (1 - u_k)$.
@@ -178,7 +178,7 @@ open mapping theorem / maximum modulus principle for non-constant analytic funct
 ::: pf
 
 ::: {.pf-step #s4}
-Assume for contradiction that there exist an open set $U \supset \overline{\mathbb{D}}$ and an analytic function $g: U \to \mathbb{C}$ such that $g(z) = f(z)$ for all $z \in \mathbb{D}$.
+Assume for contradiction that there exist an open set $U \supset \overline{\mathbb{D}}$ and an analytic function $g: U \to \CC$ such that $g(z) = f(z)$ for all $z \in \mathbb{D}$.
 
 ::: pf-proof
 proof by contradiction assumption.

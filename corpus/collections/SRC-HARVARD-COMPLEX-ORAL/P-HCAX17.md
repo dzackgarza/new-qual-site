@@ -35,7 +35,7 @@ for every $0<r<1$. If
 \[
 M(r)=\max_{|\zeta|=r}|f(\zeta)|,
 \]
-then Cauchy's estimate gives, for every $n\in\mathbb Z$,
+then Cauchy's estimate gives, for every $n\in\ZZ$,
 \[
 |a_n|\le M(r)r^{-n}.
 \]

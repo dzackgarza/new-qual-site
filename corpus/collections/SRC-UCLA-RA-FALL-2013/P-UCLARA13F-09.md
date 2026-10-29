@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a Banach space, $Y$ a normed linear space, and $B:X\times Y\to\mathbb R$ bilinear.
+Let $X$ be a Banach space, $Y$ a normed linear space, and $B:X\times Y\to\RR$ bilinear.
 Suppose that for each $x\in X$ there is $C_x\ge0$ with
 \[
 |B(x,y)|\le C_x\|y\|\qquad(y\in Y),
@@ -43,7 +43,7 @@ For each $y\in Y$, regard $B(\,·\,,y)$ as a bounded linear functional on the Ba
 
 For each $y\in Y$, define
 \[
-T_y:X\to\mathbb R,
+T_y:X\to\RR,
 \qquad
 T_y(x)=B(x,y).
 \]

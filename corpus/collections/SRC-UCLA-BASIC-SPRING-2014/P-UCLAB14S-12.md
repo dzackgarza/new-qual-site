@@ -116,7 +116,7 @@ The set $E$ is countable, closed, and nonempty, so it has an isolated point $e$.
 
 ::: pf-proof
 
-It is countable by definition and closed by step [](#s1-4){.pf-ref}. A nonempty countable closed subset of $\mathbb R$ cannot be perfect: every nonempty perfect subset of $\mathbb R$ is uncountable (construct a binary tree of nested disjoint intervals meeting the set). Hence $E$ has an isolated point.
+It is countable by definition and closed by step [](#s1-4){.pf-ref}. A nonempty countable closed subset of $\RR$ cannot be perfect: every nonempty perfect subset of $\RR$ is uncountable (construct a binary tree of nested disjoint intervals meeting the set). Hence $E$ has an isolated point.
 
 :::
 

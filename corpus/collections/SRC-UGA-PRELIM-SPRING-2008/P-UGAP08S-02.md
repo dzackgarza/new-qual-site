@@ -17,7 +17,7 @@ audit:
 ::: {.problem}
 Prove from the $\varepsilon$-$\delta$ definition that the function
 \[
-f:\mathbb R\to\mathbb R,\qquad f(x)=x^3,
+f:\RR\to\RR,\qquad f(x)=x^3,
 \]
 is continuous at $2$.
 :::

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic such that (i) $f(0) = 0$, (ii) $|f(z)| < 2000$ for all $z \in \mathbb{D}$, (iii) $f(z) = f(-z)$ for all $z \in \mathbb{D}$.
+Let $f : \mathbb{D} \to \CC$ be holomorphic such that (i) $f(0) = 0$, (ii) $|f(z)| < 2000$ for all $z \in \mathbb{D}$, (iii) $f(z) = f(-z)$ for all $z \in \mathbb{D}$.
 
 Show that $|f(z)| \leq 2000|z|^2$ for all $z \in \mathbb{D}$, and determine when equality holds.
 :::
@@ -35,7 +35,7 @@ Power series expansion and order of zero at the origin:
 
 ::: pf-step
 
-Since $f: \mathbb{D} \to \mathbb{C}$ is holomorphic, it admits a power series expansion around 0:
+Since $f: \mathbb{D} \to \CC$ is holomorphic, it admits a power series expansion around 0:
 \[
 f(z) = \sum_{n=0}^\infty a_n z^n.
 \]
@@ -172,7 +172,7 @@ $|f(z_0)| = |z_0|^2 |g(z_0)|$.
 Since $|g(z)| \le 2000$ throughout $\mathbb{D}$, the modulus $|g|$ attains its global maximum at the interior point $z_0 \in \mathbb{D}$.
 By the Maximum Modulus Principle, $g(z)$ must be constant:
 \[
-g(z) = 2000 e^{i\theta} \quad \text{for some constant } \theta \in \mathbb{R}.
+g(z) = 2000 e^{i\theta} \quad \text{for some constant } \theta \in \RR.
 \]
 
 ::: pf-proof

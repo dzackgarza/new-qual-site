@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be a finite-dimensional complex inner-product space and let $f:V\to\mathbb C$ be linear.
+Let $V$ be a finite-dimensional complex inner-product space and let $f:V\to\CC$ be linear.
 Show that there exists $w\in V$ such that
 \[
 f(v)=\langle v,w\rangle

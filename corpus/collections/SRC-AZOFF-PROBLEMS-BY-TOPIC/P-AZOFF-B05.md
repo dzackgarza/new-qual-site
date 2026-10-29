@@ -40,11 +40,11 @@ audit:
 ::: {.problem}
 Consider the polynomial function $f(s,t) = 9s^3 - 6st + t^2$. Let $P = (1,3)$.
 
-(a) Carefully state the conclusion of the implicit function theorem concerning the equation $f(s,t) = 0$ when $f$ is considered as a function from $\mathbb{R}^2$ to $\mathbb{R}$.
+(a) Carefully state the conclusion of the implicit function theorem concerning the equation $f(s,t) = 0$ when $f$ is considered as a function from $\RR^2$ to $\RR$.
 
-(b) Carefully state the conclusion of the implicit function theorem concerning the equation $f(s,t) = 0$ when $f$ is considered as a function from $\mathbb{C}^2$ to $\mathbb{C}$.
+(b) Carefully state the conclusion of the implicit function theorem concerning the equation $f(s,t) = 0$ when $f$ is considered as a function from $\CC^2$ to $\CC$.
 
-(c) Use the implicit function theorem for functions from $\mathbb{R}^2\times\mathbb{R}^2 \to \mathbb{R}^2$ to prove (b). (There are various approaches to this, including the definition of complex derivative, the Cauchy–Riemann equations, and consideration of total derivatives.)
+(c) Use the implicit function theorem for functions from $\RR^2\times\RR^2 \to \RR^2$ to prove (b). (There are various approaches to this, including the definition of complex derivative, the Cauchy–Riemann equations, and consideration of total derivatives.)
 :::
 
 ::: {.solution}

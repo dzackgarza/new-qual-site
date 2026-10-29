@@ -32,7 +32,7 @@ Let $\mathcal{H}$ be a separable infinite-dimensional Hilbert space and assume t
 
 Let
 \[
-F:\ell^2(\mathbb N)\to\mathcal H,
+F:\ell^2(\NN)\to\mathcal H,
 \qquad
 F(a_1,a_2,\dots)
 =
@@ -40,7 +40,7 @@ F(a_1,a_2,\dots)
 \]
 and
 \[
-E:\ell^2(\mathbb N)\to\mathcal H,
+E:\ell^2(\NN)\to\mathcal H,
 \qquad
 E(a_1,a_2,\dots)
 =

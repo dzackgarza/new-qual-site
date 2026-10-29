@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the ring `\begin{align*} S=C[0,1]=\{f:[0,1]\rightarrow\mathbb R:f\text{ is continuous}\} .\end{align*}`{=tex}
+Consider the ring `\begin{align*} S=C[0,1]=\{f:[0,1]\rightarrow\RR:f\text{ is continuous}\} .\end{align*}`{=tex}
 
 with the usual operations of addition and multiplication of functions.
 
@@ -56,7 +56,7 @@ Conversely, suppose $f$ is nowhere zero. Then
 \[
 g(x)=\frac1{f(x)}
 \]
-is continuous on $[0,1]$, because reciprocal is continuous on $\mathbb R\setminus\{0\}$ and $f([0,1])\subseteq\mathbb R\setminus\{0\}$. Hence $g\in S$ and $fg=1$.
+is continuous on $[0,1]$, because reciprocal is continuous on $\RR\setminus\{0\}$ and $f([0,1])\subseteq\RR\setminus\{0\}$. Hence $g\in S$ and $fg=1$.
 
 :::
 
@@ -70,7 +70,7 @@ For each $a\in[0,1]$, the set $I_a$ is a maximal ideal of $S$.
 
 Consider evaluation at $a$,
 \[
-\operatorname{ev}_a:S\longrightarrow\mathbb R,
+\operatorname{ev}_a:S\longrightarrow\RR,
 \qquad
 \operatorname{ev}_a(f)=f(a).
 \]
@@ -80,9 +80,9 @@ This is a surjective ring homomorphism, since every real number is the value at 
 \]
 Therefore the first isomorphism theorem gives
 \[
-S/I_a\cong\mathbb R.
+S/I_a\cong\RR.
 \]
-Because $\mathbb R$ is a field, $I_a$ is maximal.
+Because $\RR$ is a field, $I_a$ is maximal.
 
 :::
 

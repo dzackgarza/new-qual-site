@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $\{v_j\}_{j=1}^n$ is a basis of $\mathbb C^n$.
+Suppose $\{v_j\}_{j=1}^n$ is a basis of $\CC^n$.
 
 (a) Show that there is a basis $\{w_j\}_{j=1}^n$ such that $(w_j,v_k)=\delta_{jk}$ for the standard Hermitian inner product.
 
-(b) If the $v_j$ are eigenvectors of a linear transformation $T$ of $\mathbb C^n$, show that the $w_j$ are eigenvectors of the adjoint $T^*$.
+(b) If the $v_j$ are eigenvectors of a linear transformation $T$ of $\CC^n$, show that the $w_j$ are eigenvectors of the adjoint $T^*$.
 :::
 
 ::: {.solution}
@@ -79,7 +79,7 @@ and this entry equals $\delta_{jk}$.
 
 ::: {.pf-step #s1-2}
 
-The vectors $w_1,\ldots,w_n$ form a basis of $\mathbb C^n$.
+The vectors $w_1,\ldots,w_n$ form a basis of $\CC^n$.
 
 
 ::: pf-proof
@@ -159,11 +159,11 @@ Hence
 (T^*w_j-\overline{\lambda_j}w_j,v_k)=0
 \]
 for every $k$.
-Since $v_1,\ldots,v_n$ span $\mathbb C^n$, the vector
+Since $v_1,\ldots,v_n$ span $\CC^n$, the vector
 \[
 T^*w_j-\overline{\lambda_j}w_j
 \]
-is orthogonal to every vector in $\mathbb C^n$, so it is zero.
+is orthogonal to every vector in $\CC^n$, so it is zero.
 
 :::
 

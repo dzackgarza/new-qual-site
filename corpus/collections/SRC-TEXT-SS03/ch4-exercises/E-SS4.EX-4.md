@@ -26,7 +26,7 @@ audit:
    Calculate
 
 $$
-\int_ {- \infty} ^ {\infty} \frac {e ^ {- 2 \pi i x \xi}}{Q (x)} d x, \quad \xi \in \mathbb {R}
+\int_ {- \infty} ^ {\infty} \frac {e ^ {- 2 \pi i x \xi}}{Q (x)} d x, \quad \xi \in \RR
 $$
 
 in terms of the roots of $Q$ . What happens when several roots coincide?

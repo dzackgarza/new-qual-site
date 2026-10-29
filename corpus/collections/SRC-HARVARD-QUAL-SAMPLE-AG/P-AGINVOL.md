@@ -55,13 +55,13 @@ Then $u(0)=0$, and clearly $\varphi=t_a\circ u$; uniqueness follows by evaluatin
 
 To see that an automorphism fixing $0$ is a group automorphism, write
 \[
-E\cong\mathbb C/\Lambda.
+E\cong\CC/\Lambda.
 \]
-The map $u$ lifts to a holomorphic map $U:\mathbb C\to\mathbb C$ with $U(0)=0$.  Its derivative $U'$ is $\Lambda$-periodic and hence descends to a holomorphic function on the compact Riemann surface $E$.  Therefore $U'$ is constant, so
+The map $u$ lifts to a holomorphic map $U:\CC\to\CC$ with $U(0)=0$.  Its derivative $U'$ is $\Lambda$-periodic and hence descends to a holomorphic function on the compact Riemann surface $E$.  Therefore $U'$ is constant, so
 \[
 U(z)=cz
 \]
-for some $c\in\mathbb C$.  Since $u$ is an automorphism, $c\Lambda=\Lambda$.  Thus $u$ is induced by multiplication by $c$ and is a group automorphism.
+for some $c\in\CC$.  Since $u$ is an automorphism, $c\Lambda=\Lambda$.  Thus $u$ is induced by multiplication by $c$ and is a group automorphism.
 :::
 
 :::
@@ -84,7 +84,7 @@ a\in E.
 \]
 
 ::: pf-proof
-Let $\varphi=t_a\circ u$ be an involution.  By step [](#automorphism-decomposition){.pf-ref}, after uniformizing $E=\mathbb C/\Lambda$, the origin-fixing automorphism $u$ is multiplication by some $c$ with $c\Lambda=\Lambda$.  The linear part of $\varphi^2$ is $u^2$, so
+Let $\varphi=t_a\circ u$ be an involution.  By step [](#automorphism-decomposition){.pf-ref}, after uniformizing $E=\CC/\Lambda$, the origin-fixing automorphism $u$ is multiplication by some $c$ with $c\Lambda=\Lambda$.  The linear part of $\varphi^2$ is $u^2$, so
 \[
 c^2=1.
 \]
@@ -159,9 +159,9 @@ equivalently $2x=a$.  Multiplication by $2$,
 \[
 [2]:E\longrightarrow E,
 \]
-is surjective over $\mathbb C$ and has kernel
+is surjective over $\CC$ and has kernel
 \[
-E[2]\cong(\mathbb Z/2\mathbb Z)^2,
+E[2]\cong(\ZZ/2\ZZ)^2,
 \]
 which has four elements.  Thus every fibre of $[2]$ has four points, so $2x=a$ has exactly four solutions.
 :::
@@ -187,7 +187,7 @@ Since $g(E)=1$,
 \]
 hence $g'=0$.  Every compact Riemann surface of genus $0$ is biholomorphic to the Riemann sphere
 \[
-\widehat{\mathbb C}=\mathbb{CP}^1.
+\widehat{\CC}=\mathbb{CP}^1.
 \]
 :::
 

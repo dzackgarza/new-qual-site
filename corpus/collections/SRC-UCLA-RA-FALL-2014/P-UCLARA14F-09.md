@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega \subset \mathbb{C}$ be open and connected. Suppose $(f_n)$ is a sequence of injective holomorphic functions defined on $\Omega$, such that $f_n \to f$ locally uniformly in $\Omega$. Show that if $f$ is not constant, then $f$ is also injective in $\Omega$.
+Let $\Omega \subset \CC$ be open and connected. Suppose $(f_n)$ is a sequence of injective holomorphic functions defined on $\Omega$, such that $f_n \to f$ locally uniformly in $\Omega$. Show that if $f$ is not constant, then $f$ is also injective in $\Omega$.
 :::
 
 ::: {.solution}

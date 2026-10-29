@@ -24,7 +24,7 @@ Fix a closed disk $\overline{D(a,R)}\subset\Omega$. Let $\varphi_\varepsilon$ be
 (u*\varphi_\varepsilon)(z)
 =\int_0^\varepsilon \psi_\varepsilon(r)
    \left(\int_0^{2\pi}u(z-re^{i\theta})\,r\,d\theta\right)dr
-=u(z)\int_{\mathbb C}\varphi_\varepsilon(w)\,dA(w)
+=u(z)\int_{\CC}\varphi_\varepsilon(w)\,dA(w)
 =u(z).
 \]
 Hence $u$ agrees locally with a smooth convolution, so $u\in C^\infty(\Omega)$.

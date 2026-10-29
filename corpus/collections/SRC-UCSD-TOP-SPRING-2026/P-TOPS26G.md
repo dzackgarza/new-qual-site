@@ -27,7 +27,7 @@ Show the following statements are equivalent:
 
 ::: pf-step
 The integral cohomology ring is
-$$\boxed{H^*(\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z[x]/(x^{n+1}),\qquad |x|=2.}$$
+$$\boxed{H^*(\mathbb{CP}^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),\qquad |x|=2.}$$
 
 ::: pf-proof
 This is the standard projective-space computation; $x$ is the first Chern class of the dual tautological line bundle.
@@ -39,7 +39,7 @@ This is the standard projective-space computation; $x$ is the first Chern class 
 Any homotopy equivalence $f:\mathbb{CP}^n\to\mathbb{CP}^n$ satisfies $f^*x=\pm x$.
 
 ::: pf-proof
-The group $H^2\cong\mathbb Z$, and a cohomology isomorphism must send its generator to a generator.
+The group $H^2\cong\ZZ$, and a cohomology isomorphism must send its generator to a generator.
 :::
 
 :::

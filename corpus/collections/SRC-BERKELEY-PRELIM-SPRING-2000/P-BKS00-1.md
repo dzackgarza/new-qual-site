@@ -41,7 +41,7 @@ B=\begin{pmatrix}
 -1&0&1&0
 \end{pmatrix}
 \]
-similar over $\mathbb R$?
+similar over $\RR$?
 :::
 
 ::: {.solution}

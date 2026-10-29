@@ -21,18 +21,18 @@ audit:
 ---
 
 ::: {.problem}
-Let $g_n$ be a sequence of measurable functions on $\mathbb{R}^d$, such that $|g_n(x)| \leq 1$ for all $x$, and assume that $g_n \to 0$ almost everywhere. Let $f \in L^1(\mathbb{R}^d)$. Show that the sequence
+Let $g_n$ be a sequence of measurable functions on $\RR^d$, such that $|g_n(x)| \leq 1$ for all $x$, and assume that $g_n \to 0$ almost everywhere. Let $f \in L^1(\RR^d)$. Show that the sequence
 \[
 f * g_n(x) = \int f(x-y) g_n(y)\,dy \to 0
 \]
-uniformly on each compact subset of $\mathbb{R}^d$, as $n \to \infty$.
+uniformly on each compact subset of $\RR^d$, as $n \to \infty$.
 :::
 
 ::: {.solution}
 
 Let
 \[
-K\subset\mathbb R^d
+K\subset\RR^d
 \]
 be compact. We prove
 \[
@@ -51,7 +51,7 @@ Fix
 \]
 Choose
 \[
-\varphi\in C_c(\mathbb R^d)
+\varphi\in C_c(\RR^d)
 \]
 such that
 \[
@@ -62,7 +62,7 @@ such that
 
 ::: pf-proof
 
-The space \(C_c(\mathbb R^d)\) is dense in \(L^1(\mathbb R^d)\).
+The space \(C_c(\RR^d)\) is dense in \(L^1(\RR^d)\).
 
 :::
 
@@ -70,7 +70,7 @@ The space \(C_c(\mathbb R^d)\) is dense in \(L^1(\mathbb R^d)\).
 
 ::: {.pf-step #s1-2}
 
-For every \(x\in\mathbb R^d\) and every \(n\),
+For every \(x\in\RR^d\) and every \(n\),
 \[
 \boxed{
 |((f-\varphi)*g_n)(x)|
@@ -89,10 +89,10 @@ Since
 \begin{aligned}
 |((f-\varphi)*g_n)(x)|
 &\le
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |f(x-y)-\varphi(x-y)|\,|g_n(y)|\,dy\\
 &\le
-\int_{\mathbb R^d}
+\int_{\RR^d}
 |f(x-y)-\varphi(x-y)|\,dy\\
 &=
 \|f-\varphi\|_1.
@@ -108,7 +108,7 @@ Since
 Hence
 \[
 \boxed{
-\sup_{x\in\mathbb R^d}
+\sup_{x\in\RR^d}
 |((f-\varphi)*g_n)(x)|
 <
 \frac{\varepsilon}{3}}
@@ -126,7 +126,7 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 ::: {.pf-step #s1-4}
 
-Fix \(x\in\mathbb R^d\). Then
+Fix \(x\in\RR^d\). Then
 \[
 \varphi(x-y)g_n(y)\to0
 \]
@@ -193,7 +193,7 @@ Therefore
 \boxed{
 (\varphi*g_n)(x)\to0}
 \]
-for every fixed \(x\in\mathbb R^d\).
+for every fixed \(x\in\RR^d\).
 
 
 ::: pf-proof
@@ -206,7 +206,7 @@ Apply the dominated convergence theorem using steps [](#s1-4){.pf-ref} through [
 
 ::: {.pf-step #s1-8}
 
-For \(x,x'\in\mathbb R^d\),
+For \(x,x'\in\RR^d\),
 \[
 \begin{aligned}
 |(\varphi*g_n)(x)-(\varphi*g_n)(x')|
@@ -272,7 +272,7 @@ Thus the family
 \[
 \{\varphi*g_n:n\ge1\}
 \]
-is equicontinuous on \(\mathbb R^d\), with a modulus independent of \(n\).
+is equicontinuous on \(\RR^d\), with a modulus independent of \(n\).
 
 
 ::: pf-proof
@@ -493,11 +493,11 @@ Step [](#s1-19){.pf-ref} is the definition of uniform convergence on the compact
 
 ::: {.pf-step #s1-21}
 
-Since \(K\subset\mathbb R^d\) was arbitrary,
+Since \(K\subset\RR^d\) was arbitrary,
 \[
 \boxed{
 f*g_n\to0
-\text{ locally uniformly on }\mathbb R^d}.
+\text{ locally uniformly on }\RR^d}.
 \]
 
 

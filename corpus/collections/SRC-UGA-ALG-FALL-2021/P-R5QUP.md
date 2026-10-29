@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-What is the Jordan normal form over $\mathbb{C}$ of a $7 \times 7$ matrix $A$ which satisfies all of the following conditions:
+What is the Jordan normal form over $\CC$ of a $7 \times 7$ matrix $A$ which satisfies all of the following conditions:
 
 a.
 $A$ has real coefficients,

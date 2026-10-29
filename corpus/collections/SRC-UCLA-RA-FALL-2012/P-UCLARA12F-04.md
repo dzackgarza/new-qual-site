@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Fix $f\in C(\mathbb T)$, where $\mathbb T=\mathbb R/(2\pi\mathbb Z)$, and let $s_n$ denote the $n$th partial sum of the Fourier series of $f$.
+Fix $f\in C(\mathbb T)$, where $\mathbb T=\RR/(2\pi\ZZ)$, and let $s_n$ denote the $n$th partial sum of the Fourier series of $f$.
 Prove that
 \[
 \lim_{n\to\infty}\frac{\|s_n\|_{L^\infty(\mathbb T)}}{\log n}=0.

@@ -39,7 +39,7 @@ Thus
 \[
 P(z)=az+b
 \]
-for constants $a,b\in\mathbb C$, and
+for constants $a,b\in\CC$, and
 \[
 \boxed{f(z)=e^{az+b}}.
 \]

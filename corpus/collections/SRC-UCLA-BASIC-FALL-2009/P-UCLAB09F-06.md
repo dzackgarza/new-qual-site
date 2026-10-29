@@ -23,7 +23,7 @@ f(x,y)=\sin^3(xy)+y^2|x|
 \]
 on
 \[
-S=\{(x,y)\in\mathbb R^2:x^{2010}+y^{2010}\le1\}.
+S=\{(x,y)\in\RR^2:x^{2010}+y^{2010}\le1\}.
 \]
 Define what it means for $f$ to be uniformly continuous on $S$, and prove that $f$ is uniformly continuous there.
 You may use any applicable general theorem, provided you state it and justify its hypotheses.
@@ -51,7 +51,7 @@ then
 
 ::: pf-proof
 
-This is the definition of uniform continuity for a real-valued function on the metric space $S$ with the Euclidean metric restricted from $\mathbb R^2$.
+This is the definition of uniform continuity for a real-valued function on the metric space $S$ with the Euclidean metric restricted from $\RR^2$.
 
 :::
 
@@ -62,7 +62,7 @@ This is the definition of uniform continuity for a real-valued function on the m
 The set
 \[
 S=
-\{(x,y)\in\mathbb R^2:x^{2010}+y^{2010}\le1\}
+\{(x,y)\in\RR^2:x^{2010}+y^{2010}\le1\}
 \]
 is closed.
 
@@ -77,7 +77,7 @@ is continuous, and
 \[
 S=h^{-1}((-\infty,1]).
 \]
-Since $(-\infty,1]$ is closed in $\mathbb R$, the inverse image $S$ is closed.
+Since $(-\infty,1]$ is closed in $\RR$, the inverse image $S$ is closed.
 
 :::
 
@@ -118,7 +118,7 @@ The set $S$ is compact.
 
 ::: pf-proof
 
-By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $S$ is closed and bounded in $\mathbb R^2$. The Heine--Borel theorem therefore implies that $S$ is compact.
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $S$ is closed and bounded in $\RR^2$. The Heine--Borel theorem therefore implies that $S$ is compact.
 
 :::
 
@@ -130,7 +130,7 @@ The function
 \[
 f(x,y)=\sin^3(xy)+y^2|x|
 \]
-is continuous on $\mathbb R^2$, hence on $S$.
+is continuous on $\RR^2$, hence on $S$.
 
 
 ::: pf-proof

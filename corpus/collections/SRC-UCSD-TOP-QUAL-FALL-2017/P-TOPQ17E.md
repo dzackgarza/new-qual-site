@@ -40,7 +40,7 @@ There is no degree-$1$ map $S^3\to T^3$.
 
 ::: pf-proof
 
-If $f:M^n\to N^n$ has degree $\pm1$ between closed oriented manifolds, then $f^*:H^*(N;\mathbb Z)\to H^*(M;\mathbb Z)$ is injective: Poincaré duality pairs any nonzero class with a complementary class, and evaluation after pullback is multiplied by the degree. But $H^1(T^3;\mathbb Z)\cong\mathbb Z^3$ whereas $H^1(S^3;\mathbb Z)=0$, so such an injection is impossible.
+If $f:M^n\to N^n$ has degree $\pm1$ between closed oriented manifolds, then $f^*:H^*(N;\ZZ)\to H^*(M;\ZZ)$ is injective: Poincaré duality pairs any nonzero class with a complementary class, and evaluation after pullback is multiplied by the degree. But $H^1(T^3;\ZZ)\cong\ZZ^3$ whereas $H^1(S^3;\ZZ)=0$, so such an injection is impossible.
 
 :::
 

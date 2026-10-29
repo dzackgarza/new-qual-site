@@ -18,10 +18,10 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f_n:\mathbb R\to\mathbb R$ are integrable and $f_n\to0$ uniformly on $\mathbb R$.
+Suppose $f_n:\RR\to\RR$ are integrable and $f_n\to0$ uniformly on $\RR$.
 Must
 \[
-\int_{\mathbb R}f_n\,dm\longrightarrow0?
+\int_{\RR}f_n\,dm\longrightarrow0?
 \]
 :::
 
@@ -30,14 +30,14 @@ No. Let
 \[
 f_n(x)=\frac1n\mathbf1_{[0,n]}(x).
 \]
-Then $f_n\in L^1(\mathbb R)$ and
+Then $f_n\in L^1(\RR)$ and
 \[
 \|f_n\|_\infty=\frac1n\longrightarrow0,
 \]
 so $f_n\to0$ uniformly.
 However,
 \[
-\int_{\mathbb R}f_n\,dm
+\int_{\RR}f_n\,dm
 =\frac1n\,m([0,n])=1
 \]
 for every $n$.

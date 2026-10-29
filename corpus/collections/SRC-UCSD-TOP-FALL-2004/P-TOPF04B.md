@@ -45,7 +45,7 @@ Covering maps induce isomorphisms on homotopy groups in dimensions at least $2$.
 :::
 
 ::: pf-step
-Since $[\operatorname{id}_{S^n}]$ generates $\pi_n(S^n)\cong\mathbb Z$, the class
+Since $[\operatorname{id}_{S^n}]$ generates $\pi_n(S^n)\cong\ZZ$, the class
 $$
 [p]=p_*[\operatorname{id}_{S^n}]
 $$

@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the linear transformations $A$, $B$ of the vector space $\mathbb{R}^{n}$, $n \geq 1$. Prove that $[A, B] \neq cE$, where $E$ is the identity matrix and $c \in \mathbb{R}$, $c \neq 0$.
+Consider the linear transformations $A$, $B$ of the vector space $\RR^{n}$, $n \geq 1$. Prove that $[A, B] \neq cE$, where $E$ is the identity matrix and $c \in \RR$, $c \neq 0$.
 :::
 
 ::: {.solution}
@@ -111,7 +111,7 @@ $$
 
 ::: {.pf-step #s1-4}
 
-Over $\mathbb R$, if $n\geq1$, the equality
+Over $\RR$, if $n\geq1$, the equality
 $$
 [A,B]=cI
 $$
@@ -123,7 +123,7 @@ $$
 
 ::: pf-proof
 
-Since $n$ is a positive integer, it is nonzero in $\mathbb R$. Thus step
+Since $n$ is a positive integer, it is nonzero in $\RR$. Thus step
 [](#s1-3){.pf-ref} implies $c=0$.
 
 :::

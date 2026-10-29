@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\mathbb R\setminus\{0\}$.
+Let $a\in\RR\setminus\{0\}$.
 Evaluate
 \[
 \int_{-\infty}^{\infty}\frac{\cos(ax)}{1+x^2}\,dx.

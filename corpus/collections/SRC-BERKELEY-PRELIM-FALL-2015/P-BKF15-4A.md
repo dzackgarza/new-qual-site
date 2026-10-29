@@ -34,10 +34,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $S = \mathbb{C} \cup \{\infty\}$ be the Riemann sphere.
-Let $\phi \colon \mathbb{C}^2 \setminus \{(0,0)\} \to S$ be the map defined by $\phi(w, z) = w/z$ for $z \neq 0$ and $\phi(w, 0) = \infty$.
+Let $S = \CC \cup \{\infty\}$ be the Riemann sphere.
+Let $\phi \colon \CC^2 \setminus \{(0,0)\} \to S$ be the map defined by $\phi(w, z) = w/z$ for $z \neq 0$ and $\phi(w, 0) = \infty$.
 
-(a) Prove that there is a unique map $\tau \colon S \to S$ with the following property: $\tau(\phi(w, z)) = \phi(w', z')$ if and only if the one-dimensional subspaces $\mathbb{C} \cdot (w, z)$ and $\mathbb{C} \cdot (w', z')$ are orthogonal under the standard Hermitian inner product on $\mathbb{C}^2$ in which the unit vectors $(1, 0)$ and $(0, 1)$ are orthonormal.
+(a) Prove that there is a unique map $\tau \colon S \to S$ with the following property: $\tau(\phi(w, z)) = \phi(w', z')$ if and only if the one-dimensional subspaces $\CC \cdot (w, z)$ and $\CC \cdot (w', z')$ are orthogonal under the standard Hermitian inner product on $\CC^2$ in which the unit vectors $(1, 0)$ and $(0, 1)$ are orthonormal.
 
 (b) Prove that $\tau$ is continuous and bijective.
 

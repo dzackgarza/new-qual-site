@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the functional $S[\phi, \phi^*] = 4\pi \int_{-\infty}^{\infty} dt \int_0^\infty dr\, r^2 \left(\dot{\phi}\dot{\phi}^* - \phi'\phi'^* - U(\phi\phi^*)\right)$, where $U \in C^1(\mathbb{R})$ and $\phi$ is a $C^2(\mathbb{R} \times [0, \infty))$ complex-valued function of $t$ and $x$.
+Consider the functional $S[\phi, \phi^*] = 4\pi \int_{-\infty}^{\infty} dt \int_0^\infty dr\, r^2 \left(\dot{\phi}\dot{\phi}^* - \phi'\phi'^* - U(\phi\phi^*)\right)$, where $U \in C^1(\RR)$ and $\phi$ is a $C^2(\RR \times [0, \infty))$ complex-valued function of $t$ and $x$.
 
 (a) Varying with respect to $\phi$ and $\phi^*$, obtain the Euler-Lagrange equation and its conjugated.
 Substituting the *ansatz* $\phi(r, t) = f(r) e^{i\omega t}$, rewrite them as an equation on a function $f$ of a single variable $r$.
@@ -31,7 +31,7 @@ Compare with the result of the previous point.
 
 ::: {.remark}
 The source says $\phi$ is a function "of $t$ and $x$", but the functional and the ansatz use the radial variable $r \in [0, \infty)$, with $\dot{\phi} = \partial_t \phi$ and $\phi' = \partial_r \phi$; the intended variables are $t$ and $r$.
-After the harmonic ansatz is substituted, the integrand is independent of $t$, so the printed integral over all $t\in\mathbb R$ contributes an infinite common factor. Part (b) is therefore interpreted as variation of the reduced action per unit time, equivalently as variation on any finite time interval before removing that overall factor.
+After the harmonic ansatz is substituted, the integrand is independent of $t$, so the printed integral over all $t\in\RR$ contributes an infinite common factor. Part (b) is therefore interpreted as variation of the reduced action per unit time, equivalently as variation on any finite time interval before removing that overall factor.
 :::
 
 ::: {.solution}

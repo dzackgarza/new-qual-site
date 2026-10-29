@@ -19,7 +19,7 @@ For a space $X$, define its density character by
 1. Explain why this minimum exists.
 2. Let
    \[
-   C(X)=\{f\in\mathbb R^X:f\text{ is continuous}\}.
+   C(X)=\{f\in\RR^X:f\text{ is continuous}\}.
    \]
    If $m$ is infinite, prove that
    \[
@@ -56,7 +56,7 @@ is defined.
 
 If \(D\subseteq X\) is dense, then the restriction map
 \[
-\rho:C(X)\to\mathbb R^D,
+\rho:C(X)\to\RR^D,
 \qquad
 \rho(f)=f|_D,
 \]
@@ -71,9 +71,9 @@ E=\{x\in X:f(x)=g(x)\}
 \]
 is closed: it is the inverse image of the diagonal
 \[
-\Delta_{\mathbb R}\subseteq\mathbb R^2
+\Delta_{\RR}\subseteq\RR^2
 \]
-under the continuous map \(x\mapsto(f(x),g(x))\), and \(\mathbb R\) is Hausdorff, so \(\Delta_{\mathbb R}\) is closed. Since \(D\subseteq E\) and \(D\) is dense, one has
+under the continuous map \(x\mapsto(f(x),g(x))\), and \(\RR\) is Hausdorff, so \(\Delta_{\RR}\) is closed. Since \(D\subseteq E\) and \(D\) is dense, one has
 \[
 X=\overline D\subseteq E.
 \]
@@ -99,15 +99,15 @@ Choose a dense subset \(D\subseteq X\) with
 \]
 By step [](#s1-2){.pf-ref},
 \[
-|C(X)|\le|\mathbb R^D|=|\mathbb R|^{|D|}.
+|C(X)|\le|\RR^D|=|\RR|^{|D|}.
 \]
 Since \(m\) is infinite,
 \[
-|\mathbb R|=2^{\aleph_0}\le2^m,
+|\RR|=2^{\aleph_0}\le2^m,
 \]
 and therefore
 \[
-|\mathbb R|^{|D|}
+|\RR|^{|D|}
 \le
 (2^m)^m
 =

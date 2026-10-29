@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous. Suppose $\mathbb R$ contains a countably infinite subset $S$ such that
+Let $f:\RR\to\RR$ be continuous. Suppose $\RR$ contains a countably infinite subset $S$ such that
 \[
 \int_p^q f(x)\,dx=0
 \]

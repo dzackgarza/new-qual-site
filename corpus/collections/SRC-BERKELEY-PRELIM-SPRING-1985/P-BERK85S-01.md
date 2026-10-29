@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,\infty)\to\mathbb R$ be continuous and differentiable, with $f(0)=0$, and suppose $f'$ is increasing on $[0,\infty)$. Prove that
+Let $f:[0,\infty)\to\RR$ be continuous and differentiable, with $f(0)=0$, and suppose $f'$ is increasing on $[0,\infty)$. Prove that
 \[
 g(x)=
 \begin{cases}

@@ -25,19 +25,19 @@ audit:
 ---
 
 ::: {.problem}
-For the flag space $F_n(\mathbb{C}^n)$ show that $H^*(F_n(\mathbb{C}^n); \mathbb{Z}) \approx \mathbb{Z}[x_1, \ldots, x_n]/(\sigma_1, \ldots, \sigma_n)$ where $\sigma_i$ is the $i$th elementary symmetric polynomial.
+For the flag space $F_n(\CC^n)$ show that $H^*(F_n(\CC^n); \ZZ) \approx \ZZ[x_1, \ldots, x_n]/(\sigma_1, \ldots, \sigma_n)$ where $\sigma_i$ is the $i$th elementary symmetric polynomial.
 :::
 
 ::: {.solution}
-Let \(F_n=F_n(\mathbb C^n)\) be the complete flag manifold, and let
+Let \(F_n=F_n(\CC^n)\) be the complete flag manifold, and let
 \[
 L_1,\ldots,L_n\to F_n
 \]
 be the tautological line bundles: over a flag their fibers are the successive one-dimensional quotients. Put
 \[
-x_i=c_1(L_i)\in H^2(F_n;\mathbb Z).
+x_i=c_1(L_i)\in H^2(F_n;\ZZ).
 \]
-Their direct sum is the trivial bundle \(\underline{\mathbb C}^n\), so
+Their direct sum is the trivial bundle \(\underline{\CC}^n\), so
 \[
 \prod_{i=1}^n(1+x_i)=1.
 \]
@@ -48,11 +48,11 @@ Equating homogeneous parts gives
 \]
 Thus there is a graded-ring homomorphism
 \[
-\Phi:\mathbb Z[x_1,\ldots,x_n]/(\sigma_1,\ldots,\sigma_n)
-\longrightarrow H^*(F_n;\mathbb Z).
+\Phi:\ZZ[x_1,\ldots,x_n]/(\sigma_1,\ldots,\sigma_n)
+\longrightarrow H^*(F_n;\ZZ).
 \]
 
-We show it is an isomorphism by comparing the standard flag tower. Forgetting the last line gives an iterated projective-bundle description, and repeated Leray--Hirsch shows that \(H^*(F_n;\mathbb Z)\) is free abelian with Poincaré polynomial
+We show it is an isomorphism by comparing the standard flag tower. Forgetting the last line gives an iterated projective-bundle description, and repeated Leray--Hirsch shows that \(H^*(F_n;\ZZ)\) is free abelian with Poincaré polynomial
 \[
 \prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)}).
 \]
@@ -65,7 +65,7 @@ x_1^{a_1}x_2^{a_2}\cdots x_n^{a_n},
 \]
 Its Poincaré polynomial is the same product above (and its total rank is \(n!\)). Hence the surjection \(\Phi\) is an isomorphism:
 \[
-\boxed{H^*(F_n(\mathbb C^n);\mathbb Z)
-\cong \mathbb Z[x_1,\ldots,x_n]/(\sigma_1,\ldots,\sigma_n).}
+\boxed{H^*(F_n(\CC^n);\ZZ)
+\cong \ZZ[x_1,\ldots,x_n]/(\sigma_1,\ldots,\sigma_n).}
 \]
 :::

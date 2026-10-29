@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\langle\ ,\ \rangle$ be a positive-definite Hermitian inner product on a finite-dimensional complex vector space $V$. Suppose $T\colon V\to V$ is a $\mathbb{C}$-linear map such that $\langle Tv,v\rangle=0$ for all $v\in V$. Prove that $T=0$.
+Let $\langle\ ,\ \rangle$ be a positive-definite Hermitian inner product on a finite-dimensional complex vector space $V$. Suppose $T\colon V\to V$ is a $\CC$-linear map such that $\langle Tv,v\rangle=0$ for all $v\in V$. Prove that $T=0$.
 :::
 
 ::: {.solution}

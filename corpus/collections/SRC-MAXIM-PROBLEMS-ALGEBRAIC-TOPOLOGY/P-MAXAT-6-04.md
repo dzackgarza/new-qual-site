@@ -58,7 +58,7 @@ n\in\{1,3,7\}.
 
 ::: pf-proof
 
-If $S^n$ is parallelizable, it has $n$ pointwise linearly independent tangent vector fields. Together with the radial vector field in $\mathbb R^{n+1}$ these determine a nonsingular bilinear multiplication after the standard clutching construction, equivalently an element of Hopf invariant one. Adams's Hopf invariant one theorem says such an element exists only in dimensions
+If $S^n$ is parallelizable, it has $n$ pointwise linearly independent tangent vector fields. Together with the radial vector field in $\RR^{n+1}$ these determine a nonsingular bilinear multiplication after the standard clutching construction, equivalently an element of Hopf invariant one. Adams's Hopf invariant one theorem says such an element exists only in dimensions
 \[
 n=1,3,7
 \]
@@ -93,7 +93,7 @@ The spaces $\mathbb{RP}^1$, $\mathbb{RP}^3$, and $\mathbb{RP}^7$ are in fact par
 
 Use the normed real division algebras
 \[
-\mathbb C,\qquad\mathbb H,\qquad\mathbb O
+\CC,\qquad\mathbb H,\qquad\mathbb O
 \]
 of real dimensions $2,4,8$. Their unit spheres are respectively
 \[

@@ -66,9 +66,9 @@ Suppose such a retraction existed, and let $i:\partial X\hookrightarrow X$ be th
 $$
 r_*\circ i_*=\operatorname{id}_{\pi_1(\partial X)}.
 $$
-Since $\pi_1(\partial X)\cong\mathbb Z$ is abelian, every homomorphism
+Since $\pi_1(\partial X)\cong\ZZ$ is abelian, every homomorphism
 $$
-r_*:F(a,b)\to\mathbb Z
+r_*:F(a,b)\to\ZZ
 $$
 kills the commutator subgroup, hence $r_*([a,b])=0$. But by step [](#s2){.pf-ref}, $i_*$ sends a generator of $\pi_1(\partial X)$ to $[a,b]$, so $r_*i_*$ sends that generator to $0$, contradicting that it is the identity.
 

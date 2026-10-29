@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be a space whose integral homology groups are $\mathbb{Z}$, $0$, $\mathbb{Z}_8$ in dimensions $0$, $1$, $2$, and zero otherwise.
+Let $X$ be a space whose integral homology groups are $\ZZ$, $0$, $\ZZ_8$ in dimensions $0$, $1$, $2$, and zero otherwise.
 Compute the integral homology groups of $X \times \mathbb{RP}^3$.
 :::
 
@@ -27,11 +27,11 @@ Compute the integral homology groups of $X \times \mathbb{RP}^3$.
 
 The nonzero integral homology groups of the factors are
 $$
-H_0(X)=\mathbb Z,\quad H_2(X)=\mathbb Z/8,
+H_0(X)=\ZZ,\quad H_2(X)=\ZZ/8,
 $$
 and
 $$
-H_0(\mathbb{RP}^3)=\mathbb Z,\quad H_1(\mathbb{RP}^3)=\mathbb Z/2,\quad H_3(\mathbb{RP}^3)=\mathbb Z.
+H_0(\mathbb{RP}^3)=\ZZ,\quad H_1(\mathbb{RP}^3)=\ZZ/2,\quad H_3(\mathbb{RP}^3)=\ZZ.
 $$
 
 ::: pf-proof
@@ -46,19 +46,19 @@ The groups for $X$ are the hypothesis; those for $\mathbb{RP}^3$ are the standar
 
 The tensor terms in Künneth give
 $$
-H_0=\mathbb Z,\quad H_1=\mathbb Z/2,\quad H_2=\mathbb Z/8,
+H_0=\ZZ,\quad H_1=\ZZ/2,\quad H_2=\ZZ/8,
 $$
 $$
-H_3=\mathbb Z\oplus\mathbb Z/2,\qquad H_5=\mathbb Z/8.
+H_3=\ZZ\oplus\ZZ/2,\qquad H_5=\ZZ/8.
 $$
 
 ::: pf-proof
 
-The extra $\mathbb Z/2$ in degree $3$ is
+The extra $\ZZ/2$ in degree $3$ is
 $$
-(\mathbb Z/8)\otimes(\mathbb Z/2)\cong\mathbb Z/2,
+(\ZZ/8)\otimes(\ZZ/2)\cong\ZZ/2,
 $$
-and the degree-$5$ term is $(\mathbb Z/8)\otimes\mathbb Z$.
+and the degree-$5$ term is $(\ZZ/8)\otimes\ZZ$.
 
 :::
 
@@ -68,7 +68,7 @@ and the degree-$5$ term is $(\mathbb Z/8)\otimes\mathbb Z$.
 
 The only nonzero Tor contribution is
 $$
-\operatorname{Tor}(\mathbb Z/8,\mathbb Z/2)\cong\mathbb Z/2,
+\operatorname{Tor}(\ZZ/8,\ZZ/2)\cong\ZZ/2,
 $$
 which occurs in degree $4$.
 
@@ -84,19 +84,19 @@ A Tor term $\operatorname{Tor}(H_i(X),H_j(\mathbb{RP}^3))$ contributes to total 
 
 Therefore
 $$
-\boxed{H_n(X\times\mathbb{RP}^3;\mathbb Z)\cong
+\boxed{H_n(X\times\mathbb{RP}^3;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z/2,&n=1,4,\\
-\mathbb Z/8,&n=2,5,\\
-\mathbb Z\oplus\mathbb Z/2,&n=3,\\
+\ZZ,&n=0,\\
+\ZZ/2,&n=1,4,\\
+\ZZ/8,&n=2,5,\\
+\ZZ\oplus\ZZ/2,&n=3,\\
 0,&\text{otherwise}.
 \end{cases}}
 $$
 
 ::: pf-proof
 
-Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}; the Künneth short exact sequences split noncanonically over $\mathbb Z$.
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}; the Künneth short exact sequences split noncanonically over $\ZZ$.
 
 :::
 

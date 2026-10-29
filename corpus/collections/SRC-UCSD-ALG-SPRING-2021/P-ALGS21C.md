@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $f = x^6 - 5$.
-Let $K$ be the splitting field of $f$ over $F = \mathbb{Q}(\sqrt{5})$.
+Let $K$ be the splitting field of $f$ over $F = \QQ(\sqrt{5})$.
 Find the Galois group $\operatorname{Gal}(K/F)$ and show it is isomorphic to a familiar group.
 :::
 
@@ -54,11 +54,11 @@ The polynomial \(x^3-\sqrt5\) is irreducible over \(F\). Hence \([F(\alpha):F]=3
 
 ::: pf-proof
 
-A reducible cubic has a root in the base field. If \(u\in F\) satisfied \(u^3=\sqrt5\), then taking norms from \(F=\mathbb Q(\sqrt5)\) to \(\mathbb Q\) would give
+A reducible cubic has a root in the base field. If \(u\in F\) satisfied \(u^3=\sqrt5\), then taking norms from \(F=\QQ(\sqrt5)\) to \(\QQ\) would give
 \[
-N_{F/\mathbb Q}(u)^3=N_{F/\mathbb Q}(\sqrt5)=-5,
+N_{F/\QQ}(u)^3=N_{F/\QQ}(\sqrt5)=-5,
 \]
-impossible because \(-5\) is not a cube in \(\mathbb Q\). Thus the cubic has no root in \(F\) and is irreducible.
+impossible because \(-5\) is not a cube in \(\QQ\). Thus the cubic has no root in \(F\) and is irreducible.
 
 :::
 
@@ -66,7 +66,7 @@ impossible because \(-5\) is not a cube in \(\mathbb Q\). Thus the cubic has no 
 
 ::: {.pf-step #s3}
 
-The field \(F(\alpha)\) is real, while \(\zeta\notin\mathbb R\). Therefore
+The field \(F(\alpha)\) is real, while \(\zeta\notin\RR\). Therefore
 \[
 [K:F(\alpha)]=2,
 \qquad
@@ -75,7 +75,7 @@ The field \(F(\alpha)\) is real, while \(\zeta\notin\mathbb R\). Therefore
 
 ::: pf-proof
 
-Both \(F\) and \(\alpha\) are real, so \(F(\alpha)\subseteq\mathbb R\). The nonreal element \(\zeta\) satisfies \(x^2+x+1\), hence has degree \(2\) over \(F(\alpha)\). Now multiply degrees using step [](#s2){.pf-ref}.
+Both \(F\) and \(\alpha\) are real, so \(F(\alpha)\subseteq\RR\). The nonreal element \(\zeta\) satisfies \(x^2+x+1\), hence has degree \(2\) over \(F(\alpha)\). Now multiply degrees using step [](#s2){.pf-ref}.
 
 :::
 

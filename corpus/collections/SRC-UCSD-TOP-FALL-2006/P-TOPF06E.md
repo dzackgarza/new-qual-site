@@ -19,7 +19,7 @@ review: draft
 Let $M$ be a $2n$ dimensional compact manifold without boundary.
 Show that
 $$
-\dim H^n(M; \mathbb{Z}/2) = \chi(M) \pmod{2}
+\dim H^n(M; \ZZ/2) = \chi(M) \pmod{2}
 $$
 where $\chi(M)$ denotes the Euler characteristic of $M$.
 :::
@@ -53,7 +53,7 @@ Modulo $2$, the signs disappear.
 
 ::: pf-proof
 
-Euler characteristic may be computed from homology over any field. In $\mathbb Z/2$, $-1=1$.
+Euler characteristic may be computed from homology over any field. In $\ZZ/2$, $-1=1$.
 
 :::
 

@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against Problem 9 in the deterministic MinerU Flash extraction assets/attachments/Fall85_extracted.md; Flash drops the third coordinate from the displayed column vector, while the same sentence states $v\in\mathbb R^3$ and $v^t=(x,y,z)$, forcing $v=(x,y,z)^t$.
+  note: Checked against Problem 9 in the deterministic MinerU Flash extraction assets/attachments/Fall85_extracted.md; Flash drops the third coordinate from the displayed column vector, while the same sentence states $v\in\RR^3$ and $v^t=(x,y,z)$, forcing $v=(x,y,z)^t$.
 ---
 
 ::: {.problem}
@@ -27,7 +27,7 @@ A=\frac16
 \]
 and let
 \[
-v=\begin{pmatrix}x\\y\\z\end{pmatrix}\in\mathbb R^3.
+v=\begin{pmatrix}x\\y\\z\end{pmatrix}\in\RR^3.
 \]
 As $v$ ranges over the set satisfying
 \[

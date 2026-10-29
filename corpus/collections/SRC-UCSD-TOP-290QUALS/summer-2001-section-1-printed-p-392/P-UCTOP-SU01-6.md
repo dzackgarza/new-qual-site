@@ -21,9 +21,9 @@ Show that any homotopy equivalence from $\mathbb{CP}^{2n}$ to itself is orientat
 ::: pf
 
 ::: pf-step
-Let $x\in H^2(\mathbb{CP}^m;\mathbb Z)$ be the standard generator, so
+Let $x\in H^2(\mathbb{CP}^m;\ZZ)$ be the standard generator, so
 $$
-H^*(\mathbb{CP}^m;\mathbb Z)\cong\mathbb Z[x]/(x^{m+1}),
+H^*(\mathbb{CP}^m;\ZZ)\cong\ZZ[x]/(x^{m+1}),
 \qquad |x|=2.
 $$
 
@@ -41,7 +41,7 @@ $$
 for some $\varepsilon\in\{1,-1\}$.
 
 ::: pf-proof
-A homotopy equivalence induces an automorphism of $H^2\cong\mathbb Z$, and the only automorphisms of $\mathbb Z$ are multiplication by $\pm1$.
+A homotopy equivalence induces an automorphism of $H^2\cong\ZZ$, and the only automorphisms of $\ZZ$ are multiplication by $\pm1$.
 :::
 
 :::

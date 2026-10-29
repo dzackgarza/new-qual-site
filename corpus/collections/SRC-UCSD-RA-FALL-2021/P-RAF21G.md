@@ -26,12 +26,12 @@ audit:
 ---
 
 ::: {.problem}
-For any $f \in L^2(\mathbb{R}) \cap C^1(\mathbb{R})$ show that
+For any $f \in L^2(\RR) \cap C^1(\RR)$ show that
 $$
-\left(\int_\mathbb{R} x^2 |f(x)|^2 \, dx\right) \left(\int_\mathbb{R} \xi^2 |\hat{f}(\xi)|^2 \, d\xi\right) \geq \frac{1}{16\pi^2} \left(\int_\mathbb{R} |f(x)|^2 \, dx\right)^2.
+\left(\int_\RR x^2 |f(x)|^2 \, dx\right) \left(\int_\RR \xi^2 |\hat{f}(\xi)|^2 \, d\xi\right) \geq \frac{1}{16\pi^2} \left(\int_\RR |f(x)|^2 \, dx\right)^2.
 $$
 
-Here $\hat{f}$ is the Fourier transform of $f$ and $dx, d\xi$ represent the Lebesgue measure on $\mathbb{R}$.
+Here $\hat{f}$ is the Fourier transform of $f$ and $dx, d\xi$ represent the Lebesgue measure on $\RR$.
 :::
 
 ::: {.solution}
@@ -46,15 +46,15 @@ We may assume $f\ne0$ and $\int x^2|f|^2,\int\xi^2|\widehat f|^2<\infty$; then $
 
 If $f=0$ almost everywhere, both sides are $0$. For nonzero $f$, both second moments are positive; if either
 \[
-\int_{\mathbb R}x^2|f(x)|^2\,dx
+\int_{\RR}x^2|f(x)|^2\,dx
 \]
 or
 \[
-\int_{\mathbb R}\xi^2|\widehat f(\xi)|^2\,d\xi
+\int_{\RR}\xi^2|\widehat f(\xi)|^2\,d\xi
 \]
 is infinite, the left side is $+\infty$. Hence assume both are finite.
 
-With the convention $\widehat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi ix\xi}\,dx$,
+With the convention $\widehat f(\xi)=\int_{\RR}f(x)e^{-2\pi ix\xi}\,dx$,
 \[
 \widehat{f'}(\xi)=2\pi i\xi\widehat f(\xi)
 \]
@@ -73,7 +73,7 @@ $\|f\|_2^2\le2\|xf\|_2\|f'\|_2$.
 
 ::: pf-proof
 
-Choose $\chi\in C_c^\infty(\mathbb R)$ with $0\le\chi\le1$, $\chi=1$ on $[-1,1]$, and $\operatorname{supp}\chi\subset[-2,2]$. Put
+Choose $\chi\in C_c^\infty(\RR)$ with $0\le\chi\le1$, $\chi=1$ on $[-1,1]$, and $\operatorname{supp}\chi\subset[-2,2]$. Put
 \[
 \chi_R(x)=\chi(x/R).
 \]
@@ -85,8 +85,8 @@ Because $f,f'\in L^2$, the function $|f|^2$ belongs to $W^{1,1}$ with weak deriv
 \]
 Integrating the derivative of the compactly supported function $x\chi_R(x)|f(x)|^2$ gives
 \[
-0=\int_{\mathbb R}(\chi_R+x\chi_R')|f|^2
-+2\operatorname{Re}\int_{\mathbb R}x\chi_R f'\overline f.
+0=\int_{\RR}(\chi_R+x\chi_R')|f|^2
++2\operatorname{Re}\int_{\RR}x\chi_R f'\overline f.
 \]
 Hence
 \[
@@ -111,7 +111,7 @@ Therefore
 \[
 \|f\|_2^2
 =-2\operatorname{Re}\int_{
-\mathbb R}x f'(x)\overline{f(x)}\,dx.
+\RR}x f'(x)\overline{f(x)}\,dx.
 \]
 Taking absolute values and applying Cauchy--Schwarz yields
 \[

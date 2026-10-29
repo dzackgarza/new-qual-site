@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathbb{K} = \mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$.
+Let $\mathbb{K} = \RR$, $\CC$, or $\mathbb{H}$.
 Show that for $n \geq 1$ the Hopf fibrations
 $$
 p : \mathbb{K}^{n+1} \setminus \{0\} \to \mathbb{K}P^n
@@ -40,11 +40,11 @@ If $p\circ s=\operatorname{id}$, then $p_*\circ s_*=\operatorname{id}$ on homolo
 
 ::: {.pf-step #s2}
 
-For $\mathbb K=\mathbb C$, no section exists.
+For $\mathbb K=\CC$, no section exists.
 
 ::: pf-proof
 
-The total space deformation-retracts onto $S^{2n+1}$, whose $H_2$ vanishes for $n\ge1$. But $H_2(\mathbb CP^n;\mathbb Z)\cong\mathbb Z$. This contradicts the split surjectivity from step [](#s1){.pf-ref}.
+The total space deformation-retracts onto $S^{2n+1}$, whose $H_2$ vanishes for $n\ge1$. But $H_2(\mathbb CP^n;\ZZ)\cong\ZZ$. This contradicts the split surjectivity from step [](#s1){.pf-ref}.
 
 :::
 
@@ -56,7 +56,7 @@ For $\mathbb K=\mathbb H$, no section exists.
 
 ::: pf-proof
 
-The total space deformation-retracts onto $S^{4n+3}$, whose $H_4$ vanishes, whereas $H_4(\mathbb HP^n;\mathbb Z)\cong\mathbb Z$ for $n\ge1$.
+The total space deformation-retracts onto $S^{4n+3}$, whose $H_4$ vanishes, whereas $H_4(\mathbb HP^n;\ZZ)\cong\ZZ$ for $n\ge1$.
 
 :::
 
@@ -64,7 +64,7 @@ The total space deformation-retracts onto $S^{4n+3}$, whose $H_4$ vanishes, wher
 
 ::: {.pf-step #s4}
 
-For $\mathbb K=\mathbb R$ and $n\ge2$, no section exists.
+For $\mathbb K=\RR$ and $n\ge2$, no section exists.
 
 ::: pf-proof
 
@@ -76,11 +76,11 @@ The total space deformation-retracts onto $S^n$, so $H_1(-;\mathbb F_2)=0$. But 
 
 ::: {.pf-step #s5}
 
-For $\mathbb K=\mathbb R$ and $n=1$, no section exists either.
+For $\mathbb K=\RR$ and $n=1$, no section exists either.
 
 ::: pf-proof
 
-After radial deformation retraction the map is the double covering $S^1\to\mathbb RP^1\cong S^1$, whose induced map on $H_1(-;\mathbb Z)$ is multiplication by $2$. Such a map cannot have a right inverse as a homomorphism $\mathbb Z\to\mathbb Z$.
+After radial deformation retraction the map is the double covering $S^1\to\mathbb RP^1\cong S^1$, whose induced map on $H_1(-;\ZZ)$ is multiplication by $2$. Such a map cannot have a right inverse as a homomorphism $\ZZ\to\ZZ$.
 
 :::
 

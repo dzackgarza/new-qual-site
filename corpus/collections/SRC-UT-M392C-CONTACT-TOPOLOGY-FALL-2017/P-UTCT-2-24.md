@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 For a surface $F$ in a $3$-manifold with a plane field $\xi = \ker(\alpha)$, the characteristic foliation $\mathcal{F}$ of $F$ is cut out by a vector field $v$ with $\iota_v \omega = \alpha|_F$ for a positive area form $\omega$ on $F$, where $\operatorname{div}_\omega v$ is defined by $\mathcal{L}_v \omega = (\operatorname{div}_\omega v)\,\omega$, and $\operatorname{sign}(\xi) = \operatorname{sign}(\alpha \wedge d\alpha)$.
 
-Let $M = \mathbb{R}^3$ and let $\alpha = dz + b y\,dx + a x\,dy$ for real numbers $a \neq b$.
+Let $M = \RR^3$ and let $\alpha = dz + b y\,dx + a x\,dy$ for real numbers $a \neq b$.
 Determine $\operatorname{sign}(\xi)$ and $\operatorname{div}_\omega v$ for $\mathcal{F}$ on the $x$-$y$ plane.
 Check that on each open quadrant the characteristic foliation is given by $|x|^b |y|^a = c$.
 Draw a picture and observe how these vary with $a$ and $b$.

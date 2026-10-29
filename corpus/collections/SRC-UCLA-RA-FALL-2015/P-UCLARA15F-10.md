@@ -36,7 +36,7 @@ Define
 F(z)=\frac{e^{e^{iz}}-1}{z}}.
 \]
 
-The function \(F\) is holomorphic on \(\mathbb C\setminus\{0\}\), with a simple pole at \(0\).
+The function \(F\) is holomorphic on \(\CC\setminus\{0\}\), with a simple pole at \(0\).
 
 ::: pf
 

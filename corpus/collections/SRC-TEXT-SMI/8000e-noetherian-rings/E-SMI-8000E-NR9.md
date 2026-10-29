@@ -39,20 +39,20 @@ Without surjectivity, $f(I)$ need not be an ideal of $S$.
 ::: pf-proof
 Take the inclusion
 $$
-f:\mathbb Z\hookrightarrow\mathbb Q
+f:\ZZ\hookrightarrow\QQ
 $$
 and the ideal
 $$
-I=2\mathbb Z.
+I=2\ZZ.
 $$
 Then
 $$
-f(I)=2\mathbb Z\subseteq\mathbb Q.
+f(I)=2\ZZ\subseteq\QQ.
 $$
-This is not an ideal of $\mathbb Q$: it contains $2$, but multiplication by
-$1/2\in\mathbb Q$ gives
+This is not an ideal of $\QQ$: it contains $2$, but multiplication by
+$1/2\in\QQ$ gives
 $$
-(1/2)\cdot2=1\notin2\mathbb Z.
+(1/2)\cdot2=1\notin2\ZZ.
 $$
 :::
 

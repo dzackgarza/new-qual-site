@@ -23,7 +23,7 @@ audit:
   note: "Solved for phi(1)=5, then computed image, kernel, and the two-element fiber over 5."
 ---
 ::: {.problem}
-Suppose that $\phi:\mathbb{Z}_8\to\mathbb{Z}_{20}$ is a group homomorphism with $\phi(3)=15$.
+Suppose that $\phi:\ZZ_8\to\ZZ_{20}$ is a group homomorphism with $\phi(3)=15$.
 
 1. Determine $\phi(x)$.
 2. Determine the image and kernel of $\phi$.
@@ -41,9 +41,9 @@ Determine the homomorphism.
 
 ::: pf-proof
 
-Every homomorphism from the cyclic group $\mathbb Z_8$ is determined by
+Every homomorphism from the cyclic group $\ZZ_8$ is determined by
 $$
-a=\phi(1)\in\mathbb Z_{20},
+a=\phi(1)\in\ZZ_{20},
 $$
 with
 $$
@@ -57,7 +57,7 @@ Since $3^{-1}=7$ modulo $20$,
 $$
 a=7\cdot15=105=5\pmod{20}.
 $$
-This value is compatible with the relation $8=0$ in $\mathbb Z_8$ because
+This value is compatible with the relation $8=0$ in $\ZZ_8$ because
 $$
 8a=40=0\pmod{20}.
 $$
@@ -76,7 +76,7 @@ Compute the image and kernel.
 
 ::: pf-proof
 
-As $x$ ranges through $\mathbb Z_8$, the multiples $5x$ modulo $20$ are
+As $x$ ranges through $\ZZ_8$, the multiples $5x$ modulo $20$ are
 $$
 0,5,10,15.
 $$
@@ -91,7 +91,7 @@ $$
 \iff 5x\equiv0\pmod{20}
 \iff x\equiv0\pmod4.
 $$
-Thus in $\mathbb Z_8$,
+Thus in $\ZZ_8$,
 $$
 \boxed{\ker\phi=\{0,4\}.}
 $$

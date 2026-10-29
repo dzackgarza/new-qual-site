@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-(a) Prove there is no continuously differentiable measure-preserving bijection $f:\mathbb R\to\mathbb R_{>0}$.
+(a) Prove there is no continuously differentiable measure-preserving bijection $f:\RR\to\RR_{>0}$.
 
 (b) Find a continuously differentiable measure-preserving bijection
 \[
-f:\mathbb R^2\to\mathbb R\times\mathbb R_{>0}.
+f:\RR^2\to\RR\times\RR_{>0}.
 \]
 :::
 

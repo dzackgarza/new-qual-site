@@ -31,7 +31,7 @@ i:\mathbb{RP}^2\hookrightarrow\mathbb{RP}^3
 $$
 induces the identity isomorphism
 $$
-i_*:\pi_1(\mathbb{RP}^2)\cong\mathbb Z/2\longrightarrow\pi_1(\mathbb{RP}^3)\cong\mathbb Z/2.
+i_*:\pi_1(\mathbb{RP}^2)\cong\ZZ/2\longrightarrow\pi_1(\mathbb{RP}^3)\cong\ZZ/2.
 $$
 
 ::: pf-proof

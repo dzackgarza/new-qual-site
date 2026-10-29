@@ -16,7 +16,7 @@ audit:
 ::: {.problem}
 For $a<b$ and a continuous function
 \[
-f:[a,b]\to\mathbb R,
+f:[a,b]\to\RR,
 \]
 prove that the image of $f$ is a closed bounded interval.
 :::
@@ -38,13 +38,13 @@ is compact and connected.
 
 By the Heine--Borel theorem, a closed bounded interval in
 $$
-\mathbb R
+\RR
 $$
 is compact.
 
 It is connected because every interval in
 $$
-\mathbb R
+\RR
 $$
 is connected.
 
@@ -86,7 +86,7 @@ f([a,b])
 $$
 is closed and bounded in
 $$
-\mathbb R.
+\RR.
 $$
 
 
@@ -94,7 +94,7 @@ $$
 
 By the Heine--Borel theorem, compact subsets of
 $$
-\mathbb R
+\RR
 $$
 are exactly the closed bounded subsets.
 Apply this to step [](#s1-2){.pf-ref}.
@@ -133,7 +133,7 @@ is connected.
 
 Every connected subset of
 $$
-\mathbb R
+\RR
 $$
 is an interval.
 
@@ -142,7 +142,7 @@ is an interval.
 
 Let
 $$
-S\subseteq\mathbb R
+S\subseteq\RR
 $$
 be connected, and suppose
 $$
@@ -192,7 +192,7 @@ is an interval.
 
 Step [](#s1-4){.pf-ref} gives connectedness, and step [](#s1-5){.pf-ref} characterizes connected subsets of
 $$
-\mathbb R
+\RR
 $$
 as intervals.
 

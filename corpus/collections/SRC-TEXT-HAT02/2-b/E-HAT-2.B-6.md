@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Modify the construction of the Alexander horned sphere to produce an embedding $S^2 \hookrightarrow \mathbb{R}^3$ for which neither component of $\mathbb{R}^3 - S^2$ is simply-connected.
+Modify the construction of the Alexander horned sphere to produce an embedding $S^2 \hookrightarrow \RR^3$ for which neither component of $\RR^3 - S^2$ is simply-connected.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ The standard Alexander construction can be localized in a small $3$-ball meeting
 
 ::: pf-step
 
-Start with a round sphere $S_0\subset\mathbb R^3$ and choose two disjoint closed disks
+Start with a round sphere $S_0\subset\RR^3$ and choose two disjoint closed disks
 \[
 D_+,D_-\subset S_0.
 \]
@@ -79,7 +79,7 @@ Each replacement is a topological disk attached along the same boundary circle a
 
 ::: pf-step
 
-The exterior component of $\mathbb R^3-S$ is not simply-connected.
+The exterior component of $\RR^3-S$ is not simply-connected.
 
 ::: pf-proof
 
@@ -93,7 +93,7 @@ Choose $N_+$ so that its intersection with the rest of the exterior component is
 
 ::: pf-step
 
-The bounded component of $\mathbb R^3-S$ is also not simply-connected.
+The bounded component of $\RR^3-S$ is also not simply-connected.
 
 ::: pf-proof
 
@@ -107,6 +107,6 @@ Apply the same argument to the reflected horned disk in $N_-$. A meridian $\alph
 
 Therefore
 \[
-\boxed{\text{neither component of }\mathbb R^3-S\text{ is simply-connected}.}
+\boxed{\text{neither component of }\RR^3-S\text{ is simply-connected}.}
 \]
 :::

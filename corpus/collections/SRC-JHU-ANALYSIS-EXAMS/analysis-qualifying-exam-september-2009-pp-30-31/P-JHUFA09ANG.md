@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 7. Let $f:H\to D$ be a holomorphic map from the upper half plane
 
-$H = \left\{ z \in \mathbb { C } : \operatorname { I m } z > 0 \right\}$ to the unit disk $D = \{ z \in \mathbb { C } : | z | < 1 \}$
+$H = \left\{ z \in \CC : \operatorname { I m } z > 0 \right\}$ to the unit disk $D = \{ z \in \CC : | z | < 1 \}$
 
 Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $| f ^ { \prime } ( i ) |$
 :::
@@ -100,7 +100,7 @@ The bound is attained, and the extremizers are explicit.
 
 ::: pf-proof
 
-For any $\lambda\in\mathbb C$ with $|\lambda|=1$, define
+For any $\lambda\in\CC$ with $|\lambda|=1$, define
 $$
 f_\lambda(z)=T^{-1}(\lambda\phi(z))
 =\frac{\lambda\phi(z)+1/2}{1+\lambda\phi(z)/2}.

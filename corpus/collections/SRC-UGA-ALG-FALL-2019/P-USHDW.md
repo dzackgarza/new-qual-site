@@ -74,7 +74,7 @@ For every nonnilpotent $r\in R$, a prime ideal exists that contains no positive 
 
 ::: pf-step
 
-Define the multiplicative set $\Sigma = \{r^k \mid k \in \mathbb{N}_{\ge 1}\}$.
+Define the multiplicative set $\Sigma = \{r^k \mid k \in \NN_{\ge 1}\}$.
 
 :::
 

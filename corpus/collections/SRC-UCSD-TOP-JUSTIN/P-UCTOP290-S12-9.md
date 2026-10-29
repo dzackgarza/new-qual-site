@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 Show that (working with cellular chain complexes)
 \[
-H_c^*(X \times \mathbb{R}) \cong H_c^{*-1}(X)
+H_c^*(X \times \RR) \cong H_c^{*-1}(X)
 \]
 for any space $X$.
 This is the analogue for compactly-supported cohomology of the suspension isomorphism $\widetilde{H}^*(\Sigma X) \cong \widetilde{H}^{*-1}(X)$.
@@ -28,11 +28,11 @@ This is the analogue for compactly-supported cohomology of the suspension isomor
 
 ::: pf-step
 
-Give $\mathbb R$ the locally finite CW structure with vertices $v_i=i$ and oriented edges $e_i=[i,i+1]$, $i\in\mathbb Z$. Its compactly-supported cellular cochain complex is
+Give $\RR$ the locally finite CW structure with vertices $v_i=i$ and oriented edges $e_i=[i,i+1]$, $i\in\ZZ$. Its compactly-supported cellular cochain complex is
 $$
-0\to \bigoplus_{i\in\mathbb Z}\mathbb Z\,v_i^*
+0\to \bigoplus_{i\in\ZZ}\ZZ\,v_i^*
 \xrightarrow{\delta}
-\bigoplus_{i\in\mathbb Z}\mathbb Z\,e_i^*\to0,
+\bigoplus_{i\in\ZZ}\ZZ\,e_i^*\to0,
 $$
 where
 $$
@@ -51,9 +51,9 @@ A compactly-supported cellular cochain is nonzero on only finitely many cells in
 
 This complex has
 $$
-H_c^0(\mathbb R)=0,
+H_c^0(\RR)=0,
 \qquad
-H_c^1(\mathbb R)\cong\mathbb Z.
+H_c^1(\RR)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -62,7 +62,7 @@ A finitely supported $0$-cochain with zero coboundary is constant on all vertice
 $$
 \sum_i a_i e_i^*\longmapsto\sum_i a_i
 $$
-vanishes on coboundaries and induces an isomorphism from the cokernel of $\delta$ to $\mathbb Z$: every finite-support sequence of total sum zero is a finite difference sequence.
+vanishes on coboundaries and induces an isomorphism from the cokernel of $\delta$ to $\ZZ$: every finite-support sequence of total sum zero is a finite difference sequence.
 
 :::
 
@@ -70,11 +70,11 @@ vanishes on coboundaries and induces an isomorphism from the cokernel of $\delta
 
 ::: {.pf-step #s3}
 
-As a cochain complex of free abelian groups, $C_c^*(\mathbb R)$ is chain-homotopy equivalent to $\mathbb Z[-1]$, the complex with one copy of $\mathbb Z$ in cohomological degree $1$.
+As a cochain complex of free abelian groups, $C_c^*(\RR)$ is chain-homotopy equivalent to $\ZZ[-1]$, the complex with one copy of $\ZZ$ in cohomological degree $1$.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref} the complex has a single free cohomology group $\mathbb Z$ in degree $1$. Since all terms are free abelian, the short exact sequences defining cycles and boundaries split, so the acyclic summand is contractible and the complex splits up to chain homotopy as its cohomology placed in degree $1$.
+By step [](#s2){.pf-ref} the complex has a single free cohomology group $\ZZ$ in degree $1$. Since all terms are free abelian, the short exact sequences defining cycles and boundaries split, so the acyclic summand is contractible and the complex splits up to chain homotopy as its cohomology placed in degree $1$.
 
 :::
 
@@ -84,8 +84,8 @@ By step [](#s2){.pf-ref} the complex has a single free cohomology group $\mathbb
 
 For a locally finite CW complex $X$, the product CW structure gives
 $$
-C_c^*(X\times\mathbb R)
-\cong C_c^*(X)\otimes C_c^*(\mathbb R)
+C_c^*(X\times\RR)
+\cong C_c^*(X)\otimes C_c^*(\RR)
 $$
 with the usual total differential.
 
@@ -101,14 +101,14 @@ Product cells are pairs $e^p\times e_i^q$. A compactly-supported cellular cochai
 
 Therefore
 $$
-\boxed{H_c^k(X\times\mathbb R)\cong H_c^{k-1}(X)}.
+\boxed{H_c^k(X\times\RR)\cong H_c^{k-1}(X)}.
 $$
 
 ::: pf-proof
 
 Tensor the chain-homotopy equivalence in step [](#s3){.pf-ref} with the free cochain complex $C_c^*(X)$. By step [](#s4){.pf-ref},
 $$
-C_c^*(X\times\mathbb R)\simeq C_c^*(X)\otimes\mathbb Z[-1]
+C_c^*(X\times\RR)\simeq C_c^*(X)\otimes\ZZ[-1]
 =C_c^*(X)[-1].
 $$
 Taking cohomology yields the stated degree shift.

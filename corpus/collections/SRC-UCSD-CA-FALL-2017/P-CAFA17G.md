@@ -26,7 +26,7 @@ Consider the meromorphic function
 \[
 \frac1{f(z)g(z)}.
 \]
-At each zero $a_j$ of $f$, record its principal part. By the Mittag--Leffler theorem, there exists a meromorphic function $h$ on $\mathbb C$ whose only poles are among the $a_j$ and whose principal part at every $a_j$ agrees with that of $1/(fg)$.
+At each zero $a_j$ of $f$, record its principal part. By the Mittag--Leffler theorem, there exists a meromorphic function $h$ on $\CC$ whose only poles are among the $a_j$ and whose principal part at every $a_j$ agrees with that of $1/(fg)$.
 
 Define
 \[

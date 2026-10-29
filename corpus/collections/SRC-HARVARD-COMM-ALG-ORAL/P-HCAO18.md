@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega \subseteq \mathbb C$ be a domain.
+Let $\Omega \subseteq \CC$ be a domain.
 Let $\mathcal O(\Omega)$ be the ring of holomorphic functions on $\Omega$, and let $\mathcal O_F(\Omega)$ be its subring of functions with finitely many zeros.
 
 Is either ring a unique factorization domain?

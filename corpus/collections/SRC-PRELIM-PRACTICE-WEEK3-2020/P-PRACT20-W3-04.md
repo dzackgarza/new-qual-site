@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\alpha \in \mathbb { R }$ . Find the Taylor Series for $( 1 + x ) ^ { \alpha }$ around $x = 0$
+Let $\alpha \in \RR$ . Find the Taylor Series for $( 1 + x ) ^ { \alpha }$ around $x = 0$
 :::
 
 ::: {.solution}
@@ -29,5 +29,5 @@ f ( x ) = 1 + \alpha x + { \frac { \alpha ( \alpha - 1 ) } { 2 } } x ^ { 2 } + {
 $$
 
 where the empty product is 1 by convention.
-If $\alpha \in \mathbb{N}$, the coefficients vanish for $k > \alpha$, and the series is the binomial expansion of the polynomial $(1+x)^\alpha$.
+If $\alpha \in \NN$, the coefficients vanish for $k > \alpha$, and the series is the binomial expansion of the polynomial $(1+x)^\alpha$.
 :::

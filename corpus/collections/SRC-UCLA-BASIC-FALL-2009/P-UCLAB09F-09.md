@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_{2n+1}(\mathbb R)$ satisfy
+Let $A\in M_{2n+1}(\RR)$ satisfy
 \[
 AA^T=I_{2n+1}.
 \]
@@ -53,7 +53,7 @@ and
 \chi_A(t)\to-\infty
 \quad\text{as }t\to-\infty.
 \]
-By the intermediate value theorem, there is $\lambda\in\mathbb R$ with
+By the intermediate value theorem, there is $\lambda\in\RR$ with
 \[
 \chi_A(\lambda)=0.
 \]

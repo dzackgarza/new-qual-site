@@ -56,7 +56,7 @@ The homotopy class of $p$ is $p_*([\operatorname{id}_{S^n}])$, which is nonzero.
 
 ::: pf-proof
 
-Since $\pi_n(S^n)\cong\mathbb Z$ and $[\operatorname{id}]$ is a generator, the isomorphism in step [](#s2){.pf-ref} sends it to a nonzero element.
+Since $\pi_n(S^n)\cong\ZZ$ and $[\operatorname{id}]$ is a generator, the isomorphism in step [](#s2){.pf-ref} sends it to a nonzero element.
 
 :::
 

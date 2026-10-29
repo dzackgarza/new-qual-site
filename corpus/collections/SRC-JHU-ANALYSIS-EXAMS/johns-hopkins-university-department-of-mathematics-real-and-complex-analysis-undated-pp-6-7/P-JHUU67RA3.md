@@ -48,7 +48,7 @@ Let $I=[0,1]$ and write
 
 2. Prove that $L^p(I)$, meaning measurable finite-$p$-norm functions modulo equality almost everywhere, is Banach for $1\le p\le\infty$.
 
-3. Prove that there is no smooth function $h\in C^\infty(\mathbb R)$ such that
+3. Prove that there is no smooth function $h\in C^\infty(\RR)$ such that
 \[
 (f*h)(x):=\int_0^1 f(y)h(x-y)\,dy=f(x)
 \qquad\text{for every }f\in L^1([0,1])\text{ and almost every }x\in[0,1].
@@ -59,7 +59,7 @@ Let $I=[0,1]$ and write
 \int_I|fg|\le \|f\|_p\|g\|_q.
 \]
 
-5. Deduce Young's convolution inequality on $\mathbb R$: if
+5. Deduce Young's convolution inequality on $\RR$: if
 \[
 1\le p,q,r\le\infty,
 \qquad
@@ -143,7 +143,7 @@ There is no smooth convolution identity on $L^1([0,1])$.
 
 ::: pf-proof
 
-Suppose $h\in C^\infty(\mathbb R)$ satisfied the stated identity for every $f\in L^1([0,1])$. Fix such an $f$. The displayed convolution is finite for every $x\in[0,1]$, since $h$ is bounded on $[-1,1]$, and is unchanged by replacing $f$ on a null set. Define
+Suppose $h\in C^\infty(\RR)$ satisfied the stated identity for every $f\in L^1([0,1])$. Fix such an $f$. The displayed convolution is finite for every $x\in[0,1]$, since $h$ is bounded on $[-1,1]$, and is unchanged by replacing $f$ on a null set. Define
 $$
 \omega_h(\delta)=\sup\{|h(s)-h(t)|:s,t\in[-1,1],\ |s-t|\leq\delta\}.
 $$

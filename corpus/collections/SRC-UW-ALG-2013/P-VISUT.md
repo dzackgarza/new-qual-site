@@ -19,13 +19,13 @@ audit:
 ---
 
 ::: {.problem}
-This question concerns an extension $K$ of $\mathbb Q$ such that $[K:\mathbb Q]=8$.
-Assume that $K/\mathbb Q$ is Galois and let $G=\Gal(K/\mathbb Q)$.
+This question concerns an extension $K$ of $\QQ$ such that $[K:\QQ]=8$.
+Assume that $K/\QQ$ is Galois and let $G=\Gal(K/\QQ)$.
 Furthermore, assume that $G$ is non-abelian.
 
-- Prove that $K$ has a unique subfield $F$ such that $F/\mathbb Q$ is Galois and $[F:\mathbb Q]=4$.
+- Prove that $K$ has a unique subfield $F$ such that $F/\QQ$ is Galois and $[F:\QQ]=4$.
 
-- Prove that $F$ has the form $F=\mathbb Q(\sqrt{d_1},\sqrt{d_2})$ where $d_1,d_2$ are non-zero integers.
+- Prove that $F$ has the form $F=\QQ(\sqrt{d_1},\sqrt{d_2})$ where $d_1,d_2$ are non-zero integers.
 
 - Suppose that $G$ is the quaternionic group.
   Prove that $d_1$ and $d_2$ are positive integers.
@@ -57,13 +57,13 @@ For \(D_8=\langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle\), the unique normal sub
 
 There is a unique subfield \(F\subset K\) with
 \[
-[F:\mathbb Q]=4
+[F:\QQ]=4
 \]
-and \(F/\mathbb Q\) Galois.
+and \(F/\QQ\) Galois.
 
 ::: pf-proof
 
-By the Galois correspondence, subfields \(F\) with \([F:\mathbb Q]=4\) correspond to subgroups \(H\le G\) of order \(2\). Such an \(F/\mathbb Q\) is Galois exactly when \(H\trianglelefteq G\). By step [](#s1){.pf-ref} there is exactly one such normal subgroup, namely \(H=Z(G)\). Thus
+By the Galois correspondence, subfields \(F\) with \([F:\QQ]=4\) correspond to subgroups \(H\le G\) of order \(2\). Such an \(F/\QQ\) is Galois exactly when \(H\trianglelefteq G\). By step [](#s1){.pf-ref} there is exactly one such normal subgroup, namely \(H=Z(G)\). Thus
 \[
 F=K^{Z(G)}
 \]
@@ -75,16 +75,16 @@ is the unique quartic Galois subfield.
 
 ::: {.pf-step #s3}
 
-The Galois group of \(F/\mathbb Q\) is
+The Galois group of \(F/\QQ\) is
 \[
-\operatorname{Gal}(F/\mathbb Q)\cong C_2\times C_2.
+\operatorname{Gal}(F/\QQ)\cong C_2\times C_2.
 \]
 
 ::: pf-proof
 
 Since \(F=K^{Z(G)}\), Galois theory gives
 \[
-\operatorname{Gal}(F/\mathbb Q)\cong G/Z(G).
+\operatorname{Gal}(F/\QQ)\cong G/Z(G).
 \]
 For both \(D_8\) and \(Q_8\), the quotient by the center is the Klein four group.
 
@@ -96,24 +96,24 @@ For both \(D_8\) and \(Q_8\), the quotient by the center is the Klein four group
 
 There exist nonzero integers \(d_1,d_2\) such that
 \[
-F=\mathbb Q(\sqrt{d_1},\sqrt{d_2}).
+F=\QQ(\sqrt{d_1},\sqrt{d_2}).
 \]
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, the group \(\operatorname{Gal}(F/\mathbb Q)\cong C_2^2\) has three distinct subgroups of order \(2\). Their fixed fields are three distinct quadratic extensions of \(\mathbb Q\). Choose two of them, say
+By step [](#s3){.pf-ref}, the group \(\operatorname{Gal}(F/\QQ)\cong C_2^2\) has three distinct subgroups of order \(2\). Their fixed fields are three distinct quadratic extensions of \(\QQ\). Choose two of them, say
 \[
-E_1=\mathbb Q(\sqrt{d_1}),
+E_1=\QQ(\sqrt{d_1}),
 \qquad
-E_2=\mathbb Q(\sqrt{d_2}),
+E_2=\QQ(\sqrt{d_2}),
 \]
-where \(d_1,d_2\in\mathbb Z\setminus\{0\}\) may be taken squarefree. Since \(E_1\ne E_2\), their compositum has degree
+where \(d_1,d_2\in\ZZ\setminus\{0\}\) may be taken squarefree. Since \(E_1\ne E_2\), their compositum has degree
 \[
-[E_1E_2:\mathbb Q]=4.
+[E_1E_2:\QQ]=4.
 \]
-As \(E_1E_2\subseteq F\) and \([F:\mathbb Q]=4\), we get
+As \(E_1E_2\subseteq F\) and \([F:\QQ]=4\), we get
 \[
-F=E_1E_2=\mathbb Q(\sqrt{d_1},\sqrt{d_2}).
+F=E_1E_2=\QQ(\sqrt{d_1},\sqrt{d_2}).
 \]
 
 :::
@@ -122,13 +122,13 @@ F=E_1E_2=\mathbb Q(\sqrt{d_1},\sqrt{d_2}).
 
 ::: {.pf-step #s5}
 
-Suppose now that \(G\cong Q_8\). Then \(F\) is contained in \(\mathbb R\).
+Suppose now that \(G\cong Q_8\). Then \(F\) is contained in \(\RR\).
 
 ::: pf-proof
 
-Fix the given embedding \(K\subseteq\mathbb C\). Complex conjugation restricts to an element
+Fix the given embedding \(K\subseteq\CC\). Complex conjugation restricts to an element
 \[
-c\in\operatorname{Gal}(K/\mathbb Q)=Q_8
+c\in\operatorname{Gal}(K/\QQ)=Q_8
 \]
 of order at most \(2\). If \(c=1\), then every element of \(K\), hence every element of \(F\), is real.
 
@@ -140,7 +140,7 @@ and therefore
 \[
 F=K^{Z(Q_8)}=K^{\langle c\rangle}.
 \]
-But the fixed field of complex conjugation consists precisely of the real elements of \(K\). Thus again \(F\subseteq\mathbb R\).
+But the fixed field of complex conjugation consists precisely of the real elements of \(K\). Thus again \(F\subseteq\RR\).
 
 :::
 
@@ -152,7 +152,7 @@ In the quaternionic case, \(d_1\) and \(d_2\) may be chosen positive.
 
 ::: pf-proof
 
-By step [](#s5){.pf-ref}, each quadratic subfield \(E_i=\mathbb Q(\sqrt{d_i})\subseteq F\) is contained in \(\mathbb R\). A quadratic field \(\mathbb Q(\sqrt d)\) with squarefree integer \(d\) is real exactly when \(d>0\). Hence the squarefree representatives \(d_1,d_2\) in step [](#s4){.pf-ref} can be chosen positive.
+By step [](#s5){.pf-ref}, each quadratic subfield \(E_i=\QQ(\sqrt{d_i})\subseteq F\) is contained in \(\RR\). A quadratic field \(\QQ(\sqrt d)\) with squarefree integer \(d\) is real exactly when \(d>0\). Hence the squarefree representatives \(d_1,d_2\) in step [](#s4){.pf-ref} can be chosen positive.
 
 :::
 

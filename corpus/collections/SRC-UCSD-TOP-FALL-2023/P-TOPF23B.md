@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by identifying the faces of a standard cube $I^3$ in pairs, as shown.
-Compute the integral homology groups $H_*(X; \mathbb{Z})$.
+Compute the integral homology groups $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ The paired glyphs on the front/back faces have the same orientation, as do the p
 
 Quotienting first by the two translation pairings gives $T^2\times I$. The remaining side pairing therefore realizes $X$ as the mapping torus of the half-turn
 $$f:T^2\to T^2,$$
-which acts as $-I$ on $H_1(T^2;\mathbb Z)$.
+which acts as $-I$ on $H_1(T^2;\ZZ)$.
 
 ::: pf-proof
 
@@ -82,18 +82,18 @@ This is the standard homology exact sequence for a mapping torus.
 
 Hence
 $$
-\boxed{H_k(X;\mathbb Z)\cong
+\boxed{H_k(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,3,\\
-\mathbb Z\oplus(\mathbb Z/2)^2,&k=1,\\
-\mathbb Z,&k=2,\\
+\ZZ,&k=0,3,\\
+\ZZ\oplus(\ZZ/2)^2,&k=1,\\
+\ZZ,&k=2,\\
 0,&k>3.
 \end{cases}}
 $$
 
 ::: pf-proof
 
-On $H_1(T^2)$, $1-f_*=2I$, whose cokernel is $(\mathbb Z/2)^2$ and whose kernel is zero. On $H_0$ and $H_2$, $1-f_*=0$. The degree-one short exact sequence splits because its quotient is the free group $\mathbb Z$.
+On $H_1(T^2)$, $1-f_*=2I$, whose cokernel is $(\ZZ/2)^2$ and whose kernel is zero. On $H_0$ and $H_2$, $1-f_*=0$. The degree-one short exact sequence splits because its quotient is the free group $\ZZ$.
 
 :::
 

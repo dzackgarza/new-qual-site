@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS19E
 kind: problem
-title: Same character need not imply isomorphic representations of $\mathrm{GL}_2(\mathbb{R})$
+title: Same character need not imply isomorphic representations of $\mathrm{GL}_2(\RR)$
 classification:
   areas:
   - applied-algebra
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G=\mathrm{GL}_2(\mathbb{R})$ be the group of invertible $2\times 2$ real matrices and let $X,Y\colon G\to\mathrm{GL}_d(\mathbb{C})$ be two complex matrix representations of $G$ with the same degree $d$.
+Let $G=\mathrm{GL}_2(\RR)$ be the group of invertible $2\times 2$ real matrices and let $X,Y\colon G\to\mathrm{GL}_d(\CC)$ be two complex matrix representations of $G$ with the same degree $d$.
 If $X$ and $Y$ have the same character, are $X$ and $Y$ necessarily isomorphic?
 Justify your answer.
 :::
@@ -26,7 +26,7 @@ Take \(d=2\). Since
 \[
 \ell(g)=\log|\det g|
 \]
-is a homomorphism from \(\mathrm{GL}_2(\mathbb R)\) to the additive group \((\mathbb R,+)\), define
+is a homomorphism from \(\mathrm{GL}_2(\RR)\) to the additive group \((\RR,+)\), define
 \[
 X(g)=
 \begin{pmatrix}

@@ -217,7 +217,7 @@ then $N$ has a nonzero eigenvector.
 The characteristic polynomial of $N$ has positive degree and complex coefficients.
 By the fundamental theorem of algebra, it has a root
 \[
-\lambda\in\mathbb C.
+\lambda\in\CC.
 \]
 Thus
 \[

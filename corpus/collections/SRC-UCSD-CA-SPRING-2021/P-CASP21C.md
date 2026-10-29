@@ -15,14 +15,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathcal{F}$ denote the family of holomorphic functions $f : \Delta \to \mathbb{C}$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$.
+Let $\mathcal{F}$ denote the family of holomorphic functions $f : \Delta \to \CC$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$.
 Find the maximum value of $|f'(0)|$ as $f \in \mathcal{F}$.
 :::
 
 ::: {.solution}
 Let
 \[
-\Omega=\mathbb C\setminus(-\infty,0].
+\Omega=\CC\setminus(-\infty,0].
 \]
 Every $f\in\mathcal F$ takes values in $\Omega$. Let $s$ be the principal
 square root on $\Omega$, so $s(1)=1$ and $s(\Omega)$ is the right half-plane.
@@ -40,7 +40,7 @@ we obtain
 |f'(0)|\le4.
 \]
 
-The bound is attained: for any $\theta\in\mathbb R$,
+The bound is attained: for any $\theta\in\RR$,
 \[
 f_\theta(z)=
 \left(\frac{1+e^{i\theta}z}{1-e^{i\theta}z}\right)^2

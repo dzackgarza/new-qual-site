@@ -32,7 +32,7 @@ many roots.
 
 Let
 \[
-\mathbb H=\{a+bi+cj+dk:a,b,c,d\in\mathbb R\}
+\mathbb H=\{a+bi+cj+dk:a,b,c,d\in\RR\}
 \]
 be the Hamilton quaternions, with
 \[
@@ -40,7 +40,7 @@ i^2=j^2=k^2=ijk=-1.
 \]
 Consider
 \[
-f(x)=x^2+1\in\mathbb R[x]\subseteq\mathbb H[x].
+f(x)=x^2+1\in\RR[x]\subseteq\mathbb H[x].
 \]
 
 ::: pf
@@ -83,7 +83,7 @@ $\mathbb H$.
 ::: pf-proof
 
 The triples $(b,c,d)$ with $b^2+c^2+d^2=1$ form the unit sphere in
-$\mathbb R^3$, so step [](#s1){.pf-ref} supplies infinitely many distinct roots.
+$\RR^3$, so step [](#s1){.pf-ref} supplies infinitely many distinct roots.
 
 :::
 

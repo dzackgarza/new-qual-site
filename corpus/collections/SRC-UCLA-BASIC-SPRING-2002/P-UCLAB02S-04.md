@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Define uniform continuity for a function $F:X\to\mathbb R$, where $X$ is a metric space.
+(a) Define uniform continuity for a function $F:X\to\RR$, where $X$ is a metric space.
 
-(b) Prove that a function $f:(0,1)\to\mathbb R$ is the restriction to $(0,1)$ of a continuous function $F:[0,1]\to\mathbb R$ if and only if $f$ is uniformly continuous on $(0,1)$.
+(b) Prove that a function $f:(0,1)\to\RR$ is the restriction to $(0,1)$ of a continuous function $F:[0,1]\to\RR$ if and only if $f$ is uniformly continuous on $(0,1)$.
 :::
 
 ::: {.solution}
@@ -29,7 +29,7 @@ audit:
 
 A function
 \[
-F:X\to\mathbb R
+F:X\to\RR
 \]
 is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $x,y\in X$,
 \[
@@ -54,7 +54,7 @@ The crucial point is that the same $\delta$ works simultaneously for every pair 
 
 Suppose there exists a continuous
 \[
-F:[0,1]\to\mathbb R
+F:[0,1]\to\RR
 \]
 whose restriction to $(0,1)$ is $f$.
 Then $f$ is uniformly continuous on $(0,1)$.
@@ -86,7 +86,7 @@ the function $f$ is uniformly continuous.
 
 ::: {.pf-step #s1-3}
 
-Conversely, assume $f:(0,1)\to\mathbb R$ is uniformly continuous.
+Conversely, assume $f:(0,1)\to\RR$ is uniformly continuous.
 Then for every sequence $(x_n)$ in $(0,1)$ with
 \[
 x_n\to0,
@@ -144,11 +144,11 @@ x_n\in(0,1),
 \qquad
 x_n\to0.
 \]
-By step [](#s1-3){.pf-ref}, $(f(x_n))$ is Cauchy, so completeness of $\mathbb R$ gives
+By step [](#s1-3){.pf-ref}, $(f(x_n))$ is Cauchy, so completeness of $\RR$ gives
 \[
 f(x_n)\to L_0
 \]
-for some $L_0\in\mathbb R$.
+for some $L_0\in\RR$.
 
 It remains to show that every sequence approaching $0$ has the same image limit.
 Let
@@ -224,7 +224,7 @@ Thus the one-sided limit exists and is finite.
 
 Define
 \[
-F:[0,1]\to\mathbb R
+F:[0,1]\to\RR
 \]
 by
 \[

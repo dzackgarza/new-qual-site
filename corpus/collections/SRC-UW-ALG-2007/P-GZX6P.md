@@ -65,7 +65,7 @@ For every positive integer $n$, there is an example with Galois group $S_n$.
 
 Let
 \[
-L=\mathbb Q(x_1,\dots,x_n)
+L=\QQ(x_1,\dots,x_n)
 \]
 be the rational function field in $n$ algebraically independent variables. Let $S_n$ act on $L$ by permuting the variables, and define
 \[
@@ -129,7 +129,7 @@ The subgroup of order $3$ is $A_3$, and a subgroup of order $6$ is all of $S_3$.
 
 ::: pf-step
 
-Both cubic possibilities occur over $\mathbb Q$.
+Both cubic possibilities occur over $\QQ$.
 
 ::: pf-proof
 
@@ -137,17 +137,17 @@ For $S_3$, take
 \[
 f(x)=x^3-2.
 \]
-It is irreducible over $\mathbb Q$ by Eisenstein at $2$. If $\alpha=\sqrt[3]{2}$ and $\zeta_3$ is a primitive cube root of unity, its splitting field is
+It is irreducible over $\QQ$ by Eisenstein at $2$. If $\alpha=\sqrt[3]{2}$ and $\zeta_3$ is a primitive cube root of unity, its splitting field is
 \[
-\mathbb Q(\alpha,\zeta_3).
+\QQ(\alpha,\zeta_3).
 \]
-The field $\mathbb Q(\alpha)$ is real of degree $3$, while $\zeta_3\notin\mathbb R$, so adjoining $\zeta_3$ has degree $2$. Thus the splitting field has degree $6$, and its Galois group, being a subgroup of $S_3$ of order $6$, is $S_3$.
+The field $\QQ(\alpha)$ is real of degree $3$, while $\zeta_3\notin\RR$, so adjoining $\zeta_3$ has degree $2$. Thus the splitting field has degree $6$, and its Galois group, being a subgroup of $S_3$ of order $6$, is $S_3$.
 
 For $A_3$, take
 \[
 g(x)=x^3-3x-1.
 \]
-It is irreducible over $\mathbb Q$ by the rational-root test. Its discriminant is
+It is irreducible over $\QQ$ by the rational-root test. Its discriminant is
 \[
 \Delta=-4(-3)^3-27(-1)^2=81=9^2.
 \]
@@ -155,7 +155,7 @@ If $r_1,r_2,r_3$ are its roots, then
 \[
 \delta=(r_1-r_2)(r_1-r_3)(r_2-r_3)
 \]
-satisfies $\delta^2=\Delta$. Since $\Delta=81$, we have $\delta=\pm9\in\mathbb Q$. An automorphism permuting the roots multiplies $\delta$ by the sign of the induced permutation. Because every Galois automorphism fixes $\delta$, every induced permutation is even. Hence the Galois group lies in $A_3$. By step [](#s3){.pf-ref} it is transitive, so its order is divisible by $3$; therefore it is exactly $A_3$.
+satisfies $\delta^2=\Delta$. Since $\Delta=81$, we have $\delta=\pm9\in\QQ$. An automorphism permuting the roots multiplies $\delta$ by the sign of the induced permutation. Because every Galois automorphism fixes $\delta$, every induced permutation is even. Hence the Galois group lies in $A_3$. By step [](#s3){.pf-ref} it is transitive, so its order is divisible by $3$; therefore it is exactly $A_3$.
 
 :::
 

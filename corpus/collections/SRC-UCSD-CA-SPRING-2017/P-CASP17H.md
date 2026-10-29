@@ -15,16 +15,16 @@ review: draft
 ---
 
 ::: {.problem}
-(i) Let $u : \mathbb{C} \to \mathbb{R}$ be a harmonic function which is bounded.
+(i) Let $u : \CC \to \RR$ be a harmonic function which is bounded.
 Show that $u$ is constant.
 
 (ii) Let $H = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane.
-Let $u : H \to \mathbb{R}$ be a continuous bounded function which is harmonic in $H$ and $u = 0$ on $\partial H$.
+Let $u : H \to \RR$ be a continuous bounded function which is harmonic in $H$ and $u = 0$ on $\partial H$.
 Show that $u$ is constant.
 :::
 
 ::: {.solution}
-For (i), since $\mathbb C$ is simply connected, $u$ has a harmonic conjugate
+For (i), since $\CC$ is simply connected, $u$ has a harmonic conjugate
 $v$, so $F=u+iv$ is entire. If $u$ is bounded above, then
 \[
 |e^{F(z)}|=e^{u(z)}
@@ -41,7 +41,7 @@ u(x+iy),&y\ge0,\\
 \end{cases}
 \]
 Because $u$ is continuous up to the boundary and vanishes there, the harmonic
-reflection principle shows that $U$ is harmonic on all of $\mathbb C$.
+reflection principle shows that $U$ is harmonic on all of $\CC$.
 It is bounded, so part (i) implies that $U$ is constant. Oddness forces that
 constant to be $0$. Hence $u\equiv0$ on $H$.
 :::

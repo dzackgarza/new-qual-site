@@ -112,7 +112,7 @@ Give a counterexample on an infinite-measure space.
 
 ::: pf-proof
 
-Take $X=\mathbb R$ with Lebesgue measure and
+Take $X=\RR$ with Lebesgue measure and
 \[
 f_n=\mathbf1_{[n,n+1]}.
 \]
@@ -122,7 +122,7 @@ For every $\varepsilon>0$, choose $\delta=\varepsilon$. If $m(E)<\delta$, then
 =\sup_n m(E\cap[n,n+1])
 \le m(E)<\varepsilon.
 \]
-Thus the stated uniform small-set condition holds. Also $f_n(x)\to0$ for every $x\in\mathbb R$. Nevertheless
+Thus the stated uniform small-set condition holds. Also $f_n(x)\to0$ for every $x\in\RR$. Nevertheless
 \[
 \|f_n\|_1=1
 \]

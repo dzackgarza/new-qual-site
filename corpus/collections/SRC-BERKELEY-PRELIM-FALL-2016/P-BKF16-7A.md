@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-7A
 kind: problem
-title: Rational matrices similar over $\mathbb C$ are similar over $\mathbb Q$
+title: Rational matrices similar over $\CC$ are similar over $\QQ$
 classification:
   areas:
   - prelim

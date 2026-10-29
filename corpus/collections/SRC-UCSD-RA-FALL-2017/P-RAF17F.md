@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $\lambda \in \mathbb{C}$ and $f \in L^1(m) = L^1(\mathbb{R}, m)$ satisfies $f * f * f(x) = \lambda f * f(x)$ for $m$-a.e. $x$.
+Suppose $\lambda \in \CC$ and $f \in L^1(m) = L^1(\RR, m)$ satisfies $f * f * f(x) = \lambda f * f(x)$ for $m$-a.e. $x$.
 Show $f(x) = 0$ for $m$-a.e. $x$.
 
 Recall that $\|f * g\|_{L^1(m)} \leq \|f\|_{L^1(m)} \|g\|_{L^1(m)}$ for all $f, g \in L^1(m)$ and therefore $f * f$ and $f * f * f$ are still in $L^1(m)$.
@@ -40,19 +40,19 @@ Take Fourier transforms of the convolution equation.
 
 ::: pf-proof
 
-Since $f\in L^1(\mathbb R)$, both $f*f$ and $f*f*f$ belong to $L^1(\mathbb R)$. The Fourier transform converts convolution into multiplication, so the assumed identity gives
+Since $f\in L^1(\RR)$, both $f*f$ and $f*f*f$ belong to $L^1(\RR)$. The Fourier transform converts convolution into multiplication, so the assumed identity gives
 \[
 \widehat f(\xi)^3
 =\lambda\widehat f(\xi)^2
 \]
-for every $\xi\in\mathbb R$. Thus
+for every $\xi\in\RR$. Thus
 \[
 \widehat f(\xi)^2\bigl(\widehat f(\xi)-\lambda\bigr)=0,
 \]
 and hence
 \[
 \widehat f(\xi)\in\{0,\lambda\}
-\qquad\text{for every }\xi\in\mathbb R.
+\qquad\text{for every }\xi\in\RR.
 \]
 
 :::
@@ -70,9 +70,9 @@ If $\lambda=0$, Step 1 immediately gives
 \widehat f\equiv0.
 \]
 
-Assume $\lambda\ne0$. The Fourier transform of an $L^1$ function is continuous. Since $\mathbb R$ is connected and the set $\{0,\lambda\}$ is disconnected, a continuous map
+Assume $\lambda\ne0$. The Fourier transform of an $L^1$ function is continuous. Since $\RR$ is connected and the set $\{0,\lambda\}$ is disconnected, a continuous map
 \[
-\widehat f:\mathbb R\to\{0,\lambda\}
+\widehat f:\RR\to\{0,\lambda\}
 \]
 must be constant.
 
@@ -96,7 +96,7 @@ Invoke uniqueness of the Fourier transform.
 
 ::: pf-proof
 
-The Fourier transform is injective on $L^1(\mathbb R)$. Since
+The Fourier transform is injective on $L^1(\RR)$. Since
 \[
 \widehat f=0,
 \]

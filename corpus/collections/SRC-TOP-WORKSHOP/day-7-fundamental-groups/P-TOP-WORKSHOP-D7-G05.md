@@ -39,7 +39,7 @@ g\longrightarrow ga,\qquad g\longrightarrow gb.
 
 For an index-four subgroup, define
 \[
-\phi:F(a,b)\twoheadrightarrow\mathbb Z/4,
+\phi:F(a,b)\twoheadrightarrow\ZZ/4,
 \qquad \phi(a)=1,\quad \phi(b)=0,
 \]
 and let \(H=\ker\phi\). Then \([F(a,b):H]=4\).

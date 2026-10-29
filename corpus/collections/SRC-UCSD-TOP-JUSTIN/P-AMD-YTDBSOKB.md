@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-For each of these actions of $\mathbb{Z}_2$ on $S^n$, compute $\pi_1(S^n/\mathbb{Z}_2)$
+For each of these actions of $\ZZ_2$ on $S^n$, compute $\pi_1(S^n/\ZZ_2)$
 
 1. $S^1, z\mapsto -z$
 

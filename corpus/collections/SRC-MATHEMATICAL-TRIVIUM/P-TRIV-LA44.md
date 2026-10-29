@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the quadratic form $f ( \vec { x } ) = 2 x _ { 1 } ^ { 2 } + 4 x _ { 1 } x _ { 2 } + 3 x _ { 2 } ^ { 2 } + 4 x _ { 2 } x _ { 3 } + 5 x _ { 3 } ^ { 2 }$ ,where $x _ { i } , i = 1 , 2 , 3$ are components of x in $\mathbb { R } ^ { 3 }$
+Consider the quadratic form $f ( \vec { x } ) = 2 x _ { 1 } ^ { 2 } + 4 x _ { 1 } x _ { 2 } + 3 x _ { 2 } ^ { 2 } + 4 x _ { 2 } x _ { 3 } + 5 x _ { 3 } ^ { 2 }$ ,where $x _ { i } , i = 1 , 2 , 3$ are components of x in $\RR ^ { 3 }$
 
 (a) Reduce $f ( \vec { x } )$ to the canonical form.
 Calculate its rang and signature.

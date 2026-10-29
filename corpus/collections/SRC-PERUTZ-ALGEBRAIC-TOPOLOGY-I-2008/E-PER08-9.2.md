@@ -23,15 +23,15 @@ audit:
 ---
 
 ::: {.problem}
-A collection $\mathcal{C}$ of $\mathbb{Z}$-modules is called a Serre class if for every short exact sequence $0\to A\to B\to C\to0$ such that two out of the three $\mathbb{Z}$-modules $A$, $B$, $C$ are in $\mathcal{C}$, the third is in $\mathcal{C}$ also.
-Fix a prime $p\in\mathbb{Z}$.
-Identify which of the following properties of $\mathbb{Z}$-modules $M$ define Serre classes: (a) $M$ is torsion; (b) $M$ is torsion-free; (c) $M$ is torsion but has no $p$-torsion; (d) every element of $M$ has $p$-power order; (e) every element of $M$ is divisible by $p$; (f) every $M$ is finitely generated.
+A collection $\mathcal{C}$ of $\ZZ$-modules is called a Serre class if for every short exact sequence $0\to A\to B\to C\to0$ such that two out of the three $\ZZ$-modules $A$, $B$, $C$ are in $\mathcal{C}$, the third is in $\mathcal{C}$ also.
+Fix a prime $p\in\ZZ$.
+Identify which of the following properties of $\ZZ$-modules $M$ define Serre classes: (a) $M$ is torsion; (b) $M$ is torsion-free; (c) $M$ is torsion but has no $p$-torsion; (d) every element of $M$ has $p$-power order; (e) every element of $M$ is divisible by $p$; (f) every $M$ is finitely generated.
 
 (*) What if we replace $M$ by an arbitrary commutative ring $R$ (and $p$ by a prime of $R$)?
 :::
 
 ::: {.solution}
-For $\mathbb Z$-modules, the answers are
+For $\ZZ$-modules, the answers are
 \[
 \boxed{(a)\ \text{yes},\quad (b)\ \text{no},\quad (c)\ \text{yes},\quad (d)\ \text{yes},\quad (e)\ \text{no},\quad (f)\ \text{yes}.}
 \]
@@ -66,7 +66,7 @@ Closure under submodules, quotients, and extensions gives the two-out-of-three p
 
 The exact sequence
 \[
-0\to\mathbb Z\xrightarrow{\times n}\mathbb Z\to\mathbb Z/n\to0
+0\to\ZZ\xrightarrow{\times n}\ZZ\to\ZZ/n\to0
 \]
 has its first two terms torsion-free and its quotient torsion.
 
@@ -82,9 +82,9 @@ has its first two terms torsion-free and its quotient torsion.
 
 In
 \[
-0\to\mathbb Z\to\mathbb Z[1/p]\to\mathbb Z[1/p]/\mathbb Z\to0,
+0\to\ZZ\to\ZZ[1/p]\to\ZZ[1/p]/\ZZ\to0,
 \]
-the middle and right terms are divisible by $p$, while $\mathbb Z$ is not.
+the middle and right terms are divisible by $p$, while $\ZZ$ is not.
 
 :::
 
@@ -92,7 +92,7 @@ the middle and right terms are divisible by $p$, while $\mathbb Z$ is not.
 
 ::: pf-step
 
-(f) is a Serre class over $\mathbb Z$.
+(f) is a Serre class over $\ZZ$.
 
 ::: pf-proof
 
@@ -109,5 +109,5 @@ Analogous torsion statements require a specified notion of torsion (for example 
 :::
 
 ::: {.remark}
-In the last question, the object to be replaced by the commutative ring $R$ is the ground ring $\mathbb{Z}$ of the modules $M$, as the parenthetical replacement of $p$ by a prime of $R$ indicates.
+In the last question, the object to be replaced by the commutative ring $R$ is the ground ring $\ZZ$ of the modules $M$, as the parenthetical replacement of $p$ by a prime of $R$ indicates.
 :::

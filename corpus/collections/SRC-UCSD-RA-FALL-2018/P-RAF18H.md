@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $-\infty < a < b < \infty$, $C([a,b], \mathbb{R})$ be the Banach space of continuous functions on $[a,b]$ equipped with the supremum norm,
+Let $-\infty < a < b < \infty$, $C([a,b], \RR)$ be the Banach space of continuous functions on $[a,b]$ equipped with the supremum norm,
 $$
-\mathcal{F} := \left\{f \in L^1(\mathbb{R}, m) \cap C(\mathbb{R}, \mathbb{R}) : \int_{\mathbb{R}} (1 + |k|)\,|\hat{f}(k)|\,dk \leq 1\right\},
+\mathcal{F} := \left\{f \in L^1(\RR, m) \cap C(\RR, \RR) : \int_{\RR} (1 + |k|)\,|\hat{f}(k)|\,dk \leq 1\right\},
 $$
 and
 $$
 \mathcal{F}_{[a,b]} := \{f|_{[a,b]} : f \in \mathcal{F}\}.
 $$
-Show $\mathcal{F}_{[a,b]}$ is a precompact subset of $C([a,b], \mathbb{R})$.
+Show $\mathcal{F}_{[a,b]}$ is a precompact subset of $C([a,b], \RR)$.
 :::
 
 ::: {.solution}
@@ -47,19 +47,19 @@ Use Fourier inversion to obtain a uniform bound.
 
 For $f\in\mathcal F$,
 \[
-\int_{\mathbb R}|\widehat f(k)|\,dk\le1,
+\int_{\RR}|\widehat f(k)|\,dk\le1,
 \]
-so $\widehat f\in L^1(\mathbb R)$. Since also $f\in L^1(\mathbb R)\cap C(\mathbb R)$, the Fourier inversion theorem applies. Thus, with the fixed constant $C_{\mathcal F}>0$ determined by the Fourier-transform normalization,
+so $\widehat f\in L^1(\RR)$. Since also $f\in L^1(\RR)\cap C(\RR)$, the Fourier inversion theorem applies. Thus, with the fixed constant $C_{\mathcal F}>0$ determined by the Fourier-transform normalization,
 \[
-f(x)=C_{\mathcal F}\int_{\mathbb R}\widehat f(k)e^{ikx}\,dk.
+f(x)=C_{\mathcal F}\int_{\RR}\widehat f(k)e^{ikx}\,dk.
 \]
 Consequently
 \[
 |f(x)|
-\le C_{\mathcal F}\int_{\mathbb R}|\widehat f(k)|\,dk
+\le C_{\mathcal F}\int_{\RR}|\widehat f(k)|\,dk
 \le C_{\mathcal F}
 \]
-for every $x\in\mathbb R$. Hence the restrictions in $\mathcal F_{[a,b]}$ are uniformly bounded.
+for every $x\in\RR$. Hence the restrictions in $\mathcal F_{[a,b]}$ are uniformly bounded.
 
 :::
 
@@ -71,12 +71,12 @@ Obtain a common modulus of continuity.
 
 ::: pf-proof
 
-For $x,y\in\mathbb R$,
+For $x,y\in\RR$,
 \[
 \begin{aligned}
 |f(x)-f(y)|
-&\le C_{\mathcal F}\int_{\mathbb R}|\widehat f(k)|\,|e^{ikx}-e^{iky}|\,dk\\
-&\le C_{\mathcal F}|x-y|\int_{\mathbb R}|k|\,|\widehat f(k)|\,dk\\
+&\le C_{\mathcal F}\int_{\RR}|\widehat f(k)|\,|e^{ikx}-e^{iky}|\,dk\\
+&\le C_{\mathcal F}|x-y|\int_{\RR}|k|\,|\widehat f(k)|\,dk\\
 &\le C_{\mathcal F}|x-y|,
 \end{aligned}
 \]

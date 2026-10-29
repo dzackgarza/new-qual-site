@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH7-34
 kind: problem
-title: Exterior of $(0,1)\cup[4,6)$ in $\mathbb{R}$
+title: Exterior of $(0,1)\cup[4,6)$ in $\RR$
 classification:
   areas: [topology]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X, T)$ be a topological space, and let $A$ be the subset $(0, 1) \cup [4, 6)$ in $\mathbb{R}$. Find the exterior of $A$.
+Let $(X, T)$ be a topological space, and let $A$ be the subset $(0, 1) \cup [4, 6)$ in $\RR$. Find the exterior of $A$.
 
 (A) $(-\infty, 0) \cup (2, 3) \cup (6, \infty)$
 (B) $[0, 1] \cup [4, 6]$

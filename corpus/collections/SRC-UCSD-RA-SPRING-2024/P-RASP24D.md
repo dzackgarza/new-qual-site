@@ -65,7 +65,7 @@ Weak convergence implies norm boundedness.
 
 For each $n$, define
 \[
-T_n:(\ell^p(A))^*\to\mathbb C,
+T_n:(\ell^p(A))^*\to\CC,
 \qquad
 T_n(\varphi)=\varphi(f_n).
 \]

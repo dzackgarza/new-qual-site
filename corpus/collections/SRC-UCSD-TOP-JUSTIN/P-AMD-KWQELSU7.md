@@ -23,7 +23,7 @@ Compute $H_*(\RP^2 \cross \RP^2; \ZZ_2)$
 
 ::: pf-step
 
-With coefficients in $\mathbb F_2=\mathbb Z_2$,
+With coefficients in $\mathbb F_2=\ZZ_2$,
 $$
 H_i(\mathbb{RP}^2;\mathbb F_2)\cong
 \begin{cases}
@@ -61,12 +61,12 @@ Over a field there are no Tor terms in the homological Künneth theorem.
 Therefore
 $$
 \boxed{
-H_n(\mathbb{RP}^2\times\mathbb{RP}^2;\mathbb Z_2)
+H_n(\mathbb{RP}^2\times\mathbb{RP}^2;\ZZ_2)
 \cong
 \begin{cases}
-\mathbb Z_2,&n=0,4,\\
-(\mathbb Z_2)^2,&n=1,3,\\
-(\mathbb Z_2)^3,&n=2,\\
+\ZZ_2,&n=0,4,\\
+(\ZZ_2)^2,&n=1,3,\\
+(\ZZ_2)^3,&n=2,\\
 0,&\text{otherwise}.
 \end{cases}}
 $$

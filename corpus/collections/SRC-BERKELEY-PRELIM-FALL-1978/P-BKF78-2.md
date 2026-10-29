@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\{g_n\}$ be a sequence of Riemann-integrable functions from $[0,1]$ to $\mathbb R$ such that
+Let $\{g_n\}$ be a sequence of Riemann-integrable functions from $[0,1]$ to $\RR$ such that
 \[
 |g_n(x)|\le 1
 \]

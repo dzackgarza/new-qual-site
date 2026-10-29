@@ -24,18 +24,18 @@ audit:
 ---
 
 ::: {.problem}
-Show that the splitting in the topological Künneth formula cannot be natural by considering the map $f \times \mathbb{1}: M(\mathbb{Z}_m, n) \times M(\mathbb{Z}_m, n) \to S^{n+1} \times M(\mathbb{Z}_m, n)$ where $f$ collapses the $n$-skeleton of $M(\mathbb{Z}_m, n) = S^n \cup e^{n+1}$ to a point.
+Show that the splitting in the topological Künneth formula cannot be natural by considering the map $f \times \mathbb{1}: M(\ZZ_m, n) \times M(\ZZ_m, n) \to S^{n+1} \times M(\ZZ_m, n)$ where $f$ collapses the $n$-skeleton of $M(\ZZ_m, n) = S^n \cup e^{n+1}$ to a point.
 :::
 
 ::: {.solution}
 Let
 \[
-M=M(\mathbb Z_m,n)=S^n\cup_m e^{n+1}.
+M=M(\ZZ_m,n)=S^n\cup_m e^{n+1}.
 \]
 Its reduced cellular chain complex has
 \[
-0\longrightarrow \mathbb Z\langle a\rangle
-\xrightarrow{m}\mathbb Z\langle b\rangle\longrightarrow0,
+0\longrightarrow \ZZ\langle a\rangle
+\xrightarrow{m}\ZZ\langle b\rangle\longrightarrow0,
 \qquad |a|=n+1,\ |b|=n.
 \]
 Let
@@ -46,11 +46,11 @@ be the quotient map. On cellular chains $f(a)=u$, the top cell of $S^{n+1}$, and
 
 Consider $M\times M$. In degrees $2n+2,2n+1,2n$ its cellular chain complex is
 \[
-\mathbb Z\langle a\otimes a\rangle
+\ZZ\langle a\otimes a\rangle
 \longrightarrow
-\mathbb Z\langle a\otimes b,b\otimes a\rangle
+\ZZ\langle a\otimes b,b\otimes a\rangle
 \longrightarrow
-\mathbb Z\langle b\otimes b\rangle,
+\ZZ\langle b\otimes b\rangle,
 \]
 with
 \[
@@ -67,23 +67,23 @@ a\otimes b+(-1)^{n+1}b\otimes a,
 \]
 and the image from degree $2n+2$ is $m$ times this generator. Hence
 \[
-H_{2n+1}(M\times M)\cong\mathbb Z_m.
+H_{2n+1}(M\times M)\cong\ZZ_m.
 \]
 This is precisely the Tor term
 \[
-\operatorname{Tor}(H_n(M),H_n(M))\cong\mathbb Z_m
+\operatorname{Tor}(H_n(M),H_n(M))\cong\ZZ_m
 \]
 in the Künneth formula.
 
 For $S^{n+1}\times M$, the relevant cellular chains are
 \[
-\mathbb Z\langle u\otimes a\rangle
+\ZZ\langle u\otimes a\rangle
 \xrightarrow{\pm m}
-\mathbb Z\langle u\otimes b\rangle,
+\ZZ\langle u\otimes b\rangle,
 \]
 so
 \[
-H_{2n+1}(S^{n+1}\times M)\cong\mathbb Z_m.
+H_{2n+1}(S^{n+1}\times M)\cong\ZZ_m.
 \]
 The map $f\times1$ sends
 \[

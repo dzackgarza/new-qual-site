@@ -269,7 +269,7 @@ N_x=e^y.
 \]
 These are not equal on all of
 \[
-\mathbb R^2.
+\RR^2.
 \]
 
 
@@ -277,7 +277,7 @@ These are not equal on all of
 
 On a simply connected domain such as
 \[
-\mathbb R^2,
+\RR^2,
 \]
 a continuously differentiable $1$-form
 \[

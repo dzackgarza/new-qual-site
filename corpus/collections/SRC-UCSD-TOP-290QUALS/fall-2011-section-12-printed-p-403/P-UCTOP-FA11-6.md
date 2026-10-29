@@ -42,7 +42,7 @@ There is one underlying $S^3$ from the universal cover of $P$ and $120$ addition
 ::: pf-step
 Therefore its third homology is
 $$
-H_3(\widetilde{P\vee S^3};\mathbb Z)\cong\mathbb Z^{121}.
+H_3(\widetilde{P\vee S^3};\ZZ)\cong\ZZ^{121}.
 $$
 
 ::: pf-proof
@@ -54,7 +54,7 @@ Reduced homology of a finite wedge is the direct sum of the reduced homology gro
 ::: pf-step
 The universal cover is $2$-connected, so Hurewicz gives
 $$
-\pi_3(\widetilde{P\vee S^3})\cong\mathbb Z^{121}.
+\pi_3(\widetilde{P\vee S^3})\cong\ZZ^{121}.
 $$
 
 ::: pf-proof
@@ -66,7 +66,7 @@ A wedge of $3$-spheres is $2$-connected. Apply the Hurewicz theorem in degree $3
 ::: pf-step
 Consequently
 $$
-\boxed{\pi_3(P\vee S^3)\cong\mathbb Z^{121}}.
+\boxed{\pi_3(P\vee S^3)\cong\ZZ^{121}}.
 $$
 
 ::: pf-proof

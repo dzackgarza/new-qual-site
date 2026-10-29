@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-The source defines, for $f\in C([0,1],\mathbb R)$,
+The source defines, for $f\in C([0,1],\RR)$,
 \[
 \|f\|:=\int_0^1 f\,dm
 \]

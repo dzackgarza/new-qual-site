@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH10A-2
 kind: problem
-title: Absolute value is a homomorphism on $\mathbb R^*$
+title: Absolute value is a homomorphism on $\RR^*$
 classification:
   areas:
   - algebra
@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the mapping given in Example 3, the map $\phi : \mathbb{R}^* \to \mathbb{R}^*$ defined by $x \mapsto |x|$, is a homomorphism.
+Prove that the mapping given in Example 3, the map $\phi : \RR^* \to \RR^*$ defined by $x \mapsto |x|$, is a homomorphism.
 :::
 
 ::: {.solution}
-Let $\phi : \mathbb { R } ^ { * } \to \mathbb { R } ^ { * }$ be defined by $x \mapsto | x |$ . Then $\phi ( x y ) = | x y | = | x | | y | = \phi ( x ) \phi ( y )$ so $\phi$ is a homomorphism.
+Let $\phi : \RR ^ { * } \to \RR ^ { * }$ be defined by $x \mapsto | x |$ . Then $\phi ( x y ) = | x y | = | x | | y | = \phi ( x ) \phi ( y )$ so $\phi$ is a homomorphism.
 :::

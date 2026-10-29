@@ -47,7 +47,7 @@ d(x_n,x)\le d(x_n,x_{n_j})+d(x_{n_j},x)<\varepsilon.
 \[
 -\frac1{2z-1},
 \]
-on $\mathbb C\setminus\{1/2\}$. Both curves run from $1$ to $-1$ and avoid
+on $\CC\setminus\{1/2\}$. Both curves run from $1$ to $-1$ and avoid
 $1/2$, so the two integrals are equal.
 
 (d) **True.** By Hurwitz's theorem, a locally uniform limit of zero-free

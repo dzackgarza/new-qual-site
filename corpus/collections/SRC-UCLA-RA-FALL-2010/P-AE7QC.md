@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the following sequence of functions: $$f_n:[0,1]\to\mathbb{R} \quad \text{by} \quad f_n(x) = \exp(\sin(2\pi n x)).$$
+Consider the following sequence of functions: $$f_n:[0,1]\to\RR \quad \text{by} \quad f_n(x) = \exp(\sin(2\pi n x)).$$
 
 a. Prove that $f_n$ converges weakly in $L^1([0,1])$.
 

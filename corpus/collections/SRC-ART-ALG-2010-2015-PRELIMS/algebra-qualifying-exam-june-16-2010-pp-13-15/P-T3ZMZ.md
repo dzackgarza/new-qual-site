@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T3ZMZ
 kind: problem
-title: $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$
+title: $A/mA \cong A \otimes_{\ZZ} (\ZZ/m\ZZ)$
 classification:
   areas:
   - algebra
@@ -25,13 +25,13 @@ audit:
   note: "Checked representative independence and balancing, descent through mA, both inverse identities, and the case m=1."
 ---
 ::: {.problem}
-Let $A$ be a $\mathbb{Z}$-module, and suppose $m \in \mathbb{Z}^+$.
-Prove that $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$.
+Let $A$ be a $\ZZ$-module, and suppose $m \in \ZZ^+$.
+Prove that $A/mA \cong A \otimes_{\ZZ} (\ZZ/m\ZZ)$.
 :::
 
 ::: {.solution}
-Write $T=A\otimes_{\mathbb Z}(\mathbb Z/m\mathbb Z)$
-and $\bar r=r+m\mathbb Z$. The inverse isomorphisms are
+Write $T=A\otimes_{\ZZ}(\ZZ/m\ZZ)$
+and $\bar r=r+m\ZZ$. The inverse isomorphisms are
 $$
 \begin{aligned}
 \Phi:A/mA&\longrightarrow T,
@@ -45,15 +45,15 @@ $$
 
 ::: {.pf-step #s1}
 
-The displayed formula defines a $\mathbb Z$-linear map $\Psi$.
+The displayed formula defines a $\ZZ$-linear map $\Psi$.
 
 ::: pf-proof
 
-The map $\beta:A\times(\mathbb Z/m\mathbb Z)\to A/mA$
+The map $\beta:A\times(\ZZ/m\ZZ)\to A/mA$
 given by $\beta(a,\bar r)=ra+mA$ is independent of the
 representative $r$: replacing $r$ by $r+mk$ changes $ra$
 by $m(ka)\in mA$. The map is additive in both variables.
-For $s\in\mathbb Z$ it satisfies
+For $s\in\ZZ$ it satisfies
 $$
 \beta(sa,\bar r)=r(sa)+mA=(rs)a+mA
 =\beta(a,s\bar r).
@@ -61,7 +61,7 @@ $$
 Thus it is balanced. The defining universal property of
 the tensor product gives an additive map $\Psi$ with
 the asserted formula. Every additive homomorphism of
-abelian groups is $\mathbb Z$-linear, so this is a module map.
+abelian groups is $\ZZ$-linear, so this is a module map.
 
 :::
 
@@ -78,7 +78,7 @@ The map $\eta:A\to T$, $a\mapsto a\otimes\bar1$,
 is additive. If $a=mb$, balancing gives
 $\eta(a)=(mb)\otimes\bar1=b\otimes\bar m=0$.
 Thus $mA$ lies in its kernel, and $\eta$ descends to
-the $\mathbb Z$-linear map $\Phi$ on $A/mA$.
+the $\ZZ$-linear map $\Phi$ on $A/mA$.
 
 For every coset, one has
 $\Psi\Phi(a+mA)=a+mA$.

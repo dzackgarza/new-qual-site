@@ -21,7 +21,7 @@ Is $\mathbb{RP}^2 \times \mathbb{RP}^3$ orientable?
 
 (b) Determine the action of the Bockstein
 $$
-\beta_1 : H^*(\mathbb{RP}^2 \times \mathbb{RP}^3; \mathbb{Z}_2) \to H^{*+1}(\mathbb{RP}^2 \times \mathbb{RP}^3; \mathbb{Z}_2).
+\beta_1 : H^*(\mathbb{RP}^2 \times \mathbb{RP}^3; \ZZ_2) \to H^{*+1}(\mathbb{RP}^2 \times \mathbb{RP}^3; \ZZ_2).
 $$
 :::
 
@@ -32,8 +32,8 @@ $$
 ::: pf-step
 
 The integral homology of the two factors is
-$$H_*(\mathbb{RP}^2)=\bigl(\mathbb Z,\mathbb Z/2,0\bigr),\qquad
-H_*(\mathbb{RP}^3)=\bigl(\mathbb Z,\mathbb Z/2,0,\mathbb Z\bigr).$$
+$$H_*(\mathbb{RP}^2)=\bigl(\ZZ,\ZZ/2,0\bigr),\qquad
+H_*(\mathbb{RP}^3)=\bigl(\ZZ,\ZZ/2,0,\ZZ\bigr).$$
 
 ::: pf-proof
 
@@ -46,19 +46,19 @@ This is the standard cellular homology computation for real projective spaces.
 ::: {.pf-step #s2}
 
 The integral Künneth theorem gives
-$$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^3;\mathbb Z)\cong
+$$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^3;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-(\mathbb Z/2)^2,&k=1,\\
-\mathbb Z/2,&k=2,\\
-\mathbb Z\oplus\mathbb Z/2,&k=3,\\
-\mathbb Z/2,&k=4,\\
+\ZZ,&k=0,\\
+(\ZZ/2)^2,&k=1,\\
+\ZZ/2,&k=2,\\
+\ZZ\oplus\ZZ/2,&k=3,\\
+\ZZ/2,&k=4,\\
 0,&k=5.
 \end{cases}}$$
 
 ::: pf-proof
 
-The tensor term $H_1(\mathbb{RP}^2)\otimes H_1(\mathbb{RP}^3)$ contributes $\mathbb Z/2$ in degree $2$; the Tor term $\operatorname{Tor}(\mathbb Z/2,\mathbb Z/2)$ contributes $\mathbb Z/2$ in degree $3$; and $H_1(\mathbb{RP}^2)\otimes H_3(\mathbb{RP}^3)$ contributes $\mathbb Z/2$ in degree $4$.
+The tensor term $H_1(\mathbb{RP}^2)\otimes H_1(\mathbb{RP}^3)$ contributes $\ZZ/2$ in degree $2$; the Tor term $\operatorname{Tor}(\ZZ/2,\ZZ/2)$ contributes $\ZZ/2$ in degree $3$; and $H_1(\mathbb{RP}^2)\otimes H_3(\mathbb{RP}^3)$ contributes $\ZZ/2$ in degree $4$.
 
 :::
 
@@ -67,19 +67,19 @@ The tensor term $H_1(\mathbb{RP}^2)\otimes H_1(\mathbb{RP}^3)$ contributes $\mat
 ::: pf-step
 
 By the integral cohomology universal coefficient theorem,
-$$\boxed{H^k(\mathbb{RP}^2\times\mathbb{RP}^3;\mathbb Z)\cong
+$$\boxed{H^k(\mathbb{RP}^2\times\mathbb{RP}^3;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,\\
+\ZZ,&k=0,\\
 0,&k=1,\\
-(\mathbb Z/2)^2,&k=2,\\
-\mathbb Z\oplus\mathbb Z/2,&k=3,\\
-\mathbb Z/2,&k=4,\\
-\mathbb Z/2,&k=5.
+(\ZZ/2)^2,&k=2,\\
+\ZZ\oplus\ZZ/2,&k=3,\\
+\ZZ/2,&k=4,\\
+\ZZ/2,&k=5.
 \end{cases}}$$
 
 ::: pf-proof
 
-Use $0\to\operatorname{Ext}(H_{k-1},\mathbb Z)\to H^k\to\operatorname{Hom}(H_k,\mathbb Z)\to0$ and $\operatorname{Ext}(\mathbb Z/2,\mathbb Z)\cong\mathbb Z/2$.
+Use $0\to\operatorname{Ext}(H_{k-1},\ZZ)\to H^k\to\operatorname{Hom}(H_k,\ZZ)\to0$ and $\operatorname{Ext}(\ZZ/2,\ZZ)\cong\ZZ/2$.
 
 :::
 
@@ -116,7 +116,7 @@ Its top integral homology $H_5$ vanishes by step [](#s2){.pf-ref}. Equivalently,
 ::: pf-step
 
 For the Bockstein associated to
-$$0\to\mathbb Z/2\to\mathbb Z/4\to\mathbb Z/2\to0,$$
+$$0\to\ZZ/2\to\ZZ/4\to\ZZ/2\to0,$$
 one has
 $$\beta_1(x)=x^2,\qquad \beta_1(y)=y^2,$$
 and, for every monomial,

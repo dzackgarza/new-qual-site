@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\alpha \in (0, 1]$ and $\Omega_\alpha \subset \mathbb{C}$ denote the open region
+Let $\alpha \in (0, 1]$ and $\Omega_\alpha \subset \CC$ denote the open region
 $$
 \Omega_\alpha := \left\{z = re^{i\theta} : \theta \in \left(-\frac{\alpha\pi}{2}, \frac{\alpha\pi}{2}\right), r > 0\right\}.
 $$

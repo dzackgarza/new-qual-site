@@ -51,13 +51,13 @@ collar neighborhood of subcomplexes.
 ::: pf-step
 The fundamental groups are:
 \[
-\pi_1(T_1) \cong \mathbb{Z}^2 = \langle a_1, b_1 \mid [a_1, b_1] = 1 \rangle, \quad
-\pi_1(T_2) \cong \mathbb{Z}^2 = \langle a_2, b_2 \mid [a_2, b_2] = 1 \rangle, \quad
-\pi_1(C) \cong \mathbb{Z} = \langle c \rangle.
+\pi_1(T_1) \cong \ZZ^2 = \langle a_1, b_1 \mid [a_1, b_1] = 1 \rangle, \quad
+\pi_1(T_2) \cong \ZZ^2 = \langle a_2, b_2 \mid [a_2, b_2] = 1 \rangle, \quad
+\pi_1(C) \cong \ZZ = \langle c \rangle.
 \]
 
 ::: pf-proof
-fundamental group of a torus is $\mathbb{Z} \times \mathbb{Z}$.
+fundamental group of a torus is $\ZZ \times \ZZ$.
 :::
 
 :::
@@ -114,7 +114,7 @@ Group-theoretic identification:
 ::: pf-proof
 
 ::: pf-step
-In the presentation $\langle a, b_1, b_2 \mid [a, b_1] = 1, \, [a, b_2] = 1 \rangle$, the element $a$ commutes with both $b_1$ and $b_2$, so $a$ generates a central cyclic subgroup $\langle a \rangle \cong \mathbb{Z}$.
+In the presentation $\langle a, b_1, b_2 \mid [a, b_1] = 1, \, [a, b_2] = 1 \rangle$, the element $a$ commutes with both $b_1$ and $b_2$, so $a$ generates a central cyclic subgroup $\langle a \rangle \cong \ZZ$.
 
 ::: pf-proof
 commutation relations.
@@ -132,7 +132,7 @@ presentation of free products and direct products.
 :::
 
 ::: pf-step
-Thus $\pi_1(X) \cong \mathbb{Z} \times F_2$, the direct product of the integers with the free group on two generators.
+Thus $\pi_1(X) \cong \ZZ \times F_2$, the direct product of the integers with the free group on two generators.
 
 ::: pf-proof
 universal property of direct products.
@@ -145,7 +145,7 @@ universal property of direct products.
 :::
 
 ::: pf-step
-Conclusion: $\pi_1(X) \cong \langle a, b_1, b_2 \mid [a, b_1] = 1, \, [a, b_2] = 1 \rangle \cong \mathbb{Z} \times F_2$.
+Conclusion: $\pi_1(X) \cong \langle a, b_1, b_2 \mid [a, b_1] = 1, \, [a, b_2] = 1 \rangle \cong \ZZ \times F_2$.
 
 ::: pf-proof
 steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.

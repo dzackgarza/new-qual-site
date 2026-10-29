@@ -20,7 +20,7 @@ review: draft
 ::: {.problem}
 Let $\mathbb{CP}^2$ be the complex projective plane with its usual orientation, and $\overline{\mathbb{CP}^2}$ be the same manifold with the opposite orientation.
 Let $M^4 = \mathbb{CP}^2 \# \overline{\mathbb{CP}^2}$ be the connect-sum of the two manifolds, obtained by removing an open $4$-ball from each one and identifying the resulting $3$-spheres so that the result is oriented.
-By working out the cohomology ring $H^*(M; \mathbb{Z})$, show that $M$ is not homotopy-equivalent to $S^2 \times S^2$.
+By working out the cohomology ring $H^*(M; \ZZ)$, show that $M$ is not homotopy-equivalent to $S^2 \times S^2$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ By working out the cohomology ring $H^*(M; \mathbb{Z})$, show that $M$ is not ho
 For
 $$M=\mathbb{CP}^2\#\overline{\mathbb{CP}}^{\,2},$$
 one has
-$$H^0(M;\mathbb Z)\cong H^4(M;\mathbb Z)\cong\mathbb Z,\qquad H^2(M;\mathbb Z)\cong\mathbb Z^2,$$
+$$H^0(M;\ZZ)\cong H^4(M;\ZZ)\cong\ZZ,\qquad H^2(M;\ZZ)\cong\ZZ^2,$$
 with all other cohomology zero.
 
 ::: pf-proof
@@ -41,7 +41,7 @@ Connected sum in dimension $4$ adds the middle homology groups of the summands, 
 :::
 
 ::: {.pf-step #intersection-relations}
-Choose $x,y\in H^2(M;\mathbb Z)$ from the two summands and an orientation class $u\in H^4(M;\mathbb Z)$. Then
+Choose $x,y\in H^2(M;\ZZ)$ from the two summands and an orientation class $u\in H^4(M;\ZZ)$. Then
 $$x^2=u,\qquad y^2=-u,\qquad xy=0.$$
 
 ::: pf-proof

@@ -14,10 +14,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ and let $x\in\mathbb{C}^n$, $x\neq 0$.
+Let $A\in M_n(\CC)=\CC^{n\times n}$ and let $x\in\CC^n$, $x\neq 0$.
 Prove that if
 \[
-S=(\operatorname{span}\{x\})^\perp\subseteq\mathbb{C}^n
+S=(\operatorname{span}\{x\})^\perp\subseteq\CC^n
 \]
 is an invariant subspace of $A$, meaning $AS\subseteq S$, then $x$ is an eigenvector of $A^H$.
 
@@ -41,7 +41,7 @@ Since
 \[
 S^\perp=\operatorname{span}\{x\},
 \]
-there is a scalar $\lambda\in\mathbb C$ such that
+there is a scalar $\lambda\in\CC$ such that
 \[
 A^Hx=\lambda x.
 \]

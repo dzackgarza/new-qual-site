@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X \subset \mathbb{R}^{n+1}$ be the union of the infinite sequence of spheres $S_k^n$ of radius $1/k$ and center $(1/k, 0, \ldots, 0)$.
+Let $X \subset \RR^{n+1}$ be the union of the infinite sequence of spheres $S_k^n$ of radius $1/k$ and center $(1/k, 0, \ldots, 0)$.
 Show that $\pi_i(X) = 0$ for $i < n$ and construct a homomorphism from $\pi_n(X)$ onto $\prod_k \pi_n(S_k^n)$.
 :::
 
@@ -48,7 +48,7 @@ Equivalently, one may contract each compact image successively off the \(n\)-sph
 
 To prove surjectivity of \(\Phi\), choose arbitrary classes
 \[
-a_k\in\pi_n(S_k^n)\cong\mathbb Z.
+a_k\in\pi_n(S_k^n)\cong\ZZ.
 \]
 Choose pairwise disjoint closed \(n\)-balls \(B_k\subset S^n\) whose diameters tend to zero and which accumulate only at one point \(q\). Collapse the complement of the interiors of all \(B_k\)'s to the common basepoint of \(X\). On each quotient
 \[

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1_{\mathrm{loc}}(\mathbb R^n)$ and let
+Let $f\in L^1_{\mathrm{loc}}(\RR^n)$ and let
 \[
 Mf(x)=\sup_{r>0}\frac1{m(B(r,x))}\int_{B(r,x)}|f(y)|\,dy
 \]
@@ -30,7 +30,7 @@ m(\{x:Mf(x)>s\})\le\frac{C_n}{s}\int_{|f(x)|>s/2}|f(x)|\,dx,\qquad s>0,
 where $C_n$ depends only on $n$.
 The Hardy--Littlewood maximal theorem may be used.
 
-(b) Prove that if $\phi\in C^1(\mathbb R)$, $\phi(0)=0$, and $\phi'>0$, then
+(b) Prove that if $\phi\in C^1(\RR)$, $\phi(0)=0$, and $\phi'>0$, then
 \[
 \int \phi(Mf(x))\,dx\le C_n\int |f(x)|\left(\int_{0<t<2|f(x)|}\frac{\phi'(t)}t\,dt\right)dx.
 \]
@@ -115,7 +115,7 @@ If
 \]
 the asserted inequality is automatic. Otherwise
 \[
-\widetilde f_s\in L^1(\mathbb R^n).
+\widetilde f_s\in L^1(\RR^n).
 \]
 By step [](#s1-1){.pf-ref} and the weak-$(1,1)$ Hardy--Littlewood maximal inequality,
 \[
@@ -141,7 +141,7 @@ Absorbing the harmless factor $2$ from the threshold $s/2$ into $C_n$ gives the 
 
 For every nonnegative measurable function $H$,
 \[
-\int_{\mathbb R^n}\phi(H(x))\,dx
+\int_{\RR^n}\phi(H(x))\,dx
 =
 \int_0^\infty
 \phi'(t)
@@ -165,12 +165,12 @@ Since $\phi(0)=0$ and $\phi'>0$,
 The integrand is nonnegative, so Tonelli's theorem gives
 \[
 \begin{aligned}
-\int_{\mathbb R^n}\phi(H(x))\,dx
+\int_{\RR^n}\phi(H(x))\,dx
 &=
 \int_0^\infty
 \phi'(t)
 \left(
-\int_{\mathbb R^n}
+\int_{\RR^n}
 \mathbf 1_{\{H(x)>t\}}\,dx
 \right)dt\\
 &=
@@ -188,7 +188,7 @@ m(\{H>t\})\,dt.
 
 Applying step [](#s1-3){.pf-ref} with $H=Mf$ and then step [](#s1-2){.pf-ref} gives
 \[
-\int_{\mathbb R^n}\phi(Mf(x))\,dx
+\int_{\RR^n}\phi(Mf(x))\,dx
 \le
 C_n
 \int_0^\infty
@@ -219,7 +219,7 @@ Substitute the estimate from step [](#s1-2){.pf-ref} for each $t>0$. Since every
 The right-hand side in step [](#s1-4){.pf-ref} equals
 \[
 C_n
-\int_{\mathbb R^n}
+\int_{\RR^n}
 |f(x)|
 \left(
 \int_{0<t<2|f(x)|}
@@ -239,7 +239,7 @@ The integrand is nonnegative, so Tonelli's theorem permits reversing the order o
 \int_{|f(x)|>t/2}|f(x)|\,dx
 \right)dt\\
 &\qquad=
-\int_{\mathbb R^n}
+\int_{\RR^n}
 |f(x)|
 \left(
 \int_{\{t>0:t<2|f(x)|\}}

@@ -36,7 +36,7 @@ Prove that there exists (a unique) automorphism Φ of H so that $\Phi ( x _ { j 
 Every automorphism of the upper half-plane has the form
 \[
 \Phi(z)=\frac{az+b}{cz+d},
-\qquad a,b,c,d\in\mathbb R,
+\qquad a,b,c,d\in\RR,
 \qquad ad-bc>0.
 \]
 

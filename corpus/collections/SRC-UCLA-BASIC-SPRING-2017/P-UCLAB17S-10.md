@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K\subset\mathbb R^n$ be compact. Assume that for every $\varepsilon>0$ and $a,b\in K$ there is a finite sequence $a=x_0,x_1,\dots,x_m=b$ in $K$ with $\|x_k-x_{k-1}\|<\varepsilon$.
+Let $K\subset\RR^n$ be compact. Assume that for every $\varepsilon>0$ and $a,b\in K$ there is a finite sequence $a=x_0,x_1,\dots,x_m=b$ in $K$ with $\|x_k-x_{k-1}\|<\varepsilon$.
 
 (a) Show that $K$ is connected.
 
@@ -298,7 +298,7 @@ G
 0<x\le1
 \right\}.
 \]
-The closure of $G$ in $\mathbb R^2$ is exactly $K_0$:
+The closure of $G$ in $\RR^2$ is exactly $K_0$:
 every point
 \[
 (0,y),

@@ -32,7 +32,7 @@ source:
   - P-BKF86-13
   - P-BKF86-14
   - id: P-AA27R
-    comment: Fall 1986 Problem 15; irreducibility of the $p$th cyclotomic polynomial over $\mathbb{Q}$
+    comment: Fall 1986 Problem 15; irreducibility of the $p$th cyclotomic polynomial over $\QQ$
   - P-BKF86-16
   - P-BKF86-17
   - P-BKF86-18

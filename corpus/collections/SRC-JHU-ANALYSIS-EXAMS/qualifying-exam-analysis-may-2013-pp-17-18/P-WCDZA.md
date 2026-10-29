@@ -24,17 +24,17 @@ audit:
 ---
 
 ::: {.problem}
-(a) Prove the Riemann-Lebesgue Lemma: if $f \in L^1(\mathbb{R}^d)$, then the Fourier transform of $f$,
+(a) Prove the Riemann-Lebesgue Lemma: if $f \in L^1(\RR^d)$, then the Fourier transform of $f$,
 
-$$\hat{f}(\xi) = \int_{\mathbb{R}^d} f(x) e^{-2\pi i x \cdot \xi} \, dx \to 0, \quad \text{as } |\xi| \to \infty.$$
+$$\hat{f}(\xi) = \int_{\RR^d} f(x) e^{-2\pi i x \cdot \xi} \, dx \to 0, \quad \text{as } |\xi| \to \infty.$$
 
-(b) Use part (a) to justify whether there exists a function $h \in L^1(\mathbb{R}^d)$ such that
+(b) Use part (a) to justify whether there exists a function $h \in L^1(\RR^d)$ such that
 
-$$f * h = f \quad \text{for all } f \in L^1(\mathbb{R}^d).$$
+$$f * h = f \quad \text{for all } f \in L^1(\RR^d).$$
 
 Here $f * h$ is the convolution of $f$ and $h$ defined by
 
-$$(f * h)(x) = \int_{\mathbb{R}^d} f(x - y) h(y) \, dy.$$
+$$(f * h)(x) = \int_{\RR^d} f(x - y) h(y) \, dy.$$
 :::
 
 ::: {.solution}
@@ -47,7 +47,7 @@ Prove the Riemann--Lebesgue lemma for $C_c^1$ functions.
 
 ::: pf-proof
 
-Let $\varphi\in C_c^1(\mathbb R^d)$. For $\xi\ne0$, choose an index $j$ such that
+Let $\varphi\in C_c^1(\RR^d)$. For $\xi\ne0$, choose an index $j$ such that
 \[
 |\xi_j|\ge \frac{|\xi|}{\sqrt d}.
 \]
@@ -55,7 +55,7 @@ Integration by parts in the $x_j$ variable gives
 \[
 \widehat\varphi(\xi)
 =\frac{1}{2\pi i\xi_j}
-\int_{\mathbb R^d}\partial_j\varphi(x)e^{-2\pi i x\cdot\xi}\,dx.
+\int_{\RR^d}\partial_j\varphi(x)e^{-2\pi i x\cdot\xi}\,dx.
 \]
 Therefore
 \[
@@ -76,11 +76,11 @@ Hence
 
 ::: pf-step
 
-Extend the result to every $f\in L^1(\mathbb R^d)$.
+Extend the result to every $f\in L^1(\RR^d)$.
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Since $C_c^1(\mathbb R^d)$ is dense in $L^1(\mathbb R^d)$, choose $\varphi\in C_c^1$ such that
+Fix $\varepsilon>0$. Since $C_c^1(\RR^d)$ is dense in $L^1(\RR^d)$, choose $\varphi\in C_c^1$ such that
 \[
 \|f-\varphi\|_1<\varepsilon.
 \]
@@ -108,10 +108,10 @@ Show that no $L^1$ convolution identity exists.
 
 ::: pf-proof
 
-Suppose $h\in L^1(\mathbb R^d)$ satisfied
+Suppose $h\in L^1(\RR^d)$ satisfied
 \[
 f*h=f
-\qquad\text{for every }f\in L^1(\mathbb R^d).
+\qquad\text{for every }f\in L^1(\RR^d).
 \]
 Taking Fourier transforms gives
 \[
@@ -126,14 +126,14 @@ f(x)=e^{-\pi|x|^2},
 whose Fourier transform is itself and is strictly positive everywhere. Hence
 \[
 \widehat h(\xi)=1
-\qquad\text{for every }\xi\in\mathbb R^d.
+\qquad\text{for every }\xi\in\RR^d.
 \]
 But Step 2 applied to $h\in L^1$ gives
 \[
 \widehat h(\xi)\to0
 \qquad(|\xi|\to\infty),
 \]
-a contradiction. Therefore no such $h\in L^1(\mathbb R^d)$ exists.
+a contradiction. Therefore no such $h\in L^1(\RR^d)$ exists.
 
 :::
 

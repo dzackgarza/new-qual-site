@@ -44,7 +44,7 @@ $$
 :::
 
 ::: {.solution}
-Let \(\Lambda=\{n+m\tau:n,m\in\mathbb Z\}\), with \(\Im\tau>0\). The number of lattice points in \(|\omega|\le R\) is \(O(R^2)\). Hence
+Let \(\Lambda=\{n+m\tau:n,m\in\ZZ\}\), with \(\Im\tau>0\). The number of lattice points in \(|\omega|\le R\) is \(O(R^2)\). Hence
 \[
 \sum_{\omega\in\Lambda\setminus\{0\}}|\omega|^{-3}<\infty,
 \]

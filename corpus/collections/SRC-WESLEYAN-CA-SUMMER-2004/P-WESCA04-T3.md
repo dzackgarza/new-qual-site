@@ -25,9 +25,9 @@ State the most general version of Cauchy's Theorem.
 
 ::: {.pf-step #s1-1}
 
-Let $U\subset\mathbb C$ be open and let
+Let $U\subset\CC$ be open and let
 \[
-f:U\to\mathbb C
+f:U\to\CC
 \]
 be holomorphic. Let
 \[
@@ -38,7 +38,7 @@ to zero in $U$:
 \[
 [\Gamma]=0
 \in
-H_1(U;\mathbb Z).
+H_1(U;\ZZ).
 \]
 Then the general Cauchy theorem is
 \[
@@ -135,7 +135,7 @@ Since
 \[
 [\Gamma]=0
 \in
-H_1(U;\mathbb Z),
+H_1(U;\ZZ),
 \]
 there is a finite oriented $2$-chain $C$ in $U$ with
 \[
@@ -195,7 +195,7 @@ condition
 =
 0
 \qquad
-(a\in\mathbb C\setminus U),
+(a\in\CC\setminus U),
 \]
 where
 \[
@@ -258,7 +258,7 @@ for every closed piecewise-$C^1$ curve $\Gamma\subset U$.
 
 A simply connected domain has
 \[
-H_1(U;\mathbb Z)=0.
+H_1(U;\ZZ)=0.
 \]
 Apply step [](#s1-1){.pf-ref}.
 

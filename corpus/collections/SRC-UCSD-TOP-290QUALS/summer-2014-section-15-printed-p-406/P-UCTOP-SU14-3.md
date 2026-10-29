@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $X = K \times K$ be the product of the Klein bottle $K$ with itself.
-Compute the homology $H_*(X; \mathbb{Z})$ and cohomology $H^*(X; \mathbb{Z})$.
+Compute the homology $H_*(X; \ZZ)$ and cohomology $H^*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Compute the homology $H_*(X; \mathbb{Z})$ and cohomology $H^*(X; \mathbb{Z})$.
 ::: pf-step
 The integral homology of the Klein bottle is
 $$
-H_0(K)=\mathbb Z,\qquad H_1(K)=\mathbb Z\oplus\mathbb Z/2,\qquad H_i(K)=0\ (i\ge2).
+H_0(K)=\ZZ,\qquad H_1(K)=\ZZ\oplus\ZZ/2,\qquad H_i(K)=0\ (i\ge2).
 $$
 
 ::: pf-proof
@@ -36,12 +36,12 @@ This follows from the standard CW structure with one $0$-cell, two $1$-cells, an
 ::: {.pf-step #kunneth-homology}
 The Künneth theorem gives
 $$
-H_n(K\times K;\mathbb Z)\cong
+H_n(K\times K;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z^2\oplus(\mathbb Z/2)^2,&n=1,\\
-\mathbb Z\oplus(\mathbb Z/2)^3,&n=2,\\
-\mathbb Z/2,&n=3,\\
+\ZZ,&n=0,\\
+\ZZ^2\oplus(\ZZ/2)^2,&n=1,\\
+\ZZ\oplus(\ZZ/2)^3,&n=2,\\
+\ZZ/2,&n=3,\\
 0,&n\ge4.
 \end{cases}
 $$
@@ -49,14 +49,14 @@ $$
 ::: pf-proof
 In degree $2$, the only tensor contribution is
 $$
-(\mathbb Z\oplus\mathbb Z/2)\otimes(\mathbb Z\oplus\mathbb Z/2)
-\cong \mathbb Z\oplus(\mathbb Z/2)^3.
+(\ZZ\oplus\ZZ/2)\otimes(\ZZ\oplus\ZZ/2)
+\cong \ZZ\oplus(\ZZ/2)^3.
 $$
 In degree $3$, the only nonzero contribution is
 $$
-\operatorname{Tor}(\mathbb Z/2,\mathbb Z/2)\cong\mathbb Z/2.
+\operatorname{Tor}(\ZZ/2,\ZZ/2)\cong\ZZ/2.
 $$
-All other terms follow immediately from $H_0(K)=\mathbb Z$ and the vanishing above degree $1$.
+All other terms follow immediately from $H_0(K)=\ZZ$ and the vanishing above degree $1$.
 :::
 
 :::
@@ -64,13 +64,13 @@ All other terms follow immediately from $H_0(K)=\mathbb Z$ and the vanishing abo
 ::: pf-step
 The universal coefficient theorem for cohomology gives
 $$
-H^n(K\times K;\mathbb Z)\cong
+H^n(K\times K;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z^2,&n=1,\\
-\mathbb Z\oplus(\mathbb Z/2)^2,&n=2,\\
-(\mathbb Z/2)^3,&n=3,\\
-\mathbb Z/2,&n=4,\\
+\ZZ,&n=0,\\
+\ZZ^2,&n=1,\\
+\ZZ\oplus(\ZZ/2)^2,&n=2,\\
+(\ZZ/2)^3,&n=3,\\
+\ZZ/2,&n=4,\\
 0,&n\ge5.
 \end{cases}
 $$
@@ -78,9 +78,9 @@ $$
 ::: pf-proof
 For each $n$,
 $$
-0\to\operatorname{Ext}(H_{n-1},\mathbb Z)\to H^n\to\operatorname{Hom}(H_n,\mathbb Z)\to0.
+0\to\operatorname{Ext}(H_{n-1},\ZZ)\to H^n\to\operatorname{Hom}(H_n,\ZZ)\to0.
 $$
-Apply the homology groups from step [](#kunneth-homology){.pf-ref}, using $\operatorname{Ext}(\mathbb Z/2,\mathbb Z)\cong\mathbb Z/2$ and the fact that Hom into $\mathbb Z$ kills torsion. The only extension involving a free quotient splits.
+Apply the homology groups from step [](#kunneth-homology){.pf-ref}, using $\operatorname{Ext}(\ZZ/2,\ZZ)\cong\ZZ/2$ and the fact that Hom into $\ZZ$ kills torsion. The only extension involving a free quotient splits.
 :::
 
 :::

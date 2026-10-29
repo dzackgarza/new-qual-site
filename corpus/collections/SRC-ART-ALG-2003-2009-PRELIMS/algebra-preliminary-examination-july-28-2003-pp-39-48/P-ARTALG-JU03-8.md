@@ -26,12 +26,12 @@ audit:
 ::: {.problem}
 (a) How many abelian groups of order 720 are there?
 
-(b) Let $L, M, N$ be finitely generated $\mathbb{Z}$-modules, such that $L \oplus M \cong L \oplus N$.
+(b) Let $L, M, N$ be finitely generated $\ZZ$-modules, such that $L \oplus M \cong L \oplus N$.
 Prove that $M \cong N$.
 :::
 
 ::: {.solution}
-Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
+Write $C_m=\ZZ/m\ZZ$ as an additive group.
 
 ::: pf
 
@@ -39,7 +39,7 @@ Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
 
 A finitely generated abelian group $A$ has a decomposition
 $$
-A\cong\mathbb Z^{r_A}\oplus
+A\cong\ZZ^{r_A}\oplus
 \bigoplus_{p\ \mathrm{prime}}\ \bigoplus_{e\geq1}
 (C_{p^e})^{m_A(p,e)},
 $$
@@ -92,7 +92,7 @@ multiplicities.
 
 ::: {.pf-step #s3}
 
-Finitely generated $\mathbb Z$-modules admit cancellation
+Finitely generated $\ZZ$-modules admit cancellation
 of a common direct summand.
 
 ::: pf-proof
@@ -112,7 +112,7 @@ All these numbers are finite nonnegative integers. Subtracting
 the common terms gives $r_M=r_N$ and
 $m_M(p,e)=m_N(p,e)$ for all $p,e$. Matching the summands in
 the two decompositions now gives $M\cong N$.
-An additive-group isomorphism is $\mathbb Z$-linear because it
+An additive-group isomorphism is $\ZZ$-linear because it
 preserves integer multiples, so this is the required module
 isomorphism.
 

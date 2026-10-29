@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F$ be a distribution on $\mathbb{R}^n$ such that the support of $F$, $\operatorname{supp}(F) = \{0\}$.
+Let $F$ be a distribution on $\RR^n$ such that the support of $F$, $\operatorname{supp}(F) = \{0\}$.
 Let $\alpha = (\alpha_1, \cdots, \alpha_n)$ with $\alpha_i$ nonnegative integers, and $\delta$ be the delta distribution centered at $0$.
 
 1. Prove that there exists a natural number $N$ and $C > 0$ such that
@@ -45,11 +45,11 @@ $$
 
 ::: {.pf-step #s1}
 
-(1) There are $N\in\mathbb N$ and $C>0$ with $|\langle F,\varphi\rangle|\le C\sum_{|\alpha|\le N}\sup_x|\partial^\alpha\varphi(x)|$ for every $\varphi\in C_c^\infty$.
+(1) There are $N\in\NN$ and $C>0$ with $|\langle F,\varphi\rangle|\le C\sum_{|\alpha|\le N}\sup_x|\partial^\alpha\varphi(x)|$ for every $\varphi\in C_c^\infty$.
 
 ::: pf-proof
 
-Choose $\chi\in C_c^\infty(\mathbb R^n)$ with $\chi=1$ on a neighborhood of $0$, and let $K=\operatorname{supp}\chi$. Since
+Choose $\chi\in C_c^\infty(\RR^n)$ with $\chi=1$ on a neighborhood of $0$, and let $K=\operatorname{supp}\chi$. Since
 \[
 \operatorname{supp}F=\{0\},
 \]
@@ -64,7 +64,7 @@ The restriction of a distribution to the Fréchet space
 \[
 \mathcal D_K:=\{\psi\in C_c^\infty:\operatorname{supp}\psi\subset K\}
 \]
-is continuous. Hence there exist $N\in\mathbb N$ and $C_0>0$ such that
+is continuous. Hence there exist $N\in\NN$ and $C_0>0$ such that
 \[
 |\langle F,\psi\rangle|
 \le C_0\sum_{|\alpha|\le N}
@@ -94,7 +94,7 @@ Suppose
 \partial^\alpha\varphi(0)=0
 \qquad(|\alpha|\le N).
 \]
-Choose $\eta\in C_c^\infty(\mathbb R^n)$ with $\eta=1$ near $0$, and put
+Choose $\eta\in C_c^\infty(\RR^n)$ with $\eta=1$ near $0$, and put
 \[
 \eta_\varepsilon(x):=\eta(x/\varepsilon).
 \]
@@ -142,7 +142,7 @@ Letting $\varepsilon\downarrow0$ yields
 
 ::: pf-proof
 
-Choose $\rho\in C_c^\infty(\mathbb R^n)$ with $\rho=1$ near $0$. For $|\alpha|\le N$, set
+Choose $\rho\in C_c^\infty(\RR^n)$ with $\rho=1$ near $0$. For $|\alpha|\le N$, set
 \[
 a_\alpha
 :=\left\langle F,\rho(x)\frac{x^\alpha}{\alpha!}\right\rangle.

@@ -107,7 +107,7 @@ The function
 \[
 x\longmapsto\frac{x}{(x^2+1)^2}
 \]
-is odd and absolutely integrable on $\mathbb R$. Its integral over the
+is odd and absolutely integrable on $\RR$. Its integral over the
 symmetric interval $[-R,R]$ is zero for every $R$, and passing to the limit
 gives the claim.
 

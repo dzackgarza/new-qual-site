@@ -32,7 +32,7 @@ F_{f_x} n_x + F_{f_y} n_y = g(s), & x \in \partial D,
 \end{cases}
 \tag{16}
 $$
-where $f = f(x, y) \in C^2(\bar{D})$, $F = F[f, f_x, f_y](x, y) \in C^2(\mathbb{R}^3 \times \bar{D})$, $g \in C^1(\partial D)$, $\partial/\partial n$ denotes a normal derivative on $\partial D$, $f_x \equiv \frac{\partial f}{\partial x}$ and $F_f \equiv \frac{\partial F}{\partial f}$.
+where $f = f(x, y) \in C^2(\bar{D})$, $F = F[f, f_x, f_y](x, y) \in C^2(\RR^3 \times \bar{D})$, $g \in C^1(\partial D)$, $\partial/\partial n$ denotes a normal derivative on $\partial D$, $f_x \equiv \frac{\partial f}{\partial x}$ and $F_f \equiv \frac{\partial F}{\partial f}$.
 
 (a) Show that the solutions to this equation are given by extrema of the functional
 $$

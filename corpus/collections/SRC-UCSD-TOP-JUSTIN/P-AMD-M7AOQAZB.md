@@ -27,15 +27,15 @@ Construct a space $X$ such that $H_*(X; \ZZ) = (\ZZ, \ZZ_6, \ZZ_{12}, \ZZ \oplus
 
 For an abelian group $A$ and $r\ge1$, let $M(A,r)$ denote a Moore space with
 $$
-\widetilde H_i(M(A,r);\mathbb Z)\cong
+\widetilde H_i(M(A,r);\ZZ)\cong
 \begin{cases}
 A,&i=r,\\
 0,&i\ne r.
 \end{cases}
 $$
-For $A=\mathbb Z/m$, one may take
+For $A=\ZZ/m$, one may take
 $$
-M(\mathbb Z/m,r)=S^r\cup_m e^{r+1},
+M(\ZZ/m,r)=S^r\cup_m e^{r+1},
 $$
 where the top cell is attached by a degree-$m$ map.
 
@@ -43,9 +43,9 @@ where the top cell is attached by a degree-$m$ map.
 
 Its cellular chain complex in the two positive dimensions is
 $$
-0\to\mathbb Z\xrightarrow{m}\mathbb Z\to0,
+0\to\ZZ\xrightarrow{m}\ZZ\to0,
 $$
-so the only reduced homology is $\mathbb Z/m$ in degree $r$.
+so the only reduced homology is $\ZZ/m$ in degree $r$.
 
 :::
 
@@ -55,17 +55,17 @@ so the only reduced homology is $\mathbb Z/m$ in degree $r$.
 
 Take
 $$
-X=M(\mathbb Z/6,1)\vee M(\mathbb Z/12,2)
-\vee S^3\vee M(\mathbb Z/4,3).
+X=M(\ZZ/6,1)\vee M(\ZZ/12,2)
+\vee S^3\vee M(\ZZ/4,3).
 $$
 Then
 $$
-H_i(X;\mathbb Z)\cong
+H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/6,&i=1,\\
-\mathbb Z/12,&i=2,\\
-\mathbb Z\oplus\mathbb Z/4,&i=3,\\
+\ZZ,&i=0,\\
+\ZZ/6,&i=1,\\
+\ZZ/12,&i=2,\\
+\ZZ\oplus\ZZ/4,&i=3,\\
 0,&i\ge4.
 \end{cases}
 $$
@@ -82,9 +82,9 @@ Reduced homology takes wedges of connected CW complexes to direct sums. Each sum
 
 The cohomological universal coefficient theorem gives
 $$
-0\to\operatorname{Ext}(H_{i-1}(X),\mathbb Z)
-\to H^i(X;\mathbb Z)
-\to\operatorname{Hom}(H_i(X),\mathbb Z)\to0.
+0\to\operatorname{Ext}(H_{i-1}(X),\ZZ)
+\to H^i(X;\ZZ)
+\to\operatorname{Hom}(H_i(X),\ZZ)\to0.
 $$
 
 ::: pf-proof
@@ -99,13 +99,13 @@ This is the universal coefficient short exact sequence for integral cohomology.
 
 Therefore
 $$
-\boxed{H^i(X;\mathbb Z)\cong
+\boxed{H^i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
+\ZZ,&i=0,\\
 0,&i=1,\\
-\mathbb Z/6,&i=2,\\
-\mathbb Z\oplus\mathbb Z/12,&i=3,\\
-\mathbb Z/4,&i=4,\\
+\ZZ/6,&i=2,\\
+\ZZ\oplus\ZZ/12,&i=3,\\
+\ZZ/4,&i=4,\\
 0,&i\ge5.
 \end{cases}}
 $$
@@ -114,21 +114,21 @@ $$
 
 Use
 $$
-\operatorname{Hom}(\mathbb Z/m,\mathbb Z)=0,
+\operatorname{Hom}(\ZZ/m,\ZZ)=0,
 \qquad
-\operatorname{Ext}(\mathbb Z/m,\mathbb Z)\cong\mathbb Z/m,
+\operatorname{Ext}(\ZZ/m,\ZZ)\cong\ZZ/m,
 $$
 and
 $$
-\operatorname{Hom}(\mathbb Z\oplus\mathbb Z/4,\mathbb Z)\cong\mathbb Z,
+\operatorname{Hom}(\ZZ\oplus\ZZ/4,\ZZ)\cong\ZZ,
 \qquad
-\operatorname{Ext}(\mathbb Z\oplus\mathbb Z/4,\mathbb Z)\cong\mathbb Z/4.
+\operatorname{Ext}(\ZZ\oplus\ZZ/4,\ZZ)\cong\ZZ/4.
 $$
 In degree $3$ the short exact sequence
 $$
-0\to\mathbb Z/12\to H^3(X)\to\mathbb Z\to0
+0\to\ZZ/12\to H^3(X)\to\ZZ\to0
 $$
-splits because $\mathbb Z$ is free, yielding $H^3(X)\cong\mathbb Z\oplus\mathbb Z/12$.
+splits because $\ZZ$ is free, yielding $H^3(X)\cong\ZZ\oplus\ZZ/12$.
 
 :::
 

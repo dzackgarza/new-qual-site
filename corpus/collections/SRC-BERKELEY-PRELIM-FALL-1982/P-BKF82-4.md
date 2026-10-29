@@ -38,8 +38,8 @@ Identify the orthogonal complement of the row space.
 
 ::: pf-proof
 
-Let $R(M)\subseteq\mathbb R^n$ be the span of the rows of $M$. A vector
-$x\in\mathbb R^n$ lies in $R(M)^\perp$ exactly when its dot product with
+Let $R(M)\subseteq\RR^n$ be the span of the rows of $M$. A vector
+$x\in\RR^n$ lies in $R(M)^\perp$ exactly when its dot product with
 every row of $M$ is zero. Those dot products are precisely the coordinates of
 $Mx$. Hence
 $$
@@ -62,7 +62,7 @@ Compare with the column space.
 
 The span of the columns of $M$ is the image of the linear map
 $$
-M:\mathbb R^n\to\mathbb R^n.
+M:\RR^n\to\RR^n.
 $$
 By rank-nullity,
 $$

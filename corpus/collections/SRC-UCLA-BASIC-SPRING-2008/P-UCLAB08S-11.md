@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb C)$ and suppose that $A^m=I_n$ for some positive integer $m$.
+Let $A\in M_n(\CC)$ and suppose that $A^m=I_n$ for some positive integer $m$.
 Prove that $A$ is diagonalizable.
 :::
 
@@ -58,7 +58,7 @@ The polynomial
 \[
 p(t)=t^m-1
 \]
-has no repeated root over $\mathbb C$.
+has no repeated root over $\CC$.
 
 
 ::: pf-proof
@@ -136,7 +136,7 @@ By step [](#s1-3){.pf-ref},
 \mid
 t^m-1.
 \]
-By step [](#s1-2){.pf-ref}, the polynomial $t^m-1$ is a product of distinct linear factors over $\mathbb C$.
+By step [](#s1-2){.pf-ref}, the polynomial $t^m-1$ is a product of distinct linear factors over $\CC$.
 Any divisor of such a polynomial also has no repeated factor.
 Thus
 \[
@@ -208,7 +208,7 @@ For any vector $v$,
 v=\sum_{j=1}^rP_jv
 \]
 is therefore a sum of eigenvectors belonging to the eigenspaces of $A$.
-Thus the eigenspaces span $\mathbb C^n$.
+Thus the eigenspaces span $\CC^n$.
 Choosing a basis in each eigenspace gives a basis of eigenvectors for $A$.
 Therefore $A$ is diagonalizable.
 
@@ -220,7 +220,7 @@ Therefore $A$ is diagonalizable.
 
 Therefore
 \[
-\boxed{A\text{ is diagonalizable over }\mathbb C}.
+\boxed{A\text{ is diagonalizable over }\CC}.
 \]
 
 

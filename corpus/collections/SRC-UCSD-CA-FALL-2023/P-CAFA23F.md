@@ -20,11 +20,11 @@ audit:
 ---
 
 ::: {.problem}
-For each $N \in \mathbb{N}$, let $P_N(z) = \sum_{n=0}^{N} \frac{z^n}{n!}$.
+For each $N \in \NN$, let $P_N(z) = \sum_{n=0}^{N} \frac{z^n}{n!}$.
 
-(a) Show that the set $Z = \{z \in \mathbb{C} \mid P_N(z) = 0 \text{ for some } N \in \mathbb{N}\}$ is **discrete** (has no accumulation points in $\mathbb{C}$).
+(a) Show that the set $Z = \{z \in \CC \mid P_N(z) = 0 \text{ for some } N \in \NN\}$ is **discrete** (has no accumulation points in $\CC$).
 
-(b) Find a constant $c > 0$ such that $P_N(z)$ has no zeros in $\{z \in \mathbb{C} \mid |z| < cN\}$.
+(b) Find a constant $c > 0$ such that $P_N(z)$ has no zeros in $\{z \in \CC \mid |z| < cN\}$.
 *(You may use the inequality $n! > e^{-n} n^n$.)*
 :::
 
@@ -73,7 +73,7 @@ Hence $|R_N(z)|<|e^z|$. If $P_N(z)=0$, then $e^z=R_N(z)$, a contradiction. Thus 
 
 ::: pf-step
 
-To prove discreteness, let $K\subset\mathbb C$ be compact and choose $R$ with $K\subset\overline{D_R}$. If $N>R/c$, then every zero of $P_N$ has modulus at least $cN>R$, so $P_N$ has no zero in $K$. Only finitely many $N$ can therefore contribute zeros to $K$, and each such polynomial has finitely many zeros. Hence $Z\cap K$ is finite for every compact $K$, so $Z$ has no accumulation point in $\mathbb C$.
+To prove discreteness, let $K\subset\CC$ be compact and choose $R$ with $K\subset\overline{D_R}$. If $N>R/c$, then every zero of $P_N$ has modulus at least $cN>R$, so $P_N$ has no zero in $K$. Only finitely many $N$ can therefore contribute zeros to $K$, and each such polynomial has finitely many zeros. Hence $Z\cap K$ is finite for every compact $K$, so $Z$ has no accumulation point in $\CC$.
 
 :::
 

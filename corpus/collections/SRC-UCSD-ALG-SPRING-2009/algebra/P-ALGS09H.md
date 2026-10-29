@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Consider the ideal $I = (x^2 - y^3,\; x - y^2) \subseteq \mathbb{C}[x, y]$.
+(a) Consider the ideal $I = (x^2 - y^3,\; x - y^2) \subseteq \CC[x, y]$.
 Find $\operatorname{rad} I$, the radical of $I$, expressing it as an intersection of prime ideals (do not try to find a generating set for $\operatorname{rad} I$).
 
 (b) Is $I$ a radical ideal?
@@ -34,7 +34,7 @@ Find $\operatorname{rad} I$, the radical of $I$, expressing it as an intersectio
 ::: {.solution}
 Let
 \[
-I=(x^2-y^3,\ x-y^2)\subseteq\mathbb C[x,y].
+I=(x^2-y^3,\ x-y^2)\subseteq\CC[x,y].
 \]
 
 ::: pf
@@ -43,7 +43,7 @@ I=(x^2-y^3,\ x-y^2)\subseteq\mathbb C[x,y].
 
 There is an isomorphism
 \[
-\mathbb C[x,y]/I\cong \mathbb C[y]/(y^3(y-1)).
+\CC[x,y]/I\cong \CC[y]/(y^3(y-1)).
 \]
 
 ::: pf-proof
@@ -51,7 +51,7 @@ There is an isomorphism
 First quotient by the relation $x-y^2$.
 The substitution homomorphism
 \[
-\mathbb C[x,y]\longrightarrow\mathbb C[y],
+\CC[x,y]\longrightarrow\CC[y],
 \qquad
 x\longmapsto y^2,
 \qquad
@@ -59,7 +59,7 @@ y\longmapsto y
 \]
 has kernel $(x-y^2)$, so
 \[
-\mathbb C[x,y]/(x-y^2)\cong\mathbb C[y].
+\CC[x,y]/(x-y^2)\cong\CC[y].
 \]
 Under this isomorphism the other generator becomes
 \[
@@ -104,7 +104,7 @@ The radical of $I$ is
 
 ::: pf-proof
 
-By Hilbert's Nullstellensatz over the algebraically closed field $\mathbb C$,
+By Hilbert's Nullstellensatz over the algebraically closed field $\CC$,
 \[
 \sqrt I=I(V(I)).
 \]
@@ -130,7 +130,7 @@ Set
 \[
 h=y(y-1).
 \]
-Under the quotient description of step [](#s1){.pf-ref}, membership in $I$ is equivalent to divisibility by $y^3(y-1)$ in $\mathbb C[y]$.
+Under the quotient description of step [](#s1){.pf-ref}, membership in $I$ is equivalent to divisibility by $y^3(y-1)$ in $\CC[y]$.
 The polynomial
 \[
 y(y-1)

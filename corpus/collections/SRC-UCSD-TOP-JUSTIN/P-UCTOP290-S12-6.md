@@ -93,7 +93,7 @@ Consequently $\mathbb CP^n$ cannot be covered by fewer than $n+1$ contractible o
 
 In
 $$
-H^*(\mathbb CP^n;\mathbb Z)=\mathbb Z[\alpha]/(\alpha^{n+1}),\qquad |\alpha|=2,
+H^*(\mathbb CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1}),\qquad |\alpha|=2,
 $$
 the $n$-fold product $\alpha^n$ is nonzero. If $\mathbb CP^n$ were covered by $n$ contractible open sets, step [](#s4){.pf-ref} would force $\alpha^n=0$.
 

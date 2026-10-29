@@ -35,7 +35,7 @@ we have $\sin(\pi z)=0$ exactly when
 e^{2\pi i z}=1.
 \]
 Writing $z=x+iy$, the modulus of the left side is $e^{-2\pi y}$, so $y=0$;
-then $e^{2\pi i x}=1$, hence $x\in\mathbb Z$. Thus the zeros are exactly the
+then $e^{2\pi i x}=1$, hence $x\in\ZZ$. Thus the zeros are exactly the
 integers.
 
 Moreover

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17H
 kind: problem
-title: 'A harmonic function with polynomial growth on $\mathbb C$ is a polynomial'
+title: 'A harmonic function with polynomial growth on $\CC$ is a polynomial'
 classification:
   areas:
   - complex-analysis
@@ -14,12 +14,12 @@ review: draft
 
 ::: {.problem}
 Let $n \geq 1$ be an integer.
-Let $u: \mathbb{C} \to \mathbb{R}$ be a harmonic function such that $|u(z)| \leq C(1 + |z|^n)$ for all $z \in \mathbb{C}$.
+Let $u: \CC \to \RR$ be a harmonic function such that $|u(z)| \leq C(1 + |z|^n)$ for all $z \in \CC$.
 Show that $u$ is a polynomial.
 :::
 
 ::: {.solution}
-Because $\mathbb C$ is simply connected, $u$ has a global harmonic conjugate $v$. Thus
+Because $\CC$ is simply connected, $u$ has a global harmonic conjugate $v$. Thus
 \[
 F=u+iv
 \]

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that a CW complex $X$ contains a subcomplex $S^1$ such that the inclusion $S^1 \hookrightarrow X$ induces an injection $H_1(S^1; \mathbb{Z}) \to H_1(X; \mathbb{Z})$ with image a direct summand of $H_1(X; \mathbb{Z})$.
+Suppose that a CW complex $X$ contains a subcomplex $S^1$ such that the inclusion $S^1 \hookrightarrow X$ induces an injection $H_1(S^1; \ZZ) \to H_1(X; \ZZ)$ with image a direct summand of $H_1(X; \ZZ)$.
 Show that $S^1$ is a retract of $X$.
 :::
 
@@ -33,9 +33,9 @@ Let
 \[
 i:S^1\hookrightarrow X
 \]
-be the inclusion. By hypothesis its image in \(H_1(X;\mathbb Z)\) is a direct summand isomorphic to \(\mathbb Z\). Hence there is a homomorphism
+be the inclusion. By hypothesis its image in \(H_1(X;\ZZ)\) is a direct summand isomorphic to \(\ZZ\). Hence there is a homomorphism
 \[
-\lambda:H_1(X;\mathbb Z)\to\mathbb Z
+\lambda:H_1(X;\ZZ)\to\ZZ
 \]
 whose composite with
 \[
@@ -45,9 +45,9 @@ is the identity.
 
 The universal coefficient theorem gives
 \[
-H^1(X;\mathbb Z)\cong\operatorname{Hom}(H_1(X),\mathbb Z).
+H^1(X;\ZZ)\cong\operatorname{Hom}(H_1(X),\ZZ).
 \]
-Let \(u\in H^1(X;\mathbb Z)\) correspond to \(\lambda\). By Theorem 4.57 choose
+Let \(u\in H^1(X;\ZZ)\) correspond to \(\lambda\). By Theorem 4.57 choose
 \[
 r:X\to S^1
 \]

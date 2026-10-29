@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R^2\to\mathbb R$ has partial derivatives at every point and both partial derivatives are bounded in absolute value by $A>0$.
+Suppose $f:\RR^2\to\RR$ has partial derivatives at every point and both partial derivatives are bounded in absolute value by $A>0$.
 
 (a) Show that there is an $M>0$ such that
 \[
 |f(x,y)-f(x_1,y_1)|
 \le M\sqrt{(x-x_1)^2+(y-y_1)^2}
 \]
-for all $(x,y),(x_1,y_1)\in\mathbb R^2$.
+for all $(x,y),(x_1,y_1)\in\RR^2$.
 
 (b) What is the smallest value of $M$, in terms of $A$, for which this always works?
 
@@ -36,7 +36,7 @@ for all $(x,y),(x_1,y_1)\in\mathbb R^2$.
 
 ::: {.pf-step #s1-1}
 
-For all $(x,y),(x_1,y_1)\in\mathbb R^2$,
+For all $(x,y),(x_1,y_1)\in\RR^2$,
 \[
 |f(x,y)-f(x_1,y_1)|
 \le

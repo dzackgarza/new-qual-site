@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega\subsetneq\mathbb C$ be a simply connected domain and let $f:\Omega\to\Omega$ be holomorphic.
+Let $\Omega\subsetneq\CC$ be a simply connected domain and let $f:\Omega\to\Omega$ be holomorphic.
 Suppose there are distinct points $z_1,z_2\in\Omega$ with $f(z_1)=z_1$ and $f(z_2)=z_2$.
 Show that $f$ is the identity on $\Omega$.
 :::
@@ -26,7 +26,7 @@ Show that $f$ is the identity on $\Omega$.
 
 Since
 \[
-\Omega\subsetneq\mathbb C
+\Omega\subsetneq\CC
 \]
 is simply connected, the Riemann mapping theorem gives a biholomorphism
 \[

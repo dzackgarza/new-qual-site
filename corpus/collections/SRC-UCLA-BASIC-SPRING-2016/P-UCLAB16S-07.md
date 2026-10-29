@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-An orthogonal $n\times n$ matrix $A$ is called elementary if the corresponding linear transformation $L_A:\mathbb R^n\to\mathbb R^n$ fixes an $(n-2)$-dimensional subspace.
+An orthogonal $n\times n$ matrix $A$ is called elementary if the corresponding linear transformation $L_A:\RR^n\to\RR^n$ fixes an $(n-2)$-dimensional subspace.
 
 Prove that every orthogonal matrix $M$ is a product of at most $n-1$ elementary orthogonal matrices.
 :::
@@ -33,7 +33,7 @@ n\ge2.
 
 ::: {.pf-step #s1-1}
 
-Let $u,v\in\mathbb R^n$ be unit vectors.
+Let $u,v\in\RR^n$ be unit vectors.
 There exists an orthogonal transformation $E$ such that
 \[
 Eu=v
@@ -66,7 +66,7 @@ Choose an orthogonal transformation of $P$ sending $u$ to $v$, and extend it by 
 \[
 P^\perp.
 \]
-The resulting transformation of $\mathbb R^n$ is orthogonal and fixes
+The resulting transformation of $\RR^n$ is orthogonal and fixes
 \[
 P^\perp,
 \]
@@ -256,7 +256,7 @@ is an orthogonal transformation of the $(n-1)$-dimensional space $H$.
 ::: pf-proof
 
 By step [](#s1-6){.pf-ref}, the restriction is well-defined.
-Since $F$ preserves the Euclidean inner product on all of $\mathbb R^n$, its restriction preserves the inner product on $H$.
+Since $F$ preserves the Euclidean inner product on all of $\RR^n$, its restriction preserves the inner product on $H$.
 
 :::
 
@@ -289,8 +289,8 @@ Apply the induction hypothesis in that dimension.
 
 ::: {.pf-step #s1-9}
 
-Extend each factor from step [](#s1-8){.pf-ref} to $\mathbb R^n$ by fixing $e_n$.
-Each extension is elementary in $\mathbb R^n$.
+Extend each factor from step [](#s1-8){.pf-ref} to $\RR^n$ by fixing $e_n$.
+Each extension is elementary in $\RR^n$.
 
 
 ::: pf-proof
@@ -311,7 +311,7 @@ whose dimension is
 \[
 (n-3)+1=n-2.
 \]
-Thus the extension is elementary in $\mathbb R^n$.
+Thus the extension is elementary in $\RR^n$.
 
 :::
 
@@ -332,11 +332,11 @@ The extensions from step [](#s1-9){.pf-ref} agree with $F$ on $H$ by step [](#s1
 They also fix $e_n$, as does $F$.
 Since
 \[
-\mathbb R^n
+\RR^n
 =
 H\oplus\operatorname{span}\{e_n\},
 \]
-the product of those extensions equals $F$ on all of $\mathbb R^n$.
+the product of those extensions equals $F$ on all of $\RR^n$.
 
 :::
 

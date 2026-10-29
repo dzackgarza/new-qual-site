@@ -16,8 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-For $A\subset\mathbb R$, define the Lebesgue outer measure $m^*(A)$.
-Prove that for every sequence $(A_i)$ of subsets of $\mathbb R$,
+For $A\subset\RR$, define the Lebesgue outer measure $m^*(A)$.
+Prove that for every sequence $(A_i)$ of subsets of $\RR$,
 \[
 m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 \le \sum_{i=1}^\infty m^*(A_i).
@@ -26,13 +26,13 @@ m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 
 ::: {.solution}
 
-For an interval \(I\subset\mathbb R\), write \(|I|\) for its length.
+For an interval \(I\subset\RR\), write \(|I|\) for its length.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For every \(A\subseteq\mathbb R\), its Lebesgue outer measure is
+For every \(A\subseteq\RR\), its Lebesgue outer measure is
 \[
 \boxed{
 m^*(A)

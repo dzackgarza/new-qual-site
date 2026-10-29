@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ and $H$ be a finite groups, $A:G\to GL(n,\mathbb{C})$ be a representation of $G$ and $B:H\to GL(m,\mathbb{C})$ be a representation of $H$.
+Let $G$ and $H$ be a finite groups, $A:G\to GL(n,\CC)$ be a representation of $G$ and $B:H\to GL(m,\CC)$ be a representation of $H$.
 
-(a) Define the representation $A\times B:G\times H\to GL(n\cdot m,\mathbb{C})$.
+(a) Define the representation $A\times B:G\times H\to GL(n\cdot m,\CC)$.
 
 (b) Show that if $A$ and $B$ are irreducible representations, then $A\times B$ is irreducible.
 
@@ -37,12 +37,12 @@ Let $G$ and $H$ be a finite groups, $A:G\to GL(n,\mathbb{C})$ be a representatio
 ::: pf
 
 ::: pf-step
-Let $V=\mathbb C^n$ and $W=\mathbb C^m$ be the representation spaces of $A$ and $B$.
+Let $V=\CC^n$ and $W=\CC^m$ be the representation spaces of $A$ and $B$.
 Define
 \[
 (A\times B)(g,h)=A(g)\otimes B(h)
 \]
-on $V\otimes_{\mathbb C}W$.
+on $V\otimes_{\CC}W$.
 
 ::: pf-proof
 For $(g_1,h_1),(g_2,h_2)\in G\times H$,
@@ -79,7 +79,7 @@ Apply this with $X=A(g)$ and $Y=B(h)$.
 If $A$ and $B$ are irreducible, then $A\times B$ is irreducible.
 
 ::: pf-proof
-Over $\mathbb C$, a finite-group representation is irreducible iff the inner product of its character with itself is $1$.
+Over $\CC$, a finite-group representation is irreducible iff the inner product of its character with itself is $1$.
 Using step [](#character-of-a-times-b){.pf-ref},
 \[
 \begin{aligned}
@@ -131,7 +131,7 @@ Hence
 \[
 k(G\times H)=k(G)k(H).
 \]
-For every finite group over $\mathbb C$, the number of irreducible representations equals the number of conjugacy classes.
+For every finite group over $\CC$, the number of irreducible representations equals the number of conjugacy classes.
 Therefore
 \[
 |\operatorname{Irr}(G\times H)|

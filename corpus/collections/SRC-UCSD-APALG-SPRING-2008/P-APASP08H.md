@@ -45,12 +45,12 @@ The Frobenius characteristic map $\operatorname{ch}: \bigoplus_{n \ge 0} R(S_n) 
 :::
 
 ::: pf-step
-The regular representation $\mathbb{C}[S_n]$ has character $\chi_{\text{reg}}(w) = |S_n| \mathbf{1}_{\{w = e\}}$.
+The regular representation $\CC[S_n]$ has character $\chi_{\text{reg}}(w) = |S_n| \mathbf{1}_{\{w = e\}}$.
 :::
 
 ::: pf-step
 Under the Frobenius characteristic map, the regular representation corresponds to the power-sum monomial
-$$\operatorname{ch}(\mathbb{C}[S_n]) = \sum_{\lambda \vdash n} \dim(V^\lambda) s_\lambda = p_1^n = h_1^n.$$
+$$\operatorname{ch}(\CC[S_n]) = \sum_{\lambda \vdash n} \dim(V^\lambda) s_\lambda = p_1^n = h_1^n.$$
 :::
 
 :::
@@ -102,13 +102,13 @@ Viewing $S_{n-1} \le S_n$ as the subgroup fixing the element $n$, the index is $
 :::
 
 ::: pf-step
-Decomposing $S_n$ into $n$ left cosets $S_n = \bigsqcup_{i=1}^n \sigma_i S_{n-1}$, the group algebra $\mathbb{C}[S_n]$ as an $S_{n-1}$-module is the direct sum of $n$ copies of $\mathbb{C}[S_{n-1}]$:
-$$\operatorname{Res}_{S_{n-1}}^{S_n} \mathbb{C}[S_n] \cong (\mathbb{C}[S_{n-1}])^{\oplus n}.$$
+Decomposing $S_n$ into $n$ left cosets $S_n = \bigsqcup_{i=1}^n \sigma_i S_{n-1}$, the group algebra $\CC[S_n]$ as an $S_{n-1}$-module is the direct sum of $n$ copies of $\CC[S_{n-1}]$:
+$$\operatorname{Res}_{S_{n-1}}^{S_n} \CC[S_n] \cong (\CC[S_{n-1}])^{\oplus n}.$$
 :::
 
 ::: pf-step
 Applying the Frobenius characteristic map:
-$$\operatorname{ch}\left( \operatorname{Res}_{S_{n-1}}^{S_n} \mathbb{C}[S_n] \right) = n \cdot \operatorname{ch}(\mathbb{C}[S_{n-1}]) = n p_1^{n-1}.$$
+$$\operatorname{ch}\left( \operatorname{Res}_{S_{n-1}}^{S_n} \CC[S_n] \right) = n \cdot \operatorname{ch}(\CC[S_{n-1}]) = n p_1^{n-1}.$$
 :::
 
 :::
@@ -123,7 +123,7 @@ Synthesis and interpretation of the identity:
 
 ::: pf-step
 Equating the differential characterization from step [](#restriction-is-adjoint-of-p1-multiplication){.pf-ref} with the geometric module decomposition from step [](#restriction-of-regular-rep){.pf-ref}:
-$$\frac{\partial}{\partial p_1} p_1^n = \frac{\partial}{\partial p_1} \operatorname{ch}(\mathbb{C}[S_n]) = \operatorname{ch}\left( \operatorname{Res}_{S_{n-1}}^{S_n} \mathbb{C}[S_n] \right) = n p_1^{n-1}.$$
+$$\frac{\partial}{\partial p_1} p_1^n = \frac{\partial}{\partial p_1} \operatorname{ch}(\CC[S_n]) = \operatorname{ch}\left( \operatorname{Res}_{S_{n-1}}^{S_n} \CC[S_n] \right) = n p_1^{n-1}.$$
 :::
 
 ::: pf-step

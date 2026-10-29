@@ -28,7 +28,7 @@ State both parts of the Fundamental Theorem of Calculus and outline a proof of o
 
 Let
 \[
-f:[a,b]\to\mathbb R
+f:[a,b]\to\RR
 \]
 be continuous, and define
 \[
@@ -63,11 +63,11 @@ The proof is given in steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref}.
 
 Let
 \[
-f:[a,b]\to\mathbb R
+f:[a,b]\to\RR
 \]
 be continuous, and let
 \[
-G:[a,b]\to\mathbb R
+G:[a,b]\to\RR
 \]
 be any differentiable function satisfying
 \[

@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Let $D = \QQ[x]$ and let $M$ be a $\QQ[x]\dash$module such that
 \[
-M \cong \frac{\mathbb{Q}[x]}{(x-1)^{3}} \oplus \frac{\mathbb{Q}[x]}{\left(x^{2}+1\right)^{3}} \oplus \frac{\mathbb{Q}[x]}{(x-1)\left(x^{2}+1\right)^{5}} \oplus \frac{\mathbb{Q}[x]}{(x+2)\left(x^{2}+1\right)^{2}}
+M \cong \frac{\QQ[x]}{(x-1)^{3}} \oplus \frac{\QQ[x]}{\left(x^{2}+1\right)^{3}} \oplus \frac{\QQ[x]}{(x-1)\left(x^{2}+1\right)^{5}} \oplus \frac{\QQ[x]}{(x+2)\left(x^{2}+1\right)^{2}}
 .\]
 
 Determine the elementary divisors and invariant factors of $M$.
@@ -36,7 +36,7 @@ b=x+2,
 \qquad
 q=x^2+1.
 \]
-These are pairwise coprime irreducibles in $\mathbb Q[x]$. By the Chinese remainder theorem,
+These are pairwise coprime irreducibles in $\QQ[x]$. By the Chinese remainder theorem,
 \[
 D/(aq^5)\cong D/(a)\oplus D/(q^5)
 \]

@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be bounded. Suppose the graph of $f$ is a closed subset of $\mathbb R^2$. Prove that $f$ is continuous.
+Let $f:\RR\to\RR$ be bounded. Suppose the graph of $f$ is a closed subset of $\RR^2$. Prove that $f$ is continuous.
 :::
 
 ::: {.solution}

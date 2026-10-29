@@ -13,11 +13,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G = \mathbb{C} \setminus \{0\}$, and let $h : G \to \mathbb{R}$ be harmonic.
+Let $G = \CC \setminus \{0\}$, and let $h : G \to \RR$ be harmonic.
 
 (i) Show that $g = h_x - ih_y$ is a holomorphic function in $G$, and that its residue at $0$ is a real number.
 
-(ii) Show that there exist a constant $c$ and a holomorphic function $f : G \to \mathbb{C}$ such that
+(ii) Show that there exist a constant $c$ and a holomorphic function $f : G \to \CC$ such that
 $$
 h(z) = c\log|z| + \operatorname{Re} f(z) \quad \forall z \in G.
 $$
@@ -39,10 +39,10 @@ circle, hence is $0$. Therefore the integral is purely imaginary, and
 \[
 \operatorname{Res}_0 g=\frac1{2\pi i}\int_{|z|=r}g(z)\,dz
 \]
-is real. Write this residue as $c\in\mathbb R$.
+is real. Write this residue as $c\in\RR$.
 
 Then $g(z)-c/z$ has zero period around a generator of
-$\mathbb C\setminus\{0\}$, hence all its periods vanish. It therefore has a
+$\CC\setminus\{0\}$, hence all its periods vanish. It therefore has a
 holomorphic primitive $F$ on $G$. Since
 \[
 2\frac{\partial}{\partial z}\bigl(h-c\log|z|-\operatorname{Re}F\bigr)=0,

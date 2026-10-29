@@ -28,7 +28,7 @@ Show that
 :::
 
 ::: {.solution}
-For the first assertion, let $\rho:G\to \operatorname{GL}(V)$ be an irreducible representation with character $\chi$, and let $\lambda:G\to\mathbb C^\times$ be the one-dimensional representation corresponding to the linear character $\lambda$. Define
+For the first assertion, let $\rho:G\to \operatorname{GL}(V)$ be an irreducible representation with character $\chi$, and let $\lambda:G\to\CC^\times$ be the one-dimensional representation corresponding to the linear character $\lambda$. Define
 \[
 \rho^*(g)=\lambda(g)\rho(g).
 \]

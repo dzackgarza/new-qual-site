@@ -24,7 +24,7 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Construct a harmonic function $u(x, y)$ on the first quadrant $Q = \{z \in \mathbb{C} : \Re z > 0, \Im z > 0\}$ with the specified boundary values.
+**Goal:** Construct a harmonic function $u(x, y)$ on the first quadrant $Q = \{z \in \CC : \Re z > 0, \Im z > 0\}$ with the specified boundary values.
 
 ::: pf
 
@@ -34,11 +34,11 @@ Conformal mapping of the quadrant to the upper half-plane:
 ::: pf-proof
 
 ::: pf-step
-Let $Q = \{z \in \mathbb{C} : \Re z > 0, \Im z > 0\}$. Every $z \in Q$ has polar representation $z = r e^{i\theta}$ with $r > 0$ and $\theta \in (0, \pi/2)$.
+Let $Q = \{z \in \CC : \Re z > 0, \Im z > 0\}$. Every $z \in Q$ has polar representation $z = r e^{i\theta}$ with $r > 0$ and $\theta \in (0, \pi/2)$.
 :::
 
 ::: pf-step
-Define $F(z) = z^2$. For $z \in Q$, $F(z) = r^2 e^{i 2\theta}$ with $2\theta \in (0, \pi)$, so $F$ maps $Q$ biholomorphically onto the upper half-plane $\mathbb{H} = \{w \in \mathbb{C} : \Im w > 0\}$.
+Define $F(z) = z^2$. For $z \in Q$, $F(z) = r^2 e^{i 2\theta}$ with $2\theta \in (0, \pi)$, so $F$ maps $Q$ biholomorphically onto the upper half-plane $\mathbb{H} = \{w \in \CC : \Im w > 0\}$.
 :::
 
 ::: pf-step
@@ -58,7 +58,7 @@ Construction of the harmonic profile on the upper half-plane $\mathbb{H}$:
 ::: pf-proof
 
 ::: pf-step
-For $w \in \mathbb{H}$, let $\arg(w) = \operatorname{Im}(\log w) \in (0, \pi)$ and $\arg(w - 1) = \operatorname{Im}(\log(w - 1)) \in (0, \pi)$, where $\log$ denotes the principal branch of logarithm holomorphic on $\mathbb{C} \setminus (-\infty, 0]$.
+For $w \in \mathbb{H}$, let $\arg(w) = \operatorname{Im}(\log w) \in (0, \pi)$ and $\arg(w - 1) = \operatorname{Im}(\log(w - 1)) \in (0, \pi)$, where $\log$ denotes the principal branch of logarithm holomorphic on $\CC \setminus (-\infty, 0]$.
 :::
 
 ::: pf-step
@@ -66,7 +66,7 @@ Both $\arg(w)$ and $\arg(w - 1)$ are real parts of holomorphic functions (namely
 :::
 
 ::: pf-step
-Define $v: \mathbb{H} \to \mathbb{R}$ by
+Define $v: \mathbb{H} \to \RR$ by
 $$v(w) = 1 - \frac{1}{\pi}\Big(\arg(w - 1) - \arg(w)\Big).$$
 As a linear combination of harmonic functions, $v$ is harmonic on $\mathbb{H}$.
 :::
@@ -88,7 +88,7 @@ Pullback to the quadrant $Q$:
 ::: pf-proof
 
 ::: pf-step
-Define $u: Q \to \mathbb{R}$ by $u(z) = v(F(z)) = v(z^2)$.
+Define $u: Q \to \RR$ by $u(z) = v(F(z)) = v(z^2)$.
 :::
 
 ::: pf-step

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH7-5
 kind: problem
-title: Equality of cosets of $3\mathbb Z$ in $\mathbb Z$
+title: Equality of cosets of $3\ZZ$ in $\ZZ$
 classification:
   areas: [algebra]
   topics: []

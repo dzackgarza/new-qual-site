@@ -24,7 +24,7 @@ Problem 9. Consider the formal product
 
 (a) Show that the product converges for every $z\in(-\infty,0)$.
 
-(b) Show that the resulting function extends from this interval to an entire function of $z\in\mathbb C$.
+(b) Show that the resulting function extends from this interval to an entire function of $z\in\CC$.
 :::
 
 ::: {.solution}
@@ -179,7 +179,7 @@ The first term is \(O_R(n^{-2})\), and the second is also
 
 ::: {.pf-step #s1-3}
 
-For every compact set \(K\subset\mathbb C\),
+For every compact set \(K\subset\CC\),
 \[
 \boxed{
 \sum_{n=1}^{\infty}
@@ -212,7 +212,7 @@ P_N(z)
 =
 \prod_{n=1}^{N}q_n(z)
 \]
-converge uniformly on every compact subset of \(\mathbb C\).
+converge uniformly on every compact subset of \(\CC\).
 
 
 ::: pf-proof
@@ -267,13 +267,13 @@ P(z)
 \left(1+\frac1n\right)^z
 \left(1-\frac zn\right)}
 \]
-is entire on \(\mathbb C\).
+is entire on \(\CC\).
 
 
 ::: pf-proof
 
 Each finite product \(P_N\) is entire because every \(q_n\) is entire.
-Step [](#s1-4){.pf-ref} gives locally uniform convergence on \(\mathbb C\). By the
+Step [](#s1-4){.pf-ref} gives locally uniform convergence on \(\CC\). By the
 Weierstrass theorem, the locally uniform limit \(P\) is entire.
 
 :::

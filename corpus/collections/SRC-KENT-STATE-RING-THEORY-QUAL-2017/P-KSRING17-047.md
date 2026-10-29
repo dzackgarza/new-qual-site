@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-047
 kind: problem
-title: Values of $a$ making $\mathbb Z_3[x]/(x^3+x^2+ax+1)$ a field
+title: Values of $a$ making $\ZZ_3[x]/(x^3+x^2+ax+1)$ a field
 classification:
   areas: [algebra]
   topics: []
@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Find all values of a in $\mathbb { Z } _ { 3 }$ such that the quotient ring
+Find all values of a in $\ZZ _ { 3 }$ such that the quotient ring
 
 $$
-\mathbb { Z } _ { 3 } [ x ] / ( x ^ { 3 } + x ^ { 2 } + a x + 1 )
+\ZZ _ { 3 } [ x ] / ( x ^ { 3 } + x ^ { 2 } + a x + 1 )
 $$
 
 is a field.

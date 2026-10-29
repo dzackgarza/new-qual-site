@@ -25,7 +25,7 @@ Let $(X,d)$ be an arbitrary metric space.
 
 (c) Define connectedness of $X$.
 
-(d) Is $\mathbb Q$, with its usual metric, connected?
+(d) Is $\QQ$, with its usual metric, connected?
 Justify your answer.
 
 (e) Suppose $X$ is complete.
@@ -87,7 +87,7 @@ X.
 
 ::: {.pf-step #s1-4}
 
-The space $\mathbb Q$ with its usual metric is not connected.
+The space $\QQ$ with its usual metric is not connected.
 
 
 ::: pf-proof
@@ -98,38 +98,38 @@ Choose an irrational number, for example
 \]
 Define
 \[
-U=\{q\in\mathbb Q:q<\alpha\}
+U=\{q\in\QQ:q<\alpha\}
 \]
 and
 \[
-V=\{q\in\mathbb Q:q>\alpha\}.
+V=\{q\in\QQ:q>\alpha\}.
 \]
-Both sets are nonempty, disjoint, and their union is all of $\mathbb Q$ because
+Both sets are nonempty, disjoint, and their union is all of $\QQ$ because
 \[
-\alpha\notin\mathbb Q.
+\alpha\notin\QQ.
 \]
 
 Moreover,
 \[
 U
 =
-\mathbb Q\cap(-\infty,\alpha)
+\QQ\cap(-\infty,\alpha)
 \]
 and
 \[
 V
 =
-\mathbb Q\cap(\alpha,\infty),
+\QQ\cap(\alpha,\infty),
 \]
-so both are open in the subspace topology on $\mathbb Q$.
+so both are open in the subspace topology on $\QQ$.
 Thus
 \[
-\mathbb Q=U\cup V
+\QQ=U\cup V
 \]
 is a separation.
 Hence
 \[
-\boxed{\mathbb Q\text{ is disconnected}.}
+\boxed{\QQ\text{ is disconnected}.}
 \]
 
 :::

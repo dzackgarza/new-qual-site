@@ -108,7 +108,7 @@ l_1(t)
 t
 \right),
 \qquad
-t\in\mathbb R.
+t\in\RR.
 }
 $$
 
@@ -148,7 +148,7 @@ l_2(u)
 u
 \right),
 \qquad
-u\in\mathbb R.
+u\in\RR.
 }
 $$
 

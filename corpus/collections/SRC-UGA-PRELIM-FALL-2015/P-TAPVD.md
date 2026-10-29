@@ -23,12 +23,12 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R^2\to\mathbb R$ has continuous partial derivatives at $(0,0)$. Prove that $f$ has directional derivatives in every direction at the origin.
+Suppose $f:\RR^2\to\RR$ has continuous partial derivatives at $(0,0)$. Prove that $f$ has directional derivatives in every direction at the origin.
 :::
 
 ::: {.solution}
 Continuity of $f_x$ and $f_y$ at $(0,0)$ presupposes that both partial derivatives exist on some open disc $B$ about $(0,0)$.
-Fix a direction $\mathbf u=(u_1,u_2)\in\mathbb R^2$.
+Fix a direction $\mathbf u=(u_1,u_2)\in\RR^2$.
 
 ::: pf
 

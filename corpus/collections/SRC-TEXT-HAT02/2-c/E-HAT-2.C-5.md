@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M$ be a closed orientable surface embedded in $\mathbb{R}^3$ in such a way that reflection across a plane $P$ defines a homeomorphism $r: M \to M$ fixing $M \cap P$, a collection of circles.
+Let $M$ be a closed orientable surface embedded in $\RR^3$ in such a way that reflection across a plane $P$ defines a homeomorphism $r: M \to M$ fixing $M \cap P$, a collection of circles.
 Is it possible to homotope $r$ to have no fixed points?
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF22H
 kind: problem
-title: Class-sum scalars $\omega_\alpha^\lambda$ and the transposition class in $\mathbb{C}S(d)$
+title: Class-sum scalars $\omega_\alpha^\lambda$ and the transposition class in $\CC S(d)$
 classification:
   areas:
   - applied-algebra
@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Given a Young diagram $\alpha \vdash d$, identify the corresponding conjugacy class $C_\alpha \subset S(d)$ with the formal sum of its elements, so that it becomes an element of the group algebra $\mathbb{C}S(d)$.
-Given another Young diagram $\lambda \vdash d$, show that $C_\alpha$ acts in the corresponding irreducible representation $V_\lambda$ of $\mathbb{C}S(d)$ as multiplication by a scalar $\omega_\alpha^\lambda$, and compute this number in terms of the character of $V_\lambda$.
+Given a Young diagram $\alpha \vdash d$, identify the corresponding conjugacy class $C_\alpha \subset S(d)$ with the formal sum of its elements, so that it becomes an element of the group algebra $\CC S(d)$.
+Given another Young diagram $\lambda \vdash d$, show that $C_\alpha$ acts in the corresponding irreducible representation $V_\lambda$ of $\CC S(d)$ as multiplication by a scalar $\omega_\alpha^\lambda$, and compute this number in terms of the character of $V_\lambda$.
 Now, compute $\omega_\alpha^\lambda$ explicitly in the case $\alpha = (2,1^{d-2})$, corresponding to the conjugacy class of transpositions.
 :::
 
@@ -23,13 +23,13 @@ Now, compute $\omega_\alpha^\lambda$ explicitly in the case $\alpha = (2,1^{d-2}
 
 Let
 \[
-K_\alpha:=\sum_{g\in C_\alpha}g\in\mathbb C S_d.
+K_\alpha:=\sum_{g\in C_\alpha}g\in\CC S_d.
 \]
 
 ::: pf
 
 ::: {.pf-step #class-sum-is-central}
-The element $K_\alpha$ is central in $\mathbb C S_d$.
+The element $K_\alpha$ is central in $\CC S_d$.
 
 ::: pf-proof
 For $h\in S_d$,
@@ -76,7 +76,7 @@ The class-size formula is $|C_\alpha|=d!/z_\alpha$.
 ::: {.pf-step #jm-element-decomposition}
 For the transposition class $\alpha=(2,1^{d-2})$, let
 \[
-X_k:=\sum_{i<k}(i\ k)\in\mathbb C S_d
+X_k:=\sum_{i<k}(i\ k)\in\CC S_d
 \qquad(1\le k\le d).
 \]
 Then

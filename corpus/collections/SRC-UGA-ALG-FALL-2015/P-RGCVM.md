@@ -34,7 +34,7 @@ Justify your answer with a proof or counterexample.
 
 ::: pf-step
 
-Over $\mathbb C$, two matrices are similar if and only if they have the same Jordan canonical form.
+Over $\CC$, two matrices are similar if and only if they have the same Jordan canonical form.
 
 ::: pf-proof
 
@@ -46,7 +46,7 @@ Every complex matrix is similar to a Jordan matrix, and the multiset of Jordan b
 
 ::: pf-step
 
-Let $A\in M_3(\mathbb C)$. For each eigenvalue $\lambda$, write
+Let $A\in M_3(\CC)$. For each eigenvalue $\lambda$, write
 \[
 \chi_A(t)=\prod_\lambda (t-\lambda)^{m_\lambda}
 \]
@@ -95,7 +95,7 @@ Therefore two $3\times3$ complex matrices are similar if and only if they have t
 
 If two matrices are similar, their characteristic and minimal polynomials are invariant under similarity, so the forward implication is immediate.
 
-Conversely, suppose $A,B\in M_3(\mathbb C)$ have the same characteristic and minimal polynomials. Then for every eigenvalue $\lambda$, they have the same numbers $m_\lambda$ and $e_\lambda$. Since $m_\lambda\le3$, step [](#s3){.pf-ref} shows that the Jordan block sizes for $\lambda$ are identical for $A$ and $B$. This holds for every eigenvalue, so $A$ and $B$ have the same Jordan form and are similar.
+Conversely, suppose $A,B\in M_3(\CC)$ have the same characteristic and minimal polynomials. Then for every eigenvalue $\lambda$, they have the same numbers $m_\lambda$ and $e_\lambda$. Since $m_\lambda\le3$, step [](#s3){.pf-ref} shows that the Jordan block sizes for $\lambda$ are identical for $A$ and $B$. This holds for every eigenvalue, so $A$ and $B$ have the same Jordan form and are similar.
 
 :::
 

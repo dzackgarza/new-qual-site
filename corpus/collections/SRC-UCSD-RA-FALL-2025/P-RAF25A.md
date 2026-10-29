@@ -124,7 +124,7 @@ Use arbitrary subunions to prove uncountability.
 
 ::: pf-proof
 
-For every subset $I\subseteq\mathbb N$, define
+For every subset $I\subseteq\NN$, define
 \[
 E_I:=\bigcup_{n\in I}D_n.
 \]
@@ -136,7 +136,7 @@ Hence
 \[
 I\longmapsto E_I
 \]
-is an injection from $\mathcal P(\mathbb N)$ into $\mathcal M$. Since $\mathcal P(\mathbb N)$ is uncountable,
+is an injection from $\mathcal P(\NN)$ into $\mathcal M$. Since $\mathcal P(\NN)$ is uncountable,
 \[
 \boxed{\mathcal M\text{ is uncountable}.}
 \]

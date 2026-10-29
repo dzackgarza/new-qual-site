@@ -34,9 +34,9 @@ What is it in the case of genus $1$?
 Let $X$ be a smooth projective connected complex curve of genus $g$.  Its Jacobian is
 \[
 \operatorname{Jac}(X)
-=H^0(X,\Omega_X^1)^\vee/H_1(X,\mathbb Z),
+=H^0(X,\Omega_X^1)^\vee/H_1(X,\ZZ),
 \]
-where $H_1(X,\mathbb Z)$ is embedded as the period lattice by integration.
+where $H_1(X,\ZZ)$ is embedded as the period lattice by integration.
 
 ::: pf
 

@@ -28,7 +28,7 @@ Show that if the metric space $(X,d)$ is separable, then the metric topology on 
 ::: {.solution}
 Let $D=\{p_1,p_2,\dots\}$ be a countable dense subset of $X$. Consider
 $$
-\mathcal B=\{B(p,q):p\in D,\ q\in\mathbb Q_{>0}\}.
+\mathcal B=\{B(p,q):p\in D,\ q\in\QQ_{>0}\}.
 $$
 This family is countable.
 

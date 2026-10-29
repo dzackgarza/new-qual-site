@@ -24,7 +24,7 @@ $$
 f (z) = \frac {i - z}{i + z} \quad \mathrm{and} \quad f ^ {- 1} (w) = i \frac {1 - w}{1 + w}.
 $$
 
-(a) Given $\theta \in \mathbb { R }$ , find real numbers $a , b , c ,$ d such that ad $- b c = 1$ , and so that for any $z \in \mathbb { H }$
+(a) Given $\theta \in \RR$ , find real numbers $a , b , c ,$ d such that ad $- b c = 1$ , and so that for any $z \in \mathbb { H }$
 
 $$
 \frac {a z + b}{c z + d} = f ^ {- 1} \left(e ^ {i \theta} f (z)\right).

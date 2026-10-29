@@ -44,8 +44,8 @@ For $X=S^2$,
 \[
 H_k(S^2,A)\cong
 \begin{cases}
-\mathbb Z,&k=2,\\
-\mathbb Z^{m-1},&k=1,\\
+\ZZ,&k=2,\\
+\ZZ^{m-1},&k=1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -54,7 +54,7 @@ H_k(S^2,A)\cong
 
 Since $A$ is finite,
 \[
-H_0(A)\cong\mathbb Z^m,
+H_0(A)\cong\ZZ^m,
 \qquad
 H_k(A)=0\quad(k>0).
 \]
@@ -62,15 +62,15 @@ For $k\ge2$, the long exact sequence gives
 \[
 H_k(S^2,A)\cong H_k(S^2),
 \]
-so only degree $2$ contributes $\mathbb Z$.
+so only degree $2$ contributes $\ZZ$.
 In low degrees the exact segment is
 \[
-0\to H_1(S^2,A)\to\mathbb Z^m
-\xrightarrow{\epsilon}\mathbb Z\to H_0(S^2,A)\to0,
+0\to H_1(S^2,A)\to\ZZ^m
+\xrightarrow{\epsilon}\ZZ\to H_0(S^2,A)\to0,
 \]
 where $\epsilon$ sums coordinates. Hence
 \[
-H_1(S^2,A)\cong\ker\epsilon\cong\mathbb Z^{m-1},
+H_1(S^2,A)\cong\ker\epsilon\cong\ZZ^{m-1},
 \qquad
 H_0(S^2,A)=0.
 \]
@@ -85,26 +85,26 @@ For $X=T^2$,
 \[
 H_k(T^2,A)\cong
 \begin{cases}
-\mathbb Z,&k=2,\\
-\mathbb Z^{m+1},&k=1,\\
+\ZZ,&k=2,\\
+\ZZ^{m+1},&k=1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
 
 ::: pf-proof
 
-Again $H_k(T^2,A)\cong H_k(T^2)$ for $k\ge2$, so degree $2$ is $\mathbb Z$. The low-degree exact sequence is
+Again $H_k(T^2,A)\cong H_k(T^2)$ for $k\ge2$, so degree $2$ is $\ZZ$. The low-degree exact sequence is
 \[
-0\to\mathbb Z^2\to H_1(T^2,A)
-\to\mathbb Z^m\xrightarrow{\epsilon}\mathbb Z\to0.
+0\to\ZZ^2\to H_1(T^2,A)
+\to\ZZ^m\xrightarrow{\epsilon}\ZZ\to0.
 \]
 Thus there is a short exact sequence
 \[
-0\to\mathbb Z^2\to H_1(T^2,A)\to\mathbb Z^{m-1}\to0.
+0\to\ZZ^2\to H_1(T^2,A)\to\ZZ^{m-1}\to0.
 \]
 Since the quotient is free abelian, the sequence splits, giving
 \[
-H_1(T^2,A)\cong\mathbb Z^{m+1}.
+H_1(T^2,A)\cong\ZZ^{m+1}.
 \]
 Also $H_0(T^2,A)=0$.
 
@@ -124,8 +124,8 @@ Therefore
 \[
 H_k(X,A)\cong
 \begin{cases}
-\mathbb Z^4,&k=1,\\
-\mathbb Z^2,&k=2,\\
+\ZZ^4,&k=1,\\
+\ZZ^2,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -152,8 +152,8 @@ Hence
 \[
 H_k(X,B)\cong
 \begin{cases}
-\mathbb Z^3,&k=1,\\
-\mathbb Z,&k=2,\\
+\ZZ^3,&k=1,\\
+\ZZ,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
 \]

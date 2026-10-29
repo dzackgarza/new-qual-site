@@ -28,7 +28,7 @@ D=\begin{pmatrix}1&0&0\\0&1&2\\0&0&1\end{pmatrix},\quad
 E=\begin{pmatrix}1&0&0\\1&1&0\\0&0&1\end{pmatrix},\quad
 F=\begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}.
 \]
-Which pairs are similar over $\mathbb R$?
+Which pairs are similar over $\RR$?
 Fully justify your answer.
 :::
 
@@ -181,7 +181,7 @@ Therefore any two matrices among
 \[
 \boxed{A,B,C,D,E}
 \]
-are similar over $\mathbb R$.
+are similar over $\RR$.
 
 
 ::: pf-proof

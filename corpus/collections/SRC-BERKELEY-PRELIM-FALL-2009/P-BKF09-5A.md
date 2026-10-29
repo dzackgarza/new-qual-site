@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-5A
 kind: problem
-title: Minkowski sum of closed connected subsets of $\mathbb R^2$ need not be closed
+title: Minkowski sum of closed connected subsets of $\RR^2$ need not be closed
 classification:
   areas:
   - prelim

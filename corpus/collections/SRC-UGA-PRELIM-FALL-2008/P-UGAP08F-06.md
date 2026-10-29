@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:[0,1]\to\mathbb R$ is continuous, $f(x)\ge0$ for all $x\in[0,1]$, and
+Suppose $f:[0,1]\to\RR$ is continuous, $f(x)\ge0$ for all $x\in[0,1]$, and
 \[
 f(1/2)>0.
 \]

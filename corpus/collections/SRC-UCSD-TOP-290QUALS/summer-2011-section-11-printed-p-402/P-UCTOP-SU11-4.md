@@ -25,8 +25,8 @@ The quotient $X=\mathbb{CP}^n/\mathbb{CP}^k$ has integral cohomology
 $$
 H^r(X)\cong
 \begin{cases}
-\mathbb Z,&r=0,\\
-\mathbb Z,&r=2i\text{ for }k+1\le i\le n,\\
+\ZZ,&r=0,\\
+\ZZ,&r=2i\text{ for }k+1\le i\le n,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -53,7 +53,7 @@ The standard CW structure on $\mathbb{CP}^n$ is obtained from $\mathbb{CP}^{n-1}
 Suppose $k<n-1$ and $X$ were homotopy-equivalent to a closed manifold $M$.
 
 ::: pf-proof
-Since $H^{2n}(X;\mathbb Z)\cong\mathbb Z$ and $H^i(X)=0$ for $i>2n$, the manifold must have dimension $2n$ and be orientable.
+Since $H^{2n}(X;\ZZ)\cong\ZZ$ and $H^i(X)=0$ for $i>2n$, the manifold must have dimension $2n$ and be orientable.
 :::
 
 :::
@@ -61,7 +61,7 @@ Since $H^{2n}(X;\mathbb Z)\cong\mathbb Z$ and $H^i(X)=0$ for $i>2n$, the manifol
 ::: {.pf-step #duality-forces-iso}
 Then Poincaré duality would force
 $$
-H^{2n-2}(M;\mathbb Z)\cong H^2(M;\mathbb Z).
+H^{2n-2}(M;\ZZ)\cong H^2(M;\ZZ).
 $$
 
 ::: pf-proof
@@ -73,9 +73,9 @@ For a closed orientable $2n$-manifold, cap product with the fundamental class gi
 ::: {.pf-step #contradiction-groups-differ}
 But for $k<n-1$ one has
 $$
-H^{2n-2}(X;\mathbb Z)\cong\mathbb Z,
+H^{2n-2}(X;\ZZ)\cong\ZZ,
 \qquad
-H^2(X;\mathbb Z)=0,
+H^2(X;\ZZ)=0,
 $$
 which is impossible under homotopy equivalence.
 

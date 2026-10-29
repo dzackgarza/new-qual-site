@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { \cos ( \beta x ) - 1 } { x ^ { 2 } } }$ for $\beta \in \mathbb { R }$
+Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { \cos ( \beta x ) - 1 } { x ^ { 2 } } }$ for $\beta \in \RR$
 :::
 
 ::: {.solution}
@@ -201,7 +201,7 @@ When \(\beta=0\),
 
 ::: {.pf-step #s1-8}
 
-Therefore for every \(\beta\in\mathbb R\),
+Therefore for every \(\beta\in\RR\),
 \[
 \boxed{
 \lim_{x\to0}

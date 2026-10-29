@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $\{a_k\}_{k=1}^\infty$ be a bounded sequence of real numbers and set
 \[
-E:=\left\{s\in\mathbb R:\{k\in\mathbb N:a_k\ge s\}\text{ is finite}\right\}.
+E:=\left\{s\in\RR:\{k\in\NN:a_k\ge s\}\text{ is finite}\right\}.
 \]
 Prove that
 \[

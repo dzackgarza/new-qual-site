@@ -30,7 +30,7 @@ Prove or disprove each of the following statements.
 (c) Let $\{f_n\}$ be a sequence of uniformly continuous functions on an interval $I$.
 If $\{f_n\}$ converges uniformly to a function $f$ on $I$, then $f$ is also uniformly continuous on $I$.
 
-(d) If $f$ is differentiable on a connected set $E \subset \mathbb{R}^n$, then for any $x, y \in E$, there exists $z \in E$ such that $f(x) - f(y) = \nabla f(z)(x - y)$.
+(d) If $f$ is differentiable on a connected set $E \subset \RR^n$, then for any $x, y \in E$, there exists $z \in E$ such that $f(x) - f(y) = \nabla f(z)(x - y)$.
 :::
 
 ::: {.solution}

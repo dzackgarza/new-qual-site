@@ -26,11 +26,11 @@ audit:
 ::: {.problem}
 Determine if each of the following statements is true or false.
 
-(1) Let $E$ be a Lebesgue-measurable subset of $\mathbb{R}$.
-For each $k \in \mathbb{N}$, let $E_k = \{x \in \mathbb{R} : \operatorname{dist}(x, E) < 1/k\}$.
+(1) Let $E$ be a Lebesgue-measurable subset of $\RR$.
+For each $k \in \NN$, let $E_k = \{x \in \RR : \operatorname{dist}(x, E) < 1/k\}$.
 Then $\lim_{k \to \infty} m(E_k) = m(E)$.
 
-(2) If $f : (0,1) \to \mathbb{R}$ is differentiable at each point $x \in (0,1)$, then the derivative $f' : (0,1) \to \mathbb{R}$ is Borel-measurable on $(0,1)$.
+(2) If $f : (0,1) \to \RR$ is differentiable at each point $x \in (0,1)$, then the derivative $f' : (0,1) \to \RR$ is Borel-measurable on $(0,1)$.
 
 (3) Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) = 1$.
 Let $E_j \in \mathcal{M}$ ($j = 1, \ldots, n$). Let $q$ be an integer such that $1 \leq q \leq n$.
@@ -52,7 +52,7 @@ Statement (1) is false.
 
 Take
 \[
-E=\mathbb Q\cap[0,1].
+E=\QQ\cap[0,1].
 \]
 Then \(E\) is Lebesgue measurable and \(m(E)=0\), but it is dense in \([0,1]\). Hence
 \[

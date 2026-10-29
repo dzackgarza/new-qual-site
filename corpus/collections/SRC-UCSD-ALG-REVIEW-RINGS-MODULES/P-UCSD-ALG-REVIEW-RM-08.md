@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCSD-ALG-REVIEW-RM-08
 kind: problem
-title: Tensoring finitely generated modules with $\mathbb Q$ and extending scalars $\mathbb R[x]\to\mathbb C[x]$
+title: Tensoring finitely generated modules with $\QQ$ and extending scalars $\RR[x]\to\CC[x]$
 classification:
   areas:
   - algebra
@@ -27,17 +27,17 @@ audit:
 ---
 
 ::: {.problem}
-(a) Give an example of two finitely generated $\mathbb Z$-modules $M$ and $N$ that are not isomorphic as $\mathbb Z$-modules but satisfy
+(a) Give an example of two finitely generated $\ZZ$-modules $M$ and $N$ that are not isomorphic as $\ZZ$-modules but satisfy
 \[
-\mathbb Q\otimes_{\mathbb Z}M\cong \mathbb Q\otimes_{\mathbb Z}N
+\QQ\otimes_{\ZZ}M\cong \QQ\otimes_{\ZZ}N
 \]
-as $\mathbb Q$-modules.
+as $\QQ$-modules.
 
-(b) Let $M$ be a finitely generated $\mathbb R[x]$-module, described using the classification of finitely generated modules over a PID. Give a corresponding description of
+(b) Let $M$ be a finitely generated $\RR[x]$-module, described using the classification of finitely generated modules over a PID. Give a corresponding description of
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}M
+\CC[x]\otimes_{\RR[x]}M
 \]
-as a $\mathbb C[x]$-module.
+as a $\CC[x]$-module.
 :::
 
 ::: {.solution}
@@ -48,17 +48,17 @@ as a $\mathbb C[x]$-module.
 
 For part (a), take
 \[
-M=\mathbb Z,
+M=\ZZ,
 \qquad
-N=\mathbb Z\oplus\mathbb Z/2\mathbb Z.
+N=\ZZ\oplus\ZZ/2\ZZ.
 \]
-Then $M\not\cong N$ as $\mathbb Z$-modules, but
+Then $M\not\cong N$ as $\ZZ$-modules, but
 \[
-\mathbb Q\otimes_{\mathbb Z}M
+\QQ\otimes_{\ZZ}M
 \cong
-\mathbb Q
+\QQ
 \cong
-\mathbb Q\otimes_{\mathbb Z}N.
+\QQ\otimes_{\ZZ}N.
 \]
 
 ::: pf-proof
@@ -66,14 +66,14 @@ Then $M\not\cong N$ as $\mathbb Z$-modules, but
 The module $N$ has nonzero torsion while $M$ is torsionfree, so they are not isomorphic.
 Also
 \[
-\mathbb Q\otimes_{\mathbb Z}(\mathbb Z/2\mathbb Z)=0,
+\QQ\otimes_{\ZZ}(\ZZ/2\ZZ)=0,
 \]
-because $2$ is invertible in $\mathbb Q$. Hence
+because $2$ is invertible in $\QQ$. Hence
 \[
-\mathbb Q\otimes_{\mathbb Z}N
+\QQ\otimes_{\ZZ}N
 \cong
-\mathbb Q\oplus0
-\cong\mathbb Q.
+\QQ\oplus0
+\cong\QQ.
 \]
 
 :::
@@ -82,17 +82,17 @@ because $2$ is invertible in $\mathbb Q$. Hence
 
 ::: pf-step
 
-Write the elementary-divisor decomposition of the finitely generated $\mathbb R[x]$-module $M$ as
+Write the elementary-divisor decomposition of the finitely generated $\RR[x]$-module $M$ as
 \[
-M\cong \mathbb R[x]^r
+M\cong \RR[x]^r
 \oplus
-\bigoplus_{i=1}^s \mathbb R[x]/(p_i(x)^{e_i}),
+\bigoplus_{i=1}^s \RR[x]/(p_i(x)^{e_i}),
 \]
-where each $p_i$ is monic irreducible in $\mathbb R[x]$ and $e_i\ge1$.
+where each $p_i$ is monic irreducible in $\RR[x]$ and $e_i\ge1$.
 
 ::: pf-proof
 
-The ring $\mathbb R[x]$ is a PID, so this is the elementary-divisor form of the structure theorem for finitely generated modules over a PID.
+The ring $\RR[x]$ is a PID, so this is the elementary-divisor form of the structure theorem for finitely generated modules over a PID.
 
 :::
 
@@ -102,28 +102,28 @@ The ring $\mathbb R[x]$ is a PID, so this is the elementary-divisor form of the 
 
 Extension of scalars gives
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}M
+\CC[x]\otimes_{\RR[x]}M
 \cong
-\mathbb C[x]^r
+\CC[x]^r
 \oplus
-\bigoplus_{i=1}^s \mathbb C[x]/(p_i(x)^{e_i}).
+\bigoplus_{i=1}^s \CC[x]/(p_i(x)^{e_i}).
 \]
 
 ::: pf-proof
 
 Tensor product commutes with finite direct sums, and
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]\cong\mathbb C[x].
+\CC[x]\otimes_{\RR[x]}\RR[x]\cong\CC[x].
 \]
-For every ideal $(a)\subseteq\mathbb R[x]$, right exactness applied to
+For every ideal $(a)\subseteq\RR[x]$, right exactness applied to
 \[
-\mathbb R[x]\xrightarrow{\cdot a}\mathbb R[x]\to\mathbb R[x]/(a)\to0
+\RR[x]\xrightarrow{\cdot a}\RR[x]\to\RR[x]/(a)\to0
 \]
 gives
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]/(a)
+\CC[x]\otimes_{\RR[x]}\RR[x]/(a)
 \cong
-\mathbb C[x]/(a)\mathbb C[x].
+\CC[x]/(a)\CC[x].
 \]
 Apply this with $a=p_i^{e_i}$.
 
@@ -133,14 +133,14 @@ Apply this with $a=p_i^{e_i}$.
 
 ::: {.pf-step #s4}
 
-If $p_i(x)=x-a$ with $a\in\mathbb R$, then the corresponding summand remains
+If $p_i(x)=x-a$ with $a\in\RR$, then the corresponding summand remains
 \[
-\mathbb C[x]/((x-a)^{e_i}).
+\CC[x]/((x-a)^{e_i}).
 \]
 
 ::: pf-proof
 
-A real linear irreducible remains linear over $\mathbb C$.
+A real linear irreducible remains linear over $\CC$.
 
 :::
 
@@ -148,29 +148,29 @@ A real linear irreducible remains linear over $\mathbb C$.
 
 ::: {.pf-step #s5}
 
-If $p_i$ is an irreducible quadratic over $\mathbb R$, write
+If $p_i$ is an irreducible quadratic over $\RR$, write
 \[
 p_i(x)=(x-z_i)(x-\overline z_i),
-\qquad z_i\in\mathbb C\setminus\mathbb R.
+\qquad z_i\in\CC\setminus\RR.
 \]
 Then
 \[
-\mathbb C[x]/(p_i^{e_i})
+\CC[x]/(p_i^{e_i})
 \cong
-\mathbb C[x]/((x-z_i)^{e_i})
+\CC[x]/((x-z_i)^{e_i})
 \oplus
-\mathbb C[x]/((x-\overline z_i)^{e_i}).
+\CC[x]/((x-\overline z_i)^{e_i}).
 \]
 
 ::: pf-proof
 
 The two linear factors are distinct, so their powers are coprime. The Chinese remainder theorem gives
 \[
-\mathbb C[x]/\big((x-z_i)^{e_i}(x-\overline z_i)^{e_i}\big)
+\CC[x]/\big((x-z_i)^{e_i}(x-\overline z_i)^{e_i}\big)
 \cong
-\mathbb C[x]/((x-z_i)^{e_i})
+\CC[x]/((x-z_i)^{e_i})
 \oplus
-\mathbb C[x]/((x-\overline z_i)^{e_i}).
+\CC[x]/((x-\overline z_i)^{e_i}).
 \]
 
 :::
@@ -183,7 +183,7 @@ Thus scalar extension preserves the free rank, preserves each real-linear primar
 
 ::: pf-proof
 
-Combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}. Every monic irreducible polynomial over $\mathbb R$ has degree $1$ or $2$.
+Combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}. Every monic irreducible polynomial over $\RR$ has degree $1$ or $2$.
 
 :::
 

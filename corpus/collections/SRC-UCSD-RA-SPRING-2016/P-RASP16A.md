@@ -35,20 +35,20 @@ If false, give a counterexample or prove your assertion.
 (1) Let $(X, \mathcal{M}, \mu)$ be a measure space and $E_j \in \mathcal{M}$ ($j = 1, 2, \ldots$). Denote by $E = \{x \in X : x \in E_j \text{ for infinitely many } j\}$.
 If $E \neq \emptyset$, $\mu(E_j) < \infty$, then $\mu(E) = 0$.
 
-(2) Let $f \in L^1(\mathbb{R}^n)$ and denote the Lebesgue set of $f$ by $L_f$.
-Let $z_0 \in \mathbb{R}^n$ and suppose $f$ is continuous at $z_0$.
+(2) Let $f \in L^1(\RR^n)$ and denote the Lebesgue set of $f$ by $L_f$.
+Let $z_0 \in \RR^n$ and suppose $f$ is continuous at $z_0$.
 Then $z_0 \in L_f$.
 
 (3) Let $H$ be a real Hilbert space.
 Let $z_k \in H$ ($k = 1, 2, \ldots$) and $z \in H$.
 If $z_k \to z$ weakly in $H$ and $\|z_k\| = \|z\|$, then $\|z_k - z\| \to 0$.
 
-(4) Let $\mathcal{S}$ denote the Schwartz space on $\mathbb{R}^n$.
+(4) Let $\mathcal{S}$ denote the Schwartz space on $\RR^n$.
 Let $f, g \in \mathcal{S}$.
-If $f * g = 0$ in $\mathbb{R}^n$ then either $f = 0$ in $\mathbb{R}^n$ or $g = 0$ in $\mathbb{R}^n$.
+If $f * g = 0$ in $\RR^n$ then either $f = 0$ in $\RR^n$ or $g = 0$ in $\RR^n$.
 
-(5) Let $f(x) = |x|$ ($x \in \mathbb{R}$) and identify $f$ as a distribution on $\mathbb{R}$.
-Then the second-order distributional derivative $f''$ is the zero distribution on $\mathcal{D}(\mathbb{R})$.
+(5) Let $f(x) = |x|$ ($x \in \RR$) and identify $f$ as a distribution on $\RR$.
+Then the second-order distributional derivative $f''$ is the zero distribution on $\mathcal{D}(\RR)$.
 :::
 
 ::: {.solution}
@@ -135,7 +135,7 @@ Statement (4) is false.
 
 Choose nonzero functions
 \[
-\phi,\psi\in C_c^\infty(\mathbb R^n)
+\phi,\psi\in C_c^\infty(\RR^n)
 \]
 with disjoint supports. Let
 \[
@@ -173,7 +173,7 @@ For a test function $\varphi$,
 \[
 \begin{aligned}
 \langle D^2f,\varphi\rangle
-&=-\int_{\mathbb R}\operatorname{sgn}(x)\varphi'(x)\,dx\\
+&=-\int_{\RR}\operatorname{sgn}(x)\varphi'(x)\,dx\\
 &=-\int_0^\infty\varphi'(x)\,dx
 +\int_{-\infty}^0\varphi'(x)\,dx\\
 &=2\varphi(0).

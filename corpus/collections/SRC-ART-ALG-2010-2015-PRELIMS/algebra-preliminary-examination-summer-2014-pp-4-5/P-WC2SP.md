@@ -29,7 +29,7 @@ A local ring is a commutative ring with 1 which has a unique maximal ideal.
 
 a. Show that the group of units of a local ring is precisely the set of elements lying outside of $M$.
 
-b. Let $F$ be a field, and $| \ | : F \longrightarrow \mathbb{R}$ such that
+b. Let $F$ be a field, and $| \ | : F \longrightarrow \RR$ such that
 
 i. $|x| \geq 0$ for all $x \in F$ and $|x| = 0$ if and only if $x = 0$;
 

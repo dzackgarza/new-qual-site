@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $P$ be a nonconstant polynomial all of whose zeros lie in the half-plane
 \[
-\{z\in\mathbb C:\operatorname{Re}z<\sigma\}.
+\{z\in\CC:\operatorname{Re}z<\sigma\}.
 \]
 Show that every zero of $P'$ also lies in this half-plane.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA04-E3
 kind: problem
-title: Functions separating $L^2(\mathbb R)$ and $L^3(\mathbb R)$
+title: Functions separating $L^2(\RR)$ and $L^3(\RR)$
 classification:
   areas: [real-analysis]
   topics: [Function Spaces]
@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Give examples of
 
-1. a real-valued function in $L^2(\mathbb R)$ but not in $L^3(\mathbb R)$;
+1. a real-valued function in $L^2(\RR)$ but not in $L^3(\RR)$;
 
-2. a real-valued function in $L^3(\mathbb R)$ but not in $L^2(\mathbb R)$.
+2. a real-valued function in $L^3(\RR)$ but not in $L^2(\RR)$.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ while
 \]
 Hence
 \[
-f\in L^2(\mathbb R)\setminus L^3(\mathbb R).
+f\in L^2(\RR)\setminus L^3(\RR).
 \]
 
 For the second example, take
@@ -65,6 +65,6 @@ whereas
 \]
 Thus
 \[
-\boxed{g\in L^3(\mathbb R)\setminus L^2(\mathbb R).}
+\boxed{g\in L^3(\RR)\setminus L^2(\RR).}
 \]
 :::

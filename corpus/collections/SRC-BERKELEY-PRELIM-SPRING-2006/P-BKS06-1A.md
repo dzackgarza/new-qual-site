@@ -11,11 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let G be the subgroup of the free abelian group $\mathbb { Z } ^ { 4 }$ consisting of all integer vectors $( x , y , z , w )$ such that $2 x + 3 y + 5 z + 7 w = 0$
+Let G be the subgroup of the free abelian group $\ZZ ^ { 4 }$ consisting of all integer vectors $( x , y , z , w )$ such that $2 x + 3 y + 5 z + 7 w = 0$
 
 (a) Determine a linearly independent subset of G which generates $G$ as an abelian group.
 
-(b) Show that $\mathbb { Z } ^ { 4 } / G$ is a free abelian group and determine its rank.
+(b) Show that $\ZZ ^ { 4 } / G$ is a free abelian group and determine its rank.
 :::
 
 ::: {.solution}
@@ -26,9 +26,9 @@ $$
 $$
 
 has kernel G, and is onto because 2 and 3 are relatively prime.
-Hence $\mathbb { Z } ^ { 4 } / G$ is isomorphic to the image $\mathbb { Z } ,$ which is a free abelian group of rank 1.
+Hence $\ZZ ^ { 4 } / G$ is isomorphic to the image $\ZZ ,$ which is a free abelian group of rank 1.
 
-(a) There is a sequence of elementary column operations over $\mathbb { Z }$ (not involving divisions) that transforms the 1 × 4-matrix $( 2 ~ \mathrm { ~ 3 ~ ~ 5 ~ ~ 7 ~ } )$ into $\left( \begin{array} { c c c c } { { 0 } } & { { 0 } } & { { 0 } } & { { 1 } } \end{array} \right)$ . For instance, subtract 3 times the first column from the fourth to get $\left( 2 \ \ \textrm { 3 } \ 5 \ \textrm { 1 } \right)$ , and then subtract appropriate multiples of the fourth from each of the first three columns to make them zero.
+(a) There is a sequence of elementary column operations over $\ZZ$ (not involving divisions) that transforms the 1 × 4-matrix $( 2 ~ \mathrm { ~ 3 ~ ~ 5 ~ ~ 7 ~ } )$ into $\left( \begin{array} { c c c c } { { 0 } } & { { 0 } } & { { 0 } } & { { 1 } } \end{array} \right)$ . For instance, subtract 3 times the first column from the fourth to get $\left( 2 \ \ \textrm { 3 } \ 5 \ \textrm { 1 } \right)$ , and then subtract appropriate multiples of the fourth from each of the first three columns to make them zero.
 The same sequence of operations applied to the $4 \times 4$ identity matrix eventually yields a matrix
 
 $$
@@ -50,7 +50,7 @@ $$
 0 = \begin{pmatrix} 2 & 3 & 5 & 7 \end{pmatrix} \mathbf { v } = \begin{pmatrix} 0 & 0 & 0 & 1 \end{pmatrix} U ^ { - 1 } \mathbf { v } ,
 $$
 
-so $U ^ { - 1 } \mathbf { v } = ( \alpha , \beta , \gamma , 0 )^{T}$ for some $\alpha , \beta , \gamma \in \mathbb { Z }$ . Thus
+so $U ^ { - 1 } \mathbf { v } = ( \alpha , \beta , \gamma , 0 )^{T}$ for some $\alpha , \beta , \gamma \in \ZZ$ . Thus
 
 $$
 \mathbf { v } = U \left( \begin{array} { l } { \alpha } \\ { \beta } \\ { \gamma } \\ { 0 } \end{array} \right) ,

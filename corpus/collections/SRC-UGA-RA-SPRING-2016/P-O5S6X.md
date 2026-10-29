@@ -59,19 +59,19 @@ Express the overlap as a convolution and prove integrability.
 
 Let $\widetilde\chi_E(u):=\chi_E(-u)$. The hint gives
 \[
-f(x)=\int_{\mathbb R}\chi_E(y)\chi_E(y-x)\,dy
+f(x)=\int_{\RR}\chi_E(y)\chi_E(y-x)\,dy
 =(\chi_E*\widetilde\chi_E)(x).
 \]
-Since $m(E)<\infty$, both factors lie in $L^1(\mathbb R)$. Tonelli gives
+Since $m(E)<\infty$, both factors lie in $L^1(\RR)$. Tonelli gives
 \[
 \begin{aligned}
-\int_{\mathbb R}f(x)\,dx
-&=\int_{\mathbb R}\int_{\mathbb R}
+\int_{\RR}f(x)\,dx
+&=\int_{\RR}\int_{\RR}
 \chi_E(y)\chi_E(y-x)\,dy\,dx\\
 &=m(E)^2<\infty.
 \end{aligned}
 \]
-Thus $f\in L^1(\mathbb R)$.
+Thus $f\in L^1(\RR)$.
 
 :::
 
@@ -83,11 +83,11 @@ Prove uniform continuity.
 
 ::: pf-proof
 
-For $h\in\mathbb R$,
+For $h\in\RR$,
 \[
 \begin{aligned}
 |f(x+h)-f(x)|
-&\le \int_{\mathbb R}\chi_E(y)
+&\le \int_{\RR}\chi_E(y)
 |\widetilde\chi_E(x+h-y)-\widetilde\chi_E(x-y)|\,dy\\
 &\le \|\tau_h\widetilde\chi_E-\widetilde\chi_E\|_1.
 \end{aligned}

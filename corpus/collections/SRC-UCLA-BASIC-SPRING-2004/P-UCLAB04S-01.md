@@ -21,7 +21,7 @@ Let $S$ be the set of sequences
 a=(a_1,a_2,\ldots),
 \qquad a_k\in\{0,1\}.
 \]
-Show that the map $\theta:S\to\mathbb R$ defined by
+Show that the map $\theta:S\to\RR$ defined by
 \[
 \theta(a)=\frac{a_1}{10}+\frac{a_2}{10^2}+\cdots
 \]
@@ -240,7 +240,7 @@ Thus distinct sequences have distinct images.
 
 Therefore
 \[
-\boxed{\theta:S\to\mathbb R\text{ is injective}.}
+\boxed{\theta:S\to\RR\text{ is injective}.}
 \]
 
 

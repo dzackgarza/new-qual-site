@@ -128,7 +128,7 @@ Using the simple-zero quotient formula,
 
 ::: {.pf-step #s1-4}
 
-For $z\notin\mathbb Z$, the standard cotangent partial fraction expansion is
+For $z\notin\ZZ$, the standard cotangent partial fraction expansion is
 \[
 \pi\cot(\pi z)
 =
@@ -144,9 +144,9 @@ with locally uniform convergence away from the integers.
 
 This is the classical Mittag--Leffler expansion of $\pi\cot(\pi z)$, obtained by pairing the terms at $k$ and $-k$ in
 \[
-\sum_{k\in\mathbb Z}\frac1{z-k}.
+\sum_{k\in\ZZ}\frac1{z-k}.
 \]
-The paired series converges locally uniformly off $\mathbb Z$ because its terms are $O(k^{-2})$ on compact sets.
+The paired series converges locally uniformly off $\ZZ$ because its terms are $O(k^{-2})$ on compact sets.
 
 :::
 

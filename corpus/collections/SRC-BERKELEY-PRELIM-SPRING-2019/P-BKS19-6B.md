@@ -24,7 +24,7 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-10-02
-  note: Verified the Frobenius identity, column-operation divisibility by every nonzero linear form, pairwise nonassociateness of the factors, nonvanishing of the determinant, and equality by degree in the UFD $\mathbb Z_2[x_1,\ldots,x_n]$.
+  note: Verified the Frobenius identity, column-operation divisibility by every nonzero linear form, pairwise nonassociateness of the factors, nonvanishing of the determinant, and equality by degree in the UFD $\ZZ_2[x_1,\ldots,x_n]$.
 ---
 
 ::: {.problem}
@@ -56,7 +56,7 @@ x_1^2&\cdots&x_n^2\\
 x_1^{2^{n-1}}&\cdots&x_n^{2^{n-1}}
 \end{pmatrix},
 $$
-and for $a=(a_1,\ldots,a_n)\in\mathbb Z_2^n$ put
+and for $a=(a_1,\ldots,a_n)\in\ZZ_2^n$ put
 $$
 L_a\coloneqq a_1x_1+\cdots+a_nx_n.
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-For every $k\geq0$ and every $a\in\mathbb Z_2^n$,
+For every $k\geq0$ and every $a\in\ZZ_2^n$,
 $$
 L_a^{\,2^k}
 =
@@ -85,7 +85,7 @@ $$
 =
 \sum_j a_j^{2^k}x_j^{2^k}.
 $$
-Since each $a_j\in\mathbb Z_2$ satisfies $a_j^{2^k}=a_j$, the displayed identity follows.
+Since each $a_j\in\ZZ_2$ satisfies $a_j^{2^k}=a_j$, the displayed identity follows.
 
 :::
 
@@ -93,7 +93,7 @@ Since each $a_j\in\mathbb Z_2$ satisfies $a_j^{2^k}=a_j$, the displayed identity
 
 ::: {.pf-step #s1-2}
 
-For every nonzero $a\in\mathbb Z_2^n$, the linear polynomial $L_a$ divides $D$.
+For every nonzero $a\in\ZZ_2^n$, the linear polynomial $L_a$ divides $D$.
 
 
 ::: pf-proof
@@ -121,7 +121,7 @@ Every entry in that column is divisible by $L_a$, hence the determinant is divis
 
 The product
 $$
-P\coloneqq\prod_{a\in\mathbb Z_2^n\setminus\{0\}}L_a
+P\coloneqq\prod_{a\in\ZZ_2^n\setminus\{0\}}L_a
 $$
 divides $D$.
 
@@ -130,9 +130,9 @@ divides $D$.
 
 Each $L_a$ is a nonzero linear polynomial, hence irreducible in the polynomial UFD
 $$
-\mathbb Z_2[x_1,\ldots,x_n].
+\ZZ_2[x_1,\ldots,x_n].
 $$
-If $a\neq b$, then $L_a\neq L_b$. Since the only nonzero unit of $\mathbb Z_2$ is $1$, distinct $L_a$ are nonassociate. Step [](#s1-2){.pf-ref} shows that every one of these pairwise nonassociate irreducibles divides $D$, so their product divides $D$.
+If $a\neq b$, then $L_a\neq L_b$. Since the only nonzero unit of $\ZZ_2$ is $1$, distinct $L_a$ are nonassociate. Step [](#s1-2){.pf-ref} shows that every one of these pairwise nonassociate irreducibles divides $D$, so their product divides $D$.
 
 :::
 
@@ -173,7 +173,7 @@ The product $P$ is homogeneous of degree $2^n-1$.
 
 ::: pf-proof
 
-There are exactly $2^n-1$ nonzero vectors in $\mathbb Z_2^n$, and every factor $L_a$ has degree $1$.
+There are exactly $2^n-1$ nonzero vectors in $\ZZ_2^n$, and every factor $L_a$ has degree $1$.
 
 :::
 
@@ -186,7 +186,7 @@ $$
 \boxed{
 D
 =
-\prod_{a\in\mathbb Z_2^n\setminus\{0\}}
+\prod_{a\in\ZZ_2^n\setminus\{0\}}
 (a_1x_1+\cdots+a_nx_n)
 }.
 $$
@@ -198,7 +198,7 @@ By step [](#s1-3){.pf-ref}, write $D=PQ$. Steps [](#s1-4){.pf-ref} through [](#s
 $$
 \deg D=\deg P=2^n-1.
 $$
-Since $D$ and $P$ are nonzero, $Q$ has degree $0$, hence is a nonzero constant. The only nonzero constant unit in $\mathbb Z_2$ is $1$, so $Q=1$ and $D=P$.
+Since $D$ and $P$ are nonzero, $Q$ has degree $0$, hence is a nonzero constant. The only nonzero constant unit in $\ZZ_2$ is $1$, so $Q=1$ and $D=P$.
 
 :::
 

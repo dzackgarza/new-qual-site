@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a real $m\times n$ matrix with $m>n$ and linearly independent columns, and let $b\in\mathbb R^m$.
-Show that the vector $x^*\in\mathbb R^n$ minimizing
+Let $A$ be a real $m\times n$ matrix with $m>n$ and linearly independent columns, and let $b\in\RR^m$.
+Show that the vector $x^*\in\RR^n$ minimizing
 \[
 g(x)=\|Ax-b\|_2^2
 \]
@@ -45,7 +45,7 @@ is positive definite.
 
 Let
 \[
-v\in\mathbb R^n
+v\in\RR^n
 \]
 be nonzero.
 Since the columns of $A$ are linearly independent,
@@ -175,7 +175,7 @@ Ay
 \]
 for some
 \[
-y\in\mathbb R^n.
+y\in\RR^n.
 \]
 Then
 \[
@@ -203,7 +203,7 @@ r\perp\operatorname{im}A.
 
 For every
 \[
-x\in\mathbb R^n,
+x\in\RR^n,
 \]
 one has
 \[
@@ -267,7 +267,7 @@ The second is orthogonal to $\operatorname{im}A$ by step [](#s1-5){.pf-ref}.
 
 For every
 \[
-x\in\mathbb R^n,
+x\in\RR^n,
 \]
 one has
 \[

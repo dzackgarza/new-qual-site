@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^d\to[0,\infty)$ be Lebesgue measurable.
+Let $f:\RR^d\to[0,\infty)$ be Lebesgue measurable.
 
 (a) Using
 \[
@@ -57,7 +57,7 @@ Each set $W_{n,k}$ is measurable because $f$ is measurable, and $\{f\geq n\}$ is
 
 ::: {.pf-step #s1-2}
 
-For every $n\geq0$ and $x\in\mathbb R^d$,
+For every $n\geq0$ and $x\in\RR^d$,
 $$
 \varphi_n(x)=
 \begin{cases}
@@ -87,7 +87,7 @@ Thus $x\in W_{n,k}$ and the sum defining $\varphi_n$ takes the value $k2^{-n}=2^
 
 ::: {.pf-step #s1-3}
 
-For every $n\geq0$ and $x\in\mathbb R^d$,
+For every $n\geq0$ and $x\in\RR^d$,
 $$
 \varphi_n(x)\leq\varphi_{n+1}(x).
 $$
@@ -123,7 +123,7 @@ $$
 
 ::: {.pf-step #s1-4}
 
-For every $x\in\mathbb R^d$,
+For every $x\in\RR^d$,
 $$
 \varphi_n(x)\longrightarrow f(x).
 $$

@@ -11,11 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Prove that in $\mathbb { Z } [ { \sqrt { - 5 } } ]$ , 7 is irreducible but not prime.
+(a) Prove that in $\ZZ [ { \sqrt { - 5 } } ]$ , 7 is irreducible but not prime.
 
 [10]
 
-(b) Is $\mathbb { Z } [ { \sqrt { - 5 } } ]$ a Principal Ideal Domain?
+(b) Is $\ZZ [ { \sqrt { - 5 } } ]$ a Principal Ideal Domain?
 (Justify your answer.)
 
 [5]
@@ -29,5 +29,5 @@ Thus $7$ is irreducible.
 
 On the other hand, $7$ divides $(3 + \sqrt{-5})(3 - \sqrt{-5}) = 14$ without dividing either factor; so $7$ is not prime.
 
-(b) $\mathbb Z[\sqrt{-5}]$ is not a principal ideal domain, because principal ideal domains are unique factorization domains, rings in which irreducible elements are always prime.
+(b) $\ZZ[\sqrt{-5}]$ is not a principal ideal domain, because principal ideal domains are unique factorization domains, rings in which irreducible elements are always prime.
 :::

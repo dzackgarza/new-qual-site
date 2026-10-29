@@ -57,7 +57,7 @@ and
 
 ::: pf-proof
 
-Over $\mathbb C$, $A$ is similar to an upper triangular matrix whose diagonal entries are its eigenvalues counted with algebraic multiplicity.
+Over $\CC$, $A$ is similar to an upper triangular matrix whose diagonal entries are its eigenvalues counted with algebraic multiplicity.
 The diagonal entries of the $m$th power are then
 \[
 \lambda_1^m,\lambda_2^m,\lambda_3^m.

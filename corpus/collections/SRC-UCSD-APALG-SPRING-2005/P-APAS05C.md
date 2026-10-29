@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Assume that $(\lambda, x)$ is an eigenpair of $A \in \mathbb{C}^{n\times n}$ such that $am(\lambda) = gm(\lambda) = 1$.
+Assume that $(\lambda, x)$ is an eigenpair of $A \in \CC^{n\times n}$ such that $am(\lambda) = gm(\lambda) = 1$.
 Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \quad Y)^*$ such that
 \[
 \begin{pmatrix} y^* \\ Y^* \end{pmatrix} A (x \quad X) = \begin{pmatrix} \lambda & 0 \\ 0 & M \end{pmatrix}.
@@ -61,7 +61,7 @@ One has
 \]
 
 ::: pf-proof
-Suppose instead that $0\ne cx\in W$. Since $c\ne0$, this implies $x\in W$, so there exists $z\in\mathbb C^n$ with
+Suppose instead that $0\ne cx\in W$. Since $c\ne0$, this implies $x\in W$, so there exists $z\in\CC^n$ with
 \[
 Nz=x,
 \qquad\text{i.e.}\qquad
@@ -94,7 +94,7 @@ Therefore $\mathbb Cx\cap W=0$.
 ::: {.pf-step #p-is-nonsingular}
 Therefore
 \[
-\mathbb C^n=\mathbb Cx\oplus W.
+\CC^n=\mathbb Cx\oplus W.
 \]
 Choose a basis $x_2,\ldots,x_n$ of $W$ and set
 \[
@@ -109,7 +109,7 @@ By steps [](#w-is-invariant-complement-candidate){.pf-ref} and [](#x-intersect-w
 \[
 \dim(\mathbb Cx+W)=1+(n-1)=n,
 \]
-so the sum is direct and equals all of $\mathbb C^n$. Hence the columns of $P$ form a basis, so $P$ is invertible.
+so the sum is direct and equals all of $\CC^n$. Hence the columns of $P$ form a basis, so $P$ is invertible.
 :::
 
 :::
@@ -128,7 +128,7 @@ for some $(n-1)\times(n-1)$ matrix $M$.
 ::: pf-proof
 The line $\mathbb Cx$ is $A$-invariant and $Ax=\lambda x$. By step [](#w-is-invariant-complement-candidate){.pf-ref}, the complementary subspace $W$ is also $A$-invariant. Therefore the matrix of $A$ with respect to the direct-sum basis
 \[
-\mathbb C^n=\mathbb Cx\oplus W
+\CC^n=\mathbb Cx\oplus W
 \]
 has no off-diagonal blocks. Its first block is $[\lambda]$, and the second block is the matrix $M$ of $A|_W$ in the basis $x_2,\ldots,x_n$.
 :::

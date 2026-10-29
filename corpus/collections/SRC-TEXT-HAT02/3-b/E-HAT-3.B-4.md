@@ -24,27 +24,27 @@ audit:
 ---
 
 ::: {.problem}
-Show that the cross product of fundamental classes for closed $\mathbb{R}$-orientable manifolds $M$ and $N$ is a fundamental class for $M \times N$.
+Show that the cross product of fundamental classes for closed $\RR$-orientable manifolds $M$ and $N$ is a fundamental class for $M \times N$.
 :::
 
 ::: {.solution}
-Let $M^m$ and $N^n$ be closed $\mathbb R$-orientable manifolds with chosen fundamental classes
+Let $M^m$ and $N^n$ be closed $\RR$-orientable manifolds with chosen fundamental classes
 \[
-[M]\in H_m(M;\mathbb R),
+[M]\in H_m(M;\RR),
 \qquad
-[N]\in H_n(N;\mathbb R).
+[N]\in H_n(N;\RR).
 \]
 We show that
 \[
-[M]\times[N]\in H_{m+n}(M\times N;\mathbb R)
+[M]\times[N]\in H_{m+n}(M\times N;\RR)
 \]
 is a fundamental class.
 
 Fix $(x,y)\in M\times N$. The images of $[M]$ and $[N]$ in local homology are the chosen local orientation generators
 \[
-[M]_x\in H_m(M,M-\{x\};\mathbb R),
+[M]_x\in H_m(M,M-\{x\};\RR),
 \qquad
-[N]_y\in H_n(N,N-\{y\};\mathbb R).
+[N]_y\in H_n(N,N-\{y\};\RR).
 \]
 By naturality of cross products, the image of $[M]\times[N]$ in local homology at $(x,y)$ is the image of
 \[
@@ -61,11 +61,11 @@ The subspace on the right is exactly $M\times N-\{(x,y)\}$.
 
 Choose orientation-preserving coordinate balls about $x$ and $y$. By excision the preceding local cross product identifies with
 \[
-H_m(\mathbb R^m,\mathbb R^m-0;\mathbb R)
+H_m(\RR^m,\RR^m-0;\RR)
 \otimes
-H_n(\mathbb R^n,\mathbb R^n-0;\mathbb R)
+H_n(\RR^n,\RR^n-0;\RR)
 \longrightarrow
-H_{m+n}(\mathbb R^{m+n},\mathbb R^{m+n}-0;\mathbb R).
+H_{m+n}(\RR^{m+n},\RR^{m+n}-0;\RR).
 \]
 The cross product of the two standard local generators is the standard generator in dimension $m+n$; this follows directly from the relative Künneth theorem, or from the product orientation on Euclidean space. Hence the image of $[M]\times[N]$ is a generator of local homology at every $(x,y)$.
 

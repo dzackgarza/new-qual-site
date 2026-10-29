@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $X$ and $Y$ be two independent variables.
 
-(a) Prove that the ring $R_1 := \mathbb{Q}(X)[Y]/((Y^2 + X)^3)$ is a local ring.
+(a) Prove that the ring $R_1 := \QQ(X)[Y]/((Y^2 + X)^3)$ is a local ring.
 
-(b) Prove that the ring $R_2 := \mathbb{Q}[X,Y]/((Y^2 + X)^3)$ is not a local ring by giving examples (with proof) of two distinct maximal ideals in $R_2$.
+(b) Prove that the ring $R_2 := \QQ[X,Y]/((Y^2 + X)^3)$ is not a local ring by giving examples (with proof) of two distinct maximal ideals in $R_2$.
 
 (c) Give an example of a prime ideal in $R_2$ which is not maximal.
 Are there such ideals in $R_1$?
@@ -46,11 +46,11 @@ f:=Y^2+X.
 ::: pf
 
 ::: {.pf-step #f-irreducible}
-The polynomial $f$ is irreducible in $\mathbb Q(X)[Y]$.
+The polynomial $f$ is irreducible in $\QQ(X)[Y]$.
 
 ::: pf-proof
-Because $f$ is quadratic in $Y$, it is reducible over $\mathbb Q(X)$ if and only if it has a root in $\mathbb Q(X)$.
-Such a root would give an element $r(X)\in\mathbb Q(X)$ satisfying
+Because $f$ is quadratic in $Y$, it is reducible over $\QQ(X)$ if and only if it has a root in $\QQ(X)$.
+Such a root would give an element $r(X)\in\QQ(X)$ satisfying
 \[
 r(X)^2=-X.
 \]
@@ -69,7 +69,7 @@ is even, whereas
 \[
 v_X(-X)=1.
 \]
-Therefore $-X$ is not a square in $\mathbb Q(X)$, so $f$ has no root and is irreducible.
+Therefore $-X$ is not a square in $\QQ(X)$, so $f$ has no root and is irreducible.
 :::
 
 :::
@@ -77,7 +77,7 @@ Therefore $-X$ is not a square in $\mathbb Q(X)$, so $f$ has no root and is irre
 ::: {.pf-step #r1-local}
 The ring
 \[
-R_1=\mathbb Q(X)[Y]/(f^3)
+R_1=\QQ(X)[Y]/(f^3)
 \]
 is local, with unique maximal ideal
 \[
@@ -85,10 +85,10 @@ is local, with unique maximal ideal
 \]
 
 ::: pf-proof
-Since $\mathbb Q(X)$ is a field, $\mathbb Q(X)[Y]$ is a principal ideal domain.
+Since $\QQ(X)$ is a field, $\QQ(X)[Y]$ is a principal ideal domain.
 By step [](#f-irreducible){.pf-ref}, the irreducible polynomial $f$ generates a maximal ideal $(f)$.
 
-Maximal ideals of $R_1$ correspond to maximal ideals $M$ of $\mathbb Q(X)[Y]$ containing $(f^3)$.
+Maximal ideals of $R_1$ correspond to maximal ideals $M$ of $\QQ(X)[Y]$ containing $(f^3)$.
 If $f^3\in M$, then $f\in M$ because every maximal ideal is prime.
 Hence
 \[
@@ -106,12 +106,12 @@ Thus $R_1$ has exactly one maximal ideal, namely $(f)/(f^3)$, and is local.
 ::: pf-step
 The ring
 \[
-R_2=\mathbb Q[X,Y]/(f^3)
+R_2=\QQ[X,Y]/(f^3)
 \]
 has at least two distinct maximal ideals.
 
 ::: pf-proof
-In $\mathbb Q[X,Y]$, consider
+In $\QQ[X,Y]$, consider
 \[
 \mathfrak m=(X,Y)
 \]
@@ -121,9 +121,9 @@ and
 \]
 Both are maximal because evaluation at $(0,0)$ and $(-1,1)$ gives
 \[
-\mathbb Q[X,Y]/\mathfrak m\cong\mathbb Q,
+\QQ[X,Y]/\mathfrak m\cong\QQ,
 \qquad
-\mathbb Q[X,Y]/\mathfrak n\cong\mathbb Q.
+\QQ[X,Y]/\mathfrak n\cong\QQ.
 \]
 Moreover,
 \[
@@ -171,7 +171,7 @@ The quotient by $\mathfrak p$ is
 \[
 R_2/\mathfrak p
 \cong
-\mathbb Q[X,Y]/(f).
+\QQ[X,Y]/(f).
 \]
 Since
 \[
@@ -179,9 +179,9 @@ f=X+Y^2,
 \]
 substituting $X=-Y^2$ gives an isomorphism
 \[
-\mathbb Q[X,Y]/(X+Y^2)\cong\mathbb Q[Y].
+\QQ[X,Y]/(X+Y^2)\cong\QQ[Y].
 \]
-The ring $\mathbb Q[Y]$ is an integral domain, so $\mathfrak p$ is prime.
+The ring $\QQ[Y]$ is an integral domain, so $\mathfrak p$ is prime.
 It is not a field, so $\mathfrak p$ is not maximal.
 :::
 

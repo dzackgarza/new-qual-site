@@ -17,14 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\colon\mathbb R\to[0,\infty)$ satisfy the following bounded-finite-sum condition: there exists $M<\infty$ such that
+Let $a\colon\RR\to[0,\infty)$ satisfy the following bounded-finite-sum condition: there exists $M<\infty$ such that
 \[
 \sum_{x\in F}a(x)\le M
 \]
-for every finite set $F\subset\mathbb R$.
+for every finite set $F\subset\RR$.
 Prove that
 \[
-\{x\in\mathbb R:a(x)>0\}
+\{x\in\RR:a(x)>0\}
 \]
 is countable.
 :::
@@ -36,7 +36,7 @@ For each positive integer $n$, define
 E_n
 =
 \left\{
-x\in\mathbb R:
+x\in\RR:
 a(x)\ge\frac1n
 \right\}.
 \]
@@ -118,7 +118,7 @@ x\in E_n.
 
 One has
 \[
-\{x\in\mathbb R:a(x)>0\}
+\{x\in\RR:a(x)>0\}
 =
 \bigcup_{n=1}^{\infty}E_n.
 \]
@@ -147,7 +147,7 @@ Thus the sets are equal.
 Therefore
 \[
 \boxed{
-\{x\in\mathbb R:a(x)>0\}
+\{x\in\RR:a(x)>0\}
 \text{ is countable}.
 }
 \]

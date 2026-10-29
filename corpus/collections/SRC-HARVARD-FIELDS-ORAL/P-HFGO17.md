@@ -31,7 +31,7 @@ We construct an example with
 \operatorname{Gal}(E/F)\cong A_5.
 \]
 
-Let $k=\mathbb Q$, introduce algebraically independent variables
+Let $k=\QQ$, introduce algebraically independent variables
 \[
 \{x_g:g\in A_5\},
 \]

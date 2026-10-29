@@ -31,7 +31,7 @@ Compute $H_i(S^n - X)$ when $X$ is a subspace of $S^n$ homeomorphic to $S^k \vee
 ::: {.solution}
 We use Alexander duality in the form
 \[
-\widetilde H_i(S^n-X;\mathbb Z)\cong \widetilde H^{\,n-i-1}(X;\mathbb Z)
+\widetilde H_i(S^n-X;\ZZ)\cong \widetilde H^{\,n-i-1}(X;\ZZ)
 \]
 for these compact locally contractible subspaces of $S^n$.
 
@@ -43,16 +43,16 @@ If $X=S^k\vee S^\ell$, then
 \[
 \widetilde H^j(X)\cong
 \begin{cases}
-\mathbb Z,&j=k\ne\ell,\\
-\mathbb Z,&j=\ell\ne k,\\
-\mathbb Z^2,&j=k=\ell,\\
+\ZZ,&j=k\ne\ell,\\
+\ZZ,&j=\ell\ne k,\\
+\ZZ^2,&j=k=\ell,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
 
 ::: pf-proof
 
-Reduced cohomology takes a finite wedge to the direct sum of the reduced cohomologies of the two spheres. Each sphere has one copy of $\mathbb Z$ in its dimension and zero reduced cohomology elsewhere.
+Reduced cohomology takes a finite wedge to the direct sum of the reduced cohomologies of the two spheres. Each sphere has one copy of $\ZZ$ in its dimension and zero reduced cohomology elsewhere.
 
 :::
 
@@ -64,9 +64,9 @@ Consequently, for $X=S^k\vee S^\ell$,
 \[
 \widetilde H_i(S^n-X)\cong
 \begin{cases}
-\mathbb Z,&i=n-k-1\ne n-\ell-1,\\
-\mathbb Z,&i=n-\ell-1\ne n-k-1,\\
-\mathbb Z^2,&i=n-k-1=n-\ell-1,\\
+\ZZ,&i=n-k-1\ne n-\ell-1,\\
+\ZZ,&i=n-\ell-1\ne n-k-1,\\
+\ZZ^2,&i=n-k-1=n-\ell-1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -83,7 +83,7 @@ Apply Alexander duality to step [](#s1){.pf-ref}, replacing the cohomological de
 
 If $X=S^k\amalg S^\ell$, then in addition to the two positive-dimensional sphere classes there is
 \[
-\widetilde H^0(X)\cong\mathbb Z.
+\widetilde H^0(X)\cong\ZZ.
 \]
 Thus
 \[
@@ -91,11 +91,11 @@ Thus
 \cong
 \widetilde H^{\,n-i-1}(S^k\amalg S^\ell).
 \]
-Explicitly this contributes one copy of $\mathbb Z$ in degree $i=n-1$, and copies of $\mathbb Z$ in degrees $n-k-1$ and $n-\ell-1$ (combined to $\mathbb Z^2$ when $k=\ell$).
+Explicitly this contributes one copy of $\ZZ$ in degree $i=n-1$, and copies of $\ZZ$ in degrees $n-k-1$ and $n-\ell-1$ (combined to $\ZZ^2$ when $k=\ell$).
 
 ::: pf-proof
 
-A disjoint union of two connected spaces has reduced $H^0$ equal to $\mathbb Z$, while its positive-degree cohomology is the direct sum of that of its two components. Alexander duality gives the stated complement groups.
+A disjoint union of two connected spaces has reduced $H^0$ equal to $\ZZ$, while its positive-degree cohomology is the direct sum of that of its two components. Alexander duality gives the stated complement groups.
 
 :::
 
@@ -103,5 +103,5 @@ A disjoint union of two connected spaces has reduced $H^0$ equal to $\mathbb Z$,
 
 :::
 
-The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\mathbb Z$ to $\widetilde H_0$.
+The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\ZZ$ to $\widetilde H_0$.
 :::

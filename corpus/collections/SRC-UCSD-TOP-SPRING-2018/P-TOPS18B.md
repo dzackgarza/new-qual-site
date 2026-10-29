@@ -22,7 +22,7 @@ Let $M$ be the closed $4$-manifold obtained by gluing together two copies $A_1, 
 $$
 (e^{i\theta}, v) \in \partial A_1 \sim (e^{i\theta}, R_\theta(v)) \in \partial A_2 \quad \text{for all } e^{i\theta} \in S^1, v \in S^2.
 $$
-Use Mayer-Vietoris to compute $H_*(M; \mathbb{Z})$.
+Use Mayer-Vietoris to compute $H_*(M; \ZZ)$.
 Give an example of another closed $4$-manifold $N$ with the same homology, and use intersection theory to show that $M$ and $N$ are not homotopy-equivalent.
 :::
 
@@ -41,21 +41,21 @@ Each $A_i=B^2\times S^2$ deformation retracts onto the $S^2$ factor, while the c
 
 ::: pf-step
 The Mayer--Vietoris sequence gives
-$$\boxed{H_k(M;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&k=0,4,\\
-\mathbb Z^2,&k=2,\\
+$$\boxed{H_k(M;\ZZ)\cong\begin{cases}
+\ZZ,&k=0,4,\\
+\ZZ^2,&k=2,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 
 ::: pf-proof
-The only nonzero homology of the overlap is $H_0=H_1=H_2=H_3=\mathbb Z$. The maps $H_2(S^1\times S^2)\to H_2(A_1)\oplus H_2(A_2)$ are $(1,-1)$ up to orientation conventions, because each boundary inclusion preserves the $S^2$ fiber class (the rotation $R_\theta$ has degree $1$ on $S^2$). Thus its cokernel is $\mathbb Z$, while exactness at the adjacent $H_1$ term contributes one further free generator to $H_2(M)$; the $H_3$ overlap produces $H_4(M)\cong\mathbb Z$, and all odd-dimensional homology vanishes. Equivalently, this is the standard homology calculation for an oriented $S^2$-bundle over $S^2$.
+The only nonzero homology of the overlap is $H_0=H_1=H_2=H_3=\ZZ$. The maps $H_2(S^1\times S^2)\to H_2(A_1)\oplus H_2(A_2)$ are $(1,-1)$ up to orientation conventions, because each boundary inclusion preserves the $S^2$ fiber class (the rotation $R_\theta$ has degree $1$ on $S^2$). Thus its cokernel is $\ZZ$, while exactness at the adjacent $H_1$ term contributes one further free generator to $H_2(M)$; the $H_3$ overlap produces $H_4(M)\cong\ZZ$, and all odd-dimensional homology vanishes. Equivalently, this is the standard homology calculation for an oriented $S^2$-bundle over $S^2$.
 :::
 
 :::
 
 ::: pf-step
 The clutching loop $\theta\mapsto R_\theta$ represents the nontrivial element of
-$$\pi_1(SO(3))\cong\mathbb Z/2,$$
+$$\pi_1(SO(3))\cong\ZZ/2,$$
 so $M$ is the nontrivial oriented $S^2$-bundle over $S^2$.
 
 ::: pf-proof
@@ -70,7 +70,7 @@ $$Q_M\cong\begin{pmatrix}1&0\\0&-1\end{pmatrix},$$
 which is odd.
 
 ::: pf-proof
-The two oriented $S^2$-bundles over $S^2$ are classified by $\pi_1(SO(3))\cong\mathbb Z/2$. The nontrivial bundle is the first Hirzebruch surface, diffeomorphic to $\mathbb{CP}^2\#\overline{\mathbb{CP}}^{\,2}$; its standard exceptional and hyperplane classes give the displayed form.
+The two oriented $S^2$-bundles over $S^2$ are classified by $\pi_1(SO(3))\cong\ZZ/2$. The nontrivial bundle is the first Hirzebruch surface, diffeomorphic to $\mathbb{CP}^2\#\overline{\mathbb{CP}}^{\,2}$; its standard exceptional and hyperplane classes give the displayed form.
 :::
 
 :::

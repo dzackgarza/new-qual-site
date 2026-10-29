@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\phi:\mathbb{R}\to\mathbb{R}$ be a continuous function with compact support.
+Let $\phi:\RR\to\RR$ be a continuous function with compact support.
 
 a. Prove there is a constant $A$ such that $$||f*\phi||_{L^q} \le A||f||_{L^p} \quad \text{for all } 1\le p\le q\le\infty \quad \text{and all } f\in L^p.$$ If you use Young's convolution inequality you should prove it.
 
@@ -94,7 +94,7 @@ Thus
 \|f\|_p^{1-p/r}
 \|g\|_a^{1-a/r}
 \left(
-\int_{\mathbb R}|f(x-y)|^p|g(y)|^a\,dy
+\int_{\RR}|f(x-y)|^p|g(y)|^a\,dy
 \right)^{1/r}.
 \]
 Raise to the $r$th power and integrate in $x$.
@@ -105,13 +105,13 @@ Tonelli's theorem gives
 &\le
 \|f\|_p^{r-p}
 \|g\|_a^{r-a}
-\int_{\mathbb R}\int_{\mathbb R}
+\int_{\RR}\int_{\RR}
 |f(x-y)|^p|g(y)|^a\,dy\,dx\\
 &=
 \|f\|_p^{r-p}
 \|g\|_a^{r-a}
-\left(\int_{\mathbb R}|f(t)|^p\,dt\right)
-\left(\int_{\mathbb R}|g(y)|^a\,dy\right)\\
+\left(\int_{\RR}|f(t)|^p\,dt\right)
+\left(\int_{\RR}|g(y)|^a\,dy\right)\\
 &=
 \|f\|_p^r\|g\|_a^r.
 \end{aligned}
@@ -127,7 +127,7 @@ For every $x$, Hölder's inequality directly gives
 \[
 \begin{aligned}
 |f*g(x)|
-&\le\int_{\mathbb R}|f(x-y)||g(y)|\,dy\\
+&\le\int_{\RR}|f(x-y)||g(y)|\,dy\\
 &\le\|f(x-\cdot)\|_p\|g\|_a\\
 &=\|f\|_p\|g\|_a.
 \end{aligned}
@@ -245,13 +245,13 @@ y^{-\alpha},&y\ge10,\\
 \]
 Since $\alpha p>1$,
 \[
-f\in L^p(\mathbb R).
+f\in L^p(\RR).
 \]
 For every $x>100$,
 \[
 \begin{aligned}
 (f*\phi)(x)
-&=\int_{\mathbb R}f(x-y)\phi(y)\,dy\\
+&=\int_{\RR}f(x-y)\phi(y)\,dy\\
 &\ge\int_0^1f(x-y)\,dy\\
 &=\int_{x-1}^x t^{-\alpha}\,dt\\
 &\ge x^{-\alpha}.
@@ -269,10 +269,10 @@ f\equiv1.
 \]
 Then $f\in L^\infty$ and
 \[
-(f*\phi)(x)=\int_{\mathbb R}\phi(y)\,dy=:c>0
+(f*\phi)(x)=\int_{\RR}\phi(y)\,dy=:c>0
 \]
 for every $x$.
-Thus $f*\phi$ is a nonzero constant and hence does not belong to $L^q(\mathbb R)$.
+Thus $f*\phi$ is a nonzero constant and hence does not belong to $L^q(\RR)$.
 This proves that no analogous general estimate can hold for $p>q$.
 
 :::

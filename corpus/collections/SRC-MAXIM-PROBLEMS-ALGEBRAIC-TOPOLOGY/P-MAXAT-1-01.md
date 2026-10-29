@@ -120,7 +120,7 @@ If $n$ is even, step [](#s1-4){.pf-ref} gives $\chi(M)=0$. If $n$ is odd, it giv
 \[
 \chi(M)=2\chi(W).
 \]
-In either case $\chi(M)\in2\mathbb Z$.
+In either case $\chi(M)\in2\ZZ$.
 
 :::
 

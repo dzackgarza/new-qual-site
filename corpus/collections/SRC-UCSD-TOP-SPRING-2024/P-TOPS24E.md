@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS24E
 kind: problem
-title: $\operatorname{Tor}(M,\mathbb Z_2)$ for a presented abelian group
+title: $\operatorname{Tor}(M,\ZZ_2)$ for a presented abelian group
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $M$ be the abelian group given by the following presentation with three generators and three relators: $\langle a, b, c : 2a + 3b + 5c,\ 3a + 5b + 2c,\ 5a + 2b + 3c \rangle$.
-Compute $\operatorname{Tor}(M, \mathbb{Z}_2)$.
+Compute $\operatorname{Tor}(M, \ZZ_2)$.
 :::
 
 ::: {.solution}
@@ -44,7 +44,7 @@ The gcd of all entries is $1$, so the first invariant factor is $1$. The $2\time
 
 ::: pf-step
 Therefore
-$$M\cong\mathbb Z/70.$$
+$$M\cong\ZZ/70.$$
 
 ::: pf-proof
 The presented abelian group is the cokernel of $A$, and its decomposition is read from the Smith normal form in step [](#smith-normal-form){.pf-ref}.
@@ -54,12 +54,12 @@ The presented abelian group is the cokernel of $A$, and its decomposition is rea
 
 ::: pf-step
 For cyclic groups,
-$$\operatorname{Tor}_1^{\mathbb Z}(\mathbb Z/n,\mathbb Z/m)\cong\mathbb Z/\gcd(n,m).$$
+$$\operatorname{Tor}_1^{\ZZ}(\ZZ/n,\ZZ/m)\cong\ZZ/\gcd(n,m).$$
 Hence
-$$\boxed{\operatorname{Tor}(M,\mathbb Z_2)\cong\mathbb Z/2.}$$
+$$\boxed{\operatorname{Tor}(M,\ZZ_2)\cong\ZZ/2.}$$
 
 ::: pf-proof
-Apply the standard free resolution of $\mathbb Z/n$ and take $n=70,m=2$.
+Apply the standard free resolution of $\ZZ/n$ and take $n=70,m=2$.
 :::
 
 :::

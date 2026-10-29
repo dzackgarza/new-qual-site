@@ -89,7 +89,7 @@ The wedge $X$ is a finite simplicial complex after choosing compatible triangula
 :::
 
 ::: pf-step
-Embed this finite complex piecewise-linearly in some Euclidean space $\mathbb R^N$ of sufficiently large dimension.
+Embed this finite complex piecewise-linearly in some Euclidean space $\RR^N$ of sufficiently large dimension.
 :::
 
 ::: pf-step

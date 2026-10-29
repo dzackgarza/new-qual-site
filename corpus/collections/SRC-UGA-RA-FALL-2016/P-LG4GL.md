@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies the equality
 \[
-\lim _{n \to \infty} \left(\int _{\mathbb{R}} \frac{|\phi(x)|^{n}}{1+x^{2}} \, dx \right) ^ {\frac{1}{n}} 
+\lim _{n \to \infty} \left(\int _{\RR} \frac{|\phi(x)|^{n}}{1+x^{2}} \, dx \right) ^ {\frac{1}{n}} 
 = \norm{\phi}_\infty.
 \]
 :::
@@ -36,13 +36,13 @@ Put
 \[
 M:=\|\phi\|_\infty,
 \qquad
-A_n:=\left(\int_{\mathbb R}\frac{|\phi(x)|^n}{1+x^2}\,dx\right)^{1/n}.
+A_n:=\left(\int_{\RR}\frac{|\phi(x)|^n}{1+x^2}\,dx\right)^{1/n}.
 \]
 If $M=0$, then $\phi=0$ a.e. and $A_n=0$ for every $n$. Assume $M>0$.
 
 Since $|\phi|\le M$ a.e.,
 \[
-A_n^n\le M^n\int_{\mathbb R}\frac{dx}{1+x^2}=\pi M^n,
+A_n^n\le M^n\int_{\RR}\frac{dx}{1+x^2}=\pi M^n,
 \]
 so
 \[

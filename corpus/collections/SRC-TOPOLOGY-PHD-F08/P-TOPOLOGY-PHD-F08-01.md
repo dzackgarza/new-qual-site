@@ -31,7 +31,7 @@ audit:
 
 ::: {.problem}
 Prove that in a metric space a compact subset is closed and bounded.
-If you cannot do it for a general metric space do it for $\mathbb R^n$.
+If you cannot do it for a general metric space do it for $\RR^n$.
 :::
 
 ::: {.solution}
@@ -47,7 +47,7 @@ If $K=\varnothing$, it is bounded trivially.
 Assume $K\ne\varnothing$ and choose $x_0\in X$.
 The family
 \[
-\{B(x_0,n):n\in\mathbb N,\ n\ge1\}
+\{B(x_0,n):n\in\NN,\ n\ge1\}
 \]
 is an open cover of $K$, since every distance $d(x_0,x)$ is a finite real number.
 By compactness, finitely many of these balls cover $K$.

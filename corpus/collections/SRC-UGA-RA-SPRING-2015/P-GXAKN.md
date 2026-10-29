@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GXAKN
 kind: problem
-title: $x^{1/3}(1+xy)^{-3/2}$ on $0\leq x\leq y$ is in $L^1(\mathbb R^2)$
+title: $x^{1/3}(1+xy)^{-3/2}$ on $0\leq x\leq y$ is in $L^1(\RR^2)$
 classification:
   areas:
   - real-analysis
@@ -34,7 +34,7 @@ f(x,y)=
 0,&\text{otherwise}.
 \end{cases}
 \]
-Carefully show that $f\in L^1(\mathbb R^2)$.
+Carefully show that $f\in L^1(\RR^2)$.
 :::
 
 ::: {.solution}
@@ -49,7 +49,7 @@ Use Tonelli and compute the inner integral.
 
 The function $f$ is nonnegative and measurable, so Tonelli's theorem gives
 \[
-\int_{\mathbb R^2}|f|\,d(x,y)
+\int_{\RR^2}|f|\,d(x,y)
 =\int_0^\infty\int_x^\infty
 x^{1/3}(1+xy)^{-3/2}\,dy\,dx.
 \]
@@ -62,7 +62,7 @@ For fixed $x>0$,
 \]
 Hence
 \[
-\int_{\mathbb R^2}|f|
+\int_{\RR^2}|f|
 =2\int_0^\infty\frac{dx}{x^{2/3}\sqrt{1+x^2}}.
 \]
 
@@ -100,9 +100,9 @@ and
 \]
 Therefore
 \[
-\boxed{\int_{\mathbb R^2}|f|<\infty,}
+\boxed{\int_{\RR^2}|f|<\infty,}
 \]
-so $f\in L^1(\mathbb R^2)$.
+so $f\in L^1(\RR^2)$.
 
 :::
 

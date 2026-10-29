@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a sequence of functions $f_n:\mathbb R^3\to\mathbb R$ such that
+Let $(f_n)$ be a sequence of functions $f_n:\RR^3\to\RR$ such that
 \[
 \sup_n\|f_n\|_{L^2}<\infty.
 \]
-Show that if $f_n$ converges almost everywhere to a function $f:\mathbb R^3\to\mathbb R$, then
+Show that if $f_n$ converges almost everywhere to a function $f:\RR^3\to\RR$, then
 \[
-\int_{\mathbb R^3}\left(|f_n|^2-|f_n-f|^2-|f|^2\right)\,dx\longrightarrow0.
+\int_{\RR^3}\left(|f_n|^2-|f_n-f|^2-|f|^2\right)\,dx\longrightarrow0.
 \]
 :::
 

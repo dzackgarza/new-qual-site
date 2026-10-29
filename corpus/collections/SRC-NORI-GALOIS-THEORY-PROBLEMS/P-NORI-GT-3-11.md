@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-11
 kind: problem
-title: Quartics over $\mathbb Q$ with a quadratic subfield have no cubic factor mod odd primes
+title: Quartics over $\QQ$ with a quadratic subfield have no cubic factor mod odd primes
 classification:
   areas: [algebra]
   topics: []
@@ -24,24 +24,24 @@ audit:
 ---
 
 ::: {.problem}
-Let $E = \mathbb{Q}(\theta)$ be a degree four extension of $\mathbb{Q}$ that contains a quadratic extension of $\mathbb{Q}$, and let $f$ be the monic minimal polynomial of $\theta$, written (by Problem 3.10) as $f = Q^2 - cP^2$ where $c \in \mathbb{Q}$ and $P, Q \in \mathbb{Q}[X]$ with $Q$ monic of degree two and $\deg(P) < 2$.
-Assume that $f \in \mathbb{Z}[X]$.
+Let $E = \QQ(\theta)$ be a degree four extension of $\QQ$ that contains a quadratic extension of $\QQ$, and let $f$ be the monic minimal polynomial of $\theta$, written (by Problem 3.10) as $f = Q^2 - cP^2$ where $c \in \QQ$ and $P, Q \in \QQ[X]$ with $Q$ monic of degree two and $\deg(P) < 2$.
+Assume that $f \in \ZZ[X]$.
 Prove that we may choose $P, Q, c$ satisfying
 
 (i) $c$ is a square-free integer, and
 
-(ii) the coefficients of $P$ and $Q$ lie in $R = \{\frac{m}{2^n} : m \in \mathbb{Z}, n \geq 0\}$.
+(ii) the coefficients of $P$ and $Q$ lie in $R = \{\frac{m}{2^n} : m \in \ZZ, n \geq 0\}$.
 
 Deduce that if $p$ is an odd prime, then $f$ modulo $p$, i.e. its image $\overline{f} \in \mathbb{F}_p[X]$ does not have an irreducible factor of degree $3$.
 
-(this was an example I gave on Wednesday first week (without a proof) of a degree four extension of $\mathbb{Q}$ that does not contain a quadratic extension)
+(this was an example I gave on Wednesday first week (without a proof) of a degree four extension of $\QQ$ that does not contain a quadratic extension)
 :::
 
 ::: {.hint}
 Hint for part (ii).
-If $Q(X) = X^2 + uX + v$, on examining the coefficient of $X^3$ in $f$, we see that $2u \in \mathbb{Z}$.
+If $Q(X) = X^2 + uX + v$, on examining the coefficient of $X^3$ in $f$, we see that $2u \in \ZZ$.
 Thus $u \in R$.
-Now $f \in \mathbb{Z}[X] \subset R[X]$.
+Now $f \in \ZZ[X] \subset R[X]$.
 It follows that $f(X - \frac{u}{2}) \in R[X]$.
 We put $\widehat{f}(X) = f(X - \frac{u}{2})$, $\widehat{Q}(X) = Q(X - \frac{u}{2})$, $\widehat{P}(X) = P(X - \frac{u}{2})$.
 We observe $\widehat{f} = \widehat{Q}^2 - c\widehat{P}^2$.
@@ -55,7 +55,7 @@ By examining the leading coefficient and constant coefficient of $\widehat{P}^2$
 It follows that $P, Q$ belong to $R[X]$, because $P(X) = \widehat{P}(X + \frac{u}{2})$ and $Q(X) = \widehat{Q}(X + \frac{u}{2})$.
 
 Case 2: $\widehat{Q}(0) \notin R$.
-In which case, $\widehat{Q}(0) = \frac{a}{b}$ where $a, b \in \mathbb{Z}$, and we have an odd prime $p$ that does not divide $a$, but divides $b$.
+In which case, $\widehat{Q}(0) = \frac{a}{b}$ where $a, b \in \ZZ$, and we have an odd prime $p$ that does not divide $a$, but divides $b$.
 Let $k$ be the highest power of $p$ that divides $b$.
 Let $\widehat{P} = r_1 X + r_0$ and let $v_1$ and $v_0$ be the highest powers of $p$ that divide the denominator of $r_1$ and $r_0$ (when expressed as reduced fractions).
 The equation $\widehat{f}(0) = \widehat{Q}(0)^2 - c\widehat{P}(0)^2$ shows that $p$ does not divide $c$, and also that $k = 2v_0$.

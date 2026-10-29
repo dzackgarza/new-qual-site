@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f _ { t } ( z )$ be a family of entire functions depending analytically on $t \in \Delta$ , where $\Delta$ is the open unit disk in C. Suppose that for all $t , f _ { t } ( z )$ is non-vanishing on the unit circle $S ^ { 1 }$ in $\mathbb { C } .$ Prove that for each $k \geq 0$ ,
+Let $f _ { t } ( z )$ be a family of entire functions depending analytically on $t \in \Delta$ , where $\Delta$ is the open unit disk in C. Suppose that for all $t , f _ { t } ( z )$ is non-vanishing on the unit circle $S ^ { 1 }$ in $\CC .$ Prove that for each $k \geq 0$ ,
 
 $$
 N _ { k } ( t ) = \sum _ { | z | < 1 : f _ { t } ( z ) = 0 } z ^ { k }

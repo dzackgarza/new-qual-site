@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $A\in M_n(\mathbb R)$ is self-adjoint and its only eigenvalues are $0$ and $1$. Prove that
+Suppose $A\in M_n(\RR)$ is self-adjoint and its only eigenvalues are $0$ and $1$. Prove that
 \[
 A^2=A.
 \]
@@ -29,7 +29,7 @@ Carefully state any major theorem used in the argument.
 ::: {.pf-step #s1-1}
 
 The real spectral theorem states that every self-adjoint matrix
-$A\in M_n(\mathbb R)$ is orthogonally diagonalizable: there is an orthogonal
+$A\in M_n(\RR)$ is orthogonally diagonalizable: there is an orthogonal
 matrix $Q$ and a real diagonal matrix $D$ such that
 \[
 A=QDQ^T,

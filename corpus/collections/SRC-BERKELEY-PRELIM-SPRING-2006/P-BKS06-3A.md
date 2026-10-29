@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $S = \{ ( x _ { 1 } , \ldots , x _ { n } ) \in \mathbb { R } ^ { n } \mid x _ { 1 } + \cdot \cdot \cdot + x _ { n } = 0 \}$ . Find (with justification) the $n \times n$ matrix P of the orthogonal projection from $\mathbb { R } ^ { n }$ onto S. That is, P has image S, and $P ^ { 2 } = P = P ^ { T }$
+Let $S = \{ ( x _ { 1 } , \ldots , x _ { n } ) \in \RR ^ { n } \mid x _ { 1 } + \cdot \cdot \cdot + x _ { n } = 0 \}$ . Find (with justification) the $n \times n$ matrix P of the orthogonal projection from $\RR ^ { n }$ onto S. That is, P has image S, and $P ^ { 2 } = P = P ^ { T }$
 :::
 
 ::: {.solution}

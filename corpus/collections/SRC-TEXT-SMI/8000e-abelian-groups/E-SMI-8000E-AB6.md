@@ -37,13 +37,13 @@ Prove that $(\QQ,+)$ is not a free abelian group, i.e. is not isomorphic to a co
 
 ::: {.pf-step #s1}
 
-Every group homomorphism $\mathbb Q\to\mathbb Z$ is zero.
+Every group homomorphism $\QQ\to\ZZ$ is zero.
 
 ::: pf-proof
 
 Let
 $$
-f:\mathbb Q\longrightarrow\mathbb Z
+f:\QQ\longrightarrow\ZZ
 $$
 be a homomorphism of additive groups and put
 $$
@@ -68,13 +68,13 @@ Now for any rational $a/b$ with $b>0$,
 $$
 b f(a/b)=f(a)=a f(1)=0.
 $$
-Since $\mathbb Z$ is torsion-free,
+Since $\ZZ$ is torsion-free,
 $$
 f(a/b)=0.
 $$
 Therefore
 $$
-\boxed{\operatorname{Hom}(\mathbb Q,\mathbb Z)=0.}
+\boxed{\operatorname{Hom}(\QQ,\ZZ)=0.}
 $$
 
 :::
@@ -83,17 +83,17 @@ $$
 
 ::: {.pf-step #s2}
 
-Every nonzero free abelian group admits a nonzero homomorphism to $\mathbb Z$.
+Every nonzero free abelian group admits a nonzero homomorphism to $\ZZ$.
 
 ::: pf-proof
 
 Let
 $$
-G=\bigoplus_{i\in I}\mathbb Z e_i
+G=\bigoplus_{i\in I}\ZZ e_i
 $$
 be a nonzero free abelian group. Choose one basis element $e_{i_0}$. Define
 $$
-\pi_{i_0}:G\longrightarrow\mathbb Z
+\pi_{i_0}:G\longrightarrow\ZZ
 $$
 by taking the coefficient of $e_{i_0}$:
 $$
@@ -108,7 +108,7 @@ so it is nonzero. Hence
 $$
 G\ne0\text{ free abelian}
 \quad\Longrightarrow\quad
-\operatorname{Hom}(G,\mathbb Z)\ne0.
+\operatorname{Hom}(G,\ZZ)\ne0.
 $$
 This works for finite or infinite bases alike.
 
@@ -118,18 +118,18 @@ This works for finite or infinite bases alike.
 
 ::: pf-step
 
-Conclude that $(\mathbb Q,+)$ is not free abelian.
+Conclude that $(\QQ,+)$ is not free abelian.
 
 ::: pf-proof
 
-The group $\mathbb Q$ is nonzero. If it were free abelian, step [](#s2){.pf-ref} would
+The group $\QQ$ is nonzero. If it were free abelian, step [](#s2){.pf-ref} would
 give a nonzero homomorphism
 $$
-\mathbb Q\longrightarrow\mathbb Z,
+\QQ\longrightarrow\ZZ,
 $$
 contradicting step [](#s1){.pf-ref}. Therefore
 $$
-\boxed{(\mathbb Q,+)\text{ is not a free abelian group}.}
+\boxed{(\QQ,+)\text{ is not a free abelian group}.}
 $$
 
 :::

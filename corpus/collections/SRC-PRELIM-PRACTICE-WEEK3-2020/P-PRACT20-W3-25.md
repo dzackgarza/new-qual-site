@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-For $a , b > 0$ and $n \in \mathbb { N }$ , define
+For $a , b > 0$ and $n \in \NN$ , define
 
 $$
 I _ { n } ( a , b ) = \int _ { 0 } ^ { \pi / 2 } \frac { d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n } } .

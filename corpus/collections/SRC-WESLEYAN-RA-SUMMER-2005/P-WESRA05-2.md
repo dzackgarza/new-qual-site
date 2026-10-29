@@ -22,7 +22,7 @@ Let $X=[0,1]$, let $\mathcal A$ be the Borel sigma-algebra, and let $\lambda$ be
 
 1. Compute the measures of
    \[
-   [1/3,2/5],\qquad \mathbb Q\cap[0,1],\qquad (\mathbb R\setminus\mathbb Q)\cap[0,1],\qquad \overline{\mathbb Q}^{\,\mathrm{alg}}\cap[0,1],
+   [1/3,2/5],\qquad \QQ\cap[0,1],\qquad (\RR\setminus\QQ)\cap[0,1],\qquad \overline{\QQ}^{\,\mathrm{alg}}\cap[0,1],
    \]
    where the last set means the algebraic numbers in $[0,1]$.
 
@@ -50,13 +50,13 @@ The interval has length
 The rationals and the algebraic numbers are countable, hence have Lebesgue measure zero.
 Therefore
 \[
-\lambda(\mathbb Q\cap[0,1])=0,
+\lambda(\QQ\cap[0,1])=0,
 \qquad
 \lambda(\{\text{algebraic numbers in }[0,1]\})=0.
 \]
 Since $[0,1]$ has measure $1$ and the rationals have measure zero,
 \[
-\lambda((\mathbb R\setminus\mathbb Q)\cap[0,1])=1.
+\lambda((\RR\setminus\QQ)\cap[0,1])=1.
 \]
 
 :::

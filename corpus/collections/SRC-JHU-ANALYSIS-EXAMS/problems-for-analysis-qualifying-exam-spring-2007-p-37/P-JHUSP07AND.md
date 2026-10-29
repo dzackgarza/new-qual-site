@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP07AND
 kind: problem
-title: A surjective holomorphic map from the disk onto $\mathbb C$
+title: A surjective holomorphic map from the disk onto $\CC$
 classification:
   areas:
   - complex-analysis
@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4) Does there exist a surjective holomorphic map $f : D \to \mathbb { C }$ from the unit disc to the whole complex plane? Prove that your answer is correct.
+4) Does there exist a surjective holomorphic map $f : D \to \CC$ from the unit disc to the whole complex plane? Prove that your answer is correct.
 :::
 
 ::: {.solution}
@@ -62,16 +62,16 @@ Thus $T$ maps the disk onto $H=\{t:\operatorname{Re}t>0\}$.
 
 ::: pf-step
 
-The polynomial $p(t)=t^2-t$ maps $H$ onto $\mathbb C$.
+The polynomial $p(t)=t^2-t$ maps $H$ onto $\CC$.
 
 ::: pf-proof
 
-Given any $w\in\mathbb C$, the equation
+Given any $w\in\CC$, the equation
 $t^2-t-w=0$ has two complex roots $t_1,t_2$, counted
 with multiplicity, and $t_1+t_2=1$ by the quadratic
 formula. Their real parts sum to one, so at least one
 has real part at least $1/2$. That root belongs to $H$
-and satisfies $p(t)=w$. Since $w$ was arbitrary, $p(H)=\mathbb C$.
+and satisfies $p(t)=w$. Since $w$ was arbitrary, $p(H)=\CC$.
 
 :::
 

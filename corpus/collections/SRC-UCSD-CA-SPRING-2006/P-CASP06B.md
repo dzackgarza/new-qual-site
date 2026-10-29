@@ -57,7 +57,7 @@ $\log T$ and letting $T\to\infty$ yields
 \int_{R_1\le|z|\le R}\Delta u\,dA=0.
 \]
 Since $R_1,R$ are arbitrary and $\Delta u\ge0$ is continuous, we get
-$\Delta u\equiv0$. Thus $u$ is harmonic on $\mathbb C$.
+$\Delta u\equiv0$. Thus $u$ is harmonic on $\CC$.
 
 The same growth hypothesis gives $|u(z)|=o(\log|z|)$ at infinity. Standard
 gradient estimates for harmonic functions on disks yield, for fixed $a$,

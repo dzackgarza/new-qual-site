@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-If there exists a division algebra on $\mathbb { R } ^ { n }$ , then $\mathbb { R } \mathbb { P } ^ { n - 1 }$ is orientable, hence $n = 2 ^ { r }$ , for some r.
+If there exists a division algebra on $\RR ^ { n }$ , then $\RR \mathbb { P } ^ { n - 1 }$ is orientable, hence $n = 2 ^ { r }$ , for some r.
 :::
 
 ::: {.solution}
@@ -122,7 +122,7 @@ so each $v_i$ is equivariant and descends to the quotient. The descended $n-1$ v
 
 The existence of the division-algebra multiplication also gives a nonsingular bilinear map
 \[
-\mu:\mathbb R^n\times\mathbb R^n\to\mathbb R^n,
+\mu:\RR^n\times\RR^n\to\RR^n,
 \qquad
 \mu(x,y)=xy,
 \]
@@ -141,14 +141,14 @@ Bilinearity is part of the real algebra structure. The defining division propert
 
 By the classical Hopf--Stiefel theorem on nonsingular bilinear maps, such a map
 \[
-\mathbb R^n\times\mathbb R^n\to\mathbb R^n
+\RR^n\times\RR^n\to\RR^n
 \]
 can exist only if $n$ is a power of $2$.
 
 
 ::: pf-proof
 
-The Hopf--Stiefel obstruction says that a nonsingular bilinear map $\mathbb R^r\times\mathbb R^s\to\mathbb R^m$ forces the binomial coefficients in the formal inverse of $(1+x)^m$ to satisfy the corresponding mod-$2$ truncation obstruction. In the square case $r=s=m=n$, this is equivalent to the absence of a $1$ in the binary expansion of $n$ below its highest nonzero bit; hence
+The Hopf--Stiefel obstruction says that a nonsingular bilinear map $\RR^r\times\RR^s\to\RR^m$ forces the binomial coefficients in the formal inverse of $(1+x)^m$ to satisfy the corresponding mod-$2$ truncation obstruction. In the square case $r=s=m=n$, this is equivalent to the absence of a $1$ in the binary expansion of $n$ below its highest nonzero bit; hence
 \[
 n=2^r
 \]

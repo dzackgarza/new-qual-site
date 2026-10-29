@@ -39,7 +39,7 @@ There is no nonzero $v$ such that $Tv=v$.
 
 ::: pf-proof
 
-If $Tv=v$, then $Nv=2v$. Consequently $0=N^2v=2Nv=4v$, forcing $v=0$ over $\mathbb C$.
+If $Tv=v$, then $Nv=2v$. Consequently $0=N^2v=2Nv=4v$, forcing $v=0$ over $\CC$.
 
 :::
 

@@ -30,7 +30,7 @@ Give an example of a surface which has exactly one singular point but is not nor
 :::
 
 ::: {.solution}
-Work over \(k=\mathbb C\). Let
+Work over \(k=\CC\). Let
 \[
 A=k[s^4,s^3t,st^3,t^4]\subset k[s,t]
 \]

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a holomorphic function that maps the upper half-plane $\mathbb{C}_+$ onto the punctured unit disk $\mathbb{D} \setminus \{0\}$.
+Find a holomorphic function that maps the upper half-plane $\CC_+$ onto the punctured unit disk $\mathbb{D} \setminus \{0\}$.
 :::
 
 ::: {.solution}

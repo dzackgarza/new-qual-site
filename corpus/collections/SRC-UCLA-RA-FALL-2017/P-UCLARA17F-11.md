@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let $f:\mathbb D\to\mathbb C$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
+Problem 11. Let $f:\mathbb D\to\CC$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
 \[
 \inf\{|w|:w\notin f(\mathbb D)\}\le1,
 \]
@@ -35,12 +35,12 @@ R\coloneqq\inf\{|w|:w\notin f(\mathbb D)\}.
 
 ::: {.pf-step #s1-1}
 
-The omitted set $\mathbb C\setminus f(\mathbb D)$ is nonempty; moreover, if $R\ge1$, then $\mathbb D\subset f(\mathbb D)$.
+The omitted set $\CC\setminus f(\mathbb D)$ is nonempty; moreover, if $R\ge1$, then $\mathbb D\subset f(\mathbb D)$.
 
 
 ::: pf-proof
 
-If $f(\mathbb D)=\mathbb C$, then the inverse map $f^{-1}:\mathbb C\to\mathbb D$ is an entire bounded function. Liouville's theorem would make $f^{-1}$ constant, contradicting injectivity of $f$. Thus the omitted set is nonempty and $R$ is a finite real number.
+If $f(\mathbb D)=\CC$, then the inverse map $f^{-1}:\CC\to\mathbb D$ is an entire bounded function. Liouville's theorem would make $f^{-1}$ constant, contradicting injectivity of $f$. Thus the omitted set is nonempty and $R$ is a finite real number.
 
 If some $w\in\mathbb D$ were omitted by $f$, then $|w|<1$, so the definition of $R$ would give
 \[

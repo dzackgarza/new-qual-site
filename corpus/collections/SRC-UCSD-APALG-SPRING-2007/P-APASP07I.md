@@ -34,7 +34,7 @@ f_2=x^3+y^2+z^2-1,
 \qquad
 f_3=y^2+y+1.
 \]
-All computations are over a characteristic-zero field, and the variety below is taken in $\mathbb C^3$.
+All computations are over a characteristic-zero field, and the variety below is taken in $\CC^3$.
 
 For lexicographic order $x>y>z$, an exact Buchberger computation gives the reduced Gröbner basis
 \[
@@ -123,5 +123,5 @@ Hence $V(I)$ consists of exactly
 \[
 \boxed{8}
 \]
-points over $\mathbb C$.
+points over $\CC$.
 :::

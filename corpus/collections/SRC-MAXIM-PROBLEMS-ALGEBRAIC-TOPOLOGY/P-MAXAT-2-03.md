@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Show that $V _ { n } ( \mathbb { R } ^ { \infty } ) , V _ { n } ( \mathbb { C } ^ { \infty } ) , V _ { n } ( \mathbb { H } ^ { \infty } )$ are contractible.
+Show that $V _ { n } ( \RR ^ { \infty } ) , V _ { n } ( \CC ^ { \infty } ) , V _ { n } ( \mathbb { H } ^ { \infty } )$ are contractible.
 :::
 
 ::: {.solution}
 
-Let $\mathbb F$ denote any of $\mathbb R,\mathbb C,\mathbb H$, and write
+Let $\mathbb F$ denote any of $\RR,\CC,\mathbb H$, and write
 \[
 V_n(\mathbb F^m)
 \]
@@ -43,7 +43,7 @@ S^{d(m-n+1)-1}
 \]
 where
 \[
-d=\dim_{\mathbb R}\mathbb F\in\{1,2,4\}.
+d=\dim_{\RR}\mathbb F\in\{1,2,4\}.
 \]
 
 
@@ -134,11 +134,11 @@ By step [](#s1-4){.pf-ref} all homotopy groups vanish, and by step [](#s1-5){.pf
 
 ::: {.pf-step #s1-7}
 
-Applying step [](#s1-6){.pf-ref} to $\mathbb F=\mathbb R,\mathbb C,\mathbb H$ gives
+Applying step [](#s1-6){.pf-ref} to $\mathbb F=\RR,\CC,\mathbb H$ gives
 \[
 \boxed{
-V_n(\mathbb R^\infty),\quad
-V_n(\mathbb C^\infty),\quad
+V_n(\RR^\infty),\quad
+V_n(\CC^\infty),\quad
 V_n(\mathbb H^\infty)
 \text{ are contractible}.}
 \]

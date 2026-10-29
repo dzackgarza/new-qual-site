@@ -27,7 +27,7 @@ Define
 \[
 f(x)=
 \begin{cases}
-1,&x=1/n\text{ for some }n\in\mathbb N,\\
+1,&x=1/n\text{ for some }n\in\NN,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -40,7 +40,7 @@ The function $f$ is discontinuous at every point
 \[
 \frac1n,
 \qquad
-n\in\mathbb N.
+n\in\NN.
 \]
 
 
@@ -52,7 +52,7 @@ f(1/n)=1.
 \]
 Every neighborhood of $1/n$ contains points that are not of the form $1/m$, because the set
 \[
-\{1/m:m\in\mathbb N\}
+\{1/m:m\in\NN\}
 \]
 has empty interior. At each such nearby point, $f=0$. Therefore values of $f$ arbitrarily close to $1/n$ differ from $f(1/n)$ by $1$, so $f$ is not continuous at $1/n$.
 

@@ -101,7 +101,7 @@ S_\Omega
 lies below a countable ordinal stage.
 Locally the long ray is homeomorphic to an interval in
 \[
-\mathbb R
+\RR
 \]
 (with a half-interval at its initial endpoint).
 Therefore every point has a countable neighborhood base.
@@ -241,7 +241,7 @@ Hence $X_2$ is normal, Hausdorff, first countable, neither metrizable nor connec
 For item (3), take
 \[
 \boxed{
-X_3=\mathbb R
+X_3=\RR
 }
 \]
 with its usual topology.
@@ -251,7 +251,7 @@ with its usual topology.
 
 The Euclidean metric makes
 \[
-\mathbb R
+\RR
 \]
 metrizable.
 Every metric space is first countable.
@@ -260,13 +260,13 @@ A countable basis is given by intervals
 \[
 (p,q),
 \qquad
-p,q\in\mathbb Q,
+p,q\in\QQ,
 \quad
 p<q.
 \]
 Thus
 \[
-\mathbb R
+\RR
 \]
 is also second countable.
 
@@ -283,12 +283,12 @@ X_4
 =
 \overline{S_\Omega}
 \sqcup
-\mathbb N,
+\NN,
 }
 \]
 where
 \[
-\mathbb N
+\NN
 \]
 has the discrete topology.
 
@@ -316,7 +316,7 @@ The family
 \right\}
 \cup
 \left\{
-\{n\}:n\in\mathbb N
+\{n\}:n\in\NN
 \right\}
 \]
 is an open cover of $X_4$ with no finite subcover.
@@ -333,8 +333,8 @@ Thus the four requested examples are
 \begin{array}{c|l}
 1&\overline{S_\Omega},\\
 2&S_\Omega\sqcup S_\Omega,\\
-3&\mathbb R,\\
-4&\overline{S_\Omega}\sqcup\mathbb N.
+3&\RR,\\
+4&\overline{S_\Omega}\sqcup\NN.
 \end{array}
 }
 \]

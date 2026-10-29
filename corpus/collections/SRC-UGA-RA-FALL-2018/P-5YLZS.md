@@ -15,11 +15,11 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $f(x)$ and $x f(x)$ are integrable on $\mathbb{R}$ ($f, xf \in L^1(\mathbb{R})$). Define $F: \mathbb{R} \to \mathbb{R}$ by
+Suppose $f(x)$ and $x f(x)$ are integrable on $\RR$ ($f, xf \in L^1(\RR)$). Define $F: \RR \to \RR$ by
 $$
 F(t) = \int_{-\infty}^{\infty} f(x) \cos(x t) \, dx.
 $$
-Show that $F$ is differentiable on $\mathbb{R}$ and that
+Show that $F$ is differentiable on $\RR$ and that
 $$
 F'(t) = -\int_{-\infty}^{\infty} x f(x) \sin(x t) \, dx.
 $$
@@ -36,7 +36,7 @@ Difference quotient representation:
 ::: pf-proof
 
 ::: pf-step
-Fix $t \in \mathbb{R}$ and let $h \in \mathbb{R} \setminus \{0\}$.
+Fix $t \in \RR$ and let $h \in \RR \setminus \{0\}$.
 
 :::
 
@@ -58,13 +58,13 @@ Pointwise limit of $g_h(x)$ as $h \to 0$:
 ::: pf-proof
 
 ::: pf-step
-For each fixed $x \in \mathbb{R}$, the function $u(t) = \cos(xt)$ is differentiable with derivative $u'(t) = -x \sin(xt)$.
+For each fixed $x \in \RR$, the function $u(t) = \cos(xt)$ is differentiable with derivative $u'(t) = -x \sin(xt)$.
 
 :::
 
 ::: pf-step
 Thus, by definition of the derivative:
-$$\lim_{h \to 0} g_h(x) = f(x) \lim_{h \to 0} \left( \frac{\cos(x(t + h)) - \cos(xt)}{h} \right) = -x f(x) \sin(xt) \quad \text{for all } x \in \mathbb{R}.$$
+$$\lim_{h \to 0} g_h(x) = f(x) \lim_{h \to 0} \left( \frac{\cos(x(t + h)) - \cos(xt)}{h} \right) = -x f(x) \sin(xt) \quad \text{for all } x \in \RR.$$
 
 :::
 
@@ -78,7 +78,7 @@ Dominated bound:
 ::: pf-proof
 
 ::: pf-step
-For each $x \in \mathbb{R}$ and $h \ne 0$, apply the Mean Value Theorem to $t \mapsto \cos(xt)$ on the interval between $t$ and $t + h$.
+For each $x \in \RR$ and $h \ne 0$, apply the Mean Value Theorem to $t \mapsto \cos(xt)$ on the interval between $t$ and $t + h$.
 
 :::
 
@@ -95,7 +95,7 @@ $$|g_h(x)| = |f(x)| \cdot |{-x \sin(x \xi_h)}| = |x f(x)| |\sin(x \xi_h)| \le |x
 :::
 
 ::: pf-step
-By hypothesis, $g(x) = |x f(x)| \in L^1(\mathbb{R})$ is an integrable function that dominates $|g_h(x)|$ for all $h \ne 0$.
+By hypothesis, $g(x) = |x f(x)| \in L^1(\RR)$ is an integrable function that dominates $|g_h(x)|$ for all $h \ne 0$.
 
 :::
 

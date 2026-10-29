@@ -193,7 +193,7 @@ Both cases yield a contradiction.
 
 ::: pf-proof
 
-divisibility in $\mathbb{Z}$.
+divisibility in $\ZZ$.
 
 :::
 

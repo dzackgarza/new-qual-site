@@ -41,7 +41,7 @@ Let $r=\operatorname{rank}A$ and choose a singular value decomposition
 \[
 A=U\Sigma V^H,
 \]
-where $U\in\mathbb C^{m\times m}$ and $V\in\mathbb C^{n\times n}$ are unitary and
+where $U\in\CC^{m\times m}$ and $V\in\CC^{n\times n}$ are unitary and
 \[
 \Sigma=
 \begin{pmatrix}
@@ -108,7 +108,7 @@ For the SVD above,
 \[
 A^\dagger=V\Sigma^\dagger U^H,
 \]
-where $\Sigma^\dagger\in\mathbb C^{n\times m}$ has diagonal entries
+where $\Sigma^\dagger\in\CC^{n\times m}$ has diagonal entries
 \[
 \sigma_1^{-1},\ldots,\sigma_r^{-1}
 \]

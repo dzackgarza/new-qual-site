@@ -89,7 +89,7 @@ Moreover, Alexander duality gives
 \[
 \widetilde H_j(S^n-S^k)\cong
 \begin{cases}
-\mathbb Z,&j=n-k-1,\\
+\ZZ,&j=n-k-1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -112,7 +112,7 @@ for every $j$.
 
 ::: pf-proof
 
-Apply the Mayer--Vietoris sequence simultaneously in degrees $j$ and $j+1$. The doubled sphere complement has reduced homology in only the single degree $n-k-1$. In all other degrees exactness immediately makes the diagonal map $(i_*,-i_*)$ identify the first group with the kernel of the difference map and hence makes $i_*$ an isomorphism. In the exceptional degree and the adjacent degree, the same conclusion follows from exactness together with the fact that the connecting morphism supplies the unique $\mathbb Z$ class of the sphere complement. Equivalently, this is the standard Mayer--Vietoris proof of the relative Alexander duality statement for a properly embedded disk pair; its relative group
+Apply the Mayer--Vietoris sequence simultaneously in degrees $j$ and $j+1$. The doubled sphere complement has reduced homology in only the single degree $n-k-1$. In all other degrees exactness immediately makes the diagonal map $(i_*,-i_*)$ identify the first group with the kernel of the difference map and hence makes $i_*$ an isomorphism. In the exceptional degree and the adjacent degree, the same conclusion follows from exactness together with the fact that the connecting morphism supplies the unique $\ZZ$ class of the sphere complement. Equivalently, this is the standard Mayer--Vietoris proof of the relative Alexander duality statement for a properly embedded disk pair; its relative group
 \[
 H_j(D^n-D,S^{n-1}-S)
 \]

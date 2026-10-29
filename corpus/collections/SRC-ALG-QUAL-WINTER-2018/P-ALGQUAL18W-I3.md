@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGQUAL18W-I3
 kind: problem
-title: Flatness of $\mathbb Q/\mathbb Z$
+title: Flatness of $\QQ/\ZZ$
 classification: {areas: [algebra], topics: []}
 relations: []
 review: draft
@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 True or false?
-Justify your answer with a proof or counterexample: the abelian group $\mathbb Q/\mathbb Z$ is flat.
+Justify your answer with a proof or counterexample: the abelian group $\QQ/\ZZ$ is flat.
 :::
 
 ::: {.solution}

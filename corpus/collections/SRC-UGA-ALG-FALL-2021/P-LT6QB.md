@@ -19,15 +19,15 @@ audit:
   date: 2026-08-30
 ---
 ::: {.problem}
-Recall that for a positive integer $n$, the cyclotomic field $\mathbb{Q}(\zeta_n)$ is generated over $\mathbb{Q}$ by a primitive $n$-th root of unity $\zeta_n$.
+Recall that for a positive integer $n$, the cyclotomic field $\QQ(\zeta_n)$ is generated over $\QQ$ by a primitive $n$-th root of unity $\zeta_n$.
 
-(a) What is the degree $[\mathbb{Q}(\zeta_n) : \mathbb{Q}]$?
+(a) What is the degree $[\QQ(\zeta_n) : \QQ]$?
 
-(b) Define what it means for a finite field extension $L/K$ to be **Galois**, and prove that the cyclotomic field $\mathbb{Q}(\zeta_n)$ is Galois over $\mathbb{Q}$.
+(b) Define what it means for a finite field extension $L/K$ to be **Galois**, and prove that the cyclotomic field $\QQ(\zeta_n)$ is Galois over $\QQ$.
 
-(c) What is the Galois group $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$?
+(c) What is the Galois group $\operatorname{Gal}(\QQ(\zeta_n)/\QQ)$?
 
-(d) How many subfields of $\mathbb{Q}(\zeta_{2021})$ have degree 2 over $\mathbb{Q}$? *(Note that $2021 = 43 \cdot 47$).*
+(d) How many subfields of $\QQ(\zeta_{2021})$ have degree 2 over $\QQ$? *(Note that $2021 = 43 \cdot 47$).*
 :::
 
 ::: {.solution}
@@ -38,12 +38,12 @@ Recall that for a positive integer $n$, the cyclotomic field $\mathbb{Q}(\zeta_n
 
 The degree of the $n$-th cyclotomic field is
 \[
-\boxed{[\mathbb Q(\zeta_n):\mathbb Q]=\varphi(n)}.
+\boxed{[\QQ(\zeta_n):\QQ]=\varphi(n)}.
 \]
 
 ::: pf-proof
 
-The minimal polynomial of a primitive $n$-th root of unity is the cyclotomic polynomial $\Phi_n(x)$, irreducible over $\mathbb Q$. Its roots are precisely the $\varphi(n)$ primitive $n$-th roots, so its degree is $\varphi(n)$.
+The minimal polynomial of a primitive $n$-th root of unity is the cyclotomic polynomial $\Phi_n(x)$, irreducible over $\QQ$. Its roots are precisely the $\varphi(n)$ primitive $n$-th roots, so its degree is $\varphi(n)$.
 
 :::
 
@@ -51,11 +51,11 @@ The minimal polynomial of a primitive $n$-th root of unity is the cyclotomic pol
 
 ::: {.pf-step #s2}
 
-The extension $\mathbb Q(\zeta_n)/\mathbb Q$ is Galois.
+The extension $\QQ(\zeta_n)/\QQ$ is Galois.
 
 ::: pf-proof
 
-A finite extension is Galois if and only if it is normal and separable. The cyclotomic field is the splitting field over $\mathbb Q$ of $x^n-1$, because every root is a power of $\zeta_n$. This polynomial is separable in characteristic zero, so the extension is normal and separable.
+A finite extension is Galois if and only if it is normal and separable. The cyclotomic field is the splitting field over $\QQ$ of $x^n-1$, because every root is a power of $\zeta_n$. This polynomial is separable in characteristic zero, so the extension is normal and separable.
 
 :::
 
@@ -65,12 +65,12 @@ A finite extension is Galois if and only if it is normal and separable. The cycl
 
 Its Galois group is
 \[
-\boxed{\operatorname{Gal}(\mathbb Q(\zeta_n)/\mathbb Q)\cong(\mathbb Z/n\mathbb Z)^\times}.
+\boxed{\operatorname{Gal}(\QQ(\zeta_n)/\QQ)\cong(\ZZ/n\ZZ)^\times}.
 \]
 
 ::: pf-proof
 
-An automorphism of $\mathbb Q(\zeta_n)$ is determined by the image of $\zeta_n$, necessarily a primitive $n$-th root $\zeta_n^a$ with $a$ invertible modulo $n$. The assignment $\sigma\mapsto a\bmod n$ is an injective homomorphism into $(\mathbb Z/n\mathbb Z)^\times$, since composition corresponds to multiplication of exponents. By step [](#s1){.pf-ref}, both groups have cardinality $\varphi(n)$, so the map is an isomorphism.
+An automorphism of $\QQ(\zeta_n)$ is determined by the image of $\zeta_n$, necessarily a primitive $n$-th root $\zeta_n^a$ with $a$ invertible modulo $n$. The assignment $\sigma\mapsto a\bmod n$ is an injective homomorphism into $(\ZZ/n\ZZ)^\times$, since composition corresponds to multiplication of exponents. By step [](#s1){.pf-ref}, both groups have cardinality $\varphi(n)$, so the map is an isomorphism.
 
 :::
 
@@ -78,7 +78,7 @@ An automorphism of $\mathbb Q(\zeta_n)$ is determined by the image of $\zeta_n$,
 
 ::: {.pf-step #s4}
 
-The field $\mathbb Q(\zeta_{2021})$ has exactly
+The field $\QQ(\zeta_{2021})$ has exactly
 \[
 \boxed{3}
 \]
@@ -88,7 +88,7 @@ quadratic subfields.
 
 Since $2021=43\cdot47$, the Chinese remainder theorem and step [](#s3){.pf-ref} give
 \[
-G\cong(\mathbb Z/43\mathbb Z)^\times\times(\mathbb Z/47\mathbb Z)^\times
+G\cong(\ZZ/43\ZZ)^\times\times(\ZZ/47\ZZ)^\times
 \cong C_{42}\times C_{46}.
 \]
 Each factor is cyclic of even order, with exactly one nontrivial homomorphism to $C_2$. Hence $\operatorname{Hom}(G,C_2)\cong C_2^2$ has exactly three nontrivial homomorphisms. Each is surjective and has an index-two kernel; conversely every index-two subgroup arises uniquely in this way. By the Galois correspondence, these three subgroups correspond to the quadratic intermediate fields.

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb { Z } _ { 3 }$ be the field of integers mod 3 and $\mathbb { Z } _ { 3 } [ x ]$ the corresponding polynomial ring. Decompose $x ^ { 3 } + x + 2$ into irreducible factors in $\mathbb { Z } _ { 3 } [ x ]$
+Let $\ZZ _ { 3 }$ be the field of integers mod 3 and $\ZZ _ { 3 } [ x ]$ the corresponding polynomial ring. Decompose $x ^ { 3 } + x + 2$ into irreducible factors in $\ZZ _ { 3 } [ x ]$
 :::
 
 ::: {.solution}

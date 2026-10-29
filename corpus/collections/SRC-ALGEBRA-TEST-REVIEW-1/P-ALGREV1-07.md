@@ -48,11 +48,11 @@ $$
 $$
 Therefore the three possibilities are
 $$
-\mathbb Z_8,
+\ZZ_8,
 \qquad
-\mathbb Z_4\times\mathbb Z_2,
+\ZZ_4\times\ZZ_2,
 \qquad
-\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2.
+\ZZ_2\times\ZZ_2\times\ZZ_2.
 $$
 
 :::
@@ -71,9 +71,9 @@ $$
 $$
 Hence the two possibilities are
 $$
-\mathbb Z_{25},
+\ZZ_{25},
 \qquad
-\mathbb Z_5\times\mathbb Z_5.
+\ZZ_5\times\ZZ_5.
 $$
 
 :::
@@ -92,12 +92,12 @@ $3\cdot2=6$ isomorphism types:
 $$
 \boxed{
 \begin{aligned}
-&\mathbb Z_8\times\mathbb Z_{25},\\
-&\mathbb Z_8\times\mathbb Z_5\times\mathbb Z_5,\\
-&\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_{25},\\
-&\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_5\times\mathbb Z_5,\\
-&\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_{25},\\
-&\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_5\times\mathbb Z_5.
+&\ZZ_8\times\ZZ_{25},\\
+&\ZZ_8\times\ZZ_5\times\ZZ_5,\\
+&\ZZ_4\times\ZZ_2\times\ZZ_{25},\\
+&\ZZ_4\times\ZZ_2\times\ZZ_5\times\ZZ_5,\\
+&\ZZ_2\times\ZZ_2\times\ZZ_2\times\ZZ_{25},\\
+&\ZZ_2\times\ZZ_2\times\ZZ_2\times\ZZ_5\times\ZZ_5.
 \end{aligned}}
 $$
 The primary decomposition theorem also shows that no two groups in this list

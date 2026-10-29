@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the homology group $H_k(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$ for all $k \geq 0$.
+Compute the homology group $H_k(\mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ)$ for all $k \geq 0$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Compute the homology group $H_k(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$
 
 ::: pf-step
 
-Integrally, $H_0(\mathbb{RP}^2)=\mathbb Z$, $H_1(\mathbb{RP}^2)=\mathbb Z/2$, and all higher homology vanishes.
+Integrally, $H_0(\mathbb{RP}^2)=\ZZ$, $H_1(\mathbb{RP}^2)=\ZZ/2$, and all higher homology vanishes.
 
 ::: pf-proof
 
@@ -36,11 +36,11 @@ This is the standard cellular calculation.
 
 ::: {.pf-step #s2}
 
-The tensor terms in Künneth give $\mathbb Z$ in degree $0$, $(\mathbb Z/2)^2$ in degree $1$, and $\mathbb Z/2$ in degree $2$.
+The tensor terms in Künneth give $\ZZ$ in degree $0$, $(\ZZ/2)^2$ in degree $1$, and $\ZZ/2$ in degree $2$.
 
 ::: pf-proof
 
-The degree-$2$ term is $(\mathbb Z/2)\otimes(\mathbb Z/2)\cong\mathbb Z/2$.
+The degree-$2$ term is $(\ZZ/2)\otimes(\ZZ/2)\cong\ZZ/2$.
 
 :::
 
@@ -49,7 +49,7 @@ The degree-$2$ term is $(\mathbb Z/2)\otimes(\mathbb Z/2)\cong\mathbb Z/2$.
 ::: {.pf-step #s3}
 
 The only nonzero Tor term is
-$$\operatorname{Tor}(\mathbb Z/2,\mathbb Z/2)\cong\mathbb Z/2,$$
+$$\operatorname{Tor}(\ZZ/2,\ZZ/2)\cong\ZZ/2,$$
 and it contributes in degree $3$.
 
 ::: pf-proof
@@ -63,10 +63,10 @@ In the Künneth short exact sequence for $H_n$, Tor terms with indices summing t
 ::: pf-step
 
 Hence
-$$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^2;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&k=0,\\
-(\mathbb Z/2)^2,&k=1,\\
-\mathbb Z/2,&k=2,3,\\
+$$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^2;\ZZ)\cong\begin{cases}
+\ZZ,&k=0,\\
+(\ZZ/2)^2,&k=1,\\
+\ZZ/2,&k=2,3,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 

@@ -31,7 +31,7 @@ audit:
 ---
 
 ::: {.problem}
-For the sake of this problem a manifold of dimension $n$ will be defined as a topological space in which each point has a neighborhood that is homeomorphic to $\mathbb R^n$.
+For the sake of this problem a manifold of dimension $n$ will be defined as a topological space in which each point has a neighborhood that is homeomorphic to $\RR^n$.
 If $M$ is a connected manifold of dimension at least $3$ and $q\in M$, show that $\pi_1(M-\{q\})$ is isomorphic to $\pi_1(M)$.
 :::
 
@@ -54,7 +54,7 @@ y\in O\subseteq N.
 \]
 If $x\notin N$, then $O$ is already an open neighborhood of $y$ avoiding $x$.
 
-If $x\in N$, the space $N$ is homeomorphic to $\mathbb R^n$ and hence is $T_1$.
+If $x\in N$, the space $N$ is homeomorphic to $\RR^n$ and hence is $T_1$.
 Thus there is a set $W$ open in the subspace $N$ such that
 \[
 y\in W
@@ -84,28 +84,28 @@ Taking $x=q$ proves that $V$ is open.
 :::
 
 ::: {.pf-step #chart-exists}
-We may choose an open neighborhood $U$ of $q$ homeomorphic to $\mathbb R^n$, with $q$ corresponding to $0$.
+We may choose an open neighborhood $U$ of $q$ homeomorphic to $\RR^n$, with $q$ corresponding to $0$.
 
 ::: pf-proof
 Let $N$ be a neighborhood of $q$ homeomorphic by
 \[
-h:N\longrightarrow\mathbb R^n
+h:N\longrightarrow\RR^n
 \]
 to Euclidean space.
 Since $N$ is a neighborhood, choose open $O\subseteq M$ with
 \[
 q\in O\subseteq N.
 \]
-The set $h(O)$ is open in $\mathbb R^n$ relative to the chart, so it contains an open Euclidean ball $B$ about $h(q)$.
+The set $h(O)$ is open in $\RR^n$ relative to the chart, so it contains an open Euclidean ball $B$ about $h(q)$.
 After translating coordinates, take $h(q)=0$.
 Then
 \[
 U=h^{-1}(B)
 \]
 is open in $M$: because $h^{-1}(B)$ is open in the subspace $N$, write it as $N\cap G$ for some open $G\subseteq M$; since it lies in $O\subseteq N$, it equals $O\cap G$.
-Finally, composing $h|_U$ with a homeomorphism $B\cong\mathbb R^n$ gives the desired open chart
+Finally, composing $h|_U$ with a homeomorphism $B\cong\RR^n$ gives the desired open chart
 \[
-U\cong\mathbb R^n
+U\cong\RR^n
 \]
 sending $q$ to $0$.
 :::
@@ -124,7 +124,7 @@ By step [](#chart-exists){.pf-ref},
 \[
 U\setminus\{q\}
 \cong
-\mathbb R^n\setminus\{0\}.
+\RR^n\setminus\{0\}.
 \]
 The radial map
 \[
@@ -135,7 +135,7 @@ is the endpoint of the deformation retraction
 H(x,t)
 =\left((1-t)+\frac{t}{\|x\|}\right)x
 \]
-from $\mathbb R^n\setminus\{0\}$ onto $S^{n-1}$.
+from $\RR^n\setminus\{0\}$ onto $S^{n-1}$.
 Since $n\ge3$, the sphere $S^{n-1}$ has dimension at least $2$ and is path-connected.
 Therefore $U\setminus\{q\}$ is path-connected.
 :::
@@ -232,7 +232,7 @@ Furthermore,
 \[
 \pi_1(U,x_0)=0
 \]
-because $U\cong\mathbb R^n$, and by step [](#punctured-chart-simply-connected){.pf-ref},
+because $U\cong\RR^n$, and by step [](#punctured-chart-simply-connected){.pf-ref},
 \[
 \pi_1(U\cap V,x_0)=0.
 \]

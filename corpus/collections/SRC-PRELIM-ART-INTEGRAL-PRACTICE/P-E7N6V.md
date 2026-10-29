@@ -108,14 +108,14 @@ Evaluate the squared-sinc integral.
 
 ::: pf-proof
 
-Use the Fourier transform \(\widehat f(\xi)=\int_{\mathbb R}f(t)e^{-it\xi}\,dt\). For \(f=\mathbf1_{[-1,1]}\),
+Use the Fourier transform \(\widehat f(\xi)=\int_{\RR}f(t)e^{-it\xi}\,dt\). For \(f=\mathbf1_{[-1,1]}\),
 \[
 \widehat f(\xi)=\frac{2\sin\xi}{\xi}.
 \]
 Plancherel's theorem in this normalization gives
 \[
-\int_{\mathbb R}|\widehat f(\xi)|^2\,d\xi
-=2\pi\int_{\mathbb R}|f(t)|^2\,dt=4\pi.
+\int_{\RR}|\widehat f(\xi)|^2\,d\xi
+=2\pi\int_{\RR}|f(t)|^2\,dt=4\pi.
 \]
 Therefore
 \[

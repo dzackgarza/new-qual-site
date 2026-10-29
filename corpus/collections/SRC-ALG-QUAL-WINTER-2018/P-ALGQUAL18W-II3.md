@@ -29,10 +29,10 @@ audit:
 For a partially ordered set $(X,\le)$, let $\mathcal C_X$ be the category whose objects are the elements of $X$ and with a unique morphism $x\to y$ exactly when $x\le y$.
 For an order-preserving map $f:X\to Y$, let $F_f:\mathcal C_X\to\mathcal C_Y$ be the corresponding functor.
 
-View $\mathbb Z$ and $\mathbb R$ with their usual orders, and let $i:\mathbb Z\hookrightarrow\mathbb R$ be the inclusion.
+View $\ZZ$ and $\RR$ with their usual orders, and let $i:\ZZ\hookrightarrow\RR$ be the inclusion.
 Find the left and right adjoints of
 \[
-F_i:\mathcal C_{\mathbb Z}\longrightarrow\mathcal C_{\mathbb R},
+F_i:\mathcal C_{\ZZ}\longrightarrow\mathcal C_{\RR},
 \]
 and justify your answer carefully.
 :::

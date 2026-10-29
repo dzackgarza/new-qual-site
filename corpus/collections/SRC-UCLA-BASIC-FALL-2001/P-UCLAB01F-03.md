@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E\subseteq\mathbb R$, and let $(f_n)$ be a sequence of continuous real-valued functions on $E$.
+Let $E\subseteq\RR$, and let $(f_n)$ be a sequence of continuous real-valued functions on $E$.
 Suppose $f_n\to f$ uniformly on $E$.
 Prove that $f$ is continuous on $E$.
 :::

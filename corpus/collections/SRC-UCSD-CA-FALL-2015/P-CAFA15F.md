@@ -28,7 +28,7 @@ The official Fall 2015 exam omits the word "nonconstant." Without it, part (ii) 
 ::: {.solution}
 Let
 \[
-\Lambda=\{\omega\in\mathbb C:f(z+\omega)=f(z)\text{ for all }z\}.
+\Lambda=\{\omega\in\CC:f(z+\omega)=f(z)\text{ for all }z\}.
 \]
 
 For (i), $0\in\Lambda$, and if $\omega,\eta\in\Lambda$, then
@@ -39,7 +39,7 @@ so $\omega+\eta\in\Lambda$. Also
 \[
 f(z-\omega)=f((z-\omega)+\omega)=f(z),
 \]
-so $-\omega\in\Lambda$. Thus $\Lambda$ is an additive subgroup of $\mathbb C$, and in particular every integer combination $n_1\omega_1+n_2\omega_2$ is a period.
+so $-\omega\in\Lambda$. Thus $\Lambda$ is an additive subgroup of $\CC$, and in particular every integer combination $n_1\omega_1+n_2\omega_2$ is a period.
 
 For (ii), suppose a bounded set contained infinitely many periods. Then there is a convergent sequence of distinct periods $\omega_n\to\omega$. By continuity at every point where $f$ is finite,
 \[
@@ -59,5 +59,5 @@ Hence
 \[
 f'(z)=\lim_{n\to\infty}\frac{f(z+\tau_n)-f(z)}{\tau_n}=0.
 \]
-Thus $f$ is constant on a nonempty open disk, hence constant everywhere by the identity theorem for meromorphic functions, contradicting the hypothesis. Therefore the period group is discrete, so every bounded subset of $\mathbb C$ contains only finitely many periods.
+Thus $f$ is constant on a nonempty open disk, hence constant everywhere by the identity theorem for meromorphic functions, contradicting the hypothesis. Therefore the period group is discrete, so every bounded subset of $\CC$ contains only finitely many periods.
 :::

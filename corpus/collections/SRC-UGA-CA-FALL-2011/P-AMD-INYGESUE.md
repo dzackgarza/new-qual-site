@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\mathbb C$.
+Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\CC$.
 
 ```
 (1) Show that the function $u=u(x,y)$ given by
@@ -37,9 +37,9 @@ Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where
 ::: {.solution}
 **Goal:**
 
-1. Prove that $f(z) = z^2$ is uniformly continuous on the open disk $D(0, R) = \{z \in \mathbb{C} : |z| < R\}$ for any fixed $R > 0$, but is not uniformly continuous on $\mathbb{C}$.
+1. Prove that $f(z) = z^2$ is uniformly continuous on the open disk $D(0, R) = \{z \in \CC : |z| < R\}$ for any fixed $R > 0$, but is not uniformly continuous on $\CC$.
 
-2. For the function $u_n(x,y) = \frac{e^{ny}-e^{-ny}}{2n^2}\sin(nx) = \frac{\sinh(ny)}{n^2}\sin(nx)$ on $D = \{(x,y) \in \mathbb{R}^2 : x^2+y^2 < 1\}$, verify it solves the Laplace equation with Cauchy initial data $u_n(x,0) = 0$ and $\frac{\partial u_n}{\partial y}(x,0) = \frac{\sin(nx)}{n}$.
+2. For the function $u_n(x,y) = \frac{e^{ny}-e^{-ny}}{2n^2}\sin(nx) = \frac{\sinh(ny)}{n^2}\sin(nx)$ on $D = \{(x,y) \in \RR^2 : x^2+y^2 < 1\}$, verify it solves the Laplace equation with Cauchy initial data $u_n(x,0) = 0$ and $\frac{\partial u_n}{\partial y}(x,0) = \frac{\sin(nx)}{n}$.
 
 3. Show that there exist points $(x,y) \in D$ where $\limsup_{n\to\infty} |u_n(x,y)| = \infty$.
 
@@ -50,7 +50,7 @@ Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where
 ::: pf
 
 ::: pf-step
-**$f(z) = z^2$ is uniformly continuous on $D(0, R) = \{z \in \mathbb{C} : |z| < R\}$.**
+**$f(z) = z^2$ is uniformly continuous on $D(0, R) = \{z \in \CC : |z| < R\}$.**
 
 ::: pf-proof
 
@@ -95,13 +95,13 @@ Direct substitution of $\delta = \frac{\varepsilon}{2R}$ into step [](#s1-3){.pf
 :::
 
 ::: pf-step
-**$f(z) = z^2$ is not uniformly continuous on $\mathbb{C}$.**
+**$f(z) = z^2$ is not uniformly continuous on $\CC$.**
 
 ::: pf-proof
 
 ::: pf-step
-A function $f: \mathbb{C} \to \mathbb{C}$ is uniformly continuous if and only if $\forall \varepsilon > 0, \exists \delta > 0, \forall z_1, z_2 \in \mathbb{C}, |z_1 - z_2| < \delta \implies |f(z_1) - f(z_2)| < \varepsilon$.
-The negation is: $\exists \varepsilon_0 > 0, \forall \delta > 0, \exists z_1, z_2 \in \mathbb{C}$ such that $|z_1 - z_2| < \delta$ and $|f(z_1) - f(z_2)| \geq \varepsilon_0$.
+A function $f: \CC \to \CC$ is uniformly continuous if and only if $\forall \varepsilon > 0, \exists \delta > 0, \forall z_1, z_2 \in \CC, |z_1 - z_2| < \delta \implies |f(z_1) - f(z_2)| < \varepsilon$.
+The negation is: $\exists \varepsilon_0 > 0, \forall \delta > 0, \exists z_1, z_2 \in \CC$ such that $|z_1 - z_2| < \delta$ and $|f(z_1) - f(z_2)| \geq \varepsilon_0$.
 
 ::: pf-proof
 Standard logical negation of uniform continuity.
@@ -111,7 +111,7 @@ Standard logical negation of uniform continuity.
 
 ::: pf-step
 Set $\varepsilon_0 = 1$.
-For any given $\delta > 0$, choose $z_1 = \frac{1}{\delta} \in \mathbb{R} \subset \mathbb{C}$ and $z_2 = \frac{1}{\delta} + \frac{\delta}{2} \in \mathbb{R} \subset \mathbb{C}$.
+For any given $\delta > 0$, choose $z_1 = \frac{1}{\delta} \in \RR \subset \CC$ and $z_2 = \frac{1}{\delta} + \frac{\delta}{2} \in \RR \subset \CC$.
 
 ::: pf-proof
 Explicit construction of test points.

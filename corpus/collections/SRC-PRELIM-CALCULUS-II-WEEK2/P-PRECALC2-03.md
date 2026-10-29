@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-For $n \in \mathbb { N } ,$ evaluate $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x .$
+For $n \in \NN ,$ evaluate $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x .$
 :::
 
 ::: {.solution}

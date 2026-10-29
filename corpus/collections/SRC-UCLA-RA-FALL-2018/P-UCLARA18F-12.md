@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. If $\alpha\in\mathbb C$ satisfies $0<|\alpha|<1$ and if $n\in\mathbb N=\{1,2,3,\ldots\}$, show that the equation
+Problem 12. If $\alpha\in\CC$ satisfies $0<|\alpha|<1$ and if $n\in\NN=\{1,2,3,\ldots\}$, show that the equation
 \[
 e^z(z-1)^n=\alpha
 \]

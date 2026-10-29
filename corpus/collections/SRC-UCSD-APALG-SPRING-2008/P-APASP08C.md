@@ -51,7 +51,7 @@ Part (a): Multiplicity of trivial representation equals number of orbits:
 ::: pf-proof
 
 ::: pf-step
-For any $g \in \Gamma$, the character value $\chi(g) = \operatorname{Tr}(\rho(g))$ of the permutation representation on $\mathbb{C}[\mathcal{F}]$ equals the number of fixed points:
+For any $g \in \Gamma$, the character value $\chi(g) = \operatorname{Tr}(\rho(g))$ of the permutation representation on $\CC[\mathcal{F}]$ equals the number of fixed points:
 \[
 \chi(g) = |\operatorname{Fix}(g)| = |\{f \in \mathcal{F} \mid g \cdot f = f\}|.
 \]

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $h \in C([-1, 1], \mathbb{R})$ be a one-to-one function and let $Z$ denote the space of functions of the form $p(h) := \sum_{k=1}^n a_k h^k$ for some $n \in \mathbb{N}$ and $a_k \in \mathbb{R}$.
+Let $h \in C([-1, 1], \RR)$ be a one-to-one function and let $Z$ denote the space of functions of the form $p(h) := \sum_{k=1}^n a_k h^k$ for some $n \in \NN$ and $a_k \in \RR$.
 Show $Z$ is a dense subspace of $L^1([-1, 1], \mathcal{B}_{[-1,1]}, m)$.
 :::
 
@@ -44,7 +44,7 @@ Because $h$ is continuous and injective on the compact interval $[-1,1]$, it is 
 \[
 K:=h([-1,1]).
 \]
-Let $\nu=h_*m$ be the pushforward of Lebesgue measure. Then for every measurable $\Phi:K\to\mathbb C$,
+Let $\nu=h_*m$ be the pushforward of Lebesgue measure. Then for every measurable $\Phi:K\to\CC$,
 \[
 \int_{-1}^1 |\Phi(h(x))|\,dx
 =\int_K|\Phi(t)|\,d\nu(t).

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF18-3B
 kind: problem
-title: Continuous open maps $\mathbb R\to\mathbb R$ are monotone
+title: Continuous open maps $\RR\to\RR$ are monotone
 classification:
   areas:
   - prelim
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that a continuous function from $\mathbb R$ to $\mathbb R$ which maps open sets to open sets must be monotone.
+Prove that a continuous function from $\RR$ to $\RR$ which maps open sets to open sets must be monotone.
 :::
 
 ::: {.solution}

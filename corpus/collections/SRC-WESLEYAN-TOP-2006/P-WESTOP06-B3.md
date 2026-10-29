@@ -16,7 +16,7 @@ Let $A\subset X$.
 1. Define what it means for $A$ to be a deformation retract of $X$.
 2. Construct explicitly a deformation retraction
    \[
-   \mathbb R^n\setminus\{0\}\longrightarrow S^{n-1}.
+   \RR^n\setminus\{0\}\longrightarrow S^{n-1}.
    \]
 :::
 
@@ -49,7 +49,7 @@ The condition \(r|_A=\operatorname{id}_A\) says that \(r\) is a retraction. The 
 
 The map
 \[
-\boxed{r:\mathbb R^n\setminus\{0\}\to S^{n-1},\qquad
+\boxed{r:\RR^n\setminus\{0\}\to S^{n-1},\qquad
 r(x)=\frac{x}{\|x\|}}
 \]
 is a retraction.
@@ -71,7 +71,7 @@ Thus \(r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}\).
 
 Define
 \[
-H:(\mathbb R^n\setminus\{0\})\times I\to\mathbb R^n\setminus\{0\}
+H:(\RR^n\setminus\{0\})\times I\to\RR^n\setminus\{0\}
 \]
 by
 \[
@@ -86,7 +86,7 @@ The scalar
 \[
 (1-t)+\frac{t}{\|x\|}
 \]
-is strictly positive for every \(x\ne0\) and \(t\in I\). Hence \(H(x,t)\ne0\), so the formula takes values in \(\mathbb R^n\setminus\{0\}\). It is continuous because it is assembled from continuous operations on this domain.
+is strictly positive for every \(x\ne0\) and \(t\in I\). Hence \(H(x,t)\ne0\), so the formula takes values in \(\RR^n\setminus\{0\}\). It is continuous because it is assembled from continuous operations on this domain.
 
 At \(t=0\),
 \[
@@ -121,7 +121,7 @@ Thus every point of the sphere remains fixed during the homotopy.
 
 ::: {.pf-step #s1-5}
 
-\(S^{n-1}\) is a deformation retract of \(\mathbb R^n\setminus\{0\}\).
+\(S^{n-1}\) is a deformation retract of \(\RR^n\setminus\{0\}\).
 
 
 ::: pf-proof

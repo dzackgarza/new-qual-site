@@ -36,11 +36,11 @@ Let $I$ be an index set and let $a:I\to(0,\infty)$.
 I\text{ is countable}.
 \]
 
-(b) Suppose $I=\mathbb Q$ and $\sum_{q\in\mathbb Q}a(q)<\infty$. Define
+(b) Suppose $I=\QQ$ and $\sum_{q\in\QQ}a(q)<\infty$. Define
 \[
-f(x):=\sum_{\substack{q\in\mathbb Q\\q\le x}}a(q).
+f(x):=\sum_{\substack{q\in\QQ\\q\le x}}a(q).
 \]
-Show that $f$ is continuous at $x$ if and only if $x\notin\mathbb Q$.
+Show that $f$ is continuous at $x$ if and only if $x\notin\QQ$.
 :::
 
 ::: {.solution}
@@ -85,7 +85,7 @@ Show that $f$ is discontinuous at every rational point.
 
 ::: pf-proof
 
-Fix $r\in\mathbb Q$. Since $a(r)>0$, for every $y<r$,
+Fix $r\in\QQ$. Since $a(r)>0$, for every $y<r$,
 \[
 f(r)-f(y)
 =\sum_{y<q\le r}a(q)
@@ -103,25 +103,25 @@ Show that $f$ is continuous at every irrational point.
 
 ::: pf-proof
 
-Fix $x\notin\mathbb Q$ and $\varepsilon>0$. Since the nonnegative family $(a(q))_{q\in\mathbb Q}$ is summable, there is a finite set $F\subset\mathbb Q$ such that
+Fix $x\notin\QQ$ and $\varepsilon>0$. Since the nonnegative family $(a(q))_{q\in\QQ}$ is summable, there is a finite set $F\subset\QQ$ such that
 \[
-\sum_{q\in\mathbb Q\setminus F}a(q)<\varepsilon.
+\sum_{q\in\QQ\setminus F}a(q)<\varepsilon.
 \]
 Because $x\notin F$ and $F$ is finite, choose $\delta>0$ such that
 \[
 (x-\delta,x+\delta)\cap F=\varnothing.
 \]
-If $|y-x|<\delta$, then the rational numbers whose terms contribute to the difference between $f(y)$ and $f(x)$ all lie in $\mathbb Q\setminus F$. Therefore
+If $|y-x|<\delta$, then the rational numbers whose terms contribute to the difference between $f(y)$ and $f(x)$ all lie in $\QQ\setminus F$. Therefore
 \[
 |f(y)-f(x)|
-\le\sum_{q\in\mathbb Q\setminus F}a(q)
+\le\sum_{q\in\QQ\setminus F}a(q)
 <\varepsilon.
 \]
 Thus $f$ is continuous at $x$.
 
 Combining Steps 2 and 3,
 \[
-\boxed{f\text{ is continuous at }x\iff x\notin\mathbb Q.}
+\boxed{f\text{ is continuous at }x\iff x\notin\QQ.}
 \]
 
 :::

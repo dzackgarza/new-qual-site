@@ -33,19 +33,19 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $f \in L ^ { 1 } ( \mathbb { R } ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,
+2. Let $f \in L ^ { 1 } ( \RR ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,
 
 $$
-M _ { f } ( x ) = \operatorname* { s u p } _ { B } { \frac { 1 } { m ( B ) } } \int _ { B } | f ( y ) | d y , \quad x \in \mathbb { R } ^ { d }
+M _ { f } ( x ) = \operatorname* { s u p } _ { B } { \frac { 1 } { m ( B ) } } \int _ { B } | f ( y ) | d y , \quad x \in \RR ^ { d }
 $$
 
 where the supremum is taken over all balls containing the point x. Prove that
 
 $$
-m \big ( \{ x : M _ { f } ( x ) > \alpha \} \big ) \leq \frac { A } { \alpha } | | f | | _ { L ^ { 1 } ( \mathbb { R } ^ { d } ) } , \quad \forall \alpha > 0
+m \big ( \{ x : M _ { f } ( x ) > \alpha \} \big ) \leq \frac { A } { \alpha } | | f | | _ { L ^ { 1 } ( \RR ^ { d } ) } , \quad \forall \alpha > 0
 $$
 
-where A is a constant depending only on d and $\begin{array} { r } { | | f | | _ { L ^ { 1 } ( \mathbb { R } ^ { d } ) } = \int _ { \mathbb { R } ^ { d } } | f ( x ) | d x . } \end{array}$
+where A is a constant depending only on d and $\begin{array} { r } { | | f | | _ { L ^ { 1 } ( \RR ^ { d } ) } = \int _ { \RR ^ { d } } | f ( x ) | d x . } \end{array}$
 :::
 
 ::: {.solution}
@@ -60,7 +60,7 @@ Associate a good ball to every point of the superlevel set.
 
 Fix $\alpha>0$ and write
 \[
-E_\alpha:=\{x\in\mathbb R^d:M_f(x)>\alpha\}.
+E_\alpha:=\{x\in\RR^d:M_f(x)>\alpha\}.
 \]
 Take the balls in the definition to be open. Then
 $E_\alpha$ is the union of all balls on which the average
@@ -120,7 +120,7 @@ Since the $B_j$ are pairwise disjoint,
 \[
 \alpha\sum_j m(B_j)
 \le\sum_j\int_{B_j}|f|
-\le\int_{\mathbb R^d}|f|
+\le\int_{\RR^d}|f|
 =\|f\|_1.
 \]
 Combining this with Step 2 gives

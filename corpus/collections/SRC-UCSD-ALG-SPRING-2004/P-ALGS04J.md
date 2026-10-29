@@ -49,7 +49,7 @@ There are exactly four Gaussian integers of norm $3^4$.
 
 ::: pf-proof
 
-The rational prime $3$ satisfies $3\equiv3\pmod4$, so it remains prime in $\mathbb Z[i]$. If $N(z)=3^4$, then in the unique factorization domain $\mathbb Z[i]$ the prime factorization of $z\bar z$ is $3^4$. Since conjugation fixes the Gaussian prime $3$, every Gaussian prime divisor of $z$ is associate to $3$. Hence
+The rational prime $3$ satisfies $3\equiv3\pmod4$, so it remains prime in $\ZZ[i]$. If $N(z)=3^4$, then in the unique factorization domain $\ZZ[i]$ the prime factorization of $z\bar z$ is $3^4$. Since conjugation fixes the Gaussian prime $3$, every Gaussian prime divisor of $z$ is associate to $3$. Hence
 \[
 z=u3^k
 \]
@@ -77,7 +77,7 @@ There are exactly twenty Gaussian integers of norm $5^4$.
 
 ::: pf-proof
 
-The prime $5$ splits in $\mathbb Z[i]$ as
+The prime $5$ splits in $\ZZ[i]$ as
 \[
 5=(2+i)(2-i)=\pi\bar\pi,
 \]

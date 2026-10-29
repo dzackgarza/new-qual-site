@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Let $M$ be a compact, orientable $3$-dimensional manifold.
 Suppose the boundary of $M$ is a surface $\Sigma$ of genus $g$.
-Let $i_* : H_1(\Sigma; \mathbb{Q}) \to H_1(M; \mathbb{Q})$ be the map induced by the inclusion of the boundary.
+Let $i_* : H_1(\Sigma; \QQ) \to H_1(M; \QQ)$ be the map induced by the inclusion of the boundary.
 Show that the dimension of $\ker i_*$ equals $g$.
 :::
 
@@ -34,7 +34,7 @@ It is enough to work with the connected component of $M$ whose boundary is $\Sig
 
 One has
 $$
-\dim_{\mathbb Q}H_1(\Sigma;\mathbb Q)=2g.
+\dim_{\QQ}H_1(\Sigma;\QQ)=2g.
 $$
 
 ::: pf-proof
@@ -49,7 +49,7 @@ A closed connected orientable surface of genus $g$ has first Betti number $2g$.
 
 The map
 $$
-H_0(\Sigma;\mathbb Q)\longrightarrow H_0(M;\mathbb Q)
+H_0(\Sigma;\QQ)\longrightarrow H_0(M;\QQ)
 $$
 is an isomorphism.
 
@@ -65,7 +65,7 @@ Both $\Sigma$ and $M$ are connected, and inclusion sends the generator represent
 
 The long exact sequence of $(M,\Sigma)$ therefore gives a surjection
 $$
-H_1(M;\mathbb Q)\twoheadrightarrow H_1(M,\Sigma;\mathbb Q)
+H_1(M;\QQ)\twoheadrightarrow H_1(M,\Sigma;\QQ)
 $$
 whose kernel is $\operatorname{im}i_*$.
 
@@ -86,17 +86,17 @@ By step [](#s2){.pf-ref} the last arrow is injective, so exactness forces the pr
 
 Poincaré--Lefschetz duality gives
 $$
-\dim H_1(M,\Sigma;\mathbb Q)=b_2(M).
+\dim H_1(M,\Sigma;\QQ)=b_2(M).
 $$
 
 ::: pf-proof
 
 For an orientable compact $3$-manifold,
 $$
-H_1(M,\partial M;\mathbb Q)\cong H^{2}(M;\mathbb Q).
+H_1(M,\partial M;\QQ)\cong H^{2}(M;\QQ).
 $$
-Over the field $\mathbb Q$, the universal coefficient theorem gives
-$\dim H^2(M;\mathbb Q)=\dim H_2(M;\mathbb Q)=b_2(M)$.
+Over the field $\QQ$, the universal coefficient theorem gives
+$\dim H^2(M;\QQ)=\dim H_2(M;\QQ)=b_2(M)$.
 
 :::
 

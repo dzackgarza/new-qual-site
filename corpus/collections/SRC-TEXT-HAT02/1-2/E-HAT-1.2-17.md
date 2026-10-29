@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-1.2-17
 kind: problem
-title: $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ is uncountable
+title: $\pi_1(\RR^2 - \QQ^2)$ is uncountable
 classification:
   areas:
   - topology
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ is uncountable.
+Show that $\pi_1(\RR^2 - \QQ^2)$ is uncountable.
 :::
 
 ::: {.solution}
@@ -27,11 +27,11 @@ Show that $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ is uncountable.
 
 ::: pf-step
 
-$\mathbb{R}^2 - \mathbb{Q}^2$ is the plane with the countable dense set $\mathbb{Q}^2$ removed.
+$\RR^2 - \QQ^2$ is the plane with the countable dense set $\QQ^2$ removed.
 
 ::: pf-proof
 
-$\mathbb{Q}^2$ is countable.
+$\QQ^2$ is countable.
 
 :::
 
@@ -39,11 +39,11 @@ $\mathbb{Q}^2$ is countable.
 
 ::: pf-step
 
-For each irrational $\alpha$, the vertical line $L_\alpha = \{(\alpha, y) : y \in \mathbb{R}\}$ is contained in $\mathbb{R}^2 - \mathbb{Q}^2$ (since $\alpha \notin \mathbb{Q}$).
+For each irrational $\alpha$, the vertical line $L_\alpha = \{(\alpha, y) : y \in \RR\}$ is contained in $\RR^2 - \QQ^2$ (since $\alpha \notin \QQ$).
 
 ::: pf-proof
 
-a point $(\alpha, y)$ is in $\mathbb{Q}^2$ only if $\alpha \in \mathbb{Q}$.
+a point $(\alpha, y)$ is in $\QQ^2$ only if $\alpha \in \QQ$.
 
 :::
 
@@ -63,7 +63,7 @@ construct a loop.
 
 ::: {.pf-step #s4}
 
-The loops $\gamma_\alpha$ for distinct irrationals $\alpha$ represent distinct elements of $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$.
+The loops $\gamma_\alpha$ for distinct irrationals $\alpha$ represent distinct elements of $\pi_1(\RR^2 - \QQ^2)$.
 
 ::: pf-proof
 
@@ -79,7 +79,7 @@ There are uncountably many irrationals $\alpha$.
 
 ::: pf-proof
 
-$\mathbb{R} \setminus \mathbb{Q}$ is uncountable.
+$\RR \setminus \QQ$ is uncountable.
 
 :::
 
@@ -87,7 +87,7 @@ $\mathbb{R} \setminus \mathbb{Q}$ is uncountable.
 
 ::: {.pf-step #s6}
 
-Hence $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ contains uncountably many distinct elements, so it is uncountable.
+Hence $\pi_1(\RR^2 - \QQ^2)$ contains uncountably many distinct elements, so it is uncountable.
 
 ::: pf-proof
 

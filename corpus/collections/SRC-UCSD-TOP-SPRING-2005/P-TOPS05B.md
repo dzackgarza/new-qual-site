@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be a compact $\mathbb{Z}_k$ orientable manifold for $k > 2$.
+Let $X$ be a compact $\ZZ_k$ orientable manifold for $k > 2$.
 Prove $X$ is orientable.
 :::
 
@@ -39,11 +39,11 @@ Transporting a local integral orientation around a loop either preserves it or r
 
 ::: pf-step
 
-After reduction modulo $k$, orientation transport acts on the local group $\mathbb Z/k$ by multiplication by $\omega(\gamma)$.
+After reduction modulo $k$, orientation transport acts on the local group $\ZZ/k$ by multiplication by $\omega(\gamma)$.
 
 ::: pf-proof
 
-The $\mathbb Z_k$-orientation system is obtained from the integral orientation system by tensoring with $\mathbb Z/k$.
+The $\ZZ_k$-orientation system is obtained from the integral orientation system by tensoring with $\ZZ/k$.
 
 :::
 
@@ -51,7 +51,7 @@ The $\mathbb Z_k$-orientation system is obtained from the integral orientation s
 
 ::: {.pf-step #s3}
 
-If $X$ is $\mathbb Z_k$-orientable, this mod-$k$ local system is trivial, so every loop acts as $+1$ on $\mathbb Z/k$.
+If $X$ is $\ZZ_k$-orientable, this mod-$k$ local system is trivial, so every loop acts as $+1$ on $\ZZ/k$.
 
 ::: pf-proof
 
@@ -63,11 +63,11 @@ Orientability over a coefficient ring means the orientation local system with th
 
 ::: {.pf-step #s4}
 
-Since $k>2$, multiplication by $-1$ on $\mathbb Z/k$ is not the identity.
+Since $k>2$, multiplication by $-1$ on $\ZZ/k$ is not the identity.
 
 ::: pf-proof
 
-The equality $-1=1$ in $\mathbb Z/k$ would imply $k\mid2$, contrary to $k>2$.
+The equality $-1=1$ in $\ZZ/k$ would imply $k\mid2$, contrary to $k>2$.
 
 :::
 
@@ -75,7 +75,7 @@ The equality $-1=1$ in $\mathbb Z/k$ would imply $k\mid2$, contrary to $k>2$.
 
 ::: pf-step
 
-Hence $\omega$ is trivial and $X$ is orientable over $\mathbb Z$.
+Hence $\omega$ is trivial and $X$ is orientable over $\ZZ$.
 
 ::: pf-proof
 

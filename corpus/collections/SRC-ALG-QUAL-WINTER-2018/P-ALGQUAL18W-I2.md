@@ -25,10 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $U_n(\mathbb C)$ be the ring of upper-triangular $n\times n$ matrices over $\mathbb C$.
+Let $U_n(\CC)$ be the ring of upper-triangular $n\times n$ matrices over $\CC$.
 
 True or false?
-Justify your answer with a proof or counterexample: every irreducible $U_n(\mathbb C)$-module is one-dimensional over $\mathbb C$.
+Justify your answer with a proof or counterexample: every irreducible $U_n(\CC)$-module is one-dimensional over $\CC$.
 :::
 
 ::: {.solution}

@@ -26,9 +26,9 @@ Construct a free resolution of $M$ and compute $\Tor_R^*(M, M)$.
 ::: {.solution}
 Let $G=C_2=\{1,\sigma\}$, let
 $$
-R=\mathbb Z[G]=\mathbb Z[\sigma]/(\sigma^2-1),
+R=\ZZ[G]=\ZZ[\sigma]/(\sigma^2-1),
 $$
-and let $M\cong\mathbb Z$ be the sign module, so $\sigma m=-m$.
+and let $M\cong\ZZ$ be the sign module, so $\sigma m=-m$.
 
 ::: pf
 
@@ -101,16 +101,16 @@ Exactness at $F_0$ follows from step [](#s1){.pf-ref}, and exactness at every hi
 
 Tensoring this resolution with $M$ over $R$ gives the chain complex
 $$
-\cdots\xrightarrow{-2}\mathbb Z
-\xrightarrow{0}\mathbb Z
-\xrightarrow{-2}\mathbb Z
-\xrightarrow{0}\mathbb Z\to0,
+\cdots\xrightarrow{-2}\ZZ
+\xrightarrow{0}\ZZ
+\xrightarrow{-2}\ZZ
+\xrightarrow{0}\ZZ\to0,
 $$
 where the rightmost copy is degree $0$.
 
 ::: pf-proof
 
-Under $R\otimes_RM\cong M\cong\mathbb Z$, multiplication by $1+\sigma$ becomes multiplication by $1+(-1)=0$, while multiplication by $1-\sigma$ becomes multiplication by $1-(-1)=2$ (up to the harmless sign convention $-2$ if one writes $\sigma-1$ instead).
+Under $R\otimes_RM\cong M\cong\ZZ$, multiplication by $1+\sigma$ becomes multiplication by $1+(-1)=0$, while multiplication by $1-\sigma$ becomes multiplication by $1-(-1)=2$ (up to the harmless sign convention $-2$ if one writes $\sigma-1$ instead).
 
 :::
 
@@ -120,16 +120,16 @@ Under $R\otimes_RM\cong M\cong\mathbb Z$, multiplication by $1+\sigma$ becomes m
 
 Hence
 $$
-\operatorname{Tor}_0^R(M,M)\cong\mathbb Z.
+\operatorname{Tor}_0^R(M,M)\cong\ZZ.
 $$
 
 ::: pf-proof
 
 At degree $0$ the outgoing differential is zero and the incoming differential $d_1\otimes M$ is also zero, so
 $$
-H_0(F_\bullet\otimes_RM)=\mathbb Z/0\cong\mathbb Z.
+H_0(F_\bullet\otimes_RM)=\ZZ/0\cong\ZZ.
 $$
-Equivalently, $M\otimes_RM\cong R/(1+\sigma)\cong\mathbb Z$.
+Equivalently, $M\otimes_RM\cong R/(1+\sigma)\cong\ZZ$.
 
 :::
 
@@ -139,12 +139,12 @@ Equivalently, $M\otimes_RM\cong R/(1+\sigma)\cong\mathbb Z$.
 
 For $j\ge0$,
 $$
-\operatorname{Tor}_{2j+1}^R(M,M)\cong\mathbb Z/2.
+\operatorname{Tor}_{2j+1}^R(M,M)\cong\ZZ/2.
 $$
 
 ::: pf-proof
 
-At odd degree the outgoing differential is $0$, so the kernel is all of $\mathbb Z$, while the incoming even differential is multiplication by $2$. Thus the homology is $\mathbb Z/2\mathbb Z$.
+At odd degree the outgoing differential is $0$, so the kernel is all of $\ZZ$, while the incoming even differential is multiplication by $2$. Thus the homology is $\ZZ/2\ZZ$.
 
 :::
 
@@ -159,7 +159,7 @@ $$
 
 ::: pf-proof
 
-At positive even degree the outgoing differential is multiplication by $2$, whose kernel in $\mathbb Z$ is zero; hence the homology vanishes.
+At positive even degree the outgoing differential is multiplication by $2$, whose kernel in $\ZZ$ is zero; hence the homology vanishes.
 
 :::
 
@@ -172,8 +172,8 @@ $$
 \boxed{
 \operatorname{Tor}_n^R(M,M)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z/2,&n\text{ odd},\\
+\ZZ,&n=0,\\
+\ZZ/2,&n\text{ odd},\\
 0,&n>0\text{ even}.
 \end{cases}}
 $$

@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space made by gluing the edges of a solid hexagon $H$ and a solid triangle $T$ according to the scheme pictured.
-Calculate $\pi_1(X)$ and $H_*(X; \mathbb{Z})$.
+Calculate $\pi_1(X)$ and $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -52,7 +52,7 @@ This is the standard CW presentation from one $0$-cell, four $1$-cells, and the 
 
 ::: pf-step
 
-The cellular boundary $\partial_2:\mathbb Z^2\to\mathbb Z^4$ has columns
+The cellular boundary $\partial_2:\ZZ^2\to\ZZ^4$ has columns
 $$(1,1,1,0)^T,\qquad(1,1,1,3)^T.$$
 
 ::: pf-proof
@@ -66,7 +66,7 @@ These are the exponent-sum vectors of the two attaching words in the basis $(a,b
 ::: pf-step
 
 Its two columns are independent, so $H_2(X)=0$, and its cokernel is
-$$\mathbb Z^4/\langle(1,1,1,0),(1,1,1,3)\rangle\cong\mathbb Z^2\oplus\mathbb Z/3.$$
+$$\ZZ^4/\langle(1,1,1,0),(1,1,1,3)\rangle\cong\ZZ^2\oplus\ZZ/3.$$
 
 ::: pf-proof
 
@@ -79,7 +79,7 @@ Subtracting the first column from the second gives $(0,0,0,3)$. The first vector
 ::: pf-step
 
 Hence
-$$\boxed{H_k(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,\\\mathbb Z^2\oplus\mathbb Z/3,&k=1,\\0,&k\ge2.\end{cases}}$$
+$$\boxed{H_k(X;\ZZ)\cong\begin{cases}\ZZ,&k=0,\\\ZZ^2\oplus\ZZ/3,&k=1,\\0,&k\ge2.\end{cases}}$$
 
 ::: pf-proof
 

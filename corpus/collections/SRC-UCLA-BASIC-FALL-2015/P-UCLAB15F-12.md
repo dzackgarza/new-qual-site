@@ -40,7 +40,7 @@ Let
 \vdots\\
 1
 \end{pmatrix}
-\in\mathbb R^n
+\in\RR^n
 \]
 and let
 \[
@@ -83,7 +83,7 @@ This is exactly $M$.
 
 For every vector
 \[
-x=(x_1,\ldots,x_n)^t\in\mathbb R^n,
+x=(x_1,\ldots,x_n)^t\in\RR^n,
 \]
 one has
 \[

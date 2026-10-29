@@ -54,7 +54,7 @@ so $Ax=0$ iff $Hx=0$. Since $H$ is Hermitian, $\operatorname{im}H=(\ker H)^\perp
 
 ::: pf-step
 
-Define $U_0:K^\perp\to\mathbb C^m$ by $U_0(Hx)=Ax$. This is well-defined and isometric.
+Define $U_0:K^\perp\to\CC^m$ by $U_0(Hx)=Ax$. This is well-defined and isometric.
 
 ::: pf-proof
 
@@ -66,11 +66,11 @@ If $Hx=Hy$, then $x-y\in K=\ker A$, so $Ax=Ay$. Also $\|U_0(Hx)\|=\|Ax\|=\|Hx\|$
 
 ::: pf-step
 
-Extend $U_0$ to an isometry $U:\mathbb C^n\to\mathbb C^m$. Then $U$ has orthonormal columns and $A=UH$.
+Extend $U_0$ to an isometry $U:\CC^n\to\CC^m$. Then $U$ has orthonormal columns and $A=UH$.
 
 ::: pf-proof
 
-Extend an orthonormal basis of $K^\perp$ to one of $\mathbb C^n$, and extend its $U_0$-image to an orthonormal $n$-frame in $\mathbb C^m$; this is possible because $m\ge n$. Then $UH x=U_0(Hx)=Ax$.
+Extend an orthonormal basis of $K^\perp$ to one of $\CC^n$, and extend its $U_0$-image to an orthonormal $n$-frame in $\CC^m$; this is possible because $m\ge n$. Then $UH x=U_0(Hx)=Ax$.
 
 :::
 

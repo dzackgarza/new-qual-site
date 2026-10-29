@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{w\in\mathbb C:|w|<1\}$, and let $g:D\to D$
+Let $D=\{w\in\CC:|w|<1\}$, and let $g:D\to D$
 be a surjective holomorphic map with $g(0)=0$. Suppose
 that $g$ is a two-sheeted branched covering, with its
 only ramification point at $w=0$. An example is $g(w)=w^2$.

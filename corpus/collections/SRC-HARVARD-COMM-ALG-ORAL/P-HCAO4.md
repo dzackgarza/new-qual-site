@@ -31,7 +31,7 @@ Give two examples of unique factorization domains which are not principal ideal 
 ::: {.solution}
 Two examples are
 \[
-\mathbb Z[x]
+\ZZ[x]
 \qquad\text{and}\qquad
 k[x,y]
 \]
@@ -40,17 +40,17 @@ for any field $k$.
 ::: pf
 
 ::: pf-step
-The ring $\mathbb Z[x]$ is a UFD.
+The ring $\ZZ[x]$ is a UFD.
 
 ::: pf-proof
-The ring $\mathbb Z$ is a UFD, and Gauss's lemma implies that a polynomial ring
+The ring $\ZZ$ is a UFD, and Gauss's lemma implies that a polynomial ring
 over a UFD is again a UFD.
 :::
 
 :::
 
 ::: pf-step
-The ring $\mathbb Z[x]$ is not a PID.
+The ring $\ZZ[x]$ is not a PID.
 
 ::: pf-proof
 Consider the ideal
@@ -59,14 +59,14 @@ I=(2,x).
 \]
 It is proper, since the quotient map
 \[
-\mathbb Z[x]\to\mathbb F_2,
+\ZZ[x]\to\mathbb F_2,
 \qquad
 f(x)\mapsto f(0)\bmod2
 \]
 has kernel $I$.
 
 If $I=(f)$ were principal, then $f$ would divide both $2$ and $x$ in the UFD
-$\mathbb Z[x]$. Their only common divisors are units, so $f$ would be a unit and
+$\ZZ[x]$. Their only common divisors are units, so $f$ would be a unit and
 $I$ would be the whole ring, a contradiction.
 :::
 

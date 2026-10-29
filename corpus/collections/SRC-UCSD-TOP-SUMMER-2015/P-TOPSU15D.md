@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X_n$ be a space whose homology groups are given by $H_k(X_n; \mathbb{Z}) \cong \mathbb{Z}/k\mathbb{Z}$ for $0 \leq k \leq n$ and which vanish for $k > n$.
-Compute the homology $H_*(X_3 \times X_5; \mathbb{Z})$.
+Let $X_n$ be a space whose homology groups are given by $H_k(X_n; \ZZ) \cong \ZZ/k\ZZ$ for $0 \leq k \leq n$ and which vanish for $k > n$.
+Compute the homology $H_*(X_3 \times X_5; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -23,17 +23,17 @@ Compute the homology $H_*(X_3 \times X_5; \mathbb{Z})$.
 ::: pf
 
 ::: pf-step
-Interpreting $\mathbb Z/0\mathbb Z$ as $\mathbb Z$ and $\mathbb Z/1\mathbb Z$ as $0$, the nonzero homology groups are
+Interpreting $\ZZ/0\ZZ$ as $\ZZ$ and $\ZZ/1\ZZ$ as $0$, the nonzero homology groups are
 $$
-H_0(X_3)=\mathbb Z,\quad H_2(X_3)=\mathbb Z/2,\quad H_3(X_3)=\mathbb Z/3,
+H_0(X_3)=\ZZ,\quad H_2(X_3)=\ZZ/2,\quad H_3(X_3)=\ZZ/3,
 $$
 and
 $$
-H_0(X_5)=\mathbb Z,\ H_2=\mathbb Z/2,\ H_3=\mathbb Z/3,\ H_4=\mathbb Z/4,\ H_5=\mathbb Z/5.
+H_0(X_5)=\ZZ,\ H_2=\ZZ/2,\ H_3=\ZZ/3,\ H_4=\ZZ/4,\ H_5=\ZZ/5.
 $$
 
 ::: pf-proof
-This is the given formula $H_k(X_n)=\mathbb Z/k\mathbb Z$ in the indicated range.
+This is the given formula $H_k(X_n)=\ZZ/k\ZZ$ in the indicated range.
 :::
 
 :::
@@ -43,18 +43,18 @@ The tensor terms in the integral Künneth theorem give
 $$
 \begin{array}{c|c}
 q&\displaystyle\bigoplus_{i+j=q}H_i(X_3)\otimes H_j(X_5)\\ \hline
-0&\mathbb Z\\
-2&(\mathbb Z/2)^2\\
-3&(\mathbb Z/3)^2\\
-4&\mathbb Z/4\oplus\mathbb Z/2\\
-5&\mathbb Z/5\\
-6&\mathbb Z/2\oplus\mathbb Z/3\\
+0&\ZZ\\
+2&(\ZZ/2)^2\\
+3&(\ZZ/3)^2\\
+4&\ZZ/4\oplus\ZZ/2\\
+5&\ZZ/5\\
+6&\ZZ/2\oplus\ZZ/3\\
 \end{array}
 $$
 with zero tensor terms in the other degrees.
 
 ::: pf-proof
-Use $\mathbb Z/a\otimes\mathbb Z/b\cong\mathbb Z/\gcd(a,b)$ for $a,b>1$ and tensoring with $\mathbb Z$ unchanged.
+Use $\ZZ/a\otimes\ZZ/b\cong\ZZ/\gcd(a,b)$ for $a,b>1$ and tensoring with $\ZZ$ unchanged.
 :::
 
 :::
@@ -62,18 +62,18 @@ Use $\mathbb Z/a\otimes\mathbb Z/b\cong\mathbb Z/\gcd(a,b)$ for $a,b>1$ and tens
 ::: pf-step
 The only nonzero Tor terms are
 $$
-\operatorname{Tor}(\mathbb Z/2,\mathbb Z/2)\cong\mathbb Z/2
+\operatorname{Tor}(\ZZ/2,\ZZ/2)\cong\ZZ/2
 $$
 in total degree $5$, and
 $$
-\operatorname{Tor}(\mathbb Z/2,\mathbb Z/4)\oplus
-\operatorname{Tor}(\mathbb Z/3,\mathbb Z/3)
-\cong\mathbb Z/2\oplus\mathbb Z/3
+\operatorname{Tor}(\ZZ/2,\ZZ/4)\oplus
+\operatorname{Tor}(\ZZ/3,\ZZ/3)
+\cong\ZZ/2\oplus\ZZ/3
 $$
 in total degree $7$.
 
 ::: pf-proof
-A Tor term from bidegree $(i,j)$ contributes to $H_{i+j+1}$, and $\operatorname{Tor}(\mathbb Z/a,\mathbb Z/b)\cong\mathbb Z/\gcd(a,b)$.
+A Tor term from bidegree $(i,j)$ contributes to $H_{i+j+1}$, and $\operatorname{Tor}(\ZZ/a,\ZZ/b)\cong\ZZ/\gcd(a,b)$.
 :::
 
 :::
@@ -81,20 +81,20 @@ A Tor term from bidegree $(i,j)$ contributes to $H_{i+j+1}$, and $\operatorname{
 ::: pf-step
 Therefore, using the noncanonical splitting in the Künneth theorem,
 $$
-\boxed{H_q(X_3\times X_5;\mathbb Z)\cong
+\boxed{H_q(X_3\times X_5;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&q=0,\\
-(\mathbb Z/2)^2,&q=2,\\
-(\mathbb Z/3)^2,&q=3,\\
-\mathbb Z/4\oplus\mathbb Z/2,&q=4,\\
-\mathbb Z/10,&q=5,\\
-\mathbb Z/6,&q=6,7,\\
+\ZZ,&q=0,\\
+(\ZZ/2)^2,&q=2,\\
+(\ZZ/3)^2,&q=3,\\
+\ZZ/4\oplus\ZZ/2,&q=4,\\
+\ZZ/10,&q=5,\\
+\ZZ/6,&q=6,7,\\
 0,&\text{otherwise}.
 \end{cases}}
 $$
 
 ::: pf-proof
-In degree $5$, $\mathbb Z/5\oplus\mathbb Z/2\cong\mathbb Z/10$; in degrees $6$ and $7$, $\mathbb Z/2\oplus\mathbb Z/3\cong\mathbb Z/6$.
+In degree $5$, $\ZZ/5\oplus\ZZ/2\cong\ZZ/10$; in degrees $6$ and $7$, $\ZZ/2\oplus\ZZ/3\cong\ZZ/6$.
 :::
 
 :::

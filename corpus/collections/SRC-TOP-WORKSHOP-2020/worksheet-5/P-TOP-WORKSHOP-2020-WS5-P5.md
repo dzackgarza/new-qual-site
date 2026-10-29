@@ -38,14 +38,14 @@ One can see this directly by choosing a CW decomposition with the two poles as v
 
 Thus
 \[
-\pi_1(X)\cong\mathbb Z.
+\pi_1(X)\cong\ZZ.
 \]
 
-(b) Connected covers correspond to subgroups of \(\mathbb Z\), namely \(n\mathbb Z\) for \(n\ge1\) and the trivial subgroup. The universal cover is a bi-infinite chain of spheres
+(b) Connected covers correspond to subgroups of \(\ZZ\), namely \(n\ZZ\) for \(n\ge1\) and the trivial subgroup. The universal cover is a bi-infinite chain of spheres
 \[
 \cdots\cup S^2_{-1}\cup S^2_0\cup S^2_1\cup\cdots
 \]
 with the north pole of \(S^2_i\) identified with the south pole of \(S^2_{i+1}\). The generator of the deck group shifts the chain by one sphere.
 
-For \(n\ge1\), quotienting by the subgroup \(n\mathbb Z\) produces an \(n\)-sheeted cover: a cyclic necklace of \(n\) spheres, with successive north and south poles identified cyclically. The trivial subgroup gives the infinite chain. These are all connected covering spaces up to equivalence.
+For \(n\ge1\), quotienting by the subgroup \(n\ZZ\) produces an \(n\)-sheeted cover: a cyclic necklace of \(n\) spheres, with successive north and south poles identified cyclically. The trivial subgroup gives the infinite chain. These are all connected covering spaces up to equivalence.
 :::

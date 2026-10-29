@@ -31,9 +31,9 @@ Assuming as known the cup product structure on the torus $S^1 \times S^1$, compu
 ::: {.solution}
 Choose the standard symplectic basis
 \[
-a_1,b_1,\dots,a_g,b_g\in H^1(M_g;\mathbb Z)
+a_1,b_1,\dots,a_g,b_g\in H^1(M_g;\ZZ)
 \]
-and let $u\in H^2(M_g;\mathbb Z)\cong\mathbb Z$ be the orientation class.
+and let $u\in H^2(M_g;\ZZ)\cong\ZZ$ be the orientation class.
 
 Let
 \[
@@ -55,5 +55,5 @@ and
 \[
 \boxed{a_i\smile a_j=0,\qquad b_i\smile b_j=0}
 \]
-for all $i,j$. Since $H^k(M_g;\mathbb Z)=0$ for $k>2$, these relations, together with the unit in $H^0$, determine the whole ring.
+for all $i,j$. Since $H^k(M_g;\ZZ)=0$ for $k>2$, these relations, together with the unit in $H^0$, determine the whole ring.
 :::

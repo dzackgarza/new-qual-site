@@ -27,8 +27,8 @@ audit:
 ::: {.problem}
 Let $X$ be a set with two elements $\{a,b\}$.
 Give $X$ the indiscrete topology.
-Give $X\times\mathbb R$ the product topology.
-Let $A\subset X\times\mathbb R$ be $(\{a\}\times[0,1])\cup(\{b\}\times(0,1))$.
+Give $X\times\RR$ the product topology.
+Let $A\subset X\times\RR$ be $(\{a\}\times[0,1])\cup(\{b\}\times(0,1))$.
 Prove that $A$ is compact.
 :::
 
@@ -38,12 +38,12 @@ Prove that $A$ is compact.
 
 ::: {.pf-step #s1}
 
-Every nonempty open subset of $X\times\mathbb R$ is of the form $X\times V$ for some open $V\subseteq\mathbb R$.
+Every nonempty open subset of $X\times\RR$ is of the form $X\times V$ for some open $V\subseteq\RR$.
 
 ::: pf-proof
 
 The only nonempty open subset of the indiscrete space $X$ is $X$ itself.
-Hence the basic open sets of the product topology are precisely the sets $X\times V$ with $V$ open in $\mathbb R$.
+Hence the basic open sets of the product topology are precisely the sets $X\times V$ with $V$ open in $\RR$.
 Arbitrary unions of such sets again have this form.
 
 :::
@@ -56,7 +56,7 @@ Every open subset of the subspace $A$ is therefore of the form
 \[
 A\cap(X\times V)
 \]
-for some open $V\subseteq\mathbb R$.
+for some open $V\subseteq\RR$.
 
 ::: pf-proof
 

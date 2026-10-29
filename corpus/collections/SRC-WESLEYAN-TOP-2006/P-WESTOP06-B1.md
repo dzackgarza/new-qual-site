@@ -17,7 +17,7 @@ Let $f,f':I\to X$.
 2. Show that path homotopy is an equivalence relation on maps $I\to X$ with fixed endpoints.
 3. Let
    \[
-   X=\mathbb R^2\setminus\{(0,0)\}
+   X=\RR^2\setminus\{(0,0)\}
    \]
    and
    \[
@@ -141,7 +141,7 @@ f(t)=\bigl(\cos^2(2\pi t),\sin^2(2\pi t)\bigr)
 \]
 is the line segment
 \[
-\{(x,y)\in\mathbb R^2:x\ge0,\ y\ge0,\ x+y=1\},
+\{(x,y)\in\RR^2:x\ge0,\ y\ge0,\ x+y=1\},
 \]
 traversed from \((1,0)\) to \((0,1)\) and back twice.
 
@@ -168,7 +168,7 @@ which gives the stated traversal.
 
 ::: {.pf-step #s1-7}
 
-The loop \(f\) is path-homotopic in \(\mathbb R^2\setminus\{0\}\) to the constant loop \(g_0(t)=(1,0)\).
+The loop \(f\) is path-homotopic in \(\RR^2\setminus\{0\}\) to the constant loop \(g_0(t)=(1,0)\).
 
 
 ::: pf-proof
@@ -195,17 +195,17 @@ for every \(s\). Thus \(H\) is a path homotopy from \(f\) to \(g_0\).
 
 ::: {.pf-step #s1-8}
 
-If \(g_k\) and \(g_\ell\) are path-homotopic in \(\mathbb R^2\setminus\{0\}\), then \(k=\ell\).
+If \(g_k\) and \(g_\ell\) are path-homotopic in \(\RR^2\setminus\{0\}\), then \(k=\ell\).
 
 
 ::: pf-proof
 
-Radially retract \(\mathbb R^2\setminus\{0\}\) onto \(S^1\). For a based loop \(h:I\to S^1\) with \(h(0)=h(1)=(1,0)\), lift \(h\) through the covering map
+Radially retract \(\RR^2\setminus\{0\}\) onto \(S^1\). For a based loop \(h:I\to S^1\) with \(h(0)=h(1)=(1,0)\), lift \(h\) through the covering map
 \[
-p:\mathbb R\to S^1,\qquad
+p:\RR\to S^1,\qquad
 p(u)=(\cos(2\pi u),\sin(2\pi u)),
 \]
-using the unique lift \(\widetilde h\) with \(\widetilde h(0)=0\). Since \(h(1)=(1,0)\), one has \(\widetilde h(1)\in\mathbb Z\). This endpoint is invariant under based homotopy: a based homotopy lifts starting from \(0\), and the endpoint of the lifted path depends continuously on the homotopy parameter while always lying in the discrete set \(\mathbb Z\), so it is constant.
+using the unique lift \(\widetilde h\) with \(\widetilde h(0)=0\). Since \(h(1)=(1,0)\), one has \(\widetilde h(1)\in\ZZ\). This endpoint is invariant under based homotopy: a based homotopy lifts starting from \(0\), and the endpoint of the lifted path depends continuously on the homotopy parameter while always lying in the discrete set \(\ZZ\), so it is constant.
 
 For \(g_k\), the lift
 \[

@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $M$ be a closed orientable $4$-manifold whose second homology $H_2(M; \mathbb{Z})$ has rank $1$.
-Show that there does not exist a free action of the group $\mathbb{Z}_2$ on $M$.
+Let $M$ be a closed orientable $4$-manifold whose second homology $H_2(M; \ZZ)$ has rank $1$.
+Show that there does not exist a free action of the group $\ZZ_2$ on $M$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Show that there does not exist a free action of the group $\mathbb{Z}_2$ on $M$.
 ::: pf
 
 ::: pf-step
-Let $b_i=\operatorname{rank}H_i(M;\mathbb Z)$. Since $M$ is closed and orientable of dimension $4$, Poincaré duality gives
+Let $b_i=\operatorname{rank}H_i(M;\ZZ)$. Since $M$ is closed and orientable of dimension $4$, Poincaré duality gives
 $$
 b_0=b_4=1,\qquad b_1=b_3.
 $$
@@ -49,9 +49,9 @@ Insert the Betti numbers into the alternating-sum formula for Euler characterist
 :::
 
 ::: pf-step
-If a free $\mathbb Z/2$-action existed, the quotient map
+If a free $\ZZ/2$-action existed, the quotient map
 $$
-M\to M/(\mathbb Z/2)
+M\to M/(\ZZ/2)
 $$
 would be a two-sheeted covering of a finite CW complex.
 
@@ -64,7 +64,7 @@ A free action of a finite group on a closed manifold is properly discontinuous a
 ::: pf-step
 Euler characteristic would then satisfy
 $$
-\chi(M)=2\chi(M/(\mathbb Z/2)),
+\chi(M)=2\chi(M/(\ZZ/2)),
 $$
 which is even.
 
@@ -77,7 +77,7 @@ Euler characteristic multiplies by the degree of a finite covering.
 ::: pf-step
 This contradicts step [](#euler-char-odd){.pf-ref}. Therefore
 $$
-\boxed{\text{no free }\mathbb Z/2\text{-action exists on }M.}
+\boxed{\text{no free }\ZZ/2\text{-action exists on }M.}
 $$
 
 ::: pf-proof

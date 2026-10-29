@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $n\times n$ real matrix and let $b\in\mathbb R^n$.
+Let $A$ be an $n\times n$ real matrix and let $b\in\RR^n$.
 Prove that $Ax=b$ has a solution if and only if
 \[
 b\in(\ker A^T)^\perp.
@@ -45,7 +45,7 @@ Then
 \[
 y=Ax
 \]
-for some $x\in\mathbb R^n$.
+for some $x\in\RR^n$.
 If
 \[
 z\in\ker A^T,
@@ -82,7 +82,7 @@ The two spaces in step [](#s1-1){.pf-ref} have the same dimension.
 
 By rank-nullity applied to
 \[
-A^T:\mathbb R^n\to\mathbb R^n,
+A^T:\RR^n\to\RR^n,
 \]
 one has
 \[

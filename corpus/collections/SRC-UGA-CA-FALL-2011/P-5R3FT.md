@@ -14,9 +14,9 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $c \in \mathbb{C}$ with $|c| < \frac{1}{3}$. Show that on the open half-plane
+Let $c \in \CC$ with $|c| < \frac{1}{3}$. Show that on the open half-plane
 $$
-\Omega = \{z \in \mathbb{C} \mid \operatorname{Re}(z) < 1\},
+\Omega = \{z \in \CC \mid \operatorname{Re}(z) < 1\},
 $$
 the function $f(z) = c e^z$ has exactly one fixed point.
 :::

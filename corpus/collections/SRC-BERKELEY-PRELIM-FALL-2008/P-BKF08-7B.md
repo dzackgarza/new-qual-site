@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-7B
 kind: problem
-title: Minimal polynomial of $\sqrt3+\sqrt2$ over $\mathbb Q$
+title: Minimal polynomial of $\sqrt3+\sqrt2$ over $\QQ$
 classification:
   areas: [prelim]
   topics: []

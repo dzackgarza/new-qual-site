@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$ and define $f_t(x)=f(x-t)$.
+Let $f\in L^1(\RR)$ and define $f_t(x)=f(x-t)$.
 Prove
 \[
-\lim_{t\to0}\int_{\mathbb R}|f-f_t|\,dm=0.
+\lim_{t\to0}\int_{\RR}|f-f_t|\,dm=0.
 \]
-If $A\subset\mathbb R$ has finite Lebesgue measure, explain what this says about the translates $A+t$.
+If $A\subset\RR$ has finite Lebesgue measure, explain what this says about the translates $A+t$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ If $A\subset\mathbb R$ has finite Lebesgue measure, explain what this says about
 
 ::: {.pf-step #s1-1}
 
-If $g\in C_c(\mathbb R)$, then
+If $g\in C_c(\RR)$, then
 \[
 \|g-g_t\|_1\longrightarrow0
 \qquad(t\to0).
@@ -47,15 +47,15 @@ For $|t|\le1$, both $g$ and $g_t$ vanish outside
 \[
 [-R-1,R+1].
 \]
-Since $g$ is uniformly continuous on $\mathbb R$,
+Since $g$ is uniformly continuous on $\RR$,
 \[
-\sup_{x\in\mathbb R}|g(x)-g(x-t)|\longrightarrow0
+\sup_{x\in\RR}|g(x)-g(x-t)|\longrightarrow0
 \]
 as $t\to0$. Hence, for $|t|\le1$,
 \[
 \|g-g_t\|_1
 \le
-2(R+1)\sup_{x\in\mathbb R}|g(x)-g(x-t)|,
+2(R+1)\sup_{x\in\RR}|g(x)-g(x-t)|,
 \]
 and the right-hand side tends to $0$.
 
@@ -69,7 +69,7 @@ Translation preserves the $L^1$ norm:
 \[
 \|h_t\|_1=\|h\|_1
 \]
-for every $h\in L^1(\mathbb R)$ and every $t\in\mathbb R$.
+for every $h\in L^1(\RR)$ and every $t\in\RR$.
 
 
 ::: pf-proof
@@ -77,8 +77,8 @@ for every $h\in L^1(\mathbb R)$ and every $t\in\mathbb R$.
 By the translation invariance of Lebesgue measure,
 \[
 \|h_t\|_1
-=\int_{\mathbb R}|h(x-t)|\,dx
-=\int_{\mathbb R}|h(u)|\,du
+=\int_{\RR}|h(x-t)|\,dx
+=\int_{\RR}|h(u)|\,du
 =\|h\|_1.
 \]
 
@@ -88,7 +88,7 @@ By the translation invariance of Lebesgue measure,
 
 ::: {.pf-step #s1-3}
 
-For every $f\in L^1(\mathbb R)$,
+For every $f\in L^1(\RR)$,
 \[
 \boxed{\|f-f_t\|_1\longrightarrow0}
 \qquad(t\to0).
@@ -97,8 +97,8 @@ For every $f\in L^1(\mathbb R)$,
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$,
-choose $g\in C_c(\mathbb R)$ such that
+Fix $\varepsilon>0$. Since $C_c(\RR)$ is dense in $L^1(\RR)$,
+choose $g\in C_c(\RR)$ such that
 \[
 \|f-g\|_1<\frac{\varepsilon}{3}.
 \]
@@ -128,7 +128,7 @@ This proves the limit.
 
 ::: {.pf-step #s1-4}
 
-If $A\subseteq\mathbb R$ is measurable with finite measure, then
+If $A\subseteq\RR$ is measurable with finite measure, then
 \[
 \boxed{m(A\triangle(A+t))\longrightarrow0}
 \qquad(t\to0).
@@ -139,7 +139,7 @@ If $A\subseteq\mathbb R$ is measurable with finite measure, then
 
 Take
 \[
-f=\chi_A\in L^1(\mathbb R).
+f=\chi_A\in L^1(\RR).
 \]
 Then
 \[

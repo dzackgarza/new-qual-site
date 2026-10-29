@@ -40,7 +40,7 @@ Part (a): Additive structure of a finite field:
 
 ::: pf-step
 Let $\operatorname{char}(\mathbb{F}) = p$.
-Since $\mathbb{F}$ is a field, $p$ is a prime number, and the prime subfield of $\mathbb{F}$ is $\mathbb{F}_p \cong \mathbb{Z}/p\mathbb{Z}$.
+Since $\mathbb{F}$ is a field, $p$ is a prime number, and the prime subfield of $\mathbb{F}$ is $\mathbb{F}_p \cong \ZZ/p\ZZ$.
 
 ::: pf-proof
 characteristic of an integral domain is prime.
@@ -61,9 +61,9 @@ finite field extension.
 ::: pf-step
 Choosing an $\mathbb{F}_p$-basis $\{v_1, \dots, v_n\}$ for $\mathbb{F}$ gives an $\mathbb{F}_p$-linear isomorphism:
 \[
-(\mathbb{F}, +) \cong \mathbb{F}_p^n \cong \bigoplus_{i=1}^n \mathbb{Z}_p.
+(\mathbb{F}, +) \cong \mathbb{F}_p^n \cong \bigoplus_{i=1}^n \ZZ_p.
 \]
-Thus $(\mathbb{F}, +)$ is isomorphic to the direct sum of $n$ copies of the cyclic group $\mathbb{Z}_p$.
+Thus $(\mathbb{F}, +)$ is isomorphic to the direct sum of $n$ copies of the cyclic group $\ZZ_p$.
 
 ::: pf-proof
 vector space isomorphism over $\mathbb{F}_p$.
@@ -81,7 +81,7 @@ Part (b): Element of order equal to the exponent:
 ::: pf-proof
 
 ::: pf-step
-By the Structure Theorem for Finite Abelian Groups, $G \cong \mathbb{Z}_{d_1} \oplus \mathbb{Z}_{d_2} \oplus \cdots \oplus \mathbb{Z}_{d_k}$, where the invariant factors satisfy $d_1 \mid d_2 \mid \cdots \mid d_k$.
+By the Structure Theorem for Finite Abelian Groups, $G \cong \ZZ_{d_1} \oplus \ZZ_{d_2} \oplus \cdots \oplus \ZZ_{d_k}$, where the invariant factors satisfy $d_1 \mid d_2 \mid \cdots \mid d_k$.
 
 ::: pf-proof
 Fundamental Theorem of Finite Abelian Groups.
@@ -176,7 +176,7 @@ a finite group containing an element of order equal to the group order is cyclic
 
 ::: pf-step
 Conclusion:
-$(\mathbb{F}, +) \cong (\mathbb{Z}_p)^n$, any finite abelian group has an element of order $\exp(G)$, and $(\mathbb{F}^\times, \cdot)$ is cyclic. Q.E.D.
+$(\mathbb{F}, +) \cong (\ZZ_p)^n$, any finite abelian group has an element of order $\exp(G)$, and $(\mathbb{F}^\times, \cdot)$ is cyclic. Q.E.D.
 
 ::: pf-proof
 Step [](#part-a-additive-structure){.pf-ref} through step [](#part-c-cyclicity){.pf-ref}.

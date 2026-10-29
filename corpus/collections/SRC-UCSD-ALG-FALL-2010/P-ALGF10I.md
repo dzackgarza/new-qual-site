@@ -115,11 +115,11 @@ Hence \(R\) is not left Noetherian.
 ::: pf-step
 A module satisfying DCC but not ACC is the Prüfer \(p\)-group
 \[
-C_{p^\infty}:=\bigcup_{n\ge1}\mu_{p^n}\subset\mathbb C^\times,
+C_{p^\infty}:=\bigcup_{n\ge1}\mu_{p^n}\subset\CC^\times,
 \]
-viewed as a \(\mathbb Z\)-module, where
+viewed as a \(\ZZ\)-module, where
 \[
-\mu_{p^n}:=\{z\in\mathbb C^\times:z^{p^n}=1\}.
+\mu_{p^n}:=\{z\in\CC^\times:z^{p^n}=1\}.
 \]
 
 ::: pf-proof

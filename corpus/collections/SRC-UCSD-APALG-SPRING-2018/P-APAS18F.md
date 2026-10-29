@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible representation of the symmetric group $S_n$ over $\mathbb{C}$.
+For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible representation of the symmetric group $S_n$ over $\CC$.
 
 (a) Calculate the decomposition of the induced module
 \[
@@ -26,9 +26,9 @@ V=\bigl(S^{(1,1)}\otimes S^{(2)}\otimes S^{(1)}\bigr)\uparrow_{S_2\times S_2\tim
 \]
 into irreducible $S_5$-modules.
 
-(b) What is the dimension of the endomorphism ring $\operatorname{End}_{S_5}(V)$ as a $\mathbb{C}$-vector space?
+(b) What is the dimension of the endomorphism ring $\operatorname{End}_{S_5}(V)$ as a $\CC$-vector space?
 
-(c) What is the dimension of the center of the endomorphism ring $\operatorname{End}_{S_5}(V)$ as a $\mathbb{C}$-vector space?
+(c) What is the dimension of the center of the endomorphism ring $\operatorname{End}_{S_5}(V)$ as a $\CC$-vector space?
 :::
 
 ::: {.solution}

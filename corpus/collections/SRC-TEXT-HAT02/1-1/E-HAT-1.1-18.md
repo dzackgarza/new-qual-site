@@ -30,7 +30,7 @@ audit:
 Using Lemma 1.15, show that if a space $X$ is obtained from a path-connected subspace $A$ by attaching a cell $e^n$ with $n \geq 2$, then the inclusion $A \hookrightarrow X$ induces a surjection on $\pi_1$.
 Apply this to show:
 
-(a) The wedge sum $S^1 \lor S^2$ has fundamental group $\mathbb{Z}$.
+(a) The wedge sum $S^1 \lor S^2$ has fundamental group $\ZZ$.
 
 (b) For a path-connected CW complex $X$ the inclusion map $X^1 \hookrightarrow X$ of its 1 skeleton induces a surjection $\pi_1(X^1) \longrightarrow \pi_1(X)$.
 [For the case that $X$ has infinitely many cells, see Proposition A.1 in the Appendix.]
@@ -144,7 +144,7 @@ Apply step [](#s4){.pf-ref}.
 
 The same inclusion also induces an injection, hence
 \[
-\pi_1(S^1\vee S^2)\cong\mathbb Z.
+\pi_1(S^1\vee S^2)\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -165,7 +165,7 @@ r_*\circ i_*=\operatorname{id}_{\pi_1(S^1)}.
 Thus $i_*$ is injective.
 Together with step [](#s5){.pf-ref} it is an isomorphism, and
 \[
-\pi_1(S^1)\cong\mathbb Z.
+\pi_1(S^1)\cong\ZZ.
 \]
 
 :::

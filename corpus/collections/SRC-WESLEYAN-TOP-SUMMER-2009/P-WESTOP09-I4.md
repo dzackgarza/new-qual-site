@@ -83,7 +83,7 @@ Therefore
 A continuous function $f:I\to I$ is uniquely determined by its
 restriction to
 \[
-Q=\mathbb Q\cap I.
+Q=\QQ\cap I.
 \]
 
 

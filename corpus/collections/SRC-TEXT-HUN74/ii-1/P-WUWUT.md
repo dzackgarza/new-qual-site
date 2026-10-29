@@ -19,9 +19,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Show that the additive group of rationals $(\mathbb{Q}, +)$ is not finitely generated.
+(a) Show that the additive group of rationals $(\QQ, +)$ is not finitely generated.
 
-(b) Show that $(\mathbb{Q}, +)$ is not a free abelian group.
+(b) Show that $(\QQ, +)$ is not a free abelian group.
 
 (c) Conclude that the statement "every torsion-free abelian group is free" is false if the hypothesis "finitely generated" is omitted.
 :::

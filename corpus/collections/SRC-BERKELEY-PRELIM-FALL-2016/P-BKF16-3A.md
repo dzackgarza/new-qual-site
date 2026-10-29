@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Given $K \geq 0$ , let $\mathrm { L i p } _ { K }$ be the set of functions $f : \mathbb { R } \to \mathbb { R }$ which satisfy $| f ( x ) - f ( y ) | \leq$ $K | x - y |$ for all $x , y \in \mathbb { R }$
+Given $K \geq 0$ , let $\mathrm { L i p } _ { K }$ be the set of functions $f : \RR \to \RR$ which satisfy $| f ( x ) - f ( y ) | \leq$ $K | x - y |$ for all $x , y \in \RR$
 
 (a) Show that the formula
 

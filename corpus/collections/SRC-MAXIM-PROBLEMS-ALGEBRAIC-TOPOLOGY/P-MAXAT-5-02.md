@@ -33,13 +33,13 @@ be a real rank-$r$ vector bundle over a path-connected simply connected base $X$
 
 A real vector bundle is orientable if and only if its first Stiefel--Whitney class vanishes:
 \[
-w_1(\xi)=0\in H^1(X;\mathbb Z/2).
+w_1(\xi)=0\in H^1(X;\ZZ/2).
 \]
 
 
 ::: pf-proof
 
-The transition functions of a rank-$r$ real bundle take values in $GL_r(\mathbb R)$. Their determinant signs define a Cech $1$-cocycle with values in $\{\pm1\}\cong\mathbb Z/2$; its cohomology class is $w_1(\xi)$. This cocycle is a coboundary exactly when local orientations can be changed so that every transition function has positive determinant, i.e. exactly when the structure group reduces to $GL_r^+(\mathbb R)$ and the bundle is orientable.
+The transition functions of a rank-$r$ real bundle take values in $GL_r(\RR)$. Their determinant signs define a Cech $1$-cocycle with values in $\{\pm1\}\cong\ZZ/2$; its cohomology class is $w_1(\xi)$. This cocycle is a coboundary exactly when local orientations can be changed so that every transition function has positive determinant, i.e. exactly when the structure group reduces to $GL_r^+(\RR)$ and the bundle is orientable.
 
 :::
 
@@ -49,7 +49,7 @@ The transition functions of a rank-$r$ real bundle take values in $GL_r(\mathbb 
 
 Since $X$ is simply connected,
 \[
-H_1(X;\mathbb Z)=0.
+H_1(X;\ZZ)=0.
 \]
 
 
@@ -57,7 +57,7 @@ H_1(X;\mathbb Z)=0.
 
 The Hurewicz theorem in degree one identifies
 \[
-H_1(X;\mathbb Z)\cong\pi_1(X)^{\mathrm{ab}}.
+H_1(X;\ZZ)\cong\pi_1(X)^{\mathrm{ab}}.
 \]
 Since $\pi_1(X)=0$, its abelianization is zero.
 
@@ -69,8 +69,8 @@ Since $\pi_1(X)=0$, its abelianization is zero.
 
 The universal coefficient theorem gives
 \[
-H^1(X;\mathbb Z/2)
-\cong\operatorname{Hom}(H_1(X;\mathbb Z),\mathbb Z/2).
+H^1(X;\ZZ/2)
+\cong\operatorname{Hom}(H_1(X;\ZZ),\ZZ/2).
 \]
 
 
@@ -78,14 +78,14 @@ H^1(X;\mathbb Z/2)
 
 The degree-one universal coefficient sequence is
 \[
-0\to\operatorname{Ext}^1(H_0(X;\mathbb Z),\mathbb Z/2)
-\to H^1(X;\mathbb Z/2)
-\to\operatorname{Hom}(H_1(X;\mathbb Z),\mathbb Z/2)
+0\to\operatorname{Ext}^1(H_0(X;\ZZ),\ZZ/2)
+\to H^1(X;\ZZ/2)
+\to\operatorname{Hom}(H_1(X;\ZZ),\ZZ/2)
 \to0.
 \]
-Path connectedness gives $H_0(X;\mathbb Z)\cong\mathbb Z$, and
+Path connectedness gives $H_0(X;\ZZ)\cong\ZZ$, and
 \[
-\operatorname{Ext}^1(\mathbb Z,\mathbb Z/2)=0.
+\operatorname{Ext}^1(\ZZ,\ZZ/2)=0.
 \]
 Hence the right map is an isomorphism.
 
@@ -97,13 +97,13 @@ Hence the right map is an isomorphism.
 
 Therefore
 \[
-H^1(X;\mathbb Z/2)=0.
+H^1(X;\ZZ/2)=0.
 \]
 
 
 ::: pf-proof
 
-Substitute $H_1(X;\mathbb Z)=0$ from step [](#s1-2){.pf-ref} into the isomorphism of step [](#s1-3){.pf-ref}.
+Substitute $H_1(X;\ZZ)=0$ from step [](#s1-2){.pf-ref} into the isomorphism of step [](#s1-3){.pf-ref}.
 
 :::
 

@@ -26,7 +26,7 @@ Find a path connected, locally path connected space which is not semilocally sim
 The Hawaiian earring is such an example.
 Let
 \[
-X=\bigcup_{n\ge1} C_n\subset\mathbb R^2,
+X=\bigcup_{n\ge1} C_n\subset\RR^2,
 \qquad
 C_n=\{(x,y):(x-1/n)^2+y^2=1/n^2\}.
 \]
@@ -56,7 +56,7 @@ $X$ is not semilocally simply connected at the origin.
 ::: pf-proof
 
 Every neighbourhood of the origin contains some entire circle $C_n$.
-The loop going once around $C_n$ is nontrivial in $\pi_1(X,0)$: collapsing all circles other than $C_n$ to the common basepoint gives a continuous retraction $X\to C_n$, so a null-homotopy in $X$ would induce a null-homotopy of the generator of $\pi_1(C_n)\cong\mathbb Z$.
+The loop going once around $C_n$ is nontrivial in $\pi_1(X,0)$: collapsing all circles other than $C_n$ to the common basepoint gives a continuous retraction $X\to C_n$, so a null-homotopy in $X$ would induce a null-homotopy of the generator of $\pi_1(C_n)\cong\ZZ$.
 Hence no neighbourhood of the origin has trivial image in $\pi_1(X)$.
 
 :::

@@ -16,16 +16,16 @@ audit:
 ---
 
 ::: {.problem}
-For a subset $X\subset\mathbb R$, say that $X$ is *algebraic* if there exists a family $\mathcal F$ of polynomials with rational coefficients such that
+For a subset $X\subset\RR$, say that $X$ is *algebraic* if there exists a family $\mathcal F$ of polynomials with rational coefficients such that
 \[
 x\in X
 \quad\Longleftrightarrow\quad
 p(x)=0\text{ for some }p\in\mathcal F.
 \]
 
-(a) Show that the set $\mathbb Q$ of rational numbers is algebraic.
+(a) Show that the set $\QQ$ of rational numbers is algebraic.
 
-(b) Show that the set $\mathbb R\setminus\mathbb Q$ of irrational numbers is not algebraic.
+(b) Show that the set $\RR\setminus\QQ$ of irrational numbers is not algebraic.
 :::
 
 ::: {.solution}

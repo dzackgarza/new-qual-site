@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $G$ is a non-cyclic finite group of order $pn$ where $p$ is prime and $n \in \mathbb{Z}^+$.
+Suppose $G$ is a non-cyclic finite group of order $pn$ where $p$ is prime and $n \in \ZZ^+$.
 Suppose $\gcd(p!, n) = 1$, and $G$ has an element of order $n$.
-Prove that $p \mid \phi(n)$, where $\phi(n) = |\{k \in \mathbb{Z} \mid 1 \leq k \leq n, \gcd(k, n) = 1\}|$ is the Euler $\phi$-function.
+Prove that $p \mid \phi(n)$, where $\phi(n) = |\{k \in \ZZ \mid 1 \leq k \leq n, \gcd(k, n) = 1\}|$ is the Euler $\phi$-function.
 :::
 
 ::: {.solution}

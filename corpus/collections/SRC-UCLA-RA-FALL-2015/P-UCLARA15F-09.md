@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let $(f_j)$ be a sequence of entire functions such that, writing $z = x + iy$, we have
 \[
-\iint_{\mathbb{C}} |f_j(z)|^2 e^{-|z|^2}\,dx\,dy \leq C, \quad j = 1, 2, \ldots,
+\iint_{\CC} |f_j(z)|^2 e^{-|z|^2}\,dx\,dy \leq C, \quad j = 1, 2, \ldots,
 \]
 for some constant $C > 0$. Show that there exists a subsequence $(f_{j_k})$ and an entire function $f$ such that we have
 \[
-\iint_{\mathbb{C}} |f_{j_k}(z) - f(z)|^2 e^{-2|z|^2}\,dx\,dy \to 0, \quad k \to \infty.
+\iint_{\CC} |f_{j_k}(z) - f(z)|^2 e^{-2|z|^2}\,dx\,dy \to 0, \quad k \to \infty.
 \]
 :::
 
@@ -35,19 +35,19 @@ for some constant $C > 0$. Show that there exists a subsequence $(f_{j_k})$ and 
 
 Assume
 \[
-\int_{\mathbb C}
+\int_{\CC}
 |f_j(z)|^2e^{-|z|^2}\,dA(z)
 \le C
 \]
 for every \(j\), where \(dA=dx\,dy\).
 
-We first obtain compactness on bounded subsets of \(\mathbb C\).
+We first obtain compactness on bounded subsets of \(\CC\).
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For every entire function \(g\) and every \(z_0\in\mathbb C\),
+For every entire function \(g\) and every \(z_0\in\CC\),
 \[
 \boxed{
 |g(z_0)|^2
@@ -148,7 +148,7 @@ for all \(j\) and all \(|z_0|\le R\).
 
 Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} and use the global hypothesis
 \[
-\int_{\mathbb C}|f_j|^2e^{-|z|^2}\,dA\le C.
+\int_{\CC}|f_j|^2e^{-|z|^2}\,dA\le C.
 \]
 
 :::
@@ -157,7 +157,7 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} and use the global h
 
 ::: pf-step
 
-Thus the family \(\{f_j\}\) is locally uniformly bounded on \(\mathbb C\).
+Thus the family \(\{f_j\}\) is locally uniformly bounded on \(\CC\).
 
 
 ::: pf-proof
@@ -174,7 +174,7 @@ By Montel's theorem, there is a subsequence
 \[
 (f_{j_k})
 \]
-converging uniformly on compact subsets of \(\mathbb C\) to an entire function \(f\).
+converging uniformly on compact subsets of \(\CC\) to an entire function \(f\).
 
 
 ::: pf-proof
@@ -192,7 +192,7 @@ In particular,
 \boxed{
 f_{j_k}(z)\to f(z)}
 \]
-for every \(z\in\mathbb C\).
+for every \(z\in\CC\).
 
 
 ::: pf-proof
@@ -208,7 +208,7 @@ Pointwise convergence follows from locally uniform convergence.
 Fatou's lemma gives
 \[
 \boxed{
-\int_{\mathbb C}
+\int_{\CC}
 |f(z)|^2e^{-|z|^2}\,dA(z)
 \le C}.
 \]
@@ -445,7 +445,7 @@ Apply step [](#s1-15){.pf-ref}.
 
 For \(k\ge K\),
 \[
-\int_{\mathbb C}
+\int_{\CC}
 |f_{j_k}-f|^2e^{-2|z|^2}\,dA
 <
 \varepsilon.
@@ -465,7 +465,7 @@ Split the integral into \(|z|\le R\) and \(|z|>R\). The inside contribution is \
 Therefore
 \[
 \boxed{
-\int_{\mathbb C}
+\int_{\CC}
 |f_{j_k}(z)-f(z)|^2e^{-2|z|^2}\,dA(z)
 \longrightarrow0}.
 \]

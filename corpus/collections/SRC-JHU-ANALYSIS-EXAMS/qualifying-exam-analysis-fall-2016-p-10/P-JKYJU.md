@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and contain the closure
+Let $U\subset\CC$ be open and contain the closure
 $\overline D$ of a unit disk. Suppose holomorphic functions
-$f_n:U\to\mathbb C$ converge uniformly on compact subsets
+$f_n:U\to\CC$ converge uniformly on compact subsets
 of $U$ to $f$, and assume that $f$ has no zero on $\partial D$.
 Prove that for all sufficiently large $n$, the functions
 $f_n$ and $f$ have the same number of zeros in $D$, counted

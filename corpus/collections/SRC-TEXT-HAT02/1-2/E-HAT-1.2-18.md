@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-In this problem we use the notions of suspension, reduced suspension, cone, and mapping cone defined in Chapter 0. Let $X$ be the subspace of $\mathbb{R}$ consisting of the sequence $1, {^1/_2}, {^1/_3}, {^1/_4}, \cdots$ together with its limit point 0.
+In this problem we use the notions of suspension, reduced suspension, cone, and mapping cone defined in Chapter 0. Let $X$ be the subspace of $\RR$ consisting of the sequence $1, {^1/_2}, {^1/_3}, {^1/_4}, \cdots$ together with its limit point 0.
 
 (a) For the suspension $SX$, show that $\pi_1(SX)$ is free on a countably infinite set of generators, and deduce that $\pi_1(SX)$ is countable.
 In contrast to this, the reduced suspension $\Sigma X$, obtained from $SX$ by collapsing the segment $\{0\} \times I$ to a point, is the shrinking wedge of circles in Example 1.25, with an uncountable fundamental group.
 
 (b) Let $C$ be the mapping cone of the quotient map $SX \to \Sigma X$.
-Show that $\pi_1(C)$ is uncountable by constructing a homomorphism from $\pi_1(C)$ onto $\Pi_\infty \mathbb{Z} / \oplus_\infty \mathbb{Z}$.
+Show that $\pi_1(C)$ is uncountable by constructing a homomorphism from $\pi_1(C)$ onto $\Pi_\infty \ZZ / \oplus_\infty \ZZ$.
 Note that $C$ is the reduced suspension of the cone $CX$.
 Thus the reduced suspension of a contractible space need not be contractible, unlike the unreduced suspension.
 :::
@@ -170,7 +170,7 @@ A word in a countable alphabet has finite length, and the set of all finite word
 
 Collapsing $E_0$ gives the reduced suspension $\Sigma X$, the shrinking wedge of circles, and there is a surjective winding homomorphism
 \[
-\rho:\pi_1(\Sigma X)\longrightarrow\prod_{n=1}^{\infty}\mathbb Z.
+\rho:\pi_1(\Sigma X)\longrightarrow\prod_{n=1}^{\infty}\ZZ.
 \]
 
 ::: pf-proof
@@ -202,7 +202,7 @@ Then
 \[
 \rho\bigl(q_*(\pi_1(SX))\bigr)
 =
-\bigoplus_{n=1}^{\infty}\mathbb Z.
+\bigoplus_{n=1}^{\infty}\ZZ.
 \]
 
 ::: pf-proof
@@ -250,8 +250,8 @@ The homomorphism $\rho$ induces a surjection
 \[
 \boxed{
 \overline\rho:\pi_1(C)\twoheadrightarrow
-\frac{\prod_{n=1}^{\infty}\mathbb Z}
-{\bigoplus_{n=1}^{\infty}\mathbb Z}.
+\frac{\prod_{n=1}^{\infty}\ZZ}
+{\bigoplus_{n=1}^{\infty}\ZZ}.
 }
 \]
 
@@ -259,10 +259,10 @@ The homomorphism $\rho$ induces a surjection
 
 Let
 \[
-p:\prod_{n=1}^{\infty}\mathbb Z
+p:\prod_{n=1}^{\infty}\ZZ
 \to
-\left(\prod_{n=1}^{\infty}\mathbb Z\right)
-/\left(\bigoplus_{n=1}^{\infty}\mathbb Z\right)
+\left(\prod_{n=1}^{\infty}\ZZ\right)
+/\left(\bigoplus_{n=1}^{\infty}\ZZ\right)
 \]
 be the quotient map.
 By step [](#s7){.pf-ref},
@@ -285,11 +285,11 @@ The group $\pi_1(C)$ is uncountable.
 
 The product
 \[
-\prod_{n=1}^{\infty}\mathbb Z
+\prod_{n=1}^{\infty}\ZZ
 \]
 has cardinality $2^{\aleph_0}$, whereas the direct sum
 \[
-\bigoplus_{n=1}^{\infty}\mathbb Z
+\bigoplus_{n=1}^{\infty}\ZZ
 \]
 is countable.
 Thus the quotient in step [](#s9){.pf-ref} is uncountable.

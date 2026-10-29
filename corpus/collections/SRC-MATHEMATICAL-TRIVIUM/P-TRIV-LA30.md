@@ -37,7 +37,7 @@ independent real parameters.
 
 ::: pf-proof
 
-A column of a complex $n\times n$ matrix lies in $\mathbb C^n$, which has
+A column of a complex $n\times n$ matrix lies in $\CC^n$, which has
 real dimension $2n$. Unitarity requires the column to have norm $1$, imposing
 one real equation. Thus the first column lies on the sphere
 $$
@@ -126,7 +126,7 @@ matrix.
 
 This is step [](#s1-4){.pf-ref}. Equivalently,
 $$
-\dim_{\mathbb R}U(n)=n^2.
+\dim_{\RR}U(n)=n^2.
 $$
 
 :::

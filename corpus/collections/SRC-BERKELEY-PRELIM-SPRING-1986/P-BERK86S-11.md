@@ -25,10 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-For $n\in\mathbb Z$, define
+For $n\in\ZZ$, define
 \[
 f_n(x)=\frac{(x-i)^n}{\sqrt\pi\,(x+i)^{n+1}},
-\qquad x\in\mathbb R.
+\qquad x\in\RR.
 \]
 Prove that the functions $f_n$ are orthonormal:
 \[

@@ -217,7 +217,7 @@ L
 \]
 has empty interior in
 \[
-\mathbb C.
+\CC.
 \]
 
 

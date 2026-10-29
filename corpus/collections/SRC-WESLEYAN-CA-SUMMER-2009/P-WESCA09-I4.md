@@ -47,11 +47,11 @@ satisfy the Cauchy--Riemann equations there.
 
 Write $f=u+iv$. Along the real axis,
 \[
-f(x)=e^{-1/x^4}\in\mathbb R
+f(x)=e^{-1/x^4}\in\RR
 \]
 for $x\ne0$, and along the imaginary axis,
 \[
-f(iy)=e^{-1/y^4}\in\mathbb R
+f(iy)=e^{-1/y^4}\in\RR
 \]
 for $y\ne0$. Since
 \[
@@ -68,7 +68,7 @@ However, for $z=t e^{i\pi/4}$ one has $z^4=-t^4$, and hence
 f(t e^{i\pi/4})=e^{1/t^4},
 \]
 which is unbounded as $t\to0^+$. Therefore $f$ is not continuous at $0$, so
-it is not analytic on $\mathbb C$. Thus the Cauchy--Riemann equations alone,
+it is not analytic on $\CC$. Thus the Cauchy--Riemann equations alone,
 without an additional regularity hypothesis, are not sufficient.
 
 :::

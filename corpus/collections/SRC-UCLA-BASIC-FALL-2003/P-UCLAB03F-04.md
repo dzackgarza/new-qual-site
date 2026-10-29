@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous.
+Let $f:\RR\to\RR$ be continuous.
 State the definition of the Riemann integral
 \[
 \int_0^1 f(x)\,dx
@@ -81,7 +81,7 @@ For any partitions $P,Q$, passing to the common refinement $P\cup Q$ can only de
 \[
 L(f,P)\le U(f,Q)
 \]
-for all $P,Q$. Therefore the set of lower sums is bounded above and the set of upper sums is bounded below, so the two quantities are defined in $\mathbb R$.
+for all $P,Q$. Therefore the set of lower sums is bounded above and the set of upper sums is bounded below, so the two quantities are defined in $\RR$.
 
 :::
 

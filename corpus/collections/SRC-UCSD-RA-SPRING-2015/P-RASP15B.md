@@ -37,22 +37,22 @@ where $\lambda_f(\alpha) = \mu(\{x : |f|(x) > \alpha\})$.
 Since all terms are nonnegative, Tonelli's theorem gives
 \[
 \begin{aligned}
-\sum_{k\in\mathbb Z}2^{kp}\lambda_f(2^k)
-&=\sum_{k\in\mathbb Z}2^{kp}
+\sum_{k\in\ZZ}2^{kp}\lambda_f(2^k)
+&=\sum_{k\in\ZZ}2^{kp}
 \int_X\mathbf1_{\{|f|>2^k\}}\,d\mu\\
 &=\int_X
-\sum_{k\in\mathbb Z}2^{kp}
+\sum_{k\in\ZZ}2^{kp}
 \mathbf1_{\{2^k<|f(x)|\}}\,d\mu(x).
 \end{aligned}
 \]
 
-Fix $a>0$. Choose $m\in\mathbb Z$ so that
+Fix $a>0$. Choose $m\in\ZZ$ so that
 \[
 2^m<a\le2^{m+1}.
 \]
 Then
 \[
-\sum_{k\in\mathbb Z}2^{kp}\mathbf1_{\{2^k<a\}}
+\sum_{k\in\ZZ}2^{kp}\mathbf1_{\{2^k<a\}}
 =\sum_{k=-\infty}^m2^{kp}
 =\frac{2^{mp}}{1-2^{-p}}.
 \]
@@ -64,7 +64,7 @@ we obtain the two-sided comparison
 \[
 \frac{2^{-p}}{1-2^{-p}}a^p
 \le
-\sum_{k\in\mathbb Z}2^{kp}\mathbf1_{\{2^k<a\}}
+\sum_{k\in\ZZ}2^{kp}\mathbf1_{\{2^k<a\}}
 \le
 \frac1{1-2^{-p}}a^p.
 \]
@@ -74,7 +74,7 @@ Applying this pointwise with $a=|f(x)|$ and integrating gives
 \[
 \frac{2^{-p}}{1-2^{-p}}\|f\|_p^p
 \le
-\sum_{k\in\mathbb Z}2^{kp}\lambda_f(2^k)
+\sum_{k\in\ZZ}2^{kp}\lambda_f(2^k)
 \le
 \frac1{1-2^{-p}}\|f\|_p^p.
 \]

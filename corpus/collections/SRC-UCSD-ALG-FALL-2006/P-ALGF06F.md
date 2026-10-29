@@ -26,17 +26,17 @@ audit:
 ---
 
 ::: {.problem}
-Consider the $\mathbb{Z}$-algebra $R := \mathbb{Z}[X]/(2X + 1)$.
+Consider the $\ZZ$-algebra $R := \ZZ[X]/(2X + 1)$.
 
-(a) Show that there is a ring isomorphism $R \simeq S^{-1}\mathbb{Z}$ where $S$ is the multiplicatively closed subset of $\mathbb{Z}$ consisting of all the non-negative integral powers of 2, i.e.\ $S := \{1, 2, 2^2, 2^3, \ldots\}$.
+(a) Show that there is a ring isomorphism $R \simeq S^{-1}\ZZ$ where $S$ is the multiplicatively closed subset of $\ZZ$ consisting of all the non-negative integral powers of 2, i.e.\ $S := \{1, 2, 2^2, 2^3, \ldots\}$.
 
-(b) Is $R$ a flat $\mathbb{Z}$-module?
+(b) Is $R$ a flat $\ZZ$-module?
 Justify your answer.
 
-(c) Is $R$ a projective $\mathbb{Z}$-module?
+(c) Is $R$ a projective $\ZZ$-module?
 Justify your answer.
 
-(d) Is $R$ an injective $\mathbb{Z}$-module?
+(d) Is $R$ an injective $\ZZ$-module?
 Justify your answer.
 :::
 
@@ -48,7 +48,7 @@ Write $\bar X$ for the image of $X$ in $R$.
 ::: {.pf-step #r-iso-localization}
 There is an isomorphism
 \[
-R\cong \mathbb Z[1/2]=S^{-1}\mathbb Z.
+R\cong \ZZ[1/2]=S^{-1}\ZZ.
 \]
 
 ::: pf-proof
@@ -57,38 +57,38 @@ In $R$ the relation $2\bar X+1=0$ gives
 2(-\bar X)=1,
 \]
 so $2$ is a unit with inverse $-\bar X$.
-By the universal property of localization, the inclusion $\mathbb Z\to R$ therefore extends uniquely to a homomorphism
+By the universal property of localization, the inclusion $\ZZ\to R$ therefore extends uniquely to a homomorphism
 \[
-\psi:\mathbb Z[1/2]\longrightarrow R,
+\psi:\ZZ[1/2]\longrightarrow R,
 \qquad
 \psi(1/2)=-\bar X.
 \]
 
 Conversely, evaluation at $-1/2$ defines a homomorphism
 \[
-\mathbb Z[X]\longrightarrow \mathbb Z[1/2],
+\ZZ[X]\longrightarrow \ZZ[1/2],
 \qquad
 X\longmapsto -1/2.
 \]
 Since $2(-1/2)+1=0$, it factors through a homomorphism
 \[
-\phi:R\longrightarrow\mathbb Z[1/2],
+\phi:R\longrightarrow\ZZ[1/2],
 \qquad
 \phi(\bar X)=-1/2.
 \]
-The composite $\phi\psi$ fixes $\mathbb Z$ and $1/2$, hence is the identity on $\mathbb Z[1/2]$.
-The composite $\psi\phi$ fixes $\mathbb Z$ and $\bar X$, hence is the identity on $R$.
+The composite $\phi\psi$ fixes $\ZZ$ and $1/2$, hence is the identity on $\ZZ[1/2]$.
+The composite $\psi\phi$ fixes $\ZZ$ and $\bar X$, hence is the identity on $R$.
 Thus $\phi$ and $\psi$ are inverse isomorphisms.
 :::
 
 :::
 
 ::: pf-step
-The $\mathbb Z$-module $R$ is flat.
+The $\ZZ$-module $R$ is flat.
 
 ::: pf-proof
-By step [](#r-iso-localization){.pf-ref} it suffices to consider $S^{-1}\mathbb Z$.
-For every exact sequence of $\mathbb Z$-modules
+By step [](#r-iso-localization){.pf-ref} it suffices to consider $S^{-1}\ZZ$.
+For every exact sequence of $\ZZ$-modules
 \[
 0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow0,
 \]
@@ -103,55 +103,55 @@ Indeed, surjectivity is immediate by lifting numerators, while if $m/s$ maps to 
 lies in the image of $S^{-1}M'$.
 Since
 \[
-S^{-1}M\cong M\otimes_{\mathbb Z}S^{-1}\mathbb Z,
+S^{-1}M\cong M\otimes_{\ZZ}S^{-1}\ZZ,
 \]
-tensoring with $R\cong S^{-1}\mathbb Z$ is exact.
-Therefore $R$ is flat over $\mathbb Z$.
+tensoring with $R\cong S^{-1}\ZZ$ is exact.
+Therefore $R$ is flat over $\ZZ$.
 :::
 
 :::
 
 ::: pf-step
-The $\mathbb Z$-module $R$ is not projective.
+The $\ZZ$-module $R$ is not projective.
 
 ::: pf-proof
-Every projective module over the principal ideal domain $\mathbb Z$ is free: a projective module is a direct summand of a free module, hence a submodule of a free $\mathbb Z$-module, and every submodule of a free module over a PID is free.
+Every projective module over the principal ideal domain $\ZZ$ is free: a projective module is a direct summand of a free module, hence a submodule of a free $\ZZ$-module, and every submodule of a free module over a PID is free.
 
 Suppose $R$ were projective.
-Then, by step [](#r-iso-localization){.pf-ref}, $\mathbb Z[1/2]$ would be a nonzero free $\mathbb Z$-module.
-But multiplication by $2$ is surjective on $\mathbb Z[1/2]$, since
+Then, by step [](#r-iso-localization){.pf-ref}, $\ZZ[1/2]$ would be a nonzero free $\ZZ$-module.
+But multiplication by $2$ is surjective on $\ZZ[1/2]$, since
 \[
 \frac{a}{2^k}=2\frac{a}{2^{k+1}}.
 \]
-Multiplication by $2$ is not surjective on any nonzero free $\mathbb Z$-module: if $e$ is a basis element, there is no vector $v$ with $2v=e$, because all coordinates of $2v$ are even.
-This contradiction shows that $R$ is not projective over $\mathbb Z$.
+Multiplication by $2$ is not surjective on any nonzero free $\ZZ$-module: if $e$ is a basis element, there is no vector $v$ with $2v=e$, because all coordinates of $2v$ are even.
+This contradiction shows that $R$ is not projective over $\ZZ$.
 :::
 
 :::
 
 ::: pf-step
-The $\mathbb Z$-module $R$ is not injective.
+The $\ZZ$-module $R$ is not injective.
 
 ::: pf-proof
 Let
 \[
-i:3\mathbb Z\hookrightarrow\mathbb Z
+i:3\ZZ\hookrightarrow\ZZ
 \]
 be the inclusion and define
 \[
-f:3\mathbb Z\longrightarrow\mathbb Z[1/2],
+f:3\ZZ\longrightarrow\ZZ[1/2],
 \qquad
 f(3k)=k.
 \]
-If $\mathbb Z[1/2]$ were injective, $f$ would extend along $i$ to a homomorphism
+If $\ZZ[1/2]$ were injective, $f$ would extend along $i$ to a homomorphism
 \[
-F:\mathbb Z\longrightarrow\mathbb Z[1/2].
+F:\ZZ\longrightarrow\ZZ[1/2].
 \]
 Writing $u=F(1)$, we would obtain
 \[
 3u=F(3)=f(3)=1.
 \]
-But no element of $\mathbb Z[1/2]$ satisfies $3u=1$: if $u=a/2^k$, then $3a=2^k$, impossible because the left side is divisible by $3$ and the right side is not.
+But no element of $\ZZ[1/2]$ satisfies $3u=1$: if $u=a/2^k$, then $3a=2^k$, impossible because the left side is divisible by $3$ and the right side is not.
 Therefore the required extension does not exist, so $R$ is not injective.
 :::
 

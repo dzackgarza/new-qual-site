@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-1.2-6
 kind: problem
-title: Complement of closed discrete subspace of $\mathbb{R}^n$ simply-connected for $n \geq 3$
+title: Complement of closed discrete subspace of $\RR^n$ simply-connected for $n \geq 3$
 classification:
   areas:
   - topology
@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-Use Proposition 1.26 to show that the complement of a closed discrete subspace of $\mathbb{R}^n$ is simply-connected if $n \geq 3$.
+Use Proposition 1.26 to show that the complement of a closed discrete subspace of $\RR^n$ is simply-connected if $n \geq 3$.
 :::
 
 ::: {.solution}
-Let $D\subset\mathbb R^n$ be closed and discrete, with $n\ge3$, and put
+Let $D\subset\RR^n$ be closed and discrete, with $n\ge3$, and put
 \[
-Y=\mathbb R^n\setminus D.
+Y=\RR^n\setminus D.
 \]
 
 ::: pf
@@ -73,7 +73,7 @@ Thus the family is locally finite.
 
 The complement $Y$ deformation retracts onto
 \[
-Z=\mathbb R^n\setminus\bigcup_{d\in D}\operatorname{int}(B_d).
+Z=\RR^n\setminus\bigcup_{d\in D}\operatorname{int}(B_d).
 \]
 
 ::: pf-proof
@@ -91,7 +91,7 @@ Y\simeq Z.
 
 ::: {.pf-step #s3}
 
-The space $\mathbb R^n$ is obtained from $Z$ by attaching one $n$-cell for each $d\in D$ along the sphere $\partial B_d$.
+The space $\RR^n$ is obtained from $Z$ by attaching one $n$-cell for each $d\in D$ along the sphere $\partial B_d$.
 
 ::: pf-proof
 
@@ -99,7 +99,7 @@ Each omitted open ball is restored by adjoining the closed ball $B_d\cong D^n$ a
 \[
 \partial B_d\cong S^{n-1}\subset Z.
 \]
-Since the balls are disjoint, doing this for all $d\in D$ recovers all of $\mathbb R^n$.
+Since the balls are disjoint, doing this for all $d\in D$ recovers all of $\RR^n$.
 
 :::
 
@@ -109,17 +109,17 @@ Since the balls are disjoint, doing this for all $d\in D$ recovers all of $\math
 
 The inclusion
 \[
-Z\hookrightarrow\mathbb R^n
+Z\hookrightarrow\RR^n
 \]
 induces an isomorphism on fundamental groups.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $\mathbb R^n$ is obtained from $Z$ by attaching cells all of the same dimension $n>2$.
+By step [](#s3){.pf-ref}, $\RR^n$ is obtained from $Z$ by attaching cells all of the same dimension $n>2$.
 Proposition 1.26(b) says that attaching cells of dimension greater than $2$ does not change the fundamental group.
 Hence
 \[
-\pi_1(Z)\cong\pi_1(\mathbb R^n)=0.
+\pi_1(Z)\cong\pi_1(\RR^n)=0.
 \]
 
 :::

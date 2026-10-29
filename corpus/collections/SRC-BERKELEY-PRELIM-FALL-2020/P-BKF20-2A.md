@@ -35,7 +35,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $S$ be a set and let $(f_n)$ and $(g_n)$ be sequences of functions $S\to\mathbb R$.
+Let $S$ be a set and let $(f_n)$ and $(g_n)$ be sequences of functions $S\to\RR$.
 
 (a) Show that if $f_n\to f$ and $g_n\to g$ uniformly and $f,g$ are bounded, then $f_ng_n\to fg$ uniformly.
 

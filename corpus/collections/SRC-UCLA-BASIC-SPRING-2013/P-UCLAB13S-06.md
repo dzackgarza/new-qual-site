@@ -29,7 +29,7 @@ audit:
 
 Let
 \[
-A\in M_n(\mathbb C).
+A\in M_n(\CC).
 \]
 By the Schur triangularization theorem, there exists a unitary matrix $U$ such that
 \[
@@ -68,7 +68,7 @@ for every $j$ and the $\mu_j$ are pairwise distinct.
 Each open disk
 \[
 B(\lambda_j,\varepsilon)
-\subseteq\mathbb C
+\subseteq\CC
 \]
 contains infinitely many points.
 Choose $\mu_1$ in the first disk.
@@ -137,7 +137,7 @@ By construction in step [](#s1-2){.pf-ref}, these are pairwise distinct.
 
 ::: {.pf-step #s1-5}
 
-Hence $T_\varepsilon$ is diagonalizable over $\mathbb C$.
+Hence $T_\varepsilon$ is diagonalizable over $\CC$.
 
 
 ::: pf-proof
@@ -194,7 +194,7 @@ A_\varepsilon\to A.
 
 Therefore the diagonalizable complex matrices are dense in
 \[
-\boxed{M_n(\mathbb C)}.
+\boxed{M_n(\CC)}.
 \]
 
 
@@ -282,7 +282,7 @@ Therefore
 \Delta(B)<0
 \]
 for all $B$ in some open neighborhood of $R$.
-Such a matrix has no real eigenvalues and hence cannot be diagonalizable over $\mathbb R$.
+Such a matrix has no real eigenvalues and hence cannot be diagonalizable over $\RR$.
 
 :::
 
@@ -294,7 +294,7 @@ For
 \[
 n>2,
 \]
-there is likewise an open set of real matrices containing no matrix diagonalizable over $\mathbb R$.
+there is likewise an open set of real matrices containing no matrix diagonalizable over $\RR$.
 
 
 ::: pf-proof
@@ -324,7 +324,7 @@ i
 \]
 These neighborhoods may be chosen disjoint from the real axis.
 Hence every sufficiently small real perturbation of $A_0$ still has a nonreal conjugate pair of eigenvalues.
-Such a matrix cannot be diagonalizable over $\mathbb R$.
+Such a matrix cannot be diagonalizable over $\RR$.
 Thus an open neighborhood of $A_0$ contains no real-diagonalizable matrix.
 
 :::
@@ -337,9 +337,9 @@ Consequently, for every
 \[
 n\ge2,
 \]
-the real matrices diagonalizable over $\mathbb R$ are not dense in
+the real matrices diagonalizable over $\RR$ are not dense in
 \[
-M_n(\mathbb R).
+M_n(\RR).
 \]
 
 

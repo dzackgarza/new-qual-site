@@ -14,7 +14,7 @@ audit:
 Let $X$ be the Klein bottle.
 
 1. Give a $\Delta$-complex structure on $X$.
-2. Using that structure, compute the simplicial cohomology groups of $X$ with coefficients in $\mathbb Z/2\mathbb Z$.
+2. Using that structure, compute the simplicial cohomology groups of $X$ with coefficients in $\ZZ/2\ZZ$.
 :::
 
 ::: {.solution}
@@ -23,7 +23,7 @@ Write
 \[
 \mathbb F_2
 \coloneqq
-\mathbb Z/2\mathbb Z.
+\ZZ/2\ZZ.
 \]
 
 ::: pf
@@ -504,12 +504,12 @@ n>2.
 The complete answer is
 \[
 \boxed{
-H^n(X;\mathbb Z/2)
+H^n(X;\ZZ/2)
 \cong
 \begin{cases}
-\mathbb Z/2,
+\ZZ/2,
 &n=0,2,\\
-(\mathbb Z/2)^2,
+(\ZZ/2)^2,
 &n=1,\\
 0,
 &n>2.
@@ -534,7 +534,7 @@ Step [](#s1-1){.pf-ref} gives the
 \]
 structure, and step [](#s1-13){.pf-ref} gives its simplicial cohomology with
 \[
-\mathbb Z/2
+\ZZ/2
 \]
 coefficients.
 

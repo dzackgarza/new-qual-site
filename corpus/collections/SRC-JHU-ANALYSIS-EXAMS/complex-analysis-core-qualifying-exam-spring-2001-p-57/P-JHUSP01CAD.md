@@ -41,10 +41,10 @@ Lifting by the exponential map gives a positive harmonic function on the whole p
 
 Define
 $$
-v(w)=u(e^w),\qquad w\in\mathbb C.
+v(w)=u(e^w),\qquad w\in\CC.
 $$
 Since the exponential map is holomorphic and never vanishes, $v$ is defined on
-all of $\mathbb C$. Composition of a harmonic function with a holomorphic map is
+all of $\CC$. Composition of a harmonic function with a holomorphic map is
 harmonic; explicitly, writing $w=s+it$ and using the chain rule gives
 $$
 \Delta v(w)=|e^w|^2(\Delta u)(e^w)=0.
@@ -61,7 +61,7 @@ Every positive harmonic function on the plane is constant.
 
 ::: pf-proof
 
-Because $\mathbb C$ is simply connected, the harmonic function $v$ has a global
+Because $\CC$ is simply connected, the harmonic function $v$ has a global
 harmonic conjugate, so there is an entire function $H$ with
 $\operatorname{Re}H=v$. Then
 $$
@@ -84,7 +84,7 @@ Constancy descends to the punctured plane.
 
 ::: pf-proof
 
-The exponential map is onto $\mathbb C\setminus\{0\}$. For any $z\ne0$, choose
+The exponential map is onto $\CC\setminus\{0\}$. For any $z\ne0$, choose
 $w$ with $e^w=z$. If $v\equiv c$, then
 $$
 u(z)=u(e^w)=v(w)=c.

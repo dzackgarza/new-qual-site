@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $y:\mathbb R\to\mathbb R$ solve
+Let $y:\RR\to\RR$ solve
 \[
 y''=-|y|,
 \qquad

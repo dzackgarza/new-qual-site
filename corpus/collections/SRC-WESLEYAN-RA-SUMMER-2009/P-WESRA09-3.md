@@ -29,9 +29,9 @@ Assuming this, prove that a premeasure is $\sigma$-subadditive.
 (c) Prove that the inverse of a bijective linear map $f:X\to Y$ is linear.
 If $X,Y$ are normed and $f$ is continuous, state when a course theorem implies that $f^{-1}$ is continuous, and explain why.
 
-(d) In $C([-1,2],\mathbb R)$ with the uniform norm, determine the uniform closure of
+(d) In $C([-1,2],\RR)$ with the uniform norm, determine the uniform closure of
 \[
-\left\{x\mapsto\sum_{n=0}^N a_nx^{3n+1}:N\ge0,\ a_n\in\mathbb R\right\}.
+\left\{x\mapsto\sum_{n=0}^N a_nx^{3n+1}:N\ge0,\ a_n\in\RR\right\}.
 \]
 :::
 
@@ -40,8 +40,8 @@ If $X,Y$ are normed and $f$ is continuous, state when a course theorem implies t
 For part (d), write
 \[
 \mathcal S
-=\left\{x\mapsto\sum_{n=0}^N a_nx^{3n+1}:N\ge0,\ a_n\in\mathbb R\right\}
-\subset C([-1,2],\mathbb R).
+=\left\{x\mapsto\sum_{n=0}^N a_nx^{3n+1}:N\ge0,\ a_n\in\RR\right\}
+\subset C([-1,2],\RR).
 \]
 
 ::: pf
@@ -160,7 +160,7 @@ Therefore every uniform limit of functions in \(\mathcal S\) also vanishes at \(
 
 ::: {.pf-step #s1-6}
 
-Every \(g\in C([-1,2],\mathbb R)\) with \(g(0)=0\) belongs to \(\overline{\mathcal S}^{\|\cdot\|_\infty}\).
+Every \(g\in C([-1,2],\RR)\) with \(g(0)=0\) belongs to \(\overline{\mathcal S}^{\|\cdot\|_\infty}\).
 
 
 ::: pf-proof
@@ -211,7 +211,7 @@ The answer to part (d) is
 \[
 \boxed{
 \overline{\mathcal S}^{\|\cdot\|_\infty}
-=\{g\in C([-1,2],\mathbb R):g(0)=0\}}.
+=\{g\in C([-1,2],\RR):g(0)=0\}}.
 \]
 
 

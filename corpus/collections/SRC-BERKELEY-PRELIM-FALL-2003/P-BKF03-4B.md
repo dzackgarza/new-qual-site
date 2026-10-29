@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let L be a line in C, and let f be an entire function such that $f ( \mathbb { C } ) \cap L = \emptyset$ . Prove that $f$ is constant.
+Let L be a line in C, and let f be an entire function such that $f ( \CC ) \cap L = \emptyset$ . Prove that $f$ is constant.
 (Do not use the theorem of Picard that the image of a nonconstant entire function omits at most one complex number.)
 :::
 
@@ -34,21 +34,21 @@ Let L be a line in C, and let f be an entire function such that $f ( \mathbb { C
 ::: pf
 
 ::: {.pf-step #g-def-and-property}
-There is an entire function $g$, constant if and only if $f$ is constant, whose image does not meet the imaginary axis $i\mathbb R$.
+There is an entire function $g$, constant if and only if $f$ is constant, whose image does not meet the imaginary axis $i\RR$.
 
 ::: pf-proof
 Write the line as
 \[
-L=z_0+e^{i\theta}\mathbb R.
+L=z_0+e^{i\theta}\RR.
 \]
 Define
 \[
 g(z):=i e^{-i\theta}\bigl(f(z)-z_0\bigr).
 \]
-Then $g$ is entire, and multiplication by $ie^{-i\theta}$ sends the direction $e^{i\theta}\mathbb R$ to $i\mathbb R$.
+Then $g$ is entire, and multiplication by $ie^{-i\theta}$ sends the direction $e^{i\theta}\RR$ to $i\RR$.
 Hence
 \[
-g(\mathbb C)\cap i\mathbb R=\varnothing.
+g(\CC)\cap i\RR=\varnothing.
 \]
 Moreover, $g$ is constant if and only if $f$ is constant.
 Thus it suffices to prove the claim for $g$.
@@ -57,7 +57,7 @@ Thus it suffices to prove the claim for $g$.
 :::
 
 ::: {.pf-step #image-in-half-plane}
-The connected set $g(\mathbb C)$ lies entirely in one of the two open half-planes
+The connected set $g(\CC)$ lies entirely in one of the two open half-planes
 \[
 \{w:\operatorname{Re}w>0\},
 \qquad
@@ -65,9 +65,9 @@ The connected set $g(\mathbb C)$ lies entirely in one of the two open half-plane
 \]
 
 ::: pf-proof
-The complement $\mathbb C\setminus i\mathbb R$ has exactly those two connected components.
-Since $\mathbb C$ is connected and $g$ is continuous, its image $g(\mathbb C)$ is connected.
-Because it avoids $i\mathbb R$, it must be contained in a single component.
+The complement $\CC\setminus i\RR$ has exactly those two connected components.
+Since $\CC$ is connected and $g$ is continuous, its image $g(\CC)$ is connected.
+Because it avoids $i\RR$, it must be contained in a single component.
 :::
 
 :::
@@ -76,7 +76,7 @@ Because it avoids $i\mathbb R$, it must be contained in a single component.
 After replacing $g$ by $-g$ if necessary, assume
 \[
 \operatorname{Re}g(z)<0
-\qquad(z\in\mathbb C).
+\qquad(z\in\CC).
 \]
 Then $e^{g}$ is a bounded entire function.
 

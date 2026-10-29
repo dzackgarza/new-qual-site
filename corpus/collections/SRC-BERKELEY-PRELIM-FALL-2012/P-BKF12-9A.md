@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-9A
 kind: problem
-title: Ring homomorphisms $\mathbb Z[x]/(x^2+3)\to\mathbb Z[x]/(x^2-x+1)$
+title: Ring homomorphisms $\ZZ[x]/(x^2+3)\to\ZZ[x]/(x^2-x+1)$
 classification:
   areas:
   - prelim
@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Does there exists a homomorphism of commutative rings with unit from $\mathbb { Z } [ x ] / ( x ^ { 2 } + 3 )$ to $\mathbb { Z } [ x ] / ( x ^ { 2 } - x + 1 ) ?$ Either exhibit such a homomorphism, or prove that none exists.
+Does there exists a homomorphism of commutative rings with unit from $\ZZ [ x ] / ( x ^ { 2 } + 3 )$ to $\ZZ [ x ] / ( x ^ { 2 } - x + 1 ) ?$ Either exhibit such a homomorphism, or prove that none exists.
 :::
 
 ::: {.solution}

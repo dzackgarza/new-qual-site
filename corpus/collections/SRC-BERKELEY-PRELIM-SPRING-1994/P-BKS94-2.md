@@ -33,7 +33,7 @@ audit:
 ::: {.problem}
 Let $A$ be a real $n \times n$ matrix. Let $M$ denote the maximum of the absolute values of the eigenvalues of $A$.
 
-1. Prove that if $A$ is symmetric, then $\|Ax\| \leqslant M \|x\|$ for all $x$ in $\mathbb{R}^n$. (Here, $\|\cdot\|$ denotes the Euclidean norm.)
+1. Prove that if $A$ is symmetric, then $\|Ax\| \leqslant M \|x\|$ for all $x$ in $\RR^n$. (Here, $\|\cdot\|$ denotes the Euclidean norm.)
 
 2. Prove that the preceding inequality can fail if $A$ is not symmetric.
 :::

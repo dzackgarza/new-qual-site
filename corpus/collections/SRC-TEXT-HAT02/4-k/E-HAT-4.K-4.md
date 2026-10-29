@@ -30,7 +30,7 @@ Show that $SP_2(S^1)$ is a Möbius band, and that this is consistent with the de
 :::
 
 ::: {.solution}
-Represent an unordered pair of points of \(S^1\subset\mathbb C\) by the chord joining them. Thus
+Represent an unordered pair of points of \(S^1\subset\CC\) by the chord joining them. Thus
 \[
 \{z,w\}\longmapsto [z,w]
 \]

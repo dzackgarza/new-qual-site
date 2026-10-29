@@ -70,7 +70,7 @@ Let $\mu$ be an eigenvalue of $f(T)$. Then
 $$
 f(T)-\mu I
 $$
-is not invertible. Since the scalar field is $\mathbb C$, factor
+is not invertible. Since the scalar field is $\CC$, factor
 $$
 f(z)-\mu=c\prod_{j=1}^r(z-\lambda_j)
 $$

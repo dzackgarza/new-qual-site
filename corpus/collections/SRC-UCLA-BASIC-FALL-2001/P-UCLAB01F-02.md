@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb N$ denote the positive integers and define
+Let $\NN$ denote the positive integers and define
 \[
 a_n=\frac{(-1)^n}{n}.
 \]
-Let $\alpha\in\mathbb R$.
-Prove that there is a bijection $\sigma:\mathbb N\to\mathbb N$ such that
+Let $\alpha\in\RR$.
+Prove that there is a bijection $\sigma:\NN\to\NN$ such that
 \[
 \sum_{n=1}^{\infty}a_{\sigma(n)}=\alpha.
 \]
@@ -114,7 +114,7 @@ Likewise, each negative block is nonempty, because immediately before it the run
 
 The order constructed in step [](#s1-2){.pf-ref} defines a bijection
 \[
-\sigma:\mathbb N\to\mathbb N.
+\sigma:\NN\to\NN.
 \]
 
 

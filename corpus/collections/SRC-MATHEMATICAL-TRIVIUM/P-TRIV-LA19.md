@@ -29,7 +29,7 @@ $$
 
 (a) Calculate $\sigma_i^\dagger$, $i = 1, 2, 3$.
 
-(b) Decompose a matrix $A = \begin{bmatrix} a & b + ic \\ b - ic & -a \end{bmatrix}$, $a, b, c \in \mathbb{R}$, into a sum of $\sigma_i$.
+(b) Decompose a matrix $A = \begin{bmatrix} a & b + ic \\ b - ic & -a \end{bmatrix}$, $a, b, c \in \RR$, into a sum of $\sigma_i$.
 
 (c) Prove that $\sigma_i$, $i = 1, 2, 3$, constitute a basis in the space of $2 \times 2$ hermitian matrices with zero trace.
 
@@ -96,7 +96,7 @@ $$
 ::: {.pf-step #s1-3}
 
 Every $2\times2$ Hermitian matrix of trace zero has the form in step
-[](#s1-2){.pf-ref} with $a,b,c\in\mathbb R$.
+[](#s1-2){.pf-ref} with $a,b,c\in\RR$.
 
 
 ::: pf-proof
@@ -109,7 +109,7 @@ u&z\\
 \overline z&v
 \end{pmatrix}
 $$
-be Hermitian. Then $u,v\in\mathbb R$. If $\operatorname{Tr}H=0$, then
+be Hermitian. Then $u,v\in\RR$. If $\operatorname{Tr}H=0$, then
 $$
 v=-u.
 $$
@@ -117,7 +117,7 @@ Write
 $$
 z=b+ic
 $$
-with $b,c\in\mathbb R$. Then $H$ has the form of step [](#s1-2){.pf-ref}.
+with $b,c\in\RR$. Then $H$ has the form of step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -126,7 +126,7 @@ with $b,c\in\mathbb R$. Then $H$ has the form of step [](#s1-2){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 The matrices $\sigma_1,\sigma_2,\sigma_3$ are linearly independent over
-$\mathbb R$.
+$\RR$.
 
 
 ::: pf-proof
@@ -135,7 +135,7 @@ Suppose
 $$
 r_1\sigma_1+r_2\sigma_2+r_3\sigma_3=0,
 \qquad
-r_j\in\mathbb R.
+r_j\in\RR.
 $$
 Comparing the diagonal entries gives $r_3=0$. Comparing the upper-right entry
 then gives
@@ -174,7 +174,7 @@ $$
 \boxed{
 H=\alpha I+\beta_1\sigma_1+\beta_2\sigma_2+\beta_3\sigma_3,
 \qquad
-\alpha,\beta_j\in\mathbb R.
+\alpha,\beta_j\in\RR.
 }
 $$
 

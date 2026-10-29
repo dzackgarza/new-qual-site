@@ -37,7 +37,7 @@ $$
 $$
 Hence by the Fubini-Tonelli theorem $\frac{xy}{(x^2+y^2)^2}$ is (Lebesgue) integrable on $[-1,1] \times [-1,1]$.
 
-(c) Assume that $f$ is a continuous real-valued function on $\mathbb{R}$ and $g$ is Lebesgue measurable, then $f > g$ is Lebesgue measurable.
+(c) Assume that $f$ is a continuous real-valued function on $\RR$ and $g$ is Lebesgue measurable, then $f > g$ is Lebesgue measurable.
 
 (d) Let $X$ be an infinite-dimensional Banach space.
 Then every nonempty weak*-open set in $X^*$ is unbounded with respect to the induced norm.
@@ -55,15 +55,15 @@ Part (a) is false.
 
 ::: pf-proof
 
-Take $X=\mathbb R$ with Lebesgue measure and let
+Take $X=\RR$ with Lebesgue measure and let
 \[
 g_n=f_n=\mathbf1_{[n,n+1]}.
 \]
 Then $f_n,g_n\in L^1$, $|f_n|\le g_n$, and
 \[
-\int_{\mathbb R}g_n\,dx=1
+\int_{\RR}g_n\,dx=1
 \]
-for every $n$. Moreover, for every fixed $x\in\mathbb R$,
+for every $n$. Moreover, for every fixed $x\in\RR$,
 \[
 f_n(x)=g_n(x)\longrightarrow0,
 \]

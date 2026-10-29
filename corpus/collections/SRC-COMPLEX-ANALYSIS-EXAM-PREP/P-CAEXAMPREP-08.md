@@ -64,7 +64,7 @@ The hypothesis \(|p(z)|<1\) for every \(|z|=1\) is impossible.
 
 ::: pf-proof
 
-Under that hypothesis, \(q\) cannot be the zero polynomial: if \(q\equiv0\), then \(p(z)=z^n\) and \(|p(z)|=1\) on the unit circle. Hence \(q\) is a nonzero polynomial of degree at most \(n-1\), so it has at most \(n-1\) zeros in \(\mathbb C\), counted with multiplicity. This contradicts step [](#s1-1){.pf-ref}, which gives \(n\) zeros already in the unit disc.
+Under that hypothesis, \(q\) cannot be the zero polynomial: if \(q\equiv0\), then \(p(z)=z^n\) and \(|p(z)|=1\) on the unit circle. Hence \(q\) is a nonzero polynomial of degree at most \(n-1\), so it has at most \(n-1\) zeros in \(\CC\), counted with multiplicity. This contradicts step [](#s1-1){.pf-ref}, which gives \(n\) zeros already in the unit disc.
 
 :::
 

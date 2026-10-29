@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $f _ { n } : D \to \mathbb { C } , n = 1 , 2 , 3 , . . . ,$ be a sequence of holomorphic functions on the unit disk D such that $f _ { n } ^ { - 1 } ( 0 ) = \{ c _ { n } \}$ , where $c _ { n } \in D$ . Suppose that $f _ { n } \to f _ { 0 }$ uniformly, where $f _ { 0 }$ is not constant.
+2. Let $f _ { n } : D \to \CC , n = 1 , 2 , 3 , . . . ,$ be a sequence of holomorphic functions on the unit disk D such that $f _ { n } ^ { - 1 } ( 0 ) = \{ c _ { n } \}$ , where $c _ { n } \in D$ . Suppose that $f _ { n } \to f _ { 0 }$ uniformly, where $f _ { 0 }$ is not constant.
 
 a) Prove that $f _ { 0 }$ has at most one zero in $D$
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-12
 kind: problem
-title: The discrete metric on $\mathbb R$
+title: The discrete metric on $\RR$
 classification:
   areas:
   - prelim

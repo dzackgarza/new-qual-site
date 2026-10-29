@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f,g\) be entire functions satisfying, for every \(z\in\mathbb C\),
+Let \(f,g\) be entire functions satisfying, for every \(z\in\CC\),
 \[
 f'(z)=g(z),\qquad g'(z)=-f(z),\qquad f(2z)=2f(z)g(z).
 \]

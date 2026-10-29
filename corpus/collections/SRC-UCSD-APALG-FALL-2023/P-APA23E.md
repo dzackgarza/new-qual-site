@@ -15,29 +15,29 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and let $V$ be a finite-dimensional $G$-module over $\mathbb{C}$.
-Let $\chi \colon G \to \mathbb{C}$ be the character of $V$ and consider the linear operator $\varphi \colon V \to V$ given by
+Let $G$ be a finite group and let $V$ be a finite-dimensional $G$-module over $\CC$.
+Let $\chi \colon G \to \CC$ be the character of $V$ and consider the linear operator $\varphi \colon V \to V$ given by
 \[
 \varphi(v) := \sum_{g \in G} \overline{\chi}(g)\, (g \cdot v),
 \]
 where $\overline{\chi}(g)$ denotes the complex conjugate of $\chi(g)$.
 Assume that $V$ is irreducible.
 
-Prove that there exists a complex number $c \in \mathbb{C}$ such that $\varphi(v) = cv$ for all $v \in V$, and find the value of $c$.
+Prove that there exists a complex number $c \in \CC$ such that $\varphi(v) = cv$ for all $v \in V$, and find the value of $c$.
 :::
 
 ::: {.solution}
 
 Let $\rho:G\to\operatorname{GL}(V)$ be the representation and set
 \[
-z:=\sum_{g\in G}\overline{\chi(g)}\,g\in\mathbb C[G].
+z:=\sum_{g\in G}\overline{\chi(g)}\,g\in\CC[G].
 \]
 Then $\varphi=\rho(z)$.
 
 ::: pf
 
 ::: {.pf-step #z-is-central}
-The element $z$ is central in $\mathbb C[G]$.
+The element $z$ is central in $\CC[G]$.
 
 ::: pf-proof
 Characters are class functions, so for every $h,g\in G$,
@@ -57,13 +57,13 @@ where we reindexed by $x=hgh^{-1}$.
 :::
 
 ::: {.pf-step #phi-is-scalar}
-There exists $c\in\mathbb C$ such that
+There exists $c\in\CC$ such that
 \[
 \varphi=cI_V.
 \]
 
 ::: pf-proof
-By step [](#z-is-central){.pf-ref}, $\rho(z)$ commutes with $\rho(h)$ for every $h\in G$. Since $V$ is irreducible over $\mathbb C$, Schur's lemma implies that every such endomorphism is scalar. Hence $\varphi=cI_V$.
+By step [](#z-is-central){.pf-ref}, $\rho(z)$ commutes with $\rho(h)$ for every $h\in G$. Since $V$ is irreducible over $\CC$, Schur's lemma implies that every such endomorphism is scalar. Hence $\varphi=cI_V$.
 :::
 
 :::

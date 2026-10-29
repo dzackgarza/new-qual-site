@@ -456,7 +456,7 @@ For each $x\in X$, the scalar sequence
 \[
 h_n(x)
 \]
-is Cauchy in $\mathbb R$, hence converges.
+is Cauchy in $\RR$, hence converges.
 Define
 \[
 h(x)=\lim_{n\to\infty}h_n(x).

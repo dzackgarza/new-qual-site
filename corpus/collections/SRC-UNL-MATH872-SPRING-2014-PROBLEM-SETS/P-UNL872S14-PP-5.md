@@ -39,9 +39,9 @@ be the number of edges. Choose an orientation on every edge.
 The simplicial chain groups are
 \[
 \boxed{
-C_1(Y)\cong\mathbb Z^e,
+C_1(Y)\cong\ZZ^e,
 \qquad
-C_0(Y)\cong\mathbb Z^v,
+C_0(Y)\cong\ZZ^v,
 \qquad
 C_n(Y)=0\text{ for }n\ge2}.
 \]
@@ -107,7 +107,7 @@ The same is true for every integer linear combination of such boundaries.
 
 Define the augmentation homomorphism
 \[
-\varepsilon:C_0(Y)\to\mathbb Z
+\varepsilon:C_0(Y)\to\ZZ
 \]
 by
 \[
@@ -324,7 +324,7 @@ whose rank is \(v-1\) by step [](#s1-10){.pf-ref}.
 
 Since
 \[
-C_1(Y)\cong\mathbb Z^e,
+C_1(Y)\cong\ZZ^e,
 \]
 the kernel of \(\partial_1\) is free abelian of rank
 \[
@@ -335,7 +335,7 @@ the kernel of \(\partial_1\) is free abelian of rank
 ::: pf-proof
 
 The kernel of a homomorphism between free abelian groups is free. Rank-nullity
-over \(\mathbb Q\) gives
+over \(\QQ\) gives
 \[
 \operatorname{rank}\ker\partial_1
 =
@@ -357,7 +357,7 @@ H_1(Y)
 =
 \ker\partial_1
 \cong
-\mathbb Z^{e-v+1}}.
+\ZZ^{e-v+1}}.
 \]
 
 
@@ -386,7 +386,7 @@ Also
 \boxed{
 H_0(Y)
 \cong
-\mathbb Z}.
+\ZZ}.
 \]
 
 
@@ -402,15 +402,15 @@ Using step [](#s1-9){.pf-ref},
 \[
 H_0(Y)
 =
-\mathbb Z^v/\ker\varepsilon.
+\ZZ^v/\ker\varepsilon.
 \]
 By the first isomorphism theorem,
 \[
-\mathbb Z^v/\ker\varepsilon
+\ZZ^v/\ker\varepsilon
 \cong
 \operatorname{im}\varepsilon
 =
-\mathbb Z.
+\ZZ.
 \]
 This also reflects path connectedness.
 
@@ -487,8 +487,8 @@ Therefore the simplicial homology groups are
 H_n^{\mathrm{simpl}}(Y)
 \cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z^{\,1-\chi(Y)},&n=1,\\
+\ZZ,&n=0,\\
+\ZZ^{\,1-\chi(Y)},&n=1,\\
 0,&n\ge2.
 \end{cases}}
 \]

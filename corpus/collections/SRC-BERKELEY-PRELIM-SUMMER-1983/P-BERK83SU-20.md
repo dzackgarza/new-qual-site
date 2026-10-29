@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuously differentiable, nonnegative, and periodic of period $1$. Prove that
+Let $f:\RR\to\RR$ be continuously differentiable, nonnegative, and periodic of period $1$. Prove that
 \[
 \frac{d}{dx}\left(\frac{f(x)}{1+cf(x)}\right)\longrightarrow0
 \qquad(c\to\infty)

@@ -19,9 +19,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a finite-dimensional commutative algebra with identity over $\mathbb C$, with
+Let $A$ be a finite-dimensional commutative algebra with identity over $\CC$, with
 \[
-\dim_{\mathbb C}A\ge2.
+\dim_{\CC}A\ge2.
 \]
 Suppose
 \[

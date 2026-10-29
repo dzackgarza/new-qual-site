@@ -30,13 +30,13 @@ audit:
 ::: {.solution}
 ### Part 1: Statement of the Schwarz Lemma
 
-**Schwarz Lemma:** Let $\mathbb{D} = \{z \in \mathbb{C} : |z| < 1\}$.
+**Schwarz Lemma:** Let $\mathbb{D} = \{z \in \CC : |z| < 1\}$.
 If $g: \mathbb{D} \to \mathbb{D}$ is a holomorphic function satisfying $g(0) = 0$, then:
 
 1. $|g(z)| \leq |z|$ for all $z \in \mathbb{D}$.
 
 2. $|g'(0)| \leq 1$.
-   Furthermore, if $|g(z)| = |z|$ for some non-zero $z \in \mathbb{D}$, or if $|g'(0)| = 1$, then $g(z) = e^{i\theta} z$ for some constant $\theta \in \mathbb{R}$ (i.e. $g$ is a rotation).
+   Furthermore, if $|g(z)| = |z|$ for some non-zero $z \in \mathbb{D}$, or if $|g'(0)| = 1$, then $g(z) = e^{i\theta} z$ for some constant $\theta \in \RR$ (i.e. $g$ is a rotation).
 
 * * *
 

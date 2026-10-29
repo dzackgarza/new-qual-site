@@ -32,7 +32,7 @@ origin.
 
 ::: pf-proof
 
-If $z=t\in\mathbb R\setminus\{0\}$, then
+If $z=t\in\RR\setminus\{0\}$, then
 \[
 \overline z=z=t,
 \]
@@ -58,7 +58,7 @@ Take
 \[
 z=t(1+i),
 \qquad
-t\in\mathbb R\setminus\{0\}.
+t\in\RR\setminus\{0\}.
 \]
 Then
 \[

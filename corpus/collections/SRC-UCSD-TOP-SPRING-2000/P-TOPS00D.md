@@ -42,17 +42,17 @@ The suspension of any path-connected space is the union of two contractible cone
 
 Its reduced integral homology is
 $$
-\widetilde H_i(X;\mathbb Z)\cong
-\widetilde H_{i-1}(\mathbb{RP}^2;\mathbb Z),
+\widetilde H_i(X;\ZZ)\cong
+\widetilde H_{i-1}(\mathbb{RP}^2;\ZZ),
 $$
 so the only nonzero reduced group is
 $$
-\widetilde H_2(X;\mathbb Z)\cong\mathbb Z/2.
+\widetilde H_2(X;\ZZ)\cong\ZZ/2.
 $$
 
 ::: pf-proof
 
-Suspension shifts reduced homology by one degree. Since $\widetilde H_1(\mathbb{RP}^2)=\mathbb Z/2$ and all other reduced integral homology groups vanish, the claim follows.
+Suspension shifts reduced homology by one degree. Since $\widetilde H_1(\mathbb{RP}^2)=\ZZ/2$ and all other reduced integral homology groups vanish, the claim follows.
 
 :::
 
@@ -74,7 +74,7 @@ Under the standard convention in the problem, “manifold” means without bound
 
 Then $M$ would be simply connected and hence orientable, so
 $$
-H_m(M;\mathbb Z)\cong\mathbb Z.
+H_m(M;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof

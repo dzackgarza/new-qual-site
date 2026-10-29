@@ -38,7 +38,7 @@ we have
 \]
 Both $f$ and $\widehat f$ are of moderate decrease, so the Poisson summation formula applies:
 \[
-\sum_{n\in\mathbb Z}f(n)=\sum_{n\in\mathbb Z}\widehat f(n).
+\sum_{n\in\ZZ}f(n)=\sum_{n\in\ZZ}\widehat f(n).
 \]
 Therefore
 \[
@@ -47,7 +47,7 @@ Therefore
 \]
 The latter sum is geometric:
 \[
-\sum_{n\in\mathbb Z}e^{-2\pi a|n|}
+\sum_{n\in\ZZ}e^{-2\pi a|n|}
 =1+2\sum_{n=1}^{\infty}e^{-2\pi an}
 =1+\frac{2e^{-2\pi a}}{1-e^{-2\pi a}}
 =\frac{e^{\pi a}+e^{-\pi a}}{e^{\pi a}-e^{-\pi a}}

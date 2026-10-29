@@ -69,7 +69,7 @@ where $r_N$ is holomorphic near $[0,1]$. Hence
 \]
 where $H_N$ is holomorphic for $\Re s>-N$.
 
-Multiplying (1) and (2) by $1/\Gamma(s)$ therefore extends $\zeta(s)$ meromorphically to $\Re s>-N$. Since $N$ is arbitrary, this gives a meromorphic continuation to all of $\mathbb C$.
+Multiplying (1) and (2) by $1/\Gamma(s)$ therefore extends $\zeta(s)$ meromorphically to $\Re s>-N$. Since $N$ is arbitrary, this gives a meromorphic continuation to all of $\CC$.
 
 The possible poles arising from (2) occur at
 \[
@@ -77,5 +77,5 @@ s=1-m\qquad(m=0,1,2,\ldots).
 \]
 For $m\ge1$, these are nonpositive integers, and $1/\Gamma(s)$ has a simple zero there, so those poles cancel. At $s=1$, the $m=0$ term is $1/(s-1)$ because $B_0=1$, and $1/\Gamma(1)=1$, so the pole survives and is simple, with residue $1$.
 
-Thus $\zeta$ continues meromorphically to $\mathbb C$ with exactly one singularity, a simple pole at $s=1$.
+Thus $\zeta$ continues meromorphically to $\CC$ with exactly one singularity, a simple pole at $s=1$.
 :::

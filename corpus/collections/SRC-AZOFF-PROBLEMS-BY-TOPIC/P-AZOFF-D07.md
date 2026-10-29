@@ -40,7 +40,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f : \mathbb { C } \to \mathbb { C }$ is entire and $| f ( z ) | \leq | z | ^ { \frac { 1 } { 2 } }$ whenever $| z | > 1 0$ . Prove that $f$ is constant.
+Suppose $f : \CC \to \CC$ is entire and $| f ( z ) | \leq | z | ^ { \frac { 1 } { 2 } }$ whenever $| z | > 1 0$ . Prove that $f$ is constant.
 :::
 
 ::: {.solution}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-01
 kind: problem
-title: Matrix of the half-turn about a prescribed axis in $\mathbb R^3$
+title: Matrix of the half-turn about a prescribed axis in $\RR^3$
 classification:
   areas: [prelim]
   topics: []
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $e=(a,b,c)$ be a unit vector in $\mathbb R^3$. Let $T$ be rotation by $180^\circ$ about the axis spanned by $e$. Find the matrix of $T$ in the standard basis.
+Let $e=(a,b,c)$ be a unit vector in $\RR^3$. Let $T$ be rotation by $180^\circ$ about the axis spanned by $e$. Find the matrix of $T$ in the standard basis.
 :::
 
 ::: {.solution}

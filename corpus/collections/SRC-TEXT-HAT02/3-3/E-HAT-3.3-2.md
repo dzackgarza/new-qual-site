@@ -88,7 +88,7 @@ Let $N$ be any connected $n$-manifold with $n \ge 2$. For any two points $y_1, y
 
 ::: pf-proof
 
-in a Euclidean chart $\mathbb{R}^n$ ($n \ge 2$), $\mathbb{R}^n \setminus \{0\}$ is connected, and any path between points in $N \setminus \{y_1, y_2\}$ can be perturbed around isolated points.
+in a Euclidean chart $\RR^n$ ($n \ge 2$), $\RR^n \setminus \{0\}$ is connected, and any path between points in $N \setminus \{y_1, y_2\}$ can be perturbed around isolated points.
 
 :::
 

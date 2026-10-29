@@ -26,7 +26,7 @@ Let $r > 0$ and let $P : \CC \to \CC$ be a polynomial. What is $\oint_{\{\abs{z}
 
 ::: pf-step
 
-The polynomial $P$ is holomorphic on all of $\mathbb C$.
+The polynomial $P$ is holomorphic on all of $\CC$.
 
 
 ::: pf-proof
@@ -48,7 +48,7 @@ Therefore
 ::: pf-proof
 
 The circle $|z|=r$ is a closed contour whose interior lies in the domain
-$\mathbb C$ on which $P$ is holomorphic. Cauchy's integral theorem therefore
+$\CC$ on which $P$ is holomorphic. Cauchy's integral theorem therefore
 gives zero.
 
 :::

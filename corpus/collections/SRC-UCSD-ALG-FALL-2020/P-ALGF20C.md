@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF20C
 kind: problem
-title: 'Unique factorization in $\mathbb{Z}[2\sqrt{2}]$, $\mathbb{Z}[x,y]$, and $\mathbb{Z}+x\mathbb{Q}[x]$'
+title: 'Unique factorization in $\ZZ[2\sqrt{2}]$, $\ZZ[x,y]$, and $\ZZ+x\QQ[x]$'
 classification:
   areas:
   - algebra
@@ -28,11 +28,11 @@ audit:
 Determine if each of the following rings is a unique factorization domain.
 For each case, you need give only a short justification or line of argument.
 
-(1) $\mathbb{Z}[2\sqrt{2}]$.
+(1) $\ZZ[2\sqrt{2}]$.
 
-(2) $\mathbb{Z}[x,y]$.
+(2) $\ZZ[x,y]$.
 
-(3) $\mathbb{Z} + x\mathbb{Q}[x] := \{ a_0 + a_1 x + \cdots + a_n x^n \mid a_0 \in \mathbb{Z},\; a_1,\ldots,a_n \in \mathbb{Q},\; n \in \mathbb{Z}^+ \}$ (hint: consider the element $x$).
+(3) $\ZZ + x\QQ[x] := \{ a_0 + a_1 x + \cdots + a_n x^n \mid a_0 \in \ZZ,\; a_1,\ldots,a_n \in \QQ,\; n \in \ZZ^+ \}$ (hint: consider the element $x$).
 :::
 
 ::: {.solution}
@@ -41,14 +41,14 @@ For each case, you need give only a short justification or line of argument.
 
 ::: pf-step
 
-The ring $\mathbb Z[2\sqrt2]$ is not a UFD.
+The ring $\ZZ[2\sqrt2]$ is not a UFD.
 
 ::: pf-proof
 
 Put
 \[
-R=\mathbb Z[2\sqrt2]
-=\{a+2b\sqrt2:a,b\in\mathbb Z\}.
+R=\ZZ[2\sqrt2]
+=\{a+2b\sqrt2:a,b\in\ZZ\}.
 \]
 Its fraction field contains
 \[
@@ -62,7 +62,7 @@ However $\sqrt2\notin R$: an equality
 \[
 \sqrt2=a+2b\sqrt2
 \]
-with $a,b\in\mathbb Z$ would force $a=0$ and $2b=1$.
+with $a,b\in\ZZ$ would force $a=0$ and $2b=1$.
 
 Every UFD is integrally closed. Indeed, if a reduced fraction $a/b$ in the fraction field of a UFD satisfies a monic equation of degree $d$, multiplying by $b^d$ shows that $b$ divides $a^d$; coprimeness of $a$ and $b$ then forces $b$ to be a unit. Thus the existence of the integral element $\sqrt2\notin R$ proves that $R$ is not a UFD.
 
@@ -72,21 +72,21 @@ Every UFD is integrally closed. Indeed, if a reduced fraction $a/b$ in the fract
 
 ::: pf-step
 
-The ring $\mathbb Z[x,y]$ is a UFD.
+The ring $\ZZ[x,y]$ is a UFD.
 
 ::: pf-proof
 
 The integers form a UFD. Gauss's lemma says that if $A$ is a UFD, then the polynomial ring $A[t]$ is again a UFD: contents factor uniquely in $A$, while primitive factorizations are the same as factorizations in $\operatorname{Frac}(A)[t]$ up to units. Applying this first to
 \[
-A=\mathbb Z
+A=\ZZ
 \]
 and then to
 \[
-A=\mathbb Z[x]
+A=\ZZ[x]
 \]
 gives
 \[
-\mathbb Z[x,y]=\mathbb Z[x][y]
+\ZZ[x,y]=\ZZ[x][y]
 \]
 as a UFD.
 
@@ -98,13 +98,13 @@ as a UFD.
 
 Let
 \[
-S=\mathbb Z+x\mathbb Q[x].
+S=\ZZ+x\QQ[x].
 \]
 The only units of $S$ are $\pm1$.
 
 ::: pf-proof
 
-If $uv=1$ in $S$, then the same equality holds in the polynomial ring $\mathbb Q[x]$. Hence both $u$ and $v$ have degree $0$. The constant elements of $S$ are precisely the integers, whose only units are $\pm1$.
+If $uv=1$ in $S$, then the same equality holds in the polynomial ring $\QQ[x]$. Hence both $u$ and $v$ have degree $0$. The constant elements of $S$ are precisely the integers, whose only units are $\pm1$.
 
 :::
 
@@ -120,7 +120,7 @@ Suppose, toward a contradiction, that
 \[
 x=u p_1\cdots p_r
 \]
-with $u$ a unit and each $p_i$ irreducible in $S$. Degrees computed in $\mathbb Q[x]$ add, so exactly one factor, say $p_j$, has degree $1$ and every other $p_i$ has degree $0$.
+with $u$ a unit and each $p_i$ irreducible in $S$. Degrees computed in $\QQ[x]$ add, so exactly one factor, say $p_j$, has degree $1$ and every other $p_i$ has degree $0$.
 
 Since the degree-zero elements of $S$ are integers, the equality shows that
 \[
@@ -139,7 +139,7 @@ and both factors lie in $S$ and are nonunits by step [](#s3){.pf-ref}. Thus $x/d
 
 ::: pf-step
 
-Therefore $S=\mathbb Z+x\mathbb Q[x]$ is not a UFD.
+Therefore $S=\ZZ+x\QQ[x]$ is not a UFD.
 
 ::: pf-proof
 

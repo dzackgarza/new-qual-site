@@ -31,11 +31,11 @@ K=\{z:1\le |z|\le2\}.
 The function $R$ is holomorphic on a neighborhood of $K$, since its poles are
 $0$ and $3i$.
 
-For part (a), the complement $\mathbb C\setminus K$ has exactly two connected
+For part (a), the complement $\CC\setminus K$ has exactly two connected
 components, namely $\{|z|<1\}$ and $\{|z|>2\}$. The prescribed points
 $1/3$ and $3$ lie in these two components. By Runge's theorem, rational
 functions whose poles are allowed only at one chosen point of each component of
-$\mathbb C\setminus K$ are uniformly dense on $K$ in the functions holomorphic
+$\CC\setminus K$ are uniformly dense on $K$ in the functions holomorphic
 near $K$. Hence there are rational functions $R_n$ with poles only at $1/3$
 and $3$ such that
 \[

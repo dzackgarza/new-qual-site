@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ is bounded and Lebesgue measurable, and
+Suppose $f:\RR\to\RR$ is bounded and Lebesgue measurable, and
 \[
 \lim_{h\to0^+}\frac1h\int_0^1 |f(x+h)-f(x)|\,dx=0.
 \]
@@ -48,7 +48,7 @@ f(x).
 
 ::: pf-proof
 
-Because $f$ is bounded, it belongs to $L^1_{\mathrm{loc}}(\mathbb R)$. The Lebesgue differentiation theorem therefore gives
+Because $f$ is bounded, it belongs to $L^1_{\mathrm{loc}}(\RR)$. The Lebesgue differentiation theorem therefore gives
 \[
 \lim_{h\to0^+}
 \frac1h
@@ -127,7 +127,7 @@ Therefore $f(a)=f(b)$.
 
 ::: {.pf-step #s1-3}
 
-There is a constant $c\in\mathbb R$ such that
+There is a constant $c\in\RR$ such that
 \[
 f(x)=c
 \]

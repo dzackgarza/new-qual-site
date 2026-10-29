@@ -54,10 +54,10 @@ Prove that the Euler characteristics of $U$, $V$, $U\cap V$, and $X$ obey the re
 The Spring 2012 wording needs the usual proviso that the ordinary Euler characteristics involved are defined; the Spring 2015 wording supplies this proviso explicitly.
 Work with rational coefficients and assume, as intended in the latter wording, that
 \[
-H_k(X;\mathbb Q),\quad
-H_k(U;\mathbb Q),\quad
-H_k(V;\mathbb Q),\quad
-H_k(U\cap V;\mathbb Q)
+H_k(X;\QQ),\quad
+H_k(U;\QQ),\quad
+H_k(V;\QQ),\quad
+H_k(U\cap V;\QQ)
 \]
 are finite-dimensional for every \(k\) and vanish for all sufficiently large \(k\), so that the ordinary Euler characteristics are finite sums.
 Then
@@ -70,7 +70,7 @@ Then
 
 Under this finite-type interpretation of the stated proviso,
 \[
-\chi(Y)=\sum_{k\ge0}(-1)^k\dim_{\mathbb Q}H_k(Y;\mathbb Q)
+\chi(Y)=\sum_{k\ge0}(-1)^k\dim_{\QQ}H_k(Y;\QQ)
 \]
 is a finite sum for each of the four spaces.
 Without such a hypothesis, the ordinary Euler characteristic need not be defined, so no unrestricted numerical identity can be asserted.
@@ -93,7 +93,7 @@ H_k(X)
 H_{k-1}(U\cap V)
 \longrightarrow\cdots,
 \]
-with all homology groups taken over \(\mathbb Q\).
+with all homology groups taken over \(\QQ\).
 
 ::: pf-proof
 

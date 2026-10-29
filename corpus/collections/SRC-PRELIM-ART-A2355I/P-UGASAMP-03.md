@@ -28,7 +28,7 @@ converges to $1$.
 
 ::: {.pf-step #s1-1}
 
-A sequence \((a_n)_{n=1}^\infty\) of real numbers converges to \(a\in\mathbb R\) if for every \(\varepsilon>0\) there is \(N\in\mathbb N\) such that
+A sequence \((a_n)_{n=1}^\infty\) of real numbers converges to \(a\in\RR\) if for every \(\varepsilon>0\) there is \(N\in\NN\) such that
 \[
 n\ge N
 \quad\Longrightarrow\quad

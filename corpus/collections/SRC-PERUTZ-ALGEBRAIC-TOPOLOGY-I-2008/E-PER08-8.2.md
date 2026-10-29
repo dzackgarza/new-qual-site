@@ -27,17 +27,17 @@ Compute $H_*^{\mathrm{simp}}$ for the spaces $T^2$, $\mathbb{RP}^2$ and $K^2$, e
 :::
 
 ::: {.solution}
-For each standard two-triangle $\Delta$-complex, write the simplicial boundary matrices and reduce them over $\mathbb Z$ to Smith normal form.
+For each standard two-triangle $\Delta$-complex, write the simplicial boundary matrices and reduce them over $\ZZ$ to Smith normal form.
 The resulting homology is
 \[
-\boxed{H_*(T^2):\quad H_0=\mathbb Z,\ H_1=\mathbb Z^2,\ H_2=\mathbb Z,}
+\boxed{H_*(T^2):\quad H_0=\ZZ,\ H_1=\ZZ^2,\ H_2=\ZZ,}
 \]
 \[
-\boxed{H_*(\mathbb{RP}^2):\quad H_0=\mathbb Z,\ H_1=\mathbb Z/2,\ H_2=0,}
+\boxed{H_*(\mathbb{RP}^2):\quad H_0=\ZZ,\ H_1=\ZZ/2,\ H_2=0,}
 \]
 and
 \[
-\boxed{H_*(K^2):\quad H_0=\mathbb Z,\ H_1=\mathbb Z\oplus\mathbb Z/2,\ H_2=0.}
+\boxed{H_*(K^2):\quad H_0=\ZZ,\ H_1=\ZZ\oplus\ZZ/2,\ H_2=0.}
 \]
 All groups above degree $2$ vanish.
 
@@ -50,7 +50,7 @@ Torus.
 ::: pf-proof
 
 After identifying the edges of a square and subdividing it by a diagonal, the two oriented $2$-simplices have boundaries whose difference leaves one independent relation among the three $1$-cell generators.
-Thus $\ker\partial_2\cong\mathbb Z$, $\operatorname{im}\partial_2$ has rank $1$, and the $1$-cycle quotient is free of rank $2$.
+Thus $\ker\partial_2\cong\ZZ$, $\operatorname{im}\partial_2$ has rank $1$, and the $1$-cycle quotient is free of rank $2$.
 
 :::
 
@@ -64,9 +64,9 @@ Projective plane.
 
 The edge identifications give a cellular-equivalent chain complex
 \[
-0\to\mathbb Z\xrightarrow{\;2\;}\mathbb Z\xrightarrow{0}\mathbb Z\to0.
+0\to\ZZ\xrightarrow{\;2\;}\ZZ\xrightarrow{0}\ZZ\to0.
 \]
-Its homology is $H_2=0$, $H_1=\mathbb Z/2$, $H_0=\mathbb Z$.
+Its homology is $H_2=0$, $H_1=\ZZ/2$, $H_0=\ZZ$.
 Row reduction of the two-triangle simplicial boundary matrices gives the same Smith form.
 
 :::
@@ -81,11 +81,11 @@ Klein bottle.
 
 The edge identifications similarly reduce to
 \[
-0\to\mathbb Z\xrightarrow{(0,\,2)}\mathbb Z^2\xrightarrow{0}\mathbb Z\to0.
+0\to\ZZ\xrightarrow{(0,\,2)}\ZZ^2\xrightarrow{0}\ZZ\to0.
 \]
 Hence $H_2=0$ and
 \[
-H_1\cong\mathbb Z^2/\langle(0,2)\rangle\cong\mathbb Z\oplus\mathbb Z/2.
+H_1\cong\ZZ^2/\langle(0,2)\rangle\cong\ZZ\oplus\ZZ/2.
 \]
 
 :::

@@ -189,13 +189,13 @@ The cellular chain groups are
 \boxed{
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\partial_3}
-\mathbb Z^3
+\ZZ^3
 \xrightarrow{\partial_2}
-\mathbb Z^4
+\ZZ^4
 \xrightarrow{\partial_1}
-\mathbb Z^2
+\ZZ^2
 \longrightarrow0}.
 \]
 
@@ -267,11 +267,11 @@ Extend the formulas in step [](#s1-10){.pf-ref} linearly.
 The image of \(\partial_1\) is
 \[
 \boxed{
-\mathbb Z\langle B-A\rangle},
+\ZZ\langle B-A\rangle},
 \]
 so
 \[
-\boxed{H_0(X)\cong\mathbb Z}.
+\boxed{H_0(X)\cong\ZZ}.
 \]
 
 
@@ -285,16 +285,16 @@ is surjective, so
 \[
 \operatorname{im}\partial_1
 =
-\mathbb Z(B-A).
+\ZZ(B-A).
 \]
 Thus
 \[
 H_0(X)
 =
-\mathbb Z\langle A,B\rangle/
-\mathbb Z\langle B-A\rangle
+\ZZ\langle A,B\rangle/
+\ZZ\langle B-A\rangle
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -386,7 +386,7 @@ The columns are the coordinate vectors from step [](#s1-14){.pf-ref}.
 ::: {.pf-step #s1-16}
 
 The three columns of \(M\) are linearly independent over
-\(\mathbb Z\).
+\(\ZZ\).
 
 
 ::: pf-proof
@@ -402,8 +402,8 @@ The \(3\times3\) minor using the first three rows is
 =
 4\ne0.
 \]
-Thus the columns are linearly independent over \(\mathbb Q\), hence also
-over \(\mathbb Z\).
+Thus the columns are linearly independent over \(\QQ\), hence also
+over \(\ZZ\).
 
 :::
 
@@ -454,7 +454,7 @@ which is zero by step [](#s1-17){.pf-ref}.
 
 Hence
 \[
-\boxed{H_3(X)\cong\mathbb Z}.
+\boxed{H_3(X)\cong\ZZ}.
 \]
 
 
@@ -466,7 +466,7 @@ H_3(X)
 =
 \ker\partial_3
 =
-\mathbb Z
+\ZZ
 \]
 by step [](#s1-18){.pf-ref}.
 
@@ -501,7 +501,7 @@ Both groups are zero by steps [](#s1-17){.pf-ref} through [](#s1-18){.pf-ref}.
 The kernel of \(\partial_1\) consists of
 \[
 \boxed{
-\{(x_p,x_q,x_r,x_s)\in\mathbb Z^4:
+\{(x_p,x_q,x_r,x_s)\in\ZZ^4:
 x_p+x_q-x_r-x_s=0\}}.
 \]
 
@@ -686,7 +686,7 @@ H_1(X)
 =
 \ker\partial_1/\operatorname{im}\partial_2
 \cong
-\mathbb Z/2\oplus\mathbb Z/2}.
+\ZZ/2\oplus\ZZ/2}.
 \]
 
 
@@ -698,14 +698,14 @@ In the basis of step [](#s1-22){.pf-ref}, the inclusion of
 \]
 into
 \[
-\ker\partial_1\cong\mathbb Z^3
+\ker\partial_1\cong\ZZ^3
 \]
 is represented by \(N\). Step [](#s1-26){.pf-ref} gives the quotient
 \[
-\mathbb Z^3/
-N\mathbb Z^3
+\ZZ^3/
+N\ZZ^3
 \cong
-\mathbb Z/1\oplus\mathbb Z/2\oplus\mathbb Z/2.
+\ZZ/1\oplus\ZZ/2\oplus\ZZ/2.
 \]
 Discard the trivial factor.
 
@@ -722,8 +722,8 @@ step [](#s1-8){.pf-ref} are
 H_n^{\mathrm{simpl}}(X)
 \cong
 \begin{cases}
-\mathbb Z,&n=0,3,\\
-\mathbb Z/2\oplus\mathbb Z/2,&n=1,\\
+\ZZ,&n=0,3,\\
+\ZZ/2\oplus\ZZ/2,&n=1,\\
 0,&n=2\text{ or }n>3.
 \end{cases}}
 \]
@@ -751,7 +751,7 @@ from PP.2, since
 \[
 Q_8^{\mathrm{ab}}
 \cong
-\mathbb Z/2\oplus\mathbb Z/2.
+\ZZ/2\oplus\ZZ/2.
 \]
 
 
@@ -765,11 +765,11 @@ and
 \[
 Q_8/\{\pm1\}
 \cong
-\mathbb Z/2\oplus\mathbb Z/2.
+\ZZ/2\oplus\ZZ/2.
 \]
 This matches step [](#s1-27){.pf-ref} and the general identity
 \[
-H_1(X;\mathbb Z)\cong\pi_1(X)^{\mathrm{ab}}.
+H_1(X;\ZZ)\cong\pi_1(X)^{\mathrm{ab}}.
 \]
 
 :::

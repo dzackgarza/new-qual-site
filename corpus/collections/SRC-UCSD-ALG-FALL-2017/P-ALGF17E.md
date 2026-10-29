@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF17E
 kind: problem
-title: Companion-like matrix over $\mathbb{Q}(y)$ vs $\mathbb{F}_3(y)$; irreducibility and diagonalizability
+title: Companion-like matrix over $\QQ(y)$ vs $\mathbb{F}_3(y)$; irreducibility and diagonalizability
 classification:
   areas:
   - algebra
@@ -32,9 +32,9 @@ A = \begin{pmatrix} 0 & 0 & -y \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}
 \]
 where $y$ is an indeterminate.
 
-(a) Show that the characteristic polynomial $f(x)$ of $A$ is irreducible in $\mathbb{Q}(y)[x]$.
+(a) Show that the characteristic polynomial $f(x)$ of $A$ is irreducible in $\QQ(y)[x]$.
 
-(b) Show that $A$ is diagonalisable over the algebraic closure of $\mathbb{Q}(y)$.
+(b) Show that $A$ is diagonalisable over the algebraic closure of $\QQ(y)$.
 
 (c) Show that $A$ is not diagonalisable over the algebraic closure of $\mathbb{F}_3(y)$.
 :::
@@ -68,23 +68,23 @@ Expanding the determinant along the first row gives
 :::
 
 ::: pf-step
-The polynomial $x^3+y$ is irreducible in $\mathbb Q(y)[x]$.
+The polynomial $x^3+y$ is irreducible in $\QQ(y)[x]$.
 
 ::: pf-proof
 Regard
 \[
 x^3+y
 \]
-as an element of the polynomial ring $\mathbb Q[y][x]$.
-The coefficient ring $\mathbb Q[y]$ is a UFD, and $y$ is prime in it.
+as an element of the polynomial ring $\QQ[y][x]$.
+The coefficient ring $\QQ[y]$ is a UFD, and $y$ is prime in it.
 All non-leading coefficients of $x^3+y$ are divisible by $y$, while the constant coefficient $y$ is not divisible by $y^2$.
 Thus Eisenstein's criterion at the prime $y$ shows that $x^3+y$ is irreducible in
 \[
-\mathbb Q[y][x].
+\QQ[y][x].
 \]
 It is primitive as a polynomial in $x$, so Gauss's lemma implies that it remains irreducible over the fraction field
 \[
-\operatorname{Frac}(\mathbb Q[y])=\mathbb Q(y).
+\operatorname{Frac}(\QQ[y])=\QQ(y).
 \]
 This proves part (a).
 :::
@@ -92,7 +92,7 @@ This proves part (a).
 :::
 
 ::: {.pf-step #min-poly-q}
-Over $\mathbb Q(y)$, the minimal polynomial of $A$ equals $x^3+y$.
+Over $\QQ(y)$, the minimal polynomial of $A$ equals $x^3+y$.
 
 ::: pf-proof
 Let $e_1,e_2,e_3$ be the standard basis vectors.
@@ -118,14 +118,14 @@ m_A(x)=x^3+y.
 :::
 
 ::: pf-step
-The matrix $A$ is diagonalizable over the algebraic closure of $\mathbb Q(y)$.
+The matrix $A$ is diagonalizable over the algebraic closure of $\QQ(y)$.
 
 ::: pf-proof
 In characteristic zero,
 \[
 f'(x)=3x^2.
 \]
-The polynomials $x^3+y$ and $3x^2$ are relatively prime in $\mathbb Q(y)[x]$, because $y\neq0$ in the field $\mathbb Q(y)$.
+The polynomials $x^3+y$ and $3x^2$ are relatively prime in $\QQ(y)[x]$, because $y\neq0$ in the field $\QQ(y)$.
 Thus $x^3+y$ has three distinct roots in an algebraic closure.
 By step [](#min-poly-q){.pf-ref}, this is the minimal polynomial of $A$, so the minimal polynomial splits into distinct linear factors over the algebraic closure.
 Therefore $A$ is diagonalizable there.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-17
 kind: problem
-title: Ideals of $\mathbb Z$ containing relatively prime integers
+title: Ideals of $\ZZ$ containing relatively prime integers
 classification:
   areas:
   - algebra
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(February 1982) Prove that if an ideal $I$ of the ring $\mathbb{Z}$ contains two relatively prime integers, then $I=\mathbb{Z}$.
+(February 1982) Prove that if an ideal $I$ of the ring $\ZZ$ contains two relatively prime integers, then $I=\ZZ$.
 :::
 
 ::: {.solution}

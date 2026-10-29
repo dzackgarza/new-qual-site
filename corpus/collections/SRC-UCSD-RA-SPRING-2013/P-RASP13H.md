@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a monotonically non-decreasing function on $\mathbb{R}$.
+Let $f$ be a monotonically non-decreasing function on $\RR$.
 Prove that its distributional derivative is a Borel measure.
 
 (Hint: You may apply the Riesz-Markov representation theorem.
@@ -44,11 +44,11 @@ The distributional derivative of $f$ is positive.
 
 ::: pf-proof
 
-A monotone real-valued function is bounded on compact intervals, hence belongs to $L^1_{\mathrm{loc}}(\mathbb R)$ and defines a distribution. Its distributional derivative is
+A monotone real-valued function is bounded on compact intervals, hence belongs to $L^1_{\mathrm{loc}}(\RR)$ and defines a distribution. Its distributional derivative is
 \[
-T(\varphi):=-\int_{\mathbb R}f(x)\varphi'(x)\,dx,
+T(\varphi):=-\int_{\RR}f(x)\varphi'(x)\,dx,
 \qquad
-\varphi\in C_c^\infty(\mathbb R).
+\varphi\in C_c^\infty(\RR).
 \]
 
 Let $\rho\ge0$ be a standard smooth mollifier and put
@@ -84,9 +84,9 @@ Positivity gives the local sup-norm bounds needed for Riesz--Markov.
 
 ::: pf-proof
 
-Fix a compact set $K\subset\mathbb R$. Choose
+Fix a compact set $K\subset\RR$. Choose
 \[
-\chi\in C_c^\infty(\mathbb R),
+\chi\in C_c^\infty(\RR),
 \qquad
 \chi\ge0,
 \qquad
@@ -107,9 +107,9 @@ Since $T$ is positive,
 \]
 Hence $T$ is continuous in the sup norm on test functions supported in each fixed compact set.
 
-Smooth compactly supported functions are uniformly dense in $C_c(\mathbb R)$ after fixing a slightly larger compact support. The preceding estimate therefore extends $T$ uniquely to a positive linear functional
+Smooth compactly supported functions are uniformly dense in $C_c(\RR)$ after fixing a slightly larger compact support. The preceding estimate therefore extends $T$ uniquely to a positive linear functional
 \[
-L:C_c(\mathbb R)\to\mathbb R.
+L:C_c(\RR)\to\RR.
 \]
 
 :::
@@ -124,17 +124,17 @@ Apply the Riesz--Markov representation theorem.
 
 The Riesz--Markov theorem states that every positive linear functional on $C_c(X)$, for a locally compact Hausdorff space $X$, is integration against a unique positive Radon measure.
 
-Applying it to the positive functional $L$ on $C_c(\mathbb R)$ gives a unique positive Radon measure $\nu$ such that
+Applying it to the positive functional $L$ on $C_c(\RR)$ gives a unique positive Radon measure $\nu$ such that
 \[
-L(\varphi)=\int_{\mathbb R}\varphi\,d\nu
+L(\varphi)=\int_{\RR}\varphi\,d\nu
 \qquad
-(\varphi\in C_c(\mathbb R)).
+(\varphi\in C_c(\RR)).
 \]
 In particular, for every test function $\varphi\in C_c^\infty$,
 \[
--\int_{\mathbb R}f(x)\varphi'(x)\,dx
+-\int_{\RR}f(x)\varphi'(x)\,dx
 =T(\varphi)
-=\int_{\mathbb R}\varphi\,d\nu.
+=\int_{\RR}\varphi\,d\nu.
 \]
 Thus the distributional derivative of $f$ is exactly the Borel (indeed Radon) measure $\nu$:
 \[

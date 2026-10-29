@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $G\subset\mathbb R^n$ is open, $f:G\to\mathbb R^m$ is a function, and $x_0\in G$.
+Suppose $G\subset\RR^n$ is open, $f:G\to\RR^m$ is a function, and $x_0\in G$.
 
 (a) Carefully define what is meant by the derivative
 \[
-f'(x_0):\mathbb R^n\to\mathbb R^m.
+f'(x_0):\RR^n\to\RR^m.
 \]
 
 (b) Let $I$ be the line segment from $p$ to $q$ contained in $G$, and suppose that $f$ is differentiable at every point of $I$.
@@ -45,11 +45,11 @@ Hint: let $w$ be a unit vector such that
 
 The derivative
 \[
-f'(x_0):\mathbb R^n\to\mathbb R^m
+f'(x_0):\RR^n\to\RR^m
 \]
 exists if there is a linear map
 \[
-L:\mathbb R^n\to\mathbb R^m
+L:\RR^n\to\RR^m
 \]
 such that
 \[
@@ -72,7 +72,7 @@ In that case,
 This is the definition of Fréchet differentiability at $x_0$.
 The linear map $L$, if it exists, is unique.
 
-Indeed, if both $L_1$ and $L_2$ satisfy the limit condition, then for any nonzero $u\in\mathbb R^n$ and scalar $t\ne0$,
+Indeed, if both $L_1$ and $L_2$ satisfy the limit condition, then for any nonzero $u\in\RR^n$ and scalar $t\ne0$,
 \[
 \|(L_1-L_2)u\|
 \le

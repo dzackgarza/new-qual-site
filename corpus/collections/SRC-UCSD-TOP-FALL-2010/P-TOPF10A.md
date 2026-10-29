@@ -58,7 +58,7 @@ Two disks glued along their boundary circle form a $2$-sphere.
 
 Therefore
 $$
-\boxed{\pi_1(X)\cong\mathbb Z}.
+\boxed{\pi_1(X)\cong\ZZ}.
 $$
 
 ::: pf-proof
@@ -73,8 +73,8 @@ The sphere factor is simply connected.
 
 By Künneth,
 $$
-\boxed{H_i(X;\mathbb Z)\cong
-\begin{cases}\mathbb Z,&i=0,1,2,3,\\0,&\text{otherwise}.\end{cases}}
+\boxed{H_i(X;\ZZ)\cong
+\begin{cases}\ZZ,&i=0,1,2,3,\\0,&\text{otherwise}.\end{cases}}
 $$
 
 ::: pf-proof

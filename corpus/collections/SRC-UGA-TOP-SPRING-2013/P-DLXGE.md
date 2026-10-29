@@ -169,7 +169,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly the presentation obtained in step [](#s4){.pf-ref}. In particular, the connected-sum group is not the free product \((\mathbb Z/2)*\mathbb Z^2\); the common boundary circle contributes the displayed relation.
+This is exactly the presentation obtained in step [](#s4){.pf-ref}. In particular, the connected-sum group is not the free product \((\ZZ/2)*\ZZ^2\); the common boundary circle contributes the displayed relation.
 
 :::
 

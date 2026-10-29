@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:[0,\infty)\to\mathbb R\) be continuous and suppose
+Let \(f:[0,\infty)\to\RR\) be continuous and suppose
 \[
 \lim_{x\to\infty}f(x)
 \]

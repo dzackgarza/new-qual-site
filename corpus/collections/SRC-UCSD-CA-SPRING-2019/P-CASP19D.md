@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\Omega \neq \mathbb{C}$ be a simply connected region with $a \in \Omega$ and $f$ a one-to-one analytic function from $\Omega$ onto $\mathbb{D}$.
+Let $\Omega \neq \CC$ be a simply connected region with $a \in \Omega$ and $f$ a one-to-one analytic function from $\Omega$ onto $\mathbb{D}$.
 Assume $f(a) = 0$ and $f'(a) > 0$.
 Prove that
 $$
@@ -56,10 +56,10 @@ If $R=\infty$, there is nothing to prove. Suppose $R<\infty$. Then
 \]
 Indeed, if $\Omega$ met the exterior of $\overline{D(a,R)}$, then, because no
 boundary point of $\Omega$ lies there, the connected set
-$\mathbb C\setminus\overline{D(a,R)}$ would be contained in $\Omega$.
-Consequently $\mathbb C\setminus\Omega$ would be a nonempty compact set.
+$\CC\setminus\overline{D(a,R)}$ would be contained in $\Omega$.
+Consequently $\CC\setminus\Omega$ would be a nonempty compact set.
 But then the complement of $\Omega$ in the Riemann sphere would be the
-disjoint union $(\mathbb C\setminus\Omega)\cup\{\infty\}$, contradicting the
+disjoint union $(\CC\setminus\Omega)\cup\{\infty\}$, contradicting the
 standard characterization of simply connected proper plane domains by
 connectedness of their complement in the sphere. Hence
 \[

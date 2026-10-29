@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $A\subseteq\mathbb R$ is Lebesgue measurable and
+Suppose that $A\subseteq\RR$ is Lebesgue measurable and
 \[
 A+r=A
 \]
@@ -31,16 +31,16 @@ Prove that either
 \[
 m(A)=0
 \qquad\text{or}\qquad
-m(\mathbb R\setminus A)=0.
+m(\RR\setminus A)=0.
 \]
 :::
 
 ::: {.solution}
 Suppose, toward a contradiction, that both $A$ and $A^c$ have positive measure.
 
-Choose a nonnegative $\varphi\in C_c^\infty(\mathbb R)$ with
+Choose a nonnegative $\varphi\in C_c^\infty(\RR)$ with
 \[
-\int_{\mathbb R}\varphi=1,
+\int_{\RR}\varphi=1,
 \]
 and put
 \[
@@ -48,9 +48,9 @@ and put
 \qquad
 u_\varepsilon=\mathbf1_A*\varphi_\varepsilon.
 \]
-Since $\mathbf1_A\in L^\infty_{\mathrm{loc}}$ and $\varphi_\varepsilon$ is compactly supported, $u_\varepsilon$ is a continuous function on $\mathbb R$.
+Since $\mathbf1_A\in L^\infty_{\mathrm{loc}}$ and $\varphi_\varepsilon$ is compactly supported, $u_\varepsilon$ is a continuous function on $\RR$.
 
-For every $q\in\mathbb Q$ and every $x\in\mathbb R$, the identity $A+q=A$ gives
+For every $q\in\QQ$ and every $x\in\RR$, the identity $A+q=A$ gives
 \[
 \mathbf1_A(y+q)=\mathbf1_A(y).
 \]
@@ -59,7 +59,7 @@ Hence, after a change of variables,
 u_\varepsilon(x+q)=u_\varepsilon(x).
 \]
 Thus every rational number is a period of $u_\varepsilon$.
-Since $\mathbb Q$ is dense and $u_\varepsilon$ is continuous, $u_\varepsilon$ must be constant on $\mathbb R$.
+Since $\QQ$ is dense and $u_\varepsilon$ is continuous, $u_\varepsilon$ must be constant on $\RR$.
 
 By the Lebesgue density theorem, choose a density point $a$ of $A$ and a density point $b$ of $A^c$.
 Approximate identities recover characteristic functions at density points, so

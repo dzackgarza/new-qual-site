@@ -27,19 +27,19 @@ State Liouville's Theorem.
 
 Liouville's theorem states:
 \[
-\boxed{\text{Every bounded entire function }f:\mathbb C\to\mathbb C\text{ is constant}.}
+\boxed{\text{Every bounded entire function }f:\CC\to\CC\text{ is constant}.}
 \]
 
 
 ::: pf-proof
 
-Equivalently, if \(f\) is analytic on all of \(\mathbb C\) and there is \(M<\infty\) such that
+Equivalently, if \(f\) is analytic on all of \(\CC\) and there is \(M<\infty\) such that
 \[
 |f(z)|\le M
 \qquad
-\text{for every }z\in\mathbb C,
+\text{for every }z\in\CC,
 \]
-then there is \(c\in\mathbb C\) with \(f(z)=c\) for every \(z\in\mathbb C\). This is the statement of Liouville's theorem.
+then there is \(c\in\CC\) with \(f(z)=c\) for every \(z\in\CC\). This is the statement of Liouville's theorem.
 
 :::
 

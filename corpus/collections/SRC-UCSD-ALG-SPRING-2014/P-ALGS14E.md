@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS14E
 kind: problem
-title: Abelian groups injective as $\mathbb{Z}$-modules iff divisible
+title: Abelian groups injective as $\ZZ$-modules iff divisible
 classification:
   areas:
   - algebra
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that an abelian group $A$ is injective as a $\mathbb{Z}$-module if and only if it is divisible.
+Prove that an abelian group $A$ is injective as a $\ZZ$-module if and only if it is divisible.
 :::
 
 ::: {.solution}
@@ -37,10 +37,10 @@ Suppose first that $A$ is injective.
 Let $a\in A$ and let $n\ge1$.
 Define a homomorphism
 \[
-f:n\mathbb Z\longrightarrow A,
+f:n\ZZ\longrightarrow A,
 \qquad f(n)=a.
 \]
-By injectivity, $f$ extends along $n\mathbb Z\hookrightarrow\mathbb Z$ to a homomorphism $F:\mathbb Z\to A$.
+By injectivity, $f$ extends along $n\ZZ\hookrightarrow\ZZ$ to a homomorphism $F:\ZZ\to A$.
 If $b=F(1)$, then
 \[
 a=f(n)=F(n)=nb.
@@ -49,7 +49,7 @@ Thus $A$ is divisible.
 
 ::: pf-proof
 
-This is exactly the extension property defining injective $\mathbb Z$-modules.
+This is exactly the extension property defining injective $\ZZ$-modules.
 
 :::
 
@@ -82,9 +82,9 @@ For a chain, the maps agree on overlaps because the pairs are ordered by extensi
 Suppose $D\ne C$ and choose $c\in C\setminus D$.
 Set
 \[
-I=\{n\in\mathbb Z:nc\in D\}.
+I=\{n\in\ZZ:nc\in D\}.
 \]
-Then $I$ is an ideal of $\mathbb Z$, so $I=m\mathbb Z$ for some $m\ge0$.
+Then $I$ is an ideal of $\ZZ$, so $I=m\ZZ$ for some $m\ge0$.
 
 ::: pf-proof
 
@@ -99,7 +99,7 @@ $I$ is closed under addition and multiplication by arbitrary integers.
 If $m=0$, define
 \[
 \widetilde g(d+kc)=g(d)
-\qquad(d\in D,\ k\in\mathbb Z).
+\qquad(d\in D,\ k\in\ZZ).
 \]
 This is well defined and extends $g$ to the strictly larger subgroup $D+\mathbb Zc$, contradicting maximality.
 
@@ -126,7 +126,7 @@ Then $\widetilde g:D+\mathbb Zc\to A$ is a well-defined homomorphism extending $
 
 ::: pf-proof
 
-If $d+kc=d'+k'c$, then $(k-k')c=d'-d\in D$, so $m\mid(k-k')$ because $I=m\mathbb Z$.
+If $d+kc=d'+k'c$, then $(k-k')c=d'-d\in D$, so $m\mid(k-k')$ because $I=m\ZZ$.
 Write $k-k'=qm$.
 Then
 \[

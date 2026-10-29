@@ -20,7 +20,7 @@ Find all possible values of
 \[
 \int_\gamma\frac{dz}{1+z^2},
 \]
-where $\gamma$ is any closed piecewise smooth path in $\mathbb C$ avoiding $\pm i$.
+where $\gamma$ is any closed piecewise smooth path in $\CC$ avoiding $\pm i$.
 :::
 
 ::: {.solution}
@@ -87,14 +87,14 @@ which simplifies to the stated formula.
 
 The set of all possible values is
 \[
-\boxed{\pi\mathbb Z}.
+\boxed{\pi\ZZ}.
 \]
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref}, every value is an integer multiple of $\pi$, because winding
-numbers are integers. Conversely, let $m\in\mathbb Z$. Choose a sufficiently
+numbers are integers. Conversely, let $m\in\ZZ$. Choose a sufficiently
 small positively oriented circle about $i$ that does not enclose $-i$, and
 traverse it $|m|$ times, reversing its orientation when $m<0$; for $m=0$ take
 any contractible closed path avoiding $\pm i$. The resulting path has

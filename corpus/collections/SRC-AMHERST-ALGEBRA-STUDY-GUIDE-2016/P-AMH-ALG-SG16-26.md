@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-26
 kind: problem
-title: Polynomials vanishing at 2 and 5 form an ideal of $\mathbb R[x]$
+title: Polynomials vanishing at 2 and 5 form an ideal of $\RR[x]$
 classification:
   areas:
   - algebra
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2014) For the polynomial ring $R=\mathbb{R}[x]$, define
+(January 2014) For the polynomial ring $R=\RR[x]$, define
 \[
 I=\{f\in R\mid f(2)=f(5)=0\}.
 \]

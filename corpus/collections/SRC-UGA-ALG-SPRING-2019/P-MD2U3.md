@@ -93,7 +93,7 @@ The subgroup $Q$ is cyclic of order five, and $P$ is either cyclic of order nine
 
 ::: pf-step
 
-The group $Q$ has prime order $|Q| = 5$, so $Q \cong \mathbb{Z}/5\mathbb{Z}$.
+The group $Q$ has prime order $|Q| = 5$, so $Q \cong \ZZ/5\ZZ$.
 
 :::
 
@@ -109,7 +109,7 @@ By the Fundamental Theorem of Finite Abelian Groups, there are exactly two isomo
 
 :::
 
-$$P \cong \mathbb{Z}/9\mathbb{Z} \quad \text{or} \quad P \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}.$$
+$$P \cong \ZZ/9\ZZ \quad \text{or} \quad P \cong \ZZ/3\ZZ \times \ZZ/3\ZZ.$$
 
 :::
 
@@ -126,16 +126,16 @@ There are exactly two isomorphism classes, represented by
 
 ::: pf-step
 
-Case 1 ($P \cong \mathbb{Z}/9\mathbb{Z}$):
-    $$G_1 \cong \mathbb{Z}/9\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \cong \mathbb{Z}/45\mathbb{Z}$$
+Case 1 ($P \cong \ZZ/9\ZZ$):
+    $$G_1 \cong \ZZ/9\ZZ \times \ZZ/5\ZZ \cong \ZZ/45\ZZ$$
     by the Chinese Remainder Theorem, which is the cyclic group of order 45.
 
 :::
 
 ::: pf-step
 
-Case 2 ($P \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$):
-    $$G_2 \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/15\mathbb{Z}.$$
+Case 2 ($P \cong \ZZ/3\ZZ \times \ZZ/3\ZZ$):
+    $$G_2 \cong \ZZ/3\ZZ \times \ZZ/3\ZZ \times \ZZ/5\ZZ \cong \ZZ/3\ZZ \times \ZZ/15\ZZ.$$
 
 :::
 

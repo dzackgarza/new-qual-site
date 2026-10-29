@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W4-15
 kind: problem
-title: Evaluating a linear functional on $\mathbb R^2$ from two values
+title: Evaluating a linear functional on $\RR^2$ from two values
 classification:
   areas:
   - applied-algebra
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ is linear.
+Suppose that $f : \RR ^ { 2 } \to \RR$ is linear.
 If $f ( 1 , 1 ) = 1$ and $f ( - 1 , 0 ) = 2$ , what is $f ( 3 , 5 ) ?$
 :::
 

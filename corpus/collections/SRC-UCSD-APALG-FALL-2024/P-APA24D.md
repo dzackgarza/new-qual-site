@@ -14,14 +14,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A \in M_{m,n}(\mathbb{C}) = \mathbb{C}^{m \times n}$.
+Let $A \in M_{m,n}(\CC) = \CC^{m \times n}$.
 Prove
 \[
 \|A\|_1 = \max_{1 \leq j \leq n} \sum_{i=1}^{m} |a_{ij}|
 \]
 from the definition of the induced matrix $1$-norm in terms of vector $1$-norms:
 \[
-\|A\|_1 = \max_{\substack{x \in \mathbb{C}^n \\ \|x\|_1 = 1}} \|A x\|_1.
+\|A\|_1 = \max_{\substack{x \in \CC^n \\ \|x\|_1 = 1}} \|A x\|_1.
 \]
 :::
 
@@ -35,7 +35,7 @@ M:=\max_{1\le j\le n}\sum_{i=1}^m|a_{ij}|.
 ::: pf
 
 ::: {.pf-step #ax-bound-by-m}
-For every $x\in\mathbb C^n$,
+For every $x\in\CC^n$,
 \[
 \|Ax\|_1\le M\|x\|_1.
 \]

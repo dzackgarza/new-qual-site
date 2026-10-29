@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-If $T_n(X, A)$ denotes the torsion subgroup of $H_n(X, A; \mathbb{Z})$, show that the functors $(X, A) \mapsto T_n(X, A)$, with the obvious induced homomorphisms $T_n(X, A) \to T_n(Y, B)$ and boundary maps $T_n(X, A) \to T_{n-1}(A)$, do not define a homology theory.
-Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \mathbb{Z}) / T_n(X, A)$.
+If $T_n(X, A)$ denotes the torsion subgroup of $H_n(X, A; \ZZ)$, show that the functors $(X, A) \mapsto T_n(X, A)$, with the obvious induced homomorphisms $T_n(X, A) \to T_n(Y, B)$ and boundary maps $T_n(X, A) \to T_{n-1}(A)$, do not define a homology theory.
+Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \ZZ) / T_n(X, A)$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ For the pair $(D^2,S^1)$ the integral long exact sequence contains
 \[
 0=H_2(D^2)\longrightarrow H_2(D^2,S^1)\xrightarrow{\partial}H_1(S^1)\longrightarrow H_1(D^2)=0,
 \]
-so $\partial:\mathbb Z\to\mathbb Z$ is an isomorphism.
+so $\partial:\ZZ\to\ZZ$ is an isomorphism.
 
 ::: pf-proof
 
@@ -62,14 +62,14 @@ T_2(D^2,S^1)=T_1(S^1)=0.
 \]
 This example alone does not detect failure, so instead use the Moore-space pair $(X,A)$ obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$. Then
 \[
-H_2(X,A)\cong\mathbb Z\xrightarrow{\partial=m}\mathbb Z\cong H_1(A)
-\longrightarrow H_1(X)\cong\mathbb Z_m\longrightarrow0.
+H_2(X,A)\cong\ZZ\xrightarrow{\partial=m}\ZZ\cong H_1(A)
+\longrightarrow H_1(X)\cong\ZZ_m\longrightarrow0.
 \]
 Passing to torsion gives
 \[
-0\longrightarrow0\longrightarrow\mathbb Z_m\longrightarrow0,
+0\longrightarrow0\longrightarrow\ZZ_m\longrightarrow0,
 \]
-which is not exact at $T_1(X)=\mathbb Z_m$: the incoming image is $0$ while the outgoing kernel is all of $\mathbb Z_m$.
+which is not exact at $T_1(X)=\ZZ_m$: the incoming image is $0$ while the outgoing kernel is all of $\ZZ_m$.
 
 :::
 
@@ -83,9 +83,9 @@ The mod-torsion functors are not exact on the same pair.
 
 Passing the displayed integral sequence to quotients by torsion gives
 \[
-\mathbb Z\xrightarrow{m}\mathbb Z\longrightarrow0.
+\ZZ\xrightarrow{m}\ZZ\longrightarrow0.
 \]
-Exactness at the second $\mathbb Z$ would require $m\mathbb Z=\mathbb Z$, false for $m>1$.
+Exactness at the second $\ZZ$ would require $m\ZZ=\ZZ$, false for $m>1$.
 
 :::
 

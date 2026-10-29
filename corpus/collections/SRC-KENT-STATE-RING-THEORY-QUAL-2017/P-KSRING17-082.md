@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-082
 kind: problem
-title: '$\mathbb Z[\sqrt 5]$ is not a UFD: irreducibility of $x^2+x-1$'
+title: '$\ZZ[\sqrt 5]$ is not a UFD: irreducibility of $x^2+x-1$'
 classification:
   areas: [algebra]
   topics: []
@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \mathbb{Z}(\sqrt{5}) = \{ m + n\sqrt{5} \mid m, n \in \mathbb{Z} \}$ — a subring of the field of real numbers and necessarily an integral domain (you need not show this) — and $F = \mathbb{Q}(\sqrt{5})$ its field of fractions.
+Let $D = \ZZ(\sqrt{5}) = \{ m + n\sqrt{5} \mid m, n \in \ZZ \}$ — a subring of the field of real numbers and necessarily an integral domain (you need not show this) — and $F = \QQ(\sqrt{5})$ its field of fractions.
 Show the following:
 
 (a) $x^2 + x - 1$ is irreducible in $D[x]$ but not in $F[x]$.

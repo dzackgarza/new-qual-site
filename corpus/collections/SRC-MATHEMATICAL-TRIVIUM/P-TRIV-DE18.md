@@ -25,7 +25,7 @@ $$
 
 ::: {.solution}
 
-Let $r=\sqrt{x^2+y^2+z^2}$ and let $\delta_0$ denote the Dirac delta distribution at the origin in $\mathbb R^3$.
+Let $r=\sqrt{x^2+y^2+z^2}$ and let $\delta_0$ denote the Dirac delta distribution at the origin in $\RR^3$.
 
 ::: pf
 
@@ -59,7 +59,7 @@ Substitution cancels the $r^{-2}$ and $r^{-3}$ terms and leaves $a^2e^{-ar}/r$.
 
 ::: {.pf-step #s1-2}
 
-Distributionally on $\mathbb R^3$,
+Distributionally on $\RR^3$,
 \[
 \nabla^2\left(\frac{e^{-ar}}r\right)
 =a^2\frac{e^{-ar}}r-4\pi\delta_0.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRELIM82S-17
 kind: problem
-title: The complement of a regular level curve in $\mathbb R^3$ is path connected
+title: The complement of a regular level curve in $\RR^3$ is path connected
 classification:
   areas:
   - prelim
@@ -29,10 +29,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^3\to\mathbb R^2$, and suppose $0$ is a regular value of $f$; that is, $Df$ has rank $2$ at every point of $f^{-1}(0)$.
+Let $f:\RR^3\to\RR^2$, and suppose $0$ is a regular value of $f$; that is, $Df$ has rank $2$ at every point of $f^{-1}(0)$.
 Prove that
 \[
-\mathbb R^3\setminus f^{-1}(0)
+\RR^3\setminus f^{-1}(0)
 \]
 is arcwise connected.
 :::

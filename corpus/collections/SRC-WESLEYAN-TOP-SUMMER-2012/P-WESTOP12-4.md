@@ -206,9 +206,9 @@ the difference
 \]
 is homeomorphic to
 \[
-\mathbb C^k
+\CC^k
 \cong
-\mathbb R^{2k}.
+\RR^{2k}.
 \]
 Indeed, on the chart where the last homogeneous coordinate is nonzero,
 normalize it to $1$:
@@ -217,7 +217,7 @@ normalize it to $1$:
 \longleftrightarrow
 (z_0,\dots,z_{k-1})
 \in
-\mathbb C^k.
+\CC^k.
 \]
 Thus exactly one new open cell of real dimension
 \[
@@ -241,7 +241,7 @@ C_n^{\mathrm{cell}}
 (\mathbb{CP}^4)
 \cong
 \begin{cases}
-\mathbb Z,
+\ZZ,
 &n=0,2,4,6,8,\\
 0,
 &\text{otherwise}.
@@ -307,7 +307,7 @@ d_n=0.
 
 Hence the cellular homology is
 \[
-H_n(\mathbb{CP}^4;\mathbb Z)
+H_n(\mathbb{CP}^4;\ZZ)
 \cong
 C_n^{\mathrm{cell}}(\mathbb{CP}^4).
 \]
@@ -346,10 +346,10 @@ C_n^{\mathrm{cell}}.
 Thus
 \[
 \boxed{
-H_n(\mathbb{CP}^4;\mathbb Z)
+H_n(\mathbb{CP}^4;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,
+\ZZ,
 &n=0,2,4,6,8,\\
 0,
 &\text{otherwise}.

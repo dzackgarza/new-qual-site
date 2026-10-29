@@ -51,7 +51,7 @@ c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf
 Prove the $L^1$ tails vanish, and give a counterexample to pointwise decay.
 
 ::: pf-proof
-Since $|f|\in L^1(\mathbb R)$ and
+Since $|f|\in L^1(\RR)$ and
 \[
 \mathbf1_{\{|x|\ge N\}}|f(x)|\longrightarrow0
 \]
@@ -72,7 +72,7 @@ The intervals are disjoint up to endpoints and
 \[
 \|f\|_1=\sum_{k=1}^\infty 2^{-k}<\infty,
 \]
-so $f\in L^1(\mathbb R)$. But $f(k)=1$ for every positive integer $k$, hence $f(x)$ does not tend to $0$ as $x\to\infty$.
+so $f\in L^1(\RR)$. But $f(k)=1$ for every positive integer $k$, hence $f(x)$ does not tend to $0$ as $x\to\infty$.
 :::
 
 :::

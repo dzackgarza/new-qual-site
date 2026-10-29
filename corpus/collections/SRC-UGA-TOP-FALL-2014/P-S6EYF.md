@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-Compute the integral homology groups $H_k(X; \mathbb{Z})$ of the space $X = Y \cup Z \subset \mathbb{R}^3$, where $Y$ is the sphere
+Compute the integral homology groups $H_k(X; \ZZ)$ of the space $X = Y \cup Z \subset \RR^3$, where $Y$ is the sphere
 $$
-Y = \{ (x, y, z) \in \mathbb{R}^3 \mid x^2 + y^2 + z^2 = 1 \}
+Y = \{ (x, y, z) \in \RR^3 \mid x^2 + y^2 + z^2 = 1 \}
 $$
 and $Z$ is the ellipsoid
 $$
-Z = \left\{ (x, y, z) \in \mathbb{R}^3 \;\middle|\; x^2 + y^2 + \frac{z^2}{4} = 1 \right\}.
+Z = \left\{ (x, y, z) \in \RR^3 \;\middle|\; x^2 + y^2 + \frac{z^2}{4} = 1 \right\}.
 $$
 :::
 
@@ -116,7 +116,7 @@ By step [](#s1){.pf-ref},
 \widetilde H_k(A)
 \cong
 \begin{cases}
-\mathbb Z,&k=1,\\
+\ZZ,&k=1,\\
 0,&k\ne1,
 \end{cases}
 \]
@@ -125,7 +125,7 @@ and
 \widetilde H_k(Y)\oplus\widetilde H_k(Z)
 \cong
 \begin{cases}
-\mathbb Z^2,&k=2,\\
+\ZZ^2,&k=2,\\
 0,&k\ne2.
 \end{cases}
 \]
@@ -138,7 +138,7 @@ and
 
 One has
 \[
-H_k(X;\mathbb Z)=0
+H_k(X;\ZZ)=0
 \qquad(k\ge3).
 \]
 
@@ -166,7 +166,7 @@ for every $k\ge3$.
 
 The second homology group is
 \[
-H_2(X;\mathbb Z)\cong\mathbb Z^3.
+H_2(X;\ZZ)\cong\ZZ^3.
 \]
 
 ::: pf-proof
@@ -175,11 +175,11 @@ The relevant part of the reduced Mayer--Vietoris sequence is
 \[
 0
 \longrightarrow
-\mathbb Z^2
+\ZZ^2
 \longrightarrow
 \widetilde H_2(X)
 \xrightarrow{\partial}
-\mathbb Z
+\ZZ
 \longrightarrow
 0.
 \]
@@ -187,22 +187,22 @@ Exactness gives a short exact sequence
 \[
 0
 \longrightarrow
-\mathbb Z^2
+\ZZ^2
 \longrightarrow
 \widetilde H_2(X)
 \longrightarrow
-\mathbb Z
+\ZZ
 \longrightarrow
 0.
 \]
-Because the quotient $\mathbb Z$ is free abelian, this sequence splits.
+Because the quotient $\ZZ$ is free abelian, this sequence splits.
 Therefore
 \[
 \widetilde H_2(X)
 \cong
-\mathbb Z^2\oplus\mathbb Z
+\ZZ^2\oplus\ZZ
 \cong
-\mathbb Z^3.
+\ZZ^3.
 \]
 Since degree $2$ is positive, reduced and unreduced homology agree there.
 
@@ -214,14 +214,14 @@ Since degree $2$ is positive, reduced and unreduced homology agree there.
 
 The first homology group is
 \[
-H_1(X;\mathbb Z)=0.
+H_1(X;\ZZ)=0.
 \]
 
 ::: pf-proof
 
 Continuing the same exact sequence from step [](#s4){.pf-ref} gives
 \[
-\mathbb Z
+\ZZ
 \longrightarrow
 0
 \longrightarrow
@@ -249,7 +249,7 @@ Hence
 
 Finally,
 \[
-H_0(X;\mathbb Z)\cong\mathbb Z.
+H_0(X;\ZZ)\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -257,7 +257,7 @@ H_0(X;\mathbb Z)\cong\mathbb Z.
 Both $Y$ and $Z$ are path connected, and their intersection $A\cong S^1$ is nonempty.
 Therefore their union $X$ is path connected, so
 \[
-H_0(X;\mathbb Z)\cong\mathbb Z.
+H_0(X;\ZZ)\cong\ZZ.
 \]
 
 :::
@@ -269,12 +269,12 @@ H_0(X;\mathbb Z)\cong\mathbb Z.
 Thus the integral homology groups are
 \[
 \boxed{
-H_k(X;\mathbb Z)
+H_k(X;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
+\ZZ,&k=0,\\
 0,&k=1,\\
-\mathbb Z^3,&k=2,\\
+\ZZ^3,&k=2,\\
 0,&k\ge3.
 \end{cases}}
 \]

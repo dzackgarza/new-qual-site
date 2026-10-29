@@ -435,7 +435,7 @@ Its complement, the set containing $56$ somewhere, has measure $1$.
 
 Let
 \[
-f_n:X\to\mathbb R
+f_n:X\to\RR
 \]
 be measurable functions such that
 \[

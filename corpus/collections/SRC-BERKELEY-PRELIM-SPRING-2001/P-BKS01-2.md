@@ -21,8 +21,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and periodic with period $1$.
-Prove that for every $c\in\mathbb R$ there exists $x_0\in\mathbb R$ such that
+Let $f:\RR\to\RR$ be continuous and periodic with period $1$.
+Prove that for every $c\in\RR$ there exists $x_0\in\RR$ such that
 \[
 f(x_0+c)=f(x_0).
 \]

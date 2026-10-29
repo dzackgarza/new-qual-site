@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb{R}\to\mathbb{R}$ be a function and let $a$ be a real number.
+Let $f:\RR\to\RR$ be a function and let $a$ be a real number.
 Let $S$ be the statement "If $f$ has a local minimum at $a$, then $f'(a)=0$ or $f$ is not differentiable at $a$".
 
 a) Write the contrapositive of $S$.

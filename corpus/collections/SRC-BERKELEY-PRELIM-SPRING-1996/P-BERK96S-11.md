@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\varphi\in C^1(\mathbb R)$ and suppose
+Let $\varphi\in C^1(\RR)$ and suppose
 \[
 \varphi(x)\to a,
 \qquad

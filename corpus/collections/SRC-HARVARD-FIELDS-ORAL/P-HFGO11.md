@@ -21,26 +21,26 @@ audit:
 ---
 
 ::: {.problem}
-Determine $[\overline{\mathbb Q}:\mathbb Q]$.
+Determine $[\overline{\QQ}:\QQ]$.
 :::
 
 ::: {.solution}
 One has
 \[
-[\overline{\mathbb Q}:\mathbb Q]=\infty.
+[\overline{\QQ}:\QQ]=\infty.
 \]
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For every integer $n\ge1$, the field $\overline{\mathbb Q}$ contains a finite extension of $\mathbb Q$ of degree $n$.
+For every integer $n\ge1$, the field $\overline{\QQ}$ contains a finite extension of $\QQ$ of degree $n$.
 
 ::: pf-proof
 
-The polynomial $x^n-2\in\mathbb Q[x]$ is irreducible by Eisenstein's criterion at $2$. Hence, for any root $\alpha_n\in\overline{\mathbb Q}$,
+The polynomial $x^n-2\in\QQ[x]$ is irreducible by Eisenstein's criterion at $2$. Hence, for any root $\alpha_n\in\overline{\QQ}$,
 \[
-[\mathbb Q(\alpha_n):\mathbb Q]=n.
+[\QQ(\alpha_n):\QQ]=n.
 \]
 
 :::
@@ -49,15 +49,15 @@ The polynomial $x^n-2\in\mathbb Q[x]$ is irreducible by Eisenstein's criterion a
 
 ::: pf-step
 
-Therefore $[\overline{\mathbb Q}:\mathbb Q]$ is infinite.
+Therefore $[\overline{\QQ}:\QQ]$ is infinite.
 
 ::: pf-proof
 
-If $[\overline{\mathbb Q}:\mathbb Q]=N<\infty$, then every intermediate finite extension $K/\mathbb Q$ would satisfy
+If $[\overline{\QQ}:\QQ]=N<\infty$, then every intermediate finite extension $K/\QQ$ would satisfy
 \[
-[K:\mathbb Q]\le N.
+[K:\QQ]\le N.
 \]
-Taking $K=\mathbb Q(\alpha_n)$ with $n>N$ contradicts step [](#s1){.pf-ref}.
+Taking $K=\QQ(\alpha_n)$ with $n>N$ contradicts step [](#s1){.pf-ref}.
 
 :::
 

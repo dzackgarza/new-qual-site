@@ -40,7 +40,7 @@ The universal cover of a manifold is a manifold, and finiteness of the deck grou
 ::: pf-step
 The manifold $\widetilde M$ is orientable and
 $$
-H_1(\widetilde M;\mathbb Z)=0.
+H_1(\widetilde M;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -52,19 +52,19 @@ Simply connected manifolds are orientable, and $H_1$ is the abelianization of $\
 ::: pf-step
 Poincaré duality and the universal coefficient theorem give
 $$
-H_2(\widetilde M;\mathbb Z)=0,
+H_2(\widetilde M;\ZZ)=0,
 $$
 while
 $$
-H_0(\widetilde M)\cong H_3(\widetilde M)\cong\mathbb Z.
+H_0(\widetilde M)\cong H_3(\widetilde M)\cong\ZZ.
 $$
 
 ::: pf-proof
 For a closed oriented $3$-manifold,
 $$
-H_2\cong H^1\cong\operatorname{Hom}(H_1,\mathbb Z)=0.
+H_2\cong H^1\cong\operatorname{Hom}(H_1,\ZZ)=0.
 $$
-Connectedness gives $H_0=\mathbb Z$, and orientability gives the fundamental class in $H_3\cong\mathbb Z$.
+Connectedness gives $H_0=\ZZ$, and orientability gives the fundamental class in $H_3\cong\ZZ$.
 :::
 
 :::
@@ -72,7 +72,7 @@ Connectedness gives $H_0=\mathbb Z$, and orientability gives the fundamental cla
 ::: {.pf-step #hurewicz-gives-pi3}
 Since $\widetilde M$ is simply connected and $H_2=0$, the Hurewicz theorem gives $\pi_2(\widetilde M)=0$, and then
 $$
-\pi_3(\widetilde M)\xrightarrow{\cong}H_3(\widetilde M)\cong\mathbb Z.
+\pi_3(\widetilde M)\xrightarrow{\cong}H_3(\widetilde M)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -85,7 +85,7 @@ The degree-$2$ Hurewicz theorem identifies $\pi_2$ with $H_2$ for simply connect
 Choose a map $f:S^3\to\widetilde M$ representing a generator of $\pi_3(\widetilde M)$. Then $f$ is an integral homology equivalence.
 
 ::: pf-proof
-By step [](#hurewicz-gives-pi3){.pf-ref} it maps the fundamental class to a generator of $H_3$. Both spaces have $H_0=H_3=\mathbb Z$ and zero homology in degrees $1,2$.
+By step [](#hurewicz-gives-pi3){.pf-ref} it maps the fundamental class to a generator of $H_3$. Both spaces have $H_0=H_3=\ZZ$ and zero homology in degrees $1,2$.
 :::
 
 :::

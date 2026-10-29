@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-006
 kind: problem
-title: Integers $n$ with $(\mathbb Z/n\mathbb Z)^\times$ an elementary abelian 2-group
+title: Integers $n$ with $(\ZZ/n\ZZ)^\times$ an elementary abelian 2-group
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Find all positive integers n having the property that the group of units of $\mathbb { Z } / n \mathbb { Z }$ is an elementary abelian 2-group.
+[NEW] Find all positive integers n having the property that the group of units of $\ZZ / n \ZZ$ is an elementary abelian 2-group.
 :::
 
 ::: {.solution}

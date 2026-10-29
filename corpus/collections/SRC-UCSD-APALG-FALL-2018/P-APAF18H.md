@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF18H
 kind: problem
-title: Finite-dimensionality of $\mathbb{C}[x,y]/I$ for a two-point variety
+title: Finite-dimensionality of $\CC[x,y]/I$ for a two-point variety
 classification:
   areas:
   - applied-algebra
@@ -21,10 +21,10 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $I\subseteq\mathbb{C}[x,y]$ be an ideal such that $\mathrm{V}(I)=\{(0,0),(1,1)\}\subset\mathbb{C}^2$.
-Prove that the quotient ring $\mathbb{C}[x,y]/I$ is a finite-dimensional $\mathbb{C}$-vector space.
+(a) Let $I\subseteq\CC[x,y]$ be an ideal such that $\mathrm{V}(I)=\{(0,0),(1,1)\}\subset\CC^2$.
+Prove that the quotient ring $\CC[x,y]/I$ is a finite-dimensional $\CC$-vector space.
 
-(b) Is the conclusion of (a) still true if we replace $\mathbb{C}$ by $\mathbb{R}$?
+(b) Is the conclusion of (a) still true if we replace $\CC$ by $\RR$?
 Justify your answer.
 :::
 
@@ -33,7 +33,7 @@ Justify your answer.
 ::: pf
 
 ::: {.pf-step #squarefree-vanishing-polynomials}
-Over $\mathbb C$, the polynomials
+Over $\CC$, the polynomials
 \[
 f=x(x-1),\qquad g=y(y-1)
 \]
@@ -64,7 +64,7 @@ By step [](#squarefree-vanishing-polynomials){.pf-ref}, $f,g\in I(\mathrm V(I))$
 :::
 
 ::: pf-step
-The quotient $\mathbb C[x,y]/I$ is finite-dimensional over $\mathbb C$.
+The quotient $\CC[x,y]/I$ is finite-dimensional over $\CC$.
 
 ::: pf-proof
 The polynomial
@@ -82,22 +82,22 @@ Therefore the finitely many residue classes
 \[
 \{x^iy^j+I:0\le i<2a,\ 0\le j<2b\}
 \]
-span $\mathbb C[x,y]/I$. Hence
+span $\CC[x,y]/I$. Hence
 \[
-\dim_{\mathbb C}\mathbb C[x,y]/I\le4ab<\infty.
+\dim_{\CC}\CC[x,y]/I\le4ab<\infty.
 \]
 :::
 
 :::
 
 ::: pf-step
-The analogous statement over $\mathbb R$ is false.
+The analogous statement over $\RR$ is false.
 
 ::: pf-proof
 Let
 \[
 F=(x^2+y^2)\bigl((x-1)^2+(y-1)^2\bigr)
-\in\mathbb R[x,y]
+\in\RR[x,y]
 \]
 and set
 \[
@@ -113,18 +113,18 @@ and
 \]
 Thus
 \[
-\mathrm V_{\mathbb R}(J)=\{(0,0),(1,1)\}.
+\mathrm V_{\RR}(J)=\{(0,0),(1,1)\}.
 \]
 
 However, the natural map
 \[
-\mathbb R[x]\longrightarrow\mathbb R[x,y]/(F)
+\RR[x]\longrightarrow\RR[x,y]/(F)
 \]
-is injective. Indeed, if a nonzero $q(x)\in\mathbb R[x]$ lay in $(F)$, then
+is injective. Indeed, if a nonzero $q(x)\in\RR[x]$ lay in $(F)$, then
 \[
 q(x)=F(x,y)h(x,y)
 \]
-for some nonzero $h\in\mathbb R[x,y]$. But $F$ has positive degree in $y$, and since $\mathbb R[x]$ is an integral domain, degree in $y$ is additive under multiplication:
+for some nonzero $h\in\RR[x,y]$. But $F$ has positive degree in $y$, and since $\RR[x]$ is an integral domain, degree in $y$ is additive under multiplication:
 \[
 \deg_y(Fh)=\deg_yF+\deg_yh>0,
 \]
@@ -133,7 +133,7 @@ Hence the classes of
 \[
 1,x,x^2,x^3,\ldots
 \]
-are linearly independent in $\mathbb R[x,y]/J$, so this quotient is infinite-dimensional over $\mathbb R$.
+are linearly independent in $\RR[x,y]/J$, so this quotient is infinite-dimensional over $\RR$.
 :::
 
 :::

@@ -83,7 +83,7 @@ The left side of the second equation is twice the left side of the first, wherea
 ::: pf-step
 In part (c), the solution set is
 \[
-\boxed{\left\{s(1,-3,0)+t(0,-2,1):s,t\in\mathbb R\right\}}.
+\boxed{\left\{s(1,-3,0)+t(0,-2,1):s,t\in\RR\right\}}.
 \]
 
 ::: pf-proof
@@ -91,7 +91,7 @@ The second equation is twice the first, so the system is equivalent to
 \[
 3x_1+x_2+2x_3=0.
 \]
-Taking \(x_1=s\) and \(x_3=t\) gives \(x_2=-3s-2t\), and every pair \((s,t)\in\mathbb R^2\) produces a solution. This is exactly the displayed set.
+Taking \(x_1=s\) and \(x_3=t\) gives \(x_2=-3s-2t\), and every pair \((s,t)\in\RR^2\) produces a solution. This is exactly the displayed set.
 :::
 
 :::

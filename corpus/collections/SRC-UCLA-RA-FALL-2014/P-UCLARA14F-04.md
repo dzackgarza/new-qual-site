@@ -73,7 +73,7 @@ The same argument applies to $(d_n)$.
 ::: pf-step
 
 The cosine series for $f$ and $g$ converge absolutely and uniformly
-on $\mathbb R$.
+on $\RR$.
 
 
 ::: pf-proof
@@ -92,8 +92,8 @@ $f$ and $g$.
 
 ::: {.pf-step #s1-3}
 
-Define bilateral sequences $(a_k)_{k\in\mathbb Z}$ and
-$(b_k)_{k\in\mathbb Z}$ by
+Define bilateral sequences $(a_k)_{k\in\ZZ}$ and
+$(b_k)_{k\in\ZZ}$ by
 \[
 a_0=c_0,
 \qquad
@@ -107,9 +107,9 @@ b_k=b_{-k}=\frac{d_k}{2}\quad(k\ge1).
 \]
 Then
 \[
-f(x)=\sum_{k\in\mathbb Z}a_ke^{ikx},
+f(x)=\sum_{k\in\ZZ}a_ke^{ikx},
 \qquad
-g(x)=\sum_{k\in\mathbb Z}b_ke^{ikx},
+g(x)=\sum_{k\in\ZZ}b_ke^{ikx},
 \]
 with absolute and uniform convergence.
 
@@ -121,7 +121,7 @@ Use
 \cos(kx)=\frac{e^{ikx}+e^{-ikx}}2.
 \]
 The bilateral series are absolutely summable because step [](#s1-1){.pf-ref} gives
-$a,b\in\ell^1(\mathbb Z)$.
+$a,b\in\ell^1(\ZZ)$.
 
 :::
 
@@ -135,14 +135,14 @@ A_k=(1+k^2)^{1/2}|a_k|,
 \qquad
 B_k=(1+k^2)^{1/2}|b_k|
 \]
-belong to $\ell^2(\mathbb Z)$.
+belong to $\ell^2(\ZZ)$.
 
 
 ::: pf-proof
 
 By the definitions in step [](#s1-3){.pf-ref},
 \[
-\sum_{k\in\mathbb Z}(1+k^2)|a_k|^2
+\sum_{k\in\ZZ}(1+k^2)|a_k|^2
 =
 |c_0|^2
 +
@@ -161,11 +161,11 @@ The product has the absolutely convergent Fourier expansion
 \[
 f(x)g(x)
 =
-\sum_{n\in\mathbb Z}e_n e^{inx},
+\sum_{n\in\ZZ}e_n e^{inx},
 \qquad
 e_n=(a*b)_n
 =
-\sum_{k\in\mathbb Z}a_kb_{n-k}.
+\sum_{k\in\ZZ}a_kb_{n-k}.
 \]
 
 
@@ -226,7 +226,7 @@ Thus the inequality holds, for example with $C=\sqrt2$.
 The weighted product coefficients satisfy
 \[
 \left\|
-\bigl((1+n^2)^{1/2}e_n\bigr)_{n\in\mathbb Z}
+\bigl((1+n^2)^{1/2}e_n\bigr)_{n\in\ZZ}
 \right\|_{\ell^2}
 <\infty.
 \]
@@ -325,7 +325,7 @@ with
 
 By step [](#s1-8){.pf-ref},
 \[
-\sum_{n\in\mathbb Z}e_ne^{inx}
+\sum_{n\in\ZZ}e_ne^{inx}
 =
 e_0
 +

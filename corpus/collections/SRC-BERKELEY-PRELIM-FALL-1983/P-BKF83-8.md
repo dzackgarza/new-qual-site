@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A:\mathbb R^3\to\mathbb R^3$ have a matrix, in the standard basis, that is both symmetric and orthogonal. Prove that $A$ is one of the following:
+Let $A:\RR^3\to\RR^3$ have a matrix, in the standard basis, that is both symmetric and orthogonal. Prove that $A$ is one of the following:
 
 1. $I$ or $-I$;
 2. a rotation through $180^\circ$ about an axis;
@@ -63,7 +63,7 @@ so $\lambda=\pm1$.
 
 There is an orthogonal direct-sum decomposition
 $$
-\mathbb R^3=V_+\oplus V_-,
+\RR^3=V_+\oplus V_-,
 $$
 where
 $$
@@ -101,8 +101,8 @@ $$
 
 ::: pf-proof
 
-If $V_+=\mathbb R^3$, step [](#s2){.pf-ref} says that $A$ fixes every vector. If
-$V_-=\mathbb R^3$, it negates every vector.
+If $V_+=\RR^3$, step [](#s2){.pf-ref} says that $A$ fixes every vector. If
+$V_-=\RR^3$, it negates every vector.
 
 :::
 

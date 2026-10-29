@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Explicitly determine the splitting fields over the rationals of the following two polynomials and their degrees over $\mathbb{Q}$:
+Explicitly determine the splitting fields over the rationals of the following two polynomials and their degrees over $\QQ$:
 
 (a) $x^6 + 1$
 
@@ -41,9 +41,9 @@ Explicitly determine the splitting fields over the rationals of the following tw
 ::: {.pf-step #splitting-field-x6-minus-1}
 The splitting field of \(x^6-1\) is
 \[
-\mathbb Q(\zeta_6)=\mathbb Q(\sqrt{-3}),
+\QQ(\zeta_6)=\QQ(\sqrt{-3}),
 \]
-and it has degree \(2\) over \(\mathbb Q\).
+and it has degree \(2\) over \(\QQ\).
 
 ::: pf-proof
 The roots of \(x^6-1\) are exactly the sixth roots of unity
@@ -51,18 +51,18 @@ The roots of \(x^6-1\) are exactly the sixth roots of unity
 1,\zeta_6,\zeta_6^2,\ldots,\zeta_6^5,
 \]
 where \(\zeta_6=e^{2\pi i/6}\).
-Thus the splitting field is \(\mathbb Q(\zeta_6)\).
+Thus the splitting field is \(\QQ(\zeta_6)\).
 Since
 \[
 \zeta_6=\frac{1+\sqrt{-3}}2,
 \]
 we have
 \[
-\mathbb Q(\zeta_6)=\mathbb Q(\sqrt{-3}).
+\QQ(\zeta_6)=\QQ(\sqrt{-3}).
 \]
-The element \(\sqrt{-3}\notin\mathbb Q\), so
+The element \(\sqrt{-3}\notin\QQ\), so
 \[
-[\mathbb Q(\zeta_6):\mathbb Q]=2.
+[\QQ(\zeta_6):\QQ]=2.
 \]
 Equivalently, this degree is \(\varphi(6)=2\).
 :::
@@ -90,7 +90,7 @@ The six roots are
 \]
 Therefore the splitting field is
 \[
-\mathbb Q(\zeta_{12}).
+\QQ(\zeta_{12}).
 \]
 :::
 
@@ -99,11 +99,11 @@ Therefore the splitting field is
 ::: {.pf-step #splitting-field-x6-plus-1}
 One has
 \[
-\mathbb Q(\zeta_{12})=\mathbb Q(i,\sqrt3)
+\QQ(\zeta_{12})=\QQ(i,\sqrt3)
 \]
 and
 \[
-[\mathbb Q(\zeta_{12}):\mathbb Q]=4.
+[\QQ(\zeta_{12}):\QQ]=4.
 \]
 
 ::: pf-proof
@@ -113,7 +113,7 @@ Using
 \]
 we get
 \[
-\zeta_{12}\in\mathbb Q(i,\sqrt3).
+\zeta_{12}\in\QQ(i,\sqrt3).
 \]
 Conversely,
 \[
@@ -123,13 +123,13 @@ and
 \[
 \sqrt3=2\zeta_{12}-i,
 \]
-so \(i,\sqrt3\in\mathbb Q(\zeta_{12})\).
+so \(i,\sqrt3\in\QQ(\zeta_{12})\).
 Hence the two fields are equal.
 
-Now \([\mathbb Q(i):\mathbb Q]=2\), while \(\sqrt3\notin\mathbb Q(i)\): if \(\sqrt3=a+bi\) with \(a,b\in\mathbb Q\), comparison with its complex conjugate gives \(b=0\), contradicting \(\sqrt3\notin\mathbb Q\).
+Now \([\QQ(i):\QQ]=2\), while \(\sqrt3\notin\QQ(i)\): if \(\sqrt3=a+bi\) with \(a,b\in\QQ\), comparison with its complex conjugate gives \(b=0\), contradicting \(\sqrt3\notin\QQ\).
 Thus
 \[
-[\mathbb Q(i,\sqrt3):\mathbb Q]=4.
+[\QQ(i,\sqrt3):\QQ]=4.
 \]
 Equivalently, this is \(\varphi(12)=4\).
 :::
@@ -139,13 +139,13 @@ Equivalently, this is \(\varphi(12)=4\).
 ::: pf-step
 Therefore the requested splitting fields and degrees are
 \[
-\operatorname{Spl}_{\mathbb Q}(x^6-1)=\mathbb Q(\sqrt{-3}),
-\qquad [\operatorname{Spl}:\mathbb Q]=2,
+\operatorname{Spl}_{\QQ}(x^6-1)=\QQ(\sqrt{-3}),
+\qquad [\operatorname{Spl}:\QQ]=2,
 \]
 and
 \[
-\operatorname{Spl}_{\mathbb Q}(x^6+1)=\mathbb Q(i,\sqrt3),
-\qquad [\operatorname{Spl}:\mathbb Q]=4.
+\operatorname{Spl}_{\QQ}(x^6+1)=\QQ(i,\sqrt3),
+\qquad [\operatorname{Spl}:\QQ]=4.
 \]
 
 ::: pf-proof

@@ -24,7 +24,7 @@ Compute the degree of $f$.
 :::
 
 ::: {.remark}
-The source prints $S^4$, but the formula has four coordinates, so it defines a self-map of the unit sphere $S^3\subset\mathbb R^4$.
+The source prints $S^4$, but the formula has four coordinates, so it defines a self-map of the unit sphere $S^3\subset\RR^4$.
 :::
 
 ::: {.solution}
@@ -128,9 +128,9 @@ Stereographic projection from the omitted point gives a homeomorphism
 \[
 S^3\setminus\{(-1,0,0,0)\}
 \cong
-\mathbb R^3,
+\RR^3,
 \]
-and \(\mathbb R^3\) is contractible.
+and \(\RR^3\) is contractible.
 
 :::
 
@@ -156,7 +156,7 @@ By step [](#s1-4){.pf-ref}, \(f\) factors through the contractible space in step
 
 A null-homotopic self-map of \(S^3\) induces the zero homomorphism on
 \[
-H_3(S^3;\mathbb Z)\cong\mathbb Z.
+H_3(S^3;\ZZ)\cong\ZZ.
 \]
 
 
@@ -180,7 +180,7 @@ Therefore
 
 By definition, the degree is the integer by which
 \[
-f_*:H_3(S^3;\mathbb Z)\to H_3(S^3;\mathbb Z)
+f_*:H_3(S^3;\ZZ)\to H_3(S^3;\ZZ)
 \]
 multiplies a fundamental class. Step [](#s1-7){.pf-ref} says this map is zero.
 

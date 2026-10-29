@@ -9,7 +9,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f\in L^3(\mathbb R)$ and
+Let $f\in L^3(\RR)$ and
 \[
 \phi(x)=
 \begin{cases}
@@ -19,7 +19,7 @@ Let $f\in L^3(\mathbb R)$ and
 \]
 Show that
 \[
-f_n(x):=n\int_{\mathbb R}f(x-y)\phi(ny)\,dy\longrightarrow0
+f_n(x):=n\int_{\RR}f(x-y)\phi(ny)\,dy\longrightarrow0
 \]
 Lebesgue almost everywhere.
 :::
@@ -53,9 +53,9 @@ g_n(x)=ng(nx).
 
 One has
 \[
-\int_{\mathbb R}h_n
+\int_{\RR}h_n
 =
-\int_{\mathbb R}g_n
+\int_{\RR}g_n
 =
 \frac2\pi.
 \]
@@ -160,12 +160,12 @@ which tends to $0$ at every Lebesgue point.
 
 ::: {.pf-step #s1-4}
 
-The function $f\in L^1_{\mathrm{loc}}(\mathbb R)$, so almost every point is a Lebesgue point of $f$.
+The function $f\in L^1_{\mathrm{loc}}(\RR)$, so almost every point is a Lebesgue point of $f$.
 
 
 ::: pf-proof
 
-Since $f\in L^3(\mathbb R)$, Hölder's inequality gives
+Since $f\in L^3(\RR)$, Hölder's inequality gives
 \[
 \int_E|f|
 \le

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Exhibit infinitely many quadratic extensions of $\mathbb Q$ and prove that they are pairwise nonisomorphic.
+Exhibit infinitely many quadratic extensions of $\QQ$ and prove that they are pairwise nonisomorphic.
 :::
 
 ::: {.solution}

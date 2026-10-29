@@ -42,7 +42,7 @@ After $n$ stages there are $4^n$ smallest handles, and the complement $Y_n$ of t
 
 ::: pf-proof
 
-For $n=0$ the initial compact set is a standard solid torus, so its complement has fundamental group $F_1\cong\mathbb Z$. At each replacement, one handle is replaced by four disjoint small handles. The new complement piece is a ball with four tubes removed, whose fundamental group is free on four meridians. Repeating independently for each of the $4^n$ handles gives a free group on the meridians of the $4^n$ smallest handles.
+For $n=0$ the initial compact set is a standard solid torus, so its complement has fundamental group $F_1\cong\ZZ$. At each replacement, one handle is replaced by four disjoint small handles. The new complement piece is a ball with four tubes removed, whose fundamental group is free on four meridians. Repeating independently for each of the $4^n$ handles gives a free group on the meridians of the $4^n$ smallest handles.
 
 :::
 
@@ -81,7 +81,7 @@ The group $F_{4^{n+1}}$ splits as a free product of $4^n$ free groups of rank fo
 \[
 [a_1,a_2][a_3,a_4]
 \]
-in the corresponding rank-four free factor. A homomorphism $\mathbb Z\to F_4$ sending $1$ to a nontrivial element is injective, and the free product of these injections is injective.
+in the corresponding rank-four free factor. A homomorphism $\ZZ\to F_4$ sending $1$ to a nontrivial element is injective, and the free product of these injections is injective.
 
 :::
 
@@ -91,7 +91,7 @@ in the corresponding rank-four free factor. A homomorphism $\mathbb Z\to F_4$ se
 
 Hence the exterior fundamental group is the increasing union
 \[
-\pi_1(\mathbb R^3-B)
+\pi_1(\RR^3-B)
 \cong
 \varinjlim\left(
 F_1\hookrightarrow F_4\hookrightarrow F_{16}\hookrightarrow\cdots

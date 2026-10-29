@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $n \geq 0$ be an integer.
-Assume $f : \mathbb{C} \to \mathbb{C}$ is an entire function such that
+Assume $f : \CC \to \CC$ is an entire function such that
 $$
 |f(z)| \leq 1 + (\log(1 + |z|))^n.
 $$
@@ -32,5 +32,5 @@ For every $R>0$, Cauchy's estimate at $0$ gives, for $k\ge1$,
 \]
 The right-hand side tends to $0$ as $R\to\infty$. Hence
 $f^{(k)}(0)=0$ for every $k\ge1$, so the Taylor series of $f$ is constant.
-Thus $f$ is constant on $\mathbb C$.
+Thus $f$ is constant on $\CC$.
 :::

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Suppose $F/\mathbb{F}_{p^n}$ is a finite field extension where $p$ is prime and $n \in \mathbb{Z}^+$.
+(a) Suppose $F/\mathbb{F}_{p^n}$ is a finite field extension where $p$ is prime and $n \in \ZZ^+$.
 Prove that $\operatorname{Gal}(F/\mathbb{F}_{p^n}) = \langle \sigma^n \rangle$, where $\sigma(a) := a^p$ is the Frobenius automorphism of $F$.
 (You may use without proof the fact that $F/\mathbb{F}_p$ is a Galois extension and $\operatorname{Gal}(F/\mathbb{F}_p) = \langle \sigma \rangle$.)
 

@@ -131,7 +131,7 @@ Use the standard presentation
 \]
 Define
 \[
-q:\pi_1(\Sigma_g)\to\mathbb Z/d\mathbb Z
+q:\pi_1(\Sigma_g)\to\ZZ/d\ZZ
 \]
 by
 \[
@@ -139,7 +139,7 @@ q(a_1)=1,
 \qquad
 q(b_1)=q(a_2)=q(b_2)=\cdots=q(a_g)=q(b_g)=0.
 \]
-The defining relation maps to \(0\), since every commutator maps to \(0\) in the abelian group \(\mathbb Z/d\mathbb Z\). Hence \(q\) is a well-defined surjection.
+The defining relation maps to \(0\), since every commutator maps to \(0\) in the abelian group \(\ZZ/d\ZZ\). Hence \(q\) is a well-defined surjection.
 Its kernel
 \[
 H=\ker q

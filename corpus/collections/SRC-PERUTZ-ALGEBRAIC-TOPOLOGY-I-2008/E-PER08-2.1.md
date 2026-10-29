@@ -23,27 +23,27 @@ audit:
 ---
 
 ::: {.problem}
-Show that every matrix $A\in \operatorname{SL}_2(\mathbb R)$ can be written uniquely as a product $KL$, with $K\in\operatorname{SO}(2)$ and $L$ lower triangular with positive diagonal entries.
+Show that every matrix $A\in \operatorname{SL}_2(\RR)$ can be written uniquely as a product $KL$, with $K\in\operatorname{SO}(2)$ and $L$ lower triangular with positive diagonal entries.
 
 Use this to construct:
 
-1. a deformation retraction of $\operatorname{SL}_2(\mathbb R)$, topologized as a subspace of $\mathbb R^4$, onto $\operatorname{SO}(2)$; and
+1. a deformation retraction of $\operatorname{SL}_2(\RR)$, topologized as a subspace of $\RR^4$, onto $\operatorname{SO}(2)$; and
 
 2. a homeomorphism
    \[
-   S^1\times(0,\infty)\times\mathbb R\longrightarrow \operatorname{SL}_2(\mathbb R).
+   S^1\times(0,\infty)\times\RR\longrightarrow \operatorname{SL}_2(\RR).
    \]
 
-Deduce that $\operatorname{SL}_2(\mathbb R)$ is path connected and that
+Deduce that $\operatorname{SL}_2(\RR)$ is path connected and that
 \[
-\pi_1(\operatorname{SL}_2(\mathbb R))\cong\mathbb Z.
+\pi_1(\operatorname{SL}_2(\RR))\cong\ZZ.
 \]
 :::
 
 ::: {.solution}
 Write
 \[
-A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in\operatorname{SL}_2(\mathbb R),
+A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in\operatorname{SL}_2(\RR),
 \qquad
 ad-bc=1.
 \]
@@ -150,14 +150,14 @@ is forced as well. Therefore the factorization is unique.
 
 The factorization gives a homeomorphism
 \[
-\operatorname{SO}(2)\times(0,\infty)\times\mathbb R
+\operatorname{SO}(2)\times(0,\infty)\times\RR
 \xrightarrow{\cong}
-\operatorname{SL}_2(\mathbb R).
+\operatorname{SL}_2(\RR).
 \]
 
 ::: pf-proof
 
-Every lower-triangular matrix in $\operatorname{SL}_2(\mathbb R)$ with positive diagonal has a unique form
+Every lower-triangular matrix in $\operatorname{SL}_2(\RR)$ with positive diagonal has a unique form
 \[
 L(r,s)=
 \begin{pmatrix}
@@ -165,7 +165,7 @@ r^{-1}&0\\
 s&r
 \end{pmatrix},
 \qquad
-r>0,\ s\in\mathbb R.
+r>0,\ s\in\RR.
 \]
 Define
 \[
@@ -185,7 +185,7 @@ s=\frac{ab+cd}{r},
 \qquad
 K=\frac1r\begin{pmatrix}d&b\\-b&d\end{pmatrix}.
 \]
-The denominator $r$ never vanishes on $\operatorname{SL}_2(\mathbb R)$, so these formulas are continuous. Thus $\Phi$ is a homeomorphism.
+The denominator $r$ never vanishes on $\operatorname{SL}_2(\RR)$, so these formulas are continuous. Thus $\Phi$ is a homeomorphism.
 
 Finally,
 \[
@@ -196,9 +196,9 @@ S^1\xrightarrow{\cong}\operatorname{SO}(2),
 \]
 is a homeomorphism. Composing with $\Phi$ gives
 \[
-S^1\times(0,\infty)\times\mathbb R
+S^1\times(0,\infty)\times\RR
 \xrightarrow{\cong}
-\operatorname{SL}_2(\mathbb R).
+\operatorname{SL}_2(\RR).
 \]
 
 :::
@@ -233,7 +233,7 @@ If $A\in\operatorname{SO}(2)$, uniqueness of the factorization gives $L=I$, so $
 \[
 H(u,A)=A
 \]
-for every $u$. Hence $H$ is a strong deformation retraction of $\operatorname{SL}_2(\mathbb R)$ onto $\operatorname{SO}(2)$.
+for every $u$. Hence $H$ is a strong deformation retraction of $\operatorname{SL}_2(\RR)$ onto $\operatorname{SO}(2)$.
 
 :::
 
@@ -247,27 +247,27 @@ The topological conclusions follow.
 
 The factors
 \[
-S^1,\qquad(0,\infty),\qquad\mathbb R
+S^1,\qquad(0,\infty),\qquad\RR
 \]
 are path connected, so their product is path connected. By step [](#s3){.pf-ref},
 \[
-\operatorname{SL}_2(\mathbb R)
+\operatorname{SL}_2(\RR)
 \]
 is path connected.
 
 By step [](#s4){.pf-ref}, inclusion of $\operatorname{SO}(2)$ is a homotopy equivalence, hence
 \[
-\pi_1(\operatorname{SL}_2(\mathbb R))
+\pi_1(\operatorname{SL}_2(\RR))
 \cong
 \pi_1(\operatorname{SO}(2)).
 \]
 Since $\operatorname{SO}(2)\cong S^1$ and
 \[
-\pi_1(S^1)\cong\mathbb Z,
+\pi_1(S^1)\cong\ZZ,
 \]
 we obtain
 \[
-\boxed{\pi_1(\operatorname{SL}_2(\mathbb R))\cong\mathbb Z}.
+\boxed{\pi_1(\operatorname{SL}_2(\RR))\cong\ZZ}.
 \]
 
 :::

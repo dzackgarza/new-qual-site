@@ -49,7 +49,7 @@ $$
 $$
 are the standard generators, with
 $$
-H_0(T)\cong\mathbb Z,\quad H_1(T)\cong\mathbb Z[a]\oplus\mathbb Z[b],\quad H_2(T)\cong\mathbb Z[t].
+H_0(T)\cong\ZZ,\quad H_1(T)\cong\ZZ[a]\oplus\ZZ[b],\quad H_2(T)\cong\ZZ[t].
 $$
 
 ::: pf-proof
@@ -70,7 +70,7 @@ and
 $$
 \beta(a)=0,\quad \beta(b)=1,\quad \beta(c)=1.
 $$
-Then $[\alpha],[\beta]$ are the Poincaré-dual basis of $H^1(T;\mathbb Z)$ corresponding to $[b]$ and $-[a]$ up to the chosen orientation convention.
+Then $[\alpha],[\beta]$ are the Poincaré-dual basis of $H^1(T;\ZZ)$ corresponding to $[b]$ and $-[a]$ up to the chosen orientation convention.
 
 ::: pf-proof
 
@@ -117,11 +117,11 @@ On $\sigma$, the first edge is $a$ and the second is $b$, giving $1\cdot1=1$. On
 
 ::: {.pf-step #s5}
 
-Therefore $[\alpha]\smile[\beta]$ is a generator of $H^2(T;\mathbb Z)$.
+Therefore $[\alpha]\smile[\beta]$ is a generator of $H^2(T;\ZZ)$.
 
 ::: pf-proof
 
-The group $H^2(T;\mathbb Z)\cong\mathbb Z$ is detected by evaluation on the fundamental class $[t]$. A class evaluating to $1$ is a generator.
+The group $H^2(T;\ZZ)\cong\ZZ$ is detected by evaluation on the fundamental class $[t]$. A class evaluating to $1$ is a generator.
 
 :::
 
@@ -136,7 +136,7 @@ $$
 
 ::: pf-proof
 
-Integral cohomology is graded-commutative, so for a degree-$1$ class $x$ one has $x^2=-x^2$, hence $2x^2=0$. Since $H^2(T;\mathbb Z)$ is torsion-free, $x^2=0$. Graded commutativity also gives the displayed anticommutation relation.
+Integral cohomology is graded-commutative, so for a degree-$1$ class $x$ one has $x^2=-x^2$, hence $2x^2=0$. Since $H^2(T;\ZZ)$ is torsion-free, $x^2=0$. Graded commutativity also gives the displayed anticommutation relation.
 
 :::
 
@@ -146,7 +146,7 @@ Integral cohomology is graded-commutative, so for a degree-$1$ class $x$ one has
 
 Consequently
 $$
-\boxed{H^*(T;\mathbb Z)\cong\Lambda_{\mathbb Z}([\alpha],[\beta])}
+\boxed{H^*(T;\ZZ)\cong\Lambda_{\ZZ}([\alpha],[\beta])}
 $$
 with both generators in degree $1$.
 

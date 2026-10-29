@@ -33,12 +33,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
+Let $\Delta=\{z\in\CC:|z|<1\}$.
 
-(a) Let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic with a pole at infinity.
+(a) Let $f : \CC \to \CC$ be meromorphic with a pole at infinity.
 Show that $f$ must be a rational function.
 
-(b) Use the above to prove the following: if $f : \Delta \to \mathbb{C}$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $|f(z)| = 1$ for all $|z| = 1$, then $f(z)$ is the restriction of a rational function.
+(b) Use the above to prove the following: if $f : \Delta \to \CC$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $|f(z)| = 1$ for all $|z| = 1$, then $f(z)$ is the restriction of a rational function.
 :::
 
 ::: {.solution}
@@ -51,7 +51,7 @@ A meromorphic function on the sphere is rational; in particular, part (a) holds.
 
 ::: pf-proof
 
-Suppose $f$ is meromorphic on $\mathbb C$ and has either
+Suppose $f$ is meromorphic on $\CC$ and has either
 a pole or a removable singularity at infinity. Then it
 has no finite pole for $|z|>R$, for some $R>0$. Its
 finite poles form a locally finite set: the local

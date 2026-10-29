@@ -52,5 +52,5 @@ Therefore
 \prod_{k=1}^{\infty}\cos\!\left(\frac{z}{2^k}\right)
 =\frac{\sin z}{z}
 \]
-for $z\ne0$. At $z=0$, every factor equals $1$ and the right side is understood by its removable value $1$. Thus the identity holds for every $z\in\mathbb C$.
+for $z\ne0$. At $z=0$, every factor equals $1$ and the right side is understood by its removable value $1$. Thus the identity holds for every $z\in\CC$.
 :::

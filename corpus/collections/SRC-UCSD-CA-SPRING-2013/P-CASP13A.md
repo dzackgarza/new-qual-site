@@ -60,7 +60,7 @@ has a zero at $a$, then every sufficiently small disk about $a$ contains a
 zero of $f_n$ for all sufficiently large $n$.
 
 **Riemann mapping theorem.** Every nonempty simply connected proper domain
-$G\subsetneq\mathbb C$ is conformally equivalent to the unit disk. If
+$G\subsetneq\CC$ is conformally equivalent to the unit disk. If
 $a\in G$, there is a unique conformal map $F:G\to\mathbb D$ satisfying
 $F(a)=0$ and $F'(a)>0$.
 

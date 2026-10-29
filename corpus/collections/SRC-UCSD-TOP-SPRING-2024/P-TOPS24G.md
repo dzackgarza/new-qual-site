@@ -29,13 +29,13 @@ Let $d=\gcd(n_1,\dots,n_k)$, taken nonnegative.
 ::: pf-step
 If at least one $n_i$ is nonzero, so $d>0$, then
 $$
-\pi_1(X)\cong\mathbb Z/d.
+\pi_1(X)\cong\ZZ/d.
 $$
 
 ::: pf-proof
-Starting from $\pi_1(S^1)=\langle t\rangle\cong\mathbb Z$, attaching the $i$-th $2$-cell imposes $t^{n_i}=1$. Thus
+Starting from $\pi_1(S^1)=\langle t\rangle\cong\ZZ$, attaching the $i$-th $2$-cell imposes $t^{n_i}=1$. Thus
 $$
-\pi_1(X)\cong \mathbb Z/\langle n_1,\dots,n_k\rangle\cong\mathbb Z/d.
+\pi_1(X)\cong \ZZ/\langle n_1,\dots,n_k\rangle\cong\ZZ/d.
 $$
 :::
 
@@ -60,13 +60,13 @@ The attaching loop has degree $n_i$ downstairs. Since $d\mid n_i$, its lift to t
 :::
 
 ::: {.pf-step #h2-universal-cover}
-Hence $\operatorname{im}\partial_2=\mathbb Z z$ and
+Hence $\operatorname{im}\partial_2=\ZZ z$ and
 $$
-H_2(\widetilde X)=\ker\partial_2\cong\mathbb Z^{dk-1}.
+H_2(\widetilde X)=\ker\partial_2\cong\ZZ^{dk-1}.
 $$
 
 ::: pf-proof
-The numbers $n_i/d$ have gcd $1$, so the boundaries in step [](#boundary-formula){.pf-ref} generate $\mathbb Z z$. Thus $\partial_2:\mathbb Z^{dk}\to\mathbb Z^d$ has rank $1$. Its kernel is a subgroup of a free abelian group, hence free, and has rank $dk-1$.
+The numbers $n_i/d$ have gcd $1$, so the boundaries in step [](#boundary-formula){.pf-ref} generate $\ZZ z$. Thus $\partial_2:\ZZ^{dk}\to\ZZ^d$ has rank $1$. Its kernel is a subgroup of a free abelian group, hence free, and has rank $dk-1$.
 :::
 
 :::
@@ -74,7 +74,7 @@ The numbers $n_i/d$ have gcd $1$, so the boundaries in step [](#boundary-formula
 ::: pf-step
 For $d>0$,
 $$
-\boxed{\pi_2(X)\cong\mathbb Z^{dk-1}.}
+\boxed{\pi_2(X)\cong\ZZ^{dk-1}.}
 $$
 
 ::: pf-proof
@@ -90,13 +90,13 @@ X\simeq S^1\vee\bigvee_{i=1}^k S^2
 $$
 and
 $$
-\boxed{\pi_2(X)\cong\bigoplus_{(m,i)\in\mathbb Z\times\{1,\dots,k\}}\mathbb Z.}
+\boxed{\pi_2(X)\cong\bigoplus_{(m,i)\in\ZZ\times\{1,\dots,k\}}\ZZ.}
 $$
 
 ::: pf-proof
-A degree-$0$ attaching map $S^1\to S^1$ is nullhomotopic, so attaching each $2$-cell wedges on an $S^2$. The universal cover has $1$-skeleton the line $\mathbb R$ with vertices indexed by $m\in\mathbb Z$, and at every vertex there are $k$ lifted $2$-spheres. Collapsing the contractible lifted $1$-skeleton gives a wedge of countably many $2$-spheres, indexed by $\mathbb Z\times\{1,\dots,k\}$. Therefore
+A degree-$0$ attaching map $S^1\to S^1$ is nullhomotopic, so attaching each $2$-cell wedges on an $S^2$. The universal cover has $1$-skeleton the line $\RR$ with vertices indexed by $m\in\ZZ$, and at every vertex there are $k$ lifted $2$-spheres. Collapsing the contractible lifted $1$-skeleton gives a wedge of countably many $2$-spheres, indexed by $\ZZ\times\{1,\dots,k\}$. Therefore
 $$
-H_2(\widetilde X)\cong\bigoplus_{\mathbb Z\times\{1,\dots,k\}}\mathbb Z,
+H_2(\widetilde X)\cong\bigoplus_{\ZZ\times\{1,\dots,k\}}\ZZ,
 $$
 and Hurewicz gives the same group for $\pi_2$.
 :::

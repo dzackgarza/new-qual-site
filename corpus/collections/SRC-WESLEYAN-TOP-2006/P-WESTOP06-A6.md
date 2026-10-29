@@ -138,13 +138,13 @@ If \(X\) is compact, then the maximal ideals of \(C(X)\) are exactly
 
 For each \(x\in X\), evaluation
 \[
-\operatorname{ev}_x:C(X)\longrightarrow\mathbb R,
+\operatorname{ev}_x:C(X)\longrightarrow\RR,
 \qquad
 f\longmapsto f(x),
 \]
 is a surjective ring homomorphism with kernel \(M_x\). Hence
 \[
-C(X)/M_x\cong\mathbb R,
+C(X)/M_x\cong\RR,
 \]
 so \(M_x\) is maximal.
 

@@ -70,7 +70,7 @@ gives
 \boxed{a_n(\alpha)\sim \frac{n^{\alpha-1}}{\Gamma(\alpha)}}.
 \]
 
-If $\alpha=-m$ with $m\in\mathbb Z_{\ge0}$, then
+If $\alpha=-m$ with $m\in\ZZ_{\ge0}$, then
 \[
 (1-z)^{-\alpha}=(1-z)^m
 \]

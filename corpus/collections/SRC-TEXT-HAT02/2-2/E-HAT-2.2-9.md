@@ -52,8 +52,8 @@ Hence
 \[
 H_i(Y)\cong
 \begin{cases}
-\mathbb Z,&i=0,2,\\
-\mathbb Z,&i=1,\\
+\ZZ,&i=0,2,\\
+\ZZ,&i=1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -76,25 +76,25 @@ one has
 \[
 H_i(Y)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^3,&i=1,\\
-\mathbb Z^2,&i=2,\\
+\ZZ,&i=0,\\
+\ZZ^3,&i=1,\\
+\ZZ^2,&i=2,\\
 0,&i>2.
 \end{cases}
 \]
 
 ::: pf-proof
 
-The homology of $S^1\vee S^1$ is $\mathbb Z$ in degree $0$, $\mathbb Z^2$ in degree $1$, and zero otherwise. Since all groups involved are free, the Kunneth formula has no Tor term. Therefore
+The homology of $S^1\vee S^1$ is $\ZZ$ in degree $0$, $\ZZ^2$ in degree $1$, and zero otherwise. Since all groups involved are free, the Kunneth formula has no Tor term. Therefore
 \[
 H_1(Y)\cong H_1(S^1)\otimes H_0(S^1\vee S^1)
 \oplus H_0(S^1)\otimes H_1(S^1\vee S^1)
-\cong\mathbb Z^3,
+\cong\ZZ^3,
 \]
 and
 \[
 H_2(Y)\cong H_1(S^1)\otimes H_1(S^1\vee S^1)
-\cong\mathbb Z^2.
+\cong\ZZ^2.
 \]
 
 :::
@@ -107,8 +107,8 @@ In part (c), let $P$ be the pair of pants and let $Y$ be the quotient obtained b
 \[
 H_i(Y)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^2,&i=1,\\
+\ZZ,&i=0,\\
+\ZZ^2,&i=1,\\
 0,&i\ge2.
 \end{cases}
 \]
@@ -125,23 +125,23 @@ H_*(Y,C)\cong H_*(P,\partial P).
 \]
 For an oriented pair of pants,
 \[
-H_2(P,\partial P)\cong\mathbb Z,
+H_2(P,\partial P)\cong\ZZ,
 \qquad
-H_1(P,\partial P)\cong\mathbb Z^2,
+H_1(P,\partial P)\cong\ZZ^2,
 \qquad
 H_0(P,\partial P)=0.
 \]
 The relevant part of the long exact sequence is
 \[
-0\to H_2(Y)\to\mathbb Z
-\xrightarrow{\delta}\mathbb Z
-\to H_1(Y)\to\mathbb Z^2\to0.
+0\to H_2(Y)\to\ZZ
+\xrightarrow{\delta}\ZZ
+\to H_1(Y)\to\ZZ^2\to0.
 \]
 Take the generator of $H_1(C)$ to be clockwise. For the standard orientation of the planar pair of pants, the induced boundary orientation is counterclockwise on the outer boundary and clockwise on each inner boundary. Since all three are identified preserving clockwise orientation, the boundary of the relative fundamental class maps to
 \[
 (-1)+1+1=1
 \]
-times the generator of $H_1(C)$. Thus $\delta$ is an isomorphism. Hence $H_2(Y)=0$ and $H_1(Y)\cong\mathbb Z^2$.
+times the generator of $H_1(C)$. Thus $\delta$ is an isomorphism. Hence $H_2(Y)=0$ and $H_1(Y)\cong\ZZ^2$.
 
 :::
 
@@ -153,8 +153,8 @@ In part (d), let $Y_{m,n}$ be the stated quotient of the torus. Then
 \[
 H_i(Y_{m,n})\cong
 \begin{cases}
-\mathbb Z,&i=0,2,\\
-\mathbb Z^2,&i=1,\\
+\ZZ,&i=0,2,\\
+\ZZ^2,&i=1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -167,7 +167,7 @@ a^m b^n a^{-m}b^{-n}.
 \]
 The cellular boundary $d_2:C_2\to C_1$ records exponent sums in the two $1$-cells, and both exponent sums are zero. Thus
 \[
-0\longrightarrow\mathbb Z\xrightarrow{0}\mathbb Z^2\xrightarrow{0}\mathbb Z\longrightarrow0
+0\longrightarrow\ZZ\xrightarrow{0}\ZZ^2\xrightarrow{0}\ZZ\longrightarrow0
 \]
 is the cellular chain complex, yielding the displayed groups.
 

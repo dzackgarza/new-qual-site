@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\mathbb C:|z|<1\}$ and $H=\{w\in\mathbb C:\operatorname{Im}w>0\}$. Let $f:D\to H$ be holomorphic.
+Let $D=\{z\in\CC:|z|<1\}$ and $H=\{w\in\CC:\operatorname{Im}w>0\}$. Let $f:D\to H$ be holomorphic.
 
 Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\left| f ^ { \prime } ( 0 ) \right|$
 :::

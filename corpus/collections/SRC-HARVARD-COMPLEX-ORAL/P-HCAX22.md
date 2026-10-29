@@ -39,12 +39,12 @@ so the rigidity case gives
 \[
 H(z)=e^{i\theta}z
 \]
-for some $\theta\in\mathbb R$. Hence
+for some $\theta\in\RR$. Hence
 \[
 \boxed{
 F(z)=e^{i\theta}\frac{z-a}{1-\overline a z},
 \qquad a\in\mathbb D,
-\ \theta\in\mathbb R.}
+\ \theta\in\RR.}
 \]
 
 Conversely, every map of this form is a composition of the disk automorphism $\phi_a$ with a rotation, hence is a conformal automorphism of $\mathbb D$.

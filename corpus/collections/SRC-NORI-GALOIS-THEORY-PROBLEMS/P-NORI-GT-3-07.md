@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-The cylotomic polynomials $\Phi _ { n } ( X ) \in \mathbb { Z } [ X ]$ defined for all natural numbers $n _ { \mathrm { : } }$ have the property
+The cylotomic polynomials $\Phi _ { n } ( X ) \in \ZZ [ X ]$ defined for all natural numbers $n _ { \mathrm { : } }$ have the property
 
 $$
 X ^ { n } - 1 = \prod _ { d \mid n } \Phi _ { d } ( X )
@@ -26,7 +26,7 @@ Let $n = n ^ { \prime } p ^ { k }$ with $p$ not dividing $n ^ { \prime } .$ . le
 
 Here $\varphi$ is Euler’s phi function.
 
-$\varphi ( m )$ is the order of the group of units of the ring $\mathbb { Z } / m \mathbb { Z }$
+$\varphi ( m )$ is the order of the group of units of the ring $\ZZ / m \ZZ$
 
 Equivalently, $\varphi ( m )$ is the cardinality of the set of natural numbers $k \leq m$ such that $\operatorname { g . c . d . } ( k , m ) = 1$
 
@@ -103,7 +103,7 @@ Apply the same Frobenius identity with exponent $p^{k-1}$.
 
 ::: {.pf-step #s1-4}
 
-Over $\mathbb Z[X]$, one has
+Over $\ZZ[X]$, one has
 \[
 \frac{X^{mp^k}-1}{X^{mp^{k-1}}-1}
 =\prod_{d\mid m}\Phi_{dp^k}(X).

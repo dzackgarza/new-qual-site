@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A=\{z\in\mathbb C:1<|z|<2\}$ and let $f$ be
+Let $A=\{z\in\CC:1<|z|<2\}$ and let $f$ be
 holomorphic on a neighborhood of $\overline A$, with
 $f|_A$ nonconstant and $|f|=1$ on $\partial A$.
 Prove that $f$ has at least two zeros in $A$, counted

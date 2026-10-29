@@ -127,7 +127,7 @@ and the allowed values are
 \boxed{
 k^2=\frac{\pi^2}{L^2}
 \left(n_x^2+n_y^2+n_z^2\right),
-\qquad n_x,n_y,n_z\in\mathbb N.}
+\qquad n_x,n_y,n_z\in\NN.}
 \]
 
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LSJ7W
 kind: problem
-title: Homeomorphism of $T^2$ induced by $SL(2, \mathbb{Z})$ and $H_1$ of the mapping torus $T_A^3$
+title: Homeomorphism of $T^2$ induced by $SL(2, \ZZ)$ and $H_1$ of the mapping torus $T_A^3$
 classification:
   areas:
   - topology
@@ -26,20 +26,20 @@ audit:
 ::: {.problem}
 (a) Consider the 2-torus as the quotient space
 $$
-T^2 = \mathbb{R}^2 / \sim \quad \text{where } (x, y) \sim (x + m, y + n) \text{ for } m, n \in \mathbb{Z},
+T^2 = \RR^2 / \sim \quad \text{where } (x, y) \sim (x + m, y + n) \text{ for } m, n \in \ZZ,
 $$
-and let $A \in \operatorname{SL}(2, \mathbb{Z})$ be a $2 \times 2$ matrix with integer entries such that $\det A = 1$.
-Prove that the linear action of $A$ on $\mathbb{R}^2$ descends to induce a well-defined homeomorphism $\bar{f}_A: T^2 \to T^2$.
+and let $A \in \operatorname{SL}(2, \ZZ)$ be a $2 \times 2$ matrix with integer entries such that $\det A = 1$.
+Prove that the linear action of $A$ on $\RR^2$ descends to induce a well-defined homeomorphism $\bar{f}_A: T^2 \to T^2$.
 
 (b) Using this homeomorphism $\bar{f}_A$, define the mapping torus
 $$
-T_A^3 = (T^2 \times \mathbb{R}) / \sim \quad \text{where } (p, t) \sim (\bar{f}_A(p), t + 1).
+T_A^3 = (T^2 \times \RR) / \sim \quad \text{where } (p, t) \sim (\bar{f}_A(p), t + 1).
 $$
-Compute $H_1(T_A^3; \mathbb{Z})$ for $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
+Compute $H_1(T_A^3; \ZZ)$ for $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
 :::
 
 ::: {.solution}
-**Goal:** Prove well-definedness and invertibility of the induced map $\bar{f}_A$ in (a), and compute $H_1(T_A^3; \mathbb{Z})$ using the Mayer–Vietoris sequence (and fundamental group abelianization) for the mapping torus in (b).
+**Goal:** Prove well-definedness and invertibility of the induced map $\bar{f}_A$ in (a), and compute $H_1(T_A^3; \ZZ)$ using the Mayer–Vietoris sequence (and fundamental group abelianization) for the mapping torus in (b).
 
 ::: pf
 
@@ -49,17 +49,17 @@ Part (a): Well-definedness and continuity of $\bar{f}_A$.
 ::: pf-proof
 
 ::: pf-step
-Let $q: \mathbb{R}^2 \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ be the canonical quotient projection.
+Let $q: \RR^2 \to T^2 = \RR^2/\ZZ^2$ be the canonical quotient projection.
 
 :::
 
 ::: pf-step
-Define the linear map $f_A: \mathbb{R}^2 \to \mathbb{R}^2$ by $f_A(v) = A v$. Because $f_A$ is linear, it is continuous.
+Define the linear map $f_A: \RR^2 \to \RR^2$ by $f_A(v) = A v$. Because $f_A$ is linear, it is continuous.
 
 :::
 
 ::: pf-step
-Let $v, v' \in \mathbb{R}^2$ be equivalent, so $v' = v + w$ for some $w \in \mathbb{Z}^2$.
+Let $v, v' \in \RR^2$ be equivalent, so $v' = v + w$ for some $w \in \ZZ^2$.
 
 :::
 
@@ -70,7 +70,7 @@ $$f_A(v') = A(v + w) = A v + A w.$$
 :::
 
 ::: pf-step
-Since $A \in \operatorname{SL}(2, \mathbb{Z})$, all entries of $A$ are integers, so $A w \in \mathbb{Z}^2$ whenever $w \in \mathbb{Z}^2$.
+Since $A \in \operatorname{SL}(2, \ZZ)$, all entries of $A$ are integers, so $A w \in \ZZ^2$ whenever $w \in \ZZ^2$.
 
 :::
 
@@ -94,12 +94,12 @@ Part (a): $\bar{f}_A$ is a homeomorphism.
 ::: pf-proof
 
 ::: pf-step
-Since $\det A = 1$, the matrix $A$ is invertible in $M_{2 \times 2}(\mathbb{Z})$.
+Since $\det A = 1$, the matrix $A$ is invertible in $M_{2 \times 2}(\ZZ)$.
 
 :::
 
 ::: pf-step
-By Cramer's rule, $A^{-1} = \frac{1}{\det A} \operatorname{adj}(A) = \operatorname{adj}(A)$ has integer entries and $\det(A^{-1}) = 1$, so $A^{-1} \in \operatorname{SL}(2, \mathbb{Z})$.
+By Cramer's rule, $A^{-1} = \frac{1}{\det A} \operatorname{adj}(A) = \operatorname{adj}(A)$ has integer entries and $\det(A^{-1}) = 1$, so $A^{-1} \in \operatorname{SL}(2, \ZZ)$.
 
 :::
 
@@ -142,8 +142,8 @@ $$\cdots \to H_1(X) \xrightarrow{I - A_*} H_1(X) \xrightarrow{i_*} H_1(T_A^3) \x
 ::: pf-step
 For $X = T^2$:
 
-- $H_0(T^2) \cong \mathbb{Z}$, and $A_* = \operatorname{id}_{\mathbb{Z}}$ on $H_0$, so $I - A_* = 0$ on $H_0(T^2)$.
-- $H_1(T^2) \cong \mathbb{Z}^2$, with canonical basis corresponding to the fundamental circles of $\mathbb{R}^2/\mathbb{Z}^2$.
+- $H_0(T^2) \cong \ZZ$, and $A_* = \operatorname{id}_{\ZZ}$ on $H_0$, so $I - A_* = 0$ on $H_0(T^2)$.
+- $H_1(T^2) \cong \ZZ^2$, with canonical basis corresponding to the fundamental circles of $\RR^2/\ZZ^2$.
 
 :::
 
@@ -154,8 +154,8 @@ $$0 \to \operatorname{coker}(I - A_*) \to H_1(T_A^3) \to \ker(I - A_*|_{H_0}) \t
 :::
 
 ::: pf-step
-Since $\ker(I - A_*|_{H_0}) = H_0(T^2) \cong \mathbb{Z}$ is a free abelian group, the short exact sequence splits:
-$$H_1(T_A^3) \cong \operatorname{coker}(I - A_*) \oplus \mathbb{Z}.$$
+Since $\ker(I - A_*|_{H_0}) = H_0(T^2) \cong \ZZ$ is a free abelian group, the short exact sequence splits:
+$$H_1(T_A^3) \cong \operatorname{coker}(I - A_*) \oplus \ZZ.$$
 
 :::
 
@@ -169,7 +169,7 @@ Part (b): Computation of $\operatorname{coker}(I - A_*)$ and $H_1(T_A^3)$.
 ::: pf-proof
 
 ::: pf-step
-The action on $H_1(T^2) \cong \mathbb{Z}^2$ is given by multiplication by $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
+The action on $H_1(T^2) \cong \ZZ^2$ is given by multiplication by $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
 
 :::
 
@@ -180,20 +180,20 @@ $$I - A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} - \begin{pmatrix} 1 & 1 \
 :::
 
 ::: pf-step
-The image of $I - A: \mathbb{Z}^2 \to \mathbb{Z}^2$ is:
-$$\operatorname{Im}(I - A) = \left\{ \begin{pmatrix} 0 & -1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} u \\ v \end{pmatrix} \;\middle|\; u, v \in \mathbb{Z} \right\} = \left\{ \begin{pmatrix} -v \\ 0 \end{pmatrix} \;\middle|\; v \in \mathbb{Z} \right\} = \mathbb{Z} \begin{pmatrix} 1 \\ 0 \end{pmatrix} \oplus \{0\}.$$
+The image of $I - A: \ZZ^2 \to \ZZ^2$ is:
+$$\operatorname{Im}(I - A) = \left\{ \begin{pmatrix} 0 & -1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} u \\ v \end{pmatrix} \;\middle|\; u, v \in \ZZ \right\} = \left\{ \begin{pmatrix} -v \\ 0 \end{pmatrix} \;\middle|\; v \in \ZZ \right\} = \ZZ \begin{pmatrix} 1 \\ 0 \end{pmatrix} \oplus \{0\}.$$
 
 :::
 
 ::: pf-step
 The cokernel is the quotient:
-$$\operatorname{coker}(I - A_*) = \mathbb{Z}^2 / (\mathbb{Z} \oplus 0) \cong \mathbb{Z}.$$
+$$\operatorname{coker}(I - A_*) = \ZZ^2 / (\ZZ \oplus 0) \cong \ZZ.$$
 
 :::
 
 ::: pf-step
 Combining with the split exact sequence from step [](#s3){.pf-ref}:
-$$H_1(T_A^3; \mathbb{Z}) \cong \mathbb{Z} \oplus \mathbb{Z} = \mathbb{Z}^2.$$
+$$H_1(T_A^3; \ZZ) \cong \ZZ \oplus \ZZ = \ZZ^2.$$
 
 :::
 
@@ -205,7 +205,7 @@ $$H_1(T_A^3; \mathbb{Z}) \cong \mathbb{Z} \oplus \mathbb{Z} = \mathbb{Z}^2.$$
 Conclusion:
 
 ::: pf-proof
-$A \in \operatorname{SL}(2, \mathbb{Z})$ descends to a homeomorphism of $T^2$, and $H_1(T_A^3; \mathbb{Z}) \cong \mathbb{Z}^2$.
+$A \in \operatorname{SL}(2, \ZZ)$ descends to a homeomorphism of $T^2$, and $H_1(T_A^3; \ZZ) \cong \ZZ^2$.
 :::
 
 :::

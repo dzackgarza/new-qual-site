@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all complex numbers $z = x + iy$, $(x, y \in \mathbb{R})$, such that $e^z = 2i$.
+Find all complex numbers $z = x + iy$, $(x, y \in \RR)$, such that $e^z = 2i$.
 :::
 
 
@@ -26,7 +26,7 @@ Find all complex numbers $z = x + iy$, $(x, y \in \mathbb{R})$, such that $e^z =
 ::: pf
 
 ::: pf-step
-Write $z=x+iy$ with $x,y\in\mathbb R$. Then
+Write $z=x+iy$ with $x,y\in\RR$. Then
 \[
 e^z=e^x(\cos y+i\sin y).
 \]
@@ -50,7 +50,7 @@ Hence $x=\ln2$.
 The argument condition is
 \[
 y=\frac\pi2+2\pi k,
-\qquad k\in\mathbb Z.
+\qquad k\in\ZZ.
 \]
 
 ::: pf-proof
@@ -66,7 +66,7 @@ Thus $\cos y=0$ and $\sin y=1$, which occurs exactly when $y=\pi/2+2\pi k$.
 ::: pf-step
 Therefore all solutions are
 \[
-\boxed{z=\ln2+i\left(\frac\pi2+2\pi k\right),\qquad k\in\mathbb Z.}
+\boxed{z=\ln2+i\left(\frac\pi2+2\pi k\right),\qquad k\in\ZZ.}
 \]
 
 ::: pf-proof

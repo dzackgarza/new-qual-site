@@ -34,7 +34,7 @@ Use the standard CW filtration $\mathbb{RP}^0\subset\cdots\subset\mathbb{RP}^9$ 
 
 ::: {.pf-step #reduced-chain-complex}
 Its reduced cellular chain complex is
-$$0\to\mathbb Z\xrightarrow{2}\mathbb Z\xrightarrow0\mathbb Z\xrightarrow2\mathbb Z\xrightarrow0\mathbb Z\to0,$$
+$$0\to\ZZ\xrightarrow{2}\ZZ\xrightarrow0\ZZ\xrightarrow2\ZZ\xrightarrow0\ZZ\to0,$$
 with the terms in degrees $9,8,7,6,5$.
 
 ::: pf-proof
@@ -45,7 +45,7 @@ For real projective space the cellular boundary in degree $k$ is multiplication 
 
 ::: pf-step
 Therefore
-$$\boxed{H_i(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&i=0,9,\\ \mathbb Z/2,&i=5,7,\\0,&\text{otherwise.}\end{cases}}$$
+$$\boxed{H_i(X;\ZZ)\cong\begin{cases}\ZZ,&i=0,9,\\ \ZZ/2,&i=5,7,\\0,&\text{otherwise.}\end{cases}}$$
 
 ::: pf-proof
 Read kernels modulo images from the complex in step [](#reduced-chain-complex){.pf-ref}.

@@ -17,13 +17,13 @@ review: draft
 
 ::: {.problem}
 (1) Let $f$ be analytic in $\Omega: 0<|z-a|<r$ except at a sequence of poles $a_n \in \Omega$ with $\lim_{n \rightarrow \infty} a_n = a$.
-Show that for any $w \in \mathbb C$, there exists a sequence $z_n \in \Omega$ such that $\lim_{n \rightarrow \infty} f(z_n) = w$.
+Show that for any $w \in \CC$, there exists a sequence $z_n \in \Omega$ such that $\lim_{n \rightarrow \infty} f(z_n) = w$.
 
 (2) Explain the similarity and difference between the above assertion and the Weierstrass-Casorati theorem.
 :::
 
 ::: {.solution}
-(1) Fix $w\in\mathbb C$. For each pole $a_n$, the function
+(1) Fix $w\in\CC$. For each pole $a_n$, the function
 \[
 h_n(z)=\frac{1}{f(z)-w}
 \]
@@ -43,7 +43,7 @@ Since $a_n\to a$, we also have $z_n\to a$, and by construction
 $f(z_n)\to w$.
 
 (2) The conclusion resembles Casorati--Weierstrass: near the distinguished
-point $a$, the image is dense in $\mathbb C$. The difference is structural.
+point $a$, the image is dense in $\CC$. The difference is structural.
 Casorati--Weierstrass concerns a single isolated essential singularity at $a$.
 Here $a$ need not even be an isolated singularity of $f$; instead, $a$ is an
 accumulation point of poles, and the density conclusion is forced by the local

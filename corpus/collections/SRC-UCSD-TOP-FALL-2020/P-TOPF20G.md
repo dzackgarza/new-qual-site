@@ -31,7 +31,7 @@ The Lefschetz number of the swap $f(x,y)=(y,x)$ is $\chi(M)$.
 
 ::: pf-proof
 
-Over $\mathbb Q$, Künneth identifies
+Over $\QQ$, Künneth identifies
 $$H_k(M\times M)=\bigoplus_{p+q=k}H_p(M)\otimes H_q(M).$$
 The swap sends $x\otimes y$ to $(-1)^{pq}y\otimes x$. Summands with $p\ne q$ occur in exchanged pairs and contribute zero trace. On $H_p(M)\otimes H_p(M)$, the graded swap has trace $(-1)^p\dim H_p(M)$: for a vector space $V$, the ordinary flip on $V\otimes V$ has trace $\dim V$. Multiplying by the Lefschetz sign $(-1)^{2p}=1$ and summing gives
 $$L(f)=\sum_p(-1)^p b_p(M)=\chi(M).$$

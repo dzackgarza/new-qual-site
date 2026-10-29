@@ -27,25 +27,25 @@ Suppose that $f : \CC \to \CC$ is non-constant and entire. Prove that the image 
 ::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that the image of $f$ is not dense in
-$\mathbb C$. Then there exist $z_0\in\mathbb C$ and $\varepsilon>0$ such that
+$\CC$. Then there exist $z_0\in\CC$ and $\varepsilon>0$ such that
 \[
 |f(z)-z_0|\ge\varepsilon
-\qquad(z\in\mathbb C).
+\qquad(z\in\CC).
 \]
 
 
 ::: pf-proof
 
-If $f(\mathbb C)$ is not dense, its closure is a proper closed subset of
-$\mathbb C$. Choose
+If $f(\CC)$ is not dense, its closure is a proper closed subset of
+$\CC$. Choose
 \[
-z_0\notin\overline{f(\mathbb C)}.
+z_0\notin\overline{f(\CC)}.
 \]
 The complement of the closure is open, so some disk
 \[
 B_\varepsilon(z_0)
 \]
-is disjoint from $f(\mathbb C)$. This is exactly the displayed inequality.
+is disjoint from $f(\CC)$. This is exactly the displayed inequality.
 
 :::
 
@@ -121,14 +121,14 @@ which is constant.
 
 ::: {.pf-step #s1-5}
 
-Therefore $f(\mathbb C)$ is dense in $\mathbb C$.
+Therefore $f(\CC)$ is dense in $\CC$.
 
 
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} contradicts the hypothesis that $f$ is nonconstant. Thus the
-assumption in step [](#s1-1){.pf-ref} is false. Equivalently, for every $z_0\in\mathbb C$
-and every $\varepsilon>0$, there exists $z\in\mathbb C$ such that
+assumption in step [](#s1-1){.pf-ref} is false. Equivalently, for every $z_0\in\CC$
+and every $\varepsilon>0$, there exists $z\in\CC$ such that
 \[
 \boxed{|f(z)-z_0|<\varepsilon}.
 \]

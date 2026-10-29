@@ -16,16 +16,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^d\to[0,\infty)$ be measurable and define
+Let $f:\RR^d\to[0,\infty)$ be measurable and define
 \[
-\mu(A)=\int_{\mathbb R^d}f\,\mathbf1_A.
+\mu(A)=\int_{\RR^d}f\,\mathbf1_A.
 \]
 
 (a) Prove that $\mu$ is a countably additive measure on the Lebesgue measurable sets.
 
 (b) If $M_0\subseteq M_1\subseteq\cdots$ are measurable and $M=\bigcup_nM_n$, prove that
 \[
-\lim_{n\to\infty}\int_{\mathbb R^d}f\mathbf1_{M_n}
+\lim_{n\to\infty}\int_{\RR^d}f\mathbf1_{M_n}
 \]
 exists, identifying the limit.
 :::
@@ -43,7 +43,7 @@ One has $\mu(\varnothing)=0$.
 
 Since $\mathbf1_{\varnothing}=0$,
 $$
-\mu(\varnothing)=\int_{\mathbb R^d} f\mathbf1_{\varnothing}=0.
+\mu(\varnothing)=\int_{\RR^d} f\mathbf1_{\varnothing}=0.
 $$
 
 :::
@@ -82,7 +82,7 @@ These equalities are in $[0,\infty]$.
 
 ::: {.pf-step #s1-3}
 
-The function $\mu$ is a countably additive measure on the Lebesgue measurable subsets of $\mathbb R^d$.
+The function $\mu$ is a countably additive measure on the Lebesgue measurable subsets of $\RR^d$.
 
 
 ::: pf-proof
@@ -110,8 +110,8 @@ The inclusions imply $\mathbf1_{M_n}\leq\mathbf1_{M_{n+1}}$. If $x\notin M$, all
 
 One has
 $$
-\boxed{\lim_{n\to\infty}\int_{\mathbb R^d} f\mathbf1_{M_n}
-=\int_{\mathbb R^d} f\mathbf1_M
+\boxed{\lim_{n\to\infty}\int_{\RR^d} f\mathbf1_{M_n}
+=\int_{\RR^d} f\mathbf1_M
 =\mu(M)}.
 $$
 

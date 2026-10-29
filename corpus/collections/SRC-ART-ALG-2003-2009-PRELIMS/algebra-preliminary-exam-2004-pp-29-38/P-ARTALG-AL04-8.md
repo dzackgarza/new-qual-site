@@ -24,19 +24,19 @@ audit:
   note: "Verified existence of the automorphisms, exhaustiveness of the ten subgroups, invariance and degrees of all fixed-field generators, and every normality decision."
 ---
 ::: {.problem}
-This question asks you to describe the splitting field $K$ of the polynomial $x^4 - 5$ over $\mathbb{Q}$.
+This question asks you to describe the splitting field $K$ of the polynomial $x^4 - 5$ over $\QQ$.
 
-(a) What is $[K:\mathbb{Q}]$?
+(a) What is $[K:\QQ]$?
 
-(b) What is the Galois group $G$ of $K$ over $\mathbb{Q}$?
+(b) What is the Galois group $G$ of $K$ over $\QQ$?
 
 (c) Find all the subgroups of $G$ and describe their fixed fields.
 
-(d) Which of the fixed fields in part (c) is Galois over $\mathbb{Q}$?
+(d) Which of the fixed fields in part (c) is Galois over $\QQ$?
 :::
 
 ::: {.solution}
-Put $a=\sqrt[4]{5}>0$. The splitting field is $K=\mathbb Q(a,i)$,
+Put $a=\sqrt[4]{5}>0$. The splitting field is $K=\QQ(a,i)$,
 of degree $8$, and its Galois group is dihedral of order $8$.
 Use generators
 $$
@@ -44,17 +44,17 @@ r(a)=ia,\quad r(i)=i,\qquad s(a)=a,\quad s(i)=-i.
 $$
 The complete subgroup and fixed-field list is as follows.
 
-| Subgroup $H$ | Order | Fixed field $K^H$ | Degree over $\mathbb Q$ | Galois over $\mathbb Q$? |
+| Subgroup $H$ | Order | Fixed field $K^H$ | Degree over $\QQ$ | Galois over $\QQ$? |
 | --- | --- | --- | --- | --- |
-| $G$ | $8$ | $\mathbb Q$ | $1$ | Yes |
-| $\langle r\rangle$ | $4$ | $\mathbb Q(i)$ | $2$ | Yes |
-| $\langle r^2,s\rangle$ | $4$ | $\mathbb Q(a^2)$ | $2$ | Yes |
-| $\langle r^2,rs\rangle$ | $4$ | $\mathbb Q(ia^2)$ | $2$ | Yes |
-| $\langle r^2\rangle$ | $2$ | $\mathbb Q(a^2,i)$ | $4$ | Yes |
-| $\langle s\rangle$ | $2$ | $\mathbb Q(a)$ | $4$ | No |
-| $\langle r^2s\rangle$ | $2$ | $\mathbb Q(ia)$ | $4$ | No |
-| $\langle rs\rangle$ | $2$ | $\mathbb Q((1+i)a)$ | $4$ | No |
-| $\langle r^3s\rangle$ | $2$ | $\mathbb Q((1-i)a)$ | $4$ | No |
+| $G$ | $8$ | $\QQ$ | $1$ | Yes |
+| $\langle r\rangle$ | $4$ | $\QQ(i)$ | $2$ | Yes |
+| $\langle r^2,s\rangle$ | $4$ | $\QQ(a^2)$ | $2$ | Yes |
+| $\langle r^2,rs\rangle$ | $4$ | $\QQ(ia^2)$ | $2$ | Yes |
+| $\langle r^2\rangle$ | $2$ | $\QQ(a^2,i)$ | $4$ | Yes |
+| $\langle s\rangle$ | $2$ | $\QQ(a)$ | $4$ | No |
+| $\langle r^2s\rangle$ | $2$ | $\QQ(ia)$ | $4$ | No |
+| $\langle rs\rangle$ | $2$ | $\QQ((1+i)a)$ | $4$ | No |
+| $\langle r^3s\rangle$ | $2$ | $\QQ((1-i)a)$ | $4$ | No |
 | $\{1\}$ | $1$ | $K$ | $8$ | Yes |
 
 ::: pf
@@ -65,17 +65,17 @@ The field degree and group presentation are as stated.
 
 ::: pf-proof
 
-The four roots are $a,ia,-a,-ia$. They generate $\mathbb Q(a,i)$,
+The four roots are $a,ia,-a,-ia$. They generate $\QQ(a,i)$,
 since their ratio $(ia)/a$ is $i$. Eisenstein's criterion at $5$
-makes $x^4-5$ irreducible over $\mathbb Q$, so $\mathbb Q(a)$
+makes $x^4-5$ irreducible over $\QQ$, so $\QQ(a)$
 has degree $4$ [@DF04]. It is a real field and does not contain
 $i$, whose polynomial $x^2+1$ has degree $2$. Hence
-$[K:\mathbb Q]=4\cdot2=8$. As a splitting field in characteristic
+$[K:\QQ]=4\cdot2=8$. As a splitting field in characteristic
 zero, this is a Galois extension.
 
-Since $[K:\mathbb Q(i)]=4$, the minimal polynomial of $a$ over
-$\mathbb Q(i)$ is still $x^4-5$. Sending $a$ to its root $ia$
-defines a $\mathbb Q(i)$-embedding of $K$ into itself. Its image
+Since $[K:\QQ(i)]=4$, the minimal polynomial of $a$ over
+$\QQ(i)$ is still $x^4-5$. Sending $a$ to its root $ia$
+defines a $\QQ(i)$-embedding of $K$ into itself. Its image
 contains $i$ and $ia$, hence also $a$, so it is an automorphism.
 This constructs $r$. Complex conjugation constructs $s$.
 Evaluation on $a,i$ gives
@@ -130,7 +130,7 @@ Every field in the table is the indicated fixed field.
 
 ::: pf-proof
 
-The Galois correspondence gives $[K^H:\mathbb Q]=8/|H|$ [@DF04].
+The Galois correspondence gives $[K^H:\QQ]=8/|H|$ [@DF04].
 It suffices to show that the proposed generators are fixed by $H$
 and generate a field of this degree.
 
@@ -140,8 +140,8 @@ $\langle r^2,s\rangle$, and $\langle r^2,rs\rangle$.
 Their degrees are $2$: $i$ and $ia^2$ are nonreal roots of
 rational quadratics, while $x^2-5$ is irreducible by Eisenstein.
 The generator $r^2$ fixes both $a^2$ and $i$. The field
-$\mathbb Q(a^2,i)$ has degree $4$, since adjoining $i$ to the
-real quadratic field $\mathbb Q(\sqrt5)$ has degree $2$.
+$\QQ(a^2,i)$ has degree $4$, since adjoining $i$ to the
+real quadratic field $\QQ(\sqrt5)$ has degree $2$.
 
 For the remaining order-two subgroups, direct substitution gives
 $$
@@ -152,13 +152,13 @@ $$
 Let $b$ denote any of these four nonzero fixed generators.
 Since $r$ fixes $i$ and sends $a$ to $ia$, the four distinct
 elements $b,ib,-b,-ib$ are images of $b$ under automorphisms of
-$K$. They are roots of its minimal polynomial over $\mathbb Q$,
-so $[\mathbb Q(b):\mathbb Q]\geq4$. On the other hand,
-$\mathbb Q(b)$ lies in the fixed field of the indicated subgroup
+$K$. They are roots of its minimal polynomial over $\QQ$,
+so $[\QQ(b):\QQ]\geq4$. On the other hand,
+$\QQ(b)$ lies in the fixed field of the indicated subgroup
 of order $2$, which has degree $4$. Equality follows, proving
 every remaining quartic row.
 
-Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. The exhaustive
+Finally $K^G=\QQ$ and $K^{\{1\}}=K$. The exhaustive
 subgroup enumeration proves that no intermediate field is missing;
 inclusions between fields reverse the inclusions of their subgroups.
 
@@ -168,11 +168,11 @@ inclusions between fields reverse the inclusions of their subgroups.
 
 ::: {.pf-step #s4}
 
-Exactly the six fields marked Yes are Galois over $\mathbb Q$.
+Exactly the six fields marked Yes are Galois over $\QQ$.
 
 ::: pf-proof
 
-An intermediate field $K^H$ is Galois over $\mathbb Q$ exactly
+An intermediate field $K^H$ is Galois over $\QQ$ exactly
 when $H\lhd G$ [@DF04]. The trivial and whole subgroups are
 normal, as are all three subgroups of order $4$, since they
 have index $2$. The subgroup $\langle r^2\rangle$ is central:
@@ -185,8 +185,8 @@ $$
 and a subgroup of order $2$ has only one nonidentity element.
 Thus the Galois intermediate fields are precisely
 $$
-\mathbb Q,\quad \mathbb Q(i),\quad \mathbb Q(\sqrt5),\quad
-\mathbb Q(\sqrt{-5}),\quad \mathbb Q(\sqrt5,i),\quad K.
+\QQ,\quad \QQ(i),\quad \QQ(\sqrt5),\quad
+\QQ(\sqrt{-5}),\quad \QQ(\sqrt5,i),\quad K.
 $$
 
 :::

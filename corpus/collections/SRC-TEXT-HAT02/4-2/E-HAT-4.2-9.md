@@ -36,7 +36,7 @@ X\xrightarrow f Y\longrightarrow C_f
 \]
 gives the long exact sequence in reduced homology. Since $\widetilde H_*(C_f)=0$, the map
 \[
-f_*:H_i(X;\mathbb Z)\xrightarrow{\cong}H_i(Y;\mathbb Z)
+f_*:H_i(X;\ZZ)\xrightarrow{\cong}H_i(Y;\ZZ)
 \]
 is an isomorphism for every $i$. The homology Whitehead theorem for simply-connected CW complexes then implies that $f$ is a homotopy equivalence.
 

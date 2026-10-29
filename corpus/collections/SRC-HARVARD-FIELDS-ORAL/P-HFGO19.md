@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $p(x)\in\mathbb Q[x]$ have Galois group $\mathbb Z/4\mathbb Z\times\mathbb Z/4\mathbb Z$.
+Let $p(x)\in\QQ[x]$ have Galois group $\ZZ/4\ZZ\times\ZZ/4\ZZ$.
 What can be said about the solvability of $p(x)$ by radicals?
 :::
 
@@ -39,7 +39,7 @@ Its Galois group is solvable.
 
 By hypothesis,
 \[
-G\cong \mathbb Z/4\mathbb Z\times\mathbb Z/4\mathbb Z.
+G\cong \ZZ/4\ZZ\times\ZZ/4\ZZ.
 \]
 This group is abelian. Every abelian group is solvable: its commutator subgroup
 is trivial, so its derived series terminates after one step.
@@ -50,7 +50,7 @@ is trivial, so its derived series terminates after one step.
 
 ::: pf-step
 
-A polynomial over $\mathbb Q$ is solvable by radicals if and only if its
+A polynomial over $\QQ$ is solvable by radicals if and only if its
 Galois group is solvable.
 
 ::: pf-proof
@@ -65,5 +65,5 @@ zero. Applying it to step [](#s1){.pf-ref} gives the conclusion.
 :::
 
 Hence the roots of $p(x)$ can be expressed using a finite tower of radical
-extensions over $\mathbb Q$.
+extensions over $\QQ$.
 :::

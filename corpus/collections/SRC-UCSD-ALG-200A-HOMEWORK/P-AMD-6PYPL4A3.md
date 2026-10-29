@@ -123,11 +123,11 @@ If $C_5=\langle a\rangle$, every automorphism is determined by
 \[
 a\longmapsto a^u,
 \qquad
-u\in(\mathbb Z/5\mathbb Z)^\times.
+u\in(\ZZ/5\ZZ)^\times.
 \]
 Thus
 \[
-\operatorname{Aut}(C_5)\cong(\mathbb Z/5\mathbb Z)^\times.
+\operatorname{Aut}(C_5)\cong(\ZZ/5\ZZ)^\times.
 \]
 The latter group has four elements and is cyclic; for example, the residue class of $2$ has order $4$.
 

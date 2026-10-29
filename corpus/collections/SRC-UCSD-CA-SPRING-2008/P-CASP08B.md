@@ -19,16 +19,16 @@ If false give a counterexample.
 
 (a) If $f \in H(\mathbb{D})$ with $|f(z)| \leq 3$ for all $z$ satisfying $|z| = 1/2$, then $|f''(0)| \leq 24$.
 
-(b) Suppose $f \in H(\mathbb{D})$ and there exists $C > 0$ such that $|f^{(n)}(0)| \leq Cn!$ for all $n \in \mathbb{N}$.
+(b) Suppose $f \in H(\mathbb{D})$ and there exists $C > 0$ such that $|f^{(n)}(0)| \leq Cn!$ for all $n \in \NN$.
 Then $f$ extends to an entire function.
 
-(c) Let $f, g \in H(G)$, where $G$ is open and connected in $\mathbb{C}$.
+(c) Let $f, g \in H(G)$, where $G$ is open and connected in $\CC$.
 If $f(z)g(z) \equiv 0$, then either $f$ or $g$ is identically zero in $G$.
 
 (d) Suppose $f \in H(\mathbb{D} \setminus \{0\})$ such that for any positive integer $m$ and any constant $R > 0$, there exists $z \in B(0; 1/2) \setminus \{0\}$ with $|z^m f(z)| > R$.
-Then for any $c \in \mathbb{C}$ and any $\epsilon > 0$ there exists $z \in \mathbb{D} \setminus \{0\}$ with $|f(z) - c| < \epsilon$.
+Then for any $c \in \CC$ and any $\epsilon > 0$ there exists $z \in \mathbb{D} \setminus \{0\}$ with $|f(z) - c| < \epsilon$.
 
-(e) If $u(z)$ is a (real-valued) harmonic function defined in all of $\mathbb{C}$ and satisfying $u(z) \geq -1$ for all $z \in \mathbb{C}$, then $u$ is constant.
+(e) If $u(z)$ is a (real-valued) harmonic function defined in all of $\CC$ and satisfying $u(z) \geq -1$ for all $z \in \CC$, then $u$ is constant.
 :::
 
 ::: {.solution}
@@ -52,10 +52,10 @@ gives $g\equiv0$ on the connected region $G$.
 at $0$: if $f$ had a pole of order $N$, then $z^mf(z)$ would be bounded near
 $0$ for every $m\ge N$. Hence $0$ is an essential singularity. By the
 Casorati--Weierstrass theorem, the image of every punctured neighborhood of
-$0$ is dense in $\mathbb C$, which is precisely the asserted approximation of
-every $c\in\mathbb C$.
+$0$ is dense in $\CC$, which is precisely the asserted approximation of
+every $c\in\CC$.
 
-(e) **True.** Since $\mathbb C$ is simply connected, $u$ has a global harmonic
+(e) **True.** Since $\CC$ is simply connected, $u$ has a global harmonic
 conjugate $v$, and $F=u+iv$ is entire. Then
 \[
 |e^{-F(z)}|=e^{-u(z)}\le e.

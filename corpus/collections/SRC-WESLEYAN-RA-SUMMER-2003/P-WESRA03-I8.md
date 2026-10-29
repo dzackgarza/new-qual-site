@@ -31,7 +31,7 @@ Is it always true that
 
 ::: {.solution}
 No, not without a finiteness hypothesis.
-For Lebesgue measure on $\mathbb R$, let
+For Lebesgue measure on $\RR$, let
 \[
 F_n=[n,\infty).
 \]

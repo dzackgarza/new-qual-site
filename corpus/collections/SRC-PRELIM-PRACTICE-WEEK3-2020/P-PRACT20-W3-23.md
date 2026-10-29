@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $D = \{ ( x , y ) \in \mathbb { R } ^ { 2 } : x \geq 0 , y \geq 0 \}$ . Calculate
+Let $D = \{ ( x , y ) \in \RR ^ { 2 } : x \geq 0 , y \geq 0 \}$ . Calculate
 
 $$
 \int \int _ { D } e ^ { - ( x ^ { 2 } + y ^ { 2 } ) } d x d y

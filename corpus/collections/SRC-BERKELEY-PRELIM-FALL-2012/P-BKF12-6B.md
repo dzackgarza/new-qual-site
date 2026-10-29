@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-6B
 kind: problem
-title: Eigenvalues and eigenvectors of the cyclic shift on $\mathbb C^n$
+title: Eigenvalues and eigenvectors of the cyclic shift on $\CC^n$
 classification:
   areas:
   - prelim
@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all eigenvalues and eigenvectors of the linear map $T \colon \mathbb { C } ^ { n } \to \mathbb { C } ^ { n }$ given by $T ( ( x _ { 1 } , \dots , x _ { n } ) ) =$ $\left( x _ { 2 } , x _ { 3 } , \ldots , x _ { n } , x _ { 1 } \right)$
+Find all eigenvalues and eigenvectors of the linear map $T \colon \CC ^ { n } \to \CC ^ { n }$ given by $T ( ( x _ { 1 } , \dots , x _ { n } ) ) =$ $\left( x _ { 2 } , x _ { 3 } , \ldots , x _ { n } , x _ { 1 } \right)$
 :::
 
 ::: {.solution}

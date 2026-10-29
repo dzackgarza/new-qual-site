@@ -23,7 +23,7 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 
 - Compute the order of $G$, $|G|$.
 
-- Write down an explicit isomorphism from $\mathbb Z/p\mathbb Z$ to `\begin{align*} U=\left\{
+- Write down an explicit isomorphism from $\ZZ/p\ZZ$ to `\begin{align*} U=\left\{
   \begin{pmatrix}
     1 & a\\
     0 & 1
@@ -59,7 +59,7 @@ Once it is chosen, the second column may be any vector not in its one-dimensiona
 
 The map
 \[
-\varphi:\mathbb Z/p\mathbb Z\longrightarrow U,
+\varphi:\ZZ/p\ZZ\longrightarrow U,
 \qquad
 \bar a\longmapsto
 \begin{pmatrix}1&a\\0&1\end{pmatrix}

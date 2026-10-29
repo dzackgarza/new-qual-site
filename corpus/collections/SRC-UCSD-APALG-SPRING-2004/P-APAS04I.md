@@ -13,13 +13,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\mathbb{C})$ be a representation of $H$.
+Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\CC)$ be a representation of $H$.
 
 (a) Prove that for any character $\phi$ of $G$, $(\chi^{A\uparrow_H^G},\phi)_G=(\chi^A,\phi\downarrow^G_H)_H$.
 
 (b) Given an example to show that it is not always the case that if $A$ is irreducible, then $A\uparrow_H^G$ is irreducible.
 
-(c) Prove that if $K$ is a subgroup of $H$ and $B\colon K\to GL(m,\mathbb{C})$ is a representation of $K$, then the representation $B\uparrow_K^G$ is similar to the representation $(B\uparrow_K^H)\uparrow_H^G$.
+(c) Prove that if $K$ is a subgroup of $H$ and $B\colon K\to GL(m,\CC)$ is a representation of $K$, then the representation $B\uparrow_K^G$ is similar to the representation $(B\uparrow_K^H)\uparrow_H^G$.
 :::
 
 ::: {.solution}
@@ -79,11 +79,11 @@ G=C_2=\{1,s\},\qquad H=\{1\}.
 \]
 The unique one-dimensional representation $A$ of the trivial group $H$ is irreducible. Its induction to $G$ is the regular representation
 \[
-A\uparrow_H^G\cong\mathbb C[G],
+A\uparrow_H^G\cong\CC[G],
 \]
 which decomposes as
 \[
-\mathbb C[G]\cong \mathbf1\oplus\operatorname{sgn}.
+\CC[G]\cong \mathbf1\oplus\operatorname{sgn}.
 \]
 Hence $A\uparrow_H^G$ is reducible.
 :::
@@ -102,32 +102,32 @@ B\uparrow_K^G
 Using the group-algebra construction of induction,
 \[
 B\uparrow_K^H
-=\mathbb C[H]\otimes_{\mathbb C[K]}B
+=\CC[H]\otimes_{\CC[K]}B
 \]
 and hence
 \[
 (B\uparrow_K^H)\uparrow_H^G
-=\mathbb C[G]\otimes_{\mathbb C[H]}
-\bigl(\mathbb C[H]\otimes_{\mathbb C[K]}B\bigr).
+=\CC[G]\otimes_{\CC[H]}
+\bigl(\CC[H]\otimes_{\CC[K]}B\bigr).
 \]
 Define
 \[
-\Phi:\mathbb C[G]\otimes_{\mathbb C[H]}
-\bigl(\mathbb C[H]\otimes_{\mathbb C[K]}B\bigr)
+\Phi:\CC[G]\otimes_{\CC[H]}
+\bigl(\CC[H]\otimes_{\CC[K]}B\bigr)
 \longrightarrow
-\mathbb C[G]\otimes_{\mathbb C[K]}B
+\CC[G]\otimes_{\CC[K]}B
 \]
 by
 \[
 \Phi(g\otimes(h\otimes v))=gh\otimes v.
 \]
-This is well-defined because the balancing relations over $\mathbb C[H]$ and $\mathbb C[K]$ map to the balancing relation in the target.
+This is well-defined because the balancing relations over $\CC[H]$ and $\CC[K]$ map to the balancing relation in the target.
 
 Conversely define
 \[
 \Psi(g\otimes v)=g\otimes(1\otimes v).
 \]
-This is well-defined over $\mathbb C[K]$: for $k\in K$,
+This is well-defined over $\CC[K]$: for $k\in K$,
 \[
 \Psi(gk\otimes v)
 =gk\otimes(1\otimes v)

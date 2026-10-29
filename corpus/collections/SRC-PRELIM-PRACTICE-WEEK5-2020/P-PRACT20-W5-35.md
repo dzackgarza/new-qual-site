@@ -106,14 +106,14 @@ Hence
 The Taylor series of $f$ at $0$ terminates after degree $1$:
 \[
 f(z)=f(0)+f'(0)z
-\qquad(z\in\mathbb C).
+\qquad(z\in\CC).
 \]
 
 
 ::: pf-proof
 
 Because $f$ is entire, its Taylor series at $0$ converges to $f$ on all of
-$\mathbb C$:
+$\CC$:
 \[
 f(z)
 =

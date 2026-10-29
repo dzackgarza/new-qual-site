@@ -77,25 +77,25 @@ Therefore $\operatorname{tor}(M)$ is an $R$-submodule of $M$.
 
 ::: {.pf-step #s2}
 
-For the regular module $M=\mathbb Z/6\mathbb Z$, the set $\operatorname{tor}(M)$ is not a submodule.
+For the regular module $M=\ZZ/6\ZZ$, the set $\operatorname{tor}(M)$ is not a submodule.
 
 ::: pf-proof
 
 ::: pf-step
 
-Let $R = \mathbb{Z}/6\mathbb{Z}$ and consider $M = R = \mathbb{Z}/6\mathbb{Z}$ as a regular module over itself.
+Let $R = \ZZ/6\ZZ$ and consider $M = R = \ZZ/6\ZZ$ as a regular module over itself.
 
 :::
 
 ::: pf-step
 
-The element $\bar{2} \in \mathbb{Z}/6\mathbb{Z}$ is torsion: $3 \cdot \bar{2} = \bar{6} = \bar{0}$ with $\bar{3} \ne \bar{0}$, so $\bar{2} \in \operatorname{tor}(M)$.
+The element $\bar{2} \in \ZZ/6\ZZ$ is torsion: $3 \cdot \bar{2} = \bar{6} = \bar{0}$ with $\bar{3} \ne \bar{0}$, so $\bar{2} \in \operatorname{tor}(M)$.
 
 :::
 
 ::: pf-step
 
-The element $\bar{3} \in \mathbb{Z}/6\mathbb{Z}$ is torsion: $2 \cdot \bar{3} = \bar{6} = \bar{0}$ with $\bar{2} \ne \bar{0}$, so $\bar{3} \in \operatorname{tor}(M)$.
+The element $\bar{3} \in \ZZ/6\ZZ$ is torsion: $2 \cdot \bar{3} = \bar{6} = \bar{0}$ with $\bar{2} \ne \bar{0}$, so $\bar{3} \in \operatorname{tor}(M)$.
 
 :::
 
@@ -107,13 +107,13 @@ The sum is $\bar{2} + \bar{3} = \bar{5}$.
 
 ::: pf-step
 
-Since $\gcd(5, 6) = 1$, $\bar{5}$ is a unit in $\mathbb{Z}/6\mathbb{Z}$ ($\bar{5}^2 = \bar{25} = \bar{1}$).
+Since $\gcd(5, 6) = 1$, $\bar{5}$ is a unit in $\ZZ/6\ZZ$ ($\bar{5}^2 = \bar{25} = \bar{1}$).
 
 :::
 
 ::: pf-step
 
-For any $r \in \mathbb{Z}/6\mathbb{Z}$, $r \cdot \bar{5} = \bar{0} \implies r = r \cdot \bar{5} \cdot \bar{5} = \bar{0} \cdot \bar{5} = \bar{0}$.
+For any $r \in \ZZ/6\ZZ$, $r \cdot \bar{5} = \bar{0} \implies r = r \cdot \bar{5} \cdot \bar{5} = \bar{0} \cdot \bar{5} = \bar{0}$.
 
 :::
 

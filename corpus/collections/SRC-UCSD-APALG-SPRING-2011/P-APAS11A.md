@@ -22,23 +22,23 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and $A\colon G\to\mathrm{GL}(n,\mathbb{C})$ be a representation of $G$.
+Let $G$ be a finite group and $A\colon G\to\mathrm{GL}(n,\CC)$ be a representation of $G$.
 
 (a) Show that if the only matrices $S$ which commute with $A(g)$ for all $g\in G$ are of the form $\lambda I$, then $A$ is irreducible.
 
 (b) Show that if $G$ is abelian, then there is an invertible matrix $T$ such that for all $g\in G$, $TA(g)T^{-1}$ is a diagonal matrix.
 
-(c) Show that if $A$ is irreducible and $g\in G$ is in the center of $G$, then $A(g)=cI_n$ for some nonzero constant $c\in\mathbb{C}$.
+(c) Show that if $A$ is irreducible and $g\in G$ is in the center of $G$, then $A(g)=cI_n$ for some nonzero constant $c\in\CC$.
 :::
 
 ::: {.solution}
 For (a), suppose $A$ were reducible. Then there would be a nonzero proper $G$-stable subspace
 \[
-0\ne W\subsetneq \mathbb C^n.
+0\ne W\subsetneq \CC^n.
 \]
 Because $G$ is finite and the ground field has characteristic $0$, Maschke's theorem gives a $G$-stable complement $W'$ with
 \[
-\mathbb C^n=W\oplus W'.
+\CC^n=W\oplus W'.
 \]
 Let $P$ be the projection onto $W$ along $W'$. Since both summands are $G$-stable,
 \[
@@ -51,7 +51,7 @@ For (b), because $G$ is finite, every $g\in G$ has finite order. If $g^m=1$, the
 \[
 A(g)^m=I,
 \]
-so the minimal polynomial of $A(g)$ divides $x^m-1$. Over $\mathbb C$, the polynomial $x^m-1$ has distinct roots, hence every $A(g)$ is diagonalizable.
+so the minimal polynomial of $A(g)$ divides $x^m-1$. Over $\CC$, the polynomial $x^m-1$ has distinct roots, hence every $A(g)$ is diagonalizable.
 
 Since $G$ is abelian, the matrices $A(g)$ commute pairwise. A commuting family of diagonalizable complex matrices is simultaneously diagonalizable. Indeed, diagonalize one member $A(g_0)$. Every other $A(g)$ preserves each eigenspace of $A(g_0)$ because it commutes with $A(g_0)$. Restrict the remaining commuting diagonalizable operators to each eigenspace and proceed by induction on the dimension. Thus there is a basis of common eigenvectors, i.e. an invertible matrix $T$ such that
 \[
@@ -68,5 +68,5 @@ Thus $A(g)$ lies in the commutant of the irreducible representation. By Schur's 
 \[
 A(g)=cI_n.
 \]
-Since $A(g)\in\operatorname{GL}_n(\mathbb C)$, necessarily $c\ne0$.
+Since $A(g)\in\operatorname{GL}_n(\CC)$, necessarily $c\ne0$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF93-2
 kind: problem
-title: Homomorphisms from $(\mathbb Q,+)$ to the positive rationals under multiplication
+title: Homomorphisms from $(\QQ,+)$ to the positive rationals under multiplication
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A=(\mathbb Q,+)$ and let $M=(\mathbb Q_{>0},\cdot)$. Determine all group homomorphisms
+Let $A=(\QQ,+)$ and let $M=(\QQ_{>0},\cdot)$. Determine all group homomorphisms
 \[
 A\to M.
 \]

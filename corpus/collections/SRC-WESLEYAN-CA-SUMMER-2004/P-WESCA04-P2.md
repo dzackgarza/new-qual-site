@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D_1,D_2\subset\mathbb C$ be simply connected domains whose intersection is nonempty and connected.
+Let $D_1,D_2\subset\CC$ be simply connected domains whose intersection is nonempty and connected.
 Prove that both
 \[
 D_1\cap D_2
@@ -32,11 +32,11 @@ We use the standard planar-domain characterization:
 
 > A domain
 > \[
-> \Omega\subseteq\mathbb C
+> \Omega\subseteq\CC
 > \]
 > is simply connected if and only if
 > \[
-> \widehat{\mathbb C}\setminus\Omega
+> \widehat{\CC}\setminus\Omega
 > \]
 > is connected.
 
@@ -75,7 +75,7 @@ the set
 \[
 K_j
 \coloneqq
-\widehat{\mathbb C}\setminus D_j
+\widehat{\CC}\setminus D_j
 \]
 is connected.
 
@@ -115,9 +115,9 @@ D_j
 \]
 is contained in
 \[
-\mathbb C
+\CC
 \subset
-\widehat{\mathbb C},
+\widehat{\CC},
 \]
 so
 \[
@@ -163,7 +163,7 @@ The union of two connected subsets with nonempty intersection is connected.
 
 One has
 \[
-\widehat{\mathbb C}
+\widehat{\CC}
 \setminus
 (D_1\cap D_2)
 =
@@ -175,13 +175,13 @@ K_1\cup K_2.
 
 This is De Morgan's law:
 \[
-\widehat{\mathbb C}
+\widehat{\CC}
 \setminus
 (D_1\cap D_2)
 =
-(\widehat{\mathbb C}\setminus D_1)
+(\widehat{\CC}\setminus D_1)
 \cup
-(\widehat{\mathbb C}\setminus D_2).
+(\widehat{\CC}\setminus D_2).
 \]
 
 :::
@@ -226,7 +226,7 @@ is path-connected.
 
 Every open connected subset of
 \[
-\mathbb R^2\cong\mathbb C
+\RR^2\cong\CC
 \]
 is path-connected.
 Indeed, fixing a point $z_0$ in an open connected set $U$, the set of points

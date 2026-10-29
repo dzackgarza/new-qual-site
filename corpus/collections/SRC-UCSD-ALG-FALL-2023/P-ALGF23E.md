@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Suppose $p$ is a prime number and the minimal polynomial of $a \in M_p(F)$ is $t^p - 1$.
 
-(a) Find the Jordan form of $a$ if $F = \mathbb{C}$.
+(a) Find the Jordan form of $a$ if $F = \CC$.
 Justify your answer.
 
 (b) Find the Jordan form of $a$ if $F = \mathbb{F}_p$.
@@ -40,7 +40,7 @@ Justify your answer.
 
 ::: {.pf-step #s1}
 
-Over $\mathbb C$, the polynomial $t^p-1$ has $p$ distinct roots.
+Over $\CC$, the polynomial $t^p-1$ has $p$ distinct roots.
 
 ::: pf-proof
 
@@ -64,7 +64,7 @@ does not vanish at any $p$-th root of unity in characteristic zero.
 
 ::: {.pf-step #s2}
 
-If $F=\mathbb C$, the characteristic polynomial of $a$ equals its minimal polynomial:
+If $F=\CC$, the characteristic polynomial of $a$ equals its minimal polynomial:
 \[
 \chi_a(t)=t^p-1.
 \]
@@ -82,7 +82,7 @@ Therefore they are equal.
 
 ::: pf-step
 
-If $F=\mathbb C$, the Jordan form of $a$ is
+If $F=\CC$, the Jordan form of $a$ is
 \[
 \operatorname{diag}(1,\zeta_p,\zeta_p^2,\ldots,\zeta_p^{p-1}),
 \]

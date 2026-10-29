@@ -31,7 +31,7 @@ Further let $|\nu_n|$ denote the total variation measure associated to $\nu_n$.
 
 (a) If $\sum_{n=1}^\infty |\nu_n|(X) < \infty$, then $\nu := \sum_{n=1}^\infty \nu_n$ is a complex measure.
 
-(b) If $|\nu_n(A)| \leq \mu(A)$ and $\nu(A) := \lim_{n \to \infty} \nu_n(A)$ exists for all $A \in \mathcal{M}$, then $\nu : \mathcal{M} \to \mathbb{C}$ is a complex measure.
+(b) If $|\nu_n(A)| \leq \mu(A)$ and $\nu(A) := \lim_{n \to \infty} \nu_n(A)$ exists for all $A \in \mathcal{M}$, then $\nu : \mathcal{M} \to \CC$ is a complex measure.
 :::
 
 ::: {.solution}

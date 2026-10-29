@@ -60,7 +60,7 @@ Since $f$ is differentiable, the right-hand side is differentiable as a function
 
 ::: {.pf-step #s1-2}
 
-For every $x\in\mathbb R$ and every $h\neq0$,
+For every $x\in\RR$ and every $h\neq0$,
 $$
 f''(x+h)=f''(x-h).
 $$
@@ -88,12 +88,12 @@ which is the asserted identity.
 
 ::: {.pf-step #s1-3}
 
-The second derivative $f''$ is constant on $\mathbb R$.
+The second derivative $f''$ is constant on $\RR$.
 
 
 ::: pf-proof
 
-Let $a,b\in\mathbb R$ with $a\neq b$. Set
+Let $a,b\in\RR$ with $a\neq b$. Set
 $$
 x\coloneqq\frac{a+b}{2},
 \qquad
@@ -111,12 +111,12 @@ Every solution has the form
 $$
 \boxed{f(x)=ax^2+bx+c}
 $$
-for some $a,b,c\in\mathbb R$.
+for some $a,b,c\in\RR$.
 
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, write $f''(x)=2a$ for a constant $a\in\mathbb R$. Integrating once gives $f'(x)=2ax+b$ for some $b\in\mathbb R$, and integrating again gives $f(x)=ax^2+bx+c$ for some $c\in\mathbb R$.
+By step [](#s1-3){.pf-ref}, write $f''(x)=2a$ for a constant $a\in\RR$. Integrating once gives $f'(x)=2ax+b$ for some $b\in\RR$, and integrating again gives $f(x)=ax^2+bx+c$ for some $c\in\RR$.
 
 :::
 

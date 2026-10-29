@@ -23,7 +23,7 @@ A^2=I,
 \qquad
 \operatorname{rank}(A-I)=1.
 \]
-Given distinct unit vectors $x,y\in\mathbb R^n$, prove that there is a reflection satisfying
+Given distinct unit vectors $x,y\in\RR^n$, prove that there is a reflection satisfying
 \[
 Ax=y,
 \qquad
@@ -354,7 +354,7 @@ the minimal polynomial of $B$ divides
 which has distinct roots.
 Thus
 \[
-\mathbb R^n
+\RR^n
 =
 E_1(B)\oplus E_{-1}(B).
 \]
@@ -471,7 +471,7 @@ I-2uu^T.
 
 ::: pf-proof
 
-Every vector $z\in\mathbb R^n$ decomposes uniquely as
+Every vector $z\in\RR^n$ decomposes uniquely as
 \[
 z=z_\perp+(u^Tz)u,
 \qquad

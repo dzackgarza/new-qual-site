@@ -104,7 +104,7 @@ Countability of $X \cap \operatorname{supp}(\mu)$:
 
 ::: pf-step
 
-For each $n \in \mathbb{N}_{\ge 1}$, define $S_n = \{x \in X : \mu(\{x\}) \ge \frac{1}{n}\}$.
+For each $n \in \NN_{\ge 1}$, define $S_n = \{x \in X : \mu(\{x\}) \ge \frac{1}{n}\}$.
 
 :::
 

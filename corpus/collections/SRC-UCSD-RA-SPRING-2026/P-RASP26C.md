@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be a Banach space with open unit ball $B = \{x \in X : \|x\| < 1\}$.
-Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such that $X = \{\lambda u + y : \lambda \in \mathbb{C},\; y \in \mathcal{M}\}$.
+Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such that $X = \{\lambda u + y : \lambda \in \CC,\; y \in \mathcal{M}\}$.
 
 (1) Prove that $B + \mathcal{M} = X$ if and only if $\mathcal{M}$ is not closed.
 
@@ -132,11 +132,11 @@ such that
 \[
 \ker\varphi=\mathcal M.
 \]
-The map $\varphi:X\to\mathbb C$ is surjective. By the Open Mapping Theorem,
+The map $\varphi:X\to\CC$ is surjective. By the Open Mapping Theorem,
 \[
 \varphi(B)
 \]
-is an open subset of $\mathbb C$.
+is an open subset of $\CC$.
 
 We claim
 \[

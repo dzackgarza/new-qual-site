@@ -125,7 +125,7 @@ Part (b): Injective homomorphism $\chi: G \to F^\times$:
 
 ::: pf-step
 
-Let $G = \langle \sigma \rangle \cong \mathbb{Z}_n$, and let $\zeta_n \in F$ be a primitive $n$-th root of unity.
+Let $G = \langle \sigma \rangle \cong \ZZ_n$, and let $\zeta_n \in F$ be a primitive $n$-th root of unity.
 
 ::: pf-proof
 
@@ -137,7 +137,7 @@ setup.
 
 ::: pf-step
 
-Define $\chi: G \to F^\times$ by $\chi(\sigma^k) = \zeta_n^k$ for all $k \in \mathbb{Z}$.
+Define $\chi: G \to F^\times$ by $\chi(\sigma^k) = \zeta_n^k$ for all $k \in \ZZ$.
 
 ::: pf-proof
 

@@ -48,7 +48,7 @@ The original cylinder supplies the common $S^1\times I$, and at each end its bou
 ::: pf-step
 Van Kampen gives
 $$
-\pi_1(X)\cong \mathbb Z*_{2\mathbb Z}\mathbb Z.
+\pi_1(X)\cong \ZZ*_{2\ZZ}\ZZ.
 $$
 
 ::: pf-proof

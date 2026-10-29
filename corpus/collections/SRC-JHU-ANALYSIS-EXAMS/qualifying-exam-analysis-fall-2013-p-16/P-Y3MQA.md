@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \{z \in \mathbb{C} : |z| < 1\}$ and $f : D \to D$ be a holomorphic function.
+Let $D = \{z \in \CC : |z| < 1\}$ and $f : D \to D$ be a holomorphic function.
 Prove
 
 $$\frac{|f(0)| - |z|}{1 + |f(0)| \cdot |z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)| \cdot |z|}, \quad \forall z \in D.$$

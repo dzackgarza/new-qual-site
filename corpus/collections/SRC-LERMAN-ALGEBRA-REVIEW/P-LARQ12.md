@@ -23,10 +23,10 @@ audit:
 ---
 
 ::: {.problem}
-1. Does $\mathbb Z\times\mathbb Z$ have a maximal ideal?
+1. Does $\ZZ\times\ZZ$ have a maximal ideal?
    If so, give one.
 
-2. Does $\mathbb Z\times\mathbb Z$ have zero divisors?
+2. Does $\ZZ\times\ZZ$ have zero divisors?
    If so, give two nonzero zero divisors whose product is zero.
 :::
 
@@ -36,23 +36,23 @@ audit:
 
 ::: pf-step
 
-The ring $\mathbb Z\times\mathbb Z$ has maximal ideals.
+The ring $\ZZ\times\ZZ$ has maximal ideals.
 
 ::: pf-proof
 
 For example, let
 $$
-M=2\mathbb Z\times\mathbb Z.
+M=2\ZZ\times\ZZ.
 $$
 The map
 $$
-\Phi:\mathbb Z\times\mathbb Z\to\mathbb Z/2\mathbb Z,
+\Phi:\ZZ\times\ZZ\to\ZZ/2\ZZ,
 \qquad
 \Phi(a,b)=a\bmod2
 $$
 is a surjective ring homomorphism with kernel $M$. Hence
 $$
-(\mathbb Z\times\mathbb Z)/M\cong\mathbb Z/2\mathbb Z,
+(\ZZ\times\ZZ)/M\cong\ZZ/2\ZZ,
 $$
 which is a field. Therefore $M$ is maximal.
 

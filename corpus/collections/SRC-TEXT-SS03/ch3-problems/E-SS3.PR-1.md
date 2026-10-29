@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.exercise}
-1.* Consider a holomorphic map on the unit disc $f : \mathbb{D} \to \mathbb{C}$ which satisfies $f(0) = 0$.
+1.* Consider a holomorphic map on the unit disc $f : \mathbb{D} \to \CC$ which satisfies $f(0) = 0$.
 By the open mapping theorem, the image $f(\mathbb{D})$ contains a small disc centered at the origin.
-We then ask: does there exist $r > 0$ such that for all $f : \mathbb{D} \to \mathbb{C}$ with $f(0) = 0$, we have $D_r(0) \subset f(\mathbb{D})$?
+We then ask: does there exist $r > 0$ such that for all $f : \mathbb{D} \to \CC$ with $f(0) = 0$, we have $D_r(0) \subset f(\mathbb{D})$?
 
 (a) Show that with no further restrictions on $f$, no such $r$ exists.
 It suffices to find a sequence of functions $\{f_n\}$ holomorphic in $\mathbb{D}$ such that $1/n \notin f_n(\mathbb{D})$.
@@ -40,7 +40,7 @@ The Koebe-Bieberbach theorem states that if in addition to $f(0) = 0$ and $f'(0)
 (e) With the notation of the previous part, show that $|a_2| \leq 2$, and that equality holds if and only if
 
 $$
-f(z) = \frac{z}{(1 - e^{i\theta}z)^2} \quad \text{for some } \theta \in \mathbb{R}.
+f(z) = \frac{z}{(1 - e^{i\theta}z)^2} \quad \text{for some } \theta \in \RR.
 $$
 
 [Hint: What is the power series expansion of $1/g(z)$? Use part (c).]

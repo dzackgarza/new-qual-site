@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the function $e^x \sin(e^x)$ defines a tempered distribution on $\mathbb{R}$.
+Show that the function $e^x \sin(e^x)$ defines a tempered distribution on $\RR$.
 (That is, show that the distribution it defines extends to a tempered distribution.)
 :::
 
@@ -48,7 +48,7 @@ definition.
 
 ::: pf-step
 
-$f$ is locally integrable, so it defines a distribution $T_f(\varphi) = \int_{\mathbb{R}} f(x)\varphi(x)\,dx$ on $C_c^\infty(\mathbb{R})$.
+$f$ is locally integrable, so it defines a distribution $T_f(\varphi) = \int_{\RR} f(x)\varphi(x)\,dx$ on $C_c^\infty(\RR)$.
 
 ::: pf-proof
 

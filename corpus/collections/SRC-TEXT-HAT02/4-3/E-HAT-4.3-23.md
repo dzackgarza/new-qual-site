@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove the following uniqueness result for the Quillen plus construction: Given a connected CW complex $X$, if there is an abelian CW complex $Y$ and a map $X \to Y$ inducing an isomorphism $H_*(X; \mathbb{Z}) \approx H_*(Y; \mathbb{Z})$, then such a $Y$ is unique up to homotopy equivalence.
+Prove the following uniqueness result for the Quillen plus construction: Given a connected CW complex $X$, if there is an abelian CW complex $Y$ and a map $X \to Y$ inducing an isomorphism $H_*(X; \ZZ) \approx H_*(Y; \ZZ)$, then such a $Y$ is unique up to homotopy equivalence.
 :::
 
 ::: {.solution}
@@ -36,7 +36,7 @@ i':X\to Y'
 \]
 are homology isomorphisms and \(Y,Y'\) are connected abelian CW complexes. Replace \(i\) by the inclusion of \(X\) into its mapping cylinder \(W=M_i\). Then \(W\simeq Y\), and since \(i\) is a homology isomorphism,
 \[
-H_*(W,X;\mathbb Z)=0.
+H_*(W,X;\ZZ)=0.
 \]
 The universal coefficient theorem therefore gives, for every abelian group \(A\),
 \[

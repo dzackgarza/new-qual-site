@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $f$ and $g$ are functions mapping $\mathbb{R}$ into itself with $\lim_{x\to 0} f(x) = 0$.
+Suppose $f$ and $g$ are functions mapping $\RR$ into itself with $\lim_{x\to 0} f(x) = 0$.
 
 a. Prove from the $\varepsilon$–$\delta$ definition that if $g$ is bounded, then $\lim_{x\to 0} f(x)g(x) = 0$ as well.
 

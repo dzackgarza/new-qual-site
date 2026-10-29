@@ -88,7 +88,7 @@ with nontrivial action in the second case.
 
 One has
 \[
-\operatorname{Aut}(C_{11})\cong (\mathbb Z/11\mathbb Z)^\times\cong C_{10}.
+\operatorname{Aut}(C_{11})\cong (\ZZ/11\ZZ)^\times\cong C_{10}.
 \]
 A homomorphism \(C_5\to C_{10}\) is either trivial or injective. The trivial action
 gives

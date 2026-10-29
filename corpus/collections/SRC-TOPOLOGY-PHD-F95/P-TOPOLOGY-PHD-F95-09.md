@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-09
 kind: problem
-title: Universal cover and fundamental group of $S^1\vee\mathbb{R}P^2$
+title: Universal cover and fundamental group of $S^1\vee\RR P^2$
 classification:
   areas:
   - topology
@@ -39,14 +39,14 @@ audit:
 
 (b) State the main theorem about path lifting and covering spaces.
 
-(c) Let $S^1\vee\mathbb{R}P^2$ be the one point union of the circle and two-dimensional real projective space, i.e. the quotient space obtained by taking the disjoint union of $S^1$ and $\mathbb{R}P^2$ and then identifying a single point $x\in S^1$ with a single point $y\in\mathbb{R}P^2$.
-Describe the universal cover of $S^1\vee\mathbb{R}P^2$.
+(c) Let $S^1\vee\RR P^2$ be the one point union of the circle and two-dimensional real projective space, i.e. the quotient space obtained by taking the disjoint union of $S^1$ and $\RR P^2$ and then identifying a single point $x\in S^1$ with a single point $y\in\RR P^2$.
+Describe the universal cover of $S^1\vee\RR P^2$.
 
-(d) Describe the fundamental group of $S^1\vee\mathbb{R}P^2$.
+(d) Describe the fundamental group of $S^1\vee\RR P^2$.
 :::
 
 ::: {.solution}
-Fix the wedge point $x_0\in X=S^1\vee\mathbb{R}P^2$.
+Fix the wedge point $x_0\in X=S^1\vee\RR P^2$.
 
 ::: pf
 
@@ -113,15 +113,15 @@ G:=\pi_1(X,x_0)\cong \ZZ*(\ZZ/2)
 Choose small open neighborhoods of the two wedge summands whose intersection deformation retracts to the wedge point.
 The Seifert--van Kampen theorem gives
 \[
-\pi_1(S^1\vee\mathbb{R}P^2,x_0)
+\pi_1(S^1\vee\RR P^2,x_0)
 \cong
-\pi_1(S^1,x_0)*\pi_1(\mathbb{R}P^2,x_0).
+\pi_1(S^1,x_0)*\pi_1(\RR P^2,x_0).
 \]
 Since
 \[
 \pi_1(S^1)\cong\ZZ,
 \qquad
-\pi_1(\mathbb{R}P^2)\cong\ZZ/2,
+\pi_1(\RR P^2)\cong\ZZ/2,
 \]
 the displayed presentation follows.
 
@@ -152,9 +152,9 @@ gA\quad\text{to}\quad gB.
 
 For every $A$-vertex $gA$, take a copy
 \[
-L_{gA}\cong\mathbb{R}
+L_{gA}\cong\RR
 \]
-of the universal cover $\mathbb{R}\to S^1$.
+of the universal cover $\RR\to S^1$.
 Label its points over $x_0$ by the elements of the coset $gA$ so that consecutive points are labelled
 \[
 ga^n,\ ga^{n+1}.
@@ -163,7 +163,7 @@ For every $B$-vertex $gB$, take a copy
 \[
 S_{gB}\cong S^2
 \]
-of the universal cover $S^2\to\mathbb{R}P^2$.
+of the universal cover $S^2\to\RR P^2$.
 Its two points over $x_0$ are labelled by the two elements
 \[
 g,\ gb
@@ -181,15 +181,15 @@ The resulting connected space is $\widetilde X$.
 
 The piecewise map
 \[
-p:\widetilde X\longrightarrow S^1\vee\mathbb{R}P^2
+p:\widetilde X\longrightarrow S^1\vee\RR P^2
 \]
-obtained from $\mathbb{R}\to S^1$ on every line and $S^2\to\mathbb{R}P^2$ on every sphere is a covering projection.
+obtained from $\RR\to S^1$ on every line and $S^2\to\RR P^2$ on every sphere is a covering projection.
 
 ::: pf-proof
 
 Away from the wedge point this is immediate from the two standard universal covering maps.
 
-Choose connected evenly covered neighborhoods $U_1\subset S^1$ and $U_2\subset\mathbb{R}P^2$ of the wedge point, each small enough to be simply connected, and put
+Choose connected evenly covered neighborhoods $U_1\subset S^1$ and $U_2\subset\RR P^2$ of the wedge point, each small enough to be simply connected, and put
 \[
 U=U_1\vee U_2.
 \]
@@ -233,7 +233,7 @@ The covering space $\widetilde X$ is simply connected.
 
 Each vertex space in the tree-of-spaces description is simply connected:
 \[
-L_{gA}\cong\mathbb{R},
+L_{gA}\cong\RR,
 \qquad
 S_{gB}\cong S^2.
 \]
@@ -251,14 +251,14 @@ Thus $p$ is the universal covering projection.
 
 ::: pf-step
 
-Therefore the universal cover is a tree of copies of $\mathbb{R}$ and $S^2$, and
+Therefore the universal cover is a tree of copies of $\RR$ and $S^2$, and
 \[
-\boxed{\pi_1(S^1\vee\mathbb{R}P^2)\cong\ZZ*(\ZZ/2)}.
+\boxed{\pi_1(S^1\vee\RR P^2)\cong\ZZ*(\ZZ/2)}.
 \]
 
 ::: pf-proof
 
-The copies of $\mathbb{R}$ are the lifts of the $S^1$ summand; the copies of $S^2$ are the lifts of the $\mathbb{R}P^2$ summand; and their attachment pattern is the tree $T$.
+The copies of $\RR$ are the lifts of the $S^1$ summand; the copies of $S^2$ are the lifts of the $\RR P^2$ summand; and their attachment pattern is the tree $T$.
 The group computation is step [](#s3){.pf-ref}.
 
 :::

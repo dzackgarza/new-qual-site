@@ -77,7 +77,7 @@ Reduce the converse to one Jordan block.
 ::: pf-proof
 
 Assume every eigenvalue of $T$ has absolute value less than $1$. Over
-$\mathbb C$, write
+$\CC$, write
 $$
 T=SJS^{-1},
 $$

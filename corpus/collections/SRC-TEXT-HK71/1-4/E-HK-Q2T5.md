@@ -38,7 +38,7 @@ $$
 \boxed{
 (x_1,x_2,x_3)
 =t\left(\frac54,\frac{67}{24},1\right),
-\qquad t\in\mathbb C.}
+\qquad t\in\CC.}
 $$
 
 ::: pf

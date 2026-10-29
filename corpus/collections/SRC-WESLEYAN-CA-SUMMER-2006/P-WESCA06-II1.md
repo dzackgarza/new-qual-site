@@ -53,7 +53,7 @@ z=0.
 \]
 Thus $f_1$ is holomorphic on
 \[
-\mathbb C\setminus\{0\}.
+\CC\setminus\{0\}.
 \]
 
 :::
@@ -118,7 +118,7 @@ f_2(z)
 \]
 is holomorphic on
 \[
-\mathbb C\setminus\{0,1\}.
+\CC\setminus\{0,1\}.
 \]
 
 
@@ -230,7 +230,7 @@ f_3(z)=\sqrt z
 \]
 does not define a single-valued holomorphic function on
 \[
-\mathbb C\setminus\{0\}.
+\CC\setminus\{0\}.
 \]
 
 
@@ -272,7 +272,7 @@ The left-hand side satisfies
 \frac{g'(z)}{g(z)}
 \,dz
 \in
-\mathbb Z
+\ZZ
 \]
 by the argument principle.
 But the right-hand side gives
@@ -317,7 +317,7 @@ exists around $0$.
 
 On any slit domain, for example
 \[
-\mathbb C\setminus(-\infty,0],
+\CC\setminus(-\infty,0],
 \]
 one may choose a holomorphic branch of the square root, but then $0$ lies on
 the boundary of the branch domain rather than being an isolated singularity

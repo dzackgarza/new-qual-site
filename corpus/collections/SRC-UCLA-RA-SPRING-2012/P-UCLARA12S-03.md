@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $f\in L^1([0,1])$.
-For $n\in\mathbb N$, define
+For $n\in\NN$, define
 \[
 f_n(x)=n\int_{k/n}^{(k+1)/n}f(y)\,dy
 \]

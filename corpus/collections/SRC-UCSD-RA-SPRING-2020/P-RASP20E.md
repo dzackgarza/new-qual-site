@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $f \in C^1(\mathbb{T})$.
-Let $\hat{f}(k)$ ($k \in \mathbb{Z}$) be the Fourier coefficients of $f$.
+Let $\hat{f}(k)$ ($k \in \ZZ$) be the Fourier coefficients of $f$.
 Prove that
 $$
 \sum_{k=-\infty}^{\infty} |\hat{f}(k)| \leq \|f\|_{L^1(\mathbb{T})} + \frac{1}{\sqrt{2}\pi}\|f'\|_{L^2(\mathbb{T})} \sqrt{\sum_{k=1}^{\infty} \frac{1}{k^2}}.
@@ -87,7 +87,7 @@ Therefore, by Cauchy--Schwarz,
 \]
 By Parseval,
 \[
-\sum_{k\in\mathbb Z}|\widehat{f'}(k)|^2
+\sum_{k\in\ZZ}|\widehat{f'}(k)|^2
 =\|f'\|_2^2.
 \]
 Thus

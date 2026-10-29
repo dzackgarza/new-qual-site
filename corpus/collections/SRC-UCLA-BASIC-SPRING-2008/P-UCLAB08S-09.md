@@ -44,7 +44,7 @@ For every positive even integer $n$, give an $n$-dimensional real vector space $
 
 Suppose
 \[
-\dim_{\mathbb R}V=2m+1
+\dim_{\RR}V=2m+1
 \]
 is odd.
 Then the characteristic polynomial
@@ -85,7 +85,7 @@ as
 \]
 By the intermediate value theorem, there exists
 \[
-\lambda_0\in\mathbb R
+\lambda_0\in\RR
 \]
 such that
 \[
@@ -149,7 +149,7 @@ n=2m
 be positive and even.
 Take
 \[
-V=\mathbb R^{2m}
+V=\RR^{2m}
 \]
 and let $T$ be block diagonal with $m$ copies of
 \[
@@ -164,7 +164,7 @@ R=
 
 This defines a real-linear endomorphism of the $2m$-dimensional real vector space
 \[
-\mathbb R^{2m}.
+\RR^{2m}.
 \]
 
 :::
@@ -183,7 +183,7 @@ Rw=\lambda w
 \]
 for some nonzero
 \[
-w\in\mathbb R^2
+w\in\RR^2
 \]
 and real number $\lambda$.
 Since
@@ -227,7 +227,7 @@ for some real $\lambda$ and nonzero
 \[
 v=(v_1,\ldots,v_m),
 \qquad
-v_j\in\mathbb R^2.
+v_j\in\RR^2.
 \]
 At least one block coordinate
 \[

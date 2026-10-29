@@ -92,9 +92,9 @@ for every basis vector, so $A(g)A(h)=A(gh)$ and $A(e)=I$. Thus $A$ is precisely 
 
 ::: {.pf-step #s2}
 
-Over $\mathbb C$, the regular representation decomposes as
+Over $\CC$, the regular representation decomposes as
 \[
-\mathbb C[G]\cong\bigoplus_{\nu=1}^h n_\nu V_\nu,
+\CC[G]\cong\bigoplus_{\nu=1}^h n_\nu V_\nu,
 \qquad n_\nu=\dim V_\nu,
 \]
 where $V_1,\ldots,V_h$ are representatives of the irreducible $G$-modules.

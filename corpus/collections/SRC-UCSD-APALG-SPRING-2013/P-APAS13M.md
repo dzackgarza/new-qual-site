@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS13M
 kind: problem
-title: Order-$3$ matrix group; homogeneous invariants; Hilbert series of $\mathbb{C}[x,y]^G$
+title: Order-$3$ matrix group; homogeneous invariants; Hilbert series of $\CC[x,y]^G$
 classification:
   areas:
   - applied-algebra
@@ -20,9 +20,9 @@ A=\begin{pmatrix} 0 & -1 \\ 1 & -1 \end{pmatrix}.
 
 (a) Show that $A$ generates a matrix group $G$ of order three.
 
-(b) Find a set of homogeneous $G$-invariant polynomials which generate $\mathbb{C}[x,y]^G$.
+(b) Find a set of homogeneous $G$-invariant polynomials which generate $\CC[x,y]^G$.
 
-(c) Compute the Hilbert series of $\mathbb{C}[x,y]^G$.
+(c) Compute the Hilbert series of $\CC[x,y]^G$.
 :::
 
 ::: {.solution}
@@ -68,7 +68,7 @@ v&\longmapsto -y+\omega^2(x-y)
 \]
 Thus \(u,v\) diagonalize the action. Since the change of variables from \((x,y)\) to \((u,v)\) is invertible,
 \[
-\mathbb C[x,y]=\mathbb C[u,v].
+\CC[x,y]=\CC[u,v].
 \]
 
 A monomial \(u^av^b\) is invariant exactly when
@@ -89,11 +89,11 @@ u^av^b=(uv)^a(v^3)^{(b-a)/3}.
 \]
 Hence every invariant monomial, and therefore every invariant polynomial, lies in
 \[
-\mathbb C[u^3,uv,v^3].
+\CC[u^3,uv,v^3].
 \]
 The reverse inclusion is immediate because each of \(u^3,uv,v^3\) is invariant. Therefore
 \[
-\boxed{\mathbb C[x,y]^G=\mathbb C[u^3,uv,v^3].}
+\boxed{\CC[x,y]^G=\CC[u^3,uv,v^3].}
 \]
 In the original variables one may take the three homogeneous generators
 \[
@@ -109,14 +109,14 @@ I_2^3=I_1I_3.
 \]
 Thus
 \[
-\mathbb C[x,y]^G
+\CC[x,y]^G
 \cong
-\mathbb C[X,Y,Z]/(Y^3-XZ),
+\CC[X,Y,Z]/(Y^3-XZ),
 \]
 where \(\deg X=\deg Z=3\) and \(\deg Y=2\). Consequently
 \[
 \begin{aligned}
-H_{\mathbb C[x,y]^G}(t)
+H_{\CC[x,y]^G}(t)
 &=\frac{1-t^6}{(1-t^3)^2(1-t^2)}\\
 &=\boxed{\frac{1+t^3}{(1-t^2)(1-t^3)}}.
 \end{aligned}

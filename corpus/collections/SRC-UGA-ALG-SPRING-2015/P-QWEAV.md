@@ -168,7 +168,7 @@ The map $\varepsilon = \operatorname{sgn} \circ \Phi \circ C: G \to \{\pm 1\}$ i
 
 ::: pf-step
 
-Since $\varepsilon(e) = 1$ and $\varepsilon(g) = -1$, the homomorphism $\varepsilon$ is surjective onto the group $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$.
+Since $\varepsilon(e) = 1$ and $\varepsilon(g) = -1$, the homomorphism $\varepsilon$ is surjective onto the group $\{\pm 1\} \cong \ZZ/2\ZZ$.
 
 :::
 

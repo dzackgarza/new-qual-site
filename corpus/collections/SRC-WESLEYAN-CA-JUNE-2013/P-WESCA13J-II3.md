@@ -37,7 +37,7 @@ The claim is false.
 Let $g(z)=z$ and $f(z)=z^2$. Then $f$ and $g$ are entire, $g^2=f$, and $f$ is nonconstant.
 
 ::: pf-proof
-Both functions are polynomials, hence entire. By construction $g(z)^2=z^2=f(z)$ for every $z\in\mathbb C$, and $f(1)=1\neq0=f(0)$.
+Both functions are polynomials, hence entire. By construction $g(z)^2=z^2=f(z)$ for every $z\in\CC$, and $f(1)=1\neq0=f(0)$.
 :::
 
 :::

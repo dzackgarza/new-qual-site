@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $(V,\varphi)$ be a complex representation of the symmetric group $S_n$, and let $\chi$ be its character.
-Prove that $\chi(g)\in\mathbb{R}$ for all $g\in S_n$.
+Prove that $\chi(g)\in\RR$ for all $g\in S_n$.
 :::
 
 ::: {.solution}
@@ -73,7 +73,7 @@ A permutation and its inverse have exactly the same cycle lengths: reversing a c
 :::
 
 ::: pf-step
-Therefore \(\chi(g)\in\mathbb R\) for every \(g\in S_n\).
+Therefore \(\chi(g)\in\RR\) for every \(g\in S_n\).
 
 ::: pf-proof
 Characters are constant on conjugacy classes, so step [](#g-conjugate-to-inverse){.pf-ref} gives

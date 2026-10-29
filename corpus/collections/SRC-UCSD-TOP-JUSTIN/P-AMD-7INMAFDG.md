@@ -65,8 +65,8 @@ Choose a contraction of $D$ to a point and take its product with $S^1$.
 ::: pf-step
 
 Therefore
-$$\boxed{H_i(X;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,1,\\
+$$\boxed{H_i(X;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}}$$
 

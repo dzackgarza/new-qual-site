@@ -29,7 +29,7 @@ H(x,t)=\frac{(1-t)f(x)+t g(x)}{\|(1-t)f(x)+t g(x)\|}.
 $$
 
 ::: pf-proof
-We regard $S^2$ as the unit sphere in $\mathbb R^3$.
+We regard $S^2$ as the unit sphere in $\RR^3$.
 :::
 
 :::

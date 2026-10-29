@@ -22,9 +22,9 @@ Using Murphy's theorem (or otherwise), determine the spectrum of $\rho_{\lambda}
 ::: {.solution}
 Let
 \[
-T=\sum_{1\le i<j\le7}(ij)\in\mathbb C[S_7].
+T=\sum_{1\le i<j\le7}(ij)\in\CC[S_7].
 \]
-Since conjugation permutes the transpositions, $T$ is central in $\mathbb C[S_7]$. Hence, by Schur's lemma, on the irreducible module $S^{(4,2,1)}$ it acts by a scalar.
+Since conjugation permutes the transpositions, $T$ is central in $\CC[S_7]$. Hence, by Schur's lemma, on the irreducible module $S^{(4,2,1)}$ it acts by a scalar.
 
 Murphy's theorem identifies $T$ with the sum of the Jucys--Murphy elements, and on a standard tableau the latter act with eigenvalues equal to the contents of the boxes containing $1,\ldots,7$. Therefore the scalar by which $T$ acts on $S^\lambda$ is the sum of the contents of all boxes of $\lambda$:
 \[

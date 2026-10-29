@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-06
 kind: problem
-title: Wiener's theorem on translates in $L^2(\mathbb R)$
+title: Wiener's theorem on translates in $L^2(\RR)$
 classification:
   areas:
   - real-analysis
@@ -17,28 +17,28 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $f\in L^2(\mathbb R)$ and assume its Fourier transform satisfies
+Problem 6. Let $f\in L^2(\RR)$ and assume its Fourier transform satisfies
 \[
 |\widehat f(\xi)|>0
 \]
-for Lebesgue almost every $\xi\in\mathbb R$. Prove that the set of finite linear combinations of the translates
+for Lebesgue almost every $\xi\in\RR$. Prove that the set of finite linear combinations of the translates
 \[
 f_y(x)=f(x-y)
 \]
-is norm dense in $L^2(\mathbb R)$.
+is norm dense in $L^2(\RR)$.
 :::
 
 ::: {.solution}
 
 Let
 \[
-M=\operatorname{span}\{f_y:y\in\mathbb R\}\subseteq L^2(\mathbb R),
+M=\operatorname{span}\{f_y:y\in\RR\}\subseteq L^2(\RR),
 \qquad
 f_y(x)=f(x-y),
 \]
 and use the Fourier convention
 \[
-\widehat h(\xi)=\int_{\mathbb R}h(x)e^{-2\pi i x\xi}\,dx
+\widehat h(\xi)=\int_{\RR}h(x)e^{-2\pi i x\xi}\,dx
 \]
 whenever \(h\in L^1\).
 
@@ -46,9 +46,9 @@ whenever \(h\in L^1\).
 
 ::: {.pf-step #s1-1}
 
-If \(g\in M^\perp\), then for every \(y\in\mathbb R\),
+If \(g\in M^\perp\), then for every \(y\in\RR\),
 \[
-\int_{\mathbb R}e^{-2\pi i y\xi}\widehat f(\xi)\overline{\widehat g(\xi)}\,d\xi=0.
+\int_{\RR}e^{-2\pi i y\xi}\widehat f(\xi)\overline{\widehat g(\xi)}\,d\xi=0.
 \]
 
 
@@ -74,21 +74,21 @@ The function
 \[
 h(\xi)=\widehat f(\xi)\overline{\widehat g(\xi)}
 \]
-belongs to \(L^1(\mathbb R)\), and \(\widehat h(y)=0\) for every \(y\in\mathbb R\).
+belongs to \(L^1(\RR)\), and \(\widehat h(y)=0\) for every \(y\in\RR\).
 
 
 ::: pf-proof
 
 By Cauchy--Schwarz and Plancherel,
 \[
-\int_{\mathbb R}|h(\xi)|\,d\xi
+\int_{\RR}|h(\xi)|\,d\xi
 \le\|\widehat f\|_{L^2}\|\widehat g\|_{L^2}
 =\|f\|_{L^2}\|g\|_{L^2}<\infty.
 \]
 Thus \(h\in L^1\). By the chosen Fourier convention,
 \[
 \widehat h(y)
-=\int_{\mathbb R}h(\xi)e^{-2\pi i y\xi}\,d\xi,
+=\int_{\RR}h(\xi)e^{-2\pi i y\xi}\,d\xi,
 \]
 and this is zero for every \(y\) by step [](#s1-1){.pf-ref}.
 
@@ -121,7 +121,7 @@ hence \(g=0\) in \(L^2\).
 
 Therefore
 \[
-\boxed{\overline{M}^{\|\cdot\|_{L^2}}=L^2(\mathbb R)}.
+\boxed{\overline{M}^{\|\cdot\|_{L^2}}=L^2(\RR)}.
 \]
 
 
@@ -131,7 +131,7 @@ For any subspace \(M\) of a Hilbert space,
 \[
 \overline M=(M^\perp)^\perp.
 \]
-Step [](#s1-3){.pf-ref} gives \(M^\perp=\{0\}\), so \(\overline M=L^2(\mathbb R)\).
+Step [](#s1-3){.pf-ref} gives \(M^\perp=\{0\}\), so \(\overline M=L^2(\RR)\).
 
 :::
 

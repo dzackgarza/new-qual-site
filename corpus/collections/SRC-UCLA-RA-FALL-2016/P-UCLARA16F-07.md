@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $H$ be the space of holomorphic functions $f$ on the unit disk $D=\{z\in\mathbb C:|z|<1\}$ such that
+Let $H$ be the space of holomorphic functions $f$ on the unit disk $D=\{z\in\CC:|z|<1\}$ such that
 \[
 \int_D |f(z)|^2\,dA(z)<\infty.
 \]
@@ -29,7 +29,7 @@ The vector space $H$ is a Hilbert space if equipped with the inner product
 for $f,g\in H$.
 Fix $z_0\in D$ and define $L_{z_0}(f)=f(z_0)$ for $f\in H$.
 
-(a) Show that $L_{z_0}:H\to\mathbb C$ is a bounded linear functional on $H$.
+(a) Show that $L_{z_0}:H\to\CC$ is a bounded linear functional on $H$.
 
 (b) Find an explicit function $g_{z_0}\in H$ such that
 \[
@@ -154,7 +154,7 @@ aL_{z_0}(f)+bL_{z_0}(g).
 Therefore
 \[
 \boxed{
-L_{z_0}:H\to\mathbb C
+L_{z_0}:H\to\CC
 \text{ is a bounded linear functional}.}
 \]
 

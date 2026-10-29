@@ -31,7 +31,7 @@ Simplex reflection involution:
 ::: pf-proof
 
 ::: pf-step
-Let $\Delta^n = \{(t_0, t_1, \dots, t_n) \in \mathbb{R}^{n+1} : \sum_{i=0}^n t_i = 1, \; t_i \ge 0\}$ denote the standard geometric $n$-simplex with vertices $v_0, v_1, \dots, v_n$.
+Let $\Delta^n = \{(t_0, t_1, \dots, t_n) \in \RR^{n+1} : \sum_{i=0}^n t_i = 1, \; t_i \ge 0\}$ denote the standard geometric $n$-simplex with vertices $v_0, v_1, \dots, v_n$.
 :::
 
 ::: pf-step

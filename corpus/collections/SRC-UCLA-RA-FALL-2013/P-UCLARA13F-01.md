@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U,V\subset\mathbb C$ be open and connected, and let $f:U\to\mathbb C$ be holomorphic with $f(U)\subset V$.
+Let $U,V\subset\CC$ be open and connected, and let $f:U\to\CC$ be holomorphic with $f(U)\subset V$.
 Suppose $f:U\to V$ is proper: $f^{-1}(K)$ is compact in $U$ whenever $K\subset V$ is compact.
 Show that $f$ is surjective.
 :::
@@ -37,7 +37,7 @@ If $f\equiv c\in V$, then the compact set $K=\{c\}\subset V$ would have
 \[
 f^{-1}(K)=U.
 \]
-Properness would make $U$ compact. But a nonempty open subset of $\mathbb C$ is not compact. Hence $f$ cannot be constant.
+Properness would make $U$ compact. But a nonempty open subset of $\CC$ is not compact. Hence $f$ cannot be constant.
 
 :::
 
@@ -54,7 +54,7 @@ is open in $V$.
 
 ::: pf-proof
 
-A nonconstant holomorphic function on a connected open subset of $\mathbb C$ is an open map. Step [](#s1-1){.pf-ref} gives nonconstancy, and $f(U)\subset V$ by hypothesis.
+A nonconstant holomorphic function on a connected open subset of $\CC$ is an open map. Step [](#s1-1){.pf-ref} gives nonconstancy, and $f(U)\subset V$ by hypothesis.
 
 :::
 
@@ -83,7 +83,7 @@ is compact in $U$. Hence $(x_j)$ has a subsequence $x_{j_k}\to x\in U$. Continui
 \[
 f(x)=\lim_k f(x_{j_k})=\lim_k y_{j_k}=y.
 \]
-Thus $y\in f(U)$. Since $V\subset\mathbb C$ is metrizable, sequential closedness is closedness.
+Thus $y\in f(U)$. Since $V\subset\CC$ is metrizable, sequential closedness is closedness.
 
 :::
 

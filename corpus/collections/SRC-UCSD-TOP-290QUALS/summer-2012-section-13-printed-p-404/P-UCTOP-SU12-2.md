@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing the two ends of $S^2 \times I$ via the antipodal map of $S^2$.
-Compute its homology $H_*(X; \mathbb{Z})$.
+Compute its homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -48,31 +48,31 @@ The antipodal map on $S^n$ has degree $(-1)^{n+1}$, so on $S^2$ its degree is $-
 ::: pf-step
 The Wang exact sequence gives
 $$
-H_i(X;\mathbb Z)\cong
+H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
-\mathbb Z/2,&i=2,\\
+\ZZ,&i=0,1,\\
+\ZZ/2,&i=2,\\
 0,&i\ge3.
 \end{cases}
 $$
 
 ::: pf-proof
-The relevant map on $H_2(S^2)\cong\mathbb Z$ is
+The relevant map on $H_2(S^2)\cong\ZZ$ is
 $$
 I-A_*=1-(-1)=2,
 $$
 while on $H_0(S^2)$ it is zero. Thus the Wang sequence gives
 $$
-H_3(X)=\ker(2:\mathbb Z\to\mathbb Z)=0,
+H_3(X)=\ker(2:\ZZ\to\ZZ)=0,
 $$
 $$
-H_2(X)=\operatorname{coker}(2:\mathbb Z\to\mathbb Z)\cong\mathbb Z/2,
+H_2(X)=\operatorname{coker}(2:\ZZ\to\ZZ)\cong\ZZ/2,
 $$
 and
 $$
-H_1(X)\cong\ker(0:\mathbb Z\to\mathbb Z)\cong\mathbb Z.
+H_1(X)\cong\ker(0:\ZZ\to\ZZ)\cong\ZZ.
 $$
-Connectedness gives $H_0(X)\cong\mathbb Z$.
+Connectedness gives $H_0(X)\cong\ZZ$.
 :::
 
 :::

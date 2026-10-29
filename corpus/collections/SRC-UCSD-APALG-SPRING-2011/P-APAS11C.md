@@ -79,13 +79,13 @@ With the matrix data in the statement, the conclusions in (a)–(c) hold.
    \[
    X=\sum_{g\in G}x_gA(g)=\rho\!\left(\sum_{g\in G}x_g g\right)
    \]
-   where $\rho:\mathbb C[G]\to M_k(\mathbb C)$ is the left regular representation.
+   where $\rho:\CC[G]\to M_k(\CC)$ is the left regular representation.
 
-3. Over $\mathbb C$, the regular representation decomposes as
+3. Over $\CC$, the regular representation decomposes as
    \[
    \rho \cong \bigoplus_{\nu=1}^h n_\nu A^{(\nu)}.
    \]
-   So there exists $P\in GL_k(\mathbb C)$ with
+   So there exists $P\in GL_k(\CC)$ with
    \[
    PXP^{-1}
    \cong
@@ -105,7 +105,7 @@ With the matrix data in the statement, the conclusions in (a)–(c) hold.
    =\prod_{\nu=1}^h \det\!\left(\sum_{g\in G}A^{(\nu)}(g)x_g\right)^{n_\nu}.
    \]
 
-4. For (c), let $G=\mathbb Z_n=\{0,\dots,n-1\}$.
+4. For (c), let $G=\ZZ_n=\{0,\dots,n-1\}$.
    Its irreducible representations are one-dimensional characters
    \[
    A^{(r)}(j)=\epsilon^{rj},\qquad

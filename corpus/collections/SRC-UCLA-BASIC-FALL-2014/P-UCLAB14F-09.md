@@ -115,7 +115,7 @@ e_1=v,
 \qquad
 e_n=Av,
 \]
-and extend them to a basis of $\mathbb C^n$.
+and extend them to a basis of $\CC^n$.
 In this basis,
 \[
 Ae_1=e_n,
@@ -208,7 +208,7 @@ Hence $p(t)$ is a nonzero polynomial.
 
 ::: {.pf-step #s1-6}
 
-There exists $t\in\mathbb C$ such that
+There exists $t\in\CC$ such that
 \[
 A+tN
 \]

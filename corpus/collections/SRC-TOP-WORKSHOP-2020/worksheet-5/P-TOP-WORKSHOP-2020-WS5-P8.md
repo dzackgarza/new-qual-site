@@ -31,11 +31,11 @@ audit:
 ::: {.solution}
 (a) Use the equator as the \(1\)-skeleton. Give that circle one \(0\)-cell \(v\) and one \(1\)-cell \(e\). The northern and southern open hemispheres are two \(2\)-cells \(N,S\), each attached along the equator. Orient them so their attaching maps have degrees \(+1\) and \(-1\). The cellular chain complex is
 \[
-0\to\mathbb Z^2\langle N,S\rangle
+0\to\ZZ^2\langle N,S\rangle
 \xrightarrow{\partial_2}
-\mathbb Z\langle e\rangle
+\ZZ\langle e\rangle
 \xrightarrow{0}
-\mathbb Z\langle v\rangle\to0,
+\ZZ\langle v\rangle\to0,
 \]
 with
 \[
@@ -43,11 +43,11 @@ with
 \]
 Therefore
 \[
-H_2(S^2)=\ker\partial_2\cong\mathbb Z,
+H_2(S^2)=\ker\partial_2\cong\ZZ,
 \qquad
-H_1(S^2)=\mathbb Z/\operatorname{im}\partial_2=0,
+H_1(S^2)=\ZZ/\operatorname{im}\partial_2=0,
 \qquad
-H_0(S^2)=\mathbb Z.
+H_0(S^2)=\ZZ.
 \]
 
 (b) Decompose \(S^n\) into open neighborhoods of its upper and lower hemispheres. Each is contractible and their intersection deformation retracts onto \(S^{n-1}\). The reduced Mayer--Vietoris long exact sequence therefore yields isomorphisms
@@ -56,13 +56,13 @@ H_0(S^2)=\mathbb Z.
 \]
 for \(n\ge1\). Starting from
 \[
-\widetilde H_0(S^0)\cong\mathbb Z,
+\widetilde H_0(S^0)\cong\ZZ,
 \]
 induction gives
 \[
 \widetilde H_i(S^n)\cong
 \begin{cases}
-\mathbb Z,&i=n,\\
+\ZZ,&i=n,\\
 0,&i\ne n.
 \end{cases}
 \]
@@ -70,9 +70,9 @@ Hence for \(n\ge1\),
 \[
 H_i(S^n)\cong
 \begin{cases}
-\mathbb Z,&i=0,n,\\
+\ZZ,&i=0,n,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
-For \(n=0\), \(S^0\) has two points, so \(H_0(S^0)\cong\mathbb Z^2\) and all higher groups vanish.
+For \(n=0\), \(S^0\) has two points, so \(H_0(S^0)\cong\ZZ^2\) and all higher groups vanish.
 :::

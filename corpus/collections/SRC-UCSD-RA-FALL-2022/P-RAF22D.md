@@ -33,7 +33,7 @@ Let $(X, d)$ be a compact metric space.
 
 2. Prove that $X$ is second countable.
 
-3. Prove that $C(X, \mathbb{R})$ equipped with the uniform norm is separable.
+3. Prove that $C(X, \RR)$ equipped with the uniform norm is separable.
    (Hint: Use (2) and the Stone-Weierstrass Theorem.)
 :::
 
@@ -71,7 +71,7 @@ Then $D$ is countable and dense in $X$.
 
 Consider
 \[
-\mathcal B:=\{B(q,r):q\in D,\ r\in\mathbb Q_{>0}\}.
+\mathcal B:=\{B(q,r):q\in D,\ r\in\QQ_{>0}\}.
 \]
 This family is countable. To see that it is a base, let $U$ be open and let $x\in U$. Choose $\varepsilon>0$ with
 \[
@@ -93,7 +93,7 @@ Hence $X$ is second countable.
 
 ::: pf-step
 
-(3) $C(X,\mathbb R)$ is separable in the uniform norm.
+(3) $C(X,\RR)$ is separable in the uniform norm.
 
 ::: pf-proof
 
@@ -111,13 +111,13 @@ d(y,q)>\frac{2d(x,y)}3>d(x,q),
 \]
 so $\rho_q(x)\ne\rho_q(y)$.
 
-By the real Stone--Weierstrass theorem, $\mathcal A$ is uniformly dense in $C(X,\mathbb R)$.
+By the real Stone--Weierstrass theorem, $\mathcal A$ is uniformly dense in $C(X,\RR)$.
 
-Now let $\mathcal A_{\mathbb Q}$ consist of all polynomials with rational coefficients in finitely many of the functions $\rho_q$. Since $D$ is countable, $\mathcal A_{\mathbb Q}$ is countable. Every element of $\mathcal A$ involves only finitely many real coefficients, which can be approximated by rational coefficients; since each $\rho_q$ is bounded on compact $X$, this approximation is uniform. Thus $\mathcal A_{\mathbb Q}$ is uniformly dense in $\mathcal A$, hence in $C(X,\mathbb R)$.
+Now let $\mathcal A_{\QQ}$ consist of all polynomials with rational coefficients in finitely many of the functions $\rho_q$. Since $D$ is countable, $\mathcal A_{\QQ}$ is countable. Every element of $\mathcal A$ involves only finitely many real coefficients, which can be approximated by rational coefficients; since each $\rho_q$ is bounded on compact $X$, this approximation is uniform. Thus $\mathcal A_{\QQ}$ is uniformly dense in $\mathcal A$, hence in $C(X,\RR)$.
 
 Therefore
 \[
-\boxed{C(X,\mathbb R)\text{ is separable in the uniform norm}.}
+\boxed{C(X,\RR)\text{ is separable in the uniform norm}.}
 \]
 
 :::

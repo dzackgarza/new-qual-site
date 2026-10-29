@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 8.
 
-(a) Let $f:\mathbb R\to\mathbb R$ be defined by
+(a) Let $f:\RR\to\RR$ be defined by
 \[
 f(x)=
 \begin{cases}
@@ -29,9 +29,9 @@ e^{-1/x},&x>0.
 \]
 Prove that $f$ is infinitely differentiable.
 
-(b) In Euclidean space $\mathbb R^n$, for $n\geq 1$, find a function $\varphi\in C^\infty(\mathbb R^n)$ such that $\varphi(x)\geq 0$ for all $x$, $\varphi(x)=0$ if $|x|>1$, and
+(b) In Euclidean space $\RR^n$, for $n\geq 1$, find a function $\varphi\in C^\infty(\RR^n)$ such that $\varphi(x)\geq 0$ for all $x$, $\varphi(x)=0$ if $|x|>1$, and
 \[
-\int_{\mathbb R^n}\varphi(x)\,dx=1.
+\int_{\RR^n}\varphi(x)\,dx=1.
 \]
 :::
 
@@ -98,7 +98,7 @@ Expand the polynomial in step [](#s1-2){.pf-ref} into finitely many monomials $c
 
 ::: {.pf-step #s1-4}
 
-The function $f$ is $C^\infty$ on $\mathbb R$, and
+The function $f$ is $C^\infty$ on $\RR$, and
 \[
 f^{(k)}(0)=0
 \qquad(k\geq0).
@@ -122,9 +122,9 @@ For $h<0$ the quotient is zero. For $h>0$, step [](#s1-2){.pf-ref} expresses it 
 Define
 \[
 \psi(x)=f(1-|x|^2),
-\qquad x\in\mathbb R^n.
+\qquad x\in\RR^n.
 \]
-Then $\psi\in C^\infty(\mathbb R^n)$, $\psi\geq0$, and
+Then $\psi\in C^\infty(\RR^n)$, $\psi\geq0$, and
 \[
 \psi(x)=0\quad\text{for }|x|\geq1,
 \]
@@ -143,7 +143,7 @@ The map $x\mapsto1-|x|^2$ is smooth, and step [](#s1-4){.pf-ref} says $f$ is smo
 
 The number
 \[
-C=\int_{\mathbb R^n}\psi(x)\,dx
+C=\int_{\RR^n}\psi(x)\,dx
 \]
 is finite and strictly positive.
 
@@ -164,13 +164,13 @@ Set
 \]
 Then
 \[
-\varphi\in C^\infty(\mathbb R^n),\qquad
+\varphi\in C^\infty(\RR^n),\qquad
 \varphi\geq0,\qquad
 \varphi(x)=0\text{ if }|x|>1,
 \]
 and
 \[
-\int_{\mathbb R^n}\varphi(x)\,dx=1.
+\int_{\RR^n}\varphi(x)\,dx=1.
 \]
 
 

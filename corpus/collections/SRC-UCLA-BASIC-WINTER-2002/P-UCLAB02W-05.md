@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $U\subset\mathbb R^n$ be open and $f:U\to\mathbb R^k$.
+(a) Let $U\subset\RR^n$ be open and $f:U\to\RR^k$.
 Define what it means for $f$ to be differentiable at a point $x\in U$.
 
 (b) State carefully the Chain Rule for a composition of differentiable functions of several variables.

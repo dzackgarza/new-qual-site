@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. A meromorphic function on $\mathbb { C } \cup \{ \infty \}$ is a meromorphic function $f ( z )$ on C such that $g ( z ) = f ( 1 / z )$ is also meromorphic.
-Show that a meromorphic function on $\mathbb { C } \cup \{ \infty \}$ must be rational, i.e. one can express it as the quotient of two polynomials.
+Problem 1. A meromorphic function on $\CC \cup \{ \infty \}$ is a meromorphic function $f ( z )$ on C such that $g ( z ) = f ( 1 / z )$ is also meromorphic.
+Show that a meromorphic function on $\CC \cup \{ \infty \}$ must be rational, i.e. one can express it as the quotient of two polynomials.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ the compact disk $|z|\le R$.
 
 Poles of a meromorphic function are isolated. If there were infinitely many
 finite poles in that compact disk, compactness would give an accumulation point
-in $\mathbb C$, contradicting isolatedness. Therefore the finite poles are
+in $\CC$, contradicting isolatedness. Therefore the finite poles are
 $a_1,\dots,a_m$ for some finite $m$.
 
 :::

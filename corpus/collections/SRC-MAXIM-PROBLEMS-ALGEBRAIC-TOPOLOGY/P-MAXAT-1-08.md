@@ -25,7 +25,7 @@ Let $M$ be a closed oriented manifold of dimension
 \[
 d=4n+2.
 \]
-Work with rational coefficients and write $b_i=\dim_{\mathbb Q}H^i(M;\mathbb Q)$.
+Work with rational coefficients and write $b_i=\dim_{\QQ}H^i(M;\QQ)$.
 
 ::: pf
 
@@ -41,8 +41,8 @@ b_i=b_{d-i}.
 
 Since $M$ is closed and oriented, the pairing
 \[
-H^i(M;\mathbb Q)\times H^{d-i}(M;\mathbb Q)
-\longrightarrow\mathbb Q,
+H^i(M;\QQ)\times H^{d-i}(M;\QQ)
+\longrightarrow\QQ,
 \qquad
 (x,y)\longmapsto\langle x\smile y,[M]\rangle
 \]
@@ -86,7 +86,7 @@ The middle-dimensional cup-product pairing
 \[
 Q(x,y)=\langle x\smile y,[M]\rangle,
 \qquad
-x,y\in H^{2n+1}(M;\mathbb Q),
+x,y\in H^{2n+1}(M;\QQ),
 \]
 is nondegenerate and skew-symmetric.
 
@@ -105,7 +105,7 @@ because $2n+1$ is odd. Hence $Q(x,y)=-Q(y,x)$.
 
 ::: {.pf-step #s1-4}
 
-A finite-dimensional vector space over $\mathbb Q$ carrying a nondegenerate skew-symmetric bilinear form has even dimension.
+A finite-dimensional vector space over $\QQ$ carrying a nondegenerate skew-symmetric bilinear form has even dimension.
 
 
 ::: pf-proof

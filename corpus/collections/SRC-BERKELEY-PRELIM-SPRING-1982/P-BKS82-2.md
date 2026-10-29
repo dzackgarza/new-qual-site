@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS82-2
 kind: problem
-title: Every uncountable subset of $\mathbb R^n$ contains a convergent sequence of distinct points with limit in the set
+title: Every uncountable subset of $\RR^n$ contains a convergent sequence of distinct points with limit in the set
 classification:
   areas: [prelim]
   topics: []
@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $S\subset\mathbb R^n$ be uncountable. Prove that there is a sequence of distinct points of $S$ converging to a point of $S$.
+Let $S\subset\RR^n$ be uncountable. Prove that there is a sequence of distinct points of $S$ converging to a point of $S$.
 :::
 
 ::: {.solution}

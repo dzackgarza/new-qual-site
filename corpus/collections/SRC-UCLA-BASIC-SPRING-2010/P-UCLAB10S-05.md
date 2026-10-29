@@ -249,7 +249,7 @@ Therefore
 
 ::: pf-proof
 
-Over $\mathbb C$, two matrices are similar if and only if their Jordan normal forms agree up to permutation of Jordan blocks.
+Over $\CC$, two matrices are similar if and only if their Jordan normal forms agree up to permutation of Jordan blocks.
 Step [](#s1-6){.pf-ref} gives exactly this agreement.
 
 :::

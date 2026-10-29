@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-5. For each natural number n, let $f _ { n } : [ 0 , 1 ] \to \mathbb { R }$ be a sequence of absolutely integrable functions, and let $f : [ 0 , 1 ] \to$ R be another absolutely integrable function such that
+5. For each natural number n, let $f _ { n } : [ 0 , 1 ] \to \RR$ be a sequence of absolutely integrable functions, and let $f : [ 0 , 1 ] \to \RR$ be another absolutely integrable function such that
 
 $$
 \int _ { 0 } ^ { 1 } { \big | } f _ { n } ( x ) - f ( x ) { \big | } d x \to 0 , \qquad { \mathrm { a s } } \quad n \to \infty .

@@ -19,13 +19,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\delta_x$ denote the Dirac delta mass at $x \in \mathbb{R}^n$.
-Let $\{x_j\}_{j=1}^\infty$ be a sequence in $\mathbb{R}^n$, $\{c_j\}_{j=1}^\infty$ a sequence of positive numbers, and $\mu$ the Borel measure on $\mathbb{R}^n$ corresponding to the series $\sum_{j=1}^\infty c_j \delta_{x_j}$.
+Let $\delta_x$ denote the Dirac delta mass at $x \in \RR^n$.
+Let $\{x_j\}_{j=1}^\infty$ be a sequence in $\RR^n$, $\{c_j\}_{j=1}^\infty$ a sequence of positive numbers, and $\mu$ the Borel measure on $\RR^n$ corresponding to the series $\sum_{j=1}^\infty c_j \delta_{x_j}$.
 Prove that $\mu$ is Radon if and only if for all convergent subsequences $\{x_{j_k}\}_{k=1}^\infty$ it holds that $\sum_{k=1}^\infty c_{j_k} < \infty$.
 :::
 
 ::: {.solution}
-On $\mathbb R^n$, a Borel measure is Radon if and only if it is finite on compact sets.
+On $\RR^n$, a Borel measure is Radon if and only if it is finite on compact sets.
 
 ::: pf
 
@@ -46,7 +46,7 @@ $$
 
 ::: {.pf-step #s2}
 
-If $\sum_k c_{j_k}<\infty$ for every convergent subsequence, then $\mu(C)<\infty$ for every compact $C\subseteq\mathbb R^n$.
+If $\sum_k c_{j_k}<\infty$ for every convergent subsequence, then $\mu(C)<\infty$ for every compact $C\subseteq\RR^n$.
 
 ::: pf-proof
 
@@ -93,7 +93,7 @@ which contradicts the hypothesis.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves the forward implication. Step [](#s2){.pf-ref} shows that $\mu$ is finite on compact sets, hence Radon on $\mathbb R^n$.
+Step [](#s1){.pf-ref} proves the forward implication. Step [](#s2){.pf-ref} shows that $\mu$ is finite on compact sets, hence Radon on $\RR^n$.
 
 :::
 

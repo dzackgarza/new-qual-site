@@ -34,18 +34,18 @@ Compute the fundamental group of $X = S^1 \vee \mathbb{RP}^2$.
 ::: pf-proof
 
 ::: pf-step
-$S^1$ has fundamental group $\pi_1(S^1, s_0) \cong \langle a \rangle \cong \mathbb{Z}$.
+$S^1$ has fundamental group $\pi_1(S^1, s_0) \cong \langle a \rangle \cong \ZZ$.
 :::
 
 ::: pf-step
-$\mathbb{RP}^2$ has fundamental group $\pi_1(\mathbb{RP}^2, p_0) \cong \langle b \mid b^2 = 1 \rangle \cong \mathbb{Z}/2\mathbb{Z}$.
+$\mathbb{RP}^2$ has fundamental group $\pi_1(\mathbb{RP}^2, p_0) \cong \langle b \mid b^2 = 1 \rangle \cong \ZZ/2\ZZ$.
 :::
 
 ::: pf-step
-Since $S^1$ and $\mathbb{RP}^2$ are locally contractible CW complexes, their wedge sum $X = S^1 \vee \mathbb{RP}^2$ at basepoint $x_0$ has fundamental group given by the free product: $$G = \pi_1(X, x_0) \cong \pi_1(S^1, s_0) * \pi_1(\mathbb{RP}^2, p_0) \cong \langle a, b \mid b^2 = 1 \rangle \cong \mathbb{Z} * (\mathbb{Z}/2\mathbb{Z}).$$
+Since $S^1$ and $\mathbb{RP}^2$ are locally contractible CW complexes, their wedge sum $X = S^1 \vee \mathbb{RP}^2$ at basepoint $x_0$ has fundamental group given by the free product: $$G = \pi_1(X, x_0) \cong \pi_1(S^1, s_0) * \pi_1(\mathbb{RP}^2, p_0) \cong \langle a, b \mid b^2 = 1 \rangle \cong \ZZ * (\ZZ/2\ZZ).$$
 
 ::: pf-proof
-The Seifert–van Kampen theorem for the wedge of two nice spaces gives the free product of their fundamental groups, which is $\mathbb{Z} * (\mathbb{Z}/2\mathbb{Z})$.
+The Seifert–van Kampen theorem for the wedge of two nice spaces gives the free product of their fundamental groups, which is $\ZZ * (\ZZ/2\ZZ)$.
 :::
 
 :::
@@ -60,7 +60,7 @@ Classification of path-connected 2-fold covering spaces.
 ::: pf-proof
 
 ::: pf-step
-By covering space theory, isomorphism classes of path-connected 2-fold covering spaces of $X$ correspond bijectively to index 2 subgroups $H \le G$, which in turn correspond bijectively to non-trivial homomorphisms $\phi \colon G \to \mathbb{Z}/2\mathbb{Z} = \{\pm 1\}$ via $H = \ker(\phi)$.
+By covering space theory, isomorphism classes of path-connected 2-fold covering spaces of $X$ correspond bijectively to index 2 subgroups $H \le G$, which in turn correspond bijectively to non-trivial homomorphisms $\phi \colon G \to \ZZ/2\ZZ = \{\pm 1\}$ via $H = \ker(\phi)$.
 :::
 
 ::: pf-step
@@ -73,7 +73,7 @@ A homomorphism $\phi \colon G \to \{\pm 1\}$ is determined uniquely by the image
 
 ::: {.pf-step #s2-3}
 There are $2 \times 2 = 4$ homomorphisms in total.
-Exactly 3 of them are non-trivial (surjective onto $\mathbb{Z}/2\mathbb{Z}$):
+Exactly 3 of them are non-trivial (surjective onto $\ZZ/2\ZZ$):
 
 - Case 1: $\phi_1(a) = -1, \phi_1(b) = 1$.
   Subgroup $H_1 = \ker \phi_1 = \langle a^2, b, a b a^{-1} \rangle$.
@@ -89,7 +89,7 @@ Exactly 3 of them are non-trivial (surjective onto $\mathbb{Z}/2\mathbb{Z}$):
 Thus, there are exactly 3 distinct path-connected 2-fold covering spaces of $S^1 \vee \mathbb{RP}^2$.
 
 ::: pf-proof
-The Galois correspondence identifies connected 2-fold covers with index-2 subgroups, equivalently with surjective homomorphisms to $\mathbb{Z}/2\mathbb{Z}$; there are exactly 3 such homomorphisms, listed in step [](#s2-3){.pf-ref}.
+The Galois correspondence identifies connected 2-fold covers with index-2 subgroups, equivalently with surjective homomorphisms to $\ZZ/2\ZZ$; there are exactly 3 such homomorphisms, listed in step [](#s2-3){.pf-ref}.
 :::
 
 :::

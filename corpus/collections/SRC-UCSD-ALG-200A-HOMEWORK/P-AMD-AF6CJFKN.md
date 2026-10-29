@@ -46,7 +46,7 @@ Prove Cauchy's theorem by establishing the following.
 
 1. If $a_1a_2\cdots a_p=e$, then $a_2a_3\cdots a_pa_1=e$.
 
-2. The cyclic group $K=(\mathbb Z/p\mathbb Z,+)$ acts on $X$ so that its generator sends
+2. The cyclic group $K=(\ZZ/p\ZZ,+)$ acts on $X$ so that its generator sends
    \[
    (a_1,a_2,\ldots,a_p)\longmapsto(a_2,a_3,\ldots,a_p,a_1).
    \]
@@ -92,7 +92,7 @@ Thus the one-step cyclic rotation preserves $X$.
 
 ::: pf-step
 
-Cyclic rotation defines an action of $K=\mathbb Z/p\mathbb Z$ on $X$.
+Cyclic rotation defines an action of $K=\ZZ/p\ZZ$ on $X$.
 
 ::: pf-proof
 
@@ -109,7 +109,7 @@ Hence the assignment
 \[
 \bar m\cdot x=r^m(x)
 \]
-depends only on $m\pmod p$ and defines an action of the cyclic group $K=\mathbb Z/p\mathbb Z$ on $X$.
+depends only on $m\pmod p$ and defines an action of the cyclic group $K=\ZZ/p\ZZ$ on $X$.
 
 :::
 

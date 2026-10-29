@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if n is a power of 2, then $\mathbb { R P } ^ { n }$ cannot be smoothly embedded in $\mathbb { R } ^ { 2 n - 1 }$
+Show that if n is a power of 2, then $\mathbb { R P } ^ { n }$ cannot be smoothly embedded in $\RR ^ { 2 n - 1 }$
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ a\in H^1(\mathbb{RP}^n;\mathbb F_2)
 \]
 be the standard generator. Suppose, for contradiction, that there is a smooth embedding
 \[
-\mathbb{RP}^n\hookrightarrow\mathbb R^{2n-1}.
+\mathbb{RP}^n\hookrightarrow\RR^{2n-1}.
 \]
 
 ::: pf
@@ -201,7 +201,7 @@ Hence
 \[
 \boxed{
 \mathbb{RP}^{2^r}\text{ cannot be smoothly embedded in }
-\mathbb R^{2^{r+1}-1}.}
+\RR^{2^{r+1}-1}.}
 \]
 
 

@@ -35,14 +35,14 @@ If true, give a brief proof, citing appropriate theorem(s); if false, give a cou
 
 (d) The sequence $e^{i2\pi n x}$ converges to $0$ weakly in $L^2([0,1])$.
 
-(e) Let $a_j \in \mathbb{R}$, $j = 1, \ldots, n$, and $\frac{1}{p} + \frac{1}{q} = 1$, $1 < p < \infty$.
+(e) Let $a_j \in \RR$, $j = 1, \ldots, n$, and $\frac{1}{p} + \frac{1}{q} = 1$, $1 < p < \infty$.
 Then
 $$
 \sum_{j=1}^{n} a_j \leq n^{1/p} \left(\sum_{j=1}^{n} |a_j|^q\right)^{1/q}.
 $$
 
-(f) Let $Y = \{f : \mathbb{R} \to [-\pi, \pi]\}$.
-Let $[-\pi, \pi]$ have its natural topology, and give $Y$ the weakest topology such that the mappings $p_r : Y \to [-\pi, \pi]$ defined by $p_r(f) := f(r)$ are continuous for all $r \in \mathbb{R}$.
+(f) Let $Y = \{f : \RR \to [-\pi, \pi]\}$.
+Let $[-\pi, \pi]$ have its natural topology, and give $Y$ the weakest topology such that the mappings $p_r : Y \to [-\pi, \pi]$ defined by $p_r(f) := f(r)$ are continuous for all $r \in \RR$.
 Then $Y$ is compact.
 :::
 
@@ -195,7 +195,7 @@ Part (f) is true.
 
 The specified topology is exactly the product topology on
 \[
-Y=[-\pi,\pi]^{\mathbb R},
+Y=[-\pi,\pi]^{\RR},
 \]
 because it is the weakest topology making every coordinate projection
 \[

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E \subseteq \mathbb{R}$ be (Lebesgue) measurable and satisfy $E + r = E$ for every rational number $r$.
+Let $E \subseteq \RR$ be (Lebesgue) measurable and satisfy $E + r = E$ for every rational number $r$.
 Show that either $E$ or $E^c$ has measure 0.
 :::
 
@@ -68,9 +68,9 @@ Use continuity of translation to find a rational translate with positive overlap
 Define
 \[
 h(t):=m((A+t)\cap B)
-=\int_{\mathbb R}\mathbf1_A(x-t)\mathbf1_B(x)\,dx.
+=\int_{\RR}\mathbf1_A(x-t)\mathbf1_B(x)\,dx.
 \]
-Since translations are continuous in $L^1(\mathbb R)$,
+Since translations are continuous in $L^1(\RR)$,
 \[
 |h(t)-h(s)|
 \le \|\mathbf1_A(\cdot-t)-\mathbf1_A(\cdot-s)\|_1,
@@ -80,13 +80,13 @@ so $h$ is continuous.
 Tonelli's theorem gives
 \[
 \begin{aligned}
-\int_{\mathbb R}h(t)\,dt
-&=\int_{\mathbb R}\int_{\mathbb R}
+\int_{\RR}h(t)\,dt
+&=\int_{\RR}\int_{\RR}
 \mathbf1_A(x-t)\mathbf1_B(x)\,dx\,dt\\
 &=m(A)m(B)>0.
 \end{aligned}
 \]
-Thus $h(t_0)>0$ for some $t_0$. By continuity, $h>0$ on a nonempty open interval around $t_0$. Since $\mathbb Q$ is dense, choose rational $r$ in that interval. Then
+Thus $h(t_0)>0$ for some $t_0$. By continuity, $h>0$ on a nonempty open interval around $t_0$. Since $\QQ$ is dense, choose rational $r$ in that interval. Then
 \[
 m((A+r)\cap B)=h(r)>0.
 \]
@@ -101,7 +101,7 @@ Contradict rational invariance.
 
 ::: pf-proof
 
-Because $A\subset E$ and $r\in\mathbb Q$,
+Because $A\subset E$ and $r\in\QQ$,
 \[
 A+r\subset E+r=E.
 \]

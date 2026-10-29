@@ -13,12 +13,12 @@ review: draft
 ---
 
 ::: {.problem}
-Let $K$ be a compact subset of $\mathbb{C}$ and $\hat{K}$ its polynomial hull, i.e. $$\hat{K} := \{z \in \mathbb{C} : |p(z)| \leq \sup_{w \in K} |p(w)|, \text{ for every polynomial } p\}.$$ Show that if $z \in \mathbb{C} \setminus K$ and there is a curve $\gamma \subset \mathbb{C}_\infty \setminus K$ connecting $z$ to $\infty$, then $z \notin \hat{K}$.
+Let $K$ be a compact subset of $\CC$ and $\hat{K}$ its polynomial hull, i.e. $$\hat{K} := \{z \in \CC : |p(z)| \leq \sup_{w \in K} |p(w)|, \text{ for every polynomial } p\}.$$ Show that if $z \in \CC \setminus K$ and there is a curve $\gamma \subset \CC_\infty \setminus K$ connecting $z$ to $\infty$, then $z \notin \hat{K}$.
 :::
 
 ::: {.solution}
 The curve $\gamma$ says precisely that $z$ lies in the unbounded component of
-$\mathbb C_\infty\setminus K$. Apply the pole-moving form of Runge's theorem
+$\CC_\infty\setminus K$. Apply the pole-moving form of Runge's theorem
 to the function
 \[
 h(w)=\frac1{w-z},

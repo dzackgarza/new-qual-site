@@ -141,7 +141,7 @@ H_2(X)=0
 \]
 while
 \[
-H_2(Y)\cong\mathbb Z.
+H_2(Y)\cong\ZZ.
 \]
 Hence the retraction is not a deformation retraction.
 
@@ -203,7 +203,7 @@ But
 \[
 H_2(X)=0,
 \qquad
-H_2(Y)\cong\mathbb Z.
+H_2(Y)\cong\ZZ.
 \]
 Therefore $X$ and $Y$ cannot be homotopy equivalent.
 
@@ -263,7 +263,7 @@ The sphere is simply connected:
 \]
 It is not contractible because
 \[
-H_2(S^2)\cong\mathbb Z\ne0.
+H_2(S^2)\cong\ZZ\ne0.
 \]
 
 :::
@@ -289,7 +289,7 @@ For the wedge,
 \]
 while
 \[
-\pi_1(Y)\cong\mathbb Z^2.
+\pi_1(Y)\cong\ZZ^2.
 \]
 These groups are not isomorphic because the first is nonabelian and the
 second is abelian.
@@ -300,7 +300,7 @@ H_1(X)
 \cong
 F_2^{\mathrm{ab}}
 \cong
-\mathbb Z^2
+\ZZ^2
 \cong
 H_1(Y).
 \]
@@ -318,7 +318,7 @@ Statement (12) is impossible.
 
 For every path-connected space $Z$,
 \[
-H_1(Z;\mathbb Z)
+H_1(Z;\ZZ)
 \cong
 \pi_1(Z)^{\mathrm{ab}}.
 \]
@@ -354,7 +354,7 @@ H_2(S^1)=0=H_2(\{*\}).
 \]
 But
 \[
-\pi_1(S^1)\cong\mathbb Z
+\pi_1(S^1)\cong\ZZ
 \]
 and
 \[
@@ -384,7 +384,7 @@ H_2(X)=0
 \]
 and
 \[
-H_2(Y)\cong\mathbb Z.
+H_2(Y)\cong\ZZ.
 \]
 
 :::

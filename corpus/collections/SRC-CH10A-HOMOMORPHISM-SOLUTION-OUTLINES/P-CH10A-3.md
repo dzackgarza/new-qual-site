@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH10A-3
 kind: problem
-title: Differentiation is a homomorphism on $\mathbb R[x]$
+title: Differentiation is a homomorphism on $\RR[x]$
 classification:
   areas:
   - algebra
@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the mapping given in Example 4, the map $\phi : \mathbb{R}[x] \to \mathbb{R}[x]$ defined by $f \mapsto f'$, is a homomorphism.
+Prove that the mapping given in Example 4, the map $\phi : \RR[x] \to \RR[x]$ defined by $f \mapsto f'$, is a homomorphism.
 :::
 
 ::: {.solution}
-Let $\phi : \mathbb { R } [ x ] \to \mathbb { R } [ x ]$ be defined by $f \mapsto f ^ { \prime }$ . Then for $f , g \in \mathbb { R } [ x ] , \phi ( f + g ) = ( f + g ) ^ { \prime } =$ $f ^ { \prime } + g ^ { \prime } = \phi ( f ) + \phi ( g )$ so φ is a homomorphism.
+Let $\phi : \RR [ x ] \to \RR [ x ]$ be defined by $f \mapsto f ^ { \prime }$ . Then for $f , g \in \RR [ x ] , \phi ( f + g ) = ( f + g ) ^ { \prime } =$ $f ^ { \prime } + g ^ { \prime } = \phi ( f ) + \phi ( g )$ so φ is a homomorphism.
 :::

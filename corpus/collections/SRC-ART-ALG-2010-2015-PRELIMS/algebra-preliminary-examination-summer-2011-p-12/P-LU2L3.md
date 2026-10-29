@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LU2L3
 kind: problem
-title: Similarity classes of order-$8$ matrices in $M_n(\mathbb{Q})$ for $n=3,4,5$
+title: Similarity classes of order-$8$ matrices in $M_n(\QQ)$ for $n=3,4,5$
 classification:
   areas:
   - algebra
@@ -25,7 +25,7 @@ audit:
   note: "Checked irreducibility and squarefreeness of the four factors, uniqueness of the module multiplicities, the exact fourth-power obstruction, and existence and inequivalence of all listed representatives."
 ---
 ::: {.problem}
-For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A \in M_n(\mathbb{Q})$ such that $A^8 = I$ but $A^4 \neq I$.
+For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A \in M_n(\QQ)$ such that $A^8 = I$ but $A^4 \neq I$.
 :::
 
 ::: {.solution}
@@ -39,15 +39,15 @@ respectively $0,1,2$.
 The condition $A^8=I$ gives a unique multiplicity
 description
 $$
-\mathbb Q^n\cong E_1^{\oplus a}\oplus E_2^{\oplus b}
+\QQ^n\cong E_1^{\oplus a}\oplus E_2^{\oplus b}
 \oplus E_4^{\oplus c}\oplus E_8^{\oplus d},
 \qquad n=a+b+2c+4d,
 $$
-as a $\mathbb Q[x]$-module with $x$ acting by $A$, where
+as a $\QQ[x]$-module with $x$ acting by $A$, where
 $$
-E_1=\mathbb Q[x]/(x-1),\quad E_2=\mathbb Q[x]/(x+1),
-\quad E_4=\mathbb Q[x]/(x^2+1),\quad
-E_8=\mathbb Q[x]/(x^4+1).
+E_1=\QQ[x]/(x-1),\quad E_2=\QQ[x]/(x+1),
+\quad E_4=\QQ[x]/(x^2+1),\quad
+E_8=\QQ[x]/(x^4+1).
 $$
 
 ::: pf-proof
@@ -63,10 +63,10 @@ quartic is irreducible as well [@DF04]. These are distinct
 monic irreducibles, so the displayed factorization is squarefree.
 
 The module is finitely generated, since a finite rational
-basis also generates over $\mathbb Q[x]$, and is annihilated
-by $x^8-1$. The structure theorem over the PID $\mathbb Q[x]$
+basis also generates over $\QQ[x]$, and is annihilated
+by $x^8-1$. The structure theorem over the PID $\QQ[x]$
 expresses it uniquely as a direct sum of modules
-$\mathbb Q[x]/(p^e)$ for monic irreducibles $p$ [@DF04].
+$\QQ[x]/(p^e)$ for monic irreducibles $p$ [@DF04].
 On such a summand, annihilation by $x^8-1$ implies
 $p^e\mid x^8-1$ by applying that polynomial to the class of
 $1$. Hence $e=1$ and $p$ is one of the four displayed
@@ -75,7 +75,7 @@ Conversely, every direct sum of this form is annihilated
 by $x^8-1$.
 
 An invertible rational linear map intertwines the two matrix
-actions exactly when it is a $\mathbb Q[x]$-module
+actions exactly when it is a $\QQ[x]$-module
 isomorphism. Thus uniqueness of the multiplicities is
 exactly uniqueness of the similarity class.
 
@@ -93,7 +93,7 @@ On $E_1,E_2,E_4$, the polynomial $x^4-1$ acts by zero,
 since their defining polynomials divide it. On $E_8$ one
 has $x^4=-1$, so $x^4-1$ acts as multiplication by $-2$.
 This is nonzero on every nonzero copy of $E_8$ over
-$\mathbb Q$. Therefore $A^4-I$ is nonzero exactly when
+$\QQ$. Therefore $A^4-I$ is nonzero exactly when
 at least one such summand occurs.
 
 :::

@@ -33,9 +33,9 @@ for the torsion subgroup of a finitely generated abelian group $A$.
 
 The universal coefficient theorem gives a short exact sequence
 \[
-0\to\operatorname{Ext}^1(H_{i-1}(M),\mathbb Z)
+0\to\operatorname{Ext}^1(H_{i-1}(M),\ZZ)
 \longrightarrow H^i(M)
-\longrightarrow\operatorname{Hom}(H_i(M),\mathbb Z)
+\longrightarrow\operatorname{Hom}(H_i(M),\ZZ)
 \to0.
 \]
 
@@ -50,9 +50,9 @@ This is the universal coefficient theorem for cohomology applied to the singular
 
 ::: {.pf-step #s1-2}
 
-The group $\operatorname{Hom}(H_i(M),\mathbb Z)$ is torsion-free, and
+The group $\operatorname{Hom}(H_i(M),\ZZ)$ is torsion-free, and
 \[
-\operatorname{Ext}^1(H_{i-1}(M),\mathbb Z)
+\operatorname{Ext}^1(H_{i-1}(M),\ZZ)
 \cong T(H_{i-1}(M)).
 \]
 
@@ -61,17 +61,17 @@ The group $\operatorname{Hom}(H_i(M),\mathbb Z)$ is torsion-free, and
 
 The manifold has finite CW type, so its homology groups are finitely generated. Write
 \[
-H_{i-1}(M)\cong\mathbb Z^r\oplus
-\bigoplus_j\mathbb Z/d_j.
+H_{i-1}(M)\cong\ZZ^r\oplus
+\bigoplus_j\ZZ/d_j.
 \]
 Then
 \[
-\operatorname{Ext}^1(\mathbb Z,\mathbb Z)=0,
+\operatorname{Ext}^1(\ZZ,\ZZ)=0,
 \qquad
-\operatorname{Ext}^1(\mathbb Z/d_j,\mathbb Z)
-\cong\mathbb Z/d_j,
+\operatorname{Ext}^1(\ZZ/d_j,\ZZ)
+\cong\ZZ/d_j,
 \]
-so the Ext group is isomorphic to the torsion summand. Also every subgroup of a free abelian group is torsion-free, and $\operatorname{Hom}$ of a finitely generated abelian group into $\mathbb Z$ is free abelian.
+so the Ext group is isomorphic to the torsion summand. Also every subgroup of a free abelian group is torsion-free, and $\operatorname{Hom}$ of a finitely generated abelian group into $\ZZ$ is free abelian.
 
 :::
 
@@ -106,7 +106,7 @@ H^{n-i+1}(M)\cong H_{i-1}(M).
 
 For a closed oriented $n$-manifold, cap product with the fundamental class is an isomorphism
 \[
-H^k(M;\mathbb Z)\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb Z).
+H^k(M;\ZZ)\xrightarrow{\ \cong\ }H_{n-k}(M;\ZZ).
 \]
 Set $k=n-i+1$. Then $n-k=i-1$.
 

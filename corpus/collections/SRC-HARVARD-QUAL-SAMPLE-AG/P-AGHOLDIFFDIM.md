@@ -62,7 +62,7 @@ One has
 ::: pf-proof
 A section of $\mathcal O_X$ is a holomorphic function on the compact connected Riemann surface $X$.  By the maximum principle every such function is constant.  Hence
 \[
-H^0(X,\mathcal O_X)=\mathbb C
+H^0(X,\mathcal O_X)=\CC
 \]
 and $\ell(0)=1$.
 :::
@@ -92,7 +92,7 @@ so
 Thus
 \[
 \boxed{
-\dim_{\mathbb C}H^0(X,\Omega_X^1)=g.
+\dim_{\CC}H^0(X,\Omega_X^1)=g.
 }
 \]
 

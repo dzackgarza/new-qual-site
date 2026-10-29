@@ -111,7 +111,7 @@ need not be a subspace.
 
 Take
 \[
-V=\mathbb R^2,
+V=\RR^2,
 \qquad
 A=\operatorname{span}\{(1,0)\},
 \qquad

@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Show that a harmonic function $u:\mathbb D\to\mathbb R$ is uniformly continuous if and only if it admits the representation
+Problem 8. Show that a harmonic function $u:\mathbb D\to\RR$ is uniformly continuous if and only if it admits the representation
 \[
 u(z)=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}\!\left(\frac{e^{i\theta}+z}{e^{i\theta}-z}\right)f(e^{i\theta})\,d\theta,
 \qquad z\in\mathbb D,
 \]
-with $f:\partial\mathbb D\to\mathbb R$ continuous.
+with $f:\partial\mathbb D\to\RR$ continuous.
 :::
 
 ::: {.solution}
@@ -40,12 +40,12 @@ P(z,\zeta)
 
 ::: {.pf-step #s1}
 
-If $u$ is uniformly continuous on $\mathbb D$, then $u$ has a unique continuous extension $f:\overline{\mathbb D}\to\mathbb R$.
+If $u$ is uniformly continuous on $\mathbb D$, then $u$ has a unique continuous extension $f:\overline{\mathbb D}\to\RR$.
 
 
 ::: pf-proof
 
-Let $\zeta\in\partial\mathbb D$ and choose any sequence $(z_n)$ in $\mathbb D$ with $z_n\to\zeta$. Since $(z_n)$ is Cauchy and $u$ is uniformly continuous, $(u(z_n))$ is Cauchy in $\mathbb R$, hence convergent.
+Let $\zeta\in\partial\mathbb D$ and choose any sequence $(z_n)$ in $\mathbb D$ with $z_n\to\zeta$. Since $(z_n)$ is Cauchy and $u$ is uniformly continuous, $(u(z_n))$ is Cauchy in $\RR$, hence convergent.
 
 If $(w_n)$ is another sequence in $\mathbb D$ with $w_n\to\zeta$, then $|z_n-w_n|\to0$, so uniform continuity gives $|u(z_n)-u(w_n)|\to0$. Thus the limit depends only on $\zeta$; define it to be $f(\zeta)$, and set $f=u$ on $\mathbb D$.
 
@@ -98,7 +98,7 @@ uniformly in $\theta$. Passing to the limit in the integral yields the claimed r
 
 ::: {.pf-step #s3}
 
-Conversely, suppose that $f:\partial\mathbb D\to\mathbb R$ is continuous and that
+Conversely, suppose that $f:\partial\mathbb D\to\RR$ is continuous and that
 \[
 u(z)=\frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})f(e^{i\theta})\,d\theta.
 \]

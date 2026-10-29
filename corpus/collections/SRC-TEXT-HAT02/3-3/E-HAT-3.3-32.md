@@ -30,7 +30,7 @@ Show that a compact manifold does not retract onto its boundary.
 :::
 
 ::: {.solution}
-It is enough to use $R=\mathbb Z_2$, over which every manifold is orientable. Suppose there were a retraction
+It is enough to use $R=\ZZ_2$, over which every manifold is orientable. Suppose there were a retraction
 \[
 r:M\to\partial M
 \]
@@ -44,7 +44,7 @@ r_*i_*=\operatorname{id}.
 \]
 Thus
 \[
-i_*:H_{n-1}(\partial M;\mathbb Z_2)\to H_{n-1}(M;\mathbb Z_2)
+i_*:H_{n-1}(\partial M;\ZZ_2)\to H_{n-1}(M;\ZZ_2)
 \]
 would be injective.
 

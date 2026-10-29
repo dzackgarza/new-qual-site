@@ -21,11 +21,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^p(\mathbb{R})$, $1 < p < \infty$, and let $a \in \mathbb{R}$ be such that $a > 1 - \frac{1}{p}$. Show that the series
+Let $f \in L^p(\RR)$, $1 < p < \infty$, and let $a \in \RR$ be such that $a > 1 - \frac{1}{p}$. Show that the series
 \[
 \sum_{n=1}^{\infty} \int_n^{n+n^{-a}} |f(x+y)|\,dy
 \]
-converges for almost all $x \in \mathbb{R}$.
+converges for almost all $x \in \RR$.
 :::
 
 ::: {.solution}
@@ -367,7 +367,7 @@ Consequently,
 \int_{N+n}^{N+n+2}
 |f(u)|^p\,du
 \le
-2\|f\|_{L^p(\mathbb R)}^p}.
+2\|f\|_{L^p(\RR)}^p}.
 \]
 
 
@@ -378,7 +378,7 @@ By Tonelli,
 \sum_n
 \int_{N+n}^{N+n+2}|f(u)|^p\,du
 =
-\int_{\mathbb R}
+\int_{\RR}
 |f(u)|^p
 \left(
 \sum_n
@@ -438,15 +438,15 @@ If a nonnegative measurable function has finite \(p\)th power integral on a fini
 
 Since
 \[
-\mathbb R
+\RR
 =
-\bigcup_{N\in\mathbb Z}[N,N+1],
+\bigcup_{N\in\ZZ}[N,N+1],
 \]
 one has
 \[
 \boxed{
 G(x)<\infty
-\text{ for almost every }x\in\mathbb R}.
+\text{ for almost every }x\in\RR}.
 \]
 
 

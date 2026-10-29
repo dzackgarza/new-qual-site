@@ -61,7 +61,7 @@ But \(GL_n(\mathbb H)\) deformation retracts onto \(Sp(n)\), and the preceding e
 \]
 By Exercise 10(b) of §3.C, the power map \(S^3\to S^3\), \(\lambda\mapsto\lambda^n\), represents \(n\) times a generator of \(\pi_3(S^3)\). The inclusion \(Sp(1)\hookrightarrow Sp(n)\) induces an isomorphism on \(\pi_3\), so \(\lambda\mapsto\lambda I\) represents
 \[
-n\ne0\in\pi_3(GL_n(\mathbb H))\cong\mathbb Z.
+n\ne0\in\pi_3(GL_n(\mathbb H))\cong\ZZ.
 \]
 This contradicts nullhomotopy. Therefore every quaternionic matrix has an eigenvalue:
 \[

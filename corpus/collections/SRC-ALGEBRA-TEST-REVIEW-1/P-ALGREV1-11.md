@@ -71,7 +71,7 @@ For distinct exponents that are not coprime, the assertion can fail.
 
 ::: pf-proof
 
-Take the integral domain $\mathbb Z$, let
+Take the integral domain $\ZZ$, let
 $$
 m=2,
 \qquad

@@ -59,7 +59,7 @@ nowhere-zero sections of \(TF|_C\) to \(T|_C\).
 Since \(v\) is everywhere parallel to \(C\), there is a continuous
 nowhere-zero function
 \[
-\lambda:C\to\mathbb R-\{0\}
+\lambda:C\to\RR-\{0\}
 \]
 such that
 \[

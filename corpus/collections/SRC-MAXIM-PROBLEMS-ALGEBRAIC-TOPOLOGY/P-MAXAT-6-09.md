@@ -29,7 +29,7 @@ M=\mathbb{CP}^{2n},
 \]
 and let
 \[
-x\in H^2(M;\mathbb Z)
+x\in H^2(M;\ZZ)
 \]
 be the positive generator, normalized by
 \[
@@ -50,7 +50,7 @@ p(TM)=(1+x^2)^{2n+1}.
 
 The complex Euler sequence gives the stable complex-bundle identity
 \[
-T\mathbb{CP}^{2n}\oplus\varepsilon^1_{\mathbb C}
+T\mathbb{CP}^{2n}\oplus\varepsilon^1_{\CC}
 \cong(2n+1)\gamma^*,
 \]
 where $c_1(\gamma^*)=x$. The underlying real bundle of $\gamma^*$ has total Pontryagin class $1+x^2$. Pontryagin classes are stable and multiplicative, giving the formula.

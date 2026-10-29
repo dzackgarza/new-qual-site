@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if $1 < p < \infty$ and $f_n$ converges to $f$ weakly in $\ell^p(\mathbb{N})$, then $\sup_n \|f_n\|_p < \infty$ and $f_n \to f$ pointwise.
+Prove that if $1 < p < \infty$ and $f_n$ converges to $f$ weakly in $\ell^p(\NN)$, then $\sup_n \|f_n\|_p < \infty$ and $f_n \to f$ pointwise.
 
 (The converse is also true, but you are not asked to prove it here.)
 :::
@@ -41,7 +41,7 @@ Weak convergence implies uniform boundedness of the norms.
 
 Let $q=p/(p-1)$, so $(\ell^p)^*=\ell^q$. For each $n$, define
 \[
-T_n:\ell^q\to\mathbb C,
+T_n:\ell^q\to\CC,
 \qquad
 T_n(g)=\sum_{k=1}^\infty f_n(k)g(k).
 \]
@@ -72,7 +72,7 @@ Weak convergence implies coordinatewise convergence.
 
 ::: pf-proof
 
-Fix $k\in\mathbb N$. Let $e_k\in\ell^q$ be the sequence with $1$ in the $k$th coordinate and $0$ elsewhere. The corresponding continuous linear functional on $\ell^p$ is
+Fix $k\in\NN$. Let $e_k\in\ell^q$ be the sequence with $1$ in the $k$th coordinate and $0$ elsewhere. The corresponding continuous linear functional on $\ell^p$ is
 \[
 x\longmapsto \langle x,e_k\rangle=x(k).
 \]
@@ -84,7 +84,7 @@ f_n(k)=\langle f_n,e_k\rangle
 \]
 Since $k$ was arbitrary,
 \[
-\boxed{f_n\to f\text{ pointwise on }\mathbb N.}
+\boxed{f_n\to f\text{ pointwise on }\NN.}
 \]
 
 :::

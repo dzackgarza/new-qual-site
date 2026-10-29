@@ -70,7 +70,7 @@ Here $\chi=2-3=-1$. The opposite cyclic order of the three bands is the standard
 Consequently before capping,
 $$\boxed{\pi_1\cong F_2,}$$
 and after attaching a disc to its boundary circle one obtains $T^2$, so
-$$\boxed{\pi_1\cong\mathbb Z^2.}$$
+$$\boxed{\pi_1\cong\ZZ^2.}$$
 
 ::: pf-proof
 

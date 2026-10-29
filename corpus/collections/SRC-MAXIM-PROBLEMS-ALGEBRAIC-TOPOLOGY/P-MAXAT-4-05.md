@@ -22,7 +22,7 @@ Find the cohomology ring of Lens Spaces.
 ::: {.solution}
 
 The coefficient ring matters.
-The standard clean presentations are over $\mathbb F_2$ for real projective space, over $\mathbb Z$ for complex projective space, and over $\mathbb F_p$ for the standard $(2n-1)$-dimensional lens space with fundamental group $C_p$, where $p$ is an odd prime.
+The standard clean presentations are over $\mathbb F_2$ for real projective space, over $\ZZ$ for complex projective space, and over $\mathbb F_p$ for the standard $(2n-1)$-dimensional lens space with fundamental group $C_p$, where $p$ is an odd prime.
 
 ::: pf
 
@@ -75,16 +75,16 @@ No finite power of $x$ vanishes in the limit.
 For finite complex projective space,
 \[
 \boxed{
-H^*(\mathbb{CP}^{m};\mathbb Z)
-\cong\mathbb Z[u]/(u^{m+1}),
+H^*(\mathbb{CP}^{m};\ZZ)
+\cong\ZZ[u]/(u^{m+1}),
 \qquad |u|=2.}
 \]
 
 
 ::: pf-proof
 
-Let $u=c_1((\gamma^1_{\mathbb C})^*)$ be the positive generator of $H^2$.
-The standard CW decomposition has one cell in each even dimension $0,2,\ldots,2m$ and none in odd dimensions, so the cellular differentials vanish and $H^{2k}\cong\mathbb Z$ for $0\leq k\leq m$.
+Let $u=c_1((\gamma^1_{\CC})^*)$ be the positive generator of $H^2$.
+The standard CW decomposition has one cell in each even dimension $0,2,\ldots,2m$ and none in odd dimensions, so the cellular differentials vanish and $H^{2k}\cong\ZZ$ for $0\leq k\leq m$.
 The class $u^k$ evaluates nontrivially on the fundamental class of the linear subspace $\mathbb{CP}^k$, hence generates $H^{2k}$.
 Dimensional reasons give $u^{m+1}=0$.
 
@@ -96,8 +96,8 @@ Dimensional reasons give $u^{m+1}=0$.
 
 Thus
 \[
-H^*(\mathbb{CP}^{\infty};\mathbb Z)
-\cong\mathbb Z[u],
+H^*(\mathbb{CP}^{\infty};\ZZ)
+\cong\ZZ[u],
 \qquad |u|=2.
 \]
 
@@ -158,11 +158,11 @@ In particular $a^2=0$ because $a$ has odd degree and $p$ is odd.
 
 With integral coefficients, the additive cohomology groups of the same lens space are
 \[
-H^k(L^{2n-1};\mathbb Z)
+H^k(L^{2n-1};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,2n-1,\\
-\mathbb Z/p,&k=2,4,\ldots,2n-2,\\
+\ZZ,&k=0,2n-1,\\
+\ZZ/p,&k=2,4,\ldots,2n-2,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -184,7 +184,7 @@ Therefore the standard ring presentations are
 \boxed{H^*(\mathbb{RP}^{m};\mathbb F_2)=\mathbb F_2[x]/(x^{m+1}),}
 \]
 \[
-\boxed{H^*(\mathbb{CP}^{m};\mathbb Z)=\mathbb Z[u]/(u^{m+1}),}
+\boxed{H^*(\mathbb{CP}^{m};\ZZ)=\ZZ[u]/(u^{m+1}),}
 \]
 and, for odd prime $p$,
 \[

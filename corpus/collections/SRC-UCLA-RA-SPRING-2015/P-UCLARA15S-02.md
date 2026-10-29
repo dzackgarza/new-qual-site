@@ -17,15 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^2_{\mathrm{loc}}(\mathbb R^n)$ and $g\in L^3_{\mathrm{loc}}(\mathbb R^n)$.
+Let $f\in L^2_{\mathrm{loc}}(\RR^n)$ and $g\in L^3_{\mathrm{loc}}(\RR^n)$.
 Assume that for all real $r\ge1$,
 \[
 \int_{r\le|x|\le2r}|f(x)|^2\,dx\le r^a,
 \qquad
 \int_{r\le|x|\le2r}|g(x)|^3\,dx\le r^b.
 \]
-Here $a,b\in\mathbb R$ satisfy $3a+2b+n<0$.
-Show that $fg\in L^1(\mathbb R^n)$.
+Here $a,b\in\RR$ satisfy $3a+2b+n<0$.
+Show that $fg\in L^1(\RR^n)$.
 :::
 
 ::: {.solution}
@@ -167,7 +167,7 @@ The last series is geometric with ratio $2^\gamma<1$, hence converges.
 
 Therefore
 \[
-\boxed{fg\in L^1(\mathbb R^n)}.
+\boxed{fg\in L^1(\RR^n)}.
 \]
 
 
@@ -177,9 +177,9 @@ The sets
 \[
 E_0,E_1,E_2,\dots
 \]
-cover $\mathbb R^n$ up to their boundary overlaps, which have measure zero. Hence, by nonnegativity,
+cover $\RR^n$ up to their boundary overlaps, which have measure zero. Hence, by nonnegativity,
 \[
-\int_{\mathbb R^n}|fg|
+\int_{\RR^n}|fg|
 \le
 \int_{E_0}|fg|
 +

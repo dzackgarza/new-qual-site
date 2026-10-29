@@ -16,7 +16,7 @@ audit:
    V\hookrightarrow U
    \]
    is null-homotopic.
-2. Let $X\subset\mathbb R^2$ be the union of the horizontal segment
+2. Let $X\subset\RR^2$ be the union of the horizontal segment
    \[
    [0,1]\times\{0\}
    \]
@@ -114,11 +114,11 @@ U=X\cap B_\varepsilon(p).
 \]
 Then every point of \(U\) has positive second coordinate, so every point of \(U\) lies on one of the vertical teeth. Therefore the first-coordinate projection
 \[
-\pi_1:U\to\mathbb R
+\pi_1:U\to\RR
 \]
-has image contained in \(\mathbb Q\cap[0,1]\).
+has image contained in \(\QQ\cap[0,1]\).
 
-If \(\gamma:I\to U\) is a path, then \(\pi_1\circ\gamma:I\to\mathbb Q\) has connected image. The only connected subsets of \(\mathbb Q\) are singletons. Hence \(\pi_1\circ\gamma\) is constant, so \(\gamma\) has constant first coordinate.
+If \(\gamma:I\to U\) is a path, then \(\pi_1\circ\gamma:I\to\QQ\) has connected image. The only connected subsets of \(\QQ\) are singletons. Hence \(\pi_1\circ\gamma\) is constant, so \(\gamma\) has constant first coordinate.
 
 :::
 

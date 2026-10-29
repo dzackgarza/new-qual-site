@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let D with $\varphi : D - \{ 0 \} \to \mathbb { N }$ be a Euclidean domain.
+Let D with $\varphi : D - \{ 0 \} \to \NN$ be a Euclidean domain.
 Suppose $\varphi ( a + b ) \leqslant$ max $\{ \varphi ( a ) , \varphi ( b ) \}$ for all $a , b \in D$ . Prove that D is either a field or isomorphic to a polynomial ring over a field.
 :::
 

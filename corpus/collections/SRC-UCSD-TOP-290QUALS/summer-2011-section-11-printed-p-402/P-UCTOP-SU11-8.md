@@ -79,7 +79,7 @@ the 3-ball has dimension 3.
 ::: pf-step
 The cellular chain groups are:
 \[
-C_3(X) = \mathbb{Z}e^3,\quad C_2(X) = \mathbb{Z}e^2,\quad C_1(X) = \mathbb{Z}e^1,\quad C_0(X) = \mathbb{Z}e^0,\quad C_k(X) = 0 \text{ for } k \ge 4.
+C_3(X) = \ZZ e^3,\quad C_2(X) = \ZZ e^2,\quad C_1(X) = \ZZ e^1,\quad C_0(X) = \ZZ e^0,\quad C_k(X) = 0 \text{ for } k \ge 4.
 \]
 
 ::: pf-proof
@@ -134,19 +134,19 @@ Compute the homology groups $H_k(X) = \ker(d_k)/\operatorname{im}(d_{k+1})$:
 ::: pf-proof
 
 ::: pf-step
-$H_0(X) = \ker(d_0)/\operatorname{im}(d_1) = \mathbb{Z}e^0 / 0 \cong \mathbb{Z}$.
+$H_0(X) = \ker(d_0)/\operatorname{im}(d_1) = \ZZ e^0 / 0 \cong \ZZ$.
 
 ::: pf-proof
-$\ker(d_0) = \mathbb{Z}$ and $d_1 = 0$.
+$\ker(d_0) = \ZZ$ and $d_1 = 0$.
 :::
 
 :::
 
 ::: pf-step
-$H_1(X) = \ker(d_1)/\operatorname{im}(d_2) = \mathbb{Z}e^1 / (3\mathbb{Z}e^1) \cong \mathbb{Z}/3\mathbb{Z}$.
+$H_1(X) = \ker(d_1)/\operatorname{im}(d_2) = \ZZ e^1 / (3\ZZ e^1) \cong \ZZ/3\ZZ$.
 
 ::: pf-proof
-$\ker(d_1) = \mathbb{Z}$ and $\operatorname{im}(d_2) = 3\mathbb{Z}$.
+$\ker(d_1) = \ZZ$ and $\operatorname{im}(d_2) = 3\ZZ$.
 :::
 
 :::
@@ -155,16 +155,16 @@ $\ker(d_1) = \mathbb{Z}$ and $\operatorname{im}(d_2) = 3\mathbb{Z}$.
 $H_2(X) = \ker(d_2)/\operatorname{im}(d_3) = 0 / 0 \cong 0$.
 
 ::: pf-proof
-$\ker(d_2) = \{n \in \mathbb{Z} : 3n = 0\} = 0$.
+$\ker(d_2) = \{n \in \ZZ : 3n = 0\} = 0$.
 :::
 
 :::
 
 ::: pf-step
-$H_3(X) = \ker(d_3)/\operatorname{im}(d_4) = \mathbb{Z}e^3 / 0 \cong \mathbb{Z}$.
+$H_3(X) = \ker(d_3)/\operatorname{im}(d_4) = \ZZ e^3 / 0 \cong \ZZ$.
 
 ::: pf-proof
-$\ker(d_3) = \mathbb{Z}$ and $C_4(X) = 0$.
+$\ker(d_3) = \ZZ$ and $C_4(X) = 0$.
 :::
 
 :::
@@ -185,11 +185,11 @@ $C_k(X) = 0$ for $k \ge 4$.
 ::: pf-step
 Conclusion:
 \[
-H_k(X; \mathbb{Z}) \cong \begin{cases}
-\mathbb{Z} & k = 0, \\
-\mathbb{Z}/3\mathbb{Z} & k = 1, \\
+H_k(X; \ZZ) \cong \begin{cases}
+\ZZ & k = 0, \\
+\ZZ/3\ZZ & k = 1, \\
 0 & k = 2, \\
-\mathbb{Z} & k = 3, \\
+\ZZ & k = 3, \\
 0 & k \ge 4.
 \end{cases}
 \]

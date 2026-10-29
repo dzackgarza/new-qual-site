@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-For $i \geq 0$, calculate $\operatorname{Ext}^i_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, \mathbb{Z})$ and $\operatorname{Ext}^i_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, \mathbb{Q})$.
+For $i \geq 0$, calculate $\operatorname{Ext}^i_\ZZ(\ZZ/2\ZZ, \ZZ)$ and $\operatorname{Ext}^i_\ZZ(\ZZ/2\ZZ, \QQ)$.
 :::
 
 ::: {.solution}
@@ -34,12 +34,12 @@ For $i \geq 0$, calculate $\operatorname{Ext}^i_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z
 
 Use the free resolution
 \[
-0\longrightarrow\mathbb Z\xrightarrow{\cdot2}\mathbb Z\longrightarrow\mathbb Z/2\mathbb Z\longrightarrow0.
+0\longrightarrow\ZZ\xrightarrow{\cdot2}\ZZ\longrightarrow\ZZ/2\ZZ\longrightarrow0.
 \]
 
 ::: pf-proof
 
-Multiplication by \(2\) is injective on \(\mathbb Z\), and its cokernel is \(\mathbb Z/2\mathbb Z\). Thus this is a projective resolution of length \(1\).
+Multiplication by \(2\) is injective on \(\ZZ\), and its cokernel is \(\ZZ/2\ZZ\). Thus this is a projective resolution of length \(1\).
 
 :::
 
@@ -47,22 +47,22 @@ Multiplication by \(2\) is injective on \(\mathbb Z\), and its cokernel is \(\ma
 
 ::: {.pf-step #s2}
 
-For any abelian group \(M\), applying \(\operatorname{Hom}_{\mathbb Z}(-,M)\) gives the cochain complex
+For any abelian group \(M\), applying \(\operatorname{Hom}_{\ZZ}(-,M)\) gives the cochain complex
 \[
 0\longrightarrow M\xrightarrow{\cdot2}M\longrightarrow0.
 \]
 Hence
 \[
-\operatorname{Ext}^0_{\mathbb Z}(\mathbb Z/2,M)=\ker(2:M\to M),
+\operatorname{Ext}^0_{\ZZ}(\ZZ/2,M)=\ker(2:M\to M),
 \]
 \[
-\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/2,M)=M/2M,
+\operatorname{Ext}^1_{\ZZ}(\ZZ/2,M)=M/2M,
 \]
 and \(\operatorname{Ext}^i=0\) for \(i\ge2\).
 
 ::: pf-proof
 
-One has \(\operatorname{Hom}_{\mathbb Z}(\mathbb Z,M)\cong M\), and precomposition with multiplication by \(2\) becomes multiplication by \(2\) on \(M\). The cohomology in degrees \(0\) and \(1\) is therefore the displayed kernel and cokernel, and there are no higher terms.
+One has \(\operatorname{Hom}_{\ZZ}(\ZZ,M)\cong M\), and precomposition with multiplication by \(2\) becomes multiplication by \(2\) on \(M\). The cohomology in degrees \(0\) and \(1\) is therefore the displayed kernel and cokernel, and there are no higher terms.
 
 :::
 
@@ -70,20 +70,20 @@ One has \(\operatorname{Hom}_{\mathbb Z}(\mathbb Z,M)\cong M\), and precompositi
 
 ::: pf-step
 
-Taking \(M=\mathbb Z\),
+Taking \(M=\ZZ\),
 \[
-\operatorname{Ext}^i_{\mathbb Z}(\mathbb Z/2,\mathbb Z)
+\operatorname{Ext}^i_{\ZZ}(\ZZ/2,\ZZ)
 \cong
 \begin{cases}
 0,&i=0,\\
-\mathbb Z/2\mathbb Z,&i=1,\\
+\ZZ/2\ZZ,&i=1,\\
 0,&i\ge2.
 \end{cases}
 \]
 
 ::: pf-proof
 
-Multiplication by \(2\) on \(\mathbb Z\) is injective, so the degree-zero kernel is zero, and its cokernel is \(\mathbb Z/2\mathbb Z\). Apply step [](#s2){.pf-ref}.
+Multiplication by \(2\) on \(\ZZ\) is injective, so the degree-zero kernel is zero, and its cokernel is \(\ZZ/2\ZZ\). Apply step [](#s2){.pf-ref}.
 
 :::
 
@@ -91,15 +91,15 @@ Multiplication by \(2\) on \(\mathbb Z\) is injective, so the degree-zero kernel
 
 ::: pf-step
 
-Taking \(M=\mathbb Q\),
+Taking \(M=\QQ\),
 \[
-\operatorname{Ext}^i_{\mathbb Z}(\mathbb Z/2,\mathbb Q)=0
+\operatorname{Ext}^i_{\ZZ}(\ZZ/2,\QQ)=0
 \qquad\text{for every }i\ge0.
 \]
 
 ::: pf-proof
 
-Multiplication by \(2\) is an automorphism of \(\mathbb Q\), so both its kernel and cokernel are zero. Higher Ext groups vanish by step [](#s2){.pf-ref}.
+Multiplication by \(2\) is an automorphism of \(\QQ\), so both its kernel and cokernel are zero. Higher Ext groups vanish by step [](#s2){.pf-ref}.
 
 :::
 

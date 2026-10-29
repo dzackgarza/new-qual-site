@@ -20,7 +20,7 @@ audit:
 ---
 ::: {.problem}
 (a) Let $\alpha$ be the positive real fourth root of $2$ and let $i=\sqrt{-1}$.
-Find all intermediate fields in the extension $\mathbb Q(\alpha,i)/\mathbb Q$.
+Find all intermediate fields in the extension $\QQ(\alpha,i)/\QQ$.
 
 (b) Let $K$ be a finite field with $p^n$ elements.
 Show that every element of $K$ has a unique $p$th root in $K$.
@@ -32,23 +32,23 @@ Show that every element of $K$ has a unique $p$th root in $K$.
 
 ::: {.pf-step #s1}
 
-Determine all intermediate fields of \(L=\mathbb Q(\alpha,i)\) over \(\mathbb Q\).
+Determine all intermediate fields of \(L=\QQ(\alpha,i)\) over \(\QQ\).
 
 ::: pf-proof
 
-The polynomial \(x^4-2\) is irreducible over \(\mathbb Q\) by Eisenstein at \(2\), so
+The polynomial \(x^4-2\) is irreducible over \(\QQ\) by Eisenstein at \(2\), so
 \[
-[\mathbb Q(\alpha):\mathbb Q]=4.
+[\QQ(\alpha):\QQ]=4.
 \]
-Since \(\mathbb Q(\alpha)\subset\mathbb R\), it does not contain \(i\). Hence
+Since \(\QQ(\alpha)\subset\RR\), it does not contain \(i\). Hence
 \[
-[L:\mathbb Q]=8.
+[L:\QQ]=8.
 \]
 The field \(L\) is the splitting field of \(x^4-2\), whose roots are
 \[
 \alpha,\ i\alpha,\ -\alpha,\ -i\alpha.
 \]
-Thus \(L/\mathbb Q\) is Galois of degree \(8\).
+Thus \(L/\QQ\) is Galois of degree \(8\).
 
 Define automorphisms
 \[
@@ -70,7 +70,7 @@ Then
 \]
 so
 \[
-\operatorname{Gal}(L/\mathbb Q)\cong D_4.
+\operatorname{Gal}(L/\QQ)\cong D_4.
 \]
 
 The subgroups of \(D_4\) are exactly
@@ -92,31 +92,31 @@ By Galois correspondence, these give all intermediate fields.
 
 The three index-two subgroups give the three quadratic fields:
 \[
-L^{\langle\sigma\rangle}=\mathbb Q(i),
+L^{\langle\sigma\rangle}=\QQ(i),
 \]
 \[
-L^{\langle\sigma^2,\tau\rangle}=\mathbb Q(\alpha^2)=\mathbb Q(\sqrt2),
+L^{\langle\sigma^2,\tau\rangle}=\QQ(\alpha^2)=\QQ(\sqrt2),
 \]
 \[
 L^{\langle\sigma^2,\sigma\tau\rangle}
-=\mathbb Q(i\alpha^2)=\mathbb Q(\sqrt{-2}).
+=\QQ(i\alpha^2)=\QQ(\sqrt{-2}).
 \]
 
 The five order-two subgroups give the five quartic fields:
 \[
-L^{\langle\sigma^2\rangle}=\mathbb Q(\alpha^2,i)=\mathbb Q(\sqrt2,i),
+L^{\langle\sigma^2\rangle}=\QQ(\alpha^2,i)=\QQ(\sqrt2,i),
 \]
 \[
-L^{\langle\tau\rangle}=\mathbb Q(\alpha),
+L^{\langle\tau\rangle}=\QQ(\alpha),
 \]
 \[
-L^{\langle\sigma^2\tau\rangle}=\mathbb Q(i\alpha),
+L^{\langle\sigma^2\tau\rangle}=\QQ(i\alpha),
 \]
 \[
-L^{\langle\sigma\tau\rangle}=\mathbb Q((1+i)\alpha),
+L^{\langle\sigma\tau\rangle}=\QQ((1+i)\alpha),
 \]
 \[
-L^{\langle\sigma^3\tau\rangle}=\mathbb Q((1-i)\alpha).
+L^{\langle\sigma^3\tau\rangle}=\QQ((1-i)\alpha).
 \]
 For example,
 \[
@@ -130,13 +130,13 @@ Together with the fixed fields of the whole group and the trivial subgroup, the 
 \[
 \boxed{
 \begin{gathered}
-\mathbb Q,\\
-\mathbb Q(i),\quad \mathbb Q(\sqrt2),\quad \mathbb Q(\sqrt{-2}),\\
-\mathbb Q(\alpha),\quad \mathbb Q(i\alpha),\quad
-\mathbb Q(\sqrt2,i),\quad
-\mathbb Q((1+i)\alpha),\quad
-\mathbb Q((1-i)\alpha),\\
-\mathbb Q(\alpha,i).
+\QQ,\\
+\QQ(i),\quad \QQ(\sqrt2),\quad \QQ(\sqrt{-2}),\\
+\QQ(\alpha),\quad \QQ(i\alpha),\quad
+\QQ(\sqrt2,i),\quad
+\QQ((1+i)\alpha),\quad
+\QQ((1-i)\alpha),\\
+\QQ(\alpha,i).
 \end{gathered}}
 \]
 

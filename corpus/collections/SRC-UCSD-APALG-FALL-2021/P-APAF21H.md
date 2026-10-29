@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF21H
 kind: problem
-title: Character table of $D_4$ and the Artin--Wedderburn decomposition of $\mathbb{C}[D_4]$
+title: Character table of $D_4$ and the Artin--Wedderburn decomposition of $\CC[D_4]$
 classification:
   areas:
   - applied-algebra
@@ -24,12 +24,12 @@ audit:
 Find the character table of the dihedral group $D_4$ of symmetries of a square.
 The group algebra of $D_4$ is isomorphic to a direct sum
 \[
-\mathbb{C}[D_4]\cong\operatorname{Mat}_{n_1}(\mathbb{C})\oplus\cdots\oplus\operatorname{Mat}_{n_r}(\mathbb{C})
+\CC[D_4]\cong\operatorname{Mat}_{n_1}(\CC)\oplus\cdots\oplus\operatorname{Mat}_{n_r}(\CC)
 \]
-of matrix algebras over $\mathbb{C}$.
+of matrix algebras over $\CC$.
 Determine $r$ and the numbers $n_1,\ldots,n_r>0$.
-(Hint: Try showing that $\mathbb{C}[D_4]\cong\operatorname{End}_{D_4}\mathbb{C}[D_4]$ as algebras.
-How does the endomorphism ring of $\mathbb{C}[D_4]$ decompose?)
+(Hint: Try showing that $\CC[D_4]\cong\operatorname{End}_{D_4}\CC[D_4]$ as algebras.
+How does the endomorphism ring of $\CC[D_4]$ decompose?)
 :::
 
 ::: {.solution}
@@ -82,7 +82,7 @@ In a one-dimensional representation the relation $srs=r^{-1}$ becomes $r=r^{-1}$
 :::
 
 ::: pf-step
-The geometric representation of $D_4$ on $\mathbb R^2\subset\mathbb C^2$ has character
+The geometric representation of $D_4$ on $\RR^2\subset\CC^2$ has character
 \[
 \chi_2=(2,-2,0,0,0).
 \]
@@ -131,7 +131,7 @@ Therefore they exhaust all irreducible complex representations of $D_4$.
 ::: {.pf-step #regular-representation-decomposition}
 As a left $D_4$-module, the regular representation decomposes as
 \[
-\mathbb C[D_4]
+\CC[D_4]
 \cong
 \chi_{++}\oplus\chi_{+-}\oplus\chi_{-+}\oplus\chi_{--}\oplus 2V_2,
 \]
@@ -146,9 +146,9 @@ In the complex regular representation, every irreducible representation $V$ occu
 ::: {.pf-step #endomorphism-ring-decomposition}
 Consequently
 \[
-\operatorname{End}_{D_4}(\mathbb C[D_4])
+\operatorname{End}_{D_4}(\CC[D_4])
 \cong
-\mathbb C\oplus\mathbb C\oplus\mathbb C\oplus\mathbb C\oplus M_2(\mathbb C).
+\CC\oplus\CC\oplus\CC\oplus\CC\oplus M_2(\CC).
 \]
 
 ::: pf-proof
@@ -158,7 +158,7 @@ W\cong\bigoplus_i m_iV_i
 \]
 with pairwise nonisomorphic irreducibles, Schur's lemma gives
 \[
-\operatorname{End}_G(W)\cong\bigoplus_i M_{m_i}(\mathbb C).
+\operatorname{End}_G(W)\cong\bigoplus_i M_{m_i}(\CC).
 \]
 Apply this to the multiplicities $1,1,1,1,2$ from step [](#regular-representation-decomposition){.pf-ref}.
 :::
@@ -168,8 +168,8 @@ Apply this to the multiplicities $1,1,1,1,2$ from step [](#regular-representatio
 ::: pf-step
 Therefore
 \[
-\boxed{\mathbb C[D_4]\cong
-\mathbb C^{\oplus4}\oplus M_2(\mathbb C)}.
+\boxed{\CC[D_4]\cong
+\CC^{\oplus4}\oplus M_2(\CC)}.
 \]
 Thus
 \[
@@ -180,10 +180,10 @@ up to ordering.
 ::: pf-proof
 Right multiplication identifies
 \[
-\operatorname{End}_{D_4}(\mathbb C[D_4])
-\cong\mathbb C[D_4]^{\mathrm{op}}.
+\operatorname{End}_{D_4}(\CC[D_4])
+\cong\CC[D_4]^{\mathrm{op}}.
 \]
-The inversion map $g\mapsto g^{-1}$ identifies the group algebra with its opposite algebra. Hence the decomposition in step [](#endomorphism-ring-decomposition){.pf-ref} is also the Artin--Wedderburn decomposition of $\mathbb C[D_4]$ itself.
+The inversion map $g\mapsto g^{-1}$ identifies the group algebra with its opposite algebra. Hence the decomposition in step [](#endomorphism-ring-decomposition){.pf-ref} is also the Artin--Wedderburn decomposition of $\CC[D_4]$ itself.
 :::
 
 :::

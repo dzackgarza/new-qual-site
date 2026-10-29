@@ -26,10 +26,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n : \mathbb{R} \to \mathbb{R}$ be a sequence of absolutely continuous functions such that $f_n' \in L^1(\mathbb{R}, m)$ and $c := \lim_{n \to \infty} f_n(0)$ exists in $\mathbb{R}$.
-Further assume there exists $g \in L^1(\mathbb{R}, m)$ such that $\lim_{n \to \infty} \int_\mathbb{R} |g(x) - f_n'(x)| \, dx = 0$.
+Let $f_n : \RR \to \RR$ be a sequence of absolutely continuous functions such that $f_n' \in L^1(\RR, m)$ and $c := \lim_{n \to \infty} f_n(0)$ exists in $\RR$.
+Further assume there exists $g \in L^1(\RR, m)$ such that $\lim_{n \to \infty} \int_\RR |g(x) - f_n'(x)| \, dx = 0$.
 
-(a) Show that $f(x) := \lim_{n \to \infty} f_n(x)$ exists for all $x \in \mathbb{R}$.
+(a) Show that $f(x) := \lim_{n \to \infty} f_n(x)$ exists for all $x \in \RR$.
 
 (b) Show that $f$ is absolutely continuous and $f'(x) = g(x)$ for $m$-a.e. $x$.
 :::
@@ -44,7 +44,7 @@ Write each $f_n$ as a primitive of its derivative.
 
 ::: pf-proof
 
-Since $f_n$ is absolutely continuous, for every $x\in\mathbb R$,
+Since $f_n$ is absolutely continuous, for every $x\in\RR$,
 \[
 f_n(x)=f_n(0)+\int_0^x f_n'(t)\,dt.
 \]
@@ -61,11 +61,11 @@ Then
 For every $x$,
 \[
 \left|\int_0^x(f_n'-g)\right|
-\le \int_{\mathbb R}|f_n'(t)-g(t)|\,dt.
+\le \int_{\RR}|f_n'(t)-g(t)|\,dt.
 \]
 Hence
 \[
-\sup_{x\in\mathbb R}|f_n(x)-F(x)|
+\sup_{x\in\RR}|f_n(x)-F(x)|
 \le |f_n(0)-c|+\|f_n'-g\|_1\longrightarrow0.
 \]
 Therefore $f_n(x)\to F(x)$ for every $x$, so the pointwise limit exists and
@@ -83,7 +83,7 @@ Prove absolute continuity of the limit.
 
 ::: pf-proof
 
-Let $\varepsilon>0$. Since $g\in L^1(\mathbb R)$, the Lebesgue integral is absolutely continuous: there exists $\delta>0$ such that
+Let $\varepsilon>0$. Since $g\in L^1(\RR)$, the Lebesgue integral is absolutely continuous: there exists $\delta>0$ such that
 \[
 m(E)<\delta\quad\Longrightarrow\quad\int_E|g|<\varepsilon.
 \]
@@ -120,7 +120,7 @@ gives
 \[
 \boxed{f'(x)=g(x)}
 \]
-for almost every $x\in\mathbb R$.
+for almost every $x\in\RR$.
 
 :::
 

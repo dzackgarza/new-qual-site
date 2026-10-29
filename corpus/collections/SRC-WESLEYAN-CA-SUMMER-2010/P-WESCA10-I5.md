@@ -30,9 +30,9 @@ Morera's theorem states the following.
 
 ::: pf-proof
 
-Let $D\subseteq\mathbb C$ be a domain and let
+Let $D\subseteq\CC$ be a domain and let
 $$
-f:D\to\mathbb C
+f:D\to\CC
 $$
 be continuous. Suppose that for every triangle $T$ whose closure is contained in $D$,
 $$

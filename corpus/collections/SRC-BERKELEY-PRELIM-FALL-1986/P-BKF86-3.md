@@ -19,7 +19,7 @@ Evaluate
 \]
 where
 \[
-\mathcal R=\{(x,y)\in\mathbb R^2 : (x+1)^2+y^2\le 9,\ (x-1)^2+y^2\ge 1\}.
+\mathcal R=\{(x,y)\in\RR^2 : (x+1)^2+y^2\le 9,\ (x-1)^2+y^2\ge 1\}.
 \]
 :::
 

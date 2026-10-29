@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $y:[0,\infty)\to\mathbb R$ solve
+Let $y:[0,\infty)\to\RR$ solve
 \[
 y''=-|y|,
 \qquad

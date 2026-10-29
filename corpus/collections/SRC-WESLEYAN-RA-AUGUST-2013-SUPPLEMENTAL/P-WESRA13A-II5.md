@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the following questions for functions $F:[0,1]\to\mathbb R$.
+Consider the following questions for functions $F:[0,1]\to\RR$.
 
 (a) Suppose $F$ is strictly increasing.
 Must $F'(x)>0$ almost everywhere?

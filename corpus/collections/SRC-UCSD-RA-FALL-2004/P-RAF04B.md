@@ -25,10 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $g \in L^1(\mathbb{R}, m)$ be chosen so that $\int_\mathbb{R} g(x) \, dx = 3$.
+Let $g \in L^1(\RR, m)$ be chosen so that $\int_\RR g(x) \, dx = 3$.
 Find, with justification, the following limit:
 $$
-\lim_{n \to \infty} \int_\mathbb{R} g(x) \sin^2(nx) \, dx.
+\lim_{n \to \infty} \int_\RR g(x) \sin^2(nx) \, dx.
 $$
 :::
 
@@ -48,9 +48,9 @@ The identity
 \]
 gives
 \[
-\int_{\mathbb R}g(x)\sin^2(nx)\,dx
-=\frac12\int_{\mathbb R}g(x)\,dx
--\frac12\int_{\mathbb R}g(x)\cos(2nx)\,dx.
+\int_{\RR}g(x)\sin^2(nx)\,dx
+=\frac12\int_{\RR}g(x)\,dx
+-\frac12\int_{\RR}g(x)\cos(2nx)\,dx.
 \]
 The first integral is $3$, so it remains to control the oscillatory term.
 
@@ -64,18 +64,18 @@ Apply the Riemann--Lebesgue lemma.
 
 ::: pf-proof
 
-Because $g\in L^1(\mathbb R)$, the Riemann--Lebesgue lemma implies
+Because $g\in L^1(\RR)$, the Riemann--Lebesgue lemma implies
 \[
-\int_{\mathbb R}g(x)e^{2inx}\,dx\longrightarrow0.
+\int_{\RR}g(x)e^{2inx}\,dx\longrightarrow0.
 \]
 Taking real parts yields
 \[
-\int_{\mathbb R}g(x)\cos(2nx)\,dx\longrightarrow0.
+\int_{\RR}g(x)\cos(2nx)\,dx\longrightarrow0.
 \]
 Therefore
 \[
 \boxed{
-\lim_{n\to\infty}\int_{\mathbb R}g(x)\sin^2(nx)\,dx=\frac32.}
+\lim_{n\to\infty}\int_{\RR}g(x)\sin^2(nx)\,dx=\frac32.}
 \]
 
 :::

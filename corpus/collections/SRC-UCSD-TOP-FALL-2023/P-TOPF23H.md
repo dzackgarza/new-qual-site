@@ -17,10 +17,10 @@ review: draft
 
 ::: {.problem}
 Let $G$ be a finite group of order $d$ acting freely on a space $X$, so that we have a covering map $\pi : X \to Y = X/G$.
-By lifting singular simplexes, construct a chain map $\tau_* : C_*(Y; \mathbb{Z}) \to C_*(X; \mathbb{Z})$ such that the composite $C_*(Y; \mathbb{Z}) \xrightarrow{\tau_*} C_*(X; \mathbb{Z}) \xrightarrow{\pi_*} C_*(Y; \mathbb{Z})$ is multiplication by $d$.
+By lifting singular simplexes, construct a chain map $\tau_* : C_*(Y; \ZZ) \to C_*(X; \ZZ)$ such that the composite $C_*(Y; \ZZ) \xrightarrow{\tau_*} C_*(X; \ZZ) \xrightarrow{\pi_*} C_*(Y; \ZZ)$ is multiplication by $d$.
 Use this to show that we can identify the rational homology of $Y$ with the $G$-invariant subspace of the rational homology of $X$:
 $$
-H_*(Y; \mathbb{Q}) \cong H_*(X; \mathbb{Q})^G.
+H_*(Y; \QQ) \cong H_*(X; \QQ)^G.
 $$
 :::
 
@@ -44,7 +44,7 @@ The simplex has exactly $d=|G|$ lifts, and they are precisely the translates of 
 ::: pf-step
 
 The maps $\tau_n$ form a chain map
-$$\tau_*:C_*(Y;\mathbb Z)\to C_*(X;\mathbb Z).$$
+$$\tau_*:C_*(Y;\ZZ)\to C_*(X;\ZZ).$$
 
 ::: pf-proof
 
@@ -72,7 +72,7 @@ $$\pi_*\tau_n(\sigma)=\sum_{g\in G}\sigma=d\sigma.$$
 
 The other composite satisfies
 $$\tau_*\pi_* = \sum_{g\in G}g_*$$
-on $C_*(X;\mathbb Z)$ and hence on homology.
+on $C_*(X;\ZZ)$ and hence on homology.
 
 ::: pf-proof
 
@@ -84,8 +84,8 @@ For a simplex in $X$, the lifts of its projection to $Y$ are exactly its $G$-tra
 
 ::: {.pf-step #s5}
 
-Over $\mathbb Q$, the map
-$$\pi_*:H_*(X;\mathbb Q)^G\longrightarrow H_*(Y;\mathbb Q)$$
+Over $\QQ$, the map
+$$\pi_*:H_*(X;\QQ)^G\longrightarrow H_*(Y;\QQ)$$
 is an isomorphism with inverse $d^{-1}\tau_*$. 
 
 ::: pf-proof
@@ -101,7 +101,7 @@ Also the image of $\tau_*$ is $G$-invariant because translation permutes the sum
 ::: pf-step
 
 Therefore
-$$\boxed{H_*(Y;\mathbb Q)\cong H_*(X;\mathbb Q)^G.}$$
+$$\boxed{H_*(Y;\QQ)\cong H_*(X;\QQ)^G.}$$
 
 ::: pf-proof
 

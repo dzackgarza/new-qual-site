@@ -66,7 +66,7 @@ The identifications in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are products 
 ::: pf-step
 
 The dunce cap is contractible, so
-$$\boxed{\pi_1(X)\cong\pi_1(S^1)\cong\mathbb Z.}$$
+$$\boxed{\pi_1(X)\cong\pi_1(S^1)\cong\ZZ.}$$
 
 ::: pf-proof
 

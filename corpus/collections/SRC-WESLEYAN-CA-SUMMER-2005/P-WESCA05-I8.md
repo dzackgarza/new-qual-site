@@ -39,7 +39,7 @@ is analytic on and inside the circle \(|z|=2\), and \(1\) lies inside that circl
 
 ::: pf-proof
 
-The exponential function is entire, so \(F\) is analytic on all of \(\mathbb C\). Moreover
+The exponential function is entire, so \(F\) is analytic on all of \(\CC\). Moreover
 \[
 |1|=1<2.
 \]

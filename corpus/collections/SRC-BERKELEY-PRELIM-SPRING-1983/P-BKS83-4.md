@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-In the triangular network in $\mathbb R^2$ referred to by the source, the points $P_0,P_1,P_2,P_3$ are respectively
+In the triangular network in $\RR^2$ referred to by the source, the points $P_0,P_1,P_2,P_3$ are respectively
 \[
 (0,0),\qquad(1,0),\qquad(0,1),\qquad(1,1).
 \]
-Describe the structure of the group of all Euclidean transformations of $\mathbb R^2$ that leave this network invariant.
+Describe the structure of the group of all Euclidean transformations of $\RR^2$ that leave this network invariant.
 :::
 
 ::: {.solution}
@@ -84,7 +84,7 @@ groups are not isomorphic because they have different orders.
 ::: pf-qed
 The requested group is
 $$
-\{g\in\operatorname{Isom}(\mathbb R^2):g(N)=N\}
+\{g\in\operatorname{Isom}(\RR^2):g(N)=N\}
 $$
 for the network $N$. Step [](#network-underdetermined){.pf-ref} shows that it depends on $N$ beyond the
 points $P_0,P_1,P_2,P_3$: the networks $N_1$ and $N_2$ give symmetry

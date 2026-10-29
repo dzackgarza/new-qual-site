@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ is differentiable, $f'(x)>f(x)$ for every $x\in\mathbb R$, and $f(0)=0$.
+Suppose $f:\RR\to\RR$ is differentiable, $f'(x)>f(x)$ for every $x\in\RR$, and $f(0)=0$.
 Prove that
 \[
 f(x)>0

@@ -26,8 +26,8 @@ audit:
 ::: {.problem}
 (a) State the definition of a principal ideal domain.
 
-(b) Let $\mathbb{Z}$ be the ring of integers.
-Is $\mathbb{Z}[x]$ a principal ideal domain?
+(b) Let $\ZZ$ be the ring of integers.
+Is $\ZZ[x]$ a principal ideal domain?
 Either prove that it is, or present an example showing that it is not.
 :::
 
@@ -45,14 +45,14 @@ $(a)=\{ra:r\in R\}$ for some $a\in R$ [@DF04].
 
 ::: {.pf-step #s2}
 
-The ideal $I=(2,x)$ of $\mathbb Z[x]$ is proper.
+The ideal $I=(2,x)$ of $\ZZ[x]$ is proper.
 
 ::: pf-proof
 
 Every element of $I$ has the form $2g(x)+xh(x)$ with
-$g,h\in\mathbb Z[x]$. Its constant coefficient is $2g(0)$,
+$g,h\in\ZZ[x]$. Its constant coefficient is $2g(0)$,
 which is even. The polynomial $1$ has odd constant coefficient,
-so $1\notin I$ and $I\ne\mathbb Z[x]$.
+so $1\notin I$ and $I\ne\ZZ[x]$.
 
 :::
 
@@ -60,12 +60,12 @@ so $1\notin I$ and $I\ne\mathbb Z[x]$.
 
 ::: {.pf-step #s3}
 
-The ideal $I$ is not principal, so $\mathbb Z[x]$ is not a
+The ideal $I$ is not principal, so $\ZZ[x]$ is not a
 principal ideal domain.
 
 ::: pf-proof
 
-Suppose $I=(f)$. Since $2\in I$, there is $g\in\mathbb Z[x]$
+Suppose $I=(f)$. Since $2\in I$, there is $g\in\ZZ[x]$
 such that $fg=2$. Neither factor is zero. Leading coefficients
 of nonzero integer polynomials have nonzero product, so degrees
 add; hence $\deg f+\deg g=0$. Both factors are constant
@@ -77,7 +77,7 @@ give $I=(2)$, but every coefficient of a polynomial in $(2)$
 is even, whereas the coefficient of $x$ in $x\in I$ is $1$.
 Thus no generator exists.
 
-The same leading-coefficient argument shows that $\mathbb Z[x]$
+The same leading-coefficient argument shows that $\ZZ[x]$
 is an integral domain. Its failure here is precisely the existence
 of the nonprincipal ideal $I$, not the domain condition.
 

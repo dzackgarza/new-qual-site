@@ -37,7 +37,7 @@ where $F$ is a field. Show that, with the usual matrix operations, $R$ is a comm
 
 For which of
 \[
-F=\mathbb Q,\qquad \mathbb C,\qquad \mathbb Z_5,\qquad \mathbb Z_7
+F=\QQ,\qquad \CC,\qquad \ZZ_5,\qquad \ZZ_7
 \]
 is $R$ a field?
 :::

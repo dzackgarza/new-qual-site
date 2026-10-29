@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the ring structure on $H ^ { * } ( S U ( n ) ) , H ^ { * } ( U ( n ) ) , H ^ { * } ( V _ { k } ( \mathbb { C } ^ { n } ) )$
+Find the ring structure on $H ^ { * } ( S U ( n ) ) , H ^ { * } ( U ( n ) ) , H ^ { * } ( V _ { k } ( \CC ^ { n } ) )$
 :::
 
 ::: {.solution}
@@ -65,7 +65,7 @@ SU(n-1)\longrightarrow SU(n)\longrightarrow S^{2n-1}.
 
 ::: pf-proof
 
-Let $SU(n)$ act transitively on the unit sphere $S^{2n-1}\subset\mathbb C^n$ by its standard representation. The stabilizer of the last basis vector consists of block matrices
+Let $SU(n)$ act transitively on the unit sphere $S^{2n-1}\subset\CC^n$ by its standard representation. The stabilizer of the last basis vector consists of block matrices
 \[
 \begin{pmatrix}A&0\\0&1\end{pmatrix},
 \qquad A\in SU(n-1).
@@ -81,7 +81,7 @@ Thus the orbit map identifies the quotient $SU(n)/SU(n-1)$ with $S^{2n-1}$ and y
 Inductively,
 \[
 \boxed{
-H^*(SU(n);\mathbb Z)
+H^*(SU(n);\ZZ)
 \cong\Lambda(x_3,x_5,\ldots,x_{2n-1}),
 \qquad |x_{2j-1}|=2j-1.}
 \]
@@ -91,7 +91,7 @@ H^*(SU(n);\mathbb Z)
 
 For $n=2$, $SU(2)\cong S^3$, so the claim holds. Assume it for $SU(n-1)$ and use the Serre cohomology spectral sequence of step [](#s1-2){.pf-ref}. Its $E_2$ page is
 \[
-H^*(S^{2n-1};\mathbb Z)\otimes H^*(SU(n-1);\mathbb Z).
+H^*(S^{2n-1};\ZZ)\otimes H^*(SU(n-1);\ZZ).
 \]
 The fiber cohomology is generated in degrees at most $2n-3$. Degree considerations leave no possible nonzero differential involving the base generator in degree $2n-1$, so the spectral sequence collapses. All groups are free abelian, so there are no additive extension problems. The restriction to the fiber identifies the old generators $x_3,\ldots,x_{2n-3}$, while a class $x_{2n-1}$ lifting the sphere generator supplies the new factor. Odd degree and torsion-freeness imply $x_{2n-1}^2=0$, giving the exterior algebra.
 
@@ -104,7 +104,7 @@ The fiber cohomology is generated in degrees at most $2n-3$. Degree consideratio
 Consequently,
 \[
 \boxed{
-H^*(U(n);\mathbb Z)
+H^*(U(n);\ZZ)
 \cong\Lambda(x_1,x_3,x_5,\ldots,x_{2n-1}),
 \qquad |x_{2j-1}|=2j-1.}
 \]
@@ -119,7 +119,7 @@ H^*(U(n))
 \]
 Step [](#s1-3){.pf-ref} gives the first factor, while
 \[
-H^*(S^1;\mathbb Z)=\Lambda(x_1).
+H^*(S^1;\ZZ)=\Lambda(x_1).
 \]
 Tensoring the exterior algebras gives the displayed presentation.
 
@@ -131,7 +131,7 @@ Tensoring the exterior algebras gives the displayed presentation.
 
 The complex Stiefel manifold of orthonormal $k$-frames is
 \[
-V_k(\mathbb C^n)\cong U(n)/U(n-k).
+V_k(\CC^n)\cong U(n)/U(n-k).
 \]
 
 
@@ -148,8 +148,8 @@ The group $U(n)$ acts transitively on ordered orthonormal $k$-frames. The stabil
 Forgetting the last vector gives a sphere fibration
 \[
 S^{2(n-k)+1}
-\longrightarrow V_k(\mathbb C^n)
-\longrightarrow V_{k-1}(\mathbb C^n).
+\longrightarrow V_k(\CC^n)
+\longrightarrow V_{k-1}(\CC^n).
 \]
 
 
@@ -170,7 +170,7 @@ Local orthonormal trivializations give the bundle.
 Induction on $k$ gives
 \[
 \boxed{
-H^*(V_k(\mathbb C^n);\mathbb Z)
+H^*(V_k(\CC^n);\ZZ)
 \cong
 \Lambda(x_{2(n-k)+1},x_{2(n-k)+3},\ldots,x_{2n-1}).}
 \]
@@ -178,7 +178,7 @@ H^*(V_k(\mathbb C^n);\mathbb Z)
 
 ::: pf-proof
 
-For $k=1$, $V_1(\mathbb C^n)=S^{2n-1}$, giving one exterior generator in degree $2n-1$. Assume the formula for $k-1$. Apply the Serre spectral sequence to step [](#s1-6){.pf-ref}. The new sphere generator has degree $2(n-k)+1$, while the existing generators begin in degree $2(n-k+1)+1=2(n-k)+3$. Degree considerations force collapse, and all groups are free abelian. The new odd-degree generator squares to zero, and together with the inductively existing generators yields the stated exterior algebra.
+For $k=1$, $V_1(\CC^n)=S^{2n-1}$, giving one exterior generator in degree $2n-1$. Assume the formula for $k-1$. Apply the Serre spectral sequence to step [](#s1-6){.pf-ref}. The new sphere generator has degree $2(n-k)+1$, while the existing generators begin in degree $2(n-k+1)+1=2(n-k)+3$. Degree considerations force collapse, and all groups are free abelian. The new odd-degree generator squares to zero, and together with the inductively existing generators yields the stated exterior algebra.
 
 :::
 
@@ -195,7 +195,7 @@ Thus the three ring structures are
 \]
 and
 \[
-\boxed{H^*(V_k(\mathbb C^n))
+\boxed{H^*(V_k(\CC^n))
 =\Lambda(x_{2(n-k)+1},x_{2(n-k)+3},\ldots,x_{2n-1}).}
 \]
 

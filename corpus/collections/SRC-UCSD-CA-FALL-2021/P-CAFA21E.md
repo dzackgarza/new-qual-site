@@ -17,7 +17,7 @@ Let $G = \{ z = x+iy : x > 0,\, y > 0,\, xy < 1 \}$.
 
 (i) Construct a biholomorphism between $G$ and the strip $S = \{ z = x+iy : 0 < y < 1 \}$.
 
-(ii) Construct an unbounded continuous function $u : \overline{G} \to \mathbb{R}$, harmonic in $G$, and such that $u$ vanishes on $\partial G$.
+(ii) Construct an unbounded continuous function $u : \overline{G} \to \RR$, harmonic in $G$, and such that $u$ vanishes on $\partial G$.
 :::
 
 ::: {.solution}

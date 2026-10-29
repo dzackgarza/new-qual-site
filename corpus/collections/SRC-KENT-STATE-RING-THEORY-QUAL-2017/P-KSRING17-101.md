@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-101
 kind: problem
-title: Irreducibility of $x^4+5x^2+3x+2$ over $\mathbb Q$
+title: Irreducibility of $x^4+5x^2+3x+2$ over $\QQ$
 classification:
   areas: [algebra]
   topics: []

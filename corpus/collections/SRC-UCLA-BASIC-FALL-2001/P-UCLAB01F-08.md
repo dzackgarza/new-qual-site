@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:\mathbb R^3\to\mathbb R^3$ be the rotation by $60^\circ$ counterclockwise in the plane perpendicular to $(1,1,1)$, and let $S:\mathbb R^3\to\mathbb R^3$ be reflection in the plane perpendicular to $(1,0,1)$.
+Let $T:\RR^3\to\RR^3$ be the rotation by $60^\circ$ counterclockwise in the plane perpendicular to $(1,1,1)$, and let $S:\RR^3\to\RR^3$ be reflection in the plane perpendicular to $(1,0,1)$.
 Determine the matrix of $S\circ T$ in the standard basis
 \[
 \{(1,0,0),(0,1,0),(0,0,1)\}.
@@ -38,7 +38,7 @@ The ordered basis $(u_1,u_2,u_3)$ is positively oriented, so the given normal ve
 
 ::: {.pf-step #s1-1}
 
-The vectors $u_1,u_2,u_3$ form a positively oriented orthonormal basis of $\mathbb R^3$.
+The vectors $u_1,u_2,u_3$ form a positively oriented orthonormal basis of $\RR^3$.
 
 
 ::: pf-proof

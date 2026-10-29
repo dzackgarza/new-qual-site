@@ -67,7 +67,7 @@ Apply van Kampen to the mapping torus cut open near the identified end. The old 
 ::: pf-step
 
 If $f_*$ is an automorphism, this is the usual semidirect-product/HNN presentation
-$$\pi_1(T_f)\cong\pi_1(K)\rtimes_{f_*}\mathbb Z.$$
+$$\pi_1(T_f)\cong\pi_1(K)\rtimes_{f_*}\ZZ.$$
 
 ::: pf-proof
 

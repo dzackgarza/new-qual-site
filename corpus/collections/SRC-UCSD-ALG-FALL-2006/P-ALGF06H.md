@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the splitting fields and Galois groups of the following polynomials over $\mathbb{Q}$.
+Find the splitting fields and Galois groups of the following polynomials over $\QQ$.
 You should state clearly results that you use.
 
 (a) $(x^2 + 3)(x^3 - 5)$
@@ -40,8 +40,8 @@ You should state clearly results that you use.
 
 ::: {.solution}
 We use the following standard facts.
-A cubic over $\mathbb Q$ is reducible if and only if it has a rational root.
-For an irreducible cubic, the Galois group of its splitting field is the transitive subgroup $A_3$ of $S_3$ when its discriminant is a square in $\mathbb Q$, and is $S_3$ otherwise.
+A cubic over $\QQ$ is reducible if and only if it has a rational root.
+For an irreducible cubic, the Galois group of its splitting field is the transitive subgroup $A_3$ of $S_3$ when its discriminant is a square in $\QQ$, and is $S_3$ otherwise.
 Indeed, the square root of the discriminant is, up to sign, the product of the three pairwise differences of the roots, so it is fixed precisely by the even permutations.
 
 ::: pf
@@ -53,12 +53,12 @@ f_a(x)=(x^2+3)(x^3-5),
 \]
 the splitting field is
 \[
-L_a=\mathbb Q(\sqrt[3]{5},\zeta_3)
-=\mathbb Q(\sqrt[3]{5},\sqrt{-3}),
+L_a=\QQ(\sqrt[3]{5},\zeta_3)
+=\QQ(\sqrt[3]{5},\sqrt{-3}),
 \]
 and
 \[
-\operatorname{Gal}(L_a/\mathbb Q)\cong S_3.
+\operatorname{Gal}(L_a/\QQ)\cong S_3.
 \]
 
 ::: pf-proof
@@ -75,7 +75,7 @@ The roots of $x^3-5$ are
 \qquad
 \zeta_3^2\alpha,
 \]
-so its splitting field is $\mathbb Q(\alpha,\zeta_3)$.
+so its splitting field is $\QQ(\alpha,\zeta_3)$.
 Since
 \[
 \zeta_3=\frac{-1+\sqrt{-3}}2,
@@ -85,12 +85,12 @@ Thus it is the splitting field of the product.
 
 The polynomial $x^3-5$ is Eisenstein at $5$, hence
 \[
-[\mathbb Q(\alpha):\mathbb Q]=3.
+[\QQ(\alpha):\QQ]=3.
 \]
-The field $\mathbb Q(\alpha)$ is contained in $\mathbb R$, whereas $\zeta_3\notin\mathbb R$, so $\zeta_3\notin\mathbb Q(\alpha)$.
+The field $\QQ(\alpha)$ is contained in $\RR$, whereas $\zeta_3\notin\RR$, so $\zeta_3\notin\QQ(\alpha)$.
 Therefore
 \[
-[L_a:\mathbb Q]=6.
+[L_a:\QQ]=6.
 \]
 The automorphisms
 \[
@@ -118,11 +118,11 @@ f_b(x)=(x^2-3)(x^3-7),
 \]
 the splitting field is
 \[
-L_b=\mathbb Q(\sqrt[3]{7},\zeta_3,\sqrt3),
+L_b=\QQ(\sqrt[3]{7},\zeta_3,\sqrt3),
 \]
 and
 \[
-\operatorname{Gal}(L_b/\mathbb Q)\cong S_3\times C_2.
+\operatorname{Gal}(L_b/\QQ)\cong S_3\times C_2.
 \]
 
 ::: pf-proof
@@ -130,19 +130,19 @@ Put
 \[
 \beta=\sqrt[3]{7},
 \qquad
-K=\mathbb Q(\beta,\zeta_3).
+K=\QQ(\beta,\zeta_3).
 \]
 Exactly as in step [](#part-a){.pf-ref}, $K$ is the splitting field of $x^3-7$ and
 \[
-[K:\mathbb Q]=6,
+[K:\QQ]=6,
 \qquad
-\operatorname{Gal}(K/\mathbb Q)\cong S_3.
+\operatorname{Gal}(K/\QQ)\cong S_3.
 \]
 Its quadratic subfield is uniquely determined.
 Indeed, quadratic subfields correspond to subgroups of index $2$ in $S_3$, and the unique index-$2$ subgroup is $A_3$.
 Since
 \[
-\mathbb Q(\zeta_3)=\mathbb Q(\sqrt{-3})
+\QQ(\zeta_3)=\QQ(\sqrt{-3})
 \]
 is already a quadratic subfield of $K$, it is the unique one.
 
@@ -150,23 +150,23 @@ Hence
 \[
 \sqrt3\notin K,
 \]
-because $\mathbb Q(\sqrt3)$ is a real quadratic field distinct from $\mathbb Q(\sqrt{-3})$.
+because $\QQ(\sqrt3)$ is a real quadratic field distinct from $\QQ(\sqrt{-3})$.
 Consequently
 \[
-K\cap\mathbb Q(\sqrt3)=\mathbb Q
+K\cap\QQ(\sqrt3)=\QQ
 \]
 and
 \[
-[L_b:\mathbb Q]=[K:\mathbb Q]\,[\mathbb Q(\sqrt3):\mathbb Q]=12.
+[L_b:\QQ]=[K:\QQ]\,[\QQ(\sqrt3):\QQ]=12.
 \]
-Both $K/\mathbb Q$ and $\mathbb Q(\sqrt3)/\mathbb Q$ are Galois, and their intersection is $\mathbb Q$.
+Both $K/\QQ$ and $\QQ(\sqrt3)/\QQ$ are Galois, and their intersection is $\QQ$.
 Restriction therefore gives an isomorphism
 \[
-\operatorname{Gal}(L_b/\mathbb Q)
+\operatorname{Gal}(L_b/\QQ)
 \cong
-\operatorname{Gal}(K/\mathbb Q)
+\operatorname{Gal}(K/\QQ)
 \times
-\operatorname{Gal}(\mathbb Q(\sqrt3)/\mathbb Q)
+\operatorname{Gal}(\QQ(\sqrt3)/\QQ)
 \cong S_3\times C_2.
 \]
 :::
@@ -180,18 +180,18 @@ f_c(x)=x^{15}-2,
 \]
 the splitting field is
 \[
-L_c=\mathbb Q(2^{1/15},\zeta_{15}),
+L_c=\QQ(2^{1/15},\zeta_{15}),
 \]
 and
 \[
-\operatorname{Gal}(L_c/\mathbb Q)
+\operatorname{Gal}(L_c/\QQ)
 \cong
-C_{15}\rtimes (\mathbb Z/15\mathbb Z)^\times,
+C_{15}\rtimes (\ZZ/15\ZZ)^\times,
 \]
-where $(\mathbb Z/15\mathbb Z)^\times$ acts on $C_{15}$ by multiplication.
+where $(\ZZ/15\ZZ)^\times$ acts on $C_{15}$ by multiplication.
 In particular,
 \[
-|\operatorname{Gal}(L_c/\mathbb Q)|=120.
+|\operatorname{Gal}(L_c/\QQ)|=120.
 \]
 
 ::: pf-proof
@@ -204,29 +204,29 @@ The fifteen roots are
 \[
 \zeta^a\alpha,
 \qquad
-a\in\mathbb Z/15\mathbb Z,
+a\in\ZZ/15\ZZ,
 \]
-so the splitting field is $L_c=\mathbb Q(\alpha,\zeta)$.
+so the splitting field is $L_c=\QQ(\alpha,\zeta)$.
 
 The polynomial $x^{15}-2$ is Eisenstein at $2$, hence
 \[
-[\mathbb Q(\alpha):\mathbb Q]=15.
+[\QQ(\alpha):\QQ]=15.
 \]
 Also
 \[
-[\mathbb Q(\zeta):\mathbb Q]=\varphi(15)=8.
+[\QQ(\zeta):\QQ]=\varphi(15)=8.
 \]
 If
 \[
-E=\mathbb Q(\alpha)\cap\mathbb Q(\zeta),
+E=\QQ(\alpha)\cap\QQ(\zeta),
 \]
-then $[E:\mathbb Q]$ divides both $15$ and $8$, so
+then $[E:\QQ]$ divides both $15$ and $8$, so
 \[
-[E:\mathbb Q]=1.
+[E:\QQ]=1.
 \]
 Thus the two fields have trivial intersection and
 \[
-[L_c:\mathbb Q]=15\cdot8=120.
+[L_c:\QQ]=15\cdot8=120.
 \]
 Since $L_c$ is a splitting field in characteristic zero, it is Galois, so its Galois group also has order $120$.
 
@@ -238,9 +238,9 @@ Every automorphism is determined by
 \]
 where
 \[
-a\in\mathbb Z/15\mathbb Z,
+a\in\ZZ/15\ZZ,
 \qquad
-b\in(\mathbb Z/15\mathbb Z)^\times.
+b\in(\ZZ/15\ZZ)^\times.
 \]
 There are exactly $15\cdot8=120$ such pairs, equal to the number of automorphisms, so every pair occurs.
 Let $\sigma$ correspond to $(a,b)=(1,1)$, and for a unit $b$ let $\tau_b$ correspond to $(0,b)$.
@@ -252,15 +252,15 @@ Then
 \]
 Hence
 \[
-\operatorname{Gal}(L_c/\mathbb Q)
+\operatorname{Gal}(L_c/\QQ)
 \cong
-C_{15}\rtimes(\mathbb Z/15\mathbb Z)^\times.
+C_{15}\rtimes(\ZZ/15\ZZ)^\times.
 \]
 By the Chinese remainder theorem,
 \[
-(\mathbb Z/15\mathbb Z)^\times
+(\ZZ/15\ZZ)^\times
 \cong
-(\mathbb Z/3\mathbb Z)^\times\times(\mathbb Z/5\mathbb Z)^\times
+(\ZZ/3\ZZ)^\times\times(\ZZ/5\ZZ)^\times
 \cong C_2\times C_4.
 \]
 :::
@@ -274,11 +274,11 @@ f_d(x)=x^3+2x^2+1,
 \]
 if $\theta$ is any root, the splitting field is
 \[
-L_d=\mathbb Q(\theta,\sqrt{-59}),
+L_d=\QQ(\theta,\sqrt{-59}),
 \]
 and
 \[
-\operatorname{Gal}(L_d/\mathbb Q)\cong S_3.
+\operatorname{Gal}(L_d/\QQ)\cong S_3.
 \]
 
 ::: pf-proof
@@ -288,7 +288,7 @@ f_d(1)=4,
 \qquad
 f_d(-1)=2.
 \]
-Thus $f_d$ has no rational root and, being cubic, is irreducible over $\mathbb Q$.
+Thus $f_d$ has no rational root and, being cubic, is irreducible over $\QQ$.
 
 For a monic cubic
 \[
@@ -302,7 +302,7 @@ Here $b=2$, $c=0$, and $d=1$, so
 \[
 \Delta=-4(2^3)-27=-32-27=-59.
 \]
-This is not a square in $\mathbb Q$.
+This is not a square in $\QQ$.
 Therefore the Galois group of the splitting field is the transitive subgroup $S_3$, rather than $A_3$, and the splitting field has degree $6$.
 
 If the three roots are $r_1,r_2,r_3$, then
@@ -311,10 +311,10 @@ If the three roots are $r_1,r_2,r_3$, then
 =(r_1-r_2)(r_1-r_3)(r_2-r_3)
 \]
 up to sign, so $\sqrt{-59}$ belongs to the splitting field.
-Since $\mathbb Q(\theta)$ has degree $3$, it cannot contain the quadratic field $\mathbb Q(\sqrt{-59})$.
+Since $\QQ(\theta)$ has degree $3$, it cannot contain the quadratic field $\QQ(\sqrt{-59})$.
 Hence
 \[
-[\mathbb Q(\theta,\sqrt{-59}):\mathbb Q]=6.
+[\QQ(\theta,\sqrt{-59}):\QQ]=6.
 \]
 This degree-$6$ field lies inside the degree-$6$ splitting field, so they are equal.
 :::

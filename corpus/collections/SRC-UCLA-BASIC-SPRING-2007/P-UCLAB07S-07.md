@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\colon\mathbb R\to\mathbb R$ be twice continuously differentiable with uniformly bounded second derivative and a simple root $x^*$, so $f(x^*)=0$ and $f'(x^*)\ne0$.
+Let $f\colon\RR\to\RR$ be twice continuously differentiable with uniformly bounded second derivative and a simple root $x^*$, so $f(x^*)=0$ and $f'(x^*)\ne0$.
 For Newton iteration
 \[
 x_n=F(x_{n-1}),\qquad F(x)=x-\frac{f(x)}{f'(x)},
@@ -33,7 +33,7 @@ for all $n$.
 
 Let
 \[
-M=\sup_{x\in\mathbb R}|f''(x)|<\infty.
+M=\sup_{x\in\RR}|f''(x)|<\infty.
 \]
 
 ::: pf
@@ -101,7 +101,7 @@ for some $\xi$ between $x$ and $x^*$.
 ::: pf-proof
 
 Apply Taylor's theorem with Lagrange remainder to $f$ centered at $x$ and evaluated at $x^*$.
-The hypotheses hold because $f\in C^2(\mathbb R)$.
+The hypotheses hold because $f\in C^2(\RR)$.
 
 :::
 

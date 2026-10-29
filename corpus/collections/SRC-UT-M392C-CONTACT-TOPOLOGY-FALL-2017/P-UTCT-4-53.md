@@ -37,7 +37,7 @@ Write
 S^3
 =
 \left\{
-(z_1,z_2)\in\mathbb C^2:
+(z_1,z_2)\in\CC^2:
 |z_1|^2+|z_2|^2=1
 \right\},
 \]
@@ -628,7 +628,7 @@ framed \(1\)-manifolds in \(S^3\) with
 \cong
 \pi_3(S^2)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 The integer can be computed as the linking number of a framed link with a
 small framed push-off. Distinct integers therefore represent distinct

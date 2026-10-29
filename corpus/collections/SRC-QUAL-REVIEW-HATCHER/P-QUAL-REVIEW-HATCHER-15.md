@@ -33,7 +33,7 @@ H^i(Y)=0\quad\text{for all }i>0.
 
 ::: {.solution}
 
-All cohomology groups below have coefficients in \(\mathbb Z\).
+All cohomology groups below have coefficients in \(\ZZ\).
 
 Assume
 \[
@@ -113,7 +113,7 @@ The integral cohomology of \(\mathbb{CP}^n\) is
 \boxed{
 H^*(\mathbb{CP}^n)
 \cong
-\mathbb Z[u]/(u^{n+1})},
+\ZZ[u]/(u^{n+1})},
 \qquad
 |u|=2.
 \]
@@ -140,7 +140,7 @@ H^m(X\times Y)
 \cong
 H^m(\mathbb{CP}^n).
 \]
-By step [](#s1-4){.pf-ref}, this target is either \(0\) or \(\mathbb Z\). Thus the factor group is either \(0\) or a subgroup of \(\mathbb Z\), hence torsion-free; and it vanishes whenever \(m\) is odd.
+By step [](#s1-4){.pf-ref}, this target is either \(0\) or \(\ZZ\). Thus the factor group is either \(0\) or a subgroup of \(\ZZ\), hence torsion-free; and it vanishes whenever \(m\) is odd.
 
 :::
 
@@ -182,7 +182,7 @@ H^2(X)\oplus H^2(Y)}.
 
 By connectedness,
 \[
-H^0(X)\cong H^0(Y)\cong\mathbb Z.
+H^0(X)\cong H^0(Y)\cong\ZZ.
 \]
 By step [](#s1-5){.pf-ref},
 \[
@@ -209,7 +209,7 @@ H^2(X\times Y)
 \cong
 H^2(\mathbb{CP}^n)
 \cong
-\mathbb Z,
+\ZZ,
 \]
 exactly one of
 \[
@@ -217,12 +217,12 @@ H^2(X),
 \qquad
 H^2(Y)
 \]
-is isomorphic to \(\mathbb Z\), and the other is zero.
+is isomorphic to \(\ZZ\), and the other is zero.
 
 
 ::: pf-proof
 
-By step [](#s1-5){.pf-ref}, each summand in step [](#s1-7){.pf-ref} is either \(0\) or a nonzero free subgroup of \(\mathbb Z\), hence rank \(1\). Their direct sum has rank \(1\), so exactly one summand has rank \(1\).
+By step [](#s1-5){.pf-ref}, each summand in step [](#s1-7){.pf-ref} is either \(0\) or a nonzero free subgroup of \(\ZZ\), hence rank \(1\). Their direct sum has rank \(1\), so exactly one summand has rank \(1\).
 
 :::
 
@@ -323,7 +323,7 @@ H^{2r}(X\times Y)
 \cong
 H^{2r}(\mathbb{CP}^n)
 \cong
-\mathbb Z\,u^r,
+\ZZ\,u^r,
 \]
 there is a nonzero integer \(c\) such that
 \[

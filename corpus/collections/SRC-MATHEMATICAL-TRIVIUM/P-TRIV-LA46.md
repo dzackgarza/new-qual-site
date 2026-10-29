@@ -161,7 +161,7 @@ and complete $e_1$ to an orthonormal basis
 $$
 e_1,e_2,\ldots,e_n
 $$
-of $\mathbb R^n$. If
+of $\RR^n$. If
 $$
 x
 =

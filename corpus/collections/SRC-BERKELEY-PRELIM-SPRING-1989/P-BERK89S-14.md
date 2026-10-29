@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^2\to\mathbb R^2$ be continuously differentiable. Suppose $f$ has only finitely many singular points and, for every $M>0$, the set
+Let $f:\RR^2\to\RR^2$ be continuously differentiable. Suppose $f$ has only finitely many singular points and, for every $M>0$, the set
 \[
-\{z\in\mathbb R^2:\|f(z)\|\le M\}
+\{z\in\RR^2:\|f(z)\|\le M\}
 \]
-is bounded. Prove that $f$ is onto $\mathbb R^2$.
+is bounded. Prove that $f$ is onto $\RR^2$.
 :::
 
 ::: {.solution}

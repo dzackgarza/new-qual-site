@@ -28,9 +28,9 @@ Is every bounded real-valued function on $[0,1]$ that is Lebesgue integrable als
 ::: {.solution}
 No. Take the Dirichlet function
 \[
-f=\mathbf1_{\mathbb Q\cap[0,1]}.
+f=\mathbf1_{\QQ\cap[0,1]}.
 \]
-It is bounded and Lebesgue measurable, and since $\mathbb Q\cap[0,1]$ is countable,
+It is bounded and Lebesgue measurable, and since $\QQ\cap[0,1]$ is countable,
 \[
 \int_0^1 f\,dm=0.
 \]

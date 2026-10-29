@@ -102,14 +102,14 @@ Coordinate projections from products need not be closed.
 
 Take
 \[
-X_1=X_2=\mathbb R
+X_1=X_2=\RR
 \]
 with the usual topology and consider
 \[
 \pi_1:
-\mathbb R^2
+\RR^2
 \to
-\mathbb R,
+\RR,
 \qquad
 \pi_1(x,y)=x.
 \]
@@ -118,11 +118,11 @@ Let
 \[
 F
 \coloneqq
-\{(x,y)\in\mathbb R^2:xy=1\}.
+\{(x,y)\in\RR^2:xy=1\}.
 \]
 The function
 \[
-\varphi:\mathbb R^2\to\mathbb R,
+\varphi:\RR^2\to\RR,
 \qquad
 \varphi(x,y)=xy
 \]
@@ -142,7 +142,7 @@ Its projection is
 \[
 \pi_1(F)
 =
-\mathbb R\setminus\{0\},
+\RR\setminus\{0\},
 \]
 because for every
 \[
@@ -156,7 +156,7 @@ lies in $F$, while no point of $F$ has first coordinate $0$.
 
 But
 \[
-\mathbb R\setminus\{0\}
+\RR\setminus\{0\}
 \]
 is not closed in $mathbb R$, since
 \[

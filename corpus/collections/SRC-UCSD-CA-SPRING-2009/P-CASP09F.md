@@ -30,7 +30,7 @@ such that
 \[
 P(z)=\prod_{n=1}^\infty E_{p_n}(z/a_n)
 \]
-converges uniformly on compact subsets of $\mathbb C$ to an entire function
+converges uniformly on compact subsets of $\CC$ to an entire function
 whose zeros, with multiplicity, are exactly the $a_n$. If $0$ is also to be a
 zero of multiplicity $m$, multiply by $z^m$.
 
@@ -60,7 +60,7 @@ that for every integer $R\ge1$ the tail satisfies
 \]
 Then on $|z|\le R$ the corresponding series of logarithms converges uniformly,
 hence the product converges uniformly there. As $R$ is arbitrary, the product
-converges locally uniformly on $\mathbb C$ and is entire.
+converges locally uniformly on $\CC$ and is entire.
 
 On a compact set avoiding all $a_n$, the tail product is nonzero because the
 series of logarithms converges. Hence the only zeros are the prescribed zeros,
@@ -71,7 +71,7 @@ be the product just constructed. Then
 \[
 h(z)=\frac{f(z)}{z^mP(z)}
 \]
-is entire and nowhere zero. Since $\mathbb C$ is simply connected, $h$ has an
+is entire and nowhere zero. Since $\CC$ is simply connected, $h$ has an
 entire logarithm: there is entire $g$ with $h=e^g$. This gives the displayed
 factorization and completes the proof.
 :::

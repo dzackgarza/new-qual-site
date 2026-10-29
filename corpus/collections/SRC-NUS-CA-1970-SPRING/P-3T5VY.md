@@ -27,7 +27,7 @@ in the annulus $1 \leq |z| \leq 2$.
 :::
 
 ::: {.solution}
-Let $f(z) = 2z^5 - 6z^2 - z + 1$, and let $A = \{z \in \mathbb{C} : 1 \leq |z| \leq 2\}$ be the closed annulus. Zeros are counted with multiplicity.
+Let $f(z) = 2z^5 - 6z^2 - z + 1$, and let $A = \{z \in \CC : 1 \leq |z| \leq 2\}$ be the closed annulus. Zeros are counted with multiplicity.
 
 * * *
 

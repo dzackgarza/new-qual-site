@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that the second homology group $H_2(X; \mathbb{Z})$ of a closed, path-connected, simply-connected 4-manifold $X$ is free and has rank $\chi(X) - 2$, where $\chi(X)$ is the Euler characteristic.
+Show that the second homology group $H_2(X; \ZZ)$ of a closed, path-connected, simply-connected 4-manifold $X$ is free and has rank $\chi(X) - 2$, where $\chi(X)$ is the Euler characteristic.
 :::
 
 ::: {.solution}
@@ -36,7 +36,7 @@ A connected manifold is orientable iff its orientation character $\pi_1(X)\to\{\
 
 We have
 $$
-H_1(X;\mathbb Z)=H_3(X;\mathbb Z)=0.
+H_1(X;\ZZ)=H_3(X;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -45,7 +45,7 @@ Simple connectivity gives $H_1=0$. Poincaré duality gives
 $$
 H_3(X)\cong H^1(X),
 $$
-and the universal coefficient theorem gives $H^1(X)=\operatorname{Hom}(H_1(X),\mathbb Z)=0$.
+and the universal coefficient theorem gives $H^1(X)=\operatorname{Hom}(H_1(X),\ZZ)=0$.
 
 :::
 
@@ -53,17 +53,17 @@ and the universal coefficient theorem gives $H^1(X)=\operatorname{Hom}(H_1(X),\m
 
 ::: {.pf-step #s3}
 
-The group $H_2(X;\mathbb Z)$ is free abelian.
+The group $H_2(X;\ZZ)$ is free abelian.
 
 ::: pf-proof
 
 Poincaré duality gives $H_2(X)\cong H^2(X)$. The cohomological universal coefficient theorem gives
 $$
-0\to\operatorname{Ext}(H_1(X),\mathbb Z)\to H^2(X)\to\operatorname{Hom}(H_2(X),\mathbb Z)\to0.
+0\to\operatorname{Ext}(H_1(X),\ZZ)\to H^2(X)\to\operatorname{Hom}(H_2(X),\ZZ)\to0.
 $$
 Since $H_1(X)=0$, this becomes
 $$
-H^2(X)\cong\operatorname{Hom}(H_2(X),\mathbb Z),
+H^2(X)\cong\operatorname{Hom}(H_2(X),\ZZ),
 $$
 which is free abelian. Therefore the isomorphic group $H_2(X)$ is free abelian as well.
 
@@ -82,7 +82,7 @@ $$
 
 For a closed connected oriented $4$-manifold,
 $$
-H_0(X)\cong H_4(X)\cong\mathbb Z.
+H_0(X)\cong H_4(X)\cong\ZZ.
 $$
 By step [](#s2){.pf-ref}, $H_1$ and $H_3$ vanish. Thus
 $$
@@ -97,7 +97,7 @@ $$
 
 Hence
 $$
-\boxed{H_2(X;\mathbb Z)\cong\mathbb Z^{\chi(X)-2}}.
+\boxed{H_2(X;\ZZ)\cong\ZZ^{\chi(X)-2}}.
 $$
 
 ::: pf-proof

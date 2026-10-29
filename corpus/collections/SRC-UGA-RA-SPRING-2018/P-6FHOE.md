@@ -120,7 +120,7 @@ $$0 \le f_n(x) = \frac{x}{1 + x^n} \le \frac{x}{x^n} = \frac{1}{x^{n-1}} \le \fr
 :::
 
 ::: pf-step
-Define $g: [0, \infty) \to \mathbb{R}$ by:
+Define $g: [0, \infty) \to \RR$ by:
 $$g(x) = \begin{cases} 1 & \text{if } 0 \le x \le 1, \\ \frac{1}{x^2} & \text{if } x > 1. \end{cases}$$
 
 :::

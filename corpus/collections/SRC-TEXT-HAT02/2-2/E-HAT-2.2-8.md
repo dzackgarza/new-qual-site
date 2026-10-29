@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-A polynomial $f(z)$ with complex coefficients, viewed as a map $\mathbb{C} \to \mathbb{C}$, can always be extended to a continuous map of one-point compactifications $\hat{f}: S^2 \to S^2$.
+A polynomial $f(z)$ with complex coefficients, viewed as a map $\CC \to \CC$, can always be extended to a continuous map of one-point compactifications $\hat{f}: S^2 \to S^2$.
 Show that the degree of $\hat{f}$ equals the degree of $f$ as a polynomial.
 Show also that the local degree of $\hat{f}$ at a root of $f$ is the multiplicity of the root.
 :::
@@ -42,7 +42,7 @@ f(z)=a_mz^m+a_{m-1}z^{m-1}+\cdots+a_0,
 
 ::: {.pf-step #s1}
 
-The map $f:\mathbb C\to\mathbb C$ is proper and therefore extends continuously to one-point compactifications by setting
+The map $f:\CC\to\CC$ is proper and therefore extends continuously to one-point compactifications by setting
 \[
 \widehat f(\infty)=\infty.
 \]
@@ -82,7 +82,7 @@ The compactified map $z\mapsto a_mz^m$ has degree $m$.
 
 ::: pf-proof
 
-Multiplication by $a_m\ne0$ is orientation preserving as a real linear map of $\mathbb C$, so it has degree $+1$. For a nonzero regular value $w$, the equation
+Multiplication by $a_m\ne0$ is orientation preserving as a real linear map of $\CC$, so it has degree $+1$. For a nonzero regular value $w$, the equation
 \[
 z^m=w
 \]
@@ -108,7 +108,7 @@ Factor
 f(z)=(z-z_0)^k g(z),
 \qquad g(z_0)\ne0.
 \]
-Choose a small circle $|z-z_0|=\varepsilon$ on which $g$ has no zero. The local degree equals the winding number around $0$ of the image of this circle under $f$. The factor $(z-z_0)^k$ winds exactly $k$ times. The loop $g(z)$ is homotopic in $\mathbb C^*$ to the constant loop $g(z_0)$ when $\varepsilon$ is small, so it contributes winding number $0$. Hence the total winding number, and therefore the local degree, is $k$.
+Choose a small circle $|z-z_0|=\varepsilon$ on which $g$ has no zero. The local degree equals the winding number around $0$ of the image of this circle under $f$. The factor $(z-z_0)^k$ winds exactly $k$ times. The loop $g(z)$ is homotopic in $\CC^*$ to the constant loop $g(z_0)$ when $\varepsilon$ is small, so it contributes winding number $0$. Hence the total winding number, and therefore the local degree, is $k$.
 
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH7-31
 kind: problem
-title: Which subset of $\mathbb{R}^3$ is compact
+title: Which subset of $\RR^3$ is compact
 classification:
   areas: [topology]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Which of the following sets in $\mathbb{R}^3$ is compact?
+Which of the following sets in $\RR^3$ is compact?
 
 (A) $\{x, y, z \mid |x + y + z| < 5\}$
 (B) $\{x, y, z \mid x < 2 \ \& \ y < 2 \ \& \ z < 2\}$

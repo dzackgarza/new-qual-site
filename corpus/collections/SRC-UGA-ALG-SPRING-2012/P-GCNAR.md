@@ -87,15 +87,15 @@ The elementary divisors from step [](#s1-1){.pf-ref} comprise $(x-1)^3$, $(x-1)$
 
 ::: {.pf-step #s1-3}
 
-The decomposition into indecomposable $\mathbb C[x]$-modules is
-\[\boxed{V\cong\mathbb C[x]/((x-1)^3)\oplus
-\mathbb C[x]/(x-1)\oplus \mathbb C[x]/(x-2)}.
+The decomposition into indecomposable $\CC[x]$-modules is
+\[\boxed{V\cong\CC[x]/((x-1)^3)\oplus
+\CC[x]/(x-1)\oplus \CC[x]/(x-2)}.
 \]
 
 
 ::: pf-proof
 
-The structure theorem over the PID $\mathbb C[x]$ gives the elementary-divisor decomposition from step [](#s1-1){.pf-ref}. Each cyclic module killed by a power of an irreducible polynomial is indecomposable: its submodules form a chain, so it cannot split as a direct sum of two nonzero submodules.
+The structure theorem over the PID $\CC[x]$ gives the elementary-divisor decomposition from step [](#s1-1){.pf-ref}. Each cyclic module killed by a power of an irreducible polynomial is indecomposable: its submodules form a chain, so it cannot split as a direct sum of two nonzero submodules.
 
 :::
 

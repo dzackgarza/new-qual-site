@@ -32,17 +32,17 @@ Determine if the statements below are True or False.
 If True, give a brief proof.
 If False, give a counterexample.
 
-(a) Let $\mu$ be a Borel measure on $\mathbb{R}$ such that $\mu(B) < \infty$ for every bounded Borel set $B$.
+(a) Let $\mu$ be a Borel measure on $\RR$ such that $\mu(B) < \infty$ for every bounded Borel set $B$.
 Let $E$ be a Borel set and assume that $\mu(K) = 0$ for every compact set $K \subset E$.
 Then $\mu(E) = 0$.
 
-(b) Let $f : [-1, 1] \to \mathbb{R}$ be continuous with $f(0) = 0$.
-For every $\varepsilon > 0$, there exists an integer $n \geq 1$ and continuous functions $u_j : [-1, 1] \to \mathbb{R}$, $j = 1, \ldots, n$, such that $u_j(x) = 0$ only at $x = 0$ and $\sup_{x \in [-1,1]} \left|f(x) - \sum_{j=1}^n u_j(x)\right| < \varepsilon$.
+(b) Let $f : [-1, 1] \to \RR$ be continuous with $f(0) = 0$.
+For every $\varepsilon > 0$, there exists an integer $n \geq 1$ and continuous functions $u_j : [-1, 1] \to \RR$, $j = 1, \ldots, n$, such that $u_j(x) = 0$ only at $x = 0$ and $\sup_{x \in [-1,1]} \left|f(x) - \sum_{j=1}^n u_j(x)\right| < \varepsilon$.
 
 (c) Let $\nu$ be a complex measure and $\mu$ a (positive) measure on $(X, \mathcal{M})$.
 Suppose that $X = A \cup B$ with $A \cap B = \emptyset$ and $\nu(A) = 0$.
-Moreover, assume that there is a measurable function $f : B \to \mathbb{C}$ such that $\nu(E) = \int_E f \, d\mu$ for every measurable $E \subset B$.
-Then there is a measurable function $g : X \to \mathbb{C}$ such that $\nu = g \, d\mu$.
+Moreover, assume that there is a measurable function $f : B \to \CC$ such that $\nu(E) = \int_E f \, d\mu$ for every measurable $E \subset B$.
+Then there is a measurable function $g : X \to \CC$ such that $\nu = g \, d\mu$.
 
 (d) Let $\{f_n\}$ be a sequence in $L^4(X, \mu)$.
 Suppose that $\lim_{n \to \infty} \int_X f_n g \, d\mu$ exists (as a complex number) for every $g \in L^{4/3}(X, \mu)$.
@@ -63,7 +63,7 @@ Part (a) is true.
 
 ::: pf-proof
 
-The assumption that $\mu(B)<\infty$ for every bounded Borel set makes $\mu$ locally finite. A locally finite Borel measure on $\mathbb R$ is a Radon measure, hence is inner regular on Borel sets. Therefore
+The assumption that $\mu(B)<\infty$ for every bounded Borel set makes $\mu$ locally finite. A locally finite Borel measure on $\RR$ is a Radon measure, hence is inner regular on Borel sets. Therefore
 \[
 \mu(E)=\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}.
 \]
@@ -141,7 +141,7 @@ Then $\nu(A)=0$. On $B$, taking $f\equiv0$ gives
 \]
 for every measurable $E\subseteq B$.
 
-If there were a measurable $g:X\to\mathbb C$ with $\nu=g\,d\mu$, then
+If there were a measurable $g:X\to\CC$ with $\nu=g\,d\mu$, then
 \[
 \nu(\{1\})=\int_{\{1\}}g\,d\mu=0,
 \]
@@ -159,7 +159,7 @@ Part (d) is true.
 
 For each $n$, define
 \[
-T_n:L^{4/3}(X,\mu)\to\mathbb C,
+T_n:L^{4/3}(X,\mu)\to\CC,
 \qquad
 T_n(g)=\int_X f_ng\,d\mu.
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-1.1-9
 kind: problem
-title: Borsuk–Ulam bisects three compact sets in $\mathbb{R}^3$
+title: Borsuk–Ulam bisects three compact sets in $\RR^3$
 classification:
   areas:
   - topology
@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A_1, A_2, A_3$ be compact sets in $\mathbb{R}^3$.
-Use the Borsuk–Ulam theorem to show that there is one plane $P \subset \mathbb{R}^3$ that simultaneously divides each $A_i$ into two pieces of equal measure.
+Let $A_1, A_2, A_3$ be compact sets in $\RR^3$.
+Use the Borsuk–Ulam theorem to show that there is one plane $P \subset \RR^3$ that simultaneously divides each $A_i$ into two pieces of equal measure.
 :::
 
 ::: {.solution}
@@ -40,11 +40,11 @@ Since each $A_i$ is compact, it is measurable and has finite measure.
 
 Parameterize oriented affine planes and their two sides by points
 \[
-q=(v,d)\in S^3\subset\mathbb R^3\times\mathbb R.
+q=(v,d)\in S^3\subset\RR^3\times\RR.
 \]
 For $v\ne0$, the corresponding plane is
 \[
-P_q=\{x\in\mathbb R^3:v\cdot x=d\},
+P_q=\{x\in\RR^3:v\cdot x=d\},
 \]
 with positive and negative sides determined by the sign of $v\cdot x-d$.
 
@@ -66,7 +66,7 @@ F_i(v,d)=\int_{A_i}\operatorname{sgn}(v\cdot x-d)\,d\mu(x),
 where $\operatorname{sgn}(t)=1$ for $t>0$, $-1$ for $t<0$, and $0$ for $t=0$.
 Then
 \[
-F=(F_1,F_2,F_3):S^3\to\mathbb R^3
+F=(F_1,F_2,F_3):S^3\to\RR^3
 \]
 is continuous.
 
@@ -132,7 +132,7 @@ F(q)=0.
 
 Apply the Borsuk--Ulam theorem to the continuous map
 \[
-F:S^3\to\mathbb R^3.
+F:S^3\to\RR^3.
 \]
 There is $q\in S^3$ with
 \[

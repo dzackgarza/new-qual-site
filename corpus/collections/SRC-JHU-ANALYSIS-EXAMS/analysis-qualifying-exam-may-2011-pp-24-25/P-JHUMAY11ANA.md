@@ -47,7 +47,7 @@ Removing all zeros in the unit disk leaves a constant-modulus quotient.
 The boundary condition implies that $f$ is not identically
 zero and has no zero on the unit circle. It has finitely
 many zeros in the closed unit disk: otherwise compactness
-would give an accumulation point in $\mathbb C$, contradicting
+would give an accumulation point in $\CC$, contradicting
 the identity theorem [@SS03]. List its interior zeros
 as $a_1,\ldots,a_n$, repeated according to multiplicity.
 The list may be empty. Define
@@ -73,7 +73,7 @@ to both $H$ and $1/H$: throughout the disk, $|H|\leq1$
 and $|1/H|\leq1$, so $|H|=1$ [@SS03]. The same principle
 makes $H$ a constant $\alpha$ with $|\alpha|=1$.
 Consequently $fQ=\alpha P$ on the disk, and then on all
-of $\mathbb C$ by the identity theorem.
+of $\CC$ by the identity theorem.
 
 :::
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ is twice differentiable and $|f''(x)|\le B$.
+Suppose $f:\RR\to\RR$ is twice differentiable and $|f''(x)|\le B$.
 
 (a) Prove that \[\left|2Af(0)-\int_{-A}^{A}f(x)\,dx\right|\le \frac{A^3}{3}B.\]
 
@@ -29,7 +29,7 @@ Suppose $f:\mathbb R\to\mathbb R$ is twice differentiable and $|f''(x)|\le B$.
 
 ::: {.pf-step #s1-1}
 
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 |f'(x)-f'(0)|\le B|x|.
 \]
@@ -54,7 +54,7 @@ B|x|.
 
 ::: {.pf-step #s1-2}
 
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 \left|f(x)-f(0)-xf'(0)\right|
 \le

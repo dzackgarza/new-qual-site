@@ -38,7 +38,7 @@ B=\limsup_{n\to\infty}b_n.
 
 Assume first that
 \[
-A,B\in\mathbb R.
+A,B\in\RR.
 \]
 Fix
 \[
@@ -205,7 +205,7 @@ A=-\infty
 \]
 and
 \[
-B\in\mathbb R.
+B\in\RR.
 \]
 Then
 \[
@@ -228,7 +228,7 @@ for all \(n\ge N_1\).
 
 Since
 \[
-B\in\mathbb R,
+B\in\RR,
 \]
 there exists \(N_2\) such that
 \[
@@ -276,7 +276,7 @@ The symmetric case
 \[
 B=-\infty,
 \qquad
-A\in\mathbb R
+A\in\RR
 \]
 is identical.
 
@@ -304,7 +304,7 @@ then
 
 ::: pf-proof
 
-Fix \(M\in\mathbb R\). Since both limsups equal \(-\infty\), eventually
+Fix \(M\in\RR\). Since both limsups equal \(-\infty\), eventually
 \[
 a_n\le\frac M2
 \qquad\text{and}\qquad

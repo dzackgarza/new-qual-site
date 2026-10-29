@@ -48,7 +48,7 @@ If $n$ is even, then $\deg f=0$.
 
 For even $n$,
 \[
-H_n(\mathbb{RP}^n;\mathbb Z)=0.
+H_n(\mathbb{RP}^n;\ZZ)=0.
 \]
 Hence the induced map
 \[
@@ -72,7 +72,7 @@ If $n$ is odd, every even map has even degree.
 
 For odd $n$, $\mathbb{RP}^n$ is orientable and
 \[
-H_n(\mathbb{RP}^n)\cong\mathbb Z.
+H_n(\mathbb{RP}^n)\cong\ZZ.
 \]
 The quotient map $q:S^n\to\mathbb{RP}^n$ is a two-sheeted covering between oriented closed $n$-manifolds, so
 \[
@@ -102,7 +102,7 @@ For odd $n$, the top cellular boundary in $\mathbb{RP}^n$ is zero, so the unique
 \[
 c_*:H_n(\mathbb{RP}^n)\xrightarrow{\cong}H_n(S^n).
 \]
-Given any $k\in\mathbb Z$, choose a degree-$k$ map
+Given any $k\in\ZZ$, choose a degree-$k$ map
 \[
 h_k:S^n\to S^n.
 \]

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A linear transformation A writes in some basis in $\mathbb { R } ^ { n }$ as follows, $A = { \left[ \begin{array} { l l l } { 0 } & { 2 } & { 1 } \\ { 2 } & { 8 } & { 2 } \\ { 1 } & { 2 } & { 0 } \end{array} \right] }$
+A linear transformation A writes in some basis in $\RR ^ { n }$ as follows, $A = { \left[ \begin{array} { l l l } { 0 } & { 2 } & { 1 } \\ { 2 } & { 8 } & { 2 } \\ { 1 } & { 2 } & { 0 } \end{array} \right] }$
 
 (a) Write the transition matrix to the basis composed of the eigenvectors of A.
 
@@ -72,7 +72,7 @@ $$
 
 The plane
 $$
-S=\{(a,b,a):a,b\in\mathbb R\}
+S=\{(a,b,a):a,b\in\RR\}
 $$
 is invariant under $A$.
 
@@ -173,7 +173,7 @@ gives $b=4a$, so choose $(a,b)=(1,4)$.
 ::: {.pf-step #s1-5}
 
 The three eigenvectors are mutually orthogonal and therefore form a
-basis of $\mathbb R^3$.
+basis of $\RR^3$.
 
 
 ::: pf-proof
@@ -305,7 +305,7 @@ the three eigendirections.
 
 ::: pf-proof
 
-Let $W\subseteq\mathbb R^3$ be $A$-invariant. Since $W$ is invariant under
+Let $W\subseteq\RR^3$ be $A$-invariant. Since $W$ is invariant under
 $A$, it is invariant under every polynomial in $A$.
 
 Because the eigenvalues $-1,0,9$ are distinct, define the spectral projection
@@ -362,7 +362,7 @@ $$
 \operatorname{span}(v_{-1},v_0),\quad
 \operatorname{span}(v_{-1},v_9),\quad
 \operatorname{span}(v_0,v_9),\\
-\mathbb R^3.
+\RR^3.
 \end{gathered}
 }
 $$

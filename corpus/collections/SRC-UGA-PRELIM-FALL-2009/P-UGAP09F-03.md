@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Fix $x\in\mathbb R$. Using mathematical induction, show that if $x\ne1$, then for every $n\ge1$,
+Fix $x\in\RR$. Using mathematical induction, show that if $x\ne1$, then for every $n\ge1$,
 \[
 x+2x^2+3x^3+\cdots+nx^n
 =

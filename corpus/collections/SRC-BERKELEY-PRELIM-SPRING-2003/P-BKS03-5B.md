@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $C,D\subseteq\mathbb R^n$ be nonempty closed sets and assume $C$ is bounded.
+Let $C,D\subseteq\RR^n$ be nonempty closed sets and assume $C$ is bounded.
 Prove there exist $x_0\in C$ and $y_0\in D$ such that
 \[
 d(x_0,y_0)\le d(x,y)

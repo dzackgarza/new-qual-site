@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained from a solid ball $B^3$ by identifying pairs of antipodal points on its boundary sphere $S^2$.
-Decompose $X$ as a CW-complex and compute its homology $H_*(X; \mathbb{Z})$.
+Decompose $X$ as a CW-complex and compute its homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ The standard filtration $\mathbb{RP}^0\subset\mathbb{RP}^1\subset\mathbb{RP}^2\s
 
 ::: {.pf-step #cellular-boundary-maps}
 The cellular boundary maps are
-$$0\to\mathbb Z\xrightarrow{0}\mathbb Z\xrightarrow{2}\mathbb Z\xrightarrow{0}\mathbb Z\to0.$$
+$$0\to\ZZ\xrightarrow{0}\ZZ\xrightarrow{2}\ZZ\xrightarrow{0}\ZZ\to0.$$
 
 ::: pf-proof
 For the standard CW structure on $\mathbb{RP}^n$, the cellular boundary in degree $k$ is multiplication by $1+(-1)^k$: it is $0$ for odd $k$ and $2$ for even $k$.
@@ -53,9 +53,9 @@ For the standard CW structure on $\mathbb{RP}^n$, the cellular boundary in degre
 
 ::: pf-step
 Therefore
-$$\boxed{H_k(X;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&k=0,3,\\
-\mathbb Z/2,&k=1,\\
+$$\boxed{H_k(X;\ZZ)\cong\begin{cases}
+\ZZ,&k=0,3,\\
+\ZZ/2,&k=1,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 

@@ -37,7 +37,7 @@ $$
 (d) Show that
 
 $$
-\int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = O (e ^ {- a | \xi |}), \quad \xi \in \mathbb {R}
+\int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = O (e ^ {- a | \xi |}), \quad \xi \in \RR
 $$
 
 as $| \xi | \to \infty$ for some $a > 0$ . Determine the best possible $a \mathrm { { s } }$ in terms of the roots of R.
@@ -52,7 +52,7 @@ Write the poles of $R=P/Q$ in the upper half-plane as $\alpha_j$, with multiplic
 \]
 ensures that the large semicircle contributes $0$. Hence
 \[
-\int_{\mathbb R}R(x)e^{-2\pi i x\xi}\,dx
+\int_{\RR}R(x)e^{-2\pi i x\xi}\,dx
 =2\pi i\sum_j\operatorname{Res}_{z=\alpha_j}
 \left(R(z)e^{-2\pi i z\xi}\right).
 \tag{1}
@@ -66,7 +66,7 @@ This proves (a). If there are no poles in the upper half-plane, the sum in (1) i
 
 For $\xi>0$, close instead in the lower half-plane. Since the contour is clockwise,
 \[
-\int_{\mathbb R}R(x)e^{-2\pi i x\xi}\,dx
+\int_{\RR}R(x)e^{-2\pi i x\xi}\,dx
 =-2\pi i\sum_{\Im\beta_j<0}
 Q_j(\xi)e^{-2\pi i\beta_j\xi},
 \tag{2}
@@ -87,15 +87,15 @@ so for every $a<2\pi\delta_+$ the transform is $O(e^{-a|\xi|})$ on that side. Si
 
 Consequently a two-sided estimate
 \[
-\int_{\mathbb R}R(x)e^{-2\pi i x\xi}\,dx=O(e^{-a|\xi|})
+\int_{\RR}R(x)e^{-2\pi i x\xi}\,dx=O(e^{-a|\xi|})
 \]
 holds for every
 \[
-a<2\pi\,\operatorname{dist}(\{\text{poles of }R\},\mathbb R).
+a<2\pi\,\operatorname{dist}(\{\text{poles of }R\},\RR).
 \]
 The supremal possible exponential rate is therefore
 \[
-2\pi\,\operatorname{dist}(\{\text{poles of }R\},\mathbb R).
+2\pi\,\operatorname{dist}(\{\text{poles of }R\},\RR).
 \]
 At the endpoint itself the estimate holds when every pole at minimal distance is simple; higher multiplicity may introduce a nonconstant polynomial factor, so in general the endpoint rate is only a supremum.
 :::

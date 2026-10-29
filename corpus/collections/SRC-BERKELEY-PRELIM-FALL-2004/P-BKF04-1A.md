@@ -27,13 +27,13 @@ $$
 \begin{array} { c } { { y ( x ) = \displaystyle \int _ { - \infty } ^ { x } e ^ { - 2 ( x - t ) } y ( t ) d t } } \\ { { e ^ { 2 x } y ( x ) = \displaystyle \int _ { - \infty } ^ { x } e ^ { 2 t } y ( t ) d t . } } \end{array}\tag{1}
 $$
 
-The right hand side is continuous as a function of x, so $e ^ { 2 x } y ( x )$ is continuous on $\mathbb { R } _ { > 0 }$ , and multiplying by $e ^ { - 2 x }$ shows that $y ( x )$ is continuous on $\mathbb { R } _ { > 0 }$ . This in turn implies that the right hand side is differentiable, and the same argument now shows that $y ( x )$ is differentiable on ${ \mathbb R } _ { > 0 }$ . Differentiating both sides for $x > 0$ yields
+The right hand side is continuous as a function of x, so $e ^ { 2 x } y ( x )$ is continuous on $\RR _ { > 0 }$ , and multiplying by $e ^ { - 2 x }$ shows that $y ( x )$ is continuous on $\RR _ { > 0 }$ . This in turn implies that the right hand side is differentiable, and the same argument now shows that $y ( x )$ is differentiable on ${ \RR } _ { > 0 }$ . Differentiating both sides for $x > 0$ yields
 
 $$
 \begin{array} { c } { { e ^ { 2 x } ( y ^ { \prime } + 2 y ) = e ^ { 2 x } y } } \\ { { y ^ { \prime } + 2 y = y } } \\ { { y ^ { \prime } = - y } } \\ { { y = c e ^ { - x } } } \end{array}
 $$
 
-for some $c \in \mathbb { R }$ . Substituting this back into (1) yields, for $x > 0$
+for some $c \in \RR$ . Substituting this back into (1) yields, for $x > 0$
 
 $$
 \begin{array} { c } { { c e ^ { x } = \displaystyle \int _ { - \infty } ^ { 0 } e ^ { 3 t } d t + \int _ { 0 } ^ { x } c e ^ { t } d t } } \\ { { } } \\ { { c e ^ { x } = \displaystyle \frac { 1 } { 3 } + c ( e ^ { x } - 1 ) } } \\ { { } } \\ { { c = \displaystyle \frac { 1 } { 3 } } } \\ { { } } \\ { { y ( x ) = \displaystyle \frac { 1 } { 3 } e ^ { - x } . } } \end{array}

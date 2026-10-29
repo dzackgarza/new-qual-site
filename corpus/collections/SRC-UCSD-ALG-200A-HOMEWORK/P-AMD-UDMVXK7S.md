@@ -135,9 +135,9 @@ Every automorphism is determined by
 \[
 a\longmapsto a^u
 \]
-for a unique $u\in(\mathbb Z/q\mathbb Z)^\times$, so
+for a unique $u\in(\ZZ/q\ZZ)^\times$, so
 \[
-\operatorname{Aut}(C_q)\cong(\mathbb Z/q\mathbb Z)^\times.
+\operatorname{Aut}(C_q)\cong(\ZZ/q\ZZ)^\times.
 \]
 The multiplicative group of the finite field $\mathbb F_q$ is cyclic of order $q-1$.
 Thus $\operatorname{Aut}(C_q)$ is cyclic of order $q-1$.
@@ -242,7 +242,7 @@ Therefore all nontrivial actions yield isomorphic semidirect products.
 
 ::: {.pf-step #s7}
 
-Fix an integer $r$ whose residue class modulo $q$ has order $p$ in $(\mathbb Z/q\mathbb Z)^\times$.
+Fix an integer $r$ whose residue class modulo $q$ has order $p$ in $(\ZZ/q\ZZ)^\times$.
 Then the nontrivial semidirect product has presentation
 \[
 \left\langle a,b\ \middle|\ a^q=1,\ b^p=1,\ bab^{-1}=a^r\right\rangle.
@@ -250,7 +250,7 @@ Then the nontrivial semidirect product has presentation
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $(\mathbb Z/q\mathbb Z)^\times$ contains an element of order $p$; choose an integer representative $r$.
+By step [](#s3){.pf-ref}, $(\ZZ/q\ZZ)^\times$ contains an element of order $p$; choose an integer representative $r$.
 Let
 \[
 A=C_q=\langle a\rangle,

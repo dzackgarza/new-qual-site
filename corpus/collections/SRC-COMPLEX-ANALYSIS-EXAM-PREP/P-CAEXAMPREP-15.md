@@ -52,7 +52,7 @@ Conversely, let $w\in\mathbb H$. The roots of
 $$
 z^2-wz+1=0
 $$
-have product $1$. No root has modulus $1$, because for $|z|=1$ one has $z+z^{-1}=2\operatorname{Re}z\in\mathbb R$, whereas $w\notin\mathbb R$. Thus exactly one root has modulus greater than $1$. For that root,
+have product $1$. No root has modulus $1$, because for $|z|=1$ one has $z+z^{-1}=2\operatorname{Re}z\in\RR$, whereas $w\notin\RR$. Thus exactly one root has modulus greater than $1$. For that root,
 $$
 \operatorname{Im}w
 =\operatorname{Im}\left(z+\frac1z\right)
@@ -79,7 +79,7 @@ has the boundary of $A$ as a streamline.
 
 ::: pf-proof
 
-The uniform horizontal flow on $\mathbb H$ has complex potential $F_0(w)=\alpha w$, whose stream function is $\operatorname{Im}F_0(w)=\alpha\operatorname{Im}w$ and hence vanishes on $\partial\mathbb H=\mathbb R$. By step [](#s1-1){.pf-ref}, pulling this potential back by $J$ gives $F=F_0\circ J$ on $A$.
+The uniform horizontal flow on $\mathbb H$ has complex potential $F_0(w)=\alpha w$, whose stream function is $\operatorname{Im}F_0(w)=\alpha\operatorname{Im}w$ and hence vanishes on $\partial\mathbb H=\RR$. By step [](#s1-1){.pf-ref}, pulling this potential back by $J$ gives $F=F_0\circ J$ on $A$.
 
 Equivalently, for $z=re^{i\theta}$,
 $$

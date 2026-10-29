@@ -77,7 +77,7 @@ for every $f\in C^1([0,1])$.
 
 ::: pf-step
 
-With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\mathbb R$ such that $\mu|_{(0,1)}=(c-V)\,m$.
+With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\RR$ such that $\mu|_{(0,1)}=(c-V)\,m$.
 
 ::: pf-proof
 
@@ -93,7 +93,7 @@ Then $V\in H^1(0,1)$ and $DV=v$. Hence
 \[
 D(\mu+V\,m)=0
 \]
-as a distribution on the connected interval $(0,1)$. A distribution with zero derivative on an interval is constant, so there exists $c\in\mathbb R$ such that
+as a distribution on the connected interval $(0,1)$. A distribution with zero derivative on an interval is constant, so there exists $c\in\RR$ such that
 \[
 \mu|_{(0,1)}=(c-V)m.
 \]

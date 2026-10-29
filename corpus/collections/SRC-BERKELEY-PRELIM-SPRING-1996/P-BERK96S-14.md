@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb C$ be continuous. Show that
+Let $f:[0,1]\to\CC$ be continuous. Show that
 \[
 g(z)=\int_0^1 f(t)e^{tz^2}\,dt
 \]
-defines an entire function $g$ on $\mathbb C$.
+defines an entire function $g$ on $\CC$.
 :::
 
 ::: {.solution}

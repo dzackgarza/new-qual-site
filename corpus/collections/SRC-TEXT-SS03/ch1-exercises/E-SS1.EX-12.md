@@ -26,7 +26,7 @@ audit:
 Consider the function
 \[
 f(x+iy)=\sqrt{|x||y|},
-\qquad x,y\in\mathbb R.
+\qquad x,y\in\RR.
 \]
 Show that $f$ satisfies the Cauchy-Riemann equations at the origin, yet $f$ is not holomorphic at $0$.
 :::

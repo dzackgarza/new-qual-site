@@ -29,7 +29,7 @@ Define each of the following for an analytic function:
 
 Let
 \[
-z_0\in\mathbb C
+z_0\in\CC
 \]
 be an isolated singularity of $f$, meaning that for some
 \[

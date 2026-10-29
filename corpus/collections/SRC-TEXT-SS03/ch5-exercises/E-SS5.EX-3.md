@@ -58,7 +58,7 @@ Hence
 \[
 |\Theta(z\mid\tau)|
 \le e^{2\pi y^2/t}
-\sum_{n\in\mathbb Z}e^{-\pi t n^2/2}
+\sum_{n\in\ZZ}e^{-\pi t n^2/2}
 \le C_t e^{(2\pi/t)|z|^2}.
 \]
 Thus the order is at most $2$.

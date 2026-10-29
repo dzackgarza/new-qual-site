@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G$ be an open region in $\mathbb{C}$ and $\{z_n\}$ a sequence of distinct points in $G$ without limit points in $G$.
+Let $G$ be an open region in $\CC$ and $\{z_n\}$ a sequence of distinct points in $G$ without limit points in $G$.
 Suppose that for each $n$, you are given an integer $m_n$ and a sequence of complex numbers $\{w_{n,k}\}_{k=0}^{m_n}$.
 Show that there is $f \in H(G)$ such that, for every $n$, $$f^{(k)}(z_n) = w_{n,k}, \quad k = 0, 1, \ldots, m_n.$$
 

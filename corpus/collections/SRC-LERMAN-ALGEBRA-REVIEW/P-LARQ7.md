@@ -39,7 +39,7 @@ Let $k$ be any field.
 
 ::: pf-step
 
-The ideal $(6)\subset\mathbb Z$ is principal but not prime.
+The ideal $(6)\subset\ZZ$ is principal but not prime.
 
 ::: pf-proof
 

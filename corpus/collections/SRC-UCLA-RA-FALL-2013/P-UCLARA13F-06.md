@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be bounded and open with $0\in U$, and let $f:U\to\mathbb C$ be holomorphic with $f(U)\subset U$ and $f(0)=0$.
+Let $U\subset\CC$ be bounded and open with $0\in U$, and let $f:U\to\CC$ be holomorphic with $f(U)\subset U$ and $f(0)=0$.
 Show that
 \[
 |f'(0)|\le1.
@@ -56,7 +56,7 @@ Since $U$ is bounded, choose $M>0$ such that
 
 ::: pf-proof
 
-This is the definition of boundedness of $U\subset\mathbb C$.
+This is the definition of boundedness of $U\subset\CC$.
 
 :::
 

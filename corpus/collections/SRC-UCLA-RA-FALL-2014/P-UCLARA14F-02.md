@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Construct an $f \in L^1(\mathbb{R})$ so that $f(x+y)$ does *not* converge almost everywhere to $f(x)$ as $y \to 0$. Prove that your $f$ has this property.
+Construct an $f \in L^1(\RR)$ so that $f(x+y)$ does *not* converge almost everywhere to $f(x)$ as $y \to 0$. Prove that your $f$ has this property.
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ Borel measurable, so its indicator is measurable.
 
 One has
 \[
-f\in L^1(\mathbb R).
+f\in L^1(\RR).
 \]
 
 
@@ -62,9 +62,9 @@ f\in L^1(\mathbb R).
 
 Because $K\subset[0,1]$,
 \[
-\int_{\mathbb R}|f(x)|\,dx
+\int_{\RR}|f(x)|\,dx
 =
-\int_{\mathbb R}\chi_K(x)\,dx
+\int_{\RR}\chi_K(x)\,dx
 =
 m(K)
 \le1.
@@ -115,7 +115,7 @@ x+y_j\notin K
 
 By step [](#s1-3){.pf-ref}, every neighborhood of $x$ meets
 \[
-\mathbb R\setminus K.
+\RR\setminus K.
 \]
 For each $j\ge1$, choose
 \[

@@ -61,7 +61,7 @@ for every triangle $T$ whose closure lies in $\Omega$, then $f$ is holomorphic o
 
 We sketch proofs of Liouville and the open mapping theorem.
 
-For Liouville, if $|f|\le M$ on $\mathbb C$, then Cauchy's estimate on the circle $|z-a|=R$ gives
+For Liouville, if $|f|\le M$ on $\CC$, then Cauchy's estimate on the circle $|z-a|=R$ gives
 \[
 |f'(a)|\le \frac{M}{R}.
 \]

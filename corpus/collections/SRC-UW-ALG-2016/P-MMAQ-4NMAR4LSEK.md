@@ -19,15 +19,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\mathbb N$, $a>0$.
-Compute the Galois group of the splitting field of the polynomial $x^5-5a^4x+a$ over $\mathbb Q$.
+Let $a\in\NN$, $a>0$.
+Compute the Galois group of the splitting field of the polynomial $x^5-5a^4x+a$ over $\QQ$.
 :::
 
 ::: {.solution}
 Let
 \[
 f(x)=x^5-5a^4x+a,
-\qquad a\in\mathbb N,\ a>0.
+\qquad a\in\NN,\ a>0.
 \]
 
 ::: pf
@@ -58,15 +58,15 @@ Hence no integer, and therefore no rational, root exists.
 
 ::: {.pf-step #s2}
 
-The polynomial \(f\) has no quadratic factor over \(\mathbb Q\).
+The polynomial \(f\) has no quadratic factor over \(\QQ\).
 
 ::: pf-proof
 
-By Gauss's lemma, if \(f\) had a quadratic factor over \(\mathbb Q\), it would factor in \(\mathbb Z[x]\) as
+By Gauss's lemma, if \(f\) had a quadratic factor over \(\QQ\), it would factor in \(\ZZ[x]\) as
 \[
 f(x)=(x^2+ux+v)(x^3+cx^2+dx+e),
 \]
-with \(u,v,c,d,e\in\mathbb Z\). Comparing the coefficients of \(x^4,x^3,x^2\) gives
+with \(u,v,c,d,e\in\ZZ\). Comparing the coefficients of \(x^4,x^3,x^2\) gives
 \[
 c=-u,
 \qquad
@@ -119,7 +119,7 @@ So no quadratic factor exists in this case either.
 
 ::: {.pf-step #s3}
 
-The polynomial \(f\) is irreducible over \(\mathbb Q\).
+The polynomial \(f\) is irreducible over \(\QQ\).
 
 ::: pf-proof
 
@@ -165,7 +165,7 @@ Hence exactly three roots are real, and the remaining two form one nonreal compl
 
 ::: {.pf-step #s5}
 
-Let \(E\) be the splitting field and \(G=\operatorname{Gal}(E/\mathbb Q)\). Then \(G\) is a transitive subgroup of \(S_5\) containing a transposition.
+Let \(E\) be the splitting field and \(G=\operatorname{Gal}(E/\QQ)\). Then \(G\) is a transitive subgroup of \(S_5\) containing a transposition.
 
 ::: pf-proof
 
@@ -198,7 +198,7 @@ The transpositions corresponding to the edges of any connected graph generate th
 
 Therefore
 \[
-\boxed{\operatorname{Gal}(E/\mathbb Q)\cong S_5}.
+\boxed{\operatorname{Gal}(E/\QQ)\cong S_5}.
 \]
 
 ::: pf-proof

@@ -21,7 +21,7 @@ audit:
 
 ::: {.pf-step #p1-s1}
 
-Let $F\colon\mathbb R^2\to\mathbb R$ be continuous.
+Let $F\colon\RR^2\to\RR$ be continuous.
 Suppose that for every square $S$ whose sides are parallel to the coordinate axes,
 \[
 \iint_S F(x,y)\,dx\,dy=0.
@@ -32,7 +32,7 @@ Prove that $F(x,y)=0$ for all $(x,y)$.
 
 ::: pf-step
 
-Suppose $f$, $f_x$, $f_y$, $(f_x)_y$, and $(f_y)_x$ are continuous on $\mathbb R^2$.
+Suppose $f$, $f_x$, $f_y$, $(f_x)_y$, and $(f_y)_x$ are continuous on $\RR^2$.
 
 :::
 
@@ -59,7 +59,7 @@ F(p)>0
 \]
 at some point
 \[
-p=(x_0,y_0)\in\mathbb R^2.
+p=(x_0,y_0)\in\RR^2.
 \]
 Then there exists an axis-parallel square $S$ on which
 \[
@@ -178,7 +178,7 @@ Thus
 \[
 F(p)=0
 \]
-for every $p\in\mathbb R^2$.
+for every $p\in\RR^2$.
 This proves part step [](#p2-s1){.pf-ref}.
 
 :::
@@ -318,7 +318,7 @@ One has
 (f_y)_x
 }
 \]
-everywhere on $\mathbb R^2$.
+everywhere on $\RR^2$.
 
 ::: pf-proof
 

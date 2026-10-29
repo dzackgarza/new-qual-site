@@ -108,7 +108,7 @@ F(0)=0.
 
 ::: {.pf-step #s1-4}
 
-There is $\lambda\in\mathbb C$ with $|\lambda|=1$ such that
+There is $\lambda\in\CC$ with $|\lambda|=1$ such that
 \[
 F(z)=\lambda z
 \qquad(z\in\mathbb D).

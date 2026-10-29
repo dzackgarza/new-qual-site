@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F$ be the graph of $f:\mathbb R^2\to\mathbb R$ defined by
+Let $F$ be the graph of $f:\RR^2\to\RR$ defined by
 \[
 f(x,y)=\begin{cases}
 0,&y\le0,\\

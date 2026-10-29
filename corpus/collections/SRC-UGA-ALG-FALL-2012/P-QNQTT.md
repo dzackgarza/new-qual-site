@@ -21,7 +21,7 @@ Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.
 
 ::: {.solution}
 
-Let $K$ be the splitting field of $f$ over $\mathbb Q$ and $G=\operatorname{Gal}(K/\mathbb Q)$, acting on its five roots.
+Let $K$ be the splitting field of $f$ over $\QQ$ and $G=\operatorname{Gal}(K/\QQ)$, acting on its five roots.
 
 ::: pf
 
@@ -58,7 +58,7 @@ A subgroup of $S_5$ containing a $5$-cycle and a transposition is $S_5$.
 
 ::: pf-proof
 
-Label the roots by $\mathbb Z/5\mathbb Z$ so that the $5$-cycle is $\sigma:i\mapsto i+1$. Let the transposition interchange $a$ and $b$, with $a\neq b$. Its conjugates by powers of $\sigma$ interchange $a+k$ and $b+k$ for $k\in\mathbb Z/5\mathbb Z$. These pairs form the edges of a connected graph: the difference $b-a$ generates the additive group of order five. Edge transpositions of a connected graph generate its full symmetric group, as follows by expressing any transposition along a path by conjugation. Hence the subgroup contains $S_5$.
+Label the roots by $\ZZ/5\ZZ$ so that the $5$-cycle is $\sigma:i\mapsto i+1$. Let the transposition interchange $a$ and $b$, with $a\neq b$. Its conjugates by powers of $\sigma$ interchange $a+k$ and $b+k$ for $k\in\ZZ/5\ZZ$. These pairs form the edges of a connected graph: the difference $b-a$ generates the additive group of order five. Edge transpositions of a connected graph generate its full symmetric group, as follows by expressing any transposition along a path by conjugation. Hence the subgroup contains $S_5$.
 
 :::
 
@@ -68,7 +68,7 @@ Label the roots by $\mathbb Z/5\mathbb Z$ so that the $5$-cycle is $\sigma:i\map
 
 The Galois group is
 \[
-\boxed{\operatorname{Gal}(K/\mathbb Q)\cong S_5}.
+\boxed{\operatorname{Gal}(K/\QQ)\cong S_5}.
 \]
 
 

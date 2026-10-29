@@ -122,7 +122,7 @@ The function $G$ is continuously differentiable near $(1,1,1)$.
 ::: pf-proof
 
 The function $G$ is a polynomial in $(x,y,z)$.
-Hence it is smooth, in particular $C^1$, on all of $\mathbb R^3$.
+Hence it is smooth, in particular $C^1$, on all of $\RR^3$.
 
 :::
 
@@ -132,11 +132,11 @@ Hence it is smooth, in particular $C^1$, on all of $\mathbb R^3$.
 
 There exist open neighborhoods
 \[
-N\subseteq\mathbb R^2
+N\subseteq\RR^2
 \]
 of $(1,1)$ and
 \[
-J\subseteq\mathbb R
+J\subseteq\RR
 \]
 of $1$, together with a continuously differentiable function
 \[
@@ -157,7 +157,7 @@ for every $(x,y)\in N$.
 
 Apply the implicit function theorem to
 \[
-G:\mathbb R^2\times\mathbb R\to\mathbb R
+G:\RR^2\times\RR\to\RR
 \]
 at the point
 \[
@@ -173,7 +173,7 @@ G
 \]
 is $C^1$ by step [](#s1-4){.pf-ref}, and the derivative with respect to the dependent variable $z$ is invertible as a linear map
 \[
-\mathbb R\to\mathbb R
+\RR\to\RR
 \]
 because
 \[

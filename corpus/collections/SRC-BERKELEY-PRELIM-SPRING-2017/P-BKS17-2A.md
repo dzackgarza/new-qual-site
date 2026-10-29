@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-10-02
-  note: Independently reviewed the supplied Berkeley Spring 2017 solution. Its displayed example uses $\log_2(x)$ for all $x\ne0$; the solution below uses $\log_2|x|$ so the example is defined on all of $\mathbb R$.
+  note: Independently reviewed the supplied Berkeley Spring 2017 solution. Its displayed example uses $\log_2(x)$ for all $x\ne0$; the solution below uses $\log_2|x|$ so the example is defined on all of $\RR$.
 - event: solution-written
   by: chatgpt
   date: 2026-10-02

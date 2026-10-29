@@ -11,7 +11,7 @@ review: draft
 ::: {.problem}
 Let
 \[
-\Omega=\mathbb C\setminus(-\infty,0]
+\Omega=\CC\setminus(-\infty,0]
 \]
 and let $\log z$ denote the branch of the complex logarithm on $\Omega$ that is real on the positive real axis.
 Show that for every $0<t<\infty$, the number of solutions $z\in\Omega$ to
@@ -36,7 +36,7 @@ S,
 \qquad
 S
 \coloneqq
-\{w\in\mathbb C:-\pi<\operatorname{Im}w<\pi\},
+\{w\in\CC:-\pi<\operatorname{Im}w<\pi\},
 \]
 with inverse
 \[
@@ -48,7 +48,7 @@ w\longmapsto e^w.
 
 This is the defining property of the branch of the logarithm on the slit plane
 \[
-\mathbb C\setminus(-\infty,0].
+\CC\setminus(-\infty,0].
 \]
 Its argument takes values in $(-\pi,\pi)$, so its image is exactly the stated horizontal strip, and exponentiation is its inverse.
 
@@ -215,7 +215,7 @@ a e^a=t.
 
 ::: pf-proof
 
-Step [](#s1-4){.pf-ref} gives $w=a\in\mathbb R$. The equation becomes
+Step [](#s1-4){.pf-ref} gives $w=a\in\RR$. The equation becomes
 \[
 a e^a=t.
 \]

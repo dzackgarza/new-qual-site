@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-5
 kind: problem
-title: Cohomology ring $H^*(\mathbb{RP}^\infty;\mathbb Z_{2k})$
+title: Cohomology ring $H^*(\mathbb{RP}^\infty;\ZZ_{2k})$
 classification:
   areas:
   - topology
@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Show the ring $H^*(\mathbb{RP}^\infty; \mathbb{Z}_{2k})$ is isomorphic to $\mathbb{Z}_{2k}[\alpha, \beta] / (2\alpha, 2\beta, \alpha^2 - k\beta)$ where $|\alpha| = 1$ and $|\beta| = 2$.
+Show the ring $H^*(\mathbb{RP}^\infty; \ZZ_{2k})$ is isomorphic to $\ZZ_{2k}[\alpha, \beta] / (2\alpha, 2\beta, \alpha^2 - k\beta)$ where $|\alpha| = 1$ and $|\beta| = 2$.
 :::
 
 ::: {.solution}
-Put $R=\mathbb Z_{2k}$. With the standard CW structure on $\mathbb{RP}^\infty$, there is one cell in each dimension and the cellular boundary is multiplication by $2$ in even dimensions and $0$ in odd dimensions. Hence the cellular cochain differential with coefficients in $R$ is
+Put $R=\ZZ_{2k}$. With the standard CW structure on $\mathbb{RP}^\infty$, there is one cell in each dimension and the cellular boundary is multiplication by $2$ in even dimensions and $0$ in odd dimensions. Hence the cellular cochain differential with coefficients in $R$ is
 \[
 \delta^q=
 \begin{cases}
@@ -42,8 +42,8 @@ Therefore
 H^q(\mathbb{RP}^\infty;R)\cong
 \begin{cases}
 R,&q=0,\\
-\ker(2:R\to R)=\{0,k\}\cong\mathbb Z_2,&q\text{ odd},\\
-R/2R\cong\mathbb Z_2,&q>0\text{ even}.
+\ker(2:R\to R)=\{0,k\}\cong\ZZ_2,&q\text{ odd},\\
+R/2R\cong\ZZ_2,&q>0\text{ even}.
 \end{cases}
 \]
 
@@ -60,12 +60,12 @@ But $\beta$ has additive order $2$, and $k^2\equiv k\pmod 2$, so
 \boxed{\alpha^2=k\beta.}
 \]
 
-Reduction of coefficients $R\to\mathbb Z_2$ sends $\beta$ to the nonzero class in $H^2(\mathbb{RP}^\infty;\mathbb Z_2)$, so $\beta^j$ is nonzero for every $j\ge1$. Likewise $\alpha\beta^j$ generates the odd-dimensional group in degree $2j+1$. Hence $\alpha,\beta$ generate the whole ring and there are no further relations. Therefore
+Reduction of coefficients $R\to\ZZ_2$ sends $\beta$ to the nonzero class in $H^2(\mathbb{RP}^\infty;\ZZ_2)$, so $\beta^j$ is nonzero for every $j\ge1$. Likewise $\alpha\beta^j$ generates the odd-dimensional group in degree $2j+1$. Hence $\alpha,\beta$ generate the whole ring and there are no further relations. Therefore
 \[
 \boxed{
-H^*(\mathbb{RP}^\infty;\mathbb Z_{2k})
+H^*(\mathbb{RP}^\infty;\ZZ_{2k})
 \cong
-\mathbb Z_{2k}[\alpha,\beta]/(2\alpha,2\beta,\alpha^2-k\beta),
+\ZZ_{2k}[\alpha,\beta]/(2\alpha,2\beta,\alpha^2-k\beta),
 \quad |\alpha|=1,\ |\beta|=2.
 }
 \]

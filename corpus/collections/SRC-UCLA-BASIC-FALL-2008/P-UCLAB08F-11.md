@@ -57,7 +57,7 @@ Determine the condition on $\mathbf f$ necessary and sufficient for a solution t
 ::: {.solution}
 Let
 \[
-\mathbf 1=(1,\ldots,1)^t\in\mathbb R^n.
+\mathbf 1=(1,\ldots,1)^t\in\RR^n.
 \]
 
 ::: pf
@@ -180,7 +180,7 @@ The range of $A$ is
 \mathbf1^\perp
 =
 \left\{
-\mathbf y\in\mathbb R^n:
+\mathbf y\in\RR^n:
 \sum_{j=0}^{n-1}y_j=0
 \right\}.
 \]

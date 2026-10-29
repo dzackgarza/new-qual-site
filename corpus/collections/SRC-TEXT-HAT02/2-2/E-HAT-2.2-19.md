@@ -44,7 +44,7 @@ Thus its reduced cellular chain groups are
 \[
 \widetilde C_i(Y)\cong
 \begin{cases}
-\mathbb Z,&m<i\le n,\\
+\ZZ,&m<i\le n,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -63,7 +63,7 @@ while $d_{m+1}=0$ because its target chain group has been collapsed away.
 ::: {.pf-step #s1}
 If $n=m+1$, then
 \[
-\widetilde H_n(Y)\cong\mathbb Z
+\widetilde H_n(Y)\cong\ZZ
 \]
 and all other reduced homology groups vanish.
 
@@ -84,8 +84,8 @@ In the bottom degree $m+1$,
 \[
 \widetilde H_{m+1}(Y)\cong
 \begin{cases}
-\mathbb Z,&m+1\text{ even},\\
-\mathbb Z_2,&m+1\text{ odd}.
+\ZZ,&m+1\text{ even},\\
+\ZZ_2,&m+1\text{ odd}.
 \end{cases}
 \]
 
@@ -100,7 +100,7 @@ For $m+1<i<n$,
 \[
 \widetilde H_i(Y)\cong
 \begin{cases}
-\mathbb Z_2,&i\text{ odd},\\
+\ZZ_2,&i\text{ odd},\\
 0,&i\text{ even}.
 \end{cases}
 \]
@@ -108,7 +108,7 @@ For $m+1<i<n$,
 ::: pf-proof
 If $i$ is even, $d_i=2$ is injective, so there are no cycles. If $i$ is odd, $d_i=0$ and $d_{i+1}=2$, giving
 \[
-H_i\cong\mathbb Z/2\mathbb Z.
+H_i\cong\ZZ/2\ZZ.
 \]
 :::
 
@@ -119,14 +119,14 @@ In the top degree $n$,
 \[
 \widetilde H_n(Y)\cong
 \begin{cases}
-\mathbb Z,&n\text{ odd},\\
+\ZZ,&n\text{ odd},\\
 0,&n\text{ even},
 \end{cases}
 \qquad(n>m+1).
 \]
 
 ::: pf-proof
-There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$, which is $\mathbb Z$ for odd $n$ and $0$ for even $n$.
+There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$, which is $\ZZ$ for odd $n$ and $0$ for even $n$.
 :::
 
 :::
@@ -134,7 +134,7 @@ There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$
 ::: pf-step
 Finally $Y$ is connected, so
 \[
-H_0(Y)\cong\mathbb Z.
+H_0(Y)\cong\ZZ.
 \]
 Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\mathbb{RP}^n/\mathbb{RP}^m$.
 :::

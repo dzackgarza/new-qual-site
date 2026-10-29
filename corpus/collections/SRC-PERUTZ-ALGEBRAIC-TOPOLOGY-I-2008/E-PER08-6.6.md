@@ -25,10 +25,10 @@ audit:
 ::: {.problem}
 You may use the following fact: the quotient $SU(2)/\{\pm I\}$ is isomorphic, as a topological group, to $SO(3)$.
 
-Define a regular tetrahedron as a set of four distinct, unordered, equidistant points on $S^2\subset\mathbb{R}^3$.
+Define a regular tetrahedron as a set of four distinct, unordered, equidistant points on $S^2\subset\RR^3$.
 Let $T$ be the space of regular tetrahedra.
 
-(a) Show that $\pi_1(T)$ has a central subgroup $Z\cong\mathbb{Z}/2$ such that $\pi_1(T)/Z\cong A_4$.
+(a) Show that $\pi_1(T)$ has a central subgroup $Z\cong\ZZ/2$ such that $\pi_1(T)/Z\cong A_4$.
 
 (b) Identify several (at least $5$) pairwise non-isomorphic, path connected covering spaces of $T$, describing them geometrically.
 
@@ -45,7 +45,7 @@ Let $2T\subset SU(2)$ and $2I\subset SU(2)$ denote the binary tetrahedral and bi
 
 ::: pf-step
 
-$\pi_1(T)\cong2T$, with central $\mathbb Z/2$ quotienting to $A_4$.
+$\pi_1(T)\cong2T$, with central $\ZZ/2$ quotienting to $A_4$.
 
 ::: pf-proof
 
@@ -60,7 +60,7 @@ Therefore
 \[
 1\to\{\pm1\}\to\pi_1(T)\to A_4\to1,
 \]
-and the kernel $\{\pm1\}\cong\mathbb Z/2$ is central.
+and the kernel $\{\pm1\}\cong\ZZ/2$ is central.
 
 :::
 

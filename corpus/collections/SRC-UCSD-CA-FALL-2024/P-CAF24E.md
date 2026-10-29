@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f_n : \mathbb{D} \to \mathbb{C}$ be holomorphic functions such that
+Let $f_n : \mathbb{D} \to \CC$ be holomorphic functions such that
 \[
 \int_{\mathbb{D}} |f_n|\, dx\, dy \le 1, \qquad \forall n \ge 1.
 \]

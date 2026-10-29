@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/Fall85_extracted.md; Flash appends stray glyphs after the field name, which the card restores as the explicitly named field $\mathbb Z_5=\mathbb F_5$.
+  note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/Fall85_extracted.md; Flash appends stray glyphs after the field name, which the card restores as the explicitly named field $\ZZ_5=\mathbb F_5$.
 ---
 
 ::: {.problem}

@@ -45,7 +45,7 @@ The matrix $M$ cyclically permutes the standard basis vectors.
 
 ::: pf-proof
 
-Let $e_1,e_2,e_3$ be the standard basis of $\mathbb R^3$.
+Let $e_1,e_2,e_3$ be the standard basis of $\RR^3$.
 From the columns of $M$,
 $$
 Me_1=e_3,

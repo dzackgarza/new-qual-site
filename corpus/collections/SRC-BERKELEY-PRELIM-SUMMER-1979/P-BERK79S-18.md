@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E$ be a three-dimensional vector space over $\mathbb Q$.
+Let $E$ be a three-dimensional vector space over $\QQ$.
 Suppose $T:E\to E$ is linear and
 \[
 Tx=y,

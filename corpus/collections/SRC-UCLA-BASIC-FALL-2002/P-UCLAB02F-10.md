@@ -21,7 +21,7 @@ Let $A$ be an $n\times n$ complex matrix satisfying
 A^*A=AA^*,
 \]
 where $A^*$ is the adjoint of $A$.
-Let $V=\mathbb C^n$, regarded as an inner product space with its standard inner product, and view $A:V\to V$ as a linear map.
+Let $V=\CC^n$, regarded as an inner product space with its standard inner product, and view $A:V\to V$ as a linear map.
 Prove that there exists an orthonormal basis of $V$ consisting of eigenvectors of $A$; that is, prove this form of the spectral theorem for normal operators.
 :::
 
@@ -111,7 +111,7 @@ The matrix $A$ has a nonzero eigenvector.
 
 ::: pf-proof
 
-The characteristic polynomial of $A$ has degree $n$. For $n\ge1$, the fundamental theorem of algebra gives a root $\lambda\in\mathbb C$. Hence
+The characteristic polynomial of $A$ has degree $n$. For $n\ge1$, the fundamental theorem of algebra gives a root $\lambda\in\CC$. Hence
 \[
 \det(A-\lambda I)=0,
 \]
@@ -189,14 +189,14 @@ Thus the restriction is normal.
 
 ::: {.pf-step #s1-6}
 
-Every normal operator on $\mathbb C^n$ has an orthonormal basis of eigenvectors.
+Every normal operator on $\CC^n$ has an orthonormal basis of eigenvectors.
 
 
 ::: pf-proof
 
 For $n=1$, every nonzero vector, after normalization, is an orthonormal eigenbasis.
 
-Assume the assertion holds in dimension $n-1$, and let $A$ be normal on $\mathbb C^n$. By step [](#s1-3){.pf-ref}, choose a nonzero eigenvector $v_1$ and normalize it so that
+Assume the assertion holds in dimension $n-1$, and let $A$ be normal on $\CC^n$. By step [](#s1-3){.pf-ref}, choose a nonzero eigenvector $v_1$ and normalize it so that
 \[
 \|v_1\|=1.
 \]
@@ -212,7 +212,7 @@ of $v_1^\perp$ consisting of eigenvectors of the restriction, hence of $A$. Cons
 \[
 v_1,v_2,\ldots,v_n
 \]
-is an orthonormal basis of $\mathbb C^n$ consisting entirely of eigenvectors of $A$.
+is an orthonormal basis of $\CC^n$ consisting entirely of eigenvectors of $A$.
 
 :::
 

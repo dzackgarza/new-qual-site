@@ -26,10 +26,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $K \subset \mathbb{R}^2$ be compact.
+Let $K \subset \RR^2$ be compact.
 Given $\delta > 0$, consider the set
 $$
-K_\delta := \{x \in \mathbb{R}^2 : d(x, K) := \inf_{y \in K} |x - y| = \delta\},
+K_\delta := \{x \in \RR^2 : d(x, K) := \inf_{y \in K} |x - y| = \delta\},
 $$
 that is, the collection of points at distance $\delta$ from $K$.
 
@@ -39,7 +39,7 @@ that is, the collection of points at distance $\delta$ from $K$.
 $$
 L^2(B_\epsilon(x) \cap K_\delta^c) \geq \frac{\pi \epsilon^2}{4},
 $$
-where $L^2$ is the Lebesgue measure on $\mathbb{R}^2$, $B_\epsilon(x)$ is the ball of radius $\epsilon$ centered at $x$ and $K_\delta^c = \mathbb{R}^2 \setminus K_\delta$.
+where $L^2$ is the Lebesgue measure on $\RR^2$, $B_\epsilon(x)$ is the ball of radius $\epsilon$ centered at $x$ and $K_\delta^c = \RR^2 \setminus K_\delta$.
 
 (3) Using the Lebesgue differentiation theorem show that $L^2(K_\delta) = 0$.
 :::
@@ -58,7 +58,7 @@ The distance function
 \[
 d_K(x):=d(x,K)
 \]
-is $1$-Lipschitz, since for all $x,z\in\mathbb R^2$,
+is $1$-Lipschitz, since for all $x,z\in\RR^2$,
 \[
 |d_K(x)-d_K(z)|\le |x-z|.
 \]

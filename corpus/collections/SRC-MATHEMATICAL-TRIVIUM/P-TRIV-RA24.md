@@ -42,7 +42,7 @@ $$
 
 ::: pf-proof
 
-Both powers $x^{-4}$ and $x^4$ are even functions on $\mathbb R\setminus\{0\}$.
+Both powers $x^{-4}$ and $x^4$ are even functions on $\RR\setminus\{0\}$.
 
 :::
 
@@ -126,7 +126,7 @@ and
 $$
 \int_1^\infty e^{-x^4}\,dx<\infty.
 $$
-Thus the integral over $\mathbb R$ converges absolutely.
+Thus the integral over $\RR$ converges absolutely.
 
 :::
 
@@ -147,7 +147,7 @@ $$
 ::: pf-proof
 
 By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, $F$ is an absolutely integrable odd function on
-$\mathbb R$. Therefore its integral over the symmetric domain $\mathbb R$ is
+$\RR$. Therefore its integral over the symmetric domain $\RR$ is
 zero.
 
 :::

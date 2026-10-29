@@ -62,11 +62,11 @@ r\ge1.
 ::: pf-proof
 
 If $r=0$, the surface would equal its $1$-skeleton, a graph with one vertex and two edges.
-Its second homology with $\mathbb Z/2$ coefficients would therefore vanish.
+Its second homology with $\ZZ/2$ coefficients would therefore vanish.
 
 On the other hand, every connected compact surface without boundary has a mod-$2$ fundamental class, so
 \[
-H_2(S;\mathbb Z/2)\cong\mathbb Z/2.
+H_2(S;\ZZ/2)\cong\ZZ/2.
 \]
 This contradiction shows that at least one $2$-cell is present.
 

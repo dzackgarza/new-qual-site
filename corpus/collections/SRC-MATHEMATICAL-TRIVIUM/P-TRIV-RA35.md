@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Find Jacobi matrix and Jacobian for the change of coordinates in $\mathbb { R } ^ { 3 }$ from Cartesian coordinates to
+Find Jacobi matrix and Jacobian for the change of coordinates in $\RR ^ { 3 }$ from Cartesian coordinates to
 
 (a) spherical coordinates,
 
 (b) cylindrical coordinates.
 
-In what regions of $\mathbb { R } ^ { 3 }$ are these coordinate changes regular?
+In what regions of $\RR ^ { 3 }$ are these coordinate changes regular?
 :::
 
 ::: {.solution}

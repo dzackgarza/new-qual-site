@@ -14,7 +14,7 @@ review: draft
 Let
 $$
 A=\alpha_1\sigma_1+\alpha_2\sigma_2+\alpha_3\sigma_3,
-\qquad \alpha_1,\alpha_2,\alpha_3\in\mathbb C,
+\qquad \alpha_1,\alpha_2,\alpha_3\in\CC,
 $$
 where
 $$
@@ -22,7 +22,7 @@ $$
 \sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
 \sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
 $$
-Let $\beta\in\mathbb C$ be any square root of $\alpha_1^2+\alpha_2^2+\alpha_3^2$.
+Let $\beta\in\CC$ be any square root of $\alpha_1^2+\alpha_2^2+\alpha_3^2$.
 
 (a) Prove that
 $$

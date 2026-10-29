@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 (a) Let $k$ be a positive integer.
-Compute the fundamental group of the space $X_k$ resulting from attaching a $2$-cell $e^2$ to a circle $S^1$ (identified with the unit circle in $\mathbb{C}$) by the map $\varphi : \partial e^2 = S^1 \to S^1$ defined by $\varphi(z) = z^k$.
+Compute the fundamental group of the space $X_k$ resulting from attaching a $2$-cell $e^2$ to a circle $S^1$ (identified with the unit circle in $\CC$) by the map $\varphi : \partial e^2 = S^1 \to S^1$ defined by $\varphi(z) = z^k$.
 
 (b) How many path-connected covering spaces of $X_{30}$ are there, up to equivalence (isomorphism)?
 :::
@@ -37,7 +37,7 @@ The attaching map $z\mapsto z^k$ has degree $k$ on the circle.
 ::: pf-step
 Van Kampen gives
 $$
-\boxed{\pi_1(X_k)\cong\langle a\mid a^k=1\rangle\cong\mathbb Z/k.}
+\boxed{\pi_1(X_k)\cong\langle a\mid a^k=1\rangle\cong\ZZ/k.}
 $$
 
 ::: pf-proof
@@ -47,7 +47,7 @@ The $2$-cell imposes precisely the relation that the generator of the circle has
 :::
 
 ::: {.pf-step #coverings-correspond-to-subgroups-z30}
-Path-connected covering spaces of $X_{30}$ up to equivalence correspond to conjugacy classes of subgroups of $\mathbb Z/30$.
+Path-connected covering spaces of $X_{30}$ up to equivalence correspond to conjugacy classes of subgroups of $\ZZ/30$.
 
 ::: pf-proof
 The CW complex is connected, locally path-connected, and semilocally simply connected, so the standard covering classification applies. The group is abelian, so conjugacy does nothing.
@@ -67,7 +67,7 @@ $$
 positive divisors.
 
 ::: pf-proof
-Subgroups of $\mathbb Z/n$ are uniquely determined by their order, and subgroup orders are exactly the divisors of $n$.
+Subgroups of $\ZZ/n$ are uniquely determined by their order, and subgroup orders are exactly the divisors of $n$.
 :::
 
 :::

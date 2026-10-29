@@ -40,7 +40,7 @@ X=CG
 with cone point $c$.
 The graph $G$ has $4$ vertices and $6$ edges, hence
 \[
-\widetilde H_1(G)\cong\mathbb Z^{6-4+1}=\mathbb Z^3.
+\widetilde H_1(G)\cong\ZZ^{6-4+1}=\ZZ^3.
 \]
 
 ::: pf
@@ -51,7 +51,7 @@ At the cone point $c$,
 \[
 H_n(X,X-\{c\})\cong
 \begin{cases}
-\mathbb Z^3,&n=2,\\
+\ZZ^3,&n=2,\\
 0,&n\ne2.
 \end{cases}
 \]
@@ -74,7 +74,7 @@ If $x$ lies in the interior of one of the four radial edges from $c$ to a vertex
 \[
 H_n(X,X-\{x\})\cong
 \begin{cases}
-\mathbb Z^2,&n=2,\\
+\ZZ^2,&n=2,\\
 0,&n\ne2.
 \end{cases}
 \]
@@ -83,13 +83,13 @@ H_n(X,X-\{x\})\cong
 
 Three triangular $2$-cells meet along each such radial edge. A neighborhood of $x$ is homeomorphic to
 \[
-\mathbb R\times C(P_3),
+\RR\times C(P_3),
 \]
-where $P_3$ is a discrete set of three points and $x$ corresponds to $(0,\text{cone point})$. Local homology is shifted by the open $\mathbb R$ factor, so
+where $P_3$ is a discrete set of three points and $x$ corresponds to $(0,\text{cone point})$. Local homology is shifted by the open $\RR$ factor, so
 \[
 H_n(X,X-\{x\})\cong\widetilde H_{n-2}(P_3).
 \]
-Since $\widetilde H_0(P_3)\cong\mathbb Z^2$, the claim follows.
+Since $\widetilde H_0(P_3)\cong\ZZ^2$, the claim follows.
 
 :::
 
@@ -101,14 +101,14 @@ If $x$ lies in the interior of one of the six triangular $2$-cells, then
 \[
 H_n(X,X-\{x\})\cong
 \begin{cases}
-\mathbb Z,&n=2,\\
+\ZZ,&n=2,\\
 0,&n\ne2.
 \end{cases}
 \]
 
 ::: pf-proof
 
-Such a point has a neighborhood homeomorphic to $\mathbb R^2$, whose local homology is $\mathbb Z$ in degree $2$ and zero otherwise.
+Such a point has a neighborhood homeomorphic to $\RR^2$, whose local homology is $\ZZ$ in degree $2$ and zero otherwise.
 
 :::
 
@@ -141,17 +141,17 @@ The local homology in $\partial X=G$ is
 \[
 H_n(G,G-\{x\})\cong
 \begin{cases}
-\mathbb Z,&n=1,\quad x\text{ in the interior of an edge},\\
-\mathbb Z^2,&n=1,\quad x\text{ a vertex},\\
+\ZZ,&n=1,\quad x\text{ in the interior of an edge},\\
+\ZZ^2,&n=1,\quad x\text{ a vertex},\\
 0,&\text{otherwise}.
 \end{cases}
 \]
 
 ::: pf-proof
 
-At an interior edge point, $G$ is locally a line, giving local $H_1\cong\mathbb Z$. At a vertex, three half-edges meet. The local link is three points, so
+At an interior edge point, $G$ is locally a line, giving local $H_1\cong\ZZ$. At a vertex, three half-edges meet. The local link is three points, so
 \[
-H_1(G,G-\{x\})\cong\widetilde H_0(P_3)\cong\mathbb Z^2.
+H_1(G,G-\{x\})\cong\widetilde H_0(P_3)\cong\ZZ^2.
 \]
 All other local groups vanish.
 

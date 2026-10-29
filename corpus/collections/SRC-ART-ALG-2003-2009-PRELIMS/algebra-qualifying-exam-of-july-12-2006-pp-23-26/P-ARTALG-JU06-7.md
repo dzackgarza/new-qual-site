@@ -69,7 +69,7 @@ splitting field and $E/\mathbb F_p$ is Galois [@DF04]. Explicitly,
 $$
 \operatorname{Gal}(E/\mathbb F_p)
 =\{x\mapsto x^{p^j}:0\leq j<n\}
-\cong\mathbb Z/n\mathbb Z.
+\cong\ZZ/n\ZZ.
 $$
 For $n=1$ this is the trivial group.
 

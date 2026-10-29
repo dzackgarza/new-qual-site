@@ -49,11 +49,11 @@ Consider the following conditions.
 
 a) $T$ maps $\RR \cup \{ \infty \}$ onto itself.
 
-b) It is possible to choose $a , b , c , d \in \mathbb { R }$
+b) It is possible to choose $a , b , c , d \in \RR$
 
-c) ${ \overline { { T z } } } = T ( { \overline { { z } } } )$ for every $z \in \mathbb { C } \cup \infty$
+c) ${ \overline { { T z } } } = T ( { \overline { { z } } } )$ for every $z \in \CC \cup \infty$
 
-d) There exist $\alpha \in \mathbb { R }$ and $\beta \in \mathbb { C } \backslash \mathbb { R }$ satisfying $T(\alpha) = \alpha$ and $T ( \overline { { \beta } } ) = \overline { { T \beta } }$
+d) There exist $\alpha \in \RR$ and $\beta \in \CC \backslash \RR$ satisfying $T(\alpha) = \alpha$ and $T ( \overline { { \beta } } ) = \overline { { T \beta } }$
 
 Prove that (a), (b), and (c) are equivalent. Prove that (d) implies these
 conditions, and show that the converse need not hold.

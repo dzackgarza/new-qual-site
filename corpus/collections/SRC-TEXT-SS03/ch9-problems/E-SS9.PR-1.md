@@ -48,7 +48,7 @@ exists with $S _ { 3 } ( z ) = \wp ( z ) + c _ { 3 }$ , and $c _ { 3 } = \tilde 
 :::
 
 ::: {.solution}
-Write \(\Lambda=\{n+m\tau:n,m\in\mathbb Z\}\), with \(\Im\tau\ne0\). Recall
+Write \(\Lambda=\{n+m\tau:n,m\in\ZZ\}\), with \(\Im\tau\ne0\). Recall
 \[
 \wp(z)=\frac1{z^2}+\sum_{\omega\in\Lambda\setminus\{0\}}
 \left(\frac1{(z+\omega)^2}-\frac1{\omega^2}\right).
@@ -95,11 +95,11 @@ S_1(z)=\wp(z)+c_1.
 
 For summation first in \(n\), define
 \[
-F(\tau):=\sum_{m\in\mathbb Z}\left(\sum_{n\in\mathbb Z}^{\!*}\frac1{(n+m\tau)^2}\right),
+F(\tau):=\sum_{m\in\ZZ}\left(\sum_{n\in\ZZ}^{\!*}\frac1{(n+m\tau)^2}\right),
 \]
 where the star omits \((n,m)=(0,0)\). For \(m=0\), the inner sum is \(2\zeta(2)=\pi^2/3\). For \(m\ne0\),
 \[
-\sum_{n\in\mathbb Z}\frac1{(n+m\tau)^2}
+\sum_{n\in\ZZ}\frac1{(n+m\tau)^2}
 =\pi^2\csc^2(\pi m\tau).
 \]
 Because \(|\csc(\pi m\tau)|=O(e^{-\pi|m|\,|\Im\tau|})\), the outer sum converges absolutely. Thus \(F(\tau)\) exists, and absolute convergence of the corrected series in (1) gives
@@ -111,11 +111,11 @@ This is the forbidden Eisenstein series.
 Similarly, summing first in \(m\),
 \[
 \widetilde F(\tau)
-:=\sum_{n\in\mathbb Z}\left(\sum_{m\in\mathbb Z}^{\!*}\frac1{(n+m\tau)^2}\right).
+:=\sum_{n\in\ZZ}\left(\sum_{m\in\ZZ}^{\!*}\frac1{(n+m\tau)^2}\right).
 \]
 For \(n\ne0\), factor out \(\tau^{-2}\):
 \[
-\sum_{m\in\mathbb Z}\frac1{(n+m\tau)^2}
+\sum_{m\in\ZZ}\frac1{(n+m\tau)^2}
 =\tau^{-2}\pi^2\csc^2\!\left(\frac{\pi n}{\tau}\right),
 \]
 while the \(n=0\) term is \(\tau^{-2}\pi^2/3\). Since \(\Im(-1/\tau)>0\) when \(\Im\tau>0\), these terms again decay exponentially in \(|n|\). Hence \(\widetilde F(\tau)\) converges and

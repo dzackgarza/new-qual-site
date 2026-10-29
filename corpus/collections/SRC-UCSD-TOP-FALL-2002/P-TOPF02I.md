@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Which of the following functions is a Morse function on the standard unit sphere $S^2\subset\mathbb R^3$?
+Which of the following functions is a Morse function on the standard unit sphere $S^2\subset\RR^3$?
 $$
 f_1(x,y,z)=z^2,
 \qquad

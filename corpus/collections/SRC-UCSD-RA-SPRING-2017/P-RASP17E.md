@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-For $t > 0$, let $A_t = \begin{pmatrix} t & 0 \\ 0 & t^{-1} \end{pmatrix}$ and for $f : \mathbb{R}^2 \to \mathbb{C}$ let $T_t f(x) = f(A_t x)$ for $x \in \mathbb{R}^2$.
+For $t > 0$, let $A_t = \begin{pmatrix} t & 0 \\ 0 & t^{-1} \end{pmatrix}$ and for $f : \RR^2 \to \CC$ let $T_t f(x) = f(A_t x)$ for $x \in \RR^2$.
 
-1. Show $\|T_t f\|_2 = \|f\|_2$ for all $f \in L^2(\mathbb{R}^2, m)$.
+1. Show $\|T_t f\|_2 = \|f\|_2$ for all $f \in L^2(\RR^2, m)$.
 
-2. Explain why $\lim_{t \to 1} \|T_t f - f\|_2 = 0$ for all $f \in C_c(\mathbb{R}^2)$.
+2. Explain why $\lim_{t \to 1} \|T_t f - f\|_2 = 0$ for all $f \in C_c(\RR^2)$.
 
-3. Show $\lim_{t \to 1} \|T_t f - f\|_2 = 0$ for all $f \in L^2(\mathbb{R}^2, m)$.
+3. Show $\lim_{t \to 1} \|T_t f - f\|_2 = 0$ for all $f \in L^2(\RR^2, m)$.
 :::
 
 ::: {.solution}
@@ -75,7 +75,7 @@ step [](#p1-s2){.pf-ref}.
 ::: pf
 
 ::: {.pf-step #p2-s1}
-For $f \in C_c(\mathbb{R}^2)$, $f$ is uniformly continuous.
+For $f \in C_c(\RR^2)$, $f$ is uniformly continuous.
 
 ::: pf-proof
 continuous functions with compact support are uniformly continuous.
@@ -98,7 +98,7 @@ Hence $T_t f(x) = f(A_t x) \to f(x)$ uniformly, with all differences supported i
 ::: pf-proof
 Let $K=\operatorname{supp}f$. For $t\in[1/2,2]$, the support of $T_tf$ is $A_t^{-1}K$, and the union of these sets is contained in a fixed compact set $K'$. On $K'$, $A_tx\to x$ uniformly as $t\to1$, so uniform continuity of $f$ gives
 \[
-\sup_{x\in\mathbb R^2}|f(A_tx)-f(x)|\to0.
+\sup_{x\in\RR^2}|f(A_tx)-f(x)|\to0.
 \]
 Since $T_tf-f$ vanishes outside $K'\cup K$ for $t$ near $1$,
 \[
@@ -116,7 +116,7 @@ Since $T_tf-f$ vanishes outside $K'\cup K$ for $t$ near $1$,
 ::: pf
 
 ::: {.pf-step #p3-s1}
-$C_c(\mathbb{R}^2)$ is dense in $L^2(\mathbb{R}^2)$.
+$C_c(\RR^2)$ is dense in $L^2(\RR^2)$.
 
 ::: pf-proof
 standard density result.

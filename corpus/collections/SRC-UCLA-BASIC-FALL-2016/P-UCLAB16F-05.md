@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-05
 kind: problem
-title: Multipliers preserving a finite $\mathbb Q$-span of complex numbers are algebraic
+title: Multipliers preserving a finite $\QQ$-span of complex numbers are algebraic
 classification:
   areas: [prelim]
   topics: []
@@ -29,15 +29,15 @@ Let $\alpha_1, \ldots, \alpha_n$ be complex numbers, not all zero, and $V = \{\s
 
 ::: {.pf-step #s1-1}
 
-The $\mathbb Q$-dimension of $V$ satisfies
+The $\QQ$-dimension of $V$ satisfies
 \[
-1\le \dim_{\mathbb Q}V\le n.
+1\le \dim_{\QQ}V\le n.
 \]
 
 
 ::: pf-proof
 
-The space $V$ is generated over $\mathbb Q$ by the $n$ vectors
+The space $V$ is generated over $\QQ$ by the $n$ vectors
 \[
 \alpha_1,\ldots,\alpha_n,
 \]
@@ -92,13 +92,13 @@ Thus the claim follows by induction.
 
 Let
 \[
-d=\dim_{\mathbb Q}V.
+d=\dim_{\QQ}V.
 \]
 Then the $d+1$ vectors
 \[
 v,\beta v,\beta^2v,\ldots,\beta^dv
 \]
-are linearly dependent over $\mathbb Q$.
+are linearly dependent over $\QQ$.
 
 
 ::: pf-proof
@@ -158,7 +158,7 @@ Because $v$ is a nonzero complex number, division by $v$ gives the displayed sca
 Thus $\beta$ is a root of a nonzero polynomial
 \[
 p(X)=\sum_{k=0}^d c_kX^k
-\in\mathbb Q[X]
+\in\QQ[X]
 \]
 of degree at most $d\le n$.
 
@@ -201,7 +201,7 @@ The exponent
 n-\deg p
 \]
 is a nonnegative integer by step [](#s1-6){.pf-ref}.
-Thus $P\in\mathbb Q[X]$ has degree exactly $n$.
+Thus $P\in\QQ[X]$ has degree exactly $n$.
 Since
 \[
 p(\beta)=0,

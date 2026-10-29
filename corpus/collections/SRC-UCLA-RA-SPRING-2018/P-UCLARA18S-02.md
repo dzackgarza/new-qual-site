@@ -17,22 +17,22 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Given $f\in L^2(\mathbb R)$ and $h>0$, define
+Problem 2. Given $f\in L^2(\RR)$ and $h>0$, define
 \[
-Q(f,h)=\int_{\mathbb R}\frac{2f(x)-f(x+h)-f(x-h)}{h^2}\,\overline{f(x)}\,dx.
+Q(f,h)=\int_{\RR}\frac{2f(x)-f(x+h)-f(x-h)}{h^2}\,\overline{f(x)}\,dx.
 \]
 
 (a) Show that
 \[
 Q(f,h)\ge0
 \]
-for all $f\in L^2(\mathbb R)$ and all $h>0$.
+for all $f\in L^2(\RR)$ and all $h>0$.
 
 (b) Show that the set
 \[
-E=\left\{f\in L^2(\mathbb R):\limsup_{h\to0}Q(f,h)\le1\right\}
+E=\left\{f\in L^2(\RR):\limsup_{h\to0}Q(f,h)\le1\right\}
 \]
-is closed in $L^2(\mathbb R)$.
+is closed in $L^2(\RR)$.
 :::
 
 ::: {.solution}
@@ -41,13 +41,13 @@ is closed in $L^2(\mathbb R)$.
 
 ::: {.pf-step #s1-1}
 
-For every $f\in L^2(\mathbb R)$ and $h>0$,
+For every $f\in L^2(\RR)$ and $h>0$,
 \[
 \boxed{
 Q(f,h)
 =
 \frac1{h^2}
-\int_{\mathbb R}|f(x+h)-f(x)|^2\,dx}.
+\int_{\RR}|f(x+h)-f(x)|^2\,dx}.
 \]
 
 
@@ -57,13 +57,13 @@ Set
 \[
 A_h
 =
-\int_{\mathbb R}f(x+h)\overline{f(x)}\,dx.
+\int_{\RR}f(x+h)\overline{f(x)}\,dx.
 \]
 By the change of variables $y=x-h$,
 \[
-\int_{\mathbb R}f(x-h)\overline{f(x)}\,dx
+\int_{\RR}f(x-h)\overline{f(x)}\,dx
 =
-\int_{\mathbb R}f(y)\overline{f(y+h)}\,dy
+\int_{\RR}f(y)\overline{f(y+h)}\,dy
 =
 \overline{A_h}.
 \]
@@ -123,7 +123,7 @@ Let $\widehat f$ denote the unitary Fourier transform of $f$. Then
 \boxed{
 Q(f,h)
 =
-\int_{\mathbb R}
+\int_{\RR}
 \frac{4\sin^2(h\xi/2)}{h^2}
 |\widehat f(\xi)|^2\,d\xi}.
 \]
@@ -143,15 +143,15 @@ By Plancherel and step [](#s1-1){.pf-ref},
 Q(f,h)
 &=
 \frac1{h^2}
-\int_{\mathbb R}
+\int_{\RR}
 |e^{ih\xi}-1|^2
 |\widehat f(\xi)|^2\,d\xi\\
 &=
-\int_{\mathbb R}
+\int_{\RR}
 \frac{2-2\cos(h\xi)}{h^2}
 |\widehat f(\xi)|^2\,d\xi\\
 &=
-\int_{\mathbb R}
+\int_{\RR}
 \frac{4\sin^2(h\xi/2)}{h^2}
 |\widehat f(\xi)|^2\,d\xi.
 \end{aligned}
@@ -163,7 +163,7 @@ Q(f,h)
 
 ::: {.pf-step #s1-4}
 
-For every $\xi\in\mathbb R$,
+For every $\xi\in\RR$,
 \[
 \frac{4\sin^2(h\xi/2)}{h^2}
 \longrightarrow
@@ -197,12 +197,12 @@ The bound follows from
 
 ::: {.pf-step #s1-5}
 
-For every $f\in L^2(\mathbb R)$,
+For every $f\in L^2(\RR)$,
 \[
 \boxed{
 \lim_{h\to0}Q(f,h)
 =
-\int_{\mathbb R}
+\int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi}
 \]
 as an equality in $[0,\infty]$.
@@ -212,7 +212,7 @@ as an equality in $[0,\infty]$.
 
 If
 \[
-\int_{\mathbb R}\xi^2|\widehat f(\xi)|^2\,d\xi<\infty,
+\int_{\RR}\xi^2|\widehat f(\xi)|^2\,d\xi<\infty,
 \]
 then steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} allow the dominated convergence theorem, yielding
 the equality.
@@ -223,12 +223,12 @@ gives
 \begin{aligned}
 \liminf_{h\to0}Q(f,h)
 &\ge
-\int_{\mathbb R}
+\int_{\RR}
 \liminf_{h\to0}
 \frac{4\sin^2(h\xi/2)}{h^2}
 |\widehat f(\xi)|^2\,d\xi\\
 &=
-\int_{\mathbb R}
+\int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi
 =\infty.
 \end{aligned}
@@ -247,8 +247,8 @@ Consequently,
 E
 =
 \left\{
-f\in L^2(\mathbb R):
-\int_{\mathbb R}
+f\in L^2(\RR):
+\int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi
 \le1
 \right\}}.
@@ -276,17 +276,17 @@ f_n\in E
 \qquad\text{and}\qquad
 f_n\to f
 \]
-in $L^2(\mathbb R)$. Then
+in $L^2(\RR)$. Then
 \[
 \widehat f_n\to\widehat f
 \]
-in $L^2(\mathbb R)$.
+in $L^2(\RR)$.
 
 
 ::: pf-proof
 
 This is Plancherel's theorem: the Fourier transform is unitary on
-$L^2(\mathbb R)$.
+$L^2(\RR)$.
 
 :::
 
@@ -314,7 +314,7 @@ everywhere. Apply this to the convergence in step [](#s1-7){.pf-ref}.
 
 One has
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi
 \le1.
 \]
@@ -325,17 +325,17 @@ One has
 By step [](#s1-8){.pf-ref} and Fatou's lemma,
 \[
 \begin{aligned}
-\int_{\mathbb R}
+\int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi
 &\le
 \liminf_{j\to\infty}
-\int_{\mathbb R}
+\int_{\RR}
 \xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi.
 \end{aligned}
 \]
 Since every $f_{n_j}\in E$, step [](#s1-6){.pf-ref} gives
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi
 \le1.
 \]
@@ -363,7 +363,7 @@ Apply the characterization in step [](#s1-6){.pf-ref} to the estimate in step []
 
 ::: {.pf-step #s1-11}
 
-Thus $E$ is closed in $L^2(\mathbb R)$.
+Thus $E$ is closed in $L^2(\RR)$.
 
 
 ::: pf-proof

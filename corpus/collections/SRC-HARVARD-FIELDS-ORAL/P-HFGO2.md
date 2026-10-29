@@ -22,37 +22,37 @@ audit:
 ---
 
 ::: {.problem}
-If $\alpha$ and $\beta$ are algebraic over $\mathbb Q$, prove that $\alpha+\beta$ is algebraic over $\mathbb Q$.
+If $\alpha$ and $\beta$ are algebraic over $\QQ$, prove that $\alpha+\beta$ is algebraic over $\QQ$.
 :::
 
 ::: {.solution}
 Set
 \[
-K=\mathbb Q(\alpha,\beta).
+K=\QQ(\alpha,\beta).
 \]
 
 ::: pf
 
 ::: pf-step
 
-The extension $K/\mathbb Q$ is finite.
+The extension $K/\QQ$ is finite.
 
 ::: pf-proof
 
-Since $\alpha$ is algebraic over $\mathbb Q$,
+Since $\alpha$ is algebraic over $\QQ$,
 \[
-[\mathbb Q(\alpha):\mathbb Q]<\infty.
+[\QQ(\alpha):\QQ]<\infty.
 \]
-The element $\beta$ is algebraic over $\mathbb Q$, hence also algebraic over
-the larger field $\mathbb Q(\alpha)$. Therefore
+The element $\beta$ is algebraic over $\QQ$, hence also algebraic over
+the larger field $\QQ(\alpha)$. Therefore
 \[
-[K:\mathbb Q(\alpha)]<\infty.
+[K:\QQ(\alpha)]<\infty.
 \]
 By the tower law,
 \[
-[K:\mathbb Q]
-=[K:\mathbb Q(\alpha)]
-[\mathbb Q(\alpha):\mathbb Q]
+[K:\QQ]
+=[K:\QQ(\alpha)]
+[\QQ(\alpha):\QQ]
 <\infty.
 \]
 
@@ -62,21 +62,21 @@ By the tower law,
 
 ::: {.pf-step #s2}
 
-Every element of the finite extension $K/\mathbb Q$ is algebraic over
-$\mathbb Q$.
+Every element of the finite extension $K/\QQ$ is algebraic over
+$\QQ$.
 
 ::: pf-proof
 
-Let $\gamma\in K$. If $d=[K:\mathbb Q]$, then the $d+1$ elements
+Let $\gamma\in K$. If $d=[K:\QQ]$, then the $d+1$ elements
 \[
 1,\gamma,\gamma^2,\ldots,\gamma^d
 \]
-are linearly dependent over $\mathbb Q$. Thus there are rational numbers
+are linearly dependent over $\QQ$. Thus there are rational numbers
 $c_0,\ldots,c_d$, not all zero, such that
 \[
 c_0+c_1\gamma+\cdots+c_d\gamma^d=0.
 \]
-Hence $\gamma$ satisfies a nonzero polynomial in $\mathbb Q[x]$.
+Hence $\gamma$ satisfies a nonzero polynomial in $\QQ[x]$.
 
 :::
 
@@ -84,7 +84,7 @@ Hence $\gamma$ satisfies a nonzero polynomial in $\mathbb Q[x]$.
 
 ::: pf-step
 
-Therefore $\alpha+\beta$ is algebraic over $\mathbb Q$.
+Therefore $\alpha+\beta$ is algebraic over $\QQ$.
 
 ::: pf-proof
 

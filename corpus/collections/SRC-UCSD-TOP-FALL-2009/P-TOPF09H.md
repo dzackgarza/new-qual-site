@@ -81,7 +81,7 @@ The induced map on fundamental groups of a connected covering is injective.
 
 ::: {.pf-step #s5}
 
-For $n=1$, the cyclic subgroup $\langle a\rangle\le F_2$ is isomorphic to $F_1\cong\mathbb Z$.
+For $n=1$, the cyclic subgroup $\langle a\rangle\le F_2$ is isomorphic to $F_1\cong\ZZ$.
 
 ::: pf-proof
 

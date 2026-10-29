@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Assume that $X$ is a path-connected, locally simply-connected space with fundamental group isomorphic to $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$.
+Assume that $X$ is a path-connected, locally simply-connected space with fundamental group isomorphic to $\ZZ_2 \times \ZZ_2 \times \ZZ_3$.
 How many path-connected covering spaces of $X$ are there, up to equivalence?
 :::
 
@@ -24,7 +24,7 @@ How many path-connected covering spaces of $X$ are there, up to equivalence?
 ::: {.pf-step #covers-correspond-to-subgroups}
 Path-connected covering spaces of $X$ up to equivalence correspond to conjugacy classes of subgroups of
 $$
-G=\mathbb Z/2\oplus\mathbb Z/2\oplus\mathbb Z/3.
+G=\ZZ/2\oplus\ZZ/2\oplus\ZZ/3.
 $$
 
 ::: pf-proof
@@ -43,16 +43,16 @@ Conjugation is trivial in an abelian group.
 :::
 
 ::: {.pf-step #subgroups-are-products}
-Every subgroup of $G$ is the product of a subgroup of $(\mathbb Z/2)^2$ and a subgroup of $\mathbb Z/3$.
+Every subgroup of $G$ is the product of a subgroup of $(\ZZ/2)^2$ and a subgroup of $\ZZ/3$.
 
 ::: pf-proof
-The $2$-primary and $3$-primary components are characteristic and have coprime orders. For any subgroup $H\le G$, its Sylow subgroups are $H\cap(\mathbb Z/2)^2$ and $H\cap\mathbb Z/3$, and $H$ is their direct product.
+The $2$-primary and $3$-primary components are characteristic and have coprime orders. For any subgroup $H\le G$, its Sylow subgroups are $H\cap(\ZZ/2)^2$ and $H\cap\ZZ/3$, and $H$ is their direct product.
 :::
 
 :::
 
 ::: {.pf-step #subgroup-counts}
-The group $(\mathbb Z/2)^2$ has exactly five subgroups, while $\mathbb Z/3$ has exactly two.
+The group $(\ZZ/2)^2$ has exactly five subgroups, while $\ZZ/3$ has exactly two.
 
 ::: pf-proof
 The first has the trivial subgroup, its three one-dimensional subspaces, and the whole group. A cyclic group of prime order has only the trivial subgroup and itself.

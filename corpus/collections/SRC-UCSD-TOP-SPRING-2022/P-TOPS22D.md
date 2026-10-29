@@ -30,12 +30,12 @@ No justification needed.
 Then $\Sigma_n$ is a covering space of $\Sigma_2$ for all $n \geq 3$.
 
 (d) Let $M$ be a connected closed $n$-dimensional manifold.
-Then $H_{n-1}(M; \mathbb{Z})$ is free.
+Then $H_{n-1}(M; \ZZ)$ is free.
 
 (e) Let $R$ be a PID, and $M, N$ be $R$-modules.
 Then $\operatorname{Ext}^n_R(M, N) = 0$ for $n \geq 1$.
 
-(f) As a ring, $H^*(\mathbb{CP}^n; \mathbb{Z}) = \mathbb{Z}[\alpha]/(\alpha^{n+1})$, where $\alpha$ has degree $2$.
+(f) As a ring, $H^*(\mathbb{CP}^n; \ZZ) = \ZZ[\alpha]/(\alpha^{n+1})$, where $\alpha$ has degree $2$.
 
 (g) The Klein bottle and the torus are covering spaces of each other.
 
@@ -55,7 +55,7 @@ The answers are
 $$\boxed{\text{(a) F, (b) T, (c) T, (d) F, (e) F, (f) T, (g) F, (h) T, (i) T, (j) F.}}$$
 
 ::: pf-proof
-No justification was requested. Brief checks: (a) infinite CW complexes can have infinitely generated homology; (b) abstract homotopy groups do not determine Postnikov $k$-invariants and hence need not determine homology; (c) an $(n-1)$-sheeted cover of $\Sigma_2$ has genus $n$, and such cyclic covers exist; (d) $H_1(\mathbb{RP}^2)=\mathbb Z/2$; (e) over a PID only Ext in degrees at least $2$ vanishes universally, while $\operatorname{Ext}^1(\mathbb Z/2,\mathbb Z)\ne0$; (f) is the standard ring computation; (g) the torus double-covers the Klein bottle but a nonabelian Klein-bottle group cannot inject into $\mathbb Z^2$; (h) a product is orientable exactly when both factors are, and $\mathbb{RP}^r$ is orientable exactly when $r$ is odd; (i) $H_i(\mathbb{RP}^n;\mathbb F_2)\ne0$ in every degree $0\le i\le n$, forcing at least one $i$-cell in any CW structure; (j) the unrestricted cohomological Künneth tensor formula can fail for spaces with infinite-dimensional homology, so finite-type hypotheses are needed for this form.
+No justification was requested. Brief checks: (a) infinite CW complexes can have infinitely generated homology; (b) abstract homotopy groups do not determine Postnikov $k$-invariants and hence need not determine homology; (c) an $(n-1)$-sheeted cover of $\Sigma_2$ has genus $n$, and such cyclic covers exist; (d) $H_1(\mathbb{RP}^2)=\ZZ/2$; (e) over a PID only Ext in degrees at least $2$ vanishes universally, while $\operatorname{Ext}^1(\ZZ/2,\ZZ)\ne0$; (f) is the standard ring computation; (g) the torus double-covers the Klein bottle but a nonabelian Klein-bottle group cannot inject into $\ZZ^2$; (h) a product is orientable exactly when both factors are, and $\mathbb{RP}^r$ is orientable exactly when $r$ is odd; (i) $H_i(\mathbb{RP}^n;\mathbb F_2)\ne0$ in every degree $0\le i\le n$, forcing at least one $i$-cell in any CW structure; (j) the unrestricted cohomological Künneth tensor formula can fail for spaces with infinite-dimensional homology, so finite-type hypotheses are needed for this form.
 :::
 
 :::

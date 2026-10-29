@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-(a) Prove that $\ell^1(\mathbb N)$ and $\ell^2(\mathbb N)$ are separable Banach spaces, while $\ell^\infty(\mathbb N)$ is not separable.
+(a) Prove that $\ell^1(\NN)$ and $\ell^2(\NN)$ are separable Banach spaces, while $\ell^\infty(\NN)$ is not separable.
 
 (b) Prove that there is no bounded linear surjection
 \[
-T:\ell^2(\mathbb N)\to\ell^1(\mathbb N).
+T:\ell^2(\NN)\to\ell^1(\NN).
 \]
 :::
 
@@ -31,7 +31,7 @@ T:\ell^2(\mathbb N)\to\ell^1(\mathbb N).
 
 ::: {.pf-step #s1-1}
 
-For $p\in\{1,2\}$, the space $\ell^p(\mathbb N)$ is complete.
+For $p\in\{1,2\}$, the space $\ell^p(\NN)$ is complete.
 
 
 ::: pf-proof
@@ -82,12 +82,12 @@ In particular $x-x^{(M)}\in\ell^p$, so $x\in\ell^p$, and $x^{(m)}\to x$ in $\ell
 
 ::: {.pf-step #s1-2}
 
-The spaces $\ell^1(\mathbb N)$ and $\ell^2(\mathbb N)$ are separable.
+The spaces $\ell^1(\NN)$ and $\ell^2(\NN)$ are separable.
 
 
 ::: pf-proof
 
-Let $\mathbb F_0$ be $\mathbb Q$ in the real case and $\mathbb Q+i\mathbb Q$ in the complex case. Define
+Let $\mathbb F_0$ be $\QQ$ in the real case and $\QQ+i\QQ$ in the complex case. Define
 \[
 D
 \coloneqq
@@ -127,12 +127,12 @@ Thus $D$ is countable and dense in both $\ell^1$ and $\ell^2$.
 
 ::: {.pf-step #s1-3}
 
-The space $\ell^\infty(\mathbb N)$ is not separable.
+The space $\ell^\infty(\NN)$ is not separable.
 
 
 ::: pf-proof
 
-For each subset $A\subset\mathbb N$, let
+For each subset $A\subset\NN$, let
 \[
 \chi_A(k)
 =
@@ -147,7 +147,7 @@ Then $\chi_A\in\ell^\infty$. If $A\ne B$, there is $k$ in their symmetric differ
 \]
 Thus
 \[
-\{\chi_A:A\subset\mathbb N\}
+\{\chi_A:A\subset\NN\}
 \]
 is an uncountable $1$-separated subset of $\ell^\infty$.
 

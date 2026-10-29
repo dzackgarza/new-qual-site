@@ -56,7 +56,7 @@ which is exactly $B$.
 :::
 
 ::: pf-step
-The converse can fail. Take the universe to be $\mathbb Z$, and define
+The converse can fail. Take the universe to be $\ZZ$, and define
 \[
 P(x): x=0,
 \qquad

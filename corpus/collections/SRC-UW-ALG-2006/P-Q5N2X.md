@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q5N2X
 kind: problem
-title: Irreducibility, splitting field, and Galois group of $x^n-z$ over $\mathbb{Q}(z)$
+title: Irreducibility, splitting field, and Galois group of $x^n-z$ over $\QQ(z)$
 classification:
   areas:
   - algebra
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ be the field $\mathbb Q(z)$ of rational functions in a variable $z$ with coeffiecients in the rational field $\mathbb Q$.
+Let $K$ be the field $\QQ(z)$ of rational functions in a variable $z$ with coeffiecients in the rational field $\QQ$.
 Let $n$ be a positive integer.
 Consider the polynomial $x^n-z\in K[x]$.
 

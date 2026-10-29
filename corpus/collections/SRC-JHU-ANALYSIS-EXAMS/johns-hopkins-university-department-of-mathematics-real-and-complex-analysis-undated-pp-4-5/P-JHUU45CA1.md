@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \in \mathbb{C}$.
-Prove that there is a constant $c \in \mathbb{C}$ such that $f = cg$.
+Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \in \CC$.
+Prove that there is a constant $c \in \CC$ such that $f = cg$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ If $g$ is not identically zero, the quotient $f/g$ extends to a bounded entire f
 ::: pf-proof
 
 Let $Z=\{z:g(z)=0\}$. The zeros of a nonzero entire
-function are isolated [@SS03]. On $\mathbb C\setminus Z$,
+function are isolated [@SS03]. On $\CC\setminus Z$,
 the quotient $h=f/g$ is holomorphic and satisfies
 $|h|\leq1$ by hypothesis. In a sufficiently small punctured
 disk around each point of $Z$, this bound makes the

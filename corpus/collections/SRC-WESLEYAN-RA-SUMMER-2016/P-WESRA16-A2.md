@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_0,f_1,\dots:\mathbb R^d\to\mathbb R$ be Lebesgue measurable.
+Let $f_0,f_1,\dots:\RR^d\to\RR$ be Lebesgue measurable.
 Prove that
 \[
 \{x:(f_0(x),f_1(x),\dots)\text{ converges}\}
@@ -28,7 +28,7 @@ is measurable.
 
 Let
 $$
-E=\{x\in\mathbb R^d:(f_n(x))_{n\ge0}\text{ converges in }\mathbb R\}.
+E=\{x\in\RR^d:(f_n(x))_{n\ge0}\text{ converges in }\RR\}.
 $$
 
 ::: pf
@@ -90,7 +90,7 @@ $$
 
 ::: pf-proof
 
-Fix $x\in\mathbb R^d$. By completeness of $\mathbb R$, the numerical sequence $(f_n(x))_{n\ge0}$ converges if and only if it is Cauchy.
+Fix $x\in\RR^d$. By completeness of $\RR$, the numerical sequence $(f_n(x))_{n\ge0}$ converges if and only if it is Cauchy.
 
 The Cauchy condition says that for every $\varepsilon>0$ there exists $N$ such that
 $$

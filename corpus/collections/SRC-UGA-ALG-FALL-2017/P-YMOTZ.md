@@ -50,8 +50,8 @@ By the Fundamental Theorem of Finitely Generated Abelian Groups, any finite abel
 ::: pf-step
 
 Partitions of the prime exponents:
-        - For $p = 2$: the partitions of 2 are $2$ and $1 + 1$, corresponding to $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
-        - For $p = 3$: the partitions of 2 are $2$ and $1 + 1$, corresponding to $\mathbb{Z}/9\mathbb{Z}$ and $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$.
+        - For $p = 2$: the partitions of 2 are $2$ and $1 + 1$, corresponding to $\ZZ/4\ZZ$ and $\ZZ/2\ZZ \times \ZZ/2\ZZ$.
+        - For $p = 3$: the partitions of 2 are $2$ and $1 + 1$, corresponding to $\ZZ/9\ZZ$ and $\ZZ/3\ZZ \times \ZZ/3\ZZ$.
 
 :::
 
@@ -61,10 +61,10 @@ There are $2 \times 2 = 4$ non-isomorphic abelian groups of order 36:
 
 :::
 
-1. $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/9\mathbb{Z} \cong \mathbb{Z}/36\mathbb{Z}$.
-2. $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/9\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/18\mathbb{Z}$.
-3. $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/12\mathbb{Z}$.
-4. $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z} \times \mathbb{Z}/6\mathbb{Z}$.
+1. $\ZZ/4\ZZ \times \ZZ/9\ZZ \cong \ZZ/36\ZZ$.
+2. $\ZZ/2\ZZ \times \ZZ/2\ZZ \times \ZZ/9\ZZ \cong \ZZ/2\ZZ \times \ZZ/18\ZZ$.
+3. $\ZZ/4\ZZ \times \ZZ/3\ZZ \times \ZZ/3\ZZ \cong \ZZ/3\ZZ \times \ZZ/12\ZZ$.
+4. $\ZZ/2\ZZ \times \ZZ/2\ZZ \times \ZZ/3\ZZ \times \ZZ/3\ZZ \cong \ZZ/6\ZZ \times \ZZ/6\ZZ$.
 
 :::
 
@@ -170,16 +170,16 @@ Full group product:
 
 Commutativity of elements:
         - Conjugation defines a homomorphism $\psi: H \to \operatorname{Aut}(N)$.
-        - Since $|N| = 3$, $\operatorname{Aut}(N) \cong (\mathbb{Z}/3\mathbb{Z})^\times \cong \mathbb{Z}/2\mathbb{Z}$.
-        - The commutator subgroup $[H, H] = [A_4, A_4] = V_4$, so the abelianization of $H$ is $H^{\text{ab}} \cong A_4/V_4 \cong \mathbb{Z}/3\mathbb{Z}$.
-        - Since $\gcd(3, 2) = 1$, there are no non-trivial homomorphisms from $A_4$ to $\mathbb{Z}/2\mathbb{Z}$, so $\psi$ is trivial.
+        - Since $|N| = 3$, $\operatorname{Aut}(N) \cong (\ZZ/3\ZZ)^\times \cong \ZZ/2\ZZ$.
+        - The commutator subgroup $[H, H] = [A_4, A_4] = V_4$, so the abelianization of $H$ is $H^{\text{ab}} \cong A_4/V_4 \cong \ZZ/3\ZZ$.
+        - Since $\gcd(3, 2) = 1$, there are no non-trivial homomorphisms from $A_4$ to $\ZZ/2\ZZ$, so $\psi$ is trivial.
         - Thus $h n h^{-1} = n$, i.e., $n h = h n$ for all $n \in N$ and $h \in H$.
 
 :::
 
 ::: pf-step
 
-Hence $G$ is the internal direct product $G \cong N \times H \cong \mathbb{Z}/3\mathbb{Z} \times A_4$.
+Hence $G$ is the internal direct product $G \cong N \times H \cong \ZZ/3\ZZ \times A_4$.
 
 :::
 

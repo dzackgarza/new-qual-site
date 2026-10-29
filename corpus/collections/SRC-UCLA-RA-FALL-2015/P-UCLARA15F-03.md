@@ -21,11 +21,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1_{\mathrm{loc}}(\mathbb{R}^d)$ be such that for some $0 < p < 1$, we have
+Let $f \in L^1_{\mathrm{loc}}(\RR^d)$ be such that for some $0 < p < 1$, we have
 \[
 \left| \int f(x) g(x)\,dx \right| \leq \left( \int |g(x)|^p\,dx \right)^{\frac{1}{p}},
 \]
-for all $g \in C_0(\mathbb{R}^d)$. Show that $f(x) = 0$ a.e. Here $C_0(\mathbb{R}^d)$ is the space of continuous functions with compact support on $\mathbb{R}^d$.
+for all $g \in C_0(\RR^d)$. Show that $f(x) = 0$ a.e. Here $C_0(\RR^d)$ is the space of continuous functions with compact support on $\RR^d$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ Fix
 
 Let
 \[
-K\subset\mathbb R^d
+K\subset\RR^d
 \]
 be compact.
 
@@ -73,9 +73,9 @@ Since \(f\in L^1_{\mathrm{loc}}\), it is integrable on some bounded neighborhood
 
 ::: pf-step
 
-By Urysohn's lemma on \(\mathbb R^d\), choose
+By Urysohn's lemma on \(\RR^d\), choose
 \[
-g\in C_c(\mathbb R^d)
+g\in C_c(\RR^d)
 \]
 such that
 \[
@@ -100,7 +100,7 @@ Euclidean space is normal, and \(K\) is closed while \(U\) is open with \(K\subs
 One has
 \[
 \left|
-\int_{\mathbb R^d}f(x)g(x)\,dx
+\int_{\RR^d}f(x)g(x)\,dx
 -
 \int_K f(x)\,dx
 \right|
@@ -150,7 +150,7 @@ By the hypothesis,
 
 ::: pf-proof
 
-This is the assumed inequality applied to the test function \(g\in C_c(\mathbb R^d)\).
+This is the assumed inequality applied to the test function \(g\in C_c(\RR^d)\).
 
 :::
 
@@ -430,7 +430,7 @@ The left-hand side is independent of \(N\), so its absolute value is bounded by 
 
 Since
 \[
-f\in L^1_{\mathrm{loc}}(\mathbb R^d),
+f\in L^1_{\mathrm{loc}}(\RR^d),
 \]
 the Lebesgue differentiation theorem gives, for almost every \(x\),
 \[
@@ -472,7 +472,7 @@ Therefore
 \boxed{
 f(x)=0}
 \]
-for almost every \(x\in\mathbb R^d\).
+for almost every \(x\in\RR^d\).
 
 
 ::: pf-proof

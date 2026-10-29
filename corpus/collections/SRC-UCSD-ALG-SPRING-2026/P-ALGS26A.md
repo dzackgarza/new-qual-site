@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Suppose $G$ is a group of order $5 \cdot 7 \cdot 11$.
 
-(a) Prove that $G \cong (\mathbb{Z}/11\mathbb{Z}) \rtimes (\mathbb{Z}/35\mathbb{Z})$.
+(a) Prove that $G \cong (\ZZ/11\ZZ) \rtimes (\ZZ/35\ZZ)$.
 
 (b) Prove that there are exactly two such groups up to isomorphism.
 :::
@@ -162,9 +162,9 @@ C_{35}/C_7\cong C_5\longrightarrow C_5\le C_{10}.
 \]
 Any two such isomorphisms differ by an automorphism of \(C_5\). The reduction map
 \[
-\operatorname{Aut}(C_{35})\cong(\mathbb Z/35\mathbb Z)^\times
+\operatorname{Aut}(C_{35})\cong(\ZZ/35\ZZ)^\times
 \longrightarrow
-(\mathbb Z/5\mathbb Z)^\times\cong\operatorname{Aut}(C_5)
+(\ZZ/5\ZZ)^\times\cong\operatorname{Aut}(C_5)
 \]
 is surjective: for any unit class modulo \(5\), choose by the Chinese remainder theorem a representative congruent to that class modulo \(5\) and to \(1\) modulo \(7\). Precomposing the action by the corresponding automorphism of \(C_{35}\) therefore carries any nontrivial action to any other, and the associated semidirect products are isomorphic.
 
@@ -178,7 +178,7 @@ A nontrivial action exists.
 
 ::: pf-proof
 
-The group \((\mathbb Z/11\mathbb Z)^\times\cong C_{10}\) contains an element of order \(5\); for example, multiplication by \(3\) has order \(5\) modulo \(11\). Map a generator of \(C_{35}\) to this automorphism.
+The group \((\ZZ/11\ZZ)^\times\cong C_{10}\) contains an element of order \(5\); for example, multiplication by \(3\) has order \(5\) modulo \(11\). Map a generator of \(C_{35}\) to this automorphism.
 
 :::
 

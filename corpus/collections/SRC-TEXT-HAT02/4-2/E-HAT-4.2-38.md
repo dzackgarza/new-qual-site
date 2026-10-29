@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show $\pi_3(S^1 \vee S^2)$ is not finitely generated as a module over $\mathbb{Z}[\pi_1(S^1 \vee S^2)]$ by considering Whitehead products in the universal cover, using the results in Example 4.52. Generalize this to $\pi_{i+j-1}(S^1 \vee S^i \vee S^j)$ for $i, j > 1$.
+Show $\pi_3(S^1 \vee S^2)$ is not finitely generated as a module over $\ZZ[\pi_1(S^1 \vee S^2)]$ by considering Whitehead products in the universal cover, using the results in Example 4.52. Generalize this to $\pi_{i+j-1}(S^1 \vee S^i \vee S^j)$ for $i, j > 1$.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ Let
 \[
 X=S^1\vee S^2.
 \]
-Its universal cover is an infinite line with a copy \(S_k^2\) of \(S^2\) attached at each integer \(k\in\mathbb Z\). Let
+Its universal cover is an infinite line with a copy \(S_k^2\) of \(S^2\) attached at each integer \(k\in\ZZ\). Let
 \[
 \iota_k\in\pi_2(\widetilde X)
 \]
@@ -57,13 +57,13 @@ Thus the difference
 \[
 d=b-a>0
 \]
-is invariant under the \(\mathbb Z[t,t^{-1}]\)-action. For every \(d\ge1\), the class
+is invariant under the \(\ZZ[t,t^{-1}]\)-action. For every \(d\ge1\), the class
 \[
 [\iota_0,\iota_d]
 \]
 lies in a different module orbit, and these classes are independent. Hence no finite set can generate all of them:
 \[
-\boxed{\pi_3(S^1\vee S^2)\text{ is not finitely generated over }\mathbb Z[\pi_1].}
+\boxed{\pi_3(S^1\vee S^2)\text{ is not finitely generated over }\ZZ[\pi_1].}
 \]
 
 More generally, let
@@ -83,6 +83,6 @@ are independent Hilton--Milnor summands. Deck translation sends
 so again the difference \(b-a\) labels infinitely many distinct module orbits. Therefore
 \[
 \boxed{\pi_{i+j-1}(S^1\vee S^i\vee S^j)
-\text{ is not finitely generated over }\mathbb Z[\pi_1].}
+\text{ is not finitely generated over }\ZZ[\pi_1].}
 \]
 :::

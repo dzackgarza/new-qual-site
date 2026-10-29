@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\varphi \in C_c^\infty(\mathbb{R}, [0, \infty))$ satisfy $\int_\mathbb{R} \varphi \, dm = 1$ and for $\varepsilon > 0$ let $\delta_\varepsilon(x) = \frac{1}{\varepsilon}\varphi\left(\frac{x}{\varepsilon}\right)$.
+Let $\varphi \in C_c^\infty(\RR, [0, \infty))$ satisfy $\int_\RR \varphi \, dm = 1$ and for $\varepsilon > 0$ let $\delta_\varepsilon(x) = \frac{1}{\varepsilon}\varphi\left(\frac{x}{\varepsilon}\right)$.
 
 1. If $-\infty < a < b < \infty$ and $h_\varepsilon(x) := \mathbf{1}_{[a,b]} * \delta_\varepsilon$, show $h_\varepsilon'(x) = \delta_\varepsilon(x - a) - \delta_\varepsilon(x - b)$.
 
-2. If $f \in C_c(\mathbb{R}, \mathbb{R})$ and $g \in L^1(\mathbb{R}, m)$ satisfy
+2. If $f \in C_c(\RR, \RR)$ and $g \in L^1(\RR, m)$ satisfy
 $$
-\int_\mathbb{R} f h' \, dm = -\int_\mathbb{R} g h \, dm \quad \text{for all } h \in C_c^\infty(\mathbb{R}),
+\int_\RR f h' \, dm = -\int_\RR g h \, dm \quad \text{for all } h \in C_c^\infty(\RR),
 $$
 show $f$ is absolutely continuous and $f' = g$ $m$-a.e.
 :::
@@ -47,7 +47,7 @@ Differentiate the mollified indicator.
 
 ::: pf-proof
 
-For every \(x\in\mathbb R\),
+For every \(x\in\RR\),
 \[
 h_\varepsilon(x)
 =\int_a^b\delta_\varepsilon(x-y)\,dy.
@@ -78,14 +78,14 @@ Define
 \[
 G(x):=\int_0^x g(t)\,dt.
 \]
-Because \(g\in L^1(\mathbb R)\), \(G\) is absolutely continuous on every bounded interval and
+Because \(g\in L^1(\RR)\), \(G\) is absolutely continuous on every bounded interval and
 \[
 G'=g
 \]
-almost everywhere. Therefore for every \(h\in C_c^\infty(\mathbb R)\), integration by parts for absolutely continuous functions gives
+almost everywhere. Therefore for every \(h\in C_c^\infty(\RR)\), integration by parts for absolutely continuous functions gives
 \[
-\int_\mathbb R G h'\,dm
-=-\int_\mathbb R g h\,dm.
+\int_\RR G h'\,dm
+=-\int_\RR g h\,dm.
 \]
 Subtracting this from the assumed identity for \(f\), the continuous function
 \[
@@ -93,8 +93,8 @@ u:=f-G
 \]
 satisfies
 \[
-\int_\mathbb R u h'\,dm=0
-\qquad\text{for every }h\in C_c^\infty(\mathbb R).
+\int_\RR u h'\,dm=0
+\qquad\text{for every }h\in C_c^\infty(\RR).
 \]
 Thus the distributional derivative of \(u\) is zero.
 
@@ -112,13 +112,13 @@ Let \(\delta_\varepsilon\) be the mollifier above. Since \(u'\) is the zero dist
 \[
 (u*\delta_\varepsilon)'=u'*\delta_\varepsilon=0.
 \]
-Hence \(u*\delta_\varepsilon\) is constant on \(\mathbb R\) for every \(\varepsilon>0\).
+Hence \(u*\delta_\varepsilon\) is constant on \(\RR\) for every \(\varepsilon>0\).
 
 Because \(u\) is continuous, mollification converges locally uniformly:
 \[
 u*\delta_\varepsilon\longrightarrow u.
 \]
-A locally uniform limit of constant functions is constant, so there is \(C\in\mathbb R\) such that
+A locally uniform limit of constant functions is constant, so there is \(C\in\RR\) such that
 \[
 u(x)=C
 \qquad\text{for all }x.

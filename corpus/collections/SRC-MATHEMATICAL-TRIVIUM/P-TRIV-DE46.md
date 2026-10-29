@@ -40,7 +40,7 @@ K(x,t)=\frac1{\sqrt{4\pi\kappa t}}
 
 ::: pf-proof
 
-Direct differentiation verifies $K_t=\kappa K_{xx}$. Also $\int_{\mathbb R}K(x,t)\,dx=1$, and $K(\cdot,t)$ converges to $\delta_0$ distributionally as $t\to0^+$.
+Direct differentiation verifies $K_t=\kappa K_{xx}$. Also $\int_{\RR}K(x,t)\,dx=1$, and $K(\cdot,t)$ converges to $\delta_0$ distributionally as $t\to0^+$.
 
 :::
 

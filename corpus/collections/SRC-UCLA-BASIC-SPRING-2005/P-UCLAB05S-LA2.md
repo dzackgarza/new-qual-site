@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be a finite-dimensional vector space, and let $V^*$ be its dual, the space of linear maps $\phi:V\to\mathbb C$.
+Let $V$ be a finite-dimensional vector space, and let $V^*$ be its dual, the space of linear maps $\phi:V\to\CC$.
 For $W\subset V$, define
 \[
 W^\perp=\{\phi\in V^*: \phi(w)=0\text{ for every }w\in W\}.

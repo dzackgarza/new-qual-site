@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\mathbb{C}^k); \mathbb{Z}) \approx \Lambda_\mathbb{Z}[x_{2k-2n+1}, x_{2k-2n+3}, \ldots, x_{2k-1}]$ and similarly in the quaternionic case.
+Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\CC^k); \ZZ) \approx \Lambda_\ZZ[x_{2k-2n+1}, x_{2k-2n+3}, \ldots, x_{2k-1}]$ and similarly in the quaternionic case.
 :::
 
 ::: {.solution}
@@ -27,11 +27,11 @@ Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\mathbb{
 
 ::: pf-step
 
-$V_n(\mathbb{C}^k)$ is the Stiefel manifold of $n$-frames in $\mathbb{C}^k$, and it fibers over $V_{n-1}(\mathbb{C}^k)$ with fiber $S^{2k-2n+1}$.
+$V_n(\CC^k)$ is the Stiefel manifold of $n$-frames in $\CC^k$, and it fibers over $V_{n-1}(\CC^k)$ with fiber $S^{2k-2n+1}$.
 
 ::: pf-proof
 
-the standard fibration $S^{2k-2n+1} \to V_n(\mathbb{C}^k) \to V_{n-1}(\mathbb{C}^k)$.
+the standard fibration $S^{2k-2n+1} \to V_n(\CC^k) \to V_{n-1}(\CC^k)$.
 
 :::
 
@@ -51,7 +51,7 @@ the fibration satisfies the Leray–Hirsch condition (the fiber cohomology is ge
 
 ::: {.pf-step #s3}
 
-Hence $H^*(V_n(\mathbb{C}^k)) \cong H^*(V_{n-1}(\mathbb{C}^k)) \otimes H^*(S^{2k-2n+1})$.
+Hence $H^*(V_n(\CC^k)) \cong H^*(V_{n-1}(\CC^k)) \otimes H^*(S^{2k-2n+1})$.
 
 ::: pf-proof
 
@@ -63,8 +63,8 @@ Leray–Hirsch theorem.
 
 ::: {.pf-step #s4}
 
-Iterating (since $V_1(\mathbb{C}^k) = S^{2k-1}$), we get
-$$H^*(V_n(\mathbb{C}^k)) \cong H^*(S^{2k-1}) \otimes H^*(S^{2k-3}) \otimes \cdots \otimes H^*(S^{2k-2n+1}).$$
+Iterating (since $V_1(\CC^k) = S^{2k-1}$), we get
+$$H^*(V_n(\CC^k)) \cong H^*(S^{2k-1}) \otimes H^*(S^{2k-3}) \otimes \cdots \otimes H^*(S^{2k-2n+1}).$$
 
 ::: pf-proof
 
@@ -76,7 +76,7 @@ Step [](#s3){.pf-ref}, applied inductively.
 
 ::: {.pf-step #s5}
 
-Each $H^*(S^{2m-1}) = \Lambda_\mathbb{Z}[x_{2m-1}]$ (exterior algebra on one generator of odd degree $2m-1$).
+Each $H^*(S^{2m-1}) = \Lambda_\ZZ[x_{2m-1}]$ (exterior algebra on one generator of odd degree $2m-1$).
 
 ::: pf-proof
 
@@ -88,7 +88,7 @@ cohomology of an odd sphere.
 
 ::: {.pf-step #s6}
 
-Hence $H^*(V_n(\mathbb{C}^k)) \cong \Lambda_\mathbb{Z}[x_{2k-2n+1}, x_{2k-2n+3}, \ldots, x_{2k-1}]$.
+Hence $H^*(V_n(\CC^k)) \cong \Lambda_\ZZ[x_{2k-2n+1}, x_{2k-2n+3}, \ldots, x_{2k-1}]$.
 
 ::: pf-proof
 
@@ -101,7 +101,7 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
 ::: {.pf-step #s7}
 
 In the quaternionic case, the fiber is $S^{4k-4n+3}$ (a quaternionic sphere), so
-$$H^*(V_n(\mathbb{H}^k)) \cong \Lambda_\mathbb{Z}[x_{4k-4n+3}, x_{4k-4n+7}, \ldots, x_{4k-1}].$$
+$$H^*(V_n(\mathbb{H}^k)) \cong \Lambda_\ZZ[x_{4k-4n+3}, x_{4k-4n+7}, \ldots, x_{4k-1}].$$
 
 ::: pf-proof
 

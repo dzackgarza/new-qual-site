@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\alpha_1,\ldots,\alpha_n\in\mathbb R$ be distinct.
-Suppose $a_1,\ldots,a_n\in\mathbb R$ satisfy
+Let $\alpha_1,\ldots,\alpha_n\in\RR$ be distinct.
+Suppose $a_1,\ldots,a_n\in\RR$ satisfy
 \[
 \sum_{i=1}^n a_i e^{\alpha_i t}=0
 \qquad\text{for every }t\in(-1,1).

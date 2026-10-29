@@ -297,7 +297,7 @@ The countable family
 $$
 \{
 B(\eta_n):
-n\in\mathbb N
+n\in\NN
 \}
 $$
 covers

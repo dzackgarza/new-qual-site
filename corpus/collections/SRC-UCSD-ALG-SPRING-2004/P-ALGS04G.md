@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Determine the Galois group $G$ for the splitting field $K$ of $X^5 - 3$ over $\mathbb{Q}$.
+(a) Determine the Galois group $G$ for the splitting field $K$ of $X^5 - 3$ over $\QQ$.
 
-(b) Determine all the subgroups of $G$ isomorphic to $\mathbb{Z}_5$.
+(b) Determine all the subgroups of $G$ isomorphic to $\ZZ_5$.
 :::
 
 ::: {.solution}

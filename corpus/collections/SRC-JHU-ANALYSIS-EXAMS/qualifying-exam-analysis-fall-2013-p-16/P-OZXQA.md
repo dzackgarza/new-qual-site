@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-For $t \in \mathbb{R}$, compute
+For $t \in \RR$, compute
 
 $$\lim_{A \to \infty} \int_{-A}^{A} \frac{\sin x}{x} e^{ixt} \, dx.$$
 :::

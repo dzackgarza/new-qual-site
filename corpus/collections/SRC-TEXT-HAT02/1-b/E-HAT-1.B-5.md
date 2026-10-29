@@ -25,19 +25,19 @@ audit:
 ---
 
 ::: {.problem}
-Consider the graph of groups having one vertex, $\mathbb{Z}$, and one edge, the map $\mathbb{Z} \to \mathbb{Z}$ that is multiplication by 2, realized by the 2-sheeted covering space $S^1 \to S^1$.
-Show that $\pi_1(K\Gamma)$ has presentation $\langle a, b \mid bab^{-1}a^{-2} \rangle$ and describe the universal cover of $K$ explicitly as a product $T \times \mathbb{R}$ with $T$ a tree.
-[The group $\pi_1(K\Gamma)$ is the first in a family of groups called Baumslag–Solitar groups, having presentations of the form $\langle a, b \mid ba^mb^{-1}a^{-n} \rangle$. These are HNN extensions $\mathbb{Z} *_\mathbb{Z}$.]
+Consider the graph of groups having one vertex, $\ZZ$, and one edge, the map $\ZZ \to \ZZ$ that is multiplication by 2, realized by the 2-sheeted covering space $S^1 \to S^1$.
+Show that $\pi_1(K\Gamma)$ has presentation $\langle a, b \mid bab^{-1}a^{-2} \rangle$ and describe the universal cover of $K$ explicitly as a product $T \times \RR$ with $T$ a tree.
+[The group $\pi_1(K\Gamma)$ is the first in a family of groups called Baumslag–Solitar groups, having presentations of the form $\langle a, b \mid ba^mb^{-1}a^{-n} \rangle$. These are HNN extensions $\ZZ *_\ZZ$.]
 :::
 
 ::: {.solution}
 Let the vertex group be
 \[
-A=\langle a\rangle\cong\mathbb Z
+A=\langle a\rangle\cong\ZZ
 \]
 and let the edge group be another copy
 \[
-C=\langle c\rangle\cong\mathbb Z.
+C=\langle c\rangle\cong\ZZ.
 \]
 For the loop edge, take the two endpoint injections
 \[
@@ -79,14 +79,14 @@ bab^{-1}a^{-2}.
 
 ::: pf-step
 
-The universal cover of the graph of spaces is a tree of spaces whose vertex spaces are copies of $\mathbb R$ and whose edge spaces are strips $\mathbb R\times I$.
+The universal cover of the graph of spaces is a tree of spaces whose vertex spaces are copies of $\RR$ and whose edge spaces are strips $\RR\times I$.
 
 ::: pf-proof
 
-The universal cover of the vertex circle $K(A,1)=S^1$ is $\mathbb R$.
-The universal cover of the edge circle $K(C,1)=S^1$ is also $\mathbb R$, so the lifted mapping cylinder for an edge is a strip
+The universal cover of the vertex circle $K(A,1)=S^1$ is $\RR$.
+The universal cover of the edge circle $K(C,1)=S^1$ is also $\RR$, so the lifted mapping cylinder for an edge is a strip
 \[
-\mathbb R\times I.
+\RR\times I.
 \]
 The incidence graph of these lifted vertex and edge spaces is the Bass--Serre tree $T$ of the HNN extension.
 It is a tree because the full graph-of-spaces cover is simply connected and the usual normal-form theorem rules out cycles in the incidence graph.
@@ -105,7 +105,7 @@ At one end of an edge, the edge subgroup maps onto the full vertex group, so the
 \[
 [A:\iota_0(C)]=1.
 \]
-At the other end its image is $2\mathbb Z$, so
+At the other end its image is $2\ZZ$, so
 \[
 [A:\iota_1(C)]=2.
 \]
@@ -117,7 +117,7 @@ Thus at each vertex there is one incident edge of the first type and two of the 
 
 ::: pf-step
 
-Each boundary attachment of a lifted edge strip to a lifted vertex line is a homeomorphism $\mathbb R\to\mathbb R$.
+Each boundary attachment of a lifted edge strip to a lifted vertex line is a homeomorphism $\RR\to\RR$.
 
 ::: pf-proof
 
@@ -139,27 +139,27 @@ Both are homeomorphisms of the universal covering line.
 
 The universal cover is homeomorphic to
 \[
-\boxed{T\times\mathbb R}.
+\boxed{T\times\RR}.
 \]
 
 ::: pf-proof
 
 Choose an affine coordinate on one vertex line.
 Since $T$ is a tree, proceed outward from this vertex.
-Whenever an edge strip joins a vertex line whose coordinate has already been chosen to a new vertex line, choose the affine coordinate on the new line so that both boundary identifications of the strip become the identity in the $\mathbb R$ coordinate.
+Whenever an edge strip joins a vertex line whose coordinate has already been chosen to a new vertex line, choose the affine coordinate on the new line so that both boundary identifications of the strip become the identity in the $\RR$ coordinate.
 There is no compatibility obstruction because a tree has no cycles.
 
 After making these choices, every vertex space is
 \[
-\{v\}\times\mathbb R
+\{v\}\times\RR
 \]
 and every edge strip is
 \[
-e\times\mathbb R,
+e\times\RR,
 \]
 with the obvious product gluings.
-Their union is exactly $T\times\mathbb R$.
-Since $T$ and $\mathbb R$ are contractible, this space is simply connected and is therefore the universal cover.
+Their union is exactly $T\times\RR$.
+Since $T$ and $\RR$ are contractible, this space is simply connected and is therefore the universal cover.
 
 :::
 

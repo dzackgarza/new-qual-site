@@ -20,7 +20,7 @@ audit:
 \[
 \int_\gamma\frac{dz}{z^2+1},
 \]
-where $\gamma$ is a closed smooth curve in $\mathbb C\setminus\{i,-i\}$.
+where $\gamma$ is a closed smooth curve in $\CC\setminus\{i,-i\}$.
 
 (b) Answer the same question when $\gamma$ is a positively oriented circle, and describe which circles give each possible value.
 :::
@@ -77,7 +77,7 @@ For any closed smooth curve
 \[
 \gamma
 \subset
-\mathbb C\setminus\{i,-i\},
+\CC\setminus\{i,-i\},
 \]
 \[
 \boxed{
@@ -136,7 +136,7 @@ Every value
 \[
 \pi m,
 \qquad
-m\in\mathbb Z,
+m\in\ZZ,
 \]
 occurs.
 
@@ -180,10 +180,10 @@ These are the only possible values:
 :
 \gamma
 \text{ closed smooth in }
-\mathbb C\setminus\{\pm i\}
+\CC\setminus\{\pm i\}
 \right\}
 =
-\pi\mathbb Z.
+\pi\ZZ.
 }
 \]
 

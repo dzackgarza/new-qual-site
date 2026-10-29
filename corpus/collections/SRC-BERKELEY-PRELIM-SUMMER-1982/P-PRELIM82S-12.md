@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRELIM82S-12
 kind: problem
-title: Irreducibility over $\mathbb Q$ of four quadratic and cubic polynomials
+title: Irreducibility over $\QQ$ of four quadratic and cubic polynomials
 classification:
   areas:
   - prelim
@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine, with proof, which of the following polynomials are irreducible over $\mathbb Q$:
+Determine, with proof, which of the following polynomials are irreducible over $\QQ$:
 
 1. $x^2+3$;
 

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) $f : D \to \mathbb { C }$ be a continuous function, where $D \subset \mathbb { C }$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve.
+(a) $f : D \to \CC$ be a continuous function, where $D \subset \CC$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve.
 Give a precise definition of the complex line integral
 
 $$

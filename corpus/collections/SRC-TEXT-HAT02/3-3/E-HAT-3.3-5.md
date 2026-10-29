@@ -34,14 +34,14 @@ Suppose first that $M^m$ and $N^n$ are oriented. Around $(x,y)\in M\times N$, ch
 
 Conversely suppose $M\times N$ is orientable. The local orientation system of a product is the tensor product of the two local orientation systems:
 \[
-H_{m+n}(M\times N,(M\times N)-\{(x,y)\};\mathbb Z)
+H_{m+n}(M\times N,(M\times N)-\{(x,y)\};\ZZ)
 \cong
-H_m(M,M-\{x\};\mathbb Z)\otimes
-H_n(N,N-\{y\};\mathbb Z).
+H_m(M,M-\{x\};\ZZ)\otimes
+H_n(N,N-\{y\};\ZZ).
 \]
 Fix $y_0\in N$. Restricting the orientation system of $M\times N$ to $M\times\{y_0\}$ gives the orientation system of $M$ tensored with the fixed rank-one group
 \[
-H_n(N,N-\{y_0\};\mathbb Z).
+H_n(N,N-\{y_0\};\ZZ).
 \]
 Since the restricted product orientation system is trivial, the orientation system of $M$ is trivial. Thus $M$ is orientable. The same argument with a fixed $x_0\in M$ shows that $N$ is orientable.
 

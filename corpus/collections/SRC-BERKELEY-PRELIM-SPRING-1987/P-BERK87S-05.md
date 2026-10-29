@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and satisfy
+Let $f:\RR\to\RR$ be continuous and satisfy
 \[
 |f(x)|\le\frac{C}{1+x^2}
 \]

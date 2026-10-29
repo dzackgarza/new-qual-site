@@ -74,7 +74,7 @@ The antiderivative of $\frac{1}{u}$ is $\ln|u|$, so $\frac{1}{2}\int\frac{1}{u}\
 
 ::: pf-step
 
-Substitute back $u = x^2 + 9$: Since $x^2 + 9 > 0$ for all $x \in \mathbb{R}$, $|u| = x^2 + 9$, so: $$\int \frac{x}{x^2+9} \, dx = \frac{1}{2} \ln(x^2+9) + C.$$
+Substitute back $u = x^2 + 9$: Since $x^2 + 9 > 0$ for all $x \in \RR$, $|u| = x^2 + 9$, so: $$\int \frac{x}{x^2+9} \, dx = \frac{1}{2} \ln(x^2+9) + C.$$
 
 ::: pf-proof
 

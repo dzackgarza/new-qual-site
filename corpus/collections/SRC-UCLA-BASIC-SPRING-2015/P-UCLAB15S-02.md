@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$.
+Let $f:[0,1]\to\RR$.
 We say that $f$ is Hölder continuous of order $\alpha\in(0,1)$ and write $f\in C^\alpha([0,1])$ if
 \[
 \|f\|_{C^\alpha}

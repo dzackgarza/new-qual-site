@@ -111,7 +111,7 @@ The Hermitian forms defined by $A$ and by $D$ have the same signature.
 
 ::: pf-proof
 
-For $x\in\mathbb C^n$,
+For $x\in\CC^n$,
 \[
 \overline{x}^{\,t}Ax
 =

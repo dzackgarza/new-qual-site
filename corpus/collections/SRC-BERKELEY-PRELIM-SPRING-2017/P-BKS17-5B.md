@@ -33,7 +33,7 @@ Write all values of $i^i$ in the form $a + bi$.
 
 ::: {.solution}
 
-For $k\in\mathbb Z$, set
+For $k\in\ZZ$, set
 $$
 L_k\coloneqq i\left(\frac{\pi}{2}+2\pi k\right).
 $$
@@ -42,12 +42,12 @@ $$
 
 ::: {.pf-step #s1-1}
 
-The numbers $L_k$, $k\in\mathbb Z$, are exactly the complex logarithms of $i$.
+The numbers $L_k$, $k\in\ZZ$, are exactly the complex logarithms of $i$.
 
 
 ::: pf-proof
 
-For every $k\in\mathbb Z$,
+For every $k\in\ZZ$,
 $$
 e^{L_k}
 =
@@ -58,7 +58,7 @@ Conversely, if $L=x+iy$ satisfies $e^L=i$, then taking absolute values gives $e^
 $$
 y=\frac{\pi}{2}+2\pi k
 $$
-for some $k\in\mathbb Z$. Hence $L=L_k$.
+for some $k\in\ZZ$. Hence $L=L_k$.
 
 :::
 
@@ -72,7 +72,7 @@ $$
 \left\{
 e^{-(\pi/2+2\pi k)}+0i
 \;:\;
-k\in\mathbb Z
+k\in\ZZ
 \right\}
 }.
 $$

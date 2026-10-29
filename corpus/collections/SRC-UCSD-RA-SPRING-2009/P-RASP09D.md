@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Show that on $\mathbb{R}^2$ (with coordinates $(x_1, x_2)$),
+Show that on $\RR^2$ (with coordinates $(x_1, x_2)$),
 $$
-\left\langle \operatorname{PV}\left(\frac{x_1 + x_2}{|x|^3}\right), \varphi \right\rangle = \lim_{\varepsilon \to 0} \int_{|x| > \varepsilon} \varphi(x) \frac{x_1 + x_2}{|x|^3} \, dm, \quad \varphi \in C_c^\infty(\mathbb{R}^2),
+\left\langle \operatorname{PV}\left(\frac{x_1 + x_2}{|x|^3}\right), \varphi \right\rangle = \lim_{\varepsilon \to 0} \int_{|x| > \varepsilon} \varphi(x) \frac{x_1 + x_2}{|x|^3} \, dm, \quad \varphi \in C_c^\infty(\RR^2),
 $$
-exists and defines a distribution on $\mathbb{R}^2$.
+exists and defines a distribution on $\RR^2$.
 :::
 
 ::: {.solution}
@@ -91,7 +91,7 @@ Hence
 \frac{2\sqrt2}{|x|}
 \sup_{|y|\le R}|\nabla\varphi(y)|.
 \]
-The function $|x|^{-1}$ is locally integrable on $\mathbb R^2$, because in polar coordinates
+The function $|x|^{-1}$ is locally integrable on $\RR^2$, because in polar coordinates
 \[
 \int_{|x|<R}\frac{dx}{|x|}
 =2\pi R<\infty.
@@ -111,7 +111,7 @@ Pass to the principal-value limit.
 By Step 2 and dominated convergence,
 \[
 \lim_{\varepsilon\downarrow0}I_\varepsilon(\varphi)
-=\frac12\int_{\mathbb R^2}
+=\frac12\int_{\RR^2}
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)\,dx.
 \]
 Therefore the principal value exists for every test function $\varphi$.
@@ -126,7 +126,7 @@ Verify continuity on the test-function space.
 
 ::: pf-proof
 
-Let $L\subset\mathbb R^2$ be compact, and suppose $\operatorname{supp}\varphi\subset L$. Choose $R$ with
+Let $L\subset\RR^2$ be compact, and suppose $\operatorname{supp}\varphi\subset L$. Choose $R$ with
 \[
 L\cup(-L)\subset B(0,R).
 \]
@@ -144,7 +144,7 @@ Thus the functional is continuous on every fixed compact-support test-function s
 \[
 \boxed{
 \operatorname{PV}\!\left(\frac{x_1+x_2}{|x|^3}\right)
-\in\mathcal D'(\mathbb R^2).}
+\in\mathcal D'(\RR^2).}
 \]
 
 :::

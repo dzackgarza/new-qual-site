@@ -24,16 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb{R}_+ = [0, \infty)$, $f, g \in L^1(\mathbb{R}_+, m)$, and consider
+Let $\RR_+ = [0, \infty)$, $f, g \in L^1(\RR_+, m)$, and consider
 $$
 h(x) = \int_0^\infty f(y) g\!\left(\frac{x}{y}\right) \frac{dy}{y}.
 $$
-Show that $h$ is well-defined (i.e., $y \mapsto f(y) g(x/y) / y$ is in $L^1(\mathbb{R}_+, m)$ for a.e. $x \in \mathbb{R}_+$), $h \in L^1(\mathbb{R}_+)$, and
+Show that $h$ is well-defined (i.e., $y \mapsto f(y) g(x/y) / y$ is in $L^1(\RR_+, m)$ for a.e. $x \in \RR_+$), $h \in L^1(\RR_+)$, and
 $$
 \|h\|_{L^1} \leq \|f\|_{L^1} \|g\|_{L^1}.
 $$
 
-Comment: You may use without proof that $g(x/y)$ is Lebesgue measurable on $\mathbb{R}_+^2$.
+Comment: You may use without proof that $g(x/y)$ is Lebesgue measurable on $\RR_+^2$.
 :::
 
 
@@ -81,7 +81,7 @@ Finally,
 \]
 Thus
 \[
-\boxed{h\in L^1(\mathbb R_+),\qquad
+\boxed{h\in L^1(\RR_+),\qquad
 \|h\|_1\le\|f\|_1\|g\|_1.}
 \]
 :::

@@ -34,7 +34,7 @@ for all $n,k$, and suppose
 \[
 \lim_{n\to\infty}g_n^{(k)}(0)
 \]
-exists for every $k$. Prove that $(g_n)$ converges uniformly on compact subsets of $\mathbb C$, and that its limit is entire.
+exists for every $k$. Prove that $(g_n)$ converges uniformly on compact subsets of $\CC$, and that its limit is entire.
 :::
 
 ::: {.solution}

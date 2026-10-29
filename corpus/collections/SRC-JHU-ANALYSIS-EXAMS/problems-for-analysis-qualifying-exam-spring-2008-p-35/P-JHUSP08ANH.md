@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and $P\in U$. Let
+Let $U\subset\CC$ be open and $P\in U$. Let
 $\mathcal F$ be the family of **all** holomorphic maps
 $f:U\to D=\{z:|z|<1\}$ such that $f(P)=0$.
 

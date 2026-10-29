@@ -22,7 +22,7 @@ audit:
 
 ::: {.problem}
 Let $G$ be a finite group and let $V$ be an irreducible complex representation of $G$.
-If $g\in G$ lies in the center of $G$, show that there exists $c\in\mathbb{C}$ with
+If $g\in G$ lies in the center of $G$, show that there exists $c\in\CC$ with
 \[
 g\cdot v=cv
 \]
@@ -53,17 +53,17 @@ Thus $\rho(g)$ is an endomorphism of the $G$-module $V$.
 :::
 
 ::: {.pf-step #rho-g-is-scalar}
-There exists $c\in\mathbb C$ such that
+There exists $c\in\CC$ such that
 \[
 \rho(g)=cI_V.
 \]
 
 ::: pf-proof
-The representation $V$ is irreducible over the algebraically closed field $\mathbb C$. By Schur's lemma,
+The representation $V$ is irreducible over the algebraically closed field $\CC$. By Schur's lemma,
 \[
-\operatorname{End}_G(V)=\mathbb C\,I_V.
+\operatorname{End}_G(V)=\CC\,I_V.
 \]
-By step [](#rho-g-commutes-with-rho-h){.pf-ref}, $\rho(g)\in\operatorname{End}_G(V)$, so $\rho(g)=cI_V$ for some $c\in\mathbb C$.
+By step [](#rho-g-commutes-with-rho-h){.pf-ref}, $\rho(g)\in\operatorname{End}_G(V)$, so $\rho(g)=cI_V$ for some $c\in\CC$.
 :::
 
 :::

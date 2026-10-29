@@ -22,7 +22,7 @@ Find the eigenvalues of $A$, and give an orthonormal basis for each eigenspace.
 ::: {.solution}
 Identify the vertex set with the group
 \[
-S=(\mathbb Z/2\mathbb Z)^3.
+S=(\ZZ/2\ZZ)^3.
 \]
 For each subset $J\subseteq\{1,2,3\}$ define
 \[
@@ -33,7 +33,7 @@ The normalized functions
 \[
 2^{-3/2}\chi_J
 \]
-form an orthonormal basis of $\mathcal F(S)$, since they are the characters of the finite abelian group $(\mathbb Z/2)^3$.
+form an orthonormal basis of $\mathcal F(S)$, since they are the characters of the finite abelian group $(\ZZ/2)^3$.
 
 Let $e_1,e_2,e_3$ be the standard bit vectors. The adjacency operator is
 \[

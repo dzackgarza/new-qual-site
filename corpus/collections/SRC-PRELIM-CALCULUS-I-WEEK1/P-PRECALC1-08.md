@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-If $f : \mathbb{R} \to \mathbb{R}$ is continuously differentiable on $(-1, 4)$ with $f(3) = 5$ and $f'(x) \geq 1$ for all $x \in (-1, 4)$, what is the greatest possible value of $f(0)$?
+If $f : \RR \to \RR$ is continuously differentiable on $(-1, 4)$ with $f(3) = 5$ and $f'(x) \geq 1$ for all $x \in (-1, 4)$, what is the greatest possible value of $f(0)$?
 :::
 
 ::: {.solution}
@@ -136,7 +136,7 @@ g(x)=x+2.
 
 ::: pf-proof
 
-This is a continuously differentiable function on \(\mathbb R\).
+This is a continuously differentiable function on \(\RR\).
 
 :::
 

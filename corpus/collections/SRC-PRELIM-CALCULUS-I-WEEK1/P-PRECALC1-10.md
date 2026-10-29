@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f ( x ) = e ^ { g ( x ) } h ( x )$ where $h ^ { \prime } ( x ) = - g ^ { \prime } ( x ) h ( x )$ for all $x \in \mathbb { R }$ . Which of the following is necessarily true? (a) f is constant $( \mathrm { b } ) \ f$ is linear and non-constant (c) g is constant (d) g is linear and non-constant (e) none of the above
+Let $f ( x ) = e ^ { g ( x ) } h ( x )$ where $h ^ { \prime } ( x ) = - g ^ { \prime } ( x ) h ( x )$ for all $x \in \RR$ . Which of the following is necessarily true? (a) f is constant $( \mathrm { b } ) \ f$ is linear and non-constant (c) g is constant (d) g is linear and non-constant (e) none of the above
 :::
 
 ::: {.solution}
@@ -112,7 +112,7 @@ Hence
 \boxed{
 f'(x)=0}
 \]
-for every \(x\in\mathbb R\).
+for every \(x\in\RR\).
 
 
 ::: pf-proof
@@ -125,7 +125,7 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 ::: {.pf-step #s1-6}
 
-Therefore \(f\) is constant on \(\mathbb R\).
+Therefore \(f\) is constant on \(\RR\).
 
 
 ::: pf-proof

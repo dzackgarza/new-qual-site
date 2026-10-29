@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-13. Show that the equation $e ^ { z } - z = 0$ has infinitely many solutions in $\mathbb { C } .$
+13. Show that the equation $e ^ { z } - z = 0$ has infinitely many solutions in $\CC .$
 
 [Hint: Apply Hadamard’s theorem.]
 :::
@@ -36,7 +36,7 @@ This is an entire function of order at most $1$. Suppose, for contradiction, tha
 \[
 F(z)=e^{az+b}Q(z)
 \]
-for some constants $a,b\in\mathbb C$ and a polynomial $Q$ whose zeros are exactly those finitely many zeros of $F$.
+for some constants $a,b\in\CC$ and a polynomial $Q$ whose zeros are exactly those finitely many zeros of $F$.
 
 Along the negative real axis,
 \[
@@ -73,5 +73,5 @@ But (2) and (3) give only
 \[
 \log|F(x)|=\log x+O(1),
 \]
-contradicting (4). Therefore $e^z-z$ has infinitely many zeros in $\mathbb C$.
+contradicting (4). Therefore $e^z-z$ has infinitely many zeros in $\CC$.
 :::

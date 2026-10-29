@@ -36,15 +36,15 @@ Then $F=g^2$, $g(z_0)=0$, and $g'(z_0)=q(z_0)\ne0$. By the holomorphic inverse-f
 
 Let
 \[
-\Gamma_1=g^{-1}(V\cap\mathbb R),
+\Gamma_1=g^{-1}(V\cap\RR),
 \qquad
-\Gamma_2=g^{-1}(V\cap i\mathbb R).
+\Gamma_2=g^{-1}(V\cap i\RR).
 \]
-These are smooth curves through $z_0$. On $\Gamma_1$, write $g(z)=t\in\mathbb R$; then
+These are smooth curves through $z_0$. On $\Gamma_1$, write $g(z)=t\in\RR$; then
 \[
 F(z)=t^2\ge0=F(z_0),
 \]
-so $F$ is real there and has a strict local minimum at $z_0$. On $\Gamma_2$, write $g(z)=it$ with $t\in\mathbb R$; then
+so $F$ is real there and has a strict local minimum at $z_0$. On $\Gamma_2$, write $g(z)=it$ with $t\in\RR$; then
 \[
 F(z)=-t^2\le0=F(z_0),
 \]

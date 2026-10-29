@@ -62,14 +62,14 @@ T=\partial(D^2\times S^1).
 \]
 Then
 \[
-\pi_1(T)\cong \mathbb Z\mu\oplus\mathbb Z\lambda.
+\pi_1(T)\cong \ZZ\mu\oplus\ZZ\lambda.
 \]
 For either copy of the solid torus, the boundary inclusion kills \(\mu\) and sends \(\lambda\) to a generator of the fundamental group of the solid torus.
 
 ::: pf-proof
 The solid torus \(V=D^2\times S^1\) deformation retracts onto its core \(\{0\}\times S^1\), so
 \[
-\pi_1(V)\cong\mathbb Z.
+\pi_1(V)\cong\ZZ.
 \]
 The loop \(\mu\) bounds the disk \(D^2\times\{1\}\), while \(\lambda\) is homotopic to the core circle.
 :::
@@ -156,14 +156,14 @@ Substitute these into step [](#s3){.pf-ref}.
 ::: pf-step
 Therefore
 \[
-\boxed{\pi_1(X_n)\cong \mathbb Z/n\mathbb Z}.
+\boxed{\pi_1(X_n)\cong \ZZ/n\ZZ}.
 \]
 Equivalently,
 \[
 \pi_1(X_n)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z/|n|\mathbb Z,&n\ne0.
+\ZZ,&n=0,\\
+\ZZ/|n|\ZZ,&n\ne0.
 \end{cases}
 \]
 
@@ -176,7 +176,7 @@ By step [](#s4){.pf-ref},
 \cong
 \langle a\mid a^n=1\rangle.
 \]
-For \(n=0\), the relation \(a^0=1\) is vacuous, giving \(\mathbb Z\). For \(n\ne0\), the relation has order \(|n|\), giving \(\mathbb Z/|n|\mathbb Z\).
+For \(n=0\), the relation \(a^0=1\) is vacuous, giving \(\ZZ\). For \(n\ne0\), the relation has order \(|n|\), giving \(\ZZ/|n|\ZZ\).
 :::
 
 :::

@@ -62,7 +62,7 @@ Therefore
 
 (c) The field of values is
 \[
-F(A)=\{x^HAx:\ x\in\mathbb C^n,\ \|x\|_2=1\}.
+F(A)=\{x^HAx:\ x\in\CC^n,\ \|x\|_2=1\}.
 \]
 The spectral radius is
 \[

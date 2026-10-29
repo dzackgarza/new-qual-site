@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and define
+Let $f:\RR\to\RR$ be continuous and define
 \[
 f_n(x)=\frac1n\sum_{k=0}^{n-1}f\left(x+\frac{k}{n}\right).
 \]
@@ -46,7 +46,7 @@ The function $f$ is uniformly continuous on $[a,b+1]$.
 
 ::: pf-proof
 The interval $[a,b+1]$ is compact and $f$ is continuous on
-$\mathbb R$. Therefore the Heine--Cantor theorem applies.
+$\RR$. Therefore the Heine--Cantor theorem applies.
 :::
 
 :::

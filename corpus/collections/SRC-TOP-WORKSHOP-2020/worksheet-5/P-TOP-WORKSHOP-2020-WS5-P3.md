@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS5-P3
 kind: problem
-title: Quotient of $\mathbb R^2$ by concentric circles is homeomorphic to a closed ray
+title: Quotient of $\RR^2$ by concentric circles is homeomorphic to a closed ray
 classification:
   areas:
   - topology
@@ -21,24 +21,24 @@ audit:
 ---
 
 ::: {.problem}
-(May 2013) Define an equivalence relation $\sim$ on $\mathbb R^2$ by $(x_1,y_1)\sim(x_2,y_2)$ if and only if $x_1^2+y_1^2=x_2^2+y_2^2$.
+(May 2013) Define an equivalence relation $\sim$ on $\RR^2$ by $(x_1,y_1)\sim(x_2,y_2)$ if and only if $x_1^2+y_1^2=x_2^2+y_2^2$.
 
-(a) Identify the quotient space $X=\mathbb R^2/{\sim}$ as a familiar space and prove that it is homeomorphic to this familiar space.
+(a) Identify the quotient space $X=\RR^2/{\sim}$ as a familiar space and prove that it is homeomorphic to this familiar space.
 
-(b) Determine whether the natural map $p\colon\mathbb R^2\to X$ is a covering map.
+(b) Determine whether the natural map $p\colon\RR^2\to X$ is a covering map.
 Justify your answer.
 :::
 
 ::: {.solution}
 (a) Define
 \[
-r:\mathbb R^2\to[0,\infty),
+r:\RR^2\to[0,\infty),
 \qquad
 r(x,y)=\sqrt{x^2+y^2}.
 \]
 The fibers of \(r\) are exactly the equivalence classes. Therefore \(r\) factors uniquely through a bijection
 \[
-\bar r:X=\mathbb R^2/{\sim}\ \longrightarrow[0,\infty)
+\bar r:X=\RR^2/{\sim}\ \longrightarrow[0,\infty)
 \]
 with \(r=\bar r\circ p\). Since \(p\) is a quotient map and \(r\) is continuous, \(\bar r\) is continuous. Its inverse is
 \[

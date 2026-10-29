@@ -70,18 +70,18 @@ Equality can fail without finite generation.
 ::: pf-proof
 Take
 \[
-A=\mathbb Z,
+A=\ZZ,
 \qquad
 S=\{1,2,2^2,\ldots\},
 \qquad
-M=\bigoplus_{n\ge1}\mathbb Z/2^n\mathbb Z.
+M=\bigoplus_{n\ge1}\ZZ/2^n\ZZ.
 \]
 Every element of $M$ is killed by some power of $2$, so $S^{-1}M=0$. Thus
 \[
-\operatorname{Ann}_{S^{-1}A}(S^{-1}M)=S^{-1}A=\mathbb Z[1/2].
+\operatorname{Ann}_{S^{-1}A}(S^{-1}M)=S^{-1}A=\ZZ[1/2].
 \]
 On the other hand, no nonzero integer annihilates every summand
-$\mathbb Z/2^n\mathbb Z$, so $\operatorname{Ann}_A(M)=0$. Hence its localization
+$\ZZ/2^n\ZZ$, so $\operatorname{Ann}_A(M)=0$. Hence its localization
 is zero.
 :::
 

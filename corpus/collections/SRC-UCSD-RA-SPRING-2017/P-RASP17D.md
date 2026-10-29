@@ -35,7 +35,7 @@ For true statements give a brief justification; for false statements give a coun
 2. If $X$ is a Banach space, $D$ is a dense subspace of $X$, and $\{\varphi_n\}_{n=1}^\infty \subset X^*$ satisfies $\sup_n |\varphi_n(x)| < \infty$ for all $x \in D$, then $\sup_n \sup_{\|x\|=1} |\varphi_n(x)| < \infty$.
 
 3. Suppose $(\Omega, \mathcal{B}, \mu)$ is a measure space, $\Omega_n \in \mathcal{B}$ with $\Omega_n \uparrow \Omega$ and $\mu(\Omega_n) < \infty$ for all $n$.
-   If $f : \Omega \to \mathbb{C}$ is measurable such that $\sup_{n \in \mathbb{N}} \left|\int_{\Omega_n} f \mathbf{1}_{|f| \leq n} g \, d\mu\right| < \infty$ for all $g \in L^2(\mu)$, then $f \in L^2(\mu)$.
+   If $f : \Omega \to \CC$ is measurable such that $\sup_{n \in \NN} \left|\int_{\Omega_n} f \mathbf{1}_{|f| \leq n} g \, d\mu\right| < \infty$ for all $g \in L^2(\mu)$, then $f \in L^2(\mu)$.
 :::
 
 ::: {.solution}
@@ -114,7 +114,7 @@ f_n:=\mathbf1_{\Omega_n}f\,\mathbf1_{\{|f|\le n\}}.
 \]
 Since \(|f_n|\le n\) and \(\mu(\Omega_n)<\infty\), we have \(f_n\in L^2(\mu)\). Define
 \[
-T_n:L^2(\mu)\to\mathbb C,
+T_n:L^2(\mu)\to\CC,
 \qquad
 T_n(g)=\int_\Omega f_n g\,d\mu.
 \]

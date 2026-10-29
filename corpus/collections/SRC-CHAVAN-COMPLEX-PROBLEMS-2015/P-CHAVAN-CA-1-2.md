@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $p(z)=a_0+a_1z+\cdots+a_nz^n$ and suppose $z_0\in\mathbb C$, $|z_0|<1$, is such that
+Let $p(z)=a_0+a_1z+\cdots+a_nz^n$ and suppose $z_0\in\CC$, $|z_0|<1$, is such that
 \[
 |p(z)|\le |p(z_0)|\qquad(|z|\le1).
 \]

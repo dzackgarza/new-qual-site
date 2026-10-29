@@ -42,22 +42,22 @@ on every homotopy group, so \(i_*\) would be injective.
 
 If \(k\ge2\), covering-space invariance of higher homotopy groups gives
 \[
-\pi_k(\mathbb{RP}^k)\cong\pi_k(S^k)\cong\mathbb Z,
+\pi_k(\mathbb{RP}^k)\cong\pi_k(S^k)\cong\ZZ,
 \]
 whereas, since \(k<n\),
 \[
 \pi_k(\mathbb{RP}^n)\cong\pi_k(S^n)=0.
 \]
-Thus \(i_*:\mathbb Z\to0\) cannot be injective.
+Thus \(i_*:\ZZ\to0\) cannot be injective.
 
 If \(k=1\), then \(\mathbb{RP}^1\cong S^1\), so
 \[
-\pi_1(\mathbb{RP}^1)\cong\mathbb Z,
+\pi_1(\mathbb{RP}^1)\cong\ZZ,
 \qquad
-\pi_1(\mathbb{RP}^n)\cong\mathbb Z_2
+\pi_1(\mathbb{RP}^n)\cong\ZZ_2
 \quad(n>1).
 \]
-Again no injection \(\mathbb Z\hookrightarrow\mathbb Z_2\) exists.
+Again no injection \(\ZZ\hookrightarrow\ZZ_2\) exists.
 
 Therefore
 \[

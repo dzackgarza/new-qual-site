@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that there is no function $f$ holomorphic near $0\in\mathbb C$ such that, for all sufficiently large $n\in\mathbb N$,
+Show that there is no function $f$ holomorphic near $0\in\CC$ such that, for all sufficiently large $n\in\NN$,
 \[
 f(1/n^2)=\frac{n^2-1}{n^5}.
 \]
@@ -147,7 +147,7 @@ The right-hand side of step [](#s1-5){.pf-ref} tends to $+\infty$, while the lef
 
 Clearly $n-1/n\to+\infty$. But $g$ is holomorphic near $0$, hence continuous there, and $1/n^2\to0$, so
 \[
-g(1/n^2)\to g(0)\in\mathbb C.
+g(1/n^2)\to g(0)\in\CC.
 \]
 This is impossible.
 

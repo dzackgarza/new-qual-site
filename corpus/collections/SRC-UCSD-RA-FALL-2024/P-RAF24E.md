@@ -90,7 +90,7 @@ Reduce unboundedness of a positive functional to positive test functions.
 
 ::: pf-proof
 
-Let $L:C_0(X)\to\mathbb C$ be positive. On real-valued functions, positivity implies monotonicity:
+Let $L:C_0(X)\to\CC$ be positive. On real-valued functions, positivity implies monotonicity:
 \[
 g\le h\quad\Longrightarrow\quad L(g)\le L(h).
 \]

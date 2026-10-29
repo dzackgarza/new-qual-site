@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.C-16
 kind: problem
-title: Classification of Hopf algebras over $\mathbb{Z}$
+title: Classification of Hopf algebras over $\ZZ$
 classification:
   areas:
   - topology
@@ -26,16 +26,16 @@ audit:
 ---
 
 ::: {.problem}
-Classify algebraically the Hopf algebras $A$ over $\mathbb{Z}$ such that $A^n$ is free for each $n$ and $A \otimes \mathbb{Q} \approx \mathbb{Q}[\alpha]$.
-In particular, determine which Hopf algebras $A \otimes \mathbb{Z}_p$ arise from such $A$'s.
+Classify algebraically the Hopf algebras $A$ over $\ZZ$ such that $A^n$ is free for each $n$ and $A \otimes \QQ \approx \QQ[\alpha]$.
+In particular, determine which Hopf algebras $A \otimes \ZZ_p$ arise from such $A$'s.
 :::
 
 ::: {.solution}
 We classify these Hopf algebras as integral Hopf lattices in a rational polynomial Hopf algebra.
 
-Let $A$ satisfy the hypotheses and let $d>0$ be the least positive degree in which $A\otimes\mathbb Q$ is nonzero. Since
+Let $A$ satisfy the hypotheses and let $d>0$ be the least positive degree in which $A\otimes\QQ$ is nonzero. Since
 \[
-A\otimes\mathbb Q\cong\mathbb Q[t]
+A\otimes\QQ\cong\QQ[t]
 \]
 as a graded algebra, $|t|=d$ is even. In degree $d$ there are no positive-degree decomposable terms, so the Hopf axioms force
 \[
@@ -46,10 +46,10 @@ Consequently
 \Delta(t^n)=\sum_{i=0}^n\binom ni t^i\otimes t^{n-i}.
 \]
 
-Since each $A^{nd}$ is a free rank-one subgroup of $\mathbb Q t^n$, choose generators
+Since each $A^{nd}$ is a free rank-one subgroup of $\QQ t^n$, choose generators
 \[
 x_n=q_nt^n,
-\qquad q_n\in\mathbb Q_{>0},
+\qquad q_n\in\QQ_{>0},
 \qquad q_0=q_1=1,
 \]
 where rescaling $t$ has been used to normalize $q_1=1$. Then
@@ -67,8 +67,8 @@ c_{ij}=\binom{i+j}{i}\frac{q_{i+j}}{q_iq_j}.
 \]
 Thus $A$ is an integral Hopf algebra exactly when, for every $i,j\ge0$,
 \[
-\boxed{m_{ij}\in\mathbb Z_{>0},\qquad
-c_{ij}=\frac{\binom{i+j}{i}}{m_{ij}}\in\mathbb Z_{>0}.}
+\boxed{m_{ij}\in\ZZ_{>0},\qquad
+c_{ij}=\frac{\binom{i+j}{i}}{m_{ij}}\in\ZZ_{>0}.}
 \]
 Equivalently,
 \[
@@ -90,17 +90,17 @@ m_{ij}=q_iq_j/q_{i+j}
 \]
 for all $i,j$. The formulas above define a Hopf-stable lattice
 \[
-A=\bigoplus_{n\ge0}\mathbb Z\,q_nt^n\subset\mathbb Q[t].
+A=\bigoplus_{n\ge0}\ZZ\,q_nt^n\subset\QQ[t].
 \]
 This proves the classification. The two extreme cases are
 \[
 m_{ij}=1,
 \]
-which gives the polynomial Hopf algebra $\mathbb Z[t]$, and
+which gives the polynomial Hopf algebra $\ZZ[t]$, and
 \[
 m_{ij}=\binom{i+j}{i},
 \]
-which gives the divided-power Hopf algebra $\Gamma_{\mathbb Z}[t]$.
+which gives the divided-power Hopf algebra $\Gamma_{\ZZ}[t]$.
 
 Now fix a prime $p$ and reduce modulo $p$. With $\bar x_n$ denoting the image of $x_n$, every reduction arising from an integral form above has
 \[

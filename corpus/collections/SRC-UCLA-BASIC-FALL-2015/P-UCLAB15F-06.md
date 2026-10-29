@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X=\mathbb R\setminus\{0\}$.
+Let $X=\RR\setminus\{0\}$.
 Find a metric $\rho$ on $X$ such that:
 
 1. $(X,\rho)$ is complete;
@@ -206,7 +206,7 @@ Then both real sequences
 \qquad\text{and}\qquad
 \left(\frac1{x_n}\right)
 \]
-are Cauchy in $\mathbb R$.
+are Cauchy in $\RR$.
 
 
 ::: pf-proof

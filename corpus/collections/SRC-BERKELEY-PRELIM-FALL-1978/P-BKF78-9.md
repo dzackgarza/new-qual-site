@@ -27,12 +27,12 @@ audit:
 ---
 
 ::: {.problem}
-For $x,y\in\mathbb C^n$, let
+For $x,y\in\CC^n$, let
 \[
 \langle x,y\rangle=\sum_j x_j\overline{y_j}
 \]
 be the Hermitian inner product.
-Let $T$ be a linear operator on $\mathbb C^n$ such that
+Let $T$ be a linear operator on $\CC^n$ such that
 \[
 \langle x,y\rangle=0
 \quad\Longrightarrow\quad

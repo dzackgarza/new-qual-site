@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K\subset\mathbb R^3$ be nonempty and compact.
+Let $K\subset\RR^3$ be nonempty and compact.
 For every Borel probability measure $\mu$ on $K$, define
 \[
 I(\mu)=\int_K\int_K \frac{1}{|x-y|}\,d\mu(x)\,d\mu(y)\in(0,\infty],

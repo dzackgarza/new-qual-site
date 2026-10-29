@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-026
 kind: problem
-title: The matrices $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ form a ring isomorphic to $\mathbb C$
+title: The matrices $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ form a ring isomorphic to $\CC$
 classification:
   areas: [algebra]
   topics: []

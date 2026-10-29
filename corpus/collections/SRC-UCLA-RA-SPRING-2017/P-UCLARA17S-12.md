@@ -21,7 +21,7 @@ Let $0<\alpha<1$ and let $f(z)$ be analytic on the unit disk $D$. Prove that if
 \[
 |f(z)-f(w)|\le C|z-w|^\alpha
 \]
-for all $z,w\in D$ and some constant $C\in\mathbb R$, then there is a constant $A=A(C)<\infty$ such that
+for all $z,w\in D$ and some constant $C\in\RR$, then there is a constant $A=A(C)<\infty$ such that
 \[
 |f'(z)|\le A(1-|z|)^{\alpha-1}.
 \]

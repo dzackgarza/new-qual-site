@@ -29,7 +29,7 @@ audit:
 Suppose $F$ is a field of characteristic zero, $f \in F[x]$ is monic and irreducible, and $E$ is a splitting field of $f$ over $F$.
 Let $X := \{\alpha \in E \mid f(\alpha) = 0\}$.
 
-(a) Suppose $m \in \mathbb{N}$ and $\alpha \in X$.
+(a) Suppose $m \in \NN$ and $\alpha \in X$.
 Let $g(x) := m_{\alpha^m,F}(x)$ be the minimal polynomial of $\alpha^m$ over $F$.
 Prove that $\{\beta^m \mid \beta \in X\}$ is the set of zeros of $g(x)$ in $E$.
 
@@ -52,7 +52,7 @@ that means $f(x) = g(x^m)$.
 ::: {.remark}
 The nonzero-root hypothesis in the root-of-unity conclusion of (b) and in (c) is necessary.
 If $\alpha=0$, monicity and irreducibility force $f(x)=x$, so $X=\{0\}$ and multiplication by every $r\in F$ preserves $X$.
-For example, over $F=\mathbb{Q}$, taking $r=2$ satisfies the scaled-root condition but $2$ is not a root of unity.
+For example, over $F=\QQ$, taking $r=2$ satisfies the scaled-root condition but $2$ is not a root of unity.
 Taking $r=-1$ instead gives multiplicative order $m=2$, while both $\alpha$ and $\alpha^2$ have minimal polynomial $x$; the identity in (c) would then assert $x=x^2$.
 :::
 

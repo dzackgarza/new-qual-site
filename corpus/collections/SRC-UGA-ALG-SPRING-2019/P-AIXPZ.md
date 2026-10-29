@@ -14,9 +14,9 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $A \in M_m(\mathbb{C})$ be an $m \times m$ matrix over the complex numbers. Suppose that $A$ is non-singular ($\det A \ne 0$) and that $A^k$ is diagonalizable over $\mathbb{C}$ for some integer $k \ge 1$ (for instance, $k = 2019$).
+Let $A \in M_m(\CC)$ be an $m \times m$ matrix over the complex numbers. Suppose that $A$ is non-singular ($\det A \ne 0$) and that $A^k$ is diagonalizable over $\CC$ for some integer $k \ge 1$ (for instance, $k = 2019$).
 
-Show that $A$ is also diagonalizable over $\mathbb{C}$.
+Show that $A$ is also diagonalizable over $\CC$.
 :::
 
 ::: {.solution}
@@ -35,18 +35,18 @@ for pairwise distinct nonzero complex numbers $\lambda_i$.
 
 ::: pf-step
 
-A matrix over $\mathbb{C}$ is diagonalizable if and only if its minimal polynomial is square-free (splits into distinct linear factors).
+A matrix over $\CC$ is diagonalizable if and only if its minimal polynomial is square-free (splits into distinct linear factors).
 
 :::
 
 ::: pf-step
 
-Since $A^k$ is diagonalizable over $\mathbb{C}$, its minimal polynomial $m_{A^k}(x) \in \mathbb{C}[x]$ factors as
+Since $A^k$ is diagonalizable over $\CC$, its minimal polynomial $m_{A^k}(x) \in \CC[x]$ factors as
 
 :::
 
 $$m_{A^k}(x) = \prod_{i=1}^r (x - \lambda_i),$$
-where $\lambda_1, \dots, \lambda_r \in \mathbb{C}$ are the distinct eigenvalues of $A^k$.
+where $\lambda_1, \dots, \lambda_r \in \CC$ are the distinct eigenvalues of $A^k$.
 
 :::
 
@@ -94,7 +94,7 @@ The polynomial $P(x)=m_{A^k}(x^k)$ annihilates $A$.
 
 ::: pf-step
 
-Define the polynomial $P(x) \in \mathbb{C}[x]$ by
+Define the polynomial $P(x) \in \CC[x]$ by
     $$P(x) = m_{A^k}(x^k) = \prod_{i=1}^r (x^k - \lambda_i).$$
 
 :::
@@ -108,7 +108,7 @@ Evaluating $P$ on $A$:
 
 ::: pf-step
 
-Since $P(A) = 0$, the minimal polynomial $m_A(x)$ of $A$ divides $P(x)$ in $\mathbb{C}[x]$.
+Since $P(A) = 0$, the minimal polynomial $m_A(x)$ of $A$ divides $P(x)$ in $\CC[x]$.
 
 :::
 
@@ -130,20 +130,20 @@ For each $i \in \{1, \dots, r\}$, since $\lambda_i \ne 0$, the polynomial $x^k -
 
 ::: pf-step
 
-Thus $\gcd(x^k - \lambda_i, k x^{k-1}) = 1$, so each $x^k - \lambda_i$ has $k$ distinct roots in $\mathbb{C}$, given explicitly by
+Thus $\gcd(x^k - \lambda_i, k x^{k-1}) = 1$, so each $x^k - \lambda_i$ has $k$ distinct roots in $\CC$, given explicitly by
     $$\mu_{i, j} = \lambda_i^{1/k} e^{2\pi i j / k} \quad \text{for } j \in \{0, 1, \dots, k-1\}.$$
 
 :::
 
 ::: pf-step
 
-For $i \ne j$, the polynomials $x^k - \lambda_i$ and $x^k - \lambda_j$ share no roots: if $\alpha \in \mathbb{C}$ were a common root, then $\alpha^k = \lambda_i$ and $\alpha^k = \lambda_j$, implying $\lambda_i = \lambda_j$, a contradiction.
+For $i \ne j$, the polynomials $x^k - \lambda_i$ and $x^k - \lambda_j$ share no roots: if $\alpha \in \CC$ were a common root, then $\alpha^k = \lambda_i$ and $\alpha^k = \lambda_j$, implying $\lambda_i = \lambda_j$, a contradiction.
 
 :::
 
 ::: pf-step
 
-Therefore, $P(x) = \prod_{i=1}^r (x^k - \lambda_i)$ has exactly $k r$ distinct roots in $\mathbb{C}$.
+Therefore, $P(x) = \prod_{i=1}^r (x^k - \lambda_i)$ has exactly $k r$ distinct roots in $\CC$.
 
 :::
 
@@ -153,19 +153,19 @@ Therefore, $P(x) = \prod_{i=1}^r (x^k - \lambda_i)$ has exactly $k r$ distinct r
 
 ::: {.pf-step #s5}
 
-The matrix $A$ is diagonalizable over $\mathbb C$.
+The matrix $A$ is diagonalizable over $\CC$.
 
 ::: pf-proof
 
 ::: pf-step
 
-Since $m_A(x)$ divides $P(x)$ and $P(x)$ is a product of distinct linear factors over $\mathbb{C}$, $m_A(x)$ is also a product of distinct linear factors over $\mathbb{C}$.
+Since $m_A(x)$ divides $P(x)$ and $P(x)$ is a product of distinct linear factors over $\CC$, $m_A(x)$ is also a product of distinct linear factors over $\CC$.
 
 :::
 
 ::: pf-step
 
-By the criterion in step [](#s1){.pf-ref}, $A$ is diagonalizable over $\mathbb{C}$.
+By the criterion in step [](#s1){.pf-ref}, $A$ is diagonalizable over $\CC$.
 
 :::
 

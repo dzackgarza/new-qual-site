@@ -22,12 +22,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite Borel measure on $\mathbb R$.
+Let $\mu$ be a finite Borel measure on $\RR$.
 Suppose there is $t>0$ such that
 \[
 \mu(A+t)=\mu(A)
 \]
-for every Borel set $A\subset\mathbb R$.
+for every Borel set $A\subset\RR$.
 Prove that $\mu$ is the zero measure.
 :::
 
@@ -45,16 +45,16 @@ By the assumed translation invariance,
 \[
 \mu(I+kt)=\mu(I)
 \]
-for every $k\in\mathbb Z$.
+for every $k\in\ZZ$.
 
 If $\mu(I)>0$, then for every $N\ge1$,
 \[
-\mu(\mathbb R)
+\mu(\RR)
 \ge
 \mu\!\left(\bigcup_{k=0}^{N-1}(I+kt)\right)
 =N\mu(I),
 \]
-which contradicts finiteness of $\mu(\mathbb R)$ as $N\to\infty$.
+which contradicts finiteness of $\mu(\RR)$ as $N\to\infty$.
 Hence
 \[
 \mu(I)=0.
@@ -62,14 +62,14 @@ Hence
 
 Now
 \[
-\mathbb R=\bigcup_{k\in\mathbb Z}(I+kt),
+\RR=\bigcup_{k\in\ZZ}(I+kt),
 \]
 so countable subadditivity gives
 \[
-\mu(\mathbb R)
-\le\sum_{k\in\mathbb Z}\mu(I+kt)=0.
+\mu(\RR)
+\le\sum_{k\in\ZZ}\mu(I+kt)=0.
 \]
-Thus $\mu(\mathbb R)=0$, and consequently every Borel set has measure zero.
+Thus $\mu(\RR)=0$, and consequently every Borel set has measure zero.
 Therefore
 \[
 \boxed{\mu=0}.

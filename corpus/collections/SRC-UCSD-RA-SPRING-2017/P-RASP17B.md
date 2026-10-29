@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-What is the closure of each of $\Gamma \subset L^1(\mathbb{R}, m)$ in the Banach space norm, $\|f\|_1 := \int_\mathbb{R} |f| \, dm$, in each of the three cases listed below? Briefly justify your answer.
+What is the closure of each of $\Gamma \subset L^1(\RR, m)$ in the Banach space norm, $\|f\|_1 := \int_\RR |f| \, dm$, in each of the three cases listed below? Briefly justify your answer.
 
-1) $\Gamma = C_c(\mathbb{R}, \mathbb{R})$
+1) $\Gamma = C_c(\RR, \RR)$
 
-2) $\Gamma = \{f \in C_c(\mathbb{R}, \mathbb{R}) : f(0) = 0\}$
+2) $\Gamma = \{f \in C_c(\RR, \RR) : f(0) = 0\}$
 
-3) $\Gamma = \left\{f \in C_c(\mathbb{R}, \mathbb{R}) : \int_{[-1,1]} f \, dm = 0\right\}$
+3) $\Gamma = \left\{f \in C_c(\RR, \RR) : \int_{[-1,1]} f \, dm = 0\right\}$
 :::
 
 ::: {.solution}
@@ -41,17 +41,17 @@ What is the closure of each of $\Gamma \subset L^1(\mathbb{R}, m)$ in the Banach
 
 ::: pf-step
 
-For \(\Gamma=C_c(\mathbb R)\), the closure is all of \(L^1(\mathbb R)\).
+For \(\Gamma=C_c(\RR)\), the closure is all of \(L^1(\RR)\).
 
 ::: pf-proof
 
 The standard density theorem for Lebesgue spaces states that
 \[
-C_c(\mathbb R)\text{ is dense in }L^1(\mathbb R).
+C_c(\RR)\text{ is dense in }L^1(\RR).
 \]
 Hence
 \[
-\boxed{\overline\Gamma^{\,L^1}=L^1(\mathbb R).}
+\boxed{\overline\Gamma^{\,L^1}=L^1(\RR).}
 \]
 
 :::
@@ -64,7 +64,7 @@ Imposing the point condition \(f(0)=0\) does not change the closure.
 
 ::: pf-proof
 
-Let \(u\in C_c(\mathbb R)\). Choose continuous cutoffs \(\chi_n:\mathbb R\to[0,1]\) such that
+Let \(u\in C_c(\RR)\). Choose continuous cutoffs \(\chi_n:\RR\to[0,1]\) such that
 \[
 \chi_n(0)=0,
 \qquad
@@ -72,7 +72,7 @@ Let \(u\in C_c(\mathbb R)\). Choose continuous cutoffs \(\chi_n:\mathbb R\to[0,1
 \]
 Then
 \[
-u_n:=\chi_nu\in C_c(\mathbb R),
+u_n:=\chi_nu\in C_c(\RR),
 \qquad
 u_n(0)=0.
 \]
@@ -87,7 +87,7 @@ so by absolute continuity of the Lebesgue integral,
 Thus every compactly supported continuous function lies in the \(L^1\)-closure of the subclass vanishing at \(0\). By Step 1,
 \[
 \boxed{
-\overline{\{u\in C_c:u(0)=0\}}^{\,L^1}=L^1(\mathbb R).}
+\overline{\{u\in C_c:u(0)=0\}}^{\,L^1}=L^1(\RR).}
 \]
 
 :::
@@ -102,7 +102,7 @@ Identify the closure of the zero-integral class.
 
 Define
 \[
-L:L^1(\mathbb R)\to\mathbb R,
+L:L^1(\RR)\to\RR,
 \qquad
 L(f)=\int_{[-1,1]}f\,dm.
 \]
@@ -117,11 +117,11 @@ so \(L\) is continuous. Therefore
 \]
 is closed, and the third class is contained in \(\ker L\). Hence its closure is contained in \(\ker L\).
 
-Conversely, take \(f\in\ker L\). Choose \(u_n\in C_c(\mathbb R)\) with \(u_n\to f\) in \(L^1\). Then
+Conversely, take \(f\in\ker L\). Choose \(u_n\in C_c(\RR)\) with \(u_n\to f\) in \(L^1\). Then
 \[
 L(u_n)\to L(f)=0.
 \]
-Fix \(\psi\in C_c(\mathbb R)\) with support in \((-1,1)\) and
+Fix \(\psi\in C_c(\RR)\) with support in \((-1,1)\) and
 \[
 \int_{[-1,1]}\psi\,dm=1.
 \]
@@ -129,7 +129,7 @@ Set
 \[
 v_n:=u_n-L(u_n)\psi.
 \]
-Then \(v_n\in C_c(\mathbb R)\) and
+Then \(v_n\in C_c(\RR)\) and
 \[
 \int_{[-1,1]}v_n\,dm=0.
 \]
@@ -143,7 +143,7 @@ Thus
 \[
 \boxed{
 \overline\Gamma^{\,L^1}
-=\left\{f\in L^1(\mathbb R):\int_{[-1,1]}f\,dm=0\right\}.}
+=\left\{f\in L^1(\RR):\int_{[-1,1]}f\,dm=0\right\}.}
 \]
 
 :::

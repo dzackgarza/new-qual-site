@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Suppose $f:\mathbb R\to\mathbb R$ is a bounded and measurable function satisfying
+Problem 5. Suppose $f:\RR\to\RR$ is a bounded and measurable function satisfying
 \[
 f(x+1)=f(x)\qquad\text{and}\qquad f(2x)=f(x)
 \]
-for almost every $x\in\mathbb R$. Show that there exists a constant $c\in\mathbb R$ such that $f(x)=c$ for almost every $x\in\mathbb R$.
+for almost every $x\in\RR$. Show that there exists a constant $c\in\RR$ such that $f(x)=c$ for almost every $x\in\RR$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ Since \(f\) is bounded and measurable, its restriction to \([0,1]\) lies in
 L^2([0,1]).
 \]
 
-For each \(n\in\mathbb Z\), define the Fourier coefficient
+For each \(n\in\ZZ\), define the Fourier coefficient
 \[
 \boxed{
 \widehat f(n)
@@ -44,7 +44,7 @@ f(x)e^{-2\pi i n x}\,dx}.
 
 ::: pf-step
 
-For every \(n\in\mathbb Z\),
+For every \(n\in\ZZ\),
 \[
 \widehat f(n)
 =
@@ -358,7 +358,7 @@ almost everywhere on \([0,1]\).
 
 The trigonometric system
 \[
-\{e^{2\pi i n x}:n\in\mathbb Z\}
+\{e^{2\pi i n x}:n\in\ZZ\}
 \]
 is complete in \(L^2([0,1])\). A function orthogonal to every basis vector must be \(0\) in \(L^2\), hence almost everywhere.
 
@@ -386,7 +386,7 @@ This is step [](#s1-13){.pf-ref} with \(g=f-c\).
 
 ::: {.pf-step #s1-15}
 
-The same equality holds for almost every \(x\in\mathbb R\).
+The same equality holds for almost every \(x\in\RR\).
 
 
 ::: pf-proof
@@ -395,11 +395,11 @@ For each integer \(m\), the relation
 \[
 f(x+m)=f(x)
 \]
-holds almost everywhere by iterating the given period-\(1\) relation. Translating the null exceptional set from \([0,1]\) to each interval \([m,m+1]\) preserves nullity. Taking the countable union over \(m\in\mathbb Z\) still gives a null set. Hence
+holds almost everywhere by iterating the given period-\(1\) relation. Translating the null exceptional set from \([0,1]\) to each interval \([m,m+1]\) preserves nullity. Taking the countable union over \(m\in\ZZ\) still gives a null set. Hence
 \[
 f=c
 \]
-almost everywhere on \(\mathbb R\).
+almost everywhere on \(\RR\).
 
 :::
 

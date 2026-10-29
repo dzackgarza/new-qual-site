@@ -21,13 +21,13 @@ audit:
 
 ::: {.pf-step #p1-s1}
 
-Prove that every linear transformation $T\colon\mathbb C^n\to\mathbb C^n$ has a nonzero eigenvector.
+Prove that every linear transformation $T\colon\CC^n\to\CC^n$ has a nonzero eigenvector.
 
 :::
 
 ::: pf-step
 
-Is step [](#p1-s1){.pf-ref} true for every real-linear transformation $T\colon\mathbb R^n\to\mathbb R^n$?
+Is step [](#p1-s1){.pf-ref} true for every real-linear transformation $T\colon\RR^n\to\RR^n$?
 
 :::
 
@@ -44,7 +44,7 @@ Prove your assertion.
 
 Every linear transformation
 \[
-T:\mathbb C^n\to\mathbb C^n
+T:\CC^n\to\CC^n
 \]
 has a nonzero eigenvector.
 
@@ -56,7 +56,7 @@ p_T(\lambda)=\det(\lambda I-T)
 \]
 be the characteristic polynomial. It has degree $n$. By the fundamental theorem of algebra, there exists
 \[
-\lambda\in\mathbb C
+\lambda\in\CC
 \]
 such that
 \[
@@ -82,13 +82,13 @@ so $v$ is a nonzero eigenvector.
 
 ::: {.pf-step #p2-s2}
 
-The corresponding assertion over $\mathbb R$ is false in general.
+The corresponding assertion over $\RR$ is false in general.
 
 ::: pf-proof
 
 Consider the real-linear transformation
 \[
-T:\mathbb R^2\to\mathbb R^2
+T:\RR^2\to\RR^2
 \]
 with matrix
 \[
@@ -114,7 +114,7 @@ If
 \[
 Av=\lambda v
 \]
-for some nonzero $v\in\mathbb R^2$ and $\lambda\in\mathbb R$, then $\lambda$ would be a real root of the characteristic polynomial
+for some nonzero $v\in\RR^2$ and $\lambda\in\RR$, then $\lambda$ would be a real root of the characteristic polynomial
 \[
 \det(\lambda I-A)
 =

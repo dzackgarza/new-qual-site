@@ -19,13 +19,13 @@ Give examples of the following.
 
 ::: pf-step
 
-A function $f:[0,1]\to\mathbb R$ that is not Riemann integrable although $|f|$ is Riemann integrable.
+A function $f:[0,1]\to\RR$ that is not Riemann integrable although $|f|$ is Riemann integrable.
 
 :::
 
 ::: pf-step
 
-Continuous functions $f_n,f:[0,1]\to\mathbb R$ such that $f_n(t)\to f(t)$ for every $t\in[0,1]$, but
+Continuous functions $f_n,f:[0,1]\to\RR$ such that $f_n(t)\to f(t)$ for every $t\in[0,1]$, but
 
 :::
 
@@ -51,8 +51,8 @@ For part step [](#p2-s1){.pf-ref}, define
 f(x)
 =
 \begin{cases}
-1,&x\in\mathbb Q,\\
--1,&x\notin\mathbb Q.
+1,&x\in\QQ,\\
+-1,&x\notin\QQ.
 \end{cases}
 \]
 Then
@@ -101,7 +101,7 @@ Fix
 \[
 x_0\in[0,1].
 \]
-Every neighborhood of $x_0$ contains rational and irrational numbers because both sets are dense in $\mathbb R$.
+Every neighborhood of $x_0$ contains rational and irrational numbers because both sets are dense in $\RR$.
 Along rational points approaching $x_0$, the function value is $1$.
 Along irrational points approaching $x_0$, the function value is $-1$.
 Hence

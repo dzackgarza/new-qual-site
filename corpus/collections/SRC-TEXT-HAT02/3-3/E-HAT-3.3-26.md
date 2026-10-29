@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the cup product structure in $H^*(S^2 \times S^8 \sharp S^4 \times S^6; \mathbb{Z})$, and in particular show that the only nontrivial cup products are those dictated by Poincaré duality.
+Compute the cup product structure in $H^*(S^2 \times S^8 \sharp S^4 \times S^6; \ZZ)$, and in particular show that the only nontrivial cup products are those dictated by Poincaré duality.
 :::
 
 ::: {.solution}
@@ -41,7 +41,7 @@ c\in H^4(M),\quad d\in H^6(M),
 \]
 coming respectively from the $S^2,S^8,S^4,S^6$ factors, and let
 \[
-u\in H^{10}(M)\cong\mathbb Z
+u\in H^{10}(M)\cong\ZZ
 \]
 be the orientation class.
 

@@ -47,7 +47,7 @@ Then $J$ is rotation through $\pi/2$ and $-J$ is rotation through $-\pi/2$.
 
 ::: {.pf-step #s1-1}
 
-Both $J$ and $-J$ lie in $GL_2^+(\mathbb R)$.
+Both $J$ and $-J$ lie in $GL_2^+(\RR)$.
 
 
 ::: pf-proof
@@ -65,7 +65,7 @@ $$
 
 ::: {.pf-step #s1-2}
 
-The matrices $J$ and $-J$ are similar in $GL_2(\mathbb R)$.
+The matrices $J$ and $-J$ are similar in $GL_2(\RR)$.
 
 
 ::: pf-proof
@@ -82,7 +82,7 @@ Then $S^{-1}=S$ and direct multiplication gives
 $$
 SJS^{-1}=-J.
 $$
-Thus $J$ and $-J$ are conjugate in $GL_2(\mathbb R)$. Notice that $\det S=-1$.
+Thus $J$ and $-J$ are conjugate in $GL_2(\RR)$. Notice that $\det S=-1$.
 
 :::
 
@@ -90,7 +90,7 @@ Thus $J$ and $-J$ are conjugate in $GL_2(\mathbb R)$. Notice that $\det S=-1$.
 
 ::: {.pf-step #s1-3}
 
-Every $P\in GL_2(\mathbb R)$ satisfying
+Every $P\in GL_2(\RR)$ satisfying
 $$
 PJP^{-1}=-J
 $$
@@ -155,12 +155,12 @@ Thus
 $$
 \boxed{J\ \text{and}\ -J}
 $$
-form a counterexample: they are similar in $GL_2(\mathbb R)$ but are not conjugate in $GL_2^+(\mathbb R)$.
+form a counterexample: they are similar in $GL_2(\RR)$ but are not conjugate in $GL_2^+(\RR)$.
 
 
 ::: pf-proof
 
-Similarity is step [](#s1-2){.pf-ref}. If they were conjugate in $GL_2^+(\mathbb R)$, there would be a conjugator $P$ of positive determinant, contradicting step [](#s1-3){.pf-ref}.
+Similarity is step [](#s1-2){.pf-ref}. If they were conjugate in $GL_2^+(\RR)$, there would be a conjugator $P$ of positive determinant, contradicting step [](#s1-3){.pf-ref}.
 
 :::
 

@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and nowhere zero, and consider $y'=f(y)$.
+Let $f:\RR\to\RR$ be continuous and nowhere zero, and consider $y'=f(y)$.
 
-(a) For each $c\in\mathbb R$, show there is a unique $C^1$ solution near $0$ with $y(0)=c$.
+(a) For each $c\in\RR$, show there is a unique $C^1$ solution near $0$ with $y(0)=c$.
 
-(b) Determine the conditions on $f$ under which the solution exists for all $x\in\mathbb R$ for every initial value $c$.
+(b) Determine the conditions on $f$ under which the solution exists for all $x\in\RR$ for every initial value $c$.
 :::
 
 ::: {.solution}
-Because $f$ is continuous and nowhere zero on the connected set $\mathbb R$,
+Because $f$ is continuous and nowhere zero on the connected set $\RR$,
 it has constant sign.
 
 ::: pf
@@ -43,7 +43,7 @@ Construct a local solution through an arbitrary initial value $c$.
 
 ::: pf-proof
 
-Fix $c\in\mathbb R$ and define
+Fix $c\in\RR$ and define
 $$
 H_c(y)=\int_c^y\frac{ds}{f(s)}.
 $$
@@ -113,7 +113,7 @@ Describe the maximal interval of existence.
 The same formula shows that the maximal solution is the inverse of $H_c$ on
 the full interval
 $$
-H_c(\mathbb R).
+H_c(\RR).
 $$
 Because $H_c$ is continuous and strictly monotone, its image is the open
 interval between the two improper endpoint limits
@@ -122,9 +122,9 @@ $$
 \quad\text{and}\quad
 \lim_{y\to+\infty}H_c(y).
 $$
-Thus the solution through $c$ exists for all $x\in\mathbb R$ exactly when
+Thus the solution through $c$ exists for all $x\in\RR$ exactly when
 $$
-H_c(\mathbb R)=\mathbb R.
+H_c(\RR)=\RR.
 $$
 
 :::
@@ -148,11 +148,11 @@ Indeed, changing the base point from $0$ to any finite $c$ alters either
 improper integral only by a finite constant, so this criterion is independent
 of the initial value.
 
-If both integrals diverge, $H_c(\mathbb R)=\mathbb R$ for every $c$, and
+If both integrals diverge, $H_c(\RR)=\RR$ for every $c$, and
 every initial-value solution is global. If either integral is finite, the
-corresponding endpoint of $H_c(\mathbb R)$ is finite, so the inverse solution
+corresponding endpoint of $H_c(\RR)$ is finite, so the inverse solution
 reaches infinity in finite $x$-time and cannot be defined on all of
-$\mathbb R$.
+$\RR$.
 
 :::
 

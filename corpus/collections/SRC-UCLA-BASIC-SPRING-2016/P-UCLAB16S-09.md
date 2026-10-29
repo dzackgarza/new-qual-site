@@ -21,8 +21,8 @@ Let
 \[
 v_1=(0,1,x),\qquad v_2=(1,x,1),\qquad v_3=(x,1,0).
 \]
-Find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb R$.
-Similarly, find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb Q$.
+Find all $x\in\RR$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\RR$.
+Similarly, find all $x\in\RR$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\QQ$.
 :::
 
 ::: {.solution}
@@ -88,7 +88,7 @@ x(2-x^2).
 
 ::: {.pf-step #s1-2}
 
-The vectors are linearly independent over $\mathbb R$ exactly when
+The vectors are linearly independent over $\RR$ exactly when
 \[
 \boxed{
 x\notin\{0,\sqrt2,-\sqrt2\}.
@@ -98,7 +98,7 @@ x\notin\{0,\sqrt2,-\sqrt2\}.
 
 ::: pf-proof
 
-Three vectors in $\mathbb R^3$ are linearly independent over $\mathbb R$ exactly when the determinant of the matrix having them as columns is nonzero.
+Three vectors in $\RR^3$ are linearly independent over $\RR$ exactly when the determinant of the matrix having them as columns is nonzero.
 By step [](#s1-1){.pf-ref},
 \[
 \det M(x)=0
@@ -121,7 +121,7 @@ If
 \[
 x\notin\{0,\sqrt2,-\sqrt2\},
 \]
-then the vectors are also linearly independent over $\mathbb Q$.
+then the vectors are also linearly independent over $\QQ$.
 
 
 ::: pf-proof
@@ -140,7 +140,7 @@ At
 \[
 x=0,
 \]
-the vectors are linearly dependent over $\mathbb Q$.
+the vectors are linearly dependent over $\QQ$.
 
 
 ::: pf-proof
@@ -178,7 +178,7 @@ q_1v_1+q_2v_2+q_3v_3=0
 \]
 with
 \[
-q_1,q_2,q_3\in\mathbb Q.
+q_1,q_2,q_3\in\QQ.
 \]
 Then
 \[
@@ -211,11 +211,11 @@ q_1\ne0,
 then
 \[
 x=-\frac{q_2}{q_1}
-\in\mathbb Q,
+\in\QQ,
 \]
 contradicting
 \[
-x=\pm\sqrt2\notin\mathbb Q.
+x=\pm\sqrt2\notin\QQ.
 \]
 Therefore
 \[
@@ -244,7 +244,7 @@ q_3=0.
 
 ::: {.pf-step #s1-6}
 
-Therefore the vectors are linearly independent over $\mathbb Q$ exactly when
+Therefore the vectors are linearly independent over $\QQ$ exactly when
 \[
 \boxed{x\ne0}.
 \]
@@ -268,7 +268,7 @@ Thus $0$ is the only excluded value.
 
 ::: pf-qed
 
-Step [](#s1-2){.pf-ref} gives the answer over $\mathbb R$, and step [](#s1-6){.pf-ref} gives the answer over $\mathbb Q$.
+Step [](#s1-2){.pf-ref} gives the answer over $\RR$, and step [](#s1-6){.pf-ref} gives the answer over $\QQ$.
 
 :::
 

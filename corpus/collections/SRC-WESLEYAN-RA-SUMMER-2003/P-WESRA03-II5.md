@@ -16,8 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X=\mathbb R$, let $\mathcal B(\mathbb R)$ be the Borel sigma-algebra, let $m$ be Lebesgue measure, and let $\sigma$ be counting measure on $\mathbb R$.
-Define $f:\mathbb R^2\to\mathbb R$ by
+Let $X=\RR$, let $\mathcal B(\RR)$ be the Borel sigma-algebra, let $m$ be Lebesgue measure, and let $\sigma$ be counting measure on $\RR$.
+Define $f:\RR^2\to\RR$ by
 \[
 f(x,y)=
 \begin{cases}
@@ -37,7 +37,7 @@ Show that
 
 Let
 \[
-D=\{(x,y)\in\mathbb R^2:x=y\}
+D=\{(x,y)\in\RR^2:x=y\}
 \]
 be the diagonal. Then
 \[
@@ -71,7 +71,7 @@ Hence \(D\) is Borel, so its indicator is Borel measurable.
 
 ::: pf-step
 
-Fix \(y\in\mathbb R\). Then
+Fix \(y\in\RR\). Then
 \[
 \boxed{
 f(x,y)=\mathbf 1_{\{y\}}(x)}.
@@ -96,7 +96,7 @@ x=y.
 Therefore
 \[
 \boxed{
-\int_{\mathbb R}f(x,y)\,dm(x)=0}.
+\int_{\RR}f(x,y)\,dm(x)=0}.
 \]
 
 
@@ -104,7 +104,7 @@ Therefore
 
 The singleton \(\{y\}\) has Lebesgue measure zero. Hence
 \[
-\int_{\mathbb R}\mathbf 1_{\{y\}}\,dm
+\int_{\RR}\mathbf 1_{\{y\}}\,dm
 =
 m(\{y\})
 =
@@ -120,9 +120,9 @@ m(\{y\})
 Consequently,
 \[
 \boxed{
-\int_{\mathbb R}
+\int_{\RR}
 \left(
-\int_{\mathbb R}
+\int_{\RR}
 f(x,y)\,dm(x)
 \right)
 d\sigma(y)
@@ -142,7 +142,7 @@ of the zero function with respect to any measure is zero.
 
 ::: pf-step
 
-Fix \(x\in\mathbb R\). Then
+Fix \(x\in\RR\). Then
 \[
 \boxed{
 f(x,y)=\mathbf 1_{\{x\}}(y)}.
@@ -167,7 +167,7 @@ y=x.
 Therefore
 \[
 \boxed{
-\int_{\mathbb R}f(x,y)\,d\sigma(y)=1}.
+\int_{\RR}f(x,y)\,d\sigma(y)=1}.
 \]
 
 
@@ -179,7 +179,7 @@ Counting measure assigns to a singleton the value
 \]
 Hence
 \[
-\int_{\mathbb R}\mathbf 1_{\{x\}}\,d\sigma
+\int_{\RR}\mathbf 1_{\{x\}}\,d\sigma
 =
 1.
 \]
@@ -192,14 +192,14 @@ Hence
 
 Consequently,
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \left(
-\int_{\mathbb R}
+\int_{\RR}
 f(x,y)\,d\sigma(y)
 \right)
 dm(x)
 =
-\int_{\mathbb R}1\,dm(x).
+\int_{\RR}1\,dm(x).
 \]
 
 
@@ -221,11 +221,11 @@ The last integral equals
 
 ::: pf-proof
 
-Lebesgue measure of \(\mathbb R\) is infinite:
+Lebesgue measure of \(\RR\) is infinite:
 \[
-\int_{\mathbb R}1\,dm
+\int_{\RR}1\,dm
 =
-m(\mathbb R)
+m(\RR)
 =
 \infty.
 \]
@@ -278,13 +278,13 @@ One is \(0\) and the other is \(+\infty\).
 ::: pf-step
 
 This does not contradict Tonelli--Fubini because counting measure on
-the uncountable set \(\mathbb R\) is not \(\sigma\)-finite.
+the uncountable set \(\RR\) is not \(\sigma\)-finite.
 
 
 ::: pf-proof
 
 Every set of finite counting measure is finite. A countable union of finite
-sets is countable, so \(\mathbb R\) cannot be written as a countable union of
+sets is countable, so \(\RR\) cannot be written as a countable union of
 sets of finite counting measure. Thus \(\sigma\) is not \(\sigma\)-finite,
 and the usual Tonelli--Fubini hypotheses fail.
 

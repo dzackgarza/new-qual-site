@@ -37,7 +37,7 @@ shows that $T^{-1}:T(X)\to X$ is bounded.
 
 Fix $\phi\in X^*$ and define
 \[
-\lambda:T(X)\to\mathbb C,\qquad \lambda(y)=\phi(T^{-1}y).
+\lambda:T(X)\to\CC,\qquad \lambda(y)=\phi(T^{-1}y).
 \]
 Then $\lambda$ is linear and continuous, with
 \[

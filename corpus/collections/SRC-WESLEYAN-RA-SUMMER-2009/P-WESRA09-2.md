@@ -50,7 +50,7 @@ then \(\boxed{\mu=\nu\text{ on }\sigma(\mathcal R)}\).
 
 ::: pf-step
 
-The Dominated Convergence Theorem is the following: let \((\Omega,\mathcal A,\mu)\) be a measure space, let \(f_n:\Omega\to\mathbb R\) or \(\mathbb C\) be measurable, and suppose \(f_n\to f\) almost everywhere. If there is \(g\in L^1(\mu)\) such that \(|f_n|\le g\) almost everywhere for every \(n\), then \(f\in L^1(\mu)\),
+The Dominated Convergence Theorem is the following: let \((\Omega,\mathcal A,\mu)\) be a measure space, let \(f_n:\Omega\to\RR\) or \(\CC\) be measurable, and suppose \(f_n\to f\) almost everywhere. If there is \(g\in L^1(\mu)\) such that \(|f_n|\le g\) almost everywhere for every \(n\), then \(f\in L^1(\mu)\),
 \[
 \boxed{\int_\Omega |f_n-f|\,d\mu\longrightarrow0},
 \]
@@ -63,7 +63,7 @@ and in particular
 
 ::: pf-step
 
-The Hahn--Banach Theorem in normed-space form is the following: let \(X\) be a normed vector space over \(\mathbb R\) or \(\mathbb C\), let \(M\subseteq X\) be a linear subspace, and let \(f:M\to\mathbb R\) or \(\mathbb C\) be a bounded linear functional. Then there is a bounded linear functional \(F:X\to\mathbb R\) or \(\mathbb C\) such that
+The Hahn--Banach Theorem in normed-space form is the following: let \(X\) be a normed vector space over \(\RR\) or \(\CC\), let \(M\subseteq X\) be a linear subspace, and let \(f:M\to\RR\) or \(\CC\) be a bounded linear functional. Then there is a bounded linear functional \(F:X\to\RR\) or \(\CC\) such that
 \[
 \boxed{F|_M=f,
 \qquad

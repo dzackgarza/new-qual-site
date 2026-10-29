@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,2]\to\mathbb R$ be $C^1$ and suppose
+Let $f:[0,2]\to\RR$ be $C^1$ and suppose
 \[
 f(0)=f'(0)=f(2)=f'(2)=0.
 \]

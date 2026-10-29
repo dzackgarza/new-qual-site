@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Give a function in $L^2(\mathbb R)$ that is not in $L^1(\mathbb R)$.
+(a) Give a function in $L^2(\RR)$ that is not in $L^1(\RR)$.
 
 (b) Give a function in $L^1((0,1))$ that is not in $L^2((0,1))$.
 :::
@@ -38,9 +38,9 @@ Then
 \[
 |f(x)|^2=(1+|x|)^{-3/2},
 \]
-which is integrable on $\mathbb R$, while $(1+|x|)^{-3/4}$ is not integrable at infinity. Hence
+which is integrable on $\RR$, while $(1+|x|)^{-3/4}$ is not integrable at infinity. Hence
 \[
-f\in L^2(\mathbb R)\setminus L^1(\mathbb R).
+f\in L^2(\RR)\setminus L^1(\RR).
 \]
 
 For (b), take

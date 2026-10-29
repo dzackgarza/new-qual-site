@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-085
 kind: problem
-title: '$\mathbb Z[\sqrt{13}]$ is not a UFD: irreducibility of $x^2+3x-1$'
+title: '$\ZZ[\sqrt{13}]$ is not a UFD: irreducibility of $x^2+3x-1$'
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \mathbb { Z } ( { \sqrt { 1 3 } } ) = \{ m + n { \sqrt { 1 3 } } \mid m , n \in \mathbb { Z } \}$ and $F = \mathbb { Q } ( { \sqrt { 1 3 } } )$ its field of fractions.
+Let $D = \ZZ ( { \sqrt { 1 3 } } ) = \{ m + n { \sqrt { 1 3 } } \mid m , n \in \ZZ \}$ and $F = \QQ ( { \sqrt { 1 3 } } )$ its field of fractions.
 Show the following:
 
 (a) $x ^ { 2 } + 3 x - 1$ is irreducible in $D [ x ]$ but not in $F [ x ]$

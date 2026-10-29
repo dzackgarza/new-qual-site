@@ -11,10 +11,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f ( X ) = X ^ { 6 } + a X ^ { 3 } + 1 \in \mathbb { Z } [ X ]$ be irreducible, and let $\mathcal G \subset S _ { 6 }$ be its galois group.
-(Analyzing possible factorizations, it is not hard to show—but you needn’t do so now—that f is reducible $\iff a = p ^ { 3 } - 3 p$ for some $p \in \mathbb { Z } . )$
+Let $f ( X ) = X ^ { 6 } + a X ^ { 3 } + 1 \in \ZZ [ X ]$ be irreducible, and let $\mathcal G \subset S _ { 6 }$ be its galois group.
+(Analyzing possible factorizations, it is not hard to show—but you needn’t do so now—that f is reducible $\iff a = p ^ { 3 } - 3 p$ for some $p \in \ZZ . )$
 
-Let $F$ be a splitting field of $f \ ( \mathrm { o v e r } \ \mathbb { Q } )$
+Let $F$ be a splitting field of $f \ ( \mathrm { o v e r } \ \QQ )$
 
 (a) Show that $\mathrm { i f } \ | a | \geq 2$ then $f$ has a real root $x ,$ and that with ω a primitive cube root of unity, the other roots are ωx, $\omega ^ { 2 } x , 1 / x , \omega / x$ , and $\omega ^ { 2 } / x$ [6]
 
@@ -27,7 +27,7 @@ Show that there is an order-6 automorphism ψ of F with $\psi x = \omega / x$ an
 
 (c) For x as in $\mathrm { ( a ) }$ , it is easily seen—and you may assume—that $x + 1 / x , \omega x + 1 / ( \omega x )$ and $\omega ^ { 2 } x + 1 / ( \omega ^ { 2 } x )$ make up a single $\mathcal { G } _ { \mathrm { - o r b i t } }$ , and are distinct roots of $X ^ { 3 } - 3 X + a$
 
-Show that there are precisely three fields $E \subset F$ such that $[ E : \mathbb { Q } ] = 3$ , that these are conjugate to each other, and that each is generated over $\mathbb { Q }$ by a root of $X ^ { 3 } - 3 X + a$ . [9]
+Show that there are precisely three fields $E \subset F$ such that $[ E : \QQ ] = 3$ , that these are conjugate to each other, and that each is generated over $\QQ$ by a root of $X ^ { 3 } - 3 X + a$ . [9]
 
 Total points:[80]
 :::

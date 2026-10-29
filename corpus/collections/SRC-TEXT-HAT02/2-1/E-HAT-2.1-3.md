@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.1-3
 kind: problem
-title: $\Delta$-complex structure on $\mathbb{RP}^n$ from $S^n$
+title: $\Delta$-complex structure on $\RP^n$ from $S^n$
 classification:
   areas:
   - topology
@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\Delta$-complex structure on $S^n$ having vertices the two vectors of length 1 along each coordinate axis in $\mathbb{R}^{n+1}$.
+Construct a $\Delta$-complex structure on $\RP^n$ as a quotient of a $\Delta$-complex structure on $S^n$ having vertices the two vectors of length 1 along each coordinate axis in $\RR^{n+1}$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ Let
 \[
 e_0,\dots,e_n
 \]
-be the standard basis of $\mathbb R^{n+1}$ and let
+be the standard basis of $\RR^{n+1}$ and let
 \[
 C=\operatorname{conv}\{\pm e_0,\dots,\pm e_n\}
 \]
@@ -107,7 +107,7 @@ No simplex contains both $e_i$ and $-e_i$, so no simplex is carried to itself po
 
 The quotient simplices give a $\Delta$-complex structure on
 \[
-S^n/(x\sim-x)=\mathbb{RP}^n.
+S^n/(x\sim-x)=\RP^n.
 \]
 
 ::: pf-proof
@@ -131,7 +131,7 @@ The vertices of the quotient are the $n+1$ antipodal pairs
 ::: pf-proof
 
 This is immediate from the quotient construction in step [](#s4){.pf-ref}.
-Thus the required $\Delta$-complex on $\mathbb{RP}^n$ is obtained from the stated $S^n$ triangulation.
+Thus the required $\Delta$-complex on $\RP^n$ is obtained from the stated $S^n$ triangulation.
 
 :::
 

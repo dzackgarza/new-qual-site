@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $A=(a_{ij})$ be a real symmetric $n\times n$ matrix and let
 \[
-S=\{x\in\mathbb R^n:\|x\|=1\}.
+S=\{x\in\RR^n:\|x\|=1\}.
 \]
 Choose $x\in S$ such that
 \[
@@ -43,7 +43,7 @@ Use step [](#p1-s1){.pf-ref} to prove that $x$ is an eigenvector of $A$.
 
 ::: {.pf-step #p1-s3}
 
-Use induction to prove that $\mathbb R^n$ has an orthonormal basis of eigenvectors for $A$.
+Use induction to prove that $\RR^n$ has an orthonormal basis of eigenvectors for $A$.
 
 :::
 
@@ -73,7 +73,7 @@ on the unit sphere.
 
 Let
 \[
-y\in\mathbb R^n
+y\in\RR^n
 \]
 satisfy
 \[
@@ -414,7 +414,7 @@ one has
 (Ay,z)
 =(y,Az)
 \]
-because $A$ is symmetric on all of $\mathbb R^n$.
+because $A$ is symmetric on all of $\RR^n$.
 Hence the restriction is symmetric on $x^\perp$.
 
 :::
@@ -453,7 +453,7 @@ Then
 \[
 x,v_2,\ldots,v_n
 \]
-is an orthonormal basis of $\mathbb R^n$ consisting entirely of eigenvectors of $A$.
+is an orthonormal basis of $\RR^n$ consisting entirely of eigenvectors of $A$.
 
 :::
 

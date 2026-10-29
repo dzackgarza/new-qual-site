@@ -24,7 +24,7 @@ e^{-1/z^4},&z\ne0,\\
 0,&z=0.
 \end{cases}
 \]
-The source states that $f$ satisfies the Cauchy–Riemann equations at every point of $\mathbb C$ but is not analytic.
+The source states that $f$ satisfies the Cauchy–Riemann equations at every point of $\CC$ but is not analytic.
 Explain how this is possible.
 :::
 
@@ -51,7 +51,7 @@ Cauchy--Riemann equations.
 
 On
 \[
-\mathbb C\setminus\{0\},
+\CC\setminus\{0\},
 \]
 the function
 \[
@@ -268,7 +268,7 @@ Thus $f$ is not continuous at $0$.
 ::: {.pf-step #s1-7}
 
 Consequently $f$ is not complex differentiable at the origin and
-is not analytic on $\mathbb C$.
+is not analytic on $\CC$.
 
 
 ::: pf-proof
@@ -278,7 +278,7 @@ Step [](#s1-6){.pf-ref} shows that $f$ is not continuous at $0$, so it cannot be
 differentiable there.
 
 Hence $f$ is not holomorphic on any neighborhood of $0$ and therefore is
-not analytic on all of $\mathbb C$.
+not analytic on all of $\CC$.
 
 :::
 

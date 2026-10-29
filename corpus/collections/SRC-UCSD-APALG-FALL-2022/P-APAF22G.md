@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF22G
 kind: problem
-title: Every bivector in $\mathbb{C}^3 \wedge \mathbb{C}^3$ is decomposable
+title: Every bivector in $\CC^3 \wedge \CC^3$ is decomposable
 classification:
   areas:
   - applied-algebra
@@ -13,12 +13,12 @@ review: draft
 ---
 
 ::: {.problem}
-Show that any tensor $T \in \mathbb{C}^3 \wedge \mathbb{C}^3$ can be written as $T = v_1 \wedge v_2$ for some $v_1, v_2 \in \mathbb{C}^3$.
+Show that any tensor $T \in \CC^3 \wedge \CC^3$ can be written as $T = v_1 \wedge v_2$ for some $v_1, v_2 \in \CC^3$.
 :::
 
 ::: {.solution}
 
-Fix a basis $e_1,e_2,e_3$ of $\mathbb C^3$. Every element of $\mathbb C^3\wedge\mathbb C^3$ has a unique form
+Fix a basis $e_1,e_2,e_3$ of $\CC^3$. Every element of $\CC^3\wedge\CC^3$ has a unique form
 \[
 T=a\,e_1\wedge e_2+b\,e_1\wedge e_3+c\,e_2\wedge e_3.
 \]
@@ -74,10 +74,10 @@ In this case $T=c\,e_2\wedge e_3$, so the displayed equality is immediate. This 
 :::
 
 ::: pf-step
-Hence every bivector in $\mathbb C^3\wedge\mathbb C^3$ is decomposable.
+Hence every bivector in $\CC^3\wedge\CC^3$ is decomposable.
 
 ::: pf-proof
-The three cases, steps [](#case-a-nonzero){.pf-ref}, [](#case-a-zero-b-nonzero){.pf-ref} and [](#case-a-b-zero){.pf-ref}, exhaust all triples $(a,b,c)\in\mathbb C^3$, and each gives an explicit factorization $T=v_1\wedge v_2$.
+The three cases, steps [](#case-a-nonzero){.pf-ref}, [](#case-a-zero-b-nonzero){.pf-ref} and [](#case-a-b-zero){.pf-ref}, exhaust all triples $(a,b,c)\in\CC^3$, and each gives an explicit factorization $T=v_1\wedge v_2$.
 :::
 
 :::

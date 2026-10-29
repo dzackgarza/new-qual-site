@@ -43,9 +43,9 @@ a finite union of compact sets, hence compact. Thus \(\tau'\) is a topology.
 
 Since \(X\) is Hausdorff, every compact subset of \(X\) is \(\tau\)-closed. Therefore every nonempty \(U\in\tau'\) is \(\tau\)-open, so \(\tau'\subseteq\tau\).
 
-Equality need not hold. Take \(X=\mathbb R\) with its usual topology. Then \((-1,1)\in\tau\), but
+Equality need not hold. Take \(X=\RR\) with its usual topology. Then \((-1,1)\in\tau\), but
 \[
-\mathbb R\setminus(-1,1)=(-\infty,-1]\cup[1,\infty)
+\RR\setminus(-1,1)=(-\infty,-1]\cup[1,\infty)
 \]
 is not compact. Hence \((-1,1)\notin\tau'\), so \(\tau'\ne\tau\).
 :::

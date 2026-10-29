@@ -25,13 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a measurable function on $\mathbb{R}$. Show that the graph of $f$ has measure zero in $\mathbb{R}^{2}$.
+Let $f$ be a measurable function on $\RR$. Show that the graph of $f$ has measure zero in $\RR^{2}$.
 :::
 
 ::: {.solution}
 Let
 \[
-\Gamma:=\{(x,f(x)):x\in\mathbb R\}\subset\mathbb R^2.
+\Gamma:=\{(x,f(x)):x\in\RR\}\subset\RR^2.
 \]
 
 ::: pf
@@ -44,7 +44,7 @@ The graph $\Gamma$ is Lebesgue measurable.
 
 The map
 \[
-F:\mathbb R^2\to\mathbb R,
+F:\RR^2\to\RR,
 \qquad
 F(x,y)=y-f(x),
 \]
@@ -64,9 +64,9 @@ Every vertical section of $\Gamma$ has one-dimensional measure zero.
 
 ::: pf-proof
 
-For fixed $x\in\mathbb R$,
+For fixed $x\in\RR$,
 \[
-\Gamma_x:=\{y\in\mathbb R:(x,y)\in\Gamma\}=\{f(x)\}.
+\Gamma_x:=\{y\in\RR:(x,y)\in\Gamma\}=\{f(x)\}.
 \]
 Therefore
 \[
@@ -87,9 +87,9 @@ Since $\mathbf1_\Gamma\ge0$ is measurable, Tonelli's theorem gives
 \[
 \begin{aligned}
 m_2(\Gamma)
-&=\int_{\mathbb R^2}\mathbf1_\Gamma(x,y)\,d(x,y)\\
-&=\int_{\mathbb R}\left(\int_{\mathbb R}\mathbf1_\Gamma(x,y)\,dy\right)dx\\
-&=\int_{\mathbb R}m_1(\Gamma_x)\,dx\\
+&=\int_{\RR^2}\mathbf1_\Gamma(x,y)\,d(x,y)\\
+&=\int_{\RR}\left(\int_{\RR}\mathbf1_\Gamma(x,y)\,dy\right)dx\\
+&=\int_{\RR}m_1(\Gamma_x)\,dx\\
 &=0.
 \end{aligned}
 \]

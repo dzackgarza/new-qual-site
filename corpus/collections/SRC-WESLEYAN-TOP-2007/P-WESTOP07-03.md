@@ -234,11 +234,11 @@ is continuous.
 
 Let
 $$
-X_i=\mathbb R
+X_i=\RR
 $$
 for
 $$
-i\in\mathbb N,
+i\in\NN,
 $$
 with the usual metric, and define
 $$
@@ -327,7 +327,7 @@ one has
 $$
 \rho(x^{(n)},0)
 =
-\sup_{j\in\mathbb N}
+\sup_{j\in\NN}
 \rho_j(x^{(n)}_j,0)
 =1
 $$

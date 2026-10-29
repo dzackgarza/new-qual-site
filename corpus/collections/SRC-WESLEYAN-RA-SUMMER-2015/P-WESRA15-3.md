@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\subset\mathbb R$ be Lebesgue measurable.
+Let $A\subset\RR$ be Lebesgue measurable.
 Prove that
 \[
 B=\bigcup_{x\in A}[x-1,x+1]

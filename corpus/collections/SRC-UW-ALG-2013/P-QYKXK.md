@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QYKXK
 kind: problem
-title: $(5,x^2+2)$ is prime in $\mathbb{Z}[x,y]$ with infinitely many maximal extensions
+title: $(5,x^2+2)$ is prime in $\ZZ[x,y]$ with infinitely many maximal extensions
 classification:
   areas:
   - algebra
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-This question concerns the polynomial ring $R=\mathbb Z[x,y]$ and the ideal $I=(5,x^2+2)$ in $R$.
+This question concerns the polynomial ring $R=\ZZ[x,y]$ and the ideal $I=(5,x^2+2)$ in $R$.
 
 - Prove that $I$ is a prime ideal of $R$ and that $R/I$ is a PID.
 

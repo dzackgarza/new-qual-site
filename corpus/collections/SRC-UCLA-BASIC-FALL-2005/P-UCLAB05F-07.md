@@ -24,7 +24,7 @@ Prove that the maximum number of linearly independent rows of $A$ equals the max
 
 Let
 \[
-T:\mathbb R^m\to\mathbb R^n
+T:\RR^m\to\RR^n
 \]
 be the linear map whose standard matrix is $A$.
 
@@ -44,7 +44,7 @@ The columns of $A$ are
 \[
 T(e_1),\ldots,T(e_m),
 \]
-where $e_1,\ldots,e_m$ is the standard basis of $\mathbb R^m$. Hence their span is exactly $\operatorname{im}T$, so the maximum number of linearly independent columns is
+where $e_1,\ldots,e_m$ is the standard basis of $\RR^m$. Hence their span is exactly $\operatorname{im}T$, so the maximum number of linearly independent columns is
 \[
 \dim\operatorname{im}T=\operatorname{rank}(T).
 \]
@@ -65,7 +65,7 @@ The row rank of $A$ is
 
 The standard matrix of the transpose map
 \[
-T^t:(\mathbb R^n)^*\to(\mathbb R^m)^*
+T^t:(\RR^n)^*\to(\RR^m)^*
 \]
 is $A^t$. The columns of $A^t$ are the rows of $A$. By step [](#s1-1){.pf-ref} applied to $T^t$, the maximum number of linearly independent rows of $A$ is therefore
 \[
@@ -82,12 +82,12 @@ One has
 \[
 \ker(T^t)=(\operatorname{im}T)^0,
 \]
-the annihilator of $\operatorname{im}T$ in $(\mathbb R^n)^*$.
+the annihilator of $\operatorname{im}T$ in $(\RR^n)^*$.
 
 
 ::: pf-proof
 
-Let $\varphi\in(\mathbb R^n)^*$. Then
+Let $\varphi\in(\RR^n)^*$. Then
 \[
 T^t\varphi=0
 \]
@@ -95,7 +95,7 @@ if and only if
 \[
 (T^t\varphi)(v)=\varphi(Tv)=0
 \]
-for every $v\in\mathbb R^m$. This holds exactly when $\varphi$ vanishes on every vector in $\operatorname{im}T$.
+for every $v\in\RR^m$. This holds exactly when $\varphi$ vanishes on every vector in $\operatorname{im}T$.
 
 :::
 
@@ -141,7 +141,7 @@ The ranks of $T$ and $T^t$ are equal.
 
 By rank-nullity for
 \[
-T^t:(\mathbb R^n)^*\to(\mathbb R^m)^*,
+T^t:(\RR^n)^*\to(\RR^m)^*,
 \]
 steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
 \[

@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite Borel measure on $\mathbb R^d$.
+Let $\mu$ be a finite Borel measure on $\RR^d$.
 For $t>0$ set
 \[
-S_t=\{x\in\mathbb R^d:|x|=t\}.
+S_t=\{x\in\RR^d:|x|=t\}.
 \]
 Prove that
 \[
@@ -62,13 +62,13 @@ Every set \(A_n\) is finite.
 
 Suppose \(A_n\) were infinite. For any integer \(N\ge1\), choose distinct \(t_1,\dots,t_N\in A_n\). By step [](#s1-1){.pf-ref} the Borel sets \(S_{t_1},\dots,S_{t_N}\) are pairwise disjoint, so finite additivity gives
 \[
-\mu(\mathbb R^d)
+\mu(\RR^d)
 \ge
 \mu\!\left(\bigcup_{j=1}^N S_{t_j}\right)
 =\sum_{j=1}^N\mu(S_{t_j})
 \ge\frac{N}{n}.
 \]
-Since \(\mu(\mathbb R^d)<\infty\), this is impossible for arbitrarily large \(N\). Hence \(A_n\) is finite.
+Since \(\mu(\RR^d)<\infty\), this is impossible for arbitrarily large \(N\). Hence \(A_n\) is finite.
 
 :::
 

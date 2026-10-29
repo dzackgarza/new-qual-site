@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\operatorname{GL}_n(\mathbb C)$ is path-connected.
+Show that $\operatorname{GL}_n(\CC)$ is path-connected.
 :::
 
 ::: {.solution}

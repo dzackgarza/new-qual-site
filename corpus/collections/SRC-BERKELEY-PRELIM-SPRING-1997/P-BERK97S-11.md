@@ -19,11 +19,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ satisfies
+Suppose $f:\RR\to\RR$ satisfies
 \[
 f''(x)=(x^2-1)f(x)
 \]
-for every $x\in\mathbb R$, with
+for every $x\in\RR$, with
 \[
 f(0)=1,
 \qquad

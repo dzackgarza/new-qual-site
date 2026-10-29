@@ -35,7 +35,7 @@ The relative fundamental class satisfies
 $$
 \partial[M,\partial M]=[\partial M]\ne0
 $$
-in $H_{n-1}(\partial M;\mathbb Z)$.
+in $H_{n-1}(\partial M;\ZZ)$.
 
 ::: pf-proof
 This is the boundary formula for the relative fundamental class of a compact oriented manifold. The boundary class is the sum of the fundamental classes of its oriented components and is nonzero.

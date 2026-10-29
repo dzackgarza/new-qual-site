@@ -20,7 +20,7 @@ Work over an algebraically closed field $F$ of characteristic zero.
 a. Let $X$ be an affine variety with coordinate algebra $F[X]$. State the *Nullstellensatz*. Then use it to show that a subset $S \subseteq X$ is dense (in the Zariski topology) if and only if the following property holds for all $f \in F[X]$:
 $$(f(s)=0 \text{ for all } s\in S) \Rightarrow f=0.$$
 b. Given affine varieties $X$ and $Y$ and dense subsets $S \subseteq X$ and $T \subseteq Y$, prove that $S\times T$ is dense in $X\times Y$.
-c. Show that the integer lattice $\mathbb{Z}^n$ is dense in $F^n$.
+c. Show that the integer lattice $\ZZ^n$ is dense in $F^n$.
 :::
 
 ::: {.solution}
@@ -43,5 +43,5 @@ For any $t\in T$, $\sum_i f_ig_i(t) \in F[X]$ is zero on $S$, hence zero as $S$ 
 As $f_i$'s are linearly independent, this implies $g_i(t)=0$ for all $t\in T$, so $g_i=0$ as $T$ is dense in $Y$.
 Therefore $\theta=0$.
 
-**(c)** Since $\operatorname{char}F=0$, $\mathbb{Z}$ is an infinite subset of $F$, and a nonzero polynomial in $F[x]$ has finitely many roots, so $\mathbb{Z}$ is dense in $F$ by (a). Part (b) and induction on $n$ give density of $\mathbb{Z}^n=\mathbb{Z}^{n-1}\times\mathbb{Z}$ in $F^n$.
+**(c)** Since $\operatorname{char}F=0$, $\ZZ$ is an infinite subset of $F$, and a nonzero polynomial in $F[x]$ has finitely many roots, so $\ZZ$ is dense in $F$ by (a). Part (b) and induction on $n$ give density of $\ZZ^n=\ZZ^{n-1}\times\ZZ$ in $F^n$.
 :::

@@ -70,7 +70,7 @@ There is the original covering $S^3$ plus $120$ attached $S^3$ summands. Moving 
 
 The universal cover is $2$-connected and
 $$
-H_3(\widetilde X;\mathbb Z)\cong\mathbb Z^{121}.
+H_3(\widetilde X;\ZZ)\cong\ZZ^{121}.
 $$
 
 ::: pf-proof
@@ -85,7 +85,7 @@ A wedge of $121$ copies of $S^3$ has these properties.
 
 By Hurewicz and covering-space invariance of higher homotopy groups,
 $$
-\boxed{\pi_3(P\vee S^3)\cong\mathbb Z^{121}.}
+\boxed{\pi_3(P\vee S^3)\cong\ZZ^{121}.}
 $$
 
 ::: pf-proof

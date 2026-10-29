@@ -29,7 +29,7 @@ Calculate the integral cohomology ring of $X$.
 ::: pf-step
 For the quotient map $q:\mathbb{CP}^n\to X=\mathbb{CP}^n/\mathbb{CP}^k$, there is a natural identification
 $$
-\widetilde H^*(X;\mathbb Z)\cong H^*(\mathbb{CP}^n,\mathbb{CP}^k;\mathbb Z).
+\widetilde H^*(X;\ZZ)\cong H^*(\mathbb{CP}^n,\mathbb{CP}^k;\ZZ).
 $$
 
 ::: pf-proof
@@ -41,10 +41,10 @@ Reduced cohomology of a quotient by a subcomplex agrees with the relative cohomo
 ::: {.pf-step #additive-cohomology}
 As an abelian group,
 $$
-H^r(X;\mathbb Z)\cong
+H^r(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&r=0,\\
-\mathbb Z,&r=2i\text{ with }k+1\le i\le n,\\
+\ZZ,&r=0,\\
+\ZZ,&r=2i\text{ with }k+1\le i\le n,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -56,11 +56,11 @@ The inclusion $\mathbb{CP}^k\hookrightarrow\mathbb{CP}^n$ identifies the cellula
 :::
 
 ::: pf-step
-Let $u_i\in H^{2i}(X;\mathbb Z)$, $k+1\le i\le n$, be the unique generator characterized by
+Let $u_i\in H^{2i}(X;\ZZ)$, $k+1\le i\le n$, be the unique generator characterized by
 $$
 q^*(u_i)=x^i,
 $$
-where $H^*(\mathbb{CP}^n;\mathbb Z)=\mathbb Z[x]/(x^{n+1})$, $|x|=2$.
+where $H^*(\mathbb{CP}^n;\ZZ)=\ZZ[x]/(x^{n+1})$, $|x|=2$.
 
 ::: pf-proof
 From the long exact sequence of the pair, the map $q^*:H^{2i}(X)\to H^{2i}(\mathbb{CP}^n)$ is an isomorphism for $i>k$ because $H^{2i}(\mathbb{CP}^k)=0$ there.
@@ -91,7 +91,7 @@ If $i+j\le n$, then $q^*:H^{2(i+j)}(X)\to H^{2(i+j)}(\mathbb{CP}^n)$ is an isomo
 ::: pf-step
 Therefore, as a graded ring,
 $$
-H^*(X;\mathbb Z)=\mathbb Z\cdot1\oplus\bigoplus_{i=k+1}^{n}\mathbb Z u_i,
+H^*(X;\ZZ)=\ZZ\cdot1\oplus\bigoplus_{i=k+1}^{n}\ZZ u_i,
 $$
 with $|u_i|=2i$ and multiplication given by step [](#product-formula){.pf-ref}.
 

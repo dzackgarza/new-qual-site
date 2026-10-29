@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the additive group $\mathbb Q/\mathbb Z$ has no proper subgroup of finite index.
+Prove that the additive group $\QQ/\ZZ$ has no proper subgroup of finite index.
 :::
 
 ::: {.solution}

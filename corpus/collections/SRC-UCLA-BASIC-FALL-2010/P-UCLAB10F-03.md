@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ and $g:\mathbb R^2\to\mathbb R$ have continuous derivatives through order three.
+Suppose $f:\RR\to\RR$ and $g:\RR^2\to\RR$ have continuous derivatives through order three.
 
 (a) State Taylor's theorem with remainder for each of $f$ and $g$.
 
@@ -30,7 +30,7 @@ Suppose $f:\mathbb R\to\mathbb R$ and $g:\mathbb R^2\to\mathbb R$ have continuou
 
 ::: {.pf-step #s1-1}
 
-The one-variable Taylor theorem with third-order Lagrange remainder states that for any $a,h\in\mathbb R$, there exists $\theta\in(0,1)$ such that
+The one-variable Taylor theorem with third-order Lagrange remainder states that for any $a,h\in\RR$, there exists $\theta\in(0,1)$ such that
 \[
 f(a+h)
 =
@@ -53,11 +53,11 @@ This is the ordinary one-variable Taylor theorem through degree $2$ with Lagrang
 
 The corresponding two-variable statement is: for
 \[
-p=(a,b)\in\mathbb R^2
+p=(a,b)\in\RR^2
 \]
 and increment
 \[
-u=(h,k)\in\mathbb R^2,
+u=(h,k)\in\RR^2,
 \]
 there exists $\theta\in(0,1)$ such that
 \[

@@ -32,7 +32,7 @@ audit:
 ::: {.problem}
 Show that there are no retractions $r: X \to A$ in the following cases:
 
-(a) $X = \mathbb{R}^3$ with $A$ any subspace homeomorphic to $S^1$.
+(a) $X = \RR^3$ with $A$ any subspace homeomorphic to $S^1$.
 
 (b) $X = S^1 \times D^2$ with $A$ its boundary torus $S^1 \times S^1$.
 
@@ -76,21 +76,21 @@ Any homomorphism possessing a left inverse is injective.
 
 ::: {.pf-step #s2}
 
-In case (a), no retraction $\mathbb R^3\to A\cong S^1$ exists.
+In case (a), no retraction $\RR^3\to A\cong S^1$ exists.
 
 ::: pf-proof
 
-The space $\mathbb R^3$ is contractible, so
+The space $\RR^3$ is contractible, so
 \[
-\pi_1(\mathbb R^3)=0,
+\pi_1(\RR^3)=0,
 \]
 whereas
 \[
-\pi_1(A)\cong\mathbb Z.
+\pi_1(A)\cong\ZZ.
 \]
 Thus the inclusion-induced map
 \[
-i_*:\mathbb Z\to0
+i_*:\ZZ\to0
 \]
 is not injective, contradicting step [](#s1){.pf-ref} if a retraction existed.
 
@@ -110,7 +110,7 @@ m=\{x_0\}\times S^1.
 \]
 It represents a nontrivial element of
 \[
-\pi_1(S^1\times S^1)\cong\mathbb Z^2,
+\pi_1(S^1\times S^1)\cong\ZZ^2,
 \]
 but in the solid torus it bounds the disk
 \[
@@ -133,7 +133,7 @@ The dark circle in the source figure is an interior meridian of the solid torus.
 It bounds a meridional disk lying in $S^1\times D^2$.
 Thus its generator
 \[
-[A]\in\pi_1(A)\cong\mathbb Z
+[A]\in\pi_1(A)\cong\ZZ
 \]
 maps to the identity in $\pi_1(S^1\times D^2)$.
 The inclusion-induced map is therefore not injective, so step [](#s1){.pf-ref} rules out a retraction.
@@ -203,24 +203,24 @@ In case (f), no retraction from the Möbius band $M$ to its boundary circle exis
 
 The Möbius band deformation retracts onto its core circle, so
 \[
-\pi_1(M)\cong\mathbb Z.
+\pi_1(M)\cong\ZZ.
 \]
 Its boundary circle traverses the core twice.
 Thus, after choosing generators, the inclusion induces
 \[
-i_*:\mathbb Z\to\mathbb Z,
+i_*:\ZZ\to\ZZ,
 \qquad
 i_*(n)=2n.
 \]
 If a retraction existed, step [](#s1){.pf-ref} would give a homomorphism
 \[
-r_*:\mathbb Z\to\mathbb Z
+r_*:\ZZ\to\ZZ
 \]
 with
 \[
-r_*\circ i_*=\operatorname{id}_{\mathbb Z}.
+r_*\circ i_*=\operatorname{id}_{\ZZ}.
 \]
-Every homomorphism $\mathbb Z\to\mathbb Z$ is multiplication by some integer $k$, so this would require
+Every homomorphism $\ZZ\to\ZZ$ is multiplication by some integer $k$, so this would require
 \[
 2k=1,
 \]

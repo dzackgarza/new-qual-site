@@ -22,11 +22,11 @@ Show that a closed orientable surface $\Sigma$ of genus $g \geq 1$ has $\pi_{\ge
 
 ::: pf-step
 
-For $g=1$, the universal cover of $\Sigma_g=T^2$ is $\mathbb R^2$; for $g\ge2$, the universal cover is the open disk (equivalently the hyperbolic plane).
+For $g=1$, the universal cover of $\Sigma_g=T^2$ is $\RR^2$; for $g\ge2$, the universal cover is the open disk (equivalently the hyperbolic plane).
 
 ::: pf-proof
 
-The torus is $\mathbb R^2/\mathbb Z^2$. Every closed orientable surface of genus at least $2$ admits a hyperbolic structure, whose universal cover is $\mathbb H^2$, homeomorphic to an open disk.
+The torus is $\RR^2/\ZZ^2$. Every closed orientable surface of genus at least $2$ admits a hyperbolic structure, whose universal cover is $\mathbb H^2$, homeomorphic to an open disk.
 
 :::
 
@@ -38,7 +38,7 @@ Therefore the universal cover of $\Sigma_g$ is contractible for every $g\ge1$.
 
 ::: pf-proof
 
-Both $\mathbb R^2$ and the open disk are contractible.
+Both $\RR^2$ and the open disk are contractible.
 
 :::
 
@@ -65,7 +65,7 @@ Suppose, for contradiction, that $\pi_1(\Sigma_g)$ were a free group $F_r$.
 
 ::: pf-proof
 
-Since $H_1(\Sigma_g;\mathbb Z)\cong\mathbb Z^{2g}$, abelianization would force $r=2g$.
+Since $H_1(\Sigma_g;\ZZ)\cong\ZZ^{2g}$, abelianization would force $r=2g$.
 
 :::
 
@@ -87,9 +87,9 @@ By step [](#s3){.pf-ref}, $\Sigma_g$ is aspherical with fundamental group $F_{2g
 
 This is impossible because
 $$
-H_2(\Sigma_g;\mathbb Z)\cong\mathbb Z,
+H_2(\Sigma_g;\ZZ)\cong\ZZ,
 \qquad
-H_2\!\left(\bigvee^{2g}S^1;\mathbb Z\right)=0.
+H_2\!\left(\bigvee^{2g}S^1;\ZZ\right)=0.
 $$
 
 ::: pf-proof

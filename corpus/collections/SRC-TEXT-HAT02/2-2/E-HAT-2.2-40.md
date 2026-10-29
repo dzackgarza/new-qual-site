@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.2-40
 kind: problem
-title: Universal coefficient short exact sequence for homology with $\mathbb{Z}_n$ coefficients
+title: Universal coefficient short exact sequence for homology with $\ZZ_n$ coefficients
 classification:
   areas:
   - topology
@@ -27,12 +27,12 @@ audit:
 ---
 
 ::: {.problem}
-From the long exact sequence of homology groups associated to the short exact sequence of chain complexes $0 \to C_i(X) \xrightarrow{n} C_i(X) \to C_i(X; \mathbb{Z}_n) \to 0$ deduce immediately that there are short exact sequences
+From the long exact sequence of homology groups associated to the short exact sequence of chain complexes $0 \to C_i(X) \xrightarrow{n} C_i(X) \to C_i(X; \ZZ_n) \to 0$ deduce immediately that there are short exact sequences
 
-$$0 \to H_i(X)/nH_i(X) \to H_i(X; \mathbb{Z}_n) \to n\text{-Torsion}(H_{i-1}(X)) \to 0$$
+$$0 \to H_i(X)/nH_i(X) \to H_i(X; \ZZ_n) \to n\text{-Torsion}(H_{i-1}(X)) \to 0$$
 
 where $n$-Torsion$(G)$ is the kernel of the map $G \xrightarrow{n} G$, $g \mapsto ng$.
-Use this to show that $\tilde{H}_i(X; \mathbb{Z}_p) = 0$ for all $i$ and all primes $p$ iff $\tilde{H}_i(X)$ is a vector space over $\mathbb{Q}$ for all $i$.
+Use this to show that $\tilde{H}_i(X; \ZZ_p) = 0$ for all $i$ and all primes $p$ iff $\tilde{H}_i(X)$ is a vector space over $\QQ$ for all $i$.
 :::
 
 ::: {.solution}
@@ -40,13 +40,13 @@ The short exact sequence of chain complexes
 \[
 0\longrightarrow C_*(X)
 \xrightarrow{\,n\,}C_*(X)
-\longrightarrow C_*(X;\mathbb Z_n)
+\longrightarrow C_*(X;\ZZ_n)
 \longrightarrow0
 \]
 gives the long exact sequence
 \[
 \cdots\to H_i(X)\xrightarrow{n}H_i(X)
-\to H_i(X;\mathbb Z_n)
+\to H_i(X;\ZZ_n)
 \to H_{i-1}(X)\xrightarrow{n}H_{i-1}(X)\to\cdots.
 \]
 
@@ -57,7 +57,7 @@ gives the long exact sequence
 Exactness yields a short exact sequence
 \[
 0\to H_i(X)/nH_i(X)
-\to H_i(X;\mathbb Z_n)
+\to H_i(X;\ZZ_n)
 \to {}_nH_{i-1}(X)
 \to0,
 \]
@@ -68,7 +68,7 @@ where
 
 ::: pf-proof
 
-The kernel of the map into $H_i(X;\mathbb Z_n)$ is the image $nH_i(X)$, so the first map factors injectively through the cokernel
+The kernel of the map into $H_i(X;\ZZ_n)$ is the image $nH_i(X)$, so the first map factors injectively through the cokernel
 \[
 H_i(X)/nH_i(X).
 \]
@@ -82,13 +82,13 @@ The image of the connecting map is exactly the kernel of multiplication by $n$ o
 
 If
 \[
-\widetilde H_i(X;\mathbb Z_p)=0
+\widetilde H_i(X;\ZZ_p)=0
 \]
 for every $i$ and every prime $p$, then every integral reduced homology group
 \[
 G=\widetilde H_i(X)
 \]
-is a $\mathbb Q$-vector space.
+is a $\QQ$-vector space.
 
 ::: pf-proof
 
@@ -100,7 +100,7 @@ and
 \[
 {}_pG=0
 \]
-for every prime $p$. Thus multiplication by $p$ is both surjective and injective on $G$. Hence multiplication by every nonzero integer is bijective. There is therefore a unique division operation by each nonzero integer, defining a unique $\mathbb Q$-vector-space structure on the abelian group $G$.
+for every prime $p$. Thus multiplication by $p$ is both surjective and injective on $G$. Hence multiplication by every nonzero integer is bijective. There is therefore a unique division operation by each nonzero integer, defining a unique $\QQ$-vector-space structure on the abelian group $G$.
 
 :::
 
@@ -108,19 +108,19 @@ for every prime $p$. Thus multiplication by $p$ is both surjective and injective
 
 ::: pf-step
 
-Conversely, if every $\widetilde H_i(X)$ is a $\mathbb Q$-vector space, then
+Conversely, if every $\widetilde H_i(X)$ is a $\QQ$-vector space, then
 \[
-\widetilde H_i(X;\mathbb Z_p)=0
+\widetilde H_i(X;\ZZ_p)=0
 \]
 for all $i$ and all primes $p$.
 
 ::: pf-proof
 
-On a $\mathbb Q$-vector space, multiplication by $p$ is an automorphism. Hence both
+On a $\QQ$-vector space, multiplication by $p$ is an automorphism. Hence both
 \[
 G/pG
 \]
-and ${}_pG$ vanish. The short exact sequence in step [](#s1){.pf-ref} then forces the homology with $\mathbb Z_p$ coefficients to vanish.
+and ${}_pG$ vanish. The short exact sequence in step [](#s1){.pf-ref} then forces the homology with $\ZZ_p$ coefficients to vanish.
 
 :::
 
@@ -131,8 +131,8 @@ and ${}_pG$ vanish. The short exact sequence in step [](#s1){.pf-ref} then force
 Thus
 \[
 \boxed{
-\widetilde H_i(X;\mathbb Z_p)=0\text{ for all }i,p
+\widetilde H_i(X;\ZZ_p)=0\text{ for all }i,p
 \iff
-\widetilde H_i(X)\text{ is a }\mathbb Q\text{-vector space for all }i.}
+\widetilde H_i(X)\text{ is a }\QQ\text{-vector space for all }i.}
 \]
 :::

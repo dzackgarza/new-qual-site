@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show there is no map $f : \mathbb{HP}^n \to \mathbb{CP}^{2n}$ such that the induced map $H_{4n}(f) : H_{4n}(\mathbb{HP}^n; \mathbb{Z}) \to H_{4n}(\mathbb{CP}^{2n}; \mathbb{Z})$ maps the generator $\zeta_{\mathbb{HP}^n}$ to $k\zeta_{\mathbb{CP}^{2n}}$ for $k \neq 0$.
+Show there is no map $f : \mathbb{HP}^n \to \mathbb{CP}^{2n}$ such that the induced map $H_{4n}(f) : H_{4n}(\mathbb{HP}^n; \ZZ) \to H_{4n}(\mathbb{CP}^{2n}; \ZZ)$ maps the generator $\zeta_{\mathbb{HP}^n}$ to $k\zeta_{\mathbb{CP}^{2n}}$ for $k \neq 0$.
 :::
 
 ::: {.solution}
@@ -26,11 +26,11 @@ Show there is no map $f : \mathbb{HP}^n \to \mathbb{CP}^{2n}$ such that the indu
 
 Write
 $$
-H^*(\mathbb{CP}^{2n};\mathbb Z)=\mathbb Z[x]/(x^{2n+1}),\quad |x|=2,
+H^*(\mathbb{CP}^{2n};\ZZ)=\ZZ[x]/(x^{2n+1}),\quad |x|=2,
 $$
 and
 $$
-H^*(\mathbb{HP}^{n};\mathbb Z)=\mathbb Z[u]/(u^{n+1}),\quad |u|=4.
+H^*(\mathbb{HP}^{n};\ZZ)=\ZZ[u]/(u^{n+1}),\quad |u|=4.
 $$
 
 ::: pf-proof
@@ -43,7 +43,7 @@ These are the standard integral cohomology rings of complex and quaternionic pro
 
 ::: pf-step
 
-Since $H^2(\mathbb{HP}^n;\mathbb Z)=0$, every map $f:\mathbb{HP}^n\to\mathbb{CP}^{2n}$ satisfies
+Since $H^2(\mathbb{HP}^n;\ZZ)=0$, every map $f:\mathbb{HP}^n\to\mathbb{CP}^{2n}$ satisfies
 $$
 f^*x=0.
 $$

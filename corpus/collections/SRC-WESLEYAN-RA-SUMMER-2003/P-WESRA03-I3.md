@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Is there a compact subset of $[0,1]\setminus\mathbb Q$ with positive Lebesgue measure?
+Is there a compact subset of $[0,1]\setminus\QQ$ with positive Lebesgue measure?
 :::
 
 ::: {.solution}

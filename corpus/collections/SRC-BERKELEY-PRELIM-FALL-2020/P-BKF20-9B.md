@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF20-9B
 kind: problem
-title: Reducibility of $x^4+n$ in $\mathbb Z[x]$
+title: Reducibility of $x^4+n$ in $\ZZ[x]$
 classification:
   areas:
   - prelim
@@ -39,7 +39,7 @@ For which integers $n$ is
 \[
 x^4+n
 \]
-reducible in $\mathbb Z[x]$?
+reducible in $\ZZ[x]$?
 :::
 
 ::: {.solution}

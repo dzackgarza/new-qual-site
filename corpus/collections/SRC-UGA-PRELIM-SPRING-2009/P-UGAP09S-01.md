@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Write the precise definition of what it means for a function $f:\mathbb R\to\mathbb R$ to be uniformly continuous. Then, without using the word “not,” state precisely what it means for $f$ to fail to be uniformly continuous.
+Write the precise definition of what it means for a function $f:\RR\to\RR$ to be uniformly continuous. Then, without using the word “not,” state precisely what it means for $f$ to fail to be uniformly continuous.
 :::
 
 ::: {.solution}
@@ -24,10 +24,10 @@ Write the precise definition of what it means for a function $f:\mathbb R\to\mat
 
 ::: {.pf-step #s1-1}
 
-The function $f:\mathbb R\to\mathbb R$ is uniformly continuous if
+The function $f:\RR\to\RR$ is uniformly continuous if
 \[
 \boxed{
-\forall\varepsilon>0\ \exists\delta>0\ \forall x,y\in\mathbb R,\quad
+\forall\varepsilon>0\ \exists\delta>0\ \forall x,y\in\RR,\quad
 |x-y|<\delta\Longrightarrow |f(x)-f(y)|<\varepsilon }.
 \]
 
@@ -46,7 +46,7 @@ simultaneously for every pair $x,y$ in the domain.
 The function $f$ fails to be uniformly continuous precisely when
 \[
 \boxed{
-\exists\varepsilon_0>0\ \forall\delta>0\ \exists x,y\in\mathbb R
+\exists\varepsilon_0>0\ \forall\delta>0\ \exists x,y\in\RR
 \text{ such that }
 |x-y|<\delta
 \text{ and }

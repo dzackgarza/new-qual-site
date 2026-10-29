@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Show that
 $$
-\pi^2\frac{\cos \pi z}{\sin^2 \pi z} = \sum_{n \in \mathbb{Z}} \frac{(-1)^n}{(z - n)^2}.
+\pi^2\frac{\cos \pi z}{\sin^2 \pi z} = \sum_{n \in \ZZ} \frac{(-1)^n}{(z - n)^2}.
 $$
 (Hint: Compare singular parts and use periodicity.)
 :::
@@ -31,9 +31,9 @@ $\cos(\pi z)/\sin^2(\pi z)$, as written here.
 ::: {.solution}
 The series
 \[
-S(z)=\sum_{n\in\mathbb Z}\frac{(-1)^n}{(z-n)^2}
+S(z)=\sum_{n\in\ZZ}\frac{(-1)^n}{(z-n)^2}
 \]
-converges normally on compact subsets of $\mathbb C\setminus\mathbb Z$.
+converges normally on compact subsets of $\CC\setminus\ZZ$.
 At $z=n$,
 \[
 \pi^2\frac{\cos\pi z}{\sin^2\pi z}
@@ -54,10 +54,10 @@ It therefore suffices to bound $H$ on a vertical strip of width $1$. Away
 from small disks around the integers, normal convergence bounds $S$ uniformly,
 and the trigonometric term is bounded there; near the integers the singular
 parts cancel. Thus $H$ is bounded on a fundamental strip and hence, by
-anti-periodicity, on all of $\mathbb C$. Liouville's theorem gives that $H$ is
+anti-periodicity, on all of $\CC$. Liouville's theorem gives that $H$ is
 constant, and $H(z+1)=-H(z)$ forces that constant to be $0$. Therefore
 \[
 \boxed{\pi^2\frac{\cos\pi z}{\sin^2\pi z}
-=\sum_{n\in\mathbb Z}\frac{(-1)^n}{(z-n)^2}.}
+=\sum_{n\in\ZZ}\frac{(-1)^n}{(z-n)^2}.}
 \]
 :::

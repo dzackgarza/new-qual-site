@@ -17,6 +17,6 @@ Let V be a nonzero finite-dimensional C-subspace of E with the property that $f 
 
 ::: {.solution}
 The map $T \colon V \to V$ sending f to $f ^ { \prime }$ is a linear transformation.
-Since V is a C-vector space, there exists an eigenvalue $\lambda \in \mathbb { C }$ . Let $f \in V$ be a corresponding (nonzero) eigenvector.
-Then $f ^ { \prime } = \lambda f$ , so $f ( z ) = c e ^ { \lambda z }$ for some $c \in \mathbb { C } ^ { \times }$ . This function is everywhere nonzero.
+Since V is a C-vector space, there exists an eigenvalue $\lambda \in \CC$ . Let $f \in V$ be a corresponding (nonzero) eigenvector.
+Then $f ^ { \prime } = \lambda f$ , so $f ( z ) = c e ^ { \lambda z }$ for some $c \in \CC ^ { \times }$ . This function is everywhere nonzero.
 :::

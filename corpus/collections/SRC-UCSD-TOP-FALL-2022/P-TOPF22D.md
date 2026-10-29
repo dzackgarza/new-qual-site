@@ -41,13 +41,13 @@ Because $\pi_1(M)$ is finite and $M$ is compact, $\widehat{M}$ is a compact, con
 Since $\widehat{M}$ is simply-connected, $\widehat{M}$ is orientable.
 By Poincaré Duality and the Hurewicz Theorem:
 
-- $H_0(\widehat{M}; \mathbb{Z}) \cong \mathbb{Z}$,
+- $H_0(\widehat{M}; \ZZ) \cong \ZZ$,
 
-- $H_1(\widehat{M}; \mathbb{Z}) \cong \pi_1(\widehat{M})^{\mathrm{ab}} = \{0\}$,
+- $H_1(\widehat{M}; \ZZ) \cong \pi_1(\widehat{M})^{\mathrm{ab}} = \{0\}$,
 
-- $H_2(\widehat{M}; \mathbb{Z}) \cong H^1(\widehat{M}; \mathbb{Z}) \cong \operatorname{Hom}(H_1(\widehat{M}), \mathbb{Z}) \oplus \operatorname{Ext}(H_0(\widehat{M}), \mathbb{Z}) = \{0\}$,
+- $H_2(\widehat{M}; \ZZ) \cong H^1(\widehat{M}; \ZZ) \cong \operatorname{Hom}(H_1(\widehat{M}), \ZZ) \oplus \operatorname{Ext}(H_0(\widehat{M}), \ZZ) = \{0\}$,
 
-- $H_3(\widehat{M}; \mathbb{Z}) \cong \mathbb{Z}$.
+- $H_3(\widehat{M}; \ZZ) \cong \ZZ$.
 :::
 
 :::
@@ -77,8 +77,8 @@ Compute the Lefschetz number of $g$:
 \[
 \Lambda(g) = \operatorname{tr}\left(g_* \big|_{H_0(\widehat{M})}\right) - \operatorname{tr}\left(g_* \big|_{H_1(\widehat{M})}\right) + \operatorname{tr}\left(g_* \big|_{H_2(\widehat{M})}\right) - \operatorname{tr}\left(g_* \big|_{H_3(\widehat{M})}\right).
 \]
-Since $H_0(\widehat{M}) \cong \mathbb{Z}$ and $g$ preserves the single connected component, $g_*|_{H_0} = 1$.
-On top homology $H_3(\widehat{M}) \cong \mathbb{Z}$, $g_*|_{H_3} = \deg(g) \in \{\pm 1\}$.
+Since $H_0(\widehat{M}) \cong \ZZ$ and $g$ preserves the single connected component, $g_*|_{H_0} = 1$.
+On top homology $H_3(\widehat{M}) \cong \ZZ$, $g_*|_{H_3} = \deg(g) \in \{\pm 1\}$.
 Thus:
 \[
 \Lambda(g) = 1 - 0 + 0 - \deg(g) = 1 - \deg(g).

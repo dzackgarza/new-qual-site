@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 90 degree rotations.
-Compute the homology $H_*(X; \mathbb{Z})$.
+Compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -86,16 +86,16 @@ For each quotient face, the two opposite cube faces contribute with opposite loc
 ::: pf-step
 Hence
 $$
-\boxed{H_i(X;\mathbb Z)\cong
+\boxed{H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,3,\\
-\mathbb Z/2\oplus\mathbb Z/2,&i=1,\\
+\ZZ,&i=0,3,\\
+\ZZ/2\oplus\ZZ/2,&i=1,\\
 0,&i=2\text{ or }i>3.
 \end{cases}}
 $$
 
 ::: pf-proof
-The Smith form of $\partial_1$ gives $H_0\cong\mathbb Z$. Since $\ker\partial_1$ has rank $3$ and the image of $\partial_2$ has index $4$ in it, $H_1\cong(\mathbb Z/2)^2$. The map $\partial_2$ is injective, so $H_2=0$, and step [](#top-boundary-zero){.pf-ref} gives $H_3\cong\mathbb Z$.
+The Smith form of $\partial_1$ gives $H_0\cong\ZZ$. Since $\ker\partial_1$ has rank $3$ and the image of $\partial_2$ has index $4$ in it, $H_1\cong(\ZZ/2)^2$. The map $\partial_2$ is injective, so $H_2=0$, and step [](#top-boundary-zero){.pf-ref} gives $H_3\cong\ZZ$.
 :::
 
 :::

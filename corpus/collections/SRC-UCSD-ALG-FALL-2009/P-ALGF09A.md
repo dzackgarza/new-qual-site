@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\phi: \mathbb{Z}_m \to \operatorname{Aut}(\mathbb{Z}_n)$ be a homomorphism, for some integers $m, n \geq 2$.
-Let $G$ be the semidirect product $\mathbb{Z}_m \rtimes_\phi \mathbb{Z}_n$.
+Let $\phi: \ZZ_m \to \operatorname{Aut}(\ZZ_n)$ be a homomorphism, for some integers $m, n \geq 2$.
+Let $G$ be the semidirect product $\ZZ_m \rtimes_\phi \ZZ_n$.
 Find a presentation for $G$ by generators and relations and prove carefully that your presented group is isomorphic to $G$.
 :::
 
@@ -32,7 +32,7 @@ Setup of the semidirect product and candidate presentation:
 ::: pf-proof
 
 ::: pf-step
-Let $G = \mathbb{Z}_n \rtimes_\phi \mathbb{Z}_m$, where the action $\phi: \mathbb{Z}_m \to \operatorname{Aut}(\mathbb{Z}_n) \cong (\mathbb{Z}/n\mathbb{Z})^\times$ is determined by an integer $k$ such that $\phi(1)(a) = a^k$, with $\gcd(k, n) = 1$ and $k^m \equiv 1 \pmod n$.
+Let $G = \ZZ_n \rtimes_\phi \ZZ_m$, where the action $\phi: \ZZ_m \to \operatorname{Aut}(\ZZ_n) \cong (\ZZ/n\ZZ)^\times$ is determined by an integer $k$ such that $\phi(1)(a) = a^k$, with $\gcd(k, n) = 1$ and $k^m \equiv 1 \pmod n$.
 
 ::: pf-proof
 classification of automorphisms of cyclic groups.
@@ -62,7 +62,7 @@ Existence of a surjective homomorphism $\Phi: \Gamma \to G$:
 ::: pf-proof
 
 ::: pf-step
-In $G = \mathbb{Z}_n \rtimes_\phi \mathbb{Z}_m$, define the elements $\bar{x} = (1, 0)$ and $\bar{y} = (0, 1)$.
+In $G = \ZZ_n \rtimes_\phi \ZZ_m$, define the elements $\bar{x} = (1, 0)$ and $\bar{y} = (0, 1)$.
 Compute the group relations in $G$:
 \[
 \bar{x}^n = (n \cdot 1, 0) = (0, 0) = e_G,

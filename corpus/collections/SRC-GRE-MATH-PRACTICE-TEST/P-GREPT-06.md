@@ -56,7 +56,7 @@ By the intermediate value theorem, $p(c)=0$ for some $c\in(4,5)$.
 
 ::: {.pf-step #s1-2}
 
-The polynomial $p$ is strictly increasing on $\mathbb R$.
+The polynomial $p$ is strictly increasing on $\RR$.
 
 
 ::: pf-proof
@@ -66,7 +66,7 @@ $$
 p'(x)=5x^4+3x^2+1.
 $$
 Every term except the final $1$ is nonnegative, so $p'(x)>0$ for every real
-$x$. Hence $p$ is strictly increasing on $\mathbb R$.
+$x$. Hence $p$ is strictly increasing on $\RR$.
 
 :::
 

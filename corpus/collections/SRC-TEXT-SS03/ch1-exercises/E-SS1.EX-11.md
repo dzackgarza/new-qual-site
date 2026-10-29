@@ -33,7 +33,7 @@ Use the Wirtinger-operator identity for the Laplacian to prove that if $f$ is ho
 
 ::: pf-step
 
-Write $f=u+iv$, where $u,v:\Omega\to\mathbb R$.
+Write $f=u+iv$, where $u,v:\Omega\to\RR$.
 
 ::: pf-proof
 

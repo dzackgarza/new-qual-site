@@ -47,8 +47,8 @@ where the boundary of the Möbius band $M$ is attached to the circle $S^1\times\
 \[
 H_i(Y)\cong
 \begin{cases}
-\mathbb Z,&i=0,2,\\
-\mathbb Z^2,&i=1,\\
+\ZZ,&i=0,2,\\
+\ZZ^2,&i=1,\\
 0,&i>2.
 \end{cases}
 \]
@@ -57,29 +57,29 @@ H_i(Y)\cong
 
 Choose generators $a,b$ for
 \[
-H_1(T^2)\cong\mathbb Z^2
+H_1(T^2)\cong\ZZ^2
 \]
 with $a$ represented by the attaching circle, and let $c$ generate
 \[
-H_1(M)\cong\mathbb Z.
+H_1(M)\cong\ZZ.
 \]
 The Mayer--Vietoris map from the intersection is
 \[
-H_1(S^1)=\mathbb Z
+H_1(S^1)=\ZZ
 \longrightarrow
-H_1(T^2)\oplus H_1(M)=\mathbb Z^3,
+H_1(T^2)\oplus H_1(M)=\ZZ^3,
 \qquad
 1\longmapsto(a,-2c).
 \]
 This map is injective, and its image is primitive because the coordinate of $a$ is $1$. Since $H_2(S^1)=H_2(M)=0$, the exact sequence gives
 \[
-0\to H_2(T^2)=\mathbb Z\to H_2(Y)\to\ker(1\mapsto(a,-2c))=0,
+0\to H_2(T^2)=\ZZ\to H_2(Y)\to\ker(1\mapsto(a,-2c))=0,
 \]
-so $H_2(Y)\cong\mathbb Z$. In degree one,
+so $H_2(Y)\cong\ZZ$. In degree one,
 \[
-H_1(Y)\cong\mathbb Z^3/\langle(a,-2c)\rangle\cong\mathbb Z^2.
+H_1(Y)\cong\ZZ^3/\langle(a,-2c)\rangle\cong\ZZ^2.
 \]
-Connectedness gives $H_0(Y)=\mathbb Z$.
+Connectedness gives $H_0(Y)=\ZZ$.
 
 :::
 
@@ -95,8 +95,8 @@ Then
 \[
 H_i(Z)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z_4,&i=1,\\
+\ZZ,&i=0,\\
+\ZZ_4,&i=1,\\
 0,&i\ge2.
 \end{cases}
 \]
@@ -105,11 +105,11 @@ H_i(Z)\cong
 
 Let $u$ generate
 \[
-H_1(\mathbb{RP}^2)\cong\mathbb Z_2
+H_1(\mathbb{RP}^2)\cong\ZZ_2
 \]
-and let $c$ generate $H_1(M)\cong\mathbb Z$. The standard circle $\mathbb{RP}^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
+and let $c$ generate $H_1(M)\cong\ZZ$. The standard circle $\mathbb{RP}^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
 \[
-\mathbb Z\longrightarrow\mathbb Z_2\oplus\mathbb Z,
+\ZZ\longrightarrow\ZZ_2\oplus\ZZ,
 \qquad
 1\longmapsto(u,-2c).
 \]
@@ -118,9 +118,9 @@ It is injective because of the infinite cyclic second coordinate, so $H_2(Z)=0$.
 \langle u,c\mid 2u=0,\ u=2c\rangle
 \cong
 \langle c\mid4c=0\rangle
-\cong\mathbb Z_4.
+\cong\ZZ_4.
 \]
-Thus $H_1(Z)\cong\mathbb Z_4$, and connectedness gives $H_0(Z)=\mathbb Z$.
+Thus $H_1(Z)\cong\ZZ_4$, and connectedness gives $H_0(Z)=\ZZ$.
 
 :::
 

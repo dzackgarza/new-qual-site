@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Give an example of a function $f:\mathbb R\to\mathbb R$ that is differentiable everywhere but whose derivative $f'$ is not continuous at $0$.
+Give an example of a function $f:\RR\to\RR$ that is differentiable everywhere but whose derivative $f'$ is not continuous at $0$.
 :::
 
 ::: {.solution}

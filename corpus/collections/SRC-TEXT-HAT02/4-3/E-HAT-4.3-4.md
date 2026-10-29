@@ -35,7 +35,7 @@ Representability gives
 \]
 Since \(K(G,n)\) is \((n-1)\)-connected, Hurewicz gives
 \[
-H_n(K(G,n);\mathbb Z)\cong\pi_n(K(G,n))\cong G,
+H_n(K(G,n);\ZZ)\cong\pi_n(K(G,n))\cong G,
 \]
 and \(H_{n-1}=0\). The universal coefficient theorem therefore gives
 \[

@@ -20,15 +20,15 @@ audit:
 
 (i) For any two complex numbers z, w, one and only one of the following is true: $z \succ w , w \succ z \ \mathrm { o r } \ z = w .$
 
-(ii) For all $z _ { 1 } , z _ { 2 } , z _ { 3 } \in \mathbb { C }$ the relation $z _ { 1 } \succ z _ { 2 }$ implies $z _ { 1 } + z _ { 3 } \succ z _ { 2 } + z _ { 3 }$
+(ii) For all $z _ { 1 } , z _ { 2 } , z _ { 3 } \in \CC$ the relation $z _ { 1 } \succ z _ { 2 }$ implies $z _ { 1 } + z _ { 3 } \succ z _ { 2 } + z _ { 3 }$
 
-(iii) Moreover, for all $z _ { 1 } , z _ { 2 } , z _ { 3 } \in \mathbb { C }$ with $z _ { 3 } \succ 0$ , then $z _ { 1 } \succ z _ { 2 }$ implies $z _ { 1 } z _ { 3 } \succ z _ { 2 } z _ { 3 }$
+(iii) Moreover, for all $z _ { 1 } , z _ { 2 } , z _ { 3 } \in \CC$ with $z _ { 3 } \succ 0$ , then $z _ { 1 } \succ z _ { 2 }$ implies $z _ { 1 } z _ { 3 } \succ z _ { 2 } z _ { 3 }$
 
 [Hint: First check if $i \succ 0$ is possible.]
 :::
 
 ::: {.solution}
-Assume such an ordering exists. For every nonzero $z\in\mathbb C$, trichotomy gives either $z\succ0$ or $-z\succ0$. In either case, compatibility with multiplication implies
+Assume such an ordering exists. For every nonzero $z\in\CC$, trichotomy gives either $z\succ0$ or $-z\succ0$. In either case, compatibility with multiplication implies
 \[
 z^2\succ0.
 \]
@@ -42,5 +42,5 @@ Adding $1$ to the inequality $-1\succ0$ yields
 \[
 0\succ1,
 \]
-contradicting $1\succ0$. Therefore no total ordering on $\mathbb C$ can satisfy the ordered-field axioms (i)--(iii).
+contradicting $1\succ0$. Therefore no total ordering on $\CC$ can satisfy the ordered-field axioms (i)--(iii).
 :::

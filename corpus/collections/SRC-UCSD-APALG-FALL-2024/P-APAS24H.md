@@ -21,20 +21,20 @@ Using character theory or otherwise, prove that the standard representation is i
 
 ::: {.solution}
 
-Assume \(n\ge2\). Let \(S_n\) act on \(\mathbb C^n\) by permuting the standard basis \(e_1,\ldots,e_n\). The **standard representation** is the invariant subspace
+Assume \(n\ge2\). Let \(S_n\) act on \(\CC^n\) by permuting the standard basis \(e_1,\ldots,e_n\). The **standard representation** is the invariant subspace
 \[
-V:=\left\{(z_1,\ldots,z_n)\in\mathbb C^n:\sum_{i=1}^n z_i=0\right\}.
+V:=\left\{(z_1,\ldots,z_n)\in\CC^n:\sum_{i=1}^n z_i=0\right\}.
 \]
 Equivalently,
 \[
-\mathbb C^n=\mathbb C(1,\ldots,1)\oplus V,
+\CC^n=\CC(1,\ldots,1)\oplus V,
 \]
 where the first summand is the trivial representation.
 
 ::: pf
 
 ::: {.pf-step #character-formula}
-The character of the permutation representation \(\mathbb C^n\) is
+The character of the permutation representation \(\CC^n\) is
 \[
 \chi_{\mathrm{perm}}(\sigma)=\operatorname{fix}(\sigma).
 \]
@@ -46,7 +46,7 @@ Hence the standard character is
 ::: pf-proof
 In the standard basis, the matrix of \(\sigma\) is a permutation matrix. Its diagonal entry in position \(i\) is \(1\) exactly when \(\sigma(i)=i\), so its trace is the number of fixed points. Since
 \[
-\mathbb C^n\cong\mathbf1\oplus V,
+\CC^n\cong\mathbf1\oplus V,
 \]
 characters add under direct sums, giving
 \[
@@ -116,7 +116,7 @@ Using steps [](#character-formula){.pf-ref}, [](#sum-of-fixed-points){.pf-ref} a
 Therefore the standard representation of \(S_n\) is irreducible for \(n\ge2\).
 
 ::: pf-proof
-For a finite group over \(\mathbb C\), a character is irreducible if and only if its inner product with itself is \(1\). Apply step [](#standard-character-norm-one){.pf-ref}.
+For a finite group over \(\CC\), a character is irreducible if and only if its inner product with itself is \(1\). Apply step [](#standard-character-norm-one){.pf-ref}.
 
 For \(n=1\), the sum-zero subspace is \(0\), so the usual nonzero irreducibility statement is vacuous only after excluding this degenerate case.
 :::

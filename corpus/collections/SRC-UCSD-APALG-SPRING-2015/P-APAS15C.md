@@ -26,7 +26,7 @@ for $\sigma \in S_4$, $u \in S^{(3,1)}$, $v \in S^{(2,2)}$, and $w \in S^{(2,1,1
 (This is the Kronecker product.)
 Find the decomposition of $S^{(3,1)} \otimes S^{(2,2)} \otimes S^{(2,1,1)}$ into irreducible $S_4$-modules.
 
-(3) Describe the structure (as a product of matrix algebras over $\mathbb{C}$) of the algebra of $S_4$-endomorphisms $\operatorname{End}_{S_4}(S^{(3,1)} \otimes S^{(2,2)} \otimes S^{(2,1,1)})$.
+(3) Describe the structure (as a product of matrix algebras over $\CC$) of the algebra of $S_4$-endomorphisms $\operatorname{End}_{S_4}(S^{(3,1)} \otimes S^{(2,2)} \otimes S^{(2,1,1)})$.
 :::
 
 ::: {.solution}
@@ -95,17 +95,17 @@ V\cong\bigoplus_i m_iV_i
 \]
 with the \(V_i\) pairwise nonisomorphic irreducibles, then Schur's lemma gives
 \[
-\operatorname{End}_G(V)\cong\prod_i M_{m_i}(\mathbb C).
+\operatorname{End}_G(V)\cong\prod_i M_{m_i}(\CC).
 \]
 Applying this to the multiplicities above yields
 \[
 \boxed{
 \operatorname{End}_{S_4}(V)
 \cong
-\mathbb C\times M_2(\mathbb C)\times M_2(\mathbb C)\times M_2(\mathbb C)\times\mathbb C.}
+\CC\times M_2(\CC)\times M_2(\CC)\times M_2(\CC)\times\CC.}
 \]
 Equivalently,
 \[
-\operatorname{End}_{S_4}(V)\cong \mathbb C^2\times M_2(\mathbb C)^3.
+\operatorname{End}_{S_4}(V)\cong \CC^2\times M_2(\CC)^3.
 \]
 :::

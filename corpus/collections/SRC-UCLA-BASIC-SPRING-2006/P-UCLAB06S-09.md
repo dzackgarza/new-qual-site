@@ -31,15 +31,15 @@ Let $S$ be a real $n\times n$ symmetric matrix, i.e. ${}^tS=S$.
 
 Let
 \[
-\lambda\in\mathbb C
+\lambda\in\CC
 \]
 be an eigenvalue of the real symmetric matrix $S$, with nonzero eigenvector
 \[
-z\in\mathbb C^n.
+z\in\CC^n.
 \]
 Then
 \[
-\lambda\in\mathbb R.
+\lambda\in\RR.
 \]
 
 
@@ -49,7 +49,7 @@ The eigenvalue equation is
 \[
 Sz=\lambda z.
 \]
-Using the standard Hermitian inner product on $\mathbb C^n$,
+Using the standard Hermitian inner product on $\CC^n$,
 \[
 z^*Sz
 =
@@ -82,7 +82,7 @@ Therefore
 =
 \frac{z^*Sz}{z^*z}
 \in
-\mathbb R.
+\RR.
 \]
 
 :::
@@ -100,7 +100,7 @@ The characteristic polynomial of $S$ has a complex root by the fundamental theor
 By step [](#s1-1){.pf-ref}, every eigenvalue is real.
 Choose
 \[
-\lambda\in\mathbb R
+\lambda\in\RR
 \]
 and a nonzero complex vector
 \[
@@ -129,7 +129,7 @@ If
 \[
 Sv=\lambda v
 \]
-with $v\in\mathbb R^n$, then the orthogonal complement
+with $v\in\RR^n$, then the orthogonal complement
 \[
 v^\perp
 \]
@@ -191,7 +191,7 @@ one has
 =
 \langle w_1,Sw_2\rangle
 \]
-because $S$ is symmetric on all of $\mathbb R^n$.
+because $S$ is symmetric on all of $\RR^n$.
 Thus the restricted operator is symmetric on the inner-product space $v^\perp$.
 
 :::
@@ -240,7 +240,7 @@ Therefore
 \[
 v_1,\ldots,v_n
 \]
-is an orthonormal basis of $\mathbb R^n$ consisting of eigenvectors of $S$.
+is an orthonormal basis of $\RR^n$ consisting of eigenvectors of $S$.
 
 :::
 

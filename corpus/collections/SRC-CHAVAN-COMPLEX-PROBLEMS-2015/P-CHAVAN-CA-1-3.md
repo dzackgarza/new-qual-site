@@ -32,9 +32,9 @@ p_N(z)=\sum_{n=0}^N a_nz^n,
 $$
 and set
 $$
-K=\{z\in\mathbb C:|z|\le1\},
+K=\{z\in\CC:|z|\le1\},
 \qquad
-\partial K=\{z\in\mathbb C:|z|=1\}.
+\partial K=\{z\in\CC:|z|=1\}.
 $$
 
 ::: pf

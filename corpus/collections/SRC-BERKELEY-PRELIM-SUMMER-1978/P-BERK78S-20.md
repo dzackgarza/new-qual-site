@@ -27,9 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $M_{n\times n}(\mathbb R)$ be the vector space of real $n\times n$ matrices, and define
+Let $M_{n\times n}(\RR)$ be the vector space of real $n\times n$ matrices, and define
 \[
-f:M_{n\times n}(\mathbb R)\to M_{n\times n}(\mathbb R),
+f:M_{n\times n}(\RR)\to M_{n\times n}(\RR),
 \qquad f(X)=X^2.
 \]
 Find the derivative of $f$.

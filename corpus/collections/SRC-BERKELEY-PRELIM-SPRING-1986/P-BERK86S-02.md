@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and suppose
+Let $f:\RR\to\RR$ be continuous and suppose
 \[
 f(x)=f(x+1)=f(x+\sqrt2)
 \]
-for every $x\in\mathbb R$. Prove that $f$ is constant.
+for every $x\in\RR$. Prove that $f$ is constant.
 :::
 
 ::: {.solution}

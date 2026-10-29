@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be meromorphic in $\mathbb{C}$ with finitely many zeros and poles.
+Let $f$ be meromorphic in $\CC$ with finitely many zeros and poles.
 Write $\alpha_1,\ldots,\alpha_n$ for the zeros and poles of $f$, and let $m_1,\ldots,m_n$ be their orders.
 Assume that
 
@@ -39,7 +39,7 @@ for $|z|\ge1$ shows that $f$ is holomorphic near $\infty$ with
 \[
 f(\infty)=1.
 \]
-Since $f$ has only finitely many poles in $\mathbb C$, it is meromorphic on the
+Since $f$ has only finitely many poles in $\CC$, it is meromorphic on the
 Riemann sphere. Every meromorphic function on the sphere is rational. Hence
 $f$ is rational.
 

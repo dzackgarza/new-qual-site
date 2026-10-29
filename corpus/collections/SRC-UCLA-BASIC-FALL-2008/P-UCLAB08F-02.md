@@ -16,7 +16,7 @@ audit:
   note: Checked against Problem 2 of the retained UCLA Basic Examination, Fall 2008.
 ---
 ::: {.problem}
-Let $A\subset\mathbb R^2$ be nonempty and connected.
+Let $A\subset\RR^2$ be nonempty and connected.
 
 ::: pf
 
@@ -108,7 +108,7 @@ Thus every point of $A$ can be joined to $p$ by a path in $A$, and any two point
 
 ::: {.pf-step #p2-s4}
 
-The conclusion is false for closed connected subsets of $\mathbb R^2$.
+The conclusion is false for closed connected subsets of $\RR^2$.
 
 ::: pf-proof
 
@@ -132,7 +132,7 @@ Steps [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref} and [](#p2-s7){.pf-ref} show that
 
 ::: {.pf-step #p2-s5}
 
-The set $A$ in step [](#p2-s4){.pf-ref} is the closure of $G$ in $\mathbb R^2$.
+The set $A$ in step [](#p2-s4){.pf-ref} is the closure of $G$ in $\RR^2$.
 
 ::: pf-proof
 

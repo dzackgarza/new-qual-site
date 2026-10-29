@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS05A
 kind: problem
-title: Skew part map $T(X)=\frac12(X-X^T)$ on $M_n(\mathbb{R})$
+title: Skew part map $T(X)=\frac12(X-X^T)$ on $M_n(\RR)$
 classification:
   areas:
   - applied-algebra
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $T\colon M_n(\mathbb{R})\to M_n(\mathbb{R})$ be the transformation such that
+Let $T\colon M_n(\RR)\to M_n(\RR)$ be the transformation such that
 \[
 T(X) = \frac12\bigl(X - X^T\bigr).
 \]
@@ -34,7 +34,7 @@ T(X) = \frac12\bigl(X - X^T\bigr).
 The map $T$ is linear.
 
 ::: pf-proof
-For $X,Y\in M_n(\mathbb R)$ and $a,b\in\mathbb R$,
+For $X,Y\in M_n(\RR)$ and $a,b\in\RR$,
 \[
 \begin{aligned}
 T(aX+bY)
@@ -50,7 +50,7 @@ T(aX+bY)
 ::: pf-step
 The null space is the space of symmetric matrices:
 \[
-\ker T=\{X\in M_n(\mathbb R):X^T=X\}.
+\ker T=\{X\in M_n(\RR):X^T=X\}.
 \]
 Its dimension is
 \[
@@ -73,7 +73,7 @@ A symmetric matrix is determined freely by its $n$ diagonal entries and its $n(n
 :::
 
 ::: pf-step
-For $M_3(\mathbb R)$, use the ordered standard basis
+For $M_3(\RR)$, use the ordered standard basis
 \[
 \mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
 \]

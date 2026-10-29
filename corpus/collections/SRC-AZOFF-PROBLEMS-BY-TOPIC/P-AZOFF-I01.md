@@ -29,12 +29,12 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2012, Problem $\# 7 ]$ Write $\mathbb { D } : = \{ z \in \mathbb { C } : | z | < 1 \}$ for the open unit disk.
+[Fall 2012, Problem $\# 7 ]$ Write $\mathbb { D } : = \{ z \in \CC : | z | < 1 \}$ for the open unit disk.
 Suppose $f : \mathbb { D } \to \mathbb { D }$ is analytic, and admits a continuous extension $\widetilde { f } : \overline { { \mathbb { D } } } \to \overline { { \mathbb { D } } }$ such that $| f ( z ) | = 1$ whenever $| z | = 1$ .
 
 a) Prove that $f$ is a rational function.
 
-b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^n$ for some $\lambda \in \mathbb { C }$ of absolute value 1 and some natural number $n$ .
+b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^n$ for some $\lambda \in \CC$ of absolute value 1 and some natural number $n$ .
 
 c) More generally, suppose that $a _ { 1 } , \dots , a _ { n } \in \mathbb { D }$ are the zeros of $f$, listed with multiplicity.
 Prove that

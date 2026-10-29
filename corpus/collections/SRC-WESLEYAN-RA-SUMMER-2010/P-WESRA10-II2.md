@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a Borel measure on $\mathbb R$ such that every bounded interval has finite measure and
+Let $\mu$ be a Borel measure on $\RR$ such that every bounded interval has finite measure and
 \[
 \mu(I)=\mu(I+r)
 \]
 for every bounded interval $I$ and rational $r$.
 
-(a) Prove $\mu(\{x\})=0$ for every $x\in\mathbb R$.
+(a) Prove $\mu(\{x\})=0$ for every $x\in\RR$.
 
 (b) Prove $\mu(I)=\mu(I+a)$ for every bounded interval $I$ and every real $a$.
 :::
@@ -33,7 +33,7 @@ for every bounded interval $I$ and rational $r$.
 
 ::: {.pf-step #s1-1}
 
-For every $x\in\mathbb R$ and every rational $r$,
+For every $x\in\RR$ and every rational $r$,
 \[
 \mu(\{x\})=\mu(\{x+r\}).
 \]
@@ -68,7 +68,7 @@ continuity from above gives
 
 ::: {.pf-step #s1-2}
 
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 \boxed{\mu(\{x\})=0}.
 \]
@@ -104,7 +104,7 @@ The left-hand side is finite, so $c=0$.
 
 ::: {.pf-step #s1-3}
 
-For every $y\in\mathbb R$,
+For every $y\in\RR$,
 \[
 \lim_{\delta\downarrow0}\mu((y-\delta,y+\delta))=0.
 \]
@@ -132,9 +132,9 @@ one-sided limit is $0$.
 
 ::: {.pf-step #s1-4}
 
-Let $I$ be a bounded interval and let $r_n\in\mathbb Q$ satisfy
+Let $I$ be a bounded interval and let $r_n\in\QQ$ satisfy
 \[
-r_n\to a\in\mathbb R.
+r_n\to a\in\RR.
 \]
 Then
 \[

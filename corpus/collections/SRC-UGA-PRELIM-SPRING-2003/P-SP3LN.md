@@ -25,7 +25,7 @@ Prove that $x > \ln x$ for all $x > 0$.
 ::: pf
 
 ::: pf-step
-Define $f:(0,\infty)\to\mathbb R$ by
+Define $f:(0,\infty)\to\RR$ by
 \[
 f(x)=x-\ln x.
 \]

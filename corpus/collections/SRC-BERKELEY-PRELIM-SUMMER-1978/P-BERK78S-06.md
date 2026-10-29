@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire, and let $a,b>0$.
+Let $f:\CC\to\CC$ be entire, and let $a,b>0$.
 
 1. If
    \[

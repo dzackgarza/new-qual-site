@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let
 \[
-M=\begin{pmatrix}1&0&a&b\\0&1&0&0\\0&c&3&-2\\0&d&2&-1\end{pmatrix},\qquad a,b,c,d\in\mathbb R.
+M=\begin{pmatrix}1&0&a&b\\0&1&0&0\\0&c&3&-2\\0&d&2&-1\end{pmatrix},\qquad a,b,c,d\in\RR.
 \]
 (a) Determine conditions on $a,b,c,d$ such that the Jordan form of $M$ has only one Jordan block for each eigenvalue.
 

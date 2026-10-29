@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Let $x_0<x_1<\cdots<x_n$ be points in $[a,b]$, and let $\mathbb P^n$ be the vector space of polynomials of degree at most $n$.
-Define $l_j:\mathbb P^n\to\mathbb R$ by $l_j(p)=p(x_j)$.
+Define $l_j:\mathbb P^n\to\RR$ by $l_j(p)=p(x_j)$.
 
 (a) Show that $\{l_j\}_{j=0}^n$ is linearly independent.
 
@@ -115,7 +115,7 @@ The vector space $\mathbb P^n$ has dimension $n+1$, so its dual also has dimensi
 
 The map
 \[
-I:\mathbb P^n\to\mathbb R,
+I:\mathbb P^n\to\RR,
 \qquad
 I(p)=\int_a^b p(x)\,dx,
 \]

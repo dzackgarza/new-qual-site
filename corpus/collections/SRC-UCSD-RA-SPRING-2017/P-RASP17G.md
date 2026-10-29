@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $g$ be a real valued function in $L^1([0, 1], m)$ and $h : [0, 1] \to \mathbb{R}$ be a strictly increasing function such that
+Let $g$ be a real valued function in $L^1([0, 1], m)$ and $h : [0, 1] \to \RR$ be a strictly increasing function such that
 $$
-\int_0^1 g(x) [h(x)]^n \, dm(x) = 0 \quad \text{for } n \in \mathbb{N}.
+\int_0^1 g(x) [h(x)]^n \, dm(x) = 0 \quad \text{for } n \in \NN.
 $$
 
 1. Under the further assumption that $h$ is continuous and $h(0) > 0$, show $g(x) = 0$ $m$-a.e.

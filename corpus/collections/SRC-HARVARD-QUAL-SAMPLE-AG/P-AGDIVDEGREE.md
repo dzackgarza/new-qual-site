@@ -113,7 +113,7 @@ Equivalently, the total order of the zeros of a rational function, counted with 
 ::: {.pf-step #degree-descends}
 Consequently degree descends to divisor classes and to the Picard group:
 \[
-\deg:\operatorname{Pic}(C)\longrightarrow\mathbb Z.
+\deg:\operatorname{Pic}(C)\longrightarrow\ZZ.
 \]
 
 ::: pf-proof

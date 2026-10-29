@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find all analytic functions $f$ on $\mathbb{C} \setminus \{0\}$ with the following property: There is some constant $C > 0$ such that $|f(z)| \leq C|z|^2 + \frac{C}{|z|^{1/2}}$ for all $z \in \mathbb{C} \setminus \{0\}$.
+Find all analytic functions $f$ on $\CC \setminus \{0\}$ with the following property: There is some constant $C > 0$ such that $|f(z)| \leq C|z|^2 + \frac{C}{|z|^{1/2}}$ for all $z \in \CC \setminus \{0\}$.
 :::
 
 ::: {.solution}

@@ -104,7 +104,7 @@ Together these inequalities are equivalent to
 ::: pf-step
 The function
 \[
-f:X\to\mathbb R,
+f:X\to\RR,
 \qquad
 f(x)=d(x,A),
 \]

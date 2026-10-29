@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D\subset\mathbb C$ be a bounded domain.
+Let $D\subset\CC$ be a bounded domain.
 Suppose each $f_n$ is continuous on $\overline D$ and analytic on $D$.
 If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniformly on $\overline D$.
 :::
@@ -176,7 +176,7 @@ step [](#s1-3){.pf-ref} gives
 
 There exists a continuous function
 \[
-f:\overline D\to\mathbb C
+f:\overline D\to\CC
 \]
 such that
 \[

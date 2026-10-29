@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF17F
 kind: problem
-title: $\mathbb{Q}(\sqrt[3]{2})$ not contained in a tower of degree-$3$ Galois extensions
+title: $\QQ(\sqrt[3]{2})$ not contained in a tower of degree-$3$ Galois extensions
 classification:
   areas:
   - algebra
@@ -27,10 +27,10 @@ audit:
 ::: {.problem}
 Let
 \[
-\mathbb{Q} = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_n,
+\QQ = K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_n,
 \]
 be a sequence of field extensions such that $K_{i+1}/K_i$ is Galois of order $3$ for all $0 \leq i < n$.
-Show that $\mathbb{Q}(\sqrt[3]{2})$ is not contained in $K_n$.
+Show that $\QQ(\sqrt[3]{2})$ is not contained in $K_n$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ Put
 \]
 Suppose, toward a contradiction, that
 \[
-\mathbb Q(\alpha)\subseteq K_n.
+\QQ(\alpha)\subseteq K_n.
 \]
 
 ::: pf
@@ -52,7 +52,7 @@ K_m=K_{m-1}(\alpha).
 \]
 
 ::: pf-proof
-Since $\alpha\notin\mathbb Q=K_0$ but $\alpha\in K_n$, choose the least $m\ge1$ such that
+Since $\alpha\notin\QQ=K_0$ but $\alpha\in K_n$, choose the least $m\ge1$ such that
 \[
 \alpha\in K_m.
 \]
@@ -135,22 +135,22 @@ Since $\alpha\neq0$ and $\alpha\in K_m$,
 :::
 
 ::: {.pf-step #degree-contradiction}
-This contradicts the degree of $K_m/\mathbb Q$.
+This contradicts the degree of $K_m/\QQ$.
 
 ::: pf-proof
 By the tower law,
 \[
-[K_m:\mathbb Q]
+[K_m:\QQ]
 =\prod_{i=0}^{m-1}[K_{i+1}:K_i]
 =3^m.
 \]
 On the other hand, step [](#km-contains-zeta3){.pf-ref} gives
 \[
-\mathbb Q(\zeta_3)\subseteq K_m.
+\QQ(\zeta_3)\subseteq K_m.
 \]
 Since
 \[
-[\mathbb Q(\zeta_3):\mathbb Q]=2,
+[\QQ(\zeta_3):\QQ]=2,
 \]
 the tower law would force $2$ to divide $3^m$, which is impossible.
 :::
@@ -160,7 +160,7 @@ the tower law would force $2$ to divide $3^m$, which is impossible.
 ::: pf-step
 Therefore
 \[
-\mathbb Q(\sqrt[3]{2})\not\subseteq K_n.
+\QQ(\sqrt[3]{2})\not\subseteq K_n.
 \]
 
 ::: pf-proof

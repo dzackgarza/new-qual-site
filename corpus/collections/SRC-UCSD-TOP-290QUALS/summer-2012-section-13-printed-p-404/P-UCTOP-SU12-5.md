@@ -23,15 +23,15 @@ Compute the first, second and third homotopy groups of $X = \mathbb{RP}^2 \times
 ::: pf-step
 The fundamental group is
 $$
-\pi_1(X)\cong\mathbb Z/2\oplus\mathbb Z\oplus\mathbb Z.
+\pi_1(X)\cong\ZZ/2\oplus\ZZ\oplus\ZZ.
 $$
 
 ::: pf-proof
 Fundamental groups commute with finite products, and
 $$
-\pi_1(\mathbb{RP}^2)=\mathbb Z/2,
+\pi_1(\mathbb{RP}^2)=\ZZ/2,
 \qquad
-\pi_1(S^1)=\mathbb Z.
+\pi_1(S^1)=\ZZ.
 $$
 :::
 
@@ -62,19 +62,19 @@ Every covering map induces isomorphisms on $\pi_n$ for $n\ge2$.
 Therefore
 $$
 \boxed{
-\pi_1(X)=\mathbb Z/2\oplus\mathbb Z^2,
+\pi_1(X)=\ZZ/2\oplus\ZZ^2,
 \qquad
-\pi_2(X)=\mathbb Z,
+\pi_2(X)=\ZZ,
 \qquad
-\pi_3(X)=\mathbb Z.}
+\pi_3(X)=\ZZ.}
 $$
 
 ::: pf-proof
 Use steps [](#pi-n-x-equals-pi-n-rp2){.pf-ref} and [](#universal-cover-iso-degree2){.pf-ref} together with
 $$
-\pi_2(S^2)\cong\mathbb Z,
+\pi_2(S^2)\cong\ZZ,
 \qquad
-\pi_3(S^2)\cong\mathbb Z.
+\pi_3(S^2)\cong\ZZ.
 $$
 :::
 

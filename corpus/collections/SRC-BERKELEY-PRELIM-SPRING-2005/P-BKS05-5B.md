@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb { Q } ( x )$ be the field of rational functions in one variable over $\mathbb { Q }$ . Let $i \colon \mathbb { Q } ( x ) \to \mathbb { Q } ( x )$ be the unique field automorphism such that $i ( x ) = x ^ { - 1 }$ Prove that the fixed subfield $\{ r \in \mathbb { Q } ( x ) : i ( r ) = r \}$ is equal to $\mathbb { Q } ( x + x ^ { - 1 } )$
+Let $\QQ ( x )$ be the field of rational functions in one variable over $\QQ$ . Let $i \colon \QQ ( x ) \to \QQ ( x )$ be the unique field automorphism such that $i ( x ) = x ^ { - 1 }$ Prove that the fixed subfield $\{ r \in \QQ ( x ) : i ( r ) = r \}$ is equal to $\QQ ( x + x ^ { - 1 } )$
 :::
 
 ::: {.solution}

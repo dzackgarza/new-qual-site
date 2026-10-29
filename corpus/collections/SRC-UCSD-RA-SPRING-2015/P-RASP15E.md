@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a real-valued function of bounded variation on $\mathbb{R}$, and $g$ be a smooth function of compact support on $\mathbb{R}$.
+Let $f$ be a real-valued function of bounded variation on $\RR$, and $g$ be a smooth function of compact support on $\RR$.
 Is the integration by parts
 $$
 \int_{-\infty}^{\infty} f(x) g'(x)\,dm(x) = -\int_{-\infty}^{\infty} f'(x) g(x)\,dm(x)
@@ -48,13 +48,13 @@ Let
 \[
 f(x)=\mathbf1_{[0,\infty)}(x).
 \]
-Then $f$ has bounded variation on $\mathbb R$, and its classical derivative satisfies
+Then $f$ has bounded variation on $\RR$, and its classical derivative satisfies
 \[
 f'(x)=0
 \]
 for almost every $x$.
 
-Choose $g\in C_c^\infty(\mathbb R)$ with $g(0)\ne0$. Then
+Choose $g\in C_c^\infty(\RR)$ with $g(0)\ne0$. Then
 \[
 \int_{-\infty}^{\infty}f(x)g'(x)\,dx
 =\int_0^\infty g'(x)\,dx
@@ -78,8 +78,8 @@ Explain the missing term for a general BV function.
 
 For a BV function, the distributional derivative $Df$ is a finite signed Radon measure, and the correct integration-by-parts identity is
 \[
-\int_{\mathbb R}f(x)g'(x)\,dx
-=-\int_{\mathbb R}g\,d(Df).
+\int_{\RR}f(x)g'(x)\,dx
+=-\int_{\RR}g\,d(Df).
 \]
 The absolutely continuous part of $Df$ is $f'(x)\,dx$, but $Df$ may also have jump and singular-continuous parts. In the Heaviside example,
 \[
@@ -97,7 +97,7 @@ Absolute continuity is a sufficient condition for the stated formula.
 
 ::: pf-proof
 
-Assume $f$ is absolutely continuous on $\mathbb R$; in fact it suffices that $f$ be absolutely continuous on an interval containing $\operatorname{supp}g$. Then
+Assume $f$ is absolutely continuous on $\RR$; in fact it suffices that $f$ be absolutely continuous on an interval containing $\operatorname{supp}g$. Then
 \[
 f(b)-f(a)=\int_a^b f'(x)\,dx
 \]

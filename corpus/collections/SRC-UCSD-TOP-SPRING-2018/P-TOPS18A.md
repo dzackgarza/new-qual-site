@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $S_3$ be the symmetric group on $3$ letters.
-If we pick elements $\tau, \sigma \in S_3$ of orders $2$ and $3$ respectively, we get a surjective homomorphism $\theta : \mathbb{Z}_2 * \mathbb{Z}_3 \to S_3$.
+If we pick elements $\tau, \sigma \in S_3$ of orders $2$ and $3$ respectively, we get a surjective homomorphism $\theta : \ZZ_2 * \ZZ_3 \to S_3$.
 By constructing a suitable covering space of a $2$-complex, show that the kernel of $\theta$ is a free group of rank $2$.
 :::
 
@@ -25,7 +25,7 @@ By constructing a suitable covering space of a $2$-complex, show that the kernel
 ::: pf
 
 ::: pf-step
-Let $G=\mathbb Z/2*\mathbb Z/3=\langle a,b\mid a^2=b^3=1\rangle$ and $K=\ker\theta$. Since $\theta$ is onto $S_3$, $K$ has index $6$.
+Let $G=\ZZ/2*\ZZ/3=\langle a,b\mid a^2=b^3=1\rangle$ and $K=\ker\theta$. Since $\theta$ is onto $S_3$, $K$ has index $6$.
 
 ::: pf-proof
 The quotient $G/K$ is $S_3$, which has six elements.
@@ -34,7 +34,7 @@ The quotient $G/K$ is $S_3$, which has six elements.
 :::
 
 ::: pf-step
-Use the Bass--Serre tree $T$ for the free product $G=(\mathbb Z/2)*(\mathbb Z/3)$. Its vertices are the cosets of the two factors and its edges are the elements of $G$, with an edge $g$ joining $g(\mathbb Z/2)$ to $g(\mathbb Z/3)$.
+Use the Bass--Serre tree $T$ for the free product $G=(\ZZ/2)*(\ZZ/3)$. Its vertices are the cosets of the two factors and its edges are the elements of $G$, with an edge $g$ joining $g(\ZZ/2)$ to $g(\ZZ/3)$.
 
 ::: pf-proof
 This is the standard tree associated to a free product. The stabilizers of the two types of vertices are conjugates of the factors, while edge stabilizers are trivial.
@@ -52,7 +52,7 @@ Any vertex stabilizer in $K$ is the intersection of $K$ with a conjugate of a fi
 :::
 
 ::: pf-step
-The quotient graph $K\backslash T$ has $3$ vertices of the $\mathbb Z/2$ type, $2$ vertices of the $\mathbb Z/3$ type, and $6$ edges.
+The quotient graph $K\backslash T$ has $3$ vertices of the $\ZZ/2$ type, $2$ vertices of the $\ZZ/3$ type, and $6$ edges.
 
 ::: pf-proof
 Because $K$ is normal with quotient $S_3$, the two vertex sets are the coset spaces $S_3/\langle\tau\rangle$ and $S_3/\langle\sigma\rangle$, of cardinalities $3$ and $2$. The edges correspond to elements of $S_3$, hence there are $6$.

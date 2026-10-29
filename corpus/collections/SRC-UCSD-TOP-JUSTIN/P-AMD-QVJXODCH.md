@@ -49,7 +49,7 @@ after placing the necessary power of $W$ in the lower-degree component. These ho
 
 ::: pf-step
 
-In particular, if the intended map is instead the restriction of $p$ to a large circle with values in $\mathbb C^*$, its winding number is $n-m$.
+In particular, if the intended map is instead the restriction of $p$ to a large circle with values in $\CC^*$, its winding number is $n-m$.
 
 ::: pf-proof
 

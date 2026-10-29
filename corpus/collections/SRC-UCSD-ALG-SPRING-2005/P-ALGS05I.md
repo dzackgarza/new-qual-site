@@ -33,11 +33,11 @@ Find the Galois group of the splitting field of $p(x)$ over the rationals and ov
 
 ::: {.pf-step #s1}
 
-The polynomial $p(x)=x^3+3x^2+2$ is irreducible over $\mathbb Q$.
+The polynomial $p(x)=x^3+3x^2+2$ is irreducible over $\QQ$.
 
 ::: pf-proof
 
-A reducible cubic over $\mathbb Q$ has a rational root. By the rational-root theorem, the only possible rational roots are $\pm1,\pm2$. Directly,
+A reducible cubic over $\QQ$ has a rational root. By the rational-root theorem, the only possible rational roots are $\pm1,\pm2$. Directly,
 \[
 p(1)=6,\quad p(-1)=4,\quad p(2)=22,\quad p(-2)=6,
 \]
@@ -49,7 +49,7 @@ so none is a root.
 
 ::: {.pf-step #s2}
 
-The discriminant of $p$ is $-324$, which is not a square in $\mathbb Q$.
+The discriminant of $p$ is $-324$, which is not a square in $\QQ$.
 
 ::: pf-proof
 
@@ -61,7 +61,7 @@ Here $a=3$, $b=0$, and $c=2$, so
 \[
 \Delta=-4(3^3)(2)-27(2^2)=-216-108=-324.
 \]
-Since $-324<0$, it is not a square in $\mathbb Q$.
+Since $-324<0$, it is not a square in $\QQ$.
 
 :::
 
@@ -69,7 +69,7 @@ Since $-324<0$, it is not a square in $\mathbb Q$.
 
 ::: {.pf-step #s3}
 
-Over $\mathbb Q$, the Galois group of the splitting field of $p$ is $S_3$.
+Over $\QQ$, the Galois group of the splitting field of $p$ is $S_3$.
 
 ::: pf-proof
 
@@ -119,7 +119,7 @@ and has order $3$, so it is isomorphic to $C_3$.
 
 Therefore
 \[
-\operatorname{Gal}(p/\mathbb Q)\cong S_3,
+\operatorname{Gal}(p/\QQ)\cong S_3,
 \qquad
 \operatorname{Gal}(p/\mathbb F_5)\cong C_3.
 \]

@@ -24,9 +24,9 @@ Provide examples of the following.
 
 a) a true implication whose converse is false,
 
-b) a function $f: \mathbb{R} \to \mathbb{R}$ which is continuous at $7$, but not differentiable there,
+b) a function $f: \RR \to \RR$ which is continuous at $7$, but not differentiable there,
 
-c) a function $f: \mathbb{R}^2 \to \mathbb{R}$ which is continuous in each variable separately, but is not continuous at $(0,0)$,
+c) a function $f: \RR^2 \to \RR$ which is continuous in each variable separately, but is not continuous at $(0,0)$,
 
 d) a bounded sequence which is not Cauchy,
 
@@ -43,7 +43,7 @@ Part (a): A true implication whose converse is false:
 ::: pf-proof
 
 ::: pf-step
-Consider the statement for an integer $n \in \mathbb{Z}$:
+Consider the statement for an integer $n \in \ZZ$:
 \[
 P(n) \implies Q(n), \quad \text{where } P(n) \text{ is } ``4 \mid n" \text{ and } Q(n) \text{ is } ``2 \mid n".
 \]
@@ -64,11 +64,11 @@ Part (b): Continuous at $7$ but not differentiable at $7$:
 ::: pf-proof
 
 ::: pf-step
-Define $f: \mathbb{R} \to \mathbb{R}$ by:
+Define $f: \RR \to \RR$ by:
 \[
 f(x) = |x - 7|.
 \]
-$f$ is continuous on $\mathbb{R}$ as the composition of continuous functions.
+$f$ is continuous on $\RR$ as the composition of continuous functions.
 :::
 
 ::: pf-step
@@ -84,20 +84,20 @@ Because the left and right limits do not agree, $f'(7)$ does not exist.
 :::
 
 ::: pf-step
-Part (c): Separately continuous on $\mathbb{R}^2$ but not continuous at $(0, 0)$:
+Part (c): Separately continuous on $\RR^2$ but not continuous at $(0, 0)$:
 
 ::: pf-proof
 
 ::: pf-step
-Define $f: \mathbb{R}^2 \to \mathbb{R}$ by:
+Define $f: \RR^2 \to \RR$ by:
 \[
 f(x, y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & (x, y) \neq (0, 0), \\ 0 & (x, y) = (0, 0). \end{cases}
 \]
 :::
 
 ::: pf-step
-For any fixed $y_0$, $x \mapsto f(x, y_0)$ is continuous on $\mathbb{R}$ (at $x = 0$, $f(x, 0) = 0$ for all $x$, so $\lim_{x\to 0} f(x, 0) = 0 = f(0, 0)$).
-Symmetrically, for any fixed $x_0$, $y \mapsto f(x_0, y)$ is continuous on $\mathbb{R}$.
+For any fixed $y_0$, $x \mapsto f(x, y_0)$ is continuous on $\RR$ (at $x = 0$, $f(x, 0) = 0$ for all $x$, so $\lim_{x\to 0} f(x, 0) = 0 = f(0, 0)$).
+Symmetrically, for any fixed $x_0$, $y \mapsto f(x_0, y)$ is continuous on $\RR$.
 Thus $f$ is separately continuous in each variable.
 :::
 
@@ -124,7 +124,7 @@ Then $|a_n| = 1 \le 1$ for all $n$, so the sequence is bounded.
 :::
 
 ::: pf-step
-For any $n \in \mathbb{N}$, $|a_{n+1} - a_n| = |(-1)^{n+1} - (-1)^n| = 2$.
+For any $n \in \NN$, $|a_{n+1} - a_n| = |(-1)^{n+1} - (-1)^n| = 2$.
 Taking $\varepsilon = 1$, there is no $N$ such that $|a_n - a_m| < 1$ for all $n, m \ge N$.
 Thus $(a_n)$ is not Cauchy.
 :::

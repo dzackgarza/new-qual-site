@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Use the transfer sequence for the covering $X \times S^\infty \to X \times \mathbb{RP}^\infty$ to produce isomorphisms $H_n(X \times \mathbb{RP}^\infty; \mathbb{Z}_2) \approx \bigoplus_{i \leq n} H_i(X; \mathbb{Z}_2)$ for all $n$.
+Use the transfer sequence for the covering $X \times S^\infty \to X \times \mathbb{RP}^\infty$ to produce isomorphisms $H_n(X \times \mathbb{RP}^\infty; \ZZ_2) \approx \bigoplus_{i \leq n} H_i(X; \ZZ_2)$ for all $n$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ E=X\times S^\infty,
 \qquad
 B=X\times\mathbb{RP}^\infty,
 \]
-and use $\mathbb Z_2$ coefficients. The projection $p:E\to B$ is a double cover, so its transfer sequence is
+and use $\ZZ_2$ coefficients. The projection $p:E\to B$ is a double cover, so its transfer sequence is
 \[
 \cdots\to H_n(B)\overset{\tau_*}{\longrightarrow}H_n(E)
 \overset{p_*}{\longrightarrow}H_n(B)
@@ -83,7 +83,7 @@ Let $r:E\to X$ be projection to the first factor. On singular chains, $\tau$ sen
 \[
 r_\#\tau(\sigma)=2\,q_\#(\sigma)=0
 \]
-over $\mathbb Z_2$. Thus $r_*\tau_*=0$. Since $r_*:H_n(E)\to H_n(X)$ is an isomorphism, $\tau_*=0$.
+over $\ZZ_2$. Thus $r_*\tau_*=0$. Since $r_*:H_n(E)\to H_n(X)$ is an isomorphism, $\tau_*=0$.
 
 :::
 
@@ -112,9 +112,9 @@ By step [](#s2){.pf-ref}, exactness makes $\delta$ surjective. By step [](#s1){.
 Inductively,
 \[
 \boxed{
-H_n(X\times\mathbb{RP}^\infty;\mathbb Z_2)
+H_n(X\times\mathbb{RP}^\infty;\ZZ_2)
 \cong
-\bigoplus_{i=0}^{n}H_i(X;\mathbb Z_2).
+\bigoplus_{i=0}^{n}H_i(X;\ZZ_2).
 }
 \]
 

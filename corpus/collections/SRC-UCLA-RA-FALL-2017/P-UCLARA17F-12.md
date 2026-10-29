@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $f$, $g$, and $h$ be complex-valued functions defined on $\mathbb C$ with
+Problem 12. Let $f$, $g$, and $h$ be complex-valued functions defined on $\CC$ with
 \[
 f=g\circ h.
 \]
@@ -28,7 +28,7 @@ Show that if $h$ is continuous, and both $f$ and $g$ are non-constant and holomo
 
 Let
 \[
-Z\coloneqq\{w\in\mathbb C:g'(w)=0\},
+Z\coloneqq\{w\in\CC:g'(w)=0\},
 \qquad
 B\coloneqq h^{-1}(Z).
 \]
@@ -37,7 +37,7 @@ B\coloneqq h^{-1}(Z).
 
 ::: {.pf-step #s1-1}
 
-The set $Z$ is discrete in $\mathbb C$.
+The set $Z$ is discrete in $\CC$.
 
 
 ::: pf-proof
@@ -50,7 +50,7 @@ Since $g$ is non-constant and entire, $g'$ is not identically zero. The zeros of
 
 ::: {.pf-step #s1-2}
 
-The function $h$ is holomorphic on $\mathbb C\setminus B$.
+The function $h$ is holomorphic on $\CC\setminus B$.
 
 
 ::: pf-proof
@@ -75,12 +75,12 @@ The right-hand side is holomorphic, so $h$ is holomorphic at $z_0$.
 
 ::: {.pf-step #s1-3}
 
-The set $B$ is discrete in $\mathbb C$.
+The set $B$ is discrete in $\CC$.
 
 
 ::: pf-proof
 
-Suppose instead that $B$ has an accumulation point $z_\infty\in\mathbb C$. Choose distinct points $z_n\in B$ with
+Suppose instead that $B$ has an accumulation point $z_\infty\in\CC$. Choose distinct points $z_n\in B$ with
 \[
 z_n\longrightarrow z_\infty.
 \]
@@ -104,7 +104,7 @@ for infinitely many distinct $z_n\to z_\infty$. The identity theorem then forces
 
 ::: {.pf-step #s1-4}
 
-Every point of $B$ is a removable singularity for the holomorphic function $h|_{\mathbb C\setminus B}$.
+Every point of $B$ is a removable singularity for the holomorphic function $h|_{\CC\setminus B}$.
 
 
 ::: pf-proof
@@ -121,12 +121,12 @@ Step [](#s1-2){.pf-ref} shows that $h$ is holomorphic on the punctured disk $0<|
 
 ::: {.pf-step #s1-5}
 
-$h$ is holomorphic on $\mathbb C$.
+$h$ is holomorphic on $\CC$.
 
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} gives holomorphy on $\mathbb C\setminus B$, and step [](#s1-4){.pf-ref} gives holomorphy at every point of $B$.
+Step [](#s1-2){.pf-ref} gives holomorphy on $\CC\setminus B$, and step [](#s1-4){.pf-ref} gives holomorphy at every point of $B$.
 
 :::
 

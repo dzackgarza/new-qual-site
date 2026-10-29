@@ -27,10 +27,10 @@ Hint: Use the Fourier transform.
 ::: pf
 
 ::: {.pf-step #wedderburn-decomposition}
-The group algebra $\mathbb{C}[G]$ decomposes as $\bigoplus_\rho M_{d_\rho}(\mathbb{C})$ via the Fourier transform (Wedderburn decomposition), where $\rho$ runs over the irreducible representations.
+The group algebra $\CC[G]$ decomposes as $\bigoplus_\rho M_{d_\rho}(\CC)$ via the Fourier transform (Wedderburn decomposition), where $\rho$ runs over the irreducible representations.
 
 ::: pf-proof
-the Fourier transform is the isomorphism $\mathbb{C}[G] \cong \bigoplus_\rho \operatorname{End}(V_\rho)$.
+the Fourier transform is the isomorphism $\CC[G] \cong \bigoplus_\rho \operatorname{End}(V_\rho)$.
 :::
 
 :::
@@ -63,10 +63,10 @@ Step [](#fourier-transform-nilpotent){.pf-ref}.
 :::
 
 ::: {.pf-step #semisimple-has-no-nilpotents}
-But $\hat f(\rho)$ is a matrix over $\mathbb{C}$; a nilpotent matrix over $\mathbb{C}$ is not necessarily zero, so we need more: the Fourier transform of a nilpotent element of the *group algebra* must be zero because the group algebra is semisimple (it has no nonzero nilpotent elements).
+But $\hat f(\rho)$ is a matrix over $\CC$; a nilpotent matrix over $\CC$ is not necessarily zero, so we need more: the Fourier transform of a nilpotent element of the *group algebra* must be zero because the group algebra is semisimple (it has no nonzero nilpotent elements).
 
 ::: pf-proof
-$\mathbb{C}[G]$ is semisimple (Maschke's theorem), so it is a direct sum of matrix algebras, which have no nonzero nilpotent ideals; in fact a direct sum of matrix algebras has no nonzero nilpotent elements at all.
+$\CC[G]$ is semisimple (Maschke's theorem), so it is a direct sum of matrix algebras, which have no nonzero nilpotent ideals; in fact a direct sum of matrix algebras has no nonzero nilpotent elements at all.
 :::
 
 :::

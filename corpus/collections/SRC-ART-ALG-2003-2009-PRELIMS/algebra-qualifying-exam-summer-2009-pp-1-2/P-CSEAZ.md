@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CSEAZ
 kind: problem
-title: Groups of order $120$, $\mathbb{Q}[x]$-modules of dimension $6$ annihilated
+title: Groups of order $120$, $\QQ[x]$-modules of dimension $6$ annihilated
   by $(x-3)^2(x+5)$, and rational canonical forms with that minimal polynomial
 classification:
   areas:

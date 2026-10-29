@@ -88,7 +88,7 @@ Ax=Ax_0.
 
 Both $Ax$ and $Ax_0$ lie in the subspace
 \[
-\operatorname{image}A\subseteq\mathbb R^m
+\operatorname{image}A\subseteq\RR^m
 \]
 and both minimize the distance to $b$.
 The nearest point in a linear subspace of Euclidean space is unique.

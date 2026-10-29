@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-6) (10 points) Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function. Prove that if there exists some real number C and some positive integer k so that
+6) (10 points) Let $f : \CC \to \CC$ be an entire function. Prove that if there exists some real number C and some positive integer k so that
 
 $$
 | f ( z ) | \leq C | z | ^ { k }

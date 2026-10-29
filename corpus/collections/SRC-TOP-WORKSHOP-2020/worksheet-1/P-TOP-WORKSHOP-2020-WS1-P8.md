@@ -23,7 +23,7 @@ review: draft
 :::
 
 ::: {.solution}
-Let $K=\mathbb{R}P^2\#\mathbb{R}P^2$. Take the unit square with corners $P=(0,0)$, $Q=(1,0)$, $R=(0,1)$, $S=(1,1)$, and identify its sides by the edges
+Let $K=\RR P^2\#\RR P^2$. Take the unit square with corners $P=(0,0)$, $Q=(1,0)$, $R=(0,1)$, $S=(1,1)$, and identify its sides by the edges
 $$
 a\colon P\to Q \text{ and } R\to S,
 \qquad
@@ -39,7 +39,7 @@ The quotient is homeomorphic to $K$.
 
 ::: pf-proof
 
-The edge $a$ occurs once with each exponent and $b$ occurs twice with exponent $-1$, so the quotient is a closed nonorientable surface. The identifications give $P\sim R$ and $Q\sim S$ (from $a$) and $P\sim S$ and $R\sim Q$ (from $b$), so all four corners become one vertex $v$. With one vertex, two edges, and one face, $\chi=1-2+1=0$. By the classification of closed surfaces, the nonorientable surface with $\chi=0$ is $\#^2\mathbb{R}P^2=K$.
+The edge $a$ occurs once with each exponent and $b$ occurs twice with exponent $-1$, so the quotient is a closed nonorientable surface. The identifications give $P\sim R$ and $Q\sim S$ (from $a$) and $P\sim S$ and $R\sim Q$ (from $b$), so all four corners become one vertex $v$. With one vertex, two edges, and one face, $\chi=1-2+1=0$. By the classification of closed surfaces, the nonorientable surface with $\chi=0$ is $\#^2\RR P^2=K$.
 
 :::
 
@@ -78,11 +78,11 @@ If $\partial_2(xU+yL)=0$, the coefficients of $a$ and $b$ give $x-y=0$ and $x+y=
 
 ::: {.pf-step #s4}
 
-$H_1(K)\cong\mathbb Z\oplus\mathbb Z/2$.
+$H_1(K)\cong\ZZ\oplus\ZZ/2$.
 
 ::: pf-proof
 
-$H_1(K)=\ker\partial_1/\operatorname{im}\partial_2=\mathbb Z\langle a,b,c\rangle/\langle a+b-c,\,-a+b+c\rangle$. In the basis $a,b,c'$ with $c'=a+b-c$, the relations are $c'$ and $-a+b+(a+b-c')=2b-c'$. Hence the quotient is $\mathbb Z\langle a,b\rangle/\langle 2b\rangle\cong\mathbb Z\oplus\mathbb Z/2$.
+$H_1(K)=\ker\partial_1/\operatorname{im}\partial_2=\ZZ\langle a,b,c\rangle/\langle a+b-c,\,-a+b+c\rangle$. In the basis $a,b,c'$ with $c'=a+b-c$, the relations are $c'$ and $-a+b+(a+b-c')=2b-c'$. Hence the quotient is $\ZZ\langle a,b\rangle/\langle 2b\rangle\cong\ZZ\oplus\ZZ/2$.
 
 :::
 
@@ -90,9 +90,9 @@ $H_1(K)=\ker\partial_1/\operatorname{im}\partial_2=\mathbb Z\langle a,b,c\rangle
 
 ::: pf-qed
 
-With one vertex and $\partial_1=0$, $H_0(K)=C_0\cong\mathbb Z$. Together with steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
+With one vertex and $\partial_1=0$, $H_0(K)=C_0\cong\ZZ$. Together with steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
-\boxed{H_0(K)\cong\mathbb Z,\qquad H_1(K)\cong\mathbb Z\oplus\mathbb Z/2,\qquad H_n(K)=0\ (n\ge2).}
+\boxed{H_0(K)\cong\ZZ,\qquad H_1(K)\cong\ZZ\oplus\ZZ/2,\qquad H_n(K)=0\ (n\ge2).}
 $$
 
 :::

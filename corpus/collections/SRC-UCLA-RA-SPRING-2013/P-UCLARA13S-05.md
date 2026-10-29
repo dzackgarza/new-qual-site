@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $D$ be the unit disk and define
 \[
-H=\left\{u:D\to\mathbb R:\ u\text{ is harmonic and }\int_D |u(x,y)|^2\,dx\,dy<\infty\right\},
+H=\left\{u:D\to\RR:\ u\text{ is harmonic and }\int_D |u(x,y)|^2\,dx\,dy<\infty\right\},
 \]
 with inner product
 \[
@@ -35,7 +35,7 @@ with inner product
 
 Let
 \[
-T:H\to\mathbb R,
+T:H\to\RR,
 \qquad
 T(u)=u_x(0,0).
 \]

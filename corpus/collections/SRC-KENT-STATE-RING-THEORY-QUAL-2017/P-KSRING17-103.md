@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( x ) = a _ { 0 } + a _ { 1 } x + \cdots + a _ { k } x ^ { k } + \cdots + a _ { n } x ^ { n } \in \mathbb { Z } [ x ]$ and p a prime such that $p | a _ { i }$ for $i = 0 , \ldots , k - 1 , p \nmid a _ { k } , p \nmid a _ { n }$ , and $p ^ { 2 } \nmid a _ { 0 }$ . Show that $f ( x )$ has an irreducible factor in $\mathbb { Z } [ x ]$ of degree at least k.
+Let $f ( x ) = a _ { 0 } + a _ { 1 } x + \cdots + a _ { k } x ^ { k } + \cdots + a _ { n } x ^ { n } \in \ZZ [ x ]$ and p a prime such that $p | a _ { i }$ for $i = 0 , \ldots , k - 1 , p \nmid a _ { k } , p \nmid a _ { n }$ , and $p ^ { 2 } \nmid a _ { 0 }$ . Show that $f ( x )$ has an irreducible factor in $\ZZ [ x ]$ of degree at least k.
 :::
 
 ::: {.solution}

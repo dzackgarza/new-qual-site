@@ -171,7 +171,7 @@ But \(T\) is not homeomorphic to \(S^2\).
 
 For example,
 \[
-\pi_1(T)\cong\mathbb Z^2
+\pi_1(T)\cong\ZZ^2
 \]
 while
 \[

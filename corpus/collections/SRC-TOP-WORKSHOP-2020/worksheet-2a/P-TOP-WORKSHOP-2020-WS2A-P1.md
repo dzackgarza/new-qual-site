@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-(May 2015) If $X=\mathbb R^n$ with the usual Euclidean topology and $U\subseteq X$ is an open, connected subspace of $X$, show that $U$ is also path connected.
+(May 2015) If $X=\RR^n$ with the usual Euclidean topology and $U\subseteq X$ is an open, connected subspace of $X$, show that $U$ is also path connected.
 :::
 
 ::: {.solution}
@@ -29,7 +29,7 @@ Every point \(x\in U\) has an open Euclidean ball
 \[
 B(x,r)\subseteq U.
 \]
-Balls in \(\mathbb R^n\) are convex, hence path connected: for \(p,q\in B(x,r)\), the straight-line path
+Balls in \(\RR^n\) are convex, hence path connected: for \(p,q\in B(x,r)\), the straight-line path
 \[
 \gamma(t)=(1-t)p+tq
 \]

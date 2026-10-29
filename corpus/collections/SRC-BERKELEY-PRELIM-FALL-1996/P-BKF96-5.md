@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF96-5
 kind: problem
-title: Every real endomorphism of $\mathbb R^3$ has invariant lines and planes
+title: Every real endomorphism of $\RR^3$ has invariant lines and planes
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Prove that every linear transformation
 \[
-T:\mathbb R^3\to\mathbb R^3
+T:\RR^3\to\RR^3
 \]
 has
 

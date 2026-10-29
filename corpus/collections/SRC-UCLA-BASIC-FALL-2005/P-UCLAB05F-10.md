@@ -35,7 +35,7 @@ Give an example or a proof of nonexistence.
 
 ::: {.solution}
 
-For $n\ge2$, let $N\in M_n(\mathbb R)$ be the matrix with ones on the superdiagonal and zeros elsewhere:
+For $n\ge2$, let $N\in M_n(\RR)$ be the matrix with ones on the superdiagonal and zeros elsewhere:
 \[
 N=
 \begin{pmatrix}
@@ -178,7 +178,7 @@ A^{n+1}=0.
 
 ::: pf-proof
 
-If such a matrix existed, step [](#s1-5){.pf-ref} would produce $n+1$ linearly independent vectors in the $n$-dimensional space $\mathbb R^n$, which is impossible.
+If such a matrix existed, step [](#s1-5){.pf-ref} would produce $n+1$ linearly independent vectors in the $n$-dimensional space $\RR^n$, which is impossible.
 
 :::
 

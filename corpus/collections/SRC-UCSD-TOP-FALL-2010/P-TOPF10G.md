@@ -29,7 +29,7 @@ Let
 $$
 X=\mathbb{RP}^2\vee S^2\vee S^2.
 $$
-Then $\pi_1(X)\cong\mathbb Z/2$.
+Then $\pi_1(X)\cong\ZZ/2$.
 
 ::: pf-proof
 
@@ -58,7 +58,7 @@ There is the covering sphere itself plus four lifted wedge spheres. Moving the a
 
 The universal cover is simply connected and
 $$
-H_2(\widetilde X;\mathbb Z)\cong\mathbb Z^5.
+H_2(\widetilde X;\ZZ)\cong\ZZ^5.
 $$
 
 ::: pf-proof
@@ -73,7 +73,7 @@ This is the homology of a wedge of five $2$-spheres.
 
 By the Hurewicz theorem,
 $$
-\pi_2(\widetilde X)\cong H_2(\widetilde X)\cong\mathbb Z^5.
+\pi_2(\widetilde X)\cong H_2(\widetilde X)\cong\ZZ^5.
 $$
 
 ::: pf-proof
@@ -88,7 +88,7 @@ For a simply connected space, the degree-$2$ Hurewicz map is an isomorphism.
 
 Therefore
 $$
-\boxed{\pi_2(\mathbb{RP}^2\vee S^2\vee S^2)\cong\mathbb Z^5.}
+\boxed{\pi_2(\mathbb{RP}^2\vee S^2\vee S^2)\cong\ZZ^5.}
 $$
 
 ::: pf-proof

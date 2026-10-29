@@ -38,9 +38,9 @@ is an exact sequence, then there is a linearly independent generating set consis
 ::: {.solution}
 Write the exact sequence as
 $$
-0\longrightarrow \mathbb Z^s\xrightarrow{i}K\xrightarrow{p}\mathbb Z\longrightarrow0.
+0\longrightarrow \ZZ^s\xrightarrow{i}K\xrightarrow{p}\ZZ\longrightarrow0.
 $$
-Let $e_1,\ldots,e_s$ be the standard basis of $\mathbb Z^s$. Since $p$ is
+Let $e_1,\ldots,e_s$ be the standard basis of $\ZZ^s$. Since $p$ is
 surjective, choose $t\in K$ with
 $$
 p(t)=1.
@@ -56,7 +56,7 @@ The elements $i(e_1),\ldots,i(e_s),t$ generate $K$.
 
 Let $x\in K$. Put
 $$
-n=p(x)\in\mathbb Z.
+n=p(x)\in\ZZ.
 $$
 Then
 $$
@@ -72,7 +72,7 @@ $$
 $$
 Hence there is some
 $$
-z=\sum_{j=1}^s a_j e_j\in\mathbb Z^s
+z=\sum_{j=1}^s a_j e_j\in\ZZ^s
 $$
 with
 $$
@@ -90,7 +90,7 @@ so the displayed $s+1$ elements generate $K$.
 
 ::: pf-step
 
-These $s+1$ generators are linearly independent over $\mathbb Z$.
+These $s+1$ generators are linearly independent over $\ZZ$.
 
 ::: pf-proof
 
@@ -106,7 +106,7 @@ because $p(i(e_j))=0$ and $p(t)=1$. Thus
 $$
 i\left(\sum_{j=1}^s a_j e_j\right)=0.
 $$
-Exactness at $\mathbb Z^s$ says that $i$ is injective, so
+Exactness at $\ZZ^s$ says that $i$ is injective, so
 $$
 \sum_{j=1}^s a_j e_j=0.
 $$
@@ -126,7 +126,7 @@ Conclude the isomorphism type of $K$.
 A linearly independent generating set of $s+1$ elements is a basis of the
 abelian group $K$. Therefore
 $$
-\boxed{K\cong\mathbb Z^{s+1}.}
+\boxed{K\cong\ZZ^{s+1}.}
 $$
 
 :::

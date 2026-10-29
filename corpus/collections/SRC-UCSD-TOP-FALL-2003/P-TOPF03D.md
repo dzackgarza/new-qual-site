@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Let $N$ be a submanifold of $S^3$ which is homeomorphic to a thickened torus $T^2 \times I$.
 Let $X$ be its exterior, that is the closure of $S^3 \setminus N$.
-Use Mayer-Vietoris to compute the homology $H_*(X; \mathbb{Z})$.
+Use Mayer-Vietoris to compute the homology $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -54,9 +54,9 @@ $\partial(T^2 \times [0, 1]) = (T^2 \times \{0\}) \cup (T^2 \times \{1\})$.
 ::: pf-step
 The homology groups of $N$ and $A$ are:
 \[
-H_k(N) \cong \begin{cases} \mathbb{Z} & k = 0, 2, \\ \mathbb{Z}^2 & k = 1, \\ 0 & k \ge 3, \end{cases}
+H_k(N) \cong \begin{cases} \ZZ & k = 0, 2, \\ \ZZ^2 & k = 1, \\ 0 & k \ge 3, \end{cases}
 \qquad
-H_k(A) \cong \begin{cases} \mathbb{Z}^2 & k = 0, 2, \\ \mathbb{Z}^4 & k = 1, \\ 0 & k \ge 3. \end{cases}
+H_k(A) \cong \begin{cases} \ZZ^2 & k = 0, 2, \\ \ZZ^4 & k = 1, \\ 0 & k \ge 3. \end{cases}
 \]
 
 ::: pf-proof
@@ -87,7 +87,7 @@ Compute $H_0(X)$ and path components:
 ::: pf-proof
 
 ::: pf-step
-$\widetilde{H}_0(S^3) = 0$, $\widetilde{H}_0(N) = 0$ (since $N$ is path-connected), and $\widetilde{H}_0(A) \cong \mathbb{Z}$ (since $A = T_0^2 \sqcup T_1^2$ has two path components).
+$\widetilde{H}_0(S^3) = 0$, $\widetilde{H}_0(N) = 0$ (since $N$ is path-connected), and $\widetilde{H}_0(A) \cong \ZZ$ (since $A = T_0^2 \sqcup T_1^2$ has two path components).
 
 ::: pf-proof
 path connectivity of $S^3, N$ and two components of $A$.
@@ -105,10 +105,10 @@ $\widetilde{H}_1(S^3) = 0$ and $\widetilde{H}_0(N) = 0$.
 :::
 
 ::: pf-step
-Thus $\widetilde{H}_0(X) \cong \widetilde{H}_0(A) \cong \mathbb{Z}$, so $H_0(X) \cong \mathbb{Z}^2$ ($X$ has two path components).
+Thus $\widetilde{H}_0(X) \cong \widetilde{H}_0(A) \cong \ZZ$, so $H_0(X) \cong \ZZ^2$ ($X$ has two path components).
 
 ::: pf-proof
-$H_0(X) \cong \widetilde{H}_0(X) \oplus \mathbb{Z}$.
+$H_0(X) \cong \widetilde{H}_0(X) \oplus \ZZ$.
 :::
 
 :::
@@ -134,17 +134,17 @@ homology of non-closed 3-manifolds vanishes in dimension $\ge 3$.
 ::: {.pf-step #degree3-sequence}
 The sequence at degree 3 to 2 is:
 \[
-0 \to \mathbb{Z} \xrightarrow{\partial_3} \mathbb{Z}^2 \xrightarrow{\Phi_2} H_2(X) \oplus \mathbb{Z} \to 0.
+0 \to \ZZ \xrightarrow{\partial_3} \ZZ^2 \xrightarrow{\Phi_2} H_2(X) \oplus \ZZ \to 0.
 \]
 
 ::: pf-proof
-$\widetilde{H}_3(S^3) \cong \mathbb{Z}$, $H_2(A) \cong \mathbb{Z}^2$, $H_2(N) \cong \mathbb{Z}$, and $\widetilde{H}_2(S^3) = 0$.
+$\widetilde{H}_3(S^3) \cong \ZZ$, $H_2(A) \cong \ZZ^2$, $H_2(N) \cong \ZZ$, and $\widetilde{H}_2(S^3) = 0$.
 :::
 
 :::
 
 ::: pf-step
-The boundary map $\partial_3: H_3(S^3) \to H_2(A)$ sends $[S^3]$ to $([T_0^2], -[T_1^2])$, which is a primitive vector in $H_2(A) \cong \mathbb{Z}^2$.
+The boundary map $\partial_3: H_3(S^3) \to H_2(A)$ sends $[S^3]$ to $([T_0^2], -[T_1^2])$, which is a primitive vector in $H_2(A) \cong \ZZ^2$.
 
 ::: pf-proof
 orientation of the boundary $\partial N$.
@@ -153,16 +153,16 @@ orientation of the boundary $\partial N$.
 :::
 
 ::: {.pf-step #coker-boundary3}
-Thus $\operatorname{coker}(\partial_3) \cong \mathbb{Z}^2 / \mathbb{Z} \cong \mathbb{Z}$.
+Thus $\operatorname{coker}(\partial_3) \cong \ZZ^2 / \ZZ \cong \ZZ$.
 
 ::: pf-proof
-quotient of $\mathbb{Z}^2$ by a rank-1 primitive submodule.
+quotient of $\ZZ^2$ by a rank-1 primitive submodule.
 :::
 
 :::
 
 ::: pf-step
-By exactness, $H_2(X) \oplus \mathbb{Z} \cong \operatorname{coker}(\partial_3) \cong \mathbb{Z}$, which implies $H_2(X) \cong 0$.
+By exactness, $H_2(X) \oplus \ZZ \cong \operatorname{coker}(\partial_3) \cong \ZZ$, which implies $H_2(X) \cong 0$.
 
 ::: pf-proof
 Steps [](#degree3-sequence){.pf-ref} and [](#coker-boundary3){.pf-ref}.
@@ -192,7 +192,7 @@ Mayer–Vietoris exactness.
 :::
 
 ::: pf-step
-Thus $H_1(X) \oplus H_1(N) \cong H_1(A) \cong \mathbb{Z}^4$.
+Thus $H_1(X) \oplus H_1(N) \cong H_1(A) \cong \ZZ^4$.
 
 ::: pf-proof
 Steps [](#degree1-iso){.pf-ref} and [](#mv-setup){.pf-ref}.
@@ -201,7 +201,7 @@ Steps [](#degree1-iso){.pf-ref} and [](#mv-setup){.pf-ref}.
 :::
 
 ::: pf-step
-Since $H_1(N) \cong \mathbb{Z}^2$ is a free abelian group of rank 2, $H_1(X) \cong \mathbb{Z}^4 / \mathbb{Z}^2 \cong \mathbb{Z}^2$.
+Since $H_1(N) \cong \ZZ^2$ is a free abelian group of rank 2, $H_1(X) \cong \ZZ^4 / \ZZ^2 \cong \ZZ^2$.
 
 ::: pf-proof
 classification of finitely generated free abelian groups.
@@ -216,9 +216,9 @@ classification of finitely generated free abelian groups.
 ::: pf-qed
 Conclusion:
 \[
-H_k(X; \mathbb{Z}) \cong \begin{cases}
-\mathbb{Z}^2 & k = 0, \\
-\mathbb{Z}^2 & k = 1, \\
+H_k(X; \ZZ) \cong \begin{cases}
+\ZZ^2 & k = 0, \\
+\ZZ^2 & k = 1, \\
 0 & k \ge 2.
 \end{cases}
 \]

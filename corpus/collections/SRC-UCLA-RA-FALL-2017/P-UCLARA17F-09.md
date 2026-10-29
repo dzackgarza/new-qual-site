@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-09
 kind: problem
-title: Holomorphic families of injective maps of $\mathbb C$ are affine
+title: Holomorphic families of injective maps of $\CC$ are affine
 classification:
   areas:
   - real-analysis
@@ -17,17 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Consider a map $F:\mathbb C\times\mathbb C\to\mathbb C$ with the following properties:
+Problem 9. Consider a map $F:\CC\times\CC\to\CC$ with the following properties:
 
-1. For each fixed $z\in\mathbb C$, the map $w\mapsto F(z,w)$ is injective.
-2. For each fixed $w\in\mathbb C$, the map $z\mapsto F(z,w)$ is holomorphic.
-3. $F(0,w)=w$ for $w\in\mathbb C$.
+1. For each fixed $z\in\CC$, the map $w\mapsto F(z,w)$ is injective.
+2. For each fixed $w\in\CC$, the map $z\mapsto F(z,w)$ is holomorphic.
+3. $F(0,w)=w$ for $w\in\CC$.
 
 Show that
 \[
 F(z,w)=a(z)w+b(z)
 \]
-for $z,w\in\mathbb C$, where $a$ and $b$ are entire functions with $a(0)=1$, $b(0)=0$, and $a(z)\ne0$ for $z\in\mathbb C$.
+for $z,w\in\CC$, where $a$ and $b$ are entire functions with $a(0)=1$, $b(0)=0$, and $a(z)\ne0$ for $z\in\CC$.
 
 Hint: Consider
 \[
@@ -48,7 +48,7 @@ G(z,w)
 
 ::: {.pf-step #s1}
 
-The function $G$ is well-defined on $\mathbb C\times\mathbb C$, and for each fixed $w\in\mathbb C$ the map $z\mapsto G(z,w)$ is entire.
+The function $G$ is well-defined on $\CC\times\CC$, and for each fixed $w\in\CC$ the map $z\mapsto G(z,w)$ is entire.
 
 
 ::: pf-proof
@@ -56,7 +56,7 @@ The function $G$ is well-defined on $\mathbb C\times\mathbb C$, and for each fix
 For each fixed $z$, the map $w\mapsto F(z,w)$ is injective. Since $0\ne1$, this gives
 \[
 F(z,1)-F(z,0)\ne0
-\qquad (z\in\mathbb C).
+\qquad (z\in\CC).
 \]
 For fixed $w$, both the numerator and denominator in the definition of $G(z,w)$ are entire functions of $z$, and the denominator has no zeros. Hence $z\mapsto G(z,w)$ is entire.
 
@@ -66,7 +66,7 @@ For fixed $w$, both the numerator and denominator in the definition of $G(z,w)$ 
 
 ::: {.pf-step #s2}
 
-For all $z,w\in\mathbb C$,
+For all $z,w\in\CC$,
 \[
 G(z,w)=w.
 \]
@@ -76,13 +76,13 @@ G(z,w)=w.
 
 ::: {.pf-step #s2-1}
 
-For all $z\in\mathbb C$,
+For all $z\in\CC$,
 \[
 G(z,0)=0,
 \qquad
 G(z,1)=1,
 \]
-and for all $w\in\mathbb C$,
+and for all $w\in\CC$,
 \[
 G(0,w)=w.
 \]
@@ -125,7 +125,7 @@ hence $F(z,w)=F(z,1)$, and injectivity gives $w=1$, again a contradiction.
 
 ::: {.pf-step #s2-3}
 
-If $w\notin\{0,1\}$, then $G(z,w)=w$ for every $z\in\mathbb C$.
+If $w\notin\{0,1\}$, then $G(z,w)=w$ for every $z\in\CC$.
 
 
 ::: pf-proof
@@ -160,12 +160,12 @@ a(0)=1,
 \qquad
 b(0)=0,
 \qquad
-a(z)\ne0\quad(z\in\mathbb C),
+a(z)\ne0\quad(z\in\CC),
 \]
 and
 \[
 \boxed{F(z,w)=a(z)w+b(z)}
-\qquad (z,w\in\mathbb C).
+\qquad (z,w\in\CC).
 \]
 
 

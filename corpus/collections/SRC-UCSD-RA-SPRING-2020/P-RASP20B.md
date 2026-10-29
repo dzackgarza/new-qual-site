@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-(1) Let $f \in L^\infty(\mathbb{R})$ and $g \in L^1(\mathbb{R})$.
-Assume that $f$ is continuous at $x = 1$ with $f(1) = \pi$ and that $g \geq 0$ on $\mathbb{R}$ and $\|g\|_{L^1(\mathbb{R})} = 2$.
+(1) Let $f \in L^\infty(\RR)$ and $g \in L^1(\RR)$.
+Assume that $f$ is continuous at $x = 1$ with $f(1) = \pi$ and that $g \geq 0$ on $\RR$ and $\|g\|_{L^1(\RR)} = 2$.
 Calculate
 $$
 \lim_{k \to +\infty} \int_{[-k,k]} f\!\left(1 + \frac{x^2}{k}\right) g(x)\,dm(x).
@@ -34,7 +34,7 @@ $$
 (2) Let $\mu$ be the Lebesgue-Stieltjes measure associated to $F(x) = \begin{cases} 0 & x < 0, \\ x+2 & 0 \leq x < 1, \\ 4x^2 & 1 \leq x < \infty. \end{cases}$ Calculate $\mu((-\infty, 0])$, $\mu(\{1\})$, and $\mu([1,2])$.
 
 (3) Let $E$ be a Lebesgue-measurable subset of $[0,1]$ with $m(E) = 1/2$.
-Let $u_k \in \mathbb{R}$ ($k = 1, 2, \ldots$). Calculate
+Let $u_k \in \RR$ ($k = 1, 2, \ldots$). Calculate
 $$
 \lim_{k \to \infty} \int_E \cos^2(k\pi x + u_k)\,dm(x).
 $$
@@ -50,7 +50,7 @@ Compute the convolution-type limit.
 
 ::: pf-proof
 
-For fixed \(x\in\mathbb R\), eventually \(|x|\le k\), and
+For fixed \(x\in\RR\), eventually \(|x|\le k\), and
 \[
 1+\frac{x^2}{k}\longrightarrow1.
 \]
@@ -66,7 +66,7 @@ Moreover,
 and the right side is integrable. Dominated convergence therefore gives
 \[
 \lim_{k\to\infty}\int_{[-k,k]}f\!\left(1+\frac{x^2}{k}\right)g(x)\,dx
-=\pi\int_\mathbb R g(x)\,dx.
+=\pi\int_\RR g(x)\,dx.
 \]
 Since \(g\ge0\) and \(\|g\|_1=2\),
 \[

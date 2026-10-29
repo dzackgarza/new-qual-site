@@ -74,7 +74,7 @@ $$
 $$
 Refining if necessary, for each
 $$
-x\in\mathbb R
+x\in\RR
 $$
 choose a basic interval
 $$
@@ -89,7 +89,7 @@ Define
 $$
 V
 \coloneqq
-\bigcup_{x\in\mathbb R}
+\bigcup_{x\in\RR}
 (x,b_x),
 $$
 where the intervals on the right are ordinary Euclidean-open intervals. The set
@@ -100,7 +100,7 @@ is Euclidean open, hence Lindelöf in the usual topology. Therefore the Euclidea
 $$
 \{
 (x,b_x):
-x\in\mathbb R
+x\in\RR
 \}
 $$
 of $V$ has a countable subcover
@@ -114,7 +114,7 @@ Let
 $$
 D
 \coloneqq
-\mathbb R\setminus V.
+\RR\setminus V.
 $$
 If
 $$
@@ -148,7 +148,7 @@ x\longmapsto q_x
 $$
 injective into
 $$
-\mathbb Q,
+\QQ,
 $$
 so
 $$
@@ -195,7 +195,7 @@ A
 \coloneqq
 \{
 (x,-x):
-x\in\mathbb R
+x\in\RR
 \}
 $$
 is a closed discrete subspace of
@@ -208,7 +208,7 @@ $$
 
 For discreteness, fix
 $$
-x\in\mathbb R.
+x\in\RR.
 $$
 Then
 $$

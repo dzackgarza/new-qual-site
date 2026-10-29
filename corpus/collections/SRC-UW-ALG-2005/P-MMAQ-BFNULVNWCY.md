@@ -18,11 +18,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the polynomial $f(x)=x^{10}+x^5+1\in\mathbb Q[x]$ with splitting field $K$ over $\mathbb Q$.
+Consider the polynomial $f(x)=x^{10}+x^5+1\in\QQ[x]$ with splitting field $K$ over $\QQ$.
 
-- Determine whether $f(x)$ is irreducible over $\mathbb Q$ and find $[K:\mathbb Q]$.
+- Determine whether $f(x)$ is irreducible over $\QQ$ and find $[K:\QQ]$.
 
-- Determine the structure of the Galois group $\Gal(K/\mathbb Q)$.
+- Determine the structure of the Galois group $\Gal(K/\QQ)$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ Consider the polynomial $f(x)=x^{10}+x^5+1\in\mathbb Q[x]$ with splitting field 
 
 ::: {.pf-step #s1}
 
-The polynomial $f$ is reducible over $\mathbb Q$.
+The polynomial $f$ is reducible over $\QQ$.
 
 ::: pf-proof
 
@@ -56,7 +56,7 @@ we obtain
 \[
 f(x)=\Phi_3(x)\Phi_{15}(x).
 \]
-Both factors have positive degree, namely $2$ and $8$, so $f$ is reducible over $\mathbb Q$.
+Both factors have positive degree, namely $2$ and $8$, so $f$ is reducible over $\QQ$.
 
 :::
 
@@ -82,12 +82,12 @@ a complex number $\alpha$ is a root of $f$ precisely when $\alpha^{15}=1$ but $\
 
 If $\zeta_{15}$ is a primitive $15$th root of unity, then
 \[
-K=\mathbb Q(\zeta_{15}).
+K=\QQ(\zeta_{15}).
 \]
 
 ::: pf-proof
 
-The polynomial $f$ has primitive $15$th roots among its roots, so its splitting field contains $\zeta_{15}$. Conversely, $\mathbb Q(\zeta_{15})$ contains every $15$th root of unity, hence contains all roots of $f$ described in step [](#s2){.pf-ref}. Therefore it is exactly the splitting field.
+The polynomial $f$ has primitive $15$th roots among its roots, so its splitting field contains $\zeta_{15}$. Conversely, $\QQ(\zeta_{15})$ contains every $15$th root of unity, hence contains all roots of $f$ described in step [](#s2){.pf-ref}. Therefore it is exactly the splitting field.
 
 :::
 
@@ -97,12 +97,12 @@ The polynomial $f$ has primitive $15$th roots among its roots, so its splitting 
 
 The degree of the splitting field is
 \[
-[K:\mathbb Q]=\varphi(15)=8.
+[K:\QQ]=\varphi(15)=8.
 \]
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $K=\mathbb Q(\zeta_{15})$. The degree of the $15$th cyclotomic extension is the degree of $\Phi_{15}$, namely Euler's totient
+By step [](#s3){.pf-ref}, $K=\QQ(\zeta_{15})$. The degree of the $15$th cyclotomic extension is the degree of $\Phi_{15}$, namely Euler's totient
 \[
 \varphi(15)=15\left(1-\frac13\right)\left(1-\frac15\right)=8.
 \]
@@ -115,26 +115,26 @@ By step [](#s3){.pf-ref}, $K=\mathbb Q(\zeta_{15})$. The degree of the $15$th cy
 
 The Galois group is
 \[
-\operatorname{Gal}(K/\mathbb Q)
-\cong (\mathbb Z/15\mathbb Z)^\times
+\operatorname{Gal}(K/\QQ)
+\cong (\ZZ/15\ZZ)^\times
 \cong C_2\times C_4.
 \]
 
 ::: pf-proof
 
-Every automorphism of the cyclotomic field $\mathbb Q(\zeta_{15})$ is determined by
+Every automorphism of the cyclotomic field $\QQ(\zeta_{15})$ is determined by
 \[
 \zeta_{15}\longmapsto \zeta_{15}^a
 \]
-for a unique $a\in(\mathbb Z/15\mathbb Z)^\times$, and every such $a$ defines an automorphism. Hence
+for a unique $a\in(\ZZ/15\ZZ)^\times$, and every such $a$ defines an automorphism. Hence
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong(\mathbb Z/15\mathbb Z)^\times.
+\operatorname{Gal}(K/\QQ)\cong(\ZZ/15\ZZ)^\times.
 \]
 By the Chinese remainder theorem,
 \[
-(\mathbb Z/15\mathbb Z)^\times
+(\ZZ/15\ZZ)^\times
 \cong
-(\mathbb Z/3\mathbb Z)^\times\times(\mathbb Z/5\mathbb Z)^\times.
+(\ZZ/3\ZZ)^\times\times(\ZZ/5\ZZ)^\times.
 \]
 The first factor is cyclic of order $2$, and the second is cyclic of order $4$. Thus the group is $C_2\times C_4$.
 

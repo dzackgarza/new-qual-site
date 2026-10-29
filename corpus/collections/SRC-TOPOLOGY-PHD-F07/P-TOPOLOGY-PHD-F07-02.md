@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Define what it means for $(X,d)$ to be a metric space.
-Then $d:X\times X\to\mathbb R$: is $d$ continuous?
+Then $d:X\times X\to\RR$: is $d$ continuous?
 Discuss.
-If you cannot answer in general do it for $X=\mathbb R$ with the usual topology.
+If you cannot answer in general do it for $X=\RR$ with the usual topology.
 :::
 
 ::: {.solution}
@@ -88,7 +88,7 @@ Combining these two inequalities yields the claimed absolute-value estimate.
 ::: {.pf-step #metric-continuous}
 The function
 \[
-d:X\times X\longrightarrow\mathbb R
+d:X\times X\longrightarrow\RR
 \]
 is continuous for the product topology on $X\times X$.
 
@@ -121,7 +121,7 @@ This is continuity of $d$ at $(x,y)$, and the point was arbitrary.
 :::
 
 ::: pf-step
-Hence the answer is yes for every metric space, not merely for $X=\mathbb R$.
+Hence the answer is yes for every metric space, not merely for $X=\RR$.
 
 ::: pf-proof
 This is exactly step [](#metric-continuous){.pf-ref}.

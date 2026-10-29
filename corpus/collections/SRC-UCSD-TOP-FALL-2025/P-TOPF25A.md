@@ -18,8 +18,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be the result, shown below, of "sandwiching" a standard 2-torus between two infinite horizontal planes in $\mathbb{R}^3$, so that each plane is tangent to the torus along a circle.
-Compute the integer homology groups $H_*(X; \mathbb{Z})$.
+Let $X$ be the result, shown below, of "sandwiching" a standard 2-torus between two infinite horizontal planes in $\RR^3$, so that each plane is tangent to the torus along a circle.
+Compute the integer homology groups $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}

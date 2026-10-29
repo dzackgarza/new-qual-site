@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-003
 kind: problem
-title: Ideals of $\mathbb Z/90\mathbb Z$
+title: Ideals of $\ZZ/90\ZZ$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] How many ideals does the ring $\mathbb Z/90\mathbb Z$ have?
+[NEW] How many ideals does the ring $\ZZ/90\ZZ$ have?
 Explain your answer.
 :::
 

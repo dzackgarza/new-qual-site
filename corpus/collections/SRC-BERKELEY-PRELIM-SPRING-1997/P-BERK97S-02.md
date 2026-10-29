@@ -26,7 +26,7 @@ Let $(M,d)$ be a metric space and let $C\subset M$ be nonempty and closed. Defin
 \[
 f(x)=\inf\{d(x,y):y\in C\}.
 \]
-Show that $f:M\to\mathbb R$ is continuous and that
+Show that $f:M\to\RR$ is continuous and that
 \[
 f(x)=0\iff x\in C.
 \]

@@ -42,12 +42,12 @@ definition of $X$.
 ::: pf-step
 By the Seifert–van Kampen theorem / cellular presentation of fundamental groups:
 \[
-\pi_1(X) \cong \langle a \mid a^{n_1} = 1, \dots, a^{n_k} = 1 \rangle \cong \mathbb{Z}/d\mathbb{Z},
+\pi_1(X) \cong \langle a \mid a^{n_1} = 1, \dots, a^{n_k} = 1 \rangle \cong \ZZ/d\ZZ,
 \]
 where $d = \gcd(n_1, \dots, n_k)$ (with the convention $\gcd(0, \dots, 0) = 0$).
 
 ::: pf-proof
-the ideal $\sum n_i \mathbb{Z} = d\mathbb{Z}$ in $\mathbb{Z}$.
+the ideal $\sum n_i \ZZ = d\ZZ$ in $\ZZ$.
 :::
 
 :::
@@ -82,7 +82,7 @@ definition of universal cover.
 ::: pf-step
 By the Hurewicz Theorem applied to $\widetilde{X}$:
 \[
-\pi_2(X) \cong \pi_2(\widetilde{X}) \cong H_2(\widetilde{X}; \mathbb{Z}).
+\pi_2(X) \cong \pi_2(\widetilde{X}) \cong H_2(\widetilde{X}; \ZZ).
 \]
 
 ::: pf-proof
@@ -110,19 +110,19 @@ degree 0 attaching maps contract the boundary of each $D^2$ to the basepoint.
 :::
 
 ::: pf-step
-The universal cover $\widetilde{X}$ is the real line $\mathbb{R}$ with $k$ 2-spheres wedged at each integer point $m \in \mathbb{Z}$: $\widetilde{X} \simeq \bigvee_{m \in \mathbb{Z}} \bigvee_{j=1}^k S^2$.
+The universal cover $\widetilde{X}$ is the real line $\RR$ with $k$ 2-spheres wedged at each integer point $m \in \ZZ$: $\widetilde{X} \simeq \bigvee_{m \in \ZZ} \bigvee_{j=1}^k S^2$.
 
 ::: pf-proof
-universal cover of $S^1 \vee \bigvee S^2$ unwraps $S^1$ to $\mathbb{R}$.
+universal cover of $S^1 \vee \bigvee S^2$ unwraps $S^1$ to $\RR$.
 :::
 
 :::
 
 ::: pf-step
-Thus $\pi_2(X) \cong H_2(\widetilde{X}; \mathbb{Z}) \cong \bigoplus_{m \in \mathbb{Z}} \mathbb{Z}^k \cong \mathbb{Z}[\mathbb{Z}]^k$.
+Thus $\pi_2(X) \cong H_2(\widetilde{X}; \ZZ) \cong \bigoplus_{m \in \ZZ} \ZZ^k \cong \ZZ[\ZZ]^k$.
 
 ::: pf-proof
-homology of a bouquet of 2-spheres indexed by $\mathbb{Z} \times \{1, \dots, k\}$.
+homology of a bouquet of 2-spheres indexed by $\ZZ \times \{1, \dots, k\}$.
 :::
 
 :::
@@ -137,7 +137,7 @@ homology of a bouquet of 2-spheres indexed by $\mathbb{Z} \times \{1, \dots, k\}
 ::: pf-proof
 
 ::: pf-step
-$\pi_1(X) \cong \mathbb{Z}/d\mathbb{Z}$ is finite of order $d$, so $\widetilde{X}$ is a $d$-sheeted covering space.
+$\pi_1(X) \cong \ZZ/d\ZZ$ is finite of order $d$, so $\widetilde{X}$ is a $d$-sheeted covering space.
 
 ::: pf-proof
 index $[\pi_1(X) : 1] = d$.
@@ -164,7 +164,7 @@ covering homotopy property for the attaching map $S^1 \xrightarrow{n_j} S^1$ lif
 :::
 
 ::: pf-step
-Thus $\widetilde{X}$ has $kd$ 2-cells, and the cellular boundary map $d_2: C_2(\widetilde{X}) \to H_1(\widetilde{S}^1) \cong \mathbb{Z}$ sends each lifted cell of the $j$-th family to $n_j / d \in \mathbb{Z}$.
+Thus $\widetilde{X}$ has $kd$ 2-cells, and the cellular boundary map $d_2: C_2(\widetilde{X}) \to H_1(\widetilde{S}^1) \cong \ZZ$ sends each lifted cell of the $j$-th family to $n_j / d \in \ZZ$.
 
 ::: pf-proof
 cellular boundary formula for attaching maps into a circle.
@@ -173,7 +173,7 @@ cellular boundary formula for attaching maps into a circle.
 :::
 
 ::: pf-step
-Since $\gcd\left(\frac{n_1}{d}, \dots, \frac{n_k}{d}\right) = 1$, the image of $d_2$ is $\mathbb{Z}$, so $d_2: \mathbb{Z}^{kd} \to \mathbb{Z}$ is surjective.
+Since $\gcd\left(\frac{n_1}{d}, \dots, \frac{n_k}{d}\right) = 1$, the image of $d_2$ is $\ZZ$, so $d_2: \ZZ^{kd} \to \ZZ$ is surjective.
 
 ::: pf-proof
 Bézout's identity on coprime integers.
@@ -182,16 +182,16 @@ Bézout's identity on coprime integers.
 :::
 
 ::: {.pf-step #s4-6}
-Since $C_3(\widetilde{X}) = 0$, $H_2(\widetilde{X}; \mathbb{Z}) = \ker(d_2) \cong \mathbb{Z}^{kd - 1}$.
+Since $C_3(\widetilde{X}) = 0$, $H_2(\widetilde{X}; \ZZ) = \ker(d_2) \cong \ZZ^{kd - 1}$.
 
 ::: pf-proof
-kernel of a surjective homomorphism from $\mathbb{Z}^{kd}$ to $\mathbb{Z}$ is a free abelian group of rank $kd - 1$.
+kernel of a surjective homomorphism from $\ZZ^{kd}$ to $\ZZ$ is a free abelian group of rank $kd - 1$.
 :::
 
 :::
 
 ::: pf-step
-Thus $\pi_2(X) \cong \mathbb{Z}^{kd - 1}$.
+Thus $\pi_2(X) \cong \ZZ^{kd - 1}$.
 
 ::: pf-proof
 step [](#s2){.pf-ref} and step [](#s4-6){.pf-ref}.
@@ -207,8 +207,8 @@ step [](#s2){.pf-ref} and step [](#s4-6){.pf-ref}.
 Conclusion:
 \[
 \pi_2(X) \cong \begin{cases}
-\bigoplus_{m \in \mathbb{Z}} \mathbb{Z}^k & \text{if } \gcd(n_1, \dots, n_k) = 0, \\
-\mathbb{Z}^{k \gcd(n_1, \dots, n_k) - 1} & \text{if } \gcd(n_1, \dots, n_k) > 0.
+\bigoplus_{m \in \ZZ} \ZZ^k & \text{if } \gcd(n_1, \dots, n_k) = 0, \\
+\ZZ^{k \gcd(n_1, \dots, n_k) - 1} & \text{if } \gcd(n_1, \dots, n_k) > 0.
 \end{cases}
 \]
 

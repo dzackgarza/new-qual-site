@@ -33,7 +33,7 @@ Prove that every contraction has a fixed point.
 
 ::: pf-step
 
-Using step [](#p1-s1){.pf-ref}, show that if $f\colon\mathbb R\to\mathbb R$ is differentiable and
+Using step [](#p1-s1){.pf-ref}, show that if $f\colon\RR\to\RR$ is differentiable and
 
 :::
 
@@ -42,7 +42,7 @@ Using step [](#p1-s1){.pf-ref}, show that if $f\colon\mathbb R\to\mathbb R$ is d
 \[
 f'(x)=e^{-x^2}-e^{-x^4},
 \]
-then there exists $\alpha\in\mathbb R$ such that $f(\alpha)=\alpha$.
+then there exists $\alpha\in\RR$ such that $f(\alpha)=\alpha$.
 :::
 
 ::: {.solution}
@@ -163,7 +163,7 @@ satisfies
 \[
 |g(x)|<1
 \]
-for every $x\in\mathbb R$, and
+for every $x\in\RR$, and
 \[
 g(x)\to0
 \]
@@ -193,7 +193,7 @@ such that
 \[
 |f'(x)|\le\lambda
 \]
-for every $x\in\mathbb R$.
+for every $x\in\RR$.
 
 ::: pf-proof
 
@@ -213,7 +213,7 @@ Then $0<\lambda<1$ and
 \[
 |f'(x)|=|g(x)|\le\lambda
 \]
-for every $x\in\mathbb R$.
+for every $x\in\RR$.
 
 :::
 
@@ -223,7 +223,7 @@ for every $x\in\mathbb R$.
 
 The map
 \[
-f:\mathbb R\to\mathbb R
+f:\RR\to\RR
 \]
 is a contraction.
 
@@ -247,7 +247,7 @@ The same inequality is trivial when $x=y$.
 
 ::: {.pf-step #p2-s8}
 
-There exists $\alpha\in\mathbb R$ such that
+There exists $\alpha\in\RR$ such that
 \[
 \boxed{f(\alpha)=\alpha}.
 \]

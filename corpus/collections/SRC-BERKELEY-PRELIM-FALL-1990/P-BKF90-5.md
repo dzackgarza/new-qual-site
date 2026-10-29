@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a real symmetric positive-definite $n\times n$ matrix and let $0\ne y\in\mathbb R^n$.
+Let $A$ be a real symmetric positive-definite $n\times n$ matrix and let $0\ne y\in\RR^n$.
 Prove that
 \[
 \lim_{m\to\infty}\frac{y^TA^{m+1}y}{y^TA^my}

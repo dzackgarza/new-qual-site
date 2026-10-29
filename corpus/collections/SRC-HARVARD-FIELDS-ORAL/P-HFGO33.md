@@ -32,7 +32,7 @@ root of unity $\zeta_n$, one considers
 \[
 F(\zeta_n)/F.
 \]
-When $F=\mathbb Q$, the field $\mathbb Q(\zeta_n)$ is called the $n$th
+When $F=\QQ$, the field $\QQ(\zeta_n)$ is called the $n$th
 cyclotomic field.
 
 Equivalently, when $\operatorname{char}F\nmid n$, $F(\zeta_n)$ is the splitting

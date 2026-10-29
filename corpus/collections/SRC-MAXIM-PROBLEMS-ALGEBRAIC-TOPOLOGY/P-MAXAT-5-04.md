@@ -23,7 +23,7 @@ Construct an orientable sphere bundle with zero Euler class, but no section.
 
 Take an oriented rank-$3$ real vector bundle over $S^4$ representing the nonzero element of
 \[
-\pi_3(SO(3))\cong\mathbb Z,
+\pi_3(SO(3))\cong\ZZ,
 \]
 and let its unit-sphere bundle be
 \[
@@ -36,7 +36,7 @@ S^2\longrightarrow S(\xi)\longrightarrow S^4.
 
 Oriented rank-$3$ vector bundles over $S^4$ are classified by
 \[
-\pi_3(SO(3))\cong\mathbb Z.
+\pi_3(SO(3))\cong\ZZ.
 \]
 
 
@@ -50,7 +50,7 @@ An oriented rank-$3$ bundle is trivial over each hemisphere and is determined by
 \[
 g:S^3\to SO(3).
 \]
-Changing trivializations changes $g$ by homotopy, so isomorphism classes are $[S^3,SO(3)]=\pi_3(SO(3))$. The universal double cover $S^3\to SO(3)$ induces an isomorphism on $\pi_3$, hence this group is $\mathbb Z$.
+Changing trivializations changes $g$ by homotopy, so isomorphism classes are $[S^3,SO(3)]=\pi_3(SO(3))$. The universal double cover $S^3\to SO(3)$ induces an isomorphism on $\pi_3$, hence this group is $\ZZ$.
 
 :::
 
@@ -85,11 +85,11 @@ e(\xi)=0.
 
 For an oriented rank-$3$ bundle,
 \[
-e(\xi)\in H^3(S^4;\mathbb Z).
+e(\xi)\in H^3(S^4;\ZZ).
 \]
 But
 \[
-H^3(S^4;\mathbb Z)=0,
+H^3(S^4;\ZZ)=0,
 \]
 so the Euler class must vanish.
 
@@ -137,9 +137,9 @@ Every oriented rank-$2$ bundle over $S^4$ is trivial.
 Oriented rank-$2$ bundles are classified by
 \[
 [S^4,BSO(2)]
-\cong H^2(S^4;\mathbb Z),
+\cong H^2(S^4;\ZZ),
 \]
-since $BSO(2)=BS^1\simeq\mathbb{CP}^{\infty}=K(\mathbb Z,2)$. But $H^2(S^4;\mathbb Z)=0$. Equivalently, their clutching group is
+since $BSO(2)=BS^1\simeq\mathbb{CP}^{\infty}=K(\ZZ,2)$. But $H^2(S^4;\ZZ)=0$. Equivalently, their clutching group is
 \[
 \pi_3(SO(2))=\pi_3(S^1)=0.
 \]

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X,\mathcal M,\mu)$ be a measure space and let $f_n:X\to\mathbb R$ be measurable.
+Let $(X,\mathcal M,\mu)$ be a measure space and let $f_n:X\to\RR$ be measurable.
 
 (a) Define $f_n\to0$ in $L^1$ and define $f_n\to0$ in measure.
 

@@ -29,15 +29,15 @@ A subset $D\subseteq X$ is called dense if $\overline D=X$.
 
 Take
 \[
-X=\mathbb R
+X=\RR
 \]
 with its usual topology,
 \[
-D=\mathbb Q,
+D=\QQ,
 \]
 and
 \[
-A=\mathbb R\setminus\mathbb Q.
+A=\RR\setminus\QQ.
 \]
 
 
@@ -51,15 +51,15 @@ This specifies a concrete example.
 
 ::: {.pf-step #s1-2}
 
-The set \(D=\mathbb Q\) is dense in \(\mathbb R\).
+The set \(D=\QQ\) is dense in \(\RR\).
 
 
 ::: pf-proof
 
-Every nonempty open interval in \(\mathbb R\) contains a rational number.
+Every nonempty open interval in \(\RR\) contains a rational number.
 Equivalently,
 \[
-\overline{\mathbb Q}=\mathbb R.
+\overline{\QQ}=\RR.
 \]
 
 :::

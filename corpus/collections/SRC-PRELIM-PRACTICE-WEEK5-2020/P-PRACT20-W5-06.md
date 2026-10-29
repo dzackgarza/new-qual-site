@@ -28,11 +28,11 @@ Up to isomorphism, how many abelian groups $G$ have order $16$ and satisfy $x + 
 
 Up to isomorphism, the abelian groups of order $16=2^4$ are
 \[
-\mathbb Z_{16},\qquad
-\mathbb Z_8\times\mathbb Z_2,\qquad
-\mathbb Z_4\times\mathbb Z_4,\qquad
-\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_2,\qquad
-\mathbb Z_2^4.
+\ZZ_{16},\qquad
+\ZZ_8\times\ZZ_2,\qquad
+\ZZ_4\times\ZZ_4,\qquad
+\ZZ_4\times\ZZ_2\times\ZZ_2,\qquad
+\ZZ_2^4.
 \]
 
 
@@ -78,17 +78,17 @@ $4$.
 
 Of the five groups in step [](#s1-1){.pf-ref}, exactly
 \[
-\mathbb Z_4\times\mathbb Z_4,\qquad
-\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_2,\qquad
-\mathbb Z_2^4
+\ZZ_4\times\ZZ_4,\qquad
+\ZZ_4\times\ZZ_2\times\ZZ_2,\qquad
+\ZZ_2^4
 \]
 satisfy the required condition.
 
 
 ::: pf-proof
 
-The groups $\mathbb Z_{16}$ and
-$\mathbb Z_8\times\mathbb Z_2$ contain elements of order $16$ and $8$,
+The groups $\ZZ_{16}$ and
+$\ZZ_8\times\ZZ_2$ contain elements of order $16$ and $8$,
 respectively, so they fail the condition in step [](#s1-2){.pf-ref}.
 
 Every element in each of the remaining three groups has every coordinate of

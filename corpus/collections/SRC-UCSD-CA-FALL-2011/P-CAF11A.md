@@ -19,15 +19,15 @@ If false, give a counterexample.
 
 (a) The infinite product $\prod_{n=1}^{\infty}\left(1 + \frac{i}{n}\right)$ converges absolutely.
 
-(b) Let $G = \mathbb{C} \setminus (\mathbb{R} \cap \mathbb{Z})$.
+(b) Let $G = \CC \setminus (\RR \cap \ZZ)$.
 Suppose $f \in H(G)$ such that $|f(z)| \leq 1$ for all $z \in G$.
 Then $f$ is constant.
 
-(c) There exists a function $f$ analytic in $B(1; 2) \setminus \{1\}$ such that $$\lim_{z \to 1} (z-1)^k f(z) = \infty, \quad \forall k \in \mathbb{Z},\; k \geq 1.$$
+(c) There exists a function $f$ analytic in $B(1; 2) \setminus \{1\}$ such that $$\lim_{z \to 1} (z-1)^k f(z) = \infty, \quad \forall k \in \ZZ,\; k \geq 1.$$
 
-(d) There exists an entire function $f$ for which $\lim_{|z| \to \infty} \left|\frac{f(z)}{z^k}\right|$ does not exist for any positive $k \in \mathbb{Z}$.
+(d) There exists an entire function $f$ for which $\lim_{|z| \to \infty} \left|\frac{f(z)}{z^k}\right|$ does not exist for any positive $k \in \ZZ$.
 
-(e) Let $f$ be an analytic function defined in a simply connected bounded domain $G \subset \mathbb{C}$ with $i \in G$.
+(e) Let $f$ be an analytic function defined in a simply connected bounded domain $G \subset \CC$ with $i \in G$.
 If $f(G) \subset G$ and $f(i) = i$, then $|f'(i)| \leq 1$.
 :::
 
@@ -42,7 +42,7 @@ diverges, so the product is not absolutely convergent.
 
 **(b) True.** The omitted points are the integers. Since $f$ is bounded near
 each integer, every singularity there is removable. Thus $f$ extends to a
-bounded entire function on $\mathbb C$, and Liouville's theorem makes it
+bounded entire function on $\CC$, and Liouville's theorem makes it
 constant.
 
 **(c) False.** Suppose such an $f$ existed. The condition with $k=1$ implies

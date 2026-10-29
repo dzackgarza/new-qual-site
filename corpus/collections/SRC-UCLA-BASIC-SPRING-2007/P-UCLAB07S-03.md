@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $\mathcal S$ be the vector space of real sequences $(a_0,a_1,a_2,\ldots)$.
-For fixed $A,B\in\mathbb R$, prove that the set of sequences satisfying
+For fixed $A,B\in\RR$, prove that the set of sequences satisfying
 \[
 x_{n+2}=Ax_{n+1}+Bx_n\qquad(n\ge0)
 \]
@@ -137,7 +137,7 @@ x=(x_n)\in W
 \]
 and
 \[
-c\in\mathbb R.
+c\in\RR.
 \]
 Then
 \[
@@ -183,7 +183,7 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify that $W$ contains zer
 
 Define
 \[
-\Phi:W\to\mathbb R^2
+\Phi:W\to\RR^2
 \]
 by
 \[
@@ -268,7 +268,7 @@ The map $\Phi$ is surjective.
 
 Let
 \[
-(u,v)\in\mathbb R^2.
+(u,v)\in\RR^2.
 \]
 Define a sequence recursively by
 \[
@@ -294,7 +294,7 @@ belonging to $W$ and satisfying
 \[
 \Phi(x)=(u,v).
 \]
-Hence every element of $\mathbb R^2$ lies in the image.
+Hence every element of $\RR^2$ lies in the image.
 
 :::
 
@@ -304,7 +304,7 @@ Hence every element of $\mathbb R^2$ lies in the image.
 
 Therefore
 \[
-W\cong\mathbb R^2.
+W\cong\RR^2.
 \]
 
 
@@ -330,7 +330,7 @@ Consequently
 Isomorphic finite-dimensional vector spaces have the same dimension.
 Since
 \[
-\dim\mathbb R^2=2,
+\dim\RR^2=2,
 \]
 step [](#s1-8){.pf-ref} gives
 \[

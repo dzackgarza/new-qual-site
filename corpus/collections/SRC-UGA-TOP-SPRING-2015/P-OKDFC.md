@@ -53,13 +53,13 @@ Part (a): Second countable implies separable.
 ::: pf-proof
 
 ::: pf-step
-Let $\mathcal{B} = \{B_n:n\in J\}$ be a countable basis for the topology of $X$, where $J\subseteq\mathbb N$.
+Let $\mathcal{B} = \{B_n:n\in J\}$ be a countable basis for the topology of $X$, where $J\subseteq\NN$.
 For each non-empty basis element $B_n \in \mathcal{B}$, choose an element $x_n \in B_n$.
 Define the set:
 \[
 D = \{x_n \mid n\in J,\ B_n \neq \emptyset\}.
 \]
-The set $D$ is the image of a subset of $J\subseteq\mathbb N$ under the map $n\mapsto x_n$, so $D$ is at most countable.
+The set $D$ is the image of a subset of $J\subseteq\NN$ under the map $n\mapsto x_n$, so $D$ is at most countable.
 
 :::
 
@@ -86,19 +86,19 @@ Part (b): Separable metric space implies second countable.
 ::: pf-proof
 
 ::: pf-step
-Let $(X, d)$ be a metric space containing a countable dense subset $D = \{d_n:n\in J\}$, where $J\subseteq\mathbb N$.
+Let $(X, d)$ be a metric space containing a countable dense subset $D = \{d_n:n\in J\}$, where $J\subseteq\NN$.
 Consider the collection of open balls with centers in $D$ and rational radii:
 \[
-\mathcal{B} = \{ B(d_n, r) \mid n\in J, \, r \in \mathbb{Q}_{>0} \}.
+\mathcal{B} = \{ B(d_n, r) \mid n\in J, \, r \in \QQ_{>0} \}.
 \]
-As the image of the countable set $J \times \mathbb{Q}_{>0}$, $\mathcal{B}$ is a countable collection of open subsets of $X$.
+As the image of the countable set $J \times \QQ_{>0}$, $\mathcal{B}$ is a countable collection of open subsets of $X$.
 
 :::
 
 ::: pf-step
 Let $U \subseteq X$ be an open set and $x \in U$.
 By definition of the metric topology, there exists $\epsilon > 0$ such that $B(x, \epsilon) \subseteq U$.
-Choose a rational number $r \in \mathbb{Q}$ such that $0 < r < \epsilon / 2$.
+Choose a rational number $r \in \QQ$ such that $0 < r < \epsilon / 2$.
 
 :::
 

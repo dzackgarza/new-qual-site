@@ -189,13 +189,13 @@ for all $z\in\Omega$.
 
 Set
 \[
-U=\{z\in\mathbb C\setminus\{0\}:\operatorname{Re}F'(z)>0\}.
+U=\{z\in\CC\setminus\{0\}:\operatorname{Re}F'(z)>0\}.
 \]
 This is open by continuity of $F'$, and step [](#s4){.pf-ref} gives
 \[
 \Gamma\subseteq U.
 \]
-The arc $\Gamma$ is compact, so it has positive distance from the closed set $\mathbb C\setminus U$.
+The arc $\Gamma$ is compact, so it has positive distance from the closed set $\CC\setminus U$.
 
 A simple polygonal arc has arbitrarily small open regular neighborhoods homeomorphic to an open disk: take thin rectangles around its finitely many segments and small disks around its vertices, with the widths chosen so that only pieces belonging to adjacent segments meet.
 Their union is an open thickening of the arc and deformation retracts onto $\Gamma$.

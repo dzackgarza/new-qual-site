@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $y:[0,\infty)\to\mathbb R$ be smooth and satisfy
+Let $y:[0,\infty)\to\RR$ be smooth and satisfy
 $$
 y''-y=f(x)\qquad(x>0),
 $$

@@ -13,8 +13,8 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $f \in \operatorname{Hol}(\mathbb{C}_+)$ has the property that, for any sequence $z_n$ in $\mathbb{C}_+$ that converges to a point in $(0, 1)$, $f(z_n) \to 0$.
-Prove that $f \equiv 0$ on $\mathbb{C}_+$.
+Suppose $f \in \operatorname{Hol}(\CC_+)$ has the property that, for any sequence $z_n$ in $\CC_+$ that converges to a point in $(0, 1)$, $f(z_n) \to 0$.
+Prove that $f \equiv 0$ on $\CC_+$.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ in the lower half-plane.
 
 The resulting holomorphic extension vanishes at every point of a real interval.
 By the identity theorem it is identically zero in a neighborhood of that
-interval. Hence $f$ vanishes on a nonempty open subset of $\mathbb C_+$, and a
+interval. Hence $f$ vanishes on a nonempty open subset of $\CC_+$, and a
 second application of the identity theorem on the connected upper half-plane
 gives
 \[

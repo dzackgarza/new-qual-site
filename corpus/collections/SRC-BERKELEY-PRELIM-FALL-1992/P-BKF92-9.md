@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be analytic on $\{z\in\mathbb C:|z|>1\}$. Prove that if $f$ is real-valued on $(1,\infty)$, then it is also real-valued on $(-\infty,-1)$.
+Let $f$ be analytic on $\{z\in\CC:|z|>1\}$. Prove that if $f$ is real-valued on $(1,\infty)$, then it is also real-valued on $(-\infty,-1)$.
 :::
 
 ::: {.solution}

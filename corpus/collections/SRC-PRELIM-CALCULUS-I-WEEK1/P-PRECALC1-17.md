@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-For continuous functions $f,g:\mathbb R\to\mathbb R$, define the relation $\sim$ by $f\sim g$ iff
+For continuous functions $f,g:\RR\to\RR$, define the relation $\sim$ by $f\sim g$ iff
 \[
 \lim_{x\to\infty}\frac{f(x)}{g(x)}=1.
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-6B
 kind: problem
-title: Irreducibility of $x^4+x+2011$ over $\mathbb Q$
+title: Irreducibility of $x^4+x+2011$ over $\QQ$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the polynomial $x ^ { 4 } + x + 2011$ is irreducible over $\mathbb { Q } .$
+Prove that the polynomial $x ^ { 4 } + x + 2011$ is irreducible over $\QQ .$
 :::
 
 ::: {.solution}

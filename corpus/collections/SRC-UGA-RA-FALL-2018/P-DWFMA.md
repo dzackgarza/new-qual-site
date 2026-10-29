@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $E \subseteq \mathbb{R}$ be a Lebesgue measurable set. Show that there exists a Borel set $B \subseteq E$ such that $m(E \setminus B) = 0$.
+Let $E \subseteq \RR$ be a Lebesgue measurable set. Show that there exists a Borel set $B \subseteq E$ such that $m(E \setminus B) = 0$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ By the regularity of Lebesgue measure (or outer regularity applied to $E^c$), fo
 
 ::: pf-step
 
-For each $n \in \mathbb{N}_{\ge 1}$, choose a closed set $F_n \subseteq E$ such that
+For each $n \in \NN_{\ge 1}$, choose a closed set $F_n \subseteq E$ such that
     $$m(E \setminus F_n) < \frac{1}{n}.$$
 
 :::
@@ -48,7 +48,7 @@ Define $B = \bigcup_{n=1}^\infty F_n$.
 
 ::: pf-step
 
-$B$ is a Borel set: Each $F_n$ is closed in $\mathbb{R}$, so $B$ is an $F_\sigma$ set, hence a Borel set.
+$B$ is a Borel set: Each $F_n$ is closed in $\RR$, so $B$ is an $F_\sigma$ set, hence a Borel set.
 
 :::
 
@@ -90,32 +90,32 @@ Case 2: $E$ has arbitrary (possibly infinite) measure.
 
 ::: pf-step
 
-Partition $\mathbb{R}$ into bounded intervals: $\mathbb{R} = \bigsqcup_{k \in \mathbb{Z}} [k, k+1)$.
+Partition $\RR$ into bounded intervals: $\RR = \bigsqcup_{k \in \ZZ} [k, k+1)$.
 
 :::
 
 ::: pf-step
 
-For each $k \in \mathbb{Z}$, define the bounded measurable set $E_k = E \cap [k, k+1)$.
+For each $k \in \ZZ$, define the bounded measurable set $E_k = E \cap [k, k+1)$.
 
 :::
 
 ::: pf-step
 
-Then $E = \bigsqcup_{k \in \mathbb{Z}} E_k$, and $m(E_k) \le m([k, k+1)) = 1 < \infty$.
+Then $E = \bigsqcup_{k \in \ZZ} E_k$, and $m(E_k) \le m([k, k+1)) = 1 < \infty$.
 
 :::
 
 ::: pf-step
 
-By Case 1 (step [](#s1){.pf-ref}), for each $k \in \mathbb{Z}$, there exists a Borel set $B_k \subseteq E_k$ such that
+By Case 1 (step [](#s1){.pf-ref}), for each $k \in \ZZ$, there exists a Borel set $B_k \subseteq E_k$ such that
     $$m(E_k \setminus B_k) = 0.$$
 
 :::
 
 ::: pf-step
 
-Define $B = \bigcup_{k \in \mathbb{Z}} B_k$.
+Define $B = \bigcup_{k \in \ZZ} B_k$.
 
 :::
 
@@ -127,21 +127,21 @@ $B$ is a Borel set as a countable union of Borel sets $B_k$.
 
 ::: pf-step
 
-$B \subseteq E$ because $B = \bigcup_{k \in \mathbb{Z}} B_k \subseteq \bigcup_{k \in \mathbb{Z}} E_k = E$.
+$B \subseteq E$ because $B = \bigcup_{k \in \ZZ} B_k \subseteq \bigcup_{k \in \ZZ} E_k = E$.
 
 :::
 
 ::: pf-step
 
 The difference satisfies:
-    $$E \setminus B = \left( \bigcup_{k \in \mathbb{Z}} E_k \right) \setminus \left( \bigcup_{j \in \mathbb{Z}} B_j \right) \subseteq \bigcup_{k \in \mathbb{Z}} (E_k \setminus B_k).$$
+    $$E \setminus B = \left( \bigcup_{k \in \ZZ} E_k \right) \setminus \left( \bigcup_{j \in \ZZ} B_j \right) \subseteq \bigcup_{k \in \ZZ} (E_k \setminus B_k).$$
 
 :::
 
 ::: pf-step
 
 By countable subadditivity of Lebesgue measure:
-    $$m(E \setminus B) \le \sum_{k \in \mathbb{Z}} m(E_k \setminus B_k) = \sum_{k \in \mathbb{Z}} 0 = 0.$$
+    $$m(E \setminus B) \le \sum_{k \in \ZZ} m(E_k \setminus B_k) = \sum_{k \in \ZZ} 0 = 0.$$
 
 :::
 
@@ -161,7 +161,7 @@ Conclusion:
 
 ::: pf-proof
 
-Every Lebesgue measurable set $E \subseteq \mathbb{R}$ contains a Borel set $B \subseteq E$ such that $m(E \setminus B) = 0$.
+Every Lebesgue measurable set $E \subseteq \RR$ contains a Borel set $B \subseteq E$ such that $m(E \setminus B) = 0$.
 
 :::
 

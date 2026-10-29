@@ -36,7 +36,7 @@ Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \qua
 
 ::: pf-step
 
-Let $V=\mathbb C^n$ and write the characteristic polynomial as
+Let $V=\CC^n$ and write the characteristic polynomial as
 \[
 \chi_A(t)=(t-\lambda)q(t).
 \]

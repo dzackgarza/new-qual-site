@@ -135,7 +135,7 @@ X=\mathbb S\times\mathbb S.
 $$
 The countable set
 $$
-\mathbb Q\times\mathbb Q
+\QQ\times\QQ
 $$
 is dense in $X$, because every basic rectangle
 $$
@@ -152,7 +152,7 @@ F
 \coloneqq
 \{
 (x,-x):
-x\in\mathbb R
+x\in\RR
 \}.
 $$
 This set is closed. Indeed, if
@@ -185,7 +185,7 @@ then every point of the same rectangle has negative coordinate sum. In either ca
 
 The subspace $F$ is discrete: for each
 $$
-x\in\mathbb R,
+x\in\RR,
 $$
 $$
 \bigl(
@@ -236,7 +236,7 @@ F.
 $$
 Since $X$ is separable, every pairwise-disjoint family of nonempty open subsets of $X$ is countable: choose one point of the countable dense set
 $$
-\mathbb Q\times\mathbb Q
+\QQ\times\QQ
 $$
 from each open set; disjointness makes these chosen points distinct. Hence
 $$

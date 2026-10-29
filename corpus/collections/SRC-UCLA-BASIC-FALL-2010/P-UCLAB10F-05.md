@@ -47,7 +47,7 @@ Statement (a) is false in general.
 
 Take
 \[
-V=\mathbb R^2,
+V=\RR^2,
 \qquad
 S=\{(1,0)\},
 \qquad
@@ -71,13 +71,13 @@ On the other hand,
 =
 \operatorname{span}(S')
 =
-\mathbb R(1,0),
+\RR(1,0),
 \]
 so
 \[
 \operatorname{span}(S)\cap\operatorname{span}(S')
 =
-\mathbb R(1,0)
+\RR(1,0)
 \ne
 \{0\}.
 \]

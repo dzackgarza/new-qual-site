@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be the field of real numbers and let F be the set of all $2 \times 2$ matrices of the form $\left[ { \begin{array} { r r } { a } & { b } \\ { - 3 b } & { a } \end{array} } \right]$ , where $a , b \in \mathbb { R }$ . Show that F is a field under the usual matrix operations.
+Let R be the field of real numbers and let F be the set of all $2 \times 2$ matrices of the form $\left[ { \begin{array} { r r } { a } & { b } \\ { - 3 b } & { a } \end{array} } \right]$ , where $a , b \in \RR$ . Show that F is a field under the usual matrix operations.
 :::
 
 ::: {.solution}

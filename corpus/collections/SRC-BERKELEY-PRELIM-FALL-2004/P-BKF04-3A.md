@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ and $g$ be functions that are holomorphic on all of $\mathbb{C}$, except that $g$ has an essential singularity at the complex number $c$. Prove that either $f$ is constant, or the composition $f\circ g$ has an essential singularity at $c$. (Hint: you may assume the Casorati-Weierstrass Theorem, which states that if a function $f$ has an essential singularity at $c$, then for any punctured neighborhood $N$ of $c$ on which $f$ is holomorphic, the image $f(N)$ is dense in $\mathbb{C}$.)
+Let $f$ and $g$ be functions that are holomorphic on all of $\CC$, except that $g$ has an essential singularity at the complex number $c$. Prove that either $f$ is constant, or the composition $f\circ g$ has an essential singularity at $c$. (Hint: you may assume the Casorati-Weierstrass Theorem, which states that if a function $f$ has an essential singularity at $c$, then for any punctured neighborhood $N$ of $c$ on which $f$ is holomorphic, the image $f(N)$ is dense in $\CC$.)
 :::
 
 ::: {.solution}

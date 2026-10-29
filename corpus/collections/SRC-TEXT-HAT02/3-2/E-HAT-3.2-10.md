@@ -25,25 +25,25 @@ audit:
 ---
 
 ::: {.problem}
-Show that the cross product map $H^*(X; \mathbb{Z}) \otimes H^*(Y; \mathbb{Z}) \to H^*(X \times Y; \mathbb{Z})$ is not an isomorphism if $X$ and $Y$ are infinite discrete sets.
+Show that the cross product map $H^*(X; \ZZ) \otimes H^*(Y; \ZZ) \to H^*(X \times Y; \ZZ)$ is not an isomorphism if $X$ and $Y$ are infinite discrete sets.
 [This shows the necessity of the hypothesis of finite generation in Theorem 3.15.]
 :::
 
 ::: {.solution}
 For a discrete space $X$, singular cohomology is concentrated in degree $0$ and
 \[
-H^0(X;\mathbb Z)=\operatorname{Map}(X,\mathbb Z)=\prod_{x\in X}\mathbb Z.
+H^0(X;\ZZ)=\operatorname{Map}(X,\ZZ)=\prod_{x\in X}\ZZ.
 \]
 Thus for infinite discrete sets $X,Y$, the cross product in degree zero is
 \[
-\operatorname{Map}(X,\mathbb Z)\otimes
-\operatorname{Map}(Y,\mathbb Z)
+\operatorname{Map}(X,\ZZ)\otimes
+\operatorname{Map}(Y,\ZZ)
 \longrightarrow
-\operatorname{Map}(X\times Y,\mathbb Z),
+\operatorname{Map}(X\times Y,\ZZ),
 \]
 sending $f\otimes g$ to the function $(x,y)\mapsto f(x)g(y)$.
 
-Take countably infinite subsets $\{x_i\}\subset X$ and $\{y_j\}\subset Y$ and define $h:X\times Y\to\mathbb Z$ by
+Take countably infinite subsets $\{x_i\}\subset X$ and $\{y_j\}\subset Y$ and define $h:X\times Y\to\ZZ$ by
 \[
 h(x_i,y_j)=\delta_{ij},
 \]

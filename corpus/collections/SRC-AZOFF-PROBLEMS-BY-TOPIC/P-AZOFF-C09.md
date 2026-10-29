@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C09
 kind: problem
-title: Conformal map of the slit plane $\mathbb C\setminus(-\infty,0]$ onto the disk
+title: Conformal map of the slit plane $\CC\setminus(-\infty,0]$ onto the disk
 classification:
   areas: [complex-analysis]
   topics: []
@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $\mathbb { C } \backslash \{ x \in \mathbb { R } : x \leq 0 \}$ onto the open unit disk.
+Find a conformal map from $\CC \backslash \{ x \in \RR : x \leq 0 \}$ onto the open unit disk.
 :::
 
 ::: {.solution}

@@ -29,15 +29,15 @@ Provide a presentation of the group $\pi_1(A)$.
 (b) Let $B = X \times Y$ be their product.
 Provide a presentation of the group $\pi_1(B)$.
 
-(c) Compute $H_*(A; \mathbb{Z})$.
+(c) Compute $H_*(A; \ZZ)$.
 
-(d) Compute $H_*(B; \mathbb{Z})$.
+(d) Compute $H_*(B; \ZZ)$.
 
-(e) Compute $H^*(B; \mathbb{Z})$ as groups.
+(e) Compute $H^*(B; \ZZ)$ as groups.
 
-(f) Compute $H^*(A; \mathbb{Z}/2)$ as a ring.
+(f) Compute $H^*(A; \ZZ/2)$ as a ring.
 
-(g) Compute $H^*(B; \mathbb{Z}/2)$ as a ring.
+(g) Compute $H^*(B; \ZZ/2)$ as a ring.
 
 (h) Are all maps $f : X \to Y$ null-homotopic?
 Explain your reason.
@@ -55,17 +55,17 @@ Compute the Euler characteristic of $C$.
 
 ::: pf-step
 For $A=\mathbb{RP}^3\vee(S^1\vee S^1)$,
-$$\boxed{\pi_1(A)\cong\langle r,a,b\mid r^2=1\rangle\cong(\mathbb Z/2)*F_2.}$$
+$$\boxed{\pi_1(A)\cong\langle r,a,b\mid r^2=1\rangle\cong(\ZZ/2)*F_2.}$$
 
 ::: pf-proof
-Van Kampen gives the free product of $\pi_1(\mathbb{RP}^3)=\mathbb Z/2$ and $\pi_1(S^1\vee S^1)=F_2$.
+Van Kampen gives the free product of $\pi_1(\mathbb{RP}^3)=\ZZ/2$ and $\pi_1(S^1\vee S^1)=F_2$.
 :::
 
 :::
 
 ::: pf-step
 For $B=\mathbb{RP}^3\times(S^1\vee S^1)$,
-$$\boxed{\pi_1(B)\cong(\mathbb Z/2)\times F_2
+$$\boxed{\pi_1(B)\cong(\ZZ/2)\times F_2
 \cong\langle r,a,b\mid r^2,[r,a],[r,b]\rangle.}$$
 
 ::: pf-proof
@@ -76,46 +76,46 @@ Fundamental groups commute with products, and the direct-product relations force
 
 ::: pf-step
 The integral homology of $A$ is
-$$\boxed{H_i(A;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,3,\\
-\mathbb Z^2\oplus\mathbb Z/2,&i=1,\\
+$$\boxed{H_i(A;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,3,\\
+\ZZ^2\oplus\ZZ/2,&i=1,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 
 ::: pf-proof
-Reduced homology of a wedge is the direct sum of the reduced homologies. Use $H_1(\mathbb{RP}^3)=\mathbb Z/2$, $H_3(\mathbb{RP}^3)=\mathbb Z$, and $H_1(S^1\vee S^1)=\mathbb Z^2$.
+Reduced homology of a wedge is the direct sum of the reduced homologies. Use $H_1(\mathbb{RP}^3)=\ZZ/2$, $H_3(\mathbb{RP}^3)=\ZZ$, and $H_1(S^1\vee S^1)=\ZZ^2$.
 :::
 
 :::
 
 ::: {.pf-step #homology-of-B}
 The integral homology of $B$ is
-$$\boxed{H_i(B;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,3,\\
-\mathbb Z^2\oplus\mathbb Z/2,&i=1,\\
-(\mathbb Z/2)^2,&i=2,\\
-\mathbb Z^2,&i=4,\\
+$$\boxed{H_i(B;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,3,\\
+\ZZ^2\oplus\ZZ/2,&i=1,\\
+(\ZZ/2)^2,&i=2,\\
+\ZZ^2,&i=4,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 
 ::: pf-proof
-The graph $Y=S^1\vee S^1$ has free homology only in degrees $0,1$, so the integral Künneth theorem has no Tor terms. Tensor $H_*(\mathbb{RP}^3)$ with $H_0(Y)=\mathbb Z$ and $H_1(Y)=\mathbb Z^2$.
+The graph $Y=S^1\vee S^1$ has free homology only in degrees $0,1$, so the integral Künneth theorem has no Tor terms. Tensor $H_*(\mathbb{RP}^3)$ with $H_0(Y)=\ZZ$ and $H_1(Y)=\ZZ^2$.
 :::
 
 :::
 
 ::: pf-step
 The integral cohomology groups of $B$ are
-$$\boxed{H^i(B;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z^2,&i=1,4,\\
-\mathbb Z/2,&i=2,\\
-\mathbb Z\oplus(\mathbb Z/2)^2,&i=3,\\
+$$\boxed{H^i(B;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,\\
+\ZZ^2,&i=1,4,\\
+\ZZ/2,&i=2,\\
+\ZZ\oplus(\ZZ/2)^2,&i=3,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 
 ::: pf-proof
-Apply the universal coefficient theorem for cohomology to step [](#homology-of-B){.pf-ref}. Free summands contribute through Hom and each $\mathbb Z/2$ summand contributes an Ext group one degree later.
+Apply the universal coefficient theorem for cohomology to step [](#homology-of-B){.pf-ref}. Free summands contribute through Hom and each $\ZZ/2$ summand contributes an Ext group one degree later.
 :::
 
 :::
@@ -148,7 +148,7 @@ The field-coefficient Künneth theorem is multiplicative, so the ring is the ten
 Every map $f:\mathbb{RP}^3\to S^1\vee S^1$ is null-homotopic.
 
 ::: pf-proof
-Its induced homomorphism on fundamental groups is a map $\mathbb Z/2\to F_2$, necessarily trivial because a free group is torsion-free. The target graph is a $K(F_2,1)$, so a map inducing the trivial fundamental-group homomorphism is null-homotopic.
+Its induced homomorphism on fundamental groups is a map $\ZZ/2\to F_2$, necessarily trivial because a free group is torsion-free. The target graph is a $K(F_2,1)$, so a map inducing the trivial fundamental-group homomorphism is null-homotopic.
 :::
 
 :::
@@ -157,7 +157,7 @@ Its induced homomorphism on fundamental groups is a map $\mathbb Z/2\to F_2$, ne
 Not every map $g:S^1\vee S^1\to\mathbb{RP}^3$ is null-homotopic.
 
 ::: pf-proof
-Map one circle to a loop representing the nontrivial element of $\pi_1(\mathbb{RP}^3)=\mathbb Z/2$ and the other circle to the basepoint. The induced map on $\pi_1$ is nontrivial, so the map cannot be null-homotopic.
+Map one circle to a loop representing the nontrivial element of $\pi_1(\mathbb{RP}^3)=\ZZ/2$ and the other circle to the basepoint. The induced map on $\pi_1$ is nontrivial, so the map cannot be null-homotopic.
 :::
 
 :::

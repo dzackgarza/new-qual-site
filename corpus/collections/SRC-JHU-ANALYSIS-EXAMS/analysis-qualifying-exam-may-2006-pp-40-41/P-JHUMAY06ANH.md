@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that any function $f \in L^1(I) \cap L^2(I)$ on an interval $I \subset \mathbb{R}$ must belong to $L^p(I)$ for all $p \in [1, 2]$.
+Prove that any function $f \in L^1(I) \cap L^2(I)$ on an interval $I \subset \RR$ must belong to $L^p(I)$ for all $p \in [1, 2]$.
 :::
 
 ::: {.solution}

@@ -47,18 +47,18 @@ Statement (i) is false.
 
 ::: pf-proof
 
-Take $R=\mathbb Z$ and
+Take $R=\ZZ$ and
 \[
-M=\bigoplus_{n\ge2}\mathbb Z/n\mathbb Z.
+M=\bigoplus_{n\ge2}\ZZ/n\ZZ.
 \]
 Every element of $M$ has only finitely many nonzero coordinates, so it is killed by the least common multiple of the corresponding finitely many integers $n$.
-Thus $M$ is a torsion $\mathbb Z$-module.
+Thus $M$ is a torsion $\ZZ$-module.
 
-However, if $0\ne a\in\mathbb Z$, choose $n>|a|$ with $n\nmid a$.
-The element whose only nonzero coordinate is $1\in\mathbb Z/n\mathbb Z$ is not killed by $a$.
+However, if $0\ne a\in\ZZ$, choose $n>|a|$ with $n\nmid a$.
+The element whose only nonzero coordinate is $1\in\ZZ/n\ZZ$ is not killed by $a$.
 Hence no nonzero integer annihilates all of $M$, so
 \[
-\operatorname{Ann}_{\mathbb Z}(M)=0.
+\operatorname{Ann}_{\ZZ}(M)=0.
 \]
 
 :::
@@ -96,13 +96,13 @@ Statement (iii) is false.
 
 ::: pf-proof
 
-Take $R=\mathbb Z$ and $M=\mathbb Q$.
-Since $\mathbb Z$ is a domain, if $0\ne n\in\mathbb Z$ and $nq=0$ in $\mathbb Q$, then $q=0$; hence $\mathbb Q$ is torsionfree as a $\mathbb Z$-module.
+Take $R=\ZZ$ and $M=\QQ$.
+Since $\ZZ$ is a domain, if $0\ne n\in\ZZ$ and $nq=0$ in $\QQ$, then $q=0$; hence $\QQ$ is torsionfree as a $\ZZ$-module.
 
 It is not free.
-Indeed, $\mathbb Q$ is divisible: for every $q\in\mathbb Q$ and every integer $n\ne0$, there is $q/n\in\mathbb Q$ with $n(q/n)=q$.
+Indeed, $\QQ$ is divisible: for every $q\in\QQ$ and every integer $n\ne0$, there is $q/n\in\QQ$ with $n(q/n)=q$.
 A nonzero free abelian group is not divisible: if $(e_i)$ is a basis and $e_j$ is one basis element, there is no element $x$ with $2x=e_j$, since comparing the coefficient of $e_j$ would require an integer coefficient $1/2$.
-Therefore $\mathbb Q$ is not a free $\mathbb Z$-module.
+Therefore $\QQ$ is not a free $\ZZ$-module.
 
 :::
 

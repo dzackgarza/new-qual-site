@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-028
 kind: problem
-title: 'The matrix ring $F_p$ of $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ over $\mathbb Z_p$: a field for $p=7$ but not $p=13$'
+title: 'The matrix ring $F_p$ of $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ over $\ZZ_p$: a field for $p=7$ but not $p=13$'
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime and $F _ { p }$ the set of all $2 \times 2$ matrices of the form $\left[ \begin{array} { r r } { a } & { b } \\ { - b } & { a } \end{array} \right]$ , where $a , b \in \mathbb { Z } _ { p }$
+Let p be a prime and $F _ { p }$ the set of all $2 \times 2$ matrices of the form $\left[ \begin{array} { r r } { a } & { b } \\ { - b } & { a } \end{array} \right]$ , where $a , b \in \ZZ _ { p }$
 
 (a) Show that $F _ { p }$ is a commutative ring with identity.
 

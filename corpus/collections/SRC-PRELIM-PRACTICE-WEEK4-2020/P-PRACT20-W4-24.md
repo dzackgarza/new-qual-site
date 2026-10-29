@@ -15,13 +15,13 @@ review: draft
 ---
 
 ::: {.problem}
-Show that there are no polynomials $a , b , c , d : \mathbb { R } \to \mathbb { R }$ such that
+Show that there are no polynomials $a , b , c , d : \RR \to \RR$ such that
 
 $$
 1 + x y + x ^ { 2 } y ^ { 2 } = a ( x ) b ( y ) + c ( x ) d ( y )
 $$
 
-for all $x , y \in \mathbb { R }$
+for all $x , y \in \RR$
 :::
 
 ::: {.solution}
@@ -83,7 +83,7 @@ x^2-x+1=a(x)b(-1)+c(x)d(-1).
 $$
 Thus each of these three polynomials lies in
 $$
-\operatorname{span}_{\mathbb R}\{a(x),c(x)\},
+\operatorname{span}_{\RR}\{a(x),c(x)\},
 $$
 whose dimension is at most $2$.
 

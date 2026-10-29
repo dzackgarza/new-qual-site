@@ -31,7 +31,7 @@ Prove that the series $I + A + A ^ { 2 } + . . .$ converges if and only if every
 
 ::: {.solution}
 
-Convergence of a matrix series is equivalent in any matrix norm on $M_2(\mathbb C)$, so we may freely conjugate the series by a fixed invertible matrix.
+Convergence of a matrix series is equivalent in any matrix norm on $M_2(\CC)$, so we may freely conjugate the series by a fixed invertible matrix.
 
 ::: pf
 

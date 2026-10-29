@@ -19,11 +19,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb C\to\mathbb C$ is injective and entire. Prove that there are $a,b\in\mathbb C$ with $a\ne0$ such that
+Suppose $f:\CC\to\CC$ is injective and entire. Prove that there are $a,b\in\CC$ with $a\ne0$ such that
 \[
 f(z)=az+b
 \]
-for every $z\in\mathbb C$.
+for every $z\in\CC$.
 :::
 
 ::: {.solution}

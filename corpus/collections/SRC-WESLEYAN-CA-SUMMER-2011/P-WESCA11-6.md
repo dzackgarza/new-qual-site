@@ -25,8 +25,8 @@ State Cauchy's theorem for triangles.
 
 ::: pf-step
 
-Let \(T\subset\mathbb C\) be a closed triangle, including its
-interior, and let \(U\subset\mathbb C\) be an open set containing \(T\).
+Let \(T\subset\CC\) be a closed triangle, including its
+interior, and let \(U\subset\CC\) be an open set containing \(T\).
 
 
 ::: pf-proof
@@ -42,7 +42,7 @@ theorem.
 
 Suppose
 \[
-f:U\to\mathbb C
+f:U\to\CC
 \]
 is holomorphic.
 

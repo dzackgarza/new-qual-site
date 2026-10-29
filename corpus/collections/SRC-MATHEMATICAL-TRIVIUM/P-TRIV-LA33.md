@@ -16,20 +16,20 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $e ^ { A } = \left( e ^ { A / N } \right) ^ { N } , N \in \mathbb { R }$
+Prove that $e ^ { A } = \left( e ^ { A / N } \right) ^ { N } , N \in \RR$
 :::
 
 ::: {.remark}
-The source states $N\in\mathbb R$, but the ordinary matrix power
+The source states $N\in\RR$, but the ordinary matrix power
 $(e^{A/N})^N$ is defined here only for integer $N$. The intended statement is
-for $N\in\mathbb N$.
+for $N\in\NN$.
 :::
 
 ::: {.solution}
 
 Fix
 $$
-N\in\mathbb N.
+N\in\NN.
 $$
 
 ::: pf
@@ -132,7 +132,7 @@ This is step [](#s1-3){.pf-ref} with the two sides reversed.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the corrected intended statement for every
-$N\in\mathbb N$.
+$N\in\NN$.
 
 :::
 

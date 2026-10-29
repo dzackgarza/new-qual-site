@@ -35,7 +35,7 @@ S_a=\{z:|\Im z|<a\}
 and that for some $A>0$,
 \[
 |f(x+iy)|\le \frac{A}{1+x^2}
-\qquad(x\in\mathbb R,\ |y|<a).
+\qquad(x\in\RR,\ |y|<a).
 \tag{1}
 \]
 Fix $0\le b<a$ and an integer $n\ge1$. Put

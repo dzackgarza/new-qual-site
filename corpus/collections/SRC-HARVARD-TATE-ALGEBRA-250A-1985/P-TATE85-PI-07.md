@@ -14,7 +14,7 @@ review: draft
 ::: {.problem}
 (7) Let M be a maximal ideal in a ring B and let$A = B / M ^ { n }$for some integer$n > 0$Show that the only prime ideal of A is$M / M ^ { n }$
 
-Examples:$A = \mathbb { Z } / 1 0 2 4 \mathbb { Z } , A = \mathbb { C } [ X ] / X ^ { n } \mathbb { C } [ X ]$
+Examples:$A = \ZZ / 1 0 2 4 \ZZ , A = \CC [ X ] / X ^ { n } \CC [ X ]$
 :::
 
 ::: {.solution}

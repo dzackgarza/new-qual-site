@@ -21,21 +21,21 @@ audit:
 ---
 
 ::: {.problem}
-Write $S^3 = \partial B^4 \subset \mathbb{C}^2$ as the preimage of $1$ of the function $r^2$, so that $\ker(d(r^2))$ along $S^3$ is $TS^3$.
-There is a complex structure $J$ on $TS^3$ inherited from $\mathbb{C}^2$.
+Write $S^3 = \partial B^4 \subset \CC^2$ as the preimage of $1$ of the function $r^2$, so that $\ker(d(r^2))$ along $S^3$ is $TS^3$.
+There is a complex structure $J$ on $TS^3$ inherited from $\CC^2$.
 Write $\alpha = d(r^2) \circ J$, and let $\xi = \ker(\alpha|_{S^3})$, the standard structure on $S^3$.
 
 Verify that this is a positive contact form by showing that
 $$
 d(r^2) \wedge \alpha \wedge d\alpha
 $$
-is a positive volume form on $\mathbb{C}^2$, and therefore $\alpha \wedge d\alpha$ is a positive volume form on $S^3$.
+is a positive volume form on $\CC^2$, and therefore $\alpha \wedge d\alpha$ is a positive volume form on $S^3$.
 Do this by showing that
 $$
 \alpha = x_1\,dy_1 - y_1\,dx_1 + x_2\,dy_2 - y_2\,dx_2
 $$
 and computing $\alpha \wedge d\alpha$.
-Can you show that this form restricted to $S^3 - \{*\}$ is contactomorphic to $(\mathbb{R}^3, dz + x\,dy)$?
+Can you show that this form restricted to $S^3 - \{*\}$ is contactomorphic to $(\RR^3, dz + x\,dy)$?
 :::
 
 ::: {.solution}
@@ -45,7 +45,7 @@ Write
 z_j=x_j+iy_j
 \qquad(j=1,2)
 \]
-on \(\mathbb C^2\), and use the standard complex orientation
+on \(\CC^2\), and use the standard complex orientation
 \[
 \Omega
 =
@@ -238,7 +238,7 @@ After reordering, all four contributions have positive sign. Their sum is
 
 On
 \[
-\mathbb C^2-\{0\},
+\CC^2-\{0\},
 \]
 the \(4\)-form in step [](#s1-5){.pf-ref} is positive.
 
@@ -412,7 +412,7 @@ would imply \(1=-1\).
 The map \(\mathcal C\) is a diffeomorphism
 \[
 \boxed{
-\mathbb C\times\mathbb R
+\CC\times\RR
 \xrightarrow{\sim}
 S^3-\{(0,-1)\}}.
 \]
@@ -468,7 +468,7 @@ S^3-\{(0,-1)\}.
 
 ::: {.pf-step #s1-13}
 
-On \(\mathbb C\times\mathbb R\), define the Heisenberg contact form
+On \(\CC\times\RR\), define the Heisenberg contact form
 \[
 \boxed{
 \beta
@@ -580,7 +580,7 @@ Its denominator is a sum of squares and its numerator is \(2>0\).
 
 Hence \(\mathcal C\) is a contactomorphism from
 \[
-(\mathbb C\times\mathbb R,\ker\beta)
+(\CC\times\RR,\ker\beta)
 \]
 to
 \[
@@ -704,21 +704,21 @@ The composite
 \Psi
 =
 \mathcal C\circ\Phi:
-\mathbb R^3
+\RR^3
 \longrightarrow
 S^3-\{(0,-1)\}}
 \]
 is a contactomorphism from
 \[
-(\mathbb R^3,\ker(dz+x\,dy))
+(\RR^3,\ker(dz+x\,dy))
 \]
 onto the punctured standard contact sphere.
 
 
 ::: pf-proof
 
-The map \(\Phi\) is a diffeomorphism from \(\mathbb R^3\) to
-\(\mathbb C\times\mathbb R\). By step [](#s1-20){.pf-ref}, it is a strict
+The map \(\Phi\) is a diffeomorphism from \(\RR^3\) to
+\(\CC\times\RR\). By step [](#s1-20){.pf-ref}, it is a strict
 contactomorphism from
 \[
 dz+x\,dy
@@ -735,7 +735,7 @@ contactomorphism.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} verify the positive contact form on \(S^3\), and steps
 [](#s1-9){.pf-ref} through [](#s1-21){.pf-ref} give the explicit contactomorphism with standard
-\(\mathbb R^3\) after deleting one point.
+\(\RR^3\) after deleting one point.
 
 :::
 

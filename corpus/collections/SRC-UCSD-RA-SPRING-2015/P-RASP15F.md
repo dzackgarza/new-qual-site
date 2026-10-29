@@ -31,8 +31,8 @@ Here $f * g$ is the convolution of $f$ and $g$.
 
 (ii) Compute the inverse Fourier transform of $g_k$, namely $\mathcal{F}^{-1}(g_k)$.
 
-(iii) Using the above computation show that the Fourier transform $\mathcal{F} : L^1(\mathbb{R}) \to C_0(\mathbb{R})$ is not onto.
-Here $C_0(\mathbb{R})$ is the space of continuous functions which vanish at infinity.
+(iii) Using the above computation show that the Fourier transform $\mathcal{F} : L^1(\RR) \to C_0(\RR)$ is not onto.
+Here $C_0(\RR)$ is the space of continuous functions which vanish at infinity.
 
 Hint: Use the open mapping theorem.
 :::
@@ -47,10 +47,10 @@ Compute $\|g_k\|_\infty$.
 
 ::: pf-proof
 
-For $x\in\mathbb R$,
+For $x\in\RR$,
 \[
 g_k(x)
-=\int_{\mathbb R}\mathbf1_{[-1,1]}(x-y)\mathbf1_{[-k,k]}(y)\,dy.
+=\int_{\RR}\mathbf1_{[-1,1]}(x-y)\mathbf1_{[-k,k]}(y)\,dy.
 \]
 Thus $g_k(x)$ is the length of the intersection
 \[
@@ -73,7 +73,7 @@ Compute the inverse Fourier transform.
 
 Use the convention
 \[
-\widehat f(\xi)=\int_{\mathbb R}e^{-2\pi ix\xi}f(x)\,dx.
+\widehat f(\xi)=\int_{\RR}e^{-2\pi ix\xi}f(x)\,dx.
 \]
 Then
 \[
@@ -92,7 +92,7 @@ h_k(x):=\mathcal F^{-1}(g_k)(x)
 &=\boxed{\frac{\sin(2\pi x)\sin(2\pi kx)}{\pi^2x^2}}.
 \end{aligned}
 \]
-This function is in $L^1(\mathbb R)$: it is bounded near $0$ and is $O(x^{-2})$ at infinity.
+This function is in $L^1(\RR)$: it is bounded near $0$ and is $O(x^{-2})$ at infinity.
 
 :::
 
@@ -149,7 +149,7 @@ Use the open mapping theorem to rule out surjectivity.
 
 The Fourier transform
 \[
-\mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
+\mathcal F:L^1(\RR)\to C_0(\RR)
 \]
 is bounded and injective. Suppose it were onto. Then it would be a bounded linear bijection between Banach spaces, so the bounded inverse theorem would give a constant $C$ such that
 \[
@@ -163,7 +163,7 @@ Apply this to $f=h_k$. Since $\widehat{h_k}=g_k$ and $\|g_k\|_\infty=2$,
 \]
 for every $k$, contradicting Step 3. Therefore
 \[
-\boxed{\mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)\text{ is not onto}.}
+\boxed{\mathcal F:L^1(\RR)\to C_0(\RR)\text{ is not onto}.}
 \]
 
 :::

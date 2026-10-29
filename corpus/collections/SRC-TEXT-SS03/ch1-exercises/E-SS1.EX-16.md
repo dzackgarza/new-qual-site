@@ -41,7 +41,7 @@ F(\alpha,\beta,\gamma;z)
 \frac{\alpha(\alpha+1)\cdots(\alpha+n-1)\,\beta(\beta+1)\cdots(\beta+n-1)}
 {n!\,\gamma(\gamma+1)\cdots(\gamma+n-1)}z^n,
 \]
-where $\alpha,\beta\in\mathbb C$ and $\gamma\ne0,-1,-2,\ldots$;
+where $\alpha,\beta\in\CC$ and $\gamma\ne0,-1,-2,\ldots$;
 
 (f) for the Bessel function of positive integer order $r$,
 \[
@@ -164,7 +164,7 @@ If $\alpha$ or $\beta$ is a nonpositive integer, the hypergeometric series termi
 
 ::: pf-proof
 
-If, for example, $\alpha=-m$ with $m\in\mathbb Z_{\ge0}$, then $(\alpha)_n=0$ for every $n\ge m+1$. Hence only finitely many coefficients are nonzero, so $F$ is a polynomial. The same argument applies to $\beta$.
+If, for example, $\alpha=-m$ with $m\in\ZZ_{\ge0}$, then $(\alpha)_n=0$ for every $n\ge m+1$. Hence only finitely many coefficients are nonzero, so $F$ is a polynomial. The same argument applies to $\beta$.
 
 :::
 
@@ -186,7 +186,7 @@ As a power series in $w=z^2/4$, its coefficient ratio satisfies
 =
 \frac1{(n+1)(n+r+1)}\longrightarrow0.
 \]
-Hence $\sum c_nw^n$ converges for every $w\in\mathbb C$. Substituting $w=z^2/4$ therefore gives convergence for every $z\in\mathbb C$, and multiplication by the polynomial factor $(z/2)^r$ does not change this. Thus $J_r$ is entire and its radius of convergence is infinite.
+Hence $\sum c_nw^n$ converges for every $w\in\CC$. Substituting $w=z^2/4$ therefore gives convergence for every $z\in\CC$, and multiplication by the polynomial factor $(z/2)^r$ does not change this. Thus $J_r$ is entire and its radius of convergence is infinite.
 
 :::
 

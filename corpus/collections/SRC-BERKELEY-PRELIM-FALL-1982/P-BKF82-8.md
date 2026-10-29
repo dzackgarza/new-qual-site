@@ -26,17 +26,17 @@ audit:
 ::: {.problem}
 Let
 \[
-G=\left\{\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a,b\in\mathbb R,\ a>0\right\},\qquad
-N=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\mathbb R\right\}.
+G=\left\{\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a,b\in\RR,\ a>0\right\},\qquad
+N=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\RR\right\}.
 \]
 
-(a) Show that $N\triangleleft G$ and prove $G/N\cong\mathbb R$.
+(a) Show that $N\triangleleft G$ and prove $G/N\cong\RR$.
 
 (b) Find a normal subgroup $N'$ with $N\subsetneq N'\subsetneq G$, or prove none exists.
 :::
 
 ::: {.solution}
-For $a>0$ and $b\in\mathbb R$, write
+For $a>0$ and $b\in\RR$, write
 $$
 g(a,b)=\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}.
 $$
@@ -45,13 +45,13 @@ $$
 
 ::: pf-step
 
-Construct a quotient map onto the additive group $\mathbb R$.
+Construct a quotient map onto the additive group $\RR$.
 
 ::: pf-proof
 
 Define
 $$
-\Phi:G\longrightarrow(\mathbb R,+),
+\Phi:G\longrightarrow(\RR,+),
 \qquad
 \Phi(g(a,b))=\log a.
 $$
@@ -63,7 +63,7 @@ $$
 =\log a+\log c,
 $$
 so $\Phi$ is a homomorphism. It is surjective because for every
-$t\in\mathbb R$,
+$t\in\RR$,
 $$
 \Phi(g(e^t,0))=t.
 $$
@@ -86,12 +86,12 @@ $$
 Hence
 $$
 \ker\Phi
-=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\mathbb R\right\}
+=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\RR\right\}
 =N.
 $$
 Thus $N\trianglelefteq G$. By the first isomorphism theorem,
 $$
-\boxed{G/N\cong(\mathbb R,+).}
+\boxed{G/N\cong(\RR,+).}
 $$
 
 :::
@@ -104,15 +104,15 @@ Pull back a proper nontrivial subgroup of the quotient.
 
 ::: pf-proof
 
-Take the subgroup $\mathbb Z<\mathbb R$. Since $\mathbb R$ is abelian,
-$\mathbb Z$ is normal. Put
+Take the subgroup $\ZZ<\RR$. Since $\RR$ is abelian,
+$\ZZ$ is normal. Put
 $$
-N'=\Phi^{-1}(\mathbb Z)
-=\left\{g(a,b):\log a\in\mathbb Z\right\}.
+N'=\Phi^{-1}(\ZZ)
+=\left\{g(a,b):\log a\in\ZZ\right\}.
 $$
 As the inverse image of a normal subgroup, $N'\trianglelefteq G$.
 
-Because $0\in\mathbb Z$, we have $N=\ker\Phi\subseteq N'$. The containment
+Because $0\in\ZZ$, we have $N=\ker\Phi\subseteq N'$. The containment
 is strict since
 $$
 g(e,0)\in N'\setminus N.

@@ -15,12 +15,12 @@ review: draft
 ---
 
 ::: {.problem}
-Show that there is no $A\in\mathbb R^{2\times2}$ satisfying
+Show that there is no $A\in\RR^{2\times2}$ satisfying
 \[
 A^{100}=\begin{pmatrix}-1&0\\0&-\alpha\end{pmatrix}
 \]
 when $\alpha>1$.
-If $\alpha=1$, find $A\in\mathbb R^{2\times2}$ satisfying the equation.
+If $\alpha=1$, find $A\in\RR^{2\times2}$ satisfying the equation.
 :::
 
 ::: {.solution}

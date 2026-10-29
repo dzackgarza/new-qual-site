@@ -24,7 +24,7 @@ Prove that $\CP^2\#\CP^2$ and $S^2\times S^2$ are not homotopy-equivalent.
 ::: pf
 
 ::: pf-step
-Both manifolds have $H^2(-;\mathbb Z)\cong\mathbb Z^2$, but their integral intersection forms are different.
+Both manifolds have $H^2(-;\ZZ)\cong\ZZ^2$, but their integral intersection forms are different.
 
 ::: pf-proof
 For a closed oriented $4$-manifold, the cup product followed by evaluation on the fundamental class defines a unimodular bilinear form on $H^2$ modulo torsion.

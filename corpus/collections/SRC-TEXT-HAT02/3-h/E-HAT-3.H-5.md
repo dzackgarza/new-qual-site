@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-If $X$ is a finite connected graph with $\pi_1(X)$ free on $g > 0$ generators, show that $H^n(X; \mathbb{Z}[\pi_1 X])$ is zero unless $n = 1$, when it is $\mathbb{Z}$ when $g = 1$ and the direct sum of a countably infinite number of $\mathbb{Z}$'s when $g > 1$.
+If $X$ is a finite connected graph with $\pi_1(X)$ free on $g > 0$ generators, show that $H^n(X; \ZZ[\pi_1 X])$ is zero unless $n = 1$, when it is $\ZZ$ when $g = 1$ and the direct sum of a countably infinite number of $\ZZ$'s when $g > 1$.
 [Use Proposition 3H.5 and compute $H_c^n(\tilde{X})$ as $\varinjlim H^n(\tilde{X}, \tilde{X} - T_i)$ for a suitable sequence of finite subtrees $T_1 \subset T_2 \subset \cdots$ of $\tilde{X}$ with $\bigcup_i T_i = \tilde{X}$.]
 :::
 
@@ -37,7 +37,7 @@ p:\widetilde X\to X
 \]
 be the universal cover. Proposition 3H.5 identifies
 \[
-H^n(X;\mathbb Z[\pi])\cong H_c^n(\widetilde X;\mathbb Z).
+H^n(X;\ZZ[\pi])\cong H_c^n(\widetilde X;\ZZ).
 \]
 Since $X$ is a finite connected graph with free fundamental group of rank $g>0$, $\widetilde X$ is a locally finite tree.
 
@@ -65,7 +65,7 @@ If $c_i$ is the number of components of $\widetilde X-T_i$, this is free abelian
 
 If $g=1$, the universal cover is a line. For large interval subtrees $T_i$, the complement has exactly two components, and the transition maps identify the corresponding generators. Hence
 \[
-H_c^1(\widetilde X)\cong\mathbb Z.
+H_c^1(\widetilde X)\cong\ZZ.
 \]
 
 If $g>1$, the universal covering tree has branching. Choose the exhaustion so that each $T_{i+1}$ is obtained by adding a finite layer of adjacent edges. Then the maps
@@ -77,14 +77,14 @@ are split injections: each old complementary component breaks into finitely many
 
 Therefore
 \[
-\boxed{H^n(X;\mathbb Z[\pi])=0\quad(n\ne1),}
+\boxed{H^n(X;\ZZ[\pi])=0\quad(n\ne1),}
 \]
 and
 \[
-\boxed{H^1(X;\mathbb Z[\pi])\cong
+\boxed{H^1(X;\ZZ[\pi])\cong
 \begin{cases}
-\mathbb Z,&g=1,\\
-\bigoplus_{\mathbb N}\mathbb Z,&g>1.
+\ZZ,&g=1,\\
+\bigoplus_{\NN}\ZZ,&g>1.
 \end{cases}}
 \]
 :::

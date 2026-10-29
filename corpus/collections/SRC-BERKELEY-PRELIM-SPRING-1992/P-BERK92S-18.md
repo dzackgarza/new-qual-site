@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-18
 kind: problem
-title: An entire upper-half-plane-preserving real function has positive derivative on $\mathbb R$
+title: An entire upper-half-plane-preserving real function has positive derivative on $\RR$
 classification:
   areas:
   - prelim

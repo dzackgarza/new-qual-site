@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(z)$ be a complex analytic function such that $f(z) = (5x - 3y) + i v(x, y)$, where $v(x, y)$ is a real-valued function and $x, y, \in \mathbb{R}$. If $v(4, 1) = 7$, what is $v(3, 2)$?
+Let $f(z)$ be a complex analytic function such that $f(z) = (5x - 3y) + i v(x, y)$, where $v(x, y)$ is a real-valued function and $x, y, \in \RR$. If $v(4, 1) = 7$, what is $v(3, 2)$?
 
 (A) $-10$
 (B) $-9$

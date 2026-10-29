@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove or disprove the statement: Every function $f \colon  { \mathbb { R } } \to  { \mathbb { R } }$ such that $f ( x + y ) =$ $f ( x ) + f ( y )$ for all x and y is continuous.
+Prove or disprove the statement: Every function $f \colon  { \RR } \to  { \RR }$ such that $f ( x + y ) =$ $f ( x ) + f ( y )$ for all x and y is continuous.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D\subset\mathbb C$ be a domain.
+Let $D\subset\CC$ be a domain.
 If every function analytic in $D$ has a primitive in $D$, prove that $D$ is simply connected, where simply connected means that every cycle in $D$ is homologous to zero.
 :::
 
@@ -26,7 +26,7 @@ If every function analytic in $D$ has a primitive in $D$, prove that $D$ is simp
 
 ::: {.pf-step #s1-1}
 
-Let $\sigma$ be any cycle in $D$ and let $a\in\mathbb C\setminus D$.
+Let $\sigma$ be any cycle in $D$ and let $a\in\CC\setminus D$.
 Then
 \[
 \int_\sigma \frac{dz}{z-a}=0.
@@ -59,7 +59,7 @@ Every cycle $\sigma$ in $D$ is homologous to zero in $D$.
 
 ::: pf-proof
 
-Let $a\in\mathbb C\setminus D$. By the definition of the winding number and
+Let $a\in\CC\setminus D$. By the definition of the winding number and
 step [](#s1-1){.pf-ref},
 \[
 n(\sigma,a)

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $F:\mathbb C\times\mathbb C\to\mathbb C$ be jointly continuous and holomorphic in each variable separately. Show that
+Problem 7. Let $F:\CC\times\CC\to\CC$ be jointly continuous and holomorphic in each variable separately. Show that
 \[
 z\mapsto F(z,z)
 \]
@@ -35,7 +35,7 @@ f(z)=F(z,z).
 
 ::: {.pf-step #s1-1}
 
-Fix \(z_0\in\mathbb C\) and \(R>0\). For every
+Fix \(z_0\in\CC\) and \(R>0\). For every
 \[
 a,b\in D(z_0,R),
 \]
@@ -226,7 +226,7 @@ Hence
 
 The center \(z_0\) was arbitrary, and one may choose any \(R>0\). Step
 [](#s1-4){.pf-ref} therefore proves holomorphy in a neighborhood of every point of
-\(\mathbb C\).
+\(\CC\).
 
 :::
 

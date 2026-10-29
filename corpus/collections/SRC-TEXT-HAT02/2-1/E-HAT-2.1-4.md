@@ -51,11 +51,11 @@ be the unique $2$-simplex.
 
 The simplicial chain groups are
 \[
-C_2\cong\mathbb Z,
+C_2\cong\ZZ,
 \qquad
-C_1\cong\mathbb Z^3,
+C_1\cong\ZZ^3,
 \qquad
-C_0\cong\mathbb Z.
+C_0\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -106,7 +106,7 @@ The simplicial boundary formula gives
 
 ::: pf-step
 
-The map $\partial_2:\mathbb Z\to\mathbb Z^3$ is injective and its image is a primitive rank-one subgroup.
+The map $\partial_2:\ZZ\to\ZZ^3$ is injective and its image is a primitive rank-one subgroup.
 
 ::: pf-proof
 
@@ -125,21 +125,21 @@ Thus the map is injective and the quotient by its image is torsion-free of rank 
 
 Therefore
 \[
-\boxed{H_0\cong\mathbb Z,\qquad H_1\cong\mathbb Z^2,\qquad H_k=0\ (k\ge2).}
+\boxed{H_0\cong\ZZ,\qquad H_1\cong\ZZ^2,\qquad H_k=0\ (k\ge2).}
 \]
 
 ::: pf-proof
 
 Since $\partial_1=0$,
 \[
-H_0=C_0\cong\mathbb Z.
+H_0=C_0\cong\ZZ.
 \]
 Also
 \[
 H_1=\ker\partial_1/\operatorname{im}\partial_2
 \cong
-\mathbb Z^3/\langle(1,-1,1)\rangle
-\cong\mathbb Z^2.
+\ZZ^3/\langle(1,-1,1)\rangle
+\cong\ZZ^2.
 \]
 Injectivity of $\partial_2$ gives $H_2=0$, and there are no higher simplices.
 

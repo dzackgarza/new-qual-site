@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-For $a > 0$, let $(S_a f)(x) = f(x/a)$ for Lebesgue measurable functions $f$ on $\mathbb{R}$.
-Then for any $f \in L^1(\mathbb{R}, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
+For $a > 0$, let $(S_a f)(x) = f(x/a)$ for Lebesgue measurable functions $f$ on $\RR$.
+Then for any $f \in L^1(\RR, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
 :::
 
 ::: {.solution}
@@ -34,15 +34,15 @@ Then for any $f \in L^1(\mathbb{R}, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
 
 ::: {.pf-step #s1}
 
-$\|S_af\|_1=a\|f\|_1$ for $a>0$ and $f\in L^1(\mathbb R)$.
+$\|S_af\|_1=a\|f\|_1$ for $a>0$ and $f\in L^1(\RR)$.
 
 ::: pf-proof
 
 For $a>0$, the change of variables $y=x/a$ gives
 \[
 \|S_af\|_1
-=\int_{\mathbb R}|f(x/a)|\,dx
-=a\int_{\mathbb R}|f(y)|\,dy
+=\int_{\RR}|f(x/a)|\,dx
+=a\int_{\RR}|f(y)|\,dy
 =a\|f\|_1.
 \]
 Hence
@@ -57,11 +57,11 @@ In particular, the operators $S_a$ are uniformly bounded for $a$ in any fixed ne
 
 ::: {.pf-step #s2}
 
-$\|S_ag-g\|_1\to0$ as $a\to1$ for every $g\in C_c(\mathbb R)$.
+$\|S_ag-g\|_1\to0$ as $a\to1$ for every $g\in C_c(\RR)$.
 
 ::: pf-proof
 
-Let $g\in C_c(\mathbb R)$ and choose $M>0$ with
+Let $g\in C_c(\RR)$ and choose $M>0$ with
 \[
 \operatorname{supp}g\subset[-M,M].
 \]
@@ -69,7 +69,7 @@ Restrict first to $a\in[1/2,2]$. Then
 \[
 \operatorname{supp}(S_ag)\subset[-2M,2M].
 \]
-Since $g$ is uniformly continuous on $\mathbb R$ and
+Since $g$ is uniformly continuous on $\RR$ and
 \[
 \sup_{|x|\le2M}|x/a-x|\longrightarrow0
 \qquad(a\to1),
@@ -89,11 +89,11 @@ Both functions vanish outside a fixed compact interval, so
 
 ::: pf-step
 
-$\|S_af-f\|_1\to0$ as $a\to1$ for every $f\in L^1(\mathbb R)$.
+$\|S_af-f\|_1\to0$ as $a\to1$ for every $f\in L^1(\RR)$.
 
 ::: pf-proof
 
-Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $g\in C_c(\mathbb R)$ such that
+Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Choose $g\in C_c(\RR)$ such that
 \[
 \|f-g\|_1<\varepsilon.
 \]

@@ -26,7 +26,7 @@ Show that $\mathcal A$ is the smallest $\sigma$-algebra on $X$ that contains all
 \[
 S(t,B)=\{f\in X:f(t)\in B\},
 \]
-where $t\in[0,1]$ and $B\subset\mathbb R$ is a Borel set in $\mathbb R$.
+where $t\in[0,1]$ and $B\subset\RR$ is a Borel set in $\RR$.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ Let
 =
 \sigma\bigl(
 S(t,B):
-t\in[0,1],\ B\in\mathcal B(\mathbb R)
+t\in[0,1],\ B\in\mathcal B(\RR)
 \bigr).
 \]
 We prove
@@ -49,7 +49,7 @@ We prove
 
 For each \(t\in[0,1]\), define the evaluation map
 \[
-e_t:X\to\mathbb R,
+e_t:X\to\RR,
 \qquad
 e_t(f)=f(t).
 \]
@@ -79,7 +79,7 @@ Thus \(e_t\) is \(1\)-Lipschitz.
 
 ::: pf-step
 
-For every Borel set \(B\subseteq\mathbb R\),
+For every Borel set \(B\subseteq\RR\),
 \[
 \boxed{
 S(t,B)=e_t^{-1}(B)\in\mathcal A}.
@@ -208,7 +208,7 @@ It is
 \[
 S\bigl(q,[g(q)-r,g(q)+r]\bigr),
 \]
-and the interval is Borel in \(\mathbb R\).
+and the interval is Borel in \(\RR\).
 
 :::
 
@@ -297,7 +297,7 @@ Let \(D\subset X\) be a countable dense subset from step [](#s1-9){.pf-ref}. The
 \[
 \mathcal B
 =
-\{B(g,r):g\in D,\ r\in\mathbb Q_{>0}\}
+\{B(g,r):g\in D,\ r\in\QQ_{>0}\}
 \]
 is countable.
 
@@ -381,7 +381,7 @@ Combining the two inclusions,
 =
 \sigma\bigl(
 S(t,B):
-t\in[0,1],\ B\in\mathcal B(\mathbb R)
+t\in[0,1],\ B\in\mathcal B(\RR)
 \bigr)}.
 \]
 

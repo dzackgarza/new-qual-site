@@ -42,18 +42,18 @@ Let $f, g \in L^1(\RR)$ be Borel measurable.
 
 ::: pf-step
 
-Prove measurability on $\mathbb R^2$.
+Prove measurability on $\RR^2$.
 
 ::: pf-proof
 
 The maps
 \[
-S:\mathbb R^2\to\mathbb R,
+S:\RR^2\to\RR,
 \qquad S(x,y)=x-y,
 \]
 and
 \[
-\pi_2:\mathbb R^2\to\mathbb R,
+\pi_2:\RR^2\to\RR,
 \qquad \pi_2(x,y)=y,
 \]
 are continuous. Since $f$ and $g$ are Borel measurable, so are
@@ -68,7 +68,7 @@ Their product
 \[
 F(x,y)=f(x-y)g(y)
 \]
-is therefore Borel measurable on $\mathbb R^2$.
+is therefore Borel measurable on $\RR^2$.
 
 :::
 
@@ -76,7 +76,7 @@ is therefore Borel measurable on $\mathbb R^2$.
 
 ::: pf-step
 
-Show that the absolute-value kernel is integrable on $\mathbb R^2$.
+Show that the absolute-value kernel is integrable on $\RR^2$.
 
 ::: pf-proof
 
@@ -87,18 +87,18 @@ The function
 is nonnegative and measurable. Tonelli's theorem therefore applies without any prior integrability assumption and gives
 \[
 \begin{aligned}
-\int_{\mathbb R^2}|f(x-y)|\,|g(y)|\,dx\,dy
-&=\int_{\mathbb R}|g(y)|
-   \left(\int_{\mathbb R}|f(x-y)|\,dx\right)dy\\
-&=\int_{\mathbb R}|g(y)|\,\|f\|_1\,dy\\
+\int_{\RR^2}|f(x-y)|\,|g(y)|\,dx\,dy
+&=\int_{\RR}|g(y)|
+   \left(\int_{\RR}|f(x-y)|\,dx\right)dy\\
+&=\int_{\RR}|g(y)|\,\|f\|_1\,dy\\
 &=\|f\|_1\|g\|_1<\infty,
 \end{aligned}
 \]
 where translation invariance of Lebesgue measure gives
 \[
-\int_{\mathbb R}|f(x-y)|\,dx=\|f\|_1.
+\int_{\RR}|f(x-y)|\,dx=\|f\|_1.
 \]
-Thus $F\in L^1(\mathbb R^2)$.
+Thus $F\in L^1(\RR^2)$.
 
 :::
 
@@ -110,13 +110,13 @@ Obtain almost-everywhere existence of the convolution slices.
 
 ::: pf-proof
 
-Since $|F|\in L^1(\mathbb R^2)$, Fubini's theorem implies that for almost every $x\in\mathbb R$,
+Since $|F|\in L^1(\RR^2)$, Fubini's theorem implies that for almost every $x\in\RR$,
 \[
-\int_{\mathbb R}|f(x-y)g(y)|\,dy<\infty.
+\int_{\RR}|f(x-y)g(y)|\,dy<\infty.
 \]
 Hence for almost every $x$ the convolution integral
 \[
-(f*g)(x)=\int_{\mathbb R}f(x-y)g(y)\,dy
+(f*g)(x)=\int_{\RR}f(x-y)g(y)\,dy
 \]
 is absolutely convergent.
 
@@ -133,18 +133,18 @@ Prove Young's $L^1$ inequality.
 For every $x$ for which the convolution integral exists,
 \[
 |(f*g)(x)|
-\le \int_{\mathbb R}|f(x-y)|\,|g(y)|\,dy.
+\le \int_{\RR}|f(x-y)|\,|g(y)|\,dy.
 \]
 Integrating in $x$ and using Tonelli together with Step 2,
 \[
 \begin{aligned}
 \|f*g\|_1
-&\le \int_{\mathbb R}\int_{\mathbb R}
+&\le \int_{\RR}\int_{\RR}
 |f(x-y)|\,|g(y)|\,dy\,dx\\
 &=\|f\|_1\|g\|_1.
 \end{aligned}
 \]
-Therefore $f*g\in L^1(\mathbb R)$ and
+Therefore $f*g\in L^1(\RR)$ and
 \[
 \boxed{\|f*g\|_1\le \|f\|_1\|g\|_1.}
 \]

@@ -21,7 +21,7 @@ Solve $\left( - \frac { d ^ { 2 } } { d x ^ { 2 } } + m ^ { 2 } \right) G ( x ) 
 
 ::: {.solution}
 
-Assume $m>0$ and seek the Green function on $\mathbb R$ that decays as $|x|\to\infty$.
+Assume $m>0$ and seek the Green function on $\RR$ that decays as $|x|\to\infty$.
 
 ::: pf
 

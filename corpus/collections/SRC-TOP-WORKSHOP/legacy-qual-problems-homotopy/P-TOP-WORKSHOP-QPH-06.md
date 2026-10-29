@@ -55,13 +55,13 @@ By definition, a retraction onto $S^{n-1}$ restricts to the identity on $S^{n-1}
 
 The reduced homology groups satisfy
 \[
-\widetilde H_{n-1}(S^{n-1};\mathbb Z)
+\widetilde H_{n-1}(S^{n-1};\ZZ)
 \cong
-\mathbb Z
+\ZZ
 \]
 and
 \[
-\widetilde H_{n-1}(B^n;\mathbb Z)
+\widetilde H_{n-1}(B^n;\ZZ)
 =
 0.
 \]
@@ -71,10 +71,10 @@ and
 
 The sphere has reduced homology
 \[
-\widetilde H_k(S^{n-1};\mathbb Z)
+\widetilde H_k(S^{n-1};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=n-1,\\
+\ZZ,&k=n-1,\\
 0,&k\ne n-1.
 \end{cases}
 \]
@@ -90,7 +90,7 @@ Applying reduced homology in degree $n-1$ to step [](#s1-1){.pf-ref} gives
 \[
 r_*\circ i_*
 =
-\operatorname{id}_{\widetilde H_{n-1}(S^{n-1};\mathbb Z)}.
+\operatorname{id}_{\widetilde H_{n-1}(S^{n-1};\ZZ)}.
 \]
 
 
@@ -130,14 +130,14 @@ The identity in step [](#s1-3){.pf-ref} is impossible.
 
 By step [](#s1-2){.pf-ref},
 \[
-\widetilde H_{n-1}(B^n;\mathbb Z)=0.
+\widetilde H_{n-1}(B^n;\ZZ)=0.
 \]
 Therefore
 \[
 i_*:
-\widetilde H_{n-1}(S^{n-1};\mathbb Z)
+\widetilde H_{n-1}(S^{n-1};\ZZ)
 \longrightarrow
-\widetilde H_{n-1}(B^n;\mathbb Z)
+\widetilde H_{n-1}(B^n;\ZZ)
 \]
 is the zero homomorphism. Hence
 \[
@@ -146,9 +146,9 @@ r_*\circ i_*=0.
 
 But step [](#s1-2){.pf-ref} also gives
 \[
-\widetilde H_{n-1}(S^{n-1};\mathbb Z)
+\widetilde H_{n-1}(S^{n-1};\ZZ)
 \cong
-\mathbb Z\ne0,
+\ZZ\ne0,
 \]
 so its identity homomorphism is nonzero. This contradicts step [](#s1-3){.pf-ref}.
 

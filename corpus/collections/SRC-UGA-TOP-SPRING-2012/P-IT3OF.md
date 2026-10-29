@@ -73,14 +73,14 @@ X_n=e^0\cup e^1\cup_{a_n}e^2.
 
 The fundamental group is
 \[
-\boxed{\pi_1(X_n)\cong\mathbb Z/n\mathbb Z}.
+\boxed{\pi_1(X_n)\cong\ZZ/n\ZZ}.
 \]
 
 ::: pf-proof
 
 The \(1\)-skeleton is \(S^1\), so
 \[
-\pi_1(S^1)\cong\langle a\rangle\cong\mathbb Z.
+\pi_1(S^1)\cong\langle a\rangle\cong\ZZ.
 \]
 Attaching a \(2\)-cell along a loop kills the normal closure of the homotopy class of its attaching map.
 Since \(a_n\) has degree \(n\), its class in \(\pi_1(S^1)\) is \(a^n\). Seifert--van Kampen therefore gives
@@ -89,7 +89,7 @@ Since \(a_n\) has degree \(n\), its class in \(\pi_1(S^1)\) is \(a^n\). Seifert-
 \cong
 \langle a\mid a^n=1\rangle
 \cong
-\mathbb Z/n\mathbb Z.
+\ZZ/n\ZZ.
 \]
 
 :::
@@ -102,11 +102,11 @@ The cellular chain complex is
 \[
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\;n\;}
-\mathbb Z
+\ZZ
 \xrightarrow{\;0\;}
-\mathbb Z
+\ZZ
 \longrightarrow0.
 \]
 
@@ -114,7 +114,7 @@ The cellular chain complex is
 
 By step [](#s1){.pf-ref}, the cellular chain groups are
 \[
-C_2(X_n)\cong C_1(X_n)\cong C_0(X_n)\cong\mathbb Z.
+C_2(X_n)\cong C_1(X_n)\cong C_0(X_n)\cong\ZZ.
 \]
 The \(1\)-cell begins and ends at the unique \(0\)-cell, so \(\partial_1=0\). For a single \(2\)-cell attached to \(S^1\), the cellular boundary \(\partial_2\) is multiplication by the degree of the attaching map.
 Since
@@ -132,11 +132,11 @@ one has \(\partial_2(m)=nm\).
 The integral homology of \(X_n\) is
 \[
 \boxed{
-H_k(X_n;\mathbb Z)
+H_k(X_n;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/n\mathbb Z,&k=1,\\
+\ZZ,&k=0,\\
+\ZZ/n\ZZ,&k=1,\\
 0,&k\ge2.
 \end{cases}}
 \]
@@ -145,16 +145,16 @@ H_k(X_n;\mathbb Z)
 
 From step [](#s3){.pf-ref},
 \[
-H_0(X_n)=\mathbb Z/\operatorname{im}\partial_1\cong\mathbb Z,
+H_0(X_n)=\ZZ/\operatorname{im}\partial_1\cong\ZZ,
 \]
 \[
 H_1(X_n)
 =
 \ker\partial_1/\operatorname{im}\partial_2
 \cong
-\mathbb Z/n\mathbb Z,
+\ZZ/n\ZZ,
 \]
-and, because \(n\ne0\), multiplication by \(n\) on \(\mathbb Z\) is injective, so
+and, because \(n\ne0\), multiplication by \(n\) on \(\ZZ\) is injective, so
 \[
 H_2(X_n)=\ker\partial_2=0.
 \]
@@ -213,9 +213,9 @@ so \(M\cong\mathbb{RP}^2\).
 
 But step [](#s4){.pf-ref} gives
 \[
-H_1(X_n;\mathbb Z)\cong\mathbb Z/n\mathbb Z\ne0,
+H_1(X_n;\ZZ)\cong\ZZ/n\ZZ\ne0,
 \]
-whereas \(H_1(D^2;\mathbb Z)=0\). Hence the disk is impossible, and the only possible surface is \(\mathbb{RP}^2\).
+whereas \(H_1(D^2;\ZZ)=0\). Hence the disk is impossible, and the only possible surface is \(\mathbb{RP}^2\).
 
 :::
 
@@ -232,15 +232,15 @@ n=2.
 
 By step [](#s6){.pf-ref}, such an \(X_n\) must be homeomorphic to \(\mathbb{RP}^2\). Homology is a homeomorphism invariant, and
 \[
-H_1(\mathbb{RP}^2;\mathbb Z)
+H_1(\mathbb{RP}^2;\ZZ)
 \cong
-\mathbb Z/2\mathbb Z.
+\ZZ/2\ZZ.
 \]
 Comparing with step [](#s4){.pf-ref},
 \[
-\mathbb Z/n\mathbb Z
+\ZZ/n\ZZ
 \cong
-\mathbb Z/2\mathbb Z,
+\ZZ/2\ZZ,
 \]
 which for \(n\ge2\) forces \(n=2\).
 

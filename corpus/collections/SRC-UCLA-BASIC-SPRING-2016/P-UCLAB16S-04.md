@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Given continuous functions $\alpha:[0,1]\to\mathbb R$ and $\beta:[0,1]\to[0,1)$, define $f_n:[0,1]\to\mathbb R$ recursively by
+Given continuous functions $\alpha:[0,1]\to\RR$ and $\beta:[0,1]\to[0,1)$, define $f_n:[0,1]\to\RR$ recursively by
 \[
 f_{n+1}(x)=\alpha(x)+\int_0^x \beta(t)f_n(t)\,dt,
 \qquad f_0(x)=0.

@@ -27,7 +27,7 @@ audit:
 (a) The function
 
 $$
-\int_ {0} ^ {z} \frac {d \zeta}{\sqrt {\zeta (\zeta - 1) (\zeta - \lambda)}}, \quad \mathrm{with} \lambda \in \mathbb {R} \mathrm{and} \lambda \neq 1
+\int_ {0} ^ {z} \frac {d \zeta}{\sqrt {\zeta (\zeta - 1) (\zeta - \lambda)}}, \quad \mathrm{with} \lambda \in \RR \mathrm{and} \lambda \neq 1
 $$
 
 maps the upper half-plane conformally to a rectangle, one of whose vertices is the image of the point at infinity.
@@ -42,7 +42,7 @@ is a square whose side lengths are $\textstyle { \frac { \Gamma ^ { 2 } ( 1 / 4 
 :::
 
 ::: {.solution}
-For part (a), the finite branch points must be distinct, so the intended hypothesis is $\lambda\in\mathbb R\setminus\{0,1\}$. Choose the branch of
+For part (a), the finite branch points must be distinct, so the intended hypothesis is $\lambda\in\RR\setminus\{0,1\}$. Choose the branch of
 \[
 F'(z)=\frac1{\sqrt{z(z-1)(z-\lambda)}}
 \]

@@ -24,18 +24,18 @@ audit:
 ---
 
 ::: {.problem}
-Let $\varphi \in C_c^\infty(\mathbb{R})$ and $f : \mathbb{R} \to \mathbb{R}$ be an absolutely continuous function with compact support, and $\varphi * f$ be the convolution of $\varphi$ and $f$:
+Let $\varphi \in C_c^\infty(\RR)$ and $f : \RR \to \RR$ be an absolutely continuous function with compact support, and $\varphi * f$ be the convolution of $\varphi$ and $f$:
 $$
-(\varphi * f)(x) := \int_{\mathbb{R}} \varphi(x - y) f(y)\,dy.
+(\varphi * f)(x) := \int_{\RR} \varphi(x - y) f(y)\,dy.
 $$
 
-(a) Show $\frac{d}{dx}(\varphi * f)(x) = (\varphi' * f)(x)$ for all $x \in \mathbb{R}$.
+(a) Show $\frac{d}{dx}(\varphi * f)(x) = (\varphi' * f)(x)$ for all $x \in \RR$.
 
-(b) Show $(\varphi' * f)(x) = (\varphi * f')(x)$ for all $x \in \mathbb{R}$.
+(b) Show $(\varphi' * f)(x) = (\varphi * f')(x)$ for all $x \in \RR$.
 
-(c) Explain why there exists $f_n \in C_c^\infty(\mathbb{R})$ such that
+(c) Explain why there exists $f_n \in C_c^\infty(\RR)$ such that
 $$
-\lim_{n \to \infty} \|f_n - f\|_{L^\infty(\mathbb{R}, m)} = 0 = \lim_{n \to \infty} \|f' - f_n'\|_{L^1(\mathbb{R}, m)}.
+\lim_{n \to \infty} \|f_n - f\|_{L^\infty(\RR, m)} = 0 = \lim_{n \to \infty} \|f' - f_n'\|_{L^1(\RR, m)}.
 $$
 :::
 
@@ -49,10 +49,10 @@ Differentiate the convolution in $x$.
 
 ::: pf-proof
 
-Because $f$ has compact support and $\varphi'\in C_c(\mathbb R)$, differentiation under the integral is justified by dominated convergence. Thus for every $x$,
+Because $f$ has compact support and $\varphi'\in C_c(\RR)$, differentiation under the integral is justified by dominated convergence. Thus for every $x$,
 \[
 \frac d{dx}(\varphi*f)(x)
-=\int_{\mathbb R}\varphi'(x-y)f(y)\,dy
+=\int_{\RR}\varphi'(x-y)f(y)\,dy
 =(\varphi'*f)(x).
 \]
 
@@ -74,8 +74,8 @@ integration by parts gives
 \[
 \begin{aligned}
 (\varphi'*f)(x)
-&=-\int_{\mathbb R}\frac d{dy}\bigl(\varphi(x-y)\bigr)f(y)\,dy\\
-&=\int_{\mathbb R}\varphi(x-y)f'(y)\,dy.
+&=-\int_{\RR}\frac d{dy}\bigl(\varphi(x-y)\bigr)f(y)\,dy\\
+&=\int_{\RR}\varphi(x-y)f'(y)\,dy.
 \end{aligned}
 \]
 There is no boundary term because both factors have compact support. Hence
@@ -93,9 +93,9 @@ Approximate $f$ by smooth compactly supported functions.
 
 ::: pf-proof
 
-Let $\rho\in C_c^\infty(\mathbb R)$ be nonnegative with
+Let $\rho\in C_c^\infty(\RR)$ be nonnegative with
 \[
-\int_{\mathbb R}\rho=1,
+\int_{\RR}\rho=1,
 \]
 and set
 \[
@@ -103,9 +103,9 @@ and set
 \qquad
 f_\varepsilon=\rho_\varepsilon*f.
 \]
-Then $f_\varepsilon\in C_c^\infty(\mathbb R)$.
+Then $f_\varepsilon\in C_c^\infty(\RR)$.
 
-Because $f$ is continuous with compact support, it is uniformly continuous on $\mathbb R$. Therefore
+Because $f$ is continuous with compact support, it is uniformly continuous on $\RR$. Therefore
 \[
 \begin{aligned}
 |f_\varepsilon(x)-f(x)|
@@ -118,7 +118,7 @@ where $C$ bounds the support of $\rho$. Hence
 \|f_\varepsilon-f\|_\infty\longrightarrow0.
 \]
 
-Since $f$ is absolutely continuous with compact support, $f'\in L^1(\mathbb R)$. By Step 2,
+Since $f$ is absolutely continuous with compact support, $f'\in L^1(\RR)$. By Step 2,
 \[
 f_\varepsilon'=\rho_\varepsilon*f'.
 \]

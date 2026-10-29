@@ -24,11 +24,11 @@ When $n$ is even, show that any continuous map $f : \mathbb{CP}^n \to \mathbb{CP
 
 ::: pf-step
 
-Let $x\in H^2(\mathbb{CP}^n;\mathbb Q)$ be the standard generator. Then $f^*x=ax$ for some $a\in\mathbb Q$.
+Let $x\in H^2(\mathbb{CP}^n;\QQ)$ be the standard generator. Then $f^*x=ax$ for some $a\in\QQ$.
 
 ::: pf-proof
 
-$H^2(\mathbb{CP}^n;\mathbb Q)$ is one-dimensional.
+$H^2(\mathbb{CP}^n;\QQ)$ is one-dimensional.
 
 :::
 

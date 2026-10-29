@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF21C
 kind: problem
-title: $\sqrt[3]{2}$ not in a cyclotomic field $\mathbb{Q}(\zeta_n)$
+title: $\sqrt[3]{2}$ not in a cyclotomic field $\QQ(\zeta_n)$
 classification:
   areas:
   - algebra
@@ -25,38 +25,38 @@ audit:
 ---
 
 ::: {.problem}
-Let $\zeta \in \mathbb{C}$ be a primitive $n$th root of unity for some integer $n \geq 2$.
-Prove that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta)$.
+Let $\zeta \in \CC$ be a primitive $n$th root of unity for some integer $n \geq 2$.
+Prove that $\sqrt[3]{2} \notin \QQ(\zeta)$.
 *(Use the Fundamental Theorem of Galois Theory).*
 :::
 
 ::: {.solution}
 Set
 \[
-L=\mathbb Q(\zeta).
+L=\QQ(\zeta).
 \]
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The extension $L/\mathbb Q$ is finite abelian Galois.
+The extension $L/\QQ$ is finite abelian Galois.
 
 ::: pf-proof
 
-The field $L$ is the splitting field over $\mathbb Q$ of the $n$th cyclotomic polynomial, so $L/\mathbb Q$ is finite Galois.
+The field $L$ is the splitting field over $\QQ$ of the $n$th cyclotomic polynomial, so $L/\QQ$ is finite Galois.
 Moreover,
 \[
-\operatorname{Gal}(L/\mathbb Q)
+\operatorname{Gal}(L/\QQ)
 \hookrightarrow
-(\mathbb Z/n\mathbb Z)^\times,
+(\ZZ/n\ZZ)^\times,
 \]
 indeed every automorphism is determined by
 \[
 \zeta\longmapsto\zeta^a
 \]
 for some $a$ prime to $n$.
-Hence $\operatorname{Gal}(L/\mathbb Q)$ is abelian.
+Hence $\operatorname{Gal}(L/\QQ)$ is abelian.
 
 :::
 
@@ -66,9 +66,9 @@ Hence $\operatorname{Gal}(L/\mathbb Q)$ is abelian.
 
 Every intermediate field
 \[
-\mathbb Q\subseteq E\subseteq L
+\QQ\subseteq E\subseteq L
 \]
-is Galois over $\mathbb Q$.
+is Galois over $\QQ$.
 
 ::: pf-proof
 
@@ -79,10 +79,10 @@ E=L^H
 for the subgroup
 \[
 H=\operatorname{Gal}(L/E)
-\le\operatorname{Gal}(L/\mathbb Q).
+\le\operatorname{Gal}(L/\QQ).
 \]
 By step [](#s1){.pf-ref}, the ambient Galois group is abelian, so every subgroup is normal.
-The Galois correspondence therefore implies that $E/\mathbb Q$ is Galois.
+The Galois correspondence therefore implies that $E/\QQ$ is Galois.
 
 :::
 
@@ -92,7 +92,7 @@ The Galois correspondence therefore implies that $E/\mathbb Q$ is Galois.
 
 The extension
 \[
-\mathbb Q(\sqrt[3]{2})/\mathbb Q
+\QQ(\sqrt[3]{2})/\QQ
 \]
 is not Galois.
 
@@ -102,7 +102,7 @@ The polynomial
 \[
 x^3-2
 \]
-is irreducible over $\mathbb Q$ by Eisenstein's criterion at $2$, so it is the minimal polynomial of $\sqrt[3]{2}$.
+is irreducible over $\QQ$ by Eisenstein's criterion at $2$, so it is the minimal polynomial of $\sqrt[3]{2}$.
 Its three roots are
 \[
 \sqrt[3]{2},
@@ -112,8 +112,8 @@ Its three roots are
 \omega^2\sqrt[3]{2},
 \]
 where $\omega$ is a primitive cube root of unity.
-The field $\mathbb Q(\sqrt[3]{2})$ is contained in $\mathbb R$, whereas the latter two roots are nonreal.
-Thus the minimal polynomial does not split over $\mathbb Q(\sqrt[3]{2})$, so this extension is not normal and hence is not Galois.
+The field $\QQ(\sqrt[3]{2})$ is contained in $\RR$, whereas the latter two roots are nonreal.
+Thus the minimal polynomial does not split over $\QQ(\sqrt[3]{2})$, so this extension is not normal and hence is not Galois.
 
 :::
 
@@ -123,7 +123,7 @@ Thus the minimal polynomial does not split over $\mathbb Q(\sqrt[3]{2})$, so thi
 
 One has
 \[
-\sqrt[3]{2}\notin\mathbb Q(\zeta).
+\sqrt[3]{2}\notin\QQ(\zeta).
 \]
 
 ::: pf-proof
@@ -134,17 +134,17 @@ Suppose instead that
 \]
 Then
 \[
-\mathbb Q
+\QQ
 \subseteq
-\mathbb Q(\sqrt[3]{2})
+\QQ(\sqrt[3]{2})
 \subseteq
 L.
 \]
-By step [](#s2){.pf-ref}, the intermediate extension $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ would be Galois.
+By step [](#s2){.pf-ref}, the intermediate extension $\QQ(\sqrt[3]{2})/\QQ$ would be Galois.
 This contradicts step [](#s3){.pf-ref}.
 Therefore
 \[
-\sqrt[3]{2}\notin\mathbb Q(\zeta).
+\sqrt[3]{2}\notin\QQ(\zeta).
 \]
 
 :::

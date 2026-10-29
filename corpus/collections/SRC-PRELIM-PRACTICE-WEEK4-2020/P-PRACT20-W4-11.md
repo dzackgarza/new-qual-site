@@ -15,17 +15,17 @@ review: draft
 ---
 
 ::: {.problem}
-If V, W are 2-dimensional subspaces of $\mathbb { R } ^ { 4 }$ , what are the possible dimensions of $V \cap W ?$ What if $V , W$ are 4-dimensional subspaces of $\mathbb { R } ^ { 7 } ?$
+If V, W are 2-dimensional subspaces of $\RR ^ { 4 }$ , what are the possible dimensions of $V \cap W ?$ What if $V , W$ are 4-dimensional subspaces of $\RR ^ { 7 } ?$
 :::
 
 ::: {.solution}
-Suppose that $V , W$ are subspaces of $\mathbb { R } ^ { n }$ . We have $V \cap W \subseteq V , W$ so the dimension of the intersection can no higher than that of $V$ or $W$ . But we also have the dimension formula
+Suppose that $V , W$ are subspaces of $\RR ^ { n }$ . We have $V \cap W \subseteq V , W$ so the dimension of the intersection can no higher than that of $V$ or $W$ . But we also have the dimension formula
 
 $$
 \dim \left( V \cap W \right) = \dim \left( V \right) + \dim \left( W \right) - \dim \left( \operatorname { s p a n } \left( V \cup W \right) \right)
 $$
 
-and span $( V \cup W ) \subset \mathbb { R } ^ { n }$ . Thus
+and span $( V \cup W ) \subset \RR ^ { n }$ . Thus
 
 $$
 \dim \left( V \cap W \right) \geq \dim \left( V \right) + \dim \left( W \right) - n .

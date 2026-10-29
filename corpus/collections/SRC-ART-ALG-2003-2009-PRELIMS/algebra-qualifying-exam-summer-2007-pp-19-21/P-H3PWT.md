@@ -93,24 +93,24 @@ splitting field of $x^3-2$.
 ::: pf-proof
 
 Let $\alpha=\sqrt[3]{2}$ be real and let $\zeta$ be a primitive
-cube root of unity. Inside $\mathbb C$, set
+cube root of unity. Inside $\CC$, set
 $$
-F=\mathbb Q,\qquad K=\mathbb Q(\alpha),\qquad
-L=\mathbb Q(\zeta\alpha).
+F=\QQ,\qquad K=\QQ(\alpha),\qquad
+L=\QQ(\zeta\alpha).
 $$
 Both displayed generators have minimal polynomial $x^3-2$, which
 is irreducible by Eisenstein's criterion at $2$ [@DF04]. Thus
-$[K:\mathbb Q]=[L:\mathbb Q]=3$. The fields are different because
-$K\subseteq\mathbb R$, whereas $\zeta\alpha$ is nonreal.
+$[K:\QQ]=[L:\QQ]=3$. The fields are different because
+$K\subseteq\RR$, whereas $\zeta\alpha$ is nonreal.
 
-The degree $[K\cap L:\mathbb Q]$ divides $3$ by the tower law.
+The degree $[K\cap L:\QQ]$ divides $3$ by the tower law.
 If it were $3$, then $K\cap L=K=L$, contrary to distinctness.
-Hence it is $1$ and $K\cap L=\mathbb Q$.
+Hence it is $1$ and $K\cap L=\QQ$.
 
 The compositum contains
 $\zeta=(\zeta\alpha)/\alpha$, so
 $$
-KL=\mathbb Q(\alpha,\zeta)=K(\zeta).
+KL=\QQ(\alpha,\zeta)=K(\zeta).
 $$
 The element $\zeta$ satisfies $x^2+x+1$ and does not belong to
 the real field $K$, so $[K(\zeta):K]=2$. Consequently

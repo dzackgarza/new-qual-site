@@ -53,11 +53,11 @@ Show that the punctured sphere $S^n \setminus \{p\}$ is contractible.
 ::: pf-proof
 
 ::: pf-step
-Stereographic projection from the pole $p$ gives a homeomorphism $\phi \colon S^n \setminus \{p\} \to \mathbb{R}^n$.
+Stereographic projection from the pole $p$ gives a homeomorphism $\phi \colon S^n \setminus \{p\} \to \RR^n$.
 :::
 
 ::: pf-step
-Euclidean space $\mathbb{R}^n$ is convex, hence contractible to the origin $0 \in \mathbb{R}^n$ via the straight-line homotopy $h(y, t) = (1-t)y$.
+Euclidean space $\RR^n$ is convex, hence contractible to the origin $0 \in \RR^n$ via the straight-line homotopy $h(y, t) = (1-t)y$.
 :::
 
 ::: pf-step
@@ -90,7 +90,7 @@ Define $H \colon X \times [0, 1] \to S^n$ by $H(x, t) = H_0(f(x), t)$.
 :::
 
 ::: pf-step
-Equivalently, using normalized straight-line geodesics in $\mathbb{R}^{n+1}$: Since $f(x) \neq -N$ for all $x \in X$, $(1-t)f(x) + t N \neq 0$ for all $t \in [0, 1]$, so $$H(x, t) = \frac{(1-t)f(x) + t N}{\|(1-t)f(x) + t N\|}$$ is well-defined, continuous, and lands in $S^n$.
+Equivalently, using normalized straight-line geodesics in $\RR^{n+1}$: Since $f(x) \neq -N$ for all $x \in X$, $(1-t)f(x) + t N \neq 0$ for all $t \in [0, 1]$, so $$H(x, t) = \frac{(1-t)f(x) + t N}{\|(1-t)f(x) + t N\|}$$ is well-defined, continuous, and lands in $S^n$.
 :::
 
 ::: {.pf-step #s3-3}

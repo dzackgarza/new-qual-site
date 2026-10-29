@@ -49,7 +49,7 @@ The attaching map $\alpha$ is not null-homotopic.
 ::: pf-proof
 If it were null-homotopic, the resulting space would be homotopy equivalent to
 $$S^3\vee S^3\vee S^6.$$
-In a wedge, the product of the two degree-$3$ cohomology generators is zero. But in $S^3\times S^3$, the cross product of the two factor generators is the nonzero fundamental class in $H^6(S^3\times S^3;\mathbb Z)$. Hence the two spaces cannot be homotopy equivalent.
+In a wedge, the product of the two degree-$3$ cohomology generators is zero. But in $S^3\times S^3$, the cross product of the two factor generators is the nonzero fundamental class in $H^6(S^3\times S^3;\ZZ)$. Hence the two spaces cannot be homotopy equivalent.
 :::
 
 :::

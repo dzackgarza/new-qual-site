@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G \subset \mathbb{C}$ be a connected open set with $0 \in G$, and $f \in H(G)$, with $f(0) = 0$, $f'(0) = 1$ and $f(G) \subset G$.
+Let $G \subset \CC$ be a connected open set with $0 \in G$, and $f \in H(G)$, with $f(0) = 0$, $f'(0) = 1$ and $f(G) \subset G$.
 
-(a) Show that if $G \neq \mathbb{C}$ and $G$ is simply connected (not necessarily bounded) then $f(z) \equiv z$.
-Does the same conclusion hold for $G = \mathbb{C}$?
+(a) Show that if $G \neq \CC$ and $G$ is simply connected (not necessarily bounded) then $f(z) \equiv z$.
+Does the same conclusion hold for $G = \CC$?
 
 (b) Show that if $G$ is bounded (not necessarily simply connected) then $f(z) \equiv z$.
 
@@ -25,7 +25,7 @@ Consider the $n$th iterate $f_n := f \circ f \circ \cdots \circ f$ ($n$ times), 
 :::
 
 ::: {.solution}
-For (a), assume first that $G\ne\mathbb C$ is simply connected. By the Riemann
+For (a), assume first that $G\ne\CC$ is simply connected. By the Riemann
 mapping theorem there is a conformal map $\phi:G\to\mathbb D$; composing with a
 disk automorphism, arrange $\phi(0)=0$. Then
 \[
@@ -34,8 +34,8 @@ F=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D
 fixes $0$, and the chain rule gives $F'(0)=f'(0)=1$. Schwarz's lemma and its
 equality case imply $F(z)=z$, hence $f(z)=z$ on $G$.
 
-For $G=\mathbb C$ the conclusion need not hold: for example
-$f(z)=z+z^2$ satisfies $f(0)=0$ and $f'(0)=1$ and maps $\mathbb C$ into itself,
+For $G=\CC$ the conclusion need not hold: for example
+$f(z)=z+z^2$ satisfies $f(0)=0$ and $f'(0)=1$ and maps $\CC$ into itself,
 but is not the identity.
 
 For (b), suppose $G$ is bounded and $f$ is not the identity. Write near $0$

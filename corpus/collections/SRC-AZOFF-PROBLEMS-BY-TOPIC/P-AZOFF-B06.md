@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F:\mathbb R^2\to\mathbb R$ be continuously differentiable, with $F(0,0)=0$ and
+Let $F:\RR^2\to\RR$ be continuously differentiable, with $F(0,0)=0$ and
 \[
 \|\nabla F(0,0)\|<1.
 \]

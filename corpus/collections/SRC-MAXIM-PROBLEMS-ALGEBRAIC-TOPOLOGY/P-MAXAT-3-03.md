@@ -23,7 +23,7 @@ Prove Borsuk-Uhlam theorem.
 
 The Borsuk--Ulam theorem states that for every continuous map
 \[
-f:S^n\to\mathbb R^n
+f:S^n\to\RR^n
 \]
 there exists $x\in S^n$ such that
 \[

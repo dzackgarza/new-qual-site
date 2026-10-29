@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-For each of the following topologies on the underlying set $\mathbb R$, determine whether the resulting space is connected or path-connected, and determine its connected components and path components.
+For each of the following topologies on the underlying set $\RR$, determine whether the resulting space is connected or path-connected, and determine its connected components and path components.
 
 1. The excluded-point topology (with excluded point $0$).
 
@@ -27,11 +27,11 @@ For each of the following topologies on the underlying set $\mathbb R$, determin
 In the excluded-point topology with excluded point $0$, the open sets
 are
 \[
-\mathbb R
+\RR
 \]
 and all subsets of
 \[
-\mathbb R\setminus\{0\}.
+\RR\setminus\{0\}.
 \]
 
 
@@ -49,12 +49,12 @@ set containing $0$ is the whole space.
 
 Let
 \[
-x,y\in\mathbb R
+x,y\in\RR
 \]
 be distinct nonzero points.
 Define
 \[
-\gamma:[0,1]\to\mathbb R
+\gamma:[0,1]\to\RR
 \]
 by
 \[
@@ -83,7 +83,7 @@ If
 \]
 then by the excluded-point topology
 \[
-U=\mathbb R,
+U=\RR,
 \]
 so
 \[
@@ -154,7 +154,7 @@ or
 both open in $[0,1]$.
 If $0\in U$, then
 \[
-U=\mathbb R
+U=\RR
 \]
 and the preimage is all of $[0,1]$.
 Thus $\eta$ is continuous.
@@ -183,7 +183,7 @@ Thus every two points can be joined by a path.
 Therefore, in the excluded-point topology,
 \[
 \boxed{
-\text{there is exactly one path component and exactly one connected component, namely }\mathbb R.
+\text{there is exactly one path component and exactly one connected component, namely }\RR.
 }
 \]
 
@@ -220,11 +220,11 @@ This is the definition of the included-point topology.
 
 Let
 \[
-x,y\in\mathbb R.
+x,y\in\RR.
 \]
 Define
 \[
-\gamma:[0,1]\to\mathbb R
+\gamma:[0,1]\to\RR
 \]
 by
 \[
@@ -282,7 +282,7 @@ Therefore the included-point real line is path-connected.
 
 Step [](#s1-7){.pf-ref} constructs a path between arbitrary
 \[
-x,y\in\mathbb R.
+x,y\in\RR.
 \]
 
 :::
@@ -294,7 +294,7 @@ x,y\in\mathbb R.
 Consequently, in the included-point topology,
 \[
 \boxed{
-\text{there is exactly one path component and exactly one connected component, namely }\mathbb R.
+\text{there is exactly one path component and exactly one connected component, namely }\RR.
 }
 \]
 
@@ -322,13 +322,13 @@ The complete answer is:
 \text{excluded-point}
 &\mathrm{yes}
 &\mathrm{yes}
-&\mathbb R
-&\mathbb R\\
+&\RR
+&\RR\\
 \text{included-point}
 &\mathrm{yes}
 &\mathrm{yes}
-&\mathbb R
-&\mathbb R
+&\RR
+&\RR
 \end{array}
 }
 \]

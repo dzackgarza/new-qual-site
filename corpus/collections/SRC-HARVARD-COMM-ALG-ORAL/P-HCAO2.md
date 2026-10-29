@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO2
 kind: problem
-title: The unit group of $\mathbb Z/(q-1)\mathbb Z$
+title: The unit group of $\ZZ/(q-1)\ZZ$
 classification:
   areas:
   - algebra
@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Let $q$ be an integer.
-What is $\left(\mathbb Z/(q-1)\mathbb Z\right)^\times$?
+What is $\left(\ZZ/(q-1)\ZZ\right)^\times$?
 :::
 
 ::: {.solution}
@@ -36,7 +36,7 @@ with $C_1$ the trivial group. For $N\geq2$, factor
 $N=\prod_{\ell\mid N}\ell^{e_\ell}$ into prime powers.
 Then
 $$
-(\mathbb Z/N\mathbb Z)^\times
+(\ZZ/N\ZZ)^\times
 \cong\prod_{\ell\mid N}U(\ell,e_\ell),
 $$
 where
@@ -50,16 +50,16 @@ $$
 The elements are precisely the residue classes $\bar a$
 with $\gcd(a,N)=1$, under multiplication, and their number is
 $\varphi(N)=N\prod_{\ell\mid N}(1-1/\ell)$.
-For $N=0$ the ring is $\mathbb Z$ and its unit group is
+For $N=0$ the ring is $\ZZ$ and its unit group is
 $\{1,-1\}\cong C_2$. For $N=1$ the ring has one element
 and its unit group is trivial.
 
 ::: pf
 
 ::: {.pf-step #crt-unit-group-decomposition}
-For $N\geq2$, the class $\bar a$ is a unit of $\mathbb Z/N\mathbb Z$ if
+For $N\geq2$, the class $\bar a$ is a unit of $\ZZ/N\ZZ$ if
 and only if $\gcd(a,N)=1$, and
-$(\mathbb Z/N\mathbb Z)^\times\cong\prod_{\ell\mid N}(\mathbb Z/\ell^{e_\ell}\mathbb Z)^\times$,
+$(\ZZ/N\ZZ)^\times\cong\prod_{\ell\mid N}(\ZZ/\ell^{e_\ell}\ZZ)^\times$,
 where the factor at $\ell$ has order $\ell^{e_\ell-1}(\ell-1)$.
 
 ::: pf-proof
@@ -69,8 +69,8 @@ Such an equality gives $ab+cN=1$, implying $\gcd(a,N)=1$.
 Conversely Bezout's identity supplies such $b,c$ when the
 gcd is one [@DF04]. The Chinese remainder ring isomorphism
 $$
-\mathbb Z/N\mathbb Z\longrightarrow
-\prod_{\ell\mid N}\mathbb Z/\ell^{e_\ell}\mathbb Z
+\ZZ/N\ZZ\longrightarrow
+\prod_{\ell\mid N}\ZZ/\ell^{e_\ell}\ZZ
 $$
 therefore restricts to an isomorphism of unit groups:
 a tuple in a product ring is invertible exactly when
@@ -130,9 +130,9 @@ whose order equals the whole unit-group order, as required.
 :::
 
 ::: {.pf-step #power-of-two-units-structure}
-$(\mathbb Z/2\mathbb Z)^\times\cong C_1$,
-$(\mathbb Z/4\mathbb Z)^\times\cong C_2$, and
-$(\mathbb Z/2^e\mathbb Z)^\times\cong C_2\times C_{2^{e-2}}$ for $e\geq3$.
+$(\ZZ/2\ZZ)^\times\cong C_1$,
+$(\ZZ/4\ZZ)^\times\cong C_2$, and
+$(\ZZ/2^e\ZZ)^\times\cong C_2\times C_{2^{e-2}}$ for $e\geq3$.
 
 ::: pf-proof
 Modulo $2$ there is one unit. Modulo $4$ the units are
@@ -168,8 +168,8 @@ For $N=0$ the unit group is $\{1,-1\}\cong C_2$, and for $N=1$ it is
 trivial.
 
 ::: pf-proof
-The ideals $(q-1)$ and $(|q-1|)$ in $\mathbb Z$ coincide.
-When $q=1$, the quotient by $(0)$ is $\mathbb Z$;
+The ideals $(q-1)$ and $(|q-1|)$ in $\ZZ$ coincide.
+When $q=1$, the quotient by $(0)$ is $\ZZ$;
 its only integer units are $1,-1$. When $|q-1|=1$,
 the quotient is the zero ring. Its sole element is its
 identity and is its own multiplicative inverse, so its

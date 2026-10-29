@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n, f \in L^2(\mathbb{R})$ satisfy $f_n \to f$ weakly and $\|f_n\|_2 \to \|f\|_2$ as $n \to \infty$.
-Show that $f_n \to f$ in $L^2(\mathbb{R})$.
+Let $f_n, f \in L^2(\RR)$ satisfy $f_n \to f$ weakly and $\|f_n\|_2 \to \|f\|_2$ as $n \to \infty$.
+Show that $f_n \to f$ in $L^2(\RR)$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ $\|f_n-f\|_2^2=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$
 
 ::: pf-proof
 
-Since $L^2(\mathbb R)$ is a Hilbert space,
+Since $L^2(\RR)$ is a Hilbert space,
 \[
 \|f_n-f\|_2^2
 =\|f_n\|_2^2+

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and let $\sigma$ be a cycle in $U$.
+Let $U\subset\CC$ be open and let $\sigma$ be a cycle in $U$.
 Define what it means for $\sigma$ to be homologous to zero in $U$.
 :::
 
@@ -28,7 +28,7 @@ Define what it means for $\sigma$ to be homologous to zero in $U$.
 
 The cycle $\sigma$ is homologous to zero in $U$ if
 \[
-\boxed{n(\sigma,a)=0\qquad\text{for every }a\in\mathbb C\setminus U},
+\boxed{n(\sigma,a)=0\qquad\text{for every }a\in\CC\setminus U},
 \]
 where $n(\sigma,a)$ denotes the winding number, or index, of the cycle
 $\sigma$ about $a$.
@@ -36,7 +36,7 @@ $\sigma$ about $a$.
 
 ::: pf-proof
 
-Because the cycle lies in $U$, every point of $\mathbb C\setminus U$ lies
+Because the cycle lies in $U$, every point of $\CC\setminus U$ lies
 off the image of the cycle, so its winding number about such a point is
 defined. Vanishing of all these winding numbers is the definition that the
 cycle is homologous to zero in the open set $U$.

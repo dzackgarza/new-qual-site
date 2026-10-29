@@ -144,13 +144,13 @@ The corresponding assertion is false for an infinite product.
 
 For every
 \[
-n\in\mathbb N,
+n\in\NN,
 \]
 let
 \[
 X_n=(0,1),
 \qquad
-Y_n=\mathbb R,
+Y_n=\RR,
 \]
 and let
 \[
@@ -160,32 +160,32 @@ be the inclusion.
 
 Each $f_n$ is open.
 Indeed, every open subset of the subspace $(0,1)$ is open in
-$\mathbb R$, because $(0,1)$ itself is open in $mathbb R$.
+$\RR$, because $(0,1)$ itself is open in $mathbb R$.
 
 Consider the product map
 \[
 F
 =
 \prod_{n=1}^{\infty}f_n:
-(0,1)^{\mathbb N}
+(0,1)^{\NN}
 \longrightarrow
-\mathbb R^{\mathbb N}.
+\RR^{\NN}.
 \]
 The whole domain
 \[
-(0,1)^{\mathbb N}
+(0,1)^{\NN}
 \]
 is open in itself.
 Its image is
 \[
-F\bigl((0,1)^{\mathbb N}\bigr)
+F\bigl((0,1)^{\NN}\bigr)
 =
-(0,1)^{\mathbb N}.
+(0,1)^{\NN}.
 \]
 
 We claim this subset is not open in the product topology of
 \[
-\mathbb R^{\mathbb N}.
+\RR^{\NN}.
 \]
 Take, for example,
 \[
@@ -208,7 +208,7 @@ say,
 \]
 That point does not lie in
 \[
-(0,1)^{\mathbb N}.
+(0,1)^{\NN}.
 \]
 Hence no basic neighborhood of $x$ is contained in the image.
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:U\to\mathbb C$ be analytic, and let $D\subset f(U)$ be a domain.
+Let $f:U\to\CC$ be analytic, and let $D\subset f(U)$ be a domain.
 Define what it means for $g$ to be a branch of $f^{-1}$ on $D$.
 :::
 

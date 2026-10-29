@@ -165,7 +165,7 @@ Step [](#pole-residue-conclusion){.pf-ref}.
 The interior $\text{Int}(\gamma)$ is bounded, and its closure $\text{Int}(\gamma) \cup \gamma$ is compact.
 
 ::: pf-proof
-*Proof:* $\gamma$ is a Jordan curve in $\mathbb{C}$.
+*Proof:* $\gamma$ is a Jordan curve in $\CC$.
 :::
 
 :::

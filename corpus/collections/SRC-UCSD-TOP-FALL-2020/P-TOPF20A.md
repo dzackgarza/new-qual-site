@@ -27,11 +27,11 @@ Show that there does not exist a continuous map $f : S^1 \times S^1 \to S^1$ tha
 
 ::: pf-step
 
-Let $a,b$ be the standard generators of $\pi_1(T^2)\cong\mathbb Z^2$, and let $f_*(a)=m$, $f_*(b)=n$ in $\pi_1(S^1)\cong\mathbb Z$.
+Let $a,b$ be the standard generators of $\pi_1(T^2)\cong\ZZ^2$, and let $f_*(a)=m$, $f_*(b)=n$ in $\pi_1(S^1)\cong\ZZ$.
 
 ::: pf-proof
 
-Every homomorphism $\mathbb Z^2\to\mathbb Z$ is determined by these two integers.
+Every homomorphism $\ZZ^2\to\ZZ$ is determined by these two integers.
 
 :::
 
@@ -76,7 +76,7 @@ This is exactly the first condition.
 
 ::: pf-step
 
-Thus $2m=1$, impossible in $\mathbb Z$. Hence no such map exists.
+Thus $2m=1$, impossible in $\ZZ$. Hence no such map exists.
 
 ::: pf-proof
 

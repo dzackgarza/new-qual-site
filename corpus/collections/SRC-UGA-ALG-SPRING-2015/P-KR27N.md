@@ -33,15 +33,15 @@ Let $\alpha=5^{1/4}>0$. The roots of $x^4-5$ are
 \]
 so its splitting field is
 \[
-E=\mathbb Q(\alpha,i).
+E=\QQ(\alpha,i).
 \]
 Eisenstein's criterion at $5$ shows that $x^4-5$ is irreducible, hence
 \[
-[\mathbb Q(\alpha):\mathbb Q]=4.
+[\QQ(\alpha):\QQ]=4.
 \]
-Since $\mathbb Q(\alpha)\subset\mathbb R$, it does not contain $i$, so
+Since $\QQ(\alpha)\subset\RR$, it does not contain $i$, so
 \[
-[E:\mathbb Q]=8.
+[E:\QQ]=8.
 \]
 
 Define automorphisms
@@ -58,13 +58,13 @@ srs=r^{-1}.
 \]
 These generate $8$ distinct automorphisms, so
 \[
-\operatorname{Gal}(E/\mathbb Q)
+\operatorname{Gal}(E/\QQ)
 \cong
 \langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle,
 \]
 the dihedral group of order $8$.
 
-Now let $K=\mathbb Q(\sqrt5)=\mathbb Q(\alpha^2)$. Since
+Now let $K=\QQ(\sqrt5)=\QQ(\alpha^2)$. Since
 \[
 r(\alpha^2)=-\alpha^2,
 \]
@@ -74,6 +74,6 @@ $r$ does not fix $K$, while $r^2$, $s$, and $r^2s$ do. Therefore
 \]
 Each nonidentity element in this subgroup has order $2$, so
 \[
-\operatorname{Gal}(E/\mathbb Q(\sqrt5))\cong C_2\times C_2.
+\operatorname{Gal}(E/\QQ(\sqrt5))\cong C_2\times C_2.
 \]
 :::

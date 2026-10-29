@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-16
 kind: problem
-title: Analytic functions mapping a closed curve into $\mathbb R$ are constant
+title: Analytic functions mapping a closed curve into $\RR$ are constant
 classification:
   areas:
   - complex-analysis

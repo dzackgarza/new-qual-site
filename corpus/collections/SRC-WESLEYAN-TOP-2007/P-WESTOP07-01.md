@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP07-01
 kind: problem
-title: Distinguish $\mathbb R$ and $\mathbb R^2$ from higher-dimensional Euclidean spaces
+title: Distinguish $\RR$ and $\RR^2$ from higher-dimensional Euclidean spaces
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft
@@ -11,8 +11,8 @@ audit:
 ---
 
 ::: {.problem}
-1. Prove that $\mathbb R$ is not homeomorphic to $\mathbb R^n$ for any $n>1$.
-2. Prove that $\mathbb R^2$ is not homeomorphic to $\mathbb R^n$ for any $n>2$.
+1. Prove that $\RR$ is not homeomorphic to $\RR^n$ for any $n>1$.
+2. Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for any $n>2$.
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ n>1,
 $$
 the punctured space
 $$
-\mathbb R^n\setminus\{0\}
+\RR^n\setminus\{0\}
 $$
 is path-connected.
 
@@ -36,7 +36,7 @@ is path-connected.
 
 Let
 $$
-x,y\in\mathbb R^n\setminus\{0\}.
+x,y\in\RR^n\setminus\{0\}.
 $$
 If the line segment from
 $$
@@ -90,7 +90,7 @@ inside the punctured space.
 
 The space
 $$
-\mathbb R\setminus\{0\}
+\RR\setminus\{0\}
 $$
 is disconnected.
 
@@ -99,7 +99,7 @@ is disconnected.
 
 One has
 $$
-\mathbb R\setminus\{0\}
+\RR\setminus\{0\}
 =
 (-\infty,0)
 \sqcup
@@ -120,9 +120,9 @@ $$
 one has
 $$
 \boxed{
-\mathbb R
+\RR
 \not\cong
-\mathbb R^n}.
+\RR^n}.
 $$
 
 
@@ -130,7 +130,7 @@ $$
 
 Suppose
 $$
-h:\mathbb R\to\mathbb R^n
+h:\RR\to\RR^n
 $$
 were a homeomorphism. Let
 $$
@@ -142,17 +142,17 @@ h
 $$
 would give a homeomorphism
 $$
-\mathbb R\setminus\{0\}
+\RR\setminus\{0\}
 \cong
-\mathbb R^n\setminus\{p\}.
+\RR^n\setminus\{p\}.
 $$
 Translation identifies
 $$
-\mathbb R^n\setminus\{p\}
+\RR^n\setminus\{p\}
 $$
 with
 $$
-\mathbb R^n\setminus\{0\}.
+\RR^n\setminus\{0\}.
 $$
 But step [](#s1-2){.pf-ref} says the first punctured space is disconnected, while step [](#s1-1){.pf-ref} says the second is path-connected. Contradiction.
 
@@ -168,7 +168,7 @@ m\ge2,
 $$
 the punctured space
 $$
-\mathbb R^m\setminus\{0\}
+\RR^m\setminus\{0\}
 $$
 deformation retracts onto
 $$
@@ -181,9 +181,9 @@ $$
 Define
 $$
 H:
-(\mathbb R^m\setminus\{0\})\times[0,1]
+(\RR^m\setminus\{0\})\times[0,1]
 \to
-\mathbb R^m\setminus\{0\}
+\RR^m\setminus\{0\}
 $$
 by
 $$
@@ -233,9 +233,9 @@ The scalar factor is always positive, so the homotopy never passes through the o
 
 One has
 $$
-\pi_1(\mathbb R^2\setminus\{0\})
+\pi_1(\RR^2\setminus\{0\})
 \cong
-\mathbb Z.
+\ZZ.
 $$
 
 
@@ -243,13 +243,13 @@ $$
 
 By step [](#s1-4){.pf-ref},
 $$
-\mathbb R^2\setminus\{0\}
+\RR^2\setminus\{0\}
 \simeq
 S^1.
 $$
 Homotopy equivalent spaces have isomorphic fundamental groups, and
 $$
-\pi_1(S^1)\cong\mathbb Z.
+\pi_1(S^1)\cong\ZZ.
 $$
 
 :::
@@ -264,7 +264,7 @@ n>2,
 $$
 one has
 $$
-\pi_1(\mathbb R^n\setminus\{0\})
+\pi_1(\RR^n\setminus\{0\})
 =0.
 $$
 
@@ -273,7 +273,7 @@ $$
 
 By step [](#s1-4){.pf-ref},
 $$
-\mathbb R^n\setminus\{0\}
+\RR^n\setminus\{0\}
 \simeq
 S^{n-1}.
 $$
@@ -300,9 +300,9 @@ $$
 one has
 $$
 \boxed{
-\mathbb R^2
+\RR^2
 \not\cong
-\mathbb R^n}.
+\RR^n}.
 $$
 
 
@@ -310,7 +310,7 @@ $$
 
 Suppose
 $$
-h:\mathbb R^2\to\mathbb R^n
+h:\RR^2\to\RR^n
 $$
 were a homeomorphism, and set
 $$
@@ -322,17 +322,17 @@ h
 $$
 would restrict to a homeomorphism
 $$
-\mathbb R^2\setminus\{0\}
+\RR^2\setminus\{0\}
 \cong
-\mathbb R^n\setminus\{p\}.
+\RR^n\setminus\{p\}.
 $$
 After translating the target, the right-hand side is homeomorphic to
 $$
-\mathbb R^n\setminus\{0\}.
+\RR^n\setminus\{0\}.
 $$
 Homeomorphic spaces have isomorphic fundamental groups, contradicting steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}:
 $$
-\mathbb Z
+\ZZ
 \not\cong
 0.
 $$

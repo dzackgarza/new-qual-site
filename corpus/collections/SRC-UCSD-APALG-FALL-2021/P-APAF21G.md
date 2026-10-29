@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF21G
 kind: problem
-title: Character table of $S_4$ and decomposition of $\mathbb{C}[X]$ for $2$-subsets
+title: Character table of $S_4$ and decomposition of $\CC[X]$ for $2$-subsets
 classification:
   areas:
   - applied-algebra
@@ -28,7 +28,7 @@ If we let
 X:=\{\text{all $2$-element subsets of }\{1,2,3,4\}\},
 \]
 then $X$ carries a natural permutation action of $S_4$.
-Find the decomposition of $\mathbb{C}[X]$ into irreducibles.
+Find the decomposition of $\CC[X]$ into irreducibles.
 :::
 
 ::: {.solution}
@@ -65,7 +65,7 @@ The standard $3$-dimensional representation has character
 \]
 
 ::: pf-proof
-The permutation representation of $S_4$ on $\mathbb C^4$ has character equal to the number of fixed points of the permutation. Its values on the five classes are
+The permutation representation of $S_4$ on $\CC^4$ has character equal to the number of fixed points of the permutation. Its values on the five classes are
 \[
 4,2,0,1,0.
 \]
@@ -146,7 +146,7 @@ so they form the complete set of irreducible characters.
 :::
 
 ::: {.pf-step #permutation-character-of-2-subsets}
-The permutation character of $\mathbb C[X]$, where $X$ is the set of $2$-element subsets, is
+The permutation character of $\CC[X]$, where $X$ is the set of $2$-element subsets, is
 \[
 \chi_X=(6,2,2,0,0).
 \]
@@ -160,7 +160,7 @@ The character value is the number of $2$-subsets fixed setwise by a representati
 ::: pf-step
 The decomposition is
 \[
-\boxed{\mathbb C[X]\cong S^{(4)}\oplus S^{(3,1)}\oplus S^{(2,2)}.}
+\boxed{\CC[X]\cong S^{(4)}\oplus S^{(3,1)}\oplus S^{(2,2)}.}
 \]
 
 ::: pf-proof
@@ -169,7 +169,7 @@ Adding the corresponding character rows from step [](#s4-character-table){.pf-re
 (1,1,1,1,1)+(3,1,-1,0,-1)+(2,0,2,-1,0)
 =(6,2,2,0,0),
 \]
-which is exactly the permutation character from step [](#permutation-character-of-2-subsets){.pf-ref}. Equality of characters over $\mathbb C$ implies isomorphism of representations.
+which is exactly the permutation character from step [](#permutation-character-of-2-subsets){.pf-ref}. Equality of characters over $\CC$ implies isomorphism of representations.
 :::
 
 :::

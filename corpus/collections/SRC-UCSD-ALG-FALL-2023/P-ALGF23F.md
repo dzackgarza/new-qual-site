@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $A$ is a finitely generated $\mathbb{Q}$-algebra, and $\phi: A \to A$ is a surjective ring homomorphism.
+Suppose $A$ is a finitely generated $\QQ$-algebra, and $\phi: A \to A$ is a surjective ring homomorphism.
 
 (a) Prove that $A$ is a Noetherian ring.
 
@@ -40,28 +40,28 @@ Hint: Consider $\{\ker \phi^n\}_{n=1}^{\infty}$.
 
 ::: {.pf-step #s1}
 
-The algebra $A$ is a quotient of a polynomial ring over $\mathbb Q$ in finitely many variables.
+The algebra $A$ is a quotient of a polynomial ring over $\QQ$ in finitely many variables.
 
 ::: pf-proof
 
-Because $A$ is finitely generated as a $\mathbb Q$-algebra, there exist
+Because $A$ is finitely generated as a $\QQ$-algebra, there exist
 \[
 a_1,\ldots,a_r\in A
 \]
 such that
 \[
-A=\mathbb Q[a_1,\ldots,a_r].
+A=\QQ[a_1,\ldots,a_r].
 \]
 Hence the evaluation map
 \[
-\mathbb Q[x_1,\ldots,x_r]\longrightarrow A,
+\QQ[x_1,\ldots,x_r]\longrightarrow A,
 \qquad
 x_i\longmapsto a_i,
 \]
 is surjective.
 Thus
 \[
-A\cong\mathbb Q[x_1,\ldots,x_r]/I
+A\cong\QQ[x_1,\ldots,x_r]/I
 \]
 for its kernel ideal $I$.
 
@@ -75,10 +75,10 @@ The ring $A$ is Noetherian.
 
 ::: pf-proof
 
-The field $\mathbb Q$ is Noetherian.
+The field $\QQ$ is Noetherian.
 By Hilbert's basis theorem,
 \[
-\mathbb Q[x_1,\ldots,x_r]
+\QQ[x_1,\ldots,x_r]
 \]
 is Noetherian.
 Every quotient of a Noetherian ring is Noetherian, so step [](#s1){.pf-ref} gives that $A$ is Noetherian.

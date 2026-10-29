@@ -557,9 +557,9 @@ than \(\varepsilon\) for \(n\ge N\). Then every \(m>n\ge N\) satisfies
 
 ::: {.pf-step #s1-24}
 
-Since \(\mathbb R\) is complete, there exists
+Since \(\RR\) is complete, there exists
 \[
-L\in\mathbb R
+L\in\RR
 \]
 such that
 \[

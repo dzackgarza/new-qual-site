@@ -28,7 +28,7 @@ Suppose $f$ is entire and satisfies
 $$
 |f(z)|\le |z|^2
 $$
-for every $z\in\mathbb C$. Find all possibilities for \(f\), and justify your answer.
+for every $z\in\CC$. Find all possibilities for \(f\), and justify your answer.
 :::
 
 ::: {.solution}

@@ -45,7 +45,7 @@ Prove the limit for the exponential basis functions.
 
 ::: pf-proof
 
-For $k\in\mathbb Z$, let
+For $k\in\ZZ$, let
 \[
 e_k(t)=e^{2\pi i kt}.
 \]
@@ -57,7 +57,7 @@ If $k\ne0$, put
 \[
 z=e^{2\pi i k\alpha}.
 \]
-Because $\alpha$ is irrational, $k\alpha\notin\mathbb Z$, so $z\ne1$. The geometric-series formula gives
+Because $\alpha$ is irrational, $k\alpha\notin\ZZ$, so $z\ne1$. The geometric-series formula gives
 \[
 \sum_{n=1}^Nz^n=z\frac{1-z^N}{1-z}.
 \]

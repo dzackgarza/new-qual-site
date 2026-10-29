@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $a \in \mathbb{R}$ with $0<a<3$. Evaluate 
+Let $a \in \RR$ with $0<a<3$. Evaluate 
 \[
 \int_{0}^{\infty} \frac{x^{a-1}}{1+x^{3}} d x
 .\]

@@ -34,7 +34,7 @@ Show that there is no rate of convergence for the above limit that is independen
 Specifically, show that there cannot exist any sequence of positive numbers $(a_n)$ such that $a_n \to \infty$ and for every $f \in L^1([0,1], m)$ there is a constant $C_f < \infty$ with
 \[
 \left| \int_0^1 f(x) e^{inx}\, dx \right| \le \frac{C_f}{a_n}
-\quad\text{for each } n \in \mathbb{N}.
+\quad\text{for each } n \in \NN.
 \]
 Hint: If such $(a_n)$ existed, find a sequence of linear functionals that yields a contradiction.
 :::
@@ -57,7 +57,7 @@ Suppose there were positive numbers $a_n\to\infty$ such that for every $f\in L^1
 \]
 Define
 \[
-T_n:L^1([0,1])\to\mathbb C,
+T_n:L^1([0,1])\to\CC,
 \qquad
 T_n(f):=a_n\int_0^1f(x)e^{inx}\,dx.
 \]

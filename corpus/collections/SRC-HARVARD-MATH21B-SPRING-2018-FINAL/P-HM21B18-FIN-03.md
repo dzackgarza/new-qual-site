@@ -22,7 +22,7 @@ B=\begin{pmatrix}0&1&0&0&1\\1&0&1&0&0\\0&1&0&1&0\\0&0&1&0&1\\1&0&0&1&0\end{pmatr
 \[
 C=\begin{pmatrix}0&1&1&0&0\\0&0&1&1&0\\0&0&0&1&1\\0&0&0&0&1\\0&0&0&0&0\end{pmatrix}
 \]
-are diagonalizable over $\mathbb R$.
+are diagonalizable over $\RR$.
 
 (b) Decide which of the two displayed Game-of-Life matrices “Loaf” and “Boat” has a nonreal eigenvalue:
 \[
@@ -61,7 +61,7 @@ decide which of the assertions $a_0=0$, all $a_n=0$ for $n>0$, and all $b_n=0$ h
 
 ::: {.pf-step #s1-1}
 
-In part (a), only $B$ is diagonalizable over $\mathbb R$.
+In part (a), only $B$ is diagonalizable over $\RR$.
 
 
 ::: pf-proof
@@ -71,10 +71,10 @@ Let $\omega=e^{2\pi i/5}$. For
 v=(1,\omega,\omega^2,\omega^3,\omega^4)^T
 \]
 one has $Av=\omega v$. Thus $A$ has a nonreal eigenvalue and cannot be
-diagonalizable over $\mathbb R$.
+diagonalizable over $\RR$.
 
 The matrix $B$ is real symmetric, since $B^T=B$. By the spectral theorem,
-$B$ is diagonalizable over $\mathbb R$.
+$B$ is diagonalizable over $\RR$.
 
 The matrix $C$ is strictly upper triangular, hence nilpotent, and it is
 nonzero. Therefore its only eigenvalue is $0$. If it were diagonalizable,

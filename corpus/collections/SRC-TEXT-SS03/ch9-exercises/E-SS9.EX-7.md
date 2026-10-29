@@ -42,7 +42,7 @@ These results were already obtained using Fourier series in the exercises at the
 ::: {.solution}
 At \(\tau=1/2\),
 \[
-\sum_{m\in\mathbb Z}\frac1{(m+1/2)^2}=\pi^2.
+\sum_{m\in\ZZ}\frac1{(m+1/2)^2}=\pi^2.
 \]
 Since \((m+1/2)^{-2}=4(2m+1)^{-2}\) and the positive and negative odd integers contribute equally,
 \[
@@ -61,7 +61,7 @@ whence \(\zeta(2)=\pi^2/6\).
 
 Differentiate the identity
 \[
-\sum_{m\in\mathbb Z}(m+\tau)^{-2}=\pi^2\csc^2(\pi\tau)
+\sum_{m\in\ZZ}(m+\tau)^{-2}=\pi^2\csc^2(\pi\tau)
 \]
 twice. Since
 \[
@@ -74,11 +74,11 @@ and, writing \(u=\pi\tau\),
 \]
 at \(\tau=1/2\) we get
 \[
-6\sum_{m\in\mathbb Z}(m+1/2)^{-4}=2\pi^4.
+6\sum_{m\in\ZZ}(m+1/2)^{-4}=2\pi^4.
 \]
 Therefore
 \[
-\sum_{m\in\mathbb Z}(m+1/2)^{-4}=\frac{\pi^4}{3}.
+\sum_{m\in\ZZ}(m+1/2)^{-4}=\frac{\pi^4}{3}.
 \]
 Since this equals \(32\sum_{r\ge1,\ r\text{ odd}}r^{-4}\),
 \[

@@ -28,7 +28,7 @@ Let $f:\mathbb D\to\mathbb D$ be holomorphic with $f(0)=0$. Schwarz's lemma stat
 $$
 |f(z)|\le |z|,\qquad |f'(0)|\le1.
 $$
-Moreover, equality at one nonzero point, or $|f'(0)|=1$, holds if and only if $f(z)=e^{i\theta}z$ for some $\theta\in\mathbb R$.
+Moreover, equality at one nonzero point, or $|f'(0)|=1$, holds if and only if $f(z)=e^{i\theta}z$ for some $\theta\in\RR$.
 
 ::: pf
 

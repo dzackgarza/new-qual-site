@@ -38,7 +38,7 @@ Give explicit formulas for the functions and give a proof for your answer.
 ::: {.solution}
 The functions are exactly
 $$
-\boxed{f(z)=\frac{a}{z},\qquad a\in\mathbb C,\quad |a|\leq\log2,}
+\boxed{f(z)=\frac{a}{z},\qquad a\in\CC,\quad |a|\leq\log2,}
 $$
 viewed as meromorphic functions; $a=0$ gives the identically
 zero function.
@@ -54,7 +54,7 @@ The function $g(z)=zf(z)$ extends to an entire function.
 At any nonzero point the given upper bound is locally
 finite. A pole there would make $|f|$ unbounded in every
 punctured neighborhood, contradicting the bound. Thus $f$
-is holomorphic on $\mathbb C\setminus\{0\}$. On that set,
+is holomorphic on $\CC\setminus\{0\}$. On that set,
 $$
 |g(z)|\leq\log(2+|z|^2).
 $$

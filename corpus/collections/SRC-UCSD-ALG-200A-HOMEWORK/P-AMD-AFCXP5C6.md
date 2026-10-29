@@ -48,16 +48,16 @@ Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \inte
 
 ::: pf-step
 
-Every coset in $\mathbb Q/\mathbb Z$ has a representative in $[0,1)\cap\mathbb Q$.
+Every coset in $\QQ/\ZZ$ has a representative in $[0,1)\cap\QQ$.
 
 ::: pf-proof
 
 Let
 \[
-q=\frac mn\in\mathbb Q,
+q=\frac mn\in\QQ,
 \qquad
-m\in\mathbb Z,
-\quad n\in\mathbb Z_{>0}.
+m\in\ZZ,
+\quad n\in\ZZ_{>0}.
 \]
 By Euclidean division there are unique integers $a,r$ such that
 \[
@@ -71,13 +71,13 @@ q=a+\frac rn,
 \]
 so
 \[
-q+\mathbb Z=\frac rn+\mathbb Z,
+q+\ZZ=\frac rn+\ZZ,
 \]
 and
 \[
 0\le\frac rn<1.
 \]
-Thus the coset has a representative in $[0,1)\cap\mathbb Q$.
+Thus the coset has a representative in $[0,1)\cap\QQ$.
 
 :::
 
@@ -89,10 +89,10 @@ That representative is unique.
 
 ::: pf-proof
 
-Suppose $r,s\in[0,1)\cap\mathbb Q$ represent the same coset.
+Suppose $r,s\in[0,1)\cap\QQ$ represent the same coset.
 Then
 \[
-r-s\in\mathbb Z.
+r-s\in\ZZ.
 \]
 But
 \[
@@ -109,24 +109,24 @@ r=s.
 
 ::: {.pf-step #s3}
 
-Every element of $\mathbb Q/\mathbb Z$ has finite order.
+Every element of $\QQ/\ZZ$ has finite order.
 
 ::: pf-proof
 
 Let
 \[
-q=\frac mn\in\mathbb Q,
+q=\frac mn\in\QQ,
 \qquad n>0.
 \]
 Then in the additive quotient group,
 \[
-n(q+\mathbb Z)
-=nq+\mathbb Z
-=m+\mathbb Z
-=\mathbb Z,
+n(q+\ZZ)
+=nq+\ZZ
+=m+\ZZ
+=\ZZ,
 \]
 the identity coset.
-Thus $q+\mathbb Z$ has finite order dividing $n$.
+Thus $q+\ZZ$ has finite order dividing $n$.
 
 :::
 
@@ -136,7 +136,7 @@ Thus $q+\mathbb Z$ has finite order dividing $n$.
 
 For each integer $n\ge1$, the element
 \[
-\frac1n+\mathbb Z
+\frac1n+\ZZ
 \]
 has order exactly $n$.
 
@@ -145,15 +145,15 @@ has order exactly $n$.
 By step [](#s3){.pf-ref} its order divides $n$.
 If a positive integer $k$ satisfies
 \[
-k\left(\frac1n+\mathbb Z\right)=\mathbb Z,
+k\left(\frac1n+\ZZ\right)=\ZZ,
 \]
 then
 \[
-\frac kn\in\mathbb Z,
+\frac kn\in\ZZ,
 \]
 so $n\mid k$.
 Therefore no positive $k<n$ annihilates the coset, and its order is exactly $n$.
-Since $n$ is arbitrary, $\mathbb Q/\mathbb Z$ has elements of arbitrarily large finite order.
+Since $n$ is arbitrary, $\QQ/\ZZ$ has elements of arbitrarily large finite order.
 
 :::
 
@@ -163,42 +163,42 @@ Since $n$ is arbitrary, $\mathbb Q/\mathbb Z$ has elements of arbitrarily large 
 
 One has
 \[
-T(\mathbb R/\mathbb Z)=\mathbb Q/\mathbb Z.
+T(\RR/\ZZ)=\QQ/\ZZ.
 \]
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, every element of $\mathbb Q/\mathbb Z$ has finite order, so
+By step [](#s3){.pf-ref}, every element of $\QQ/\ZZ$ has finite order, so
 \[
-\mathbb Q/\mathbb Z\subseteq T(\mathbb R/\mathbb Z).
+\QQ/\ZZ\subseteq T(\RR/\ZZ).
 \]
 Conversely, suppose
 \[
-r+\mathbb Z\in\mathbb R/\mathbb Z
+r+\ZZ\in\RR/\ZZ
 \]
 has finite order.
 Then for some integer $n\ge1$,
 \[
-n(r+\mathbb Z)=\mathbb Z.
+n(r+\ZZ)=\ZZ.
 \]
 Thus
 \[
-nr\in\mathbb Z,
+nr\in\ZZ,
 \]
 so
 \[
-r=\frac{nr}{n}\in\mathbb Q.
+r=\frac{nr}{n}\in\QQ.
 \]
 Hence
 \[
-r+\mathbb Z\in\mathbb Q/\mathbb Z.
+r+\ZZ\in\QQ/\ZZ.
 \]
 The two inclusions prove the equality.
 
 Let
 \[
-\mu_\infty=\{z\in\mathbb C^\times:z^n=1\text{ for some }n\ge1\}
-=T(\mathbb C^\times)
+\mu_\infty=\{z\in\CC^\times:z^n=1\text{ for some }n\ge1\}
+=T(\CC^\times)
 \]
 be the multiplicative group of all roots of unity.
 
@@ -210,9 +210,9 @@ be the multiplicative group of all roots of unity.
 
 The map
 \[
-\Phi:\mathbb Q/\mathbb Z\longrightarrow\mu_\infty,
+\Phi:\QQ/\ZZ\longrightarrow\mu_\infty,
 \qquad
-\Phi(q+\mathbb Z)=e^{2\pi i q},
+\Phi(q+\ZZ)=e^{2\pi i q},
 \]
 is a well-defined homomorphism.
 
@@ -220,9 +220,9 @@ is a well-defined homomorphism.
 
 If
 \[
-q+\mathbb Z=q'+\mathbb Z,
+q+\ZZ=q'+\ZZ,
 \]
-then $q-q'\in\mathbb Z$, and therefore
+then $q-q'\in\ZZ$, and therefore
 \[
 e^{2\pi iq}=e^{2\pi iq'}e^{2\pi i(q-q')}=e^{2\pi iq'}.
 \]
@@ -230,16 +230,16 @@ Thus $\Phi$ is well-defined.
 Moreover,
 \[
 \begin{aligned}
-\Phi((q+\mathbb Z)+(r+\mathbb Z))
+\Phi((q+\ZZ)+(r+\ZZ))
 &=e^{2\pi i(q+r)}\\
 &=e^{2\pi iq}e^{2\pi ir}\\
-&=\Phi(q+\mathbb Z)\Phi(r+\mathbb Z),
+&=\Phi(q+\ZZ)\Phi(r+\ZZ),
 \end{aligned}
 \]
 so it is a homomorphism.
 Finally, if $q=m/n$, then
 \[
-\Phi(q+\mathbb Z)^n=e^{2\pi im}=1,
+\Phi(q+\ZZ)^n=e^{2\pi im}=1,
 \]
 so its image lies in $\mu_\infty$.
 
@@ -253,16 +253,16 @@ The map $\Phi$ is injective.
 
 ::: pf-proof
 
-Its kernel consists of those $q+\mathbb Z$ for which
+Its kernel consists of those $q+\ZZ$ for which
 \[
 e^{2\pi iq}=1.
 \]
-For real $q$, this holds exactly when $q\in\mathbb Z$.
+For real $q$, this holds exactly when $q\in\ZZ$.
 Thus
 \[
-\ker\Phi=\mathbb Z,
+\ker\Phi=\ZZ,
 \]
-meaning that the only kernel coset in $\mathbb Q/\mathbb Z$ is the identity coset.
+meaning that the only kernel coset in $\QQ/\ZZ$ is the identity coset.
 Hence $\Phi$ is injective.
 
 :::
@@ -293,11 +293,11 @@ so
 \[
 n\theta=2\pi k
 \]
-for some $k\in\mathbb Z$.
+for some $k\in\ZZ$.
 Hence
 \[
 \zeta=e^{2\pi i k/n}
-=\Phi\left(\frac kn+\mathbb Z\right).
+=\Phi\left(\frac kn+\ZZ\right).
 \]
 Thus every root of unity is in the image.
 
@@ -309,12 +309,12 @@ Thus every root of unity is in the image.
 
 Therefore
 \[
-\mathbb Q/\mathbb Z\cong T(\mathbb C^\times).
+\QQ/\ZZ\cong T(\CC^\times).
 \]
 
 ::: pf-proof
 
-By steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}, $\Phi$ is a bijective homomorphism from $\mathbb Q/\mathbb Z$ onto the roots-of-unity subgroup $\mu_\infty=T(\mathbb C^\times)$.
+By steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}, $\Phi$ is a bijective homomorphism from $\QQ/\ZZ$ onto the roots-of-unity subgroup $\mu_\infty=T(\CC^\times)$.
 Hence it is an isomorphism.
 
 :::

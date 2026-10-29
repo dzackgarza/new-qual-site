@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be a (path-connected) simply-connected CW-complex with $H_2(X) \cong \mathbb{Z} \oplus \mathbb{Z}$ and $H_{\geq 3}(X) = 0$.
+Let $X$ be a (path-connected) simply-connected CW-complex with $H_2(X) \cong \ZZ \oplus \ZZ$ and $H_{\geq 3}(X) = 0$.
 Prove that $X$ is homotopy-equivalent to the "bouquet of two spheres" $S^2 \vee S^2$.
 :::
 
@@ -24,7 +24,7 @@ Prove that $X$ is homotopy-equivalent to the "bouquet of two spheres" $S^2 \vee 
 ::: {.pf-step #hurewicz-iso}
 Since $X$ is simply connected, the Hurewicz map
 $$
-\pi_2(X)\longrightarrow H_2(X;\mathbb Z)
+\pi_2(X)\longrightarrow H_2(X;\ZZ)
 $$
 is an isomorphism.
 
@@ -37,7 +37,7 @@ This is the Hurewicz theorem in the first nonzero homotopy degree: a path-connec
 ::: pf-step
 Choose maps $f_1,f_2:S^2\to X$ whose Hurewicz classes form a basis of
 $$
-H_2(X)\cong\mathbb Z\oplus\mathbb Z.
+H_2(X)\cong\ZZ\oplus\ZZ.
 $$
 
 ::: pf-proof

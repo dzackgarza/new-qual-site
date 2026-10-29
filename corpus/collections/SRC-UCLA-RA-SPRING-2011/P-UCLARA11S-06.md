@@ -9,7 +9,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $\mu$ and $\nu$ are finite positive regular Borel measures on $\mathbb R^n$.
+Suppose $\mu$ and $\nu$ are finite positive regular Borel measures on $\RR^n$.
 Prove that there is a unique pair of positive Borel measures $\mu_a,\mu_s$ such that
 \[
 \mu=\mu_a+\mu_s,
@@ -111,7 +111,7 @@ Then
 
 ::: pf-proof
 
-The sets $X$ and $Y$ are measurable, disjoint, and cover $\mathbb R^n$ up to a $\lambda$-null set. Modifying $f$ on that null set if necessary, assume they partition all of $\mathbb R^n$. Then
+The sets $X$ and $Y$ are measurable, disjoint, and cover $\RR^n$ up to a $\lambda$-null set. Modifying $f$ on that null set if necessary, assume they partition all of $\RR^n$. Then
 \[
 E
 =

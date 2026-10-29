@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-Identify $M_n(\mathbb R)$ with $\mathbb R^{n^2}$ and let
+Identify $M_n(\RR)$ with $\RR^{n^2}$ and let
 \[
-F:M_n(\mathbb R)\to\mathbb R,
+F:M_n(\RR)\to\RR,
 \qquad
 F(X)=\det X.
 \]

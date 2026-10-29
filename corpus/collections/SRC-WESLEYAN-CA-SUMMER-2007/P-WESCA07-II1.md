@@ -24,7 +24,7 @@ Show that
 \[
 f(z)=az+b
 \]
-for constants $a,b\in\mathbb C$ with $|a|=1$.
+for constants $a,b\in\CC$ with $|a|=1$.
 :::
 
 ::: {.solution}

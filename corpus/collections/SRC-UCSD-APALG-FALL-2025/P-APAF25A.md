@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Given $n\geq 3$, fix $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ satisfying that there exist two eigenvalues $\alpha,\beta$ of $A$ with $\alpha\neq\beta$.
-Prove there exists unitary $Q\in M_n(\mathbb{C})$ such that
+Given $n\geq 3$, fix $A\in M_n(\CC)=\CC^{n\times n}$ satisfying that there exist two eigenvalues $\alpha,\beta$ of $A$ with $\alpha\neq\beta$.
+Prove there exists unitary $Q\in M_n(\CC)$ such that
 \[
 Q^H AQ=\begin{bmatrix}
 \alpha & \delta & v^H \\
@@ -23,14 +23,14 @@ Q^H AQ=\begin{bmatrix}
 0 & w & B
 \end{bmatrix},
 \]
-for some $\delta\in\mathbb{C}$, $v,w\in\mathbb{C}^{n-2}$, and $B\in M_{n-2}(\mathbb{C})$.
+for some $\delta\in\CC$, $v,w\in\CC^{n-2}$, and $B\in M_{n-2}(\CC)$.
 
-(Notationally: for all $m,n\geq 1$, $z^H=\overline{z}^T$ for all $z\in M_{m,n}(\mathbb{C})=\mathbb{C}^{m\times n}$.)
+(Notationally: for all $m,n\geq 1$, $z^H=\overline{z}^T$ for all $z\in M_{m,n}(\CC)=\CC^{m\times n}$.)
 :::
 
 ::: {.solution}
 
-Choose a unit eigenvector \(q_1\in\mathbb C^n\) of \(A\) for \(\alpha\):
+Choose a unit eigenvector \(q_1\in\CC^n\) of \(A\) for \(\alpha\):
 \[
 Aq_1=\alpha q_1.
 \]
@@ -71,7 +71,7 @@ Extend \(q_1,q_2\) to an orthonormal basis
 \[
 q_1,q_2,q_3,\ldots,q_n
 \]
-of \(\mathbb C^n\), and let
+of \(\CC^n\), and let
 \[
 Q=[q_1\ q_2\ \cdots\ q_n].
 \]
@@ -125,7 +125,7 @@ Q^HAQ=
 0&w&B
 \end{bmatrix}
 \]
-for suitable \(\delta\in\mathbb C\), \(v,w\in\mathbb C^{n-2}\), and \(B\in M_{n-2}(\mathbb C)\).
+for suitable \(\delta\in\CC\), \(v,w\in\CC^{n-2}\), and \(B\in M_{n-2}(\CC)\).
 
 ::: pf-proof
 The first-column restrictions are exactly step [](#first-column-form){.pf-ref} and the second-row restrictions are exactly step [](#second-row-form){.pf-ref}. All remaining entries are unconstrained; denote them by \(\delta,v,w,B\) according to the indicated block decomposition.

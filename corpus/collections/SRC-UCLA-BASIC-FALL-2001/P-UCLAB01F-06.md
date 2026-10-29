@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $F:\mathbb R^2\to\mathbb R^2$ is continuously differentiable, satisfies
+Suppose $F:\RR^2\to\RR^2$ is continuously differentiable, satisfies
 \[
 F(0,0)=(0,0),
 \]
@@ -25,7 +25,7 @@ Outline a direct proof that there exists $\delta>0$ such that whenever
 \[
 a^2+b^2<\delta,
 \]
-there is a point $(x,y)\in\mathbb R^2$ with
+there is a point $(x,y)\in\RR^2$ with
 \[
 F(x,y)=(a,b).
 \]
@@ -36,7 +36,7 @@ You may use without proof basic estimates expressing that the change in $F$ is a
 
 ::: {.solution}
 
-Use the Euclidean norm on $\mathbb R^2$ and the induced operator norm on matrices.
+Use the Euclidean norm on $\RR^2$ and the induced operator norm on matrices.
 
 ::: pf
 
@@ -57,7 +57,7 @@ DF(0)=I.
 \]
 Hence $\|DF(x)-I\|\to0$ as $x\to0$. Choose $r>0$ so that the displayed bound holds on the closed ball
 \[
-\overline B_r={x\in\mathbb R^2:\|x\|\le r}.
+\overline B_r={x\in\RR^2:\|x\|\le r}.
 \]
 
 :::
@@ -101,7 +101,7 @@ along the segment. Therefore
 
 ::: {.pf-step #s1-3}
 
-For any $y\in\mathbb R^2$ with
+For any $y\in\RR^2$ with
 \[
 \|y\|<\frac r2,
 \]
@@ -180,7 +180,7 @@ For $m>n$,
 \le
 \|x_1-x_0\|\sum_{j=n}^{\infty}2^{-j},
 \]
-which tends to $0$ as $n\to\infty$. Thus $(x_n)$ is Cauchy. Since $\mathbb R^2$ is complete and $\overline B_r$ is closed, $x_n\to x$ for some $x\in\overline B_r$.
+which tends to $0$ as $n\to\infty$. Thus $(x_n)$ is Cauchy. Since $\RR^2$ is complete and $\overline B_r$ is closed, $x_n\to x$ for some $x\in\overline B_r$.
 
 :::
 
@@ -229,7 +229,7 @@ The inequality $a^2+b^2<r^2/4$ is exactly
 \[
 \|y\|<r/2.
 \]
-Step [](#s1-5){.pf-ref} therefore supplies $x\in\mathbb R^2$ with $F(x)=y=(a,b)$.
+Step [](#s1-5){.pf-ref} therefore supplies $x\in\RR^2$ with $F(x)=y=(a,b)$.
 
 :::
 

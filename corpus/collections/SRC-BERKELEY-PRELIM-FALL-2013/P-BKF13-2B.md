@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Say that a metric space $X$ has property (A) if the image of every continuous function $f:X\to\mathbb R$ is an interval, which may be open, closed or half-open.
+Say that a metric space $X$ has property (A) if the image of every continuous function $f:X\to\RR$ is an interval, which may be open, closed or half-open.
 Prove that $X$ has property (A) if and only if it is connected.
 :::
 

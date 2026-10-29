@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb R$ is uncountable.
+Prove that $\RR$ is uncountable.
 
 If you use the Baire category theorem, you must prove it.
 :::
@@ -25,7 +25,7 @@ If you use the Baire category theorem, you must prove it.
 
 Let
 \[
-\Sigma=\{0,1\}^{\mathbb N}
+\Sigma=\{0,1\}^{\NN}
 \]
 be the set of all infinite binary sequences.
 
@@ -35,7 +35,7 @@ be the set of all infinite binary sequences.
 
 There is no surjection
 \[
-\mathbb N\to\Sigma.
+\NN\to\Sigma.
 \]
 
 
@@ -129,11 +129,11 @@ The real numbers are uncountable.
 
 Since
 \[
-[0,1]\subseteq\mathbb R,
+[0,1]\subseteq\RR,
 \]
-countability of $\mathbb R$ would imply countability of $[0,1]$, contradicting step [](#s1-3){.pf-ref}. Therefore
+countability of $\RR$ would imply countability of $[0,1]$, contradicting step [](#s1-3){.pf-ref}. Therefore
 \[
-\boxed{\mathbb R\text{ is uncountable}.}
+\boxed{\RR\text{ is uncountable}.}
 \]
 
 :::

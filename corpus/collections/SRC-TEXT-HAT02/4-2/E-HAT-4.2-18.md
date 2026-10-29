@@ -31,7 +31,7 @@ If $X$ and $Y$ are simply-connected CW complexes such that $\tilde{H}_i(X)$ and 
 ::: {.solution}
 By the reduced Künneth theorem for smash products,
 \[
-\widetilde H_k(X\wedge Y;\mathbb Z)
+\widetilde H_k(X\wedge Y;\ZZ)
 \]
 is built from the groups
 \[

@@ -29,7 +29,7 @@ is false.
 
 (b) A real power series whose domain of convergence is the half-open interval $[0,4)$.
 
-(c) A sequence $(f_n)$ of real-valued functions $\mathbb R\to\mathbb R$ which converges pointwise but not uniformly.
+(c) A sequence $(f_n)$ of real-valued functions $\RR\to\RR$ which converges pointwise but not uniformly.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ is false.
 
 For part (a), take the universe to be
 \[
-\mathbb R
+\RR
 \]
 and define
 \[
@@ -184,7 +184,7 @@ For part (c), define
 \boxed{
 f_n(x)=\frac{x}{n}
 \qquad
-(x\in\mathbb R).
+(x\in\RR).
 }
 \]
 
@@ -193,7 +193,7 @@ f_n(x)=\frac{x}{n}
 
 For every fixed
 \[
-x\in\mathbb R,
+x\in\RR,
 \]
 \[
 f_n(x)
@@ -210,17 +210,17 @@ pointwise.
 
 The convergence is not uniform on
 \[
-\mathbb R.
+\RR.
 \]
 Indeed, for every
 \[
 n,
 \]
 \[
-\sup_{x\in\mathbb R}
+\sup_{x\in\RR}
 |f_n(x)|
 =
-\sup_{x\in\mathbb R}
+\sup_{x\in\RR}
 \frac{|x|}{n}
 =
 +\infty.

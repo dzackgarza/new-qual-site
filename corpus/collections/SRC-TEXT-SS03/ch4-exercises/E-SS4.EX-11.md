@@ -45,12 +45,12 @@ for some $a , b > 0$ . The converse is obviously true.
 We prove the nontrivial implication. Assume
 \[
 |f(z)|\le C e^{c_1|z|^2}
-\qquad(z\in\mathbb C)
+\qquad(z\in\CC)
 \]
 and
 \[
 |f(x)|\le C e^{-c_2x^2}
-\qquad(x\in\mathbb R),
+\qquad(x\in\RR),
 \]
 after increasing $C$ if necessary.
 
@@ -124,7 +124,7 @@ The same argument applies to the reflected sectors in the other quadrants. In th
 \[
 c_1(x^2+y^2)\le -c_1x^2+3c_1y^2,
 \]
-so an estimate of the form (4) holds there as well. Enlarging the constants gives a single pair $a,b>0$ valid for all $x,y\in\mathbb R$.
+so an estimate of the form (4) holds there as well. Enlarging the constants gives a single pair $a,b>0$ valid for all $x,y\in\RR$.
 
 Conversely, if
 \[

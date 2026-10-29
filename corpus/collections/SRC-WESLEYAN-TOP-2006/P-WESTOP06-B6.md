@@ -45,7 +45,7 @@ strongly deformation retracts the \(i\)-th cylinder onto the circle \(S^1\times\
 
 The fundamental group of the first space is
 \[
-\boxed{\pi_1\cong\mathbb Z*\mathbb Z\cong F_2.}
+\boxed{\pi_1\cong\ZZ*\ZZ\cong F_2.}
 \]
 
 
@@ -56,7 +56,7 @@ By step [](#s1-1){.pf-ref}, the space is homotopy equivalent to \(S^1\vee S^1\).
 \pi_1(S^1\vee S^1)\cong
 \pi_1(S^1)*\pi_1(S^1)
 \cong
-\mathbb Z*\mathbb Z.
+\ZZ*\ZZ.
 \]
 Homotopy equivalence preserves the fundamental group.
 
@@ -101,7 +101,7 @@ The \(1\)-skeleton from step [](#s1-3){.pf-ref} is \(S^1\vee S^1\), with fundame
 
 The fundamental group of the second space is
 \[
-\boxed{\pi_1(Q)\cong\mathbb Z.}
+\boxed{\pi_1(Q)\cong\ZZ.}
 \]
 
 
@@ -109,7 +109,7 @@ The fundamental group of the second space is
 
 In the presentation from step [](#s1-4){.pf-ref}, the relation \(ab=1\) gives \(b=a^{-1}\). Eliminating \(b\) leaves a presentation with one generator and no relations:
 \[
-\langle a\rangle\cong\mathbb Z.
+\langle a\rangle\cong\ZZ.
 \]
 
 :::

@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be a space whose homology groups are $\mathbb{Z}$, $0$, $\mathbb{Z}_6$ in dimensions $0$, $1$, $2$ and zero otherwise.
-Compute the integral homology $H_*(X \times \mathbb{RP}^3; \mathbb{Z})$.
+Let $X$ be a space whose homology groups are $\ZZ$, $0$, $\ZZ_6$ in dimensions $0$, $1$, $2$ and zero otherwise.
+Compute the integral homology $H_*(X \times \mathbb{RP}^3; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -26,11 +26,11 @@ Compute the integral homology $H_*(X \times \mathbb{RP}^3; \mathbb{Z})$.
 
 The nonzero homology groups of the factors are
 $$
-H_0(X)=\mathbb Z,\quad H_2(X)=\mathbb Z/6,
+H_0(X)=\ZZ,\quad H_2(X)=\ZZ/6,
 $$
 and
 $$
-H_0(\mathbb{RP}^3)=\mathbb Z,\quad H_1(\mathbb{RP}^3)=\mathbb Z/2,\quad H_3(\mathbb{RP}^3)=\mathbb Z.
+H_0(\mathbb{RP}^3)=\ZZ,\quad H_1(\mathbb{RP}^3)=\ZZ/2,\quad H_3(\mathbb{RP}^3)=\ZZ.
 $$
 
 ::: pf-proof
@@ -45,21 +45,21 @@ The groups for $X$ are given. The projective-space groups follow from its standa
 
 The tensor terms in Künneth give
 $$
-H_0=\mathbb Z,\ H_1=\mathbb Z/2,\ H_2=\mathbb Z/6,
+H_0=\ZZ,\ H_1=\ZZ/2,\ H_2=\ZZ/6,
 $$
 $$
-H_3\supset\mathbb Z\oplus\mathbb Z/2,\qquad H_5\supset\mathbb Z/6.
+H_3\supset\ZZ\oplus\ZZ/2,\qquad H_5\supset\ZZ/6.
 $$
 
 ::: pf-proof
 
 Besides the terms with $H_0$, one has
 $$
-H_2(X)\otimes H_1(\mathbb{RP}^3)\cong\mathbb Z/2
+H_2(X)\otimes H_1(\mathbb{RP}^3)\cong\ZZ/2
 $$
 in degree $3$ and
 $$
-H_2(X)\otimes H_3(\mathbb{RP}^3)\cong\mathbb Z/6
+H_2(X)\otimes H_3(\mathbb{RP}^3)\cong\ZZ/6
 $$
 in degree $5$.
 
@@ -71,7 +71,7 @@ in degree $5$.
 
 The only nonzero Tor contribution is
 $$
-\operatorname{Tor}(\mathbb Z/6,\mathbb Z/2)\cong\mathbb Z/2
+\operatorname{Tor}(\ZZ/6,\ZZ/2)\cong\ZZ/2
 $$
 in degree $4$.
 
@@ -87,19 +87,19 @@ In the homological Künneth sequence, $\operatorname{Tor}(H_p(X),H_q(Y))$ contri
 
 Hence
 $$
-\boxed{H_i(X\times\mathbb{RP}^3;\mathbb Z)\cong
+\boxed{H_i(X\times\mathbb{RP}^3;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/2,&i=1,4,\\
-\mathbb Z/6,&i=2,5,\\
-\mathbb Z\oplus\mathbb Z/2,&i=3,\\
+\ZZ,&i=0,\\
+\ZZ/2,&i=1,4,\\
+\ZZ/6,&i=2,5,\\
+\ZZ\oplus\ZZ/2,&i=3,\\
 0,&\text{otherwise}.
 \end{cases}}
 $$
 
 ::: pf-proof
 
-The Künneth short exact sequences split (noncanonically) over $\mathbb Z$, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} list every nonzero summand.
+The Künneth short exact sequences split (noncanonically) over $\ZZ$, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} list every nonzero summand.
 
 :::
 

@@ -27,13 +27,13 @@ For a sphere bundle $S^k\to S^m\to S^n$, one has $k=n-1$ and $m=2n-1$.
 *Proof by cohomological spectral sequence.*
 
 1. In the Serre spectral sequence for
-   $S^k\to S^m\overset{p}{\to} S^n$, with $\mathbb Z$-coefficients,
+   $S^k\to S^m\overset{p}{\to} S^n$, with $\ZZ$-coefficients,
    \[
-   E_2^{p,q}=H^p(S^n;H^q(S^k;\mathbb Z)).
+   E_2^{p,q}=H^p(S^n;H^q(S^k;\ZZ)).
    \]
 2. The only nonzero entries are:
    \[
-   E_2^{0,0}\cong E_2^{n,0}\cong E_2^{0,k}\cong E_2^{n,k}\cong\mathbb Z.
+   E_2^{0,0}\cong E_2^{n,0}\cong E_2^{0,k}\cong E_2^{n,k}\cong\ZZ.
    \]
 3. Since $S^m$ has cohomology only in degrees $0,m$, the class at $(n,0)$
    must be killed in the spectral sequence.

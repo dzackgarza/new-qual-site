@@ -33,7 +33,7 @@ The exponential power series gives
 \[
 e^w=\sum_{n=0}^{\infty}\frac{w^n}{n!}
 \]
-for every \(w\in\mathbb C\).
+for every \(w\in\CC\).
 
 
 ::: pf-proof

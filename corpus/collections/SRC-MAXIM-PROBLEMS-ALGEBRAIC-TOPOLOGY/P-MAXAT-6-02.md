@@ -23,7 +23,7 @@ Show that a manifold M is orientable if and only if its first Stiefel-Whitney cl
 
 Let $M$ be a smooth $n$-manifold. By definition,
 \[
-w_1(M)=w_1(TM)\in H^1(M;\mathbb Z/2).
+w_1(M)=w_1(TM)\in H^1(M;\ZZ/2).
 \]
 It is enough to prove the corresponding statement for the tangent bundle.
 
@@ -33,11 +33,11 @@ It is enough to prove the corresponding statement for the tangent bundle.
 
 Choose local frames of $TM$ on a trivializing cover $\{U_i\}$, with transition functions
 \[
-g_{ij}:U_i\cap U_j\to GL_n(\mathbb R).
+g_{ij}:U_i\cap U_j\to GL_n(\RR).
 \]
 Their determinant signs
 \[
-\epsilon_{ij}=\operatorname{sgn}(\det g_{ij})\in\{\pm1\}\cong\mathbb Z/2
+\epsilon_{ij}=\operatorname{sgn}(\det g_{ij})\in\{\pm1\}\cong\ZZ/2
 \]
 form a Cech $1$-cocycle.
 
@@ -70,7 +70,7 @@ w_1(TM).
 
 The determinant-sign homomorphism
 \[
-GL_n(\mathbb R)\to\{\pm1\}
+GL_n(\RR)\to\{\pm1\}
 \]
 defines the orientation double cover of the frame bundle. The characteristic class classifying this double cover is, by definition, the first Stiefel--Whitney class. In transition-function terms it is represented exactly by the sign cocycle $\{\epsilon_{ij}\}$ from step [](#s1-1){.pf-ref}.
 
@@ -137,7 +137,7 @@ Using step [](#s1-4){.pf-ref} gives
 \[
 \delta_i^{-1}(\delta_i\delta_j^{-1})\delta_j=1.
 \]
-Hence every modified transition function lies in $GL_n^+(\mathbb R)$.
+Hence every modified transition function lies in $GL_n^+(\RR)$.
 
 :::
 
@@ -168,7 +168,7 @@ Equivalently, $w_1(M)$ is the monodromy character of the orientation local syste
 
 Transporting a local orientation around a loop either preserves or reverses it, producing a homomorphism to $\{\pm1\}$. Under
 \[
-H^1(M;\mathbb Z/2)\cong\operatorname{Hom}(\pi_1(M),\mathbb Z/2)
+H^1(M;\ZZ/2)\cong\operatorname{Hom}(\pi_1(M),\ZZ/2)
 \]
 on each path component, this homomorphism represents the same determinant-sign class of step [](#s1-2){.pf-ref}. Its vanishing says precisely that the orientation local system is trivial.
 

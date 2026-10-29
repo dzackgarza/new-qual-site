@@ -32,7 +32,7 @@ Show that every covering space of an orientable manifold is an orientable manifo
 ::: {.solution}
 Let $p:\widetilde M\to M$ be a covering map and suppose $M$ is orientable. For each $x\in M$, choose an orientation class
 \[
-\mu_x\in H_n(M,M-\{x\};\mathbb Z)
+\mu_x\in H_n(M,M-\{x\};\ZZ)
 \]
 that varies locally constantly with $x$.
 
@@ -42,7 +42,7 @@ p:\widetilde U\longrightarrow U
 \]
 is a homeomorphism, hence induces an isomorphism on local homology. Define the local orientation at $\widetilde x$ to be the unique class
 \[
-\widetilde\mu_{\widetilde x}\in H_n(\widetilde M,\widetilde M-\{\widetilde x\};\mathbb Z)
+\widetilde\mu_{\widetilde x}\in H_n(\widetilde M,\widetilde M-\{\widetilde x\};\ZZ)
 \]
 that maps to $\mu_x$ under this local identification.
 

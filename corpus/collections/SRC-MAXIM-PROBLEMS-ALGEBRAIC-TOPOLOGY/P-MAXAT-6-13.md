@@ -49,11 +49,11 @@ A product decomposition of complex manifolds is in particular a diffeomorphism o
 
 Since
 \[
-H^1(\mathbb{CP}^n;\mathbb Z)=0,
+H^1(\mathbb{CP}^n;\ZZ)=0,
 \]
 the Kunneth theorem gives
 \[
-H^1(X;\mathbb Z)=H^1(Y;\mathbb Z)=0.
+H^1(X;\ZZ)=H^1(Y;\ZZ)=0.
 \]
 
 
@@ -61,8 +61,8 @@ H^1(X;\mathbb Z)=H^1(Y;\mathbb Z)=0.
 
 For connected spaces,
 \[
-H^1(X\times Y;\mathbb Z)
-\cong H^1(X;\mathbb Z)\oplus H^1(Y;\mathbb Z).
+H^1(X\times Y;\ZZ)
+\cong H^1(X;\ZZ)\oplus H^1(Y;\ZZ).
 \]
 The left side is zero because $X\times Y\cong\mathbb{CP}^n$. Hence both summands vanish.
 
@@ -74,8 +74,8 @@ The left side is zero because $X\times Y\cong\mathbb{CP}^n$. Hence both summands
 
 In degree two, Kunneth gives
 \[
-H^2(\mathbb{CP}^n;\mathbb Z)
-\cong H^2(X;\mathbb Z)\oplus H^2(Y;\mathbb Z).
+H^2(\mathbb{CP}^n;\ZZ)
+\cong H^2(X;\ZZ)\oplus H^2(Y;\ZZ).
 \]
 
 
@@ -87,7 +87,7 @@ H^2(X)\otimes H^0(Y),\quad
 H^1(X)\otimes H^1(Y),\quad
 H^0(X)\otimes H^2(Y),
 \]
-together with the corresponding Tor terms. Connectedness gives $H^0\cong\mathbb Z$, and step [](#s1-2){.pf-ref} kills the degree-one contributions and their Tor terms. Since the product cohomology in degree two is the torsion-free group $\mathbb Z$, the displayed direct-sum identification follows.
+together with the corresponding Tor terms. Connectedness gives $H^0\cong\ZZ$, and step [](#s1-2){.pf-ref} kills the degree-one contributions and their Tor terms. Since the product cohomology in degree two is the torsion-free group $\ZZ$, the displayed direct-sum identification follows.
 
 :::
 
@@ -97,16 +97,16 @@ together with the corresponding Tor terms. Connectedness gives $H^0\cong\mathbb 
 
 Both groups
 \[
-H^2(X;\mathbb Z),\qquad H^2(Y;\mathbb Z)
+H^2(X;\ZZ),\qquad H^2(Y;\ZZ)
 \]
 are nonzero.
 
 
 ::: pf-proof
 
-Every compact complex manifold is canonically oriented. Since $X$ has real dimension $2r>0$, its fundamental class is nonzero. If $H^2(X;\mathbb Z)$ were zero, then every degree-two class on the product would come from $Y$. But the generator
+Every compact complex manifold is canonically oriented. Since $X$ has real dimension $2r>0$, its fundamental class is nonzero. If $H^2(X;\ZZ)$ were zero, then every degree-two class on the product would come from $Y$. But the generator
 \[
-h\in H^2(\mathbb{CP}^n;\mathbb Z)
+h\in H^2(\mathbb{CP}^n;\ZZ)
 \]
 satisfies
 \[
@@ -126,14 +126,14 @@ for dimensional reasons, and since $s<n$ this would force $h^n=0$, a contradicti
 
 Step [](#s1-3){.pf-ref} is impossible because
 \[
-H^2(\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z
+H^2(\mathbb{CP}^n;\ZZ)\cong\ZZ
 \]
 has rank one, whereas the right-hand side contains two nonzero free summands.
 
 
 ::: pf-proof
 
-The direct sum in step [](#s1-3){.pf-ref} is isomorphic to the torsion-free group $\mathbb Z$, so each summand is torsion-free. By step [](#s1-4){.pf-ref} both are nonzero; hence each has rank at least one and their direct sum has rank at least two. This contradicts the rank-one left-hand side.
+The direct sum in step [](#s1-3){.pf-ref} is isomorphic to the torsion-free group $\ZZ$, so each summand is torsion-free. By step [](#s1-4){.pf-ref} both are nonzero; hence each has rank at least one and their direct sum has rank at least two. This contradicts the rank-one left-hand side.
 
 :::
 
@@ -145,7 +145,7 @@ Therefore no such nontrivial product decomposition exists:
 \[
 \boxed{
 \mathbb{CP}^n\not\cong X\times Y
-\quad\text{for }\dim_{\mathbb C}X,\dim_{\mathbb C}Y>0.}
+\quad\text{for }\dim_{\CC}X,\dim_{\CC}Y>0.}
 \]
 
 

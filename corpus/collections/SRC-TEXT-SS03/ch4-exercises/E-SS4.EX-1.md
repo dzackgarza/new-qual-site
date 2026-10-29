@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Suppose f is continuous and of moderate decrease, and ${ \hat { f } } ( \xi ) = 0$ for all $\xi \in \mathbb { R }$ Show that $f = 0$ by completing the following outline:
+1. Suppose f is continuous and of moderate decrease, and ${ \hat { f } } ( \xi ) = 0$ for all $\xi \in \RR$ Show that $f = 0$ by completing the following outline:
 
 (a) For each fixed real number t consider the two functions
 
@@ -26,7 +26,7 @@ $$
 A (z) = \int_ {- \infty} ^ {t} f (x) e ^ {- 2 \pi i z (x - t)} d x \quad \text { and } \quad B (z) = - \int_ {t} ^ {\infty} f (x) e ^ {- 2 \pi i z (x - t)} d x.
 $$
 
-Show that $A ( \xi ) = B ( \xi )$ for all $\xi \in \mathbb { R } .$
+Show that $A ( \xi ) = B ( \xi )$ for all $\xi \in \RR .$
 
 (b) Prove that the function F equal to A in the closed upper half-plane, and B in the lower half-plane, is entire and bounded, thus constant.
 In fact, show that $F = 0$

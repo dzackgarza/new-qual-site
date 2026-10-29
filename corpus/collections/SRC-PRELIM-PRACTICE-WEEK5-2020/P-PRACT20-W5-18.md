@@ -64,7 +64,7 @@ Because $z\ne0$, division by $z$ gives
 z=\overline z.
 \]
 A complex number equals its conjugate exactly when its imaginary part is
-zero, so $z\in\mathbb R$.
+zero, so $z\in\RR$.
 
 :::
 
@@ -77,7 +77,7 @@ Every real number satisfies the equation.
 
 ::: pf-proof
 
-If $z=x\in\mathbb R$, then
+If $z=x\in\RR$, then
 \[
 z^2=x^2=|x|^2=|z|^2.
 \]
@@ -90,7 +90,7 @@ z^2=x^2=|x|^2=|z|^2.
 
 Therefore the solution set is
 \[
-\boxed{\mathbb R}.
+\boxed{\RR}.
 \]
 
 

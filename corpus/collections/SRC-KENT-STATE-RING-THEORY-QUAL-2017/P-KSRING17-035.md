@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-035
 kind: problem
-title: The field $\mathbb Q(\sqrt 2)$ is a principal ideal domain not containing $\sqrt 3$
+title: The field $\QQ(\sqrt 2)$ is a principal ideal domain not containing $\sqrt 3$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a , b \in \mathbb { Q } \}$
+Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a , b \in \QQ \}$
 
 (a) Show that D is a subring of the field of real numbers.
 

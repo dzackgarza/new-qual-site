@@ -25,14 +25,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_j\in L^2(\mathbb R^n)$ with $f_j\to f$ in $L^2$. Suppose there exists $M<\infty$ such that
+Let $f_j\in L^2(\RR^n)$ with $f_j\to f$ in $L^2$. Suppose there exists $M<\infty$ such that
 \[
 \|f_j\|_{H^\sigma}\le M
 \qquad(j\ge1),
 \]
 where
 \[
-\|g\|_{H^\sigma}^2=\int_{\mathbb R^n}(1+|\xi|^2)^\sigma|\widehat g(\xi)|^2\,d\xi.
+\|g\|_{H^\sigma}^2=\int_{\RR^n}(1+|\xi|^2)^\sigma|\widehat g(\xi)|^2\,d\xi.
 \]
 Must $f\in H^\sigma$? Prove your answer.
 :::
@@ -50,7 +50,7 @@ After passing to a subsequence, the Fourier transforms converge almost everywher
 By the [[PR-JCZKL|Plancherel theorem]],
 $$
 \widehat f_j\longrightarrow\widehat f
-\qquad\text{in }L^2(\mathbb R^n).
+\qquad\text{in }L^2(\RR^n).
 $$
 Hence there is a subsequence $(j_k)$ such that
 $$
@@ -83,7 +83,7 @@ $$
 $$
 The weighted integral is therefore finite, so
 $$
-f\in H^\sigma(\mathbb R^n),
+f\in H^\sigma(\RR^n),
 \qquad
 \|f\|_{H^\sigma}\le M.
 $$

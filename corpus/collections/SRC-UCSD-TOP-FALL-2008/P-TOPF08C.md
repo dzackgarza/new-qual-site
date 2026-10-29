@@ -48,7 +48,7 @@ A degree-$\pm1$ map between closed oriented manifolds induces an injection on in
 
 ::: pf-proof
 
-If $0\ne\alpha\in H^k(N;\mathbb Z)$, Poincaré duality gives $\beta$ with $\langle\alpha\smile\beta,[N]\rangle\ne0$. Naturality then gives
+If $0\ne\alpha\in H^k(N;\ZZ)$, Poincaré duality gives $\beta$ with $\langle\alpha\smile\beta,[N]\rangle\ne0$. Naturality then gives
 $$
 \langle f^*\alpha\smile f^*\beta,[M]\rangle
 =\pm\langle\alpha\smile\beta,[N]\rangle\ne0,
@@ -63,7 +63,7 @@ so $f^*\alpha\ne0$.
 
 If $n$ is even, the target has a nonzero class in odd degree $n-1$, but
 $$
-H^{n-1}(\mathbb{CP}^n;\mathbb Z)=0,
+H^{n-1}(\mathbb{CP}^n;\ZZ)=0,
 $$
 contradicting step [](#s2){.pf-ref}.
 
@@ -100,7 +100,7 @@ $$
 
 ::: pf-proof
 
-We have $H^*(\mathbb{CP}^n;\mathbb Z)=\mathbb Z[u]/(u^{n+1})$. Since $n>1$, the power $u^{n-1}$ is nonzero. The coefficient $k$ is nonzero by injectivity from step [](#s2){.pf-ref}.
+We have $H^*(\mathbb{CP}^n;\ZZ)=\ZZ[u]/(u^{n+1})$. Since $n>1$, the power $u^{n-1}$ is nonzero. The coefficient $k$ is nonzero by injectivity from step [](#s2){.pf-ref}.
 
 :::
 

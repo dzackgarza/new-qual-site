@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[a,b]\to\mathbb R$ be continuous and suppose
+Let $f:[a,b]\to\RR$ be continuous and suppose
 \[
 \int_a^b f(x)x^n\,dx=0
 \]

@@ -13,14 +13,14 @@ review: draft
 ::: {.problem}
 For each space and equivalence relation below, identify a familiar space homeomorphic to the quotient and prove your answer.
 
-1. Let $X=\mathbb R^2$ and define
+1. Let $X=\RR^2$ and define
    \[
    (x_0,y_0)\sim(x_1,y_1)
    \quad\Longleftrightarrow\quad
    x_0+y_0^2=x_1+y_1^2.
    \]
 
-2. Let $X=\mathbb R^2$ and define
+2. Let $X=\RR^2$ and define
    \[
    (x_0,y_0)\sim(x_1,y_1)
    \quad\Longleftrightarrow\quad
@@ -29,7 +29,7 @@ For each space and equivalence relation below, identify a familiar space homeomo
 
 3. Let $X=[-1,1]$ and let $\sim$ be the smallest equivalence relation satisfying $-p\sim p$ for every $p\in X$.
 
-4. Let $X=\mathbb R$ and let $\sim$ be the smallest equivalence relation satisfying $x\sim x+n$ for every $x\in\mathbb R$ and $n\in\mathbb Z$.
+4. Let $X=\RR$ and let $\sim$ be the smallest equivalence relation satisfying $x\sim x+n$ for every $x\in\RR$ and $n\in\ZZ$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ For each space and equivalence relation below, identify a familiar space homeomo
 
 For part (1), define
 \[
-q_1:\mathbb R^2\to\mathbb R,
+q_1:\RR^2\to\RR,
 \qquad
 q_1(x,y)=x+y^2.
 \]
@@ -92,7 +92,7 @@ q_1
 \]
 where
 \[
-H:\mathbb R^2\to\mathbb R^2,
+H:\RR^2\to\RR^2,
 \qquad
 H(x,y)=(x+y^2,y).
 \]
@@ -102,7 +102,7 @@ H^{-1}(u,v)=(u-v^2,v).
 \]
 The coordinate projection
 \[
-\operatorname{pr}_1:\mathbb R^2\to\mathbb R
+\operatorname{pr}_1:\RR^2\to\RR
 \]
 is open.
 Hence $q_1$ is open.
@@ -116,9 +116,9 @@ Hence $q_1$ is open.
 Therefore
 \[
 \boxed{
-\mathbb R^2/{\sim}
+\RR^2/{\sim}
 \cong
-\mathbb R.
+\RR.
 }
 \]
 
@@ -127,16 +127,16 @@ Therefore
 
 Let
 \[
-\pi:\mathbb R^2\to\mathbb R^2/{\sim}
+\pi:\RR^2\to\RR^2/{\sim}
 \]
 be the quotient map.
 By step [](#s1-1){.pf-ref}, $q_1$ is constant exactly on the equivalence classes, so it
 factors uniquely through a bijection
 \[
 \bar q_1:
-\mathbb R^2/{\sim}
+\RR^2/{\sim}
 \to
-\mathbb R
+\RR
 \]
 with
 \[
@@ -154,7 +154,7 @@ $\bar q_1$ is a homeomorphism.
 
 For part (2), define
 \[
-q_2:\mathbb R^2\to[0,\infty),
+q_2:\RR^2\to[0,\infty),
 \qquad
 q_2(x,y)=x^2+y^2.
 \]
@@ -200,7 +200,7 @@ so it is surjective.
 
 Let
 \[
-U\subseteq\mathbb R^2
+U\subseteq\RR^2
 \]
 be open and let
 \[
@@ -258,7 +258,7 @@ $q_2$ is open.
 Therefore
 \[
 \boxed{
-\mathbb R^2/{\sim}
+\RR^2/{\sim}
 \cong
 [0,\infty).
 }
@@ -355,7 +355,7 @@ homeomorphism.
 
 For part (4), define
 \[
-q_4:\mathbb R\to S^1,
+q_4:\RR\to S^1,
 \qquad
 q_4(x)=e^{2\pi i x}.
 \]
@@ -372,7 +372,7 @@ e^{2\pi i y}
 \]
 if and only if
 \[
-x-y\in\mathbb Z.
+x-y\in\ZZ.
 \]
 Thus
 \[
@@ -394,7 +394,7 @@ The map $q_4$ is an open quotient map.
 
 Let
 \[
-U\subseteq\mathbb R
+U\subseteq\RR
 \]
 be open.
 For each
@@ -428,7 +428,7 @@ Since $q_4$ is also surjective, it is a quotient map.
 Consequently
 \[
 \boxed{
-\mathbb R/{\mathbb Z}
+\RR/{\ZZ}
 \cong
 S^1.
 }
@@ -440,7 +440,7 @@ S^1.
 By step [](#s1-9){.pf-ref}, $q_4$ factors through a bijection
 \[
 \bar q_4:
-\mathbb R/{\sim}
+\RR/{\sim}
 \to
 S^1.
 \]
@@ -456,7 +456,7 @@ The four quotient identifications are therefore
 \[
 \boxed{
 \begin{array}{c|c}
-1&\mathbb R\\
+1&\RR\\
 2&[0,\infty)\\
 3&[0,1]\\
 4&S^1

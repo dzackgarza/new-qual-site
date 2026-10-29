@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find all entire functions $f: \mathbb{C} \to \mathbb{C}$ such that $|f(z)| = 2$ everywhere on $\{|z| = 1\}$, and $f^{(3)}(0) = -12$.
+Find all entire functions $f: \CC \to \CC$ such that $|f(z)| = 2$ everywhere on $\{|z| = 1\}$, and $f^{(3)}(0) = -12$.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $C[0,1]$, the space of continuous functions from $[0,1]$ to $\mathbb R$, is complete for the supremum norm
+Prove that $C[0,1]$, the space of continuous functions from $[0,1]$ to $\RR$, is complete for the supremum norm
 \[
 \|f\|_\infty=\sup_{x\in[0,1]}|f(x)|.
 \]
@@ -49,7 +49,7 @@ whenever $m,n\ge N$. Hence for every $x\in[0,1]$,
 <
 \varepsilon.
 \]
-Thus $(f_n(x))$ is Cauchy in $\mathbb R$.
+Thus $(f_n(x))$ is Cauchy in $\RR$.
 
 :::
 
@@ -66,7 +66,7 @@ for each $x\in[0,1]$.
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref} and completeness of $\mathbb R$, the displayed limit exists for every $x\in[0,1]$.
+By step [](#s1-1){.pf-ref} and completeness of $\RR$, the displayed limit exists for every $x\in[0,1]$.
 
 :::
 

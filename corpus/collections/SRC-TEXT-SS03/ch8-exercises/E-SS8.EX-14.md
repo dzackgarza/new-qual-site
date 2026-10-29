@@ -21,7 +21,7 @@ audit:
 14. Prove that all conformal mappings from the upper half-plane H to the unit disc D take the form
 
 $$
-e ^ {i \theta} \frac {z - \beta}{z - \overline {{\beta}}}, \qquad \theta \in \mathbb {R} \text {   and   } \beta \in \mathbb {H}.
+e ^ {i \theta} \frac {z - \beta}{z - \overline {{\beta}}}, \qquad \theta \in \RR \text {   and   } \beta \in \mathbb {H}.
 $$
 :::
 
@@ -48,7 +48,7 @@ is an automorphism fixing $0$. By Schwarz's lemma applied to $G$ and $G^{-1}$,
 \[
 G(w)=e^{i\theta}w
 \]
-for some $\theta\in\mathbb R$. Therefore
+for some $\theta\in\RR$. Therefore
 \[
 F(z)=e^{i\theta}\phi_\beta(z)
 =e^{i\theta}\frac{z-\beta}{z-\overline\beta}.

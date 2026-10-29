@@ -22,11 +22,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and $1$-periodic.
+Let $f:\RR\to\RR$ be continuous and $1$-periodic.
 
 1. Prove that $f$ is bounded above and below and attains its maximum and minimum.
-2. Prove that $f$ is uniformly continuous on $\mathbb R$.
-3. Prove that there is $x_0\in\mathbb R$ such that
+2. Prove that $f$ is uniformly continuous on $\RR$.
+3. Prove that there is $x_0\in\RR$ such that
    \[
    f(x_0+\pi)=f(x_0).
    \]
@@ -36,7 +36,7 @@ Let $f:\mathbb R\to\mathbb R$ be continuous and $1$-periodic.
 ::: pf
 
 ::: {.pf-step #bounded-and-attains-extrema}
-Part (1): $f$ is bounded above and below on $\mathbb R$ and attains
+Part (1): $f$ is bounded above and below on $\RR$ and attains
 both a global maximum and a global minimum.
 
 ::: pf-proof
@@ -52,19 +52,19 @@ f(x_{\max})
 \qquad
 (0\le t\le1).
 $$
-For every $x\in\mathbb R$, choose an integer $n$ such that
+For every $x\in\RR$, choose an integer $n$ such that
 $x-n\in[0,1)$. Periodicity gives
 $$
 f(x)=f(x-n).
 $$
-Hence the same two inequalities hold for every $x\in\mathbb R$, and the
+Hence the same two inequalities hold for every $x\in\RR$, and the
 bounding values are attained at $x_{\min}$ and $x_{\max}$.
 :::
 
 :::
 
 ::: {.pf-step #uniformly-continuous}
-Part (2): $f$ is uniformly continuous on $\mathbb R$.
+Part (2): $f$ is uniformly continuous on $\RR$.
 
 ::: pf-proof
 Fix $\varepsilon>0$. By the Heine--Cantor theorem, the restriction of $f$
@@ -81,7 +81,7 @@ Set
 $$
 \delta\coloneqq\min\{\eta,1/2\}.
 $$
-Suppose $x,y\in\mathbb R$ and $\abs{x-y}<\delta$. Choose an integer $n$
+Suppose $x,y\in\RR$ and $\abs{x-y}<\delta$. Choose an integer $n$
 with $x-n\in[0,1)$. Then
 $$
 x-n\in[-1,2],
@@ -106,13 +106,13 @@ $$
 <
 \varepsilon.
 $$
-The same $\delta$ works for all $x,y\in\mathbb R$.
+The same $\delta$ works for all $x,y\in\RR$.
 :::
 
 :::
 
 ::: {.pf-step #exists-x0-equal-shift}
-Part (3): there exists $x_0\in\mathbb R$ such that
+Part (3): there exists $x_0\in\RR$ such that
 $$
 f(x_0+\pi)=f(x_0).
 $$

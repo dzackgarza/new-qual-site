@@ -56,7 +56,7 @@ Partial derivatives of the integrand:
 ::: pf-proof
 
 ::: pf-step
-Let $g(x, t) = \cos(tx)$ for $(x, t) \in \mathbb{R} \times [0, 1]$.
+Let $g(x, t) = \cos(tx)$ for $(x, t) \in \RR \times [0, 1]$.
 
 :::
 
@@ -86,7 +86,7 @@ Justification of differentiation under the integral sign:
 ::: pf-proof
 
 ::: pf-step
-The function $g(x, t)$ and all its partial derivatives $\frac{\partial^k g}{\partial x^k}(x, t)$ are continuous on $\mathbb{R} \times [0, 1]$.
+The function $g(x, t)$ and all its partial derivatives $\frac{\partial^k g}{\partial x^k}(x, t)$ are continuous on $\RR \times [0, 1]$.
 
 :::
 
@@ -118,7 +118,7 @@ $$\left| \frac{d^n}{dx^n} \left(\frac{\sin x}{x}\right) \right| = \left| \int_0^
 :::
 
 ::: pf-step
-Since $|\cos(\theta)| \le 1$ for all $\theta \in \mathbb{R}$ and $t \ge 0$:
+Since $|\cos(\theta)| \le 1$ for all $\theta \in \RR$ and $t \ge 0$:
 $$\int_0^1 t^n \left| \cos\left(tx + \frac{n\pi}{2}\right) \right| \, dt \le \int_0^1 t^n \, dt = \left[ \frac{t^{n+1}}{n+1} \right]_0^1 = \frac{1}{n+1}.$$
 
 :::

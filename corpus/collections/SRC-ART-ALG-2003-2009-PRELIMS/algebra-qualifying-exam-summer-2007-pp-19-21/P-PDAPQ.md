@@ -47,15 +47,15 @@ e. A ring which isn't Noetherian.
 
 ::: {.pf-step #s1}
 
-For part (a), take $(2,x)\subseteq\mathbb Z[x]$.
+For part (a), take $(2,x)\subseteq\ZZ[x]$.
 
 ::: pf-proof
 
-The homomorphism $\mathbb Z[x]\to\mathbb F_2$ sending a polynomial
+The homomorphism $\ZZ[x]\to\mathbb F_2$ sending a polynomial
 to its constant coefficient modulo $2$ is surjective. Its kernel
 is $(2,x)$: a polynomial has even constant coefficient exactly when
-it has the form $2a+xg(x)$ with $a\in\mathbb Z$ and
-$g(x)\in\mathbb Z[x]$. Thus the quotient is the field $\mathbb F_2$,
+it has the form $2a+xg(x)$ with $a\in\ZZ$ and
+$g(x)\in\ZZ[x]$. Thus the quotient is the field $\mathbb F_2$,
 so the ideal is maximal.
 
 :::
@@ -64,14 +64,14 @@ so the ideal is maximal.
 
 ::: {.pf-step #s2}
 
-For part (b), take $R=\mathbb Z$ and $I=(0)$.
+For part (b), take $R=\ZZ$ and $I=(0)$.
 
 ::: pf-proof
 
 This is a prime ideal because a product of integers is zero only
 when one factor is zero. It is not maximal, since
 $$
-(0)\subsetneq 2\mathbb Z\subsetneq\mathbb Z.
+(0)\subsetneq 2\ZZ\subsetneq\ZZ.
 $$
 The first containment is strict because $2\ne0$, and the second
 because $1$ is not even.
@@ -82,14 +82,14 @@ because $1$ is not even.
 
 ::: {.pf-step #s3}
 
-For part (c), take $R=\mathbb Z$ and $M=\mathbb Q$.
+For part (c), take $R=\ZZ$ and $M=\QQ$.
 
 ::: pf-proof
 
-If $n\in\mathbb Z\setminus\{0\}$ and $nq=0$ in $\mathbb Q$,
+If $n\in\ZZ\setminus\{0\}$ and $nq=0$ in $\QQ$,
 then $q=0$. Thus this module is torsion free.
 
-Suppose it had a $\mathbb Z$-basis $B$. Since $\mathbb Q\ne0$,
+Suppose it had a $\ZZ$-basis $B$. Since $\QQ\ne0$,
 choose $b\in B$. The rational number $b/2$ belongs to the module and
 has a finite expansion in $B$ with integer coefficients. Multiplying
 that expansion by $2$ expresses $b$ with an even coefficient on every
@@ -103,7 +103,7 @@ well as finite free rank.
 
 ::: {.pf-step #s4}
 
-For part (d), take $\mathbb Z[x]$.
+For part (d), take $\ZZ[x]$.
 
 ::: pf-proof
 
@@ -111,7 +111,7 @@ The integers are a unique factorization domain, and the polynomial
 ring over a unique factorization domain is again one, by Gauss's
 lemma [@DF04]. But the proper ideal $(2,x)$ from step [](#s1){.pf-ref} is not
 principal. If $(2,x)=(d)$, then $d$ divides the nonzero constant $2$.
-Degree additivity in the integral domain $\mathbb Z[x]$ forces $d$
+Degree additivity in the integral domain $\ZZ[x]$ forces $d$
 to be a constant integer, necessarily $\pm1$ or $\pm2$.
 Since $d$ must also divide $x$, it cannot be $\pm2$, whose polynomial
 multiples have even coefficients. Hence $d=\pm1$, which would make
@@ -123,7 +123,7 @@ $(d)$ the whole ring, contradicting its properness.
 
 ::: {.pf-step #s5}
 
-For part (e), take $R=\mathbb Q[x_1,x_2,\ldots]$.
+For part (e), take $R=\QQ[x_1,x_2,\ldots]$.
 
 ::: pf-proof
 
@@ -132,7 +132,7 @@ polynomials $f_1,\ldots,f_s$. Each polynomial involves finitely many
 indeterminates, so choose $x_j$ occurring in none of them. Every
 $f_i\in I$ has zero constant coefficient. The evaluation homomorphism
 $$
-R\longrightarrow\mathbb Q[t],\qquad
+R\longrightarrow\QQ[t],\qquad
 x_j\longmapsto t,\qquad x_k\longmapsto0\ (k\ne j)
 $$
 therefore sends all $f_i$ to $0$, but sends $x_j\in I$ to the nonzero

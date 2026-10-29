@@ -48,7 +48,7 @@ $M_f$ is homeomorphic to the closed $3$-ball.
 
 ::: pf-proof
 
-Regard $D^2\subset\mathbb R^2\times\{0\}\subset\mathbb R^3$ and let $a=(0,0,1)$. The map $D^2\times[0,1]\to\mathbb R^3$, $(x,t)\mapsto(1-t)x+ta$, is continuous, collapses exactly $D^2\times\{1\}$ to $a$, and is otherwise injective, so it induces a continuous bijection from the compact space $M_f$ onto the solid cone $\{(1-t)x+ta\}$, which is Hausdorff; hence a homeomorphism. The solid cone is a compact convex subset of $\mathbb R^3$ with nonempty interior, hence homeomorphic to $D^3$.
+Regard $D^2\subset\RR^2\times\{0\}\subset\RR^3$ and let $a=(0,0,1)$. The map $D^2\times[0,1]\to\RR^3$, $(x,t)\mapsto(1-t)x+ta$, is continuous, collapses exactly $D^2\times\{1\}$ to $a$, and is otherwise injective, so it induces a continuous bijection from the compact space $M_f$ onto the solid cone $\{(1-t)x+ta\}$, which is Hausdorff; hence a homeomorphism. The solid cone is a compact convex subset of $\RR^3$ with nonempty interior, hence homeomorphic to $D^3$.
 
 :::
 

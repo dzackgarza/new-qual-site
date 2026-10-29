@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK87S-01
 kind: problem
-title: If every continuous real-valued function on $K\subset\mathbb R^n$ is bounded, then $K$ is compact
+title: If every continuous real-valued function on $K\subset\RR^n$ is bounded, then $K$ is compact
 classification:
   areas: [prelim]
   topics: []
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K\subset\mathbb R^n$. Suppose every continuous real-valued function on $K$ is bounded. Prove that $K$ is compact.
+Let $K\subset\RR^n$. Suppose every continuous real-valued function on $K$ is bounded. Prove that $K$ is compact.
 :::
 
 ::: {.solution}

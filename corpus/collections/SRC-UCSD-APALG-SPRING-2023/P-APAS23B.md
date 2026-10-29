@@ -46,10 +46,10 @@ the Courant--Fischer theorem states that for $1\le k\le n$,
 \[
 \lambda_k
 =
-\max_{\substack{S\le\mathbb C^n\\ \dim S=k}}
+\max_{\substack{S\le\CC^n\\ \dim S=k}}
 \ \min_{\substack{x\in S\\x^Hx=1}}x^HAx
 =
-\min_{\substack{S\le\mathbb C^n\\ \dim S=n-k+1}}
+\min_{\substack{S\le\CC^n\\ \dim S=n-k+1}}
 \ \max_{\substack{x\in S\\x^Hx=1}}x^HAx.
 \]
 

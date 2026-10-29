@@ -32,7 +32,7 @@ Suppose
 \[
 \sum_{n=0}^\infty a_nz^n
 \]
-converges for $|z|<R$, where $z,a_n\in\mathbb C$. Let $b_n\in\mathbb C$ satisfy
+converges for $|z|<R$, where $z,a_n\in\CC$. Let $b_n\in\CC$ satisfy
 \[
 |b_n|<n^2|a_n|
 \qquad(n\ge1).

@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 (1) Show that the function $u=u(x,y)$ given by
 \[
-u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\qquad\text{for }n\in\mathbb{N}
+u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\qquad\text{for }n\in\NN
 \]
 is the solution on $D=\{(x,y)\mid x^2+y^2<1\}$ of the Cauchy problem for the Laplace equation
 \[

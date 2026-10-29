@@ -14,11 +14,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $U \subset \mathbb{C}$ be an open set.
-Let $f : U \setminus \{a\} \to \mathbb{C}$ be a holomorphic function with an isolated singularity at $a \in U$.
+Let $U \subset \CC$ be an open set.
+Let $f : U \setminus \{a\} \to \CC$ be a holomorphic function with an isolated singularity at $a \in U$.
 
 Let $P$ be a non-constant polynomial.
-Let $g : U \setminus \{a\} \to \mathbb{C}$ be given by
+Let $g : U \setminus \{a\} \to \CC$ be given by
 \[
 g(z) = P(f(z)).
 \]

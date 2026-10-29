@@ -40,14 +40,14 @@ $2$-sheeted covers of $X$.
 Connected $2$-sheeted covers correspond to transitive actions of $F(a,b)$ on
 a two-element fiber, equivalently to homomorphisms
 \[
-\rho:F(a,b)\to S_2\cong\mathbb Z/2
+\rho:F(a,b)\to S_2\cong\ZZ/2
 \]
 with nontrivial image. A homomorphism from the free group is determined by
 the images of $a$ and $b$. There are exactly three nonzero choices:
 \[
 (\rho(a),\rho(b))=(1,0),\qquad(0,1),\qquad(1,1)
 \]
-in $\mathbb Z/2\times\mathbb Z/2$.
+in $\ZZ/2\times\ZZ/2$.
 
 Geometrically, in the first cover the $a$-loop interchanges the two sheets
 and the $b$-loop fixes them; in the second the roles are reversed; in the
@@ -70,7 +70,7 @@ the associated subgroup and deck group are
 H_a=\ker\rho
 =\langle a^2,b,aba^{-1}\rangle,
 \qquad
-\operatorname{Deck}\cong\mathbb Z/2 }.
+\operatorname{Deck}\cong\ZZ/2 }.
 \]
 
 
@@ -84,7 +84,7 @@ b,\qquad a^2,\qquad aba^{-1}.
 \]
 Because $H_a$ has index $2$, it is normal. Hence the deck group is
 \[
-F(a,b)/H_a\cong\mathbb Z/2.
+F(a,b)/H_a\cong\ZZ/2.
 \]
 
 :::
@@ -103,7 +103,7 @@ the associated subgroup and deck group are
 H_b=\ker\rho
 =\langle a,b^2,bab^{-1}\rangle,
 \qquad
-\operatorname{Deck}\cong\mathbb Z/2 }.
+\operatorname{Deck}\cong\ZZ/2 }.
 \]
 
 
@@ -111,7 +111,7 @@ H_b=\ker\rho
 
 Here the kernel consists of words whose total exponent sum in $b$ is even.
 Schreier representatives $\{1,b\}$ give the displayed generators. Again the
-subgroup has index $2$, hence is normal, and the quotient is $\mathbb Z/2$.
+subgroup has index $2$, hence is normal, and the quotient is $\ZZ/2$.
 
 :::
 
@@ -129,7 +129,7 @@ the associated subgroup and deck group are
 H_{a+b}=\ker\rho
 =\langle a^2,ab,ba^{-1}\rangle,
 \qquad
-\operatorname{Deck}\cong\mathbb Z/2 }.
+\operatorname{Deck}\cong\ZZ/2 }.
 \]
 
 
@@ -141,7 +141,7 @@ and $b$ is even. Using the Schreier representatives $\{1,a\}$ gives
 a^2,\qquad ab,\qquad ba^{-1}
 \]
 as generators. This is again an index-$2$ normal subgroup, so its deck group
-is $\mathbb Z/2$.
+is $\ZZ/2$.
 
 :::
 
@@ -204,14 +204,14 @@ $a,a^{-1},b,b^{-1}$, so the tree is $4$-regular.
 ::: {.pf-step #s1-7}
 
 The universal abelian cover is the square grid with vertex set
-$\mathbb Z^2$.
+$\ZZ^2$.
 
 
 ::: pf-proof
 
 The abelianization map is
 \[
-F(a,b)\longrightarrow F(a,b)^{\mathrm{ab}}\cong\mathbb Z^2,
+F(a,b)\longrightarrow F(a,b)^{\mathrm{ab}}\cong\ZZ^2,
 \qquad
 a\longmapsto(1,0),
 \qquad
@@ -220,16 +220,16 @@ b\longmapsto(0,1),
 and its kernel is the commutator subgroup $[F(a,b),F(a,b)]$.
 
 The covering graph associated to this kernel is the Cayley graph of
-$\mathbb Z^2$ with these two generators: its vertices are
+$\ZZ^2$ with these two generators: its vertices are
 \[
-(m,n)\in\mathbb Z^2,
+(m,n)\in\ZZ^2,
 \]
 with a horizontal $a$-edge from $(m,n)$ to $(m+1,n)$ and a vertical $b$-edge
 from $(m,n)$ to $(m,n+1)$. Thus it is the infinite square grid, with all
 vertices mapping to the wedge point and the two edge directions mapping to
 the two circles. Its deck group is
 \[
-\mathbb Z^2.
+\ZZ^2.
 \]
 
 :::

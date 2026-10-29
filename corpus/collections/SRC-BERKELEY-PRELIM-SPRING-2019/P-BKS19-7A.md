@@ -57,7 +57,7 @@ so the polynomial $p(x)=x^{37}-1$ annihilates $A$. By the defining divisibility 
 
 ::: {.pf-step #s1-2}
 
-The polynomial $x^{37}-1$ has no repeated root in $\mathbb C$.
+The polynomial $x^{37}-1$ has no repeated root in $\CC$.
 
 
 ::: pf-proof
@@ -70,7 +70,7 @@ Any common root of $x^{37}-1$ and its derivative would have to be $0$, but $0^{3
 $$
 \gcd(x^{37}-1,37x^{36})=1,
 $$
-so $x^{37}-1$ is squarefree. Since the field is $\mathbb C$, it therefore factors as a product of distinct linear factors.
+so $x^{37}-1$ is squarefree. Since the field is $\CC$, it therefore factors as a product of distinct linear factors.
 
 :::
 
@@ -78,7 +78,7 @@ so $x^{37}-1$ is squarefree. Since the field is $\mathbb C$, it therefore factor
 
 ::: {.pf-step #s1-3}
 
-The matrix $A$ is diagonalizable over $\mathbb C$.
+The matrix $A$ is diagonalizable over $\CC$.
 
 
 ::: pf-proof

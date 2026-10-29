@@ -11,12 +11,12 @@ audit:
 ---
 
 ::: {.problem}
-Define the *slotted plane* to be $\mathbb R^2$ with the following topology: a set $U$ is open if for every $x\in U$ there are an ordinary open disk $D$ about $x$, an integer $k\ge0$, and straight lines $L_1,\dots,L_k$ through $x$ such that
+Define the *slotted plane* to be $\RR^2$ with the following topology: a set $U$ is open if for every $x\in U$ there are an ordinary open disk $D$ about $x$, an integer $k\ge0$, and straight lines $L_1,\dots,L_k$ through $x$ such that
 \[
 \{x\}\cup\bigl(D\setminus(L_1\cup\cdots\cup L_k)\bigr)\subseteq U.
 \]
 
-1. Prove that these sets form a topology finer than the usual topology on $\mathbb R^2$.
+1. Prove that these sets form a topology finer than the usual topology on $\RR^2$.
 2. Prove that the slotted plane is Hausdorff but not regular.
 3. Prove that it is separable but not first countable.
 :::
@@ -34,12 +34,12 @@ B(x;D;L_1,\dots,L_k)
 
 ::: {.pf-step #s1-1}
 
-The declared open sets form a topology on $\mathbb R^2$.
+The declared open sets form a topology on $\RR^2$.
 
 
 ::: pf-proof
 
-The empty set satisfies the defining condition vacuously, and $\mathbb R^2$
+The empty set satisfies the defining condition vacuously, and $\RR^2$
 satisfies it by taking $k=0$ at every point.
 
 An arbitrary union of declared open sets is open: if a point lies in the
@@ -126,7 +126,7 @@ is a slotted neighborhood disjoint from $F$. If $x$ lies on the $x$-axis but
 $x\notin F\cup\{o\}$, the same construction centered at $x$, again slotting
 out the $x$-axis, misses $F$. If $x$ lies off the $x$-axis, an ordinary disk
 about $x$ can be chosen disjoint from the $x$-axis and hence from $F$.
-Therefore $\mathbb R^2\setminus F$ is slotted-open.
+Therefore $\RR^2\setminus F$ is slotted-open.
 
 :::
 
@@ -199,7 +199,7 @@ The slotted plane is separable.
 
 ::: pf-proof
 
-The countable set $\mathbb Q^2$ is dense. Let $U$ be a nonempty slotted-open
+The countable set $\QQ^2$ is dense. Let $U$ be a nonempty slotted-open
 set and choose $x\in U$ together with
 \[
 B(x;D;L_1,\dots,L_k)\subseteq U.
@@ -209,8 +209,8 @@ The Euclidean open set
 D\setminus(L_1\cup\cdots\cup L_k)
 \]
 is nonempty, because finitely many lines cannot contain an open disk. Since
-$\mathbb Q^2$ is dense in the Euclidean plane, this set contains a point of
-$\mathbb Q^2$. Hence every nonempty slotted-open set meets $\mathbb Q^2$.
+$\QQ^2$ is dense in the Euclidean plane, this set contains a point of
+$\QQ^2$. Hence every nonempty slotted-open set meets $\QQ^2$.
 
 :::
 
@@ -238,7 +238,7 @@ $L$ through $x$ that occurs in none of those lists.
 
 The set
 \[
-V=\{x\}\cup(\mathbb R^2\setminus L)
+V=\{x\}\cup(\RR^2\setminus L)
 \]
 is slotted-open: at $x$ one slots out $L$, while at any point off $L$ an
 ordinary disk disjoint from $L$ suffices. Thus $V$ is a neighborhood of $x$.

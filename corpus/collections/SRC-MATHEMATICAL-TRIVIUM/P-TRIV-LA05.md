@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ and $B$ be non-degenerate $n \times n$ matrices, $c \in \mathbb{C}$.
+Let $A$ and $B$ be non-degenerate $n \times n$ matrices, $c \in \CC$.
 Write the relations between their determinants, if
 
 (a) $B = A^T$,

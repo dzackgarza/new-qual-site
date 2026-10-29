@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Show that, in general, $H_n(X)=\bigoplus_{Y\in\pi_0(X)}H_n(Y)$, where $\pi_0(X)$ is the set of path-components of $X$.
-Thus $H_0(X)\cong\mathbb{Z}^{\pi_0(X)}$.
+Thus $H_0(X)\cong\ZZ^{\pi_0(X)}$.
 :::
 
 ::: {.solution}
@@ -37,10 +37,10 @@ Kernels and images of a direct sum of chain complexes are the corresponding dire
 \[
 H_n(X)\cong\bigoplus_{Y\in\pi_0(X)}H_n(Y).
 \]
-For every path-connected component $Y$, $H_0(Y)\cong\mathbb Z$.
+For every path-connected component $Y$, $H_0(Y)\cong\ZZ$.
 Hence
 \[
-H_0(X)\cong\bigoplus_{Y\in\pi_0(X)}\mathbb Z,
+H_0(X)\cong\bigoplus_{Y\in\pi_0(X)}\ZZ,
 \]
-the free abelian group on the set $\pi_0(X)$, usually denoted $\mathbb Z[\pi_0(X)]$.
+the free abelian group on the set $\pi_0(X)$, usually denoted $\ZZ[\pi_0(X)]$.
 :::

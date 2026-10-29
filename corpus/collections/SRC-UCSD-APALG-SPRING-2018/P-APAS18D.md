@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the set of the $20$ diagonals in a regular octogon.
-The dihedral group $D_8$ of octogon symmetries acts on $X$; let $V=\mathbb{C}[X]$ be the associated permutation representation of $D_8$.
+The dihedral group $D_8$ of octogon symmetries acts on $X$; let $V=\CC[X]$ be the associated permutation representation of $D_8$.
 
 (a) How many orbits are there in the action of $D_8$ on $X$?
 
@@ -28,13 +28,13 @@ What is the rank of $R_{D_8}$?
 :::
 
 ::: {.solution}
-Label the vertices of the regular octagon by the elements of \(\mathbb Z/8\mathbb Z\). An unordered pair of distinct vertices is determined up to the dihedral action by its cyclic distance
+Label the vertices of the regular octagon by the elements of \(\ZZ/8\ZZ\). An unordered pair of distinct vertices is determined up to the dihedral action by its cyclic distance
 \[
 d=\min(|i-j|,8-|i-j|).
 \]
 Edges have \(d=1\), so the diagonals have \(d=2,3,4\). The dihedral group preserves \(d\), and it acts transitively on the diagonals of each fixed distance. Therefore \(X\) has exactly three \(D_8\)-orbits.
 
-For a permutation representation \(\mathbb C[X]\), the invariant subspace consists exactly of functions on \(X\) that are constant on each orbit. Hence
+For a permutation representation \(\CC[X]\), the invariant subspace consists exactly of functions on \(X\) that are constant on each orbit. Hence
 \[
 \dim V^{D_8}=3.
 \]

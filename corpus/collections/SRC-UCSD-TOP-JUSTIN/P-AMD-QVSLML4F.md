@@ -27,13 +27,13 @@ Compute $H_*(X\cross S^n)$ in terms of $H_*(X)$
 
 For every $k$,
 $$
-\boxed{H_k(X\times S^n;\mathbb Z)\cong H_k(X;\mathbb Z)\oplus H_{k-n}(X;\mathbb Z),}
+\boxed{H_k(X\times S^n;\ZZ)\cong H_k(X;\ZZ)\oplus H_{k-n}(X;\ZZ),}
 $$
 where $H_j(X)=0$ for $j<0$.
 
 ::: pf-proof
 
-The homology of $S^n$ is free and nonzero only in degrees $0$ and $n$, where it is $\mathbb Z$. Hence the Künneth theorem has no Tor terms and gives
+The homology of $S^n$ is free and nonzero only in degrees $0$ and $n$, where it is $\ZZ$. Hence the Künneth theorem has no Tor terms and gives
 $$
 H_k(X\times S^n)
 \cong H_k(X)\otimes H_0(S^n)
@@ -49,7 +49,7 @@ which is the displayed direct sum.
 
 For the $n$-torus $T^n=(S^1)^n$,
 $$
-\boxed{H_k(T^n;\mathbb Z)\cong\mathbb Z^{\binom nk}}
+\boxed{H_k(T^n;\ZZ)\cong\ZZ^{\binom nk}}
 $$
 for $0\le k\le n$, and $H_k(T^n)=0$ otherwise.
 

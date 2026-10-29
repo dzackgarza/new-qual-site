@@ -23,7 +23,7 @@ where the sum is over all size-k subsets $I \subseteq \{ 1 , \ldots , n \}$ . (S
 :::
 
 ::: {.solution}
-Let $a _ { i }$ be the i-th column vector of A. Let $b _ { j }$ be the j-th column vector of B. Let $e _ { 1 } , \ldots , e _ { n }$ be the standard basis of $\mathbb { R } ^ { n }$ . Both sides of the identity are linear in each $a _ { i }$ and $b _ { j }$ , so we may assume that each column is a standard basis vector, say $\boldsymbol a _ { i } = \boldsymbol e _ { f ( i ) }$ and $b _ { j } = e _ { g ( j ) }$ Then $A ^ { t } B$ is the matrix whose ij-entry is $a _ { i } ^ { t } b _ { j }$ , which is 1 if $f ( i ) = g ( j )$ and 0 otherwise.
+Let $a _ { i }$ be the i-th column vector of A. Let $b _ { j }$ be the j-th column vector of B. Let $e _ { 1 } , \ldots , e _ { n }$ be the standard basis of $\RR ^ { n }$ . Both sides of the identity are linear in each $a _ { i }$ and $b _ { j }$ , so we may assume that each column is a standard basis vector, say $\boldsymbol a _ { i } = \boldsymbol e _ { f ( i ) }$ and $b _ { j } = e _ { g ( j ) }$ Then $A ^ { t } B$ is the matrix whose ij-entry is $a _ { i } ^ { t } b _ { j }$ , which is 1 if $f ( i ) = g ( j )$ and 0 otherwise.
 
 If $f ( 1 ) , \ldots , f ( k )$ are not all different, then $A ^ { t } B$ has a repeated row, and every $A _ { I }$ has a repeated column, so both sides of the desired identity are 0. So assume that the $f ( i )$ are all different.
 

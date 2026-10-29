@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on $\mathbb C$ and suppose that $f(0)=0$, $f(1)=1$, and $f(\mathbb D)\subseteq\mathbb D$, where $\mathbb D$ is the unit disc.
+Let $f$ be holomorphic on $\CC$ and suppose that $f(0)=0$, $f(1)=1$, and $f(\mathbb D)\subseteq\mathbb D$, where $\mathbb D$ is the unit disc.
 Show that
 
-(a) $f'(1)\in\mathbb R$;
+(a) $f'(1)\in\RR$;
 
 (b) $f'(1)\ge1$.
 :::

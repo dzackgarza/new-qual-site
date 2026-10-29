@@ -21,7 +21,7 @@ audit:
 
 ::: pf-step
 
-State the Cayley--Hamilton theorem for matrices $A\in M_n(\mathbb C)$.
+State the Cayley--Hamilton theorem for matrices $A\in M_n(\CC)$.
 
 :::
 
@@ -33,17 +33,17 @@ Prove the theorem directly for diagonalizable matrices.
 
 ::: pf-step
 
-Identify $M_n(\mathbb C)$ with $\mathbb C^{n^2}$ via a fixed linear isomorphism and give it the Euclidean metric.
+Identify $M_n(\CC)$ with $\CC^{n^2}$ via a fixed linear isomorphism and give it the Euclidean metric.
 
 :::
 
 :::
 
-Using the fact that the diagonalizable matrices are dense in $M_n(\mathbb C)$, together with step [](#p1-s2){.pf-ref}, prove the Cayley--Hamilton theorem for arbitrary complex matrices.
+Using the fact that the diagonalizable matrices are dense in $M_n(\CC)$, together with step [](#p1-s2){.pf-ref}, prove the Cayley--Hamilton theorem for arbitrary complex matrices.
 :::
 
 ::: {.solution}
-For $A\in M_n(\mathbb C)$, write
+For $A\in M_n(\CC)$, write
 \[
 \chi_A(t)=\det(tI-A)
 \]
@@ -57,7 +57,7 @@ The Cayley--Hamilton theorem states that
 \[
 \boxed{\chi_A(A)=0}
 \]
-for every $A\in M_n(\mathbb C)$.
+for every $A\in M_n(\CC)$.
 
 ::: pf-proof
 
@@ -80,7 +80,7 @@ A=SDS^{-1}.
 
 ::: pf-proof
 
-This is the definition of diagonalizability over $\mathbb C$.
+This is the definition of diagonalizability over $\CC$.
 
 :::
 
@@ -159,7 +159,7 @@ This proves Cayley--Hamilton for diagonalizable matrices.
 
 Under the standard identification
 \[
-M_n(\mathbb C)\cong\mathbb C^{n^2},
+M_n(\CC)\cong\CC^{n^2},
 \]
 the coefficients of $\chi_A(t)$ depend continuously on the entries of $A$.
 
@@ -169,7 +169,7 @@ Expanding
 \[
 \det(tI-A)
 \]
-by the Leibniz formula expresses every coefficient of $t^k$ as a polynomial in the entries of $A$. Polynomial functions on $\mathbb C^{n^2}$ are continuous.
+by the Leibniz formula expresses every coefficient of $t^k$ as a polynomial in the entries of $A$. Polynomial functions on $\CC^{n^2}$ are continuous.
 
 :::
 
@@ -179,7 +179,7 @@ by the Leibniz formula expresses every coefficient of $t^k$ as a polynomial in t
 
 The map
 \[
-F:M_n(\mathbb C)\to M_n(\mathbb C),
+F:M_n(\CC)\to M_n(\CC),
 \qquad
 F(A)=\chi_A(A),
 \]
@@ -200,7 +200,7 @@ F(A)
 =
 A^n+c_{n-1}(A)A^{n-1}+\cdots+c_0(A)I.
 \]
-Matrix multiplication, matrix addition, and scalar multiplication are polynomial, hence continuous, operations on the finite-dimensional vector space $M_n(\mathbb C)$. Therefore $F$ is continuous.
+Matrix multiplication, matrix addition, and scalar multiplication are polynomial, hence continuous, operations on the finite-dimensional vector space $M_n(\CC)$. Therefore $F$ is continuous.
 
 :::
 
@@ -208,14 +208,14 @@ Matrix multiplication, matrix addition, and scalar multiplication are polynomial
 
 ::: {.pf-step #p2-s7}
 
-Let $A\in M_n(\mathbb C)$. There is a sequence of diagonalizable matrices $(A_m)$ such that
+Let $A\in M_n(\CC)$. There is a sequence of diagonalizable matrices $(A_m)$ such that
 \[
 A_m\to A.
 \]
 
 ::: pf-proof
 
-This is exactly the density hypothesis supplied in the problem: the set of diagonalizable matrices is dense in $M_n(\mathbb C)$ with its Euclidean metric.
+This is exactly the density hypothesis supplied in the problem: the set of diagonalizable matrices is dense in $M_n(\CC)$ with its Euclidean metric.
 
 :::
 
@@ -275,7 +275,7 @@ Therefore every complex matrix satisfies its characteristic polynomial:
 
 ::: pf-proof
 
-The matrix $A$ in steps [](#p2-s7){.pf-ref}, [](#p2-s8){.pf-ref} and [](#p2-s9){.pf-ref} was arbitrary. Thus step [](#p2-s9){.pf-ref} proves the Cayley--Hamilton theorem for all $A\in M_n(\mathbb C)$.
+The matrix $A$ in steps [](#p2-s7){.pf-ref}, [](#p2-s8){.pf-ref} and [](#p2-s9){.pf-ref} was arbitrary. Thus step [](#p2-s9){.pf-ref} proves the Cayley--Hamilton theorem for all $A\in M_n(\CC)$.
 
 :::
 

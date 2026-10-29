@@ -23,11 +23,11 @@ audit:
   note: "Verified harmonicity directly and integrated the Cauchy--Riemann equations to obtain the harmonic conjugate."
 ---
 ::: {.problem}
-Let $u:\mathbb R^2\to\mathbb R$ be defined by
+Let $u:\RR^2\to\RR$ be defined by
 \[
 u(x,y)=x^3-3xy^2.
 \]
-Show that $u$ is harmonic and find $v:\mathbb R^2\to\mathbb R$ such that
+Show that $u$ is harmonic and find $v:\RR^2\to\RR$ such that
 \[
 f(x+iy)=u(x,y)+iv(x,y)
 \]
@@ -60,7 +60,7 @@ Hence
 $$
 u_{xx}+u_{yy}=0
 $$
-everywhere on $\mathbb R^2$, so $u$ is harmonic.
+everywhere on $\RR^2$, so $u$ is harmonic.
 
 :::
 
@@ -118,7 +118,7 @@ $$
 $$
 the resulting analytic function is
 $$
-\boxed{f(z)=z^3+iC,\qquad C\in\mathbb R.}
+\boxed{f(z)=z^3+iC,\qquad C\in\RR.}
 $$
 
 :::

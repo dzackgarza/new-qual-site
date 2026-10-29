@@ -51,7 +51,7 @@ on $G$.
 **Liouville's theorem.** Every bounded entire function is constant.
 
 **Riemann mapping theorem.** Every nonempty simply connected proper domain
-$G\subsetneq\mathbb C$ is conformally equivalent to the unit disk.
+$G\subsetneq\CC$ is conformally equivalent to the unit disk.
 
 We sketch proofs of Morera and Liouville.
 
@@ -68,7 +68,7 @@ $D$. Hence
 by continuity. Thus $F'=f$ on $D$, so $f$ is holomorphic. Since $D$ was
 arbitrary, $f\in H(G)$.
 
-For Liouville, suppose $|f|\le M$ on $\mathbb C$. Cauchy's estimate on the
+For Liouville, suppose $|f|\le M$ on $\CC$. Cauchy's estimate on the
 circle $|z-a|=R$ gives
 \[
 |f'(a)|\le \frac{M}{R}.

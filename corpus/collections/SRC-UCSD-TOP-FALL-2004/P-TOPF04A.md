@@ -24,7 +24,7 @@ Prove that $X$ is not homotopy equivalent to the torus.
 ::: pf
 
 ::: pf-step
-Start with the torus $T=T^2$, choose a generator $a\in\pi_1(T)\cong\mathbb Z^2$, and attach a $2$-cell by the constant map. The resulting space is
+Start with the torus $T=T^2$, choose a generator $a\in\pi_1(T)\cong\ZZ^2$, and attach a $2$-cell by the constant map. The resulting space is
 $$
 T\vee S^2.
 $$
@@ -38,7 +38,7 @@ A trivially attached $2$-cell is a wedged $2$-sphere and does not change the fun
 ::: pf-step
 In the universal cover, the lifts of this new $2$-cell form a free rank-one module over
 $$
-\Lambda=\mathbb Z[\pi_1(T)]\cong\mathbb Z[a^{\pm1},b^{\pm1}].
+\Lambda=\ZZ[\pi_1(T)]\cong\ZZ[a^{\pm1},b^{\pm1}].
 $$
 Let $e$ denote one lift.
 
@@ -66,7 +66,7 @@ so the indicated element is represented by an attaching map $S^2\to T\vee S^2$.
 :::
 
 ::: {.pf-step #pi1-unchanged}
-The fundamental group of $X$ is still $\mathbb Z^2$.
+The fundamental group of $X$ is still $\ZZ^2$.
 
 ::: pf-proof
 Cells of dimensions $2$ and $3$ attached as above do not add generators to $\pi_1$, and the $2$-cell was attached trivially, so no relation is imposed on $\pi_1(T)$.
@@ -84,11 +84,11 @@ $$
 $$
 Thus the new cellular summand is
 $$
-0\to\mathbb Z\xrightarrow{1}\mathbb Z\to0,
+0\to\ZZ\xrightarrow{1}\ZZ\to0,
 $$
 which is acyclic. Therefore
 $$
-H_*(X;\mathbb Z)\cong H_*(T^2;\mathbb Z).
+H_*(X;\ZZ)\cong H_*(T^2;\ZZ).
 $$
 :::
 

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-7. Suppose $f : \mathbb { D } \to \mathbb { C }$ is holomorphic.
+7. Suppose $f : \mathbb { D } \to \CC$ is holomorphic.
    Show that the diameter $d =$ $\begin{array} { r } { \operatorname* { s u p } _ { z , w \in \mathbb { D } } | f ( z ) - f ( w ) | } \end{array}$ of the image of f satisfies
 
 $$

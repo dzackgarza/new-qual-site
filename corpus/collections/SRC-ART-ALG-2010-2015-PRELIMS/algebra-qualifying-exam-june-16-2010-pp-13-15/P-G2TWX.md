@@ -41,15 +41,15 @@ b. A pair of fields $F \subset K$ such that $K$ is finite dimensional over $F$ b
 
 For part (a), take
 $$
-F=\mathbb Q,\qquad K=\mathbb Q(\sqrt2),
-\qquad L=\mathbb Q(\sqrt[4]{2}).
+F=\QQ,\qquad K=\QQ(\sqrt2),
+\qquad L=\QQ(\sqrt[4]{2}).
 $$
 
 ::: pf-proof
 
 Let $a=\sqrt[4]{2}>0$, so $a^2=\sqrt2$.
 Eisenstein's criterion at two makes $T^2-2$ and $T^4-2$
-irreducible over $\mathbb Q$ [@DF04]. Hence
+irreducible over $\QQ$ [@DF04]. Hence
 $[K:F]=2$, $[L:F]=4$, and the tower law gives $[L:K]=2$.
 In particular both inclusions are strict and $L/F$ is algebraic.
 
@@ -60,7 +60,7 @@ over $K$, with distinct roots $a,-a$.
 Thus both $K/F$ and $L/K$ are Galois, being splitting
 fields of separable polynomials [@DF04].
 
-However, $L\subseteq\mathbb R$ contains $a$ but not the
+However, $L\subseteq\RR$ contains $a$ but not the
 nonreal root $ia$ of the irreducible polynomial $T^4-2$.
 That polynomial therefore does not split over $L$, so
 $L/F$ is not normal and hence is not Galois.

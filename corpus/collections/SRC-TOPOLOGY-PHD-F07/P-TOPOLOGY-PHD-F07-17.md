@@ -54,11 +54,11 @@ F_3=[v_0,v_1,v_2]
 for the oriented faces.
 The simplicial chain groups are
 \[
-C_2\cong\mathbb Z^4,
+C_2\cong\ZZ^4,
 \qquad
-C_1\cong\mathbb Z^6,
+C_1\cong\ZZ^6,
 \qquad
-C_0\cong\mathbb Z^4,
+C_0\cong\ZZ^4,
 \]
 and $C_3=0$.
 
@@ -106,7 +106,7 @@ Hence the reverse inclusion also holds.
 ::: {.pf-step #h0-computation}
 The zeroth homology group is
 \[
-H_0(S^2)\cong\mathbb Z.
+H_0(S^2)\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -116,7 +116,7 @@ H_0(S^2)=C_0/\operatorname{im}\partial_1.
 \]
 Define the augmentation
 \[
-\varepsilon:C_0\to\mathbb Z,
+\varepsilon:C_0\to\ZZ,
 \qquad
 \varepsilon\left(\sum a_iv_i\right)=\sum a_i.
 \]
@@ -125,7 +125,7 @@ Therefore the first isomorphism theorem gives
 \[
 H_0(S^2)
 =C_0/\ker\varepsilon
-\cong\mathbb Z.
+\cong\ZZ.
 \]
 :::
 
@@ -260,8 +260,8 @@ Conversely, the displayed generator has zero boundary by the four formulas above
 Therefore
 \[
 \ker\partial_2
-=\mathbb Z(F_0-F_1+F_2-F_3)
-\cong\mathbb Z.
+=\ZZ(F_0-F_1+F_2-F_3)
+\cong\ZZ.
 \]
 :::
 
@@ -270,7 +270,7 @@ Therefore
 ::: {.pf-step #h2-computation}
 The second homology group is
 \[
-H_2(S^2)\cong\mathbb Z.
+H_2(S^2)\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -285,7 +285,7 @@ Therefore, by step [](#ker-boundary-2){.pf-ref},
 H_2(S^2)
 =\ker\partial_2/\operatorname{im}\partial_3
 =\ker\partial_2
-\cong\mathbb Z.
+\cong\ZZ.
 \]
 :::
 
@@ -294,7 +294,7 @@ H_2(S^2)
 ::: pf-step
 Hence the first three homology groups of the hollow sphere are
 \[
-\boxed{H_0(S^2)\cong\mathbb Z,\qquad H_1(S^2)=0,\qquad H_2(S^2)\cong\mathbb Z.}
+\boxed{H_0(S^2)\cong\ZZ,\qquad H_1(S^2)=0,\qquad H_2(S^2)\cong\ZZ.}
 \]
 
 ::: pf-proof

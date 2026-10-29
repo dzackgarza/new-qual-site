@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f, g: \mathbb{R} \to \mathbb{R}$ be continuous for all $x$.
+Let $f, g: \RR \to \RR$ be continuous for all $x$.
 Using an $\varepsilon$-$\delta$ argument, show that $f(x)g(x)$ is continuous for all $x$.
 :::
 
 ::: {.solution}
-Fix $a\in\mathbb R$ and let $\varepsilon>0$. Since $f$ is continuous at $a$, choose $\delta_0>0$ such that
+Fix $a\in\RR$ and let $\varepsilon>0$. Since $f$ is continuous at $a$, choose $\delta_0>0$ such that
 \[
 |x-a|<\delta_0\Longrightarrow |f(x)-f(a)|<1.
 \]
@@ -52,5 +52,5 @@ If $|x-a|<\delta$, then
 &<\varepsilon.
 \end{aligned}
 \]
-Thus $fg$ is continuous at $a$. Since $a$ was arbitrary, $fg$ is continuous on $\mathbb R$.
+Thus $fg$ is continuous at $a$. Since $a$ was arbitrary, $fg$ is continuous on $\RR$.
 :::

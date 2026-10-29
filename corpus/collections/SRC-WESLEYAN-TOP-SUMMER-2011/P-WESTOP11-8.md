@@ -83,7 +83,7 @@ One has
 \[
 \pi_1(A,x_0)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 If
 \[
@@ -132,7 +132,7 @@ is injective.
 
 By step [](#s1-3){.pf-ref}, the generator of
 \[
-\pi_1(A)\cong\mathbb Z
+\pi_1(A)\cong\ZZ
 \]
 maps to
 \[
@@ -151,7 +151,7 @@ n=0.
 \]
 Hence the homomorphism
 \[
-\mathbb Z\to F_4,
+\ZZ\to F_4,
 \qquad
 n\mapsto w^n,
 \]
@@ -165,17 +165,17 @@ is injective.
 
 The homology groups are
 \[
-H_0(A)\cong\mathbb Z,
+H_0(A)\cong\ZZ,
 \qquad
-H_1(A)\cong\mathbb Z,
+H_1(A)\cong\ZZ,
 \qquad
 H_j(A)=0\quad(j\ge2),
 \]
 and
 \[
-H_0(X)\cong\mathbb Z,
+H_0(X)\cong\ZZ,
 \qquad
-H_1(X)\cong\mathbb Z^4,
+H_1(X)\cong\ZZ^4,
 \qquad
 H_j(X)=0\quad(j\ge2).
 \]
@@ -192,7 +192,7 @@ By step [](#s1-1){.pf-ref},
 \[
 X\simeq\bigvee^4S^1,
 \]
-whose cellular homology has one copy of $\mathbb Z$ in degree $0$, four
+whose cellular homology has one copy of $\ZZ$ in degree $0$, four
 copies in degree $1$, and zero in higher degrees.
 
 :::
@@ -217,7 +217,7 @@ Both spaces are path-connected, and inclusion sends the unique path
 component of $A$ into the unique path component of $X$.
 Thus the induced map on
 \[
-H_0\cong\mathbb Z
+H_0\cong\ZZ
 \]
 is the identity under the standard identifications.
 
@@ -243,7 +243,7 @@ H_1(X)
 
 For a path-connected space,
 \[
-H_1(Y;\mathbb Z)
+H_1(Y;\ZZ)
 \cong
 \pi_1(Y)^{\mathrm{ab}}.
 \]
@@ -256,11 +256,11 @@ zero in
 \[
 F_4^{\mathrm{ab}}
 \cong
-\mathbb Z^4.
+\ZZ^4.
 \]
 Thus the generator of
 \[
-H_1(A)\cong\mathbb Z
+H_1(A)\cong\ZZ
 \]
 maps to zero.
 
@@ -324,7 +324,7 @@ r_*\circ i_*
 \]
 Since
 \[
-H_1(A)\cong\mathbb Z\ne0,
+H_1(A)\cong\ZZ\ne0,
 \]
 its identity map is nonzero, a contradiction.
 
@@ -347,11 +347,11 @@ r_*\circ i_*
 \]
 But
 \[
-\pi_1(A)\cong\mathbb Z
+\pi_1(A)\cong\ZZ
 \]
 is abelian, so every homomorphism
 \[
-r_*:F_4\to\mathbb Z
+r_*:F_4\to\ZZ
 \]
 kills commutators.
 Hence by step [](#s1-3){.pf-ref},
@@ -364,7 +364,7 @@ r_*\bigl([a_1,b_1][a_2,b_2]\bigr)
 \]
 whereas the identity on
 \[
-\mathbb Z
+\ZZ
 \]
 would send $c$ to the nonzero generator $c$.
 

@@ -38,7 +38,7 @@ $$\pi_1(K) = \langle a, b \mid a b a^{-1} = b^{-1} \rangle.$$
 :::
 
 ::: pf-step
-Every element $g \in \pi_1(K)$ can be written uniquely in normal form as $g = a^m b^n$ for $m, n \in \mathbb{Z}$.
+Every element $g \in \pi_1(K)$ can be written uniquely in normal form as $g = a^m b^n$ for $m, n \in \ZZ$.
 :::
 
 ::: pf-step
@@ -65,7 +65,7 @@ Define the subgroup $H_K = \langle a, b^3 \rangle \le \pi_1(K)$.
 :::
 
 ::: pf-step
-The elements of $H_K$ are precisely $\{a^m b^{3n} : m, n \in \mathbb{Z}\}$.
+The elements of $H_K$ are precisely $\{a^m b^{3n} : m, n \in \ZZ\}$.
 :::
 
 ::: pf-step
@@ -114,11 +114,11 @@ $$(a^2 b) b^3 (a^2 b)^{-1} = a^2 b^4 b^{-1} a^{-2} = a^2 b^3 a^{-2} = (a^2 b a^{
 :::
 
 ::: pf-step
-Thus $H_T \cong \mathbb{Z}^2$, so the covering space $\widetilde{T}$ is a closed, connected, orientable surface with $\pi_1(\widetilde{T}) \cong \mathbb{Z}^2$, which is the torus $T^2$.
+Thus $H_T \cong \ZZ^2$, so the covering space $\widetilde{T}$ is a closed, connected, orientable surface with $\pi_1(\widetilde{T}) \cong \ZZ^2$, which is the torus $T^2$.
 :::
 
 ::: pf-step
-The elements of $H_T$ are precisely $\{(a^2 b)^m (b^3)^n = a^{2m} b^{m + 3n} : m, n \in \mathbb{Z}\}$.
+The elements of $H_T$ are precisely $\{(a^2 b)^m (b^3)^n = a^{2m} b^{m + 3n} : m, n \in \ZZ\}$.
 :::
 
 ::: pf-step
@@ -131,7 +131,7 @@ $$a (a^2 b) a^{-1} = a^2 (a b a^{-1}) = a^2 b^{-1}.$$
 :::
 
 ::: pf-step
-In the form $a^{2m} b^{m + 3n}$, the element $a^2 b^{-1}$ requires $m = 1$ and $1 + 3n = -1 \implies 3n = -2$, which has no integer solution $n \in \mathbb{Z}$.
+In the form $a^{2m} b^{m + 3n}$, the element $a^2 b^{-1}$ requires $m = 1$ and $1 + 3n = -1 \implies 3n = -2$, which has no integer solution $n \in \ZZ$.
 :::
 
 ::: pf-step

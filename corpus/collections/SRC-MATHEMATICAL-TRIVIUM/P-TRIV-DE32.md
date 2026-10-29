@@ -48,7 +48,7 @@ whose imaginary part is $\epsilon/(x^2+\epsilon^2)$.
 
 ::: {.pf-step #s1-2}
 
-For every test function $\phi\in C_c^\infty(\mathbb R)$,
+For every test function $\phi\in C_c^\infty(\RR)$,
 \[
 \lim_{\epsilon\to0^+}
 \int_{-\infty}^{\infty}
@@ -87,7 +87,7 @@ Hence
 \delta(x)=\lim_{\epsilon\to0^+}
 \frac1\pi\operatorname{Im}\frac1{x-i\epsilon}}
 \]
-in $\mathcal D'(\mathbb R)$.
+in $\mathcal D'(\RR)$.
 
 
 ::: pf-proof

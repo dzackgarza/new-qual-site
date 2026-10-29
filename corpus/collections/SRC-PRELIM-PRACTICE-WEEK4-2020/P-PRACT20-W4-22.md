@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that matrices A, $B \in \mathbb { R } ^ { n \times n }$ satisfy $A B - B A = A$ . Show that A is not invertible.\
+Suppose that matrices A, $B \in \RR ^ { n \times n }$ satisfy $A B - B A = A$ . Show that A is not invertible.\
 If instead we assume $A \neq B , A ^ { 3 } = B ^ { 3 }$ and $A ^ { 2 } B = B ^ { 2 } A$ , show that $A ^ { 2 } + B ^ { 2 }$ is not invertible.
 :::
 

@@ -77,7 +77,7 @@ Multiplying by $z^{2^k}$ yields the stated expansion.
 Every positive integer $n$ can be written uniquely in the form
 \[
 n=2^k(2j+1),
-\qquad k,j\in\mathbb Z_{\ge0}.
+\qquad k,j\in\ZZ_{\ge0}.
 \]
 
 ::: pf-proof

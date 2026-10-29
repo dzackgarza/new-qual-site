@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS26E
 kind: problem
-title: $\operatorname{Ext}^1_{\mathbb Z}(\mathbb Q\oplus\mathbb Z\oplus\mathbb Z_3\oplus\mathbb Z_7,\mathbb Z\oplus\mathbb Z_6\oplus\mathbb Z_{21})$
+title: $\operatorname{Ext}^1_{\ZZ}(\QQ\oplus\ZZ\oplus\ZZ_3\oplus\ZZ_7,\ZZ\oplus\ZZ_6\oplus\ZZ_{21})$
 classification:
   areas:
   - topology
@@ -15,7 +15,7 @@ review: draft
 ::: {.problem}
 Compute
 \[
-\operatorname{Ext}^1_{\mathbb{Z}}(\mathbb{Q} \oplus \mathbb{Z} \oplus \mathbb{Z}_3 \oplus \mathbb{Z}_7,\ \mathbb{Z} \oplus \mathbb{Z}_6 \oplus \mathbb{Z}_{21}).
+\operatorname{Ext}^1_{\ZZ}(\QQ \oplus \ZZ \oplus \ZZ_3 \oplus \ZZ_7,\ \ZZ \oplus \ZZ_6 \oplus \ZZ_{21}).
 \]
 :::
 
@@ -25,13 +25,13 @@ Compute
 
 ::: {.pf-step #ext-additive-first-variable}
 Put
-$$B=\mathbb Z\oplus\mathbb Z/6\oplus\mathbb Z/21.$$
-Since $\operatorname{Ext}^1_{\mathbb Z}(-,B)$ sends finite direct sums in the first variable to direct sums,
+$$B=\ZZ\oplus\ZZ/6\oplus\ZZ/21.$$
+Since $\operatorname{Ext}^1_{\ZZ}(-,B)$ sends finite direct sums in the first variable to direct sums,
 $$
-\operatorname{Ext}^1(\mathbb Q\oplus\mathbb Z\oplus\mathbb Z/3\oplus\mathbb Z/7,B)
+\operatorname{Ext}^1(\QQ\oplus\ZZ\oplus\ZZ/3\oplus\ZZ/7,B)
 \cong
-\operatorname{Ext}^1(\mathbb Q,B)\oplus\operatorname{Ext}^1(\mathbb Z,B)
-\oplus\operatorname{Ext}^1(\mathbb Z/3,B)\oplus\operatorname{Ext}^1(\mathbb Z/7,B).
+\operatorname{Ext}^1(\QQ,B)\oplus\operatorname{Ext}^1(\ZZ,B)
+\oplus\operatorname{Ext}^1(\ZZ/3,B)\oplus\operatorname{Ext}^1(\ZZ/7,B).
 $$
 
 ::: pf-proof
@@ -42,13 +42,13 @@ Ext is contravariant and additive in its first argument for finite direct sums.
 
 ::: {.pf-step #ext-cyclic-formula}
 One has
-$$\operatorname{Ext}^1(\mathbb Z,B)=0,
+$$\operatorname{Ext}^1(\ZZ,B)=0,
 \qquad
-\operatorname{Ext}^1(\mathbb Z/n,B)\cong B/nB.$$
+\operatorname{Ext}^1(\ZZ/n,B)\cong B/nB.$$
 
 ::: pf-proof
-The first equality holds because $\mathbb Z$ is free. For the second, apply $\operatorname{Hom}_{\mathbb Z}(-,B)$ to
-$$0\to\mathbb Z\xrightarrow{n}\mathbb Z\to\mathbb Z/n\to0.$$
+The first equality holds because $\ZZ$ is free. For the second, apply $\operatorname{Hom}_{\ZZ}(-,B)$ to
+$$0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0.$$
 :::
 
 :::
@@ -56,55 +56,55 @@ $$0\to\mathbb Z\xrightarrow{n}\mathbb Z\to\mathbb Z/n\to0.$$
 ::: {.pf-step #ext-z3-z7-computation}
 Hence
 $$
-\operatorname{Ext}^1(\mathbb Z/3,B)\cong(\mathbb Z/3)^3,
+\operatorname{Ext}^1(\ZZ/3,B)\cong(\ZZ/3)^3,
 \qquad
-\operatorname{Ext}^1(\mathbb Z/7,B)\cong(\mathbb Z/7)^2.
+\operatorname{Ext}^1(\ZZ/7,B)\cong(\ZZ/7)^2.
 $$
 
 ::: pf-proof
-Modulo $3$, the three summands of $B$ contribute $\mathbb Z/3$, $\mathbb Z/3$, and $\mathbb Z/3$. Modulo $7$, they contribute $\mathbb Z/7$, $0$, and $\mathbb Z/7$.
+Modulo $3$, the three summands of $B$ contribute $\ZZ/3$, $\ZZ/3$, and $\ZZ/3$. Modulo $7$, they contribute $\ZZ/7$, $0$, and $\ZZ/7$.
 :::
 
 :::
 
 ::: {.pf-step #ext-q-z-classical}
 The classical computation is
-$$\operatorname{Ext}^1_{\mathbb Z}(\mathbb Q,\mathbb Z)\cong\widehat{\mathbb Z}/\mathbb Z,$$
-where $\widehat{\mathbb Z}=\prod_p\mathbb Z_p$ is the profinite completion.
+$$\operatorname{Ext}^1_{\ZZ}(\QQ,\ZZ)\cong\widehat{\ZZ}/\ZZ,$$
+where $\widehat{\ZZ}=\prod_p\ZZ_p$ is the profinite completion.
 
 ::: pf-proof
-Apply $\operatorname{Hom}_{\mathbb Z}(-,\mathbb Z)$ to
-$$0\to\mathbb Z\to\mathbb Q\to\mathbb Q/\mathbb Z\to0.$$
-Since $\operatorname{Hom}(\mathbb Q,\mathbb Z)=\operatorname{Hom}(\mathbb Q/\mathbb Z,\mathbb Z)=0$, the resulting exact sequence is
-$$0\to\mathbb Z\to\operatorname{Ext}^1(\mathbb Q/\mathbb Z,\mathbb Z)\to\operatorname{Ext}^1(\mathbb Q,\mathbb Z)\to0.$$
+Apply $\operatorname{Hom}_{\ZZ}(-,\ZZ)$ to
+$$0\to\ZZ\to\QQ\to\QQ/\ZZ\to0.$$
+Since $\operatorname{Hom}(\QQ,\ZZ)=\operatorname{Hom}(\QQ/\ZZ,\ZZ)=0$, the resulting exact sequence is
+$$0\to\ZZ\to\operatorname{Ext}^1(\QQ/\ZZ,\ZZ)\to\operatorname{Ext}^1(\QQ,\ZZ)\to0.$$
 Now
-$$\mathbb Q/\mathbb Z\cong\bigoplus_p C_{p^\infty}$$
+$$\QQ/\ZZ\cong\bigoplus_p C_{p^\infty}$$
 and
-$$\operatorname{Ext}^1(C_{p^\infty},\mathbb Z)\cong\mathbb Z_p,$$
+$$\operatorname{Ext}^1(C_{p^\infty},\ZZ)\cong\ZZ_p,$$
 so
-$$\operatorname{Ext}^1(\mathbb Q/\mathbb Z,\mathbb Z)\cong\prod_p\mathbb Z_p=\widehat{\mathbb Z}.$$
-The map from $\mathbb Z$ is the diagonal embedding, giving the quotient above.
+$$\operatorname{Ext}^1(\QQ/\ZZ,\ZZ)\cong\prod_p\ZZ_p=\widehat{\ZZ}.$$
+The map from $\ZZ$ is the diagonal embedding, giving the quotient above.
 :::
 
 :::
 
 ::: {.pf-step #ext-q-finite-vanishes}
 For every finite abelian group $F$,
-$$\operatorname{Ext}^1_{\mathbb Z}(\mathbb Q,F)=0.$$
+$$\operatorname{Ext}^1_{\ZZ}(\QQ,F)=0.$$
 
 ::: pf-proof
-It suffices to take $F=\mathbb Z/n$. Apply $\operatorname{Hom}(\mathbb Q,-)$ to
-$$0\to\mathbb Z\xrightarrow n\mathbb Z\to\mathbb Z/n\to0.$$
-Since $\operatorname{Hom}(\mathbb Q,\mathbb Z)=\operatorname{Hom}(\mathbb Q,\mathbb Z/n)=0$ and $\operatorname{Ext}^2_{\mathbb Z}(\mathbb Q,\mathbb Z)=0$, one obtains
-$$\operatorname{Ext}^1(\mathbb Q,\mathbb Z/n)\cong\operatorname{coker}\bigl(n:\widehat{\mathbb Z}/\mathbb Z\to\widehat{\mathbb Z}/\mathbb Z\bigr).$$
-Multiplication by $n$ on $\widehat{\mathbb Z}/\mathbb Z$ is surjective: for $x\in\widehat{\mathbb Z}$ choose $m\in\mathbb Z$ with $x+m\equiv0\pmod{n\widehat{\mathbb Z}}$, then $(x+m)/n\in\widehat{\mathbb Z}$. Hence the cokernel vanishes.
+It suffices to take $F=\ZZ/n$. Apply $\operatorname{Hom}(\QQ,-)$ to
+$$0\to\ZZ\xrightarrow n\ZZ\to\ZZ/n\to0.$$
+Since $\operatorname{Hom}(\QQ,\ZZ)=\operatorname{Hom}(\QQ,\ZZ/n)=0$ and $\operatorname{Ext}^2_{\ZZ}(\QQ,\ZZ)=0$, one obtains
+$$\operatorname{Ext}^1(\QQ,\ZZ/n)\cong\operatorname{coker}\bigl(n:\widehat{\ZZ}/\ZZ\to\widehat{\ZZ}/\ZZ\bigr).$$
+Multiplication by $n$ on $\widehat{\ZZ}/\ZZ$ is surjective: for $x\in\widehat{\ZZ}$ choose $m\in\ZZ$ with $x+m\equiv0\pmod{n\widehat{\ZZ}}$, then $(x+m)/n\in\widehat{\ZZ}$. Hence the cokernel vanishes.
 :::
 
 :::
 
 ::: {.pf-step #ext-q-b}
 Therefore
-$$\operatorname{Ext}^1(\mathbb Q,B)\cong\widehat{\mathbb Z}/\mathbb Z.$$
+$$\operatorname{Ext}^1(\QQ,B)\cong\widehat{\ZZ}/\ZZ.$$
 
 ::: pf-proof
 Ext is additive in the second variable over the finite direct sum defining $B$, and the finite summands vanish by step [](#ext-q-finite-vanishes){.pf-ref}.
@@ -116,10 +116,10 @@ Ext is additive in the second variable over the finite direct sum defining $B$, 
 Combining the preceding steps,
 $$
 \boxed{
-\operatorname{Ext}^1_{\mathbb Z}(\mathbb Q\oplus\mathbb Z\oplus\mathbb Z_3\oplus\mathbb Z_7,
-\mathbb Z\oplus\mathbb Z_6\oplus\mathbb Z_{21})
+\operatorname{Ext}^1_{\ZZ}(\QQ\oplus\ZZ\oplus\ZZ_3\oplus\ZZ_7,
+\ZZ\oplus\ZZ_6\oplus\ZZ_{21})
 \cong
-\widehat{\mathbb Z}/\mathbb Z\oplus(\mathbb Z/3)^3\oplus(\mathbb Z/7)^2.}
+\widehat{\ZZ}/\ZZ\oplus(\ZZ/3)^3\oplus(\ZZ/7)^2.}
 $$
 
 ::: pf-proof

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D\subset\mathbb C$ be a domain with $0\notin D$.
+Let $D\subset\CC$ be a domain with $0\notin D$.
 Define what it means for a function to be a branch of the logarithm on $D$.
 :::
 
@@ -27,7 +27,7 @@ Define what it means for a function to be a branch of the logarithm on $D$.
 ::: {.pf-step #s1-1}
 
 A branch of the logarithm on $D$ is a holomorphic function
-$L:D\to\mathbb C$ such that
+$L:D\to\CC$ such that
 \[
 \boxed{e^{L(z)}=z\qquad\text{for every }z\in D.}
 \]
@@ -35,9 +35,9 @@ $L:D\to\mathbb C$ such that
 
 ::: pf-proof
 
-The complex exponential maps $\mathbb C$ to $\mathbb C^\times$.
+The complex exponential maps $\CC$ to $\CC^\times$.
 Thus a branch of the logarithm on $D$ is precisely a holomorphic right inverse
-of the exponential along the inclusion $D\hookrightarrow\mathbb C^\times$.
+of the exponential along the inclusion $D\hookrightarrow\CC^\times$.
 Equivalently, for every $z\in D$, the value $L(z)$ is a logarithm of $z$ and
 the choices vary holomorphically with $z$.
 

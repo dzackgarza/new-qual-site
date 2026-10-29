@@ -26,7 +26,7 @@ audit:
 A real symmetric $n\times n$ matrix $A$ is positive semidefinite if
 \[
 x^TAx\ge0
-\qquad\text{for all }x\in\mathbb R^n.
+\qquad\text{for all }x\in\RR^n.
 \]
 Prove that $A$ is positive semidefinite if and only if
 \[

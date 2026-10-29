@@ -28,7 +28,7 @@ ii) Prove that every convergent sequence is Cauchy.
 ::: pf
 
 ::: {.pf-step #s1}
-A sequence $(a_n)$ is Cauchy if for every $\varepsilon>0$ there exists $N\in\mathbb N$ such that
+A sequence $(a_n)$ is Cauchy if for every $\varepsilon>0$ there exists $N\in\NN$ such that
 \[
 m,n\ge N\implies |a_m-a_n|<\varepsilon.
 \]
@@ -36,12 +36,12 @@ m,n\ge N\implies |a_m-a_n|<\varepsilon.
 :::
 
 ::: pf-step
-Suppose $a_n\to L$ for some $L\in\mathbb R$, and let $\varepsilon>0$.
+Suppose $a_n\to L$ for some $L\in\RR$, and let $\varepsilon>0$.
 
 :::
 
 ::: {.pf-step #s3}
-There exists $N\in\mathbb N$ such that
+There exists $N\in\NN$ such that
 \[
 n\ge N\implies |a_n-L|<\frac\varepsilon2.
 \]

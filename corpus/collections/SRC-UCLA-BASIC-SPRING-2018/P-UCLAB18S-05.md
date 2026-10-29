@@ -38,7 +38,7 @@ Assertion 1 is true.
 
 Let
 \[
-x\in\mathbb R^2
+x\in\RR^2
 \]
 be nonzero.
 Since $A$ and $B$ are positive definite,

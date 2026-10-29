@@ -27,21 +27,21 @@ State the Open Mapping Theorem.
 
 Let
 \[
-\Omega\subseteq\mathbb C
+\Omega\subseteq\CC
 \]
 be a domain and let
 \[
-f:\Omega\to\mathbb C
+f:\Omega\to\CC
 \]
 be a nonconstant holomorphic function. Then
 \[
 \boxed{
 f(\Omega)
-\text{ is open in }\mathbb C.
+\text{ is open in }\CC.
 }
 \]
 Equivalently, $f$ maps every open subset of $\Omega$ to an open subset of
-$\mathbb C$.
+$\CC$.
 
 
 ::: pf-proof

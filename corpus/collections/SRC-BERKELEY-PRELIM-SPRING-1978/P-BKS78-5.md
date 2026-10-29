@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS78-5
 kind: problem
-title: Moduli $n$ for which $\mathbb Z_n[x]/(x^2+x+1)$ is a field
+title: Moduli $n$ for which $\ZZ_n[x]/(x^2+x+1)$ is a field
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -11,9 +11,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $I=(x^2+x+1)\subset\mathbb Z_n[x]$.
+Let $I=(x^2+x+1)\subset\ZZ_n[x]$.
 
-1. For which $n$, $1\le n\le10$, is $\mathbb Z_n[x]/I$ a field?
+1. For which $n$, $1\le n\le10$, is $\ZZ_n[x]/I$ a field?
 2. Give the multiplication table for the resulting quotient when $n=2$.
 :::
 
@@ -26,7 +26,7 @@ $$
 ::: pf
 
 ::: {.pf-step #prime-necessary}
-If $\mathbb Z_n[x]/(q)$ is a field, then $n$ is prime.
+If $\ZZ_n[x]/(q)$ is a field, then $n$ is prime.
 
 ::: pf-proof
 Because $q$ is monic of degree $2$, no nonzero constant polynomial belongs to the ideal $(q)$. Indeed, if
@@ -39,11 +39,11 @@ $$
 $$
 contrary to $c$ being constant. Hence the natural map
 $$
-\mathbb Z_n\longrightarrow \mathbb Z_n[x]/(q)
+\ZZ_n\longrightarrow \ZZ_n[x]/(q)
 $$
 is injective.
 
-If the quotient is a field, its subring $\mathbb Z_n$ has no zero divisors. Thus $\mathbb Z_n$ is an integral domain, which for $n\geq2$ occurs exactly when $n$ is prime. For $n=1$ the quotient is the zero ring, not a field.
+If the quotient is a field, its subring $\ZZ_n$ has no zero divisors. Thus $\ZZ_n$ is an integral domain, which for $n\geq2$ occurs exactly when $n$ is prime. For $n=1$ the quotient is the zero ring, not a field.
 :::
 
 :::
@@ -119,7 +119,7 @@ Thus $q$ has a root in each field and is reducible by [](#quadratic-criterion){.
 Therefore, for $1\leq n\leq10$,
 $$
 \boxed{
-\mathbb Z_n[x]/(x^2+x+1)\text{ is a field exactly for }n=2,5.
+\ZZ_n[x]/(x^2+x+1)\text{ is a field exactly for }n=2,5.
 }
 $$
 

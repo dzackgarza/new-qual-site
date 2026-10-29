@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $f : \mathbb { C } \to \hat { \mathbb { C } }$ is a meromorphic function in the plane, such that there exists $R , C > 0$ so that for $| z | > R , | f ( z ) | \leq C | z | ^ { n }$ , then f is a rational function.
+Show that if $f : \CC \to \hat { \CC }$ is a meromorphic function in the plane, such that there exists $R , C > 0$ so that for $| z | > R , | f ( z ) | \leq C | z | ^ { n }$ , then f is a rational function.
 :::
 
 ::: {.solution}

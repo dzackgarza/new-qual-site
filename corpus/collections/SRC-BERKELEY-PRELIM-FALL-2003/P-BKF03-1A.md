@@ -84,7 +84,7 @@ a_{3m+1}=\prod_{j=1}^{m}\frac1{3j(3j+1)},
 \qquad
 a_{3m+2}=0.
 \]
-For fixed $z\in\mathbb C$, the ratio of successive terms in the first nonzero subseries is
+For fixed $z\in\CC$, the ratio of successive terms in the first nonzero subseries is
 \[
 \frac{|a_{3m+3}z^{3m+3}|}{|a_{3m}z^{3m}|}
 =\frac{|z|^3}{(3m+3)(3m+2)}\longrightarrow0.
@@ -104,7 +104,7 @@ Hence the full series has infinite radius of convergence and defines an entire f
 The entire function defined in step [](#infinite-radius-convergence){.pf-ref} solves the differential equation and initial conditions.
 
 ::: pf-proof
-Because its radius of convergence is infinite, the series may be differentiated termwise twice on all of $\mathbb C$.
+Because its radius of convergence is infinite, the series may be differentiated termwise twice on all of $\CC$.
 The coefficient identities from step [](#recurrence-relation){.pf-ref} then give $f''(z)=zf(z)$ coefficient by coefficient.
 The values $a_0=a_1=1$ give $f(0)=f'(0)=1$.
 :::
@@ -121,7 +121,7 @@ Repeating the coefficient comparison in step [](#recurrence-relation){.pf-ref} f
 b_0=1,\qquad b_1=1,\qquad b_2=0,\qquad b_k=\frac{b_{k-3}}{k(k-1)}\quad(k\ge3).
 \]
 Thus $b_n=a_n$ for every $n$ by induction.
-Therefore $g=f$ on $\mathbb C$.
+Therefore $g=f$ on $\CC$.
 :::
 
 :::

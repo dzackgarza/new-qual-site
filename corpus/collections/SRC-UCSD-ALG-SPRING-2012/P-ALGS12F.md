@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS12F
 kind: problem
-title: Galois group of $(x^3-2)(x^2-3)$ over $\mathbb{Q}$
+title: Galois group of $(x^3-2)(x^2-3)$ over $\QQ$
 classification:
   areas:
   - algebra
@@ -25,54 +25,54 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ be the splitting field over $\mathbb{Q}$ of the polynomial $f(x) = (x^3-2)(x^2-3)$.
+Let $K$ be the splitting field over $\QQ$ of the polynomial $f(x) = (x^3-2)(x^2-3)$.
 
-(a) Show that $[K:\mathbb{Q}] = 12$.
+(a) Show that $[K:\QQ] = 12$.
 
-(b) Take as given that every non-Abelian group of order twelve is isomorphic to either $A_4$, the dihedral group $D_{12}$, or else the semidirect product $\mathbb{Z}/3\mathbb{Z} \rtimes_\phi \mathbb{Z}/4\mathbb{Z}$ where $\phi$ sends the generator of $\mathbb{Z}/4\mathbb{Z}$ to the non-identity automorphism of $\mathbb{Z}/3\mathbb{Z}$.
+(b) Take as given that every non-Abelian group of order twelve is isomorphic to either $A_4$, the dihedral group $D_{12}$, or else the semidirect product $\ZZ/3\ZZ \rtimes_\phi \ZZ/4\ZZ$ where $\phi$ sends the generator of $\ZZ/4\ZZ$ to the non-identity automorphism of $\ZZ/3\ZZ$.
 For each of these three groups, calculate what a Sylow-$2$ subgroup is up to isomorphism, and whether or not it is normal in the group.
 
-(c) Which group of order twelve must the Galois group $\mathrm{Gal}(K/\mathbb{Q})$ be?
+(c) Which group of order twelve must the Galois group $\mathrm{Gal}(K/\QQ)$ be?
 :::
 
 ::: {.solution}
 Let $\alpha=\sqrt[3]{2}$ and let $\omega$ be a primitive cube root of unity.
 The splitting field of $x^3-2$ is
 \[
-E=\mathbb Q(\alpha,\omega).
+E=\QQ(\alpha,\omega).
 \]
 
 ::: pf
 
 ::: pf-step
 
-We have $[K:\mathbb Q]=12$.
+We have $[K:\QQ]=12$.
 
 ::: pf-proof
 
-The polynomial $x^3-2$ is Eisenstein at $2$, hence irreducible over $\mathbb Q$.
+The polynomial $x^3-2$ is Eisenstein at $2$, hence irreducible over $\QQ$.
 Its discriminant is
 \[
 -27\cdot 2^2=-108,
 \]
-which is not a square in $\mathbb Q$.
+which is not a square in $\QQ$.
 Therefore its splitting field $E$ has degree $6$ and
 \[
-\operatorname{Gal}(E/\mathbb Q)\cong S_3.
+\operatorname{Gal}(E/\QQ)\cong S_3.
 \]
 The unique subgroup of index $2$ in $S_3$ is $A_3$, so $E$ has a unique quadratic subfield.
 It is
 \[
-\mathbb Q(\omega)=\mathbb Q(\sqrt{-3}).
+\QQ(\omega)=\QQ(\sqrt{-3}).
 \]
 In particular $\sqrt3\notin E$.
 Hence
 \[
 [E(\sqrt3):E]=2.
 \]
-Since $K$ is the compositum of $E$ with the splitting field $\mathbb Q(\sqrt3)$ of $x^2-3$, we obtain
+Since $K$ is the compositum of $E$ with the splitting field $\QQ(\sqrt3)$ of $x^2-3$, we obtain
 \[
-[K:\mathbb Q]=[K:E][E:\mathbb Q]=2\cdot6=12.
+[K:\QQ]=[K:E][E:\QQ]=2\cdot6=12.
 \]
 
 :::
@@ -108,17 +108,17 @@ It is not normal: if $a$ generates $C_3$ and $b$ generates $C_4$, with $bab^{-1}
 
 We have
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong D_{12}.
+\operatorname{Gal}(K/\QQ)\cong D_{12}.
 \]
 
 ::: pf-proof
 
-Both $E/\mathbb Q$ and $\mathbb Q(\sqrt3)/\mathbb Q$ are Galois, and their intersection is $\mathbb Q$ because $\sqrt3\notin E$.
+Both $E/\QQ$ and $\QQ(\sqrt3)/\QQ$ are Galois, and their intersection is $\QQ$ because $\sqrt3\notin E$.
 Hence restriction gives
 \[
-\operatorname{Gal}(K/\mathbb Q)
- \cong \operatorname{Gal}(E/\mathbb Q)\times
-       \operatorname{Gal}(\mathbb Q(\sqrt3)/\mathbb Q)
+\operatorname{Gal}(K/\QQ)
+ \cong \operatorname{Gal}(E/\QQ)\times
+       \operatorname{Gal}(\QQ(\sqrt3)/\QQ)
  \cong S_3\times C_2.
 \]
 This group has a Sylow-$2$ subgroup isomorphic to $C_2\times C_2$, and it is not normal.

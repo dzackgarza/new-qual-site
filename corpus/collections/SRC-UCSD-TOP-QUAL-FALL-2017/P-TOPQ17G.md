@@ -25,11 +25,11 @@ Show that a closed, compact, simply-connected $3$-manifold $M^3$ is homotopy-equ
 ::: {.pf-step #s1}
 
 A closed simply connected $3$-manifold $M$ is orientable and satisfies
-$$H_i(M;\mathbb Z)\cong\begin{cases}\mathbb Z,&i=0,3,\\0,&i=1,2.\end{cases}$$
+$$H_i(M;\ZZ)\cong\begin{cases}\ZZ,&i=0,3,\\0,&i=1,2.\end{cases}$$
 
 ::: pf-proof
 
-Simply connected implies orientable and $H_1(M)=0$. Poincaré duality gives $H_3(M)\cong\mathbb Z$ and $H_2(M)\cong H^1(M)=0$.
+Simply connected implies orientable and $H_1(M)=0$. Poincaré duality gives $H_3(M)\cong\ZZ$ and $H_2(M)\cong H^1(M)=0$.
 
 :::
 

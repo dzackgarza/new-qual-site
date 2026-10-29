@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a basis for the subspace of $\mathbb R^4$ spanned by
+Find a basis for the subspace of $\RR^4$ spanned by
 \[
 (1,1,1,1),\qquad (3,4,6,7),\qquad (5,6,8,9).
 \]
@@ -43,7 +43,7 @@ from which we find that $\vector v_1 = \thevector{1,0,-2,-3}$ and $\vector v_2 =
 :::
 
 ::: {.solution}
-**Goal:** Find a basis for the subspace $W = \operatorname{span}\{(1,1,1,1), \, (3,4,6,7), \, (5,6,8,9)\} \subseteq \mathbb{R}^4$.
+**Goal:** Find a basis for the subspace $W = \operatorname{span}\{(1,1,1,1), \, (3,4,6,7), \, (5,6,8,9)\} \subseteq \RR^4$.
 
 ::: pf
 

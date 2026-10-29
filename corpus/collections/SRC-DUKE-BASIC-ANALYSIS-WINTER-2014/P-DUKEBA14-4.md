@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DUKEBA14-4
 kind: problem
-title: The max and Euclidean metrics induce the same topology on $\mathbb R^n$
+title: The max and Euclidean metrics induce the same topology on $\RR^n$
 classification:
   areas: [real-analysis]
   topics: [Metric Spaces]
@@ -22,13 +22,13 @@ audit:
 ---
 
 ::: {.problem}
-On $\mathbb R^n$ define
+On $\RR^n$ define
 \[
 \rho_1(x,y)=\max_{1\le j\le n}|x^j-y^j|,
 \qquad
 \rho_2(x,y)=\left(\sum_{j=1}^n|x^j-y^j|^2\right)^{1/2}.
 \]
-Prove that a set $U\subset\mathbb R^n$ is $\rho_1$-open if and only if it is $\rho_2$-open.
+Prove that a set $U\subset\RR^n$ is $\rho_1$-open if and only if it is $\rho_2$-open.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ Prove that a set $U\subset\mathbb R^n$ is $\rho_1$-open if and only if it is $\r
 Compare the two metrics.
 
 ::: pf-proof
-For every $x,y\in\mathbb R^n$,
+For every $x,y\in\RR^n$,
 \[
 \rho_1(x,y)\le\rho_2(x,y)\le\sqrt n\,\rho_1(x,y).
 \]

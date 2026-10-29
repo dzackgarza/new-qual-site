@@ -35,7 +35,7 @@ Construct the required proper subgroup.
 
 Take
 \[
-J=p\mathbb Z.
+J=p\ZZ.
 \]
 This is proper because $p$ is prime.
 It contains $p$, $pq$, and $p^q$.

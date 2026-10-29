@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R6CFM
 kind: problem
-title: Rational canonical forms of $6\times 6$ matrices over $\mathbb{Q}$ with minimal
+title: Rational canonical forms of $6\times 6$ matrices over $\QQ$ with minimal
   polynomial $(x+2)^2(x-1)$
 classification:
   areas:
@@ -26,7 +26,7 @@ audit:
   note: "Checked all degree partitions for the invariant-factor chain and the coefficients of every companion block."
 ---
 ::: {.problem}
-There are finitely many $6 \times 6$ matrices over $\mathbb{Q}$, in rational canonical form, with minimal polynomial $(x + 2)^2(x - 1)$.
+There are finitely many $6 \times 6$ matrices over $\QQ$, in rational canonical form, with minimal polynomial $(x + 2)^2(x - 1)$.
 Find them.
 :::
 

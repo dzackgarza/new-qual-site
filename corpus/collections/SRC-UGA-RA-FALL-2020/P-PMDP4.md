@@ -31,16 +31,16 @@ defines a $C^1$ function.
 :::
 
 ::: {.solution}
-For $y\in\mathbb R$ define
+For $y\in\RR$ define
 \[
-F(y)=\int_{\mathbb R}f(x)\cos(yx)\,dx.
+F(y)=\int_{\RR}f(x)\cos(yx)\,dx.
 \]
 This is well defined because $f\in L^1$.
 
-Fix $y\in\mathbb R$. For $h\ne0$,
+Fix $y\in\RR$. For $h\ne0$,
 \[
 \frac{F(y+h)-F(y)}{h}
-=\int_{\mathbb R}f(x)
+=\int_{\RR}f(x)
 \frac{\cos((y+h)x)-\cos(yx)}{h}\,dx.
 \]
 For each $x$, the integrand tends to
@@ -53,7 +53,7 @@ By the mean value theorem,
 \]
 so the absolute value of the integrand is bounded by $|xf(x)|\in L^1$. Dominated convergence therefore gives
 \[
-F'(y)=-\int_{\mathbb R}xf(x)\sin(yx)\,dx.
+F'(y)=-\int_{\RR}xf(x)\sin(yx)\,dx.
 \]
 
 Now let $y_j\to y$. Then
@@ -66,6 +66,6 @@ F'(y_j)\to F'(y).
 \]
 Thus $F'$ is continuous and
 \[
-\boxed{F\in C^1(\mathbb R).}
+\boxed{F\in C^1(\RR).}
 \]
 :::

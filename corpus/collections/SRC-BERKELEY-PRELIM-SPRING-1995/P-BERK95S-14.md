@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $y:\mathbb R\to\mathbb R$ be three times differentiable and satisfy
+Let $y:\RR\to\RR$ be three times differentiable and satisfy
 \[
 y'''-y=0.
 \]

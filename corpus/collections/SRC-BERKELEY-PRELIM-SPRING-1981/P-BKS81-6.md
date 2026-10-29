@@ -26,7 +26,7 @@ Suppose the complex polynomial
 \[
 \sum_{k=0}^n a_k z^k
 \]
-has $n$ distinct roots $r_1,\ldots,r_n\in\mathbb C$.
+has $n$ distinct roots $r_1,\ldots,r_n\in\CC$.
 Prove that if the coefficients $b_k$ are sufficiently close to the corresponding $a_k$, then
 \[
 \sum_{k=0}^n b_k z^k

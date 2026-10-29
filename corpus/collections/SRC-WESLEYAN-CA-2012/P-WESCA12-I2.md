@@ -29,7 +29,7 @@ State a theorem expressing the $m$th derivative of an analytic function as a con
 
 Let
 \[
-f:D\to\mathbb C
+f:D\to\CC
 \]
 be holomorphic, let
 \[

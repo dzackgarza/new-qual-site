@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.exercise}
-3. Morera’s theorem states that if f is continuous in $\mathbb { C } .$ and $\textstyle \int _ { T } f ( z ) d z = 0$ for all triangles T , then f is holomorphic in C. Naturally, we may ask if the conclusion still holds if we replace triangles by other sets.
+3. Morera’s theorem states that if f is continuous in $\CC .$ and $\textstyle \int _ { T } f ( z ) d z = 0$ for all triangles T , then f is holomorphic in C. Naturally, we may ask if the conclusion still holds if we replace triangles by other sets.
 
-(a) Suppose that f is continuous on $\mathbb { C } .$ and
+(a) Suppose that f is continuous on $\CC .$ and
 
 $$
 \int_ {C} f (z) d z = 0\tag{16}
@@ -28,7 +28,7 @@ $$
 
 for every circle C. Prove that f is holomorphic.
 
-(b) More generally, let Γ be any toy contour, and $\mathcal { F }$ the collection of all trans lates and dilates of Γ. Show that if f is continuous on $\mathbb { C } .$ and
+(b) More generally, let Γ be any toy contour, and $\mathcal { F }$ the collection of all trans lates and dilates of Γ. Show that if f is continuous on $\CC .$ and
 
 $$
 \int_ {\gamma} f (z) d z = 0 \quad \text { for   all } \gamma \in \mathcal {F}
@@ -39,13 +39,13 @@ In particular, Morera’s theorem holds under the weaker assumption that $\begin
 
 [Hint: As a first step, assume that f is twice real diferentiable, and write $f ( z ) =$ $f ( z _ { 0 } ) + a ( z - z _ { 0 } ) + b ( \overline { { z - z _ { 0 } } } ) + O ( | z - z _ { 0 } | ^ { 2 } )$ for z near $z _ { \mathrm { 0 } }$ . Integrating this expansion over small circles around $z_0$ yields $\partial f / \partial { \overline { { z } } } = b = 0$ at $z _ { 0 }$ . Alternatively, suppose only that $f$ is diferentiable and apply Green’s theorem to conclude that the real and imaginary parts of f satisfy the Cauchy-Riemann equations.
 
-In general, let $\varphi ( w ) = \varphi ( x , y )$ (when $w = x + i y )$ denote a smooth function with $0 \leq \varphi ( w ) \leq 1$ , and $\begin{array} { r } { \int _ { \mathbb { R } ^ { 2 } } \varphi ( w ) d V ( w ) = 1 } \end{array}$ , where $d V ( w ) = d x d y .$ and $\scriptstyle \int$ denotes the usual integral of a function of two variables in $\mathbb { R } ^ { 2 }$ . For each $\epsilon > 0$ , let $\varphi _ { \epsilon } ( z ) =$ $\epsilon ^ { - 2 } \varphi ( \epsilon ^ { - 1 } z )$ , as well as
+In general, let $\varphi ( w ) = \varphi ( x , y )$ (when $w = x + i y )$ denote a smooth function with $0 \leq \varphi ( w ) \leq 1$ , and $\begin{array} { r } { \int _ { \RR ^ { 2 } } \varphi ( w ) d V ( w ) = 1 } \end{array}$ , where $d V ( w ) = d x d y .$ and $\scriptstyle \int$ denotes the usual integral of a function of two variables in $\RR ^ { 2 }$ . For each $\epsilon > 0$ , let $\varphi _ { \epsilon } ( z ) =$ $\epsilon ^ { - 2 } \varphi ( \epsilon ^ { - 1 } z )$ , as well as
 
 $$
-f _ {\epsilon} (z) = \int_ {\mathbb {R} ^ {2}} f (z - w) \varphi_ {\epsilon} (w) d V (w),
+f _ {\epsilon} (z) = \int_ {\RR ^ {2}} f (z - w) \varphi_ {\epsilon} (w) d V (w),
 $$
 
-where the integral denotes the usual integral of functions of two variables, with $d V ( w )$ the area element of $\mathbb { R } ^ { 2 }$ . Then $f _ { \epsilon }$ is smooth, satisfies condition (16), and $f _ { \epsilon } \to f$ uniformly on any compact subset of C.]
+where the integral denotes the usual integral of functions of two variables, with $d V ( w )$ the area element of $\RR ^ { 2 }$ . Then $f _ { \epsilon }$ is smooth, satisfies condition (16), and $f _ { \epsilon } \to f$ uniformly on any compact subset of C.]
 :::
 
 ::: {.solution}
@@ -70,7 +70,7 @@ Near $z_0$ write $f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(|z-z_0|^2)$ with 
 
 ::: pf-proof
 
-With $\varphi_\epsilon$ as in the hint, $f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\varphi_\epsilon(w)\,dV(w)$ is smooth, and $f_\epsilon\to f$ uniformly on compact sets. For a circle $C$, Fubini's theorem gives $\int_C f_\epsilon\,dz=\int_{\mathbb R^2}\bigl(\int_{C-w}f\,dz\bigr)\varphi_\epsilon(w)\,dV(w)=0$, since $C-w$ is again a circle. By step [](#s1){.pf-ref} each $f_\epsilon$ is holomorphic, and a locally uniform limit of holomorphic functions is holomorphic.
+With $\varphi_\epsilon$ as in the hint, $f_\epsilon(z)=\int_{\RR^2}f(z-w)\varphi_\epsilon(w)\,dV(w)$ is smooth, and $f_\epsilon\to f$ uniformly on compact sets. For a circle $C$, Fubini's theorem gives $\int_C f_\epsilon\,dz=\int_{\RR^2}\bigl(\int_{C-w}f\,dz\bigr)\varphi_\epsilon(w)\,dV(w)=0$, since $C-w$ is again a circle. By step [](#s1){.pf-ref} each $f_\epsilon$ is holomorphic, and a locally uniform limit of holomorphic functions is holomorphic.
 
 :::
 

@@ -120,7 +120,7 @@ G=N\rtimes\langle g\rangle\cong C_{p^2}\rtimes C_p.
 \]
 
 Write $N=\langle n\rangle$.
-Conjugation by $g$ is determined by a unit $u\in(\mathbb Z/p^2\mathbb Z)^\times$ through
+Conjugation by $g$ is determined by a unit $u\in(\ZZ/p^2\ZZ)^\times$ through
 \[
 gng^{-1}=n^u.
 \]
@@ -154,7 +154,7 @@ Hence
 \[
 u\equiv1+kp\pmod{p^2}
 \]
-for a unique $k\in\mathbb Z/p\mathbb Z$.
+for a unique $k\in\ZZ/p\ZZ$.
 
 If $k=0$, the action is trivial, so
 \[
@@ -186,7 +186,7 @@ If $p=2$, part (b)(ii) gives exactly $C_4\times C_2$ and the dihedral group of o
 
 For $p=2$,
 \[
-\operatorname{Aut}(C_4)\cong(\mathbb Z/4\mathbb Z)^\times=\{1,3\}.
+\operatorname{Aut}(C_4)\cong(\ZZ/4\ZZ)^\times=\{1,3\}.
 \]
 The trivial action gives
 \[

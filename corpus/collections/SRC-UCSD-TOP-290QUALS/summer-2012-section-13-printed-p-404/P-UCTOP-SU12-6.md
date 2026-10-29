@@ -54,7 +54,7 @@ A regular value in the interior of the image of $B^3$ has exactly one preimage, 
 :::
 
 ::: {.pf-step #lifts-to-universal-cover}
-Conversely, every map $f:S^3\to T^3$ lifts to the universal cover $\mathbb R^3\to T^3$.
+Conversely, every map $f:S^3\to T^3$ lifts to the universal cover $\RR^3\to T^3$.
 
 ::: pf-proof
 Since $S^3$ is simply connected, the covering-space lifting criterion applies to every map $f$.
@@ -66,9 +66,9 @@ Since $S^3$ is simply connected, the covering-space lifting criterion applies to
 Every such map has degree $0$.
 
 ::: pf-proof
-Write $f=p\circ\widetilde f$ with $\widetilde f:S^3\to\mathbb R^3$. Since $H_3(\mathbb R^3;\mathbb Z)=0$, the induced map
+Write $f=p\circ\widetilde f$ with $\widetilde f:S^3\to\RR^3$. Since $H_3(\RR^3;\ZZ)=0$, the induced map
 $$
-\widetilde f_*:H_3(S^3)\to H_3(\mathbb R^3)
+\widetilde f_*:H_3(S^3)\to H_3(\RR^3)
 $$
 is zero, hence so is $f_*=p_*\widetilde f_*$. Therefore $\deg f=0$.
 :::

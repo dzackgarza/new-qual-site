@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the Jordan canonical form over $\mathbb R$ of
+Find the Jordan canonical form over $\RR$ of
 \[
 \begin{pmatrix}
 4&1&0\\

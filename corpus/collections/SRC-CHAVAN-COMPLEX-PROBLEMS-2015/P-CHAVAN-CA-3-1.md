@@ -15,7 +15,7 @@ audit:
 ::: {.problem}
 Let
 \[
-\arg:\mathbb C^*\to[0,2\pi)
+\arg:\CC^*\to[0,2\pi)
 \]
 be the principal argument.
 Show that $\arg$ is not continuous, and determine its set of discontinuities.
@@ -55,7 +55,7 @@ so $\arg$ is not continuous at $x$.
 
 The function $\arg$ is continuous at every point
 $$
-z_0\in\mathbb C^*\setminus(0,\infty).
+z_0\in\CC^*\setminus(0,\infty).
 $$
 
 
@@ -78,7 +78,7 @@ $$
 S=\{re^{i\theta}:r>0,\ \theta_0-\delta<\theta<\theta_0+\delta\}.
 $$
 It is an open neighborhood of $z_0$ contained in
-$\mathbb C^*\setminus[0,\infty)$.
+$\CC^*\setminus[0,\infty)$.
 
 On the interval
 $$
@@ -105,7 +105,7 @@ $$
 \left(\frac{z}{|z|}\right)
 $$
 for $z\in S$. The map $z\mapsto z/|z|$ is continuous on
-$\mathbb C^*$, so this composition is continuous on $S$, in
+$\CC^*$, so this composition is continuous on $S$, in
 particular at $z_0$.
 
 :::
@@ -123,8 +123,8 @@ $$
 ::: pf-proof
 
 Step [](#s1-1){.pf-ref} shows that every positive real number is a discontinuity.
-Step [](#s1-2){.pf-ref} shows that every other point of the domain $\mathbb C^*$ is
-a continuity point. Since $0\notin\mathbb C^*$, these exhaust the
+Step [](#s1-2){.pf-ref} shows that every other point of the domain $\CC^*$ is
+a continuity point. Since $0\notin\CC^*$, these exhaust the
 domain.
 
 :::
@@ -134,7 +134,7 @@ domain.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the complete discontinuity set and, in particular,
-shows that $\arg$ is not continuous on $\mathbb C^*$.
+shows that $\arg$ is not continuous on $\CC^*$.
 
 :::
 

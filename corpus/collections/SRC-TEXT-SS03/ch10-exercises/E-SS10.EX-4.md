@@ -24,7 +24,7 @@ $$
 \begin{array}{r c l} p (n) & = & p (n - 1) + p (n - 2) - p (n - 5) - p (n - 7) - \dots \\ & = & \sum_ {k \neq 0} (- 1) ^ {k + 1} p \left(n - \frac {k (3 k + 1)}{2}\right), \end{array}
 $$
 
-where the right-hand side is the finite sum taken over those $k \in \mathbb { Z } , k \neq 0$ , with $k ( 3 k + 1 ) / 2 \leq n$ . Use this formula to calculate $p ( 5 ) , p ( 6 ) , p ( 7 ) , p ( 8 ) , p ( 9 )$ , and $p ( 1 0 )$ ; check that $p ( 1 0 ) = 4 2$
+where the right-hand side is the finite sum taken over those $k \in \ZZ , k \neq 0$ , with $k ( 3 k + 1 ) / 2 \leq n$ . Use this formula to calculate $p ( 5 ) , p ( 6 ) , p ( 7 ) , p ( 8 ) , p ( 9 )$ , and $p ( 1 0 )$ ; check that $p ( 1 0 ) = 4 2$
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ P(q)=\sum_{n=0}^\infty p(n)q^n
 and set \(p(j)=0\) for \(j<0\). Euler's pentagonal-number identity is
 \[
 \prod_{m=1}^\infty(1-q^m)
-=\sum_{k\in\mathbb Z}(-1)^k q^{k(3k+1)/2};
+=\sum_{k\in\ZZ}(-1)^k q^{k(3k+1)/2};
 \]
 this is the usual form with \(k(3k-1)/2\) after replacing \(k\) by \(-k\).
 Multiplying by \(P(q)\) gives \(1\). Therefore, for every \(n\ge1\), the coefficient of \(q^n\) is zero:

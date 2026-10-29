@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \subseteq \mathbb{C}$ be an open set and
+Let $U \subseteq \CC$ be an open set and
 
 $$A^2(U) = \{ f \text{ holomorphic on } U : \int_U |f(z)|^2 \, dx \, dy < \infty \}.$$
 
@@ -88,7 +88,7 @@ $$
 For a nonempty compact $K\subset U$, choose one $r>0$
 such that $\overline{D(a,r)}\subset U$ for every $a\in K$.
 Such an $r$ exists by compactness and openness; when
-$U\ne\mathbb C$, take less than the positive distance
+$U\ne\CC$, take less than the positive distance
 from $K$ to the closed complement, and otherwise take $r=1$.
 It follows that
 $$
@@ -108,7 +108,7 @@ Every Cauchy sequence in $A^2(U)$ converges in its norm.
 
 Let $(f_n)$ be such a sequence. Step [](#s2){.pf-ref} makes it
 uniformly Cauchy on each compact subset of $U$. Completeness
-of $\mathbb C$ gives a pointwise limit $f$, and the same
+of $\CC$ gives a pointwise limit $f$, and the same
 Cauchy estimates show that convergence is uniform on each
 compact subset. The local uniform limit of holomorphic
 functions is holomorphic [@SS03]. Thus $f$ is holomorphic on $U$.

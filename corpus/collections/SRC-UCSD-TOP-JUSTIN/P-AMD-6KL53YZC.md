@@ -42,7 +42,7 @@ Definition of degree and suspension isomorphism in homology.
 ::: pf-proof
 
 ::: pf-step
-For any continuous map $g \colon S^k \to S^k$ ($k \ge 1$), the degree $\deg(g) \in \mathbb{Z}$ is defined by the induced map on top homology: $g_*(\alpha) = (\deg g) \cdot \alpha$ for any generator $\alpha \in \widetilde{H}_k(S^k) \cong \mathbb{Z}$.
+For any continuous map $g \colon S^k \to S^k$ ($k \ge 1$), the degree $\deg(g) \in \ZZ$ is defined by the induced map on top homology: $g_*(\alpha) = (\deg g) \cdot \alpha$ for any generator $\alpha \in \widetilde{H}_k(S^k) \cong \ZZ$.
 :::
 
 ::: pf-step
@@ -111,19 +111,19 @@ The naturality square of step [](#s2-2){.pf-ref} commutes, so $\partial((\Sigma 
 :::
 
 ::: {.pf-step #s3}
-For every $n\ge1$ and $d\in\mathbb Z$, construct a self-map of $S^n$ of degree $d$.
+For every $n\ge1$ and $d\in\ZZ$, construct a self-map of $S^n$ of degree $d$.
 
 ::: pf-proof
 
 ::: pf-step
-On $S^1\subset\mathbb C$, the map
+On $S^1\subset\CC$, the map
 $$
 g_d(z)=z^d
 $$
 has degree $d$ for $d\ge0$; for $d<0$ the same formula means $z^d=\overline z^{\,|d|}$ on $S^1$ and again has degree $d$. For $d=0$, it is the constant map $1$.
 
 ::: pf-proof
-Writing $z=e^{i\theta}$ gives $g_d(e^{i\theta})=e^{id\theta}$. Thus the induced map on $H_1(S^1)\cong\mathbb Z$ is multiplication by $d$.
+Writing $z=e^{i\theta}$ gives $g_d(e^{i\theta})=e^{id\theta}$. Thus the induced map on $H_1(S^1)\cong\ZZ$ is multiplication by $d$.
 :::
 
 :::

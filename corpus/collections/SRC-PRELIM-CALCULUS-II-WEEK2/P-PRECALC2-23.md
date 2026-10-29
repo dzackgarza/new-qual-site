@@ -136,7 +136,7 @@ and
 
 ::: pf-proof
 
-Since \(n\in\mathbb Z\),
+Since \(n\in\ZZ\),
 \[
 \sin(n\pi+u)
 =

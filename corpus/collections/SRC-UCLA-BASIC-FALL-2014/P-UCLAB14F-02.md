@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let $A,B$ be two closed subsets of $\mathbb R^n$ such that $A\cup B$ and $A\cap B$ are connected. Prove that $A$ is connected.
+Problem 2. Let $A,B$ be two closed subsets of $\RR^n$ such that $A\cup B$ and $A\cap B$ are connected. Prove that $A$ is connected.
 :::
 
 ::: {.solution}
@@ -100,7 +100,7 @@ The set $V$ is closed in $A\cup B$.
 ::: pf-proof
 
 The set $V$ is closed in $A$.
-Since $A$ is closed in $\mathbb R^n$, it is also closed in the subspace $A\cup B$.
+Since $A$ is closed in $\RR^n$, it is also closed in the subspace $A\cup B$.
 A subset closed in a closed subspace is closed in the ambient subspace.
 Hence $V$ is closed in $A\cup B$.
 
@@ -131,7 +131,7 @@ and $V\cap B=\varnothing$ by step [](#s1-3){.pf-ref},
 \]
 
 The set $U$ is closed in $A$, hence closed in $A\cup B$ because $A$ is closed there.
-The set $B$ is closed in $\mathbb R^n$, hence closed in $A\cup B$.
+The set $B$ is closed in $\RR^n$, hence closed in $A\cup B$.
 Therefore their finite union $U\cup B$ is closed in $A\cup B$.
 
 :::

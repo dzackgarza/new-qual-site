@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Define $f_n:[0,\infty)\to\mathbb R$ recursively by $f_1(x)=0$ and
+Define $f_n:[0,\infty)\to\RR$ recursively by $f_1(x)=0$ and
 \[
 f_{n+1}(x)=e^{-2x}+\int_0^x f_n(t)e^{-2t}\,dt,
 \qquad n\ge1.

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A, B \in \mathbb{R}^{n \times n}$ be two real matrices.
+Let $A, B \in \RR^{n \times n}$ be two real matrices.
 Denote by $\sigma_i(A)$ (resp., $\sigma_i(B)$) the $i$-th largest singular value of $A$ (resp., $B$). If $\|Ax\|_2 > \|Bx\|_2$ for all $x \neq 0$, show that $\sigma_i(A) > \sigma_i(B)$ for all $i = 1, \dots, n$.
 :::
 
@@ -30,7 +30,7 @@ Denote by $\sigma_i(A)$ (resp., $\sigma_i(B)$) the $i$-th largest singular value
 
 By the Courant–Fischer (min-max) characterization, the $i$-th singular value of an $n \times n$ matrix $M$ is given by:
 \[
-\sigma_i(M) = \max_{\substack{V \subseteq \mathbb{R}^n \\ \dim V = n - i + 1}} \min_{\substack{x \in V \\ \|x\|_2 = 1}} \|Mx\|_2.
+\sigma_i(M) = \max_{\substack{V \subseteq \RR^n \\ \dim V = n - i + 1}} \min_{\substack{x \in V \\ \|x\|_2 = 1}} \|Mx\|_2.
 \]
 
 ::: pf-proof
@@ -43,7 +43,7 @@ min-max theorem for singular values (eigenvalues of $M^T M$).
 
 ::: {.pf-step #s2}
 
-Choose a subspace $V_i \subseteq \mathbb{R}^n$ of dimension $n - i + 1$ that achieves the maximum for $B$:
+Choose a subspace $V_i \subseteq \RR^n$ of dimension $n - i + 1$ that achieves the maximum for $B$:
 \[
 \sigma_i(B) = \min_{\substack{x \in V_i \\ \|x\|_2 = 1}} \|Bx\|_2.
 \]

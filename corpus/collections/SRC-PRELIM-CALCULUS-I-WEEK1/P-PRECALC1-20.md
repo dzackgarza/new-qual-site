@@ -37,7 +37,7 @@ F'(u)=e^{-u^2}}.
 
 ::: pf-proof
 
-The integrand \(e^{-t^2}\) is continuous on \(\mathbb R\).
+The integrand \(e^{-t^2}\) is continuous on \(\RR\).
 
 :::
 

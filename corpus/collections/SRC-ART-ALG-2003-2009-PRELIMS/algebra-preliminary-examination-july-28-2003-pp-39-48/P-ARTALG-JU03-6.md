@@ -24,20 +24,20 @@ audit:
   note: "Enumerated every subgroup of all five candidate groups, kept the two isomorphic order-six descriptions, and verified realizability over Q for both surviving isomorphism types."
 ---
 ::: {.problem}
-Let $E$ be a splitting field of $g(x) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
-Suppose its intermediate-field lattice consists of $\mathbb Q$, $E$, and exactly four distinct proper intermediate fields $F_1,F_2,F_3,F_4$. Each satisfies $\mathbb Q\subsetneq F_j\subsetneq E$, and no $F_j$ contains another $F_k$ for $j\ne k$. No degrees are specified.
-Which of the following groups could be $\text{Gal}(E/\mathbb{Q})$?
+Let $E$ be a splitting field of $g(x) \in \QQ[x]$ over $\QQ$.
+Suppose its intermediate-field lattice consists of $\QQ$, $E$, and exactly four distinct proper intermediate fields $F_1,F_2,F_3,F_4$. Each satisfies $\QQ\subsetneq F_j\subsetneq E$, and no $F_j$ contains another $F_k$ for $j\ne k$. No degrees are specified.
+Which of the following groups could be $\text{Gal}(E/\QQ)$?
 Justify your answers.
 
-(a) $\mathbb{Z}_2 \times \mathbb{Z}_2$
+(a) $\ZZ_2 \times \ZZ_2$
 
-(b) $\mathbb{Z}_6$
+(b) $\ZZ_6$
 
 (c) The dihedral group with 6 elements
 
 (d) $S_3$
 
-(e) $\mathbb{Z}_3 \times \mathbb{Z}_3$
+(e) $\ZZ_3 \times \ZZ_3$
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ proper subgroups, all mutually incomparable.
 
 ::: pf-proof
 
-A splitting field over $\mathbb Q$ is a finite Galois extension,
+A splitting field over $\QQ$ is a finite Galois extension,
 since characteristic zero gives separability. The Galois
 correspondence is an inclusion-reversing bijection between its
 intermediate fields and the subgroups of its Galois group [@DF04].
@@ -89,7 +89,7 @@ subgroups, of orders $2$ and $3$. This rules out (b).
 ::: {.pf-step #s3}
 
 Both (c) and (d) have the required subgroup lattice and
-are realized over $\mathbb Q$.
+are realized over $\QQ$.
 
 ::: pf-proof
 
@@ -106,10 +106,10 @@ contain one another, and neither $2$ nor $3$ divides the other.
 
 For realization, let $a=\sqrt[3]{2}>0$ and let $\zeta$ be a
 nonreal cube root of unity. The splitting field of $x^3-2$ is
-$\mathbb Q(a,\zeta)$, because its roots are $a,\zeta a,\zeta^2a$
+$\QQ(a,\zeta)$, because its roots are $a,\zeta a,\zeta^2a$
 and their ratios recover $\zeta$. Eisenstein's criterion at $2$
-gives $[\mathbb Q(a):\mathbb Q]=3$, and adjoining the nonreal
-root $\zeta$ of $x^2+x+1$ to the real field $\mathbb Q(a)$ has
+gives $[\QQ(a):\QQ]=3$, and adjoining the nonreal
+root $\zeta$ of $x^2+x+1$ to the real field $\QQ(a)$ has
 degree $2$. Its Galois group therefore has order $6$ and acts
 faithfully on the three roots, so is $S_3$. Step [](#s1){.pf-ref} now gives
 the required field lattice. This realizes both descriptions.
@@ -121,7 +121,7 @@ the required field lattice. This realizes both descriptions.
 ::: {.pf-step #s4}
 
 The group in (e) also has the required subgroup lattice
-and is realized over $\mathbb Q$.
+and is realized over $\QQ$.
 
 ::: pf-proof
 
@@ -133,13 +133,13 @@ rules out any other nontrivial proper subgroup. Distinct subgroups
 of order $3$ are incomparable, giving exactly the required lattice.
 
 To verify realization over the specified base field, let $L$ be
-the cyclotomic field $\mathbb Q(\zeta_{91})$. The cyclotomic
+the cyclotomic field $\QQ(\zeta_{91})$. The cyclotomic
 Galois theorem and the Chinese remainder theorem give
 $$
-\operatorname{Gal}(L/\mathbb Q)
-\cong(\mathbb Z/91\mathbb Z)^\times
-\cong(\mathbb Z/7\mathbb Z)^\times\times
-      (\mathbb Z/13\mathbb Z)^\times
+\operatorname{Gal}(L/\QQ)
+\cong(\ZZ/91\ZZ)^\times
+\cong(\ZZ/7\ZZ)^\times\times
+      (\ZZ/13\ZZ)^\times
 \cong C_6\times C_{12}
 $$
 [@DF04]. For the last identification, $3$ modulo $7$ has
@@ -151,14 +151,14 @@ Take the subgroup $H=C_2\times C_4$ in these cyclic factors,
 and put $E=L^H$. It is normal because the whole Galois group is
 abelian. Therefore the Galois correspondence yields
 $$
-\operatorname{Gal}(E/\mathbb Q)
+\operatorname{Gal}(E/\QQ)
 \cong(C_6\times C_{12})/(C_2\times C_4)
 \cong C_3\times C_3.
 $$
-This $E$ is a splitting field of a polynomial over $\mathbb Q$,
+This $E$ is a splitting field of a polynomial over $\QQ$,
 as required in the question. Indeed, choose a finite basis
-$e_1,\ldots,e_d$ of $E$ over $\mathbb Q$ and let $g$ be the
-product of their minimal polynomials. Normality of $E/\mathbb Q$
+$e_1,\ldots,e_d$ of $E$ over $\QQ$ and let $g$ be the
+product of their minimal polynomials. Normality of $E/\QQ$
 implies that all those polynomials split in $E$, and their roots
 include the basis elements, which generate $E$ as a field.
 Thus the splitting field of $g$ inside $E$ is exactly $E$.

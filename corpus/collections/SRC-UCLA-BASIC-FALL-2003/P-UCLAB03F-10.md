@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $t\in\mathbb R$ be not an integer multiple of $\pi$.
+(a) Let $t\in\RR$ be not an integer multiple of $\pi$.
 For
 \[
 A=
@@ -35,7 +35,7 @@ A=
 0&1
 \end{pmatrix},
 \qquad
-\lambda\in\mathbb R\setminus\{0\}.
+\lambda\in\RR\setminus\{0\}.
 \]
 :::
 
@@ -97,7 +97,7 @@ The discriminant of the polynomial in step [](#s1-1){.pf-ref} is
 =
 -4\sin^2t.
 \]
-Since $t\notin\pi\mathbb Z$, one has $\sin t\ne0$, so the discriminant is strictly negative. Hence $p_A$ has no real roots.
+Since $t\notin\pi\ZZ$, one has $\sin t\ne0$, so the discriminant is strictly negative. Hence $p_A$ has no real roots.
 
 :::
 
@@ -158,7 +158,7 @@ Since $\lambda\ne0$,
 \[
 \ker(A-I)
 =
-\{(x,0):x\in\mathbb R\}
+\{(x,0):x\in\RR\}
 =
 \operatorname{span}\{(1,0)\}.
 \]
@@ -169,12 +169,12 @@ Since $\lambda\ne0$,
 
 ::: {.pf-step #s1-5}
 
-The matrix in part (b) is not diagonalizable over $\mathbb R$.
+The matrix in part (b) is not diagonalizable over $\RR$.
 
 
 ::: pf-proof
 
-If a real $2\times2$ matrix is diagonalizable over $\mathbb R$, then $\mathbb R^2$ has a basis consisting of two real eigenvectors. By step [](#s1-4){.pf-ref}, every eigenvector of this matrix lies in the one-dimensional space $E_1$. Hence there cannot be two linearly independent eigenvectors, so the matrix is not diagonalizable.
+If a real $2\times2$ matrix is diagonalizable over $\RR$, then $\RR^2$ has a basis consisting of two real eigenvectors. By step [](#s1-4){.pf-ref}, every eigenvector of this matrix lies in the one-dimensional space $E_1$. Hence there cannot be two linearly independent eigenvectors, so the matrix is not diagonalizable.
 
 :::
 
@@ -187,7 +187,7 @@ Therefore there is no real invertible matrix $B$ for which $BAB^{-1}$ is diagona
 
 ::: pf-proof
 
-Such a matrix $B$ would make $A$ similar over $\mathbb R$ to a diagonal matrix, which is precisely real diagonalizability. Step [](#s1-5){.pf-ref} rules this out.
+Such a matrix $B$ would make $A$ similar over $\RR$ to a diagonal matrix, which is precisely real diagonalizability. Step [](#s1-5){.pf-ref} rules this out.
 
 :::
 

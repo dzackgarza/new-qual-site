@@ -32,7 +32,7 @@ such that $f\circ g$ is the identity map on $T$.
 
 The second homology group of the wedge is
 \[
-H_2(S^1\vee S^1;\mathbb Z)=0.
+H_2(S^1\vee S^1;\ZZ)=0.
 \]
 
 
@@ -50,7 +50,7 @@ C_2^{\mathrm{cell}}(S^1\vee S^1)=0.
 \]
 Therefore
 \[
-H_2(S^1\vee S^1;\mathbb Z)=0.
+H_2(S^1\vee S^1;\ZZ)=0.
 \]
 
 :::
@@ -61,7 +61,7 @@ H_2(S^1\vee S^1;\mathbb Z)=0.
 
 The second homology group of the torus is
 \[
-H_2(T;\mathbb Z)\cong\mathbb Z.
+H_2(T;\ZZ)\cong\ZZ.
 \]
 
 
@@ -73,9 +73,9 @@ aba^{-1}b^{-1}.
 \]
 Thus
 \[
-C_2^{\mathrm{cell}}(T)\cong\mathbb Z,
+C_2^{\mathrm{cell}}(T)\cong\ZZ,
 \qquad
-C_1^{\mathrm{cell}}(T)\cong\mathbb Z^2.
+C_1^{\mathrm{cell}}(T)\cong\ZZ^2.
 \]
 The cellular boundary of the $2$-cell records the total exponent sums of $a$ and $b$ in the attaching word. Both exponent sums are zero, so
 \[
@@ -83,11 +83,11 @@ The cellular boundary of the $2$-cell records the total exponent sums of $a$ and
 \]
 There are no $3$-cells, hence
 \[
-H_2(T;\mathbb Z)
+H_2(T;\ZZ)
 =
 \ker\partial_2
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::
@@ -108,7 +108,7 @@ Then on second homology,
 \[
 f_*\circ g_*
 =
-\operatorname{id}_{H_2(T;\mathbb Z)}.
+\operatorname{id}_{H_2(T;\ZZ)}.
 \]
 
 
@@ -128,7 +128,7 @@ the left-hand side is
 \[
 (\operatorname{id}_T)_*
 =
-\operatorname{id}_{H_2(T;\mathbb Z)}.
+\operatorname{id}_{H_2(T;\ZZ)}.
 \]
 
 :::
@@ -144,14 +144,14 @@ The identity in step [](#s1-3){.pf-ref} is impossible.
 
 By step [](#s1-1){.pf-ref},
 \[
-H_2(S^1\vee S^1;\mathbb Z)=0.
+H_2(S^1\vee S^1;\ZZ)=0.
 \]
 Therefore the homomorphism
 \[
 g_*:
-H_2(T;\mathbb Z)
+H_2(T;\ZZ)
 \longrightarrow
-H_2(S^1\vee S^1;\mathbb Z)
+H_2(S^1\vee S^1;\ZZ)
 \]
 is the zero map. Consequently
 \[
@@ -160,7 +160,7 @@ f_*\circ g_*=0.
 
 But by step [](#s1-2){.pf-ref},
 \[
-H_2(T;\mathbb Z)\cong\mathbb Z\ne0,
+H_2(T;\ZZ)\cong\ZZ\ne0,
 \]
 so its identity homomorphism is not the zero map. This contradicts step [](#s1-3){.pf-ref}.
 

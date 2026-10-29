@@ -43,12 +43,12 @@ Find a conformal map
 
 * * *
 
-### Part 1: Map from $\Omega_1 = \{ z \in \mathbb{C} : |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb{H} = \{w : \text{Im}(w) > 0\}$
+### Part 1: Map from $\Omega_1 = \{ z \in \CC : |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb{H} = \{w : \text{Im}(w) > 0\}$
 
 ::: pf
 
 ::: pf-step
-**The inversion $w_1 = \frac{1}{z}$ maps $\Omega_1$ conformally onto the vertical strip $S_1 = \{w_1 \in \mathbb{C} : 0 < \text{Re}(w_1) < 1\}$.**
+**The inversion $w_1 = \frac{1}{z}$ maps $\Omega_1$ conformally onto the vertical strip $S_1 = \{w_1 \in \CC : 0 < \text{Re}(w_1) < 1\}$.**
 
 ::: pf-proof
 
@@ -93,7 +93,7 @@ Möbius transformations are conformal automorphisms of the Riemann sphere, and t
 :::
 
 ::: pf-step
-**The transformation $w_2 = i\pi w_1$ maps $S_1$ onto the horizontal strip $\{w_2 \in \mathbb{C} : 0 < \text{Im}(w_2) < \pi\}$.**
+**The transformation $w_2 = i\pi w_1$ maps $S_1$ onto the horizontal strip $\{w_2 \in \CC : 0 < \text{Im}(w_2) < \pi\}$.**
 
 ::: pf-proof
 
@@ -107,7 +107,7 @@ Multiplication by $i\pi$.
 :::
 
 ::: pf-step
-$0 < u < 1 \iff 0 < \text{Im}(w_2) < \pi$, while $\text{Re}(w_2) = -\pi v \in \mathbb{R}$.
+$0 < u < 1 \iff 0 < \text{Im}(w_2) < \pi$, while $\text{Re}(w_2) = -\pi v \in \RR$.
 
 ::: pf-proof
 Follows from definition of $w_2$.
@@ -125,7 +125,7 @@ Follows from definition of $w_2$.
 ::: pf-proof
 
 ::: pf-step
-The exponential function maps the strip $\{ \xi + i\eta : \xi \in \mathbb{R}, 0 < \eta < \pi \}$ biholomorphically onto $\mathbb{H} = \{ r e^{i\theta} : r > 0, 0 < \theta < \pi \}$.
+The exponential function maps the strip $\{ \xi + i\eta : \xi \in \RR, 0 < \eta < \pi \}$ biholomorphically onto $\mathbb{H} = \{ r e^{i\theta} : r > 0, 0 < \theta < \pi \}$.
 
 ::: pf-proof
 Standard property of the complex exponential function.
@@ -299,7 +299,7 @@ Definition of Möbius transformation send vertices to $0$ and $\infty$.
 :::
 
 ::: pf-step
-Under $w_1$, the segment $(-1, 1) \subset \mathbb{R}$ maps to the negative real axis $(-\infty, 0)$ because for $x \in (-1,1)$, $\frac{x+1}{x-1} < 0$.
+Under $w_1$, the segment $(-1, 1) \subset \RR$ maps to the negative real axis $(-\infty, 0)$ because for $x \in (-1,1)$, $\frac{x+1}{x-1} < 0$.
 The circular arc (passing through $z = (\sqrt{2}-1)i$) maps to the ray of argument $-3\pi/4 \equiv 5\pi/4$.
 
 ::: pf-proof
@@ -500,7 +500,7 @@ Composition of $z \mapsto z^2$ and $\psi$.
 The principal square root $w_3 = \sqrt{w_2}$ maps $\mathbb{D} \setminus (-1, 0]$ conformally onto the right half-disc $\{w_3 \in \mathbb{D} : \text{Re}(w_3) > 0\}$.
 
 ::: pf-proof
-The principal square root maps the slit plane $\mathbb{C} \setminus (-\infty, 0]$ to the right half-plane $\text{Re}(w_3) > 0$, and preserves the condition $|w_2| < 1 \iff |w_3| < 1$.
+The principal square root maps the slit plane $\CC \setminus (-\infty, 0]$ to the right half-plane $\text{Re}(w_3) > 0$, and preserves the condition $|w_2| < 1 \iff |w_3| < 1$.
 :::
 
 :::

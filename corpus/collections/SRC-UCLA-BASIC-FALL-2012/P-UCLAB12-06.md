@@ -34,12 +34,12 @@ Under the hypotheses of part (a), one has
 \[
 \boxed{F(x,y)=0}
 \]
-for every $(x,y)\in\mathbb R^2$.
+for every $(x,y)\in\RR^2$.
 
 
 ::: pf-proof
 
-Fix $(x_0,y_0)\in\mathbb R^2$. Suppose, for contradiction, that
+Fix $(x_0,y_0)\in\RR^2$. Suppose, for contradiction, that
 \[
 F(x_0,y_0)>0.
 \]

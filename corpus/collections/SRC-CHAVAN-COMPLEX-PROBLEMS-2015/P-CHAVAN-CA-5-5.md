@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D\subseteq\mathbb C$ be a domain and let $B\subseteq D$ be open and bounded with
+Let $D\subseteq\CC$ be a domain and let $B\subseteq D$ be open and bounded with
 \[
 \overline B\subseteq D.
 \]

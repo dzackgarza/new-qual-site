@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 3. State whether each of the following two statements is true or false, and give either a proof or counterexample for each.
 
-a) All holomorphic functions $f:\mathbb C\setminus\{0\}\to H$ are constant, where $H=\{z\in\mathbb C:\operatorname{Im}z>0\}$ is the upper half-plane.
+a) All holomorphic functions $f:\CC\setminus\{0\}\to H$ are constant, where $H=\{z\in\CC:\operatorname{Im}z>0\}$ is the upper half-plane.
 
-b) All harmonic functions $h : \mathbb { C } \setminus [ 0 , + \infty ) \to [ 0 , 1 ]$ are constant.
+b) All harmonic functions $h : \CC \setminus [ 0 , + \infty ) \to [ 0 , 1 ]$ are constant.
 :::
 
 ::: {.solution}
@@ -73,7 +73,7 @@ A branch of the argument supplies a counterexample to (b).
 
 ::: pf-proof
 
-On $\Omega=\mathbb C\setminus[0,\infty)$ choose
+On $\Omega=\CC\setminus[0,\infty)$ choose
 the logarithm branch
 $$
 L(re^{i\theta})=\log r+i\theta,

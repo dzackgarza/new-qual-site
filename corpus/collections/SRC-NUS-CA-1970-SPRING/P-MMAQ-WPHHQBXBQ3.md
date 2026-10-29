@@ -35,13 +35,13 @@ Let $I = \int_0^\infty \frac{x^2}{(x^2+1)(x^2+4)} \, dx$.
 
 ::: pf-step
 
-**Symmetry over $\mathbb{R}$.**
+**Symmetry over $\RR$.**
 
 ::: pf-proof
 
 ::: pf-step
 
-The integrand $g(x) = \frac{x^2}{(x^2+1)(x^2+4)}$ is an even function: $g(-x) = g(x)$ for all $x \in \mathbb{R}$.
+The integrand $g(x) = \frac{x^2}{(x^2+1)(x^2+4)}$ is an even function: $g(-x) = g(x)$ for all $x \in \RR$.
 
 ::: pf-proof
 
@@ -69,7 +69,7 @@ Define $f(z) = \frac{z^2}{(z^2+1)(z^2+4)} = \frac{z^2}{(z-i)(z+i)(z-2i)(z+2i)}$.
 
 ::: pf-proof
 
-Factorization of quadratic polynomials over $\mathbb{C}$.
+Factorization of quadratic polynomials over $\CC$.
 
 :::
 

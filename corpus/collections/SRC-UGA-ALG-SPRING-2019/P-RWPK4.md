@@ -27,7 +27,7 @@ A = \begin{pmatrix}
 $$
 Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis matrix $P$ putting $A$ in Jordan canonical form:
 
-(a) When $F = \mathbb{Q}$,
+(a) When $F = \QQ$,
 
 (b) When $F = \mathbb{F}_p$.
 :::
@@ -73,14 +73,14 @@ Thus the eigenvalues of $A$ are $\lambda = \mu - 1$, where $\mu$ is an eigenvalu
 
 ::: pf-step
 
-Over $\mathbb Q$, the matrix $A$ is diagonalizable with eigenvalues $p-1$ and $-1$ of multiplicities $1$ and $p-1$, respectively.
+Over $\QQ$, the matrix $A$ is diagonalizable with eigenvalues $p-1$ and $-1$ of multiplicities $1$ and $p-1$, respectively.
 
 ::: pf-proof
 
 ::: pf-step
 
 Spectrum of $J_p$:
-        - For the vector $v_1 = (1, 1, \dots, 1)^t \in \mathbb{Q}^p$, $J_p v_1 = p v_1$, so $\mu_1 = p$ is an eigenvalue of $J_p$.
+        - For the vector $v_1 = (1, 1, \dots, 1)^t \in \QQ^p$, $J_p v_1 = p v_1$, so $\mu_1 = p$ is an eigenvalue of $J_p$.
         - For each $i \in \{1, \dots, p-1\}$, let $u_i = e_1 - e_{i+1} = (1, 0, \dots, -1, \dots, 0)^t$. Since the sum of entries of $u_i$ is $1 - 1 = 0$, $J_p u_i = 0 = 0 \cdot u_i$.
         - The $p-1$ vectors $\{u_1, \dots, u_{p-1}\}$ are linearly independent: if $\sum_{i=1}^{p-1} c_i u_i = 0$, the $(i+1)$-st component is $-c_i = 0$ for each $i$.
         - Thus $\mu_0 = 0$ is an eigenvalue of $J_p$ with geometric multiplicity $p - 1$.
@@ -98,9 +98,9 @@ Eigenvalues and eigenspaces of $A$:
 ::: pf-step
 
 Diagonalizability:
-        - The sum of geometric multiplicities is $1 + (p - 1) = p = \dim \mathbb{Q}^p$.
-        - Therefore $A$ is diagonalizable over $\mathbb{Q}$, so its JCF is diagonal:
-        $$J_{\mathbb{Q}}(A) = \operatorname{diag}(p - 1, -1, -1, \dots, -1).$$
+        - The sum of geometric multiplicities is $1 + (p - 1) = p = \dim \QQ^p$.
+        - Therefore $A$ is diagonalizable over $\QQ$, so its JCF is diagonal:
+        $$J_{\QQ}(A) = \operatorname{diag}(p - 1, -1, -1, \dots, -1).$$
 
 :::
 
@@ -110,7 +110,7 @@ Transformation matrix $P$:
 
 :::
 
-- Define $P \in \operatorname{GL}_p(\mathbb{Q})$ with columns given by the eigenbasis:
+- Define $P \in \operatorname{GL}_p(\QQ)$ with columns given by the eigenbasis:
 $$P = \begin{pmatrix} v_1 & u_1 & u_2 & \cdots & u_{p-1} \end{pmatrix} = \begin{pmatrix}
 1 & 1 & 1 & \cdots & 1 \\
 1 & -1 & 0 & \cdots & 0 \\
@@ -118,7 +118,7 @@ $$P = \begin{pmatrix} v_1 & u_1 & u_2 & \cdots & u_{p-1} \end{pmatrix} = \begin{
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 1 & 0 & 0 & \cdots & -1
 \end{pmatrix}.$$
-- Then $P^{-1} A P = J_{\mathbb{Q}}(A)$.
+- Then $P^{-1} A P = J_{\QQ}(A)$.
 
 :::
 
@@ -192,7 +192,7 @@ $$A v_1 = -v_1, \qquad A w = v_1 - w.$$
 
 ::: pf-qed
 
-Over $\mathbb{Q}$, $A$ is diagonalizable with eigenvalues $p-1$ (mult 1) and $-1$ (mult $p-1$). Over $\mathbb{F}_p$, $A$ has one Jordan block of size 2 and $p-2$ Jordan blocks of size 1 for eigenvalue $-1$.
+Over $\QQ$, $A$ is diagonalizable with eigenvalues $p-1$ (mult 1) and $-1$ (mult $p-1$). Over $\mathbb{F}_p$, $A$ has one Jordan block of size 2 and $p-2$ Jordan blocks of size 1 for eigenvalue $-1$.
 
 :::
 

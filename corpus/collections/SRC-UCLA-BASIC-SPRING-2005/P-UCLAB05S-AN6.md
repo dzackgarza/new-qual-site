@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the set of functions $f:[0,1]\to\mathbb R$ satisfying
+Consider the set of functions $f:[0,1]\to\RR$ satisfying
 \[
 |f(x)-f(y)|\leq|x-y|
 \qquad\text{and}\qquad

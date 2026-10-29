@@ -57,7 +57,7 @@ The unit section spans a trivial oriented line subbundle
 
 Define
 \[
-X\times\mathbb R\to E,
+X\times\RR\to E,
 \qquad
 (x,t)\mapsto t\widehat s(x).
 \]
@@ -78,7 +78,7 @@ for a rank-$(r-1)$ bundle $\eta$.
 
 ::: pf-proof
 
-Let $\eta_x$ be the orthogonal complement of the line $\mathbb R\widehat s(x)$ in $E_x$. These complements vary continuously and form a vector subbundle. Fiberwise orthogonal projection gives the displayed direct-sum decomposition.
+Let $\eta_x$ be the orthogonal complement of the line $\RR\widehat s(x)$ in $E_x$. These complements vary continuously and form a vector subbundle. Fiberwise orthogonal projection gives the displayed direct-sum decomposition.
 
 :::
 
@@ -114,7 +114,7 @@ e(\varepsilon^1)=0.
 
 ::: pf-proof
 
-The Euler class of an oriented rank-one bundle lies in $H^1(X;\mathbb Z)$ and is the obstruction to a nowhere-zero section. The trivial line bundle has the constant nowhere-zero section $1$. Equivalently, its classifying map is constant, so every positive-degree characteristic class pulls back to zero.
+The Euler class of an oriented rank-one bundle lies in $H^1(X;\ZZ)$ and is the obstruction to a nowhere-zero section. The trivial line bundle has the constant nowhere-zero section $1$. Equivalently, its classifying map is constant, so every positive-degree characteristic class pulls back to zero.
 
 :::
 
@@ -146,7 +146,7 @@ Equivalently, this is the primary obstruction interpretation of the Euler class.
 
 ::: pf-proof
 
-For an oriented rank-$r$ bundle, $e(\xi)\in H^r(X;\mathbb Z)$ is the primary obstruction to extending a nowhere-zero section over the $r$-skeleton. A global nowhere-zero section already exists by hypothesis, so that obstruction must vanish. This independently gives the conclusion of step [](#s1-6){.pf-ref}.
+For an oriented rank-$r$ bundle, $e(\xi)\in H^r(X;\ZZ)$ is the primary obstruction to extending a nowhere-zero section over the $r$-skeleton. A global nowhere-zero section already exists by hypothesis, so that obstruction must vanish. This independently gives the conclusion of step [](#s1-6){.pf-ref}.
 
 :::
 

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a bounded sequence in $L^2(\mathbb{R})$ and suppose that $f_n \to 0$ Lebesgue almost everywhere. Show that $f_n \to 0$ in the weak topology on $L^2(\mathbb{R})$.
+Let $(f_n)$ be a bounded sequence in $L^2(\RR)$ and suppose that $f_n \to 0$ Lebesgue almost everywhere. Show that $f_n \to 0$ in the weak topology on $L^2(\RR)$.
 :::
 
 ::: {.solution}
@@ -36,22 +36,22 @@ M=\sup_n\|f_n\|_2<\infty.
 ::: {.pf-step #s1-1}
 
 To prove weak convergence to $0$, it suffices to show that for every
-$g\in L^2(\mathbb R)$,
+$g\in L^2(\RR)$,
 \[
-\int_{\mathbb R} f_n(x)g(x)\,dx\longrightarrow0.
+\int_{\RR} f_n(x)g(x)\,dx\longrightarrow0.
 \]
 
 
 ::: pf-proof
 
 By the Riesz representation theorem, every bounded linear functional on the
-Hilbert space $L^2(\mathbb R)$ has the form
+Hilbert space $L^2(\RR)$ has the form
 \[
 \Lambda_g(f)
 =
-\int_{\mathbb R}f(x)g(x)\,dx
+\int_{\RR}f(x)g(x)\,dx
 \]
-for some $g\in L^2(\mathbb R)$. Weak convergence is exactly convergence
+for some $g\in L^2(\RR)$. Weak convergence is exactly convergence
 against all such functionals.
 
 :::
@@ -60,9 +60,9 @@ against all such functionals.
 
 ::: {.pf-step #s1-2}
 
-Fix $h\in L^\infty(\mathbb R)$ with compact support. Then
+Fix $h\in L^\infty(\RR)$ with compact support. Then
 \[
-\int_{\mathbb R}f_n h\longrightarrow0.
+\int_{\RR}f_n h\longrightarrow0.
 \]
 
 
@@ -113,7 +113,7 @@ H\,m(E)\,
 The supremum tends to $0$ by uniform convergence, so for all sufficiently
 large $n$ this term is less than $\varepsilon/2$. Therefore
 \[
-\left|\int_{\mathbb R}f_nh\right|
+\left|\int_{\RR}f_nh\right|
 \le
 \int_E|f_nh|
 <\varepsilon
@@ -127,12 +127,12 @@ for all sufficiently large $n$.
 ::: {.pf-step #s1-3}
 
 The space of bounded compactly supported functions is dense in
-$L^2(\mathbb R)$.
+$L^2(\RR)$.
 
 
 ::: pf-proof
 
-For $g\in L^2(\mathbb R)$, define
+For $g\in L^2(\RR)$, define
 \[
 h_k
 =
@@ -156,9 +156,9 @@ pointwise and is dominated by $|g|^2\in L^1$. By dominated convergence,
 
 ::: {.pf-step #s1-4}
 
-For every $g\in L^2(\mathbb R)$,
+For every $g\in L^2(\RR)$,
 \[
-\int_{\mathbb R}f_n g\longrightarrow0.
+\int_{\RR}f_n g\longrightarrow0.
 \]
 
 
@@ -206,7 +206,7 @@ eventually.
 
 Therefore
 \[
-\boxed{f_n\rightharpoonup0\text{ in }L^2(\mathbb R)}.
+\boxed{f_n\rightharpoonup0\text{ in }L^2(\RR)}.
 \]
 
 

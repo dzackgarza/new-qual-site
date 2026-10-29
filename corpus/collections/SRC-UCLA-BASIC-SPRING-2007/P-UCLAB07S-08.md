@@ -101,7 +101,7 @@ There is a subsequence
 \]
 that converges uniformly on $[0,1]$ to a continuous function
 \[
-g:[0,1]\to\mathbb R.
+g:[0,1]\to\RR.
 \]
 
 

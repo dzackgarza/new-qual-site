@@ -138,7 +138,7 @@ Part (c): Evaluation of $\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \,
 ::: pf-proof
 
 ::: pf-step
-For each $n \in \mathbb{N}$, make the linear substitution $u = x + n$, so $du = dx$.
+For each $n \in \NN$, make the linear substitution $u = x + n$, so $du = dx$.
 The integral becomes:
 \[
 \int_{-\infty}^\infty e^{-|x+n|} \, dx = \int_{-\infty}^\infty e^{-|u|} \, du.
@@ -163,7 +163,7 @@ symmetry of even function.
 :::
 
 ::: pf-step
-Since the integral is constant and equal to $2$ for every $n \in \mathbb{N}$, its limit is:
+Since the integral is constant and equal to $2$ for every $n \in \NN$, its limit is:
 \[
 \lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx = \lim_{n \to \infty} 2 = 2.
 \]

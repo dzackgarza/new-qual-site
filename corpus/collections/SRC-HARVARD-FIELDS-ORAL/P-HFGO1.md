@@ -28,15 +28,15 @@ Give an example of a polynomial that is not solvable by radicals.
 ::: {.solution}
 Take
 \[
-f(x)=x^5-x-1\in\mathbb Q[x].
+f(x)=x^5-x-1\in\QQ[x].
 \]
-Its Galois group over $\mathbb Q$ is $S_5$, so $f$ is not solvable by radicals.
+Its Galois group over $\QQ$ is $S_5$, so $f$ is not solvable by radicals.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The polynomial $f$ is irreducible over $\mathbb Q$.
+The polynomial $f$ is irreducible over $\QQ$.
 
 ::: pf-proof
 
@@ -55,7 +55,7 @@ and division of $\bar f$ by these gives remainders respectively
 \]
 Thus $\bar f$ has no factor of degree $1$ or $2$. A reducible polynomial of
 degree $5$ over a field must have a factor of degree at most $2$, so $\bar f$ is
-irreducible. Hence $f$ is irreducible over $\mathbb Q$ by Gauss's lemma.
+irreducible. Hence $f$ is irreducible over $\QQ$ by Gauss's lemma.
 
 :::
 

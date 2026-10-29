@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-20
 kind: problem
-title: The ideal $(6,x+1)$ in $\mathbb Z[x]$
+title: The ideal $(6,x+1)$ in $\ZZ[x]$
 classification:
   areas:
   - algebra
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(March 2015) Let $R=\mathbb{Z}[x]$ be the ring of polynomials (in one variable) with integer coefficients.
+(March 2015) Let $R=\ZZ[x]$ be the ring of polynomials (in one variable) with integer coefficients.
 Note that the constant polynomial $6$ and the degree one polynomial $x+1$ are both elements of $R$.
 Define
 \[

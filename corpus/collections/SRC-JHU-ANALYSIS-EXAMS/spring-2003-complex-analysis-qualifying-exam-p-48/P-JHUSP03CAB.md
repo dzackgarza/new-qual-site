@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\mathbb C:|z|<1\}$, and let $f : \Delta \to \Delta$ be a holomorphic function with $f(0) = 0$ and $|f'(0)| = M$.
+Let $\Delta=\{z\in\CC:|z|<1\}$, and let $f : \Delta \to \Delta$ be a holomorphic function with $f(0) = 0$ and $|f'(0)| = M$.
 If $0 \neq w \in \Delta$ is any other zero of $f(z)$, show that:
 
 $$\frac{M}{1 + M} \leq |w|.$$

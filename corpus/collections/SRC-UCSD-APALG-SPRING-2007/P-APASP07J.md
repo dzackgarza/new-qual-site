@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G = \mathbb{Z}/3$ act on a two-dimensional vector space as a diagonal matrix with diagonal entries being $\theta, \theta^{-1}$, where $\theta = e^{2\pi i/3}$.
+Let $G = \ZZ/3$ act on a two-dimensional vector space as a diagonal matrix with diagonal entries being $\theta, \theta^{-1}$, where $\theta = e^{2\pi i/3}$.
 
 (a) Find a system of generators for $k[x,y]^G$.
 

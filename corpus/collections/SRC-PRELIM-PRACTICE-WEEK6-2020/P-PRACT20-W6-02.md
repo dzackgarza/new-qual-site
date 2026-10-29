@@ -24,7 +24,7 @@ What happens as $x \searrow 0 ?$
 
 ::: {.solution}
 We prove that $a _ { n }$ is increasing an bounded above, and thus converges by the monotone convergence theorem.
-Note that $a _ { 1 } = { \sqrt { x + { \sqrt { x } } } } \geq { \sqrt { x } } = a _ { 0 }$ . Now assume that $a _ { n } \geq a _ { n - 1 }$ for some $n \in \mathbb { N }$ . Then
+Note that $a _ { 1 } = { \sqrt { x + { \sqrt { x } } } } \geq { \sqrt { x } } = a _ { 0 }$ . Now assume that $a _ { n } \geq a _ { n - 1 }$ for some $n \in \NN$ . Then
 
 $$
 x + a _ { n } \geq x + a _ { n - 1 } \implies \sqrt { x + a _ { n } } \geq \sqrt { x + a _ { n - 1 } } \implies a _ { n + 1 } \geq a _ { n } .
@@ -32,7 +32,7 @@ $$
 
 This induction proves that $a _ { n }$ is an increasing sequence.√ √
 
-Next, we see that $\begin{array} { r } { a _ { 0 } = \sqrt { x } = \frac { \sqrt { 4 x } } { 2 } \le \frac { 1 + \sqrt { 1 + 4 x } } { 2 } } \end{array}$ . Again, assume that $\textstyle a _ { n } \leq { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } }$ for some $n \in \mathbb { N }$ . Note that
+Next, we see that $\begin{array} { r } { a _ { 0 } = \sqrt { x } = \frac { \sqrt { 4 x } } { 2 } \le \frac { 1 + \sqrt { 1 + 4 x } } { 2 } } \end{array}$ . Again, assume that $\textstyle a _ { n } \leq { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } }$ for some $n \in \NN$ . Note that
 
 $$
 \left( { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } \right) ^ { 2 } = { \frac { 1 + 2 { \sqrt { 1 + 4 x } } + 1 + 4 x } { 4 } } = x + { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } .
@@ -45,7 +45,7 @@ a _ { n + 1 } = { \sqrt { x + a _ { n } } } \leq { \sqrt { x + { \frac { 1 + { \
 $$
 
 This shows by induction that $a _ { n }$ is bounded above.
-Hence there is a limit $a _ { n }  a \in \mathbb { R }$ . Taking the limit on both sides of the recursive relationship, we see
+Hence there is a limit $a _ { n }  a \in \RR$ . Taking the limit on both sides of the recursive relationship, we see
 
 $$
 a = { \sqrt { x + a } } \implies a ^ { 2 } - a - x = 0 \implies a = { \frac { 1 \pm { \sqrt { 1 + 4 x } } } { 2 } } .

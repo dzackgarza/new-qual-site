@@ -40,7 +40,7 @@ A
 \]
 Indeed, if $0\ne v=Nw\in\ker N$, then $N^2w=0$ while $Nw\ne0$, which would give a Jordan chain of length at least $2$ for $\lambda$, contradicting algebraic multiplicity one. Rank-nullity now gives
 \[
-\mathbb C^n=\ker N\oplus\operatorname{im}N
+\CC^n=\ker N\oplus\operatorname{im}N
 =\mathbb Cx\oplus\operatorname{im}(A-\lambda I).
 \]
 The subspace $\operatorname{im}N$ is $A$-invariant, because $A$ commutes with $N$: if $v=Nu$, then $Av=N(Au)\in\operatorname{im}N$.

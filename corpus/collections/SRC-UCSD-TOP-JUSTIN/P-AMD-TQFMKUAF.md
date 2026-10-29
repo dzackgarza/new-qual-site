@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Determine the winding number of the following map: $f: S^1 \to \mathbb{C}-\{0\}, z\mapsto 8z^4 + 4z^3 + 2z^2 + z^{-1}$
+Determine the winding number of the following map: $f: S^1 \to \CC-\{0\}, z\mapsto 8z^4 + 4z^3 + 2z^2 + z^{-1}$
 :::
 
 ::: {.solution}
@@ -73,7 +73,7 @@ $$
 
 ::: pf-proof
 
-Winding number is additive under pointwise multiplication of maps $S^1\to\mathbb C^*$. The map $z^{-1}$ has degree $-1$, while step [](#s3){.pf-ref} gives degree $5$ for $g$.
+Winding number is additive under pointwise multiplication of maps $S^1\to\CC^*$. The map $z^{-1}$ has degree $-1$, while step [](#s3){.pf-ref} gives degree $5$ for $g$.
 
 :::
 

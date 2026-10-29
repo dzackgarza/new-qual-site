@@ -25,7 +25,7 @@ Let
 \[
 B=\{f\in V:\|f\|\le1\}
 \]
-be the closed unit ball in $V$. Show that there exists a bounded linear functional $\Lambda:V\to\mathbb R$ such that $\Lambda(B)$ is an open subset of $\mathbb R$.
+be the closed unit ball in $V$. Show that there exists a bounded linear functional $\Lambda:V\to\RR$ such that $\Lambda(B)$ is an open subset of $\RR$.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ Define
 
 The map
 \[
-\Lambda:V\to\mathbb R
+\Lambda:V\to\RR
 \]
 is linear.
 
@@ -527,7 +527,7 @@ Use steps [](#s1-13){.pf-ref} and [](#s1-18){.pf-ref}.
 
 ::: {.pf-step #s1-20}
 
-Hence \(\Lambda(B)\) is open in \(\mathbb R\).
+Hence \(\Lambda(B)\) is open in \(\RR\).
 
 
 ::: pf-proof

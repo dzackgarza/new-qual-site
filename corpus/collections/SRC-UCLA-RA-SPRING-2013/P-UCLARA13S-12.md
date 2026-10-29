@@ -32,12 +32,12 @@ g_\varepsilon(x)=\frac1\pi\operatorname{Im}f(x+i\varepsilon).
 
 (a) Show that
 \[
-f(z+i\varepsilon)=\int_{\mathbb R}\frac{g_\varepsilon(x)}{x-z}\,dx.
+f(z+i\varepsilon)=\int_{\RR}\frac{g_\varepsilon(x)}{x-z}\,dx.
 \]
 
-(b) Show that there exists a Borel probability measure $\mu$ on $\mathbb R$ such that
+(b) Show that there exists a Borel probability measure $\mu$ on $\RR$ such that
 \[
-f(z)=\int_{\mathbb R}\frac{d\mu(x)}{x-z}.
+f(z)=\int_{\RR}\frac{d\mu(x)}{x-z}.
 \]
 :::
 
@@ -56,13 +56,13 @@ u_\varepsilon(z)
 
 ::: {.pf-step #s1-1}
 
-The function $u_\varepsilon$ is a positive bounded harmonic function on $\mathbb H$, extends continuously to $\mathbb R$, and
+The function $u_\varepsilon$ is a positive bounded harmonic function on $\mathbb H$, extends continuously to $\RR$, and
 \[
 u_\varepsilon(x)
 =
 \pi g_\varepsilon(x)
 \qquad
-(x\in\mathbb R).
+(x\in\RR).
 \]
 
 
@@ -99,7 +99,7 @@ For $z=x+iy\in\mathbb H$,
 \[
 u_\varepsilon(x+iy)
 =
-\int_{\mathbb R}
+\int_{\RR}
 g_\varepsilon(t)
 \frac{y}{(t-x)^2+y^2}\,dt.
 \]
@@ -112,7 +112,7 @@ Apply the Poisson representation theorem for bounded harmonic functions on the u
 u_\varepsilon(x+iy)
 =
 \frac1\pi
-\int_{\mathbb R}
+\int_{\RR}
 u_\varepsilon(t)
 \frac{y}{(t-x)^2+y^2}\,dt.
 \]
@@ -133,7 +133,7 @@ For every $\varepsilon>0$,
 g_\varepsilon\ge0
 \qquad\text{and}\qquad
 \boxed{
-\int_{\mathbb R}g_\varepsilon(t)\,dt=1
+\int_{\RR}g_\varepsilon(t)\,dt=1
 }.
 \]
 
@@ -146,7 +146,7 @@ Set $x=0$ in step [](#s1-2){.pf-ref} and multiply by $y$:
 \[
 y\operatorname{Im}f(i(y+\varepsilon))
 =
-\int_{\mathbb R}
+\int_{\RR}
 g_\varepsilon(t)
 \frac{y^2}{t^2+y^2}\,dt.
 \]
@@ -159,7 +159,7 @@ increase pointwise to $1$. Thus the monotone convergence theorem gives
 \lim_{y\to\infty}
 y\operatorname{Im}f(i(y+\varepsilon))
 =
-\int_{\mathbb R}g_\varepsilon(t)\,dt.
+\int_{\RR}g_\varepsilon(t)\,dt.
 \]
 
 Writing $Y=y+\varepsilon$, the normalization
@@ -182,7 +182,7 @@ For $z\in\mathbb H$, define
 \[
 F_\varepsilon(z)
 \coloneqq
-\int_{\mathbb R}
+\int_{\RR}
 \frac{g_\varepsilon(t)}{t-z}\,dt.
 \]
 Then $F_\varepsilon$ is holomorphic on $\mathbb H$.
@@ -190,19 +190,19 @@ Then $F_\varepsilon$ is holomorphic on $\mathbb H$.
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, $g_\varepsilon\in L^1(\mathbb R)$. If $z=x+iy\in\mathbb H$, then
+By step [](#s1-3){.pf-ref}, $g_\varepsilon\in L^1(\RR)$. If $z=x+iy\in\mathbb H$, then
 \[
 |t-z|\ge y,
 \]
 so
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \left|
 \frac{g_\varepsilon(t)}{t-z}
 \right|dt
 \le
 \frac1y
-\int_{\mathbb R}g_\varepsilon(t)\,dt
+\int_{\RR}g_\varepsilon(t)\,dt
 =
 \frac1y.
 \]
@@ -234,7 +234,7 @@ Thus
 \[
 \operatorname{Im}F_\varepsilon(x+iy)
 =
-\int_{\mathbb R}
+\int_{\RR}
 g_\varepsilon(t)
 \frac{y}{(t-x)^2+y^2}\,dt.
 \]
@@ -266,7 +266,7 @@ By step [](#s1-5){.pf-ref},
 \[
 \operatorname{Im}D_\varepsilon(z)=0
 \]
-throughout the connected domain $\mathbb H$. A holomorphic function with image contained in $\mathbb R$ is constant, by the open mapping theorem.
+throughout the connected domain $\mathbb H$. A holomorphic function with image contained in $\RR$ is constant, by the open mapping theorem.
 
 :::
 
@@ -292,11 +292,11 @@ By step [](#s1-3){.pf-ref},
 \[
 |F_\varepsilon(iy)|
 \le
-\int_{\mathbb R}
+\int_{\RR}
 \frac{g_\varepsilon(t)}{|t-iy|}\,dt
 \le
 \frac1y
-\int_{\mathbb R}g_\varepsilon(t)\,dt
+\int_{\RR}g_\varepsilon(t)\,dt
 =
 \frac1y
 \longrightarrow0.
@@ -318,7 +318,7 @@ For every $\varepsilon>0$ and $z\in\mathbb H$,
 \boxed{
 f(z+i\varepsilon)
 =
-\int_{\mathbb R}
+\int_{\RR}
 \frac{g_\varepsilon(t)}{t-z}\,dt
 }.
 \]
@@ -344,13 +344,13 @@ d\mu_n(t)
 \coloneqq
 g_{\varepsilon_n}(t)\,dt.
 \]
-After passing to a subsequence, there is a finite positive Borel measure $\mu$ on $\mathbb R$ such that
+After passing to a subsequence, there is a finite positive Borel measure $\mu$ on $\RR$ such that
 \[
-\int_{\mathbb R}\phi\,d\mu_n
+\int_{\RR}\phi\,d\mu_n
 \longrightarrow
-\int_{\mathbb R}\phi\,d\mu
+\int_{\RR}\phi\,d\mu
 \qquad
-(\phi\in C_0(\mathbb R)).
+(\phi\in C_0(\RR)).
 \]
 
 
@@ -358,9 +358,9 @@ After passing to a subsequence, there is a finite positive Borel measure $\mu$ o
 
 By step [](#s1-3){.pf-ref}, every $\mu_n$ is a positive measure of total mass $1$. Via the Riesz representation theorem, these measures lie in the closed unit ball of
 \[
-C_0(\mathbb R)^*.
+C_0(\RR)^*.
 \]
-Banach--Alaoglu makes that ball weak-* compact. Since $C_0(\mathbb R)$ is separable, the weak-* topology on the ball is metrizable and sequentially compact. Hence a subsequence converges weak-* to a positive bounded functional, which the Riesz representation theorem identifies with a finite positive Borel measure $\mu$.
+Banach--Alaoglu makes that ball weak-* compact. Since $C_0(\RR)$ is separable, the weak-* topology on the ball is metrizable and sequentially compact. Hence a subsequence converges weak-* to a positive bounded functional, which the Riesz representation theorem identifies with a finite positive Borel measure $\mu$.
 
 :::
 
@@ -372,7 +372,7 @@ For every $z\in\mathbb H$,
 \[
 f(z)
 =
-\int_{\mathbb R}
+\int_{\RR}
 \frac{d\mu(t)}{t-z}.
 \]
 
@@ -383,12 +383,12 @@ For fixed $z\in\mathbb H$, the function
 \[
 t\longmapsto\frac1{t-z}
 \]
-is continuous on $\mathbb R$ and tends to $0$ as $|t|\to\infty$, so it belongs to $C_0(\mathbb R)$. Step [](#s1-9){.pf-ref} therefore gives
+is continuous on $\RR$ and tends to $0$ as $|t|\to\infty$, so it belongs to $C_0(\RR)$. Step [](#s1-9){.pf-ref} therefore gives
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \frac{d\mu_n(t)}{t-z}
 \longrightarrow
-\int_{\mathbb R}
+\int_{\RR}
 \frac{d\mu(t)}{t-z}.
 \]
 By step [](#s1-8){.pf-ref}, the left-hand side is
@@ -405,7 +405,7 @@ which tends to $f(z)$ by continuity of $f$.
 
 The measure $\mu$ has total mass
 \[
-\boxed{\mu(\mathbb R)=1}.
+\boxed{\mu(\RR)=1}.
 \]
 
 
@@ -415,7 +415,7 @@ Set $z=iy$ in step [](#s1-10){.pf-ref} and multiply by $y$:
 \[
 yf(iy)
 =
-\int_{\mathbb R}
+\int_{\RR}
 \frac{y}{t-iy}\,d\mu(t).
 \]
 For each fixed $t$,
@@ -437,11 +437,11 @@ Since $\mu$ is finite, dominated convergence gives
 \[
 \lim_{y\to\infty}yf(iy)
 =
-i\mu(\mathbb R).
+i\mu(\RR).
 \]
 The given normalization makes the same limit equal to $i$. Therefore
 \[
-\mu(\mathbb R)=1.
+\mu(\RR)=1.
 \]
 
 :::

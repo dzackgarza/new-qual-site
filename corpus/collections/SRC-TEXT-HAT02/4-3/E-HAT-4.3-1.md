@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.3-1
 kind: problem
-title: "Map $\\mathbb{RP}^\\infty \\to K(\\mathbb{Z},2)$ trivial on homology"
+title: "Map $\\mathbb{RP}^\\infty \\to K(\\ZZ,2)$ trivial on homology"
 classification:
   areas:
   - topology
@@ -24,24 +24,24 @@ audit:
 ---
 
 ::: {.problem}
-Show there is a map $\mathbb{RP}^\infty \to \mathbb{CP}^\infty = K(\mathbb{Z}, 2)$ which induces the trivial map on $\tilde{H}_*(-; \mathbb{Z})$ but a nontrivial map on $\tilde{H}^*(-; \mathbb{Z})$.
+Show there is a map $\mathbb{RP}^\infty \to \mathbb{CP}^\infty = K(\ZZ, 2)$ which induces the trivial map on $\tilde{H}_*(-; \ZZ)$ but a nontrivial map on $\tilde{H}^*(-; \ZZ)$.
 How is this consistent with the universal coefficient theorem?
 :::
 
 ::: {.solution}
 Let
 \[
-u\in H^2(\mathbb{RP}^\infty;\mathbb Z)\cong\mathbb Z/2
+u\in H^2(\mathbb{RP}^\infty;\ZZ)\cong\ZZ/2
 \]
 be the nonzero class. Since
 \[
-\mathbb{CP}^\infty=K(\mathbb Z,2),
+\mathbb{CP}^\infty=K(\ZZ,2),
 \]
 representability gives a map
 \[
 f:\mathbb{RP}^\infty\to\mathbb{CP}^\infty
 \]
-such that, for the canonical generator \(c\in H^2(\mathbb{CP}^\infty;\mathbb Z)\),
+such that, for the canonical generator \(c\in H^2(\mathbb{CP}^\infty;\ZZ)\),
 \[
 f^*(c)=u\ne0.
 \]
@@ -49,25 +49,25 @@ Thus \(f^*\) is nontrivial on reduced integral cohomology.
 
 On the other hand
 \[
-\widetilde H_i(\mathbb{RP}^\infty;\mathbb Z)
+\widetilde H_i(\mathbb{RP}^\infty;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z/2,&i\text{ odd},\\
+\ZZ/2,&i\text{ odd},\\
 0,&i\text{ even},
 \end{cases}
 \]
-while \(H_*(\mathbb{CP}^\infty;\mathbb Z)\) is free abelian and concentrated in even degrees. Hence every reduced homology homomorphism induced by \(f\) is zero.
+while \(H_*(\mathbb{CP}^\infty;\ZZ)\) is free abelian and concentrated in even degrees. Hence every reduced homology homomorphism induced by \(f\) is zero.
 
 There is no contradiction with the universal coefficient theorem. In degree \(2\),
 \[
-H^2(\mathbb{RP}^\infty;\mathbb Z)
+H^2(\mathbb{RP}^\infty;\ZZ)
 \cong
-\operatorname{Ext}(H_1(\mathbb{RP}^\infty),\mathbb Z)
-\cong\mathbb Z/2,
+\operatorname{Ext}(H_1(\mathbb{RP}^\infty),\ZZ)
+\cong\ZZ/2,
 \]
 whereas the generator of \(H^2(\mathbb{CP}^\infty)\) comes from
 \[
-\operatorname{Hom}(H_2(\mathbb{CP}^\infty),\mathbb Z).
+\operatorname{Hom}(H_2(\mathbb{CP}^\infty),\ZZ).
 \]
 Naturality of the UCT exact sequence allows its pullback to land in the Ext term; the UCT splitting is not natural. Thus
 \[

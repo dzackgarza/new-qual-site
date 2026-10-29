@@ -77,7 +77,7 @@ which is not simply connected.
 
 ::: pf-proof
 
-The suspension of two points is two arcs sharing their two endpoints, which is a circle; its fundamental group is $\mathbb Z$.
+The suspension of two points is two arcs sharing their two endpoints, which is a circle; its fundamental group is $\ZZ$.
 
 :::
 

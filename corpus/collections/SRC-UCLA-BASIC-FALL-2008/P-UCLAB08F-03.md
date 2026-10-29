@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Give an example of continuous functions $f_n\colon[0,1]\to\mathbb R$ such that
+Give an example of continuous functions $f_n\colon[0,1]\to\RR$ such that
 \[
 f(t)=\lim_{n\to\infty}f_n(t)
 \]

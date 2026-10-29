@@ -14,15 +14,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^2\to\mathbb R$ be continuous. Assume that for every square
+Let $f:\RR^2\to\RR$ be continuous. Assume that for every square
 \[
 S=\left\{a<x<a+\frac1n,\ b<y<b+\frac1n\right\},
 \]
-where $a,b\in\mathbb Q$ and $n\ge1$,
+where $a,b\in\QQ$ and $n\ge1$,
 \[
 \iint_S f(x,y)\,dx\,dy=0.
 \]
-Prove that $f(x,y)=0$ for all $(x,y)\in\mathbb R^2$.
+Prove that $f(x,y)=0$ for all $(x,y)\in\RR^2$.
 :::
 
 ::: {.solution}
@@ -72,7 +72,7 @@ U\subseteq B(p,\delta).
 
 ::: {.pf-step #s1-2}
 
-Every nonempty open rectangle in $\mathbb R^2$ contains a square of the form
+Every nonempty open rectangle in $\RR^2$ contains a square of the form
 \[
 S=
 \left\{
@@ -82,9 +82,9 @@ b<y<b+\frac1n
 \]
 with
 \[
-a,b\in\mathbb Q,
+a,b\in\QQ,
 \qquad
-n\in\mathbb N.
+n\in\NN.
 \]
 
 
@@ -177,7 +177,7 @@ Therefore
 \[
 \boxed{f(x,y)=0}
 \]
-for every $(x,y)\in\mathbb R^2$.
+for every $(x,y)\in\RR^2$.
 
 
 ::: pf-proof

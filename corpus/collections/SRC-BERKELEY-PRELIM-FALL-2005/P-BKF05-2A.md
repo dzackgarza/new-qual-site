@@ -33,7 +33,7 @@ f(z)=\frac{P(z)}{Q(z)}
 \]
 be a rational function with complex coefficients and \(\deg P<\deg Q\). Prove that \(f\) is a sum of terms of the form
 \[
-\frac{a}{(z-b)^k},\qquad a,b\in\mathbb C.
+\frac{a}{(z-b)^k},\qquad a,b\in\CC.
 \]
 :::
 

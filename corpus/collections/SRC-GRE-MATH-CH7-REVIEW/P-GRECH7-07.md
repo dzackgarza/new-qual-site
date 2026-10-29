@@ -18,10 +18,10 @@ audit:
 ::: {.problem}
 Which of the following sets is NOT countably infinite?
 
-(A) $\mathbb{Q}$, the set of rational numbers
-(B) $\mathbb{Z}$, the set of all integers
-(C) $\mathbb{Q}^c$, the set of all irrational numbers
-(D) $\mathbb{Z}^+$, the set of positive integers
+(A) $\QQ$, the set of rational numbers
+(B) $\ZZ$, the set of all integers
+(C) $\QQ^c$, the set of all irrational numbers
+(D) $\ZZ^+$, the set of positive integers
 (E) $E$, the set of positive even integers
 :::
 

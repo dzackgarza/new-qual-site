@@ -82,16 +82,16 @@ $\widetilde{X} = \bigvee_{j=1}^{121} S^3$ is 2-connected:
 :::
 
 ::: pf-step
-By the Hurewicz Theorem, the Hurewicz homomorphism $h: \pi_3(\widetilde{X}) \to H_3(\widetilde{X}; \mathbb{Z})$ is an isomorphism:
+By the Hurewicz Theorem, the Hurewicz homomorphism $h: \pi_3(\widetilde{X}) \to H_3(\widetilde{X}; \ZZ)$ is an isomorphism:
 \[
-\pi_3(\widetilde{X}) \cong H_3\left( \bigvee_{j=1}^{121} S^3; \mathbb{Z} \right).
+\pi_3(\widetilde{X}) \cong H_3\left( \bigvee_{j=1}^{121} S^3; \ZZ \right).
 \]
 :::
 
 ::: pf-step
 By the additivity of homology on wedge sums of CW complexes:
 \[
-H_3\left( \bigvee_{j=1}^{121} S^3; \mathbb{Z} \right) \cong \bigoplus_{j=1}^{121} H_3(S^3; \mathbb{Z}) \cong \mathbb{Z}^{121}.
+H_3\left( \bigvee_{j=1}^{121} S^3; \ZZ \right) \cong \bigoplus_{j=1}^{121} H_3(S^3; \ZZ) \cong \ZZ^{121}.
 \]
 :::
 
@@ -101,7 +101,7 @@ H_3\left( \bigvee_{j=1}^{121} S^3; \mathbb{Z} \right) \cong \bigoplus_{j=1}^{121
 
 ::: pf-step
 Conclusion:
-$\pi_3(P \vee S^3) \cong \mathbb{Z}^{121}$. Q.E.D.
+$\pi_3(P \vee S^3) \cong \ZZ^{121}$. Q.E.D.
 
 :::
 

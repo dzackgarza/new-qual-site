@@ -36,7 +36,7 @@ Symmetry and contour setup:
 
 ::: pf-step
 
-The integrand $\frac{1 - \cos x}{x^2}$ is an even, non-negative continuous function on $\mathbb{R}$ (with removable singularity at $x=0$, $\lim_{x\to 0} \frac{1-\cos x}{x^2} = \frac{1}{2}$).
+The integrand $\frac{1 - \cos x}{x^2}$ is an even, non-negative continuous function on $\RR$ (with removable singularity at $x=0$, $\lim_{x\to 0} \frac{1-\cos x}{x^2} = \frac{1}{2}$).
 Thus:
 \[
 \int_0^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \int_{-\infty}^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \operatorname{Re} \left( \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx \right).
@@ -69,7 +69,7 @@ standard indented contour.
 
 ::: pf-step
 
-Since $f(z)$ is holomorphic on $\mathbb{C} \setminus \{0\}$, it has no poles inside the region bounded by $\Gamma_{R, \epsilon}$.
+Since $f(z)$ is holomorphic on $\CC \setminus \{0\}$, it has no poles inside the region bounded by $\Gamma_{R, \epsilon}$.
 By Cauchy’s Integral Theorem:
 \[
 \oint_{\Gamma_{R, \epsilon}} f(z) \, dz = \int_{-R}^{-\epsilon} f(x) \, dx + \int_{C_\epsilon} f(z) \, dz + \int_\epsilon^R f(x) \, dx + \int_{C_R} f(z) \, dz = 0.

@@ -119,13 +119,13 @@ A\cap B.
 
 Let
 \[
-X=\mathbb N
+X=\NN
 \]
 and let
 \[
 \mathcal R
 \coloneqq
-\{E\subseteq\mathbb N:
+\{E\subseteq\NN:
 E\text{ is finite or cofinite}\}.
 \]
 Then $\mathcal R$ is a ring of sets.
@@ -175,7 +175,7 @@ define
 \[
 A_n
 \coloneqq
-\mathbb N\setminus\{2n\}.
+\NN\setminus\{2n\}.
 \]
 Then
 \[
@@ -199,9 +199,9 @@ A_n\in\mathcal R.
 Their intersection is
 \[
 \bigcap_{n=1}^\infty
-(\mathbb N\setminus\{2n\})
+(\NN\setminus\{2n\})
 =
-\mathbb N\setminus\{2,4,6,\dots\},
+\NN\setminus\{2,4,6,\dots\},
 \]
 the set of odd positive integers.
 This set is infinite, and its complement is also infinite.

@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be the subspace of $\mathbb{R}^2$ that is the union of the circles $C_n$ of radius $n$ and center $(n, 0)$ for $n = 1, 2, \cdots$.
+Let $X$ be the subspace of $\RR^2$ that is the union of the circles $C_n$ of radius $n$ and center $(n, 0)$ for $n = 1, 2, \cdots$.
 Show that $\pi_1(X)$ is the free group $*_n \pi_1(C_n)$, the same as for the infinite wedge sum $\bigvee_\infty S^1$.
 Show that $X$ and $\bigvee_\infty S^1$ are in fact homotopy equivalent, but not homeomorphic.
 :::
@@ -162,7 +162,7 @@ Consequently
 \cong
 *_{n=1}^{\infty}\pi_1(C_n,o)
 \cong
-*_{n=1}^{\infty}\mathbb Z.
+*_{n=1}^{\infty}\ZZ.
 }
 \]
 
@@ -188,7 +188,7 @@ The space $X$ is first countable at $o$.
 
 ::: pf-proof
 
-It is a subspace of the metric space $\mathbb R^2$.
+It is a subspace of the metric space $\RR^2$.
 Thus the sets
 \[
 X\cap B_{1/m}(o),\qquad m=1,2,\dots,

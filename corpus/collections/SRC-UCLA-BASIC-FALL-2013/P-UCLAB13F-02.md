@@ -14,11 +14,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be nondecreasing.
+Let $f:\RR\to\RR$ be nondecreasing.
 
 (a) Prove that the set of points where $f$ is discontinuous is countable.
 
-(b) Let $S\subset\mathbb R$ be countable. Prove that there exists a nondecreasing function $f:\mathbb R\to\mathbb R$ whose set of discontinuities is exactly $S$.
+(b) Let $S\subset\RR$ be countable. Prove that there exists a nondecreasing function $f:\RR\to\RR$ whose set of discontinuities is exactly $S$.
 :::
 
 ::: {.solution}
@@ -27,13 +27,13 @@ Let $f:\mathbb R\to\mathbb R$ be nondecreasing.
 
 ::: {.pf-step #s1-1}
 
-For every $x\in\mathbb R$, the one-sided limits
+For every $x\in\RR$, the one-sided limits
 \[
 f(x^-)=\sup_{t<x}f(t)
 \qquad\text{and}\qquad
 f(x^+)=\inf_{t>x}f(t)
 \]
-exist in $\mathbb R\cup\{\pm\infty\}$, and
+exist in $\RR\cup\{\pm\infty\}$, and
 \[
 f(x^-)\le f(x)\le f(x^+).
 \]
@@ -45,12 +45,12 @@ Because $f$ is nondecreasing, the set
 \[
 \{f(t):t<x\}
 \]
-is bounded above by $f(x)$, so its supremum exists in $\mathbb R$.
+is bounded above by $f(x)$, so its supremum exists in $\RR$.
 Similarly,
 \[
 \{f(t):t>x\}
 \]
-is bounded below by $f(x)$, so its infimum exists in $\mathbb R$.
+is bounded below by $f(x)$, so its infimum exists in $\RR$.
 Monotonicity gives the displayed inequalities.
 
 :::
@@ -160,8 +160,8 @@ Thus the map
 \[
 x\longmapsto q_x
 \]
-injects the discontinuity set into $\mathbb Q$.
-Since $\mathbb Q$ is countable, so is the discontinuity set.
+injects the discontinuity set into $\QQ$.
+Since $\QQ$ is countable, so is the discontinuity set.
 
 :::
 

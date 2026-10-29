@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\mathbb{R}^d$, then for every $\epsilon > 0$ there exists $\delta > 0$ such that
+Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\RR^d$, then for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$\int_E |f| < \epsilon \quad \text{whenever} \quad m(E) < \delta.$$
 :::
@@ -39,7 +39,7 @@ Truncate the integrable function.
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Since $f\in L^1(\mathbb R^d)$,
+Fix $\varepsilon>0$. Since $f\in L^1(\RR^d)$,
 \[
 \int_{\{|f|>M\}}|f|\,dx\longrightarrow0
 \qquad(M\to\infty).

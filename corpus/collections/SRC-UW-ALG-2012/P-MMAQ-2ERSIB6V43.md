@@ -147,7 +147,7 @@ These matrices satisfy
 \]
 so they define a representation of \(G_4\). If it had a one-dimensional invariant subspace, that line would be invariant under \(
 ho(r)\). But \(
-ho(r)\) has eigenlines over \(\mathbb C\) spanned by \((1,\pm i)\), and \(
+ho(r)\) has eigenlines over \(\CC\) spanned by \((1,\pm i)\), and \(
 ho(a)\) interchanges these two lines rather than preserving either one. Hence no nonzero proper subspace is invariant, so the representation is irreducible.
 
 :::
@@ -160,7 +160,7 @@ These five representations are all the irreducible complex representations of \(
 
 ::: pf-proof
 
-For a finite group over \(\mathbb C\), the dimensions \(d_i\) of the irreducible representations satisfy
+For a finite group over \(\CC\), the dimensions \(d_i\) of the irreducible representations satisfy
 \[
 \sum_i d_i^2=|G_4|=8.
 \]

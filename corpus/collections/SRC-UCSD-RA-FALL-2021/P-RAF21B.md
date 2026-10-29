@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Does there exist a Borel measurable function $f : \mathbb{R} \to [0, \infty)$ such that $\int_a^b f(x) \, dx = \infty$ for all real numbers $a < b$?
+Does there exist a Borel measurable function $f : \RR \to [0, \infty)$ such that $\int_a^b f(x) \, dx = \infty$ for all real numbers $a < b$?
 Either find an example or show that no such $f$ exists.
 :::
 
@@ -58,7 +58,7 @@ a_n:=\frac1{m(E_n)}.
 \]
 Then
 \[
-\int_{\mathbb R} a_n\mathbf1_{E_n}(x)\,dx=1.
+\int_{\RR} a_n\mathbf1_{E_n}(x)\,dx=1.
 \]
 
 :::
@@ -67,7 +67,7 @@ Then
 
 ::: pf-step
 
-With $a_n\coloneqq m(E_n)^{-1}$, the series $F\coloneqq\sum_n a_n\mathbf1_{E_n}$ is finite almost everywhere, and there is a Borel function $f\colon\mathbb R\to[0,\infty)$ with $f=F$ almost everywhere.
+With $a_n\coloneqq m(E_n)^{-1}$, the series $F\coloneqq\sum_n a_n\mathbf1_{E_n}$ is finite almost everywhere, and there is a Borel function $f\colon\RR\to[0,\infty)$ with $f=F$ almost everywhere.
 
 ::: pf-proof
 
@@ -97,7 +97,7 @@ F(x),&x\notin N,\\
 0,&x\in N.
 \end{cases}
 \]
-Then $f:\mathbb R\to[0,\infty)$ is Borel measurable and finite everywhere.
+Then $f:\RR\to[0,\infty)$ is Borel measurable and finite everywhere.
 
 :::
 

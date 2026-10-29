@@ -67,7 +67,7 @@ The Sorgenfrey line is Lindelöf.
 ::: pf-proof
 
 Let \(\mathcal U\) be an open cover. Refine it by basic intervals, choosing
-for each \(x\in\mathbb R\) a basic interval
+for each \(x\in\RR\) a basic interval
 \[
 [x,b_x)
 \]
@@ -75,11 +75,11 @@ contained in some member of \(\mathcal U\).
 
 Set
 \[
-O=\bigcup_{x\in\mathbb R}(x,b_x)
+O=\bigcup_{x\in\RR}(x,b_x)
 \]
 using the ordinary Euclidean topology. The family
 \[
-\{(x,b_x):x\in\mathbb R\}
+\{(x,b_x):x\in\RR\}
 \]
 is an ordinary open cover of \(O\). Since the Euclidean line is second
 countable, hence Lindelöf, choose countably many indices \(x_n\) such that
@@ -95,7 +95,7 @@ cover \(O\).
 
 Now let
 \[
-A=\mathbb R-O.
+A=\RR-O.
 \]
 For distinct \(x<y\) in \(A\), one must have
 \[
@@ -146,7 +146,7 @@ is separable.
 
 The countable set
 \[
-\mathbb Q\times\mathbb Q
+\QQ\times\QQ
 \]
 is dense. Every nonempty basic rectangle
 \[
@@ -162,7 +162,7 @@ contains a pair of rational points.
 
 The anti-diagonal
 \[
-D=\{(x,-x):x\in\mathbb R\}
+D=\{(x,-x):x\in\RR\}
 \]
 is closed in \(\mathbb S^2\).
 
@@ -208,7 +208,7 @@ The subspace \(D\) is discrete.
 
 ::: pf-proof
 
-For \(x\in\mathbb R\), the basic rectangle
+For \(x\in\RR\), the basic rectangle
 \[
 [x,x+1)\times[-x,-x+1)
 \]
@@ -247,7 +247,7 @@ Closedness is step [](#s1-5){.pf-ref}, discreteness is step [](#s1-6){.pf-ref}, 
 \[
 x\longmapsto(x,-x)
 \]
-is a bijection from \(\mathbb R\) to \(D\).
+is a bijection from \(\RR\) to \(D\).
 
 :::
 
@@ -463,14 +463,14 @@ It is compact by Heine--Borel. Every neighborhood of every point of
 The space
 \[
 \boxed{
-K=\{0\}\cup\{1/n:n\in\mathbb N\}}
+K=\{0\}\cup\{1/n:n\in\NN\}}
 \]
 is infinite and compact.
 
 
 ::: pf-proof
 
-It is a closed and bounded subset of \(\mathbb R\), hence compact by
+It is a closed and bounded subset of \(\RR\), hence compact by
 Heine--Borel.
 
 :::
@@ -496,7 +496,7 @@ the singleton \(\{1/n\}\).
 
 The set of isolated points
 \[
-\{1/n:n\in\mathbb N\}
+\{1/n:n\in\NN\}
 \]
 is dense in \(K\).
 

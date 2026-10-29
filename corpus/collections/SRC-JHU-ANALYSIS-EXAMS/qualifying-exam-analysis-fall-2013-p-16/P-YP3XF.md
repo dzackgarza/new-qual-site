@@ -67,7 +67,7 @@ Construct a bounded sequence whose image has no convergent subsequence.
 
 ::: pf-proof
 
-For $n\in\mathbb Z$, set
+For $n\in\ZZ$, set
 \[
 e_n(x):=\sqrt2\,e^{4\pi i n x}\mathbf1_{[1/2,1]}(x).
 \]

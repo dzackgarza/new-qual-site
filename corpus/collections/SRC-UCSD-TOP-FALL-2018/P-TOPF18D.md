@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Provided the sum is finite, the Euler characteristic $\chi(X)$ of a space $X$ is defined to be the alternating sum of the dimensions of the rational homology groups $H_i(X; \mathbb{Q})$.
+Provided the sum is finite, the Euler characteristic $\chi(X)$ of a space $X$ is defined to be the alternating sum of the dimensions of the rational homology groups $H_i(X; \QQ)$.
 Use Poincaré duality to show that the Euler characteristic of a compact connected closed orientable $3$-manifold $M^3$ is zero.
 Prove that the result still holds even if $M$ is non-orientable.
 :::
@@ -30,7 +30,7 @@ If $M$ is closed, connected, orientable, and $3$-dimensional, then $\chi(M)=0$.
 
 ::: pf-proof
 
-Over $\mathbb Q$, Poincaré duality gives $b_i=b_{3-i}$. Hence
+Over $\QQ$, Poincaré duality gives $b_i=b_{3-i}$. Hence
 $$\chi(M)=b_0-b_1+b_2-b_3=(b_0-b_3)+(b_2-b_1)=0.$$
 
 :::

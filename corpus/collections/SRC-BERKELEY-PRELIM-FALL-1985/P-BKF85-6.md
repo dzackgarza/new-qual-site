@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $k\in\mathbb R$, let $n\ge2$, and let $A=(a_{ij})$ be the $n\times n$ matrix with
+Let $k\in\RR$, let $n\ge2$, and let $A=(a_{ij})$ be the $n\times n$ matrix with
 \[
 a_{ii}=k,
 \qquad

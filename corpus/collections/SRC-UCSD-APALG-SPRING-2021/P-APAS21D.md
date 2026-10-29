@@ -14,13 +14,13 @@ review: draft
 ---
 
 ::: {.problem}
-Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex components, $\mathbb{C}^n$ is the set of column vectors with $n$ complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
+Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex components, $\CC^n$ is the set of column vectors with $n$ complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) Let $C \in M_{m,n}$ with $\operatorname{rank}(C) = m$.
-Find orthogonal projections that project $x \in \mathbb{C}^n$ onto $\operatorname{range}(C^H)$ and $\operatorname{null}(C)$.
+Find orthogonal projections that project $x \in \CC^n$ onto $\operatorname{range}(C^H)$ and $\operatorname{null}(C)$.
 Verify that your projections satisfy the properties of an orthogonal projection.
 
-(b) For a given nonzero $y \in \mathbb{C}^n$, let $Y = \operatorname{span}(y)$.
+(b) For a given nonzero $y \in \CC^n$, let $Y = \operatorname{span}(y)$.
 
 (i) Find an oblique projector $A$ that projects vectors onto $Y$.
 Find the complementary projection.
@@ -67,7 +67,7 @@ the complementary orthogonal projector is
 \]
 Indeed $Q^H=Q$, $Q^2=Q$, and $CQ=0$, so $\operatorname{range}Q\subseteq\ker C$; conversely, if $Cx=0$, then $Qx=x$.
 
-(b)(i) Choose any $z\in\mathbb C^n$ satisfying
+(b)(i) Choose any $z\in\CC^n$ satisfying
 \[
 z^Hy=1.
 \]

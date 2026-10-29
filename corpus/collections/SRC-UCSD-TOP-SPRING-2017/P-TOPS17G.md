@@ -26,7 +26,7 @@ Show that there does not exist a retraction $T \to V$.
 ::: pf-step
 Let $i:V=S^1\vee S^1\hookrightarrow T^2$ be the natural inclusion. On fundamental groups,
 $$
-i_*:F(a,b)\longrightarrow\mathbb Z^2
+i_*:F(a,b)\longrightarrow\ZZ^2
 $$
 is the abelianization map.
 
@@ -41,7 +41,7 @@ Hence $i_*$ is not injective: for example,
 $$
 [a,b]=aba^{-1}b^{-1}\ne1\quad\text{in }F(a,b)
 $$
-but $i_*([a,b])=0$ in $\mathbb Z^2$.
+but $i_*([a,b])=0$ in $\ZZ^2$.
 
 ::: pf-proof
 The commutator is a nontrivial reduced word in the free group, while every commutator vanishes in an abelian group.

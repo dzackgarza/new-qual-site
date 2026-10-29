@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-19
 kind: problem
-title: The region $|z-a|<|z-b|$ in $\mathbb C$
+title: The region $|z-a|<|z-b|$ in $\CC$
 classification:
   areas:
   - complex-analysis
@@ -67,7 +67,7 @@ distinct points is their perpendicular bisector.
 For $a\ne b$, the desired region is the open half-plane bounded by
 that perpendicular bisector and containing $a$:
 \[
-\boxed{\{z\in\mathbb C:|z-a|<|z-b|\}}.
+\boxed{\{z\in\CC:|z-a|<|z-b|\}}.
 \]
 
 

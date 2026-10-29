@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a continuously differentiable $2\pi$-periodic function on $\mathbb R$, with Fourier coefficients
+Let $f$ be a continuously differentiable $2\pi$-periodic function on $\RR$, with Fourier coefficients
 \[
 \widehat f(n)=\frac1{2\pi}\int_0^{2\pi}f(t)e^{-int}\,dt.
 \]
 Show that the Fourier series
 \[
-\sum_{n\in\mathbb Z}\widehat f(n)e^{int}
+\sum_{n\in\ZZ}\widehat f(n)e^{int}
 \]
 is absolutely convergent for every $t$.
 :::
@@ -50,7 +50,7 @@ since $f(2\pi)=f(0)$.
 
 Now $f'\in L^2([0,2\pi])$. By Bessel's inequality,
 \[
-\sum_{n\in\mathbb Z}|\widehat{f'}(n)|^2<\infty.
+\sum_{n\in\ZZ}|\widehat{f'}(n)|^2<\infty.
 \]
 Hence
 \[
@@ -69,12 +69,12 @@ Therefore Cauchy--Schwarz yields
 \]
 Adding the single term $|\widehat f(0)|$ gives
 \[
-\sum_{n\in\mathbb Z}|\widehat f(n)|<\infty.
+\sum_{n\in\ZZ}|\widehat f(n)|<\infty.
 \]
 Since $|e^{int}|=1$, for every $t$,
 \[
-\sum_{n\in\mathbb Z}|\widehat f(n)e^{int}|
-=\sum_{n\in\mathbb Z}|\widehat f(n)|<\infty.
+\sum_{n\in\ZZ}|\widehat f(n)e^{int}|
+=\sum_{n\in\ZZ}|\widehat f(n)|<\infty.
 \]
 Thus the Fourier series converges absolutely for every $t$.
 :::

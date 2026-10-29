@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $a_n = 1 - \frac{1}{n}$ for $n \geq 2$.
-Show that there are no bounded holomorphic functions $f : \Delta \to \mathbb{C}$ with zeros only at the $a_n$'s.
+Show that there are no bounded holomorphic functions $f : \Delta \to \CC$ with zeros only at the $a_n$'s.
 :::
 
 ::: {.solution}

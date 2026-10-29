@@ -16,7 +16,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Checked against Hatcher, Algebraic Topology, Section 2.1, Exercise 8. The local card had an extra $\mathbb{Z}$ in the requested list; Hatcher gives exactly $\mathbb{Z},\mathbb{Z}_n,0,\mathbb{Z}$ in dimensions 0,1,2,3, so the statement was corrected before solving.
+  note: Checked against Hatcher, Algebraic Topology, Section 2.1, Exercise 8. The local card had an extra $\ZZ$ in the requested list; Hatcher gives exactly $\ZZ,\ZZ_n,0,\ZZ$ in dimensions 0,1,2,3, so the statement was corrected before solving.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -30,7 +30,7 @@ audit:
 Construct a 3 dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots, T_n$ by the following two steps.
 First arrange the tetrahedra in a cyclic pattern as in the figure, so that each $T_i$ shares a common vertical face with its two neighbors $T_{i-1}$ and $T_{i+1}$, subscripts being taken mod $n$.
 Then identify the bottom face of $T_i$ with the top face of $T_{i+1}$ for each $i$.
-Show the simplicial homology groups of $X$ in dimensions 0, 1, 2, 3 are $\mathbb{Z}$, $\mathbb{Z}_n$, $0$, $\mathbb{Z}$, respectively.
+Show the simplicial homology groups of $X$ in dimensions 0, 1, 2, 3 are $\ZZ$, $\ZZ_n$, $0$, $\ZZ$, respectively.
 [The space $X$ is an example of a lens space; see Example 2.43 for the general case.]
 :::
 
@@ -59,9 +59,9 @@ The edges $p$ and $b$ are loops, while each $f_i$ joins $v$ to $w$. Thus
 \qquad
 \partial_1(f_i)=w-v.
 \]
-Hence $\operatorname{im}\partial_1=\mathbb Z(w-v)$ has rank one. Therefore
+Hence $\operatorname{im}\partial_1=\ZZ(w-v)$ has rank one. Therefore
 \[
-H_0(X)\cong\mathbb Z.
+H_0(X)\cong\ZZ.
 \]
 
 :::
@@ -87,11 +87,11 @@ The displayed formula follows directly by taking the alternating sum of the four
 \]
 then the coefficient of $A_i$ is $c_i-c_{i+1}$, hence all $c_i$ are equal. Conversely, the sum of all $\partial_3(T_i)$ telescopes to zero. Thus
 \[
-\ker\partial_3\cong\mathbb Z.
+\ker\partial_3\cong\ZZ.
 \]
 Since there are no $4$-simplices,
 \[
-H_3(X)\cong\mathbb Z.
+H_3(X)\cong\ZZ.
 \]
 
 :::
@@ -125,7 +125,7 @@ Subtract the $A_i$-columns successively from $A_{i+1}$ and likewise for the $B_i
 
 Hence
 \[
-H_1(X)\cong\mathbb Z/n\mathbb Z.
+H_1(X)\cong\ZZ/n\ZZ.
 \]
 
 ::: pf-proof
@@ -136,7 +136,7 @@ Since $\ker\partial_1$ has rank
 \]
 and the Smith form in step [](#s3){.pf-ref} has rank $n+1$, the quotient has no free part. Its only nontrivial invariant factor is $n$, giving
 \[
-H_1(X)=\ker\partial_1/\operatorname{im}\partial_2\cong\mathbb Z/n\mathbb Z.
+H_1(X)=\ker\partial_1/\operatorname{im}\partial_2\cong\ZZ/n\ZZ.
 \]
 
 :::
@@ -170,7 +170,7 @@ Hence $\partial_2z=0$ exactly when all $a_i+b_i$ are equal and both displayed su
 \[
 0=\sum_i(a_i+b_i)=nc,
 \]
-so $c=0$ in $\mathbb Z$. Thus $b_i=-a_i$ for all $i$ and $\sum_i a_i=0$.
+so $c=0$ in $\ZZ$. Thus $b_i=-a_i$ for all $i$ and $\sum_i a_i=0$.
 
 Therefore $\ker\partial_2$ consists precisely of the chains
 \[
@@ -198,13 +198,13 @@ so $H_2(X)=0$.
 Therefore
 \[
 \boxed{
-H_0(X)\cong\mathbb Z,
+H_0(X)\cong\ZZ,
 \quad
-H_1(X)\cong\mathbb Z/n\mathbb Z,
+H_1(X)\cong\ZZ/n\ZZ,
 \quad
 H_2(X)=0,
 \quad
-H_3(X)\cong\mathbb Z.
+H_3(X)\cong\ZZ.
 }
 \]
 

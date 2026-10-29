@@ -48,7 +48,7 @@ f\in L^1(\RR^n), \quad g\in L^\infty(\RR^n) \quad
 
 ::: pf-step
 
-Prove translation continuity for $f\in C_c(\mathbb R^n)$.
+Prove translation continuity for $f\in C_c(\RR^n)$.
 
 ::: pf-proof
 
@@ -62,7 +62,7 @@ vanishes outside the bounded set $K+B(0,1)$. Since $f$ is uniformly continuous, 
 \]
 satisfies $\omega_f(r)\to0$ as $r\downarrow0$. Hence, for $|t|\le1$,
 \[
-\int_{\mathbb R^n}|f(x+t)-f(x)|\,dx
+\int_{\RR^n}|f(x+t)-f(x)|\,dx
 \le m(K+B(0,1))\,\omega_f(|t|)\longrightarrow0.
 \]
 
@@ -72,11 +72,11 @@ satisfies $\omega_f(r)\to0$ as $r\downarrow0$. Hence, for $|t|\le1$,
 
 ::: pf-step
 
-Extend translation continuity to every $f\in L^1(\mathbb R^n)$.
+Extend translation continuity to every $f\in L^1(\RR^n)$.
 
 ::: pf-proof
 
-Write $\tau_t f(x)=f(x+t)$. Fix $\varepsilon>0$. Choose $\varphi\in C_c(\mathbb R^n)$ with
+Write $\tau_t f(x)=f(x+t)$. Fix $\varepsilon>0$. Choose $\varphi\in C_c(\RR^n)$ with
 \[
 \|f-\varphi\|_1<\frac\varepsilon3.
 \]
@@ -106,12 +106,12 @@ Prove boundedness of $f*g$ for $f\in L^1$ and $g\in L^\infty$.
 
 Using
 \[
-(f*g)(x)=\int_{\mathbb R^n} f(x-y)g(y)\,dy,
+(f*g)(x)=\int_{\RR^n} f(x-y)g(y)\,dy,
 \]
 we obtain for every $x$,
 \[
 |(f*g)(x)|
-\le \|g\|_\infty\int_{\mathbb R^n}|f(x-y)|\,dy
+\le \|g\|_\infty\int_{\RR^n}|f(x-y)|\,dy
 =\|f\|_1\|g\|_\infty.
 \]
 Hence $f*g$ is bounded.
@@ -126,7 +126,7 @@ Prove uniform continuity of $f*g$.
 
 ::: pf-proof
 
-For $t\in\mathbb R^n$,
+For $t\in\RR^n$,
 \[
 \begin{aligned}
 |(f*g)(x+t)-(f*g)(x)|

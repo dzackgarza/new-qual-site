@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $Y$ be the quasi-circle, a closed subspace of $\mathbb{R}^2$ consisting of a portion of the graph of $y = \sin(1/x)$, the segment $[-1, 1]$ in the $y$-axis, and an arc connecting these two pieces.
+Let $Y$ be the quasi-circle, a closed subspace of $\RR^2$ consisting of a portion of the graph of $y = \sin(1/x)$, the segment $[-1, 1]$ in the $y$-axis, and an arc connecting these two pieces.
 Collapsing the segment of $Y$ in the $y$-axis to a point gives a quotient map $f: Y \to S^1$.
-Show that $f$ does not lift to the covering space $\mathbb{R} \to S^1$, even though $\pi_1(Y) = 0$.
+Show that $f$ does not lift to the covering space $\RR \to S^1$, even though $\pi_1(Y) = 0$.
 Thus local path-connectedness of $Y$ is a necessary hypothesis in the lifting criterion.
 :::
 
@@ -129,7 +129,7 @@ Every loop is nullhomotopic by step [](#s2){.pf-ref}.
 
 Let
 \[
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi i t},
 \]
@@ -140,7 +140,7 @@ f:Y\to S^1
 \]
 has a lift
 \[
-\widetilde f:Y\to\mathbb R
+\widetilde f:Y\to\RR
 \]
 with
 \[
@@ -166,7 +166,7 @@ Therefore
 \[
 \widetilde f(L)\subseteq p^{-1}(z_0).
 \]
-The fiber $p^{-1}(z_0)$ is a discrete subset of $\mathbb R$, while $L$ is connected.
+The fiber $p^{-1}(z_0)$ is a discrete subset of $\RR$, while $L$ is connected.
 The continuous image of a connected space in a discrete space is a single point.
 Hence $\widetilde f|_L$ is constant.
 
@@ -179,7 +179,7 @@ Hence $\widetilde f|_L$ is constant.
 The lift $\widetilde f$ factors through the quotient $f:Y\to S^1$:
 there is a continuous map
 \[
-s:S^1\to\mathbb R
+s:S^1\to\RR
 \]
 such that
 \[
@@ -237,15 +237,15 @@ p_*s_*=\operatorname{id}_{\pi_1(S^1)}.
 \]
 But
 \[
-\pi_1(\mathbb R)=0,
+\pi_1(\RR)=0,
 \]
 so
 \[
-s_*:\pi_1(S^1)\to\pi_1(\mathbb R)
+s_*:\pi_1(S^1)\to\pi_1(\RR)
 \]
 is the zero map, making $p_*s_*$ zero rather than the identity on
 \[
-\pi_1(S^1)\cong\mathbb Z.
+\pi_1(S^1)\cong\ZZ.
 \]
 Contradiction.
 
@@ -255,7 +255,7 @@ Contradiction.
 
 ::: pf-step
 
-Therefore $f$ has no lift to $\mathbb R\to S^1$, despite satisfying
+Therefore $f$ has no lift to $\RR\to S^1$, despite satisfying
 \[
 f_*(\pi_1(Y))=0.
 \]

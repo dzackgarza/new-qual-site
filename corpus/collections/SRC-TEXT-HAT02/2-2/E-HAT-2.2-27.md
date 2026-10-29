@@ -97,11 +97,11 @@ H_n(D^n)=0,
 \qquad
 H_n(S^{n-1})=0,
 \qquad
-H_n(D^n,S^{n-1})\cong\mathbb Z.
+H_n(D^n,S^{n-1})\cong\ZZ.
 \]
 Thus the proposed splitting would assert
 \[
-0\cong0\oplus\mathbb Z,
+0\cong0\oplus\ZZ,
 \]
 a contradiction. Indeed the connecting map
 \[

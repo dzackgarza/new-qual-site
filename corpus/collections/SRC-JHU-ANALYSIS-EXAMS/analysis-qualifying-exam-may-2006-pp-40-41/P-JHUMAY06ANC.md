@@ -33,7 +33,7 @@ audit:
 ::: {.solution}
 The functions are precisely
 $$
-\boxed{f(z)=az+b,\qquad a,b\in\mathbb C,\quad |a|+|b|\leq1.}
+\boxed{f(z)=az+b,\qquad a,b\in\CC,\quad |a|+|b|\leq1.}
 $$
 
 ::: pf

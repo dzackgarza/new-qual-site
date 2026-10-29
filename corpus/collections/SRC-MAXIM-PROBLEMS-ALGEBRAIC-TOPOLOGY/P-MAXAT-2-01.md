@@ -40,9 +40,9 @@ have isomorphic integral homology groups in every degree.
 
 The standard CW structure on $\mathbb{CP}^2$ has one cell in dimensions $0,2,4$ and no others; its cellular boundary maps vanish, so
 \[
-H_k(\mathbb{CP}^2;\mathbb Z)\cong
+H_k(\mathbb{CP}^2;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,2,4,\\
+\ZZ,&k=0,2,4,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -69,8 +69,8 @@ Nevertheless,
 
 Homotopy equivalence preserves the integral cohomology ring. For $\mathbb{CP}^2$,
 \[
-H^*(\mathbb{CP}^2;\mathbb Z)
-\cong\mathbb Z[u]/(u^3),
+H^*(\mathbb{CP}^2;\ZZ)
+\cong\ZZ[u]/(u^3),
 \qquad |u|=2,
 \]
 and $u^2\ne0$ in $H^4$. In $S^2\vee S^4$, the generator $v\in H^2$ comes from the $S^2$ summand and satisfies $v^2=0$, since $H^4(S^2)=0$ and positive-degree cup products between distinct wedge summands vanish. Thus the cohomology rings are not isomorphic.

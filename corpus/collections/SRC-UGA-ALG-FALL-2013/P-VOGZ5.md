@@ -46,14 +46,14 @@ Put $a=\sqrt[4]{2}$, with $a>0$.
 
 ::: {.pf-step #s1}
 
-The splitting field is $K=\mathbb Q(a,i)$ and
+The splitting field is $K=\QQ(a,i)$ and
 \[
-\boxed{[K:\mathbb Q]=8}.
+\boxed{[K:\QQ]=8}.
 \]
 
 ::: pf-proof
 
-The four roots are $a,-a,ia,-ia$, so they generate $\mathbb Q(a,i)$. Eisenstein's criterion at $2$ makes $x^4-2$ irreducible, whence $[\mathbb Q(a):\mathbb Q]=4$. Since $\mathbb Q(a)\subseteq\mathbb R$, it does not contain $i$, and adjoining $i$ doubles the degree. Both requested subfields lie in $K$.
+The four roots are $a,-a,ia,-ia$, so they generate $\QQ(a,i)$. Eisenstein's criterion at $2$ makes $x^4-2$ irreducible, whence $[\QQ(a):\QQ]=4$. Since $\QQ(a)\subseteq\RR$, it does not contain $i$, and adjoining $i$ doubles the degree. Both requested subfields lie in $K$.
 
 :::
 
@@ -61,13 +61,13 @@ The four roots are $a,-a,ia,-ia$, so they generate $\mathbb Q(a,i)$. Eisenstein'
 
 ::: {.pf-step #s2}
 
-The subgroup $N=\operatorname{Gal}(K/\mathbb Q(i))$ is normal in $G$, and $NH=G$ for $H=\operatorname{Gal}(K/\mathbb Q(a))$.
+The subgroup $N=\operatorname{Gal}(K/\QQ(i))$ is normal in $G$, and $NH=G$ for $H=\operatorname{Gal}(K/\QQ(a))$.
 
 ::: pf-proof
 
-The extension $\mathbb Q(i)/\mathbb Q$ is Galois, so its corresponding subgroup $N$ is normal by the Galois correspondence. Because $\mathbb Q(a)\subseteq\mathbb R$ and $\mathbb Q(i)\cap\mathbb R=\mathbb Q$, their intersection is $\mathbb Q$. As $N$ is normal, $NH$ is a subgroup with fixed field
+The extension $\QQ(i)/\QQ$ is Galois, so its corresponding subgroup $N$ is normal by the Galois correspondence. Because $\QQ(a)\subseteq\RR$ and $\QQ(i)\cap\RR=\QQ$, their intersection is $\QQ$. As $N$ is normal, $NH$ is a subgroup with fixed field
 \[
-K^{NH}=K^N\cap K^H=\mathbb Q(i)\cap\mathbb Q(a)=\mathbb Q.
+K^{NH}=K^N\cap K^H=\QQ(i)\cap\QQ(a)=\QQ.
 \]
 By the Galois correspondence, $NH=G$.
 
@@ -84,7 +84,7 @@ The Galois group is the dihedral group
 
 ::: pf-proof
 
-Define $\sigma$ by $\sigma(a)=ia$ and $\sigma(i)=i$, and let $\tau$ be complex conjugation, so $\tau(a)=a$ and $\tau(i)=-i$. The first map is an automorphism because $x^4-2$ is irreducible over $\mathbb Q(i)$: indeed $\mathbb Q(i,a)/\mathbb Q(i)$ has degree four by step [](#s1){.pf-ref}. Thus $\sigma$ has order four, while $\tau$ has order two. On the generators $a,i$, one verifies $\tau\sigma\tau^{-1}=\sigma^{-1}$. The eight elements $\sigma^j$ and $\sigma^j\tau$, $0\leq j<4$, are distinct, hence exhaust $G$ by step [](#s1){.pf-ref}.
+Define $\sigma$ by $\sigma(a)=ia$ and $\sigma(i)=i$, and let $\tau$ be complex conjugation, so $\tau(a)=a$ and $\tau(i)=-i$. The first map is an automorphism because $x^4-2$ is irreducible over $\QQ(i)$: indeed $\QQ(i,a)/\QQ(i)$ has degree four by step [](#s1){.pf-ref}. Thus $\sigma$ has order four, while $\tau$ has order two. On the generators $a,i$, one verifies $\tau\sigma\tau^{-1}=\sigma^{-1}$. The eight elements $\sigma^j$ and $\sigma^j\tau$, $0\leq j<4$, are distinct, hence exhaust $G$ by step [](#s1){.pf-ref}.
 
 :::
 
@@ -92,7 +92,7 @@ Define $\sigma$ by $\sigma(a)=ia$ and $\sigma(i)=i$, and let $\tau$ be complex c
 
 ::: {.pf-step #s4}
 
-The number of distinct quartic intermediate fields of $K/\mathbb Q$ is
+The number of distinct quartic intermediate fields of $K/\QQ$ is
 \[
 \boxed{5}.
 \]

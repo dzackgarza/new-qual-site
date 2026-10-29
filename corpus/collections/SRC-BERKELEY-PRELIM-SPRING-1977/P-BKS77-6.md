@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS77-6
 kind: problem
-title: Structure questions for $GL_2(\mathbb R)$ and its orthogonal subgroup
+title: Structure questions for $GL_2(\RR)$ and its orthogonal subgroup
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -25,7 +25,7 @@ Let $G$ be the set of real $2\times2$ matrices of nonzero determinant, with ordi
 ::: pf-step
 The set
 $$
-G=GL_2(\mathbb R)
+G=GL_2(\RR)
 $$
 is a group under matrix multiplication.
 
@@ -47,7 +47,7 @@ so $A^{-1}\in G$.
 The center of $G$ is
 $$
 \boxed{
-Z(G)=\{\lambda I:\lambda\in\mathbb R^\times\}
+Z(G)=\{\lambda I:\lambda\in\RR^\times\}
 }.
 $$
 
@@ -162,16 +162,16 @@ and therefore $O$ is not normal in $G$.
 The determinant gives a nontrivial surjective homomorphism
 $$
 \boxed{
-\det:G\longrightarrow\mathbb R^\times
+\det:G\longrightarrow\RR^\times
 }.
 $$
 
 ::: pf-proof
-The group $\mathbb R^\times$ is abelian under multiplication, and
+The group $\RR^\times$ is abelian under multiplication, and
 $$
 \det(AB)=\det(A)\det(B),
 $$
-so determinant is a group homomorphism. It is surjective because for every $r\in\mathbb R^\times$,
+so determinant is a group homomorphism. It is surjective because for every $r\in\RR^\times$,
 $$
 \det
 \begin{pmatrix}

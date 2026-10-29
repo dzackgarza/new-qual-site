@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-A linear map $\phi \colon \mathbb{C}^{10} \to \mathbb{C}^{10}$ is given in the standard basis $e_1, \ldots, e_{10}$ by the matrix
+A linear map $\phi \colon \CC^{10} \to \CC^{10}$ is given in the standard basis $e_1, \ldots, e_{10}$ by the matrix
 \[
 \begin{pmatrix}
 0 & 0 & * & * & * & * & * & * & * & * \\
@@ -130,7 +130,7 @@ Taking $k=8$ in step [](#phi-k-formula){.pf-ref} gives
 \phi^8(e_{10})=8!\,e_2+v_8,
 \qquad v_8\in F_1=\mathbb Ce_1.
 \]
-Since $8!\ne0$ in $\mathbb C$, the coefficient of $e_2$ is nonzero. Hence the vector cannot vanish.
+Since $8!\ne0$ in $\CC$, the coefficient of $e_2$ is nonzero. Hence the vector cannot vanish.
 :::
 
 :::

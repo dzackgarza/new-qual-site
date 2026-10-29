@@ -21,7 +21,7 @@ Let
 f(z)=a_0+a_1z+\cdots+a_nz^n,
 \qquad n\ge1,\quad a_n\ne0.
 \]
-Prove that there exists $z\in\mathbb C$ such that $f(z)=0$.
+Prove that there exists $z\in\CC$ such that $f(z)=0$.
 
 Hint: use Liouville's theorem.
 :::
@@ -36,7 +36,7 @@ Assume for contradiction that
 \[
 f(z)\ne0
 \qquad
-\text{for every }z\in\mathbb C.
+\text{for every }z\in\CC.
 \]
 Then
 \[
@@ -47,7 +47,7 @@ is entire.
 
 ::: pf-proof
 
-The polynomial \(f\) is entire. Under the stated assumption it has no zeros, so its reciprocal is analytic on all of \(\mathbb C\).
+The polynomial \(f\) is entire. Under the stated assumption it has no zeros, so its reciprocal is analytic on all of \(\CC\).
 
 :::
 
@@ -116,7 +116,7 @@ The function \(g\) is bounded on the closed disk
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, \(g\) is continuous on \(\mathbb C\). The closed disk is compact, so the continuous real-valued function \(|g|\) attains a finite maximum there.
+By step [](#s1-1){.pf-ref}, \(g\) is continuous on \(\CC\). The closed disk is compact, so the continuous real-valued function \(|g|\) attains a finite maximum there.
 
 :::
 
@@ -129,7 +129,7 @@ The function \(g\) is constant.
 
 ::: pf-proof
 
-Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} together show that \(g\) is bounded on all of \(\mathbb C\). Since \(g\) is entire by step [](#s1-1){.pf-ref}, Liouville's theorem implies that \(g\) is constant.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} together show that \(g\) is bounded on all of \(\CC\). Since \(g\) is entire by step [](#s1-1){.pf-ref}, Liouville's theorem implies that \(g\) is constant.
 
 :::
 
@@ -152,7 +152,7 @@ If \(g=1/f\) is constant and never zero, then \(f=1/g\) is constant. But the pol
 
 Therefore
 \[
-\boxed{\text{there exists }z\in\mathbb C\text{ such that }f(z)=0.}
+\boxed{\text{there exists }z\in\CC\text{ such that }f(z)=0.}
 \]
 
 

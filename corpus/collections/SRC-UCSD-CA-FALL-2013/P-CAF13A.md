@@ -40,8 +40,8 @@ From among these, choose 2, and sketch their proofs.
 ::: {.solution}
 Here are four choices.
 
-**Open Mapping Theorem.** If $G\subset\mathbb C$ is a domain and
-$f:G\to\mathbb C$ is nonconstant and holomorphic, then $f(G)$ is open.
+**Open Mapping Theorem.** If $G\subset\CC$ is a domain and
+$f:G\to\CC$ is nonconstant and holomorphic, then $f(G)$ is open.
 
 **Rouché's Theorem.** Let $\gamma$ be a positively oriented simple closed
 contour whose interior and boundary lie in a domain on which $f$ and $g$ are
@@ -52,7 +52,7 @@ holomorphic. If
 then $f$ and $f+g$ have the same number of zeros inside $\gamma$, counted with
 multiplicity.
 
-**Morera's Theorem.** Let $G$ be a domain and let $f:G\to\mathbb C$ be
+**Morera's Theorem.** Let $G$ be a domain and let $f:G\to\CC$ be
 continuous. If
 \[
 \int_{\partial T}f(z)\,dz=0

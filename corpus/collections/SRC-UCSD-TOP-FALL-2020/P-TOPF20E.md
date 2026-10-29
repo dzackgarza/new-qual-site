@@ -38,12 +38,12 @@ Suppose for contradiction that there exists a continuous map $r: S^n \times S^n 
 :::
 
 ::: pf-step
-The induced map on cohomology rings $r^*: H^*(A; \mathbb{Z}) \to H^*(S^n \times S^n; \mathbb{Z})$ is a graded ring homomorphism satisfying
-$$i^* \circ r^* = (r \circ i)^* = (\operatorname{id}_A)^* = \operatorname{id}_{H^*(A; \mathbb{Z})}.$$
+The induced map on cohomology rings $r^*: H^*(A; \ZZ) \to H^*(S^n \times S^n; \ZZ)$ is a graded ring homomorphism satisfying
+$$i^* \circ r^* = (r \circ i)^* = (\operatorname{id}_A)^* = \operatorname{id}_{H^*(A; \ZZ)}.$$
 :::
 
 ::: pf-step
-In particular, $r^*$ is an injective ring homomorphism, and $r^*(\alpha \smile \beta) = r^*(\alpha) \smile r^*(\beta)$ for all $\alpha, \beta \in H^*(A; \mathbb{Z})$.
+In particular, $r^*$ is an injective ring homomorphism, and $r^*(\alpha \smile \beta) = r^*(\alpha) \smile r^*(\beta)$ for all $\alpha, \beta \in H^*(A; \ZZ)$.
 :::
 
 :::
@@ -61,13 +61,13 @@ The subspace $A = (S^n \times \{p\}) \cup (\{p\} \times S^n)$ intersects at the 
 
 ::: pf-step
 The cohomology groups of $A$ are:
-$$H^k(A; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, \\ \mathbb{Z}\alpha \oplus \mathbb{Z}\beta & k = n, \\ 0 & \text{otherwise}, \end{cases}$$
-where $\alpha, \beta \in H^n(A; \mathbb{Z})$ are the generator classes corresponding to the two sphere summands $S^n \times \{p\}$ and $\{p\} \times S^n$.
+$$H^k(A; \ZZ) \cong \begin{cases} \ZZ & k = 0, \\ \ZZ\alpha \oplus \ZZ\beta & k = n, \\ 0 & \text{otherwise}, \end{cases}$$
+where $\alpha, \beta \in H^n(A; \ZZ)$ are the generator classes corresponding to the two sphere summands $S^n \times \{p\}$ and $\{p\} \times S^n$.
 :::
 
 ::: pf-step
-Because $H^{2n}(A; \mathbb{Z}) = 0$, the cup product of the two degree-$n$ classes vanishes identically:
-$$\alpha \smile \beta = 0 \in H^{2n}(A; \mathbb{Z}).$$
+Because $H^{2n}(A; \ZZ) = 0$, the cup product of the two degree-$n$ classes vanishes identically:
+$$\alpha \smile \beta = 0 \in H^{2n}(A; \ZZ).$$
 :::
 
 :::
@@ -81,13 +81,13 @@ Cohomology ring structure of the product $S^n \times S^n$:
 
 ::: pf-step
 By the Künneth formula for cohomology rings:
-$$H^*(S^n \times S^n; \mathbb{Z}) \cong H^*(S^n; \mathbb{Z}) \otimes_\mathbb{Z} H^*(S^n; \mathbb{Z}) \cong \frac{\mathbb{Z}[a, b]}{(a^2, b^2, ab - (-1)^n ba)},$$
-where $a = \pi_1^*(\iota_{S^n}) \in H^n(S^n \times S^n; \mathbb{Z})$ and $b = \pi_2^*(\iota_{S^n}) \in H^n(S^n \times S^n; \mathbb{Z})$.
+$$H^*(S^n \times S^n; \ZZ) \cong H^*(S^n; \ZZ) \otimes_\ZZ H^*(S^n; \ZZ) \cong \frac{\ZZ[a, b]}{(a^2, b^2, ab - (-1)^n ba)},$$
+where $a = \pi_1^*(\iota_{S^n}) \in H^n(S^n \times S^n; \ZZ)$ and $b = \pi_2^*(\iota_{S^n}) \in H^n(S^n \times S^n; \ZZ)$.
 :::
 
 ::: pf-step
 In degree $2n$, the cup product $a \smile b$ generates the top cohomology group:
-$$H^{2n}(S^n \times S^n; \mathbb{Z}) = \mathbb{Z}(a \smile b) \cong \mathbb{Z} \neq 0.$$
+$$H^{2n}(S^n \times S^n; \ZZ) = \ZZ(a \smile b) \cong \ZZ \neq 0.$$
 :::
 
 :::
@@ -105,7 +105,7 @@ $$i^*(a) = \alpha, \qquad i^*(b) = \beta.$$
 :::
 
 ::: pf-step
-Thus $i^*: H^n(S^n \times S^n; \mathbb{Z}) \to H^n(A; \mathbb{Z})$ is an isomorphism.
+Thus $i^*: H^n(S^n \times S^n; \ZZ) \to H^n(A; \ZZ)$ is an isomorphism.
 :::
 
 ::: pf-step
@@ -124,12 +124,12 @@ Contradiction from the ring homomorphism property:
 
 ::: pf-step
 Applying the ring homomorphism $r^*$ to the cup product $\alpha \smile \beta$:
-$$r^*(\alpha \smile \beta) = r^*(0) = 0 \in H^{2n}(S^n \times S^n; \mathbb{Z}).$$
+$$r^*(\alpha \smile \beta) = r^*(0) = 0 \in H^{2n}(S^n \times S^n; \ZZ).$$
 :::
 
 ::: pf-step
 On the other hand, since $r^*$ preserves cup products:
-$$r^*(\alpha \smile \beta) = r^*(\alpha) \smile r^*(\beta) = a \smile b \neq 0 \in H^{2n}(S^n \times S^n; \mathbb{Z}).$$
+$$r^*(\alpha \smile \beta) = r^*(\alpha) \smile r^*(\beta) = a \smile b \neq 0 \in H^{2n}(S^n \times S^n; \ZZ).$$
 :::
 
 ::: pf-step

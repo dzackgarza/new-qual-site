@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Are there infinite compact subsets of $\mathbb Q$?
+Are there infinite compact subsets of $\QQ$?
 Prove your assertion.
 :::
 
@@ -36,12 +36,12 @@ K=
 \right\}
 \cup
 \left\{
-\frac1n:n\in\mathbb N
+\frac1n:n\in\NN
 \right\}.
 \]
 Then
 \[
-K\subseteq\mathbb Q
+K\subseteq\QQ
 \]
 and $K$ is infinite.
 
@@ -81,14 +81,14 @@ Every point of $K$ lies in the interval
 
 ::: {.pf-step #s1-3}
 
-The set $K$ is closed in $\mathbb R$.
+The set $K$ is closed in $\RR$.
 
 
 ::: pf-proof
 
 Let
 \[
-x\in\mathbb R\setminus K.
+x\in\RR\setminus K.
 \]
 If
 \[
@@ -158,7 +158,7 @@ gives an open interval
 that misses every point of $K$.
 Thus
 \[
-\mathbb R\setminus K
+\RR\setminus K
 \]
 is open, so $K$ is closed.
 
@@ -168,7 +168,7 @@ is open, so $K$ is closed.
 
 ::: {.pf-step #s1-4}
 
-The set $K$ is compact in $\mathbb R$.
+The set $K$ is compact in $\RR$.
 
 
 ::: pf-proof
@@ -182,12 +182,12 @@ The Heine--Borel theorem therefore implies that $K$ is compact.
 
 ::: {.pf-step #s1-5}
 
-Therefore there exist infinite compact subsets of $\mathbb Q$.
+Therefore there exist infinite compact subsets of $\QQ$.
 
 
 ::: pf-proof
 
-The set $K$ from step [](#s1-1){.pf-ref} is an infinite subset of $\mathbb Q$, and step [](#s1-4){.pf-ref} proves that it is compact.
+The set $K$ from step [](#s1-1){.pf-ref} is an infinite subset of $\QQ$, and step [](#s1-4){.pf-ref} proves that it is compact.
 Hence
 \[
 \boxed{
@@ -196,7 +196,7 @@ Hence
 \right\}
 \cup
 \left\{
-\frac1n:n\in\mathbb N
+\frac1n:n\in\NN
 \right\}
 }
 \]

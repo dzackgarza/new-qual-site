@@ -29,7 +29,7 @@ q\frac{x}{\|x\|^3}
 $$
 on
 $$
-\mathbb R^3\setminus\{0\}.
+\RR^3\setminus\{0\}.
 $$
 
 ::: pf

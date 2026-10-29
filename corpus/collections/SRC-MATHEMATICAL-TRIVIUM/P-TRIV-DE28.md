@@ -110,7 +110,7 @@ Insert the coefficients from step [](#s1-2){.pf-ref} into the power series. The 
 
 ::: {.pf-step #s1-4}
 
-If $a=N\in\mathbb N_0$, the series terminates at degree $N$ and is proportional to the Laguerre polynomial
+If $a=N\in\NN_0$, the series terminates at degree $N$ and is proportional to the Laguerre polynomial
 \[
 L_N(x)=\sum_{n=0}^{N}(-1)^n\binom{N}{n}\frac{x^n}{n!}.
 \]

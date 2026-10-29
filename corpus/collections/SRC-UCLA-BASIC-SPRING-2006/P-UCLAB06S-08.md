@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-08
 kind: problem
-title: Orthogonal maps of $\mathbb R^{2n+1}$ have an eigenvalue $\pm1$
+title: Orthogonal maps of $\RR^{2n+1}$ have an eigenvalue $\pm1$
 classification:
   areas: [prelim]
   topics: []
@@ -36,7 +36,7 @@ has a real root.
 
 The matrix $T$ has size $(2n+1)\times(2n+1)$, so $\chi_T$ is a real polynomial of odd degree $2n+1$ with leading coefficient $1$.
 Hence $\chi_T(\lambda)\to+\infty$ as $\lambda\to+\infty$ and $\chi_T(\lambda)\to-\infty$ as $\lambda\to-\infty$.
-By the intermediate value theorem, there exists $\lambda_0\in\mathbb R$ such that
+By the intermediate value theorem, there exists $\lambda_0\in\RR$ such that
 \[
 \chi_T(\lambda_0)=0.
 \]
@@ -80,7 +80,7 @@ The orthogonality relation implies
 \[
 \|Tx\|_2=\|x\|_2
 \]
-for every $x\in\mathbb R^{2n+1}$.
+for every $x\in\RR^{2n+1}$.
 
 
 ::: pf-proof
@@ -161,7 +161,7 @@ The only real numbers with absolute value $1$ are $1$ and $-1$.
 
 Therefore there exists a nonzero vector
 \[
-v\in\mathbb R^{2n+1}
+v\in\RR^{2n+1}
 \]
 such that
 \[

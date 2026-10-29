@@ -145,13 +145,13 @@ Then $Z_\varepsilon$ is countable.
 
 At most one point was chosen for each
 \[
-j\in\mathbb N.
+j\in\NN.
 \]
 Thus
 \[
 Z_\varepsilon
 \]
-is the image of a subset of $\mathbb N$ and is countable.
+is the image of a subset of $\NN$ and is countable.
 
 :::
 

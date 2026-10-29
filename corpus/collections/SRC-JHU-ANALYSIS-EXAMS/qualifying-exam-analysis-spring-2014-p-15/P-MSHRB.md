@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine whether there is a nonzero smooth compactly supported function on $\mathbb{R}$ whose Fourier transform is also compactly supported?
+Determine whether there is a nonzero smooth compactly supported function on $\RR$ whose Fourier transform is also compactly supported?
 :::
 
 ::: {.solution}

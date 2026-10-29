@@ -39,7 +39,7 @@ F=\langle a,b\rangle
 be the free group on two generators.
 Its commutator subgroup is the kernel of the abelianization map
 \[
-F\longrightarrow\mathbb Z^2,
+F\longrightarrow\ZZ^2,
 \qquad
 a\longmapsto(1,0),
 \quad
@@ -52,7 +52,7 @@ b\longmapsto(0,1).
 
 The covering graph corresponding to $F'$ is the square lattice with vertex set
 \[
-\mathbb Z^2,
+\ZZ^2,
 \]
 horizontal $a$-edges
 \[
@@ -68,7 +68,7 @@ and vertical $b$-edges
 The cover corresponding to a normal subgroup $H\triangleleft F$ is the Cayley graph of the quotient $F/H$ with respect to the images of the free generators.
 Here
 \[
-F/F'\cong\mathbb Z^2,
+F/F'\cong\ZZ^2,
 \]
 so the Cayley graph is exactly the square lattice.
 
@@ -100,7 +100,7 @@ e_{m,n}:(m,n)\to(m,n+1)
 with
 \[
 m\ne0,
-\qquad n\in\mathbb Z.
+\qquad n\in\ZZ.
 \]
 
 ::: pf-proof
@@ -135,7 +135,7 @@ Concatenating gives the displayed word.
 Therefore
 \[
 \boxed{
-F'=F\bigl(\gamma_{m,n}:m\in\mathbb Z\setminus\{0\},\ n\in\mathbb Z\bigr)
+F'=F\bigl(\gamma_{m,n}:m\in\ZZ\setminus\{0\},\ n\in\ZZ\bigr)
 }
 \]
 freely, where

@@ -33,7 +33,7 @@ products in step [](#s1){.pf-ref}, the four groups in step [](#s3){.pf-ref}, and
 in step [](#s4){.pf-ref}. In particular, restricting to abelian groups would not
 answer the question.
 
-Write $C_m=\mathbb Z/m\mathbb Z$, and use $D_{2m}$ for the dihedral
+Write $C_m=\ZZ/m\ZZ$, and use $D_{2m}$ for the dihedral
 group of order $2m$. For an action $\phi:H\to\operatorname{Aut}(N)$,
 $N\rtimes_\phi H$ has multiplication
 $(n,h)(n',h')=(n\phi(h)(n'),hh')$, with additive notation when $N$
@@ -91,7 +91,7 @@ to the quotient; sufficiency follows by applying these two
 automorphisms to the two coordinates of the semidirect product.
 Different kernel types or quotient types cannot be isomorphic.
 
-For $N=C_9$, its automorphism group is $(\mathbb Z/9\mathbb Z)^\times$,
+For $N=C_9$, its automorphism group is $(\ZZ/9\ZZ)^\times$,
 of order $6$, whose only elements of $2$-power order are $+$ and $-$.
 Thus every action takes values in this two-element subgroup.
 For $C_8$ there are two homomorphisms. For $C_4\times C_2$, its

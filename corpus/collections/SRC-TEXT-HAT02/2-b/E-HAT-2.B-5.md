@@ -37,7 +37,7 @@ Homology of the sphere complement $S^n \setminus S$:
 By Alexander Duality (or the Mayer–Vietoris sphere-complement induction in Hatcher §2.B):
 For any embedded sphere $S \cong S^k \subset S^n$ ($0 \le k < n$), the reduced homology of the complement is:
 \[
-\widetilde{H}_i(S^n \setminus S) \cong \begin{cases} \mathbb{Z} & \text{if } i = n - k - 1, \\ 0 & \text{otherwise.} \end{cases}
+\widetilde{H}_i(S^n \setminus S) \cong \begin{cases} \ZZ & \text{if } i = n - k - 1, \\ 0 & \text{otherwise.} \end{cases}
 \]
 Thus the homology of $S^n \setminus S$ matches the homology of the sphere $S^{n-k-1}$ in all dimensions.
 

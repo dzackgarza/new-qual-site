@@ -16,8 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:(a,b)\to\mathbb R$ be continuous and differentiable on $(a,b)\setminus\{c\}$.
-If $\lim_{x\to c}f'(x)=d\in\mathbb R$, show that $f$ is differentiable at $c$ and $f'(c)=d$.
+Let $f:(a,b)\to\RR$ be continuous and differentiable on $(a,b)\setminus\{c\}$.
+If $\lim_{x\to c}f'(x)=d\in\RR$, show that $f$ is differentiable at $c$ and $f'(c)=d$.
 :::
 
 ::: {.solution}

@@ -33,7 +33,7 @@ Suppose
 \[
 g_n\to g
 \]
-uniformly on compact subsets of $\mathbb C$, where $g$ is not identically zero.
+uniformly on compact subsets of $\CC$, where $g$ is not identically zero.
 Prove that every zero of $g$ is real.
 :::
 

@@ -51,7 +51,7 @@ For each positive integer $n$, there is an irreducible polynomial of degree $n$ 
 
 ::: pf-proof
 
-for $F = \mathbb{Q}$, $x^n - 2$ is irreducible (Eisenstein at $2$); for $F = \mathbb{F}_p$, there is an irreducible polynomial of every degree $n$ (the field $\mathbb{F}_{p^n}$ exists, and its generator over $\mathbb{F}_p$ has degree $n$).
+for $F = \QQ$, $x^n - 2$ is irreducible (Eisenstein at $2$); for $F = \mathbb{F}_p$, there is an irreducible polynomial of every degree $n$ (the field $\mathbb{F}_{p^n}$ exists, and its generator over $\mathbb{F}_p$ has degree $n$).
 
 :::
 

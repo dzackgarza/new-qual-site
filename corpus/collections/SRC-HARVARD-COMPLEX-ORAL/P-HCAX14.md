@@ -17,7 +17,7 @@ Find all poles and residues of $1/\sin z$.
 :::
 
 ::: {.solution}
-The zeros of $\sin z$ are exactly the points $z=n\pi$, $n\in\mathbb Z$. Since
+The zeros of $\sin z$ are exactly the points $z=n\pi$, $n\in\ZZ$. Since
 \[
 (\sin z)'\big|_{z=n\pi}=\cos(n\pi)=(-1)^n\ne0,
 \]
@@ -29,5 +29,5 @@ For a quotient $1/g(z)$ at a simple zero $a$ of $g$, the residue is $1/g'(a)$. H
 =\frac1{\cos(n\pi)}
 =(-1)^n.
 \]
-Thus the poles are precisely $n\pi$ for $n\in\mathbb Z$, and the residue at $n\pi$ is $(-1)^n$.
+Thus the poles are precisely $n\pi$ for $n\in\ZZ$, and the residue at $n\pi$ is $(-1)^n$.
 :::

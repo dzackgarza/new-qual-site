@@ -25,14 +25,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ be the splitting field over $\mathbb{Q}$ of an irreducible polynomial $f(x) \in \mathbb{Q}[x]$ of degree 3. Suppose that $f$ has exactly one real root.
-Prove that $\operatorname{Gal}(K/\mathbb{Q})$ is isomorphic to the symmetric group $S_3$.
+Let $K$ be the splitting field over $\QQ$ of an irreducible polynomial $f(x) \in \QQ[x]$ of degree 3. Suppose that $f$ has exactly one real root.
+Prove that $\operatorname{Gal}(K/\QQ)$ is isomorphic to the symmetric group $S_3$.
 :::
 
 ::: {.solution}
 Let
 \[
-G=\operatorname{Gal}(K/\mathbb Q).
+G=\operatorname{Gal}(K/\QQ).
 \]
 
 ::: pf
@@ -43,13 +43,13 @@ The group $G$ acts transitively on the three roots of $f$.
 
 ::: pf-proof
 
-Because $f$ is irreducible over $\mathbb Q$ and $K$ is its splitting field, any two roots of $f$ are conjugate over $\mathbb Q$.
-Equivalently, for any two roots $\alpha$ and $\beta$, there is a $\mathbb Q$-embedding
+Because $f$ is irreducible over $\QQ$ and $K$ is its splitting field, any two roots of $f$ are conjugate over $\QQ$.
+Equivalently, for any two roots $\alpha$ and $\beta$, there is a $\QQ$-embedding
 \[
-\mathbb Q(\alpha)\hookrightarrow K
+\QQ(\alpha)\hookrightarrow K
 \]
 sending $\alpha$ to $\beta$.
-Since $K/\mathbb Q$ is normal, this embedding extends to an automorphism of $K$.
+Since $K/\QQ$ is normal, this embedding extends to an automorphism of $K$.
 Thus $G$ acts transitively on the roots.
 
 :::
@@ -82,7 +82,7 @@ Complex conjugation restricts to an element of $G$ acting as a transposition on 
 
 The coefficients of $f$ are rational, hence real.
 Therefore complex conjugation preserves the set of roots and preserves the splitting field $K$.
-It fixes $\mathbb Q$, so its restriction to $K$ lies in $G$.
+It fixes $\QQ$, so its restriction to $K$ lies in $G$.
 
 By hypothesis, $f$ has exactly one real root.
 The other two roots are nonreal and, because the coefficients are real, are complex conjugates of one another.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-3
 kind: problem
-title: $\operatorname{Ext}^n_{\mathbb Z_4}(\mathbb Z_2,\mathbb Z_2)$ is nonzero for all $n$
+title: $\operatorname{Ext}^n_{\ZZ_4}(\ZZ_2,\ZZ_2)$ is nonzero for all $n$
 classification:
   areas:
   - topology
@@ -25,16 +25,16 @@ audit:
 ---
 
 ::: {.problem}
-Regarding $\mathbb{Z}_2$ as a module over the ring $\mathbb{Z}_4$, construct a resolution of $\mathbb{Z}_2$ by free modules over $\mathbb{Z}_4$ and use this to show that $\operatorname{Ext}_{\mathbb{Z}_4}^n(\mathbb{Z}_2, \mathbb{Z}_2)$ is nonzero for all $n$.
+Regarding $\ZZ_2$ as a module over the ring $\ZZ_4$, construct a resolution of $\ZZ_2$ by free modules over $\ZZ_4$ and use this to show that $\operatorname{Ext}_{\ZZ_4}^n(\ZZ_2, \ZZ_2)$ is nonzero for all $n$.
 :::
 
 ::: {.solution}
-Regard $\mathbb Z_2$ as the quotient $\mathbb Z_4/(2)$. Consider the periodic free resolution
+Regard $\ZZ_2$ as the quotient $\ZZ_4/(2)$. Consider the periodic free resolution
 \[
-\cdots\xrightarrow{\,2\,}\mathbb Z_4
-\xrightarrow{\,2\,}\mathbb Z_4
-\xrightarrow{\,2\,}\mathbb Z_4
-\longrightarrow\mathbb Z_2\longrightarrow0.
+\cdots\xrightarrow{\,2\,}\ZZ_4
+\xrightarrow{\,2\,}\ZZ_4
+\xrightarrow{\,2\,}\ZZ_4
+\longrightarrow\ZZ_2\longrightarrow0.
 \]
 
 ::: pf
@@ -45,11 +45,11 @@ This sequence is exact.
 
 ::: pf-proof
 
-For multiplication by $2$ on $\mathbb Z_4$,
+For multiplication by $2$ on $\ZZ_4$,
 \[
 \ker(\times2)=\{0,2\}=\operatorname{im}(\times2).
 \]
-At the right end, the quotient map $\mathbb Z_4\to\mathbb Z_2$ has kernel $\{0,2\}$, again the image of multiplication by $2$. Every term before $\mathbb Z_2$ is free over $\mathbb Z_4$, so this is a free resolution.
+At the right end, the quotient map $\ZZ_4\to\ZZ_2$ has kernel $\{0,2\}$, again the image of multiplication by $2$. Every term before $\ZZ_2$ is free over $\ZZ_4$, so this is a free resolution.
 
 :::
 
@@ -57,23 +57,23 @@ At the right end, the quotient map $\mathbb Z_4\to\mathbb Z_2$ has kernel $\{0,2
 
 ::: {.pf-step #s2}
 
-Applying $\operatorname{Hom}_{\mathbb Z_4}(-,\mathbb Z_2)$ gives the cochain complex
+Applying $\operatorname{Hom}_{\ZZ_4}(-,\ZZ_2)$ gives the cochain complex
 \[
-0\longrightarrow\mathbb Z_2\xrightarrow{0}\mathbb Z_2
-\xrightarrow{0}\mathbb Z_2\xrightarrow{0}\cdots .
+0\longrightarrow\ZZ_2\xrightarrow{0}\ZZ_2
+\xrightarrow{0}\ZZ_2\xrightarrow{0}\cdots .
 \]
 
 ::: pf-proof
 
 For every degree,
 \[
-\operatorname{Hom}_{\mathbb Z_4}(\mathbb Z_4,\mathbb Z_2)\cong\mathbb Z_2
+\operatorname{Hom}_{\ZZ_4}(\ZZ_4,\ZZ_2)\cong\ZZ_2
 \]
-by evaluation at $1$. The coboundary is precomposition with multiplication by $2$. If $\varphi:\mathbb Z_4\to\mathbb Z_2$ is $\mathbb Z_4$-linear, then
+by evaluation at $1$. The coboundary is precomposition with multiplication by $2$. If $\varphi:\ZZ_4\to\ZZ_2$ is $\ZZ_4$-linear, then
 \[
 (\varphi\circ\times2)(1)=\varphi(2)=2\varphi(1)=0
 \]
-in the $\mathbb Z_4$-module $\mathbb Z_2$. Hence every coboundary is zero.
+in the $\ZZ_4$-module $\ZZ_2$. Hence every coboundary is zero.
 
 :::
 
@@ -83,13 +83,13 @@ in the $\mathbb Z_4$-module $\mathbb Z_2$. Hence every coboundary is zero.
 
 Therefore
 \[
-\boxed{\operatorname{Ext}_{\mathbb Z_4}^{\,n}(\mathbb Z_2,\mathbb Z_2)\cong\mathbb Z_2}
+\boxed{\operatorname{Ext}_{\ZZ_4}^{\,n}(\ZZ_2,\ZZ_2)\cong\ZZ_2}
 \]
 for every $n\ge0$.
 
 ::: pf-proof
 
-The cohomology of the zero-differential cochain complex in step [](#s2){.pf-ref} is one copy of $\mathbb Z_2$ in each degree.
+The cohomology of the zero-differential cochain complex in step [](#s2){.pf-ref} is one copy of $\ZZ_2$ in each degree.
 
 :::
 

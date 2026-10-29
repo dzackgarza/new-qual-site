@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be absolutely continuous.
+Let $f:[0,1]\to\RR$ be absolutely continuous.
 Prove directly from the definitions that $f$ has bounded variation.
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-04
 kind: problem
-title: Every infinite closed subset of $\mathbb R^n$ is the closure of a countable set
+title: Every infinite closed subset of $\RR^n$ is the closure of a countable set
 classification:
   areas:
   - prelim
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that every infinite closed subset of $\mathbb R^n$ is the closure of a countable set.
+Show that every infinite closed subset of $\RR^n$ is the closure of a countable set.
 :::
 
 ::: {.solution}

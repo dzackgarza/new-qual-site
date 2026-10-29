@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-For each of the following $f: S^1 \rightarrow S^1$, identify the corresponding $f_*: \mathbb{Z} \to \mathbb{Z}$:
+For each of the following $f: S^1 \rightarrow S^1$, identify the corresponding $f_*: \ZZ \to \ZZ$:
 
 1. $z\mapsto z^n$
 
@@ -31,12 +31,12 @@ For each of the following $f: S^1 \rightarrow S^1$, identify the corresponding $
 
 For $f(z)=z^n$, the induced map is
 $$
-\boxed{f_*:\mathbb Z\to\mathbb Z,\qquad k\mapsto nk.}
+\boxed{f_*:\ZZ\to\ZZ,\qquad k\mapsto nk.}
 $$
 
 ::: pf-proof
 
-The map $z\mapsto z^n$ has degree $n$. Under the standard identification $\pi_1(S^1)\cong\mathbb Z$, a degree-$n$ map sends the generator to $n$ times the generator.
+The map $z\mapsto z^n$ has degree $n$. Under the standard identification $\pi_1(S^1)\cong\ZZ$, a degree-$n$ map sends the generator to $n$ times the generator.
 
 :::
 
@@ -70,7 +70,7 @@ $$
 
 ::: pf-proof
 
-The map has a global real-valued lift through the universal covering $\mathbb R\to S^1$, namely
+The map has a global real-valued lift through the universal covering $\RR\to S^1$, namely
 $$
 \widetilde f(e^{i\theta})=2\pi\sin\theta.
 $$

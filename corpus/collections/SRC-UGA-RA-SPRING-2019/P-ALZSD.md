@@ -28,7 +28,7 @@ audit:
 
 
 ::: {.problem}
-Let $\mathcal B$ be the Borel sigma-algebra on $\mathbb R$, and let $\mu$ be a finite Borel measure.
+Let $\mathcal B$ be the Borel sigma-algebra on $\RR$, and let $\mu$ be a finite Borel measure.
 
 1. If $F_1\supseteq F_2\supseteq\cdots$ are Borel sets, prove
 \[

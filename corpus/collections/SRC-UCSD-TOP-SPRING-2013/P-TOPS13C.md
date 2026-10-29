@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Let $X \subset \mathbb{R}^3$ be the union of a $2$-dimensional sphere and two disjoint chords intersecting the sphere only at their endpoints.
+(a) Let $X \subset \RR^3$ be the union of a $2$-dimensional sphere and two disjoint chords intersecting the sphere only at their endpoints.
 Compute the fundamental group of $X$ by finding a more standard space $Y$ which is homotopy equivalent to $X$.
 Give a short explanation for why $X$ and $Y$ are homotopy equivalent.
 

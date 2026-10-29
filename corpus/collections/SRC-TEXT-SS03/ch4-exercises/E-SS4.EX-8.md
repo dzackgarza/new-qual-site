@@ -77,7 +77,7 @@ After enlarging a constant $C_\varepsilon$ to absorb the finitely many indices $
 \[
 |a_n|\le C_\varepsilon\frac{R^n}{n!}.
 \]
-Thus the power series converges absolutely for every $z\in\mathbb C$ and
+Thus the power series converges absolutely for every $z\in\CC$ and
 \[
 |f(z)|
 \le C_\varepsilon\sum_{n=0}^{\infty}\frac{(R|z|)^n}{n!}

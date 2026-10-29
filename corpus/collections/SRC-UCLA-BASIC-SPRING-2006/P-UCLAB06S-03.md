@@ -45,12 +45,12 @@ The series
 \[
 \sum_{n=1}^\infty f_n(x)
 \]
-converges uniformly on $\mathbb R$.
+converges uniformly on $\RR$.
 
 
 ::: pf-proof
 
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 |f_n(x)|
 \le
@@ -61,7 +61,7 @@ The scalar $p$-series
 \sum_{n=1}^\infty \frac1{n^{5/2}}
 \]
 converges.
-By the Weierstrass $M$-test, the series of functions converges uniformly on $\mathbb R$.
+By the Weierstrass $M$-test, the series of functions converges uniformly on $\RR$.
 In particular, it converges for every real $x$.
 
 :::
@@ -74,7 +74,7 @@ The limit function
 \[
 f
 \]
-is continuous on $\mathbb R$.
+is continuous on $\RR$.
 
 
 ::: pf-proof
@@ -132,7 +132,7 @@ The derivative series
 \sum_{n=1}^\infty
 \frac{\cos(nx)}{n^{3/2}}
 \]
-converges uniformly on $\mathbb R$.
+converges uniformly on $\RR$.
 
 
 ::: pf-proof
@@ -184,7 +184,7 @@ converges at one point $x_0$, then
 \]
 converges to a differentiable function whose derivative is the sum of the derivative series.
 
-Here step [](#s1-4){.pf-ref} gives uniform convergence of the derivative series on every interval, indeed on all of $\mathbb R$.
+Here step [](#s1-4){.pf-ref} gives uniform convergence of the derivative series on every interval, indeed on all of $\RR$.
 Also at
 \[
 x_0=0,
@@ -206,7 +206,7 @@ Therefore the theorem applies.
 
 ::: {.pf-step #s1-6}
 
-The derivative $f'$ is continuous on $\mathbb R$.
+The derivative $f'$ is continuous on $\RR$.
 
 
 ::: pf-proof
@@ -232,7 +232,7 @@ is continuous.
 
 Hence
 \[
-\boxed{f\in C^1(\mathbb R)}.
+\boxed{f\in C^1(\RR)}.
 \]
 
 

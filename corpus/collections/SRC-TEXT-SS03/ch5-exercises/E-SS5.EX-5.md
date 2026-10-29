@@ -47,7 +47,7 @@ Holomorphicity of $F_\alpha(z)$:
 
 ::: pf-step
 
-For any $z = x + iy \in \mathbb{C}$ and $t \in \mathbb{R}$:
+For any $z = x + iy \in \CC$ and $t \in \RR$:
 \[
 \left| e^{-|t|^\alpha} e^{2\pi i z t} \right| = e^{-|t|^\alpha} e^{-2\pi y t} \le e^{-|t|^\alpha + 2\pi |z| |t|}.
 \]
@@ -62,7 +62,7 @@ $|e^{2\pi i (x+iy)t}| = e^{-2\pi y t} \le e^{2\pi |z| |t|}$.
 
 ::: pf-step
 
-Since $\alpha > 1$, as $|t| \to \infty$ the term $-|t|^\alpha$ dominates $2\pi |z| |t|$, ensuring that for any compact subset $K \subset \mathbb{C}$, the integrand and its $z$-derivative $2\pi i t e^{-|t|^\alpha} e^{2\pi i z t}$ are uniformly dominated by an $L^1(\mathbb{R})$ function.
+Since $\alpha > 1$, as $|t| \to \infty$ the term $-|t|^\alpha$ dominates $2\pi |z| |t|$, ensuring that for any compact subset $K \subset \CC$, the integrand and its $z$-derivative $2\pi i t e^{-|t|^\alpha} e^{2\pi i z t}$ are uniformly dominated by an $L^1(\RR)$ function.
 By Morera’s Theorem and Fubini’s Theorem, $F_\alpha(z)$ is an entire function.
 
 ::: pf-proof
@@ -103,7 +103,7 @@ Young's inequality for conjugate exponents.
 ::: pf-step
 
 Rearranging gives $-|t|^\alpha + 2\pi |z| |t| \le -\frac{|t|^\alpha}{2} + c |z|^\beta$.
-Integrating over $\mathbb{R}$:
+Integrating over $\RR$:
 \[
 |F_\alpha(z)| \le \int_{-\infty}^\infty e^{-|t|^\alpha + 2\pi |z| |t|} \, dt \le e^{c |z|^\beta} \int_{-\infty}^\infty e^{-|t|^\alpha / 2} \, dt = C_0 e^{c |z|^\beta},
 \]

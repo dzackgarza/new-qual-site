@@ -16,14 +16,14 @@ review: draft
 ::: {.problem}
 Let $X$ be a space whose homology is given by
 \[
-H_k(X; \mathbb{Z}) =
+H_k(X; \ZZ) =
 \begin{cases}
-\mathbb{Z}_4 & \text{if } k = 2, \\
-\mathbb{Z} & \text{if } k = 0, \\
+\ZZ_4 & \text{if } k = 2, \\
+\ZZ & \text{if } k = 0, \\
 0 & \text{otherwise.}
 \end{cases}
 \]
-Compute $H_*(\mathbb{RP}^2 \times X; \mathbb{Z})$ and $H_*(\mathbb{RP}^2 \times X; \mathbb{Z}_2)$.
+Compute $H_*(\mathbb{RP}^2 \times X; \ZZ)$ and $H_*(\mathbb{RP}^2 \times X; \ZZ_2)$.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Compute $H_*(\mathbb{RP}^2 \times X; \mathbb{Z})$ and $H_*(\mathbb{RP}^2 \times 
 ::: pf-step
 
 Integrally,
-$$H_*(\mathbb{RP}^2;\mathbb Z):\quad H_0=\mathbb Z,\ H_1=\mathbb Z/2,$$
+$$H_*(\mathbb{RP}^2;\ZZ):\quad H_0=\ZZ,\ H_1=\ZZ/2,$$
 with all higher groups zero.
 
 ::: pf-proof
@@ -47,20 +47,20 @@ This is the standard cellular homology calculation for $\mathbb{RP}^2$.
 ::: pf-step
 
 The integral Künneth theorem gives
-$$\boxed{H_k(\mathbb{RP}^2\times X;\mathbb Z)\cong
+$$\boxed{H_k(\mathbb{RP}^2\times X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/2,&k=1,3,4,\\
-\mathbb Z/4,&k=2,\\
+\ZZ,&k=0,\\
+\ZZ/2,&k=1,3,4,\\
+\ZZ/4,&k=2,\\
 0,&\text{otherwise.}
 \end{cases}}$$
 
 ::: pf-proof
 
-The tensor terms give $\mathbb Z$ in degree $0$, $\mathbb Z/2$ in degree $1$, $\mathbb Z/4$ in degree $2$, and
-$$(\mathbb Z/2)\otimes(\mathbb Z/4)\cong\mathbb Z/2$$
+The tensor terms give $\ZZ$ in degree $0$, $\ZZ/2$ in degree $1$, $\ZZ/4$ in degree $2$, and
+$$(\ZZ/2)\otimes(\ZZ/4)\cong\ZZ/2$$
 in degree $3$. The only nonzero Tor term is
-$$\operatorname{Tor}(\mathbb Z/2,\mathbb Z/4)\cong\mathbb Z/2,$$
+$$\operatorname{Tor}(\ZZ/2,\ZZ/4)\cong\ZZ/2,$$
 appearing one degree higher, in degree $4$. The Künneth short exact sequences split (noncanonically).
 
 :::
@@ -79,8 +79,8 @@ $$H_i(X;\mathbb F_2)\cong
 ::: pf-proof
 
 The homology UCT gives
-$$0\to H_i(X;\mathbb Z)\otimes\mathbb F_2\to H_i(X;\mathbb F_2)\to \operatorname{Tor}(H_{i-1}(X;\mathbb Z),\mathbb F_2)\to0.$$
-The $\mathbb Z/4$ in degree $2$ contributes one $\mathbb F_2$ in degree $2$ by tensor and one in degree $3$ by Tor.
+$$0\to H_i(X;\ZZ)\otimes\mathbb F_2\to H_i(X;\mathbb F_2)\to \operatorname{Tor}(H_{i-1}(X;\ZZ),\mathbb F_2)\to0.$$
+The $\ZZ/4$ in degree $2$ contributes one $\mathbb F_2$ in degree $2$ by tensor and one in degree $3$ by Tor.
 
 :::
 

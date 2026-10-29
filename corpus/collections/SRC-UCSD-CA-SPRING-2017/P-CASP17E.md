@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathcal{F}$ be the family of holomorphic functions $f : \mathbb{D} \to \mathbb{C}$ defined over the open unit disc with $f(0) = 1$ and $\operatorname{Re} f > 0$.
+Let $\mathcal{F}$ be the family of holomorphic functions $f : \mathbb{D} \to \CC$ defined over the open unit disc with $f(0) = 1$ and $\operatorname{Re} f > 0$.
 Show that $\mathcal{F}$ is a normal family.
 :::
 

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega = \{(x,y) \in \mathbb{R}^2 ; x > 0, y > 0\}$ and let $u$ be subharmonic in $\Omega$, continuous in $\overline{\Omega}$, such that
+Let $\Omega = \{(x,y) \in \RR^2 ; x > 0, y > 0\}$ and let $u$ be subharmonic in $\Omega$, continuous in $\overline{\Omega}$, such that
 \[
 u(x,y) \leq |x + iy|,
 \]

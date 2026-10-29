@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Give an example of a closed set $A\subset\mathbb R^2$ of positive Lebesgue measure containing no nonempty open set.
+(a) Give an example of a closed set $A\subset\RR^2$ of positive Lebesgue measure containing no nonempty open set.
 
-(b) If $A$ is such a set and $f:\mathbb R^2\to\mathbb R$ satisfies $f=\chi_A$ almost everywhere, prove that there is a set $B$ of positive measure such that $f$ is discontinuous at every point of $B$.
+(b) If $A$ is such a set and $f:\RR^2\to\RR$ satisfies $f=\chi_A$ almost everywhere, prove that there is a set $B$ of positive measure such that $f$ is discontinuous at every point of $B$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ contains no nonempty open set.
 
 ::: pf-proof
 
-Since both factors are closed, $A$ is closed in $\mathbb R^2$. By the product
+Since both factors are closed, $A$ is closed in $\RR^2$. By the product
 measure formula,
 \[
 m_2(A)=m_1(C)\,m_1([0,1])=m_1(C)>0.
@@ -56,7 +56,7 @@ $C$ has empty interior. Hence $A$ contains no nonempty open set.
 
 Let
 \[
-N=\{x\in\mathbb R^2:f(x)\ne\chi_A(x)\}.
+N=\{x\in\RR^2:f(x)\ne\chi_A(x)\}.
 \]
 Then $m_2(N)=0$, and
 \[
@@ -111,17 +111,17 @@ such that $f(y)=0$.
 ::: pf-proof
 
 Fix $x\in B\subseteq A$. By step [](#s1-3){.pf-ref}, every ball $B_r(x)$ meets
-$\mathbb R^2\setminus A$. Since $A$ is closed, $\mathbb R^2\setminus A$ is
+$\RR^2\setminus A$. Since $A$ is closed, $\RR^2\setminus A$ is
 open, so
 \[
-B_r(x)\cap(\mathbb R^2\setminus A)
+B_r(x)\cap(\RR^2\setminus A)
 \]
 is a nonempty open set and therefore has positive Lebesgue measure. The set
 $N$ is null by step [](#s1-2){.pf-ref}, so this open set cannot be contained in $N$.
 Choose
 \[
 y\in
-B_r(x)\cap(\mathbb R^2\setminus A)\setminus N.
+B_r(x)\cap(\RR^2\setminus A)\setminus N.
 \]
 Then
 \[

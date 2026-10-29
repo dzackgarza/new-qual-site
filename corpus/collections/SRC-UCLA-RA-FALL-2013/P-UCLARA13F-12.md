@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be continuous and absolutely continuous on every interval $[\varepsilon,1]$ with $0<\varepsilon\le1$.
+Let $f:[0,1]\to\RR$ be continuous and absolutely continuous on every interval $[\varepsilon,1]$ with $0<\varepsilon\le1$.
 
 (a) Show by example that $f$ need not be absolutely continuous on $[0,1]$.
 

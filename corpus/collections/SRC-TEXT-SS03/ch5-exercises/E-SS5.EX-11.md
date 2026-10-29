@@ -25,7 +25,7 @@ audit:
 :::
 
 ::: {.solution}
-Suppose the entire function $f$ has finite order and omits two distinct values $a,b\in\mathbb C$.
+Suppose the entire function $f$ has finite order and omits two distinct values $a,b\in\CC$.
 
 Since $f-a$ is an entire finite-order function with no zeros, Hadamard's factorization theorem implies
 \[

@@ -29,7 +29,7 @@ By considering the relative cohomology $H^*(S^5, N)$ and applying excision and L
 
 Excision identifies
 $$
-H^k(S^5,N;\mathbb Z)\cong H^k(X,\partial X;\mathbb Z).
+H^k(S^5,N;\ZZ)\cong H^k(X,\partial X;\ZZ).
 $$
 
 ::: pf-proof
@@ -46,14 +46,14 @@ Since $N\simeq S^3$, the long exact sequence of $(S^5,N)$ gives
 $$
 H^k(S^5,N)\cong
 \begin{cases}
-\mathbb Z,&k=4,5,\\
+\ZZ,&k=4,5,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
 
 ::: pf-proof
 
-The only nonzero cohomology groups of $N$ are $H^0(N)=H^3(N)=\mathbb Z$, while those of $S^5$ are in degrees $0,5$. The map in degree zero is an isomorphism; exactness gives the displayed relative groups.
+The only nonzero cohomology groups of $N$ are $H^0(N)=H^3(N)=\ZZ$, while those of $S^5$ are in degrees $0,5$. The map in degree zero is an isomorphism; exactness gives the displayed relative groups.
 
 :::
 
@@ -63,7 +63,7 @@ The only nonzero cohomology groups of $N$ are $H^0(N)=H^3(N)=\mathbb Z$, while t
 
 Lefschetz duality gives
 $$
-H_i(X;\mathbb Z)\cong H^{5-i}(X,\partial X;\mathbb Z).
+H_i(X;\ZZ)\cong H^{5-i}(X,\partial X;\ZZ).
 $$
 
 ::: pf-proof
@@ -78,9 +78,9 @@ The exterior $X$ is a compact orientable $5$-manifold with boundary, as a codime
 
 Therefore
 $$
-\boxed{H_i(X;\mathbb Z)\cong
+\boxed{H_i(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
+\ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}}
 $$

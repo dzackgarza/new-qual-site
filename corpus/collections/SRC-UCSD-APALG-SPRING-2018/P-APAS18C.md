@@ -14,12 +14,12 @@ review: draft
 ---
 
 ::: {.problem}
-Let $P\in\mathbb{C}^{n\times n}$ be a positive definite Hermitian matrix.
+Let $P\in\CC^{n\times n}$ be a positive definite Hermitian matrix.
 Show that
 \[
 |x^*y|^2\leq(x^*Px)(y^*P^{-1}y)
 \]
-for all $x,y\in\mathbb{C}^n$.
+for all $x,y\in\CC^n$.
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Because \(P\) is Hermitian positive definite, its positive definite square root 
 \[
 x^*y=(P^{1/2}x)^*(P^{-1/2}y).
 \]
-Applying the ordinary Cauchy--Schwarz inequality in \(\mathbb C^n\),
+Applying the ordinary Cauchy--Schwarz inequality in \(\CC^n\),
 \[
 |x^*y|^2
 \le \|P^{1/2}x\|_2^2\,\|P^{-1/2}y\|_2^2.

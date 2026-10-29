@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF21F
 kind: problem
-title: $A \otimes_{\mathbb{Z}} B$ is the coproduct in commutative unital rings
+title: $A \otimes_{\ZZ} B$ is the coproduct in commutative unital rings
 classification:
   areas:
   - algebra
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that in the category of commutative rings with unit, $A \otimes_{\mathbb{Z}} B$ is the coproduct of the rings $A$ and $B$.
+Prove that in the category of commutative rings with unit, $A \otimes_{\ZZ} B$ is the coproduct of the rings $A$ and $B$.
 :::
 
 ::: {.solution}
@@ -36,13 +36,13 @@ Prove that in the category of commutative rings with unit, $A \otimes_{\mathbb{Z
 
 There are canonical unital ring homomorphisms
 \[
-i_A:A\longrightarrow A\otimes_{\mathbb Z}B,
+i_A:A\longrightarrow A\otimes_{\ZZ}B,
 \qquad
 a\longmapsto a\otimes1,
 \]
 and
 \[
-i_B:B\longrightarrow A\otimes_{\mathbb Z}B,
+i_B:B\longrightarrow A\otimes_{\ZZ}B,
 \qquad
 b\longmapsto1\otimes b.
 \]
@@ -78,7 +78,7 @@ The rule
 \[
 \beta(a,b)=f(a)g(b)
 \]
-defines a $\mathbb Z$-balanced bilinear map
+defines a $\ZZ$-balanced bilinear map
 \[
 \beta:A\times B\longrightarrow C.
 \]
@@ -86,7 +86,7 @@ defines a $\mathbb Z$-balanced bilinear map
 ::: pf-proof
 
 Additivity in each variable follows from additivity of $f$ and $g$ and distributivity in $C$.
-For $n\in\mathbb Z$,
+For $n\in\ZZ$,
 \[
 \beta(na,b)=f(na)g(b)=n f(a)g(b)
 \]
@@ -108,7 +108,7 @@ so $\beta$ is balanced.
 
 There is a unique group homomorphism
 \[
-h:A\otimes_{\mathbb Z}B\longrightarrow C
+h:A\otimes_{\ZZ}B\longrightarrow C
 \]
 such that
 \[
@@ -143,7 +143,7 @@ h\bigl((a\otimes b)(a'\otimes b')\bigr)
 \end{aligned}
 \]
 where commutativity of $C$ is used in the fourth equality.
-Since pure tensors generate $A\otimes_{\mathbb Z}B$ additively, distributivity extends this identity to arbitrary elements.
+Since pure tensors generate $A\otimes_{\ZZ}B$ additively, distributivity extends this identity to arbitrary elements.
 Also
 \[
 h(1\otimes1)=f(1)g(1)=1,
@@ -192,7 +192,7 @@ The map $h$ is the unique unital ring homomorphism with the property in step [](
 
 Let
 \[
-k:A\otimes_{\mathbb Z}B\longrightarrow C
+k:A\otimes_{\ZZ}B\longrightarrow C
 \]
 be another unital ring homomorphism satisfying
 \[
@@ -222,7 +222,7 @@ Since pure tensors generate the tensor product additively and both maps are addi
 
 ::: pf-step
 
-Hence $A\otimes_{\mathbb Z}B$, together with $i_A$ and $i_B$, is the coproduct of $A$ and $B$ in the category of commutative unital rings.
+Hence $A\otimes_{\ZZ}B$, together with $i_A$ and $i_B$, is the coproduct of $A$ and $B$ in the category of commutative unital rings.
 
 ::: pf-proof
 

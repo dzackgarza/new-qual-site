@@ -49,7 +49,7 @@ On the circle \(|z|=r\),
 \[
 f(re^{i\theta})
 =
-\sum_{k\in\mathbb Z}
+\sum_{k\in\ZZ}
 a_k r^k e^{ik\theta}.
 \]
 
@@ -92,7 +92,7 @@ Therefore Parseval's identity gives
 \int_0^{2\pi}
 |f(re^{i\theta})|^2\,d\theta
 =
-\sum_{k\in\mathbb Z}
+\sum_{k\in\ZZ}
 |a_k|^2r^{2k}}.
 \]
 
@@ -146,7 +146,7 @@ Using step [](#s1-3){.pf-ref},
 2\pi
 \int_0^1
 \left(
-\sum_{k\in\mathbb Z}|a_k|^2r^{2k}
+\sum_{k\in\ZZ}|a_k|^2r^{2k}
 \right)
 r\,dr.
 \]
@@ -168,7 +168,7 @@ Since all summands are nonnegative, Tonelli's theorem gives
 \int_{\mathbb D^*}|f|^2\,dA
 =
 2\pi
-\sum_{k\in\mathbb Z}
+\sum_{k\in\ZZ}
 |a_k|^2
 \int_0^1
 r^{2k+1}\,dr},

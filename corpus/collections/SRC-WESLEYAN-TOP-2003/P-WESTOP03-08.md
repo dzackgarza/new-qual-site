@@ -28,7 +28,7 @@ The assertion is true under the standard meaning of simply connected: $X$ is pat
 
 Let
 \[
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi it},
 \]
@@ -45,7 +45,7 @@ The exponential map displayed above is the standard universal cover of the circl
 
 ::: pf-step
 
-Fix $x_0\in X$ and choose $t_0\in\mathbb R$ such that
+Fix $x_0\in X$ and choose $t_0\in\RR$ such that
 \[
 p(t_0)=f(x_0).
 \]
@@ -63,7 +63,7 @@ The covering map $p$ is surjective, so such a lift of the basepoint value exists
 
 The map $f$ admits a lift
 \[
-\widetilde f:X\to\mathbb R
+\widetilde f:X\to\RR
 \]
 with
 \[
@@ -75,17 +75,17 @@ p\circ\widetilde f=f.
 
 ::: pf-proof
 
-The lifting criterion for the covering $p:\mathbb R\to S^1$ says that a based map $f:(X,x_0)\to(S^1,f(x_0))$ lifts precisely when
+The lifting criterion for the covering $p:\RR\to S^1$ says that a based map $f:(X,x_0)\to(S^1,f(x_0))$ lifts precisely when
 \[
 f_*\pi_1(X,x_0)
 \subseteq
-p_*\pi_1(\mathbb R,t_0).
+p_*\pi_1(\RR,t_0).
 \]
 Since $X$ is simply connected,
 \[
 \pi_1(X,x_0)=0.
 \]
-Also $\mathbb R$ is simply connected, so the right side is zero. Thus the inclusion holds and the lift exists.
+Also $\RR$ is simply connected, so the right side is zero. Thus the inclusion holds and the lift exists.
 
 :::
 
@@ -93,7 +93,7 @@ Also $\mathbb R$ is simply connected, so the right side is zero. Thus the inclus
 
 ::: pf-step
 
-Since $\mathbb R$ is contractible, $\widetilde f$ is homotopic to the constant map with value $t_0$.
+Since $\RR$ is contractible, $\widetilde f$ is homotopic to the constant map with value $t_0$.
 
 
 ::: pf-proof

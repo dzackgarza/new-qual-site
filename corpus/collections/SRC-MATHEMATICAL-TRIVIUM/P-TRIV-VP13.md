@@ -22,7 +22,7 @@ $$
 { \hat { H } } = - { \frac { \hbar ^ { 2 } } { 2 m } } { \frac { \partial ^ { 2 } } { \partial x ^ { 2 } } } + { \frac { m \omega ^ { 2 } x ^ { 2 } } { 2 } } .\tag{19}
 $$
 
-(a) Find an extremum of $S [ \psi , \psi ^ { \dagger } ]$ in a class of $C ^ { 1 } ( \mathbb { R } )$ functions of the form $\psi ( x ) = { \sqrt { \pi \sigma ^ { 2 } } } e ^ { - { \frac { x ^ { 2 } } { 2 \sigma ^ { 2 } } } }$
+(a) Find an extremum of $S [ \psi , \psi ^ { \dagger } ]$ in a class of $C ^ { 1 } ( \RR )$ functions of the form $\psi ( x ) = { \sqrt { \pi \sigma ^ { 2 } } } e ^ { - { \frac { x ^ { 2 } } { 2 \sigma ^ { 2 } } } }$
 
 (b) Find an eigenvalue of $\hat { H }$ corresponding to this extremum.
 :::

@@ -22,7 +22,7 @@ Let
 $$
 E\coloneqq
 \left\{
-(x,y,z)\in\mathbb R^3:
+(x,y,z)\in\RR^3:
 \frac{x^2}{a^2}
 +\frac{y^2}{b^2}
 +\frac{z^2}{c^2}

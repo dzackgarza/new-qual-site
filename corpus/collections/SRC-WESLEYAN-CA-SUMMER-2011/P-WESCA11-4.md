@@ -67,7 +67,7 @@ Assume now
 \[
 AB>0,
 \]
-and fix \(z\in\mathbb C\) with
+and fix \(z\in\CC\) with
 \[
 \boxed{|z|<AB}.
 \]

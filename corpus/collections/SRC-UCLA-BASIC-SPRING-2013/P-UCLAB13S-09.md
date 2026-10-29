@@ -32,7 +32,7 @@ together with some diagonal entries equal to $1$ or $-1$.
 
 ::: {.solution}
 
-Regard the real matrix $A$ as a complex matrix acting on $\mathbb C^n$.
+Regard the real matrix $A$ as a complex matrix acting on $\CC^n$.
 
 ::: pf
 
@@ -58,7 +58,7 @@ Since $A$ is real orthogonal,
 \[
 A^*A=A^TA=I.
 \]
-Thus $A$ preserves the Hermitian norm on $\mathbb C^n$:
+Thus $A$ preserves the Hermitian norm on $\CC^n$:
 \[
 \|Az\|=\|z\|.
 \]
@@ -176,7 +176,7 @@ be an eigenvector for a nonreal eigenvalue
 \]
 Then the real plane
 \[
-P=\operatorname{span}_{\mathbb R}\{u,v\}
+P=\operatorname{span}_{\RR}\{u,v\}
 \]
 is $A$-invariant.
 
@@ -228,7 +228,7 @@ is an orthogonal transformation of the real inner-product plane $P$ with determi
 
 ::: pf-proof
 
-Since $A$ is orthogonal on $\mathbb R^n$, its restriction to any invariant real subspace preserves the inner product.
+Since $A$ is orthogonal on $\RR^n$, its restriction to any invariant real subspace preserves the inner product.
 Thus
 \[
 A|_P
@@ -296,18 +296,18 @@ The eigenvalues determine the same angle modulo sign and $2\pi$.
 
 ::: {.pf-step #s1-8}
 
-The real space $\mathbb R^n$ decomposes orthogonally into real eigenspaces for $\pm1$ and two-dimensional invariant planes associated to nonreal conjugate pairs.
+The real space $\RR^n$ decomposes orthogonally into real eigenspaces for $\pm1$ and two-dimensional invariant planes associated to nonreal conjugate pairs.
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $\mathbb C^n$ is an orthogonal direct sum of eigenspaces of $A$.
+By step [](#s1-2){.pf-ref}, $\CC^n$ is an orthogonal direct sum of eigenspaces of $A$.
 The eigenspaces for the real eigenvalues $\pm1$ are invariant under conjugation and have real orthonormal bases.
 
 For every nonreal eigenvalue $\lambda$, pair its eigenspace with the conjugate eigenspace for $\overline\lambda$.
 Taking real and imaginary parts of paired complex eigenvectors produces real two-dimensional invariant planes as in step [](#s1-5){.pf-ref}.
 Different spectral subspaces are orthogonal because $A$ is normal.
-Collecting these real pieces gives an orthogonal direct-sum decomposition of $\mathbb R^n$.
+Collecting these real pieces gives an orthogonal direct-sum decomposition of $\RR^n$.
 
 :::
 
@@ -337,7 +337,7 @@ together with $1\times1$ blocks
 Choose orthonormal bases in each summand of the decomposition from step [](#s1-8){.pf-ref}.
 On each two-dimensional plane, use the basis from step [](#s1-7){.pf-ref}.
 On the real eigenspaces, use orthonormal eigenvectors.
-The union is an orthonormal basis of $\mathbb R^n$, and the matrix of $A$ in this basis is block diagonal with exactly the stated blocks.
+The union is an orthonormal basis of $\RR^n$, and the matrix of $A$ in this basis is block diagonal with exactly the stated blocks.
 This proves part (a).
 
 :::

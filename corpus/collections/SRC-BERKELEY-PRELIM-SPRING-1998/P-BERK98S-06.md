@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G=\mathbb Q/\mathbb Z$. Show that for every positive integer $t$, the group $G$ has a unique cyclic subgroup of order $t$.
+Let $G=\QQ/\ZZ$. Show that for every positive integer $t$, the group $G$ has a unique cyclic subgroup of order $t$.
 :::
 
 ::: {.solution}

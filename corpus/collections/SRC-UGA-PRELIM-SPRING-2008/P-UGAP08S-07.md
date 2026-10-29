@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGAP08S-07
 kind: problem
-title: Continuity at the origin of two rational functions on $\mathbb R^2$
+title: Continuity at the origin of two rational functions on $\RR^2$
 classification:
   areas: [prelim]
   topics: []
@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine, with proof, which, if either, of the following functions $\mathbb R^2\to\mathbb R$ are continuous:
+Determine, with proof, which, if either, of the following functions $\RR^2\to\RR$ are continuous:
 
 (a)
 \[
@@ -234,9 +234,9 @@ $g$ is continuous at the origin.
 Hence
 \[
 \boxed{
-f\text{ is not continuous on }\mathbb R^2,
+f\text{ is not continuous on }\RR^2,
 \qquad
-g\text{ is continuous on }\mathbb R^2.
+g\text{ is continuous on }\RR^2.
 }
 \]
 

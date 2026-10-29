@@ -29,7 +29,7 @@ $$
 $$
 represents a generator of
 $$
-H_{2k}(\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z.
+H_{2k}(\mathbb{CP}^n;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -43,7 +43,7 @@ is this CW filtration, and the fundamental class of $\mathbb{CP}^k$ generates $H
 :::
 
 ::: pf-step
-Let $x\in H^2(\mathbb{CP}^n;\mathbb Z)$ be the Poincare dual of the hyperplane
+Let $x\in H^2(\mathbb{CP}^n;\ZZ)$ be the Poincare dual of the hyperplane
 $$
 \mathbb{CP}^{n-1}\subset\mathbb{CP}^n.
 $$
@@ -64,7 +64,7 @@ Choose $k$ generic complex hyperplanes. They intersect transversely, and their i
 :::
 
 ::: {.pf-step #x-k-generates-cohomology}
-Consequently $x^k$ generates $H^{2k}(\mathbb{CP}^n;\mathbb Z)$ for $0\le k\le n$.
+Consequently $x^k$ generates $H^{2k}(\mathbb{CP}^n;\ZZ)$ for $0\le k\le n$.
 
 ::: pf-proof
 By step [](#cp-k-generates-homology){.pf-ref}, $[\mathbb{CP}^{n-k}]$ is a generator of the corresponding homology group, so its Poincare dual is a generator of $H^{2k}$.
@@ -76,7 +76,7 @@ By step [](#cp-k-generates-homology){.pf-ref}, $[\mathbb{CP}^{n-k}]$ is a genera
 Since there is no cohomology above degree $2n$, we have $x^{n+1}=0$.
 
 ::: pf-proof
-The class $x^{n+1}$ would lie in $H^{2n+2}(\mathbb{CP}^n;\mathbb Z)=0$.
+The class $x^{n+1}$ would lie in $H^{2n+2}(\mathbb{CP}^n;\ZZ)=0$.
 :::
 
 :::
@@ -84,7 +84,7 @@ The class $x^{n+1}$ would lie in $H^{2n+2}(\mathbb{CP}^n;\mathbb Z)=0$.
 ::: pf-step
 Therefore
 $$
-H^*(\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z[x]/(x^{n+1}),
+H^*(\mathbb{CP}^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),
 \qquad |x|=2.
 $$
 

@@ -39,7 +39,7 @@ $$
 | g (x) | \leq c e ^ {- \pi x} \quad \text { and } \quad | g (z) | \leq c e ^ {\pi R \sin^ {2} (\theta / 2)} \leq c e ^ {\pi | z |}
 $$
 
-when $x \in \mathbb { R }$ and $z = R e ^ { i \theta }$ with $R \geq 0$ and $\theta \in \mathbb { R }$
+when $x \in \RR$ and $z = R e ^ { i \theta }$ with $R \geq 0$ and $\theta \in \RR$
 
 (b) Apply the Phragmén–Lindelöf principle to the function
 
@@ -56,9 +56,9 @@ The same result holds in the lower half-plane, so by Liouville’s theorem $e ^ 
 ::: {.solution}
 We use the Fourier-transform convention
 \[
-\widehat f(\zeta)=\int_{\mathbb R}f(x)e^{-2\pi i x\zeta}\,dx.
+\widehat f(\zeta)=\int_{\RR}f(x)e^{-2\pi i x\zeta}\,dx.
 \]
-The hypothesis $|f(x)|\le Ce^{-\pi x^2}$ implies that this integral converges for every $\zeta\in\mathbb C$, locally uniformly in $\zeta$, because for $\zeta=\xi+i\eta$,
+The hypothesis $|f(x)|\le Ce^{-\pi x^2}$ implies that this integral converges for every $\zeta\in\CC$, locally uniformly in $\zeta$, because for $\zeta=\xi+i\eta$,
 \[
 |f(x)e^{-2\pi i x\zeta}|
 \le C e^{-\pi x^2+2\pi |\eta||x|}.
@@ -66,7 +66,7 @@ The hypothesis $|f(x)|\le Ce^{-\pi x^2}$ implies that this integral converges fo
 Hence $\widehat f$ extends to an entire function. Completing the square gives the global estimate
 \[
 |\widehat f(\xi+i\eta)|
-\le C\int_{\mathbb R}e^{-\pi x^2+2\pi\eta x}\,dx
+\le C\int_{\RR}e^{-\pi x^2+2\pi\eta x}\,dx
 =C' e^{\pi\eta^2}.
 \tag{1}
 \]
@@ -134,7 +134,7 @@ For each fixed $z$ in the upper half-plane, the preceding bound may be taken wit
 \[
 |e^{\pi z}g(z)|\le C''
 \]
-in the closed upper half-plane. Applying the reflected argument in the lower half-plane gives the same bound there. Consequently the entire function $e^{\pi z}g(z)$ is bounded on $\mathbb C$, so Liouville's theorem gives
+in the closed upper half-plane. Applying the reflected argument in the lower half-plane gives the same bound there. Consequently the entire function $e^{\pi z}g(z)$ is bounded on $\CC$, so Liouville's theorem gives
 \[
 g(z)=c e^{-\pi z}.
 \]

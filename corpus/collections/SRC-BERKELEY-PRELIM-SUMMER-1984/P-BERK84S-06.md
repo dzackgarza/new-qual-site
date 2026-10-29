@@ -38,7 +38,7 @@ Fix $\rho>0$ and put
 \[
 R=\frac1\rho.
 \]
-For $w\in\mathbb C$, let
+For $w\in\CC$, let
 \[
 p_n(w)=\sum_{k=0}^n\frac{w^k}{k!}.
 \]

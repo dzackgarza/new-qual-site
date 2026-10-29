@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be the shrinking wedge of circles in Example 1.25, the subspace of $\mathbb{R}^2$ consisting of the circles of radius $1/n$ and center $(1/n, 0)$ for $n = 1, 2, \ldots$.
+Let $X$ be the shrinking wedge of circles in Example 1.25, the subspace of $\RR^2$ consisting of the circles of radius $1/n$ and center $(1/n, 0)$ for $n = 1, 2, \ldots$.
 
 (a) If $f_n: I \to X$ is the loop based at the origin winding once around the $n$th circle, show that the infinite product of commutators $[f_1, f_2][f_3, f_4] \cdots$ defines a loop in $X$ that is nontrivial in $H_1(X)$.
 
@@ -51,13 +51,13 @@ be the retraction that is the identity on the first $N$ circles and collapses al
 
 ::: pf-step
 
-The class of $\gamma$ is nonzero in $H_1(X;\mathbb Z)$.
+The class of $\gamma$ is nonzero in $H_1(X;\ZZ)$.
 
 ::: pf-proof
 
-Suppose instead that $[\gamma]=0$ in $H_1(X;\mathbb Z)$. By the Hurewicz theorem in degree $1$,
+Suppose instead that $[\gamma]=0$ in $H_1(X;\ZZ)$. By the Hurewicz theorem in degree $1$,
 \[
-H_1(X;\mathbb Z)\cong \pi_1(X)_{\mathrm{ab}},
+H_1(X;\ZZ)\cong \pi_1(X)_{\mathrm{ab}},
 \]
 so the element represented by $\gamma$ lies in the commutator subgroup of $\pi_1(X)$. By definition of the commutator subgroup, it is therefore a finite product of commutators:
 \[
@@ -74,7 +74,7 @@ then every commutator in the tail of $\gamma$ uses circles numbered $>2k+2$ and 
 (r_{2k+2})_*([\gamma]_{\pi_1})
 =[x_1,x_2][x_3,x_4]\cdots[x_{2k+1},x_{2k+2}].
 \]
-On the other hand, the image of the right-hand side above is a product of at most $k$ commutators in this free group. This contradicts Exercise 12, which says that the displayed product of $k+1$ basis commutators cannot be expressed as a product of fewer than $k+1$ commutators. Therefore $[\gamma]\ne0$ in $H_1(X;\mathbb Z)$.
+On the other hand, the image of the right-hand side above is a product of at most $k$ commutators in this free group. This contradicts Exercise 12, which says that the displayed product of $k+1$ basis commutators cannot be expressed as a product of fewer than $k+1$ commutators. Therefore $[\gamma]\ne0$ in $H_1(X;\ZZ)$.
 
 :::
 

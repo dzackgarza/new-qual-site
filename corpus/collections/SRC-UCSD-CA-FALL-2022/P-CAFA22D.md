@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G \subset \mathbb{C}$ be a bounded region.
+Let $G \subset \CC$ be a bounded region.
 
 (i) Show that if $f \in H(G)$ and $B = B(a,r) \subset G$, then
 $$

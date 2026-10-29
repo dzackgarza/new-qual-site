@@ -40,7 +40,7 @@ The identity $f(-x)=-f(x)$ sends antipodal orbits to antipodal orbits.
 
 ::: pf-step
 
-The induced map on $\pi_1\cong\mathbb Z/2$ is the identity.
+The induced map on $\pi_1\cong\ZZ/2$ is the identity.
 
 ::: pf-proof
 

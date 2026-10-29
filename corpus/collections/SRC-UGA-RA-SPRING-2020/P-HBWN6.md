@@ -71,26 +71,26 @@ are measurable. Their product
 \[
 H(x,y)=f(y)g(x-y)
 \]
-is therefore measurable on $\mathbb R^2$.
+is therefore measurable on $\RR^2$.
 :::
 
 :::
 
 ::: pf-step
-Prove that $H\in L^1(\mathbb R^2)$.
+Prove that $H\in L^1(\RR^2)$.
 
 ::: pf-proof
 Since $|H|$ is nonnegative and measurable, Tonelli's theorem applies directly:
 \[
 \begin{aligned}
-\int_{\mathbb R^2}|H(x,y)|\,dx\,dy
-&=\int_{\mathbb R}|f(y)|
-  \left(\int_{\mathbb R}|g(x-y)|\,dx\right)dy\\
-&=\int_{\mathbb R}|f(y)|\,\|g\|_1\,dy\\
+\int_{\RR^2}|H(x,y)|\,dx\,dy
+&=\int_{\RR}|f(y)|
+  \left(\int_{\RR}|g(x-y)|\,dx\right)dy\\
+&=\int_{\RR}|f(y)|\,\|g\|_1\,dy\\
 &=\|f\|_1\|g\|_1<\infty.
 \end{aligned}
 \]
-Hence $H\in L^1(\mathbb R^2)$.
+Hence $H\in L^1(\RR^2)$.
 :::
 
 :::
@@ -101,24 +101,24 @@ Deduce the $L^1$ convolution bound.
 ::: pf-proof
 By Fubini's theorem, for almost every $x$ the slice $y\mapsto H(x,y)$ is integrable, so
 \[
-(f*g)(x)=\int_{\mathbb R}H(x,y)\,dy
+(f*g)(x)=\int_{\RR}H(x,y)\,dy
 \]
 is defined for almost every $x$. Moreover,
 \[
 |(f*g)(x)|
-\le \int_{\mathbb R}|H(x,y)|\,dy.
+\le \int_{\RR}|H(x,y)|\,dy.
 \]
 Integrating in $x$ and using Tonelli,
 \[
 \begin{aligned}
 \|f*g\|_1
-&\le \int_{\mathbb R}\int_{\mathbb R}|H(x,y)|\,dy\,dx\\
+&\le \int_{\RR}\int_{\RR}|H(x,y)|\,dy\,dx\\
 &=\|f\|_1\|g\|_1.
 \end{aligned}
 \]
 Thus
 \[
-\boxed{f*g\in L^1(\mathbb R),\qquad
+\boxed{f*g\in L^1(\RR),\qquad
 \|f*g\|_1\le\|f\|_1\|g\|_1.}
 \]
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF17D
 kind: problem
-title: Reynolds average of a matrix under an irreducible $\mathrm{GL}_3(\mathbb{C})$ representation
+title: Reynolds average of a matrix under an irreducible $\mathrm{GL}_3(\CC)$ representation
 classification:
   areas:
   - applied-algebra
@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and let $X\colon G\to\mathrm{GL}_3(\mathbb{C})$ be an irreducible $3$-dimensional complex matrix representation of $G$.
+Let $G$ be a finite group and let $X\colon G\to\mathrm{GL}_3(\CC)$ be an irreducible $3$-dimensional complex matrix representation of $G$.
 Let $A$ be the matrix
 \[
 A=\begin{pmatrix}
@@ -102,11 +102,11 @@ One has
 \[
 B=cI_3
 \]
-for some $c\in\mathbb C$.
+for some $c\in\CC$.
 
 ::: pf-proof
 
-The representation $X$ is irreducible over the algebraically closed field $\mathbb C$. By step [](#s2){.pf-ref}, $B$ is an intertwining endomorphism of this irreducible representation. Schur's lemma therefore gives
+The representation $X$ is irreducible over the algebraically closed field $\CC$. By step [](#s2){.pf-ref}, $B$ is an intertwining endomorphism of this irreducible representation. Schur's lemma therefore gives
 \[
 B=cI_3.
 \]

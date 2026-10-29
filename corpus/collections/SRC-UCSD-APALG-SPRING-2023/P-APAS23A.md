@@ -61,7 +61,7 @@ y^HAw=\lambda y^Hw=0,
 \]
 so $W$ is $A$-invariant. Since $y^Hx=1$, we have $x\notin W$, and therefore
 \[
-\mathbb C^n=\mathbb Cx\oplus W.
+\CC^n=\mathbb Cx\oplus W.
 \]
 Choose a basis of $W$ and place its vectors in the columns of $X$. Then
 \[

@@ -75,11 +75,11 @@ Since $r>0$, this gives $|a_n|\le Cr^{-n}$.
 
 ::: {.pf-step #s2}
 
-The series defining $h$ converges absolutely for every $z\in\mathbb C$.
+The series defining $h$ converges absolutely for every $z\in\CC$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, for every $z\in\mathbb C$,
+By step [](#s1){.pf-ref}, for every $z\in\CC$,
 \[
 \sum_{n=0}^{\infty}\left|\frac{a_nz^n}{n!}\right|
 \le C\sum_{n=0}^{\infty}\frac{(|z|/r)^n}{n!}

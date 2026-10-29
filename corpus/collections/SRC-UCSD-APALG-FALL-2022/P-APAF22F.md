@@ -73,7 +73,7 @@ so $gu\in S^2(V)$ for every $g\in G$. This proves part (a).
 :::
 
 ::: {.pf-step #eigenbasis-of-s2v}
-Fix $g\in G$. Since $g$ has finite order, its action on $V$ is diagonalizable over $\mathbb C$. Choose an eigenbasis
+Fix $g\in G$. Since $g$ has finite order, its action on $V$ is diagonalizable over $\CC$. Choose an eigenbasis
 \[
 v_1,\ldots,v_n,
 \qquad
@@ -87,7 +87,7 @@ v_i\otimes v_j+v_j\otimes v_i\quad(1\le i<j\le n).
 \]
 
 ::: pf-proof
-Because $g$ has finite order, its minimal polynomial divides $x^m-1$ for some $m$, and $x^m-1$ has distinct roots over $\mathbb C$, so $g$ is diagonalizable.
+Because $g$ has finite order, its minimal polynomial divides $x^m-1$ for some $m$, and $x^m-1$ has distinct roots over $\CC$, so $g$ is diagonalizable.
 The displayed vectors are the standard basis of the $+1$-eigenspace of the flip on $V\otimes V$.
 :::
 

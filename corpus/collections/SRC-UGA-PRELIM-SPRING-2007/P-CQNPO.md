@@ -23,13 +23,13 @@ audit:
 ::: {.problem}
 Give an example (proof not required) of each of the following:
 
-a) A function $f:\mathbb{R}\to\mathbb{R}$ which satisfies $f(x)=0$ for all $x\le 0$, but which is nonzero for $x>0$ and has derivatives of all orders for all $x$.
+a) A function $f:\RR\to\RR$ which satisfies $f(x)=0$ for all $x\le 0$, but which is nonzero for $x>0$ and has derivatives of all orders for all $x$.
 
-b) An infinite-dimensional vector space over the field $\mathbb{Z}/2\mathbb{Z}$.
+b) An infinite-dimensional vector space over the field $\ZZ/2\ZZ$.
 
-c) A matrix in $M_2(\mathbb{C})$ which is not diagonalizable.
+c) A matrix in $M_2(\CC)$ which is not diagonalizable.
 
-d) A power series $\sum_{n=0}^\infty a_n z^n \in \mathbb{C}[[z]]$ with radius of convergence $0$.
+d) A power series $\sum_{n=0}^\infty a_n z^n \in \CC[[z]]$ with radius of convergence $0$.
 :::
 
 
@@ -46,16 +46,16 @@ f(x)=
 e^{-1/x},&x>0.
 \end{cases}
 \]
-This function is $C^\infty$ on $\mathbb R$, vanishes on $(-\infty,0]$, and is nonzero for every $x>0$.
+This function is $C^\infty$ on $\RR$, vanishes on $(-\infty,0]$, and is nonzero for every $x>0$.
 
 :::
 
 ::: pf-step
 For part (b), take the polynomial ring
 \[
-(\mathbb Z/2\mathbb Z)[x]
+(\ZZ/2\ZZ)[x]
 \]
-viewed as a vector space over $\mathbb Z/2\mathbb Z$. Its basis $1,x,x^2,\dots$ is infinite.
+viewed as a vector space over $\ZZ/2\ZZ$. Its basis $1,x,x^2,\dots$ is infinite.
 
 :::
 
@@ -64,7 +64,7 @@ For part (c), take
 \[
 \begin{pmatrix}0&1\\0&0\end{pmatrix}.
 \]
-It is not diagonalizable over $\mathbb C$.
+It is not diagonalizable over $\CC$.
 
 :::
 

@@ -55,7 +55,7 @@ Since $\sum_{k=1}^\infty k^{-2}$ converges, the Weierstrass $M$-test shows that
 \sum_{k=0}^\infty
 \frac{-k\sin(kx)}{k^3+k^2+1}
 \]
-converges uniformly on $\mathbb R$.
+converges uniformly on $\RR$.
 :::
 
 :::

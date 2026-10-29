@@ -23,18 +23,18 @@ audit:
 ---
 
 ::: {.problem}
-Let $m_*$ denote the Lebesgue outer measure on $\mathbb{R}$.
+Let $m_*$ denote the Lebesgue outer measure on $\RR$.
 
-(a) Prove that for every $E \subseteq \mathbb{R}$, there exists a Borel set $B \subseteq \mathbb{R}$ containing $E$ ($E \subseteq B$) such that
+(a) Prove that for every $E \subseteq \RR$, there exists a Borel set $B \subseteq \RR$ containing $E$ ($E \subseteq B$) such that
 $$
 m_*(B) = m_*(E).
 $$
 
-(b) Prove that if $E \subseteq \mathbb{R}$ satisfies Carathéodory's measurability condition:
+(b) Prove that if $E \subseteq \RR$ satisfies Carathéodory's measurability condition:
 $$
-m_*(A) = m_*(A \cap E) + m_*(A \cap E^c) \quad \text{for every } A \subseteq \mathbb{R},
+m_*(A) = m_*(A \cap E) + m_*(A \cap E^c) \quad \text{for every } A \subseteq \RR,
 $$
-then there exists a Borel set $B \subseteq \mathbb{R}$ such that $E = B \setminus N$ with $m_*(N) = 0$.
+then there exists a Borel set $B \subseteq \RR$ such that $E = B \setminus N$ with $m_*(N) = 0$.
 Be sure to address the case when $m_*(E) = \infty$.
 :::
 
@@ -52,7 +52,7 @@ Part (a): Case $m_*(E) < \infty$.
 ::: pf-proof
 
 ::: pf-step
-By definition of outer measure on $\mathbb{R}$, for any $E \subseteq \mathbb{R}$:
+By definition of outer measure on $\RR$, for any $E \subseteq \RR$:
 $$m_*(E) = \inf \left\{ \sum_{j=1}^\infty |I_j| \;\middle|\; E \subseteq \bigcup_{j=1}^\infty I_j, \, I_j \text{ open intervals} \right\}.$$
 
 :::
@@ -109,12 +109,12 @@ Part (a): Case $m_*(E) = \infty$.
 ::: pf-proof
 
 ::: pf-step
-Partition $\mathbb{R}$ into bounded, pairwise disjoint intervals $J_n = [n, n+1)$ for $n \in \mathbb{Z}$.
+Partition $\RR$ into bounded, pairwise disjoint intervals $J_n = [n, n+1)$ for $n \in \ZZ$.
 
 :::
 
 ::: pf-step
-Define $E_n = E \cap J_n$ for each $n \in \mathbb{Z}$.
+Define $E_n = E \cap J_n$ for each $n \in \ZZ$.
 
 :::
 
@@ -124,17 +124,17 @@ Since $E_n \subseteq J_n$, $m_*(E_n) \le m_*(J_n) = 1 < \infty$.
 :::
 
 ::: pf-step
-By step [](#borel-hull-finite-case){.pf-ref}, for each $n \in \mathbb{Z}$, there exists a Borel set $B_n \supseteq E_n$ such that $m_*(B_n) = m_*(E_n)$.
+By step [](#borel-hull-finite-case){.pf-ref}, for each $n \in \ZZ$, there exists a Borel set $B_n \supseteq E_n$ such that $m_*(B_n) = m_*(E_n)$.
 
 :::
 
 ::: pf-step
-Define $B = \bigcup_{n \in \mathbb{Z}} B_n$.
+Define $B = \bigcup_{n \in \ZZ} B_n$.
 
 :::
 
 ::: pf-step
-As a countable union of Borel sets, $B$ is Borel, and $E = \bigcup_{n \in \mathbb{Z}} E_n \subseteq \bigcup_{n \in \mathbb{Z}} B_n = B$.
+As a countable union of Borel sets, $B$ is Borel, and $E = \bigcup_{n \in \ZZ} E_n \subseteq \bigcup_{n \in \ZZ} B_n = B$.
 
 :::
 
@@ -200,7 +200,7 @@ Part (b): Case $m_*(E) = \infty$.
 ::: pf-proof
 
 ::: pf-step
-Again partition $\mathbb{R}$ via $J_n = [n, n+1)$ for $n \in \mathbb{Z}$, and set $E_n = E \cap J_n$.
+Again partition $\RR$ via $J_n = [n, n+1)$ for $n \in \ZZ$, and set $E_n = E \cap J_n$.
 
 :::
 
@@ -210,23 +210,23 @@ Since $E$ is Carathéodory-measurable and each interval $J_n$ is measurable, eac
 :::
 
 ::: pf-step
-By step [](#measurable-decomposition-finite-case){.pf-ref}, for each $n \in \mathbb{Z}$, there exists a Borel set $B_n \supseteq E_n$ such that $N_n = B_n \setminus E_n$ has $m_*(N_n) = 0$.
+By step [](#measurable-decomposition-finite-case){.pf-ref}, for each $n \in \ZZ$, there exists a Borel set $B_n \supseteq E_n$ such that $N_n = B_n \setminus E_n$ has $m_*(N_n) = 0$.
 
 :::
 
 ::: pf-step
-Define $B = \bigcup_{n \in \mathbb{Z}} B_n$. Then $B$ is a Borel set containing $E$.
+Define $B = \bigcup_{n \in \ZZ} B_n$. Then $B$ is a Borel set containing $E$.
 
 :::
 
 ::: pf-step
-Define $N = B \setminus E = \left( \bigcup_{n \in \mathbb{Z}} B_n \right) \setminus \left( \bigcup_{n \in \mathbb{Z}} E_n \right) \subseteq \bigcup_{n \in \mathbb{Z}} (B_n \setminus E_n) = \bigcup_{n \in \mathbb{Z}} N_n$.
+Define $N = B \setminus E = \left( \bigcup_{n \in \ZZ} B_n \right) \setminus \left( \bigcup_{n \in \ZZ} E_n \right) \subseteq \bigcup_{n \in \ZZ} (B_n \setminus E_n) = \bigcup_{n \in \ZZ} N_n$.
 
 :::
 
 ::: pf-step
 By countable subadditivity of outer measure:
-$$m_*(N) \le \sum_{n \in \mathbb{Z}} m_*(N_n) = \sum_{n \in \mathbb{Z}} 0 = 0.$$
+$$m_*(N) \le \sum_{n \in \ZZ} m_*(N_n) = \sum_{n \in \ZZ} 0 = 0.$$
 
 :::
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Construct a Borel set $E\subset\mathbb R$ such that
+Construct a Borel set $E\subset\RR$ such that
 \[
 0<m(E\cap I)<m(I)
 \]
@@ -37,7 +37,7 @@ be an enumeration of all bounded open intervals with rational endpoints.
 
 Every nonempty nondegenerate interval
 \[
-I\subset\mathbb R
+I\subset\RR
 \]
 contains some
 \[
@@ -206,7 +206,7 @@ K_n\subseteq E
 \]
 and
 \[
-L_n\subseteq\mathbb R\setminus E.
+L_n\subseteq\RR\setminus E.
 \]
 
 
@@ -294,7 +294,7 @@ By step [](#s1-5){.pf-ref},
 \[
 L_n
 \subseteq
-\mathbb R\setminus E.
+\RR\setminus E.
 \]
 Also
 \[

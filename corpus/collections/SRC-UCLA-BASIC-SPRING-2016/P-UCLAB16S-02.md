@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $a<b$ be real numbers.
 
-1. Define what it means for a function $f:[a,b]\to\mathbb R$ to be Riemann integrable on $[a,b]$.
+1. Define what it means for a function $f:[a,b]\to\RR$ to be Riemann integrable on $[a,b]$.
 
 2. Let $\{x_n\}_{n=1}^{\infty}\subset[a,b]$ be a sequence such that $\lim_{n\to\infty}x_n$ exists, and define
 \[
@@ -39,7 +39,7 @@ Using your definition, prove that $f$ is Riemann integrable on $[a,b]$.
 
 For a bounded function
 \[
-f:[a,b]\to\mathbb R
+f:[a,b]\to\RR
 \]
 and a partition
 \[

@@ -52,7 +52,7 @@ g=f^{-1}:D^*\to A
 $$
 is holomorphic. It satisfies $1<|g(w)|<2$, so $g$ is bounded near the puncture.
 The removable-singularity theorem extends it to a holomorphic map
-$G:D\to\mathbb C$.
+$G:D\to\CC$.
 
 Continuity and the inequalities on $D^*$ give
 $$

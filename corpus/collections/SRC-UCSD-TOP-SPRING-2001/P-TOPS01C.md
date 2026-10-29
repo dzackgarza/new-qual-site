@@ -26,11 +26,11 @@ Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times
 
 ::: pf-step
 
-Let $x\in H^2(\mathbb{CP}^2;\mathbb Z)$ be the standard generator and let $a,b\in H^2(S^2\times S^2;\mathbb Z)$ be the two factor generators.
+Let $x\in H^2(\mathbb{CP}^2;\ZZ)$ be the standard generator and let $a,b\in H^2(S^2\times S^2;\ZZ)$ be the two factor generators.
 
 ::: pf-proof
 
-These groups are respectively $\mathbb Z$ and $\mathbb Z^2$ in degree two.
+These groups are respectively $\ZZ$ and $\ZZ^2$ in degree two.
 
 :::
 
@@ -44,7 +44,7 @@ X=\mathbb{CP}^2\#(S^2\times S^2),
 $$
 one has
 $$
-H^0(X)=H^4(X)=\mathbb Z,\qquad H^2(X)=\mathbb Z^3,
+H^0(X)=H^4(X)=\ZZ,\qquad H^2(X)=\ZZ^3,
 $$
 and all other cohomology groups vanish.
 
@@ -58,7 +58,7 @@ For connected sums of closed oriented $4$-manifolds, the degree-two cohomology i
 
 ::: {.pf-step #s3}
 
-Let $u\in H^4(X;\mathbb Z)$ be the orientation generator. Then
+Let $u\in H^4(X;\ZZ)$ be the orientation generator. Then
 $$
 x^2=u,\qquad a^2=b^2=0,\qquad ab=u.
 $$

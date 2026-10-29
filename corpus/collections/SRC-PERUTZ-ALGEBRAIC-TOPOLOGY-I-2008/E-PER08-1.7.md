@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Prove directly that the 2-sphere
 \[
-S^2=\{x\in\mathbb R^3:|x|=1\}
+S^2=\{x\in\RR^3:|x|=1\}
 \]
 is simply connected.
 :::
@@ -79,13 +79,13 @@ The endpoint-fixing homotopies on adjacent subintervals agree at the subdivision
 The piecewise-geodesic loop $g$ misses some point of $S^2$.
 
 ::: pf-proof
-Each geodesic segment in $g(I)$ lies in a great circle, and each great circle is the intersection of $S^2$ with a two-dimensional linear subspace of $\mathbb R^3$. Since $g$ has only finitely many segments, there are finitely many proper linear subspaces
+Each geodesic segment in $g(I)$ lies in a great circle, and each great circle is the intersection of $S^2$ with a two-dimensional linear subspace of $\RR^3$. Since $g$ has only finitely many segments, there are finitely many proper linear subspaces
 \[
-P_1,\dots,P_m\subsetneq\mathbb R^3
+P_1,\dots,P_m\subsetneq\RR^3
 \]
 whose intersections with $S^2$ contain $g(I)$.
 
-A finite union of proper linear subspaces cannot equal $\mathbb R^3$. Hence choose a nonzero vector
+A finite union of proper linear subspaces cannot equal $\RR^3$. Hence choose a nonzero vector
 \[
 v\notin P_1\cup\cdots\cup P_m
 \]
@@ -104,7 +104,7 @@ The loop $g$ is null-homotopic rel basepoint.
 ::: pf-proof
 Stereographic projection from $q$ is a homeomorphism
 \[
-\sigma:S^2\setminus\{q\}\xrightarrow{\cong}\mathbb R^2.
+\sigma:S^2\setminus\{q\}\xrightarrow{\cong}\RR^2.
 \]
 By step [](#s3){.pf-ref}, $g(I)\subset S^2\setminus\{q\}$. Let
 \[

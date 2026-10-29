@@ -43,9 +43,9 @@ Then $\bigcap_{j=1}^\infty K_j \neq \emptyset$.
 Let $\mu \in M(X)$ and $\mu_n \in M(X)$ ($n = 1, 2, \ldots$) and assume that $\mu_n \to \mu$ vaguely in $M(X)$.
 Then $\mu_n(E) \to \mu(E)$ for any Borel set $E \subseteq X$.
 
-(4) Let $\mathcal{S}$ denote the Schwartz space on $\mathbb{R}^n$.
+(4) Let $\mathcal{S}$ denote the Schwartz space on $\RR^n$.
 Let $f, g \in \mathcal{S}$.
-If $f * g = 0$ in $\mathbb{R}^n$ then either $f = 0$ identically in $\mathbb{R}^n$ or $g = 0$ identically in $\mathbb{R}^n$.
+If $f * g = 0$ in $\RR^n$ then either $f = 0$ identically in $\RR^n$ or $g = 0$ identically in $\RR^n$.
 :::
 
 ::: {.solution}
@@ -104,13 +104,13 @@ Statement (3) is false.
 
 ::: pf-proof
 
-Take $X=\mathbb R$ and
+Take $X=\RR$ and
 \[
 \mu_n=\delta_{1/n},
 \qquad
 \mu=\delta_0.
 \]
-For every $\varphi\in C_c(\mathbb R)$,
+For every $\varphi\in C_c(\RR)$,
 \[
 \int\varphi\,d\mu_n=\varphi(1/n)\longrightarrow\varphi(0)=\int\varphi\,d\mu,
 \]
@@ -139,7 +139,7 @@ Statement (4) is false.
 
 Choose nonzero functions
 \[
-\phi,\psi\in C_c^\infty(\mathbb R^n)
+\phi,\psi\in C_c^\infty(\RR^n)
 \]
 with disjoint supports. Let
 \[

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a,b,c,d\in\mathbb R$, not all zero.
+Let $a,b,c,d\in\RR$, not all zero.
 Find the eigenvalues of
 \[
 \begin{pmatrix}
@@ -33,7 +33,7 @@ ac&bc&c^2&cd\\
 ad&bd&cd&d^2
 \end{pmatrix}
 \]
-and describe the eigenspace decomposition of $\mathbb R^4$.
+and describe the eigenspace decomposition of $\RR^4$.
 :::
 
 ::: {.solution}

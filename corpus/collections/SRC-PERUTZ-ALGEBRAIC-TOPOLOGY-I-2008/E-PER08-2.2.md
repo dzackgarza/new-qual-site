@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-Assume that every matrix $A\in\operatorname{SL}_2(\mathbb C)$ can be written uniquely as a product $UP$, with $U\in\operatorname{SU}(2)$ and $P$ positive-definite Hermitian.
+Assume that every matrix $A\in\operatorname{SL}_2(\CC)$ can be written uniquely as a product $UP$, with $U\in\operatorname{SU}(2)$ and $P$ positive-definite Hermitian.
 
 Deduce a homeomorphism
 \[
-S^3\times(0,\infty)\times\mathbb C\longrightarrow \operatorname{SL}_2(\mathbb C).
+S^3\times(0,\infty)\times\CC\longrightarrow \operatorname{SL}_2(\CC).
 \]
 :::
 
@@ -44,7 +44,7 @@ There is a homeomorphism $S^3\cong\operatorname{SU}(2)$.
 
 Regard
 \[
-S^3=\{(\alpha,\beta)\in\mathbb C^2:|\alpha|^2+|\beta|^2=1\}.
+S^3=\{(\alpha,\beta)\in\CC^2:|\alpha|^2+|\beta|^2=1\}.
 \]
 Define
 \[
@@ -80,14 +80,14 @@ Hence $\Theta$ is bijective. Both $\Theta$ and its inverse, obtained by taking t
 
 ::: {.pf-step #s2}
 
-The positive-definite Hermitian matrices of determinant one are homeomorphic to $(0,\infty)\times\mathbb C$.
+The positive-definite Hermitian matrices of determinant one are homeomorphic to $(0,\infty)\times\CC$.
 
 ::: pf-proof
 
 A Hermitian matrix has the form
 \[
 P=\begin{pmatrix}r&z\\\overline z&s\end{pmatrix},
-\qquad r,s\in\mathbb R,\ z\in\mathbb C.
+\qquad r,s\in\RR,\ z\in\CC.
 \]
 If $P$ is positive definite, then $r>0$. The condition $\det P=1$ gives
 \[
@@ -104,13 +104,13 @@ P(r,z)=
 r&z\\[1mm]
 \overline z&\dfrac{1+|z|^2}{r}
 \end{pmatrix},
-\qquad r>0,\ z\in\mathbb C.
+\qquad r>0,\ z\in\CC.
 \]
 Conversely, $P(r,z)$ has positive upper-left entry and determinant $1>0$, so Sylvester's criterion makes it positive definite.
 
 Thus
 \[
-\Psi:(0,\infty)\times\mathbb C\to\mathcal P,
+\Psi:(0,\infty)\times\CC\to\mathcal P,
 \qquad
 (r,z)\mapsto P(r,z),
 \]
@@ -130,7 +130,7 @@ Polar multiplication is a homeomorphism
 \[
 \operatorname{SU}(2)\times\mathcal P
 \xrightarrow{\cong}
-\operatorname{SL}_2(\mathbb C).
+\operatorname{SL}_2(\CC).
 \]
 
 ::: pf-proof
@@ -188,9 +188,9 @@ Compose the three homeomorphisms.
 
 By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the map
 \[
-S^3\times(0,\infty)\times\mathbb C
+S^3\times(0,\infty)\times\CC
 \longrightarrow
-\operatorname{SL}_2(\mathbb C)
+\operatorname{SL}_2(\CC)
 \]
 defined by
 \[

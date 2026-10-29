@@ -26,15 +26,15 @@ Compute:
 
 ::: pf-step
 
-Over $\mathbb Z$,
+Over $\ZZ$,
 $$
-\operatorname{Tor}_1^{\mathbb Z}(\mathbb Z/m,\mathbb Z/n)\cong\mathbb Z/\gcd(m,n),
+\operatorname{Tor}_1^{\ZZ}(\ZZ/m,\ZZ/n)\cong\ZZ/\gcd(m,n),
 $$
-and $\operatorname{Tor}_1^{\mathbb Z}(\mathbb Z,-)=0$.
+and $\operatorname{Tor}_1^{\ZZ}(\ZZ,-)=0$.
 
 ::: pf-proof
 
-Resolve $\mathbb Z/m$ by $0\to\mathbb Z\xrightarrow{m}\mathbb Z\to\mathbb Z/m\to0$. After tensoring with $\mathbb Z/n$, the Tor group is the kernel of multiplication by $m$ on $\mathbb Z/n$, which is cyclic of order $\gcd(m,n)$.
+Resolve $\ZZ/m$ by $0\to\ZZ\xrightarrow{m}\ZZ\to\ZZ/m\to0$. After tensoring with $\ZZ/n$, the Tor group is the kernel of multiplication by $m$ on $\ZZ/n$, which is cyclic of order $\gcd(m,n)$.
 
 :::
 
@@ -44,14 +44,14 @@ Resolve $\mathbb Z/m$ by $0\to\mathbb Z\xrightarrow{m}\mathbb Z\to\mathbb Z/m\to
 
 Hence
 $$
-\boxed{\operatorname{Tor}_1^{\mathbb Z}(\mathbb Z\oplus\mathbb Z_2\oplus\mathbb Z_8,
-\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_4)
-\cong (\mathbb Z/2)^2\oplus(\mathbb Z/4)^2.}
+\boxed{\operatorname{Tor}_1^{\ZZ}(\ZZ\oplus\ZZ_2\oplus\ZZ_8,
+\ZZ\oplus\ZZ_4\oplus\ZZ_4)
+\cong (\ZZ/2)^2\oplus(\ZZ/4)^2.}
 $$
 
 ::: pf-proof
 
-Tor is additive in each variable. The two $\mathbb Z_4$ summands paired with $\mathbb Z_2$ each contribute $\mathbb Z_2$, and paired with $\mathbb Z_8$ each contribute $\mathbb Z_4$. Every term involving a free $\mathbb Z$ summand vanishes.
+Tor is additive in each variable. The two $\ZZ_4$ summands paired with $\ZZ_2$ each contribute $\ZZ_2$, and paired with $\ZZ_8$ each contribute $\ZZ_4$. Every term involving a free $\ZZ$ summand vanishes.
 
 :::
 
@@ -59,15 +59,15 @@ Tor is additive in each variable. The two $\mathbb Z_4$ summands paired with $\m
 
 ::: {.pf-step #s3}
 
-Over $\mathbb Z$,
+Over $\ZZ$,
 $$
-\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/n,B)\cong B/nB,
+\operatorname{Ext}^1_{\ZZ}(\ZZ/n,B)\cong B/nB,
 $$
-and $\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z,B)=0$.
+and $\operatorname{Ext}^1_{\ZZ}(\ZZ,B)=0$.
 
 ::: pf-proof
 
-Apply $\operatorname{Hom}_{\mathbb Z}(-,B)$ to the same length-one free resolution of $\mathbb Z/n$.
+Apply $\operatorname{Hom}_{\ZZ}(-,B)$ to the same length-one free resolution of $\ZZ/n$.
 
 :::
 
@@ -75,16 +75,16 @@ Apply $\operatorname{Hom}_{\mathbb Z}(-,B)$ to the same length-one free resoluti
 
 ::: {.pf-step #s4}
 
-For $B=\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_5$,
+For $B=\ZZ\oplus\ZZ_4\oplus\ZZ_5$,
 $$
-B/2B\cong(\mathbb Z/2)^2,
+B/2B\cong(\ZZ/2)^2,
 \qquad
-B/3B\cong\mathbb Z/3.
+B/3B\cong\ZZ/3.
 $$
 
 ::: pf-proof
 
-For $B/2B$, the free summand contributes $\mathbb Z/2$, the $\mathbb Z_4$ summand contributes $\mathbb Z/2$, and multiplication by $2$ is an automorphism of $\mathbb Z_5$. For $B/3B$, only the free summand survives, because multiplication by $3$ is an automorphism on both $\mathbb Z_4$ and $\mathbb Z_5$.
+For $B/2B$, the free summand contributes $\ZZ/2$, the $\ZZ_4$ summand contributes $\ZZ/2$, and multiplication by $2$ is an automorphism of $\ZZ_5$. For $B/3B$, only the free summand survives, because multiplication by $3$ is an automorphism on both $\ZZ_4$ and $\ZZ_5$.
 
 :::
 
@@ -94,9 +94,9 @@ For $B/2B$, the free summand contributes $\mathbb Z/2$, the $\mathbb Z_4$ summan
 
 Therefore
 $$
-\boxed{\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z\oplus\mathbb Z_2\oplus\mathbb Z_3,
-\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_5)
-\cong (\mathbb Z/2)^2\oplus\mathbb Z/3.}
+\boxed{\operatorname{Ext}^1_{\ZZ}(\ZZ\oplus\ZZ_2\oplus\ZZ_3,
+\ZZ\oplus\ZZ_4\oplus\ZZ_5)
+\cong (\ZZ/2)^2\oplus\ZZ/3.}
 $$
 
 ::: pf-proof

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^n\to\mathbb R$ satisfy:
+Let $f:\RR^n\to\RR$ satisfy:
 
 1. The function
 \[
@@ -31,12 +31,12 @@ g(x,y)=f(x+y)-f(x)-f(y)
 \]
 is bilinear.
 
-2. For every $x\in\mathbb R^n$ and $t\in\mathbb R$,
+2. For every $x\in\RR^n$ and $t\in\RR$,
 \[
 f(tx)=t^2f(x).
 \]
 
-Show that there is a linear transformation $A:\mathbb R^n\to\mathbb R^n$ such that
+Show that there is a linear transformation $A:\RR^n\to\RR^n$ such that
 \[
 f(x)=\langle x,Ax\rangle
 \]

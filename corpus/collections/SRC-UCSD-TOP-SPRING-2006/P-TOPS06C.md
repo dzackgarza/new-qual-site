@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $M$ be a $2n+1$ dimensional compact oriented manifold with $\pi_1(M) = \mathbb{Z}/k$, where $k$ is an odd integer.
+Let $M$ be a $2n+1$ dimensional compact oriented manifold with $\pi_1(M) = \ZZ/k$, where $k$ is an odd integer.
 Show that the degree of any map from $M$ to $\mathbb{RP}^{2n+1}$ is an even integer.
 :::
 
@@ -28,8 +28,8 @@ Show that the degree of any map from $M$ to $\mathbb{RP}^{2n+1}$ is an even inte
 
 The induced homomorphism
 $$
-f_*:\pi_1(M)\cong\mathbb Z/k\longrightarrow
-\pi_1(\mathbb{RP}^{2n+1})\cong\mathbb Z/2
+f_*:\pi_1(M)\cong\ZZ/k\longrightarrow
+\pi_1(\mathbb{RP}^{2n+1})\cong\ZZ/2
 $$
 is trivial.
 

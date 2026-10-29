@@ -43,7 +43,7 @@ Prove that there are continuous linear functionals on $L^\infty([0,1])$ that are
 
 The functional
 \[
-\varphi:C([0,1])\to\mathbb C
+\varphi:C([0,1])\to\CC
 \]
 is bounded and satisfies
 \[

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $n$ be a squarefree integer greater than 3. Let $R$ denote the subring $\mathbb{Z}[\sqrt{-n}] = \{a + b\sqrt{-n} \mid a, b \in \mathbb{Z}\}$ of the field of complex numbers $\mathbb{C}$.
+Let $n$ be a squarefree integer greater than 3. Let $R$ denote the subring $\ZZ[\sqrt{-n}] = \{a + b\sqrt{-n} \mid a, b \in \ZZ\}$ of the field of complex numbers $\CC$.
 
 (a) Show that $\sqrt{-n}$ and $1 + \sqrt{-n}$ are irreducible in $R$.
 
@@ -82,7 +82,7 @@ with both factors nonzero. If both were nonunits, then
 \[
 1<N(\alpha)<N(1+s)=n+1.
 \]
-Write $\alpha=a+bs$. If $b\ne0$, then $N(\alpha)\ge n$. Because $N(\alpha)$ divides $n+1$, the only possibility with $n\le N(\alpha)<n+1$ is impossible. Hence $b=0$ and $\alpha=a\in\mathbb Z$.
+Write $\alpha=a+bs$. If $b\ne0$, then $N(\alpha)\ge n$. Because $N(\alpha)$ divides $n+1$, the only possibility with $n\le N(\alpha)<n+1$ is impossible. Hence $b=0$ and $\alpha=a\in\ZZ$.
 
 But an integer $a$ divides $1+s$ in $R$ only if it divides both coefficients $1$ and $1$, so $a=\pm1$. Thus $\alpha$ is a unit, a contradiction. Hence $1+s$ is irreducible.
 
@@ -103,7 +103,7 @@ Since
 \[
 \frac{k}{s}=-\frac{k}{n}s,
 \]
-the quotient lies in $R$ exactly when $k/n\in\mathbb Z$.
+the quotient lies in $R$ exactly when $k/n\in\ZZ$.
 
 :::
 

@@ -17,17 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite positive Borel measure on $\mathbb R$ that is singular to Lebesgue measure.
+Let $\mu$ be a finite positive Borel measure on $\RR$ that is singular to Lebesgue measure.
 Show that
 \[
 \lim_{r\to0^+}\frac{\mu([x-r,x+r])}{2r}=+\infty
 \]
-for $\mu$-almost every $x\in\mathbb R$.
+for $\mu$-almost every $x\in\RR$.
 :::
 
 ::: {.solution}
 
-Let \(m\) denote Lebesgue measure on \(\mathbb R\), and define the locally finite positive Borel measure
+Let \(m\) denote Lebesgue measure on \(\RR\), and define the locally finite positive Borel measure
 \[
 \boxed{
 \nu=\mu+m}.
@@ -53,14 +53,14 @@ for every Borel set \(E\).
 
 Since \(\mu\perp m\), there exists a Borel set
 \[
-S\subseteq\mathbb R
+S\subseteq\RR
 \]
 such that
 \[
 \boxed{
 m(S)=0,
 \qquad
-\mu(\mathbb R\setminus S)=0}.
+\mu(\RR\setminus S)=0}.
 \]
 
 
@@ -113,7 +113,7 @@ Therefore
 \boxed{
 f(x)=0}
 \]
-for \(\mu\)-almost every \(x\in\mathbb R\).
+for \(\mu\)-almost every \(x\in\RR\).
 
 
 ::: pf-proof
@@ -129,7 +129,7 @@ By step [](#s1-1){.pf-ref}, \(\mu\) is concentrated on \(S\). The exceptional su
 
 ::: {.pf-step #s1-4}
 
-By the differentiation theorem for locally finite Borel measures on \(\mathbb R\),
+By the differentiation theorem for locally finite Borel measures on \(\RR\),
 \[
 \boxed{
 f(x)

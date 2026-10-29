@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Recall that a set $E \subset \mathbb{R}^{d}$ is measurable if for every $c>0$ there is an open set $U \subseteq \RR^d$ such that $m^{*}(U \sm E)<\epsilon$.
+Recall that a set $E \subset \RR^{d}$ is measurable if for every $c>0$ there is an open set $U \subseteq \RR^d$ such that $m^{*}(U \sm E)<\epsilon$.
 
 a.
 Prove that if $E$ is measurable and $m(E)<\infty$, then for all $\epsilon>0$ there exists an elementary set $F$ such that $m(E \Delta F)<\epsilon$. 
@@ -33,7 +33,7 @@ Prove that if $E$ is measurable and $m(E)<\infty$, then for all $\epsilon>0$ the
   Here $m(E)$ denotes the Lebesgue measure of $E$, a set $F$ is called elementary if it is a finite union of rectangles and $E \Delta F$ denotes the symmetric difference of the sets $E$ and $F$.
 
 b.
-Let $E \subset \mathbb{R}$ be a measurable set, such that $0<m(E)<\infty$. Use part (a) to show that
+Let $E \subset \RR$ be a measurable set, such that $0<m(E)<\infty$. Use part (a) to show that
 \[
 \lim _{n \rightarrow \infty} \int_{E} \sin (n t) d t=0
 \]
@@ -48,13 +48,13 @@ Approximate a finite-measure measurable set by an elementary set.
 
 ::: pf-proof
 
-Let $E\subset\mathbb R^d$ be measurable with $m(E)<\infty$, and fix $\varepsilon>0$. By outer regularity choose an open set $U\supset E$ such that
+Let $E\subset\RR^d$ be measurable with $m(E)<\infty$, and fix $\varepsilon>0$. By outer regularity choose an open set $U\supset E$ such that
 \[
 m(U\setminus E)<\varepsilon/2.
 \]
 Then $m(U)<\infty$.
 
-Every open subset of $\mathbb R^d$ is a countable union of pairwise disjoint half-open rectangles (for example dyadic cubes), say
+Every open subset of $\RR^d$ is a countable union of pairwise disjoint half-open rectangles (for example dyadic cubes), say
 \[
 U=\bigcup_{j=1}^\infty Q_j,
 \qquad
@@ -87,7 +87,7 @@ Prove the oscillatory integral limit.
 
 ::: pf-proof
 
-Let $E\subset\mathbb R$ be measurable with $0<m(E)<\infty$. Fix $\varepsilon>0$ and choose an elementary set $F$, a finite union of intervals, with
+Let $E\subset\RR$ be measurable with $0<m(E)<\infty$. Fix $\varepsilon>0$ and choose an elementary set $F$, a finite union of intervals, with
 \[
 m(E\triangle F)<\varepsilon/2.
 \]

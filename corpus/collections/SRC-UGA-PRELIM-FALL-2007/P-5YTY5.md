@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta$ be the triangular boundary in $\mathbb{R}^2$ with vertices $(0,1)$, $(2,0)$, and $(2,1)$, traversed counterclockwise.
+Let $\Delta$ be the triangular boundary in $\RR^2$ with vertices $(0,1)$, $(2,0)$, and $(2,1)$, traversed counterclockwise.
 Evaluate the line integral:
 $$I = \oint_{\Delta} y \, dx + 2x \, dy.$$
 :::
@@ -33,7 +33,7 @@ Setting up Green's Theorem:
 ::: pf-proof
 
 ::: pf-step
-Let $D \subset \mathbb{R}^2$ be the filled triangular region enclosed by the positively oriented (counterclockwise) boundary curve $\partial D = \Delta$.
+Let $D \subset \RR^2$ be the filled triangular region enclosed by the positively oriented (counterclockwise) boundary curve $\partial D = \Delta$.
 :::
 
 ::: pf-step
@@ -42,7 +42,7 @@ $$P(x, y) = y, \qquad Q(x, y) = 2x.$$
 :::
 
 ::: pf-step
-Both $P$ and $Q$ have continuous partial derivatives on $\mathbb{R}^2$:
+Both $P$ and $Q$ have continuous partial derivatives on $\RR^2$:
 $$\frac{\partial Q}{\partial x} = \frac{\partial}{\partial x}(2x) = 2, \qquad \frac{\partial P}{\partial y} = \frac{\partial}{\partial y}(y) = 1.$$
 :::
 

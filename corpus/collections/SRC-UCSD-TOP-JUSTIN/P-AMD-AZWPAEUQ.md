@@ -22,7 +22,7 @@ Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
 :::
 
 ::: {.solution}
-**Goal:** Compute the integral homology groups $H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$ for all $k \ge 0$.
+**Goal:** Compute the integral homology groups $H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ)$ for all $k \ge 0$.
 
 ::: pf
 
@@ -34,9 +34,9 @@ Compute the homology of the factors $\Sigma \mathbb{RP}^2$ and $\mathbb{RP}^2$.
 ::: pf-step
 The homology of the real projective plane $\mathbb{RP}^2$ is:
 
-- $H_0(\mathbb{RP}^2) \cong \mathbb{Z}$,
+- $H_0(\mathbb{RP}^2) \cong \ZZ$,
 
-- $H_1(\mathbb{RP}^2) \cong \mathbb{Z}/2\mathbb{Z}$,
+- $H_1(\mathbb{RP}^2) \cong \ZZ/2\ZZ$,
 
 - $H_2(\mathbb{RP}^2) = 0$,
 
@@ -46,11 +46,11 @@ The homology of the real projective plane $\mathbb{RP}^2$ is:
 ::: pf-step
 By the suspension isomorphism $\widetilde{H}_k(\Sigma X) \cong \widetilde{H}_{k-1}(X)$, the reduced homology of $\Sigma \mathbb{RP}^2$ is:
 
-- $H_0(\Sigma \mathbb{RP}^2) \cong \mathbb{Z}$,
+- $H_0(\Sigma \mathbb{RP}^2) \cong \ZZ$,
 
 - $H_1(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_0(\mathbb{RP}^2) = 0$,
 
-- $H_2(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_1(\mathbb{RP}^2) \cong \mathbb{Z}/2\mathbb{Z}$,
+- $H_2(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_1(\mathbb{RP}^2) \cong \ZZ/2\ZZ$,
 
 - $H_3(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_2(\mathbb{RP}^2) = 0$,
 
@@ -71,7 +71,7 @@ Apply the Künneth formula for homology.
 ::: pf-proof
 
 ::: pf-step
-For topological spaces $A$ and $B$, the Künneth formula over PID $\mathbb{Z}$ gives a split short exact sequence: $$0 \to \bigoplus_{i+j=k} (H_i(A) \otimes_\mathbb{Z} H_j(B)) \to H_k(A \times B) \to \bigoplus_{i+j=k-1} \operatorname{Tor}_1^\mathbb{Z}(H_i(A), H_j(B)) \to 0.$$
+For topological spaces $A$ and $B$, the Künneth formula over PID $\ZZ$ gives a split short exact sequence: $$0 \to \bigoplus_{i+j=k} (H_i(A) \otimes_\ZZ H_j(B)) \to H_k(A \times B) \to \bigoplus_{i+j=k-1} \operatorname{Tor}_1^\ZZ(H_i(A), H_j(B)) \to 0.$$
 :::
 
 ::: pf-step
@@ -81,26 +81,26 @@ Here $A = \Sigma \mathbb{RP}^2$ and $B = \mathbb{RP}^2$.
 ::: {.pf-step #s2-3}
 Tensor products $H_i(A) \otimes H_j(B)$:
 
-- $k = 0$: $H_0(A) \otimes H_0(B) = \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
+- $k = 0$: $H_0(A) \otimes H_0(B) = \ZZ \otimes \ZZ \cong \ZZ$.
 
-- $k = 1$: $(H_0(A) \otimes H_1(B)) \oplus (H_1(A) \otimes H_0(B)) = (\mathbb{Z} \otimes \mathbb{Z}/2) \oplus (0 \otimes \mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z}$.
+- $k = 1$: $(H_0(A) \otimes H_1(B)) \oplus (H_1(A) \otimes H_0(B)) = (\ZZ \otimes \ZZ/2) \oplus (0 \otimes \ZZ) \cong \ZZ/2\ZZ$.
 
-- $k = 2$: $(H_0(A) \otimes H_2(B)) \oplus (H_1(A) \otimes H_1(B)) \oplus (H_2(A) \otimes H_0(B)) = 0 \oplus 0 \oplus (\mathbb{Z}/2 \otimes \mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z}$.
+- $k = 2$: $(H_0(A) \otimes H_2(B)) \oplus (H_1(A) \otimes H_1(B)) \oplus (H_2(A) \otimes H_0(B)) = 0 \oplus 0 \oplus (\ZZ/2 \otimes \ZZ) \cong \ZZ/2\ZZ$.
 
-- $k = 3$: $(H_2(A) \otimes H_1(B)) \oplus (H_3(A) \otimes H_0(B)) = (\mathbb{Z}/2 \otimes \mathbb{Z}/2) \oplus 0 \cong \mathbb{Z}/2\mathbb{Z}$.
+- $k = 3$: $(H_2(A) \otimes H_1(B)) \oplus (H_3(A) \otimes H_0(B)) = (\ZZ/2 \otimes \ZZ/2) \oplus 0 \cong \ZZ/2\ZZ$.
 
 - $k \ge 4$: All tensor terms are 0.
 :::
 
 ::: {.pf-step #s2-4}
-Tor terms $\operatorname{Tor}_1^\mathbb{Z}(H_i(A), H_j(B))$:
+Tor terms $\operatorname{Tor}_1^\ZZ(H_i(A), H_j(B))$:
 
-- Recall $\operatorname{Tor}(\mathbb{Z}, -) = 0$ and $\operatorname{Tor}(\mathbb{Z}/2, \mathbb{Z}/2) \cong \mathbb{Z}/2\mathbb{Z}$.
+- Recall $\operatorname{Tor}(\ZZ, -) = 0$ and $\operatorname{Tor}(\ZZ/2, \ZZ/2) \cong \ZZ/2\ZZ$.
 
-- For $i+j = 3$, the only non-zero term is $i = 2, j = 1$: $\operatorname{Tor}_1(H_2(A), H_1(B)) = \operatorname{Tor}_1(\mathbb{Z}/2, \mathbb{Z}/2) \cong \mathbb{Z}/2\mathbb{Z}$.
+- For $i+j = 3$, the only non-zero term is $i = 2, j = 1$: $\operatorname{Tor}_1(H_2(A), H_1(B)) = \operatorname{Tor}_1(\ZZ/2, \ZZ/2) \cong \ZZ/2\ZZ$.
   This contributes to $k = (i+j) + 1 = 4$.
 
-- For all other $i, j$, at least one factor is free ($\mathbb{Z}$ or $0$), so all other Tor terms vanish.
+- For all other $i, j$, at least one factor is free ($\ZZ$ or $0$), so all other Tor terms vanish.
 :::
 
 ::: pf-qed
@@ -117,23 +117,23 @@ Combine terms for each dimension $k$.
 ::: pf-proof
 
 ::: {.pf-step #s3-1}
-$k = 0$: $H_0 \cong \mathbb{Z}$.
+$k = 0$: $H_0 \cong \ZZ$.
 :::
 
 ::: {.pf-step #s3-2}
-$k = 1$: $H_1 \cong \mathbb{Z}/2\mathbb{Z}$.
+$k = 1$: $H_1 \cong \ZZ/2\ZZ$.
 :::
 
 ::: {.pf-step #s3-3}
-$k = 2$: $H_2 \cong \mathbb{Z}/2\mathbb{Z}$.
+$k = 2$: $H_2 \cong \ZZ/2\ZZ$.
 :::
 
 ::: {.pf-step #s3-4}
-$k = 3$: $H_3 \cong \mathbb{Z}/2\mathbb{Z}$.
+$k = 3$: $H_3 \cong \ZZ/2\ZZ$.
 :::
 
 ::: {.pf-step #s3-5}
-$k = 4$: $H_4 \cong \operatorname{Tor}_1(H_2(A), H_1(B)) \cong \mathbb{Z}/2\mathbb{Z}$.
+$k = 4$: $H_4 \cong \operatorname{Tor}_1(H_2(A), H_1(B)) \cong \ZZ/2\ZZ$.
 :::
 
 ::: {.pf-step #s3-6}
@@ -154,7 +154,7 @@ Conclusion.
 ::: pf-proof
 
 ::: pf-step
-The homology groups are: $$H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, \\ \mathbb{Z}/2\mathbb{Z} & k = 1, 2, 3, 4, \\ 0 & k \ge 5. \end{cases}$$
+The homology groups are: $$H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ) \cong \begin{cases} \ZZ & k = 0, \\ \ZZ/2\ZZ & k = 1, 2, 3, 4, \\ 0 & k \ge 5. \end{cases}$$
 
 ::: pf-proof
 The groups computed in step [](#s3){.pf-ref} assemble into the stated description of $H_k$ for all $k \ge 0$.

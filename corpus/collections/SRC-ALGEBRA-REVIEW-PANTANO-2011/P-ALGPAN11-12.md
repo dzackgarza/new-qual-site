@@ -21,17 +21,17 @@ audit:
 ::: {.problem}
 Which of the following subsets are subrings of the ring of real numbers?
 
-I. $\{a+b\sqrt2:a,b\in\mathbb Q\}$.
+I. $\{a+b\sqrt2:a,b\in\QQ\}$.
 
-II. $\{n/3^m:n\in\mathbb Z,\ m\ge0\}$.
+II. $\{n/3^m:n\in\ZZ,\ m\ge0\}$.
 
-III. $\{a+b\sqrt5:a,b\in\mathbb R,\ a^2+b^2\le1\}$.
+III. $\{a+b\sqrt5:a,b\in\RR,\ a^2+b^2\le1\}$.
 
 ![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-12.png)
 :::
 
 ::: {.solution}
-Exactly I and II are subrings of $\mathbb R$.
+Exactly I and II are subrings of $\RR$.
 
 ::: pf
 
@@ -43,7 +43,7 @@ I is a subring.
 
 The set
 \[
-\mathbb Q(\sqrt2)=\{a+b\sqrt2:a,b\in\mathbb Q\}
+\QQ(\sqrt2)=\{a+b\sqrt2:a,b\in\QQ\}
 \]
 is closed under addition, additive inverses, and multiplication, and contains $1$; in fact it is a field.
 
@@ -59,7 +59,7 @@ II is a subring.
 
 The set
 \[
-\left\{\frac n{3^m}:n\in\mathbb Z,\ m\ge0\right\}=\mathbb Z[1/3]
+\left\{\frac n{3^m}:n\in\ZZ,\ m\ge0\right\}=\ZZ[1/3]
 \]
 is closed under subtraction.
 Also

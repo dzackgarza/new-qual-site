@@ -31,7 +31,7 @@ Suppose $P$ is a Sylow $p$-subgroup and $N_G(P) = P$.
 (a) Prove that if $G$ has a subgroup $H$ of order $m$, then $$H = \{x \in G \mid o(x) \neq p\}.$$ Deduce that in this case, $H$ is a characteristic subgroup.
 
 (b) Suppose $G$ is solvable.
-Prove that $G$ has a normal subgroup $N$ such that $G/N \cong \mathbb{Z}/\ell\mathbb{Z}$ for some prime $\ell$.
+Prove that $G$ has a normal subgroup $N$ such that $G/N \cong \ZZ/\ell\ZZ$ for some prime $\ell$.
 
 (c) Suppose $G$ is solvable.
 Prove that $G$ has a normal subgroup of order $m$.
@@ -128,7 +128,7 @@ This proves part (a).
 
 If $G$ is solvable, then it has a normal subgroup $N$ with
 \[
-G/N\cong\mathbb Z/\ell\mathbb Z
+G/N\cong\ZZ/\ell\ZZ
 \]
 for some prime $\ell$.
 
@@ -153,7 +153,7 @@ G\twoheadrightarrow G^{\mathrm{ab}}.
 \]
 Then $N\trianglelefteq G$ and
 \[
-G/N\cong G^{\mathrm{ab}}/M\cong\mathbb Z/\ell\mathbb Z.
+G/N\cong G^{\mathrm{ab}}/M\cong\ZZ/\ell\ZZ.
 \]
 This proves part (b).
 

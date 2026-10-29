@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a holomorphic function on the punctured disk $U = \{z \in \mathbb{C} : 0 < |z| < 1\}$.
+Let $f$ be a holomorphic function on the punctured disk $U = \{z \in \CC : 0 < |z| < 1\}$.
 Suppose that $|f(z)| \le |z|^{-1/2}$ for all $z \in U$.
 Prove that $f$ has a removable singularity at $0$.
 :::

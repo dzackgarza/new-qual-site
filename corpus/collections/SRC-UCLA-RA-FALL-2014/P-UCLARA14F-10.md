@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let us introduce a vector space $\mathcal{B}$ defined as follows,
 \[
-\mathcal{B} = \left\{ u : \mathbb{C} \to \mathbb{C}, \ u \text{ is holomorphic and } \iint_{\mathbb{C}} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy < \infty \right\}.
+\mathcal{B} = \left\{ u : \CC \to \CC, \ u \text{ is holomorphic and } \iint_{\CC} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy < \infty \right\}.
 \]
 Show that $\mathcal{B}$ becomes a *complete* space when equipped with the norm
 \[
-\|u\|^2 = \iint_{\mathbb{C}} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy.
+\|u\|^2 = \iint_{\CC} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy.
 \]
 :::
 
@@ -45,11 +45,11 @@ where $dA=dx\,dy$ is planar Lebesgue measure.
 
 The ambient space
 \[
-L^2(\mathbb C,\mu)
+L^2(\CC,\mu)
 \]
 is a Hilbert space, and
 \[
-\mathcal B\subseteq L^2(\mathbb C,\mu)
+\mathcal B\subseteq L^2(\CC,\mu)
 \]
 is a linear subspace.
 
@@ -58,9 +58,9 @@ is a linear subspace.
 
 The measure $\mu$ is positive and $\sigma$-finite; in fact
 \[
-\mu(\mathbb C)
+\mu(\CC)
 =
-\int_{\mathbb C}e^{-|z|^2}\,dA(z)
+\int_{\CC}e^{-|z|^2}\,dA(z)
 =\pi<\infty.
 \]
 Thus the usual $L^2$ completeness theorem applies. Sums and scalar
@@ -72,11 +72,11 @@ multiples of entire functions are entire, so $\mathcal B$ is linear.
 
 ::: pf-step
 
-Fix a compact set $K\subset\mathbb C$ and define
+Fix a compact set $K\subset\CC$ and define
 \[
 K_1
 =
-\{w\in\mathbb C:\operatorname{dist}(w,K)\le1\}.
+\{w\in\CC:\operatorname{dist}(w,K)\le1\}.
 \]
 Then there exists a constant $c_K>0$ such that
 \[
@@ -154,7 +154,7 @@ claim.
 ::: {.pf-step #s1-4}
 
 Every norm-Cauchy sequence $(f_n)$ in $\mathcal B$ is locally
-uniformly Cauchy on $\mathbb C$.
+uniformly Cauchy on $\CC$.
 
 
 ::: pf-proof
@@ -182,14 +182,14 @@ There exists an entire function $g$ such that
 \[
 f_n\to g
 \]
-locally uniformly on $\mathbb C$.
+locally uniformly on $\CC$.
 
 
 ::: pf-proof
 
 By step [](#s1-4){.pf-ref}, on each compact disk the sequence is uniformly Cauchy, hence
 uniformly convergent to a continuous limit. These local limits agree on
-overlaps, producing a function $g$ on $\mathbb C$. The Weierstrass theorem
+overlaps, producing a function $g$ on $\CC$. The Weierstrass theorem
 for locally uniform limits of holomorphic functions shows that $g$ is
 entire.
 
@@ -235,7 +235,7 @@ step [](#s1-5){.pf-ref} gives
 \[
 f_{n_j}(z)\to g(z)
 \]
-for every $z\in\mathbb C$. Hence
+for every $z\in\CC$. Hence
 \[
 f=g
 \]

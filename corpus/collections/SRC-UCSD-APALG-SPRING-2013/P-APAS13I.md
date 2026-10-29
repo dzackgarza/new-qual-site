@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G$ and $H$ be finite groups and let $A\colon G\to\mathrm{GL}_n(\mathbb{C})$ and $B\colon H\to\mathrm{GL}_m(\mathbb{C})$ be representations of $G$ and $H$ respectively.
+Let $G$ and $H$ be finite groups and let $A\colon G\to\mathrm{GL}_n(\CC)$ and $B\colon H\to\mathrm{GL}_m(\CC)$ be representations of $G$ and $H$ respectively.
 
-(a) Show that $A\times B\colon G\times H\to\mathrm{GL}_{nm}(\mathbb{C})$ is a representation where for $(\sigma,\tau)\in G\times H$,
+(a) Show that $A\times B\colon G\times H\to\mathrm{GL}_{nm}(\CC)$ is a representation where for $(\sigma,\tau)\in G\times H$,
 \[
 A\times B((\sigma,\tau))=A(\sigma)\otimes B(\tau)
 \]
@@ -25,7 +25,7 @@ and for matrices $M$ and $N$, $M\otimes N$ is the Kronecker product of $M$ and $
 
 (c) Show that every irreducible representation of $G\times H$ is of the form $A\times B$ where $A$ is an irreducible representation of $G$ and $B$ is an irreducible representation of $H$.
 
-(d) Show that it is not always the case that if $C$ is a representation of $G\times H$, then $C$ is similar to a representation of the form $A\times B\colon G\times H\to\mathrm{GL}_n(\mathbb{C})$ where $A$ is a representation of $G$ and $B$ is a representation of $H$.
+(d) Show that it is not always the case that if $C$ is a representation of $G\times H$, then $C$ is similar to a representation of the form $A\times B\colon G\times H\to\mathrm{GL}_n(\CC)$ where $A$ is a representation of $G$ and $B$ is a representation of $H$.
 (Hint: Consider the two-dimensional representations of $S_2\times S_2$.)
 :::
 
@@ -89,7 +89,7 @@ For a finite group, the sum of the squares of the dimensions of all inequivalent
 
 For part (d), identify \(S_2\cong C_2=\{0,1\}\), and define a two-dimensional representation
 \[
-C:C_2\times C_2\longrightarrow \operatorname{GL}_2(\mathbb C)
+C:C_2\times C_2\longrightarrow \operatorname{GL}_2(\CC)
 \]
 by
 \[

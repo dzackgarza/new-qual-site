@@ -153,7 +153,7 @@ Thus tensor product in $\operatorname{Pic}(X)$ corresponds to addition in the ab
 ::: {.pf-step #exponential-sequence}
 On a complex manifold, the exponential sequence refines the relation:
 \[
-0\longrightarrow2\pi i\,\mathbb Z
+0\longrightarrow2\pi i\,\ZZ
 \longrightarrow\mathcal O_X
 \xrightarrow{\exp}\mathcal O_X^\times
 \longrightarrow1.
@@ -164,11 +164,11 @@ H^1(X,\mathcal O_X)
 \longrightarrow
 \operatorname{Pic}(X)
 \xrightarrow{c_1}
-H^2(X,\mathbb Z).
+H^2(X,\ZZ).
 \]
 
 ::: pf-proof
-The exponential map is locally surjective because every nowhere-vanishing holomorphic function has a local holomorphic logarithm.  Its kernel consists of the locally constant functions with values in $2\pi i\mathbb Z$, giving the short exact sequence of sheaves.
+The exponential map is locally surjective because every nowhere-vanishing holomorphic function has a local holomorphic logarithm.  Its kernel consists of the locally constant functions with values in $2\pi i\ZZ$, giving the short exact sequence of sheaves.
 
 Taking sheaf cohomology and using step [](#pic-h1-iso){.pf-ref} to identify
 \[
@@ -185,20 +185,20 @@ For a compact Riemann surface,
 \operatorname{Pic}^0(X)
 \cong
 H^1(X,\mathcal O_X)
-/H^1(X,2\pi i\mathbb Z),
+/H^1(X,2\pi i\ZZ),
 \]
 which is its Jacobian.
 
 ::: pf-proof
 Because $X$ is compact and connected,
 \[
-H^0(X,\mathcal O_X)=\mathbb C,
+H^0(X,\mathcal O_X)=\CC,
 \qquad
-H^0(X,\mathcal O_X^\times)=\mathbb C^\times.
+H^0(X,\mathcal O_X^\times)=\CC^\times.
 \]
-The exponential map $\mathbb C\to\mathbb C^\times$ is surjective, so exactness of the exponential sequence shows that
+The exponential map $\CC\to\CC^\times$ is surjective, so exactness of the exponential sequence shows that
 \[
-H^1(X,2\pi i\mathbb Z)
+H^1(X,2\pi i\ZZ)
 \longrightarrow
 H^1(X,\mathcal O_X)
 \]
@@ -206,9 +206,9 @@ is injective.
 
 By exactness in step [](#exponential-sequence){.pf-ref}, the kernel of
 \[
-c_1:\operatorname{Pic}(X)\to H^2(X,\mathbb Z)
+c_1:\operatorname{Pic}(X)\to H^2(X,\ZZ)
 \]
-is the image of $H^1(X,\mathcal O_X)$, with kernel equal to the image of $H^1(X,2\pi i\mathbb Z)$.  The kernel of $c_1$ is precisely the degree-zero component $\operatorname{Pic}^0(X)$.  Therefore the quotient has the displayed form.
+is the image of $H^1(X,\mathcal O_X)$, with kernel equal to the image of $H^1(X,2\pi i\ZZ)$.  The kernel of $c_1$ is precisely the degree-zero component $\operatorname{Pic}^0(X)$.  Therefore the quotient has the displayed form.
 :::
 
 :::

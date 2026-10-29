@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\{S_\alpha\}$ be a family of connected subsets of $\mathbb R^2$, all containing the origin. Prove that
+Let $\{S_\alpha\}$ be a family of connected subsets of $\RR^2$, all containing the origin. Prove that
 \[
 \bigcup_\alpha S_\alpha
 \]

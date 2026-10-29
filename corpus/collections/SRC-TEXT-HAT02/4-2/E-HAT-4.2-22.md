@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.2-22
 kind: problem
-title: "$H_{n+1}(K(G,n); \\mathbb{Z}) = 0$ for $n > 1$"
+title: "$H_{n+1}(K(G,n); \\ZZ) = 0$ for $n > 1$"
 classification:
   areas:
   - topology
@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Show that $H_{n+1}(K(G, n); \mathbb{Z}) = 0$ if $n > 1$.
+Show that $H_{n+1}(K(G, n); \ZZ) = 0$ if $n > 1$.
 :::
 
 ::: {.solution}
 For \(n>1\), choose an \((n-1)\)-connected Moore space \(M(G,n)\), so
 \[
-\widetilde H_i(M(G,n);\mathbb Z)=
+\widetilde H_i(M(G,n);\ZZ)=
 \begin{cases}
 G,&i=n,\\
 0,&i\ne n.
@@ -46,6 +46,6 @@ H_{n+1}(M(G,n))=0.
 \]
 Attaching cells of dimension \(n+2\) can only quotient \(H_{n+1}\) by images of new cellular boundaries; it cannot create a new \((n+1)\)-cycle. Cells of still higher dimension do not affect \(H_{n+1}\). Therefore the resulting Eilenberg--MacLane space satisfies
 \[
-\boxed{H_{n+1}(K(G,n);\mathbb Z)=0\qquad(n>1).}
+\boxed{H_{n+1}(K(G,n);\ZZ)=0\qquad(n>1).}
 \]
 :::

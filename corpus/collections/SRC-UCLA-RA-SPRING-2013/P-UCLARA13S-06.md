@@ -19,36 +19,36 @@ audit:
 ::: {.problem}
 Define
 \[
-X=\left\{\xi\longmapsto\int_{\mathbb R}e^{i\xi x}f(x)\,dx:\ f\in L^1(\mathbb R)\right\}.
+X=\left\{\xi\longmapsto\int_{\RR}e^{i\xi x}f(x)\,dx:\ f\in L^1(\RR)\right\}.
 \]
 Show that
 
-(a) $X\subset C_0(\mathbb R)$;
+(a) $X\subset C_0(\RR)$;
 
-(b) $X$ is dense in $C_0(\mathbb R)$;
+(b) $X$ is dense in $C_0(\RR)$;
 
-(c) $X\ne C_0(\mathbb R)$.
+(c) $X\ne C_0(\RR)$.
 :::
 
 ::: {.solution}
 
-For $f\in L^1(\mathbb R)$, write
+For $f\in L^1(\RR)$, write
 \[
 \mathcal Ff(\xi)
 \coloneqq
-\int_{\mathbb R}e^{i\xi x}f(x)\,dx.
+\int_{\RR}e^{i\xi x}f(x)\,dx.
 \]
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For every $f\in L^1(\mathbb R)$, the function $\mathcal Ff$ is continuous.
+For every $f\in L^1(\RR)$, the function $\mathcal Ff$ is continuous.
 
 
 ::: pf-proof
 
-Fix $\xi_0\in\mathbb R$. If $\xi\to\xi_0$, then for every $x$,
+Fix $\xi_0\in\RR$. If $\xi\to\xi_0$, then for every $x$,
 \[
 e^{i\xi x}f(x)
 \longrightarrow
@@ -73,7 +73,7 @@ Since $|f|\in L^1$, dominated convergence gives
 
 ::: {.pf-step #s1-2}
 
-For every $f\in L^1(\mathbb R)$,
+For every $f\in L^1(\RR)$,
 \[
 \mathcal Ff(\xi)\longrightarrow0
 \qquad
@@ -85,20 +85,20 @@ For every $f\in L^1(\mathbb R)$,
 
 Fix $\varepsilon>0$. Choose
 \[
-\phi\in C_c^1(\mathbb R)
+\phi\in C_c^1(\RR)
 \]
 such that
 \[
 \|f-\phi\|_1<\frac{\varepsilon}{2};
 \]
-the space $C_c^1(\mathbb R)$ is dense in $L^1(\mathbb R)$.
+the space $C_c^1(\RR)$ is dense in $L^1(\RR)$.
 
 For $\xi\ne0$, integration by parts gives
 \[
 \mathcal F\phi(\xi)
 =
 -\frac1{i\xi}
-\int_{\mathbb R}
+\int_{\RR}
 e^{i\xi x}\phi'(x)\,dx,
 \]
 because $\phi$ has compact support. Hence
@@ -129,7 +129,7 @@ For sufficiently large $|\xi|$, the first term is also less than $\varepsilon/2$
 
 Therefore
 \[
-\boxed{X\subset C_0(\mathbb R)}.
+\boxed{X\subset C_0(\RR)}.
 \]
 
 
@@ -150,15 +150,15 @@ Every Schwartz function belongs to $X$.
 
 The Fourier transform is a bijection
 \[
-\mathcal S(\mathbb R)
+\mathcal S(\RR)
 \longrightarrow
-\mathcal S(\mathbb R)
+\mathcal S(\RR)
 \]
 for any fixed standard Fourier normalization. Thus if
 \[
-h\in\mathcal S(\mathbb R),
+h\in\mathcal S(\RR),
 \]
-there is $g\in\mathcal S(\mathbb R)\subset L^1(\mathbb R)$ such that
+there is $g\in\mathcal S(\RR)\subset L^1(\RR)$ such that
 \[
 h=\mathcal Fg
 \]
@@ -170,18 +170,18 @@ with the sign convention used here after replacing the variable by its negative 
 
 ::: {.pf-step #s1-5}
 
-The Schwartz space is dense in $C_0(\mathbb R)$ in the supremum norm.
+The Schwartz space is dense in $C_0(\RR)$ in the supremum norm.
 
 
 ::: pf-proof
 
-Fix $h\in C_0(\mathbb R)$ and $\varepsilon>0$. Choose $R>0$ so that
+Fix $h\in C_0(\RR)$ and $\varepsilon>0$. Choose $R>0$ so that
 \[
 |h(x)|<\varepsilon
 \qquad
 (|x|>R).
 \]
-Choose a smooth cutoff $\chi\in C_c^\infty(\mathbb R)$ with
+Choose a smooth cutoff $\chi\in C_c^\infty(\RR)$ with
 \[
 0\le\chi\le1,
 \qquad
@@ -208,12 +208,12 @@ is smooth and compactly supported, hence is a Schwartz function. Thus every $h\i
 
 ::: {.pf-step #s1-6}
 
-The subspace $X$ is dense in $C_0(\mathbb R)$.
+The subspace $X$ is dense in $C_0(\RR)$.
 
 
 ::: pf-proof
 
-By step [](#s1-4){.pf-ref}, $X$ contains the Schwartz space. By step [](#s1-5){.pf-ref}, the latter is dense in $C_0(\mathbb R)$.
+By step [](#s1-4){.pf-ref}, $X$ contains the Schwartz space. By step [](#s1-5){.pf-ref}, the latter is dense in $C_0(\RR)$.
 
 :::
 
@@ -223,7 +223,7 @@ By step [](#s1-4){.pf-ref}, $X$ contains the Schwartz space. By step [](#s1-5){.
 
 The Fourier transform
 \[
-\mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
+\mathcal F:L^1(\RR)\to C_0(\RR)
 \]
 is bounded and injective.
 
@@ -236,7 +236,7 @@ For every $f\in L^1$,
 \le
 \|f\|_1,
 \]
-so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for the Fourier transform on $L^1(\mathbb R)$.
+so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for the Fourier transform on $L^1(\RR)$.
 
 :::
 
@@ -246,7 +246,7 @@ so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for t
 
 Suppose, toward a contradiction, that
 \[
-X=C_0(\mathbb R).
+X=C_0(\RR).
 \]
 Then there is a constant $C>0$ such that
 \[
@@ -254,7 +254,7 @@ Then there is a constant $C>0$ such that
 \le
 C\|\mathcal Ff\|_\infty
 \qquad
-(f\in L^1(\mathbb R)).
+(f\in L^1(\RR)).
 \]
 
 
@@ -262,7 +262,7 @@ C\|\mathcal Ff\|_\infty
 
 Under the assumption, step [](#s1-7){.pf-ref} makes
 \[
-\mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
+\mathcal F:L^1(\RR)\to C_0(\RR)
 \]
 a bounded linear bijection between Banach spaces. By the open mapping theorem, its inverse is bounded. The displayed estimate is exactly boundedness of that inverse.
 
@@ -272,7 +272,7 @@ a bounded linear bijection between Banach spaces. By the open mapping theorem, i
 
 ::: {.pf-step #s1-9}
 
-There exists a sequence $(h_j)\subset C_c^\infty(\mathbb R)$ such that
+There exists a sequence $(h_j)\subset C_c^\infty(\RR)$ such that
 \[
 \sup_j\|h_j\|_\infty<\infty
 \]
@@ -283,7 +283,7 @@ h
 \coloneqq
 \mathbf 1_{[-1,1]}
 \]
-in $L^2(\mathbb R)$.
+in $L^2(\RR)$.
 
 
 ::: pf-proof
@@ -327,12 +327,12 @@ By the Plancherel theorem, the Fourier transform extends to an isomorphism of $L
 
 ::: {.pf-step #s1-11}
 
-The function $g$ from step [](#s1-10){.pf-ref} does not belong to $L^1(\mathbb R)$.
+The function $g$ from step [](#s1-10){.pf-ref} does not belong to $L^1(\RR)$.
 
 
 ::: pf-proof
 
-Suppose instead that $g\in L^1$. Then by step [](#s1-3){.pf-ref}, its $L^1$ Fourier transform has a continuous representative in $C_0(\mathbb R)$. By compatibility of the $L^1$ and $L^2$ Fourier transforms, that continuous representative agrees almost everywhere with
+Suppose instead that $g\in L^1$. Then by step [](#s1-3){.pf-ref}, its $L^1$ Fourier transform has a continuous representative in $C_0(\RR)$. By compatibility of the $L^1$ and $L^2$ Fourier transforms, that continuous representative agrees almost everywhere with
 \[
 h=\mathbf 1_{[-1,1]}.
 \]
@@ -357,10 +357,10 @@ One has
 
 Along the almost-everywhere convergent subsequence from step [](#s1-10){.pf-ref}, Fatou's lemma gives
 \[
-\int_{\mathbb R}|g(x)|\,dx
+\int_{\RR}|g(x)|\,dx
 \le
 \liminf_{j\to\infty}
-\int_{\mathbb R}|g_j(x)|\,dx.
+\int_{\RR}|g_j(x)|\,dx.
 \]
 The left-hand side is infinite by step [](#s1-11){.pf-ref}, so the liminf is infinite.
 
@@ -393,7 +393,7 @@ The right-hand side is uniformly bounded by step [](#s1-9){.pf-ref}, contradicti
 
 Therefore
 \[
-\boxed{X\ne C_0(\mathbb R)}.
+\boxed{X\ne C_0(\RR)}.
 \]
 
 

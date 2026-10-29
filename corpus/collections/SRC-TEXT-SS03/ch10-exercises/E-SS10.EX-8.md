@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-8. Consider Pythagorean triples $( a , b , c )$ with $a ^ { 2 } + b ^ { 2 } = c ^ { 2 }$ , and with $a , b , c \in \mathbb { Z }$ Suppose moreover that a and b have no common factors.
+8. Consider Pythagorean triples $( a , b , c )$ with $a ^ { 2 } + b ^ { 2 } = c ^ { 2 }$ , and with $a , b , c \in \ZZ$ Suppose moreover that a and b have no common factors.
 
 (a) Show that either a or b must be odd, and the other even.
 

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Show that if $A\in M_{n,n}(\mathbb C)$ is normal, then
+Problem 6. Show that if $A\in M_{n,n}(\CC)$ is normal, then
 \[
 A^*=P(A)
 \]
@@ -52,7 +52,7 @@ The spectral theorem for normal complex matrices says precisely that a normal ma
 
 ::: {.pf-step #s1-2}
 
-There exists a polynomial $P\in\mathbb C[x]$ satisfying
+There exists a polynomial $P\in\CC[x]$ satisfying
 \[
 P(\lambda_i)=\overline{\lambda_i}
 \qquad(i=1,\ldots,r).

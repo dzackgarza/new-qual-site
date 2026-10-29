@@ -46,11 +46,11 @@ Every continuous odd map $g \colon S^1 \to S^1$ has odd degree $\deg(g) \equiv 1
 ::: pf-proof
 
 ::: pf-step
-Using the standard covering map $p \colon \mathbb{R} \to S^1$ given by $t \mapsto e^{2\pi i t}$, lift $g$ to a continuous map $\widetilde{g} \colon \mathbb{R} \to \mathbb{R}$.
+Using the standard covering map $p \colon \RR \to S^1$ given by $t \mapsto e^{2\pi i t}$, lift $g$ to a continuous map $\widetilde{g} \colon \RR \to \RR$.
 :::
 
 ::: pf-step
-The condition $g(t + 1/2) = -g(t) = e^{i\pi} g(t)$ implies $\widetilde{g}(t + 1/2) - \widetilde{g}(t) = k + 1/2$ for some fixed integer $k \in \mathbb{Z}$.
+The condition $g(t + 1/2) = -g(t) = e^{i\pi} g(t)$ implies $\widetilde{g}(t + 1/2) - \widetilde{g}(t) = k + 1/2$ for some fixed integer $k \in \ZZ$.
 :::
 
 ::: pf-step

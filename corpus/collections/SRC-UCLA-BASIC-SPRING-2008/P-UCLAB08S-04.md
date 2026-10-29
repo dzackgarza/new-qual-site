@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X\subset\mathbb R^N$ be compact, and let $(f_n)$ be continuous real-valued functions on $X$ satisfying
+Let $X\subset\RR^N$ be compact, and let $(f_n)$ be continuous real-valued functions on $X$ satisfying
 \[
 0\le f_{n+1}(x)\le f_n(x)
 \]
@@ -49,7 +49,7 @@ Then $U_n$ is open in $X$.
 
 The function
 \[
-f_n:X\to\mathbb R
+f_n:X\to\RR
 \]
 is continuous.
 Therefore

@@ -29,7 +29,7 @@ Show that every irreducible character $\chi$ of $B(n)$ takes values in $\{-1, 1\
 The generators $\tau_1,\ldots,\tau_n$ are pairwise disjoint transpositions, so they commute and each has order $2$. Hence
 \[
 B(n)=\langle\tau_1\rangle\times\cdots\times\langle\tau_n\rangle
-\cong (\mathbb Z/2\mathbb Z)^n.
+\cong (\ZZ/2\ZZ)^n.
 \]
 Every element is uniquely
 \[
@@ -37,7 +37,7 @@ Every element is uniquely
 \qquad \varepsilon_i\in\{0,1\}.
 \]
 
-Since $B(n)$ is abelian, every irreducible complex representation is one-dimensional (Schur's lemma), so an irreducible character is a homomorphism $\chi:B(n)\to\mathbb C^\times$. Since $\tau_i^2=1$,
+Since $B(n)$ is abelian, every irreducible complex representation is one-dimensional (Schur's lemma), so an irreducible character is a homomorphism $\chi:B(n)\to\CC^\times$. Since $\tau_i^2=1$,
 \[
 \chi(\tau_i)^2=1,
 \]
@@ -63,11 +63,11 @@ Equivalently,
 Every linear character is obtained uniquely this way because its values on the generators determine it. Thus
 \[
 \widehat{B(n)}=\{\chi_S:S\subseteq\{1,\ldots,n\}\}
-\cong (\mathbb Z/2\mathbb Z)^n.
+\cong (\ZZ/2\ZZ)^n.
 \]
 Under multiplication of characters,
 \[
 \chi_S\chi_T=\chi_{S\triangle T},
 \]
-so the isomorphism with $(\mathbb Z/2\mathbb Z)^n$ is explicit.
+so the isomorphism with $(\ZZ/2\ZZ)^n$ is explicit.
 :::

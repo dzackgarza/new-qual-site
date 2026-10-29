@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE50
 kind: problem
-title: Radial harmonic functions in $\mathbb{R}^d$
+title: Radial harmonic functions in $\RR^d$
 classification:
   areas: [prelim]
   topics: []
@@ -22,7 +22,7 @@ Show that this potential can be written as $\textstyle u ( r ) = { \frac { a } {
 
 ::: {.solution}
 
-Let $u=u(r)$ with $r=|x|$ in $\mathbb R^d$, where $d\geq3$.
+Let $u=u(r)$ with $r=|x|$ in $\RR^d$, where $d\geq3$.
 
 ::: pf
 

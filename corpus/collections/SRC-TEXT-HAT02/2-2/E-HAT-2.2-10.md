@@ -46,9 +46,9 @@ The quotient equator is $S^1/(x\sim-x)=\mathbb{RP}^1\cong S^1$. The northern and
 
 Thus the cellular chain complex is
 \[
-0\longrightarrow\mathbb Z^2
-\xrightarrow{d_2}\mathbb Z
-\xrightarrow{0}\mathbb Z\longrightarrow0,
+0\longrightarrow\ZZ^2
+\xrightarrow{d_2}\ZZ
+\xrightarrow{0}\ZZ\longrightarrow0,
 \qquad
  d_2(a,b)=2a\pm2b.
 \]
@@ -57,12 +57,12 @@ Therefore
 \boxed{
 H_i(X_2)\cong
 \begin{cases}
-\mathbb Z,&i=0,2,\\
-\mathbb Z_2,&i=1,\\
+\ZZ,&i=0,2,\\
+\ZZ_2,&i=1,\\
 0,&\text{otherwise}.
 \end{cases}}
 \]
-Indeed, $\operatorname{im}d_2=2\mathbb Z$ and $\ker d_2\cong\mathbb Z$.
+Indeed, $\operatorname{im}d_2=2\ZZ$ and $\ker d_2\cong\ZZ$.
 
 Now let $X_3$ be the quotient of $S^3$ obtained by identifying antipodal points on the equatorial $S^2$.
 
@@ -87,7 +87,7 @@ The equator quotient is exactly $\mathbb{RP}^2$. Each open hemisphere of $S^3$ i
 
 ::: pf-step
 
-The cellular boundary $d_3:\mathbb Z^2\to\mathbb Z$ is zero.
+The cellular boundary $d_3:\ZZ^2\to\ZZ$ is zero.
 
 ::: pf-proof
 
@@ -105,19 +105,19 @@ Equivalently, after collapsing $\mathbb{RP}^1$, the attaching map $S^2\to S^2$ h
 
 The cellular chain complex is therefore
 \[
-0\longrightarrow\mathbb Z^2
-\xrightarrow{0}\mathbb Z
-\xrightarrow{2}\mathbb Z
-\xrightarrow{0}\mathbb Z\longrightarrow0.
+0\longrightarrow\ZZ^2
+\xrightarrow{0}\ZZ
+\xrightarrow{2}\ZZ
+\xrightarrow{0}\ZZ\longrightarrow0.
 \]
 Hence
 \[
 \boxed{
 H_i(X_3)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z_2,&i=1,\\
-\mathbb Z^2,&i=3,\\
+\ZZ,&i=0,\\
+\ZZ_2,&i=1,\\
+\ZZ^2,&i=3,\\
 0,&\text{otherwise}.
 \end{cases}}
 \]

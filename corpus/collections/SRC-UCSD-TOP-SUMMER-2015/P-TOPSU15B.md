@@ -25,23 +25,23 @@ Prove that there is no compact $4$-manifold $M$ (with or without boundary) which
 ::: {.pf-step #suspension-homology}
 Suspension shifts reduced homology, so
 $$
-\widetilde H_i(\Sigma\mathbb{RP}^3;\mathbb Z)
-\cong \widetilde H_{i-1}(\mathbb{RP}^3;\mathbb Z).
+\widetilde H_i(\Sigma\mathbb{RP}^3;\ZZ)
+\cong \widetilde H_{i-1}(\mathbb{RP}^3;\ZZ).
 $$
 Hence
 $$
-H_2(\Sigma\mathbb{RP}^3)\cong\mathbb Z/2,\qquad
-H_4(\Sigma\mathbb{RP}^3)\cong\mathbb Z,\qquad H_1=H_3=0.
+H_2(\Sigma\mathbb{RP}^3)\cong\ZZ/2,\qquad
+H_4(\Sigma\mathbb{RP}^3)\cong\ZZ,\qquad H_1=H_3=0.
 $$
 
 ::: pf-proof
-The integral homology of $\mathbb{RP}^3$ is $H_0=H_3=\mathbb Z$, $H_1=\mathbb Z/2$, and $H_2=0$.
+The integral homology of $\mathbb{RP}^3$ is $H_0=H_3=\ZZ$, $H_1=\ZZ/2$, and $H_2=0$.
 :::
 
 :::
 
 ::: {.pf-step #m-closed-orientable}
-If a compact $4$-manifold $M$ were homotopy equivalent to this suspension, then $H_4(M;\mathbb Z)\cong\mathbb Z$. Thus $M$ would be closed and orientable.
+If a compact $4$-manifold $M$ were homotopy equivalent to this suspension, then $H_4(M;\ZZ)\cong\ZZ$. Thus $M$ would be closed and orientable.
 
 ::: pf-proof
 A compact connected $4$-manifold with nonempty boundary has zero absolute top homology, and a closed nonorientable manifold has zero integral top homology.
@@ -50,7 +50,7 @@ A compact connected $4$-manifold with nonempty boundary has zero absolute top ho
 :::
 
 ::: {.pf-step #h1-h2-values}
-We would also have $H_1(M)=0$ and $H_2(M)=\mathbb Z/2$.
+We would also have $H_1(M)=0$ and $H_2(M)=\ZZ/2$.
 
 ::: pf-proof
 Homotopy equivalence preserves homology; use step [](#suspension-homology){.pf-ref}.
@@ -64,7 +64,7 @@ For a closed oriented $4$-manifold with $H_1=0$, the group $H_2$ is torsion-free
 ::: pf-proof
 Poincaré duality gives $H_2(M)\cong H^2(M)$. The universal coefficient sequence
 $$
-0\to\operatorname{Ext}(H_1(M),\mathbb Z)\to H^2(M)\to\operatorname{Hom}(H_2(M),\mathbb Z)\to0
+0\to\operatorname{Ext}(H_1(M),\ZZ)\to H^2(M)\to\operatorname{Hom}(H_2(M),\ZZ)\to0
 $$
 has zero left term, so $H^2(M)$ is free abelian. Hence $H_2(M)$ is free abelian as well.
 :::
@@ -72,7 +72,7 @@ has zero left term, so $H^2(M)$ is free abelian. Hence $H_2(M)$ is free abelian 
 :::
 
 ::: pf-step
-This contradicts $H_2(M)\cong\mathbb Z/2$. Therefore
+This contradicts $H_2(M)\cong\ZZ/2$. Therefore
 $$
 \boxed{\Sigma\mathbb{RP}^3\text{ is not homotopy equivalent to any compact }4\text{-manifold}.}
 $$

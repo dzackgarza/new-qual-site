@@ -36,7 +36,7 @@ is a fiber bundle.
 
 First compare dimensions. Since a fiber bundle is locally a product, the total space is locally modeled on
 \[
-\mathbb R^n\times\mathbb R^k,
+\RR^n\times\RR^k,
 \]
 so
 \[
@@ -53,7 +53,7 @@ The long exact homotopy sequence of the bundle contains
 \]
 Since \(m>n\), the first group is zero, while
 \[
-\pi_n(S^n)\cong\mathbb Z.
+\pi_n(S^n)\cong\ZZ.
 \]
 Thus \(\pi_{n-1}(S^k)\ne0\), forcing
 \[
@@ -67,7 +67,7 @@ On the other hand, if \(k<n-1\), then the segment
 \]
 would be
 \[
-0\longrightarrow\mathbb Z\longrightarrow0,
+0\longrightarrow\ZZ\longrightarrow0,
 \]
 a contradiction. Hence
 \[
@@ -94,15 +94,15 @@ C_p=S^n\cup_p CS^{2n-1}.
 \]
 This is a closed \(2n\)-manifold. Indeed, away from the copy of \(S^n\) and the cone point this is clear. Near a point of the copy of \(S^n\), choose a bundle trivialization over a small ball \(U\subset S^n\). Coning each fiber \(S^{n-1}\) produces a disk \(D^n\), so a neighborhood is
 \[
-U\times D^n\cong\mathbb R^{2n}.
+U\times D^n\cong\RR^{2n}.
 \]
 A neighborhood of the cone point is the cone on \(S^{2n-1}\), hence a \(2n\)-disk.
 
 The cellular cohomology of the mapping cone has
 \[
-H^n(C_p;\mathbb Z)\cong\mathbb Z,
+H^n(C_p;\ZZ)\cong\ZZ,
 \qquad
-H^{2n}(C_p;\mathbb Z)\cong\mathbb Z.
+H^{2n}(C_p;\ZZ)\cong\ZZ.
 \]
 Let \(\alpha\) and \(\beta\) be generators in these degrees. By definition of the Hopf invariant,
 \[
@@ -110,8 +110,8 @@ Let \(\alpha\) and \(\beta\) be generators in these degrees. By definition of th
 \]
 Since \(C_p\) is a closed orientable \(2n\)-manifold, Poincaré duality says that the middle-dimensional intersection pairing
 \[
-H^n(C_p;\mathbb Z)\times H^n(C_p;\mathbb Z)
-\longrightarrow H^{2n}(C_p;\mathbb Z)\cong\mathbb Z
+H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)
+\longrightarrow H^{2n}(C_p;\ZZ)\cong\ZZ
 \]
 is unimodular. As the middle cohomology has rank one, its matrix is the \(1\times1\) matrix \((H(p))\). Unimodularity therefore forces
 \[

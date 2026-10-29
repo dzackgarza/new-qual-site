@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HWAMG
 kind: problem
 title: The discontinuity set of a real function is $F_\sigma$; no function is continuous
-  exactly on $\mathbb{Q}$
+  exactly on $\QQ$
 classification:
   areas:
   - real-analysis
@@ -37,7 +37,7 @@ Part (a): The discontinuity set is $F_\sigma$:
 
 ::: pf-step
 
-For a function $f: [0, 1] \to \mathbb{R}$, define the oscillation of $f$ at $x \in [0, 1]$ by:
+For a function $f: [0, 1] \to \RR$, define the oscillation of $f$ at $x \in [0, 1]$ by:
 \[
 \omega_f(x) = \inf_{r > 0} \operatorname{diam} f(B_r(x) \cap [0, 1]) = \inf_{r > 0} \sup \big\{|f(y) - f(z)| : y, z \in B_r(x) \cap [0, 1]\big\}.
 \]
@@ -102,7 +102,7 @@ definition of $F_\sigma$.
 
 ::: {.pf-step #s2}
 
-Part (b): Non-existence of a function continuous exactly on $\mathbb{Q} \cap [0, 1]$:
+Part (b): Non-existence of a function continuous exactly on $\QQ \cap [0, 1]$:
 
 ::: pf-proof
 
@@ -120,8 +120,8 @@ complement of an $F_\sigma$ set is $G_\delta$.
 
 ::: pf-step
 
-Suppose for contradiction that there exists $f: [0, 1] \to \mathbb{R}$ whose set of continuity points is $C = \mathbb{Q} \cap [0, 1]$.
-Then $\mathbb{Q} \cap [0, 1] = \bigcap_{n=1}^\infty V_n$ for open sets $V_n \subseteq [0, 1]$.
+Suppose for contradiction that there exists $f: [0, 1] \to \RR$ whose set of continuity points is $C = \QQ \cap [0, 1]$.
+Then $\QQ \cap [0, 1] = \bigcap_{n=1}^\infty V_n$ for open sets $V_n \subseteq [0, 1]$.
 
 ::: pf-proof
 
@@ -133,7 +133,7 @@ assumption for contradiction.
 
 ::: pf-step
 
-Since $\mathbb{Q} \cap [0, 1] \subseteq V_n$ and $\mathbb{Q} \cap [0, 1]$ is dense in $[0, 1]$, each open set $V_n$ is dense in $[0, 1]$.
+Since $\QQ \cap [0, 1] \subseteq V_n$ and $\QQ \cap [0, 1]$ is dense in $[0, 1]$, each open set $V_n$ is dense in $[0, 1]$.
 
 ::: pf-proof
 
@@ -145,7 +145,7 @@ a superset of a dense set is dense.
 
 ::: pf-step
 
-Enumerate the countable set $\mathbb{Q} \cap [0, 1] = \{q_1, q_2, q_3, \dots\}$.
+Enumerate the countable set $\QQ \cap [0, 1] = \{q_1, q_2, q_3, \dots\}$.
 For each $k \ge 1$, $W_k = [0, 1] \setminus \{q_k\}$ is open and dense in $[0, 1]$.
 
 ::: pf-proof
@@ -160,7 +160,7 @@ singletons have empty interior in $[0, 1]$.
 
 Since $[0, 1]$ is a complete metric space, the Baire Category Theorem implies that the countable intersection of dense open subsets:
 \[
-\left( \bigcap_{n=1}^\infty V_n \right) \cap \left( \bigcap_{k=1}^\infty W_k \right) = (\mathbb{Q} \cap [0, 1]) \cap \big([0, 1] \setminus (\mathbb{Q} \cap [0, 1])\big) = \emptyset
+\left( \bigcap_{n=1}^\infty V_n \right) \cap \left( \bigcap_{k=1}^\infty W_k \right) = (\QQ \cap [0, 1]) \cap \big([0, 1] \setminus (\QQ \cap [0, 1])\big) = \emptyset
 \]
 must be dense in $[0, 1]$, and in particular non-empty.
 This contradicts the fact that the intersection is empty.

@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-8. Let $H=\{z\in\mathbb C:\operatorname{Re}z>0\}$ be the right half-plane.
+8. Let $H=\{z\in\CC:\operatorname{Re}z>0\}$ be the right half-plane.
 
-(a) Does there exist a surjective holomorphic map $f : H \to \mathbb { C } ?$ Either give an example or prove that one does not exist.
+(a) Does there exist a surjective holomorphic map $f : H \to \CC ?$ Either give an example or prove that one does not exist.
 
-(b) Does there exist a surjective holomorphic map $f : \mathbb { C } \to H ?$ Either give an example or prove that one does not exist.
+(b) Does there exist a surjective holomorphic map $f : \CC \to H ?$ Either give an example or prove that one does not exist.
 :::
 
 ::: {.solution}
@@ -40,18 +40,18 @@ The answer to (a) is yes; the answer to (b) is no.
 
 ::: pf-step
 
-The polynomial $p(z)=z^2-z$ maps $H$ onto $\mathbb C$.
+The polynomial $p(z)=z^2-z$ maps $H$ onto $\CC$.
 
 ::: pf-proof
 
 The restriction of this polynomial to $H$ is holomorphic.
-For any $w\in\mathbb C$, let $z_1,z_2$ be the two roots,
+For any $w\in\CC$, let $z_1,z_2$ be the two roots,
 counted with multiplicity, of $z^2-z-w=0$. The quadratic
 formula gives $z_1+z_2=1$, hence
 $\operatorname{Re}z_1+\operatorname{Re}z_2=1$.
 At least one root has real part at least $1/2$, so lies
 in $H$. That root maps to $w$. This proves surjectivity
-onto $\mathbb C$.
+onto $\CC$.
 
 :::
 
@@ -59,7 +59,7 @@ onto $\mathbb C$.
 
 ::: pf-step
 
-Every holomorphic map from $\mathbb C$ to $H$ is constant.
+Every holomorphic map from $\CC$ to $H$ is constant.
 
 ::: pf-proof
 

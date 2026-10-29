@@ -29,7 +29,7 @@ audit:
 
 There is an infinite set
 \[
-N_1\subseteq\mathbb N
+N_1\subseteq\NN
 \]
 such that the sequence
 \[
@@ -44,7 +44,7 @@ The values satisfy
 \[
 |f_n(1)|\le1.
 \]
-Thus the sequence is bounded in $\mathbb R$.
+Thus the sequence is bounded in $\RR$.
 By Bolzano--Weierstrass, it has a convergent subsequence.
 Let $N_1$ be its infinite index set.
 
@@ -114,7 +114,7 @@ n_{i+1}>n_i.
 
 ::: {.pf-step #s1-4}
 
-For every fixed $m\in\mathbb N$,
+For every fixed $m\in\NN$,
 \[
 f_{n_i}(m)
 \]

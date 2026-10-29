@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find a sequence $\left( a _ { n } \right)$ such that $a _ { n } > 0$ for all $n \in \mathbb { N }$ and $a _ { n } \to 0$ but
+Find a sequence $\left( a _ { n } \right)$ such that $a _ { n } > 0$ for all $n \in \NN$ and $a _ { n } \to 0$ but
 
 $$
 \sum _ { n = 1 } ^ { \infty } ( - 1 ) ^ { n } a _ { n } \mathrm { d i v e r g e s } .

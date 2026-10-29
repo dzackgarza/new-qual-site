@@ -22,7 +22,7 @@ Assume that $[K:\QQ] = 1225$ and show that $f(x)$ is solvable by radicals.
 
 ::: {.solution}
 
-Let $G=\operatorname{Gal}(K/\mathbb Q)$.
+Let $G=\operatorname{Gal}(K/\QQ)$.
 
 ::: pf
 

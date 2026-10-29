@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \alpha \frac { e ^ { - \mu r } } { r }$ , where $r = | \vec { r } |$ $\vec { r } \in \mathbb R ^ { 3 }$ , and α and µ are constants.
+Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \alpha \frac { e ^ { - \mu r } } { r }$ , where $r = | \vec { r } |$ $\vec { r } \in \RR ^ { 3 }$ , and α and µ are constants.
 :::
 
 ::: {.remark}
@@ -26,7 +26,7 @@ $$
 \widetilde f(\vec k)
 =
 \frac1{(2\pi)^3}
-\int_{\mathbb R^3}
+\int_{\RR^3}
 f(\vec r)e^{-i\vec k\cdot\vec r}
 \,d^3r.
 $$
@@ -267,7 +267,7 @@ which is the same value.
 
 ::: pf-qed
 
-Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the Fourier image for all $\vec k\in\mathbb R^3$.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the Fourier image for all $\vec k\in\RR^3$.
 
 :::
 

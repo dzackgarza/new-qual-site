@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-In $\mathbb Z[x]$, show that the ideal
+In $\ZZ[x]$, show that the ideal
 \[
 I=(5,x^2+2)
 \]

@@ -49,9 +49,9 @@ that contains neither \(x\) nor \(y\).
 
 ::: pf-proof
 
-Choose homogeneous representatives \(v_x,v_y\in\mathbb R^{n+1}\) for the two projective points. Since the two projective points are distinct, choose a nonzero linear functional
+Choose homogeneous representatives \(v_x,v_y\in\RR^{n+1}\) for the two projective points. Since the two projective points are distinct, choose a nonzero linear functional
 \[
-\lambda:\mathbb R^{n+1}\to\mathbb R
+\lambda:\RR^{n+1}\to\RR
 \]
 with
 \[
@@ -71,7 +71,7 @@ The complement
 \[
 \mathbb{RP}^n-H
 \]
-is an affine \(n\)-space, hence homeomorphic to \(\mathbb R^n\), and contains both punctures.
+is an affine \(n\)-space, hence homeomorphic to \(\RR^n\), and contains both punctures.
 
 
 ::: pf-proof
@@ -203,13 +203,13 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 The integral homology of \(\mathbb{RP}^{m}\) is
 \[
-H_k(\mathbb{RP}^{m};\mathbb Z)
+H_k(\mathbb{RP}^{m};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/2,&0<k<m\text{ and }k\text{ odd},\\
+\ZZ,&k=0,\\
+\ZZ/2,&0<k<m\text{ and }k\text{ odd},\\
 0,&0<k<m\text{ and }k\text{ even},\\
-\mathbb Z,&k=m\text{ and }m\text{ odd},\\
+\ZZ,&k=m\text{ and }m\text{ odd},\\
 0,&k=m\text{ and }m\text{ even}.
 \end{cases}
 \]
@@ -244,10 +244,10 @@ Therefore, for
 \]
 \[
 \boxed{
-H_k(X;\mathbb Z)
+H_k(X;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z/2,&k\text{ odd},\\
+\ZZ/2,&k\text{ odd},\\
 0,&k\text{ even}.
 \end{cases}}
 \]
@@ -266,15 +266,15 @@ In these degrees, only the \(\mathbb{RP}^{n-1}\)-summand contributes. Apply step
 If \(n\) is even, then \(n-1\) is odd, so
 \[
 \boxed{
-H_{n-1}(X;\mathbb Z)
+H_{n-1}(X;\ZZ)
 \cong
-\mathbb Z\oplus\mathbb Z}.
+\ZZ\oplus\ZZ}.
 \]
 
 
 ::: pf-proof
 
-The top homology of \(\mathbb{RP}^{n-1}\) is \(\mathbb Z\) when \(n-1\) is odd, and the \(S^{n-1}\)-summand contributes another \(\mathbb Z\).
+The top homology of \(\mathbb{RP}^{n-1}\) is \(\ZZ\) when \(n-1\) is odd, and the \(S^{n-1}\)-summand contributes another \(\ZZ\).
 
 :::
 
@@ -285,15 +285,15 @@ The top homology of \(\mathbb{RP}^{n-1}\) is \(\mathbb Z\) when \(n-1\) is odd, 
 If \(n\) is odd, then \(n-1\) is even, so
 \[
 \boxed{
-H_{n-1}(X;\mathbb Z)
+H_{n-1}(X;\ZZ)
 \cong
-\mathbb Z}.
+\ZZ}.
 \]
 
 
 ::: pf-proof
 
-The top integral homology of the even-dimensional nonorientable manifold \(\mathbb{RP}^{n-1}\) is \(0\), while the sphere summand contributes \(\mathbb Z\).
+The top integral homology of the even-dimensional nonorientable manifold \(\mathbb{RP}^{n-1}\) is \(0\), while the sphere summand contributes \(\ZZ\).
 
 :::
 
@@ -304,7 +304,7 @@ The top integral homology of the even-dimensional nonorientable manifold \(\math
 Since \(X\) is connected for \(n\ge2\),
 \[
 \boxed{
-H_0(X;\mathbb Z)\cong\mathbb Z}.
+H_0(X;\ZZ)\cong\ZZ}.
 \]
 
 
@@ -321,7 +321,7 @@ Removing finitely many points from an \(n\)-manifold with \(n\ge2\) does not dis
 For \(k\ge n\),
 \[
 \boxed{
-H_k(X;\mathbb Z)=0}.
+H_k(X;\ZZ)=0}.
 \]
 
 
@@ -338,18 +338,18 @@ The wedge model in step [](#s1-8){.pf-ref} has CW dimension \(n-1\).
 By the universal coefficient theorem,
 \[
 0\to
-\operatorname{Ext}(H_{k-1}(X),\mathbb Z)
+\operatorname{Ext}(H_{k-1}(X),\ZZ)
 \to
-H^k(X;\mathbb Z)
+H^k(X;\ZZ)
 \to
-\operatorname{Hom}(H_k(X),\mathbb Z)
+\operatorname{Hom}(H_k(X),\ZZ)
 \to0.
 \]
 
 
 ::: pf-proof
 
-This is the universal coefficient theorem for cohomology over \(\mathbb Z\).
+This is the universal coefficient theorem for cohomology over \(\ZZ\).
 
 :::
 
@@ -363,10 +363,10 @@ For
 \]
 \[
 \boxed{
-H^k(X;\mathbb Z)
+H^k(X;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z/2,&k\text{ even},\\
+\ZZ/2,&k\text{ even},\\
 0,&k\text{ odd}.
 \end{cases}}
 \]
@@ -375,13 +375,13 @@ H^k(X;\mathbb Z)
 ::: pf-proof
 
 In these degrees:
-- if \(k\) is even, then \(H_k=0\) and \(H_{k-1}\cong\mathbb Z/2\), so
+- if \(k\) is even, then \(H_k=0\) and \(H_{k-1}\cong\ZZ/2\), so
   \[
-  H^k\cong\operatorname{Ext}(\mathbb Z/2,\mathbb Z)\cong\mathbb Z/2;
+  H^k\cong\operatorname{Ext}(\ZZ/2,\ZZ)\cong\ZZ/2;
   \]
-- if \(k\) is odd, then \(H_k\cong\mathbb Z/2\), so
+- if \(k\) is odd, then \(H_k\cong\ZZ/2\), so
   \[
-  \operatorname{Hom}(H_k,\mathbb Z)=0,
+  \operatorname{Hom}(H_k,\ZZ)=0,
   \]
   while \(H_{k-1}=0\).
 
@@ -394,9 +394,9 @@ In these degrees:
 If \(n\) is even, then
 \[
 \boxed{
-H^{n-1}(X;\mathbb Z)
+H^{n-1}(X;\ZZ)
 \cong
-\mathbb Z^2}.
+\ZZ^2}.
 \]
 
 
@@ -404,7 +404,7 @@ H^{n-1}(X;\mathbb Z)
 
 Here \(n-1\) is odd. By step [](#s1-12){.pf-ref},
 \[
-H_{n-1}\cong\mathbb Z^2,
+H_{n-1}\cong\ZZ^2,
 \]
 and
 \[
@@ -421,9 +421,9 @@ because \(n-2\) is even. Apply step [](#s1-16){.pf-ref}.
 If \(n\) is odd, then
 \[
 \boxed{
-H^{n-1}(X;\mathbb Z)
+H^{n-1}(X;\ZZ)
 \cong
-\mathbb Z\oplus\mathbb Z/2}.
+\ZZ\oplus\ZZ/2}.
 \]
 
 
@@ -431,21 +431,21 @@ H^{n-1}(X;\mathbb Z)
 
 Here \(n-1\) is even. By step [](#s1-13){.pf-ref},
 \[
-H_{n-1}\cong\mathbb Z,
+H_{n-1}\cong\ZZ,
 \]
 while
 \[
-H_{n-2}\cong\mathbb Z/2
+H_{n-2}\cong\ZZ/2
 \]
 because \(n-2\) is odd. Thus step [](#s1-16){.pf-ref} gives
 \[
 H^{n-1}
 \cong
-\operatorname{Hom}(\mathbb Z,\mathbb Z)
+\operatorname{Hom}(\ZZ,\ZZ)
 \oplus
-\operatorname{Ext}(\mathbb Z/2,\mathbb Z)
+\operatorname{Ext}(\ZZ/2,\ZZ)
 \cong
-\mathbb Z\oplus\mathbb Z/2.
+\ZZ\oplus\ZZ/2.
 \]
 
 :::
@@ -457,12 +457,12 @@ H^{n-1}
 Also,
 \[
 \boxed{
-H^0(X;\mathbb Z)\cong\mathbb Z}
+H^0(X;\ZZ)\cong\ZZ}
 \]
 and
 \[
 \boxed{
-H^k(X;\mathbb Z)=0
+H^k(X;\ZZ)=0
 \qquad(k\ge n)}.
 \]
 
@@ -497,12 +497,12 @@ A circle minus two points has exactly two connected components, each homeomorphi
 Therefore, when \(n=1\),
 \[
 \boxed{
-H_0(X;\mathbb Z)\cong\mathbb Z^2}
+H_0(X;\ZZ)\cong\ZZ^2}
 \]
 and
 \[
 \boxed{
-H_k(X;\mathbb Z)=0
+H_k(X;\ZZ)=0
 \quad(k>0)}.
 \]
 
@@ -520,12 +520,12 @@ Each component is contractible.
 Likewise, when \(n=1\),
 \[
 \boxed{
-H^0(X;\mathbb Z)\cong\mathbb Z^2}
+H^0(X;\ZZ)\cong\ZZ^2}
 \]
 and
 \[
 \boxed{
-H^k(X;\mathbb Z)=0
+H^k(X;\ZZ)=0
 \quad(k>0)}.
 \]
 

@@ -20,9 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ and $H$ be finite groups and let $A:G\to\mathrm{GL}_n(\mathbb{C})$ and $B:H\to\mathrm{GL}_m(\mathbb{C})$ be representations of $G$ and $H$ respectively.
+Let $G$ and $H$ be finite groups and let $A:G\to\mathrm{GL}_n(\CC)$ and $B:H\to\mathrm{GL}_m(\CC)$ be representations of $G$ and $H$ respectively.
 
-(a) Show that $A\times B:G\times H\to\mathrm{GL}_{nm}(\mathbb{C})$ is a representation where for $(\sigma,\tau)\in G\times H$,
+(a) Show that $A\times B:G\times H\to\mathrm{GL}_{nm}(\CC)$ is a representation where for $(\sigma,\tau)\in G\times H$,
 \[
 (A\times B)((\sigma,\tau))=A(\sigma)\otimes B(\tau)
 \]
@@ -41,7 +41,7 @@ and for matrices $M$ and $N$, $M\otimes N$ is the Kronecker product of $M$ and $
 
 The map
 \[
-A\times B:G\times H\to \mathrm{GL}_{nm}(\mathbb C),\qquad
+A\times B:G\times H\to \mathrm{GL}_{nm}(\CC),\qquad
 (A\times B)(g,h)=A(g)\otimes B(h),
 \]
 is a representation.

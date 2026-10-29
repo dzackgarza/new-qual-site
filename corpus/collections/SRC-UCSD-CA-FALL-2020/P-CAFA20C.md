@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f: \mathbb{C} \to \mathbb{C}$ be an entire function.
-Show that the series $$\sum_{n=0}^{\infty} \frac{f^{(n)}(z)}{n!}$$ converges uniformly on compact subsets of $\mathbb{C}$.
+Let $f: \CC \to \CC$ be an entire function.
+Show that the series $$\sum_{n=0}^{\infty} \frac{f^{(n)}(z)}{n!}$$ converges uniformly on compact subsets of $\CC$.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Pointwise convergence to $f(z + 1)$:
 
 ::: pf-step
 
-For any $z \in \mathbb{C}$, the Taylor series of the entire function $f$ centered at $z$ is:
+For any $z \in \CC$, the Taylor series of the entire function $f$ centered at $z$ is:
 \[
 f(z + w) = \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!} w^n.
 \]
@@ -49,7 +49,7 @@ Taylor theorem for entire functions.
 
 ::: pf-step
 
-Setting $w = 1$, the series converges pointwise to $f(z + 1)$ for every $z \in \mathbb{C}$:
+Setting $w = 1$, the series converges pointwise to $f(z + 1)$ for every $z \in \CC$:
 \[
 \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!} = f(z + 1).
 \]
@@ -74,7 +74,7 @@ Cauchy estimates on compact sets:
 
 ::: pf-step
 
-Let $K \subset \mathbb{C}$ be a compact subset.
+Let $K \subset \CC$ be a compact subset.
 Since $K$ is bounded, there exists $R > 0$ such that $|z| \le R$ for all $z \in K$.
 
 ::: pf-proof
@@ -88,7 +88,7 @@ compactness implies boundedness.
 ::: pf-step
 
 Choose a radius $r > 1$ (e.g. $r = 2$).
-For any $z \in K$, the circle $C_z = \{\zeta \in \mathbb{C} \mid |\zeta - z| = r\}$ is contained in the closed disk $\overline{B(0, R + r)}$.
+For any $z \in K$, the circle $C_z = \{\zeta \in \CC \mid |\zeta - z| = r\}$ is contained in the closed disk $\overline{B(0, R + r)}$.
 
 ::: pf-proof
 
@@ -157,7 +157,7 @@ convergence of geometric series with common ratio $\frac{1}{r} < 1$.
 ::: pf-step
 
 By the Weierstrass $M$-test, the series $\sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!}$ converges uniformly on $K$.
-Since $K$ was arbitrary, the series converges uniformly on all compact subsets of $\mathbb{C}$.
+Since $K$ was arbitrary, the series converges uniformly on all compact subsets of $\CC$.
 
 ::: pf-proof
 
@@ -174,7 +174,7 @@ Weierstrass $M$-test.
 ::: pf-step
 
 Conclusion:
-$\sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!}$ converges uniformly on compact subsets of $\mathbb{C}$ (to $f(z + 1)$). Q.E.D.
+$\sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!}$ converges uniformly on compact subsets of $\CC$ (to $f(z + 1)$). Q.E.D.
 
 ::: pf-proof
 

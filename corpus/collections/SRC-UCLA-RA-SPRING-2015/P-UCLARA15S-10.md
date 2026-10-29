@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-10
 kind: problem
-title: Evaluation of $\int_{\mathbb R}\frac{dy}{(1+y^2)(1+(x-y)^2)}$
+title: Evaluation of $\int_{\RR}\frac{dy}{(1+y^2)(1+(x-y)^2)}$
 classification:
   areas:
   - real-analysis
@@ -21,7 +21,7 @@ Determine
 \[
 \int_{-\infty}^{\infty}\frac{dy}{(1+y^2)(1+(x-y)^2)}
 \]
-for all $x\in\mathbb R$.
+for all $x\in\RR$.
 Justify all manipulations.
 :::
 
@@ -37,7 +37,7 @@ Use the Fourier transform convention
 \[
 \widehat h(\xi)
 \coloneqq
-\int_{\mathbb R}h(y)e^{-i\xi y}\,dy.
+\int_{\RR}h(y)e^{-i\xi y}\,dy.
 \]
 
 ::: pf
@@ -56,14 +56,14 @@ By definition of convolution,
 \[
 (h*h)(x)
 =
-\int_{\mathbb R}
+\int_{\RR}
 h(y)h(x-y)\,dy
 =
-\int_{\mathbb R}
+\int_{\RR}
 \frac{dy}
 {(1+y^2)(1+(x-y)^2)}.
 \]
-Since $h\in L^1(\mathbb R)$, the convolution is absolutely convergent for almost every $x$; in the present case the displayed integrand is continuous and decays like $|y|^{-4}$, so it is absolutely integrable for every fixed $x$.
+Since $h\in L^1(\RR)$, the convolution is absolutely convergent for almost every $x$; in the present case the displayed integrand is continuous and decays like $|y|^{-4}$, so it is absolutely integrable for every fixed $x$.
 
 :::
 
@@ -71,7 +71,7 @@ Since $h\in L^1(\mathbb R)$, the convolution is absolutely convergent for almost
 
 ::: {.pf-step #s2}
 
-For every $\xi\in\mathbb R$,
+For every $\xi\in\RR$,
 \[
 \widehat h(\xi)
 =
@@ -236,7 +236,7 @@ The Fourier transform of the convolution is
 
 ::: pf-proof
 
-Since $h\in L^1(\mathbb R)$, Fubini's theorem applies to the convolution-transform calculation and gives
+Since $h\in L^1(\RR)$, Fubini's theorem applies to the convolution-transform calculation and gives
 \[
 \widehat{h*h}
 =
@@ -250,12 +250,12 @@ Apply step [](#s2){.pf-ref}.
 
 ::: {.pf-step #s4}
 
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 (h*h)(x)
 =
 \frac1{2\pi}
-\int_{\mathbb R}
+\int_{\RR}
 \pi^2e^{-2|\xi|}
 e^{ix\xi}\,d\xi.
 \]
@@ -263,13 +263,13 @@ e^{ix\xi}\,d\xi.
 
 ::: pf-proof
 
-The function $h*h$ belongs to $L^1(\mathbb R)$ because $h\in L^1$, and step [](#s3){.pf-ref} gives
+The function $h*h$ belongs to $L^1(\RR)$ because $h\in L^1$, and step [](#s3){.pf-ref} gives
 \[
 \widehat{h*h}(\xi)
 =
 \pi^2e^{-2|\xi|}
 \in
-L^1(\mathbb R).
+L^1(\RR).
 \]
 Fourier inversion therefore gives the displayed formula at every point of continuity of $h*h$. Convolution of two $L^1$ functions is continuous, so the formula holds for every real $x$.
 
@@ -281,7 +281,7 @@ Fourier inversion therefore gives the displayed formula at every point of contin
 
 One has
 \[
-\int_{\mathbb R}
+\int_{\RR}
 e^{-2|\xi|}
 e^{ix\xi}\,d\xi
 =
@@ -294,7 +294,7 @@ e^{ix\xi}\,d\xi
 Using symmetry,
 \[
 \begin{aligned}
-\int_{\mathbb R}
+\int_{\RR}
 e^{-2|\xi|}
 e^{ix\xi}\,d\xi
 &=
@@ -329,7 +329,7 @@ Therefore
 \frac{2\pi}{x^2+4}
 }
 \qquad
-(x\in\mathbb R).
+(x\in\RR).
 \]
 
 

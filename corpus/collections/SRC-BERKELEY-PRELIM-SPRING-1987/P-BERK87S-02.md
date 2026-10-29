@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let
 \[
-W=\{(u,v)\in\mathbb R^2:u>v\}
+W=\{(u,v)\in\RR^2:u>v\}
 \]
 and define
 \[

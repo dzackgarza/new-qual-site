@@ -18,7 +18,7 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 
 (a) Prove that $n$ divides $q^k - 1$.
 
-(b) Let $m = \operatorname{ord}_n(q)$ be the multiplicative order of $q$ in the group $(\mathbb{Z}/n\mathbb{Z})^\times$. Prove that $m$ divides $k$.
+(b) Let $m = \operatorname{ord}_n(q)$ be the multiplicative order of $q$ in the group $(\ZZ/n\ZZ)^\times$. Prove that $m$ divides $k$.
 
 (c) Prove that $m = k$.
 :::
@@ -87,7 +87,7 @@ By Part (a), $n \mid (q^k - 1)$, which means $q^k \equiv 1 \pmod n$.
 
 ::: pf-step
 
-Since $\gcd(n, q) = 1$, the residue class $[q]_n \in (\mathbb{Z}/n\mathbb{Z})^\times$ has finite order $m = \operatorname{ord}_n(q)$.
+Since $\gcd(n, q) = 1$, the residue class $[q]_n \in (\ZZ/n\ZZ)^\times$ has finite order $m = \operatorname{ord}_n(q)$.
 
 :::
 
@@ -99,7 +99,7 @@ In any group, $g^k = e$ if and only if the order $\operatorname{ord}(g)$ divides
 
 ::: pf-step
 
-Applying this to $[q]_n \in (\mathbb{Z}/n\mathbb{Z})^\times$ yields $m \mid k$.
+Applying this to $[q]_n \in (\ZZ/n\ZZ)^\times$ yields $m \mid k$.
 
 :::
 

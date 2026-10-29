@@ -64,5 +64,5 @@ F(z)=c_1\int_1^z
 \frac{d\zeta}{(\zeta-B_1)^{\beta_1}\cdots(\zeta-B_n)^{\beta_n}}
 +c_2,
 \]
-with suitable branch choices and constants $c_1\ne0,c_2\in\mathbb C$.
+with suitable branch choices and constants $c_1\ne0,c_2\in\CC$.
 :::

@@ -20,11 +20,11 @@ audit:
 In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are given.
 Determine whether $I$ is prime, maximal, both, or neither.
 
-a. $R = \mathbb{C}[x]$, $I = (x^2+1)$.
+a. $R = \CC[x]$, $I = (x^2+1)$.
 
-b. $R = \mathbb{Z}[x]$, $I = (6, x)$.
+b. $R = \ZZ[x]$, $I = (6, x)$.
 
-c. $R = \mathbb{C}[x,y]$, $I = (y^2 - x^3)$.
+c. $R = \CC[x,y]$, $I = (y^2 - x^3)$.
 :::
 
 ::: {.solution}

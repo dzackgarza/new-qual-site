@@ -20,7 +20,7 @@ Let $F$ be a field and let $R$ be the set of matrices
 \]
 Show that $R$ is a commutative ring with identity under the usual matrix operations. Determine for which of
 \[
-F=\mathbb Q,\qquad \mathbb C,\qquad \mathbb Z_5,\qquad \mathbb Z_7
+F=\QQ,\qquad \CC,\qquad \ZZ_5,\qquad \ZZ_7
 \]
 the ring $R$ is a field.
 :::

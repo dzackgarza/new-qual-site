@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\gamma(t)$ be a piecewise smooth curve in $\mathbb{C}, t \in[0,1]$. Let $F(w)$ be a continuous function on $\gamma$. Show that $f(z)$ defined by
+Let $\gamma(t)$ be a piecewise smooth curve in $\CC, t \in[0,1]$. Let $F(w)$ be a continuous function on $\gamma$. Show that $f(z)$ defined by
 \[
 f(z):=\int_{\gamma} \frac{F(w)}{w-z} d w
 \]
@@ -25,7 +25,7 @@ is analytic on the complement of the curve $\gamma$.
 
 ::: {.solution}
 
-Let $K=\gamma([0,1])$ and $U=\mathbb C\setminus K$. The compactness of $K$ implies that $U$ is open. Let $L$ be the length of the piecewise smooth curve $\gamma$.
+Let $K=\gamma([0,1])$ and $U=\CC\setminus K$. The compactness of $K$ implies that $U$ is open. Let $L$ be the length of the piecewise smooth curve $\gamma$.
 
 ::: pf
 

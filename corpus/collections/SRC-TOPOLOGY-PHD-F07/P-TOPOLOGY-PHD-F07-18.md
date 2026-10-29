@@ -48,21 +48,21 @@ The three-times punctured sphere is homeomorphic to the plane with two points re
 ::: pf-proof
 Stereographic projection from $p_3$ is a homeomorphism
 \[
-S^2\setminus\{p_3\}\longrightarrow\mathbb R^2.
+S^2\setminus\{p_3\}\longrightarrow\RR^2.
 \]
-The distinct points $p_1,p_2$ have distinct images, say $a,b\in\mathbb R^2$.
+The distinct points $p_1,p_2$ have distinct images, say $a,b\in\RR^2$.
 Restricting stereographic projection therefore gives a homeomorphism
 \[
 S^2\setminus\{p_1,p_2,p_3\}
 \cong
-\mathbb R^2\setminus\{a,b\}.
+\RR^2\setminus\{a,b\}.
 \]
 :::
 
 :::
 
 ::: {.pf-step #retract-to-wedge}
-The space $\mathbb R^2\setminus\{a,b\}$ deformation retracts onto a graph homeomorphic to two circles joined by an arc.
+The space $\RR^2\setminus\{a,b\}$ deformation retracts onto a graph homeomorphic to two circles joined by an arc.
 
 ::: pf-proof
 Choose disjoint small closed disks $D_a,D_b$ centered at $a,b$.
@@ -74,19 +74,19 @@ Set
 
 Take a sufficiently small closed regular neighborhood $N$ of $\Gamma$ in
 \[
-\mathbb R^2\setminus\{a,b\}.
+\RR^2\setminus\{a,b\}.
 \]
 The set $N$ is a pair of pants: its complementary components are a punctured neighborhood of $a$, a punctured neighborhood of $b$, and the unbounded exterior component.
 Each of these three complementary annular ends can be pushed along its collar onto the corresponding boundary component of $N$.
 Doing these three collar deformations, whose supports are disjoint, gives a deformation retraction
 \[
-\mathbb R^2\setminus\{a,b\}\longrightarrow N.
+\RR^2\setminus\{a,b\}\longrightarrow N.
 \]
 
 By construction, a regular neighborhood of a graph collapses along its interval fibers onto the graph itself, so $N$ deformation retracts onto $\Gamma$.
 Composing the two deformation retractions gives
 \[
-\mathbb R^2\setminus\{a,b\}\simeq\Gamma.
+\RR^2\setminus\{a,b\}\simeq\Gamma.
 \]
 The graph $\Gamma$ consists of two circles connected by the contractible arc $J$.
 Contracting $J$ to a point gives
@@ -120,7 +120,7 @@ The Seifert--van Kampen theorem therefore gives
 \cong
 \pi_1(S^1)*\pi_1(S^1)
 \cong
-\mathbb Z*\mathbb Z.
+\ZZ*\ZZ.
 \]
 This is the free group $F_2$ on two generators.
 :::
@@ -130,7 +130,7 @@ This is the free group $F_2$ on two generators.
 ::: pf-step
 Therefore
 \[
-\boxed{\pi_1\bigl(S^2\setminus\{p_1,p_2,p_3\}\bigr)\cong F_2\cong\mathbb Z*\mathbb Z.}
+\boxed{\pi_1\bigl(S^2\setminus\{p_1,p_2,p_3\}\bigr)\cong F_2\cong\ZZ*\ZZ.}
 \]
 
 ::: pf-proof

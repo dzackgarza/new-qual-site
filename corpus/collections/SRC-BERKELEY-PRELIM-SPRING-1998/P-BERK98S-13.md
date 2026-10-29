@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\mathbb C$ with $|a|<1$. Evaluate
+Let $a\in\CC$ with $|a|<1$. Evaluate
 \[
 \int_{|z|=1}\frac{|dz|}{|z-a|^2}.
 \]

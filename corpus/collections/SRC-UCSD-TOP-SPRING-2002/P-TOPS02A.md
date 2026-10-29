@@ -34,7 +34,7 @@ Homology of $S^{2n}$ and the degree map:
 ::: pf-step
 The rational homology groups of the even-dimensional sphere $S^{2n}$ ($n \ge 1$) are:
 \[
-H_k(S^{2n}; \mathbb{Q}) \cong \begin{cases} \mathbb{Q} & k = 0, 2n \\ 0 & \text{otherwise}. \end{cases}
+H_k(S^{2n}; \QQ) \cong \begin{cases} \QQ & k = 0, 2n \\ 0 & \text{otherwise}. \end{cases}
 \]
 
 ::: pf-proof
@@ -44,7 +44,7 @@ homology of spheres.
 :::
 
 ::: pf-step
-For any homeomorphism $g: S^{2n} \to S^{2n}$, the induced map $g_*: H_0(S^{2n}; \mathbb{Q}) \to H_0(S^{2n}; \mathbb{Q})$ is the identity (trace $1$), and $g_*: H_{2n}(S^{2n}; \mathbb{Q}) \to H_{2n}(S^{2n}; \mathbb{Q})$ is multiplication by $\deg(g) \in \{\pm 1\}$.
+For any homeomorphism $g: S^{2n} \to S^{2n}$, the induced map $g_*: H_0(S^{2n}; \QQ) \to H_0(S^{2n}; \QQ)$ is the identity (trace $1$), and $g_*: H_{2n}(S^{2n}; \QQ) \to H_{2n}(S^{2n}; \QQ)$ is multiplication by $\deg(g) \in \{\pm 1\}$.
 
 ::: pf-proof
 $S^{2n}$ is connected and $g$ is a homeomorphism.
@@ -73,7 +73,7 @@ Compute the Lefschetz number for fixed-point-free homeomorphisms:
 ::: {.pf-step #s2-1}
 The Lefschetz number of $g$ is defined as:
 \[
-\Lambda(g) = \sum_{k=0}^{2n} (-1)^k \operatorname{tr}\left(g_*|_{H_k(S^{2n}; \mathbb{Q})}\right) = \operatorname{tr}\left(g_*|_{H_0}\right) + (-1)^{2n} \operatorname{tr}\left(g_*|_{H_{2n}}\right) = 1 + \deg(g),
+\Lambda(g) = \sum_{k=0}^{2n} (-1)^k \operatorname{tr}\left(g_*|_{H_k(S^{2n}; \QQ)}\right) = \operatorname{tr}\left(g_*|_{H_0}\right) + (-1)^{2n} \operatorname{tr}\left(g_*|_{H_{2n}}\right) = 1 + \deg(g),
 \]
 since $(-1)^{2n} = 1$ for even dimension $2n$.
 
@@ -154,7 +154,7 @@ Lagrange's Theorem on subgroups of order 2 groups.
 :::
 
 ::: pf-step
-Conclusion: $|G| \le 2$ (so $G \cong \{1\}$ or $G \cong \mathbb{Z}_2$).
+Conclusion: $|G| \le 2$ (so $G \cong \{1\}$ or $G \cong \ZZ_2$).
 
 ::: pf-proof
 Step [](#s3){.pf-ref}.

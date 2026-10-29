@@ -98,7 +98,7 @@ Therefore they form a basis.
 Suppose $I$ is infinite.
 Define
 \[
-\varphi:V\to\mathbb R
+\varphi:V\to\RR
 \]
 by
 \[
@@ -116,7 +116,7 @@ Then $\varphi$ is a well-defined linear functional.
 
 Every vector in $V$ has a unique finite expansion in the Hamel basis $\{e_i\}_{i\in I}$.
 Hence the displayed formula is well-defined.
-For vectors with finite coordinate expansions and scalars $\alpha,\beta\in\mathbb R$, summing coefficients shows
+For vectors with finite coordinate expansions and scalars $\alpha,\beta\in\RR$, summing coefficients shows
 \[
 \varphi(\alpha v+\beta w)
 =

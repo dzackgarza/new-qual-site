@@ -44,11 +44,11 @@ $$
 ::: {.solution}
 Separate the terms with \(m=0\):
 \[
-E_4(\tau)=2\zeta(4)+\sum_{m\ne0}\sum_{n\in\mathbb Z}(n+m\tau)^{-4}.
+E_4(\tau)=2\zeta(4)+\sum_{m\ne0}\sum_{n\in\ZZ}(n+m\tau)^{-4}.
 \]
 For \(\Im w>0\), Exercise 7 of Chapter 4 gives
 \[
-\sum_{n\in\mathbb Z}(n+w)^{-4}
+\sum_{n\in\ZZ}(n+w)^{-4}
 =\frac{8\pi^4}{3}\sum_{r=1}^\infty r^3e^{2\pi irw}.
 \tag{1}
 \]

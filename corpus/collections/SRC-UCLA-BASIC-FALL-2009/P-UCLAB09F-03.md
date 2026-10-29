@@ -20,13 +20,13 @@ Let
 \[
 f(x_1,\ldots,x_n)=x_1+\cdots+x_n+\frac1{x_1x_2\cdots x_n}
 \]
-on the positive orthant $\mathbb R_+^n$.
+on the positive orthant $\RR_+^n$.
 
 ::: pf
 
 ::: pf-step
 
-Explain carefully why $f$ attains a global minimum at some $p\in\mathbb R_+^n$.
+Explain carefully why $f$ attains a global minimum at some $p\in\RR_+^n$.
 (Consider what happens as some $x_i\to0$ or $x_i\to\infty$.)
 
 :::
@@ -65,7 +65,7 @@ The sublevel set
 \[
 K=
 \left\{
-x\in\mathbb R_+^n:
+x\in\RR_+^n:
 f(x)\le n+1
 \right\}
 \]
@@ -135,7 +135,7 @@ relative to the box is closed. Hence $K$ is a closed subset of a compact box, so
 
 The function $f$ attains a global minimum at some point
 \[
-p\in\mathbb R_+^n.
+p\in\RR_+^n.
 \]
 
 ::: pf-proof
@@ -145,7 +145,7 @@ Outside $K$ one has
 \[
 f(x)>n+1=f(\mathbf1).
 \]
-Since $\mathbf1\in K$, no point outside $K$ can have smaller value than the minimum on $K$. Therefore the minimum on $K$ is the global minimum on $\mathbb R_+^n$.
+Since $\mathbf1\in K$, no point outside $K$ can have smaller value than the minimum on $K$. Therefore the minimum on $K$ is the global minimum on $\RR_+^n$.
 
 :::
 
@@ -161,7 +161,7 @@ for each $i$.
 
 ::: pf-proof
 
-The positive orthant $\mathbb R_+^n$ is open. Hence a global minimizer $p$ is an interior point of the domain. Since $f$ is differentiable, the gradient must vanish at an interior local minimum.
+The positive orthant $\RR_+^n$ is open. Hence a global minimizer $p$ is an interior point of the domain. Since $f$ is differentiable, the gradient must vanish at an interior local minimum.
 
 :::
 
@@ -200,7 +200,7 @@ Adding the two contributions yields the formula.
 
 ::: {.pf-step #p2-s5}
 
-Every critical point of $f$ in $\mathbb R_+^n$ equals
+Every critical point of $f$ in $\RR_+^n$ equals
 \[
 \boxed{(1,\ldots,1)}.
 \]

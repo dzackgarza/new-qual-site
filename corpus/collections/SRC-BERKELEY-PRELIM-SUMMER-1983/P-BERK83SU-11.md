@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Over $\mathbb F_3=\mathbb Z/3\mathbb Z$, find the eigenvalues, eigenvectors, and Jordan canonical form of
+Over $\mathbb F_3=\ZZ/3\ZZ$, find the eigenvalues, eigenvectors, and Jordan canonical form of
 \[
 A=
 \begin{pmatrix}

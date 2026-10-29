@@ -68,7 +68,7 @@ $5$ is prime, so its only positive divisors are $1$ and $5$.
 :::
 
 ::: {.pf-step #s1-5}
-Therefore, $G = \langle g \rangle \cong \mathbb{Z}/5\mathbb{Z}$, which is cyclic and abelian.
+Therefore, $G = \langle g \rangle \cong \ZZ/5\ZZ$, which is cyclic and abelian.
 
 ::: pf-proof
 Step [](#s1-4){.pf-ref}.

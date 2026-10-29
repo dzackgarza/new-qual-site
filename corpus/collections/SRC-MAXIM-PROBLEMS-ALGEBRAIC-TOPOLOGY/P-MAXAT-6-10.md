@@ -26,7 +26,7 @@ Let $M^{2n}$ be a smooth manifold. A complex structure on $TM$ means a bundle en
 J:TM\to TM,
 \qquad J^2=-1,
 \]
-equivalently a reduction of the structure group from $GL_{2n}(\mathbb R)$ to $GL_n(\mathbb C)$. This imposes several characteristic-class obstructions.
+equivalently a reduction of the structure group from $GL_{2n}(\RR)$ to $GL_n(\CC)$. This imposes several characteristic-class obstructions.
 
 ::: pf
 
@@ -40,11 +40,11 @@ A complex vector bundle has a canonical orientation. Hence a necessary condition
 
 ::: pf-proof
 
-The real determinant of a complex-linear automorphism is positive: if $A\in GL_n(\mathbb C)$, then
+The real determinant of a complex-linear automorphism is positive: if $A\in GL_n(\CC)$, then
 \[
-\det_{\mathbb R}A=|\det_{\mathbb C}A|^2>0.
+\det_{\RR}A=|\det_{\CC}A|^2>0.
 \]
-Thus a reduction to $GL_n(\mathbb C)$ reduces the real structure group to $GL^+_{2n}(\mathbb R)$, which is equivalent to orientability and hence to $w_1(TM)=0$.
+Thus a reduction to $GL_n(\CC)$ reduces the real structure group to $GL^+_{2n}(\RR)$, which is equivalent to orientability and hence to $w_1(TM)=0$.
 
 :::
 
@@ -65,7 +65,7 @@ where $\rho_2$ denotes reduction modulo $2$.
 
 For every complex vector bundle $E$, the Stiefel--Whitney classes of its underlying real bundle satisfy
 \[
-w(E_{\mathbb R})=\rho_2(c(E)).
+w(E_{\RR})=\rho_2(c(E)).
 \]
 Since $c_i(E)$ lies in degree $2i$, there are no odd-degree components, giving the two displayed identities.
 
@@ -91,9 +91,9 @@ Step [](#s1-2){.pf-ref} gives
 \[
 w_2(TM)=\rho_2(c_1(E)).
 \]
-Thus $c_1(E)\in H^2(M;\mathbb Z)$ is an integral lift. In the coefficient exact sequence
+Thus $c_1(E)\in H^2(M;\ZZ)$ is an integral lift. In the coefficient exact sequence
 \[
-0\to\mathbb Z\xrightarrow{\times2}\mathbb Z\to\mathbb Z/2\to0,
+0\to\ZZ\xrightarrow{\times2}\ZZ\to\ZZ/2\to0,
 \]
 a mod-$2$ class lifts integrally exactly when its Bockstein vanishes. The Bockstein of $w_2$ is the integral Stiefel--Whitney class $W_3$.
 
@@ -118,11 +118,11 @@ Equivalently, under the splitting principle with Chern roots $x_1,\ldots,x_n$,
 
 For a complex bundle $E$,
 \[
-E_{\mathbb R}\otimes\mathbb C\cong E\oplus\overline E.
+E_{\RR}\otimes\CC\cong E\oplus\overline E.
 \]
 By definition,
 \[
-p_i(E_{\mathbb R})=(-1)^ic_{2i}(E_{\mathbb R}\otimes\mathbb C).
+p_i(E_{\RR})=(-1)^ic_{2i}(E_{\RR}\otimes\CC).
 \]
 If $x_j$ are the Chern roots of $E$, those of $\overline E$ are $-x_j$, yielding the product formula.
 
@@ -158,7 +158,7 @@ Combining the two identities gives the characteristic-number condition.
 
 Thus any proposed complex structure requires integral classes
 \[
-c_i\in H^{2i}(M;\mathbb Z),
+c_i\in H^{2i}(M;\ZZ),
 \qquad1\leq i\leq n,
 \]
 satisfying simultaneously

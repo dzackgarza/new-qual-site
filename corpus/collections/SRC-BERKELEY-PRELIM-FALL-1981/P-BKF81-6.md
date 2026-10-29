@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g$ be continuous $1$-periodic functions on $\mathbb R$. Prove that
+Let $f,g$ be continuous $1$-periodic functions on $\RR$. Prove that
 \[
 \lim_{n\to\infty}\int_0^1 f(x)g(nx)\,dx
 =\left(\int_0^1f\right)\left(\int_0^1g\right).
@@ -81,7 +81,7 @@ The shifted Riemann sums $A_n(t)$ converge uniformly in $t$ to $\int_0^1f$.
 ::: pf-proof
 
 Because $f$ is continuous and $1$-periodic, it is uniformly continuous on
-$\mathbb R$. Let
+$\RR$. Let
 $$
 \omega_f(\delta)
 =\sup\{|f(x)-f(y)|:|x-y|\le\delta\}.

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(\Omega, \mathcal{B}, \mu)$ be a measure space and $f_n, f : \Omega \to \mathbb{C}$ be measurable functions.
+Let $(\Omega, \mathcal{B}, \mu)$ be a measure space and $f_n, f : \Omega \to \CC$ be measurable functions.
 Determine which of the following statements are true.
 For the true statements give a brief reason and for the false statements give a counterexample.
 
@@ -95,13 +95,13 @@ Statement 3 is false in general.
 
 ::: pf-proof
 
-Take $\Omega=\mathbb R$ with Lebesgue measure,
+Take $\Omega=\RR$ with Lebesgue measure,
 \[
 f_n=\mathbf1_{[n,n+1]},
 \qquad
 f=0.
 \]
-Then $f_n(x)\to0$ for every $x\in\mathbb R$. But for $\varepsilon=1/2$,
+Then $f_n(x)\to0$ for every $x\in\RR$. But for $\varepsilon=1/2$,
 \[
 m\bigl(\{|f_n-f|\ge1/2\}\bigr)
 =m([n,n+1])=1

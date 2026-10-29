@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\mathbb C:|z|<1\}$, and let $f:D\to\mathbb C$
+Let $D=\{z\in\CC:|z|<1\}$, and let $f:D\to\CC$
 be holomorphic with simple zeros at $1/3$, $2/3$ and $i/4$
 and no other zeros. Evaluate
 $$

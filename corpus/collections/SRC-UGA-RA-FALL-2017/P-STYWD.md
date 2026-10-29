@@ -19,11 +19,11 @@ Let
 $$
 f(x) = \sum_{n=0}^{\infty} \frac{x^{n}}{n!}.
 $$
-Determine all intervals $I \subseteq \mathbb{R}$ on which the series converges uniformly, and prove the characterization.
+Determine all intervals $I \subseteq \RR$ on which the series converges uniformly, and prove the characterization.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the power series $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on an interval $I \subseteq \mathbb{R}$ if and only if $I$ is bounded.
+**Goal:** Prove that the power series $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on an interval $I \subseteq \RR$ if and only if $I$ is bounded.
 
 ::: pf
 
@@ -33,7 +33,7 @@ Uniform convergence on bounded intervals (Weierstrass $M$-test):
 ::: pf-proof
 
 ::: pf-step
-Let $I \subseteq \mathbb{R}$ be a bounded interval.
+Let $I \subseteq \RR$ be a bounded interval.
 
 :::
 
@@ -88,7 +88,7 @@ Failure of uniform convergence on unbounded intervals:
 ::: pf-proof
 
 ::: pf-step
-Let $I \subseteq \mathbb{R}$ be an unbounded interval.
+Let $I \subseteq \RR$ be an unbounded interval.
 
 :::
 
@@ -97,7 +97,7 @@ Case 1 ($I$ is unbounded from above):
 
 - There exists a sequence $(x_k)_{k=1}^\infty \subset I$ such that $x_k \to +\infty$.
 - For any fixed $n \ge 1$:
-$$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \mathbb{N}} \frac{x_k^n}{n!} = \infty.$$
+$$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \NN} \frac{x_k^n}{n!} = \infty.$$
 - Thus the terms $u_n(x) = \frac{x^n}{n!}$ do not tend to 0 uniformly on $I$.
 
 :::
@@ -107,7 +107,7 @@ Case 2 ($I$ is unbounded from below):
 
 - There exists a sequence $(x_k)_{k=1}^\infty \subset I$ such that $x_k \to -\infty$.
 - For any fixed $n \ge 1$:
-$$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \mathbb{N}} \frac{|x_k|^n}{n!} = \infty.$$
+$$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \NN} \frac{|x_k|^n}{n!} = \infty.$$
 - Again, $\sup_{x \in I} |u_n(x)| = \infty$ for each $n \ge 1$.
 
 :::

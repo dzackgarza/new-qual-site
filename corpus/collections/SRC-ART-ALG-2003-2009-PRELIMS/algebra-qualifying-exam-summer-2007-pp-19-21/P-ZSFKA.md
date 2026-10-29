@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZSFKA
 kind: problem
-title: The ring of integers of $\mathbb{Q}(\sqrt{2})$ is a Euclidean domain
+title: The ring of integers of $\QQ(\sqrt{2})$ is a Euclidean domain
 classification:
   areas:
   - algebra
@@ -38,29 +38,29 @@ $$
 
 ::: {.pf-step #s1}
 
-The ring of integers is $O=\mathbb Z[\sqrt2]$.
+The ring of integers is $O=\ZZ[\sqrt2]$.
 
 ::: pf-proof
 
-For $a,b\in\mathbb Z$, the element $a+b\sqrt2$ satisfies the monic
+For $a,b\in\ZZ$, the element $a+b\sqrt2$ satisfies the monic
 polynomial
 $$
-T^2-2aT+(a^2-2b^2)\in\mathbb Z[T],
+T^2-2aT+(a^2-2b^2)\in\ZZ[T],
 $$
 so it is an algebraic integer.
 
-Conversely, write an algebraic integer in $\mathbb Q(\sqrt2)$ as
-$\alpha=a+b\sqrt2$, with $a,b\in\mathbb Q$. If $b=0$, the rational
+Conversely, write an algebraic integer in $\QQ(\sqrt2)$ as
+$\alpha=a+b\sqrt2$, with $a,b\in\QQ$. If $b=0$, the rational
 root theorem applied to a monic integer polynomial for $\alpha$
-gives $a\in\mathbb Z$.
+gives $a\in\ZZ$.
 
 Suppose $b\ne0$. Then $\alpha$ has degree $2$, with minimal polynomial
-$T^2-2aT+(a^2-2b^2)$. A monic factor over $\mathbb Q$ of a monic
+$T^2-2aT+(a^2-2b^2)$. A monic factor over $\QQ$ of a monic
 integer polynomial has integer coefficients, by Gauss's lemma
 [@DF04]. Therefore
 $$
-2a=m\in\mathbb Z,\qquad a^2-2b^2=n\in\mathbb Z,
-\qquad 8b^2=m^2-4n\in\mathbb Z.
+2a=m\in\ZZ,\qquad a^2-2b^2=n\in\ZZ,
+\qquad 8b^2=m^2-4n\in\ZZ.
 $$
 Write $b=u/v$ in lowest terms with $v>0$. The last integrality
 condition gives $v^2\mid8u^2$, hence $v^2\mid8$ and $v\in\{1,2\}$.
@@ -107,7 +107,7 @@ Euclidean division holds for $\delta$.
 
 Let $\alpha,\beta\in O$ with $\beta\ne0$, and write
 $$
-\frac{\alpha}{\beta}=u+v\sqrt2,\qquad u,v\in\mathbb Q.
+\frac{\alpha}{\beta}=u+v\sqrt2,\qquad u,v\in\QQ.
 $$
 Choose integers $m,n$ such that $|u-m|\leq1/2$ and $|v-n|\leq1/2$,
 and put $q=m+n\sqrt2\in O$ and $r=\alpha-\beta q\in O$.

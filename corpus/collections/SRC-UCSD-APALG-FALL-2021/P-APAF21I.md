@@ -42,7 +42,7 @@ Let
 ::: pf-step
 The dual group $\widehat{C(d)}$ consists of the $d$ characters
 \[
-\chi_j:C(d)\to\mathbb C^\times,
+\chi_j:C(d)\to\CC^\times,
 \qquad
 \chi_j(\gamma^m)=\zeta^{jm},
 \qquad 0\le j<d.
@@ -86,7 +86,7 @@ The condition $1\notin S$ excludes loops. The condition $S=S^{-1}$ makes adjacen
 :::
 
 ::: {.pf-step #character-eigenvector-formula}
-Let $A_S$ be the adjacency operator of $\operatorname{Cay}(C(d),S)$, acting on functions $f:C(d)\to\mathbb C$ by
+Let $A_S$ be the adjacency operator of $\operatorname{Cay}(C(d),S)$, acting on functions $f:C(d)\to\CC$ by
 \[
 (A_Sf)(h)=\sum_{s\in S}f(hs).
 \]
@@ -109,7 +109,7 @@ Thus $\chi_j$ is an eigenvector with the displayed eigenvalue.
 :::
 
 ::: pf-step
-The $d$ character vectors form a basis of the function space $\mathbb C^{C(d)}$, so step [](#character-eigenvector-formula){.pf-ref} gives the full adjacency spectrum.
+The $d$ character vectors form a basis of the function space $\CC^{C(d)}$, so step [](#character-eigenvector-formula){.pf-ref} gives the full adjacency spectrum.
 
 ::: pf-proof
 For $0\le j,k<d$, character orthogonality gives

@@ -24,7 +24,7 @@ Show that any closed (i.e. compact, without boundary) $6$-manifold which is $2$-
 
 ::: pf-step
 
-Since $M$ is $2$-connected, $H_1(M;\mathbb Z)=H_2(M;\mathbb Z)=0$.
+Since $M$ is $2$-connected, $H_1(M;\ZZ)=H_2(M;\ZZ)=0$.
 
 ::: pf-proof
 
@@ -38,9 +38,9 @@ Simple connectivity gives $H_1=0$. Since $\pi_1=\pi_2=0$, the Hurewicz theorem g
 
 The manifold is orientable, and Poincaré duality gives
 $$
-H_4(M;\mathbb Z)=H_5(M;\mathbb Z)=0,
+H_4(M;\ZZ)=H_5(M;\ZZ)=0,
 $$
-while $H_0\cong H_6\cong\mathbb Z$.
+while $H_0\cong H_6\cong\ZZ$.
 
 ::: pf-proof
 
@@ -67,7 +67,7 @@ All Betti numbers vanish except $b_0=b_6=1$ and possibly $b_3$, so the alternati
 
 ::: {.pf-step #s4}
 
-The middle-dimensional intersection form on $H_3(M;\mathbb Q)$ is skew-symmetric and nondegenerate, so $b_3(M)$ is even.
+The middle-dimensional intersection form on $H_3(M;\QQ)$ is skew-symmetric and nondegenerate, so $b_3(M)$ is even.
 
 ::: pf-proof
 

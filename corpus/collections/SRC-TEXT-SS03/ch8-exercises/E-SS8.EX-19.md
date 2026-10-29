@@ -25,7 +25,7 @@ audit:
 ::: {.solution}
 Let
 \[
-\Omega=\mathbb C\setminus\bigcup_{k=1}^n\{A_k+iy:y\le0\}.
+\Omega=\CC\setminus\bigcup_{k=1}^n\{A_k+iy:y\le0\}.
 \]
 After deleting repetitions, assume the real numbers $A_k$ are distinct. We prove that every closed curve in $\Omega$ is null-homotopic.
 

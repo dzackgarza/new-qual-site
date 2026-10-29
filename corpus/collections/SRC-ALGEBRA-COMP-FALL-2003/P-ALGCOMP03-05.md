@@ -46,7 +46,7 @@ Let \(r>0\) be the least integer such that
 \[
 A^r=0.
 \]
-Then \(A^{r-1}\ne0\), so there exists \(v\in\mathbb C^n\) with
+Then \(A^{r-1}\ne0\), so there exists \(v\in\CC^n\) with
 \[
 A^{r-1}v\ne0.
 \]
@@ -66,7 +66,7 @@ c_{j_0}A^{r-1}v=0,
 \]
 contradicting \(A^{r-1}v\ne0\).
 
-Thus there are \(r\) linearly independent vectors in \(\mathbb C^n\), so
+Thus there are \(r\) linearly independent vectors in \(\CC^n\), so
 \[
 r\le n.
 \]
@@ -93,7 +93,7 @@ Because \(w\ne0\), we get
 \[
 \mu=0.
 \]
-Thus every eigenvalue of \(A\) is \(0\). Over \(\mathbb C\), the characteristic polynomial splits and has degree \(n\), so
+Thus every eigenvalue of \(A\) is \(0\). Over \(\CC\), the characteristic polynomial splits and has degree \(n\), so
 \[
 \boxed{\chi_A(\lambda)=\lambda^n}.
 \]
@@ -123,7 +123,7 @@ Let the eigenvalues of \(A\), counted with algebraic multiplicity, be
 \[
 \lambda_1,\dots,\lambda_n.
 \]
-Triangularizing \(A\) over \(\mathbb C\) shows that the diagonal entries of \(A^p\) are \(\lambda_1^p,\dots,\lambda_n^p\). Thus
+Triangularizing \(A\) over \(\CC\) shows that the diagonal entries of \(A^p\) are \(\lambda_1^p,\dots,\lambda_n^p\). Thus
 \[
 s_p:=\sum_{i=1}^n\lambda_i^p
 =\operatorname{tr}(A^p)=0

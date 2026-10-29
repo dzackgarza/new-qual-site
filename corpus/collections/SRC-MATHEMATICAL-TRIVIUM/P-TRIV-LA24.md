@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the translation ${ \vec { x } } \mapsto { \vec { x } } + { \vec { a } }$ ,where ${ \vec { x } } , { \vec { a } } \in \mathbb R ^ { n }$ , is not a linear transformation in $\mathbb { R } ^ { n }$
+Show that the translation ${ \vec { x } } \mapsto { \vec { x } } + { \vec { a } }$ ,where ${ \vec { x } } , { \vec { a } } \in \RR ^ { n }$ , is not a linear transformation in $\RR ^ { n }$
 :::
 
 ::: {.remark}
@@ -35,7 +35,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-Every linear transformation $T:\mathbb R^n\to\mathbb R^n$ satisfies
+Every linear transformation $T:\RR^n\to\RR^n$ satisfies
 $$
 T(0)=0.
 $$

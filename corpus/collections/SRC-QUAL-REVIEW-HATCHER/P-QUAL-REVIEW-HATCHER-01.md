@@ -55,7 +55,7 @@ Take
 \[
 X=[0,1],
 \qquad
-R=\mathbb Z,
+R=\ZZ,
 \qquad
 k=0.
 \]
@@ -80,7 +80,7 @@ z-z'
 
 Choose a $0$-cochain
 \[
-\alpha\in C^0(X;\mathbb Z)
+\alpha\in C^0(X;\ZZ)
 \]
 with
 \[

@@ -30,7 +30,7 @@ we have
 \[
 |g(z)|=e^{u(z)+v(z)}<e
 \]
-for every $z\in\mathbb C$. Thus $g$ is bounded and entire, so Liouville's
+for every $z\in\CC$. Thus $g$ is bounded and entire, so Liouville's
 theorem implies that $g$ is constant.
 
 Differentiating,

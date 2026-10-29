@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Two ideals $I$ and $J$ in $\mathbb{C}[x_1,\ldots,x_n]$ are co-maximal if and only if $I+J=\mathbb{C}[x_1,\ldots,x_n]$.
+(a) Two ideals $I$ and $J$ in $\CC[x_1,\ldots,x_n]$ are co-maximal if and only if $I+J=\CC[x_1,\ldots,x_n]$.
 
 (i) Prove that $I$ and $J$ are co-maximal if and only if $V(I)\cap V(J)=\emptyset$.
 
@@ -30,11 +30,11 @@ For (a)(i), note first that
 \[
 V(I)\cap V(J)=V(I+J).
 \]
-If $I+J=\mathbb C[x_1,\ldots,x_n]$, then $1\in I+J$, so clearly $V(I+J)=\varnothing$.
+If $I+J=\CC[x_1,\ldots,x_n]$, then $1\in I+J$, so clearly $V(I+J)=\varnothing$.
 
 Conversely, suppose $V(I)\cap V(J)=\varnothing$. Then $V(I+J)=\varnothing$. By Hilbert's Nullstellensatz,
 \[
-\sqrt{I+J}=I(V(I+J))=I(\varnothing)=\mathbb C[x_1,\ldots,x_n].
+\sqrt{I+J}=I(V(I+J))=I(\varnothing)=\CC[x_1,\ldots,x_n].
 \]
 Thus $1\in\sqrt{I+J}$, so $1^N=1\in I+J$ for some $N$, and therefore $I+J$ is the whole ring. Hence $I$ and $J$ are comaximal.
 

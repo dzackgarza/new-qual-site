@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $A = \mathbb{Z}[\sqrt{-5}]$.
+Suppose $A = \ZZ[\sqrt{-5}]$.
 
 (a) Prove that $3$ is irreducible in $A$, but it is not prime.
 
@@ -40,11 +40,11 @@ Put
 \[
 s=\sqrt{-5},
 \qquad
-A=\mathbb Z[s],
+A=\ZZ[s],
 \qquad
 \mathfrak a=(3,1+s).
 \]
-For $u,v\in\mathbb Z$, use the norm
+For $u,v\in\ZZ$, use the norm
 \[
 N(u+vs)=(u+vs)(u-vs)=u^2+5v^2.
 \]
@@ -116,7 +116,7 @@ Indeed, an equality
 \[
 1+s=3(u+vs)
 \]
-would force $1=3u$ and $1=3v$, impossible in $\mathbb Z$; the same coefficient comparison applies to $1-s$.
+would force $1=3u$ and $1=3v$, impossible in $\ZZ$; the same coefficient comparison applies to $1-s$.
 Thus $3$ divides a product without dividing either factor, so it is not prime.
 This proves part (a).
 

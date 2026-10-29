@@ -23,9 +23,9 @@ audit:
 ::: {.problem}
 Find an explicit conformal mapping from the upper half-plane slit along the vertical segment,
 \[
-\{ z \in \mathbb{C} ; \operatorname{Im} z > 0 \} \setminus (0, 0 + ih], \quad h > 0,
+\{ z \in \CC ; \operatorname{Im} z > 0 \} \setminus (0, 0 + ih], \quad h > 0,
 \]
-to the unit disc $\{ z \in \mathbb{C} ; |z| < 1 \}$.
+to the unit disc $\{ z \in \CC ; |z| < 1 \}$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ Let
 \[
 \Omega
 =
-\{z\in\mathbb C:\operatorname{Im}z>0\}
+\{z\in\CC:\operatorname{Im}z>0\}
 \setminus
 \{it:0<t\le h\}.
 \]
@@ -51,7 +51,7 @@ is a conformal bijection from $\Omega$ onto
 \[
 \Omega_1
 =
-\{w\in\mathbb C:\operatorname{Re}w>0\}
+\{w\in\CC:\operatorname{Re}w>0\}
 \setminus[1,\infty).
 \]
 
@@ -102,7 +102,7 @@ is a conformal bijection from $\Omega_1$ onto
 \[
 \Omega_2
 =
-\mathbb C
+\CC
 \setminus
 \bigl((-\infty,0]\cup[1,\infty)\bigr).
 \]
@@ -120,7 +120,7 @@ so
 \]
 Hence squaring maps the right half-plane bijectively onto
 \[
-\mathbb C\setminus(-\infty,0].
+\CC\setminus(-\infty,0].
 \]
 It is injective there because $w$ and $-w$ cannot both lie in the right
 half-plane. The removed ray $[1,\infty)$ is carried exactly to
@@ -141,7 +141,7 @@ is a conformal bijection from $\Omega_2$ onto
 \[
 \Omega_3
 =
-\mathbb C\setminus(-\infty,0].
+\CC\setminus(-\infty,0].
 \]
 
 
@@ -181,11 +181,11 @@ T_4(u)=\sqrt{u}
 \]
 be the principal square root on
 \[
-\mathbb C\setminus(-\infty,0].
+\CC\setminus(-\infty,0].
 \]
 Then $T_4$ is a conformal bijection onto the right half-plane
 \[
-H_R=\{s\in\mathbb C:\operatorname{Re}s>0\}.
+H_R=\{s\in\CC:\operatorname{Re}s>0\}.
 \]
 
 
@@ -286,7 +286,7 @@ F(z)
 }},
 \]
 where the square root is the principal branch after the preceding maps place
-its argument in $\mathbb C\setminus(-\infty,0]$.
+its argument in $\CC\setminus(-\infty,0]$.
 
 
 ::: pf-proof

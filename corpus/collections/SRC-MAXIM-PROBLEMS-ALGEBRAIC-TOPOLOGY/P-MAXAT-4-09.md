@@ -16,18 +16,18 @@ audit:
 ---
 
 ::: {.problem}
-Show that the p-torsion in $\pi _ { i } ( S ^ { 3 } )$ appears first for $i = 2 p$ and it is $\mathbb { Z } _ { p } .$
+Show that the p-torsion in $\pi _ { i } ( S ^ { 3 } )$ appears first for $i = 2 p$ and it is $\ZZ _ { p } .$
 :::
 
 ::: {.solution}
 
 Fix a prime $p$. Let
 \[
-u:S^3\longrightarrow K(\mathbb Z,3)
+u:S^3\longrightarrow K(\ZZ,3)
 \]
 represent the fundamental class in
 \[
-H^3(S^3;\mathbb Z)\cong\mathbb Z,
+H^3(S^3;\ZZ)\cong\ZZ,
 \]
 and let $F$ be its homotopy fiber.
 
@@ -41,7 +41,7 @@ Homotopy Groups of Spheres*, Lemma 1.2.3 and Corollary 1.2.4.
 
 There is a fibration
 \[
-K(\mathbb Z,2)
+K(\ZZ,2)
 \longrightarrow
 F
 \longrightarrow
@@ -53,13 +53,13 @@ S^3.
 
 By definition, $F$ is the homotopy fiber of
 \[
-u:S^3\to K(\mathbb Z,3).
+u:S^3\to K(\ZZ,3).
 \]
-The fiber of the path-space fibration over $K(\mathbb Z,3)$ is
+The fiber of the path-space fibration over $K(\ZZ,3)$ is
 \[
-\Omega K(\mathbb Z,3)
+\Omega K(\ZZ,3)
 \simeq
-K(\mathbb Z,2).
+K(\ZZ,2).
 \]
 Pulling that path-space fibration back along $u$ gives the displayed
 fibration.
@@ -92,24 +92,24 @@ Since $S^3$ is $2$-connected, the Hurewicz theorem gives
 \[
 \pi_3(S^3)
 \xrightarrow{\cong}
-H_3(S^3;\mathbb Z)
+H_3(S^3;\ZZ)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 The map $u$ represents the generator of
 \[
-H^3(S^3;\mathbb Z),
+H^3(S^3;\ZZ),
 \]
 so on $\pi_3$ it induces multiplication by $\pm1$, hence an isomorphism
 \[
 \pi_3(S^3)
 \xrightarrow{\cong}
-\pi_3(K(\mathbb Z,3)).
+\pi_3(K(\ZZ,3)).
 \]
 
 The long exact homotopy sequence of
 \[
-F\to S^3\xrightarrow{u}K(\mathbb Z,3)
+F\to S^3\xrightarrow{u}K(\ZZ,3)
 \]
 now gives
 \[
@@ -118,7 +118,7 @@ now gives
 \]
 For $i>3$,
 \[
-\pi_i(K(\mathbb Z,3))=0,
+\pi_i(K(\ZZ,3))=0,
 \]
 so the same exact sequence gives
 \[
@@ -136,11 +136,11 @@ The cohomology Serre spectral sequence of the fibration in step
 \[
 E_2^{s,t}
 \cong
-H^s(S^3;\mathbb Z)
+H^s(S^3;\ZZ)
 \otimes
-H^t(K(\mathbb Z,2);\mathbb Z)
+H^t(K(\ZZ,2);\ZZ)
 \cong
-\Lambda(u_3)\otimes\mathbb Z[c_2],
+\Lambda(u_3)\otimes\ZZ[c_2],
 \]
 where
 \[
@@ -155,20 +155,20 @@ where
 The base $S^3$ is simply connected, so there is no nontrivial local
 coefficient action. Moreover,
 \[
-K(\mathbb Z,2)
+K(\ZZ,2)
 \simeq
 \mathbb{CP}^{\infty}
 \]
 and hence
 \[
-H^*(K(\mathbb Z,2);\mathbb Z)
+H^*(K(\ZZ,2);\ZZ)
 \cong
-\mathbb Z[c_2],
+\ZZ[c_2],
 \qquad |c_2|=2.
 \]
 Finally,
 \[
-H^*(S^3;\mathbb Z)
+H^*(S^3;\ZZ)
 \cong
 \Lambda(u_3).
 \]
@@ -190,21 +190,21 @@ d_3(c_2)=u_3.
 
 The fibration
 \[
-K(\mathbb Z,2)\to F\to S^3
+K(\ZZ,2)\to F\to S^3
 \]
 is obtained by pulling back the path-loop fibration of
 \[
-K(\mathbb Z,3)
+K(\ZZ,3)
 \]
 along the classifying map $u$.
 
 In the path-loop fibration, the fundamental class
 \[
-c_2\in H^2(K(\mathbb Z,2);\mathbb Z)
+c_2\in H^2(K(\ZZ,2);\ZZ)
 \]
 transgresses to the fundamental class in
 \[
-H^3(K(\mathbb Z,3);\mathbb Z).
+H^3(K(\ZZ,3);\ZZ).
 \]
 Naturality of transgression under pullback therefore gives
 \[
@@ -249,9 +249,9 @@ by step [](#s1-4){.pf-ref}.
 The spectral sequence has no nonzero differential after $d_3$, and
 for $m>1$ it yields
 \[
-H^{2m+1}(F;\mathbb Z)
+H^{2m+1}(F;\ZZ)
 \cong
-\mathbb Z/m,
+\ZZ/m,
 \]
 while the other positive-degree cohomology groups vanish.
 
@@ -271,13 +271,13 @@ d_3:E_3^{0,t}\to E_3^{3,t-2}.
 
 By step [](#s1-5){.pf-ref}, in fiber degree $2m$ this map is multiplication by $m$:
 \[
-\mathbb Z\langle c_2^m\rangle
+\ZZ\langle c_2^m\rangle
 \xrightarrow{\times m}
-\mathbb Z\langle u_3c_2^{m-1}\rangle.
+\ZZ\langle u_3c_2^{m-1}\rangle.
 \]
 For $m\ge1$ this map is injective. Its cokernel is
 \[
-\mathbb Z/m.
+\ZZ/m.
 \]
 The target class has total degree
 \[
@@ -285,7 +285,7 @@ The target class has total degree
 =
 2m+1.
 \]
-For $m=1$ the cokernel is zero; for $m>1$ it is $\mathbb Z/m$.
+For $m=1$ the cokernel is zero; for $m>1$ it is $\ZZ/m$.
 
 No later differential can occur because there are no further nonzero base
 columns. Hence
@@ -302,11 +302,11 @@ giving the stated cohomology groups.
 
 The homology of $F$ is
 \[
-H_i(F;\mathbb Z)
+H_i(F;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/m,&i=2m, m>1,\\
+\ZZ,&i=0,\\
+\ZZ/m,&i=2m, m>1,\\
 0,&\text{otherwise}.
 \end{cases}
 \]
@@ -319,17 +319,17 @@ sequences
 \[
 0
 \to
-\operatorname{Ext}(H_{n-1}(F),\mathbb Z)
+\operatorname{Ext}(H_{n-1}(F),\ZZ)
 \to
-H^n(F;\mathbb Z)
+H^n(F;\ZZ)
 \to
-\operatorname{Hom}(H_n(F),\mathbb Z)
+\operatorname{Hom}(H_n(F),\ZZ)
 \to
 0.
 \]
 
 The Serre spectral sequence in step [](#s1-3){.pf-ref} has finitely generated entries in
-every total degree, so $H_n(F;\mathbb Z)$ is finitely generated for every
+every total degree, so $H_n(F;\ZZ)$ is finitely generated for every
 $n$. Also $F$ is $3$-connected by step [](#s1-2){.pf-ref}.
 
 Apply the universal coefficient sequences successively in increasing
@@ -339,46 +339,46 @@ H^{2m}(F)=0,
 \]
 then the sequence gives
 \[
-\operatorname{Ext}(H_{2m-1}(F),\mathbb Z)=0
+\operatorname{Ext}(H_{2m-1}(F),\ZZ)=0
 \]
 and
 \[
-\operatorname{Hom}(H_{2m}(F),\mathbb Z)=0.
+\operatorname{Hom}(H_{2m}(F),\ZZ)=0.
 \]
 For finitely generated groups, the first equality says that
 $H_{2m-1}(F)$ is torsion-free, while the second says that $H_{2m}(F)$ is
 torsion. The neighboring odd-degree sequence
 \[
-H^{2m+1}(F)\cong\mathbb Z/m
+H^{2m+1}(F)\cong\ZZ/m
 \]
 then forces the free group
 \[
-\operatorname{Hom}(H_{2m+1}(F),\mathbb Z)
+\operatorname{Hom}(H_{2m+1}(F),\ZZ)
 \]
 to vanish and identifies
 \[
-\operatorname{Ext}(H_{2m}(F),\mathbb Z)
+\operatorname{Ext}(H_{2m}(F),\ZZ)
 \cong
-\mathbb Z/m.
+\ZZ/m.
 \]
 Thus $H_{2m+1}(F)$ is both torsion-free from the next even-degree sequence
 and torsion from this one, so it is zero. Since a finitely generated
 torsion group $A$ satisfies
 \[
-\operatorname{Ext}(A,\mathbb Z)\cong A,
+\operatorname{Ext}(A,\ZZ)\cong A,
 \]
 one obtains
 \[
-H_{2m}(F)\cong\mathbb Z/m.
+H_{2m}(F)\cong\ZZ/m.
 \]
 Starting with $H_i(F)=0$ for $i\le3$, this induction gives the displayed
 homology groups in every degree.
 
 In particular, the elementary identity
 \[
-\operatorname{Ext}(\mathbb Z/m,\mathbb Z)
+\operatorname{Ext}(\ZZ/m,\ZZ)
 \cong
-\mathbb Z/m,
+\ZZ/m,
 \]
 is the torsion calculation at each induction step. This is also exactly
 the homology calculation in Ravenel, Lemma 1.2.3.
@@ -401,7 +401,7 @@ H_{2p}(F)
 \]
 is
 \[
-\mathbb Z/p.
+\ZZ/p.
 \]
 
 
@@ -410,7 +410,7 @@ is
 By step [](#s1-7){.pf-ref}, the only nonzero positive homology groups below degree $2p$
 are
 \[
-H_{2m}(F)\cong\mathbb Z/m
+H_{2m}(F)\cong\ZZ/m
 \qquad
 (1<m<p).
 \]
@@ -419,7 +419,7 @@ in $\mathcal C_p$.
 
 At degree $2p$, step [](#s1-7){.pf-ref} gives
 \[
-H_{2p}(F)\cong\mathbb Z/p.
+H_{2p}(F)\cong\ZZ/p.
 \]
 
 :::
@@ -443,7 +443,7 @@ and the $p$-primary subgroup of
 \]
 is
 \[
-\mathbb Z/p.
+\ZZ/p.
 \]
 
 
@@ -451,7 +451,7 @@ is
 
 The space $F$ is simply connected, indeed $3$-connected by step [](#s1-2){.pf-ref}.
 Step [](#s1-8){.pf-ref} says that, modulo the Serre class $\mathcal C_p$, its reduced
-homology vanishes below degree $2p$ and is $\mathbb Z/p$ in degree
+homology vanishes below degree $2p$ and is $\ZZ/p$ in degree
 $2p$.
 
 The Hurewicz theorem modulo a Serre class therefore gives the same
@@ -462,7 +462,7 @@ $\mathcal C_p$.
 
 Consequently the $p$-primary subgroup vanishes below degree $2p$ and is
 \[
-\mathbb Z/p
+\ZZ/p
 \]
 in degree $2p$. This is precisely Serre's argument, recorded as Ravenel,
 Corollary 1.2.4.
@@ -486,7 +486,7 @@ whereas
 \boxed{
 \pi_{2p}(S^3)_{(p),\mathrm{tors}}
 \cong
-\mathbb Z/p.
+\ZZ/p.
 }
 \]
 
@@ -507,7 +507,7 @@ For $p=2$, the first relevant degree is
 \]
 and the conclusion gives
 \[
-\pi_4(S^3)\cong\mathbb Z/2.
+\pi_4(S^3)\cong\ZZ/2.
 \]
 For odd $p$, it gives the first $p$-primary torsion in degree $2p$.
 
@@ -520,7 +520,7 @@ For odd $p$, it gives the first $p$-primary torsion in degree $2p$.
 Step [](#s1-10){.pf-ref} is exactly the assertion that the first $p$-torsion in the
 homotopy groups of $S^3$ occurs in $\pi_{2p}(S^3)$ and is
 \[
-\mathbb Z/p.
+\ZZ/p.
 \]
 
 :::

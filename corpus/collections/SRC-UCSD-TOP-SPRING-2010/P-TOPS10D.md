@@ -38,9 +38,9 @@ The standard CW decomposition of $\mathbb{CP}^n$ is obtained from $\mathbb{CP}^{
 ::: {.pf-step #degree-2-and-top-minus-2-cohomology}
 Suppose $k\le n-2$. Then
 $$
-H^{2n-2}(X;\mathbb Z)\cong\mathbb Z,
+H^{2n-2}(X;\ZZ)\cong\ZZ,
 \qquad
-H^2(X;\mathbb Z)=0.
+H^2(X;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -53,7 +53,7 @@ By the relative-cohomology computation for $X=\mathbb{CP}^n/\mathbb{CP}^k$, the 
 If $X$ were homotopy equivalent to a compact boundaryless manifold $M$, then $M$ would be a closed oriented $2n$-manifold.
 
 ::: pf-proof
-The top nonzero integral cohomology of $X$ is $H^{2n}(X)\cong\mathbb Z$, so the manifold must have dimension $2n$ and nonzero integral top cohomology, hence be orientable.
+The top nonzero integral cohomology of $X$ is $H^{2n}(X)\cong\ZZ$, so the manifold must have dimension $2n$ and nonzero integral top cohomology, hence be orientable.
 :::
 
 :::
@@ -61,7 +61,7 @@ The top nonzero integral cohomology of $X$ is $H^{2n}(X)\cong\mathbb Z$, so the 
 ::: {.pf-step #poincare-duality-contradiction}
 Poincaré duality would give a perfect pairing
 $$
-H^2(M;\mathbb Z)\times H^{2n-2}(M;\mathbb Z)\to\mathbb Z,
+H^2(M;\ZZ)\times H^{2n-2}(M;\ZZ)\to\ZZ,
 $$
 contradicting step [](#degree-2-and-top-minus-2-cohomology){.pf-ref}.
 

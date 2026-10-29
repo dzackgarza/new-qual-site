@@ -17,16 +17,16 @@ audit:
 ---
 
 ::: {.problem}
-For $f\in C_0^\infty(\mathbb R^2)$ define $u(x,t)$ by
+For $f\in C_0^\infty(\RR^2)$ define $u(x,t)$ by
 \[
-u(x,t)=\int_{\mathbb R^2}e^{ix\cdot\xi}\frac{\sin(t|\xi|)}{|\xi|}f(\xi)\,d\xi,
-\qquad x\in\mathbb R^2,\ t>0.
+u(x,t)=\int_{\RR^2}e^{ix\cdot\xi}\frac{\sin(t|\xi|)}{|\xi|}f(\xi)\,d\xi,
+\qquad x\in\RR^2,\ t>0.
 \]
 Show that
 \[
 \lim_{t\to\infty}\lVert u(\cdot,t)\rVert_{L^2}=\infty
 \]
-for a set of $f$ that is dense in $L^2(\mathbb R^2)$.
+for a set of $f$ that is dense in $L^2(\RR^2)$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ Let
 \[
 \mathcal D
 \coloneqq
-\{f\in C_0^\infty(\mathbb R^2):f(0)\ne0\}.
+\{f\in C_0^\infty(\RR^2):f(0)\ne0\}.
 \]
 
 ::: pf
@@ -98,14 +98,14 @@ The apparent singularity at $\xi=0$ is removable because
 \qquad
 (\xi\to0),
 \]
-and $g_t$ has compact support. Hence $g_t\in L^2(\mathbb R^2)$.
+and $g_t$ has compact support. Hence $g_t\in L^2(\RR^2)$.
 
 The function $u(\cdot,t)$ is the Fourier transform of $g_t$ up to the fixed Fourier-normalization convention, so Plancherel gives a constant $C_{\mathrm P}>0$, independent of $f$ and $t$, such that
 \[
 \|u(\cdot,t)\|_{L^2}^2
 =
 C_{\mathrm P}
-\int_{\mathbb R^2}
+\int_{\RR^2}
 \frac{\sin^2(t|\xi|)}{|\xi|^2}
 |f(\xi)|^2\,d\xi.
 \]
@@ -201,20 +201,20 @@ Since $t r_0\to\infty$ and the integral diverges by step [](#s1-3){.pf-ref}, the
 
 ::: {.pf-step #s1-5}
 
-The set $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+The set $\mathcal D$ is dense in $L^2(\RR^2)$.
 
 
 ::: pf-proof
 
-Fix $F\in L^2(\mathbb R^2)$ and $\varepsilon>0$. Since $C_0^\infty(\mathbb R^2)$ is dense in $L^2(\mathbb R^2)$, choose
+Fix $F\in L^2(\RR^2)$ and $\varepsilon>0$. Since $C_0^\infty(\RR^2)$ is dense in $L^2(\RR^2)$, choose
 \[
-\varphi\in C_0^\infty(\mathbb R^2)
+\varphi\in C_0^\infty(\RR^2)
 \]
 with
 \[
 \|F-\varphi\|_2<\frac{\varepsilon}{2}.
 \]
-Choose $\psi\in C_0^\infty(\mathbb R^2)$ with $\psi(0)=1$. Pick a nonzero scalar $\delta$ such that
+Choose $\psi\in C_0^\infty(\RR^2)$ with $\psi(0)=1$. Pick a nonzero scalar $\delta$ such that
 \[
 |\delta|\,\|\psi\|_2<\frac{\varepsilon}{2}
 \qquad\text{and}\qquad
@@ -242,7 +242,7 @@ Thus every $L^2$ function can be approximated arbitrarily closely by elements of
 
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} proves the required divergence for every $f\in\mathcal D$, and step [](#s1-5){.pf-ref} proves that $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+Step [](#s1-4){.pf-ref} proves the required divergence for every $f\in\mathcal D$, and step [](#s1-5){.pf-ref} proves that $\mathcal D$ is dense in $L^2(\RR^2)$.
 
 :::
 

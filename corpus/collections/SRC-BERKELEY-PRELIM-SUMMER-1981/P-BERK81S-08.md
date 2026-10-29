@@ -31,12 +31,12 @@ Show that
 \[
 x^{10}+x^9+x^8+\cdots+x+1
 \]
-is irreducible over $\mathbb Q$.
+is irreducible over $\QQ$.
 Is
 \[
 x^{11}+x^{10}+\cdots+x+1
 \]
-irreducible over $\mathbb Q$?
+irreducible over $\QQ$?
 :::
 
 ::: {.solution}

@@ -19,11 +19,11 @@ Show that $A$ is diagonalizable.
 
 ::: {.solution}
 
-Fix any matrix norm on $M_n(\mathbb C)$. By hypothesis there is $C>0$ such that
+Fix any matrix norm on $M_n(\CC)$. By hypothesis there is $C>0$ such that
 \[
 \|A^k\|\le C
 \]
-for every $k\in\mathbb Z$.
+for every $k\in\ZZ$.
 
 ::: pf
 
@@ -93,7 +93,7 @@ w\ne0,
 
 ::: pf-proof
 
-Over $\mathbb C$, the minimal polynomial of $A$ splits into linear factors.
+Over $\CC$, the minimal polynomial of $A$ splits into linear factors.
 A matrix is diagonalizable if and only if its minimal polynomial has no repeated root.
 
 For completeness, if the minimal polynomial has a repeated factor
@@ -219,7 +219,7 @@ which is bounded independently of $k$. This is a contradiction.
 
 Therefore
 \[
-\boxed{A\text{ is diagonalizable over }\mathbb C}.
+\boxed{A\text{ is diagonalizable over }\CC}.
 \]
 
 

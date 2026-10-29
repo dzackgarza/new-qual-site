@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $D\subset\mathbb C$ be a domain and let $f,g:D\to\mathbb C$ be analytic.
+Let $D\subset\CC$ be a domain and let $f,g:D\to\CC$ be analytic.
 Suppose $z_0\in D$, $f(z_0)=g(z_0)=0$, and
 \[
-\lim_{z\to z_0}\frac{f'(z)}{g'(z)}\in\mathbb C
+\lim_{z\to z_0}\frac{f'(z)}{g'(z)}\in\CC
 \]
 exists.
 Show that
@@ -37,7 +37,7 @@ L
 =
 \lim_{z\to z_0}
 \frac{f'(z)}{g'(z)}
-\in\mathbb C.
+\in\CC.
 \]
 
 ::: pf

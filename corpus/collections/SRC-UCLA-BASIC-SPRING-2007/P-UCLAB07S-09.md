@@ -83,7 +83,7 @@ They are well-defined when $f$ is bounded.
 
 A bounded function
 \[
-f:[0,1]\to\mathbb R
+f:[0,1]\to\RR
 \]
 is Riemann integrable if
 \[

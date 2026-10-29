@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$.
+Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\CC$.
 
-(a) What is the degree $[\mathbb{Q}(\zeta) : \mathbb{Q}]$?
+(a) What is the degree $[\QQ(\zeta) : \QQ]$?
 
-(b) How many quadratic subfields of $\mathbb{Q}(\zeta)$ are there? List them with justification.
+(b) How many quadratic subfields of $\QQ(\zeta)$ are there? List them with justification.
 
-(c) What is the degree $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}]$?
+(c) What is the degree $[\QQ(\zeta, \sqrt[4]{2}) : \QQ]$?
 :::
 
 ::: {.solution}
@@ -29,7 +29,7 @@ Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$
 
 ::: {.pf-step #s1}
 
-The degree of the cyclotomic extension is $[\mathbb Q(\zeta):\mathbb Q]=4$.
+The degree of the cyclotomic extension is $[\QQ(\zeta):\QQ]=4$.
 
 ::: pf-proof
 
@@ -41,20 +41,20 @@ The element $\zeta = e^{2\pi i / 8}$ is a primitive $8$-th root of unity.
 
 ::: pf-step
 
-The minimal polynomial of $\zeta$ over $\mathbb{Q}$ is the $8$-th cyclotomic polynomial:
+The minimal polynomial of $\zeta$ over $\QQ$ is the $8$-th cyclotomic polynomial:
     $$\Phi_8(x) = \frac{x^8 - 1}{x^4 - 1} = x^4 + 1.$$
 
 :::
 
 ::: pf-step
 
-$\Phi_8(x)$ is irreducible over $\mathbb{Q}$ (for instance, $\Phi_8(x+1) = x^4 + 4x^3 + 6x^2 + 4x + 2$ is irreducible by Eisenstein's criterion at $p = 2$).
+$\Phi_8(x)$ is irreducible over $\QQ$ (for instance, $\Phi_8(x+1) = x^4 + 4x^3 + 6x^2 + 4x + 2$ is irreducible by Eisenstein's criterion at $p = 2$).
 
 :::
 
 ::: pf-step
 
-Therefore $[\mathbb{Q}(\zeta) : \mathbb{Q}] = \deg \Phi_8(x) = \varphi(8) = 8(1 - 1/2) = 4$.
+Therefore $[\QQ(\zeta) : \QQ] = \deg \Phi_8(x) = \varphi(8) = 8(1 - 1/2) = 4$.
 
 :::
 
@@ -64,30 +64,30 @@ Therefore $[\mathbb{Q}(\zeta) : \mathbb{Q}] = \deg \Phi_8(x) = \varphi(8) = 8(1 
 
 ::: {.pf-step #s2}
 
-The three quadratic subfields of $\mathbb Q(\zeta)$ are
+The three quadratic subfields of $\QQ(\zeta)$ are
 \[
-\boxed{\mathbb Q(i),\quad \mathbb Q(\sqrt2),\quad\mathbb Q(\sqrt{-2})}.
+\boxed{\QQ(i),\quad \QQ(\sqrt2),\quad\QQ(\sqrt{-2})}.
 \]
 
 ::: pf-proof
 
 ::: pf-step
 
-The extension $\mathbb{Q}(\zeta)/\mathbb{Q}$ is Galois, with Galois group isomorphic to the unit group $(\mathbb{Z}/8\mathbb{Z})^\times$:
-    $$\operatorname{Gal}(\mathbb{Q}(\zeta)/\mathbb{Q}) \cong (\mathbb{Z}/8\mathbb{Z})^\times = \{1, 3, 5, 7\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z},$$
+The extension $\QQ(\zeta)/\QQ$ is Galois, with Galois group isomorphic to the unit group $(\ZZ/8\ZZ)^\times$:
+    $$\operatorname{Gal}(\QQ(\zeta)/\QQ) \cong (\ZZ/8\ZZ)^\times = \{1, 3, 5, 7\} \cong \ZZ/2\ZZ \times \ZZ/2\ZZ,$$
     which is the Klein four-group $V_4$.
 
 :::
 
 ::: pf-step
 
-By the Fundamental Theorem of Galois Theory, intermediate fields $E$ with $[E : \mathbb{Q}] = 2$ correspond bijectively to subgroups $H \le \operatorname{Gal}(\mathbb{Q}(\zeta)/\mathbb{Q})$ of index 2 (which are subgroups of order 2).
+By the Fundamental Theorem of Galois Theory, intermediate fields $E$ with $[E : \QQ] = 2$ correspond bijectively to subgroups $H \le \operatorname{Gal}(\QQ(\zeta)/\QQ)$ of index 2 (which are subgroups of order 2).
 
 :::
 
 ::: pf-step
 
-The group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ has exactly three subgroups of order 2:
+The group $\ZZ/2\ZZ \times \ZZ/2\ZZ$ has exactly three subgroups of order 2:
     $$H_1 = \langle 3 \rangle, \qquad H_2 = \langle 5 \rangle, \qquad H_3 = \langle 7 \rangle.$$
 
 :::
@@ -96,15 +96,15 @@ The group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ has exactly thr
 
 Compute the fixed fields:
         - Note $\zeta = \cos(\pi/4) + i \sin(\pi/4) = \frac{\sqrt{2}}{2}(1 + i)$.
-        - Then $\zeta^2 = i$, so $\mathbb{Q}(i) \subset \mathbb{Q}(\zeta)$ is a quadratic subfield.
-        - $\zeta + \zeta^{-1} = \frac{\sqrt{2}}{2}(1 + i) + \frac{\sqrt{2}}{2}(1 - i) = \sqrt{2}$, so $\mathbb{Q}(\sqrt{2}) \subset \mathbb{Q}(\zeta)$ is a quadratic subfield.
-        - $\zeta - \zeta^{-1} = \frac{\sqrt{2}}{2}(1 + i) - \frac{\sqrt{2}}{2}(1 - i) = i \sqrt{2} = \sqrt{-2}$, so $\mathbb{Q}(\sqrt{-2}) \subset \mathbb{Q}(\zeta)$ is a quadratic subfield.
+        - Then $\zeta^2 = i$, so $\QQ(i) \subset \QQ(\zeta)$ is a quadratic subfield.
+        - $\zeta + \zeta^{-1} = \frac{\sqrt{2}}{2}(1 + i) + \frac{\sqrt{2}}{2}(1 - i) = \sqrt{2}$, so $\QQ(\sqrt{2}) \subset \QQ(\zeta)$ is a quadratic subfield.
+        - $\zeta - \zeta^{-1} = \frac{\sqrt{2}}{2}(1 + i) - \frac{\sqrt{2}}{2}(1 - i) = i \sqrt{2} = \sqrt{-2}$, so $\QQ(\sqrt{-2}) \subset \QQ(\zeta)$ is a quadratic subfield.
 
 :::
 
 ::: pf-step
 
-The three distinct quadratic subfields are $\mathbb{Q}(i)$, $\mathbb{Q}(\sqrt{2})$, and $\mathbb{Q}(\sqrt{-2})$.
+The three distinct quadratic subfields are $\QQ(i)$, $\QQ(\sqrt{2})$, and $\QQ(\sqrt{-2})$.
 
 :::
 
@@ -116,57 +116,57 @@ The three distinct quadratic subfields are $\mathbb{Q}(i)$, $\mathbb{Q}(\sqrt{2}
 
 The extension obtained by adjoining the fourth root of two has degree
 \[
-\boxed{[\mathbb Q(\zeta,\sqrt[4]2):\mathbb Q]=8}.
+\boxed{[\QQ(\zeta,\sqrt[4]2):\QQ]=8}.
 \]
 
 ::: pf-proof
 
 ::: pf-step
 
-From step [](#s2){.pf-ref}, $\mathbb{Q}(\zeta) = \mathbb{Q}(i, \sqrt{2})$.
+From step [](#s2){.pf-ref}, $\QQ(\zeta) = \QQ(i, \sqrt{2})$.
 
 :::
 
 ::: pf-step
 
-Since $(\sqrt[4]{2})^2 = \sqrt{2}$, we have $\mathbb{Q}(\sqrt{2}) \subseteq \mathbb{Q}(\sqrt[4]{2})$.
+Since $(\sqrt[4]{2})^2 = \sqrt{2}$, we have $\QQ(\sqrt{2}) \subseteq \QQ(\sqrt[4]{2})$.
 
 :::
 
 ::: pf-step
 
-Therefore, adjoining $\sqrt[4]{2}$ to $\mathbb{Q}(\zeta) = \mathbb{Q}(i, \sqrt{2})$ gives
-    $$\mathbb{Q}(\zeta, \sqrt[4]{2}) = \mathbb{Q}(i, \sqrt{2}, \sqrt[4]{2}) = \mathbb{Q}(i, \sqrt[4]{2}).$$
+Therefore, adjoining $\sqrt[4]{2}$ to $\QQ(\zeta) = \QQ(i, \sqrt{2})$ gives
+    $$\QQ(\zeta, \sqrt[4]{2}) = \QQ(i, \sqrt{2}, \sqrt[4]{2}) = \QQ(i, \sqrt[4]{2}).$$
 
 :::
 
 ::: pf-step
 
-The polynomial $x^4 - 2 \in \mathbb{Q}[x]$ is irreducible over $\mathbb{Q}$ by Eisenstein at $p = 2$, so $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$.
+The polynomial $x^4 - 2 \in \QQ[x]$ is irreducible over $\QQ$ by Eisenstein at $p = 2$, so $[\QQ(\sqrt[4]{2}) : \QQ] = 4$.
 
 :::
 
 ::: pf-step
 
-The field $\mathbb{Q}(\sqrt[4]{2})$ is a subfield of $\mathbb{R}$.
+The field $\QQ(\sqrt[4]{2})$ is a subfield of $\RR$.
 
 :::
 
 ::: pf-step
 
-Since $i \notin \mathbb{R}$, $i \notin \mathbb{Q}(\sqrt[4]{2})$.
+Since $i \notin \RR$, $i \notin \QQ(\sqrt[4]{2})$.
 
 :::
 
 ::: pf-step
 
-The minimal polynomial of $i$ over $\mathbb{Q}(\sqrt[4]{2})$ is $x^2 + 1$, which has degree 2.
+The minimal polynomial of $i$ over $\QQ(\sqrt[4]{2})$ is $x^2 + 1$, which has degree 2.
 
 :::
 
 ::: pf-step
 
-Thus $[\mathbb{Q}(i, \sqrt[4]{2}) : \mathbb{Q}(\sqrt[4]{2})] = 2$.
+Thus $[\QQ(i, \sqrt[4]{2}) : \QQ(\sqrt[4]{2})] = 2$.
 
 :::
 
@@ -176,7 +176,7 @@ By the Tower Law of extension degrees:
 
 :::
 
-$$[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}] = [\mathbb{Q}(i, \sqrt[4]{2}) : \mathbb{Q}(\sqrt[4]{2})] \cdot [\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 2 \cdot 4 = 8.$$
+$$[\QQ(\zeta, \sqrt[4]{2}) : \QQ] = [\QQ(i, \sqrt[4]{2}) : \QQ(\sqrt[4]{2})] \cdot [\QQ(\sqrt[4]{2}) : \QQ] = 2 \cdot 4 = 8.$$
 
 :::
 

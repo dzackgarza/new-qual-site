@@ -28,14 +28,14 @@ A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
 \]
 
 (a) Show that $A$ generates a cyclic group $G$ of order $4$.
-Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degree.
+Show that if $f\in\CC[x,y]^G$, then $f$ can have no monomials of odd degree.
 
 (b) Use Molien's Theorem to show that the Hilbert series of $G$ is
 \[
 \phi_G(z)=\frac{1+z^4}{(1-z^2)(1-z^4)}.
 \]
 
-(c) Show that $\mathbb{C}[x,y]^G$ is Cohen–Macaulay by explicitly finding the generators and separators for $\mathbb{C}[x,y]^G$.
+(c) Show that $\CC[x,y]^G$ is Cohen–Macaulay by explicitly finding the generators and separators for $\CC[x,y]^G$.
 :::
 
 ::: {.solution}
@@ -123,29 +123,29 @@ $$p=u^4=(x+iy)^4,\qquad q=v^4=(x-iy)^4,\qquad r=uv=x^2+y^2.$$
 Then every invariant is a polynomial in $p,q,r$ with relation
 $$pq=r^4,$$
 so
-$$\mathbb C[x,y]^G\cong \mathbb C[p,q,r]/(pq-r^4).$$
+$$\CC[x,y]^G\cong \CC[p,q,r]/(pq-r^4).$$
 :::
 
 ::: pf-step
 Set $s=p+q$ and $t=p$. The elements $r=uv$ and $s=u^4+v^4$ are algebraically independent: their Jacobian determinant with respect to $u,v$ is
 $$\det\begin{pmatrix}v&u\\4u^3&4v^3\end{pmatrix}=4(v^4-u^4),$$
-which is not the zero polynomial. Since the ground field has characteristic $0$, any algebraic relation between $r$ and $s$ would force the Jacobian to have rank $<2$ identically. Thus $S=\mathbb C[r,s]$ is a polynomial ring in two variables.
+which is not the zero polynomial. Since the ground field has characteristic $0$, any algebraic relation between $r$ and $s$ would force the Jacobian to have rank $<2$ identically. Thus $S=\CC[r,s]$ is a polynomial ring in two variables.
 :::
 
 ::: pf-step
-In the presentation $\mathbb C[p,q,r]/(pq-r^4)$, write $q=s-t$ and $p=t$. Then
+In the presentation $\CC[p,q,r]/(pq-r^4)$, write $q=s-t$ and $p=t$. Then
 $$t^2-st+r^4=0,$$
 so
-$$\mathbb C[x,y]^G\cong S[t]/(t^2-st+r^4).$$
+$$\CC[x,y]^G\cong S[t]/(t^2-st+r^4).$$
 Because the defining polynomial is monic of degree $2$ in $t$, Euclidean division in $S[t]$ gives a unique representative
 $$a(r,s)+t\,b(r,s),\qquad a,b\in S.$$
 Hence
-$$\mathbb C[x,y]^G=S\oplus tS$$
+$$\CC[x,y]^G=S\oplus tS$$
 as an $S$-module.
 :::
 
 ::: pf-step
-Therefore $\mathbb C[x,y]^G$ is a free module over the polynomial subring $S=\mathbb C[r,s]$, hence Cohen–Macaulay, with homogeneous system of parameters $r$ (degree $2$), $s$ (degree $4$), and secondary invariants (the requested separators) $\{1,t\}$.
+Therefore $\CC[x,y]^G$ is a free module over the polynomial subring $S=\CC[r,s]$, hence Cohen–Macaulay, with homogeneous system of parameters $r$ (degree $2$), $s$ (degree $4$), and secondary invariants (the requested separators) $\{1,t\}$.
 :::
 
 :::

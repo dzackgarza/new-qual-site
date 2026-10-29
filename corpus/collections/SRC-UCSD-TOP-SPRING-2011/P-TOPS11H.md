@@ -35,24 +35,24 @@ audit:
 ::: pf
 
 ::: pf-step
-Let $u,v\in H^2(S^2\times S^2;\mathbb Z)$ be the pullbacks of the positive generator of $H^2(S^2;\mathbb Z)$ under the two projections. Then
+Let $u,v\in H^2(S^2\times S^2;\ZZ)$ be the pullbacks of the positive generator of $H^2(S^2;\ZZ)$ under the two projections. Then
 $$
-H^*(S^2\times S^2;\mathbb Z)
-\cong \mathbb Z[u,v]/(u^2,v^2),
+H^*(S^2\times S^2;\ZZ)
+\cong \ZZ[u,v]/(u^2,v^2),
 \qquad |u|=|v|=2,
 $$
-and $uv$ generates $H^4(S^2\times S^2;\mathbb Z)$ after choosing the product orientation.
+and $uv$ generates $H^4(S^2\times S^2;\ZZ)$ after choosing the product orientation.
 
 :::
 
 ::: pf-step
-If $x\in H^2(\mathbb{CP}^2;\mathbb Z)$ is the standard generator, then
+If $x\in H^2(\mathbb{CP}^2;\ZZ)$ is the standard generator, then
 $$
-H^*(\mathbb{CP}^2;\mathbb Z)
-\cong \mathbb Z[x]/(x^3),
+H^*(\mathbb{CP}^2;\ZZ)
+\cong \ZZ[x]/(x^3),
 \qquad |x|=2,
 $$
-with $x^2$ generating $H^4(\mathbb{CP}^2;\mathbb Z)$ after choosing the usual orientation.
+with $x^2$ generating $H^4(\mathbb{CP}^2;\ZZ)$ after choosing the usual orientation.
 
 :::
 
@@ -62,7 +62,7 @@ Let $f:S^2\times S^2\to\mathbb{CP}^2$ be continuous.
 ::: pf-proof
 
 ::: pf-step
-Since $H^2(S^2\times S^2;\mathbb Z)=\mathbb Zu\oplus\mathbb Zv$, write
+Since $H^2(S^2\times S^2;\ZZ)=\mathbb Zu\oplus\mathbb Zv$, write
 $$
 f^*(x)=au+bv
 $$

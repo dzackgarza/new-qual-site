@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Let \\(A_1,A_2,A_3\\) be solid rectangular blocks in \\(\\mathbb R^3\\).
-For \\(q\\in S^2\\) and \\(t\\in\\mathbb R\\), let
+Let \\(A_1,A_2,A_3\\) be solid rectangular blocks in \\(\\RR^3\\).
+For \\(q\\in S^2\\) and \\(t\\in\\RR\\), let
 \\[
-P_{q,t}=\\{x\\in\\mathbb R^3:x\\cdot q=t\\}
+P_{q,t}=\\{x\\in\\RR^3:x\\cdot q=t\\}
 \\]
 be the plane through \\(tq\\) perpendicular to \\(q\\). Let
 \\[
@@ -48,9 +48,9 @@ is continuous. Prove that for each \\(q\\in S^2\\) there is a unique real number
 \\[
 f_i(q)=\\operatorname{vol}(A_i\\cap H_{q,t_q}).
 \\]
-Discuss why \\(f_i:S^2\\to\\mathbb R\\) is continuous.
+Discuss why \\(f_i:S^2\\to\\RR\\) is continuous.
 
-(d) Use the Borsuk--Ulam theorem to prove that there is a plane in \\(\\mathbb R^3\\) that simultaneously divides each block \\(A_i\\) into two pieces of equal volume.
+(d) Use the Borsuk--Ulam theorem to prove that there is a plane in \\(\\RR^3\\) that simultaneously divides each block \\(A_i\\) into two pieces of equal volume.
 :::
 
 ::: {.solution}
@@ -121,7 +121,7 @@ can be computed by elementary multivariable geometry.
 
 For each fixed block $A_i$, the function
 \[
-F_i:S^2\times\mathbb R\to\mathbb R,
+F_i:S^2\times\RR\to\RR,
 \qquad
 F_i(q,t)=\operatorname{vol}(A_i\cap H_{q,t}),
 \]
@@ -134,7 +134,7 @@ Let
 \[
 (q_n,t_n)\to(q,t).
 \]
-For almost every $x\in\mathbb R^3$,
+For almost every $x\in\RR^3$,
 \[
 \mathbf 1_{A_i}(x)
 \mathbf 1_{\{x\cdot q_n>t_n\}}
@@ -192,7 +192,7 @@ lies in $H_{q,t}$; above the maximum, none of it does.
 
 ::: {.pf-step #s1-5}
 
-For each $q\in S^2$, there exists $t_q\in\mathbb R$ such that
+For each $q\in S^2$, there exists $t_q\in\RR$ such that
 \[
 \boxed{F_3(q,t_q)=\frac{V_3}{2}}.
 \]
@@ -230,7 +230,7 @@ Because $A_3$ is a solid convex block with nonempty interior, the slab
 \[
 A_3\cap\{x:t_1<x\cdot q<t_2\}
 \]
-contains an open subset of $\mathbb R^3$, hence has positive volume.
+contains an open subset of $\RR^3$, hence has positive volume.
 Therefore
 \[
 F_3(q,t_1)-F_3(q,t_2)>0.
@@ -416,7 +416,7 @@ V_i-f_i(q).
 
 Define
 \[
-F:S^2\to\mathbb R^2,
+F:S^2\to\RR^2,
 \qquad
 F(q)=(f_1(q),f_2(q)).
 \]
@@ -443,7 +443,7 @@ By the Borsuk--Ulam theorem, there exists $q\in S^2$ such that
 
 The Borsuk--Ulam theorem states that every continuous map
 \[
-S^2\to\mathbb R^2
+S^2\to\RR^2
 \]
 takes the same value at some antipodal pair. Apply it to the map in step
 [](#s1-13){.pf-ref}.

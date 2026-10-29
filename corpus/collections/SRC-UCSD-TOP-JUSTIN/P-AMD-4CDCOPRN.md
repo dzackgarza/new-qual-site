@@ -45,7 +45,7 @@ This is the Mayer--Vietoris sequence for a cover of the base circle by two arcs,
 
 ::: pf-step
 
-On $H_n(S^n)\cong\mathbb Z$, the map $1-f_*$ is multiplication by $1-d$, while on $H_0(S^n)\cong\mathbb Z$ it is zero.
+On $H_n(S^n)\cong\ZZ$, the map $1-f_*$ is multiplication by $1-d$, while on $H_0(S^n)\cong\ZZ$ it is zero.
 
 ::: pf-proof
 
@@ -60,23 +60,23 @@ By definition of degree, $f_*$ acts by multiplication by $d$ on $H_n(S^n)$. Sinc
 If $n\ge2$, then
 $$
 \boxed{
-H_k(M_f;\mathbb Z)\cong
+H_k(M_f;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,1,\\
-\mathbb Z/(1-d),&k=n,\\
-\mathbb Z,&k=n+1\text{ and }d=1,\\
+\ZZ,&k=0,1,\\
+\ZZ/(1-d),&k=n,\\
+\ZZ,&k=n+1\text{ and }d=1,\\
 0,&\text{otherwise},
 \end{cases}}
 $$
-where $\mathbb Z/(0)=\mathbb Z$.
+where $\ZZ/(0)=\ZZ$.
 
 ::: pf-proof
 
 For degrees $n,n+1$, exactness gives
 $$
-0\to H_{n+1}(M_f)\to\mathbb Z\xrightarrow{1-d}\mathbb Z\to H_n(M_f)\to0.
+0\to H_{n+1}(M_f)\to\ZZ\xrightarrow{1-d}\ZZ\to H_n(M_f)\to0.
 $$
-Thus $H_{n+1}=\ker(1-d)$ and $H_n=\operatorname{coker}(1-d)$. Around degree $1$, the zero map $1-f_*:H_0(S^n)\to H_0(S^n)$ gives $H_1(M_f)\cong\mathbb Z$. All intermediate groups vanish because $S^n$ has no homology in degrees $1,\dots,n-1$.
+Thus $H_{n+1}=\ker(1-d)$ and $H_n=\operatorname{coker}(1-d)$. Around degree $1$, the zero map $1-f_*:H_0(S^n)\to H_0(S^n)$ gives $H_1(M_f)\cong\ZZ$. All intermediate groups vanish because $S^n$ has no homology in degrees $1,\dots,n-1$.
 
 :::
 
@@ -87,8 +87,8 @@ Thus $H_{n+1}=\ker(1-d)$ and $H_n=\operatorname{coker}(1-d)$. Around degree $1$,
 If $n=1$, then
 $$
 \boxed{
-H_0(M_f)=\mathbb Z,\qquad
-H_1(M_f)\cong\mathbb Z\oplus\mathbb Z/(1-d),\qquad
+H_0(M_f)=\ZZ,\qquad
+H_1(M_f)\cong\ZZ\oplus\ZZ/(1-d),\qquad
 H_2(M_f)=\ker(1-d),
 }
 $$
@@ -98,14 +98,14 @@ and higher homology vanishes.
 
 The Wang sequence gives
 $$
-0\to H_2(M_f)\to\mathbb Z\xrightarrow{1-d}\mathbb Z
-\to H_1(M_f)\to\mathbb Z\xrightarrow{0}\mathbb Z\to H_0(M_f)\to0.
+0\to H_2(M_f)\to\ZZ\xrightarrow{1-d}\ZZ
+\to H_1(M_f)\to\ZZ\xrightarrow{0}\ZZ\to H_0(M_f)\to0.
 $$
 Hence $H_2=\ker(1-d)$ and there is a short exact sequence
 $$
-0\to\mathbb Z/(1-d)\to H_1(M_f)\to\mathbb Z\to0.
+0\to\ZZ/(1-d)\to H_1(M_f)\to\ZZ\to0.
 $$
-It splits because $\mathbb Z$ is free.
+It splits because $\ZZ$ is free.
 
 :::
 
@@ -115,11 +115,11 @@ It splits because $\mathbb Z$ is free.
 
 If one also allows $n=0$, the four self-maps of $S^0$ have reduced degrees $1,-1,0,0$. For degree $1$ the mapping torus is $S^1\sqcup S^1$; for degree $-1$ it is $S^1$; and for either degree-$0$ constant map it is a circle with a contractible interval attached. Thus
 $$
-(d=1):\quad H_0=H_1=\mathbb Z^2,
+(d=1):\quad H_0=H_1=\ZZ^2,
 $$
 while
 $$
-(d=-1\text{ or }0):\quad H_0=H_1=\mathbb Z,
+(d=-1\text{ or }0):\quad H_0=H_1=\ZZ,
 $$
 with all higher groups zero.
 

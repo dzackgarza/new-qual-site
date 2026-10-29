@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Show that for each $\varepsilon>0$ there exists a sequence of intervals $(I_n)$ such that
 \[
-\bigcup_{n=1}^{\infty} I_n\supset\mathbb Q
+\bigcup_{n=1}^{\infty} I_n\supset\QQ
 \qquad\text{and}\qquad
 \sum_{n=1}^{\infty}|I_n|<\varepsilon.
 \]

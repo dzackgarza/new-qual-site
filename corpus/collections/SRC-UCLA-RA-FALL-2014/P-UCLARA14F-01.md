@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-01
 kind: problem
-title: Borel measurability of $L^2\cap L^3$ in $L^3(\mathbb R)$
+title: Borel measurability of $L^2\cap L^3$ in $L^3(\RR)$
 classification:
   areas:
   - real-analysis
@@ -23,16 +23,16 @@ audit:
 ::: {.problem}
 Show that
 \[
-A \coloneqq \left\{ f \in L^3(\mathbb{R}) : \int_{\mathbb{R}} |f(x)|^2\,dx < \infty \right\}
+A \coloneqq \left\{ f \in L^3(\RR) : \int_{\RR} |f(x)|^2\,dx < \infty \right\}
 \]
-is a Borel subset of $L^3(\mathbb{R})$.
+is a Borel subset of $L^3(\RR)$.
 :::
 
 ::: {.solution}
 
-For each $n\in\mathbb N$, define
+For each $n\in\NN$, define
 \[
-\phi_n:L^3(\mathbb R)\to[0,\infty),
+\phi_n:L^3(\RR)\to[0,\infty),
 \qquad
 \phi_n(f)=\int_{-n}^{n}|f(x)|^2\,dx.
 \]
@@ -78,7 +78,7 @@ and taking square roots gives the claim.
 
 ::: {.pf-step #s1-2}
 
-For every $f,g\in L^3(\mathbb R)$,
+For every $f,g\in L^3(\RR)$,
 \[
 |\phi_n(f)-\phi_n(g)|
 \le
@@ -110,7 +110,7 @@ Hence Cauchy--Schwarz gives
 \]
 Apply step [](#s1-1){.pf-ref} to each $L^2$ norm and use
 \[
-\|h\|_{L^3([-n,n])}\le\|h\|_{L^3(\mathbb R)}.
+\|h\|_{L^3([-n,n])}\le\|h\|_{L^3(\RR)}.
 \]
 The resulting factor is
 \[
@@ -127,14 +127,14 @@ which yields the displayed estimate.
 
 Each functional
 \[
-\phi_n:L^3(\mathbb R)\to\mathbb R
+\phi_n:L^3(\RR)\to\RR
 \]
 is continuous.
 
 
 ::: pf-proof
 
-Fix $f\in L^3(\mathbb R)$ and let $g\to f$ in $L^3$. Then
+Fix $f\in L^3(\RR)$ and let $g\to f$ in $L^3$. Then
 \[
 \|g\|_3
 \le
@@ -155,9 +155,9 @@ remains bounded near $f$. Step [](#s1-2){.pf-ref} then implies
 
 ::: {.pf-step #s1-4}
 
-For every $f\in L^3(\mathbb R)$,
+For every $f\in L^3(\RR)$,
 \[
-\int_{\mathbb R}|f(x)|^2\,dx
+\int_{\RR}|f(x)|^2\,dx
 =
 \lim_{n\to\infty}\phi_n(f)
 \]
@@ -186,7 +186,7 @@ A
 =
 \bigcup_{m=1}^{\infty}
 \bigcap_{n=1}^{\infty}
-\{f\in L^3(\mathbb R):\phi_n(f)\le m\}}.
+\{f\in L^3(\RR):\phi_n(f)\le m\}}.
 \]
 
 
@@ -194,7 +194,7 @@ A
 
 If
 \[
-\int_{\mathbb R}|f|^2<\infty,
+\int_{\RR}|f|^2<\infty,
 \]
 choose an integer $m$ larger than this integral. Then by step [](#s1-4){.pf-ref},
 \[
@@ -208,7 +208,7 @@ Conversely, if there is $m$ such that
 \]
 for every $n$, then step [](#s1-4){.pf-ref} gives
 \[
-\int_{\mathbb R}|f|^2
+\int_{\RR}|f|^2
 =
 \lim_{n\to\infty}\phi_n(f)
 \le m<\infty.
@@ -221,7 +221,7 @@ Thus $f\in A$.
 
 ::: {.pf-step #s1-6}
 
-The set $A$ is Borel in $L^3(\mathbb R)$.
+The set $A$ is Borel in $L^3(\RR)$.
 
 
 ::: pf-proof

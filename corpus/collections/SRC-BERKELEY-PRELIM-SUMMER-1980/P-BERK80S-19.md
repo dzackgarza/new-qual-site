@@ -13,7 +13,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-12
-  note: Checked against Problem 19 of the vendored Berkeley Preliminary Exam, Summer 1980; restored the ambient field notation as $\mathbb C$.
+  note: Checked against Problem 19 of the vendored Berkeley Preliminary Exam, Summer 1980; restored the ambient field notation as $\CC$.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-13

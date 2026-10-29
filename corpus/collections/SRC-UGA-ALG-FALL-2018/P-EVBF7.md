@@ -36,25 +36,25 @@ Assertion (a) is false: an intermediate extension of a finite Galois extension n
 
 ::: pf-step
 
-Counterexample: Let $F = \mathbb{Q}$, $K = \mathbb{Q}(\sqrt[3]{2})$, and $L = \mathbb{Q}(\sqrt[3]{2}, \omega)$, where $\omega = e^{2\pi i / 3}$.
+Counterexample: Let $F = \QQ$, $K = \QQ(\sqrt[3]{2})$, and $L = \QQ(\sqrt[3]{2}, \omega)$, where $\omega = e^{2\pi i / 3}$.
 
 :::
 
 ::: pf-step
 
-$L/F$ is Galois: The polynomial $f(x) = x^3 - 2 \in \mathbb{Q}[x]$ is irreducible by Eisenstein's criterion at $p = 2$. Its roots in $\mathbb{C}$ are $\sqrt[3]{2}, \sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2$. The field $L = \mathbb{Q}(\sqrt[3]{2}, \omega)$ is the splitting field of $f(x)$ over $\mathbb{Q}$. Since $\operatorname{char}(\mathbb{Q}) = 0$, $f(x)$ is separable, so $L/\mathbb{Q}$ is a Galois extension.
+$L/F$ is Galois: The polynomial $f(x) = x^3 - 2 \in \QQ[x]$ is irreducible by Eisenstein's criterion at $p = 2$. Its roots in $\CC$ are $\sqrt[3]{2}, \sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2$. The field $L = \QQ(\sqrt[3]{2}, \omega)$ is the splitting field of $f(x)$ over $\QQ$. Since $\operatorname{char}(\QQ) = 0$, $f(x)$ is separable, so $L/\QQ$ is a Galois extension.
 
 :::
 
 ::: pf-step
 
-$K/F$ is not Galois: The intermediate field $K = \mathbb{Q}(\sqrt[3]{2}) \subset \mathbb{R}$ contains one root of the irreducible polynomial $x^3 - 2$, but contains neither of the non-real roots $\sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2 \notin \mathbb{R}$.
+$K/F$ is not Galois: The intermediate field $K = \QQ(\sqrt[3]{2}) \subset \RR$ contains one root of the irreducible polynomial $x^3 - 2$, but contains neither of the non-real roots $\sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2 \notin \RR$.
 
 :::
 
 ::: pf-step
 
-Thus $K/\mathbb{Q}$ is not a normal extension, hence is not Galois.
+Thus $K/\QQ$ is not a normal extension, hence is not Galois.
 
 :::
 
@@ -110,31 +110,31 @@ Assertion (c) is false: two successive Galois extensions need not have Galois co
 
 ::: pf-step
 
-Counterexample: Let $F = \mathbb{Q}$, $K = \mathbb{Q}(\sqrt{2})$, and $L = \mathbb{Q}(\sqrt[4]{2})$.
+Counterexample: Let $F = \QQ$, $K = \QQ(\sqrt{2})$, and $L = \QQ(\sqrt[4]{2})$.
 
 :::
 
 ::: pf-step
 
-$K/F$ is Galois: $K = \mathbb{Q}(\sqrt{2})$ is an extension of degree 2 over $\mathbb{Q}$, which is the splitting field of $x^2 - 2$ over $\mathbb{Q}$, hence Galois.
+$K/F$ is Galois: $K = \QQ(\sqrt{2})$ is an extension of degree 2 over $\QQ$, which is the splitting field of $x^2 - 2$ over $\QQ$, hence Galois.
 
 :::
 
 ::: pf-step
 
-$L/K$ is Galois: $L = K(\sqrt[4]{2})$ is obtained by adjoining a root of $x^2 - \sqrt{2} \in K[x]$. Since $\sqrt[4]{2} \notin K$ (as $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$ and $[K : \mathbb{Q}] = 2$), $[L : K] = 2$. Every degree 2 extension in characteristic zero is Galois, so $L/K$ is Galois.
+$L/K$ is Galois: $L = K(\sqrt[4]{2})$ is obtained by adjoining a root of $x^2 - \sqrt{2} \in K[x]$. Since $\sqrt[4]{2} \notin K$ (as $[\QQ(\sqrt[4]{2}) : \QQ] = 4$ and $[K : \QQ] = 2$), $[L : K] = 2$. Every degree 2 extension in characteristic zero is Galois, so $L/K$ is Galois.
 
 :::
 
 ::: pf-step
 
-$L/F$ is not Galois: The polynomial $x^4 - 2 \in \mathbb{Q}[x]$ is irreducible over $\mathbb{Q}$ by Eisenstein at $p = 2$. The field $L = \mathbb{Q}(\sqrt[4]{2}) \subset \mathbb{R}$ contains the real root $\sqrt[4]{2}$, but does not contain the complex roots $\pm i \sqrt[4]{2} \notin \mathbb{R}$.
+$L/F$ is not Galois: The polynomial $x^4 - 2 \in \QQ[x]$ is irreducible over $\QQ$ by Eisenstein at $p = 2$. The field $L = \QQ(\sqrt[4]{2}) \subset \RR$ contains the real root $\sqrt[4]{2}$, but does not contain the complex roots $\pm i \sqrt[4]{2} \notin \RR$.
 
 :::
 
 ::: pf-step
 
-Thus $L/\mathbb{Q}$ is not normal, and therefore is not Galois.
+Thus $L/\QQ$ is not normal, and therefore is not Galois.
 
 :::
 

@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $E\subset\mathbb R$ be measurable.
+Let $E\subset\RR$ be measurable.
 
 (a) If $|E|<\infty$, prove that
 \[
-F(x)=\int_{\mathbb R}\chi_E(y)\chi_E(y-x)\,dy
+F(x)=\int_{\RR}\chi_E(y)\chi_E(y-x)\,dy
 \]
 is continuous.
 
@@ -46,7 +46,7 @@ Continuity when $E$ has finite measure.
 
 ::: pf-proof
 
-Since $|E|<\infty$, one has $\chi_E\in L^2(\mathbb R)$. For $h\in\mathbb R$,
+Since $|E|<\infty$, one has $\chi_E\in L^2(\RR)$. For $h\in\RR$,
 $$
 \begin{aligned}
 |F(x+h)-F(x)|

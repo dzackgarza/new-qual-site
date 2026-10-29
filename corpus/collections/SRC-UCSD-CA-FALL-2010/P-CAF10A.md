@@ -23,7 +23,7 @@ If False, give a counterexample or prove your assertion otherwise.
 (a) Let $f(z) = \sum_{n=0}^{\infty} a_n z^n$ have radius of convergence $R$.
 If $|a| = R$ and the power series does not converge at $z = a$, then $f(z)$ cannot be analytically continued to an open neighborhood of $a$.
 
-(b) Let $f$ and $g$ be analytic functions defined in an open set $G \subset \mathbb{C}$.
+(b) Let $f$ and $g$ be analytic functions defined in an open set $G \subset \CC$.
 If for some $a \in G$, $[f]_a = [g]_a$ (where $[f]_a$ and $[g]_a$ denote the germs of $f$ and $g$ at $a$ respectively), then $f(z) = g(z)$ for all $z \in G$.
 
 (c) Let $(X, d)$ be a metric space, $x \in X$, and $\{x_n\}_{n=1}^{\infty}$ a sequence in $X$.

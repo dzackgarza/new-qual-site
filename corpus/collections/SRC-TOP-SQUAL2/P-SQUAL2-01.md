@@ -88,7 +88,7 @@ Each \(A_n\) is closed.
 
 ::: pf-proof
 
-Singletons are closed in the Hausdorff space \(\mathbb R\).
+Singletons are closed in the Hausdorff space \(\RR\).
 
 :::
 

@@ -26,21 +26,21 @@ audit:
 ::: {.problem}
 Let $1\le p<q<\infty$. Determine which statements are true and which are false:
 
-(i) $L^p(\mathbb R)\subset L^q(\mathbb R)$;
+(i) $L^p(\RR)\subset L^q(\RR)$;
 
-(ii) $L^q(\mathbb R)\subset L^p(\mathbb R)$;
+(ii) $L^q(\RR)\subset L^p(\RR)$;
 
 (iii) $L^p([0,1])\subset L^q([0,1])$;
 
 (iv) $L^q([0,1])\subset L^p([0,1])$;
 
-(v) $\ell^p(\mathbb Z)\subset\ell^q(\mathbb Z)$;
+(v) $\ell^p(\ZZ)\subset\ell^q(\ZZ)$;
 
-(vi) $\ell^q(\mathbb Z)\subset\ell^p(\mathbb Z)$.
+(vi) $\ell^q(\ZZ)\subset\ell^p(\ZZ)$.
 
 Give counterexamples for the false statements. Also determine all $s\ge1$ for which
 \[
-L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R).
+L^p(\RR)\cap L^q(\RR)\subset L^s(\RR).
 \]
 :::
 
@@ -54,7 +54,7 @@ The answers are
 \]
 Moreover,
 \[
-L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R)
+L^p(\RR)\cap L^q(\RR)\subset L^s(\RR)
 \quad\Longleftrightarrow\quad
 p\le s\le q.
 \]
@@ -90,7 +90,7 @@ and set
 \[
 g(x)=x^{-b}\mathbf1_{[1,\infty)}(x).
 \]
-Then $g\in L^q(\mathbb R)$ but $g\notin L^p(\mathbb R)$, because
+Then $g\in L^q(\RR)$ but $g\notin L^p(\RR)$, because
 \[
 \int_1^\infty x^{-br}\,dx<\infty
 \quad\Longleftrightarrow\quad br>1.
@@ -130,7 +130,7 @@ and set $a_n=n^{-c}$ for $n\ge1$ and $a_n=0$ for $n\le0$. Then $a\in\ell^q$ but 
 
 ::: pf-step
 
-$L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R)$ exactly when $p\le s\le q$.
+$L^p(\RR)\cap L^q(\RR)\subset L^s(\RR)$ exactly when $p\le s\le q$.
 
 ::: pf-proof
 

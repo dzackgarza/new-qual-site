@@ -253,6 +253,6 @@ Step [](#s1){.pf-ref} proves normality, steps [](#s2){.pf-ref}, [](#s3){.pf-ref}
 ::: {.remark title="The base field"}
 The algebraically closed-field hypothesis makes the coordinate change and the factorization used in part (b) available.
 Characteristic different from two alone does not suffice for that change over an arbitrary field.
-For example, over $\mathbb R$ the form $x_0^2+x_1^2+x_2^2$ has no nonzero zero, whereas $uv-w^2$ vanishes at $(1,0,0)$; an invertible real linear transformation preserves the existence of a nonzero zero.
+For example, over $\RR$ the form $x_0^2+x_1^2+x_2^2$ has no nonzero zero, whereas $uv-w^2$ vanishes at $(1,0,0)$; an invertible real linear transformation preserves the existence of a nonzero zero.
 Part (a), unlike the splitting argument, holds over every field of characteristic different from two by step [](#s1){.pf-ref}.
 :::

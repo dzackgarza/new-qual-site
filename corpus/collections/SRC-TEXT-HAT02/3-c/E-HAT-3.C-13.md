@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Verify that the Hopf algebras $\Lambda_R[\alpha]$ and $\mathbb{Z}_p[\alpha]/(\alpha^p)$ are self-dual.
+Verify that the Hopf algebras $\Lambda_R[\alpha]$ and $\ZZ_p[\alpha]/(\alpha^p)$ are self-dual.
 :::
 
 ::: {.solution}
@@ -60,7 +60,7 @@ Thus $\alpha \mapsto \alpha^*$ defines an isomorphism of graded Hopf algebras $\
 :::
 
 ::: pf-step
-Duality for the truncated polynomial Hopf algebra $A = \mathbb{Z}_p[\alpha]/(\alpha^p)$:
+Duality for the truncated polynomial Hopf algebra $A = \ZZ_p[\alpha]/(\alpha^p)$:
 
 ::: pf-proof
 
@@ -104,7 +104,7 @@ The map $\alpha \mapsto \beta_1$ defines an isomorphism of graded Hopf algebras 
 
 ::: pf-step
 Conclusion:
-Both $\Lambda_R[\alpha]$ and $\mathbb{Z}_p[\alpha]/(\alpha^p)$ are self-dual Hopf algebras.
+Both $\Lambda_R[\alpha]$ and $\ZZ_p[\alpha]/(\alpha^p)$ are self-dual Hopf algebras.
 :::
 
 :::

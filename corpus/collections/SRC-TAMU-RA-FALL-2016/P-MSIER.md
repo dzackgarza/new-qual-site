@@ -27,5 +27,5 @@ It implies that $A_n\subset E$ and thus $\mu(A_n)<\delta$.
 It shows that $\mu(A_n)\to 0$, which means $f_n\to 0$ in measure.
 
 For the second part.
-A counterexample is $f_n=\chi_{[j/2^k,(j+1)/2^k]}$ where $n=2^k+j$ with $0\le j<2^k$ and $k\in\mathbb{N}$.
+A counterexample is $f_n=\chi_{[j/2^k,(j+1)/2^k]}$ where $n=2^k+j$ with $0\le j<2^k$ and $k\in\NN$.
 :::

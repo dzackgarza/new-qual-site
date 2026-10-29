@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-VRJDJBSV
 kind: problem
-title: $\mathbb{R}^3\setminus S^1\simeq S^1\vee S^2$
+title: $\RR^3\setminus S^1\simeq S^1\vee S^2$
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that $\mathbb{R}^3 - S^1 \simeq S^1 \vee S^2$.
+Show that $\RR^3 - S^1 \simeq S^1 \vee S^2$.
 :::
 
 ::: {.solution}
@@ -23,9 +23,9 @@ Show that $\mathbb{R}^3 - S^1 \simeq S^1 \vee S^2$.
 
 ::: {.pf-step #s1}
 
-Let $C\subset\mathbb R^3$ be the standard embedded circle and let $N(C)$ be a closed tubular neighborhood. Then
+Let $C\subset\RR^3$ be the standard embedded circle and let $N(C)$ be a closed tubular neighborhood. Then
 $$
-\mathbb R^3\setminus C\simeq \mathbb R^3\setminus\operatorname{int}N(C).
+\RR^3\setminus C\simeq \RR^3\setminus\operatorname{int}N(C).
 $$
 
 ::: pf-proof
@@ -38,15 +38,15 @@ Inside the tubular neighborhood $N(C)\cong S^1\times D^2$, radially push each no
 
 ::: {.pf-step #s2}
 
-After one-point compactifying $\mathbb R^3$ to $S^3$, the exterior $S^3\setminus\operatorname{int}N(C)$ of the unknot is a solid torus $S^1\times D^2$, and the point at infinity lies in its interior. Hence
+After one-point compactifying $\RR^3$ to $S^3$, the exterior $S^3\setminus\operatorname{int}N(C)$ of the unknot is a solid torus $S^1\times D^2$, and the point at infinity lies in its interior. Hence
 $$
-\mathbb R^3\setminus\operatorname{int}N(C)\cong (S^1\times D^2)\setminus\{p\}
+\RR^3\setminus\operatorname{int}N(C)\cong (S^1\times D^2)\setminus\{p\}
 $$
 for an interior point $p$.
 
 ::: pf-proof
 
-The complement in $S^3$ of a tubular neighborhood of the unknot is again a solid torus. Passing from $S^3$ back to $\mathbb R^3$ removes the point at infinity, which is disjoint from $N(C)$ and therefore lies in the complementary solid torus.
+The complement in $S^3$ of a tubular neighborhood of the unknot is again a solid torus. Passing from $S^3$ back to $\RR^3$ removes the point at infinity, which is disjoint from $N(C)$ and therefore lies in the complementary solid torus.
 
 :::
 
@@ -68,7 +68,7 @@ Remove a small open $3$-ball about $p$. The resulting compact manifold is a soli
 
 Therefore
 $$
-\boxed{\mathbb R^3\setminus S^1\simeq S^1\vee S^2}.
+\boxed{\RR^3\setminus S^1\simeq S^1\vee S^2}.
 $$
 
 ::: pf-proof

@@ -23,10 +23,10 @@ Show that a closed orientable surface $\Sigma_g$ of genus $g \geq 1$ has $\pi_2(
 ::: pf
 
 ::: {.pf-step #genus-one-pi2-vanishes}
-For $g=1$, $\Sigma_1=T^2$ has universal cover $\mathbb R^2$, hence $\pi_2(\Sigma_1)=0$.
+For $g=1$, $\Sigma_1=T^2$ has universal cover $\RR^2$, hence $\pi_2(\Sigma_1)=0$.
 
 ::: pf-proof
-Covering maps induce isomorphisms on homotopy groups in degrees at least $2$, and $\mathbb R^2$ is contractible.
+Covering maps induce isomorphisms on homotopy groups in degrees at least $2$, and $\RR^2$ is contractible.
 :::
 
 :::
@@ -61,9 +61,9 @@ Choose loops representing a free basis and obtain a map from the bouquet inducin
 ::: {.pf-step #homology-mismatch}
 This is impossible because
 $$
-H_2(\Sigma_g;\mathbb Z)\cong\mathbb Z,
+H_2(\Sigma_g;\ZZ)\cong\ZZ,
 \qquad
-H_2\!\left(\bigvee_S S^1;\mathbb Z\right)=0.
+H_2\!\left(\bigvee_S S^1;\ZZ\right)=0.
 $$
 
 ::: pf-proof

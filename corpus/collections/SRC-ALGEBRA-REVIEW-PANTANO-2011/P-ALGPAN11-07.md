@@ -36,7 +36,7 @@ The operation is commutative.
 
 ::: pf-proof
 
-Since multiplication and addition in $\mathbb Q$ are commutative,
+Since multiplication and addition in $\QQ$ are commutative,
 \[
 a*b=ab+a+b=ba+b+a=b*a.
 \]
@@ -51,7 +51,7 @@ The $*$-identity is $0$.
 
 ::: pf-proof
 
-For every $a\in\mathbb Q$,
+For every $a\in\QQ$,
 \[
 a*0=a\cdot0+a+0=a,
 \]

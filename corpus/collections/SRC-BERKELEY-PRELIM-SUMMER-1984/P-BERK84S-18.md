@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show there is a unique continuous real valued function $f :$ $[ 0 , 1 ] \to \mathbb { R }$ such that
+Show there is a unique continuous real valued function $f :$ $[ 0 , 1 ] \to \RR$ such that
 
 $$
 f ( x ) = \sin x + \int _ { 0 } ^ { 1 } { \frac { f ( y ) } { e ^ { x + y + 1 } } } d y .
@@ -48,7 +48,7 @@ Every continuous solution must have the form
 \[
 f(x)=\sin x+I e^{-(x+1)}
 \]
-for a scalar $I\in\mathbb R$.
+for a scalar $I\in\RR$.
 
 ::: pf-proof
 

@@ -9,7 +9,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Define upper-semicontinuity for functions $f:\mathbb C\to[-\infty,\infty)$.
+(a) Define upper-semicontinuity for functions $f:\CC\to[-\infty,\infty)$.
 
 (b) Define what it means for such an upper-semicontinuous function to be subharmonic.
 
@@ -24,7 +24,7 @@ Show that
 \[
 z\longmapsto \log\|A(z)\|
 \]
-is subharmonic, where $\|A(z)\|$ is the operator norm on $\mathbb C^2$.
+is subharmonic, where $\|A(z)\|$ is the operator norm on $\CC^2$.
 :::
 
 ::: {.solution}
@@ -35,9 +35,9 @@ is subharmonic, where $\|A(z)\|$ is the operator norm on $\mathbb C^2$.
 
 A function
 \[
-u:\mathbb C\to[-\infty,\infty)
+u:\CC\to[-\infty,\infty)
 \]
-is upper-semicontinuous if for every $z_0\in\mathbb C$,
+is upper-semicontinuous if for every $z_0\in\CC$,
 \[
 \limsup_{z\to z_0}u(z)
 \le
@@ -47,7 +47,7 @@ u(z_0).
 
 ::: pf-proof
 
-This is the definition. Equivalently, for every $a\in\mathbb R$, the sublevel set
+This is the definition. Equivalently, for every $a\in\RR$, the sublevel set
 \[
 \{z:u(z)<a\}
 \]
@@ -61,12 +61,12 @@ is open.
 
 An upper-semicontinuous function
 \[
-u:\mathbb C\to[-\infty,\infty)
+u:\CC\to[-\infty,\infty)
 \]
 is subharmonic if it is not identically $-\infty$ and for every closed disk
 \[
 \overline{B(z_0,r)}
-\subset\mathbb C,
+\subset\CC,
 \]
 one has the sub-mean-value inequality
 \[
@@ -103,7 +103,7 @@ with
 \[
 u_n(0)=-\infty.
 \]
-Each $u_n$ is subharmonic on $\mathbb C$. The family is locally uniformly bounded above: on
+Each $u_n$ is subharmonic on $\CC$. The family is locally uniformly bounded above: on
 \[
 |z|\le R,
 \]
@@ -245,7 +245,7 @@ Hence $v$ is upper-semicontinuous everywhere.
 
 ::: {.pf-step #s1-7}
 
-Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\mathbb C^2$ such that
+Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\CC^2$ such that
 \[
 |\langle A(z_0)x,y\rangle|
 =
@@ -255,7 +255,7 @@ Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\mathbb C^2$ such that
 
 ::: pf-proof
 
-Because the unit sphere of $\mathbb C^2$ is compact, there is a unit vector $x$ with
+Because the unit sphere of $\CC^2$ is compact, there is a unit vector $x$ with
 \[
 \|A(z_0)x\|
 =
@@ -282,7 +282,7 @@ Then $\|y\|=1$ and
 
 ::: {.pf-step #s1-8}
 
-For fixed vectors $x,y\in\mathbb C^2$, the scalar function
+For fixed vectors $x,y\in\CC^2$, the scalar function
 \[
 h(z)
 \coloneqq

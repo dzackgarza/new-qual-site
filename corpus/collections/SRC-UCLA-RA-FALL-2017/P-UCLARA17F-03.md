@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let $\{\mu_n\}$ denote a sequence of Borel probability measures on $\mathbb R$. For $n\in\mathbb N$ and $x\in\mathbb R$ define
+Problem 3. Let $\{\mu_n\}$ denote a sequence of Borel probability measures on $\RR$. For $n\in\NN$ and $x\in\RR$ define
 \[
 F_n(x):=\mu_n(( -\infty,x]).
 \]
-Suppose the sequence $\{F_n\}$ converges uniformly on $\mathbb R$. Show that for every bounded continuous function $f:\mathbb R\to\mathbb R$, the numbers
+Suppose the sequence $\{F_n\}$ converges uniformly on $\RR$. Show that for every bounded continuous function $f:\RR\to\RR$, the numbers
 \[
-\int_{\mathbb R} f(x)\,d\mu_n(x)
+\int_{\RR} f(x)\,d\mu_n(x)
 \]
 converge as $n\to\infty$.
 :::
@@ -62,7 +62,7 @@ Since \(F_n\) converges uniformly, it is uniformly Cauchy.
 Choose \(N_0\) such that for every \(n\ge N_0\),
 \[
 \boxed{
-\sup_{x\in\mathbb R}
+\sup_{x\in\RR}
 |F_n(x)-F_{N_0}(x)|
 <
 \delta}
@@ -475,9 +475,9 @@ Thus
 \[
 \boxed{
 \left(
-\int_{\mathbb R}f\,d\mu_n
+\int_{\RR}f\,d\mu_n
 \right)
-\text{ is Cauchy in }\mathbb R}.}
+\text{ is Cauchy in }\RR}.}
 \]
 
 
@@ -494,7 +494,7 @@ Step [](#s1-14){.pf-ref} is the Cauchy criterion.
 Therefore
 \[
 \boxed{
-\int_{\mathbb R}f\,d\mu_n
+\int_{\RR}f\,d\mu_n
 \text{ converges as }n\to\infty}.}
 \]
 

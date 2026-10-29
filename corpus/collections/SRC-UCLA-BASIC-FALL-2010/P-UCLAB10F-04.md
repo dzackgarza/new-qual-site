@@ -64,7 +64,7 @@ Given $\varepsilon>0$, there is a polynomial
 \[
 P(x,y)=\sum_{(r,s)\in F}c_{rs}x^ry^s
 \]
-with $F\subseteq\mathbb N^2$ finite such that
+with $F\subseteq\NN^2$ finite such that
 \[
 \|f-P\|_\infty\le\varepsilon.
 \]

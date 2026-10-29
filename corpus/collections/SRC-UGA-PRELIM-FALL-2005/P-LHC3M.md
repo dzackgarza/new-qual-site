@@ -19,10 +19,10 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $f(x, y)$ be a differentiable function from $\mathbb{R}^2$ to $\mathbb{R}$ and let $g(t) = (x(t), y(t))$ be a differentiable curve from $\mathbb{R}$ to $\mathbb{R}^2$.
+(a) Let $f(x, y)$ be a differentiable function from $\RR^2$ to $\RR$ and let $g(t) = (x(t), y(t))$ be a differentiable curve from $\RR$ to $\RR^2$.
 State the multivariable **chain rule** for the derivative of the composite function $F(t) = (f \circ g)(t) = f(x(t), y(t))$.
 
-(b) Let $f(x, y)$ be a continuously differentiable function on $\mathbb{R}^2$, and let $P = (x_0, y_0) \in \mathbb{R}^2$ be a point.
+(b) Let $f(x, y)$ be a continuously differentiable function on $\RR^2$, and let $P = (x_0, y_0) \in \RR^2$ be a point.
 Assume that in a neighborhood of $P$, the level curve equation $f(x, y) = f(P)$ implicitly defines $y$ as a differentiable function of $x$, say $y = h(x)$ with $y_0 = h(x_0)$.
 Show that the **tangent vector** to the graph of $y = h(x)$ at $P$ is **perpendicular (orthogonal)** to the **gradient vector** $\nabla f(P)$.
 :::
@@ -38,7 +38,7 @@ Part (a): Multivariable Chain Rule:
 ::: pf-proof
 
 ::: pf-step
-Let $f: \mathbb{R}^2 \to \mathbb{R}$ and $g: \mathbb{R} \to \mathbb{R}^2$ given by $g(t) = (x(t), y(t))$ be differentiable functions.
+Let $f: \RR^2 \to \RR$ and $g: \RR \to \RR^2$ given by $g(t) = (x(t), y(t))$ be differentiable functions.
 :::
 
 ::: pf-step
@@ -61,7 +61,7 @@ Part (b): Perpendicularity of $\nabla f(P)$ to the Tangent Line:
 ::: pf-proof
 
 ::: pf-step
-Parameterize the graph of the implicit function $y = h(x)$ as a smooth curve $\gamma: I \to \mathbb{R}^2$:
+Parameterize the graph of the implicit function $y = h(x)$ as a smooth curve $\gamma: I \to \RR^2$:
 $$\gamma(x) = (x, h(x)).$$
 :::
 

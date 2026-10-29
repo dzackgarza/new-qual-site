@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\displaystyle\int_0^1 \frac{dx}{(ax + b(1-x))^2} = \frac{1}{ab}$, $a, b \in \mathbb{R}$, $ab > 0$.
+Show that $\displaystyle\int_0^1 \frac{dx}{(ax + b(1-x))^2} = \frac{1}{ab}$, $a, b \in \RR$, $ab > 0$.
 :::
 
 ::: {.solution}

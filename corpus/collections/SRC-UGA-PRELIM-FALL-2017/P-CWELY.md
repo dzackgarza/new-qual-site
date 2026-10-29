@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWELY
 kind: problem
-title: The plane $3x+4y+5z=0$ as kernel or image of an endomorphism of $\mathbb{R}^3$
+title: The plane $3x+4y+5z=0$ as kernel or image of an endomorphism of $\RR^3$
 classification:
   areas:
   - prelim
@@ -24,28 +24,28 @@ audit:
 ::: {.problem}
 Let
 \[
-V=\{(x,y,z)\in\mathbb R^3:3x+4y+5z=0\}.
+V=\{(x,y,z)\in\RR^3:3x+4y+5z=0\}.
 \]
 
-1. Show that $V$ is a linear subspace of $\mathbb R^3$.
-2. Prove or disprove that some linear map $S:\mathbb R^3\to\mathbb R^3$ has kernel $V$.
-3. Prove or disprove that some linear map $T:\mathbb R^3\to\mathbb R^3$ has image $V$.
-4. Prove or disprove that some linear map $U:\mathbb R^3\to\mathbb R^3$ has both kernel and image equal to $V$.
+1. Show that $V$ is a linear subspace of $\RR^3$.
+2. Prove or disprove that some linear map $S:\RR^3\to\RR^3$ has kernel $V$.
+3. Prove or disprove that some linear map $T:\RR^3\to\RR^3$ has image $V$.
+4. Prove or disprove that some linear map $U:\RR^3\to\RR^3$ has both kernel and image equal to $V$.
 :::
 
 ::: {.solution}
-Let $\varphi\colon\mathbb R^3\to\mathbb R$ be $\varphi(x,y,z)=3x+4y+5z$, so that $V=\ker\varphi$.
+Let $\varphi\colon\RR^3\to\RR$ be $\varphi(x,y,z)=3x+4y+5z$, so that $V=\ker\varphi$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-$V$ is a linear subspace of $\mathbb R^3$ of dimension $2$, with basis $v_1=(4,-3,0)$, $v_2=(5,0,-3)$.
+$V$ is a linear subspace of $\RR^3$ of dimension $2$, with basis $v_1=(4,-3,0)$, $v_2=(5,0,-3)$.
 
 ::: pf-proof
 
 $V$ is the kernel of the linear map $\varphi$, hence a subspace.
-Since $\varphi(1,0,0)=3\neq0$, the image of $\varphi$ is $\mathbb R$, and rank--nullity gives $\dim V=\dim\mathbb R^3-\dim\operatorname{im}\varphi=3-1=2$.
+Since $\varphi(1,0,0)=3\neq0$, the image of $\varphi$ is $\RR$, and rank--nullity gives $\dim V=\dim\RR^3-\dim\operatorname{im}\varphi=3-1=2$.
 Both $v_1$ and $v_2$ satisfy $3x+4y+5z=0$, and they are linearly independent: if $av_1+bv_2=0$, the third coordinate gives $-3b=0$ and then the second gives $-3a=0$. Two independent vectors in a $2$-dimensional space form a basis.
 
 :::
@@ -54,7 +54,7 @@ Both $v_1$ and $v_2$ satisfy $3x+4y+5z=0$, and they are linearly independent: if
 
 ::: pf-step
 
-Some linear map $S\colon\mathbb R^3\to\mathbb R^3$ has kernel $V$.
+Some linear map $S\colon\RR^3\to\RR^3$ has kernel $V$.
 
 ::: pf-proof
 
@@ -72,7 +72,7 @@ Then $S\mathbf x=0$ exactly when $3x+4y+5z=0$, so $\ker S=V$.
 
 ::: pf-step
 
-Some linear map $T\colon\mathbb R^3\to\mathbb R^3$ has image $V$.
+Some linear map $T\colon\RR^3\to\RR^3$ has image $V$.
 
 ::: pf-proof
 
@@ -88,11 +88,11 @@ The image of $T$ is its column space, $\operatorname{span}\{v_1,v_2\}=V$ by step
 
 ::: pf-step
 
-No linear map $U\colon\mathbb R^3\to\mathbb R^3$ has $\ker U=\operatorname{im}U=V$.
+No linear map $U\colon\RR^3\to\RR^3$ has $\ker U=\operatorname{im}U=V$.
 
 ::: pf-proof
 
-Rank--nullity gives $\dim\ker U+\dim\operatorname{im}U=\dim\mathbb R^3=3$.
+Rank--nullity gives $\dim\ker U+\dim\operatorname{im}U=\dim\RR^3=3$.
 If both equalled $V$, the left side would be $2\dim V=4$ by step [](#s1){.pf-ref}, a contradiction.
 
 :::

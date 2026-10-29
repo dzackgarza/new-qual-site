@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS23H
 kind: problem
-title: 'Invariant inner products for the unipotent $\mathbb{Z}$-representation on $\mathbb{C}^2$'
+title: 'Invariant inner products for the unipotent $\ZZ$-representation on $\CC^2$'
 classification:
   areas:
   - applied-algebra
@@ -14,19 +14,19 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G = \mathbb{Z}$ be the group of integers under addition.
-The group homomorphism $\rho \colon G \to \mathrm{GL}_2(\mathbb{C})$ given by
+Let $G = \ZZ$ be the group of integers under addition.
+The group homomorphism $\rho \colon G \to \mathrm{GL}_2(\CC)$ given by
 \[
 \rho(n) = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}
 \]
-gives $\mathbb{C}^2$ the structure of a $G$-module.
-Does $\mathbb{C}^2$ admit a $G$-invariant inner product?
+gives $\CC^2$ the structure of a $G$-module.
+Does $\CC^2$ admit a $G$-invariant inner product?
 :::
 
 ::: {.solution}
 No.
 
-If such a $G$-invariant inner product existed, then the operator representing the generator $1\in\mathbb Z$,
+If such a $G$-invariant inner product existed, then the operator representing the generator $1\in\ZZ$,
 \[
 T=\rho(1)=\begin{pmatrix}1&1\\0&1\end{pmatrix},
 \]
@@ -44,6 +44,6 @@ Therefore its minimal polynomial is $(t-1)^2$, so $T$ is not diagonalizable. Thi
 
 Hence
 \[
-\boxed{\mathbb C^2\text{ admits no }\mathbb Z\text{-invariant inner product for this representation}.}
+\boxed{\CC^2\text{ admits no }\ZZ\text{-invariant inner product for this representation}.}
 \]
 :::

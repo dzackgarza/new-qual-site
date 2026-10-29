@@ -26,7 +26,7 @@ Prove that
 
 ::: {.solution}
 
-If $K=\varnothing$ or $F=\varnothing$, the set of distances is empty; with the extended-real convention $\inf\varnothing=+\infty$, the conclusion is immediate. If the infimum is understood only for nonempty subsets of $\mathbb R$, then nonemptiness of $K$ and $F$ is implicit. Consider therefore the substantive case $K,F\ne\varnothing$.
+If $K=\varnothing$ or $F=\varnothing$, the set of distances is empty; with the extended-real convention $\inf\varnothing=+\infty$, the conclusion is immediate. If the infimum is understood only for nonempty subsets of $\RR$, then nonemptiness of $K$ and $F$ is implicit. Consider therefore the substantive case $K,F\ne\varnothing$.
 
 ::: pf
 

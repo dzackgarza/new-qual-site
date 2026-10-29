@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb R\to\mathbb R$ is $C^1$.
+Suppose $f:\RR\to\RR$ is $C^1$.
 Show that
 \[
 \lim_{n\to\infty}

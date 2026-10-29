@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Suppose $f:[-1,1]\to\mathbb R$ is bounded and continuous at $0$. Let
+1. Suppose $f:[-1,1]\to\RR$ is bounded and continuous at $0$. Let
 \[
 \alpha(x)=
 \begin{cases}
@@ -40,7 +40,7 @@ Prove that $f\in\mathcal R(\alpha)[-1,1]$ and
 \int_{-1}^1 f\,d\alpha=2f(0).
 \]
 
-2. Let $g:[0,1]\to\mathbb R$ be continuous and suppose
+2. Let $g:[0,1]\to\RR$ be continuous and suppose
 \[
 \int_0^1 g(x)x^{3k+2}\,dx=0
 \qquad(k=0,1,2,\ldots).

@@ -18,29 +18,29 @@ audit:
 ---
 
 ::: {.exercise}
-2. The angle between two non-zero complex numbers z and $w$ (taken in that order) is simply the oriented angle, in $( - \pi , \pi ]$ , that is formed between the two vectors in $\mathbb { R } ^ { 2 }$ corresponding to the points z and w. This oriented angle, say $\alpha ,$ is uniquely determined by the two quantities
+2. The angle between two non-zero complex numbers z and $w$ (taken in that order) is simply the oriented angle, in $( - \pi , \pi ]$ , that is formed between the two vectors in $\RR ^ { 2 }$ corresponding to the points z and w. This oriented angle, say $\alpha ,$ is uniquely determined by the two quantities
 
 $$
 \frac {(z , w)}{| z | | w |} \quad \mathrm{and} \quad \frac {(z , - i w)}{| z | | w |}
 $$
 
 which are simply the cosine and sine of $\alpha ,$ respectively.
-Here, the notation $( \cdot , \cdot )$ corresponds to the usual Euclidian inner product in $\mathbb { R } ^ { 2 }$ , which in terms of complex numbers takes the form $( z , w ) = \operatorname { R e } ( z { \overline { { w } } } )$
+Here, the notation $( \cdot , \cdot )$ corresponds to the usual Euclidian inner product in $\RR ^ { 2 }$ , which in terms of complex numbers takes the form $( z , w ) = \operatorname { R e } ( z { \overline { { w } } } )$
 
-In particular, we may now consider two smooth curves $\gamma : [ a , b ] \to \mathbb { C }$ and $\eta :$ $[ a , b ] \to \mathbb { C }$ that intersect at $z _ { 0 }$ , say $\gamma ( t _ { 0 } ) = \eta ( t _ { 0 } ) = z _ { 0 }$ , for some $t _ { 0 } \in ( a , b )$ . If the quantities $\gamma ^ { \prime } ( t _ { 0 } )$ and $\eta ^ { \prime } ( t _ { 0 } )$ are non-zero, then they represent the tangents to the curves $\gamma$ and $\eta$ at the point $z _ { 0 }$ , and we say that the two curves intersect at $z _ { 0 }$ at the angle formed by the two vectors $\gamma ^ { \prime } ( t _ { 0 } )$ and $\eta ^ { \prime } ( t _ { 0 } )$
+In particular, we may now consider two smooth curves $\gamma : [ a , b ] \to \CC$ and $\eta :$ $[ a , b ] \to \CC$ that intersect at $z _ { 0 }$ , say $\gamma ( t _ { 0 } ) = \eta ( t _ { 0 } ) = z _ { 0 }$ , for some $t _ { 0 } \in ( a , b )$ . If the quantities $\gamma ^ { \prime } ( t _ { 0 } )$ and $\eta ^ { \prime } ( t _ { 0 } )$ are non-zero, then they represent the tangents to the curves $\gamma$ and $\eta$ at the point $z _ { 0 }$ , and we say that the two curves intersect at $z _ { 0 }$ at the angle formed by the two vectors $\gamma ^ { \prime } ( t _ { 0 } )$ and $\eta ^ { \prime } ( t _ { 0 } )$
 
 A holomorphic function $f$ defined near $z _ { 0 }$ is said to preserve angles at $z _ { 0 }$ if for any two smooth curves $\gamma$ and $\eta$ intersecting at $z _ { 0 }$ , the angle formed between the curves $\gamma$ and $\eta$ at $z _ { \mathrm { 0 } }$ equals the angle formed between the curves $f \circ \gamma$ and $f \circ \eta$ at $f ( z _ { 0 } )$ . (See Figure 12 for an illustration.)
 In particular, we assume that the tangents to the curves $\gamma , \eta , f \circ \gamma$ , and $f \circ \eta$ at the point $z _ { 0 }$ and $f ( z _ { 0 } )$ are all non-zero.
 
 Figure 12. Preservation of angles at $z _ { \mathrm { 0 } }$
 
-(a) Prove that if $f : \Omega \to \mathbb { C }$ is holomorphic, and $f ^ { \prime } ( z _ { 0 } ) \neq 0$ , then $f$ preserves angles at $z _ { \mathrm { 0 } }$ . [Hint: Observe that
+(a) Prove that if $f : \Omega \to \CC$ is holomorphic, and $f ^ { \prime } ( z _ { 0 } ) \neq 0$ , then $f$ preserves angles at $z _ { \mathrm { 0 } }$ . [Hint: Observe that
 
 $$
 (f ^ {\prime} (z _ {0}) \gamma^ {\prime} (t _ {0}), f ^ {\prime} (z _ {0}) \eta^ {\prime} (t _ {0})) = | f ^ {\prime} (z _ {0}) | ^ {2} (\gamma^ {\prime} (t _ {0}), \eta^ {\prime} (t _ {0})). ]
 $$
 
-(b) Conversely, prove the following: suppose $f : \Omega \to \mathbb { C }$ is a complex-valued function, that is real-diferentiable at $z _ { 0 } \in \Omega$ , and $J _ { f } ( z _ { 0 } ) \ne 0$ . If f preserves angles at $z _ { \mathrm { 0 } }$ , then $f$ is holomorphic at $z _ { \mathrm { 0 } }$ with $f ^ { \prime } ( z _ { 0 } ) \neq 0$
+(b) Conversely, prove the following: suppose $f : \Omega \to \CC$ is a complex-valued function, that is real-diferentiable at $z _ { 0 } \in \Omega$ , and $J _ { f } ( z _ { 0 } ) \ne 0$ . If f preserves angles at $z _ { \mathrm { 0 } }$ , then $f$ is holomorphic at $z _ { \mathrm { 0 } }$ with $f ^ { \prime } ( z _ { 0 } ) \neq 0$
 :::
 
 ::: {.solution}
@@ -66,7 +66,7 @@ chain rule for complex differentiation.
 :::
 
 ::: {.pf-step #scaled-inner-product}
-The Euclidean inner product on $\mathbb{R}^2 \cong \mathbb{C}$ is $(z_1, z_2) = \operatorname{Re}(z_1 \bar{z}_2)$.
+The Euclidean inner product on $\RR^2 \cong \CC$ is $(z_1, z_2) = \operatorname{Re}(z_1 \bar{z}_2)$.
 Compute the inner product of $\tilde{v}$ and $\tilde{w}$:
 \[
 (\tilde{v}, \tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(f'(z_0) w)}\big) = \operatorname{Re}\big(|f'(z_0)|^2 v \bar{w}\big) = |f'(z_0)|^2 \operatorname{Re}(v \bar{w}) = |f'(z_0)|^2 (v, w).
@@ -126,7 +126,7 @@ Part (b): Preservation of oriented angles implies holomorphicity:
 ::: pf-proof
 
 ::: pf-step
-Let $T = Df(z_0): \mathbb{R}^2 \to \mathbb{R}^2$ be the real total derivative, represented by the Jacobian matrix:
+Let $T = Df(z_0): \RR^2 \to \RR^2$ be the real total derivative, represented by the Jacobian matrix:
 \[
 J = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}, \quad \text{with } \det(J) \neq 0.
 \]
@@ -138,7 +138,7 @@ real differentiability of $f = u + iv$.
 :::
 
 ::: pf-step
-Since $f$ preserves oriented angles at $z_0$, the linear map $T$ preserves oriented angles between all pairs of non-zero vectors in $\mathbb{R}^2$.
+Since $f$ preserves oriented angles at $z_0$, the linear map $T$ preserves oriented angles between all pairs of non-zero vectors in $\RR^2$.
 
 ::: pf-proof
 tangent mapping of smooth curves.
@@ -163,7 +163,7 @@ preservation of right angles and orientation.
 ::: {.pf-step #rotation-matrix-form}
 Any $2 \times 2$ matrix satisfying these conditions has the form of a positive scalar times a rotation matrix:
 \[
-J = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} \quad (a, b \in \mathbb{R}, \, a^2 + b^2 = \lambda^2 > 0).
+J = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} \quad (a, b \in \RR, \, a^2 + b^2 = \lambda^2 > 0).
 \]
 Therefore:
 \[
@@ -171,7 +171,7 @@ u_x = v_y = a, \qquad u_y = -v_x = -b.
 \]
 
 ::: pf-proof
-classification of orientation-preserving conformal linear maps on $\mathbb{R}^2$.
+classification of orientation-preserving conformal linear maps on $\RR^2$.
 :::
 
 :::

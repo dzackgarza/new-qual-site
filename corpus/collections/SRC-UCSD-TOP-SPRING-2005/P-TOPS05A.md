@@ -49,7 +49,7 @@ hypothesis.
 
 ::: pf-step
 
-The homology groups of $S^{2n}$ are $H_0(S^{2n}; \mathbb{Q}) \cong \mathbb{Q}$, $H_{2n}(S^{2n}; \mathbb{Q}) \cong \mathbb{Q}$, and $H_k(S^{2n}; \mathbb{Q}) = 0$ for $0 < k < 2n$.
+The homology groups of $S^{2n}$ are $H_0(S^{2n}; \QQ) \cong \QQ$, $H_{2n}(S^{2n}; \QQ) \cong \QQ$, and $H_k(S^{2n}; \QQ) = 0$ for $0 < k < 2n$.
 
 ::: pf-proof
 
@@ -162,7 +162,7 @@ degree homomorphism properties.
 
 We have two cases for the order of $G$:
 - If $|G| = 1$, then $G = \{1\}$, so $X \cong S^{2n}/\{1\} \cong S^{2n}$.
-- If $|G| = 2$, then $G = \{1, \tau\}$ is a free $\mathbb{Z}_2$-action, so $X = S^{2n}/\{1, \tau\} \cong \mathbb{RP}^{2n}$.
+- If $|G| = 2$, then $G = \{1, \tau\}$ is a free $\ZZ_2$-action, so $X = S^{2n}/\{1, \tau\} \cong \mathbb{RP}^{2n}$.
 
 ::: pf-proof
 

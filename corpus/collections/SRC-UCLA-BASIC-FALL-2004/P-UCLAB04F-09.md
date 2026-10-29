@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:\mathbb C^n\to\mathbb C^n$ be a linear transformation and let $P(X)$ be a polynomial such that
+Let $T:\CC^n\to\CC^n$ be a linear transformation and let $P(X)$ be a polynomial such that
 \[
 P(T)=0.
 \]

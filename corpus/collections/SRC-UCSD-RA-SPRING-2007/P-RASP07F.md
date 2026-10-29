@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 In the following, give complete justification for your answers.
 
-(a) Find all distributions $T \in \mathcal{D}'(\mathbb{R})$ such that $xT = 0$.
+(a) Find all distributions $T \in \mathcal{D}'(\RR)$ such that $xT = 0$.
 
-(b) Find all distributions $T \in \mathcal{D}'(\mathbb{R})$ such that $x^2 T = 0$.
+(b) Find all distributions $T \in \mathcal{D}'(\RR)$ such that $x^2 T = 0$.
 :::
 
 ::: {.solution}
@@ -41,7 +41,7 @@ Solve $xT=0$.
 
 ::: pf-proof
 
-Choose $\chi\in C_c^\infty(\mathbb R)$ with $\chi=1$ on a neighborhood of $0$. For any test function $\varphi\in C_c^\infty(\mathbb R)$, the function
+Choose $\chi\in C_c^\infty(\RR)$ with $\chi=1$ on a neighborhood of $0$. For any test function $\varphi\in C_c^\infty(\RR)$, the function
 \[
 \varphi(x)-\varphi(0)\chi(x)
 \]
@@ -49,7 +49,7 @@ vanishes at $x=0$. Hence it can be written
 \[
 \varphi(x)-\varphi(0)\chi(x)=x\psi(x)
 \]
-for some $\psi\in C_c^\infty(\mathbb R)$.
+for some $\psi\in C_c^\infty(\RR)$.
 
 If $xT=0$, then
 \[
@@ -67,7 +67,7 @@ Conversely,
 \]
 Therefore
 \[
-\boxed{xT=0\iff T=c\delta_0\text{ for some }c\in\mathbb C.}
+\boxed{xT=0\iff T=c\delta_0\text{ for some }c\in\CC.}
 \]
 
 :::
@@ -85,7 +85,7 @@ Using the same cutoff $\chi$, every test function has a second-order decompositi
 \varphi(x)
 =\varphi(0)\chi(x)+\varphi'(0)x\chi(x)+x^2\psi(x)
 \]
-for some $\psi\in C_c^\infty(\mathbb R)$.
+for some $\psi\in C_c^\infty(\RR)$.
 Indeed, after subtracting the first two terms, the remainder and its first derivative vanish at $0$, so it is divisible by $x^2$ in $C_c^\infty$.
 
 If $x^2T=0$, then
@@ -125,7 +125,7 @@ x^2\delta_0'=x(-\delta_0)=0.
 \]
 Hence every linear combination of $\delta_0$ and $\delta_0'$ is annihilated by $x^2$. Therefore
 \[
-\boxed{x^2T=0\iff T=a\delta_0+b\delta_0'\text{ for some }a,b\in\mathbb C.}
+\boxed{x^2T=0\iff T=a\delta_0+b\delta_0'\text{ for some }a,b\in\CC.}
 \]
 
 :::

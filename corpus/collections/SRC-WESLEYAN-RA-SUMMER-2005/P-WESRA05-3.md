@@ -43,7 +43,7 @@ Define a norm.
 
 ::: pf-proof
 
-A norm is a map $\|\cdot\|:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\in\mathbb R$,
+A norm is a map $\|\cdot\|:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\in\RR$,
 \[
 \|x\|=0\iff x=0,
 \qquad
@@ -125,7 +125,7 @@ Explain the Baire-category argument.
 
 ::: pf-proof
 
-For $m\in\mathbb N$, set
+For $m\in\NN$, set
 \[
 E_m=\left\{x\in B:\sup_{T\in\mathcal T}\|Tx\|\le m\right\}.
 \]

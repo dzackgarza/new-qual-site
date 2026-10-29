@@ -31,7 +31,7 @@ whenever $s \neq 0 , - 1 , - 2 , . . .$
 ::: {.solution}
 **Goal:** Prove Gauss's limit formula for the Gamma function:
 $$
-\Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)} \qquad \text{for } s \in \mathbb{C} \setminus \{0, -1, -2, \dots\}.
+\Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)} \qquad \text{for } s \in \CC \setminus \{0, -1, -2, \dots\}.
 $$
 
 ::: pf
@@ -42,7 +42,7 @@ The Weierstrass product formula for the reciprocal Gamma function:
 ::: pf-proof
 
 ::: pf-step
-For any $s \in \mathbb{C} \setminus \{0, -1, -2, \dots\}$, the reciprocal Gamma function is given by the entire product
+For any $s \in \CC \setminus \{0, -1, -2, \dots\}$, the reciprocal Gamma function is given by the entire product
 $$\frac{1}{\Gamma(s)} = s \, e^{\gamma s} \prod_{k=1}^\infty \left(1 + \frac{s}{k}\right) e^{-s/k},$$
 where $\gamma = \lim_{n \to \infty} \left( H_n - \log n \right)$ is the Euler–Mascheroni constant and $H_n = \sum_{k=1}^n \frac{1}{k}$.
 :::

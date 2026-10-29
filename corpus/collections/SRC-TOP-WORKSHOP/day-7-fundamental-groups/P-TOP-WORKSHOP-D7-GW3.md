@@ -30,7 +30,7 @@ First, use the product theorem for fundamental groups:
 \[
 \pi_1(S^1\times S^1,(1,1))
 \cong \pi_1(S^1,1)\times\pi_1(S^1,1)
-\cong \mathbb Z\times\mathbb Z.
+\cong \ZZ\times\ZZ.
 \]
 
 Second, use the standard square CW structure on the torus. After identifying opposite edges, there is one \(0\)-cell, two \(1\)-cells \(a,b\), and one \(2\)-cell whose attaching map follows the boundary word
@@ -43,10 +43,10 @@ Van Kampen therefore gives
 \]
 The single relation says exactly that \(a\) and \(b\) commute, so this group is
 \[
-\mathbb Z^2.
+\ZZ^2.
 \]
 Thus both methods give
 \[
-\boxed{\pi_1(T^2)\cong\mathbb Z\oplus\mathbb Z}.
+\boxed{\pi_1(T^2)\cong\ZZ\oplus\ZZ}.
 \]
 :::

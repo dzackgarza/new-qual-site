@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-Does there exist a differentiable function \(f:\mathbb R\to\mathbb R\) such that
+Does there exist a differentiable function \(f:\RR\to\RR\) such that
 \[
 f(0)=1
 \qquad\text{and}\qquad
 f'(x)\ge f(x)^2
 \]
-for every \(x\in\mathbb R\)? Prove your answer.
+for every \(x\in\RR\)? Prove your answer.
 :::
 
 ::: {.solution}

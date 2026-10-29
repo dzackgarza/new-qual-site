@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x) = |x| + 3x^2$ for $x \in \mathbb{R}$. What is $f'(-1)$?
+Let $f(x) = |x| + 3x^2$ for $x \in \RR$. What is $f'(-1)$?
 :::
 
 ::: {.solution}

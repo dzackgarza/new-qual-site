@@ -199,7 +199,7 @@ C_2e^{-3t},
 \end{aligned}
 }
 $$
-where $C_1,C_2\in\mathbb R$.
+where $C_1,C_2\in\RR$.
 
 
 ::: pf-proof

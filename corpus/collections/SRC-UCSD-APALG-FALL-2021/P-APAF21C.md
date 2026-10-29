@@ -22,10 +22,10 @@ audit:
 ---
 
 ::: {.problem}
-(a) Define $A^{1/2}$ for a positive semidefinite matrix $A \in M_n(\mathbb{C})$.
-(b) Define $|A|$ for any matrix $A \in M_{m,n}(\mathbb{C})$.
+(a) Define $A^{1/2}$ for a positive semidefinite matrix $A \in M_n(\CC)$.
+(b) Define $|A|$ for any matrix $A \in M_{m,n}(\CC)$.
 (c) Prove that the eigenvalues of $|A|$ are the singular values of $A$.
-(d) Prove that a square matrix $A \in M_n(\mathbb{C})$ is positive semidefinite if and only if $|A| = A$.
+(d) Prove that a square matrix $A \in M_n(\CC)$ is positive semidefinite if and only if $|A| = A$.
 (e) Prove that $|A|$ and $|A^H|$ have the same non-zero eigenvalues and are similar up to embedding/direct sum with zero blocks.
 :::
 
@@ -34,7 +34,7 @@ audit:
 ::: pf
 
 ::: {.pf-step #psd-square-root-definition}
-If $A\in M_n(\mathbb C)$ is positive semidefinite, define its positive semidefinite square root by spectral calculus.
+If $A\in M_n(\CC)$ is positive semidefinite, define its positive semidefinite square root by spectral calculus.
 
 ::: pf-proof
 By the Hermitian spectral theorem,
@@ -52,9 +52,9 @@ Then $A^{1/2}$ is positive semidefinite and $(A^{1/2})^2=A$. Uniqueness follows 
 :::
 
 ::: pf-step
-For $A\in M_{m,n}(\mathbb C)$, define
+For $A\in M_{m,n}(\CC)$, define
 \[
-|A|=(A^HA)^{1/2}\in M_n(\mathbb C).
+|A|=(A^HA)^{1/2}\in M_n(\CC).
 \]
 
 ::: pf-proof

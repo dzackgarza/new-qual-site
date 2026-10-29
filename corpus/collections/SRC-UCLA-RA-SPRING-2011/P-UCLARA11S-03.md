@@ -9,9 +9,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mu$ be a Borel probability measure on $\mathbb R$ and define
+Let $\mu$ be a Borel probability measure on $\RR$ and define
 \[
-f(t)=\int_{\mathbb R}e^{itx}\,d\mu(x).
+f(t)=\int_{\RR}e^{itx}\,d\mu(x).
 \]
 Suppose that
 \[
@@ -34,7 +34,7 @@ and
 \[
 \operatorname{Re}(f(0)-f(t))
 =
-\int_{\mathbb R}(1-\cos(tx))\,d\mu(x).
+\int_{\RR}(1-\cos(tx))\,d\mu(x).
 \]
 
 
@@ -44,14 +44,14 @@ Since $\mu$ is a probability measure,
 \[
 f(0)
 =
-\int_{\mathbb R}1\,d\mu
+\int_{\RR}1\,d\mu
 =1.
 \]
 Also
 \[
 \operatorname{Re}f(t)
 =
-\int_{\mathbb R}\cos(tx)\,d\mu(x),
+\int_{\RR}\cos(tx)\,d\mu(x),
 \]
 so subtracting from $f(0)=1$ gives the identity.
 
@@ -64,7 +64,7 @@ so subtracting from $f(0)=1$ gives the identity.
 The hypothesis implies
 \[
 \lim_{t\to0}
-\int_{\mathbb R}
+\int_{\RR}
 \frac{1-\cos(tx)}{t^2}
 \,d\mu(x)
 =
@@ -88,7 +88,7 @@ implies convergence of its real part to $0$. Apply step [](#s1-1){.pf-ref}.
 
 One has
 \[
-\int_{\mathbb R}x^2\,d\mu(x)=0.
+\int_{\RR}x^2\,d\mu(x)=0.
 \]
 
 
@@ -109,15 +109,15 @@ Choose any sequence $t_n\to0$ with $t_n\ne0$. Fatou's lemma and step [](#s1-2){.
 \[
 \begin{aligned}
 \frac12
-\int_{\mathbb R}x^2\,d\mu(x)
+\int_{\RR}x^2\,d\mu(x)
 &=
-\int_{\mathbb R}
+\int_{\RR}
 \liminf_{n\to\infty}
 \frac{1-\cos(t_nx)}{t_n^2}
 \,d\mu(x)\\
 &\le
 \liminf_{n\to\infty}
-\int_{\mathbb R}
+\int_{\RR}
 \frac{1-\cos(t_nx)}{t_n^2}
 \,d\mu(x)\\
 &=
@@ -162,14 +162,14 @@ Taking
 \]
 for $m\ge1$,
 \[
-\mathbb R\setminus\{0\}
+\RR\setminus\{0\}
 =
 \bigcup_{m=1}^{\infty}
 \{|x|\ge1/m\},
 \]
 so
 \[
-\mu(\mathbb R\setminus\{0\})=0.
+\mu(\RR\setminus\{0\})=0.
 \]
 Thus $\mu$ is supported at $0$.
 

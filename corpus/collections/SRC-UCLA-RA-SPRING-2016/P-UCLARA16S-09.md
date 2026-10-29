@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire and assume that $|f(z)|=1$ when $|z|=1$. Show that
+Let $f:\CC\to\CC$ be entire and assume that $|f(z)|=1$ when $|z|=1$. Show that
 \[
 f(z)=Cz^m
 \]
-for some integer $m\ge0$ and $C\in\mathbb C$ with $|C|=1$.
+for some integer $m\ge0$ and $C\in\CC$ with $|C|=1$.
 :::
 
 ::: {.solution}
@@ -95,7 +95,7 @@ By step [](#s1-1){.pf-ref}, $f$ and $B$ have the same zeros in $\mathbb D$ with 
 
 ::: {.pf-step #s1-3}
 
-There is a constant $C\in\mathbb C$ with $|C|=1$ such that
+There is a constant $C\in\CC$ with $|C|=1$ such that
 \[
 f(z)=C B(z)
 \qquad
@@ -138,7 +138,7 @@ p_j
 \]
 No numerator factor vanishes at $p_j$, because every numerator zero $a_k$ lies in $\mathbb D$ while $|p_j|>1$. Hence $B$ has a genuine pole at $p_j$.
 
-On the connected domain obtained from $\mathbb C$ by deleting the finitely many poles of $B$, both $f$ and $CB$ are holomorphic and agree on the nonempty open set $\mathbb D$ by step [](#s1-3){.pf-ref}. The identity theorem therefore gives
+On the connected domain obtained from $\CC$ by deleting the finitely many poles of $B$, both $f$ and $CB$ are holomorphic and agree on the nonempty open set $\mathbb D$ by step [](#s1-3){.pf-ref}. The identity theorem therefore gives
 \[
 f=CB
 \]
@@ -154,7 +154,7 @@ There is an integer $m\ge0$ such that
 \[
 \boxed{f(z)=Cz^m}
 \qquad
-(z\in\mathbb C),
+(z\in\CC),
 \]
 with $|C|=1$.
 
@@ -171,7 +171,7 @@ f(z)=Cz^N
 \qquad
 (z\in\mathbb D).
 \]
-Both sides are entire, so the identity theorem extends the equality to all of $\mathbb C$. Taking $m=N$ gives the claimed form, including $m=0$ when $f$ has no zeros in $\mathbb D$.
+Both sides are entire, so the identity theorem extends the equality to all of $\CC$. Taking $m=N$ gives the claimed form, including $m=0$ when $f$ has no zeros in $\mathbb D$.
 
 :::
 

@@ -45,7 +45,7 @@ f. A prime $p$ and a finite group $G$ of order $p^{k+1}m$ where $p$ does not div
 :::
 
 ::: {.solution}
-Write $C_r=\mathbb Z/r\mathbb Z$.
+Write $C_r=\ZZ/r\ZZ$.
 
 ::: pf
 
@@ -144,7 +144,7 @@ In part (e), take $\bigoplus_{n\geq1}C_2$.
 ::: pf-proof
 
 This is the group of sequences $(a_1,a_2,\ldots)$ with
-$a_n\in\mathbb Z/2\mathbb Z$ and only finitely many
+$a_n\in\ZZ/2\ZZ$ and only finitely many
 nonzero coordinates, under coordinatewise addition.
 It is infinite because the sequences having a single $1$
 in position $n$ are distinct as $n$ varies. Every element

@@ -76,11 +76,11 @@ The three $b$-edges give the same two alternating classes.
 
 The cellular chain complex of $X_1$ is
 $$
-0\to\mathbb Z
+0\to\ZZ
 \xrightarrow{\partial_2}
-\mathbb Z^2
+\ZZ^2
 \xrightarrow{\partial_1}
-\mathbb Z^2
+\ZZ^2
 \to0,
 $$
 where
@@ -127,9 +127,9 @@ $$
 The homology of $X_1$ is
 $$
 \boxed{
-H_0(X_1;\mathbb Z)\cong\mathbb Z,
+H_0(X_1;\ZZ)\cong\ZZ,
 \qquad
-H_k(X_1;\mathbb Z)=0\quad(k\ge1).}
+H_k(X_1;\ZZ)=0\quad(k\ge1).}
 $$
 
 
@@ -157,7 +157,7 @@ H_2(X_1)=0.
 $$
 The $1$-skeleton is connected, giving
 $$
-H_0(X_1)\cong\mathbb Z.
+H_0(X_1)\cong\ZZ.
 $$
 There are no higher-dimensional cells.
 
@@ -222,7 +222,7 @@ diameters.
 Its link is not a circle.
 Hence the point has no neighborhood homeomorphic to
 $$
-\mathbb R^2.
+\RR^2.
 $$
 
 :::
@@ -302,11 +302,11 @@ respectively.
 Hence
 $$
 \boxed{
-H_0(X_2;\mathbb Z)\cong\mathbb Z,
+H_0(X_2;\ZZ)\cong\ZZ,
 \quad
-H_1(X_2;\mathbb Z)\cong\mathbb Z\oplus\mathbb Z/2,
+H_1(X_2;\ZZ)\cong\ZZ\oplus\ZZ/2,
 \quad
-H_k(X_2;\mathbb Z)=0\ (k\ge2).}
+H_k(X_2;\ZZ)=0\ (k\ge2).}
 $$
 
 
@@ -332,7 +332,7 @@ H_1(X_2)
 \cong
 \langle u,v\rangle/\langle2v\rangle
 \cong
-\mathbb Z\oplus\mathbb Z/2.
+\ZZ\oplus\ZZ/2.
 $$
 The map
 $$
@@ -528,11 +528,11 @@ $$
 Therefore
 $$
 \boxed{
-H_0(X_3;\mathbb Z)\cong\mathbb Z,
+H_0(X_3;\ZZ)\cong\ZZ,
 \quad
-H_1(X_3;\mathbb Z)\cong\mathbb Z^2\oplus\mathbb Z/2,
+H_1(X_3;\ZZ)\cong\ZZ^2\oplus\ZZ/2,
 \quad
-H_k(X_3;\mathbb Z)=0\ (k\ge2).}
+H_k(X_3;\ZZ)=0\ (k\ge2).}
 $$
 
 
@@ -540,7 +540,7 @@ $$
 
 The map
 $$
-\partial_2:\mathbb Z\to\mathbb Z^3
+\partial_2:\ZZ\to\ZZ^3
 $$
 is injective, so
 $$
@@ -550,9 +550,9 @@ Also
 $$
 H_1(X_3)
 =
-\mathbb Z^3/\langle(2,0,0)\rangle
+\ZZ^3/\langle(2,0,0)\rangle
 \cong
-\mathbb Z^2\oplus\mathbb Z/2.
+\ZZ^2\oplus\ZZ/2.
 $$
 Connectedness gives the stated
 $$
@@ -613,14 +613,14 @@ $$
 \hline
 X_1&1&0&\text{not a manifold}\\
 X_2&\langle u,v\mid u^2v^2\rangle&
-\mathbb Z\oplus\mathbb Z/2&\text{Klein bottle}\\
+\ZZ\oplus\ZZ/2&\text{Klein bottle}\\
 X_3&\langle a,b,c\mid abcab^{-1}c^{-1}\rangle&
-\mathbb Z^2\oplus\mathbb Z/2&\#^3\mathbb{RP}^2
+\ZZ^2\oplus\ZZ/2&\#^3\mathbb{RP}^2
 \end{array}}
 $$
 with
 $$
-H_0(X_i)\cong\mathbb Z
+H_0(X_i)\cong\ZZ
 $$
 for all three and all unlisted positive-dimensional homology groups equal to
 zero.

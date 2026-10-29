@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA56
 kind: problem
-title: $\sum_{n\in\mathbb{Z}}\lvert 2n+1\rvert e^{-a\lvert 2n+1\rvert}$
+title: $\sum_{n\in\ZZ}\lvert 2n+1\rvert e^{-a\lvert 2n+1\rvert}$
 classification:
   areas: [real-analysis]
   topics: []
@@ -29,7 +29,7 @@ The absolute values
 $$
 |2n+1|,
 \qquad
-n\in\mathbb Z,
+n\in\ZZ,
 $$
 run through every positive odd integer exactly twice.
 

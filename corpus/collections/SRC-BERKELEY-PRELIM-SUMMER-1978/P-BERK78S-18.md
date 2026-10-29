@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $N:\mathbb R^n\to\mathbb R$ be a norm.
+Let $N:\RR^n\to\RR$ be a norm.
 
 1. Prove that $N$ is bounded on the Euclidean unit sphere.
 2. Prove that $N$ is continuous.
@@ -37,7 +37,7 @@ Let $N:\mathbb R^n\to\mathbb R$ be a norm.
    \[
    A\|x\|\le N(x)\le B\|x\|
    \]
-   for every $x\in\mathbb R^n$.
+   for every $x\in\RR^n$.
 :::
 
 ::: {.solution}

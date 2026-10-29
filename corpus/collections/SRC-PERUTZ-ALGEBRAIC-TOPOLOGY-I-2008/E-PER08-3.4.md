@@ -29,11 +29,11 @@ S=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
 T=\begin{pmatrix}1&-1\\0&1\end{pmatrix},\qquad
 U=ST=\begin{pmatrix}0&1\\-1&1\end{pmatrix}
 \]
-in $\operatorname{SL}_2(\mathbb Z)$.
+in $\operatorname{SL}_2(\ZZ)$.
 
 1. Verify that $S^2=U^3=-I$.
 
-2. Show that, for every $A\in\operatorname{SL}_2(\mathbb Z)$, there is $n\in\mathbb Z$ such that if
+2. Show that, for every $A\in\operatorname{SL}_2(\ZZ)$, there is $n\in\ZZ$ such that if
    \[
    AT^n=\begin{pmatrix}a&b\\c&d\end{pmatrix},
    \]
@@ -45,11 +45,11 @@ in $\operatorname{SL}_2(\mathbb Z)$.
    \]
    or the same product followed by $S$ has lower-left entry zero.
 
-4. Show that $S$ and $T$ generate $\operatorname{SL}_2(\mathbb Z)$.
+4. Show that $S$ and $T$ generate $\operatorname{SL}_2(\ZZ)$.
 
 5. Define
    \[
-   \theta:(\mathbb Z/2)*(\mathbb Z/3)=\langle a,b\mid a^2,b^3\rangle\to\operatorname{PSL}_2(\mathbb Z)
+   \theta:(\ZZ/2)*(\ZZ/3)=\langle a,b\mid a^2,b^3\rangle\to\operatorname{PSL}_2(\ZZ)
    \]
    by $\theta(a)=\pm S$ and $\theta(b)=\pm U$.
    Using the Möbius action on the upper half-plane $\mathbb H$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
@@ -97,7 +97,7 @@ U^3=U^2U
 \begin{pmatrix}-1&0\\0&-1\end{pmatrix}
 =-I.
 \]
-Thus the classes $\pm S$ and $\pm U$ in $\operatorname{PSL}_2(\mathbb Z)$ have orders $2$ and $3$, respectively.
+Thus the classes $\pm S$ and $\pm U$ in $\operatorname{PSL}_2(\ZZ)$ have orders $2$ and $3$, respectively.
 
 :::
 
@@ -129,7 +129,7 @@ Thus the lower-left entry remains $c=\gamma$, while the lower-right entry become
 \[
 d=\delta-n\gamma.
 \]
-If $\gamma=0$, there is nothing to prove. If $\gamma\neq0$, choose $n\in\mathbb Z$ nearest to $\delta/\gamma$. Then
+If $\gamma=0$, there is nothing to prove. If $\gamma\neq0$, choose $n\in\ZZ$ nearest to $\delta/\gamma$. Then
 \[
 \left|\frac{\delta}{\gamma}-n\right|\le\frac12,
 \]
@@ -178,21 +178,21 @@ already has lower-left entry zero, or the final reduction has zero lower-right e
 
 ::: {.pf-step #s4}
 
-The matrices $S$ and $T$ generate $\operatorname{SL}_2(\mathbb Z)$.
+The matrices $S$ and $T$ generate $\operatorname{SL}_2(\ZZ)$.
 
 ::: pf-proof
 
-Let $A\in\operatorname{SL}_2(\mathbb Z)$. By step [](#s3){.pf-ref}, there is a word $W$ in $S$ and powers of $T$ such that
+Let $A\in\operatorname{SL}_2(\ZZ)$. By step [](#s3){.pf-ref}, there is a word $W$ in $S$ and powers of $T$ such that
 \[
 AW=
 \begin{pmatrix}a&b\\0&d\end{pmatrix}
-\in\operatorname{SL}_2(\mathbb Z).
+\in\operatorname{SL}_2(\ZZ).
 \]
 The determinant condition gives
 \[
 ad=1.
 \]
-Since $a,d\in\mathbb Z$, either $a=d=1$ or $a=d=-1$.
+Since $a,d\in\ZZ$, either $a=d=1$ or $a=d=-1$.
 
 If $a=d=1$, then
 \[
@@ -213,7 +213,7 @@ A=(AW)W^{-1}\in\langle S,T\rangle.
 \]
 Thus
 \[
-\operatorname{SL}_2(\mathbb Z)=\langle S,T\rangle.
+\operatorname{SL}_2(\ZZ)=\langle S,T\rangle.
 \]
 
 :::
@@ -224,7 +224,7 @@ Thus
 
 The homomorphism
 \[
-\theta:(\mathbb Z/2)*(\mathbb Z/3)\to\operatorname{PSL}_2(\mathbb Z)
+\theta:(\ZZ/2)*(\ZZ/3)\to\operatorname{PSL}_2(\ZZ)
 \]
 is surjective.
 
@@ -238,11 +238,11 @@ b\longmapsto\pm U
 \]
 respect $a^2=1$ and $b^3=1$, so $\theta$ is well defined.
 
-Since $U=ST$, in $\operatorname{PSL}_2(\mathbb Z)$ we have
+Since $U=ST$, in $\operatorname{PSL}_2(\ZZ)$ we have
 \[
 \pm T=(\pm S)^{-1}(\pm U).
 \]
-By step [](#s4){.pf-ref}, the classes of $S$ and $T$ generate $\operatorname{PSL}_2(\mathbb Z)$; hence the classes of $S$ and $U$ generate it. Therefore $\theta$ is surjective.
+By step [](#s4){.pf-ref}, the classes of $S$ and $T$ generate $\operatorname{PSL}_2(\ZZ)$; hence the classes of $S$ and $U$ generate it. Therefore $\theta$ is surjective.
 
 For injectivity, let the Möbius transformations associated with $\pm S$ and $\pm U$ be
 \[
@@ -375,9 +375,9 @@ Every nontrivial reduced word sends $D$ disjointly from itself.
 
 Every nontrivial element of
 \[
-(\mathbb Z/2)*(\mathbb Z/3)
+(\ZZ/2)*(\ZZ/3)
 \]
-has a reduced form whose factors alternate between the nonidentity element $a$ of $\mathbb Z/2$ and a nonidentity power $b$ or $b^2$ of $\mathbb Z/3$.
+has a reduced form whose factors alternate between the nonidentity element $a$ of $\ZZ/2$ and a nonidentity power $b$ or $b^2$ of $\ZZ/3$.
 
 Read such a reduced word from right to left, which is the order in which its Möbius transformations act.
 
@@ -410,7 +410,7 @@ The homomorphism $\theta$ is injective, hence an isomorphism.
 
 ::: pf-proof
 
-If $1\neq w\in(\mathbb Z/2)*(\mathbb Z/3)$, then by step [](#s7){.pf-ref}
+If $1\neq w\in(\ZZ/2)*(\ZZ/3)$, then by step [](#s7){.pf-ref}
 \[
 \mu_w(D)\cap D=\varnothing.
 \]
@@ -418,13 +418,13 @@ In particular, $\mu_w$ is not the identity Möbius transformation, since the ide
 \[
 \theta(w)\neq1
 \]
-in $\operatorname{PSL}_2(\mathbb Z)$. Hence
+in $\operatorname{PSL}_2(\ZZ)$. Hence
 \[
 \ker\theta=\{1\}.
 \]
 Together with surjectivity from step [](#s5){.pf-ref},
 \[
-\boxed{\operatorname{PSL}_2(\mathbb Z)\cong(\mathbb Z/2)*(\mathbb Z/3)}.
+\boxed{\operatorname{PSL}_2(\ZZ)\cong(\ZZ/2)*(\ZZ/3)}.
 \]
 
 :::

@@ -22,7 +22,7 @@ Let $I=[0,2]$.
 
 ::: pf-step
 
-If $f\colon I\to\mathbb R$ is continuous and
+If $f\colon I\to\RR$ is continuous and
 \[
 \int_I f(x)\,dx=36,
 \]
@@ -32,7 +32,7 @@ prove that there exists $x\in I$ such that $f(x)=18$.
 
 ::: pf-step
 
-If $g\colon I^2\to\mathbb R$ is continuous and
+If $g\colon I^2\to\RR$ is continuous and
 
 :::
 

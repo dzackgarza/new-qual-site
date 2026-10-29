@@ -23,7 +23,7 @@ Problem 8. Determine the supremum of
 \]
 among all harmonic functions $u:\mathbb D\to[0,1]$, where
 \[
-\mathbb D=\{z\in\mathbb C:|z|<1\}.
+\mathbb D=\{z\in\CC:|z|<1\}.
 \]
 Prove that your answer is correct.
 :::
@@ -76,7 +76,7 @@ There is a holomorphic function
 F=u+iv:\mathbb D\to
 S
 \coloneqq
-\{w\in\mathbb C:0<\operatorname{Re}w<1\}
+\{w\in\CC:0<\operatorname{Re}w<1\}
 \]
 whose real part is \(u\), and \(v\) may be chosen so that
 \[

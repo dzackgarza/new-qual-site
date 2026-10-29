@@ -31,9 +31,9 @@ If false give a counterexample or disprove it.
 
 (a) If $X$ is a complete metric space and $\{x_n\}$ a bounded sequence in $X$, then $\{x_n\}$ has a convergent subsequence.
 
-(b) If $f \in \mathcal{S}(\mathbb{R})$ (the space of Schwartz functions) and $\frac{d\hat{f}}{d\xi} = 0$, then $f = 0$.
+(b) If $f \in \mathcal{S}(\RR)$ (the space of Schwartz functions) and $\frac{d\hat{f}}{d\xi} = 0$, then $f = 0$.
 
-(c) If $T \in \mathcal{S}'(\mathbb{R})$ (the space of tempered distributions) and $\frac{d\hat{T}}{d\xi} = 0$, then $T = 0$.
+(c) If $T \in \mathcal{S}'(\RR)$ (the space of tempered distributions) and $\frac{d\hat{T}}{d\xi} = 0$, then $T = 0$.
 
 (d) Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be two norms on a vector space $X$ such that $X$ is complete with respect to both norms.
 If $\|\cdot\|_1 \leq \|\cdot\|_2$, then there exists $C > 0$ such that $\|\cdot\|_2 \leq C\|\cdot\|_1$.
@@ -43,7 +43,7 @@ If $\|\cdot\|_1 \leq \|\cdot\|_2$, then there exists $C > 0$ such that $\|\cdot\
 
 (f) If $\mu(X) < \infty$, then $L^1(X, \mu) \subset L^2(X, \mu)$.
 
-(g) $\ell^1(\mathbb{N}) \subset \ell^2(\mathbb{N})$.
+(g) $\ell^1(\NN) \subset \ell^2(\NN)$.
 
 (h) If $\mu_1$ and $\mu_2$ are two positive measures on a measurable space $(X, \mathcal{M})$ such that $\mu_1$ is absolutely continuous with respect to $\mu_2$, then there exists a measurable function $f$ on $X$ such that $d\mu_1 = f\,d\mu_2$.
 :::
@@ -79,7 +79,7 @@ If
 \[
 \frac d{d\xi}\widehat f=0,
 \]
-then the smooth function $\widehat f$ is constant. Since $f\in\mathcal S(\mathbb R)$, also $\widehat f\in\mathcal S(\mathbb R)$. The only constant Schwartz function is $0$, so
+then the smooth function $\widehat f$ is constant. Since $f\in\mathcal S(\RR)$, also $\widehat f\in\mathcal S(\RR)$. The only constant Schwartz function is $0$, so
 \[
 \widehat f=0.
 \]

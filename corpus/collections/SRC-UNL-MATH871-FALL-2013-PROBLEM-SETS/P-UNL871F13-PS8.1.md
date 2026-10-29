@@ -19,13 +19,13 @@ For each of the following spaces:
 
 Consider:
 
-- $\mathbb R$ with the excluded-point topology;
+- $\RR$ with the excluded-point topology;
 
-- $\mathbb R$ with the included-point topology;
+- $\RR$ with the included-point topology;
 
-- the lower-limit line $\mathbb R_\ell$;
+- the lower-limit line $\RR_\ell$;
 
-- the subspace $[0,1]\subset\mathbb R_\ell$.
+- the subspace $[0,1]\subset\RR_\ell$.
 :::
 
 ::: {.solution}
@@ -63,22 +63,22 @@ In the excluded-point topology, the only open set containing
 \]
 is the whole space
 \[
-\mathbb R.
+\RR.
 \]
 
 Every open cover of
 \[
-\mathbb R
+\RR
 \]
 must contain some open set covering $0$.
 That member must be
 \[
-\mathbb R
+\RR
 \]
 itself.
 Hence the one-element family
 \[
-\{\mathbb R\}
+\{\RR\}
 \]
 is already a finite subcover.
 
@@ -126,7 +126,7 @@ It is not $T_1$ because no proper open set contains $0$.
 In particular there is no open set containing $0$ but excluding a fixed
 nonzero point.
 Equivalently, a nonzero singleton is not closed:
-its complement contains $0$ but is not all of $\mathbb R$, hence is not
+its complement contains $0$ but is not all of $\RR$, hence is not
 open.
 
 :::
@@ -167,7 +167,7 @@ Let
 be the included point.
 For each
 \[
-x\in\mathbb R\setminus\{0\},
+x\in\RR\setminus\{0\},
 \]
 set
 \[
@@ -178,14 +178,14 @@ The family
 \[
 \{U_x:x\ne0\}
 \]
-covers $\mathbb R$.
+covers $\RR$.
 
 Any finite subfamily covers only
 \[
 0
 \]
 and finitely many nonzero points.
-Thus no finite subfamily covers all of $\mathbb R$.
+Thus no finite subfamily covers all of $\RR$.
 Hence the space is not compact.
 
 :::
@@ -261,7 +261,7 @@ Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 The lower-limit line
 \[
-\mathbb R_\ell
+\RR_\ell
 \]
 is Hausdorff.
 
@@ -287,7 +287,7 @@ and
 are disjoint open neighborhoods of $x$ and $y$.
 Thus
 \[
-\mathbb R_\ell
+\RR_\ell
 \]
 is Hausdorff, hence $T_1$.
 
@@ -304,7 +304,7 @@ The lower-limit line is normal.
 
 Let
 \[
-A,B\subseteq\mathbb R_\ell
+A,B\subseteq\RR_\ell
 \]
 be disjoint closed sets.
 
@@ -314,7 +314,7 @@ a\in A,
 \]
 the open set
 \[
-\mathbb R_\ell\setminus B
+\RR_\ell\setminus B
 \]
 contains $a$.
 Choose
@@ -325,7 +325,7 @@ such that
 \[
 [a,r_a)
 \subseteq
-\mathbb R_\ell\setminus B.
+\RR_\ell\setminus B.
 \]
 Similarly, for each
 \[
@@ -339,7 +339,7 @@ such that
 \[
 [b,s_b)
 \subseteq
-\mathbb R_\ell\setminus A.
+\RR_\ell\setminus A.
 \]
 
 Define
@@ -399,7 +399,7 @@ U\cap V=\varnothing.
 \]
 Hence
 \[
-\mathbb R_\ell
+\RR_\ell
 \]
 is normal.
 
@@ -411,7 +411,7 @@ is normal.
 
 Therefore
 \[
-\mathbb R_\ell
+\RR_\ell
 \]
 is
 \[
@@ -441,17 +441,17 @@ The family
 \[
 \mathcal U
 =
-\{[n,n+2):n\in\mathbb Z\}
+\{[n,n+2):n\in\ZZ\}
 \]
 is an open cover of
 \[
-\mathbb R_\ell.
+\RR_\ell.
 \]
 Indeed, every real number belongs to one of these intervals.
 
 Any finite subfamily is bounded above and below, so it cannot cover all of
 \[
-\mathbb R.
+\RR.
 \]
 Thus no finite subcover exists.
 
@@ -483,7 +483,7 @@ Combine steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref}.
 
 The subspace
 \[
-[0,1]\subset\mathbb R_\ell
+[0,1]\subset\RR_\ell
 \]
 is
 \[
@@ -499,7 +499,7 @@ The interval
 \]
 is closed in
 \[
-\mathbb R_\ell.
+\RR_\ell.
 \]
 Indeed,
 \[
@@ -515,7 +515,7 @@ A closed subspace of a normal space is normal.
 Also the $T_1$ property is hereditary to subspaces.
 By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref},
 \[
-\mathbb R_\ell
+\RR_\ell
 \]
 is normal and $T_1$.
 Hence
@@ -532,7 +532,7 @@ is $T_4$.
 
 The subspace
 \[
-[0,1]\subset\mathbb R_\ell
+[0,1]\subset\RR_\ell
 \]
 is not compact.
 
@@ -609,7 +609,7 @@ Thus there is no finite subcover.
 
 Therefore, for
 \[
-[0,1]\subset\mathbb R_\ell,
+[0,1]\subset\RR_\ell,
 \]
 \[
 \boxed{
@@ -638,16 +638,16 @@ The complete table is
 &\text{compact?}
 &\text{largest }T_i\\
 \hline
-\text{excluded-point }\mathbb R
+\text{excluded-point }\RR
 &\mathrm{yes}
 &T_0\\
-\text{included-point }\mathbb R
+\text{included-point }\RR
 &\mathrm{no}
 &T_0\\
-\mathbb R_\ell
+\RR_\ell
 &\mathrm{no}
 &T_4\\
-[0,1]\subset\mathbb R_\ell
+[0,1]\subset\RR_\ell
 &\mathrm{no}
 &T_4
 \end{array}

@@ -25,7 +25,7 @@ f\mapsto [Mf](x,y)
 =\sup_{r>0,\rho>0}\frac1{4r\rho}
 \int_{-r}^{r}\int_{-\rho}^{\rho} f(x+h,y+\ell)\,dh\,d\ell
 \]
-is bounded on $L^p(\mathbb R^2)$.
+is bounded on $L^p(\RR^2)$.
 
 (b) Show that
 \[
@@ -97,9 +97,9 @@ Taking the supremum over \(r,\rho\) gives the claim.
 
 For \(1<p<\infty\),
 \[
-\|M_1^y|f|\|_{L^p(\mathbb R^2)}
+\|M_1^y|f|\|_{L^p(\RR^2)}
 \le
-C_p\|f\|_{L^p(\mathbb R^2)}.
+C_p\|f\|_{L^p(\RR^2)}.
 \]
 
 
@@ -109,14 +109,14 @@ For almost every fixed \(x\), the section
 \[
 y\longmapsto f(x,y)
 \]
-belongs to \(L^p(\mathbb R)\) by Fubini--Tonelli. The one-dimensional
+belongs to \(L^p(\RR)\) by Fubini--Tonelli. The one-dimensional
 Hardy--Littlewood maximal theorem gives
 \[
-\int_{\mathbb R}
+\int_{\RR}
 |M_1^y|f|(x,y)|^p\,dy
 \le
 C_p^p
-\int_{\mathbb R}|f(x,y)|^p\,dy.
+\int_{\RR}|f(x,y)|^p\,dy.
 \]
 Integrating in \(x\) yields the stated estimate.
 
@@ -128,9 +128,9 @@ Integrating in \(x\) yields the stated estimate.
 
 One also has
 \[
-\|M_1^x(M_1^y|f|)\|_{L^p(\mathbb R^2)}
+\|M_1^x(M_1^y|f|)\|_{L^p(\RR^2)}
 \le
-C_p^2\|f\|_{L^p(\mathbb R^2)}.
+C_p^2\|f\|_{L^p(\RR^2)}.
 \]
 
 
@@ -141,7 +141,7 @@ function
 \[
 g(x,y)=M_1^y|f|(x,y).
 \]
-Step [](#s1-2){.pf-ref} guarantees \(g\in L^p(\mathbb R^2)\). Thus
+Step [](#s1-2){.pf-ref} guarantees \(g\in L^p(\RR^2)\). Thus
 \[
 \|M_1^x g\|_p
 \le
@@ -157,12 +157,12 @@ C_p^2\|f\|_p.
 ::: {.pf-step #s1-4}
 
 Therefore the strong maximal operator in part (a) is bounded on
-\(L^p(\mathbb R^2)\):
+\(L^p(\RR^2)\):
 \[
 \boxed{
-\|Mf\|_{L^p(\mathbb R^2)}
+\|Mf\|_{L^p(\RR^2)}
 \le
-C_p^2\|f\|_{L^p(\mathbb R^2)}}.
+C_p^2\|f\|_{L^p(\RR^2)}}.
 \]
 
 
@@ -207,7 +207,7 @@ the integral, and apply the triangle inequality.
 
 ::: {.pf-step #s1-6}
 
-If \(g\in C_c(\mathbb R^2)\), then
+If \(g\in C_c(\RR^2)\), then
 \[
 \boxed{Tg=0\quad\text{everywhere}}.
 \]
@@ -215,7 +215,7 @@ If \(g\in C_c(\mathbb R^2)\), then
 
 ::: pf-proof
 
-Every compactly supported continuous function on \(\mathbb R^2\) is uniformly
+Every compactly supported continuous function on \(\RR^2\) is uniformly
 continuous. Given \(\varepsilon>0\), choose \(\delta>0\) such that
 \[
 |g(x+h,y+\ell)-g(x,y)|<\varepsilon
@@ -240,7 +240,7 @@ for all \((x,y)\), and \(Tg=0\).
 
 ::: {.pf-step #s1-7}
 
-For every \(u\in L^p(\mathbb R^2)\),
+For every \(u\in L^p(\RR^2)\),
 \[
 \boxed{
 Tu(x,y)
@@ -282,7 +282,7 @@ Take \(\limsup_{r\to0}\).
 
 ::: {.pf-step #s1-8}
 
-Fix \(\alpha>0\). For every \(u\in L^p(\mathbb R^2)\),
+Fix \(\alpha>0\). For every \(u\in L^p(\RR^2)\),
 \[
 \left|\{Tu\ge\alpha\}\right|
 \le
@@ -344,9 +344,9 @@ Insert this into step [](#s1-8){.pf-ref}:
 
 ::: {.pf-step #s1-10}
 
-Let \(f\in L^p(\mathbb R^2)\). For every \(\varepsilon>0\), choose
+Let \(f\in L^p(\RR^2)\). For every \(\varepsilon>0\), choose
 \[
-g\in C_c(\mathbb R^2)
+g\in C_c(\RR^2)
 \]
 such that
 \[

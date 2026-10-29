@@ -31,7 +31,7 @@ If false, disprove it.
 
 (b) In a Hilbert space, if $\{x_n\}$ converges to $x$ weakly and $\|x_n\| \to \|x\|$, then $\{x_n\}$ converges to $x$ strongly, namely $\|x_n - x\| \to 0$.
 
-(c) Let $E \subset \mathbb{R}$ be a Lebesgue measurable set and assume that there exists $0 < \alpha < 1$ such that $m(E \cap I) \leq \alpha \, m(I)$ for all open intervals $I$.
+(c) Let $E \subset \RR$ be a Lebesgue measurable set and assume that there exists $0 < \alpha < 1$ such that $m(E \cap I) \leq \alpha \, m(I)$ for all open intervals $I$.
 Then $m(E) = 0$.
 :::
 

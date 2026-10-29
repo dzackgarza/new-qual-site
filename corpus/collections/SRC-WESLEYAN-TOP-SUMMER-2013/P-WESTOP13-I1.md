@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP13-I1
 kind: problem
-title: Topological properties of a countable product of a disconnected subspace of $\mathbb R$
+title: Topological properties of a countable product of a disconnected subspace of $\RR$
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft
@@ -13,7 +13,7 @@ audit:
 ::: {.problem}
 Let $\omega$ be the cardinality of the natural numbers and let
 \[
-U=[-2,0)\cup[1,2]\subset\mathbb R
+U=[-2,0)\cup[1,2]\subset\RR
 \]
 with the subspace topology. For the product space $U^\omega$, determine which of the following properties hold, giving a reason for each:
 

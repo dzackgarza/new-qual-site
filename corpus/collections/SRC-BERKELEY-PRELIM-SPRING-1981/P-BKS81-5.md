@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS81-5
 kind: problem
-title: Irreducible factorizations of $x^4-4$ and $x^3-2$ over $\mathbb R$, $\mathbb Z$, and $\mathbb Z/3\mathbb Z$
+title: Irreducible factorizations of $x^4-4$ and $x^3-2$ over $\RR$, $\ZZ$, and $\ZZ/3\ZZ$
 classification:
   areas: [prelim]
   topics: []
@@ -28,7 +28,7 @@ x^4-4
 \qquad\text{and}\qquad
 x^3-2
 \]
-into irreducible factors over $\mathbb R$, over $\mathbb Z$, and over $\mathbb Z/3\mathbb Z$.
+into irreducible factors over $\RR$, over $\ZZ$, and over $\ZZ/3\ZZ$.
 :::
 
 ::: {.solution}

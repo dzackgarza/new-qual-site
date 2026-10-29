@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb { R } ^ { m } \to \mathbb { R } ^ { n } , n \geqslant 2$ , be a linear transformation of rank $n - 1$ . Let $f ( v ) = ( f _ { 1 } ( v ) , f _ { 2 } ( v ) , \ldots , f _ { n } ( v ) )$ for $v \in \mathbb { R } ^ { m }$ . Show that a necessary and sufficient condition for the system of inequalities $f _ { i } ( v ) > 0 , i = 1 , \ldots , n$ , to have no solution is that there exist real numbers $\lambda _ { i } \geqslant 0$ , not all zero, such that
+Let $f : \RR ^ { m } \to \RR ^ { n } , n \geqslant 2$ , be a linear transformation of rank $n - 1$ . Let $f ( v ) = ( f _ { 1 } ( v ) , f _ { 2 } ( v ) , \ldots , f _ { n } ( v ) )$ for $v \in \RR ^ { m }$ . Show that a necessary and sufficient condition for the system of inequalities $f _ { i } ( v ) > 0 , i = 1 , \ldots , n$ , to have no solution is that there exist real numbers $\lambda _ { i } \geqslant 0$ , not all zero, such that
 
 $$
 \sum _ { i = 1 } ^ { n } \lambda _ { i } f _ { i } = 0 .
@@ -38,7 +38,7 @@ $$
 ::: {.solution}
 Let
 \[
-L=\operatorname{im}f\subseteq\mathbb R^n.
+L=\operatorname{im}f\subseteq\RR^n.
 \]
 Since $\operatorname{rank}f=n-1$, the subspace $L$ is a hyperplane.
 
@@ -50,11 +50,11 @@ A nonzero linear relation among $f_1,\ldots,f_n$ is the same thing as a nonzero 
 
 ::: pf-proof
 
-For $\lambda=(\lambda_1,\ldots,\lambda_n)\in\mathbb R^n$,
+For $\lambda=(\lambda_1,\ldots,\lambda_n)\in\RR^n$,
 \[
 \sum_{i=1}^n\lambda_i f_i=0
 \]
-means that for every $v\in\mathbb R^m$,
+means that for every $v\in\RR^m$,
 \[
 0=\sum_{i=1}^n\lambda_i f_i(v)
 =\lambda\cdot f(v).
@@ -109,7 +109,7 @@ A=\sum_{i\in P}\lambda_i>0,
 \qquad
 B=-\sum_{i\in N}\lambda_i>0.
 \]
-Now define $y\in\mathbb R^n$ by
+Now define $y\in\RR^n$ by
 \[
 y_i=
 \begin{cases}
@@ -126,7 +126,7 @@ Every coordinate of $y$ is strictly positive, and
 =BA-AB=0.
 \]
 Hence $y\in\lambda^\perp=L$, because both $L$ and $\lambda^\perp$ are hyperplanes and $L\subseteq\lambda^\perp$.
-Therefore $y=f(v)$ for some $v\in\mathbb R^m$, and then every $f_i(v)=y_i$ is positive, contradicting the assumed infeasibility.
+Therefore $y=f(v)$ for some $v\in\RR^m$, and then every $f_i(v)=y_i$ is positive, contradicting the assumed infeasibility.
 
 Thus $\lambda$ cannot have both positive and negative coordinates. Multiplying $\lambda$ by $-1$ if necessary, we may assume
 \[

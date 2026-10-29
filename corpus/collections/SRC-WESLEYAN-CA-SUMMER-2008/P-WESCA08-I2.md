@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open, let $f_n:U\to\mathbb C$, and let $f:U\to\mathbb C$.
+Let $U\subset\CC$ be open, let $f_n:U\to\CC$, and let $f:U\to\CC$.
 Define what it means for $(f_n)$ to converge normally (locally uniformly) to $f$.
 :::
 

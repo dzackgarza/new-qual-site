@@ -30,10 +30,10 @@ Find the universal covers of these spaces:
 ::: {.solution}
 (a) The universal cover of \(S^1\) is
 \[
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad p(t)=e^{2\pi i t}.
 \]
-The space \(\mathbb R\) is simply connected, and every point of \(S^1\) has a small arc whose inverse image is a disjoint union of intervals mapped homeomorphically onto that arc.
+The space \(\RR\) is simply connected, and every point of \(S^1\) has a small arc whose inverse image is a disjoint union of intervals mapped homeomorphically onto that arc.
 
 (b) The universal cover of \(S^1\vee S^1\) is the \(4\)-regular tree that is the Cayley graph of the free group
 \[

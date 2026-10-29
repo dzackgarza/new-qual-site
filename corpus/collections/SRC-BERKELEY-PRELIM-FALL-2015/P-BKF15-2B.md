@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \colon [0, \infty) \to \mathbb{R}$ be a function, and assume that:
+Let $f \colon [0, \infty) \to \RR$ be a function, and assume that:
 
 - $f$ is continuous on $[0, \infty)$;
 - $f$ is differentiable on $(0, \infty)$;

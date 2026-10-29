@@ -73,23 +73,23 @@ The image need not be a direct summand of \(N\).
 
 Take
 \[
-R=\mathbb Z,\qquad M=N=\mathbb Z,
+R=\ZZ,\qquad M=N=\ZZ,
 \qquad
-\varphi:\mathbb Z\to\mathbb Z,\quad \varphi(m)=2m.
+\varphi:\ZZ\to\ZZ,\quad \varphi(m)=2m.
 \]
 Then
 \[
-C=\operatorname{im}\varphi=2\mathbb Z.
+C=\operatorname{im}\varphi=2\ZZ.
 \]
-If \(2\mathbb Z\) were a direct summand of \(\mathbb Z\), then
+If \(2\ZZ\) were a direct summand of \(\ZZ\), then
 \[
-\mathbb Z\cong 2\mathbb Z\oplus L
+\ZZ\cong 2\ZZ\oplus L
 \]
-for some subgroup \(L\). Taking the quotient by \(2\mathbb Z\) would give
+for some subgroup \(L\). Taking the quotient by \(2\ZZ\) would give
 \[
-L\cong \mathbb Z/2\mathbb Z.
+L\cong \ZZ/2\ZZ.
 \]
-But every subgroup of the torsion-free group \(\mathbb Z\) is torsion-free, so no such \(L\) exists. Hence \(2\mathbb Z\) is not a direct summand of \(\mathbb Z\).
+But every subgroup of the torsion-free group \(\ZZ\) is torsion-free, so no such \(L\) exists. Hence \(2\ZZ\) is not a direct summand of \(\ZZ\).
 
 :::
 

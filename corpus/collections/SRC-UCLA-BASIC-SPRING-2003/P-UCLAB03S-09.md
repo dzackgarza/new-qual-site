@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_3(\mathbb R)$ satisfy
+Let $A\in M_3(\RR)$ satisfy
 \[
 \det A=1
 \qquad\text{and}\qquad
@@ -104,7 +104,7 @@ Combining steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} gives
 \[
 \det(I-A)=-\det(I-A).
 \]
-Over $\mathbb R$, this implies
+Over $\RR$, this implies
 \[
 \det(I-A)=0.
 \]

@@ -43,7 +43,7 @@ If $\bar F/F$ were finite, then $\bar F$ would be a finite field of cardinality 
 
 ::: {.pf-step #s1-2}
 
-The multiplicative order of $2$ in $(\mathbb Z/17\mathbb Z)^\times$ is $8$.
+The multiplicative order of $2$ in $(\ZZ/17\ZZ)^\times$ is $8$.
 
 
 ::: pf-proof

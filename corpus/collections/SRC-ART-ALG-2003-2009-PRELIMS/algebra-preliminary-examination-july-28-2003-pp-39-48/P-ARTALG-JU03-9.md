@@ -27,9 +27,9 @@ audit:
 (a) Given a group $G$, state the criteria that make $G$ a solvable group.
 Use your definition to prove that $S_4$ is solvable.
 
-(b) Let $g(x) \in \mathbb{Q}[x]$ have degree 4. Prove or disprove: $g(x)$ is not solvable by radicals.
+(b) Let $g(x) \in \QQ[x]$ have degree 4. Prove or disprove: $g(x)$ is not solvable by radicals.
 
-(c) Let $g(x) \in \mathbb{Q}[x]$ have degree 5. Prove or disprove: $g(x)$ is not solvable by radicals.
+(c) Let $g(x) \in \QQ[x]$ have degree 5. Prove or disprove: $g(x)$ is not solvable by radicals.
 :::
 
 ::: {.solution}
@@ -96,7 +96,7 @@ proves solvability.
 ::: {.pf-step #s3}
 
 The assertion in part (b) is false: every degree-four
-polynomial over $\mathbb Q$ is solvable by radicals.
+polynomial over $\QQ$ is solvable by radicals.
 
 ::: pf-proof
 
@@ -105,7 +105,7 @@ because the base field has characteristic zero. Its Galois group
 acts faithfully on the distinct roots: an automorphism fixing
 all roots fixes their generated field $K$.
 There are at most four distinct roots, so labeling them and fixing
-any unused labels embeds $\operatorname{Gal}(K/\mathbb Q)$ in $S_4$.
+any unused labels embeds $\operatorname{Gal}(K/\QQ)$ in $S_4$.
 This argument includes reducible polynomials and repeated roots.
 
 A subgroup $H$ of a solvable group $G$ is solvable because
@@ -127,14 +127,14 @@ counterexample is $g(x)=x^5-2$.
 
 ::: pf-proof
 
-This polynomial is irreducible over $\mathbb Q$ by Eisenstein's
+This polynomial is irreducible over $\QQ$ by Eisenstein's
 criterion at $2$ [@DF04]. Let $a=\sqrt[5]{2}$, and let $\zeta$
 be a primitive fifth root of unity. Its five roots are
 $a,\zeta a,\zeta^2a,\zeta^3a,\zeta^4a$.
 
 The number $\zeta$ is a root of the quartic
 $x^4+x^3+x^2+x+1$. By step [](#s3){.pf-ref}, all roots of that quartic
-lie in a radical extension of $\mathbb Q$. Choose a radical
+lie in a radical extension of $\QQ$. Choose a radical
 tower ending in a field $M$ containing them. Adjoining $a$ is
 one further radical adjunction, since $a^5=2\in M$.
 The resulting field $M(a)$ contains all five displayed roots of

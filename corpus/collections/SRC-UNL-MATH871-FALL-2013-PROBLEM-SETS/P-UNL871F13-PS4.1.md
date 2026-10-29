@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X=\mathbb R$ with the Euclidean topology and let $Y=\mathbb R$ with the included-point topology whose included point is $0$.
+Let $X=\RR$ with the Euclidean topology and let $Y=\RR$ with the included-point topology whose included point is $0$.
 Define
 \[
 f:X\to Y,\qquad f(t)=t-1.
@@ -81,7 +81,7 @@ The set
 \[
 \{1\}
 \]
-is not open in the Euclidean topology on $X=\mathbb R$.
+is not open in the Euclidean topology on $X=\RR$.
 
 
 ::: pf-proof

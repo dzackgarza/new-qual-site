@@ -25,13 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to[0,\infty)$ be measurable, and let
+Let $f:\RR\to[0,\infty)$ be measurable, and let
 \[
 \varphi:[0,\infty)\to[0,\infty)
 \]
 be nondecreasing and absolutely continuous on $[0,T]$ for every finite $T$. Assume $\varphi(0)=0$. Prove that
 \[
-\int_{\mathbb R}\varphi(f(x))\,dx
+\int_{\RR}\varphi(f(x))\,dx
 =
 \int_0^\infty m(\{x:f(x)>t\})\varphi'(t)\,dt.
 \]
@@ -57,13 +57,13 @@ Substituting $s=f(x)$ gives
 =
 \int_0^\infty \mathbf1_{\{t<f(x)\}}\varphi'(t)\,dt.
 \]
-The integrand is nonnegative and measurable on $\mathbb R\times[0,\infty)$, so Tonelli's theorem yields
+The integrand is nonnegative and measurable on $\RR\times[0,\infty)$, so Tonelli's theorem yields
 \[
 \begin{aligned}
-\int_{\mathbb R}\varphi(f(x))\,dx
-&=\int_{\mathbb R}\int_0^\infty
+\int_{\RR}\varphi(f(x))\,dx
+&=\int_{\RR}\int_0^\infty
 \mathbf1_{\{t<f(x)\}}\varphi'(t)\,dt\,dx\\
-&=\int_0^\infty\int_{\mathbb R}
+&=\int_0^\infty\int_{\RR}
 \mathbf1_{\{f(x)>t\}}\,dx\,\varphi'(t)\,dt\\
 &=\int_0^\infty
 m(\{x:f(x)>t\})\varphi'(t)\,dt.

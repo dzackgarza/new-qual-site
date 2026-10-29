@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SP3LC
 kind: problem
-title: Every linear map $\mathbb{R}^2\to\mathbb{R}^2$ is continuous
+title: Every linear map $\RR^2\to\RR^2$ is continuous
 classification:
   areas:
   - prelim
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that any linear function $L: \mathbb{R}^2 \to \mathbb{R}^2$ is continuous.
+Prove that any linear function $L: \RR^2 \to \RR^2$ is continuous.
 :::
 
 ::: {.solution}
@@ -31,11 +31,11 @@ Let
 \[
 L(x,y)=(ax+by,cx+dy)
 \]
-for some $a,b,c,d\in\mathbb R$.
+for some $a,b,c,d\in\RR$.
 
 ::: pf-proof
 
-A linear map $\mathbb R^2\to\mathbb R^2$ is represented in the standard bases by a $2\times2$ real matrix.
+A linear map $\RR^2\to\RR^2$ is represented in the standard bases by a $2\times2$ real matrix.
 
 :::
 
@@ -46,7 +46,7 @@ A linear map $\mathbb R^2\to\mathbb R^2$ is represented in the standard bases by
 There is a constant $C\ge0$ such that
 \[
 \|L(v)\|\le C\|v\|
-\qquad(v\in\mathbb R^2).
+\qquad(v\in\RR^2).
 \]
 
 ::: pf-proof
@@ -75,7 +75,7 @@ C=\sqrt{a^2+b^2+c^2+d^2}.
 
 ::: pf-step
 
-The map $L$ is continuous at every $v_0\in\mathbb R^2$.
+The map $L$ is continuous at every $v_0\in\RR^2$.
 
 ::: pf-proof
 
@@ -90,7 +90,7 @@ If $C=0$, then $L=0$ and continuity is immediate. Suppose $C>0$. Given $\varepsi
 
 ::: pf-step
 
-Therefore every linear map $\mathbb R^2\to\mathbb R^2$ is continuous.
+Therefore every linear map $\RR^2\to\RR^2$ is continuous.
 
 :::
 

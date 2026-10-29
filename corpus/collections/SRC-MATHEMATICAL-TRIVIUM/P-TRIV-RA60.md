@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Give an example of the $C ^ { \infty } ( \mathbb { R } )$ function f (x) with the following properties:
+Give an example of the $C ^ { \infty } ( \RR )$ function f (x) with the following properties:
 
 $$
 \begin{array} { r l } & { \mathrm { 1 ) } \quad f ^ { ( n ) } ( 0 ) = 1 \mathrm { f o r ~ s o m e } n \geqslant 0 , } \\ & { \mathrm { 2 ) } \quad f ^ { ( i ) } ( 0 ) = 0 , i \geqslant 0 , i \neq n , } \\ & { \mathrm { 3 ) } \quad \displaystyle \int _ { 0 } ^ { \infty } | f ( x ) | d x < \infty . } \end{array}\tag{13}
@@ -36,7 +36,7 @@ $$
 
 Choose a smooth cutoff function
 $$
-\chi\in C_c^\infty(\mathbb R)
+\chi\in C_c^\infty(\RR)
 $$
 such that
 $$
@@ -71,7 +71,7 @@ $$
 
 This is a product of smooth functions, so
 $$
-f\in C^\infty(\mathbb R).
+f\in C^\infty(\RR).
 $$
 Because $\chi$ has compact support, so does $f$.
 

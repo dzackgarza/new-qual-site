@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $n \geq 1$ and consider the ring $M_n(\mathbb{C})$ of $n \times n$ matrices with coefficients in $\mathbb{C}$.
-Suppose that $A \in M_n(\mathbb{C})$ satisfies $A^3 = A$.
-Let $V = \mathbb{C}^n$, an $n$-dimensional vector space over $\mathbb{C}$.
+Let $n \geq 1$ and consider the ring $M_n(\CC)$ of $n \times n$ matrices with coefficients in $\CC$.
+Suppose that $A \in M_n(\CC)$ satisfies $A^3 = A$.
+Let $V = \CC^n$, an $n$-dimensional vector space over $\CC$.
 Thinking of the elements of $V$ as column vectors, consider the linear transformation $\phi: V \to V$ defined by left multiplication by the matrix $A$.
-Prove that $V$ decomposes into a direct sum of three $\mathbb{C}$-linear subspaces, say $V = U_1 \oplus U_2 \oplus U_3$, such that given $v \in V$ with $v = u_1 + u_2 + u_3$ where $u_i \in U_i$, then $\phi(v) = u_1 - u_2$.
+Prove that $V$ decomposes into a direct sum of three $\CC$-linear subspaces, say $V = U_1 \oplus U_2 \oplus U_3$, such that given $v \in V$ with $v = u_1 + u_2 + u_3$ where $u_i \in U_i$, then $\phi(v) = u_1 - u_2$.
 :::
 
 ::: {.solution}
@@ -70,14 +70,14 @@ m_A(t)\mid t(t-1)(t+1).
 :::
 
 ::: {.pf-step #diagonalizable}
-The operator $A$ is diagonalizable over $\mathbb C$, with possible eigenvalues only $1,-1,0$.
+The operator $A$ is diagonalizable over $\CC$, with possible eigenvalues only $1,-1,0$.
 
 ::: pf-proof
 The polynomial
 \[
 t(t-1)(t+1)
 \]
-splits over $\mathbb C$ into three distinct linear factors.
+splits over $\CC$ into three distinct linear factors.
 By step [](#min-poly-divides){.pf-ref}, the minimal polynomial $m_A$ also splits into distinct linear factors.
 A linear operator over a field is diagonalizable if and only if its minimal polynomial splits into distinct linear factors.
 Therefore $A$ is diagonalizable.

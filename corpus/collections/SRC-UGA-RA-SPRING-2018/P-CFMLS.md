@@ -33,18 +33,18 @@ audit:
 ::: {.problem}
 Define
 \[
-E:=\left\{x\in\mathbb R:\left|x-\frac pq\right|<q^{-3}
-\text{ for infinitely many }p,q\in\mathbb N\right\}.
+E:=\left\{x\in\RR:\left|x-\frac pq\right|<q^{-3}
+\text{ for infinitely many }p,q\in\NN\right\}.
 \]
 Prove that $m(E)=0$.
 :::
 
 ::: {.solution}
-Fix $N\in\mathbb N$ and work on the bounded interval $[-N,N]$. For each $q\ge1$, let
+Fix $N\in\NN$ and work on the bounded interval $[-N,N]$. For each $q\ge1$, let
 \[
 E_{q,N}:=\left\{x\in[-N,N]:
 \left|x-\frac pq\right|<q^{-3}
-\text{ for some }p\in\mathbb N\right\}.
+\text{ for some }p\in\NN\right\}.
 \]
 Only numerators with
 \[

@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-For $a \in \mathbb{R}$, let $f_a$ be the function on $\mathbb{R}$ defined by $f_a(x) := e^{iax}$.
+For $a \in \RR$, let $f_a$ be the function on $\RR$ defined by $f_a(x) := e^{iax}$.
 
-(a) Show that $f_a$ is a tempered distribution on $\mathbb{R}$.
+(a) Show that $f_a$ is a tempered distribution on $\RR$.
 
 (b) Find the Fourier transform of $f_a$.
 :::
@@ -41,22 +41,22 @@ Show that $f_a$ defines a tempered distribution.
 
 ::: pf-proof
 
-For $\varphi\in\mathcal S(\mathbb R)$ define
+For $\varphi\in\mathcal S(\RR)$ define
 \[
 \langle T_a,\varphi\rangle
-:=\int_{\mathbb R}e^{iax}\varphi(x)\,dx.
+:=\int_{\RR}e^{iax}\varphi(x)\,dx.
 \]
 Since $|e^{iax}|=1$,
 \[
 |\langle T_a,\varphi\rangle|
-\le \int_{\mathbb R}|\varphi(x)|\,dx.
+\le \int_{\RR}|\varphi(x)|\,dx.
 \]
 For example,
 \[
-\int_{\mathbb R}|\varphi(x)|\,dx
+\int_{\RR}|\varphi(x)|\,dx
 \le
-\left(\int_{\mathbb R}(1+x^2)^{-1}\,dx\right)
-\sup_{x\in\mathbb R}(1+x^2)|\varphi(x)|.
+\left(\int_{\RR}(1+x^2)^{-1}\,dx\right)
+\sup_{x\in\RR}(1+x^2)|\varphi(x)|.
 \]
 Thus $T_a$ is a continuous linear functional on the Schwartz space. Therefore $f_a=e^{iax}$ defines a tempered distribution.
 
@@ -73,19 +73,19 @@ Compute its Fourier transform.
 Use Folland's convention, as authorized by the exam instructions:
 \[
 \widehat\varphi(\xi)
-=\int_{\mathbb R}e^{-2\pi i x\xi}\varphi(x)\,dx.
+=\int_{\RR}e^{-2\pi i x\xi}\varphi(x)\,dx.
 \]
 with Fourier transform of tempered distributions defined by
 \[
 \langle\widehat T,\varphi\rangle
 =\langle T,\widehat\varphi\rangle.
 \]
-Then for $\varphi\in\mathcal S(\mathbb R)$,
+Then for $\varphi\in\mathcal S(\RR)$,
 \[
 \begin{aligned}
 \langle\widehat{T_a},\varphi\rangle
 &=\langle T_a,\widehat\varphi\rangle\\
-&=\int_{\mathbb R}e^{iax}\widehat\varphi(x)\,dx.
+&=\int_{\RR}e^{iax}\widehat\varphi(x)\,dx.
 \end{aligned}
 \]
 Since
@@ -95,7 +95,7 @@ e^{iax}=e^{2\pi i(a/(2\pi))x},
 Fourier inversion gives
 \[
 \varphi\!\left(\frac{a}{2\pi}\right)
-=\int_{\mathbb R}e^{iax}\widehat\varphi(x)\,dx.
+=\int_{\RR}e^{iax}\widehat\varphi(x)\,dx.
 \]
 Hence
 \[

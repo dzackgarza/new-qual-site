@@ -79,7 +79,7 @@ $H_4(M;\ZZ) = \ZZ$ forces $M$ to be closed and orientable.
 If $M$ has nonempty boundary, then $H_4(M;\ZZ) = 0$.
 
 ::: pf-proof
-for a connected compact $4$-manifold with nonempty boundary, absolute top homology vanishes. For example, in the orientable case the relative fundamental class $[M,\partial M]\in H_4(M,\partial M;\mathbb Z)$ has nonzero boundary $[\partial M]$, so exactness of the pair sequence forces $H_4(M;\mathbb Z)=0$; in the nonorientable case absolute top homology is already zero.
+for a connected compact $4$-manifold with nonempty boundary, absolute top homology vanishes. For example, in the orientable case the relative fundamental class $[M,\partial M]\in H_4(M,\partial M;\ZZ)$ has nonzero boundary $[\partial M]$, so exactness of the pair sequence forces $H_4(M;\ZZ)=0$; in the nonorientable case absolute top homology is already zero.
 :::
 
 :::

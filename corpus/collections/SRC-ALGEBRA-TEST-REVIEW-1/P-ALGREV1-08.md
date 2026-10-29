@@ -55,7 +55,7 @@ It can fail when $H$ is nontrivial.
 
 Take the additive group
 $$
-G=\mathbb Z_4
+G=\ZZ_4
 $$
 and the subgroup
 $$

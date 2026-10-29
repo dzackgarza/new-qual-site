@@ -27,7 +27,7 @@ Show that each of the following is a covering map.
 
 1. The quotient map
    \[
-   \mathbb R\longrightarrow \mathbb R/\mathbb Z.
+   \RR\longrightarrow \RR/\ZZ.
    \]
 
 2. For $n\ge1$, the map
@@ -38,7 +38,7 @@ Show that each of the following is a covering map.
 
 3. A finite product of covering maps; for example,
    \[
-   \mathbb R^n\longrightarrow(\mathbb R/\mathbb Z)^n=\mathbb R^n/\mathbb Z^n.
+   \RR^n\longrightarrow(\RR/\ZZ)^n=\RR^n/\ZZ^n.
    \]
 
 4. The quotient map
@@ -63,11 +63,11 @@ is a homeomorphism.
 
 ::: {.pf-step #s1}
 
-The quotient map $q:\mathbb R\to\mathbb R/\mathbb Z$ is a covering map.
+The quotient map $q:\RR\to\RR/\ZZ$ is a covering map.
 
 ::: pf-proof
 
-Fix $[x]\in\mathbb R/\mathbb Z$ and set
+Fix $[x]\in\RR/\ZZ$ and set
 \[
 I=(x-1/4,x+1/4),
 \qquad
@@ -82,7 +82,7 @@ is injective; it is also an open continuous surjection, hence a homeomorphism.
 
 Moreover,
 \[
-q^{-1}(U)=\coprod_{k\in\mathbb Z}(I+k).
+q^{-1}(U)=\coprod_{k\in\ZZ}(I+k).
 \]
 The intervals $I+k$ are pairwise disjoint, and translation by $k$ followed by $q$ shows that
 \[
@@ -174,9 +174,9 @@ and on each component
 \]
 which is a homeomorphism onto $U_1\times U_2$.
 
-Taking the $n$-fold product of the covering $\mathbb R\to\mathbb R/\mathbb Z$ from step [](#s1){.pf-ref} gives
+Taking the $n$-fold product of the covering $\RR\to\RR/\ZZ$ from step [](#s1){.pf-ref} gives
 \[
-\mathbb R^n\to(\mathbb R/\mathbb Z)^n.
+\RR^n\to(\RR/\ZZ)^n.
 \]
 
 :::

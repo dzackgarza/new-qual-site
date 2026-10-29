@@ -173,11 +173,11 @@ The two \(\Delta\)-complexes meet in the single common \(0\)-simplex \(v_0\). Th
 
 The sphere chain groups are
 \[
-C_2(S^2)\cong\mathbb Z^2,
+C_2(S^2)\cong\ZZ^2,
 \qquad
-C_1(S^2)\cong\mathbb Z^3,
+C_1(S^2)\cong\ZZ^3,
 \qquad
-C_0(S^2)\cong\mathbb Z^3.
+C_0(S^2)\cong\ZZ^3.
 \]
 
 
@@ -221,7 +221,7 @@ This vanishes exactly when \(x=y\).
 Hence
 \[
 \boxed{
-H_2(S^2)\cong\mathbb Z}.
+H_2(S^2)\cong\ZZ}.
 \]
 
 
@@ -305,9 +305,9 @@ Therefore
 \boxed{
 H_1(T^2)
 \cong
-\mathbb Z^3/\langle a+b-c\rangle
+\ZZ^3/\langle a+b-c\rangle
 \cong
-\mathbb Z^2}.
+\ZZ^2}.
 \]
 
 
@@ -315,7 +315,7 @@ H_1(T^2)
 
 By step [](#s1-12){.pf-ref},
 \[
-\ker\partial_1=C_1\cong\mathbb Z^3.
+\ker\partial_1=C_1\cong\ZZ^3.
 \]
 Quotient by the rank-one subgroup from step [](#s1-13){.pf-ref}. Since the relation has primitive coefficients, the quotient is free of rank \(2\).
 
@@ -350,7 +350,7 @@ The boundary vanishes exactly when \(y=-x\).
 Hence
 \[
 \boxed{
-H_2(T^2)\cong\mathbb Z}.
+H_2(T^2)\cong\ZZ}.
 \]
 
 
@@ -416,7 +416,7 @@ Homology of a direct sum of chain complexes is the direct sum of their homology 
 Hence
 \[
 \boxed{
-H_2(X)\cong\mathbb Z^2}.
+H_2(X)\cong\ZZ^2}.
 \]
 
 
@@ -426,7 +426,7 @@ By steps [](#s1-10){.pf-ref} and [](#s1-16){.pf-ref}, and [](#s1-18){.pf-ref},
 \[
 H_2(X)
 \cong
-\mathbb Z\oplus\mathbb Z.
+\ZZ\oplus\ZZ.
 \]
 
 :::
@@ -438,7 +438,7 @@ H_2(X)
 Also,
 \[
 \boxed{
-H_1(X)\cong\mathbb Z^2}.
+H_1(X)\cong\ZZ^2}.
 \]
 
 
@@ -448,7 +448,7 @@ By steps [](#s1-11){.pf-ref} and [](#s1-14){.pf-ref}, and [](#s1-18){.pf-ref},
 \[
 H_1(X)
 \cong
-0\oplus\mathbb Z^2.
+0\oplus\ZZ^2.
 \]
 
 :::
@@ -460,7 +460,7 @@ H_1(X)
 Since \(X\) is connected,
 \[
 \boxed{
-H_0(X)\cong\mathbb Z}.
+H_0(X)\cong\ZZ}.
 \]
 
 
@@ -494,11 +494,11 @@ The \(\Delta\)-complex has no simplices in dimensions \(>2\).
 Therefore
 \[
 \boxed{
-H_k(X;\mathbb Z)
+H_k(X;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z^2,&k=1,2,\\
+\ZZ,&k=0,\\
+\ZZ^2,&k=1,2,\\
 0,&k\ge3.
 \end{cases}}
 \]

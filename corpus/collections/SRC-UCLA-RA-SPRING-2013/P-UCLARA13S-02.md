@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the Hilbert space $\ell^2(\mathbb Z)$.
+Consider the Hilbert space $\ell^2(\ZZ)$.
 Show that the Borel $\sigma$-algebra associated to the norm topology agrees with the Borel $\sigma$-algebra associated to the weak topology.
 :::
 
@@ -55,7 +55,7 @@ The weak topology is coarser than the norm topology because every continuous lin
 
 ::: {.pf-step #s1-2}
 
-For every fixed $x\in\ell^2(\mathbb Z)$, the map
+For every fixed $x\in\ell^2(\ZZ)$, the map
 \[
 y\longmapsto\|y-x\|_2^2
 \]
@@ -64,7 +64,7 @@ is $\mathcal B_{\mathrm w}$-measurable.
 
 ::: pf-proof
 
-Let $(e_k)_{k\in\mathbb Z}$ be the standard orthonormal basis. For each $k$, the coordinate map
+Let $(e_k)_{k\in\ZZ}$ be the standard orthonormal basis. For each $k$, the coordinate map
 \[
 y\longmapsto
 \langle y-x,e_k\rangle
@@ -73,9 +73,9 @@ is weakly continuous, hence weak-Borel measurable.
 
 Choose an increasing sequence of finite sets
 \[
-F_1\subset F_2\subset\cdots\subset\mathbb Z,
+F_1\subset F_2\subset\cdots\subset\ZZ,
 \qquad
-\bigcup_{n=1}^\infty F_n=\mathbb Z.
+\bigcup_{n=1}^\infty F_n=\ZZ.
 \]
 Define
 \[
@@ -88,7 +88,7 @@ Each $S_n$ is $\mathcal B_{\mathrm w}$-measurable as a finite sum of measurable 
 \[
 S_n(y)
 \longrightarrow
-\sum_{k\in\mathbb Z}
+\sum_{k\in\ZZ}
 |\langle y-x,e_k\rangle|^2
 =
 \|y-x\|_2^2.
@@ -101,12 +101,12 @@ A pointwise limit of measurable functions is measurable.
 
 ::: {.pf-step #s1-3}
 
-Every norm-open ball in $\ell^2(\mathbb Z)$ belongs to $\mathcal B_{\mathrm w}$.
+Every norm-open ball in $\ell^2(\ZZ)$ belongs to $\mathcal B_{\mathrm w}$.
 
 
 ::: pf-proof
 
-For $x\in\ell^2(\mathbb Z)$ and $r>0$,
+For $x\in\ell^2(\ZZ)$ and $r>0$,
 \[
 B(x,r)
 =
@@ -126,12 +126,12 @@ belongs to $\mathcal B_{\mathrm w}$.
 
 ::: {.pf-step #s1-4}
 
-Every norm-open subset of $\ell^2(\mathbb Z)$ belongs to $\mathcal B_{\mathrm w}$.
+Every norm-open subset of $\ell^2(\ZZ)$ belongs to $\mathcal B_{\mathrm w}$.
 
 
 ::: pf-proof
 
-The norm topology on $\ell^2(\mathbb Z)$ is separable. For example, finitely supported sequences with rational real and imaginary parts form a countable dense subset.
+The norm topology on $\ell^2(\ZZ)$ is separable. For example, finitely supported sequences with rational real and imaginary parts form a countable dense subset.
 
 Every open subset of a separable metric space is a countable union of open balls: choose a countable base consisting of balls with centers in a fixed countable dense set and rational radii. By step [](#s1-3){.pf-ref}, each such ball belongs to $\mathcal B_{\mathrm w}$, and therefore so does every countable union of them.
 

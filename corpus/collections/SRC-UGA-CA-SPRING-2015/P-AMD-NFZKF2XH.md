@@ -185,7 +185,7 @@ For any $c \in (0, 1)$, $\frac{1}{2\pi}\int_0^{2\pi} \frac{d\theta}{|1 - c e^{i\
 
 ::: pf-proof
 Write $\frac{1}{1-c e^{i\theta}} = \sum_{k=0}^\infty c^k e^{ik\theta}$.
-By Parseval's identity / orthogonality of $\{e^{ik\theta}\}_{k\in\mathbb{Z}}$, $\frac{1}{2\pi}\int_0^{2\pi} \left|\sum_{k=0}^\infty c^k e^{ik\theta}\right|^2 d\theta = \sum_{k=0}^\infty (c^k)^2 = \sum_{k=0}^\infty c^{2k} = \frac{1}{1-c^2}$.
+By Parseval's identity / orthogonality of $\{e^{ik\theta}\}_{k\in\ZZ}$, $\frac{1}{2\pi}\int_0^{2\pi} \left|\sum_{k=0}^\infty c^k e^{ik\theta}\right|^2 d\theta = \sum_{k=0}^\infty (c^k)^2 = \sum_{k=0}^\infty c^{2k} = \frac{1}{1-c^2}$.
 :::
 
 :::
@@ -338,7 +338,7 @@ Vieta's formulas for $z^2 + 2wz + 1 = 0$.
 :::
 
 ::: pf-step
-Since $w \in \mathbb{H}$, $w \notin [-1, 1]$, so $w^2 - 1 \neq 0$ and the two roots are distinct and neither has modulus $1$ (if $|z|=1$ with $z=e^{i\theta}$, then $-\frac{1}{2}(e^{i\theta}+e^{-i\theta}) = -\cos\theta \in [-1,1] \subset \mathbb{R}$, which has imaginary part $0$).
+Since $w \in \mathbb{H}$, $w \notin [-1, 1]$, so $w^2 - 1 \neq 0$ and the two roots are distinct and neither has modulus $1$ (if $|z|=1$ with $z=e^{i\theta}$, then $-\frac{1}{2}(e^{i\theta}+e^{-i\theta}) = -\cos\theta \in [-1,1] \subset \RR$, which has imaginary part $0$).
 
 ::: pf-proof
 Modulus 1 points map to the real interval $[-1, 1]$.
@@ -387,7 +387,7 @@ Exactly one of the two quadratic roots lies in $\mathbb{D}^+$.
 By steps [](#s6){.pf-ref} and [](#s8){.pf-ref}, $f$ is a holomorphic bijection from $\mathbb{D}^+$ to $\mathbb{H}$, hence a biholomorphism / conformal map.
 
 ::: pf-proof
-A bijective holomorphic function between open domains in $\mathbb{C}$ has a holomorphic inverse.
+A bijective holomorphic function between open domains in $\CC$ has a holomorphic inverse.
 :::
 
 :::

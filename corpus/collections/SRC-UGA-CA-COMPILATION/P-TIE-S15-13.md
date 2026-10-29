@@ -33,7 +33,7 @@ Compute the following integrals.
 
 (i) $\displaystyle\int_0^\infty \frac{1}{(1+x^n)^2}\,dx$, $n \ge 1$
 
-(ii) $\displaystyle\int_0^\infty \frac{\cos x}{(x^2+a^2)^2}\,dx$, $a \in \mathbb{R}$, $a \neq 0$
+(ii) $\displaystyle\int_0^\infty \frac{\cos x}{(x^2+a^2)^2}\,dx$, $a \in \RR$, $a \neq 0$
 
 (iii) $\displaystyle\int_0^\pi \frac{1}{a + \sin\theta}\,d\theta$, $a > 1$
 
@@ -41,7 +41,7 @@ Compute the following integrals.
 
 (v) $\displaystyle\int_{\abs{z}=2} \frac{1}{(z^5-1)(z-3)}\,dz$
 
-(vi) $\displaystyle\int_{-\infty}^\infty \frac{\sin \pi a}{\cosh \pi x + \cos \pi a}\,e^{-ix\xi}\,dx$, $0 < a < 1$, $\xi \in \mathbb{R}$
+(vi) $\displaystyle\int_{-\infty}^\infty \frac{\sin \pi a}{\cosh \pi x + \cos \pi a}\,e^{-ix\xi}\,dx$, $0 < a < 1$, $\xi \in \RR$
 
 (vii) $\displaystyle\int_{\abs{z}=1} \cot^2 z\,dz$.
 :::

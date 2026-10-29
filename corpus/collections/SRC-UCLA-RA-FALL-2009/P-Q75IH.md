@@ -30,13 +30,13 @@ audit:
 ---
 
 ::: {.problem}
-Prove the following variant of the Lebesgue differentiation theorem: Let $\mu$ be a finite Borel measure on $\mathbb{R}$, singular with respect to Lebesgue measure.
-Then for Lebesgue almost every $x\in\mathbb{R}$, $$\lim_{\epsilon\to 0} \frac{\mu([x-\epsilon,x+\epsilon])}{2\epsilon} = 0.$$
+Prove the following variant of the Lebesgue differentiation theorem: Let $\mu$ be a finite Borel measure on $\RR$, singular with respect to Lebesgue measure.
+Then for Lebesgue almost every $x\in\RR$, $$\lim_{\epsilon\to 0} \frac{\mu([x-\epsilon,x+\epsilon])}{2\epsilon} = 0.$$
 :::
 
 ::: {.solution}
 Let $m$ denote Lebesgue measure.
-For a finite positive Borel measure $\nu$ on $\mathbb R$, define its centered maximal function by
+For a finite positive Borel measure $\nu$ on $\RR$, define its centered maximal function by
 \[
 M\nu(x)
 =\sup_{r>0}\frac{\nu([x-r,x+r])}{2r}.
@@ -49,7 +49,7 @@ M\nu(x)
 For every finite positive Borel measure $\nu$ and every $t>0$,
 \[
 m\{x:M\nu(x)>t\}
-\le\frac{3\nu(\mathbb R)}{t}.
+\le\frac{3\nu(\RR)}{t}.
 \]
 
 ::: pf-proof
@@ -102,7 +102,7 @@ It follows that
 m(F)
 &\le3\sum_{j=1}^N|I_j|\\
 &<\frac3t\sum_{j=1}^N\nu(I_j)\\
-&\le\frac{3\nu(\mathbb R)}t,
+&\le\frac{3\nu(\RR)}t,
 \end{aligned}
 \]
 because the selected intervals are disjoint.
@@ -114,29 +114,29 @@ Taking the supremum over compact $F\subseteq E_t$ proves the claim.
 
 ::: {.pf-step #s2}
 
-Since $\mu\perp m$, there is a Borel set $N\subseteq\mathbb R$ such that
+Since $\mu\perp m$, there is a Borel set $N\subseteq\RR$ such that
 \[
 m(N)=0
 \qquad\text{and}\qquad
-\mu(\mathbb R\setminus N)=0.
+\mu(\RR\setminus N)=0.
 \]
 For every $\delta>0$, there is a compact set $K\subseteq N$ such that
 \[
-\mu(\mathbb R\setminus K)<\delta.
+\mu(\RR\setminus K)<\delta.
 \]
 
 ::: pf-proof
 
 The first assertion is the definition of singularity of $\mu$ with respect to Lebesgue measure.
 
-A finite Borel measure on $\mathbb R$ is regular, so it is inner regular on the Borel set $N$.
+A finite Borel measure on $\RR$ is regular, so it is inner regular on the Borel set $N$.
 Thus, for every $\delta>0$, there is compact $K\subseteq N$ with
 \[
 \mu(N\setminus K)<\delta.
 \]
-Since $\mu(\mathbb R\setminus N)=0$,
+Since $\mu(\RR\setminus N)=0$,
 \[
-\mu(\mathbb R\setminus K)
+\mu(\RR\setminus K)
 =\mu(N\setminus K)
 <\delta.
 \]
@@ -173,7 +173,7 @@ where
 \]
 Then
 \[
-\nu(\mathbb R)=\mu(\mathbb R\setminus K)<\delta.
+\nu(\RR)=\mu(\RR\setminus K)<\delta.
 \]
 
 If $x\notin K$, compactness of $K$ gives
@@ -204,7 +204,7 @@ Applying step [](#s1){.pf-ref} to $\nu$ gives
 \[
 m\{D^*\mu>t\}
 \le
-\frac{3\nu(\mathbb R)}t
+\frac{3\nu(\RR)}t
 <\frac{3\delta}t.
 \]
 
@@ -251,7 +251,7 @@ Each set on the right has Lebesgue measure zero by step [](#s4){.pf-ref}, so the
 
 ::: pf-step
 
-Therefore, for Lebesgue almost every $x\in\mathbb R$,
+Therefore, for Lebesgue almost every $x\in\RR$,
 \[
 \boxed{
 \lim_{\epsilon\to0}

@@ -24,7 +24,7 @@ $$
 
 show that the complex zeros of sin πz are exactly at the integers, and that they are each of order 1.
 
-Calculate the residue of 1/ sin πz at $z = n \in \mathbb { Z }$
+Calculate the residue of 1/ sin πz at $z = n \in \ZZ$
 :::
 
 ::: {.solution}
@@ -38,9 +38,9 @@ Write $z=x+iy$. Then
 \[
 e^{2\pi i z}=e^{2\pi i x}e^{-2\pi y}.
 \]
-If this equals $1$, its modulus is $1$, so $e^{-2\pi y}=1$ and hence $y=0$. Then $e^{2\pi i x}=1$, so $x\in\mathbb Z$. Thus the zeros are exactly the integers.
+If this equals $1$, its modulus is $1$, so $e^{-2\pi y}=1$ and hence $y=0$. Then $e^{2\pi i x}=1$, so $x\in\ZZ$. Thus the zeros are exactly the integers.
 
-At $z=n\in\mathbb Z$,
+At $z=n\in\ZZ$,
 \[
 \frac{d}{dz}\sin\pi z=\pi\cos\pi z=\pi(-1)^n\ne0,
 \]

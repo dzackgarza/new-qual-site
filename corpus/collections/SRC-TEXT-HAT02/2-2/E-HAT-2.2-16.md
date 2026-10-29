@@ -135,7 +135,7 @@ Since the full simplex has zero reduced homology, the quotient $Z_i/B_i$ is zero
 
 In degree $k$,
 \[
-\widetilde H_k(K)\cong\mathbb Z^{\binom{n}{k+1}}.
+\widetilde H_k(K)\cong\ZZ^{\binom{n}{k+1}}.
 \]
 
 ::: pf-proof
@@ -158,7 +158,7 @@ Therefore
 \widetilde H_i((\Delta^n)^k)=
 \begin{cases}
 0,&i<k,\\
-\mathbb Z^{\binom{n}{k+1}},&i=k.
+\ZZ^{\binom{n}{k+1}},&i=k.
 \end{cases}}
 \]
 

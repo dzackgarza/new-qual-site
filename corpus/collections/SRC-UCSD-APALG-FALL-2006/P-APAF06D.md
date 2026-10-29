@@ -59,7 +59,7 @@ Since $x^3=1$, the left side is $y$, so $y^{n^3}=y$ and hence $y^{n^3-1}=1$.
 
 If $n=1$, then
 \[
-G_1\cong C_3\times\mathbb Z,
+G_1\cong C_3\times\ZZ,
 \]
 so $G_1$ is infinite.
 
@@ -102,7 +102,7 @@ Thus $|G_n|\le3m$.
 
 There is a permutation representation of $G_n$ on
 \[
-\Omega=(\mathbb Z/3\mathbb Z)\times(\mathbb Z/m\mathbb Z)
+\Omega=(\ZZ/3\ZZ)\times(\ZZ/m\ZZ)
 \]
 defined by
 \[

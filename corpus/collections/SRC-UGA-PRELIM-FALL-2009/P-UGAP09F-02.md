@@ -30,7 +30,7 @@ f(x,y,z)=x\sin(y+z)
 \]
 over the region
 \[
-R=\{(x,y,z)\in\mathbb R^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
+R=\{(x,y,z)\in\RR^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
 \]
 :::
 

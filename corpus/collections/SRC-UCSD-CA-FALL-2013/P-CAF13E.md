@@ -13,25 +13,25 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Prove that the function $f(z) = \left(\frac{1 + \sqrt{z}}{1 - \sqrt{z}}\right)^2$ is a conformal bijection mapping $\mathbb{C}_-$ onto $\mathbb{D} \setminus [0, 1)$.
+(a) Prove that the function $f(z) = \left(\frac{1 + \sqrt{z}}{1 - \sqrt{z}}\right)^2$ is a conformal bijection mapping $\CC_-$ onto $\mathbb{D} \setminus [0, 1)$.
 
-(b) Let $f(z) = \frac{az + b}{cz + d}$ with $a, b, c, d \in \mathbb{R}$ and $ad - bc < 0$.
-Show that $f$ is a conformal bijection from $\mathbb{C}_+$ onto $\mathbb{C}_-$.
+(b) Let $f(z) = \frac{az + b}{cz + d}$ with $a, b, c, d \in \RR$ and $ad - bc < 0$.
+Show that $f$ is a conformal bijection from $\CC_+$ onto $\CC_-$.
 :::
 
 ::: {.remark}
-The official Fall 2013 UCSD exam has $\mathbb C_-$ in part (a). An earlier
-transcription of this card incorrectly had $\mathbb C_+$.
+The official Fall 2013 UCSD exam has $\CC_-$ in part (a). An earlier
+transcription of this card incorrectly had $\CC_+$.
 :::
 
 ::: {.solution}
-For part (a), use on $\mathbb C_-$ the square-root branch determined by
+For part (a), use on $\CC_-$ the square-root branch determined by
 \[
 \pi<\arg z<2\pi,
 \qquad
 \sqrt z=|z|^{1/2}e^{i\arg z/2}.
 \]
-This maps $\mathbb C_-$ conformally onto the second quadrant
+This maps $\CC_-$ conformally onto the second quadrant
 \[
 Q=\{w:\operatorname{Re}w<0,\ \operatorname{Im}w>0\}.
 \]
@@ -56,7 +56,7 @@ so this is the required conformal bijection.
 For part (b), let
 \[
 T(z)=\frac{az+b}{cz+d},
-\qquad a,b,c,d\in\mathbb R,\quad ad-bc<0.
+\qquad a,b,c,d\in\RR,\quad ad-bc<0.
 \]
 Its derivative is
 \[
@@ -70,5 +70,5 @@ so it is conformal away from its real pole. A direct computation gives
 Thus $\operatorname{Im}z>0$ implies $\operatorname{Im}T(z)<0$. Since a real
 Möbius transformation is a bijection of the Riemann sphere preserving the real
 circle, it maps one of the two complementary half-planes bijectively onto the
-other; the sign calculation shows that $\mathbb C_+$ maps onto $\mathbb C_-$.
+other; the sign calculation shows that $\CC_+$ maps onto $\CC_-$.
 :::

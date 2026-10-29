@@ -40,7 +40,7 @@ whereas the $p$-primary subgroup of
 \]
 is
 \[
-\mathbb Z/p.
+\ZZ/p.
 \]
 
 
@@ -56,7 +56,7 @@ problem:
 \[
 \pi_{2p}(S^3)_{(p)}
 \cong
-\mathbb Z/p.
+\ZZ/p.
 \]
 The general Whitehead-tower argument gives the displayed shift
 \[
@@ -101,7 +101,7 @@ homotopy groups of $S^n$ occurs in
 and its $7$-primary subgroup there is
 \[
 \boxed{
-\mathbb Z/7.
+\ZZ/7.
 }
 \]
 
@@ -121,7 +121,7 @@ while
 \]
 contains a unique first $7$-primary subgroup isomorphic to
 \[
-\mathbb Z/7.
+\ZZ/7.
 \]
 
 :::
@@ -136,7 +136,7 @@ For $S^2$, the first $7$-torsion occurs instead in
 \pi_{14}(S^2),
 }
 \]
-whose $7$-primary subgroup is $\mathbb Z/7$.
+whose $7$-primary subgroup is $\ZZ/7$.
 
 
 ::: pf-proof
@@ -168,7 +168,7 @@ occurs at
 \[
 i=2p=14
 \]
-and is $\mathbb Z/7$. The same is therefore true for $S^2$.
+and is $\ZZ/7$. The same is therefore true for $S^2$.
 
 :::
 
@@ -183,7 +183,7 @@ For $S^1$, no homotopy group contains $7$-torsion.
 
 One has
 \[
-\pi_1(S^1)\cong\mathbb Z
+\pi_1(S^1)\cong\ZZ
 \]
 and
 \[
@@ -203,7 +203,7 @@ For the usual range $n\ge3$, step [](#s1-3){.pf-ref} gives the answer
 \[
 \pi_{n+11}(S^n)
 \]
-with first $7$-primary subgroup $\mathbb Z/7$. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} record
+with first $7$-primary subgroup $\ZZ/7$. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} record
 the low-dimensional exceptions.
 
 :::

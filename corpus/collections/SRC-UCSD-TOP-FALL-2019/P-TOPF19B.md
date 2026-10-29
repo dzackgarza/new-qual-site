@@ -73,7 +73,7 @@ $$\boxed{G_{\,1+m(n-1)}}.$$
 
 ::: pf-proof
 
-The subgroup is the fundamental group of the covering surface from step [](#s2){.pf-ref}, whose genus is determined by step [](#s3){.pf-ref}. Thus all such subgroups have the same isomorphism type. Existence follows, for example, from the epimorphism $G_n\to\mathbb Z/m$ sending $a_1\mapsto1$ and all other standard generators to $0$; its kernel has index $m$.
+The subgroup is the fundamental group of the covering surface from step [](#s2){.pf-ref}, whose genus is determined by step [](#s3){.pf-ref}. Thus all such subgroups have the same isomorphism type. Existence follows, for example, from the epimorphism $G_n\to\ZZ/m$ sending $a_1\mapsto1$ and all other standard generators to $0$; its kernel has index $m$.
 
 :::
 

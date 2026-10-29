@@ -55,7 +55,7 @@ All disk automorphisms fixing $a$ are therefore
 \boxed{
 F_\theta(z)
 =\phi_a^{-1}\!\left(e^{i\theta}\phi_a(z)\right),
-\qquad \theta\in\mathbb R.
+\qquad \theta\in\RR.
 }
 \]
 :::

@@ -18,13 +18,13 @@ audit:
 
 ::: pf-step
 
-Prove that every connected subset $A\subset\mathbb R$ is arcwise connected.
+Prove that every connected subset $A\subset\RR$ is arcwise connected.
 
 :::
 
 ::: pf-step
 
-Give an example of a connected subset of $\mathbb R^2$ that is not arcwise connected.
+Give an example of a connected subset of $\RR^2$ that is not arcwise connected.
 
 :::
 
@@ -38,7 +38,7 @@ Give an example of a connected subset of $\mathbb R^2$ that is not arcwise conne
 
 ::: {.pf-step #p2-s1}
 
-Let $A\subseteq\mathbb R$ be connected and let
+Let $A\subseteq\RR$ be connected and let
 \[
 x,y\in A
 \]
@@ -89,7 +89,7 @@ Therefore every point between $x$ and $y$ belongs to $A$.
 
 ::: {.pf-step #p2-s2}
 
-Every connected subset of $\mathbb R$ is arcwise connected.
+Every connected subset of $\RR$ is arcwise connected.
 
 ::: pf-proof
 
@@ -172,7 +172,7 @@ The interval
 is connected.
 The map
 \[
-\phi:(0,1]\to\mathbb R^2,
+\phi:(0,1]\to\RR^2,
 \qquad
 \phi(x)
 =
@@ -217,7 +217,7 @@ y\in[-1,1].
 \]
 Choose
 \[
-\theta\in\mathbb R
+\theta\in\RR
 \]
 with
 \[

@@ -16,22 +16,22 @@ audit:
 ---
 
 ::: {.exercise}
-22. Let $\mathbb { N } = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers.
-    A subset $S \subset \mathbb { N }$ is said to be in arithmetic progression if
+22. Let $\NN = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers.
+    A subset $S \subset \NN$ is said to be in arithmetic progression if
 
 $$
 S = \{a, a + d, a + 2 d, a + 3 d, \dots \}
 $$
 
-where $a , d \in \mathbb { N } .$ . Here d is called the step of S.
+where $a , d \in \NN .$ . Here d is called the step of S.
 
-Show that N cannot be partitioned into a finite number of subsets that are in arithmetic progression with distinct steps (except for the trivial case $a = d = 1 )$ . [Hint: Write $\sum { _ { n \in \mathbb { N } } z ^ { n } }$ as a sum of terms of the type ${ \frac { z ^ { a } } { 1 - z ^ { d } } } . ]$
+Show that N cannot be partitioned into a finite number of subsets that are in arithmetic progression with distinct steps (except for the trivial case $a = d = 1 )$ . [Hint: Write $\sum { _ { n \in \NN } z ^ { n } }$ as a sum of terms of the type ${ \frac { z ^ { a } } { 1 - z ^ { d } } } . ]$
 :::
 
 ::: {.solution}
 Suppose
 \[
-\mathbb N=S_1\sqcup\cdots\sqcup S_r,
+\NN=S_1\sqcup\cdots\sqcup S_r,
 \qquad
 S_j=\{a_j+k d_j:k\ge0\},
 \]
@@ -53,5 +53,5 @@ On the right, a denominator $1-z^{d_j}$ vanishes at $\zeta$ exactly when $D\mid 
 \]
 The other terms are regular at $\zeta$, so the right side has a pole at $\zeta$, contradicting regularity of the left side.
 
-Therefore $D=1$. Since the steps are distinct positive integers, there is only one progression, and its step is $1$. A progression $\{a,a+1,a+2,\ldots\}$ equals all of $\mathbb N$ only when $a=1$. Thus the only such partition is the trivial one $a=d=1$.
+Therefore $D=1$. Since the steps are distinct positive integers, there is only one progression, and its step is $1$. A progression $\{a,a+1,a+2,\ldots\}$ equals all of $\NN$ only when $a=1$. Thus the only such partition is the trivial one $a=d=1$.
 :::

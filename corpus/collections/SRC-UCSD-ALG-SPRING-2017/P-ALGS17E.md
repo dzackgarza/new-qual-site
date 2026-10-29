@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $J$ be an $n \times n$ Jordan block with eigenvalue $\lambda \in \mathbb{C}$.
+Let $J$ be an $n \times n$ Jordan block with eigenvalue $\lambda \in \CC$.
 
 (a) Suppose that $\lambda \neq 0$.
 Show that the Jordan canonical form of $J^2$ is an $n \times n$ Jordan block with eigenvalue $\lambda^2$.

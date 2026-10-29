@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $M^4$ be a closed connected simply-connected 4-manifold.
-Show that $H_1(M; \mathbb{Z}) = H_3(M; \mathbb{Z}) = 0$ and that $H_2(M; \mathbb{Z})$ is a free abelian group.
+Show that $H_1(M; \ZZ) = H_3(M; \ZZ) = 0$ and that $H_2(M; \ZZ)$ is a free abelian group.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Show that $H_1(M; \mathbb{Z}) = H_3(M; \mathbb{Z}) = 0$ and that $H_2(M; \mathbb
 ::: {.pf-step #h1-zero}
 Since $M$ is simply connected,
 $$
-H_1(M;\mathbb Z)=0.
+H_1(M;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -36,7 +36,7 @@ The first homology group is the abelianization of the fundamental group.
 ::: pf-step
 The manifold is orientable and
 $$
-H_3(M;\mathbb Z)=0.
+H_3(M;\ZZ)=0.
 $$
 
 ::: pf-proof
@@ -46,7 +46,7 @@ H_3(M)\cong H^1(M),
 $$
 and the universal coefficient theorem gives
 $$
-H^1(M)\cong\operatorname{Hom}(H_1(M),\mathbb Z)=0.
+H^1(M)\cong\operatorname{Hom}(H_1(M),\ZZ)=0.
 $$
 :::
 
@@ -55,7 +55,7 @@ $$
 ::: {.pf-step #h2-cohomology-iso}
 Poincaré duality gives
 $$
-H_2(M;\mathbb Z)\cong H^2(M;\mathbb Z).
+H_2(M;\ZZ)\cong H^2(M;\ZZ).
 $$
 
 ::: pf-proof
@@ -65,20 +65,20 @@ Cap product with the fundamental class is an isomorphism in the closed orientabl
 :::
 
 ::: {.pf-step #h2-cohomology-free}
-The group $H^2(M;\mathbb Z)$ is free abelian.
+The group $H^2(M;\ZZ)$ is free abelian.
 
 ::: pf-proof
 The universal coefficient theorem gives
 $$
-0\to\operatorname{Ext}(H_1(M),\mathbb Z)\to H^2(M)\to\operatorname{Hom}(H_2(M),\mathbb Z)\to0.
+0\to\operatorname{Ext}(H_1(M),\ZZ)\to H^2(M)\to\operatorname{Hom}(H_2(M),\ZZ)\to0.
 $$
-The first term is zero by step [](#h1-zero){.pf-ref}, so $H^2(M)$ is isomorphic to $\operatorname{Hom}(H_2(M),\mathbb Z)$, which is free abelian because $H_2(M)$ is finitely generated.
+The first term is zero by step [](#h1-zero){.pf-ref}, so $H^2(M)$ is isomorphic to $\operatorname{Hom}(H_2(M),\ZZ)$, which is free abelian because $H_2(M)$ is finitely generated.
 :::
 
 :::
 
 ::: pf-step
-Therefore $H_2(M;\mathbb Z)$ is free abelian.
+Therefore $H_2(M;\ZZ)$ is free abelian.
 
 ::: pf-proof
 Combine the isomorphism in step [](#h2-cohomology-iso){.pf-ref} with step [](#h2-cohomology-free){.pf-ref}.

@@ -48,13 +48,13 @@ Define
 \boxed{
 \mathcal B_Y
 =
-\{B_n\cap Y:n\in\mathbb N\}}.
+\{B_n\cap Y:n\in\NN\}}.
 \]
 
 
 ::: pf-proof
 
-This is a countable family because it is indexed by \(\mathbb N\).
+This is a countable family because it is indexed by \(\NN\).
 
 :::
 

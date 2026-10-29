@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $n$ be a positive integer and let $\alpha,\beta\in\mathbb R\setminus\{0\}$.
+Let $n$ be a positive integer and let $\alpha,\beta\in\RR\setminus\{0\}$.
 Prove that the number of roots, counted with multiplicity, of
 \[
 z^{2n}+\alpha^2z^{2n-1}+\beta^2=0

@@ -31,7 +31,7 @@ $$
 
 ::: pf-proof
 
-The antipodal map is the restriction to $S^n\subset\mathbb R^{n+1}$ of the linear map $-I_{n+1}$. The degree of the restriction of an invertible linear map to the unit sphere is the sign of its determinant, here
+The antipodal map is the restriction to $S^n\subset\RR^{n+1}$ of the linear map $-I_{n+1}$. The degree of the restriction of an invertible linear map to the unit sphere is the sign of its determinant, here
 $$
 \operatorname{sgn}\det(-I_{n+1})=(-1)^{n+1}.
 $$

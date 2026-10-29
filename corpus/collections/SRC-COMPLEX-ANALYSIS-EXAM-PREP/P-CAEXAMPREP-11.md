@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a bijective conformal map that takes a bounded region of $\mathbb C$ to an unbounded region.
+Find a bijective conformal map that takes a bounded region of $\CC$ to an unbounded region.
 :::
 
 ::: {.solution}

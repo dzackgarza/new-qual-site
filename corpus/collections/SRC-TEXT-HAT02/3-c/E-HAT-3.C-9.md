@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Apply the theorems of Hopf and Borel to show that for an H-space $X$ that is a connected finite CW complex with $\tilde{H}_*(X; \mathbb{Z}) \neq 0$, the Euler characteristic $\chi(X)$ is $0$.
+Apply the theorems of Hopf and Borel to show that for an H-space $X$ that is a connected finite CW complex with $\tilde{H}_*(X; \ZZ) \neq 0$, the Euler characteristic $\chi(X)$ is $0$.
 :::
 
 ::: {.solution}
@@ -40,17 +40,17 @@ Since $X$ is a finite CW complex, $P_F$ is a polynomial and
 \]
 for every field $F$.
 
-First take $F=\mathbb Q$. Hopf's theorem says that the connected graded Hopf algebra $H^*(X;\mathbb Q)$ is, as an algebra, a tensor product of an exterior algebra on odd-dimensional generators and a polynomial algebra on even-dimensional generators. Because $X$ is finite, $H^*(X;\mathbb Q)$ is finite-dimensional, so no polynomial generator can occur. Hence
+First take $F=\QQ$. Hopf's theorem says that the connected graded Hopf algebra $H^*(X;\QQ)$ is, as an algebra, a tensor product of an exterior algebra on odd-dimensional generators and a polynomial algebra on even-dimensional generators. Because $X$ is finite, $H^*(X;\QQ)$ is finite-dimensional, so no polynomial generator can occur. Hence
 \[
-H^*(X;\mathbb Q)\cong\Lambda_{\mathbb Q}(x_1,\dots,x_r)
+H^*(X;\QQ)\cong\Lambda_{\QQ}(x_1,\dots,x_r)
 \]
 with all $|x_i|$ odd. If $r>0$, then
 \[
-P_{\mathbb Q}(-1)=\prod_{i=1}^r(1+(-1)^{|x_i|})=0,
+P_{\QQ}(-1)=\prod_{i=1}^r(1+(-1)^{|x_i|})=0,
 \]
 so $\chi(X)=0$.
 
-It remains to rule out $r=0$ under the hypothesis $\widetilde H_*(X;\mathbb Z)\ne0$. If $r=0$, then $H^*(X;\mathbb Q)=\mathbb Q$, so $\chi(X)=1$ and all positive-dimensional integral homology is torsion. Choose a prime $p$ for which $\widetilde H^*(X;\mathbb F_p)\ne0$; such a prime exists by the universal coefficient theorem.
+It remains to rule out $r=0$ under the hypothesis $\widetilde H_*(X;\ZZ)\ne0$. If $r=0$, then $H^*(X;\QQ)=\QQ$, so $\chi(X)=1$ and all positive-dimensional integral homology is torsion. Choose a prime $p$ for which $\widetilde H^*(X;\mathbb F_p)\ne0$; such a prime exists by the universal coefficient theorem.
 
 Borel's theorem expresses the finite-dimensional Hopf algebra $H^*(X;\mathbb F_p)$ as a tensor product of single-generator factors, each either an exterior algebra on an odd-dimensional generator or a truncated polynomial algebra
 \[

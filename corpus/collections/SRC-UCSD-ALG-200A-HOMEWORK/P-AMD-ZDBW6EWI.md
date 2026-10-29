@@ -49,7 +49,7 @@ Fix a generator $g$ of $G$.
 ::: {.pf-step #aut-iso-to-units}
 There is a group isomorphism
 \[
-(\mathbb Z/n\mathbb Z)^\times\cong\operatorname{Aut}(G).
+(\ZZ/n\ZZ)^\times\cong\operatorname{Aut}(G).
 \]
 
 ::: pf-proof
@@ -68,7 +68,7 @@ Hence
 \[
 [a]\longmapsto\sigma_a
 \]
-is a well-defined bijective homomorphism $(\mathbb Z/n\mathbb Z)^\times\to\operatorname{Aut}(G)$.
+is a well-defined bijective homomorphism $(\ZZ/n\ZZ)^\times\to\operatorname{Aut}(G)$.
 :::
 
 :::
@@ -77,7 +77,7 @@ is a well-defined bijective homomorphism $(\mathbb Z/n\mathbb Z)^\times\to\opera
 The group $\operatorname{Aut}(G)$ is abelian.
 
 ::: pf-proof
-The ring $\mathbb Z/n\mathbb Z$ is commutative, so its group of units $(\mathbb Z/n\mathbb Z)^\times$ is abelian under multiplication.
+The ring $\ZZ/n\ZZ$ is commutative, so its group of units $(\ZZ/n\ZZ)^\times$ is abelian under multiplication.
 By step [](#aut-iso-to-units){.pf-ref}, $\operatorname{Aut}(G)$ is isomorphic to this abelian group, hence is abelian.
 :::
 
@@ -87,14 +87,14 @@ By step [](#aut-iso-to-units){.pf-ref}, $\operatorname{Aut}(G)$ is isomorphic to
 The group $\operatorname{Aut}(G)$ has order $\varphi(n)$.
 
 ::: pf-proof
-The units in $\mathbb Z/n\mathbb Z$ are exactly the residue classes $[a]$ with
+The units in $\ZZ/n\ZZ$ are exactly the residue classes $[a]$ with
 \[
 \gcd(a,n)=1.
 \]
 By definition, Euler's totient $\varphi(n)$ is the number of residue classes modulo $n$ represented by integers coprime to $n$.
 Therefore
 \[
-|(\mathbb Z/n\mathbb Z)^\times|=\varphi(n).
+|(\ZZ/n\ZZ)^\times|=\varphi(n).
 \]
 Using step [](#aut-iso-to-units){.pf-ref},
 \[

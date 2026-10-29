@@ -28,11 +28,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subseteq\mathbb R^n$ be open.
-Suppose $h:U\to\mathbb R^n$ is a uniformly continuous homeomorphism from $U$ onto $\mathbb R^n$.
+Let $U\subseteq\RR^n$ be open.
+Suppose $h:U\to\RR^n$ is a uniformly continuous homeomorphism from $U$ onto $\RR^n$.
 Prove that
 \[
-U=\mathbb R^n.
+U=\RR^n.
 \]
 :::
 

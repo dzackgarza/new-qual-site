@@ -33,8 +33,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $D_r(0)=\{z\in\mathbb C:|z|<r\}$ and $\Delta=D_1(0)$.
-Use the following subordination result: if $F:\Delta\to\mathbb C$
+Let $D_r(0)=\{z\in\CC:|z|<r\}$ and $\Delta=D_1(0)$.
+Use the following subordination result: if $F:\Delta\to\CC$
 is injective and holomorphic, and $g:\Delta\to F(\Delta)$
 is holomorphic with $g(0)=F(0)$, then
 $g(D_r(0))\subset F(D_r(0))$ for $0\leq r<1$.
@@ -51,7 +51,7 @@ for all $z \in D _ { 1 } ( 0 )$
 ::: {.solution}
 Let
 $$
-S=\{w\in\mathbb C:|\operatorname{Re}w|<1\}.
+S=\{w\in\CC:|\operatorname{Re}w|<1\}.
 $$
 
 ::: pf
@@ -102,7 +102,7 @@ is holomorphic with $h(0)=0$. Schwarz's lemma [@SS03] gives
 $$
 |h(z)|\le|z|.
 $$
-Thus, for $r=|z|$, put $K_r=\{\zeta\in\mathbb C:|\zeta|\leq r\}$.
+Thus, for $r=|z|$, put $K_r=\{\zeta\in\CC:|\zeta|\leq r\}$.
 Then $h(z)\in K_r$ and
 $$
 g(z)=F(h(z))\in F(K_r).

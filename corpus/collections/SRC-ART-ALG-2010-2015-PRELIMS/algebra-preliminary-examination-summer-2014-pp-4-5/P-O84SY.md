@@ -66,7 +66,7 @@ is cyclic; fix a generator $k$.
 An automorphism must send $k$ to one of the six generators
 $k^j$, $1\leq j\leq6$. Conversely each such assignment defines
 an automorphism. Composition multiplies exponents modulo $7$,
-giving $\operatorname{Aut}(K)\cong(\mathbb Z/7\mathbb Z)^\times$.
+giving $\operatorname{Aut}(K)\cong(\ZZ/7\ZZ)^\times$.
 The successive powers of $3$ modulo $7$ are
 $3,2,6,4,5,1$, so this group is cyclic of order $6$.
 

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Using the CW structure on $SO(n)$, show that $\pi_1 SO(n) \approx \mathbb{Z}_2$ for $n \geq 3$.
+Using the CW structure on $SO(n)$, show that $\pi_1 SO(n) \approx \ZZ_2$ for $n \geq 3$.
 Find a loop representing a generator, and describe how twice this loop is nullhomotopic.
 :::
 
@@ -55,14 +55,14 @@ Consequently the $2$-cell of $SO(n)$ is attached to the $1$-cell by a map of deg
 \[
 \pi_1(SO(n)^{(2)})
 \cong\langle a\mid a^2=1\rangle
-\cong\mathbb Z_2.
+\cong\ZZ_2.
 \]
 Attaching cells of dimension at least $3$ does not change the fundamental group, so
 \[
-\boxed{\pi_1SO(n)\cong\mathbb Z_2\qquad(n\ge3).}
+\boxed{\pi_1SO(n)\cong\ZZ_2\qquad(n\ge3).}
 \]
 
-The generator has a concrete geometric description. Let a fixed oriented $2$-plane in $\mathbb R^n$ rotate through angle
+The generator has a concrete geometric description. Let a fixed oriented $2$-plane in $\RR^n$ rotate through angle
 \[
 0\le\theta\le2\pi
 \]

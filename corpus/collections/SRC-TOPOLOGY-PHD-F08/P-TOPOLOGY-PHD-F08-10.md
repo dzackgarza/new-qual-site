@@ -30,25 +30,25 @@ audit:
 ---
 
 ::: {.problem}
-Construct a topological space $X$ by starting with $\mathbb R$ with the usual topology and defining $x$ to be equivalent to $y$ if $x-y$ is rational.
+Construct a topological space $X$ by starting with $\RR$ with the usual topology and defining $x$ to be equivalent to $y$ if $x-y$ is rational.
 Show that the resulting quotient or identification space $X$ has the indiscrete topology, that is, the only open sets are $\varnothing$ and $X$.
 :::
 
 ::: {.solution}
 Let
 \[
-q:\mathbb R\longrightarrow X=\mathbb R/\!\sim
+q:\RR\longrightarrow X=\RR/\!\sim
 \]
 be the quotient map.
 
 ::: pf
 
 ::: {.pf-step #rational-in-interval}
-Every nonempty open interval in $\mathbb R$ contains a rational number.
+Every nonempty open interval in $\RR$ contains a rational number.
 
 ::: pf-proof
 Let $a<b$.
-Choose $n\in\mathbb N$ such that
+Choose $n\in\NN$ such that
 \[
 n(b-a)>1.
 \]
@@ -64,7 +64,7 @@ Dividing by $n>0$ gives
 \[
 a<\frac mn<b.
 \]
-Since $m/n\in\mathbb Q$, the interval $(a,b)$ contains a rational number.
+Since $m/n\in\QQ$, the interval $(a,b)$ contains a rational number.
 :::
 
 :::
@@ -74,10 +74,10 @@ If $W\subseteq X$ is open, then
 \[
 U=q^{-1}(W)
 \]
-is an open saturated subset of $\mathbb R$.
+is an open saturated subset of $\RR$.
 
 ::: pf-proof
-By the definition of the quotient topology, $q^{-1}(W)$ is open in $\mathbb R$.
+By the definition of the quotient topology, $q^{-1}(W)$ is open in $\RR$.
 It is saturated because if $x\in U$ and $y\sim x$, then
 \[
 q(y)=q(x)\in W,
@@ -88,7 +88,7 @@ so $y\in q^{-1}(W)=U$.
 :::
 
 ::: {.pf-step #saturated-is-all}
-Every nonempty open saturated subset $U\subseteq\mathbb R$ is all of $\mathbb R$.
+Every nonempty open saturated subset $U\subseteq\RR$ is all of $\RR$.
 
 ::: pf-proof
 Let $U$ be nonempty, open, and saturated.
@@ -98,7 +98,7 @@ Since $U$ is open, there are real numbers $a<b$ such that
 x\in(a,b)\subseteq U.
 \]
 
-Take an arbitrary $y\in\mathbb R$.
+Take an arbitrary $y\in\RR$.
 The interval
 \[
 (y-b,y-a)
@@ -106,7 +106,7 @@ The interval
 is nonempty because $a<b$.
 By step [](#rational-in-interval){.pf-ref}, choose
 \[
-r\in\mathbb Q\cap(y-b,y-a).
+r\in\QQ\cap(y-b,y-a).
 \]
 The inequalities
 \[
@@ -122,14 +122,14 @@ y-r\in(a,b)\subseteq U.
 \]
 Moreover,
 \[
-y-(y-r)=r\in\mathbb Q,
+y-(y-r)=r\in\QQ,
 \]
 so
 \[
 y\sim y-r.
 \]
 Since $U$ is saturated and $y-r\in U$, it follows that $y\in U$.
-The point $y$ was arbitrary, so $U=\mathbb R$.
+The point $y$ was arbitrary, so $U=\RR$.
 :::
 
 :::
@@ -148,11 +148,11 @@ U=q^{-1}(W)
 is nonempty.
 By step [](#preimage-open-saturated){.pf-ref} it is open and saturated, so step [](#saturated-is-all){.pf-ref} gives
 \[
-q^{-1}(W)=\mathbb R.
+q^{-1}(W)=\RR.
 \]
 Applying $q$ and using surjectivity,
 \[
-W=q(q^{-1}(W))=q(\mathbb R)=X.
+W=q(q^{-1}(W))=q(\RR)=X.
 \]
 Thus every nonempty open subset is all of $X$, so the quotient topology is indiscrete.
 :::

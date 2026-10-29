@@ -28,7 +28,7 @@ is irreducible over $\QQ$.
 
 Let
 $$
-f(x)\coloneqq x^4+x+2021\in\mathbb Z[x].
+f(x)\coloneqq x^4+x+2021\in\ZZ[x].
 $$
 
 ::: pf
@@ -151,12 +151,12 @@ The polynomial
 $$
 \boxed{x^4+x+2021}
 $$
-is irreducible over $\mathbb Q$.
+is irreducible over $\QQ$.
 
 
 ::: pf-proof
 
-The polynomial $f$ is primitive. Since its reduction modulo $2$ is irreducible by step [](#s1-5){.pf-ref}, the standard reduction criterion together with Gauss's lemma implies that $f$ is irreducible in $\mathbb Q[x]$.
+The polynomial $f$ is primitive. Since its reduction modulo $2$ is irreducible by step [](#s1-5){.pf-ref}, the standard reduction criterion together with Gauss's lemma implies that $f$ is irreducible in $\QQ[x]$.
 
 :::
 

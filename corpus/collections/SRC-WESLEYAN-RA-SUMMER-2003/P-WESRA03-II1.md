@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\ge 0$ on the Lebesgue measure space $(\mathbb R,\mathcal B(\mathbb R),m)$.
+Let $f\ge 0$ on the Lebesgue measure space $(\RR,\mathcal B(\RR),m)$.
 Prove that the set function
 \[
 A\longmapsto \int_A f\,dm
@@ -32,11 +32,11 @@ Define
 =
 \int_A f\,dm
 =
-\int_{\mathbb R}\mathbf 1_A f\,dm
+\int_{\RR}\mathbf 1_A f\,dm
 \]
 for every Borel set
 \[
-A\in\mathcal B(\mathbb R).
+A\in\mathcal B(\RR).
 \]
 
 ::: pf
@@ -88,7 +88,7 @@ Hence
 \[
 \mu_f(\varnothing)
 =
-\int_{\mathbb R}0\cdot f\,dm
+\int_{\RR}0\cdot f\,dm
 =
 0.
 \]
@@ -111,7 +111,7 @@ A=\bigcup_{n=1}^{\infty}A_n.
 
 ::: pf-proof
 
-A countable union of Borel sets is Borel, so \(A\in\mathcal B(\mathbb R)\).
+A countable union of Borel sets is Borel, so \(A\in\mathcal B(\RR)\).
 
 :::
 
@@ -198,7 +198,7 @@ By the monotone convergence theorem,
 \mu_f(A)
 =
 \lim_{N\to\infty}
-\int_{\mathbb R}g_N\,dm.
+\int_{\RR}g_N\,dm.
 \]
 
 
@@ -208,9 +208,9 @@ Step [](#s1-6){.pf-ref} gives a monotone increasing sequence of nonnegative meas
 functions converging pointwise to \(\mathbf 1_Af\). Apply the monotone
 convergence theorem:
 \[
-\int_{\mathbb R}\mathbf 1_Af\,dm
+\int_{\RR}\mathbf 1_Af\,dm
 =
-\lim_{N\to\infty}\int_{\mathbb R}g_N\,dm.
+\lim_{N\to\infty}\int_{\RR}g_N\,dm.
 \]
 
 :::
@@ -221,7 +221,7 @@ convergence theorem:
 
 For every \(N\),
 \[
-\int_{\mathbb R}g_N\,dm
+\int_{\RR}g_N\,dm
 =
 \sum_{n=1}^{N}\mu_f(A_n).
 \]
@@ -232,13 +232,13 @@ For every \(N\),
 By step [](#s1-5){.pf-ref} and finite additivity of the Lebesgue integral,
 \[
 \begin{aligned}
-\int_{\mathbb R}g_N\,dm
+\int_{\RR}g_N\,dm
 &=
-\int_{\mathbb R}
+\int_{\RR}
 \sum_{n=1}^{N}\mathbf 1_{A_n}f\,dm\\
 &=
 \sum_{n=1}^{N}
-\int_{\mathbb R}\mathbf 1_{A_n}f\,dm\\
+\int_{\RR}\mathbf 1_{A_n}f\,dm\\
 &=
 \sum_{n=1}^{N}\mu_f(A_n).
 \end{aligned}
@@ -290,7 +290,7 @@ A\longmapsto\int_A f\,dm
 \]
 is a measure on
 \[
-(\mathbb R,\mathcal B(\mathbb R)).
+(\RR,\mathcal B(\RR)).
 \]
 
 

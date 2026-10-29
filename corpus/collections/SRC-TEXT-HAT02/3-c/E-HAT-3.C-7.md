@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.C-7
 kind: problem
-title: Primitive elements of $\mathbb{Z}_p[x]$
+title: Primitive elements of $\ZZ_p[x]$
 classification:
   areas:
   - topology
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-What are the primitive elements of the Hopf algebra $\mathbb{Z}_p[x]$ for $p$ prime?
+What are the primitive elements of the Hopf algebra $\ZZ_p[x]$ for $p$ prime?
 :::
 
 ::: {.solution}

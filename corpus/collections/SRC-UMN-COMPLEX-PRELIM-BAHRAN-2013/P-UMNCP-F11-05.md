@@ -22,11 +22,11 @@ Suppose
 \[
 f(z+1)=f(z)
 \]
-for every \(z\in\mathbb C\), and
+for every \(z\in\CC\), and
 \[
 |f(z)|\le e^{|z|}
 \]
-for every \(z\in\mathbb C\). Prove that \(f\) is constant.
+for every \(z\in\CC\). Prove that \(f\) is constant.
 :::
 
 ::: {.solution}

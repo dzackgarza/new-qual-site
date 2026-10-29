@@ -28,9 +28,9 @@ In this problem $(X, \|\cdot\|)$ is an infinite dimensional normed space.
 Determine which of the following statements are true.
 For the true statements give a brief reason and for the false statements give a counterexample.
 
-(a) If $A = \mathbb{R} \setminus E$ and $m(E) = 0$, then $\bar{A} = \mathbb{R}$.
+(a) If $A = \RR \setminus E$ and $m(E) = 0$, then $\bar{A} = \RR$.
 
-(b) Every $m$-null set $E \in \mathcal{B}_{\mathbb{R}}$ is nowhere dense in $\mathbb{R}$.
+(b) Every $m$-null set $E \in \mathcal{B}_{\RR}$ is nowhere dense in $\RR$.
 
 (c) Every proper subspace $E \subset X$ is nowhere dense.
 
@@ -47,9 +47,9 @@ Part (a) is true.
 
 ::: pf-proof
 
-Let $A=\mathbb R\setminus E$ with $m(E)=0$. Every nonempty open interval has positive Lebesgue measure, so no nonempty open interval can be contained in $E$. Equivalently, every nonempty open interval meets $A$. Thus $A$ is dense in $\mathbb R$, and
+Let $A=\RR\setminus E$ with $m(E)=0$. Every nonempty open interval has positive Lebesgue measure, so no nonempty open interval can be contained in $E$. Equivalently, every nonempty open interval meets $A$. Thus $A$ is dense in $\RR$, and
 \[
-\boxed{\overline A=\mathbb R.}
+\boxed{\overline A=\RR.}
 \]
 
 :::
@@ -64,13 +64,13 @@ Part (b) is false.
 
 Take
 \[
-E=\mathbb Q.
+E=\QQ.
 \]
 Then $E$ is Borel and has Lebesgue measure zero, but
 \[
-\overline E=\mathbb R.
+\overline E=\RR.
 \]
-Hence the interior of $\overline E$ is all of $\mathbb R$, so $E$ is not nowhere dense.
+Hence the interior of $\overline E$ is all of $\RR$, so $E$ is not nowhere dense.
 
 :::
 

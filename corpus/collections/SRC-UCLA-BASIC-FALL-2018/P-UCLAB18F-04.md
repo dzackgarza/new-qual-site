@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be continuous on $[0,1]$, differentiable on $(0,1)$, with $f(0)=0$.
+Let $f:[0,1]\to\RR$ be continuous on $[0,1]$, differentiable on $(0,1)$, with $f(0)=0$.
 Suppose $f'$ is decreasing on $(0,1)$.
 Show that
 \[

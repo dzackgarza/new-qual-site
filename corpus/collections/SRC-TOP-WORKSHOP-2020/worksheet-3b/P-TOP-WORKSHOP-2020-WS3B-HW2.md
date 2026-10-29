@@ -38,15 +38,15 @@ Thus it permutes each fiber while preserving the covering projection.
 
 For the universal cover
 \[
-p:\mathbb R\to S^1,
+p:\RR\to S^1,
 \qquad p(t)=e^{2\pi i t},
 \]
 every integer translation
 \[
-T_n(t)=t+n,\qquad n\in\mathbb Z,
+T_n(t)=t+n,\qquad n\in\ZZ,
 \]
-is a deck transformation because \(e^{2\pi i(t+n)}=e^{2\pi it}\). Conversely, if \(T\) is a deck transformation, then \(T(0)\in p^{-1}(1)=\mathbb Z\). Uniqueness of lifts of \(p\) implies \(T=T_{T(0)}\). Hence
+is a deck transformation because \(e^{2\pi i(t+n)}=e^{2\pi it}\). Conversely, if \(T\) is a deck transformation, then \(T(0)\in p^{-1}(1)=\ZZ\). Uniqueness of lifts of \(p\) implies \(T=T_{T(0)}\). Hence
 \[
-\operatorname{Deck}(\mathbb R/S^1)\cong\mathbb Z.
+\operatorname{Deck}(\RR/S^1)\cong\ZZ.
 \]
 :::

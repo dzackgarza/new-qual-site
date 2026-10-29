@@ -19,21 +19,21 @@ audit:
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
 ::: {.problem}
-Which of the following subsets $F_i$ of $\mathbb R$, $1\le i\le4$, are subfields of $\mathbb R$?
+Which of the following subsets $F_i$ of $\RR$, $1\le i\le4$, are subfields of $\RR$?
 
-$F_1=\{a/b:a,b\in\mathbb Z\text{ and }b\text{ is odd}\}$,
+$F_1=\{a/b:a,b\in\ZZ\text{ and }b\text{ is odd}\}$,
 
-$F_2=\{a+b\sqrt2:a,b\in\mathbb Z\}$,
+$F_2=\{a+b\sqrt2:a,b\in\ZZ\}$,
 
-$F_3=\{a+b\sqrt2:a,b\in\mathbb Q\}$,
+$F_3=\{a+b\sqrt2:a,b\in\QQ\}$,
 
-$F_4=\{a+b\sqrt[4]2:a,b\in\mathbb Q\}$.
+$F_4=\{a+b\sqrt[4]2:a,b\in\QQ\}$.
 
 ![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-02.png)
 :::
 
 ::: {.solution}
-Only $F_3$ is a subfield of $\mathbb R$.
+Only $F_3$ is a subfield of $\RR$.
 
 ::: pf
 
@@ -59,9 +59,9 @@ $F_2$ is not a field.
 The integer $2$ belongs to $F_2$, whereas $1/2$ does not, since an equality
 \[
 \frac12=a+b\sqrt2,
-\qquad a,b\in\mathbb Z,
+\qquad a,b\in\ZZ,
 \]
-would force $b=0$ and then $a=1/2\notin\mathbb Z$.
+would force $b=0$ and then $a=1/2\notin\ZZ$.
 
 :::
 
@@ -73,7 +73,7 @@ $F_3$ is a field.
 
 ::: pf-proof
 
-It is $\mathbb Q(\sqrt2)$.
+It is $\QQ(\sqrt2)$.
 Addition and multiplication preserve the form $a+b\sqrt2$.
 If $a+b\sqrt2\ne0$, then
 \[
@@ -95,10 +95,10 @@ It contains $\alpha=\sqrt[4]{2}$, but closure under multiplication would require
 \[
 \alpha^2=\sqrt2=a+b\alpha
 \]
-for some $a,b\in\mathbb Q$.
-This would give the nontrivial $\mathbb Q$-linear relation $\alpha^2-a-b\alpha=0$ among $1,\alpha,\alpha^2$.
-But $T^4-2$ is irreducible over $\mathbb Q$ by Eisenstein at $2$, so $1,\alpha,\alpha^2,\alpha^3$ are linearly independent over $\mathbb Q$.
-Hence $\sqrt2\notin\operatorname{span}_{\mathbb Q}\{1,\alpha\}$.
+for some $a,b\in\QQ$.
+This would give the nontrivial $\QQ$-linear relation $\alpha^2-a-b\alpha=0$ among $1,\alpha,\alpha^2$.
+But $T^4-2$ is irreducible over $\QQ$ by Eisenstein at $2$, so $1,\alpha,\alpha^2,\alpha^3$ are linearly independent over $\QQ$.
+Hence $\sqrt2\notin\operatorname{span}_{\QQ}\{1,\alpha\}$.
 
 :::
 

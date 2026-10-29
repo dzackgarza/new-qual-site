@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{R} \to \mathbb{R}$ be a $2\pi$-periodic function, i.e. $f(x) = f(x + 2\pi)$, such that there exists $C > 0$ (possibly large) and $\epsilon > 0$ (possibly small) with
+Let $f : \RR \to \RR$ be a $2\pi$-periodic function, i.e. $f(x) = f(x + 2\pi)$, such that there exists $C > 0$ (possibly large) and $\epsilon > 0$ (possibly small) with
 $$
 |f(x) - f(y)| \leq C|x - y|^{1/2 + \epsilon}.
 $$
@@ -83,11 +83,11 @@ at frequency $n$ is
 By Parseval,
 \[
 \int_0^{2\pi}|f(x+h)-f(x)|^2\,dx
-=2\pi\sum_{n\in\mathbb Z}|c_n|^2|e^{inh}-1|^2.
+=2\pi\sum_{n\in\ZZ}|c_n|^2|e^{inh}-1|^2.
 \]
 Combining this with Step 1 gives
 \[
-\sum_{n\in\mathbb Z}|c_n|^2|e^{inh}-1|^2
+\sum_{n\in\ZZ}|c_n|^2|e^{inh}-1|^2
 \le C^2|h|^{2\alpha}.
 \]
 
@@ -155,7 +155,7 @@ Since
 \]
 we obtain
 \[
-\sum_{n\in\mathbb Z}|c_n|<\infty.
+\sum_{n\in\ZZ}|c_n|<\infty.
 \]
 
 :::
@@ -170,7 +170,7 @@ Conclude uniform convergence to $f$.
 
 Absolute summability implies that
 \[
-\sum_{n\in\mathbb Z}c_ne^{inx}
+\sum_{n\in\ZZ}c_ne^{inx}
 \]
 converges absolutely and uniformly by the Weierstrass $M$-test, to a continuous $2\pi$-periodic function $S$.
 

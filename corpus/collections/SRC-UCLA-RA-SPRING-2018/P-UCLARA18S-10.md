@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $\mathbb C^*=\mathbb C\cup\{\infty\}$ be the Riemann sphere and let
+Problem 10. Let $\CC^*=\CC\cup\{\infty\}$ be the Riemann sphere and let
 \[
-\Omega=\mathbb C^*\setminus\{0,1\}.
+\Omega=\CC^*\setminus\{0,1\}.
 \]
 Let $f:\Omega\to\Omega$ be a holomorphic function.
 
@@ -34,9 +34,9 @@ Let
 \[
 \widetilde\Omega
 =
-\widehat{\mathbb C}\setminus\{0,\infty\}
+\widehat{\CC}\setminus\{0,\infty\}
 =
-\mathbb C^\times
+\CC^\times
 \]
 and define the Möbius transformation
 \[
@@ -67,7 +67,7 @@ g
 =
 T^{-1}\circ f\circ T
 :
-\mathbb C^\times\to\mathbb C^\times
+\CC^\times\to\CC^\times
 \]
 is injective and holomorphic.
 
@@ -93,7 +93,7 @@ Suppose \(0\) were an essential singularity. By the Great Picard theorem,
 in every punctured neighborhood of \(0\), the function \(g\) assumes every
 complex value with at most one exception infinitely often. Since
 \[
-g(\mathbb C^\times)\subseteq\mathbb C^\times,
+g(\CC^\times)\subseteq\CC^\times,
 \]
 the value \(0\) is already omitted. Hence every nonzero value is assumed
 infinitely often near \(0\), contradicting injectivity.
@@ -146,7 +146,7 @@ g(z)
 =
 \frac{a}{z}+b+cz}
 \]
-for some \(a,b,c\in\mathbb C\).
+for some \(a,b,c\in\CC\).
 
 
 ::: pf-proof
@@ -182,15 +182,15 @@ is equivalent to
 \[
 cz^2+bz+a=0.
 \]
-This quadratic has two roots in \(\mathbb C\), counted with multiplicity,
+This quadratic has two roots in \(\CC\), counted with multiplicity,
 and their product is
 \[
 \frac ac\ne0.
 \]
 Thus every root is nonzero, so \(g\) would take the forbidden value \(0\)
-at a point of \(\mathbb C^\times\), contradicting
+at a point of \(\CC^\times\), contradicting
 \[
-g(\mathbb C^\times)\subseteq\mathbb C^\times.
+g(\CC^\times)\subseteq\CC^\times.
 \]
 
 :::
@@ -203,7 +203,7 @@ If \(a=0\), then
 \[
 \boxed{g(z)=cz}
 \]
-for some \(c\in\mathbb C^\times\).
+for some \(c\in\CC^\times\).
 
 
 ::: pf-proof
@@ -228,7 +228,7 @@ If \(c=0\), then
 \[
 \boxed{g(z)=\frac az}
 \]
-for some \(a\in\mathbb C^\times\).
+for some \(a\in\CC^\times\).
 
 
 ::: pf-proof
@@ -250,14 +250,14 @@ is a nonzero zero of \(g\), impossible. Hence \(b=0\), and \(a\ne0\).
 ::: {.pf-step #s1-8}
 
 Therefore every injective holomorphic self-map of
-\(\mathbb C^\times\) is exactly one of
+\(\CC^\times\) is exactly one of
 \[
 \boxed{
 g_a(z)=az
 \qquad\text{or}\qquad
 h_a(z)=\frac az,
 \qquad
-a\in\mathbb C^\times}.
+a\in\CC^\times}.
 \]
 
 
@@ -265,7 +265,7 @@ a\in\mathbb C^\times}.
 
 Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} exhaust the possibilities from step [](#s1-4){.pf-ref}.
 Conversely, both displayed maps are visibly injective holomorphic self-maps
-of \(\mathbb C^\times\).
+of \(\CC^\times\).
 
 :::
 
@@ -310,7 +310,7 @@ f_a(w)
 =
 \frac{aw}{1+(a-1)w},
 \qquad
-a\in\mathbb C^\times}.
+a\in\CC^\times}.
 \]
 
 
@@ -348,7 +348,7 @@ Conjugating \(h_a(z)=a/z\) back to \(\Omega\) gives
 \frac{a(1-w)}
 {a+(1-a)w},
 \qquad
-a\in\mathbb C^\times}.
+a\in\CC^\times}.
 \]
 
 
@@ -390,15 +390,15 @@ f(w)
 =
 \frac{a(1-w)}{a+(1-a)w},
 \qquad
-a\in\mathbb C^\times}.
+a\in\CC^\times}.
 \]
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, every injective \(f\) is conjugate to an injective \(g\) on
-\(\mathbb C^\times\). Step [](#s1-8){.pf-ref} classifies the latter, and steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} compute their conjugates. Conversely, every displayed map is a
-conjugate of an injective holomorphic self-map of \(\mathbb C^\times\), so
+\(\CC^\times\). Step [](#s1-8){.pf-ref} classifies the latter, and steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} compute their conjugates. Conversely, every displayed map is a
+conjugate of an injective holomorphic self-map of \(\CC^\times\), so
 it is injective and holomorphic on \(\Omega\).
 
 :::
@@ -418,7 +418,7 @@ z\mapsto az
 \qquad\text{and}\qquad
 z\mapsto\frac az
 \]
-are surjective on \(\mathbb C^\times\). Since \(T\) is a bijection, their
+are surjective on \(\CC^\times\). Since \(T\) is a bijection, their
 conjugates in steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} are surjective on \(\Omega\). By step
 [](#s1-12){.pf-ref}, every injective \(f\) is one of these conjugates. Hence
 \[

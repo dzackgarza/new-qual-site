@@ -21,7 +21,7 @@ Problem 9. Find a function that minimizes
 \[
 \int_0^1 |f'(x)|^2\,dx
 \]
-among all $f\in C^1(\mathbb R)$ such that $f(0)=0$ and $f(1)=1$.
+among all $f\in C^1(\RR)$ such that $f(0)=0$ and $f(1)=1$.
 Is the minimizing $C^1$ function unique on $[0,1]$?
 :::
 
@@ -39,7 +39,7 @@ For every admissible $f$,
 
 ::: pf-proof
 
-Since $f\in C^1(\mathbb R)$, the fundamental theorem of calculus gives
+Since $f\in C^1(\RR)$, the fundamental theorem of calculus gives
 \[
 f(1)-f(0)=\int_0^1f'(x)\,dx.
 \]
@@ -86,7 +86,7 @@ is admissible and has energy
 
 ::: pf-proof
 
-The function is $C^1(\mathbb R)$, satisfies $f_0(0)=0$ and $f_0(1)=1$, and has derivative identically equal to $1$.
+The function is $C^1(\RR)$, satisfies $f_0(0)=0$ and $f_0(1)=1$, and has derivative identically equal to $1$.
 
 :::
 
@@ -175,7 +175,7 @@ The extension outside $[0,1]$ is not unique.
 
 ::: pf-proof
 
-The functional and endpoint constraints depend only on the restriction to $[0,1]$. Any $C^1$ extension of the function $x$ from $[0,1]$ to all of $\mathbb R$ remains a minimizer. The question asks uniqueness on $[0,1]$, where step [](#s1-8){.pf-ref} proves uniqueness.
+The functional and endpoint constraints depend only on the restriction to $[0,1]$. Any $C^1$ extension of the function $x$ from $[0,1]$ to all of $\RR$ remains a minimizer. The question asks uniqueness on $[0,1]$, where step [](#s1-8){.pf-ref} proves uniqueness.
 
 :::
 

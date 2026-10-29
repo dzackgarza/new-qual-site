@@ -41,7 +41,7 @@ Let $p: \widetilde{X} \to X$ be the universal covering projection.
 :::
 
 ::: pf-step
-The number of sheets of the covering is $d = |\pi_1(X)|$. Since $\pi_1(X)$ is non-trivial and finite, $d \in \mathbb{Z}$ and $d \ge 2$.
+The number of sheets of the covering is $d = |\pi_1(X)|$. Since $\pi_1(X)$ is non-trivial and finite, $d \in \ZZ$ and $d \ge 2$.
 :::
 
 ::: pf-step
@@ -72,12 +72,12 @@ Euler characteristic of $\widetilde{X}$ via contractibility:
 
 ::: pf-step
 Since $\widetilde{X}$ is contractible, its singular homology groups are:
-$$H_0(\widetilde{X}; \mathbb{Q}) \cong \mathbb{Q}, \qquad H_k(\widetilde{X}; \mathbb{Q}) = 0 \quad \text{for all } k \ge 1.$$
+$$H_0(\widetilde{X}; \QQ) \cong \QQ, \qquad H_k(\widetilde{X}; \QQ) = 0 \quad \text{for all } k \ge 1.$$
 :::
 
 ::: pf-step
 Therefore the Euler characteristic of $\widetilde{X}$ is
-$$\chi(\widetilde{X}) = \sum_{k=0}^\infty (-1)^k \dim_\mathbb{Q} H_k(\widetilde{X}; \mathbb{Q}) = 1 - 0 + 0 - \cdots = 1.$$
+$$\chi(\widetilde{X}) = \sum_{k=0}^\infty (-1)^k \dim_\QQ H_k(\widetilde{X}; \QQ) = 1 - 0 + 0 - \cdots = 1.$$
 :::
 
 :::
@@ -122,11 +122,11 @@ $$d \cdot \chi(X) = 1.$$
 :::
 
 ::: pf-step
-Since $X$ is a finite CW complex, $\chi(X) = \sum (-1)^n c_n(X) \in \mathbb{Z}$ is an integer.
+Since $X$ is a finite CW complex, $\chi(X) = \sum (-1)^n c_n(X) \in \ZZ$ is an integer.
 :::
 
 ::: pf-step
-Since $d = |\pi_1(X)| \ge 2$, the only rational solution is $\chi(X) = 1/d \notin \mathbb{Z}$, a contradiction.
+Since $d = |\pi_1(X)| \ge 2$, the only rational solution is $\chi(X) = 1/d \notin \ZZ$, a contradiction.
 :::
 
 :::

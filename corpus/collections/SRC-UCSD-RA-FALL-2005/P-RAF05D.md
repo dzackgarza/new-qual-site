@@ -39,7 +39,7 @@ Construct an uncountable separated family.
 
 ::: pf-proof
 
-For each subset $A\subseteq\mathbb N$, let
+For each subset $A\subseteq\NN$, let
 \[
 x^A=(x^A_n)_{n\ge1},
 \qquad
@@ -57,7 +57,7 @@ so
 \]
 Thus
 \[
-\{x^A:A\subseteq\mathbb N\}
+\{x^A:A\subseteq\NN\}
 \]
 is an uncountable $1$-separated subset of $\ell^\infty$.
 
@@ -74,11 +74,11 @@ A separable metric space cannot contain such a family.
 Suppose $\ell^\infty$ were separable, and let $D$ be a countable dense subset. The open balls
 \[
 B(x^A,1/3),
-\qquad A\subseteq\mathbb N,
+\qquad A\subseteq\NN,
 \]
 are pairwise disjoint because the centers are distance $1$ apart.
 
-Since $D$ is dense, every such ball contains at least one point of $D$. Pairwise disjointness forces distinct balls to contain distinct points of $D$. Hence there could be only countably many such balls, contradicting the uncountability of $\mathcal P(\mathbb N)$.
+Since $D$ is dense, every such ball contains at least one point of $D$. Pairwise disjointness forces distinct balls to contain distinct points of $D$. Hence there could be only countably many such balls, contradicting the uncountability of $\mathcal P(\NN)$.
 
 Therefore
 \[

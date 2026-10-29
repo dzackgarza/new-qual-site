@@ -21,7 +21,7 @@ Problem 2. Let $A$ be an $n\times n$ real symmetric matrix with eigenvalues $\la
 Prove that
 \[
 \lambda_k=
-\max_{\substack{U\subseteq\mathbb R^n\\ \dim U=k}}
+\max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
 \min_{\substack{x\in U\\ \|x\|=1}}
 \langle Ax,x\rangle.
 \]
@@ -127,7 +127,7 @@ Hence the minimum is attained and equals $\lambda_k$.
 
 Consequently,
 \[
-\max_{\substack{U\subseteq\mathbb R^n\\ \dim U=k}}
+\max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
 \min_{\substack{x\in U\\ \|x\|=1}}
 \langle Ax,x\rangle
 \ge
@@ -149,7 +149,7 @@ By step [](#s1-2){.pf-ref}, that value is $\lambda_k$.
 
 Let
 \[
-U\subseteq\mathbb R^n
+U\subseteq\RR^n
 \]
 be an arbitrary $k$-dimensional subspace, and define
 \[
@@ -277,7 +277,7 @@ The minimum over all unit vectors in $U$ cannot exceed that particular value.
 
 Therefore
 \[
-\max_{\substack{U\subseteq\mathbb R^n\\ \dim U=k}}
+\max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
 \min_{\substack{x\in U\\ \|x\|=1}}
 \langle Ax,x\rangle
 \le
@@ -300,7 +300,7 @@ Combining the two inequalities gives
 \[
 \boxed{
 \lambda_k=
-\max_{\substack{U\subseteq\mathbb R^n\\ \dim U=k}}
+\max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
 \min_{\substack{x\in U\\ \|x\|=1}}
 \langle Ax,x\rangle.
 }

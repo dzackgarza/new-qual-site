@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[a,b]\to\mathbb R$ be twice continuously differentiable, including at the endpoints.
+Let $f:[a,b]\to\RR$ be twice continuously differentiable, including at the endpoints.
 Let
 \[
 a=x_0<x_1<\cdots<x_n=b

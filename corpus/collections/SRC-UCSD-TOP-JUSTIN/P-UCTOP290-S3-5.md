@@ -47,7 +47,7 @@ $$-I:T^2\to T^2.$$
 
 ::: pf-proof
 
-The half-turn reverses both standard circle coordinates of the torus fiber, hence induces $-I$ on $\pi_1(T^2)\cong\mathbb Z^2$.
+The half-turn reverses both standard circle coordinates of the torus fiber, hence induces $-I$ on $\pi_1(T^2)\cong\ZZ^2$.
 
 :::
 
@@ -56,11 +56,11 @@ The half-turn reverses both standard circle coordinates of the torus fiber, henc
 ::: pf-step
 
 Therefore
-$$\boxed{\pi_1(X)\cong \mathbb Z^2\rtimes_{-I}\mathbb Z}.$$
+$$\boxed{\pi_1(X)\cong \ZZ^2\rtimes_{-I}\ZZ}.$$
 
 ::: pf-proof
 
-The fundamental group of a mapping torus of a homeomorphism $h:Y\to Y$ is the HNN semidirect product $\pi_1(Y)\rtimes_{h_*}\mathbb Z$.
+The fundamental group of a mapping torus of a homeomorphism $h:Y\to Y$ is the HNN semidirect product $\pi_1(Y)\rtimes_{h_*}\ZZ$.
 
 :::
 

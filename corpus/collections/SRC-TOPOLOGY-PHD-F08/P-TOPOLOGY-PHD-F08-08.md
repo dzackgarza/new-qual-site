@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the open interval $(0,1)$ considered as a subset of $\mathbb R$ in the usual topology is not compact.
+Prove that the open interval $(0,1)$ considered as a subset of $\RR$ in the usual topology is not compact.
 :::
 
 ::: {.solution}

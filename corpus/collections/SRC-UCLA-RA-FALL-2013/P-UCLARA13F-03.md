@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Does there exist a holomorphic function $f:\mathbb D\to\mathbb C$ such that
+Does there exist a holomorphic function $f:\mathbb D\to\CC$ such that
 \[
 |f(z_n)|\longrightarrow\infty
 \]
@@ -33,7 +33,7 @@ No such holomorphic function exists.
 
 ::: {.pf-step #s1-1}
 
-Suppose, for contradiction, that $f:\mathbb D\to\mathbb C$ is holomorphic and satisfies the stated property.
+Suppose, for contradiction, that $f:\mathbb D\to\CC$ is holomorphic and satisfies the stated property.
 
 
 ::: pf-proof

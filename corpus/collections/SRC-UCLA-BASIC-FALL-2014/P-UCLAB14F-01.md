@@ -23,7 +23,7 @@ H(x,y)=x^2+y^2+|x-y|^{-1}
 \]
 achieves its global minimum somewhere on the set
 \[
-\{(x,y)\in\mathbb R^2:x\neq y\}.
+\{(x,y)\in\RR^2:x\neq y\}.
 \]
 :::
 
@@ -31,7 +31,7 @@ achieves its global minimum somewhere on the set
 
 Let
 \[
-D=\{(x,y)\in\mathbb R^2:x\ne y\}.
+D=\{(x,y)\in\RR^2:x\ne y\}.
 \]
 The function $H$ is continuous on $D$.
 
@@ -131,7 +131,7 @@ Since $|x-y|>0$ on $D$, taking reciprocals gives
 
 ::: {.pf-step #s1-5}
 
-The set $K$ is compact in $\mathbb R^2$.
+The set $K$ is compact in $\RR^2$.
 
 
 ::: pf-proof
@@ -154,7 +154,7 @@ K
 H(x,y)\le2
 \right\}
 \]
-is closed in $\mathbb R^2$.
+is closed in $\RR^2$.
 Thus $K$ is closed and bounded, hence compact by Heine--Borel.
 
 :::

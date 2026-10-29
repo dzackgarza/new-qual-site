@@ -18,35 +18,35 @@ audit:
 ---
 
 ::: {.problem}
-(a) Show the following: Let $G$ be a finite group, and let $g \mapsto A_g \in \operatorname{GL}(\mathbb{C}^n)$ and $g \mapsto B_g \in \operatorname{GL}(\mathbb{C}^n)$ be two equivalent representations of $G$.
-Show that the rings of invariants $\mathbb{C}[x_1, x_2, \ldots, x_n]^G$ defined by these two actions have the same Hilbert series.
+(a) Show the following: Let $G$ be a finite group, and let $g \mapsto A_g \in \operatorname{GL}(\CC^n)$ and $g \mapsto B_g \in \operatorname{GL}(\CC^n)$ be two equivalent representations of $G$.
+Show that the rings of invariants $\CC[x_1, x_2, \ldots, x_n]^G$ defined by these two actions have the same Hilbert series.
 
-(b) Give two examples of an action of a group $G$ on a two-dimensional vector space which lead to two different Hilbert series of the corresponding rings $\mathbb{C}[x,y]^G$.
+(b) Give two examples of an action of a group $G$ on a two-dimensional vector space which lead to two different Hilbert series of the corresponding rings $\CC[x,y]^G$.
 :::
 
 ::: {.solution}
-For part (a), equivalence of the two representations means that there is some $P\in\operatorname{GL}_n(\mathbb C)$ such that
+For part (a), equivalence of the two representations means that there is some $P\in\operatorname{GL}_n(\CC)$ such that
 \[
 B_g=PA_gP^{-1}
 \qquad(g\in G).
 \]
-Let $V=\mathbb C^n$. The linear isomorphism $P:V\to V$ induces a graded algebra isomorphism on polynomial functions,
+Let $V=\CC^n$. The linear isomorphism $P:V\to V$ induces a graded algebra isomorphism on polynomial functions,
 \[
-P^*:\mathbb C[V]\longrightarrow\mathbb C[V],
+P^*:\CC[V]\longrightarrow\CC[V],
 \qquad
 (P^*f)(v)=f(Pv).
 \]
 Because $P$ intertwines the two $G$-actions, $P^*$ intertwines the corresponding actions on polynomial functions. Hence
 \[
-f\in \mathbb C[V]^{G,A}
+f\in \CC[V]^{G,A}
 \quad\Longleftrightarrow\quad
-P^*f\in \mathbb C[V]^{G,B}.
+P^*f\in \CC[V]^{G,B}.
 \]
 Therefore $P^*$ restricts to a graded algebra isomorphism
 \[
-\mathbb C[x_1,\ldots,x_n]^{G,A}
+\CC[x_1,\ldots,x_n]^{G,A}
 \cong
-\mathbb C[x_1,\ldots,x_n]^{G,B}.
+\CC[x_1,\ldots,x_n]^{G,B}.
 \]
 A graded isomorphism preserves the dimension of every homogeneous piece, so the two invariant rings have the same Hilbert series.
 
@@ -62,7 +62,7 @@ s\mapsto
 \]
 Then a monomial $x^a y^b$ is invariant exactly when $a$ is even, so
 \[
-\mathbb C[x,y]^G=\mathbb C[x^2,y].
+\CC[x,y]^G=\CC[x^2,y].
 \]
 Hence
 \[
@@ -73,7 +73,7 @@ Now let
 \[
 s\mapsto -I_2.
 \]
-Then $x^a y^b$ is invariant exactly when $a+b$ is even. The degree-$2m$ invariant piece is the whole degree-$2m$ piece of $\mathbb C[x,y]$, of dimension $2m+1$, while every odd-degree invariant piece is zero. Thus
+Then $x^a y^b$ is invariant exactly when $a+b$ is even. The degree-$2m$ invariant piece is the whole degree-$2m$ piece of $\CC[x,y]$, of dimension $2m+1$, while every odd-degree invariant piece is zero. Thus
 \[
 H_2(t)
 =

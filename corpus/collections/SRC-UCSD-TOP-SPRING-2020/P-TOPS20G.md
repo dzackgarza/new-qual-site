@@ -25,36 +25,36 @@ Here $\vee$ means one-point union of two topological spaces (wedge) and $T^2$ de
 ::: pf
 
 ::: pf-step
-Let $X=T^2\vee S^3$. Then $\pi_1(X)\cong\mathbb Z^2$.
+Let $X=T^2\vee S^3$. Then $\pi_1(X)\cong\ZZ^2$.
 
 ::: pf-proof
-The $S^3$ summand is simply connected and $\pi_1(T^2)=\mathbb Z^2$.
+The $S^3$ summand is simply connected and $\pi_1(T^2)=\ZZ^2$.
 :::
 
 :::
 
 ::: pf-step
-The universal cover $\widetilde X$ is obtained from $\mathbb R^2$ by attaching one copy of $S^3$ at each point of the fiber over the wedge point, indexed by $\mathbb Z^2$.
+The universal cover $\widetilde X$ is obtained from $\RR^2$ by attaching one copy of $S^3$ at each point of the fiber over the wedge point, indexed by $\ZZ^2$.
 
 ::: pf-proof
-The torus lifts to its universal cover $\mathbb R^2$, and the simply connected wedge summand lifts independently at each deck translate of the wedge point.
+The torus lifts to its universal cover $\RR^2$, and the simply connected wedge summand lifts independently at each deck translate of the wedge point.
 :::
 
 :::
 
 ::: pf-step
 Therefore
-$$\widetilde X\simeq\bigvee_{(m,n)\in\mathbb Z^2}S^3.$$
+$$\widetilde X\simeq\bigvee_{(m,n)\in\ZZ^2}S^3.$$
 
 ::: pf-proof
-Choose a contractible tree in $\mathbb R^2$ containing all lattice points and collapse it, together with the remaining contractible planar part, to the wedge point. The attached spheres remain as wedge summands.
+Choose a contractible tree in $\RR^2$ containing all lattice points and collapse it, together with the remaining contractible planar part, to the wedge point. The attached spheres remain as wedge summands.
 :::
 
 :::
 
 ::: pf-step
 The universal cover is $2$-connected and
-$$H_3(\widetilde X;\mathbb Z)\cong\bigoplus_{\mathbb Z^2}\mathbb Z\cong\mathbb Z[\mathbb Z^2]$$
+$$H_3(\widetilde X;\ZZ)\cong\bigoplus_{\ZZ^2}\ZZ\cong\ZZ[\ZZ^2]$$
 as an abelian group (and naturally as a deck-group module).
 
 ::: pf-proof
@@ -65,7 +65,7 @@ A wedge of $3$-spheres is $2$-connected, and its third homology is freely genera
 
 ::: pf-step
 Hurewicz and covering-space invariance of higher homotopy groups give
-$$\boxed{\pi_3(T^2\vee S^3)\cong\bigoplus_{\mathbb Z^2}\mathbb Z.}$$
+$$\boxed{\pi_3(T^2\vee S^3)\cong\bigoplus_{\ZZ^2}\ZZ.}$$
 
 ::: pf-proof
 Hurewicz gives $\pi_3(\widetilde X)\cong H_3(\widetilde X)$, and a covering induces an isomorphism on $\pi_3$.

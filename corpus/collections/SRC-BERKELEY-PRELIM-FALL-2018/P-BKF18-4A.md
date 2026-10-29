@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\mathbb R$ with $|a|<1$.
+Let $a\in\RR$ with $|a|<1$.
 Prove that
 \[
 \sum_{k=1}^{\infty}a^k\cos(k\theta)
@@ -26,7 +26,7 @@ Prove that
 :::
 
 ::: {.solution}
-We use the fact that for any complex number $z = e ^ { i \theta } = \cos \theta + i \sin \theta \in \mathbb { C }$
+We use the fact that for any complex number $z = e ^ { i \theta } = \cos \theta + i \sin \theta \in \CC$
 
 $$
 { \frac { 1 } { 1 - a z } } = \sum _ { k = 0 } ^ { \infty } a ^ { k } z ^ { k } = \sum _ { k = 0 } ^ { \infty } a ^ { k } e ^ { i k \theta } = 1 + \sum _ { k = 1 } ^ { \infty } a ^ { k } ( \cos ( k \theta ) + i \sin ( k \theta ) ) .

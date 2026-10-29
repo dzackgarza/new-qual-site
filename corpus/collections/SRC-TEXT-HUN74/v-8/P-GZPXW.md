@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-If $n>2$ and $\zeta$ is a primitive $n$th root of unity over $\mathbb{Q}$, then $[\mathbb{Q}(\zeta + \zeta^{-1}): \mathbb{Q}]=\phi(n)/2.$
+If $n>2$ and $\zeta$ is a primitive $n$th root of unity over $\QQ$, then $[\QQ(\zeta + \zeta^{-1}): \QQ]=\phi(n)/2.$
 :::
 
 ::: {.solution}

@@ -23,7 +23,7 @@ Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\fr
 :::
 
 ::: {.solution}
-Let $\Omega = \{z \in \mathbb{C} : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the crescent and $\mathbb{H} = \{w \in \mathbb{C} : \text{Im}(w) > 0\}$ the upper half-plane.
+Let $\Omega = \{z \in \CC : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the crescent and $\mathbb{H} = \{w \in \CC : \text{Im}(w) > 0\}$ the upper half-plane.
 
 * * *
 
@@ -33,7 +33,7 @@ Let $\Omega = \{z \in \mathbb{C} : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be th
 
 ::: pf-step
 
-**The Möbius transformation $\phi_1(z) = \frac{1}{z - 1}$ maps $\Omega$ conformally onto the vertical strip $S_1 = \{w_1 \in \mathbb{C} : -1 < \text{Re}(w_1) < -\frac{1}{2}\}$.**
+**The Möbius transformation $\phi_1(z) = \frac{1}{z - 1}$ maps $\Omega$ conformally onto the vertical strip $S_1 = \{w_1 \in \CC : -1 < \text{Re}(w_1) < -\frac{1}{2}\}$.**
 
 ::: pf-proof
 
@@ -111,7 +111,7 @@ Connectedness and evaluation at the interior test point $z = -1/2$.
 
 ::: pf-step
 
-**Map the strip $S_1$ to the standard horizontal strip $S_2 = \{w_2 \in \mathbb{C} : 0 < \text{Im}(w_2) < \pi\}$.**
+**Map the strip $S_1$ to the standard horizontal strip $S_2 = \{w_2 \in \CC : 0 < \text{Im}(w_2) < \pi\}$.**
 
 ::: pf-proof
 
@@ -172,7 +172,7 @@ $\frac{1}{z-1} + 1 = \frac{z}{z-1}$.
 
 ::: pf-step
 
-For $\zeta = \xi + i\eta \in S_2$, we have $\xi \in \mathbb{R}$ and $\eta \in (0, \pi)$.
+For $\zeta = \xi + i\eta \in S_2$, we have $\xi \in \RR$ and $\eta \in (0, \pi)$.
 
 ::: pf-proof
 
@@ -185,7 +185,7 @@ Definition of the horizontal strip $S_2$.
 ::: pf-step
 
 $\exp(\zeta) = e^\xi e^{i\eta}$.
-Since $\xi \in \mathbb{R}$, $e^\xi \in (0, \infty)$; and since $\eta \in (0, \pi)$, $\arg(\exp(\zeta)) = \eta \in (0, \pi)$.
+Since $\xi \in \RR$, $e^\xi \in (0, \infty)$; and since $\eta \in (0, \pi)$, $\arg(\exp(\zeta)) = \eta \in (0, \pi)$.
 
 ::: pf-proof
 
@@ -197,7 +197,7 @@ Properties of the complex exponential function.
 
 ::: pf-step
 
-Thus $\phi_3(\zeta) = e^\zeta$ is a biholomorphism from $S_2$ onto $\mathbb{H} = \{w \in \mathbb{C} : \text{Im}(w) > 0\}$.
+Thus $\phi_3(\zeta) = e^\zeta$ is a biholomorphism from $S_2$ onto $\mathbb{H} = \{w \in \CC : \text{Im}(w) > 0\}$.
 
 ::: pf-proof
 

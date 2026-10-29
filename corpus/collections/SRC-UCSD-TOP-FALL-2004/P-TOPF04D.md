@@ -33,7 +33,7 @@ The statement is correct under the standard convention that “manifold” means
 ::: pf-proof
 This convention is necessary. If manifolds with boundary are allowed, the statement is false: $M=\mathbb{RP}^2\times I$ is compact, connected, and nonorientable, but
 $$
-H_1(M;\mathbb Z)\cong H_1(\mathbb{RP}^2;\mathbb Z)\cong\mathbb Z/2,
+H_1(M;\ZZ)\cong H_1(\mathbb{RP}^2;\ZZ)\cong\ZZ/2,
 $$
 which is finite.
 :::
@@ -43,11 +43,11 @@ which is finite.
 ::: {.pf-step #h3-zero}
 Assume therefore that $M$ is closed. Then
 $$
-H_3(M;\mathbb Q)=0.
+H_3(M;\QQ)=0.
 $$
 
 ::: pf-proof
-For a connected closed manifold, top integral homology is $\mathbb Z$ when the manifold is orientable and $0$ when it is nonorientable. Since $M$ is nonorientable, $H_3(M;\mathbb Z)=0$, hence also $H_3(M;\mathbb Q)=0$.
+For a connected closed manifold, top integral homology is $\ZZ$ when the manifold is orientable and $0$ when it is nonorientable. Since $M$ is nonorientable, $H_3(M;\ZZ)=0$, hence also $H_3(M;\QQ)=0$.
 :::
 
 :::
@@ -84,14 +84,14 @@ so $b_1=1+b_2$.
 :::
 
 ::: pf-step
-Thus $H_1(M;\mathbb Z)$ is infinite.
+Thus $H_1(M;\ZZ)$ is infinite.
 
 ::: pf-proof
-A compact manifold has the homotopy type of a finite CW complex, so $H_1(M;\mathbb Z)$ is finitely generated. Its free rank is
+A compact manifold has the homotopy type of a finite CW complex, so $H_1(M;\ZZ)$ is finitely generated. Its free rank is
 $$
-\operatorname{rank}H_1(M;\mathbb Z)=\dim_{\mathbb Q}H_1(M;\mathbb Q)=b_1(M)\ge1
+\operatorname{rank}H_1(M;\ZZ)=\dim_{\QQ}H_1(M;\QQ)=b_1(M)\ge1
 $$
-by step [](#b1-bound){.pf-ref}. Therefore it contains a copy of $\mathbb Z$ and is infinite.
+by step [](#b1-bound){.pf-ref}. Therefore it contains a copy of $\ZZ$ and is infinite.
 :::
 
 :::

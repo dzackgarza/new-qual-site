@@ -34,7 +34,7 @@ Hint: First consider the positive linear functional $I(f) := \int f\varphi\,d\mu
 ::: {.solution}
 Define
 \[
-I:C_c(X)\to\mathbb R,
+I:C_c(X)\to\RR,
 \qquad
 I(f):=\int_X f\varphi\,d\mu.
 \]

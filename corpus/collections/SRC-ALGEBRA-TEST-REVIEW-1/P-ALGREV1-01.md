@@ -23,7 +23,7 @@ audit:
   note: "Distinguished the groups by cardinality: Q* is countable while R* is uncountable."
 ---
 ::: {.problem}
-Prove or disprove that $\mathbb{Q}^*$ under multiplication is isomorphic to $\mathbb{R}^*$ under multiplication.
+Prove or disprove that $\QQ^*$ under multiplication is isomorphic to $\RR^*$ under multiplication.
 :::
 
 ::: {.solution}
@@ -33,12 +33,12 @@ The two groups are not isomorphic.
 
 ::: {.pf-step #s1}
 
-The multiplicative group $\mathbb Q^*$ is countable.
+The multiplicative group $\QQ^*$ is countable.
 
 ::: pf-proof
 
-$\mathbb Q$ is countable, and removing the single element $0$ preserves
-countability. Hence $\mathbb Q^*=\mathbb Q\setminus\{0\}$ is countable.
+$\QQ$ is countable, and removing the single element $0$ preserves
+countability. Hence $\QQ^*=\QQ\setminus\{0\}$ is countable.
 
 :::
 
@@ -46,13 +46,13 @@ countability. Hence $\mathbb Q^*=\mathbb Q\setminus\{0\}$ is countable.
 
 ::: {.pf-step #s2}
 
-The multiplicative group $\mathbb R^*$ is uncountable.
+The multiplicative group $\RR^*$ is uncountable.
 
 ::: pf-proof
 
-$\mathbb R$ is uncountable. If $\mathbb R^*=\mathbb R\setminus\{0\}$ were
-countable, then adjoining the one-element set $\{0\}$ would make $\mathbb R$
-countable, a contradiction. Thus $\mathbb R^*$ is uncountable.
+$\RR$ is uncountable. If $\RR^*=\RR\setminus\{0\}$ were
+countable, then adjoining the one-element set $\{0\}$ would make $\RR$
+countable, a contradiction. Thus $\RR^*$ is uncountable.
 
 :::
 
@@ -68,7 +68,7 @@ A group isomorphism is, in particular, a bijection of the underlying sets.
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that the two underlying sets have different
 cardinalities. Hence
 $$
-\boxed{\mathbb Q^*\not\cong\mathbb R^*.}
+\boxed{\QQ^*\not\cong\RR^*.}
 $$
 
 :::

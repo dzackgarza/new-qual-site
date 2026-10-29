@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that for every natural number $n$ there exists a function $f:\mathbb R\to\mathbb R$ whose $n$th derivative is
+Prove that for every natural number $n$ there exists a function $f:\RR\to\RR$ whose $n$th derivative is
 \[
 f^{(n)}(x)=\frac1{\sqrt{3+x^4}}.
 \]
@@ -23,7 +23,7 @@ f^{(n)}(x)=\frac1{\sqrt{3+x^4}}.
 
 ::: {.solution}
 
-Fix $n\in\mathbb N$ and define
+Fix $n\in\NN$ and define
 \[
 F_0(x)=\frac1{\sqrt{3+x^4}}.
 \]
@@ -45,7 +45,7 @@ F_k'(x)=F_{k-1}(x)
 
 ::: pf-proof
 
-The function $F_0$ is continuous on $\mathbb R$. If $F_{k-1}$ is continuous,
+The function $F_0$ is continuous on $\RR$. If $F_{k-1}$ is continuous,
 then the Fundamental Theorem of Calculus applied to
 \[
 F_k(x)=\int_0^xF_{k-1}(t)\,dt
@@ -69,7 +69,7 @@ The function
 satisfies
 \[
 f^{(n)}(x)=\frac1{\sqrt{3+x^4}}
-\qquad(x\in\mathbb R).
+\qquad(x\in\RR).
 \]
 
 

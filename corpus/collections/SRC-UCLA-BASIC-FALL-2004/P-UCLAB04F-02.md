@@ -27,7 +27,7 @@ You may use without proof theorems about maxima and minima of continuous or diff
 
 ::: {.pf-step #s1-1}
 
-Rolle's Theorem states: if $f:[a,b]\to\mathbb R$ is continuous on $[a,b]$, differentiable on $(a,b)$, and
+Rolle's Theorem states: if $f:[a,b]\to\RR$ is continuous on $[a,b]$, differentiable on $(a,b)$, and
 \[
 f(a)=f(b),
 \]

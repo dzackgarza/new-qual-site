@@ -44,7 +44,7 @@ $$
 \left( \begin{array} { r r r | r } - 1 & - 3 & 5 & 1 \\ - 1 & - 7 & 1 1 & 3 \\ 0 & - 4 & 6 & 2 \end{array} \right) \xrightarrow { \text{row reduce} } \left( \begin{array} { r r r | r } 1 & 0 & - 1 / 2 & 1 / 2 \\ 0 & 1 & - 3 / 2 & - 1 / 2 \\ 0 & 0 & 0 & 0 \end{array} \right) .
 $$
 
-Thus $u _ { 2 , 1 } = ( 1 , 1 , 1 ) ^ { T }$ works (as does $( 1 , 1 , 1 ) ^ { T } + \alpha ( 1 , 3 , 2 ) ^ { T }$ for any $\alpha \in \mathbb { C } )$ and we have
+Thus $u _ { 2 , 1 } = ( 1 , 1 , 1 ) ^ { T }$ works (as does $( 1 , 1 , 1 ) ^ { T } + \alpha ( 1 , 3 , 2 ) ^ { T }$ for any $\alpha \in \CC )$ and we have
 
 $$
 U = \begin{pmatrix} 1 & 1 & 1 \\ 2 & 3 & 1 \\ 1 & 2 & 1 \end{pmatrix} , \qquad U ^ { - 1 } A U = J = { ( \begin{array} { l l l } { - 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 1 } \end{array} ) } \ .

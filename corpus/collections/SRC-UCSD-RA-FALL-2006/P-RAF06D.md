@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Recall that a function $f : (a, b) \to \mathbb{R}$ (with $-\infty \leq a < b \leq \infty$) is called convex if
+Recall that a function $f : (a, b) \to \RR$ (with $-\infty \leq a < b \leq \infty$) is called convex if
 $$
 f((1-\lambda)x + \lambda y) \leq (1-\lambda)f(x) + \lambda f(y), \quad \forall \lambda \in (0, 1), x, y \in (a, b).
 $$

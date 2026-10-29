@@ -60,7 +60,7 @@ A = -\frac{q}{2} + s = -\frac{2}{2} + 0 = -1.
 The three complex cube roots of $A = -1$:
 
 ::: pf-proof
-The solutions to $c^3 = -1 = e^{i\pi}$ in $\mathbb{C}$ are:
+The solutions to $c^3 = -1 = e^{i\pi}$ in $\CC$ are:
 
 - $c_1 = -1$,
 - $c_2 = e^{i\pi/3} = \frac{1 + i\sqrt{3}}{2}$,

@@ -36,7 +36,7 @@ If $T\ne0$, then $\ker T\ne V$ and $\operatorname{im}T\ne0$, so
 \]
 Thus $T$ is an isomorphism.
 
-For (2), let $T\in\operatorname{End}_G(V)$. Because the field is $\mathbb C$, $T$ has an eigenvalue $\lambda\in\mathbb C$. Then
+For (2), let $T\in\operatorname{End}_G(V)$. Because the field is $\CC$, $T$ has an eigenvalue $\lambda\in\CC$. Then
 \[
 T-\lambda I
 \]
@@ -46,6 +46,6 @@ T=\lambda I.
 \]
 Thus
 \[
-\boxed{\operatorname{End}_G(V)=\mathbb C\,I.}
+\boxed{\operatorname{End}_G(V)=\CC\,I.}
 \]
 :::

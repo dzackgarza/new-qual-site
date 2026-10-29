@@ -17,8 +17,8 @@ review: draft
 ::: {.problem}
 Let $T^2 = S^1 \times S^1$ be the $2$-torus.
 Let $f : T^2 \to T^2$ be a self-map of degree $1$.
-Show that the map $f^* : H^1(T^2, \mathbb{Z}) \to H^1(T^2, \mathbb{Z})$ defines an element of $SL_2(\mathbb{Z})$.
-Here, we identify $H^1(T^2, \mathbb{Z})$ with $\mathbb{Z} \oplus \mathbb{Z}$ using the identification $T^2 = S^1 \times S^1$.
+Show that the map $f^* : H^1(T^2, \ZZ) \to H^1(T^2, \ZZ)$ defines an element of $SL_2(\ZZ)$.
+Here, we identify $H^1(T^2, \ZZ)$ with $\ZZ \oplus \ZZ$ using the identification $T^2 = S^1 \times S^1$.
 :::
 
 ::: {.solution}
@@ -27,9 +27,9 @@ Here, we identify $H^1(T^2, \mathbb{Z})$ with $\mathbb{Z} \oplus \mathbb{Z}$ usi
 
 ::: pf-step
 
-Let $\alpha,\beta$ be the standard basis of $H^1(T^2;\mathbb Z)$, chosen so that
+Let $\alpha,\beta$ be the standard basis of $H^1(T^2;\ZZ)$, chosen so that
 $$
-\alpha\smile\beta=[T^2]^*\in H^2(T^2;\mathbb Z).
+\alpha\smile\beta=[T^2]^*\in H^2(T^2;\ZZ).
 $$
 
 ::: pf-proof
@@ -42,7 +42,7 @@ Take the degree-one classes pulled back from the two circle factors with the pro
 
 ::: pf-step
 
-Write the matrix of $f^*:H^1(T^2;\mathbb Z)\to H^1(T^2;\mathbb Z)$ in this basis as
+Write the matrix of $f^*:H^1(T^2;\ZZ)\to H^1(T^2;\ZZ)$ in this basis as
 $$
 A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}.
 $$
@@ -53,7 +53,7 @@ $$
 
 ::: pf-proof
 
-This is just the coordinate description of an endomorphism of the free abelian group $H^1(T^2;\mathbb Z)\cong\mathbb Z^2$.
+This is just the coordinate description of an endomorphism of the free abelian group $H^1(T^2;\ZZ)\cong\ZZ^2$.
 
 :::
 
@@ -80,7 +80,7 @@ The squares $\alpha^2$ and $\beta^2$ vanish, while $\beta\smile\alpha=-\alpha\sm
 
 ::: {.pf-step #s4}
 
-Since $\deg f=1$, the induced map on $H^2(T^2;\mathbb Z)$ is the identity.
+Since $\deg f=1$, the induced map on $H^2(T^2;\ZZ)$ is the identity.
 
 ::: pf-proof
 
@@ -94,7 +94,7 @@ On the top cohomology of a closed oriented manifold, $f^*$ is multiplication by 
 
 Thus $\det A=1$, and therefore
 $$
-\boxed{f^*|_{H^1}\in SL_2(\mathbb Z).}
+\boxed{f^*|_{H^1}\in SL_2(\ZZ).}
 $$
 
 ::: pf-proof

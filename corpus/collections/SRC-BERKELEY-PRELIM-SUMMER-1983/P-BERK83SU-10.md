@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,2\pi]\to\mathbb R$ be twice differentiable and satisfy
+Let $f:[0,2\pi]\to\RR$ be twice differentiable and satisfy
 \[
 \int_0^{2\pi}f(x)\,dx=0,
 \qquad

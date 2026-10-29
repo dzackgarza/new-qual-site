@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-019
 kind: problem
-title: Chinese remainder theorem for $\mathbb Z_{mn}\cong\mathbb Z_m\times\mathbb Z_n$
+title: Chinese remainder theorem for $\ZZ_{mn}\cong\ZZ_m\times\ZZ_n$
 classification:
   areas: [algebra]
   topics: []
@@ -20,7 +20,7 @@ Let m and n be relatively prime integers.
 
 (a) Show that if c and d are any integers, then there is an integer x such that $x \equiv c ( \mathrm { m o d } m )$ and $x \equiv d ( \mathrm { m o d } n )$
 
-(b) Show that $\mathbb { Z } _ { m n }$ and $\mathbb { Z } _ { m } \times \mathbb { Z } _ { n }$ are isomorphic as rings.
+(b) Show that $\ZZ _ { m n }$ and $\ZZ _ { m } \times \ZZ _ { n }$ are isomorphic as rings.
 :::
 
 ::: {.solution}

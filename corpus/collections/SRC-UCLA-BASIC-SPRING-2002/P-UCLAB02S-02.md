@@ -16,43 +16,43 @@ audit:
 ---
 
 ::: {.problem}
-Show that the set $\mathbb Q$ of rational numbers in $\mathbb R$ cannot be expressed as the intersection of a countable collection of open subsets of $\mathbb R$.
+Show that the set $\QQ$ of rational numbers in $\RR$ cannot be expressed as the intersection of a countable collection of open subsets of $\RR$.
 :::
 
 ::: {.solution}
 
 Suppose, for contradiction, that
 \[
-\mathbb Q
+\QQ
 =
 \bigcap_{n=1}^{\infty}U_n
 \]
-with every $U_n\subseteq\mathbb R$ open.
+with every $U_n\subseteq\RR$ open.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-Every $U_n$ is dense in $\mathbb R$.
+Every $U_n$ is dense in $\RR$.
 
 
 ::: pf-proof
 
 Since
 \[
-\mathbb Q\subseteq U_n
+\QQ\subseteq U_n
 \]
-for every $n$, and $\mathbb Q$ is dense in $\mathbb R$,
+for every $n$, and $\QQ$ is dense in $\RR$,
 \[
 \overline{U_n}
 \supseteq
-\overline{\mathbb Q}
+\overline{\QQ}
 =
-\mathbb R.
+\RR.
 \]
 Hence
 \[
-\overline{U_n}=\mathbb R.
+\overline{U_n}=\RR.
 \]
 
 :::
@@ -63,11 +63,11 @@ Hence
 
 Enumerate
 \[
-\mathbb Q=\{q_1,q_2,\ldots\}
+\QQ=\{q_1,q_2,\ldots\}
 \]
 and define
 \[
-V_n=\mathbb R\setminus\{q_n\}.
+V_n=\RR\setminus\{q_n\}.
 \]
 Then every $V_n$ is open and dense.
 
@@ -102,7 +102,7 @@ U_n\cap V_n
 \]
 is open and dense by steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
-Apply the Baire category theorem to the complete metric space $\mathbb R$: the intersection of countably many open dense subsets of a nonempty complete metric space is dense, hence nonempty.
+Apply the Baire category theorem to the complete metric space $\RR$: the intersection of countably many open dense subsets of a nonempty complete metric space is dense, hence nonempty.
 Thus the displayed intersection is nonempty.
 
 :::
@@ -130,16 +130,16 @@ Distribute the intersection:
 \cap
 \left(\bigcap_{n=1}^{\infty}V_n\right)\\
 &=
-\mathbb Q
+\QQ
 \cap
 \left(
-\mathbb R\setminus\mathbb Q
+\RR\setminus\QQ
 \right)\\
 &=
 \varnothing.
 \end{aligned}
 \]
-The second equality uses the assumed representation of $\mathbb Q$ and the definition of the $V_n$.
+The second equality uses the assumed representation of $\QQ$ and the definition of the $V_n$.
 
 :::
 
@@ -147,7 +147,7 @@ The second equality uses the assumed representation of $\mathbb Q$ and the defin
 
 ::: {.pf-step #s1-5}
 
-Therefore $\mathbb Q$ is not a countable intersection of open subsets of $\mathbb R$.
+Therefore $\QQ$ is not a countable intersection of open subsets of $\RR$.
 
 
 ::: pf-proof

@@ -37,7 +37,7 @@ For which of the following rings is it possible for the product of two nonzero e
 :::
 
 ::: {.solution}
-The answer is $\boxed{\text{(C)}}$, the ring $C([0,1],\mathbb R)$ of continuous real-valued functions.
+The answer is $\boxed{\text{(C)}}$, the ring $C([0,1],\RR)$ of continuous real-valued functions.
 
 ::: pf
 
@@ -69,7 +69,7 @@ The other listed rings are integral domains.
 
 ::: pf-proof
 
-$\mathbb C$ is a field; $\mathbb Z/11$ is a field because $11$ is prime; $\mathbb Q(\sqrt2)$ is a field; and $\mathbb R[x]$ is a polynomial ring over a field, hence an integral domain.
+$\CC$ is a field; $\ZZ/11$ is a field because $11$ is prime; $\QQ(\sqrt2)$ is a field; and $\RR[x]$ is a polynomial ring over a field, hence an integral domain.
 None of them has nonzero zero divisors.
 
 :::

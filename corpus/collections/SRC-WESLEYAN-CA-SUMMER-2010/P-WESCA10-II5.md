@@ -51,7 +51,7 @@ By definition, $g$ extends holomorphically across $w=0$. Hence $g$ is bounded
 on some disk $|w|<\delta$. Therefore $f(z)=g(1/z)$ is bounded for
 $|z|>1/\delta$. Since $f$ is continuous on the compact disk
 $|z|\le1/\delta$, it is bounded there as well. Thus $f$ is bounded on all of
-$\mathbb C$, so Liouville's theorem implies that $f$ is constant.
+$\CC$, so Liouville's theorem implies that $f$ is constant.
 
 :::
 

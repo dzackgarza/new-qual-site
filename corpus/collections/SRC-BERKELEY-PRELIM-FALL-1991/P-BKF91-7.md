@@ -30,7 +30,7 @@ where $A$ is a smooth real $n\times n$ matrix-valued function. Assume that
 \[
 \langle A(t)y,y\rangle\le c\|y\|^2
 \]
-for all $y\in\mathbb R^n$ and all $t$, where $c\in\mathbb R$ is fixed. Prove that every solution satisfies
+for all $y\in\RR^n$ and all $t$, where $c\in\RR$ is fixed. Prove that every solution satisfies
 \[
 \|x(t)\|\le e^{ct}\|x(0)\|
 \qquad(t>0).

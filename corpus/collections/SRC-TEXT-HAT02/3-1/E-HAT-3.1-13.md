@@ -68,7 +68,7 @@ Since $G$ is abelian, every homomorphism
 \]
 factors uniquely through the abelianization
 \[
-\pi_1(X)^{\mathrm{ab}}\cong H_1(X;\mathbb Z).
+\pi_1(X)^{\mathrm{ab}}\cong H_1(X;\ZZ).
 \]
 Hence
 \[
@@ -100,7 +100,7 @@ The cohomological universal coefficient sequence is
 \to H^1(X;G)
 \to\operatorname{Hom}(H_1(X),G)\to0.
 \]
-Since $X$ is connected, $H_0(X)\cong\mathbb Z$ is free, so the Ext term vanishes.
+Since $X$ is connected, $H_0(X)\cong\ZZ$ is free, so the Ext term vanishes.
 
 :::
 

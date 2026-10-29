@@ -24,15 +24,15 @@ audit:
   note: "Checked existence of both automorphisms, all three subgroup-intersection cases, and the degrees and invariance of every fixed-field generator."
 ---
 ::: {.problem}
-Let $K$ be the splitting field of $x^4 - 2$ over $\mathbb{Q}$.
-What is $[K:\mathbb{Q}]$?
-Describe the Galois group $G = \text{Gal}(K/\mathbb{Q})$: either find generators of the group and indicate relations among those generators which determine its multiplication table, or identify a familiar group to which $G$ is isomorphic.
+Let $K$ be the splitting field of $x^4 - 2$ over $\QQ$.
+What is $[K:\QQ]$?
+Describe the Galois group $G = \text{Gal}(K/\QQ)$: either find generators of the group and indicate relations among those generators which determine its multiplication table, or identify a familiar group to which $G$ is isomorphic.
 Find all the subgroups of $G$ and their orders, and indicate the corresponding subfields of $K$.
 :::
 
 ::: {.solution}
-Put $a=\sqrt[4]{2}>0$. Then $K=\mathbb Q(a,i)$ has degree $8$
-over $\mathbb Q$, and its Galois group is the dihedral group of
+Put $a=\sqrt[4]{2}>0$. Then $K=\QQ(a,i)$ has degree $8$
+over $\QQ$, and its Galois group is the dihedral group of
 order $8$. Define its generators by
 $$
 r(a)=ia,\quad r(i)=i,\qquad
@@ -40,17 +40,17 @@ s(a)=a,\quad s(i)=-i.
 $$
 All subgroups and their fixed fields are as follows.
 
-| Subgroup $H$ | Order | Fixed field $K^H$ | Degree over $\mathbb Q$ |
+| Subgroup $H$ | Order | Fixed field $K^H$ | Degree over $\QQ$ |
 | --- | --- | --- | --- |
-| $G$ | $8$ | $\mathbb Q$ | $1$ |
-| $\langle r\rangle$ | $4$ | $\mathbb Q(i)$ | $2$ |
-| $\langle r^2,s\rangle$ | $4$ | $\mathbb Q(a^2)$ | $2$ |
-| $\langle r^2,rs\rangle$ | $4$ | $\mathbb Q(ia^2)$ | $2$ |
-| $\langle r^2\rangle$ | $2$ | $\mathbb Q(a^2,i)$ | $4$ |
-| $\langle s\rangle$ | $2$ | $\mathbb Q(a)$ | $4$ |
-| $\langle r^2s\rangle$ | $2$ | $\mathbb Q(ia)$ | $4$ |
-| $\langle rs\rangle$ | $2$ | $\mathbb Q((1+i)a)$ | $4$ |
-| $\langle r^3s\rangle$ | $2$ | $\mathbb Q((1-i)a)$ | $4$ |
+| $G$ | $8$ | $\QQ$ | $1$ |
+| $\langle r\rangle$ | $4$ | $\QQ(i)$ | $2$ |
+| $\langle r^2,s\rangle$ | $4$ | $\QQ(a^2)$ | $2$ |
+| $\langle r^2,rs\rangle$ | $4$ | $\QQ(ia^2)$ | $2$ |
+| $\langle r^2\rangle$ | $2$ | $\QQ(a^2,i)$ | $4$ |
+| $\langle s\rangle$ | $2$ | $\QQ(a)$ | $4$ |
+| $\langle r^2s\rangle$ | $2$ | $\QQ(ia)$ | $4$ |
+| $\langle rs\rangle$ | $2$ | $\QQ((1+i)a)$ | $4$ |
+| $\langle r^3s\rangle$ | $2$ | $\QQ((1-i)a)$ | $4$ |
 | $\{1\}$ | $1$ | $K$ | $8$ |
 
 ::: pf
@@ -62,16 +62,16 @@ The degree and group presentation are as asserted.
 ::: pf-proof
 
 The roots of $x^4-2$ are $a,ia,-a,-ia$. Their generated field
-contains $i=(ia)/a$, so it is $\mathbb Q(a,i)$.
-Eisenstein's criterion at $2$ gives $[\mathbb Q(a):\mathbb Q]=4$
-[@DF04]. Since $\mathbb Q(a)$ is real and $i$ is not,
-$[K:\mathbb Q(a)]=2$. Hence $[K:\mathbb Q]=8$.
-As a splitting field in characteristic zero, $K/\mathbb Q$ is
+contains $i=(ia)/a$, so it is $\QQ(a,i)$.
+Eisenstein's criterion at $2$ gives $[\QQ(a):\QQ]=4$
+[@DF04]. Since $\QQ(a)$ is real and $i$ is not,
+$[K:\QQ(a)]=2$. Hence $[K:\QQ]=8$.
+As a splitting field in characteristic zero, $K/\QQ$ is
 Galois, with a group of order $8$.
 
-The degree $[K:\mathbb Q(i)]=4$ shows that the minimal polynomial
-of $a$ over $\mathbb Q(i)$ is still $x^4-2$. Sending $a$ to the
-root $ia$ therefore defines a $\mathbb Q(i)$-embedding of $K$ into
+The degree $[K:\QQ(i)]=4$ shows that the minimal polynomial
+of $a$ over $\QQ(i)$ is still $x^4-2$. Sending $a$ to the
+root $ia$ therefore defines a $\QQ(i)$-embedding of $K$ into
 itself. Its image contains $i$ and $ia$, hence also $a$, so it is
 an automorphism. This is $r$. Complex conjugation restricts to the
 automorphism $s$ of $K$.
@@ -134,20 +134,20 @@ Each field in the table is the fixed field of the indicated subgroup.
 
 ::: pf-proof
 
-The Galois correspondence gives $[K^H:\mathbb Q]=8/|H|$ [@DF04].
+The Galois correspondence gives $[K^H:\QQ]=8/|H|$ [@DF04].
 It therefore suffices to show that each proposed field is fixed
 by $H$ and has this degree.
 
 The generators $i$, $a^2=\sqrt2$, and $ia^2=\sqrt{-2}$ are fixed,
 respectively, by $\langle r\rangle$, $\langle r^2,s\rangle$,
 and $\langle r^2,rs\rangle$, as follows directly from the formulas
-for $r,s$. Their degrees over $\mathbb Q$ are $2$: the first and
+for $r,s$. Their degrees over $\QQ$ are $2$: the first and
 third are nonreal roots of rational quadratics, and $a^2$ has
 minimal polynomial $x^2-2$.
 
 The subgroup $\langle r^2\rangle$ fixes both $a^2$ and $i$.
-The field $\mathbb Q(a^2,i)$ has degree $4$, since
-$\mathbb Q(a^2)$ is real quadratic and adjoining $i$ has degree $2$.
+The field $\QQ(a^2,i)$ has degree $4$, since
+$\QQ(a^2)$ is real quadratic and adjoining $i$ has degree $2$.
 
 For the remaining four subgroups of order $2$, direct computation gives
 $$
@@ -158,13 +158,13 @@ $$
 Let $b$ be any of these four nonzero fixed generators.
 Since $r$ fixes $i$ and sends $a$ to $ia$, the four elements
 $b,ib,-b,-ib$ are distinct images of $b$ under automorphisms of $K$.
-All are roots of its minimal polynomial over $\mathbb Q$, so
-$[\mathbb Q(b):\mathbb Q]\geq4$.
+All are roots of its minimal polynomial over $\QQ$, so
+$[\QQ(b):\QQ]\geq4$.
 On the other hand, $b$ belongs to the fixed field of the indicated
 order-$2$ subgroup, which has degree $4$. Thus the degree is exactly
-$4$, and $\mathbb Q(b)$ equals that fixed field.
+$4$, and $\QQ(b)$ equals that fixed field.
 
-Finally, the endpoint fields $K^G=\mathbb Q$ and $K^{\{1\}}=K$
+Finally, the endpoint fields $K^G=\QQ$ and $K^{\{1\}}=K$
 are part of the Galois correspondence. This proves every row;
 the subgroup enumeration in step [](#s2){.pf-ref} proves that no subfield
 has been omitted. Field inclusions are obtained by reversing

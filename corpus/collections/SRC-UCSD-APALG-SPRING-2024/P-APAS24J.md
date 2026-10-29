@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $n$ be a positive integer and let $G\subseteq\mathrm{GL}_n(\mathbb{C})$ be the subgroup
+Let $n$ be a positive integer and let $G\subseteq\mathrm{GL}_n(\CC)$ be the subgroup
 \[
 G=\left\{\begin{pmatrix}
 \varepsilon_1 & 0 & \cdots & 0 \\
@@ -25,7 +25,7 @@ G=\left\{\begin{pmatrix}
 \varepsilon_1,\varepsilon_2,\ldots,\varepsilon_n=\pm 1\right\}
 \]
 of diagonal matrices whose diagonal entries are $\pm 1$.
-Find the Hilbert series of the invariant ring $\mathbb{C}[x_1,x_2,\ldots,x_n]^G$.
+Find the Hilbert series of the invariant ring $\CC[x_1,x_2,\ldots,x_n]^G$.
 :::
 
 ::: {.solution}
@@ -49,13 +49,13 @@ x_1^2,\ldots,x_n^2,
 \]
 so
 \[
-\boxed{\mathbb C[x_1,\ldots,x_n]^G
-=\mathbb C[x_1^2,\ldots,x_n^2].}
+\boxed{\CC[x_1,\ldots,x_n]^G
+=\CC[x_1^2,\ldots,x_n^2].}
 \]
 These $n$ algebraically independent generators all have degree $2$. Hence the Hilbert series is
 \[
 \boxed{
-H_{\mathbb C[x_1,\ldots,x_n]^G}(t)
+H_{\CC[x_1,\ldots,x_n]^G}(t)
 =\frac1{(1-t^2)^n}.
 }
 \]

@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be a CW-complex obtained from $S^n$, $n \geq 1$, by attaching a single $(n+1)$-cell by a map $\varphi : S^n \to S^n$ of degree $4$.
-Compute the cohomology ring $H^*(X; \mathbb{Z}/2)$.
+Compute the cohomology ring $H^*(X; \ZZ/2)$.
 :::
 
 ::: {.solution}
@@ -25,11 +25,11 @@ Compute the cohomology ring $H^*(X; \mathbb{Z}/2)$.
 
 ::: pf-step
 
-With $\mathbb F_2=\mathbb Z/2$ coefficients, the cellular boundary induced by the degree-$4$ attaching map is zero.
+With $\mathbb F_2=\ZZ/2$ coefficients, the cellular boundary induced by the degree-$4$ attaching map is zero.
 
 ::: pf-proof
 
-The cellular boundary $C_{n+1}(X;\mathbb Z)\to C_n(X;\mathbb Z)$ is multiplication by $4$. After reducing coefficients modulo $2$, it becomes zero.
+The cellular boundary $C_{n+1}(X;\ZZ)\to C_n(X;\ZZ)$ is multiplication by $4$. After reducing coefficients modulo $2$, it becomes zero.
 
 :::
 
@@ -84,9 +84,9 @@ If $n=1$, then again $u^2=0$.
 
 ::: pf-proof
 
-Here $H_1(X;\mathbb Z)\cong\mathbb Z/4$. The class $u\in H^1(X;\mathbb F_2)=\operatorname{Hom}(\mathbb Z/4,\mathbb F_2)$ lifts to a class in $H^1(X;\mathbb Z/4)$ under reduction $\mathbb Z/4\to\mathbb F_2$. Hence its Bockstein for
+Here $H_1(X;\ZZ)\cong\ZZ/4$. The class $u\in H^1(X;\mathbb F_2)=\operatorname{Hom}(\ZZ/4,\mathbb F_2)$ lifts to a class in $H^1(X;\ZZ/4)$ under reduction $\ZZ/4\to\mathbb F_2$. Hence its Bockstein for
 $$
-0\to\mathbb F_2\to\mathbb Z/4\to\mathbb F_2\to0
+0\to\mathbb F_2\to\ZZ/4\to\mathbb F_2\to0
 $$
 vanishes. In degree one this Bockstein equals $Sq^1(u)=u^2$, so $u^2=0$.
 

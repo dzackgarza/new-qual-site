@@ -26,14 +26,14 @@ audit:
 ---
 
 ::: {.problem}
-Consider the Hilbert space $\ell^2(\mathbb{N})$ with the usual norm $\|f\|_2 = (\sum_{n \in \mathbb{N}} |f(n)|^2)^{1/2}$.
+Consider the Hilbert space $\ell^2(\NN)$ with the usual norm $\|f\|_2 = (\sum_{n \in \NN} |f(n)|^2)^{1/2}$.
 
-(1) Prove that $\ell^2(\mathbb{N})$ is separable, i.e., contains a countable dense subset.
+(1) Prove that $\ell^2(\NN)$ is separable, i.e., contains a countable dense subset.
 
-(2) Let $S \subset \ell^2(\mathbb{N})$ be an uncountable set.
+(2) Let $S \subset \ell^2(\NN)$ be an uncountable set.
 Prove that $S$ contains a convergent sequence which consists of pairwise distinct elements of $S$.
 
-Hint: Use (1) to first prove that for every $\epsilon > 0$, there exists $\eta \in \ell^2(\mathbb{N})$ such that the set $\{\xi \in S : \|\xi - \eta\|_2 < \epsilon\}$ is uncountable.
+Hint: Use (1) to first prove that for every $\epsilon > 0$, there exists $\eta \in \ell^2(\NN)$ such that the set $\{\xi \in S : \|\xi - \eta\|_2 < \epsilon\}$ is uncountable.
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ Hint: Use (1) to first prove that for every $\epsilon > 0$, there exists $\eta \
 
 ::: pf-step
 
-Construct a countable dense subset of $\ell^2(\mathbb N)$.
+Construct a countable dense subset of $\ell^2(\NN)$.
 
 ::: pf-proof
 
@@ -64,7 +64,7 @@ Then
 \[
 \|x-q\|_2^2<\frac{\varepsilon^2}{2}<\varepsilon^2.
 \]
-Thus $D$ is dense, and $\ell^2(\mathbb N)$ is separable.
+Thus $D$ is dense, and $\ell^2(\NN)$ is separable.
 
 :::
 

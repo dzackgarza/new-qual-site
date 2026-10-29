@@ -28,11 +28,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be continuous on $\mathbb C$ and analytic on
+Let $f$ be continuous on $\CC$ and analytic on
 \[
-\{z\in\mathbb C:\operatorname{Im}z\ne0\}.
+\{z\in\CC:\operatorname{Im}z\ne0\}.
 \]
-Prove that $f$ is analytic on all of $\mathbb C$.
+Prove that $f$ is analytic on all of $\CC$.
 :::
 
 ::: {.solution}

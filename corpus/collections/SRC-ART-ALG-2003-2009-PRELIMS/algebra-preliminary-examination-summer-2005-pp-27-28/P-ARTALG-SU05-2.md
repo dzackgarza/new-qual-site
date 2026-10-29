@@ -30,7 +30,7 @@ audit:
 :::
 
 ::: {.solution}
-Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
+Write $C_m=\ZZ/m\ZZ$ as an additive group.
 
 ::: pf
 

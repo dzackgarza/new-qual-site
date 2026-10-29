@@ -14,14 +14,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A, B \in \mathbb{R}^{n \times n}$ be two real symmetric matrices.
-If $AB = BA$, show that there exists an orthogonal matrix $Q \in \mathbb{R}^{n \times n}$ such that $Q^T AQ$ and $Q^T BQ$ are both diagonal.
+Let $A, B \in \RR^{n \times n}$ be two real symmetric matrices.
+If $AB = BA$, show that there exists an orthogonal matrix $Q \in \RR^{n \times n}$ such that $Q^T AQ$ and $Q^T BQ$ are both diagonal.
 :::
 
 ::: {.solution}
 Because \(A\) is real symmetric, the spectral theorem gives an orthogonal decomposition
 \[
-\mathbb R^n=\bigoplus_{\lambda}E_\lambda,
+\RR^n=\bigoplus_{\lambda}E_\lambda,
 \qquad
 E_\lambda=\ker(A-\lambda I),
 \]
@@ -43,7 +43,7 @@ is again symmetric with respect to the Euclidean inner product, because for \(u,
 \]
 Hence the spectral theorem applied on each \(E_\lambda\) gives an orthonormal basis of \(E_\lambda\) consisting of eigenvectors of \(B\).
 
-Taking the union of these orthonormal bases over all eigenvalues \(\lambda\) gives an orthonormal basis of \(\mathbb R^n\) consisting of vectors that are simultaneously eigenvectors of both \(A\) and \(B\). Let \(Q\) be the orthogonal matrix whose columns are these common eigenvectors. Then both
+Taking the union of these orthonormal bases over all eigenvalues \(\lambda\) gives an orthonormal basis of \(\RR^n\) consisting of vectors that are simultaneously eigenvectors of both \(A\) and \(B\). Let \(Q\) be the orthogonal matrix whose columns are these common eigenvectors. Then both
 \[
 Q^TAQ
 \quad\text{and}\quad

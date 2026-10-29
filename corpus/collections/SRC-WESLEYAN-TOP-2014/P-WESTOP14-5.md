@@ -11,7 +11,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $C[0,1]$ be the set of continuous functions $f:[0,1]\to\mathbb R$. Define
+Let $C[0,1]$ be the set of continuous functions $f:[0,1]\to\RR$. Define
 \[
 \rho(f,g)=\int_0^1|f(x)-g(x)|\,dx
 \]

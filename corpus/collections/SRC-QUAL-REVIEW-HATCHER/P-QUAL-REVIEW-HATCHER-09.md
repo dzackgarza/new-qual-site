@@ -39,9 +39,9 @@ Prove that $n$ is odd.
 
 Let
 \[
-u\in H^n(S^n;\mathbb Z)
+u\in H^n(S^n;\ZZ)
 \cong
-\mathbb Z
+\ZZ
 \]
 be a generator.
 
@@ -53,7 +53,7 @@ b=\pi_2^*u
 \]
 in
 \[
-H^n(S^n\times S^n;\mathbb Z).
+H^n(S^n\times S^n;\ZZ).
 \]
 
 ::: pf
@@ -63,9 +63,9 @@ H^n(S^n\times S^n;\mathbb Z).
 By the Künneth theorem,
 \[
 \boxed{
-H^n(S^n\times S^n;\mathbb Z)
+H^n(S^n\times S^n;\ZZ)
 \cong
-\mathbb Z a\oplus\mathbb Z b}.
+\ZZ a\oplus\ZZ b}.
 \]
 
 
@@ -256,7 +256,7 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref}.
 
 Since
 \[
-H^{2n}(S^n;\mathbb Z)=0,
+H^{2n}(S^n;\ZZ)=0,
 \]
 one has
 \[
@@ -398,9 +398,9 @@ Substitute steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref} into step [](#s
 By the Künneth theorem,
 \[
 \boxed{
-H^{2n}(S^n\times S^n;\mathbb Z)
+H^{2n}(S^n\times S^n;\ZZ)
 \cong
-\mathbb Z}
+\ZZ}
 \]
 with generator
 \[
@@ -414,7 +414,7 @@ In total degree \(2n\), the only nonzero Künneth term is
 \[
 H^n(S^n)\otimes H^n(S^n)
 \cong
-\mathbb Z,
+\ZZ,
 \]
 and the cross product corresponds to
 \[
@@ -461,7 +461,7 @@ generates an infinite cyclic group.
 
 By step [](#s1-15){.pf-ref},
 \[
-H^{2n}(S^n\times S^n;\mathbb Z)\cong\mathbb Z
+H^{2n}(S^n\times S^n;\ZZ)\cong\ZZ
 \]
 has no nonzero torsion.
 

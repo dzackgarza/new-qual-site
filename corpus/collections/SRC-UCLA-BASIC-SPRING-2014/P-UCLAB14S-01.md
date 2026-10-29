@@ -108,7 +108,7 @@ The vectors
 \[
 e_1,\ Ae_1,\ A^2e_1,\ A^3e_1
 \]
-form a basis of $\mathbb R^4$.
+form a basis of $\RR^4$.
 
 
 ::: pf-proof
@@ -345,20 +345,20 @@ W\subseteq\ker q(A).
 
 If
 \[
-W=\mathbb R^4,
+W=\RR^4,
 \]
-then $q(A)$ would vanish on all of $\mathbb R^4$, so
+then $q(A)$ would vanish on all of $\RR^4$, so
 \[
 q(A)=0.
 \]
 That would make the degree-$2$ polynomial $q$ an annihilating polynomial for $A$, again contradicting step [](#s1-5){.pf-ref}.
 Therefore
 \[
-W\ne\mathbb R^4.
+W\ne\RR^4.
 \]
 Together with step [](#s1-9){.pf-ref},
 \[
-\boxed{0\ne W\ne\mathbb R^4}.
+\boxed{0\ne W\ne\RR^4}.
 \]
 
 :::

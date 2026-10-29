@@ -38,7 +38,7 @@ Assume
 \[
 P\equiv \pm k^nP'\pmod m.
 \]
-Since \(P\) and \(P'\) are units modulo \(m\), so is \(k\). Replacing the chosen generator of the \(\mathbb Z_m\)-action on the target by its \(k\)-th power replaces every \(\ell_j'\) by \(k\ell_j'\) without changing the lens space. Thus we may reduce to the case
+Since \(P\) and \(P'\) are units modulo \(m\), so is \(k\). Replacing the chosen generator of the \(\ZZ_m\)-action on the target by its \(k\)-th power replaces every \(\ell_j'\) by \(k\ell_j'\) without changing the lens space. Thus we may reduce to the case
 \[
 P\equiv\pm P'\pmod m.
 \]
@@ -63,7 +63,7 @@ so the reduced congruence gives
 \[
 d_0\equiv\pm1\pmod m.
 \]
-Choose \(d\in\mathbb Z\) with
+Choose \(d\in\ZZ\) with
 \[
 d_0+dm=\pm1.
 \]

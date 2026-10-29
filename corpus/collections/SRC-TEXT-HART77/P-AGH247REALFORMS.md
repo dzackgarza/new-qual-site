@@ -46,7 +46,7 @@ e. If $X \cong \PP^1_\CC$, then either $X_0 \cong \PP^1_\RR$, or $X_0$ is isomor
 ::: {.solution}
 We write
 \[
-c:\Spec\mathbb C\longrightarrow\Spec\mathbb C
+c:\Spec\CC\longrightarrow\Spec\CC
 \]
 for complex conjugation.
 
@@ -69,7 +69,7 @@ V=U\cap\sigma(U)
 \]
 contains $x$: since $\sigma(x)\in U$, applying $\sigma$ gives $x\in\sigma(U)$.  Similarly it contains $\sigma(x)$.
 
-The scheme $X$ is separated over the affine scheme $\Spec\mathbb C$, so Hartshorne II.4.3 shows that the intersection of two affine opens is affine.  Thus $V$ is affine.  Finally
+The scheme $X$ is separated over the affine scheme $\Spec\CC$, so Hartshorne II.4.3 shows that the intersection of two affine opens is affine.  Thus $V$ is affine.  Finally
 \[
 \sigma(V)
 =
@@ -96,7 +96,7 @@ meaning
 \[
 \tau(\lambda a)=\overline\lambda\,\tau(a)
 \qquad
-(\lambda\in\mathbb C).
+(\lambda\in\CC).
 \]
 Put
 \[
@@ -104,7 +104,7 @@ A_0=A^\tau.
 \]
 Then the natural map
 \[
-\boxed{A_0\otimes_{\mathbb R}\mathbb C\xrightarrow{\sim}A}
+\boxed{A_0\otimes_{\RR}\CC\xrightarrow{\sim}A}
 \]
 is an isomorphism.
 
@@ -144,7 +144,7 @@ A=A_0\oplus iA_0,
 \]
 which is exactly the assertion that multiplication induces an isomorphism
 \[
-A_0\otimes_{\mathbb R}\mathbb C\cong A.
+A_0\otimes_{\RR}\CC\cong A.
 \]
 It is plainly an isomorphism of rings.
 
@@ -154,7 +154,7 @@ It is plainly an isomorphism of rings.
 
 ::: {.pf-step #s3}
 
-If $A$ is finitely generated as a $\mathbb C$-algebra, then $A_0=A^\tau$ is finitely generated as an $\mathbb R$-algebra.
+If $A$ is finitely generated as a $\CC$-algebra, then $A_0=A^\tau$ is finitely generated as an $\RR$-algebra.
 
 ::: pf-proof
 
@@ -170,18 +170,18 @@ u_j,v_j\in A_0.
 \]
 Let
 \[
-B_0=\mathbb R[u_1,v_1,\ldots,u_n,v_n]\subseteq A_0.
+B_0=\RR[u_1,v_1,\ldots,u_n,v_n]\subseteq A_0.
 \]
 Then
 \[
-A=\mathbb C[a_1,\ldots,a_n]
+A=\CC[a_1,\ldots,a_n]
 \subseteq
-\mathbb C[B_0]
+\CC[B_0]
 \subseteq A,
 \]
 so
 \[
-A=\mathbb C[B_0]=B_0\oplus iB_0.
+A=\CC[B_0]=B_0\oplus iB_0.
 \]
 
 If $a\in A_0$, write $a=b+ic$ with $b,c\in B_0$.  Applying $\tau$ gives
@@ -192,7 +192,7 @@ Hence $c=0$ and $a=b\in B_0$.  Therefore
 \[
 A_0=B_0,
 \]
-which is finitely generated over $\mathbb R$.
+which is finitely generated over $\RR$.
 
 :::
 
@@ -207,7 +207,7 @@ X=U_1\cup\cdots\cup U_r.
 
 ::: pf-proof
 
-The stable affine neighborhoods from step [](#s1){.pf-ref} cover $X$.  Since $X$ is of finite type over the field $\mathbb C$, it is quasi-compact.  Hence a finite subcover exists.
+The stable affine neighborhoods from step [](#s1){.pf-ref} cover $X$.  Since $X$ is of finite type over the field $\CC$, it is quasi-compact.  Hence a finite subcover exists.
 
 :::
 
@@ -236,7 +236,7 @@ Stability is immediate from stability of $U_i$ and $U_j$.  Affineness follows fr
 
 By step [](#s2){.pf-ref}, each stable affine and each stable overlap carries the standard descent datum for the faithfully flat extension
 \[
-\mathbb R\subseteq\mathbb C.
+\RR\subseteq\CC.
 \]
 The inclusions
 \[
@@ -254,20 +254,20 @@ This is the standard affine/open-immersion case of fpqc descent; see the Stacks 
 
 ::: {.pf-step #s6}
 
-The descended affine schemes $(U_i)_0$ glue along the descended overlaps $(U_{ij})_0$ to a scheme $X_0$ over $\mathbb R$.
+The descended affine schemes $(U_i)_0$ glue along the descended overlaps $(U_{ij})_0$ to a scheme $X_0$ over $\RR$.
 Moreover,
 \[
-\boxed{X_0\times_{\mathbb R}\mathbb C\cong X}
+\boxed{X_0\times_{\RR}\CC\cong X}
 \]
 and the standard conjugation involution on the left corresponds to $\sigma$.
 
 ::: pf-proof
 
-The original overlaps satisfy the cocycle condition inside $X$.  Faithful flatness of $\mathbb C/\mathbb R$ makes pullback on morphisms faithful, so the descended overlap maps satisfy the same cocycle condition.
+The original overlaps satisfy the cocycle condition inside $X$.  Faithful flatness of $\CC/\RR$ makes pullback on morphisms faithful, so the descended overlap maps satisfy the same cocycle condition.
 
 Hartshorne II.2.12 therefore glues the $(U_i)_0$ into a scheme $X_0$.
 
-After base change to $\mathbb C$, step [](#s2){.pf-ref} identifies each descended chart with the original chart $U_i$, and the overlap maps base-change to the original inclusions.  Thus the base-changed glued scheme is exactly the gluing of the $U_i$, namely $X$.
+After base change to $\CC$, step [](#s2){.pf-ref} identifies each descended chart with the original chart $U_i$, and the overlap maps base-change to the original inclusions.  Thus the base-changed glued scheme is exactly the gluing of the $U_i$, namely $X$.
 
 On every affine chart the descent datum is the involution $\tau$, so the resulting canonical conjugation on the base change is the given $\sigma$.
 
@@ -277,19 +277,19 @@ On every affine chart the descent datum is the involution $\tau$, so the resulti
 
 ::: {.pf-step #s7}
 
-The descended scheme $X_0$ is of finite type and separated over $\mathbb R$.
+The descended scheme $X_0$ is of finite type and separated over $\RR$.
 
 ::: pf-proof
 
-Each affine chart $(U_i)_0$ has finitely generated coordinate ring over $\mathbb R$ by step [](#s3){.pf-ref}.  The cover is finite by step [](#s4){.pf-ref}, so $X_0$ is quasi-compact and locally of finite type, hence of finite type.
+Each affine chart $(U_i)_0$ has finitely generated coordinate ring over $\RR$ by step [](#s3){.pf-ref}.  The cover is finite by step [](#s4){.pf-ref}, so $X_0$ is quasi-compact and locally of finite type, hence of finite type.
 
 Separatedness is fpqc local on the base.  After the faithfully flat base change
 \[
-\Spec\mathbb C\longrightarrow\Spec\mathbb R,
+\Spec\CC\longrightarrow\Spec\RR,
 \]
-the morphism $X_0\to\Spec\mathbb R$ becomes the separated morphism
+the morphism $X_0\to\Spec\RR$ becomes the separated morphism
 \[
-X\to\Spec\mathbb C.
+X\to\Spec\CC.
 \]
 Therefore $X_0$ is separated.
 
@@ -303,7 +303,7 @@ The descended scheme $X_0$, together with its identification after base change, 
 
 ::: pf-proof
 
-Faithfully flat descent of morphisms is fully faithful: two morphisms over $\mathbb R$ are equal if their base changes to $\mathbb C$ are equal, and every morphism over $\mathbb C$ compatible with the descent data descends uniquely.
+Faithfully flat descent of morphisms is fully faithful: two morphisms over $\RR$ are equal if their base changes to $\CC$ are equal, and every morphism over $\CC$ compatible with the descent data descends uniquely.
 
 If $X_0'$ is another descent of $(X,\sigma)$, the identity morphism of $X$ is compatible with the two descent data.  It therefore descends to a unique isomorphism
 \[
@@ -317,7 +317,7 @@ Its inverse is the descent of the inverse identity after base change.  This prov
 
 ::: {.pf-step #s9}
 
-If $X_0$ is affine, then $X=X_0\times_{\mathbb R}\mathbb C$ is affine.
+If $X_0$ is affine, then $X=X_0\times_{\RR}\CC$ is affine.
 
 ::: pf-proof
 
@@ -329,7 +329,7 @@ then
 \[
 X
 \cong
-\Spec(A_0\otimes_{\mathbb R}\mathbb C),
+\Spec(A_0\otimes_{\RR}\CC),
 \]
 which is affine.
 
@@ -380,7 +380,7 @@ If
 \[
 f_0:X_0\longrightarrow Y_0
 \]
-is a morphism over $\mathbb R$, its base change
+is a morphism over $\RR$, its base change
 \[
 f:X\longrightarrow Y
 \]
@@ -416,7 +416,7 @@ f\circ\sigma_X=\sigma_Y\circ f
 \]
 is exactly the compatibility condition with the descent data for the faithfully flat cover
 \[
-\Spec\mathbb C\to\Spec\mathbb R.
+\Spec\CC\to\Spec\RR.
 \]
 Fully faithful fpqc descent of morphisms therefore gives a unique descended morphism $f_0$.
 
@@ -440,23 +440,23 @@ Steps [](#s12){.pf-ref} and [](#s13){.pf-ref} construct the two inverse operatio
 
 Assume
 \[
-X\cong\mathbb A^1_{\mathbb C}.
+X\cong\mathbb A^1_{\CC}.
 \]
 Then $X_0$ is affine by part (b), and its coordinate ring is the invariant ring of a conjugate-linear involution
 \[
-\tau:\mathbb C[t]\longrightarrow\mathbb C[t].
+\tau:\CC[t]\longrightarrow\CC[t].
 \]
 One has
 \[
 \tau(t)=at+b
 \]
-for some $a\in\mathbb C^\times$, $b\in\mathbb C$.
+for some $a\in\CC^\times$, $b\in\CC$.
 
 ::: pf-proof
 
 By part (b), $X_0$ is affine, so the affine descent description step [](#s2){.pf-ref} applies.
 
-The map $\tau$ is semilinear and bijective.  After composing with ordinary complex conjugation on the coefficients, it becomes a $\mathbb C$-algebra automorphism of $\mathbb C[t]$.  Every automorphism of a one-variable polynomial ring sends $t$ to an affine-linear polynomial.  Thus
+The map $\tau$ is semilinear and bijective.  After composing with ordinary complex conjugation on the coefficients, it becomes a $\CC$-algebra automorphism of $\CC[t]$.  Every automorphism of a one-variable polynomial ring sends $t$ to an affine-linear polynomial.  Thus
 \[
 \tau(t)=at+b,
 \qquad a\ne0.
@@ -474,7 +474,7 @@ a\overline a=1,
 \qquad
 \overline a\,b+\overline b=0.
 \]
-There exist $c\in\mathbb C^\times$ and $d\in\mathbb C$ such that the affine coordinate
+There exist $c\in\CC^\times$ and $d\in\CC$ such that the affine coordinate
 \[
 u=ct+d
 \]
@@ -535,18 +535,18 @@ ct+d
 
 The invariant ring is
 \[
-\boxed{\mathbb C[t]^\tau=\mathbb R[u].}
+\boxed{\CC[t]^\tau=\RR[u].}
 \]
 Consequently
 \[
-\boxed{X_0\cong\mathbb A^1_{\mathbb R}.}
+\boxed{X_0\cong\mathbb A^1_{\RR}.}
 \]
 
 ::: pf-proof
 
 Since $u=ct+d$ with $c\ne0$,
 \[
-\mathbb C[t]=\mathbb C[u].
+\CC[t]=\CC[u].
 \]
 In the coordinate $u$, the involution fixes $u$ and conjugates coefficients.  A polynomial
 \[
@@ -556,7 +556,7 @@ is fixed exactly when every coefficient satisfies
 \[
 \lambda_j=\overline{\lambda_j},
 \]
-i.e. lies in $\mathbb R$.  Thus the invariant ring is $\mathbb R[u]$.
+i.e. lies in $\RR$.  Thus the invariant ring is $\RR[u]$.
 
 :::
 
@@ -578,15 +578,15 @@ Step [](#s17){.pf-ref} is the required classification of the real form of the af
 
 Assume now
 \[
-X\cong\mathbb P^1_{\mathbb C}.
+X\cong\mathbb P^1_{\CC}.
 \]
-Then $X_0$ is a smooth proper geometrically integral curve of genus $0$ over $\mathbb R$.
+Then $X_0$ is a smooth proper geometrically integral curve of genus $0$ over $\RR$.
 
 ::: pf-proof
 
-After the faithfully flat base change $\mathbb R\subseteq\mathbb C$, the scheme $X_0$ becomes $\mathbb P^1_{\mathbb C}$.
+After the faithfully flat base change $\RR\subseteq\CC$, the scheme $X_0$ becomes $\mathbb P^1_{\CC}$.
 
-Smoothness, properness, and geometric integrality descend under faithfully flat field extension.  Thus $X_0$ is a smooth proper geometrically integral curve over $\mathbb R$.
+Smoothness, properness, and geometric integrality descend under faithfully flat field extension.  Thus $X_0$ is a smooth proper geometrically integral curve over $\RR$.
 
 Its geometric genus is the genus of its complexification, namely
 \[
@@ -605,15 +605,15 @@ The real points of $X_0$ correspond exactly to the fixed complex points of $\sig
 
 A real point is a morphism
 \[
-p_0:\Spec\mathbb R\longrightarrow X_0.
+p_0:\Spec\RR\longrightarrow X_0.
 \]
 After base change it gives a morphism
 \[
-p:\Spec\mathbb C\longrightarrow X
+p:\Spec\CC\longrightarrow X
 \]
 which commutes with conjugation, hence whose image point is fixed by $\sigma$.
 
-Conversely, a complex point fixed by $\sigma$ gives a morphism $p:\Spec\mathbb C\to X$ compatible with the descent data.  Part (c) descends it uniquely to a real point of $X_0$.
+Conversely, a complex point fixed by $\sigma$ gives a morphism $p:\Spec\CC\to X$ compatible with the descent data.  Part (c) descends it uniquely to a real point of $X_0$.
 
 :::
 
@@ -621,22 +621,22 @@ Conversely, a complex point fixed by $\sigma$ gives a morphism $p:\Spec\mathbb C
 
 ::: {.pf-step #s21}
 
-If $X_0(\mathbb R)\ne\varnothing$, then
+If $X_0(\RR)\ne\varnothing$, then
 \[
-\boxed{X_0\cong\mathbb P^1_{\mathbb R}.}
+\boxed{X_0\cong\mathbb P^1_{\RR}.}
 \]
 
 ::: pf-proof
 
 A smooth proper genus-zero curve over a field with a rational point is isomorphic to the projective line.
 
-For completeness, if $P\in X_0(\mathbb R)$, Riemann--Roch gives
+For completeness, if $P\in X_0(\RR)$, Riemann--Roch gives
 \[
 \ell(P)=2.
 \]
 The complete linear system $|P|$ therefore defines a nonconstant morphism
 \[
-X_0\longrightarrow\mathbb P^1_{\mathbb R}
+X_0\longrightarrow\mathbb P^1_{\RR}
 \]
 of degree $1$.  A degree-one finite morphism between smooth proper integral curves is an isomorphism.
 
@@ -646,16 +646,16 @@ of degree $1$.  A degree-one finite morphism between smooth proper integral curv
 
 ::: {.pf-step #s22}
 
-If $X_0(\mathbb R)=\varnothing$, then $X_0$ is isomorphic to a smooth plane conic with no real point.
+If $X_0(\RR)=\varnothing$, then $X_0$ is isomorphic to a smooth plane conic with no real point.
 
 ::: pf-proof
 
 Every smooth proper geometrically integral genus-zero curve is a Severi--Brauer curve.  Equivalently, its anticanonical system has degree $2$ and dimension $2$, and embeds it as a smooth conic
 \[
-C\subseteq\mathbb P^2_{\mathbb R}.
+C\subseteq\mathbb P^2_{\RR}.
 \]
 
-The isomorphism preserves rational points, so the conic has no $\mathbb R$-point.
+The isomorphism preserves rational points, so the conic has no $\RR$-point.
 
 :::
 
@@ -663,14 +663,14 @@ The isomorphism preserves rational points, so the conic has no $\mathbb R$-point
 
 ::: {.pf-step #s23}
 
-Every smooth plane conic over $\mathbb R$ with no real point is isomorphic over $\mathbb R$ to
+Every smooth plane conic over $\RR$ with no real point is isomorphic over $\RR$ to
 \[
 \boxed{x_0^2+x_1^2+x_2^2=0.}
 \]
 
 ::: pf-proof
 
-A smooth plane conic over $\mathbb R$ is defined by a nondegenerate real ternary quadratic form
+A smooth plane conic over $\RR$ is defined by a nondegenerate real ternary quadratic form
 \[
 q(x_0,x_1,x_2).
 \]
@@ -688,12 +688,12 @@ Thus the conic is isomorphic to the displayed one.
 
 ::: {.pf-step #s24}
 
-Hence, when $X\cong\mathbb P^1_{\mathbb C}$,
+Hence, when $X\cong\mathbb P^1_{\CC}$,
 \[
 \boxed{
-X_0\cong\mathbb P^1_{\mathbb R}
+X_0\cong\mathbb P^1_{\RR}
 \quad\text{or}\quad
-X_0\cong V(x_0^2+x_1^2+x_2^2)\subseteq\mathbb P^2_{\mathbb R}.
+X_0\cong V(x_0^2+x_1^2+x_2^2)\subseteq\mathbb P^2_{\RR}.
 }
 \]
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-1.2-4
 kind: problem
-title: Fundamental group of complement of $n$ lines through origin in $\mathbb{R}^3$
+title: Fundamental group of complement of $n$ lines through origin in $\RR^3$
 classification:
   areas:
   - topology
@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X \subset \mathbb{R}^3$ be the union of $n$ lines through the origin.
-Compute $\pi_1(\mathbb{R}^3 - X)$.
+Let $X \subset \RR^3$ be the union of $n$ lines through the origin.
+Compute $\pi_1(\RR^3 - X)$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ L_1,\dots,L_n
 \]
 be these lines and set
 \[
-Y=\mathbb R^3\setminus X.
+Y=\RR^3\setminus X.
 \]
 
 ::: pf
@@ -99,13 +99,13 @@ A sphere with $k\ge1$ punctures has fundamental group free of rank $k-1$.
 Choose one puncture $q$.
 Stereographic projection from $q$ gives a homeomorphism
 \[
-S^2\setminus\{q\}\cong\mathbb R^2.
+S^2\setminus\{q\}\cong\RR^2.
 \]
 Removing the remaining $k-1$ punctures therefore gives
 \[
 S^2\setminus\{q,q_2,\dots,q_k\}
 \cong
-\mathbb R^2\setminus\{a_2,\dots,a_k\}.
+\RR^2\setminus\{a_2,\dots,a_k\}.
 \]
 
 Choose pairwise disjoint small closed disks around the points $a_2,\dots,a_k$ and join their boundary circles to a common basepoint by pairwise disjoint arcs arranged as a tree.
@@ -127,7 +127,7 @@ the free group on $k-1$ generators.
 
 Therefore
 \[
-\pi_1(\mathbb R^3\setminus X)\cong F_{2n-1}.
+\pi_1(\RR^3\setminus X)\cong F_{2n-1}.
 \]
 
 ::: pf-proof
@@ -139,7 +139,7 @@ Y\simeq S^2\setminus\{2n\text{ points}\}.
 Apply step [](#s3){.pf-ref} with $k=2n$.
 Thus
 \[
-\boxed{\pi_1(\mathbb R^3\setminus X)\cong F_{2n-1}}.
+\boxed{\pi_1(\RR^3\setminus X)\cong F_{2n-1}}.
 \]
 
 :::

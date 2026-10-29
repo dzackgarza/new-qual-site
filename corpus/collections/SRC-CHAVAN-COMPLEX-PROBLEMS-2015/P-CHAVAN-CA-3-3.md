@@ -15,7 +15,7 @@ audit:
 ::: {.problem}
 Let
 \[
-\Omega=\mathbb C\setminus[-1,1],
+\Omega=\CC\setminus[-1,1],
 \qquad
 f(z)=z^2-1,
 \]
@@ -89,7 +89,7 @@ positive real axis. Hence $z\mapsto\arg(z-1)$ can be discontinuous
 only when $z\in(1,\infty)$, while
 $z\mapsto\arg(z+1)$ can be discontinuous only when
 $z\in(-1,\infty)$. Intersecting with
-$\Omega=\mathbb C\setminus[-1,1]$, both possible discontinuity sets
+$\Omega=\CC\setminus[-1,1]$, both possible discontinuity sets
 reduce to $(1,\infty)$. Thus away from that ray both argument terms
 are continuous. Since $f$ is continuous and nonzero on $\Omega$, so
 is $|f|^{1/2}$, and the defining product for $g$ is continuous there.

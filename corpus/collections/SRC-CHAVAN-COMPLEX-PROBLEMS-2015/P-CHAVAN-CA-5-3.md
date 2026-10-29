@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\Omega\to\mathbb C$ be an open mapping on an open set $\Omega\subseteq\mathbb C$.
+Let $f:\Omega\to\CC$ be an open mapping on an open set $\Omega\subseteq\CC$.
 Define $|f|(z)=|f(z)|$.
 
 1. Show that $|f|$ cannot have a local maximum at a point of $\Omega$.

@@ -53,7 +53,7 @@ Let $\varepsilon > 0$ be given.
 :::
 
 ::: pf-step
-Since $\lim_{n \to \infty} a_n = 0$, there exists an integer $N_0 \in \mathbb{N}$ such that
+Since $\lim_{n \to \infty} a_n = 0$, there exists an integer $N_0 \in \NN$ such that
 $$|a_k| < \frac{\varepsilon}{2} \quad \text{for all } k > N_0.$$
 
 :::
@@ -126,7 +126,7 @@ Let $S_n = \sum_{k=1}^n \frac{a_k}{k}$ for $n \ge 1$, and set $S_0 = 0$.
 :::
 
 ::: pf-step
-By hypothesis, the series converges, so $\lim_{n \to \infty} S_n = S \in \mathbb{R}$.
+By hypothesis, the series converges, so $\lim_{n \to \infty} S_n = S \in \RR$.
 
 :::
 

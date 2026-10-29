@@ -32,11 +32,11 @@ Is the equation $x^5 - 16x + 2 = 0$ solvable in radicals?
 
 ::: pf-step
 
-The polynomial \(f(x)=x^5-16x+2\) is irreducible over \(\mathbb Q\), so its Galois group \(G\le S_5\) acts transitively on its five roots.
+The polynomial \(f(x)=x^5-16x+2\) is irreducible over \(\QQ\), so its Galois group \(G\le S_5\) acts transitively on its five roots.
 
 ::: pf-proof
 
-Eisenstein's criterion at \(2\) applies: every nonleading coefficient is divisible by \(2\), while the constant term \(2\) is not divisible by \(4\). Thus \(f\) is irreducible over \(\mathbb Q\). The Galois group of the splitting field therefore acts transitively on the roots.
+Eisenstein's criterion at \(2\) applies: every nonleading coefficient is divisible by \(2\), while the constant term \(2\) is not divisible by \(4\). Thus \(f\) is irreducible over \(\QQ\). The Galois group of the splitting field therefore acts transitively on the roots.
 
 :::
 
@@ -91,7 +91,7 @@ Let \(\tau=(ab)\in G\) be a transposition. Form a graph on the five roots whose 
 
 ::: pf-step
 
-The equation \(x^5-16x+2=0\) is not solvable by radicals over \(\mathbb Q\).
+The equation \(x^5-16x+2=0\) is not solvable by radicals over \(\QQ\).
 
 ::: pf-proof
 

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $p$ be a prime number.
 
-(a) Show that the order of $1 + p$ in $(\mathbb{Z}/p^2\mathbb{Z})^\times$ is equal to $p$.
+(a) Show that the order of $1 + p$ in $(\ZZ/p^2\ZZ)^\times$ is equal to $p$.
 
 (b) Use (a) above to construct a non-abelian group of order $p^3$.
 
@@ -31,7 +31,7 @@ Let $p$ be a prime number.
 ::: pf
 
 ::: pf-step
-Part (a): Order of $1 + p$ in $(\mathbb{Z}/p^2\mathbb{Z})^\times$:
+Part (a): Order of $1 + p$ in $(\ZZ/p^2\ZZ)^\times$:
 
 ::: pf-proof
 
@@ -53,7 +53,7 @@ For every $k \ge 2$, the power $p^k$ is a multiple of $p^2$, so:
 Since $p \ge 2$, $1 + p \not\equiv 1 \pmod{p^2}$, so the order of $1 + p$ is strictly greater than 1.
 Because the order of $1 + p$ divides the prime $p$, the order must be exactly $p$:
 \[
-o(1 + p) = p \quad \text{in } (\mathbb{Z}/p^2\mathbb{Z})^\times.
+o(1 + p) = p \quad \text{in } (\ZZ/p^2\ZZ)^\times.
 \]
 :::
 
@@ -67,20 +67,20 @@ Part (b): Construction of a non-abelian group of order $p^3$:
 ::: pf-proof
 
 ::: pf-step
-Consider the cyclic group $N = \mathbb{Z}/p^2\mathbb{Z}$ and $H = \mathbb{Z}/p\mathbb{Z}$.
-The automorphism group of $N$ is $\operatorname{Aut}(N) \cong (\mathbb{Z}/p^2\mathbb{Z})^\times$.
+Consider the cyclic group $N = \ZZ/p^2\ZZ$ and $H = \ZZ/p\ZZ$.
+The automorphism group of $N$ is $\operatorname{Aut}(N) \cong (\ZZ/p^2\ZZ)^\times$.
 :::
 
 ::: pf-step
-By Part (a), the element $1 + p$ has order $p$ in $(\mathbb{Z}/p^2\mathbb{Z})^\times$.
-Therefore, there exists a non-trivial group homomorphism $\theta: H \to \operatorname{Aut}(N)$ defined on the generator $1 \in \mathbb{Z}/p\mathbb{Z}$ by:
+By Part (a), the element $1 + p$ has order $p$ in $(\ZZ/p^2\ZZ)^\times$.
+Therefore, there exists a non-trivial group homomorphism $\theta: H \to \operatorname{Aut}(N)$ defined on the generator $1 \in \ZZ/p\ZZ$ by:
 \[
 \theta(1)(x) = (1 + p)x \pmod{p^2}.
 \]
 :::
 
 ::: pf-step
-Define $G$ as the semidirect product $G = N \rtimes_\theta H = (\mathbb{Z}/p^2\mathbb{Z}) \rtimes_\theta (\mathbb{Z}/p\mathbb{Z})$.
+Define $G$ as the semidirect product $G = N \rtimes_\theta H = (\ZZ/p^2\ZZ) \rtimes_\theta (\ZZ/p\ZZ)$.
 The order of $G$ is:
 \[
 |G| = |N| \cdot |H| = p^2 \cdot p = p^3.
@@ -99,7 +99,7 @@ Part (c): Generators and relations presentation:
 
 ::: pf-step
 Let $a = (1, 0) \in G$ and $b = (0, 1) \in G$.
-Then $a$ generates $N \cong \mathbb{Z}/p^2\mathbb{Z}$ (so $a^{p^2} = e$) and $b$ generates $H \cong \mathbb{Z}/p\mathbb{Z}$ (so $b^p = e$).
+Then $a$ generates $N \cong \ZZ/p^2\ZZ$ (so $a^{p^2} = e$) and $b$ generates $H \cong \ZZ/p\ZZ$ (so $b^p = e$).
 The semidirect product action gives $b a b^{-1} = \theta(1)(a) = a^{1 + p}$.
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M6
 kind: problem
-title: Uniform convergence on compacta of the translates $f(x+1/n)$, and failure on all of $\mathbb{R}$
+title: Uniform convergence on compacta of the translates $f(x+1/n)$, and failure on all of $\RR$
 classification:
   areas:
   - real-analysis
@@ -19,15 +19,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be a continuous function, and for all $n\ge 1$ put $f_n(x)=f\left(x+\frac1n\right)$.
+Let $f:\RR\to\RR$ be a continuous function, and for all $n\ge 1$ put $f_n(x)=f\left(x+\frac1n\right)$.
 
 (a) Show that $f_n$ converges uniformly, as $n\to\infty$, over any closed interval $[a,b]$.
 
-(b) Give an example of a continuous function $f$ for which the convergence is not uniform on $\mathbb R$.
+(b) Give an example of a continuous function $f$ for which the convergence is not uniform on $\RR$.
 :::
 
 :::: {.solution}
-**Goal:** (a) $f_n(x) = f(x + 1/n)$ converges uniformly to $f$ on any closed interval $[a,b]$; (b) give a continuous $f$ for which convergence is not uniform on $\mathbb R$.
+**Goal:** (a) $f_n(x) = f(x + 1/n)$ converges uniformly to $f$ on any closed interval $[a,b]$; (b) give a continuous $f$ for which convergence is not uniform on $\RR$.
 
 ::: pf
 
@@ -71,19 +71,19 @@ Proof: step [](#s1-3){.pf-ref} shows $\sup_{[a,b]}|f_n - f| \le \varepsilon$ for
 
 ::: pf-step
 
-(b) Example: $f(x) = \sin(x^2)$; the convergence is not uniform on $\mathbb R$.
+(b) Example: $f(x) = \sin(x^2)$; the convergence is not uniform on $\RR$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$f$ is continuous on $\mathbb R$.
+$f$ is continuous on $\RR$.
 
 :::
 
 ::: {.pf-step #s2-2}
 
-For each fixed $n$, $\sup_{x \in \mathbb R}|f(x + 1/n) - f(x)| \ge 1$.
+For each fixed $n$, $\sup_{x \in \RR}|f(x + 1/n) - f(x)| \ge 1$.
 Proof: set $x_k = \sqrt{2\pi k + \pi/2}$ so that $f(x_k) = \sin(2\pi k + \pi/2) = 1$.
 Then with $y_k := x_k - 1/n$ (large $k$ so $y_k > 0$), $f_n(y_k) = f(y_k + 1/n) = f(x_k) = 1$, while $f(y_k) = f(x_k - 1/n) = \sin\left(\left(x_k - \frac1n\right)^2\right) = \sin\left(2\pi k + \frac{\pi}{2} - \frac{2x_k}{n} + \frac{1}{n^2}\right)$.
 The sequence $\theta_k := \frac{2x_k}{n} - \frac{1}{n^2}$ is dense modulo $2\pi$ (its increments $\theta_{k+1} - \theta_k = \frac{2}{n}(\sqrt{2\pi(k+1)+\pi/2} - \sqrt{2\pi k + \pi/2}) \to 0$ while $\theta_k \to \infty$), so there are $k$ with $\theta_k \equiv \frac{\pi}{2} \pmod{2\pi}$ up to an arbitrarily small error; at such $k$, $f(y_k) \approx \sin(2\pi k + \pi/2 - \pi/2) = \sin(2\pi k) = 0$, giving $|f_n(y_k) - f(y_k)| \approx 1$.
@@ -93,7 +93,7 @@ Hence $\sup_x|f_n(x) - f(x)| \ge 1 - o(1) > 0$: the sup norms do not tend to $0$
 
 ::: pf-qed
 
-Proof: step [](#s2-2){.pf-ref} shows $\|f_n - f\|_\infty \not\to 0$ on $\mathbb R$, so convergence is not uniform there, while part (a) guarantees uniform convergence on every compact interval.
+Proof: step [](#s2-2){.pf-ref} shows $\|f_n - f\|_\infty \not\to 0$ on $\RR$, so convergence is not uniform there, while part (a) guarantees uniform convergence on every compact interval.
 
 :::
 
@@ -103,5 +103,5 @@ Proof: step [](#s2-2){.pf-ref} shows $\|f_n - f\|_\infty \not\to 0$ on $\mathbb 
 
 :::
 
-(The mechanism: $f$ is not uniformly continuous on $\mathbb R$ — its derivative $2x\cos(x^2)$ is unbounded — so the fixed shift $1/n$ produces $O(1)$-sized differences far out.)
+(The mechanism: $f$ is not uniformly continuous on $\RR$ — its derivative $2x\cos(x^2)$ is unbounded — so the fixed shift $1/n$ produces $O(1)$-sized differences far out.)
 :::

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\mathbb C$ and let $n\ge2$ be an integer. Prove that
+Let $a\in\CC$ and let $n\ge2$ be an integer. Prove that
 \[
 1+z+az^n=0
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-6A
 kind: problem
-title: Exponent of $(\mathbb Z/N\mathbb Z)^\times$ for $N=2^4\cdot 3^3\cdot 5^2\cdot 7$
+title: Exponent of $(\ZZ/N\ZZ)^\times$ for $N=2^4\cdot 3^3\cdot 5^2\cdot 7$
 classification:
   areas:
   - prelim

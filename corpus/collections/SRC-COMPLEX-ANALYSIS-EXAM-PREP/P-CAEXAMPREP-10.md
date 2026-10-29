@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $a,b,c,d\in\mathbb R$ and $ad>bc$.
+Suppose $a,b,c,d\in\RR$ and $ad>bc$.
 Show that
 \[
 T(z)=\frac{az+b}{cz+d}
@@ -33,7 +33,7 @@ The denominator \(cz+d\) does not vanish at any point of the upper half-plane.
 
 ::: pf-proof
 
-If \(c=0\), then \(ad>bc=0\), so \(d\ne0\). If \(c\ne0\), the unique zero of \(cz+d\) is \(-d/c\in\mathbb R\). Thus in either case \(cz+d\ne0\) whenever \(\operatorname{Im}z>0\).
+If \(c=0\), then \(ad>bc=0\), so \(d\ne0\). If \(c\ne0\), the unique zero of \(cz+d\) is \(-d/c\in\RR\). Thus in either case \(cz+d\ne0\) whenever \(\operatorname{Im}z>0\).
 
 :::
 

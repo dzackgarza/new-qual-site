@@ -43,7 +43,7 @@ By hypothesis every nonempty intersection is contractible, so after passing to r
 
 ::: pf-proof
 
-A nonempty contractible intersection has $H_q=0$ for $q>0$ and $H_0\cong\mathbb Z$. The horizontal $q=0$ complex is precisely the simplicial chain complex of the nerve. Empty intersections contribute no summand.
+A nonempty contractible intersection has $H_q=0$ for $q>0$ and $H_0\cong\ZZ$. The horizontal $q=0$ complex is precisely the simplicial chain complex of the nerve. Empty intersections contribute no summand.
 
 :::
 
@@ -82,7 +82,7 @@ The bound is sharp: there are good covers of $S^{n-2}$ by $n$ open sets whose ne
 
 ::: pf-proof
 
-Take the standard cover obtained from sufficiently small open stars of the vertices in the barycentric subdivision of the boundary of an $(n-1)$-simplex. Every nonempty finite intersection is contractible, the total intersection of all $n$ sets is empty, and the nerve is the boundary sphere $S^{n-2}$. Thus $\widetilde H_{n-2}(X)\cong\mathbb Z\ne0$, so the vanishing threshold cannot be lowered from $n-1$ to $n-2$.
+Take the standard cover obtained from sufficiently small open stars of the vertices in the barycentric subdivision of the boundary of an $(n-1)$-simplex. Every nonempty finite intersection is contractible, the total intersection of all $n$ sets is empty, and the nerve is the boundary sphere $S^{n-2}$. Thus $\widetilde H_{n-2}(X)\cong\ZZ\ne0$, so the vanishing threshold cannot be lowered from $n-1$ to $n-2$.
 
 :::
 

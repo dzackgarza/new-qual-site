@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\int_C (x^3 - y^3)\,dx + (x^3 + y^3)\,dy \ge 0$ for every smooth, simple closed curve $C \subset \mathbb{R}^2$, oriented counterclockwise.
+Prove that $\int_C (x^3 - y^3)\,dx + (x^3 + y^3)\,dy \ge 0$ for every smooth, simple closed curve $C \subset \RR^2$, oriented counterclockwise.
 :::
 
 ::: {.solution}

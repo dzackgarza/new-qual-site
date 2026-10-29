@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F2Y4F
 kind: problem
-title: $(\mathbb{Z}/2\mathbb{Z})[y]/(y^4+y^3+y^2+y+1)$ is a field over which $x^4+x+1$
+title: $(\ZZ/2\ZZ)[y]/(y^4+y^3+y^2+y+1)$ is a field over which $x^4+x+1$
   and $x^2+x+1$ split and $x^3+x+1$ is irreducible
 classification:
   areas:
@@ -27,7 +27,7 @@ audit:
   note: "Checked the exhaustive quadratic-factor obstruction, both divisibilities into x^16-x, splitting over the given quotient field, and the degree-three subfield obstruction."
 ---
 ::: {.problem}
-a. Prove that $K = (\mathbb{Z}/2\mathbb{Z})[y]/(y^4 + y^3 + y^2 + y + 1)$ is a field.
+a. Prove that $K = (\ZZ/2\ZZ)[y]/(y^4 + y^3 + y^2 + y + 1)$ is a field.
 
 b. Prove that $x^4 + x + 1$ and $x^2 + x + 1$ factor completely over the field $K$ above.
 

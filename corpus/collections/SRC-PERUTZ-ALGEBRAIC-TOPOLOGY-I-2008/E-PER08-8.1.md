@@ -22,9 +22,9 @@ audit:
 Think of $S^2$ as a tetrahedron, i.e. a $\Delta$-complex with four $2$-simplices, six $1$-simplices and four $0$-simplices.
 Show that for this structure
 \[
-H_0^{\mathrm{simp}}(S^2)=\mathbb Z,\qquad
+H_0^{\mathrm{simp}}(S^2)=\ZZ,\qquad
 H_1^{\mathrm{simp}}(S^2)=0,\qquad
-H_2^{\mathrm{simp}}(S^2)=\mathbb Z,\qquad
+H_2^{\mathrm{simp}}(S^2)=\ZZ,\qquad
 H_{>2}^{\mathrm{simp}}(S^2)=0.
 \]
 :::
@@ -33,7 +33,7 @@ H_{>2}^{\mathrm{simp}}(S^2)=0.
 Let the tetrahedron have vertices $v_0,v_1,v_2,v_3$, oriented edges $e_{ij}=[v_i,v_j]$ for $i<j$, and oriented faces $F_{ijk}=[v_i,v_j,v_k]$ for $i<j<k$.
 Then
 \[
-C_2\cong\mathbb Z^4,\qquad C_1\cong\mathbb Z^6,\qquad C_0\cong\mathbb Z^4,
+C_2\cong\ZZ^4,\qquad C_1\cong\ZZ^6,\qquad C_0\cong\ZZ^4,
 \]
 and there are no higher chains.
 
@@ -41,11 +41,11 @@ and there are no higher chains.
 
 ::: pf-step
 
-$H_0\cong\mathbb Z$.
+$H_0\cong\ZZ$.
 
 ::: pf-proof
 
-The $1$-skeleton is connected, so $\operatorname{coker}\partial_1\cong\mathbb Z$.
+The $1$-skeleton is connected, so $\operatorname{coker}\partial_1\cong\ZZ$.
 
 :::
 
@@ -53,7 +53,7 @@ The $1$-skeleton is connected, so $\operatorname{coker}\partial_1\cong\mathbb Z$
 
 ::: {.pf-step #s2}
 
-$H_2\cong\mathbb Z$.
+$H_2\cong\ZZ$.
 
 ::: pf-proof
 
@@ -63,7 +63,7 @@ F_{123}-F_{023}+F_{013}-F_{012},
 \]
 has zero boundary.
 Conversely, if $\sum a_{ijk}F_{ijk}$ has zero boundary, comparing the coefficient of each edge forces all four coefficients to be determined by one integer with exactly these signs.
-Thus $\ker\partial_2\cong\mathbb Z$.
+Thus $\ker\partial_2\cong\ZZ$.
 Since $C_3=0$, this is $H_2$.
 
 :::
@@ -90,7 +90,7 @@ Thus $\ker\partial_1=\operatorname{im}\partial_2$.
 
 Therefore
 \[
-H_0^{\rm simp}(S^2)=\mathbb Z,\quad H_1^{\rm simp}(S^2)=0,\quad H_2^{\rm simp}(S^2)=\mathbb Z,
+H_0^{\rm simp}(S^2)=\ZZ,\quad H_1^{\rm simp}(S^2)=0,\quad H_2^{\rm simp}(S^2)=\ZZ,
 \]
 and $H_i^{\rm simp}=0$ for $i>2$.
 :::

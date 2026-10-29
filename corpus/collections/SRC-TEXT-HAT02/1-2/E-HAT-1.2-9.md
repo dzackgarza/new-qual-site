@@ -85,11 +85,11 @@ r_*\circ i_*=\operatorname{id}_{\pi_1(C)}.
 \]
 Identify
 \[
-\pi_1(C)\cong\mathbb Z.
+\pi_1(C)\cong\ZZ.
 \]
 
 For $h\ge1$, step [](#s1){.pf-ref} says that $i_*(1)$ is a product of commutators.
-Every homomorphism from a group to the abelian group $\mathbb Z$ kills every commutator, so
+Every homomorphism from a group to the abelian group $\ZZ$ kills every commutator, so
 \[
 r_*i_*(1)=0,
 \]
@@ -174,7 +174,7 @@ The attaching map of the $2$-cell represents
 \]
 Under $q_*$, each $b_i$ and every $a_i$ for $i>1$ maps to the identity in
 \[
-\pi_1(S^1)\cong\mathbb Z,
+\pi_1(S^1)\cong\ZZ,
 \]
 while $a_1$ maps to the generator.
 Therefore every commutator maps to the identity, so the entire attaching loop maps trivially in $\pi_1(S^1)$.

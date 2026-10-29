@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Problem 10. Let $A$ be a $3\times3$ real matrix satisfying $A^3=I$.
-Show that $A$ is similar over $\mathbb R$ to a matrix of the form
+Show that $A$ is similar over $\RR$ to a matrix of the form
 \[
 \begin{pmatrix}
 1&0&0\\
@@ -60,7 +60,7 @@ Hence the polynomial $t^3-1$ annihilates $A$, so the minimal polynomial of $A$ d
 
 ::: {.pf-step #s1-2}
 
-The matrix $A$ is diagonalizable over $\mathbb C$.
+The matrix $A$ is diagonalizable over $\CC$.
 
 
 ::: pf-proof
@@ -75,7 +75,7 @@ has the three distinct roots
 \omega=e^{2\pi i/3},\qquad
 \overline{\omega}=e^{-2\pi i/3}.
 \]
-Since the minimal polynomial of $A$ divides this squarefree polynomial, the minimal polynomial also has no repeated root. Therefore $A$ is diagonalizable over $\mathbb C$.
+Since the minimal polynomial of $A$ divides this squarefree polynomial, the minimal polynomial also has no repeated root. Therefore $A$ is diagonalizable over $\CC$.
 
 :::
 
@@ -156,7 +156,7 @@ A=I.
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $A$ is diagonalizable over $\mathbb C$. If all three eigenvalues are $1$, then in an eigenbasis its matrix is the identity. Hence the operator itself is the identity.
+By step [](#s1-2){.pf-ref}, $A$ is diagonalizable over $\CC$. If all three eigenvalues are $1$, then in an eigenbasis its matrix is the identity. Hence the operator itself is the identity.
 
 :::
 
@@ -210,7 +210,7 @@ Av
 =
 \frac{\sqrt3}{2}u-\frac12v.
 \]
-Replacing $v$ by $-v$ if necessary gives the displayed $2\times2$ rotation block on the real span of $u,v$. Together with $u_1$, these vectors form a real basis of $\mathbb R^3$.
+Replacing $v$ by $-v$ if necessary gives the displayed $2\times2$ rotation block on the real span of $u,v$. Together with $u_1$, these vectors form a real basis of $\RR^3$.
 
 :::
 
@@ -218,7 +218,7 @@ Replacing $v$ by $-v$ if necessary gives the displayed $2\times2$ rotation block
 
 ::: {.pf-step #s1-8}
 
-Thus $A$ is similar over $\mathbb R$ to
+Thus $A$ is similar over $\RR$ to
 \[
 \boxed{
 \begin{pmatrix}
@@ -253,7 +253,7 @@ Changing the orientation of the real basis of the invariant plane replaces $\the
 \]
 Conversely, for any of the three displayed congruence classes,
 \[
-3\theta\in2\pi\mathbb Z,
+3\theta\in2\pi\ZZ,
 \]
 so the corresponding rotation block has cube equal to the identity.
 

@@ -26,24 +26,24 @@ audit:
 ---
 
 ::: {.problem}
-Show that the ring $\mathbb Z_p$ of $p$-adic integers is a discrete valuation ring.
+Show that the ring $\ZZ_p$ of $p$-adic integers is a discrete valuation ring.
 :::
 
 ::: {.solution}
-Every nonzero $x\in\mathbb Z_p$ has a unique $p$-adic valuation
+Every nonzero $x\in\ZZ_p$ has a unique $p$-adic valuation
 \[
-v_p(x)=n\in\mathbb Z_{\ge0}
+v_p(x)=n\in\ZZ_{\ge0}
 \]
 and can be written
 \[
 x=p^n u
 \]
-with $u\in\mathbb Z_p^\times$.
+with $u\in\ZZ_p^\times$.
 
 ::: pf
 
 ::: pf-step
-The nonunits of $\mathbb Z_p$ are exactly $p\mathbb Z_p$.
+The nonunits of $\ZZ_p$ are exactly $p\ZZ_p$.
 
 ::: pf-proof
 An element is a unit precisely when its reduction modulo $p$ is nonzero,
@@ -54,11 +54,11 @@ $(p)$.
 :::
 
 ::: pf-step
-Every nonzero ideal of $\mathbb Z_p$ is a power of $(p)$.
+Every nonzero ideal of $\ZZ_p$ is a power of $(p)$.
 
 ::: pf-proof
-Let $0\ne I\subseteq\mathbb Z_p$. The set
-$\{v_p(x):0\ne x\in I\}\subseteq\mathbb Z_{\ge0}$ has a least element $n$.
+Let $0\ne I\subseteq\ZZ_p$. The set
+$\{v_p(x):0\ne x\in I\}\subseteq\ZZ_{\ge0}$ has a least element $n$.
 Choose $x\in I$ with $v_p(x)=n$ and write $x=p^n u$ with $u$ a unit. Then
 $p^n=xu^{-1}\in I$, so $(p^n)\subseteq I$. Every $y\in I$ has
 $v_p(y)\ge n$, hence $y\in(p^n)$. Thus $I=(p^n)$.
@@ -67,7 +67,7 @@ $v_p(y)\ge n$, hence $y\in(p^n)$. Thus $I=(p^n)$.
 :::
 
 ::: pf-step
-Hence $\mathbb Z_p$ is a DVR with uniformizer $p$.
+Hence $\ZZ_p$ is a DVR with uniformizer $p$.
 
 ::: pf-proof
 It is a domain, is local with nonzero principal maximal ideal $(p)$, and every

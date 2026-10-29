@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-For each field $F=\mathbb R$, $\mathbb C$, and $\mathbb F_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
+For each field $F=\RR$, $\CC$, and $\mathbb F_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
 :::
 
 ::: {.solution}
@@ -28,7 +28,7 @@ For each field $F=\mathbb R$, $\mathbb C$, and $\mathbb F_3$, determine whether 
 
 Over
 \[
-F=\mathbb R,
+F=\RR,
 \]
 every symmetric $2\times2$ matrix is diagonalizable.
 
@@ -38,9 +38,9 @@ every symmetric $2\times2$ matrix is diagonalizable.
 The real spectral theorem states that every real symmetric matrix is orthogonally diagonalizable.
 Hence every symmetric matrix in
 \[
-M_2(\mathbb R)
+M_2(\RR)
 \]
-is diagonalizable over $\mathbb R$.
+is diagonalizable over $\RR$.
 
 :::
 
@@ -50,7 +50,7 @@ is diagonalizable over $\mathbb R$.
 
 Over
 \[
-F=\mathbb C,
+F=\CC,
 \]
 the assertion is false.
 
@@ -164,8 +164,8 @@ Therefore the complete answer is
 \begin{array}{c|c}
 F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
 \hline
-\mathbb R&\text{yes}\\
-\mathbb C&\text{no}\\
+\RR&\text{yes}\\
+\CC&\text{no}\\
 \mathbb F_3&\text{no}
 \end{array}
 }

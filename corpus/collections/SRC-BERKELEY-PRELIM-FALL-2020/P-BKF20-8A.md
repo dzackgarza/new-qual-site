@@ -34,7 +34,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F=\mathbb Z/(179)$.
+Let $F=\ZZ/(179)$.
 
 (a) Prove that $10$ is not a square in $F$.
 

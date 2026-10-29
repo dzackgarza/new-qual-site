@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $f\in L^2(\mathbb C)$. For $z\in\mathbb C$ define
+Problem 6. Let $f\in L^2(\CC)$. For $z\in\CC$ define
 \[
-g(z)=\int_{\{w\in\mathbb C:|w-z|\le1\}}\frac{|f(w)|}{|w-z|}\,dA(w),
+g(z)=\int_{\{w\in\CC:|w-z|\le1\}}\frac{|f(w)|}{|w-z|}\,dA(w),
 \]
-where $dA$ denotes integration with respect to Lebesgue measure on $\mathbb C\cong\mathbb R^2$. Show that $|g(z)|<\infty$ for almost every $z\in\mathbb C$ and that $g\in L^2(\mathbb C)$.
+where $dA$ denotes integration with respect to Lebesgue measure on $\CC\cong\RR^2$. Show that $|g(z)|<\infty$ for almost every $z\in\CC$ and that $g\in L^2(\CC)$.
 :::
 
 ::: {.solution}
@@ -32,20 +32,20 @@ k(u)
 =
 \frac{\mathbf 1_{\{|u|\le1\}}}{|u|}
 \]
-on \(\mathbb C\cong\mathbb R^2\).
+on \(\CC\cong\RR^2\).
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The kernel \(k\) belongs to \(L^1(\mathbb C)\).
+The kernel \(k\) belongs to \(L^1(\CC)\).
 
 
 ::: pf-proof
 
 Using polar coordinates,
 \[
-\int_{\mathbb C}k(u)\,dA(u)
+\int_{\CC}k(u)\,dA(u)
 =
 \int_{|u|\le1}\frac{1}{|u|}\,dA(u)
 =
@@ -87,7 +87,7 @@ the function \(g\) can be written as
 \boxed{
 g(z)
 =
-\int_{\mathbb C}
+\int_{\CC}
 |f(z+u)|\,k(u)\,dA(u)}.
 \]
 
@@ -123,7 +123,7 @@ The function
 \[
 (z,u)\longmapsto |f(z+u)|k(u)
 \]
-is measurable on \(\mathbb C\times\mathbb C\).
+is measurable on \(\CC\times\CC\).
 
 
 ::: pf-proof
@@ -157,10 +157,10 @@ One has
 \[
 \|g\|_2
 \le
-\int_{\mathbb C}
+\int_{\CC}
 k(u)
 \left(
-\int_{\mathbb C}
+\int_{\CC}
 |f(z+u)|^2\,dA(z)
 \right)^{1/2}
 dA(u).
@@ -198,11 +198,11 @@ k(u)
 
 ::: {.pf-step #s1-7}
 
-For every \(u\in\mathbb C\),
+For every \(u\in\CC\),
 \[
 \boxed{
 \left(
-\int_{\mathbb C}
+\int_{\CC}
 |f(z+u)|^2\,dA(z)
 \right)^{1/2}
 =
@@ -217,9 +217,9 @@ Lebesgue measure is translation invariant. With
 w=z+u,
 \]
 \[
-\int_{\mathbb C}|f(z+u)|^2\,dA(z)
+\int_{\CC}|f(z+u)|^2\,dA(z)
 =
-\int_{\mathbb C}|f(w)|^2\,dA(w).
+\int_{\CC}|f(w)|^2\,dA(w).
 \]
 
 :::
@@ -233,7 +233,7 @@ Hence
 \|g\|_2
 \le
 \|f\|_2
-\int_{\mathbb C}k(u)\,dA(u).
+\int_{\CC}k(u)\,dA(u).
 \]
 
 
@@ -259,7 +259,7 @@ Using step [](#s1-2){.pf-ref},
 ::: pf-proof
 
 \[
-\int_{\mathbb C}k(u)\,dA(u)
+\int_{\CC}k(u)\,dA(u)
 =
 2\pi.
 \]
@@ -273,7 +273,7 @@ Using step [](#s1-2){.pf-ref},
 Therefore
 \[
 \boxed{
-g\in L^2(\mathbb C)}.
+g\in L^2(\CC)}.
 \]
 
 
@@ -281,7 +281,7 @@ g\in L^2(\mathbb C)}.
 
 The right-hand side of step [](#s1-9){.pf-ref} is finite because
 \[
-f\in L^2(\mathbb C).
+f\in L^2(\CC).
 \]
 Thus \(\|g\|_2<\infty\).
 
@@ -296,7 +296,7 @@ In particular,
 \boxed{
 |g(z)|<\infty}
 \]
-for almost every \(z\in\mathbb C\).
+for almost every \(z\in\CC\).
 
 
 ::: pf-proof

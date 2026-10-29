@@ -45,7 +45,7 @@ Each mapping cylinder deformation-retracts onto its target circle while retainin
 ::: pf-step
 Van Kampen gives
 $$
-\pi_1(X)\cong \mathbb Z*_{2\mathbb Z}\mathbb Z
+\pi_1(X)\cong \ZZ*_{2\ZZ}\ZZ
 \cong\langle a,b\mid a^2=b^2\rangle.
 $$
 

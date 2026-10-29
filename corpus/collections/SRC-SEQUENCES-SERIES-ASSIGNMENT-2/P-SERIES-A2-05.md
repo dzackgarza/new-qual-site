@@ -275,10 +275,10 @@ Step [](#s1-10){.pf-ref} is exactly the Cauchy criterion.
 
 ::: {.pf-step #s1-12}
 
-Since \(\mathbb R\) is complete,
+Since \(\RR\) is complete,
 \[
 \boxed{
-(a_n)\text{ converges in }\mathbb R}.
+(a_n)\text{ converges in }\RR}.
 \]
 
 

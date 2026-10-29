@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider $x_i'=F_i(x_1,\dots,x_n)$ with $F:\mathbb R^n\to\mathbb R^n$ of class $C^1$.
+Consider $x_i'=F_i(x_1,\dots,x_n)$ with $F:\RR^n\to\RR^n$ of class $C^1$.
 
 (a) If $\langle DF(x)z,z\rangle\le0$ for all $x,z$, show that $\|U(t)-V(t)\|^2$ is decreasing for any two solutions $U,V$.
 
-(b) If $W(t)$ is a solution for $t>0$ and $\langle DF(x)z,z\rangle\le-\|z\|^2$, show that $W(t)$ converges to some $C\in\mathbb R^n$ as $t\to\infty$.
+(b) If $W(t)$ is a solution for $t>0$ and $\langle DF(x)z,z\rangle\le-\|z\|^2$, show that $W(t)$ converges to some $C\in\RR^n$ as $t\to\infty$.
 :::
 
 ::: {.solution}
@@ -138,9 +138,9 @@ $$
 $$
 The final expression tends to $0$ as $t\to\infty$, independently of
 $s>t$. Thus $W(t)$ is a Cauchy trajectory at infinity. Since
-$\mathbb R^n$ is complete, there is some
+$\RR^n$ is complete, there is some
 $$
-C\in\mathbb R^n
+C\in\RR^n
 $$
 such that
 $$

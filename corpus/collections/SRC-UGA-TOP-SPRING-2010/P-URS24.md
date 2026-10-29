@@ -30,7 +30,7 @@ Describe, with proof, all open subsets of $X$ with respect to this topology.
 
 ::: {.pf-step #s1}
 
-$U \subseteq X$ is open iff $\pi^{-1}(U)$ is open in $\mathbb{R}$.
+$U \subseteq X$ is open iff $\pi^{-1}(U)$ is open in $\RR$.
 
 ::: pf-proof
 
@@ -42,11 +42,11 @@ definition of the quotient topology.
 
 ::: pf-step
 
-$\pi^{-1}(U)$ is a union of equivalence classes, i.e. a union of cosets of $\mathbb{Q}$ in $\mathbb{R}$.
+$\pi^{-1}(U)$ is a union of equivalence classes, i.e. a union of cosets of $\QQ$ in $\RR$.
 
 ::: pf-proof
 
-the equivalence classes are exactly the cosets $x + \mathbb{Q}$.
+the equivalence classes are exactly the cosets $x + \QQ$.
 
 :::
 
@@ -54,11 +54,11 @@ the equivalence classes are exactly the cosets $x + \mathbb{Q}$.
 
 ::: {.pf-step #s3}
 
-A union of cosets of $\mathbb{Q}$ is open in $\mathbb{R}$ iff it is either empty or all of $\mathbb{R}$.
+A union of cosets of $\QQ$ is open in $\RR$ iff it is either empty or all of $\RR$.
 
 ::: pf-proof
 
-if $\pi^{-1}(U)$ is a nonempty open set, it contains an open interval $(a, b)$; but every coset of $\mathbb{Q}$ meets $(a, b)$ (since $\mathbb{Q}$ is dense), so $\pi^{-1}(U)$ contains every coset, hence equals $\mathbb{R}$.
+if $\pi^{-1}(U)$ is a nonempty open set, it contains an open interval $(a, b)$; but every coset of $\QQ$ meets $(a, b)$ (since $\QQ$ is dense), so $\pi^{-1}(U)$ contains every coset, hence equals $\RR$.
 
 :::
 

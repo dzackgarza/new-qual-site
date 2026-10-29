@@ -23,13 +23,13 @@ audit:
 ---
 
 ::: {.problem}
-Show carefully that the letter $A$, regarded as a union of closed line segments in $\mathbb R^2$, is homotopy equivalent but not homeomorphic to the letter $O$.
+Show carefully that the letter $A$, regarded as a union of closed line segments in $\RR^2$, is homotopy equivalent but not homeomorphic to the letter $O$.
 
 Show briefly that all but one of the capital letters of the alphabet is either contractible or deformation retracts onto a subspace homeomorphic to $O$.
 Show that the letters fall into exactly three homotopy types.
 How many homeomorphism types are there?
 
-Regard a letter as a finite union of images of paths $[0,1]\to\mathbb R^2$, after choosing a typeface.
+Regard a letter as a finite union of images of paths $[0,1]\to\RR^2$, after choosing a typeface.
 :::
 
 ::: {.solution}
@@ -96,7 +96,7 @@ Thus $B$ is the unique letter in the third homotopy type.
 
 These three types are distinct. Their first homology groups are respectively
 \[
-0,\qquad \mathbb Z,\qquad \mathbb Z^2,
+0,\qquad \ZZ,\qquad \ZZ^2,
 \]
 and singular homology is invariant under homotopy equivalence. Therefore the letters have exactly three homotopy types.
 :::

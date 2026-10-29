@@ -13,7 +13,7 @@ audit:
 ::: {.problem}
 Determine the cardinalities of the following sets:
 \[
-\mathcal P(\mathbb N),
+\mathcal P(\NN),
 \qquad
 \{0,1\},
 \qquad
@@ -23,7 +23,7 @@ Determine the cardinalities of the following sets:
 \]
 and
 \[
-\{f:\mathbb N\to[0,1]\}.
+\{f:\NN\to[0,1]\}.
 \]
 Here $\mathcal P$ denotes power set.
 :::
@@ -34,7 +34,7 @@ Let
 \[
 \mathfrak c
 =
-|\mathbb R|
+|\RR|
 =
 2^{\aleph_0}
 \]
@@ -47,7 +47,7 @@ denote the cardinality of the continuum.
 One has
 \[
 \boxed{
-|\mathcal P(\mathbb N)|
+|\mathcal P(\NN)|
 =
 2^{\aleph_0}
 =
@@ -63,18 +63,18 @@ By definition,
 \]
 is the cardinality of the set of all functions
 \[
-\mathbb N\to\{0,1\}.
+\NN\to\{0,1\}.
 \]
-Each subset \(A\subseteq\mathbb N\) corresponds uniquely to its
+Each subset \(A\subseteq\NN\) corresponds uniquely to its
 characteristic function
 \[
-\mathbf 1_A:\mathbb N\to\{0,1\}.
+\mathbf 1_A:\NN\to\{0,1\}.
 \]
 Thus
 \[
-\mathcal P(\mathbb N)
+\mathcal P(\NN)
 \]
-is in bijection with \(\{0,1\}^{\mathbb N}\).
+is in bijection with \(\{0,1\}^{\NN}\).
 
 :::
 
@@ -108,23 +108,23 @@ One has
 
 ::: pf-proof
 
-The interval \([0,1]\) is a nondegenerate interval in \(\mathbb R\), and
-every nondegenerate real interval has the same cardinality as \(\mathbb R\).
+The interval \([0,1]\) is a nondegenerate interval in \(\RR\), and
+every nondegenerate real interval has the same cardinality as \(\RR\).
 For example, the map
 \[
 x\longmapsto \frac12+\frac1\pi\arctan x
 \]
 is a bijection
 \[
-\mathbb R\to(0,1).
+\RR\to(0,1).
 \]
 Since
 \[
-(0,1)\subseteq[0,1]\subseteq\mathbb R,
+(0,1)\subseteq[0,1]\subseteq\RR,
 \]
 the Cantor--Bernstein theorem gives
 \[
-|[0,1]|=|\mathbb R|=\mathfrak c.
+|[0,1]|=|\RR|=\mathfrak c.
 \]
 
 :::
@@ -149,7 +149,7 @@ x\longmapsto
 \]
 is a bijection
 \[
-\mathbb R\to(0,1).
+\RR\to(0,1).
 \]
 Hence the cardinalities are equal.
 
@@ -163,9 +163,9 @@ Let
 \[
 S
 =
-\{f:\mathbb N\to[0,1]\}
+\{f:\NN\to[0,1]\}
 =
-[0,1]^{\mathbb N}.
+[0,1]^{\NN}.
 \]
 Then
 \[
@@ -258,7 +258,7 @@ Therefore
 \[
 \boxed{
 \left|
-\{f:\mathbb N\to[0,1]\}
+\{f:\NN\to[0,1]\}
 \right|
 =
 \mathfrak c}.
@@ -278,14 +278,14 @@ Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 Collecting the results,
 \[
 \boxed{
-|\mathcal P(\mathbb N)|
+|\mathcal P(\NN)|
 =
 |[0,1]|
 =
 |(0,1)|
 =
 \left|
-\{f:\mathbb N\to[0,1]\}
+\{f:\NN\to[0,1]\}
 \right|
 =
 \mathfrak c}

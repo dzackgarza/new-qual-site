@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-For each $\psi \in C_0^\infty(\mathbb{C})$ (the space of smooth functions with compact support) satisfying $$\iint_{\mathbb{C}} \psi(z) z^n \, dx\,dy = 0$$ for all $n \geq 0$, there exists a $u \in C_0^\infty(\mathbb{C})$ such that $\frac{\partial u}{\partial \bar{z}} = \psi$.
+For each $\psi \in C_0^\infty(\CC)$ (the space of smooth functions with compact support) satisfying $$\iint_{\CC} \psi(z) z^n \, dx\,dy = 0$$ for all $n \geq 0$, there exists a $u \in C_0^\infty(\CC)$ such that $\frac{\partial u}{\partial \bar{z}} = \psi$.
 :::
 
 ::: {.solution}
@@ -26,7 +26,7 @@ For each $\psi \in C_0^\infty(\mathbb{C})$ (the space of smooth functions with c
 
 ::: pf-step
 
-Define $u(z) = \frac{1}{2\pi i} \iint_{\mathbb{C}} \frac{\psi(w)}{w - z}\, dw \wedge d\bar w$ (the Cauchy transform of $\psi$).
+Define $u(z) = \frac{1}{2\pi i} \iint_{\CC} \frac{\psi(w)}{w - z}\, dw \wedge d\bar w$ (the Cauchy transform of $\psi$).
 
 ::: pf-proof
 

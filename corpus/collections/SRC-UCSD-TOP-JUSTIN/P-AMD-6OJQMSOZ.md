@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-6OJQMSOZ
 kind: problem
-title: Borsuk–Ulam theorem for maps $S^2\to\mathbb{R}^2$
+title: Borsuk–Ulam theorem for maps $S^2\to\RR^2$
 classification:
   areas:
   - topology
@@ -18,11 +18,11 @@ audit:
 ---
 
 ::: {.problem}
-Prove that for any $f: S^2 \to \mathbb{R}^2$, there exists $x\in S^2$ such that $f(x) = f(-x)$.
+Prove that for any $f: S^2 \to \RR^2$, there exists $x\in S^2$ such that $f(x) = f(-x)$.
 :::
 
 ::: {.solution}
-**Goal:** Prove the Borsuk-Ulam theorem in dimension 2: for every continuous map $f \colon S^2 \to \mathbb{R}^2$, there exists a point $x \in S^2$ such that $f(x) = f(-x)$.
+**Goal:** Prove the Borsuk-Ulam theorem in dimension 2: for every continuous map $f \colon S^2 \to \RR^2$, there exists a point $x \in S^2$ such that $f(x) = f(-x)$.
 
 ::: pf
 
@@ -32,11 +32,11 @@ Reduce to showing there is no odd continuous map $g \colon S^2 \to S^1$.
 ::: pf-proof
 
 ::: pf-step
-Suppose for contradiction that there exists a continuous map $f \colon S^2 \to \mathbb{R}^2$ such that $f(x) \neq f(-x)$ for all $x \in S^2$.
+Suppose for contradiction that there exists a continuous map $f \colon S^2 \to \RR^2$ such that $f(x) \neq f(-x)$ for all $x \in S^2$.
 :::
 
 ::: pf-step
-Define $F \colon S^2 \to \mathbb{R}^2 \setminus \{0\}$ by $F(x) = f(x) - f(-x)$.
+Define $F \colon S^2 \to \RR^2 \setminus \{0\}$ by $F(x) = f(x) - f(-x)$.
 :::
 
 ::: pf-step
@@ -84,7 +84,7 @@ Antipodal points correspond to $t$ and $t + 1/2$.
 :::
 
 ::: pf-step
-Lift $h$ to a continuous map $\widetilde{h} \colon \mathbb{R} \to \mathbb{R}$ via the covering map $p(t) = e^{2\pi i t}$.
+Lift $h$ to a continuous map $\widetilde{h} \colon \RR \to \RR$ via the covering map $p(t) = e^{2\pi i t}$.
 :::
 
 ::: pf-step
@@ -92,7 +92,7 @@ The condition $h(t + 1/2) = -h(t) = e^{i\pi} h(t)$ means $p(\widetilde{h}(t + 1/
 :::
 
 ::: pf-step
-Thus $\widetilde{h}(t + 1/2) - \widetilde{h}(t) = k + 1/2$ for some fixed integer $k \in \mathbb{Z}$ (by connectedness of $\mathbb{R}$).
+Thus $\widetilde{h}(t + 1/2) - \widetilde{h}(t) = k + 1/2$ for some fixed integer $k \in \ZZ$ (by connectedness of $\RR$).
 :::
 
 ::: pf-step
@@ -103,7 +103,7 @@ The degree of $h$ is given by the total shift over the period 1: $$\deg(h) = \wi
 Thus $\deg(h) = 2k + 1$ is an odd integer, and in particular $\deg(h) \neq 0$.
 
 ::: pf-proof
-The lift $\widetilde{h}$ exists by the lifting criterion for the universal cover $\mathbb{R} \to S^1$; the oddness condition forces the half-period shift to be a half-integer, and the degree is the total shift over one period, which is therefore odd.
+The lift $\widetilde{h}$ exists by the lifting criterion for the universal cover $\RR \to S^1$; the oddness condition forces the half-period shift to be a half-integer, and the degree is the total shift over one period, which is therefore odd.
 :::
 
 :::
@@ -164,7 +164,7 @@ This contradiction shows no such odd map $g \colon S^2 \to S^1$ exists.
 :::
 
 ::: pf-step
-Hence for any continuous $f \colon S^2 \to \mathbb{R}^2$, there exists $x \in S^2$ such that $f(x) = f(-x)$.
+Hence for any continuous $f \colon S^2 \to \RR^2$, there exists $x \in S^2$ such that $f(x) = f(-x)$.
 
 ::: pf-proof
 Step [](#s2){.pf-ref} shows $\deg(h)$ is odd, while step [](#s3){.pf-ref} shows $\deg(h) = 0$; this contradiction rules out the existence of an odd map $g \colon S^2 \to S^1$, and hence of a map $f$ with $f(x) \neq f(-x)$ everywhere.

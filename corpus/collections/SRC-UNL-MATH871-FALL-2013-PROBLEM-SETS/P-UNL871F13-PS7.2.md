@@ -14,8 +14,8 @@ review: draft
 Let
 \[
 X=\{(0,1)\}\cup\{(x,0):0\le x\le1\}\cup
-\left\{\left(\frac1n,y\right):0\le y\le1,\ n\in\mathbb N\right\}
-\subset\mathbb R^2
+\left\{\left(\frac1n,y\right):0\le y\le1,\ n\in\NN\right\}
+\subset\RR^2
 \]
 with the subspace topology.
 
@@ -135,7 +135,7 @@ lies in the closure of $Y$.
 
 For each
 \[
-n\in\mathbb N,
+n\in\NN,
 \]
 the point
 \[
@@ -219,9 +219,9 @@ S
 \{0\}
 \cup
 \left\{
-\frac1n:n\in\mathbb N
+\frac1n:n\in\NN
 \right\}
-\subseteq\mathbb R.
+\subseteq\RR.
 \]
 Every connected subset of $S$ is a singleton.
 
@@ -230,7 +230,7 @@ Every connected subset of $S$ is a singleton.
 
 Every connected subset of
 \[
-\mathbb R
+\RR
 \]
 is an interval.
 But $S$ contains no nondegenerate interval.

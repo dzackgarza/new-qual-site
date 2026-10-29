@@ -29,11 +29,11 @@ Given a finite group $G$, show that there are fields $K$ and $F$ such that $K$ i
 
 ::: {.solution}
 Let $m=|G|$. Take algebraically independent indeterminates
-$x_g$, indexed by $g\in G$, over $\mathbb Q$, and put
+$x_g$, indexed by $g\in G$, over $\QQ$, and put
 $$
-K=\mathbb Q(x_g:g\in G).
+K=\QQ(x_g:g\in G).
 $$
-For $h\in G$ let $\sigma_h$ fix $\mathbb Q$ and send
+For $h\in G$ let $\sigma_h$ fix $\QQ$ and send
 $x_g$ to $x_{hg}$. Define the fixed field
 $$
 F=\{a\in K:\sigma_h(a)=a\text{ for every }h\in G\}.

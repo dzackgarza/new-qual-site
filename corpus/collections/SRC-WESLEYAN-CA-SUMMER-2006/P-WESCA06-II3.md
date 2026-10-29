@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D$ be a domain whose closure is compact in $\mathbb C$, and let $f$ and $g$ be continuous on $\overline D$ and analytic on $D$.
+Let $D$ be a domain whose closure is compact in $\CC$, and let $f$ and $g$ be continuous on $\overline D$ and analytic on $D$.
 Show that
 \[
 |f(z)|+|g(z)|

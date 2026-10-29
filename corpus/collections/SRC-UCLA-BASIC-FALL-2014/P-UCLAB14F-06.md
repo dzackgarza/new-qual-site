@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $f:[0,1]\to\mathbb R$ be a $C^1$ function. Prove that
+Problem 6. Let $f:[0,1]\to\RR$ be a $C^1$ function. Prove that
 \[
 \lim_{n\to\infty}\sum_{k=0}^{n-1}
 \left|f\!\left(\frac{k+1}{n}\right)-f\!\left(\frac{k}{n}\right)\right|

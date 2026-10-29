@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $E = \mathbb{R} \times \mathbb{Z} \cup \mathbb{Z} \times \mathbb{R}$ be the subset of the plane whose points have at least one of the coordinates an integer.
-Let $S^1 \vee S^1 \subset \mathbb{R}^2 \times \mathbb{R}^2$ be the one-point union of circles.
+Let $E = \RR \times \ZZ \cup \ZZ \times \RR$ be the subset of the plane whose points have at least one of the coordinates an integer.
+Let $S^1 \vee S^1 \subset \RR^2 \times \RR^2$ be the one-point union of circles.
 Define $p : E \to S^1 \vee S^1$ by
 $$
 p(x, y) = (e^{2\pi i x}, e^{2\pi i y}).
@@ -51,7 +51,7 @@ Choose sufficiently short open arcs $A_1,A_2\subset S^1$ about $1$, and let
 $$
 U=(A_1\times\{1\})\cup(\{1\}\times A_2)\subset S^1\vee S^1.
 $$
-For every lattice point $(m,n)\in\mathbb Z^2$, the component of $p^{-1}(U)$ containing $(m,n)$ is a small cross made from one horizontal and one vertical interval through $(m,n)$. Different lattice points give disjoint crosses, and $p$ maps each cross homeomorphically onto $U$.
+For every lattice point $(m,n)\in\ZZ^2$, the component of $p^{-1}(U)$ containing $(m,n)$ is a small cross made from one horizontal and one vertical interval through $(m,n)$. Different lattice points give disjoint crosses, and $p$ maps each cross homeomorphically onto $U$.
 :::
 
 :::
@@ -94,7 +94,7 @@ Every covering map induces an injective homomorphism on fundamental groups. Conc
 The class $[\sigma]$ is nontrivial in $\pi_1(E,(0,0))$.
 
 ::: pf-proof
-The space $E$ is a graph with vertices $\mathbb Z^2$ and unit horizontal and vertical edges. The loop $\sigma$ is the boundary of one square in this graph. Its cellular $1$-cycle is the nonzero sum of those four oriented edges, and the graph has no $2$-cells, so this cycle is nonzero in $H_1(E;\mathbb Z)$. Therefore $[\sigma]$ cannot be null-homotopic.
+The space $E$ is a graph with vertices $\ZZ^2$ and unit horizontal and vertical edges. The loop $\sigma$ is the boundary of one square in this graph. Its cellular $1$-cycle is the nonzero sum of those four oriented edges, and the graph has no $2$-cells, so this cycle is nonzero in $H_1(E;\ZZ)$. Therefore $[\sigma]$ cannot be null-homotopic.
 :::
 
 :::

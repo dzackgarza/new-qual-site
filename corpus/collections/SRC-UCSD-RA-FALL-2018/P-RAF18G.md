@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $g \in L^1([0,1], m)$ and $h : [0,1] \to \mathbb{R}$ be a continuous function.
+Let $g \in L^1([0,1], m)$ and $h : [0,1] \to \RR$ be a continuous function.
 
-1. If $f : [0,1] \to \mathbb{R}$ is absolutely continuous and satisfies $f'(x) = h(x)$ for a.e. $x$, show $f'(x) = h(x)$ for all $x \in (0,1)$.
+1. If $f : [0,1] \to \RR$ is absolutely continuous and satisfies $f'(x) = h(x)$ for a.e. $x$, show $f'(x) = h(x)$ for all $x \in (0,1)$.
 
 2. Now suppose that
 $$

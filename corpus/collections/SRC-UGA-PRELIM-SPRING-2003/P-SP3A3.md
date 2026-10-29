@@ -41,7 +41,7 @@ The image of the linear map represented by $AA^t$ is contained in the image of t
 \[
 AA^t x=A(A^t x)
 \]
-for every $x\in\mathbb C^3$. Hence $\operatorname{rank}(AA^t)\le\operatorname{rank}(A)$. Since $A$ has only two columns, $\operatorname{rank}(A)\le2$.
+for every $x\in\CC^3$. Hence $\operatorname{rank}(AA^t)\le\operatorname{rank}(A)$. Since $A$ has only two columns, $\operatorname{rank}(A)\le2$.
 :::
 
 :::

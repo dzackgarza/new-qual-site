@@ -19,13 +19,13 @@ Define a complex torus and determine its group of holomorphic automorphisms.
 ::: {.solution}
 A complex torus is a quotient
 \[
-T=\mathbb C/\Lambda,
+T=\CC/\Lambda,
 \]
 where
 \[
-\Lambda=\mathbb Z\omega_1\oplus\mathbb Z\omega_2
+\Lambda=\ZZ\omega_1\oplus\ZZ\omega_2
 \]
-is a lattice with $\omega_1,\omega_2$ linearly independent over $\mathbb R$.
+is a lattice with $\omega_1,\omega_2$ linearly independent over $\RR$.
 
 Every holomorphic automorphism of $T$ is induced by an affine map
 \[
@@ -41,16 +41,16 @@ Consequently
 \operatorname{Aut}_{\mathrm{hol}}(T)
 \cong T\rtimes U(\Lambda),
 \qquad
-U(\Lambda)=\{a\in\mathbb C^*:a\Lambda=\Lambda\}.}
+U(\Lambda)=\{a\in\CC^*:a\Lambda=\Lambda\}.}
 \]
 
 To prove this, let $F:T\to T$ be a holomorphic automorphism and let
 \[
-\pi:\mathbb C\to T
+\pi:\CC\to T
 \]
-be the universal covering. Since $\mathbb C$ is simply connected, $F\circ\pi$ lifts to an entire map
+be the universal covering. Since $\CC$ is simply connected, $F\circ\pi$ lifts to an entire map
 \[
-\widetilde F:\mathbb C\to\mathbb C.
+\widetilde F:\CC\to\CC.
 \]
 For every $\lambda\in\Lambda$, the difference
 \[
@@ -78,5 +78,5 @@ a\lambda\in\Lambda
 \]
 A lattice has only finitely many points in a bounded set, so there are only finitely many possibilities for $a\lambda$, hence only finitely many possibilities for $a$.
 
-For example, if $\Lambda=\mathbb Z+i\mathbb Z$, then multiplication by $\pm1,\pm i$ preserves $\Lambda$, giving the fourth roots of unity in $U(\Lambda)$. If $\Lambda=\mathbb Z+\mathbb Z e^{i\pi/3}$, then multiplication by the sixth roots of unity preserves $\Lambda$.
+For example, if $\Lambda=\ZZ+i\ZZ$, then multiplication by $\pm1,\pm i$ preserves $\Lambda$, giving the fourth roots of unity in $U(\Lambda)$. If $\Lambda=\ZZ+\ZZ e^{i\pi/3}$, then multiplication by the sixth roots of unity preserves $\Lambda$.
 :::

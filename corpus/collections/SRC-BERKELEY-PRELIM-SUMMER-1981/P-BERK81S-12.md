@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that no commutative ring with identity has additive group isomorphic to $\mathbb Q/\mathbb Z$.
+Show that no commutative ring with identity has additive group isomorphic to $\QQ/\ZZ$.
 :::
 
 ::: {.solution}

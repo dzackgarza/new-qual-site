@@ -42,7 +42,7 @@ Changing the basepoint along a path $\gamma$ sends a loop $\alpha$ to the concat
 
 Since
 $$
-\pi_1(T^2,x_0)\cong\mathbb Z^2
+\pi_1(T^2,x_0)\cong\ZZ^2
 $$
 is abelian, this conjugation is trivial.
 
@@ -58,7 +58,7 @@ For any $g,h$ in an abelian group, $g^{-1}hg=h$.
 
 Therefore
 $$
-\boxed{\gamma_\sharp=\operatorname{id}_{\mathbb Z^2}.}
+\boxed{\gamma_\sharp=\operatorname{id}_{\ZZ^2}.}
 $$
 
 ::: pf-proof

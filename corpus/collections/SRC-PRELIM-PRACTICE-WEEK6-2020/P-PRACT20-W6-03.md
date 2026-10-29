@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-03
 kind: problem
-title: Candidate metrics on $\mathbb R$
+title: Candidate metrics on $\RR$
 classification:
   areas:
   - prelim

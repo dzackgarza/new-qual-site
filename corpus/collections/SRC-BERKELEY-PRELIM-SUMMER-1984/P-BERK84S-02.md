@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let Z be the ring of integers and $\mathbb { Z } [ x ]$ the polynomial ring over Z. Show that
+Let Z be the ring of integers and $\ZZ [ x ]$ the polynomial ring over Z. Show that
 
 $$
 x ^ { 6 } + 5 3 9 x ^ { 5 } - 5 1 1 x + 8 4 7
 $$
 
-is irreducible in $\mathbb { Z } [ x ]$
+is irreducible in $\ZZ [ x ]$
 :::
 
 ::: {.solution}
@@ -69,7 +69,7 @@ The leading coefficient is $1$, so it is not divisible by $7$. Moreover,
 -8936900\equiv14\pmod{49},
 \]
 so $49\nmid8936900$.
-Therefore Eisenstein's criterion at the prime $7$ shows that $f(x-7)$ is irreducible in $\mathbb Q[x]$.
+Therefore Eisenstein's criterion at the prime $7$ shows that $f(x-7)$ is irreducible in $\QQ[x]$.
 
 :::
 
@@ -77,21 +77,21 @@ Therefore Eisenstein's criterion at the prime $7$ shows that $f(x-7)$ is irreduc
 
 ::: pf-step
 
-Hence $f(x)$ is irreducible in $\mathbb Z[x]$.
+Hence $f(x)$ is irreducible in $\ZZ[x]$.
 
 ::: pf-proof
 
 The substitution
 \[
-\tau:\mathbb Q[x]\longrightarrow\mathbb Q[x],
+\tau:\QQ[x]\longrightarrow\QQ[x],
 \qquad
 \tau(g)(x)=g(x-7),
 \]
-is a ring automorphism, with inverse $g(x)\mapsto g(x+7)$. Thus $f$ is reducible in $\mathbb Q[x]$ if and only if $f(x-7)$ is reducible in $\mathbb Q[x]$. By step [](#s1){.pf-ref}, $f$ is therefore irreducible in $\mathbb Q[x]$.
+is a ring automorphism, with inverse $g(x)\mapsto g(x+7)$. Thus $f$ is reducible in $\QQ[x]$ if and only if $f(x-7)$ is reducible in $\QQ[x]$. By step [](#s1){.pf-ref}, $f$ is therefore irreducible in $\QQ[x]$.
 
-Finally, $f$ is monic, hence primitive. Gauss's lemma then implies that irreducibility in $\mathbb Q[x]$ is equivalent to irreducibility in $\mathbb Z[x]$. Therefore
+Finally, $f$ is monic, hence primitive. Gauss's lemma then implies that irreducibility in $\QQ[x]$ is equivalent to irreducibility in $\ZZ[x]$. Therefore
 \[
-\boxed{x^6+539x^5-511x+847\text{ is irreducible in }\mathbb Z[x].}
+\boxed{x^6+539x^5-511x+847\text{ is irreducible in }\ZZ[x].}
 \]
 
 :::

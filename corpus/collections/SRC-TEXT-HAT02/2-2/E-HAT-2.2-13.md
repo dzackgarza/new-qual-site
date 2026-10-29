@@ -36,17 +36,17 @@ Let $X$ be the 2 complex obtained from $S^1$ with its usual cell structure by at
 ::: {.solution}
 Let $e^0,e^1,e^2_2,e^2_3$ denote the cells, where the subscripts record the degrees of the two attaching maps. The cellular chain complex of $X$ is
 \[
-0\longrightarrow \mathbb Z^2
-\xrightarrow{d_2}\mathbb Z
-\xrightarrow{0}\mathbb Z\longrightarrow0,
+0\longrightarrow \ZZ^2
+\xrightarrow{d_2}\ZZ
+\xrightarrow{0}\ZZ\longrightarrow0,
 \qquad
  d_2(a,b)=2a+3b.
 \]
 Hence
 \[
-H_2(X)=\ker d_2=\mathbb Z(3,-2),
+H_2(X)=\ker d_2=\ZZ(3,-2),
 \qquad H_1(X)=0,
-\qquad H_0(X)=\mathbb Z.
+\qquad H_0(X)=\ZZ.
 \]
 
 ::: pf
@@ -65,11 +65,11 @@ Their homology groups are
 \[
 \begin{array}{c|ccc}
 A&H_0&H_1&H_2\\ \hline
-\{e^0\}&\mathbb Z&0&0\\
-S^1&\mathbb Z&\mathbb Z&0\\
-A_2&\mathbb Z&\mathbb Z_2&0\\
-A_3&\mathbb Z&\mathbb Z_3&0\\
-X&\mathbb Z&0&\mathbb Z.
+\{e^0\}&\ZZ&0&0\\
+S^1&\ZZ&\ZZ&0\\
+A_2&\ZZ&\ZZ_2&0\\
+A_3&\ZZ&\ZZ_3&0\\
+X&\ZZ&0&\ZZ.
 \end{array}
 \]
 
@@ -77,11 +77,11 @@ X&\mathbb Z&0&\mathbb Z.
 
 A subcomplex containing a $2$-cell must contain its attaching circle, hence $e^1$. This gives the displayed list. The chain complexes for $A_2$ and $A_3$ are respectively
 \[
-0\to\mathbb Z\xrightarrow{2}\mathbb Z\to\mathbb Z\to0
+0\to\ZZ\xrightarrow{2}\ZZ\to\ZZ\to0
 \]
 and
 \[
-0\to\mathbb Z\xrightarrow{3}\mathbb Z\to\mathbb Z\to0,
+0\to\ZZ\xrightarrow{3}\ZZ\to\ZZ\to0,
 \]
 which give the stated groups. The groups for $X$ follow from the cellular complex above.
 
@@ -105,11 +105,11 @@ X/X=\mathrm{pt}.
 \]
 Thus
 \[
-\widetilde H_2(X/S^1)\cong\mathbb Z^2,
+\widetilde H_2(X/S^1)\cong\ZZ^2,
 \quad
-\widetilde H_2(X/A_2)\cong\mathbb Z,
+\widetilde H_2(X/A_2)\cong\ZZ,
 \quad
-\widetilde H_2(X/A_3)\cong\mathbb Z,
+\widetilde H_2(X/A_3)\cong\ZZ,
 \]
 and all other reduced homology groups of these three quotients vanish.
 
@@ -129,7 +129,7 @@ The space $X$ is homotopy equivalent to $S^2$.
 
 First attach the degree-$2$ cell, obtaining $A_2$. Its fundamental group is
 \[
-\pi_1(A_2)\cong\mathbb Z_2.
+\pi_1(A_2)\cong\ZZ_2.
 \]
 The degree-$3$ attaching loop for the second $2$-cell represents the same element of this group as a degree-$1$ loop, since $3\equiv1\pmod2$. Hence these two attaching maps are homotopic in $A_2$. Replacing the degree-$3$ attaching map by the homotopic degree-$1$ attaching map does not change the homotopy type of the adjunction space.
 
@@ -177,7 +177,7 @@ The quotient map $X\to X/A$ is a homotopy equivalence only for the trivial subco
 
 ::: pf-proof
 
-For $A=S^1$, the quotient has $H_2\cong\mathbb Z^2$, unlike $H_2(X)\cong\mathbb Z$. For $A=A_2$ or $A=A_3$, the quotient is a sphere, but by step [](#s4){.pf-ref} the induced map on $H_2$ is multiplication by $2$ or $3$, not an isomorphism. For $A=X$ the quotient is a point. Finally collapsing the single $0$-cell does nothing: $X/\{e^0\}$ is canonically homeomorphic to $X$. Hence precisely the trivial subcomplex gives a quotient homotopy equivalence.
+For $A=S^1$, the quotient has $H_2\cong\ZZ^2$, unlike $H_2(X)\cong\ZZ$. For $A=A_2$ or $A=A_3$, the quotient is a sphere, but by step [](#s4){.pf-ref} the induced map on $H_2$ is multiplication by $2$ or $3$, not an isomorphism. For $A=X$ the quotient is a point. Finally collapsing the single $0$-cell does nothing: $X/\{e^0\}$ is canonically homeomorphic to $X$. Hence precisely the trivial subcomplex gives a quotient homotopy equivalence.
 
 :::
 

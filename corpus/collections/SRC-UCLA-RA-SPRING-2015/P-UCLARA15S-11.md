@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let
 \[
-\Omega=\{z\in\mathbb C:0<|z|<1\}.
+\Omega=\{z\in\CC:0<|z|<1\}.
 \]
-Prove that for every bounded harmonic function $u:\Omega\to\mathbb R$ there is a harmonic function $v:\Omega\to\mathbb R$ obeying
+Prove that for every bounded harmonic function $u:\Omega\to\RR$ there is a harmonic function $v:\Omega\to\RR$ obeying
 \[
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},
 \qquad
@@ -108,7 +108,7 @@ The last integral vanishes by periodicity, proving the differential equation.
 
 ::: {.pf-step #s1-3}
 
-There are constants $A,B\in\mathbb R$ such that
+There are constants $A,B\in\RR$ such that
 \[
 m(r)=A\log r+B.
 \]

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a continuous complex-valued function on the closed unit disk $\overline D$ such that $f$ is holomorphic on the open disk $D=\{z\in\mathbb C:|z|<1\}$ and $f(0)\ne0$.
+Let $f$ be a continuous complex-valued function on the closed unit disk $\overline D$ such that $f$ is holomorphic on the open disk $D=\{z\in\CC:|z|<1\}$ and $f(0)\ne0$.
 
 (a) Show that if $0<r<1$ and $\inf_{|z|=r}|f(z)|>0$, then
 \[

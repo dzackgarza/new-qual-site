@@ -32,11 +32,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $E, F \subset \mathbb{R}$ be two Lebesgue-measurable subsets of $\mathbb{R}$, each of finite measure, and let $\chi_E$ and $\chi_F$ denote their respective characteristic functions.
+Let $E, F \subset \RR$ be two Lebesgue-measurable subsets of $\RR$, each of finite measure, and let $\chi_E$ and $\chi_F$ denote their respective characteristic functions.
 
 (a) Prove that the convolution $\chi_E * \chi_F$ defined by
 
-$$\chi_E * \chi_F(x) = \int_{\mathbb{R}} \chi_E(y) \chi_F(x - y) \, dy$$
+$$\chi_E * \chi_F(x) = \int_{\RR} \chi_E(y) \chi_F(x - y) \, dy$$
 
 is a continuous function of $x$.
 
@@ -55,7 +55,7 @@ pointwise almost everywhere.
 The convolution $\chi_E*\chi_F$ is uniformly continuous.
 
 ::: pf-proof
-Because $m(E),m(F)<\infty$, both characteristic functions lie in $L^2(\mathbb R)$, with
+Because $m(E),m(F)<\infty$, both characteristic functions lie in $L^2(\RR)$, with
 \[
 \|\chi_E\|_2=m(E)^{1/2},
 \qquad
@@ -67,10 +67,10 @@ $m(E)^{1/2}m(F)^{1/2}$ [@Fol13]. Let
 \[
 h(x)=(\chi_E*\chi_F)(x).
 \]
-For $t,x\in\mathbb R$,
+For $t,x\in\RR$,
 \[
 h(x+t)-h(x)
-=\int_{\mathbb R}\chi_E(y)
+=\int_{\RR}\chi_E(y)
 \bigl(\chi_F(x+t-y)-\chi_F(x-y)\bigr)\,dy.
 \]
 By Cauchy--Schwarz,
@@ -78,7 +78,7 @@ By Cauchy--Schwarz,
 |h(x+t)-h(x)|
 \le
 \|\chi_E\|_2
-\left(\int_{\mathbb R}
+\left(\int_{\RR}
 |\chi_F(x+t-y)-\chi_F(x-y)|^2\,dy\right)^{1/2}.
 \]
 After the change of variables $u=x-y$, the second factor is
@@ -87,11 +87,11 @@ After the change of variables $u=x-y$, the second factor is
 \]
 where $(\tau_t\phi)(u)=\phi(u+t)$. Therefore
 \[
-\sup_{x\in\mathbb R}|h(x+t)-h(x)|
+\sup_{x\in\RR}|h(x+t)-h(x)|
 \le
 \|\chi_E\|_2\,\|\tau_t\chi_F-\chi_F\|_2.
 \]
-Translations are continuous in $L^2(\mathbb R)$ [@Fol13], so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
+Translations are continuous in $L^2(\RR)$ [@Fol13], so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
 :::
 
 :::
@@ -100,10 +100,10 @@ Translations are continuous in $L^2(\mathbb R)$ [@Fol13], so the right-hand side
 Rewrite the second convolution as a one-sided average.
 
 ::: pf-proof
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 (\chi_E*\chi_{[0,1/n]})(x)
-=\int_{\mathbb R}\chi_E(y)\chi_{[0,1/n]}(x-y)\,dy.
+=\int_{\RR}\chi_E(y)\chi_{[0,1/n]}(x-y)\,dy.
 \]
 The second characteristic function is nonzero exactly when
 \[
@@ -123,7 +123,7 @@ n(\chi_E*\chi_{[0,1/n]})(x)
 Apply the Lebesgue differentiation theorem.
 
 ::: pf-proof
-Since $\chi_E\in L^1_{\mathrm{loc}}(\mathbb R)$, almost every
+Since $\chi_E\in L^1_{\mathrm{loc}}(\RR)$, almost every
 $x$ is a Lebesgue point [@Fol13]. At such a point,
 $$
 \left|\frac1r\int_{x-r}^{x}\chi_E(y)\,dy-\chi_E(x)\right|
@@ -140,7 +140,7 @@ Taking $r=1/n$ yields
 n(\chi_E*\chi_{[0,1/n]})(x)
 \longrightarrow \chi_E(x)
 \]
-for almost every $x\in\mathbb R$.
+for almost every $x\in\RR$.
 :::
 
 :::

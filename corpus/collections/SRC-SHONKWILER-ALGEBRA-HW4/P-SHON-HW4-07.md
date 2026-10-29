@@ -21,11 +21,11 @@ Two homomorphisms $f_1,f_2:G_1\to G_2$ are called conjugate if there is $g\in G_
 f_1(x)=g f_2(x)g^{-1}\qquad\text{for all }x\in G_1.
 \]
 
-1. Find all homomorphisms $S_3\to\mathbb C^\times$.
+1. Find all homomorphisms $S_3\to\CC^\times$.
 
 2. Determine all homomorphisms $S_3\to S_3$ up to conjugation.
 
-3. Prove that any two injective homomorphisms $S_3\to GL_2(\mathbb R)$ are conjugate.
+3. Prove that any two injective homomorphisms $S_3\to GL_2(\RR)$ are conjugate.
 :::
 
 ::: {.solution}
@@ -41,7 +41,7 @@ r=(123),
 s=(12).
 \]
 
-## Part 1: homomorphisms \(S_3\to\mathbb C^\times\)
+## Part 1: homomorphisms \(S_3\to\CC^\times\)
 
 ::: pf
 
@@ -79,9 +79,9 @@ which generates \(A_3\). Hence equality holds.
 
 ::: {.pf-step #s1-2}
 
-Since \(\mathbb C^\times\) is abelian, every homomorphism
+Since \(\CC^\times\) is abelian, every homomorphism
 \[
-f:S_3\to\mathbb C^\times
+f:S_3\to\CC^\times
 \]
 kills \(A_3\).
 
@@ -114,7 +114,7 @@ Use the universal property of the quotient by a subgroup contained in the kernel
 
 A homomorphism
 \[
-C_2\to\mathbb C^\times
+C_2\to\CC^\times
 \]
 is determined by the image \(z\) of its nontrivial element, and \(z\) must satisfy
 \[
@@ -136,7 +136,7 @@ The only solutions of
 \[
 z^2=1
 \]
-in \(\mathbb C^\times\) are
+in \(\CC^\times\) are
 \[
 \boxed{z=1,\ -1}.
 \]
@@ -156,7 +156,7 @@ z^2-1=(z-1)(z+1).
 
 Hence there are exactly two homomorphisms
 \[
-S_3\to\mathbb C^\times:
+S_3\to\CC^\times:
 \]
 the trivial homomorphism and the sign homomorphism.
 
@@ -174,7 +174,7 @@ The choice \(z=1\) gives the trivial map. The choice \(z=-1\) sends even permuta
 Thus
 \[
 \boxed{
-\operatorname{Hom}(S_3,\mathbb C^\times)
+\operatorname{Hom}(S_3,\CC^\times)
 =
 \{1,\operatorname{sgn}\}}.
 \]
@@ -408,7 +408,7 @@ The three possible kernels in step [](#s1-8){.pf-ref} are invariant under conjug
 
 ::: pf-step
 
-There exists a positive-definite inner product on \(\mathbb R^2\) invariant under \(\rho(S_3)\).
+There exists a positive-definite inner product on \(\RR^2\) invariant under \(\rho(S_3)\).
 
 
 ::: pf-proof
@@ -446,7 +446,7 @@ After a change of basis, \(\rho(S_3)\) lies in \(O(2)\).
 
 Choose an isometry from the invariant inner-product space
 \[
-(\mathbb R^2,\langle-,-\rangle_\rho)
+(\RR^2,\langle-,-\rangle_\rho)
 \]
 to the standard Euclidean plane. Conjugating \(\rho\) by that linear isomorphism makes every \(\rho(g)\) orthogonal.
 
@@ -551,7 +551,7 @@ then generate exactly the standard order-\(6\) dihedral subgroup of \(O(2)\).
 
 Consequently, any two injective homomorphisms
 \[
-\rho_1,\rho_2:S_3\to GL_2(\mathbb R)
+\rho_1,\rho_2:S_3\to GL_2(\RR)
 \]
 are conjugate.
 
@@ -560,7 +560,7 @@ are conjugate.
 
 By step [](#s1-20){.pf-ref}, choose
 \[
-A_1,A_2\in GL_2(\mathbb R)
+A_1,A_2\in GL_2(\RR)
 \]
 such that
 \[
@@ -568,7 +568,7 @@ A_i\rho_i(-)A_i^{-1}
 \]
 lands in \(O(2)\). By step [](#s1-25){.pf-ref}, after additional orthogonal conjugations both representations become the same standard dihedral representation. Undoing the changes of basis gives some
 \[
-A\in GL_2(\mathbb R)
+A\in GL_2(\RR)
 \]
 with
 \[
@@ -582,7 +582,7 @@ for all \(g\in S_3\).
 
 ::: pf-qed
 
-Step [](#s1-7){.pf-ref} classifies the homomorphisms to \(\mathbb C^\times\), step [](#s1-18){.pf-ref} classifies the homomorphisms \(S_3\to S_3\) up to conjugation, and step [](#s1-26){.pf-ref} proves conjugacy of all injective \(2\)-dimensional real representations.
+Step [](#s1-7){.pf-ref} classifies the homomorphisms to \(\CC^\times\), step [](#s1-18){.pf-ref} classifies the homomorphisms \(S_3\to S_3\) up to conjugation, and step [](#s1-26){.pf-ref} proves conjugacy of all injective \(2\)-dimensional real representations.
 
 :::
 

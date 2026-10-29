@@ -51,7 +51,7 @@ The hypothesis
 \[
 \sum_{j=1}^{\infty}|a_j|<\infty
 \]
-means precisely that the sequence \((t_N)\) converges in \(\mathbb R\). Every convergent real sequence is Cauchy.
+means precisely that the sequence \((t_N)\) converges in \(\RR\). Every convergent real sequence is Cauchy.
 
 :::
 
@@ -93,7 +93,7 @@ The sequence \((s_N)\) converges to a real number.
 
 ::: pf-proof
 
-The real numbers are complete, so every Cauchy sequence in \(\mathbb R\) converges. Apply completeness to step [](#s1-2){.pf-ref}.
+The real numbers are complete, so every Cauchy sequence in \(\RR\) converges. Apply completeness to step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -105,7 +105,7 @@ Therefore
 \[
 \boxed{\displaystyle
 \lim_{N\to\infty}\sum_{j=1}^{N}a_j
-\text{ exists in }\mathbb R.}
+\text{ exists in }\RR.}
 \]
 
 

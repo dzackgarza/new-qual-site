@@ -68,7 +68,7 @@ The limit on the disk is a holomorphic extension of $f$.
 
 ::: pf-proof
 
-By completeness of $\mathbb C$, step [](#s1){.pf-ref} first gives
+By completeness of $\CC$, step [](#s1){.pf-ref} first gives
 the pointwise limit $F(z)=\lim_n p_n(z)$ at each $z\in D_R$.
 For a compact $K\subset D_R$, let $m\to\infty$ in the
 uniform Cauchy estimate. It follows that $p_n\to F$
@@ -77,7 +77,7 @@ on the whole disk. The local uniform limit theorem makes
 $F$ holomorphic there [@SS03].
 
 For every $z\in A$, the hypothesis already gives
-$p_n(z)\to f(z)$. Uniqueness of limits in $\mathbb C$
+$p_n(z)\to f(z)$. Uniqueness of limits in $\CC$
 therefore gives $F(z)=f(z)$ on $A$. Hence $F$ is the
 required extension to all of $D_R$.
 

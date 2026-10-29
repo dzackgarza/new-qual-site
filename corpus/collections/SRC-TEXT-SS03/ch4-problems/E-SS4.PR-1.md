@@ -42,12 +42,12 @@ Let $q$ be determined by
 From the hypothesis there are constants $C_0,a_0>0$ such that, after increasing $C_0$ if necessary,
 \[
 |\widehat f(\xi)|\le C_0e^{-a_0|\xi|^p}
-\qquad(\xi\in\mathbb R).
+\qquad(\xi\in\RR).
 \tag{1}
 \]
 By Fourier inversion,
 \[
-f(z)=\int_{\mathbb R}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi
+f(z)=\int_{\RR}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi
 \tag{2}
 \]
 for real $z$, and the right-hand side will provide the desired entire extension.
@@ -69,12 +69,12 @@ Combining (1) and (3),
 \le C_0e^{-a_0|\xi|^p/2}e^{C_1|y|^q}.
 \tag{4}
 \]
-The first factor on the right is integrable in $\xi$. On every compact set of $z$ the second factor is uniformly bounded, so (2) converges locally uniformly and may be differentiated under the integral sign to every order. Hence it defines an entire function agreeing with the original $f$ on $\mathbb R$.
+The first factor on the right is integrable in $\xi$. On every compact set of $z$ the second factor is uniformly bounded, so (2) converges locally uniformly and may be differentiated under the integral sign to every order. Hence it defines an entire function agreeing with the original $f$ on $\RR$.
 
 Integrating (4) gives
 \[
 |f(z)|\le
-C_0\left(\int_{\mathbb R}e^{-a_0|\xi|^p/2}\,d\xi\right)
+C_0\left(\int_{\RR}e^{-a_0|\xi|^p/2}\,d\xi\right)
 e^{C_1|y|^q}
 \le A e^{C_1|z|^q}.
 \]

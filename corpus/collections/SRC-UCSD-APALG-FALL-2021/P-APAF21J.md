@@ -21,8 +21,8 @@ audit:
 ---
 
 ::: {.problem}
-(a) Given a Young diagram $\alpha\vdash d$, identify the corresponding conjugacy class $C_\alpha\subset S(d)$ with the formal sum of its elements, so that it becomes an element of the group algebra $\mathbb{C}S(d)$.
-Given another Young diagram $\lambda\vdash d$, show that $C_\alpha$ acts in the corresponding irreducible representation $V^\lambda$ of $\mathbb{C}S(d)$ as multiplication by a scalar $\omega_\alpha^\lambda$, and express this number in terms of the character of $V^\lambda$.
+(a) Given a Young diagram $\alpha\vdash d$, identify the corresponding conjugacy class $C_\alpha\subset S(d)$ with the formal sum of its elements, so that it becomes an element of the group algebra $\CC S(d)$.
+Given another Young diagram $\lambda\vdash d$, show that $C_\alpha$ acts in the corresponding irreducible representation $V^\lambda$ of $\CC S(d)$ as multiplication by a scalar $\omega_\alpha^\lambda$, and express this number in terms of the character of $V^\lambda$.
 
 (b) Compute $\omega_\alpha^\lambda$ explicitly in the case that $\alpha=(d)$ is the Young diagram consisting of a single row of $d$ cells.
 :::
@@ -47,7 +47,7 @@ Then the conjugacy class of cycle type $\alpha$ has size
 ::: {.pf-step #class-sum-is-central}
 The class sum
 \[
-C_\alpha:=\sum_{g\in C_\alpha}g\in\mathbb C S_d
+C_\alpha:=\sum_{g\in C_\alpha}g\in\CC S_d
 \]
 is central in the group algebra.
 
@@ -57,7 +57,7 @@ For every $h\in S_d$,
 hC_\alpha h^{-1}
 =\sum_{g\in C_\alpha}hgh^{-1}.
 \]
-Conjugation by $h$ permutes the elements of the conjugacy class $C_\alpha$, so the right-hand side is again $C_\alpha$. Thus $hC_\alpha=C_\alpha h$ for every $h$, hence $C_\alpha\in Z(\mathbb C S_d)$.
+Conjugation by $h$ permutes the elements of the conjugacy class $C_\alpha$, so the right-hand side is again $C_\alpha$. Thus $hC_\alpha=C_\alpha h$ for every $h$, hence $C_\alpha\in Z(\CC S_d)$.
 :::
 
 :::
@@ -69,7 +69,7 @@ On the irreducible module $V^\lambda$, the class sum $C_\alpha$ acts by a scalar
 \]
 
 ::: pf-proof
-By step [](#class-sum-is-central){.pf-ref}, the operator $\rho_\lambda(C_\alpha)$ commutes with every $\rho_\lambda(h)$ for $h\in S_d$. Since $V^\lambda$ is irreducible over $\mathbb C$, Schur's lemma implies that every such commuting endomorphism is scalar.
+By step [](#class-sum-is-central){.pf-ref}, the operator $\rho_\lambda(C_\alpha)$ commutes with every $\rho_\lambda(h)$ for $h\in S_d$. Since $V^\lambda$ is irreducible over $\CC$, Schur's lemma implies that every such commuting endomorphism is scalar.
 :::
 
 :::

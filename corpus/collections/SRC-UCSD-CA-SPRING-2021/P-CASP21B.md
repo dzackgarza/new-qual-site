@@ -26,7 +26,7 @@ Please justify your answers.
 
 ::: {.solution}
 (i) Yes. Since $K$ is a proper closed arc of the unit circle, its complement
-in $\mathbb C$ is connected and $K$ has empty interior. The function
+in $\CC$ is connected and $K$ has empty interior. The function
 $z\mapsto\bar z$ is continuous on $K$. By Mergelyan's theorem, every
 continuous function on $K$ is uniformly approximable there by polynomials.
 Thus there are polynomials $P_n$ with

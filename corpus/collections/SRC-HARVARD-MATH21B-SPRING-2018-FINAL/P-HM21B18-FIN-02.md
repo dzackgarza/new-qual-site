@@ -23,7 +23,7 @@ A=\begin{pmatrix}
 1&1&1&0
 \end{pmatrix},
 \]
-decide which of the following properties hold: projection, reflection, orthogonal, invertible, symmetric, diagonalizable over $\mathbb R$.
+decide which of the following properties hold: projection, reflection, orthogonal, invertible, symmetric, diagonalizable over $\RR$.
 
 (b) Decide which of the following hold for every noninvertible $2\times2$ real matrix $A$: $\operatorname{tr}A=0$; $\det A=0$; $\operatorname{tr}A$ is an eigenvalue; $\det A$ is an eigenvalue; the columns are parallel; the rows are parallel.
 
@@ -46,7 +46,7 @@ Let $\mathbf 1=(1,1,1,1)^T$.
 ::: {.pf-step #s1-1}
 
 In part (a), $A$ is invertible, symmetric, and diagonalizable over
-$\mathbb R$, and it is not a projection, reflection, or orthogonal matrix.
+$\RR$, and it is not a projection, reflection, or orthogonal matrix.
 
 
 ::: pf-proof
@@ -60,7 +60,7 @@ If $v\perp\mathbf 1$, then the sum of the coordinates of $v$ is zero, so
 $Jv=0$ and therefore $Av=-v$. Thus $A$ has eigenvalue $3$ on
 $\operatorname{span}\{\mathbf 1\}$ and eigenvalue $-1$ on the
 three-dimensional space $\mathbf 1^\perp$. Hence $A$ is invertible and
-diagonalizable over $\mathbb R$. It is symmetric because $A^T=A$.
+diagonalizable over $\RR$. It is symmetric because $A^T=A$.
 
 A projection can have only eigenvalues $0$ and $1$, while $A$ has
 eigenvalue $3$, so $A$ is not a projection. A reflection satisfies

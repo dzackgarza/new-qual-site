@@ -38,7 +38,7 @@ Since $A$ is real symmetric, there is an orthonormal basis
 \[
 v_1,\ldots,v_n
 \]
-of $\mathbb R^n$ consisting of eigenvectors of $A$.
+of $\RR^n$ consisting of eigenvectors of $A$.
 
 
 ::: pf-proof
@@ -47,7 +47,7 @@ This is the spectral theorem for real symmetric matrices. Write
 \[
 Av_i=\lambda_i v_i
 \]
-with $\lambda_i\in\mathbb R$.
+with $\lambda_i\in\RR$.
 
 :::
 

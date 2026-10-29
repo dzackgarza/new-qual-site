@@ -33,7 +33,7 @@ be the wedge of two circles, with basepoint at the wedge point. Then
 
 Define
 \[
-\phi_1:F(a,b)\to C_4=\mathbb Z/4
+\phi_1:F(a,b)\to C_4=\ZZ/4
 \]
 by
 \[
@@ -51,7 +51,7 @@ The homomorphism \(\phi_1\) is surjective.
 
 ::: pf-proof
 
-The element \(1\in\mathbb Z/4\) generates \(C_4\), and it is the image of \(a\).
+The element \(1\in\ZZ/4\) generates \(C_4\), and it is the image of \(a\).
 
 :::
 

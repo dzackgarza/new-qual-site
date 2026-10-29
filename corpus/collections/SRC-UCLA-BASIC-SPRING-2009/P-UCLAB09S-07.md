@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Define what it means for $f:\mathbb R^n\to\mathbb R^m$ to be differentiable at a point $a\in\mathbb R^n$.
+(a) Define what it means for $f:\RR^n\to\RR^m$ to be differentiable at a point $a\in\RR^n$.
 
 (b) Using this definition, formulate and prove the chain rule for the derivative of $g(f(x))$ at $x=a$.
 :::
@@ -30,15 +30,15 @@ audit:
 
 A function
 \[
-f:\mathbb R^n\to\mathbb R^m
+f:\RR^n\to\RR^m
 \]
 is differentiable at
 \[
-a\in\mathbb R^n
+a\in\RR^n
 \]
 if there exists a linear map
 \[
-A:\mathbb R^n\to\mathbb R^m
+A:\RR^n\to\RR^m
 \]
 such that
 \[
@@ -122,11 +122,11 @@ Hence for sufficiently small $h$,
 
 Chain Rule: suppose
 \[
-f:\mathbb R^n\to\mathbb R^m
+f:\RR^n\to\RR^m
 \]
 is differentiable at $a$, and
 \[
-g:\mathbb R^m\to\mathbb R^p
+g:\RR^m\to\RR^p
 \]
 is differentiable at
 \[

@@ -36,11 +36,11 @@ audit:
 ::: pf-step
 For every $m\ge1$,
 $$
-H^*(\mathbb{CP}^m;\mathbb Z)
-\cong \mathbb Z[x]/(x^{m+1}),
+H^*(\mathbb{CP}^m;\ZZ)
+\cong \ZZ[x]/(x^{m+1}),
 \qquad |x|=2,
 $$
-and $x^m$ generates the top cohomology $H^{2m}(\mathbb{CP}^m;\mathbb Z)$.
+and $x^m$ generates the top cohomology $H^{2m}(\mathbb{CP}^m;\ZZ)$.
 :::
 
 ::: pf-step
@@ -49,7 +49,7 @@ Let $f:\mathbb{CP}^m\to\mathbb{CP}^m$ be a homotopy equivalence.
 ::: pf-proof
 
 ::: pf-step
-Since $f^*:H^2\to H^2$ is an automorphism of $\mathbb Z$, there is an $\varepsilon\in\{\pm1\}$ such that
+Since $f^*:H^2\to H^2$ is an automorphism of $\ZZ$, there is an $\varepsilon\in\{\pm1\}$ such that
 $$
 f^*(x)=\varepsilon x.
 $$

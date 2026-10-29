@@ -13,8 +13,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be the union of four mutually tangent unit 2-spheres inside $\mathbb{R}^3$.
-Compute $H_*(X; \mathbb{Z})$.
+Let $X$ be the union of four mutually tangent unit 2-spheres inside $\RR^3$.
+Compute $H_*(X; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -42,10 +42,10 @@ Choose within each sphere a contractible tree joining its three tangency points 
 
 ::: pf-step
 Consequently
-$$\boxed{H_k(X;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z^3,&k=1,\\
-\mathbb Z^4,&k=2,\\
+$$\boxed{H_k(X;\ZZ)\cong\begin{cases}
+\ZZ,&k=0,\\
+\ZZ^3,&k=1,\\
+\ZZ^4,&k=2,\\
 0,&k\ge3.
 \end{cases}}$$
 

@@ -19,10 +19,10 @@ audit:
 ::: {.problem}
 Let $A$ and $B$ be positive-definite real symmetric $n\times n$ matrices such that
 \[
-\|BA^{-1}x\|\le \|x\|\qquad\text{for every }x\in\mathbb R^n.
+\|BA^{-1}x\|\le \|x\|\qquad\text{for every }x\in\RR^n.
 \]
 
-(a) For $x,y\in\mathbb R^n$, show that
+(a) For $x,y\in\RR^n$, show that
 \[
 z\longmapsto \langle y,B^zA^{-z}x\rangle
 \]
@@ -32,7 +32,7 @@ admits an analytic continuation from $0<z<1$ to the whole complex plane.
 \[
 \|B^\theta A^{-\theta}x\|\le \|x\|
 \]
-for every $0\le\theta\le1$ and every $x\in\mathbb R^n$.
+for every $0\le\theta\le1$ and every $x\in\RR^n$.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ C=Q\operatorname{diag}(\lambda_1,\dots,\lambda_n)Q^T,
 \qquad
 \lambda_j>0,
 \]
-and for $z\in\mathbb C$ define
+and for $z\in\CC$ define
 \[
 C^z
 \coloneqq
@@ -58,7 +58,7 @@ For every positive-definite real symmetric $C$, the matrix-valued map
 \[
 z\longmapsto C^z
 \]
-is entire on $\mathbb C$.
+is entire on $\CC$.
 
 
 ::: pf-proof
@@ -75,13 +75,13 @@ Therefore every matrix entry is entire.
 
 ::: {.pf-step #s1-2}
 
-For fixed $x,y\in\mathbb R^n$, the function
+For fixed $x,y\in\RR^n$, the function
 \[
 F_{x,y}(z)
 \coloneqq
 y^T B^zA^{-z}x
 \]
-is entire on $\mathbb C$ and agrees with
+is entire on $\CC$ and agrees with
 \[
 \langle y,B^zA^{-z}x\rangle
 \]
@@ -117,9 +117,9 @@ The hypothesis
 \[
 \|BA^{-1}x\|\le\|x\|
 \qquad
-(x\in\mathbb R^n)
+(x\in\RR^n)
 \]
-also holds for every $x\in\mathbb C^n$ with the standard Hermitian norm.
+also holds for every $x\in\CC^n$ with the standard Hermitian norm.
 
 
 ::: pf-proof
@@ -128,7 +128,7 @@ Write
 \[
 x=u+iv,
 \qquad
-u,v\in\mathbb R^n.
+u,v\in\RR^n.
 \]
 Since $BA^{-1}$ is a real matrix,
 \[
@@ -164,7 +164,7 @@ For every real $t$,
 \|A^{-it}\|_{\mathrm{op}}
 =1
 \]
-on $\mathbb C^n$.
+on $\CC^n$.
 
 
 ::: pf-proof
@@ -173,7 +173,7 @@ In the spectral representation of $B^{it}$, the eigenvalues are
 \[
 e^{it\log\lambda_j},
 \]
-all of modulus $1$. Since the diagonalizing matrix is real orthogonal and hence unitary on $\mathbb C^n$, $B^{it}$ is unitary. The same argument applies to $A^{-it}$.
+all of modulus $1$. Since the diagonalizing matrix is real orthogonal and hence unitary on $\CC^n$, $B^{it}$ is unitary. The same argument applies to $A^{-it}$.
 
 :::
 
@@ -257,7 +257,7 @@ The function $F_{x,y}$ is bounded on the closed strip
 \[
 S
 \coloneqq
-\{z\in\mathbb C:0\le\operatorname{Re}z\le1\}.
+\{z\in\CC:0\le\operatorname{Re}z\le1\}.
 \]
 
 
@@ -300,7 +300,7 @@ Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the bound on both boundary 
 
 ::: {.pf-step #s1-10}
 
-For every $0\le\theta\le1$ and $x\in\mathbb R^n$,
+For every $0\le\theta\le1$ and $x\in\RR^n$,
 \[
 \boxed{
 \|B^\theta A^{-\theta}x\|
@@ -320,7 +320,7 @@ is real. Hence
 \[
 \|v\|
 =
-\sup_{\substack{y\in\mathbb R^n\\\|y\|=1}}
+\sup_{\substack{y\in\RR^n\\\|y\|=1}}
 |\langle y,v\rangle|.
 \]
 By step [](#s1-9){.pf-ref}, every term in this supremum is at most $\|x\|$. Thus $\|v\|\le\|x\|$.

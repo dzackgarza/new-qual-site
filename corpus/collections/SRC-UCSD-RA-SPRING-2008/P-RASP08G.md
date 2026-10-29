@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-(a) For $\phi \in C_0^\infty(\mathbb{R})$ show that the expression
+(a) For $\phi \in C_0^\infty(\RR)$ show that the expression
 $$
 T(\phi) := \lim_{\epsilon \to 0^+} \left[\int_\epsilon^\infty \frac{\phi(x)}{x}\,dx + \phi(0)\log\epsilon\right]
 $$
-defines a distribution on $\mathbb{R}$.
+defines a distribution on $\RR$.
 
-(b) Show that the function $f(x) := H(x)\log x$ is locally integrable on $\mathbb{R}$ (where $H$ is the Heaviside function).
+(b) Show that the function $f(x) := H(x)\log x$ is locally integrable on $\RR$ (where $H$ is the Heaviside function).
 Express the derivative of $f$ in the sense of distributions in terms of the distribution $T$ given in (a).
 :::
 
@@ -80,7 +80,7 @@ Prove that $T$ is a distribution.
 
 ::: pf-proof
 
-Linearity is immediate. Let $K\subset\mathbb R$ be compact and suppose $\operatorname{supp}\phi\subset K$. By the mean-value estimate,
+Linearity is immediate. Let $K\subset\RR$ be compact and suppose $\operatorname{supp}\phi\subset K$. By the mean-value estimate,
 \[
 |\phi(x)-\phi(0)|\le x\sup_{0\le t\le1}|\phi'(t)|
 \qquad(0\le x\le1),
@@ -101,7 +101,7 @@ If $K\cap[1,\infty)\subset[1,R]$, then
 \]
 This is precisely the required continuity estimate for a distribution. Therefore
 \[
-\boxed{T\in\mathcal D'(\mathbb R).}
+\boxed{T\in\mathcal D'(\RR).}
 \]
 
 :::
@@ -124,7 +124,7 @@ so $f(x)=0$ for $x<0$ and $f(x)=\log x$ for $x>0$. The only possible local singu
 \]
 Away from $0$, $\log x$ is locally integrable. Hence
 \[
-\boxed{f\in L^1_{\mathrm{loc}}(\mathbb R).}
+\boxed{f\in L^1_{\mathrm{loc}}(\RR).}
 \]
 
 :::
@@ -137,7 +137,7 @@ Compute the distributional derivative.
 
 ::: pf-proof
 
-For $\phi\in C_c^\infty(\mathbb R)$,
+For $\phi\in C_c^\infty(\RR)$,
 \[
 f'(\phi)
 =-\int_0^\infty \log x\,\phi'(x)\,dx.
@@ -166,7 +166,7 @@ f'(\phi)
 \]
 Therefore
 \[
-\boxed{(H\log x)'=T\quad\text{in }\mathcal D'(\mathbb R).}
+\boxed{(H\log x)'=T\quad\text{in }\mathcal D'(\RR).}
 \]
 
 :::

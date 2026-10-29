@@ -34,7 +34,7 @@ Prove that $A$ and $B$ are *simultaneously* diagonalizable.
 ::: pf-step
 Let
 \[
-V=\mathbb C^n=\bigoplus_{\lambda}E_\lambda(A)
+V=\CC^n=\bigoplus_{\lambda}E_\lambda(A)
 \]
 be the eigenspace decomposition for $A$.
 Each eigenspace $E_\lambda(A)$ is invariant under $B$.
@@ -58,7 +58,7 @@ B_\lambda:=B|_{E_\lambda(A)}
 is diagonalizable.
 
 ::: pf-proof
-Since $B$ is diagonalizable over $\mathbb C$, its minimal polynomial is a product of distinct linear factors:
+Since $B$ is diagonalizable over $\CC$, its minimal polynomial is a product of distinct linear factors:
 \[
 \mu_B(t)=\prod_{j=1}^r(t-\beta_j).
 \]
@@ -82,14 +82,14 @@ Every vector in this basis is automatically an eigenvector of $A$ with eigenvalu
 :::
 
 ::: pf-step
-Taking the union of these bases over all eigenvalues $\lambda$ gives a basis of $\mathbb C^n$ in which both $A$ and $B$ are diagonal.
+Taking the union of these bases over all eigenvalues $\lambda$ gives a basis of $\CC^n$ in which both $A$ and $B$ are diagonal.
 
 ::: pf-proof
 The eigenspaces of $A$ form the direct sum
 \[
-\mathbb C^n=\bigoplus_\lambda E_\lambda(A).
+\CC^n=\bigoplus_\lambda E_\lambda(A).
 \]
-Therefore the union of the bases from step [](#common-eigenvector-basis){.pf-ref} is a basis of $\mathbb C^n$.
+Therefore the union of the bases from step [](#common-eigenvector-basis){.pf-ref} is a basis of $\CC^n$.
 Each basis vector is a common eigenvector, so the matrices of both $A$ and $B$ in this basis are diagonal.
 Hence $A$ and $B$ are simultaneously diagonalizable.
 :::

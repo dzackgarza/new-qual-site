@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega\subset\mathbb C$ be a bounded domain whose boundary is a smooth Jordan curve $\gamma$. Let $f$ be holomorphic on a neighborhood of $\overline\Omega$, assume $f\ne0$ on $\gamma$, and let $z_1,\ldots,z_k$ be the zeros of $f$ in $\Omega$ with multiplicities $n_1,\ldots,n_k$.
+Let $\Omega\subset\CC$ be a bounded domain whose boundary is a smooth Jordan curve $\gamma$. Let $f$ be holomorphic on a neighborhood of $\overline\Omega$, assume $f\ne0$ on $\gamma$, and let $z_1,\ldots,z_k$ be the zeros of $f$ in $\Omega$ with multiplicities $n_1,\ldots,n_k$.
 
 1. Using Cauchy's integral formula, prove
 \[

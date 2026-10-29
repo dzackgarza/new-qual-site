@@ -25,7 +25,7 @@ Show that
 \[
 f(z)=Ae^{\alpha z}
 \]
-for some $A\in\mathbb C$.
+for some $A\in\CC$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ The function
 \[
 g(z)=f(z)e^{-\alpha z}
 \]
-is entire and bounded by $m$ on $\mathbb C$.
+is entire and bounded by $m$ on $\CC$.
 
 
 ::: pf-proof
@@ -62,9 +62,9 @@ Therefore the assumed estimate gives
 
 ::: {.pf-step #s1-2}
 
-There is a constant $A\in\mathbb C$ such that
+There is a constant $A\in\CC$ such that
 \[
-\boxed{f(z)=Ae^{\alpha z}\qquad(z\in\mathbb C)}.
+\boxed{f(z)=Ae^{\alpha z}\qquad(z\in\CC)}.
 \]
 
 

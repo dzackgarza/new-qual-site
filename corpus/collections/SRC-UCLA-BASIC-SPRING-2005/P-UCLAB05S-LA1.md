@@ -18,16 +18,16 @@ audit:
 ::: {.problem}
 For $n\geq1$, let
 \[
-\operatorname{tr}:M_n(\mathbb C)\longrightarrow\mathbb C,
+\operatorname{tr}:M_n(\CC)\longrightarrow\CC,
 \qquad
 \operatorname{tr}(A)=\sum_{k=1}^n A_{k,k}.
 \]
 
 (a) Determine a basis for the kernel of $\operatorname{tr}$.
 
-(b) For $X\in M_n(\mathbb C)$, show that $\operatorname{tr}(X)=0$ if and only if there are an integer $m$ and matrices
+(b) For $X\in M_n(\CC)$, show that $\operatorname{tr}(X)=0$ if and only if there are an integer $m$ and matrices
 \[
-A_1,\ldots,A_m,B_1,\ldots,B_m\in M_n(\mathbb C)
+A_1,\ldots,A_m,B_1,\ldots,B_m\in M_n(\CC)
 \]
 such that
 \[

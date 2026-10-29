@@ -195,7 +195,7 @@ For every real $n\times n$ matrix $A$,
 
 View $A$ as the matrix of a linear map
 \[
-T:\mathbb R^n\to\mathbb R^n
+T:\RR^n\to\RR^n
 \]
 with the standard inner product. Then $T^*$ has matrix $A^t$. By step [](#s1-5){.pf-ref},
 \[

@@ -98,8 +98,8 @@ There are exactly two possible actions up to isomorphism: the trivial action and
 By the Chinese remainder theorem,
 \[
 \operatorname{Aut}(C_{65})
-\cong (\mathbb Z/65\mathbb Z)^\times
-\cong (\mathbb Z/5\mathbb Z)^\times\times(\mathbb Z/13\mathbb Z)^\times.
+\cong (\ZZ/65\ZZ)^\times
+\cong (\ZZ/5\ZZ)^\times\times(\ZZ/13\ZZ)^\times.
 \]
 The two factors are cyclic of orders $4$ and $12$, respectively.
 Consequently the first factor has no nontrivial element of order dividing $3$, while the second has a unique subgroup of order $3$.

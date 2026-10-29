@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AEWN6
 kind: problem
-title: '(a) $f: D\rightarrow {\mathbb C}$ be a continuous function, where'
+title: '(a) $f: D\rightarrow {\CC}$ be a continuous function, where'
 classification:
   areas:
   - complex-analysis
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) $f: D\rightarrow {\mathbb C}$ be a continuous function, where $D\subset {\mathbb C}$ is a domain.Let $\alpha:[a,b]\rightarrow D$ be a smooth curve.
+(a) $f: D\rightarrow {\CC}$ be a continuous function, where $D\subset {\CC}$ is a domain.Let $\alpha:[a,b]\rightarrow D$ be a smooth curve.
 Give a precise definition of the *complex line integral* $$\int_{\alpha} f.$$
 
 (b) Assume that there exists a constant $M$ such that $|f(\tau)|\leq M$ for all $\tau\in \mbox{\textrm Image}(\alpha$). Prove that $$\big | \int_{\alpha} f \big |\leq M \times \mbox{\textrm length}(\alpha).$$
@@ -49,7 +49,7 @@ Provide an upper bound for $\big | \int_{C_R} \dfrac{\log{(z)} }{z^2} \big |,$ w
 ::: pf-proof
 
 ::: pf-step
-Let $\alpha: [a, b] \to D \subset \mathbb{C}$ be a $C^1$ (smooth) parametrization, $\alpha(t) = x(t) + i y(t)$, and let $f: D \to \mathbb{C}$ be continuous.
+Let $\alpha: [a, b] \to D \subset \CC$ be a $C^1$ (smooth) parametrization, $\alpha(t) = x(t) + i y(t)$, and let $f: D \to \CC$ be continuous.
 
 ::: pf-proof
 Setting hypotheses.
@@ -108,7 +108,7 @@ Non-negativity of length and supremum norm.
 
 ::: {.pf-step #s3}
 **Suppose $I \neq 0$.
-Write $I = |I| e^{i\theta}$ for some $\theta \in \mathbb{R}$.**
+Write $I = |I| e^{i\theta}$ for some $\theta \in \RR$.**
 
 ::: pf-proof
 
@@ -131,7 +131,7 @@ Taking real parts.
 :::
 
 ::: pf-step
-For any complex number $w \in \mathbb{C}$, $\text{Re}(w) \leq |w|$.
+For any complex number $w \in \CC$, $\text{Re}(w) \leq |w|$.
 Applying this to $w = e^{-i\theta} f(\alpha(t)) \alpha'(t)$: $$\text{Re}\left( e^{-i\theta} f(\alpha(t)) \alpha'(t) \right) \leq \left| e^{-i\theta} f(\alpha(t)) \alpha'(t) \right| = |e^{-i\theta}| |f(\alpha(t))| |\alpha'(t)| = |f(\alpha(t))| |\alpha'(t)|.$$
 
 ::: pf-proof

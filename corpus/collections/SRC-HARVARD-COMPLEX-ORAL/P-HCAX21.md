@@ -17,7 +17,7 @@ Prove the uniqueness statement in the Riemann mapping theorem after fixing the i
 :::
 
 ::: {.solution}
-Let $\Omega\subsetneq\mathbb C$ be simply connected, fix $z_0\in\Omega$, and suppose
+Let $\Omega\subsetneq\CC$ be simply connected, fix $z_0\in\Omega$, and suppose
 \[
 f,g:\Omega\longrightarrow\mathbb D
 \]

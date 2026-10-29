@@ -31,11 +31,11 @@ S^2\cup I\simeq S^2\vee S^1.
 \]
 Consequently
 \[
-H_n(S^2\cup I;\mathbb Z)\cong
+H_n(S^2\cup I;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z,&n=1,\\
-\mathbb Z,&n=2,\\
+\ZZ,&n=0,\\
+\ZZ,&n=1,\\
+\ZZ,&n=2,\\
 0,&n\ge3.
 \end{cases}
 \]

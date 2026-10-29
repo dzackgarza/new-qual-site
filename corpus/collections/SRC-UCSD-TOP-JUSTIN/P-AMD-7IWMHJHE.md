@@ -115,11 +115,11 @@ Setting $a = 1$ in the boundary word reduces it to $b c b^{-1} c^{-1}$, so the r
 :::
 
 ::: pf-step
-Thus $\pi_1(X) \cong \langle b, c \mid b c b^{-1} c^{-1} = 1 \rangle \cong \mathbb{Z}^2$.
+Thus $\pi_1(X) \cong \langle b, c \mid b c b^{-1} c^{-1} = 1 \rangle \cong \ZZ^2$.
 :::
 
 ::: pf-qed
-The cellular Seifert–van Kampen theorem gives $\pi_1(X) \cong \pi_1(X^1)/\langle\langle [\phi] \rangle\rangle$; collapsing the maximal tree $T$ identifies $\pi_1(X^1)$ with the free group on $b, c$, and the attaching word $b c b^{-1} c^{-1}$ imposes the single relation $bc = cb$, yielding $\mathbb{Z}^2$.
+The cellular Seifert–van Kampen theorem gives $\pi_1(X) \cong \pi_1(X^1)/\langle\langle [\phi] \rangle\rangle$; collapsing the maximal tree $T$ identifies $\pi_1(X^1)$ with the free group on $b, c$, and the attaching word $b c b^{-1} c^{-1}$ imposes the single relation $bc = cb$, yielding $\ZZ^2$.
 :::
 
 :::
@@ -127,7 +127,7 @@ The cellular Seifert–van Kampen theorem gives $\pi_1(X) \cong \pi_1(X^1)/\lang
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} show that $X$ is the torus: $\chi(X) = 0$ and $\pi_1(X) \cong \mathbb{Z}^2$.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} show that $X$ is the torus: $\chi(X) = 0$ and $\pi_1(X) \cong \ZZ^2$.
 :::
 
 :::

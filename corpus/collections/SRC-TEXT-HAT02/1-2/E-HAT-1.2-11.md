@@ -122,7 +122,7 @@ X=S^1\times S^1
 \]
 with the standard generators $a,b$ of
 \[
-\pi_1(X)\cong\mathbb Z^2
+\pi_1(X)\cong\ZZ^2
 \cong\langle a,b\mid [a,b]=1\rangle.
 \]
 Then

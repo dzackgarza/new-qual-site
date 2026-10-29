@@ -27,7 +27,7 @@ Define
 
 Let
 \[
-\gamma:[a,b]\to\mathbb C
+\gamma:[a,b]\to\CC
 \]
 be the given differentiable curve.
 

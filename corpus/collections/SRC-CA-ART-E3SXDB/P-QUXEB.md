@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove the following statements concerning the convergence of power series on the unit circle $S^1 = \{z \in \mathbb{C} : |z| = 1\}$:
+Prove the following statements concerning the convergence of power series on the unit circle $S^1 = \{z \in \CC : |z| = 1\}$:
 
 (a) $\sum_{n=1}^\infty n z^n$ does not converge at any point of $S^1$.
 

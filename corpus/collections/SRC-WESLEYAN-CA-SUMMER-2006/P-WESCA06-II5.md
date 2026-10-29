@@ -66,7 +66,7 @@ lies in the open right half-plane.
 
 The principal logarithm is holomorphic on
 \[
-\mathbb C\setminus(-\infty,0],
+\CC\setminus(-\infty,0],
 \]
 which contains the closed right-half-plane neighborhood just described.
 Hence
@@ -185,7 +185,7 @@ constant
 \[
 2\pi i k,
 \qquad
-k\in\mathbb Z.
+k\in\ZZ.
 \]
 The corresponding change in the integral is
 \[

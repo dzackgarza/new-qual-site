@@ -25,9 +25,9 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f,g\in L^1(\mathbb R)$ have compact support, and define
+Suppose that $f,g\in L^1(\RR)$ have compact support, and define
 \[
-h(x)=(f*g)(x)=\int_{\mathbb R} f(x-y)g(y)\,dy.
+h(x)=(f*g)(x)=\int_{\RR} f(x-y)g(y)\,dy.
 \]
 Is $h$ necessarily uniformly continuous? Prove it or give a counterexample.
 :::
@@ -44,7 +44,7 @@ Let
 \[
 f(x)=g(x)=x^{-2/3}\mathbf 1_{(0,1)}(x).
 \]
-Then $f,g\in L^1(\mathbb R)$ because
+Then $f,g\in L^1(\RR)$ because
 \[
 \int_0^1 x^{-2/3}\,dx=3<\infty,
 \]

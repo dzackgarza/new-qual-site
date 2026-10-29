@@ -32,7 +32,7 @@ How can it be determined from a matrix in Jordan normal form?
 
 The Jordan normal form theorem applies to matrices
 \[
-A\in M_n(\mathbb C),
+A\in M_n(\CC),
 \]
 or more generally to matrices over an algebraically closed field.
 
@@ -40,7 +40,7 @@ or more generally to matrices over an algebraically closed field.
 ::: pf-proof
 
 Over an arbitrary field, the characteristic polynomial need not split into linear factors, so ordinary Jordan blocks need not exist.
-Over $\mathbb C$, every characteristic polynomial splits by the fundamental theorem of algebra.
+Over $\CC$, every characteristic polynomial splits by the fundamental theorem of algebra.
 Thus the standard Jordan normal form theorem applies.
 
 :::
@@ -106,7 +106,7 @@ r_1+\cdots+r_s=n.
 
 To say that $A$ can be *brought to Jordan normal form* means that there exists an invertible matrix
 \[
-S\in GL_n(\mathbb C)
+S\in GL_n(\CC)
 \]
 such that
 \[
@@ -145,7 +145,7 @@ This is the uniqueness assertion in the Jordan normal form theorem.
 The complete statement of the Jordan normal form theorem is therefore:
 for every
 \[
-A\in M_n(\mathbb C),
+A\in M_n(\CC),
 \]
 there exists an invertible $S$ such that
 \[
@@ -167,7 +167,7 @@ No proof of the theorem is required by the problem.
 
 The *minimal polynomial* of $A$ is the unique monic polynomial
 \[
-\boxed{\mu_A(t)\in\mathbb C[t]}
+\boxed{\mu_A(t)\in\CC[t]}
 \]
 of least positive degree such that
 \[
@@ -179,10 +179,10 @@ of least positive degree such that
 
 The set
 \[
-\{p(t)\in\mathbb C[t]:p(A)=0\}
+\{p(t)\in\CC[t]:p(A)=0\}
 \]
 is a nonzero ideal because the characteristic polynomial annihilates $A$ by Cayley--Hamilton.
-Since $\mathbb C[t]$ is a principal ideal domain, this ideal has a unique monic generator.
+Since $\CC[t]$ is a principal ideal domain, this ideal has a unique monic generator.
 That generator is the minimal polynomial.
 Equivalently, it is the monic annihilating polynomial of least degree.
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK87S-09
 kind: problem
-title: Rational linear systems solvable over $\mathbb C$ are solvable over $\mathbb Q$
+title: Rational linear systems solvable over $\CC$ are solvable over $\QQ$
 classification:
   areas: [prelim]
   topics: []
@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $m\times n$ matrix with rational entries and let $b\in\mathbb Q^m$. Prove or disprove: if
+Let $A$ be an $m\times n$ matrix with rational entries and let $b\in\QQ^m$. Prove or disprove: if
 \[
 Ax=b
 \]
-has a solution $x\in\mathbb C^n$, then it has a solution $x\in\mathbb Q^n$.
+has a solution $x\in\CC^n$, then it has a solution $x\in\QQ^n$.
 :::
 
 ::: {.solution}

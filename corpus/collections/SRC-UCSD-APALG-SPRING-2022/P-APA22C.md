@@ -178,7 +178,7 @@ Part (c): Construct the simultaneous orthogonal basis:
 
 By the Spectral Theorem for self-adjoint operators on the finite-dimensional inner product space $(V, \langle -, - \rangle_\alpha)$, there exists an orthonormal basis $B = \{v_1, \dots, v_n\}$ of eigenvectors of $\gamma$:
 \[
-\langle v_i, v_j \rangle_\alpha = \delta_{ij} \quad \text{and} \quad \gamma(v_i) = \lambda_i v_i \quad (\lambda_i \in \mathbb{R}).
+\langle v_i, v_j \rangle_\alpha = \delta_{ij} \quad \text{and} \quad \gamma(v_i) = \lambda_i v_i \quad (\lambda_i \in \RR).
 \]
 
 ::: pf-proof

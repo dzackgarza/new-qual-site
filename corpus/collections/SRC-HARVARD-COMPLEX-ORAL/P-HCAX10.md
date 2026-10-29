@@ -18,13 +18,13 @@ Show that this example describes the only possible failure of injectivity in suc
 :::
 
 ::: {.solution}
-On any domain $\Omega\subseteq\mathbb C$, the functions
+On any domain $\Omega\subseteq\CC$, the functions
 \[
 f_n(z)=\frac{z}{n}
 \]
 are holomorphic and injective, while $f_n\to 0$ uniformly on compact subsets. Thus a constant function can occur as a non-injective limit.
 
-We show that this is the only possibility. Suppose $f_n:\Omega\to\mathbb C$ are holomorphic and injective, $f_n\to f$ uniformly on compact subsets, and $f$ is not constant. If $f$ were not injective, there would be distinct points $a,b\in\Omega$ with $f(a)=f(b)$.
+We show that this is the only possibility. Suppose $f_n:\Omega\to\CC$ are holomorphic and injective, $f_n\to f$ uniformly on compact subsets, and $f$ is not constant. If $f$ were not injective, there would be distinct points $a,b\in\Omega$ with $f(a)=f(b)$.
 
 Set
 \[

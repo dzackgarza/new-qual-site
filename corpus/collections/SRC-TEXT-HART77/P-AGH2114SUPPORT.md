@@ -94,8 +94,8 @@ The support of a sheaf need not be closed.
 
 Take
 \[
-X=\mathbb A^1_{\mathbb C}
-=\operatorname{Spec}\mathbb C[x].
+X=\mathbb A^1_{\CC}
+=\operatorname{Spec}\CC[x].
 \]
 For each positive integer $n$, let
 \[
@@ -103,7 +103,7 @@ i_n:\{n\}\hookrightarrow X
 \]
 be the closed-point inclusion and let
 \[
-\mathcal K_n=i_{n*}\mathbb C
+\mathcal K_n=i_{n*}\CC
 \]
 be the corresponding skyscraper sheaf.  Define
 \[
@@ -122,7 +122,7 @@ For a skyscraper sheaf,
 (\mathcal K_n)_P
 \cong
 \begin{cases}
-\mathbb C,&P=n,\\
+\CC,&P=n,\\
 0,&P\ne n.
 \end{cases}
 \]
@@ -130,10 +130,10 @@ Therefore
 \[
 \operatorname{supp}\mcf
 =\{1,2,3,\ldots\}
-\subseteq\mathbb A^1_{\mathbb C}.
+\subseteq\mathbb A^1_{\CC}.
 \]
 
-This subset is infinite.  Every proper Zariski-closed subset of $\mathbb A^1_{\mathbb C}$ is finite, because it is the zero set of a nonzero polynomial in one variable.  Hence
+This subset is infinite.  Every proper Zariski-closed subset of $\mathbb A^1_{\CC}$ is finite, because it is the zero set of a nonzero polynomial in one variable.  Hence
 \[
 \{1,2,3,\ldots\}
 \]

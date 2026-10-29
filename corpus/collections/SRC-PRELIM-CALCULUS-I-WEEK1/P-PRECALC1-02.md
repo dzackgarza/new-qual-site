@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { ( 1 + x ) ^ { \alpha } - 1 } { x } }$ for $\alpha \in \mathbb { R }$
+Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { ( 1 + x ) ^ { \alpha } - 1 } { x } }$ for $\alpha \in \RR$
 :::
 
 ::: {.solution}

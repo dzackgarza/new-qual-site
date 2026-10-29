@@ -27,11 +27,11 @@ Let
 $$
 X=\mathbb{RP}^n\vee S^n,\qquad n>1.
 $$
-Then $\pi_1(X)\cong\mathbb Z/2$.
+Then $\pi_1(X)\cong\ZZ/2$.
 
 ::: pf-proof
 
-The sphere $S^n$ is simply connected for $n>1$, while $\pi_1(\mathbb{RP}^n)\cong\mathbb Z/2$.
+The sphere $S^n$ is simply connected for $n>1$, while $\pi_1(\mathbb{RP}^n)\cong\ZZ/2$.
 
 :::
 
@@ -56,7 +56,7 @@ The fiber over the wedge point has two points. Pulling up the simply connected w
 
 The space $\widetilde X$ is $(n-1)$-connected and
 $$
-H_n(\widetilde X;\mathbb Z)\cong\mathbb Z^3.
+H_n(\widetilde X;\ZZ)\cong\ZZ^3.
 $$
 
 ::: pf-proof
@@ -71,7 +71,7 @@ A wedge of $n$-spheres has no homotopy below degree $n$ and its $n$th homology i
 
 By the Hurewicz theorem,
 $$
-\pi_n(\widetilde X)\cong H_n(\widetilde X)\cong\mathbb Z^3.
+\pi_n(\widetilde X)\cong H_n(\widetilde X)\cong\ZZ^3.
 $$
 
 ::: pf-proof
@@ -86,7 +86,7 @@ The first nonzero homotopy group of an $(n-1)$-connected space is identified wit
 
 Covering maps induce isomorphisms on homotopy groups in degrees at least $2$. Therefore
 $$
-\boxed{\pi_n(\mathbb{RP}^n\vee S^n)\cong\mathbb Z^3.}
+\boxed{\pi_n(\mathbb{RP}^n\vee S^n)\cong\ZZ^3.}
 $$
 
 ::: pf-proof

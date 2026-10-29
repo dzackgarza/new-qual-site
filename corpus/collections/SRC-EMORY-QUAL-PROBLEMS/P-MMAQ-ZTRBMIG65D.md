@@ -27,7 +27,7 @@ State and prove the Cauchy integral formula for holomorphic functions.
 ::: {.solution}
 ### Statement of the Cauchy Integral Formula
 
-**Theorem:** Let $\Omega \subseteq \mathbb{C}$ be an open domain, and let $f: \Omega \to \mathbb{C}$ be a holomorphic function.
+**Theorem:** Let $\Omega \subseteq \CC$ be an open domain, and let $f: \Omega \to \CC$ be a holomorphic function.
 Let $\gamma$ be a positively oriented, simple closed rectifiable curve in $\Omega$ whose interior $\text{Int}(\gamma)$ is contained in $\Omega$.
 Then for every point $z_0 \in \text{Int}(\gamma)$: $$f(z_0) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z - z_0} \, dz.$$
 
@@ -57,7 +57,7 @@ $\text{Int}(\gamma)$ is an open neighborhood of $z_0$.
 
 ::: pf-step
 
-For any $\varepsilon \in (0, \varepsilon_0)$, let $C_\varepsilon$ denote the circle $\{z \in \mathbb{C} : |z - z_0| = \varepsilon\}$, oriented counterclockwise.
+For any $\varepsilon \in (0, \varepsilon_0)$, let $C_\varepsilon$ denote the circle $\{z \in \CC : |z - z_0| = \varepsilon\}$, oriented counterclockwise.
 
 ::: pf-proof
 

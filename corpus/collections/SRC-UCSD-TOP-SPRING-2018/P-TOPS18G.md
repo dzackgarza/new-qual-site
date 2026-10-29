@@ -26,10 +26,10 @@ Prove that $H_1(N) \cong H_1(M)$, and conclude that $\mathbb{RP}^2$ cannot be em
 
 ::: {.pf-step #h1-iso}
 In any decomposition $S^3=M\cup_\Sigma N$ as in the problem,
-$$\boxed{H_1(M;\mathbb Z)\cong H_1(N;\mathbb Z).}$$
+$$\boxed{H_1(M;\ZZ)\cong H_1(N;\ZZ).}$$
 
 ::: pf-proof
-Alexander duality identifies $H_1(M)$ with $H^1(N)$ and $H_1(N)$ with $H^1(M)$. The universal coefficient theorem gives $H^1(P;\mathbb Z)\cong\operatorname{Hom}(H_1(P),\mathbb Z)$ for either side $P$. These identifications imply first that both $H_1(M)$ and $H_1(N)$ are free abelian, and then that they have the same rank, hence are isomorphic.
+Alexander duality identifies $H_1(M)$ with $H^1(N)$ and $H_1(N)$ with $H^1(M)$. The universal coefficient theorem gives $H^1(P;\ZZ)\cong\operatorname{Hom}(H_1(P),\ZZ)$ for either side $P$. These identifications imply first that both $H_1(M)$ and $H_1(N)$ are free abelian, and then that they have the same rank, hence are isomorphic.
 :::
 
 :::
@@ -45,11 +45,11 @@ A nonorientable surface in an orientable $3$-manifold is one-sided; its regular 
 
 ::: {.pf-step #contradiction-freeness}
 Hence
-$$H_1(M;\mathbb Z)\cong\mathbb Z/2,$$
+$$H_1(M;\ZZ)\cong\ZZ/2,$$
 contradicting the freeness forced in step [](#h1-iso){.pf-ref} for a codimension-zero submanifold of $S^3$.
 
 ::: pf-proof
-The deformation retraction in step [](#regular-neighborhood-retracts){.pf-ref} identifies $H_1(M)$ with $H_1(\mathbb{RP}^2)=\mathbb Z/2$, while the proof of step [](#h1-iso){.pf-ref} shows that first homology of either complementary piece must be free abelian.
+The deformation retraction in step [](#regular-neighborhood-retracts){.pf-ref} identifies $H_1(M)$ with $H_1(\mathbb{RP}^2)=\ZZ/2$, while the proof of step [](#h1-iso){.pf-ref} shows that first homology of either complementary piece must be free abelian.
 :::
 
 :::

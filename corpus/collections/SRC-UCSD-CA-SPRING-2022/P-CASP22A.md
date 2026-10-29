@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G \subset \mathbb{C}$ be a bounded, simply connected region and let $a \in G$.
+Let $G \subset \CC$ be a bounded, simply connected region and let $a \in G$.
 Let $f$ be an analytic self-map of $G$ (i.e., $f(G) \subset G$) such that $f(a) = a$ and $f'(a) = 1$.
 Show that $f(z) = z$.
 :::

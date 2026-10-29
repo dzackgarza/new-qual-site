@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove the following theorem, or find a counterexample: If $p$ and $q$ are continuous real-valued functions on $\mathbb R$ such that $|q(x)|\le|p(x)|$ for all $x$, and if every solution $f$ of the differential equation
+Prove the following theorem, or find a counterexample: If $p$ and $q$ are continuous real-valued functions on $\RR$ such that $|q(x)|\le|p(x)|$ for all $x$, and if every solution $f$ of the differential equation
 \[
 f'+qf=0
 \]

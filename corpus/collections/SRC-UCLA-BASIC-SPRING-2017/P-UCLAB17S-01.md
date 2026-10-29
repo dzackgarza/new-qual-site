@@ -40,7 +40,7 @@ Every vector in the range of $MM^T$ has the form
 \[
 MM^Tx
 \]
-for some $x\in\mathbb R^n$.
+for some $x\in\RR^n$.
 But
 \[
 MM^Tx

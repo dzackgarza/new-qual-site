@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the volume of a body formed by rotation of the curve y = arcsin x around x-axis in $\mathbb { R } ^ { 3 } , x \in [ 0 , 1 ]$
+Find the volume of a body formed by rotation of the curve y = arcsin x around x-axis in $\RR ^ { 3 } , x \in [ 0 , 1 ]$
 :::
 
 ::: {.solution}

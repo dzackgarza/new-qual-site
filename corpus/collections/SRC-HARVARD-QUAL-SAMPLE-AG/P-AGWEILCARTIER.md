@@ -41,7 +41,7 @@ A Weil divisor on $C$ is a finite formal sum
 \[
 \boxed{
 D=\sum_{p\in C^{(1)}}n_p[p],
-\qquad n_p\in\mathbb Z,
+\qquad n_p\in\ZZ,
 }
 \]
 where $C^{(1)}$ is the set of codimension-one points.
@@ -80,7 +80,7 @@ Because $C$ is smooth, every local ring
 \]
 at a closed point is a discrete valuation ring.  Denote its valuation by
 \[
-\operatorname{ord}_p:K^*\longrightarrow\mathbb Z.
+\operatorname{ord}_p:K^*\longrightarrow\ZZ.
 \]
 
 ::: pf-proof

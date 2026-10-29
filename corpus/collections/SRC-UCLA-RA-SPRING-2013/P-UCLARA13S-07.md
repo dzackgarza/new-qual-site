@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire and suppose $\log|f|$ is absolutely integrable with respect to planar Lebesgue measure.
+Let $f:\CC\to\CC$ be entire and suppose $\log|f|$ is absolutely integrable with respect to planar Lebesgue measure.
 Show that $f$ is constant.
 :::
 
@@ -27,7 +27,7 @@ Show that $f$ is constant.
 
 ::: {.pf-step #s1-1}
 
-If $f$ is nonconstant, then there exists $z_0\in\mathbb C$ such that
+If $f$ is nonconstant, then there exists $z_0\in\CC$ such that
 \[
 \log|f(z_0)|>1.
 \]
@@ -53,7 +53,7 @@ u(z)
 \coloneqq
 \log|f(z)|
 \]
-is subharmonic on $\mathbb C$.
+is subharmonic on $\CC$.
 
 
 ::: pf-proof
@@ -146,7 +146,7 @@ Absolute integrability gives
 \[
 C
 \coloneqq
-\int_{\mathbb C}
+\int_{\CC}
 |\log|f(z)||\,dA(z)
 <
 \infty.

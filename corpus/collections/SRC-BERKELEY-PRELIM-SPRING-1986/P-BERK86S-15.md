@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:\mathbb R^2\to\mathbb R^2$ be an isometry for the Euclidean metric. Prove that
+Let $T:\RR^2\to\RR^2$ be an isometry for the Euclidean metric. Prove that
 \[
 T(x)=a+U(x)
 \]
-for some $a\in\mathbb R^2$ and some orthogonal linear transformation $U$.
+for some $a\in\RR^2$ and some orthogonal linear transformation $U$.
 :::
 
 ::: {.solution}

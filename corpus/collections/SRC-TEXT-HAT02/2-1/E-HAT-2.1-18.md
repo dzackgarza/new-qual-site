@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.1-18
 kind: problem
-title: $H_1(\mathbb{R}, \mathbb{Q})$ is free abelian
+title: $H_1(\RR, \QQ)$ is free abelian
 classification:
   areas:
   - topology
@@ -26,19 +26,19 @@ audit:
 ---
 
 ::: {.problem}
-Show that for the subspace $\mathbb{Q} \subset \mathbb{R}$, the relative homology group $H_1(\mathbb{R}, \mathbb{Q})$ is free abelian and find a basis.
+Show that for the subspace $\QQ \subset \RR$, the relative homology group $H_1(\RR, \QQ)$ is free abelian and find a basis.
 :::
 
 ::: {.solution}
-Since $\mathbb R$ is contractible,
+Since $\RR$ is contractible,
 \[
-H_1(\mathbb R)=0,
+H_1(\RR)=0,
 \qquad
-H_0(\mathbb R)\cong\mathbb Z.
+H_0(\RR)\cong\ZZ.
 \]
-The subspace $\mathbb Q$ is totally disconnected, so each rational number is a path-component and
+The subspace $\QQ$ is totally disconnected, so each rational number is a path-component and
 \[
-H_0(\mathbb Q)\cong\bigoplus_{q\in\mathbb Q}\mathbb Z[q].
+H_0(\QQ)\cong\bigoplus_{q\in\QQ}\ZZ[q].
 \]
 
 ::: pf
@@ -47,17 +47,17 @@ H_0(\mathbb Q)\cong\bigoplus_{q\in\mathbb Q}\mathbb Z[q].
 
 The long exact sequence gives
 \[
-H_1(\mathbb R,\mathbb Q)
+H_1(\RR,\QQ)
 \cong
-\ker\left(H_0(\mathbb Q)\to H_0(\mathbb R)\right).
+\ker\left(H_0(\QQ)\to H_0(\RR)\right).
 \]
 
 ::: pf-proof
 
 The relevant segment is
 \[
-0=H_1(\mathbb R)\to H_1(\mathbb R,\mathbb Q)
-\to H_0(\mathbb Q)\to H_0(\mathbb R).
+0=H_1(\RR)\to H_1(\RR,\QQ)
+\to H_0(\QQ)\to H_0(\RR).
 \]
 Exactness gives the claimed identification.
 
@@ -69,7 +69,7 @@ Exactness gives the claimed identification.
 
 Under the component bases, the map
 \[
-H_0(\mathbb Q)\to H_0(\mathbb R)\cong\mathbb Z
+H_0(\QQ)\to H_0(\RR)\cong\ZZ
 \]
 is the augmentation
 \[
@@ -78,7 +78,7 @@ is the augmentation
 
 ::: pf-proof
 
-All points of $\mathbb Q$ lie in the single path-component of $\mathbb R$, so every generator $[q]$ maps to the same generator $1$ of $H_0(\mathbb R)$.
+All points of $\QQ$ lie in the single path-component of $\RR$, so every generator $[q]$ maps to the same generator $1$ of $H_0(\RR)$.
 
 :::
 
@@ -86,9 +86,9 @@ All points of $\mathbb Q$ lie in the single path-component of $\mathbb R$, so ev
 
 ::: {.pf-step #s3}
 
-Fix $0\in\mathbb Q$. Then
+Fix $0\in\QQ$. Then
 \[
-\mathcal B=\{[q]-[0]:q\in\mathbb Q,\ q\ne0\}
+\mathcal B=\{[q]-[0]:q\in\QQ,\ q\ne0\}
 \]
 is a basis of the augmentation kernel.
 
@@ -112,8 +112,8 @@ so $\mathcal B$ spans. If a finite linear combination of elements of $\mathcal B
 
 Therefore
 \[
-\boxed{H_1(\mathbb R,\mathbb Q)
-\cong\bigoplus_{q\in\mathbb Q\setminus\{0\}}\mathbb Z,}
+\boxed{H_1(\RR,\QQ)
+\cong\bigoplus_{q\in\QQ\setminus\{0\}}\ZZ,}
 \]
 with basis represented by the classes $[q]-[0]$.
 

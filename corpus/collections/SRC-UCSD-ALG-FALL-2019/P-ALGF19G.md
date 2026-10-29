@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF19G
 kind: problem
-title: Splitting field of $x^5 - 5$; non-abelian Galois; no root in $\mathbb{Q}[\zeta_{25}]$
+title: Splitting field of $x^5 - 5$; non-abelian Galois; no root in $\QQ[\zeta_{25}]$
 classification:
   areas:
   - algebra
@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-For a positive integer $n$, let $\zeta_n = e^{2\pi i/n}$ be a primitive $n$-th root of unity in $\mathbb{C}$.
+For a positive integer $n$, let $\zeta_n = e^{2\pi i/n}$ be a primitive $n$-th root of unity in $\CC$.
 
-(a) Prove that $\mathbb{Q}[\sqrt[5]{5}, \zeta_5]$ is a splitting field of $x^5 - 5$ over $\mathbb{Q}$.
+(a) Prove that $\QQ[\sqrt[5]{5}, \zeta_5]$ is a splitting field of $x^5 - 5$ over $\QQ$.
 
-(b) Prove that $\mathbb{Q}[\sqrt[5]{5}, \zeta_5]/\mathbb{Q}$ is a non-abelian Galois extension; that means it is a Galois extension and $\mathrm{Gal}(\mathbb{Q}[\sqrt[5]{5}, \zeta_5]/\mathbb{Q})$ is not abelian.
+(b) Prove that $\QQ[\sqrt[5]{5}, \zeta_5]/\QQ$ is a non-abelian Galois extension; that means it is a Galois extension and $\mathrm{Gal}(\QQ[\sqrt[5]{5}, \zeta_5]/\QQ)$ is not abelian.
 
-(c) Prove that $x^5 - 5$ does not have a zero in $\mathbb{Q}[\zeta_{25}]$.
+(c) Prove that $x^5 - 5$ does not have a zero in $\QQ[\zeta_{25}]$.
 :::
 
 ::: {.solution}
@@ -42,18 +42,18 @@ Let
 \qquad
 \zeta=\zeta_5,
 \qquad
-K=\mathbb Q(\alpha,\zeta).
+K=\QQ(\alpha,\zeta).
 \]
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The field $K$ is the splitting field of $x^5-5$ over $\mathbb Q$.
+The field $K$ is the splitting field of $x^5-5$ over $\QQ$.
 
 ::: pf-proof
 
-The five roots of $x^5-5$ in $\mathbb C$ are
+The five roots of $x^5-5$ in $\CC$ are
 \[
 \alpha,
 \zeta\alpha,
@@ -73,7 +73,7 @@ Thus it contains $K$. Hence $K$ is precisely the splitting field. This proves pa
 
 ::: {.pf-step #s2}
 
-The degree of $K$ over $\mathbb Q$ is $20$.
+The degree of $K$ over $\QQ$ is $20$.
 
 ::: pf-proof
 
@@ -83,7 +83,7 @@ x^5-5
 \]
 is Eisenstein at $5$, so
 \[
-[\mathbb Q(\alpha):\mathbb Q]=5.
+[\QQ(\alpha):\QQ]=5.
 \]
 Also $\zeta$ has cyclotomic polynomial
 \[
@@ -95,30 +95,30 @@ Its translate
 \]
 is Eisenstein at $5$, so $\Phi_5$ is irreducible and
 \[
-[\mathbb Q(\zeta):\mathbb Q]=4.
+[\QQ(\zeta):\QQ]=4.
 \]
 
 The intersection
 \[
-E:=\mathbb Q(\alpha)\cap\mathbb Q(\zeta)
+E:=\QQ(\alpha)\cap\QQ(\zeta)
 \]
-has degree over $\mathbb Q$ dividing both $5$ and $4$, hence
+has degree over $\QQ$ dividing both $5$ and $4$, hence
 \[
-E=\mathbb Q.
+E=\QQ.
 \]
-The extension $\mathbb Q(\zeta)/\mathbb Q$ is Galois, so the standard compositum degree formula gives
+The extension $\QQ(\zeta)/\QQ$ is Galois, so the standard compositum degree formula gives
 \[
-[K:\mathbb Q]
+[K:\QQ]
 =
-[\mathbb Q(\alpha):\mathbb Q]
-[\mathbb Q(\zeta):\mathbb Q]
+[\QQ(\alpha):\QQ]
+[\QQ(\zeta):\QQ]
 =20.
 \]
 Consequently
 \[
-[K:\mathbb Q(\zeta)]=5,
+[K:\QQ(\zeta)]=5,
 \qquad
-[K:\mathbb Q(\alpha)]=4.
+[K:\QQ(\alpha)]=4.
 \]
 
 :::
@@ -127,7 +127,7 @@ Consequently
 
 ::: {.pf-step #s3}
 
-There is an automorphism $\sigma\in\operatorname{Gal}(K/\mathbb Q)$ such that
+There is an automorphism $\sigma\in\operatorname{Gal}(K/\QQ)$ such that
 \[
 \sigma(\alpha)=\zeta\alpha,
 \qquad
@@ -136,8 +136,8 @@ There is an automorphism $\sigma\in\operatorname{Gal}(K/\mathbb Q)$ such that
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref}, the minimal polynomial of $\alpha$ over $\mathbb Q(\zeta)$ has degree $5$. Since it divides $x^5-5$, it equals $x^5-5$.
-The element $\zeta\alpha$ is another root of this polynomial in $K$. Hence the $\mathbb Q(\zeta)$-embedding sending
+By step [](#s2){.pf-ref}, the minimal polynomial of $\alpha$ over $\QQ(\zeta)$ has degree $5$. Since it divides $x^5-5$, it equals $x^5-5$.
+The element $\zeta\alpha$ is another root of this polynomial in $K$. Hence the $\QQ(\zeta)$-embedding sending
 \[
 \alpha\longmapsto\zeta\alpha
 \]
@@ -149,7 +149,7 @@ is an automorphism of $K$. It fixes $\zeta$ by construction.
 
 ::: {.pf-step #s4}
 
-There is an automorphism $\tau\in\operatorname{Gal}(K/\mathbb Q)$ such that
+There is an automorphism $\tau\in\operatorname{Gal}(K/\QQ)$ such that
 \[
 \tau(\alpha)=\alpha,
 \qquad
@@ -160,10 +160,10 @@ There is an automorphism $\tau\in\operatorname{Gal}(K/\mathbb Q)$ such that
 
 By step [](#s2){.pf-ref},
 \[
-[K:\mathbb Q(\alpha)]=4.
+[K:\QQ(\alpha)]=4.
 \]
-Therefore the minimal polynomial of $\zeta$ over $\mathbb Q(\alpha)$ has degree $4$. It divides $\Phi_5$, so it is $\Phi_5$ itself.
-Since $\zeta^2$ is another root of $\Phi_5$ in $K$, the $\mathbb Q(\alpha)$-embedding
+Therefore the minimal polynomial of $\zeta$ over $\QQ(\alpha)$ has degree $4$. It divides $\Phi_5$, so it is $\Phi_5$ itself.
+Since $\zeta^2$ is another root of $\Phi_5$ in $K$, the $\QQ(\alpha)$-embedding
 \[
 \zeta\longmapsto\zeta^2
 \]
@@ -175,11 +175,11 @@ is an automorphism of $K$. It fixes $\alpha$.
 
 ::: {.pf-step #s5}
 
-The Galois group $\operatorname{Gal}(K/\mathbb Q)$ is non-abelian.
+The Galois group $\operatorname{Gal}(K/\QQ)$ is non-abelian.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, $K$ is a splitting field over the characteristic-zero field $\mathbb Q$, so $K/\mathbb Q$ is Galois.
+By step [](#s1){.pf-ref}, $K$ is a splitting field over the characteristic-zero field $\QQ$, so $K/\QQ$ is Galois.
 
 Using steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 \[
@@ -197,7 +197,7 @@ whereas
 =
 \zeta\alpha.
 \]
-Since $\zeta^2\ne\zeta$, the automorphisms $\sigma$ and $\tau$ do not commute. Thus $\operatorname{Gal}(K/\mathbb Q)$ is non-abelian. This proves part (b).
+Since $\zeta^2\ne\zeta$, the automorphisms $\sigma$ and $\tau$ do not commute. Thus $\operatorname{Gal}(K/\QQ)$ is non-abelian. This proves part (b).
 
 :::
 
@@ -205,13 +205,13 @@ Since $\zeta^2\ne\zeta$, the automorphisms $\sigma$ and $\tau$ do not commute. T
 
 ::: {.pf-step #s6}
 
-If $x^5-5$ had a zero in $\mathbb Q(\zeta_{25})$, then $K$ would be a subfield of $\mathbb Q(\zeta_{25})$.
+If $x^5-5$ had a zero in $\QQ(\zeta_{25})$, then $K$ would be a subfield of $\QQ(\zeta_{25})$.
 
 ::: pf-proof
 
 Set
 \[
-L=\mathbb Q(\zeta_{25}).
+L=\QQ(\zeta_{25}).
 \]
 Suppose $\beta\in L$ satisfies
 \[
@@ -233,7 +233,7 @@ we obtain
 \]
 Therefore both $\alpha$ and $\zeta$ lie in $L$, so
 \[
-K=\mathbb Q(\alpha,\zeta)\subseteq L.
+K=\QQ(\alpha,\zeta)\subseteq L.
 \]
 
 :::
@@ -242,21 +242,21 @@ K=\mathbb Q(\alpha,\zeta)\subseteq L.
 
 ::: pf-step
 
-The polynomial $x^5-5$ has no zero in $\mathbb Q(\zeta_{25})$.
+The polynomial $x^5-5$ has no zero in $\QQ(\zeta_{25})$.
 
 ::: pf-proof
 
 The cyclotomic extension
 \[
-L=\mathbb Q(\zeta_{25})/\mathbb Q
+L=\QQ(\zeta_{25})/\QQ
 \]
 is Galois with abelian Galois group
 \[
-\operatorname{Gal}(L/\mathbb Q)\cong(\mathbb Z/25\mathbb Z)^\times.
+\operatorname{Gal}(L/\QQ)\cong(\ZZ/25\ZZ)^\times.
 \]
-Every subgroup of an abelian group is normal. Hence every intermediate field of $L/\mathbb Q$ is Galois over $\mathbb Q$, with Galois group a quotient of the abelian group $\operatorname{Gal}(L/\mathbb Q)$; in particular that Galois group is abelian.
+Every subgroup of an abelian group is normal. Hence every intermediate field of $L/\QQ$ is Galois over $\QQ$, with Galois group a quotient of the abelian group $\operatorname{Gal}(L/\QQ)$; in particular that Galois group is abelian.
 
-If $x^5-5$ had a zero in $L$, then step [](#s6){.pf-ref} would give $K\subseteq L$. This would force $K/\mathbb Q$ to have abelian Galois group, contradicting step [](#s5){.pf-ref}. Therefore $x^5-5$ has no zero in $\mathbb Q(\zeta_{25})$. This proves part (c).
+If $x^5-5$ had a zero in $L$, then step [](#s6){.pf-ref} would give $K\subseteq L$. This would force $K/\QQ$ to have abelian Galois group, contradicting step [](#s5){.pf-ref}. Therefore $x^5-5$ has no zero in $\QQ(\zeta_{25})$. This proves part (c).
 
 :::
 

@@ -54,7 +54,7 @@ If $f$ carries this subdivided simplex to itself, it must preserve each vertex b
 
 ::: {.pf-step #s2}
 
-On the simplicial chain group $C_n(X;\mathbb Q)$, the trace of $f_*$ equals the number $c_n(F)$ of $n$-simplices of $F$.
+On the simplicial chain group $C_n(X;\QQ)$, the trace of $f_*$ equals the number $c_n(F)$ of $n$-simplices of $F$.
 
 ::: pf-proof
 

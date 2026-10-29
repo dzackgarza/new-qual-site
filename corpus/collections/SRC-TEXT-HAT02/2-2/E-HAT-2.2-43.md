@@ -30,16 +30,16 @@ audit:
 (a) Show that a chain complex of free abelian groups $C_n$ splits as a direct sum of subcomplexes $0 \to L_{n+1} \to K_n \to 0$ with at most two nonzero terms.
 [Show the short exact sequence $0 \to \ker\partial \to C_n \to \operatorname{Im}\partial \to 0$ splits and take $K_n = \ker\partial$.]
 
-(b) In case the groups $C_n$ are finitely generated, show there is a further splitting into summands $0 \to \mathbb{Z} \to 0$ and $0 \to \mathbb{Z} \xrightarrow{m} \mathbb{Z} \to 0$.
+(b) In case the groups $C_n$ are finitely generated, show there is a further splitting into summands $0 \to \ZZ \to 0$ and $0 \to \ZZ \xrightarrow{m} \ZZ \to 0$.
 [Reduce the matrix of the boundary map $L_{n+1} \to K_n$ to echelon form by elementary row and column operations.]
 
 (c) Deduce that if $X$ is a CW complex with finitely many cells in each dimension, then $H_n(X; G)$ is the direct sum of the following groups:
 
-- a copy of $G$ for each $\mathbb{Z}$ summand of $H_n(X)$
+- a copy of $G$ for each $\ZZ$ summand of $H_n(X)$
 
-- a copy of $G/mG$ for each $\mathbb{Z}_m$ summand of $H_n(X)$
+- a copy of $G/mG$ for each $\ZZ_m$ summand of $H_n(X)$
 
-- a copy of the kernel of $G \xrightarrow{m} G$ for each $\mathbb{Z}_m$ summand of $H_{n-1}(X)$
+- a copy of the kernel of $G \xrightarrow{m} G$ for each $\ZZ_m$ summand of $H_{n-1}(X)$
 :::
 
 ::: {.solution}
@@ -108,11 +108,11 @@ L_{n+1}\to K_n
 \]
 can be diagonalized by Smith normal form, so the chain complex further decomposes into summands
 \[
-0\to\mathbb Z\to0
+0\to\ZZ\to0
 \]
 and
 \[
-0\to\mathbb Z\xrightarrow{m}\mathbb Z\to0
+0\to\ZZ\xrightarrow{m}\ZZ\to0
 \qquad(m>0).
 \]
 
@@ -120,9 +120,9 @@ and
 
 The groups $L_{n+1}$ and $K_n$ are finitely generated free abelian. Smith normal form gives bases in which the injective map $L_{n+1}\to K_n$ is diagonal with nonzero diagonal entries $m_1,\dots,m_r$. Each diagonal entry yields a two-term summand
 \[
-\mathbb Z\xrightarrow{m_j}\mathbb Z,
+\ZZ\xrightarrow{m_j}\ZZ,
 \]
-while any unused basis vectors of $K_n$ yield one-term summands $\mathbb Z$.
+while any unused basis vectors of $K_n$ yield one-term summands $\ZZ$.
 
 Now let $X$ be a CW complex with finitely many cells in each dimension and tensor its cellular chain complex with an abelian group $G$.
 
@@ -132,11 +132,11 @@ Now let $X$ be a CW complex with finitely many cells in each dimension and tenso
 
 ::: {.pf-step #s4}
 
-A one-term summand $\mathbb Z$ in degree $n$ contributes one copy of $G$ to $H_n(X;G)$.
+A one-term summand $\ZZ$ in degree $n$ contributes one copy of $G$ to $H_n(X;G)$.
 
 ::: pf-proof
 
-After tensoring with $G$, the summand becomes a one-term complex with $G$ in degree $n$ and zero differential. Such summands correspond exactly to free $\mathbb Z$ summands of $H_n(X)$.
+After tensoring with $G$, the summand becomes a one-term complex with $G$ in degree $n$ and zero differential. Such summands correspond exactly to free $\ZZ$ summands of $H_n(X)$.
 
 :::
 
@@ -146,7 +146,7 @@ After tensoring with $G$, the summand becomes a one-term complex with $G$ in deg
 
 A two-term summand
 \[
-0\to\mathbb Z\xrightarrow{m}\mathbb Z\to0
+0\to\ZZ\xrightarrow{m}\ZZ\to0
 \]
 in degrees $n+1,n$ contributes
 \[
@@ -178,13 +178,13 @@ H_n(X;G)
 \]
 is the direct sum of:
 
-- one copy of $G$ for each $\mathbb Z$ summand of $H_n(X)$;
-- one copy of $G/mG$ for each $\mathbb Z_m$ summand of $H_n(X)$;
-- one copy of $\ker(m:G\to G)$ for each $\mathbb Z_m$ summand of $H_{n-1}(X)$.
+- one copy of $G$ for each $\ZZ$ summand of $H_n(X)$;
+- one copy of $G/mG$ for each $\ZZ_m$ summand of $H_n(X)$;
+- one copy of $\ker(m:G\to G)$ for each $\ZZ_m$ summand of $H_{n-1}(X)$.
 
 ::: pf-proof
 
-A torsion summand $\mathbb Z_m$ in integral homology arises as the cokernel of one of the multiplication-by-$m$ two-term pieces. Apply steps [](#s4){.pf-ref} and [](#s5){.pf-ref} and collect all direct summands contributing in degree $n$.
+A torsion summand $\ZZ_m$ in integral homology arises as the cokernel of one of the multiplication-by-$m$ two-term pieces. Apply steps [](#s4){.pf-ref} and [](#s5){.pf-ref} and collect all direct summands contributing in degree $n$.
 
 :::
 

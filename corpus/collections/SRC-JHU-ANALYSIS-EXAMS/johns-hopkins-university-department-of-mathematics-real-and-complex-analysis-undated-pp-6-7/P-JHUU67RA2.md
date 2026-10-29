@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $L^2=L^2(\mathbb R^d)$ be the real Hilbert space with inner product
+Let $L^2=L^2(\RR^d)$ be the real Hilbert space with inner product
 \[
-(f,g)=\int_{\mathbb R^d}f g\,dm.
+(f,g)=\int_{\RR^d}f g\,dm.
 \]
 
 (a) Prove that if $f_n\rightharpoonup f$ weakly in $L^2$ and
@@ -105,7 +105,7 @@ for every $n$, so the sequence does not converge strongly. In fact, for $m\ne n$
 \]
 so no subsequence is strongly Cauchy.
 
-Therefore the closed unit ball of $L^2(\mathbb R^d)$ is not compact in the norm topology.
+Therefore the closed unit ball of $L^2(\RR^d)$ is not compact in the norm topology.
 
 :::
 

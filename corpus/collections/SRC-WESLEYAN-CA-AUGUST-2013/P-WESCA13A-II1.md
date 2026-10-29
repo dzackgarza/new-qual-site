@@ -141,7 +141,7 @@ e^{1/z^2}
 \]
 is holomorphic on
 \[
-\mathbb C\setminus\{0\},
+\CC\setminus\{0\},
 \]
 while
 \[

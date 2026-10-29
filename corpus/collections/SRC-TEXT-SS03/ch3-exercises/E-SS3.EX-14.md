@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-14. Prove that all entire functions that are also injective take the form $f ( z ) = a z + b$ with $a , b \in \mathbb { C }$ , and $a \neq 0$
+14. Prove that all entire functions that are also injective take the form $f ( z ) = a z + b$ with $a , b \in \CC$ , and $a \neq 0$
 
 [Hint: Apply the Casorati-Weierstrass theorem to $f ( 1 / z ) . ]$
 :::
@@ -24,9 +24,9 @@ audit:
 ::: {.solution}
 Let $f$ be entire and injective, and define $g(z)=f(1/z)$ on a punctured neighborhood of $0$.
 
-The singularity of $g$ at $0$ cannot be removable: otherwise $f(z)$ would have a finite limit as $z\to\infty$, hence would be bounded outside a large disc and therefore bounded on all of $\mathbb C$; Liouville would make $f$ constant, contradicting injectivity.
+The singularity of $g$ at $0$ cannot be removable: otherwise $f(z)$ would have a finite limit as $z\to\infty$, hence would be bounded outside a large disc and therefore bounded on all of $\CC$; Liouville would make $f$ constant, contradicting injectivity.
 
-It also cannot be essential. By Casorati-Weierstrass, if $0$ were an essential singularity of $g$, then for any $w\in\mathbb C$ and every punctured neighborhood of $0$, the values of $g$ would come arbitrarily close to $w$. Choose $z_0\ne0$ and set $w=f(z_0)$. Then there exists a sequence $\zeta_n\to0$, with $\zeta_n\ne 1/z_0$, such that
+It also cannot be essential. By Casorati-Weierstrass, if $0$ were an essential singularity of $g$, then for any $w\in\CC$ and every punctured neighborhood of $0$, the values of $g$ would come arbitrarily close to $w$. Choose $z_0\ne0$ and set $w=f(z_0)$. Then there exists a sequence $\zeta_n\to0$, with $\zeta_n\ne 1/z_0$, such that
 \[
 f(1/\zeta_n)=g(\zeta_n)\to f(z_0).
 \]

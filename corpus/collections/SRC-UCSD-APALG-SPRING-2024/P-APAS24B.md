@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A=(a_{ij})\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ and define the sets
+Let $A=(a_{ij})\in M_n(\CC)=\CC^{n\times n}$ and define the sets
 \[
-D_i=\Biggl\{\beta\in\mathbb{C}\ \Biggm|\ |\beta-a_{ii}|\le\sum_{\substack{j=1\\ j\neq i}}^{n}|a_{ij}|\Biggr\}\subseteq\mathbb{C},
+D_i=\Biggl\{\beta\in\CC\ \Biggm|\ |\beta-a_{ii}|\le\sum_{\substack{j=1\\ j\neq i}}^{n}|a_{ij}|\Biggr\}\subseteq\CC,
 \]
 for $1\le i\le n$.
 Given any eigenvalue $\lambda$ of $A$, prove

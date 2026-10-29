@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-B03
 kind: problem
-title: Real differentiability, the inverse function theorem, and complex differentiability in $\mathbb R^2$
+title: Real differentiability, the inverse function theorem, and complex differentiability in $\RR^2$
 classification:
   areas: [real-analysis]
   topics: []
@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb { R } ^ { 2 } \to \mathbb { R } ^ { 2 }$
+Let $f : \RR ^ { 2 } \to \RR ^ { 2 }$
 
 (a) Define in terms of linear transformations, what it means for $f$ to be differentiable at a point $(a, b) \in \RR^2$
 

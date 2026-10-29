@@ -24,7 +24,7 @@ Problem 6. Let $\mathbb T$ denote the unit circle in the complex plane, let $\ma
 =\int_{\mathbb T}f(x)\,d\mu(x)\int_{\mathbb T}g(y)\,d\nu(y)
 \text{ for all }f,g\in C(\mathbb T)\right\}.
 \]
-Show that $F:\mathcal M\to\mathbb R$ defined by
+Show that $F:\mathcal M\to\RR$ defined by
 \[
 F(\gamma)=\iint_{\mathbb T\times\mathbb T}
 \sin^2\!\left(\frac{\theta-\phi}{2}\right)

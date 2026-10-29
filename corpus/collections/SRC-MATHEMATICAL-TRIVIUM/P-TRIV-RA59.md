@@ -21,7 +21,7 @@ Find all differentiable solutions of the equation $f ( x ) f ( y ) = f ( x + y )
 
 ::: {.solution}
 
-Assume $f:\mathbb R\to\mathbb R$.
+Assume $f:\RR\to\RR$.
 
 ::: pf
 
@@ -144,7 +144,7 @@ Hence every differentiable nonzero solution is
 $$
 f(x)=e^{cx}
 $$
-for some $c\in\mathbb R$.
+for some $c\in\RR$.
 
 
 ::: pf-proof
@@ -176,7 +176,7 @@ $$
 $$
 and
 $$
-\boxed{f(x)=e^{cx},\quad c\in\mathbb R}.
+\boxed{f(x)=e^{cx},\quad c\in\RR}.
 $$
 
 
@@ -256,7 +256,7 @@ Every continuous additive function has the form
 $$
 g(x)=cx
 $$
-for some $c\in\mathbb R$.
+for some $c\in\RR$.
 
 
 ::: pf-proof
@@ -275,7 +275,7 @@ g\left(\frac mn\right)
 =
 \frac mn c
 $$
-for rationals $m/n$. For arbitrary $x\in\mathbb R$, choose rationals
+for rationals $m/n$. For arbitrary $x\in\RR$, choose rationals
 $q_j\to x$. Continuity gives
 $$
 g(x)
@@ -319,7 +319,7 @@ $$
 $$
 and
 $$
-\boxed{f(x)=e^{cx},\quad c\in\mathbb R}.
+\boxed{f(x)=e^{cx},\quad c\in\RR}.
 $$
 
 

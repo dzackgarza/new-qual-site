@@ -19,8 +19,8 @@ audit:
 ::: {.problem}
 Consider
 \[
-\min_{\mathbf x\in\mathbb R^n}\|A\mathbf x-\mathbf b\|_2,
-\qquad A\in\mathbb R^{m\times n},\quad m\ge n.
+\min_{\mathbf x\in\RR^n}\|A\mathbf x-\mathbf b\|_2,
+\qquad A\in\RR^{m\times n},\quad m\ge n.
 \]
 Prove that if $\mathbf x$ and $\mathbf x+\alpha\mathbf z$ are both minimizers for some $\alpha\ne0$, then $\mathbf z\in\ker A$.
 :::
@@ -44,7 +44,7 @@ A^t(A\mathbf y-\mathbf b)=0.
 
 ::: pf-proof
 
-Fix any vector $\mathbf h\in\mathbb R^n$ and consider
+Fix any vector $\mathbf h\in\RR^n$ and consider
 \[
 g(t)=\Phi(\mathbf y+t\mathbf h).
 \]

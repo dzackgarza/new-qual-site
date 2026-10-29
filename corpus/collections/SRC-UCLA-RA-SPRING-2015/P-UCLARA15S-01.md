@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$.
+Let $f\in L^1(\RR)$.
 Show that
 \[
-\lim_{n\to\infty}\sum_{k=-n^2}^{n^2}\left|\int_{k/n}^{(k+1)/n}f(x)\,dx\right|=\int_{\mathbb R}|f(x)|\,dx.
+\lim_{n\to\infty}\sum_{k=-n^2}^{n^2}\left|\int_{k/n}^{(k+1)/n}f(x)\,dx\right|=\int_{\RR}|f(x)|\,dx.
 \]
 :::
 
@@ -40,7 +40,7 @@ S_n(h)
 
 ::: {.pf-step #s1}
 
-For all $f,g\in L^1(\mathbb R)$,
+For all $f,g\in L^1(\RR)$,
 \[
 |S_n(f)-S_n(g)|
 \le
@@ -85,7 +85,7 @@ Summing over $-n^2\le k\le n^2$ yields
 
 ::: {.pf-step #s2}
 
-If $g\in C_c(\mathbb R)$, then
+If $g\in C_c(\RR)$, then
 \[
 S_n(g)
 \longrightarrow
@@ -113,7 +113,7 @@ Then
 
 ::: pf-proof
 
-A continuous compactly supported function is uniformly continuous on $\mathbb R$. The displayed statement is exactly uniform continuity written in terms of the modulus of continuity.
+A continuous compactly supported function is uniformly continuous on $\RR$. The displayed statement is exactly uniform continuity written in terms of the modulus of continuity.
 
 :::
 
@@ -228,7 +228,7 @@ This proves step [](#s2){.pf-ref}.
 
 ::: {.pf-step #s3}
 
-For every $f\in L^1(\mathbb R)$,
+For every $f\in L^1(\RR)$,
 \[
 S_n(f)
 \longrightarrow
@@ -238,7 +238,7 @@ S_n(f)
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$, choose $g\in C_c(\mathbb R)$ such that
+Fix $\varepsilon>0$. Since $C_c(\RR)$ is dense in $L^1(\RR)$, choose $g\in C_c(\RR)$ such that
 \[
 \|f-g\|_1<\frac{\varepsilon}{3}.
 \]
@@ -284,7 +284,7 @@ Therefore
 \int_{k/n}^{(k+1)/n}f(x)\,dx
 \right|
 =
-\int_{\mathbb R}|f(x)|\,dx
+\int_{\RR}|f(x)|\,dx
 }.
 \]
 

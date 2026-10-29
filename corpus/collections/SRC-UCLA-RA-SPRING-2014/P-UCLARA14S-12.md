@@ -35,7 +35,7 @@ The polynomial $f$ has no real zeros.
 
 ::: pf-proof
 
-Let $x\in\mathbb R$. Then
+Let $x\in\RR$. Then
 \[
 f(x)=x^6+1+i x^4.
 \]
@@ -108,7 +108,7 @@ zeros in the open upper half-plane, counted with multiplicity.
 
 ::: pf-proof
 
-Since $f$ has degree $6$, the fundamental theorem of algebra gives exactly six zeros in $\mathbb C$, counted with multiplicity. By step [](#s1-1){.pf-ref}, none lies on the real axis. By step [](#s1-3){.pf-ref}, the numbers of zeros in the upper and lower half-planes are equal, counted with multiplicity. Therefore each half-plane contains
+Since $f$ has degree $6$, the fundamental theorem of algebra gives exactly six zeros in $\CC$, counted with multiplicity. By step [](#s1-1){.pf-ref}, none lies on the real axis. By step [](#s1-3){.pf-ref}, the numbers of zeros in the upper and lower half-planes are equal, counted with multiplicity. Therefore each half-plane contains
 \[
 \frac62=3
 \]

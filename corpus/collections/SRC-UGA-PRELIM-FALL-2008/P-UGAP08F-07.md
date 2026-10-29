@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGAP08F-07
 kind: problem
-title: Every additive subgroup of $\mathbb Z$ is $k\mathbb Z$
+title: Every additive subgroup of $\ZZ$ is $k\ZZ$
 classification:
   areas: [prelim]
   topics: []
@@ -15,11 +15,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $S\subseteq\mathbb Z$ be nonempty and closed under addition and additive inverses. Prove that there is an integer $k$ such that
+Let $S\subseteq\ZZ$ be nonempty and closed under addition and additive inverses. Prove that there is an integer $k$ such that
 \[
-S=\{nk:n\in\mathbb Z\}.
+S=\{nk:n\in\ZZ\}.
 \]
-You may use the division algorithm for $\mathbb Z$, but no more advanced theorem.
+You may use the division algorithm for $\ZZ$, but no more advanced theorem.
 :::
 
 ::: {.solution}

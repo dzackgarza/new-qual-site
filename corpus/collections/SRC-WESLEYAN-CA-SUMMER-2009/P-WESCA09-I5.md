@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and let $f:U\to\mathbb C$.
+Let $U\subset\CC$ be open and let $f:U\to\CC$.
 Define what it means for a function $F$ to be a primitive of $f$.
 :::
 
@@ -26,7 +26,7 @@ Define what it means for a function $F$ to be a primitive of $f$.
 
 ::: {.pf-step #s1-1}
 
-A function $F:U\to\mathbb C$ is a primitive of $f$ on $U$ if $F$ is
+A function $F:U\to\CC$ is a primitive of $f$ on $U$ if $F$ is
 holomorphic on $U$ and
 \[
 \boxed{F'(z)=f(z)\qquad\text{for every }z\in U}.

@@ -136,7 +136,7 @@ setup.
 :::
 
 ::: pf-step
-Since $A$ is open, $r_0 = \operatorname{dist}(K, \mathbb{C} \setminus A) > 0$.
+Since $A$ is open, $r_0 = \operatorname{dist}(K, \CC \setminus A) > 0$.
 Choose $r = r_0 / 2 > 0$.
 
 ::: pf-proof
@@ -146,7 +146,7 @@ distance between a compact set and a disjoint closed set in a metric space is po
 :::
 
 ::: pf-step
-For any $z \in K$, the circle $\gamma_z = \{\zeta \in \mathbb{C} : |\zeta - z| = r\}$ and its interior disk $D(z, r)$ are completely contained in $A$.
+For any $z \in K$, the circle $\gamma_z = \{\zeta \in \CC : |\zeta - z| = r\}$ and its interior disk $D(z, r)$ are completely contained in $A$.
 
 ::: pf-proof
 definition of $r = r_0 / 2 < r_0$.

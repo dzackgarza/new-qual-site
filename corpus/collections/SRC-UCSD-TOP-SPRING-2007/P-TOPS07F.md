@@ -30,7 +30,7 @@ $$
 is obtained from the universal cover $S^3\to\mathbb{RP}^3$ by attaching one copy of $S^3$ at each of the two lifts of the wedge point.
 
 ::: pf-proof
-The fundamental group of $X$ is $\mathbb Z/2$, contributed by the $\mathbb{RP}^3$ summand, since $S^3$ is simply connected. Pulling the simply connected wedge summand up to the universal cover attaches a copy at each point of the fiber over the wedge point, which has two elements.
+The fundamental group of $X$ is $\ZZ/2$, contributed by the $\mathbb{RP}^3$ summand, since $S^3$ is simply connected. Pulling the simply connected wedge summand up to the universal cover attaches a copy at each point of the fiber over the wedge point, which has two elements.
 :::
 
 :::
@@ -50,7 +50,7 @@ The underlying lifted $\mathbb{RP}^3$ is $S^3$, with two further $S^3$'s attache
 ::: pf-step
 The space $\widetilde X$ is $2$-connected and
 $$
-H_3(\widetilde X;\mathbb Z)\cong\mathbb Z^3.
+H_3(\widetilde X;\ZZ)\cong\ZZ^3.
 $$
 
 ::: pf-proof
@@ -62,7 +62,7 @@ A wedge of three $3$-spheres is simply connected and has no homology in degrees 
 ::: pf-step
 By Hurewicz,
 $$
-\pi_3(\widetilde X)\cong H_3(\widetilde X)\cong\mathbb Z^3.
+\pi_3(\widetilde X)\cong H_3(\widetilde X)\cong\ZZ^3.
 $$
 
 ::: pf-proof
@@ -74,7 +74,7 @@ Since $\widetilde X$ is $2$-connected, the degree-$3$ Hurewicz homomorphism is a
 ::: pf-step
 Therefore
 $$
-\boxed{\pi_3(\mathbb{RP}^3\vee S^3)\cong\mathbb Z^3}.
+\boxed{\pi_3(\mathbb{RP}^3\vee S^3)\cong\ZZ^3}.
 $$
 
 ::: pf-proof

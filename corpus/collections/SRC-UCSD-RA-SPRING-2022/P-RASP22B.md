@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)_{n \in \mathbb{N}}$ be a sequence of Lebesgue measurable functions defined on $[0,1]$.
+Let $(f_n)_{n \in \NN}$ be a sequence of Lebesgue measurable functions defined on $[0,1]$.
 Assume there is a $C > 0$ such that $|f_n(x)| \leq C$ for almost every $x \in [0,1]$ and every $n$, and assume that $\lim_{n \to \infty} \int_0^a f_n(x)\,dx = 0$ for every $a \in (0,1)$.
 Prove that
 $$

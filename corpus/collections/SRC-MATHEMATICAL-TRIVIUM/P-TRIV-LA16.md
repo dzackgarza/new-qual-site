@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA16
 kind: problem
-title: Reflection matrices in $\mathbb{R}^3$ across a point, an axis and a plane
+title: Reflection matrices in $\RR^3$ across a point, an axis and a plane
 classification:
   areas: [prelim]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Construct the matrix that performs a reflection in $\mathbb { R } ^ { 3 }$
+Construct the matrix that performs a reflection in $\RR ^ { 3 }$
 
 (a) across the origin O,
 

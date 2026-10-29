@@ -107,7 +107,7 @@ Construction of the candidate function $f$:
 ::: pf-proof
 
 ::: pf-step
-Define $f: X \to \mathbb{R}$ by
+Define $f: X \to \RR$ by
 $$f(x) = \frac{1}{n} \sum_{i=1}^n d(x, C_i).$$
 
 :::

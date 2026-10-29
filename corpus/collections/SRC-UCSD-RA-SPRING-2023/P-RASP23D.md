@@ -103,7 +103,7 @@ Let $K=\operatorname{supp}f$, which is compact. The balls
 \[
 B((x,y),1/3),\qquad (x,y)\in K,
 \]
-form an open cover of $K$. Each such ball lies entirely in one vertical line $\{x\}\times\mathbb R$. By compactness, finitely many of these balls cover $K$. Therefore $K$, and hence the set
+form an open cover of $K$. Each such ball lies entirely in one vertical line $\{x\}\times\RR$. By compactness, finitely many of these balls cover $K$. Therefore $K$, and hence the set
 \[
 F=\{x:\exists y,\ f(x,y)\ne0\},
 \]
@@ -122,18 +122,18 @@ Identify the measure induced by $I$.
 
 ::: pf-proof
 
-For each $x\in\mathbb R$, let $\lambda_x$ be one-dimensional Lebesgue measure on the open-and-closed vertical line $\{x\}\times\mathbb R$. Define, for Borel $E\subseteq X$,
+For each $x\in\RR$, let $\lambda_x$ be one-dimensional Lebesgue measure on the open-and-closed vertical line $\{x\}\times\RR$. Define, for Borel $E\subseteq X$,
 \[
-\nu(E):=\sum_{x\in\mathbb R}m(E_x),
+\nu(E):=\sum_{x\in\RR}m(E_x),
 \qquad
 E_x:=\{y:(x,y)\in E\},
 \]
 where an uncountable sum of nonnegative numbers means the supremum of the finite partial sums.
 
-This is a Borel measure: it is the sum of the family $(\lambda_x)_{x\in\mathbb R}$. If $f\in C_c(X)$, Step 3 shows that only finitely many vertical lines meet its support, so
+This is a Borel measure: it is the sum of the family $(\lambda_x)_{x\in\RR}$. If $f\in C_c(X)$, Step 3 shows that only finitely many vertical lines meet its support, so
 \[
 \int_X f\,d\nu
-=\sum_{i=1}^n\int_{\mathbb R}f(x_i,y)\,dy
+=\sum_{i=1}^n\int_{\RR}f(x_i,y)\,dy
 =I(f).
 \]
 Hence the Radon measure induced by the positive functional $I$ is precisely $\mu=\nu$.

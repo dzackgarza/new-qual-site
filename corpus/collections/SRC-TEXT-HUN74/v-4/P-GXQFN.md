@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ be a subfield of $\mathbb{R}$ and let $f \in K[x]$ be an irreducible quartic.
+Let $K$ be a subfield of $\RR$ and let $f \in K[x]$ be an irreducible quartic.
 If $f$ has exactly 2 real roots, show that the Galois group of $f$ is either $S_{4}$ or $D_{4}$.
 :::
 

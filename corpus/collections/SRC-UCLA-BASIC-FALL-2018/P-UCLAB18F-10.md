@@ -121,7 +121,7 @@ Av_{1/3}
 
 ::: {.pf-step #s1-3}
 
-The vectors in step [](#s1-2){.pf-ref} form a basis of $\mathbb R^3$.
+The vectors in step [](#s1-2){.pf-ref} form a basis of $\RR^3$.
 
 
 ::: pf-proof

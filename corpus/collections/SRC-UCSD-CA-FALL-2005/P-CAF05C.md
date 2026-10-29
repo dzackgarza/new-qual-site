@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that if $f$ is a non-constant analytic function on a bounded region $G \subset \mathbb{C}$ and is continuous on $\overline{G}$, then either $f$ has a zero in $G$ or $|f(z)|$ reaches its minimum value on $\partial G$.
+Prove that if $f$ is a non-constant analytic function on a bounded region $G \subset \CC$ and is continuous on $\overline{G}$, then either $f$ has a zero in $G$ or $|f(z)|$ reaches its minimum value on $\partial G$.
 :::
 
 ::: {.remark}

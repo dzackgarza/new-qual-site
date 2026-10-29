@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ and $g:[0,1]\to[0,1]$ be Riemann integrable.
+Let $f:[0,1]\to\RR$ and $g:[0,1]\to[0,1]$ be Riemann integrable.
 Suppose that for some $\alpha\in(0,1)$,
 \[
 |g(x)-g(y)|\ge \alpha|x-y|\qquad(x,y\in[0,1]).
@@ -99,11 +99,11 @@ Thus
 
 ::: {.pf-step #s1-3}
 
-If $E\subseteq\mathbb R$ has Lebesgue measure zero and
+If $E\subseteq\RR$ has Lebesgue measure zero and
 \[
-\phi:E_0\to\mathbb R
+\phi:E_0\to\RR
 \]
-is $L$-Lipschitz on a subset $E_0\subseteq\mathbb R$, then
+is $L$-Lipschitz on a subset $E_0\subseteq\RR$, then
 \[
 \phi(E\cap E_0)
 \]

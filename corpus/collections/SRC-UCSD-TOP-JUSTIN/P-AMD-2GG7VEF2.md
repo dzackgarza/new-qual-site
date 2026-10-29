@@ -32,7 +32,7 @@ Cover $S^n$ by two open subsets $U$ and $V$.
 ::: pf-proof
 
 ::: pf-step
-Let $N = (0, \dots, 0, 1) \in S^n \subset \mathbb{R}^{n+1}$ (North pole) and $S = (0, \dots, 0, -1) \in S^n$ (South pole).
+Let $N = (0, \dots, 0, 1) \in S^n \subset \RR^{n+1}$ (North pole) and $S = (0, \dots, 0, -1) \in S^n$ (South pole).
 :::
 
 ::: pf-step
@@ -62,15 +62,15 @@ $U$ and $V$ are contractible, hence simply connected.
 ::: pf-proof
 
 ::: pf-step
-Stereographic projection from $S$ is a homeomorphism $U \to \mathbb{R}^n$.
+Stereographic projection from $S$ is a homeomorphism $U \to \RR^n$.
 :::
 
 ::: pf-step
-Stereographic projection from $N$ is a homeomorphism $V \to \mathbb{R}^n$.
+Stereographic projection from $N$ is a homeomorphism $V \to \RR^n$.
 :::
 
 ::: pf-step
-$\mathbb{R}^n$ is convex, hence contractible to the origin via straight-line homotopy $H(x, t) = (1-t)x$.
+$\RR^n$ is convex, hence contractible to the origin via straight-line homotopy $H(x, t) = (1-t)x$.
 :::
 
 ::: pf-step
@@ -92,15 +92,15 @@ The intersection $U \cap V = S^n \setminus \{N, S\}$ is path-connected for $n \g
 ::: pf-proof
 
 ::: {.pf-step #s3-1}
-Under stereographic projection $\phi \colon U \to \mathbb{R}^n$, the pole $N$ maps to $0 \in \mathbb{R}^n$.
+Under stereographic projection $\phi \colon U \to \RR^n$, the pole $N$ maps to $0 \in \RR^n$.
 :::
 
 ::: {.pf-step #s3-2}
-Thus $U \cap V = U \setminus \{N\} \cong \mathbb{R}^n \setminus \{0\}$.
+Thus $U \cap V = U \setminus \{N\} \cong \RR^n \setminus \{0\}$.
 :::
 
 ::: {.pf-step #s3-3}
-$\mathbb{R}^n \setminus \{0\}$ deformation retracts to $S^{n-1}$ via $x \mapsto \frac{x}{\|x\|}$.
+$\RR^n \setminus \{0\}$ deformation retracts to $S^{n-1}$ via $x \mapsto \frac{x}{\|x\|}$.
 :::
 
 ::: {.pf-step #s3-4}
@@ -108,10 +108,10 @@ For $n \geq 2$, the sphere $S^{n-1}$ has dimension $n-1 \geq 1$, which is path-c
 :::
 
 ::: pf-step
-Therefore, $\mathbb{R}^n \setminus \{0\}$ is path-connected, which implies $U \cap V$ is path-connected.
+Therefore, $\RR^n \setminus \{0\}$ is path-connected, which implies $U \cap V$ is path-connected.
 
 ::: pf-proof
-By steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}, $U \cap V \cong \mathbb{R}^n \setminus \{0\}$; by steps [](#s3-3){.pf-ref} and [](#s3-4){.pf-ref}, $\mathbb{R}^n \setminus \{0\}$ deformation retracts to the path-connected sphere $S^{n-1}$ for $n \ge 2$, so $U \cap V$ is nonempty and path-connected.
+By steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}, $U \cap V \cong \RR^n \setminus \{0\}$; by steps [](#s3-3){.pf-ref} and [](#s3-4){.pf-ref}, $\RR^n \setminus \{0\}$ deformation retracts to the path-connected sphere $S^{n-1}$ for $n \ge 2$, so $U \cap V$ is nonempty and path-connected.
 :::
 
 :::

@@ -31,7 +31,7 @@ The sphere is simply connected, and van Kampen gives the free product of the two
 :::
 
 ::: pf-step
-The fundamental group of $S^1\times S^1$ is $\mathbb Z^2$.
+The fundamental group of $S^1\times S^1$ is $\ZZ^2$.
 
 ::: pf-proof
 Fundamental groups commute with products.
@@ -40,7 +40,7 @@ Fundamental groups commute with products.
 :::
 
 ::: pf-step
-These groups are not isomorphic: $F_2$ is nonabelian whereas $\mathbb Z^2$ is abelian.
+These groups are not isomorphic: $F_2$ is nonabelian whereas $\ZZ^2$ is abelian.
 
 ::: pf-proof
 The two free generators of $F_2$ do not commute.

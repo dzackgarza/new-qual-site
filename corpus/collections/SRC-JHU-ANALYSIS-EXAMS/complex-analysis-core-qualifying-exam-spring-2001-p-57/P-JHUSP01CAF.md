@@ -50,7 +50,7 @@ K=\left\{\sum_{j=1}^n t_j\zeta_j:t_j\geq0,\ \sum_{j=1}^n t_j=1\right\}.
 $$
 It is nonempty and compact: it is the continuous image
 of the nonempty closed, bounded simplex of the coefficient
-vectors $(t_1,\ldots,t_n)$ in $\mathbb R^n$.
+vectors $(t_1,\ldots,t_n)$ in $\RR^n$.
 
 ::: pf
 

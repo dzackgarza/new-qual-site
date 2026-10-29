@@ -57,23 +57,23 @@ By Exercise 27, the image of \(\pi_2(X)\) in \(\pi_2(X,X^1)\) is central. Hence 
 
 For the second assertion take \(X=\mathbb{RP}^2\) with its standard CW structure and \(X^1=S^1\). The action of
 \[
-\pi_1(X)\cong\mathbb Z/2
+\pi_1(X)\cong\ZZ/2
 \]
 on
 \[
-\pi_2(X)\cong\pi_2(S^2)\cong\mathbb Z
+\pi_2(X)\cong\pi_2(S^2)\cong\ZZ
 \]
 is multiplication by \(-1\). Therefore
 \[
-\pi_2'(X)\cong\mathbb Z/(a\sim-a)\cong\mathbb Z/2.
+\pi_2'(X)\cong\ZZ/(a\sim-a)\cong\ZZ/2.
 \]
 On the other hand the pair \((X,X^1)\) is obtained by attaching one \(2\)-cell, so the relative Hurewicz theorem gives
 \[
-\pi_2'(X,X^1)\cong H_2(X,X^1)\cong\mathbb Z.
+\pi_2'(X,X^1)\cong H_2(X,X^1)\cong\ZZ.
 \]
 The induced homomorphism
 \[
-\mathbb Z/2\longrightarrow\mathbb Z
+\ZZ/2\longrightarrow\ZZ
 \]
 must be zero, hence is not injective. This is the required counterexample.
 :::

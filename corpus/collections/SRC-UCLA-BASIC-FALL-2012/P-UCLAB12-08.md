@@ -23,11 +23,11 @@ Let
 \[
 [x,y]=\overline{x}^{\,t}Hy
 \]
-and, for a subspace $U\subseteq\mathbb C^n$, define
+and, for a subspace $U\subseteq\CC^n$, define
 \[
 U^\perp
 =
-\{v\in\mathbb C^n:[u,v]=0\text{ for every }u\in U\}.
+\{v\in\CC^n:[u,v]=0\text{ for every }u\in U\}.
 \]
 
 ::: pf
@@ -43,7 +43,7 @@ Suppose
 \[
 [x,y]=0
 \]
-for every $x\in\mathbb C^n$.
+for every $x\in\CC^n$.
 Then
 \[
 \overline{x}^{\,t}Hy=0
@@ -61,7 +61,7 @@ Thus the form is nondegenerate.
 
 ::: {.pf-step #s1-2}
 
-For every subspace $U\subseteq\mathbb C^n$,
+For every subspace $U\subseteq\CC^n$,
 \[
 \dim U^\perp=n-\dim U.
 \]
@@ -71,7 +71,7 @@ For every subspace $U\subseteq\mathbb C^n$,
 
 Define
 \[
-\Phi:\mathbb C^n\to U^*
+\Phi:\CC^n\to U^*
 \]
 by
 \[
@@ -84,11 +84,11 @@ Then
 
 The map $\Phi$ is onto. Indeed, let $\ell\in U^*$. Extend $\ell$ to a linear functional
 \[
-\widetilde\ell\in(\mathbb C^n)^*.
+\widetilde\ell\in(\CC^n)^*.
 \]
 By nondegeneracy from step [](#s1-1){.pf-ref}, the map
 \[
-\mathbb C^n\to(\mathbb C^n)^*,
+\CC^n\to(\CC^n)^*,
 \qquad
 v\mapsto[x\mapsto[x,v]]
 \]
@@ -176,7 +176,7 @@ H=
 I_m&0
 \end{pmatrix},
 \qquad
-W=\mathbb C^m\oplus0.
+W=\CC^m\oplus0.
 \]
 Then $\det H\ne0$, the matrix $H$ is Hermitian, and
 \[
@@ -227,7 +227,7 @@ I_m&0&0\\
 0&0&1
 \end{pmatrix},
 \qquad
-W=\mathbb C^m\oplus0\oplus0.
+W=\CC^m\oplus0\oplus0.
 \]
 Then $\det H\ne0$, $H$ is Hermitian, and
 \[

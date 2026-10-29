@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) For any $n\in\mathbb N$, show that $p_n(x)=x^n$ is continuous on all of $\mathbb R$. Give the explicit dependence of $\delta$ on $\varepsilon$ and the point of continuity.
+(a) For any $n\in\NN$, show that $p_n(x)=x^n$ is continuous on all of $\RR$. Give the explicit dependence of $\delta$ on $\varepsilon$ and the point of continuity.
 
 (b) Show that $f(x)=\sqrt x$ is continuous on $(0,\infty)$.
 
@@ -31,11 +31,11 @@ may be useful.
 
 Fix
 \[
-n\in\mathbb N
+n\in\NN
 \]
 and
 \[
-a\in\mathbb R.
+a\in\RR.
 \]
 Let
 \[
@@ -221,7 +221,7 @@ Hence
 \[
 \boxed{
 p_n(x)=x^n
-\text{ is continuous at every }a\in\mathbb R}.
+\text{ is continuous at every }a\in\RR}.
 \]
 
 
@@ -236,7 +236,7 @@ the explicit \(\delta\) from step [](#s1-5){.pf-ref}.
 
 ::: {.pf-step #s1-8}
 
-Therefore \(p_n\) is continuous on all of \(\mathbb R\).
+Therefore \(p_n\) is continuous on all of \(\RR\).
 
 
 ::: pf-proof

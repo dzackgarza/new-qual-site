@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and $K\subset U$ compact.
+Let $U\subset\CC$ be open and $K\subset U$ compact.
 
 (a) Prove that there exists a bounded open set $V$ with
 \[
@@ -41,7 +41,7 @@ Since \(K\subset U\), with \(K\) compact and \(U\) open, define
 =
 \operatorname{dist}
 \bigl(
-K,\mathbb C\setminus U
+K,\CC\setminus U
 \bigr).
 \]
 
@@ -57,7 +57,7 @@ One has
 
 ::: pf-proof
 
-The sets \(K\) and \(\mathbb C\setminus U\) are disjoint, \(K\) is compact, and \(\mathbb C\setminus U\) is closed. The distance from a compact set to a disjoint closed set is positive.
+The sets \(K\) and \(\CC\setminus U\) are disjoint, \(K\) is compact, and \(\CC\setminus U\) is closed. The distance from a compact set to a disjoint closed set is positive.
 
 :::
 
@@ -147,7 +147,7 @@ Therefore
 
 ::: pf-proof
 
-If some \(z\in W\) lay in \(\mathbb C\setminus U\), then by definition of \(\delta\),
+If some \(z\in W\) lay in \(\CC\setminus U\), then by definition of \(\delta\),
 \[
 \operatorname{dist}(z,K)\ge\delta,
 \]
@@ -352,7 +352,7 @@ It is a finite sum of terms of the form
 \[
 \frac{c}{a-z},
 \]
-with constants \(a,c\in\mathbb C\).
+with constants \(a,c\in\CC\).
 
 :::
 

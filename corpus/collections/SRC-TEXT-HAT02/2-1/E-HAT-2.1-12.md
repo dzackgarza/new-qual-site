@@ -35,7 +35,7 @@ Definition of chain homotopy:
 
 Let $(C_*, \partial^C)$ and $(D_*, \partial^D)$ be chain complexes. Two chain maps $f, g: C_* \to D_*$ are **chain homotopic** (denoted $f \simeq g$) if there exists a sequence of homomorphisms $P_n: C_n \to D_{n+1}$ such that:
 \[
-f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n \quad \text{for all } n \in \mathbb{Z}.
+f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n \quad \text{for all } n \in \ZZ.
 \]
 
 ::: pf-proof

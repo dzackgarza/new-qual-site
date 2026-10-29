@@ -26,12 +26,12 @@ audit:
 ::: {.problem}
 Prove that the Hardy-Littlewood maximal function $f^*$ for an integrable function $f$ satisfies
 
-$$m(\{x \in \mathbb{R}^d : f^*(x) > \alpha\}) \leq \frac{3^d}{\alpha} \|f\|_{L^1(\mathbb{R}^d)}$$
+$$m(\{x \in \RR^d : f^*(x) > \alpha\}) \leq \frac{3^d}{\alpha} \|f\|_{L^1(\RR^d)}$$
 
 where $\alpha > 0$.
 Recall that
 
-$$f^*(x) = \sup_{x \in B} \frac{1}{m(B)} \int_B |f(y)| \, dy, \quad x \in \mathbb{R}^d$$
+$$f^*(x) = \sup_{x \in B} \frac{1}{m(B)} \int_B |f(y)| \, dy, \quad x \in \RR^d$$
 
 where the supremum is taken over all balls containing the point $x$.
 You may assume the Vitali 3-times Covering Lemma.
@@ -49,7 +49,7 @@ State the covering lemma.
 ::: pf-proof
 
 Vitali $3$-times covering lemma: every finite collection of
-balls in $\mathbb R^d$ has a pairwise disjoint subcollection
+balls in $\RR^d$ has a pairwise disjoint subcollection
 $B_1,\dots,B_N$ such that the union of the whole collection
 is contained in $\bigcup_{j=1}^N3B_j$, where $3B_j$ is the
 concentric ball with three times the radius.
@@ -71,7 +71,7 @@ close, so this does not change $f^*$.
 
 Fix $\alpha>0$ and set
 \[
-E_\alpha:=\{x\in\mathbb R^d:f^*(x)>\alpha\}.
+E_\alpha:=\{x\in\RR^d:f^*(x)>\alpha\}.
 \]
 For each $x\in E_\alpha$, choose an open ball $B_x\ni x$ such that
 \[
@@ -122,7 +122,7 @@ $m(E_\alpha)=\sup\{m(K):K\subset E_\alpha\text{ compact}\}$
 \[
 \boxed{
 m(\{x:f^*(x)>\alpha\})
-\le\frac{3^d}{\alpha}\|f\|_{L^1(\mathbb R^d)}.}
+\le\frac{3^d}{\alpha}\|f\|_{L^1(\RR^d)}.}
 \]
 
 :::

@@ -20,7 +20,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The source does not assume $R$ is a domain, and $\mathbb Z/4\mathbb Z$ is a counterexample. The statement now assumes $R$ is a Noetherian integral domain.
+  note: The source does not assume $R$ is a domain, and $\ZZ/4\ZZ$ is a counterexample. The statement now assumes $R$ is a Noetherian integral domain.
 ---
 
 ::: {.problem}

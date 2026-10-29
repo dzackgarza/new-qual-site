@@ -40,11 +40,11 @@ The interior of the original triangle is one \(2\)-simplex \(\sigma=[v_0,v_1,v_2
 
 The simplicial chain groups are
 \[
-0\longrightarrow C_2\cong\mathbb Z
+0\longrightarrow C_2\cong\ZZ
 \xrightarrow{\partial_2}
-C_1\cong\mathbb Z^3
+C_1\cong\ZZ^3
 \xrightarrow{\partial_1}
-C_0\cong\mathbb Z
+C_0\cong\ZZ
 \longrightarrow0.
 \]
 Since every edge begins and ends at \(v\), \(\partial_1=0\). The oriented boundary of \(\sigma\) is
@@ -59,10 +59,10 @@ Thus, in the indicated bases,
 \]
 The vector \((1,1,-1)\) is primitive and nonzero, so \(\partial_2\) is injective and its cokernel is free of rank \(2\). Hence
 \[
-H_n(X;\mathbb Z)\cong
+H_n(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z^2,&n=1,\\
+\ZZ,&n=0,\\
+\ZZ^2,&n=1,\\
 0,&n\ge2.
 \end{cases}
 \]

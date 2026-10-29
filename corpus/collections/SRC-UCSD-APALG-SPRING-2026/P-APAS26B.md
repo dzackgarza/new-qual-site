@@ -33,7 +33,7 @@ Computation of $A A^H$ and $A^H A$:
 ::: pf-proof
 
 ::: pf-step
-Let the columns of $A$ be $c_1, c_2, \dots, c_n \in \mathbb{R}^m$, where each $c_j = e_{k(j)}$ for some row index $k(j) \in \{1, \dots, m\}$.
+Let the columns of $A$ be $c_1, c_2, \dots, c_n \in \RR^m$, where each $c_j = e_{k(j)}$ for some row index $k(j) \in \{1, \dots, m\}$.
 :::
 
 ::: pf-step
@@ -47,7 +47,7 @@ $$(A A^T)_{ij} = \sum_{k=1}^n A_{ik} A_{jk} = \begin{cases} r_i & \text{if } i =
 
 ::: pf-step
 Therefore:
-$$A A^T = \operatorname{diag}(r_1, r_2, \dots, r_m) \in M_m(\mathbb{R}).$$
+$$A A^T = \operatorname{diag}(r_1, r_2, \dots, r_m) \in M_m(\RR).$$
 :::
 
 :::
@@ -82,12 +82,12 @@ Left Singular Vectors (Orthonormal Basis):
 ::: pf-proof
 
 ::: pf-step
-The left singular vectors $u_i \in \mathbb{R}^m$ are eigenvectors of $A A^T = \operatorname{diag}(r_1, \dots, r_m)$.
+The left singular vectors $u_i \in \RR^m$ are eigenvectors of $A A^T = \operatorname{diag}(r_1, \dots, r_m)$.
 :::
 
 ::: pf-step
 For each row $i$ with $r_i > 0$, the corresponding left singular vector is the standard basis vector:
-$$u_i = e_i = (0, \dots, 0, \underbrace{1}_{i\text{-th}}, 0, \dots, 0)^T \in \mathbb{R}^m.$$
+$$u_i = e_i = (0, \dots, 0, \underbrace{1}_{i\text{-th}}, 0, \dots, 0)^T \in \RR^m.$$
 :::
 
 ::: pf-step
@@ -108,8 +108,8 @@ For each row $i$ with $r_i > 0$, let $S_i = \{j \in \{1, \dots, n\} \mid A_{ij} 
 :::
 
 ::: pf-step
-The right singular vector $v_i \in \mathbb{R}^n$ associated with the singular value $\sigma_i = \sqrt{r_i}$ and left vector $u_i = e_i$ satisfies $A^T u_i = \sigma_i v_i$:
-$$A^T e_i = \text{the } i\text{-th row of } A \text{ as a column vector in } \mathbb{R}^n = \sum_{j \in S_i} \hat{e}_j.$$
+The right singular vector $v_i \in \RR^n$ associated with the singular value $\sigma_i = \sqrt{r_i}$ and left vector $u_i = e_i$ satisfies $A^T u_i = \sigma_i v_i$:
+$$A^T e_i = \text{the } i\text{-th row of } A \text{ as a column vector in } \RR^n = \sum_{j \in S_i} \hat{e}_j.$$
 :::
 
 ::: pf-step
@@ -135,7 +135,7 @@ Thus $\{v_i\}_{i: r_i > 0}$ form an orthonormal set of right singular vectors fo
 
 ::: pf-qed
 Conclusion:
-The non-zero singular values are $\sigma_i = \sqrt{r_i}$ for $r_i > 0$; the left singular vectors are standard basis vectors $e_i \in \mathbb{R}^m$, and the right singular vectors are normalized indicator vectors $v_i = \frac{1}{\sqrt{r_i}} \sum_{j \in S_i} \hat{e}_j \in \mathbb{R}^n$.
+The non-zero singular values are $\sigma_i = \sqrt{r_i}$ for $r_i > 0$; the left singular vectors are standard basis vectors $e_i \in \RR^m$, and the right singular vectors are normalized indicator vectors $v_i = \frac{1}{\sqrt{r_i}} \sum_{j \in S_i} \hat{e}_j \in \RR^n$.
 :::
 
 :::

@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{R}^n \to \mathbb{R}^n$ be a continuous map.
-Suppose that there exists a uniform constant $C$ such that $\|f(\vec{x}) - \vec{x}\| \leq C$ for any $\vec{x} \in \mathbb{R}^n$.
+Let $f : \RR^n \to \RR^n$ be a continuous map.
+Suppose that there exists a uniform constant $C$ such that $\|f(\vec{x}) - \vec{x}\| \leq C$ for any $\vec{x} \in \RR^n$.
 Prove that $f$ is surjective.
 :::
 
@@ -25,7 +25,7 @@ Prove that $f$ is surjective.
 
 ::: pf-step
 
-Fix $y\in\mathbb R^n$ and choose $R>C+\|y\|$.
+Fix $y\in\RR^n$ and choose $R>C+\|y\|$.
 
 ::: pf-proof
 
@@ -83,7 +83,7 @@ Since $y$ was arbitrary, $f$ is surjective.
 
 ::: pf-proof
 
-Apply step [](#s4){.pf-ref} to every $y\in\mathbb R^n$.
+Apply step [](#s4){.pf-ref} to every $y\in\RR^n$.
 
 :::
 

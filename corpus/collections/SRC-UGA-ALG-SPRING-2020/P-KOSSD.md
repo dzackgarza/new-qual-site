@@ -50,7 +50,7 @@ By hypothesis, $\gcd(n, m) = 1$.
 
 ::: pf-step
 
-By Bézout's identity, there exist integers $s, t \in \mathbb{Z}$ such that
+By Bézout's identity, there exist integers $s, t \in \ZZ$ such that
 
 :::
 

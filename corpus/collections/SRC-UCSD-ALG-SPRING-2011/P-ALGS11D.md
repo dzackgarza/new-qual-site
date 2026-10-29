@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ denote a splitting field of $x^7 - 1$ over $\mathbb{Q}$ inside $\mathbb{C}$.
+Let $K$ denote a splitting field of $x^7 - 1$ over $\QQ$ inside $\CC$.
 Determine all subfields of $K$.
-Express each subfield in the form $\mathbb{Q}(\alpha)$ for some $\alpha \in \mathbb{C}$, where you must justify that $\alpha$ is a primitive element for the subfield if it is not obvious.
+Express each subfield in the form $\QQ(\alpha)$ for some $\alpha \in \CC$, where you must justify that $\alpha$ is a primitive element for the subfield if it is not obvious.
 :::
 
 ::: {.solution}
@@ -39,11 +39,11 @@ x^7-1=(x-1)\Phi_7(x),
 \]
 the splitting field is
 \[
-K=\mathbb Q(\zeta).
+K=\QQ(\zeta).
 \]
 The cyclotomic polynomial $\Phi_7$ has degree $6$, and
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong(\mathbb Z/7\mathbb Z)^\times\cong C_6.
+\operatorname{Gal}(K/\QQ)\cong(\ZZ/7\ZZ)^\times\cong C_6.
 \]
 Hence there is exactly one subgroup of each order $1,2,3,6$, so by the Galois correspondence there are exactly four subfields of $K$.
 
@@ -51,7 +51,7 @@ Hence there is exactly one subgroup of each order $1,2,3,6$, so by the Galois co
 
 ::: pf-step
 
-The fields corresponding to the trivial subgroup and the whole Galois group are $K=\mathbb Q(\zeta)$ and $\mathbb Q$.
+The fields corresponding to the trivial subgroup and the whole Galois group are $K=\QQ(\zeta)$ and $\QQ$.
 
 ::: pf-proof
 
@@ -65,7 +65,7 @@ This is the two extreme cases of the Galois correspondence.
 
 The unique cubic subfield is
 \[
-K_3=\mathbb Q(\zeta+\zeta^{-1}).
+K_3=\QQ(\zeta+\zeta^{-1}).
 \]
 
 ::: pf-proof
@@ -75,17 +75,17 @@ Put
 \[
 u=\zeta+\zeta^{-1}.
 \]
-Then $u$ is fixed by conjugation, hence $\mathbb Q(u)$ lies in the fixed field.
+Then $u$ is fixed by conjugation, hence $\QQ(u)$ lies in the fixed field.
 Moreover
 \[
-[\mathbb Q(\zeta):\mathbb Q(u)]=2,
+[\QQ(\zeta):\QQ(u)]=2,
 \]
 because $\zeta$ satisfies
 \[
 X^2-uX+1=0
 \]
-over $\mathbb Q(u)$ and $\zeta\notin\mathbb R$.
-Thus $[\mathbb Q(u):\mathbb Q]=3$, so $u$ is a primitive element for the unique cubic subfield.
+over $\QQ(u)$ and $\zeta\notin\RR$.
+Thus $[\QQ(u):\QQ]=3$, so $u$ is a primitive element for the unique cubic subfield.
 
 :::
 
@@ -95,7 +95,7 @@ Thus $[\mathbb Q(u):\mathbb Q]=3$, so $u$ is a primitive element for the unique 
 
 The unique quadratic subfield is
 \[
-K_2=\mathbb Q(\sqrt{-7}).
+K_2=\QQ(\sqrt{-7}).
 \]
 
 ::: pf-proof
@@ -104,7 +104,7 @@ Let
 \[
 a=\zeta+\zeta^2+\zeta^4,\qquad b=\zeta^3+\zeta^5+\zeta^6.
 \]
-The subgroup of squares $\{1,2,4\}\subset(\mathbb Z/7\mathbb Z)^\times$ has order $3$ and fixes both $a$ and $b$, so it fixes $a-b$.
+The subgroup of squares $\{1,2,4\}\subset(\ZZ/7\ZZ)^\times$ has order $3$ and fixes both $a$ and $b$, so it fixes $a-b$.
 Since
 \[
 a+b=\zeta+\zeta^2+\cdots+\zeta^6=-1,
@@ -122,7 +122,7 @@ Hence
 \[
 ab=(\zeta+\cdots+\zeta^6)+3=-1+3=2.
 \]
-Thus $a-b$ is a square root of $-7$, and $\mathbb Q(a-b)=\mathbb Q(\sqrt{-7})$.
+Thus $a-b$ is a square root of $-7$, and $\QQ(a-b)=\QQ(\sqrt{-7})$.
 Since this field has degree $2$, it is exactly the fixed field of the unique subgroup of order $3$.
 
 :::
@@ -133,7 +133,7 @@ Since this field has degree $2$, it is exactly the fixed field of the unique sub
 
 Therefore the complete list of subfields is
 \[
-\boxed{\mathbb Q,\quad \mathbb Q(\sqrt{-7}),\quad \mathbb Q(\zeta+\zeta^{-1}),\quad \mathbb Q(\zeta)}.
+\boxed{\QQ,\quad \QQ(\sqrt{-7}),\quad \QQ(\zeta+\zeta^{-1}),\quad \QQ(\zeta)}.
 \]
 
 ::: pf-proof

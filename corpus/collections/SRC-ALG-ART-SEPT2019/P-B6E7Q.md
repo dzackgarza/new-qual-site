@@ -19,7 +19,7 @@ Let $G$ be a finite group.
 Adopt the usual notation for the character table of $G$.
 In particular, $C_1 = \{1\}, C_2,\dots,C_n$ are the conjugacy classes and $\chi_1 = \mathbf{1}, \chi_2,\dots,\chi_n$ are the irreducible characters.
 
-a. Let $\rho: G \to GL_n(\mathbb{C})$ be a finite-dimensional representation with associated character $\chi$.
+a. Let $\rho: G \to GL_n(\CC)$ be a finite-dimensional representation with associated character $\chi$.
 Prove that $\ker\rho = \{g \in G \mid \chi(g) = \chi(1)\}$.
 b. Use the row and column orthogonality relations to work out the values of $\alpha,\beta,\gamma$ and $\delta$ in the following character table:
 

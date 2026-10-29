@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\gamma$ be a positively oriented (counterclockwise) piecewise smooth simple closed curve in $\mathbb{C}$ with interior $\Omega_1$ and exterior $\Omega_2$.
+Let $\gamma$ be a positively oriented (counterclockwise) piecewise smooth simple closed curve in $\CC$ with interior $\Omega_1$ and exterior $\Omega_2$.
 Assume $f$ is holomorphic on an open set containing $\gamma \cup \Omega_2$, with $\lim_{z \to \infty} f(z) = A$.
 
 Prove that the Cauchy integral

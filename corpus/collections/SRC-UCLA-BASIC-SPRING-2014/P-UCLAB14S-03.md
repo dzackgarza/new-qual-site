@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Suppose that $A,B\in M_{n,n}(\mathbb C)$ satisfy
+Problem 3. Suppose that $A,B\in M_{n,n}(\CC)$ satisfy
 \[
 AB-BA=A.
 \]
@@ -114,7 +114,7 @@ a contradiction.
 
 ::: pf-proof
 
-Substitute the equality from step [](#s1-4){.pf-ref} into step [](#s1-3){.pf-ref}. Since the matrices are $n\times n$ with $n\geq1$, the scalar $n$ is nonzero in $\mathbb C$.
+Substitute the equality from step [](#s1-4){.pf-ref} into step [](#s1-3){.pf-ref}. Since the matrices are $n\times n$ with $n\geq1$, the scalar $n$ is nonzero in $\CC$.
 
 :::
 

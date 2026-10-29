@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-2B
 kind: problem
-title: Structure of $(\mathbb Z/2012\mathbb Z)^\times$
+title: Structure of $(\ZZ/2012\ZZ)^\times$
 classification:
   areas:
   - prelim

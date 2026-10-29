@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $0 = x_0^{(k)} < x_1^{(k)} < \cdots < x_k^{(k)} = 1$ ($k = 1, 2, \ldots$) and $0 \neq A_j^{(k)} \in \mathbb{R}$ ($j = 0, \ldots, k$, $k = 1, 2, \ldots$). Define for any $f \in C([0, 1])$
+Let $0 = x_0^{(k)} < x_1^{(k)} < \cdots < x_k^{(k)} = 1$ ($k = 1, 2, \ldots$) and $0 \neq A_j^{(k)} \in \RR$ ($j = 0, \ldots, k$, $k = 1, 2, \ldots$). Define for any $f \in C([0, 1])$
 $$
 I[f] = \int_0^1 f(x) \, dx \quad \text{and} \quad I_k[f] = \sum_{j=0}^{k} A_j^{(k)} f(x_j^{(k)}) \quad (k = 1, 2, \ldots).
 $$

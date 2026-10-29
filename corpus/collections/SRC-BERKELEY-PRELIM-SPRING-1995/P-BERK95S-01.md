@@ -22,7 +22,7 @@ audit:
 For each positive integer $n$, define
 \[
 f_n(x)=\cos(nx),
-\qquad x\in\mathbb R.
+\qquad x\in\RR.
 \]
 Prove that the sequence $(f_n)$ has no uniformly convergent subsequence.
 :::

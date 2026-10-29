@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:[0,1]\to\mathbb R$ is continuously differentiable.
+Suppose $f:[0,1]\to\RR$ is continuously differentiable.
 Show that the limit
 \[
 \lim_{n\to\infty} \left(\sum_{k=0}^{n} f\!\left(\frac{k}{n}\right)-n\int_0^1 f(x)\,dx\right)

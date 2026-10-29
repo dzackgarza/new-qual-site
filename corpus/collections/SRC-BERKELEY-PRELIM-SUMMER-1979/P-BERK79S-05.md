@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Give an example of a differentiable function $f:\mathbb R\to\mathbb R$ whose derivative $f'$ is not continuous.
+1. Give an example of a differentiable function $f:\RR\to\RR$ whose derivative $f'$ is not continuous.
 
 2. Let $f$ be differentiable and suppose
    \[

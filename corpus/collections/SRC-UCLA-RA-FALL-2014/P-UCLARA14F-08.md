@@ -21,9 +21,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function. Show that
+Let $f : \CC \to \CC$ be an entire function. Show that
 \[
-|f(z)| \leq C e^{a|z|}, \quad z \in \mathbb{C},
+|f(z)| \leq C e^{a|z|}, \quad z \in \CC,
 \]
 for some constants $C$ and $a$ if and only if we have
 \[
@@ -41,7 +41,7 @@ for some constant $M$.
 Assume first that there are constants $C>0$ and $a\ge0$ such that
 \[
 |f(z)|\le Ce^{a|z|}
-\qquad(z\in\mathbb C).
+\qquad(z\in\CC).
 \]
 Then for every $R>0$ and every $n\ge0$,
 \[
@@ -84,7 +84,7 @@ The growth assumption becomes
 \[
 |f(z)|\le C
 \]
-on all of $\mathbb C$. Liouville's theorem implies that $f$ is constant.
+on all of $\CC$. Liouville's theorem implies that $f$ is constant.
 Hence
 \[
 f^{(n)}(0)=0
@@ -193,7 +193,7 @@ Then
 |f(z)|
 \le
 M e^{M|z|}
-\qquad(z\in\mathbb C)}.
+\qquad(z\in\CC)}.
 \]
 
 

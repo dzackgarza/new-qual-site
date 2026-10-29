@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-05
 kind: problem
-title: $\mathbb Q$ is not a $G_\delta$ subset of $\mathbb R$
+title: $\QQ$ is not a $G_\delta$ subset of $\RR$
 classification:
   areas:
   - prelim
@@ -19,32 +19,32 @@ A subset $E$ of a metric space $X$ is a $G_\delta$ set if $E = \bigcap_{n=1}^\in
 
 Suppose for contradiction that
 \[
-\mathbb Q=\bigcap_{n=1}^{\infty}G_n,
+\QQ=\bigcap_{n=1}^{\infty}G_n,
 \]
-where every $G_n$ is open in $\mathbb R$.
+where every $G_n$ is open in $\RR$.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-Every $G_n$ is dense in $\mathbb R$.
+Every $G_n$ is dense in $\RR$.
 
 
 ::: pf-proof
 
 Since
 \[
-\mathbb Q\subseteq G_n
+\QQ\subseteq G_n
 \]
-for every $n$ and $\mathbb Q$ is dense in $\mathbb R$,
+for every $n$ and $\QQ$ is dense in $\RR$,
 \[
 \overline{G_n}
 \supseteq
-\overline{\mathbb Q}
+\overline{\QQ}
 =
-\mathbb R.
+\RR.
 \]
-Thus $\overline{G_n}=\mathbb R$, so $G_n$ is dense.
+Thus $\overline{G_n}=\RR$, so $G_n$ is dense.
 
 :::
 
@@ -54,7 +54,7 @@ Thus $\overline{G_n}=\mathbb R$, so $G_n$ is dense.
 
 For each $n$, the complement
 \[
-F_n=\mathbb R\setminus G_n
+F_n=\RR\setminus G_n
 \]
 is closed and nowhere dense.
 
@@ -72,7 +72,7 @@ Because $G_n$ is dense by step [](#s1-1){.pf-ref}, no nonempty open interval can
 
 Enumerate the rational numbers as
 \[
-\mathbb Q=\{q_1,q_2,\ldots\}.
+\QQ=\{q_1,q_2,\ldots\}.
 \]
 Then each singleton
 \[
@@ -83,7 +83,7 @@ is closed and nowhere dense.
 
 ::: pf-proof
 
-Singletons are closed in $\mathbb R$. They have empty interior, so they are nowhere dense.
+Singletons are closed in $\RR$. They have empty interior, so they are nowhere dense.
 
 :::
 
@@ -91,9 +91,9 @@ Singletons are closed in $\mathbb R$. They have empty interior, so they are nowh
 
 ::: {.pf-step #s1-4}
 
-Under the assumption that $\mathbb Q=\bigcap_nG_n$,
+Under the assumption that $\QQ=\bigcap_nG_n$,
 \[
-\mathbb R
+\RR
 =
 \left(\bigcup_{n=1}^{\infty}F_n\right)
 \cup
@@ -105,21 +105,21 @@ Under the assumption that $\mathbb Q=\bigcap_nG_n$,
 
 By De Morgan's law,
 \[
-\mathbb R\setminus\mathbb Q
+\RR\setminus\QQ
 =
-\mathbb R\setminus\bigcap_{n=1}^{\infty}G_n
+\RR\setminus\bigcap_{n=1}^{\infty}G_n
 =
-\bigcup_{n=1}^{\infty}(\mathbb R\setminus G_n)
+\bigcup_{n=1}^{\infty}(\RR\setminus G_n)
 =
 \bigcup_{n=1}^{\infty}F_n.
 \]
 Also
 \[
-\mathbb Q
+\QQ
 =
 \bigcup_{m=1}^{\infty}\{q_m\}.
 \]
-Taking the union of $\mathbb Q$ and its complement gives the displayed equality.
+Taking the union of $\QQ$ and its complement gives the displayed equality.
 
 :::
 
@@ -134,7 +134,7 @@ The equality in step [](#s1-4){.pf-ref} contradicts the Baire category theorem.
 
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, every set appearing in the two countable unions of step [](#s1-4){.pf-ref} is closed and nowhere dense.
 The real line with its usual metric is complete.
-Problem 4 therefore implies that $\mathbb R$ cannot be a countable union of such sets.
+Problem 4 therefore implies that $\RR$ cannot be a countable union of such sets.
 
 :::
 
@@ -144,7 +144,7 @@ Problem 4 therefore implies that $\mathbb R$ cannot be a countable union of such
 
 Hence
 \[
-\boxed{\mathbb Q\text{ is not a }G_\delta\text{ subset of }\mathbb R}.
+\boxed{\QQ\text{ is not a }G_\delta\text{ subset of }\RR}.
 \]
 
 

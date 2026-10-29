@@ -26,10 +26,10 @@ audit:
 ---
 
 ::: {.problem}
-9. Suppose that f is in $L ^ { 1 } ( \mathbb { R } )$ . Prove directly (i.e., without citing properties of the Fourier transform) that the function
+9. Suppose that f is in $L ^ { 1 } ( \RR )$ . Prove directly (i.e., without citing properties of the Fourier transform) that the function
 
 $$
-\widehat { f } ( t ) = \int _ { \mathbb { R } } e ^ { - i x t } f ( x ) d x
+\widehat { f } ( t ) = \int _ { \RR } e ^ { - i x t } f ( x ) d x
 $$
 
 is uniformly continuous and ${ \widehat { f } } ( t ) \to 0 { \mathrm { ~ a s ~ } } t \to \infty$

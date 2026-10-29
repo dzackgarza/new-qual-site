@@ -26,7 +26,7 @@ Let
 \[
 K=\{z:3\le |z|\le4\}.
 \]
-The complement $\mathbb C\setminus K$ has two components: the bounded
+The complement $\CC\setminus K$ has two components: the bounded
 component $|z|<3$ and the unbounded component $|z|>4$. The points $2$ and $6$
 lie in these two components respectively. Since $f$ is holomorphic on a
 neighborhood of $K$, Runge's theorem with prescribed pole set therefore gives

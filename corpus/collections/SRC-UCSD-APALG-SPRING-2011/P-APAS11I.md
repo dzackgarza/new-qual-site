@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Show that if $I$ is an ideal in $\mathbb{C}[x_1,\ldots,x_n]$ and $V(I)$ is finite, then $\mathbb{C}[x_1,\ldots,x_n]/I$ is finite dimensional when considered as a vector space of $\mathbb{C}$.
+(a) Show that if $I$ is an ideal in $\CC[x_1,\ldots,x_n]$ and $V(I)$ is finite, then $\CC[x_1,\ldots,x_n]/I$ is finite dimensional when considered as a vector space of $\CC$.
 
 (b) Find a reduced Gröbner basis for $I=\langle x^2+xy+y,\ xy+y^2\rangle$ with respect to the graded lexicographic order where $x>y$.
 
@@ -22,7 +22,7 @@ review: draft
 :::
 
 ::: {.solution}
-Let $R=\mathbb C[x_1,\ldots,x_n]$.
+Let $R=\CC[x_1,\ldots,x_n]$.
 
 For (a), suppose
 \[
@@ -34,9 +34,9 @@ By the Nullstellensatz,
 \]
 where each $\mathfrak m_{a_j}$ is the corresponding maximal ideal. Distinct maximal ideals are comaximal, so by the Chinese remainder theorem
 \[
-R/\sqrt I\cong \prod_{j=1}^r R/\mathfrak m_{a_j}\cong \mathbb C^r.
+R/\sqrt I\cong \prod_{j=1}^r R/\mathfrak m_{a_j}\cong \CC^r.
 \]
-Thus $R/\sqrt I$ is finite-dimensional over $\mathbb C$.
+Thus $R/\sqrt I$ is finite-dimensional over $\CC$.
 
 Since $R/I$ is Noetherian, the ideal $\sqrt I/I$ is finitely generated. Every one of its generators is nilpotent, so some power of the whole ideal is zero; equivalently, there exists $N$ such that
 \[
@@ -46,7 +46,7 @@ Hence $R/I$ is a quotient of $R/(\sqrt I)^N$. The latter has a finite filtration
 \[
 R/(\sqrt I)^N\supset \sqrt I/(\sqrt I)^N\supset\cdots\supset (\sqrt I)^{N-1}/(\sqrt I)^N\supset0,
 \]
-and each successive quotient is a finitely generated module over $R/\sqrt I$, hence finite-dimensional over $\mathbb C$. Therefore $R/(\sqrt I)^N$, and consequently $R/I$, is finite-dimensional over $\mathbb C$.
+and each successive quotient is a finitely generated module over $R/\sqrt I$, hence finite-dimensional over $\CC$. Therefore $R/(\sqrt I)^N$, and consequently $R/I$, is finite-dimensional over $\CC$.
 
 For (b), with graded lexicographic order $x>y$, a reduced Gröbner basis is
 \[

@@ -13,14 +13,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$.
-Prove that $A$ is Hermitian if and only if $x^HAx\in\mathbb{R}$ for all $x\in\mathbb{C}^n$.
+Let $A\in M_n(\CC)=\CC^{n\times n}$.
+Prove that $A$ is Hermitian if and only if $x^HAx\in\RR$ for all $x\in\CC^n$.
 
 Note: $x^H=\overline{x^T}$.
 :::
 
 ::: {.solution}
-If $A$ is Hermitian, then for every $x\in\mathbb C^n$,
+If $A$ is Hermitian, then for every $x\in\CC^n$,
 \[
 \overline{x^HAx}=x^HA^Hx=x^HAx,
 \]
@@ -28,7 +28,7 @@ so $x^HAx$ is real.
 
 Conversely, suppose
 \[
-x^HAx\in\mathbb R
+x^HAx\in\RR
 \]
 for every $x$. Then
 \[

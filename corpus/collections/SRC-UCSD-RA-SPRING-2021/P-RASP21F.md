@@ -104,9 +104,9 @@ Show that closedness of $Y$ is necessary.
 
 Take
 \[
-X=\mathbb R,
+X=\RR,
 \qquad
-Y=\left\{\frac1n:n\in\mathbb N\right\}.
+Y=\left\{\frac1n:n\in\NN\right\}.
 \]
 Then $Y$ is not closed in $X$, since $0\in\overline Y\setminus Y$. In its subspace topology, $Y$ is discrete. Let $\mu$ be counting measure on $Y$.
 
@@ -120,7 +120,7 @@ But
 \[
 K:=\{0\}\cup Y
 \]
-is compact in $\mathbb R$, while
+is compact in $\RR$, while
 \[
 \nu(K)=\#Y=\infty.
 \]

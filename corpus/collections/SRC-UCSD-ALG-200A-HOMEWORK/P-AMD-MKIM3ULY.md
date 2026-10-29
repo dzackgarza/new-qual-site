@@ -49,11 +49,11 @@ Every element $g\in G$ can be written
 \[
 g=x^a z
 \]
-for some $a\in\mathbb Z$ and $z\in Z(G)$.
+for some $a\in\ZZ$ and $z\in Z(G)$.
 
 ::: pf-proof
 
-Since $gZ(G)$ belongs to the cyclic quotient, there is $a\in\mathbb Z$ such that
+Since $gZ(G)$ belongs to the cyclic quotient, there is $a\in\ZZ$ such that
 \[
 gZ(G)=(xZ(G))^a=x^aZ(G).
 \]
@@ -87,7 +87,7 @@ g=x^az,
 \qquad
 h=x^bw,
 \]
-with $a,b\in\mathbb Z$ and $z,w\in Z(G)$.
+with $a,b\in\ZZ$ and $z,w\in Z(G)$.
 Since $z$ and $w$ commute with every element of $G$,
 \[
 \begin{aligned}

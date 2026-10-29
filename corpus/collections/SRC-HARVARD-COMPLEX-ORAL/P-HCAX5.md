@@ -64,7 +64,7 @@ e^{2ix}=-1,
 so
 \[
 \boxed{z=\frac\pi2+k\pi,
-\qquad k\in\mathbb Z.}
+\qquad k\in\ZZ.}
 \]
 Conversely, $\cos(\frac\pi2+k\pi)=0$. These zeros are simple because
 \[

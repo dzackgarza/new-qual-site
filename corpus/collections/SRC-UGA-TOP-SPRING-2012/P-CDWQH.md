@@ -45,7 +45,7 @@ A singular \(0\)-simplex is a continuous map
 Since \(\Delta^0\) consists of one point, giving such a map is exactly the same as choosing a point \(x\in X\). Write the corresponding generator of \(C_0(X)\) as \([x]\). Thus every \(0\)-chain has the form
 \[
 c=\sum_{i=1}^r n_i[x_i],
-\qquad n_i\in\mathbb Z.
+\qquad n_i\in\ZZ.
 \]
 
 :::
@@ -56,7 +56,7 @@ c=\sum_{i=1}^r n_i[x_i],
 
 Define the augmentation homomorphism
 \[
-\varepsilon:C_0(X)\to\mathbb Z,
+\varepsilon:C_0(X)\to\ZZ,
 \qquad
 \varepsilon\left(\sum_i n_i[x_i]\right)=\sum_i n_i.
 \]
@@ -167,20 +167,20 @@ is step [](#s2){.pf-ref}, and the reverse inclusion is step [](#s4){.pf-ref}.
 
 The augmentation induces an isomorphism
 \[
-\boxed{H_0(X;\mathbb Z)\cong\mathbb Z}.
+\boxed{H_0(X;\ZZ)\cong\ZZ}.
 \]
 
 ::: pf-proof
 
 Since \(C_{-1}(X)=0\), the boundary map out of \(C_0(X)\) is zero, so
 \[
-H_0(X;\mathbb Z)
+H_0(X;\ZZ)
 =
 \frac{C_0(X)}{\operatorname{im}\partial_1}.
 \]
 By step [](#s5){.pf-ref},
 \[
-H_0(X;\mathbb Z)
+H_0(X;\ZZ)
 =
 \frac{C_0(X)}{\ker\varepsilon}.
 \]
@@ -192,7 +192,7 @@ Hence the first isomorphism theorem gives
 \[
 \frac{C_0(X)}{\ker\varepsilon}
 \cong
-\mathbb Z.
+\ZZ.
 \]
 Explicitly, the isomorphism sends the homology class of a \(0\)-chain to the sum of its coefficients, and its inverse sends
 \[

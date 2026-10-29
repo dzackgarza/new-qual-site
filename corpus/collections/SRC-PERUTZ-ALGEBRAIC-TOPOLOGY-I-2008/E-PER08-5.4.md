@@ -32,7 +32,7 @@ Fix basepoints $x\in X$ and $\tilde x\in p^{-1}(x)$.
 4. If $\tilde x'$ also lies in $p^{-1}(x)$, then $p_*(\pi_1(\widetilde X,\tilde x'))$ and $p_*(\pi_1(\widetilde X,\tilde x))$ are conjugate subgroups of $\pi_1(X,x)$.
 5. All conjugates of $p_*(\pi_1(\widetilde X,\tilde x))$ arise in this way.
 
-The notes prove this lemma in outline: (1) exactly as unique path lifting for $\mathbb{R}\to S^1$, and similarly (2); (3) by lifting a homotopy rel endpoints between $p_*\gamma_0$ and $p_*\gamma_1$ to $\widetilde X$; (4) by choosing a path $\gamma$ in $\widetilde X$ from $\tilde x'$ to $\tilde x$, so that $p_*(\pi_1(\widetilde X,\tilde x'))=(p_*\gamma)\cdot p_*(\pi_1(\widetilde X,\tilde x))\cdot(p_*\gamma)^{-1}$; (5) from (1).
+The notes prove this lemma in outline: (1) exactly as unique path lifting for $\RR\to S^1$, and similarly (2); (3) by lifting a homotopy rel endpoints between $p_*\gamma_0$ and $p_*\gamma_1$ to $\widetilde X$; (4) by choosing a path $\gamma$ in $\widetilde X$ from $\tilde x'$ to $\tilde x$, so that $p_*(\pi_1(\widetilde X,\tilde x'))=(p_*\gamma)\cdot p_*(\pi_1(\widetilde X,\tilde x))\cdot(p_*\gamma)^{-1}$; (5) from (1).
 Write out the missing details.
 :::
 

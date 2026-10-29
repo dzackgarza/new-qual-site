@@ -36,7 +36,7 @@ You must justify rigorously that there is a point that is closest, that it is un
 
 Let
 \[
-C=\{(x,y)\in\mathbb R^2:x^4+y^4=2\}.
+C=\{(x,y)\in\RR^2:x^4+y^4=2\}.
 \]
 
 ::: pf

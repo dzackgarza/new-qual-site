@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire and nowhere zero.
+Let $f:\CC\to\CC$ be entire and nowhere zero.
 For $r>0$:
 
 1. Show that, with the circle $|z|=r$ traversed counterclockwise,
@@ -162,7 +162,7 @@ Every nonconstant complex polynomial has a zero.
 It is enough to treat a monic polynomial, since dividing a nonzero
 polynomial by its leading coefficient does not change its zeros. Let
 $p$ be monic of degree $n\ge1$ and suppose for contradiction that $p$
-has no zero in $\mathbb C$. Then step [](#s1-3){.pf-ref}, applied to $f=p$, gives
+has no zero in $\CC$. Then step [](#s1-3){.pf-ref}, applied to $f=p$, gives
 $$
 \min_{|z|=r}|p(z)|\le |p(0)|=|a_0|
 $$

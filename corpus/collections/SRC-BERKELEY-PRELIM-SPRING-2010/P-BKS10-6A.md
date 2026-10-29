@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-How many subfields does the splitting field of $x^5-2$ over $\mathbb Q$ have?
+How many subfields does the splitting field of $x^5-2$ over $\QQ$ have?
 :::
 
 ::: {.solution}

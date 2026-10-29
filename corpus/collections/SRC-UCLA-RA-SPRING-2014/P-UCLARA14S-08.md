@@ -124,7 +124,7 @@ the Weierstrass M-test gives uniform convergence of the tail on the closed disk.
 
 ::: {.pf-step #s1-3}
 
-The product defining $f$ converges uniformly on compact subsets of $\mathbb C$ to an entire function.
+The product defining $f$ converges uniformly on compact subsets of $\CC$ to an entire function.
 
 
 ::: pf-proof
@@ -157,7 +157,7 @@ shows that the full product converges uniformly on $|z|\le R$ to a holomorphic f
 
 ::: {.pf-step #s1-4}
 
-If $z\notin\mathbb N_{>0}$, then
+If $z\notin\NN_{>0}$, then
 \[
 f(z)\ne0.
 \]

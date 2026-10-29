@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\varphi:\mathbb R\to\mathbb R$ be continuous with compact support.
+Let $\varphi:\RR\to\RR$ be continuous with compact support.
 
 (a) If $1\le p\le q\le\infty$, prove that there is a constant $A$ such that
 \[
@@ -50,8 +50,8 @@ For $1\le p<\infty$, Minkowski's integral inequality gives
 $$
 \begin{aligned}
 \|f*\varphi\|_p
-&=\left\|\int_{\mathbb R}\varphi(y)f(\cdot-y)\,dy\right\|_p\\
-&\le\int_{\mathbb R}|\varphi(y)|\,\|f(\cdot-y)\|_p\,dy\\
+&=\left\|\int_{\RR}\varphi(y)f(\cdot-y)\,dy\right\|_p\\
+&\le\int_{\RR}|\varphi(y)|\,\|f(\cdot-y)\|_p\,dy\\
 &=\|\varphi\|_1\|f\|_p.
 \end{aligned}
 $$
@@ -111,7 +111,7 @@ $$
 $$
 so $\psi\in C_c$ and
 $$
-(\psi*\varphi)(0)=\int_{\mathbb R}|\varphi(y)|^2\,dy>0.
+(\psi*\varphi)(0)=\int_{\RR}|\varphi(y)|^2\,dy>0.
 $$
 Thus $h:=\psi*\varphi$ is not identically zero.
 

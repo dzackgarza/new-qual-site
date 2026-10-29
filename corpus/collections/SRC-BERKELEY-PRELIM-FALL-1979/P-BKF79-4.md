@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF79-4
 kind: problem
-title: Reduce polynomials modulo the ideal $(7,x-3)$ in $\mathbb Z[x]$
+title: Reduce polynomials modulo the ideal $(7,x-3)$ in $\ZZ[x]$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $I=(7,x-3)$ in $\mathbb Z[x]$.
+Let $I=(7,x-3)$ in $\ZZ[x]$.
 
-1. Prove that for every $r\in\mathbb Z[x]$ there is an integer $\alpha$ with $0\le\alpha\le6$ such that
+1. Prove that for every $r\in\ZZ[x]$ there is an integer $\alpha$ with $0\le\alpha\le6$ such that
 \[
 r-\alpha\in I.
 \]

@@ -33,7 +33,7 @@ $$
 
 ::: pf-proof
 
-We regard $S^n$ as the unit sphere in $\mathbb R^{n+1}$. The only issue is whether the denominator can vanish.
+We regard $S^n$ as the unit sphere in $\RR^{n+1}$. The only issue is whether the denominator can vanish.
 
 :::
 

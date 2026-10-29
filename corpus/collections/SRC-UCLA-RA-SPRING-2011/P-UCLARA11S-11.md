@@ -15,7 +15,7 @@ f(s)=\int_0^\infty \frac{x^{s-1}}{e^x-1}\,dx.
 \]
 Show that $f$ has an analytic continuation to
 \[
-\{s\in\mathbb C:\operatorname{Re}s>0,\ s\ne1\}
+\{s\in\CC:\operatorname{Re}s>0,\ s\ne1\}
 \]
 with a simple pole at $s=1$.
 Compute the residue at $s=1$.
@@ -136,7 +136,7 @@ is entire.
 
 ::: pf-proof
 
-Fix a compact set $K\subset\mathbb C$. Choose $A>0$ such that
+Fix a compact set $K\subset\CC$. Choose $A>0$ such that
 \[
 \operatorname{Re}s\le A
 \qquad

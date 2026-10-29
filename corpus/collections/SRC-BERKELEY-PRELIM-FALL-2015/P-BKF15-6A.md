@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-In the Euclidean space $\mathbb { R } ^ { 4 }$ , consider the “hyper-ellipsoid” $2 x ^ { 2 } + 3 y ^ { 2 } + 4 z ^ { 2 } + 5 u ^ { 2 } = 1$ . Does there exist a 3-dimensional subspace passing through the origin which intersects the ellipsoid in a sphere?
+In the Euclidean space $\RR ^ { 4 }$ , consider the “hyper-ellipsoid” $2 x ^ { 2 } + 3 y ^ { 2 } + 4 z ^ { 2 } + 5 u ^ { 2 } = 1$ . Does there exist a 3-dimensional subspace passing through the origin which intersects the ellipsoid in a sphere?
 :::
 
 ::: {.solution}

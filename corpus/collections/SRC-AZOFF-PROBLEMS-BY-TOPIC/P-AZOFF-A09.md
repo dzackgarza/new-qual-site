@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $E \subset [ 0 , 1 ]$ is uncountable, then there is some $t \in \mathbb { R }$ such that both $E \cap ( - \infty , t )$ and $E \cap ( t , \infty )$ are uncountable.
+Show that if $E \subset [ 0 , 1 ]$ is uncountable, then there is some $t \in \RR$ such that both $E \cap ( - \infty , t )$ and $E \cap ( t , \infty )$ are uncountable.
 :::
 
 ::: {.solution}

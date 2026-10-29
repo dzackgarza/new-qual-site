@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f(z)$ is holomorphic on all of $\mathbb{C}$ except for a pole at $z=0$. Prove that
+Suppose that $f(z)$ is holomorphic on all of $\CC$ except for a pole at $z=0$. Prove that
 
 $$
 \lim_{n\to\infty}\frac1n\sum_{k=1}^n f\left(\frac1ne^{2\pi ik/n}\right)

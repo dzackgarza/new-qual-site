@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $X$ is a 1-connected CW complex whose homology groups are $\mathbb{Z}$ in dimension 0, $\mathbb{Z}^2$ in dimension 3, and zero otherwise.
+Suppose $X$ is a 1-connected CW complex whose homology groups are $\ZZ$ in dimension 0, $\ZZ^2$ in dimension 3, and zero otherwise.
 By constructing a map $S^3 \vee S^3 \to X$, show that $X$ is homotopy-equivalent to $S^3 \vee S^3$.
 :::
 
@@ -33,7 +33,7 @@ For a simply connected space, the degree-$2$ Hurewicz map $\pi_2(X)\to H_2(X)$ i
 ::: {.pf-step #s2}
 Hence $X$ is $2$-connected, and Hurewicz gives
 $$
-\pi_3(X)\xrightarrow{\sim}H_3(X)\cong\mathbb Z^2.
+\pi_3(X)\xrightarrow{\sim}H_3(X)\cong\ZZ^2.
 $$
 
 ::: pf-proof

@@ -36,7 +36,7 @@ The representation holds on $\Re(s)>0$.
 
 ::: pf-step
 
-For $\Re(s) > 1$ and $M \in \mathbb{N}$, apply Abel summation (integration by parts):
+For $\Re(s) > 1$ and $M \in \NN$, apply Abel summation (integration by parts):
     $$\sum_{n=1}^M n^{-s} = \int_{1^-}^M x^{-s}\,d\lfloor x \rfloor = \frac{\lfloor M \rfloor}{M^s} + s \int_1^M \frac{\lfloor x \rfloor}{x^{s+1}}\,dx = M^{1-s} + s \int_1^M \frac{x - \{x\}}{x^{s+1}}\,dx.$$
 
 :::

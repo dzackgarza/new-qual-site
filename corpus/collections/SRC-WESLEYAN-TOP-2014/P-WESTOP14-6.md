@@ -142,11 +142,11 @@ The cellular chain complex of $X_1$ is
 $$
 0
 \longrightarrow
-\mathbb Z
+\ZZ
 \xrightarrow{\partial_2}
-\mathbb Z^3
+\ZZ^3
 \xrightarrow{0}
-\mathbb Z
+\ZZ
 \longrightarrow
 0,
 $$
@@ -201,13 +201,13 @@ $$
 Hence
 $$
 \boxed{
-H_0(X_1;\mathbb Z)\cong\mathbb Z,
+H_0(X_1;\ZZ)\cong\ZZ,
 \quad
-H_1(X_1;\mathbb Z)
+H_1(X_1;\ZZ)
 \cong
-\mathbb Z^2\oplus\mathbb Z/2,
+\ZZ^2\oplus\ZZ/2,
 \quad
-H_k(X_1;\mathbb Z)=0
+H_k(X_1;\ZZ)=0
 \text{ for }k\ge2.}
 $$
 
@@ -216,7 +216,7 @@ $$
 
 The map
 $$
-\partial_2:\mathbb Z\to\mathbb Z^3
+\partial_2:\ZZ\to\ZZ^3
 $$
 is injective, so
 $$
@@ -226,14 +226,14 @@ Also
 $$
 H_1(X_1)
 =
-\mathbb Z^3/
+\ZZ^3/
 \langle(2,0,0)\rangle
 \cong
-\mathbb Z^2\oplus\mathbb Z/2.
+\ZZ^2\oplus\ZZ/2.
 $$
 The complex is connected, so
 $$
-H_0(X_1)\cong\mathbb Z.
+H_0(X_1)\cong\ZZ.
 $$
 There are no cells above dimension
 $$
@@ -403,13 +403,13 @@ $$
 The homology of $X_2$ is
 $$
 \boxed{
-H_0(X_2;\mathbb Z)\cong\mathbb Z,
+H_0(X_2;\ZZ)\cong\ZZ,
 \quad
-H_1(X_2;\mathbb Z)
+H_1(X_2;\ZZ)
 \cong
-\mathbb Z\oplus\mathbb Z/2,
+\ZZ\oplus\ZZ/2,
 \quad
-H_k(X_2;\mathbb Z)=0
+H_k(X_2;\ZZ)=0
 \text{ for }k\ge2.}
 $$
 
@@ -449,7 +449,7 @@ H_1(X_2)
 \langle u,v\rangle/
 \langle2v\rangle
 \cong
-\mathbb Z\oplus\mathbb Z/2.
+\ZZ\oplus\ZZ/2.
 $$
 The vector
 $$
@@ -465,7 +465,7 @@ H_2(X_2)=0.
 $$
 The quotient is connected, giving
 $$
-H_0(X_2)\cong\mathbb Z.
+H_0(X_2)\cong\ZZ.
 $$
 
 :::
@@ -598,11 +598,11 @@ vertex classes displayed.
 
 The cellular chain complex for $X_3$ has
 $$
-C_2\cong\mathbb Z,
+C_2\cong\ZZ,
 \qquad
-C_1\cong\mathbb Z^2,
+C_1\cong\ZZ^2,
 \qquad
-C_0\cong\mathbb Z^2,
+C_0\cong\ZZ^2,
 $$
 with
 $$
@@ -674,9 +674,9 @@ $$
 The homology of $X_3$ is
 $$
 \boxed{
-H_0(X_3;\mathbb Z)\cong\mathbb Z,
+H_0(X_3;\ZZ)\cong\ZZ,
 \qquad
-H_k(X_3;\mathbb Z)=0
+H_k(X_3;\ZZ)=0
 \text{ for every }k\ge1.}
 $$
 
@@ -705,7 +705,7 @@ H_2(X_3)=0.
 $$
 The $1$-skeleton is connected, so
 $$
-H_0(X_3)\cong\mathbb Z.
+H_0(X_3)\cong\ZZ.
 $$
 
 :::
@@ -792,12 +792,12 @@ $$
 \hline
 X_1&
 \langle a,b,c\mid abacb^{-1}c^{-1}\rangle&
-\mathbb Z^2\oplus\mathbb Z/2&
+\ZZ^2\oplus\ZZ/2&
 \text{yes, }\#^3\mathbb{RP}^2
 \\
 X_2&
 \langle u,v\mid u^2v^2\rangle&
-\mathbb Z\oplus\mathbb Z/2&
+\ZZ\oplus\ZZ/2&
 \text{yes, Klein bottle}
 \\
 X_3&
@@ -808,7 +808,7 @@ X_3&
 $$
 with
 $$
-H_0(X_i)\cong\mathbb Z
+H_0(X_i)\cong\ZZ
 $$
 for all three spaces and all other positive-dimensional homology groups
 zero except the displayed

@@ -13,15 +13,15 @@ review: draft
 ---
 
 ::: {.problem}
-Show that there is an analytic function $f$ in $\mathbb{C} \setminus [-1, 1]$ such that $(f(z))^2 = z^2 - 1$.
-Does it extend analytically to $\mathbb{C}_\infty \setminus [-1, 1]$?
+Show that there is an analytic function $f$ in $\CC \setminus [-1, 1]$ such that $(f(z))^2 = z^2 - 1$.
+Does it extend analytically to $\CC_\infty \setminus [-1, 1]$?
 How many such functions are there?
 :::
 
 ::: {.solution}
 Let
 \[
-G=\mathbb C\setminus[-1,1],
+G=\CC\setminus[-1,1],
 \qquad q(z)=z^2-1.
 \]
 The function $q$ is holomorphic and nonvanishing on $G$. A nonvanishing
@@ -39,7 +39,7 @@ characterized by $f(z)/z\to1$ as $z\to\infty$.
 
 As an ordinary complex-valued holomorphic function, $f$ does not extend
 holomorphically across $\infty$, since $f(z)\sim z$. It does extend
-meromorphically to $\mathbb C_\infty\setminus[-1,1]$, with a simple pole at
+meromorphically to $\CC_\infty\setminus[-1,1]$, with a simple pole at
 $\infty$.
 
 There are exactly two holomorphic square roots. Indeed, if $f_1^2=f_2^2=q$,

@@ -114,7 +114,7 @@ $$
 &<\varepsilon.
 \end{aligned}
 $$
-Thus $(I_n(f))$ is Cauchy in $\mathbb R$.
+Thus $(I_n(f))$ is Cauchy in $\RR$.
 
 :::
 

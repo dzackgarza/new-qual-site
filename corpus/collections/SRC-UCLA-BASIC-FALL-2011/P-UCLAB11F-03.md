@@ -30,7 +30,7 @@ Let $C\subseteq[0,1]$ be the middle-thirds Cantor set. Every point of $C$ has a 
 
 Let
 \[
-\Sigma=\{0,2\}^{\mathbb N}.
+\Sigma=\{0,2\}^{\NN}.
 \]
 For each sequence
 \[
@@ -140,7 +140,7 @@ is uncountable.
 
 Fix one sequence $a_0\in\Sigma$ and define
 \[
-F_{a_0}=E_{a_0}\cup(\mathbb R\setminus C),
+F_{a_0}=E_{a_0}\cup(\RR\setminus C),
 \]
 while for $a\ne a_0$ define
 \[
@@ -148,13 +148,13 @@ F_a=E_a.
 \]
 Then the sets $F_a$ are pairwise disjoint and
 \[
-\mathbb R=\bigcup_{a\in\Sigma}F_a.
+\RR=\bigcup_{a\in\Sigma}F_a.
 \]
 
 
 ::: pf-proof
 
-The sets $E_a$ partition $C$ by step [](#s1-2){.pf-ref}. The set $\mathbb R\setminus C$ is disjoint from every $E_a$, so adjoining it to exactly one member of the partition preserves pairwise disjointness and changes the union from $C$ to all of $\mathbb R$.
+The sets $E_a$ partition $C$ by step [](#s1-2){.pf-ref}. The set $\RR\setminus C$ is disjoint from every $E_a$, so adjoining it to exactly one member of the partition preserves pairwise disjointness and changes the union from $C$ to all of $\RR$.
 
 :::
 
@@ -186,7 +186,7 @@ so $F_{a_0}$ is uncountable as well. Step [](#s1-4){.pf-ref} shows that the inde
 Therefore
 \[
 \boxed{
-\mathbb R
+\RR
 \text{ is a union of uncountably many pairwise disjoint uncountable subsets}
 }.
 \]

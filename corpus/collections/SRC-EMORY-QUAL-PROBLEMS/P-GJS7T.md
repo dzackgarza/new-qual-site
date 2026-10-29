@@ -31,7 +31,7 @@ audit:
 
 ::: {.problem}
 Prove that any square matrix is conjugate to its transpose matrix.
-(You may prove it over $\mathbb{C}$).
+(You may prove it over $\CC$).
 :::
 
 ::: {.solution}
@@ -91,7 +91,7 @@ QAQ^{-1}
 =A^{\mathsf T}.
 $$
 This is the required conjugacy, in particular over
-$\mathbb C$. The empty matrix, if allowed, is
+$\CC$. The empty matrix, if allowed, is
 its own transpose and needs no blocks.
 :::
 
@@ -101,7 +101,7 @@ its own transpose and needs no blocks.
 :::
 
 ::: {.solution}
-We work over $\mathbb{C}$, as the problem permits.
+We work over $\CC$, as the problem permits.
 
 ::: pf
 

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $R = \mathbb{Z}[\sqrt{-6}]$.
+Let $R = \ZZ[\sqrt{-6}]$.
 
 (a) Prove that 3 is an irreducible element of $R$ which is not prime.
 
@@ -89,7 +89,7 @@ We have
 (\sqrt{-6})^2=-6=3(-2),
 \]
 so $3$ divides $(\sqrt{-6})^2$.
-But $3$ does not divide $\sqrt{-6}$ in $R$: if $\sqrt{-6}=3(a+b\sqrt{-6})$, then comparison of coefficients gives $3b=1$, impossible for $b\in\mathbb Z$.
+But $3$ does not divide $\sqrt{-6}$ in $R$: if $\sqrt{-6}=3(a+b\sqrt{-6})$, then comparison of coefficients gives $3b=1$, impossible for $b\in\ZZ$.
 Thus $3$ is irreducible but not prime.
 
 :::
@@ -128,7 +128,7 @@ The ideal $I$ is not principal.
 ::: pf-proof
 
 The quotient $R/I\cong\mathbb F_3$ has three elements, so $[R:I]=3$ as additive groups.
-If $I=(\alpha)$ for some nonzero $\alpha=a+b\sqrt{-6}$, multiplication by $\alpha$ on the free abelian group $R=\mathbb Z\oplus\mathbb Z\sqrt{-6}$ has matrix
+If $I=(\alpha)$ for some nonzero $\alpha=a+b\sqrt{-6}$, multiplication by $\alpha$ on the free abelian group $R=\ZZ\oplus\ZZ\sqrt{-6}$ has matrix
 \[
 \begin{pmatrix}a&-6b\\ b&a\end{pmatrix},
 \]

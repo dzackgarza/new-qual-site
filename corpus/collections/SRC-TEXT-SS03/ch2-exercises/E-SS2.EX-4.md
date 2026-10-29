@@ -18,15 +18,15 @@ audit:
 ---
 
 ::: {.exercise}
-4. Prove that for all $\xi \in \mathbb { C }$ we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ { \infty } e ^ { - \pi x ^ { 2 } } e ^ { 2 \pi i x \xi } d x .$
+4. Prove that for all $\xi \in \CC$ we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ { \infty } e ^ { - \pi x ^ { 2 } } e ^ { 2 \pi i x \xi } d x .$
 :::
 
 ::: {.solution}
-Define, for $\xi\in\mathbb C$,
+Define, for $\xi\in\CC$,
 \[
 F(\xi)=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
 \]
-For $\xi$ in any compact subset of $\mathbb C$, the integrand and all its $\xi$-derivatives are dominated by a function of the form
+For $\xi$ in any compact subset of $\CC$, the integrand and all its $\xi$-derivatives are dominated by a function of the form
 \[
 C_N(1+|x|)^N e^{-\pi x^2+C|x|},
 \]
@@ -55,7 +55,7 @@ Thus
 \[
 \frac{d}{d\xi}\left(e^{\pi\xi^2}F(\xi)\right)=0,
 \]
-so $e^{\pi\xi^2}F(\xi)$ is constant on $\mathbb C$. At $\xi=0$,
+so $e^{\pi\xi^2}F(\xi)$ is constant on $\CC$. At $\xi=0$,
 \[
 F(0)=\int_{-\infty}^{\infty}e^{-\pi x^2}\,dx=1.
 \]
@@ -63,5 +63,5 @@ Therefore
 \[
 \boxed{F(\xi)=e^{-\pi\xi^2}}
 \]
-for every $\xi\in\mathbb C$.
+for every $\xi\in\CC$.
 :::

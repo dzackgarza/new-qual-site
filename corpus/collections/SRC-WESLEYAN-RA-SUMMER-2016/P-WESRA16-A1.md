@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^d\to[0,1]$ be Lebesgue measurable and set
+Let $f:\RR^d\to[0,1]$ be Lebesgue measurable and set
 \[
 W_n=\{x:2^{-n}\le f(x)\le1-2^{-n}\}.
 \]
 Prove that either
 
-1. there is a measurable $X\subset\mathbb R^d$ such that $f=\mathbf1_X$ almost everywhere, or
+1. there is a measurable $X\subset\RR^d$ such that $f=\mathbf1_X$ almost everywhere, or
 
 2. $\lambda(W_n)>0$ for some $n$.
 :::
@@ -31,7 +31,7 @@ Prove that either
 
 Let
 $$
-M=\{x\in\mathbb R^d:0<f(x)<1\}.
+M=\{x\in\RR^d:0<f(x)<1\}.
 $$
 
 ::: pf
@@ -90,7 +90,7 @@ $$
 
 ::: {.pf-step #s1-3}
 
-If $\lambda(W_n)=0$ for every $n$, then there is a measurable set $X\subseteq\mathbb R^d$ such that
+If $\lambda(W_n)=0$ for every $n$, then there is a measurable set $X\subseteq\RR^d$ such that
 $$
 f=\mathbf1_X
 $$

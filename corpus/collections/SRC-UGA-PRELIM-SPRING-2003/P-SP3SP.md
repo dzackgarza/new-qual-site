@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Define the span of vectors $v_1, \dots, v_k$ in $\mathbb{R}^n$.
+(a) Define the span of vectors $v_1, \dots, v_k$ in $\RR^n$.
 
 (b) Prove that if $w$ lies in the span of $v_1, \dots, v_k$, then the span of $v_1, \dots, v_k, w$ is equal to the span of $v_1, \dots, v_k$.
 :::
@@ -30,7 +30,7 @@ audit:
 The span of $v_1,\dots,v_k$ is
 \[
 \operatorname{span}(v_1,\dots,v_k)
-=\left\{\sum_{i=1}^k a_i v_i : a_1,\dots,a_k\in\mathbb R\right\}.
+=\left\{\sum_{i=1}^k a_i v_i : a_1,\dots,a_k\in\RR\right\}.
 \]
 :::
 
@@ -57,7 +57,7 @@ Conversely,
 \]
 
 ::: pf-proof
-Because $w$ lies in the first span, there are $b_1,\dots,b_k\in\mathbb R$ such that
+Because $w$ lies in the first span, there are $b_1,\dots,b_k\in\RR$ such that
 \[
 w=\sum_{i=1}^k b_i v_i.
 \]

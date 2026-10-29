@@ -123,7 +123,7 @@ The characteristic polynomial is
 
 ::: {.pf-step #s1-3}
 
-For every unit vector $x\in\mathbb R^2$,
+For every unit vector $x\in\RR^2$,
 \[
 \|Ax\|_2^2
 =

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y5JK4
 kind: problem
-title: Every Euclidean domain is a principal ideal domain, and $\mathbb{Z}[i]/(\alpha)$
+title: Every Euclidean domain is a principal ideal domain, and $\ZZ[i]/(\alpha)$
   has representatives of norm less than $N(\alpha)$ and is finite
 classification:
   areas:

@@ -29,7 +29,7 @@ Note that the product defines an entire function of $z$.
 
 (a) Show that $|F(z)| \le A e^{a |z|^2}$, hence $F$ is of order 2.
 
-(b) Show that $F$ vanishes exactly when $z = -i n t + m$ for $n \ge 1$ and $m \in \mathbb{Z}$ (integers).
+(b) Show that $F$ vanishes exactly when $z = -i n t + m$ for $n \ge 1$ and $m \in \ZZ$ (integers).
 Deduce that if $\{z_k\}$ is an enumeration of these zeros, we have
 $$
 \sum_k \frac{1}{|z_k|^2} = \infty \quad \text{but} \quad \sum_k \frac{1}{|z_k|^{2+\varepsilon}} < \infty \quad \text{for any } \varepsilon > 0.
@@ -37,7 +37,7 @@ $$
 :::
 
 ::: {.solution}
-Write $q=e^{-2\pi t}\in(0,1)$. On every compact subset of $\mathbb C$, the series $\sum_{n\ge1}|q^n e^{2\pi iz}|$ converges uniformly, so
+Write $q=e^{-2\pi t}\in(0,1)$. On every compact subset of $\CC$, the series $\sum_{n\ge1}|q^n e^{2\pi iz}|$ converges uniformly, so
 \[
 F(z)=\prod_{n\ge1}(1-q^n e^{2\pi iz})
 \]
@@ -63,7 +63,7 @@ q^n e^{2\pi iz}=1,
 \]
 i.e. exactly at
 \[
-z=m-int,\qquad m\in\mathbb Z,\ n\ge1.
+z=m-int,\qquad m\in\ZZ,\ n\ge1.
 \]
 There are no other zeros because the locally uniformly convergent product is nonzero wherever no factor vanishes.
 
@@ -73,12 +73,12 @@ For these zeros,
 \]
 For each $n$, at least $c_t n$ integers satisfy $|m|\le nt$, and for those terms $m^2+n^2t^2\le2n^2t^2$. Consequently
 \[
-\sum_{n\ge1}\sum_{m\in\mathbb Z}\frac1{m^2+n^2t^2}
+\sum_{n\ge1}\sum_{m\in\ZZ}\frac1{m^2+n^2t^2}
 \ge c\sum_{n\ge1}\frac1n=\infty.
 \]
 For $p=1+\varepsilon/2>1$, comparison with the corresponding integral over unit rectangles gives
 \[
-\sum_{n\ge1}\sum_{m\in\mathbb Z}(m^2+n^2t^2)^{-p}<\infty,
+\sum_{n\ge1}\sum_{m\in\ZZ}(m^2+n^2t^2)^{-p}<\infty,
 \]
 since in polar coordinates the tail is bounded by a constant multiple of
 \[

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n(x) = \frac{nx}{n+x}$ for $x \in [0, \infty)$ and $n \in \mathbb{N}$.
+Let $f_n(x) = \frac{nx}{n+x}$ for $x \in [0, \infty)$ and $n \in \NN$.
 
 (a) Find a function $f$ such that $\{f_n\}$ converges to $f$ pointwise on $[0, \infty)$.
 

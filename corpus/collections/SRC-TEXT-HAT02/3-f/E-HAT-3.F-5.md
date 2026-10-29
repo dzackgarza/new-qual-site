@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.F-5
 kind: problem
-title: "$\\operatorname{Ext}(A, \\mathbb{Z})$ as a cokernel"
+title: "$\\operatorname{Ext}(A, \\ZZ)$ as a cokernel"
 classification:
   areas:
   - topology
@@ -24,59 +24,59 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\operatorname{Ext}(A, \mathbb{Z})$ is isomorphic to the cokernel of $\operatorname{Hom}(A, \mathbb{Q}) \to \operatorname{Hom}(A, \mathbb{Q}/\mathbb{Z})$, the map induced by the quotient map $\mathbb{Q} \to \mathbb{Q}/\mathbb{Z}$.
-Use this to get another proof that $\operatorname{Ext}(\mathbb{Z}_{p^\infty}, \mathbb{Z}) \approx \widehat{\mathbb{Z}}_p$ for $p$ prime.
+Show that $\operatorname{Ext}(A, \ZZ)$ is isomorphic to the cokernel of $\operatorname{Hom}(A, \QQ) \to \operatorname{Hom}(A, \QQ/\ZZ)$, the map induced by the quotient map $\QQ \to \QQ/\ZZ$.
+Use this to get another proof that $\operatorname{Ext}(\ZZ_{p^\infty}, \ZZ) \approx \widehat{\ZZ}_p$ for $p$ prime.
 :::
 
 ::: {.solution}
 Apply $\operatorname{Hom}(A,-)$ and its derived functor $\operatorname{Ext}(A,-)$ to
 \[
-0\longrightarrow\mathbb Z\longrightarrow\mathbb Q
-\longrightarrow\mathbb Q/\mathbb Z\longrightarrow0.
+0\longrightarrow\ZZ\longrightarrow\QQ
+\longrightarrow\QQ/\ZZ\longrightarrow0.
 \]
-Since $\mathbb Q$ is divisible, Exercise 4 gives
+Since $\QQ$ is divisible, Exercise 4 gives
 \[
-\operatorname{Ext}(A,\mathbb Q)=0.
+\operatorname{Ext}(A,\QQ)=0.
 \]
 The resulting exact sequence therefore contains
 \[
-\operatorname{Hom}(A,\mathbb Q)
+\operatorname{Hom}(A,\QQ)
 \longrightarrow
-\operatorname{Hom}(A,\mathbb Q/\mathbb Z)
+\operatorname{Hom}(A,\QQ/\ZZ)
 \longrightarrow
-\operatorname{Ext}(A,\mathbb Z)
+\operatorname{Ext}(A,\ZZ)
 \longrightarrow0.
 \]
 Hence
 \[
-\boxed{\operatorname{Ext}(A,\mathbb Z)
-\cong\operatorname{coker}\bigl(\operatorname{Hom}(A,\mathbb Q)\to
-\operatorname{Hom}(A,\mathbb Q/\mathbb Z)\bigr).}
+\boxed{\operatorname{Ext}(A,\ZZ)
+\cong\operatorname{coker}\bigl(\operatorname{Hom}(A,\QQ)\to
+\operatorname{Hom}(A,\QQ/\ZZ)\bigr).}
 \]
 
-Now take $A=\mathbb Z_{p^\infty}$. Since $A$ is torsion and $\mathbb Q$ is torsionfree,
+Now take $A=\ZZ_{p^\infty}$. Since $A$ is torsion and $\QQ$ is torsionfree,
 \[
-\operatorname{Hom}(A,\mathbb Q)=0.
+\operatorname{Hom}(A,\QQ)=0.
 \]
 Thus
 \[
-\operatorname{Ext}(\mathbb Z_{p^\infty},\mathbb Z)
-\cong\operatorname{Hom}(\mathbb Z_{p^\infty},\mathbb Q/\mathbb Z).
+\operatorname{Ext}(\ZZ_{p^\infty},\ZZ)
+\cong\operatorname{Hom}(\ZZ_{p^\infty},\QQ/\ZZ).
 \]
-The $p$-primary subgroup of $\mathbb Q/\mathbb Z$ is itself isomorphic to $\mathbb Z_{p^\infty}$, so every homomorphism lands there and
+The $p$-primary subgroup of $\QQ/\ZZ$ is itself isomorphic to $\ZZ_{p^\infty}$, so every homomorphism lands there and
 \[
-\operatorname{Hom}(\mathbb Z_{p^\infty},\mathbb Q/\mathbb Z)
-\cong\operatorname{End}(\mathbb Z_{p^\infty}).
+\operatorname{Hom}(\ZZ_{p^\infty},\QQ/\ZZ)
+\cong\operatorname{End}(\ZZ_{p^\infty}).
 \]
 An endomorphism is determined by compatible multipliers modulo $p^n$ on the unique cyclic subgroup of order $p^n$. Hence
 \[
-\operatorname{End}(\mathbb Z_{p^\infty})
-\cong\varprojlim_n\mathbb Z/p^n\mathbb Z
-=\widehat{\mathbb Z}_p.
+\operatorname{End}(\ZZ_{p^\infty})
+\cong\varprojlim_n\ZZ/p^n\ZZ
+=\widehat{\ZZ}_p.
 \]
 Therefore
 \[
-\boxed{\operatorname{Ext}(\mathbb Z_{p^\infty},\mathbb Z)
-\cong\widehat{\mathbb Z}_p.}
+\boxed{\operatorname{Ext}(\ZZ_{p^\infty},\ZZ)
+\cong\widehat{\ZZ}_p.}
 \]
 :::

@@ -24,7 +24,7 @@ Show that if $M ^ { 4 n }$ is a connected manifold which is the boundary of a co
 Let $i:M=\partial V\hookrightarrow V$ be the inclusion. Work with rational coefficients. The intersection form of the closed oriented $4n$-manifold $M$ is
 \[
 Q_M(x,y)=\langle x\smile y,[M]\rangle,
-\qquad x,y\in H^{2n}(M;\mathbb Q).
+\qquad x,y\in H^{2n}(M;\QQ).
 \]
 
 ::: pf
@@ -33,7 +33,7 @@ Q_M(x,y)=\langle x\smile y,[M]\rangle,
 
 Let
 \[
-L=\operatorname{im}\bigl(i^*:H^{2n}(V;\mathbb Q)\to H^{2n}(M;\mathbb Q)\bigr).
+L=\operatorname{im}\bigl(i^*:H^{2n}(V;\QQ)\to H^{2n}(M;\QQ)\bigr).
 \]
 Then $L$ is isotropic for $Q_M$.
 
@@ -99,7 +99,7 @@ in the sense that
 
 Poincaré--Lefschetz duality gives perfect pairings
 \[
-H^{2n}(V)\times H^{2n+1}(V,M)\to\mathbb Q
+H^{2n}(V)\times H^{2n+1}(V,M)\to\QQ
 \]
 and Poincaré duality gives a perfect pairing on $H^{2n}(M)$. Under these pairings, the connecting and restriction maps in the long exact sequence are adjoint up to sign. Consequently the exact sequence around the middle dimension is self-dual. In particular, the annihilator of $L=\operatorname{im}i^*$ is $L$ itself, equivalently
 \[
@@ -120,7 +120,7 @@ Hence $L$ is a Lagrangian subspace of the nonsingular symmetric form $Q_M$.
 
 Step [](#s1-1){.pf-ref} shows that $L$ is isotropic, while step [](#s1-3){.pf-ref} gives
 \[
-\dim L=\frac12\dim H^{2n}(M;\mathbb Q).
+\dim L=\frac12\dim H^{2n}(M;\QQ).
 \]
 The intersection form is nonsingular by Poincaré duality. An isotropic subspace of half the dimension of a nonsingular symmetric space is Lagrangian.
 
@@ -130,7 +130,7 @@ The intersection form is nonsingular by Poincaré duality. An isotropic subspace
 
 ::: {.pf-step #s1-5}
 
-A nonsingular symmetric bilinear form over $\mathbb Q$ that has a Lagrangian has signature zero.
+A nonsingular symmetric bilinear form over $\QQ$ that has a Lagrangian has signature zero.
 
 
 ::: pf-proof
@@ -150,7 +150,7 @@ changes the matrix to
 \[
 \begin{pmatrix}0&I\\I&0\end{pmatrix}.
 \]
-Over $\mathbb R$, this is a direct sum of $r$ hyperbolic planes, each with one positive and one negative eigenvalue. Thus the numbers of positive and negative eigenvalues agree and the signature is zero.
+Over $\RR$, this is a direct sum of $r$ hyperbolic planes, each with one positive and one negative eigenvalue. Thus the numbers of positive and negative eigenvalues agree and the signature is zero.
 
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-037
 kind: problem
-title: Irreducibility of $x^2+1$ over $\mathbb Z_p$ for $p\equiv 3 \pmod 4$
+title: Irreducibility of $x^2+1$ over $\ZZ_p$ for $p\equiv 3 \pmod 4$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 3 ( { \bmod { 4 } } )$ , then $x ^ { 2 } + 1$ is irreducible in $\mathbb { Z } _ { p } [ x ]$
+Show that if p is a prime such that $p \equiv 3 ( { \bmod { 4 } } )$ , then $x ^ { 2 } + 1$ is irreducible in $\ZZ _ { p } [ x ]$
 :::
 
 ::: {.solution}

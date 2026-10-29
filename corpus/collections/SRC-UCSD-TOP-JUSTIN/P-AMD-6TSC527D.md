@@ -77,7 +77,7 @@ The loops $a,c$ have zero boundary, while $e$ joins the two distinct vertex clas
 
 ::: {.pf-step #s5}
 
-The map $\partial_2:C_2\cong\mathbb Z^2\to C_1$ is injective, and therefore the top boundary $\partial_3:C_3\cong\mathbb Z\to C_2$ is zero.
+The map $\partial_2:C_2\cong\ZZ^2\to C_1$ is injective, and therefore the top boundary $\partial_3:C_3\cong\ZZ\to C_2$ is zero.
 
 ::: pf-proof
 
@@ -90,14 +90,14 @@ The two images $a,c$ are independent, so $\partial_2$ is injective. Since $\part
 ::: pf-step
 
 Hence
-$$\boxed{H_i(X;\mathbb Z)\cong\begin{cases}
-\mathbb Z,&i=0,3,\\
+$$\boxed{H_i(X;\ZZ)\cong\begin{cases}
+\ZZ,&i=0,3,\\
 0,&i=1,2\text{ or }i>3.
 \end{cases}}$$
 
 ::: pf-proof
 
-The quotient is connected, so $H_0\cong\mathbb Z$. The equality in step [](#s4){.pf-ref} gives $H_1=0$; injectivity in step [](#s5){.pf-ref} gives $H_2=0$; and $\partial_3=0$ gives $H_3\cong\mathbb Z$.
+The quotient is connected, so $H_0\cong\ZZ$. The equality in step [](#s4){.pf-ref} gives $H_1=0$; injectivity in step [](#s5){.pf-ref} gives $H_2=0$; and $\partial_3=0$ gives $H_3\cong\ZZ$.
 
 :::
 

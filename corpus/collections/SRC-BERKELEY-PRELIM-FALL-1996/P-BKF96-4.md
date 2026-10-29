@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF96-4
 kind: problem
-title: Can a holomorphic function on $\mathbb C^*$ be bounded below by $|z|^{-1/2}$?
+title: Can a holomorphic function on $\CC^*$ be bounded below by $|z|^{-1/2}$?
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Does there exist a function $f$, holomorphic on $\mathbb C\setminus\{0\}$, such that
+Does there exist a function $f$, holomorphic on $\CC\setminus\{0\}$, such that
 \[
 |f(z)|\ge\frac1{\sqrt{|z|}}
 \]

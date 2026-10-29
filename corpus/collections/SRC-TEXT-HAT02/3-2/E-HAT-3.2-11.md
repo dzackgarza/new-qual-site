@@ -33,11 +33,11 @@ Cohomology ring of the product $S^k \times S^\ell$:
 
 ::: pf-step
 
-By the Künneth Theorem for cohomology with $\mathbb{Z}$ coefficients, the cohomology groups of $S^k \times S^\ell$ (with $k, \ell > 0$) are:
-- $H^0(S^k \times S^\ell) \cong \mathbb{Z}$,
-- $H^k(S^k \times S^\ell) \cong \mathbb{Z} \langle \alpha \rangle$,
-- $H^\ell(S^k \times S^\ell) \cong \mathbb{Z} \langle \beta \rangle$,
-- $H^{k+\ell}(S^k \times S^\ell) \cong \mathbb{Z} \langle \alpha \smile \beta \rangle$.
+By the Künneth Theorem for cohomology with $\ZZ$ coefficients, the cohomology groups of $S^k \times S^\ell$ (with $k, \ell > 0$) are:
+- $H^0(S^k \times S^\ell) \cong \ZZ$,
+- $H^k(S^k \times S^\ell) \cong \ZZ \langle \alpha \rangle$,
+- $H^\ell(S^k \times S^\ell) \cong \ZZ \langle \beta \rangle$,
+- $H^{k+\ell}(S^k \times S^\ell) \cong \ZZ \langle \alpha \smile \beta \rangle$.
 
 ::: pf-proof
 
@@ -128,10 +128,10 @@ Dualization to homology:
 
 ::: pf-step
 
-By the Universal Coefficient Theorem for Cohomology, for any space $X$ with free finitely generated homology, $H^n(X) \cong \operatorname{Hom}(H_n(X), \mathbb{Z})$.
+By the Universal Coefficient Theorem for Cohomology, for any space $X$ with free finitely generated homology, $H^n(X) \cong \operatorname{Hom}(H_n(X), \ZZ)$.
 Under this canonical duality, the induced cohomology map $f^*$ is the transpose/dual of the induced homology map $f_*$:
 \[
-f^* = (f_*)^t: \operatorname{Hom}(H_{k+\ell}(S^k \times S^\ell), \mathbb{Z}) \to \operatorname{Hom}(H_{k+\ell}(S^{k+\ell}), \mathbb{Z}).
+f^* = (f_*)^t: \operatorname{Hom}(H_{k+\ell}(S^k \times S^\ell), \ZZ) \to \operatorname{Hom}(H_{k+\ell}(S^{k+\ell}), \ZZ).
 \]
 
 ::: pf-proof

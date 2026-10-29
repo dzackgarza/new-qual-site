@@ -23,13 +23,13 @@ Using the simplest form of Cauchy's estimates, prove that every bounded entire f
 
 Let
 \[
-f:\mathbb C\to\mathbb C
+f:\CC\to\CC
 \]
 be entire and bounded. Choose \(M\ge0\) such that
 \[
 \boxed{|f(z)|\le M}
 \]
-for every \(z\in\mathbb C\).
+for every \(z\in\CC\).
 
 ::: pf
 
@@ -37,7 +37,7 @@ for every \(z\in\mathbb C\).
 
 Fix an arbitrary point
 \[
-z_0\in\mathbb C.
+z_0\in\CC.
 \]
 
 
@@ -60,7 +60,7 @@ lies in the domain of holomorphy of \(f\).
 
 ::: pf-proof
 
-The function \(f\) is entire, so it is holomorphic on all of \(\mathbb C\).
+The function \(f\) is entire, so it is holomorphic on all of \(\CC\).
 
 :::
 
@@ -148,7 +148,7 @@ The point \(z_0\) was arbitrary, so
 
 ::: pf-proof
 
-Apply step [](#s1-5){.pf-ref} at every point of \(\mathbb C\).
+Apply step [](#s1-5){.pf-ref} at every point of \(\CC\).
 
 :::
 
@@ -162,7 +162,7 @@ Therefore \(f\) is constant.
 ::: pf-proof
 
 An analytic function with identically zero derivative is constant on each
-connected component of its domain. The plane \(\mathbb C\) is connected.
+connected component of its domain. The plane \(\CC\) is connected.
 
 :::
 

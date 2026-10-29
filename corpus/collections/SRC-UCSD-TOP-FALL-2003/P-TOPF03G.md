@@ -24,7 +24,7 @@ Show that any map $f : S^2 \to \mathbb{CP}^2$ whose image $f(S^2)$ is disjoint f
 
 ::: pf-step
 
-The complement of the standard hyperplane $\mathbb{CP}^1\subset\mathbb{CP}^2$ is homeomorphic to $\mathbb C^2$.
+The complement of the standard hyperplane $\mathbb{CP}^1\subset\mathbb{CP}^2$ is homeomorphic to $\CC^2$.
 
 ::: pf-proof
 
@@ -34,7 +34,7 @@ $$
 $$
 On the complement $z_0\ne0$, normalize to $z_0=1$. This identifies the complement with the affine chart
 $$
-[1:z_1:z_2]\longleftrightarrow (z_1,z_2)\in\mathbb C^2.
+[1:z_1:z_2]\longleftrightarrow (z_1,z_2)\in\CC^2.
 $$
 
 :::
@@ -45,7 +45,7 @@ $$
 
 Since $f(S^2)$ is disjoint from $\mathbb{CP}^1$, the map factors through this complement:
 $$
-S^2\xrightarrow{\tilde f}\mathbb C^2\hookrightarrow\mathbb{CP}^2.
+S^2\xrightarrow{\tilde f}\CC^2\hookrightarrow\mathbb{CP}^2.
 $$
 
 ::: pf-proof
@@ -58,11 +58,11 @@ The image condition says exactly that the codomain of $f$ may be restricted to $
 
 ::: pf-step
 
-The map $\tilde f:S^2\to\mathbb C^2$ is null-homotopic.
+The map $\tilde f:S^2\to\CC^2$ is null-homotopic.
 
 ::: pf-proof
 
-The space $\mathbb C^2$ is contractible by the straight-line homotopy to the origin.
+The space $\CC^2$ is contractible by the straight-line homotopy to the origin.
 
 :::
 
@@ -74,7 +74,7 @@ Therefore $f$ is null-homotopic as a map into $\mathbb{CP}^2$.
 
 ::: pf-proof
 
-Compose the null-homotopy in $\mathbb C^2$ with the inclusion into $\mathbb{CP}^2$.
+Compose the null-homotopy in $\CC^2$ with the inclusion into $\mathbb{CP}^2$.
 
 :::
 

@@ -51,9 +51,9 @@ This is the standard Gaussian integral.
 
 ::: pf-step
 
-Therefore, in $\mathbb R^{n+1}$,
+Therefore, in $\RR^{n+1}$,
 $$
-\int_{\mathbb R^{n+1}}
+\int_{\RR^{n+1}}
 e^{-\|x\|^2}
 \,dx
 =
@@ -76,7 +76,7 @@ Let
 $$
 A_n=\operatorname{Area}(S^n)
 $$
-for the unit $n$-sphere in $\mathbb R^{n+1}$. Polar coordinates give
+for the unit $n$-sphere in $\RR^{n+1}$. Polar coordinates give
 $$
 \pi^{(n+1)/2}
 =
@@ -89,7 +89,7 @@ $$
 
 ::: pf-proof
 
-In radial coordinates on $\mathbb R^{n+1}$, the volume element is
+In radial coordinates on $\RR^{n+1}$, the volume element is
 $$
 r^n\,dr\,d\omega,
 $$
@@ -178,7 +178,7 @@ This is step [](#s1-5){.pf-ref}.
 
 ::: {.pf-step #s1-7}
 
-Let $V_n(R)$ be the volume of the radius-$R$ ball in $\mathbb R^n$.
+Let $V_n(R)$ be the volume of the radius-$R$ ball in $\RR^n$.
 Then
 $$
 V_n(R)=V_n(1)R^n.

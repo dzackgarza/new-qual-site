@@ -162,23 +162,23 @@ An integral scheme need not be geometrically irreducible.
 ::: pf-proof
 Take
 \[
-k=\mathbb R,
+k=\RR,
 \qquad
-X=\Spec\mathbb C
+X=\Spec\CC
 \]
-with its natural structure as an $\mathbb R$-scheme.  Since $\mathbb C$ is a field, $X$ is integral.
+with its natural structure as an $\RR$-scheme.  Since $\CC$ is a field, $X$ is integral.
 
-After base change to $\mathbb C$,
+After base change to $\CC$,
 \[
-\mathbb C\otimes_{\mathbb R}\mathbb C
+\CC\otimes_{\RR}\CC
 \cong
-\mathbb C\times\mathbb C.
+\CC\times\CC.
 \]
 Thus
 \[
-X_\mathbb C
+X_\CC
 \cong
-\Spec\mathbb C\amalg\Spec\mathbb C
+\Spec\CC\amalg\Spec\CC
 \]
 is reducible.  Hence $X$ is not geometrically irreducible.
 :::

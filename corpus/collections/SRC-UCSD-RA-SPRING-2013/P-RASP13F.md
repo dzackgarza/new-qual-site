@@ -27,9 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-The problem concerns finding an explicit solution to the equation $-\Delta u + u = f$ for $f \in C_c^\infty(\mathbb{R}^n)$, using the Fourier transform.
+The problem concerns finding an explicit solution to the equation $-\Delta u + u = f$ for $f \in C_c^\infty(\RR^n)$, using the Fourier transform.
 
-(a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\mathbb{R}^n) \cap L^2(\mathbb{R}^n)$.
+(a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\RR^n) \cap L^2(\RR^n)$.
 Prove
 $$
 \hat{u}(z) = \frac{\hat{f}(z)}{1 + 4\pi^2 |z|^2}.
@@ -37,7 +37,7 @@ $$
 
 (b) Prove, via the identity $(1 + 4\pi^2 |z|^2)^{-1} = \int_0^\infty e^{-t(1+4\pi^2|z|^2)} \, dt$, that
 $$
-u(x) = \int_0^\infty \frac{e^{-t}}{(4\pi t)^{n/2}} \int_{\mathbb{R}^n} e^{-\frac{|x-y|^2}{4t}} f(y) \, dm(y) \, dt.
+u(x) = \int_0^\infty \frac{e^{-t}}{(4\pi t)^{n/2}} \int_{\RR^n} e^{-\frac{|x-y|^2}{4t}} f(y) \, dm(y) \, dt.
 $$
 :::
 
@@ -53,7 +53,7 @@ Fourier transform the equation.
 
 Use the convention
 \[
-\widehat v(z)=\int_{\mathbb R^n}e^{-2\pi i x\cdot z}v(x)\,dx.
+\widehat v(z)=\int_{\RR^n}e^{-2\pi i x\cdot z}v(x)\,dx.
 \]
 Under the stated $L^1$ hypotheses on $u$ and its first and second derivatives,
 \[
@@ -137,7 +137,7 @@ By Step 1, $\widehat v=\widehat u$. Fourier-transform uniqueness on $L^1$ gives 
 \[
 \boxed{
 u(x)=\int_0^\infty\frac{e^{-t}}{(4\pi t)^{n/2}}
-\int_{\mathbb R^n}e^{-|x-y|^2/(4t)}f(y)\,dy\,dt.}
+\int_{\RR^n}e^{-|x-y|^2/(4t)}f(y)\,dy\,dt.}
 \]
 The right-hand side is the natural continuous representative of the solution.
 

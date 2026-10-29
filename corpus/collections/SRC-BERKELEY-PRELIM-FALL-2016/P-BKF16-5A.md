@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-5A
 kind: problem
-title: No holomorphic $f$ on $\mathbb C\setminus\{0\}$ with $\lvert f(z)\rvert\ge\lvert z\rvert^{-1/2}$
+title: No holomorphic $f$ on $\CC\setminus\{0\}$ with $\lvert f(z)\rvert\ge\lvert z\rvert^{-1/2}$
 classification:
   areas:
   - prelim

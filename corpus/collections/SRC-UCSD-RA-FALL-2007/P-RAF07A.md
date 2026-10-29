@@ -30,9 +30,9 @@ If true give a brief proof.
 If false give a counterexample or disprove it.
 No credit if reason is missing or incorrect.
 
-(a) If $f : \mathbb{R} \to \mathbb{R}$ is continuous with $f \in L^1(\mathbb{R}, m)$, then $\lim_{x \to \infty} f(x) = 0$.
+(a) If $f : \RR \to \RR$ is continuous with $f \in L^1(\RR, m)$, then $\lim_{x \to \infty} f(x) = 0$.
 
-(b) If $f : \mathbb{R} \to \mathbb{R}$ is a continuously differentiable function with $f, f' \in L^1(\mathbb{R}, m)$, then $\lim_{x \to \infty} f(x) = 0$.
+(b) If $f : \RR \to \RR$ is a continuously differentiable function with $f, f' \in L^1(\RR, m)$, then $\lim_{x \to \infty} f(x) = 0$.
 
 (c) If $\{f_n\}$ is a sequence of Lebesgue integrable functions on $[0,1]$ such that $f_n$ converges to $0$ in $L^1([0,1], m)$, then there exists a Lebesgue measurable set $E \subset [0,1]$ with $m(E) > 0$ such that $\lim_{n \to \infty} f_n(x) = 0$ for all $x \in E$.
 
@@ -65,11 +65,11 @@ f:=\sum_{n=1}^\infty \phi_n.
 \]
 Then $f$ is continuous and
 \[
-\int_{\mathbb R}|f(x)|\,dx
+\int_{\RR}|f(x)|\,dx
 =\sum_{n=1}^\infty \int\phi_n
 =\sum_{n=1}^\infty 2^{-n-2}<\infty.
 \]
-Thus $f\in L^1(\mathbb R)$, but
+Thus $f\in L^1(\RR)$, but
 \[
 f(n)=1
 \]
@@ -90,7 +90,7 @@ For $y>x$,
 |f(y)-f(x)|
 \le \int_x^y |f'(t)|\,dt.
 \]
-Since $f'\in L^1(\mathbb R)$, the right-hand side is uniformly small when $x,y$ are sufficiently large. Hence $f(x)$ has a finite limit $L$ as $x\to\infty$.
+Since $f'\in L^1(\RR)$, the right-hand side is uniformly small when $x,y$ are sufficiently large. Hence $f(x)$ has a finite limit $L$ as $x\to\infty$.
 
 If $L\ne0$, then for sufficiently large $x$,
 \[
@@ -98,7 +98,7 @@ If $L\ne0$, then for sufficiently large $x$,
 \]
 which would force
 \[
-\int_{\mathbb R}|f|=\infty.
+\int_{\RR}|f|=\infty.
 \]
 Since $f\in L^1$, necessarily
 \[

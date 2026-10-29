@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-For a real symmetric positive definite matrix $A$ and $v\in\mathbb R^n$, show that
+For a real symmetric positive definite matrix $A$ and $v\in\RR^n$, show that
 \[
-\int_{\mathbb R^n}\exp(-x^TAx+2v^Tx)\,dx
+\int_{\RR^n}\exp(-x^TAx+2v^Tx)\,dx
 =\frac{\pi^{n/2}}{\sqrt{\det A}}\exp(v^TA^{-1}v).
 \]
 You may assume that $\int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt\pi$.

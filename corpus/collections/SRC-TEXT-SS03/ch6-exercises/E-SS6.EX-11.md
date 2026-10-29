@@ -26,7 +26,7 @@ audit:
     Prove that
 
 $$
-\hat {f} (\xi) = \Gamma (a - 2 \pi i \xi), \quad \text {   for   all   } \xi \in \mathbb {R}.
+\hat {f} (\xi) = \Gamma (a - 2 \pi i \xi), \quad \text {   for   all   } \xi \in \RR.
 $$
 :::
 

@@ -45,7 +45,7 @@ Linearity of the limit operator $A$:
 
 ::: pf-step
 
-For any $x_1, x_2 \in X$ and scalars $\alpha, \beta \in \mathbb{C}$ (or $\mathbb{R}$):
+For any $x_1, x_2 \in X$ and scalars $\alpha, \beta \in \CC$ (or $\RR$):
 \[
 \begin{aligned}
 A(\alpha x_1 + \beta x_2) &= \lim_{n \to \infty} A_n(\alpha x_1 + \beta x_2) \\

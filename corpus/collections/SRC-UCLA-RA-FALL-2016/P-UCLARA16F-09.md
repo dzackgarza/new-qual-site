@@ -23,9 +23,9 @@ Let $\mu$ be a positive Borel measure on $[0,1]$ with $\mu([0,1])=1$.
 \[
 f(z)=\int_{[0,1]}e^{izt}\,d\mu(t)
 \]
-is holomorphic on $\mathbb C$.
+is holomorphic on $\CC$.
 
-(b) Suppose that there exists $n\in\mathbb N$ such that
+(b) Suppose that there exists $n\in\NN$ such that
 \[
 \limsup_{|z|\to\infty}\frac{|f(z)|}{|z|^n}<\infty.
 \]
@@ -70,7 +70,7 @@ Integrating against the probability measure \(\mu\) gives
 
 ::: {.pf-step #s1-2}
 
-For fixed \(z\in\mathbb C\),
+For fixed \(z\in\CC\),
 \[
 e^{izt}
 =
@@ -151,7 +151,7 @@ By step [](#s1-1){.pf-ref},
 \le
 \frac{|z|^k}{k!},
 \]
-and the exponential series converges for every \(z\in\mathbb C\).
+and the exponential series converges for every \(z\in\CC\).
 
 :::
 
@@ -324,7 +324,7 @@ Therefore \(f\) is constant.
 
 ::: pf-proof
 
-A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step [](#s1-12){.pf-ref} says \(f\) is bounded on \(\mathbb R\).
+A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step [](#s1-12){.pf-ref} says \(f\) is bounded on \(\RR\).
 
 :::
 

@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M_n$ be the vector space of real $n\times n$ matrices, identified with $\mathbb R^{n^2}$ with its usual Euclidean norm. Define
+Let $M_n$ be the vector space of real $n\times n$ matrices, identified with $\RR^{n^2}$ with its usual Euclidean norm. Define
 \[
 f:M_n\to M_n,
 \qquad

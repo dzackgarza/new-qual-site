@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E\subset\mathbb R$ be Lebesgue measurable with $m(E)<\infty$.
+Let $E\subset\RR$ be Lebesgue measurable with $m(E)<\infty$.
 Suppose $(f_n)$ is a uniformly bounded sequence of real-valued measurable functions on $E$ and $f_n(x)\to f(x)$ for every $x\in E$.
 What relationship holds between $\int_Ef_n\,dm$ and $\int_Ef\,dm$?
 :::
@@ -35,7 +35,7 @@ Choose $M<\infty$ such that
 \]
 Then also $|f(x)|\le M$, and
 \[
-M\mathbf1_E\in L^1(\mathbb R)
+M\mathbf1_E\in L^1(\RR)
 \]
 because $m(E)<\infty$.
 The Dominated Convergence Theorem therefore gives

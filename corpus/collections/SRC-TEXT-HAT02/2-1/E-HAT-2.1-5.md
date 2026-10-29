@@ -47,11 +47,11 @@ Let $U,L$ denote the two oriented $2$-simplices, with orientations chosen so tha
 The simplicial chain complex is
 \[
 0\longrightarrow
-\mathbb Z^2
+\ZZ^2
 \xrightarrow{\partial_2}
-\mathbb Z^3
+\ZZ^3
 \xrightarrow{0}
-\mathbb Z
+\ZZ
 \longrightarrow0,
 \]
 where, in the ordered bases $(U,L)$ and $(a,b,c)$,
@@ -68,7 +68,7 @@ where, in the ordered bases $(U,L)$ and $(a,b,c)$,
 ::: pf-proof
 
 There are two triangles, three edge classes, and one vertex.
-Thus $C_2=\mathbb Z^2$, $C_1=\mathbb Z^3$, and $C_0=\mathbb Z$.
+Thus $C_2=\ZZ^2$, $C_1=\ZZ^3$, and $C_0=\ZZ$.
 All edge endpoints are the unique vertex, so $\partial_1=0$.
 Tracing the three oriented sides of the two triangles in the square model gives the displayed formulas for $\partial U$ and $\partial L$.
 
@@ -101,7 +101,7 @@ C_1/\operatorname{im}\partial_2
 \]
 is isomorphic to
 \[
-\mathbb Z\oplus\mathbb Z/2.
+\ZZ\oplus\ZZ/2.
 \]
 
 ::: pf-proof
@@ -126,7 +126,7 @@ C_1/\operatorname{im}\partial_2
 \cong
 \langle c\rangle\oplus\langle b\mid2b=0\rangle
 \cong
-\mathbb Z\oplus\mathbb Z/2.
+\ZZ\oplus\ZZ/2.
 \]
 
 :::
@@ -138,9 +138,9 @@ C_1/\operatorname{im}\partial_2
 Hence the simplicial homology groups of the Klein bottle are
 \[
 \boxed{
-H_0\cong\mathbb Z,
+H_0\cong\ZZ,
 \qquad
-H_1\cong\mathbb Z\oplus\mathbb Z/2,
+H_1\cong\ZZ\oplus\ZZ/2,
 \qquad
 H_k=0\quad(k\ge2).
 }
@@ -148,7 +148,7 @@ H_k=0\quad(k\ge2).
 
 ::: pf-proof
 
-Since $\partial_1=0$, connectedness gives $H_0\cong\mathbb Z$ and
+Since $\partial_1=0$, connectedness gives $H_0\cong\ZZ$ and
 \[
 H_1=C_1/\operatorname{im}\partial_2,
 \]

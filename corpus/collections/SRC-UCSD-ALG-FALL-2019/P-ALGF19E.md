@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF19E
 kind: problem
-title: Ideal $\langle 3, 1+\sqrt{-5}\rangle$ in $\mathbb{Z}[\sqrt{-5}]$ is projective not principal
+title: Ideal $\langle 3, 1+\sqrt{-5}\rangle$ in $\ZZ[\sqrt{-5}]$ is projective not principal
 classification:
   areas:
   - algebra
@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $D = \mathbb{Z}[\sqrt{-5}]$ and $\mathfrak{a} = \langle 3, 1 + \sqrt{-5} \rangle$.
+Suppose $D = \ZZ[\sqrt{-5}]$ and $\mathfrak{a} = \langle 3, 1 + \sqrt{-5} \rangle$.
 
 (a) Prove that $\mathfrak{a}$ is not a principal ideal.
 
@@ -38,7 +38,7 @@ Put
 \[
 s=\sqrt{-5},
 \qquad
-D=\mathbb Z[s],
+D=\ZZ[s],
 \qquad
 \mathfrak a=(3,1+s).
 \]
@@ -89,7 +89,7 @@ Suppose
 \]
 Since $3$ and $1+s$ belong to $(\alpha)$, the element $\alpha$ divides both $3$ and $1+s$ in $D$.
 
-For $m,n\in\mathbb Z$, the field norm is
+For $m,n\in\ZZ$, the field norm is
 \[
 N(m+ns)=(m+ns)(m-ns)=m^2+5n^2.
 \]

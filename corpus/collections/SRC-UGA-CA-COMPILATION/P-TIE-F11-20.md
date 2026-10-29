@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-20
 kind: problem
-title: Uniform continuity of $z^2$ on disks but not on $\mathbb{C}$
+title: Uniform continuity of $z^2$ on disks but not on $\CC$
 classification:
   areas:
   - complex-analysis
@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $f(z) = z^2$ is uniformly continuous in any open disk $\abs{z} < R$, where $R > 0$ is fixed, but it is not uniformly continuous on $\mathbb{C}$.
+Show that $f(z) = z^2$ is uniformly continuous in any open disk $\abs{z} < R$, where $R > 0$ is fixed, but it is not uniformly continuous on $\CC$.
 :::
 
 ::: {.remark}

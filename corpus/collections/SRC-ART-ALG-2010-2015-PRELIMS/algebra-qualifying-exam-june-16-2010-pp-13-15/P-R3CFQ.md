@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R3CFQ
 kind: problem
-title: Rational canonical form of a $3\times 3$ matrix over $\mathbb{Q}$, and a non-similar
+title: Rational canonical form of a $3\times 3$ matrix over $\QQ$, and a non-similar
   matrix with the same characteristic polynomial
 classification:
   areas:
@@ -26,7 +26,7 @@ audit:
   note: "Checked the cyclic basis and its determinant, AP=PC by exact matrix arithmetic, the characteristic and minimal polynomial, and the rank obstruction to similarity of the second matrix."
 ---
 ::: {.problem}
-Let $A$ be the following matrix (over $\mathbb{Q}$) $$\begin{pmatrix} -2 & 1 & 1 \\ -4 & 3 & 1 \\ -6 & 6 & -1 \end{pmatrix}.$$ Find the rational canonical form for $A$.
+Let $A$ be the following matrix (over $\QQ$) $$\begin{pmatrix} -2 & 1 & 1 \\ -4 & 3 & 1 \\ -6 & 6 & -1 \end{pmatrix}.$$ Find the rational canonical form for $A$.
 Give a $3 \times 3$ matrix $B$ which has the same characteristic polynomial as $A$, but which is not similar to $A$.
 :::
 
@@ -82,7 +82,7 @@ $t^3+c_2t^2+c_1t+c_0$ has subdiagonal entries one and
 last column $(-c_0,-c_1,-c_2)^{\mathsf T}$ [@DF04].
 Hence $C$ is the companion matrix of $f$.
 The cyclic basis in step [](#s1){.pf-ref} identifies the
-$\mathbb Q[t]$-module with $\mathbb Q[t]/(f)$: the map
+$\QQ[t]$-module with $\QQ[t]/(f)$: the map
 $g\mapsto g(A)v$ is onto; division by $f$ reduces any
 element in its kernel to a polynomial of degree at most
 two, whose coefficients must vanish by independence of

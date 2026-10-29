@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\mathbb C:|z|<1\}$, and let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
+Let $\Delta=\{z\in\CC:|z|<1\}$, and let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
 $$
 |f(z)+f(-z)|\le 2|z|^2
 $$

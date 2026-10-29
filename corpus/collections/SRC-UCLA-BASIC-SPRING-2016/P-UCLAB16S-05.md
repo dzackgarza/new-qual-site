@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g:\mathbb R^2\to\mathbb R$ be continuously differentiable.
-Assume that $g$ attains the value $0$ at at least one point and that $\nabla g\ne0$ everywhere on $\mathbb R^2$.
+Let $f,g:\RR^2\to\RR$ be continuously differentiable.
+Assume that $g$ attains the value $0$ at at least one point and that $\nabla g\ne0$ everywhere on $\RR^2$.
 Suppose $(x_0,y_0)$ satisfies
 \[
-f(x_0,y_0)=\inf\{f(x,y):x,y\in\mathbb R,\ g(x,y)=0\}.
+f(x_0,y_0)=\inf\{f(x,y):x,y\in\RR,\ g(x,y)=0\}.
 \]
-Show that there is $\lambda\in\mathbb R$ such that
+Show that there is $\lambda\in\RR$ such that
 \[
 \nabla f(x_0,y_0)=\lambda\nabla g(x_0,y_0).
 \]
@@ -61,7 +61,7 @@ The gradient is
 =
 \bigl(g_x(p_0),g_y(p_0)\bigr).
 \]
-A vector in $\mathbb R^2$ is nonzero exactly when at least one coordinate is nonzero.
+A vector in $\RR^2$ is nonzero exactly when at least one coordinate is nonzero.
 
 :::
 
@@ -96,7 +96,7 @@ I
 \]
 containing $x_0$ and a continuously differentiable function
 \[
-\phi:I\to\mathbb R
+\phi:I\to\RR
 \]
 such that
 \[

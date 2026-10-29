@@ -38,7 +38,7 @@ audit:
 ::: {.problem}
 Prove the following without using Egoroff's theorem. Let
 $(f_k)$ be measurable functions on a Lebesgue-measurable set
-$E\subset\mathbb R^d$, with $f_k\to f$ almost everywhere
+$E\subset\RR^d$, with $f_k\to f$ almost everywhere
 on $E$. Suppose $g\in L^1(E)$ and $|f_k|\leq g$ for every
 $k$. For each $\varepsilon>0$, prove that there is a closed
 set $A_\varepsilon\subseteq E$ with
@@ -126,7 +126,7 @@ Replace the measurable good set by a closed good set.
 
 ::: pf-proof
 
-Put $F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
+Put $F=E\setminus B$ and $H=\RR^d\setminus F$.
 For each positive integer $j$, the measurable set
 $H_j=H\cap[-j,j]^d$ has finite measure. Outer regularity
 gives an open $O_j\supset H_j$ with
@@ -136,7 +136,7 @@ $$
 m(O\setminus H)\leq\sum_{j=1}^\infty m(O_j\setminus H_j)
 <\varepsilon/2.
 $$
-Consequently $A_\varepsilon=\mathbb R^d\setminus O$ is
+Consequently $A_\varepsilon=\RR^d\setminus O$ is
 closed, lies in $F$, and satisfies
 $m(F\setminus A_\varepsilon)<\varepsilon/2$.
 This construction does not assume $m(E)<\infty$.
@@ -239,8 +239,8 @@ The good set contains a closed subset with arbitrarily small measure loss.
 
 ::: pf-proof
 
-Let $\mathbb R^d$ be the ambient Euclidean space, and put
-$F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
+Let $\RR^d$ be the ambient Euclidean space, and put
+$F=E\setminus B$ and $H=\RR^d\setminus F$.
 For each positive integer $j$, use finite-measure outer
 regularity to choose an open $O_j\supset H\cap[-j,j]^d$
 whose excess measure is less than $\epsilon/2^{j+1}$
@@ -250,7 +250,7 @@ m(O\setminus H)
 \leq\sum_j m\bigl(O_j\setminus(H\cap[-j,j]^d)\bigr)
 <\epsilon/2.
 $$
-Its complement $A_\epsilon=\mathbb R^d\setminus O$ is
+Its complement $A_\epsilon=\RR^d\setminus O$ is
 closed, contained in $F$, and satisfies
 $m(F\setminus A_\epsilon)<\epsilon/2$. This holds whether
 or not $E$ has finite measure.

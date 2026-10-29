@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n:[a,b]\to\mathbb R$ be convex functions and suppose
+Let $f_n:[a,b]\to\RR$ be convex functions and suppose
 \[
 f(x)=\lim_{n\to\infty}f_n(x)
 \]

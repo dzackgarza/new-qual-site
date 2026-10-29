@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $\Sigma_3$ be the closed orientable surface of genus $3$.
-Suppose $\mathbb{Z}_3$ acts on $\Sigma_3$; show that there must be at least two fixed points.
+Suppose $\ZZ_3$ acts on $\Sigma_3$; show that there must be at least two fixed points.
 :::
 
 ::: {.solution}
@@ -24,10 +24,10 @@ Suppose $\mathbb{Z}_3$ acts on $\Sigma_3$; show that there must be at least two 
 ::: pf
 
 ::: pf-step
-Any action of $\mathbb Z/3$ on the orientable surface $\Sigma_3$ is orientation-preserving.
+Any action of $\ZZ/3$ on the orientable surface $\Sigma_3$ is orientation-preserving.
 
 ::: pf-proof
-The orientation character of the action is a homomorphism $\mathbb Z/3\to\mathbb Z/2$, which must be trivial.
+The orientation character of the action is a homomorphism $\ZZ/3\to\ZZ/2$, which must be trivial.
 :::
 
 :::

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let
 \[
-\Omega=\{z\in\mathbb C:|z|>1\text{ and }\operatorname{Re}z>-2\}.
+\Omega=\{z\in\CC:|z|>1\text{ and }\operatorname{Re}z>-2\}.
 \]
-Suppose $u:\Omega\to\mathbb R$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $|z|=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
+Suppose $u:\Omega\to\RR$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $|z|=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
 Determine $u(2)$.
 :::
 
@@ -171,7 +171,7 @@ is a conformal map from $\Omega$ onto the annulus
 \[
 A_r
 \coloneqq
-\{\zeta\in\mathbb C:r<|\zeta|<1\}.
+\{\zeta\in\CC:r<|\zeta|<1\}.
 \]
 
 

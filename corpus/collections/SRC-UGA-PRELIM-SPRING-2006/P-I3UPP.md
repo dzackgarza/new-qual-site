@@ -41,7 +41,7 @@ By the product rule for differentials:
 :::
 
 ::: pf-step
-Thus $\omega$ is an exact 1-form on $\mathbb{R}^2$ with potential function $f(x, y) = xy$.
+Thus $\omega$ is an exact 1-form on $\RR^2$ with potential function $f(x, y) = xy$.
 
 :::
 

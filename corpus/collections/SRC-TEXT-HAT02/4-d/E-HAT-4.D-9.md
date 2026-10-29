@@ -59,7 +59,7 @@ The map
 \[
 S^3\to Sp(2),\qquad q\mapsto\operatorname{diag}(q^{-1},q),
 \]
-is nullhomotopic: under \(\pi_3(Sp(1))\to\pi_3(Sp(2))\cong\mathbb Z\), the two diagonal blocks represent \(-1\) and \(+1\), so their sum is zero. Iterating gives
+is nullhomotopic: under \(\pi_3(Sp(1))\to\pi_3(Sp(2))\cong\ZZ\), the two diagonal blocks represent \(-1\) and \(+1\), so their sum is zero. Iterating gives
 \[
 \boxed{\operatorname{diag}(q_1,\ldots,q_n)
 \simeq\operatorname{diag}(q_1\cdots q_n,1,\ldots,1).}

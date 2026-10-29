@@ -82,7 +82,7 @@ hence \(xy>1\). Therefore \(z\in A\).
 
 The image is
 \[
-\boxed{f(A)=\{w\in\mathbb C:\operatorname{Im}w>2\}}.
+\boxed{f(A)=\{w\in\CC:\operatorname{Im}w>2\}}.
 \]
 
 

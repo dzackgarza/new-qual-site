@@ -25,7 +25,7 @@ B = \begin{bmatrix}
 27 & 0 & 3
 \end{bmatrix},
 $$
-and let $V' = \mathbb{C}^3$ be an irreducible $G$-module for a finite group $G$, with $g \in G$ acting via the matrix $A_g$.
+and let $V' = \CC^3$ be an irreducible $G$-module for a finite group $G$, with $g \in G$ acting via the matrix $A_g$.
 Let $$C = \frac{1}{|G|} \sum_{g} A_g B A_g^{-1}.$$
 
 (a) Calculate $\operatorname{Tr}(C)$, where $\operatorname{Tr}$ is the usual trace.
@@ -43,11 +43,11 @@ A_h C A_h^{-1}
 \frac1{|G|}\sum_{g\in G}A_{hg}BA_{hg}^{-1}
 =C,
 \]
-because left multiplication $g\mapsto hg$ permutes the elements of $G$. Hence $C$ commutes with every $A_h$. Since $\mathbb C^3$ is an irreducible complex $G$-module, Schur's lemma implies that
+because left multiplication $g\mapsto hg$ permutes the elements of $G$. Hence $C$ commutes with every $A_h$. Since $\CC^3$ is an irreducible complex $G$-module, Schur's lemma implies that
 \[
 C=\lambda I_3
 \]
-for some $\lambda\in\mathbb C$.
+for some $\lambda\in\CC$.
 
 For part (a), trace is invariant under conjugation, so
 \[

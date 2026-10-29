@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-1B
 kind: problem
-title: Proper continuous functions $\mathbb R^2\to\mathbb R$ attain a minimum or a maximum
+title: Proper continuous functions $\RR^2\to\RR$ attain a minimum or a maximum
 classification:
   areas: [prelim]
   topics: []

@@ -39,14 +39,14 @@ Choose one deleted point, say $p_{10}$, as the point at infinity for stereograph
 ::: pf-step
 Stereographic projection gives a homeomorphism
 $$
-S^2\setminus\{p_{10}\}\cong\mathbb R^2.
+S^2\setminus\{p_{10}\}\cong\RR^2.
 $$
 :::
 
 ::: pf-step
-Under this homeomorphism the other nine deleted points become distinct points $q_1,\dots,q_9\in\mathbb R^2$. Hence
+Under this homeomorphism the other nine deleted points become distinct points $q_1,\dots,q_9\in\RR^2$. Hence
 $$
-X\cong \mathbb R^2\setminus\{q_1,\dots,q_9\}.
+X\cong \RR^2\setminus\{q_1,\dots,q_9\}.
 $$
 :::
 
@@ -55,7 +55,7 @@ $$
 :::
 
 ::: pf-step
-The punctured plane $\mathbb R^2\setminus\{q_1,\dots,q_9\}$ is homotopy equivalent to a wedge of nine circles.
+The punctured plane $\RR^2\setminus\{q_1,\dots,q_9\}$ is homotopy equivalent to a wedge of nine circles.
 
 ::: pf-proof
 

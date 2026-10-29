@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA50
 kind: problem
-title: Fourier transform of the indicator of a ball in $\mathbb{R}^3$
+title: Fourier transform of the indicator of a ball in $\RR^3$
 classification:
   areas: [real-analysis]
   topics: []
@@ -25,7 +25,7 @@ $$
 \widetilde f(\vec k)
 =
 \frac1{(2\pi)^3}
-\int_{\mathbb R^3}
+\int_{\RR^3}
 f(\vec r)e^{-i\vec k\cdot\vec r}
 \,d^3r.
 $$
@@ -240,7 +240,7 @@ $$
 
 ::: pf-qed
 
-Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give the Fourier image for all $\vec k\in\mathbb R^3$.
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give the Fourier image for all $\vec k\in\RR^3$.
 
 :::
 

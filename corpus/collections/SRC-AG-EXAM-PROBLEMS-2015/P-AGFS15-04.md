@@ -75,7 +75,7 @@ k[z,z^{-1}].
 \]
 An automorphism \(\varphi\) of this \(k\)-algebra must send the unit \(z\) to a unit. The units of the Laurent polynomial ring are exactly
 \[
-k[z,z^{-1}]^\times=\{az^n:a\in k^\times,\ n\in\mathbb Z\}.
+k[z,z^{-1}]^\times=\{az^n:a\in k^\times,\ n\in\ZZ\}.
 \]
 Thus
 \[

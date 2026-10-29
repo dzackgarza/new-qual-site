@@ -68,11 +68,11 @@ The descending chain condition is necessary: there are injective non-surjective 
 
 ::: pf-proof
 
-Take $R=\mathbb Z$, $M=\mathbb Z$, and
+Take $R=\ZZ$, $M=\ZZ$, and
 \[
 f(n)=2n.
 \]
-This is a $\mathbb Z$-module homomorphism and is injective, but it is not surjective because $1\notin f(\mathbb Z)$.
+This is a $\ZZ$-module homomorphism and is injective, but it is not surjective because $1\notin f(\ZZ)$.
 
 :::
 

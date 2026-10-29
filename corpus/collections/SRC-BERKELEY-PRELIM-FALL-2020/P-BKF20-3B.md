@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF20-3B
 kind: problem
-title: Every closed subset of $\mathbb R$ is the closure of a countable set
+title: Every closed subset of $\RR$ is the closure of a countable set
 classification:
   areas:
   - prelim
@@ -34,7 +34,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that every closed subset $C\subseteq\mathbb R$ is the closure of a finite or countable set.
+Prove that every closed subset $C\subseteq\RR$ is the closure of a finite or countable set.
 :::
 
 ::: {.solution}

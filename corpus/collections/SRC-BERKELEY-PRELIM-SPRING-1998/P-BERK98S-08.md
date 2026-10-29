@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $m\ge0$ be an integer, let $a_1,\dots,a_m\in\mathbb Z$, and set
+Let $m\ge0$ be an integer, let $a_1,\dots,a_m\in\ZZ$, and set
 \[
 f(x)=\sum_{i=1}^m\frac{a_ix^i}{i!}.
 \]

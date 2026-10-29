@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be a nonconstant entire function.
+Let $f:\CC\to\CC$ be a nonconstant entire function.
 Without using either Picard theorem, show that there exist complex numbers $z$ of arbitrarily large modulus for which $f(z)$ is a positive real number.
 :::
 
@@ -56,9 +56,9 @@ g(z)=f(z)-M.
 \]
 Then
 \[
-g(\mathbb C)
+g(\CC)
 \subset
-\mathbb C\setminus[0,\infty).
+\CC\setminus[0,\infty).
 \]
 
 
@@ -89,7 +89,7 @@ is a positive real number, contradicting step [](#s1-1){.pf-ref}. Thus $g$ avoid
 There is an injective holomorphic map
 \[
 \Phi:
-\mathbb C\setminus[0,\infty)
+\CC\setminus[0,\infty)
 \longrightarrow
 \mathbb D.
 \]
@@ -99,7 +99,7 @@ There is an injective holomorphic map
 
 On the slit plane
 \[
-\mathbb C\setminus[0,\infty),
+\CC\setminus[0,\infty),
 \]
 choose the branch of the argument in $(0,2\pi)$ and define
 \[
@@ -133,7 +133,7 @@ is an injective holomorphic map into $\mathbb D$.
 
 The entire function
 \[
-\Phi\circ g:\mathbb C\to\mathbb D
+\Phi\circ g:\CC\to\mathbb D
 \]
 is constant.
 
@@ -182,7 +182,7 @@ Step [](#s1-5){.pf-ref} contradicts the hypothesis that $f$ is nonconstant.
 
 ::: {.pf-step #s1-7}
 
-Therefore, for every $R>0$, there exists $z\in\mathbb C$ with
+Therefore, for every $R>0$, there exists $z\in\CC$ with
 \[
 |z|>R
 \]

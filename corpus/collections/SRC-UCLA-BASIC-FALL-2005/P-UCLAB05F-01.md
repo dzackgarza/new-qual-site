@@ -31,14 +31,14 @@ Prove that the set of algebraic real numbers is countable.
 
 For each nonnegative integer $n$, the set
 \[
-\mathbb Z^{n+1}
+\ZZ^{n+1}
 \]
 is countable.
 
 
 ::: pf-proof
 
-The integers are countable, and every finite Cartesian product of countable sets is countable. Therefore $\mathbb Z^{n+1}$ is countable.
+The integers are countable, and every finite Cartesian product of countable sets is countable. Therefore $\ZZ^{n+1}$ is countable.
 
 :::
 
@@ -57,11 +57,11 @@ p(X)=a_0+a_1X+\cdots+a_nX^n
 \]
 for some $n\ge0$ and some tuple
 \[
-(a_0,\ldots,a_n)\in\mathbb Z^{n+1}
+(a_0,\ldots,a_n)\in\ZZ^{n+1}
 \]
 that is not identically zero. Hence $\mathcal P$ is the image of a subset of the countable union
 \[
-\bigcup_{n=0}^{\infty}\mathbb Z^{n+1}.
+\bigcup_{n=0}^{\infty}\ZZ^{n+1}.
 \]
 By step [](#s1-1){.pf-ref}, each term in this union is countable, so the union and therefore $\mathcal P$ are countable.
 
@@ -78,7 +78,7 @@ Every polynomial $p\in\mathcal P$ has only finitely many real roots.
 
 A nonzero polynomial of degree $d$ over a field has at most $d$ roots. In particular, each $p\in\mathcal P$ has a finite set
 \[
-Z_{\mathbb R}(p)=\{x\in\mathbb R:p(x)=0\}
+Z_{\RR}(p)=\{x\in\RR:p(x)=0\}
 \]
 of real roots.
 
@@ -90,7 +90,7 @@ of real roots.
 
 The set of algebraic real numbers is
 \[
-\bigcup_{p\in\mathcal P}Z_{\mathbb R}(p).
+\bigcup_{p\in\mathcal P}Z_{\RR}(p).
 \]
 
 
@@ -109,7 +109,7 @@ The set of algebraic real numbers is countable.
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, the index set $\mathcal P$ is countable. By step [](#s1-3){.pf-ref}, each set $Z_{\mathbb R}(p)$ is finite. Therefore the union in step [](#s1-4){.pf-ref} is a countable union of finite sets, hence countable.
+By step [](#s1-2){.pf-ref}, the index set $\mathcal P$ is countable. By step [](#s1-3){.pf-ref}, each set $Z_{\RR}(p)$ is finite. Therefore the union in step [](#s1-4){.pf-ref} is a countable union of finite sets, hence countable.
 
 :::
 

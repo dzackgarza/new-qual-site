@@ -25,20 +25,20 @@ audit:
 ---
 
 ::: {.problem}
-(a) Using the cup product structure, show there is no map $\mathbb{RP}^n \to \mathbb{RP}^m$ inducing a nontrivial map $H^1(\mathbb{RP}^m; \mathbb{Z}_2) \to H^1(\mathbb{RP}^n; \mathbb{Z}_2)$ if $n > m$.
+(a) Using the cup product structure, show there is no map $\mathbb{RP}^n \to \mathbb{RP}^m$ inducing a nontrivial map $H^1(\mathbb{RP}^m; \ZZ_2) \to H^1(\mathbb{RP}^n; \ZZ_2)$ if $n > m$.
 What is the corresponding result for maps $\mathbb{CP}^n \to \mathbb{CP}^m$?
 
 (b) Prove the Borsuk–Ulam theorem by the following argument.
-Suppose on the contrary that $f: S^n \to \mathbb{R}^n$ satisfies $f(x) \neq f(-x)$ for all $x$.
+Suppose on the contrary that $f: S^n \to \RR^n$ satisfies $f(x) \neq f(-x)$ for all $x$.
 Then define $g: S^n \to S^{n-1}$ by $g(x) = \bigl(f(x) - f(-x)\bigr) / \bigl|f(x) - f(-x)\bigr|$, so $g(-x) = -g(x)$ and $g$ induces a map $\mathbb{RP}^n \to \mathbb{RP}^{n-1}$.
 Show that part (a) applies to this map.
 :::
 
 ::: {.solution}
-With $\mathbb Z_2$ coefficients,
+With $\ZZ_2$ coefficients,
 \[
-H^*(\mathbb{RP}^r;\mathbb Z_2)\cong
-\mathbb Z_2[\alpha]/(\alpha^{r+1}),\qquad |\alpha|=1.
+H^*(\mathbb{RP}^r;\ZZ_2)\cong
+\ZZ_2[\alpha]/(\alpha^{r+1}),\qquad |\alpha|=1.
 \]
 Suppose $f:\mathbb{RP}^n\to\mathbb{RP}^m$ with $n>m$ induces a nonzero map on $H^1$. Since both $H^1$ groups are one-dimensional, if $\alpha_m,\alpha_n$ denote the generators then
 \[
@@ -52,16 +52,16 @@ contradicting $m+1\le n$, since $\alpha_n^{m+1}\ne0$. Thus every such map is zer
 
 Similarly
 \[
-H^*(\mathbb{CP}^r;\mathbb Z)\cong
-\mathbb Z[\beta]/(\beta^{r+1}),\qquad |\beta|=2.
+H^*(\mathbb{CP}^r;\ZZ)\cong
+\ZZ[\beta]/(\beta^{r+1}),\qquad |\beta|=2.
 \]
 If $n>m$ and $f:\mathbb{CP}^n\to\mathbb{CP}^m$ has $f^*(\beta_m)=d\beta_n$, then
 \[
 0=f^*(\beta_m^{m+1})=d^{m+1}\beta_n^{m+1}.
 \]
-Since $H^{2m+2}(\mathbb{CP}^n;\mathbb Z)$ is torsion-free and $\beta_n^{m+1}\ne0$, this forces $d=0$. Hence $f^*:H^2\to H^2$ is zero.
+Since $H^{2m+2}(\mathbb{CP}^n;\ZZ)$ is torsion-free and $\beta_n^{m+1}\ne0$, this forces $d=0$. Hence $f^*:H^2\to H^2$ is zero.
 
-For Borsuk--Ulam, suppose $f:S^n\to\mathbb R^n$ satisfies $f(x)\ne f(-x)$ for all $x$. Then
+For Borsuk--Ulam, suppose $f:S^n\to\RR^n$ satisfies $f(x)\ne f(-x)$ for all $x$. Then
 \[
 g(x)=\frac{f(x)-f(-x)}{|f(x)-f(-x)|}
 \]
@@ -69,5 +69,5 @@ defines an antipodal-equivariant map $g:S^n\to S^{n-1}$, so it descends to
 \[
 \bar g:\mathbb{RP}^n\to\mathbb{RP}^{n-1}.
 \]
-The map $\bar g$ is nontrivial on $H^1(-;\mathbb Z_2)$: on fundamental groups it sends the nontrivial loop in $\mathbb{RP}^n$ to the nontrivial loop in $\mathbb{RP}^{n-1}$, because an equivariant lift joins antipodal endpoints upstairs. This contradicts the first part with $m=n-1$. Therefore some $x$ satisfies $f(x)=f(-x)$.
+The map $\bar g$ is nontrivial on $H^1(-;\ZZ_2)$: on fundamental groups it sends the nontrivial loop in $\mathbb{RP}^n$ to the nontrivial loop in $\mathbb{RP}^{n-1}$, because an equivariant lift joins antipodal endpoints upstairs. This contradicts the first part with $m=n-1$. Therefore some $x$ satisfies $f(x)=f(-x)$.
 :::

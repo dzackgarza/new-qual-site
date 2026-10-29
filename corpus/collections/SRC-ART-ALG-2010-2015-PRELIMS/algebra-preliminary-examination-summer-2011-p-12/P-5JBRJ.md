@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5JBRJ
 kind: problem
-title: $\mathbb{Q}(\sqrt[3]{2})$ in cyclotomic extensions, splitting fields over finite
+title: $\QQ(\sqrt[3]{2})$ in cyclotomic extensions, splitting fields over finite
   fields, and homomorphisms from $S_4$
 classification:
   areas:
@@ -30,7 +30,7 @@ audit:
 For each of the following statements, determine if it is true or false.
 Explain your answers.
 
-a. The field $\mathbb{Q}(\sqrt[3]{2})$ is contained in some cyclotomic extension of $\mathbb{Q}$.
+a. The field $\QQ(\sqrt[3]{2})$ is contained in some cyclotomic extension of $\QQ$.
 
 b. Let $\mathbb{F}$ be a finite field, and $f(x) \in \mathbb{F}[x]$ be an irreducible polynomial of degree $n$.
 Then the splitting field of $f(x)$ over $\mathbb{F}$ has degree $n$ over $\mathbb{F}$.
@@ -53,20 +53,20 @@ The assertion in part (a) is false.
 
 ::: pf-proof
 
-Every cyclotomic field $L=\mathbb Q(\zeta_m)$ is the
+Every cyclotomic field $L=\QQ(\zeta_m)$ is the
 splitting field of $x^m-1$, which is separable in characteristic
-zero, so $L/\mathbb Q$ is finite Galois. An automorphism sends
+zero, so $L/\QQ$ is finite Galois. An automorphism sends
 $\zeta_m$ to $\zeta_m^a$ for some unit $a$ modulo $m$.
 This embeds its Galois group into the abelian group
-$(\mathbb Z/m\mathbb Z)^\times$: the image of the generator
+$(\ZZ/m\ZZ)^\times$: the image of the generator
 determines the automorphism, and composition multiplies the
 exponents. Thus its Galois group is abelian. Every subgroup
 is normal, so every intermediate field is Galois over
-$\mathbb Q$ by the Galois correspondence [@DF04].
+$\QQ$ by the Galois correspondence [@DF04].
 
-But $E=\mathbb Q(\sqrt[3]{2})$ is not normal over $\mathbb Q$.
+But $E=\QQ(\sqrt[3]{2})$ is not normal over $\QQ$.
 Indeed, $x^3-2$ is irreducible by Eisenstein at $2$ [@DF04],
-and $E\subseteq\mathbb R$ contains its real root but not its
+and $E\subseteq\RR$ contains its real root but not its
 two nonreal roots. Hence $E$ cannot be an intermediate field
 of a cyclotomic extension.
 

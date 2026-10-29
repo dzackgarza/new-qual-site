@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega \subset \mathbb{R}^n$ be a Lebesgue measurable set, $f : \Omega \to \mathbb{R}$ measurable and define
+Let $\Omega \subset \RR^n$ be a Lebesgue measurable set, $f : \Omega \to \RR$ measurable and define
 $$
 X := \{u \in L^\infty(\Omega) : u \geq f \text{ a.e. in } \Omega\}, \quad Y := \left\{u \in L^\infty(\Omega) : \int_\Omega u\varphi \, dx \geq \int_\Omega f\varphi \, dx \; \forall \varphi \in W\right\},
 $$

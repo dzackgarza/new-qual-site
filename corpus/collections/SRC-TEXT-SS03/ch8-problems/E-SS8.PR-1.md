@@ -29,7 +29,7 @@ Then $f$ is isogonal at $z _ { 0 }$ if and only if it is isotropic at $z _ { \ma
 :::
 
 ::: {.solution}
-Let $A=Df(z_0):\mathbb R^2\to\mathbb R^2$ be the real differential. For a unit vector $v=e^{i\theta}$,
+Let $A=Df(z_0):\RR^2\to\RR^2$ be the real differential. For a unit vector $v=e^{i\theta}$,
 \[
 f(z_0+rv)-f(z_0)=rAv+o(r),
 \]
@@ -39,7 +39,7 @@ so
 \]
 Thus $f$ is isotropic at $z_0$ exactly when there is a number $\lambda>0$ such that
 \[
-|Av|=\lambda|v|\qquad(v\in\mathbb R^2).
+|Av|=\lambda|v|\qquad(v\in\RR^2).
 \tag{1}
 \]
 By polarization, (1) is equivalent to
@@ -60,11 +60,11 @@ Conversely, suppose $f$ is isogonal. Then $A$ cannot kill a nonzero direction, s
 \]
 Thus $|Ae_1|=|Ae_2|=\lambda>0$, and since their images are orthogonal, (2) follows. Therefore $f$ is isotropic.
 
-It remains to identify the two possibilities for $A$. Every $Q\in O(2)$ has determinant $1$ or $-1$. If $\det Q=1$, then $Q$ is rotation by some angle and, after identifying $\mathbb R^2$ with $\mathbb C$,
+It remains to identify the two possibilities for $A$. Every $Q\in O(2)$ has determinant $1$ or $-1$. If $\det Q=1$, then $Q$ is rotation by some angle and, after identifying $\RR^2$ with $\CC$,
 \[
 Av=cv
 \]
-for some $c\in\mathbb C\setminus\{0\}$. Hence the complex derivative $f'(z_0)$ exists and equals $c$.
+for some $c\in\CC\setminus\{0\}$. Hence the complex derivative $f'(z_0)$ exists and equals $c$.
 
 If $\det Q=-1$, then $Q$ is a rotation followed by reflection, so
 \[

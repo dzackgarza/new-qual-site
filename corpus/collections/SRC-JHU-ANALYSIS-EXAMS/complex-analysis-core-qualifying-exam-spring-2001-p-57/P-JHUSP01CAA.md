@@ -87,7 +87,7 @@ $$
 $$
 By continuity the same bound holds at the removable points. Thus $h$ is a
 bounded entire function. Liouville's theorem implies that $h\equiv c$ for some
-$c\in\mathbb C$. Consequently
+$c\in\CC$. Consequently
 $$
 f=cg
 $$

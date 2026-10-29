@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be Lipschitz.
-Suppose that for every $x\in\mathbb R$,
+Let $f:\RR\to\RR$ be Lipschitz.
+Suppose that for every $x\in\RR$,
 \[
 \lim_{n\to\infty}n\left[f\left(x+\frac1n\right)-f(x)\right]=0.
 \]
@@ -37,7 +37,7 @@ be a Lipschitz constant for $f$:
 \le
 L|x-y|
 \]
-for all $x,y\in\mathbb R$.
+for all $x,y\in\RR$.
 
 ::: pf
 
@@ -79,7 +79,7 @@ Multiplying by $n$ gives
 
 ::: {.pf-step #s1-2}
 
-For every fixed $x\in\mathbb R$,
+For every fixed $x\in\RR$,
 \[
 g_n(x)\to0.
 \]
@@ -286,7 +286,7 @@ f(b)-f(a)=0.
 
 ::: pf-step
 
-The function $f$ is constant on $\mathbb R$.
+The function $f$ is constant on $\RR$.
 
 
 ::: pf-proof
@@ -308,7 +308,7 @@ Consequently $f$ is differentiable everywhere, with
 \[
 \boxed{f'(x)=0}
 \]
-for every $x\in\mathbb R$.
+for every $x\in\RR$.
 
 
 ::: pf-proof

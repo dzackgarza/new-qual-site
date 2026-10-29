@@ -162,7 +162,7 @@ $$
 =
 (14+t,-9-2t,t),
 \qquad
-t\in\mathbb R.
+t\in\RR.
 }
 $$
 

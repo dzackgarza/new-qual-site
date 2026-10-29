@@ -67,7 +67,7 @@ so equality is attained. Therefore
 
 (c) Define
 \[
-F(A)=\{x^HAx:x\in\mathbb C^n,\ x^Hx=1\},
+F(A)=\{x^HAx:x\in\CC^n,\ x^Hx=1\},
 \]
 \[
 \rho(A)=\max\{ |\lambda|:\lambda\in\operatorname{spec}(A)\},

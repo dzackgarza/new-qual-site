@@ -18,10 +18,10 @@ audit:
 ::: {.exercise}
 21. Certain sets have geometric properties that guarantee they are simply connected.
 
-(a) An open set $\Omega \subset \mathbb { C }$ is convex if for any two points in Ω, the straight line segment between them is contained in Ω. Prove that a convex open set is simply connected.
+(a) An open set $\Omega \subset \CC$ is convex if for any two points in Ω, the straight line segment between them is contained in Ω. Prove that a convex open set is simply connected.
 
-(b) More generally, an open set $\Omega \subset \mathbb { C }$ is star-shaped if there exists a point $z _ { 0 } \in \Omega$ such that for any $z \in \Omega ,$ the straight line segment between $z_0$ and $z$ is contained in Ω. Prove that a star-shaped open set is simply connected.
-Conclude that the slit plane $\mathbb { C } - \{ ( - \infty , 0 ] \}$ (and more generally any sector, convex or not) is simply connected.
+(b) More generally, an open set $\Omega \subset \CC$ is star-shaped if there exists a point $z _ { 0 } \in \Omega$ such that for any $z \in \Omega ,$ the straight line segment between $z_0$ and $z$ is contained in Ω. Prove that a star-shaped open set is simply connected.
+Conclude that the slit plane $\CC - \{ ( - \infty , 0 ] \}$ (and more generally any sector, convex or not) is simply connected.
 
 (c) What are other examples of open sets that are simply connected?
 :::
@@ -42,7 +42,7 @@ contracts every loop to $z_0$.
 
 The slit plane
 \[
-\mathbb C\setminus(-\infty,0]
+\CC\setminus(-\infty,0]
 \]
 is star-shaped with respect to any positive real point, for example $1$: if $z$ is not on the nonpositive real axis, then the segment from $1$ to $z$ cannot cross that ray except possibly at its endpoint, which is excluded. Hence it is simply connected. Likewise a sector $\{z\ne0:\alpha<\arg z<\beta\}$ with $0<\beta-\alpha\le2\pi$ is star-shaped with respect to any point $c$ of its bisecting ray: every $z$ in the sector has argument within $(\beta-\alpha)/2\le\pi$ of $\arg c$, strictly less than $\pi$, so along the segment from $c$ to $z$ the argument moves monotonically between $\arg c$ and $\arg z$ and the segment avoids $0$. Hence every such sector is simply connected.
 

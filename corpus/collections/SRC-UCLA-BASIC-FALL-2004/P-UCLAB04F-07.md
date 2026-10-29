@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-The point $P=(1,1,1)$ belongs to the set $S\subset\mathbb R^3$ defined by
+The point $P=(1,1,1)$ belongs to the set $S\subset\RR^3$ defined by
 \[
 x^4y^2+x^2z+yz^2=3.
 \]
@@ -94,12 +94,12 @@ Differentiate the polynomial $G$ with respect to $z$. Evaluating at $(1,1,1)$ gi
 
 There are open neighborhoods
 \[
-W\subseteq\mathbb R^2
+W\subseteq\RR^2
 \quad\text{of }(1,1)
 \]
 and
 \[
-J\subseteq\mathbb R
+J\subseteq\RR
 \quad\text{of }1,
 \]
 and a differentiable function
@@ -119,7 +119,7 @@ for every $(x,y)\in W$.
 
 ::: pf-proof
 
-The map $G:\mathbb R^3\to\mathbb R$ is continuously differentiable because it is a polynomial. By step [](#s1-1){.pf-ref},
+The map $G:\RR^3\to\RR$ is continuously differentiable because it is a polynomial. By step [](#s1-1){.pf-ref},
 \[
 G(1,1,1)=0,
 \]

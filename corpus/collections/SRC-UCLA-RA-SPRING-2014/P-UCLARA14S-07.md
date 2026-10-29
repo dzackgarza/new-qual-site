@@ -29,7 +29,7 @@ Characterize all entire functions $f$ such that $|f(z)|>0$ for all sufficiently 
 
 ::: {.pf-step #s1-1}
 
-Such a function $f$ has only finitely many zeros in $\mathbb C$.
+Such a function $f$ has only finitely many zeros in $\CC$.
 
 
 ::: pf-proof
@@ -71,7 +71,7 @@ g(z)
 \]
 extends to an entire function with no zeros.
 
-Since $\mathbb C$ is simply connected and $g$ is nonvanishing, the logarithmic derivative
+Since $\CC$ is simply connected and $g$ is nonvanishing, the logarithmic derivative
 \[
 \frac{g'}g
 \]
@@ -225,7 +225,7 @@ Hence
 \[
 h(z)=az+b
 \]
-for some $a,b\in\mathbb C$, and every function satisfying the hypotheses has the form
+for some $a,b\in\CC$, and every function satisfying the hypotheses has the form
 \[
 \boxed{
 f(z)=p(z)e^{az+b}
@@ -252,7 +252,7 @@ Conversely, every function
 \[
 f(z)=p(z)e^{az+b},
 \]
-with $p$ a nonzero polynomial and $a,b\in\mathbb C$, satisfies the two hypotheses.
+with $p$ a nonzero polynomial and $a,b\in\CC$, satisfies the two hypotheses.
 
 
 ::: pf-proof

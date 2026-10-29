@@ -98,7 +98,7 @@ this gives respectively
 
 For (d), restrict the permutation representation of $S_5$ to $S_3\times S_2$. The first three letters give the permutation representation of $S_3$, and the last two give the permutation representation of $S_2$. Therefore
 \[
-\mathbb C^5\downarrow_{S_3\times S_2}
+\CC^5\downarrow_{S_3\times S_2}
 \cong (1\oplus\rho)\boxtimes 1
 \oplus 1\boxtimes(1\oplus\varepsilon_2).
 \]

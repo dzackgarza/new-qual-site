@@ -30,7 +30,7 @@ There exists a 1-dimensional manifold that is not orientable when Hausdorffness 
 
 Construct
 $$
-X=\Bigl((\mathbb R\times\{+\})\sqcup(\mathbb R\times\{-\})\Bigr)\big/\!\!\sim
+X=\Bigl((\RR\times\{+\})\sqcup(\RR\times\{-\})\Bigr)\big/\!\!\sim
 $$
 with the equivalence relation:
 $$

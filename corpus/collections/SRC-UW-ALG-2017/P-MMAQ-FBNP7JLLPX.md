@@ -48,7 +48,7 @@ for a homomorphism
 \]
 Now
 \[
-\operatorname{Aut}(C_{19})\cong (\mathbb Z/19\mathbb Z)^\times\cong C_{18}.
+\operatorname{Aut}(C_{19})\cong (\ZZ/19\ZZ)^\times\cong C_{18}.
 \]
 Since \(C_{18}\) has a unique subgroup of order \(3\), there are, up to automorphisms of \(C_3\) and \(C_{19}\), exactly two possible actions:
 

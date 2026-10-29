@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine all subgroups of the Galois group and all intermediate fields of the splitting (over $\mathbb{Q}$) of the polynomial $(x^{3}-2)(x^{2}-3)\in \mathbb{Q}[x]$.
+Determine all subgroups of the Galois group and all intermediate fields of the splitting (over $\QQ$) of the polynomial $(x^{3}-2)(x^{2}-3)\in \QQ[x]$.
 :::
 
 ::: {.solution}

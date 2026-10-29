@@ -80,9 +80,9 @@ So it remains to classify the case \(k=1\).
 
 For such a map, the local model near the unique preimage is an invertible matrix
 \[
-A\in GL_n(\mathbb R).
+A\in GL_n(\RR).
 \]
-The group \(GL_n(\mathbb R)\) has exactly two path-components, distinguished by the sign of the determinant. Gaussian elimination through invertible matrices (or polar decomposition) gives a path in \(GL_n(\mathbb R)\) from \(A\) to
+The group \(GL_n(\RR)\) has exactly two path-components, distinguished by the sign of the determinant. Gaussian elimination through invertible matrices (or polar decomposition) gives a path in \(GL_n(\RR)\) from \(A\) to
 \[
 I\quad\text{if }\det A>0,
 \]
@@ -103,7 +103,7 @@ then
 \]
 Writing
 \[
-d=\sum_i\varepsilon_i\in\mathbb Z,
+d=\sum_i\varepsilon_i\in\ZZ,
 \]
 we obtain
 \[

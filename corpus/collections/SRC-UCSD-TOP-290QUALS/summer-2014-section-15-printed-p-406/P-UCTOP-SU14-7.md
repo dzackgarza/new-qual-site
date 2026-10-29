@@ -58,7 +58,7 @@ The covering $p$ cannot have infinitely many sheets.
 
 ::: pf-proof
 
-If it had infinitely many sheets, then $\widehat N$ would be a connected noncompact $n$-manifold: an infinite-sheeted cover of the compact manifold $N$ cannot itself be compact. A connected noncompact $n$-manifold has $H_n(\widehat N;\mathbb Z)=0$. Hence
+If it had infinitely many sheets, then $\widehat N$ would be a connected noncompact $n$-manifold: an infinite-sheeted cover of the compact manifold $N$ cannot itself be compact. A connected noncompact $n$-manifold has $H_n(\widehat N;\ZZ)=0$. Hence
 $$
 \widehat f_*[M]=0,
 $$

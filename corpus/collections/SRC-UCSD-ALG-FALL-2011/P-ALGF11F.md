@@ -97,18 +97,18 @@ Therefore \(M/K\) is Galois.
 ::: {.pf-step #part-b-tower-galois}
 For part (b), take
 \[
-K=\mathbb Q,
+K=\QQ,
 \qquad
-L=\mathbb Q(\sqrt2),
+L=\QQ(\sqrt2),
 \qquad
-M=\mathbb Q(\sqrt[4]{2}).
+M=\QQ(\sqrt[4]{2}).
 \]
 Then \(L/K\) and \(M/L\) are Galois.
 
 ::: pf-proof
 The extension
 \[
-\mathbb Q(\sqrt2)/\mathbb Q
+\QQ(\sqrt2)/\QQ
 \]
 is quadratic in characteristic zero, hence Galois.
 
@@ -144,18 +144,18 @@ The polynomial
 \[
 x^4-2
 \]
-is Eisenstein at \(2\), so it is the minimal polynomial of \(\alpha\) over \(\mathbb Q\).
+is Eisenstein at \(2\), so it is the minimal polynomial of \(\alpha\) over \(\QQ\).
 Its roots are
 \[
 \alpha,-\alpha,i\alpha,-i\alpha.
 \]
 The field
 \[
-M=\mathbb Q(\alpha)
+M=\QQ(\alpha)
 \]
-is contained in \(\mathbb R\), so it does not contain \(i\alpha\).
+is contained in \(\RR\), so it does not contain \(i\alpha\).
 Hence the minimal polynomial \(x^4-2\) does not split over \(M\).
-Thus \(M/\mathbb Q\) is not normal, and therefore is not Galois.
+Thus \(M/\QQ\) is not normal, and therefore is not Galois.
 :::
 
 :::

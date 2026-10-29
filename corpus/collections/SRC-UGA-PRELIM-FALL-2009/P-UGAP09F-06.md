@@ -19,7 +19,7 @@ Let $V$ be the real vector space spanned by
 \[
 1,\qquad \sin^2x,\qquad \cos^2x,\qquad \sin(2x),\qquad \cos(2x).
 \]
-Find $\dim_{\mathbb R}V$ and exhibit a basis for $V$ over $\mathbb R$.
+Find $\dim_{\RR}V$ and exhibit a basis for $V$ over $\RR$.
 :::
 
 ::: {.solution}

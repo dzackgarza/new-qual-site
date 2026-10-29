@@ -54,7 +54,7 @@ $$
 Find a real number c so that $P ( z )$ does not vanish on the line
 
 $$
-L = \{z: z = x + i c, x \in \mathbb {R} \}.
+L = \{z: z = x + i c, x \in \RR \}.
 $$
 
 (c) Set
@@ -117,7 +117,7 @@ Combining the two estimates yields
 
 For (b), assuming the differential operator is nonzero, $P$ is a nonzero polynomial and therefore has finitely many roots. Choose any real number $c$ that is not the imaginary part of any root of $P$. Then
 \[
-L=\{x+ic:x\in\mathbb R\}
+L=\{x+ic:x\in\RR\}
 \]
 contains no zero of $P$.
 

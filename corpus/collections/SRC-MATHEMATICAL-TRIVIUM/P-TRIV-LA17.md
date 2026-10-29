@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA17
 kind: problem
-title: Which reflections in $\mathbb{R}^n$ are rotations
+title: Which reflections in $\RR^n$ are rotations
 classification:
   areas: [prelim]
   topics: []
@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Consider the reflection maps in $\mathbb { R } ^ { n }$ . The reflection across the origin transforms every vector ${ \vec { x } } \in \mathbb { R } ^ { n } { \mathrm { ~ t o ~ } } - { \vec { x } } .$ The reflection across one of the basis axis $O i$ inverts all coordinates of $\vec { x }$ except $x _ { i }$ Similarly, one can define the reflections across the planes in $\mathbb { R } ^ { 3 }$ and higher dimensional hyperplanes in $\mathbb { R } ^ { n } , n > 3$ Some of these reflections are equivalent to rotations around the origin O, others are not.
+Consider the reflection maps in $\RR ^ { n }$ . The reflection across the origin transforms every vector ${ \vec { x } } \in \RR ^ { n } { \mathrm { ~ t o ~ } } - { \vec { x } } .$ The reflection across one of the basis axis $O i$ inverts all coordinates of $\vec { x }$ except $x _ { i }$ Similarly, one can define the reflections across the planes in $\RR ^ { 3 }$ and higher dimensional hyperplanes in $\RR ^ { n } , n > 3$ Some of these reflections are equivalent to rotations around the origin O, others are not.
 
-(a) Observe that in $\mathbb { R } ^ { 2 }$ the central reflection is equivalent to the rotation by an angle π around O. Show that no reflections across a line crossing O can be achieved by any rotation.
+(a) Observe that in $\RR ^ { 2 }$ the central reflection is equivalent to the rotation by an angle π around O. Show that no reflections across a line crossing O can be achieved by any rotation.
 
-(b) In $\mathbb { R } ^ { 3 }$ , find if one can achieve by some rotation around $O \ 1 )$ the reflection across $O , 2 )$ the reflection across an arbitrary line crossing $O , 3 )$ the reflection across an arbitrary plane crossing O.
+(b) In $\RR ^ { 3 }$ , find if one can achieve by some rotation around $O \ 1 )$ the reflection across $O , 2 )$ the reflection across an arbitrary line crossing $O , 3 )$ the reflection across an arbitrary plane crossing O.
 
-(c) In $\mathbb { R } ^ { n }$ , formulate and prove a general statement about the existence of rotations that perform the reflection across a given m-dimensional plane, $m = 0 , 1 , . . . , n - 1$ , crossing the origin (where $m = 1$ corresponds to the line, and $m = 0 \textrm { - } \mathrm { t o }$ the point).
+(c) In $\RR ^ { n }$ , formulate and prove a general statement about the existence of rotations that perform the reflection across a given m-dimensional plane, $m = 0 , 1 , . . . , n - 1$ , crossing the origin (where $m = 1$ corresponds to the line, and $m = 0 \textrm { - } \mathrm { t o }$ the point).
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ that is, an element of $SO(n)$.
 
 ::: pf-step
 
-Reflection across an $m$-dimensional linear subspace $U\subseteq\mathbb R^n$
+Reflection across an $m$-dimensional linear subspace $U\subseteq\RR^n$
 acts as
 $$
 R_U
@@ -64,7 +64,7 @@ $$
 
 Choose an orthonormal basis adapted to
 $$
-\mathbb R^n=U\oplus U^\perp.
+\RR^n=U\oplus U^\perp.
 $$
 In that basis,
 $$
@@ -82,7 +82,7 @@ The determinant is the product of these diagonal entries.
 
 ::: {.pf-step #s1-3}
 
-In $\mathbb R^2$, reflection through the origin is rotation by $\pi$.
+In $\RR^2$, reflection through the origin is rotation by $\pi$.
 
 
 ::: pf-proof
@@ -104,7 +104,7 @@ which is exactly the matrix of a rotation through angle $\pi$.
 
 ::: {.pf-step #s1-4}
 
-In $\mathbb R^2$, reflection across any line through the origin is not a
+In $\RR^2$, reflection across any line through the origin is not a
 rotation.
 
 
@@ -136,7 +136,7 @@ Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the two assertions.
 
 ::: {.pf-step #s1-6}
 
-In $\mathbb R^3$, central reflection through the origin is not a
+In $\RR^3$, central reflection through the origin is not a
 rotation.
 
 
@@ -154,7 +154,7 @@ by step [](#s1-2){.pf-ref}. A rotation belongs to $SO(3)$ and has determinant $1
 
 ::: {.pf-step #s1-7}
 
-In $\mathbb R^3$, reflection across a line through the origin is a
+In $\RR^3$, reflection across a line through the origin is a
 rotation by $\pi$ around that line.
 
 
@@ -162,7 +162,7 @@ rotation by $\pi$ around that line.
 
 Let the line be $U$. Then
 $$
-\mathbb R^3=U\oplus U^\perp,
+\RR^3=U\oplus U^\perp,
 $$
 where $U^\perp$ is a $2$-plane. The reflection fixes $U$ and acts as $-I$ on
 $U^\perp$. On a $2$-plane, $-I$ is rotation by $\pi$. Hence the whole map is
@@ -174,7 +174,7 @@ the usual rotation by $\pi$ about the axis $U$.
 
 ::: {.pf-step #s1-8}
 
-In $\mathbb R^3$, reflection across a plane through the origin is not a
+In $\RR^3$, reflection across a plane through the origin is not a
 rotation.
 
 

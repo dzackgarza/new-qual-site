@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be continuous.
+Let $f:[0,1]\to\RR$ be continuous.
 Show that
 \[
 \lim_{n\to\infty}(n+1)\int_0^1 x^n f(x)\,dx=f(1).

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP10-I2
 kind: problem
-title: Point-set properties of $\mathbb R^n$ and the closed long ray
+title: Point-set properties of $\RR^n$ and the closed long ray
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft
@@ -11,7 +11,7 @@ audit:
 ---
 
 ::: {.problem}
-For each of the spaces $\mathbb R^n$ and $\overline{S_\Omega}$, determine which of the following properties hold, and justify each answer:
+For each of the spaces $\RR^n$ and $\overline{S_\Omega}$, determine which of the following properties hold, and justify each answer:
 
 1. connected;
 2. path-connected;
@@ -49,7 +49,7 @@ with lexicographic order by adjoining its final endpoint
 
 The Euclidean space
 \[
-\mathbb R^n
+\RR^n
 \]
 is path-connected, hence connected.
 
@@ -58,7 +58,7 @@ is path-connected, hence connected.
 
 For
 \[
-x,y\in\mathbb R^n,
+x,y\in\RR^n,
 \]
 the straight-line path
 \[
@@ -71,7 +71,7 @@ the straight-line path
 is continuous and joins $x$ to $y$.
 Thus
 \[
-\mathbb R^n
+\RR^n
 \]
 is path-connected.
 Every path-connected space is connected.
@@ -84,7 +84,7 @@ Every path-connected space is connected.
 
 The space
 \[
-\mathbb R^n
+\RR^n
 \]
 is not compact.
 
@@ -96,13 +96,13 @@ By the Heine--Borel theorem, a subset of Euclidean space is compact if and
 only if it is closed and bounded.
 Thus
 \[
-\mathbb R^n
+\RR^n
 \]
 is not compact.
 
 Equivalently, the open cover
 \[
-\{B(0,m):m\in\mathbb N\}
+\{B(0,m):m\in\NN\}
 \]
 has no finite subcover.
 
@@ -114,7 +114,7 @@ has no finite subcover.
 
 The space
 \[
-\mathbb R^n
+\RR^n
 \]
 is Hausdorff, completely regular, normal, and metrizable.
 
@@ -146,7 +146,7 @@ n\ge1,
 \]
 the classification of
 \[
-\mathbb R^n
+\RR^n
 \]
 is
 \[
@@ -160,7 +160,7 @@ is
 &\text{normal}
 &\text{metrizable}\\
 \hline
-\mathbb R^n
+\RR^n
 &\mathrm{yes}
 &\mathrm{yes}
 &\mathrm{no}

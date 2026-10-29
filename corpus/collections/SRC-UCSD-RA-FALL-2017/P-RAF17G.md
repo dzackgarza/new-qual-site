@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $AC([0,1])$ denote the absolutely continuous functions on $[0,1]$ with values in $\mathbb{R}$ and for $1 \leq p < \infty$, let
+Let $AC([0,1])$ denote the absolutely continuous functions on $[0,1]$ with values in $\RR$ and for $1 \leq p < \infty$, let
 $$
 \mathcal{C}_p := \{f \in AC([0,1]) : f(0) = 0 \text{ and } \int_{[0,1]} |f'(x)|^p\,dx \leq 1\}
 $$

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Must the eigenvectors of a linear transformation
 \[
-T\colon\mathbb C^n\to\mathbb C^n
+T\colon\CC^n\to\CC^n
 \]
-span $\mathbb C^n$?
+span $\CC^n$?
 Prove your assertion.
 :::
 
@@ -46,7 +46,7 @@ It suffices to give one complex linear transformation whose eigenvectors do not 
 
 Consider
 \[
-T:\mathbb C^2\to\mathbb C^2
+T:\CC^2\to\CC^2
 \]
 with matrix
 \[
@@ -85,7 +85,7 @@ The eigenspace for the eigenvalue $1$ is
 \[
 E_1
 =
-\operatorname{span}_{\mathbb C}\{(1,0)\}.
+\operatorname{span}_{\CC}\{(1,0)\}.
 \]
 
 
@@ -112,10 +112,10 @@ which vanishes exactly when $y=0$. Therefore
 \ker(A-I)
 =
 \left\{
-\binom{x}{0}:x\in\mathbb C
+\binom{x}{0}:x\in\CC
 \right\}
 =
-\operatorname{span}_{\mathbb C}\{(1,0)\}.
+\operatorname{span}_{\CC}\{(1,0)\}.
 \]
 
 :::
@@ -124,12 +124,12 @@ which vanishes exactly when $y=0$. Therefore
 
 ::: {.pf-step #s1-4}
 
-The eigenvectors of $T$ do not span $\mathbb C^2$.
+The eigenvectors of $T$ do not span $\CC^2$.
 
 
 ::: pf-proof
 
-Every eigenvector belongs to the one-dimensional eigenspace $E_1$ from step [](#s1-3){.pf-ref}. Thus the span of all eigenvectors is $E_1$, which has dimension $1$ and is strictly smaller than $\mathbb C^2$.
+Every eigenvector belongs to the one-dimensional eigenspace $E_1$ from step [](#s1-3){.pf-ref}. Thus the span of all eigenvectors is $E_1$, which has dimension $1$ and is strictly smaller than $\CC^2$.
 
 :::
 

@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Prove carefully that $\mathbb R^2$ is not a countable union of sets $S_i$, $i=1,2,\ldots$, with each $S_i$ contained in some straight line $L_i$ in $\mathbb R^2$.
+Prove carefully that $\RR^2$ is not a countable union of sets $S_i$, $i=1,2,\ldots$, with each $S_i$ contained in some straight line $L_i$ in $\RR^2$.
 :::
 
 ::: {.solution}
 
 Let
 \[
-C=\{(t,t^2):t\in\mathbb R\}
+C=\{(t,t^2):t\in\RR\}
 \]
 be the standard parabola.
 
@@ -31,7 +31,7 @@ be the standard parabola.
 
 ::: {.pf-step #s1-1}
 
-Every straight line in $\mathbb R^2$ meets $C$ in at most two points.
+Every straight line in $\RR^2$ meets $C$ in at most two points.
 
 
 ::: pf-proof
@@ -67,7 +67,7 @@ This quadratic equation has at most two real roots. Hence the line meets $C$ in 
 
 If
 \[
-\mathbb R^2=\bigcup_{i=1}^{\infty}S_i
+\RR^2=\bigcup_{i=1}^{\infty}S_i
 \qquad\text{with}\qquad
 S_i\subseteq L_i,
 \]
@@ -124,11 +124,11 @@ The parabola $C$ is uncountable.
 
 The map
 \[
-\mathbb R\to C,
+\RR\to C,
 \qquad
 t\mapsto(t,t^2),
 \]
-is a bijection. Since $\mathbb R$ is uncountable, so is $C$.
+is a bijection. Since $\RR$ is uncountable, so is $C$.
 
 :::
 
@@ -136,12 +136,12 @@ is a bijection. Since $\mathbb R$ is uncountable, so is $C$.
 
 ::: {.pf-step #s1-6}
 
-Therefore $\mathbb R^2$ cannot be a countable union of subsets of straight lines.
+Therefore $\RR^2$ cannot be a countable union of subsets of straight lines.
 
 
 ::: pf-proof
 
-Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in step [](#s1-2){.pf-ref}. Hence no such countable family $(S_i)$ can cover $\mathbb R^2$.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in step [](#s1-2){.pf-ref}. Hence no such countable family $(S_i)$ can cover $\RR^2$.
 
 :::
 

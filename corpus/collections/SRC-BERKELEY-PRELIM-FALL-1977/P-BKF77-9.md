@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ be continuously differentiable with $f(0)=0$. Prove that
+Let $f:[0,1]\to\RR$ be continuously differentiable with $f(0)=0$. Prove that
 \[
 \sup_{0\le x\le1}|f(x)|\le\sqrt{\int_0^1(f'(x))^2\,dx}.
 \]

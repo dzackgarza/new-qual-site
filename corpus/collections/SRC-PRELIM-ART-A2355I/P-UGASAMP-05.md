@@ -32,7 +32,7 @@ The function \(|\sin x|\) is \(\pi\)-periodic.
 
 ::: pf-proof
 
-For every \(x\in\mathbb R\),
+For every \(x\in\RR\),
 \[
 |\sin(x+\pi)|
 =

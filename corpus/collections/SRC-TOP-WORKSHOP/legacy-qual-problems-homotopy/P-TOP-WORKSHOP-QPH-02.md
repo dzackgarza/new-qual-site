@@ -43,7 +43,7 @@ be the inclusion.
 One has
 \[
 \boxed{
-\pi_1(X)\cong\mathbb Z\oplus\mathbb Z}.
+\pi_1(X)\cong\ZZ\oplus\ZZ}.
 \]
 
 
@@ -55,7 +55,7 @@ The fundamental group of a product is the product of the fundamental groups:
 \cong
 \pi_1(S^1)\times\pi_1(S^1)
 \cong
-\mathbb Z\oplus\mathbb Z.
+\ZZ\oplus\ZZ.
 \]
 
 :::
@@ -67,7 +67,7 @@ The fundamental group of a product is the product of the fundamental groups:
 One has
 \[
 \boxed{
-\pi_1(Y)\cong\mathbb Z}.
+\pi_1(Y)\cong\ZZ}.
 \]
 
 
@@ -79,7 +79,7 @@ D^2\times S^1
 \simeq
 S^1.
 \]
-Hence its fundamental group is \(\mathbb Z\).
+Hence its fundamental group is \(\ZZ\).
 
 :::
 
@@ -115,7 +115,7 @@ is nontrivial in \(\pi_1(X)\).
 
 Under the identification
 \[
-\pi_1(X)\cong\mathbb Z\oplus\mathbb Z,
+\pi_1(X)\cong\ZZ\oplus\ZZ,
 \]
 the loop \(m\) represents
 \[

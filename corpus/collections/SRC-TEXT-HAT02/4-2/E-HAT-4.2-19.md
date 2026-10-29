@@ -40,7 +40,7 @@ Since \(\widetilde X\) is contractible, the long exact sequence gives
 \]
 Thus \(\widetilde X^{\,n}\) is \((n-1)\)-connected. Hurewicz gives
 \[
-\pi_n(\widetilde X^{\,n})\cong H_n(\widetilde X^{\,n};\mathbb Z).
+\pi_n(\widetilde X^{\,n})\cong H_n(\widetilde X^{\,n};\ZZ).
 \]
 Because \(\widetilde X^{\,n}\) has no \((n+1)\)-cells,
 \[

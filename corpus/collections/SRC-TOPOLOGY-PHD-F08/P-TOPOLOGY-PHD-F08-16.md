@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-16
 kind: problem
-title: Deformation retracts and the fundamental group of $\mathbb R^3$ minus a circle
+title: Deformation retracts and the fundamental group of $\RR^3$ minus a circle
 classification:
   areas:
   - topology
@@ -32,7 +32,7 @@ audit:
 
 ::: {.problem}
 Give the definitions of deformation retract and strong deformation retract for topological spaces.
-Compute the fundamental group of $\mathbb R^3-C$ where $C$ denotes the circle $x^2+y^2=1$, $z=0$.
+Compute the fundamental group of $\RR^3-C$ where $C$ denotes the circle $x^2+y^2=1$, $z=0$.
 :::
 
 ::: {.solution}
@@ -77,7 +77,7 @@ for every $a\in A$ and $t\in I$.
 
 Let
 \[
-C=\{(x,y,z)\in\mathbb R^3:x^2+y^2=1,\ z=0\}.
+C=\{(x,y,z)\in\RR^3:x^2+y^2=1,\ z=0\}.
 \]
 
 ::: pf
@@ -85,7 +85,7 @@ C=\{(x,y,z)\in\mathbb R^3:x^2+y^2=1,\ z=0\}.
 ::: {.pf-step #circle-becomes-great-circle}
 Under inverse stereographic projection
 \[
-\Phi:\mathbb R^3\longrightarrow S^3\setminus\{N\}\subseteq\mathbb R^4,
+\Phi:\RR^3\longrightarrow S^3\setminus\{N\}\subseteq\RR^4,
 \]
 the circle $C$ becomes the great circle
 \[
@@ -95,7 +95,7 @@ C_0=\{(x_1,x_2,0,0):x_1^2+x_2^2=1\}.
 ::: pf-proof
 Take
 \[
-S^3=\{(x_1,x_2,x_3,x_4)\in\mathbb R^4:x_1^2+x_2^2+x_3^2+x_4^2=1\}
+S^3=\{(x_1,x_2,x_3,x_4)\in\RR^4:x_1^2+x_2^2+x_3^2+x_4^2=1\}
 \]
 and
 \[
@@ -118,7 +118,7 @@ and $z=0$, so
 Thus $\Phi(C)=C_0$.
 Consequently
 \[
-\mathbb R^3\setminus C
+\RR^3\setminus C
 \cong
 S^3\setminus(C_0\cup\{N\}).
 \]
@@ -139,7 +139,7 @@ D=\{(0,0,x_3,x_4):x_3^2+x_4^2=1\}\cong S^1.
 ::: pf-proof
 Write a point of $S^3$ as
 \[
-(u,v)\in\mathbb R^2\times\mathbb R^2,
+(u,v)\in\RR^2\times\RR^2,
 \qquad
 \|u\|^2+\|v\|^2=1.
 \]
@@ -182,14 +182,14 @@ Thus $H$ is a strong deformation retraction of $M$ onto $D$.
 ::: {.pf-step #pi1-m}
 Therefore
 \[
-\pi_1(M)\cong\mathbb Z.
+\pi_1(M)\cong\ZZ.
 \]
 
 ::: pf-proof
 By step [](#m-retracts-to-d){.pf-ref}, the inclusion $D\hookrightarrow M$ is a homotopy equivalence.
 Hence
 \[
-\pi_1(M)\cong\pi_1(D)\cong\pi_1(S^1)\cong\mathbb Z.
+\pi_1(M)\cong\pi_1(D)\cong\pi_1(S^1)\cong\ZZ.
 \]
 :::
 
@@ -226,7 +226,7 @@ U\setminus\{N\}\cong B^3\setminus\{0\}
 deformation retracts onto $S^2$ and is therefore path-connected and simply connected.
 
 The space $V$ is path-connected.
-Indeed, by step [](#circle-becomes-great-circle){.pf-ref} it is homeomorphic to $\mathbb R^3\setminus C$.
+Indeed, by step [](#circle-becomes-great-circle){.pf-ref} it is homeomorphic to $\RR^3\setminus C$.
 Write a point there as $(x,y,z)$ and put
 \[
 \rho=\sqrt{x^2+y^2}.
@@ -239,7 +239,7 @@ joins the point to the $z$-axis and never meets $C$, because its third coordinat
 If $z=0$ and $\rho<1$, the same radial path stays strictly inside the unit circle and joins the point to the origin.
 If $z=0$ and $\rho>1$, first move vertically to $(x,y,1)$, then radially at height $1$ to $(0,0,1)$, and finally down the $z$-axis to the origin.
 None of these three path segments meets $C$.
-Thus every point can be joined to the origin in $\mathbb R^3\setminus C$, so $V$ is path-connected.
+Thus every point can be joined to the origin in $\RR^3\setminus C$, so $V$ is path-connected.
 
 Choose a basepoint in $U\cap V$.
 The Seifert--van Kampen theorem gives
@@ -266,13 +266,13 @@ is an isomorphism.
 ::: pf-step
 Hence
 \[
-\boxed{\pi_1(\mathbb R^3\setminus C)\cong\mathbb Z.}
+\boxed{\pi_1(\RR^3\setminus C)\cong\ZZ.}
 \]
 
 ::: pf-proof
 By step [](#circle-becomes-great-circle){.pf-ref},
 \[
-\mathbb R^3\setminus C
+\RR^3\setminus C
 \cong
 M\setminus\{N\}.
 \]
@@ -280,7 +280,7 @@ By step [](#v-iso-to-m){.pf-ref},
 \[
 \pi_1(M\setminus\{N\})\cong\pi_1(M),
 \]
-and step [](#pi1-m){.pf-ref} computes the latter group as $\mathbb Z$.
+and step [](#pi1-m){.pf-ref} computes the latter group as $\ZZ$.
 :::
 
 :::

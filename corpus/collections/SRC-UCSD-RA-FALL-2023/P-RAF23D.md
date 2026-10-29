@@ -29,7 +29,7 @@ Let $\operatorname{sinc} x = \frac{\sin \pi x}{\pi x}$ (with $\operatorname{sinc
 (i) If $a > 0$, $\hat{\chi}_{[-a,a]} = \check{\chi}_{[-a,a]} = 2a\operatorname{sinc}(2ax)$.
 
 (ii) Let $\mathcal{H}_a = \{f \in L^2 : \hat{f}(\xi) = 0 \text{ if } |\xi| > a\}$.
-Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax - k) : k \in \mathbb{Z}\}$ is an orthonormal basis.
+Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax - k) : k \in \ZZ\}$ is an orthonormal basis.
 
 (iii) If $f \in \mathcal{H}_a$, then $f \in C_0$ (continuous vanishing at infinity) and $f = \sum_{-\infty}^{\infty} f\!\left(\frac{k}{2a}\right)\operatorname{sinc}(2ax - k)$ in $L^2$.
 :::
@@ -66,18 +66,18 @@ At $x=0$ both sides equal $2a$, so the identity holds everywhere. Since $\chi_{[
 
 ::: pf-step
 
-(ii) $\mathcal H_a$ is a closed subspace of $L^2(\mathbb R)$, and $\phi_k(x)\coloneqq\sqrt{2a}\operatorname{sinc}(2ax-k)$, $k\in\mathbb Z$, form an orthonormal basis of it.
+(ii) $\mathcal H_a$ is a closed subspace of $L^2(\RR)$, and $\phi_k(x)\coloneqq\sqrt{2a}\operatorname{sinc}(2ax-k)$, $k\in\ZZ$, form an orthonormal basis of it.
 
 ::: pf-proof
 
-By Plancherel, the Fourier transform is unitary on $L^2(\mathbb R)$. Therefore
+By Plancherel, the Fourier transform is unitary on $L^2(\RR)$. Therefore
 \[
 \mathcal H_a
 =\{f\in L^2:\operatorname{supp}\widehat f\subset[-a,a]\}
 \]
 is the inverse image of the closed subspace $L^2([-a,a])$, hence is itself a closed subspace of $L^2$. Thus $\mathcal H_a$ is a Hilbert space.
 
-For $k\in\mathbb Z$, put
+For $k\in\ZZ$, put
 \[
 \phi_k(x):=\sqrt{2a}\operatorname{sinc}(2ax-k)
 =\sqrt{2a}\operatorname{sinc}\!\left(2a\left(x-\frac{k}{2a}\right)\right).
@@ -91,11 +91,11 @@ e^{-2\pi i k\xi/(2a)}\chi_{[-a,a]}(\xi).
 The functions
 \[
 \frac1{\sqrt{2a}}e^{-2\pi i k\xi/(2a)},
-\qquad k\in\mathbb Z,
+\qquad k\in\ZZ,
 \]
 form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transform is unitary,
 \[
-\boxed{\{\phi_k:k\in\mathbb Z\}\text{ is an orthonormal basis of }\mathcal H_a.}
+\boxed{\{\phi_k:k\in\ZZ\}\text{ is an orthonormal basis of }\mathcal H_a.}
 \]
 
 :::
@@ -104,7 +104,7 @@ form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transfor
 
 ::: pf-step
 
-(iii) Every $f\in\mathcal H_a$ has a representative in $C_0(\mathbb R)$.
+(iii) Every $f\in\mathcal H_a$ has a representative in $C_0(\RR)$.
 
 ::: pf-proof
 
@@ -119,7 +119,7 @@ f(x)=\int_{-a}^a\widehat f(\xi)e^{2\pi ix\xi}\,d\xi
 \]
 for a continuous representative of $f$. By the Riemann--Lebesgue lemma this representative tends to $0$ as $|x|\to\infty$. Hence
 \[
-f\in C_0(\mathbb R).
+f\in C_0(\RR).
 \]
 
 :::
@@ -146,9 +146,9 @@ Expanding $f$ in the orthonormal basis $(\phi_k)$ therefore gives, in $L^2$,
 \[
 \begin{aligned}
 f(x)
-&=\sum_{k\in\mathbb Z}
+&=\sum_{k\in\ZZ}
 \langle f,\phi_k\rangle\phi_k(x)\\
-&=\sum_{k\in\mathbb Z}
+&=\sum_{k\in\ZZ}
 f\!\left(\frac{k}{2a}\right)
 \operatorname{sinc}(2ax-k).
 \end{aligned}
@@ -156,7 +156,7 @@ f\!\left(\frac{k}{2a}\right)
 Thus
 \[
 \boxed{
-f=\sum_{k\in\mathbb Z}
+f=\sum_{k\in\ZZ}
 f\!\left(\frac{k}{2a}\right)
 \operatorname{sinc}(2ax-k)
 \quad\text{in }L^2.}

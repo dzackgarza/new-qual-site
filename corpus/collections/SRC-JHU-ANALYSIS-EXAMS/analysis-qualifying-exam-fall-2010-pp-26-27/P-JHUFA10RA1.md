@@ -32,7 +32,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f_j \in L^2(\mathbb{R}^n)$, $j = 1, 2, 3, \ldots$ and that $f_j \to f$ in $L^2$.
+Suppose that $f_j \in L^2(\RR^n)$, $j = 1, 2, 3, \ldots$ and that $f_j \to f$ in $L^2$.
 Suppose further that there is a constant $M < \infty$ so that
 
 $$\int e^{100|x|^2} |f_j(x)|^2 \, dx \leq M, \quad j = 1, 2, 3, \ldots.$$
@@ -44,7 +44,7 @@ Give a proof or counterexample.
 ::: {.solution}
 Yes. In fact the stronger estimate
 \[
-\int_{\mathbb R^n} e^{100|x|^2}|f(x)|^2\,dx\le M
+\int_{\RR^n} e^{100|x|^2}|f(x)|^2\,dx\le M
 \]
 holds.
 
@@ -54,11 +54,11 @@ holds.
 Extract a subsequence converging almost everywhere.
 
 ::: pf-proof
-Since $f_j\to f$ in $L^2(\mathbb R^n)$, there is a subsequence $f_{j_k}$ such that
+Since $f_j\to f$ in $L^2(\RR^n)$, there is a subsequence $f_{j_k}$ such that
 \[
 f_{j_k}(x)\longrightarrow f(x)
 \]
-for almost every $x\in\mathbb R^n$.
+for almost every $x\in\RR^n$.
 For instance, choose the subsequence so that
 \[
 \|f_{j_k}-f\|_2^2\le 2^{-k},
@@ -84,15 +84,15 @@ e^{100|x|^2}|f(x)|^2.
 \]
 These functions are nonnegative, so Fatou's lemma gives [@Fol13]
 \[
-\int_{\mathbb R^n} e^{100|x|^2}|f(x)|^2\,dx
+\int_{\RR^n} e^{100|x|^2}|f(x)|^2\,dx
 \le
 \liminf_{k\to\infty}
-\int_{\mathbb R^n} e^{100|x|^2}|f_{j_k}(x)|^2\,dx
+\int_{\RR^n} e^{100|x|^2}|f_{j_k}(x)|^2\,dx
 \le M.
 \]
 Since $e^{99|x|^2}\le e^{100|x|^2}$,
 \[
-\int_{\mathbb R^n} e^{99|x|^2}|f(x)|^2\,dx\le M<\infty.
+\int_{\RR^n} e^{99|x|^2}|f(x)|^2\,dx\le M<\infty.
 \]
 :::
 

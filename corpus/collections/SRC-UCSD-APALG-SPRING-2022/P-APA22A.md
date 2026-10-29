@@ -14,10 +14,10 @@ review: draft
 ---
 
 ::: {.problem}
-A linear map $\phi \colon \mathbb{C}^7 \to \mathbb{C}^7$ is given.
+A linear map $\phi \colon \CC^7 \to \CC^7$ is given.
 It has the following properties.
 
-- There exist two different bases $B_1$ and $B_2$ for $\mathbb{C}^7$, such that the matrices of $\phi$ with respect to these bases are
+- There exist two different bases $B_1$ and $B_2$ for $\CC^7$, such that the matrices of $\phi$ with respect to these bases are
   \[
   \mathcal{M}(\phi, B_1, B_1)
   =
@@ -45,7 +45,7 @@ It has the following properties.
   \]
   where $*$ denotes an unknown value.
 
-- We have $\dim \ker(\phi - \operatorname{id}_{\mathbb{C}^7}) = 1$.
+- We have $\dim \ker(\phi - \operatorname{id}_{\CC^7}) = 1$.
 
 Determine, with proof, the Jordan Normal Form of $\phi$.
 :::

@@ -106,7 +106,7 @@ f(X)=[0,1].
 
 ::: pf-proof
 
-Connected subsets of $\mathbb R$ are intervals. Any interval contained in $[0,1]$ and containing both endpoints $0$ and $1$ must contain every number between them, hence equals $[0,1]$.
+Connected subsets of $\RR$ are intervals. Any interval contained in $[0,1]$ and containing both endpoints $0$ and $1$ must contain every number between them, hence equals $[0,1]$.
 
 :::
 

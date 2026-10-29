@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be analytic on $\mathbb{D}$ with $|f(z)| \leq 1/2$ on $\mathbb{D}$ and $f(0) = r \in \mathbb{R}$, where $0 < r < 1/2$.
+Let $f$ be analytic on $\mathbb{D}$ with $|f(z)| \leq 1/2$ on $\mathbb{D}$ and $f(0) = r \in \RR$, where $0 < r < 1/2$.
 
 (a) Prove that $f(z)$ has no zeros in the disk $\{|z| < 2r\}$.
 
@@ -50,7 +50,7 @@ and therefore
 \[
 \boxed{\displaystyle
 f(z)=\frac12\frac{2r-e^{-i\phi}z}{1-2r e^{-i\phi}z},
-\qquad \phi\in\mathbb R.}
+\qquad \phi\in\RR.}
 \]
 Conversely, each of these functions maps $\mathbb D$ into the disk of radius
 $1/2$, satisfies $f(0)=r$, and has its zero at $2re^{i\phi}$. These are exactly

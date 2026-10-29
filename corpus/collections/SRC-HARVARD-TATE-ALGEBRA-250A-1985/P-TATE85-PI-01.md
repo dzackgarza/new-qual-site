@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-(1) Let A be a u.f.d. (unique factorization domain, e.g.,$A = \mathbb { Z } [ x _ { 1 } , \dots , x _ { n } ]$or$A =$$K [ x _ { 1 } , \ldots , x _ { n } ]$, K a field) and let π be a prime element in A. Show :
+(1) Let A be a u.f.d. (unique factorization domain, e.g.,$A = \ZZ [ x _ { 1 } , \dots , x _ { n } ]$or$A =$$K [ x _ { 1 } , \ldots , x _ { n } ]$, K a field) and let π be a prime element in A. Show :
 
 (a) The principal ideal$\pi A$is a prime ideal.
 

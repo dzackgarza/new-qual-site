@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Using the cup product structure in $H^*(SO(5); \mathbb{Z})$, show that $SO(5)$ is not homotopy equivalent to the product of any two CW complexes with nontrivial cohomology.
+Using the cup product structure in $H^*(SO(5); \ZZ)$, show that $SO(5)$ is not homotopy equivalent to the product of any two CW complexes with nontrivial cohomology.
 :::
 
 ::: {.solution}
@@ -78,15 +78,15 @@ Thus the degree-3 factor generator is necessarily \(\beta_3\). Consequently, und
 
 Now use the integral Bockstein
 \[
-\delta:H^*(-;\mathbb F_2)\longrightarrow H^{*+1}(-;\mathbb Z)
+\delta:H^*(-;\mathbb F_2)\longrightarrow H^{*+1}(-;\ZZ)
 \]
 for
 \[
-0\to\mathbb Z\xrightarrow{2}\mathbb Z\to\mathbb F_2\to0.
+0\to\ZZ\xrightarrow{2}\ZZ\to\mathbb F_2\to0.
 \]
 Hatcher's calculation of the integral ring gives a class
 \[
-x\in H^2(SO(5);\mathbb Z),\qquad 2x=0,
+x\in H^2(SO(5);\ZZ),\qquad 2x=0,
 \]
 with
 \[

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-Find all solutions in $\mathbb{C}^2$ to the homogeneous linear system:
+Find all solutions in $\CC^2$ to the homogeneous linear system:
 $$
 \begin{aligned}
 (1 - i) x_1 - i x_2 &= 0 \\
@@ -37,7 +37,7 @@ Matrix Form and Determinant Computation:
 ::: pf-proof
 
 ::: pf-step
-The system can be written as $A x = 0$ where $x = \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \in \mathbb{C}^2$ and:
+The system can be written as $A x = 0$ where $x = \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \in \CC^2$ and:
 $$A = \begin{bmatrix} 1 - i & -i \\ 2 & 1 - i \end{bmatrix}.$$
 :::
 
@@ -89,7 +89,7 @@ $$x_2 = -i (1 - i) x_1 = (-i - 1) x_1 = -(1 + i) x_1.$$
 :::
 
 ::: pf-step
-Setting $x_1 = t \in \mathbb{C}$ as the free parameter:
+Setting $x_1 = t \in \CC$ as the free parameter:
 $$x_2 = -(1 + i) t.$$
 :::
 
@@ -104,7 +104,7 @@ Solution Space:
 
 ::: pf-step
 The complete solution set is the 1-dimensional complex subspace:
-$$\operatorname{Sol} = \left\{ t \begin{bmatrix} 1 \\ -(1 + i) \end{bmatrix} \;\middle|\; t \in \mathbb{C} \right\} = \operatorname{span}_\mathbb{C} \left\{ \begin{bmatrix} 1 \\ -1 - i \end{bmatrix} \right\}.$$
+$$\operatorname{Sol} = \left\{ t \begin{bmatrix} 1 \\ -(1 + i) \end{bmatrix} \;\middle|\; t \in \CC \right\} = \operatorname{span}_\CC \left\{ \begin{bmatrix} 1 \\ -1 - i \end{bmatrix} \right\}.$$
 :::
 
 :::
@@ -113,7 +113,7 @@ $$\operatorname{Sol} = \left\{ t \begin{bmatrix} 1 \\ -(1 + i) \end{bmatrix} \;\
 
 ::: pf-step
 Conclusion:
-The solutions are all scalar multiples $x = t \begin{bmatrix} 1 \\ -1 - i \end{bmatrix}$ for $t \in \mathbb{C}$.
+The solutions are all scalar multiples $x = t \begin{bmatrix} 1 \\ -1 - i \end{bmatrix}$ for $t \in \CC$.
 :::
 
 :::

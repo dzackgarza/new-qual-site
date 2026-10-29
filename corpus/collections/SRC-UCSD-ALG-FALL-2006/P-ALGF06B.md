@@ -127,7 +127,7 @@ Choose an isometric embedding
 V:K\longrightarrow(\operatorname{Ran}A)^\perp
 \]
 and define $U$ to equal $U_0$ on $K^\perp$ and $V$ on $K$.
-The two image subspaces are orthogonal, so $U$ is an isometry $\mathbb C^n\to\mathbb C^m$, equivalently $U^*U=I_n$.
+The two image subspaces are orthogonal, so $U$ is an isometry $\CC^n\to\CC^m$, equivalently $U^*U=I_n$.
 Finally, $Hv\in K^\perp$ for every $v$, and therefore
 \[
 UHv=U_0Hv=Av.

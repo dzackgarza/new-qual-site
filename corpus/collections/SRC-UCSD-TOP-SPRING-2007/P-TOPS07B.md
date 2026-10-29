@@ -43,7 +43,7 @@ At each vertex there is exactly one incoming and one outgoing lift of each orien
 
 The corresponding subgroup of $F_3=\langle a,b,c\rangle$ is
 $$
-\ker\bigl(F_3\to\mathbb Z/2,\ a\mapsto1,\ b,c\mapsto0\bigr).
+\ker\bigl(F_3\to\ZZ/2,\ a\mapsto1,\ b,c\mapsto0\bigr).
 $$
 One Schreier basis is
 $$

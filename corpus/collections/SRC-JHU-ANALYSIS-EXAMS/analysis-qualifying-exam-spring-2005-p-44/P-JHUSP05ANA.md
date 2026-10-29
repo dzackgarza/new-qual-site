@@ -26,10 +26,10 @@ audit:
 ::: {.problem}
 Let
 \[
-f(x)=e^{-|x|},\qquad x\in\mathbb R.
+f(x)=e^{-|x|},\qquad x\in\RR.
 \]
 
-(a) Is $\widehat f\in C^\infty(\mathbb R)$? Prove your answer.
+(a) Is $\widehat f\in C^\infty(\RR)$? Prove your answer.
 
 (b) Prove that
 \[
@@ -50,26 +50,26 @@ The Fourier transform is smooth.
 
 For every integer $k\ge0$,
 \[
-\int_{\mathbb R}|x|^k e^{-|x|}\,dx<\infty.
+\int_{\RR}|x|^k e^{-|x|}\,dx<\infty.
 \]
-Thus $x^k f(x)\in L^1(\mathbb R)$ for every $k$.
+Thus $x^k f(x)\in L^1(\RR)$ for every $k$.
 
 Using the convention
 \[
-\widehat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi i x\xi}\,dx,
+\widehat f(\xi)=\int_{\RR}f(x)e^{-2\pi i x\xi}\,dx,
 \]
 the $k$th formal derivative is
 \[
 \frac{d^k}{d\xi^k}\widehat f(\xi)
-=\int_{\mathbb R}(-2\pi i x)^k f(x)e^{-2\pi i x\xi}\,dx.
+=\int_{\RR}(-2\pi i x)^k f(x)e^{-2\pi i x\xi}\,dx.
 \]
 For each fixed $k$, the absolute value of the integrand is bounded by
 \[
-(2\pi)^k|x|^k e^{-|x|}\in L^1(\mathbb R).
+(2\pi)^k|x|^k e^{-|x|}\in L^1(\RR).
 \]
 Dominated convergence therefore justifies differentiation under the integral sign, and the resulting derivative is continuous by another application of dominated convergence. Hence
 \[
-\widehat f\in C^\infty(\mathbb R).
+\widehat f\in C^\infty(\RR).
 \]
 The same conclusion holds for any of the standard Fourier-transform normalizations, with the obvious change in constants.
 
@@ -83,12 +83,12 @@ The Fourier transform vanishes at infinity.
 
 ::: pf-proof
 
-Since $f=e^{-|x|}\in L^1(\mathbb R)$, the Riemann--Lebesgue lemma gives
+Since $f=e^{-|x|}\in L^1(\RR)$, the Riemann--Lebesgue lemma gives
 \[
 \widehat f(\xi)\longrightarrow0
 \qquad(|\xi|\to\infty).
 \]
-The lemma follows by approximating $f$ in $L^1$ by a function $g\in C_c^1(\mathbb R)$. For such $g$, integration by parts gives
+The lemma follows by approximating $f$ in $L^1$ by a function $g\in C_c^1(\RR)$. For such $g$, integration by parts gives
 \[
 |\widehat g(\xi)|\le \frac{\|g'\|_1}{2\pi|\xi|}
 \qquad(\xi\ne0),

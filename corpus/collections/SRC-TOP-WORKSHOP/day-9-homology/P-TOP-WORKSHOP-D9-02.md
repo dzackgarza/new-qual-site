@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-(Michigan Jan ’10) Let $S^1=\{z\in\mathbb C\mid |z|=1\}$.
+(Michigan Jan ’10) Let $S^1=\{z\in\CC\mid |z|=1\}$.
 Let $X$ be obtained from the space $S^1\times[0,1]$ by identifying every point $(z,0)$ with the point $(z^4,1)$, with the quotient topology.
 Compute the fundamental group and homology of $X$.
 :::
@@ -38,17 +38,17 @@ For homology, use the Wang exact sequence for the mapping torus of the degree-\(
 \cdots\to H_n(S^1)\xrightarrow{1-f_*}H_n(S^1)\to H_n(X)
 \to H_{n-1}(S^1)\xrightarrow{1-f_*}H_{n-1}(S^1)\to\cdots.
 \]
-On \(H_1(S^1)=\mathbb Z\), \(1-f_*\) is multiplication by \(1-4=-3\), while on \(H_0(S^1)=\mathbb Z\) it is \(0\). Therefore
+On \(H_1(S^1)=\ZZ\), \(1-f_*\) is multiplication by \(1-4=-3\), while on \(H_0(S^1)=\ZZ\) it is \(0\). Therefore
 \[
-H_2(X)=\ker(\mathbb Z\xrightarrow{-3}\mathbb Z)=0,
+H_2(X)=\ker(\ZZ\xrightarrow{-3}\ZZ)=0,
 \]
 and the degree-one part gives
 \[
-0\to\mathbb Z/3\to H_1(X)\to\mathbb Z\to0.
+0\to\ZZ/3\to H_1(X)\to\ZZ\to0.
 \]
-Since \(\mathbb Z\) is free, this splits, so
+Since \(\ZZ\) is free, this splits, so
 \[
-H_1(X)\cong\mathbb Z\oplus\mathbb Z/3.
+H_1(X)\cong\ZZ\oplus\ZZ/3.
 \]
-Also \(H_0(X)=\mathbb Z\), and \(H_n(X)=0\) for \(n\ge2\). Equivalently, \(H_1\) is the abelianization of the displayed fundamental-group presentation: the relation becomes \(3a=0\), while \(t\) remains infinite cyclic.
+Also \(H_0(X)=\ZZ\), and \(H_n(X)=0\) for \(n\ge2\). Equivalently, \(H_1\) is the abelianization of the displayed fundamental-group presentation: the relation becomes \(3a=0\), while \(t\) remains infinite cyclic.
 :::

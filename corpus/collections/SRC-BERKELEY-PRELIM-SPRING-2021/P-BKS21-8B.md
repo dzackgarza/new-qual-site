@@ -28,7 +28,7 @@ Either exhibit one or prove none exists.
 
 Let
 $$
-S\coloneqq \mathbb Z[t]/(t^2-t+1),
+S\coloneqq \ZZ[t]/(t^2-t+1),
 $$
 and let $\alpha$ denote the class of $t$ in $S$.
 
@@ -91,7 +91,7 @@ $$
 
 The evaluation map
 $$
-\psi:\mathbb Z[x]\longrightarrow S,
+\psi:\ZZ[x]\longrightarrow S,
 \qquad
 \psi(x)=u,
 $$
@@ -100,7 +100,7 @@ is a unital ring homomorphism whose kernel contains $(x^2+3)$.
 
 ::: pf-proof
 
-There is a unique unital ring homomorphism from the polynomial ring $\mathbb Z[x]$ to $S$ sending $x$ to the prescribed element $u$. By step [](#s1-2){.pf-ref},
+There is a unique unital ring homomorphism from the polynomial ring $\ZZ[x]$ to $S$ sending $x$ to the prescribed element $u$. By step [](#s1-2){.pf-ref},
 $$
 \psi(x^2+3)=u^2+3=0.
 $$
@@ -116,9 +116,9 @@ Therefore $\psi$ descends to a unital homomorphism
 $$
 \boxed{
 \overline\psi:
-\mathbb Z[x]/(x^2+3)
+\ZZ[x]/(x^2+3)
 \longrightarrow
-\mathbb Z[t]/(t^2-t+1),
+\ZZ[t]/(t^2-t+1),
 \qquad
 \overline\psi([x])=2[t]-1
 }.

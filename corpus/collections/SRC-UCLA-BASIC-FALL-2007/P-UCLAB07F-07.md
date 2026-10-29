@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A(x)$ be a differentiable matrix-valued function on $\mathbb R$, with $A(x)$ invertible for every $x$.
+Let $A(x)$ be a differentiable matrix-valued function on $\RR$, with $A(x)$ invertible for every $x$.
 Starting from entrywise differentiation, show that $A^{-1}(x)$ is differentiable and \[(A^{-1})'(x)=-A^{-1}(x)A'(x)A^{-1}(x).\]
 :::
 

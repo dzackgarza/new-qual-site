@@ -51,7 +51,7 @@ An injective endomorphism of a finite-rank free module need not be surjective.
 
 ::: pf-proof
 
-Take $R=\mathbb Z$ and $n=1$. Multiplication by $2$ defines an injective endomorphism $T:\mathbb Z\to\mathbb Z$ because $2m=0$ implies $m=0$. It is not surjective because $1\notin 2\mathbb Z$.
+Take $R=\ZZ$ and $n=1$. Multiplication by $2$ defines an injective endomorphism $T:\ZZ\to\ZZ$ because $2m=0$ implies $m=0$. It is not surjective because $1\notin 2\ZZ$.
 
 :::
 

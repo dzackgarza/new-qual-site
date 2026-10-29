@@ -21,8 +21,8 @@ If every subsequence of $\{x_n\}_{n=1}^{\infty}$ has a subsequence that converge
 (b) Let $a \neq b$ be positive real numbers.
 There exists a Möbius (linear fractional) transformation sending the circular sector $G_1 := \{x + iy : x^2 + y^2 < 1, \, x > 0, \, y > 0\}$ to the ellipsoidal sector $G_2 := \{x + iy : x^2/a^2 + y^2/b^2 < 1, \, x > 0, \, y > 0\}$.
 
-(c) Let $D$ be a discrete subset of $\mathbb{C}$.
-Every bounded analytic function in $\mathbb{C} \setminus D$ is constant.
+(c) Let $D$ be a discrete subset of $\CC$.
+Every bounded analytic function in $\CC \setminus D$ is constant.
 
 (d) Suppose that $f(z)$ is analytic in $G := \mathbb{D} \setminus \{0\}$ and that $\int_\gamma z^p f(z)\,dz = 0$ for every closed curve $\gamma: [0,1] \to G$ and every nonnegative integer $p$.
 Then $f(z)$ has a removable singularity at 0.

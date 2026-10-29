@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 ::: {.problem}
-Determine whether the ring $\mathbb{Z}[3i]$ is a UFD.
+Determine whether the ring $\ZZ[3i]$ is a UFD.
 :::
 
 ::: {.solution}

@@ -126,7 +126,7 @@ Because $p$ is prime and $1 \le k < p$, $\gcd(k, p) = 1$.
 
 ::: pf-step
 
-By Bézout's identity, there exist integers $u, v \in \mathbb{Z}$ such that
+By Bézout's identity, there exist integers $u, v \in \ZZ$ such that
     $$u k + v p = 1.$$
 
 :::

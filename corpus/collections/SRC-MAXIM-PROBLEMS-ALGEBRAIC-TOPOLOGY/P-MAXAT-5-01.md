@@ -49,19 +49,19 @@ has contractible total space. Pullback along a map $X\to BS^1$ produces a princi
 
 Since
 \[
-BS^1\simeq\mathbb{CP}^{\infty}=K(\mathbb Z,2),
+BS^1\simeq\mathbb{CP}^{\infty}=K(\ZZ,2),
 \]
 one has
 \[
 [S^2,BS^1]
-\cong H^2(S^2;\mathbb Z)
-\cong\mathbb Z.
+\cong H^2(S^2;\ZZ)
+\cong\ZZ.
 \]
 
 
 ::: pf-proof
 
-The infinite complex projective space is the classifying space of $S^1=U(1)$ and is an Eilenberg--MacLane space $K(\mathbb Z,2)$. Maps into $K(\mathbb Z,2)$ represent degree-$2$ integral cohomology. The fundamental class identifies $H^2(S^2;\mathbb Z)$ with $\mathbb Z$.
+The infinite complex projective space is the classifying space of $S^1=U(1)$ and is an Eilenberg--MacLane space $K(\ZZ,2)$. Maps into $K(\ZZ,2)$ represent degree-$2$ integral cohomology. The fundamental class identifies $H^2(S^2;\ZZ)$ with $\ZZ$.
 
 :::
 
@@ -75,13 +75,13 @@ S^1\to E\xrightarrow{p}S^2
 \]
 is
 \[
-k=\langle c_1(E),[S^2]\rangle\in\mathbb Z.
+k=\langle c_1(E),[S^2]\rangle\in\ZZ.
 \]
 
 
 ::: pf-proof
 
-Under the identification in step [](#s1-2){.pf-ref}, the universal generator of $H^2(BS^1;\mathbb Z)$ pulls back to the first Chern class of the associated complex line bundle. Evaluating this class on the fundamental class of $S^2$ gives the corresponding integer.
+Under the identification in step [](#s1-2){.pf-ref}, the universal generator of $H^2(BS^1;\ZZ)$ pulls back to the first Chern class of the associated complex line bundle. Evaluating this class on the fundamental class of $S^2$ gives the corresponding integer.
 
 :::
 
@@ -104,7 +104,7 @@ and its degree $k$ is the complete invariant.
 
 Every bundle is trivial over each hemisphere because each disk is contractible. The two trivializations differ on the equator by a transition function $g:S^1\to S^1$. Changing trivializations changes $g$ by homotopy, and homotopy classes
 \[
-[S^1,S^1]\cong\pi_1(S^1)\cong\mathbb Z
+[S^1,S^1]\cong\pi_1(S^1)\cong\ZZ
 \]
 are classified by degree. This integer agrees with the Chern number in step [](#s1-3){.pf-ref}.
 
@@ -161,14 +161,14 @@ Therefore
 \[
 \boxed{
 \{\text{principal }S^1\text{-bundles over }S^2\}/\cong
-\;\cong\;\mathbb Z,}
+\;\cong\;\ZZ,}
 \]
 classified by $c_1$ or, equivalently, the degree of the clutching map.
 
 
 ::: pf-proof
 
-Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify the set of isomorphism classes with $\mathbb Z$, and step [](#s1-5){.pf-ref} gives an explicit representative of every integer class.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify the set of isomorphism classes with $\ZZ$, and step [](#s1-5){.pf-ref} gives an explicit representative of every integer class.
 
 :::
 

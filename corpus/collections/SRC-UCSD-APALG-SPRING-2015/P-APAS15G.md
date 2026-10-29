@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS15G
 kind: problem
-title: Reduced Gröbner bases and a linear basis for $\mathbb{C}[x,y]/I$
+title: Reduced Gröbner bases and a linear basis for $\CC[x,y]/I$
 classification:
   areas:
   - applied-algebra
@@ -18,13 +18,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $I \subseteq \mathbb{C}[x, y]$ be the ideal given by $I = \langle y^2 + xy,\ xy^2 + x^2 y + x^2 \rangle$.
+Let $I \subseteq \CC[x, y]$ be the ideal given by $I = \langle y^2 + xy,\ xy^2 + x^2 y + x^2 \rangle$.
 
 (1) Find the reduced Gröbner basis for $I$ with respect to the lexicographic order where $y > x$.
 
-(2) Find the reduced Gröbner basis for the ideal $I \cap \mathbb{C}[x]$.
+(2) Find the reduced Gröbner basis for the ideal $I \cap \CC[x]$.
 
-(3) Find a $\mathbb{C}$-linear basis for the $\mathbb{C}$-vector space $\mathbb{C}[x, y]/I$.
+(3) Find a $\CC$-linear basis for the $\CC$-vector space $\CC[x, y]/I$.
 :::
 
 ::: {.solution}
@@ -106,17 +106,17 @@ definition of reduced Gröbner basis.
 
 ::: {.pf-step #s2}
 
-Part (2): Reduced Gröbner basis for $I \cap \mathbb{C}[x]$:
+Part (2): Reduced Gröbner basis for $I \cap \CC[x]$:
 
 ::: pf-proof
 
 ::: pf-step
 
-By the Elimination Theorem, for the elimination order $y > x$, a Gröbner basis for the elimination ideal $I_1 = I \cap \mathbb{C}[x]$ is obtained by taking the elements of $G$ containing only the variable $x$:
+By the Elimination Theorem, for the elimination order $y > x$, a Gröbner basis for the elimination ideal $I_1 = I \cap \CC[x]$ is obtained by taking the elements of $G$ containing only the variable $x$:
 \[
-G \cap \mathbb{C}[x] = \{x^2\}.
+G \cap \CC[x] = \{x^2\}.
 \]
-Thus the reduced Gröbner basis for $I \cap \mathbb{C}[x]$ is $\{x^2\}$.
+Thus the reduced Gröbner basis for $I \cap \CC[x]$ is $\{x^2\}$.
 
 ::: pf-proof
 
@@ -132,7 +132,7 @@ Elimination Theorem for lex orders.
 
 ::: {.pf-step #s3}
 
-Part (3): $\mathbb{C}$-linear basis for $\mathbb{C}[x, y]/I$:
+Part (3): $\CC$-linear basis for $\CC[x, y]/I$:
 
 ::: pf-proof
 
@@ -150,7 +150,7 @@ leading terms of $G$.
 
 ::: pf-step
 
-By Macaulay's Theorem / the Division Algorithm, a $\mathbb{C}$-vector space basis for $\mathbb{C}[x, y]/I$ is given by the set of all monomials not in $\operatorname{LT}(I)$:
+By Macaulay's Theorem / the Division Algorithm, a $\CC$-vector space basis for $\CC[x, y]/I$ is given by the set of all monomials not in $\operatorname{LT}(I)$:
 \[
 \mathcal{B} = \{x^a y^b \mid x^a y^b \notin \langle x^2, y^2 \rangle\} = \{x^a y^b \mid 0 \le a < 2, \, 0 \le b < 2\}.
 \]
@@ -174,7 +174,7 @@ standard monomial basis theorem for polynomial quotient rings.
 ::: pf-step
 
 Conclusion:
-The reduced Gröbner basis for $I$ is $\{y^2 + xy, x^2\}$, the reduced Gröbner basis for $I \cap \mathbb{C}[x]$ is $\{x^2\}$, and a linear basis for $\mathbb{C}[x, y]/I$ is $\{1, x, y, xy\}$. Q.E.D.
+The reduced Gröbner basis for $I$ is $\{y^2 + xy, x^2\}$, the reduced Gröbner basis for $I \cap \CC[x]$ is $\{x^2\}$, and a linear basis for $\CC[x, y]/I$ is $\{1, x, y, xy\}$. Q.E.D.
 
 ::: pf-proof
 

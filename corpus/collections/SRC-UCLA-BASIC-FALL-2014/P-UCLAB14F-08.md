@@ -41,7 +41,7 @@ Let
 \vdots\\
 1
 \end{pmatrix}
-\in\mathbb R^n,
+\in\RR^n,
 \]
 and let
 \[
@@ -187,7 +187,7 @@ with multiplicity $n-1$.
 
 The space decomposes orthogonally as
 \[
-\mathbb R^n
+\RR^n
 =
 \operatorname{span}\{\mathbf1\}
 \oplus

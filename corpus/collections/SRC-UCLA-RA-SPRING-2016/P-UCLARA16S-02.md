@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$. Show that the series
+Let $f\in L^1(\RR)$. Show that the series
 \[
 \sum_{n=1}^{\infty}\frac1{\sqrt n}f(x-\sqrt n)
 \]
-converges absolutely for almost all $x\in\mathbb R$.
+converges absolutely for almost all $x\in\RR$.
 :::
 
 ::: {.solution}
@@ -238,16 +238,16 @@ One has
 \[
 G(x)<\infty
 \]
-for almost every $x\in\mathbb R$.
+for almost every $x\in\RR$.
 
 
 ::: pf-proof
 
 The real line is the countable union
 \[
-\mathbb R
+\RR
 =
-\bigcup_{M\in\mathbb Z}[M,M+1].
+\bigcup_{M\in\ZZ}[M,M+1].
 \]
 By step [](#s2){.pf-ref}, the exceptional set in each interval has measure zero. A countable union of null sets is null.
 
@@ -262,7 +262,7 @@ Therefore
 \boxed{
 \sum_{n=1}^{\infty}
 \frac1{\sqrt n}f(x-\sqrt n)
-\text{ converges absolutely for almost every }x\in\mathbb R.
+\text{ converges absolutely for almost every }x\in\RR.
 }
 \]
 

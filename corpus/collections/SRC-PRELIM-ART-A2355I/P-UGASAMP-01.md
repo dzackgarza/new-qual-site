@@ -18,7 +18,7 @@ audit:
 Define what is meant by an inverse function, and give necessary and sufficient conditions for an inverse function to exist. Find the inverse of
 \[
 f(x)=\frac{x+2}{3x-1},
-\qquad x\in\mathbb R,\quad x\ne\frac13.
+\qquad x\in\RR,\quad x\ne\frac13.
 \]
 :::
 
@@ -83,7 +83,7 @@ f(x)=\frac{x+2}{3x-1},
 \qquad
 x\ne\frac13,
 \]
-the image is contained in \(\mathbb R\setminus\{\frac13\}\).
+the image is contained in \(\RR\setminus\{\frac13\}\).
 
 
 ::: pf-proof
@@ -133,9 +133,9 @@ x=\frac{y+2}{3y-1}.
 
 The function
 \[
-f:\mathbb R\setminus\left\{\frac13\right\}
+f:\RR\setminus\left\{\frac13\right\}
 \longrightarrow
-\mathbb R\setminus\left\{\frac13\right\}
+\RR\setminus\left\{\frac13\right\}
 \]
 is bijective and
 \[
@@ -149,7 +149,7 @@ Define
 \[
 g(y)=\frac{y+2}{3y-1}
 \]
-on \(\mathbb R\setminus\{\frac13\}\). Step [](#s1-4){.pf-ref} shows that \(g(y)\) is exactly the unique solution of \(f(x)=y\). Therefore
+on \(\RR\setminus\{\frac13\}\). Step [](#s1-4){.pf-ref} shows that \(g(y)\) is exactly the unique solution of \(f(x)=y\). Therefore
 \[
 f(g(y))=y
 \qquad\text{and}\qquad

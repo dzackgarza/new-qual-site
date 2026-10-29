@@ -44,7 +44,7 @@ d. A commutative ring $R$, and two non-trivial $R$-modules $M$ and $N$ such that
 
 ::: {.pf-step #s1}
 
-For part (a), take $D=\mathbb Z$.
+For part (a), take $D=\ZZ$.
 
 ::: pf-proof
 
@@ -53,8 +53,8 @@ contains a positive integer; let $d$ be its least positive
 element. For $a\in I$, Euclidean division writes
 $a=qd+r$ with $0\leq r<d$. Since $r=a-qd\in I$,
 minimality implies $r=0$. Hence $I=(d)$. The zero ideal
-is also principal, so $\mathbb Z$ is a PID. It is not a
-field, because $2$ has no multiplicative inverse in $\mathbb Z$.
+is also principal, so $\ZZ$ is a PID. It is not a
+field, because $2$ has no multiplicative inverse in $\ZZ$.
 
 :::
 
@@ -62,18 +62,18 @@ field, because $2$ has no multiplicative inverse in $\mathbb Z$.
 
 ::: {.pf-step #s2}
 
-For part (b), take $D=\mathbb Z[x]$.
+For part (b), take $D=\ZZ[x]$.
 
 ::: pf-proof
 
 The integers are a UFD, and the polynomial ring over a
 UFD is a UFD by Gauss's lemma [@DF04]. Thus $D$ is a UFD.
 The ideal $I=(2,x)$ is proper: the homomorphism
-$\mathbb Z[x]\to\mathbb F_2$, $f\mapsto f(0)\bmod2$,
+$\ZZ[x]\to\mathbb F_2$, $f\mapsto f(0)\bmod2$,
 annihilates both generators but does not annihilate $1$.
 
 Suppose $I=(h)$. Since $h$ divides the nonzero constant
-$2$, degree additivity in the domain $\mathbb Z[x]$
+$2$, degree additivity in the domain $\ZZ[x]$
 forces $h$ to be a nonzero integer. Since it also divides
 $x$, comparison of the coefficient of $x$ in $x=hu(x)$
 shows that $h$ divides $1$. Thus $h$ is a unit, which
@@ -86,17 +86,17 @@ $D$ is not a PID.
 
 ::: {.pf-step #s3}
 
-For part (c), take $R=\mathbb Z$ and $M=\mathbb Q$.
+For part (c), take $R=\ZZ$ and $M=\QQ$.
 
 ::: pf-proof
 
-For $0\ne n\in\mathbb Z$, the equation $nq=0$ in
-$\mathbb Q$ implies $q=0$, so $M$ is torsion-free.
+For $0\ne n\in\ZZ$, the equation $nq=0$ in
+$\QQ$ implies $q=0$, so $M$ is torsion-free.
 But $2M=M$, since $q=2(q/2)$ for every rational $q$.
-In a nonzero free $\mathbb Z$-module, a basis vector
+In a nonzero free $\ZZ$-module, a basis vector
 cannot lie in twice the module: every coefficient in
 the basis expansion of $2v$ is even, whereas that basis
-vector has coefficient one at itself. Since $\mathbb Q$
+vector has coefficient one at itself. Since $\QQ$
 is nonzero and equals twice itself, it cannot be free.
 
 :::
@@ -106,8 +106,8 @@ is nonzero and equals twice itself, it cannot be free.
 ::: {.pf-step #s4}
 
 For part (d), take
-$R=\mathbb Z$, $M=\mathbb Z/2\mathbb Z$, and
-$N=\mathbb Z/3\mathbb Z$.
+$R=\ZZ$, $M=\ZZ/2\ZZ$, and
+$N=\ZZ/3\ZZ$.
 
 ::: pf-proof
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF89-6
 kind: problem
-title: A fixed-distance locus from a closed subset of $\mathbb R^n$ is closed
+title: A fixed-distance locus from a closed subset of $\RR^n$ is closed
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -13,9 +13,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $X\subset\mathbb R^n$ be closed and let $r>0$. Define
+Let $X\subset\RR^n$ be closed and let $r>0$. Define
 \[
-Y=\{y\in\mathbb R^n:|x-y|=r\text{ for some }x\in X\}.
+Y=\{y\in\RR^n:|x-y|=r\text{ for some }x\in X\}.
 \]
 Show that $Y$ is closed.
 :::

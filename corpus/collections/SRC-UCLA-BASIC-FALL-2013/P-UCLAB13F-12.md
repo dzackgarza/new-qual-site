@@ -63,7 +63,7 @@ X^4-6X^3+13X^2-12X+4.
 
 ::: pf-step
 
-Over $\mathbb C$, the similarity class of $A$ is determined by the sizes of the Jordan blocks for eigenvalues $1$ and $2$.
+Over $\CC$, the similarity class of $A$ is determined by the sizes of the Jordan blocks for eigenvalues $1$ and $2$.
 
 
 ::: pf-proof

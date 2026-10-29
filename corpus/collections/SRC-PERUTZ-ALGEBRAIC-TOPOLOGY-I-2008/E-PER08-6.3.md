@@ -27,7 +27,7 @@ Identify all index 2 subgroups of the free group F2. Show that they are all free
 Write $F_2=\langle a,b\rangle$.
 Index-$2$ subgroups are normal and are exactly the kernels of the three nonzero homomorphisms
 \[
-F_2\longrightarrow\mathbb Z/2.
+F_2\longrightarrow\ZZ/2.
 \]
 Thus there are exactly three.
 

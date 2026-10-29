@@ -40,11 +40,11 @@ Excision identifies
 H_n(M,M-f^{-1}(y))
 \cong
 \bigoplus_i H_n(B_i,B_i-\{x_i\})
-\cong \bigoplus_i\mathbb Z,
+\cong \bigoplus_i\ZZ,
 \]
 while
 \[
-H_n(N,N-\{y\})\cong\mathbb Z.
+H_n(N,N-\{y\})\cong\ZZ.
 \]
 The image of the fundamental class $[M]$ in the direct sum of local homology groups is the tuple of local orientation generators. On the $i$th summand, the map induced by $f|_{B_i}:B_i\to B$ is multiplication by
 \[

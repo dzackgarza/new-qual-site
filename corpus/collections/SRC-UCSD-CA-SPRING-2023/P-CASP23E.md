@@ -42,11 +42,11 @@ Part (a): Rational approximation via Runge's Theorem:
 
 ::: pf-step
 
-Let $K = \{z \in \mathbb{C} \mid 3 \le |z| \le 4\}$ be the closed annulus. $K$ is a compact subset of $\mathbb{C}$.
+Let $K = \{z \in \CC \mid 3 \le |z| \le 4\}$ be the closed annulus. $K$ is a compact subset of $\CC$.
 
 ::: pf-proof
 
-closed and bounded subset of $\mathbb{C}$.
+closed and bounded subset of $\CC$.
 
 :::
 
@@ -54,9 +54,9 @@ closed and bounded subset of $\mathbb{C}$.
 
 ::: pf-step
 
-The complement $\mathbb{C} \setminus K$ consists of exactly two connected components:
-- The bounded component $U_1 = \{z \in \mathbb{C} \mid |z| < 3\}$, which contains the point $2 \in U_1$.
-- The unbounded component $U_2 = \{z \in \mathbb{C} \mid |z| > 4\}$, which contains the point $6 \in U_2$.
+The complement $\CC \setminus K$ consists of exactly two connected components:
+- The bounded component $U_1 = \{z \in \CC \mid |z| < 3\}$, which contains the point $2 \in U_1$.
+- The unbounded component $U_2 = \{z \in \CC \mid |z| > 4\}$, which contains the point $6 \in U_2$.
 
 ::: pf-proof
 
@@ -68,7 +68,7 @@ topology of the annulus.
 
 ::: pf-step
 
-The set $S = \{2, 6\}$ contains exactly one point in each connected component of $\mathbb{C} \setminus K$.
+The set $S = \{2, 6\}$ contains exactly one point in each connected component of $\CC \setminus K$.
 
 ::: pf-proof
 
@@ -80,7 +80,7 @@ $2 \in U_1$ and $6 \in U_2$.
 
 ::: pf-step
 
-The function $f(z) = \frac{\cos z}{z(z-5)}$ is meromorphic on $\mathbb{C}$ with poles only at $z = 0 \in U_1$ and $z = 5 \in U_2$.
+The function $f(z) = \frac{\cos z}{z(z-5)}$ is meromorphic on $\CC$ with poles only at $z = 0 \in U_1$ and $z = 5 \in U_2$.
 In particular, $f$ has no poles on $K$, so $f$ is holomorphic on an open neighborhood of $K$.
 
 ::: pf-proof

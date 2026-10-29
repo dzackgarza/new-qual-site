@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G$ be a group (possibly infinite) and let $V$ be a finite-dimensional $G$-module over $\mathbb{C}$.
+Let $G$ be a group (possibly infinite) and let $V$ be a finite-dimensional $G$-module over $\CC$.
 Assume that $V$ admits a $G$-invariant inner product $\langle -, - \rangle$.
 Prove that $V$ is completely reducible.
 :::

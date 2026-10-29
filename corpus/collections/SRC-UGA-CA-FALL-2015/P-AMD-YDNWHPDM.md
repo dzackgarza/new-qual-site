@@ -48,7 +48,7 @@ Use $n$-th roots of unity (i.e. solutions of $z^n - 1 =0$) to show
 **Goal:**
 1. Prove using $n$-th roots of unity that $2^{n-1} \prod_{k=1}^{n-1} \sin\left(\frac{k\pi}{n}\right) = n$ for any integer $n \geq 2$.
 2. (a) Derive the polar form of the Cauchy-Riemann equations: $\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}$ and $\frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}$.
-3. (b) Verify that the principal branch of $\log z = \ln r + i\theta$ on $U = \{r e^{i\theta} : r > 0, -\pi < \theta < \pi\}$ is holomorphic, and prove it cannot be extended continuously to the punctured plane $\mathbb{C}^* = \{z \in \mathbb{C} : r > 0\}$.
+3. (b) Verify that the principal branch of $\log z = \ln r + i\theta$ on $U = \{r e^{i\theta} : r > 0, -\pi < \theta < \pi\}$ is holomorphic, and prove it cannot be extended continuously to the punctured plane $\CC^* = \{z \in \CC : r > 0\}$.
 
 ---
 
@@ -326,12 +326,12 @@ Equivalence of real differentiability + CR equations with complex differentiabil
 :::
 
 ::: pf-step
-**$\log z$ cannot be continuous on the punctured plane $\mathbb{C}^* = \{z : r > 0\}$.**
+**$\log z$ cannot be continuous on the punctured plane $\CC^* = \{z : r > 0\}$.**
 
 ::: pf-proof
 
 ::: pf-step
-Consider the point $z_0 = -1 \in \mathbb{C}^*$ (which has $r = 1$, $\theta = \pm \pi$).
+Consider the point $z_0 = -1 \in \CC^*$ (which has $r = 1$, $\theta = \pm \pi$).
 
 ::: pf-proof
 Test point on the branch cut $(-\infty, 0)$.

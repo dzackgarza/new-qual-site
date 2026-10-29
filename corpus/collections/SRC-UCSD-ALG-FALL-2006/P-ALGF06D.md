@@ -45,7 +45,7 @@ For $n\neq1$ its order is
 ::: pf
 
 ::: {.pf-step #n-eq-1-infinite}
-If $n=1$, then $G_n\cong C_3\times\mathbb Z$, so $G_n$ is infinite.
+If $n=1$, then $G_n\cong C_3\times\ZZ$, so $G_n$ is infinite.
 
 ::: pf-proof
 When $n=1$, the defining relation becomes
@@ -65,7 +65,7 @@ y\longmapsto(\bar0,1)
 \]
 define a homomorphism
 \[
-G_1\longrightarrow C_3\times\mathbb Z,
+G_1\longrightarrow C_3\times\ZZ,
 \]
 and the assignments
 \[
@@ -74,7 +74,7 @@ and the assignments
 define a homomorphism in the opposite direction.
 These maps are inverse on the generators, hence
 \[
-G_1\cong C_3\times\mathbb Z.
+G_1\cong C_3\times\ZZ.
 \]
 Therefore $G_1$ is infinite.
 :::

@@ -65,14 +65,14 @@ For $r\in I$ and $x+I\in R/I$, the product $r(x+I)=rx+I$ is zero, hence $I\subse
 
 ::: {.pf-step #s3}
 
-For $R=\mathbb Z$ and $M=\mathbb Q/\mathbb Z$, every element of $M$ has a nonzero annihilator, but
+For $R=\ZZ$ and $M=\QQ/\ZZ$, every element of $M$ has a nonzero annihilator, but
 \[
 \boxed{\operatorname{Ann}(M)=\{0\}}.
 \]
 
 ::: pf-proof
 
-For every class $a/b+\mathbb Z$ with $b\geq1$, multiplication by $b$ gives zero, so its annihilator contains the nonzero integer $b$. On the other hand, if $n\in\mathbb Z$ annihilates all of $\mathbb Q/\mathbb Z$, then for every $k\geq1$ it annihilates $1/k+\mathbb Z$, which implies $k\mid n$. No nonzero integer is divisible by every positive integer, so $n=0$.
+For every class $a/b+\ZZ$ with $b\geq1$, multiplication by $b$ gives zero, so its annihilator contains the nonzero integer $b$. On the other hand, if $n\in\ZZ$ annihilates all of $\QQ/\ZZ$, then for every $k\geq1$ it annihilates $1/k+\ZZ$, which implies $k\mid n$. No nonzero integer is divisible by every positive integer, so $n=0$.
 
 :::
 

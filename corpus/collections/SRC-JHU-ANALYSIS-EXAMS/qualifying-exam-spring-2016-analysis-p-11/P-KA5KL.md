@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \subset \mathbb{C}$ be an open set and
+Let $U \subset \CC$ be an open set and
 
 $$A^2(U) = \{ f \text{ holomorphic on } U : \int_U |f(z)|^2 \, dx \, dy < \infty \}.$$
 
@@ -101,7 +101,7 @@ Let $(f_n)$ be Cauchy in this norm. Completeness of
 $L^2(U)$ gives an $L^2$ limit $F$, regarded as a measurable
 representative of its almost-everywhere class [@Fol13].
 Step [](#s2){.pf-ref} makes $(f_n)$ uniformly Cauchy on every compact
-subset of $U$. Pointwise completeness of $\mathbb C$ and
+subset of $U$. Pointwise completeness of $\CC$ and
 that same estimate give a locally uniform limit $f$.
 This limit is holomorphic by the local uniform limit
 theorem [@SS03].

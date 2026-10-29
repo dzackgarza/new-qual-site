@@ -23,11 +23,11 @@ Show that $S^1 \times S^1$ and $S^1 \vee S^1 \vee S^2$ are not homotopy-equivale
 
 ::: {.pf-step #s1}
 
-The torus has degree-one classes $\alpha,\beta\in H^1(T^2;\mathbb Z)$ with
+The torus has degree-one classes $\alpha,\beta\in H^1(T^2;\ZZ)$ with
 $$
 \alpha\smile\beta
 $$
-a generator of $H^2(T^2;\mathbb Z)\cong\mathbb Z$.
+a generator of $H^2(T^2;\ZZ)\cong\ZZ$.
 
 ::: pf-proof
 

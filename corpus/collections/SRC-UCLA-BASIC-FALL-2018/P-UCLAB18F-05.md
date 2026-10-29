@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $B=\{x\in\mathbb R^n:|x|\le1\}$ and let $g:\partial B\to\mathbb R$ be $1$-Lipschitz.
+Let $B=\{x\in\RR^n:|x|\le1\}$ and let $g:\partial B\to\RR$ be $1$-Lipschitz.
 
 (a) Show that
 \[
@@ -25,7 +25,7 @@ f(x)=\inf_{y\in\partial B}\bigl(g(y)+|x-y|\bigr)
 \]
 is $1$-Lipschitz on $B$.
 
-(b) Let $M(g)$ be the set of all $1$-Lipschitz $h:B\to\mathbb R$ satisfying $h|_{\partial B}=g$.
+(b) Let $M(g)$ be the set of all $1$-Lipschitz $h:B\to\RR$ satisfying $h|_{\partial B}=g$.
 Show that $M(g)$ is compact in $C(B)$ with the supremum norm.
 :::
 
@@ -293,7 +293,7 @@ The closure of $M(g)$ in $C(B)$ is compact.
 
 The ball
 \[
-B=\{x\in\mathbb R^n:|x|\le1\}
+B=\{x\in\RR^n:|x|\le1\}
 \]
 is compact.
 By steps [](#p1-s1-6){.pf-ref} through [](#p1-s1-7){.pf-ref}, the family $M(g)$ is equicontinuous and uniformly bounded.
@@ -644,7 +644,7 @@ The ball $B$ is compact.
 
 ::: pf-proof
 
-It is closed and bounded in the finite-dimensional Euclidean space $\mathbb R^n$.
+It is closed and bounded in the finite-dimensional Euclidean space $\RR^n$.
 Thus the Heine--Borel theorem applies.
 
 :::

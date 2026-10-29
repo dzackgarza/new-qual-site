@@ -176,7 +176,7 @@ f(x,y,z)\ge0
 \]
 for every
 \[
-(x,y,z)\in\mathbb R^3.
+(x,y,z)\in\RR^3.
 \]
 
 

@@ -207,9 +207,9 @@ After the collapse, the two attachment points \(u\) and \(-u\) become one point.
 Therefore
 \[
 \boxed{
-\widetilde H_k(\widetilde X;\mathbb Z)
+\widetilde H_k(\widetilde X;\ZZ)
 \cong
-\widetilde H_k(S^2\vee S^2\vee S^2;\mathbb Z)}.
+\widetilde H_k(S^2\vee S^2\vee S^2;\ZZ)}.
 \]
 
 
@@ -228,7 +228,7 @@ For the wedge of three \(2\)-spheres,
 \boxed{
 \widetilde H_2
 \cong
-\mathbb Z^3}.
+\ZZ^3}.
 \]
 
 
@@ -238,7 +238,7 @@ Reduced homology of a wedge of pointed CW complexes is the direct sum of the red
 \[
 \widetilde H_2(S^2\vee S^2\vee S^2)
 \cong
-\mathbb Z\oplus\mathbb Z\oplus\mathbb Z.
+\ZZ\oplus\ZZ\oplus\ZZ.
 \]
 
 :::
@@ -250,7 +250,7 @@ Reduced homology of a wedge of pointed CW complexes is the direct sum of the red
 For \(k\ne2\),
 \[
 \boxed{
-\widetilde H_k(\widetilde X;\mathbb Z)=0}.
+\widetilde H_k(\widetilde X;\ZZ)=0}.
 \]
 
 
@@ -267,13 +267,13 @@ Each \(S^2\) has reduced homology only in degree \(2\), and reduced homology of 
 Since \(\widetilde X\) is connected,
 \[
 \boxed{
-H_0(\widetilde X;\mathbb Z)\cong\mathbb Z}.
+H_0(\widetilde X;\ZZ)\cong\ZZ}.
 \]
 
 
 ::: pf-proof
 
-Every nonempty connected space has zeroth homology \(\mathbb Z\).
+Every nonempty connected space has zeroth homology \(\ZZ\).
 
 :::
 
@@ -284,11 +284,11 @@ Every nonempty connected space has zeroth homology \(\mathbb Z\).
 Thus
 \[
 \boxed{
-H_k(\widetilde X;\mathbb Z)
+H_k(\widetilde X;\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z^3,&k=2,\\
+\ZZ,&k=0,\\
+\ZZ^3,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}}
 \]

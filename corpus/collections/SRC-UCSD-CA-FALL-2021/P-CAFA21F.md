@@ -13,8 +13,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f(z)| = 1$ for $|z| = 1$.
-Show that there exists $a \in \mathbb{C}$ and $n \geq 0$ such that $f(z) = az^n$.
+Let $f : \CC \to \CC$ be an entire function such that $|f(z)| = 1$ for $|z| = 1$.
+Show that there exists $a \in \CC$ and $n \geq 0$ such that $f(z) = az^n$.
 :::
 
 ::: {.solution}

@@ -31,13 +31,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite, positive, regular Borel measure supported on a compact subset of $\mathbb{C}$ and define the Newtonian potential $$U_\mu(z) = \int_\mathbb{C} \left|\frac{1}{z-w}\right| d\mu(w).$$
+Let $\mu$ be a finite, positive, regular Borel measure supported on a compact subset of $\CC$ and define the Newtonian potential $$U_\mu(z) = \int_\CC \left|\frac{1}{z-w}\right| d\mu(w).$$
 
-a. Prove that $U_\mu$ exists at Lebesgue almost all $z\in\mathbb{C}$ and that $$\iint_K U_\mu(z)\,dx\,dy < \infty$$ for every compact $K\subseteq\mathbb{C}$.
+a. Prove that $U_\mu$ exists at Lebesgue almost all $z\in\CC$ and that $$\iint_K U_\mu(z)\,dx\,dy < \infty$$ for every compact $K\subseteq\CC$.
 
-b. Prove that for almost every horizontal or vertical line $L\subseteq\mathbb{C}$, $\mu(L)=0$ and $\int_K U_\mu(z)\,ds < \infty$ for every compact subset $K\subseteq L$, where $ds$ denotes Lebesgue linear measure on $L$.
+b. Prove that for almost every horizontal or vertical line $L\subseteq\CC$, $\mu(L)=0$ and $\int_K U_\mu(z)\,ds < \infty$ for every compact subset $K\subseteq L$, where $ds$ denotes Lebesgue linear measure on $L$.
 
-c. Define the Cauchy potential of $\mu$ to be $$S_\mu(z) = \int_\mathbb{C} \frac{1}{z-w}\,d\mu(w).$$ Let $R$ be a rectangle in $\mathbb{C}$ whose four sides are contained in lines $L$ having the conclusions of (b). Prove that $$\frac{1}{2\pi i}\int_{\partial R} S_\mu(z)\,dz = \mu(R).$$
+c. Define the Cauchy potential of $\mu$ to be $$S_\mu(z) = \int_\CC \frac{1}{z-w}\,d\mu(w).$$ Let $R$ be a rectangle in $\CC$ whose four sides are contained in lines $L$ having the conclusions of (b). Prove that $$\frac{1}{2\pi i}\int_{\partial R} S_\mu(z)\,dz = \mu(R).$$
 :::
 
 ::: {.solution}
@@ -47,7 +47,7 @@ Let $dA=dx\,dy$ denote planar Lebesgue measure.
 
 ::: {.pf-step #s1}
 
-For every compact $K\subseteq\mathbb C$,
+For every compact $K\subseteq\CC$,
 \[
 \int_K U_\mu(z)\,dA(z)<\infty.
 \]
@@ -81,11 +81,11 @@ The integrand $(z,w)\mapsto |z-w|^{-1}$ is nonnegative and measurable, so Tonell
 \begin{aligned}
 \int_K U_\mu(z)\,dA(z)
 &=
-\int_K\int_{\mathbb C}\frac1{|z-w|}\,d\mu(w)\,dA(z)\\
+\int_K\int_{\CC}\frac1{|z-w|}\,d\mu(w)\,dA(z)\\
 &=
 \int_{\operatorname{supp}\mu}
 \left(\int_K\frac{dA(z)}{|z-w|}\right)d\mu(w)\\
-&\le 4\pi R\,\mu(\mathbb C)<\infty.
+&\le 4\pi R\,\mu(\CC)<\infty.
 \end{aligned}
 \]
 
@@ -95,7 +95,7 @@ The integrand $(z,w)\mapsto |z-w|^{-1}$ is nonnegative and measurable, so Tonell
 
 ::: pf-step
 
-The potential $U_\mu(z)$ is finite for Lebesgue-almost every $z\in\mathbb C$.
+The potential $U_\mu(z)$ is finite for Lebesgue-almost every $z\in\CC$.
 
 ::: pf-proof
 
@@ -110,18 +110,18 @@ Since $U_\mu\ge0$ and
 the function $U_\mu$ is finite almost everywhere on $Q_N$.
 Because
 \[
-\mathbb C=\bigcup_{N=1}^{\infty}Q_N,
+\CC=\bigcup_{N=1}^{\infty}Q_N,
 \]
 the union of the corresponding exceptional null sets is still null.
 This proves part (a).
 
-For $y\in\mathbb R$, write
+For $y\in\RR$, write
 \[
-L_y^h=\{x+iy:x\in\mathbb R\},
+L_y^h=\{x+iy:x\in\RR\},
 \]
-and for $x\in\mathbb R$ write
+and for $x\in\RR$ write
 \[
-L_x^v=\{x+iy:y\in\mathbb R\}.
+L_x^v=\{x+iy:y\in\RR\}.
 \]
 
 :::
@@ -136,10 +136,10 @@ Only countably many horizontal lines have positive $\mu$-measure, and only count
 
 For $m\ge1$, let
 \[
-H_m=\left\{y\in\mathbb R:\mu(L_y^h)\ge\frac1m\right\}.
+H_m=\left\{y\in\RR:\mu(L_y^h)\ge\frac1m\right\}.
 \]
 Distinct horizontal lines are disjoint.
-If $H_m$ contained more than $m\mu(\mathbb C)$ elements, a sufficiently large finite subfamily would have total measure greater than $\mu(\mathbb C)$, which is impossible.
+If $H_m$ contained more than $m\mu(\CC)$ elements, a sufficiently large finite subfamily would have total measure greater than $\mu(\CC)$, which is impossible.
 Thus each $H_m$ is finite.
 If $\mu(L_y^h)>0$, then $y\in H_m$ for some $m$, so
 \[
@@ -257,7 +257,7 @@ The boundary integral of $S_\mu$ is absolutely convergent, and one may interchan
 \[
 \int_{\partial R}S_\mu(z)\,dz
 =
-\int_{\mathbb C}
+\int_{\CC}
 \left(
 \int_{\partial R}\frac{dz}{z-w}
 \right)d\mu(w).
@@ -268,21 +268,21 @@ The boundary integral of $S_\mu$ is absolutely convergent, and one may interchan
 By Tonelli's theorem and step [](#s6){.pf-ref},
 \[
 \begin{aligned}
-\int_{\mathbb C}
+\int_{\CC}
 \left(
 \int_{\partial R}\frac{ds(z)}{|z-w|}
 \right)d\mu(w)
 &=
 \int_{\partial R}
 \left(
-\int_{\mathbb C}\frac{d\mu(w)}{|z-w|}
+\int_{\CC}\frac{d\mu(w)}{|z-w|}
 \right)ds(z)\\
 &=
 \int_{\partial R}U_\mu(z)\,ds(z)\\
 &<\infty.
 \end{aligned}
 \]
-Thus the kernel $(z,w)\mapsto(z-w)^{-1}$ is absolutely integrable on the product of $\partial R$ with $(\mathbb C,\mu)$, where the boundary is parametrized side by side by arclength.
+Thus the kernel $(z,w)\mapsto(z-w)^{-1}$ is absolutely integrable on the product of $\partial R$ with $(\CC,\mu)$, where the boundary is parametrized side by side by arclength.
 Fubini's theorem therefore permits exchanging the two integrals.
 It also shows that $S_\mu(z)$ exists for arclength-almost every $z\in\partial R$ and
 \[
@@ -329,11 +329,11 @@ By steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and because step [](#s6){.pf-ref
 \begin{aligned}
 \frac1{2\pi i}\int_{\partial R}S_\mu(z)\,dz
 &=
-\int_{\mathbb C}
+\int_{\CC}
 \left(
 \frac1{2\pi i}\int_{\partial R}\frac{dz}{z-w}
 \right)d\mu(w)\\
-&=\int_{\mathbb C}\mathbf 1_{R^\circ}(w)\,d\mu(w)\\
+&=\int_{\CC}\mathbf 1_{R^\circ}(w)\,d\mu(w)\\
 &=\mu(R^\circ)\\
 &=\mu(R).
 \end{aligned}

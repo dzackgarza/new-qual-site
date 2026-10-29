@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-2
 kind: problem
-title: Euclidean and Hermitian inner products on $\mathbb C$
+title: Euclidean and Hermitian inner products on $\CC$
 classification:
   areas:
   - complex-analysis
@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.exercise}
-Let $\langle\cdot,\cdot\rangle$ denote the usual inner product on $\mathbb R^2$:
+Let $\langle\cdot,\cdot\rangle$ denote the usual inner product on $\RR^2$:
 \[
 \langle (x_1,y_1),(x_2,y_2)\rangle=x_1x_2+y_1y_2.
 \]
-On $\mathbb C$, define the Hermitian inner product by
+On $\CC$, define the Hermitian inner product by
 \[
 (z,w)=z\overline w.
 \]
@@ -37,7 +37,7 @@ Show that
 =\frac12\bigl[(z,w)+(w,z)\bigr]
 =\operatorname{Re}(z,w),
 \]
-where $z=x+iy\in\mathbb C$ is identified with $(x,y)\in\mathbb R^2$.
+where $z=x+iy\in\CC$ is identified with $(x,y)\in\RR^2$.
 :::
 
 ::: {.solution}
@@ -79,7 +79,7 @@ Therefore
 
 ::: pf-proof
 
-The real part of the expression in step [](#s1){.pf-ref} is $x_1x_2+y_1y_2$, which is the Euclidean inner product under the usual identification $\mathbb C\cong\mathbb R^2$.
+The real part of the expression in step [](#s1){.pf-ref} is $x_1x_2+y_1y_2$, which is the Euclidean inner product under the usual identification $\CC\cong\RR^2$.
 
 :::
 

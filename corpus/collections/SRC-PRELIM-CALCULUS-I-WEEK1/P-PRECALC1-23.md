@@ -67,7 +67,7 @@ one has
 
 ::: pf-step
 
-Hence \(p\) is strictly increasing on \(\mathbb R\).
+Hence \(p\) is strictly increasing on \(\RR\).
 
 
 ::: pf-proof

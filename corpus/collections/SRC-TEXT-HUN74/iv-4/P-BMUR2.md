@@ -23,16 +23,16 @@ Show the following:
 
 1.  For any abelian group $A$ and any positive integer $m$,
   \[
-  \mathrm{Hom}(\mathbb{Z}_m, A) \cong A[m] \coloneqq \{ a\in A \mid ma = 0\}
+  \mathrm{Hom}(\ZZ_m, A) \cong A[m] \coloneqq \{ a\in A \mid ma = 0\}
   .\]
 
-2.  $\mathrm{Hom}(\mathbb{Z}_m, \mathbb{Z}_n) \cong \mathbb{Z}_{\mathrm{gcd}(m,n)}$.
+2.  $\mathrm{Hom}(\ZZ_m, \ZZ_n) \cong \ZZ_{\mathrm{gcd}(m,n)}$.
 
-3.  As a $\mathbb{Z}-$module, $\mathbb{Z}_m^* = 0$.
+3.  As a $\ZZ-$module, $\ZZ_m^* = 0$.
 
-4.  For each $k\geq 1$, $\mathbb{Z}_m$ is a $\mathbb{Z}_{mk}-$module,
-    and as a $\mathbb{Z}_{mk}$ module,
-    $\mathbb{Z}_m^* \cong \mathbb{Z}_m$.
+4.  For each $k\geq 1$, $\ZZ_m$ is a $\ZZ_{mk}-$module,
+    and as a $\ZZ_{mk}$ module,
+    $\ZZ_m^* \cong \ZZ_m$.
 :::
 
 ::: {.solution}

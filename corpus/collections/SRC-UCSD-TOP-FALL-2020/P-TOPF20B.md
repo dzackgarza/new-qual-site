@@ -34,7 +34,7 @@ $T^n$ is a $K(\ZZ^n, 1)$.
 
 ::: pf-proof
 
-$T^n = (S^1)^n$ has contractible universal cover $\mathbb{R}^n$ and $\pi_1 = \ZZ^n$, with all higher homotopy groups trivial.
+$T^n = (S^1)^n$ has contractible universal cover $\RR^n$ and $\pi_1 = \ZZ^n$, with all higher homotopy groups trivial.
 
 :::
 

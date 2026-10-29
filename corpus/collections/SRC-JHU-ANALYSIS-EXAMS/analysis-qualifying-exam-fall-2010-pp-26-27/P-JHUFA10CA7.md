@@ -45,7 +45,7 @@ $$
 \tag{1}
 $$
 This compact-circle condition has the following finite
-algebraic form. For $a,b\in\mathbb C$, define the real
+algebraic form. For $a,b\in\CC$, define the real
 polynomial in the real variable $t$
 $$
 Q_{a,b}(t)=4(1+t^4)^2-(1+t^2)^2
@@ -122,7 +122,7 @@ The finite coefficient test (3) is equivalent to (1).
 ::: pf-proof
 Parametrize the unit circle except $-1$ by
 $$
-w(t)=\frac{1-t^2+2it}{1+t^2},\qquad t\in\mathbb R.
+w(t)=\frac{1-t^2+2it}{1+t^2},\qquad t\in\RR.
 $$
 Then
 $$

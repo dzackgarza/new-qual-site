@@ -41,8 +41,8 @@ while $H_i(P;\mathbb F_2)=0$ for $i>d$. Homotopy equivalence preserves homology,
 ::: pf-step
 
 For a closed connected $d$-manifold $P$,
-$$P\text{ is orientable}\iff H_d(P;\mathbb Z)\cong\mathbb Z,$$
-while in the nonorientable case $H_d(P;\mathbb Z)=0$.
+$$P\text{ is orientable}\iff H_d(P;\ZZ)\cong\ZZ,$$
+while in the nonorientable case $H_d(P;\ZZ)=0$.
 
 ::: pf-proof
 

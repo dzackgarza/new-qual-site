@@ -92,11 +92,11 @@ Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
 
 ::: {.pf-step #s6}
 
-$\mathbb{Z}[x]$ is a UFD but not a PID.
+$\ZZ[x]$ is a UFD but not a PID.
 
 ::: pf-proof
 
-$\mathbb{Z}[x]$ is a UFD by Gauss's lemma, and the ideal $(2, x)$ is not principal.
+$\ZZ[x]$ is a UFD by Gauss's lemma, and the ideal $(2, x)$ is not principal.
 
 :::
 

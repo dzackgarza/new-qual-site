@@ -16,19 +16,19 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $F:\mathbb R^3\to\mathbb R^2$ is continuously differentiable.
-Suppose that for some $v_0\in\mathbb R^3$ and $x_0\in\mathbb R^2$,
+Suppose $F:\RR^3\to\RR^2$ is continuously differentiable.
+Suppose that for some $v_0\in\RR^3$ and $x_0\in\RR^2$,
 \[
 F(v_0)=x_0
 \]
 and the derivative
 \[
-F'(v_0):\mathbb R^3\to\mathbb R^2
+F'(v_0):\RR^3\to\RR^2
 \]
 is onto.
 Show that there are $\varepsilon>0$ and a continuously differentiable function
 \[
-\gamma:(-\varepsilon,\varepsilon)\to\mathbb R^3
+\gamma:(-\varepsilon,\varepsilon)\to\RR^3
 \]
 such that
 \[
@@ -52,7 +52,7 @@ v_0=(a_0,b_0,c_0).
 
 ::: {.pf-step #s1-1}
 
-After relabeling the coordinates of $\mathbb R^3$ if necessary, the $2\times2$ matrix
+After relabeling the coordinates of $\RR^3$ if necessary, the $2\times2$ matrix
 \[
 \frac{\partial(F_1,F_2)}{\partial(a,b)}(v_0)
 \]
@@ -63,7 +63,7 @@ is invertible.
 
 The derivative
 \[
-F'(v_0):\mathbb R^3\to\mathbb R^2
+F'(v_0):\RR^3\to\RR^2
 \]
 is onto, so its $2\times3$ matrix has rank $2$. Therefore at least one of its $2\times2$ minors is nonzero. Permuting the three domain coordinates if necessary, take that minor to be the one corresponding to the first two coordinates $(a,b)$.
 
@@ -75,7 +75,7 @@ is onto, so its $2\times3$ matrix has rank $2$. Therefore at least one of its $2
 
 There exist an interval $I$ containing $c_0$ and a continuously differentiable map
 \[
-\phi:I\to\mathbb R^2,
+\phi:I\to\RR^2,
 \qquad
 \phi(c_0)=(a_0,b_0),
 \]
@@ -133,7 +133,7 @@ The set $I$ is an open neighborhood of $c_0$, so it contains some open interval 
 
 Define
 \[
-\gamma:(-\varepsilon,\varepsilon)\to\mathbb R^3
+\gamma:(-\varepsilon,\varepsilon)\to\RR^3
 \]
 by
 \[

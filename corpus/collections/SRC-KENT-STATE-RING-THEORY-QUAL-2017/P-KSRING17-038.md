@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-038
 kind: problem
-title: Splitting of $x^3+1$ over $\mathbb Z_p$ for $p\equiv 1 \pmod 6$
+title: Splitting of $x^3+1$ over $\ZZ_p$ for $p\equiv 1 \pmod 6$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 1 { \ : } ( \mathrm { m o d \ : } 6 )$ , then $x ^ { 3 } + 1$ splits in $\mathbb { Z } _ { p } [ x ]$
+Show that if p is a prime such that $p \equiv 1 { \ : } ( \mathrm { m o d \ : } 6 )$ , then $x ^ { 3 } + 1$ splits in $\ZZ _ { p } [ x ]$
 :::
 
 ::: {.solution}

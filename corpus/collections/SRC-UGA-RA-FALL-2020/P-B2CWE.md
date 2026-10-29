@@ -16,13 +16,13 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $\varphi \in L^1(\mathbb{R})$ with
+Suppose $\varphi \in L^1(\RR)$ with
 $$
-\int_{\mathbb{R}} \varphi(x) \, dx = \alpha.
+\int_{\RR} \varphi(x) \, dx = \alpha.
 $$
-For each $\delta > 0$ and $f \in L^1(\mathbb{R})$, define
+For each $\delta > 0$ and $f \in L^1(\RR)$, define
 $$
-A_\delta f(x) = \int_{\mathbb{R}} f(x-y) \delta^{-1} \varphi(\delta^{-1} y) \, dy.
+A_\delta f(x) = \int_{\RR} f(x-y) \delta^{-1} \varphi(\delta^{-1} y) \, dy.
 $$
 
 (a) Prove that for all $\delta > 0$,
@@ -32,19 +32,19 @@ $$
 
 (b) Prove that
 $$
-A_\delta f \to \alpha f \quad \text{in } L^1(\mathbb{R}) \text{ as } \delta \to 0^+.
+A_\delta f \to \alpha f \quad \text{in } L^1(\RR) \text{ as } \delta \to 0^+.
 $$
 
-*(You may use without proof the fact that for all $f \in L^1(\mathbb{R})$, $\lim_{y \to 0} \int_{\mathbb{R}} |f(x-y) - f(x)| \, dx = 0$.)*
+*(You may use without proof the fact that for all $f \in L^1(\RR)$, $\lim_{y \to 0} \int_{\RR} |f(x-y) - f(x)| \, dx = 0$.)*
 :::
 
 ::: {.solution}
-**Goal:** Prove the boundedness of the family of convolution operators $A_\delta$ on $L^1(\mathbb{R})$ via Tonelli's Theorem in (a), and prove $L^1$ convergence to $\alpha f$ via the Dominated Convergence Theorem on translations in (b).
+**Goal:** Prove the boundedness of the family of convolution operators $A_\delta$ on $L^1(\RR)$ via Tonelli's Theorem in (a), and prove $L^1$ convergence to $\alpha f$ via the Dominated Convergence Theorem on translations in (b).
 
 ::: pf
 
 ::: pf-step
-Part (a): Boundedness of $A_\delta f$ in $L^1(\mathbb{R})$.
+Part (a): Boundedness of $A_\delta f$ in $L^1(\RR)$.
 
 ::: pf-proof
 
@@ -55,30 +55,30 @@ Define $\varphi_\delta(y) = \delta^{-1} \varphi(\delta^{-1} y)$.
 
 ::: pf-step
 By the change of variables $u = \delta^{-1} y$ ($du = \delta^{-1} dy$):
-$$\|\varphi_\delta\|_{L^1} = \int_{\mathbb{R}} \delta^{-1} |\varphi(\delta^{-1} y)| \, dy = \int_{\mathbb{R}} |\varphi(u)| \, du = \|\varphi\|_{L^1}.$$
+$$\|\varphi_\delta\|_{L^1} = \int_{\RR} \delta^{-1} |\varphi(\delta^{-1} y)| \, dy = \int_{\RR} |\varphi(u)| \, du = \|\varphi\|_{L^1}.$$
 
 :::
 
 ::: pf-step
 Apply the integral Minkowski inequality (or Tonelli's Theorem to the non-negative product):
-$$\|A_\delta f\|_{L^1} = \int_{\mathbb{R}} \left| \int_{\mathbb{R}} f(x-y) \varphi_\delta(y) \, dy \right| dx \le \int_{\mathbb{R}} \int_{\mathbb{R}} |f(x-y)| |\varphi_\delta(y)| \, dy \, dx.$$
+$$\|A_\delta f\|_{L^1} = \int_{\RR} \left| \int_{\RR} f(x-y) \varphi_\delta(y) \, dy \right| dx \le \int_{\RR} \int_{\RR} |f(x-y)| |\varphi_\delta(y)| \, dy \, dx.$$
 
 :::
 
 ::: pf-step
 By Tonelli's Theorem, interchange the order of integration:
-$$\int_{\mathbb{R}} \int_{\mathbb{R}} |f(x-y)| |\varphi_\delta(y)| \, dy \, dx = \int_{\mathbb{R}} |\varphi_\delta(y)| \left( \int_{\mathbb{R}} |f(x-y)| \, dx \right) dy.$$
+$$\int_{\RR} \int_{\RR} |f(x-y)| |\varphi_\delta(y)| \, dy \, dx = \int_{\RR} |\varphi_\delta(y)| \left( \int_{\RR} |f(x-y)| \, dx \right) dy.$$
 
 :::
 
 ::: pf-step
-By translation invariance of Lebesgue measure, $\int_{\mathbb{R}} |f(x-y)| \, dx = \|f\|_{L^1}$ for every $y \in \mathbb{R}$.
+By translation invariance of Lebesgue measure, $\int_{\RR} |f(x-y)| \, dx = \|f\|_{L^1}$ for every $y \in \RR$.
 
 :::
 
 ::: pf-step
 Thus:
-$$\|A_\delta f\|_{L^1} \le \|f\|_{L^1} \int_{\mathbb{R}} |\varphi_\delta(y)| \, dy = \|f\|_{L^1} \|\varphi_\delta\|_{L^1} = \|\varphi\|_{L^1} \|f\|_{L^1}.$$
+$$\|A_\delta f\|_{L^1} \le \|f\|_{L^1} \int_{\RR} |\varphi_\delta(y)| \, dy = \|f\|_{L^1} \|\varphi_\delta\|_{L^1} = \|\varphi\|_{L^1} \|f\|_{L^1}.$$
 
 :::
 
@@ -92,25 +92,25 @@ Part (b): Representation of the error $A_\delta f(x) - \alpha f(x)$.
 ::: pf-proof
 
 ::: pf-step
-By change of variables, $\int_{\mathbb{R}} \varphi_\delta(y) \, dy = \int_{\mathbb{R}} \delta^{-1} \varphi(\delta^{-1} y) \, dy = \int_{\mathbb{R}} \varphi(u) \, du = \alpha$.
+By change of variables, $\int_{\RR} \varphi_\delta(y) \, dy = \int_{\RR} \delta^{-1} \varphi(\delta^{-1} y) \, dy = \int_{\RR} \varphi(u) \, du = \alpha$.
 
 :::
 
 ::: pf-step
 Multiply this identity by $f(x)$:
-$$\alpha f(x) = \int_{\mathbb{R}} f(x) \varphi_\delta(y) \, dy.$$
+$$\alpha f(x) = \int_{\RR} f(x) \varphi_\delta(y) \, dy.$$
 
 :::
 
 ::: pf-step
 Subtract this from $A_\delta f(x)$:
-$$A_\delta f(x) - \alpha f(x) = \int_{\mathbb{R}} (f(x-y) - f(x)) \delta^{-1} \varphi(\delta^{-1} y) \, dy.$$
+$$A_\delta f(x) - \alpha f(x) = \int_{\RR} (f(x-y) - f(x)) \delta^{-1} \varphi(\delta^{-1} y) \, dy.$$
 
 :::
 
 ::: pf-step
 Substitute $y = \delta z$ ($dy = \delta dz$):
-$$A_\delta f(x) - \alpha f(x) = \int_{\mathbb{R}} (f(x - \delta z) - f(x)) \varphi(z) \, dz.$$
+$$A_\delta f(x) - \alpha f(x) = \int_{\RR} (f(x - \delta z) - f(x)) \varphi(z) \, dz.$$
 
 :::
 
@@ -125,13 +125,13 @@ Part (b): $L^1$ norm estimate and Dominated Convergence Theorem.
 
 ::: pf-step
 Take the $L^1$ norm:
-$$\|A_\delta f - \alpha f\|_{L^1} = \int_{\mathbb{R}} \left| \int_{\mathbb{R}} (f(x - \delta z) - f(x)) \varphi(z) \, dz \right| dx \le \int_{\mathbb{R}} \int_{\mathbb{R}} |f(x - \delta z) - f(x)| |\varphi(z)| \, dz \, dx.$$
+$$\|A_\delta f - \alpha f\|_{L^1} = \int_{\RR} \left| \int_{\RR} (f(x - \delta z) - f(x)) \varphi(z) \, dz \right| dx \le \int_{\RR} \int_{\RR} |f(x - \delta z) - f(x)| |\varphi(z)| \, dz \, dx.$$
 
 :::
 
 ::: pf-step
 By Tonelli's Theorem, interchange the order of integration:
-$$\|A_\delta f - \alpha f\|_{L^1} \le \int_{\mathbb{R}} |\varphi(z)| \left( \int_{\mathbb{R}} |f(x - \delta z) - f(x)| \, dx \right) dz = \int_{\mathbb{R}} |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \, dz,$$
+$$\|A_\delta f - \alpha f\|_{L^1} \le \int_{\RR} |\varphi(z)| \left( \int_{\RR} |f(x - \delta z) - f(x)| \, dx \right) dz = \int_{\RR} |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \, dz,$$
 where $\tau_h f(x) = f(x - h)$.
 
 :::
@@ -139,7 +139,7 @@ where $\tau_h f(x) = f(x - h)$.
 ::: pf-step
 Pointwise convergence:
 
-- For each fixed $z \in \mathbb{R}$, as $\delta \to 0^+$, the shift $h = \delta z \to 0$.
+- For each fixed $z \in \RR$, as $\delta \to 0^+$, the shift $h = \delta z \to 0$.
 - By $L^1$-continuity of translations:
 $$\lim_{\delta \to 0^+} \|\tau_{\delta z} f - f\|_{L^1} = 0 \implies \lim_{\delta \to 0^+} |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} = 0.$$
 
@@ -149,15 +149,15 @@ $$\lim_{\delta \to 0^+} \|\tau_{\delta z} f - f\|_{L^1} = 0 \implies \lim_{\delt
 Domination:
 
 - By the triangle inequality, $\|\tau_{\delta z} f - f\|_{L^1} \le \|\tau_{\delta z} f\|_{L^1} + \|f\|_{L^1} = 2 \|f\|_{L^1}$.
-- Thus for all $\delta > 0$ and all $z \in \mathbb{R}$:
+- Thus for all $\delta > 0$ and all $z \in \RR$:
 $$|\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \le 2 \|f\|_{L^1} |\varphi(z)| =: g(z).$$
-- Since $\varphi \in L^1(\mathbb{R})$, $g \in L^1(\mathbb{R})$.
+- Since $\varphi \in L^1(\RR)$, $g \in L^1(\RR)$.
 
 :::
 
 ::: pf-step
 By the Dominated Convergence Theorem:
-$$\lim_{\delta \to 0^+} \|A_\delta f - \alpha f\|_{L^1} \le \int_{\mathbb{R}} \lim_{\delta \to 0^+} \left( |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \right) dz = \int_{\mathbb{R}} 0 \, dz = 0.$$
+$$\lim_{\delta \to 0^+} \|A_\delta f - \alpha f\|_{L^1} \le \int_{\RR} \lim_{\delta \to 0^+} \left( |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \right) dz = \int_{\RR} 0 \, dz = 0.$$
 
 :::
 

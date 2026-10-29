@@ -17,17 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f_n\colon\mathbb R\to\mathbb R$ satisfy:
+Suppose $f_n\colon\RR\to\RR$ satisfy:
 
 - $0\le f_n(x)\le1$ for all $x$ and $n$;
 
 - each $f_n$ is increasing;
 
-- $f_n(x)\to f(x)$ pointwise, where $f$ is continuous on $\mathbb R$;
+- $f_n(x)\to f(x)$ pointwise, where $f$ is continuous on $\RR$;
 
 - $f(x)\to0$ as $x\to-\infty$ and $f(x)\to1$ as $x\to\infty$.
 
-Prove that $f_n\to f$ uniformly on $\mathbb R$.
+Prove that $f_n\to f$ uniformly on $\RR$.
 :::
 
 ::: {.solution}
@@ -382,7 +382,7 @@ n\ge\max\{N_0,N_1\}
 \]
 and every
 \[
-x\in\mathbb R,
+x\in\RR,
 \]
 one has
 \[
@@ -407,7 +407,7 @@ If
 x\ge M,
 \]
 apply step [](#s1-5){.pf-ref}.
-These three regions cover $\mathbb R$.
+These three regions cover $\RR$.
 
 :::
 
@@ -417,7 +417,7 @@ These three regions cover $\mathbb R$.
 
 Therefore
 \[
-\boxed{f_n\to f\text{ uniformly on }\mathbb R}.
+\boxed{f_n\to f\text{ uniformly on }\RR}.
 \]
 
 

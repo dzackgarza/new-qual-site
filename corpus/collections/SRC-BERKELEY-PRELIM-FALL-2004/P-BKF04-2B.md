@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f \colon  { \mathbb { R } } ^ { 3 } \to  { \mathbb { R } }$ be a continuous function of compact support (i.e., $f$ vanishes outside some bounded set).
+Let $f \colon  { \RR } ^ { 3 } \to  { \RR }$ be a continuous function of compact support (i.e., $f$ vanishes outside some bounded set).
 
 (a) Show that
 
@@ -19,7 +19,7 @@ $$
 u ( x ) : = \int { \frac { f ( y ) } { | x - y | } } d y
 $$
 
-converges, where the integral is over all $\boldsymbol { y } \in \mathbb { R } ^ { 3 }$
+converges, where the integral is over all $\boldsymbol { y } \in \RR ^ { 3 }$
 
 (b) Show that $\lim_{|x|\to\infty}u(x)|x|$ exists.
 :::

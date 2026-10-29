@@ -37,7 +37,7 @@ converges uniformly on every bounded interval in $\RR$.
 
 ::: {.solution}
 
-Let $I\subset\mathbb R$ be a bounded interval and set
+Let $I\subset\RR$ be a bounded interval and set
 $$
 B\coloneqq\sup_{x\in I}|x|<\infty.
 $$

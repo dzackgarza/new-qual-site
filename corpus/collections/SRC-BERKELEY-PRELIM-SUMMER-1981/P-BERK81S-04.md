@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous and suppose
+Let $f:\RR\to\RR$ be continuous and suppose
 \[
 \int_{-\infty}^{\infty}|f(x)|\,dx<\infty.
 \]

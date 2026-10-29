@@ -22,14 +22,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g:X\to\mathbb R$ be measurable functions on a measurable space $(X,\mathcal B)$.
+Let $f,g:X\to\RR$ be measurable functions on a measurable space $(X,\mathcal B)$.
 Prove that $f+g$ is measurable.
 :::
 
 ::: {.solution}
 The map
 \[
-F:X\to\mathbb R^2,
+F:X\to\RR^2,
 \qquad
 F(x)=(f(x),g(x)),
 \]
@@ -37,11 +37,11 @@ is measurable with respect to the product Borel sigma-algebra: for every Borel r
 \[
 F^{-1}(A\times B)=f^{-1}(A)\cap g^{-1}(B)\in\mathcal B,
 \]
-and such rectangles generate $\mathcal B(\mathbb R^2)$.
+and such rectangles generate $\mathcal B(\RR^2)$.
 
 The addition map
 \[
-S:\mathbb R^2\to\mathbb R,
+S:\RR^2\to\RR,
 \qquad
 S(u,v)=u+v,
 \]

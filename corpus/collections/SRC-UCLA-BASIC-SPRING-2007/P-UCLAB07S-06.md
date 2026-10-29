@@ -21,7 +21,7 @@ Consider
 \[
 y(t)=y_0+\int_0^t f(s,y(s))\,ds,
 \]
-where $f$ is continuous on $[0,T]\times\mathbb R$ and Lipschitz in its second variable with constant $K$.
+where $f$ is continuous on $[0,T]\times\RR$ and Lipschitz in its second variable with constant $K$.
 Assume the Picard iterates
 \[
 y^n(t)=y_0+\int_0^t f(s,y^{n-1}(s))\,ds,

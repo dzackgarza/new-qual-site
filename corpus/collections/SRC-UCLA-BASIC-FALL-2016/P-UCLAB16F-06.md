@@ -58,7 +58,7 @@ one has
 \[
 Av=3v
 \]
-for every vector $v\in\mathbb R^2$.
+for every vector $v\in\RR^2$.
 The matrix $A$ is invertible and has rational entries.
 
 :::
@@ -69,7 +69,7 @@ The matrix $A$ is invertible and has rational entries.
 
 For the vector in step [](#s1-1){.pf-ref}, no nonzero real scalar multiple belongs to
 \[
-\mathbb Q^2.
+\QQ^2.
 \]
 
 
@@ -83,11 +83,11 @@ Suppose
 \sqrt2
 \end{pmatrix}
 \in
-\mathbb Q^2.
+\QQ^2.
 \]
 Then the first coordinate gives
 \[
-\lambda\in\mathbb Q.
+\lambda\in\QQ.
 \]
 If $\lambda\ne0$, the second coordinate
 \[
@@ -96,7 +96,7 @@ If $\lambda\ne0$, the second coordinate
 would be rational.
 Dividing by the nonzero rational number $\lambda$ would imply
 \[
-\sqrt2\in\mathbb Q,
+\sqrt2\in\QQ,
 \]
 a contradiction.
 Thus only $\lambda=0$ gives a rational vector.
@@ -150,7 +150,7 @@ Their difference therefore has rational entries.
 
 The real nullspace
 \[
-\ker_{\mathbb R}(A-3I)
+\ker_{\RR}(A-3I)
 \]
 is nonzero.
 
@@ -177,7 +177,7 @@ A rational matrix with nontrivial real nullspace has a nonzero rational null vec
 
 Let $M$ be a matrix with rational entries and suppose
 \[
-\ker_{\mathbb R}M\ne\{0\}.
+\ker_{\RR}M\ne\{0\}.
 \]
 Perform Gaussian elimination on $M$ using rational row operations.
 The resulting reduced row-echelon matrix still has rational entries.
@@ -187,7 +187,7 @@ Set one free variable equal to $1$, all other free variables equal to $0$, and s
 Because all coefficients in the reduced system are rational, every pivot variable obtained in this way is rational.
 Thus the resulting vector is a nonzero element of
 \[
-\mathbb Q^n
+\QQ^n
 \]
 lying in the nullspace.
 
@@ -199,7 +199,7 @@ lying in the nullspace.
 
 There exists
 \[
-0\ne w\in\mathbb Q^n
+0\ne w\in\QQ^n
 \]
 such that
 \[
@@ -216,7 +216,7 @@ M=A-3I.
 Step [](#s1-4){.pf-ref} gives rational entries and step [](#s1-5){.pf-ref} gives nontrivial real nullspace.
 Hence there is
 \[
-0\ne w\in\mathbb Q^n
+0\ne w\in\QQ^n
 \]
 with
 \[

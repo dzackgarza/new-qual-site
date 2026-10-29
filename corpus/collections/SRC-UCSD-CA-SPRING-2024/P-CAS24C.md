@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic.
+Let $f : \mathbb{D} \to \CC$ be holomorphic.
 Assume $\operatorname{Re} f(z) > 0$ for all $z \in \mathbb{D}$.
 Show that
 \[

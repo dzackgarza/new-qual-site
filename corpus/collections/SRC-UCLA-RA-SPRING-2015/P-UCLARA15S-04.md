@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be $2\pi$-periodic.
-Show that linear combinations of the translates $f(x-a)$, $a\in\mathbb R$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
+Let $f\in L^1_{\mathrm{loc}}(\RR)$ be $2\pi$-periodic.
+Show that linear combinations of the translates $f(x-a)$, $a\in\RR$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
 :::
 
 ::: {.solution}
@@ -29,21 +29,21 @@ For a $2\pi$-periodic integrable function $h$, write
 \coloneqq
 \frac1{2\pi}
 \int_0^{2\pi}h(x)e^{-inx}\,dx,
-\qquad n\in\mathbb Z.
+\qquad n\in\ZZ.
 \]
 Let
 \[
 \mathcal T_f
 \coloneqq
 \operatorname{span}
-\{f(\cdot-a):a\in\mathbb R\}.
+\{f(\cdot-a):a\in\RR\}.
 \]
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-If $\widehat f(n_0)=0$ for some $n_0\in\mathbb Z$, then $\mathcal T_f$ is not dense in $L^1((0,2\pi))$.
+If $\widehat f(n_0)=0$ for some $n_0\in\ZZ$, then $\mathcal T_f$ is not dense in $L^1((0,2\pi))$.
 
 
 ::: pf-proof
@@ -66,7 +66,7 @@ Hence every $h\in\mathcal T_f$ satisfies
 \]
 The functional
 \[
-L^1((0,2\pi))\to\mathbb C,
+L^1((0,2\pi))\to\CC,
 \qquad
 h\mapsto\widehat h(n_0)
 \]
@@ -96,7 +96,7 @@ Now suppose that
 \[
 \widehat f(n)\ne0
 \qquad
-(n\in\mathbb Z).
+(n\in\ZZ).
 \]
 If the closure
 \[
@@ -150,7 +150,7 @@ Then
 \[
 H(a)=0
 \qquad
-(a\in\mathbb R).
+(a\in\RR).
 \]
 
 
@@ -164,7 +164,7 @@ For each $a$, the translate $f(\cdot-a)$ belongs to $\mathcal T_f\subset X$. The
 
 ::: {.pf-step #s1-4}
 
-For every $n\in\mathbb Z$,
+For every $n\in\ZZ$,
 \[
 \widehat H(n)
 =
@@ -234,7 +234,7 @@ The assumption that all Fourier coefficients of $f$ are nonzero forces
 \[
 \widehat g(n)=0
 \qquad
-(n\in\mathbb Z).
+(n\in\ZZ).
 \]
 
 
@@ -244,7 +244,7 @@ By step [](#s1-3){.pf-ref}, $H\equiv0$, so
 \[
 \widehat H(n)=0
 \qquad
-(n\in\mathbb Z).
+(n\in\ZZ).
 \]
 Step [](#s1-4){.pf-ref} therefore gives
 \[

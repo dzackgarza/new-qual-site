@@ -17,15 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $u\in L^2(\mathbb R)$ and set
+Let $u\in L^2(\RR)$ and set
 \[
-U(x,\xi)=\int_{\mathbb R}e^{-(x+i\xi-y)^2/2}u(y)\,dy,
-\qquad x,\xi\in\mathbb R.
+U(x,\xi)=\int_{\RR}e^{-(x+i\xi-y)^2/2}u(y)\,dy,
+\qquad x,\xi\in\RR.
 \]
-Show that $U(x,\xi)$ is well defined on $\mathbb R^2$ and that there exists a constant $C>0$ such that for all $u\in L^2(\mathbb R)$,
+Show that $U(x,\xi)$ is well defined on $\RR^2$ and that there exists a constant $C>0$ such that for all $u\in L^2(\RR)$,
 \[
-\iint_{\mathbb R^2}|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
-=C\int_{\mathbb R}|u(y)|^2\,dy.
+\iint_{\RR^2}|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
+=C\int_{\RR}|u(y)|^2\,dy.
 \]
 Determine $C$ explicitly.
 :::
@@ -36,21 +36,21 @@ Use the Fourier transform convention
 \[
 \mathcal Fh(\eta)
 \coloneqq
-\int_{\mathbb R}h(y)e^{-i\eta y}\,dy,
+\int_{\RR}h(y)e^{-i\eta y}\,dy,
 \]
 for which Plancherel's theorem reads
 \[
-\int_{\mathbb R}|\mathcal Fh(\eta)|^2\,d\eta
+\int_{\RR}|\mathcal Fh(\eta)|^2\,d\eta
 =
 2\pi
-\int_{\mathbb R}|h(y)|^2\,dy.
+\int_{\RR}|h(y)|^2\,dy.
 \]
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For every $(x,\xi)\in\mathbb R^2$, the integral defining $U(x,\xi)$ converges absolutely.
+For every $(x,\xi)\in\RR^2$, the integral defining $U(x,\xi)$ converges absolutely.
 
 
 ::: pf-proof
@@ -67,14 +67,14 @@ e^{-(x-y)^2/2},
 Cauchy--Schwarz gives
 \[
 \begin{aligned}
-\int_{\mathbb R}
+\int_{\RR}
 \left|
 e^{-(x+i\xi-y)^2/2}u(y)
 \right|dy
 &\le
 e^{\xi^2/2}
 \left(
-\int_{\mathbb R}
+\int_{\RR}
 e^{-(x-y)^2}\,dy
 \right)^{1/2}
 \|u\|_2\\
@@ -94,13 +94,13 @@ Thus $U(x,\xi)$ is well defined.
 
 ::: {.pf-step #s1-2}
 
-For fixed $x\in\mathbb R$, define
+For fixed $x\in\RR$, define
 \[
 h_x(y)
 \coloneqq
 e^{xy-y^2/2}u(y).
 \]
-Then $h_x\in L^2(\mathbb R)$ and
+Then $h_x\in L^2(\RR)$ and
 \[
 U(x,\xi)
 =
@@ -148,7 +148,7 @@ U(x,\xi)
 e^{-x^2/2}
 e^{\xi^2/2}
 e^{-ix\xi}
-\int_{\mathbb R}
+\int_{\RR}
 h_x(y)e^{i\xi y}\,dy.
 \]
 The last integral is $\mathcal Fh_x(-\xi)$.
@@ -159,13 +159,13 @@ The last integral is $\mathcal Fh_x(-\xi)$.
 
 ::: {.pf-step #s1-3}
 
-For every fixed $x\in\mathbb R$,
+For every fixed $x\in\RR$,
 \[
-\int_{\mathbb R}
+\int_{\RR}
 |U(x,\xi)|^2e^{-\xi^2}\,d\xi
 =
 2\pi
-\int_{\mathbb R}
+\int_{\RR}
 e^{-(x-y)^2}
 |u(y)|^2\,dy.
 \]
@@ -183,24 +183,24 @@ e^{-x^2}
 Therefore Plancherel gives
 \[
 \begin{aligned}
-\int_{\mathbb R}
+\int_{\RR}
 |U(x,\xi)|^2e^{-\xi^2}\,d\xi
 &=
 e^{-x^2}
-\int_{\mathbb R}
+\int_{\RR}
 |\mathcal Fh_x(\xi)|^2\,d\xi\\
 &=
 2\pi e^{-x^2}
-\int_{\mathbb R}
+\int_{\RR}
 |h_x(y)|^2\,dy\\
 &=
 2\pi
-\int_{\mathbb R}
+\int_{\RR}
 e^{-x^2+2xy-y^2}
 |u(y)|^2\,dy\\
 &=
 2\pi
-\int_{\mathbb R}
+\int_{\RR}
 e^{-(x-y)^2}
 |u(y)|^2\,dy.
 \end{aligned}
@@ -215,11 +215,11 @@ e^{-(x-y)^2}
 One has
 \[
 \boxed{
-\iint_{\mathbb R^2}
+\iint_{\RR^2}
 |U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
 =
 2\pi^{3/2}
-\int_{\mathbb R}|u(y)|^2\,dy
+\int_{\RR}|u(y)|^2\,dy
 }.
 \]
 
@@ -229,25 +229,25 @@ One has
 The integrand in step [](#s1-3){.pf-ref} is nonnegative, so Tonelli's theorem permits integration in $x$ and $y$ in either order:
 \[
 \begin{aligned}
-\iint_{\mathbb R^2}
+\iint_{\RR^2}
 |U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
 &=
 2\pi
-\int_{\mathbb R}
-\int_{\mathbb R}
+\int_{\RR}
+\int_{\RR}
 e^{-(x-y)^2}
 |u(y)|^2\,dy\,dx\\
 &=
 2\pi
-\int_{\mathbb R}
+\int_{\RR}
 |u(y)|^2
 \left(
-\int_{\mathbb R}
+\int_{\RR}
 e^{-(x-y)^2}\,dx
 \right)dy\\
 &=
 2\pi\sqrt\pi
-\int_{\mathbb R}|u(y)|^2\,dy.
+\int_{\RR}|u(y)|^2\,dy.
 \end{aligned}
 \]
 Since

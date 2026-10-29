@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS00B
 kind: problem
-title: $\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/n,\mathbb Q/\mathbb Z)$
+title: $\operatorname{Ext}^1_{\ZZ}(\ZZ/n,\QQ/\ZZ)$
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\operatorname{Ext}^1(\mathbb{Z}/n, \mathbb{Q}/\mathbb{Z})$.
+Compute $\operatorname{Ext}^1(\ZZ/n, \QQ/\ZZ)$.
 :::
 
 ::: {.solution}
@@ -25,12 +25,12 @@ Compute $\operatorname{Ext}^1(\mathbb{Z}/n, \mathbb{Q}/\mathbb{Z})$.
 
 Use the free resolution
 $$
-0\longrightarrow\mathbb Z\xrightarrow{\;n\;}\mathbb Z\longrightarrow\mathbb Z/n\longrightarrow0.
+0\longrightarrow\ZZ\xrightarrow{\;n\;}\ZZ\longrightarrow\ZZ/n\longrightarrow0.
 $$
 
 ::: pf-proof
 
-The cokernel of multiplication by $n$ on $\mathbb Z$ is $\mathbb Z/n$.
+The cokernel of multiplication by $n$ on $\ZZ$ is $\ZZ/n$.
 
 :::
 
@@ -38,16 +38,16 @@ The cokernel of multiplication by $n$ on $\mathbb Z$ is $\mathbb Z/n$.
 
 ::: {.pf-step #s2}
 
-Applying $\operatorname{Hom}_{\mathbb Z}(-,\mathbb Q/\mathbb Z)$ gives
+Applying $\operatorname{Hom}_{\ZZ}(-,\QQ/\ZZ)$ gives
 $$
-\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/n,\mathbb Q/\mathbb Z)
+\operatorname{Ext}^1_{\ZZ}(\ZZ/n,\QQ/\ZZ)
 \cong
-(\mathbb Q/\mathbb Z)/n(\mathbb Q/\mathbb Z).
+(\QQ/\ZZ)/n(\QQ/\ZZ).
 $$
 
 ::: pf-proof
 
-The first Ext group is the cokernel of the map induced by multiplication by $n$ on the two Hom groups, both naturally isomorphic to $\mathbb Q/\mathbb Z$.
+The first Ext group is the cokernel of the map induced by multiplication by $n$ on the two Hom groups, both naturally isomorphic to $\QQ/\ZZ$.
 
 :::
 
@@ -55,11 +55,11 @@ The first Ext group is the cokernel of the map induced by multiplication by $n$ 
 
 ::: {.pf-step #s3}
 
-Multiplication by $n$ on $\mathbb Q/\mathbb Z$ is surjective.
+Multiplication by $n$ on $\QQ/\ZZ$ is surjective.
 
 ::: pf-proof
 
-Given $q+\mathbb Z$, the class $q/n+\mathbb Z$ maps to it under multiplication by $n$.
+Given $q+\ZZ$, the class $q/n+\ZZ$ maps to it under multiplication by $n$.
 
 :::
 
@@ -69,12 +69,12 @@ Given $q+\mathbb Z$, the class $q/n+\mathbb Z$ maps to it under multiplication b
 
 Hence
 $$
-\boxed{\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/n,\mathbb Q/\mathbb Z)=0}.
+\boxed{\operatorname{Ext}^1_{\ZZ}(\ZZ/n,\QQ/\ZZ)=0}.
 $$
 
 ::: pf-proof
 
-The quotient in step [](#s2){.pf-ref} is zero by step [](#s3){.pf-ref}. Equivalently, $\mathbb Q/\mathbb Z$ is divisible and therefore injective as a $\mathbb Z$-module.
+The quotient in step [](#s2){.pf-ref} is zero by step [](#s3){.pf-ref}. Equivalently, $\QQ/\ZZ$ is divisible and therefore injective as a $\ZZ$-module.
 
 :::
 

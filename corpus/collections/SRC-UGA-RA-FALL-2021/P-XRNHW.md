@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 a.
-Let $F \subset \mathbb{R}$ be closed, and define
+Let $F \subset \RR$ be closed, and define
 \[
 \delta_{F}(y):=\inf _{x \in F}|x-y| .
 \]
@@ -35,10 +35,10 @@ For $y \notin F$, show that
 \int_{F}|x-y|^{-2} d x \leq \frac{2}{\delta_F(y)},
 \]
 b.
-Let $F \subset \mathbb{R}$ be a closed set whose complement has finite measure, i.e. $m(\RR \sm F)< \infty$. 
+Let $F \subset \RR$ be a closed set whose complement has finite measure, i.e. $m(\RR \sm F)< \infty$. 
 Define the function
 \[
-I(x):=\int_{\mathbb{R}} \frac{\delta_{F}(y)}{|x-y|^{2}} d y
+I(x):=\int_{\RR} \frac{\delta_{F}(y)}{|x-y|^{2}} d y
 \]
 Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost every $x \in F$. 
 
@@ -127,9 +127,9 @@ The integrand is nonnegative, so Tonelli's theorem gives
 \[
 \begin{aligned}
 \int_F I(x)\,dx
-&=\int_F\int_{\mathbb R}
+&=\int_F\int_{\RR}
 \frac{\delta_F(y)}{|x-y|^2}\,dy\,dx\\
-&=\int_{\mathbb R}\delta_F(y)
+&=\int_{\RR}\delta_F(y)
 \left(\int_F\frac{dx}{|x-y|^2}\right)dy.
 \end{aligned}
 \]
@@ -142,7 +142,7 @@ For $y\in F$, the factor $\delta_F(y)$ is $0$. For $y\notin F$, Step 1 gives
 Hence
 \[
 \int_F I(x)\,dx
-\le2m(\mathbb R\setminus F)<\infty.
+\le2m(\RR\setminus F)<\infty.
 \]
 
 :::

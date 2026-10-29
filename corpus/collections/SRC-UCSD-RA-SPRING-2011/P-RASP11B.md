@@ -26,15 +26,15 @@ audit:
 ---
 
 ::: {.problem}
-For each integer $k > 0$ denote by $\Delta_k(j) = [j 2^{-k}, (j+1) 2^{-k})]$ where $j \in \mathbb{Z}$, the dyadic rational interval of length $2^{-k}$ starting at $j 2^{-k}$.
-Let $f \in L^1(\mathbb{R})$, and define
+For each integer $k > 0$ denote by $\Delta_k(j) = [j 2^{-k}, (j+1) 2^{-k})]$ where $j \in \ZZ$, the dyadic rational interval of length $2^{-k}$ starting at $j 2^{-k}$.
+Let $f \in L^1(\RR)$, and define
 $$
 A_k(f)(x) = \sum_j a_k(j) \mathbf{1}_{\Delta_k(j)}(x), \quad a_k(j) = \frac{1}{|\Delta_k(j)|} \int_{\Delta_k(j)} f(y) \, dy.
 $$
 
-(a) Prove that $\|A_k f\|_{L^1(\mathbb{R})} \leq \|f\|_{L^1(\mathbb{R})}$ for all $k > 0$, $f \in L^1(\mathbb{R})$.
+(a) Prove that $\|A_k f\|_{L^1(\RR)} \leq \|f\|_{L^1(\RR)}$ for all $k > 0$, $f \in L^1(\RR)$.
 
-(b) Show that if $f \in L^1(\mathbb{R})$ then $A_k(f) \to f$ in $L^1(\mathbb{R})$ as $k \to \infty$.
+(b) Show that if $f \in L^1(\RR)$ then $A_k(f) \to f$ in $L^1(\RR)$ as $k \to \infty$.
 :::
 
 ::: {.solution}
@@ -76,7 +76,7 @@ Prove convergence for continuous compactly supported functions.
 
 ::: pf-proof
 
-Let $g\in C_c(\mathbb R)$. Since $g$ is uniformly continuous, let
+Let $g\in C_c(\RR)$. Since $g$ is uniformly continuous, let
 \[
 \omega_g(\delta)
 :=\sup\{|g(x)-g(y)|:|x-y|\le\delta\}.
@@ -107,7 +107,7 @@ Pass to arbitrary $L^1$ functions by density.
 
 ::: pf-proof
 
-Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$, choose $g\in C_c(\mathbb R)$ such that
+Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Since $C_c(\RR)$ is dense in $L^1(\RR)$, choose $g\in C_c(\RR)$ such that
 \[
 \|f-g\|_1<\varepsilon.
 \]
@@ -129,7 +129,7 @@ Letting $k\to\infty$ and using Step 2 gives
 \]
 Since $\varepsilon$ is arbitrary,
 \[
-\boxed{A_kf\to f\text{ in }L^1(\mathbb R).}
+\boxed{A_kf\to f\text{ in }L^1(\RR).}
 \]
 
 :::

@@ -66,7 +66,7 @@ Y=S^1\times\{1\}
 \]
 inside
 \[
-S^1\times\mathbb R.
+S^1\times\RR.
 \]
 
 
@@ -178,7 +178,7 @@ But
 \[
 H_2(X)=0,
 \qquad
-H_2(S^2)\cong\mathbb Z.
+H_2(S^2)\cong\ZZ.
 \]
 Homotopy-equivalent spaces have isomorphic homology groups, so
 \[
@@ -230,7 +230,7 @@ H_2(Y)
 \cong
 H_2(S^1\vee S^2)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 Thus they are not homotopy equivalent, so the retraction is not a
 deformation retraction.
@@ -301,7 +301,7 @@ For the torus,
 \[
 \pi_1(Y)
 \cong
-\mathbb Z^2.
+\ZZ^2.
 \]
 These groups are not isomorphic because
 \[
@@ -309,7 +309,7 @@ F_2
 \]
 is nonabelian while
 \[
-\mathbb Z^2
+\ZZ^2
 \]
 is abelian.
 
@@ -319,13 +319,13 @@ H_1(X)
 \cong
 F_2^{\mathrm{ab}}
 \cong
-\mathbb Z^2,
+\ZZ^2,
 \]
 and
 \[
 H_1(Y)
 \cong
-\mathbb Z^2.
+\ZZ^2.
 \]
 Thus the first homology groups are isomorphic while the fundamental groups
 are not.
@@ -343,7 +343,7 @@ Statement (10) is impossible.
 
 For every path-connected space $Z$,
 \[
-H_1(Z;\mathbb Z)
+H_1(Z;\ZZ)
 \cong
 \pi_1(Z)^{\mathrm{ab}}.
 \]
@@ -386,7 +386,7 @@ But
 \[
 \pi_1(S^1)
 \cong
-\mathbb Z,
+\ZZ,
 \qquad
 \pi_1(\{*\})=0.
 \]
@@ -424,7 +424,7 @@ and
 \[
 H_2(Y)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 :::

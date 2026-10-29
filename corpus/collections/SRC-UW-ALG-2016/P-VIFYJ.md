@@ -37,7 +37,7 @@ Proof that $A$ is an integral domain:
 
 ::: pf-step
 The defining relation is $f(x, y) = y^2 - (x-1)^3 - (x-1)^2 = y^2 - x(x-1)^2$.
-View $f(x, y)$ as a monic polynomial of degree 2 in $y$ over the UFD $R = \mathbb{C}[x]$:
+View $f(x, y)$ as a monic polynomial of degree 2 in $y$ over the UFD $R = \CC[x]$:
 \[
 f(x, y) = y^2 - x(x-1)^2 \in R[y].
 \]
@@ -45,15 +45,15 @@ f(x, y) = y^2 - x(x-1)^2 \in R[y].
 :::
 
 ::: pf-step
-The polynomial $f(x, y)$ is irreducible in $\mathbb{C}(x)[y]$ if and only if $x(x-1)^2$ is not a square in $\mathbb{C}(x)$.
-Since $x$ has odd multiplicity $1$ in $\mathbb{C}[x]$, $\sqrt{x(x-1)^2} = (x-1)\sqrt{x} \notin \mathbb{C}(x)$.
-Because $f$ is monic in $y$, Gauss's Lemma implies $f(x, y)$ is irreducible in $\mathbb{C}[x, y]$.
+The polynomial $f(x, y)$ is irreducible in $\CC(x)[y]$ if and only if $x(x-1)^2$ is not a square in $\CC(x)$.
+Since $x$ has odd multiplicity $1$ in $\CC[x]$, $\sqrt{x(x-1)^2} = (x-1)\sqrt{x} \notin \CC(x)$.
+Because $f$ is monic in $y$, Gauss's Lemma implies $f(x, y)$ is irreducible in $\CC[x, y]$.
 
 :::
 
 ::: pf-step
-Since $\mathbb{C}[x, y]$ is a commutative ring and $f(x, y)$ is irreducible, the principal ideal $\langle f(x, y) \rangle$ is prime.
-Therefore $A = \mathbb{C}[x, y]/\langle f(x, y) \rangle$ is an integral domain.
+Since $\CC[x, y]$ is a commutative ring and $f(x, y)$ is irreducible, the principal ideal $\langle f(x, y) \rangle$ is prime.
+Therefore $A = \CC[x, y]/\langle f(x, y) \rangle$ is an integral domain.
 
 :::
 
@@ -67,7 +67,7 @@ Description of the real points of $\operatorname{Spec}(A)$:
 ::: pf-proof
 
 ::: pf-step
-The real locus consists of all $(x, y) \in \mathbb{R}^2$ satisfying $y^2 = x(x-1)^2$.
+The real locus consists of all $(x, y) \in \RR^2$ satisfying $y^2 = x(x-1)^2$.
 Since $y^2 \ge 0$ and $(x-1)^2 \ge 0$, real solutions exist if and only if $x \ge 0$.
 
 :::
@@ -106,19 +106,19 @@ Express $y$ in terms of $t$:
 \[
 y = t(x - 1) = t(t^2 - 1) = t^3 - t.
 \]
-Thus $A = \mathbb{C}[x, y] = \mathbb{C}[t^2, t^3 - t] \subseteq \mathbb{C}[t] \subset K$.
+Thus $A = \CC[x, y] = \CC[t^2, t^3 - t] \subseteq \CC[t] \subset K$.
 
 :::
 
 ::: pf-step
 The element $t$ is integral over $A$ since $t^2 - x = 0$ is a monic polynomial in $A[T]$.
-Thus $\mathbb{C}[t]$ is an integral extension of $A$.
+Thus $\CC[t]$ is an integral extension of $A$.
 
 :::
 
 ::: pf-step
-The polynomial ring $\mathbb{C}[t]$ is a PID, hence integrally closed in its fraction field $\operatorname{Frac}(\mathbb{C}[t]) = \mathbb{C}(t) = K$.
-Therefore $\mathbb{C}[t]$ is the integral closure of $A$ in $K$, with normalization isomorphism $\widetilde{A} \cong \mathbb{C}[t]$.
+The polynomial ring $\CC[t]$ is a PID, hence integrally closed in its fraction field $\operatorname{Frac}(\CC[t]) = \CC(t) = K$.
+Therefore $\CC[t]$ is the integral closure of $A$ in $K$, with normalization isomorphism $\widetilde{A} \cong \CC[t]$.
 
 :::
 
@@ -128,7 +128,7 @@ Therefore $\mathbb{C}[t]$ is the integral closure of $A$ in $K$, with normalizat
 
 ::: pf-step
 Conclusion:
-$A$ is an integral domain, its real points form a nodal cubic curve with a loop on $[0, 1]$, and its integral closure is $\mathbb{C}[t]$ where $t = \frac{y}{x-1}$.
+$A$ is an integral domain, its real points form a nodal cubic curve with a loop on $[0, 1]$, and its integral closure is $\CC[t]$ where $t = \frac{y}{x-1}$.
 :::
 
 :::

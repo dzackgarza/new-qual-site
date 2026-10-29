@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Let $M^n$ be a path-connected closed orientable manifold such that there exists a map $f : S^n \to M$ of degree $\pm 1$.
-Show that $H^*(M; \mathbb{F}) = H^*(S^n; \mathbb{F})$ whenever $\mathbb{F}$ is a field, and hence that $H^*(M; \mathbb{Z}) \cong H^*(S^n; \mathbb{Z})$.
+Show that $H^*(M; \mathbb{F}) = H^*(S^n; \mathbb{F})$ whenever $\mathbb{F}$ is a field, and hence that $H^*(M; \ZZ) \cong H^*(S^n; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -49,21 +49,21 @@ The sphere has zero cohomology in degrees $0<k<n$, so injectivity forces the sam
 :::
 
 ::: pf-step
-The integral cohomology groups of the closed manifold $M$ are finitely generated. The vanishing in step [](#field-cohomology-iso){.pf-ref} for $\mathbb Q$ rules out free summands in intermediate degrees, and the vanishing for every $\mathbb F_p$ rules out torsion there.
+The integral cohomology groups of the closed manifold $M$ are finitely generated. The vanishing in step [](#field-cohomology-iso){.pf-ref} for $\QQ$ rules out free summands in intermediate degrees, and the vanishing for every $\mathbb F_p$ rules out torsion there.
 
 ::: pf-proof
-A nonzero free summand would survive after tensoring with $\mathbb Q$. If a $p$-primary torsion summand occurred in integral cohomology or adjacent integral homology, the universal coefficient theorem with $\mathbb F_p$ coefficients would produce a nonzero intermediate mod-$p$ cohomology group, contradicting step [](#field-cohomology-iso){.pf-ref}.
+A nonzero free summand would survive after tensoring with $\QQ$. If a $p$-primary torsion summand occurred in integral cohomology or adjacent integral homology, the universal coefficient theorem with $\mathbb F_p$ coefficients would produce a nonzero intermediate mod-$p$ cohomology group, contradicting step [](#field-cohomology-iso){.pf-ref}.
 :::
 
 :::
 
 ::: pf-step
 Therefore
-$$\boxed{H^*(M;\mathbb Z)\cong H^*(S^n;\mathbb Z)}$$
+$$\boxed{H^*(M;\ZZ)\cong H^*(S^n;\ZZ)}$$
 as graded abelian groups.
 
 ::: pf-proof
-Only $H^0\cong H^n\cong\mathbb Z$ remain, with all intermediate groups zero.
+Only $H^0\cong H^n\cong\ZZ$ remain, with all intermediate groups zero.
 :::
 
 :::

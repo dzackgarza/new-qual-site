@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.I-2
 kind: problem
-title: "Suspension of $K(\\mathbb{Z}_m \\times \\mathbb{Z}_n, 1)$ for coprime $m, n$"
+title: "Suspension of $K(\\ZZ_m \\times \\ZZ_n, 1)$ for coprime $m, n$"
 classification:
   areas:
   - topology
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Using the Künneth formula, show that $\Sigma K(\mathbb{Z}_m \times \mathbb{Z}_n, 1) \simeq \Sigma K(\mathbb{Z}_m, 1) \vee \Sigma K(\mathbb{Z}_n, 1)$ if $m$ and $n$ are relatively prime.
+Using the Künneth formula, show that $\Sigma K(\ZZ_m \times \ZZ_n, 1) \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1)$ if $m$ and $n$ are relatively prime.
 :::
 
 ::: {.solution}
@@ -47,9 +47,9 @@ Hatcher Proposition 4I.1 (suspension splits product into wedges with the smash p
 
 ::: pf-step
 
-Let $X = K(\mathbb{Z}_m, 1)$ and $Y = K(\mathbb{Z}_n, 1)$. Since $K(G \times H, 1) \simeq K(G, 1) \times K(H, 1)$, we have:
+Let $X = K(\ZZ_m, 1)$ and $Y = K(\ZZ_n, 1)$. Since $K(G \times H, 1) \simeq K(G, 1) \times K(H, 1)$, we have:
 \[
-\Sigma K(\mathbb{Z}_m \times \mathbb{Z}_n, 1) \simeq \Sigma K(\mathbb{Z}_m, 1) \vee \Sigma K(\mathbb{Z}_n, 1) \vee \Sigma\big(K(\mathbb{Z}_m, 1) \wedge K(\mathbb{Z}_n, 1)\big).
+\Sigma K(\ZZ_m \times \ZZ_n, 1) \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1) \vee \Sigma\big(K(\ZZ_m, 1) \wedge K(\ZZ_n, 1)\big).
 \]
 
 ::: pf-proof
@@ -72,11 +72,11 @@ Show that $\Sigma(X \wedge Y)$ is contractible when $\gcd(m, n) = 1$:
 
 ::: pf-step
 
-The reduced homology groups $\widetilde{H}_i(X)$ are non-zero only in odd degrees, where $\widetilde{H}_{2k+1}(K(\mathbb{Z}_m, 1)) \cong \mathbb{Z}_m$. In particular, $m \cdot \widetilde{H}_i(X) = 0$ for all $i \ge 0$.
+The reduced homology groups $\widetilde{H}_i(X)$ are non-zero only in odd degrees, where $\widetilde{H}_{2k+1}(K(\ZZ_m, 1)) \cong \ZZ_m$. In particular, $m \cdot \widetilde{H}_i(X) = 0$ for all $i \ge 0$.
 
 ::: pf-proof
 
-homology of lens spaces / $K(\mathbb{Z}_m, 1)$.
+homology of lens spaces / $K(\ZZ_m, 1)$.
 
 :::
 
@@ -88,7 +88,7 @@ Symmetrically, $n \cdot \widetilde{H}_j(Y) = 0$ for all $j \ge 0$.
 
 ::: pf-proof
 
-homology of $K(\mathbb{Z}_n, 1)$.
+homology of $K(\ZZ_n, 1)$.
 
 :::
 
@@ -96,7 +96,7 @@ homology of $K(\mathbb{Z}_n, 1)$.
 
 ::: pf-step
 
-By Bézout’s Identity, $\gcd(m, n) = 1$ implies there exist integers $u, v \in \mathbb{Z}$ such that $um + vn = 1$.
+By Bézout’s Identity, $\gcd(m, n) = 1$ implies there exist integers $u, v \in \ZZ$ such that $um + vn = 1$.
 
 ::: pf-proof
 
@@ -109,8 +109,8 @@ Euclidean algorithm.
 ::: {.pf-step #s2-4}
 
 For any $m$-torsion abelian group $A$ and $n$-torsion abelian group $B$:
-- $A \otimes_\mathbb{Z} B = 0$, because $a \otimes b = (um + vn)(a \otimes b) = u(ma \otimes b) + v(a \otimes nb) = 0$.
-- $\operatorname{Tor}_1^\mathbb{Z}(A, B) = 0$, because Tor is annihilated by both $m$ and $n$, hence by $\gcd(m, n) = 1$.
+- $A \otimes_\ZZ B = 0$, because $a \otimes b = (um + vn)(a \otimes b) = u(ma \otimes b) + v(a \otimes nb) = 0$.
+- $\operatorname{Tor}_1^\ZZ(A, B) = 0$, because Tor is annihilated by both $m$ and $n$, hence by $\gcd(m, n) = 1$.
 
 ::: pf-proof
 
@@ -124,7 +124,7 @@ algebra of torsion abelian groups.
 
 By the Künneth formula for smash products:
 \[
-\widetilde{H}_k(X \wedge Y) \cong \bigoplus_{i+j=k} \big(\widetilde{H}_i(X) \otimes \widetilde{H}_j(Y)\big) \oplus \bigoplus_{i+j=k-1} \operatorname{Tor}_1^\mathbb{Z}\big(\widetilde{H}_i(X), \widetilde{H}_j(Y)\big) = 0 \quad \text{for all } k \ge 0.
+\widetilde{H}_k(X \wedge Y) \cong \bigoplus_{i+j=k} \big(\widetilde{H}_i(X) \otimes \widetilde{H}_j(Y)\big) \oplus \bigoplus_{i+j=k-1} \operatorname{Tor}_1^\ZZ\big(\widetilde{H}_i(X), \widetilde{H}_j(Y)\big) = 0 \quad \text{for all } k \ge 0.
 \]
 
 ::: pf-proof
@@ -170,7 +170,7 @@ Whitehead's Theorem and Hurewicz Theorem.
 
 Conclusion:
 \[
-\Sigma K(\mathbb{Z}_m \times \mathbb{Z}_n, 1) \simeq \Sigma K(\mathbb{Z}_m, 1) \vee \Sigma K(\mathbb{Z}_n, 1) \vee * \simeq \Sigma K(\mathbb{Z}_m, 1) \vee \Sigma K(\mathbb{Z}_n, 1).
+\Sigma K(\ZZ_m \times \ZZ_n, 1) \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1) \vee * \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1).
 \]
 Q.E.D.
 

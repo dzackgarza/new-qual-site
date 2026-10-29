@@ -20,10 +20,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in\mathbb C[z]$ and assume that $f$ has no roots on the unit circle.
+Let $f\in\CC[z]$ and assume that $f$ has no roots on the unit circle.
 Consider
 \[
-S^1\hookrightarrow\mathbb C\xrightarrow{f}\mathbb C\setminus\{0\}\xrightarrow{\pi}S^1,
+S^1\hookrightarrow\CC\xrightarrow{f}\CC\setminus\{0\}\xrightarrow{\pi}S^1,
 \]
 where $\pi$ is the norm map.
 Prove that the degree of this composition equals the number of roots of $f$ inside the unit circle.
@@ -38,7 +38,7 @@ f(z)=c\prod_{j=1}^{d}(z-a_j)},
 \]
 where the roots \(a_j\) are listed with multiplicity and
 \[
-c\in\mathbb C^\times.
+c\in\CC^\times.
 \]
 
 Because \(f\) has no roots on \(S^1\),
@@ -89,7 +89,7 @@ Divide the factorization of \(f\) by this expression.
 
 The homotopy
 \[
-H:S^1\times[0,1]\to\mathbb C^\times,
+H:S^1\times[0,1]\to\CC^\times,
 \qquad
 H(z,t)=z-ta
 \]
@@ -166,7 +166,7 @@ Degree is invariant under homotopy, and the identity map of \(S^1\) has degree \
 
 The homotopy
 \[
-K:S^1\times[0,1]\to\mathbb C^\times,
+K:S^1\times[0,1]\to\CC^\times,
 \qquad
 K(z,t)=tz-a
 \]
@@ -265,7 +265,7 @@ one has
 
 On
 \[
-H_1(S^1;\mathbb Z)\cong\mathbb Z,
+H_1(S^1;\ZZ)\cong\ZZ,
 \]
 the multiplication map
 \[
@@ -370,9 +370,9 @@ The roots \(a_j\) were listed with multiplicity in the factorization of \(f\), a
 
 Thus the degree of
 \[
-S^1\hookrightarrow\mathbb C
+S^1\hookrightarrow\CC
 \xrightarrow{f}
-\mathbb C\setminus\{0\}
+\CC\setminus\{0\}
 \xrightarrow{\pi}
 S^1
 \]

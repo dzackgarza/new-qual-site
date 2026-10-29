@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that for every positive integer \(n\), there exists an irreducible polynomial over \(\mathbb Q\) of degree \(n\) all of whose roots are real.
+Show that for every positive integer \(n\), there exists an irreducible polynomial over \(\QQ\) of degree \(n\) all of whose roots are real.
 :::
 
 ::: {.solution}

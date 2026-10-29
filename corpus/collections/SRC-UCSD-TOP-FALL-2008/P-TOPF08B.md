@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $p$ be a prime integer, let $M(p)$ denote the space obtained as the identification space of the $2$-disc $D^2$ under the identification: $x \sim y$ if $x, y \in \partial D^2 = S^1$ and $x = e^{2\pi i y/p}$, $n \in \mathbb{Z}$.
+Let $p$ be a prime integer, let $M(p)$ denote the space obtained as the identification space of the $2$-disc $D^2$ under the identification: $x \sim y$ if $x, y \in \partial D^2 = S^1$ and $x = e^{2\pi i y/p}$, $n \in \ZZ$.
 Find the values of $p$ for which $M(p)$ is homotopy equivalent to a compact boundaryless manifold.
 :::
 
@@ -27,12 +27,12 @@ Find the values of $p$ for which $M(p)$ is homotopy equivalent to a compact boun
 
 The space $M(p)$ has a CW structure with one cell in dimensions $0,1,2$ and cellular boundary
 $$
-\partial_2:\mathbb Z\xrightarrow{\ p\ }\mathbb Z.
+\partial_2:\ZZ\xrightarrow{\ p\ }\ZZ.
 $$
 
 ::: pf-proof
 
-The boundary circle of the $2$-disk is identified by the degree-$p$ map onto the resulting $1$-cell. This is the standard Moore space $M(\mathbb Z/p,1)$.
+The boundary circle of the $2$-disk is identified by the degree-$p$ map onto the resulting $1$-cell. This is the standard Moore space $M(\ZZ/p,1)$.
 
 :::
 
@@ -42,17 +42,17 @@ The boundary circle of the $2$-disk is identified by the degree-$p$ map onto the
 
 Thus
 $$
-H_i(M(p);\mathbb Z)\cong
+H_i(M(p);\ZZ)\cong
 \begin{cases}
-\mathbb Z,&i=0,\\
-\mathbb Z/p,&i=1,\\
+\ZZ,&i=0,\\
+\ZZ/p,&i=1,\\
 0,&i\ge2.
 \end{cases}
 $$
 
 ::: pf-proof
 
-This is the homology of the cellular complex $0\to\mathbb Z\xrightarrow p\mathbb Z\to\mathbb Z\to0$.
+This is the homology of the cellular complex $0\to\ZZ\xrightarrow p\ZZ\to\ZZ\to0$.
 
 :::
 

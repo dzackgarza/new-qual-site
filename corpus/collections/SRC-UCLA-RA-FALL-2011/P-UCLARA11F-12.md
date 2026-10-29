@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-An entire function $f:\mathbb C\to\mathbb C$ is of exponential type if there are constants $c_1,c_2>0$ such that
+An entire function $f:\CC\to\CC$ is of exponential type if there are constants $c_1,c_2>0$ such that
 \[
 |f(z)|\le c_1e^{c_2|z|}
-\qquad\text{for every }z\in\mathbb C.
+\qquad\text{for every }z\in\CC.
 \]
 Show that $f$ is of exponential type if and only if $f'$ is of exponential type.
 :::
@@ -39,13 +39,13 @@ such that
 \le
 c_1e^{c_2|z|}
 \]
-for all \(z\in\mathbb C\).
+for all \(z\in\CC\).
 
 ::: pf
 
 ::: pf-step
 
-Fix \(z\in\mathbb C\) and apply Cauchy's derivative formula on the circle
+Fix \(z\in\CC\) and apply Cauchy's derivative formula on the circle
 \[
 |w-z|=1.
 \]
@@ -193,7 +193,7 @@ Step [](#s1-6){.pf-ref} matches the definition.
 
 ::: {.pf-step #s1-8}
 
-For every \(z\in\mathbb C\),
+For every \(z\in\CC\),
 \[
 \boxed{
 f(z)-f(0)
@@ -334,7 +334,7 @@ one obtains
 \right)
 e^{a_2|z|}}
 \]
-for every \(z\in\mathbb C\).
+for every \(z\in\CC\).
 
 
 ::: pf-proof

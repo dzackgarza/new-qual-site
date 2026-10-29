@@ -43,13 +43,13 @@ Since the polynomial lies in \(I\), its leading monomial belongs to \(\operatorn
 
 For (b), the conclusion can fail if the chosen generators are not a Gröbner basis. Take
 \[
-k=\mathbb Q,\qquad I=(x,y)\subset\mathbb Q[x,y]
+k=\QQ,\qquad I=(x,y)\subset\QQ[x,y]
 \]
 with lexicographic order \(x>y\), and let
 \[
 G=\{x+y,\ x-y\}.
 \]
-Because \(2\) is invertible in \(\mathbb Q\), these two polynomials generate \(I\). Their leading monomials are both \(x\). Hence, if one used the criterion from part (a) with this non-Gröbner generating set, every monomial not divisible by \(x\), in particular \(y\), would be declared standard. But
+Because \(2\) is invertible in \(\QQ\), these two polynomials generate \(I\). Their leading monomials are both \(x\). Hence, if one used the criterion from part (a) with this non-Gröbner generating set, every monomial not divisible by \(x\), in particular \(y\), would be declared standard. But
 \[
 y+I=0
 \]

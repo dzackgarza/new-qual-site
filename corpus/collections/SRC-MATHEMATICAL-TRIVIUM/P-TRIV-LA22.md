@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the transformations A, B of the vector space $\mathbb { R } ^ { n }$ sharing the same eigenvectors.
+Consider the transformations A, B of the vector space $\RR ^ { n }$ sharing the same eigenvectors.
 Is this sufficient for their commutator to be zero?
 Is this necessary for their commutator to be zero?
 :::
@@ -98,7 +98,7 @@ commute.
 
 ::: pf-proof
 
-In $\mathbb R^2$, take
+In $\RR^2$, take
 $$
 A=I,
 \qquad

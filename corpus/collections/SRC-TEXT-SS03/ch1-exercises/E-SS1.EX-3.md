@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. With $\omega = s e ^ { i \varphi }$ , where $s \geq 0$ and $\varphi \in \mathbb { R }$ , solve the equation $z ^ { n } = \omega$ in C where n is a natural number.
+3. With $\omega = s e ^ { i \varphi }$ , where $s \geq 0$ and $\varphi \in \RR$ , solve the equation $z ^ { n } = \omega$ in C where n is a natural number.
    How many solutions are there?
 :::
 
@@ -33,12 +33,12 @@ r^n=s,
 \qquad
 n\theta=\varphi+2\pi k
 \]
-for some $k\in\mathbb Z$. Hence
+for some $k\in\ZZ$. Hence
 \[
 z_k=s^{1/n}\exp\!\left(i\frac{\varphi+2\pi k}{n}\right),
 \qquad k=0,1,\ldots,n-1.
 \]
-These $n$ values are distinct, since equality of $z_k$ and $z_\ell$ would imply $(k-\ell)/n\in\mathbb Z$, impossible for distinct $k,\ell\in\{0,\ldots,n-1\}$. Every integer $k$ is congruent modulo $n$ to one of these, so these are all solutions.
+These $n$ values are distinct, since equality of $z_k$ and $z_\ell$ would imply $(k-\ell)/n\in\ZZ$, impossible for distinct $k,\ell\in\{0,\ldots,n-1\}$. Every integer $k$ is congruent modulo $n$ to one of these, so these are all solutions.
 
 Thus there is one solution when $\omega=0$, and exactly $n$ solutions when $\omega\ne0$.
 :::

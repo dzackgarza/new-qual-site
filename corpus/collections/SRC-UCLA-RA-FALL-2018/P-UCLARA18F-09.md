@@ -21,7 +21,7 @@ Problem 9. Consider the meromorphic function
 \[
 g(z)=-\pi z\cot(\pi z)
 \]
-on the entire plane $\mathbb C$.
+on the entire plane $\CC$.
 
 (a) Find all poles of $g$ and determine the residue of $g$ at each pole.
 
@@ -41,7 +41,7 @@ a_{2k}=\sum_{n\ge1}\frac{2}{n^{2k}}.
 
 ::: {.pf-step #s1-1}
 
-The poles of \(g\) are precisely the nonzero integers, every pole is simple, and for each \(n\in\mathbb Z\setminus\{0\}\),
+The poles of \(g\) are precisely the nonzero integers, every pole is simple, and for each \(n\in\ZZ\setminus\{0\}\),
 \[
 \boxed{\operatorname{Res}(g,n)=-n}.
 \]
@@ -79,7 +79,7 @@ so the singularity at \(0\) is removable rather than a pole.
 
 ::: {.pf-step #s1-2}
 
-For \(z\notin\mathbb Z\),
+For \(z\notin\ZZ\),
 \[
 \pi\cot(\pi z)
 =\frac1z+2z\sum_{m=1}^{\infty}\frac1{z^2-m^2}.

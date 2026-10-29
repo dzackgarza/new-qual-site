@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 (a) Prove that if $G$ is finite group and $\lambda(x)$ is a linear character of $G$, then for any irreducible character $\chi$ of $G$, the function $\chi^*$ defined by $\chi^*(\sigma)=\lambda(\sigma)\chi(\sigma)$ for all $\sigma\in G$ is also an irreducible character of $G$.
 
-(b) Let $A:G\to GL_n(\mathbb{C})$ and $B:G\to GL_n(\mathbb{C})$ be two representations of a finite group $G$.
+(b) Let $A:G\to GL_n(\CC)$ and $B:G\to GL_n(\CC)$ be two representations of a finite group $G$.
 Show that if for all $\sigma\in G$, there exists a matrix $P(\sigma)$ such that
 \[
 \bigl(P(\sigma)\bigr)^{-1}A(\sigma)P(\sigma)=B(\sigma),
@@ -51,7 +51,7 @@ $\chi$ is an irreducible character.
 :::
 
 ::: pf-step
-Since $\lambda$ is a linear character, $\lambda: G \to \mathbb{C}^\times$ is a 1-dimensional representation.
+Since $\lambda$ is a linear character, $\lambda: G \to \CC^\times$ is a 1-dimensional representation.
 
 ::: pf-proof
 definition of a linear character.
@@ -96,10 +96,10 @@ The character $\chi^*$ is irreducible.
 ::: pf-proof
 
 ::: {.pf-step #p1-s2-1}
-A character $\psi$ of a finite group over $\mathbb{C}$ is irreducible if and only if $\langle \psi, \psi \rangle = 1$.
+A character $\psi$ of a finite group over $\CC$ is irreducible if and only if $\langle \psi, \psi \rangle = 1$.
 
 ::: pf-proof
-character theory of finite groups over $\mathbb{C}$.
+character theory of finite groups over $\CC$.
 :::
 
 :::
@@ -114,7 +114,7 @@ group homomorphism from a finite group.
 :::
 
 ::: {.pf-step #p1-s2-3}
-Thus $\lambda(\sigma)$ is a root of unity in $\mathbb{C}$, so $|\lambda(\sigma)| = 1$ and $|\lambda(\sigma)|^2 = \lambda(\sigma)\overline{\lambda(\sigma)} = 1$.
+Thus $\lambda(\sigma)$ is a root of unity in $\CC$, so $|\lambda(\sigma)| = 1$ and $|\lambda(\sigma)|^2 = \lambda(\sigma)\overline{\lambda(\sigma)} = 1$.
 
 ::: pf-proof
 roots of unity have absolute value $1$.
@@ -231,7 +231,7 @@ Two complex representations of a finite group are isomorphic if and only if thei
 By Maschke's theorem, every complex representation of a finite group is completely reducible (a direct sum of irreducible representations).
 
 ::: pf-proof
-Maschke's theorem for finite groups over $\mathbb{C}$.
+Maschke's theorem for finite groups over $\CC$.
 :::
 
 :::
@@ -255,7 +255,7 @@ step [](#p2-s1){.pf-ref} and step [](#p2-s2-2){.pf-ref}.
 :::
 
 ::: pf-step
-Thus $A \cong B$ as $\mathbb{C}[G]$-modules.
+Thus $A \cong B$ as $\CC[G]$-modules.
 
 ::: pf-proof
 step [](#p2-s2-1){.pf-ref} and step [](#p2-s2-3){.pf-ref}.
@@ -264,7 +264,7 @@ step [](#p2-s2-1){.pf-ref} and step [](#p2-s2-3){.pf-ref}.
 :::
 
 ::: pf-step
-Consequently, there exists an invertible matrix $T \in \operatorname{GL}_n(\mathbb{C})$ such that $T^{-1}A(\sigma)T = B(\sigma)$ for all $\sigma \in G$.
+Consequently, there exists an invertible matrix $T \in \operatorname{GL}_n(\CC)$ such that $T^{-1}A(\sigma)T = B(\sigma)$ for all $\sigma \in G$.
 
 ::: pf-proof
 isomorphism of matrix representations.

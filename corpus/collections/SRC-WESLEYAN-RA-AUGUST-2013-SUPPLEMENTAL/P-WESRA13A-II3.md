@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\subset\mathbb R$ be Lebesgue measurable and let $f:A\to\mathbb R$ be measurable.
+Let $A\subset\RR$ be Lebesgue measurable and let $f:A\to\RR$ be measurable.
 Suppose
 \[
 \int_K f\,dm=0

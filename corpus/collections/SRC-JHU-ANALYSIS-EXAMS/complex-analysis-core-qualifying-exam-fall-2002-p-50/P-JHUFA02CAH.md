@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine all entire functions $f: \mathbb{C} \to \mathbb{C}$ for which $|f(z)| \le |z|^2$ for all $z \in \mathbb{C}$.
+Determine all entire functions $f: \CC \to \CC$ for which $|f(z)| \le |z|^2$ for all $z \in \CC$.
 :::
 
 ::: {.solution}

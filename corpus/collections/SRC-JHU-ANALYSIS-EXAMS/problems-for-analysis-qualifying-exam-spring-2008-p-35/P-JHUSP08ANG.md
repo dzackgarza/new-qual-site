@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be open and $P\in U$. Let $f$ be
+Let $U\subset\CC$ be open and $P\in U$. Let $f$ be
 holomorphic on $U$ and nonconstant on the component containing
 $P$, with $f(P)=f'(P)=0$. Use the argument principle to prove
 that there is $\delta>0$ such that $f^{-1}(Q)$ contains at
@@ -83,7 +83,7 @@ Thus the argument principle applies to $f-tQ$ on this
 circle and gives its number of zeros, with multiplicity, as
 $$
 N(t)=\frac1{2\pi i}\int_{|z-P|=r}
-\frac{f'(z)}{f(z)-tQ}\,dz\in\mathbb Z_{\geq0}
+\frac{f'(z)}{f(z)-tQ}\,dz\in\ZZ_{\geq0}
 $$
 [@SS03]. The uniform positive denominator bound makes
 this integral continuous in $t$. A continuous integer-valued

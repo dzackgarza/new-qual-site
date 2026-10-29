@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : G \to \mathbb{C}$ be a holomorphic function in $G = \{z : |z| < 2\}$ such that $|f(z)| < 1$ for $z \in G$.
+Let $f : G \to \CC$ be a holomorphic function in $G = \{z : |z| < 2\}$ such that $|f(z)| < 1$ for $z \in G$.
 Assume that $f(1) = f(-1) = f(i) = f(-i) = 0$.
 Show that $|f(0)| \leq \frac{1}{15}$.
 :::

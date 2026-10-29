@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^2\to\mathbb R$ be linear, with $f(1,1)=1$ and $f(-1,0)=2$.
+Let $f:\RR^2\to\RR$ be linear, with $f(1,1)=1$ and $f(-1,0)=2$.
 Find $f(3,5)$.
 
 (A) $-6$  (B) $-5$  (C) $0$  (D) $8$  (E) $9$

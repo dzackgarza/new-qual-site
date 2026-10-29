@@ -30,7 +30,7 @@ Let $A,B$ be real $n\times n$ matrices. Suppose
 \[
 A^T=A,
 \qquad
-v^TAv\ge0\quad\text{for every }v\in\mathbb R^n,
+v^TAv\ge0\quad\text{for every }v\in\RR^n,
 \]
 and
 \[

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-With the notation of the preceding problem, show that $\operatorname{Aut}(\bigvee_n S^k) \approx \operatorname{GL}_n(\mathbb{Z})$ for $k > 1$, where $\bigvee_n S^k$ denotes the wedge sum of $n$ copies of $S^k$ and $\operatorname{GL}_n(\mathbb{Z})$ is the group of $n \times n$ matrices with entries in $\mathbb{Z}$ having an inverse matrix of the same form.
+With the notation of the preceding problem, show that $\operatorname{Aut}(\bigvee_n S^k) \approx \operatorname{GL}_n(\ZZ)$ for $k > 1$, where $\bigvee_n S^k$ denotes the wedge sum of $n$ copies of $S^k$ and $\operatorname{GL}_n(\ZZ)$ is the group of $n \times n$ matrices with entries in $\ZZ$ having an inverse matrix of the same form.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ Seifert–van Kampen theorem and cellular approximation for $k$-dimensional CW c
 ::: pf-step
 By the Hurewicz Theorem:
 \[
-\pi_k(X) \cong H_k(X; \mathbb{Z}) \cong \bigoplus_{j=1}^n H_k(S^k; \mathbb{Z}) \cong \mathbb{Z}^n.
+\pi_k(X) \cong H_k(X; \ZZ) \cong \bigoplus_{j=1}^n H_k(S^k; \ZZ) \cong \ZZ^n.
 \]
 
 ::: pf-proof
@@ -50,7 +50,7 @@ Hurewicz isomorphism theorem for $(k-1)$-connected spaces and homology of wedge 
 :::
 
 ::: pf-step
-Let $\iota_j: S^k \hookrightarrow X$ denote the inclusion of the $j$-th sphere summand; their homotopy classes $\{[\iota_1], \dots, [\iota_n]\}$ form a standard $\mathbb{Z}$-basis for $\pi_k(X)$.
+Let $\iota_j: S^k \hookrightarrow X$ denote the inclusion of the $j$-th sphere summand; their homotopy classes $\{[\iota_1], \dots, [\iota_n]\}$ form a standard $\ZZ$-basis for $\pi_k(X)$.
 
 ::: pf-proof
 generators of the homology of the wedge sum.
@@ -77,7 +77,7 @@ $[A \vee B, X]_* \cong [A, X]_* \times [B, X]_*$.
 :::
 
 ::: pf-step
-Each restriction $[f \circ \iota_j] \in \pi_k(X) \cong \mathbb{Z}^n$.
+Each restriction $[f \circ \iota_j] \in \pi_k(X) \cong \ZZ^n$.
 
 ::: pf-proof
 definition of the $k$-th homotopy group.
@@ -86,10 +86,10 @@ definition of the $k$-th homotopy group.
 :::
 
 ::: pf-step
-Thus $[X, X]_* \cong \prod_{j=1}^n \pi_k(X) \cong M_n(\mathbb{Z})$, where $f$ corresponds to the matrix $M(f) \in M_n(\mathbb{Z})$ whose $j$-th column is the coordinate vector of $f_*([\iota_j])$ in the basis $\{[\iota_1], \dots, [\iota_n]\}$.
+Thus $[X, X]_* \cong \prod_{j=1}^n \pi_k(X) \cong M_n(\ZZ)$, where $f$ corresponds to the matrix $M(f) \in M_n(\ZZ)$ whose $j$-th column is the coordinate vector of $f_*([\iota_j])$ in the basis $\{[\iota_1], \dots, [\iota_n]\}$.
 
 ::: pf-proof
-column-by-column representation of linear maps on $\mathbb{Z}^n$.
+column-by-column representation of linear maps on $\ZZ^n$.
 :::
 
 :::
@@ -131,10 +131,10 @@ Whitehead's Theorem for CW complexes.
 :::
 
 ::: pf-step
-The group homomorphism $f_*: \mathbb{Z}^n \to \mathbb{Z}^n$ is an isomorphism if and only if its representation matrix $M(f)$ is invertible over $\mathbb{Z}$, which means $M(f) \in \operatorname{GL}_n(\mathbb{Z})$ (i.e. $\det M(f) = \pm 1$).
+The group homomorphism $f_*: \ZZ^n \to \ZZ^n$ is an isomorphism if and only if its representation matrix $M(f)$ is invertible over $\ZZ$, which means $M(f) \in \operatorname{GL}_n(\ZZ)$ (i.e. $\det M(f) = \pm 1$).
 
 ::: pf-proof
-invertible $\mathbb{Z}$-linear endomorphisms of $\mathbb{Z}^n$ form the group $\operatorname{GL}_n(\mathbb{Z})$.
+invertible $\ZZ$-linear endomorphisms of $\ZZ^n$ form the group $\operatorname{GL}_n(\ZZ)$.
 :::
 
 :::
@@ -146,7 +146,7 @@ invertible $\mathbb{Z}$-linear endomorphisms of $\mathbb{Z}^n$ form the group $\
 ::: pf-step
 Conclusion: The map $[f] \mapsto M(f)$ induces an isomorphism of groups:
 \[
-\operatorname{Aut}\left(\bigvee_{j=1}^n S^k\right) \cong \operatorname{GL}_n(\mathbb{Z}).
+\operatorname{Aut}\left(\bigvee_{j=1}^n S^k\right) \cong \operatorname{GL}_n(\ZZ).
 \]
 
 ::: pf-proof

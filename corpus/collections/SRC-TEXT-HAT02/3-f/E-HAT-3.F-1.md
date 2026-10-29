@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Given maps $f_i: X_i \to X_{i+1}$ for integers $i < 0$, show that the "reverse mapping telescope" obtained by gluing together the mapping cylinders of the $f_i$'s in the obvious way deformation retracts onto $X_0$.
-Similarly, if maps $f_i: X_i \to X_{i+1}$ are given for all $i \in \mathbb{Z}$, show that the resulting "double mapping telescope" deformation retracts onto any of the ordinary mapping telescopes contained in it, the union of the mapping cylinders of the $f_i$'s for $i$ greater than a given number $n$.
+Similarly, if maps $f_i: X_i \to X_{i+1}$ are given for all $i \in \ZZ$, show that the resulting "double mapping telescope" deformation retracts onto any of the ordinary mapping telescopes contained in it, the union of the mapping cylinders of the $f_i$'s for $i$ greater than a given number $n$.
 :::
 
 ::: {.solution}
@@ -55,7 +55,7 @@ by deformation retraction.
 
 Now let
 \[
-T=\bigcup_{i\in\mathbb Z}M_i
+T=\bigcup_{i\in\ZZ}M_i
 \]
 be the double telescope, and for a fixed integer $n$ let
 \[

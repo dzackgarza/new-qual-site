@@ -18,18 +18,18 @@ audit:
 ::: {.problem}
 Find a subgroup
 \[
-\Gamma\subseteq\operatorname{Aut}(\mathbb R^2)
+\Gamma\subseteq\operatorname{Aut}(\RR^2)
 \]
 such that
 \[
-\mathbb R^2/\Gamma
+\RR^2/\Gamma
 \]
 is homeomorphic to the Klein bottle.
 :::
 
 ::: {.solution}
 
-Define homeomorphisms of \(\mathbb R^2\) by
+Define homeomorphisms of \(\RR^2\) by
 \[
 \boxed{
 a(x,y)=(x+1,y)}
@@ -43,7 +43,7 @@ b(x,y)=(-x,y+1)}.
 Let
 \[
 \Gamma=\langle a,b\rangle
-\subseteq\operatorname{Aut}(\mathbb R^2).
+\subseteq\operatorname{Aut}(\RR^2).
 \]
 
 ::: pf
@@ -81,7 +81,7 @@ bab^{-1}=a^{-1}}.
 
 ::: pf-proof
 
-For \((x,y)\in\mathbb R^2\),
+For \((x,y)\in\RR^2\),
 \[
 \begin{aligned}
 bab^{-1}(x,y)
@@ -109,7 +109,7 @@ a^m b^n}
 \]
 with
 \[
-m,n\in\mathbb Z.
+m,n\in\ZZ.
 \]
 
 
@@ -189,7 +189,7 @@ Compose \(a^m\) with the formulas in steps [](#s1-4){.pf-ref} through [](#s1-5){
 
 ::: pf-step
 
-The action of \(\Gamma\) on \(\mathbb R^2\) is free.
+The action of \(\Gamma\) on \(\RR^2\) is free.
 
 
 ::: pf-proof
@@ -227,7 +227,7 @@ The action is properly discontinuous.
 
 ::: pf-proof
 
-Let \(K\subset\mathbb R^2\) be compact. It is contained in a rectangle
+Let \(K\subset\RR^2\) be compact. It is contained in a rectangle
 \[
 [-M,M]\times[-M,M].
 \]
@@ -248,7 +248,7 @@ Every \(\Gamma\)-orbit meets \(Q\).
 
 ::: pf-proof
 
-Given \((x,y)\in\mathbb R^2\), first use a suitable power of \(b\) or \(b^2\) to move the \(y\)-coordinate into \([0,1]\). Then use a suitable power of \(a\) to move the \(x\)-coordinate into \([0,1]\).
+Given \((x,y)\in\RR^2\), first use a suitable power of \(b\) or \(b^2\) to move the \(y\)-coordinate into \([0,1]\). Then use a suitable power of \(a\) to move the \(x\)-coordinate into \([0,1]\).
 
 :::
 
@@ -324,7 +324,7 @@ These are exactly the identifications from steps [](#s1-10){.pf-ref} through [](
 Hence
 \[
 \boxed{
-\mathbb R^2/\Gamma
+\RR^2/\Gamma
 \cong
 K}
 \]
@@ -363,7 +363,7 @@ This is the group constructed above, and step [](#s1-13){.pf-ref} proves its quo
 
 ::: pf-qed
 
-Step [](#s1-14){.pf-ref} gives the required subgroup of \(\operatorname{Aut}(\mathbb R^2)\).
+Step [](#s1-14){.pf-ref} gives the required subgroup of \(\operatorname{Aut}(\RR^2)\).
 
 :::
 

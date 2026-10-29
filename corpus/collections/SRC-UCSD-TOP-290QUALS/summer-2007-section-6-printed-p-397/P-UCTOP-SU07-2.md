@@ -54,7 +54,7 @@ F_3=\langle a,b,c\rangle
 $$
 is
 $$
-H=\ker\bigl(F_3\to\mathbb Z/2\bigr),
+H=\ker\bigl(F_3\to\ZZ/2\bigr),
 \qquad a\mapsto1,\quad b,c\mapsto0.
 $$
 

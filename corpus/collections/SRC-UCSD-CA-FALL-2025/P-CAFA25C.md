@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $R_1, R_2$ are bounded simply connected regions in $\mathbb{C}$.
+Suppose $R_1, R_2$ are bounded simply connected regions in $\CC$.
 Let $z_1 \in R_1$ and $z_2 \in R_2$.
 
 (i) Prove that there exists a holomorphic bijective function $f : R_1 \to R_2$ such that $f(z_1) = z_2$.

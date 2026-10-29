@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $u \colon  { \mathbb { R } } \to  { \mathbb { R } }$ be a function for which there exists $B > 0$ such that
+Let $u \colon  { \RR } \to  { \RR }$ be a function for which there exists $B > 0$ such that
 
 $$
 \sum _ { k = 1 } ^ { N - 1 } | u ( x _ { k + 1 } ) - u ( x _ { k } ) | ^ { 2 } \leq B
@@ -30,7 +30,7 @@ $$
 where
 
 $$
-A _ { n } = \{ x \in \mathbb { R } : | \operatorname* { l i m } _ { y \to x } \operatorname* { s u p } u ( y ) - \operatorname* { l i m } _ { y \to x } \operatorname* { i n f } u ( y ) | > \frac { 1 } { n } \}
+A _ { n } = \{ x \in \RR : | \operatorname* { l i m } _ { y \to x } \operatorname* { s u p } u ( y ) - \operatorname* { l i m } _ { y \to x } \operatorname* { i n f } u ( y ) | > \frac { 1 } { n } \}
 $$
 
 To prove that A is countable, we will prove that

@@ -122,7 +122,7 @@ h^1(C,\mathcal O_C)=h^0(C,\omega_C).
 :::
 
 ::: {.pf-step #topological-genus}
-Over $\mathbb C$, this same integer is the topological genus: the underlying compact Riemann surface has Euler characteristic
+Over $\CC$, this same integer is the topological genus: the underlying compact Riemann surface has Euler characteristic
 \[
 \boxed{\chi_{\mathrm{top}}(C)=2-2g(C).}
 \]
@@ -130,7 +130,7 @@ Over $\mathbb C$, this same integer is the topological genus: the underlying com
 ::: pf-proof
 For a compact Riemann surface, Hodge theory identifies
 \[
-\dim_{\mathbb C}H^0(C,\Omega_C^1)=g
+\dim_{\CC}H^0(C,\Omega_C^1)=g
 \]
 with half the first Betti number.  Hence
 \[

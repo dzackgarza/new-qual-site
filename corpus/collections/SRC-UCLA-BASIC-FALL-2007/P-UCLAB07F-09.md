@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $u_n:\mathbb R\to\mathbb R$ is differentiable and satisfies \[u_n'(x)=F(u_n(x),x),\] where $F$ is continuous and bounded.
+Suppose $u_n:\RR\to\RR$ is differentiable and satisfies \[u_n'(x)=F(u_n(x),x),\] where $F$ is continuous and bounded.
 
 (a) If $u_n\to u$ uniformly, show that $u$ is differentiable and satisfies $u'(x)=F(u(x),x)$.
 
-(b) Suppose the initial-value problem \[u'(x)=F(u(x),x),\qquad u(x_0)=y_0\] has a unique solution $u:\mathbb R\to\mathbb R$, and $u_n(x_0)\to y_0$.
+(b) Suppose the initial-value problem \[u'(x)=F(u(x),x),\qquad u(x_0)=y_0\] has a unique solution $u:\RR\to\RR$, and $u_n(x_0)\to y_0$.
 Show that $u_n$ converges to $u$ uniformly on every compact interval.
 :::
 
@@ -40,7 +40,7 @@ Let $M=\sup\abs{F}$.
 If $u_n\to v$ uniformly on every compact interval, then $v$ is differentiable and $v'(x)=F(v(x),x)$. In particular part (a) holds.
 
 ::: pf-proof
-Fix $x\in\mathbb R$ and let $J$ be the compact interval between $x_0$ and $x$.
+Fix $x\in\RR$ and let $J$ be the compact interval between $x_0$ and $x$.
 For each $n$,
 \[
 u_n(x)-u_n(x_0)=\int_{x_0}^x F(u_n(t),t)\,dt.

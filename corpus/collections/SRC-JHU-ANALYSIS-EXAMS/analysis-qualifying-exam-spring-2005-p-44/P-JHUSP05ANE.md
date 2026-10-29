@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Do there exist functions $f \in \mathcal{C}_c^{\infty}(\mathbb{R})$ such that $f$ is not identically zero and $\widehat{f} \in \mathcal{C}_c^{\infty}(\mathbb{R})$?
+Do there exist functions $f \in \mathcal{C}_c^{\infty}(\RR)$ such that $f$ is not identically zero and $\widehat{f} \in \mathcal{C}_c^{\infty}(\RR)$?
 If so, find one.
 If not, prove that none exist.
 
-Notation: $\mathcal{C}_c^{\infty}(\mathbb{R})$ denotes the compactly supported functions in $\mathcal{C}^{\infty}(\mathbb{R})$, and $\widehat{f}$ denotes the Fourier transform of $f$.
+Notation: $\mathcal{C}_c^{\infty}(\RR)$ denotes the compactly supported functions in $\mathcal{C}^{\infty}(\RR)$, and $\widehat{f}$ denotes the Fourier transform of $f$.
 :::
 
 ::: {.solution}

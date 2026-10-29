@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF17G
 kind: problem
-title: Finite-dimensionality of $\mathbb{C}[x,y]/I$ when $\mathbf{V}(I)$ is a point
+title: Finite-dimensionality of $\CC[x,y]/I$ when $\mathbf{V}(I)$ is a point
 classification:
   areas:
   - applied-algebra
@@ -21,20 +21,20 @@ audit:
 ---
 
 ::: {.problem}
-Let $I\subseteq\mathbb{C}[x,y]$ be an ideal with vanishing locus
+Let $I\subseteq\CC[x,y]$ be an ideal with vanishing locus
 \[
-\mathbf{V}(I)=\{(2,3)\}\subset\mathbb{C}^2.
+\mathbf{V}(I)=\{(2,3)\}\subset\CC^2.
 \]
 
-(a) Prove that the quotient $\mathbb{C}[x,y]/I$ is finite-dimensional as a $\mathbb{C}$-vector space.
+(a) Prove that the quotient $\CC[x,y]/I$ is finite-dimensional as a $\CC$-vector space.
 
-(b) Is the result of the last part still true if we replace $\mathbb{C}$ by $\mathbb{R}$?
+(b) Is the result of the last part still true if we replace $\CC$ by $\RR$?
 :::
 
 ::: {.solution}
 Let
 \[
-R=\mathbb C[x,y],
+R=\CC[x,y],
 \qquad
 \mathfrak m=(x-2,y-3).
 \]
@@ -105,7 +105,7 @@ a contradiction. Hence every degree-$N$ monomial in the generators of $\mathfrak
 
 ::: pf-step
 
-The quotient $R/I$ is finite-dimensional over $\mathbb C$.
+The quotient $R/I$ is finite-dimensional over $\CC$.
 
 ::: pf-proof
 
@@ -132,35 +132,35 @@ Therefore $R/\mathfrak m^N$ is finite-dimensional, and so is its quotient $R/I$.
 
 ::: pf-step
 
-The analogous statement over $\mathbb R$ is false.
+The analogous statement over $\RR$ is false.
 
 ::: pf-proof
 
 Take
 \[
-J=\bigl((x-2)^2+(y-3)^2\bigr)\subseteq\mathbb R[x,y].
+J=\bigl((x-2)^2+(y-3)^2\bigr)\subseteq\RR[x,y].
 \]
-Over $\mathbb R$,
+Over $\RR$,
 \[
-\mathbf V_{\mathbb R}(J)=\{(2,3)\},
+\mathbf V_{\RR}(J)=\{(2,3)\},
 \]
 because a sum of two real squares is zero exactly when both squares are zero.
 
 However,
 \[
-\mathbb R[x,y]/J
+\RR[x,y]/J
 \]
-is infinite-dimensional over $\mathbb R$. Indeed, the classes of
+is infinite-dimensional over $\RR$. Indeed, the classes of
 \[
 1,(x-2),(x-2)^2,(x-2)^3,\ldots
 \]
-are linearly independent. If a nonzero polynomial $p(x-2)\in\mathbb R[x-2]$ lay in $J$, we would have
+are linearly independent. If a nonzero polynomial $p(x-2)\in\RR[x-2]$ lay in $J$, we would have
 \[
 p(x-2)=q(x,y)\bigl((x-2)^2+(y-3)^2\bigr).
 \]
-Viewing both sides as polynomials in $y-3$ over the domain $\mathbb R[x-2]$, the left side has degree $0$ in $y-3$, while the right side has degree at least $2$ whenever $q\ne0$, impossible. Thus
+Viewing both sides as polynomials in $y-3$ over the domain $\RR[x-2]$, the left side has degree $0$ in $y-3$, while the right side has degree at least $2$ whenever $q\ne0$, impossible. Thus
 \[
-J\cap\mathbb R[x-2]=0,
+J\cap\RR[x-2]=0,
 \]
 which proves the asserted linear independence. Hence the real analogue fails. This proves part (b).
 

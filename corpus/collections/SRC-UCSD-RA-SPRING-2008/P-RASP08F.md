@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-For $f : \mathbb{R} \to \mathbb{C}$ and $h \in \mathbb{R}$, denote by $\tau_h f : \mathbb{R} \to \mathbb{C}$ the function defined by $\tau_h f(x) := f(x + h)$ for all $x \in \mathbb{R}$.
+For $f : \RR \to \CC$ and $h \in \RR$, denote by $\tau_h f : \RR \to \CC$ the function defined by $\tau_h f(x) := f(x + h)$ for all $x \in \RR$.
 
-(a) Show that if $T$ is a distribution on $\mathbb{R}$ and $h \in \mathbb{R}$, then
+(a) Show that if $T$ is a distribution on $\RR$ and $h \in \RR$, then
 $$
-\tau_h T(\phi) := T(\tau_{-h}\phi), \qquad \phi \in C_0^\infty(\mathbb{R}),
+\tau_h T(\phi) := T(\tau_{-h}\phi), \qquad \phi \in C_0^\infty(\RR),
 $$
-defines a distribution $\tau_h T$ on $\mathbb{R}$.
+defines a distribution $\tau_h T$ on $\RR$.
 
-(b) Show that the following holds in $\mathcal{D}'(\mathbb{R})$:
+(b) Show that the following holds in $\mathcal{D}'(\RR)$:
 $$
 \lim_{h \to 0} \frac{\tau_h T - T}{h} = T'.
 $$
@@ -51,19 +51,19 @@ Translation preserves distributions.
 
 ::: pf-proof
 
-Fix $h\in\mathbb R$. The map
+Fix $h\in\RR$. The map
 \[
 \phi\longmapsto \tau_{-h}\phi,
 \qquad
 (\tau_{-h}\phi)(x)=\phi(x-h),
 \]
-is a continuous linear automorphism of $C_c^\infty(\mathbb R)$: derivatives commute with translation, and the support is merely translated by $h$.
+is a continuous linear automorphism of $C_c^\infty(\RR)$: derivatives commute with translation, and the support is merely translated by $h$.
 
 Therefore the composition
 \[
 \tau_hT(\phi):=T(\tau_{-h}\phi)
 \]
-is linear and continuous on $C_c^\infty(\mathbb R)$. Hence $\tau_hT\in\mathcal D'(\mathbb R)$.
+is linear and continuous on $C_c^\infty(\RR)$. Hence $\tau_hT\in\mathcal D'(\RR)$.
 
 :::
 
@@ -80,7 +80,7 @@ For every test function $\phi$,
 \left(\frac{\tau_hT-T}{h}\right)(\phi)
 =T\left(\frac{\tau_{-h}\phi-\phi}{h}\right).
 \]
-In $C_c^\infty(\mathbb R)$,
+In $C_c^\infty(\RR)$,
 \[
 \frac{\tau_{-h}\phi-\phi}{h}
 =\frac{\phi(\cdot-h)-\phi}{h}
@@ -99,7 +99,7 @@ Thus
 \[
 \boxed{
 \frac{\tau_hT-T}{h}\longrightarrow T'
-\quad\text{in }\mathcal D'(\mathbb R).}
+\quad\text{in }\mathcal D'(\RR).}
 \]
 
 :::
@@ -112,7 +112,7 @@ Translation preserves tempered distributions.
 
 ::: pf-proof
 
-If $T\in\mathcal S'(\mathbb R)$, then translation is a continuous linear automorphism of the Schwartz space. Indeed, for every pair of nonnegative integers $m,k$,
+If $T\in\mathcal S'(\RR)$, then translation is a continuous linear automorphism of the Schwartz space. Indeed, for every pair of nonnegative integers $m,k$,
 \[
 \sup_x |x^m(\tau_{-h}\phi)^{(k)}(x)|
 =\sup_x |x^m\phi^{(k)}(x-h)|
@@ -135,7 +135,7 @@ Compute the Fourier transform.
 
 With the convention
 \[
-\widehat\phi(\xi)=\int_{\mathbb R}\phi(x)e^{-2\pi i x\xi}\,dx,
+\widehat\phi(\xi)=\int_{\RR}\phi(x)e^{-2\pi i x\xi}\,dx,
 \]
 one has for ordinary Schwartz functions
 \[

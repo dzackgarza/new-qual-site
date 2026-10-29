@@ -117,7 +117,7 @@ in the long exact sequence of the pair $(W,M)$.
 
 The relative fundamental class
 \[
-[W,M]\in H_{4m+1}(W,M;\mathbb Z)
+[W,M]\in H_{4m+1}(W,M;\ZZ)
 \]
 is characterized by the orientation of $W$. Under the connecting homomorphism
 \[
@@ -131,7 +131,7 @@ it maps to the fundamental class of the oriented boundary, with the boundary ori
 
 ::: {.pf-step #s1-5}
 
-If $u\in H^{4m}(W;\mathbb Z)$ is any absolute cohomology class, then
+If $u\in H^{4m}(W;\ZZ)$ is any absolute cohomology class, then
 \[
 \langle i^*u,[M]\rangle=0.
 \]

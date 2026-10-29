@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-For each $N \in \mathbb{R}$ define in $\mathbb{R}^n$ the measures $d\mu_N := (1 + |x|)^N\,dx$ and, for each $1 \leq p < \infty$, the norms
+For each $N \in \RR$ define in $\RR^n$ the measures $d\mu_N := (1 + |x|)^N\,dx$ and, for each $1 \leq p < \infty$, the norms
 $$
-\|f\|_{p,N} := \|f\|_{L^p(\mathbb{R}^n, d\mu_N)} = \left(\int_{\mathbb{R}^n} |f(x)|^p (1 + |x|)^N\,dx\right)^{1/p}.
+\|f\|_{p,N} := \|f\|_{L^p(\RR^n, d\mu_N)} = \left(\int_{\RR^n} |f(x)|^p (1 + |x|)^N\,dx\right)^{1/p}.
 $$
 
 (a) Fix $1 \leq r < p < \infty$. Show that for every $t > 0$ there is a constant $C_{t,r,p}$ such that, with
@@ -60,8 +60,8 @@ Then
 \[
 \begin{aligned}
 \|f\|_{r,N}^r
-&=\int_{\mathbb R^n}|f(x)|^r(1+|x|)^N\,dx\\
-&=\int_{\mathbb R^n}
+&=\int_{\RR^n}|f(x)|^r(1+|x|)^N\,dx\\
+&=\int_{\RR^n}
 \Bigl(|f(x)|^r(1+|x|)^{rN_t/p}\Bigr)
 (1+|x|)^{N-rN_t/p}\,dx.
 \end{aligned}
@@ -82,7 +82,7 @@ By the definition of $N_t$,
 \]
 Hence, with
 \[
-I_t:=\int_{\mathbb R^n}(1+|x|)^{-n-t}\,dx<\infty,
+I_t:=\int_{\RR^n}(1+|x|)^{-n-t}\,dx<\infty,
 \]
 we obtain
 \[
@@ -113,7 +113,7 @@ For $t\ge1$,
 \[
 0\le(1+|x|)^{-n-t}\le(1+|x|)^{-n-1},
 \]
-and the right-hand side is integrable on $\mathbb R^n$. Also
+and the right-hand side is integrable on $\RR^n$. Also
 \[
 (1+|x|)^{-n-t}\longrightarrow0
 \]

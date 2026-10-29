@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OSVOY6VRAB
 kind: problem
-title: Galois group and intermediate fields of $\mathbb Q(\zeta_{12})/\mathbb Q$
+title: Galois group and intermediate fields of $\QQ(\zeta_{12})/\QQ$
 classification:
   areas:
   - algebra
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Describe the Galois group and the intermediate fields of the cyclotomic extension $\mathbb Q(\zeta_{12})/\mathbb Q$.
+Describe the Galois group and the intermediate fields of the cyclotomic extension $\QQ(\zeta_{12})/\QQ$.
 :::
 
 ::: {.solution}
@@ -26,10 +26,10 @@ Describe the Galois group and the intermediate fields of the cyclotomic extensio
 
 ::: pf-step
 
-The extension $\mathbb Q(\zeta_{12})/\mathbb Q$ is Galois of degree $4$, with
+The extension $\QQ(\zeta_{12})/\QQ$ is Galois of degree $4$, with
 \[
-\operatorname{Gal}(\mathbb Q(\zeta_{12})/\mathbb Q)
-\cong(\mathbb Z/12\mathbb Z)^\times
+\operatorname{Gal}(\QQ(\zeta_{12})/\QQ)
+\cong(\ZZ/12\ZZ)^\times
 =\{1,5,7,11\}
 \cong C_2\times C_2.
 \]
@@ -42,12 +42,12 @@ The $12$th cyclotomic polynomial has degree
 \]
 so
 \[
-[\mathbb Q(\zeta_{12}):\mathbb Q]=4.
+[\QQ(\zeta_{12}):\QQ]=4.
 \]
 Cyclotomic extensions are Galois, and every automorphism is determined by
 \[
 \sigma_a(\zeta_{12})=\zeta_{12}^a,
-\qquad a\in(\mathbb Z/12\mathbb Z)^\times.
+\qquad a\in(\ZZ/12\ZZ)^\times.
 \]
 The units modulo $12$ are $1,5,7,11$, and each nonidentity element has order $2$, so the group is the Klein four group.
 
@@ -57,9 +57,9 @@ The units modulo $12$ are $1,5,7,11$, and each nonidentity element has order $2$
 
 ::: pf-step
 
-The field $\mathbb Q(\zeta_{12})$ equals
+The field $\QQ(\zeta_{12})$ equals
 \[
-\mathbb Q(i,\sqrt3).
+\QQ(i,\sqrt3).
 \]
 
 ::: pf-proof
@@ -72,11 +72,11 @@ and
 \[
 \sqrt3=\zeta_{12}+\zeta_{12}^{-1}=2\cos(\pi/6).
 \]
-Hence $\mathbb Q(i,\sqrt3)\subseteq\mathbb Q(\zeta_{12})$. Conversely,
+Hence $\QQ(i,\sqrt3)\subseteq\QQ(\zeta_{12})$. Conversely,
 \[
 \zeta_{12}=\cos(\pi/6)+i\sin(\pi/6)=\frac{\sqrt3+i}{2},
 \]
-so $\zeta_{12}\in\mathbb Q(i,\sqrt3)$.
+so $\zeta_{12}\in\QQ(i,\sqrt3)$.
 
 :::
 
@@ -86,9 +86,9 @@ so $\zeta_{12}\in\mathbb Q(i,\sqrt3)$.
 
 The subgroup
 \[
-H_i=\{1,5\}\le(\mathbb Z/12\mathbb Z)^\times
+H_i=\{1,5\}\le(\ZZ/12\ZZ)^\times
 \]
-fixes exactly $\mathbb Q(i)$.
+fixes exactly $\QQ(i)$.
 
 ::: pf-proof
 
@@ -101,9 +101,9 @@ Since $i=\zeta_{12}^3$,
 \]
 Among $1,5,7,11$, this gives $a=1,5$. Thus the stabilizer of $i$ is $H_i$. Its fixed field has degree
 \[
-[\mathbb Q(\zeta_{12})^{H_i}:\mathbb Q]=\frac4{|H_i|}=2,
+[\QQ(\zeta_{12})^{H_i}:\QQ]=\frac4{|H_i|}=2,
 \]
-and contains the quadratic field $\mathbb Q(i)$, so equality holds.
+and contains the quadratic field $\QQ(i)$, so equality holds.
 
 :::
 
@@ -115,7 +115,7 @@ The subgroup
 \[
 H_{\sqrt3}=\{1,11\}
 \]
-fixes exactly $\mathbb Q(\sqrt3)$.
+fixes exactly $\QQ(\sqrt3)$.
 
 ::: pf-proof
 
@@ -123,7 +123,7 @@ The automorphism $\sigma_{11}$ is complex conjugation because $11\equiv-1\pmod{1
 \[
 \zeta_{12}+\zeta_{12}^{-1}=\sqrt3.
 \]
-Thus $\mathbb Q(\sqrt3)$ lies in the fixed field of $H_{\sqrt3}$. Both fields have degree $2$ over $\mathbb Q$, so they are equal.
+Thus $\QQ(\sqrt3)$ lies in the fixed field of $H_{\sqrt3}$. Both fields have degree $2$ over $\QQ$, so they are equal.
 
 :::
 
@@ -135,7 +135,7 @@ The subgroup
 \[
 H_{\sqrt{-3}}=\{1,7\}
 \]
-fixes exactly $\mathbb Q(\sqrt{-3})=\mathbb Q(\zeta_3)$.
+fixes exactly $\QQ(\sqrt{-3})=\QQ(\zeta_3)$.
 
 ::: pf-proof
 
@@ -149,7 +149,7 @@ we have
 \iff 4(a-1)\equiv0\pmod{12}
 \iff a\equiv1\pmod3.
 \]
-Among the units modulo $12$, this gives $a=1,7$. Hence the fixed field of $\{1,7\}$ contains $\mathbb Q(\zeta_3)=\mathbb Q(\sqrt{-3})$; both have degree $2$ over $\mathbb Q$, so they are equal.
+Among the units modulo $12$, this gives $a=1,7$. Hence the fixed field of $\{1,7\}$ contains $\QQ(\zeta_3)=\QQ(\sqrt{-3})$; both have degree $2$ over $\QQ$, so they are equal.
 
 :::
 
@@ -160,11 +160,11 @@ Among the units modulo $12$, this gives $a=1,7$. Hence the fixed field of $\{1,7
 Therefore the complete list of intermediate fields is
 \[
 \boxed{
-\mathbb Q,
-\quad \mathbb Q(i),
-\quad \mathbb Q(\sqrt3),
-\quad \mathbb Q(\sqrt{-3}),
-\quad \mathbb Q(\zeta_{12})}.
+\QQ,
+\quad \QQ(i),
+\quad \QQ(\sqrt3),
+\quad \QQ(\sqrt{-3}),
+\quad \QQ(\zeta_{12})}.
 \]
 
 ::: pf-proof

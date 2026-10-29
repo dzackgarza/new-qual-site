@@ -9,7 +9,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Show that $\ell^\infty(\mathbb Z)$ contains continuum many functions $x_\alpha:\mathbb Z\to\mathbb R$ satisfying
+(a) Show that $\ell^\infty(\ZZ)$ contains continuum many functions $x_\alpha:\ZZ\to\RR$ satisfying
 \[
 \|x_\alpha\|_{\ell^\infty}=1,
 \qquad
@@ -17,9 +17,9 @@ review: draft
 \quad\text{whenever }\alpha\ne\beta.
 \]
 
-(b) Deduce, assuming the axiom of choice, that the Banach-space dual of $\ell^\infty(\mathbb Z)$ cannot contain a countable dense subset.
+(b) Deduce, assuming the axiom of choice, that the Banach-space dual of $\ell^\infty(\ZZ)$ cannot contain a countable dense subset.
 
-(c) Deduce that $\ell^1(\mathbb Z)$ is not reflexive.
+(c) Deduce that $\ell^1(\ZZ)$ is not reflexive.
 :::
 
 ::: {.solution}
@@ -30,14 +30,14 @@ review: draft
 
 There are continuum many subsets
 \[
-A\subset\mathbb Z
+A\subset\ZZ
 \]
 containing $0$.
 
 
 ::: pf-proof
 
-The power set of $\mathbb Z\setminus\{0\}$ has cardinality
+The power set of $\ZZ\setminus\{0\}$ has cardinality
 \[
 2^{\aleph_0}.
 \]
@@ -45,7 +45,7 @@ The map
 \[
 B\longmapsto B\cup\{0\}
 \]
-is a bijection from that power set onto the family of subsets of $\mathbb Z$ containing $0$.
+is a bijection from that power set onto the family of subsets of $\ZZ$ containing $0$.
 
 :::
 
@@ -53,7 +53,7 @@ is a bijection from that power set onto the family of subsets of $\mathbb Z$ con
 
 ::: {.pf-step #s1-2}
 
-For each subset $A\subset\mathbb Z$ containing $0$, let
+For each subset $A\subset\ZZ$ containing $0$, let
 \[
 x_A(j)
 =
@@ -187,16 +187,16 @@ Thus $Y=X$, so $X$ is separable.
 
 The dual
 \[
-(\ell^\infty(\mathbb Z))^*
+(\ell^\infty(\ZZ))^*
 \]
 is not separable.
 
 
 ::: pf-proof
 
-By part (a), $\ell^\infty(\mathbb Z)$ contains an uncountable $1$-separated set, so it is not separable.
+By part (a), $\ell^\infty(\ZZ)$ contains an uncountable $1$-separated set, so it is not separable.
 
-If its dual were separable, step [](#s1-5){.pf-ref} would imply that $\ell^\infty(\mathbb Z)$ itself is separable, a contradiction.
+If its dual were separable, step [](#s1-5){.pf-ref} would imply that $\ell^\infty(\ZZ)$ itself is separable, a contradiction.
 
 :::
 
@@ -219,9 +219,9 @@ Step [](#s1-6){.pf-ref} is exactly the assertion of part (b).
 
 One has the canonical isometric identification
 \[
-(\ell^1(\mathbb Z))^*
+(\ell^1(\ZZ))^*
 \cong
-\ell^\infty(\mathbb Z).
+\ell^\infty(\ZZ).
 \]
 
 
@@ -231,7 +231,7 @@ For $a=(a_j)\in\ell^\infty$, the formula
 \[
 T_a(x)
 =
-\sum_{j\in\mathbb Z}x_ja_j
+\sum_{j\in\ZZ}x_ja_j
 \]
 defines a bounded linear functional on $\ell^1$ with
 \[
@@ -255,7 +255,7 @@ so $a\in\ell^\infty$, and density of finitely supported sequences gives $T=T_a$.
 
 ::: {.pf-step #s1-9}
 
-The space $\ell^1(\mathbb Z)$ is not reflexive.
+The space $\ell^1(\ZZ)$ is not reflexive.
 
 
 ::: pf-proof
@@ -278,7 +278,7 @@ Hence
 \cong
 \ell^1.
 \]
-But $\ell^1(\mathbb Z)$ is separable, while step [](#s1-6){.pf-ref} says $(\ell^\infty)^*$ is not separable. This contradiction proves that $\ell^1$ is not reflexive.
+But $\ell^1(\ZZ)$ is separable, while step [](#s1-6){.pf-ref} says $(\ell^\infty)^*$ is not separable. This contradiction proves that $\ell^1$ is not reflexive.
 
 :::
 

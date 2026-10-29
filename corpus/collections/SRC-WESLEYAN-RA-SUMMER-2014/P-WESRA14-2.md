@@ -200,7 +200,7 @@ If
 \]
 on
 \[
-\mathbb R
+\RR
 \]
 with
 \[

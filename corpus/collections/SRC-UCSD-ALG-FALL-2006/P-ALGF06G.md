@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $R := \mathbb{Z}[\sqrt{10}] = \{a + b\sqrt{10} \mid a, b \in \mathbb{Z}\}$, viewed as a subring of the field of complex numbers with the usual operations.
+Let $R := \ZZ[\sqrt{10}] = \{a + b\sqrt{10} \mid a, b \in \ZZ\}$, viewed as a subring of the field of complex numbers with the usual operations.
 
 (a) Show that the group of units $R^\times$ of $R$ is infinite.
 
@@ -39,7 +39,7 @@ Let $R := \mathbb{Z}[\sqrt{10}] = \{a + b\sqrt{10} \mid a, b \in \mathbb{Z}\}$, 
 (e) Is $R$ a unique factorization domain?
 Justify your answer.
 
-Hint: Recall that there is a multiplicative norm map $N: \mathbb{Z}[\sqrt{10}] \to \mathbb{Z}$ given by $N(a + b\sqrt{10}) = a^2 - 10b^2$, for all $a, b \in \mathbb{Z}$.
+Hint: Recall that there is a multiplicative norm map $N: \ZZ[\sqrt{10}] \to \ZZ$ given by $N(a + b\sqrt{10}) = a^2 - 10b^2$, for all $a, b \in \ZZ$.
 :::
 
 ::: {.solution}
@@ -72,7 +72,7 @@ so $u$ is a unit; explicitly,
 (3+\sqrt{10})(\sqrt{10}-3)=1.
 \]
 Hence every power $u^k$, $k\ge0$, is a unit.
-Under the real embedding $R\subset\mathbb R$, we have
+Under the real embedding $R\subset\RR$, we have
 \[
 u=3+\sqrt{10}>1,
 \]

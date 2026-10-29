@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF14D
 kind: problem
-title: Irreducibility and primality of $2$ in $\mathbb{Z}[\sqrt{10}]$
+title: Irreducibility and primality of $2$ in $\ZZ[\sqrt{10}]$
 classification:
   areas:
   - algebra
@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A = \mathbb{Z}[\sqrt{10}]$.
+Let $A = \ZZ[\sqrt{10}]$.
 
 (i) Prove that $2$ is irreducible in $A$.
 
@@ -120,7 +120,7 @@ Indeed, if
 \[
 \sqrt{10}=2(a+b\sqrt{10})
 \]
-with \(a,b\in\mathbb Z\), comparison of coefficients of \(1\) and \(\sqrt{10}\) gives
+with \(a,b\in\ZZ\), comparison of coefficients of \(1\) and \(\sqrt{10}\) gives
 \[
 2a=0,
 \qquad

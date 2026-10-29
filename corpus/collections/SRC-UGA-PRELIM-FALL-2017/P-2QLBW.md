@@ -53,13 +53,13 @@ Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendicular to t
 :::
 
 ::: {.solution}
-**Goal:** Prove that for a continuously differentiable function $f: \mathbb{R}^2 \to \mathbb{R}$, the gradient vector $\nabla f(\mathbf{p})$ at any point $\mathbf{p}$ on a level curve $C = \{(x,y) \in \mathbb{R}^2 \mid f(x,y) = c\}$ is orthogonal to the tangent vector of every smooth curve in $C$ passing through $\mathbf{p}$.
+**Goal:** Prove that for a continuously differentiable function $f: \RR^2 \to \RR$, the gradient vector $\nabla f(\mathbf{p})$ at any point $\mathbf{p}$ on a level curve $C = \{(x,y) \in \RR^2 \mid f(x,y) = c\}$ is orthogonal to the tangent vector of every smooth curve in $C$ passing through $\mathbf{p}$.
 
 ::: pf
 
 ::: pf-step
 
-Let $\mathbf{p} = (x_0, y_0) \in C$ such that $f(\mathbf{p}) = c$. Let $\gamma: (-\varepsilon, \varepsilon) \to \mathbb{R}^2$ be a differentiable parametrized curve such that $\gamma(0) = \mathbf{p}$ and $\gamma(t) \in C$ for all $t \in (-\varepsilon, \varepsilon)$.
+Let $\mathbf{p} = (x_0, y_0) \in C$ such that $f(\mathbf{p}) = c$. Let $\gamma: (-\varepsilon, \varepsilon) \to \RR^2$ be a differentiable parametrized curve such that $\gamma(0) = \mathbf{p}$ and $\gamma(t) \in C$ for all $t \in (-\varepsilon, \varepsilon)$.
 
 ::: pf-proof
 

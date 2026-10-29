@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be bounded and continuously differentiable. Show that every solution of
+Let $f:\RR\to\RR$ be bounded and continuously differentiable. Show that every solution of
 \[
 y'(x)=f(y(x))
 \]

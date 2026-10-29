@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\phi\colon\mathbb{C}^8\to\mathbb{C}^8$ be a linear map whose matrix with respect to the standard basis is of the form
+Let $\phi\colon\CC^8\to\CC^8$ be a linear map whose matrix with respect to the standard basis is of the form
 \[
 \begin{pmatrix}
 1 & * & * & * & * & * & * & * \\

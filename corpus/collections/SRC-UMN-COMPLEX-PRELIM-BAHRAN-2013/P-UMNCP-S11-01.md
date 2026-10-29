@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that for every \(a\in\mathbb C\) and every integer \(n\ge2\), the polynomial
+Prove that for every \(a\in\CC\) and every integer \(n\ge2\), the polynomial
 \[
 az^n+z+1
 \]

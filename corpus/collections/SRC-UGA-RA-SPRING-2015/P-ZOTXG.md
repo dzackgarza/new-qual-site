@@ -47,9 +47,9 @@ The convolution is well defined and bounded.
 
 ::: pf-proof
 
-Let $M:=\|g\|_\infty$. For every $x\in\mathbb R$,
+Let $M:=\|g\|_\infty$. For every $x\in\RR$,
 \[
-\int_{\mathbb R}|f(y)g(x-y)|\,dy
+\int_{\RR}|f(y)g(x-y)|\,dy
 \le M\|f\|_1<\infty.
 \]
 Thus $(f*g)(x)$ is absolutely convergent and
@@ -67,22 +67,22 @@ The convolution is uniformly continuous.
 
 ::: pf-proof
 
-For $h\in\mathbb R$, a change of variables gives
+For $h\in\RR$, a change of variables gives
 \[
 (f*g)(x+h)
-=\int_{\mathbb R} f(y+h)g(x-y)\,dy.
+=\int_{\RR} f(y+h)g(x-y)\,dy.
 \]
 Hence
 \[
 (f*g)(x+h)-(f*g)(x)
-=\int_{\mathbb R}\bigl(f(y+h)-f(y)\bigr)g(x-y)\,dy,
+=\int_{\RR}\bigl(f(y+h)-f(y)\bigr)g(x-y)\,dy,
 \]
 and therefore
 \[
 |(f*g)(x+h)-(f*g)(x)|
 \le M\|\tau_{-h}f-f\|_1.
 \]
-Translations are strongly continuous on $L^1(\mathbb R)$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Thus $f*g$ is uniformly continuous.
+Translations are strongly continuous on $L^1(\RR)$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Thus $f*g$ is uniformly continuous.
 
 :::
 
@@ -97,16 +97,16 @@ Differentiate when $g\in C^1$ and $g'$ is bounded.
 For $h\ne0$,
 \[
 \frac{(f*g)(x+h)-(f*g)(x)}h
-=\int_{\mathbb R}f(y)
+=\int_{\RR}f(y)
 \frac{g(x+h-y)-g(x-y)}h\,dy.
 \]
 For each fixed $y$, the difference quotient converges to $g'(x-y)$. By the mean value theorem it is bounded in absolute value by $\|g'\|_\infty$. Since $f\in L^1$, dominated convergence yields
 \[
 \frac d{dx}(f*g)(x)
-=\int_{\mathbb R}f(y)g'(x-y)\,dy
+=\int_{\RR}f(y)g'(x-y)\,dy
 =(f*g')(x).
 \]
-Finally, $g'$ is bounded and measurable, so Step 2 applied to $(f,g')$ shows that $f*g'$ is uniformly continuous. Hence $f*g\in C^1(\mathbb R)$ and
+Finally, $g'$ is bounded and measurable, so Step 2 applied to $(f,g')$ shows that $f*g'$ is uniformly continuous. Hence $f*g\in C^1(\RR)$ and
 \[
 \boxed{(f*g)'=f*g'.}
 \]

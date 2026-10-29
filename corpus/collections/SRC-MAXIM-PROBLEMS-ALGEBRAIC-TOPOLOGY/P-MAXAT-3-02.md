@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $H ^ { * } ( \mathbb { R } \mathbb { P } ^ { \infty } ; \mathbb { Z } ) , H ^ { * } ( \mathbb { R } \mathbb { P } ^ { 2 n } ; \mathbb { Z } ) , H ^ { * } ( \mathbb { R } \mathbb { P } ^ { 2 n + 1 } ; \mathbb { Z } )$
+Calculate $H ^ { * } ( \RR \mathbb { P } ^ { \infty } ; \ZZ ) , H ^ { * } ( \RR \mathbb { P } ^ { 2 n } ; \ZZ ) , H ^ { * } ( \RR \mathbb { P } ^ { 2 n + 1 } ; \ZZ )$
 :::
 
 ::: {.solution}
@@ -71,7 +71,7 @@ is therefore
 
 ::: pf-proof
 
-Cellular cochains are $C^k=\operatorname{Hom}(C_k,\mathbb Z)\cong\mathbb Z$, and $\delta^k$ is dual to $d_{k+1}$. Apply step [](#s1-1){.pf-ref} to $k+1$.
+Cellular cochains are $C^k=\operatorname{Hom}(C_k,\ZZ)\cong\ZZ$, and $\delta^k$ is dual to $d_{k+1}$. Apply step [](#s1-1){.pf-ref} to $k+1$.
 
 :::
 
@@ -82,11 +82,11 @@ Cellular cochains are $C^k=\operatorname{Hom}(C_k,\mathbb Z)\cong\mathbb Z$, and
 For $\mathbb{RP}^{\infty}$,
 \[
 \boxed{
-H^k(\mathbb{RP}^{\infty};\mathbb Z)
+H^k(\mathbb{RP}^{\infty};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/2,&k>0\text{ even},\\
+\ZZ,&k=0,\\
+\ZZ/2,&k>0\text{ even},\\
 0,&k\text{ odd}.
 \end{cases}}
 \]
@@ -96,11 +96,11 @@ H^k(\mathbb{RP}^{\infty};\mathbb Z)
 
 The cochain complex is
 \[
-0\to\mathbb Z\xrightarrow{0}\mathbb Z
-\xrightarrow{2}\mathbb Z\xrightarrow{0}\mathbb Z
-\xrightarrow{2}\mathbb Z\xrightarrow{0}\cdots.
+0\to\ZZ\xrightarrow{0}\ZZ
+\xrightarrow{2}\ZZ\xrightarrow{0}\ZZ
+\xrightarrow{2}\ZZ\xrightarrow{0}\cdots.
 \]
-At positive even degree, the outgoing map is zero and the incoming image is $2\mathbb Z$, giving $\mathbb Z/2$. At odd degree, multiplication by $2$ is injective, giving zero. Degree $0$ gives $\mathbb Z$.
+At positive even degree, the outgoing map is zero and the incoming image is $2\ZZ$, giving $\ZZ/2$. At odd degree, multiplication by $2$ is injective, giving zero. Degree $0$ gives $\ZZ$.
 
 :::
 
@@ -111,11 +111,11 @@ At positive even degree, the outgoing map is zero and the incoming image is $2\m
 For $\mathbb{RP}^{2n}$,
 \[
 \boxed{
-H^k(\mathbb{RP}^{2n};\mathbb Z)
+H^k(\mathbb{RP}^{2n};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/2,&k=2,4,\ldots,2n,\\
+\ZZ,&k=0,\\
+\ZZ/2,&k=2,4,\ldots,2n,\\
 0,&\text{otherwise}.
 \end{cases}}
 \]
@@ -125,9 +125,9 @@ H^k(\mathbb{RP}^{2n};\mathbb Z)
 
 The cochain complex of step [](#s1-2){.pf-ref} truncates in degree $2n$. The calculation below the top is identical to step [](#s1-3){.pf-ref}. In top degree $2n$, there is no outgoing differential and the incoming differential is multiplication by $2$, so
 \[
-H^{2n}\cong\mathbb Z/2.
+H^{2n}\cong\ZZ/2.
 \]
-This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top integral cohomology $\mathbb Z/2$.
+This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top integral cohomology $\ZZ/2$.
 
 :::
 
@@ -138,11 +138,11 @@ This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top i
 For $\mathbb{RP}^{2n+1}$,
 \[
 \boxed{
-H^k(\mathbb{RP}^{2n+1};\mathbb Z)
+H^k(\mathbb{RP}^{2n+1};\ZZ)
 \cong
 \begin{cases}
-\mathbb Z,&k=0,2n+1,\\
-\mathbb Z/2,&k=2,4,\ldots,2n,\\
+\ZZ,&k=0,2n+1,\\
+\ZZ/2,&k=2,4,\ldots,2n,\\
 0,&\text{otherwise}.
 \end{cases}}
 \]
@@ -150,7 +150,7 @@ H^k(\mathbb{RP}^{2n+1};\mathbb Z)
 
 ::: pf-proof
 
-Again the calculation below the top is step [](#s1-3){.pf-ref}. In degree $2n+1$, the incoming differential $\delta^{2n}$ is zero and there is no outgoing differential, so the top cohomology is $\mathbb Z$. This is the integral orientation class of the orientable odd-dimensional real projective space.
+Again the calculation below the top is step [](#s1-3){.pf-ref}. In degree $2n+1$, the incoming differential $\delta^{2n}$ is zero and there is no outgoing differential, so the top cohomology is $\ZZ$. This is the integral orientation class of the orientable odd-dimensional real projective space.
 
 :::
 
@@ -160,12 +160,12 @@ Again the calculation below the top is step [](#s1-3){.pf-ref}. In degree $2n+1$
 
 If the ring structure is also desired, let
 \[
-u\in H^2(\mathbb{RP}^{\infty};\mathbb Z)
+u\in H^2(\mathbb{RP}^{\infty};\ZZ)
 \]
 be the unique nonzero class. Then
 \[
-\boxed{H^*(\mathbb{RP}^{\infty};\mathbb Z)
-\cong\mathbb Z[u]/(2u),\qquad |u|=2.}
+\boxed{H^*(\mathbb{RP}^{\infty};\ZZ)
+\cong\ZZ[u]/(2u),\qquad |u|=2.}
 \]
 
 
@@ -181,8 +181,8 @@ The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\mathbb{RP}^{\
 
 For finite even-dimensional projective space,
 \[
-\boxed{H^*(\mathbb{RP}^{2n};\mathbb Z)
-\cong\mathbb Z[u]/(2u,u^{n+1}),\qquad |u|=2.}
+\boxed{H^*(\mathbb{RP}^{2n};\ZZ)
+\cong\ZZ[u]/(2u,u^{n+1}),\qquad |u|=2.}
 \]
 
 

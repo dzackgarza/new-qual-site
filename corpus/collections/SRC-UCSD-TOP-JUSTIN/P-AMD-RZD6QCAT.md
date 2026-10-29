@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-RZD6QCAT
 kind: problem
-title: $A\hookrightarrow B$ implies $A\otimes\mathbb{Q}\hookrightarrow B\otimes\mathbb{Q}$
+title: $A\hookrightarrow B$ implies $A\otimes\QQ\hookrightarrow B\otimes\QQ$
 classification:
   areas:
   - topology
@@ -23,11 +23,11 @@ Show that $A\injects B \implies A\tensor \QQ \injects B\tensor \QQ$
 
 ::: pf-step
 
-The $\mathbb Z$-module $\mathbb Q$ is flat.
+The $\ZZ$-module $\QQ$ is flat.
 
 ::: pf-proof
 
-It is the localization $S^{-1}\mathbb Z$ for $S=\mathbb Z\setminus\{0\}$. Localization is a flat module over the original ring.
+It is the localization $S^{-1}\ZZ$ for $S=\ZZ\setminus\{0\}$. Localization is a flat module over the original ring.
 
 :::
 
@@ -35,9 +35,9 @@ It is the localization $S^{-1}\mathbb Z$ for $S=\mathbb Z\setminus\{0\}$. Locali
 
 ::: pf-step
 
-Therefore tensoring an injection $A\hookrightarrow B$ with $\mathbb Q$ preserves injectivity:
+Therefore tensoring an injection $A\hookrightarrow B$ with $\QQ$ preserves injectivity:
 $$
-\boxed{A\otimes_{\mathbb Z}\mathbb Q\hookrightarrow B\otimes_{\mathbb Z}\mathbb Q.}
+\boxed{A\otimes_{\ZZ}\QQ\hookrightarrow B\otimes_{\ZZ}\QQ.}
 $$
 
 ::: pf-proof
@@ -46,9 +46,9 @@ Start with the exact sequence
 $$
 0\longrightarrow A\longrightarrow B.
 $$
-Since $\mathbb Q$ is flat, applying $-\otimes_{\mathbb Z}\mathbb Q$ preserves exactness at the left, yielding
+Since $\QQ$ is flat, applying $-\otimes_{\ZZ}\QQ$ preserves exactness at the left, yielding
 $$
-0\longrightarrow A\otimes\mathbb Q\longrightarrow B\otimes\mathbb Q.
+0\longrightarrow A\otimes\QQ\longrightarrow B\otimes\QQ.
 $$
 
 :::

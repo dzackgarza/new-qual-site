@@ -83,7 +83,7 @@ For the second identity, put
 $$
 \widehat B_m(n)=\int_0^1B_m(x)e^{-2\pi i n x}\,dx
 $$
-for $m\ge0$ and $n\in\mathbb Z\setminus\{0\}$.
+for $m\ge0$ and $n\in\ZZ\setminus\{0\}$.
 
 ::: pf
 

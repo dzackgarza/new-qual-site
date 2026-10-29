@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-8B
 kind: problem
-title: A group that is both a quotient and a subgroup of $\mathbb Z^n$ is isomorphic to $\mathbb Z^n$
+title: A group that is both a quotient and a subgroup of $\ZZ^n$ is isomorphic to $\ZZ^n$
 classification:
   areas:
   - prelim
@@ -32,7 +32,7 @@ audit:
 
 ::: {.problem}
 Let G be a group and n be a positive integer.
-Assume that there exists a surjective group homomorphism $\mathbb { Z } ^ { n } \to G$ and an injective group homomorphism $\mathbb { Z } ^ { n } \to G$ . Prove that the group G is isomorphic to $\mathbb { Z } ^ { n }$
+Assume that there exists a surjective group homomorphism $\ZZ ^ { n } \to G$ and an injective group homomorphism $\ZZ ^ { n } \to G$ . Prove that the group G is isomorphic to $\ZZ ^ { n }$
 :::
 
 ::: {.solution}

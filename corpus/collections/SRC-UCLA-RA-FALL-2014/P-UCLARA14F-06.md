@@ -158,9 +158,9 @@ D
 \left\{
 \sum_{j=1}^m q_jx_{n_j}
 :
-m\in\mathbb N,\quad
-q_j\in\mathbb Q,\quad
-n_j\in\mathbb N
+m\in\NN,\quad
+q_j\in\QQ,\quad
+n_j\in\NN
 \right\}.
 \]
 This set is countable because it is a countable union of finite products of
@@ -175,7 +175,7 @@ $D$ is dense in
 
 If $X$ is complex, use coefficients in
 \[
-\mathbb Q+i\mathbb Q
+\QQ+i\QQ
 \]
 instead; the same argument applies.
 

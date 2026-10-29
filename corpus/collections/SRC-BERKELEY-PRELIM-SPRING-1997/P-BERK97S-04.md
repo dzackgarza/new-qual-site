@@ -26,7 +26,7 @@ Let $f,g$ be entire functions and suppose there is a real constant $k$ such that
 \[
 \operatorname{Re}f(z)\le k\operatorname{Re}g(z)
 \]
-for every $z\in\mathbb C$. Show that there are constants $a,b$ such that
+for every $z\in\CC$. Show that there are constants $a,b$ such that
 \[
 f(z)=ag(z)+b.
 \]

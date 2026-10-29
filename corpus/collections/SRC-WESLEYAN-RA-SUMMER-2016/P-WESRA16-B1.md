@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X,\mathcal M,\mu)$ be a measure space, let $f_n:X\to\mathbb R$ be measurable, and define
+Let $(X,\mathcal M,\mu)$ be a measure space, let $f_n:X\to\RR$ be measurable, and define
 \[
 M_n=\{x:|f_n(x)|\ge2^{-n}\}.
 \]

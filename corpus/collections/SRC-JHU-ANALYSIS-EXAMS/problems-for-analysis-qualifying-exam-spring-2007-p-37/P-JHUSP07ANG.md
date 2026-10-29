@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $(f_n)$ is a sequence in $L^2(\mathbb R)$ that converges weakly to $f\in L^2(\mathbb R)$. Is it possible that
+Suppose $(f_n)$ is a sequence in $L^2(\RR)$ that converges weakly to $f\in L^2(\RR)$. Is it possible that
 \[
 \|f_n\|_{L^2}\longrightarrow\infty?
 \]
@@ -44,7 +44,7 @@ The associated functionals have uniformly bounded operator norms.
 For each $n$, define the bounded linear functional
 $$
 T_n(g)=\langle f_n,g\rangle_{L^2},
-\qquad g\in L^2(\mathbb R).
+\qquad g\in L^2(\RR).
 $$
 Weak convergence means that for every fixed $g\in L^2$,
 $$

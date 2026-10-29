@@ -29,7 +29,7 @@ audit:
 Let $H$ be a Hilbert space.
 Suppose that there is a sequence $\{x_j\}$ in $H$ such that the finite linear combinations of the $x_j$ are dense in $H$ and
 $$
-|\langle x_j, x_k \rangle| \leq 1/2^{|j-k|} \quad \forall j, k \in \mathbb{N}.
+|\langle x_j, x_k \rangle| \leq 1/2^{|j-k|} \quad \forall j, k \in \NN.
 $$
 Prove that $x_j \to 0$ weakly.
 :::

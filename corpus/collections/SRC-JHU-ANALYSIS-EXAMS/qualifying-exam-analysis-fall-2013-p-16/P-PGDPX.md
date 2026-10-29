@@ -24,14 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in L^1(\mathbb{R})$ and define $E_\alpha = \{x : |f(x)| > \alpha\}$.
+Let $f \in L^1(\RR)$ and define $E_\alpha = \{x : |f(x)| > \alpha\}$.
 Prove that
 
-$$\int_{\mathbb{R}} |f(x)| \, dx = \int_0^\infty m(E_\alpha) \, d\alpha.$$
+$$\int_{\RR} |f(x)| \, dx = \int_0^\infty m(E_\alpha) \, d\alpha.$$
 :::
 
 ::: {.solution}
-For every $x\in\mathbb R$,
+For every $x\in\RR$,
 \[
 |f(x)|=\int_0^\infty \mathbf1_{\{\alpha<|f(x)|\}}\,d\alpha.
 \]
@@ -39,19 +39,19 @@ The integrand
 \[
 (x,\alpha)\longmapsto \mathbf1_{\{\alpha<|f(x)|\}}
 \]
-is nonnegative and measurable on $\mathbb R\times(0,\infty)$. Tonelli's theorem therefore gives
+is nonnegative and measurable on $\RR\times(0,\infty)$. Tonelli's theorem therefore gives
 \[
 \begin{aligned}
-\int_{\mathbb R}|f(x)|\,dx
-&=\int_{\mathbb R}\int_0^\infty
+\int_{\RR}|f(x)|\,dx
+&=\int_{\RR}\int_0^\infty
 \mathbf1_{\{\alpha<|f(x)|\}}\,d\alpha\,dx\\
-&=\int_0^\infty\int_{\mathbb R}
+&=\int_0^\infty\int_{\RR}
 \mathbf1_{\{|f(x)|>\alpha\}}\,dx\,d\alpha\\
 &=\int_0^\infty m(E_\alpha)\,d\alpha.
 \end{aligned}
 \]
 Thus
 \[
-\boxed{\int_{\mathbb R}|f|=\int_0^\infty m(E_\alpha)\,d\alpha.}
+\boxed{\int_{\RR}|f|=\int_0^\infty m(E_\alpha)\,d\alpha.}
 \]
 :::

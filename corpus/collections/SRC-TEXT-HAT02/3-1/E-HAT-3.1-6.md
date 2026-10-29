@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Directly from the definitions, compute the simplicial cohomology groups of $S^1 \times S^1$ with $\mathbb{Z}$ and $\mathbb{Z}_2$ coefficients, using the $\Delta$-complex structure given in §2.1.
+(a) Directly from the definitions, compute the simplicial cohomology groups of $S^1 \times S^1$ with $\ZZ$ and $\ZZ_2$ coefficients, using the $\Delta$-complex structure given in §2.1.
 
 (b) Do the same for $\mathbb{RP}^2$ and the Klein bottle.
 :::
@@ -62,7 +62,7 @@ This is the dual of the simplicial boundary maps in the standard two-triangle $\
 
 ::: pf-step
 
-Hence for $G=\mathbb Z$ or $\mathbb Z_2$,
+Hence for $G=\ZZ$ or $\ZZ_2$,
 \[
 H^0(T^2;G)\cong G,
 \qquad
@@ -110,18 +110,18 @@ These are obtained by evaluating cochains on the displayed simplicial boundaries
 
 With integral coefficients,
 \[
-\boxed{H^0(\mathbb{RP}^2;\mathbb Z)=\mathbb Z,\quad
-H^1(\mathbb{RP}^2;\mathbb Z)=0,\quad
-H^2(\mathbb{RP}^2;\mathbb Z)=\mathbb Z_2.}
+\boxed{H^0(\mathbb{RP}^2;\ZZ)=\ZZ,\quad
+H^1(\mathbb{RP}^2;\ZZ)=0,\quad
+H^2(\mathbb{RP}^2;\ZZ)=\ZZ_2.}
 \]
 
 ::: pf-proof
 
-The kernel of $\delta^0$ is the diagonal copy of $\mathbb Z$, so $H^0\cong\mathbb Z$. If $\delta^1(p,q,r)=0$, subtracting and adding the two equations gives $2r=0$, hence $r=0$ and $p=q$. Thus
+The kernel of $\delta^0$ is the diagonal copy of $\ZZ$, so $H^0\cong\ZZ$. If $\delta^1(p,q,r)=0$, subtracting and adding the two equations gives $2r=0$, hence $r=0$ and $p=q$. Thus
 \[
-\ker\delta^1=\mathbb Z(1,1,0)=\operatorname{im}\delta^0,
+\ker\delta^1=\ZZ(1,1,0)=\operatorname{im}\delta^0,
 \]
-so $H^1=0$. The matrix of $\delta^1$ has rank two and its $2\times2$ minors have greatest common divisor $2$, so its image has index $2$ in $\mathbb Z^2$. Hence $H^2\cong\mathbb Z_2$.
+so $H^1=0$. The matrix of $\delta^1$ has rank two and its $2\times2$ minors have greatest common divisor $2$, so its image has index $2$ in $\ZZ^2$. Hence $H^2\cong\ZZ_2$.
 
 :::
 
@@ -129,9 +129,9 @@ so $H^1=0$. The matrix of $\delta^1$ has rank two and its $2\times2$ minors have
 
 ::: pf-step
 
-With $\mathbb Z_2$ coefficients,
+With $\ZZ_2$ coefficients,
 \[
-\boxed{H^i(\mathbb{RP}^2;\mathbb Z_2)\cong\mathbb Z_2\quad(i=0,1,2).}
+\boxed{H^i(\mathbb{RP}^2;\ZZ_2)\cong\ZZ_2\quad(i=0,1,2).}
 \]
 
 ::: pf-proof
@@ -140,7 +140,7 @@ Modulo $2$, $\delta^0$ has rank one and $\delta^1$ has rank one, with
 \[
 \delta^1(p,q,r)=(p+q+r,p+q+r).
 \]
-Thus $\dim\ker\delta^1=2$ and $\dim\operatorname{im}\delta^0=1$, giving one-dimensional $H^1$. The cokernel of $\delta^1$ is also one-dimensional, giving $H^2\cong\mathbb Z_2$.
+Thus $\dim\ker\delta^1=2$ and $\dim\operatorname{im}\delta^0=1$, giving one-dimensional $H^1$. The cokernel of $\delta^1$ is also one-dimensional, giving $H^2\cong\ZZ_2$.
 
 :::
 
@@ -173,12 +173,12 @@ All vertices are identified, so the boundary of every edge is zero. Dualizing th
 
 Therefore
 \[
-\boxed{H^0(K;\mathbb Z)=\mathbb Z,\quad H^1(K;\mathbb Z)=\mathbb Z,\quad H^2(K;\mathbb Z)=\mathbb Z_2.}
+\boxed{H^0(K;\ZZ)=\ZZ,\quad H^1(K;\ZZ)=\ZZ,\quad H^2(K;\ZZ)=\ZZ_2.}
 \]
 
 ::: pf-proof
 
-The equations $p+q-r=0$ and $p-q+r=0$ imply $2p=0$, hence $p=0$ and $q=r$. Thus $\ker\delta^1\cong\mathbb Z$. The $2\times2$ minors of the matrix of $\delta^1$ have gcd $2$, so its image has index $2$ in $\mathbb Z^2$, giving $H^2\cong\mathbb Z_2$.
+The equations $p+q-r=0$ and $p-q+r=0$ imply $2p=0$, hence $p=0$ and $q=r$. Thus $\ker\delta^1\cong\ZZ$. The $2\times2$ minors of the matrix of $\delta^1$ have gcd $2$, so its image has index $2$ in $\ZZ^2$, giving $H^2\cong\ZZ_2$.
 
 :::
 
@@ -186,9 +186,9 @@ The equations $p+q-r=0$ and $p-q+r=0$ imply $2p=0$, hence $p=0$ and $q=r$. Thus 
 
 ::: pf-step
 
-With $\mathbb Z_2$ coefficients,
+With $\ZZ_2$ coefficients,
 \[
-\boxed{H^0(K;\mathbb Z_2)=\mathbb Z_2,\quad H^1(K;\mathbb Z_2)=(\mathbb Z_2)^2,\quad H^2(K;\mathbb Z_2)=\mathbb Z_2.}
+\boxed{H^0(K;\ZZ_2)=\ZZ_2,\quad H^1(K;\ZZ_2)=(\ZZ_2)^2,\quad H^2(K;\ZZ_2)=\ZZ_2.}
 \]
 
 ::: pf-proof

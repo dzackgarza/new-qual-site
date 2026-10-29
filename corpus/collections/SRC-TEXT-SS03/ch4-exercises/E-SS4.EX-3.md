@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. Show, by contour integration, that if $a > 0$ and $\xi \in \mathbb { R }$ then
+3. Show, by contour integration, that if $a > 0$ and $\xi \in \RR$ then
 
 $$
 \frac {1}{\pi} \int_ {- \infty} ^ {\infty} \frac {a}{a ^ {2} + x ^ {2}} e ^ {- 2 \pi i x \xi} d x = e ^ {- 2 \pi a | \xi |},

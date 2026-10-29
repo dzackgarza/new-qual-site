@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{R}^3 \to \mathbb{R}$ be a continuous function of compact support. Show that $u(x) = \int_{\mathbb{R}^3} \frac{f(y)}{|x - y|} \, dy$ is well defined and that $\lim_{|x| \to \infty} u(x) |x| = \int_{\mathbb{R}^3} f(y) \, dy$.
+Let $f : \RR^3 \to \RR$ be a continuous function of compact support. Show that $u(x) = \int_{\RR^3} \frac{f(y)}{|x - y|} \, dy$ is well defined and that $\lim_{|x| \to \infty} u(x) |x| = \int_{\RR^3} f(y) \, dy$.
 :::
 
 ::: {.solution}

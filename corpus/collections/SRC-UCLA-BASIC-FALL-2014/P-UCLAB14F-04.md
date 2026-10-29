@@ -184,7 +184,7 @@ The case $x>y$ follows by symmetry, and $x=y$ is trivial.
 
 The family
 \[
-\{f_n|_{[-1,1]}:n\in\mathbb N\}
+\{f_n|_{[-1,1]}:n\in\NN\}
 \]
 is uniformly bounded and equicontinuous.
 

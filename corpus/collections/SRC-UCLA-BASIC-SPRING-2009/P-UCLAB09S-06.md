@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that a continuous function $f:[0,1)\to\mathbb R$ is uniformly continuous if and only if there exists a continuous function $g:[0,1]\to\mathbb R$ such that
+Prove that a continuous function $f:[0,1)\to\RR$ is uniformly continuous if and only if there exists a continuous function $g:[0,1]\to\RR$ such that
 \[
 f(x)=g(x)\qquad(0\le x<1).
 \]
@@ -31,7 +31,7 @@ f(x)=g(x)\qquad(0\le x<1).
 
 Suppose first that there exists a continuous function
 \[
-g:[0,1]\to\mathbb R
+g:[0,1]\to\RR
 \]
 such that
 \[
@@ -142,7 +142,7 @@ Thus the displayed sequence is Cauchy.
 
 There exists
 \[
-L\in\mathbb R
+L\in\RR
 \]
 such that
 \[
@@ -251,7 +251,7 @@ as $x\to1^-$.
 
 Define
 \[
-g:[0,1]\to\mathbb R
+g:[0,1]\to\RR
 \]
 by
 \[

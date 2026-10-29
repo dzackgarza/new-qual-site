@@ -135,7 +135,7 @@ y(x)
 C_3e^{-2x},
 }
 $$
-with arbitrary constants $C_1,C_2,C_3\in\mathbb R$.
+with arbitrary constants $C_1,C_2,C_3\in\RR$.
 
 
 ::: pf-proof

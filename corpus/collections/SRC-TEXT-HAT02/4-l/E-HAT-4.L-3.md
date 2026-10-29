@@ -37,19 +37,19 @@ S^4\longrightarrow\mathbb{HP}^5
 \]
 Write
 \[
-H^*(\mathbb{HP}^5;\mathbb Z_3)=\mathbb Z_3[x]/(x^6),
+H^*(\mathbb{HP}^5;\ZZ_3)=\ZZ_3[x]/(x^6),
 \qquad |x|=4,
 \]
 and
 \[
-H^*(\mathbb{OP}^2;\mathbb Z_3)=\mathbb Z_3[y]/(y^3),
+H^*(\mathbb{OP}^2;\ZZ_3)=\ZZ_3[y]/(y^3),
 \qquad |y|=8.
 \]
 
 The Gysin sequence of the \(S^4\)-bundle shows that
 \[
-p^*:H^8(\mathbb{OP}^2;\mathbb Z_3)
-\longrightarrow H^8(\mathbb{HP}^5;\mathbb Z_3)
+p^*:H^8(\mathbb{OP}^2;\ZZ_3)
+\longrightarrow H^8(\mathbb{HP}^5;\ZZ_3)
 \]
 is an isomorphism: the adjacent base cohomology groups in degrees \(3\) and \(4\) vanish. Hence, after rescaling \(y\),
 \[
@@ -59,20 +59,20 @@ p^*y=x^2.
 
 At the prime \(3\), the reduced power \(P^1\) raises degree by \(4\). Since
 \[
-H^{12}(\mathbb{OP}^2;\mathbb Z_3)=0,
+H^{12}(\mathbb{OP}^2;\ZZ_3)=0,
 \]
 we have
 \[
 P^1y=0.
 \tag{2}
 \]
-For the generator \(x\in H^4(\mathbb{HP}^\infty;\mathbb Z_3)\), the splitting-principle calculation gives
+For the generator \(x\in H^4(\mathbb{HP}^\infty;\ZZ_3)\), the splitting-principle calculation gives
 \[
 P^1x=x^2.
 \]
 Indeed, after restriction to \(\mathbb{CP}^\infty\) one has \(x=-u^2\), and
 \[
-P^1(-u^2)=-2u^4=u^4=x^2\quad\text{in }\mathbb Z_3.
+P^1(-u^2)=-2u^4=u^4=x^2\quad\text{in }\ZZ_3.
 \]
 The Cartan formula therefore yields
 \[

@@ -48,7 +48,7 @@ The 1-skeleton is the wedge sum of circles indexed by $A$: $$X^1 = \bigvee_{a \i
 By the Seifert-van Kampen theorem, the fundamental group of $X^1$ is the free group on $A$: $$\pi_1(X^1, x_0) \cong F(A) = \langle A \mid \emptyset \rangle.$$
 
 ::: pf-proof
-The wedge of circles indexed by $A$ has fundamental group the free product of one copy of $\mathbb{Z}$ per circle, which is the free group $F(A)$.
+The wedge of circles indexed by $A$ has fundamental group the free product of one copy of $\ZZ$ per circle, which is the free group $F(A)$.
 :::
 
 :::

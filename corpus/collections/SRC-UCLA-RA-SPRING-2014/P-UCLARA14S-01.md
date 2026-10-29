@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 Let $(X,\mathcal A,\mu)$ be a $\sigma$-finite measure space.
-For $t\in\mathbb R$, let $e_t$ be the characteristic function of $(t,\infty)$.
-Prove that for measurable $f,g:X\to\mathbb R$,
+For $t\in\RR$, let $e_t$ be the characteristic function of $(t,\infty)$.
+Prove that for measurable $f,g:X\to\RR$,
 \[
-\|f-g\|_{L^1(X)}=\int_{\mathbb R}\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt.
+\|f-g\|_{L^1(X)}=\int_{\RR}\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt.
 \]
 :::
 
@@ -33,7 +33,7 @@ Prove that for measurable $f,g:X\to\mathbb R$,
 
 For every $x\in X$,
 \[
-\int_{\mathbb R}
+\int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt
 =
 |f(x)-g(x)|.
@@ -62,7 +62,7 @@ Hence
 \]
 up to endpoints, which do not affect the Lebesgue integral. Therefore
 \[
-\int_{\mathbb R}
+\int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt
 =
 g(x)-f(x).
@@ -81,7 +81,7 @@ The function
 \longmapsto
 |e_t(f(x))-e_t(g(x))|
 \]
-is measurable and nonnegative on $X\times\mathbb R$.
+is measurable and nonnegative on $X\times\RR$.
 
 
 ::: pf-proof
@@ -104,29 +104,29 @@ is measurable. Hence $(x,t)\mapsto e_t(f(x))$ is measurable. The same holds for 
 
 One has
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
 =
 \int_X
-\int_{\mathbb R}
+\int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt\,d\mu(x).
 \]
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, the integrand is nonnegative and measurable. Since $(X,\mathcal A,\mu)$ is $\sigma$-finite and Lebesgue measure on $\mathbb R$ is $\sigma$-finite, Tonelli's theorem applies:
+By step [](#s1-2){.pf-ref}, the integrand is nonnegative and measurable. Since $(X,\mathcal A,\mu)$ is $\sigma$-finite and Lebesgue measure on $\RR$ is $\sigma$-finite, Tonelli's theorem applies:
 \[
 \begin{aligned}
-\int_{\mathbb R}
+\int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
 &=
-\int_{\mathbb R}
+\int_{\RR}
 \int_X
 |e_t(f(x))-e_t(g(x))|\,d\mu(x)\,dt\\
 &=
 \int_X
-\int_{\mathbb R}
+\int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt\,d\mu(x).
 \end{aligned}
 \]
@@ -143,7 +143,7 @@ Therefore
 \boxed{
 \|f-g\|_{L^1(X)}
 =
-\int_{\mathbb R}
+\int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
 }.
 \]
@@ -154,7 +154,7 @@ Therefore
 Apply step [](#s1-1){.pf-ref} inside the iterated integral from step [](#s1-3){.pf-ref}:
 \[
 \begin{aligned}
-\int_{\mathbb R}
+\int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
 &=
 \int_X|f(x)-g(x)|\,d\mu(x)\\

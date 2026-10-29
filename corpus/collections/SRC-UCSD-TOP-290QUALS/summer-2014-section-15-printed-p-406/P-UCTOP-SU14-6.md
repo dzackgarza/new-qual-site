@@ -23,8 +23,8 @@ Prove that $\mathbb{QP}^2 \vee S^3$ and $\mathbb{RP}^3$ are not homotopy-equival
 ::: pf-step
 The space $\mathbb{QP}^2$ has one cell in dimensions $0,4,8$, so
 $$
-H_4(\mathbb{QP}^2;\mathbb Z)\cong\mathbb Z,
-\qquad H_8(\mathbb{QP}^2;\mathbb Z)\cong\mathbb Z.
+H_4(\mathbb{QP}^2;\ZZ)\cong\ZZ,
+\qquad H_8(\mathbb{QP}^2;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -36,7 +36,7 @@ Quaternionic projective $n$-space has the standard CW decomposition with one cel
 ::: {.pf-step #h4-wedge}
 Therefore
 $$
-H_4(\mathbb{QP}^2\vee S^3;\mathbb Z)\cong\mathbb Z.
+H_4(\mathbb{QP}^2\vee S^3;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -48,7 +48,7 @@ Reduced homology of a wedge is the direct sum of the reduced homologies of its s
 ::: {.pf-step #h4-rp3-zero}
 But
 $$
-H_4(\mathbb{RP}^3;\mathbb Z)=0.
+H_4(\mathbb{RP}^3;\ZZ)=0.
 $$
 
 ::: pf-proof

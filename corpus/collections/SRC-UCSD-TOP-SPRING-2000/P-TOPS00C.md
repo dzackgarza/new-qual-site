@@ -26,16 +26,16 @@ Compute the cohomology ring of $\mathbb{CP}^3 \times \mathbb{RP}^2$.
 
 The integral cohomology rings of the two factors are
 $$
-H^*(\mathbb{CP}^3;\mathbb Z)\cong\mathbb Z[x]/(x^4),\qquad |x|=2,
+H^*(\mathbb{CP}^3;\ZZ)\cong\ZZ[x]/(x^4),\qquad |x|=2,
 $$
 and
 $$
-H^*(\mathbb{RP}^2;\mathbb Z)\cong \mathbb Z\cdot1\oplus(\mathbb Z/2)u,\qquad |u|=2,\quad u^2=0.
+H^*(\mathbb{RP}^2;\ZZ)\cong \ZZ\cdot1\oplus(\ZZ/2)u,\qquad |u|=2,\quad u^2=0.
 $$
 
 ::: pf-proof
 
-The first is the standard projective-space computation. For $\mathbb{RP}^2$, integral homology is $H_0=\mathbb Z$, $H_1=\mathbb Z/2$, $H_2=0$; the cohomological universal coefficient theorem gives $H^2\cong\mathbb Z/2$ and no other positive-degree cohomology. Dimensional reasons give $u^2=0$.
+The first is the standard projective-space computation. For $\mathbb{RP}^2$, integral homology is $H_0=\ZZ$, $H_1=\ZZ/2$, $H_2=0$; the cohomological universal coefficient theorem gives $H^2\cong\ZZ/2$ and no other positive-degree cohomology. Dimensional reasons give $u^2=0$.
 
 :::
 
@@ -43,7 +43,7 @@ The first is the standard projective-space computation. For $\mathbb{RP}^2$, int
 
 ::: {.pf-step #s2}
 
-Since $H^*(\mathbb{CP}^3;\mathbb Z)$ is free abelian, the cohomological Künneth theorem has no Tor contribution and the external cup product gives the product ring.
+Since $H^*(\mathbb{CP}^3;\ZZ)$ is free abelian, the cohomological Künneth theorem has no Tor contribution and the external cup product gives the product ring.
 
 ::: pf-proof
 
@@ -57,9 +57,9 @@ Tensoring with a free abelian group is exact, so the integral Künneth short exa
 
 Therefore
 $$
-\boxed{H^*(\mathbb{CP}^3\times\mathbb{RP}^2;\mathbb Z)
+\boxed{H^*(\mathbb{CP}^3\times\mathbb{RP}^2;\ZZ)
 \cong
-\mathbb Z[x,u]/(x^4,\,2u,\,u^2),\qquad |x|=|u|=2.}
+\ZZ[x,u]/(x^4,\,2u,\,u^2),\qquad |x|=|u|=2.}
 $$
 
 ::: pf-proof

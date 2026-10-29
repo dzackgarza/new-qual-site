@@ -46,9 +46,9 @@ The spaces $T$ and $Y$ have isomorphic homology groups in every degree:
 \[
 H_n(T)\cong H_n(Y)\cong
 \begin{cases}
-\mathbb Z,&n=0,\\
-\mathbb Z^2,&n=1,\\
-\mathbb Z,&n=2,\\
+\ZZ,&n=0,\\
+\ZZ^2,&n=1,\\
+\ZZ,&n=2,\\
 0,&n>2.
 \end{cases}
 \]
@@ -69,13 +69,13 @@ which gives the same groups.
 
 ::: pf-step
 
-The universal cover of $T$ is $\mathbb R^2$, hence is contractible.
+The universal cover of $T$ is $\RR^2$, hence is contractible.
 
 ::: pf-proof
 
 The quotient map
 \[
-\mathbb R^2\longrightarrow\mathbb R^2/\mathbb Z^2\cong S^1\times S^1
+\RR^2\longrightarrow\RR^2/\ZZ^2\cong S^1\times S^1
 \]
 is the universal covering map. Therefore its universal cover has trivial reduced homology.
 
@@ -95,7 +95,7 @@ Collapsing the tree to a point gives a homotopy equivalence to a wedge of one $S
 \[
 H_2(\widetilde Y)
 \cong
-\bigoplus_{F_2}\mathbb Z,
+\bigoplus_{F_2}\ZZ,
 \]
 which is nonzero.
 

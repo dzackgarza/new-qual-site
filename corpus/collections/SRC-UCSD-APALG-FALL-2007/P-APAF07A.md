@@ -30,11 +30,11 @@ State and prove the Singular Value Decomposition Theorem.
 
 ::: {.pf-step #s1}
 
-**Hermitian spectral theorem.** If $H\in M_n(\mathbb C)$ is Hermitian, then $\mathbb C^n$ has an orthonormal basis of eigenvectors of $H$, and all eigenvalues are real.
+**Hermitian spectral theorem.** If $H\in M_n(\CC)$ is Hermitian, then $\CC^n$ has an orthonormal basis of eigenvectors of $H$, and all eigenvalues are real.
 
 ::: pf-proof
 
-Because the characteristic polynomial of $H$ splits over $\mathbb C$, choose an eigenvector $0\ne v$ with $Hv=\lambda v$.
+Because the characteristic polynomial of $H$ splits over $\CC$, choose an eigenvector $0\ne v$ with $Hv=\lambda v$.
 Then
 \[
 \lambda\langle v,v\rangle
@@ -42,7 +42,7 @@ Then
 =\langle v,Hv\rangle
 =\overline\lambda\langle v,v\rangle,
 \]
-so $\lambda\in\mathbb R$.
+so $\lambda\in\RR$.
 Normalize $v$.
 If $w\perp v$, then
 \[
@@ -51,7 +51,7 @@ If $w\perp v$, then
 =\lambda\langle w,v\rangle=0,
 \]
 so $v^\perp$ is $H$-invariant. The restriction of $H$ to $v^\perp$ is again Hermitian.
-Induction on $n$ therefore gives an orthonormal eigenbasis of $v^\perp$; adjoining $v$ gives an orthonormal eigenbasis of $\mathbb C^n$.
+Induction on $n$ therefore gives an orthonormal eigenbasis of $v^\perp$; adjoining $v$ gives an orthonormal eigenbasis of $\CC^n$.
 
 :::
 
@@ -59,7 +59,7 @@ Induction on $n$ therefore gives an orthonormal eigenbasis of $v^\perp$; adjoini
 
 ::: {.pf-step #s2}
 
-**Singular Value Decomposition.** For every $A\in M_{m,n}(\mathbb C)$ there exist unitary matrices
+**Singular Value Decomposition.** For every $A\in M_{m,n}(\CC)$ there exist unitary matrices
 \[
 U\in U(m),\qquad V\in U(n)
 \]
@@ -72,7 +72,7 @@ such that
 \[
 A=U\Sigma V^*,
 \]
-where $\Sigma\in M_{m,n}(\mathbb C)$ has diagonal entries $\sigma_1,\ldots,\sigma_r$ and all other entries zero.
+where $\Sigma\in M_{m,n}(\CC)$ has diagonal entries $\sigma_1,\ldots,\sigma_r$ and all other entries zero.
 The numbers $\sigma_i$ are the positive square roots of the nonzero eigenvalues of $A^*A$ and are called the singular values of $A$.
 
 ::: pf-proof
@@ -85,7 +85,7 @@ The construction is given in the following steps.
 
 ::: {.pf-step #s3}
 
-The matrix $A^*A$ is Hermitian positive semidefinite. Hence there is an orthonormal basis $v_1,\ldots,v_n$ of $\mathbb C^n$ such that
+The matrix $A^*A$ is Hermitian positive semidefinite. Hence there is an orthonormal basis $v_1,\ldots,v_n$ of $\CC^n$ such that
 \[
 A^*Av_i=\sigma_i^2v_i,
 \]
@@ -103,7 +103,7 @@ Hermitianity follows from
 \[
 (A^*A)^*=A^*A.
 \]
-For every $x\in\mathbb C^n$,
+For every $x\in\CC^n$,
 \[
 \langle A^*Ax,x\rangle=\langle Ax,Ax\rangle=\|Ax\|^2\ge0,
 \]
@@ -137,7 +137,7 @@ For $1\le i\le r$, define
 \[
 u_i=\frac{Av_i}{\sigma_i}.
 \]
-Then $u_1,\ldots,u_r$ is an orthonormal set in $\mathbb C^m$.
+Then $u_1,\ldots,u_r$ is an orthonormal set in $\CC^m$.
 
 ::: pf-proof
 
@@ -156,7 +156,7 @@ If $i\ne j$, this is $0$; if $i=j$, it is $1$. Hence the $u_i$ are orthonormal.
 
 ::: {.pf-step #s5}
 
-Extend $u_1,\ldots,u_r$ to an orthonormal basis $u_1,\ldots,u_m$ of $\mathbb C^m$. Let
+Extend $u_1,\ldots,u_r$ to an orthonormal basis $u_1,\ldots,u_m$ of $\CC^m$. Let
 \[
 U=[u_1\ \cdots\ u_m],
 \qquad

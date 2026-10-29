@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all pairs of $C^\infty$ functions $x,y:\mathbb R\to\mathbb R$ satisfying
+Find all pairs of $C^\infty$ functions $x,y:\RR\to\RR$ satisfying
 \[
 x'(t)=2x(t)-y(t),
 \qquad

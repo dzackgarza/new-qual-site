@@ -83,7 +83,7 @@ Induct on $k$ using part 1. For the identity map $P_1$, $P_1^*(\alpha)=\alpha$. 
 \[
 P_{k+1}^*(\alpha)=P_k^*(\alpha)+\alpha=(k+1)\alpha.
 \]
-On $S^3$, a generator of $H^3(S^3;\mathbb Z)$ is primitive for dimensional reasons. Hence the quaternionic power map $q\mapsto q^k$ has degree $k$.
+On $S^3$, a generator of $H^3(S^3;\ZZ)$ is primitive for dimensional reasons. Hence the quaternionic power map $q\mapsto q^k$ has degree $k$.
 
 :::
 
@@ -100,7 +100,7 @@ has a root.
 
 ::: pf-proof
 
-View $\mathbb H$ as $\mathbb R^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
+View $\mathbb H$ as $\RR^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
 \[
 \widehat P:S^4\to S^4.
 \]
@@ -111,7 +111,7 @@ P_t(x)=a_nx^nb_n+t(a_{n-1}x^{n-1}b_{n-1}+\cdots+a_0),
 \]
 shows that $\widehat P$ has the same degree as the leading map $x\mapsto a_nx^nb_n$.
 
-Left and right multiplication by a nonzero quaternion are orientation-preserving linear automorphisms of $\mathbb R^4$, so they have degree $+1$. Radially, the map $x\mapsto x^n$ has boundary map $S^3\to S^3$, $q\mapsto q^n$, whose degree is $n$ by part 2. Hence
+Left and right multiplication by a nonzero quaternion are orientation-preserving linear automorphisms of $\RR^4$, so they have degree $+1$. Radially, the map $x\mapsto x^n$ has boundary map $S^3\to S^3$, $q\mapsto q^n$, whose degree is $n$ by part 2. Hence
 \[
 \deg\widehat P=n\ne0.
 \]

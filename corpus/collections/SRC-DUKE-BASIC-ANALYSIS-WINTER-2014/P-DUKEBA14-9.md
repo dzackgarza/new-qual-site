@@ -22,9 +22,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb R^p$ be open and let $f:U\to\mathbb R^n$ be $C^1$. Suppose that for some $x_0\in U$, the derivative $Df_{x_0}$ has rank $p$. Prove that, after suitable local changes of coordinates near $x_0$ and $f(x_0)$, the map $f$ is the standard linear inclusion
+Let $U\subset\RR^p$ be open and let $f:U\to\RR^n$ be $C^1$. Suppose that for some $x_0\in U$, the derivative $Df_{x_0}$ has rank $p$. Prove that, after suitable local changes of coordinates near $x_0$ and $f(x_0)$, the map $f$ is the standard linear inclusion
 \[
-u\longmapsto (u,0)\in\mathbb R^p\times\mathbb R^{n-p}.
+u\longmapsto (u,0)\in\RR^p\times\RR^{n-p}.
 \]
 :::
 
@@ -36,9 +36,9 @@ u\longmapsto (u,0)\in\mathbb R^p\times\mathbb R^{n-p}.
 Choose $p$ target coordinates with an invertible Jacobian minor.
 
 ::: pf-proof
-Since $Df_{x_0}$ has rank $p$, some $p\times p$ minor is invertible. After permuting the coordinates of $\mathbb R^n$, assume it is the minor formed by the first $p$ components. Write
+Since $Df_{x_0}$ has rank $p$, some $p\times p$ minor is invertible. After permuting the coordinates of $\RR^n$, assume it is the minor formed by the first $p$ components. Write
 \[
-F=(f_1,\ldots,f_p):U\to\mathbb R^p.
+F=(f_1,\ldots,f_p):U\to\RR^p.
 \]
 Then $DF_{x_0}$ is invertible.
 :::
@@ -75,7 +75,7 @@ Near $(F(x_0),\phi(F(x_0)))=f(x_0)$ define
 \[
 \Psi(u,v)=(u,v-\phi(u)),
 \qquad
-(u,v)\in\mathbb R^p\times\mathbb R^{n-p}.
+(u,v)\in\RR^p\times\RR^{n-p}.
 \]
 Its derivative has block form
 \[

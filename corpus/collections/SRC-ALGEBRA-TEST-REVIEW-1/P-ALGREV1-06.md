@@ -63,7 +63,7 @@ x=ma+z,
 \qquad
 y=na+w,
 $$
-with $m,n\in\mathbb Z$ and $z,w\in Z(R)$. Since $z$ and $w$ commute with
+with $m,n\in\ZZ$ and $z,w\in Z(R)$. Since $z$ and $w$ commute with
 every element of $R$,
 $$
 \begin{aligned}

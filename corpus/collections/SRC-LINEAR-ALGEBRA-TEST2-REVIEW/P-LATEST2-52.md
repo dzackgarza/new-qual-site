@@ -95,7 +95,7 @@ The two eigenvalues of $A$ are $6$ and $4$.
 
 ::: pf-proof
 
-The vectors $v_+$ and $v_-$ are linearly independent, so they form a basis of $\mathbb R^2$.
+The vectors $v_+$ and $v_-$ are linearly independent, so they form a basis of $\RR^2$.
 Hence the corresponding eigenvalues account for both eigenvalues of the $2\times2$ matrix $A$.
 
 :::

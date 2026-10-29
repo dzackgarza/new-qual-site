@@ -113,7 +113,7 @@ R^TBRx=0.
 \]
 Because $R$ has rank $2$, the transpose
 \[
-R^T:\mathbb R^2\to\mathbb R^3
+R^T:\RR^2\to\RR^3
 \]
 also has rank $2$ and is therefore injective.
 Hence
@@ -145,7 +145,7 @@ Under the same hypothesis,
 
 Since $R$ has rank $2$ as a map
 \[
-\mathbb R^3\to\mathbb R^2,
+\RR^3\to\RR^2,
 \]
 rank-nullity gives
 \[
@@ -176,11 +176,11 @@ Under the same hypothesis, the quadratic form defined by $A$ takes both positive
 
 Since $R$ has rank $2$, it is onto
 \[
-\mathbb R^2.
+\RR^2.
 \]
 Choose
 \[
-x_+,x_-\in\mathbb R^3
+x_+,x_-\in\RR^3
 \]
 such that
 \[

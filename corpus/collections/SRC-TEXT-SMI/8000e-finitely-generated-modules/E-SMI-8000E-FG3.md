@@ -52,7 +52,7 @@ Determine the $2$-primary part in part (a).
 Let $G_{(2)}$ be the $2$-primary component. Since its order is $2^3$, its
 cyclic decomposition corresponds to a partition of $3$.
 
-For a cyclic summand $\mathbb Z/2^e$, the kernel of multiplication by $2$ has
+For a cyclic summand $\ZZ/2^e$, the kernel of multiplication by $2$ has
 one-dimensional $\mathbb F_2$-dimension, and
 $$
 \dim_{\mathbb F_2}
@@ -75,7 +75,7 @@ $$
 $$
 Hence
 $$
-\boxed{G_{(2)}\cong\mathbb Z/4\oplus\mathbb Z/2.}
+\boxed{G_{(2)}\cong\ZZ/4\oplus\ZZ/2.}
 $$
 
 :::
@@ -106,7 +106,7 @@ $$
 $$
 Therefore
 $$
-\boxed{G_{(3)}\cong\mathbb Z/9\oplus\mathbb Z/9.}
+\boxed{G_{(3)}\cong\ZZ/9\oplus\ZZ/9.}
 $$
 
 :::
@@ -123,8 +123,8 @@ Primary decomposition gives the unique group
 $$
 \boxed{
 G\cong
-\mathbb Z/4\oplus\mathbb Z/2
-\oplus\mathbb Z/9\oplus\mathbb Z/9.}
+\ZZ/4\oplus\ZZ/2
+\oplus\ZZ/9\oplus\ZZ/9.}
 $$
 It has the required order and the kernel conditions are immediate on each
 cyclic factor.
@@ -226,19 +226,19 @@ The $2$-primary component has order $2^3$ and exponent $2^3$. In its cyclic
 decomposition there must therefore be a cyclic factor of order $8$; that
 factor already accounts for the entire order of the $2$-primary component, so
 $$
-G_{(2)}\cong\mathbb Z/8.
+G_{(2)}\cong\ZZ/8.
 $$
 Similarly,
 $$
-G_{(3)}\cong\mathbb Z/81.
+G_{(3)}\cong\ZZ/81.
 $$
 Since $8$ and $81$ are coprime,
 $$
-\mathbb Z/8\oplus\mathbb Z/81\cong\mathbb Z/648.
+\ZZ/8\oplus\ZZ/81\cong\ZZ/648.
 $$
 Therefore the unique group is
 $$
-\boxed{G\cong\mathbb Z/648.}
+\boxed{G\cong\ZZ/648.}
 $$
 
 :::

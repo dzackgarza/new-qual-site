@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Can $A_4$ be mapped homomorphically onto $\mathbb Z/2\mathbb Z$?
+Can $A_4$ be mapped homomorphically onto $\ZZ/2\ZZ$?
 Justify your answer.
 :::
 

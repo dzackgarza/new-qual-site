@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n:[0,1]\to\mathbb R$ be continuous and suppose
+Let $f_n:[0,1]\to\RR$ be continuous and suppose
 \[
 \int_0^1f_n(y)^2\,dy\le5
 \]

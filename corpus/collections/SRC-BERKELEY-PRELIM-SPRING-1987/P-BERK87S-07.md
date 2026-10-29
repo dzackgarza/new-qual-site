@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $p,q,r$ be continuous real-valued functions on $\mathbb R$ with $p>0$. Prove that
+Let $p,q,r$ be continuous real-valued functions on $\RR$ with $p>0$. Prove that
 \[
 p(t)x''(t)+q(t)x'(t)+r(t)x(t)=0
 \]

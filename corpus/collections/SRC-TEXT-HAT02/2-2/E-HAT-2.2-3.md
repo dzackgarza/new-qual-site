@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Let $f: S^n \to S^n$ be a map of degree zero.
 Show that there exist points $x, y \in S^n$ with $f(x) = x$ and $f(y) = -y$.
-Use this to show that if $F$ is a continuous vector field defined on the unit ball $D^n$ in $\mathbb{R}^n$ such that $F(x) \neq 0$ for all $x$, then there exists a point on $\partial D^n$ where $F$ points radially outward and another point on $\partial D^n$ where $F$ points radially inward.
+Use this to show that if $F$ is a continuous vector field defined on the unit ball $D^n$ in $\RR^n$ such that $F(x) \neq 0$ for all $x$, then there exists a point on $\partial D^n$ where $F$ points radially outward and another point on $\partial D^n$ where $F$ points radially inward.
 :::
 
 ::: {.solution}
@@ -121,7 +121,7 @@ Application to continuous non-vanishing vector fields on $D^n$:
 ::: pf-proof
 
 ::: pf-step
-Let $F: D^n \to \mathbb{R}^n \setminus \{0\}$ be continuous.
+Let $F: D^n \to \RR^n \setminus \{0\}$ be continuous.
 Define the normalized map $\widetilde{F}: D^n \to S^{n-1}$ by $\widetilde{F}(z) = \frac{F(z)}{\|F(z)\|}$, and let $g = \widetilde{F}|_{\partial D^n}: S^{n-1} \to S^{n-1}$.
 
 ::: pf-proof

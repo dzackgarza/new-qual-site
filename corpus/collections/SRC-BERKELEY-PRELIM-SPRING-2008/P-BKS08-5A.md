@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $M$ be an $n\times n$ nilpotent matrix over $\mathbb C$. Let
+Let $M$ be an $n\times n$ nilpotent matrix over $\CC$. Let
 $$
-C(M)=\{A\in M_n(\mathbb C):AM=MA\}.
+C(M)=\{A\in M_n(\CC):AM=MA\}.
 $$
 Show that
 $$
-C(M)=\mathbb C[M]
+C(M)=\CC[M]
 $$
 if and only if the null space of $M$ has dimension one.
 :::

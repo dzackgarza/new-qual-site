@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF14E
 kind: problem
-title: Nilpotent matrices in $M_n(\mathbb{C})$ and similarity classes in $M_4(\mathbb{C})$
+title: Nilpotent matrices in $M_n(\CC)$ and similarity classes in $M_4(\CC)$
 classification:
   areas:
   - algebra
@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-(i) Suppose $x \in M_n(\mathbb{C})$ is a nilpotent matrix.
+(i) Suppose $x \in M_n(\CC)$ is a nilpotent matrix.
 Prove that $x^n = 0$.
 (Hint: think of the characteristic polynomial.)
 
-(ii) How many similarity classes are there of nilpotent matrices in $M_4(\mathbb{C})$?
+(ii) How many similarity classes are there of nilpotent matrices in $M_4(\CC)$?
 :::
 
 
@@ -39,7 +39,7 @@ Prove that $x^n = 0$.
 ::: pf
 
 ::: {.pf-step #eigenvalues-zero}
-If \(x\in M_n(\mathbb C)\) is nilpotent, then every eigenvalue of \(x\) is zero.
+If \(x\in M_n(\CC)\) is nilpotent, then every eigenvalue of \(x\) is zero.
 
 ::: pf-proof
 Choose \(m\ge1\) such that
@@ -63,7 +63,7 @@ Thus zero is the only eigenvalue of \(x\).
 The characteristic polynomial of \(x\) is \(t^n\), and therefore \(x^n=0\).
 
 ::: pf-proof
-Over \(\mathbb C\), the characteristic polynomial splits into linear factors and its roots are exactly the eigenvalues, counted with algebraic multiplicity.
+Over \(\CC\), the characteristic polynomial splits into linear factors and its roots are exactly the eigenvalues, counted with algebraic multiplicity.
 By step [](#eigenvalues-zero){.pf-ref} every eigenvalue is zero, so
 \[
 \chi_x(t)=t^n.
@@ -81,7 +81,7 @@ x^n=0.
 :::
 
 ::: pf-step
-Nilpotent similarity classes in \(M_4(\mathbb C)\) are in bijection with partitions of \(4\).
+Nilpotent similarity classes in \(M_4(\CC)\) are in bijection with partitions of \(4\).
 
 ::: pf-proof
 Every nilpotent complex matrix has Jordan canonical form consisting entirely of Jordan blocks
@@ -95,7 +95,7 @@ Thus a similarity class is determined exactly by a partition of the dimension \(
 :::
 
 ::: pf-step
-There are exactly five nilpotent similarity classes in \(M_4(\mathbb C)\).
+There are exactly five nilpotent similarity classes in \(M_4(\CC)\).
 
 ::: pf-proof
 The partitions of \(4\) are
@@ -131,7 +131,7 @@ Therefore there are
 \[
 5
 \]
-similarity classes of nilpotent matrices in \(M_4(\mathbb C)\).
+similarity classes of nilpotent matrices in \(M_4(\CC)\).
 :::
 
 :::

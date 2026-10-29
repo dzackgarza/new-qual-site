@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZKKJ
 kind: problem
-title: Units of $R[x]$ for reduced $R$, and units of $\mathbb{Z}_4[x]$
+title: Units of $R[x]$ for reduced $R$, and units of $\ZZ_4[x]$
 classification:
   areas:
   - algebra
@@ -23,7 +23,7 @@ audit:
 - Let $R$ be a commutative ring with no nonzero nilpotent elements.
   Show that the only units in the polynomial ring $R[x]$ are the units of $R$, regarded as constant polynomials.
 
-- Find all units in the polynomial ring $\mathbb Z_4[x]$.
+- Find all units in the polynomial ring $\ZZ_4[x]$.
 :::
 
 ::: {.solution}
@@ -71,13 +71,13 @@ By step [](#s1){.pf-ref}, all coefficients of positive degree vanish. Hence \(f=
 
 A polynomial
 \[
-f(x)=a_0+a_1x+\cdots+a_nx^n\in\mathbb Z_4[x]
+f(x)=a_0+a_1x+\cdots+a_nx^n\in\ZZ_4[x]
 \]
 is a unit only if \(a_0\) is odd and every \(a_i\) for \(i>0\) is even.
 
 ::: pf-proof
 
-Reduce modulo \(2\). The image of a unit of \(\mathbb Z_4[x]\) is a unit of \(\mathbb F_2[x]\), hence must equal the nonzero constant \(1\). Therefore
+Reduce modulo \(2\). The image of a unit of \(\ZZ_4[x]\) is a unit of \(\mathbb F_2[x]\), hence must equal the nonzero constant \(1\). Therefore
 \[
 a_0\equiv1\pmod2,
 \qquad
@@ -90,7 +90,7 @@ a_i\equiv0\pmod2\quad(i>0).
 
 ::: pf-step
 
-Conversely, every polynomial with odd constant coefficient and even positive-degree coefficients is a unit in \(\mathbb Z_4[x]\).
+Conversely, every polynomial with odd constant coefficient and even positive-degree coefficients is a unit in \(\ZZ_4[x]\).
 
 ::: pf-proof
 
@@ -118,7 +118,7 @@ since \((u^{-1}n(x))^2=0\).
 
 ::: pf-step
 
-Therefore the units of \(\mathbb Z_4[x]\) are exactly
+Therefore the units of \(\ZZ_4[x]\) are exactly
 
 :::
 

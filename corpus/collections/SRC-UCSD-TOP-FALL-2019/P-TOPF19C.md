@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the integer homology $H_*(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$.
+Compute the integer homology $H_*(\mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -36,9 +36,9 @@ Homology of the factor space $\mathbb{RP}^2$:
 
 The integer homology of the real projective plane $\mathbb{RP}^2$ is:
 \[
-H_k(\mathbb{RP}^2; \mathbb{Z}) \cong \begin{cases}
-\mathbb{Z} & k = 0, \\
-\mathbb{Z}_2 & k = 1, \\
+H_k(\mathbb{RP}^2; \ZZ) \cong \begin{cases}
+\ZZ & k = 0, \\
+\ZZ_2 & k = 1, \\
 0 & k \ge 2.
 \end{cases}
 \]
@@ -63,9 +63,9 @@ The Künneth Formula for homology:
 
 ::: pf-step
 
-By the Künneth Theorem for product spaces over PID $\mathbb{Z}$, there is a split short exact sequence:
+By the Künneth Theorem for product spaces over PID $\ZZ$, there is a split short exact sequence:
 \[
-0 \to \bigoplus_{i+j=n} H_i(\mathbb{RP}^2) \otimes_{\mathbb{Z}} H_j(\mathbb{RP}^2) \to H_n(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z}) \to \bigoplus_{i+j=n-1} \operatorname{Tor}_1^{\mathbb{Z}}(H_i(\mathbb{RP}^2), H_j(\mathbb{RP}^2)) \to 0.
+0 \to \bigoplus_{i+j=n} H_i(\mathbb{RP}^2) \otimes_{\ZZ} H_j(\mathbb{RP}^2) \to H_n(\mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ) \to \bigoplus_{i+j=n-1} \operatorname{Tor}_1^{\ZZ}(H_i(\mathbb{RP}^2), H_j(\mathbb{RP}^2)) \to 0.
 \]
 
 ::: pf-proof
@@ -90,13 +90,13 @@ Computation of each degree $n$:
 
 **Degree $n = 0$:**
 \[
-\bigoplus_{i+j=0} H_i \otimes H_j = H_0 \otimes H_0 \cong \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}, \quad \text{Tor term} = 0.
+\bigoplus_{i+j=0} H_i \otimes H_j = H_0 \otimes H_0 \cong \ZZ \otimes \ZZ \cong \ZZ, \quad \text{Tor term} = 0.
 \]
-Thus $H_0(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \mathbb{Z}$.
+Thus $H_0(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \ZZ$.
 
 ::: pf-proof
 
-connected space has $H_0 \cong \mathbb{Z}$.
+connected space has $H_0 \cong \ZZ$.
 
 :::
 
@@ -106,14 +106,14 @@ connected space has $H_0 \cong \mathbb{Z}$.
 
 **Degree $n = 1$:**
 \[
-\bigoplus_{i+j=1} H_i \otimes H_j = (H_0 \otimes H_1) \oplus (H_1 \otimes H_0) \cong (\mathbb{Z} \otimes \mathbb{Z}_2) \oplus (\mathbb{Z}_2 \otimes \mathbb{Z}) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2.
+\bigoplus_{i+j=1} H_i \otimes H_j = (H_0 \otimes H_1) \oplus (H_1 \otimes H_0) \cong (\ZZ \otimes \ZZ_2) \oplus (\ZZ_2 \otimes \ZZ) \cong \ZZ_2 \oplus \ZZ_2.
 \]
-The Tor term is $\operatorname{Tor}(H_0, H_0) = \operatorname{Tor}(\mathbb{Z}, \mathbb{Z}) = 0$.
-Thus $H_1(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2$.
+The Tor term is $\operatorname{Tor}(H_0, H_0) = \operatorname{Tor}(\ZZ, \ZZ) = 0$.
+Thus $H_1(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \ZZ_2 \oplus \ZZ_2$.
 
 ::: pf-proof
 
-tensor product with $\mathbb{Z}$.
+tensor product with $\ZZ$.
 
 :::
 
@@ -123,14 +123,14 @@ tensor product with $\mathbb{Z}$.
 
 **Degree $n = 2$:**
 \[
-\bigoplus_{i+j=2} H_i \otimes H_j = (H_0 \otimes H_2) \oplus (H_1 \otimes H_1) \oplus (H_2 \otimes H_0) = 0 \oplus (\mathbb{Z}_2 \otimes \mathbb{Z}_2) \oplus 0 \cong \mathbb{Z}_2.
+\bigoplus_{i+j=2} H_i \otimes H_j = (H_0 \otimes H_2) \oplus (H_1 \otimes H_1) \oplus (H_2 \otimes H_0) = 0 \oplus (\ZZ_2 \otimes \ZZ_2) \oplus 0 \cong \ZZ_2.
 \]
-The Tor term is $\operatorname{Tor}(H_0, H_1) \oplus \operatorname{Tor}(H_1, H_0) \cong \operatorname{Tor}(\mathbb{Z}, \mathbb{Z}_2) \oplus \operatorname{Tor}(\mathbb{Z}_2, \mathbb{Z}) = 0$.
-Thus $H_2(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \mathbb{Z}_2$.
+The Tor term is $\operatorname{Tor}(H_0, H_1) \oplus \operatorname{Tor}(H_1, H_0) \cong \operatorname{Tor}(\ZZ, \ZZ_2) \oplus \operatorname{Tor}(\ZZ_2, \ZZ) = 0$.
+Thus $H_2(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \ZZ_2$.
 
 ::: pf-proof
 
-$\mathbb{Z}_2 \otimes \mathbb{Z}_2 \cong \mathbb{Z}_2$ and $\mathbb{Z}$ is torsion-free.
+$\ZZ_2 \otimes \ZZ_2 \cong \ZZ_2$ and $\ZZ$ is torsion-free.
 
 :::
 
@@ -142,13 +142,13 @@ $\mathbb{Z}_2 \otimes \mathbb{Z}_2 \cong \mathbb{Z}_2$ and $\mathbb{Z}$ is torsi
 The tensor term is $\bigoplus_{i+j=3} H_i \otimes H_j = 0$ since $H_k = 0$ for all $k \ge 2$.
 The Tor term is:
 \[
-\bigoplus_{i+j=2} \operatorname{Tor}_1^{\mathbb{Z}}(H_i, H_j) = \operatorname{Tor}_1^{\mathbb{Z}}(H_1, H_1) \cong \operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}_2, \mathbb{Z}_2) \cong \mathbb{Z}_2.
+\bigoplus_{i+j=2} \operatorname{Tor}_1^{\ZZ}(H_i, H_j) = \operatorname{Tor}_1^{\ZZ}(H_1, H_1) \cong \operatorname{Tor}_1^{\ZZ}(\ZZ_2, \ZZ_2) \cong \ZZ_2.
 \]
-Thus $H_3(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \mathbb{Z}_2$.
+Thus $H_3(\mathbb{RP}^2 \times \mathbb{RP}^2) \cong \ZZ_2$.
 
 ::: pf-proof
 
-$\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}_m, \mathbb{Z}_n) \cong \mathbb{Z}_{\gcd(m,n)}$.
+$\operatorname{Tor}_1^{\ZZ}(\ZZ_m, \ZZ_n) \cong \ZZ_{\gcd(m,n)}$.
 
 :::
 
@@ -176,11 +176,11 @@ dimension and Künneth vanishings.
 
 Conclusion:
 \[
-H_n(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z}) \cong \begin{cases}
-\mathbb{Z} & n = 0, \\
-\mathbb{Z}_2 \oplus \mathbb{Z}_2 & n = 1, \\
-\mathbb{Z}_2 & n = 2, \\
-\mathbb{Z}_2 & n = 3, \\
+H_n(\mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ) \cong \begin{cases}
+\ZZ & n = 0, \\
+\ZZ_2 \oplus \ZZ_2 & n = 1, \\
+\ZZ_2 & n = 2, \\
+\ZZ_2 & n = 3, \\
 0 & n \ge 4.
 \end{cases}
 \]

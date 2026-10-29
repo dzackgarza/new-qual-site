@@ -44,11 +44,11 @@ Choose generators $m_1,\ldots,m_t$ for the nonzero module $M$. Since $M$ is tors
 
 ::: {.pf-step #s2}
 
-The $\mathbb Z$-module
+The $\ZZ$-module
 \[
-\boxed{N=\bigoplus_{p\text{ prime}}\mathbb Z/p\mathbb Z}
+\boxed{N=\bigoplus_{p\text{ prime}}\ZZ/p\ZZ}
 \]
-is torsion, is not finitely generated, and has $\operatorname{Ann}_{\mathbb Z}(N)=(0)$.
+is torsion, is not finitely generated, and has $\operatorname{Ann}_{\ZZ}(N)=(0)$.
 
 ::: pf-proof
 
@@ -56,7 +56,7 @@ Every element of $N$ has finite support, say at the primes $p_1,\ldots,p_s$. Mul
 
 If $n_1,\ldots,n_t$ generated $N$, the union of their finite supports would be a finite set $S$ of primes. Every linear combination would vanish outside $S$, while $N$ has a nonzero element supported at any prime outside $S$. Since there are infinitely many primes, this is a contradiction; hence $N$ is not finitely generated.
 
-If $a\in\mathbb Z$ annihilates $N$, then its action on the summand $\mathbb Z/p\mathbb Z$ is zero for every prime $p$, so every prime divides $a$. A nonzero integer has only finitely many prime divisors, forcing $a=0$. Conversely, zero annihilates $N$. Therefore $\operatorname{Ann}_{\mathbb Z}(N)=(0)$.
+If $a\in\ZZ$ annihilates $N$, then its action on the summand $\ZZ/p\ZZ$ is zero for every prime $p$, so every prime divides $a$. A nonzero integer has only finitely many prime divisors, forcing $a=0$. Conversely, zero annihilates $N$. Therefore $\operatorname{Ann}_{\ZZ}(N)=(0)$.
 
 :::
 

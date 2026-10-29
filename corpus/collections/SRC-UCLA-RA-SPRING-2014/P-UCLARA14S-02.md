@@ -17,21 +17,21 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$ and $\beta\in(0,1)$.
+Let $f\in L^1(\RR)$ and $\beta\in(0,1)$.
 Prove that
 \[
-\int_{\mathbb R}\frac{|f(x)|}{|x-a|^\beta}\,dx<\infty
+\int_{\RR}\frac{|f(x)|}{|x-a|^\beta}\,dx<\infty
 \]
-for Lebesgue-almost every $a\in\mathbb R$.
+for Lebesgue-almost every $a\in\RR$.
 :::
 
 ::: {.solution}
 
-For $a\in\mathbb R$, define
+For $a\in\RR$, define
 \[
 F(a)
 \coloneqq
-\int_{\mathbb R}
+\int_{\RR}
 \frac{|f(x)|}{|x-a|^\beta}\,dx
 \in[0,\infty].
 \]
@@ -46,9 +46,9 @@ w(a)
 
 ::: {.pf-step #s1-1}
 
-There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\mathbb R$,
+There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\RR$,
 \[
-\int_{\mathbb R}
+\int_{\RR}
 \frac{w(a)}{|x-a|^\beta}\,da
 \le
 C_\beta.
@@ -75,7 +75,7 @@ On the second region, $|x-a|^{-\beta}\le1$, hence
 \int_{|a-x|\ge1}
 \frac{w(a)}{|x-a|^\beta}\,da
 \le
-\int_{\mathbb R}\frac{da}{1+a^2}
+\int_{\RR}\frac{da}{1+a^2}
 =
 \pi.
 \]
@@ -94,9 +94,9 @@ C_\beta
 
 One has
 \[
-\int_{\mathbb R}w(a)F(a)\,da
+\int_{\RR}w(a)F(a)\,da
 \le
-C_\beta\|f\|_{L^1(\mathbb R)}
+C_\beta\|f\|_{L^1(\RR)}
 <
 \infty.
 \]
@@ -113,28 +113,28 @@ w(a)\frac{|f(x)|}{|x-a|^\beta}
 is nonnegative and measurable. Tonelli's theorem therefore gives
 \[
 \begin{aligned}
-\int_{\mathbb R}w(a)F(a)\,da
+\int_{\RR}w(a)F(a)\,da
 &=
-\int_{\mathbb R}
-\int_{\mathbb R}
+\int_{\RR}
+\int_{\RR}
 w(a)\frac{|f(x)|}{|x-a|^\beta}\,dx\,da\\
 &=
-\int_{\mathbb R}
+\int_{\RR}
 |f(x)|
 \left(
-\int_{\mathbb R}
+\int_{\RR}
 \frac{w(a)}{|x-a|^\beta}\,da
 \right)dx.
 \end{aligned}
 \]
 Apply step [](#s1-1){.pf-ref} to the inner integral:
 \[
-\int_{\mathbb R}w(a)F(a)\,da
+\int_{\RR}w(a)F(a)\,da
 \le
 C_\beta
-\int_{\mathbb R}|f(x)|\,dx.
+\int_{\RR}|f(x)|\,dx.
 \]
-The right-hand side is finite because $f\in L^1(\mathbb R)$.
+The right-hand side is finite because $f\in L^1(\RR)$.
 
 :::
 
@@ -146,14 +146,14 @@ The set
 \[
 E
 \coloneqq
-\{a\in\mathbb R:F(a)=\infty\}
+\{a\in\RR:F(a)=\infty\}
 \]
 has Lebesgue measure zero.
 
 
 ::: pf-proof
 
-The weight $w(a)=(1+a^2)^{-1}$ is strictly positive for every $a\in\mathbb R$. If $E$ had positive measure, then
+The weight $w(a)=(1+a^2)^{-1}$ is strictly positive for every $a\in\RR$. If $E$ had positive measure, then
 \[
 w(a)F(a)=\infty
 \qquad
@@ -161,7 +161,7 @@ w(a)F(a)=\infty
 \]
 so the nonnegative integral
 \[
-\int_{\mathbb R}w(a)F(a)\,da
+\int_{\RR}w(a)F(a)\,da
 \]
 would be infinite. This contradicts step [](#s1-2){.pf-ref}. Hence $m(E)=0$.
 
@@ -174,13 +174,13 @@ would be infinite. This contradicts step [](#s1-2){.pf-ref}. Hence $m(E)=0$.
 Therefore
 \[
 \boxed{
-\int_{\mathbb R}
+\int_{\RR}
 \frac{|f(x)|}{|x-a|^\beta}\,dx
 <
 \infty
 }
 \]
-for Lebesgue-almost every $a\in\mathbb R$.
+for Lebesgue-almost every $a\in\RR$.
 
 
 ::: pf-proof

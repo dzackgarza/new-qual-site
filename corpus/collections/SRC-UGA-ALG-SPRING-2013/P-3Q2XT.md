@@ -35,7 +35,7 @@ A Euclidean domain is an integral domain admitting a division function with a st
 
 ::: pf-step
 
-An integral domain $R$ is a Euclidean domain if there exists a function $N: R \setminus \{0\} \to \mathbb{Z}_{\ge 0}$ (called a Euclidean norm or degree function) satisfying the division algorithm:
+An integral domain $R$ is a Euclidean domain if there exists a function $N: R \setminus \{0\} \to \ZZ_{\ge 0}$ (called a Euclidean norm or degree function) satisfying the division algorithm:
 
 :::
 
@@ -91,7 +91,7 @@ Every Euclidean domain is a UFD.
 ::: pf-step
 
 Substep 1: Every Euclidean domain $R$ is a Principal Ideal Domain (PID).
-        *Proof:* Let $I \subseteq R$ be an ideal. If $I = \{0\}$, then $I = \langle 0 \rangle$ is principal. If $I \ne \{0\}$, the set $\{N(x) : x \in I \setminus \{0\}\} \subset \mathbb{Z}_{\ge 0}$ is non-empty and has a minimal element; choose $b \in I \setminus \{0\}$ achieving this minimal norm. For any $a \in I$, write $a = b q + r$ with $r = 0$ or $N(r) < N(b)$. Since $r = a - b q \in I$, minimality of $N(b)$ forces $r = 0$, so $a = b q \in \langle b \rangle$. Thus $I = \langle b \rangle$.
+        *Proof:* Let $I \subseteq R$ be an ideal. If $I = \{0\}$, then $I = \langle 0 \rangle$ is principal. If $I \ne \{0\}$, the set $\{N(x) : x \in I \setminus \{0\}\} \subset \ZZ_{\ge 0}$ is non-empty and has a minimal element; choose $b \in I \setminus \{0\}$ achieving this minimal norm. For any $a \in I$, write $a = b q + r$ with $r = 0$ or $N(r) < N(b)$. Since $r = a - b q \in I$, minimality of $N(b)$ forces $r = 0$, so $a = b q \in \langle b \rangle$. Thus $I = \langle b \rangle$.
 
 :::
 
@@ -128,37 +128,37 @@ Therefore, every Euclidean domain is a UFD.
 
 ::: {.pf-step #s4}
 
-The UFD $\mathbb C[x,y]$ is not a Euclidean domain.
+The UFD $\CC[x,y]$ is not a Euclidean domain.
 
 ::: pf-proof
 
 ::: pf-step
 
-Consider the ring of polynomials in two variables $R = \mathbb{C}[x, y]$.
+Consider the ring of polynomials in two variables $R = \CC[x, y]$.
 
 :::
 
 ::: pf-step
 
-Since $\mathbb{C}$ is a field, $\mathbb{C}[x]$ is a Euclidean domain, hence a UFD. By Gauss's Lemma, polynomial rings over UFDs are UFDs, so $R = \mathbb{C}[x, y] = (\mathbb{C}[x])[y]$ is a UFD.
+Since $\CC$ is a field, $\CC[x]$ is a Euclidean domain, hence a UFD. By Gauss's Lemma, polynomial rings over UFDs are UFDs, so $R = \CC[x, y] = (\CC[x])[y]$ is a UFD.
 
 :::
 
 ::: pf-step
 
-However, the ideal $I = \langle x, y \rangle \subset \mathbb{C}[x, y]$ is not principal: any generator $d$ of $\langle x, y \rangle$ must divide both $x$ and $y$, forcing $d \in \mathbb{C}^\times$, which would mean $\langle x, y \rangle = \mathbb{C}[x, y]$, a contradiction since the evaluation at the origin gives $\mathbb{C}[x, y]/\langle x, y \rangle \cong \mathbb{C} \ne 0$.
+However, the ideal $I = \langle x, y \rangle \subset \CC[x, y]$ is not principal: any generator $d$ of $\langle x, y \rangle$ must divide both $x$ and $y$, forcing $d \in \CC^\times$, which would mean $\langle x, y \rangle = \CC[x, y]$, a contradiction since the evaluation at the origin gives $\CC[x, y]/\langle x, y \rangle \cong \CC \ne 0$.
 
 :::
 
 ::: pf-step
 
-Thus $\mathbb{C}[x, y]$ is not a PID.
+Thus $\CC[x, y]$ is not a PID.
 
 :::
 
 ::: pf-step
 
-Since every Euclidean domain is a PID by step [](#s3){.pf-ref}, $\mathbb{C}[x, y]$ cannot be a Euclidean domain.
+Since every Euclidean domain is a PID by step [](#s3){.pf-ref}, $\CC[x, y]$ cannot be a Euclidean domain.
 
 :::
 

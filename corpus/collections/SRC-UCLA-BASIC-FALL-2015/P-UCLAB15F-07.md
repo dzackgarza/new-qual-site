@@ -30,11 +30,11 @@ For each possible rank, give explicit matrices realizing it, and prove that all 
 
 Regard
 \[
-B:\mathbb R^5\to\mathbb R^4
+B:\RR^5\to\RR^4
 \]
 and
 \[
-A^T:\mathbb R^4\to\mathbb R^5.
+A^T:\RR^4\to\RR^5.
 \]
 
 ::: pf
@@ -85,7 +85,7 @@ The rank of $C=A^TB$ is
 
 Restrict $A^T$ to the three-dimensional subspace
 \[
-\operatorname{im}B\subseteq\mathbb R^4.
+\operatorname{im}B\subseteq\RR^4.
 \]
 Then
 \[

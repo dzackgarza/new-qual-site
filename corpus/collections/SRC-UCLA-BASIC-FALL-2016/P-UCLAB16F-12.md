@@ -39,7 +39,7 @@ $$
 Assume first that $f$ is convex.
 Fix
 \[
-x,y\in\mathbb R
+x,y\in\RR
 \]
 and define
 \[
@@ -158,7 +158,7 @@ f(y)
 f(x)+(y-x)f'(x)
 }
 \]
-for all $x,y\in\mathbb R$.
+for all $x,y\in\RR$.
 
 
 ::: pf-proof
@@ -188,10 +188,10 @@ f(y)
 \ge
 f(x)+(y-x)f'(x)
 \]
-for all $x,y\in\mathbb R$.
+for all $x,y\in\RR$.
 Fix
 \[
-x,y\in\mathbb R,
+x,y\in\RR,
 \qquad
 0\le t\le1,
 \]
@@ -315,7 +315,7 @@ Therefore
 f\text{ is convex}
 \iff
 f(y)\ge f(x)+(y-x)f'(x)
-\text{ for all }x,y\in\mathbb R
+\text{ for all }x,y\in\RR
 }.
 \]
 

@@ -60,7 +60,7 @@ $f$ has only finitely many poles.
 
 ::: pf-proof
 By step [](#no-poles-outside-disk){.pf-ref} every pole lies in the compact disc $\{|z|\le R\}$.
-The poles of a meromorphic function have no accumulation point in $\mathbb C$, so a compact set contains only finitely many of them.
+The poles of a meromorphic function have no accumulation point in $\CC$, so a compact set contains only finitely many of them.
 :::
 
 :::

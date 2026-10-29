@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-For $v=(v_1,\ldots,v_n)\in\mathbb R^n$, let
+For $v=(v_1,\ldots,v_n)\in\RR^n$, let
 \[
 \|v\|=\left(\sum_{j=1}^n|v_j|^2\right)^{1/2}.
 \]
-If $f=(f_1,\ldots,f_n)\colon[a,b]\to\mathbb R^n$ is continuous, define
+If $f=(f_1,\ldots,f_n)\colon[a,b]\to\RR^n$ is continuous, define
 \[
 \int_a^b f(t)\,dt
 =\left(\int_a^b f_1(t)\,dt,\ldots,\int_a^b f_n(t)\,dt\right).
@@ -36,7 +36,7 @@ Prove that
 
 Let
 \[
-I=\int_a^b f(t)\,dt\in\mathbb R^n.
+I=\int_a^b f(t)\,dt\in\RR^n.
 \]
 
 ::: pf

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Suppose that $A,B\in M_{n,n}(\mathbb C)$.
+Problem 4. Suppose that $A,B\in M_{n,n}(\CC)$.
 Show that the characteristic polynomials of $AB$ and $BA$ are equal.
 
 Hint: One approach is to first show that it holds when $B$ is invertible.
@@ -84,7 +84,7 @@ Matrix multiplication and determinant are polynomial operations in matrix entrie
 
 ::: {.pf-step #s1-4}
 
-Invertible matrices are dense in $M_n(\mathbb C)$.
+Invertible matrices are dense in $M_n(\CC)$.
 
 
 ::: pf-proof

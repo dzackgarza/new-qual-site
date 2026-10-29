@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Set $E = \bigcup_{m \in \mathbb{Z}} [2m, 2m+1)$ and $P = \chi_E - \chi_{\mathbb{R} \setminus E}$, so that $P(x)$ is $1$ if the greatest integer less than or equal to $x$ is even and is $-1$ if it is odd.
+Set $E = \bigcup_{m \in \ZZ} [2m, 2m+1)$ and $P = \chi_E - \chi_{\RR \setminus E}$, so that $P(x)$ is $1$ if the greatest integer less than or equal to $x$ is even and is $-1$ if it is odd.
 Define $S_n(x) = P(10^n x)$.
-Prove that for every $f \in L^1(\mathbb{R})$
+Prove that for every $f \in L^1(\RR)$
 $$
-\int_\mathbb{R} S_n(x) f(x) \, dx \to 0 \quad \text{as } n \to \infty.
+\int_\RR S_n(x) f(x) \, dx \to 0 \quad \text{as } n \to \infty.
 $$
 :::
 
@@ -65,14 +65,14 @@ Because the integral over every full period is zero, $F_n$ is periodic with the 
 
 ::: {.pf-step #s2}
 
-$\int_{\mathbb R}S_n\varphi\to0$ for every $\varphi\in C_c^1(\mathbb R)$.
+$\int_{\RR}S_n\varphi\to0$ for every $\varphi\in C_c^1(\RR)$.
 
 ::: pf-proof
 
-Let $\varphi\in C_c^1(\mathbb R)$. Since $F_n'=S_n$ almost everywhere and $\varphi$ has compact support, integration by parts gives
+Let $\varphi\in C_c^1(\RR)$. Since $F_n'=S_n$ almost everywhere and $\varphi$ has compact support, integration by parts gives
 \[
-\int_{\mathbb R}S_n(x)\varphi(x)\,dx
-=-\int_{\mathbb R}F_n(x)\varphi'(x)\,dx.
+\int_{\RR}S_n(x)\varphi(x)\,dx
+=-\int_{\RR}F_n(x)\varphi'(x)\,dx.
 \]
 Hence
 \[
@@ -88,11 +88,11 @@ Hence
 
 ::: pf-step
 
-$\int_{\mathbb R}S_nf\to0$ for every $f\in L^1(\mathbb R)$.
+$\int_{\RR}S_nf\to0$ for every $f\in L^1(\RR)$.
 
 ::: pf-proof
 
-Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $\varphi\in C_c^1(\mathbb R)$ such that
+Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Choose $\varphi\in C_c^1(\RR)$ such that
 \[
 \|f-\varphi\|_1<\varepsilon.
 \]
@@ -111,7 +111,7 @@ Therefore
 \]
 for all sufficiently large $n$. Since $\varepsilon$ is arbitrary,
 \[
-\boxed{\int_{\mathbb R}S_n(x)f(x)\,dx\longrightarrow0.}
+\boxed{\int_{\RR}S_n(x)f(x)\,dx\longrightarrow0.}
 \]
 
 :::

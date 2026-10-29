@@ -50,7 +50,7 @@ Then every element of $G$ has the form
 \[
 g^m z
 \]
-with $m\in\mathbb Z$ and $z\in Z(G)$. Hence if
+with $m\in\ZZ$ and $z\in Z(G)$. Hence if
 \[
 x=g^m z_1,\qquad y=g^n z_2,
 \]

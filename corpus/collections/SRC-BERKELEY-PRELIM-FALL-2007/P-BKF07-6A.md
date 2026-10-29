@@ -32,7 +32,7 @@ f(z)=z^4+\frac{z^3}{4}-\frac14.
 \]
 How many zeros does \(f\) have in
 \[
-\left\{z\in\mathbb C:\frac12<|z|<1\right\}?
+\left\{z\in\CC:\frac12<|z|<1\right\}?
 \]
 :::
 

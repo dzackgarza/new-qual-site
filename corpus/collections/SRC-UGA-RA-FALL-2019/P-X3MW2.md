@@ -30,9 +30,9 @@ $$
 \sum_{n=1}^{\infty} |\langle x, u_n \rangle|^2 \le \|x\|^2.
 $$
 
-(b) Prove that for any sequence $(a_n)_{n=1}^\infty \in \ell^2(\mathbb{N})$, there exists an element $x \in \mathcal{H}$ such that
+(b) Prove that for any sequence $(a_n)_{n=1}^\infty \in \ell^2(\NN)$, there exists an element $x \in \mathcal{H}$ such that
 $$
-a_n = \langle x, u_n \rangle \quad \text{for all } n \in \mathbb{N},
+a_n = \langle x, u_n \rangle \quad \text{for all } n \in \NN,
 $$
 and
 $$
@@ -51,7 +51,7 @@ Part (a): Bessel's inequality $\sum_{n=1}^\infty |\langle x, u_n \rangle|^2 \le 
 ::: pf-proof
 
 ::: pf-step
-Let $N \in \mathbb{N}$ and consider the $N$-th partial sum $S_N = \sum_{n=1}^N \langle x, u_n \rangle u_n \in \mathcal{H}$.
+Let $N \in \NN$ and consider the $N$-th partial sum $S_N = \sum_{n=1}^N \langle x, u_n \rangle u_n \in \mathcal{H}$.
 
 :::
 
@@ -87,7 +87,7 @@ $$\sum_{n=1}^N |\langle x, u_n \rangle|^2 \le \|x\|^2.$$
 :::
 
 ::: pf-step
-Since this holds for every $N \in \mathbb{N}$ and the sequence of partial sums of non-negative terms is non-decreasing, taking the limit as $N \to \infty$ gives
+Since this holds for every $N \in \NN$ and the sequence of partial sums of non-negative terms is non-decreasing, taking the limit as $N \to \infty$ gives
 $$\sum_{n=1}^\infty |\langle x, u_n \rangle|^2 \le \|x\|^2.$$
 
 :::
@@ -102,7 +102,7 @@ Part (b): Existence of $x \in \mathcal{H}$ with $\langle x, u_n \rangle = a_n$ a
 ::: pf-proof
 
 ::: pf-step
-Let $(a_n)_{n=1}^\infty \in \ell^2(\mathbb{N})$, so $\sum_{n=1}^\infty |a_n|^2 < \infty$.
+Let $(a_n)_{n=1}^\infty \in \ell^2(\NN)$, so $\sum_{n=1}^\infty |a_n|^2 < \infty$.
 
 :::
 
@@ -118,7 +118,7 @@ $$\|s_M - s_N\|^2 = \left\| \sum_{n=N+1}^M a_n u_n \right\|^2 = \sum_{n=N+1}^M |
 :::
 
 ::: pf-step
-Since the series $\sum_{n=1}^\infty |a_n|^2$ converges in $\mathbb{R}$, its tail sum $\sum_{n=N+1}^M |a_n|^2 \to 0$ as $N, M \to \infty$.
+Since the series $\sum_{n=1}^\infty |a_n|^2$ converges in $\RR$, its tail sum $\sum_{n=N+1}^M |a_n|^2 \to 0$ as $N, M \to \infty$.
 
 :::
 
@@ -133,9 +133,9 @@ By completeness of $\mathcal{H}$, there exists a limit element $x = \lim_{N \to 
 :::
 
 ::: pf-step
-Coefficients of $x$: For each fixed $m \in \mathbb{N}$, by the continuity of the inner product in $\mathcal{H}$:
+Coefficients of $x$: For each fixed $m \in \NN$, by the continuity of the inner product in $\mathcal{H}$:
 $$\langle x, u_m \rangle = \left\langle \lim_{N \to \infty} s_N, u_m \right\rangle = \lim_{N \to \infty} \langle s_N, u_m \rangle = \lim_{N \to \infty} \sum_{n=1}^N a_n \langle u_n, u_m \rangle.$$
-For all $N \ge m$, $\sum_{n=1}^N a_n \delta_{n, m} = a_m$. Thus $\langle x, u_m \rangle = a_m$ for all $m \in \mathbb{N}$.
+For all $N \ge m$, $\sum_{n=1}^N a_n \delta_{n, m} = a_m$. Thus $\langle x, u_m \rangle = a_m$ for all $m \in \NN$.
 
 :::
 

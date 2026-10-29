@@ -71,7 +71,7 @@ These are the standard Darboux sums associated to a bounded function and a parti
 
 A bounded function
 \[
-f:[0,1]\to\mathbb R
+f:[0,1]\to\RR
 \]
 is Riemann integrable if
 \[

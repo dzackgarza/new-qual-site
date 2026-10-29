@@ -16,9 +16,9 @@ audit:
 ::: {.problem}
 Show that the set
 \[
-\{A\in M_n(\mathbb C):\det A\ne0\}
+\{A\in M_n(\CC):\det A\ne0\}
 \]
-is dense in $M_n(\mathbb C)$.
+is dense in $M_n(\CC)$.
 :::
 
 ::: {.solution}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W4-10
 kind: problem
-title: Solution sets of second-order equations that are subspaces of $C(\mathbb R)$
+title: Solution sets of second-order equations that are subspaces of $C(\RR)$
 classification:
   areas:
   - applied-algebra

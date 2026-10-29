@@ -22,7 +22,7 @@ $$
 E [ \phi ] = \int d ^ { d } x \left( \frac { 1 } { 2 } K _ { a b } ( \phi ) \sum _ { i = 1 } ^ { d } \partial _ { i } \phi ^ { a } \partial _ { i } \phi ^ { b } + V ( \phi ) \right) ,\tag{20}
 $$
 
-where $\phi = \phi ( x _ { 1 } , . . . , x _ { d } ) \in C ^ { 2 } ( \mathbb { R } ^ { d } ) , K _ { a b } ( \phi )$ is a positive-definite matrix for any $\phi ,$ i.e.,
+where $\phi = \phi ( x _ { 1 } , . . . , x _ { d } ) \in C ^ { 2 } ( \RR ^ { d } ) , K _ { a b } ( \phi )$ is a positive-definite matrix for any $\phi ,$ i.e.,
 
 $$
 K _ { a b } ( \phi ) \partial _ { i } \phi ^ { a } \partial _ { j } \phi ^ { b } \geqslant 0 ,\tag{21}

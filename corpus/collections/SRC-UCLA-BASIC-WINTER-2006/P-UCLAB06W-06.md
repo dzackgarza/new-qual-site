@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Let $-\infty<a<b<\infty$.
-Prove that a continuous function $f:[a,b]\to\mathbb R$ attains all values in $[f(a),f(b)]$.
+Prove that a continuous function $f:[a,b]\to\RR$ attains all values in $[f(a),f(b)]$.
 :::
 
 ::: {.solution}

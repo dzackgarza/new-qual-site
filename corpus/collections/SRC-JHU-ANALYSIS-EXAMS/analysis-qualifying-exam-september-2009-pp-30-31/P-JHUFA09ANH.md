@@ -29,14 +29,14 @@ audit:
 8. Let h be a harmonic function on the punctured disk
 
 $$
-U : = \left\{ z \in \mathbb { C } : 0 < | z | < 1 \right\} .
+U : = \left\{ z \in \CC : 0 < | z | < 1 \right\} .
 $$
 
-Show that there exists a constant $c \in \mathbb { R }$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
+Show that there exists a constant $c \in \RR$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
 :::
 
 ::: {.solution}
-Let $L=\{w\in\mathbb C:\operatorname{Re}w<0\}$.
+Let $L=\{w\in\CC:\operatorname{Re}w<0\}$.
 The exponential maps $L$ onto $U$, and two points of
 $L$ have the same exponential exactly when their difference
 is $2\pi i k$ for an integer $k$.
@@ -78,13 +78,13 @@ The function $A(w)=H(w+2\pi i)-H(w)$ is holomorphic on $L$.
 Since $e^{w+2\pi i}=e^w$, it has real part zero. The
 Cauchy–Riemann equations then force its imaginary part
 to have both partial derivatives zero. Connectedness of
-$L$ implies $A(w)=i\beta$ for a fixed $\beta\in\mathbb R$.
+$L$ implies $A(w)=i\beta$ for a fixed $\beta\in\RR$.
 Set $c=-\beta/(2\pi)$ and $G(w)=H(w)+cw$. Then
 $$
 G(w+2\pi i)-G(w)=i\beta+2\pi ic=0.
 $$
 Iteration in both directions makes $G$ invariant under
-every translation by $2\pi ik$, $k\in\mathbb Z$.
+every translation by $2\pi ik$, $k\in\ZZ$.
 
 :::
 

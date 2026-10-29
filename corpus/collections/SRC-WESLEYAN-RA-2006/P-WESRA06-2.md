@@ -26,7 +26,7 @@ Let $N$ be a real vector space.
 
 1. Define a norm on $N$.
 
-2. When $N=\mathbb R$ and $0<p<\infty$, determine for which $p$ the formula
+2. When $N=\RR$ and $0<p<\infty$, determine for which $p$ the formula
    \[
    \|x\|_p:=|x|^p
    \]
@@ -73,14 +73,14 @@ If $\|x\|_p=|x|^p$ is a norm, absolute homogeneity requires
 \[
 |ax|^p=|a|\,|x|^p
 \]
-for every $a,x\in\mathbb R$.
+for every $a,x\in\RR$.
 Taking $x=1$ and $a=2$ gives
 \[
 2^p=2,
 \]
 so $p=1$.
 
-Conversely, when $p=1$, the formula is the usual absolute-value norm on $\mathbb R$.
+Conversely, when $p=1$, the formula is the usual absolute-value norm on $\RR$.
 Hence
 \[
 \boxed{\|x\|_p=|x|^p\text{ is a norm exactly when }p=1.}

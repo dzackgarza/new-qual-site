@@ -33,7 +33,7 @@ Let $E_{n,p}$ denote the splitting field of $\Phi_n(x)$ over $\mathbb{F}_p$.
 
 (b) Prove that $\operatorname{Gal}(E_{n,p}/\mathbb{F}_p)$ can be embedded into the group of automorphisms of $\langle\zeta\rangle$, where $\zeta$ is the element given in Part (a).
 
-(c) Prove that $\operatorname{Gal}(E_{n,p}/\mathbb{F}_p) \simeq \langle p + n\mathbb{Z} \rangle \subseteq (\mathbb{Z}/n\mathbb{Z})^\times$.
+(c) Prove that $\operatorname{Gal}(E_{n,p}/\mathbb{F}_p) \simeq \langle p + n\ZZ \rangle \subseteq (\ZZ/n\ZZ)^\times$.
 
 (d) Prove that if $n$ has two distinct odd prime factors, then $\Phi_n(x)$ is reducible over $\mathbb{F}_\ell$ for every prime $\ell$.
 :::
@@ -112,9 +112,9 @@ Therefore $\rho$ is injective, proving part (b).
 
 Under the standard identification
 \[
-\operatorname{Aut}(\langle\zeta\rangle)\cong(\mathbb Z/n\mathbb Z)^\times,
+\operatorname{Aut}(\langle\zeta\rangle)\cong(\ZZ/n\ZZ)^\times,
 \]
-the image of the Galois group is $\langle p+n\mathbb Z\rangle$.
+the image of the Galois group is $\langle p+n\ZZ\rangle$.
 
 ::: pf-proof
 
@@ -138,16 +138,16 @@ Under the embedding $\rho$ of step [](#s2){.pf-ref},
 \[
 \rho(\operatorname{Fr}_p)(\zeta)=\zeta^p.
 \]
-The automorphism $\zeta\mapsto\zeta^a$ corresponds to $a+n\mathbb Z\in(\mathbb Z/n\mathbb Z)^\times$.
+The automorphism $\zeta\mapsto\zeta^a$ corresponds to $a+n\ZZ\in(\ZZ/n\ZZ)^\times$.
 Therefore
 \[
 \rho\bigl(\operatorname{Gal}(E_{n,p}/\mathbb F_p)\bigr)
-=\langle p+n\mathbb Z\rangle,
+=\langle p+n\ZZ\rangle,
 \]
 and injectivity of $\rho$ gives
 \[
 \operatorname{Gal}(E_{n,p}/\mathbb F_p)
-\cong\langle p+n\mathbb Z\rangle.
+\cong\langle p+n\ZZ\rangle.
 \]
 This proves part (c).
 
@@ -164,9 +164,9 @@ If $n$ has two distinct odd prime factors and $\ell\nmid n$, then $\Phi_n$ is re
 Let $q$ and $r$ be two distinct odd prime divisors of $n$.
 Reduction modulo $q$ and $r$, together with the Chinese remainder theorem on the prime-power factors of $n$, gives a surjective homomorphism
 \[
-(\mathbb Z/n\mathbb Z)^\times
+(\ZZ/n\ZZ)^\times
 \twoheadrightarrow
-(\mathbb Z/q\mathbb Z)^\times\times(\mathbb Z/r\mathbb Z)^\times.
+(\ZZ/q\ZZ)^\times\times(\ZZ/r\ZZ)^\times.
 \]
 The group on the right is not cyclic.
 Indeed, the order of any of its elements divides
@@ -175,7 +175,7 @@ Indeed, the order of any of its elements divides
 \le \frac{(q-1)(r-1)}2,
 \]
 because both $q-1$ and $r-1$ are even, whereas the group itself has order $(q-1)(r-1)$.
-Thus $(\mathbb Z/n\mathbb Z)^\times$ cannot be cyclic, since a quotient of a cyclic group is cyclic.
+Thus $(\ZZ/n\ZZ)^\times$ cannot be cyclic, since a quotient of a cyclic group is cyclic.
 
 Suppose for contradiction that $\Phi_n$ is irreducible over $\mathbb F_\ell$.
 For a zero $\zeta$ of $\Phi_n$, part (a) gives $\operatorname{ord}(\zeta)=n$, and step [](#s2){.pf-ref} with $p=\ell$ gives
@@ -188,12 +188,12 @@ Hence
 =\deg\Phi_n
 =\varphi(n).
 \]
-Part (c) identifies the Galois group with $\langle\ell+n\mathbb Z\rangle$, so the element $\ell+n\mathbb Z$ would have order $\varphi(n)$.
+Part (c) identifies the Galois group with $\langle\ell+n\ZZ\rangle$, so the element $\ell+n\ZZ$ would have order $\varphi(n)$.
 Since
 \[
-\bigl|(\mathbb Z/n\mathbb Z)^\times\bigr|=\varphi(n),
+\bigl|(\ZZ/n\ZZ)^\times\bigr|=\varphi(n),
 \]
-this would make $(\mathbb Z/n\mathbb Z)^\times$ cyclic, contradicting the preceding paragraph.
+this would make $(\ZZ/n\ZZ)^\times$ cyclic, contradicting the preceding paragraph.
 Therefore $\Phi_n$ is reducible whenever $\ell\nmid n$.
 
 :::
@@ -218,7 +218,7 @@ The cyclotomic identity
 \Phi_{\ell^a m}(x)
 =\frac{\Phi_m(x^{\ell^a})}{\Phi_m(x^{\ell^{a-1}})}
 \]
-holds over $\mathbb Z$ because $\ell\nmid m$.
+holds over $\ZZ$ because $\ell\nmid m$.
 After reduction modulo $\ell$, Frobenius gives
 \[
 \Phi_m(x^{\ell^j})=\Phi_m(x)^{\ell^j}

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f:[0,1]\to\mathbb R$ is differentiable, $f(0)=0$, and there is $k>0$ such that
+Suppose that $f:[0,1]\to\RR$ is differentiable, $f(0)=0$, and there is $k>0$ such that
 \[
 |f'(x)|\le k|f(x)|
 \qquad(x\in[0,1]).

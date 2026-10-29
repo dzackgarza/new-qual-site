@@ -23,12 +23,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $R = \mathbb{Z}[x]/(2x-1)$.
-Let $S = \{1, 2, 4, 8, \ldots\} \subseteq \mathbb{Z}$.
+Let $R = \ZZ[x]/(2x-1)$.
+Let $S = \{1, 2, 4, 8, \ldots\} \subseteq \ZZ$.
 
-(a) Show that $R$ is isomorphic as a ring to the localization $S^{-1}\mathbb{Z}$.
+(a) Show that $R$ is isomorphic as a ring to the localization $S^{-1}\ZZ$.
 
-(b) Is $R$ a free $\mathbb{Z}$-module?
+(b) Is $R$ a free $\ZZ$-module?
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ Let $S = \{1, 2, 4, 8, \ldots\} \subseteq \mathbb{Z}$.
 
 ::: {.pf-step #s1}
 
-In \(R=\mathbb Z[x]/(2x-1)\), the class \(\bar x\) satisfies
+In \(R=\ZZ[x]/(2x-1)\), the class \(\bar x\) satisfies
 \[
 2\bar x=1.
 \]
@@ -55,9 +55,9 @@ The defining relation is \(2x-1=0\), so \(2\bar x=1\). Thus \(2\) is invertible 
 
 By the universal property of localization, there is a unique ring homomorphism
 \[
-\phi:S^{-1}\mathbb Z\longrightarrow R
+\phi:S^{-1}\ZZ\longrightarrow R
 \]
-extending the natural map \(\mathbb Z\to R\). Explicitly,
+extending the natural map \(\ZZ\to R\). Explicitly,
 \[
 \phi\!\left(\frac{a}{2^k}\right)=a\bar x^{\,k}.
 \]
@@ -74,13 +74,13 @@ The universal property applies because every element of \(S\) maps to a unit by 
 
 Evaluation at \(x=1/2\) gives a ring homomorphism
 \[
-\psi:R\longrightarrow S^{-1}\mathbb Z,
+\psi:R\longrightarrow S^{-1}\ZZ,
 \qquad \psi(\bar x)=\frac12.
 \]
 
 ::: pf-proof
 
-The evaluation map \(\mathbb Z[x]\to S^{-1}\mathbb Z\), \(x\mapsto1/2\), sends \(2x-1\) to zero. Hence it factors through the quotient \(R\).
+The evaluation map \(\ZZ[x]\to S^{-1}\ZZ\), \(x\mapsto1/2\), sends \(2x-1\) to zero. Hence it factors through the quotient \(R\).
 
 :::
 
@@ -90,7 +90,7 @@ The evaluation map \(\mathbb Z[x]\to S^{-1}\mathbb Z\), \(x\mapsto1/2\), sends \
 
 The maps \(\phi\) and \(\psi\) are inverse isomorphisms. Therefore
 \[
-R\cong S^{-1}\mathbb Z=\mathbb Z[1/2].
+R\cong S^{-1}\ZZ=\ZZ[1/2].
 \]
 
 ::: pf-proof
@@ -107,17 +107,17 @@ so \(\phi\circ\psi\) fixes the ring generators of \(R\). Likewise \(\psi\circ\ph
 
 ::: pf-step
 
-The \(\mathbb Z\)-module \(R\) is not free.
+The \(\ZZ\)-module \(R\) is not free.
 
 ::: pf-proof
 
-Via step [](#s4){.pf-ref}, suppose \(\mathbb Z[1/2]\) were a free \(\mathbb Z\)-module with basis \(B\). Tensoring with \(\mathbb Q\) gives
+Via step [](#s4){.pf-ref}, suppose \(\ZZ[1/2]\) were a free \(\ZZ\)-module with basis \(B\). Tensoring with \(\QQ\) gives
 \[
-\mathbb Q\otimes_{\mathbb Z}\mathbb Z[1/2]\cong\mathbb Q,
+\QQ\otimes_{\ZZ}\ZZ[1/2]\cong\QQ,
 \]
-while a free module on \(B\) would tensor to the \(\mathbb Q\)-vector space with basis \(B\). Hence \(|B|=1\), so \(\mathbb Z[1/2]\) would be free of rank one, isomorphic to \(\mathbb Z\).
+while a free module on \(B\) would tensor to the \(\QQ\)-vector space with basis \(B\). Hence \(|B|=1\), so \(\ZZ[1/2]\) would be free of rank one, isomorphic to \(\ZZ\).
 
-But multiplication by \(2\) is surjective on \(\mathbb Z[1/2]\), since \(a/2^k=2(a/2^{k+1})\), whereas multiplication by \(2\) is not surjective on any nonzero rank-one free \(\mathbb Z\)-module. This contradiction shows \(R\) is not free over \(\mathbb Z\).
+But multiplication by \(2\) is surjective on \(\ZZ[1/2]\), since \(a/2^k=2(a/2^{k+1})\), whereas multiplication by \(2\) is not surjective on any nonzero rank-one free \(\ZZ\)-module. This contradiction shows \(R\) is not free over \(\ZZ\).
 
 :::
 

@@ -21,7 +21,7 @@ audit:
 
 ::: {.pf-step #p1-s1}
 
-Let $K,F\subset\mathbb R^2$, with $K$ closed and bounded and $F$ closed.
+Let $K,F\subset\RR^2$, with $K$ closed and bounded and $F$ closed.
 Prove that if $K\cap F=\varnothing$, then
 \[
 d(K,F):=\inf\{d(x,y):x\in K,\ y\in F\}>0.
@@ -51,7 +51,7 @@ Under the hypotheses of part step [](#p2-s1){.pf-ref}, the set $K$ is compact.
 
 ::: pf-proof
 
-The set $K\subseteq\mathbb R^2$ is closed and bounded. By the Heine--Borel theorem, it is compact.
+The set $K\subseteq\RR^2$ is closed and bounded. By the Heine--Borel theorem, it is compact.
 
 :::
 
@@ -70,11 +70,11 @@ Since
 \[
 K\cap F=\varnothing,
 \]
-one has $x\notin F$. The set $F$ is closed, so $\mathbb R^2\setminus F$ is open. Hence some Euclidean ball
+one has $x\notin F$. The set $F$ is closed, so $\RR^2\setminus F$ is open. Hence some Euclidean ball
 \[
 B(x,r_x)
 \]
-is contained in $\mathbb R^2\setminus F$.
+is contained in $\RR^2\setminus F$.
 
 :::
 
@@ -178,7 +178,7 @@ Part step [](#p2-s1){.pf-ref} is false if $K$ is assumed only closed.
 
 Take
 \[
-K=\{(x,0):x\in\mathbb R\}
+K=\{(x,0):x\in\RR\}
 \]
 and
 \[
@@ -190,7 +190,7 @@ To see that $F$ is closed, suppose
 \[
 \left(x_n,\frac1{x_n}\right)\to(a,b)
 \]
-in $\mathbb R^2$. Then $x_n\to a$. If $a=0$, the second coordinates $1/x_n$ would be unbounded, contradicting convergence. Hence $a>0$, and then
+in $\RR^2$. Then $x_n\to a$. If $a=0$, the second coordinates $1/x_n$ would be unbounded, contradicting convergence. Hence $a>0$, and then
 \[
 \frac1{x_n}\to\frac1a,
 \]

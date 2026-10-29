@@ -122,7 +122,7 @@ The order of $H$ is
 $H$ is cyclic:
         - In $H$, the number of Sylow 7-subgroups $n_7(H)$ satisfies $n_7(H) \equiv 1 \pmod 7$ and $n_7(H) \mid 5 \implies n_7(H) = 1$, so the Sylow 7-subgroup $R \trianglelefteq H$.
         - The number of Sylow 5-subgroups $n_5(H)$ satisfies $n_5(H) \equiv 1 \pmod 5$ and $n_5(H) \mid 7 \implies n_5(H) = 1$, so the Sylow 5-subgroup $Q \trianglelefteq H$.
-        - Since $Q, R \trianglelefteq H$ and $Q \cap R = \{e\}$, $H \cong Q \times R \cong \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z} \cong \mathbb{Z}/35\mathbb{Z}$.
+        - Since $Q, R \trianglelefteq H$ and $Q \cap R = \{e\}$, $H \cong Q \times R \cong \ZZ/5\ZZ \times \ZZ/7\ZZ \cong \ZZ/35\ZZ$.
 
 :::
 
@@ -162,7 +162,7 @@ Since 3 is the smallest prime dividing $|G| = 105$, any subgroup of index 3 is n
 
 ::: pf-step
 
-In the cyclic group $H \cong \mathbb{Z}/35\mathbb{Z}$, $Q$ is the unique subgroup of order 5, and $R$ is the unique subgroup of order 7.
+In the cyclic group $H \cong \ZZ/35\ZZ$, $Q$ is the unique subgroup of order 5, and $R$ is the unique subgroup of order 7.
 
 :::
 
@@ -223,13 +223,13 @@ The product $P Q R$ is a subgroup of $G$ with order $|P Q R| = |P| |Q| |R| = 3 \
 ::: pf-step
 
 Therefore $G$ is isomorphic to the internal direct product:
-    $$G \cong P \times Q \times R \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z}.$$
+    $$G \cong P \times Q \times R \cong \ZZ/3\ZZ \times \ZZ/5\ZZ \times \ZZ/7\ZZ.$$
 
 :::
 
 ::: pf-step
 
-By the Chinese Remainder Theorem, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z} \cong \mathbb{Z}/105\mathbb{Z}$, which is cyclic.
+By the Chinese Remainder Theorem, $\ZZ/3\ZZ \times \ZZ/5\ZZ \times \ZZ/7\ZZ \cong \ZZ/105\ZZ$, which is cyclic.
 
 :::
 

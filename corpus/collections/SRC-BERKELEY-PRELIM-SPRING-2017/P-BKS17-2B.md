@@ -55,7 +55,7 @@ Write
 $$
 P(x)=\sum_{j=0}^m a_jx^j
 $$
-with $a_j\in\mathbb C$. By linearity of the integral and the assumed vanishing of every moment,
+with $a_j\in\CC$. By linearity of the integral and the assumed vanishing of every moment,
 $$
 \int_{-1}^1 f(x)P(x)\,dx
 =

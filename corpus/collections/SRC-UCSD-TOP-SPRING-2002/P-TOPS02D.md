@@ -49,10 +49,10 @@ Part (b) is false for an arbitrary disconnected covering.
 
 Take $X=S^1$ as a topological group. Let $E$ be the disjoint union of the connected $2$-sheeted and $3$-sheeted coverings of $S^1$. Suppose a multiplication $m:E\times E\to E$ with
 $$p\circ m=\mu\circ(p\times p)$$
-existed. Restrict to the product $E_2\times E_3$ of the two connected components. This domain is connected, so its image lies in one component of $E$, whose covering subgroup is either $2\mathbb Z$ or $3\mathbb Z$ inside $\pi_1(S^1)=\mathbb Z$.
+existed. Restrict to the product $E_2\times E_3$ of the two connected components. This domain is connected, so its image lies in one component of $E$, whose covering subgroup is either $2\ZZ$ or $3\ZZ$ inside $\pi_1(S^1)=\ZZ$.
 
 On fundamental groups, however, the map $\mu\circ(p\times p):E_2\times E_3\to S^1$ has image
-$$2\mathbb Z+3\mathbb Z=\mathbb Z.$$
+$$2\ZZ+3\ZZ=\ZZ.$$
 The covering-space lifting criterion therefore forbids a lift to either component, a contradiction.
 
 :::

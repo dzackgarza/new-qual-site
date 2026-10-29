@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be continuous, nonnegative, and satisfy
+Let $f:\RR\to\RR$ be continuous, nonnegative, and satisfy
 \[
 \int_0^\infty f(x)\,dx<\infty.
 \]

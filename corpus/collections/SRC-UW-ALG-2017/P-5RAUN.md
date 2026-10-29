@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that a finite simple group cannot have a 2-dimensional irreducible representation over $\mathbb C$.
+Show that a finite simple group cannot have a 2-dimensional irreducible representation over $\CC$.
 
 > Hint: the determinant might prove useful.
 :::
@@ -27,7 +27,7 @@ Show that a finite simple group cannot have a 2-dimensional irreducible represen
 ::: {.solution}
 Suppose, for contradiction, that \(G\) is finite simple and that
 \[
-\rho:G\longrightarrow \GL(V),\qquad \dim_{\mathbb C}V=2,
+\rho:G\longrightarrow \GL(V),\qquad \dim_{\CC}V=2,
 \]
 is irreducible.
 
@@ -36,24 +36,24 @@ ho\) is faithful. Indeed, \(\ker\rho\trianglelefteq G\). Since \(G\) is simple, 
 
 Consider
 \[
-\det\rho:G\longrightarrow \mathbb C^\times.
+\det\rho:G\longrightarrow \CC^\times.
 \]
-Its kernel is normal. If its kernel were trivial, then \(G\) would embed in the abelian group \(\mathbb C^\times\), so \(G\) would be abelian. A finite simple abelian group is cyclic of prime order, and every irreducible complex representation of an abelian group is \(1\)-dimensional, a contradiction. Hence
+Its kernel is normal. If its kernel were trivial, then \(G\) would embed in the abelian group \(\CC^\times\), so \(G\) would be abelian. A finite simple abelian group is cyclic of prime order, and every irreducible complex representation of an abelian group is \(1\)-dimensional, a contradiction. Hence
 \[
 \det\rho(g)=1\qquad\text{for every }g\in G.
 \]
 Thus \(
-ho(G)\subseteq \SL_2(\mathbb C)\).
+ho(G)\subseteq \SL_2(\CC)\).
 
 We now justify that \(2\mid |G|\). We use the standard character-degree divisibility argument, included here for completeness. Let \(\chi\) be an irreducible complex character of degree \(d=\chi(1)\). For each conjugacy class \(C\) with representative \(c\), the class sum
 \[
-z_C=\sum_{g\in C}g\in Z(\mathbb Z[G])
+z_C=\sum_{g\in C}g\in Z(\ZZ[G])
 \]
 acts on the irreducible representation by the scalar
 \[
 \omega_C=\frac{|C|\chi(c)}{d}.
 \]
-Because multiplication by \(z_C\) is an integral endomorphism of the finite free abelian group \(Z(\mathbb Z[G])\), Cayley--Hamilton shows that \(\omega_C\) is an algebraic integer. Character values are algebraic integers as well. Character orthogonality gives
+Because multiplication by \(z_C\) is an integral endomorphism of the finite free abelian group \(Z(\ZZ[G])\), Cayley--Hamilton shows that \(\omega_C\) is an algebraic integer. Character values are algebraic integers as well. Character orthogonality gives
 \[
 |G|=\sum_{g\in G}\chi(g)\chi(g^{-1})
 =d^2+\sum_{C\ne\{1\}}|C|\chi(c)\chi(c^{-1}).
@@ -63,7 +63,7 @@ Dividing by \(d\),
 \frac{|G|}{d}
 =d+\sum_{C\ne\{1\}}\omega_C\chi(c^{-1}).
 \]
-The right side is an algebraic integer, while the left side is rational; hence \(|G|/d\in\mathbb Z\). Therefore \(d\mid |G|\). Applying this with \(d=2\) gives \(2\mid |G|\).
+The right side is an algebraic integer, while the left side is rational; hence \(|G|/d\in\ZZ\). Therefore \(d\mid |G|\). Applying this with \(d=2\) gives \(2\mid |G|\).
 
 By Cauchy's theorem, \(G\) has an element \(t\) of order \(2\). Since
 \[

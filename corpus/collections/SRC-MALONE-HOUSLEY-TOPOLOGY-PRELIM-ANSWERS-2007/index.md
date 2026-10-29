@@ -77,7 +77,7 @@ source:
     - P-MH07-JAN06-01
     - P-MH07-JAN06-02
     - id: P-MH07-AUG05-07
-      comment: January 2006 Problem 3; the retained extraction drops the final superscript on $\mathbb R^2$, while the same problem is printed completely as August 2005 Problem 7
+      comment: January 2006 Problem 3; the retained extraction drops the final superscript on $\RR^2$, while the same problem is printed completely as August 2005 Problem 7
     - P-MH07-JAN06-04
     - P-MH07-JAN06-05
     - P-MH07-JAN06-06

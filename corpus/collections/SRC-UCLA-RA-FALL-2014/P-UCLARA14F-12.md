@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega = \{ z \in \mathbb{C} ; |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \mathbb{R}$ is bounded and continuous on $\overline{\Omega}$ and that it is subharmonic on $\Omega$. Prove the following: If $u(z) \leq 0$ for all $|z| = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
+Let $\Omega = \{ z \in \CC ; |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \RR$ is bounded and continuous on $\overline{\Omega}$ and that it is subharmonic on $\Omega$. Prove the following: If $u(z) \leq 0$ for all $|z| = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
 :::
 
 ::: {.solution}

@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G = \{z \in \mathbb{C} : |z| > 1\}$.
-Let $u : G \to \mathbb{R}$ be a continuous bounded function, such that $u$ is harmonic in $G$.
+Let $G = \{z \in \CC : |z| > 1\}$.
+Let $u : G \to \RR$ be a continuous bounded function, such that $u$ is harmonic in $G$.
 Assume $u(z) \leq 0$ for all $|z| = 1$.
 Show that $u(z) \leq 0$ for all $z \in G$.
 :::

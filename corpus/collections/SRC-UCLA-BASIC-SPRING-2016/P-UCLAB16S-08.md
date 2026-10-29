@@ -63,7 +63,7 @@ a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
 
 For every
 \[
-x\in\mathbb R^2,
+x\in\RR^2,
 \]
 one has
 \[
@@ -201,7 +201,7 @@ Step [](#s1-4){.pf-ref} rules out every nonzero vector in the kernel.
 
 Since $I+A$ is a linear map
 \[
-\mathbb R^2\to\mathbb R^2,
+\RR^2\to\RR^2,
 \]
 trivial kernel implies invertibility.
 

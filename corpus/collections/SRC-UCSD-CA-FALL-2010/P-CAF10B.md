@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Find all functions $f(z)$ that satisfy the two requirements:
 
-(i) $f(z)$ is meromorphic in the plane $\mathbb{C}$.
+(i) $f(z)$ is meromorphic in the plane $\CC$.
 
 (ii) There exists a constant $C > 0$ such that $|f(z) - \tan z| \leq C|f(z)|$ for all $z$ outside the poles of $f(z)$ and $\tan z$.
 :::
@@ -26,7 +26,7 @@ Find all functions $f(z)$ that satisfy the two requirements:
 Every function
 \[
 f(z)=c\tan z,
-\qquad c\in\mathbb C^*,
+\qquad c\in\CC^*,
 \]
 satisfies the condition, since
 \[
@@ -44,7 +44,7 @@ The hypothesis gives
 \[
 |g(z)|\le C.
 \]
-As a quotient of meromorphic functions, $g$ is meromorphic on $\mathbb C$.
+As a quotient of meromorphic functions, $g$ is meromorphic on $\CC$.
 Every possible singularity is removable, because $g$ is bounded on a punctured
 neighborhood of that point. Hence $g$ extends to a bounded entire function.
 By Liouville's theorem, $g\equiv\gamma$ for some constant $\gamma$.

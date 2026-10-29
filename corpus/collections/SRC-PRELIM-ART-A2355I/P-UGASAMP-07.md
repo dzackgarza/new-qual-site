@@ -15,7 +15,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume $u,v,w\in\mathbb R^n$ are linearly independent. Prove that
+Assume $u,v,w\in\RR^n$ are linearly independent. Prove that
 \[
 2u+v,\qquad u+v+w,\qquad v-w
 \]

@@ -25,7 +25,7 @@ Is $X$ homotopy-equivalent to $Y$?
 
 ::: pf-step
 Both $X=S^2\times S^3$ and $Y=S^2\vee S^3\vee S^5$ have integral cohomology groups
-$$H^k\cong\begin{cases}\mathbb Z,&k=0,2,3,5,\\0,&\text{otherwise.}\end{cases}$$
+$$H^k\cong\begin{cases}\ZZ,&k=0,2,3,5,\\0,&\text{otherwise.}\end{cases}$$
 
 ::: pf-proof
 For $X$, use Künneth. For $Y$, reduced cohomology of a finite wedge is the direct sum of the reduced cohomologies of its summands.

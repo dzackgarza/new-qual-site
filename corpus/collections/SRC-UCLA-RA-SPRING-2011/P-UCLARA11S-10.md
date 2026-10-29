@@ -406,7 +406,7 @@ f_0
 =
 e^{i\theta}\chi\circ\Phi,
 \]
-where $\theta\in\mathbb R$ is chosen so that
+where $\theta\in\RR$ is chosen so that
 \[
 f_0'(z_0)
 \]

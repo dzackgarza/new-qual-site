@@ -18,7 +18,7 @@ Show that there exist polynomials $p_n$ such that
 
 (i) $p_n(0) = 1$, $p_n'(0) = 0$,
 
-(ii) $p_n(z) \to 0$ as $n \to \infty$ for all fixed $z \in \mathbb{C} \setminus \{0\}$.
+(ii) $p_n(z) \to 0$ as $n \to \infty$ for all fixed $z \in \CC \setminus \{0\}$.
 :::
 
 ::: {.solution}

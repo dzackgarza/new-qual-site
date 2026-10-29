@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF25J
 kind: problem
-title: Isomorphic finite subgroups of $\mathrm{GL}_2(\mathbb{C})$ with different Hilbert series
+title: Isomorphic finite subgroups of $\mathrm{GL}_2(\CC)$ with different Hilbert series
 classification:
   areas:
   - applied-algebra
@@ -14,11 +14,11 @@ review: draft
 ---
 
 ::: {.problem}
-Find two finite matrix groups $G,H\subseteq\mathrm{GL}_2(\mathbb{C})$ such that
+Find two finite matrix groups $G,H\subseteq\mathrm{GL}_2(\CC)$ such that
 
 - $G$ and $H$ are isomorphic as abstract groups, but
 
-- the Hilbert series of the graded rings $\mathbb{C}[x,y]^G$ and $\mathbb{C}[x,y]^H$ are different.
+- the Hilbert series of the graded rings $\CC[x,y]^G$ and $\CC[x,y]^H$ are different.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ G\cong C_2\cong H.
 ::: {.pf-step #g-invariant-ring}
 The invariant ring for \(G\) is
 \[
-\mathbb C[x,y]^G=\mathbb C[x^2,y].
+\CC[x,y]^G=\CC[x^2,y].
 \]
 
 ::: pf-proof
@@ -57,14 +57,14 @@ A monomial \(x^a y^b\) is fixed exactly when \(a\) is even. Hence an invariant p
 :::
 
 ::: {.pf-step #g-hilbert-series}
-The Hilbert series of \(\mathbb C[x,y]^G\) is
+The Hilbert series of \(\CC[x,y]^G\) is
 \[
-\operatorname{Hilb}(\mathbb C[x,y]^G;t)
+\operatorname{Hilb}(\CC[x,y]^G;t)
 =\frac1{(1-t^2)(1-t)}.
 \]
 
 ::: pf-proof
-The ring \(\mathbb C[x^2,y]\) is a polynomial ring on homogeneous generators of degrees \(2\) and \(1\). Therefore its Hilbert series is the product of the geometric-series factors
+The ring \(\CC[x^2,y]\) is a polynomial ring on homogeneous generators of degrees \(2\) and \(1\). Therefore its Hilbert series is the product of the geometric-series factors
 \[
 \frac1{1-t^2}\cdot\frac1{1-t}.
 \]
@@ -80,15 +80,15 @@ The nontrivial element \(-I\in H\) sends
 \[
 (x,y)\longmapsto(-x,-y).
 \]
-Thus a monomial \(x^a y^b\) is multiplied by \((-1)^{a+b}\). It is fixed exactly when \(a+b\) is even. Hence the degree-\(d\) invariant subspace is all of \(\mathbb C[x,y]_d\) when \(d\) is even and is \(0\) when \(d\) is odd.
+Thus a monomial \(x^a y^b\) is multiplied by \((-1)^{a+b}\). It is fixed exactly when \(a+b\) is even. Hence the degree-\(d\) invariant subspace is all of \(\CC[x,y]_d\) when \(d\) is even and is \(0\) when \(d\) is odd.
 :::
 
 :::
 
 ::: {.pf-step #h-hilbert-series}
-The Hilbert series of \(\mathbb C[x,y]^H\) is
+The Hilbert series of \(\CC[x,y]^H\) is
 \[
-\operatorname{Hilb}(\mathbb C[x,y]^H;t)
+\operatorname{Hilb}(\CC[x,y]^H;t)
 =\sum_{m\ge0}(2m+1)t^{2m}
 =\frac{1+t^2}{(1-t^2)^2}.
 \]

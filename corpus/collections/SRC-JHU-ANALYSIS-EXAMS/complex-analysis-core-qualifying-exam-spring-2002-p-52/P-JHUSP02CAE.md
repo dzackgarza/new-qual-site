@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-5. Let $\scriptstyle \sum _ { n = - \infty } ^ { \infty } a _ { n } z ^ { n }$ be the Laurent series expansion of $\scriptstyle { \frac { 1 } { \sin z } }$ on the annulus $\left\{ z \in \mathbb { C } : \pi < | z | < 2 \pi \right\}$ . Evaluate the coefficients $a _ { n }$ for $n < 0$
+5. Let $\scriptstyle \sum _ { n = - \infty } ^ { \infty } a _ { n } z ^ { n }$ be the Laurent series expansion of $\scriptstyle { \frac { 1 } { \sin z } }$ on the annulus $\left\{ z \in \CC : \pi < | z | < 2 \pi \right\}$ . Evaluate the coefficients $a _ { n }$ for $n < 0$
 :::
 
 ::: {.solution}

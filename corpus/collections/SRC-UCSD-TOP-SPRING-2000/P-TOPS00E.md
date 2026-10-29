@@ -23,14 +23,14 @@ Prove that any continuous map $f : S^2 \times S^2 \to \mathbb{CP}^2$ has even de
 
 ::: pf-step
 
-Let $x\in H^2(\mathbb{CP}^2;\mathbb Z)$ be the standard generator, normalized by
+Let $x\in H^2(\mathbb{CP}^2;\ZZ)$ be the standard generator, normalized by
 $$
 \langle x^2,[\mathbb{CP}^2]\rangle=1.
 $$
 
 ::: pf-proof
 
-The integral cohomology ring is $\mathbb Z[x]/(x^3)$ with $|x|=2$.
+The integral cohomology ring is $\ZZ[x]/(x^3)$ with $|x|=2$.
 
 :::
 
@@ -61,7 +61,7 @@ for integers $r,s$.
 
 ::: pf-proof
 
-$H^2(S^2\times S^2;\mathbb Z)\cong\mathbb Z a\oplus\mathbb Z b$.
+$H^2(S^2\times S^2;\ZZ)\cong\ZZ a\oplus\ZZ b$.
 
 :::
 

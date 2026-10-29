@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $L/\mathbb{Q}$ be a splitting field for the polynomial $x^{11} - 1$.
-Find all intermediate fields $L/M/\mathbb{Q}$.
-For each intermediate field $M$ find an element $\alpha \in M$ such that $M = \mathbb{Q}(\alpha)$.
+Let $L/\QQ$ be a splitting field for the polynomial $x^{11} - 1$.
+Find all intermediate fields $L/M/\QQ$.
+For each intermediate field $M$ find an element $\alpha \in M$ such that $M = \QQ(\alpha)$.
 :::
 
 ::: {.solution}

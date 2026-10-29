@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 11. For $R>1$, let
 \[
-A_R=\{z\in\mathbb C:1<|z|<R\}.
+A_R=\{z\in\CC:1<|z|<R\}.
 \]
 Assume there is a conformal (i.e. injective, holomorphic) mapping $F$ from $A_{R_1}$ onto $A_{R_2}$. Prove that $R_1=R_2$.
 :::
@@ -35,7 +35,7 @@ and define the vertical strips
 \[
 S_j
 =
-\{w\in\mathbb C:0<\operatorname{Re}w<L_j\}.
+\{w\in\CC:0<\operatorname{Re}w<L_j\}.
 \]
 
 ::: pf
@@ -52,7 +52,7 @@ are universal covering maps with deck transformations
 \[
 w\longmapsto w+2\pi i n,
 \qquad
-n\in\mathbb Z.
+n\in\ZZ.
 \]
 
 
@@ -145,9 +145,9 @@ Hence
 \[
 \widetilde F(w+2\pi i)-\widetilde F(w)
 \in
-2\pi i\mathbb Z.
+2\pi i\ZZ.
 \]
-The left-hand side is continuous in \(w\), while \(2\pi i\mathbb Z\) is
+The left-hand side is continuous in \(w\), while \(2\pi i\ZZ\) is
 discrete. Since \(S_1\) is connected, the integer is constant.
 
 :::
@@ -166,13 +166,13 @@ In fact,
 
 The integer \(k\) is the homomorphism induced by \(F\) on
 \[
-\pi_1(A_{R_1})\cong\mathbb Z
+\pi_1(A_{R_1})\cong\ZZ
 \longrightarrow
-\pi_1(A_{R_2})\cong\mathbb Z.
+\pi_1(A_{R_2})\cong\ZZ.
 \]
 Since \(F\) is a biholomorphism, it is a homeomorphism, so its induced map on
 fundamental groups is an isomorphism. The only automorphisms of
-\(\mathbb Z\) are multiplication by \(1\) and by \(-1\).
+\(\ZZ\) are multiplication by \(1\) and by \(-1\).
 
 :::
 

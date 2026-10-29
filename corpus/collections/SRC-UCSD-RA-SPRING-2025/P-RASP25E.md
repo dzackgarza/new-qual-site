@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in C^1(\mathbb{R})$ such that $f(0) = f(1)$ and $\int_0^1 f(x)\,dx = 0$.
+Let $f \in C^1(\RR)$ such that $f(0) = f(1)$ and $\int_0^1 f(x)\,dx = 0$.
 
 (1) Prove that $4\pi^2 \int_0^1 |f(x)|^2\,dx \leq \int_0^1 |f'(x)|^2\,dx$.
 
-(2) Prove that if $4\pi^2 \int_0^1 |f(x)|^2\,dx = \int_0^1 |f'(x)|^2\,dx$, then there exist $a, b \in \mathbb{C}$ such that $f(x) = a\cos(2\pi x) + b\sin(2\pi x)$ for every $x \in [0,1]$.
+(2) Prove that if $4\pi^2 \int_0^1 |f(x)|^2\,dx = \int_0^1 |f'(x)|^2\,dx$, then there exist $a, b \in \CC$ such that $f(x) = a\cos(2\pi x) + b\sin(2\pi x)$ for every $x \in [0,1]$.
 :::
 
 ::: {.solution}
-For $n\in\mathbb Z$, write
+For $n\in\ZZ$, write
 \[
 \widehat f(n):=\int_0^1 f(x)e^{-2\pi i n x}\,dx.
 \]
@@ -76,13 +76,13 @@ Prove the Poincare inequality.
 By Parseval's identity,
 \[
 \int_0^1|f(x)|^2\,dx
-=\sum_{n\in\mathbb Z}|\widehat f(n)|^2
+=\sum_{n\in\ZZ}|\widehat f(n)|^2
 =\sum_{n\ne0}|\widehat f(n)|^2.
 \]
 Using Step 1 and Parseval again,
 \[
 \int_0^1|f'(x)|^2\,dx
-=4\pi^2\sum_{n\in\mathbb Z}n^2|\widehat f(n)|^2.
+=4\pi^2\sum_{n\in\ZZ}n^2|\widehat f(n)|^2.
 \]
 Since $n^2\ge1$ for $n\ne0$,
 \[
@@ -130,7 +130,7 @@ we may write
 \[
 f(x)=a\cos(2\pi x)+b\sin(2\pi x)
 \]
-for suitable $a,b\in\mathbb C$. Therefore every equality case has exactly the stated form.
+for suitable $a,b\in\CC$. Therefore every equality case has exactly the stated form.
 
 :::
 

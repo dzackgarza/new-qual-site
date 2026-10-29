@@ -13,7 +13,7 @@ audit:
 ::: {.problem}
 Let
 \[
-X=\{(p,q)\in\mathbb R^2:q\ge0\}.
+X=\{(p,q)\in\RR^2:q\ge0\}.
 \]
 Define a basis consisting of ordinary open disks $B((p,q);\varepsilon)$ with $0<\varepsilon<q$, together with sets
 \[
@@ -24,7 +24,7 @@ whose disk is tangent to the $x$-axis at $(p,0)$.
 1. Prove that these sets form a basis for a topology on $X$.
 2. Prove that
    \[
-   C=\{(p,q):q>0,\ p,q\in\mathbb Q\}
+   C=\{(p,q):q>0,\ p,q\in\QQ\}
    \]
    is dense, hence $X$ is separable.
 3. Prove that the $x$-axis is a closed subspace whose subspace topology is discrete.
@@ -35,7 +35,7 @@ whose disk is tangent to the $x$-axis at $(p,0)$.
 
 For
 $$
-p\in\mathbb R,
+p\in\RR,
 \qquad
 r>0,
 $$
@@ -245,7 +245,7 @@ The set
 $$
 C
 \coloneqq
-\{(p,q):q>0, p,q\in\mathbb Q\}
+\{(p,q):q>0, p,q\in\QQ\}
 $$
 meets every nonempty basic open set.
 
@@ -254,11 +254,11 @@ meets every nonempty basic open set.
 
 An ordinary basic disk lies entirely in the open upper half-plane and is a nonempty Euclidean-open subset of
 $$
-\mathbb R^2.
+\RR^2.
 $$
 Since
 $$
-\mathbb Q^2
+\QQ^2
 $$
 is Euclidean dense, the disk contains a point of
 $$
@@ -279,7 +279,7 @@ q>0.
 $$
 Again Euclidean density of
 $$
-\mathbb Q^2
+\QQ^2
 $$
 gives a point of
 $$
@@ -316,7 +316,7 @@ C
 $$
 is countable because
 $$
-\mathbb Q^2
+\QQ^2
 $$
 is countable.
 
@@ -330,7 +330,7 @@ Let
 $$
 A
 \coloneqq
-\mathbb R\times\{0\}.
+\RR\times\{0\}.
 $$
 Then $A$ is closed in $X$.
 
@@ -374,7 +374,7 @@ The subspace topology on $A$ is discrete.
 
 For every
 $$
-p\in\mathbb R
+p\in\RR
 $$
 and every
 $$
@@ -432,7 +432,7 @@ u:A\to\{0,1\},
 $$
 where
 $$
-\mathfrak c=|\mathbb R|.
+\mathfrak c=|\RR|.
 $$
 
 
@@ -471,7 +471,7 @@ $$
 $$
 continuous functions
 $$
-X\to\mathbb R.
+X\to\RR.
 $$
 
 
@@ -491,15 +491,15 @@ X,
 $$
 because
 $$
-\mathbb R
+\RR
 $$
 is Hausdorff and the equalizer of two continuous maps to a Hausdorff space is closed.
 
 Thus restriction gives an injection
 $$
-C(X,\mathbb R)
+C(X,\RR)
 \hookrightarrow
-\mathbb R^D.
+\RR^D.
 $$
 Since
 $$
@@ -507,7 +507,7 @@ D
 $$
 is countable,
 $$
-|\mathbb R^D|
+|\RR^D|
 =
 \mathfrak c^{\aleph_0}
 =
@@ -515,7 +515,7 @@ $$
 $$
 Therefore
 $$
-|C(X,\mathbb R)|
+|C(X,\RR)|
 \le
 \mathfrak c.
 $$

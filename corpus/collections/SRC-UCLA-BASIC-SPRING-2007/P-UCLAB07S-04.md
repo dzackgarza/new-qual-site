@@ -20,7 +20,7 @@ audit:
 Let $A$ be a real symmetric $n\times n$ matrix with distinct eigenvalues $\lambda_1,\ldots,\lambda_\ell$, where $\ell\le n$.
 Determine
 \[
-X=\left\{x\in\mathbb R^n:\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}\text{ exists}\right\}
+X=\left\{x\in\RR^n:\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}\text{ exists}\right\}
 \]
 and
 \[
@@ -41,7 +41,7 @@ E_j=\ker(A-\lambda_jI).
 
 Since $A$ is real symmetric,
 \[
-\mathbb R^n
+\RR^n
 =
 \bigoplus_{j=1}^{\ell}E_j
 \]
@@ -50,7 +50,7 @@ orthogonally.
 
 ::: pf-proof
 
-By the spectral theorem for real symmetric matrices, $\mathbb R^n$ has an orthonormal basis of eigenvectors of $A$.
+By the spectral theorem for real symmetric matrices, $\RR^n$ has an orthonormal basis of eigenvectors of $A$.
 Grouping basis vectors with the same eigenvalue yields the stated orthogonal direct sum of eigenspaces.
 
 :::
@@ -61,7 +61,7 @@ Grouping basis vectors with the same eigenvalue yields the stated orthogonal dir
 
 Every
 \[
-x\in\mathbb R^n
+x\in\RR^n
 \]
 has a unique decomposition
 \[
@@ -232,7 +232,7 @@ x^TA^{2k}x
 
 Therefore
 \[
-\boxed{X=\mathbb R^n}.
+\boxed{X=\RR^n}.
 \]
 
 

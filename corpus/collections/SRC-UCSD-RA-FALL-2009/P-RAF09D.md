@@ -29,7 +29,7 @@ $$
 \mathrm{PV} \int_{-\infty}^{\infty} f(x)\,dx = \lim_{\delta \to 0} \left(\int_{-\infty}^{-\delta} + \int_{\delta}^{\infty}\right) f(x)\,dx,
 $$
 if the limit exists.
-For $\phi \in \mathcal{D}(\mathbb{R})$, put $\Lambda(\phi) = \int_{-\infty}^{\infty} \phi(x) \log|x|\,dx$.
+For $\phi \in \mathcal{D}(\RR)$, put $\Lambda(\phi) = \int_{-\infty}^{\infty} \phi(x) \log|x|\,dx$.
 Show that
 
 (a) $\Lambda'(\phi) = \mathrm{PV} \int_{-\infty}^{\infty} \frac{\phi(x)}{x}\,dx$,
@@ -50,7 +50,7 @@ Compute the first distributional derivative.
 By definition of the derivative of a distribution,
 \[
 \Lambda'(\phi)=-\Lambda(\phi')
-=-\int_{\mathbb R}\phi'(x)\log|x|\,dx.
+=-\int_{\RR}\phi'(x)\log|x|\,dx.
 \]
 Choose $R>0$ so that $\operatorname{supp}\phi\subset(-R,R)$. For $0<\delta<R$, integrate by parts on $[-R,-\delta]$ and $[\delta,R]$:
 \[
@@ -74,7 +74,7 @@ Hence
 \[
 \boxed{
 \Lambda'(\phi)
-=\operatorname{PV}\int_{\mathbb R}\frac{\phi(x)}x\,dx.}
+=\operatorname{PV}\int_{\RR}\frac{\phi(x)}x\,dx.}
 \]
 
 :::
@@ -91,7 +91,7 @@ Using part (a),
 \[
 \Lambda''(\phi)
 =-\Lambda'(\phi')
-=-\operatorname{PV}\int_{\mathbb R}\frac{\phi'(x)}x\,dx.
+=-\operatorname{PV}\int_{\RR}\frac{\phi'(x)}x\,dx.
 \]
 We now rewrite the principal value. Put
 \[
@@ -123,14 +123,14 @@ B_\delta\to0.
 \]
 Therefore
 \[
-\operatorname{PV}\int_{\mathbb R}\frac{\phi'(x)}x\,dx
-=\operatorname{PV}\int_{\mathbb R}\frac{\phi(x)-\phi(0)}{x^2}\,dx.
+\operatorname{PV}\int_{\RR}\frac{\phi'(x)}x\,dx
+=\operatorname{PV}\int_{\RR}\frac{\phi(x)-\phi(0)}{x^2}\,dx.
 \]
 Substituting into the distributional derivative formula yields
 \[
 \boxed{
 \Lambda''(\phi)
-=-\operatorname{PV}\int_{\mathbb R}
+=-\operatorname{PV}\int_{\RR}
 \frac{\phi(x)-\phi(0)}{x^2}\,dx.}
 \]
 

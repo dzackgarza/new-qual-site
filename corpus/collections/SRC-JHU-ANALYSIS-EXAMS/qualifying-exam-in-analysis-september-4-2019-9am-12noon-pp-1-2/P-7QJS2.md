@@ -41,7 +41,7 @@ b. Show that if $f ( z ) \neq 0$ in $| z | < 1$ , then f is constant.
 
 c. (Extra credit) True or false, explain.
 
-$f = \alpha z ^ { n }$ for $\alpha \in \mathbb { C } , | \alpha | = 1$ and an integer $n \geq 0$
+$f = \alpha z ^ { n }$ for $\alpha \in \CC , | \alpha | = 1$ and an integer $n \geq 0$
 :::
 
 ::: {.solution}

@@ -31,7 +31,7 @@ p(x)=x^5-3x+1.
 
 ::: {.pf-step #s1-1}
 
-The function $p$ is continuous on $\mathbb R$.
+The function $p$ is continuous on $\RR$.
 
 
 ::: pf-proof

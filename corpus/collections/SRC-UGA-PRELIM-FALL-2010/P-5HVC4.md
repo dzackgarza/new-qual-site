@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 Let $A = \begin{bmatrix} 0 & 1 \\ 6 & -1 \end{bmatrix}$.
-Prove that $A$ is diagonalizable and find a closed-form expression for $A^k \begin{bmatrix} 1 \\ 7 \end{bmatrix}$, $k \in \mathbb{N}$.
+Prove that $A$ is diagonalizable and find a closed-form expression for $A^k \begin{bmatrix} 1 \\ 7 \end{bmatrix}$, $k \in \NN$.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ Since
 \[
 \binom17=2v_2-v_{-3},
 \]
-we obtain for every $k\in\mathbb N$
+we obtain for every $k\in\NN$
 \[
 A^k\binom17
 =2\,2^k v_2-(-3)^k v_{-3}.

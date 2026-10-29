@@ -43,14 +43,14 @@ Indeed,
 The fundamental theorem of finite abelian groups implies that the
 $2$-primary part is one of
 \[
-\mathbb Z_8,\qquad
-\mathbb Z_4\times\mathbb Z_2,\qquad
-\mathbb Z_2^3,
+\ZZ_8,\qquad
+\ZZ_4\times\ZZ_2,\qquad
+\ZZ_2^3,
 \]
-the $3$-primary part is $\mathbb Z_3$, and the $5$-primary part is one of
+the $3$-primary part is $\ZZ_3$, and the $5$-primary part is one of
 \[
-\mathbb Z_{25},\qquad
-\mathbb Z_5^2.
+\ZZ_{25},\qquad
+\ZZ_5^2.
 \]
 
 
@@ -98,12 +98,12 @@ In invariant-factor form, the six groups are
 \[
 \boxed{
 \begin{aligned}
-&\mathbb Z_2\times\mathbb Z_{10}\times\mathbb Z_{30},\\
-&\mathbb Z_{10}\times\mathbb Z_{60},\\
-&\mathbb Z_5\times\mathbb Z_{120},\\
-&\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_{150},\\
-&\mathbb Z_2\times\mathbb Z_{300},\\
-&\mathbb Z_{600}.
+&\ZZ_2\times\ZZ_{10}\times\ZZ_{30},\\
+&\ZZ_{10}\times\ZZ_{60},\\
+&\ZZ_5\times\ZZ_{120},\\
+&\ZZ_2\times\ZZ_2\times\ZZ_{150},\\
+&\ZZ_2\times\ZZ_{300},\\
+&\ZZ_{600}.
 \end{aligned}}
 \]
 
@@ -114,24 +114,24 @@ Combining cyclic factors of pairwise coprime orders gives the equivalent
 elementary-divisor descriptions
 \[
 \begin{aligned}
-\mathbb Z_2^3\times\mathbb Z_3\times\mathbb Z_5^2
+\ZZ_2^3\times\ZZ_3\times\ZZ_5^2
 &\cong
-\mathbb Z_2\times\mathbb Z_{10}\times\mathbb Z_{30},\\
-(\mathbb Z_4\times\mathbb Z_2)\times\mathbb Z_3\times\mathbb Z_5^2
+\ZZ_2\times\ZZ_{10}\times\ZZ_{30},\\
+(\ZZ_4\times\ZZ_2)\times\ZZ_3\times\ZZ_5^2
 &\cong
-\mathbb Z_{10}\times\mathbb Z_{60},\\
-\mathbb Z_8\times\mathbb Z_3\times\mathbb Z_5^2
+\ZZ_{10}\times\ZZ_{60},\\
+\ZZ_8\times\ZZ_3\times\ZZ_5^2
 &\cong
-\mathbb Z_5\times\mathbb Z_{120},\\
-\mathbb Z_2^3\times\mathbb Z_3\times\mathbb Z_{25}
+\ZZ_5\times\ZZ_{120},\\
+\ZZ_2^3\times\ZZ_3\times\ZZ_{25}
 &\cong
-\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_{150},\\
-(\mathbb Z_4\times\mathbb Z_2)\times\mathbb Z_3\times\mathbb Z_{25}
+\ZZ_2\times\ZZ_2\times\ZZ_{150},\\
+(\ZZ_4\times\ZZ_2)\times\ZZ_3\times\ZZ_{25}
 &\cong
-\mathbb Z_2\times\mathbb Z_{300},\\
-\mathbb Z_8\times\mathbb Z_3\times\mathbb Z_{25}
+\ZZ_2\times\ZZ_{300},\\
+\ZZ_8\times\ZZ_3\times\ZZ_{25}
 &\cong
-\mathbb Z_{600}.
+\ZZ_{600}.
 \end{aligned}
 \]
 These are the six cases counted in step [](#s1-3){.pf-ref}.

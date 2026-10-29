@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Study possible immersions (embeddings) of $\mathbb { R P } ^ { n }$ into $\mathbb { R } ^ { n + k }$ . (Hint: use S-W classes)
+Study possible immersions (embeddings) of $\mathbb { R P } ^ { n }$ into $\RR ^ { n + k }$ . (Hint: use S-W classes)
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ and $w(\gamma^1)=1+a$ give the formula by the Whitney product theorem.
 
 If
 \[
-f:\mathbb{RP}^n\looparrowright\mathbb R^{n+k}
+f:\mathbb{RP}^n\looparrowright\RR^{n+k}
 \]
 is a smooth immersion with normal bundle $\nu$ of rank $k$, then
 \[
@@ -66,7 +66,7 @@ T\mathbb{RP}^n\oplus\nu\cong\varepsilon^{n+k}.
 
 The derivative identifies $T\mathbb{RP}^n$ with a rank-$n$ subbundle of the pulled-back tangent bundle
 \[
-f^*T\mathbb R^{n+k}\cong\varepsilon^{n+k}.
+f^*T\RR^{n+k}\cong\varepsilon^{n+k}.
 \]
 Choosing the orthogonal complement gives the rank-$k$ normal bundle $\nu$ and the displayed splitting.
 
@@ -159,7 +159,7 @@ Thus the coefficient is $1$ mod $2$, proving the claim.
 
 Hence, whenever $n\ne2^s-1$, every immersion
 \[
-\mathbb{RP}^n\looparrowright\mathbb R^{n+k}
+\mathbb{RP}^n\looparrowright\RR^{n+k}
 \]
 must satisfy
 \[
@@ -197,7 +197,7 @@ Step [](#s1-4){.pf-ref} says every nonzero inverse Stiefel--Whitney class must o
 
 The same bound applies to embeddings
 \[
-\mathbb{RP}^n\hookrightarrow\mathbb R^{n+k}.
+\mathbb{RP}^n\hookrightarrow\RR^{n+k}.
 \]
 
 

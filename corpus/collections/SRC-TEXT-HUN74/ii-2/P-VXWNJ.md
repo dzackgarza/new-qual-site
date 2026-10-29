@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Let $G$ be a finite abelian group that is not cyclic.
-Show that $G$ contains a subgroup isomorphic to $\mathbb{Z}_p \oplus \mathbb{Z}_p$ for some prime $p$.
+Show that $G$ contains a subgroup isomorphic to $\ZZ_p \oplus \ZZ_p$ for some prime $p$.
 :::
 
 ::: {.solution}

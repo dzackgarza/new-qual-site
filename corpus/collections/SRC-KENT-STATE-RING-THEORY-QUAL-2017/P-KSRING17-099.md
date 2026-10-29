@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-099
 kind: problem
-title: $\mathbb Z[\sqrt{-2}]$ is a Euclidean domain
+title: $\ZZ[\sqrt{-2}]$ is a Euclidean domain
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\mathbb { Z } [ \sqrt { - 2 } ] = \{ a + b \sqrt { - 2 } \ | \ a , b \in \mathbb { Z } \}$ is a Euclidean domain.
+Prove that $\ZZ [ \sqrt { - 2 } ] = \{ a + b \sqrt { - 2 } \ | \ a , b \in \ZZ \}$ is a Euclidean domain.
 :::
 
 ::: {.solution}

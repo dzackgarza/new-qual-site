@@ -145,7 +145,7 @@ As $\tau H$ runs through the cosets, the values $\tau(n)$ run once through $\{1,
 
 For $S_4$, the permutation module is
 \[
-\mathbb C^4=\mathbb C(1,1,1,1)\oplus W,
+\CC^4=\CC(1,1,1,1)\oplus W,
 \qquad
 W=\{(x_1,x_2,x_3,x_4):x_1+x_2+x_3+x_4=0\}.
 \]
@@ -156,7 +156,7 @@ Both summands are $S_4$-stable; the first is the trivial representation and $W$ 
 
 ::: pf-proof
 
-Permuting coordinates fixes $(1,1,1,1)$ and preserves the sum of coordinates, so both subspaces are invariant. Their dimensions are $1$ and $3$, and their direct sum is all of $\mathbb C^4$. By step [](#s4){.pf-ref}, the full permutation character is $\operatorname{fix}$, so subtracting the trivial character gives $\chi_W=\operatorname{fix}-1$.
+Permuting coordinates fixes $(1,1,1,1)$ and preserves the sum of coordinates, so both subspaces are invariant. Their dimensions are $1$ and $3$, and their direct sum is all of $\CC^4$. By step [](#s4){.pf-ref}, the full permutation character is $\operatorname{fix}$, so subtracting the trivial character gives $\chi_W=\operatorname{fix}-1$.
 
 :::
 

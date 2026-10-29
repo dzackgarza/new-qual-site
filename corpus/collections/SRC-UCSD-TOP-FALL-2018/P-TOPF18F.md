@@ -29,11 +29,11 @@ Let
 $$
 X=\mathbb{RP}^4\vee S^3.
 $$
-Then $\pi_1(X)\cong\mathbb Z/2$.
+Then $\pi_1(X)\cong\ZZ/2$.
 
 ::: pf-proof
 
-The $S^3$ summand is simply connected and $\pi_1(\mathbb{RP}^4)=\mathbb Z/2$.
+The $S^3$ summand is simply connected and $\pi_1(\mathbb{RP}^4)=\ZZ/2$.
 
 :::
 
@@ -58,7 +58,7 @@ The universal cover of $\mathbb{RP}^4$ is $S^4$. The simply connected wedge summ
 
 The space $\widetilde X$ is $2$-connected and
 $$
-H_3(\widetilde X;\mathbb Z)\cong\mathbb Z^2.
+H_3(\widetilde X;\ZZ)\cong\ZZ^2.
 $$
 
 ::: pf-proof
@@ -73,7 +73,7 @@ The wedge contains two $3$-sphere summands and one $4$-sphere summand; it has no
 
 By Hurewicz,
 $$
-\pi_3(\widetilde X)\cong H_3(\widetilde X)\cong\mathbb Z^2.
+\pi_3(\widetilde X)\cong H_3(\widetilde X)\cong\ZZ^2.
 $$
 
 ::: pf-proof
@@ -88,7 +88,7 @@ The degree-$3$ Hurewicz map is an isomorphism for a $2$-connected space.
 
 Therefore
 $$
-\boxed{\pi_3(\mathbb{RP}^4\vee S^3)\cong\mathbb Z^2.}
+\boxed{\pi_3(\mathbb{RP}^4\vee S^3)\cong\ZZ^2.}
 $$
 
 ::: pf-proof

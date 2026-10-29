@@ -30,7 +30,7 @@ Extending Proposition 4I.3, show that the $(2k+1)$-skeleton of the suspension of
 ::: {.solution}
 Let
 \[
-K=K(\mathbb Z_{p^n},1)
+K=K(\ZZ_{p^n},1)
 \]
 be the infinite-dimensional lens space, and let
 \[
@@ -43,7 +43,7 @@ be the splitting of Proposition 4I.3. Choose each \(X_i\) in the minimal-cell fo
 \]
 and no other positive-dimensional cells.
 
-A lens space of sufficiently high dimension with fundamental group \(\mathbb Z_{p^n}\) is a finite skeleton of the standard infinite lens space \(K\). Thus, provided its dimension is at least \(2k\), its suspension has \((2k+1)\)-skeleton equal to
+A lens space of sufficiently high dimension with fundamental group \(\ZZ_{p^n}\) is a finite skeleton of the standard infinite lens space \(K\). Thus, provided its dimension is at least \(2k\), its suspension has \((2k+1)\)-skeleton equal to
 \[
 (\Sigma K)^{(2k+1)}.
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA42
 kind: problem
-title: Coplanarity of four points in $\mathbb{R}^3$
+title: Coplanarity of four points in $\RR^3$
 classification:
   areas: [prelim]
   topics: []
@@ -125,7 +125,7 @@ Therefore the four points do not lie in one plane.
 
 ::: pf-proof
 
-Four points in $\mathbb R^3$ are coplanar exactly when the three displacement
+Four points in $\RR^3$ are coplanar exactly when the three displacement
 vectors from one of the points are linearly dependent. Step [](#s1-4){.pf-ref} shows that
 they are linearly independent.
 

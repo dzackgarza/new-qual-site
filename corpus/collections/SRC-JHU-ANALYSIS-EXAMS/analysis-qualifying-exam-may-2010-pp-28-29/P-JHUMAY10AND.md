@@ -28,10 +28,10 @@ audit:
 4. Let h be a harmonic function on the domain
 
 $$
-U : = \left\{ z \in \mathbb { C } : | z | > 1 \right\} .
+U : = \left\{ z \in \CC : | z | > 1 \right\} .
 $$
 
-Show that there exists a constant $c \in \mathbb { R }$ and a holomorphic function $f$ on $U$ such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
+Show that there exists a constant $c \in \RR$ and a holomorphic function $f$ on $U$ such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
 :::
 
 ::: {.solution}
@@ -49,7 +49,7 @@ Cauchy–Riemann equations for $q$ are precisely
 $h_{xx}=-h_{yy}$ and $h_{xy}=h_{yx}$, so harmonicity
 makes $q$ holomorphic on $U$. Its Laurent expansion is
 $$
-q(z)=\sum_{n\in\mathbb Z}a_nz^n\qquad(1<|z|<\infty)
+q(z)=\sum_{n\in\ZZ}a_nz^n\qquad(1<|z|<\infty)
 $$
 [@SS03]. For any $r>1$, its residue coefficient is
 $$
@@ -77,7 +77,7 @@ Subtracting $a/z$ gives a holomorphic gradient with a single-valued primitive.
 Set $c=-a$. The function $q+c/z=q-a/z$ has no
 $z^{-1}$ term. Define
 $$
-F(z)=\sum_{\substack{n\in\mathbb Z\\n\ne-1}}
+F(z)=\sum_{\substack{n\in\ZZ\\n\ne-1}}
 \frac{a_n}{n+1}z^{n+1}.
 $$
 To justify this definition, fix $1<r\leq|z|\leq R<\infty$
@@ -122,7 +122,7 @@ Then $f=F-d$ is holomorphic on $U$ and satisfies
 $$
 \operatorname{Re}f=h+c\log|z|,
 \qquad
-c=-\frac1{2\pi i}\int_{|z|=r}(h_x-ih_y)\,dz\in\mathbb R.
+c=-\frac1{2\pi i}\int_{|z|=r}(h_x-ih_y)\,dz\in\RR.
 $$
 This is the asserted representation.
 

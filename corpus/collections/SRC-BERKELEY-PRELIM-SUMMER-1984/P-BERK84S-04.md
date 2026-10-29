@@ -33,7 +33,7 @@ $$
 be a real matrix with $a , b , c , d > 0$ . Show that A has an eigenvector
 
 $$
-{ \binom { x } { y } } \in \mathbb { R } ^ { 2 }
+{ \binom { x } { y } } \in \RR ^ { 2 }
 $$
 
 with x, $y > 0$

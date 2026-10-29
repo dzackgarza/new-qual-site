@@ -36,17 +36,17 @@ Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty 
 
 ::: pf-step
 
-For each $N\ge1$, the map $T_N\colon X^*\to(\mathbb R^N,\|\cdot\|_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
+For each $N\ge1$, the map $T_N\colon X^*\to(\RR^N,\|\cdot\|_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
 
 ::: pf-proof
 
 For $N\ge1$, define
 \[
-T_N:X^*\to\mathbb R^N,
+T_N:X^*\to\RR^N,
 \qquad
 T_N(f)=(f(x_1),\ldots,f(x_N)),
 \]
-where $\mathbb R^N$ is equipped with the $\ell^1$ norm. Then
+where $\RR^N$ is equipped with the $\ell^1$ norm. Then
 \[
 \|T_N(f)\|_1
 =\sum_{k=1}^N|f(x_k)|

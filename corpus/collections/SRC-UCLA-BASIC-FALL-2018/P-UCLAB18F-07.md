@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:\mathbb R^n\to\mathbb R^n$ be linear and satisfy $T^2=T$.
+Let $T:\RR^n\to\RR^n$ be linear and satisfy $T^2=T$.
 Show that there is a basis in which the matrix of $T$ is diagonal with entries consisting only of $1$'s followed by $0$'s.
 :::
 
@@ -29,7 +29,7 @@ Show that there is a basis in which the matrix of $T$ is diagonal with entries c
 
 One has
 \[
-\mathbb R^n
+\RR^n
 =
 \operatorname{im}T
 \oplus
@@ -41,7 +41,7 @@ One has
 
 For every
 \[
-v\in\mathbb R^n,
+v\in\RR^n,
 \]
 write
 \[
@@ -65,7 +65,7 @@ v-Tv\in\ker T.
 \]
 Thus
 \[
-\mathbb R^n
+\RR^n
 =
 \operatorname{im}T+\ker T.
 \]
@@ -151,7 +151,7 @@ Then
 \[
 u_1,\ldots,u_m,v_1,\ldots,v_{n-m}
 \]
-is a basis of $\mathbb R^n$.
+is a basis of $\RR^n$.
 
 
 ::: pf-proof

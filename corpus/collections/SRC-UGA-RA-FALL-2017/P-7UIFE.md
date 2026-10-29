@@ -16,19 +16,19 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\varphi \in C_c^\infty(\mathbb{R})$ be a smooth, compactly supported function supported in $[-N, N]$ such that $\int_\mathbb{R} \varphi(x) \, dx = 1$. For $f \in L^1(\mathbb{R})$ and $j \in \mathbb{N}$, define the mollifier sequence
+Let $\varphi \in C_c^\infty(\RR)$ be a smooth, compactly supported function supported in $[-N, N]$ such that $\int_\RR \varphi(x) \, dx = 1$. For $f \in L^1(\RR)$ and $j \in \NN$, define the mollifier sequence
 $$
-K_j(x) = j \varphi(j x), \qquad (f * K_j)(x) = \int_\mathbb{R} f(x - y) K_j(y) \, dy.
+K_j(x) = j \varphi(j x), \qquad (f * K_j)(x) = \int_\RR f(x - y) K_j(y) \, dy.
 $$
 Prove:
 
-(a) Each $f * K_j$ is smooth ($C^\infty(\mathbb{R})$), and if $f$ is compactly supported, then $f * K_j \in C_c^\infty(\mathbb{R})$.
+(a) Each $f * K_j$ is smooth ($C^\infty(\RR)$), and if $f$ is compactly supported, then $f * K_j \in C_c^\infty(\RR)$.
 
-(b) $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
+(b) $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\RR)} = 0$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that convolution with a smooth compactly supported mollifier yields smooth functions in (a), and that $K_j$ acts as an approximate identity in $L^1(\mathbb{R})$ in (b).
+**Goal:** Prove that convolution with a smooth compactly supported mollifier yields smooth functions in (a), and that $K_j$ acts as an approximate identity in $L^1(\RR)$ in (b).
 
 ::: pf
 
@@ -39,28 +39,28 @@ Part (a): Smoothness and support of $f * K_j$.
 
 ::: pf-step
 Change of variables in convolution:
-For any $x \in \mathbb{R}$, by substitution $y = x - t$:
-$$(f * K_j)(x) = \int_\mathbb{R} f(y) K_j(x - y) \, dy = \int_\mathbb{R} f(y) j \varphi(j(x - y)) \, dy.$$
+For any $x \in \RR$, by substitution $y = x - t$:
+$$(f * K_j)(x) = \int_\RR f(y) K_j(x - y) \, dy = \int_\RR f(y) j \varphi(j(x - y)) \, dy.$$
 
 :::
 
 ::: pf-step
 First derivative of $f * K_j$:
 For $h \ne 0$, the difference quotient is
-$$\frac{(f * K_j)(x + h) - (f * K_j)(x)}{h} = \int_\mathbb{R} f(y) \left( \frac{K_j(x + h - y) - K_j(x - y)}{h} \right) dy.$$
+$$\frac{(f * K_j)(x + h) - (f * K_j)(x)}{h} = \int_\RR f(y) \left( \frac{K_j(x + h - y) - K_j(x - y)}{h} \right) dy.$$
 By the Mean Value Theorem, for each $x, y, h$, there exists $\xi$ between $x - y$ and $x + h - y$ such that
 $$\left| \frac{K_j(x + h - y) - K_j(x - y)}{h} \right| = |K_j'(\xi)| = j^2 |\varphi'(j \xi)| \le j^2 \|\varphi'\|_\infty.$$
-Since $\varphi \in C_c^\infty(\mathbb{R})$, $\|\varphi'\|_\infty < \infty$, so the integrand is dominated by the integrable function $j^2 \|\varphi'\|_\infty |f(y)| \in L^1(\mathbb{R})$.
+Since $\varphi \in C_c^\infty(\RR)$, $\|\varphi'\|_\infty < \infty$, so the integrand is dominated by the integrable function $j^2 \|\varphi'\|_\infty |f(y)| \in L^1(\RR)$.
 By the Dominated Convergence Theorem:
-$$(f * K_j)'(x) = \int_\mathbb{R} f(y) K_j'(x - y) \, dy = (f * K_j')(x).$$
+$$(f * K_j)'(x) = \int_\RR f(y) K_j'(x - y) \, dy = (f * K_j')(x).$$
 
 :::
 
 ::: pf-step
 Higher derivatives ($C^\infty$ property):
-By induction, for every $m \in \mathbb{N}$, the $m$-th derivative exists and satisfies
-$$(f * K_j)^{(m)}(x) = (f * K_j^{(m)})(x) = \int_\mathbb{R} f(y) j^{m+1} \varphi^{(m)}(j(x - y)) \, dy.$$
-Since $\varphi^{(m)} \in C_c^\infty(\mathbb{R})$ is bounded and uniformly continuous, each $(f * K_j)^{(m)}$ is continuous on $\mathbb{R}$. Thus $f * K_j \in C^\infty(\mathbb{R})$.
+By induction, for every $m \in \NN$, the $m$-th derivative exists and satisfies
+$$(f * K_j)^{(m)}(x) = (f * K_j^{(m)})(x) = \int_\RR f(y) j^{m+1} \varphi^{(m)}(j(x - y)) \, dy.$$
+Since $\varphi^{(m)} \in C_c^\infty(\RR)$ is bounded and uniformly continuous, each $(f * K_j)^{(m)}$ is continuous on $\RR$. Thus $f * K_j \in C^\infty(\RR)$.
 
 :::
 
@@ -82,23 +82,23 @@ Part (b): $L^1$ convergence $\lim_{j \to \infty} \|f * K_j - f\|_{L^1} = 0$.
 
 ::: pf-step
 Normalization identity:
-Using $\int_\mathbb{R} K_j(y) \, dy = \int_\mathbb{R} j \varphi(jy) \, dy = \int_\mathbb{R} \varphi(u) \, du = 1$, we write
-$$f(x) = f(x) \int_\mathbb{R} K_j(y) \, dy = \int_\mathbb{R} f(x) K_j(y) \, dy.$$
+Using $\int_\RR K_j(y) \, dy = \int_\RR j \varphi(jy) \, dy = \int_\RR \varphi(u) \, du = 1$, we write
+$$f(x) = f(x) \int_\RR K_j(y) \, dy = \int_\RR f(x) K_j(y) \, dy.$$
 
 :::
 
 ::: pf-step
 Integral representation of error:
-$$(f * K_j)(x) - f(x) = \int_\mathbb{R} (f(x - y) - f(x)) K_j(y) \, dy.$$
+$$(f * K_j)(x) - f(x) = \int_\RR (f(x - y) - f(x)) K_j(y) \, dy.$$
 
 :::
 
 ::: pf-step
 Fubini-Tonelli bound:
 Taking the $L^1$ norm:
-$$\|f * K_j - f\|_{L^1} = \int_\mathbb{R} \left| \int_\mathbb{R} (f(x - y) - f(x)) K_j(y) \, dy \right| dx \le \int_\mathbb{R} \int_\mathbb{R} |f(x - y) - f(x)| |K_j(y)| \, dy \, dx.$$
+$$\|f * K_j - f\|_{L^1} = \int_\RR \left| \int_\RR (f(x - y) - f(x)) K_j(y) \, dy \right| dx \le \int_\RR \int_\RR |f(x - y) - f(x)| |K_j(y)| \, dy \, dx.$$
 Applying Tonelli's Theorem:
-$$\|f * K_j - f\|_{L^1} \le \int_\mathbb{R} |K_j(y)| \left( \int_\mathbb{R} |f(x - y) - f(x)| \, dx \right) dy = \int_\mathbb{R} |K_j(y)| \|\tau_y f - f\|_{L^1} \, dy,$$
+$$\|f * K_j - f\|_{L^1} \le \int_\RR |K_j(y)| \left( \int_\RR |f(x - y) - f(x)| \, dx \right) dy = \int_\RR |K_j(y)| \|\tau_y f - f\|_{L^1} \, dy,$$
 where $\tau_y f(x) = f(x - y)$.
 
 :::
@@ -106,7 +106,7 @@ where $\tau_y f(x) = f(x - y)$.
 ::: pf-step
 Change of variables $u = j y$:
 Since $K_j(y) = j \varphi(jy)$, substituting $u = j y$ ($dy = \frac{1}{j} du$) yields
-$$\|f * K_j - f\|_{L^1} \le \int_\mathbb{R} |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du = \int_{-N}^N |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du.$$
+$$\|f * K_j - f\|_{L^1} \le \int_\RR |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du = \int_{-N}^N |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du.$$
 
 :::
 
@@ -122,7 +122,7 @@ $$\lim_{j \to \infty} \int_{-N}^N |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du 
 :::
 
 ::: pf-step
-Therefore $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
+Therefore $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\RR)} = 0$.
 
 :::
 
@@ -134,7 +134,7 @@ Therefore $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
 Conclusion:
 
 ::: pf-proof
-$f * K_j \in C^\infty(\mathbb{R})$, with compact support if $f$ has compact support, and $f * K_j \to f$ in $L^1(\mathbb{R})$.
+$f * K_j \in C^\infty(\RR)$, with compact support if $f$ has compact support, and $f * K_j \to f$ in $L^1(\RR)$.
 :::
 
 :::

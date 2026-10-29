@@ -50,12 +50,12 @@ a field.
 
 Given a finite group $G$, take algebraically independent
 indeterminates $X_h$ indexed by $h\in G$, and put
-$F=\mathbb Q(X_h:h\in G)$. For $g\in G$, the permutation
+$F=\QQ(X_h:h\in G)$. For $g\in G$, the permutation
 of the indeterminates given by
 $$
 \sigma_g(X_h)=X_{gh}
 $$
-extends to a polynomial-ring automorphism fixing $\mathbb Q$,
+extends to a polynomial-ring automorphism fixing $\QQ$,
 with inverse $\sigma_{g^{-1}}$. It extends further to the
 fraction field by $\sigma_g(A/B)=\sigma_g(A)/\sigma_g(B)$:
 the denominator remains nonzero, and equal fractions remain

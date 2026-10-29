@@ -35,7 +35,7 @@ Under the standard convention, $A_{ij}=0$ for $i<j$ says that $A$ is lower trian
 We construct an orthonormal basis for each form.
 
 For the standard upper-triangular form, use induction on $n=\dim V$.
-Over $\mathbb C$, the adjoint $T^*$ has an eigenvector $0\ne w\in V$.
+Over $\CC$, the adjoint $T^*$ has an eigenvector $0\ne w\in V$.
 Let $W=\mathbb Cw$.
 Then $W$ is $T^*$-invariant, so by the orthogonal-complement criterion of the hint, $W^\perp$ is $T$-invariant.
 By induction, $T|_{W^\perp}$ has an orthonormal basis in which its matrix is upper triangular.

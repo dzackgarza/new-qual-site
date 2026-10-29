@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X,\mathcal B,\mu)$ be a measure space and let $f:X\to\mathbb R$ be integrable.
+Let $(X,\mathcal B,\mu)$ be a measure space and let $f:X\to\RR$ be integrable.
 Prove that
 \[
 \{x\in X:f(x)\ne0\}

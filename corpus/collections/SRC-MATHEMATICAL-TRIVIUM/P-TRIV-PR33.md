@@ -21,7 +21,7 @@ Normal numbers
 Let $x \in [ 0 , 1 )$ . Consider the infinite decimal notation for x:
 
 $$
-x = 0 . a _ { 1 } a _ { 2 } . . . , \ a _ { i } = 0 , 1 , . . . , 9 , \ i \in \mathbb { N } ,\tag{55}
+x = 0 . a _ { 1 } a _ { 2 } . . . , \ a _ { i } = 0 , 1 , . . . , 9 , \ i \in \NN ,\tag{55}
 $$
 
 where for the numbers with finite amount of decimal places we complete the records with infinite series of 0s. Now select randomly one x. What can one say about the typical distribution of digits $0 , . . . , 9$ in $x ?$ To answer the question, consider the following sequence of approximations:

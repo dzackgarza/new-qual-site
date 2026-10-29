@@ -26,29 +26,29 @@ audit:
 ---
 
 ::: {.problem}
-Show that if a closed orientable manifold $M$ of dimension $2k$ has $H_{k-1}(M; \mathbb{Z})$ torsionfree, then $H_k(M; \mathbb{Z})$ is also torsionfree.
+Show that if a closed orientable manifold $M$ of dimension $2k$ has $H_{k-1}(M; \ZZ)$ torsionfree, then $H_k(M; \ZZ)$ is also torsionfree.
 :::
 
 ::: {.solution}
-Since $M$ is a closed manifold, all its homology groups are finitely generated. Thus the hypothesis that $H_{k-1}(M;\mathbb Z)$ is torsionfree implies that it is free abelian, and therefore
+Since $M$ is a closed manifold, all its homology groups are finitely generated. Thus the hypothesis that $H_{k-1}(M;\ZZ)$ is torsionfree implies that it is free abelian, and therefore
 \[
-\operatorname{Ext}(H_{k-1}(M;\mathbb Z),\mathbb Z)=0.
+\operatorname{Ext}(H_{k-1}(M;\ZZ),\ZZ)=0.
 \]
 The universal coefficient theorem for cohomology gives
 \[
-0\to \operatorname{Ext}(H_{k-1}(M),\mathbb Z)
-\to H^k(M;\mathbb Z)
-\to \operatorname{Hom}(H_k(M),\mathbb Z)\to0,
+0\to \operatorname{Ext}(H_{k-1}(M),\ZZ)
+\to H^k(M;\ZZ)
+\to \operatorname{Hom}(H_k(M),\ZZ)\to0,
 \]
 so
 \[
-H^k(M;\mathbb Z)\cong\operatorname{Hom}(H_k(M),\mathbb Z).
+H^k(M;\ZZ)\cong\operatorname{Hom}(H_k(M),\ZZ).
 \]
 The group on the right is free abelian.
 
 Poincaré duality for the closed orientable $2k$-manifold $M$ gives
 \[
-H^k(M;\mathbb Z)\cong H_{2k-k}(M;\mathbb Z)=H_k(M;\mathbb Z).
+H^k(M;\ZZ)\cong H_{2k-k}(M;\ZZ)=H_k(M;\ZZ).
 \]
-Hence $H_k(M;\mathbb Z)$ is free abelian, in particular torsionfree.
+Hence $H_k(M;\ZZ)$ is free abelian, in particular torsionfree.
 :::

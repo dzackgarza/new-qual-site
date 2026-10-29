@@ -60,7 +60,7 @@ Nonnegativity is immediate. If $\|f\|_{1/3}=0$, then
 for all $x,y$, so $f$ is constant. Since $f(0)=0$, this constant is $0$, hence $f=0$.
 Conversely $\|0\|_{1/3}=0$.
 
-For $a\in\mathbb R$,
+For $a\in\RR$,
 \[
 \|af\|_{1/3}
 =|a|\,\|f\|_{1/3}.
@@ -115,7 +115,7 @@ Let $(f_n)$ be Cauchy in $\|\cdot\|_{1/3}$. By step [](#s2){.pf-ref},
 \|f_n-f_m\|_\infty
 \le \|f_n-f_m\|_{1/3},
 \]
-so $(f_n)$ is uniformly Cauchy. Since $\mathbb R$ is complete, there is a function $f:[0,1]\to\mathbb R$ such that $f_n\to f$ uniformly. Because each $f_n(0)=0$,
+so $(f_n)$ is uniformly Cauchy. Since $\RR$ is complete, there is a function $f:[0,1]\to\RR$ such that $f_n\to f$ uniformly. Because each $f_n(0)=0$,
 \[
 f(0)=\lim_{n\to\infty}f_n(0)=0.
 \]

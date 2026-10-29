@@ -87,7 +87,7 @@ Therefore
 \widetilde H^j(A)
 \cong
 \begin{cases}
-\mathbb Z,&j=1,\\
+\ZZ,&j=1,\\
 0,&j\ne1.
 \end{cases}
 \]
@@ -103,7 +103,7 @@ The reduced cohomology of the circle is
 \[
 \widetilde H^1(S^1)
 \cong
-\mathbb Z
+\ZZ
 \]
 and vanishes in all other degrees.
 
@@ -152,7 +152,7 @@ The complement of every thickened knot has homology
 H_i(S^3\setminus\operatorname{im}(K))
 \cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
+\ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}
 }
@@ -177,7 +177,7 @@ In that degree,
 \[
 \widetilde H_1(S^3\setminus A)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 For
@@ -194,7 +194,7 @@ Alexander duality gives
 \]
 so the complement is connected and
 \[
-H_0\cong\mathbb Z.
+H_0\cong\ZZ.
 \]
 All higher reduced homology groups vanish.
 
@@ -290,7 +290,7 @@ Its relative cohomology is
 H^j(B,B\cap\partial B^4)
 \cong
 \begin{cases}
-\mathbb Z,&j=2,\\
+\ZZ,&j=2,\\
 0,&j\ne2.
 \end{cases}
 \]
@@ -318,7 +318,7 @@ H^j(D^2,S^1)
 \]
 which is
 \[
-\mathbb Z
+\ZZ
 \]
 in degree $2$ and zero otherwise.
 
@@ -375,7 +375,7 @@ Therefore the slice-disk complement has homology
 H_i(B^4\setminus\operatorname{im}(\Delta))
 \cong
 \begin{cases}
-\mathbb Z,&i=0,1,\\
+\ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}
 }
@@ -396,7 +396,7 @@ In that degree,
 \[
 \widetilde H_1(B^4\setminus B)
 \cong
-\mathbb Z.
+\ZZ.
 \]
 
 For
@@ -411,7 +411,7 @@ H^3(B,B\cap\partial B^4)
 \]
 so the complement is connected and
 \[
-H_0\cong\mathbb Z.
+H_0\cong\ZZ.
 \]
 All higher groups vanish.
 

@@ -474,11 +474,11 @@ H_1
 \cong
 \pi_1^{\mathrm{ab}}
 \cong
-\mathbb Z\langle b\rangle
+\ZZ\langle b\rangle
 \oplus
-\mathbb Z\langle d\rangle
+\ZZ\langle d\rangle
 \oplus
-\mathbb Z/2\langle a\rangle}.
+\ZZ/2\langle a\rangle}.
 \]
 
 
@@ -498,7 +498,7 @@ Thus
 \boxed{
 H_1
 \cong
-\mathbb Z^2\oplus\mathbb Z/2}.
+\ZZ^2\oplus\ZZ/2}.
 \]
 
 

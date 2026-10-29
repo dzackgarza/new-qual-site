@@ -29,7 +29,7 @@ Prove the claim or give a counterexample.
 ::: {.solution}
 No. The extension
 \[
-\overline{\mathbb Q}/\mathbb Q
+\overline{\QQ}/\QQ
 \]
 is algebraic but infinite.
 
@@ -37,7 +37,7 @@ is algebraic but infinite.
 
 ::: pf-step
 
-Every element of $\overline{\mathbb Q}$ is algebraic over $\mathbb Q$.
+Every element of $\overline{\QQ}$ is algebraic over $\QQ$.
 
 ::: pf-proof
 
@@ -50,7 +50,7 @@ extension of the base field.
 
 ::: pf-step
 
-The degree $[\overline{\mathbb Q}:\mathbb Q]$ is infinite.
+The degree $[\overline{\QQ}:\QQ]$ is infinite.
 
 ::: pf-proof
 
@@ -58,13 +58,13 @@ For every positive integer $n$, the polynomial
 \[
 x^n-2
 \]
-is irreducible over $\mathbb Q$ by Eisenstein's criterion at $2$. Hence, if
+is irreducible over $\QQ$ by Eisenstein's criterion at $2$. Hence, if
 $\alpha_n=\sqrt[n]{2}$, then
 \[
-[\mathbb Q(\alpha_n):\mathbb Q]=n.
+[\QQ(\alpha_n):\QQ]=n.
 \]
-Each field $\mathbb Q(\alpha_n)$ lies inside $\overline{\mathbb Q}$. If the
-degree of $\overline{\mathbb Q}/\mathbb Q$ were finite, every intermediate
+Each field $\QQ(\alpha_n)$ lies inside $\overline{\QQ}$. If the
+degree of $\overline{\QQ}/\QQ$ were finite, every intermediate
 extension would have degree bounded by that finite number, contradicting the
 existence of these subextensions of arbitrarily large degree.
 

@@ -28,7 +28,7 @@ Some possible approaches are (a) a direct topological argument; (b) the Weierstr
 :::
 
 ::: {.solution}
-Use the involution $\iota:T^2\to T^2$, $\iota([z])=[-z]$ on a complex torus $T^2=\mathbb C/\Lambda$.
+Use the involution $\iota:T^2\to T^2$, $\iota([z])=[-z]$ on a complex torus $T^2=\CC/\Lambda$.
 
 ::: pf
 
@@ -66,7 +66,7 @@ The involution acts freely on $T^2\setminus F$, so the quotient map restricts to
 \[
 T^2\setminus F\longrightarrow S^2\setminus B.
 \]
-A free action of the finite group $\mathbb Z/2$ is a covering action; every fibre has two points.
+A free action of the finite group $\ZZ/2$ is a covering action; every fibre has two points.
 Thus this restriction is a two-sheeted covering.
 
 :::

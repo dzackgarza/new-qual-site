@@ -39,9 +39,9 @@ X=\bigcup_{m\ge1}C_m
 be the shrinking wedge, with common point $x_0$ and with the circles numbered so that their diameters tend to zero.
 In the covering $q:\widetilde X\to X$ shown in the source figure, the horizontal line maps to $C_1$ as the usual universal cover
 \[
-\mathbb R\to S^1,
+\RR\to S^1,
 \]
-and at every integer point $n\in\mathbb Z$ there is an attached shrinking wedge
+and at every integer point $n\in\ZZ$ there is an attached shrinking wedge
 \[
 E_{n,2}\cup E_{n,3}\cup\cdots
 \]
@@ -58,7 +58,7 @@ a homeomorphism for $m\ge2$.
 Choose integers
 \[
 r_n\ge2,
-\qquad n\in\mathbb Z,
+\qquad n\in\ZZ,
 \]
 such that
 \[
