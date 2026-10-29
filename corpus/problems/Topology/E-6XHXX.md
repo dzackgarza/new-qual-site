@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6XHXX
 kind: problem
-title: $\mathbb{R}$ is separable
+title: $\RR$ is separable
 classification:
   areas:
   - topology
@@ -31,16 +31,16 @@ Show that $\RR$ is separable.
 
 ::: pf-step
 
-The subset $\mathbb Q\subset\mathbb R$ is countable.
+The subset $\QQ\subset\RR$ is countable.
 
 ::: pf-proof
 
 The map
 $$
-\mathbb Z\times\mathbb Z_{>0}\longrightarrow\mathbb Q,
+\ZZ\times\ZZ_{>0}\longrightarrow\QQ,
 \qquad (p,q)\longmapsto p/q,
 $$
-is surjective, and $\mathbb Z\times\mathbb Z_{>0}$ is countable.
+is surjective, and $\ZZ\times\ZZ_{>0}$ is countable.
 
 :::
 
@@ -48,16 +48,16 @@ is surjective, and $\mathbb Z\times\mathbb Z_{>0}$ is countable.
 
 ::: pf-step
 
-The subset $\mathbb Q$ is dense in $\mathbb R$.
+The subset $\QQ$ is dense in $\RR$.
 
 ::: pf-proof
 
-Let $(a,b)$ be a nonempty open interval. Choose $q\in\mathbb Z_{>0}$ with
+Let $(a,b)$ be a nonempty open interval. Choose $q\in\ZZ_{>0}$ with
 $q(b-a)>1$. Then there is an integer $p$ with
 $$
 qa<p<qb,
 $$
-so $p/q\in(a,b)\cap\mathbb Q$. Hence every nonempty basic open set meets $\mathbb Q$.
+so $p/q\in(a,b)\cap\QQ$. Hence every nonempty basic open set meets $\QQ$.
 
 :::
 
@@ -65,7 +65,7 @@ so $p/q\in(a,b)\cap\mathbb Q$. Hence every nonempty basic open set meets $\mathb
 
 ::: pf-step
 
-Therefore $\mathbb R$ has a countable dense subset and is separable.
+Therefore $\RR$ has a countable dense subset and is separable.
 
 :::
 
