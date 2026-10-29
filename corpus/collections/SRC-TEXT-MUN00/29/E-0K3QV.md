@@ -23,7 +23,8 @@ Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\ov
 :::
 
 ::: {.solution}
-**Goal:** Prove that the one-point compactification $S_\Omega^*$ of the minimal uncountable well-ordered set $S_\Omega = [0, \Omega)$ is homeomorphic to $\overline{S}_\Omega = [0, \Omega]$ equipped with the order topology.
+
+Write $S_\Omega = [0, \Omega)$, write $S_\Omega^* = S_\Omega \cup \{\infty\}$ for its one-point compactification, and give $\overline{S}_\Omega = [0, \Omega]$ the order topology.
 
 ::: pf
 
