@@ -41,7 +41,7 @@ By the Sylow theorems, $n_p\mid q$ and $n_p\equiv1\pmod p$, so $n_p\in\{1,q\}$. 
 
 :::
 
-::: {.pf-step #small-q}
+::: pf-step
 If $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
 
 ::: pf-proof
