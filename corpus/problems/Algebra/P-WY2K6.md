@@ -27,28 +27,28 @@ State and prove **Lagrange's Theorem** for finite groups: if $G$ is a finite gro
 
 ::: {.solution}
 The left cosets of $H$ in $G$ partition $G$. Indeed, define
-\[
+$$
 x\sim y\iff x^{-1}y\in H.
-\]
+$$
 This is an equivalence relation, and the equivalence class of $g\in G$ is exactly
-\[
+$$
 gH=\{gh:h\in H\}.
-\]
+$$
 Hence
-\[
+$$
 G=\bigsqcup_{i=1}^{[G:H]} g_iH
-\]
+$$
 for any choice of left-coset representatives $g_i$.
 
 For each $g\in G$, left multiplication
-\[
+$$
 H\to gH,\qquad h\mapsto gh
-\]
+$$
 is a bijection, so every left coset has cardinality $|H|$. Therefore
-\[
+$$
 |G|
 =\sum_{i=1}^{[G:H]}|g_iH|
 =[G:H]|H|.
-\]
+$$
 In particular, $|H|$ divides $|G|$.
 :::
