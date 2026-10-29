@@ -27,20 +27,43 @@ What about completions?
 :::
 
 ::: {.solution}
-Standard examples of local rings include:
+::: pf
 
-- any field, with maximal ideal $(0)$;
-- a localization $R_{\mathfrak m}$ at a maximal ideal, whose maximal ideal is $\mathfrak mR_{\mathfrak m}$;
-- a discrete valuation ring such as $\mathbb Z_{(p)}$ or $k[[t]]$;
-- the formal power-series ring $k[[x_1,\dots,x_n]]$, whose maximal ideal is $(x_1,\dots,x_n)$.
+::: pf-step
+A field $k$ is local with maximal ideal $(0)$.
 
-If $(R,\mathfrak m)$ is local, its $\mathfrak m$-adic completion
-\[
-\widehat R=\varprojlim R/\mathfrak m^n
-\]
-is again local, with maximal ideal the kernel of $\widehat R\to R/\mathfrak m$. For example,
-\[
-\mathbb Z_p=\varprojlim_n\mathbb Z/p^n\mathbb Z
-\]
-is the $p$-adic completion of $\mathbb Z_{(p)}$ and is local with maximal ideal $p\mathbb Z_p$.
+::: pf-proof
+Its only proper ideal is $(0)$.
+:::
+
+:::
+
+::: pf-step
+For a prime ideal $\mathfrak p$ of a commutative ring $R$, the localization $R_{\mathfrak p}$ is local with maximal ideal $\mathfrak pR_{\mathfrak p}$. For example, $\ZZ_{(p)}$ is local with maximal ideal $p\ZZ_{(p)}$.
+
+::: pf-proof
+An element $a/s$ with $a\notin\mathfrak p$ has inverse $s/a$, so every element outside $\mathfrak pR_{\mathfrak p}$ is a unit, and $\mathfrak pR_{\mathfrak p}$ is a proper ideal.
+:::
+
+:::
+
+::: pf-step
+For a field $k$, the power series ring $k[[x_1,\ldots,x_n]]$ is local with maximal ideal $(x_1,\ldots,x_n)$.
+
+::: pf-proof
+A power series $f$ with $f(0)=c\ne0$ is a unit: $f=c(1-g)$ with $g\in(x_1,\ldots,x_n)$, and $\sum_{j\ge0}g^j$ converges formally to $(1-g)^{-1}$. The non-units are exactly the series with zero constant term, which form the ideal $(x_1,\ldots,x_n)$.
+:::
+
+:::
+
+::: pf-step
+If $(R,\mathfrak m)$ is a local ring, then its $\mathfrak m$-adic completion $\widehat R=\varprojlim R/\mathfrak m^n$ is local with maximal ideal $\ker(\widehat R\to R/\mathfrak m)$. For example, $\ZZ_p=\varprojlim_n\ZZ/p^n\ZZ$, the completion of $\ZZ_{(p)}$, is local with maximal ideal $p\ZZ_p$, and $k[[t]]$ is the completion of $k[t]_{(t)}$.
+
+::: pf-proof
+Let $x=(x_n)\in\widehat R$ with $x_1\ne0$ in $R/\mathfrak m$, that is, $x\notin\ker(\widehat R\to R/\mathfrak m)$. Each $x_n$ lies outside $\mathfrak m/\mathfrak m^n$, the unique maximal ideal of the local ring $R/\mathfrak m^n$, so $x_n$ is a unit there. The inverses are compatible under the transition maps, so $x$ is a unit. Hence the non-units form the proper ideal $\ker(\widehat R\to R/\mathfrak m)$.
+:::
+
+:::
+
+:::
 :::
