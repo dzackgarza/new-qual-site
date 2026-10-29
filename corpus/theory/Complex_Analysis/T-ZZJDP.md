@@ -32,3 +32,7 @@ The following are equivalent.
 
 (vi) The Laurent expansion of $f$ on a punctured disc $\{z : 0<\abs{z-z_0}<\delta\}\subseteq\Omega$ has vanishing principal part: $f(z)=\sum_{k\geq0}c_k(z-z_0)^k$ there.
 :::
+
+::: {.remark title="Variations"}
+The equivalence (i)$\iff$(ii) alone is often stated as the Riemann extension theorem: an isolated singularity is removable exactly when the function stays bounded near it.
+:::
