@@ -27,7 +27,7 @@ $\sigma=(a_1\ a_k)(a_1\ a_{k-1})\cdots(a_1\ a_2)$, a product of $k-1$ transposit
 
 ::: pf-proof
 
-For $1\le i<k$, the transpositions to the right of $(a_1\ a_{i+1})$ do not move $a_i$ unless $i=1$, and they send $a_1$ to $a_2$; in both cases the product sends $a_i$ to $a_{i+1}$. The point $a_k$ is moved only by the last factor $(a_1\ a_k)$, which sends it to $a_1$. Every other point is fixed.
+The first factor applied, $(a_1\ a_2)$, sends $a_1$ to $a_2$, and no later factor moves $a_2$. For $2\le i\le k$, the first factor that moves $a_i$ is $(a_1\ a_i)$, which sends it to $a_1$; the next factor, $(a_1\ a_{i+1})$ when $i<k$, sends $a_1$ to $a_{i+1}$, and no later factor moves $a_{i+1}$. So the product sends $a_i\mapsto a_{i+1}$ for $i<k$ and $a_k\mapsto a_1$. Every other point is fixed.
 
 :::
 
