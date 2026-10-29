@@ -18,14 +18,18 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "Every $a\in R$ for a finite ring is either a unit or a zero divisor." without declaring R; the statement declares R a finite commutative ring with identity, the setting of the solution.
 ---
 
 ::: {.problem}
-Every $a\in R$ for a finite ring is either a unit or a zero divisor.
+Let $R$ be a finite commutative ring with identity. Every $a\in R$ is either a unit or a zero divisor.
 :::
 
 ::: {.solution}
-Let $R$ be a finite commutative ring with identity, and let $a\in R$.
+Let $a\in R$.
 
 ::: pf
 
@@ -36,13 +40,13 @@ If multiplication by $a$ is injective, then $a$ is a unit.
 ::: pf-proof
 
 Consider
-\[
+$$
 \mu_a:R\to R,\qquad x\mapsto ax.
-\]
-Since $R$ is finite, an injective self-map is surjective. Thus $1\in\operatorname{im}(\mu_a)$, so there exists $b\in R$ with
-\[
+$$
+Since $R$ is finite, an injective self-map is surjective. Thus $1\in\im(\mu_a)$, so there exists $b\in R$ with
+$$
 ab=1.
-\]
+$$
 Hence $a$ is a unit.
 
 :::
@@ -56,13 +60,13 @@ If $a$ is not a unit, then $a$ is a zero-divisor.
 ::: pf-proof
 
 By contraposition of step [](#s1){.pf-ref}, if $a$ is not a unit then $\mu_a$ is not injective. Hence there exist $x\ne y$ with
-\[
+$$
 ax=ay.
-\]
+$$
 Then $0\ne x-y$ and
-\[
+$$
 a(x-y)=0,
-\]
+$$
 so $a$ is a zero-divisor.
 
 :::
@@ -71,5 +75,4 @@ so $a$ is a zero-divisor.
 
 :::
 
-Therefore every element of a finite commutative ring with identity is either a unit or a zero-divisor.
 :::
