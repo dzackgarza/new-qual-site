@@ -5,7 +5,7 @@ kind: problem
 title: "Surface of revolution of $z=f(y)$ about the $y$-axis"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Multivariable Calculus, Surfaces of Revolution]
 relations: []
 review: draft
 audit:
