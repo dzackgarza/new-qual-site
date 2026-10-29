@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JWYGQ
 kind: problem
-title: $[\QQ(2^{3/2}):\QQ]$
+title: The degree of $\QQ(2^{3/2})$ over $\QQ$
 classification:
   areas:
   - algebra
@@ -21,26 +21,39 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 [\QQ(2^{3/2}):\QQ].
-\]
+$$
 :::
 
 ::: {.solution}
-Since
-\[
-2^{3/2}=2\sqrt2,
-\]
-and $2\in\QQ^\times$, we have
-\[
-\QQ(2^{3/2})=\QQ(2\sqrt2)=\QQ(\sqrt2).
-\]
-The polynomial $x^2-2$ is irreducible over $\QQ$ by the rational-root test (or Eisenstein at $2$), so
-\[
-[\QQ(\sqrt2):\QQ]=2.
-\]
-Therefore
-\[
-[\QQ(2^{3/2}):\QQ]=2.
-\]
+
+::: pf
+
+::: {.pf-step #same-field}
+
+$\QQ(2^{3/2})=\QQ(\sqrt2)$.
+
+::: pf-proof
+
+$2^{3/2}=2\sqrt2$ and $2\in\QQ^\times$.
+
+:::
+
+:::
+
+::: pf-step
+
+$[\QQ(2^{3/2}):\QQ]=\boxed{2}$.
+
+::: pf-proof
+
+The polynomial $x^2-2$ is irreducible over $\QQ$ by Eisenstein's criterion at $2$, so $[\QQ(\sqrt2):\QQ]=2$. Apply step [](#same-field){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
