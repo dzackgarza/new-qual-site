@@ -24,23 +24,49 @@ Show that if $u,v$ are harmonic conjugates, then
 :::
 
 ::: {.solution}
-Write $f=u+iv$, which is analytic.
+Let $f=u+iv$, which is holomorphic because $u$ and $v$ satisfy the Cauchy--Riemann equations.
 
-- $f^2$ is analytic, and $f^2 = (u+iv)^2 = u^2 - v^2 + i (2uv)$, which necessarily has harmonic components.
+::: pf
 
-- The imaginary part of $f^2$ is $2uv$, so $uv$ is harmonic.
+::: pf-step
+$u^2-v^2$ and $uv$ are harmonic.
 
-- $f'$ is analytic and $f' = u_x + iv_x$, which has harmonic components.
+::: pf-proof
+$f^2 = u^2 - v^2 + 2i\,uv$ is holomorphic, so its real part $u^2-v^2$ and its imaginary part $2uv$ are harmonic.
+:::
 
-Alternatively, $uv$ is in the kernel of the Laplacian:
-\[
-\laplacian(uv) 
-&= (uv)_{xx} + (uv)_{yy} \\
-&= (u_{xx}v + uv_{xx} + 2u_x v_x) + (u_{yy}v + uv_{yy} + 2u_y v_y) \\
-&= (u_{xx} + u_{yy}) v + (v_{xx} + v_{yy}) u + 2(u_xv_x + u_yv_y) \\
-&= (u_{xx} + u_{yy}) v + (v_{xx} + v_{yy}) u + 2(-u_x u_y + u_y u_x) && v_x = -u_y,\, v_y = u_x \\
-&= (u_{xx} + u_{yy}) v + (v_{xx} + v_{yy})u  \\
-&= \laplacian(u)v + \laplacian(v)u \\
-&= 0
-.\]
+:::
+
+::: pf-step
+$u_x$ is harmonic.
+
+::: pf-proof
+$f' = u_x + iv_x$ is holomorphic, so its real part $u_x$ is harmonic.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.solution title="Direct computation for $uv$"}
+
+::: pf
+
+::: pf-step
+$\laplacian(uv)=0$.
+
+::: pf-proof
+By the product rule,
+$$
+\laplacian(uv) = \laplacian(u)\,v + \laplacian(v)\,u + 2(u_xv_x + u_yv_y).
+$$
+The first two terms vanish because $u$ and $v$ are harmonic, and the Cauchy--Riemann equations $v_x = -u_y$, $v_y = u_x$ give $u_xv_x + u_yv_y = -u_xu_y + u_yu_x = 0$.
+:::
+
+:::
+
+:::
+
 :::
