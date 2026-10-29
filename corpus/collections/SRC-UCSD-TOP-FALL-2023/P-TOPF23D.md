@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF23D
 kind: problem
-title: "Fixed-point-free map on S^n is antipodal; free finite group action on S^{2n} is Z/2"
+title: A fixed-point-free self-map of $S^n$ is homotopic to the antipodal map; a finite group acting freely on $S^{2n}$ has order at most $2$
 classification:
   areas:
   - topology
