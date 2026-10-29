@@ -35,7 +35,7 @@ The statement becomes true, by Zorn's lemma, for a non-empty set of prime ideals
 
 ::: {.solution}
 
-The source statement is false, as shown by the counterexamples in the remark.
+The statement as posed is false, as shown by the counterexamples in the remark.
 We prove the corrected statement recorded there.
 
 Let
@@ -400,7 +400,7 @@ Step [](#s1-3){.pf-ref} gives a maximal element, and step [](#s1-7){.pf-ref} giv
 
 ::: pf-qed
 
-The original source statement is false; step [](#s1-8){.pf-ref} proves the corrected version stated in the remark.
+The statement as posed is false; step [](#s1-8){.pf-ref} proves the corrected version stated in the remark.
 
 :::
 
