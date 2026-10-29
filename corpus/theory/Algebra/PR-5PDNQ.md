@@ -21,7 +21,7 @@ The $k$-linear map
 $$
 \begin{aligned}
 \dualof{V} \tensor_k \dualof{W} &\to \dualof{V \tensor_k W} \\
-v \tensor_k w &\mapsto \big(x \tensor_k y \mapsto v(x)\, w(y)\big)
+\varphi \tensor_k \psi &\mapsto \big(x \tensor_k y \mapsto \varphi(x)\, \psi(y)\big)
 \end{aligned}
 $$
 is an isomorphism.
