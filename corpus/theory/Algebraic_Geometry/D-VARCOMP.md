@@ -24,7 +24,7 @@ prompts:
 A variety $X$ over $k$ is \dfn{complete}, equivalently \dfn{proper}, if the structure morphism $X \to \Spec k$ is proper: separated, of finite type, and universally closed.
 :::
 
-::: {.proposition title="What completeness buys"}
+::: {.proposition title="Consequences of completeness"}
 If $X$ is an integral complete variety over $k$, then $\Gamma(X,\OO_X)$ is a finite field extension of $k$.
 In particular, if $k$ is algebraically closed, then $\Gamma(X,\OO_X)=k$ and every morphism from $X$ to an affine $k$-variety is constant.
 The image of $X$ under any morphism to a $k$-variety is closed.
@@ -34,6 +34,7 @@ Every projective variety is complete; over $\CC$, completeness is compactness in
 ::: {.remark}
 $\AA^1$ is not complete, although $\AA^1\to\Spec k$ is a closed map: after base change, the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \theset{0}$, which is not closed.
 
-The converse of "projective implies complete" is false: Nagata and Hironaka produced complete non-projective varieties, all of dimension at least three, since a complete curve or normal complete surface is projective.
-Over an algebraically closed field, the global-function consequence $\Gamma(X,\OO_X)=k$ is the proper analogue of the corresponding projective-variety statement.
+The converse of "projective implies complete" is false.
+Complete curves and smooth complete surfaces are projective, so a smooth complete non-projective variety has dimension at least three; Hironaka constructed one of dimension three.
+Nagata constructed complete non-projective surfaces, which are therefore singular.
 :::
