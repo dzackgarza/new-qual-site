@@ -15,14 +15,11 @@ review: draft
 ---
 
 ::: {.problem}
-a.
-What is the definition of a **regular** (or Galois) covering space?
+(a) What is the definition of a **regular** (or Galois) covering space?
 
-b.
-State, without proof, a criterion in terms of the fundamental group for a covering map $p : \tilde X \to X$ to be regular.
+(b) State, without proof, a criterion in terms of the fundamental group for a covering map $p : \tilde X \to X$ to be regular.
 
-c.  
-Let $\Theta$ be the topological space formed as the union of a circle and its diameter (so this space looks exactly like the letter $\Theta$). 
+(c) Let $\Theta$ be the topological space formed as the union of a circle and its diameter (so this space looks exactly like the letter $\Theta$).
 Give an example of a covering space of $\Theta$ that is not regular.
 :::
 
@@ -32,7 +29,7 @@ Give an example of a covering space of $\Theta$ that is not regular.
 
 ::: pf-step
 
-A connected covering $p:\widetilde X\to X$ is regular (Galois) if its deck-transformation group acts transitively on each fiber.
+(a) A connected covering $p:\widetilde X\to X$ is regular (Galois) if its deck-transformation group acts transitively on each fiber.
 
 ::: pf-proof
 
@@ -44,7 +41,7 @@ Equivalently, for any two points of the same fiber there is a deck transformatio
 
 ::: {.pf-step #s2}
 
-If $X$ is path connected, locally path connected, and semilocally simply connected, the connected cover corresponding to a subgroup $H\le\pi_1(X,x_0)$ is regular iff $H$ is normal in $\pi_1(X,x_0)$.
+(b) If $X$ is path connected, locally path connected, and semilocally simply connected, the connected cover corresponding to a subgroup $H\le\pi_1(X,x_0)$ is regular iff $H$ is normal in $\pi_1(X,x_0)$.
 
 ::: pf-proof
 
@@ -56,7 +53,7 @@ This is the standard subgroup criterion in covering-space theory.
 
 ::: pf-step
 
-For $\Theta$, choose free generators $a,b$ of
+(c) For $\Theta$, choose free generators $a,b$ of
 $$\pi_1(\Theta)\cong F_2$$
 and take the connected covering corresponding to the subgroup $H=\langle a\rangle$.
 
