@@ -21,8 +21,6 @@ Prove that there is no compact 4-manifold $M$ (with or without boundary) which i
 :::
 
 ::: {.solution}
-**Goal.** Show no compact $4$-manifold is homotopy equivalent to $\Sigma \RP^3$.
-
 ::: pf
 
 ::: pf-step
