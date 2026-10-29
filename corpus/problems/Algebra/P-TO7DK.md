@@ -103,3 +103,9 @@ Thus $\rho$ is an injective map between finite groups of the same order, hence a
 :::
 
 :::
+
+::: {.remark}
+Part (b) also follows by completing the square, which uses $\ch F\ne2$ directly.
+If $\alpha$ has minimal polynomial $x^2+bx+c$, then $\beta=\alpha+b/2$ satisfies $K=F(\beta)$ and $\beta^2=d\coloneqq(b^2-4c)/4\in F$.
+So $K$ is the splitting field of $x^2-d$, whose roots $\pm\beta$ are distinct because $\beta\ne0$ and $\ch F\ne2$.
+:::
