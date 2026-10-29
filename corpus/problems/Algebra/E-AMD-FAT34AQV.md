@@ -28,13 +28,13 @@ Does diagonalizable imply distinct eigenvalues?
 
 ::: {.solution}
 No. For $n\ge2$, the identity matrix
-\[
+$$
 I_n
-\]
+$$
 is already diagonal, hence diagonalizable, but its characteristic polynomial is
-\[
+$$
 \chi_{I_n}(x)=(x-1)^n.
-\]
+$$
 Thus it has only the single eigenvalue $1$, with algebraic multiplicity $n$.
 
 An $n\times n$ matrix with $n$ distinct eigenvalues is diagonalizable, since eigenvectors for distinct eigenvalues are linearly independent; $I_n$ shows that the converse fails.
