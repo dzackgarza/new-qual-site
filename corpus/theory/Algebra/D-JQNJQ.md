@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-JQNJQ
 kind: definition
 title: Elementary divisor decomposition
+prompts:
+- What are the elementary divisors of a finite abelian group?
 classification:
   areas:
   - algebra
@@ -27,4 +29,8 @@ The prime powers $p_1^{e_1},\ldots,p_m^{e_m}$ are the \dfn{elementary divisors} 
 ::: {.theorem}
 Every finitely generated abelian group $G$ has an elementary divisor decomposition.
 The integer $r$ and the list $p_1^{e_1},\ldots,p_m^{e_m}$, up to reordering, are uniquely determined by $G$.
+:::
+
+::: {.remark}
+$G$ is finite exactly when $r=0$; a finite abelian group is then the product $\prod_{k=1}^m C_{p_k^{e_k}}$ of cyclic groups of prime-power order, and its elementary divisors are these prime powers.
 :::

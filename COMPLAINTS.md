@@ -165,19 +165,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the review prompt to `D-NKRGN`, removes duplicate reader-facing references, and deletes `FD-GXXBV`.
 
-### Duplicate elementary-divisor card FD-H764S
-
-- **Object and need:** `D-JQNJQ` and `FD-H764S` in `corpus/theory/Algebra`. `D-JQNJQ` defines the elementary-divisor decomposition for all finitely generated abelian groups; `FD-H764S` restates the finite special case and names the same prime-power factors.
-
-- **Observed evidence:** `FD-H764S` explicitly invokes `D-JQNJQ` and then reproduces the decomposition with free rank zero.
-  The wiki and algebra guide displayed both cards.
-
-- **Impact and owner:** the finite flashcard adds no distinct mathematics and creates a second definition of elementary divisors.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the finite-group review prompt to `D-JQNJQ`, removes duplicate reader-facing references, and deletes `FD-H764S`.
-
 ### Duplicate matrix-power counterexamples
 
 - **Object and need:** `FE-ISVDM`, `FE-W56LS`, and later `FF-VKYM3` in `corpus/theory/Algebra`. They answer the same prompt about whether `$A^n=B^n$` forces `$A=B$`.
