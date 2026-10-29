@@ -76,7 +76,6 @@ source:
   - id: P-JHWCH
   - id: P-JPDRQ
   - id: P-K4EUR
-  - id: P-KC3PY
   - id: P-LQEAV
   - id: P-LUYHY
   - id: P-MLJMH
