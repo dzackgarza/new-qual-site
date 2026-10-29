@@ -22,11 +22,13 @@ audit:
 ---
 
 ::: {.problem}
+
 Let $A$ be an $R$-module. Prove that
-\[
-\operatorname{End}_R(A)=\operatorname{Hom}_R(A,A)
-\]
+$$
+\Endo_R(A)=\Hom_R(A,A)
+$$
 is a ring under pointwise addition and composition.
+
 :::
 
 ::: {.solution}
@@ -35,15 +37,15 @@ is a ring under pointwise addition and composition.
 
 ::: pf-step
 
-Under pointwise addition, $\operatorname{End}_R(A)$ is an abelian group.
+Under pointwise addition, $\Endo_R(A)$ is an abelian group.
 
 ::: pf-proof
 
-For $f,g\in\operatorname{End}_R(A)$ define
-\[
+For $f,g\in\Endo_R(A)$ define
+$$
 (f+g)(a)=f(a)+g(a).
-\]
-The zero map is the additive identity and $(-f)(a)=-f(a)$ is the additive inverse. Associativity and commutativity follow pointwise from the abelian-group structure on $A$.
+$$
+The map $f+g$ is $R$-linear because $f$ and $g$ are. The zero map is the additive identity and $(-f)(a)=-f(a)$ is the additive inverse. Associativity and commutativity follow pointwise from the abelian-group structure on $A$.
 
 :::
 
@@ -51,17 +53,17 @@ The zero map is the additive identity and $(-f)(a)=-f(a)$ is the additive invers
 
 ::: pf-step
 
-Composition is closed and associative, with identity $\operatorname{id}_A$.
+Composition is closed and associative, with identity $\id_A$.
 
 ::: pf-proof
 
 If $f,g$ are $R$-linear, then for $r\in R$ and $x,y\in A$,
-\[
+$$
 (f\circ g)(rx+y)
 =f(rg(x)+g(y))
 =r f(g(x))+f(g(y)),
-\]
-so $f\circ g$ is $R$-linear. Associativity is associativity of function composition, and $\operatorname{id}_A$ is a two-sided identity.
+$$
+so $f\circ g$ is $R$-linear. Associativity is associativity of function composition, and $\id_A$ is a two-sided identity.
 
 :::
 
@@ -73,18 +75,18 @@ Composition distributes over addition on both sides.
 
 ::: pf-proof
 
-For $f,g,h\in\operatorname{End}_R(A)$ and $x\in A$,
-\[
+For $f,g,h\in\Endo_R(A)$ and $x\in A$,
+$$
 (f\circ(g+h))(x)
 =f(g(x)+h(x))
 =(f\circ g)(x)+(f\circ h)(x),
-\]
+$$
 using linearity of $f$. Also
-\[
+$$
 ((f+g)\circ h)(x)
 =f(h(x))+g(h(x))
 =(f\circ h)(x)+(g\circ h)(x).
-\]
+$$
 
 :::
 
@@ -92,5 +94,10 @@ using linearity of $f$. Also
 
 :::
 
-Thus $\operatorname{End}_R(A)$ is a ring, generally noncommutative, with multiplicative identity $\operatorname{id}_A$.
+:::
+
+::: {.remark}
+
+The ring $\Endo_R(A)$ is in general noncommutative.
+
 :::
