@@ -16,15 +16,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked to prove (a)-(d) equivalent, which is false since T(z) = -1/z satisfies (a)-(c) and has no real fixed point; the statement now asks to prove (a)-(c) equivalent, (d) implies them, and the converse need not hold.'
 ---
 
 ::: {.problem}
-Prove that TFAE for a Möbius transformation $T$ given by $T(z) = {az + b \over cz + d}$:
+Consider the following conditions on a Möbius transformation $T$ given by $T(z) = {az + b \over cz + d}$:
 
 a. $T$ maps $\RR\union \theset{\infty}$ to itself.
 b. It is possible to choose $a,b,c,d$ to be real numbers.
 c. $\bar{T(z)} = T(\bar z)$ for every $z\in \CP^1$.
 d. There exist $\alpha\in \RR, \beta \in \CC\setminus \RR$ such that $T(\alpha) = \alpha$ and $T(\bar \beta) = \bar{T(\beta)}$.
+
+Prove that (a), (b), and (c) are equivalent. Prove that (d) implies these conditions, and show that the converse need not hold.
 :::
 
 ::: {.solution}
@@ -39,7 +45,7 @@ d. There exist $\alpha\in \RR, \beta \in \CC\setminus \RR$ such that $T(\alpha) 
 (a) $\Rightarrow$ (b): $T$ maps $\RR \cup \{\infty\}$ to itself, so it sends three real points to three real points; a Möbius map is determined by three values, and a map sending three real points to three real points has real coefficients (up to a common real scalar).
 
 ::: pf-proof
-the cross-ratio of real points is real.
+Choose distinct $x_1, x_2, x_3 \in \RR \cup \theset{\infty}$ and put $y_i = T(x_i) \in \RR \cup \theset{\infty}$. The Möbius maps $S$ and $S'$ sending $x_1, x_2, x_3$, respectively $y_1, y_2, y_3$, to $0, 1, \infty$ are cross-ratio maps with real coefficients. Since a Möbius map is determined by three values, $T = (S')^{-1} \circ S$, a composition of maps with real coefficients.
 :::
 
 :::
@@ -57,7 +63,7 @@ conjugation commutes with real coefficients.
 (c) $\Rightarrow$ (a): if $z \in \RR$, then $\bar z = z$, so $\overline{T(z)} = T(\bar z) = T(z)$, hence $T(z) \in \RR$; thus $T$ maps $\RR$ to $\RR$ and $\RR \cup \{\infty\}$ to itself.
 
 ::: pf-proof
-Step [](#b-implies-c){.pf-ref} applied to real $z$.
+Apply (c) to real $z$; at $z = \infty$, (c) gives $\overline{T(\infty)} = T(\infty)$, so $T(\infty) \in \RR \cup \theset{\infty}$.
 :::
 
 :::
@@ -103,7 +109,7 @@ Step [](#agrees-at-three-points){.pf-ref} and step [](#c-implies-a){.pf-ref}.
 :::
 
 ::: {.pf-step #a-not-implies-d}
-(a) does NOT imply (d): the statement "TFAE" is false as written.
+(a) does not imply (d).
 
 ::: pf-proof
 
@@ -139,7 +145,7 @@ Steps [](#T-satisfies-abc){.pf-ref} and [](#T-no-real-fixed-point){.pf-ref}.
 :::
 
 ::: pf-qed
-Step [](#tfae-abc){.pf-ref} proves (a) $\Leftrightarrow$ (b) $\Leftrightarrow$ (c); step [](#d-implies-a){.pf-ref} proves (d) $\Rightarrow$ (a); step [](#a-not-implies-d){.pf-ref} shows (a) $\not\Rightarrow$ (d), so the four statements are not all equivalent.
+Step [](#tfae-abc){.pf-ref} proves (a) $\Leftrightarrow$ (b) $\Leftrightarrow$ (c); step [](#d-implies-a){.pf-ref} proves (d) $\Rightarrow$ (a); step [](#a-not-implies-d){.pf-ref} shows that the converse fails.
 :::
 
 :::
