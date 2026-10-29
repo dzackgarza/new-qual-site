@@ -50,12 +50,12 @@ Assume $\chi_A$ splits over $k$, and let $f\colon V\to V$ be the linear map give
 - By Fitting's lemma, for every linear map $h\colon V\to V$ there is $m\geq 1$ with $V = \ker h^m \oplus \im h^m$, and both summands are $h$-invariant.
 
 - Let $\lambda$ be an eigenvalue of $f$ with eigenvector $v$, and apply Fitting's lemma to $h\definedas f-\lambda I$.
-  Since $v\in\ker h^m$ and $f$ is indecomposable, $V = \ker h^m$, so $h$ is nilpotent; let $k$ be its nilpotency index.
+  Since $v\in\ker h^m$ and $f$ is indecomposable, $V = \ker h^m$, so $h$ is nilpotent; let $r$ be its nilpotency index.
 
-- Choose $w$ with $h^{k-1}w \neq 0$.
-  The span $W$ of $w, hw, \ldots, h^{k-1}w$ is $h$-invariant, these vectors are linearly independent, and $W$ has an $h$-invariant complement; since $f$ is indecomposable, $W = V$ and $k=\dim V$.
+- Choose $w$ with $h^{r-1}w \neq 0$.
+  The span $W$ of $w, hw, \ldots, h^{r-1}w$ is $h$-invariant, these vectors are linearly independent, and $W$ has an $h$-invariant complement; since $f$ is indecomposable, $W = V$ and $r=\dim V$.
 
-- In the basis $h^{k-1}w,\ldots,hw,w$, the matrix of $f = \lambda I + h$ is the Jordan block $J_k(\lambda)$.
+- In the basis $h^{r-1}w,\ldots,hw,w$, the matrix of $f = \lambda I + h$ is the Jordan block $J_r(\lambda)$.
 :::
 
 ## Generalized eigenspaces
@@ -69,7 +69,7 @@ $$
 $$
 A nonzero $\vector w$ is an eigenvector with eigenvalue $\lambda_i$ if and only if $x - \lambda_i \in \Ann(\vector w)$, and a generalized eigenvector for $\lambda_i$ if and only if
 $$
-(x-\lambda_i)^k\in \Ann(\vector w) \text{ for some } k \iff x-\lambda_i \in \sqrt{\Ann(\vector w)}.
+(x-\lambda_i)^m\in \Ann(\vector w) \text{ for some } m \iff x-\lambda_i \in \sqrt{\Ann(\vector w)}.
 $$
 The generalized eigenspace for $\lambda_i$ is
 $$
@@ -101,7 +101,7 @@ If $\chi_A$ splits, then $V = \bigoplus_i V^{\lambda_i}$.
   If $\vector v = \sum_i \vector w_i\in V^j$, then $0=(A-\lambda_j I)^n\vector v = \sum_i (A-\lambda_j I)^n\vector w_i$ with each term in $W^i$, so $\vector w_i = 0$ for $i\neq j$ and $\vector v\in W^j$.
 :::
 
-## Exercises
+## Problems
 
 [[E-23SLE]]
 
