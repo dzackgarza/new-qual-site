@@ -13,6 +13,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 21 of the Chapter 7 review questions in assets/attachments/extracted/Chapter-7.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints (E) as $A\lor(B\land C)\leftrightarrow(A\land B)\lor(A\land C)$, which is also not a tautology; its solution calls (E) the distributive law. Choice (E) now reads $A\lor(B\land C)\leftrightarrow(A\lor B)\land(A\lor C)$, so (C) is the unique answer.
 ---
 
 ::: {.problem}
@@ -22,7 +26,7 @@ Which of the following is NOT a tautology?
 (B) $A \lor (\neg A)$
 (C) $[(A \land B) \to C] \leftrightarrow [A \to (B \lor C)]$
 (D) $\neg(C \land D) \leftrightarrow \neg C \lor \neg D$
-(E) $A \lor (B \land C) \leftrightarrow (A \land B) \lor (A \land C)$
+(E) $A \lor (B \land C) \leftrightarrow (A \lor B) \land (A \lor C)$
 :::
 
 ::: {.solution}
@@ -54,7 +58,7 @@ Each identity holds for every assignment of truth values.
 
 :::
 
-::: {.pf-step #s1-2}
+::: pf-step
 
 Choice (C) is not a tautology.
 
@@ -75,52 +79,22 @@ is false because its antecedent is true and its consequent is false. Hence the b
 
 :::
 
-::: {.pf-step #s1-3}
+::: pf-step
 
-Choice (E), as printed, is also not a tautology.
-
-
-::: pf-proof
-
-Take $A$ true, $B$ false, and $C$ false. Then
-$$
-A\lor(B\land C)
-$$
-is true, whereas
-$$
-(A\land B)\lor(A\land C)
-$$
-is false. Thus the biconditional in (E) is false for this assignment.
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-The source's explanation identifies (E) as the distributive law, whose correct right-hand side is
-$$
-(A\lor B)\land(A\lor C).
-$$
+Choice (E) is a tautology.
 
 
 ::: pf-proof
 
-The valid distributive law for disjunction over conjunction is
-$$
-A\lor(B\land C)
-\leftrightarrow
-(A\lor B)\land(A\lor C).
-$$
-With this correction, (E) is a tautology, leaving (C) as the unique non-tautology and matching the source's stated answer.
+Choice (E) is the distributive law of disjunction over conjunction. If $A$ is true, both sides are true. If $A$ is false, both sides reduce to $B\land C$.
 
 :::
 
 :::
 
-::: {.pf-step #s1-5}
+::: pf-step
 
-Therefore the problem as printed has two correct choices, (C) and (E); under the evident correction in step [](#s1-4){.pf-ref}, the intended answer is
+Choice (C) is the only formula that is not a tautology, so the answer is
 $$
 \boxed{\text{(C)}}.
 $$
@@ -128,15 +102,9 @@ $$
 
 ::: pf-proof
 
-Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} show that both (C) and the printed (E) are non-tautologies. Step [](#s1-4){.pf-ref} identifies the source's evident intended version of (E), under which only (C) remains non-tautological.
+Combine the three preceding steps.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} gives both the literal status of the printed question and the intended answer.
 
 :::
 
