@@ -12,10 +12,15 @@ classification:
   - Fields
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Show that R[x] a PID iff R is a field." with R undeclared; the statement declares R commutative with identity and supplies the missing verb.'
 ---
 
 ::: {.exercise}
-Show that $R[x]$ a PID $\iff R$ is a field.
+Let $R$ be a commutative ring with identity. Show that $R[x]$ is a PID $\iff R$ is a field.
 :::
 
 ::: {.hint}
@@ -23,7 +28,6 @@ Take $r\in R$, then $\generators{r, x} = \generators{f}$ for some $f$.
 :::
 
 ::: {.solution}
-Let $R$ be a commutative ring with identity.
 
 ::: pf
 
