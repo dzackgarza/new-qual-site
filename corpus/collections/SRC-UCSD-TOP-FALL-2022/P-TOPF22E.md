@@ -25,8 +25,6 @@ Show that there is a long exact sequence relating homology with coefficients in 
 :::
 
 ::: {.solution}
-**Goal.** Derive the long exact sequence relating $H_*(\cdot;\ZZ)$, $H_*(\cdot;\RR)$, $H_*(\cdot;T)$, and compute $H_*(\RP^\infty; T)$.
-
 ::: pf
 
 ::: pf-step
