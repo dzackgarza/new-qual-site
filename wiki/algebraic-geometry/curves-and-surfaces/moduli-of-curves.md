@@ -32,7 +32,7 @@ In genus $3$, smooth plane quartics, an open subset of $\PP^{14}$, modulo $\PGL_
 
 [[PR-CRVAUT]]
 
-Finiteness of $\Aut C$ is what makes the orbits in the quartic count $8$-dimensional, so the dimension comes out; nontriviality of $\Aut C$ on the hyperelliptic locus is what keeps any genus from having a fine moduli space.
+Finiteness of $\Aut C$ makes each $\PGL_3$-orbit of smooth plane quartics $8$-dimensional, which the count $14-8=6$ uses; nontriviality of $\Aut C$ on the hyperelliptic locus is what keeps any genus from having a fine moduli space.
 
 ## Smoothness and properness of the moduli stacks
 
