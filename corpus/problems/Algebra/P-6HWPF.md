@@ -39,13 +39,13 @@ General quadratic equations are solvable by radicals.
 ::: pf-proof
 
 For
-\[
+$$
 ax^2+bx+c=0,\qquad a\ne0,
-\]
+$$
 the roots are
-\[
+$$
 x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
-\]
+$$
 Thus they are obtained from the coefficients using field operations and a square root.
 
 :::
@@ -107,9 +107,9 @@ Some quintics are solvable by radicals.
 ::: pf-proof
 
 The criterion in step [](#s3){.pf-ref} depends on the Galois group of the particular polynomial. For example,
-\[
+$$
 x^5-2=0
-\]
+$$
 has roots obtainable by adjoining a fifth root of $2$ and fifth roots of unity, so it is solvable by radicals. Abel--Ruffini says only that no radical formula works for the general quintic, and that there exist specific quintics with nonsolvable Galois group.
 
 :::
