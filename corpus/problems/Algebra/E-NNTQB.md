@@ -23,22 +23,33 @@ audit:
 
 ::: {.exercise}
 Show that if $G$ is finite and $H\le G$, then
-\[
-[G:H]=\frac{|G|}{|H|}.
-\]
+$$
+[G:H]=\frac{\abs{G}}{\abs{H}}.
+$$
 :::
 
 ::: {.solution}
-The left cosets of $H$ partition $G$. For each $g\in G$, multiplication by $g$ gives a bijection
-\[
-H\longrightarrow gH,\qquad h\mapsto gh,
-\]
-so every coset has $|H|$ elements. Since there are $[G:H]$ cosets,
-\[
-|G|=[G:H]\,|H|.
-\]
-Therefore
-\[
-[G:H]=\frac{|G|}{|H|}.
-\]
+
+::: pf
+
+::: {.pf-step #coset-size}
+Every left coset of $H$ has $\abs{H}$ elements.
+
+::: pf-proof
+For $g\in G$, the map $H\to gH$, $h\mapsto gh$, is surjective by definition of $gH$ and injective by cancellation.
+:::
+
+:::
+
+::: pf-step
+$[G:H]=\dfrac{\abs{G}}{\abs{H}}$.
+
+::: pf-proof
+The left cosets of $H$ partition $G$, and there are $[G:H]$ of them, each of size $\abs{H}$ by step [](#coset-size){.pf-ref}. Hence $\abs{G}=[G:H]\,\abs{H}$.
+:::
+
+:::
+
+:::
+
 :::
