@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YGU32
 kind: problem
-title: Entire functions satisfying $|f(z)|\ge|z|$
+title: Entire functions satisfying $\abs{f(z)}\ge\abs{z}$
 classification:
   areas:
   - complex-analysis
@@ -17,41 +17,47 @@ review: draft
 
 ::: {.problem}
 Find all entire functions that satisfy
-\[
-\abs{f(z)} \geq \abs{z} \quad \forall z\in \CC
-.\]
+$$
+\abs{f(z)} \geq \abs{z} \quad \forall z\in \CC.
+$$
 Prove this list is complete.
 :::
 
 ::: {.solution}
-::: {.concept}
+Let $f$ be entire with $\abs{f(z)}\ge\abs{z}$ for all $z$.
+
+::: pf
+
+::: {.pf-step #zeros}
+$f(z)=0$ only at $z=0$.
+
+::: pf-proof
+If $f(z)=0$, then $\abs{z}\le\abs{f(z)}=0$.
+:::
 
 :::
-- Suppose $f$ is entire and define $g(z) \definedas {z \over f(z)}$.
 
-- By the inequality, $\abs{g(z)} \leq 1$, so $g$ is bounded.
+::: {.pf-step #g}
+$g(z)\coloneqq z/f(z)$ extends to an entire function with $\abs{g}\le1$.
 
-- $g$ potentially has singularities at the zeros $Z_f \definedas \inverseof{f}(0)$, but since $f$ is entire, $g$ is holomorphic on $\CC\setminus Z_f$.
+::: pf-proof
+By step [](#zeros){.pf-ref}, $g$ is holomorphic on $\CC\setminus\theset{0}$, and there $\abs{g(z)}=\abs{z}/\abs{f(z)}\le1$.
+A bounded isolated singularity is removable by Riemann's theorem, and the extension satisfies $\abs{g(0)}\le1$ by continuity.
+:::
 
-- Claim: $Z_f = \theset{0}$.
+:::
 
-  - If $f(z) = 0$, then $\abs{z} \leq \abs{f(z)} = 0$ which forces $z=0$.
+::: pf-step
+The entire functions with $\abs{f(z)}\ge\abs{z}$ are exactly $\boxed{f(z)=cz \text{ with } c\in\CC,\ \abs{c}\ge1}$.
 
-- We can now apply Riemann's removable singularity theorem:
+::: pf-proof
+By step [](#g){.pf-ref} and Liouville's theorem, $g$ is a constant $c_0$ with $\abs{c_0}\le1$, and $c_0\ne0$ since $g(z)=z/f(z)\ne0$ for $z\ne0$.
+Hence $f(z)=cz$ with $c=1/c_0$ and $\abs{c}\ge1$ on $\CC\setminus\theset{0}$, and at $0$ by continuity.
+Conversely, every such $f$ satisfies $\abs{f(z)}=\abs{c}\abs{z}\ge\abs{z}$.
+:::
 
-  - Check $g$ is bounded on some open subset $D\smz$, clear since it's bounded everywhere
+:::
 
-  - Check $g$ is holomorphic on $D\smz$, clear since the only singularity of $g$ is $z=0$.
+:::
 
-- By Riemann's removable singularity theorem, the singularity $z = 0$ is removable and $g$ has an extension to an entire function $\tilde g$.
-
-- By continuity, we have $\abs{\tilde g(z)} \leq 1$ on all of $\CC$
-
-  - If not, then $\abs{\tilde g(0)} = 1+\eps > 1$, but then there would be a domain $\Omega \subseteq \CC\smz$ such that $1 < \abs{\tilde g(z)} \leq 1 +\eps$ on $\Omega$, a contradiction.
-
-- By Liouville, $\tilde g$ is constant, so $\tilde g(z) = c_0$ with $\abs {c_0} \leq 1$
-
-- Thus $f(z) = \inverseof{c_0} z \definedas cz$ where $\abs{c}\geq 1$
-
-Thus all such functions are of the form $f(z) = cz$ for some $c\in \CC$ with $\abs{c}\geq 1$.
 :::
