@@ -199,7 +199,13 @@ _ci-setup:
     #!/usr/bin/env bash
     set -euo pipefail
     sudo apt-get update
-    sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-science texlive-pictures pdf2svg
+    sudo apt-get install -y pdf2svg
+    # Full TeX Live, restored from the qc-ci setup cache keyed on ci/texlive.profile.
+    if [[ ! -x "$HOME/texlive/bin/x86_64-linux/lualatex" ]]; then
+        curl -sSL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | tar -xz -C "$RUNNER_TEMP"
+        "$RUNNER_TEMP"/install-tl-*/install-tl --profile ci/texlive.profile --texdir "$HOME/texlive"
+    fi
+    echo "$HOME/texlive/bin/x86_64-linux" >> "$GITHUB_PATH"
     git clone --depth 1 https://github.com/dzackgarza/pandoc-config.git "$HOME/.pandoc"
 
 # Run the scheduled whole-tree audit (semgrep and debt scans) through the central implementation.

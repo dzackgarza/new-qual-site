@@ -277,7 +277,10 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "yaml-title.md": wiki_md("# YAML title\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n", order=9),
         "citations.md": wiki_md("# Citations\n\nReferences: [@DF04], [@Smi96].\n", order=10),
         "paren-list.md": wiki_md("# Paren list\n\n(a) First.\n(b) Second.\n", order=13),
-        "block-title.md": wiki_md('# Block title\n\n::: {.theorem title="Arzelà--Ascoli [@DF04]"}\nStatement.\n:::\n', order=12),
+        "block-title.md": wiki_md(
+            '# Block title\n\n::: {.theorem title="Arzelà--Ascoli [@DF04]"}\nStatement.\n:::\n\n::: {.remark title="(ii) implies (vii)"}\nCompare.\n:::\n',
+            order=12,
+        ),
         "captions.md": wiki_md("# Captions\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n", order=11),
         "Algebra/index.md": wiki_md("# Algebra\n", order=2, title="Algebra"),
         "Algebra/groups/index.md": wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"),
@@ -580,6 +583,8 @@ def test_a_block_title_is_read_like_the_body(wiki_site: Path) -> None:
     assert "Arzelà–Ascoli" in qualifier
     assert "[@" not in qualifier
     assert "[DuFo04]" in qualifier
+    # A title opening with an ordered-list marker is still one inline qualifier.
+    assert '<div class="qual-section-qualifier">\n((ii) implies (vii))\n</div>' in page
 
 
 def test_a_parenthesized_list_keeps_its_parentheses(wiki_site: Path) -> None:

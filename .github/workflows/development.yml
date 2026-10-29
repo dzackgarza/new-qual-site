@@ -95,6 +95,8 @@ jobs:
       profile: python
       infra_ref: main
       setup_recipe: _ci-setup
+      setup_cache_paths: ~/texlive
+      setup_cache_key_files: ci/texlive.profile
 'on':
   push:
     branches:

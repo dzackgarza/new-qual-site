@@ -1098,6 +1098,11 @@ def _titled_blocks(document: pf.Doc) -> list[pf.Div]:
     return found
 
 
+# An ordered-list marker opening a title, such as "(ii)" or "2.". Escaping its closing
+# delimiter keeps it inline, as the Pandoc manual prescribes: "(C\) 2007 Joe Smith".
+_TITLE_LIST_MARKER = re.compile(r"^(\(?(?:[0-9]+|[ivxlcdm]+|[IVXLCDM]+|[A-Za-z]|#))([.)])(?=\s)")
+
+
 def typeset_block_titles(pandoc: PandocServer, outputs: list[str], citations: Citations) -> list[str]:
     """Read every block `title=` as Markdown, with the body's citations and smart punctuation.
 
@@ -1111,7 +1116,7 @@ def typeset_block_titles(pandoc: PandocServer, outputs: list[str], citations: Ci
     if not titles:
         return outputs
     read: dict[str, list[pf.Inline]] = {}
-    for title, result in zip(titles, pandoc.read_markdown(titles, MARKDOWN, citations), strict=True):
+    for title, result in zip(titles, pandoc.read_markdown([_TITLE_LIST_MARKER.sub(r"\1\\\2", title) for title in titles], MARKDOWN, citations), strict=True):
         if isinstance(result, PandocFailure):
             raise ValueError(f"block title unreadable: {title!r}: {result.error}")
         content = [block for block in from_ast(result.output).content if not (isinstance(block, pf.Div) and block.identifier == "refs")]
