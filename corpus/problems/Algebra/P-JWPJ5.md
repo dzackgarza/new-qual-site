@@ -22,30 +22,54 @@ audit:
 ---
 
 ::: {.problem}
-(1) How many non-isomorphic irreducible complex representations does the symmetric group $S_n$ have?
-(2) What classical function in mathematics does this number equal, and how are the irreducible representations explicitly indexed?
+(a) How many non-isomorphic irreducible complex representations does the symmetric group $S_n$ have?
+
+(b) What classical function in mathematics does this number equal, and how are the irreducible representations explicitly indexed?
 :::
 
 ::: {.solution}
-For a finite group over $\mathbb C$, the number of isomorphism classes of irreducible representations equals the number of conjugacy classes. In $S_n$, two permutations are conjugate exactly when they have the same cycle type.
 
-A cycle type is precisely a partition
-\[
-\lambda=(\lambda_1\ge\cdots\ge\lambda_r)\vdash n.
-\]
-Hence the conjugacy classes of $S_n$ are indexed by partitions of $n$, so
-\[
-|\operatorname{Irr}(S_n)|=p(n),
-\]
-where $p(n)$ is the integer partition function.
+::: pf
 
-More precisely, the irreducible complex representations are the Specht modules
-\[
-S^\lambda,\qquad \lambda\vdash n.
-\]
-Their dimensions are given by the hook-length formula
-\[
-\dim S^\lambda=\frac{n!}{\prod_{u\in\lambda} h(u)}.
-\]
-Thus the partitions of $n$ simultaneously index the conjugacy classes and the irreducible complex representations of $S_n$.
+::: {.pf-step #classes}
+
+The conjugacy classes of $S_n$ are indexed by the partitions $\lambda\vdash n$.
+
+::: pf-proof
+
+Two permutations are conjugate exactly when they have the same cycle type, and the cycle lengths of a permutation, in decreasing order, form a partition of $n$; every partition occurs.
+
+:::
+
+:::
+
+::: pf-step
+
+(a) $S_n$ has $\boxed{p(n)}$ irreducible complex representations up to isomorphism.
+
+::: pf-proof
+
+For a finite group, the number of isomorphism classes of irreducible complex representations equals the number of conjugacy classes. Apply step [](#classes){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) The number is the partition function $p(n)$, and the irreducible representations are the Specht modules $S^\lambda$, one for each $\lambda\vdash n$.
+
+::: pf-proof
+
+This is the classification of irreducible representations of $S_n$ by Specht modules. Their dimensions are given by the hook-length formula
+$$
+\dim S^\lambda=\frac{n!}{\prod_{u\in\lambda}h(u)}.
+$$
+
+:::
+
+:::
+
+:::
+
 :::
