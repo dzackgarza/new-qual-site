@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta$ be the open unit disk and define $A \definedas \theset{\Re(z) > 0, \Im(z) > 0}$.
+Let $\Delta$ be the open unit disk and define $A \coloneqq \theset{\Re(z) > 0, \Im(z) > 0}$.
 Find a conformal equivalence $\Delta \intersect A \to A$.
 :::
 
