@@ -96,6 +96,28 @@ mathematical correction under its own node, not under copy policy.
     commutative-algebra, which-kind-of-ring, maschke-and-schur. **Acceptance:** each read and repaired.
     **Closed.** P-UZDCX stays distinct from T-NGBVC: it also asks why a finitely generated
     algebraic extension is finite.
+  - **`ad2-real-analysis-content`**. **Needs:** none. PR-WUZSG uniform-convergence criterion
+    needs "for all sufficiently large n"; the-convergence-theorems "on $L^1$" should read
+    "on $\RR$"; P-RAF23C, P-RAF23F, P-RAF23G proof notation, part labels and step references;
+    P-4EOE5 doubled arrow and typed step citations; CARD-04 groups on measure, integration and
+    $L^p$ (T-BFOJT/FT-4ED3Q/PR-JX4YU, FT-O4DRR/FF-LA4J2, T-OTR5M/FR-CSUMF/FF-GNU7E/P-QZT5B,
+    FF-UW3C7/FE-YOIJM, T-CGFCU/FT-XIVPL, T-5K3IO/FT-5G4Y3, T-IJQQG/FT-LCR5P, T-LDJNS/FT-P5UNP,
+    T-MN6WQ/FS-BM2PV/PR-EHIXY/FR-KEWV2/PR-NKZBT/PR-YJJSY, D-R4VKE/FD-Q3XHG,
+    FF-C7GY4/FF-LMANJ/PR-6OHTJ, T-RIY2P/FT-BV2AU/FF-FSDJP/PR-4OXGZ, PR-HFYSO/FR-6AHGM,
+    T-X7XZX/FT-H6AWV, PR-V4MOK/PR-2CZUM, E-WXIRH/PR-TNFL4) and the PR-2JV43 repeated remark;
+    CARD-04 groups on other pages (FF-AVBFU/FF-5EBCJ, PR-UJ64S/PR-LEDI3, FD-5I73B/FF-7JOOD,
+    D-YZC3C/FD-ZTRHG/D-RA-WORKSHOP-D7-CONVERGENCE, FD-WN55Z/FF-HORGP, D-2MJRE/FF-HRUA3,
+    D-5NODS/FD-JGBSF, D-PAEDW/FD-AI6XN/FF-JBCFQ, D-RPOGQ/FD-BBR6Q/FD-HGESN, FD-5T3HX/FF-NOX4C,
+    D-3PVRB/FD-J5AFR, D-TS42Y/FF-4WIMZ, PR-JTFMW/C-44LL4, PR-ZI7M3/FT-NFMJW/T-5AALA,
+    T-LDCZB/FF-UT5GL); workshop theorem cards T-RA-WORKSHOP-D5-4-2/T-OXNTU,
+    T-RA-WORKSHOP-D4-3-3/T-O4UD3, T-RA-WORKSHOP-D7-6-2/FF-IAUQG, T-RA-WORKSHOP-D7-6-7/T-3QNBQ,
+    T-RA-WORKSHOP-D7-6-1/C-3S4XS, T-RA-WORKSHOP-D5-4-3/T-2R7PC, T-RA-WORKSHOP-D7-6-5/FF-XZGIY;
+    `STYLE-03`, `STYLE-04`, `STYLE-08` in P-ZCE6E, P-8RA35, P-4NYI7, P-4EOE5, T-W5SDY and the
+    SRC-RA-WORKSHOP problem cards; real-analysis round-2 candidates (FS-5FKPD/FF-IAUQG,
+    PR-DWOXP/FE-GN3CF, PR-YO7MV/FD-3BK6U, D-2CCDB/FD-XVMEE, D-HHVPT/FD-ST7TD, P-7XPOK and
+    P-PEND3 overlaps, real-week-2-measure-theory process text, P-OPH7A prose solution,
+    "orthonormal" in FT-NFMJW and PR-ZI7M3, Arzelà–Ascoli codomain, T-ERNLN notation).
+    **Acceptance:** each read and repaired.
   - **`ad2-topology-content`**. **Needs:** none. Citation-only `concept` blocks on about 80
     topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
     change-of-basepoint restatement; curves-in-projective-space opening and projection
