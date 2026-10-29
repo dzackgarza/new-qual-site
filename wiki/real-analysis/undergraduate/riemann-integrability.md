@@ -8,7 +8,7 @@ topics:
 
 # Riemann integrability
 
-A bounded function $f \colon [a,b] \to \RR$ is Riemann integrable if its upper and lower Darboux integrals, the infimum of the upper sums and the supremum of the lower sums over partitions of $[a,b]$, are equal.
+[[D-1EBNU]]
 
 ## The Lebesgue criterion
 
