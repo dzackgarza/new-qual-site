@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HOIQ3
 kind: problem
-title: The one-point compactification and the missing Hausdorff hypothesis in uniqueness
+title: The one-point compactification and its uniqueness
 classification:
   areas:
   - topology
@@ -32,6 +32,10 @@ audit:
     construction; exhibited a counterexample to the printed part (b); proved
     the intended compact-Hausdorff uniqueness theorem; and identified the two
     requested compactifications.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (b) of the exam assumed only that Y is compact, and a non-Hausdorff Y = X with a point whose only neighborhood is Y is a counterexample; part (b) now assumes Y compact Hausdorff.
 ---
 
 ::: {.problem}
@@ -47,7 +51,7 @@ Let $\widehat X=X\cup\theset{\infty}$ ($X$ with one point adjoined), and conside
 
 (a) Prove that $\mcb$ is a topology on $\widehat X$, that the resulting space is compact, and that $X$ is dense in $\widehat X$.
 
-(b) Prove that if $Y\supset X$ is a compact space such that $X$ is dense in $Y$ and $Y\backslash X$ is a singleton, then $Y$ is homeomorphic to $\widehat X$.
+(b) Prove that if $Y\supset X$ is a compact Hausdorff space containing $X$ as a subspace such that $X$ is dense in $Y$ and $Y\backslash X$ is a singleton, then $Y$ is homeomorphic to $\widehat X$.
 
 > The space $\widehat X$ is called the **one-point compactification** of $X$.
 
@@ -270,42 +274,11 @@ Thus $\widehat X$ is Hausdorff.
 
 :::
 
-::: pf-step
-Under the usual convention that compact spaces need not be Hausdorff, part (b) is false as printed.
+::: {.pf-step #uniqueness}
+If $Y$ is compact Hausdorff, contains $X$ as a dense subspace, and $Y\setminus X$ is a singleton, then $Y\cong\widehat X$.
 
 ::: pf-proof
-Let $p\notin X$ and set
-\[
-Y=X\cup\{p\}.
-\]
-Give $Y$ the topology
-\[
-\mathcal T_Y=\mct\cup\{Y\}.
-\]
-This is a topology, and its restriction to $X$ is the original topology $\mct$.
-
-The only open neighborhood of $p$ is $Y$ itself.
-Consequently every open cover of $Y$ contains $Y$, so $Y$ is compact.
-Also every neighborhood of $p$ meets $X$, hence $X$ is dense in $Y$, and plainly
-\[
-Y\setminus X=\{p\}.
-\]
-However $Y$ is not Hausdorff: $p$ cannot be separated from any point of $X$ by disjoint neighborhoods.
-By step [](#xhat-is-hausdorff){.pf-ref}, $\widehat X$ is Hausdorff.
-Therefore
-\[
-Y\not\cong\widehat X.
-\]
-So the hypotheses printed in part (b) do not imply its conclusion.
-:::
-
-:::
-
-::: {.pf-step #corrected-uniqueness}
-The intended uniqueness statement is true if $Y$ is assumed compact Hausdorff.
-
-::: pf-proof
-Assume now that $Y$ is compact Hausdorff, that $X\subseteq Y$ is dense, and that
+Let $Y$ be compact Hausdorff, assume that $X\subseteq Y$ is dense, and that
 \[
 Y\setminus X=\{p\}.
 \]
@@ -348,7 +321,7 @@ is open.
 
 Hence $h$ is a continuous bijection from the compact space $Y$ to the Hausdorff space $\widehat X$.
 It follows that $h$ is a homeomorphism.
-Thus part (b) is correct after adding the missing Hausdorff hypothesis on $Y$.
+This proves part (b).
 :::
 
 :::
@@ -367,7 +340,7 @@ S^1\setminus\{N\}\cong\RR
 \]
 for any chosen point $N\in S^1$.
 Thus, after identifying $(0,1)$ with $S^1\setminus\{N\}$, the circle $S^1$ is a compact Hausdorff space containing $(0,1)$ densely with one-point complement.
-By step [](#corrected-uniqueness){.pf-ref}, its one-point compactification is therefore
+By step [](#uniqueness){.pf-ref}, its one-point compactification is therefore
 \[
 \boxed{S^1}.
 \]
@@ -384,7 +357,7 @@ Stereographic projection gives a homeomorphism
 S^2\setminus\{N\}\cong\RR^2.
 \]
 The sphere $S^2$ is compact Hausdorff, and $S^2\setminus\{N\}$ is dense with singleton complement.
-Applying step [](#corrected-uniqueness){.pf-ref} gives
+Applying step [](#uniqueness){.pf-ref} gives
 \[
 \boxed{\widehat{\RR^2}\cong S^2}.
 \]
