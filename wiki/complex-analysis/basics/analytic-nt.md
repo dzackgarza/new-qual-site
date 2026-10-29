@@ -24,22 +24,6 @@ $$
 
 [[FT-3ZL25]]
 
-::: {.proof}
-Let $\abs{A_n}\leq M$ for all $n$, where $A_n \coloneqq \sum_{k\leq n} a_k$ and $A_0 \coloneqq 0$.
-By [[PR-2MTPE|summation by parts]] with $m=1$,
-$$
-\sum_{k=1}^N a_k b_k = A_N b_N + \sum_{k=1}^{N-1} A_k (b_k - b_{k+1}).
-$$
-Since $\abs{A_N b_N}\leq M b_N \to 0$, the first term tends to $0$.
-Since $b_k$ is decreasing, $b_k - b_{k+1}\geq 0$, and
-$$
-\sum_{k=1}^{N-1}\abs{A_k (b_k - b_{k+1})} \leq M\sum_{k=1}^{N-1} (b_k - b_{k+1}) = M(b_1 - b_N) \leq M b_1,
-$$
-so the second sum converges absolutely as $N\to\infty$.
-Hence $\sum_{k\geq 1} a_k b_k$ converges.
-
-:::
-
 [[T-B7YTE]]
 
 [[L-MYZOX]]
