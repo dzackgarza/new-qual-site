@@ -22,36 +22,44 @@ audit:
 ---
 
 ::: {.problem}
-For each prime $p$, give an explicit polynomial of degree $p$ that is irreducible over the finite field $\mathbb{F}_p$, constructed in a uniform way across all primes $p$.
-Prove that your polynomial is irreducible over $\mathbb{F}_p$.
+For each prime $p$, give an explicit polynomial of degree $p$ that is irreducible over the finite field $\FF_p$, constructed in a uniform way across all primes $p$.
+Prove that your polynomial is irreducible over $\FF_p$.
 :::
 
 ::: {.solution}
-For every prime $p$, take
-\[
-f(x)=x^p-x-1\in\mathbb F_p[x].
-\]
-Let $\alpha$ be a root in an algebraic closure. Then
-\[
-\alpha^p=\alpha+1.
-\]
-Iterating Frobenius gives
-\[
-\alpha^{p^m}=\alpha+m
-\]
-for every integer $m\ge0$, where $m$ is read in $\mathbb F_p$.
+For a prime $p$, let $f(x)=x^p-x-1\in\FF_p[x]$, and let $\alpha$ be a root of $f$ in an algebraic closure of $\FF_p$.
 
-The degree of the minimal polynomial of $\alpha$ over $\mathbb F_p$ is the size of its Frobenius orbit. The first positive $m$ for which
-\[
-\alpha^{p^m}=\alpha
-\]
-is therefore the first positive $m$ with $m=0$ in $\mathbb F_p$, namely $m=p$. Hence
-\[
-[\mathbb F_p(\alpha):\mathbb F_p]=p.
-\]
-Since $f$ has degree $p$ and vanishes at $\alpha$, it is the minimal polynomial of $\alpha$. Thus
-\[
-\boxed{x^p-x-1\text{ is irreducible over }\mathbb F_p}
-\]
-for every prime $p$.
+::: pf
+
+::: {.pf-step #orbit}
+$\alpha^{p^m}=\alpha+m$ for every integer $m\ge0$, with $m$ read in $\FF_p$.
+
+::: pf-proof
+For $m=0$ this is trivial.
+If it holds for $m$, then $\alpha^{p^{m+1}}=(\alpha+m)^p=\alpha^p+m=\alpha+1+m$, because Frobenius is additive, fixes $\FF_p$, and $\alpha^p=\alpha+1$.
+:::
+
+:::
+
+::: {.pf-step #degree}
+$[\FF_p(\alpha):\FF_p]=p$.
+
+::: pf-proof
+The degree of $\FF_p(\alpha)$ over $\FF_p$ is the least $m>0$ with $\alpha^{p^m}=\alpha$.
+By step [](#orbit){.pf-ref}, this is the least $m>0$ with $m=0$ in $\FF_p$, namely $m=p$.
+:::
+
+:::
+
+::: pf-step
+$\boxed{x^p-x-1}$ is irreducible over $\FF_p$.
+
+::: pf-proof
+The minimal polynomial of $\alpha$ divides $f$ and has degree $p=\deg f$ by step [](#degree){.pf-ref}, so it equals $f$ up to a unit, and $f$ is irreducible.
+:::
+
+:::
+
+:::
+
 :::
