@@ -18,33 +18,23 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(June 2014 1)Define $\alpha \colon [-1,1] \to \mathbb{R}$ by $$\alpha(x) := \begin{cases} -1 & x \in [-1,0] \\ 1 & x \in (0,1]. \end{cases}$$ Let $f \colon [-1,1] \to \mathbb{R}$ be a function that is uniformly bounded on $[-1,1]$ and continuous at $x=0$, but not necessarily continuous for $x \neq 0$.
+(June 2014 1)Define $\alpha \colon [-1,1] \to \RR$ by $$\alpha(x) \coloneqq \begin{cases} -1 & x \in [-1,0] \\ 1 & x \in (0,1]. \end{cases}$$ Let $f \colon [-1,1] \to \RR$ be a function that is uniformly bounded on $[-1,1]$ and continuous at $x=0$, but not necessarily continuous for $x \neq 0$.
 Prove that $f$ is Riemann-Stieltjes integrable with respect to $\alpha$ over $[-1,1]$ and that $$\int_{-1}^1 f(x)d\alpha(x) = 2f(0).$$
 :::
 
 ::: {.solution}
 
+For a partition $P=(-1=x_0<\cdots<x_m=1)$, let $j$ be the unique index with $x_{j-1}\leq0<x_j$, and write $I_j=[x_{j-1},x_j]$.
+
 ::: pf
-
-::: pf-step
-
-$\alpha$ has bounded variation and is constant on each side of its single jump at $0$: $\alpha \equiv -1$ on $[-1,0]$ and $\alpha \equiv 1$ on $(0,1]$, with jump $\alpha(0+) - \alpha(0-) = 2$.
-
-::: pf-proof
-
-By definition, $\alpha$ is nondecreasing and has total variation $\alpha(1)-\alpha(-1)=2$. Its sole increment occurs across an interval whose left endpoint is at most zero and whose right endpoint is strictly positive. In particular, $\alpha(0)=-1$ fixes which partition interval carries that increment.
-
-:::
-
-:::
 
 ::: {.pf-step #s2}
 
-For every tagged partition $(P,\tau)$ of $[-1,1]$, exactly one subinterval has nonzero $\alpha$-increment, equal to $2$, and its closure contains $0$.
+$U(f,P,\alpha)=2\sup_{I_j}f$ and $L(f,P,\alpha)=2\inf_{I_j}f$.
 
 ::: pf-proof
 
-Write $P=(-1=x_0<\cdots<x_m=1)$. There is a unique index $j$ with $x_{j-1}\leq0<x_j$. The values of $\alpha$ at both endpoints of every other subinterval agree, whereas $\alpha(x_j)-\alpha(x_{j-1})=2$. Thus the tagged sum equals $2f(\tau_j)$, with $\tau_j\in[x_{j-1},x_j]$.
+The function $\alpha$ is increasing. Its values at both endpoints of every subinterval other than $I_j$ agree, whereas $\alpha(x_j)-\alpha(x_{j-1})=1-(-1)=2$. So only $I_j$ contributes to the upper and lower sums. The suprema and infima are finite because $f$ is bounded.
 
 :::
 
@@ -52,41 +42,25 @@ Write $P=(-1=x_0<\cdots<x_m=1)$. There is a unique index $j$ with $x_{j-1}\leq0<
 
 ::: {.pf-step #s3}
 
-For every $\varepsilon>0$, there is $\delta>0$ such that every tagged partition of mesh less than $\delta$ satisfies
-\[
-|S_\alpha(f;P,\tau)-2f(0)|<\varepsilon.
-\]
+For every $\varepsilon>0$ there is $\delta>0$ such that every partition $P$ of mesh less than $\delta$ satisfies $2f(0)-\varepsilon\le L(f,P,\alpha)\le U(f,P,\alpha)\le 2f(0)+\varepsilon$.
 
 ::: pf-proof
 
-Continuity of $f$ at zero gives $\delta>0$ such that $|f(t)-f(0)|<\varepsilon/2$ whenever $|t|<\delta$. If the mesh is less than $\delta$, the interval $[x_{j-1},x_j]$ of step [](#s2){.pf-ref} lies in $(-\delta,\delta)$, including its endpoints. Therefore
-\[
-|S_\alpha(f;P,\tau)-2f(0)|
-=2|f(\tau_j)-f(0)|<\varepsilon.
-\]
+Continuity of $f$ at zero gives $\delta>0$ such that $\abs{f(t)-f(0)}<\varepsilon/2$ whenever $\abs{t}<\delta$. If the mesh is less than $\delta$, then $I_j\subset(-\delta,\delta)$, because $I_j$ contains $0$ and has length less than $\delta$. Therefore $f(0)-\varepsilon/2\le\inf_{I_j}f\le\sup_{I_j}f\le f(0)+\varepsilon/2$, and step [](#s2){.pf-ref} gives the bounds.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-The function $f$ is Riemann–Stieltjes integrable with respect to $\alpha$ and
-\[
-\boxed{\int_{-1}^1 f(x)\,d\alpha(x)=2f(0)}.
-\]
+$f$ is Riemann–Stieltjes integrable with respect to $\alpha$ and $\int_{-1}^1 f(x)\,d\alpha(x)=2f(0)$.
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref} proves convergence of all tagged Stieltjes sums, uniformly in the tags, to $2f(0)$ as the mesh tends to zero. This is the defining criterion for Riemann–Stieltjes integrability. The boundedness hypothesis ensures all tagged sums are finite.
+By step [](#s3){.pf-ref}, for every $\varepsilon>0$ some partition has $U(f,P,\alpha)-L(f,P,\alpha)\le2\varepsilon$, so the Darboux criterion gives integrability. The integral lies between $L(f,P,\alpha)$ and $U(f,P,\alpha)$ for every $P$, so it lies in $[2f(0)-\varepsilon,2f(0)+\varepsilon]$ for every $\varepsilon>0$, hence equals $2f(0)$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref} establishes both assertions.
 
 :::
 
