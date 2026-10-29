@@ -15,34 +15,46 @@ review: draft
 
 ::: {.problem}
 Let $D$ contain the closed unit disk in its interior, and let $f$ be
-analytic in $D$ except for finitely many simple poles $z_1,\dots,z_k$ on
-$|z|=1$, with residues $s_1,\dots,s_k$. If
-\[
-f(z)=\sum_{n=0}^\infty a_nz^n\qquad(|z|<1),
-\]
-prove that there is $M>0$ such that $|a_n|\le M$ for all $n$.
+analytic in $D$ except for finitely many simple poles $z_1,\ldots,z_k$ on
+$\abs{z}=1$, with residues $s_1,\ldots,s_k$. If
+$$
+f(z)=\sum_{n=0}^\infty a_nz^n\qquad(\abs{z}<1),
+$$
+prove that there is $M>0$ such that $\abs{a_n}\le M$ for all $n$.
 :::
 
 ::: {.solution}
-Define
-\[
-H(z)=f(z)-\sum_{j=1}^k\frac{s_j}{z-z_j}.
-\]
-The simple poles are removed, so $H$ is holomorphic on a neighborhood of the
-closed unit disk. Hence there is $\rho>1$ such that $H(z)=\sum b_nz^n$ on
-$|z|<\rho$, and Cauchy's estimates give $|b_n|\le C\rho^{-n}$ for some $C$.
-For $|z|<1$ and $|z_j|=1$,
-\[
-\frac{s_j}{z-z_j}
-=-\sum_{n=0}^\infty\frac{s_j}{z_j^{n+1}}z^n.
-\]
-Thus
-\[
-a_n=b_n-\sum_{j=1}^k\frac{s_j}{z_j^{n+1}},
-\]
-and therefore
-\[
-|a_n|\le C+\sum_{j=1}^k|s_j|.
-\]
-This constant is independent of $n$.
+Let $H(z)=f(z)-\sum_{j=1}^k\frac{s_j}{z-z_j}$.
+
+::: pf
+
+::: {.pf-step #H}
+$H(z)=\sum b_nz^n$ on $\abs{z}<1$ with $\abs{b_n}\le C$ for some $C$ and all $n$.
+
+::: pf-proof
+Subtracting the principal parts removes the simple poles, so $H$ is holomorphic on a neighborhood of the closed unit disk, hence on $\abs{z}<\rho$ for some $\rho>1$. Cauchy's estimates on a circle of radius $r\in(1,\rho)$ give $\abs{b_n}\le C r^{-n}\le C$.
+:::
+
+:::
+
+::: {.pf-step #poles}
+For $\abs{z}<1$, $\dfrac{s_j}{z-z_j}=-\displaystyle\sum_{n=0}^\infty\frac{s_j}{z_j^{n+1}}z^n$.
+
+::: pf-proof
+Expand $\dfrac{s_j}{z-z_j}=-\dfrac{s_j}{z_j}\dfrac{1}{1-z/z_j}$ as a geometric series, valid since $\abs{z/z_j}=\abs{z}<1$.
+:::
+
+:::
+
+::: pf-step
+$\abs{a_n}\le C+\sum_{j=1}^k\abs{s_j}$ for all $n$.
+
+::: pf-proof
+By steps [](#H){.pf-ref} and [](#poles){.pf-ref}, $a_n=b_n-\sum_{j=1}^ks_jz_j^{-(n+1)}$, and $\abs{z_j}=1$.
+:::
+
+:::
+
+:::
+
 :::
