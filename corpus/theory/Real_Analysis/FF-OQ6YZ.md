@@ -5,7 +5,7 @@ kind: fact
 title: Hölder's inequality
 slogan: 'Conjugate $L^p$ and $L^q$ norms control the $L^1$ norm of a product.'
 prompts:
-- State Holder's inequality.
+- State Hölder's inequality.
 classification:
   areas:
   - real-analysis
