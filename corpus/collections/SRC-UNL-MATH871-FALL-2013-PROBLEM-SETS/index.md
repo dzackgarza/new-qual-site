@@ -25,14 +25,14 @@ source:
       comment: Munkres 1.2, parts c, g, k, m, p, q
     - E-MUN-2-1
     - id: E-MUN-2-2
-      comment: Munkres 2.2; part b selected for grading
+      comment: Munkres 2.2
     - E-MUN-6-2
     - E-MUN-7-1
     - id: E-MUN-7-5
       comment: Munkres 7.5, parts a, e, i
     - E-QR3SP
     - id: E-1QFIO
-      comment: Munkres 13.4; parts a, c selected for grading
+      comment: Munkres 13.4
   - name: PS2
     problems:
     - P-UNL871F13-PS2.1
@@ -94,7 +94,7 @@ source:
     - E-4T2MK
     - E-PSR75
     - id: E-2X3VM
-      comment: Munkres 24.8; part a selected for grading
+      comment: Munkres 24.8
   - name: PS8
     problems:
     - E-R65PW
@@ -109,7 +109,7 @@ source:
     - E-DWC4M
     - E-DUQHF
     - id: E-L4UAO
-      comment: Munkres 32.2; T4 part selected for grading
+      comment: Munkres 32.2
   - name: PS9
     problems: []
   - name: PS10
