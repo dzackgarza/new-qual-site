@@ -23,7 +23,7 @@ The real and imaginary parts of a holomorphic function are harmonic, and a harmo
 ::: {.proof}
 \envlist
 
-- By the Cauchy–Riemann equations,
+- By the Cauchy--Riemann equations,
 $$
 \begin{aligned}
 u_x = v_y && u_y = -v_x
