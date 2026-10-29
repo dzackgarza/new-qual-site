@@ -27,8 +27,6 @@ Make a similar construction and analysis for the quotient map $q: \CP^\infty \to
 :::
 
 ::: {.solution}
-**Goal.** Show $q^*: H^*(\CP^\infty;\ZZ) \to H^*(\RP^\infty;\ZZ)$ is surjective in even degrees, compute the cohomology of the quotient space $X$, and analyze the $\CP^\infty \to \HP^\infty$ analogue.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -178,12 +176,6 @@ same Mayer–Vietoris / cell-attachment argument with the roles of $\CP$ and $\H
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} answer the three parts.
 
 :::
 
