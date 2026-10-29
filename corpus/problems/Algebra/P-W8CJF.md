@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-If $R$ is an integral domain and $\Spec R\subseteq\maxspec R$, show that $R$ is a UFD.
+If $R$ is an integral domain and $\Spec R\subseteq\mspec R$, show that $R$ is a UFD.
 :::
 
 ::: {.solution}

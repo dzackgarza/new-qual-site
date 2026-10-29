@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.exercise}
-Let $R$ be a commutative ring with identity. Show that $\bigcup_{\mathfrak{m} \in \maxspec(R)} \mathfrak{m} = R \setminus R^\times$.
+Let $R$ be a commutative ring with identity. Show that $\bigcup_{\mathfrak{m} \in \mspec(R)} \mathfrak{m} = R \setminus R^\times$.
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ $$
 $$
 contradicting that $\mathfrak m$ is proper. Hence
 $$
-\bigcup_{\mathfrak m\in\maxspec(R)}\mathfrak m
+\bigcup_{\mathfrak m\in\mspec(R)}\mathfrak m
 \subseteq R\setminus R^\times.
 $$
 :::
@@ -50,14 +50,14 @@ $$
 :::
 
 ::: pf-step
-Every nonunit belongs to a maximal ideal, so $\bigcup_{\mathfrak m\in\maxspec(R)}\mathfrak m=R\setminus R^\times$.
+Every nonunit belongs to a maximal ideal, so $\bigcup_{\mathfrak m\in\mspec(R)}\mathfrak m=R\setminus R^\times$.
 
 ::: pf-proof
 Let $x\in R$ be a nonunit. Then $(x)\ne R$, so $(x)$ is a proper ideal. Every proper ideal of a ring with identity is contained in a maximal ideal (Zorn's lemma), so $(x)$ is contained in some maximal ideal $\mathfrak m$. Thus $x\in\mathfrak m$, and therefore
 $$
 R\setminus R^\times
 \subseteq
-\bigcup_{\mathfrak m\in\maxspec(R)}\mathfrak m.
+\bigcup_{\mathfrak m\in\mspec(R)}\mathfrak m.
 $$
 With the reverse inclusion of step [](#maximal-ideal-elements-are-nonunits){.pf-ref}, this gives equality.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-EBIC3Z5S
 kind: problem
-title: If $\Spec(R)\subseteq\maxspec(R)$ then $R$ is a UFD
+title: If $\Spec(R)\subseteq\mspec(R)$ then $R$ is a UFD
 classification:
   areas:
   - algebra
@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $\Spec(R) \subseteq \maxspec(R)$ and $R$ is an integral domain, then $R$ is a UFD.
+Show that if $\Spec(R) \subseteq \mspec(R)$ and $R$ is an integral domain, then $R$ is a UFD.
 :::
 
 ::: {.solution}

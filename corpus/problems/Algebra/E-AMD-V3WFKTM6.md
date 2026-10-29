@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-V3WFKTM6
 kind: problem
-title: $\maxspec(R)\subseteq\Spec(R)$, with strict containment possible
+title: $\mspec(R)\subseteq\Spec(R)$, with strict containment possible
 classification:
   areas:
   - algebra
@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-Let $R$ be a commutative ring with identity. Show that every maximal ideal of $R$ is prime, that is, $\maxspec(R) \subseteq \Spec(R)$, and give an example of a prime ideal that is not maximal, so that the containment is strict.
+Let $R$ be a commutative ring with identity. Show that every maximal ideal of $R$ is prime, that is, $\mspec(R) \subseteq \Spec(R)$, and give an example of a prime ideal that is not maximal, so that the containment is strict.
 :::
 
 
@@ -40,10 +40,10 @@ Let $\mathfrak m$ be a maximal ideal. Then $R/\mathfrak m$ is a field, hence an 
 :::
 
 ::: pf-step
-Hence $\maxspec(R)\subseteq\Spec(R)$.
+Hence $\mspec(R)\subseteq\Spec(R)$.
 
 ::: pf-proof
-By definition, $\maxspec(R)$ is the set of maximal ideals and $\Spec(R)$ is the set of prime ideals. The inclusion follows from step [](#maximal-implies-prime){.pf-ref}.
+By definition, $\mspec(R)$ is the set of maximal ideals and $\Spec(R)$ is the set of prime ideals. The inclusion follows from step [](#maximal-implies-prime){.pf-ref}.
 :::
 
 :::
@@ -58,9 +58,9 @@ $$
 $$
 Thus
 $$
-(0)\in\Spec(\ZZ)\setminus\maxspec(\ZZ),
+(0)\in\Spec(\ZZ)\setminus\mspec(\ZZ),
 $$
-so $\maxspec(\ZZ)\subsetneq\Spec(\ZZ)$.
+so $\mspec(\ZZ)\subsetneq\Spec(\ZZ)$.
 :::
 
 :::
@@ -72,7 +72,7 @@ so $\maxspec(\ZZ)\subsetneq\Spec(\ZZ)$.
 ::: {.remark}
 Strictness is not automatic for every ring. If $R=k$ is a field, then $(0)$ is its only proper ideal, and it is both prime and maximal. Hence
 $$
-\maxspec(k)=\Spec(k)=\{(0)\}.
+\mspec(k)=\Spec(k)=\{(0)\}.
 $$
 :::
 
