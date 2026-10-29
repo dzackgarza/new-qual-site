@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-12
 kind: problem
-title: Maxim algebraic topology 1.12
+title: $\RP^{2n}$ does not embed in $S^{2n+1}$
 classification:
   areas: [topology]
   topics: []
