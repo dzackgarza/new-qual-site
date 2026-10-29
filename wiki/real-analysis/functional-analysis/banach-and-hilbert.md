@@ -26,8 +26,6 @@ The Riesz representation theorem states that every bounded linear functional on 
 
 [[T-LDCZB]]
 
-[[FF-UT5GL]]
-
 [[T-J3AN3]]
 
 ::: {.proposition title="Parallelogram law"}
