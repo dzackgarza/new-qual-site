@@ -45,16 +45,16 @@ It is Eisenstein at the prime $2$.
 ::: pf-step
 
 Its splitting field is
-\[
+$$
 L=\QQ(\alpha,\zeta_3).
-\]
+$$
 
 ::: pf-proof
 
 The three roots are
-\[
+$$
 \alpha,\ \zeta_3\alpha,\ \zeta_3^2\alpha.
-\]
+$$
 
 :::
 
@@ -67,9 +67,9 @@ One has $[L:\QQ]=6$.
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, $[\QQ(\alpha):\QQ]=3$. The field $\QQ(\alpha)$ is real, while $\zeta_3$ is nonreal, so $\zeta_3\notin\QQ(\alpha)$. Since $\zeta_3$ has degree $2$ over $\QQ$, adjoining it doubles the degree:
-\[
+$$
 [L:\QQ]=6.
-\]
+$$
 
 :::
 
@@ -78,9 +78,9 @@ By step [](#s1){.pf-ref}, $[\QQ(\alpha):\QQ]=3$. The field $\QQ(\alpha)$ is real
 ::: pf-step
 
 Therefore
-\[
-\operatorname{Gal}(L/\QQ)\cong S_3.
-\]
+$$
+\Gal(L/\QQ)\cong S_3.
+$$
 
 ::: pf-proof
 
