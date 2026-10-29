@@ -28,7 +28,6 @@ where $p, q$ range over the rationals.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the level set $f^{-1}(r)$ of the Urysohn function $f(x) = \inf \{p \in \QQ \mid x \in U_p\}$ is given by the difference $\bigcap_{p > r, p \in \QQ} U_p \setminus \bigcup_{q < r, q \in \QQ} U_q$.
 
 ::: pf
 
@@ -100,7 +99,6 @@ $$x \in \bigcap_{p > r, p \in \QQ} U_p \setminus \bigcup_{q < r, q \in \QQ} U_q.
 ::: pf-step
 Conclusion:
 $$f^{-1}(r) = \bigcap_{p > r} U_p - \bigcup_{q < r} U_q.$$
-Q.E.D.
 :::
 
 :::
