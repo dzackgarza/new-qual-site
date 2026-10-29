@@ -25,49 +25,13 @@ Prove that the tensor $\omega = v_1 \wedge v_2 + v_3 \wedge v_4$ cannot be repre
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #square}
 
-Suppose $\omega = u \wedge w$ for some $u, w \in V$.
-
-::: pf-proof
-
-assume for contradiction.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Then $\omega \wedge \omega = (u \wedge w) \wedge (u \wedge w) = 0$.
+$\omega\wedge\omega=2\,v_1\wedge v_2\wedge v_3\wedge v_4\ne0$.
 
 ::: pf-proof
 
-$u \wedge w \wedge u \wedge w = 0$ (repeated factor).
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-But $\omega \wedge \omega = (v_1 \wedge v_2 + v_3 \wedge v_4) \wedge (v_1 \wedge v_2 + v_3 \wedge v_4) = 2 v_1 \wedge v_2 \wedge v_3 \wedge v_4 \neq 0$.
-
-::: pf-proof
-
-expand; the cross terms vanish ($v_1 \wedge v_2 \wedge v_1 \wedge v_2 = 0$ and $v_3 \wedge v_4 \wedge v_3 \wedge v_4 = 0$), leaving $v_1 \wedge v_2 \wedge v_3 \wedge v_4 + v_3 \wedge v_4 \wedge v_1 \wedge v_2 = 2 v_1 \wedge v_2 \wedge v_3 \wedge v_4$, which is nonzero since $\{v_1, v_2, v_3, v_4\}$ is linearly independent.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Contradiction, so $\omega$ is not a single exterior product.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+Expanding, $(v_1\wedge v_2)\wedge(v_1\wedge v_2)=0$ and $(v_3\wedge v_4)\wedge(v_3\wedge v_4)=0$ because each has a repeated factor, and $v_3\wedge v_4\wedge v_1\wedge v_2=v_1\wedge v_2\wedge v_3\wedge v_4$ because $2$-forms commute. Since $v_1,\ldots,v_4$ are linearly independent, $v_1\wedge v_2\wedge v_3\wedge v_4\ne0$, and $2\ne0$ in $\CC$.
 
 :::
 
@@ -75,10 +39,9 @@ Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref}.
+If $\omega=u\wedge w$ for some $u,w\in V$, then $\omega\wedge\omega=u\wedge w\wedge u\wedge w=0$ because $u$ is repeated, which contradicts step [](#square){.pf-ref}.
 
 :::
 
 :::
-
 :::
