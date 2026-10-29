@@ -23,6 +23,10 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne III.12.3 prints the jumps for h^0(t, I) and h^1(t, I), which vanish for every t. The statement now asks for the jumps of h^0(t, I(1)) and h^1(t, I(1)).
 ---
 
 ::: {.problem}
@@ -32,13 +36,13 @@ Use (9.8.3) to construct a flat family $\theset{X_t}$ of curves in $\PP^4$, para
 
 Let $\mci \subseteq \mco_{\PP^4 \times T}$ be the ideal sheaf of the total family $X \subseteq \PP^4 \times T$. Show that $\mci$ is flat over $T$. Then show that
 \[
-h^0(t, \mci) =
+h^0(t, \mci(1)) =
 \begin{cases}
 0 & t \neq 0 \\
 1 & t = 0
 \end{cases}
 \qquad
-h^1(t, \mci) =
+h^1(t, \mci(1)) =
 \begin{cases}
 0 & t \neq 0 \\
 1 & t = 0
@@ -46,29 +50,6 @@ h^1(t, \mci) =
 .\]
 
 This gives another example of cohomology groups jumping at a special point.
-:::
-
-::: {.remark title="Erratum to the printed cohomology claim"}
-The two displayed jumps are not correct for the untwisted ideal sheaves
-$\mci_t$. In fact, every fibre in the family below is a connected reduced
-rational curve, so
-$$
-H^0(X_t,\mco_{X_t})=k.
-$$
-From
-$$
-0\to\mci_t\to\mco_{\PP^4}\to\mco_{X_t}\to0
-$$
-and $H^1(\PP^4,\mco_{\PP^4})=0$, one obtains
-$$
-H^0(\PP^4,\mci_t)=H^1(\PP^4,\mci_t)=0
-$$
-for every $t$.
-
-The advertised values are correct after replacing $\mci_t$ by
-$\mci_t(1)$. The solution proves the flat-family construction and flatness
-of $\mci$, records the untwisted calculation, and then proves this corrected
-jump.
 :::
 
 ::: {.solution}
@@ -172,55 +153,6 @@ flat modules is flat. Therefore $\mci$ is flat over $T$.
 
 :::
 
-::: {.pf-step #s3}
-
-For the untwisted ideal sheaves, the printed jump does not occur:
-$$
-H^0(\PP^4,\mci_t)=H^1(\PP^4,\mci_t)=0
-$$
-for every $t\in T$.
-
-::: pf-proof
-
-Since $\mco_X$ is flat over $T$, restricting the exact sequence of
-step [](#s2){.pf-ref} to a fibre remains exact:
-$$
-0
-\longrightarrow
-\mci_t
-\longrightarrow
-\mco_{\PP^4}
-\longrightarrow
-\mco_{X_t}
-\longrightarrow0.
-$$
-Every $X_t$ is isomorphic to $\PP^1$, hence is connected and proper, so
-$$
-H^0(X_t,\mco_{X_t})=k.
-$$
-The restriction map
-$$
-H^0(\PP^4,\mco_{\PP^4})=k
-\longrightarrow
-H^0(X_t,\mco_{X_t})=k
-$$
-is the identity on constants and therefore an isomorphism. Since
-$$
-H^1(\PP^4,\mco_{\PP^4})=0,
-$$
-the long exact sequence gives
-$$
-H^0(\PP^4,\mci_t)=0
-\qquad\text{and}\qquad
-H^1(\PP^4,\mci_t)=0.
-$$
-Thus the two displayed functions in the printed statement are both
-identically zero.
-
-:::
-
-:::
-
 ::: {.pf-step #s4}
 
 After twisting by $\mco_{\PP^4}(1)$, for every $a\ne0$ one has
@@ -234,7 +166,10 @@ $$
 
 ::: pf-proof
 
-Twisting the fibre sequence gives
+Since $\mco_X$ is flat over $T$, restricting the exact sequence of
+step [](#s2){.pf-ref} to the fibre over $t$ remains exact, so
+$\mci_t$ is the ideal sheaf of $X_t$ in $\PP^4$. Twisting this fibre
+sequence by $\mco_{\PP^4}(1)$ gives
 $$
 0
 \longrightarrow
@@ -323,7 +258,7 @@ with that cokernel. Both have dimension one.
 
 ::: {.pf-step #s6}
 
-Thus the intended semicontinuity example is
+Therefore
 $$
 h^0(t,\mci(1))
 =
@@ -337,8 +272,7 @@ $$
 
 ::: pf-proof
 
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the displayed values. Step [](#s3){.pf-ref} proves that the
-same assertion with $\mci$ in place of $\mci(1)$ is false.
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the displayed values.
 
 :::
 
@@ -346,12 +280,9 @@ same assertion with $\mci$ in place of $\mci(1)$ is false.
 
 ::: pf-qed
 
-for the corrected statement.
-
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct the required flat family and prove flatness of
-its ideal sheaf. Step [](#s3){.pf-ref} resolves the printed cohomology claim, and
-steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the missing-twist correction that has the advertised
-jump.
+its ideal sheaf, and steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the
+cohomology jump.
 
 :::
 
