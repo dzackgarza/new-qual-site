@@ -23,7 +23,7 @@ Show that for $0 < p < q \le \infty$,
 $$
 \|a\|_{\ell^q} \le \|a\|_{\ell^p}
 $$
-for any sequence $a = (a_j)_{j=1}^\infty \in \mathbb{C}^\mathbb{N}$, where $\|a\|_{\ell^\infty} := \sup_j |a_j|$ and $\|a\|_{\ell^r} := \left(\sum_{j=1}^\infty |a_j|^r\right)^{1/r}$ for $r < \infty$.
+for any sequence $a = (a_j)_{j=1}^\infty \in \CC^\NN$, where $\|a\|_{\ell^\infty} \coloneqq \sup_j |a_j|$ and $\|a\|_{\ell^r} \coloneqq \left(\sum_{j=1}^\infty |a_j|^r\right)^{1/r}$ for $r < \infty$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ for any sequence $a = (a_j)_{j=1}^\infty \in \mathbb{C}^\mathbb{N}$, where $\|a\
 ::: pf
 
 ::: {.pf-step #s1}
-Case 1: $q = \infty$ (where $0 < p < \infty$).
+If $q = \infty$, then $\|a\|_{\ell^\infty} \le \|a\|_{\ell^p}$.
 
 ::: pf-proof
 
@@ -63,7 +63,7 @@ $$\|a\|_{\ell^\infty} = \sup_{k \ge 1} |a_k| \le \|a\|_{\ell^p}.$$
 :::
 
 ::: {.pf-step #s2}
-Case 2: $q < \infty$ (where $0 < p < q < \infty$).
+If $q < \infty$, then $\|a\|_{\ell^q} \le \|a\|_{\ell^p}$.
 
 ::: pf-proof
 
@@ -121,7 +121,7 @@ $$\|a\|_{\ell^q} = \|a\|_{\ell^p} \|b\|_{\ell^q} \le \|a\|_{\ell^p} \cdot 1 = \|
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} cover $q = \infty$ and $q < \infty$.
+Either $q = \infty$ or $p < q < \infty$, and steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the inequality in the two cases.
 :::
 
 :::
