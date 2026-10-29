@@ -214,7 +214,7 @@ $$
 
 ::: {.pf-step #s5}
 
-Every irreducible $U_n(\CC)$-module is one-dimensional over $\CC$.
+The statement is $\boxed{\text{true}}$: every irreducible $U_n(\CC)$-module is one-dimensional over $\CC$.
 
 ::: pf-proof
 
@@ -222,16 +222,10 @@ Let $M$ be an irreducible, equivalently simple, $U_n(\CC)$-module. Step
 [](#s3){.pf-ref} reduces $M$ to a simple $\CC^n$-module, and step [](#s4){.pf-ref} proves that such
 a module has complex dimension one. Hence
 $$
-\boxed{\dim_\CC M=1.}
+\dim_\CC M=1.
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s5){.pf-ref} proves that the statement in the problem is true.
 
 :::
 
