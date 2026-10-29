@@ -28,10 +28,6 @@ Each proof applies Zorn's lemma to a poset of partial objects ordered by inclusi
 
 ## Nakayama's lemma
 
-Let $(R,\mfm)$ be a [[D-TGB4R|local ring]] and $M$ a finitely generated $R$-module.
-If $\mfm M=M$, then $M=0$.
-Equivalently, elements $m_1,\ldots,m_n\in M$ generate $M$ if and only if their images span the $R/\mfm$-vector space $M/\mfm M$.
-
 [[FF-NREXC]]
 
 [[FF-45SK3]]
@@ -62,8 +58,6 @@ Let $R$ be a Noetherian ring and $I\subseteq R$ an ideal.
 [[FF-CSABG]]
 
 ## Integral extensions
-
-For an integral extension of rings $A\subseteq B$, every prime of $A$ is the contraction of a prime of $B$, and by the going-up theorem a chain of primes $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of $A$ together with a prime $\mathfrak q_1$ of $B$ satisfying $\mathfrak q_1\intersect A=\mfp_1$ extends to a chain $\mathfrak q_1\subseteq\cdots\subseteq\mathfrak q_n$ of primes of $B$ with $\mathfrak q_i\intersect A=\mfp_i$.
 
 [[PR-RJ3P7]]
 
