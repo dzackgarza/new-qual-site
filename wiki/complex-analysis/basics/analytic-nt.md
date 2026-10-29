@@ -1,5 +1,6 @@
 ---
 order: 52
+title: Summation by parts and Abel's theorem
 ---
 
 # Summation by parts and Abel's theorem
@@ -58,7 +59,7 @@ Then $\lim_{x\to 1^-} f(x) = 1/2$, but the series $\sum_{n\geq 0}(-1)^n = 1-1+1-
 
 :::
 
-## Exercises
+## Problems
 
 [[E-SS1.EX-19]]
 [[E-ORJPT]]
