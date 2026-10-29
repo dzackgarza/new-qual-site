@@ -7,12 +7,6 @@ It covers prelims, algebra, applied algebra, algebraic geometry, real analysis, 
 
 No installation is required.
 
-## Repository checkpoint
-
-The source tree is currently in the `audited-deployment` milestone. Unsolved-problem contribution and result slogans are complete, and the corpus-wide `copy-policy-repair` pass is active. The repository owner approved deployment of the earlier handoff checkpoint for verification, but the required three clean deployed-site audits do not begin until `copy-policy-repair` closes. Solution authorship remains blocked behind the audited-deployment milestone.
-
-The public site may therefore lag the active `copy-policy-repair` work until the next approved deployment.
-
 ## Study
 
 - [Browse, filter, sample, and print problems](https://dzackgarza.github.io/new-qual-site/problems.html).
