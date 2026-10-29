@@ -13,7 +13,7 @@ The representation theory of finite groups is also treated on [[algebra/represen
 
 ## Maschke and Schur
 
-By [[T-PIO2B|Maschke's theorem]], every finite-dimensional complex representation of a finite group $G$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] the multiplicities are inner products of characters.
+By [[T-PIO2B|Maschke's theorem]], every finite-dimensional complex representation of a finite group $G$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] and the orthogonality relations it implies, the multiplicities are inner products of characters.
 If $d_1,\ldots,d_r$ are the dimensions of the irreducible representations, then
 $$
 \size G = \sum_i d_i^2,
