@@ -27,32 +27,31 @@ prompts:
 
 ::: {.example title="The setup"}
 Let $X = V(f) \subseteq \PP^2_{/\ZZ}$ with $f \in \ZZ[x,y,z]$ a cubic whose base change to $\CC$ is smooth.
-For all but finitely many primes the reduction $X_{(p)} \subseteq \PP^2_{/\FF_p}$ is again smooth, and one can ask for
+For all but finitely many primes the reduction $X_{(p)} \subseteq \PP^2_{/\FF_p}$ is again smooth.
+Let
 $$
-B \definedas \theset{ p \st X_{(p)} \text{ is smooth over } \bar\FF_p \text{ and has Hasse invariant } 0 } .
+B \coloneqq \theset{ p \st X_{(p)} \text{ is smooth over } \bar\FF_p \text{ and has Hasse invariant } 0 } .
 $$
-The answer depends entirely on whether $X_{/\CC}$ has complex multiplication:
+The set $B$ depends on whether $X_{/\CC}$ has complex multiplication:
 
-- **With CM** by an order in $K$: for $p$ of good reduction, $p \in B$ exactly when $p$ does not split in $K$, that is when $p$ is inert or ramified.
-  Half the primes split, so $B$ has density $\tfrac{1}{2}$.
+- With CM by an order in an imaginary quadratic field $K$: for $p$ of good reduction, $p \in B$ exactly when $p$ does not split in $K$, that is when $p$ is inert or ramified.
   This is Deuring's theorem.
+  Half the primes split, so $B$ has density $\tfrac{1}{2}$.
 
-- **Without CM**: $B$ has density $0$, and $B$ is nevertheless infinite.
-  Both of these are theorems, the second Elkies'.
-  A finer count is not known: the expected asymptotic $\abs{\theset{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$ is the Lang--Trotter conjecture and is open.
+- Without CM: $B$ has density $0$ (Serre), and $B$ is infinite (Elkies).
+  The asymptotic $\abs{\theset{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$ is the Lang--Trotter conjecture, which is open.
 :::
 
-::: {.remark title="What is proved and what is not"}
-The three claims have different logical status and should remain separate.
-Deuring's criterion is a clean equivalence and gives the density $\tfrac12$ immediately from Chebotarev, or from Dirichlet in the cases where the splitting condition is a congruence.
-Density zero in the non-CM case follows from the distribution of Frobenius traces.
-Infinitude in the non-CM case is much harder and was open for a long time; it is a theorem only for elliptic curves over $\QQ$.
-The $\sqrt x/\log x$ growth is a conjecture and should be labelled as one.
+::: {.remark title="Status of the three claims"}
+Deuring's criterion is an equivalence, and the density $\tfrac12$ follows from it by Chebotarev's density theorem, or by Dirichlet's theorem when the splitting condition is a congruence.
+Density zero in the non-CM case is Serre's theorem, proved from the distribution of Frobenius traces.
+Elkies proved infinitude in the non-CM case for elliptic curves over $\QQ$, and more generally over number fields with a real embedding.
+The $\sqrt x/\log x$ growth is a conjecture.
 :::
 
 ::: {.example title="$y^2 = x^3 - x$, worked out"}
 Here $\lambda = -1$, $j = 1728$, and the curve has CM by $\ZZ[i]$.
-Apply the criterion directly: with $m = \tfrac{p-1}{2}$ and $g(x) = x(x^2-1)$,
+For an odd prime $p$, apply the Hasse-invariant criterion with $m = \tfrac{p-1}{2}$ and $g(x) = x(x^2-1)$,
 $$
 g(x)^m = x^m (x^2-1)^m ,
 $$
@@ -64,7 +63,7 @@ X_{(p)} \text{ supersingular}
 \iff m = \tfrac{p-1}{2} \text{ is odd}
 \iff p \equiv 3 \bmod 4 .
 $$
-And $p \equiv 3 \bmod 4$ is exactly the condition that $p$ stays prime in $\ZZ[i]$, matching the general statement.
+The condition $p \equiv 3 \bmod 4$ is exactly the condition that $p$ stays prime in $\ZZ[i]$, as Deuring's theorem predicts.
 By Dirichlet these have density $\tfrac{1}{2}$ and there are infinitely many.
 :::
 
@@ -78,12 +77,11 @@ The density-zero statement follows from the non-CM theorem above, and $j\notin\o
 :::
 
 ::: {.remark}
-The density $\tfrac12$ in the CM case comes from the splitting behavior of primes in the CM field.
-For a CM curve the reduction inherits the CM order, and the splitting behaviour of $p$ in $K$ decides whether the reduced endomorphism ring stays commutative.
-When $p$ splits, Frobenius generates the old imaginary quadratic order and the curve is ordinary; when $p$ is inert or ramified it cannot, the endomorphism ring jumps to a quaternion order, and the curve is supersingular.
-So a single congruence condition governs every $p$ at once.
+For a curve with CM by an order in $K$ and a prime $p$ of good reduction, the endomorphism ring of the reduction over $\bar\FF_p$ contains that order.
+When $p$ splits in $K$, the reduction is ordinary and its endomorphism ring is an order in $K$; when $p$ is inert or ramified, the reduction is supersingular and its endomorphism ring is a maximal order in a quaternion algebra.
+Whether $p$ splits in $K$ is decided by the Legendre symbol $\qty(\tfrac{d_K}{p})$, a congruence condition on $p$.
 
-Without CM there is no such rigid structure and the supersingular primes are governed instead by how often the Frobenius trace $a_p$ vanishes, a much thinner condition; density zero, infinitude, and the $\sqrt x / \log x$ heuristic all belong to that side.
+Without CM, a prime $p \geq 5$ of good reduction is supersingular exactly when the Frobenius trace $a_p$ is $0$, and the density-zero theorem, Elkies' theorem, and the Lang--Trotter conjecture concern how often $a_p$ vanishes.
 
-Conversely, integrality of the $j$-invariant gives an obstruction to CM: a non-integral rational $j$ rules out CM, and more generally a $j$-invariant that is not an algebraic integer cannot be a CM $j$-invariant.
+A CM $j$-invariant is an algebraic integer, so a $j$-invariant that is not an algebraic integer, in particular a non-integral rational $j$, rules out CM.
 :::
