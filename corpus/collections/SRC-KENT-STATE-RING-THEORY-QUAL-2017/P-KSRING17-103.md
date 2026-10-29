@@ -13,43 +13,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 103 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source requires $p\mid a_i$ only for $i=1,\ldots,k-1$, which $x^2-1$, $p=2$, $k=2$ satisfies with two linear factors. The statement now requires $p\mid a_i$ for $i=0,\ldots,k-1$.
 ---
 
 ::: {.problem}
-Let $f ( x ) = a _ { 0 } + a _ { 1 } x + \cdots + a _ { k } x ^ { k } + \cdots + a _ { n } x ^ { n } \in \mathbb { Z } [ x ]$ and p a prime such that $p | a _ { i }$ for $i = 1 , \ldots , k - 1 , p \nmid a _ { k } , p \nmid a _ { n }$ , and $p ^ { 2 } \nmid a _ { 0 }$ . Show that $f ( x )$ has an irreducible factor in $\mathbb { Z } [ x ]$ of degree at least k.
-:::
-
-::: {.remark}
-Erratum: the statement also needs
-$$
-p\mid a_0.
-$$
-Without this hypothesis the claim is false; for example,
-$$
-f(x)=x^2-1,
-\qquad
-p=2,
-\qquad
-k=2
-$$
-satisfies the printed conditions but factors into two linear factors.
-The proof below uses the intended hypotheses
-$$
-p\mid a_i
-\quad
-(0\le i\le k-1),
-\qquad
-p\nmid a_k,
-\qquad
-p\nmid a_n,
-\qquad
-p^2\nmid a_0.
-$$
+Let $f ( x ) = a _ { 0 } + a _ { 1 } x + \cdots + a _ { k } x ^ { k } + \cdots + a _ { n } x ^ { n } \in \mathbb { Z } [ x ]$ and p a prime such that $p | a _ { i }$ for $i = 0 , \ldots , k - 1 , p \nmid a _ { k } , p \nmid a _ { n }$ , and $p ^ { 2 } \nmid a _ { 0 }$ . Show that $f ( x )$ has an irreducible factor in $\mathbb { Z } [ x ]$ of degree at least k.
 :::
 
 ::: {.solution}
-
-Assume the corrected hypotheses.
 
 ::: pf
 
@@ -59,7 +33,6 @@ The coefficient $a_0$ is nonzero and satisfies
 $$
 v_p(a_0)=1.
 $$
-
 
 ::: pf-proof
 
@@ -91,7 +64,6 @@ c\in\ZZ\setminus\{0\}
 $$
 and each $f_j$ is primitive and irreducible of positive degree.
 
-
 ::: pf-proof
 
 Apply Gauss's lemma and unique factorization in
@@ -107,7 +79,6 @@ Any integer content is absorbed into $c$.
 ::: {.pf-step #s1-3}
 
 The integer $c$ is not divisible by $p$.
-
 
 ::: pf-proof
 
@@ -140,7 +111,6 @@ $$
 ::: {.pf-step #s1-4}
 
 Exactly one irreducible factor $f_j$ has constant coefficient divisible by $p$.
-
 
 ::: pf-proof
 
@@ -209,10 +179,9 @@ $$
 h(0)\ne0.
 $$
 
-
 ::: pf-proof
 
-By the corrected hypotheses,
+By hypothesis,
 $$
 p\mid a_0,\ldots,a_{k-1},
 $$
@@ -261,7 +230,6 @@ $$
 $$
 is not divisible by $x$.
 
-
 ::: pf-proof
 
 By step [](#s1-4){.pf-ref},
@@ -294,7 +262,6 @@ $$
 $$
 is nonzero.
 
-
 ::: pf-proof
 
 The polynomial
@@ -324,7 +291,6 @@ x^k
 \mid
 \overline{f_{j_0}}(x).
 $$
-
 
 ::: pf-proof
 
@@ -378,7 +344,6 @@ $$
 \deg f_{j_0}\ge k.
 $$
 
-
 ::: pf-proof
 
 By step [](#s1-7){.pf-ref},
@@ -415,7 +380,6 @@ $$
 
 Therefore $f$ has an irreducible factor of degree at least $k$.
 
-
 ::: pf-proof
 
 The factor
@@ -436,12 +400,6 @@ f
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-10){.pf-ref} proves the corrected generalized Eisenstein criterion.
 
 :::
 
