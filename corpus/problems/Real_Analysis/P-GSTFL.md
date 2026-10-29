@@ -54,3 +54,7 @@ For $n\ge N$ and $x\in\RR$, step [](#N){.pf-ref} gives $\abs{g_n(x)-g(x)}<\delta
 :::
 
 :::
+
+::: {.remark title="Alternative proof"}
+The limit $g$ need not be named. A uniformly convergent sequence is uniformly Cauchy, so there is $N$ with $\sup_x\abs{g_i(x)-g_j(x)}<\delta$ for $i,j\ge N$; uniform continuity then makes $\theset{f\circ g_n}$ uniformly Cauchy, and a uniformly Cauchy sequence of real-valued functions converges uniformly because $\RR$ is complete.
+:::
