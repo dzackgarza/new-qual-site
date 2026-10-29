@@ -17,6 +17,10 @@ audit:
   date: 2026-09-10
 - event: solution-reviewed
   by: OpenAI
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints the sum in (c) as sign(sigma) v with no action of sigma, which makes the operator zero trivially. The statement now reads sign(sigma) sigma v, the antisymmetrizer.
   date: 2026-09-10
 ---
 
@@ -34,15 +38,9 @@ into irreducible $S_5$-modules.
 (c) For any permutation $\sigma\in S_5$, let $\operatorname{sign}(\sigma)$ be the sign of $\sigma$.
 Define a linear operator $\varphi\colon V\to V$ by
 \[
-\varphi(v)=\frac{1}{5!}\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\,v.
+\varphi(v)=\frac{1}{5!}\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\,\sigma v.
 \]
 What is the rank of the operator $\varphi$?
-:::
-
-::: {.remark}
-As printed, the sum in (c) carries no action: $\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)=0$, so the printed formula makes $\varphi$ the zero map, whose rank is $0$.
-The question is only substantive if the intended operator is the antisymmetrization projector $\varphi(v)=\frac{1}{5!}\sum_{\sigma}\operatorname{sign}(\sigma)\,\sigma v$.
-The statement is left as the exam printed it.
 :::
 
 ::: {.solution}
@@ -143,39 +141,14 @@ This proves part (b).
 
 ::: pf-step
 
-For the operator exactly as printed in part (c),
+The operator in part (c) has
 \[
 \boxed{\operatorname{rank}\varphi=0}.
 \]
 
 ::: pf-proof
 
-The printed formula contains no action of $\sigma$ on $v$, so
-\[
-\varphi(v)
-=\frac1{5!}\left(\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\right)v.
-\]
-There are equally many even and odd permutations in $S_5$, hence
-\[
-\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)=0.
-\]
-Therefore $\varphi=0$ and its rank is $0$.
-
-:::
-
-:::
-
-::: pf-step
-
-If the intended operator was instead the antisymmetrizer
-\[
-\widetilde\varphi(v)=\frac1{5!}\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\,\sigma v,
-\]
-then its rank is also $0$.
-
-::: pf-proof
-
-The antisymmetrizer is the projection onto the sign-isotypic component of $V$. The sign representation of $S_5$ is $S^{(1^5)}$, and step [](#s3){.pf-ref} shows that $S^{(1^5)}$ does not occur in $V$. Hence the sign-isotypic component is zero, so $\widetilde\varphi=0$ as well.
+The operator $\varphi$ is the antisymmetrizer, the projection onto the sign-isotypic component of $V$. The sign representation of $S_5$ is $S^{(1^5)}$, and step [](#s3){.pf-ref} shows that $S^{(1^5)}$ does not occur in $V$. Hence the sign-isotypic component is zero, so $\varphi=0$.
 
 :::
 
