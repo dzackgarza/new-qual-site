@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS06E
 kind: problem
-title: "Mod 2 cohomology ring of RP^n with RP^k collapsed to a point"
+title: 'Mod $2$ cohomology ring of $\RP^n/\RP^k$'
 classification:
   areas:
   - topology
