@@ -54,7 +54,6 @@ source:
   - id: E-IOZ4G
   - id: E-ITANC
   - id: E-J3IO7
-  - id: E-JSCGD
   - id: E-KJQUD
   - id: E-MKK6X
   - id: E-NTLQD
