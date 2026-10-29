@@ -23,15 +23,15 @@ audit:
 
 ::: {.problem}
 Let $\phi:\ZZ^4\to\ZZ^3$ be represented in the standard bases by
-\[
+$$
 A=
 \begin{pmatrix}
 1&2&0&3\\
 0&-3&3&1\\
 -1&1&1&5
 \end{pmatrix}.
-\]
-Compute $\operatorname{coker}(\phi)=\ZZ^3/\operatorname{im}(A)$ using Smith normal form.
+$$
+Compute $\coker(\phi)=\ZZ^3/\im(A)$ using Smith normal form.
 :::
 
 ::: {.solution}
@@ -57,13 +57,13 @@ The second determinantal divisor is $\Delta_2=1$.
 ::: pf-proof
 
 Among the $2\times2$ minors is
-\[
+$$
 \det
 \begin{pmatrix}
 1&3\\
 0&1
 \end{pmatrix}=1,
-\]
+$$
 using rows $1,2$ and columns $1,4$. Hence the gcd of all $2\times2$ minors is $1$.
 
 :::
@@ -76,14 +76,14 @@ The third determinantal divisor is $\Delta_3=1$.
 
 ::: pf-proof
 
-The four $3\times3$ minors obtained by deleting one column are
-\[
+The four $3\times3$ minors obtained by deleting column $4$, $3$, $2$, $1$, respectively, are
+$$
 -12,\qquad -27,\qquad 23,\qquad 10.
-\]
-Their gcd is $1$; for instance
-\[
+$$
+Their gcd is $1$:
+$$
 \gcd(12,27,23,10)=1.
-\]
+$$
 Therefore $\Delta_3=1$.
 
 :::
@@ -93,18 +93,18 @@ Therefore $\Delta_3=1$.
 ::: pf-step
 
 The Smith invariant factors are
-\[
+$$
 d_1=1,\qquad d_2=1,\qquad d_3=1.
-\]
+$$
 
 ::: pf-proof
 
 For a full-rank integer matrix, the Smith invariant factors satisfy
-\[
+$$
 d_1=\Delta_1,\qquad
  d_1d_2=\Delta_2,\qquad
  d_1d_2d_3=\Delta_3.
-\]
+$$
 Using steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} gives $d_1=d_2=d_3=1$.
 
 :::
@@ -114,23 +114,23 @@ Using steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} gives $d_1=d
 ::: pf-step
 
 Hence $\phi$ is surjective and
-\[
-\operatorname{coker}(\phi)=0.
-\]
+$$
+\coker(\phi)=0.
+$$
 
 ::: pf-proof
 
 The Smith normal form is
-\[
-\operatorname{diag}(1,1,1)
-\]
+$$
+\diag(1,1,1)
+$$
 as a $3\times4$ matrix, with one additional zero column. Therefore
-\[
-\ZZ^3/\operatorname{im}(A)
+$$
+\ZZ^3/\im(A)
 \cong
 \ZZ/1\ZZ\oplus\ZZ/1\ZZ\oplus\ZZ/1\ZZ
 =0.
-\]
+$$
 
 :::
 
