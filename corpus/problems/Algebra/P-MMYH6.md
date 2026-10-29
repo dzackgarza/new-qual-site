@@ -26,23 +26,31 @@ Show that $S_3$ is not nilpotent.
 :::
 
 ::: {.solution}
-A finite nilpotent group has all Sylow subgroups normal.
+::: pf
 
-In $S_3$, the Sylow $2$-subgroups are
-\[
-\langle(12)\rangle,
-\qquad
-\langle(13)\rangle,
-\qquad
-\langle(23)\rangle.
-\]
-Thus there are three Sylow $2$-subgroups, so none is normal.
+::: {.pf-step #sylow}
+$S_3$ has three Sylow $2$-subgroups, so none of them is normal.
 
-Therefore $S_3$ is not nilpotent.
+::: pf-proof
+The Sylow $2$-subgroups have order $2$ and are $\langle(12)\rangle$, $\langle(13)\rangle$, $\langle(23)\rangle$.
+A normal Sylow subgroup is the unique Sylow subgroup for its prime.
+:::
 
-Equivalently, its lower central series does not terminate at the identity: since
-\[
-[S_3,S_3]=A_3
-\]
-and $[A_3,S_3]=A_3$, the lower central series stabilizes at $A_3\ne1$.
+:::
+
+::: pf-step
+$S_3$ is not nilpotent.
+
+::: pf-proof
+Every Sylow subgroup of a finite nilpotent group is normal, which fails by step [](#sylow){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+The lower central series gives a second proof: $[S_3,S_3]=A_3$ and $[A_3,S_3]=A_3$, so the series stabilizes at $A_3\ne1$.
 :::
