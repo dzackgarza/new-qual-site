@@ -19,8 +19,27 @@ Show that if $f$ is entire and there exists a disc $\DD_r(a)$ not intersecting $
 :::
 
 ::: {.solution}
-Let $g(z)\definedas f(z)-a$.
-Then $\DD_r(0)$ does not intersect $g(\CC)$, so $\abs{g(z)} \geq r$ for all $z\in\CC$.
-In particular $g$ has no zeros, so $G(z) \definedas {1\over g(z)}$ is entire, and $\abs{G(z)} \leq \inverseof{r}$ for all $z$.
-By Liouville, $G$ is constant, so $g$ and hence $f$ are constant.
+
+::: pf
+
+::: {.pf-step #bounded}
+$G(z)\coloneqq{1\over f(z)-a}$ is entire with $\abs{G}\le1/r$.
+
+::: pf-proof
+Since $f(\CC)$ misses $\DD_r(a)$, $\abs{f(z)-a}\ge r>0$ for all $z\in\CC$.
+:::
+
+:::
+
+::: pf-step
+$f$ is constant.
+
+::: pf-proof
+By step [](#bounded){.pf-ref} and Liouville's theorem, $G$ is constant, hence so is $f=a+1/G$.
+:::
+
+:::
+
+:::
+
 :::
