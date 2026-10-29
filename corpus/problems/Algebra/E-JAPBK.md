@@ -12,10 +12,15 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source wrote A/nilrad(R); the ring is R throughout, so the statement now reads R/nilrad(R).'
 ---
 
 ::: {.exercise}
-Show $\nilrad{R} \normal R$ is an ideal and $A/\nilrad{R}$ is reduced.
+Show $\nilrad{R} \normal R$ is an ideal and $R/\nilrad{R}$ is reduced.
 :::
 
 ::: {.solution}
@@ -38,7 +43,15 @@ $\nilrad{R}+\nilrad{R}\subseteq\nilrad{R}$.
 ::: pf-proof
 Let $r^n=s^m=0$ and $N=n+m-1$.
 In $(r+s)^N=\sum_{k=0}^N\binom Nk r^ks^{N-k}$, each term has $k\ge n$ or $N-k\ge m$, so each term is $0$.
-Together with $0\in\nilrad{R}$ and $-r\in\nilrad{R}$, steps [](#r-times-nilrad-subset-nilrad){.pf-ref} and [](#nilrad-plus-nilrad-subset-nilrad){.pf-ref} show that $\nilrad{R}$ is an ideal.
+:::
+
+:::
+
+::: pf-step
+$\nilrad{R}$ is an ideal of $R$.
+
+::: pf-proof
+It contains $0$, and $-r=(-1)r\in\nilrad{R}$ for $r\in\nilrad{R}$ by step [](#r-times-nilrad-subset-nilrad){.pf-ref}. Steps [](#r-times-nilrad-subset-nilrad){.pf-ref} and [](#nilrad-plus-nilrad-subset-nilrad){.pf-ref} give closure under multiplication by $R$ and under addition.
 :::
 
 :::
