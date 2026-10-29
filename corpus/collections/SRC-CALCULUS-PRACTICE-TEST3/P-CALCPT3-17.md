@@ -5,7 +5,7 @@ kind: problem
 title: "Evaluate $1-\\sin^2(\\arccos(\\pi/12))$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Trigonometry]
 relations: []
 review: draft
 audit:
