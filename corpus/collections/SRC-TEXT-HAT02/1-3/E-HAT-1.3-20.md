@@ -22,15 +22,14 @@ Construct nonnormal covering spaces of the Klein bottle by a Klein bottle and by
 :::
 
 ::: {.solution}
-**Goal:** Construct explicit non-normal covering spaces of the Klein bottle $K$ whose total spaces are a Klein bottle and a torus, by finding corresponding non-normal subgroups of $\pi_1(K)$.
+Let $K$ be the Klein bottle. A connected covering is normal exactly when its subgroup of $\pi_1(K)$ is normal, so it suffices to find non-normal finite-index subgroups whose coverings are a Klein bottle and a torus.
 
 ::: pf
 
 ::: pf-step
-Presentation and algebraic structure of $\pi_1(K)$:
+$\pi_1(K) = \langle a, b \mid a b a^{-1} = b^{-1} \rangle$, every element is uniquely $a^m b^n$, and $b a b^{-1} = a b^{-2}$.
 
 ::: pf-proof
-*Proof:*
 
 ::: pf-step
 The fundamental group of the Klein bottle has the presentation
@@ -47,7 +46,8 @@ Group multiplication follows the semidirect product rule $(a^m b^n)(a^p b^q) = a
 
 ::: pf-step
 Conjugation of generators:
-$$b a b^{-1} = a (a^{-1} b a) b^{-1} = a b b^{-1} = a b^{-2} \quad \text{and} \quad a b a^{-1} = b^{-1}.$$
+the relation gives $a^{-1} b a = b^{-1}$, so
+$$b a b^{-1} = a (a^{-1} b a) b^{-1} = a b^{-1} b^{-1} = a b^{-2} \quad \text{and} \quad a b a^{-1} = b^{-1}.$$
 :::
 
 :::
@@ -55,10 +55,9 @@ $$b a b^{-1} = a (a^{-1} b a) b^{-1} = a b b^{-1} = a b^{-2} \quad \text{and} \q
 :::
 
 ::: pf-step
-Non-normal covering of $K$ by a Klein bottle:
+$H_K = \langle a, b^3 \rangle$ gives a $3$-sheeted non-normal covering of $K$ by a Klein bottle.
 
 ::: pf-proof
-*Proof:*
 
 ::: pf-step
 Define the subgroup $H_K = \langle a, b^3 \rangle \le \pi_1(K)$.
@@ -99,10 +98,9 @@ Thus $b H_K b^{-1} \neq H_K$, so $H_K$ is not a normal subgroup of $\pi_1(K)$, a
 :::
 
 ::: pf-step
-Non-normal covering of $K$ by a torus:
+$H_T = \langle a^2 b, b^3 \rangle$ gives a $6$-sheeted non-normal covering of $K$ by a torus.
 
 ::: pf-proof
-*Proof:*
 
 ::: pf-step
 Define the subgroup $H_T = \langle a^2 b, b^3 \rangle \le \pi_1(K)$.
@@ -142,16 +140,6 @@ Thus $a (a^2 b) a^{-1} = a^2 b^{-1} \notin H_T$, so $a H_T a^{-1} \neq H_T$.
 Therefore $H_T$ is not a normal subgroup of $\pi_1(K)$, and the 6-sheeted torus cover is non-normal.
 :::
 
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-
-::: pf-proof
-*Proof:*
-The subgroup $H_K = \langle a, b^3 \rangle$ gives a 3-sheeted non-normal Klein bottle covering space, and $H_T = \langle a^2 b, b^3 \rangle$ gives a 6-sheeted non-normal torus covering space.
 :::
 
 :::
