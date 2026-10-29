@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $(X_i)_{i\in I}$ be a family of topological spaces, let $X \coloneqq \prod_{i\in I} X_i$, and for $j\in I$ let $p_j\colon X\to X_j$ be the projection.
-The \dfn{box topology} on $X$ is the topology [[D-WKURJ|generated]] by the basis
+The \dfn{box topology} on $X$ [@Mun00] is the topology [[D-WKURJ|generated]] by the basis
 $$
 \mathcal B_{\Box} \coloneqq \theset{ \prod_{i\in I} U_i \st U_i \text{ open in } X_i \text{ for every } i }.
 $$
@@ -57,8 +57,4 @@ The two topologies coincide when $I$ is finite.
 For the box topology, the universal property of the product fails.
 Let $X = \prod_{n\geq 1}\RR$ and let $\Delta\colon\RR\to X$, $\Delta(t) = (t,t,\ldots)$, whose components are all $\id_\RR$.
 Then $\Delta$ is continuous for the product topology, but not for the box topology: $\prod_{n\geq1}(-1/n, 1/n)$ is open in the box topology and $\inverseof{\Delta}\qty{\prod_{n\geq1}(-1/n,1/n)} = \theset{0}$ is not open in $\RR$.
-:::
-
-::: {.concept}
-See [@Mun00].
 :::

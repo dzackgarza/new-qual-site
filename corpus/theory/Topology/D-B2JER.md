@@ -14,7 +14,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space, $R$ a ring, and $p, q\geq 0$.
-For singular cochains $\varphi\in C^p(X;R)$ and $\psi\in C^q(X;R)$, the \dfn{cup product} $\varphi\smile\psi\in C^{p+q}(X;R)$ is the cochain whose value on a singular $(p+q)$-simplex $\sigma\colon[v_0, \ldots, v_{p+q}]\to X$ is
+For singular cochains $\varphi\in C^p(X;R)$ and $\psi\in C^q(X;R)$, the \dfn{cup product} $\varphi\smile\psi\in C^{p+q}(X;R)$ [@Hat02] is the cochain whose value on a singular $(p+q)$-simplex $\sigma\colon[v_0, \ldots, v_{p+q}]\to X$ is
 $$
 (\varphi\smile\psi)(\sigma) \coloneqq \varphi\qty{\restrictionof{\sigma}{[v_0, \ldots, v_p]}}\,\psi\qty{\restrictionof{\sigma}{[v_p, \ldots, v_{p+q}]}}
 ,$$
@@ -27,8 +27,4 @@ Hence it induces a bilinear map
 $$
 \smile\colon H^p(X;R)\cross H^q(X;R)\to H^{p+q}(X;R), \qquad [\varphi]\smile[\psi]\coloneqq[\varphi\smile\psi]
 .$$
-:::
-
-::: {.concept}
-[@Hat02].
 :::
