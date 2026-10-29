@@ -29,6 +29,10 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Hartshorne III.10.7(b) prints two cases, three concurrent lines or an irreducible cuspidal cubic, omitting the member z(x(x+z)+λy(y+z)), λ not in F_2, a line plus a tangent conic; part (b) now states the three-case classification.'
 ---
 
 ::: {.problem}
@@ -38,34 +42,9 @@ a. Show that $D$ is a linear system of dimension $2$ with base points $P_1, \ldo
 
 b. Show that every curve $C \in D$ is singular.
 
-    More precisely, either $C$ consists of $3$ lines all passing through one of the $P_i$, or $C$ is an irreducible cuspidal cubic with cusp $P$ distinct from every $P_i$.
+    More precisely, $C$ has a unique singular point $P$, and exactly one of the following holds: $P$ is one of the $P_i$ and $C$ consists of the $3$ lines through $P$ defined over $\FF_2$; $P$ lies on one of the seven lines defined over $\FF_2$ but is not one of the $P_i$, and $C$ is that line together with a smooth conic tangent to it at $P$; or $P$ lies on none of these lines and $C$ is an irreducible cuspidal cubic with cusp $P$.
 
 Furthermore, the correspondence sending $C$ to the singular point of $C$ is a bijection between $D$ and $\PP^2$. Thus the singular points of elements of $D$ move all over.
-:::
-
-::: {.remark title="Erratum to the printed classification in part (b)"}
-The assertion that the only reducible members are three concurrent lines is
-false over an algebraically closed field strictly larger than $\FF_2$.
-For example, if $\lambda\in k\setminus\FF_2$, then
-$$
-xz(x+z)+\lambda yz(y+z)
-=z\bigl(x(x+z)+\lambda y(y+z)\bigr)
-$$
-is a member of $D$ consisting of the line $z=0$ and a smooth conic tangent to
-it at the unique singular point.
-
-The correct classification is:
-
-1. if the singular point is one of the seven $\FF_2$-points, the cubic is the
-   union of the three $\FF_2$-lines through that point;
-2. if the singular point lies on one of the seven $\FF_2$-lines but is not an
-   $\FF_2$-point, the cubic is that line plus a smooth irreducible conic
-   tangent to it at the singular point;
-3. if the singular point lies on none of the seven $\FF_2$-lines, the cubic is
-   irreducible and cuspidal.
-
-The claims that every member is singular and that its unique singular point
-gives a bijection $D(k)\leftrightarrow\PP^2(k)$ remain correct.
 :::
 
 ::: {.solution}
@@ -500,12 +479,9 @@ $C_{a,b,c}$ is an irreducible cuspidal cubic with cusp $P$.
 
 ::: pf-qed
 
-for the corrected statement.
-
 Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a). Step [](#s6){.pf-ref} proves that every member is
 singular and that the singular-point correspondence is a bijection with
-$\PP^2(k)$. Steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove the corrected three-case classification
-recorded in the erratum above, and in particular show that the singular points
+$\PP^2(k)$. Steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove the three-case classification of part (b), and in particular show that the singular points
 move over all of $\PP^2$.
 
 :::
