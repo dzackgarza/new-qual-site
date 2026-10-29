@@ -97,7 +97,7 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 
 [[T-RA-WORKSHOP-D7-6-4]]
 
-[[T-RA-WORKSHOP-D7-6-5]]
+[[FF-XZGIY]]
 
 [[T-3QNBQ]]
 

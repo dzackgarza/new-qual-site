@@ -28,3 +28,10 @@ In particular, every sequence $(f_n)$ in $C(K)$ that is uniformly bounded and eq
 ::: {.remark}
 Since $K$ is compact, a family $\mcf\subseteq C(K)$ that is equicontinuous at every point of $K$ is [[FD-XVMEE|uniformly equicontinuous]].
 :::
+
+::: {.remark title="Variations"}
+The same statement holds for vector-valued functions.
+Let $K\subseteq\RR^n$ be compact and equip $C(K,\RR^m)$ with the metric $d(f,g)\coloneqq\sup_{x\in K}\norm{f(x)-g(x)}$.
+A subset $\mcf\subseteq C(K,\RR^m)$ is compact if and only if $\mcf$ is closed, [[D-2GCTV|bounded]] in $d$, and equicontinuous at every point of $K$.
+Since a compact set is closed and a closed subset of a compact set is compact, this is the form of the theorem for closed families; boundedness in $d$ is uniform boundedness.
+:::
