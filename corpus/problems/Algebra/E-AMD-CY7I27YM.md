@@ -25,18 +25,18 @@ Show that if $L/K/F$ with $K/F$ algebraic and $L/K$ algebraic then $L$ is algebr
 
 ::: {.solution}
 Let $\alpha\in L$. Since $L/K$ is algebraic, $\alpha$ satisfies a nonzero polynomial
-\[
+$$
 p(x)=a_0+a_1x+\cdots+a_nx^n\in K[x].
-\]
+$$
 Because $K/F$ is algebraic, the finitely many coefficients $a_i$ are algebraic over $F$. Hence
-\[
-F_0:=F(a_0,\dots,a_n)
-\]
+$$
+F_0\coloneqq F(a_0,\dots,a_n)
+$$
 is a finite extension of $F$.
 
 Now $p\in F_0[x]$, so $\alpha$ is algebraic over $F_0$. Therefore $F_0(\alpha)/F_0$ is finite. By the tower law,
-\[
+$$
 [F_0(\alpha):F]=[F_0(\alpha):F_0][F_0:F]<\infty.
-\]
+$$
 Thus $\alpha$ is algebraic over $F$. Since $\alpha\in L$ was arbitrary, $L/F$ is algebraic.
 :::
