@@ -21,19 +21,28 @@ Show that $f$ must be constant.
 :::
 
 ::: {.solution}
-Let $T:\HH\to\DD$ be a Cayley transform, for example
-\[
-T(w)=\frac{i-w}{i+w}.
-\]
-Then
-\[
-F\definedas T\circ f:\CC\to\DD
-\]
-is entire and bounded.
-By Liouville's theorem, $F\equiv c$ for some $c\in\DD$.
-Since $T$ is injective,
-\[
-f\equiv T^{-1}(c),
-\]
-so $f$ is constant.
+Let $T(w)=\frac{w-i}{w+i}$, the Cayley map, which maps $\HH$ bijectively onto $\DD$.
+
+::: pf
+
+::: {.pf-step #bounded}
+$F\definedas T\circ f$ is entire and bounded.
+
+::: pf-proof
+$f(\CC)\subseteq\HH$ avoids the pole $-i$ of $T$, so $F$ is entire, and $F(\CC)\subseteq\DD$.
+:::
+
+:::
+
+::: pf-step
+$f$ is constant.
+
+::: pf-proof
+By step [](#bounded){.pf-ref} and Liouville's theorem, $F\equiv c$ for some $c\in\DD$, so $f = T^{-1}\circ F\equiv T^{-1}(c)$.
+:::
+
+:::
+
+:::
+
 :::
