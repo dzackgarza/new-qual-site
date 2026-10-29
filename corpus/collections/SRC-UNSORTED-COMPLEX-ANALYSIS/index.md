@@ -66,7 +66,6 @@ source:
   - id: E-BPSOU
   - id: E-BSL3Q
   - id: E-BUVLS
-  - id: E-BVT72
   - id: E-BXDQY
   - id: E-C5QHZ
   - id: E-CFTRQ
