@@ -27,17 +27,17 @@ Show that if $H \leq K \trianglelefteq G$ and $H$ is characteristic in $K$, then
 
 ::: {.solution}
 Let $g\in G$. Since $K\trianglelefteq G$, conjugation by $g$ restricts to an automorphism
-\[
+$$
 c_g:K\longrightarrow K,
 \qquad
 k\longmapsto gkg^{-1}.
-\]
+$$
 Because $H$ is characteristic in $K$, every automorphism of $K$ preserves $H$. Hence
-\[
+$$
 gHg^{-1}=c_g(H)=H.
-\]
+$$
 This holds for every $g\in G$, so
-\[
+$$
 H\trianglelefteq G.
-\]
+$$
 :::
