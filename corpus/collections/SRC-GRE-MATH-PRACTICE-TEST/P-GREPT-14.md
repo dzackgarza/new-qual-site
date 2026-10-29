@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GREPT-14
 kind: problem
-title: "Nonzero solutions of $y''=(y')^2$"
+title: "Nonconstant solutions of $y''=(y')^2$"
 classification:
   areas: [prelim]
   topics: []
@@ -13,10 +13,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Transcribed from Question 14 of the Practice Test (Chapter 9) in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR)."
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asked for all nonzero solutions, but nonzero constants are solutions that no choice lists; the source answer (E) discards y' = 0. The statement now asks for the nonconstant solutions.
 ---
 
 ::: {.problem}
-Find the family of all nonzero solutions of the equation
+Find the family of all nonconstant solutions of the equation
 
 $$\frac{d^2y}{dx^2} = \left(\frac{dy}{dx}\right)^2$$
 
@@ -54,30 +58,10 @@ equivalent.
 
 ::: {.pf-step #s1-2}
 
-Every constant function
+Every nonconstant solution on an interval on which $x+C_1>0$ has the form
 $$
-y\equiv C
+y=C_2-\log(x+C_1).
 $$
-is a solution.
-
-
-::: pf-proof
-
-For a constant function, $y'=0$ and $y''=0$, so both sides of
-$y''=(y')^2$ are zero. In particular, every $C\ne0$ gives a nonzero solution
-of the equation as printed.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-Every nonconstant real solution on a connected interval has the form
-$$
-y=C_2-\log|x+C_1|,
-$$
-where the interval does not contain $-C_1$.
 
 
 ::: pf-proof
@@ -95,29 +79,25 @@ $$
 \qquad\text{and hence}\qquad
 u=-\frac1{x+C_1}.
 $$
-Integrating once more gives
-$$
-y=C_2-\log|x+C_1|.
-$$
+Integrating once more gives $y=C_2-\log|x+C_1|$, which is
+$y=C_2-\log(x+C_1)$ where $x+C_1>0$. Conversely, this function satisfies
+$y'=-1/(x+C_1)$ and $y''=1/(x+C_1)^2=(y')^2$.
 
 :::
 
 :::
 
-::: {.pf-step #s1-4}
+::: {.pf-step #s1-3}
 
-Therefore
-$$
-\boxed{\text{none of the listed choices gives all nonzero solutions}}
-$$
-for the problem as stated.
+The answer is $\boxed{\text{(E)}}$.
 
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} shows that $y\equiv1$, for example, is a nonzero solution. Every
-listed choice (A)--(E) is a nonconstant family and therefore omits this
-solution. Step [](#s1-3){.pf-ref} gives the remaining nonconstant solutions.
+Choice (E) is the family of step [](#s1-2){.pf-ref}. Choices (A), (B), (C) and (D)
+fail: for (A), $y''=2/(x+c_1)^3$ while $(y')^2=1/(x+c_1)^4$; for (B), $y'=-1/(c_1-x)$ and
+$y''=-1/(c_1-x)^2\ne(y')^2$; for (D), $y''=-1/(c_1+x)^2\ne(y')^2$; for (C),
+$y'=2x/(c_1-x^2)$ and $y''=2(c_1+x^2)/(c_1-x^2)^2$, while $(y')^2=4x^2/(c_1-x^2)^2$, and these differ at $x=0$ whenever $c_1\ne0$.
 
 :::
 
@@ -125,18 +105,10 @@ solution. Step [](#s1-3){.pf-ref} gives the remaining nonconstant solutions.
 
 ::: pf-qed
 
-Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} classify the literal solutions and prove that no listed
-answer is complete.
+Step [](#s1-2){.pf-ref} finds all nonconstant solutions, and step [](#s1-3){.pf-ref} identifies them with choice (E).
 
 :::
 
 :::
 
-:::
-
-::: {.remark}
-The source selects (E) after explicitly discarding the solution $u=y'\equiv0$.
-If the question is instead read as asking only for nonconstant solutions and
-one works on an interval where $x+C_1>0$, step [](#s1-3){.pf-ref} becomes
-$y=C_2-\log(x+C_1)$, which is choice (E).
 :::
