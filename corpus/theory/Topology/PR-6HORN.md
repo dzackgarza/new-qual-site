@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $K\subseteq S^3$ be a knot.
+Let $K\subseteq \RR^3\subseteq S^3$ be a tame knot.
 Then $S^3\sm K$ is a $K(\pi, 1)$ [@Hat02], and $\RR^3 \sm K \homotopic S^2 \vee \qty{S^3 \sm K}$.
 If $X$ is an orientable $3$-manifold and $K\subseteq X$ is a nullhomologous tame knot with tubular neighborhood $\nu(K)$, then
 $$
