@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-R4VKE
 kind: definition
 title: Lebesgue integral of a nonnegative function
+prompts:
+- How is the Lebesgue integral of $f$ defined from simple functions?
 classification:
   areas:
   - real-analysis

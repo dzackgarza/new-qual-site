@@ -33,8 +33,6 @@ A measurable $f$ is integrable if $\int\abs f<\infty$, and then $\int f\coloneqq
 
 [[D-R4VKE]]
 
-[[FD-Q3XHG]]
-
 [[D-YWRVG]]
 
 [[PR-OI5HX]]
