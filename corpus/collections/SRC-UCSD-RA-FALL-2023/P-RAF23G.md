@@ -34,30 +34,46 @@ $$
 
 ::: {.solution}
 
+Write $M\coloneqq\norm{f}_\infty>0$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #upper}
 
-Obtain the immediate upper bound.
+$\alpha_n>0$ and $\alpha_{n+1}/\alpha_n\le M$ for every $n$.
 
 ::: pf-proof
 
-Let
-\[
-M:=\|f\|_\infty>0.
-\]
-Since $|f|\le M$ almost everywhere,
-\[
-\alpha_{n+1}
-=\int |f|^{n+1}\,d\mu
-\le M\int |f|^n\,d\mu
-=M\alpha_n.
-\]
+Since $M>0$, the set $\{\abs{f}>0\}$ has positive measure, so $\alpha_n>0$.
+Since $\abs{f}\le M$ almost everywhere, $\alpha_{n+1}=\int\abs{f}^{n+1}\,d\mu\le M\int\abs{f}^n\,d\mu=M\alpha_n$.
+
+:::
+
+:::
+
+::: {.pf-step #average}
+
+The measure $d\nu_n\coloneqq\abs{f}^n\alpha_n^{-1}\,d\mu$ is a probability measure and $\alpha_{n+1}/\alpha_n=\int\abs{f}\,d\nu_n$.
+
+::: pf-proof
+
+Both statements follow from the definitions of $\nu_n$ and $\alpha_n$, since $0<\alpha_n<\infty$ by step [](#upper){.pf-ref} and $\mu(X)<\infty$.
+
+:::
+
+:::
+
+::: {.pf-step #concentrate}
+
+For $0<2\varepsilon<M$ and $B_\varepsilon\coloneqq\{\abs{f}\le M-2\varepsilon\}$, $\nu_n(B_\varepsilon)\to0$ as $n\to\infty$.
+
+::: pf-proof
+
+By the definition of the essential supremum, $A_\varepsilon\coloneqq\{\abs{f}>M-\varepsilon\}$ has positive measure, so $\alpha_n\ge\int_{A_\varepsilon}\abs{f}^n\,d\mu\ge(M-\varepsilon)^n\mu(A_\varepsilon)$.
 Hence
-\[
-\frac{\alpha_{n+1}}{\alpha_n}\le M.
-\]
-Also $M>0$ implies $\alpha_n>0$ for every $n$.
+$$
+\nu_n(B_\varepsilon)=\frac{1}{\alpha_n}\int_{B_\varepsilon}\abs{f}^n\,d\mu\le\frac{\mu(X)}{\mu(A_\varepsilon)}\left(\frac{M-2\varepsilon}{M-\varepsilon}\right)^n\convergesto{n\to\infty}0.
+$$
 
 :::
 
@@ -65,88 +81,13 @@ Also $M>0$ implies $\alpha_n>0$ for every $n$.
 
 ::: pf-step
 
-Reinterpret the ratio as an expectation.
+$\boxed{\lim_{n\to\infty}\alpha_{n+1}/\alpha_n=\norm{f}_\infty}$.
 
 ::: pf-proof
 
-Define a probability measure $\nu_n$ by
-\[
-d\nu_n
-:=\frac{|f|^n}{\alpha_n}\,d\mu.
-\]
-Then
-\[
-\frac{\alpha_{n+1}}{\alpha_n}
-=\int |f|\,d\nu_n.
-\]
-Thus it is enough to show that $\nu_n$ concentrates near the set where $|f|$ is close to $M$.
-
-:::
-
-:::
-
-::: pf-step
-
-Show exponential concentration near the essential supremum.
-
-::: pf-proof
-
-Fix $\varepsilon>0$ with $2\varepsilon<M$. By definition of essential supremum,
-\[
-A_\varepsilon:=\{|f|>M-\varepsilon\}
-\]
-has positive measure. Therefore
-\[
-\alpha_n
-\ge \int_{A_\varepsilon}|f|^n\,d\mu
-\ge (M-\varepsilon)^n\mu(A_\varepsilon).
-\]
-
-Set
-\[
-B_\varepsilon:=\{|f|\le M-2\varepsilon\}.
-\]
-Then
-\[
-\begin{aligned}
-\nu_n(B_\varepsilon)
-&=\frac{1}{\alpha_n}
-\int_{B_\varepsilon}|f|^n\,d\mu\\
-&\le
-\frac{\mu(X)}{\mu(A_\varepsilon)}
-\left(\frac{M-2\varepsilon}{M-\varepsilon}\right)^n
-\longrightarrow0.
-\end{aligned}
-\]
-
-:::
-
-:::
-
-::: pf-step
-
-Pass to the limit.
-
-::: pf-proof
-
-Using Step 2 and restricting the integral to $X\setminus B_\varepsilon$,
-\[
-\frac{\alpha_{n+1}}{\alpha_n}
-=\int |f|\,d\nu_n
-\ge (M-2\varepsilon)
-\nu_n(X\setminus B_\varepsilon).
-\]
-By Step 3,
-\[
-\liminf_{n\to\infty}
-\frac{\alpha_{n+1}}{\alpha_n}
-\ge M-2\varepsilon.
-\]
-Since $\varepsilon>0$ is arbitrary and Step 1 gives the opposite upper bound,
-\[
-\boxed{
-\lim_{n\to\infty}\frac{\alpha_{n+1}}{\alpha_n}=M=\|f\|_\infty.}
-\]
+Fix $\varepsilon$ with $0<2\varepsilon<M$.
+Since $\abs{f}>M-2\varepsilon$ off $B_\varepsilon$, step [](#average){.pf-ref} gives $\alpha_{n+1}/\alpha_n\ge(M-2\varepsilon)\,\nu_n(X\setminus B_\varepsilon)$, and by step [](#concentrate){.pf-ref} the right side tends to $M-2\varepsilon$.
+So $\liminf_n\alpha_{n+1}/\alpha_n\ge M-2\varepsilon$ for every such $\varepsilon$, and step [](#upper){.pf-ref} gives $\limsup_n\alpha_{n+1}/\alpha_n\le M$.
 
 :::
 
