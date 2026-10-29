@@ -30,7 +30,7 @@ In the definition of continuity on a set, $\delta$ may depend on both $\varepsil
 
 [[D-G5N6I]]
 
-[[FD-WN55Z]] [[FF-HORGP]]
+[[FD-WN55Z]]
 
 ::: {.fact}
 If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ converges in $X$.

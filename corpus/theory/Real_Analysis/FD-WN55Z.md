@@ -5,6 +5,7 @@ kind: proposition
 title: Completeness of a normed space via absolutely convergent series
 prompts:
   - What two conditions each characterise completeness?
+  - Characterize completeness of a normed space in terms of absolutely convergent series.
 classification:
   areas:
     - real-analysis
