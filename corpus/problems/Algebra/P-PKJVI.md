@@ -22,16 +22,33 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group of order $|G| = p q$, where $p$ and $q$ are distinct primes with $p > q$.
+Let $G$ be a group of order $\abs{G} = p q$, where $p$ and $q$ are distinct primes with $p > q$.
 Prove that $G$ possesses a unique (and hence normal) Sylow $p$-subgroup of order $p$.
 :::
 
 ::: {.solution}
-Let $n_p$ be the number of Sylow $p$-subgroups. Sylow's theorem gives
-\[
-n_p\mid q,\qquad n_p\equiv1\pmod p.
-\]
-Since $q$ is prime, $n_p$ is either $1$ or $q$. But $p>q$, so $q\not\equiv1\pmod p$. Hence $n_p=1$.
+Let $n_p$ be the number of Sylow $p$-subgroups of $G$.
 
-Thus the Sylow $p$-subgroup is unique and therefore normal. Its order is $p$, so it is nontrivial and proper in a group of order $pq$.
+::: pf
+
+::: {.pf-step #sylow}
+$n_p\in\{1,q\}$ and $n_p\equiv1\pmod p$.
+
+::: pf-proof
+By the Sylow theorems, $n_p$ divides $q$ and $n_p\equiv1\pmod p$; since $q$ is prime, $n_p\in\{1,q\}$.
+:::
+
+:::
+
+::: pf-step
+$n_p=1$, so the Sylow $p$-subgroup $P$ is unique and normal, and it is proper and nontrivial.
+
+::: pf-proof
+Since $1<q<p$, $q\not\equiv1\pmod p$, so step [](#sylow){.pf-ref} leaves $n_p=1$. Every conjugate of $P$ is a Sylow $p$-subgroup, hence equals $P$, so $P$ is normal. Its order $p$ satisfies $1<p<pq$.
+:::
+
+:::
+
+:::
+
 :::
