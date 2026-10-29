@@ -42,8 +42,10 @@ $$
 ::: {.proposition}
 - For any scheme $X$ and field $L$, morphisms $\Spec L \to X$ correspond to pairs consisting of a point $x \in X$ and a field embedding $\kappa(x) \hookrightarrow L$.
 
-- If $X$ is a $k$-scheme, then $k$-morphisms $\Spec k[\eps]/(\eps^2) \to X$ correspond to pairs consisting of a $k$-rational point $x\in X(k)$ and a tangent vector $$ v\in T_xX\cong\Hom_k(\mfm_x/\mfm_x^2,k).
-$$
+- If $X$ is a $k$-scheme, then $k$-morphisms $\Spec k[\eps]/(\eps^2) \to X$ correspond to pairs consisting of a $k$-rational point $x\in X(k)$ and a tangent vector
+  $$
+  v\in T_xX\cong\Hom_k(\mfm_x/\mfm_x^2,k).
+  $$
 :::
 
 ::: {.remark}
