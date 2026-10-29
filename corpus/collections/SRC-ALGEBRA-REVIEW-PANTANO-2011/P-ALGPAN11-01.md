@@ -30,27 +30,37 @@ If $b$ and $c$ are elements in a group $G$, and if $b^5=c^3=e$, where $e$ is the
 :::
 
 ::: {.solution}
-For any product $x_1x_2\cdots x_r$,
-$$
-(x_1x_2\cdots x_r)^{-1}=x_r^{-1}\cdots x_2^{-1}x_1^{-1}.
-$$
-Therefore
-$$
-(b^2cb^4c^2)^{-1}
-=c^{-2}b^{-4}c^{-1}b^{-2}.
-$$
-Using $c^3=e$ and $b^5=e$,
-$$
-c^{-2}=c,
-\qquad
-c^{-1}=c^2,
-\qquad
-b^{-4}=b,
-\qquad
-b^{-2}=b^3.
-$$
-Hence
-$$
-\boxed{(b^2cb^4c^2)^{-1}=cb\,c^2b^3}.
-$$
+
+::: pf
+
+::: {.pf-step #reverse}
+$(b^2cb^4c^2)^{-1}=c^{-2}b^{-4}c^{-1}b^{-2}$.
+
+::: pf-proof
+In a group, $(x_1x_2\cdots x_r)^{-1}=x_r^{-1}\cdots x_2^{-1}x_1^{-1}$, because the product of the two sides telescopes to $e$.
+:::
+
+:::
+
+::: {.pf-step #reduce}
+$c^{-2}=c$, $b^{-4}=b$, $c^{-1}=c^2$, and $b^{-2}=b^3$.
+
+::: pf-proof
+From $c^3=e$ we get $c^{-2}=c^{3-2}=c$ and $c^{-1}=c^{3-1}=c^2$.
+From $b^5=e$ we get $b^{-4}=b^{5-4}=b$ and $b^{-2}=b^{5-2}=b^3$.
+:::
+
+:::
+
+::: pf-step
+$(b^2cb^4c^2)^{-1}=\boxed{cbc^2b^3}$, choice (E).
+
+::: pf-proof
+Substitute step [](#reduce){.pf-ref} into step [](#reverse){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
