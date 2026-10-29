@@ -21,11 +21,28 @@ Show that $f$ has a removable singularity at $z_0 = \infty$ iff $f$ is constant.
 :::
 
 ::: {.solution}
-Suppose $f$ is not constant.
-If $z=\infty$ is removable, $f$ is bounded in a neighborhood of $\infty$, say by $M_1$ on $\abs{z} > R$.
-Now $\abs{z} \leq R$ is a closed and bounded set, thus compact, and since $f$ is continuous here it is bounded by the extreme value theorem, say by $M_2$.
-Then $\abs{f(z)} \leq \max(M_1, M_2)$ on $\CC$ is entire and bounded, thus constant by Liouville, a contradiction.
-$\contradiction$
+::: pf
 
-Conversely, if $f$ is constant, $f$ is bounded in every neighborhood of $\infty$, making it a removable singularity.
+::: pf-step
+If $f$ has a removable singularity at $\infty$, then $f$ is constant.
+
+::: pf-proof
+Removability at $\infty$ means $f$ is bounded on $\abs{z} > R$ for some $R$, say by $M_1$.
+The closed disk $\abs{z}\le R$ is compact and $f$ is continuous, so $f$ is bounded there, say by $M_2$.
+Then $f$ is a bounded entire function, with $\abs{f}\le\max(M_1, M_2)$, and Liouville's theorem shows that $f$ is constant.
+:::
+
+:::
+
+::: pf-step
+If $f$ is constant, then $f$ has a removable singularity at $\infty$.
+
+::: pf-proof
+$f(1/w)$ is constant on $w\neq0$, hence bounded near $w=0$, so $0$ is a removable singularity of $f(1/w)$ by Riemann's theorem.
+:::
+
+:::
+
+:::
+
 :::
