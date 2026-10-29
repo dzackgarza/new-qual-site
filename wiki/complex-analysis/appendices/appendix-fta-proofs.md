@@ -24,7 +24,8 @@ Integrating term by term gives $N = n$.
 
 ## By Rouché's theorem
 
-::: {.proof title="From Gamelin"}
+::: {.proof}
+The argument follows [@Gam01].
 
 ![](../../../../assets/assets/figures/2021-12-10_18-02-14.png)
 
@@ -62,7 +63,8 @@ Every zero of $P$ lies in $\abs z < R$, since the same estimate gives $\abs{P(z)
 
 :::
 
-::: {.proof title="From Gamelin"}
+::: {.proof}
+The argument follows [@Gam01].
 
 ![](../../../../assets/assets/figures/2021-12-10_19-52-51.png)
 
