@@ -76,31 +76,6 @@ So a holomorphic map scales area infinitesimally by $\abs{f'}^2$ and is orientat
 
 :::
 
-[[PR-Y36BS]]
-
-::: {.proof title="Holomorphic iff linear approximation"}
-If $f'(z_0)$ exists, set $a\coloneqq f'(z_0)$ and
-$$
-\psi(h)
-\coloneqq
-\begin{cases}
-\dfrac{f(z_0+h)-f(z_0)}{h}-a & h\neq 0,\\
-0 & h=0.
-\end{cases}
-$$
-Then $\psi(h)\to 0$ as $h\to 0$ by definition of $f'(z_0)$, and $f(z_0+h)-f(z_0)-ah = h\psi(h)$.
-
-Conversely, if such $a$ and $\psi$ exist then for $h\neq 0$
-$$
-\frac{f(z_0+h)-f(z_0)}{h}
-= a + \psi(h)
-\to a
-,$$
-so $f'(z_0)=a$.
-Continuity at $z_0$ is the same identity: $f(z_0+h)=f(z_0)+h\bigl(a+\psi(h)\bigr)\to f(z_0)$.
-
-:::
-
 ## Solving real integrals with complex calculus
 
 ::: {.remark}
