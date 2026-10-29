@@ -47,7 +47,6 @@ title: Theorems
 
 [[T-CGFCU]]
 
-Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewood-principles-notes|Littlewood's principles: proofs]].
 
 ## Continuity
 

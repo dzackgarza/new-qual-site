@@ -29,4 +29,4 @@ On $\RR$, $f_n\coloneqq\chi_{[n,n+1]}\to0$ pointwise, but $\sup_{A}\abs{f_n}=1$ 
 
 :::
 
-The statements and proofs are on [[real-analysis/integration/the-convergence-theorems|The convergence theorems]] and [[real-analysis/measure/littlewood-principles-notes|Littlewood's principles: proofs]].
+The statements are on [[real-analysis/integration/the-convergence-theorems|The convergence theorems]] and [[real-analysis/measure/littlewood-principles-notes|Egorov and Lusin]].
