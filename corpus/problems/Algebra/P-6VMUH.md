@@ -21,35 +21,35 @@ audit:
 ---
 
 ::: {.problem}
-Compute the **Galois group** of the polynomial $f(x) = x^4 - 3$ over $\mathbb{Q}$, and describe its action on the roots.
+Compute the **Galois group** of the polynomial $f(x) = x^4 - 3$ over $\QQ$, and describe its action on the roots.
 :::
 
 ::: {.solution}
-Let \(\alpha=\sqrt[4]{3}\). The roots are \(\alpha,i\alpha,-\alpha,-i\alpha\), so the splitting field is
-\[
-K=\mathbb Q(\alpha,i).
-\]
-Eisenstein at \(3\) gives \([\mathbb Q(\alpha):\mathbb Q]=4\). Since \(\mathbb Q(\alpha)\subset\mathbb R\), we have \(i\notin\mathbb Q(\alpha)\), hence \([K:\mathbb Q]=8\).
+Let $\alpha=\sqrt[4]{3}$. The roots are $\alpha,i\alpha,-\alpha,-i\alpha$, so the splitting field is
+$$
+K=\QQ(\alpha,i).
+$$
+Eisenstein at $3$ gives $[\QQ(\alpha):\QQ]=4$. Since $\QQ(\alpha)\subset\RR$, we have $i\notin\QQ(\alpha)$, hence $[K:\QQ]=8$.
 
 Define
-\[
+$$
 r(\alpha)=i\alpha,\qquad r(i)=i,
-\]
-and let \(s\) be complex conjugation:
-\[
+$$
+and let $s$ be complex conjugation:
+$$
 s(\alpha)=\alpha,\qquad s(i)=-i.
-\]
-Then \(r\) has order \(4\), \(s\) has order \(2\), and
-\[
+$$
+Then $r$ has order $4$, $s$ has order $2$, and
+$$
 srs=r^{-1}.
-\]
-Thus \(\langle r,s\rangle\cong D_4\) has order \(8\), so it is the whole Galois group. On the ordered roots \((\alpha,i\alpha,-\alpha,-i\alpha)\),
-\[
+$$
+Thus $\langle r,s\rangle\cong D_4$ has order $8$, so it is the whole Galois group. On the ordered roots $(\alpha,i\alpha,-\alpha,-i\alpha)$,
+$$
 r=(1\ 2\ 3\ 4),\qquad s=(2\ 4).
-\]
+$$
 Therefore
-\[
-\operatorname{Gal}(K/\mathbb Q)\cong D_4
-\]
-(the dihedral group of order \(8\)).
+$$
+\Gal(K/\QQ)\cong D_4
+$$
+(the dihedral group of order $8$).
 :::
