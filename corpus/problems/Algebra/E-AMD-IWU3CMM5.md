@@ -91,3 +91,8 @@ with the latter the unique nonabelian isomorphism type.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Part (a) is often posed in its stronger form: a group of order $pq$ with primes $q<p$ has a unique, hence normal, Sylow $p$-subgroup of order $p$.
+The first step of the proof shows exactly this.
+:::
