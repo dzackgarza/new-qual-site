@@ -32,7 +32,6 @@ Show that if $f$ is an isometry and $X$ is compact, then $f$ is bijective and he
 :::
 
 ::: {.solution}
-**Goal:** Prove that an isometry $f: X \to X$ on a compact metric space $(X, d)$ is surjective, and deduce that $f$ is a homeomorphism.
 
 ::: pf
 
