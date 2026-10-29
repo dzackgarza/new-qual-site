@@ -18,7 +18,6 @@ review: draft
 prompts:
 - State Serre vanishing.
 - What does "$n \gg 0$" depend on?
-- How is ampleness characterised cohomologically?
 ---
 
 ::: {.theorem}
@@ -49,12 +48,6 @@ If $S$ is a finitely generated graded $k$-algebra with $S_0=k$, generated in deg
 Consequently this Euler characteristic agrees in large degrees with the Hilbert polynomial of $M$ [@Har10a, Chapter I, §7].
 :::
 
-::: {.theorem title="Cohomological criterion for ampleness"}
-Let $A$ be noetherian, let $Y$ be proper over $A$, and let $\mcl$ be an invertible sheaf on $Y$.
-Then $\mcl$ is ample if and only if, for every [[D-QNTZY|coherent]] sheaf $\mcg$ on $Y$, there exists an integer $N$ such that
-$$
-H^i(Y,\mcg\otimes_{\OO_Y}\mcl^{\otimes n})=0
-\quad\text{for every }i>0\text{ and every }n\ge N.
-$$
-[@Har10a, III.5.3]
+::: {.remark title="Converse"}
+On a proper scheme over a noetherian ring, eventual vanishing of higher cohomology for every coherent sheaf characterizes ampleness; this is the cohomological part of [[T-DIVSERRE]].
 :::

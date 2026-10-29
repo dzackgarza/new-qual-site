@@ -28,7 +28,7 @@ The following are equivalent:
 
 - for every coherent $\mcf$ there is $n_0$ with $\mcf \tensor \mcl\tensorpower{}{n}$ globally generated for all $n \geq n_0$.
 
-If $X$ is proper over $A$, both are equivalent to: for every coherent $\mcf$ there is $n_0$ with $H^i(X, \mcf \tensor \mcl\tensorpower{}{n}) = 0$ for all $i > 0$ and all $n \geq n_0$.
+If $X$ is proper over $A$, both are equivalent to: for every coherent $\mcf$ there is $n_0$ with $H^i(X, \mcf \tensor \mcl\tensorpower{}{n}) = 0$ for all $i > 0$ and all $n \geq n_0$ [@Har10a, III.5.3].
 :::
 
 ::: {.remark}
