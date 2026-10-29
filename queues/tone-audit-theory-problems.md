@@ -160,7 +160,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/E-GNYRR.md` | `ebb70760c50b9632cff72b02c8ea0d32a6fdaec7` | `ebb70760c50b9632cff72b02c8ea0d32a6fdaec7` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-GYGP2.md` | `6a5a42cef3186e7f2eff6601b651d2086e6c148b` | `6a5a42cef3186e7f2eff6601b651d2086e6c148b` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-HOJKE.md` | `5bedfe54f1ec77362fae2064b249523d3da65727` | `5bedfe54f1ec77362fae2064b249523d3da65727` | Read; retained |
-| [x] | `corpus/problems/Algebra/E-I7ZD4.md` | `0e7e1e716c73467e92db2eee913a1f7a3ec3fbe5` | `0e7e1e716c73467e92db2eee913a1f7a3ec3fbe5` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-ID7CS.md` | `b41fce376eebdc1083df20f68633d47ba1144275` | `b41fce376eebdc1083df20f68633d47ba1144275` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-JAPBK.md` | `399235511d530e4a318fd02961cd7f9d1aac28b9` | `399235511d530e4a318fd02961cd7f9d1aac28b9` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-JRKXU.md` | `847c4591109c5dcc486ce53b532ff8eb11f0604f` | `847c4591109c5dcc486ce53b532ff8eb11f0604f` | Read; retained |

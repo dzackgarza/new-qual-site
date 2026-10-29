@@ -160,3 +160,10 @@ is injective because $k\to\overline{k}$ is a field extension. Therefore $\chi_A(
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The same theorem can be proved from the Jordan canonical form.
+After the scalar extension of the last step, write $\overline A$ in Jordan form $\bigoplus_r J_{m_r}(\lambda_r)$; similarity preserves polynomial evaluation.
+On a block, $J_m(\lambda)-\lambda I$ is the nilpotent shift $N$ with $N^m=0$, and $m$ is at most the algebraic multiplicity $a_\lambda$, so the factor $(t-\lambda)^{a_\lambda}$ of $\chi_A$ already kills $J_m(\lambda)$.
+Hence $\chi_A$ annihilates every block, and $\chi_A(A)=0$ by injectivity of scalar extension.
+:::

@@ -105,7 +105,7 @@ If $\chi_A$ splits, then $V = \bigoplus_i V^{\lambda_i}$.
 
 [[E-23SLE]]
 
-[[E-I7ZD4]]
+[[E-GNYRR]]
 
 [[E-GEVBZ]]
 
