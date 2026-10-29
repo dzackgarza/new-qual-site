@@ -26,7 +26,6 @@ audit:
 Show that if $\mathfrak p\in\Spec(R)$, then $R_\mathfrak p$ is local with unique maximal ideal $\mathfrak pR_\mathfrak p$.
 :::
 
-
 ::: {.solution}
 Let $S=R\setminus\mathfrak p$, so $R_\mathfrak p=S^{-1}R$, and let $\mathfrak m=\mathfrak pR_\mathfrak p$.
 
