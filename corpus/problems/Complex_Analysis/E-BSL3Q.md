@@ -16,6 +16,8 @@ review: draft
 
 ::: {.exercise}
 Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
+:::
+
 ::: {.solution}
 Since $f$ is holomorphic on $\DD$, its Taylor series $f(z)=\sum_{n\ge0}a_nz^n$ at $0$ converges to $f$ on $\DD$.
 Let $K\subset\DD$ be compact and nonempty, let $r\coloneqq\max_{z\in K}\abs z<1$, choose $R$ with $r<R<1$, and let $M_R\coloneqq\max_{\abs\zeta=R}\abs{f(\zeta)}$.

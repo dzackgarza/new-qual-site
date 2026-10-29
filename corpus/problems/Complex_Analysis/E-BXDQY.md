@@ -17,6 +17,8 @@ review: draft
 ::: {.exercise}
 Suppose $f$ and $g$ are entire and $\abs{f(z)}\leq \abs{g(z)}$ for all $z\in\CC$.
 Show that $f=cg$ for some constant $c$.
+:::
+
 ::: {.solution}
 If $g\equiv0$, then the inequality forces $f\equiv0$, so $c=0$ works.
 Assume $g\not\equiv0$, so the zero set $Z$ of $g$ is discrete, and let $h\coloneqq f/g$ on $\CC\setminus Z$.
