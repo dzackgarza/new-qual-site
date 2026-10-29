@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-03
 kind: problem
-title: Maxim algebraic topology 1.3
+title: A $4n$-manifold bounding a compact oriented manifold has signature zero
 classification:
   areas: [topology]
   topics: []
