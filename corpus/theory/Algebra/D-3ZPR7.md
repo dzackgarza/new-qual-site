@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-3ZPR7
 kind: definition
-title: Orthogonal group $\Orth_n(\CC)$
+title: Orthogonal group $\Orth_n(F)$
 classification:
   areas:
   - algebra
@@ -14,10 +14,10 @@ review: draft
 ---
 
 ::: {.definition}
-Let $n\geq 1$.
+Let $F$ be a field and $n\geq 1$.
 The \dfn{orthogonal group} is
 $$
-\Orth_n(\CC) \coloneqq \theset{ A\in\Mat_{n\times n}(\CC) \st A^tA = AA^t = I }.
+\Orth_n(F) \coloneqq \theset{ A\in\Mat_{n\times n}(F) \st A^tA = AA^t = I }.
 $$
 :::
 

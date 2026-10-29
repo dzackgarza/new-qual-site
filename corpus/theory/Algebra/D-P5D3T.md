@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-P5D3T
 kind: definition
-title: Special linear group $\SL_n(\CC)$
+title: Special linear group $\SL_n(F)$
 classification:
   areas:
   - algebra
@@ -14,9 +14,9 @@ review: draft
 ---
 
 ::: {.definition}
-Let $n\geq 1$.
+Let $F$ be a field and $n\geq 1$.
 The \dfn{special linear group} is
 $$
-\SL_n(\CC) \coloneqq \theset{ A\in\Mat_{n\times n}(\CC) \st \det A = 1 }.
+\SL_n(F) \coloneqq \theset{ A\in\Mat_{n\times n}(F) \st \det A = 1 }.
 $$
 :::

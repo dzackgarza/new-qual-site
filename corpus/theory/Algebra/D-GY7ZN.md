@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-GY7ZN
 kind: definition
-title: Special orthogonal group $\SO_n(\RR)$
+title: Special orthogonal group $\SO_n(F)$
 classification:
   areas:
   - algebra
@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.definition}
-Let $n\geq 1$.
+Let $F$ be a field and $n\geq 1$.
 The \dfn{special orthogonal group} is
 $$
-\SO_n(\RR) \coloneqq \theset{ A\in\Mat_{n\times n}(\RR) \st AA^t = I \text{ and } \det A = 1} = \Orth_n(\RR) \cap \SL_n(\RR).
+\SO_n(F) \coloneqq \theset{ A\in\Mat_{n\times n}(F) \st AA^t = I \text{ and } \det A = 1} = \Orth_n(F) \cap \SL_n(F).
 $$
 :::
 
