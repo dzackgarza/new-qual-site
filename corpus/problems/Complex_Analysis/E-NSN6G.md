@@ -13,41 +13,63 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source does not name the domain; the statement adds that the $f_n$ are holomorphic on an open set $\Omega$.
 ---
 
 ::: {.exercise}
-Prove that if $f_n\to f$ locally uniformly with $f_n$ holomorphic, then $f_n'\to f'$ locally uniformly and $f'$ is holomorphic.
-
+Let $\Omega\subseteq\CC$ be open.
+Prove that if $f_n\to f$ locally uniformly on $\Omega$ with $f_n$ holomorphic on $\Omega$, then $f_n'\to f'$ locally uniformly on $\Omega$ and $f'$ is holomorphic.
 :::
 
 ::: {.solution}
-\envlist
 
-- Simplifying step: for some reason, it suffices to assume $f_n\to f$ uniformly on all of $\Omega$?
-- Take $\Omega_R$ to be $\Omega$ with a buffer of $R$, so $d(z, \bd \Omega) > R$ for every $z \in \bar{\Omega_R}$.
-- It suffices to show the following bound for $F$ any holomorphic function on $\Omega$:
-\[
-\sup_{z\in \Omega_R} \abs{F'(z)} \leq {1\over R} \sup_{\zeta \in \Omega} \abs{F(\zeta)} && \forall R
-,\]
-where on the right we take the sup over all $\Omega$.
-  - Then take $F \definedas f_n-f$ and $R\to 0$ to conclude, since the right-hand side is a constant not depending on $\Omega_R$.
-- For any $z\in \Omega_R$, we have $\bar{D_R(z)} \subseteq \Omega_R$, so Cauchy's integral formula can be applied:
-\[
-\abs{F'(z)} 
-&= \abs{ {1\over 2\pi i} \int_{\bd D_R(z)} {F(\xi) \over (\xi-z)^2 } \dxi  } \\
-&\leq {1\over 2\pi} \int_{\bd D_R(z)} { { \abs{F(\xi)} \over \abs{\xi-z}^2 }} \dxi   \\
-&\leq {1\over 2\pi} \int_{\bd D_R(z)} { { \sup_{\zeta\in \Omega} \abs{F(\zeta)} \over \abs{\xi-z}^2 }} \dxi   \\
-&= {1\over 2\pi} \sup_{\zeta\in \Omega} \abs{F(\zeta)}  \int_{\bd D_R(z)} { { 1 \over R^2 }} \dxi   \\
-&= {1\over 2\pi} \sup_{\zeta\in \Omega} \abs{F(\zeta)}  {1\over R^2} \int_{\bd D_R(z)} \dxi   \\
-&= {1\over 2\pi} \sup_{\zeta\in \Omega} \abs{F(\zeta)}  {1\over R^2} 2\pi R   \\
-&\leq {1\over 2\pi} \sup_{\zeta\in \Omega} \abs{F(\zeta)}  {1\over R^2}\qty{ 2\pi R}   \\
-&= {1\over R} \sup_{\zeta \in \Omega}\abs{F(\zeta)}
-.\]
+::: pf
 
-- Now
-\[
-\norm{f_n' - f'}_{\infty, \Omega_R} \leq {1\over R} \norm{f_n - f}_{\infty, \Omega}
-,\]
-where if $R$ is fixed then by uniform convergence of $f_n\to f$, for $n$ large enough $\norm{f_n - f} < \eps/R$.
+::: {.pf-step #f-holo}
+$f$ is holomorphic on $\Omega$, so $f'$ is holomorphic on $\Omega$.
+
+::: pf-proof
+$f$ is continuous as a locally uniform limit of continuous functions.
+For a closed triangle $T$ in a disc $D\subseteq\Omega$, $\int_{\partial T} f = \lim_n \int_{\partial T} f_n = 0$ by uniform convergence on $\partial T$ and Goursat's theorem, so $f$ is holomorphic on $D$ by Morera's theorem.
+The derivative of a holomorphic function is holomorphic.
 :::
 
+:::
+
+::: {.pf-step #estimate}
+If $F$ is holomorphic on $\Omega$, $z\in\Omega$, and $\overline{D_{2r}(z)}\subseteq\Omega$, then
+$$
+\sup_{w\in \overline{D_r(z)}}\abs{F'(w)} \leq \frac1r \sup_{\zeta\in \overline{D_{2r}(z)}}\abs{F(\zeta)}.
+$$
+
+::: pf-proof
+For $w\in\overline{D_r(z)}$ we have $\overline{D_r(w)}\subseteq\overline{D_{2r}(z)}\subseteq\Omega$, so the Cauchy integral formula gives
+$$
+\abs{F'(w)} = \abs{\frac1{2\pi i}\int_{\partial D_r(w)}\frac{F(\zeta)}{(\zeta-w)^2}\,d\zeta} \leq \frac1{2\pi}\cdot 2\pi r\cdot\frac{1}{r^2}\sup_{\zeta\in\overline{D_{2r}(z)}}\abs{F(\zeta)}.
+$$
+:::
+
+:::
+
+::: pf-step
+$f_n'\to f'$ locally uniformly on $\Omega$.
+
+::: pf-proof
+Let $K\subseteq\Omega$ be compact.
+Each $z\in K$ has an $r_z>0$ with $\overline{D_{2r_z}(z)}\subseteq\Omega$, and finitely many discs $D_{r_{z_1}}(z_1),\ldots,D_{r_{z_m}}(z_m)$ cover $K$.
+By step [](#f-holo){.pf-ref}, step [](#estimate){.pf-ref} applies to $F=f_n-f$ and gives
+$$
+\sup_K\abs{f_n'-f'} \leq \max_{1\leq j\leq m}\frac1{r_{z_j}}\sup_{\overline{D_{2r_{z_j}}(z_j)}}\abs{f_n-f},
+$$
+which tends to $0$ because $f_n\to f$ uniformly on the compact set $\bigcup_j\overline{D_{2r_{z_j}}(z_j)}$.
+:::
+
+:::
+
+:::
+
+:::
