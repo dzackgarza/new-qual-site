@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO19
 kind: problem
-title: A normal subgroup of order 3 or 9 in a group of order 36
+title: A normal subgroup of order $3$ or $9$ in a group of order $36$
 classification:
   areas: [algebra]
   topics: [Sylow Theory]
