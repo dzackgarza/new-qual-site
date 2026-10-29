@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition}
-Let $P$ have dimension $d$.
+Let $P \subseteq M_\RR$ be a lattice polytope of dimension $d$.
 
 - $P$ is a \dfn{simplex} if it has exactly $d+1$ vertices.
 
@@ -33,7 +33,7 @@ Let $P$ have dimension $d$.
 
 ::: {.proposition}
 The normal fan $\Sigma_P$ is simplicial exactly when $P$ is simple.
-Hence $X_P$ is $\QQ$-factorial with at worst finite quotient singularities exactly when $P$ is simple, and $X_P$ is smooth exactly when in addition each vertex has its $d$ edge directions forming a $\ZZ$-basis of $M$.
+Hence $X_P$ is $\QQ$-factorial with at worst finite quotient singularities exactly when $P$ is simple, and $X_P$ is smooth exactly when in addition at each vertex the primitive generators of its $d$ edge directions form a $\ZZ$-basis of $M$.
 :::
 
 ::: {.example title="Each without the other"}
