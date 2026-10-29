@@ -292,7 +292,7 @@ hook that day combined.
 
 Ending a turn is a decision to stop, so make it deliberately. When a unit of work is committed,
 take the next one in the same turn from the highest-priority node with ready work in the
-[TODO.md milestone](TODO.md#milestone-publish-with-every-remedial-obligation-cleared): open it,
+[TODO.md milestone](TODO.md#execution-dag): open it,
 read it, begin. If work genuinely must pause — a run you are waiting on, a decision you cannot
 make — say what you are waiting for and what you will do when it returns, so the next turn begins
 with an instruction rather than a question.
@@ -703,7 +703,7 @@ Completion of all solutions is a very low priority concern and is NOT a data
 issue. Solutions are authored content that will be filled in over time, after
 `publication-milestone`. The order of work across copy, intake, mathematical
 repair and proof adjudication is the
-[TODO.md milestone](TODO.md#milestone-publish-with-every-remedial-obligation-cleared).
+[TODO.md milestone](TODO.md#execution-dag).
 
 Within data issues, in order of urgency:
 1. Incorrect data — problem statements, titles, or classifications that are

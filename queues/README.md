@@ -2,7 +2,7 @@
 
 Queue files are concrete document lists: the files and cards that need checking.
 
-The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publish-with-every-remedial-obligation-cleared), not this index.
+The order of remaining work is the [TODO.md milestone](../TODO.md#execution-dag), not this index.
 
 | File | State | What |
 | --- | --- | --- |
