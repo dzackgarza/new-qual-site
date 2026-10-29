@@ -5,7 +5,7 @@ kind: problem
 title: "Minimize $\\int_b^{b+1}(x^2+x)\\,dx$ over $b$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Integrals, Fundamental Theorem of Calculus, Extremal Problems]
 relations: []
 review: draft
 audit:
