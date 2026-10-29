@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-W6MWU
 kind: problem
-title: Disc to upper half-plane, cross-ratio
+title: The Cayley map $\HH\to\DD$ from a cross-ratio
 classification:
   areas:
   - complex-analysis
@@ -17,24 +17,36 @@ review: draft
 Find a conformal map $\HH \to \DD$ using cross-ratios.
 :::
 
+::: {.hint}
+Send $i$, a point of $\HH$, to $0$ and its reflection $-i$ across $\RR$ to $\infty$; symmetry of points is preserved by Möbius maps.
+:::
+
 ::: {.solution}
-Idea: rotate the upper hemisphere $(\HH)$ of $\CP^1$ to make the equator $\bd \DD$, "zoom" by placing $i$ at the center so $0\to i\mapsto -1\to 0$ and $i\to \infty\mapsto 0\to 1$.
-Accomplish this by sending
+::: pf
 
-- $\infty\to 1$
-- $i\to 0$
-- $-i\to \infty$
+::: {.pf-step #def}
+The Möbius map with $\infty\mapsto1$, $i\mapsto0$, $-i\mapsto\infty$ is $F(z) = \frac{z-i}{z+i}$.
 
-Use the cross-ratio
-\[
-R(z) \definedas (z, \infty, i, -i) = {z-i \over z-(-i)} {\infty - (-i) \over \infty - i} = {z-i\over z+i}
-.\]
-
-Checking that this works:
-
-- If $z\in \RR$ then $\abs{z-i} = \abs{z+i}$ so $\abs{F(z)} = 1$.
-- If $z\in \HH$ then $\abs{z-i}\leq \abs{z+i}$ so $\abs{F(z)}< 1$.
-
+::: pf-proof
+The cross-ratio sending $(\infty, i, -i)$ to $(1, 0, \infty)$ is
+$$
+F(z) = \frac{z-i}{z+i}\cdot\frac{\infty+i}{\infty-i} = \frac{z-i}{z+i}.
+$$
+:::
 
 :::
 
+::: pf-step
+$F$ maps $\HH$ conformally onto $\DD$.
+
+::: pf-proof
+$\abs{F(z)} < 1$ if and only if $z$ is closer to $i$ than to $-i$, that is, $\Im z > 0$.
+So the Möbius map $F$ sends $\HH$ into $\DD$ and $\CC\setminus\overline{\HH}$ into $\CC\setminus\overline{\DD}$, and $\RR\cup\theset{\infty}$ onto $\partial\DD$.
+Since $F$ is a bijection of the Riemann sphere, $F(\HH) = \DD$.
+:::
+
+:::
+
+:::
+
+:::
