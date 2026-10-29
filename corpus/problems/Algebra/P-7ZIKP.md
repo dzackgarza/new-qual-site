@@ -19,10 +19,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The rendered source page (QualAlgebra.pdf p. 109, Question 6.31, read from the page image) sets the first R in upright type, distinct from the italic ring R of the second question; the first product is of copies of the reals.
 ---
 
 ::: {.problem}
-Give examples of maximal ideals in $K = R \times R \times R \times \cdots$, the product of countably many copies of $R$. What about for a product of countably many copies of an arbitrary commutative ring $R$?
+Give examples of maximal ideals in $K = \RR \times \RR \times \RR \times \cdots$, the product of countably many copies of $\RR$. What about for a product of countably many copies of an arbitrary commutative ring $R$?
 :::
 
 ::: {.solution}
