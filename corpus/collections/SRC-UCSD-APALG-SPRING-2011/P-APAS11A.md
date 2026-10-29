@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (c) of the source omitted the hypothesis that A is irreducible, and A(s)=diag(1,-1) for C_2 is a counterexample; part (c) now assumes A irreducible.
 ---
 
 ::: {.problem}
@@ -24,7 +28,7 @@ Let $G$ be a finite group and $A\colon G\to\mathrm{GL}(n,\mathbb{C})$ be a repre
 
 (b) Show that if $G$ is abelian, then there is an invertible matrix $T$ such that for all $g\in G$, $TA(g)T^{-1}$ is a diagonal matrix.
 
-(c) Show that if $g\in G$ is in the center of $G$, then $A(g)=cI_n$ for some nonzero constant $c\in\mathbb{C}$.
+(c) Show that if $A$ is irreducible and $g\in G$ is in the center of $G$, then $A(g)=cI_n$ for some nonzero constant $c\in\mathbb{C}$.
 :::
 
 ::: {.solution}
@@ -55,25 +59,7 @@ TA(g)T^{-1}
 \]
 is diagonal for every $g\in G$.
 
-Part (c) is false as printed for an arbitrary representation. For example, let
-\[
-G=C_2=\{1,s\}
-\]
-and define
-\[
-A(s)=
-\begin{pmatrix}
-1&0\\
-0&-1
-\end{pmatrix}.
-\]
-The group $G$ is abelian, so $s\in Z(G)$, but $A(s)$ is not a scalar matrix.
-
-The standard corrected statement is: if $A$ is irreducible and $g\in Z(G)$, then
-\[
-A(g)=cI_n
-\]
-for some $c\in\mathbb C^\times$. Indeed, centrality gives
+For (c), let $A$ be irreducible and $g\in Z(G)$. Centrality gives
 \[
 A(g)A(h)=A(gh)=A(hg)=A(h)A(g)
 \qquad(h\in G).
