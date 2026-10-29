@@ -42,13 +42,13 @@ $$
 so the subdivision resolves $U_\sigma$.
 For the exceptional curve $E = D_{(1,0)}$, the relation
 $$
-(0,1) + (3,-1) = (3,0) = 3 \cdot (1,0) \rightsquigarrow E^2 = -3 .
+(0,1) + (3,-1) = (3,0) = 3 \cdot (1,0)
 $$
 gives $E^2=-3$.
 :::
 
 ::: {.remark}
-The same computation for $\Cone\big( (0,1), (d,-1) \big)$ gives one exceptional curve with $E^2 = -d$, which is the standard model of the cone over the rational normal curve of degree $d$: contract the negative section of $\FF_d$.
+The same computation for $\Cone\big( (0,1), (d,-1) \big)$ gives one exceptional curve with $E^2 = -d$: the resolution is the total space of $\OO_{\PP^1}(-d)$ with $E$ its zero section, and contracting the negative section of $\FF_d$ gives the projective cone over the rational normal curve of degree $d$.
 
 For a general cone the boundary lattice points give a chain of rational curves with self-intersections $-b_1, \ldots, -b_r$, all $b_i \geq 2$, and the $b_i$ are the Hirzebruch--Jung continued fraction of the singularity.
 The inequalities $b_i\geq2$ are the toric minimality criterion: an exceptional component of self-intersection $-1$ can be contracted.
