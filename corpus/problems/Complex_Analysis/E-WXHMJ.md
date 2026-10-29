@@ -22,33 +22,39 @@ Show that $f$ has at least two poles in $P$, counted with multiplicity.
 :::
 
 ::: {.solution}
-Write the period lattice as $\Lambda=\omega_1\ZZ+\omega_2\ZZ$, and translate the fundamental parallelogram if necessary so that $f$ has no poles on $\bd P$.
+Let $\Lambda=\omega_1\ZZ+\omega_2\ZZ$ be the period lattice.
+Translating $P$ by a vector does not change the number of poles it contains modulo $\Lambda$, so assume $f$ has no poles on $\partial P$.
 
-If $f$ had no poles, periodicity would make it an entire bounded function: it is bounded on the compact closure of $P$, hence bounded on all of $\CC$ by translation through $\Lambda$.
-Liouville's theorem would then force $f$ to be constant.
-Thus $f$ has at least one pole.
+::: pf
 
-Suppose, toward a contradiction, that $f$ has only one pole counted with multiplicity.
-Then it is a single simple pole $z_0\in P$, so
-\[
-\Res_{z=z_0}f\neq0.
-\]
+::: {.pf-step #some-pole}
+$f$ has at least one pole in $P$.
 
-Write $\bd P = \sum_{1\leq k \leq 4} \gamma_k$ where the $\gamma_k$ are the edges traversed counterclockwise.
-By periodicity, opposite edges contribute equal integrals with opposite orientations, so
-\[
-\int_{\bd P}f(z)\,dz=0.
-\]
-But the residue theorem gives
-\[
-0=\int_{\bd P}f(z)\,dz
-=2\pi i\Res_{z=z_0}f(z),
-\]
-contradicting the simplicity of the pole.
+::: pf-proof
+Otherwise $f$ is entire and bounded on the compact set $\overline P$, hence bounded on $\CC = \overline P + \Lambda$ by periodicity, and Liouville's theorem makes $f$ constant.
+:::
 
-More generally, the same boundary cancellation always shows
-\[
-\sum_{z_k\in P}\Res_{z=z_k}f(z)=0
-\]
-for every elliptic function whose fundamental parallelogram has no poles on its boundary.
+:::
+
+::: {.pf-step #residue-sum}
+$\sum_{z_k\in P}\Res_{z=z_k}f = 0$.
+
+::: pf-proof
+By periodicity the integrals of $f$ over opposite edges of $\partial P$ cancel, since the edges are translates by $\omega_1$ or $\omega_2$ traversed in opposite directions.
+So $\int_{\partial P}f\dz = 0$, and the residue theorem gives the claim.
+:::
+
+:::
+
+::: pf-step
+$f$ has at least two poles in $P$, counted with multiplicity.
+
+::: pf-proof
+If there were exactly one, it would be a simple pole $z_0$ with $\Res_{z=z_0}f\neq0$, contradicting step [](#residue-sum){.pf-ref}; step [](#some-pole){.pf-ref} excludes zero poles.
+:::
+
+:::
+
+:::
+
 :::
