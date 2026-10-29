@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DUKEBA14-9
 kind: problem
-title: Local normal form of a full-rank $C^1$ map
+title: A $C^1$ map of full rank $p$ is a linear inclusion after a change of target coordinates
 classification:
   areas: [real-analysis]
   topics: [Inverse Function Theorem, Constant Rank Theorem]
@@ -22,10 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\RR^p$ be open and let $f:U\to\RR^n$ be $C^1$. Suppose that for some $x_0\in U$, the derivative $Df_{x_0}$ has rank $p$. Prove that, after suitable local changes of coordinates near $x_0$ and $f(x_0)$, the map $f$ is the standard linear inclusion
-$$
-u\longmapsto (u,0)\in\RR^p\times\RR^{n-p}.
-$$
+Let $U\subset\RR^p$ be open and let $f:U\to\RR^n$ be $C^1$. Suppose that for some $x_0\in U$, $Df_{x_0}$ has rank $p$. Show that there is a change of variables in some neighborhood of $f(x_0)$ so that in the new coordinate system, $f$ is a linear inclusion.
 :::
 
 ::: {.solution}
@@ -46,67 +43,52 @@ Then $DF_{x_0}$ is invertible.
 :::
 
 ::: pf-step
-Use $F$ as a coordinate system on the domain.
+Invert $F$ near $x_0$.
 
 ::: pf-proof
 By the inverse function theorem, there are neighborhoods $V$ of $x_0$ and $W$ of $F(x_0)$ such that
 $$
 F:V\to W
 $$
-is a $C^1$ diffeomorphism. Let $H=F^{-1}$.
-
-In the new domain coordinate $u=F(x)$, write
+is a $C^1$ diffeomorphism. Let $H=F^{-1}:W\to V$, and write
 $$
-f(H(u))=(u,\phi(u)),
+g=(f_{p+1},\ldots,f_n):U\to\RR^{n-p},
 $$
-where
-$$
-\phi(u)=\bigl(f_{p+1}(H(u)),\ldots,f_n(H(u))\bigr).
-$$
+so that $f=(F,g)$.
 :::
 
 :::
 
 ::: pf-step
-Straighten the graph in the target.
+Define a change of variables near $f(x_0)$.
 
 ::: pf-proof
-Near $(F(x_0),\phi(F(x_0)))=f(x_0)$ define
+On the open set $W\times\RR^{n-p}$, which contains $f(x_0)$, define
 $$
-\Psi(u,v)=(u,v-\phi(u)),
+\Theta(y',y'')=\bigl(H(y'),\,y''-g(H(y'))\bigr),
 \qquad
-(u,v)\in\RR^p\times\RR^{n-p}.
+(y',y'')\in\RR^p\times\RR^{n-p}.
 $$
-Its derivative has block form
+It is $C^1$ and maps onto $V\times\RR^{n-p}$. The $C^1$ map
 $$
-D\Psi=
-\begin{pmatrix}
-I_p&0\\
--D\phi&I_{n-p}
-\end{pmatrix},
+(x,w)\longmapsto\bigl(F(x),\,w+g(x)\bigr)
 $$
-which is invertible everywhere. In fact the inverse is explicitly
-$$
-\Psi^{-1}(u,w)=(u,w+\phi(u)).
-$$
-Thus $\Psi$ is a local $C^1$ change of target coordinates.
+on $V\times\RR^{n-p}$ is its inverse, since $F(H(y'))=y'$ and $H(F(x))=x$. Thus $\Theta$ is a $C^1$ change of variables on a neighborhood of $f(x_0)$.
 :::
 
 :::
 
 ::: pf-step
-Compute the map in the new coordinates.
+In the new coordinates $f$ is a linear inclusion.
 
 ::: pf-proof
-For $u\in W$,
+For $x\in V$, $f(x)=(F(x),g(x))$ lies in $W\times\RR^{n-p}$, and
 $$
-\Psi(f(H(u)))
-=\Psi(u,\phi(u))
-=(u,0).
+\Theta(f(x))=\bigl(H(F(x)),\,g(x)-g(H(F(x)))\bigr)=(x,0).
 $$
-Hence, after the domain coordinate change $x\mapsto F(x)$ and the target coordinate change $\Psi$, the map $f$ is exactly the standard linear inclusion
+Hence, in the coordinate system $\Theta$ near $f(x_0)$, the map $f$ is the linear inclusion
 $$
-u\mapsto(u,0).
+x\longmapsto(x,0)\in\RR^p\times\RR^{n-p}.
 $$
 :::
 
