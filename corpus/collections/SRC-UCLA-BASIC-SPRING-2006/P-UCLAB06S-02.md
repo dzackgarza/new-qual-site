@@ -266,7 +266,6 @@ with
 \]
 The property for $\rho_1$ would force divergence at $x$, while the property for $\rho_2$ would force convergence at $x$.
 This contradiction shows that two distinct radii cannot satisfy the condition.
-The same argument applies in the extended-real setting.
 
 :::
 
