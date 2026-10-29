@@ -10,39 +10,42 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The card printed the series sum of f^(n)(z) without the factor 1/n!, which diverges for f(z)=1/(3-z); the statement now asks about the series sum of f^(n)(z)/n!.
 ---
 
 ::: {.problem}
 Let $f(z)$ be analytic in the disk $B(0, 2)$.
-Show that there is a function $g(z)$, analytic in the unit disk $\mathbb{D}$, such that the series $\sum_{n=1}^{\infty} f^{(n)}(z)$ converges to $g$ in $\mathcal{O}(\mathbb{D})$.
+Show that there is a function $g(z)$, analytic in the unit disk $\mathbb{D}$, such that the series $\sum_{n=1}^{\infty} \frac{f^{(n)}(z)}{n!}$ converges to $g$ in $\mathcal{O}(\mathbb{D})$.
 :::
 
 ::: {.solution}
-The statement is false as printed. Take
+We show that the series converges in $\mathcal O(\DD)$ to
 \[
-f(z)={1\over3-z},
+\boxed{g(z)=f(z+1)-f(z)}.
 \]
-which is analytic on $B(0,2)$. Then
-\[
-f^{(n)}(0)={n!\over3^{n+1}},
-\]
-so the terms of $\sum_{n\ge1}f^{(n)}(0)$ do not even tend to zero.
+For $z\in\DD$, the point $z+1$ lies in $B(0,2)$, so $g$ is analytic on $\DD$.
 
-The likely normalized version
+Let $K\Subset\DD$, and choose $r<1$ with $|z|\le r$ on $K$. Fix $\rho$ with
+$1<\rho<2-r$. For every $z\in K$, the closed disk of radius $\rho$ centered at
+$z$ lies in the compact disk $\overline{B(0,r+\rho)}\subset B(0,2)$. Let
 \[
-\sum_{n=1}^\infty {f^{(n)}(z)\over n!}
+M=\max_{|w|\le r+\rho}|f(w)|.
 \]
-does converge in $\mathcal O(\DD)$, and its sum is
+Cauchy's estimates on the circle $|w-z|=\rho$ give
 \[
-\boxed{f(z+1)-f(z)}.
+\left|{f^{(n)}(z)\over n!}\right|\le M\rho^{-n}
+\qquad(z\in K,\ n\ge0).
 \]
-Indeed, if $K\Subset\DD$, choose $r<1$ with $|z|\le r$ on $K$. For every
-$z\in K$, the disk of radius $2-r>1$ centered at $z$ lies inside $B(0,2)$.
-Taylor's theorem at $z$, evaluated at $z+1$, therefore gives
+Since $\rho>1$, the Weierstrass M-test shows that the series converges
+uniformly on $K$. Since $|1|<\rho$, Taylor's theorem at $z$, evaluated at
+$z+1$, gives
 \[
 f(z+1)=\sum_{n=0}^\infty {f^{(n)}(z)\over n!},
 \]
-and Cauchy estimates on any fixed circle of radius $\rho$ with
-$1<\rho<2-r$ give a geometric majorant $C_K\rho^{-n}$, proving uniform
-convergence on $K$.
+so the sum from $n=1$ equals $f(z+1)-f(z)=g(z)$. Uniform convergence on every
+compact subset of $\DD$ is convergence in $\mathcal O(\DD)$.
 :::
