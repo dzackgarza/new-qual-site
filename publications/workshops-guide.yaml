@@ -176,7 +176,7 @@ sections:
     lede: >-
       Two topology workshop packets. The numbered-day packet covers compactness,
       connectedness, separation axioms, and counterexamples, then fundamental groups, covering
-      spaces, and homology; the source has no Day 5 or Day 6 worksheet. The May 2020 packet
+      spaces, and homology. The May 2020 packet
       covers the same topics in one week. Problems are listed in day or worksheet order.
     items:
       - ref: SRC-TOP-WORKSHOP
