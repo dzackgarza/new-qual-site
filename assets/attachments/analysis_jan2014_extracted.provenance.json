@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/analysis_jan2014.pdf",
+  "source_pdf_sha256": "e46c447531c151d8516d477e835b3f048313a92b3bfb0c1be828452bc0186248",
+  "source_pages": 1,
+  "extracted_markdown": "assets/attachments/analysis_jan2014_extracted.md",
+  "extracted_markdown_sha256": "343ba913c8771aba82d4f5e135d9686b993617a7a307ae5ebc3c5d028626a65b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "mineru-open-api version v0.5.9\n  commit: e268d90b\n  built:  2026-04-10T13:47:57Z\n  go:     go1.21.13\n  os:     linux/amd64",
+  "command": "mineru-open-api flash-extract assets/attachments/analysis_jan2014.pdf --language en",
+  "generated_at": "2026-10-30",
+  "result": "exit 0",
+  "source_identification": "Duke University Qualifying Exam in Basic Analysis, Winter 2014: Part I Problems 1-6 and Part II Problems 1-6."
+}
