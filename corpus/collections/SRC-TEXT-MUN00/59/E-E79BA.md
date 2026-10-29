@@ -26,8 +26,6 @@ It is, in fact, true that $\RR^m$ and $\RR^n$ are not homeomorphic if $n \neq m$
 :::
 
 ::: {.solution}
-**Goal.** Show $\RR^1 \not\cong \RR^n$ for $n > 1$ and $\RR^2 \not\cong \RR^n$ for $n > 2$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -66,7 +64,7 @@ Hence $\RR^1 \not\cong \RR^n$.
 
 ::: pf-proof
 
-connectedness is a homeomorphism invariant, and a homeomorphism would preserve the number of connected components after removing a point.
+A homeomorphism $h: \RR^1 \to \RR^n$ would restrict to a homeomorphism $\RR^1 \sm \theset{0} \to \RR^n \sm \theset{h(0)}$, and connectedness is a homeomorphism invariant.
 
 :::
 
@@ -112,19 +110,13 @@ Hence $\RR^2 \not\cong \RR^n$.
 
 ::: pf-proof
 
-$\pi_1$ is a homeomorphism invariant, and the two spaces have different $\pi_1$.
+A homeomorphism $h: \RR^2 \to \RR^n$ would restrict to a homeomorphism $\RR^2 \sm \theset{0} \to \RR^n \sm \theset{h(0)}$, and $\RR^n \sm \theset{h(0)} \cong \RR^n \sm \theset{0}$ by a translation; but the two spaces have different fundamental groups.
 
 :::
 
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a) and (b).
 
 :::
 
