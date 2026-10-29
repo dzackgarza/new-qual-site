@@ -85,7 +85,7 @@ Suppose $A_1,\ldots,A_n$ are pairwise commuting diagonalizable operators on $V$;
 
 - The union over $i$ of these bases of $E_i$ is a basis of $V$ in which every $A_j$ is diagonal.
 
-- For an arbitrary family $\theset{A_i}_{i\in I}$, the span of the $A_i$ in $\End(V)$ is finite-dimensional, so it has a basis $A_{i_1},\ldots,A_{i_r}$ taken from the family. A basis that diagonalizes $A_{i_1},\ldots,A_{i_r}$ diagonalizes every linear combination of them, hence every $A_i$.
+- For an arbitrary family $\theset{A_i}_{i\in I}$, the span of the $A_i$ in $\Endo(V)$ is finite-dimensional, so it has a basis $A_{i_1},\ldots,A_{i_r}$ taken from the family. A basis that diagonalizes $A_{i_1},\ldots,A_{i_r}$ diagonalizes every linear combination of them, hence every $A_i$.
 :::
 
 ::: {.example title="Noncommuting diagonalizable operators"}
