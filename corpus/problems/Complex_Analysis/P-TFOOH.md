@@ -24,12 +24,49 @@ Show that if $f_n\to g$ for some $g: \DD \to \CC$ uniformly on every compact $K\
 :::
 
 ::: {.solution}
-By Morera's theorem, it suffices to show $\int_T f = 0$ for all triangles $T \subseteq \DD$.
-Noting that $T$ is closed and bounded and thus compact, $f_n\to g$ uniformly on $T$.
-Since the $f_n$ are holomorphic, $\int_T f_n = 0$ for all $n$, and thus
-\[
-\int_T g = \int_T \lim f_n = \lim_n \int_T f_n = \lim_n 0 = 0
-,\]
-where moving the limit through the integral is justified by uniform convergence.
+
+::: pf
+
+::: {.pf-step #cont}
+
+$g$ is continuous on $\DD$.
+
+::: pf-proof
+
+Each point of $\DD$ has a closed disc neighborhood $K \subset \DD$, which is compact. On $K$, $g$ is a uniform limit of continuous functions, hence continuous.
+
+:::
+
+:::
+
+::: {.pf-step #tri}
+
+$\int_{\partial T} g\,dz = 0$ for every closed triangle $T \subset \DD$.
+
+::: pf-proof
+
+The boundary $\partial T$ is compact, so $f_n \to g$ uniformly on $\partial T$. By Cauchy's theorem in the disc, $\int_{\partial T} f_n\,dz = 0$ for every $n$, and uniform convergence on a path of finite length lets the limit pass through the integral:
+$$
+\int_{\partial T} g\,dz = \lim_{n\to\infty} \int_{\partial T} f_n\,dz = 0.
+$$
+
+:::
+
+:::
+
+::: pf-step
+
+$g$ is analytic on $\DD$.
+
+::: pf-proof
+
+This is Morera's theorem applied to $g$, using steps [](#cont){.pf-ref} and [](#tri){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
 
