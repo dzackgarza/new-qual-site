@@ -651,7 +651,6 @@ sections:
       - ref: L-C5DDK
       - ref: D-B4VTH
       - ref: PR-24CPI
-      - ref: D-HGMOW
       - ref: D-23FX7
       - ref: FE-ISVDM
   - slug: canonical-forms
