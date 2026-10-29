@@ -1,6 +1,9 @@
 ---
 title: "Characteristic subgroups, normal closures, and cores"
 order: 55
+topics:
+  - Normal Subgroups
+  - Subgroups
 ---
 
 # Characteristic subgroups, normal closures, and cores
