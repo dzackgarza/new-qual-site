@@ -18,7 +18,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $\sgn\colon S_n\to\theset{\pm1}$ be the sign homomorphism, and let $\sigma\in S_n$ have disjoint cycle decomposition $\sigma=c_1\cdots c_t$ with $c_j$ a cycle of length $k_j$.
+Let $\sgn\colon S_n\to\theset{\pm1}$ be the [[D-BZ3KD|sign homomorphism]], and let $\sigma\in S_n$ have disjoint cycle decomposition $\sigma=c_1\cdots c_t$ with $c_j$ a cycle of length $k_j$.
 Then
 $$
 \sgn(\sigma)=\prod_{j=1}^t(-1)^{k_j-1}.

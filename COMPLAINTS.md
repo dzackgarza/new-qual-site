@@ -49,33 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Duplicate prime-ideal cards D-5BM46 and FD-OSSYR
-
-- **Object and need:** `D-5BM46` and `FD-OSSYR` in `corpus/theory/Algebra`. Both define a proper ideal `$\mathfrak p$` of a commutative ring to be prime when `$ab\in\mathfrak p$` implies `$a\in\mathfrak p$` or `$b\in\mathfrak p$`.
-
-- **Observed evidence:** the definitions are identical.
-  `D-5BM46` is the dependency used by the prime spectrum, quotient criterion, and height theorems; the wiki displayed `FD-OSSYR` immediately beside it.
-
-- **Impact and owner:** the flashcard adds no distinct mathematics and creates a second defining occurrence.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `D-5BM46`, removes the duplicate wiki link, and deletes `FD-OSSYR`.
-
-### Sign homomorphism used incompatible codomains under one symbol
-
-- **Object and need:** `D-BZ3KD`, `D-TMME3`, and the permutation/determinant cards using `\sgn`. The canonical sign map must have one type.
-
-- **Observed evidence:** `D-BZ3KD` defined `$\sgn:S_n\to\ZZ/2$` by transposition parity, and `D-TMME3` therefore used `$\sgn(\sigma)=0$` for even permutations.
-  `FD-GHDF2`, `FD-X4DBP`, and the determinant formulas use the conventional multiplicative sign `$\sgn:S_n\to\{\pm1\}$`.
-
-- **Impact and owner:** the same notation had two incompatible codomains, so links to the canonical sign definition did not type-check against formulas using it multiplicatively.
-
-- **Uncertainty:** none.
-  The parity map and multiplicative sign are equivalent via `$k\bmod2\mapsto(-1)^k$`, but they are not the same typed map.
-
-- **Repair:** a repair makes `D-BZ3KD` own the conventional multiplicative sign, updates `D-TMME3` to use sign `1` for even permutations, and links `FD-GHDF2` to the canonical definition.
-
 ### Duplicate alternating-group card FD-X4DBP
 
 - **Object and need:** `D-TMME3` and `FD-X4DBP` in `corpus/theory/Algebra`. `D-TMME3` already defines even/odd permutations and the alternating group as the kernel of the sign homomorphism; `FD-X4DBP` repeats only the latter definition.
