@@ -76,5 +76,5 @@ This is the argument for the [[complex-analysis/cauchy-theory/maximum-modulus-an
 
 ## Problems
 
-[[E-4F5TF]] [[E-RLHXB]] [[E-VGNUI]] [[E-3B2YA]]
+[[E-RLHXB]] [[E-VGNUI]] [[E-3B2YA]]
 [[E-ZVO5P]] [[E-5AKU5]] [[E-AZSMO]] [[E-DDKSS]]
