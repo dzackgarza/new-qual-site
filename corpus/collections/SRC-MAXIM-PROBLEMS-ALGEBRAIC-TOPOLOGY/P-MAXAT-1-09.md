@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-09
 kind: problem
-title: Maxim algebraic topology 1.9
+title: $\sigma(M)\equiv\chi(M)\pmod 2$ for a closed oriented $4n$-manifold
 classification:
   areas: [topology]
   topics: []
