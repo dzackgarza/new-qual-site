@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06W-09
 kind: problem
-title: Eigenvalue claim for a symmetric determinant-one matrix
+title: A $3\times3$ rotation matrix has eigenvalue $1$
 classification:
   areas: [prelim]
   topics: []
@@ -17,10 +17,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: The printed assertion is false; the solution gives an explicit symmetric positive-definite determinant-one counterexample.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam printed A = A^t, under which diag(2,2,1/4) is a counterexample; the stated invertibility indicates the orthogonality condition, and the statement now assumes A^{-1} = A^t.
 ---
 
 ::: {.problem}
-Let $A\in\mathbb M_3(\mathbb R)$ be invertible and satisfy $A=A^t$ and $\det A=1$.
+Let $A\in\mathbb M_3(\mathbb R)$ be invertible and satisfy $A^{-1}=A^t$ and $\det A=1$.
 Prove that $A$ has $1$ as an eigenvalue.
 :::
 
@@ -30,31 +34,21 @@ Prove that $A$ has $1$ as an eigenvalue.
 
 ::: {.pf-step #s1-1}
 
-Consider the diagonal matrix
 $$
-A=
-\begin{pmatrix}
-2&0&0\\
-0&2&0\\
-0&0&1/4
-\end{pmatrix}.
+\det(A-I)=\det(I-A).
 $$
-Then $A$ satisfies all hypotheses of the problem.
 
 
 ::: pf-proof
 
-The matrix is real and diagonal, hence
+Since $AA^t=I$,
 $$
-A^t=A.
+A-I=A-AA^t=A(I-A^t)=A(I-A)^t.
 $$
-Its diagonal entries are all nonzero, so it is invertible. Moreover,
+Taking determinants and using $\det A=1$ and $\det M^t=\det M$,
 $$
-\det A
-=2\cdot2\cdot\frac14
-=1.
+\det(A-I)=\det A\cdot\det\bigl((I-A)^t\bigr)=\det(I-A).
 $$
-Thus every stated hypothesis is satisfied.
 
 :::
 
@@ -62,33 +56,18 @@ Thus every stated hypothesis is satisfied.
 
 ::: {.pf-step #s1-2}
 
-The matrix $A$ does not have $1$ as an eigenvalue.
+$$
+\det(A-I)=0.
+$$
 
 
 ::: pf-proof
 
-For a diagonal matrix, the eigenvalues are its diagonal entries. Hence the eigenvalues of $A$ are
+For a $3\times3$ matrix $M$, $\det(-M)=(-1)^3\det M=-\det M$. Hence
 $$
-2,
-\qquad
-2,
-\qquad
-\frac14.
+\det(I-A)=-\det(A-I).
 $$
-None is equal to $1$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-Therefore the assertion in the problem is false as printed.
-
-
-::: pf-proof
-
-Step [](#s1-1){.pf-ref} gives a matrix satisfying all hypotheses, while step [](#s1-2){.pf-ref} shows that it fails the claimed conclusion. This is a counterexample.
+Combined with step [](#s1-1){.pf-ref}, this gives $\det(A-I)=-\det(A-I)$, so $\det(A-I)=0$.
 
 :::
 
@@ -96,7 +75,7 @@ Step [](#s1-1){.pf-ref} gives a matrix satisfying all hypotheses, while step [](
 
 ::: pf-qed
 
-Step [](#s1-3){.pf-ref} completely resolves the printed claim by disproving it.
+By step [](#s1-2){.pf-ref}, $A-I$ is singular, so there is a nonzero $v$ with $Av=v$. Thus $1$ is an eigenvalue of $A$.
 
 :::
 
