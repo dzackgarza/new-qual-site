@@ -15,10 +15,14 @@ audit:
 - event: solution-written
   by: Claude Opus 5
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source read "Show that p-groups => nilpotent"; infinite p-groups need not be nilpotent, so the statement restricts to finite p-groups.'
 ---
 
 ::: {.exercise}
-Show that p-groups $\implies$ nilpotent
+Let $p$ be a prime. Show that every finite $p$-group is nilpotent.
 :::
 
 ::: {.hint}
@@ -26,6 +30,7 @@ A nontrivial finite $p$-group has nontrivial center, so each term $Z_m\neq G$ of
 :::
 
 ::: {.solution}
+Let $G$ have order $p^n$ and let $1 = Z_0 \leq Z_1 \leq \cdots$ be its upper central series, where $Z_{m+1}$ is the preimage in $G$ of $Z(G/Z_m)$.
 
 ::: pf
 
@@ -48,10 +53,6 @@ $p$ divides $\abs P$, so $p$ divides $\abs{Z(P)}$, and $Z(P) \neq 1$.
 
 :::
 
-:::
-
-::: pf-step
-Let $G$ have order $p^n$ and let $1 = Z_0 \leq Z_1 \leq \cdots$ be its upper central series, where $Z_{m+1}$ is the preimage in $G$ of $Z(G/Z_m)$.
 :::
 
 ::: {.pf-step #upper-central-series-strictly-increases}
