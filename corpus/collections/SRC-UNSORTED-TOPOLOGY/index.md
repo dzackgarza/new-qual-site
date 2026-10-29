@@ -121,7 +121,6 @@ source:
   - id: P-V4A37
   - id: P-WHXWM
   - id: P-XAQEZ
-  - id: P-XGHXK
   - id: P-XSRNS
   - id: P-XTPAP
   - id: P-XWNF6
