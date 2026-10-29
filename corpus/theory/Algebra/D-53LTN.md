@@ -16,10 +16,10 @@ review: draft
 
 ::: {.definition}
 Let $G$ be a group.
-A [[D-IQ4OX|subgroup]] $H\leq G$ is \dfn{characteristic} in $G$, written $H \ch G$, if $\phi(H) \leq H$ for every $\phi \in \Aut(G)$.
+A [[D-IQ4OX|subgroup]] $H\leq G$ is \dfn{characteristic} in $G$, written $H \operatorname{char} G$, if $\phi(H) \leq H$ for every $\phi \in \Aut(G)$.
 :::
 
 ::: {.remark}
-If $H \ch G$, then $\phi(H) = H$ for every $\phi\in\Aut(G)$: applying the definition to $\phi^{-1}$ gives $\phi^{-1}(H)\leq H$, so $H\leq\phi(H)$.
+If $H \operatorname{char} G$, then $\phi(H) = H$ for every $\phi\in\Aut(G)$: applying the definition to $\phi^{-1}$ gives $\phi^{-1}(H)\leq H$, so $H\leq\phi(H)$.
 The automorphisms need not fix $H$ pointwise.
 :::
