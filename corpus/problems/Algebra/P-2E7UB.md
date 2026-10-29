@@ -22,23 +22,62 @@ audit:
   note: Stated the correct one-sided hypothesis and applied Zorn directly to proper left ideals over Rx.
 ---
 
-::: {.exercise}
+::: {.problem}
 Let $R$ be a ring with $1\ne0$. Show that any element $x$ having no left inverse is contained in a maximal left ideal. In a commutative ring, this applies to every nonunit.
 :::
 
 ::: {.solution}
-If $x$ has no left inverse, then the principal left ideal
-\[
-Rx
-\]
-is proper: otherwise $1\in Rx$, so $rx=1$ for some $r\in R$.
 
-Consider the set of proper left ideals containing $Rx$, ordered by inclusion. It is nonempty. The union of a chain is again a left ideal containing $Rx$, and it is proper because if it contained $1$, then some member of the chain would contain $1$ and hence equal $R$. Thus every chain has an upper bound.
+::: pf
 
-By Zorn's lemma there is a maximal element $M$ in this poset. Any proper left ideal strictly containing $M$ would also contain $Rx$, contradicting maximality. Hence $M$ is a maximal left ideal and
-\[
-x\in Rx\subseteq M.
-\]
+::: {.pf-step #proper}
 
-In a commutative ring, an element is left-invertible exactly when it is a unit, so every nonunit is contained in a maximal ideal.
+The principal left ideal $Rx$ is proper.
+
+::: pf-proof
+
+If $Rx=R$, then $1\in Rx$, so $rx=1$ for some $r\in R$, and $x$ has a left inverse.
+
+:::
+
+:::
+
+::: {.pf-step #zorn}
+
+The set $\mathcal S$ of proper left ideals containing $Rx$, ordered by inclusion, has a maximal element $M$.
+
+::: pf-proof
+
+By step [](#proper){.pf-ref}, $Rx\in\mathcal S$, so $\mathcal S$ is nonempty. The union of a nonempty chain in $\mathcal S$ is a left ideal containing $Rx$. It is proper: if it contained $1$, some member of the chain would contain $1$ and equal $R$. Thus every chain has an upper bound in $\mathcal S$, and Zorn's lemma gives $M$.
+
+:::
+
+:::
+
+::: {.pf-step #maximal}
+
+$M$ is a maximal left ideal containing $x$.
+
+::: pf-proof
+
+A proper left ideal strictly containing $M$ would contain $Rx$ and so lie in $\mathcal S$, contradicting the maximality of $M$ in step [](#zorn){.pf-ref}. Also $x\in Rx\subseteq M$.
+
+:::
+
+:::
+
+::: pf-step
+
+In a commutative ring, every nonunit lies in a maximal ideal.
+
+::: pf-proof
+
+In a commutative ring an element has a left inverse exactly when it is a unit, and left ideals are ideals. Apply step [](#maximal){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
