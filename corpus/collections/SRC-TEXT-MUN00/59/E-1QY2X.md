@@ -25,7 +25,6 @@ Since $S^2 - \theset{p}$ is homeomorphic with $\RR^2$, and $\RR^2$ is simply con
 :::
 
 ::: {.solution}
-**Goal:** Identify and critique the fundamental flaw in the proposed proof that $S^2$ is simply connected, and explain how the gap is rigorously resolved.
 
 ::: pf
 
