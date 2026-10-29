@@ -22,29 +22,53 @@ audit:
 ---
 
 ::: {.problem}
-Classify all finite-dimensional (associative) **division algebras** over the field of real numbers $\mathbb{R}$ (Frobenius' Theorem).
+Classify all finite-dimensional (associative) division algebras over the field of real numbers $\RR$ (Frobenius' Theorem).
 :::
 
 ::: {.solution}
-**Frobenius' theorem.** Every finite-dimensional associative division algebra over $\mathbb R$ is isomorphic to exactly one of
-\[
-\mathbb R,\qquad \mathbb C,\qquad \mathbb H.
-\]
+Let $D$ be a finite-dimensional associative division algebra over $\RR$ with center $Z$.
 
-One standard proof uses the Brauer group. Let $D$ be such a division algebra and let $Z=Z(D)$. The center is a finite field extension of $\mathbb R$, hence
-\[
-Z\cong\mathbb R\quad\text{or}\quad Z\cong\mathbb C.
-\]
-If $Z=\mathbb C$, then $D=\mathbb C$: for any $x\in D$, the finite-dimensional commutative subalgebra $\mathbb C[x]$ is a field, so the minimal polynomial of $x$ over the algebraically closed field $\mathbb C$ must be linear.
+::: pf
 
-It remains to consider central division algebras over $\mathbb R$. The standard computation
-\[
-\operatorname{Br}(\mathbb R)\cong\mathbb Z/2\mathbb Z
-\]
-has two classes, represented by $\mathbb R$ and the Hamilton quaternion algebra $\mathbb H$. Every central simple algebra over $\mathbb R$ is therefore Morita-equivalent to one of these; its division-algebra representative is respectively $\mathbb R$ or $\mathbb H$. Hence a noncommutative finite-dimensional real division algebra is $\mathbb H$.
+::: {.pf-step #center}
+$Z\cong\RR$ or $Z\cong\CC$.
 
-Thus the complete list is
-\[
-\boxed{\mathbb R,\ \mathbb C,\ \mathbb H}.
-\]
+::: pf-proof
+$Z$ is a commutative division algebra, hence a field, and it is a finite extension of $\RR$.
+:::
+
+:::
+
+::: {.pf-step #complex-center}
+If $Z\cong\CC$, then $D=\CC$.
+
+::: pf-proof
+For $x\in D$, the subalgebra $\CC[x]$ is commutative, finite-dimensional, and has no zero divisors, so it is a finite field extension of $\CC$.
+Since $\CC$ is algebraically closed, $\CC[x]=\CC$, so $x\in\CC$.
+:::
+
+:::
+
+::: {.pf-step #real-center}
+If $Z\cong\RR$, then $D\cong\RR$ or $D\cong\HH$.
+
+::: pf-proof
+Then $D$ is a central division algebra over $\RR$, so it defines a class in $\operatorname{Br}(\RR)\cong\ZZ/2\ZZ$, whose two classes are those of $\RR$ and of the Hamilton quaternions $\HH$.
+Each Brauer class contains exactly one division algebra up to isomorphism, so $D\cong\RR$ or $D\cong\HH$.
+:::
+
+:::
+
+::: pf-step
+Every finite-dimensional associative division algebra over $\RR$ is isomorphic to exactly one of $\boxed{\RR,\ \CC,\ \HH}$.
+
+::: pf-proof
+Steps [](#center){.pf-ref}, [](#complex-center){.pf-ref} and [](#real-center){.pf-ref} show that $D$ is one of these.
+They are pairwise non-isomorphic, since their real dimensions are $1$, $2$ and $4$.
+:::
+
+:::
+
+:::
+
 :::
