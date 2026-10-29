@@ -46,46 +46,29 @@ audit:
     Deformations de courbes avec action de groupe II, Forum Math. 8 (1996),
     205--218), and replaced the unsupported three-eigenvalue count in part (c)
     by an explicit monomial-weight bound.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne IV.5.7 prints (a) for every genus-3 curve and (b) with char k != 3; a hyperelliptic genus-3 curve has no canonical embedding, and the quartic is singular at [1:2:4] in characteristic 7. The statement now says nonhyperelliptic in (a) and char k != 3, 7 in (b). Part (c), printed without a ground field, is now stated over C, where the solution proves it.
 ---
 
 ::: {.problem}
-a. Any automorphism of a curve of genus 3 is induced by an automorphism of $\PP^2$ via the canonical embedding.
+a. Any automorphism of a nonhyperelliptic curve of genus 3 is induced by an automorphism of $\PP^2$ via the canonical embedding.
 
-b. \* Assume $\characteristic k \neq 3$. If $X$ is the curve given by
+b. \* Assume $\characteristic k \neq 3, 7$. If $X$ is the curve given by
 $$
 x^3 y+y^3 z+z^3 x=0
 $$
 the group $\Aut X$ is the simple group of order 168, whose order is the maximum $84(g-1)$ allowed by (Ex. 2.5). See Burnside ($\S$ 232) or Klein.
 
-c. \* Most curves of genus 3 have no automorphisms except the identity.
+c. \* Over $\CC$, most curves of genus 3 have no automorphisms except the identity.
 
     Hint: For each $n$, count the dimension of the family of curves with an automorphism $T$ of order $n$. For example, if $n=2$, then for suitable choice of coordinates, $T$ can be written as $x \mapsto -x$, $y \mapsto y$, $z \mapsto z$. Then there is an 8-dimensional family of curves fixed by $T$; changing coordinates there is a 4-dimensional family of such $T$, so the curves having an automorphism of degree 2 form a family of dimension 12 inside the 14-dimensional family of all plane curves of degree 4.
 
     More generally it is true (at least over $\CC$) that for any $g \geq 3$, a "sufficiently general" curve of genus $g$ has no automorphisms except the identity; see Baily.
 :::
 
-::: {.remark title="Errata to parts (a) and (b)"}
-Part (a) is correct for a nonhyperelliptic curve of genus $3$.  For a
-hyperelliptic genus-$3$ curve the canonical morphism has degree $2$ onto a
-conic, so there is no canonical embedding in $\PP^2$ through which to induce
-the automorphism.
-
-Part (b) must also exclude characteristic $7$.  Indeed, for
-$$
-F=x^3y+y^3z+z^3x
-$$
-one has, in characteristic $7$,
-$$
-F(1,2,4)=F_x(1,2,4)=F_y(1,2,4)=F_z(1,2,4)=0,
-$$
-so the displayed plane quartic is singular at $[1:2:4]$ and is not the
-nonsingular genus-$3$ curve asserted in the exercise.  Thus the corrected
-hypothesis in (b) is $\characteristic k\neq3,7$.
-:::
-
 ::: {.solution}
-For part (a), let $X$ be nonhyperelliptic.  For part (c) we work over
-$\CC$, as in the note following the exercise.
 
 ::: pf
 
@@ -115,39 +98,6 @@ restriction of the displayed projective transformation.  Uniqueness follows
 because a projective transformation of $\PP^2$ fixing the plane quartic
 pointwise fixes more than four points in general position and is therefore
 the identity.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-If $\characteristic k=7$, the equation in part (b) does not define a
-nonsingular genus-$3$ curve.
-
-::: pf-proof
-
-For
-$$
-F=x^3y+y^3z+z^3x
-$$
-the partial derivatives are
-$$
-F_x=3x^2y+z^3,\qquad
-F_y=x^3+3y^2z,\qquad
-F_z=y^3+3z^2x.
-$$
-At $P=[1:2:4]$ in characteristic $7$ these four polynomials have values
-$$
-F(P)=2+32+64=98=0,
-$$
-$$
-F_x(P)=6+64=70=0,\qquad
-F_y(P)=1+48=49=0,\qquad
-F_z(P)=8+48=56=0.
-$$
-Thus $P$ is singular.  This proves the characteristic-$7$ correction stated
-in the erratum.
 
 :::
 
@@ -232,7 +182,7 @@ $$
 $$
 For $p>4$, the positive-characteristic extension stated in the same exercise
 gives the identical bound, with its sole exceptional genus-$3$ characteristic
-being $p=7$; that characteristic has already been excluded in step [](#s2){.pf-ref}.
+being $p=7$, which the hypothesis of part (b) excludes.
 Consequently equality holds in every case covered by this step, and the
 subgroup in step [](#s3){.pf-ref} is the full automorphism group.
 
@@ -391,8 +341,7 @@ automorphism group is trivial.  This is the assertion of part (c).
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves the corrected part (a).  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b)
-with the necessary characteristic-$7$ correction.  Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} prove
+Step [](#s1){.pf-ref} proves part (a).  Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b).  Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} prove
 part (c) over $\CC$.
 
 :::
