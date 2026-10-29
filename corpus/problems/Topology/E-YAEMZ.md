@@ -42,11 +42,11 @@ Assume $A$ has no limit point. For each $x\in X$ choose an open neighborhood $U_
 
 ::: {.pf-step #s2}
 
-If $X$ is first countable and every infinite subset has a limit point, then every sequence has a convergent subsequence.
+If $X$ is first countable and $T_1$ and every infinite subset has a limit point, then every sequence has a convergent subsequence.
 
 ::: pf-proof
 
-Given $(x_n)$, if some value occurs infinitely often, take a constant subsequence. Otherwise its range contains an infinite subset $A$ of distinct values. Let $x$ be a limit point of $A$, and choose a nested countable neighborhood basis $U_1\supseteq U_2\supseteq\cdots$ at $x$. Inductively choose distinct sequence terms $x_{n_k}\in U_k$ with $n_1<n_2<\cdots$. Then $x_{n_k}\to x$.
+Given $(x_n)$, if some value occurs infinitely often, take a constant subsequence. Otherwise its range $A$ is infinite. Let $x$ be a limit point of $A$, and choose a nested countable neighborhood basis $U_1\supseteq U_2\supseteq\cdots$ at $x$. Since $X$ is $T_1$, each $U_k$ meets $A$ in infinitely many points, and each value of the sequence occurs only finitely often. Inductively choose distinct sequence terms $x_{n_k}\in U_k$ with $n_1<n_2<\cdots$. Then $x_{n_k}\to x$.
 
 :::
 
