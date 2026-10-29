@@ -15,43 +15,37 @@ review: draft
 
 ::: {.problem}
 Let $\alpha,\beta$ be algebraic over a field $F$. Prove that
-\[
+$$
 \alpha\pm\beta,
 \qquad
 \alpha\beta
-\]
+$$
 are algebraic over $F$, and if $\beta\ne0$, then so is
-\[
+$$
 \alpha\beta^{-1}.
-\]
+$$
 :::
 
 ::: {.solution}
-Since $\alpha$ and $\beta$ are algebraic over $F$, the extensions
-\[
-F(\alpha)/F,
-\qquad
-F(\beta)/F
-\]
-are finite. Therefore the compositum
-\[
-F(\alpha,\beta)
-\]
-is finite over $F$.
+::: pf
 
-Every element of a finite field extension is algebraic over the base field. Now
-\[
-\alpha+\beta,
-\quad
-\alpha-\beta,
-\quad
-\alpha\beta
-\]
-all lie in $F(\alpha,\beta)$. If $\beta\ne0$, then $\beta^{-1}\in F(\beta)\subseteq F(\alpha,\beta)$, so
-\[
-\alpha\beta^{-1}\in F(\alpha,\beta)
-\]
-as well.
+::: {.pf-step #finite}
+$F(\alpha,\beta)/F$ is a finite extension.
 
-Hence all the displayed elements are algebraic over $F$.
+::: pf-proof
+Since $\alpha$ is algebraic over $F$, $[F(\alpha):F]<\infty$. Since $\beta$ is algebraic over $F$, it is algebraic over $F(\alpha)$, so $[F(\alpha,\beta):F(\alpha)]<\infty$. By the tower law, $[F(\alpha,\beta):F]<\infty$.
+:::
+
+:::
+
+::: pf-step
+$\alpha\pm\beta$, $\alpha\beta$, and, when $\beta\ne0$, $\alpha\beta^{-1}$ are algebraic over $F$.
+
+::: pf-proof
+All of these elements lie in the field $F(\alpha,\beta)$. Every element $\gamma$ of a finite extension $K/F$ is algebraic over $F$, because the powers $1,\gamma,\gamma^2,\ldots$ are linearly dependent over $F$. Step [](#finite){.pf-ref} applies with $K=F(\alpha,\beta)$.
+:::
+
+:::
+
+:::
 :::
