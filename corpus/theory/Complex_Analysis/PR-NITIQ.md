@@ -14,13 +14,13 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $D_r(z_0)\sm\theset{z_0}$ and have a [[D-R4BDD|pole]] at $z_0$, so that $\abs{f(z)}\to\infty$ as $z\to z_0$.
+Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $D_r(z_0)\sm\theset{z_0}$ and have a [[D-AUD6K|pole]] at $z_0$, so that $\abs{f(z)}\to\infty$ as $z\to z_0$.
 Then there exist a least integer $n\ge1$ and a function $h$ holomorphic on a neighborhood of $z_0$ such that
 $$
 f(z)=(z-z_0)^{-n}h(z)
 $$
 near $z_0$, $z\neq z_0$.
-For this $n$, the function $h$ is unique and $h(z_0)\neq0$; the integer $n$ is the [[D-R4BDD|order]] of the pole.
+For this $n$, the function $h$ is unique and $h(z_0)\neq0$; the integer $n$ is the [[D-AUD6K|order]] of the pole.
 :::
 
 ::: {.proof}

@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-The [[D-Q3MYK|Gamma function]], defined by $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\dt$ for $\Re s>0$, extends to a [[D-7DFVJ|meromorphic]] function on $\CC$ whose only singularities are simple [[D-R4BDD|poles]] at $s=0,-1,-2,\ldots$.
+The [[D-Q3MYK|Gamma function]], defined by $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\dt$ for $\Re s>0$, extends to a [[D-7DFVJ|meromorphic]] function on $\CC$ whose only singularities are simple [[D-AUD6K|poles]] at $s=0,-1,-2,\ldots$.
 :::
 
 ::: {.proof}

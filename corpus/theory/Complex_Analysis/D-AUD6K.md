@@ -56,3 +56,9 @@ Conversely, if $\abs{f(z)}\to\infty$, then $f$ has no zeros on some $D_\rho(z_0)
 By [[D-BQLJV|Riemann's removable singularity theorem]], $g\coloneqq1/f$ with $g(z_0)\coloneqq0$ is holomorphic on $D_\rho(z_0)$.
 It is not identically zero, so $z_0$ is a zero of $g$ of some order $n\ge1$, and (b) holds.
 :::
+
+::: {.remark title="Variations"}
+A pole may be defined by condition (b) without naming $n$: $f$ has no zeros near $z_0$ and $1/f$, extended by $0$ at $z_0$, is holomorphic.
+The order is then the least integer $n\ge1$ for which $f(z)=(z-z_0)^{-n}h(z)$ near $z_0$ with $h$ holomorphic, without the condition $h(z_0)\neq0$.
+This least $n$ is the order in the definition above: if $f=(z-z_0)^{-n}h_0$ with $h_0(z_0)\neq0$ and $f=(z-z_0)^{-m}h$ with $m<n$, then $h=(z-z_0)^{m-n}h_0$ is unbounded near $z_0$, a contradiction.
+:::
