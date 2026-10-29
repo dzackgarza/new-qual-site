@@ -41,6 +41,7 @@ Every finite $p$-group has nontrivial center, by the class equation. Hence
 $$
 |Z(G)|\in\{p,p^2,p^3\}.
 $$
+
 :::
 
 :::
@@ -103,6 +104,7 @@ If $|Z(G)|=p^3$, use step [](#s2){.pf-ref}. If $|Z(G)|=p^2$, use steps [](#s3){.
 $$
 |Z(G)|=p.
 $$
+
 :::
 
 :::
