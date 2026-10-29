@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW5
 kind: problem
-title: Open, closed, and compact status of two metric-space subsets (warm-up)
+title: Open, closed, and compact status of two metric-space subsets
 classification:
   areas:
   - real-analysis
