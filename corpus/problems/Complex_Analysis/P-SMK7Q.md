@@ -22,48 +22,69 @@ Prove that $f$ is a rational function.
 
 Suppose that $z=0$ is the unique zero of $f$.
 Show that
-\[  
-\exists n\in \NN, \lambda \in S^1 \qtext{ such that }f(z) = \lambda z^n
-.\]
+$$
+\exists n\in \NN, \lambda \in S^1 \text{ such that } f(z) = \lambda z^n
+.$$
 
 Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
-\[  
-\exists \lambda \in S^1 \qtext{such that} f(z) = \lambda \prod_{j=1}^n {z - a_j \over 1 - \bar{a_j} z}
-.\]
+$$
+\exists \lambda \in S^1 \text{ such that } f(z) = \lambda \prod_{j=1}^n {z - a_j \over 1 - \bar{a_j} z}
+.$$
 :::
 
 ::: {.solution}
-Because $|f|=1$ on $\partial\mathbb D$ and the extension is continuous, there
-is an annular neighborhood of the boundary on which $f$ has no zeros. Hence all
-zeros of $f$ lie in a compact subset of $\mathbb D$. Since zeros of a
-nonzero holomorphic function are isolated, there are only finitely many of
-them, counted with multiplicity; write them as $a_1,\dots,a_n$.
+For $a\in\DD$ write $B_a(z)\coloneqq\dfrac{z-a}{1-\overline az}$; it is holomorphic on a neighborhood of $\overline\DD$, vanishes only at $a$ (simply), and satisfies $\abs{B_a}=1$ on $\abs z=1$.
 
-For each zero define the Blaschke factor
-\[
-B_{a_j}(z)=\frac{z-a_j}{1-\overline{a_j}z}.
-\]
-It has the same zero multiplicity contribution as $f$ and satisfies
-$|B_{a_j}(z)|=1$ on $|z|=1$. Therefore
-\[
-g(z)=\frac{f(z)}{\prod_{j=1}^n B_{a_j}(z)}
-\]
-extends holomorphically and without zeros to $\mathbb D$, continuously to the
-closed disk, and satisfies $|g|=1$ on the boundary.
+::: pf
 
-The maximum modulus principle gives $|g|\le1$ in $\mathbb D$. Since $g$ has no
-zeros, $1/g$ is holomorphic and has boundary modulus $1$, so the same principle
-gives $|1/g|\le1$, i.e. $|g|\ge1$. Thus $|g|\equiv1$, and the open mapping
-theorem forces $g$ to be constant. Hence for some $\lambda\in S^1$,
-\[
-\boxed{f(z)=\lambda\prod_{j=1}^n
-\frac{z-a_j}{1-\overline{a_j}z}.}
-\]
-This is rational, proving the first assertion as well.
+::: {.pf-step #finite}
 
-If $0$ is the unique zero and has multiplicity $n$, every $a_j=0$, so the
-formula reduces to
-\[
-\boxed{f(z)=\lambda z^n.}
-\]
+$f$ has finitely many zeros in $\DD$, counted with multiplicity; list them as $a_1,\ldots,a_n$.
+
+::: pf-proof
+
+Since $\abs{\tilde f}=1$ on $\partial\DD$ and $\tilde f$ is continuous on the compact set $\overline\DD$, there is $\rho<1$ with $\tilde f\ne0$ on $\rho\le\abs z\le1$. The zeros of the nonzero holomorphic function $f$ are isolated, so only finitely many lie in the compact disk $\abs z\le\rho$.
+
+:::
+
+:::
+
+::: {.pf-step #quotient}
+
+$g\coloneqq f/\prod_{j=1}^nB_{a_j}$ is holomorphic and zero-free on $\DD$, extends continuously to $\overline\DD$, and has $\abs g=1$ on $\partial\DD$.
+
+::: pf-proof
+
+By step [](#finite){.pf-ref}, the zeros of the denominator, with multiplicity, are exactly those of $f$, so the singularities of $g$ are removable and $g$ has no zeros. The denominator is continuous and nonvanishing near $\partial\DD$ with modulus $1$ there.
+
+:::
+
+:::
+
+::: {.pf-step #blaschke}
+
+$f(z)=\boxed{\lambda\prod_{j=1}^n\dfrac{z-a_j}{1-\overline{a_j}z}}$ for some $\lambda\in S^1$; in particular $f$ is rational.
+
+::: pf-proof
+
+By step [](#quotient){.pf-ref} and the maximum modulus principle applied to $g$ and to $1/g$, we get $\abs g\le1$ and $\abs{1/g}\le1$ on $\DD$. So $\abs g\equiv1$, and by the open mapping theorem $g$ is a constant $\lambda\in S^1$.
+
+:::
+
+:::
+
+::: pf-step
+
+If $0$ is the only zero of $f$, then $f(z)=\boxed{\lambda z^n}$ for some $n\in\NN$ and $\lambda\in S^1$.
+
+::: pf-proof
+
+Every $a_j$ equals $0$ and $B_0(z)=z$, so step [](#blaschke){.pf-ref} gives $f(z)=\lambda z^n$, where $n$ is the multiplicity of the zero at $0$.
+
+:::
+
+:::
+
+:::
+
 :::
