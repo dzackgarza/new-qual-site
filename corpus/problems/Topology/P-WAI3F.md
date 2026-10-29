@@ -11,73 +11,28 @@ classification:
   - Homotopy
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source problem block held a worked answer opening 'Main Idea: Linear homotopy fails continuity without the condition from (2)', which refers to a part not on this card; the statement now poses the claim that answer proves."
 ---
 
 ::: {.problem}
-3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2$.
-
-Suppose $n$ is odd and define $f:S^n \to S^n$ to be the antipodal map.
-Since $n+1$ is even, we have $n+1 =2m$ for some $m\in \NN$, so identify $S^n = S^{2m-1} \subset \RR^{2m} \cong\CC^m$
-
-Then $z\in S^n$ can be written as a vector $z \in \CC^m$ such that $\norm{z} = 1$.
-
-Then define $P: \CC^m \to \CC^m$ by $P(z) = z/\abs{z}$, the projection onto the complex unit sphere, and define $H: \CC^m \cross I \to \CC^m$ by $H(z, t) = P(e^{i\pi t}z)$.
-
-This is a homotopy, since $H(z, 0) = P(z) = z$ (since $\norm{z} = 1$), so this is the identity map.
-We also have $H(z, 1) = P(-z) = -z$, the antipodal map.
-
-This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homotopy in ambient $\CC^m$ avoids the origin and thus the denominator when taking the projection is never zero.
+Let $n$ be odd. Show that the antipodal map $f\colon S^n \to S^n$, $f(x) = -x$, is homotopic to the identity.
 :::
 
 ::: {.solution}
+Since $n$ is odd, $n + 1 = 2m$ for an integer $m \geq 1$; identify $\RR^{n+1}$ with $\CC^m$, so that $S^n$ is the unit sphere $\{z \in \CC^m : \norm{z} = 1\}$.
 
 ::: pf
 
 ::: pf-step
-
-Write $n=2m-1$ and identify $S^n$ with the unit sphere in $\mathbb C^m$.
-
-::: pf-proof
-
-$n$ odd means $n+1=2m$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Define
-$$H(z,t)=e^{\pi i t}z.$$
+The map $H\colon S^n \times [0,1] \to S^n$, $H(z,t) = e^{\pi i t} z$, is a homotopy from $\id_{S^n}$ to $f$.
 
 ::: pf-proof
-
-Multiplication by a complex number of modulus $1$ preserves the unit sphere, so $H:S^n\times I\to S^n$ is continuous.
-
-:::
-
-:::
-
-::: pf-step
-
-Then $H(z,0)=z$ and $H(z,1)=-z$.
-
-::: pf-proof
-
-$e^0=1$ and $e^{\pi i}=-1$.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence the antipodal map on $S^n$ is homotopic to the identity for odd $n$.
-
-::: pf-proof
-
-The homotopy is step [](#s2){.pf-ref}.
-
+$H$ is continuous, and it takes values in $S^n$ because $\norm{e^{\pi i t} z} = \abs{e^{\pi i t}}\,\norm{z} = \norm{z} = 1$.
+Moreover $H(z,0) = z$ and $H(z,1) = e^{\pi i} z = -z$.
 :::
 
 :::
