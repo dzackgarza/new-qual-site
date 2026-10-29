@@ -220,6 +220,92 @@ mathematical correction under its own node, not under copy policy.
     and FIELDS orals); rings-and-ideals/solutions Gallian headings and MIT pointer; groups
     resources "Chapter N solutions" (`RES-01`). **Acceptance:** each read and repaired, or kept
     with the reason.
+  Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
+    involution of $S^{2n}$ need not be the antipodal map; the quotient need not be
+    homeomorphic to $\RP^{2n}$); P-TOPS06B title (higher-genus surfaces do cover lower-genus
+    ones); P-TOPF23D title ("is" for "is homotopic to");
+      wiki/algebraic-geometry/varieties/index.md
+    (affine varieties correspond to finitely generated domains, not reduced algebras);
+    sheaves-of-modules/projective-sheaves.md (very ample gives an immersion, closed when $X$ is
+    proper); cw-complexes RREF row span over $\ZZ$; P-AT75W "$U \in X$"; P-TOPF09C
+    $H_*$/$H^*$ hedge. `QUAL-10` proofs of standard results: fundamental-group/theorems.md
+    (T-2YTCZ, T-BTPU4, PR-3APOT, PR-OO3DH, PR-EWJMJ), point-set.md tube lemma, homology.md
+    PR-6PENU, D-FAIJX Mayer--Vietoris remark, FT-6WPJI corollary proof, FT-M5BHD (twice),
+    D-KC4BS Moore spaces; review-page sentences that advertise them. `CARD-04`:
+    D-WX7JH/PR-BQKHS (and the D-6CI7D remark that redefines $\tilde M$); D-QP7WI/PR-4X6G2;
+    D-6UHU7/D-UH3L5; T-N6PYS/FT-M5BHD; T-TJBYR/PR-ZCUXL(1); PR-UBJ6P/D-BX3WD; T-O44GI/PR-HQE2T;
+    D-GFM35/PR-EWJMJ; PR-B6BB2/D-IGUUS proposition; T-NBARV/FF-GBHJL/FF-IEHB2/FF-W3AIU
+    (PR-LIXWH); P-FHLRF/P-24CMJ/P-CEVX4; P-VTB25/P-D6JY5/P-6HH2P. `THEOREM-01`, `DEF-1`:
+    every topology guide lede in publications/topology-guide.yaml (British spellings too);
+    D-WSFYS van Kampen remark; compute-pi-1 and compute-h-star local theorem blocks; AG pages
+    what-is-a-scheme, subschemes-and-points, proj-and-gluing, fibre-products-and-base-change,
+    the-sheaf-condition, stalks-and-exactness, line-bundles, differentials, canonical-class.
+    Pages: topology resources/problems.md links raw PDFs (`RES-01`); point-set.md
+    "Separability" heading; notation-and-background degree convention (`NOT-3`);
+    the-standard-spaces-notes orphan page; surfaces-and-manifolds stray complex-manifold
+    sentence and duplicated T-NBARV sentence; PR-SCHINT link text; covering-spaces diagrams
+    (renderer, `ad-tikzcd`). Collections (`SEC-7`, `SOURCE-03`): appearance comments on
+    SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007, SRC-UGA-TOP-FALL-2004/2009/2012,
+    SRC-WESLEYAN-TOP-2004/2014/SUMMER-2008/SUMMER-2011/SUMMER-2013, and the SRC-UNL-MATH871
+    grading notes; Perutz, UNL 871 and UT M392C bare section names; Maxim "Poincare Duality ´".
+    Card defects: SRC-UGA-TOP-FALL-2013 problem 9 fixed-point title; P-AGXHWSUPPORT alignment;
+    P-AGXVARSURFACESING doubled link text; P-WESTOP05-10, P-QUAL-REVIEW-HATCHER-10 and -11
+    undefined symbols and in-solution headings; P-AGXHWREDUCED and P-8TF16 part labels.
+    Titles (`CARD-01`, `CARD-06`): Malone--Housley imperative titles; raw ASCII TeX titles on
+    the UCSD, MAT367, UGA 8230, PhD F08 and workshop collections.
+    - Locator titles (`CARD-02`), one card at a time: P-AT75W, P-MAXAT-1-01, P-MAXAT-1-02,
+      P-MAXAT-1-03, P-MAXAT-1-04, P-MAXAT-1-05, P-MAXAT-1-06, P-MAXAT-1-07, P-MAXAT-1-08,
+      P-MAXAT-1-09, P-MAXAT-1-10, P-MAXAT-1-11, P-MAXAT-1-12, P-MAXAT-1-13, P-MAXAT-2-01,
+      P-MAXAT-2-02, P-MAXAT-2-03, P-MAXAT-3-01, P-MAXAT-3-02, P-MAXAT-3-03, P-MAXAT-3-04,
+      P-MAXAT-3-05, P-MAXAT-3-06, P-MAXAT-4-01, P-MAXAT-4-02, P-MAXAT-4-03, P-MAXAT-4-04,
+      P-MAXAT-4-05, P-MAXAT-4-06, P-MAXAT-4-07, P-MAXAT-4-08, P-MAXAT-4-09, P-MAXAT-4-10,
+      P-MAXAT-4-11, P-MAXAT-4-12, P-MAXAT-4-13, P-MAXAT-5-01, P-MAXAT-5-02, P-MAXAT-5-03,
+      P-MAXAT-5-04, P-MAXAT-6-01, P-MAXAT-6-02, P-MAXAT-6-03, P-MAXAT-6-04, P-MAXAT-6-05,
+      P-MAXAT-6-07, P-MAXAT-6-09, P-MAXAT-6-10, P-MAXAT-6-11, P-MAXAT-6-12, P-MAXAT-6-13,
+      P-UNL872S14-10-A-1, P-UNL872S14-10-A-2, P-UNL872S14-10-A-3, P-UNL872S14-10-A-4,
+      P-UNL872S14-10-B-1, P-UNL872S14-10-B-2, P-UNL872S14-10-B-3, P-UNL872S14-10-C-1,
+      P-UNL872S14-10-C-2, P-UNL872S14-10-C-3, P-UNL872S14-10-C-4, P-UNL872S14-11-B-1,
+      P-UNL872S14-11-B-2, P-UNL872S14-11-C-1, P-UNL872S14-11-C-2, P-UNL872S14-11-C-3,
+      P-UNL872S14-11-C-4, P-UNL872S14-12-A-1, P-UNL872S14-12-A-2, P-UNL872S14-12-B-1,
+      P-UNL872S14-12-B-2, P-UNL872S14-12-B-3, P-UNL872S14-6-A-1, P-UNL872S14-6-A-2,
+      P-UNL872S14-6-A-3, P-UNL872S14-6-A-4, P-UNL872S14-6-A-5, P-UNL872S14-6-B-1,
+      P-UNL872S14-6-B-2, P-UNL872S14-6-B-3, P-UNL872S14-7-A-1, P-UNL872S14-7-B-1,
+      P-UNL872S14-7-B-2, P-UNL872S14-8-A-1, P-UNL872S14-8-A-2, P-UNL872S14-8-A-3,
+      P-UNL872S14-8-B-1, P-UNL872S14-8-B-2, P-UNL872S14-8-C-1, P-UNL872S14-9-A-1,
+      P-UNL872S14-9-B-1, P-UNL872S14-9-B-2, P-UNL872S14-9-B-3, P-UNL872S14-9-B-4,
+      P-UNL872S14-9-C-1, P-UNL872S14-9-C-2, P-UNL872S14-9-C-3, P-UNL872S14-PP-1,
+      P-UNL872S14-PP-2, P-UNL872S14-PP-3, P-UNL872S14-PP-4, P-UNL872S14-PP-5.
+    - `**Goal**` paragraphs (`STYLE-08`), one card at a time: E-013M4, E-01BSA, E-04W6Q,
+      E-069N4, E-0A010, E-0EZ4U, E-0GRG4, E-0K3QV, E-0LZE7, E-0MY4M, E-0NSGA, E-160XR, E-175IG,
+      E-18MBF, E-1CMTE, E-1DM8W, E-1P97G, E-1QGID, E-1QY2X, E-1VSTU, E-24TY3, E-29WP0, E-2B91X,
+      E-2BCY2, E-2BNJ6, E-2M0XQ, E-2NLYP, E-2P51H, E-2V2VL, E-3BSN7, E-3CFLD, E-3FN03, E-3JLUV,
+      E-3KMYL, E-41BN2, E-432BL, E-4349Q, E-44O6O, E-4E1C9, E-4KGM4, E-4PQ1O, E-4RF8O, E-4S8XS,
+      E-4TG52, E-4WKOG, E-4WQEM, E-52GF4, E-57O2M, E-5CC0M, E-5DDIL, E-5FLKZ, E-5GHY2, E-5NREC,
+      E-5VNUL, E-5VWPC, E-5WDER, E-5Y4F7, E-66MV0, E-6C2JI, E-6RQWT, E-70TGS, E-71YOD, E-73JHB,
+      E-74C1G, E-79XXG, E-7GVUH, E-7ML5F, E-81J56, E-873VF, E-8EX2G, E-8HR3A, E-8IBEP, E-8NCA4,
+      E-8Q9TN, E-8T3QS, E-8VZD4, E-97HXB, E-99H07, E-9IP2I, E-9LY2B, E-9OT3C, E-9RR0I, E-9TQ6L,
+      E-A3WS1, E-A7HJX, E-AGJM5, E-AHENA, E-AL52O, E-CJA01, E-DUQHF, E-E79BA, E-HAT-1.1-11,
+      E-HAT-1.2-19, E-HAT-1.2-3, E-HAT-1.2-7, E-HAT-1.3-20, E-HAT-1.3-9, E-HAT-1.B-4,
+      E-HAT-2.1-7, E-HAT-2.2-2, E-HAT-2.2-42, E-HAT-2.C-2, E-HAT-3.2-14, E-HAT-4.1-13,
+      E-HAT-4.1-18, E-HAT-4.2-5, E-HAT-4.2-8, E-HAT-4.3-19, E-HAT-4.D-6, E-HAT-4.H-4, E-LV54B,
+      E-MUN-6-5, E-VFXN4, P-AMD-2AFAX7LD, P-AMD-2GG7VEF2, P-AMD-4DYUOGAJ, P-AMD-5TW33AUF,
+      P-AMD-6GFMKZVQ, P-AMD-6KL53YZC, P-AMD-6OJQMSOZ, P-AMD-6QDQY5HT, P-AMD-6RPCGOV7,
+      P-AMD-7IWMHJHE, P-AMD-A2CPGINL, P-AMD-ALXD5IQN, P-AMD-AZWPAEUQ, P-AMD-D7IX7C4G,
+      P-AMD-DDQM3X6Q, P-AMD-DX7L7EFB, P-AMD-E67LQFU5, P-AMD-EPCKWZSV, P-AMD-ES2H5QQF,
+      P-AMD-F7UPRCWM, P-AMD-FW4WE7JA, P-AMD-GEBWFMJF, P-AMD-IUGBCO5R, P-FZIG3, P-KVMKV,
+      P-LSJ7W, P-MHQ6A, P-PATOJ, P-SAEXG, P-TOPF08E, P-TOPF09G, P-TOPF20E, P-TOPF20H,
+      P-TOPF21C, P-TOPF22E, P-TOPF24G, P-TOPF24H, P-TOPS13B, P-TOPS25G, P-UCTOP-SU09-8,
+      P-UCTOP-SU14-7, P-WOFN2.
+    - Solutions with no structured proof (`STYLE-08`), one card at a time: P-AGXHWGLOBALSECEX,
+      P-AGXHWREDUCED, P-AGXHWSKYSCRAPER, P-AGXHWSUPPORT, P-AGXMISCPRODRATIONAL,
+      P-AGXGATHVICLOSURE, P-AGXNSSNONCLOSED, E-MAT367-01, E-PER08-21.3, E-PER08-21.5,
+      E-PER08-21.7, E-PER08-23.1, E-PER08-23.4, E-PER08-24.1, E-PER08-24.3, E-PER08-26.2,
+      E-PER08-26.3, E-PER08-6.7, E-PER08-7.1, E-PER08-9.3, P-PSTM-01, P-PSTM-02, P-PSTM-03,
+      P-PSTM-04, P-PSTM-05, P-PSTM-06, P-TOPF10C, P-DDUA3, P-IWMWM, P-AT75W.
+
+    **Acceptance:** each read and repaired, or kept with the reason.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
