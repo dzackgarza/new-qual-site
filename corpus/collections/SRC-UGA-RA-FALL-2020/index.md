@@ -16,8 +16,7 @@ source:
   institution: uga
   area: real-analysis
   problems:
-  - id: P-4FH62
-    comment: Problem 1; part (q)
+  - P-5HMQ2
   - P-ZWJ7K
   - P-I3DSE
   - P-PMDP4
