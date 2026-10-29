@@ -16,13 +16,18 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked to show that the scalars in Z(SL_n(F_p)) satisfy zeta^p = 1, which holds only for zeta = 1 since zeta^p = zeta in F_p; the statement now asks for zeta^n = 1, and the parts are labelled (a), (b).'
 ---
 
 ::: {.problem}
-- Let $\FF_p$ be the finite field with $p$ elements, where $p$ is a prime.
-  Show that the centers of $\GL_n(\FF_p)$ and $\SL_n(\FF_p)$ consist only of scalar matrices.
+Let $\FF_p$ be the finite field with $p$ elements, where $p$ is a prime.
 
-  - Show that the scalars $\zeta$ that appear in scalar matrices $Z(\SL_n(\FF_p))$ are roots of unity in $\FF_p$, i.e. $\zeta^p = 1$.
+(a) Show that the centers of $\GL_n(\FF_p)$ and $\SL_n(\FF_p)$ consist only of scalar matrices.
+
+(b) Show that the scalars $\zeta$ that appear in scalar matrices $Z(\SL_n(\FF_p))$ are roots of unity in $\FF_p$, i.e. $\zeta^n = 1$.
 :::
 
 ::: {.solution}
@@ -72,8 +77,4 @@ The solutions of $\zeta^n=1$ in the cyclic group $\FF_p^\times$ of order $p-1$ f
 
 :::
 
-:::
-
-::: {.remark}
-The scalars in $Z(\SL_n(\FF_p))$ are the $n$th roots of unity in $\FF_p$, $\zeta^n=1$. The condition $\zeta^p=1$ in the statement holds only for $\zeta=1$, since $\zeta^p=\zeta$ for every $\zeta\in\FF_p$.
 :::
