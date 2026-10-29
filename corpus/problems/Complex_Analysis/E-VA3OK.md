@@ -17,73 +17,53 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source writes the sum as starting at k >= 0, whose first term is undefined; the statement starts it at k >= 1.
 ---
 
 ::: {.exercise}
 By computing
-\[
-{1\over 2\pi i}\oint {\cot(\pi z)\over z^2}\dz
-,\]
+$$
+{1\over 2\pi i}\oint {\cot(\pi z)\over z^2}\dz,
+$$
 say using a large rectangle, show that
-\[
-\zeta(2) = \sum_{k\geq 0} {1\over k^2} = {\pi^2\over 6}
-.\]
+$$
+\zeta(2) = \sum_{k\geq 1} {1\over k^2} = {\pi^2\over 6}.
+$$
 
 :::
 
 ::: {.solution}
+Let $f(z) = \frac{\cot(\pi z)}{z^2}$, and for $N\in\NN$ let $\gamma_N$ be the positively oriented boundary of the square with vertices $\pm (N + \tfrac12) \pm i(N + \tfrac12)$.
+The poles of $f$ are the integers, and $\gamma_N$ encloses exactly $-N,\ldots,N$.
+
 ::: pf
 
-::: pf-step
-Let $f(z) = \frac{\cot(\pi z)}{z^2}$.
-
-::: pf-proof
-definition.
-:::
-
-:::
-
-::: pf-step
-$f$ has a pole of order $3$ at $z = 0$ and simple poles at each nonzero integer $z = k$.
-
-::: pf-proof
-$\cot(\pi z)$ has simple poles at the integers with residue $1/\pi$, and $z^{-2}$ adds a pole of order $2$ at $0$.
-:::
-
-:::
-
 ::: {.pf-step #res-nonzero-k}
-$\operatorname{Res}(f, k) = \frac{1}{\pi k^2}$ for $k \neq 0$.
+$\Res(f, k) = \frac{1}{\pi k^2}$ for $k \in\ZZ\setminus\theset{0}$.
 
 ::: pf-proof
-$\cot(\pi z)$ has residue $1/\pi$ at $z = k$, so $f$ has residue $\frac{1}{\pi} \cdot k^{-2}$.
+$\cot(\pi z)$ has a simple pole at $z = k$ with residue $\frac{\cos(\pi k)}{\pi\cos(\pi k)}=\frac1\pi$, and $z^{-2}$ is holomorphic and equal to $k^{-2}$ there.
 :::
 
 :::
 
 ::: {.pf-step #res-zero}
-$\operatorname{Res}(f, 0) = -\frac{\pi}{3}$.
+$\Res(f, 0) = -\frac{\pi}{3}$.
 
 ::: pf-proof
-$\cot(\pi z) = \frac{1}{\pi z} - \frac{\pi z}{3} - \frac{\pi^3 z^3}{45} - \cdots$, so $f(z) = \frac{1}{\pi z^3} - \frac{\pi}{3z} - \frac{\pi^3 z}{45} - \cdots$, and the coefficient of $z^{-1}$ is $-\pi/3$.
-:::
-
-:::
-
-::: pf-step
-Let $\gamma_N$ be the rectangle with vertices $(\pm (N + \tfrac12), \pm (N + \tfrac12))$.
-
-::: pf-proof
-choose a contour enclosing the poles $-N, \ldots, N$.
+$\cot(\pi z) = \frac{1}{\pi z} - \frac{\pi z}{3} + O(z^3)$, so $f(z) = \frac{1}{\pi z^3} - \frac{\pi}{3z} + O(z)$, and the coefficient of $z^{-1}$ is $-\pi/3$.
 :::
 
 :::
 
 ::: {.pf-step #contour-integral-value}
-$\frac{1}{2\pi i}\oint_{\gamma_N} f(z)\,dz = \sum_{k=-N, k \neq 0}^{N} \frac{1}{\pi k^2} - \frac{\pi}{3} = \frac{2}{\pi}\sum_{k=1}^{N} \frac{1}{k^2} - \frac{\pi}{3}$.
+$\frac{1}{2\pi i}\oint_{\gamma_N} f(z)\,dz = \frac{2}{\pi}\sum_{k=1}^{N} \frac{1}{k^2} - \frac{\pi}{3}$.
 
 ::: pf-proof
-residue theorem, using steps [](#res-nonzero-k){.pf-ref} and [](#res-zero){.pf-ref}.
+By the residue theorem with steps [](#res-nonzero-k){.pf-ref} and [](#res-zero){.pf-ref}, pairing the residues at $k$ and $-k$.
 :::
 
 :::
@@ -92,31 +72,19 @@ residue theorem, using steps [](#res-nonzero-k){.pf-ref} and [](#res-zero){.pf-r
 $\oint_{\gamma_N} f(z)\,dz \to 0$ as $N \to \infty$.
 
 ::: pf-proof
-$|\cot(\pi z)|$ is bounded on $\gamma_N$ (the contour avoids the poles), $|z^{-2}| \le C/N^2$, and the perimeter is $O(N)$, so the integral is $O(1/N)$.
+$\abs{\cot(\pi z)}$ is bounded on $\gamma_N$ by a constant $C$ independent of $N$: on the vertical sides $\abs{\cot(\pi z)}=\abs{\tanh(\pi y)}\le1$, and on the horizontal sides $\abs{\cot(\pi z)}\le\coth(\pi(N+\tfrac12))\le\coth(\pi/2)$.
+Also $\abs{z^{-2}} \le (N+\tfrac12)^{-2}$ on $\gamma_N$, and the length of $\gamma_N$ is $8(N+\tfrac12)$, so the integral is at most $8C/(N+\tfrac12)$.
 :::
 
 :::
 
-::: {.pf-step #limit-equation}
-Hence $0 = \frac{2}{\pi}\sum_{k=1}^{\infty} \frac{1}{k^2} - \frac{\pi}{3}$.
+::: pf-step
+$\zeta(2) = \sum_{k=1}^{\infty} \frac{1}{k^2} = \boxed{\frac{\pi^2}{6}}$.
 
 ::: pf-proof
-Steps [](#contour-integral-value){.pf-ref} and [](#contour-vanishes){.pf-ref}, taking the limit.
+Letting $N\to\infty$ in step [](#contour-integral-value){.pf-ref} and using step [](#contour-vanishes){.pf-ref} gives $0 = \frac{2}{\pi}\sum_{k=1}^{\infty} \frac{1}{k^2} - \frac{\pi}{3}$.
 :::
 
-:::
-
-::: {.pf-step #sum-value}
-Therefore $\zeta(2) = \sum_{k=1}^{\infty} \frac{1}{k^2} = \frac{\pi^2}{6}$.
-
-::: pf-proof
-Step [](#limit-equation){.pf-ref}, solving for the sum.
-:::
-
-:::
-
-::: pf-qed
-Step [](#sum-value){.pf-ref}.
 :::
 
 :::
