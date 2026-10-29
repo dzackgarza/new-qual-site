@@ -5,7 +5,7 @@ kind: problem
 title: A non-equicontinuous sequence
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Equicontinuity
   - Counterexamples
