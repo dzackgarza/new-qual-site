@@ -25,5 +25,11 @@ Let $f \in \QQ[x]$ be a monic irreducible quartic with [[D-W3DSO|discriminant]] 
 :::
 
 ::: {.remark}
+The discriminant of $R_4$ equals $\Delta$.
+So when $R_4$ is reducible over $\QQ$, it splits into linear factors over $\QQ$ if $\sqrt\Delta\in\QQ$ and has exactly one root in $\QQ$ if $\sqrt\Delta\notin\QQ$.
+In terms of $R_4$ alone: $G=V_4$ if and only if $R_4$ splits into linear factors over $\QQ$, and $G\in\theset{D_4,C_4}$ if and only if $R_4$ has exactly one root in $\QQ$.
+:::
+
+::: {.remark}
 The groups $D_4$ and $C_4$ can also be distinguished by cycle types: the copy of $D_4$ in $S_4$ contains transpositions, whereas $C_4$ contains only $4$-cycles, the identity, and one product of two transpositions.
 :::

@@ -33,18 +33,6 @@ For an irreducible quartic $f\in\QQ[x]$, the Galois group is one of $S_4$, $A_4$
 
 [[PR-E4T3S]]
 
-::: {.remark title="Classification by the resolvent cubic"}
-Let $R$ be the resolvent cubic of $f$.
-
-- If $R$ is irreducible over $\QQ$ and $\Delta$ is not a square, then $G = S_4$.
-
-- If $R$ is irreducible over $\QQ$ and $\Delta$ is a square, then $G = A_4$.
-
-- If $R$ splits into linear factors over $\QQ$, then $G = C_2^2$.
-
-- If $R$ has exactly one root in $\QQ$, then $G$ is $C_4$ if $f$ is reducible over $\QQ(\sqrt\Delta)$, and $D_4$ if $f$ is irreducible over $\QQ(\sqrt\Delta)$.
-:::
-
 ## Cyclotomic fields
 
 $\Gal(\QQ(\zeta_n)/\QQ)\cong(\ZZ/n)^\times$; see [[algebra/galois-theory/cyclotomic-and-radical-extensions|Cyclotomic and radical extensions]].
