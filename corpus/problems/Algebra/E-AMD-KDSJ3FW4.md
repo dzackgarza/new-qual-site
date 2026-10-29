@@ -41,3 +41,7 @@ is an ideal: any two of its elements lie in a common member of the chain. It con
 
 By Zorn's lemma, $\mathcal F$ has a maximal element $\mathfrak m$. By definition, $\mathfrak m$ is a proper ideal containing $I$ and no larger proper ideal contains it. Therefore $\mathfrak m$ is maximal.
 :::
+
+::: {.remark title="Variations"}
+Every nonzero ring with identity has a maximal ideal: take $I=(0)$, which is proper because $1\ne0$.
+:::

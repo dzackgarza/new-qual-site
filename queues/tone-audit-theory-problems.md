@@ -69,7 +69,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/E-AMD-FCSNELC6.md` | `cf6b09a46f17a4b751936b8071c7e815f3eddfb3` | `cf6b09a46f17a4b751936b8071c7e815f3eddfb3` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-AMD-FN5JCFZP.md` | `1876cd707220cd426dad5aa6afecd8f7ae8d593e` | `1876cd707220cd426dad5aa6afecd8f7ae8d593e` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-AMD-FPHQEZZL.md` | `c4a92c4080e7591df11a8f8cc1fb2902e347a949` | `c4a92c4080e7591df11a8f8cc1fb2902e347a949` | Read; retained |
-| [x] | `corpus/problems/Algebra/E-AMD-FWJZ6BSR.md` | `5fe21f65043ffb5edbebd05150ec24d4503d07ab` | `5fe21f65043ffb5edbebd05150ec24d4503d07ab` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-AMD-GEZ3H4G7.md` | `524a7197918869c3c999ac06a6a32141d0e7e7c0` | `524a7197918869c3c999ac06a6a32141d0e7e7c0` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-AMD-GLBUESVX.md` | `9df48840aa222a10b8c2a6066a799a70cea64705` | `9df48840aa222a10b8c2a6066a799a70cea64705` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-AMD-GY2JTPQI.md` | `89e1b65ceb4ac4d9522c8a194626f7a5c8ef9550` | `89e1b65ceb4ac4d9522c8a194626f7a5c8ef9550` | Read; retained |

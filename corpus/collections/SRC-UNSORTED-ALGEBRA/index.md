@@ -76,7 +76,6 @@ source:
   - id: E-AMD-FCSNELC6
   - id: E-AMD-FN5JCFZP
   - id: E-AMD-FPHQEZZL
-  - id: E-AMD-FWJZ6BSR
   - id: E-AMD-GEZ3H4G7
   - id: E-AMD-GLBUESVX
   - id: E-AMD-GY2JTPQI
