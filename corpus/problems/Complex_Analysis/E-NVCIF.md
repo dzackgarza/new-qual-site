@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NVCIF
 kind: problem
-title: An entire function $h$ with $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{k\in\mathbb{Z}}\frac{1}{(z-k)^2}+h(z)$
+title: An entire function $h$ with $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{k\in\ZZ}\frac{1}{(z-k)^2}+h(z)$
 classification:
   areas:
   - complex-analysis
@@ -17,46 +17,61 @@ review: draft
 
 ::: {.exercise}
 Show that there is an entire function $h$ such that
-\[
-{\pi^2\over \sin^2(\pi z)} = \sum_{k\in \ZZ} {1\over (z-k)^2} + h(z)
-.\]
-
+$$
+\frac{\pi^2}{\sin^2(\pi z)} = \sum_{k\in \ZZ} \frac{1}{(z-k)^2} + h(z).
+$$
 :::
 
 ::: {.concept}
-\envlist
-
-- The principal part of $f$ at $z=z_0$ is gotten by expanding $f(z) = \sum_{k\in \ZZ} c_k z^k$ and taking $\sum_{k\leq 1} c_k z^k$.
-- Common trick: to control a singularity, subtract off a function with the same principal part at that point.
+The principal part of $f$ at an isolated singularity $z_0$ is $\sum_{k<0} c_k (z-z_0)^k$, where $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ is the Laurent expansion of $f$ near $z_0$.
+Subtracting a function with the same principal part at $z_0$ leaves a removable singularity at $z_0$.
 :::
 
 ::: {.solution}
-Write 
 
-- $f(z) = {\pi^2 \over \sin^2(\pi z)}$
-- $g(z) = \sum_{k\in \ZZ} {1\over (z-k)^2}$
+Let $f(z) \coloneqq \frac{\pi^2}{\sin^2(\pi z)}$ and $g(z) \coloneqq \sum_{k\in \ZZ} \frac{1}{(z-k)^2}$.
 
-Write the above equation as $f(z) = g(z) - h(z)$ and consider $h(z) \definedas f(z) - g(z)$.
-Then $h$ is meromorphic with singularities precisely on the set $\ZZ$, and are thus isolated.
-By the classification of isolated singularities, these can be removable, poles, or essential.
-If they are removable, then $h$ is entire.
+::: pf
 
-Consider the singularity at $z_0 = 0$.
-This is a pole of $f$, and a computation shows it is order 2:
-\[
-f(z) 
-&= \qty{\pi \over \sin(\pi z)}^2 \\
-&= \qty{\pi \over \pi z - {1\over 3!}(\pi z)^3 + \bigo(z^5) }^2 \\
-&= \qty{\pi \over \pi z (1 - {1\over 3!}(\pi z)^2 + \bigo(z^4))}^2 \\
-&= {1\over z^2} \qty{1 \over 1 - {1\over 3!}(\pi z)^2 + \bigo(z^4)}^2 \\
-&= {1\over z^2}\qty{1 + \bigo(z^2)}^2 \\
-&= {1\over z^2} + \bigo(z^2)
-,\]
-so $z=0$ is a zero of order 2 of $1/f$.
-This expansion also shows that the principal part of $f$ at $z=0$ is ${1\over z^2}$, which is precisely that of $g$ at $z=0$, i.e. ${1\over (z-0)^2} = 1/z^2$, 
-Since $f-g$ subtracts off this part, $z=0$ becomes a removable singularity for $h$ since $\lim_{z\to 0} \qty{ f(z) - {1\over z^2}} = 1<\infty$.
+::: {.pf-step #g-mero}
+The series $g$ converges locally uniformly on $\CC\setminus\ZZ$, $g$ is holomorphic there, and for each $n\in\ZZ$ the function $g(z)-\frac{1}{(z-n)^2}$ is holomorphic near $n$.
 
-Now note that $f$ is periodic, and since the period is 1, a similar argument shows that the remaining singularities on $\ZZ\smz$ are all removable for $f-g$.
-By Riemann's removable singularity theorem, $f-g$ extends over these singularities, yielding an entire function $h$ that restricts to $f-g$ on $\CC\sm\ZZ$.
+::: pf-proof
+Fix $R>0$.
+For $\abs{z}\leq R$ and $\abs{k}\geq 2R$, $\abs{z-k}\geq \abs{k}/2$, so $\abs{(z-k)^{-2}}\leq 4/k^2$, which is summable.
+By the Weierstrass $M$-test, the series with the finitely many terms $\abs{k}<2R$ removed converges uniformly on $\abs{z}\leq R$ to a holomorphic function.
+The remaining terms are holomorphic on $\abs{z}\leq R$ away from $\ZZ$, and the only one singular at $n$ is $\frac{1}{(z-n)^2}$.
 :::
 
+:::
+
+::: {.pf-step #f-pp}
+For each $n\in\ZZ$ the principal part of $f$ at $n$ is $\frac{1}{(z-n)^2}$.
+
+::: pf-proof
+Since $\sin^2(\pi(z+1)) = \sin^2(\pi z)$, $f$ has period $1$, so it suffices to take $n=0$.
+Near $0$,
+$$
+\begin{aligned}
+f(z) &= \left(\frac{\pi}{\pi z - \frac{1}{6}(\pi z)^3 + O(z^5)}\right)^2 = \frac{1}{z^2}\left(1 - \frac{\pi^2 z^2}{6} + O(z^4)\right)^{-2} \\
+&= \frac{1}{z^2}\left(1 + \frac{\pi^2 z^2}{3} + O(z^4)\right) = \frac{1}{z^2} + \frac{\pi^2}{3} + O(z^2).
+\end{aligned}
+$$
+:::
+
+:::
+
+::: pf-step
+$h \coloneqq f - g$ extends to an entire function.
+
+::: pf-proof
+$f$ is holomorphic on $\CC\setminus\ZZ$, and so is $g$ by step [](#g-mero){.pf-ref}.
+Near $n\in\ZZ$, $h = \left(f - \frac{1}{(z-n)^2}\right) - \left(g - \frac{1}{(z-n)^2}\right)$, which is bounded near $n$ by steps [](#g-mero){.pf-ref} and [](#f-pp){.pf-ref}.
+By Riemann's removable singularity theorem, $h$ extends holomorphically over each $n\in\ZZ$.
+:::
+
+:::
+
+:::
+
+:::
