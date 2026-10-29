@@ -22,53 +22,17 @@ Show that if $X$ is a metric space and $A\subseteq X$ is compact then $A$ is bou
 :::
 
 ::: {.solution}
-**Goal:** Show that if $X$ is a metric space and $A \subseteq X$ is compact, then $A$ is bounded.
+If $A=\varnothing$, it is bounded. Otherwise fix $p\in A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #cover}
 
-Fix a point $p \in X$; the open balls $\theset{B(p, n)}_{n \in \NN}$ form an open cover of $X$.
-
-::: pf-proof
-
-Every point of $X$ is at finite distance from $p$, so it lies in some $B(p, n)$; balls are open in a metric space.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The restriction to $A$ is an open cover of $A$, so it has a finite subcover $B(p, n_1), \ldots, B(p, n_k)$.
+The open balls $B(p,n)$, $n\in\NN$, cover $A$, so finitely many $B(p,n_1),\ldots,B(p,n_k)$ cover $A$.
 
 ::: pf-proof
 
-$A$ is compact.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Let $N := \max\theset{n_1, \ldots, n_k}$; then $A \subseteq B(p, N)$.
-
-::: pf-proof
-
-Each $a \in A$ lies in some $B(p, n_j) \subseteq B(p, N)$ since $n_j \leq N$.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-$A$ is bounded.
-
-::: pf-proof
-
-$A$ is contained in a ball of finite radius $N$ centered at $p$, which is the definition of boundedness in a metric space.
+Every point of $X$ is at finite distance from $p$, so it lies in some $B(p,n)$, and balls are open. The second claim is compactness of $A$.
 
 :::
 
@@ -76,7 +40,7 @@ $A$ is contained in a ball of finite radius $N$ centered at $p$, which is the de
 
 ::: pf-qed
 
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} establish the claim.
+Let $N\coloneqq\max\{n_1,\ldots,n_k\}$. By step [](#cover){.pf-ref}, each $a\in A$ lies in some $B(p,n_j)\subseteq B(p,N)$, so $A\subseteq B(p,N)$ and $A$ is bounded.
 
 :::
 
