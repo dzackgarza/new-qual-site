@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EAGXS
 kind: problem
-title: The structure theorem for modules over a PID and conjugacy classes in $\mathrm{GL}(V)$
+title: The structure theorem for modules over a PID and conjugacy classes in $\GL(V)$
 classification:
   areas:
   - algebra
@@ -33,9 +33,9 @@ Let $V$ be a finite-dimensional vector space over a field $F$, and let $T\in\ope
 ::: pf-step
 
 The operator $T$ makes $V$ into an $F[t]$-module by
-\[
+$$
 f(t)\cdot v=f(T)v.
-\]
+$$
 
 ::: pf-proof
 
@@ -47,18 +47,18 @@ Polynomial evaluation at $T$ is a ring homomorphism $F[t]\to\operatorname{End}_F
 
 ::: pf-step
 
-Two operators $S,T\in\operatorname{End}_F(V)$ are conjugate in $\operatorname{GL}(V)$ iff the corresponding $F[t]$-modules are isomorphic.
+Two operators $S,T\in\operatorname{End}_F(V)$ are conjugate in $\GL(V)$ iff the corresponding $F[t]$-modules are isomorphic.
 
 ::: pf-proof
 
 An $F$-linear isomorphism $P:V\to V$ is $F[t]$-linear exactly when
-\[
+$$
 P(Tv)=S(Pv)
-\]
+$$
 for every $v$, i.e.
-\[
+$$
 PT=SP.
-\]
+$$
 Since $P$ is invertible, this is equivalent to $S=PTP^{-1}$.
 
 :::
@@ -72,13 +72,13 @@ Since $F[t]$ is a PID and $V$ is finitely generated and torsion as an $F[t]$-mod
 ::: pf-proof
 
 Finite-dimensionality over $F$ makes $V$ finitely generated over $F[t]$. Cayley-Hamilton gives a nonzero polynomial annihilating all of $V$, so the module is torsion. Hence
-\[
+$$
 V\cong\bigoplus_i F[t]/(f_i(t))
-\]
+$$
 with invariant factors
-\[
+$$
 f_1\mid f_2\mid\cdots\mid f_r.
-\]
+$$
 These invariant factors determine and are determined by the conjugacy class of $T$.
 
 :::
@@ -99,5 +99,5 @@ On the cyclic module $F[t]/(f)$, multiplication by $t$ is represented in the sta
 
 :::
 
-Thus conjugacy classes of linear operators are precisely isomorphism classes of the associated finite torsion $F[t]$-modules, and the PID structure theorem is the module-theoretic source of rational canonical form.
+Thus conjugacy classes of linear operators are precisely isomorphism classes of the associated finitely generated torsion $F[t]$-modules, and the PID structure theorem is the module-theoretic source of rational canonical form.
 :::
