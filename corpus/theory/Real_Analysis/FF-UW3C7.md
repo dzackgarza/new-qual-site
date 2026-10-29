@@ -6,6 +6,7 @@ title: A composition of Lebesgue measurable functions need not be measurable
 slogan: 'Lebesgue measurability is not closed under composition, even when the inner map is continuous.'
 prompts:
 - Is the composition of Lebesgue measurable functions again Lebesgue measurable?
+- Is a composition of Lebesgue measurable functions measurable?
 classification:
   areas:
   - real-analysis
@@ -13,9 +14,7 @@ classification:
   - Measure Theory
   - Cantor Set
   - Counterexamples
-relations:
-- kind: variant-of
-  target: FE-YOIJM
+relations: []
 review: draft
 ---
 

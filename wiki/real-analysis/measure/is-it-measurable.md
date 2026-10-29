@@ -30,8 +30,6 @@ A composition $f\circ\varphi$ with $f$ Lebesgue measurable and $\varphi$ continu
 
 [[FF-UW3C7]]
 
-[[FE-YOIJM]]
-
 [[PR-Z5VSQ]]
 
 ## Non-measurable sets
