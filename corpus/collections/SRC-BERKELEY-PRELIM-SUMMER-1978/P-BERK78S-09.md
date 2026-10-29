@@ -334,25 +334,3 @@ Step [](#s3){.pf-ref} proves part (1), step [](#s6){.pf-ref} proves part (2), an
 :::
 
 :::
-
-::: {.remark}
-Erratum: the source states parts (1) and (2) for an arbitrary metric space.
-They are false in that generality. For example, let $M=\ell^2$, let
-$x=0$, and let
-$$
-Y
-=
-\left\{
-\left(1+\frac1n\right)e_n:n\geq1
-\right\},
-$$
-where $(e_n)$ is the standard orthonormal basis. Distinct points of $Y$ are
-separated by more than $\sqrt2$, so $Y$ is closed. However,
-$$
-d(0,Y)=1
-$$
-and every point of $Y$ has norm strictly larger than $1$, so the distance
-is not attained. Taking $X=\{0\}$ also disproves the source's printed part
-(2). The problem is corrected by assuming that the ambient metric space $M$
-is proper.
-:::
