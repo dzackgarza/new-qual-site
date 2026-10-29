@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $\{a_k\}_{k=1}^\infty$ be a bounded sequence of real numbers and set
 $$
-E:=\left\{s\in\RR:\{k\in\NN:a_k\ge s\}\text{ is finite}\right\}.
+E\coloneqq\left\{s\in\RR:\{k\in\NN:a_k\ge s\}\text{ is finite}\right\}.
 $$
 Prove that
 $$
@@ -39,14 +39,14 @@ $$
 ::: {.solution}
 Let
 $$
-L:=\limsup_{k\to\infty}a_k
+L\coloneqq\limsup_{k\to\infty}a_k
  =\lim_{N\to\infty}\sup_{k\ge N}a_k.
 $$
 Since $(a_k)$ is bounded above, $E\ne\varnothing$: every number larger than $\sup_k a_k$ lies in $E$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #lower-bound}
 
 $L\le \inf E$.
 
@@ -72,7 +72,7 @@ Thus $L$ is a lower bound for $E$, and hence $L\le\inf E$.
 
 ::: pf-step
 
-$\inf E\le L$.
+$\inf E\le L$, and hence, with step [](#lower-bound){.pf-ref}, $\boxed{\limsup_{k\to\infty}a_k=\inf E}$.
 
 ::: pf-proof
 
@@ -104,8 +104,4 @@ Letting $\varepsilon\downarrow0$ gives $\inf E\le L$.
 
 :::
 
-Combining the two inequalities,
-$$
-\boxed{\limsup_{k\to\infty}a_k=\inf E}.
-$$
 :::
