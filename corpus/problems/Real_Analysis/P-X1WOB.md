@@ -14,6 +14,8 @@ relations: []
 review: draft
 audit:
 - event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 - event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
