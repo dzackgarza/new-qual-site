@@ -58,7 +58,6 @@ source:
   - id: E-AMD-CM4ZVMMU
   - id: E-AMD-CY7I27YM
   - id: E-AMD-CZJRDRNT
-  - id: E-AMD-D5ZZFZKC
   - id: E-AMD-DCVAD27P
   - id: E-AMD-DGMOEV2O
   - id: E-AMD-DHOWRFW5
@@ -240,7 +239,6 @@ source:
   - id: P-3JNFF
   - id: P-3MHHW
   - id: P-3OUVI
-  - id: P-3PD4W
   - id: P-3PTP5
   - id: P-3Q4IQ
   - id: P-3RGXW
@@ -430,7 +428,6 @@ source:
   - id: P-GKPVE
   - id: P-GLKAB
   - id: P-GN222
-  - id: P-GNFIW
   - id: P-GOLWQ
   - id: P-GPN39
   - id: P-GQZ1O

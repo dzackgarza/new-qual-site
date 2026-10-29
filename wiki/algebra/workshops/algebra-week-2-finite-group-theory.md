@@ -77,7 +77,7 @@ title: "Algebra qual prep week 2: finite group theory"
 
 ### Warmup
 
-[[P-O2H7G]] [[P-P4KA6]] [[P-WC3HY]] [[P-5YUW6]] [[P-JZM4U]] [[P-3PD4W]] [[P-2TASE]] [[P-6XW74]] [[P-HYQCG]]
+[[P-O2H7G]] [[P-P4KA6]] [[P-WC3HY]] [[P-5YUW6]] [[P-JZM4U]] [[E-6AOD7]] [[P-2TASE]] [[P-6XW74]] [[P-HYQCG]]
 
 ### Group actions
 
