@@ -4,6 +4,8 @@ id: T-N6PYS
 kind: theorem
 title: Maps from compact spaces to Hausdorff spaces
 slogan: 'Continuous maps from compact to Hausdorff spaces are closed; surjections are quotient maps, injections embeddings, and bijections homeomorphisms.'
+prompts:
+- When is a continuous bijection from a compact space to a Hausdorff space a homeomorphism?
 classification:
   areas:
   - topology
