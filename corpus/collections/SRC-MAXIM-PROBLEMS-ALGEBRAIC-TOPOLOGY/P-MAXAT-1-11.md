@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-11
 kind: problem
-title: Maxim algebraic topology 1.11
+title: Torsion of $H_{n-1}(M;\ZZ)$ detects orientability of a closed $n$-manifold
 classification:
   areas: [topology]
   topics: []
