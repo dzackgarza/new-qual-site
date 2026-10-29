@@ -33,14 +33,11 @@ Then $m$ and $n$ are uniquely determined by $G$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the orders $m$ and $n$ of the cyclic factors in the free product $G = (\ZZ/m\ZZ) * (\ZZ/n\ZZ)$ are uniquely determined by the isomorphism class of $G$.
-
 ::: pf
 
 ::: pf-step
 
-Part (a): Order of the abelianization $G/[G, G]$.
-    *Proof:*
+(a) The abelianization $G/[G, G]$ has order $mn$.
 
 ::: pf-proof
 
@@ -75,9 +72,7 @@ The order of this finite abelian group is $|G / [G, G]| = |\ZZ/m\ZZ| \cdot |\ZZ/
 
 ::: pf-step
 
-Part (b): Maximum finite order of an element in $G$.
-    The largest finite order $k$ of an element in $G$ is $k = \max(m, n)$.
-    *Proof:*
+(b) The largest order $k$ of an element of finite order in $G$ is $\boxed{k = \max(m, n)}$.
 
 ::: pf-proof
 
@@ -123,8 +118,7 @@ Therefore, the set of finite orders of elements in $G$ is $\{d \in \ZZ_+ \mid d 
 
 ::: pf-step
 
-Part (c): Unique determination of $m$ and $n$.
-    *Proof:*
+(c) The group $G$ determines $m$ and $n$.
 
 ::: pf-proof
 
@@ -145,7 +139,7 @@ Assuming without loss of generality that $m \ge n$, we have:
 
 ::: pf-step
 
-Thus the multiset $\{m, n\}$ is uniquely determined by the group invariants $P$ and $M$ of $G$. Q.E.D.
+Thus the multiset $\{m, n\}$ is uniquely determined by the group invariants $P$ and $M$ of $G$.
 
 :::
 
