@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-6. For this problem, consider just Lebesgue measurable functions $f : [ 0 , 1 ] \to \RR$ . together with the Lebesgue measure.
+For this problem, consider just Lebesgue measurable functions $f : [0,1] \to \RR$, together with the Lebesgue measure.
 
 (a) State Fatou’s lemma (no proof required).
 
