@@ -26,7 +26,7 @@ Degree-zero divisors are sums of such differences, so $\Pic^0(\PP^1) = 0$ and $\
 :::
 
 ::: {.example}
-On an elliptic curve $E$, distinct points $p \neq q$ are never linearly equivalent: $p - q = \div(f)$ would make $f : E \to \PP^1$ a degree-one map, hence an isomorphism, contradicting $g(E) = 1 \neq 0 = g(\PP^1)$.
+On an elliptic curve $E$, distinct points $p \neq q$ are never linearly equivalent: $p - q = \div(f)$ would make $f \colon E \to \PP^1$ a degree-one map, hence an isomorphism, contradicting $g(E) = 1 \neq 0 = g(\PP^1)$.
 Instead $\Pic^0(E) \cong E$ by $p \mapsto [p - O]$, so $\Pic(E) \cong E \oplus \ZZ$.
 :::
 
@@ -35,5 +35,5 @@ For a smooth projective curve over an algebraically closed field, $\Pic^0$ is th
 A curve is rational precisely when it admits two distinct linearly equivalent points, which is the same as admitting a degree-one map to $\PP^1$.
 
 A principal divisor $p-q$ gives a rational function with one simple zero and one simple pole, so the induced map to $\PP^1$ has degree one.
-For a non-rational example, $y^2 = x^3 - x$ homogenised to $y^2 z = x^3 - xz^2$ is the standard witness, and the group law on it is exactly the isomorphism $E \cong \Pic^0(E)$.
+For example, in characteristic not $2$ the elliptic curve $E\colon y^2 z = x^3 - xz^2$ is not rational, and its group law is the one transported from $\Pic^0(E)$ by the bijection $p \mapsto [p - O]$.
 :::
