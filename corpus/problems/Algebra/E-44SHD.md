@@ -31,8 +31,8 @@ Prove that if $A$ and $B$ are invertible matrices over a field $\boldsymbol{k}$,
 
 ::: {.pf-step #s1}
 
-Suppose $A,B\in M_n(k)$ are invertible.
-For $\lambda\in k$,
+Suppose $A,B\in M_n(\boldsymbol{k})$ are invertible.
+For $\lambda\in \boldsymbol{k}$,
 $$
 A+\lambda B=B\bigl(B^{-1}A+\lambda I_n\bigr).
 $$
@@ -51,7 +51,7 @@ Hence
 $$
 \det(A+\lambda B)=\det(B)\,p(\lambda),
 \qquad
-p(t)\coloneqq\det(B^{-1}A+tI_n)\in k[t].
+p(t)\coloneqq\det(B^{-1}A+tI_n)\in \boldsymbol{k}[t].
 $$
 
 ::: pf-proof
@@ -76,7 +76,7 @@ In the determinant expansion of $B^{-1}A+tI_n$, the product of the $t$-terms on 
 
 ::: {.pf-step #s4}
 
-Therefore $A+\lambda B$ is singular for at most $n$ values of $\lambda\in k$.
+Therefore $A+\lambda B$ is singular for at most $n$ values of $\lambda\in \boldsymbol{k}$.
 
 ::: pf-proof
 
@@ -94,7 +94,7 @@ A nonzero polynomial of degree $n$ over a field has at most $n$ roots.
 
 ::: pf-step
 
-Hence $A+\lambda B$ is invertible for all but finitely many $\lambda\in k$.
+Hence $A+\lambda B$ is invertible for all but finitely many $\lambda\in \boldsymbol{k}$.
 
 ::: pf-proof
 
