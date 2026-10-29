@@ -130,7 +130,7 @@ Thus the multiplication-by-$2$ map has nonzero kernel.
 
 ::: {.pf-step #s4}
 
-The $\ZZ$-module $\QQ/\ZZ$ is not flat.
+The statement is $\boxed{\text{false}}$: the $\ZZ$-module $\QQ/\ZZ$ is not flat.
 
 ::: pf-proof
 
@@ -150,16 +150,10 @@ this map is not injective. Contradiction.
 
 Therefore
 $$
-\boxed{\QQ/\ZZ\text{ is not flat over }\ZZ.}
+\QQ/\ZZ\text{ is not flat over }\ZZ.
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref} proves that the statement in the problem is false.
 
 :::
 
