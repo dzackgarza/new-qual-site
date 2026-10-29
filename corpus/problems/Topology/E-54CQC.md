@@ -46,7 +46,7 @@ The fiber is closed in compact $E$, hence compact. For each $x\in p^{-1}(b)$, lo
 
 Fix $b\in B$ and write
 $$
-p^{-1}(b)=\{x_1,\dots,x_r\}.
+p^{-1}(b)=\{x_1,\ldots,x_r\}.
 $$
 Choose pairwise disjoint open neighborhoods $U_i$ of the $x_i$ such that each restriction
 $$
@@ -62,31 +62,39 @@ Local homeomorphy gives such neighborhoods individually, and the Hausdorff prope
 
 :::
 
-::: pf-step
+::: {.pf-step #b-not-in-pK}
 
 Put
 $$
 K=E\setminus\bigcup_{i=1}^r U_i.
 $$
-Then $K$ is compact, so $p(K)$ is compact and therefore closed in Hausdorff $B$. Since no point of the fiber lies in $K$, we have $b\notin p(K)$.
+Then $p(K)$ is closed in $B$ and $b\notin p(K)$.
+
+::: pf-proof
+
+The set $K$ is closed in the compact space $E$, hence compact, so $p(K)$ is compact and therefore closed in the Hausdorff space $B$. Every point of $p^{-1}(b)$ lies in some $U_i$, so $K\cap p^{-1}(b)=\varnothing$ and $b\notin p(K)$.
+
+:::
 
 :::
 
 ::: pf-step
 
-Define
+The set
 $$
-V=(B\setminus p(K))\cap\bigcap_{i=1}^r p(U_i).
+V=(B\setminus p(K))\cap\bigcap_{i=1}^r p(U_i)
 $$
-Then $V$ is an open neighborhood of $b$ and
+is an open neighborhood of $b$ that $p$ evenly covers.
+
+::: pf-proof
+
+$V$ is a finite intersection of open sets that contain $b$, by step [](#b-not-in-pK){.pf-ref}. Since $V\cap p(K)=\varnothing$, the preimage $p^{-1}(V)$ misses $K$, so
 $$
-p^{-1}(V)=\bigsqcup_{i=1}^r (U_i\cap p^{-1}(V)).
+p^{-1}(V)=\bigsqcup_{i=1}^r (U_i\cap p^{-1}(V)),
 $$
-For each $i$, the restriction
-$$
-p:U_i\cap p^{-1}(V)\longrightarrow V
-$$
-is a homeomorphism.
+a union of pairwise disjoint open sets. Since $V\subseteq p(U_i)$ and $p|_{U_i}$ is a homeomorphism onto $p(U_i)$, each restriction $p:U_i\cap p^{-1}(V)\to V$ is a homeomorphism.
+
+:::
 
 :::
 
