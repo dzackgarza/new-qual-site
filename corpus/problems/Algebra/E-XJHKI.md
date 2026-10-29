@@ -27,17 +27,31 @@ Suppose $K$ has characteristic different from $2$ and contains a primitive $n$th
 :::
 
 ::: {.solution}
-Let $\zeta\in K$ have order $n$, with $n$ odd. We claim that $-\zeta$ has order $2n$.
+Let $\zeta\in K$ have order $n$, with $n$ odd.
 
-Certainly
-\[
-(-\zeta)^{2n}=1.
-\]
-Suppose $(-\zeta)^m=1$. Then
-\[
-\zeta^m=(-1)^m.
-\]
-If $m$ is odd, this says that the odd-order group $\langle\zeta\rangle$ contains $-1$, an element of order $2$, impossible because $\operatorname{char}K\ne2$. Hence $m$ is even. Then $\zeta^m=1$, so $n\mid m$. Since $n$ is odd and $m$ is even, $2n\mid m$.
+::: pf
 
-Thus the least positive exponent annihilating $-\zeta$ is $2n$, so $-\zeta$ is a primitive $2n$th root of unity in $K$.
+::: {.pf-step #order-divides}
+If $(-\zeta)^m=1$, then $2n\mid m$.
+
+::: pf-proof
+From $(-\zeta)^m=1$ we get $\zeta^m=(-1)^m$.
+If $m$ were odd, the group $\langle\zeta\rangle$ of odd order $n$ would contain $-1$, which has order $2$ because $\operatorname{char}K\ne2$; this is impossible by Lagrange's theorem.
+Hence $m$ is even, so $\zeta^m=1$ and $n\mid m$.
+Since $n$ is odd and $2\mid m$, $2n\mid m$.
+:::
+
+:::
+
+::: pf-step
+$-\zeta$ is a primitive $2n$th root of unity in $K$.
+
+::: pf-proof
+$(-\zeta)^{2n}=\zeta^{2n}=1$, and by step [](#order-divides){.pf-ref} no smaller positive exponent annihilates $-\zeta$.
+:::
+
+:::
+
+:::
+
 :::
