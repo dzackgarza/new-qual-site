@@ -44,9 +44,9 @@ Part (a): A true implication whose converse is false:
 
 ::: pf-step
 Consider the statement for an integer $n \in \ZZ$:
-\[
-P(n) \implies Q(n), \quad \text{where } P(n) \text{ is } ``4 \mid n" \text{ and } Q(n) \text{ is } ``2 \mid n".
-\]
+$$
+P(n) \implies Q(n), \quad \text{where } P(n) \text{ is } \text{``}4 \mid n\text{''} \text{ and } Q(n) \text{ is } \text{``}2 \mid n\text{''}.
+$$
 If $4 \mid n$, then $n = 4k = 2(2k)$, so $2 \mid n$, which is a true implication.
 :::
 
@@ -65,17 +65,17 @@ Part (b): Continuous at $7$ but not differentiable at $7$:
 
 ::: pf-step
 Define $f: \RR \to \RR$ by:
-\[
+$$
 f(x) = |x - 7|.
-\]
+$$
 $f$ is continuous on $\RR$ as the composition of continuous functions.
 :::
 
 ::: pf-step
 Compute the one-sided derivative difference quotients at $x = 7$:
-\[
+$$
 \lim_{h \to 0^+} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^+} \frac{|h|}{h} = 1, \qquad \lim_{h \to 0^-} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1.
-\]
+$$
 Because the left and right limits do not agree, $f'(7)$ does not exist.
 :::
 
@@ -90,9 +90,9 @@ Part (c): Separately continuous on $\RR^2$ but not continuous at $(0, 0)$:
 
 ::: pf-step
 Define $f: \RR^2 \to \RR$ by:
-\[
+$$
 f(x, y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & (x, y) \neq (0, 0), \\ 0 & (x, y) = (0, 0). \end{cases}
-\]
+$$
 :::
 
 ::: pf-step
@@ -103,9 +103,9 @@ Thus $f$ is separately continuous in each variable.
 
 ::: pf-step
 Along the line $y = x$, for $x \neq 0$:
-\[
+$$
 f(x, x) = \frac{x^2}{x^2 + x^2} = \frac{1}{2}.
-\]
+$$
 Thus $\lim_{x \to 0} f(x, x) = \frac{1}{2} \neq 0 = f(0, 0)$, so $f$ is not continuous at $(0, 0)$.
 :::
 
@@ -140,16 +140,16 @@ Part (e): A real power series whose domain of convergence is $[0, 2]$:
 
 ::: pf-step
 Define the power series centered at $c = 1$:
-\[
+$$
 S(x) = \sum_{n=1}^\infty \frac{(x - 1)^n}{n^2}.
-\]
+$$
 :::
 
 ::: pf-step
 The radius of convergence $R$ satisfies:
-\[
+$$
 \frac{1}{R} = \lim_{n \to \infty} \left| \frac{1}{n^2} \right|^{1/n} = 1 \implies R = 1.
-\]
+$$
 Thus the series converges absolutely for $|x - 1| < 1$ (i.e. $x \in (0, 2)$) and diverges for $|x - 1| > 1$.
 :::
 
