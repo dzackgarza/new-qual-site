@@ -22,9 +22,9 @@ source:
   problems:
   - P-WESTOP04-01
   - id: E-HAT-1.1-11
-    comment: Problem 2; repeated exactly as Hatcher Exercise 1.1.11
+    comment: Problem 2
   - id: E-HAT-1.2-8
-    comment: Problem 3; repeated exactly as Hatcher Exercise 1.2.8
+    comment: Problem 3
   - P-WESTOP04-04
   - P-WESTOP04-05
   - P-WESTOP04-06
