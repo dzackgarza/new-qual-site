@@ -26,7 +26,7 @@ Classify groups of order 14. Why is there a group of order 7? Are all index-2 su
 :::
 
 ::: {.solution}
-Let $|G|=14=2\cdot7$.
+Let $G$ be a group of order $14=2\cdot7$.
 
 ::: pf
 
@@ -37,11 +37,11 @@ There is a unique subgroup $N$ of order $7$, and it is normal.
 ::: pf-proof
 
 Sylow gives
-\[
+$$
 n_7\mid2,
 \qquad
 n_7\equiv1\pmod7.
-\]
+$$
 Hence $n_7=1$. The subgroup exists by Sylow's first theorem and is cyclic because it has prime order.
 
 :::
@@ -63,9 +63,9 @@ If $H\le G$ has index $2$, there are exactly two left cosets and two right coset
 ::: pf-step
 
 Let $P$ be a Sylow $2$-subgroup. Then
-\[
+$$
 G\cong C_7\rtimes C_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -77,20 +77,20 @@ The subgroup $N\cong C_7$ is normal, $P\cong C_2$, and $N\cap P=1$. Their produc
 
 ::: pf-step
 
-There are exactly two isomorphism types of groups of order $14$.
+Up to isomorphism, the groups of order $14$ are exactly $\boxed{C_{14}}$ and $\boxed{D_{14}}$, the dihedral group of order $14$.
 
 ::: pf-proof
 
 The action in the semidirect product is a homomorphism
-\[
-C_2\to\operatorname{Aut}(C_7)\cong C_6.
-\]
-There are two possibilities for the image: trivial, or the unique subgroup of order $2$.
+$$
+C_2\to\Aut(C_7)\cong C_6.
+$$
+There are two possibilities: the trivial homomorphism, or the unique one whose image is the subgroup of order $2$.
 
 The trivial action gives
-\[
+$$
 C_7\times C_2\cong C_{14}.
-\]
+$$
 The nontrivial action is inversion on $C_7$ and gives the dihedral group of order $14$.
 
 :::
@@ -99,5 +99,4 @@ The nontrivial action is inversion on $C_7$ and gives the dihedral group of orde
 
 :::
 
-Thus the groups of order $14$ are exactly $C_{14}$ and the dihedral group $D_{14}$ (often denoted $D_7$ when the subscript records the polygon rather than the group order).
 :::
