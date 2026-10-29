@@ -276,6 +276,7 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "twice.md": wiki_md("# Twice\n\n[[DEF-PGROUP]]\n\n[[LEM-FRATTINI]]\n\n[[DEF-PGROUP]]\n", order=8),
         "yaml-title.md": wiki_md("# YAML title\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n", order=9),
         "citations.md": wiki_md("# Citations\n\nReferences: [@DF04], [@Smi96].\n", order=10),
+        "block-title.md": wiki_md('# Block title\n\n::: {.theorem title="Arzelà--Ascoli [@DF04]"}\nStatement.\n:::\n', order=12),
         "captions.md": wiki_md("# Captions\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n", order=11),
         "Algebra/index.md": wiki_md("# Algebra\n", order=2, title="Algebra"),
         "Algebra/groups/index.md": wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"),
@@ -567,8 +568,17 @@ def test_a_transcluded_card_is_named_by_its_yaml_title(wiki_site: Path) -> None:
     # The authored title qualifies the block's own label -- "Proof 1 (of a)" --
     # so it is bracketed and carries the class the label line is built from,
     # not the class a card's name uses.
-    assert '<p class="qual-section-qualifier">(of a)</p>' in card_page
-    assert '<p class="qual-section-qualifier">(of b)</p>' in card_page
+    assert '<div class="qual-section-qualifier">\n(of a)\n</div>' in card_page
+    assert '<div class="qual-section-qualifier">\n(of b)\n</div>' in card_page
+
+
+def test_a_block_title_is_read_like_the_body(wiki_site: Path) -> None:
+    """Smart punctuation and citeproc reach a `title=` qualifier as they reach prose."""
+    page = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "block-title.html").read_text()
+    qualifier = page.split('<div class="qual-section-qualifier">', 1)[1].split("</div>", 1)[0]
+    assert "Arzelà–Ascoli" in qualifier
+    assert "[@" not in qualifier
+    assert "[DuFo04]" in qualifier
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(wiki_site: Path) -> None:

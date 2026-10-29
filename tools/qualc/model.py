@@ -506,7 +506,9 @@ NON_SEMANTIC_CLASSES = {"foldopen"}
 # the prose repos is in one of them. Anything else is a typo or an environment
 # nobody has classified, and both must stop the build rather than become prose.
 # Structured-proof classes belong to the Lamport filter's grammar (lamport.py).
-KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES | LAMPORT_CLASSES
+# The block that `typeset_block_titles` makes of an authored `title=`.
+QUALIFIER_CLASS = "qual-section-qualifier"
+KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES | LAMPORT_CLASSES | {QUALIFIER_CLASS}
 
 
 # A fence line that Pandoc does not read as a div silently changes the tree:
@@ -1062,6 +1064,51 @@ def drop_citeproc_metadata(document: pf.Doc) -> pf.Doc:
     return document
 
 
+# A hint or solution title names its disclosure's summary, which is plain text.
+QUALIFIED_KINDS = set(DIV_CLASS_TO_KIND.values()) - {"hint", "solution"}
+
+
+def _titled_blocks(document: pf.Doc) -> list[pf.Div]:
+    found: list[pf.Div] = []
+
+    def visit(element: pf.Element, doc: pf.Doc) -> None:
+        del doc
+        if isinstance(element, pf.Div) and element.attributes.get("title", "").strip():
+            kinds = [DIV_CLASS_TO_KIND[c] for c in element.classes if c in DIV_CLASS_TO_KIND]
+            if kinds and kinds[0] in QUALIFIED_KINDS:
+                found.append(element)
+
+    document.walk(visit)
+    return found
+
+
+def typeset_block_titles(pandoc: PandocServer, outputs: list[str], citations: Citations) -> list[str]:
+    """Read every block `title=` as Markdown, with the body's citations and smart punctuation.
+
+    The title is a qualifier on the block's label: `(Fubini's theorem [@SS05])`.
+    It is moved out of the attribute into a leading qualifier block, so the
+    renderer shows what Pandoc and citeproc made of it rather than its source.
+    """
+    documents = [from_ast(output) for output in outputs]
+    blocks = [_titled_blocks(document) for document in documents]
+    titles = list(dict.fromkeys(div.attributes["title"].strip() for found in blocks for div in found))
+    if not titles:
+        return outputs
+    read: dict[str, list[pf.Inline]] = {}
+    for title, result in zip(titles, pandoc.read_markdown(titles, MARKDOWN, citations), strict=True):
+        if isinstance(result, PandocFailure):
+            raise ValueError(f"block title unreadable: {title!r}: {result.error}")
+        content = [block for block in from_ast(result.output).content if not (isinstance(block, pf.Div) and block.identifier == "refs")]
+        if len(content) != 1 or not isinstance(content[0], (pf.Para, pf.Plain)):
+            raise ValueError(f"block title parsed as block structure: {title!r}")
+        read[title] = list(content[0].content)
+    for found in blocks:
+        for div in found:
+            title = div.attributes.pop("title").strip()
+            div.content.insert(0, pf.Div(pf.Plain(pf.Str("("), *read[title], pf.Str(")")), classes=[QUALIFIER_CLASS]))
+    return [to_json(document) for document in documents]
+
+
 def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
     try:
         document = drop_citeproc_metadata(from_ast(source)).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims).walk(typeset_link_dashes)
@@ -1114,7 +1161,7 @@ def parse_cards_with(
             errors.append(padded)
         processable.append((path, card, result.output))
 
-    sources = [source for _, _, source in processable]
+    sources = typeset_block_titles(pandoc, [source for _, _, source in processable], citations)
     if len(sources) >= 1_000:
         with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
             normalized = list(executor.map(_normalize_ast, sources, chunksize=64))

@@ -175,28 +175,6 @@ def _owned_class(class_name: str) -> str:
     return class_name
 
 
-# A `title=` on a hint or solution is written into the summary by `_reveal`
-# rather than into the body, so it does not land below the label inside the
-# `<details>`.
-TITLED_KINDS = set(DIV_CLASS_TO_KIND.values()) - {"hint", "solution"}
-
-
-def _title_html(title: str) -> str:
-    """The authored `title=` as a qualifier on the block's own label.
-
-    It is not a heading and not the block's name: it says which part or which
-    case this block treats, so a reader can open the proof of (b) without
-    reading the proof of (a). That makes `Proof 3 (of b)` one heading line; set
-    as a bold line under the label it read as the proof's first sentence.
-
-    It goes in the body and not in a CSS `content: attr(...)` because the titles
-    carry mathematics -- `$\\implies$`, `$J(R) = \\mathfrak N(R)$` -- and
-    `attr()` would print that as its source. In the body MathJax typesets it
-    like any other `$...$` on the page.
-    """
-    return f'<p class="qual-section-qualifier">({html.escape(typeset_dashes(title))})</p>'
-
-
 def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
     if isinstance(el, pf.Div):
         owned = [c for c in el.classes if c in OWNED]
@@ -205,9 +183,6 @@ def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
             kind = DIV_CLASS_TO_KIND[owned[0]]
             el.classes.append(SECTION_CLASS)
             el.attributes["data-label"] = kind.title()
-            title = el.attributes["title"].strip() if "title" in el.attributes else ""
-            if title and kind in TITLED_KINDS:
-                el.content.insert(0, pf.RawBlock(_title_html(title), format="html"))
     return el
 
 
@@ -1103,9 +1078,6 @@ def _rename_json(node: object, number: str = "") -> None:
                 kind = DIV_CLASS_TO_KIND[owned[0]]
                 attr[1].append(SECTION_CLASS)
                 attr[2].append(["data-label", f"{kind.title()}{number}"])
-                title = next((value.strip() for key, value in attr[2] if key == "title"), "")
-                if title and kind in TITLED_KINDS:
-                    node["c"][1].insert(0, {"t": "RawBlock", "c": ["html", _title_html(title)]})
         _rename_json(node.get("c"))
 
 

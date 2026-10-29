@@ -32,6 +32,7 @@ from .model import (
     load_front_matter,
     reject_extraction_residue,
     to_json,
+    typeset_block_titles,
     typeset_dashes,
     typeset_link_dashes,
     unlist_step_claims,
@@ -326,7 +327,12 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                 errors.append(padded)
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
             document = (
-                from_ast(result.output).walk(drop_path_captions).walk(unlist_step_claims).walk(typeset_link_dashes).walk(anchor_block_markers).walk(unpack_cross_references)
+                from_ast(typeset_block_titles(pandoc, [result.output], citations)[0])
+                .walk(drop_path_captions)
+                .walk(unlist_step_claims)
+                .walk(typeset_link_dashes)
+                .walk(anchor_block_markers)
+                .walk(unpack_cross_references)
             )
             drop_citeproc_metadata(document)
             order = _order(metadata, path)
