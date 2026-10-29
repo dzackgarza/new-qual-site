@@ -31,7 +31,7 @@ It holds for a \dfn{very general} hypersurface of degree $d$ if it holds for eve
 
 ::: {.remark}
 Over an uncountable algebraically closed field, a countable union of proper closed subsets does not cover $\PP^N$, so a very general hypersurface exists.
-Over $\overline{\mathbb{Q}}$ or $\overline{\mathbb{F}}_p$ the countably many hypersurfaces defined over the field can exhaust the parameter space, and "very general" can be vacuous.
+Over a countable field such as $\overline{\QQ}$ or $\overline{\FF}_p$, the parameter space $\PP^N$ is the countable union of its points, each a proper closed subset, so "very general" is vacuous.
 
 Smoothness is a general property: the singular hypersurfaces form the discriminant hypersurface in $\PP^N$.
 A property such as $\Pic(X) = \ZZ \cdot \OO_X(1)$ for a surface $X \subseteq \PP^3$ of degree $d \geq 4$ holds only for a very general surface: the Noether--Lefschetz locus where the Picard number jumps is a countable union of proper closed subsets.
