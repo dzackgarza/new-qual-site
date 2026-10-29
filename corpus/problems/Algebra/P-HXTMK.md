@@ -15,151 +15,64 @@ review: draft
 ---
 
 ::: {.problem}
-1. Let $A\in M_6(\QQ)$ have minimal polynomial
-\[
+(a) Let $A\in M_6(\QQ)$ have minimal polynomial
+$$
 m_A=(x-1)(x^2+1)^2.
-\]
+$$
 Determine all possible rational canonical forms of $A$.
 
-2. Let $B\in M_{10}(\QQ)$ have minimal polynomial
-\[
+(b) Let $B\in M_{10}(\QQ)$ have minimal polynomial
+$$
 m_B=(x^2+1)^2(x^3+1).
-\]
+$$
 Determine all possible rational canonical forms of $B$.
 :::
 
 ::: {.solution}
-Recall that the invariant factors
-\[
-d_1\mid d_2\mid\cdots\mid d_t
-\]
-satisfy
-\[
-\chi_A=\prod_i d_i,
-\qquad
-m_A=d_t.
-\]
-Equivalently, one may list the elementary divisors and align the powers of each irreducible factor from the right.
+Write $C(g)$ for the companion matrix of a monic polynomial $g$.
+Recall that the invariant factors $e_1\mid e_2\mid\cdots\mid e_t$ of a matrix $M$ satisfy $\chi_M=\prod_i e_i$ and $m_M=e_t$, and that $M$ has rational canonical form $C(e_1)\oplus\cdots\oplus C(e_t)$.
+The elementary divisors are the prime-power factors of the $e_i$; their irreducible factors are those of $m_M$, the largest power of each irreducible factor is its power in $m_M$, and the invariant factors are recovered by aligning the powers of each irreducible factor from the right.
+Over $\QQ$ the polynomials $x-1$, $x+1$, $x^2+1$ and $x^2-x+1$ are irreducible, and $x^3+1=(x+1)(x^2-x+1)$.
 
 ::: pf
 
 ::: pf-step
-
-The $6\times6$ case is unique.
-Write
-\[
-a=x-1,
-\qquad
-b=x^2+1.
-\]
-The minimal polynomial $ab^2$ already contributes degree
-\[
-1+4=5.
-\]
-Since the characteristic polynomial has degree $6$ and has the same irreducible factors as the minimal polynomial, the only possible additional elementary divisor has degree $1$, namely another copy of $a$.
-Thus the elementary divisors are
-\[
-a,\ a,\ b^2.
-\]
-The invariant factors are therefore
-\[
-d_1=a,
-\qquad
-d_2=ab^2.
-\]
-Hence there is exactly one rational canonical form:
-\[
-\boxed{C(x-1)\oplus C\bigl((x-1)(x^2+1)^2\bigr)}.
-\]
-
-:::
-
-::: pf-step
-
-The $10\times10$ case has three possibilities.
-Factor
-\[
-x^3+1=(x+1)(x^2-x+1).
-\]
-Put
-\[
-b=x^2+1,
-\qquad c=x+1,
-\qquad d=x^2-x+1.
-\]
-Then
-\[
-m_B=b^2cd
-\]
-has degree $4+1+2=7$. We must add elementary divisors of total degree $3$, without introducing any new irreducible factor or increasing an exponent beyond those in the minimal polynomial.
-The only possibilities are:
+(a) The only rational canonical form is $\boxed{C(x-1)\oplus C\bigl((x-1)(x^2+1)^2\bigr)}$.
 
 ::: pf-proof
-
-::: pf-step
-
-Add $c$ and $d$.
-The elementary divisors are
-\[
-b^2,\ c,\ c,\ d,\ d.
-\]
-Hence
-\[
-d_1=cd=x^3+1,
-\qquad
-d_2=b^2cd=m_B,
-\]
-and
-\[
-\boxed{C(x^3+1)\oplus C(m_B)}.
-\]
+Write $a=x-1$ and $b=x^2+1$.
+The elementary divisors include $a$ and $b^2$, of total degree $1+4=5$, and every further elementary divisor is one of $a$, $b$, $b^2$.
+The remaining degree is $1$, so the only further elementary divisor is $a$.
+Thus the elementary divisors are $a,a,b^2$, and the invariant factors are $e_1=a$ and $e_2=ab^2$.
+:::
 
 :::
 
 ::: pf-step
+(b) The rational canonical forms are exactly
+$$
+\boxed{
+\begin{gathered}
+C(x^3+1)\oplus C(m_B),\qquad
+C\bigl((x^2+1)(x+1)\bigr)\oplus C(m_B),\\
+C(x+1)\oplus C(x+1)\oplus C(x+1)\oplus C(m_B).
+\end{gathered}}
+$$
 
-Add $c$ and $b$.
-The elementary divisors are
-\[
-b,\ b^2,\ c,\ c,\ d.
-\]
-Hence
-\[
-d_1=bc=(x^2+1)(x+1),
-\qquad
-d_2=b^2cd=m_B,
-\]
-and
-\[
-\boxed{C\bigl((x^2+1)(x+1)\bigr)\oplus C(m_B)}.
-\]
+::: pf-proof
+Write $b=x^2+1$, $c=x+1$ and $r=x^2-x+1$, so $m_B=b^2cr$ has degree $7$.
+The elementary divisors include $b^2$, $c$ and $r$, and every further elementary divisor is one of $b$, $b^2$, $c$, $r$, of degrees $2$, $4$, $1$, $2$.
+The further ones have total degree $10-7=3$, so they are $\{c,r\}$, $\{c,b\}$ or $\{c,c,c\}$.
 
-:::
+- Further divisors $c,r$: the elementary divisors are $b^2,c,c,r,r$, so $e_1=cr=x^3+1$ and $e_2=b^2cr=m_B$.
 
-::: pf-step
+- Further divisors $c,b$: the elementary divisors are $b,b^2,c,c,r$, so $e_1=bc=(x^2+1)(x+1)$ and $e_2=m_B$.
 
-Add three further copies of $c$.
-
+- Further divisors $c,c,c$: the elementary divisors are $b^2,c,c,c,c,r$, so $e_1=e_2=e_3=c$ and $e_4=m_B$.
 :::
 
 :::
 
 :::
 
-:::
-
-The elementary divisors are
-\[
-b^2,\ c,\ c,\ c,\ c,\ d.
-\]
-The invariant factors are
-\[
-d_1=c,\qquad d_2=c,\qquad d_3=c,\qquad d_4=b^2cd=m_B.
-\]
-Thus
-\[
-\boxed{C(x+1)\oplus C(x+1)\oplus C(x+1)\oplus C(m_B)}.
-\]
-
-These three exhaust the degree-$3$ ways to augment the elementary divisors while preserving the given minimal polynomial.
 :::
