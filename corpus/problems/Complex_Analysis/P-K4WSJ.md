@@ -59,7 +59,7 @@ If $a,b,c,d \in \RR$, then $\overline{T(z)} = \frac{\bar a \bar z + \bar b}{\bar
 
 :::
 
-::: {.pf-step #c-implies-a}
+::: pf-step
 (c) $\Rightarrow$ (a).
 
 ::: pf-proof
