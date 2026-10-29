@@ -227,7 +227,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-2LX63.md` | `0c59b5435ecdbcc0ac092b53b46fb7bfd4c18f31` | `0c59b5435ecdbcc0ac092b53b46fb7bfd4c18f31` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-2M2P2.md` | `7f7fcdebeccddff5d459460628b4782c6e1123bc` | `7f7fcdebeccddff5d459460628b4782c6e1123bc` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-2TASE.md` | `3781cf590deb5a1cacc99e3009fd2e79a8eb5a0c` | `3781cf590deb5a1cacc99e3009fd2e79a8eb5a0c` | Read; retained |
-| [x] | `corpus/problems/Algebra/P-2UD52.md` | `8980a7df00198b858830c126f21083c840509edf` | `8980a7df00198b858830c126f21083c840509edf` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-2VG2D.md` | `ce6bf44a67d83e5bef16300fa45257305485ac92` | `ce6bf44a67d83e5bef16300fa45257305485ac92` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-2WRPV.md` | `13526167f7c42027e7622542bba2aa0859b4b6c6` | `13526167f7c42027e7622542bba2aa0859b4b6c6` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-2XYZ3.md` | `e9a172c0334beb5adb9985bdc8410f8dcbe3aecc` | `e9a172c0334beb5adb9985bdc8410f8dcbe3aecc` | Read; retained |

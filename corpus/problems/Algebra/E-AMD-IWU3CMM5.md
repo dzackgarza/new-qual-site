@@ -10,6 +10,7 @@ classification:
   - Classification
   - Sylow Theory
   - Semidirect Products
+  - Simple Groups
 relations: []
 review: draft
 audit:
@@ -23,13 +24,17 @@ audit:
 ---
 
 ::: {.exercise}
-Analyze groups of order $pq$ with $q<p$ prime.
+Let $G$ be a group of order $pq$, where $p$ and $q$ are primes with $q<p$.
 
 (a) Show that $G$ is never simple.
 
 (b) Show that if $q\nmid p-1$, then $G$ is cyclic.
 
 (c) Classify $G$ when $q\mid p-1$.
+:::
+
+::: {.hint}
+Consider the cases when $q$ does or does not divide $p-1$.
 :::
 
 ::: {.solution}
@@ -95,4 +100,13 @@ with the latter the unique nonabelian isomorphism type.
 ::: {.remark title="Variations"}
 Part (a) is often posed in its stronger form: a group of order $pq$ with primes $q<p$ has a unique, hence normal, Sylow $p$-subgroup of order $p$.
 The first step of the proof shows exactly this.
+
+Part (b) is also posed with the conclusion that $G$ is abelian: a cyclic group is abelian, and conversely an abelian group of order $pq$ is $C_p\times C_q\cong C_{pq}$.
+Part (c) is also posed as asking only for the possibilities, without justification: they are $C_{pq}$ and the nonabelian $C_p\rtimes C_q$.
+:::
+
+::: {.remark}
+Part (b) also follows from Sylow counting without semidirect products.
+The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv1\pmod q$; if $q\nmid p-1$ then $n_q\neq p$, so $n_q=1$.
+Then the Sylow $p$-subgroup $P$ and the Sylow $q$-subgroup $Q$ are both normal with $P\cap Q=1$ and $PQ=G$, so normal subgroups with trivial intersection commute elementwise and $G\cong P\times Q\cong C_{pq}$.
 :::

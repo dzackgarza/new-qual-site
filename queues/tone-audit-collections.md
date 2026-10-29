@@ -212,7 +212,6 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-U2KLF.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-ZSFKA.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2009-pp-1-2/P-3GKGV.md
-- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2009-pp-1-2/P-7B2CW.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2009-pp-1-2/P-C2EQN.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2009-pp-1-2/P-C6SRA.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2009-pp-1-2/P-CSEAZ.md
