@@ -170,6 +170,7 @@ sections:
       - ref: T-RA-WORKSHOP-D7-6-4
       - ref: T-RA-WORKSHOP-D7-6-5
       - ref: T-RA-WORKSHOP-D7-6-7
+      - ref: T-3QNBQ
   - slug: topology-workshop-packets
     title: Topology workshop packets
     parent: topology
