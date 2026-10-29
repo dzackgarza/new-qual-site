@@ -17,7 +17,6 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
----
 - event: statement-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
