@@ -31,3 +31,7 @@ If $X$ is complete, then $E$ is complete if and only if $E$ is closed in $X$.
 In $\RR^n$ with the Euclidean metric, $E$ is totally bounded if and only if $E$ is [[D-2GCTV|bounded]]; combined with the theorem, this gives the Heine--Borel theorem.
 In a general metric space, a closed bounded subset need not be compact: in an infinite set with the discrete metric $d(x,y)=1$ for $x\neq y$, the whole space is closed and bounded but not totally bounded.
 :::
+
+::: {.remark title="Variations"}
+The case $E=X$ of (b) $\iff$ (c): a metric space is compact if and only if every sequence in it has a convergent subsequence.
+:::

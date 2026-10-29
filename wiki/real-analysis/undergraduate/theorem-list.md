@@ -19,8 +19,6 @@ title: Theorems
 
 [[T-O4UD3]]
 
-[[PR-25GM2]]
-
 [[PR-FKJCO]]
 
 [[T-QPTHZ]]

@@ -16,8 +16,6 @@ topics:
 
 [[T-YOZX6]]
 
-[[PR-25GM2]]
-
 ::: {.proof title="Compact if and only if sequentially compact, for metric spaces"}
 Let $(X,d)$ be a metric space.
 
