@@ -52,11 +52,7 @@ $$
 
 [[PR-76BDN]]
 
-::: {.remark title="Maximal and prime ideals through quotients"}
-For an ideal $I$ of a commutative ring $R$,
-$$
-I \text{ maximal} \iff R/I \text{ is a field}, \qquad I \text{ prime} \iff R/I \text{ is an integral domain}.
-$$
+::: {.remark}
 Every field is an integral domain, so every maximal ideal is prime, and $\mspec R \subseteq \Spec R$.
 :::
 
