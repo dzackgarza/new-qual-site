@@ -105,7 +105,8 @@ def collections_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
     local_pdf.write_bytes(b"%PDF-1.4\n%%EOF\n")
     local_extraction = local_pdf.parent / "extracted" / "fixture-paper.md"
     local_extraction.parent.mkdir()
-    local_extraction.write_text("A checked-in extraction of the fixture paper.\n")
+    local_extraction.write_text("An older bulk extraction of the fixture paper.\n")
+    local_pdf.with_name("fixture-paper_extracted.md").write_text("The extraction beside the fixture paper.\n")
     _edit(
         corpus / "SRC-UGA-FIX.md",
         "review: draft\n",
@@ -434,14 +435,16 @@ def test_collection_page_renders_provenance_links(collections_site: Path) -> Non
     assert 'href="https://www.math.uga.edu/past-qualifying-exams-1" aria-label="past-qualifying-exams-1: Source"' in exam_html
     assert 'href="https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" aria-label="8000e: PDF source"' in exam_html
     assert 'href="../assets/attachments/fixture-paper.pdf" aria-label="fixture-paper: PDF source"' in exam_html
-    assert 'href="../assets/attachments/extracted/fixture-paper.md" aria-label="fixture-paper: Markdown extraction"' in exam_html
+    # The extraction beside the PDF is the chip's target, not the bulk extracted/ copy.
+    assert 'href="../assets/attachments/fixture-paper_extracted.md" aria-label="fixture-paper: Markdown extraction"' in exam_html
+    assert "extracted/fixture-paper.md" not in exam_html
     # Several documents: each chip group is preceded by its document's name, once.
     assert exam_html.count('<span class="page-source-document">fixture-paper</span>') == 1
     assert ">assets/attachments/fixture-paper.pdf<" not in exam_html
     local_pdf = work / "assets" / "attachments" / "fixture-paper.pdf"
     published = work / "build" / "quarto" / "_site" / "assets" / "attachments"
     assert (published / "fixture-paper.pdf").samefile(local_pdf)
-    assert (published / "extracted" / "fixture-paper.md").samefile(local_pdf.parent / "extracted" / "fixture-paper.md")
+    assert (published / "fixture-paper_extracted.md").samefile(local_pdf.with_name("fixture-paper_extracted.md"))
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select href from collection_provenance where collection_id='SRC-UGA-FIX' order by ordinal")] == [
         "https://www.math.uga.edu/past-qualifying-exams-1",

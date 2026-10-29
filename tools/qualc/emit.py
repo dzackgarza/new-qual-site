@@ -1552,7 +1552,8 @@ def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
 
     This is a filesystem fact, not a semantic inference. External URLs have no
     repository sibling. Local PDFs use one of the two established extraction
-    spellings: `extracted/<stem>.md` or `<stem>_extracted.md`.
+    spellings. `<stem>_extracted.md` beside the PDF is the per-source MinerU or
+    Mistral extraction and wins; `extracted/<stem>.md` is the older bulk pass.
     """
     if href.startswith(("http://", "https://")):
         return None
@@ -1560,8 +1561,8 @@ def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
     if source.suffix.lower() != ".pdf":
         return None
     candidates = (
-        source.parent / "extracted" / f"{source.stem}.md",
         source.with_name(f"{source.stem}_extracted.md"),
+        source.parent / "extracted" / f"{source.stem}.md",
     )
     for candidate in candidates:
         if candidate.is_file() and candidate.stat().st_size:
