@@ -28,6 +28,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Compared with Fields and Galois Theory (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF4, whose solution repeats this argument."
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints p(x) = x^2 - 4x^2 + 2; the statement reads x^4 - 4x^2 + 2.
 ---
 
 ::: {.problem}
@@ -145,10 +149,4 @@ $\mathbb Q\subsetneq L\subsetneq K$ are strict.
 :::
 
 :::
-:::
-
-::: {.remark}
-The source prints $p(x)=x^2-4x^2+2$. This is a misprint for
-$x^4-4x^2+2$: at $x=\sqrt{2+\sqrt2}$ the printed expression
-evaluates to $-4-3\sqrt2\ne0$.
 :::
