@@ -15,14 +15,14 @@ review: draft
 ::: {.problem}
 For $z_1,z_2\in\CC$:
 (a) prove
-\[
+$$
 |1-\bar z_1z_2|^2-|z_1-z_2|^2
 =(1-|z_1|^2)(1-|z_2|^2);
-\]
+$$
 (b) deduce that if $|z_1|,|z_2|<1$, then
-\[
+$$
 \left|\frac{z_1-z_2}{1-\bar z_1z_2}\right|<1;
-\]
+$$
 (c) if $z_1\ne z_2$, prove that the last modulus equals $1$ if and only
 if $|z_1|=1$ or $|z_2|=1$.
 :::
