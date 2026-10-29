@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ALW6
 kind: problem
-title: $\mathrm{Gal}(\QQ(\sqrt{2},\sqrt{3})/\QQ)$
+title: Galois group of $\QQ(\sqrt{2},\sqrt{3})/\QQ$
 classification:
   areas:
   - algebra
@@ -21,32 +21,32 @@ audit:
 ---
 
 ::: {.problem}
-What is the Galois group of $\mathbb{Q}(\sqrt{2}, \sqrt{3}) / \mathbb{Q}$?
+What is the Galois group of $\QQ(\sqrt{2}, \sqrt{3}) / \QQ$?
 :::
 
 ::: {.solution}
 Let
-\[
-K=\mathbb Q(\sqrt2,\sqrt3).
-\]
-Since $\sqrt3\notin\mathbb Q(\sqrt2)$,
-\[
-[K:\mathbb Q]=4.
-\]
+$$
+K=\QQ(\sqrt2,\sqrt3).
+$$
+Since $\sqrt3\notin\QQ(\sqrt2)$,
+$$
+[K:\QQ]=4.
+$$
 Moreover, $K$ is the splitting field of
-\[
+$$
 (x^2-2)(x^2-3),
-\]
-so $K/\mathbb Q$ is Galois.
+$$
+so $K/\QQ$ is Galois.
 
-Every $\mathbb Q$-automorphism independently chooses the signs of $\sqrt2$ and $\sqrt3$:
-\[
+Every $\QQ$-automorphism independently chooses the signs of $\sqrt2$ and $\sqrt3$:
+$$
 \sqrt2\mapsto\pm\sqrt2,
 \qquad
 \sqrt3\mapsto\pm\sqrt3.
-\]
+$$
 All four sign choices occur, giving four automorphisms. The three nonidentity ones all have order $2$. Therefore
-\[
-\boxed{\operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2.}
-\]
+$$
+\boxed{\Gal(K/\QQ)\cong C_2\times C_2.}
+$$
 :::
