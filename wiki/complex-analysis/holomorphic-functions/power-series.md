@@ -89,17 +89,18 @@ By the Weierstrass $M\dash$test, the series converges uniformly on $\abs z\leq R
 [[FT-3ZL25]]
 
 ::: {.proof}
-Let $A_n \coloneqq \sum_{k=1}^n a_k$ and $A_0\coloneqq 0$, and choose $M$ with $\abs{A_n}\leq M$ for all $n$.
-Summation by parts ([[PR-2MTPE]] with $m=1$) gives
+Let $B_n \coloneqq \sum_{k=1}^n b_k$ and $B_0\coloneqq 0$, and choose $M$ with $\abs{B_n}\leq M$ for all $n$.
+Since $a_n$ decreases to $0$, $a_n\geq 0$ for all $n$.
+Summation by parts ([[PR-2MTPE]] with $m=1$ and the roles of the two sequences exchanged) gives
 $$
-\sum_{k=1}^n a_k b_k = A_n b_n + \sum_{k=1}^{n-1} A_k (b_k - b_{k+1})
+\sum_{k=1}^n a_k b_k = a_n B_n + \sum_{k=1}^{n-1} B_k (a_k - a_{k+1})
 .$$
-Since $\abs{A_n b_n}\leq M b_n \to 0$, the first term tends to $0$.
-Since $b_k$ is decreasing, $b_k - b_{k+1}\geq 0$, so
+Since $\abs{a_n B_n}\leq M a_n \to 0$, the first term tends to $0$.
+Since $a_k$ is decreasing, $a_k - a_{k+1}\geq 0$, so
 $$
-\sum_{k=1}^{n-1} \abs{A_k (b_k - b_{k+1})} \leq M\sum_{k=1}^{n-1}(b_k - b_{k+1}) = M(b_1 - b_n) \leq M b_1
+\sum_{k=1}^{n-1} \abs{B_k (a_k - a_{k+1})} \leq M\sum_{k=1}^{n-1}(a_k - a_{k+1}) = M(a_1 - a_n) \leq M a_1
 ,$$
-and the series $\sum_{k\geq 1} A_k(b_k - b_{k+1})$ converges absolutely.
+and the series $\sum_{k\geq 1} B_k(a_k - a_{k+1})$ converges absolutely.
 Hence the partial sums $\sum_{k=1}^n a_k b_k$ converge.
 
 :::
