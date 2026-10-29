@@ -64,6 +64,13 @@ For $a \geq 2$ the surface is not Fano: $-K \cdot D_2 = 2 - a \leq 0$.
 Every $\FF_a$ is smooth, for all $a \geq 0$, since each maximal cone has determinant $\pm 1$.
 :::
 
+::: {.example title="The total space of $\OO_{\PP^1}(n)$"}
+For $n\in\ZZ$, the fan in $\ZZ^2$ with the two cones $\Cone((1,0),(0,-1))$ and $\Cone((0,-1),(-1,n))$ gives the total space of $\OO_{\PP^1}(n)$.
+The ray $(0,-1)$ gives the zero section $D\cong\PP^1$, and projection $\ZZ^2\to\ZZ$ onto the first coordinate gives the bundle map to $\PP^1$.
+The outer rays satisfy $(1,0)+(-1,n)=-n\cdot(0,-1)$, so $D^2=n$, the degree of the normal bundle.
+In the fan of $\FF_n$ above these are the two cones that contain $u_4$. The two cones that contain $u_2$ give the total space of $\OO_{\PP^1}(-n)$, a neighbourhood of the negative section $D_2$.
+:::
+
 ::: {.example title="The Segre embedding of $\FF_0$"}
 The Segre embedding $\PP^1 \times \PP^1 \to \PP^3$, $([a:b],[c:d]) \mapsto [ac : ad : bc : bd]$, has image $V(xw - yz)$.
 Its four monomials have exponent vectors $(1,0,1,0)$, $(1,0,0,1)$, $(0,1,1,0)$, $(0,1,0,1)$ in the variables $a, b, c, d$, the vertices of a square, and the affine cone over the image is the affine toric variety $V(xw - yz) \subseteq \CC^4$ of the cone over that square.

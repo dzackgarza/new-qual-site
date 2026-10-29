@@ -36,6 +36,13 @@ K_X^2 = \Big( \sum_i D_i \Big)^2 = \sum_i D_i^2 + 2 \sum_i D_i \cdot D_{i+1} = -
 $$
 :::
 
+::: {.remark title="The sum rule $\sum_i a_i=3d-12$"}
+The sum rule used in the proof does not need Noether's formula [@Ful93, §2.5].
+By the classification in [[T-TORSURF]], $X$ is $\PP^2$ or a Hirzebruch surface $\FF_a$, or is obtained from one of these by blowups at torus-fixed points.
+For $\PP^2$ the $a_i$ are $-1,-1,-1$, with sum $-3=3\cdot3-12$. For $\FF_a$ they are $a,0,-a,0$, with sum $0=3\cdot4-12$.
+A blowup at the fixed point of the cone spanned by $v_i,v_{i+1}$ inserts the ray $w=v_i+v_{i+1}$. The new ray has coefficient $1$, since $v_i+v_{i+1}=1\cdot w$. Each of the two neighbours gains $1$, since $v_{i-1}+w=(a_i+1)v_i$ and $w+v_{i+2}=(a_{i+1}+1)v_{i+1}$. So $d$ grows by $1$ and $\sum_i a_i$ grows by $3$.
+:::
+
 ::: {.remark}
 Over $k=\CC$, the same equality follows from Noether's formula. A smooth complete toric surface is rational, so $\chi(\OO_X)=1$. Its torus-orbit decomposition has one zero-dimensional orbit for each maximal cone and positive-dimensional orbits of Euler characteristic zero, hence
 $$

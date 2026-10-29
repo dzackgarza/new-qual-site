@@ -69,5 +69,6 @@ A reflexive polytope may define a singular Gorenstein toric Fano variety under t
 ::: {.example title="Positivity on $\PP^n$ and $\FF_m$"}
 On $\PP^n$ with $D = \sum a_i D_i$, base point free means $\sum a_i \geq 0$ and ample means $\sum a_i > 0$.
 
-On $\FF_m$ with rays labelled as $D_1, \ldots, D_4$ in cyclic order, $\Pic(\FF_m) = \generators{D_1, D_4}$, and $D = a D_1 + b D_4$ is ample exactly when $a > 0$ and $b > 0$.
+On $\FF_m$ label the rays as in [[FE-TORHIRZ]]: $u_1=(1,0)$, $u_2=(0,1)$, $u_3=(-1,m)$, $u_4=(0,-1)$. Then $D_1=F$ is a fibre, $S=D_2$ is the negative section, and $D_4\sim S+mF$. Since $F$ and $S$ form a basis of $\Pic(\FF_m)$, so do $F$ and $S+mF$, and $\Pic(\FF_m) = \generators{D_1, D_4}$.
+For $D = a D_1 + b D_4 = (a+mb)F+bS$, one has $D\cdot F=b$ and $D\cdot S=a$. The curves $F$ and $S$ span the cone of curves, so $D = a D_1 + b D_4$ is ample exactly when $a > 0$ and $b > 0$.
 :::

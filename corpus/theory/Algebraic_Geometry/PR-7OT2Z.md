@@ -23,7 +23,7 @@ prompts:
 - Show that the maximal ideals of $k[x_1,\ldots,x_n]$ are the ideals $(x_1-a_1,\ldots,x_n-a_n)$ when $k$ is algebraically closed, and that this fails otherwise.
 - Show that every finitely generated $k$-algebra that is a domain is the coordinate ring of an affine variety.
 - Show that $I(V)$ and $\sqrt{I}$ are ideals, and that $V$ and $I$ are inclusion-reversing.
-- Show that a set of $d \leq 2n$ points of $\AA^n_k$ in linear general position is cut out by quadratic polynomials.
+- Show that a set of $d \leq 2n$ points of $\AA^n_k$, no $n+1$ of which lie on an affine hyperplane, is the common zero set of polynomials of degree at most $2$.
 - Show that $V(y - x^2) \cong \AA^1$ and $V(y - x^2, z - x^3) \cong \AA^1$ as affine varieties.
 - Show that the nodal cubic $V(y^2 - x^3 - x^2)$ has the parametrization $t \mapsto (t^2 - 1, t^3 - t)$.
 ---
@@ -78,4 +78,20 @@ $$
 k[X]\coloneqq k[x_1,\ldots,x_n]/I(X).
 $$
 The closed subsets of $X$ correspond contravariantly to the radical ideals of $k[X]$, and $X$ is irreducible exactly when $k[X]$ is a domain.
+:::
+
+::: {.remark title="The Zariski topology and the maps $V$ and $I$"}
+$V(1)=\emptyset$ and $V(0)=\AA^n$. By the operations above, finite unions and arbitrary intersections of algebraic sets are algebraic, so the algebraic sets are the closed sets of a topology [@Har10a, Prop. I.1.1].
+$I(Y)$ is an ideal: a sum of polynomials that vanish on $Y$ vanishes on $Y$, and so does every multiple of one. $\sqrt{J}$ is an ideal: if $f^r,g^s\in J$, then every term of the binomial expansion of $(f+g)^{r+s-1}$ is in $J$.
+If $J_1\subseteq J_2$ then $V(J_1)\supseteq V(J_2)$, and if $Y_1\subseteq Y_2$ then $I(Y_1)\supseteq I(Y_2)$ [@Har10a, Prop. I.1.2].
+:::
+
+::: {.remark title="Points cut out by quadrics"}
+Let $\Gamma\subseteq\AA^n_k$ be $d\leq 2n$ points, no $n+1$ of which lie on an affine hyperplane. Then $\Gamma$ is the zero set of the polynomials of degree at most $2$ that vanish on it.
+In $\PP^n\supseteq\AA^n$ these points are in linear general position, and $d\leq 2n$ points in linear general position in $\PP^n$ are cut out by quadrics [@Har10b, Lecture 1]. For $q\notin\Gamma$, split $\Gamma$ into two sets of at most $n$ points such that the span of neither set contains $q$. The product of two hyperplanes, one through each set and neither through $q$, is a quadric that contains $\Gamma$ and not $q$. Dehomogenizing gives the affine statement.
+:::
+
+::: {.example title="Two curves isomorphic to $\AA^1$, and the nodal cubic"}
+The maps $t\mapsto(t,t^2)$ and $(x,y)\mapsto x$ are mutually inverse morphisms between $\AA^1$ and $V(y-x^2)$; on coordinate rings, $k[x,y]/(y-x^2)\cong k[x]$. Likewise $t\mapsto(t,t^2,t^3)$ identifies $\AA^1$ with $V(y-x^2,z-x^3)$, since $k[x,y,z]/(y-x^2,z-x^3)\cong k[x]$ [@Har10a, Ex. I.1.1].
+For the nodal cubic, set $x=t^2-1$ and $y=t^3-t=t(t^2-1)$. Then $y^2=t^2(t^2-1)^2=(x+1)x^2=x^3+x^2$. The values $t=\pm1$ both map to the node $(0,0)$, and each line $y=tx$ through the node meets the cubic again exactly at the image of $t$.
 :::
