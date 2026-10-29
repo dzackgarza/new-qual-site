@@ -52,7 +52,7 @@ The unique Sylow $q$-subgroup is normal, nontrivial and proper.
 If $n_q=p^2$, then $(p,q)=(2,3)$, $\abs G=36$ and $n_3=4$.
 
 ::: pf-proof
-$p^2\equiv1\pmod q$ gives $q\mid(p-1)(p+1)$. Since $q>p-1>0$ or $p-1=1$, $q\nmid p-1$, so $q\mid p+1$. As $q>p$, this forces $q=p+1$, so $(p,q)=(2,3)$.
+$p^2\equiv1\pmod q$ gives $q\mid(p-1)(p+1)$. Since $1\le p-1<q$, $q\nmid p-1$, so $q\mid p+1$. As $q>p$, this forces $q=p+1$, so $(p,q)=(2,3)$.
 :::
 
 :::
