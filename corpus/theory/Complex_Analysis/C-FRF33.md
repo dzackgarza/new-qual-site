@@ -4,6 +4,8 @@ id: C-FRF33
 kind: corollary
 title: Open mapping theorem
 slogan: 'A nonconstant holomorphic function sends open sets to open sets.'
+prompts:
+- State the open mapping theorem.
 classification:
   areas:
   - complex-analysis

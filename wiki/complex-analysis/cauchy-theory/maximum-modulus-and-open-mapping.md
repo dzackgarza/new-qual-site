@@ -17,8 +17,6 @@ A nonconstant holomorphic function on a connected open set is an open map, and i
 
 [[C-FRF33]]
 
-[[FT-OEYLQ]]
-
 ::: {.proof title="Using Rouché's theorem"}
 
 ![](../../../../assets/assets/figures/2021-12-14_16-26-16.png)
