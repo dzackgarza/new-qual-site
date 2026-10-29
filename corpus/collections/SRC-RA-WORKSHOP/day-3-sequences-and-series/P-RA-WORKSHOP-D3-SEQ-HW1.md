@@ -26,34 +26,28 @@ For a real sequence $\{x_n\}$, if $\lim_{n\to\infty}x_n=x$ and $\lim_{n\to\infty
 
 ::: {.pf-step #s1}
 
-For every $\varepsilon>0$, one has $|x-y|<\varepsilon$.
+For every $\varepsilon>0$, one has $\abs{x-y}<\varepsilon$.
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Convergence to $x$ supplies $N_1$ such that $|x_n-x|<\varepsilon/2$ whenever $n\geq N_1$. Convergence to $y$ supplies $N_2$ such that $|x_n-y|<\varepsilon/2$ whenever $n\geq N_2$. Taking $n\geq\max(N_1,N_2)$ and applying the triangle inequality gives
-\[
-|x-y|\leq |x-x_n|+|x_n-y|<\varepsilon.
-\]
+Fix $\varepsilon>0$. Convergence to $x$ supplies $N_1$ such that $\abs{x_n-x}<\varepsilon/2$ whenever $n\geq N_1$. Convergence to $y$ supplies $N_2$ such that $\abs{x_n-y}<\varepsilon/2$ whenever $n\geq N_2$. Taking $n\geq\max(N_1,N_2)$ and applying the triangle inequality gives
+$$
+\abs{x-y}\leq \abs{x-x_n}+\abs{x_n-y}<\varepsilon.
+$$
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
-The two limits coincide: $\boxed{x=y}$.
+The two limits coincide: $x=y$.
 
 ::: pf-proof
 
-If $|x-y|>0$, step [](#s1){.pf-ref} with $\varepsilon=|x-y|$ would assert $|x-y|<|x-y|$, a contradiction. Thus $|x-y|=0$.
+If $\abs{x-y}>0$, step [](#s1){.pf-ref} with $\varepsilon=\abs{x-y}$ would assert $\abs{x-y}<\abs{x-y}$, a contradiction. Thus $\abs{x-y}=0$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} proves uniqueness of the limit.
 
 :::
 
