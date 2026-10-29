@@ -16,8 +16,6 @@ An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomo
 
 [[FD-CVEAI]]
 
-[[PR-DLPTR]]
-
 [[D-ZJJ7G]]
 
 [[FF-CY5EA]]

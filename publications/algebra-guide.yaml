@@ -438,7 +438,6 @@ sections:
       - ref: PR-RIJSC
       - ref: D-LIEMF
       - ref: FD-CVEAI
-      - ref: PR-DLPTR
       - ref: PR-RPL4Q
       - ref: D-RHJMK
       - ref: D-ZJJ7G
