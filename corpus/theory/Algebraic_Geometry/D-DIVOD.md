@@ -24,7 +24,8 @@ prompts:
 ---
 
 ::: {.definition}
-For $D$ a divisor on $X$, the sheaf $\OO_X(D)$ is the subsheaf of the constant sheaf $\mck$ given on an open $U$ by
+Let $X$ be a Noetherian integral separated locally factorial scheme, so that Weil and Cartier divisors on $X$ agree, and let $\mck$ be the constant sheaf of its function field.
+For $D$ a divisor on $X$, the sheaf $\OO_X(D)$ is the subsheaf of $\mck$ given on an open $U$ by
 $$
 \OO_X(D)(U) = \theset{ f \in \units{\mck(U)} \st \div(f) + D \geq 0 } \union \theset{0} .
 $$
