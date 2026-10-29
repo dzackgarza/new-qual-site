@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EN5JE
 kind: problem
-title: $|HK| = |H||K|/|H \cap K|$
+title: "$\\abs{HK} = \\abs{H}\\abs{K}/\\abs{H \\cap K}$"
 classification:
   areas:
   - algebra
@@ -21,34 +21,34 @@ audit:
 ---
 
 ::: {.problem}
-- Let $H, K \leq G$ a finite group, and without using the normalizers of $H$ or $K$, show that $\abs{HK} = \abs{H} \abs{K}/\abs{H\intersect K}$.
+Let $H, K \leq G$ a finite group, and without using the normalizers of $H$ or $K$, show that $\abs{HK} = \abs{H} \abs{K}/\abs{H\intersect K}$.
 :::
 
 ::: {.solution}
 Consider the surjection
-\[
+$$
 \phi:H\times K\longrightarrow HK,
 \qquad
 \phi(h,k)=hk.
-\]
+$$
 Fix $hk\in HK$. If $x\in H\cap K$, then
-\[
+$$
 \phi(hx,x^{-1}k)=hk.
-\]
+$$
 Conversely, if $h_1k_1=hk$, then
-\[
+$$
 h^{-1}h_1=kk_1^{-1}\in H\cap K.
-\]
+$$
 Writing this element as $x$ gives
-\[
+$$
 (h_1,k_1)=(hx,x^{-1}k).
-\]
-Hence every fiber of $\phi$ has exactly $|H\cap K|$ elements. Counting $H\times K$ by fibers yields
-\[
-|H||K|=|HK|\,|H\cap K|,
-\]
+$$
+Hence every fiber of $\phi$ has exactly $\abs{H\cap K}$ elements. Counting $H\times K$ by fibers yields
+$$
+\abs{H}\abs{K}=\abs{HK}\,\abs{H\cap K},
+$$
 so
-\[
-|HK|=\frac{|H||K|}{|H\cap K|}.
-\]
+$$
+\abs{HK}=\frac{\abs{H}\abs{K}}{\abs{H\cap K}}.
+$$
 :::
