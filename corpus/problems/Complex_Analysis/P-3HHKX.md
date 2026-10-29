@@ -18,54 +18,33 @@ audit:
 
 ::: {.problem}
 Prove the following inequality, and explain when equality holds:
-\[
+$$
 \abs{z+w} \geq \abs{ \abs{z} - \abs{w} }
-.\]
+.$$
 :::
 
 ::: {.solution}
-**Goal:** Prove $\abs{z + w} \ge \abs{\abs{z} - \abs{w}}$ and explain when equality holds.
 
 ::: pf
 
-::: {.pf-step #z-bound}
-$\abs{z} \le \abs{z + w} + \abs{w}$.
+::: {.pf-step #squares}
+$\abs{z+w}^2-\qty(\abs{z}-\abs{w})^2 = 2\qty(\Re(z\bar w)+\abs{z\bar w})$.
 
 ::: pf-proof
-Triangle inequality applied to $z = (z + w) + (-w)$: $\abs{z} \le \abs{z + w} + \abs{-w} = \abs{z+w} + \abs{w}$, hence $\abs{z} - \abs{w} \le \abs{z + w}$.
+Expand $\abs{z+w}^2=(z+w)(\bar z+\bar w)=\abs{z}^2+\abs{w}^2+2\Re(z\bar w)$ and $\qty(\abs{z}-\abs{w})^2=\abs{z}^2+\abs{w}^2-2\abs{z\bar w}$.
 :::
 
 :::
 
-::: {.pf-step #w-bound}
-$\abs{w} \le \abs{z + w} + \abs{z}$.
+::: pf-step
+$\abs{z+w}\geq\abs{\abs{z}-\abs{w}}$, with equality if and only if $z\bar w$ is a real number $\leq 0$, that is, $w=0$ or $z=-\mu w$ for some real $\mu\geq0$.
 
 ::: pf-proof
-Same argument with roles swapped: $\abs{w} \le \abs{z + w} + \abs{z}$, hence $\abs{w} - \abs{z} \le \abs{z + w}$.
+Both sides of the inequality are nonnegative, so it is equivalent to the inequality between their squares.
+By step [](#squares){.pf-ref}, that is $\Re(z\bar w)\geq-\abs{z\bar w}$, which holds for every complex number, with equality exactly when $z\bar w\in(-\infty,0]$.
+If $w\neq0$, then $z\bar w=-\mu\abs{w}^2$ with $\mu\geq0$ is the same as $z=-\mu w$.
 :::
 
-:::
-
-::: {.pf-step #abs-diff-bound}
-$\abs{\abs{z} - \abs{w}} \le \abs{z + w}$.
-
-::: pf-proof
-$\abs{\abs{z} - \abs{w}} = \max(\abs{z} - \abs{w}, \abs{w} - \abs{z}) \le \abs{z + w}$ by steps [](#z-bound){.pf-ref} and [](#w-bound){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #equality-case}
-Equality characterization.
-
-::: pf-proof
-Equality holds iff $\abs{z} - \abs{w} = \abs{z+w}$ with $\abs{z} \ge \abs{w}$ (or the symmetric case). By the equality case of the triangle inequality, $\abs{z + w} = \abs{z} + \abs{w}$ iff $z$ and $w$ are nonnegative real multiples of each other. Here $z = (z+w) + (-w)$: equality in step [](#z-bound){.pf-ref} requires $z + w$ and $-w$ to be nonnegatively aligned, i.e. $z + w = \lambda(-w)$ with $\lambda \ge 0$, i.e. $z = -(\lambda + 1)w$, i.e. $z/w \le 0$ (real, nonpositive). Symmetrically for step [](#w-bound){.pf-ref}. Conclusion: equality holds iff $z$ and $w$ are collinear with opposite directions: $z/w \in (-\infty, 0]$, i.e. $\arg z = \arg w + \pi \pmod{2\pi}$ (or one of them is $0$).
-:::
-
-:::
-
-::: pf-qed
-Step [](#abs-diff-bound){.pf-ref} proves the inequality; step [](#equality-case){.pf-ref} characterizes equality.
 :::
 
 :::
