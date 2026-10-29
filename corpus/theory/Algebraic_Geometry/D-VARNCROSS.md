@@ -34,7 +34,7 @@ $Y$ has \dfn{normal crossings} if it has a normal crossing singularity or a smoo
 ::: {.definition title="Simple normal crossing divisor"}
 Let $X$ be a smooth variety and $D = \sum_i D_i$ a reduced effective divisor.
 $D$ is a \dfn{normal crossing divisor} if at each closed point $p \in D$ there are local parameters $x_1, \ldots, x_n$ of $\hat{\OO}_{X,p}$ with $D$ defined by $x_1 \cdots x_r = 0$.
-$D$ is a \dfn{simple normal crossing divisor} if moreover every component $D_i$ is smooth, and at each point the components through $p$ are cut out by distinct members of a single system of local parameters in $\OO_{X,p}$ itself.
+$D$ is a \dfn{simple normal crossing divisor} if moreover every component $D_i$ is smooth, and at each closed point $p \in D$ the components through $p$ are cut out by distinct members of a single system of local parameters in $\OO_{X,p}$ itself.
 :::
 
 ::: {.example}
