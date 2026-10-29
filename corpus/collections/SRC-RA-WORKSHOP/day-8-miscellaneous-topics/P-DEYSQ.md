@@ -17,10 +17,13 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Let $a<b$, let $\alpha:[a,b]\to\mathbb R$ be increasing, and let $f:[a,b]\to\mathbb R$ be bounded. Prove that $f \in \mathcal{R}(\alpha)$ on $[a,b]$ if and only if, for any $a<c<b$, $f \in \mathcal{R}(\alpha)$ on $[a,c]$ and on $[c,b]$.
+Let $a<b$, let $\alpha:[a,b]\to\RR$ be increasing, and let $f:[a,b]\to\RR$ be bounded. Prove that $f \in \mathcal{R}(\alpha)$ on $[a,b]$ if and only if, for any $a<c<b$, $f \in \mathcal{R}(\alpha)$ on $[a,c]$ and on $[c,b]$.
 In addition, if either condition holds, then we have that $$\int_a^c fd\alpha + \int_c^b fd\alpha = \int_a^b fd\alpha.$$
 :::
+
 ::: {.solution}
+
+Fix $c\in(a,b)$. For a partition $Q$ of an interval, write $D_\alpha(f,Q)\coloneqq U(f,Q,\alpha)-L(f,Q,\alpha)$. If $P_1$ and $P_2$ are partitions of $[a,c]$ and $[c,b]$, their union $P$ is a partition of $[a,b]$, and the upper and lower sums are additive, $U(f,P,\alpha)=U(f,P_1,\alpha)+U(f,P_2,\alpha)$ and likewise for $L$, because their terms are indexed by the subintervals.
 
 ::: pf
 
@@ -30,11 +33,11 @@ In addition, if either condition holds, then we have that $$\int_a^c fd\alpha + 
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. The Darboux criterion supplies a partition $Q$ of $[a,b]$ with $U(f,Q,\alpha)-L(f,Q,\alpha)<\varepsilon$. Refine $Q$ by inserting $c$ to obtain $P$. Since $\alpha$ is increasing, refinement does not increase the upper-minus-lower sum. The partition $P$ splits at $c$ into $P_1,P_2$, and
-\[
-0\leq D_\alpha(f,P_1)+D_\alpha(f,P_2)=D_\alpha(f,P)<\varepsilon,
-\]
-where $D_\alpha(f,Q)=U(f,Q,\alpha)-L(f,Q,\alpha)$. Both summands are nonnegative, so each is less than $\varepsilon$. The Darboux criterion proves integrability on both subintervals.
+Fix $\varepsilon>0$. The Darboux criterion supplies a partition $Q$ of $[a,b]$ with $D_\alpha(f,Q)<\varepsilon$. Inserting $c$ into $Q$ gives a refinement $P$. Since $\alpha$ is increasing, refinement does not increase the upper-minus-lower sum. The partition $P$ splits at $c$ into $P_1,P_2$, and
+$$
+0\leq D_\alpha(f,P_1)+D_\alpha(f,P_2)=D_\alpha(f,P)<\varepsilon.
+$$
+Both summands are nonnegative, so each is less than $\varepsilon$. The Darboux criterion proves integrability on both subintervals.
 
 :::
 
@@ -46,55 +49,25 @@ where $D_\alpha(f,Q)=U(f,Q,\alpha)-L(f,Q,\alpha)$. Both summands are nonnegative
 
 ::: pf-proof
 
+Given $\varepsilon > 0$, the Darboux criterion on $[a,c]$ and on $[c,b]$ supplies partitions $P_1$ of $[a,c]$ and $P_2$ of $[c,b]$ with $D_\alpha(f,P_1) < \varepsilon/2$ and $D_\alpha(f,P_2) < \varepsilon/2$. By additivity, $P = P_1 \cup P_2$ satisfies $D_\alpha(f,P)=D_\alpha(f,P_1)+D_\alpha(f,P_2)<\varepsilon$. This is the Darboux criterion on $[a,b]$.
+
+:::
+
+:::
+
 ::: pf-step
 
-Given $\eps > 0$, choose partitions $P_1$ of $[a,c]$ and $P_2$ of $[c,b]$ with $U(f,P_1,\alpha) - L(f,P_1,\alpha) < \eps/2$ and $U(f,P_2,\alpha) - L(f,P_2,\alpha) < \eps/2$.
+If either condition holds, $\int_a^c f\,d\alpha + \int_c^b f\,d\alpha = \int_a^b f\,d\alpha$.
 
 ::: pf-proof
 
-Apply the Darboux criterion separately on $[a,c]$ and $[c,b]$.
+By step [](#s1){.pf-ref} and step [](#s2){.pf-ref}, all three integrals exist. Given $\varepsilon>0$, choose $P_1,P_2$ as in the proof of step [](#s2){.pf-ref} and let $P=P_1\cup P_2$. Each integral lies between the lower and upper sums of its partition, so both $\int_a^c f\,d\alpha + \int_c^b f\,d\alpha$ and $\int_a^b f\,d\alpha$ lie in the interval
+$$
+\bigl[L(f,P_1,\alpha)+L(f,P_2,\alpha),\ U(f,P_1,\alpha)+U(f,P_2,\alpha)\bigr]=\bigl[L(f,P,\alpha),\ U(f,P,\alpha)\bigr],
+$$
+whose length is $D_\alpha(f,P)<\varepsilon$. Since $\varepsilon>0$ is arbitrary, the two quantities are equal.
 
 :::
-
-:::
-
-::: {.pf-step #s2-2}
-
-$P = P_1 \cup P_2$ is a partition of $[a,b]$ with $U(f,P,\alpha) - L(f,P,\alpha) < \eps$.
-
-::: pf-proof
-
-The upper and lower Stieltjes sums are additive under concatenation of partitions at $c$, since their terms are indexed by the subintervals. Hence $D_\alpha(f,P)=D_\alpha(f,P_1)+D_\alpha(f,P_2)<\varepsilon$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s2-2){.pf-ref} verifies the Darboux criterion on $[a,b]$.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Additivity: $\int_a^c f\,d\alpha + \int_c^b f\,d\alpha = \int_a^b f\,d\alpha$.
-
-::: pf-proof
-
-For every pair of tagged partitions $P_1,P_2$ of $[a,c]$ and $[c,b]$, their concatenation $P$ satisfies the exact identity $S_\alpha(f;P)=S_\alpha(f;P_1)+S_\alpha(f;P_2)$. Choose sequences of tagged partitions on both subintervals whose meshes tend to zero. Their concatenations also have mesh tending to zero. By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, all three integrals exist; taking limits in the sum identity proves the formula.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} establish both implications and additivity for every $c\in(a,b)$.
 
 :::
 
