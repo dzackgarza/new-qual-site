@@ -27,13 +27,13 @@ prompts:
 ::: {.theorem title="RAPL, LAPC"}
 Let $(F,G)$ be an adjoint pair between categories in which limits and colimits exist, with $F$ the left adjoint.
 Then **right adjoints preserve limits**,
-\[
+$$
 G\qty( \projectivelim_i B_i ) \cong \projectivelim_i G(B_i) ,
-\]
+$$
 and **left adjoints preserve colimits**,
-\[
+$$
 F\qty( \injectivelim_i A_i ) \cong \injectivelim_i F(A_i) .
-\]
+$$
 :::
 
 ::: {.remark}
@@ -41,11 +41,11 @@ The proof is a universal property check: applying $G$ to a diagram $B_i$ gives a
 That is exactly the universal property of $\projectivelim G(B_i)$.
 The colimit statement is the same argument run the other way.
 
-The payoff is the exactness of the tensor-hom pair, with no diagram chase.
+Consequently the tensor-hom pair is one-sided exact, with no diagram chase.
 Kernels are limits and cokernels are colimits, so for the adjunction with $\wait\tensor_A N$ on the left and $\Hom_A(N,\wait)$ on the right: given $0 \to M' \to M \to M''$, one has $M' \cong \ker(M \to M'')$, so
-\[
+$$
 \Hom(N,M') \cong \Hom(N, \ker(M \to M'')) \cong \ker\qty( \Hom(N,M) \to \Hom(N,M'') ) ,
-\]
+$$
 which is left exactness of $\Hom_A(N,\wait)$.
 Symmetrically, $\wait \tensor_A N$ preserves the cokernel and is therefore right exact.
 
