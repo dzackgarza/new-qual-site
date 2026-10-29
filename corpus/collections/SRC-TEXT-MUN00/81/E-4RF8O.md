@@ -24,7 +24,6 @@ Show that if $X$ is Hausdorff, and if $G$ is a finite group of homeomorphisms of
 :::
 
 ::: {.solution}
-**Goal:** Prove that every fixed-point free (free) action of a finite group $G$ of homeomorphisms on a Hausdorff space $X$ is properly discontinuous.
 
 ::: pf
 
