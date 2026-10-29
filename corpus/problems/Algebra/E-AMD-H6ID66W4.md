@@ -22,29 +22,29 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\operatorname{Frac}(R[t]) \cong \operatorname{Frac}(R)(t)$ for any integral domain $R$.
+Show that $\Frac(R[t]) \cong \Frac(R)(t)$ for any integral domain $R$.
 :::
 
 ::: {.solution}
 Let
-\[
-K=\operatorname{Frac}(R).
-\]
+$$
+K=\Frac(R).
+$$
 Since $R[t]\subseteq K[t]$, there is an inclusion
-\[
-\operatorname{Frac}(R[t])\subseteq K(t).
-\]
+$$
+\Frac(R[t])\subseteq K(t).
+$$
 
 Conversely, let $P/Q\in K(t)$ with $P,Q\in K[t]$ and $Q\ne0$. Choose a nonzero $d\in R$ clearing all denominators of the coefficients of both $P$ and $Q$. Then
-\[
+$$
 dP,dQ\in R[t],\qquad dQ\ne0,
-\]
+$$
 and
-\[
-\frac{P}{Q}=\frac{dP}{dQ}\in\operatorname{Frac}(R[t]).
-\]
+$$
+\frac{P}{Q}=\frac{dP}{dQ}\in\Frac(R[t]).
+$$
 Hence
-\[
-\boxed{\operatorname{Frac}(R[t])=K(t)=\operatorname{Frac}(R)(t).}
-\]
+$$
+\boxed{\Frac(R[t])=K(t)=\Frac(R)(t).}
+$$
 :::
