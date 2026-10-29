@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-3-06
 kind: problem
-title: Maxim algebraic topology 3.6
+title: Cohomology rings of the loop spaces $\Omega\CP^n$ and $\Omega\RP^n$
 classification:
   areas: [topology]
   topics: []
