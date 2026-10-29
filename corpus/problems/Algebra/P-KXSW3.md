@@ -23,57 +23,44 @@ audit:
 
 ::: {.problem}
 Let $H$ be a finite $p$-group and let $G\le H$. Suppose the composite
-\[
+$$
 G\hookrightarrow H\twoheadrightarrow H/[H,H]
-\]
+$$
 is surjective. Prove that $G=H$.
 :::
 
 ::: {.solution}
-Surjectivity is equivalent to
-\[
-H=G[H,H].
-\]
-Suppose for contradiction that $G<H$. Since $H$ is finite, $G$ is contained in a maximal subgroup $M<H$.
+Surjectivity of the composite is equivalent to $H=G[H,H]$. Suppose, for contradiction, that $G<H$. Since $H$ is finite, $G$ is contained in a maximal subgroup $M<H$.
 
 ::: pf
 
-::: pf-step
-
-Every maximal subgroup of a finite $p$-group has index $p$ and is normal.
-
-::: pf-proof
-
-The quotient action of $H$ on the left cosets $H/M$ shows that the index is a power of $p$. Maximality forces the quotient to have no nontrivial proper subgroup, hence
-\[
-[H:M]=p.
-\]
-A subgroup of index $p$ in a finite $p$-group is normal.
-
-:::
-
-:::
-
-::: pf-step
-
-We have $[H,H]\subseteq M$.
+::: {.pf-step #index-p}
+$M$ is normal in $H$ of index $p$.
 
 ::: pf-proof
+In a finite $p$-group every proper subgroup is properly contained in its normalizer. Maximality gives $N_H(M)=H$, so $M\trianglelefteq H$. The quotient $H/M$ is a nontrivial $p$-group with no nontrivial proper subgroup, since such a subgroup would correspond to a subgroup strictly between $M$ and $H$; a $p$-group of order $p^k$ has subgroups of every order $p^j$, $j\le k$, so $\abs{H/M}=p$.
+:::
 
-Because $H/M$ has order $p$, it is cyclic and therefore abelian. The derived subgroup is contained in the kernel of every homomorphism to an abelian group, so
-\[
-[H,H]\subseteq M.
-\]
+:::
 
+::: {.pf-step #derived}
+$[H,H]\subseteq M$.
+
+::: pf-proof
+By step [](#index-p){.pf-ref}, $H/M$ has order $p$, so it is cyclic and hence abelian. The derived subgroup lies in the kernel of every homomorphism to an abelian group, in particular of $H\to H/M$.
+:::
+
+:::
+
+::: pf-step
+$G=H$.
+
+::: pf-proof
+$G\subseteq M$ and, by step [](#derived){.pf-ref}, $[H,H]\subseteq M$, so $G[H,H]\subseteq M<H$, contradicting $G[H,H]=H$.
 :::
 
 :::
 
 :::
 
-Now $G\subseteq M$ and $[H,H]\subseteq M$, so
-\[
-G[H,H]\subseteq M<H,
-\]
-contradicting the surjectivity identity $G[H,H]=H$. Therefore $G=H$.
 :::
