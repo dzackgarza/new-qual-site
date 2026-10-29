@@ -26,51 +26,40 @@ Let $F$ be a field of characteristic $p>0$. Suppose every irreducible polynomial
 :::
 
 ::: {.solution}
-Let $a\in F$. If $a=0$, take $\beta=0$. Assume $a\ne0$ and consider
-\[
-f(x)=x^p-a.
-\]
-In an algebraic closure choose its unique root $\beta$, so
-\[
-\beta^p=a
-\qquad\text{and}\qquad
-f(x)=(x-\beta)^p.
-\]
+Let $a\in F$. If $a=0$, then $a=0^p$, so assume $a\ne0$. Let $f(x)=x^p-a$, and let $\beta$ be a root of $f$ in an algebraic closure $\bar F$, so that $\beta^p=a$, $\beta\ne0$, and $f(x)=(x-\beta)^p$.
 
-The derivative is $f'(x)=0$, so $f$ is inseparable. By hypothesis no irreducible polynomial over $F$ is inseparable; therefore $f$ cannot be irreducible. Choose a monic irreducible proper factor
-\[
-g(x)\mid f(x),
-\qquad
-1\le \ell:=\deg g<p.
-\]
-Over the algebraic closure, every root of $g$ is the unique root $\beta$ of $f$, hence
-\[
-g(x)=(x-\beta)^\ell.
-\]
-Since $g\in F[x]$, its constant coefficient gives
-\[
-(-\beta)^\ell\in F,
-\]
-so $\beta^\ell\in F$.
+::: pf
 
-Because $1\le\ell<p$ and $p$ is prime,
-\[
-\gcd(\ell,p)=1.
-\]
-Choose integers $u,v$ with
-\[
-u\ell+vp=1.
-\]
-Since $\beta\ne0$,
-\[
-\beta
-=\beta^{u\ell+vp}
-=(\beta^\ell)^u(\beta^p)^v
-\in F.
-\]
-Therefore
-\[
-a=\beta^p
-\]
-with $\beta\in F$. Thus Frobenius $x\mapsto x^p$ is surjective on $F$.
+::: {.pf-step #factor}
+$f$ has a monic irreducible factor $g\in F[x]$ of degree $\ell$ with $1\le\ell<p$, and $g=(x-\beta)^\ell$.
+
+::: pf-proof
+If $f$ were irreducible, it would be separable by hypothesis, but $f=(x-\beta)^p$ has a repeated root.
+So a monic irreducible factor $g$ of $f$ has degree $\ell<p$.
+Every root of $g$ in $\bar F$ is a root of $f$, hence equal to $\beta$, so $g=(x-\beta)^\ell$.
+:::
+
+:::
+
+::: {.pf-step #power}
+$\beta^\ell\in F$.
+
+::: pf-proof
+By step [](#factor){.pf-ref}, the constant coefficient of $g\in F[x]$ is $(-\beta)^\ell$.
+:::
+
+:::
+
+::: pf-step
+$\beta\in F$, so $a=\beta^p$ is a $p$-th power in $F$.
+
+::: pf-proof
+Since $p$ is prime and $1\le\ell<p$, there are integers $u,v$ with $u\ell+vp=1$.
+Then $\beta=(\beta^\ell)^u(\beta^p)^v=(\beta^\ell)^u a^v$, which lies in $F$ by step [](#power){.pf-ref}, because $\beta\ne0$ and $a\ne0$.
+:::
+
+:::
+
+:::
+
 :::
