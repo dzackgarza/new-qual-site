@@ -45,8 +45,6 @@ order: 5
 
 - For $a>0$ and $1\leq p<\infty$, $\abs x^{-a}\chi_{\theset{\abs x\leq1}}\in L^p(\RR^n)$ if and only if $ap<n$, and $\abs x^{-a}\chi_{\theset{\abs x>1}}\in L^p(\RR^n)$ if and only if $ap>n$; so $\abs x^{-n/p}$ fails to be in $L^p$ both near $0$ and near $\infty$.
 
-- Every Lebesgue measurable set $E\subseteq\RR^n$ is $H\sqcup N$ with $H$ an $F_\sigma$ set and $N$ null.
-
 - An absolutely continuous function on $[a,b]$ has bounded variation, and $f(x) = f(a)+\int_a^x f'$.
 
 - For $f,g$ in conjugate spaces $L^p$ and $L^q$, $\abs{\int fg}\leq\norm f_p\norm g_q$.
@@ -69,28 +67,7 @@ order: 5
 
 [[PR-PIVFR]]
 
-::: {.proof title="Borel characterization of measurable sets"}
-For each $n\geq1$ there is a closed $K_n\subseteq E$ with $m(E\setminus K_n) \leq \frac 1 n$.
-Let $H\coloneqq\bigcup_n K_n$, an $F_\sigma$ set contained in $E$.
-Then $N\coloneqq E\setminus H\subseteq E\setminus K_n$ for every $n$, so $m(N)\leq\frac1n$ for every $n$ and $m(N)=0$.
-
-:::
-
 [[T-IIKSW]]
-
-::: {.proof title="Approximation of measurable sets"}
-(1) Suppose first $m(E)<\infty$.
-By the definition of outer measure there are closed cubes $Q_i$ with $E\subseteq\bigcup_iQ_i$ and $\sum_i\abs{Q_i}<m(E)+\varepsilon/2$; enlarging each $Q_i$ to an open cube $Q_i'$ with $\abs{Q_i'}<\abs{Q_i}+\varepsilon2^{-i-1}$, the open set $O\coloneqq\bigcup_iQ_i'$ satisfies $m(O)<m(E)+\varepsilon$, so $m(O\setminus E)<\varepsilon$.
-In general write $E=\bigcup_kE_k$ with $m(E_k)<\infty$, choose open $O_k\supseteq E_k$ with $m(O_k\setminus E_k)<\varepsilon2^{-k}$, and let $O\coloneqq\bigcup_kO_k$.
-
-(2) Apply (1) to $E^c$ to get an open $O\supseteq E^c$ with $m(O\setminus E^c)<\varepsilon$, and let $F\coloneqq O^c$.
-Then $F$ is closed, $F\subseteq E$, and $E\setminus F = O\setminus E^c$, so $m(E\setminus F)<\varepsilon$.
-
-(3) Assume $m(E)<\infty$; for $E=\RR^n$ no compact $K$ has $m(E\setminus K)<\infty$.
-By (2) choose a closed $F\subseteq E$ with $m(E\setminus F)<\varepsilon/2$, and let $K_n\coloneqq F\cap\overline{B_n(0)}$, which is compact.
-The sets $E\setminus K_n$ decrease to $E\setminus F$ and $m(E)<\infty$, so $m(E\setminus K_n)\to m(E\setminus F)$, and $m(E\setminus K_n)<\varepsilon$ for $n$ large.
-
-:::
 
 ## Exercises
 
@@ -101,16 +78,5 @@ The sets $E\setminus K_n$ decrease to $E\setminus F$ and $m(E)<\infty$, so $m(E\
 ::: {.proposition title="The region under a graph"}
 Let $f\colon\RR^n\to[0,\infty)$ and $A\coloneqq\theset{(x,y)\in\RR^n\times\RR \st 0\leq y\leq f(x)}$.
 Then $f$ is Lebesgue measurable if and only if $A$ is Lebesgue measurable in $\RR^{n+1}$, and in that case $m(A) = \int_{\RR^n}f(x)\dx$.
-
-:::
-
-::: {.proof}
-Suppose $f$ is measurable.
-The functions $F(x,y)\coloneqq f(x)$ and $G(x,y)\coloneqq y$ are measurable on $\RR^{n+1}$, since $\theset{F>a} = \theset{f>a}\times\RR$ and $\theset{G>a} = \RR^n\times(a,\infty)$.
-Hence $A = \theset{G\leq F}\cap\theset{G\geq0}$ is measurable.
-
-Suppose $A$ is measurable.
-For every $x$, the slice $A_x = [0,f(x)]$ has $m(A_x) = f(x)$.
-By [[PR-6NDTF]], $x\mapsto m(A_x) = f(x)$ is measurable and $m(A) = \int_{\RR^n}m(A_x)\dx = \int_{\RR^n}f(x)\dx$.
 
 :::
