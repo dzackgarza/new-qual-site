@@ -23,38 +23,45 @@ audit:
 
 ::: {.problem}
 Let $p$ be prime, let $\sigma\in S_p$ be a $p$-cycle, and let $\tau\in S_p$ be any transposition. Show that
-\[
+$$
 \langle\sigma,\tau\rangle=S_p.
-\]
+$$
 :::
 
 ::: {.solution}
-Label the $p$ points by the additive group $\ZZ/p\ZZ$ so that
-\[
-\sigma(x)=x+1.
-\]
-Write
-\[
-\tau=(a,b),
-\qquad d=b-a\ne0\pmod p.
-\]
+Label the $p$ points by $\ZZ/p\ZZ$ so that $\sigma(x)=x+1$, write $\tau=(a\ b)$ with $d=b-a\ne0$ in $\ZZ/p\ZZ$, and let $H=\langle\sigma,\tau\rangle$.
 
-For every $k\in\ZZ/p\ZZ$,
-\[
-\sigma^k\tau\sigma^{-k}=(a+k,b+k).
-\]
-Thus the subgroup $H=\langle\sigma,\tau\rangle$ contains the transposition joining $x$ to $x+d$ for every $x\in\ZZ/p\ZZ$.
+::: pf
 
-Consider the graph with vertex set $\ZZ/p\ZZ$ and edges
-\[
-\{x,x+d\}.
-\]
-Because $p$ is prime and $d\ne0$, the element $d$ generates the additive group $\ZZ/p\ZZ$. Hence this graph is connected (indeed it is a $p$-cycle).
+::: {.pf-step #conj}
+$H$ contains $(x\ x+d)$ for every $x\in\ZZ/p\ZZ$.
 
-The transpositions corresponding to the edges of any connected graph on $p$ vertices generate the full symmetric group: a spanning tree suffices, since transpositions along the unique path from a fixed root to a vertex generate the star transpositions, and star transpositions generate $S_p$.
+::: pf-proof
+$\sigma^k\tau\sigma^{-k}=(a+k\ b+k)$ for every $k$.
+:::
 
-Therefore the conjugates of $\tau$ already generate $S_p$, and hence
-\[
-\langle\sigma,\tau\rangle=S_p.
-\]
+:::
+
+::: {.pf-step #path}
+$H$ contains $(0\ jd)$ for every $j$ with $1\le j\le p-1$.
+
+::: pf-proof
+For $j=1$ this is step [](#conj){.pf-ref}.
+If $(0\ jd)\in H$ and $j+1\le p-1$, then conjugating $(0\ jd)$ by $(jd\ (j+1)d)\in H$ gives $(0\ (j+1)d)$, because $(j+1)d\ne0$.
+:::
+
+:::
+
+::: pf-step
+$H=S_p$.
+
+::: pf-proof
+Since $p$ is prime and $d\ne0$, the multiples $d,2d,\ldots,(p-1)d$ are the nonzero elements of $\ZZ/p\ZZ$.
+By step [](#path){.pf-ref}, $H$ contains every transposition $(0\ y)$, and $(x\ y)=(0\ x)(0\ y)(0\ x)$, so $H$ contains every transposition and therefore equals $S_p$.
+:::
+
+:::
+
+:::
+
 :::
