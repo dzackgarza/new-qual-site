@@ -25,45 +25,59 @@ audit:
 ::: {.problem}
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:
 
-a. $|f(z)|$ is constant.
-b. $\Re(f(z))$ is constant.
-c. $\arg(f(z))$ is constant.
-d. $\overline{f(z)}$ is analytic.
+(a) $\abs{f(z)}$ is constant.
+
+(b) $\Re(f(z))$ is constant.
+
+(c) $\arg(f(z))$ is constant.
+
+(d) $\overline{f(z)}$ is analytic.
 :::
 
 ::: {.solution}
-Write $f=u+iv$ on the connected domain.
+Write $f=u+iv$ on the connected domain $\Omega$.
 
 ::: pf
 
 ::: pf-step
-If $|f|$ is constant, then either $f\equiv0$, or $f$ is nonzero and its image lies in a circle. A nonconstant holomorphic map is open, but a circle has empty interior. Hence $f$ is constant.
+(a) If $\abs f$ is constant, then $f$ is constant.
+
+::: pf-proof
+If $\abs f\equiv0$ then $f\equiv0$.
+Otherwise $f(\Omega)$ lies in a circle, which has empty interior.
+A nonconstant holomorphic function on a domain is an open map, so $f$ is constant.
+:::
+
+:::
+
+::: {.pf-step #real-part}
+(b) If $\Re f$ is constant, then $f$ is constant.
+
+::: pf-proof
+$u_x=u_y=0$, so the Cauchy--Riemann equations give $v_y=u_x=0$ and $v_x=-u_y=0$.
+Thus $v$ is constant on the connected set $\Omega$, and so is $f$.
+:::
+
 :::
 
 ::: pf-step
-If $\Re f=u$ is constant, then $u_x=u_y=0$. By the Cauchy--Riemann equations,
-\[
-v_y=u_x=0,\qquad v_x=-u_y=0,
-\]
-so $v$ is constant and therefore $f$ is constant.
+(c) If $\arg f\equiv\theta_0$, then $f$ is constant.
+
+::: pf-proof
+Then $e^{-i\theta_0}f$ is holomorphic and real-valued, so its imaginary part is constant.
+Applying step [](#real-part){.pf-ref} to $i e^{-i\theta_0}f$, whose real part is $-\Im(e^{-i\theta_0}f)=0$, shows that $f$ is constant.
+:::
+
 :::
 
 ::: pf-step
-If $\arg f\equiv\theta_0$, then $f$ never vanishes and
-\[
-e^{-i\theta_0}f
-\]
-is real-valued. It is holomorphic, so by part (2) it is constant. Hence $f$ is constant.
+(d) If $\overline f$ is analytic, then $f$ is constant.
+
+::: pf-proof
+The Cauchy--Riemann equations for $u+iv$ and for $u-iv$ give $u_x=v_y=-v_y$ and $u_y=-v_x=v_x$.
+Thus $u_x=u_y=v_x=v_y=0$, so $f$ is constant on the connected set $\Omega$.
 :::
 
-::: pf-step
-If $\overline f=u-iv$ is also holomorphic, then applying the Cauchy--Riemann equations to both $u+iv$ and $u-iv$ gives
-\[
-u_x=v_y=-v_y,
-\qquad
-u_y=-v_x=v_x.
-\]
-Thus $u_x=u_y=v_x=v_y=0$, so $f$ is constant.
 :::
 
 :::
