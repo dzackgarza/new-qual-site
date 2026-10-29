@@ -1,4 +1,5 @@
 ---
+title: Solutions (rings)
 order: 90
 ---
 
@@ -20,7 +21,7 @@ order: 90
 
 - [Hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf) to those problems.
 
-- Additional problem: 2015 Spring M5.
+- Additional MIT qual problem: Spring 2015 M5.
 
 ## Galois theory
 
