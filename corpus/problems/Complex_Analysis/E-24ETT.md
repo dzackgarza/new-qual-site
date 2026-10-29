@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: E-24ETT
 kind: problem
-title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f$ is injective holomorphic and
-  $f(0)=g(0)$
+title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f\colon\DD\to\Omega$ is biholomorphic
+  and $f(0)=g(0)$
 classification:
   areas:
   - complex-analysis
@@ -13,22 +13,23 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source reads "Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$." This is false without $f(\DD)=\Omega$ (take $\Omega=\CC$, $f(z)=z$, $g(z)=2z$); the statement now requires $f$ to be a bijection onto $\Omega$. The source also noted that the first part of the problem asks for a statement of the Schwarz lemma.'
 ---
 
 ::: {.problem}
-Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$.
+Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ a bijection onto $\Omega$ and $f(0) = g(0)$.
 
 Show that
-\[
-\Forall 0 < r < 1,\qquad g\qty{\theset{\abs{z} < r}} \subseteq f\qty{\theset{\abs{z} < r}}
-.\]
-
-> The first part of this problem asks for a statement of the Schwarz lemma.
-
+$$
+\Forall 0 < r < 1,\qquad g\qty{\theset{\abs{z} < r}} \subseteq f\qty{\theset{\abs{z} < r}}.
+$$
 :::
 
 ::: {.solution}
-Assume that $f$ is a bijection $\DD\to\Omega$; the remark gives a counterexample without this hypothesis.
 
 ::: pf
 
@@ -68,6 +69,6 @@ Let $0<r<1$ and $\abs{z}<r$. By step [](#s2){.pf-ref}, $w\coloneqq F(z)$ satisfi
 :::
 
 ::: {.remark}
-The inclusion requires $f(\DD)=\Omega$.
+The inclusion requires $f(\DD)=\Omega$, not only injectivity of $f$.
 For $\Omega=\CC$, $f(z)=z$ and $g(z)=2z$, the image $g\qty{\theset{\abs z<r}}$ is the disk of radius $2r$, which is not contained in $f\qty{\theset{\abs z<r}}$.
 :::
