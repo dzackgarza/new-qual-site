@@ -35,8 +35,6 @@ Show that
 :::
 
 ::: {.solution}
-**Goal:** Suppose $(f_n)$ is a sequence of entire functions with $f_n \to g$ pointwise, and $f_n \to g$ uniformly on every line segment in $\CC$.
-Show that $g$ is entire and $f_n \to g$ uniformly on every compact subset of $\CC$.
 
 ::: pf
 
@@ -52,7 +50,7 @@ It suffices to show $\oint_\gamma g = 0$ for every closed polygonal path $\gamma
 
 ::: pf-proof
 
-Morera's theorem.
+This is Morera's theorem.
 
 :::
 
@@ -76,7 +74,7 @@ $\int_\gamma g = 0$.
 
 ::: pf-proof
 
-each $f_n$ is entire, so $\oint_\gamma f_n = 0$ (Cauchy's theorem); step [](#s1-2){.pf-ref} gives the limit $0$.
+Each $f_n$ is entire, so $\oint_\gamma f_n = 0$ (Cauchy's theorem); step [](#s1-2){.pf-ref} gives the limit $0$.
 
 :::
 
@@ -98,7 +96,7 @@ Let $K \subset \CC$ be compact; choose a bounded polygonal domain $\Omega$ with 
 
 ::: pf-proof
 
-e.g. a large square (or union of squares) around $K$, whose boundary is a finite union of line segments.
+Take a large open square containing $K$; its boundary is a finite union of line segments.
 
 :::
 
@@ -118,11 +116,11 @@ Cauchy integral formula applied to the holomorphic functions $f_n$ and $g$ (enti
 
 ::: pf-step
 
-$\sup_{z \in K}|f_n(z) - g(z)| \le \frac{\operatorname{length}(\bd\Omega)}{2\pi\, d} \sup_{\zeta \in \bd\Omega}|f_n(\zeta) - g(\zeta)|$ where $d = \dist(K, \bd\Omega)$.
+$\sup_{z \in K}\abs{f_n(z) - g(z)} \le \frac{\operatorname{length}(\bd\Omega)}{2\pi\, d} \sup_{\zeta \in \bd\Omega}\abs{f_n(\zeta) - g(\zeta)}$ where $d = \dist(K, \bd\Omega)$.
 
 ::: pf-proof
 
-bound the integral in step [](#s2-2){.pf-ref}: $|\zeta - z| \ge d$.
+Bound the integral in step [](#s2-2){.pf-ref}, using $\abs{\zeta - z} \ge d$.
 
 :::
 
@@ -134,19 +132,13 @@ The right-hand side tends to $0$.
 
 ::: pf-proof
 
-$\bd\Omega$ is a finite union of line segments, and $f_n \to g$ uniformly on each, so $\sup_{\bd\Omega}|f_n - g| \to 0$.
+$\bd\Omega$ is a finite union of line segments, and $f_n \to g$ uniformly on each, so $\sup_{\bd\Omega}\abs{f_n - g} \to 0$.
 
 :::
 
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} shows $g$ is entire; step [](#s2){.pf-ref} shows uniform convergence on compacta.
 
 :::
 
