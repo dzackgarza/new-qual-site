@@ -78,7 +78,8 @@ Put $w=(z-z_0)^{-1}$. The power series $\sum_{n\ge1}c_{-n}w^n$ has radius of con
 :::
 
 ::: pf-qed
-The Laurent series converges exactly where both parts converge, which by the two preceding steps is the annulus $r<\abs{z-z_0}<R$.
+The Laurent series converges where both parts converge, so by the two preceding steps it converges on the annulus $r<\abs{z-z_0}<R$.
+It diverges at every $z$ with $\abs{z-z_0}<r$ or $\abs{z-z_0}>R$, where one part diverges by Cauchy--Hadamard; on the circles $\abs{z-z_0}=r$ and $\abs{z-z_0}=R$ the formulas decide nothing.
 :::
 
 :::

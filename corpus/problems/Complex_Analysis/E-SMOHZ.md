@@ -27,7 +27,7 @@ Show that $z_0$ is an essential singularity of $f$.
 :::
 
 ::: {.solution}
-The zeros $z_k$ accumulate at $z_0$, so $z_0$ is an isolated singularity of $f$; we exclude the other two kinds.
+Since $f$ is holomorphic on $\Omega\smts{z_0}$, which contains a punctured disc about $z_0$, the point $z_0$ is an isolated singularity of $f$; we exclude the other two kinds.
 
 ::: pf
 
