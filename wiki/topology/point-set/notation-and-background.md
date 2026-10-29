@@ -70,13 +70,14 @@ $$
 :::
 
 ::: {.remark title="Indexing conventions and list notation"}
-For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$, and a graded object such as $\pi_*$, $H_*$, or $H^*$ written as a list starts in degree $1$:
+For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$. Homology and cohomology written as a list start in degree $0$, and homotopy groups written as a list start in degree $1$:
 $$
 \begin{aligned}
-\pi_*(X) &= [\pi_1(X), \pi_2(X), \pi_3(X), \ldots], \\
-H_*(X) &= [H_1(X), H_2(X), H_3(X), \ldots].
+H_*(X) &= [H_0(X), H_1(X), H_2(X), \ldots], \\
+\pi_*(X) &= [\pi_1(X), \pi_2(X), \pi_3(X), \ldots].
 \end{aligned}
 $$
+For example, $H_*(\Sigma_g) = [\ZZ, \ZZ^{2g}, \ZZ]$ for the closed orientable surface of genus $g$.
 
 :::
 
