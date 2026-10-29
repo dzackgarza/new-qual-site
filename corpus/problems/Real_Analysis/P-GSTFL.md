@@ -5,7 +5,7 @@ kind: problem
 title: Uniformly continuous functions preserve uniform convergence of sequences
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Convergence
   - Sequences of Functions
