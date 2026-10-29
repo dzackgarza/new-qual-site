@@ -91,7 +91,8 @@ mathematical correction under its own node, not under copy policy.
     T-4XKGD/L-6QBOJ, PR-GJLQP/P-5UUNM, T-GJNT5/C-HWX2P/E-NNTQB, P-AMD-QBEEJKCX/E-AMD-UEHZOJ3K);
     notation and structure defects in D-53LTN, PR-IOMVN, PR-SLWTB, T-WRMBM, PR-KGHJ2, E-P5BF6,
     the-class-equation, orbit-stabilizer, characteristic-subgroups, is-this-group-abelian.
-    **Acceptance:** each item read and repaired.
+    **Acceptance:** each item read and repaired. All items are repaired except E-P5BF6, whose
+    part (e) waits on a STYLE-08 form for the last part of a multi-part solution (COMPLAINTS.md).
   - **`ad-topology-ag-content`**. **Needs:** none. PR-QV4U5 proof does not prove its CW
     statement; C-ILVEB empty concept block; C-GJRYO dangling colon; T-BX4LD notation;
     E-JX67Q delimiters; separated-and-proper and curves-in-projective-space restatements;
