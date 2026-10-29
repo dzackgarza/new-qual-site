@@ -37,6 +37,10 @@ audit:
     estimated the difference quotient uniformly to justify passage through
     the line integral. This gives f'(z) as the integral with kernel
     (w-z)^(-2) at every point off the curve.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source leaves g undefined; the statement takes g continuous on the range of gamma. The rendered erratum remark is removed.'
 ---
 
 ::: {.problem}
@@ -231,19 +235,6 @@ $\gamma$.
 
 :::
 
-::: pf-qed
-
-Step [](#s6){.pf-ref} is the required conclusion.
-
 :::
 
-:::
-
-:::
-
-::: {.remark}
-Erratum: the source does not say what $g$ is. The corrected statement
-adds the hypothesis that $g$ is continuous on the range of
-$\gamma$; under this hypothesis the Cauchy-type integral is defined for
-every $z$ off that range.
 :::
