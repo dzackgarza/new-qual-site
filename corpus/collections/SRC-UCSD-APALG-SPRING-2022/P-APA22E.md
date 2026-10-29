@@ -11,6 +11,11 @@ classification:
   - Permutations
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (b) of the UCSD Spring 2022 exam asks to construct a surjective S_2n-equivariant map from k[M_n] onto S^(n,n) and describe a spanning set for its kernel; no such map exists for n=1, k=C, and the intended module is not determined by the source. Part (b) now asks to prove or disprove that such a map exists for every n and k.
 ---
 
 ::: {.problem}
@@ -20,51 +25,50 @@ Let $k$ be a field.
 
 (a) Describe a subgroup $H$ of $S_{2n}$ so that the permutation representation $k[M_n]$ is isomorphic to the induced representation of the trivial representation of $H$ to $S_{2n}$.
 
-(b) Construct a surjective $S_{2n}$-equivariant map $\phi$ from $k[M_n]$ onto the Specht module $S^{(n,n)}$ and describe a spanning set for the kernel of $\phi$.
+(b) Prove or disprove: for every $n \geq 1$ and every field $k$ there is a surjective $S_{2n}$-equivariant map $\phi$ from $k[M_n]$ onto the Specht module $S^{(n,n)}$.
 
 [Note: This is very closely related to a homework problem. Do not use the result of that problem unless you are planning to reprove it.]
 :::
 
-
 ::: {.solution}
-Part (a) is valid, but part (b) is false as stated for general $n$ and $k$.
+Write
+\[
+m_0=\bigl\{\{1,2\},\{3,4\},\ldots,\{2n-1,2n\}\bigr\}
+\]
+for the standard matching.
 
-For (a), fix the standard matching
-\[
-m_0=\bigl\{\{1,2\},\{3,4\},\ldots,\{2n-1,2n\}\bigr\}.
-\]
-Its stabilizer consists of arbitrary swaps inside the $n$ pairs together with arbitrary permutations of the pairs. Thus
-\[
-H=\operatorname{Stab}_{S_{2n}}(m_0)\cong (S_2)^n\rtimes S_n=S_2\wr S_n.
-\]
-The action of $S_{2n}$ on $M_n$ is transitive, and the map
-\[
-S_{2n}/H\longrightarrow M_n,\qquad gH\longmapsto g m_0
-\]
-is an $S_{2n}$-equivariant bijection. Therefore the associated permutation module is
-\[
-\boxed{k[M_n]\cong \operatorname{Ind}_{H}^{S_{2n}}\mathbf 1.}
-\]
+::: pf
 
-For (b), take $n=1$ and, for example, $k=\mathbb C$. There is exactly one perfect matching of $\{1,2\}$, so
+::: {.pf-step}
+The subgroup
 \[
-\mathbb C[M_1]\cong \mathbf 1
+\boxed{H=\operatorname{Stab}_{S_{2n}}(m_0)\cong (S_2)^n\rtimes S_n=S_2\wr S_n}
 \]
-is the trivial one-dimensional representation of $S_2$. But
-\[
-S^{(1,1)}\cong \operatorname{sgn}
-\]
-is the nontrivial sign representation. Hence
-\[
-\operatorname{Hom}_{S_2}(\mathbb C[M_1],S^{(1,1)})=0,
-\]
-so there cannot be a surjective equivariant map of the requested kind. Thus the assertion in part (b), and consequently the request for a spanning set of its kernel, is not correct as written.
+satisfies $k[M_n]\cong\operatorname{Ind}_H^{S_{2n}}\mathbf 1$.
 
-There is also a general characteristic-zero obstruction. The classical decomposition of the perfect-matching permutation representation is
+::: pf-proof
+A permutation fixes $m_0$ exactly when it permutes its $n$ pairs, possibly swapping the two entries inside each pair; these permutations form the wreath product $S_2\wr S_n$.
+Any perfect matching is carried to $m_0$ by a permutation that sends its pairs to the pairs of $m_0$, so $S_{2n}$ acts transitively on $M_n$.
+Hence
 \[
-\operatorname{Ind}_{S_2\wr S_n}^{S_{2n}}\mathbf 1
-\cong
-\bigoplus_{\lambda\vdash n} S^{2\lambda},
+S_{2n}/H\longrightarrow M_n,\qquad gH\longmapsto g m_0,
 \]
-where $2\lambda=(2\lambda_1,2\lambda_2,\ldots)$. Hence $S^{(n,n)}$ can occur only when $n$ is even (then $(n,n)=2(n/2,n/2)$); for odd $n$ it does not occur at all. This is consistent with the explicit counterexample $n=1$ above.
+is an $S_{2n}$-equivariant bijection, and the permutation module of $S_{2n}/H$ is $\operatorname{Ind}_H^{S_{2n}}\mathbf 1$.
+:::
+
+:::
+
+::: {.pf-step}
+The assertion of part (b) is false: for $n=1$ and $k=\mathbb C$ there is no surjective $S_2$-equivariant map $\mathbb C[M_1]\to S^{(1,1)}$.
+
+::: pf-proof
+There is exactly one perfect matching of $\{1,2\}$, so $\mathbb C[M_1]$ is the trivial one-dimensional representation of $S_2$.
+The Specht module $S^{(1,1)}$ is the sign representation, on which the transposition acts by $-1$.
+An equivariant map $\phi$ from the trivial representation satisfies $(12)\phi(v)=\phi(v)$, while $(12)$ acts by $-1$ on the target; since $2\ne0$ in $\mathbb C$, $\phi(v)=0$.
+Thus every equivariant map $\mathbb C[M_1]\to S^{(1,1)}$ is zero, and none is surjective.
+:::
+
+:::
+
+:::
 :::
