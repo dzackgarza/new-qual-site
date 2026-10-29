@@ -5,6 +5,7 @@ kind: example
 title: A sequence converging uniformly to $0$ on $\RR$ but not in $L^1(\RR)$
 prompts:
 - Give a sequence that converges uniformly, pointwise, and a.e., but not in $L^1$.
+- Give an example of a sequence of functions that converge uniformly but not in $L^1$.
 classification:
   areas:
   - real-analysis

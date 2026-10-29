@@ -317,7 +317,6 @@ corpus/theory/Real_Analysis/FE-73BWZ.md
 corpus/theory/Real_Analysis/FE-BFDRF.md
 corpus/theory/Real_Analysis/FE-FJAKV.md
 corpus/theory/Real_Analysis/FE-GN3CF.md
-corpus/theory/Real_Analysis/FE-KHKC4.md
 corpus/theory/Real_Analysis/FE-LJRG2.md
 corpus/theory/Real_Analysis/FE-MDTXW.md
 corpus/theory/Real_Analysis/FE-SWUGG.md
