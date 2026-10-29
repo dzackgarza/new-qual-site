@@ -15,14 +15,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source gave no domain or codomain and read "continuous function"; the statement now fixes f_n, f : E -> R with E a subset of R, as the solution assumes, and reads "functions".'
 ---
 
 ::: {.exercise}
-- Show that a uniform limit of bounded functions is bounded.
+Let $E \subseteq \RR$ and let $f_n, f : E \to \RR$.
 
-- Show that a uniform limit of continuous function is continuous.
+(a) Show that a uniform limit of bounded functions is bounded.
 
-  - I.e. if $f_n\to f$ uniformly with each $f_n$ continuous then $f$ is continuous.
+(b) Show that a uniform limit of continuous functions is continuous, i.e. if $f_n\to f$ uniformly with each $f_n$ continuous then $f$ is continuous.
 :::
 
 ::: {.solution}
@@ -67,12 +71,6 @@ For $x \in E$ with $|x - x_0| < \delta$, the triangle inequality and step [](#s2
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
