@@ -22,14 +22,11 @@ Show that the subspace $X \subset \RR^3$ that is the union of the spheres $S_n$ 
 :::
 
 ::: {.solution}
-**Goal:** Prove that the shrinking union of 2-spheres $X = \bigcup_{n=1}^\infty S_n \subset \RR^3$ meeting at the origin is simply connected ($\pi_1(X, 0) = 0$).
-
 ::: pf
 
-::: pf-step
+::: {.pf-step #x-path-connected}
 
-Geometry and topology of the space $X$:
-    *Proof:*
+$X$ is path-connected, and its spheres meet pairwise only at the origin.
 
 ::: pf-proof
 
@@ -63,8 +60,7 @@ For each $n \ge 1$, let $p_n = (2/n, 0, 0) \in S_n$ denote the pole of $S_n$ opp
 
 ::: {.pf-step #s2}
 
-Retraction of punctured spheres to the origin:
-    *Proof:*
+Each $X \setminus \{p_n\}$ deforms onto $\bigcup_{m \neq n} S_m$ by a homotopy that moves points only inside $S_n$.
 
 ::: pf-proof
 
@@ -99,8 +95,7 @@ Throughout the deformation $H_n$, every point moves within $S_n$, so $\|H_n(x, t
 
 ::: pf-step
 
-Perturbing loops to miss poles:
-    *Proof:*
+A loop at the origin is homotopic to a loop that misses the pole $p_n$ of a given sphere.
 
 ::: pf-proof
 
@@ -140,8 +135,7 @@ Applying this perturbation to each interval $(a_{n,j}, b_{n,j})$ produces a loop
 
 ::: pf-step
 
-Constructing the global null-homotopy:
-    *Proof:*
+Every loop at the origin is null-homotopic, so $\pi_1(X, 0) = 0$.
 
 ::: pf-proof
 
@@ -185,14 +179,12 @@ Therefore $[f] = 0$ in $\pi_1(X, 0)$, so $\pi_1(X, 0) = 0$.
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Conclusion:
-
-:::
+$X$ is path-connected by step [](#x-path-connected){.pf-ref}, and $\pi_1(X, 0) = 0$, so $X$ is simply connected.
 
 :::
 
-    *Proof:*
-    $X$ is path-connected and $\pi_1(X, 0) = 0$, so $X$ is simply connected.
+:::
+
 :::
