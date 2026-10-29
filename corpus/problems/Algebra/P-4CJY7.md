@@ -48,6 +48,7 @@ Hence its characteristic polynomial is
 $$
 \chi_\Phi(X)=X^n-1.
 $$
+
 The vector $\alpha$ is cyclic for $\Phi$: the vectors
 $$
 \alpha,\Phi(\alpha),\ldots,\Phi^{n-1}(\alpha)
