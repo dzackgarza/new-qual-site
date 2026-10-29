@@ -181,7 +181,6 @@ corpus/theory/Complex_Analysis/T-4M73O.md
 corpus/theory/Complex_Analysis/T-4MDS6.md
 corpus/theory/Complex_Analysis/T-4XPWL.md
 corpus/theory/Complex_Analysis/T-52HK6.md
-corpus/theory/Complex_Analysis/T-55MPA.md
 corpus/theory/Complex_Analysis/T-5BLYU.md
 corpus/theory/Complex_Analysis/T-5JNUU.md
 corpus/theory/Complex_Analysis/T-5SKNT.md

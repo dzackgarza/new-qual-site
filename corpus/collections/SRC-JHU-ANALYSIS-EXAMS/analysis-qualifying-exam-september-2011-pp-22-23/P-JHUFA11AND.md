@@ -43,7 +43,7 @@ A normalized Riemann map constructs the required function.
 
 The domain $U$ is nonempty since it contains $P$, and
 is a proper subset of $\CC$ since it is bounded.
-By the [[T-55MPA|Riemann mapping theorem]], there is a biholomorphism
+By the [[T-4MDS6|Riemann mapping theorem]], there is a biholomorphism
 $\phi:U\to D$, where $D$ is the unit disk. We normalize it
 by $\phi(P)=0$. The normalization is obtained,
 if necessary, by composing a Riemann map with a disk
