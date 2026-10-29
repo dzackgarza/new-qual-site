@@ -17,7 +17,7 @@ The cover of $\PP^n_A$ by the $n+1$ opens $D_+(x_i)$ gives $H^*(\PP^n_A,\OO(d))$
 
 [[T-IJW1K]]
 
-The shift $-n-1$ in the duality between $H^n(\PP^n,\OO(d))$ and $S_{-d-n-1}$, where $S=A[x_0,\ldots,x_n]$, is the degree of the canonical sheaf $\omega_{\PP^n}=\OO(-n-1)$ of [[../sheaves-of-modules/differentials|differentials]].
+The shift $-n-1$ in the duality between $H^n(\PP^n,\OO(d))$ and $S_{-d-n-1}$, where $S=A[x_0,\ldots,x_n]$, is the degree of the canonical sheaf $\omega_{\PP^n}=\OO(-n-1)$ of [[algebraic-geometry/sheaves-of-modules/differentials|differentials]].
 The perfect pairing $H^0(\PP^n,\OO(d))\times H^n(\PP^n,\OO(-d-n-1))\to H^n(\PP^n,\OO(-n-1))\cong A$ is [[T-COHSD|Serre duality]] on $\PP^n$.
 
 ## $H^1$: lifting sections and line bundles
