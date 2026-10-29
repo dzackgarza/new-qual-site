@@ -21,84 +21,47 @@ State the most general version of the implicit function theorem for real functio
 :::
 
 ::: {.solution}
+
+::: {.theorem title="Implicit function theorem"}
+Let $W\subseteq\RR^n\times\RR^m$ be open, let $F:W\to\RR^m$ be $C^k$ with $k\ge1$, and let $(a,b)\in W$ with $F(a,b)=0$.
+If the $m\times m$ matrix $\frac{\partial F}{\partial y}(a,b)$ of partial derivatives in the last $m$ variables is invertible, then there are open neighborhoods $U\ni a$ and $V\ni b$ and a $C^k$ function $g:U\to V$ such that, for $(x,y)\in U\times V$, $F(x,y)=0$ if and only if $y=g(x)$.
+:::
+
+Define $\Phi:W\to\RR^n\times\RR^m$ by $\Phi(x,y)\coloneqq(x,F(x,y))$.
+
 ::: pf
 
+::: {.pf-step #jacobian}
+$D\Phi(a,b)$ is invertible.
+
+::: pf-proof
+$$
+D\Phi(a,b)=\begin{pmatrix} I_n & 0 \\ \frac{\partial F}{\partial x}(a,b) & \frac{\partial F}{\partial y}(a,b) \end{pmatrix}
+$$
+has determinant $\det\frac{\partial F}{\partial y}(a,b)\ne0$.
+:::
+
+:::
+
+::: {.pf-step #inverse}
+There are open sets $W_0\ni(a,b)$ and $Z_0\ni(a,0)$ such that $\Phi:W_0\to Z_0$ is a bijection with $C^k$ inverse $\Psi$, and $\Psi(x,z)=(x,\psi(x,z))$ with $F(x,\psi(x,z))=z$.
+
+::: pf-proof
+The inverse function theorem applies by step [](#jacobian){.pf-ref}.
+$\Phi$ preserves the first $n$ coordinates, so $\Psi$ does too; applying $\Phi$ to $\Psi(x,z)$ gives the identity.
+:::
+
+:::
+
 ::: pf-step
-**Implicit Function Theorem.** Let $F : \mathbb{R}^{n+m} \to \mathbb{R}^m$ be $C^k$ ($k \ge 1$), and let $(a, b) \in \mathbb{R}^n \times \mathbb{R}^m$ with $F(a, b) = 0$. If the $m \times m$ matrix $\frac{\partial F}{\partial y}(a, b)$ (the partial derivatives with respect to the last $m$ variables) is invertible, then there are open neighborhoods $U \ni a$ and $V \ni b$ and a unique $C^k$ function $g : U \to V$ such that $g(a) = b$ and $F(x, g(x)) = 0$ for all $x \in U$.
+With $U\times V\subseteq W_0$ a product neighborhood of $(a,b)$, shrunk so that $(x,0)\in Z_0$ and $\psi(x,0)\in V$ for $x\in U$, the map $g(x)\coloneqq\psi(x,0)$ has the stated properties.
 
 ::: pf-proof
-statement of the theorem.
+$g$ is $C^k$ because $\psi$ is, and $F(x,g(x))=0$ by step [](#inverse){.pf-ref}; $g(a)=b$ because $\Phi(a,b)=(a,0)$.
+Such $U$ exists by continuity of $\psi$ at $(a,0)$.
+Conversely, if $(x,y)\in U\times V$ and $F(x,y)=0$, then $\Phi(x,y)=(x,0)=\Phi(x,g(x))$ with both points in $W_0$, so $y=g(x)$ by injectivity of $\Phi$ on $W_0$.
 :::
 
-:::
-
-::: pf-step
-Define $\Phi : \mathbb{R}^{n+m} \to \mathbb{R}^{n+m}$ by $\Phi(x, y) = (x, F(x, y))$.
-
-::: pf-proof
-augment $F$ with the identity on the first $n$ coordinates.
-:::
-
-:::
-
-::: {.pf-step #jacobian-invertible}
-The Jacobian of $\Phi$ at $(a, b)$ is
-$$D\Phi(a,b) = \begin{pmatrix} I_n & 0 \\ \frac{\partial F}{\partial x}(a,b) & \frac{\partial F}{\partial y}(a,b) \end{pmatrix},$$
-which is invertible because $\frac{\partial F}{\partial y}(a,b)$ is invertible.
-
-::: pf-proof
-block matrix; its determinant is $\det \frac{\partial F}{\partial y}(a,b) \neq 0$.
-:::
-
-:::
-
-::: {.pf-step #local-inverse-exists}
-By the inverse function theorem, $\Phi$ has a $C^k$ local inverse $\Psi$ near $(a, b)$.
-
-::: pf-proof
-Step [](#jacobian-invertible){.pf-ref} and the inverse function theorem.
-:::
-
-:::
-
-::: {.pf-step #psi-relation}
-Write $\Psi(x, z) = (x, \psi(x, z))$; then $\Phi(x, \psi(x,z)) = (x, z)$, so $F(x, \psi(x,z)) = z$.
-
-::: pf-proof
-Step [](#local-inverse-exists){.pf-ref}, matching the first $n$ coordinates.
-:::
-
-:::
-
-::: {.pf-step #define-g}
-Define $g(x) = \psi(x, 0)$.
-
-::: pf-proof
-set $z = 0$.
-:::
-
-:::
-
-::: {.pf-step #g-satisfies-equation}
-Then $F(x, g(x)) = F(x, \psi(x,0)) = 0$, and $g(a) = \psi(a, 0) = b$ (since $\Phi(a,b) = (a, 0)$).
-
-::: pf-proof
-Steps [](#psi-relation){.pf-ref} and [](#define-g){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #g-is-implicit-function}
-Hence $g$ is the desired implicit function, proving the implicit function theorem from the inverse function theorem.
-
-::: pf-proof
-Step [](#g-satisfies-equation){.pf-ref}.
-:::
-
-:::
-
-::: pf-qed
-Step [](#g-is-implicit-function){.pf-ref}.
 :::
 
 :::
