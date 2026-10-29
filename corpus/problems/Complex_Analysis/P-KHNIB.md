@@ -18,50 +18,42 @@ review: draft
 ::: {.problem}
 Evaluate the integral
 $$
-\int_\mathbb{R} {dx \over 1 + x^4}
+\int_\RR {dx \over 1 + x^4}
 .$$
 
 What are the poles of ${1\over 1 + z^4}$ ?
 :::
 
 ::: {.solution}
-The poles are the four roots of
-\[
-z^4=-1=e^{i(\pi+2\pi k)},
-\]
-namely
-\[
-\boxed{
-e^{i\pi/4},\quad e^{3i\pi/4},\quad e^{5i\pi/4},\quad e^{7i\pi/4}.}
-\]
-All are simple.
+Let $F(z)=\frac1{1+z^4}$.
 
-To evaluate the integral, integrate
-\[
-F(z)=\frac1{1+z^4}
-\]
-over the upper semicircle of radius $R$ and let $R\to\infty$. The arc integral
-vanishes because $F(z)=O(R^{-4})$. The enclosed poles are
-\[
-\zeta_1=e^{i\pi/4},
-\qquad
-\zeta_2=e^{3i\pi/4}.
-\]
-Since the poles are simple,
-\[
-\operatorname{Res}(F;\zeta)=\frac1{4\zeta^3}.
-\]
-Hence
-\[
-\operatorname{Res}(F;\zeta_1)
-+\operatorname{Res}(F;\zeta_2)
-=\frac1{4}\left(e^{-3i\pi/4}+e^{-9i\pi/4}\right)
-=-\frac{i}{2\sqrt2}.
-\]
-Therefore
-\[
-\int_{-\infty}^{\infty}\frac{dx}{1+x^4}
-=2\pi i\left(-\frac{i}{2\sqrt2}\right)
-=\boxed{\frac{\pi}{\sqrt2}}.
-\]
+::: pf
+
+::: {.pf-step #poles}
+The poles of $F$ are the simple poles $\boxed{e^{i\pi/4},\ e^{3i\pi/4},\ e^{5i\pi/4},\ e^{7i\pi/4}}$, and $\operatorname{Res}(F;\zeta) = -\zeta/4$ at each.
+
+::: pf-proof
+They are the four distinct roots of $z^4=-1=e^{i\pi}$.
+Each is simple because the derivative $4z^3$ does not vanish there, and $\operatorname{Res}(F;\zeta)=\frac1{4\zeta^3} = \frac{\zeta}{4\zeta^4} = -\frac{\zeta}{4}$.
+:::
+
+:::
+
+::: pf-step
+$$
+\int_{-\infty}^{\infty}\frac{dx}{1+x^4} =\boxed{\frac{\pi}{\sqrt2}}.
+$$
+
+::: pf-proof
+Integrate $F$ over the boundary of the upper half-disc of radius $R > 1$.
+On the arc, $\abs{F} \leq \frac{1}{R^4 - 1}$, so the arc integral is at most $\frac{\pi R}{R^4-1} \to 0$.
+The enclosed poles are $e^{i\pi/4}$ and $e^{3i\pi/4}$, so by step [](#poles){.pf-ref} and the residue theorem the integral is
+$$
+2\pi i\cdot\left(-\frac{e^{i\pi/4}+e^{3i\pi/4}}{4}\right) = 2\pi i \cdot\left(-\frac{i\sqrt2}{4}\right) = \frac{\pi}{\sqrt2}.
+$$
+:::
+
+:::
+
+:::
 :::
