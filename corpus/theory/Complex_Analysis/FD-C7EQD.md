@@ -34,5 +34,5 @@ In particular $m$ is the smallest integer $k$ for which $\lim_{z\to a}(z-a)^kf(z
 Let $c\coloneqq\lim_{z\to a}(z-a)^mf(z)\neq0$.
 For $k>m$, $(z-a)^kf(z)=(z-a)^{k-m}\cdot(z-a)^mf(z)\to0\cdot c=0$.
 For $k<m$, $\abs{(z-a)^kf(z)}=\abs{z-a}^{k-m}\abs{(z-a)^mf(z)}$, where the first factor tends to $\infty$ and the second to $\abs{c}>0$.
-Finally, $h(z)\coloneqq(z-a)^mf(z)$ is bounded near $a$, so by [[D-BQLJV|Riemann's removable singularity theorem]] it extends holomorphically with $h(a)=c\neq0$, and $f(z)=(z-a)^{-m}h(z)$ is a pole of order $m$ in the sense of [[D-AUD6K]]; conversely such a factorization gives $(z-a)^mf(z)=h(z)\to h(a)\neq0$.
+Finally, $h(z)\coloneqq(z-a)^mf(z)$ is bounded near $a$, so by [[T-ZZJDP|Riemann's removable singularity theorem]] it extends holomorphically with $h(a)=c\neq0$, and $f(z)=(z-a)^{-m}h(z)$ is a pole of order $m$ in the sense of [[D-AUD6K]]; conversely such a factorization gives $(z-a)^mf(z)=h(z)\to h(a)\neq0$.
 :::

@@ -26,5 +26,5 @@ The isolated singularity $z_0$ is essential if and only if $\lim_{z\to z_0}f(z)$
 
 ::: {.proof}
 If $z_0$ is removable, $f$ agrees near $z_0$ with a holomorphic $g$, so $f(z)\to g(z_0)\in\CC$; if $z_0$ is a pole, $\abs{f(z)}\to\infty$ by the proposition on [[D-AUD6K]].
-Conversely, if $f(z)$ has a limit in $\CC$, then $f$ is bounded near $z_0$ and $z_0$ is removable by [[D-BQLJV|Riemann's removable singularity theorem]]; if $\abs{f(z)}\to\infty$, then $z_0$ is a pole by the proposition on [[D-AUD6K]].
+Conversely, if $f(z)$ has a limit in $\CC$, then $f$ is bounded near $z_0$ and $z_0$ is removable by [[T-ZZJDP|Riemann's removable singularity theorem]]; if $\abs{f(z)}\to\infty$, then $z_0$ is a pole by the proposition on [[D-AUD6K]].
 :::

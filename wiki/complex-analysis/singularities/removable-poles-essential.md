@@ -39,8 +39,6 @@ In terms of limiting behavior:
 
 [[D-BQLJV]]
 
-[[FD-BRJK5]]
-
 ::: {.example title="Removable singularities"}
 \envlist
 
@@ -52,18 +50,7 @@ In terms of limiting behavior:
 
 [[T-ZZJDP]]
 
-[[FT-5NI77]] [[FT-LGWHM]]
-
-::: {.proof}
-If $z_0$ is removable, the extension is continuous at $z_0$, so $f$ is bounded near $z_0$.
-Conversely, suppose $\abs f\leq M$ on $0<\abs{z-z_0}<\delta$.
-Define $h(z)\coloneqq (z-z_0)^2 f(z)$ for $z\neq z_0$ and $h(z_0)\coloneqq 0$.
-Then $\abs{(h(z)-h(z_0))/(z-z_0)} = \abs{(z-z_0)f(z)}\leq M\abs{z-z_0}\to 0$, so $h$ is holomorphic on $D_\delta(z_0)$ with $h(z_0)=h'(z_0)=0$.
-Its Taylor series is $h(z) = \sum_{k\geq 2} a_k(z-z_0)^k$, so $f(z) = \sum_{k\geq 0} a_{k+2}(z-z_0)^k$ for $z\neq z_0$, and the right side is holomorphic on $D_\delta(z_0)$.
-
-:::
-
-::: {.proof title="Riemann's removable singularity theorem, by Laurent coefficients"}
+::: {.remark title="(ii) implies (vii) by Laurent coefficients"}
 Suppose $\abs f\leq M$ on $0<\abs{z-z_0}<\delta$, and write $f(z)=\sum_{k\in\ZZ}c_k(z-z_0)^k$ there.
 For $n\geq 1$ and $0<r<\delta$,
 $$

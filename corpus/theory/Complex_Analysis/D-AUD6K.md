@@ -53,7 +53,7 @@ The power series $h(z)\coloneqq\sum_{k\ge-n}c_k(z-z_0)^{k+n}$ converges for $0<\
 
 Finally, if $f$ has a pole of order $n$, then $\abs{f(z)}=\abs{h(z)}/\abs{z-z_0}^n\to\infty$ because $h(z_0)\neq0$.
 Conversely, if $\abs{f(z)}\to\infty$, then $f$ has no zeros on some $D_\rho(z_0)\setminus\{z_0\}$, and $1/f$ is holomorphic and bounded there with $1/f(z)\to0$.
-By [[D-BQLJV|Riemann's removable singularity theorem]], $g\coloneqq1/f$ with $g(z_0)\coloneqq0$ is holomorphic on $D_\rho(z_0)$.
+By [[T-ZZJDP|Riemann's removable singularity theorem]], $g\coloneqq1/f$ with $g(z_0)\coloneqq0$ is holomorphic on $D_\rho(z_0)$.
 It is not identically zero, so $z_0$ is a zero of $g$ of some order $n\ge1$, and (b) holds.
 :::
 

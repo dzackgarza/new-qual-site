@@ -49,7 +49,7 @@ there would be $w\in\CC$ and $\delta>0$ such that
 $\abs{f(z)-w}\geq\delta$ throughout this punctured disk.
 Then $g(z)=1/(f(z)-w)$ is holomorphic and bounded by
 $1/\delta$ there. It extends holomorphically across zero
-by [[D-BQLJV|Riemann's removable singularity theorem]]; denote
+by [[T-ZZJDP|Riemann's removable singularity theorem]]; denote
 the extension by $G$.
 
 If $G(0)\ne0$, the identity $f=w+1/G$ extends $f$

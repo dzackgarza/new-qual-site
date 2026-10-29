@@ -51,7 +51,7 @@ never vanishes. Moreover,
 $$
 \abs{F+1}^2-\abs{F-1}^2=4\operatorname{Re}F\geq4>0,
 $$
-so $\abs{q}<1$ throughout $U$. [[D-BQLJV|Riemann's removable singularity theorem]]
+so $\abs{q}<1$ throughout $U$. [[T-ZZJDP|Riemann's removable singularity theorem]]
 extends $q$ holomorphically to the full unit disk; write $Q$ for this extension.
 Continuity gives $\abs{Q(0)}\leq1$.
 

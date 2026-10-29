@@ -36,7 +36,7 @@ For $0<|z|<1$,
 $$
 |g(z)|=|z|\,|f(z)|\le |z|^{1/2}.
 $$
-Thus $g$ is bounded near $0$, so the [[D-BQLJV|Riemann removable singularity theorem]] gives a holomorphic extension $G$ to the unit disk. The displayed estimate also gives
+Thus $g$ is bounded near $0$, so the [[T-ZZJDP|Riemann removable singularity theorem]] gives a holomorphic extension $G$ to the unit disk. The displayed estimate also gives
 $$
 G(0)=\lim_{z\to0}zf(z)=0.
 $$
