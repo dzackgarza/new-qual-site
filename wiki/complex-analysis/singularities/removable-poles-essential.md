@@ -150,5 +150,5 @@ The values taken near an essential singularity are described on [[complex-analys
 [[E-JUT2P]]
 [[E-KUGNH]]
 [[P-JHUMAY10ANA]]
-[[E-W2CWJ]]
+[[P-WESCA10-II5]]
 [[E-QX3VF]]
