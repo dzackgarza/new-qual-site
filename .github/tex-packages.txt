@@ -1,7 +1,6 @@
 scheme-infraonly
 latex-bin
 luatex
-l3backend
 amscls amsfonts amsmath latex bbm-macros bigintcalc bitset bookmark caption
 carlisle ctablestack dynkin-diagrams enumitem epstopdf-pkg esint etoolbox
 gettitlestring graphics graphics-cfg graphics-def hobby hycolor hyperref iftex
