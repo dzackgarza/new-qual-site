@@ -13,11 +13,6 @@ topics:
 # The spaces
 
 Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$.
-If $\mu(X)<\infty$ and $1\le p<q\le\infty$, then $L^q(\mu)\subseteq L^p(\mu)$.
-For Lebesgue measure on $\RR$ neither of $L^p$ and $L^q$ contains the other, and for counting measure on $\NN$, $\ell^p\subseteq\ell^q$.
-
-For $1<p<\infty$ and $q=p/(p-1)$, the map $g\mapsto\qty{f\mapsto\int fg\,d\mu}$ is an isometric isomorphism $L^q\cong(L^p)^*$; for $p=1$ this holds when $\mu$ is $\sigma$-finite.
-For Lebesgue measure on $[0,1]$, the corresponding map $L^1\to(L^\infty)^*$ is not surjective.
 By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 
 [[PR-NFB7Q]]
@@ -35,8 +30,6 @@ By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 [[PR-3W4FO]]
 
 ## Approximation and translation
-
-For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with compact support are dense in $L^p$, and $\norm{f(\wait+h)-f}_p\to0$ as $h\to0$ for every $f\in L^p$.
 
 [[FR-7YFAU]]
 
