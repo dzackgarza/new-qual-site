@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that if $f \geq 0$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
+(a) Show that if $f \geq 0$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
 
-- Show that on a measure space of finite measure, a bounded function is Lebesgue integrable iff it is measurable.
+(b) Show that on a measure space of finite measure, a bounded function is Lebesgue integrable iff it is measurable.
 
-- Show that simple functions are dense in $L^1$.
+(c) Show that simple functions are dense in $L^1$.
 
-- Show that step functions are dense in $L^1$.
+(d) Show that step functions are dense in $L^1$.
 
-- Show that smooth compactly supported functions are dense in $L^1$.
+(e) Show that smooth compactly supported functions are dense in $L^1$.
 :::
 
 ::: {.solution}
@@ -144,12 +144,6 @@ $\|f - f_R \ast \phi_\eps\|_1 \le \|f - f_R\|_1 + \|f_R - f_R \ast \phi_\eps\|_1
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} treat the five parts in order.
 
 :::
 
