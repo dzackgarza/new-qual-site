@@ -41,21 +41,6 @@ A family $\mathcal F$ of functions on a metric space $X$ is not equicontinuous i
 
 [[D-MBDTR]]
 
-::: {.proposition title="Local boundedness implies equicontinuity"}
-Let $\mathcal F$ be a family of holomorphic functions on $\Omega$ that is uniformly bounded on compact subsets.
-Then $\mathcal F$ is equicontinuous on every compact $K\subseteq\Omega$.
-:::
-
-::: {.proof}
-Choose $r>0$ such that $K_{2r}\coloneqq\theset{z : \operatorname{dist}(z,K)\leq 2r}\subseteq\Omega$, and let $M$ bound every $f\in\mathcal F$ on the compact set $K_{2r}$.
-For $\xi\in K_r$ the closed disc $\overline{D_r(\xi)}$ lies in $K_{2r}$, so Cauchy's estimate gives $\abs{f'(\xi)}\leq M/r$.
-For $z,w\in K$ with $\abs{z-w}<r$, the segment $[z,w]$ lies in $D_r(z)\subseteq K_r$, so $\abs{f(z)-f(w)}\leq (M/r)\abs{z-w}$ for every $f\in\mathcal F$.
-:::
-
-Montel's theorem follows by applying the Arzelà--Ascoli theorem on each set of an exhaustion of $\Omega$ by compact sets and taking a diagonal subsequence.
-
-[[T-MCB7V]]
-
 [[D-OHFRH]]
 
 ::: {.remark title="Univalent maps"}

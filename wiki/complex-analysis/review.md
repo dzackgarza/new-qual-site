@@ -105,8 +105,6 @@ See [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 [[T-6F3GO]]
 
-[[T-MCB7V]]
-
 [[T-4ALS2]]
 
 [[T-4MDS6]]
