@@ -32,5 +32,5 @@ $$
 ::: {.remark}
 Geometrically, (2) says that the plane curve $t\mapsto(f(t),g(t))$, $t\in[a,b]$, has a tangent vector $(f'(\xi),g'(\xi))$ at some interior parameter $\xi$ that is parallel to the chord from $(f(a),g(a))$ to $(f(b),g(b))$.
 
-![](../../assets/figures/2021-11-09_22-20-24.png)
+![A plane curve running from the point (f(a), g(a)) to the point (f(b), g(b)), with the chord through these two points drawn in red, and a parallel green line tangent to the curve at the point (f(c), g(c)).](../../assets/figures/2021-11-09_22-20-24.png)
 :::
