@@ -14,6 +14,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked Problem 18 on page 6 of Week2_solns.pdf and added an erratum remark that the first two factors of product (c) are undefined or negative.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source indexed product (c) from n=1, where the n=1 factor is undefined and the n=2 factor is negative; product (c) now starts at n=3, where every factor lies in (0,1).
 ---
 
 ::: {.problem}
@@ -31,13 +35,9 @@ Consider the infinite products
 \[
 \text{(a) }\prod_{n=1}^{\infty}\left(1+\frac1{n^2}\right),\qquad
 \text{(b) }\prod_{n=1}^{\infty}\left(1+\frac1n\right),\qquad
-\text{(c) }\prod_{n=1}^{\infty}\left(1-\frac1{\log n}\right).
+\text{(c) }\prod_{n=3}^{\infty}\left(1-\frac1{\log n}\right).
 \]
 Show that (a) converges, (b) diverges to $+\infty$, and (c) diverges to $0$.
-:::
-
-::: {.remark}
-Erratum: product (c) does not satisfy the source's standing hypothesis that the factors are positive. At $n = 1$ the factor $1 - \frac{1}{\log 1}$ is undefined, and at $n = 2$ it is $1 - \frac{1}{\log 2} \approx -0.44 < 0$. For $n \ge 3$ we have $\log n > 1$, so every factor lies in $(0,1)$; the intended claim is that $\prod_{n=3}^{\infty}\left(1 - \frac{1}{\log n}\right)$ diverges to $0$.
 :::
 
 ::: {.solution}
@@ -199,7 +199,7 @@ Step [](#s1-5){.pf-ref} gives a positive finite limit of the partial products.
 
 ::: {.pf-step #s1-7}
 
-Each factor satisfies
+Let \(Q_N=\prod_{n=1}^{N}\left(1+\frac1n\right)\). Each factor satisfies
 \[
 \boxed{
 1+\frac1n
@@ -286,7 +286,7 @@ Q_N=N+1\to+\infty.
 
 ::: {.pf-step #s1-11}
 
-For every \(n\ge3\),
+Let \(R_N=\prod_{n=3}^{N}\left(1-\frac1{\log n}\right)\). For every \(n\ge3\),
 \[
 \boxed{
 0<
@@ -464,7 +464,7 @@ step [](#s1-16){.pf-ref} gives the result.
 
 ::: {.pf-step #s1-18}
 
-Thus the intended positive-tail product satisfies
+Thus
 \[
 \boxed{
 \prod_{n=3}^{\infty}
@@ -484,8 +484,7 @@ This is step [](#s1-17){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} proves (a), step [](#s1-10){.pf-ref} proves (b), and step [](#s1-18){.pf-ref} proves the
-corrected form of (c).
+Step [](#s1-6){.pf-ref} proves (a), step [](#s1-10){.pf-ref} proves (b), and step [](#s1-18){.pf-ref} proves (c).
 
 :::
 
