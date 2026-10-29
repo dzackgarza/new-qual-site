@@ -14,7 +14,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'Part (a) of the source printed m on the left side, which is undefined for a non-measurable union of arbitrary sets E_j; the statement now uses the outer measure m_* there.'
