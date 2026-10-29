@@ -461,7 +461,9 @@ mathematical correction under its own node, not under copy policy.
     `assets/attachments/extracted/<stem>.md`, and the MD chip can open the wrong one.
     **Acceptance:** each PDF keeps one extraction beside it whose MinerU Flash or Mistral OCR
     provenance the repository establishes; the other copy is trashed and every reference to it
-    repointed; a PDF with neither copy established is regenerated with MinerU Flash.
+    repointed; a PDF with neither copy established is regenerated with MinerU Flash. **Closed.**
+    chapter-6.pdf is a degraded scan: its per-page Flash extraction garbles Questions 1 and 5,
+    and a Mistral OCR pass is still owed when the API accepts requests.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
