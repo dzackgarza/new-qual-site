@@ -6,7 +6,7 @@ title: Riemann integrability of $g$ when $|g(x)-g(y)|\le|f(x)-f(y)|$ for integra
   $f$
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Riemann Integrability
   - Integrals
