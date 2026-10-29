@@ -17,6 +17,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source part (a) condition 2 omitted H ⊆ E ⊆ V, so it held for every E with V = H = ∅; the statement now requires H ⊆ E ⊆ V.'
 ---
 
 ::: {.problem}
@@ -25,7 +29,7 @@ a. Let $E \subseteq \RR^n$ be bounded.
 
     1. For any $\epsilon>0$ there exist an open set $G$ and a closed set $F$ such that $F \subseteq E \subseteq G$ and $m(G\sm F) < \epsilon$.
 
-    2. There exist a $G_\delta$ set $V$ and an $F_\sigma$ set $H$ such that $m(V\sm H) = 0$.
+    2. There exist a $G_\delta$ set $V$ and an $F_\sigma$ set $H$ such that $H \subseteq E \subseteq V$ and $m(V\sm H) = 0$.
 
 b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
 
@@ -44,11 +48,11 @@ b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
 
 ::: pf-step
 
-Part (a), with $H \subseteq E \subseteq V$ in condition 2.
+Part (a).
 
 ::: pf-proof
 
-This is [[P-7ITXP]]. If (1) holds, take $G_k$ and $F_k$ for $\eps = 1/k$ and put $V = \bigcap_k G_k$, $H = \bigcup_k F_k$; then $m(V \setminus H) \le m(G_k \setminus F_k) < 1/k$. Conversely, intersect $V$ with an open ball containing $E$, write it as a decreasing intersection of open sets of finite measure and $H$ as an increasing union of closed sets, and apply continuity of measure from above and below.
+This is [[P-7ITXP]]. If (1) holds, take $G_k$ and $F_k$ for $\eps = 1/k$ and put $V = \bigcap_k G_k$, $H = \bigcup_k F_k$; then $H \subseteq E \subseteq V$ and $m(V \setminus H) \le m(G_k \setminus F_k) < 1/k$ for every $k$, so $m(V \setminus H) = 0$. Conversely, intersect $V$ with an open ball containing $E$, write it as a decreasing intersection of open sets of finite measure and $H$ as an increasing union of closed sets, and apply continuity of measure from above and below.
 
 :::
 
@@ -86,8 +90,4 @@ $\int f_n$ is nondecreasing, so $\lim_n\int f_n$ exists in $[0,\infty]$. Since $
 
 :::
 
-:::
-
-::: {.remark}
-Condition 2 of part (a) needs $H \subseteq E \subseteq V$; as printed, it holds for every $E$ with $V = H = \emptyset$.
 :::
