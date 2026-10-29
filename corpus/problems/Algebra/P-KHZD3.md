@@ -51,7 +51,7 @@ It is a regular local ring, and a regular local ring is a UFD by the Auslander--
 The answer is $\boxed{\text{not in general}}$: there are UFDs $R$ for which $R[[x]]$ is not a UFD.
 
 ::: pf-proof
-Samuel constructed such rings (P. Samuel, *On unique factorization domains*, Illinois J. Math. **5** (1961), 1--17). So the polynomial-ring theorem of Gauss, that $R$ a UFD implies $R[x]$ a UFD, has no unrestricted formal-power-series analogue.
+Samuel constructed such rings [@Sam61]. So the polynomial-ring theorem of Gauss, that $R$ a UFD implies $R[x]$ a UFD, has no unrestricted formal-power-series analogue.
 :::
 
 :::
