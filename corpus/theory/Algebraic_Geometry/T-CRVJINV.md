@@ -78,7 +78,7 @@ $$
 with $p_0$ mapping to $\infty$.
 The map is separable and tamely ramified.
 Riemann--Hurwitz gives four branch points; after an automorphism of $\PP^1$ they are $0,1,\lambda,\infty$, yielding the Legendre equation.
-The residual ambiguity is the $S_3$-action permuting $\{0,1,\lambda\}$, whose orbit is $\lambda, \lambda^{-1}, 1-\lambda, (1-\lambda)^{-1}, \lambda(\lambda-1)^{-1}, \lambda^{-1}(\lambda-1)$; the formula for $j$ is the symmetric function that kills it.
+The residual ambiguity is the $S_3$-action permuting $\{0,1,\lambda\}$, whose orbit is $\lambda, \lambda^{-1}, 1-\lambda, (1-\lambda)^{-1}, \lambda(\lambda-1)^{-1}, \lambda^{-1}(\lambda-1)$; the formula for $j$ is invariant under this action.
 
 The complete linear system $\abs{3p_0}$ gives a plane cubic Weierstrass model.
 The Legendre form is instead obtained from the degree-two map above by normalizing its branch divisor.
