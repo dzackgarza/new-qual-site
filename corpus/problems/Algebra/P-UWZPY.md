@@ -20,49 +20,49 @@ audit:
 ---
 
 ::: {.problem}
-Let $H$ be a subgroup of a finite group $G$, and let $(\rho, W)$ be a representation of $H$ over $\mathbb{C}$.
+Let $H$ be a subgroup of a finite group $G$, and let $(\rho, W)$ be a representation of $H$ over $\CC$.
 How is the induced representation $\operatorname{Ind}_H^G(W)$ defined? State its dimension, character formula (Frobenius formula), and Frobenius Reciprocity.
 :::
 
 ::: {.solution}
-Regard $W$ as a left $\mathbb C[H]$-module. The induced representation is
-\[
+Regard $W$ as a left $\CC[H]$-module. The induced representation is
+$$
 \operatorname{Ind}_H^G W
-=\mathbb C[G]\otimes_{\mathbb C[H]}W,
-\]
+=\CC[G]\otimes_{\CC[H]}W,
+$$
 with $G$ acting by left multiplication on the first factor.
 
-If $g_1,\dots,g_m$ are representatives for the left cosets of $H$ in $G$, then
-\[
-\mathbb C[G]=\bigoplus_{i=1}^m g_i\mathbb C[H]
-\]
-as a right $\mathbb C[H]$-module. Hence
-\[
+If $g_1,\ldots,g_m$ are representatives for the left cosets of $H$ in $G$, then
+$$
+\CC[G]=\bigoplus_{i=1}^m g_i\CC[H]
+$$
+as a right $\CC[H]$-module. Hence
+$$
 \dim\operatorname{Ind}_H^GW=[G:H]\dim W.
-\]
+$$
 
 If $\chi$ is the character of $W$, extended by $0$ off $H$, then for $g\in G$ the induced character is
-\[
+$$
 \chi_{\operatorname{Ind}}(g)
-=\frac1{|H|}\sum_{x\in G}\chi(x^{-1}gx).
-\]
+=\frac1{\abs{H}}\sum_{x\in G}\chi(x^{-1}gx).
+$$
 Equivalently,
-\[
+$$
 \chi_{\operatorname{Ind}}(g)
 =\sum_{\substack{i\\g_i^{-1}gg_i\in H}}
 \chi(g_i^{-1}gg_i).
-\]
+$$
 
-Frobenius reciprocity is the natural adjunction
-\[
-\operatorname{Hom}_G(\operatorname{Ind}_H^GW,U)
+For every representation $U$ of $G$, Frobenius reciprocity is the natural isomorphism
+$$
+\Hom_G(\operatorname{Ind}_H^GW,U)
 \cong
-\operatorname{Hom}_H(W,\operatorname{Res}_H^GU),
-\]
-and at the character level
-\[
-\langle\operatorname{Ind}_H^G\chi,\psi\rangle_G
+\Hom_H(W,\Res_H^GU),
+$$
+and for characters $\chi$ of $H$ and $\psi$ of $G$,
+$$
+\inner{\operatorname{Ind}_H^G\chi}{\psi}_G
 =
-\langle\chi,\operatorname{Res}_H^G\psi\rangle_H.
-\]
+\inner{\chi}{\Res_H^G\psi}_H.
+$$
 :::
