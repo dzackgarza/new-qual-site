@@ -29,13 +29,13 @@ topics:
 ::: {.proof}
 Let $f\colon X\to X$ be a contraction with constant $c<1$ on a complete metric space $X$.
 
-Uniqueness: if $x, y$ are fixed points, then $\abs{x-y} = \abs{f(x) - f(y)}\leq c \abs{x-y}$, and $c<1$ forces $\abs{x-y} = 0$.
+Uniqueness: if $x, y$ are fixed points, then $d(x, y) = d(f(x), f(y))\leq c d(x, y)$, and $c<1$ forces $d(x, y) = 0$.
 
 Existence: choose $x_0\in X$ and set $x_k \coloneqq f(x_{k-1})$.
-Then $\abs{x_{k+1}-x_k} = \abs{f(x_k) - f(x_{k-1}) } \leq c\abs{x_k - x_{k-1}}$, so by induction $\abs{x_{k+1}- x_k}\leq c^k \abs{x_1 - x_0}$.
+Then $d(x_{k+1}, x_k) = d(f(x_k), f(x_{k-1})) \leq c\,d(x_k, x_{k-1})$, so by induction $d(x_{k+1}, x_k)\leq c^k d(x_1, x_0)$.
 For $n < m$,
 $$
-\abs{x_m - x_n} \leq \sum_{k=n}^{m-1} \abs{x_{k+1} - x_{k}} \leq \sum_{k=n}^{m-1} c^k \abs{x_1 - x_0} \leq \frac{c^n}{1-c} \abs{x_1 - x_0},
+d(x_m, x_n) \leq \sum_{k=n}^{m-1} d(x_{k+1}, x_{k}) \leq \sum_{k=n}^{m-1} c^k d(x_1, x_0) \leq \frac{c^n}{1-c} d(x_1, x_0),
 $$
 which tends to $0$ as $n\to\infty$, so $(x_k)$ is Cauchy and converges to some $x\in X$.
 Since $f$ is continuous, $f(x) = \lim_k f(x_k) = \lim_k x_{k+1} = x$.
@@ -166,7 +166,7 @@ For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\t
 
 :::
 
-## Exercises
+## Problems
 
 [[E-5GT6F]]
 
