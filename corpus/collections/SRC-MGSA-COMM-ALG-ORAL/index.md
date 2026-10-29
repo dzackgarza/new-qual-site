@@ -12,7 +12,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- assets/attachments/Harvard_Commutative_Algebra_Oral_Questions.pdf
+- assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf
 source:
   source_kind: compilation
   area: algebra
