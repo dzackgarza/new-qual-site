@@ -16,31 +16,34 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source wrote log(1/x), undefined for x < 0, defined f at x = 0 by a formula with no value there, and did not define Hf. The statement now uses log(1/|x|), restricts to 0 < |x| <= 1/2, and defines Hf as the Hardy-Littlewood maximal function.'
 ---
 
 ::: {.problem}
 Consider the function
-\[
-f(x) \definedas 
+$$
+f(x) \coloneqq
 \begin{cases}
-{1\over \abs{x} \qty{ \log\qty{1\over x}}^2 } &  \abs{x} \leq {1\over 2}
+{1\over \abs{x} \qty{ \log\qty{1\over \abs x}}^2 } & 0 < \abs{x} \leq {1\over 2},
 \\
-0 & \text{else}.
+0 & \text{else},
 \end{cases}
-\]
+$$
+and let $Hf(x) \coloneqq \sup_{r>0}\frac{1}{2r}\int_{x-r}^{x+r}\abs{f(t)}\,dt$ be its Hardy–Littlewood maximal function.
 
-a. Show that $f \in L^1(\RR)$.
+(a) Show that $f \in L^1(\RR)$.
 
-b. Show that there exists a $c>0$ such that for all $\abs{x} \leq 1/2$,
-\[
-Hf(x) \geq {c \over \abs{x} \log\qty{1\over \abs x} }
-.\]
+(b) Show that there exists a $c>0$ such that for all $0 < \abs{x} \leq 1/2$,
+$$
+Hf(x) \geq {c \over \abs{x} \log\qty{1\over \abs x} }.
+$$
 Conclude that $Hf$ is not locally integrable.
 :::
 
 ::: {.solution}
-Here $Hf(x) = \sup_{r>0}\frac{1}{2r}\int_{x-r}^{x+r}|f(t)|\,dt$ is the Hardy--Littlewood maximal function, and $f(x) = \frac{1}{|x|\log^2(1/|x|)}$ for $0 < |x| \le 1/2$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -88,8 +91,4 @@ $$
 
 :::
 
-:::
-
-::: {.remark}
-For $x < 0$ the formula is read with $\log(1/|x|)$ in place of $\log(1/x)$, so that $f$ is even.
 :::
