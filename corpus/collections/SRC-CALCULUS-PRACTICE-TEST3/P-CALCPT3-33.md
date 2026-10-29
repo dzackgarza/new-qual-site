@@ -5,7 +5,7 @@ kind: problem
 title: "Probability that a random arrangement of $n$ weights is increasing"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Probability, Permutations]
 relations: []
 review: draft
 audit:
