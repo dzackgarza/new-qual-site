@@ -20,49 +20,42 @@ Use this to prove Cauchy's Theorem for functions that are analytic in a rectangl
 :::
 
 ::: {.solution}
-Let
-\[
-R=[a,b]\times[c,d]
-\]
-and let $P,Q$ have continuous first partial derivatives on a neighborhood of
-$R$. Green's theorem for the positively oriented boundary of the rectangle is
-\[
-\boxed{
-\int_{\partial R}P\,dx+Q\,dy
-=\iint_R(Q_x-P_y)\,dA.}
-\]
+Let $R=[a,b]\times[c,d]$, and let $\partial R$ be its positively oriented boundary.
 
-For a rectangle this follows directly from the one-variable fundamental theorem
-of calculus. Indeed, summing the integrals on the horizontal sides gives
-\[
-\int_a^b P(x,c)\,dx-\int_a^b P(x,d)\,dx
-=-\int_a^b\int_c^d P_y(x,y)\,dy\,dx,
-\]
-while summing the integrals on the vertical sides gives
-\[
-\int_c^d Q(b,y)\,dy-\int_c^d Q(a,y)\,dy
-=\int_c^d\int_a^b Q_x(x,y)\,dx\,dy.
-\]
-Adding and using Fubini yields the displayed formula.
+::: pf
 
-Now let $f=u+iv$ be holomorphic on a neighborhood of $R$. Then
-\[
-f(z)\,dz=(u+iv)(dx+i\,dy)
-=(u\,dx-v\,dy)+i(v\,dx+u\,dy).
-\]
-Applying Green's theorem to the real part gives
-\[
-\int_{\partial R}(u\,dx-v\,dy)
-=\iint_R(-v_x-u_y)\,dA=0,
-\]
-because the Cauchy--Riemann equation $v_x=-u_y$ holds. For the imaginary part,
-\[
-\int_{\partial R}(v\,dx+u\,dy)
-=\iint_R(u_x-v_y)\,dA=0
-\]
-by $u_x=v_y$. Therefore
-\[
-\boxed{\int_{\partial R}f(z)\,dz=0,}
-\]
-which is Cauchy's theorem for a rectangle.
+::: {.pf-step #green}
+If $P,Q$ have continuous first partial derivatives on a neighbourhood of $R$, then
+$$
+\boxed{\int_{\partial R}P\,dx+Q\,dy =\iint_R(Q_x-P_y)\,dA.}
+$$
+
+::: pf-proof
+On the horizontal sides $dy = 0$, the bottom side runs from $a$ to $b$ and the top side from $b$ to $a$; by the fundamental theorem of calculus in $y$,
+$$
+\int_a^b P(x,c)\,dx-\int_a^b P(x,d)\,dx =-\int_a^b\int_c^d P_y(x,y)\,dy\,dx.
+$$
+On the vertical sides $dx = 0$, and in the same way
+$$
+\int_c^d Q(b,y)\,dy-\int_c^d Q(a,y)\,dy =\int_c^d\int_a^b Q_x(x,y)\,dx\,dy.
+$$
+Add the two and apply Fubini's theorem to the continuous integrands.
+:::
+
+:::
+
+::: pf-step
+If $f=u+iv$ is analytic on a neighbourhood of $R$, then $\boxed{\int_{\partial R}f(z)\,dz=0}$.
+
+::: pf-proof
+An analytic $f$ has a continuous derivative, so $u$ and $v$ have continuous first partial derivatives satisfying $u_x = v_y$ and $u_y = -v_x$.
+Since $f(z)\,dz=(u\,dx-v\,dy)+i(v\,dx+u\,dy)$, step [](#green){.pf-ref} gives
+$$
+\int_{\partial R}f(z)\,dz = \iint_R(-v_x-u_y)\,dA + i\iint_R(u_x-v_y)\,dA = 0.
+$$
+:::
+
+:::
+
+:::
 :::
