@@ -26,8 +26,6 @@ For $f\in L^1(\mu\times\nu)$, the sections $f(x,\wait)$ are in $L^1(\nu)$ for $\
 
 [[T-X7XZX]]
 
-[[FT-H6AWV]]
-
 ## Other interchanges
 
 For nonnegative terms, sums and integrals commute by the monotone convergence theorem, or by Tonelli's theorem with counting measure.
