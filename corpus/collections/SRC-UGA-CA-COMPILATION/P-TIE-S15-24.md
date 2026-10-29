@@ -307,7 +307,7 @@ so this is precisely the continuous extension of the formula in step [](#s1-5){.
 
 ::: pf-qed
 
-Step [](#s1-3){.pf-ref} proves part (a), while steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b), including the source's omitted $\alpha=0$ interpretation.
+Step [](#s1-3){.pf-ref} proves part (a), while steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b), including the case $\alpha=0$, where the displayed expression is read as its limit.
 
 :::
 
