@@ -36,7 +36,7 @@ A subgroup of order $p^a$ is called a Sylow $p$-subgroup.
 
 ::: pf-step
 
-**First Sylow theorem.** A Sylow $p$-subgroup of $G$ exists.
+A Sylow $p$-subgroup of $G$ exists (the first Sylow theorem).
 
 ::: pf-proof
 
@@ -64,7 +64,7 @@ Hence the full $p$-part $p^a$ of $\abs{G}$ divides $\abs{C_G(x)}$. Since $x$ is 
 
 ::: {.pf-step #s2}
 
-**Second Sylow theorem.** If $P$ is a Sylow $p$-subgroup and $H\le G$ is any $p$-subgroup, then $H$ is contained in a conjugate of $P$. In particular, all Sylow $p$-subgroups are conjugate.
+If $P$ is a Sylow $p$-subgroup and $H\le G$ is any $p$-subgroup, then $H$ is contained in a conjugate of $P$. In particular, all Sylow $p$-subgroups are conjugate (the second Sylow theorem).
 
 ::: pf-proof
 
@@ -96,12 +96,13 @@ If $H$ is itself Sylow, then $\abs{H}=\abs{P}$, so containment forces equality. 
 
 ::: pf-step
 
-**Third Sylow theorem.** If $n_p$ denotes the number of Sylow $p$-subgroups, then
+The number $n_p$ of Sylow $p$-subgroups satisfies
 $$
 n_p\mid m
 \qquad\text{and}\qquad
-n_p\equiv1\pmod p.
+n_p\equiv1\pmod p
 $$
+(the third Sylow theorem).
 
 ::: pf-proof
 
