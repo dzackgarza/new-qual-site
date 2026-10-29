@@ -357,8 +357,11 @@ sections:
     title: Problems from the joint analysis exams
     parent: GUIDE-REAL-ANALYSIS
     lede: >-
-      Problems from combined analysis prelims whose paper covers both real and complex
-      analysis, and whose mathematics is complex analysis: entire and holomorphic functions,
+      Some analysis exams, among them the UCLA analysis qualifying exams, set real and complex
+      analysis on one paper, and this corpus files the whole paper under real analysis. This
+      section collects the problems from those papers whose mathematics is complex analysis,
+      so that a student preparing for such an exam finds them from this guide: entire and
+      holomorphic functions,
       conformal maps, normal families, residues and contour integrals, Rouché's theorem,
       Hurwitz's theorem, and the Schwarz lemma. The [complex analysis
       guide](../GUIDE-COMPLEX-ANALYSIS.html) covers the corresponding theory.
