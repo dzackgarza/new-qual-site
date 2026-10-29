@@ -2,14 +2,12 @@
 schema: qual/card@1
 id: E-L3F4O
 kind: problem
-title: Middle-thirds Cantor set is compact, totally disconnected, perfect, and null;
-  Borel–Cantelli lemma
+title: Middle-thirds Cantor set is compact, totally disconnected, perfect, and null
 classification:
   areas:
   - real-analysis
   topics:
   - Cantor Set
-  - Borel-Cantelli
   - Measure Theory
 relations: []
 review: draft
@@ -20,13 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-(a) Show that the Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
-
-(b) Prove the Borel--Cantelli lemma.
+Show that the Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
 :::
 
 ::: {.solution}
-For (a), let $C_0 = [0,1]$, let $C_n$ be obtained from $C_{n-1}$ by deleting the open middle third of each of its intervals, and let $C = \bigcap_{n \ge 0} C_n$. By induction, $C_n$ is the disjoint union of $2^n$ closed intervals of length $3^{-n}$, the stage-$n$ intervals.
+Let $C_0 = [0,1]$, let $C_n$ be obtained from $C_{n-1}$ by deleting the open middle third of each of its intervals, and let $C = \bigcap_{n \ge 0} C_n$. By induction, $C_n$ is the disjoint union of $2^n$ closed intervals of length $3^{-n}$, the stage-$n$ intervals.
 
 ::: pf
 
@@ -54,7 +50,7 @@ $C \subseteq C_n$ and $m^*(C_n) = 2^n 3^{-n}$, so monotonicity gives $m^*(C) \le
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 $C$ is totally disconnected.
 
@@ -66,7 +62,7 @@ A connected subset of $\RR$ is an interval. If a connected $S \subseteq C$ conta
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 $C$ is perfect: every point of $C$ is a limit point of $C$.
 
@@ -106,15 +102,9 @@ Step [](#s4-2){.pf-ref} gives points of $C \setminus \theset{x}$ within $3^{-n}$
 
 :::
 
-::: pf-step
+::: pf-qed
 
-(b) Borel--Cantelli lemma: if $(E_n)$ is a sequence of measurable sets in a measure space $(X, \mu)$ with $\sum_n \mu(E_n) < \infty$, then $\mu(\limsup_n E_n) = 0$.
-
-::: pf-proof
-
-$\limsup_n E_n = \bigcap_N \bigcup_{n \ge N} E_n$ is measurable. For every $N$, $\limsup_n E_n \subseteq \bigcup_{n \ge N} E_n$, so monotonicity and countable subadditivity give $\mu(\limsup_n E_n) \le \sum_{n \ge N} \mu(E_n)$. The right-hand side is the tail of a convergent series and tends to $0$ as $N \to \infty$.
-
-:::
+By steps [](#s1){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s2){.pf-ref}, $C$ is compact, totally disconnected and perfect, with outer measure zero.
 
 :::
 
