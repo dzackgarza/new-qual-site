@@ -19,34 +19,29 @@ What is a normal subgroup? What natural map does it determine? How does this rel
 :::
 
 ::: {.solution}
-A subgroup $N\le G$ is **normal**, written $N\normal G$, if
-\[
-gNg^{-1}=N\qquad\text{for every }g\in G.
-\]
-Equivalently, the left and right cosets of $N$ coincide.
 
-Normality is exactly the condition that makes the quotient set $G/N$ into a group. The natural quotient homomorphism is
-\[
-\pi:G\twoheadrightarrow G/N,
-\qquad g\longmapsto gN,
-\]
-and
-\[
-\ker\pi=N.
-\]
-Conversely, kernels of group homomorphisms are normal, so normal subgroups are precisely kernels.
+A subgroup $N\le G$ is normal, written $N\normal G$, if $gNg^{-1}=N$ for every $g\in G$; equivalently, every left coset $gN$ equals the right coset $Ng$.
 
-There is also a covering-space interpretation. Let $X$ be path connected, locally path connected, and semilocally simply connected, and identify
-\[
-G=\pi_1(X,x_0).
-\]
-Subgroups $H\le G$ correspond to connected covering spaces of $X$ up to equivalence. The covering corresponding to $H$ is regular (Galois) exactly when $H\normal G$. In that case its deck transformation group is naturally
-\[
-G/H.
-\]
-Thus the algebraic triple
-\[
-H\normal G\twoheadrightarrow G/H
-\]
-models the fundamental group of the covering, the fundamental group of the base, and the deck group of a regular covering.
+::: pf
+
+::: pf-step
+
+A normal subgroup $N$ determines the quotient homomorphism $\pi\colon G\twoheadrightarrow G/N$, $g\mapsto gN$, with $\ker\pi=N$; the normal subgroups of $G$ are exactly the kernels of homomorphisms out of $G$.
+
+::: pf-proof
+
+Normality makes $(gN)(hN)=ghN$ well defined: if $gN=g'N$ and $hN=h'N$, then $g'h'=gn\,hn'=gh(h^{-1}nh)n'\in ghN$ for some $n,n'\in N$. With this product $G/N$ is a group and $\pi$ is a surjective homomorphism with kernel $N$. Conversely, if $\varphi\colon G\to G'$ is a homomorphism and $k\in\ker\varphi$, then $\varphi(gkg^{-1})=1$, so $\ker\varphi$ is normal.
+
+:::
+
+:::
+
+::: pf-qed
+
+Let $X$ be path connected, locally path connected, and semilocally simply connected, with $G=\pi_1(X,x_0)$. By the classification of covering spaces, conjugacy classes of subgroups $H\le G$ correspond to connected coverings $p\colon\widetilde X\to X$ up to isomorphism, with $p_*\pi_1(\widetilde X)=H$. The covering is regular (Galois) exactly when $H\normal G$, and then its deck transformation group is $G/H$. Thus $H\normal G\twoheadrightarrow G/H$ is the fundamental group of the covering, the fundamental group of the base, and the deck group of the regular covering.
+
+:::
+
+:::
+
 :::
