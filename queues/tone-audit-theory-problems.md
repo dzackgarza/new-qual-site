@@ -1814,7 +1814,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebra/FD-JJFZ3.md` | `6bedb8f1464c9e444ceb502fe9cc3c336a71d36e` | `6bedb8f1464c9e444ceb502fe9cc3c336a71d36e` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FD-JTWOB.md` | `3409ad45481c6526d2228bbdaaffc52643101676` | `3409ad45481c6526d2228bbdaaffc52643101676` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FD-K6FVX.md` | `d9a3408512d7a72cffef39c9789cb960e2cf5d69` | `d9a3408512d7a72cffef39c9789cb960e2cf5d69` | Full file read; retained |
-| [x] | `corpus/theory/Algebra/FD-KPW3H.md` | `39e410e304973e771456f39946504a8fbd84aaf0` | `39e410e304973e771456f39946504a8fbd84aaf0` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FD-KSKDG.md` | `c9502421aca8b960ec880aeb65b2295424bc948e` | `c9502421aca8b960ec880aeb65b2295424bc948e` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FD-KWXK3.md` | `ab3048d5f4b7b5c18882388dc5c2bbdec9f660af` | `ab3048d5f4b7b5c18882388dc5c2bbdec9f660af` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FD-L2TEC.md` | `ac64c74623020af9a6eb8748b3ad662b412379c8` | `ac64c74623020af9a6eb8748b3ad662b412379c8` | Full file read; retained |
