@@ -20,7 +20,7 @@ $$
 f'(z_0)\coloneqq\lim_{\substack{h\to0\\ h\in\CC\setminus\{0\}}}\frac{f(z_0+h)-f(z_0)}{h}
 $$
 exists.
-The function $f$ is holomorphic on $\Omega$ if it is holomorphic at every point of $\Omega$, and a function $f\colon\CC\to\CC$ that is holomorphic on $\CC$ is \dfn{entire}.
+The function $f$ is holomorphic on $\Omega$ if it is holomorphic at every point of $\Omega$, and a function $f\colon\CC\to\CC$ that is holomorphic on $\CC$ is \dfn{entire} [@SS03].
 :::
 
 ::: {.proposition}
@@ -35,8 +35,4 @@ In this case $\alpha=f'(z_0)$.
 ::: {.proof}
 If $f'(z_0)$ exists, put $\alpha\coloneqq f'(z_0)$, $\psi(0)\coloneqq0$, and $\psi(h)\coloneqq\frac{f(z_0+h)-f(z_0)}{h}-\alpha$ for $h\neq0$; then $\psi(h)\to0$ and the identity holds.
 Conversely, dividing the identity by $h\neq0$ gives $\frac{f(z_0+h)-f(z_0)}{h}=\alpha+\psi(h)\to\alpha$, so $f'(z_0)$ exists and equals $\alpha$.
-:::
-
-::: {.remark}
-See [@SS03].
 :::
