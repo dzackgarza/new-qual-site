@@ -112,7 +112,7 @@ section is $4P$.  Permuting the zero coordinate and choosing the four values
 of $\zeta$ gives $12$ hyperflexes.  Step [](#s14){.pf-ref} below shows that this quartic
 therefore has $16$, not $28$, strict bitangents.
 
-The final parenthetical in the source is also incorrect: the dual germ of a
+The final parenthetical of the statement is also incorrect: the dual germ of a
 four-fold contact is unibranch of multiplicity $3$, with local leading
 parametrization $(t^3,t^4)$ and $\delta=3$.  It is an $E_6$ cusp, not a
 tacnode.  A tacnode has two branches.  This local calculation is included in
@@ -723,7 +723,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} prove part (a), s
 prove part (c), step [](#s7){.pf-ref} proves part (d), steps [](#s8){.pf-ref}, [](#s9){.pf-ref}, and [](#s10){.pf-ref} prove part (e),
 step [](#s12){.pf-ref} proves part (f), step [](#s13){.pf-ref} proves part (g), and step [](#s14){.pf-ref} proves
 the corrected form of part (h).  Step [](#s11){.pf-ref} supplies the local correction to
-the source's four-fold-contact parenthetical.
+the four-fold-contact parenthetical of the statement.
 :::
 
 :::
