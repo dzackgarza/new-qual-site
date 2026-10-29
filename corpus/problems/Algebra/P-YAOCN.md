@@ -22,26 +22,27 @@ audit:
 
 ::: {.problem}
 Let $L/F$ be a field extension, and let $\alpha$ be algebraic over $F$.
-Let $m_F(x) = \operatorname{irr}(\alpha, F) \in F[x]$ and $m_L(x) = \operatorname{irr}(\alpha, L) \in L[x]$ be the minimal polynomials of $\alpha$ over $F$ and over $L$, respectively.
+Let $m_F(x) = \irr(\alpha, F) \in F[x]$ and $m_L(x) = \irr(\alpha, L) \in L[x]$ be the minimal polynomials of $\alpha$ over $F$ and over $L$, respectively.
 Prove that $m_L(x)$ divides $m_F(x)$ in the polynomial ring $L[x]$.
 :::
 
 ::: {.solution}
-Because $F\subseteq L$, we may regard
-\[
-m_F(x)\in F[x]
-\]
-as a polynomial in $L[x]$. Divide it by the minimal polynomial $m_L(x)$:
-\[
-m_F(x)=q(x)m_L(x)+r(x),
-\qquad \deg r<\deg m_L.
-\]
-Evaluating at $\alpha$ gives
-\[
-0=m_F(\alpha)=q(\alpha)m_L(\alpha)+r(\alpha)=r(\alpha).
-\]
-If $r\ne0$, this would be a nonzero polynomial in $L[x]$ of degree smaller than $m_L$ that annihilates $\alpha$, contradicting minimality of $m_L$. Hence $r=0$, so
-\[
-\boxed{m_L(x)\mid m_F(x)\text{ in }L[x]}.
-\]
+
+::: pf
+
+::: pf-step
+$m_L(x)\mid m_F(x)$ in $L[x]$.
+
+::: pf-proof
+Since $F\subseteq L$, the polynomial $m_F$ lies in $L[x]$.
+Divide in $L[x]$: $m_F=qm_L+r$ with $r=0$ or $\deg r<\deg m_L$.
+Evaluating at $\alpha$ gives $0=q(\alpha)m_L(\alpha)+r(\alpha)=r(\alpha)$.
+If $r\ne0$, it would be a nonzero polynomial in $L[x]$ of smaller degree than $m_L$ vanishing at $\alpha$, contradicting minimality of $m_L$.
+So $r=0$.
+:::
+
+:::
+
+:::
+
 :::
