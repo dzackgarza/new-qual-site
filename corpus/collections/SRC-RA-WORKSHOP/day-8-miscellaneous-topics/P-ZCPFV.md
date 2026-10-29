@@ -22,7 +22,10 @@ audit:
 ::: {.problem}
 Prove that if $f \in \mathcal{R}$ on $[a,b]$ and $\alpha \in C^1[a,b]$, then the Riemann integral $\int_a^b f(x)\alpha'(x)dx$ exists and $$\int_a^b f(x) d\alpha(x)= \int_a^b f(x)\alpha'(x)dx.$$
 :::
+
 ::: {.solution}
+
+Since $\alpha$ need not be monotone, the Riemann–Stieltjes integral is the limit of tagged sums $S_\alpha(f;P,\xi)=\sum_i f(\xi_i)(\alpha(x_i)-\alpha(x_{i-1}))$ as the mesh tends to zero.
 
 ::: pf
 
@@ -42,23 +45,23 @@ Since $f$ is Riemann integrable, the product theorem for Riemann-integrable func
 ::: {.pf-step #s2}
 
 For every tagged partition $(P,\xi)$, the difference between its Stieltjes sum and the Riemann sum for $f\alpha'$ with the same tags is bounded by
-\[
-\left|S_\alpha(f;P,\xi)-S(f\alpha';P,\xi)\right|
+$$
+\abs{S_\alpha(f;P,\xi)-S(f\alpha';P,\xi)}
 \le B(b-a)\,\omega_{\alpha'}(\operatorname{mesh}P),
-\]
-where $B=\sup_{[a,b]}|f|$ and $\omega_{\alpha'}(\delta)=\sup\{|\alpha'(s)-\alpha'(t)|:s,t\in[a,b],\,|s-t|\le\delta\}$.
+$$
+where $B=\sup_{[a,b]}\abs{f}$ and $\omega_{\alpha'}(\delta)=\sup\{\abs{\alpha'(s)-\alpha'(t)}:s,t\in[a,b],\,\abs{s-t}\le\delta\}$.
 
 ::: pf-proof
 
 For $P=(a=x_0<\cdots<x_m=b)$, the mean value theorem supplies $\eta_i\in(x_{i-1},x_i)$ with
-\[
+$$
 \alpha(x_i)-\alpha(x_{i-1})=\alpha'(\eta_i)(x_i-x_{i-1}).
-\]
+$$
 The difference between the two sums equals
-\[
+$$
 \sum_{i=1}^m f(\xi_i)(\alpha'(\eta_i)-\alpha'(\xi_i))(x_i-x_{i-1}).
-\]
-Taking absolute values and using $|\eta_i-\xi_i|\le\operatorname{mesh}P$ yields the claimed bound after summing the subinterval lengths to $b-a$.
+$$
+Taking absolute values and using $\abs{\eta_i-\xi_i}\le\operatorname{mesh}P$ yields the claimed bound after summing the subinterval lengths to $b-a$.
 
 :::
 
@@ -77,26 +80,17 @@ The bound in step [](#s2){.pf-ref} is independent of the choice of partition tag
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-The Riemann–Stieltjes integral exists and satisfies
-\[
-\boxed{\int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx}.
-\]
+The Riemann–Stieltjes integral exists and $\int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx$.
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, the tagged Riemann sums $S(f\alpha';P,\xi)$ converge to $I=\int_a^b f(x)\alpha'(x)\,dx$ as the mesh tends to zero, uniformly over all choices of tags.
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the corresponding tagged Stieltjes sums converge to the same $I$.
+Step [](#s2){.pf-ref} and step [](#s3){.pf-ref} show that the corresponding tagged Stieltjes sums converge to the same $I$.
 This is the tagged-sum criterion for Riemann–Stieltjes integrability and identifies the integral.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} establish both requested assertions.
 
 :::
 
