@@ -1,4 +1,5 @@
 ---
+title: External algebra qual resources
 order: 0
 ---
 
