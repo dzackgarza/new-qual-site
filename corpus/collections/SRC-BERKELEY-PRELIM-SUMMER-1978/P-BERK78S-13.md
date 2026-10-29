@@ -322,11 +322,3 @@ Step [](#s7){.pf-ref} is the required equivalence.
 :::
 
 :::
-
-::: {.remark}
-Erratum: the source does not state $n\geq2$. With the standard convention
-that polynomial gcds are monic, the assertion is false for $n=1$. For
-example, in $\QQ[x]$ the polynomial $p_1=2$ has monic gcd $1$, but the
-only $1\times1$ matrix with first row $(2)$ is $(2)$, whose determinant is
-$2$, not $1$.
-:::
