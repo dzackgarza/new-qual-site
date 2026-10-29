@@ -25,23 +25,34 @@ Prove that the minimal polynomial of a square matrix divides its characteristic 
 :::
 
 ::: {.solution}
-Let $A\in M_n(F)$, let $m_A(x)$ be its minimal polynomial, and let $\chi_A(x)$ be its characteristic polynomial.
+Let $A\in M_n(F)$, with minimal polynomial $m_A$ and characteristic polynomial $\chi_A$. Divide with remainder: $\chi_A=q\,m_A+r$ with $r=0$ or $\deg r<\deg m_A$.
 
-By the Cayley--Hamilton theorem,
-\[
-\chi_A(A)=0.
-\]
-By definition, $m_A$ is the monic polynomial of least positive degree annihilating $A$. Divide $\chi_A$ by $m_A$:
-\[
-\chi_A=q\,m_A+r,
-\qquad \deg r<\deg m_A.
-\]
-Evaluating at $A$ gives
-\[
-0=\chi_A(A)=q(A)m_A(A)+r(A)=r(A).
-\]
-The minimality of $m_A$ forces $r=0$. Hence
-\[
-m_A\mid\chi_A.
-\]
+::: pf
+
+::: {.pf-step #remainder}
+
+$r(A)=0$.
+
+::: pf-proof
+
+By the Cayley--Hamilton theorem $\chi_A(A)=0$, and $m_A(A)=0$, so $r(A)=\chi_A(A)-q(A)m_A(A)=0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$m_A\mid\chi_A$.
+
+::: pf-proof
+
+By step [](#remainder){.pf-ref}, $r$ annihilates $A$. A nonzero $r$ would, after scaling to be monic, be an annihilating polynomial of smaller degree than $m_A$. Hence $r=0$.
+
+:::
+
+:::
+
+:::
+
 :::
