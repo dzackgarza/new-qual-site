@@ -5,7 +5,7 @@ kind: problem
 title: A uniformly continuous map preserves uniform convergence under composition
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Convergence
   - Sequences of Functions
