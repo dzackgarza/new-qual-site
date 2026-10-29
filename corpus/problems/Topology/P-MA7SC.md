@@ -11,10 +11,15 @@ classification:
   - Homology
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "Source text: 'S^2 union_f D^2, where f attaches to the equator', a list item with no task. The statement now asks for the homotopy type and homology, which the solution computes."
 ---
 
 ::: {.problem}
-4. $S^2 \union_f D^2$, where $f$ attaches to the equator
+Let $f:S^1\to S^2$ be the inclusion of the equator. Determine the homotopy type of $S^2 \union_f D^2$ and compute its homology.
 :::
 
 ::: {.solution}
@@ -60,7 +65,7 @@ The common boundary circle bounds either of the first two disks, so its inclusio
 
 ::: pf-step
 
-Consequently $H_0\cong\mathbb Z$, $H_2\cong\mathbb Z^2$, and all other reduced homology vanishes.
+Consequently $H_0\cong\ZZ$, $H_2\cong\ZZ^2$, and $H_k=0$ for all other $k$.
 
 ::: pf-proof
 
