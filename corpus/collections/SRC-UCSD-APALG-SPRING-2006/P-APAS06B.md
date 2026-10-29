@@ -15,22 +15,18 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam asserted that U is unique for every A, which fails for A=0; the statement now asserts uniqueness of U only when A has rank n.
 ---
 
 ::: {.problem}
-Given $A\in M_{m,n}$ with $m\ge n$, prove that there exists a unique $U\in M_{m,n}$ with orthonormal columns, and a unique Hermitian positive semidefinite $H\in M_n$ such that $A=UH$.
+Given $A\in M_{m,n}$ with $m\ge n$, prove that there exist a $U\in M_{m,n}$ with orthonormal columns and a unique Hermitian positive semidefinite $H\in M_n$ such that $A=UH$, and that $U$ is also unique when $A$ has rank $n$.
 :::
 
 ::: {.solution}
-The uniqueness assertion for $U$ is false as printed when $A$ is rank-deficient. For example, if $A=0$, then necessarily $H=0$, but every $m\times n$ matrix with orthonormal columns satisfies $A=UH$. Thus $U$ is not unique as soon as there is more than one such isometry.
-
-The correct polar-factorization statement is the following: for every $A\in M_{m,n}$ with $m\ge n$, there is a unique Hermitian positive semidefinite matrix
-\[
-H=(A^*A)^{1/2}
-\]
-and at least one $U\in M_{m,n}$ with orthonormal columns such that $A=UH$. Moreover, $U$ is unique if and only if $A$ has full column rank $n$.
-
-Indeed, let
+Let
 \[
 A=W\Sigma V^*
 \]
@@ -62,22 +58,4 @@ U=AH^{-1},
 \]
 which proves uniqueness of $U$.
 
-Conversely, suppose $\operatorname{rank}A<n$. Then $\ker H=\ker A$ is nonzero. In the singular-value decomposition above, after reordering the singular values we may write
-\[
-\Sigma=\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0,\ldots,0),
-\qquad r<n.
-\]
-Choose a unitary diagonal matrix
-\[
-D=\operatorname{diag}(1,\ldots,1,-1,1,\ldots,1)
-\]
-whose $-1$ occurs in one of the zero-singular-value positions. Then $D\Sigma=\Sigma$, so
-\[
-U'=WDV^*
-\]
-also has orthonormal columns and
-\[
-U'H=WDV^*V\Sigma V^*=WD\Sigma V^*=W\Sigma V^*=A.
-\]
-But $U'\ne U$. Hence $U$ is not unique when $A$ fails to have full column rank.
 :::
