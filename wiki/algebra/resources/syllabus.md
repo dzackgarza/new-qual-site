@@ -1,4 +1,5 @@
 ---
+title: Topics and remarks
 order: 0
 ---
 
@@ -22,11 +23,11 @@ Adapted from a remark written by Roy Smith, August 2006:
 
 ## Group theory
 
-> References: [@DF04, chaps. 1-6]; [@Hun74]; [@Smi96].
+> References: [@DF04, chaps. 1--6]; [@Hun74]; [@Smi96].
 
 ### Topics
 
-See [@DF04, chaps. 1-9].
+See [@DF04, chaps. 1--9].
 
 - Subgroups, left and right cosets, and quotient groups
 
@@ -130,15 +131,15 @@ See [@DF04, chaps. 1-9].
 
 > References: [@DF04]; [@Hun74]; [@Smi96].
 
-- [@DF04, chaps. 7-9, 13-14]
+- [@DF04, chaps. 7--9, 13--14]
 
 - [@Smi96]:
 
-  - 843-2, sections 11, 12, and 16-21 (39 pages)
+  - 843-2, sections 11, 12, and 16--21 (39 pages)
 
-  - 844-1, sections 7-9 (20 pages)
+  - 844-1, sections 7--9 (20 pages)
 
-  - 844-2, sections 10-16 (37 pages)
+  - 844-2, sections 10--16 (37 pages)
 
 ### Topics
 
@@ -244,9 +245,9 @@ See [@DF04, chaps. 1-9].
 
 - Classification of finitely generated modules over PIDs, in particular over Euclidean domains
 
-- Modules over PIDs and canonical forms of matrices [@DF04, secs. 10.1-10.3 and 12.1-12.3]
+- Modules over PIDs and canonical forms of matrices [@DF04, secs. 10.1--10.3 and 12.1--12.3]
 
-  - Constructive proof of the decomposition [@DF04, exs. 12.1.16-19]
+  - Constructive proof of the decomposition [@DF04, exs. 12.1.16--19]
 
   > [@Smi96, secs. 845-1 and 845-2] discusses the constructive proof in detail.
 
