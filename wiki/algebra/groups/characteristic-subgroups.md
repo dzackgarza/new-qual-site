@@ -24,13 +24,6 @@ A normal subgroup need not be characteristic: in the Klein four-group $V \cong C
 
 [[PR-IOMVN]]
 
-::: {.proof}
-Let $A \operatorname{char} B \normal C$, and let $c \in C$.
-Because $B \normal C$, conjugation $\psi_c(b) = cbc^{-1}$ restricts to an automorphism of $B$.
-Because $A$ is characteristic in $B$, $\psi_c(A) = A$.
-Hence $cAc^{-1} = A$ for every $c \in C$, and $A \normal C$.
-:::
-
 [[P-5UUNM]]
 
 ## Normal closures and cores
