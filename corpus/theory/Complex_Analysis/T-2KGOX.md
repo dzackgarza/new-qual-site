@@ -23,7 +23,7 @@ Each of the following maps is a [[D-TM4TE|biholomorphism]] from the stated domai
 | $\CC$ | $\CC$ | translation $z\mapsto z+h$, $h\in\CC$ |
 | $\CC$ | $\CC$ | dilation $z\mapsto cz$, $c>0$ |
 | $\CC$ | $\CC$ | rotation $z\mapsto e^{i\theta}z$, $\theta\in\RR$ |
-| $S_{\pi/n}$, $n\ge1$ | $\HH$ | $z\mapsto z^n$ ([[PR-PDYJC]]) |
+| $S_{\pi/n}$, $n\ge1$ | $\HH$ | $z\mapsto z^n$ ([[PR-AQFRA]]) |
 | $\DD^+$ | $Q_1$ | $z\mapsto\frac{1+z}{1-z}$ ([[PR-PW4Z6]]) |
 | $\HH$ | $\Sigma$ | $z\mapsto\Log z$ ([[PR-XCDL5]]) |
 | $\DD^+$ | $\theset{\Re w<0,\ 0<\Im w<\pi}$ | $z\mapsto\Log z$ ([[PR-PELLF]]) |

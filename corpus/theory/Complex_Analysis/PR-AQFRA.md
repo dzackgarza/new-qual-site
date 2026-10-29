@@ -44,3 +44,9 @@ Since $r\mapsto r^{\alpha/\pi}$ is a bijection of $(0,\infty)$ and $\theta\mapst
 Both maps are holomorphic, since on $S_\alpha$ the chosen argument is a continuous branch of $\arg$.
 Part (a) is the case $\alpha=\pi/n$ of (b), read in the opposite direction: $z\mapsto z^n$ is the inverse $w\mapsto w^{\pi/\alpha}$, and on $\HH$ the principal branch of $w^{1/n}$ is $z\mapsto z^{\alpha/\pi}$.
 :::
+
+::: {.remark}
+The map $z\mapsto z^{\alpha/\pi}$ of (b) extends continuously to the boundary of $\HH$.
+As $x$ increases from $0$ to $\infty$ along the positive real axis, $x^{\alpha/\pi}$ increases from $0$ to $\infty$ along the positive real axis.
+As $x$ increases from $-\infty$ to $0$ along the negative real axis, $x^{\alpha/\pi}=\abs{x}^{\alpha/\pi}e^{i\alpha}$ moves from $\infty$ to $0$ along the ray $\theset{te^{i\alpha}\st t>0}$.
+:::
