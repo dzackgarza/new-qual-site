@@ -12,39 +12,54 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source allowed repeated z_m, and z_m = 0 with f_n(z) = (-1)^n z is a counterexample; the statement now takes the z_m distinct.'
 ---
 
 ::: {.problem}
-Let $f_n : \mathbb{D} \to \mathbb{C}$ be a bounded sequence of holomorphic functions, and let $\{z_m\}_{m \geq 1}$ be a sequence in $\mathbb{D}$ that converges in $\mathbb{D}$.
+Let $f_n : \mathbb{D} \to \mathbb{C}$ be a bounded sequence of holomorphic functions, and let $\{z_m\}_{m \geq 1}$ be a sequence of distinct points in $\mathbb{D}$ that converges in $\mathbb{D}$.
 Assume that $\lim_{n \to \infty} f_n(z_m)$ exists for all $m \geq 1$.
 Show that the sequence $\{f_n\}$ converges uniformly on compact subsets of $\mathbb{D}$.
 :::
 
 ::: {.solution}
-The statement is false as printed because the sequence $(z_m)$ need not contain
-distinct points. Take $z_m=0$ for every $m$ and
-\[
-f_n(z)=(-1)^n z.
-\]
-Then the family is uniformly bounded on $\DD$ and $f_n(z_m)=0$ for every
-$m,n$, but $(f_n)$ does not converge locally uniformly.
+Let $z_m \to z_\ast \in \DD$, and $\abs{f_n} \le M$ on $\DD$ for all $n$.
 
-The standard corrected form assumes that the set $\{z_m:m\ge1\}$ has an
-accumulation point in $\DD$; in particular it suffices that the $z_m$ are
-distinct and converge in $\DD$. Under that hypothesis the conclusion follows
-from Montel's theorem and the identity theorem.
+::: pf
 
-Indeed, uniform boundedness makes $(f_n)$ a normal family. Any subsequence has
-a further subsequence converging locally uniformly to some holomorphic $g$.
-For every fixed $m$, the scalar sequence $f_n(z_m)$ has a unique limit, hence
-every such subsequential limit satisfies
-\[
-g(z_m)=\lim_{n\to\infty}f_n(z_m).
-\]
-Therefore any two subsequential limits agree on the set $\{z_m\}$, which has
-an interior accumulation point, and so agree identically by the identity
-theorem. Thus the normal family has a unique cluster point. If the original
-sequence failed to converge locally uniformly to it, some subsequence would
-stay a fixed positive distance away on a compact set, but Montel would give a
-further subsequence converging to that same cluster point, a contradiction.
+::: {.pf-step #montel}
+
+Every subsequence of $(f_n)$ has a further subsequence converging uniformly on compact subsets of $\DD$ to a holomorphic function.
+
+::: pf-proof
+
+The family is uniformly bounded, so it is normal by Montel's theorem, and locally uniform limits of holomorphic functions are holomorphic.
+
+:::
+
+:::
+
+::: {.pf-step #unique-limit}
+
+All the limits in step [](#montel){.pf-ref} are one function $g$.
+
+::: pf-proof
+
+If $f_{n_k} \to g_1$ and $f_{n'_k} \to g_2$ locally uniformly, then $g_1(z_m) = \lim_n f_n(z_m) = g_2(z_m)$ for every $m$. The $z_m$ are distinct and converge to $z_\ast \in \DD$, so $z_\ast$ is an accumulation point in $\DD$ of the set where $g_1 = g_2$, and the identity theorem gives $g_1 = g_2$ on the connected set $\DD$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Suppose $(f_n)$ does not converge to $g$ uniformly on some compact $K \subseteq \DD$. Then there are $\eps > 0$ and a subsequence with $\sup_K \abs{f_{n_k} - g} \ge \eps$ for all $k$. By step [](#montel){.pf-ref} it has a further subsequence converging locally uniformly, and by step [](#unique-limit){.pf-ref} its limit is $g$, so $\sup_K$ of the difference tends to $0$, a contradiction.
+
+:::
+
+:::
+
 :::
