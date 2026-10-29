@@ -17,41 +17,37 @@ review: draft
 
 ::: {.problem}
 Suppose $V$ is $6$-dimensional and $T\in\operatorname{End}(V)$ satisfies
-\[
+$$
 T^6=0,
 \qquad
 T^5\ne0.
-\]
+$$
 
-1. Determine the Jordan canonical form of $T$.
-2. Show that any two such operators are similar.
+(a) Determine the Jordan canonical form of $T$.
+
+(b) Show that any two such operators are similar.
 :::
 
 ::: {.solution}
-Because $T$ is nilpotent, every Jordan block has eigenvalue $0$. The condition $T^6=0$ says every block has size at most $6$, while $T^5\ne0$ says at least one block has size at least $6$. Hence there is a block of size exactly $6$.
+::: pf
 
-Since $V$ itself has dimension $6$, that block is the whole Jordan form:
-\[
-J(T)=J_6(0).
-\]
+::: {.pf-step #jordan-form}
+(a) The Jordan form of $T$ is $\boxed{J_6(0)}$, a single nilpotent Jordan block of size $6$.
 
-If $S$ is another operator satisfying the same hypotheses, then also
-\[
-J(S)=J_6(0).
-\]
-Thus there exist invertible $P,Q$ with
-\[
-T=PJ_6(0)P^{-1},
-\qquad
-S=QJ_6(0)Q^{-1}.
-\]
-Taking
-\[
-A=QP^{-1}
-\]
-gives
-\[
-ATA^{-1}=S.
-\]
-Hence all such operators are similar.
+::: pf-proof
+Since $T^6=0$, the only eigenvalue of $T$ is $0$, so $T$ has a Jordan form over the base field and every Jordan block is $J_k(0)$ for some $k$. The block $J_k(0)$ satisfies $J_k(0)^5\ne0$ exactly when $k\ge6$, so $T^5\ne0$ forces a block of size at least $6$. The block sizes sum to $\dim V=6$, so that block is the only one.
+:::
+
+:::
+
+::: pf-step
+(b) Any two operators $S,T$ on $V$ with $S^6=T^6=0$ and $S^5,T^5\ne0$ are similar.
+
+::: pf-proof
+By step [](#jordan-form){.pf-ref} there are invertible $P,Q$ with $T=PJ_6(0)P^{-1}$ and $S=QJ_6(0)Q^{-1}$. With $A\coloneqq QP^{-1}$ we get $ATA^{-1}=QJ_6(0)Q^{-1}=S$.
+:::
+
+:::
+
+:::
 :::
