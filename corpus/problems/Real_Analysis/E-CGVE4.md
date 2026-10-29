@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that a countable union of null sets is null.
+Show that a countable union of null sets is null.
 :::
 
 ::: {.solution}
