@@ -21,37 +21,37 @@ audit:
 (June 2007 #4b part i) Evaluate $$\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx$$ and justify your reasoning.
 :::
 
-:::: {.solution}
-**Goal:** Evaluate $\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx$.
+::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #uniform}
 
-The answer is $\pi/2$.
+$\dfrac{n\sin(x/n)}{x}\to1$ uniformly on $[\pi/2,\pi]$.
 
 ::: pf-proof
 
-::: {.pf-step #s1-1}
-
-Pointwise limit: for each fixed $x \in [\pi/2, \pi]$, $\frac{n\sin(x/n)}{x} \to 1$.
-Proof: $\frac{n\sin(x/n)}{x} = \frac{\sin(x/n)}{x/n} \to \frac{\sin 0}{0}\text{-form} = 1$ since $\lim_{t \to 0} \sin t / t = 1$ and $x/n \to 0$.
-
-:::
-
-::: {.pf-step #s1-2}
-
-Domination: $\left|\frac{n\sin(x/n)}{x}\right| \le 1$ on $[\pi/2, \pi]$ for all $n \ge 1$.
-Proof: $\frac{n\sin(x/n)}{x} = \frac{\sin(x/n)}{x/n}$ with $0 \le x/n \le \pi$ (as $x \le \pi$, $n \ge 1$). For $0 \le t \le \pi$, $\sin t / t \le 1$ (standard: $\sin t \le t$ on $[0,\infty)$), and $\sin(x/n) \ge 0$ since $x/n \in [0, \pi]$.
-So $0 \le \frac{\sin(x/n)}{x/n} \le 1$.
+Write $t=x/n\in(0,\pi/n]$, so the integrand is $\sin t/t$. Taylor's theorem with remainder gives $t-t^3/6\le\sin t\le t$ for $t\ge0$, hence
+$$
+0\le1-\frac{\sin t}{t}\le\frac{t^2}{6}\le\frac{\pi^2}{6n^2}
+$$
+for every $x\in[\pi/2,\pi]$. The bound tends to $0$ and does not depend on $x$.
 
 :::
 
-::: pf-qed
-
-Proof: Dominated Convergence: by steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, $\lim_n \int_{\pi/2}^\pi \frac{n\sin(x/n)}{x}\,dx = \int_{\pi/2}^\pi 1\,dx = \pi - \pi/2 = \pi/2$.
-
 :::
+
+::: pf-step
+
+$\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx=\boxed{\pi/2}$.
+
+::: pf-proof
+
+The integrands are continuous on $[\pi/2,\pi]$. By step [](#uniform){.pf-ref},
+$$
+\abs{\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx-\int_{\pi/2}^{\pi}1\,dx}\le\frac{\pi}{2}\cdot\frac{\pi^2}{6n^2}\longrightarrow0,
+$$
+and $\int_{\pi/2}^{\pi}1\,dx=\pi/2$.
 
 :::
 
