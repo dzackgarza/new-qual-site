@@ -13,10 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 2 of the retained UCLA Basic Examination Spring 2006 PDF.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam asked for a unique number rho at least 0, which fails for series such as e^x that converge everywhere; the statement now asks for a unique rho in [0, infinity].
 ---
 
 ::: {.problem}
-Let $F(x) = \sum_{n=0}^\infty a_n x^n$ be a power series with $a_n \in \RR$. Show that there exists a unique number $\rho \geq 0$ such that $F(x)$ converges if $\abs{x} < \rho$ and $F(x)$ diverges if $\abs{x} > \rho$.
+Let $F(x) = \sum_{n=0}^\infty a_n x^n$ be a power series with $a_n \in \RR$. Show that there exists a unique $\rho \in [0,\infty]$ such that $F(x)$ converges if $\abs{x} < \rho$ and $F(x)$ diverges if $\abs{x} > \rho$.
 :::
 
 ::: {.solution}
@@ -242,39 +246,6 @@ Thus $C$ is unbounded above, and its supremum in the extended interval is
 
 ::: {.pf-step #s1-6}
 
-If the required parameter is required to lie in
-\[
-[0,\infty),
-\]
-then either the radius is finite, or the exceptional case of convergence for every $x$ should be recorded as
-\[
-\rho=\infty.
-\]
-
-
-::: pf-proof
-
-The usual radius of convergence naturally lies in the extended interval
-\[
-[0,\infty].
-\]
-If the phrase
-\[
-\rho\ge0
-\]
-is intended to permit the infinite value, steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} give existence in all cases.
-If only finite real numbers are allowed, then the statement is false for series such as
-\[
-e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},
-\]
-which converges for every real $x$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-7}
-
 The radius is unique.
 
 
@@ -301,7 +272,7 @@ The same argument applies in the extended-real setting.
 
 :::
 
-::: {.pf-step #s1-8}
+::: {.pf-step #s1-7}
 
 Therefore there is a unique radius of convergence
 \[
@@ -321,7 +292,7 @@ and diverges for
 
 ::: pf-proof
 
-Existence follows from steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, and uniqueness from step [](#s1-7){.pf-ref}.
+Existence follows from steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, and uniqueness from step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -329,7 +300,7 @@ Existence follows from steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, and 
 
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} is the standard radius-of-convergence theorem, with step [](#s1-6){.pf-ref} recording the necessary infinite-radius case omitted by the literal finite-valued wording.
+Step [](#s1-7){.pf-ref} is the assertion.
 
 :::
 
