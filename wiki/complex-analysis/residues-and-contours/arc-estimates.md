@@ -12,17 +12,6 @@ The ML estimate bounds an integral by the length of the curve times the supremum
 
 [[T-SFXI7]]
 
-::: {.proof}
-$$
-\begin{aligned}
-\abs{ \int_\gamma f(z) \dz }
-&\leq \int_\gamma \abs{f(z)} \abs{\dz} \\
-&\leq \int_\gamma \sup_{\xi\in \gamma} \abs{f(\xi)} \abs{\dz} \\
-&= M \cdot \length(\gamma)
-\end{aligned}.$$
-
-:::
-
 ::: {.remark title="Circular arcs"}
 If $C_R$ is a circular arc of radius $R$ subtending an angle $\theta$, then $\length(C_R) = R\theta$ and
 $$
@@ -47,55 +36,11 @@ On $C_R$, $\abs{e^{iz}} = e^{-\Im z} \leq 1$, while $\abs{\cos z}$ and $\abs{\si
 
 :::
 
-::: {.proof title="Jordan's lemma"}
-$$
-\begin{aligned}
-\abs{ \int_{C_R} f(z)\dz }
-&= \abs{ \int_{C_R} e^{iaz}g(z) \dz} \\
-&= \abs{ \int_{[0, \pi]} e^{ia\qty{Re^{it}}}g(Re^{it}) iRe^{it} \dt} \\
-&\leq \int_{[0, \pi]} \abs{ e^{ia\qty{Re^{it}}}g(Re^{it}) iRe^{it}} \dt \\
-&=R \int_{[0, \pi]} \abs{ e^{ia\qty{Re^{it}}}g(Re^{it})} \dt \\
-&\leq R M_R \int_{[0, \pi]} \abs{ e^{ia\qty{Re^{it}}}} \dt \\
-&= R M_R \int_{[0, \pi]} e^{\Re\qty{iaRe^{it}}} \dt \\
-&= R M_R \int_{[0, \pi]} e^{\Re\qty{iaR\qty{\cos(t) + i\sin(t) } }} \dt \\
-&= R M_R \int_{[0, \pi]} e^{-aR\sin(t) } \dt \\
-&= 2 R M_R \int_{[0, \pi/2]} e^{-aR\sin(t) } \dt \\
-&\leq 2R M_R \int_{[0, \pi/2]} e^{-aR\qty{2t\over \pi} } \dt \\
-&= 2RM_R \qty{\pi \over 2aR}\qty{1-e^{-aR}} \\
-&\leq {\pi M_R \over a}
-\end{aligned}.$$
-
-Here $a = \alpha$, the equality $\int_0^\pi = 2\int_0^{\pi/2}$ uses $\sin(\pi - t) = \sin t$, and the inequality $2t/\pi \leq \sin(t)$ on $[0, \pi/2]$ holds because $\sin$ is concave there and agrees with $2t/\pi$ at $t=0$ and $t=\pi/2$.
-
-![figures/image_2021-06-09-01-29-22.png](../../../../assets/assets/figures/image_2021-06-09-01-29-22.png)
-
-:::
-
 ## Small arcs about a simple pole
 
 The integral over an arc of angle $\theta$ about a simple pole $z_0$, traversed counterclockwise, tends to $i\theta\Res_{z=z_0} f$ as the radius tends to $0$.
 
 [[T-SSNLT]]
-
-::: {.proof}
-Let $\gamma_\varepsilon(t) = a + \varepsilon e^{it}$ for $t\in[\alpha,\beta]$ be the arc of angle $\theta = \beta-\alpha$ about the simple pole $a$.
-Near $a$ write
-$$
-f(z) = {c\over z-a} + g(z), \qquad c = \Res_{z=a} f,
-$$
-with $g$ holomorphic on $B(a,\delta)$, and take $\varepsilon < \delta/2$.
-Since $g$ is bounded on $\overline{B(a,\delta/2)}$,
-$$
-\abs{\int_{\gamma_\varepsilon} g(z)\dz} \leq (\beta-\alpha)\,\varepsilon\sup_{z\in\gamma_\varepsilon}\abs{g(z)} \longrightarrow 0
-\quad\text{as }\varepsilon\to 0.
-$$
-The remaining integral is
-$$
-\int_{\gamma_\varepsilon}{c\over z-a}\dz = c\int_\alpha^\beta {1\over\varepsilon e^{it}}\, i\varepsilon e^{it}\dt = i(\beta-\alpha)c
-,$$
-so the limit is $i\theta\Res_{z=a}f$.
-
-:::
 
 A half-circle of radius $\varepsilon$ above a simple pole on $\RR$, traversed clockwise from $z_0-\varepsilon$ to $z_0+\varepsilon$, contributes $-i\pi \Res_{z=z_0} f$ in the limit; these terms give the half-residues in principal-value integrals.
 
