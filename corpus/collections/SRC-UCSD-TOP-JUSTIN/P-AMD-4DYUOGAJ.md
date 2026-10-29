@@ -24,11 +24,8 @@ Compute what happens when $dx_1$ is replaced with an arbitrary non-zero element 
 :::
 
 ::: {.solution}
-**Goal:** Let $W$ be the $n$-dimensional $k$-vector space with basis $\{dx_1,\dots,dx_n\}$ and let $\Lambda^*=\bigwedge^*W$. For $\omega\in\Lambda^1=W$, define $d_\omega:\Lambda^p\to\Lambda^{p+1}$ by $d_\omega(\alpha)=\alpha\wedge\omega$.
-
-1. Show that for $\omega = dx_1$, $(\Lambda^*, d_{dx_1})$ is a chain complex with trivial cohomology (except at $\Lambda^0$ where $H^0=0$ if treated as reduced, or check all $H^p$).
-
-2. Compute the cohomology of $(\Lambda^*, d_\omega)$ for an arbitrary non-zero element $\omega \in \Lambda^1$.
+Let $W$ be the $n$-dimensional $k$-vector space with basis $\{dx_1,\dots,dx_n\}$ and let $\Lambda^*=\bigwedge^*W$.
+For $\omega\in\Lambda^1=W$, define $d_\omega:\Lambda^p\to\Lambda^{p+1}$ by $d_\omega(\alpha)=\alpha\wedge\omega$.
 
 ::: pf
 
@@ -137,10 +134,6 @@ By step [](#s2){.pf-ref} the source complex is acyclic, and step [](#s3-3){.pf-r
 
 :::
 
-:::
-
-::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
 :::
 
 :::
