@@ -25,28 +25,28 @@ What is the Galois group of $\QQ(\sqrt{2}, \sqrt{3}) / \QQ$?
 :::
 
 ::: {.solution}
-Let
-$$
-K=\QQ(\sqrt2,\sqrt3).
-$$
-Since $\sqrt3\notin\QQ(\sqrt2)$,
-$$
-[K:\QQ]=4.
-$$
-Moreover, $K$ is the splitting field of
-$$
-(x^2-2)(x^2-3),
-$$
-so $K/\QQ$ is Galois.
+Let $K=\QQ(\sqrt2,\sqrt3)$.
 
-Every $\QQ$-automorphism independently chooses the signs of $\sqrt2$ and $\sqrt3$:
-$$
-\sqrt2\mapsto\pm\sqrt2,
-\qquad
-\sqrt3\mapsto\pm\sqrt3.
-$$
-All four sign choices occur, giving four automorphisms. The three nonidentity ones all have order $2$. Therefore
-$$
-\boxed{\Gal(K/\QQ)\cong C_2\times C_2.}
-$$
+::: pf
+
+::: {.pf-step #degree}
+$K/\QQ$ is Galois of degree $4$.
+
+::: pf-proof
+$K$ is the splitting field of $(x^2-2)(x^2-3)$, so $K/\QQ$ is Galois. If $\sqrt3=a+b\sqrt2$ with $a,b\in\QQ$, squaring gives $2ab\sqrt2=3-a^2-2b^2$, so $ab=0$; $b=0$ makes $\sqrt3$ rational and $a=0$ makes $\sqrt{3/2}$ rational, both false. Hence $\sqrt3\notin\QQ(\sqrt2)$ and $[K:\QQ]=2\cdot2=4$.
+:::
+
+:::
+
+::: pf-step
+$\Gal(K/\QQ)\cong\boxed{C_2\times C_2}$.
+
+::: pf-proof
+A $\QQ$-automorphism maps $\sqrt2\mapsto\pm\sqrt2$ and $\sqrt3\mapsto\pm\sqrt3$ and is determined by these two signs. By step [](#degree){.pf-ref} there are $4$ automorphisms, so all four sign choices occur. Each nonidentity automorphism squares to the identity, so the group of order $4$ has no element of order $4$.
+:::
+
+:::
+
+:::
+
 :::
