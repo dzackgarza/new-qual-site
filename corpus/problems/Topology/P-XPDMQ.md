@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XPDMQ
 kind: problem
-title: Homotopy $H(x,t)=P(tf(x)+(1-t)g(x))$ when $f(x)\neq -g(x)$
+title: Maps into $S^n$ that are never antipodal are homotopic
 classification:
   areas:
   - topology
@@ -11,68 +11,38 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source problem block held a worked answer opening 'Main Idea: Exact same idea as 1, just a more complicated check', which refers to a part not on this card; the statement now poses the claim that answer proves, and the title names it instead of the homotopy formula."
 ---
 
 ::: {.problem}
-2. **Main Idea**: Exact same idea as 1, just a more complicated check.
-
-Take $H(x, t) = P(tf(x) + (1-t)g(x))$.
-This is well defined; the only case to check is when the denominator is zero.
-But $\norm{x} = 0$ iff $x =0$, which would imply $tf(x) +(1-t)g(x) = 0$ and so $tf(x) = -(1-t)g(x)$.
-
-Taking norms and observing that since $f,g \in S^n \implies \norm{f} = \norm{g} = 1$, this forces $t = 1-t$ and thus $t=1/2$.
-But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we assumed was not the case.
+Let $X$ be a topological space and let $f, g\colon X \to S^n$ be continuous maps such that $f(x) \neq -g(x)$ for every $x \in X$.
+Show that $f$ and $g$ are homotopic.
 :::
 
 ::: {.solution}
+Let $P(v)=v/\norm{v}$ for $v \in \RR^{n+1}\setminus\{0\}$.
 
 ::: pf
 
-::: pf-step
-
-Let $P(v)=v/\|v\|$ for $v\ne0$ and define
-$$H(x,t)=P(tf(x)+(1-t)g(x)).$$
+::: {.pf-step #nonzero}
+For all $x \in X$ and $t \in [0,1]$, $tf(x)+(1-t)g(x) \neq 0$.
 
 ::: pf-proof
-
-We need only verify that the vector being normalized is never zero.
-
+If $tf(x)+(1-t)g(x)=0$, then taking norms, with $\norm{f(x)} = \norm{g(x)} = 1$, gives $t=1-t$, so $t=1/2$ and $f(x)=-g(x)$, contrary to hypothesis.
 :::
 
 :::
 
 ::: pf-step
-
-If $tf(x)+(1-t)g(x)=0$, taking norms gives $t=1-t$, hence $t=1/2$.
-
-::: pf-proof
-
-Both $f(x)$ and $g(x)$ have norm $1$, so $t\|f(x)\|=(1-t)\|g(x)\|$.
-
-:::
-
-:::
-
-::: pf-step
-
-At $t=1/2$, the equality would imply $f(x)=-g(x)$, contrary to hypothesis.
+$H(x,t)=P(tf(x)+(1-t)g(x))$ is a homotopy from $g$ to $f$.
 
 ::: pf-proof
-
-Multiply the zero equation by $2$.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore $H$ is well-defined and continuous, with $H(x,0)=g(x)$ and $H(x,1)=f(x)$. Thus $f\simeq g$.
-
-::: pf-proof
-
-At the endpoints normalization does nothing because $f(x),g(x)\in S^n$.
-
+By step [](#nonzero){.pf-ref}, $H$ is a well-defined continuous map $X \times [0,1] \to S^n$.
+Since $f(x), g(x) \in S^n$, normalization fixes them, so $H(x,0)=g(x)$ and $H(x,1)=f(x)$.
 :::
 
 :::
