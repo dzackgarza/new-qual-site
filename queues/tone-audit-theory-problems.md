@@ -788,7 +788,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/problems/Algebra/P-Y6Y6V.md` | `f05de762ed13f5d209789237218e512ee3ec48d1` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-Y72G3.md` | `9cff523c1d0e9d7c12239ad08d98ee1240998587` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-YAOCN.md` | `f3688b15501e339d399ab2a4c60b4da416a69a20` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-YCLOT.md` | `76285f5aa42e5891039cb49fa3c0b7eb9c6f770f` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-YCRKO.md` | `8c697fc44d5a522da8aee38564fb66b7d55e7ef7` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-YELFJ.md` | `2ba7ea7bcdb359b828ec8e2c6663ff67dbb1f601` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-YFBGZ.md` | `6763469fe793bf9387d45a19d0439200af9d5c5a` | — | Pending |

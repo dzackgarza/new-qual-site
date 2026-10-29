@@ -793,7 +793,6 @@ source:
   - id: P-Y6Y6V
   - id: P-Y72G3
   - id: P-YAOCN
-  - id: P-YCLOT
   - id: P-YCRKO
   - id: P-YELFJ
   - id: P-YFBGZ

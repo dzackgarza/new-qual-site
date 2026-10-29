@@ -82,7 +82,6 @@ corpus/problems/Algebra/P-Y4XPA.md
 corpus/problems/Algebra/P-Y6Y6V.md
 corpus/problems/Algebra/P-Y72G3.md
 corpus/problems/Algebra/P-YAOCN.md
-corpus/problems/Algebra/P-YCLOT.md
 corpus/problems/Algebra/P-YCRKO.md
 corpus/problems/Algebra/P-YELFJ.md
 corpus/problems/Algebra/P-YFBGZ.md
