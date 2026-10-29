@@ -76,8 +76,6 @@ $$
 
 [[PR-YO7MV]]
 
-[[FD-3BK6U]]
-
 [[PR-XUVZY]]
 
 ::: {.remark}

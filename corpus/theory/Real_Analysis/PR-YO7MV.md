@@ -4,6 +4,8 @@ id: PR-YO7MV
 kind: proposition
 title: Markov and Chebyshev inequalities
 slogan: 'Large-value sets are controlled by moments: $\mu\theset{\abs{f}>\alpha}\leq\alpha^{-p}\norm{f}_p^p$.'
+prompts:
+- State Chebyshev's inequality.
 classification:
   areas:
   - real-analysis
@@ -39,4 +41,11 @@ Dividing by $\alpha^p > 0$ gives the second inequality, and $p=1$ gives the firs
 
 ::: {.remark}
 For a probability space $(\Omega,\mathcal F,P)$ and a nonnegative random variable $Y$ with expectation $E(Y)$, the case $p=1$ reads $P(Y>\alpha)\leq E(Y)/\alpha$.
+:::
+
+::: {.remark title="Variations"}
+The same bound holds for the larger set $\theset{x\in X\suchthat\abs{f(x)}\geq\alpha}$: since $\alpha^p\chi_{\theset{\abs{f}\geq\alpha}}\leq\abs{f}^p$ pointwise, integrating gives
+$$
+\mu\qty{\theset{x\in X\suchthat\abs{f(x)}\geq\alpha}}\leq\qty{\frac{\norm{f}_p}{\alpha}}^p .
+$$
 :::
