@@ -20,22 +20,22 @@ audit:
 ---
 
 ::: {.problem}
-a.
-Let $f, g\in L^1(\RR^n)$ and give a definition of $f\ast g$.
+(a) Let $f, g\in L^1(\RR^n)$ and give a definition of $f\ast g$.
 
-b.
-Prove that if $f, g$ are integrable and bounded, then
-\[
-(f\ast g)(x) \converges{\abs x\to\infty}\to 0
-.\]
+(b) Prove that if $f, g$ are integrable and bounded, then
+$$
+(f\ast g)(x) \converges{\abs x\to\infty}\to 0.
+$$
 
+(c)
 
-c. In parts:
+(i) Define the *Fourier transform* of an integrable function $f$ on $\RR^n$.
 
-    1. Define the *Fourier transform* of an integrable function $f$ on $\RR^n$.
-    2. Give an outline of the proof of the Fourier inversion formula.
-    3. Give an example of a function $f\in L^1(\RR^n)$ such that $\hat{f}$ is not in $L^1(\RR^n)$.
+(ii) Give an outline of the proof of the Fourier inversion formula.
+
+(iii) Give an example of a function $f\in L^1(\RR^n)$ such that $\hat{f}$ is not in $L^1(\RR^n)$.
 :::
+
 ::: {.solution}
 (a) For $f, g \in L^1(\RR^n)$, $(f \ast g)(x) = \int_{\RR^n} f(x - y)\,g(y)\,dy$. By Tonelli's theorem $\iint |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$, so the integral converges absolutely for a.e. $x$, and $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
 
@@ -67,9 +67,9 @@ By steps [](#p1-1){.pf-ref} and [](#p1-2){.pf-ref}, $|(f\ast g)(x)| \le (\|f\|_\
 
 :::
 
-(c)1. For $f \in L^1(\RR^n)$, $\hat f(\xi) = \int_{\RR^n} f(x)\,e^{-2\pi i x \cdot \xi}\,dx$. The integral converges absolutely because $|f(x)e^{-2\pi i x\cdot\xi}| = |f(x)|$.
+(c)(i) For $f \in L^1(\RR^n)$, $\hat f(\xi) = \int_{\RR^n} f(x)\,e^{-2\pi i x \cdot \xi}\,dx$. The integral converges absolutely because $|f(x)e^{-2\pi i x\cdot\xi}| = |f(x)|$.
 
-(c)2. Let $f \in L^1$ with $\hat f \in L^1$. Then $f(x) = \int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for a.e. $x$.
+(c)(ii) Let $f \in L^1$ with $\hat f \in L^1$. Then $f(x) = \int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for a.e. $x$.
 
 ::: pf
 
@@ -97,7 +97,7 @@ As $t \to 0$, the left side of step [](#p2-2){.pf-ref} tends to $\int \hat f(\xi
 
 :::
 
-(c)3. For $n = 1$, $f = \chi_{[-1,1]}$ is in $L^1$ and $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi} \notin L^1(\RR)$.
+(c)(iii) For $n = 1$, $f = \chi_{[-1,1]}$ is in $L^1$ and $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi} \notin L^1(\RR)$.
 
 ::: {.proof}
 $\hat f(\xi) = \int_{-1}^1 e^{-2\pi i x \xi}\,dx = \frac{e^{2\pi i\xi} - e^{-2\pi i\xi}}{2\pi i \xi} = \frac{\sin(2\pi\xi)}{\pi\xi}$. For $k \geq 1$ and $\xi \in [k/2 + 1/8, k/2 + 3/8]$, $|\sin 2\pi\xi| \ge 1/\sqrt2$ and $|\xi| \le k/2 + 1$, so $\int|\hat f| \ge \sum_{k \ge 1}\frac{1}{4\sqrt2\,\pi(k/2+1)} = \infty$.
