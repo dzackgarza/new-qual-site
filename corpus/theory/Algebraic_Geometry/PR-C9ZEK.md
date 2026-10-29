@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.proposition}
-A sequence of sheaves $\mcf \to \mcg \to \mch$ is exact exactly when
+Let $X$ be a topological space. A sequence $\mcf \to \mcg \to \mch$ of sheaves of abelian groups on $X$ is exact exactly when
 $$
 \mcf_p \to \mcg_p \to \mch_p
 $$
