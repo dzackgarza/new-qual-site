@@ -9,8 +9,7 @@ topics:
 
 # Fibres and images
 
-Three theorems state what a morphism can do to dimension and to connectedness.
-Their hypotheses determine the direction of the dimension inequalities and the connectedness conclusions.
+The theorems below bound the dimensions of fibres, give a criterion for flatness from fibre dimension, and describe the connectedness of fibres.
 
 ## Dimension
 
