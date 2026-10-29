@@ -19,41 +19,41 @@ Describe the images of both the circle $|z|=r$ of radius $r(r \neq 0)$ and the r
 :::
 
 ::: {.solution}
-Write $z=re^{i\theta}$.
+Write $w = f(z) = x+iy$.
 
-For the circle $|z|=r$,
-\[
-w=z+\frac1z
-=\left(r+\frac1r\right)\cos\theta
-+i\left(r-\frac1r\right)\sin\theta.
-\]
-Thus, for $r\ne1$, its image is the ellipse
-\[
-\boxed{
-\frac{(\Re w)^2}{(r+r^{-1})^2}
-+\frac{(\Im w)^2}{(r-r^{-1})^2}=1.}
-\]
-Its foci are at $\pm2$. When $r=1$, the ellipse degenerates to the segment
-$[-2,2]$ on the real axis.
+::: pf
 
-For the ray $\arg z=\theta_0$, write $z=\rho e^{i\theta_0}$ with $\rho>0$.
-Then
-\[
-x=(\rho+\rho^{-1})\cos\theta_0,
-\qquad
-y=(\rho-\rho^{-1})\sin\theta_0.
-\]
-Since
-\[
-(\rho+\rho^{-1})^2-(\rho-\rho^{-1})^2=4,
-\]
-we obtain, when both sine and cosine are nonzero,
-\[
-\boxed{
-\frac{x^2}{4\cos^2\theta_0}
--\frac{y^2}{4\sin^2\theta_0}=1.}
-\]
-Hence the image is one branch of a hyperbola with foci at $\pm2$.
-For $\sin\theta_0=0$ it degenerates to a real ray outside $[-2,2]$; for
-$\cos\theta_0=0$ it degenerates to the imaginary axis.
+::: pf-step
+For $r\neq 1$ the circle $\abs z=r$ maps onto the ellipse $\boxed{\dfrac{x^2}{(r+r^{-1})^2}+\dfrac{y^2}{(r-r^{-1})^2}=1}$ with foci $\pm 2$; for $r=1$ it maps onto the segment $[-2,2]$.
+
+::: pf-proof
+For $z=re^{i\theta}$, $\theta\in[0,2\pi)$,
+$$
+w = \qty(r+\frac1r)\cos\theta + i\qty(r-\frac1r)\sin\theta,
+$$
+which traces the stated ellipse once. Its foci are at $\pm c$ with $c^2=(r+r^{-1})^2-(r-r^{-1})^2=4$. For $r=1$, $w=2\cos\theta$ runs over $[-2,2]$.
+:::
+
+:::
+
+::: pf-step
+If $\sin\theta_0\cos\theta_0\neq 0$, the ray $\arg z=\theta_0$ maps onto the branch of the hyperbola $\boxed{\dfrac{x^2}{4\cos^2\theta_0}-\dfrac{y^2}{4\sin^2\theta_0}=1}$ on which $x$ has the sign of $\cos\theta_0$; its foci are $\pm 2$.
+
+::: pf-proof
+For $z=\rho e^{i\theta_0}$, $\rho>0$, we get $x=(\rho+\rho^{-1})\cos\theta_0$ and $y=(\rho-\rho^{-1})\sin\theta_0$. Since $(\rho+\rho^{-1})^2-(\rho-\rho^{-1})^2=4$, the point lies on the stated hyperbola, and $x$ has the sign of $\cos\theta_0$. As $\rho$ runs over $(0,\infty)$, $\rho-\rho^{-1}$ runs over $\RR$, so $y$ takes every real value and the whole branch is covered. The foci are at $\pm c$ with $c^2 = 4\cos^2\theta_0+4\sin^2\theta_0=4$.
+:::
+
+:::
+
+::: pf-step
+The ray $\theta_0=0$ maps onto $[2,\infty)$, the ray $\theta_0=\pi$ onto $(-\infty,-2]$, and the rays $\theta_0=\pm\pi/2$ onto the imaginary axis.
+
+::: pf-proof
+For $\theta_0=0$ or $\pi$, $w=\pm(\rho+\rho^{-1})$ and $\rho+\rho^{-1}$ runs over $[2,\infty)$. For $\theta_0=\pm\pi/2$, $w=\pm i(\rho-\rho^{-1})$ and $\rho-\rho^{-1}$ runs over $\RR$.
+:::
+
+:::
+
+:::
+
 :::
