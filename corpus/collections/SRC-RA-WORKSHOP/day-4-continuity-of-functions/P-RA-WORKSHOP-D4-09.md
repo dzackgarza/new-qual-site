@@ -16,7 +16,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Suppose that $f:[a,b]\to\mathbb R$ is continuous and define $M:[a,b]\to\mathbb R$ by $$M(x)=\sup\{f(y):a\le y\le x\}.$$ Show that $M$ is continuous on $[a,b]$.
+Suppose that $f:[a,b]\to\RR$ is continuous and define $M:[a,b]\to\RR$ by $$M(x)=\sup\{f(y):a\le y\le x\}.$$ Show that $M$ is continuous on $[a,b]$.
 :::
 
 ::: {.solution}
@@ -30,9 +30,9 @@ The function $M$ is nondecreasing.
 ::: pf-proof
 
 If $a\leq x\leq y\leq b$, the inclusion $[a,x]\subseteq[a,y]$ implies
-\[
+$$
 M(x)=\sup_{t\in[a,x]}f(t)\leq\sup_{t\in[a,y]}f(t)=M(y).
-\]
+$$
 
 :::
 
@@ -44,13 +44,13 @@ The function $M$ is uniformly continuous on $[a,b]$.
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Since $f$ is continuous on the compact interval $[a,b]$, it is uniformly continuous. Choose $\delta>0$ such that $|f(u)-f(v)|<\varepsilon/2$ whenever $u,v\in[a,b]$ and $|u-v|<\delta$. Given $x,y\in[a,b]$ with $|x-y|<\delta$, assume $x\leq y$. Every $t\in[x,y]$ satisfies $f(t)<f(x)+\varepsilon/2$, so
-\[
+Fix $\varepsilon>0$. Since $f$ is continuous on the compact interval $[a,b]$, it is uniformly continuous. Choose $\delta>0$ such that $\abs{f(u)-f(v)}<\varepsilon/2$ whenever $u,v\in[a,b]$ and $\abs{u-v}<\delta$. Given $x,y\in[a,b]$ with $\abs{x-y}<\delta$, assume $x\leq y$. Every $t\in[x,y]$ satisfies $f(t)<f(x)+\varepsilon/2$, so
+$$
 M(y)=\max\left\{M(x),\sup_{t\in[x,y]}f(t)\right\}
 \leq\max\left\{M(x),f(x)+\varepsilon/2\right\}
 \leq M(x)+\varepsilon/2.
-\]
-By step [](#s1){.pf-ref}, $0\leq M(y)-M(x)\leq\varepsilon/2<\varepsilon$. Interchanging $x$ and $y$ gives the same bound in the other order. Hence $|M(x)-M(y)|<\varepsilon$.
+$$
+By step [](#s1){.pf-ref}, $0\leq M(y)-M(x)\leq\varepsilon/2<\varepsilon$. Interchanging $x$ and $y$ gives the same bound in the other order. Hence $\abs{M(x)-M(y)}<\varepsilon$.
 
 :::
 
