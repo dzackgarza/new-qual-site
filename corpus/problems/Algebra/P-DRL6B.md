@@ -19,6 +19,10 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: Converted the prose solution to a STYLE-08 structured proof.
 ---
 
 ::: {.problem}
@@ -29,39 +33,38 @@ where $\lambda_1, \dots, \lambda_k \in K$ are the distinct eigenvalues of $T$.
 :::
 
 ::: {.solution}
-For each eigenvalue $\lambda$ of $T$, write
-$$
-E_\lambda=\ker(T-\lambda I).
-$$
-Eigenspaces for distinct eigenvalues are linearly independent: if
-$$
-v_1+\cdots+v_r=0,\qquad v_i\in E_{\lambda_i},
-$$
-with the $\lambda_i$ distinct, then applying
-$$
-\prod_{j\ne i}(T-\lambda_jI)
-$$
-gives
-$$
-\left(\prod_{j\ne i}(\lambda_i-\lambda_j)\right)v_i=0,
-$$
-so $v_i=0$. Hence the sum of the eigenspaces is always direct.
+For each eigenvalue $\lambda$ of $T$, write $E_\lambda=\ker(T-\lambda I)$.
 
-If $T$ is diagonalizable, $V$ has a basis of eigenvectors. Every basis vector lies in one of the eigenspaces, so the eigenspaces span $V$. Therefore
-$$
-V=\bigoplus_\lambda E_\lambda.
-$$
+::: pf
 
-Conversely, suppose
-$$
-V=\bigoplus_\lambda E_\lambda.
-$$
-Choose a basis of each eigenspace and take their union. Because the sum is direct and equals $V$, this union is a basis of $V$, and every one of its vectors is an eigenvector of $T$. Thus the matrix of $T$ in this basis is diagonal, so $T$ is diagonalizable.
+::: {.pf-step #direct}
+The sum of the eigenspaces of $T$ is direct.
 
-Equivalently,
-$$
-T\text{ is diagonalizable}
-\iff
-\sum_\lambda \dim E_\lambda=\dim V.
-$$
+::: pf-proof
+Suppose $v_1+\cdots+v_r=0$ with $v_i\in E_{\lambda_i}$ and the $\lambda_i$ distinct.
+Applying $\prod_{j\ne i}(T-\lambda_jI)$ gives $\left(\prod_{j\ne i}(\lambda_i-\lambda_j)\right)v_i=0$, and the scalar is nonzero, so $v_i=0$.
+:::
+
+:::
+
+::: {.pf-step #forward}
+If $T$ is diagonalizable, then $V=\bigoplus_\lambda E_\lambda$.
+
+::: pf-proof
+$V$ has a basis of eigenvectors of $T$, and every basis vector lies in some $E_\lambda$, so the eigenspaces span $V$.
+By step [](#direct){.pf-ref} the sum is direct.
+:::
+
+:::
+
+::: pf-qed
+Step [](#forward){.pf-ref} proves one implication.
+Conversely, suppose $V=\bigoplus_\lambda E_\lambda$.
+Choose a basis of each eigenspace and take their union.
+Because the sum is direct and equals $V$, this union is a basis of $V$, and each of its vectors is an eigenvector of $T$.
+The matrix of $T$ in this basis is diagonal, so $T$ is diagonalizable.
+:::
+
+:::
+
 :::
