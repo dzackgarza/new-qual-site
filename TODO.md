@@ -117,7 +117,13 @@ mathematical correction under its own node, not under copy policy.
     PR-DWOXP/FE-GN3CF, PR-YO7MV/FD-3BK6U, D-2CCDB/FD-XVMEE, D-HHVPT/FD-ST7TD, P-7XPOK and
     P-PEND3 overlaps, real-week-2-measure-theory process text, P-OPH7A prose solution,
     "orthonormal" in FT-NFMJW and PR-ZI7M3, Arzelà–Ascoli codomain, T-ERNLN notation).
-    **Acceptance:** each read and repaired.
+    **Acceptance:** each read and repaired. **Closed.** Every CARD-04 group was one
+    statement and is merged into the surviving card named first; the workshop theorem cards
+    merged into their pairs, and D-RA-WORKSHOP-D7-CONVERGENCE into D-IYDZU and D-YZC3C, with
+    the series forms as remarks. T-RA-WORKSHOP-D7-6-7 stays as Stone--Weierstrass, which no
+    other card states; Weierstrass approximation lives on T-3QNBQ. FS-5FKPD stays apart from
+    FF-IAUQG: it is the strategy for showing a series converges uniformly and cites the
+    $M$-test. P-7XPOK merged into E-MFCCS, E-EJN4Q, E-M3CGY, E-L3F4O and T-OTR5M.
   - **`ad2-topology-content`**. **Needs:** none. Citation-only `concept` blocks on about 80
     topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
     change-of-basepoint restatement; curves-in-projective-space opening and projection
