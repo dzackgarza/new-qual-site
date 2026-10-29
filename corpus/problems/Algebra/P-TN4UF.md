@@ -15,27 +15,51 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G$ be a compact Lie group and let $\rho:G\to GL(V)$ be a finite-dimensional continuous complex representation. Show that $\rho$ is equivalent to a unitary representation.
+Let $G$ be a compact Lie group and let $\rho:G\to \GL(V)$ be a finite-dimensional continuous complex representation. Show that $\rho$ is equivalent to a unitary representation.
 :::
 
 ::: {.solution}
-Choose any Hermitian inner product $\langle-,-\rangle_0$ on $V$. Let $\mu$ be normalized Haar probability measure on the compact group $G$. Define
-\[
-\langle v,w\rangle_G
-=\int_G\langle \rho(g)v,\rho(g)w\rangle_0\,d\mu(g).
-\]
-This is again a Hermitian inner product: positivity follows because the integrand is continuous and nonnegative, and for $v\ne0$ its value at the identity is positive.
+Choose a Hermitian inner product $\inner{-}{-}_0$ on $V$, and let $\mu$ be the Haar probability measure on $G$, which is both left and right invariant because $G$ is compact.
 
-For $h\in G$, left invariance of Haar measure gives
-\[
+::: pf
+
+::: {.pf-step #average}
+$\inner{v}{w}_G\coloneqq\int_G\inner{\rho(g)v}{\rho(g)w}_0\,d\mu(g)$ is a Hermitian inner product on $V$.
+
+::: pf-proof
+It is sesquilinear and Hermitian because the integrand is.
+For $v\ne0$ the integrand $g\mapsto\inner{\rho(g)v}{\rho(g)v}_0$ is continuous, nonnegative, and positive at the identity, so it is positive on an open neighbourhood of the identity, which has positive Haar measure; hence $\inner{v}{v}_G>0$.
+:::
+
+:::
+
+::: {.pf-step #invariant}
+Every $\rho(h)$ is unitary for $\inner{-}{-}_G$.
+
+::: pf-proof
+By right invariance of $\mu$,
+$$
 \begin{aligned}
-\langle\rho(h)v,\rho(h)w\rangle_G
-&=\int_G\langle\rho(g)\rho(h)v,\rho(g)\rho(h)w\rangle_0\,d\mu(g)\\
-&=\int_G\langle\rho(gh)v,\rho(gh)w\rangle_0\,d\mu(g)\\
-&=\langle v,w\rangle_G.
+\inner{\rho(h)v}{\rho(h)w}_G
+&=\int_G\inner{\rho(gh)v}{\rho(gh)w}_0\,d\mu(g)\\
+&=\int_G\inner{\rho(g)v}{\rho(g)w}_0\,d\mu(g)
+=\inner{v}{w}_G.
 \end{aligned}
-\]
-Thus every $\rho(h)$ is unitary with respect to $\langle-,-\rangle_G$.
+$$
+:::
 
-Choose an orthonormal basis for this invariant Hermitian form. In that basis, all matrices $\rho(g)$ are unitary. Hence the original representation is equivalent to a unitary representation.
+:::
+
+::: pf-step
+$\rho$ is equivalent to a unitary representation.
+
+::: pf-proof
+Let $P:\CC^n\to V$ send the standard basis to an orthonormal basis for $\inner{-}{-}_G$.
+By step [](#invariant){.pf-ref}, each $P^{-1}\rho(g)P$ is a unitary matrix, so $g\mapsto P^{-1}\rho(g)P$ is a unitary representation equivalent to $\rho$.
+:::
+
+:::
+
+:::
+
 :::
