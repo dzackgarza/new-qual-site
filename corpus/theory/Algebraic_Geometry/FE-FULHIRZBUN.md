@@ -17,8 +17,8 @@ relations:
   target: PR-TORMOR
 review: draft
 prompts:
-- Identify the Hirzebruch surface as the projectivisation of a rank two bundle on P^1.
-- What is the normal bundle of the negative section of F_a?
+- Identify the Hirzebruch surface as the projectivisation of a rank two bundle on $\PP^1$.
+- What is the normal bundle of the negative section of $\FF_a$?
 ---
 
 ::: {.example title="The ruling is a toric morphism"}
@@ -61,7 +61,7 @@ The two disjoint sections are the ones cut out by the two summands, and they hav
 $$
 D_2^2 = -a, \qquad D_4^2 = +a ,
 $$
-so $D_2$ is the **negative section**. Its normal bundle is
+so $D_2$ is the \dfn{negative section}. Its normal bundle is
 $$
 N_{D_2 / \FF_a} \cong \OO_{D_2}(D_2) \cong \OO_{\PP^1}(-a) ,
 $$
@@ -80,5 +80,5 @@ What does not depend on the convention is the pair of self-intersections $\these
 
 For $a \geq 1$ the negative section is the unique irreducible curve on $\FF_a$ with negative self-intersection, which is why $\FF_a \cong \FF_b$ forces $a = b$: the integer $a$ is recovered from the surface.
 For $a = 0$ there is no negative curve and $\FF_0 = \PP^1 \times \PP^1$ has two rulings instead of one.
-Contracting the negative section of $\FF_a$ gives the cone over the rational normal curve of degree $a$, which is how the affine singular cone and the surface classification are the same picture seen twice.
+Contracting the negative section of $\FF_a$ gives the projective cone over the rational normal curve of degree $a$, whose vertex is the singular point of the affine cone in [[FE-FULQUOT]].
 :::
