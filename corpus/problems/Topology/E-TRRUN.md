@@ -17,23 +17,29 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "is is metrizable"; the repeated word is removed.
 ---
 
 ::: {.exercise}
-Show that a compact Hausdorff space is is metrizable iff it is second-countable.
+Show that a compact Hausdorff space is metrizable iff it is second-countable.
 :::
 
 ::: {.solution}
 
+Let $X$ be a compact Hausdorff space.
+
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-($\Rightarrow$) If $X$ is compact and metrizable, then $X$ is second-countable.
+If $X$ is metrizable, then $X$ is second-countable.
 
 ::: pf-proof
 
-a compact metric space is separable (totally bounded), and a separable metric space is second-countable.
+A compact metric space is totally bounded, so for each $n$ finitely many balls of radius $1/n$ cover it; their centers over all $n$ form a countable dense set. A separable metric space is second-countable: the balls of rational radius about the points of a countable dense set form a countable basis.
 
 :::
 
@@ -41,55 +47,13 @@ a compact metric space is separable (totally bounded), and a separable metric sp
 
 ::: pf-step
 
-($\Leftarrow$) Suppose $X$ is compact Hausdorff and second-countable.
+If $X$ is second-countable, then $X$ is metrizable.
 
 ::: pf-proof
 
-assume the hypotheses.
+A compact Hausdorff space is normal, hence regular. By the Urysohn metrization theorem, a second-countable regular Hausdorff space is metrizable.
 
 :::
-
-:::
-
-::: {.pf-step #s3}
-
-A second-countable compact Hausdorff space is regular (compact Hausdorff implies normal, hence regular).
-
-::: pf-proof
-
-compact Hausdorff spaces are normal.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-By the Urysohn metrization theorem, a second-countable regular space is metrizable.
-
-::: pf-proof
-
-Urysohn metrization theorem.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence $X$ is metrizable.
-
-::: pf-proof
-
-Steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s5){.pf-ref}.
 
 :::
 
