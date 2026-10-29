@@ -104,7 +104,7 @@ source:
   - id: E-FUIDU
   - id: E-FVXIT
   - id: E-FXYTL
-  - id: E-FZLDN
+  - id: E-SS2.EX-15
     comment: Stein--Shakarchi 2.15
   - id: E-G3DCH
   - id: E-G4N4D
