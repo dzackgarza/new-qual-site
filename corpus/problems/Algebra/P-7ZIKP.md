@@ -22,38 +22,38 @@ audit:
 ---
 
 ::: {.problem}
-Give examples of maximal ideals in $K = R \times R \times R \times \cdots$, the product of countably many copies of R. What about for a product of countably many copies of an arbitrary commutative ring $R$?
+Give examples of maximal ideals in $K = R \times R \times R \times \cdots$, the product of countably many copies of $R$. What about for a product of countably many copies of an arbitrary commutative ring $R$?
 :::
 
 ::: {.solution}
 Assume throughout that $R$ is a nonzero commutative ring with identity, and put
-\[
+$$
 K=\prod_{i\in\NN}R.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Every maximal ideal $\mathfrak m\subset R$ and every coordinate $j\in\NN$ give a maximal ideal
-\[
+$$
 M_{j,\mathfrak m}=\{(a_i)\in K:a_j\in\mathfrak m\}.
-\]
+$$
 
 ::: pf-proof
 
 Let
-\[
+$$
 \pi_j:K\to R\to R/\mathfrak m
-\]
+$$
 be projection to the $j$th coordinate followed by the quotient map. This is a surjective ring homomorphism and
-\[
+$$
 \ker \pi_j=M_{j,\mathfrak m}.
-\]
+$$
 Since $R/\mathfrak m$ is a field, the first isomorphism theorem gives
-\[
+$$
 K/M_{j,\mathfrak m}\cong R/\mathfrak m,
-\]
+$$
 so $M_{j,\mathfrak m}$ is maximal.
 
 :::
@@ -63,35 +63,35 @@ so $M_{j,\mathfrak m}$ is maximal.
 ::: pf-step
 
 More generally, let $\mathcal U$ be an ultrafilter on $\NN$ and let $\mathfrak m$ be a maximal ideal of $R$. Then
-\[
+$$
 M_{\mathcal U,\mathfrak m}
 =
 \left\{(a_i)\in K:\{i:a_i\in\mathfrak m\}\in\mathcal U\right\}
-\]
+$$
 is a maximal ideal of $K$.
 
 ::: pf-proof
 
 Let $k=R/\mathfrak m$, a field. Coordinatewise reduction modulo $\mathfrak m$ gives a surjective homomorphism
-\[
+$$
 K\longrightarrow k^{\NN}.
-\]
+$$
 Compose this with the quotient map to the ultraproduct
-\[
+$$
 k^{\NN}\longrightarrow k^{\NN}/\mathcal U.
-\]
+$$
 The ultraproduct of fields is again a field: if the class of $(x_i)$ is nonzero, then
-\[
+$$
 S=\{i:x_i\ne0\}\in\mathcal U,
-\]
+$$
 and defining $y_i=x_i^{-1}$ on $S$ and arbitrarily off $S$ gives $(x_i)(y_i)=1$ modulo $\mathcal U$.
 
 The kernel of the composite consists exactly of those $(a_i)$ for which
-\[
+$$
 \{i:a_i\bmod\mathfrak m=0\}
 =
 \{i:a_i\in\mathfrak m\}
-\]
+$$
 belongs to $\mathcal U$. Hence its kernel is $M_{\mathcal U,\mathfrak m}$, and the quotient is a field. Therefore $M_{\mathcal U,\mathfrak m}$ is maximal.
 
 :::
