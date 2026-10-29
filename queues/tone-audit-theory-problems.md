@@ -1523,7 +1523,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Topology/E-OYP3Y.md` | `5cef3f69a383727a0f5e4fa6fc48b96b403c686a` | `5cef3f69a383727a0f5e4fa6fc48b96b403c686a` | Read; retained |
 | [x] | `corpus/problems/Topology/E-P3RLK.md` | `6244bef80cc4561ccb6d13eb469f774c22cec7de` | `6244bef80cc4561ccb6d13eb469f774c22cec7de` | Read; retained |
 | [x] | `corpus/problems/Topology/E-Q7TSH.md` | `236f81f6d1c70ff30edc07f557cd60ae9f9129e6` | `236f81f6d1c70ff30edc07f557cd60ae9f9129e6` | Read; retained |
-| [x] | `corpus/problems/Topology/E-T7PYZ.md` | `e1b2cb3ff0c61e5d1656fabd28cf6442fc9a4adc` | `e1b2cb3ff0c61e5d1656fabd28cf6442fc9a4adc` | Read; retained |
 | [x] | `corpus/problems/Topology/E-TIFII.md` | `bf9da075c6e15b108476f6a1722029d194286d0c` | `bf9da075c6e15b108476f6a1722029d194286d0c` | Read; retained |
 | [x] | `corpus/problems/Topology/E-TMOKI.md` | `53f2c23968dc00a6f444cc3604e82bf1fd60c2c6` | `53f2c23968dc00a6f444cc3604e82bf1fd60c2c6` | Read; retained |
 | [x] | `corpus/problems/Topology/E-TRRUN.md` | `9d6ae2a7253d4e2943319f0485d029861d1f2f72` | `9d6ae2a7253d4e2943319f0485d029861d1f2f72` | Read; retained |

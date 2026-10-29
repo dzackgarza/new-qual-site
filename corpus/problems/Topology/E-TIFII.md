@@ -74,3 +74,7 @@ Every open cover has the finite subcover constructed in step [](#s3){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+$\RR$ with the cofinite topology is compact: $\RR$ is an infinite set, so the main proof applies unchanged.
+:::
