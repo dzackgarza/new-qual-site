@@ -51,7 +51,7 @@ Dividing the zero of $G$ by $z$ gives a holomorphic extension of $f$.
 
 ::: pf-proof
 
-By [[T-SRY2V|holomorphic implies analytic]], the Taylor series of $G$ at $0$ has the form
+By [[T-GROTS|holomorphic implies analytic]], the Taylor series of $G$ at $0$ has the form
 $$
 G(z)=\sum_{n\ge1}a_nz^n
 $$

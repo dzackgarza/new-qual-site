@@ -13,8 +13,6 @@ order: 7
 
 [[PR-JKE6C]]
 
-[[T-SRY2V]]
-
 [[PR-QNDSD]]
 
 [[T-GROTS]]
@@ -62,8 +60,6 @@ See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 ## Singularities
 
 [[T-4XPWL]]
-
-[[C-7S2CO]]
 
 [[T-ZZJDP]]
 

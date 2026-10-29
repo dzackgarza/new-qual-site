@@ -22,30 +22,13 @@ Holomorphic and analytic are equivalent: the Cauchy integral formula gives the p
 
 [[D-V6UQJ]]
 
-[[T-GROTS]]
-
 [[PR-QNDSD]]
 
 ## Holomorphic implies analytic
 
-[[T-SRY2V]]
+[[T-GROTS]]
 
 ::: {.proof}
-After translating and rescaling, $p=0$ and $f$ is holomorphic on a neighborhood of $\overline{\DD}$; fix $z\in\DD$.
-For $w\in S^1$,
-$$
-{1\over w-z} = {1\over w} \qty{ 1 + \qty{z\over w} + \qty{z\over w}^2 + \cdots}
-,$$
-which converges uniformly in $w\in S^1$ because $\abs{z/w} = \abs z < 1$, so the Cauchy integral formula may be expanded term by term:
-$$
-f(z)=\frac{1}{2 \pi i} \int_{S^{1}} \frac{f(w) }{w-z} \dw
-= \sum z^{k} \frac{1}{2 \pi i} \int_{S^{1}} \frac{f(w)}{w^{k+1}} \dw
-=\sum c_{k} z^{k}
-.$$
-
-:::
-
-::: {.proof title="Holomorphic implies analytic, alternative"}
 Let $f$ be holomorphic on a domain $D$, let $z_0\in D$, and let $r_0>0$ with $D(z_0, r_0)\subseteq D$.
 Fix $0<R<r_0$ and $z\in D(z_0,R)$.
 By the Cauchy integral formula,
@@ -64,8 +47,6 @@ The series converges on $D(z_0,R)$ for every $R<r_0$, so its radius of convergen
 :::
 
 [[T-K66DJ]]
-
-[[C-7S2CO]]
 
 ::: {.remark title="The coefficient formula"}
 By the integral formula, for $f$ holomorphic on $D_R(z_0)$, all $k\geq 0$ and all $0<r<R$:

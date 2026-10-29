@@ -68,7 +68,7 @@ F(z)=\frac{\cos z}{s(z)}
 $$
 is therefore holomorphic on this whole disk, agrees
 with $f$ near zero, and has $F(0)=1$. This proves (a).
-By [[T-SRY2V|holomorphic implies analytic]], the Taylor
+By [[T-GROTS|holomorphic implies analytic]], the Taylor
 series of $F$ at zero converges throughout every closed
 subdisc of $|z|<\pi$, so its radius is at least $\pi$.
 

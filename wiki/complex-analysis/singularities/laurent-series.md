@@ -14,7 +14,7 @@ A Laurent series expands a holomorphic function on an annulus, with both positiv
 
 [[T-4XPWL]]
 
-[[C-7S2CO]]
+[[T-GROTS]]
 
 ## Dependence on the annulus
 
