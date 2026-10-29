@@ -59,7 +59,7 @@ because $\int_\gamma (z-z_0)^m\dz$ is $2\pi i$ for $m=-1$ and $0$ for every othe
 
 :::
 
-::: pf-step
+::: {.pf-step #regular-part}
 The part $\sum_{n\ge 0}c_n(z-z_0)^n$ converges for $\abs{z-z_0}<R$.
 
 ::: pf-proof
@@ -68,7 +68,7 @@ This is the Cauchy--Hadamard formula for the radius of convergence of a power se
 
 :::
 
-::: pf-step
+::: {.pf-step #principal-part}
 The part $\sum_{n\ge1}c_{-n}(z-z_0)^{-n}$ converges for $\abs{z-z_0}>r$.
 
 ::: pf-proof
@@ -78,7 +78,7 @@ Put $w=(z-z_0)^{-1}$. The power series $\sum_{n\ge1}c_{-n}w^n$ has radius of con
 :::
 
 ::: pf-qed
-The Laurent series converges where both parts converge, so by the two preceding steps it converges on the annulus $r<\abs{z-z_0}<R$.
+The Laurent series converges where both parts converge, so by steps [](#regular-part){.pf-ref} and [](#principal-part){.pf-ref} it converges on the annulus $r<\abs{z-z_0}<R$.
 It diverges at every $z$ with $\abs{z-z_0}<r$ or $\abs{z-z_0}>R$, where one part diverges by Cauchy--Hadamard; on the circles $\abs{z-z_0}=r$ and $\abs{z-z_0}=R$ the formulas decide nothing.
 :::
 
