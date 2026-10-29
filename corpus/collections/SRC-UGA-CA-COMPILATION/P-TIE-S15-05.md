@@ -14,25 +14,21 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 5.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks to show M_R > 1 for every polynomial p, which fails for p = 0 (M_R = 1), and writes the annulus with r < R only. Part (1) now assumes p is nonzero, and part (2) assumes 0 < r < R.
 ---
 
 ::: {.problem}
-(1) Let $p ( z )$ be a polynomial, $R > 0$ any positive number, and $m \geq 1$ an integer.
-Let $M _ { R } = \operatorname* { s u p } \{ | z ^ { m } p ( z ) - 1 | : | z | = R \}$ . Show that $M _ { R } > 1$ •
+(1) Let $p(z)$ be a nonzero polynomial, $R > 0$ any positive number, and $m \geq 1$ an integer.
+Let $M_{R} = \sup\{ |z^{m} p(z) - 1| : |z| = R \}$. Show that $M_{R} > 1$.
 
-(2) Let $m \geq 1$ be an integer and $K = \{ z \in \mathbb { C } : r \leq | z | \leq R \}$ where $r < R .$ . Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon _ { 0 } > 0$ such that for each polynomial $p ( z )$ ,
+(2) Let $m \geq 1$ be an integer and $K = \{ z \in \mathbb{C} : r \leq |z| \leq R \}$ where $0 < r < R$. Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon_{0} > 0$ such that for each polynomial $p(z)$,
 
 $$
-\operatorname* { s u p } \{ | p ( z ) - z ^ { - m } | : z \in K \} \geq \varepsilon _ { 0 } .
+\sup\{ |p(z) - z^{-m}| : z \in K \} \geq \varepsilon_{0}.
 $$
-:::
-
-::: {.remark}
-Erratum: part (1) is false for the zero polynomial, since $p=0$ gives
-$$
-M_R=1.
-$$
-The correct statement for arbitrary polynomials is $M_R\ge1$, and the inequality is strict when $p\ne0$. This corrected form is sufficient for part (2).
 :::
 
 ::: {.solution}
@@ -200,7 +196,7 @@ for every polynomial $p$, respectively with and without using part (1).
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} gives the corrected form of part (1) and identifies the exception to the strict inequality stated in part (1). Step [](#s1-4){.pf-ref} proves part (2) by both requested methods.
+Step [](#s1-1){.pf-ref} proves part (1). Step [](#s1-4){.pf-ref} proves part (2) by both requested methods.
 
 :::
 
