@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PCVOI
 kind: problem
-title: $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{n\in\mathbb{Z}}\frac{1}{(z-n)^2}$ by matching
+title: $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{n\in\ZZ}\frac{1}{(z-n)^2}$ by matching
   singularities, principal parts, and decay in a period strip
 classification:
   areas:
@@ -19,70 +19,95 @@ review: draft
 
 ::: {.problem}
 Define
-\[
+$$
+\begin{aligned}
 f(z) &= {\pi^2 \over \sin^2 \qty{\pi z} } \\
-g(z) &= \sum_{n\in \ZZ} {1\over (z-n)^2}
-.\]
+g(z) &= \sum_{n\in \ZZ} {1\over (z-n)^2}.
+\end{aligned}
+$$
 
-a. Show that $f$ and $g$ have the same singularities in $\CC$.
+(a) Show that $f$ and $g$ have the same singularities in $\CC$.
 
-b. Show that $f$ and $g$ have the same singular parts at each of their singularities.
+(b) Show that $f$ and $g$ have the same singular parts at each of their singularities.
 
-c. Show that $f, g$ each have period one and approach zero uniformly on $0\leq x \leq 1$ as $\abs{y}\to \infty$.
+(c) Show that $f, g$ each have period one and approach zero uniformly on $0\leq x \leq 1$ as $\abs{y}\to \infty$.
 
-d. Conclude that $f = g$.
-
+(d) Conclude that $f = g$.
 :::
 
 ::: {.solution}
-**Part 1**: This is clear: $\sin^2(\pi z) = 0 \iff z = k$ for $k\in \ZZ$, and this is a pole of order 2 for $f$.
-Every $k\in \ZZ$ is visibly an order 2 pole of $g$.
 
-**Part 2**: By periodicity, it suffices to consider the singularity at $z_0 = 0$.
-Expanding $\sin(\pi z) = \pi z - {1\over 3!}(\pi z)^3 + {1\over 5!} (\pi z)^5 + \cdots$ and considering $\sin(\pi z)^2$ shows that $z=0$ is a pole of order 2. So $z^2f(z)$ has a removable singularity at $z=0$, and can be expanded:
-\[
-z^2f(z)
-&= \qty{\pi z\over \sin(\pi z)}^2 \\
-&= (\pi z)^2 \qty{ \inverseof{(\pi z)} + {1\over 3!}(\pi z) + {7\over 360} (\pi z^3) +  \cdots}^2 \\
-&= (\pi z)^2 \qty{ (\pi z)^{-2} + \bigo(1)  } \\
-&= 1 + \bigo(z^2) \\
-\implies f(z) &= z^{-2} + \bigo(1)
-,\]
-so the singular part of $f$ at $z=0$ is $z^{-2}$.
-This coincides with the ${1\over z^2}$ term in $g$.
-The remaining principal parts at $z=k$ are ${1\over (z-k)^2},$ using the fact that $f(z+1) = f(z)$, so $f(k) = f(0)$ and the Laurent expansions are gotten by substituting $z-k$ in for $z$ everywhere.
+Write $z=x+iy$.
 
-**Part 3**: Periodicity is clear for $f$.
-For $g$,
-\[
-g(z+1) = \sum_{k\in \ZZ} ((z-1)-k)^{-2} = \sum_{k'\in \ZZ} (z-k)^{-2}
-,\]
-where $k' \definedas k+1$, and the equality is true since both sums run over all of $\ZZ$.
+::: pf
 
-For convergence: take $z=it$, then for $f$
-\[
-f(it) \sim \csc^2(i\pi t) &\sim \qty{ e^{i\pi (it) } - e^{-i\pi (it)}}^{-2} \\
-&= \qty{e^{-\pi t} - e^{\pi t}}^{-2} \\
-&\leq {1\over e^{-\pi t} + e^{\pi t} } \\
-&\sim e^{-\pi t} \\
-&\to 0
-,\]
-using the reverse triangle inequality and that the $e^{-\pi t}$ term in the denominator is negligible for large $t$.
+::: {.pf-step #g-conv}
+The series $g$ converges locally uniformly on $\CC\setminus\ZZ$, and $g(z)-\frac{1}{(z-k)^2}$ is holomorphic near each $k\in\ZZ$.
 
-For $g$,
-\[
-g(it)
-&\sim t^{-2} + \sum_{k\geq 1} \inverseof{(t^2 + k^2)} \\
-&\leq t^{-2} + \sum_{1\leq k \leq N}\inverseof{(t^2 + k^2)} + \sum_{k\geq N}\inverseof{(t^2 + k^2)} \\
-&\leq t^{-2} + \sum_{1\leq k \leq N}\inverseof{(t\cdot k^2)} + \sum_{k\geq N}\inverseof{(k^2)} \\
-&\leq t^{-2} + \inverseof{t} \sum_{1\leq k \leq N}\inverseof{(k^2)} + \sum_{k\geq N}\inverseof{(k^2)} \\
-&\convergesto{N\to\infty\implies t\to\infty} 0
-,\]
-where given $N$ we can pick $t$ large enough so that $t^2 + k^2 \geq tk^2$ for all $k\leq N$.
-These converge to zero as $N\to\infty$ since $\sum k^{-2} < \infty$, making the last term the tail of a convergent sum.
+::: pf-proof
+On $\abs{z}\leq R$, the terms with $\abs{n}\geq 2R$ satisfy $\abs{z-n}^{-2}\leq 4n^{-2}$, so by the Weierstrass $M$-test they sum to a holomorphic function there.
+The finitely many remaining terms are holomorphic away from $\ZZ$, and near $k$ only $\frac{1}{(z-k)^2}$ is singular.
+:::
 
-**Part 4**: Since $f,g$ uniformly converge to zero on the strip $0<\Re(x) < 1$, they are bounded on this strip.
-Since this is a fundamental domain for their periods, they are bounded on $\CC$.
-Write $h\definedas f-g$, then $h$ is entire since $f,g$ have the same singular parts, and bounded since $\abs{h}\leq \abs{f} + \abs{g}$.
-By Liouville, $h$ is constant with $\lim_{t\to\infty} h(it) = 0$, so $h\equiv 0$ and $f\equiv g$.
+:::
+
+::: {.pf-step #part-a}
+(a) The singularities of $f$ and of $g$ are exactly the points of $\ZZ$.
+
+::: pf-proof
+$\sin(\pi z)=0$ iff $z\in\ZZ$, so $f$ is holomorphic exactly off $\ZZ$.
+By step [](#g-conv){.pf-ref}, $g$ is holomorphic off $\ZZ$ and has a pole at each $k\in\ZZ$.
+:::
+
+:::
+
+::: {.pf-step #periodic}
+$f$ and $g$ have period $1$.
+
+::: pf-proof
+$\sin^2(\pi(z+1)) = (-\sin(\pi z))^2$, and $g(z+1)=\sum_{n\in\ZZ}(z-(n-1))^{-2} = g(z)$ by reindexing.
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) At each $k\in\ZZ$, $f$ and $g$ both have principal part $\frac{1}{(z-k)^2}$.
+
+::: pf-proof
+For $g$ this is step [](#g-conv){.pf-ref}.
+By step [](#periodic){.pf-ref} it suffices to treat $f$ at $k=0$, where
+$$
+f(z) = \frac{1}{z^2}\left(1-\frac{\pi^2z^2}{6}+O(z^4)\right)^{-2} = \frac{1}{z^2}+\frac{\pi^2}{3}+O(z^2).
+$$
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) $f(x+iy)\to0$ and $g(x+iy)\to0$ as $\abs{y}\to\infty$, uniformly in $x\in[0,1]$.
+
+::: pf-proof
+$\abs{\sin(\pi z)}^2=\sin^2(\pi x)+\sinh^2(\pi y)\geq\sinh^2(\pi y)$, so $\abs{f(z)}\leq\pi^2/\sinh^2(\pi y)$.
+For $x\in[0,1]$, $\abs{x-n}\geq\max(0,\abs{n}-1)$, so for $y\neq0$
+$$
+\abs{g(x+iy)}\leq\sum_{n\in\ZZ}\frac{1}{(x-n)^2+y^2}\leq\frac{3}{y^2}+2\sum_{m\geq1}\frac{1}{m^2+y^2}\leq\frac{3}{y^2}+2\int_0^\infty\frac{dt}{t^2+y^2}=\frac{3}{y^2}+\frac{\pi}{\abs{y}}.
+$$
+Periodicity is step [](#periodic){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+(d) $f=g$.
+
+::: pf-proof
+By steps [](#part-a){.pf-ref} and [](#part-b){.pf-ref}, $h\coloneqq f-g$ extends to an entire function, of period $1$ by step [](#periodic){.pf-ref}.
+By step [](#part-c){.pf-ref}, $h$ is bounded on $\{0\leq x\leq 1,\ \abs{y}\geq Y\}$ for some $Y$; it is bounded on the compact rectangle $\{0\leq x\leq1,\ \abs{y}\leq Y\}$ by continuity, hence on $\CC$ by periodicity.
+By Liouville's theorem $h$ is constant, and by step [](#part-c){.pf-ref} the constant is $0$.
+:::
+
+:::
+
+:::
+
 :::
