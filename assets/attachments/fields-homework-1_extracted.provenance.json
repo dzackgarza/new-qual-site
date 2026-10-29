@@ -1,0 +1,14 @@
+{
+  "source_image": "assets/Algebra/999_Review/image/SmartSelect_20210420-000457_Xodo_Docs.jpg",
+  "source_image_sha256": "59a58154ab5ca785f17075af28928ddb9a5ebf5461cb0a8ed33b0dc20cca2ff8",
+  "source_pdf": "assets/attachments/fields-homework-1.pdf",
+  "source_pdf_sha256": "b1e7aa8c5ddd0514dd02d9dd8687595d14afc6b88150caa3cfd4ebccc343b2dc",
+  "conversion": "img2pdf (lossless JPEG embedding, no resampling or OCR)",
+  "extracted_markdown": "assets/attachments/fields-homework-1_extracted.md",
+  "extracted_markdown_sha256": "d5a053b61faf450b53a87ec1601701194b460f9487e0242b66dd4bebf6b57f53",
+  "extractor": "mineru-open-api",
+  "command": "mineru-open-api flash-extract assets/attachments/fields-homework-1.pdf --language en",
+  "generated_at": "2026-10-30",
+  "result": "exit 0",
+  "extraction_defects": "Problem 1 lost its number and the arrow in A: L -> L; problem 3 reads f with a bar; problem 4 has a sans-serif (a). Each was read from the page image."
+}

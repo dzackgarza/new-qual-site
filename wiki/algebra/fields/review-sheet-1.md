@@ -8,7 +8,7 @@ aliases: [Algebra Fields Review 1]
 
 ## Homework 1
 
-![Homework 1 on field extensions](../../../assets/Algebra/999_Review/image/SmartSelect_20210420-000457_Xodo_Docs.jpg)
+The seventeen problems of the sheet are in [[SRC-FIELDS-HOMEWORK-1|Homework 1: field extensions]].
 
 ## Problems
 
