@@ -30,51 +30,51 @@ What if $\SL_2(\RR)$ acts by Möbius transformations instead?
 :::
 
 ::: {.solution}
-For the linear action of $\operatorname{SL}_2(\mathbb R)$ on $\mathbb R^2$, the stabilizer of $0$ is the whole group.
+For the linear action of $\SL_2(\RR)$ on $\RR^2$, the stabilizer of $0$ is the whole group.
 
-If $v\ne0$, choose $g\in\operatorname{SL}_2(\mathbb R)$ with $g e_1=v$. Then
-\[
-\operatorname{Stab}(v)=g\,\operatorname{Stab}(e_1)\,g^{-1},
-\]
+If $v\ne0$, choose $g\in\SL_2(\RR)$ with $g e_1=v$. Then
+$$
+\Stab(v)=g\,\Stab(e_1)\,g^{-1},
+$$
 and
-\[
-\operatorname{Stab}(e_1)
+$$
+\Stab(e_1)
 =
 \left\{
-\begin{pmatrix}1&t\\0&1\end{pmatrix}:t\in\mathbb R
+\begin{pmatrix}1&t\\0&1\end{pmatrix}:t\in\RR
 \right\}.
-\]
-Thus all nonzero-point stabilizers are conjugate unipotent subgroups isomorphic to $(\mathbb R,+)$, while the stabilizer of $0$ is all of $\operatorname{SL}_2(\mathbb R)$.
+$$
+Thus all nonzero-point stabilizers are conjugate unipotent subgroups isomorphic to $(\RR,+)$, while the stabilizer of $0$ is all of $\SL_2(\RR)$.
 
 For the Möbius action
-\[
+$$
 z\longmapsto \frac{az+b}{cz+d},
 \qquad
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\mathbb R),
-\]
+\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\RR),
+$$
 there are two natural spaces to distinguish.
 
-On the upper half-plane $\mathbb H$, the action is transitive and
-\[
-\operatorname{Stab}(i)
+On the upper half-plane $\HH$, the action is transitive and
+$$
+\Stab(i)
 =
 \left\{
 \begin{pmatrix}
 \cos\theta&\sin\theta\\
 -\sin\theta&\cos\theta
-\end{pmatrix}:\theta\in\mathbb R
+\end{pmatrix}:\theta\in\RR
 \right\}
-\cong \operatorname{SO}(2).
-\]
-Hence every stabilizer of a point of $\mathbb H$ is conjugate to $\operatorname{SO}(2)$.
+\cong \SO(2).
+$$
+Hence every stabilizer of a point of $\HH$ is conjugate to $\SO(2)$.
 
-On the boundary $\mathbb P^1(\mathbb R)=\mathbb R\cup\{\infty\}$, the action is also transitive, but the stabilizers are different. For example,
-\[
-\operatorname{Stab}(\infty)
+On the boundary $\PP^1(\RR)=\RR\cup\{\infty\}$, the action is also transitive, but the stabilizers are different. For example,
+$$
+\Stab(\infty)
 =
 \left\{
-\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a\in\mathbb R^\times,\ b\in\mathbb R
+\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a\in\RR^\times,\ b\in\RR
 \right\},
-\]
+$$
 a Borel subgroup; every boundary-point stabilizer is conjugate to it.
 :::
