@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-A finite group $G$ is \dfn{solvable} if it has a [[FD-PLAEO|composition series]] whose composition factors are all abelian.
+A finite group $G$ is \dfn{solvable} if it has a [[D-FYX4I|composition series]] whose composition factors are all abelian.
 :::
