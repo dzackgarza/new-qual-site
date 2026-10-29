@@ -20,13 +20,28 @@ Show that if $f$ is entire and $f(z) \convergesto{z\to\infty} \infty$ then $f$ i
 :::
 
 ::: {.solution}
-\envlist
+Let $f(z) = \sum_{k\geq 0} c_k z^k$ be the Taylor series of $f$, which converges on $\CC$, and put $g(w) \coloneqq f(1/w)$ for $w\neq 0$, so that $g(w) = \sum_{k\geq 0} c_k w^{-k}$ is the Laurent series of $g$ about $0$.
 
-- Set $g(z) \definedas f(1/z)$, so $g(z) \convergesto{z\to 0} \infty$ making $z=0$ a singularity.
+::: pf
 
-- This is not an essential singularity by Casorati-Weierstrass.
+::: {.pf-step #pole}
+$g$ has a pole at $0$.
 
-- So this is a pole and $g(z) = \sum_{-N\leq k \leq 0} c_k z^k$ for $N$ the order of the pole
+::: pf-proof
+$g$ is holomorphic on $\CC\sm\{0\}$ and $g(w)\to\infty$ as $w\to 0$. So $0$ is not removable, since $g$ is unbounded near $0$. It is not essential, since by Casorati--Weierstrass the image of every punctured neighbourhood of an essential singularity is dense in $\CC$, while here $\abs{g}>1$ on some punctured neighbourhood of $0$.
+:::
 
-- Thus $f(z) = \sum_{0<k<N}c_k z^k$ is a polynomial.
+:::
+
+::: pf-step
+$f$ is a polynomial.
+
+::: pf-proof
+Let $N$ be the order of the pole in step [](#pole){.pf-ref}. The principal part of $g$ at $0$ is $\sum_{k\geq 1} c_k w^{-k}$, and it ends at $w^{-N}$, so $c_k = 0$ for $k>N$ and $f(z) = \sum_{0\leq k\leq N} c_k z^k$.
+:::
+
+:::
+
+:::
+
 :::
