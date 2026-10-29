@@ -12,13 +12,19 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked that every normal subgroup of a p-group intersect Z(G), which holds trivially through the identity; the statement now asks for a nontrivial intersection for every nontrivial normal subgroup of a finite p-group.'
 ---
 
 ::: {.exercise}
-Prove that if $G$ is a $p\dash$group, every subgroup $N\normal G$ intersects the center $Z(G)$.
+Prove that if $G$ is a finite $p\dash$group, every nontrivial subgroup $N\normal G$ intersects the center $Z(G)$ nontrivially.
+:::
 
-> Hint: use the class equation.
-
+::: {.hint}
+Use the class equation.
 :::
 
 ::: {.solution}
