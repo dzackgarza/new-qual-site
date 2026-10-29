@@ -20,13 +20,17 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne II.3.10(b) assumes only that k is algebraically closed, and in characteristic 2 the fibre over a != 0 is one nonreduced point. The statement now assumes k algebraically closed of characteristic different from 2.
 ---
 
 ::: {.problem}
 a. If $f: X \to Y$ is a morphism and $y \in Y$ a point, show that $\operatorname{sp}(X_y)$ is homeomorphic to $\inverseof{f}(y)$ with the induced topology.
 
 b. Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ be the morphism defined by sending $s \mapsto s$.
-   Assume $k$ algebraically closed.
+   Assume $k$ algebraically closed of characteristic $\neq 2$.
 
    - If $y \in Y$ is the point $a \in k$ with $a \neq 0$, show that the fibre $X_y$ consists of two points, with residue field $k$.
 
@@ -234,23 +238,6 @@ The quotient has the unique prime ideal $(t)$, so the spectrum has one point.  T
 
 :::
 
-::: {.pf-step #fibre-nonreduced-char-2}
-If $a\ne0$ and $\operatorname{char}k=2$, then the fibre is likewise a nonreduced one-point scheme.
-
-::: pf-proof
-Choose $r\in k$ with $r^2=a$.  In characteristic $2$,
-\[
-t^2-a=t^2-r^2=(t-r)^2.
-\]
-Hence
-\[
-X_y\cong\Spec k[t]/(t-r)^2,
-\]
-which has one point and a nonzero nilpotent.  This is the correction recorded in the erratum.
-:::
-
-:::
-
 ::: {.pf-step #generic-fibre-ring}
 Let $\eta$ be the generic point of $Y$.  Then
 \[
@@ -315,26 +302,14 @@ k(s)[t]/(t^2-s)
 \]
 is a field and has vector-space dimension $2$ over $k(s)$.
 The spectrum of a field is one point.
-
-If $\operatorname{char}k\ne2$, the extension is separable.  If $\operatorname{char}k=2$, it is purely inseparable.  Its degree is $2$ in either case.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove part (a).  Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref}, [](#fibre-two-points-char-neq-2){.pf-ref} and [](#fibre-nonreduced-a-zero){.pf-ref} prove the source's intended characteristic-$\ne2$ closed-fibre statements, step [](#fibre-nonreduced-char-2){.pf-ref} records the characteristic-$2$ correction, and steps [](#generic-fibre-ring){.pf-ref}, [](#t2-s-irreducible){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the generic-fibre statement.
+Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove part (a).  Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref}, [](#fibre-two-points-char-neq-2){.pf-ref} and [](#fibre-nonreduced-a-zero){.pf-ref} prove the closed-fibre statements, and steps [](#generic-fibre-ring){.pf-ref}, [](#t2-s-irreducible){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the generic-fibre statement.
 :::
 
 :::
 
-:::
-
-::: {.remark title="Erratum"}
-The first bullet in part (b) needs the hypothesis $\operatorname{char}k\ne2$.
-If $\operatorname{char}k=2$ and $a\ne0$, then for the unique $r\in k$ with $r^2=a$,
-\[
-t^2-a=(t-r)^2,
-\]
-so the fibre is a nonreduced one-point scheme rather than two points.
-The fibre over $0$ and the generic degree-two fibre statements are valid in every characteristic.
 :::
