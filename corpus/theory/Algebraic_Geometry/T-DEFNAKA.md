@@ -55,7 +55,7 @@ for every prime $\mathfrak p\subseteq A$, then $M\cong A^r$.
 The noetherian sheaf formulation is proved in [[P-AGH258SEMICONT]].
 :::
 
-::: {.proof title="Constant fibre dimension"}
+::: {.proof title="Constant fiber dimension"}
 By the local form of Nakayama, choose $r$ elements of $M$ lifting a basis of $M/\mm M$. They give a surjection
 $$
 A^r\twoheadrightarrow M
