@@ -19,21 +19,36 @@ review: draft
 Prove that there is no sequence of polynomials that uniformly converge to $f(z) = {1\over z}$ on $S^1$.
 :::
 
-::: {.concept}
-\envlist
-
-- Uniform limit of holomorphic function is holomorphic
+::: {.hint}
+Integrals over $S^1$ pass to uniform limits; compare $\int_{S^1}p\,dz$ with $\int_{S^1}\frac{dz}{z}$.
 :::
 
 ::: {.solution}
+Suppose polynomials $p_j$ converge uniformly to $f$ on $S^1$.
 
-- By Cauchy's integral formula, $\int_{S^1} f = 2\pi i$
+::: pf
 
-- If $p_j$ is any polynomial, then $p_j$ is holomorphic in $\DD$, so $\int_{S^1} p_j = 0$.
+::: {.pf-step #integral-f}
+$\int_{S^1}f(z)\,dz=2\pi i$ and $\int_{S^1}p_j(z)\,dz=0$ for every $j$.
 
-- Contradiction: compact sets in $\CC$ are bounded, so
-  \[
-  \abs{\int f - \int p_j} \leq \int \abs{p_j - f} \leq \int \norm{p_j - f}_\infty  = \norm{p_j - f}_\infty \int_{S^1} 1 \,dz = \norm{p_j-f}_\infty \cdot 2\pi \to 0
-  \]
-  which forces $\int f = \int p_j = 0$.
+::: pf-proof
+The first is the direct computation with $z=e^{i\theta}$. Each $p_j$ is entire, so its integral over a closed curve vanishes by Cauchy's theorem.
+:::
+
+:::
+
+::: pf-step
+This is a contradiction.
+
+::: pf-proof
+By step [](#integral-f){.pf-ref},
+$$
+2\pi=\abs{\int_{S^1}\bigl(f(z)-p_j(z)\bigr)\,dz}\le 2\pi\sup_{\abs{z}=1}\abs{f(z)-p_j(z)},
+$$
+and the right side tends to $0$ as $j\to\infty$.
+:::
+
+:::
+
+:::
 :::
