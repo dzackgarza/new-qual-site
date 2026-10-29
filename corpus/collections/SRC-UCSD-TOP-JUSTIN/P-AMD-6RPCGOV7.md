@@ -23,7 +23,7 @@ Given a group $G = <A : R>$, show how to construct a CW-complex $X$ such that $\
 :::
 
 ::: {.solution}
-**Goal:** Given a group presentation $G = \langle A \mid R \rangle$ with generator set $A$ and relator set $R$, construct a 2-dimensional CW complex $X$ such that $\pi_1(X, x_0) \cong G$.
+Let $G = \langle A \mid R \rangle$ with generator set $A$ and relator set $R$.
 
 ::: pf
 
