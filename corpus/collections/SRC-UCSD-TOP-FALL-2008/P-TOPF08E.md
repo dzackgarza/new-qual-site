@@ -25,8 +25,6 @@ Show that $X(m, n)$ is homotopy equivalent to $X(m', n')$ if and only if $(m, n)
 :::
 
 ::: {.solution}
-**Goal.** Compute $H^*(X(m,n);\ZZ_2)$ and show it determines $(m,n)$.
-
 ::: pf
 
 ::: pf-step
