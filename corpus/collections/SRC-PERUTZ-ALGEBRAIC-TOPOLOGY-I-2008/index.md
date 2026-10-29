@@ -16,7 +16,7 @@ source:
   area: topology
   date: {kind: year, year: 2008}
   sections:
-  - name: '1'
+  - name: '1. Introduction'
     problems:
     - E-PER08-1.1
     - E-PER08-1.2
@@ -25,23 +25,23 @@ source:
     - E-PER08-1.5
     - E-PER08-1.6
     - E-PER08-1.7
-  - name: '2'
+  - name: '2. The fundamental group of the circle'
     problems:
     - E-PER08-2.1
     - E-PER08-2.2
-  - name: '3'
+  - name: '3. Van Kampen in theory'
     problems:
     - E-PER08-3.1
     - E-PER08-3.2
     - E-PER08-3.3
     - E-PER08-3.4
     - E-PER08-3.5
-  - name: '4'
+  - name: '4. Van Kampen in practice'
     problems:
     - E-PER08-4.1
     - E-PER08-4.2
     - E-PER08-4.3
-  - name: '5'
+  - name: '5. Covering spaces'
     problems:
     - E-PER08-5.1
     - id: E-PER08-5.2
@@ -52,7 +52,7 @@ source:
       comment: Exercise 5.4
     - id: E-PER08-5.5
       comment: Exercise 5.5
-  - name: '6'
+  - name: '6. Classifying covering spaces'
     problems:
     - id: E-PER08-6.1
       comment: Exercise 6.1
@@ -68,17 +68,17 @@ source:
       comment: Exercise 6.6
     - id: E-PER08-6.7
       comment: Exercise 6.7
-  - name: '7'
+  - name: '7. Singular homology'
     problems:
     - id: E-PER08-7.1
       comment: Exercise 7.1
-  - name: '8'
+  - name: '8. Simplicial complexes and singular homology'
     problems:
     - id: E-PER08-8.1
       comment: Exercise 8.1
     - id: E-PER08-8.2
       comment: Exercise 8.2
-  - name: '9'
+  - name: '9. Homological algebra'
     problems:
     - id: E-PER08-9.1
       comment: Exercise 9.1
@@ -90,12 +90,12 @@ source:
       comment: Exercise 9.4
     - id: E-PER08-9.5
       comment: Exercise 9.5
-  - name: '10'
+  - name: '10. Homotopy invariance of singular homology'
     problems:
     - E-PER08-10.1
     - E-PER08-10.2
     - E-PER08-10.3
-  - name: '12'
+  - name: '12. Mayer–Vietoris and the homology of spheres'
     problems:
     - E-PER08-12.1
     - E-PER08-12.2
@@ -104,7 +104,7 @@ source:
     - E-PER08-12.5
     - E-PER08-12.6
     - E-PER08-12.7
-  - name: '13'
+  - name: '13. Relative homology and excision'
     problems:
     - E-PER08-13.1
     - id: E-PER08-13.2
@@ -115,11 +115,11 @@ source:
       comment: Exercise 13.4
     - id: E-PER08-13.5
       comment: Exercise 13.5
-  - name: '14'
+  - name: '14. Vanishing theorems for homology of manifolds'
     problems:
     - id: E-PER08-14.1
       comment: Exercise 14.1
-  - name: '15'
+  - name: '15. Orientations and fundamental classes'
     problems:
     - id: E-PER08-15.1
       comment: Exercise 15.1
@@ -139,7 +139,7 @@ source:
       comment: Exercise 15.8
     - id: E-PER08-15.9
       comment: Exercise 15.9
-  - name: '16'
+  - name: '16. Universal coefficients'
     problems:
     - id: E-PER08-16.1
       comment: Exercise 16.1
@@ -147,10 +147,10 @@ source:
       comment: Exercise 16.2
     - id: E-PER08-16.3
       comment: Exercise 16.3
-  - name: '17'
+  - name: '17. CW complexes'
     problems:
     - E-PER08-17.1
-  - name: '19'
+  - name: '19. Cellular homology calculations'
     problems:
     - id: E-PER08-19.1
       comment: Exercise 19.1
@@ -158,11 +158,11 @@ source:
       comment: Exercise 19.2
     - id: E-PER08-19.3
       comment: Exercise 19.3
-  - name: '20'
+  - name: '20. The Eilenberg–Steenrod axioms'
     problems:
     - id: E-PER08-20.1
       comment: Exercise 20.1
-  - name: '21'
+  - name: '21. Cohomology'
     problems:
     - id: E-PER08-21.1
       comment: Exercise 21.1
@@ -178,7 +178,7 @@ source:
       comment: Exercise 21.6
     - id: E-PER08-21.7
       comment: Exercise 21.7
-  - name: '23'
+  - name: '23. Formal computations in cohomology'
     problems:
     - id: E-PER08-23.1
       comment: Exercise 23.1
@@ -188,7 +188,7 @@ source:
       comment: Exercise 23.3
     - id: E-PER08-23.4
       comment: Exercise 23.4
-  - name: '24'
+  - name: '24. Cup products defined'
     problems:
     - id: E-PER08-24.1
       comment: Exercise 24.1
@@ -198,7 +198,7 @@ source:
       comment: Exercise 24.3
     - id: E-PER08-24.4
       comment: Exercise 24.4
-  - name: '26'
+  - name: '26. Poincaré duality'
     problems:
     - id: E-PER08-26.1
       comment: Exercise 26.1
