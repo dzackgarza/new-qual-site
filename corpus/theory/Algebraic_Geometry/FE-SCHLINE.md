@@ -10,13 +10,20 @@ classification:
   - Schemes
   - Separatedness
   - Gluing
+  - Separated Morphisms
+  - Reduced Schemes
+  - Counterexamples
 relations:
 - kind: uses
   target: D-SCHGLUE
+- kind: uses
+  target: PR-QX0VL
 review: draft
 prompts:
 - Give a scheme that is not separated.
 - Why is the diagonal used to define separatedness?
+- Give an example of a non-separated morphism.
+- Give two morphisms agreeing on a dense open that are not equal.
 ---
 
 ::: {.example}
@@ -34,7 +41,9 @@ Thus $X$ is not separated over $k$.
 ::: {.remark}
 The two chart inclusions $\AA_k^1\to X$ agree on the punctured affine line but send the origin to different points.
 For comparison, two $S$-morphisms from a reduced $S$-scheme $Z$ to a separated $S$-scheme $Y$ that agree on a dense open subset of $Z$ are equal [@Har10a, Exercise II.4.2], as proved in [[P-AGH242AGREEDENSE]].
-The reducedness of the source and separatedness of the target are separate hypotheses.
+The reducedness of the source and separatedness of the target are separate hypotheses ([[PR-QX0VL]]).
+Here the source $\AA_k^1$ is reduced, so the conclusion fails only because $X$ is not separated.
+The doubled line is also a standard example of a scheme that is not a classical variety, which shows why separatedness is imposed in the scheme-theoretic definition of a variety.
 :::
 
 ::: {.example title="A nonreduced source and a separated target"}

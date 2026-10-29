@@ -15,7 +15,7 @@ Separatedness is encoded by the diagonal morphism and by uniqueness in the valua
 
 [[PR-QX0VL]]
 
-[[FE-H8DY5]]
+[[FE-SCHLINE]]
 
 ## Properness
 
