@@ -16,7 +16,10 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Records the malformed source expression and proves the intended correction $F(x,y)=f(x+y)+g(x-y)$ for quadratic solutions.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (b) of the source prints F(x,y)=f(x,y)+g(x-y) with f a one-variable polynomial. The statement now reads F(x,y)=f(x+y)+g(x-y).
 ---
 
 ::: {.problem}
@@ -35,38 +38,47 @@ F(x,y)=f(x+y)+g(x-y),
 \]
 where $f,g:\mathbb R\to\mathbb R$ are twice differentiable, then $F$ satisfies $(*)$.
 
-(b) The source asks to show that if
+(b) Show that if
 \[
 F(x,y)=ax^2+bxy+cy^2,
 \qquad a,b,c\in\mathbb R,
 \]
 satisfies $(*)$, then
 \[
-F(x,y)=f(x,y)+g(x-y)
+F(x,y)=f(x+y)+g(x-y)
 \]
 for some one-variable polynomials $f$ and $g$.
 :::
 
 ::: {.solution}
-Part (b) is not well-formed as printed because a one-variable polynomial $f$ cannot be evaluated at the ordered pair $(x,y)$.
-The intended expression is forced by part (a):
-\[
-F(x,y)=f(x+y)+g(x-y).
-\]
+::: pf
 
-Indeed, for the quadratic polynomial in part (b), equation $(*)$ gives
+::: {.pf-step #s1}
+Part (a) holds.
+
+::: pf-proof
+By the chain rule,
 \[
-2a=2c,
+F_{xx}=f''(x+y)+g''(x-y),
+\qquad
+F_{yy}=f''(x+y)+(-1)^2g''(x-y),
 \]
-so $c=a$.
+so $F_{xx}=F_{yy}$.
+:::
+
+:::
+
+::: {.pf-step #s2}
+Part (b) holds.
+
+::: pf-proof
+Here $F_{xx}=2a$ and $F_{yy}=2c$, so $(*)$ gives $c=a$.
 Put
 \[
 \alpha=\frac a2+\frac b4,
 \qquad
 \beta=\frac a2-\frac b4,
-\]
-and define
-\[
+\qquad
 f(t)=\alpha t^2,
 \qquad
 g(t)=\beta t^2.
@@ -78,5 +90,9 @@ f(x+y)+g(x-y)
 =a(x^2+y^2)+bxy
 =F(x,y).
 \]
-Thus the corrected version of part (b) follows.
+:::
+
+:::
+
+:::
 :::
