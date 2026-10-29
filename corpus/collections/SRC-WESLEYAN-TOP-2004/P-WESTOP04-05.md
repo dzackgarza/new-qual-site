@@ -11,14 +11,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: "Direct inspection of page 3 of assets/attachments/topology_2005-2003.pdf confirms that the printed cyclic word is abaca^{-1}c^{-1}. Thus the source itself is inconsistent with its instruction to identify the six edges in pairs: a occurs three times, b once, and c twice."
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed the word abaca^{-1}c^{-1}, in which a occurs three times and b once, so it defines no pairing. The statement now uses abacb^{-1}c^{-1}, changing the fifth letter; each one-letter repair that replaces an a by b gives the same surface, the connected sum of three projective planes.
 ---
 
 ::: {.problem}
 1. List the compact connected surfaces up to homeomorphism.
 
-2. Form a surface from a hexagon by identifying its boundary edges in pairs according to the cyclic word recovered as
+2. Form a surface from a hexagon by identifying its boundary edges in pairs according to the cyclic word
    \[
-   abac a^{-1}c^{-1},
+   abac b^{-1}c^{-1},
    \]
    and identify the resulting compact connected surface.
 :::
@@ -32,8 +36,8 @@ audit:
 The compact connected surfaces are, up to homeomorphism,
 $$
 \boxed{
-S^2,qquad
-\#^g(S^1\times S^1)\ (g\ge1),qquad
+S^2,\qquad
+\#^g(S^1\times S^1)\ (g\ge1),\qquad
 \#^k\mathbb{RP}^2\ (k\ge1).}
 $$
 
@@ -42,15 +46,9 @@ $$
 
 This is the classification theorem for compact connected surfaces.
 The orientable surfaces are the sphere and the connected sums of
-$$
-g
-$$
-tori.
+$g$ tori.
 The nonorientable surfaces are the connected sums of
-$$
-k
-$$
-real projective planes.
+$k$ real projective planes.
 
 :::
 
@@ -58,14 +56,29 @@ real projective planes.
 
 ::: {.pf-step #s1-2}
 
-A hexagon whose six boundary edges are to be identified in pairs must have each edge-pair label occur exactly twice in the boundary word.
-
+The quotient $S$ of the hexagon has one vertex, three edges and one face, so $\chi(S)=-1$.
 
 ::: pf-proof
 
-Pairwise edge identification partitions the six boundary edges into three two-element subsets.
-
-If the usual polygon-word notation labels the two members of one pair by the same letter, with an inverse exponent recording reversal of orientation, then every label necessarily appears exactly twice.
+Name the hexagon's vertices $v_0,\ldots,v_5$ in order, so the six edges, read as the word $abacb^{-1}c^{-1}$, are
+$$
+a:v_0\to v_1,\quad
+b:v_1\to v_2,\quad
+a:v_2\to v_3,\quad
+c:v_3\to v_4,\quad
+b:v_5\to v_4,\quad
+c:v_0\to v_5.
+$$
+Matching initial and terminal points of equally labeled edges gives
+$$
+a:\ v_0\sim v_2,\ v_1\sim v_3;\qquad
+b:\ v_1\sim v_5,\ v_2\sim v_4;\qquad
+c:\ v_3\sim v_0,\ v_4\sim v_5.
+$$
+These relations join $v_0\sim v_2\sim v_4\sim v_5\sim v_1\sim v_3$, so all six vertices become one point. The quotient CW structure has one $0$-cell, three $1$-cells $a,b,c$ and one $2$-cell, so
+$$
+\chi(S)=1-3+1=-1.
+$$
 
 :::
 
@@ -73,40 +86,11 @@ If the usual polygon-word notation labels the two members of one pair by the sam
 
 ::: {.pf-step #s1-3}
 
-In the printed source word
-$$
-w
-=
-abaca^{-1}c^{-1},
-$$
-the multiplicities of the labels are
-$$
-\boxed{
-\#a=3,qquad
-\#b=1,qquad
-\#c=2.}
-$$
-
+The surface $S$ is nonorientable.
 
 ::: pf-proof
 
-Reading the six letters in order gives
-$$
-a, b, a, c, a^{-1}, c^{-1}.
-$$
-Thus three boundary edges carry the label
-$$
-a,
-$$
-one carries
-$$
-b,
-$$
-and two carry
-$$
-c.
-$$
-The inverse signs affect orientation, not which label occurs.
+The letter $a$ occurs twice in the word with the same exponent. The two $a$-edges, together with a band in the hexagon joining them, form a Möbius band in $S$, so $S$ is nonorientable.
 
 :::
 
@@ -114,66 +98,13 @@ The inverse signs affect orientation, not which label occurs.
 
 ::: {.pf-step #s1-4}
 
-Therefore the printed data do not specify a pairing of the six boundary edges.
-
+$$
+\boxed{S\cong\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2.}
+$$
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, every label in a valid pair-identification word must occur exactly twice.
-Step [](#s1-3){.pf-ref} violates this condition for both
-$$
-a
-$$
-and
-$$
-b.
-$$
-
-In particular, one cannot partition the three
-$$
-a
-$$
--edges into pairs, and the lone
-$$
-b
-$$
--edge has no partner.
-
-:::
-
-:::
-
-::: {.pf-step #s1-5}
-
-Consequently, no quotient surface is determined by the problem as printed.
-
-
-::: pf-proof
-
-The requested quotient depends on an equivalence relation pairing boundary edges.
-Step [](#s1-4){.pf-ref} shows that the printed labeling does not define such an equivalence relation.
-
-Different corrections of the apparent typo can lead to different polygon words and hence to different quotient surfaces.
-Therefore a particular compact connected surface cannot be inferred uniquely from the retained source.
-
-:::
-
-:::
-
-::: {.pf-step #s1-6}
-
-Hence the complete answer to the printed problem is:
-$$
-\boxed{
-\text{Part (1) is the standard surface-classification list above, while
-part (2) is not well-posed as printed.}}
-$$
-
-
-::: pf-proof
-
-Step [](#s1-1){.pf-ref} answers the classification request.
-Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove that the stated boundary word cannot encode the claimed pairwise edge identification, so there is no mathematically determined surface to classify without an external correction to the statement.
+By step [](#s1-1){.pf-ref} and step [](#s1-3){.pf-ref}, $S\cong\#^k\mathbb{RP}^2$ for some $k\ge1$, and $\chi(\#^k\mathbb{RP}^2)=2-k$. Step [](#s1-2){.pf-ref} gives $2-k=-1$, so $k=3$.
 
 :::
 
@@ -181,7 +112,7 @@ Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove that the stated bounda
 
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} gives the complete mathematically valid disposition of both parts.
+Step [](#s1-1){.pf-ref} answers part (1), and step [](#s1-4){.pf-ref} answers part (2).
 
 :::
 
