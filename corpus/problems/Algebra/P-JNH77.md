@@ -68,19 +68,19 @@ Let $L/\RR$ be a finite Galois extension containing $\CC$. Then $\Gal(L/\CC)$ is
 ::: pf-proof
 
 Put
-\[
+$$
 G=\Gal(L/\RR),
 \qquad
 H=\Gal(L/\CC).
-\]
+$$
 Since $[\CC:\RR]=2$, the subgroup $H$ has index $2$ in $G$.
 
-By step [](#s1){.pf-ref}, $|G|$ has no odd prime divisor: if an odd prime $p$ divided $|G|$, Cauchy's theorem would give a subgroup of order $p$, whose fixed field would yield a nontrivial odd-degree finite extension at the corresponding step. Hence $G$ is a $2$-group, and so is $H$.
+Let $P$ be a Sylow $2$-subgroup of $G$. Its fixed field $L^P$ has odd degree $[G:P]$ over $\RR$, so $L^P=\RR$ by step [](#s1){.pf-ref}, and $P=G$. Hence $G$ is a $2$-group, and so is $H$.
 
 If $H\neq1$, then the finite $2$-group $H$ has a subgroup $K$ of index $2$. By Galois correspondence,
-\[
+$$
 [L^K:\CC]=[H:K]=2,
-\]
+$$
 contradicting step [](#s2){.pf-ref}. Therefore $H=1$, so $L=\CC$.
 
 :::
@@ -101,5 +101,4 @@ Let $f\in\CC[x]$ be nonconstant and let $L$ be the Galois closure over $\RR$ of 
 
 :::
 
-Thus $\CC$ is algebraically closed.
 :::
