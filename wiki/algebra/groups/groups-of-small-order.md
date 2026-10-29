@@ -45,7 +45,3 @@ The abelian groups of each order are given by the structure theorem for finite a
 [[FF-IRHG3]] [[FF-MBUKG]]
 
 [[FF-JKCAM]]
-
-::: {.remark}
-There are five groups of order $8$ up to isomorphism, of which $D_4$ and $Q_8$ are nonabelian, and five groups of order $12$, of which $A_4$, $D_6$, and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
-:::
