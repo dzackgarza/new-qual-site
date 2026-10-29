@@ -26,9 +26,34 @@ Let $\mu^*$ be an outer measure on $X$ and let $\mathcal M(\mu^*)$ be its Carath
 :::
 
 ::: {.solution}
-(a) By Carathéodory's theorem, $\mu\coloneqq\mu^*|_{\mathcal M(\mu^*)}$ is a measure, so it is countably additive on $\mathcal M(\mu^*)$.
-If $E_1\subseteq E_2\subseteq\cdots$ are Carathéodory measurable, set $F_1=E_1$ and $F_n=E_n\setminus E_{n-1}$ for $n\ge2$.
-Then the $F_n$ are pairwise disjoint and measurable, and
+
+::: pf
+
+::: pf-step
+
+(a) $\mu^*$ restricted to $\mathcal M(\mu^*)$ is continuous from below, and continuous from above on sequences whose first set has finite outer measure.
+
+::: pf-proof
+
+::: {.pf-step #cara-measure}
+
+$\mu \coloneqq \mu^*|_{\mathcal M(\mu^*)}$ is a countably additive measure on the $\sigma$-algebra $\mathcal M(\mu^*)$.
+
+::: pf-proof
+
+This is Carathéodory's theorem.
+
+:::
+
+:::
+
+::: {.pf-step #from-below}
+
+If $E_1 \subseteq E_2 \subseteq \cdots$ lie in $\mathcal M(\mu^*)$, then $\mu^*\qty{\bigcup_n E_n} = \lim_{N\to\infty} \mu^*(E_N)$.
+
+::: pf-proof
+
+Set $F_1 = E_1$ and $F_n = E_n \setminus E_{n-1}$ for $n \ge 2$. The $F_n$ are pairwise disjoint and measurable, $\bigcup_{n \le N} F_n = E_N$, and $\bigcup_n F_n = \bigcup_n E_n$. By step [](#cara-measure){.pf-ref},
 $$
 \mu^*\qty{\bigcup_{n\ge1}E_n}
 =\sum_{n\ge1}\mu^*(F_n)
@@ -36,38 +61,78 @@ $$
 =\lim_{N\to\infty}\mu^*(E_N).
 $$
 
-If $E_1\supseteq E_2\supseteq\cdots$ are measurable and $\mu^*(E_1)<\infty$, put $F_n=E_1\setminus E_n$.
-Then $F_n\uparrow E_1\setminus\bigcap_nE_n$, so continuity from below and finite additivity give
+:::
+
+:::
+
+::: pf-step
+
+If $E_1 \supseteq E_2 \supseteq \cdots$ lie in $\mathcal M(\mu^*)$ and $\mu^*(E_1) < \infty$, then $\mu^*\qty{\bigcap_n E_n} = \lim_{n\to\infty} \mu^*(E_n)$.
+
+::: pf-proof
+
+Put $F_n = E_1 \setminus E_n$. Then $F_n$ increases to $E_1 \setminus \bigcap_n E_n$, so step [](#from-below){.pf-ref} and finite additivity give
 $$
 \mu^*(E_1)-\mu^*\qty{\bigcap_nE_n}
 =\lim_{n\to\infty}\mu^*(F_n)
 =\mu^*(E_1)-\lim_{n\to\infty}\mu^*(E_n).
 $$
-Cancellation is legitimate because $\mu^*(E_1)<\infty$, yielding continuity from above.
+Since $\mu^*(E_1) < \infty$, every term is finite and $\mu^*(E_1)$ cancels.
 
-(b) Neither statement is true for an arbitrary outer measure on arbitrary sets.
-On $X=\NN$, define
-$$
-\mu^*(A)=
-\begin{cases}
-0,&A=\emptyset,\\
-1,&0<|A|<\infty,\\
-2,&|A|=\infty.
-\end{cases}
-$$
-This is an outer measure: monotonicity is immediate, and countable subadditivity follows because an infinite union either contains an infinite member or has infinitely many nonempty finite members.
-For $E_n=\{1,\ldots,n\}$,
-$$
-\mu^*(E_n)=1\quad\text{for all }n,
-\qquad
-\mu^*\qty{\bigcup_nE_n}=\mu^*(\NN)=2,
-$$
-so continuity from below fails.
-For $G_n=\{n,n+1,\ldots\}$,
-$$
-\mu^*(G_n)=2\quad\text{for all }n,
-\qquad
-\mu^*\qty{\bigcap_nG_n}=0,
-$$
-so continuity from above fails even though $\mu^*(G_1)=2<\infty$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(b) On $X = \NN$, the function $\mu^*(\emptyset) = 0$, $\mu^*(A) = 1$ for $A$ finite and nonempty, and $\mu^*(A) = 2$ for $A$ infinite is an outer measure for which continuity from below and continuity from above both fail on arbitrary subsets.
+
+::: pf-proof
+
+::: pf-step
+
+$\mu^*$ is an outer measure.
+
+::: pf-proof
+
+$\mu^*(\emptyset) = 0$ and monotonicity are immediate. For countable subadditivity, let $A = \bigcup_i A_i$. If $A$ is infinite, then some $A_i$ is infinite or infinitely many $A_i$ are nonempty, so $\sum_i \mu^*(A_i) \ge 2$. If $A$ is finite and nonempty, some $A_i$ is nonempty, so $\sum_i \mu^*(A_i) \ge 1$.
+
+:::
+
+:::
+
+::: pf-step
+
+Continuity from below fails.
+
+::: pf-proof
+
+For $E_n = \theset{1, \ldots, n}$, $\mu^*(E_n) = 1$ for all $n$, while $\mu^*\qty{\bigcup_n E_n} = \mu^*(\NN) = 2$.
+
+:::
+
+:::
+
+::: pf-step
+
+Continuity from above fails although the first set has finite outer measure.
+
+::: pf-proof
+
+For $G_n = \theset{n, n+1, \ldots}$, $\mu^*(G_n) = 2$ for all $n$ and $\mu^*(G_1) = 2 < \infty$, while $\mu^*\qty{\bigcap_n G_n} = \mu^*(\emptyset) = 0$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::
