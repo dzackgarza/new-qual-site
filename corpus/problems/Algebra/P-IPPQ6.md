@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IPPQ6
 kind: problem
-title: Consider a nonconstant function between two compact Riemann Surfaces.
+title: Holomorphic maps of compact Riemann surfaces and extensions of function fields
 classification:
   areas:
   - algebra
@@ -18,40 +18,47 @@ Consider a nonconstant function between two compact Riemann Surfaces.
 How is it related to Galois theory?
 :::
 
-
 ::: {.solution}
-Let
-\[
-f:X\longrightarrow Y
-\]
-be a nonconstant holomorphic map of compact Riemann surfaces. Pullback of meromorphic functions gives an injective field homomorphism
-\[
-f^*:\CC(Y)\hookrightarrow\CC(X),
-\qquad h\longmapsto h\circ f.
-\]
-Thus geometry reverses arrows: a map of compact Riemann surfaces determines an extension of their meromorphic function fields.
+Let $f\colon X\to Y$ be a nonconstant holomorphic map of compact connected Riemann surfaces, and write $\CC(X)$ and $\CC(Y)$ for their fields of meromorphic functions.
 
-Because $f$ is nonconstant and $X,Y$ are compact, $f$ is a finite branched covering. Correspondingly,
-\[
-\CC(X)/f^*\CC(Y)
-\]
-is a finite extension, and its field degree equals the degree of the map:
-\[
-[\CC(X):f^*\CC(Y)]=\deg(f).
-\]
-This is the one-dimensional complex-analytic instance of the anti-equivalence between compact Riemann surfaces and transcendence-degree-one function fields over $\CC$.
+::: pf
 
-The Galois-theoretic symmetry is also geometric. A deck transformation $\gamma:X\to X$ satisfying
-\[
-f\circ\gamma=f
-\]
-acts on meromorphic functions by pullback and fixes $f^*\CC(Y)$. Hence
-\[
-\operatorname{Deck}(f)
-\cong
-\Aut_{\CC(Y)}\bigl(\CC(X)\bigr).
-\]
-If the finite function-field extension is Galois, then the corresponding branched covering is a Galois (regular) covering in this sense, and its deck-transformation group is the field-theoretic Galois group.
+::: pf-step
 
-Thus finite extensions of function fields of compact Riemann surfaces, their intermediate fields, and their automorphism groups are the algebraic counterparts of finite holomorphic maps, their factorizations through intermediate surfaces, and their deck symmetries.
+Pullback $f^*\colon\CC(Y)\to\CC(X)$, $h\mapsto h\circ f$, is an injective field homomorphism, and $\CC(X)/f^*\CC(Y)$ is a finite extension of degree $\deg(f)$.
+
+::: pf-proof
+
+A field homomorphism is injective. Since $f$ is nonconstant and $X$ and $Y$ are compact, $f$ is a finite branched covering, and the equality $[\CC(X):f^*\CC(Y)]=\deg(f)$ is the standard degree formula. It is an instance of the anti-equivalence between compact connected Riemann surfaces with nonconstant holomorphic maps and function fields of transcendence degree one over $\CC$.
+
+:::
+
+:::
+
+::: pf-step
+
+The deck group of $f$ is isomorphic to $\Aut_{\CC(Y)}\bigl(\CC(X)\bigr)$, and $f$ is a Galois (regular) branched covering exactly when $\CC(X)/f^*\CC(Y)$ is a Galois extension, in which case the deck group is the Galois group.
+
+::: pf-proof
+
+A deck transformation $\gamma\colon X\to X$ with $f\circ\gamma=f$ acts on $\CC(X)$ by pullback and fixes $f^*\CC(Y)$. Under the anti-equivalence, every $f^*\CC(Y)$-automorphism of $\CC(X)$ arises from a unique such $\gamma$, and $\gamma\mapsto(\gamma^{-1})^*$ is an isomorphism of groups. The covering is Galois when the deck group acts transitively on fibres, that is, when the deck group has order $\deg(f)=[\CC(X):f^*\CC(Y)]$, which is the condition for the extension to be Galois.
+
+:::
+
+:::
+
+::: pf-step
+
+Intermediate fields $f^*\CC(Y)\subseteq L\subseteq\CC(X)$ correspond to factorizations $X\to Z\to Y$ of $f$ through compact Riemann surfaces $Z$ with $\CC(Z)\cong L$, up to isomorphism.
+
+::: pf-proof
+
+This is the anti-equivalence applied to the inclusions $f^*\CC(Y)\subseteq L\subseteq\CC(X)$, since $L$ is a function field of transcendence degree one over $\CC$.
+
+:::
+
+:::
+
+:::
+
 :::
