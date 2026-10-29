@@ -29,7 +29,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 | ~~`09-author-solutions.md`~~ | — | — | — | Removed: redundant with Queue C |
 | `10-close-roadmap.md` | 0 | 5 | #1 (CLOSED) | All obligations hold |
 | `11-design-issues.md` | 0 | 25 | #41 surface | 25/25 resolved (17 fixed, 8 design-accepted) |
-| `12-throughput-blockers.md` | 0 | 4 | #2 surface | All done — non-problem cards intentionally have no blanket completion predicate; pathspec commits preserve Git's temporary index and no longer collide with sibling staged corpus work. The Queue C count moves with intake and solutions; read it from `C-unsolved-cards.md`. |
 
 ## How to use
 
