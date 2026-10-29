@@ -16,19 +16,25 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source states the identity without a domain; the statement restricts to Re z > 0 and Re w > 0, where the beta integral converges.
 ---
 
 ::: {.exercise}
-Show that
-\[
+Show that for $\Re(z)>0$ and $\Re(w)>0$,
+$$
 B(z, w) = {\Gamma(z) \Gamma(w) \over \Gamma(z+w)}
-.\]
+.$$
+:::
 
-> Hint: find $\mcl(t^{z-1})$ and $\mcl(t^{z-1}\convolve t^{w-1})$.
+::: {.hint}
+Find $\mcl(t^{z-1})$ and $\mcl(t^{z-1}\convolve t^{w-1})$.
 :::
 
 ::: {.solution}
-Let $\operatorname{Re}(z) > 0$ and $\operatorname{Re}(w) > 0$, let $s>0$, and define $f(t) = t^{z-1}$ and $g(t) = t^{w-1}$ for $t > 0$. Recall $B(z, w) = \int_0^1 u^{z-1} (1 - u)^{w-1}\,du$.
+Let $s>0$, and define $f(t) = t^{z-1}$ and $g(t) = t^{w-1}$ for $t > 0$. Recall $B(z, w) = \int_0^1 u^{z-1} (1 - u)^{w-1}\,du$.
 
 ::: pf
 
