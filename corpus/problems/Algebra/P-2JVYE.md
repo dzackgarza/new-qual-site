@@ -36,15 +36,15 @@ Every nonzero $R$-linear map $f:M\to N$ is an isomorphism.
 ::: pf-proof
 
 The kernel $\ker f$ is an $R$-submodule of the simple module $M$, so
-\[
+$$
 \ker f=0 \quad\text{or}\quad \ker f=M.
-\]
+$$
 Since $f\ne0$, the second alternative is impossible; hence $\ker f=0$ and $f$ is injective.
 
-Likewise, the image $\operatorname{im}f$ is a nonzero submodule of the simple module $N$, so
-\[
-\operatorname{im}f=N.
-\]
+Likewise, the image $\im f$ is a nonzero submodule of the simple module $N$, so
+$$
+\im f=N.
+$$
 Thus $f$ is surjective as well, hence an isomorphism.
 
 :::
@@ -54,9 +54,9 @@ Thus $f$ is surjective as well, hence an isomorphism.
 ::: pf-step
 
 If $M$ and $N$ are nonisomorphic simple modules, then
-\[
-\operatorname{Hom}_R(M,N)=0.
-\]
+$$
+\Hom_R(M,N)=0.
+$$
 
 ::: pf-proof
 
@@ -66,7 +66,7 @@ Any nonzero homomorphism would be an isomorphism by step [](#s1){.pf-ref}, contr
 
 :::
 
-::: pf-step
+::: {.pf-step #division}
 
 Every nonzero element of $\operatorname{End}_R(M)$ is invertible; hence $\operatorname{End}_R(M)$ is a division ring.
 
@@ -80,11 +80,11 @@ Apply step [](#s1){.pf-ref} with $N=M$. Every nonzero endomorphism of $M$ is an 
 
 ::: pf-step
 
-This is Schur's lemma.
+For a group $G$ and a field $k$, a nonzero intertwiner between irreducible representations of $G$ over $k$ is an isomorphism, and the endomorphism ring of an irreducible representation is a division ring.
 
 ::: pf-proof
 
-The usual representation-theoretic formulation is obtained by taking $R$ to be a group algebra: irreducible representations correspond to simple modules, so a nonzero intertwiner between irreducibles is an isomorphism, and the endomorphism ring of an irreducible representation is a division ring.
+Take $R=k[G]$. Representations of $G$ over $k$ are left $k[G]$-modules, irreducible representations are simple modules, and intertwiners are $k[G]$-linear maps. Apply steps [](#s1){.pf-ref} and [](#division){.pf-ref}.
 
 :::
 
