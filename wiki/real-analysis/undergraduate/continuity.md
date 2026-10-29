@@ -68,6 +68,4 @@ If $d(x,y)<\delta$, then $d(x,x_i)<\delta_{x_i}/2$ for some $i$, and $d(y,x_i)<\
 
 [[D-2CCDB]]
 
-[[FD-XVMEE]]
-
 [[FF-XZGIY]]
