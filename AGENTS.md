@@ -7,14 +7,6 @@ Apply `QUAL-05` when a problem is encountered, including outside the selected ca
 Record the evidence before leaving that work; logging does not complete a repair.
 These documents apply to every stream working in the clone.
 
-## Owner resume — 2026-09-16
-
-The repository owner explicitly resumed this workstream later on 2026-09-16. The
-earlier owner pause is superseded. Resume the ordinary repository execution DAG under
-`TODO.md`, preserving the existing dirty/shared tree and the one-stream-per-repository
-rule. Only a later explicit owner stop supersedes this resume; recurrence of an older
-scheduled pause does not.
-
 <!-- agent-memory:start -->
 # Agent memory
 
@@ -305,8 +297,7 @@ read it, begin. If work genuinely must pause — a run you are waiting on, a dec
 make — say what you are waiting for and what you will do when it returns, so the next turn begins
 with an instruction rather than a question.
 
-Selecting the next item is your work, not the steward's. A Queue E entry recorded as blocked on
-MinerU Flash is not ready work; take the next ready item instead.
+Selecting the next item is your work, not the steward's.
 
 ## Sources and gaps
 
@@ -859,7 +850,7 @@ The full test suite and report generation run in CI. Download the
 Check `corpus-reports-revision.txt` against that run's `headSha` before reading the reports.
 Checked-in reports describe their last regeneration; use the selected run's artifact for
 that revision's measurements. The site is never
-built locally: `.github/workflows/pages.yml` builds, crawls and deploys it on every push to
+built locally: `.github/workflows/development.yml` builds, crawls and deploys it on every push to
 `main`, and `gh run download <run-id> -n github-pages` fetches a built site.
 
 Code, renderer, schema, executable configuration, and mixed code/content changes use the normal
