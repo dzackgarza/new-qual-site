@@ -22,8 +22,6 @@ Prove that for any $f: S^2 \to \RR^2$, there exists $x\in S^2$ such that $f(x) =
 :::
 
 ::: {.solution}
-**Goal:** Prove the Borsuk-Ulam theorem in dimension 2: for every continuous map $f \colon S^2 \to \RR^2$, there exists a point $x \in S^2$ such that $f(x) = f(-x)$.
-
 ::: pf
 
 ::: pf-step
