@@ -79,7 +79,3 @@ Thus $(f*g)(x)\to\infty$ as $x\downarrow0$. In particular $f*g$ is not continuou
 
 :::
 :::
-
-::: {.remark}
-Erratum: the source exam asks for a proof that $h$ is uniformly continuous. The solution's example shows that this fails for $f,g\in L^1(\mathbb R)$ with compact support; it holds when one of $f,g$ is in $L^\infty$, or when $f,g\in L^2$.
-:::
