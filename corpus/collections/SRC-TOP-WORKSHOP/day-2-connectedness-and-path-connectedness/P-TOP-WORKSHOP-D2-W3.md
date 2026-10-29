@@ -24,15 +24,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed f(x), a single point. The statement now says f(X).
 ---
 
 ::: {.problem}
-(Purdue ’10) Prove or disprove: If $X$ is path connected, and $f:X\to Y$ is continuous, then $f(x)$ is path connected.
+(Purdue ’10) Prove or disprove: If $X$ is path connected, and $f:X\to Y$ is continuous, then $f(X)$ is path connected.
 :::
 
 ::: {.solution}
-As printed, $f(x)$ denotes a single point, so the intended assertion is that the image $f(X)$ is path connected.
-That assertion is true.
 
 ::: pf
 
@@ -92,15 +94,9 @@ Moreover,
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Therefore $f(X)$ is path connected.
-
-::: pf-proof
-
-The points $y_0,y_1\in f(X)$ in step [](#s1){.pf-ref} were arbitrary, and step [](#s3){.pf-ref} constructs a path between them.
-
-:::
+The points $y_0,y_1\in f(X)$ in step [](#s1){.pf-ref} were arbitrary, and step [](#s3){.pf-ref} constructs a path between them. Therefore $f(X)$ is path connected, and the statement is true.
 
 :::
 
