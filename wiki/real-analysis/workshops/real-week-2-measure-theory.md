@@ -13,10 +13,7 @@ References:
 
 ## Metrics and convergence
 
-::: {.definition}
-A \dfn{metric} on a set $X$ is a function $\rho\colon X\times X\to[0,\infty)$ such that $\rho(x,y)=0$ if and only if $x=y$, $\rho(x,y)=\rho(y,x)$ for all $x,y\in X$, and $\rho(x,z)\leq\rho(x,y)+\rho(y,z)$ for all $x,y,z\in X$.
-
-:::
+[[D-E2XVI]]
 
 To prove $x=y$ in a metric space it suffices to show $\rho(x,y)<\varepsilon$ for every $\varepsilon>0$, and the triangle inequality splits an estimate of $\rho(x,z)$ through an intermediate point.
 
@@ -64,10 +61,7 @@ For $\varepsilon>0$, $\sum_{n\geq1}\varepsilon2^{-n} = \varepsilon$, which distr
 
 [[D-RPOGQ]]
 
-::: {.definition}
-A $\sigma$-algebra on $X$ is a collection of subsets of $X$ containing $X$ and closed under complements and countable unions, hence under countable intersections.
-
-:::
+[[D-P8RSF]]
 
 [[D-QYLPH]]
 
@@ -91,10 +85,7 @@ The proof of continuity of measure replaces a sequence of sets by disjoint sets 
 
 :::
 
-::: {.definition}
-An \dfn{outer measure} on a nonempty set $X$ is a function $\mu^*\colon\mathcal P(X)\to[0,\infty]$ with $\mu^*(\varnothing)=0$, $\mu^*(A)\leq\mu^*(B)$ for $A\subseteq B$, and $\mu^*\qty{\bigcup_jA_j}\leq\sum_j\mu^*(A_j)$.
-
-:::
+[[D-79EWM]]
 
 ::: {.proposition}
 Let $\mathcal E\subseteq\mathcal P(X)$ and $\rho\colon\mathcal E\to[0,\infty]$ with $\varnothing, X\in\mathcal E$ and $\rho(\varnothing)=0$.
@@ -102,7 +93,7 @@ For $A\subseteq X$ let
 $$
 \mu^*(A)\coloneqq\inf\theset{\sum_{j\geq1}\rho(E_j) \st E_j\in\mathcal E,\ A\subseteq\bigcup_{j\geq1}E_j}.
 $$
-Then $\mu^*$ is an outer measure.
+Then $\mu^*$ is an [[D-79EWM|outer measure]].
 
 :::
 
