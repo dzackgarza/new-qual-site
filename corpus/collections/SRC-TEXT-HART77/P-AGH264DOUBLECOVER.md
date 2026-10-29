@@ -45,7 +45,7 @@ Show that $\alpha$ is integral over $R$ if and only if $g,h\in R$.
 
 ::: {.solution}
 For an irreducible polynomial $q\in R$ and $u\in F^\times$, let $v_q(u)$ be the exponent of $q$ in the numerator of a reduced fraction for $u$, minus its exponent in the denominator.
-The ring $R$ is a [[D-INULL|unique factorization domain]] by [[FT-OXN3Y|Gauss's lemma]], and is therefore integrally closed [@Har10a, proof of Proposition II.6.2].
+The ring $R$ is a [[D-INULL|unique factorization domain]] by [[T-JEZZY|Gauss's lemma]], and is therefore integrally closed [@Har10a, proof of Proposition II.6.2].
 
 ::: pf
 

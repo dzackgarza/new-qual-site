@@ -49,19 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Gauss's lemma was split across two theorem cards
-
-- **Object and need:** `FT-OXN3Y` and `T-JEZZY` in `corpus/theory/Algebra`. Both are standard forms of Gauss's lemma rather than genuinely separate theorems.
-
-- **Observed evidence:** `FT-OXN3Y` states that a factorization in the fraction field descends to `$R[x]$` with the same factor degrees; `T-JEZZY` gives the primitive-polynomial irreducibility equivalence and the sharper scalar rescaling statement.
-  The wiki and algebra guide displayed both together.
-
-- **Impact and owner:** one theorem was split between two addresses, and a Hartshorne collection card linked specifically to the weaker half.
-
-- **Uncertainty:** none after reading both cards; the two forms are standard parts of the same Gauss lemma.
-
-- **Repair:** a `CARD-04` repair merges both forms and the polynomial-UFD consequence onto `T-JEZZY`, moves the review prompt there, redirects all live references, and deletes `FT-OXN3Y`.
-
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
 - **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
