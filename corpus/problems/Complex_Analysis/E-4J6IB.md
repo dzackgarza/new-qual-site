@@ -11,23 +11,40 @@ classification:
   - Singularities
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The statement block carried a warning that Riemann's theorem does not apply to z^{1/2} f(z) because z^{1/2} is "highly singular" at 0; that guidance moved to a hint, which says that z^{1/2} has no single-valued branch near 0.
 ---
 
 ::: {.exercise}
 Suppose $f$ is holomorphic with $z_0 = 0$ an isolated singularity, and suppose there is some neighborhood of $0$ on which
-\[
-\abs{f(z)} \leq \abs{z}^{-{ 1\over 2}}
-.\]
+$$
+\abs{f(z)} \leq \abs{z}^{-1/2}.
+$$
 Show that $z_0$ is removable.
-
-> Warning: Riemann's removable singularity theorem won't apply to $z^{1\over 2}f(z)$ since $z^{1\over 2}$ is highly singular at $z=0$.
 
 :::
 
+::: {.hint}
+Riemann's removable singularity theorem does not apply to $z^{1/2}f(z)$, because $z^{1/2}$ has no single-valued holomorphic branch on a punctured neighbourhood of $0$. Apply it to $zf(z)$.
+:::
+
 ::: {.solution}
-Using the inequality,
-\[
-\abs{(z-0)f(z)} \leq \abs{z}^{1\over 2}\convergesto{\abs{z}\to 0}0
-,\]
-so $z=0$ is removable by Riemann's removable singularity theorem.
+
+::: pf
+
+::: pf-step
+$0$ is a removable singularity of $f$.
+
+::: pf-proof
+On the punctured neighbourhood, $\abs{zf(z)} \leq \abs{z}^{1/2}\to0$ as $z\to0$.
+By Riemann's removable singularity theorem in the form "$\lim_{z\to0}zf(z)=0$ implies removable", $0$ is removable.
+:::
+
+:::
+
+:::
+
 :::
