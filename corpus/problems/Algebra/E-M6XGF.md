@@ -27,6 +27,7 @@ Prove Poincaré's theorem: if $H\le G$ has finite index $n$, then there is $N\tr
 $$
 [G:N]\mid n!.
 $$
+:::
 
 ::: {.solution}
 Let $G$ act by left multiplication on the $n$ left cosets $G/H$, let $\rho\colon G\to S_n$ be the resulting homomorphism, and let $N=\ker\rho$.
