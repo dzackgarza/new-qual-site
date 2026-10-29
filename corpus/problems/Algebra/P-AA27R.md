@@ -22,20 +22,42 @@ audit:
 ---
 
 ::: {.problem}
-Why is $\Phi_p(x) = \frac{x^p - 1}{x - 1} = x^{p-1} + x^{p-2} + \cdots + x + 1$ irreducible over $\mathbb{Q}$ for $p$ prime?
+Why is $\Phi_p(x) = \frac{x^p - 1}{x - 1} = x^{p-1} + x^{p-2} + \cdots + x + 1$ irreducible over $\QQ$ for $p$ prime?
 :::
 
 ::: {.solution}
 Set
-\[
-g(y)=\Phi_p(y+1)=\frac{(y+1)^p-1}{y}
+$$
+g(y)\coloneqq\Phi_p(y+1)=\frac{(y+1)^p-1}{y}
 =\sum_{m=1}^p\binom pm y^{m-1}.
-\]
-Its leading coefficient is \(1\). For \(1\le m\le p-1\), the prime \(p\) divides \(\binom pm\), while the constant term is \(\binom p1=p\), which is not divisible by \(p^2\). Thus \(g(y)\) is Eisenstein at \(p\), hence irreducible over \(\mathbb Q\).
+$$
 
-The substitution \(x\mapsto y+1\) is an automorphism of \(\mathbb Q[x]\), so reducibility of \(\Phi_p(x)\) would imply reducibility of \(\Phi_p(y+1)=g(y)\). Therefore
-\[
-\Phi_p(x)=1+x+\cdots+x^{p-1}
-\]
-is irreducible over \(\mathbb Q\).
+::: pf
+
+::: {.pf-step #eisenstein}
+
+$g(y)$ is irreducible over $\QQ$.
+
+::: pf-proof
+
+Its leading coefficient is $\binom pp=1$. For $1\le m\le p-1$, the prime $p$ divides $\binom pm$, and the constant term is $\binom p1=p$, which is not divisible by $p^2$. Thus $g$ is Eisenstein at $p$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\Phi_p(x)$ is irreducible over $\QQ$.
+
+::: pf-proof
+
+The substitution $x\mapsto y+1$ induces a ring automorphism of $\QQ[x]$ that preserves degree, so a factorization $\Phi_p=fh$ into nonconstant factors would give the factorization $g(y)=f(y+1)h(y+1)$ into nonconstant factors, contradicting step [](#eisenstein){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
