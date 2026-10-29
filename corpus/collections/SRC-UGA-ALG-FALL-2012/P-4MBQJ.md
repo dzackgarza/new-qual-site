@@ -21,18 +21,18 @@ audit:
     The printed definition is degenerate: N = N intersect N makes every proper
     submodule decomposable. The remark records the standard definition used by
     the proof.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source called a proper submodule intersection-decomposable when it is not an intersection of two proper submodules, a condition N = N cap N defeats; the statement now defines intersection-indecomposable by N = M_1 cap M_2 with N strictly inside both M_i being impossible.
 ---
 
 ::: {.problem}
 Let $R$ be a ring and $M$ an $R\dash$module.
 Recall that $M$ is *Noetherian* iff any strictly increasing chain of submodule $M_1 \subsetneq M_2 \subsetneq \cdots$ is finite.
-Call a proper submodule $M' \subsetneq M$ *intersection-decomposable* if it can not be written as the intersection of two proper submodules $M' = M_1\intersect M_2$ with $M_i \subsetneq M$.
+Call a proper submodule $M' \subsetneq M$ *intersection-indecomposable* if it can not be written as the intersection $M' = M_1\intersect M_2$ of two submodules with $M' \subsetneq M_i$ for $i=1,2$.
 
 Prove that for every Noetherian module $M$, any proper submodule $N\subsetneq M$ can be written as a finite intersection $N = N_1 \intersect \cdots \intersect N_k$ of intersection-indecomposable modules.
-:::
-
-::: {.remark}
-The printed definition is degenerate: every proper submodule $N$ satisfies $N=N\cap N$, so no proper submodule is intersection-indecomposable as printed. The solution uses the standard definition: $N=M_1\cap M_2$ forces $N=M_1$ or $N=M_2$.
 :::
 
 ::: {.solution}
@@ -41,20 +41,7 @@ The printed definition is degenerate: every proper submodule $N$ satisfies $N=N\
 
 ::: {.pf-step #s1-1}
 
-The printed definition does not define intersection-indecomposability.
-
-
-::: pf-proof
-
-Every proper submodule $N$ satisfies $N=N\cap N$, with both factors proper in $M$. Consequently no proper submodule meets the printed condition. The intended condition is that $N=N_1\cap N_2$ forces $N=N_1$ or $N=N_2$, equivalently that $N$ cannot be expressed as the intersection of two submodules strictly larger than $N$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Under the corrected definition, every proper submodule of a Noetherian module is a finite intersection of intersection-indecomposable submodules.
+Every proper submodule of a Noetherian module is a finite intersection of intersection-indecomposable submodules.
 
 
 ::: pf-proof
@@ -71,7 +58,7 @@ Both $N_i$ are proper, since $N_1=M$ would imply $N=N_2$, and similarly for $N_2
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} identifies the failure of the statement as printed, and step [](#s1-2){.pf-ref} proves the standard corrected assertion.
+Step [](#s1-1){.pf-ref} is the assertion.
 
 :::
 
