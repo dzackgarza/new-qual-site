@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $E \subseteq \mathbb{R}^n$ is a measurable set with finite measure $\mu(E) < \infty$, then for any measurable function $f: E \to \mathbb{C}$,
+Show that if $E \subseteq \RR^n$ is a measurable set with finite measure $\mu(E) < \infty$, then for any measurable function $f: E \to \CC$,
 $$
 \lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}.
 $$
