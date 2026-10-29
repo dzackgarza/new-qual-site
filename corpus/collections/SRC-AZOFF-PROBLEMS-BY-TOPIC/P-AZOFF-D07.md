@@ -43,6 +43,10 @@ audit:
 Suppose $f : \CC \to \CC$ is entire and $| f ( z ) | \leq | z | ^ { \frac { 1 } { 2 } }$ whenever $| z | > 1 0$ . Prove that $f$ is constant.
 :::
 
+::: {.remark title="Variations"}
+The same bound is also asked as "find all entire functions with $\abs{f(z)}\leq\abs{z}^{1/2}$ for $\abs{z}>10$". The answer is the constants $f\equiv c$ with $\abs{c}\leq\sqrt{10}$: by the proof below $f$ is constant, and a constant $c$ satisfies the bound for all $\abs{z}>10$ exactly when $\abs{c}\leq\sqrt{10}$.
+:::
+
 ::: {.solution}
 Write the Taylor series of $f$ at the origin as
 $$
