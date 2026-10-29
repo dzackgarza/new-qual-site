@@ -17,6 +17,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: The printed estimate is false for a general interval; the solution gives a constant-function counterexample and proves the corrected trapezoid estimate.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam printed the factor 1/n in front of the trapezoid sum, which fails for f=1 whenever b-a is not 1; the factor is now (b-a)/n.
 ---
 
 ::: {.problem}
@@ -30,7 +34,7 @@ be the uniform partition of $[a,b]$, so that $x_{i+1}-x_i=(b-a)/n$ for $0\leq i<
 Show that there exists $M$ such that for all $n\geq1$,
 \[
 \left|
-\frac1n\left(\frac12f(x_0)+f(x_1)+\cdots+f(x_{n-1})+\frac12f(x_n)\right)
+\frac{b-a}n\left(\frac12f(x_0)+f(x_1)+\cdots+f(x_{n-1})+\frac12f(x_n)\right)
 -\int_a^b f(x)\,dx
 \right|
 \leq \frac{M}{n^2}.
@@ -40,19 +44,7 @@ Show that there exists $M$ such that for all $n\geq1$,
 :::
 
 ::: {.solution}
-The statement is false when $b-a\neq1$.
-Take $f\equiv1$.
-The weighted sum inside the parentheses equals $n$, hence the first term is $1$, while
-\[
-\int_a^b1\,dx=b-a.
-\]
-Thus the left-hand side is the constant $|1-(b-a)|$, which cannot be bounded by $M/n^2$ for all $n$ unless $b-a=1$.
-
-The composite trapezoid rule uses the factor
-\[
-h=\frac{b-a}{n}
-\]
-in place of $1/n$; let $T_n$ denote the resulting sum.
+Let $h=(b-a)/n$, and let $T_n$ denote the sum in the problem.
 On one subinterval $[x_i,x_{i+1}]$, write $x=x_i+t$ with $0\leq t\leq h$ and let $L_i$ be the affine interpolant through the endpoint values of $f$.
 The interpolation remainder gives, for each $t$, a point $\xi_t\in(x_i,x_{i+1})$ such that
 \[
@@ -71,5 +63,5 @@ Summing over the $n$ subintervals yields
 \leq \frac{nKh^3}{12}
 =\frac{K(b-a)^3}{12n^2}.
 \]
-Thus the estimate holds for $T_n$ with $M=K(b-a)^3/12$, and it holds as stated when $b-a=1$.
+Thus the estimate holds with $M=K(b-a)^3/12$.
 :::
