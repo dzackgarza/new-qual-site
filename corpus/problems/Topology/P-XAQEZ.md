@@ -22,90 +22,67 @@ audit:
 ---
 
 ::: {.problem}
-Compute the integer homology groups $H_*(\mathbb{RP}^2; \mathbb{Z})$ using the **Mayer–Vietoris sequence** by decomposing $\mathbb{RP}^2$ as the union of a Möbius strip $M$ and a 2-disk $D^2$ along their boundary circle $\partial M = S^1$.
+Compute the integer homology groups $H_*(\RP^2; \ZZ)$ using the **Mayer–Vietoris sequence** by decomposing $\RP^2$ as the union of a Möbius strip $M$ and a 2-disk $D^2$ along their boundary circle $\partial M = S^1$.
 :::
 
 ::: {.solution}
-Write
-\[
-\mathbb{RP}^2=M\cup_{S^1}D^2,
-\]
-where $M$ is a Möbius band and the attaching map identifies $\partial D^2$ with $\partial M$.
-Use Mayer--Vietoris for this excisive CW decomposition (equivalently, replace $M$ and $D^2$ by open neighborhoods deformation retracting onto them whose intersection deformation retracts onto the common boundary circle).
+Write $\RP^2=M\cup_{S^1}D^2$, where the attaching map identifies $\partial D^2$ with $\partial M$.
+Thicken $M$ and $D^2$ to open sets $U \simeq M$ and $V \simeq D^2$ whose intersection deformation retracts onto the common boundary circle, so that the Mayer--Vietoris sequence applies to $U$ and $V$.
+Homology is with $\ZZ$ coefficients.
 
 ::: pf
 
-::: pf-step
-The relevant homology groups are
-\[
-H_1(S^1)\cong\mathbb Z,
-\qquad
-H_1(M)\cong\mathbb Z,
-\qquad
-H_1(D^2)=0,
-\]
-and $H_2$ of all three pieces is zero.
-
-:::
-
-::: pf-step
-Under a deformation retraction of $M$ onto its core circle, the boundary circle of the Möbius band winds twice around the core. Hence the inclusion
-\[
-i:S^1=\partial M\hookrightarrow M
-\]
-induces multiplication by $2$ on $H_1$. The inclusion into $D^2$ induces the zero map on $H_1$.
-
-:::
-
-::: pf-step
-The Mayer--Vietoris sequence in degrees $2$ and $1$ is therefore
-\[
-0\longrightarrow H_2(\mathbb{RP}^2)
-\longrightarrow \mathbb Z
-\xrightarrow{\,2\,}\mathbb Z
-\longrightarrow H_1(\mathbb{RP}^2)
-\longrightarrow \mathbb Z
-\xrightarrow{(1,-1)}\mathbb Z\oplus\mathbb Z.
-\]
+::: {.pf-step #pieces}
+$H_1(S^1)\cong\ZZ$, $H_1(M)\cong\ZZ$, $H_1(D^2)=0$, and $H_2$ of all three spaces is zero.
 
 ::: pf-proof
+$M$ deformation retracts onto its core circle and $D^2$ is contractible.
+:::
 
-::: pf-step
-Multiplication by $2$ is injective, so exactness gives
-\[
-H_2(\mathbb{RP}^2)=0.
-\]
+:::
+
+::: {.pf-step #maps}
+The inclusion $\partial M\hookrightarrow M$ induces multiplication by $2$ on $H_1$, and the inclusion $\partial D^2 \hookrightarrow D^2$ induces the zero map on $H_1$.
+
+::: pf-proof
+Under the deformation retraction of $M$ onto its core circle, the boundary circle winds twice around the core.
+The second map has target $H_1(D^2) = 0$.
+:::
+
+:::
+
+::: {.pf-step #h2h1}
+$H_2(\RP^2)=0$ and $H_1(\RP^2)\cong\ZZ/2$.
+
+::: pf-proof
+By steps [](#pieces){.pf-ref} and [](#maps){.pf-ref}, the Mayer--Vietoris sequence in degrees $2$, $1$, and $0$ reads
+$$
+0\longrightarrow H_2(\RP^2)
+\longrightarrow \ZZ
+\xrightarrow{\,2\,}\ZZ
+\longrightarrow H_1(\RP^2)
+\longrightarrow \ZZ
+\xrightarrow{(1,-1)}\ZZ\oplus\ZZ.
+$$
+Multiplication by $2$ is injective, so $H_2(\RP^2)=0$.
+The map $(1,-1)$ on $H_0$ is injective, so the connecting map $H_1(\RP^2) \to H_0(S^1)$ is zero and $H_1(\RP^2)\cong\operatorname{coker}(\ZZ\xrightarrow{2}\ZZ)\cong\ZZ/2$.
+:::
 
 :::
 
 ::: pf-step
-The map $(1,-1)$ is injective, so the preceding connecting map is zero. Hence
-\[
-H_1(\mathbb{RP}^2)
-\cong\operatorname{coker}(\mathbb Z\xrightarrow{2}\mathbb Z)
-\cong\mathbb Z/2.
-\]
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Since $\mathbb{RP}^2$ is connected,
-\[
-H_0(\mathbb{RP}^2)\cong\mathbb Z,
-\]
-and all homology groups above degree $2$ vanish. Thus
-\[
-H_k(\mathbb{RP}^2;\mathbb Z)\cong
-\begin{cases}
-\mathbb Z,&k=0,\\
-\mathbb Z/2,&k=1,\\
+$$
+H_k(\RP^2;\ZZ)\cong
+\boxed{\begin{cases}
+\ZZ,&k=0,\\
+\ZZ/2,&k=1,\\
 0,&k\ge2.
-\end{cases}
-\]
+\end{cases}}
+$$
+
+::: pf-proof
+$H_0(\RP^2) \cong \ZZ$ because $\RP^2$ is path connected, step [](#h2h1){.pf-ref} gives $H_1$ and $H_2$, and $H_k = 0$ for $k \geq 3$ because the Mayer--Vietoris terms $H_k$ and $H_{k-1}$ of $S^1$, $M$, and $D^2$ vanish there.
+:::
 
 :::
 
