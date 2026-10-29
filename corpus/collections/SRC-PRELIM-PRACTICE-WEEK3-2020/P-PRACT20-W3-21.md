@@ -5,7 +5,7 @@ kind: problem
 title: Work done by a constant force along the twisted cubic $(t,t^2,t^3)$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

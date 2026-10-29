@@ -5,7 +5,7 @@ kind: problem
 title: Integrating $e^{y^2}$ over a triangle by reversing the order of integration
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

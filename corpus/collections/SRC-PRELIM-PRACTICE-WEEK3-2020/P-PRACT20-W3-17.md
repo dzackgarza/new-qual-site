@@ -5,7 +5,7 @@ kind: problem
 title: Point on the plane $2x+y+3z=3$ closest to the origin
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

@@ -5,7 +5,7 @@ kind: problem
 title: Recovering $f(x,y)$ from its partial derivatives $2x+y$ and $x+2y$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

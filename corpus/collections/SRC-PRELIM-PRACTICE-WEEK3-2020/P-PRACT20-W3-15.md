@@ -5,7 +5,7 @@ kind: problem
 title: Plane through the origin perpendicular to the intersection line of two planes
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

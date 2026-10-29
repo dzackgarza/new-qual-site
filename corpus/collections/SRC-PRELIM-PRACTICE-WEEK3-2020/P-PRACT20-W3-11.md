@@ -5,7 +5,7 @@ kind: problem
 title: Expanding $x^3-x+1$ in powers of $x-2$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

@@ -5,7 +5,7 @@ kind: problem
 title: The Dirichlet integral $\int_0^\infty\frac{\sin t}{t}\,dt$ by differentiating under the integral
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

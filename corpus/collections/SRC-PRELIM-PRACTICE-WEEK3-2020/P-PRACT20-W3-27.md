@@ -5,7 +5,7 @@ kind: problem
 title: Line integral of $(xy,x^2y^3)$ around a triangle
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

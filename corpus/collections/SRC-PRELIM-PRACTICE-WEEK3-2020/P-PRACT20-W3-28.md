@@ -5,7 +5,7 @@ kind: problem
 title: Flux of $(x,y,z)$ through the upper unit hemisphere
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

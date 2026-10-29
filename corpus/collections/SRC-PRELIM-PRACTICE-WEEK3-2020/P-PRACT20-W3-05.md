@@ -5,7 +5,7 @@ kind: problem
 title: Sum of the power series $\sum n^2x^n$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

@@ -5,7 +5,7 @@ kind: problem
 title: Convergence of $\sum n!\,x^n$ and $\sum n!\,x^{n^2}$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

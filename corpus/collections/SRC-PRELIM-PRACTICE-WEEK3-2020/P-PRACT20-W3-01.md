@@ -5,7 +5,7 @@ kind: problem
 title: Closed form for the derivative of $\sum_{n\ge1}(-1)^nx^{3n}$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

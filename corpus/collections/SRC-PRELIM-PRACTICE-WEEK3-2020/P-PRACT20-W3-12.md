@@ -5,7 +5,7 @@ kind: problem
 title: Area of the Koch snowflake
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

@@ -5,7 +5,7 @@ kind: collection
 title: "Week 3: Calculus II (Part 2) & Calculus III practice problems"
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft
@@ -13,7 +13,7 @@ provenance:
 - assets/attachments/Week3_solns.pdf
 source:
   source_kind: compilation
-  area: real-analysis
+  area: prelim
   sections:
   - name: Week 3 practice problems
     problems:

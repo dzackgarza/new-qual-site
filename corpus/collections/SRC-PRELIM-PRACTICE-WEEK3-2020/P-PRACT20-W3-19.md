@@ -5,7 +5,7 @@ kind: problem
 title: Volume between the paraboloids $z=6-x^2-2y^2$ and $z=-2+x^2+2y^2$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

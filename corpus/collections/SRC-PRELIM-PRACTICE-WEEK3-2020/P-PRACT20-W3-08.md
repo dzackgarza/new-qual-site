@@ -5,7 +5,7 @@ kind: problem
 title: Maclaurin series of $f(x)/(1-x)$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

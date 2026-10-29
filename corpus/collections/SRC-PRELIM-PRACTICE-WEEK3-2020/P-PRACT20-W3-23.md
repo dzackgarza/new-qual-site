@@ -5,7 +5,7 @@ kind: problem
 title: The Gaussian integral via polar coordinates
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

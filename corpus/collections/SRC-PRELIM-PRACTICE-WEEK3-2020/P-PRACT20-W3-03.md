@@ -5,7 +5,7 @@ kind: problem
 title: The integral $\int_0^\infty\lfloor x\rfloor e^{-x}\,dx$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

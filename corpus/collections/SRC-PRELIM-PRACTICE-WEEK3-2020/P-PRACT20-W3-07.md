@@ -5,7 +5,7 @@ kind: problem
 title: Taylor series of the sine integral $\int_0^x\frac{\sin t}{t}\,dt$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

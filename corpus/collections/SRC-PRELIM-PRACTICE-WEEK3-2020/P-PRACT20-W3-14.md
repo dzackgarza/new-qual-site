@@ -5,7 +5,7 @@ kind: problem
 title: Plane through the origin, $(2,0,0)$ and $(0,0,1)$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

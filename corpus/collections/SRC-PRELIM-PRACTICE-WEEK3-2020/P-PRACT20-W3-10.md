@@ -5,7 +5,7 @@ kind: problem
 title: Error of the quadratic Taylor approximation to $\sqrt{1.01}$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

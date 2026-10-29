@@ -5,7 +5,7 @@ kind: problem
 title: Binomial series for $(1+x)^\alpha$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

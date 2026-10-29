@@ -5,7 +5,7 @@ kind: problem
 title: Minimizing $x+4z$ on the sphere $x^2+y^2+z^2=2$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

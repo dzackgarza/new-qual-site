@@ -5,7 +5,7 @@ kind: problem
 title: The $100$th derivative of $3/(x^2+5x+4)$ at $x=2$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

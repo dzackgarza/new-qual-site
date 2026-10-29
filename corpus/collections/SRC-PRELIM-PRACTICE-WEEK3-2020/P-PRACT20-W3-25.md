@@ -5,7 +5,7 @@ kind: problem
 title: The integrals $\int_0^{\pi/2}(a\cos^2x+b\sin^2x)^{-n}\,dx$ by differentiating in parameters
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

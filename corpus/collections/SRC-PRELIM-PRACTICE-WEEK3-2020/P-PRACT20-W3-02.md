@@ -5,7 +5,7 @@ kind: problem
 title: Convergence of $\sum n!\,x^{2n}/(n^n(1+x^{2n}))$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft

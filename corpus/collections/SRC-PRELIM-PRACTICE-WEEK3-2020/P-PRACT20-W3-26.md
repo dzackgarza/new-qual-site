@@ -5,7 +5,7 @@ kind: problem
 title: Area of an ellipse as the line integral $\oint -y\,dx+x\,dy$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft
