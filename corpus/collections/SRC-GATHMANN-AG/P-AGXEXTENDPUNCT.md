@@ -35,6 +35,10 @@ audit:
     k(x,y), and the UFD divisibility step. Coprimality of x and y forces
     x^m|a and y^n|b, so the representatives are one polynomial; uniqueness
     follows because the punctured plane is a nonempty open subset of the
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks about "a set $U$ in the complement of $(0,0)$", which fails for $U=D(x)$ and $1/x$. The statement takes $U$ to be the whole complement; the erratum remark is removed.
     irreducible affine plane.
 ---
 
@@ -147,10 +151,4 @@ difference is the zero polynomial. The extension is therefore unique.
 
 :::
 
-:::
-:::
-
-::: {.remark}
-Erratum: the source asks about "a set $U$ in the complement of $(0,0)$".
-The statement needs $U$ to be the whole complement: on the open set $D(x) \subseteq \AA^2 \sm \theset{(0,0)}$ the regular function $1/x$ does not extend to $\AA^2$.
 :::
