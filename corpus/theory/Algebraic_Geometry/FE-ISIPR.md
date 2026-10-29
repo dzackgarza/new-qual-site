@@ -18,17 +18,18 @@ prompts:
 ---
 
 ::: {.example}
+Let $k$ be an infinite field.
 The diagonal $\Delta = V(x-y) \subseteq \AA^2$ is Zariski closed.
 It is not closed in the product topology.
 
 Suppose it were.
 Then $\AA^2 \sm \Delta$ would be open in the product, so it would contain a basic open box $U \times V$ around any of its points.
 Each factor carries the cofinite topology, so $U = \AA^1 \sm \theset{p_1,\ldots,p_m}$ and $V = \AA^1 \sm \theset{q_1,\ldots,q_n}$.
-Over an infinite field choose $z$ distinct from every $p_i$ and $q_j$; then $(z,z) \in (U \times V) \intersect \Delta$, contradicting $U \times V \subseteq \AA^2 \sm \Delta$.
+Since $k$ is infinite, choose $z$ distinct from every $p_i$ and $q_j$; then $(z,z) \in (U \times V) \intersect \Delta$, contradicting $U \times V \subseteq \AA^2 \sm \Delta$.
 :::
 
 ::: {.remark}
-The product topology is strictly coarser than the Zariski topology on the scheme product.
+For infinite $k$, the product topology is strictly coarser than the Zariski topology on the scheme product.
 Categorically,
 $$
 \Spec(A\tensor_k B)
