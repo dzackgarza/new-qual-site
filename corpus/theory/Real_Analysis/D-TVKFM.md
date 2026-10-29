@@ -34,6 +34,8 @@ Let $(X,d)$ be a metric space, let $A\subseteq X$, and let $p\in X$.
 - $A$ is \dfn{perfect} if $A$ is closed and $A\subseteq A'$, so that every point of $A$ is a limit point of $A$.
 
 - $A$ is \dfn{bounded} if there are a real number $M$ and a point $q\in X$ such that $d(a, q) < M$ for all $a\in A$.
+:::
 
-- $A$ is \dfn{dense} in $X$ if every point of $X$ lies in $A$ or is a limit point of $A$, that is, $X = A\cup A' = \overline{A}$.
+::: {.remark}
+A subset $A\subseteq X$ is [[D-KJBAK|dense]] in $X$ exactly when every point of $X$ lies in $A$ or is a limit point of $A$, that is, $X = A\cup A' = \overline{A}$.
 :::
