@@ -19,54 +19,37 @@ Let $A,B\in M_n(\RR)$. If $A$ and $B$ are similar in $M_n(\CC)$, must they alrea
 :::
 
 ::: {.solution}
-Yes.
+Suppose $AX=XB$ with $X\in\GL_n(\CC)$, and write $X=P+iQ$ with $P,Q\in M_n(\RR)$.
 
-Suppose there is some
-\[
-X\in GL_n(\CC)
-\]
-with
-\[
-AX=XB.
-\]
-Write
-\[
-X=P+iQ
-\]
-with $P,Q\in M_n(\RR)$. Since $A$ and $B$ are real, comparing real and imaginary parts gives
-\[
-AP=PB,
-\qquad
-AQ=QB.
-\]
-Hence for every real number $t$,
-\[
-A(P+tQ)=(P+tQ)B.
-\]
+::: pf
 
-Consider the real polynomial
-\[
-f(t)=\det(P+tQ).
-\]
-It is not identically zero, because
-\[
-f(i)=\det(P+iQ)=\det X\ne0.
-\]
-Therefore $f$ has only finitely many real roots. Choose
-\[
-t\in\RR
-\]
-with $f(t)\ne0$. Then
-\[
-Y=P+tQ\in GL_n(\RR)
-\]
-and
-\[
-AY=YB.
-\]
-Thus
-\[
-A=YBY^{-1},
-\]
-so $A$ and $B$ are already similar over $\RR$.
+::: {.pf-step #real-parts}
+$A(P+tQ)=(P+tQ)B$ for every $t\in\RR$.
+
+::: pf-proof
+Since $A$ and $B$ are real, comparing real and imaginary parts of $AX=XB$ gives $AP=PB$ and $AQ=QB$.
+:::
+
+:::
+
+::: {.pf-step #invertible}
+$P+tQ$ is invertible for some $t\in\RR$.
+
+::: pf-proof
+$f(t)=\det(P+tQ)$ is a polynomial in $t$ with real coefficients, and $f(i)=\det X\ne0$, so $f$ is not identically zero and has finitely many roots.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{Yes}}$: $A$ and $B$ are similar in $M_n(\RR)$.
+
+::: pf-proof
+With $t$ as in step [](#invertible){.pf-ref}, $Y=P+tQ\in\GL_n(\RR)$, and step [](#real-parts){.pf-ref} gives $A=YBY^{-1}$.
+:::
+
+:::
+
+:::
+
 :::
