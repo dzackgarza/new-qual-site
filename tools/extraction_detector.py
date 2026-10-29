@@ -97,8 +97,8 @@ def render(findings: list[Finding]) -> str:
     return "\n".join(lines)
 
 
-def _git(root: Path, *args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(["git", *args], cwd=root, text=True, capture_output=True, check=check)
+def _git(root: Path, *args: str) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(["git", *args], cwd=root, text=True, capture_output=True, check=True)
 
 
 def _changed_paths(root: Path, base: str) -> list[Path]:
@@ -107,7 +107,7 @@ def _changed_paths(root: Path, base: str) -> list[Path]:
 
 
 def _git_text(root: Path, spec: str) -> str | None:
-    result = _git(root, "show", spec, check=False)
+    result = subprocess.run(["git", "show", spec], cwd=root, text=True, capture_output=True)
     return result.stdout if result.returncode == 0 else None
 
 
