@@ -1,7 +1,5 @@
 ---
 order: 100
-creation date: 2021-10-11 17:52
-modification date: Tuesday 19th October 2021 22:33:13
 title: Fields review sheet 1
 aliases: [Algebra Fields Review 1]
 ---
