@@ -49,7 +49,7 @@ Expanding $x=\sum_i x_ie_i$ and $y=\sum_j y_je_j$ by bilinearity gives $B(x,y)=\
 
 ::: pf-step
 
-(b) Bilinear forms $B_1,B_2$ with Gram matrices $M_1,M_2$ are equivalent when $B_2(x,y)=B_1(Px,Py)$ for some $P\in\operatorname{GL}_n(K)$, that is, when $M_2=P^TM_1P$.
+(b) Bilinear forms $B_1,B_2$ with Gram matrices $M_1,M_2$ are equivalent when $B_2(x,y)=B_1(Px,Py)$ for some $P\in\GL_n(K)$, that is, when $M_2=P^TM_1P$.
 
 ::: pf-proof
 
