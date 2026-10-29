@@ -9,9 +9,9 @@ title: Complex arithmetic
 
 [[P-UGA8150S21-HW1-01]]
 
-[[P-3HHKX]]
+[[P-UGA8150S21-HW1-02]]
 
-[[P-43AXY]]
+[[P-UGA8150S21-HW1-03]]
 
 [[P-CZ3R7]]
 
@@ -23,9 +23,9 @@ title: Complex arithmetic
 
 ## Problems on holomorphy and power series
 
-[[P-CV2MR]]
+[[P-UGA8150S21-HW1-07]]
 
-[[P-7UTDI]]
+[[P-UGA8150S21-HW1-08]]
 
 [[P-TFO34]]
 
@@ -37,11 +37,11 @@ title: Complex arithmetic
 
 [[P-7UIYI]]
 
-[[P-FOYTY]]
+[[P-V7ULH]]
 
-[[P-F7HCN]]
+[[P-UGA8150S21-HW2-05]]
 
-[[P-LLNJ7]]
+[[P-UGA8150S21-HW2-12]]
 
 ## Identities
 

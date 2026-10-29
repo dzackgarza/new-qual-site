@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-TIE-F15-01
 kind: problem
-title: The ratio limit bounds the root limit
+title: If $\lim_{n\to\infty}|a_{n+1}|/|a_n|=L$ then $\lim_{n\to\infty}|a_n|^{1/n}=L$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Convergence Tests
+  - Power Series
+  - Sequences of Numbers
 relations: []
 review: draft
 audit:
@@ -17,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a _ { n } \neq 0$ and assume that $\operatorname* { l i m } _ { n \to \infty } { \frac { | a _ { n + 1 } | } { | a _ { n } | } } = L$ . Show that $\operatorname* { l i m } _ { n \to \infty } \sqrt [ n ] { | a _ { n } | } = L$ . In particular, this shows that when applicable, the ratio test can be used to calculate the radius of convergence of a power series.
+Let $a_n \neq 0$ and assume that $\displaystyle \lim_{n \to \infty} \frac{\abs{a_{n+1}}}{\abs{a_n}} = L$. Show that $\displaystyle \lim_{n \to \infty} \sqrt[n]{\abs{a_n}} = L$. In particular, this shows that when applicable, the ratio test can be used to calculate the radius of convergence of a power series.
 :::
 
 ::: {.solution}
