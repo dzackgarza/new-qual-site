@@ -21,82 +21,46 @@ audit:
 
 ::: {.problem}
 Let $a>0$ and calculate
-\[
+$$
 \int_0^\infty {x^2 \over (x^2 + a^2)^2} \, dx
-.\]
+.$$
 :::
 
 ::: {.solution}
+Let $f(z) = \dfrac{z^2}{(z^2 + a^2)^2} = \dfrac{z^2}{(z - ia)^2 (z + ia)^2}$, which has double poles at $\pm ia$.
+
 ::: pf
 
-::: {.pf-step #even-integrand}
-The integrand is even, so $\int_0^\infty \frac{x^2}{(x^2 + a^2)^2}\,dx = \frac{1}{2}\int_{-\infty}^{\infty} \frac{x^2}{(x^2 + a^2)^2}\,dx$.
+::: {.pf-step #residue}
+$\operatorname{Res}(f, ia) = \dfrac{1}{4ia}$.
 
 ::: pf-proof
-evenness.
+At the double pole $ia$,
+$$
+\operatorname{Res}(f,ia) = \frac{d}{dz}\frac{z^2}{(z+ia)^2}\bigg|_{z=ia} = \frac{2iaz}{(z+ia)^3}\bigg|_{z=ia} = \frac{-2a^2}{-8ia^3} = \frac1{4ia}.
+$$
+:::
+
+:::
+
+::: {.pf-step #line}
+$\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = \frac{\pi}{2a}$.
+
+::: pf-proof
+Integrate $f$ over the boundary of the upper half-disk of radius $R>a$. The only enclosed pole is $ia$, so by step [](#residue){.pf-ref} the contour integral is $2\pi i\cdot\frac1{4ia} = \frac{\pi}{2a}$. On the arc $\abs{f(z)}\le R^2/(R^2-a^2)^2$, so the arc integral is at most $\pi R^3/(R^2-a^2)^2\to 0$ as $R\to\infty$.
 :::
 
 :::
 
 ::: pf-step
-Consider $f(z) = \frac{z^2}{(z^2 + a^2)^2} = \frac{z^2}{(z - ia)^2 (z + ia)^2}$.
+$\displaystyle\int_0^\infty \frac{x^2}{(x^2 + a^2)^2}\,dx = \boxed{\frac{\pi}{4a}}$.
 
 ::: pf-proof
-definition.
+The integrand is even, so the integral is half of the one in step [](#line){.pf-ref}.
 :::
 
 :::
 
-::: pf-step
-$f$ has a double pole at $z = ia$ (in the upper half-plane) and a double pole at $z = -ia$ (in the lower half-plane).
-
-::: pf-proof
-factor the denominator.
 :::
-
-:::
-
-::: {.pf-step #arc-vanishes}
-Integrate over a semicircular contour in the upper half-plane; the integral over the arc tends to $0$ as the radius $\to \infty$.
-
-::: pf-proof
-$|f(z)| \le C/R^2$ on the arc of radius $R$, and the arc length is $\pi R$, so the arc integral is $O(1/R) \to 0$.
-:::
-
-:::
-
-::: {.pf-step #residue-at-ia}
-$\operatorname{Res}(f, ia) = \frac{1}{4ia}$.
-
-::: pf-proof
-computing the residue at the double pole $z = ia$: $\operatorname{Res} = \frac{d}{dz}\left[\frac{z^2}{(z + ia)^2}\right]_{z = ia} = \frac{1}{4ia}$.
-:::
-
-:::
-
-::: {.pf-step #line-integral-value}
-By the residue theorem, $\int_{-\infty}^{\infty} f(x)\,dx = 2\pi i \cdot \frac{1}{4ia} = \frac{\pi}{2a}$.
-
-::: pf-proof
-Steps [](#arc-vanishes){.pf-ref} and [](#residue-at-ia){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #final-value}
-Hence $\int_0^\infty \frac{x^2}{(x^2 + a^2)^2}\,dx = \frac{1}{2} \cdot \frac{\pi}{2a} = \frac{\pi}{4a}$.
-
-::: pf-proof
-Steps [](#even-integrand){.pf-ref} and [](#line-integral-value){.pf-ref}.
-:::
-
-:::
-
-::: pf-qed
-Step [](#final-value){.pf-ref}.
-:::
-
-:::
-
 
 :::
