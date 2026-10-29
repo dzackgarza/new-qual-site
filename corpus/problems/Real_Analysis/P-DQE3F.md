@@ -20,19 +20,19 @@ audit:
 ---
 
 ::: {.problem}
-Let \( \theset{ f_k }_{k=1}^{\infty } \subseteq L^2([0, 1]) \) be a sequence which *converges in $L^1$* to a function $f$.
+Let $\theset{ f_k }_{k=1}^{\infty } \subseteq L^2([0, 1])$ be a sequence which *converges in $L^1$* to a measurable function $f$.
 
-a. Prove that $f\in L^1([0, 1])$.
+(a) Prove that $f\in L^1([0, 1])$.
 
-b. Give an example illustrating that $f_k$ may not converge to $f$ almost everywhere.
+(b) Give an example illustrating that $f_k$ may not converge to $f$ almost everywhere.
 
-c. Prove that $\theset{f_k}$ must contain a subsequence that converges to $f$ almost everywhere.
+(c) Prove that $\theset{f_k}$ must contain a subsequence that converges to $f$ almost everywhere.
 :::
 ::: {.solution}
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
 $f \in L^1([0,1])$.
 
@@ -44,7 +44,7 @@ Choose $k$ with $\|f - f_k\|_1 < 1$. Since $m([0,1]) = 1$, $\|f_k\|_1 \le \|f_k\
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 Let $E_k$ enumerate the dyadic intervals $[0,\frac12], [\frac12,1], [0,\frac14], [\frac14,\frac12], \ldots$, level by level, and $f_k = \chi_{E_k}$. Then $f_k \in L^2([0,1])$ and $f_k \to 0$ in $L^1$, but $f_k(x)$ converges for no $x \in [0,1]$.
 
@@ -56,7 +56,7 @@ $|f_k| \le 1$, so $f_k \in L^2$, and $\|f_k\|_1 = m(E_k) \to 0$. Each $x \in [0,
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
 Some subsequence $f_{k_j} \to f$ a.e.
 
@@ -76,11 +76,11 @@ $\|f_k - f\|_1 \to 0$.
 
 ::: {.pf-step #s3-2}
 
-For each $\eps > 0$, $m\theset{x : |f_{k_j}(x) - f(x)| > \eps \text{ for infinitely many } j} = 0$.
+For each $\varepsilon > 0$, $m\theset{x : |f_{k_j}(x) - f(x)| > \varepsilon \text{ for infinitely many } j} = 0$.
 
 ::: pf-proof
 
-By Markov's inequality and step [](#s3-1){.pf-ref}, $\sum_j m\theset{|f_{k_j} - f| > \eps} \le \frac1\eps\sum_j 2^{-j} < \infty$, and the Borel--Cantelli lemma applies.
+By Markov's inequality and step [](#s3-1){.pf-ref}, $\sum_j m\theset{|f_{k_j} - f| > \varepsilon} \le \frac1\varepsilon\sum_j 2^{-j} < \infty$, and the Borel--Cantelli lemma applies.
 
 :::
 
@@ -88,17 +88,11 @@ By Markov's inequality and step [](#s3-1){.pf-ref}, $\sum_j m\theset{|f_{k_j} - 
 
 ::: pf-qed
 
-The union over $\eps = 1/n$, $n \geq 1$, of the null sets in step [](#s3-2){.pf-ref} is null, and off it $f_{k_j}(x) \to f(x)$.
+The union over $\varepsilon = 1/n$, $n \geq 1$, of the null sets in step [](#s3-2){.pf-ref} is null, and off it $f_{k_j}(x) \to f(x)$.
 
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are parts (a), (b) and (c).
 
 :::
 
