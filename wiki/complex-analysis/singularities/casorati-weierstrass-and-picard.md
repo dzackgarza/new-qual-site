@@ -38,12 +38,6 @@ If $g(z_0) \neq 0$ then $1/g + w$ is holomorphic near $z_0$ and equals $f$ off $
 
 :::
 
-::: {.proof title="Casorati--Weierstrass theorem, from Gamelin"}
-
-![](../../../../assets/assets/figures/2021-12-10_18-47-34.png)
-
-:::
-
 ## Picard
 
 Picard's theorems replace density of the image by omission of at most one value of $\CC$.
