@@ -20,16 +20,20 @@ audit:
 ---
 
 ::: {.problem}
-a. Prove that if $f, g: \RR^n\to \CC$ is both measurable then $F(x, y) \definedas f(x)$ and $h(x, y)\definedas f(x-y) g(y)$ is measurable on $\RR^n\cross \RR^n$.
+(a) Prove that if $f, g: \RR^n\to \CC$ are both measurable then $F(x, y) \coloneqq f(x)$ and $h(x, y)\coloneqq f(x-y) g(y)$ are measurable on $\RR^n\cross \RR^n$.
 
-b. Show that if $f\in L^1(\RR^n) \intersect L^\infty(\RR^n)$ and $g\in L^1(\RR^n)$, then $f\ast g \in L^1(\RR^n) \intersect L^\infty(\RR^n)$ is well defined, and carefully show that it satisfies the following properties:
-\[
-\norm{f\ast g}_\infty &\leq \norm{g}_1 \norm{f}_\infty
-\norm{f\ast g}_1      &\leq \norm{g}_1 \norm{f}_1
-\norm{f\ast g}_2      &\leq \norm{g}_1 \norm{f}_2
-.\]
+(b) Show that if $f\in L^1(\RR^n) \intersect L^\infty(\RR^n)$ and $g\in L^1(\RR^n)$, then $f\ast g \in L^1(\RR^n) \intersect L^\infty(\RR^n)$ is well defined, and carefully show that it satisfies the following properties:
+$$
+\begin{aligned}
+\norm{f\ast g}_\infty &\leq \norm{g}_1 \norm{f}_\infty, \\
+\norm{f\ast g}_1      &\leq \norm{g}_1 \norm{f}_1, \\
+\norm{f\ast g}_2      &\leq \norm{g}_1 \norm{f}_2.
+\end{aligned}
+$$
+:::
 
-> Hint: first show $\abs{f\ast g}^2 \leq \norm{g}_1 \qty{ \abs{f}^2 \ast \abs{g}}$.
+::: {.hint}
+First show $\abs{f\ast g}^2 \leq \norm{g}_1 \qty{ \abs{f}^2 \ast \abs{g}}$.
 :::
 
 ::: {.solution}
@@ -106,12 +110,6 @@ $\|f \ast g\|_2 \le \|g\|_1\|f\|_2$.
 $|f|^2 \le \|f\|_\infty|f|$, so $|f|^2 \in L^1$ with $\||f|^2\|_1 = \|f\|_2^2$. Integrating step [](#s5){.pf-ref} and applying step [](#s4){.pf-ref} to $|f|^2$ and $|g|$ gives $\|f \ast g\|_2^2 \le \|g\|_1\,\||f|^2 \ast |g|\|_1 \le \|g\|_1^2\|f\|_2^2$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are part (a). Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s6){.pf-ref} give $f\ast g \in L^1 \cap L^\infty$ and the three inequalities of part (b).
 
 :::
 
