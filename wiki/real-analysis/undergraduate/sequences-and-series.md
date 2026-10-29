@@ -37,17 +37,6 @@ $\limsup_n a_n$ is the largest limit of a convergent subsequence of $(a_n)$ in $
 
 [[PR-4EVYE]]
 
-::: {.proof title="Cauchy condensation test"}
-Let $a_1\geq a_2\geq\cdots\geq0$.
-The block $2^k\leq n<2^{k+1}$ has $2^k$ terms, each at most $a_{2^k}$, so $\sum_{n\geq1}a_n\leq\sum_{k\geq0}2^ka_{2^k}$.
-The block $2^{k-1}<n\leq2^k$ has $2^{k-1}$ terms, each at least $a_{2^k}$, so $2^{k-1}a_{2^k}\leq\sum_{2^{k-1}<n\leq2^k}a_n$ and
-$$
-\sum_{k\geq0}2^ka_{2^k} \leq a_1 + 2\sum_{n\geq2}a_n.
-$$
-Hence $\sum_n a_n$ and $\sum_k 2^ka_{2^k}$ converge or diverge together.
-
-:::
-
 [[FF-QLRXX]]
 
 [[FD-D2QPH]]
