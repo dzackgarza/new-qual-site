@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS01D
 kind: problem
-title: "A simply-connected CW-complex with H_2 = Z+Z and no homology above degree 2 is a bouquet of two spheres"
+title: 'A simply connected CW complex with $H_2\cong\ZZ\oplus\ZZ$ and no homology above degree $2$ is homotopy equivalent to $S^2\vee S^2$'
 classification:
   areas:
   - topology

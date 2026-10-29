@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS01B
 kind: problem
-title: "Genus of a double branched cover of S^2 via Euler characteristic"
+title: 'Genus of a double branched cover of $S^2$ via Euler characteristic'
 classification:
   areas:
   - topology

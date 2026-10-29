@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS01C
 kind: problem
-title: "Cohomology ring of CP^2 # (S^2 x S^2)"
+title: 'Cohomology ring of $\CP^2\#(S^2\times S^2)$'
 classification:
   areas:
   - topology
