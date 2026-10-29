@@ -23,14 +23,13 @@ Show that the Euler number of a finite linear graph $X$ is a topological invaria
 :::
 
 ::: {.solution}
-**Goal:** Prove that the Euler characteristic $\chi(X) = V - E$ of a finite linear graph (1-dimensional CW complex) $X$ is a topological invariant.
+For a finite linear graph $X$ with $V$ vertices and $E$ edges, write $\chi(X) = V - E$ for its Euler number.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Connected finite graphs:
-    *Proof:*
+If $X$ is connected, then $\chi(X) = 1 - \operatorname{rank} \pi_1(X, x_0)$, so $\chi(X)$ is a topological invariant.
 
 ::: pf-proof
 
@@ -98,8 +97,7 @@ Because the fundamental group is a topological (and homotopy) invariant, $\chi(X
 
 ::: pf-step
 
-General finite graphs (disconnected case):
-    *Proof:*
+For every finite linear graph $X$, $\chi(X)$ is a topological invariant.
 
 ::: pf-proof
 
@@ -125,7 +123,7 @@ Applying step [](#s1){.pf-ref} to each connected component $X_i$:
 
 ::: pf-step
 
-The number of connected components $c$ and the fundamental groups of the individual components are all topological invariants of the space $X$.
+The number of connected components $c$ and the fundamental groups of the individual components are all topological invariants of the space $X$, so $\chi(X)$ is one too.
 
 :::
 
@@ -133,13 +131,6 @@ The number of connected components $c$ and the fundamental groups of the individ
 
 :::
 
-::: pf-step
-
-Conclusion:
-
 :::
 
-:::
-
-    The Euler number $\chi(X)$ is completely determined by the topology of $X$, and hence is a topological invariant. Q.E.D.
 :::
