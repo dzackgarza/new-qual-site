@@ -255,7 +255,15 @@ mathematical correction under its own node, not under copy policy.
     statement cards for the mod-$p$ irreducibility test, the degree-2-or-3 root test, finite
     extensions of finite fields being Galois, and algebraic closure; a citation on the D-2IO6Q
     noncommutative remark; the E-NNTQB restatement on orbit-stabilizer. `audited-deployment`
-    needs it. **Acceptance:** each read and repaired, or kept with the reason.
+    needs it. **Acceptance:** each read and repaired, or kept with the reason. **Closed.**
+    The complex-analysis oral names no institution (MGSA files, McMullen, Calegari), so it is
+    SRC-MGSA-COMPLEX-ORAL with one source section; the four oral PDFs and extractions are
+    `MGSA_*`. PR-ABSJX merged into P-FHW1-02. Kept apart after reading: P-FHW1-05 (adds the
+    characteristic-2 failure) from PR-OFBRQ and P-JXIIG, and P-FHW1-11 from P-HBWYH (adds
+    $\alpha^{2020}$). The mod-$p$ test already existed as PR-PB6UE and is now on the
+    polynomials page; new cards PR-I1T7M (root test), PR-OGUA5 (finite-field extensions) and
+    D-99IUP (algebraic closure). D-2IO6Q cites Hungerford IX.2; orbit-stabilizer drops its
+    Lagrange corollary, now carried by E-NNTQB.
   Round 3 (revision `5ba163ac9`, analysis provenance) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-analysis-provenance`**. **Needs:** none. Round-3 analysis findings C1-C4: 16 UCLA
