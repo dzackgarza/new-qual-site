@@ -22,29 +22,31 @@ audit:
 ---
 
 ::: {.problem}
-- Let $H, K \leq G$ be subgroups with $H\cong K$.
-  Is it true that $G/H \cong G/K$?
+Let $H, K \leq G$ be subgroups with $H\cong K$.
+Is it true that $G/H \cong G/K$?
+:::
 
-  > Hint: consider a group with distinct subgroups of order 2 whose quotients have order 4.
+::: {.hint}
+Consider a group with distinct subgroups of order $2$ whose quotients have order $4$.
 :::
 
 ::: {.solution}
-No.
+The answer is no.
 
 ::: pf
 
 ::: pf-step
 
 Let
-\[
+$$
 G=C_4\oplus C_2,
-\]
+$$
 and write elements additively. Define
-\[
+$$
 H=\langle(2,0)\rangle,
 \qquad
 K=\langle(0,1)\rangle.
-\]
+$$
 Then $H\cong K\cong C_2$.
 
 ::: pf-proof
@@ -62,9 +64,9 @@ The quotient $G/H$ is isomorphic to $C_2\oplus C_2$.
 ::: pf-proof
 
 Quotienting the $C_4$ factor by its subgroup of order $2$ gives $C_2$, while the second factor survives unchanged:
-\[
+$$
 G/H\cong (C_4/\langle2\rangle)\oplus C_2\cong C_2\oplus C_2.
-\]
+$$
 
 :::
 
@@ -77,9 +79,9 @@ The quotient $G/K$ is isomorphic to $C_4$.
 ::: pf-proof
 
 The subgroup $K$ is exactly the second direct factor, so
-\[
+$$
 G/K\cong C_4.
-\]
+$$
 
 :::
 
