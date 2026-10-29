@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that if $X = S^2 \disjoint_{\id} S^2$ is a pushout along the equators, then $H_n(X) = [\ZZ, 0, \ZZ^3, 0, \cdots]$.
+Show that if $X = S^2 \disjoint_{\id} S^2$ is a pushout along the equators, then $H_n(X) = [\ZZ, 0, \ZZ^3, 0, \cdots]$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ $X$ is the union of two copies of $S^2$ glued along a common equator $S^1$.
 
 ::: pf-proof
 
-the pushout of two $S^2$'s along their equators (identified by the identity map).
+This is the definition of the pushout of two copies of $S^2$ along their equators, identified by the identity map.
 
 :::
 
@@ -68,19 +68,19 @@ because each cell of $X$ lies in $A$ or $B$, and a cell occurring in both lies i
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
 $H_0(X) = \ZZ$.
 
 ::: pf-proof
 
-$X$ is connected.
+The space $X$ is path connected.
 
 :::
 
 :::
 
-::: {.pf-step #s5}
+::: pf-step
 
 $H_1(X) = 0$.
 
@@ -92,7 +92,7 @@ The relevant part is $H_1(S^1) \to H_1(S^2) \oplus H_1(S^2) \to H_1(X) \to H_0(S
 
 ::: pf-proof
 
-Mayer–Vietoris in low degrees.
+This is the Mayer–Vietoris sequence for $A$ and $B$ in degrees $1$ and $0$.
 
 :::
 
@@ -116,7 +116,7 @@ Hence $H_1(X) = 0$.
 
 ::: pf-proof
 
-exactness: $H_1(X) \to H_0(S^1)$ is injective (kernel is image of $H_1(S^2) \oplus H_1(S^2) = 0$), and its image is the kernel of $H_0(S^1) \to H_0(S^2) \oplus H_0(S^2)$, which is $0$ (since that map is injective); so $H_1(X) = 0$.
+By exactness, $H_1(X) \to H_0(S^1)$ is injective (kernel is image of $H_1(S^2) \oplus H_1(S^2) = 0$), and its image is the kernel of $H_0(S^1) \to H_0(S^2) \oplus H_0(S^2)$, which is $0$ (since that map is injective); so $H_1(X) = 0$.
 
 :::
 
@@ -126,7 +126,7 @@ exactness: $H_1(X) \to H_0(S^1)$ is injective (kernel is image of $H_1(S^2) \opl
 
 :::
 
-::: {.pf-step #s6}
+::: pf-step
 
 $H_2(X) = \ZZ^3$.
 
@@ -138,7 +138,7 @@ The relevant part is $H_2(S^1) \to H_2(S^2) \oplus H_2(S^2) \to H_2(X) \to H_1(S
 
 ::: pf-proof
 
-Mayer–Vietoris.
+This is the Mayer–Vietoris sequence for $A$ and $B$ in degrees $2$ and $1$.
 
 :::
 
@@ -150,7 +150,7 @@ $H_2(S^1) = 0$ and $H_1(S^2) = 0$.
 
 ::: pf-proof
 
-standard.
+The space $S^1$ has no homology above degree $1$, and $S^2$ is simply connected.
 
 :::
 
@@ -174,7 +174,7 @@ Therefore $H_2(X) \cong \ZZ^3$.
 
 ::: pf-proof
 
-the short exact sequence $0 \to \ZZ^2 \to H_2(X) \to \ZZ \to 0$ splits (the last term is free), so $H_2(X) \cong \ZZ^2 \oplus \ZZ = \ZZ^3$.
+The short exact sequence $0 \to \ZZ^2 \to H_2(X) \to \ZZ \to 0$ splits (the last term is free), so $H_2(X) \cong \ZZ^2 \oplus \ZZ = \ZZ^3$.
 
 :::
 
@@ -184,7 +184,7 @@ the short exact sequence $0 \to \ZZ^2 \to H_2(X) \to \ZZ \to 0$ splits (the last
 
 :::
 
-::: {.pf-step #s7}
+::: pf-step
 
 $H_n(X) = 0$ for $n \ge 3$.
 
@@ -193,12 +193,6 @@ $H_n(X) = 0$ for $n \ge 3$.
 $H_n(S^1) = H_n(S^2) = 0$ for $n \ge 3$, so the Mayer–Vietoris sequence gives $H_n(X) = 0$.
 
 :::
-
-:::
-
-::: pf-qed
-
-$H_0 = \ZZ$, $H_1 = 0$, $H_2 = \ZZ^3$, $H_n = 0$ for $n \ge 3$ (steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref}).
 
 :::
 
