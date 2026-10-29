@@ -431,10 +431,12 @@ def test_collection_page_renders_provenance_links(collections_site: Path) -> Non
     assert "<dt>Topics</dt><dd>Groups</dd>" in exam_html
     assert "<dt>Status</dt><dd>draft</dd>" in exam_html
     assert "<dt>Source</dt>" in exam_html
-    assert 'href="https://www.math.uga.edu/past-qualifying-exams-1" aria-label="Source"' in exam_html
-    assert 'href="https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" aria-label="PDF source"' in exam_html
-    assert 'href="../assets/attachments/fixture-paper.pdf" aria-label="PDF source"' in exam_html
-    assert 'href="../assets/attachments/extracted/fixture-paper.md" aria-label="Markdown extraction"' in exam_html
+    assert 'href="https://www.math.uga.edu/past-qualifying-exams-1" aria-label="past-qualifying-exams-1: Source"' in exam_html
+    assert 'href="https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" aria-label="8000e: PDF source"' in exam_html
+    assert 'href="../assets/attachments/fixture-paper.pdf" aria-label="fixture-paper: PDF source"' in exam_html
+    assert 'href="../assets/attachments/extracted/fixture-paper.md" aria-label="fixture-paper: Markdown extraction"' in exam_html
+    # Several documents: each chip group is preceded by its document's name, once.
+    assert exam_html.count('<span class="page-source-document">fixture-paper</span>') == 1
     assert ">assets/attachments/fixture-paper.pdf<" not in exam_html
     local_pdf = work / "assets" / "attachments" / "fixture-paper.pdf"
     published = work / "build" / "quarto" / "_site" / "assets" / "attachments"

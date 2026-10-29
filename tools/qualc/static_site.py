@@ -298,6 +298,8 @@ def _source_links(meta: dict[str, object], relative_path: Path) -> str:
         return ""
     links = []
     badges = {"pdf": "PDF", "markdown": "MD", "web": "↗"}
+    documents = {item.get("document") for item in raw if isinstance(item, dict)}
+    named = None
     for item in raw:
         if not isinstance(item, dict):
             continue
@@ -311,6 +313,10 @@ def _source_links(meta: dict[str, object], relative_path: Path) -> str:
             badge = badges[kind]
         else:
             badge = "↗"
+        document = item.get("document")
+        if len(documents) > 1 and isinstance(document, str) and document != named:
+            named = document
+            links.append(f'<span class="page-source-document">{escape(document)}</span>')
         links.append(
             f'<a class="page-source-link page-source-{escape(kind, quote=True)}" '
             f'href="{escape(_source_link_href(relative_path, href), quote=True)}" '

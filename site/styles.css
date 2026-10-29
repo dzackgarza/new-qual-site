@@ -412,6 +412,7 @@ mjx-container[display="true"] {
 
 .page-source-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
   min-height: 1.55rem;
@@ -433,6 +434,14 @@ mjx-container[display="true"] {
   letter-spacing: 0.03em;
   line-height: 1;
   text-decoration: none;
+}
+
+.page-source-document {
+  font-size: 0.85rem;
+}
+
+.page-source-document:not(:first-child) {
+  margin-left: 0.6rem;
 }
 
 .page-source-link:hover,

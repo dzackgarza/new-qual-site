@@ -25,7 +25,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
-from urllib.parse import quote, urlencode, urlsplit
+from urllib.parse import quote, unquote, urlencode, urlsplit
 
 import panflute as pf
 import yaml
@@ -1547,22 +1547,24 @@ def _collection_source_links(repo_root: Path, provenance: list[str]) -> list[dic
     links: list[dict[str, str]] = []
     seen: set[tuple[str, str]] = set()
 
-    def add(href: str, kind: str, label: str) -> None:
+    def add(href: str, kind: str, label: str, document: str) -> None:
         key = (href, kind)
         if key in seen:
             return
         seen.add(key)
-        links.append({"href": href, "kind": kind, "label": label})
+        links.append({"href": href, "kind": kind, "label": f"{document}: {label}", "document": document})
 
     for href in provenance:
-        suffix = Path(urlsplit(href).path).suffix.lower()
-        if suffix == ".pdf":
-            add(href, "pdf", "PDF source")
+        path = Path(unquote(urlsplit(href).path))
+        # The file name is the only name a provenance href carries.
+        document = path.stem.replace("_", " ") if path.stem else href
+        if path.suffix.lower() == ".pdf":
+            add(href, "pdf", "PDF source", document)
         else:
-            add(href, "web", "Source")
+            add(href, "web", "Source", document)
         extraction = _pdf_extraction_href(repo_root, href)
         if extraction is not None:
-            add(extraction, "markdown", "Markdown extraction")
+            add(extraction, "markdown", "Markdown extraction", document)
     return links
 
 

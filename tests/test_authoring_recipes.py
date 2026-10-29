@@ -226,7 +226,7 @@ def test_nested_collection_keeps_source_ownership_and_rejects_cycles(tmp_path: P
     context = run(tmp_path, "just", "read-card", "E-CENTER").stdout
     assert "SRC-NEILNOTES / Workshop day 2 / entry 1 / Exam sheet > SRC-UGA-FIX / entry 1 / Question III" in context
     child_context = context.split("SRC-UGA-FIX: UGA Algebra qualifying exam, Spring 2019", 1)[1]
-    assert "PDF source: https://example.invalid/child-exam.pdf" in child_context.split("--- Authored card ---", 1)[0]
+    assert "child-exam: PDF source: https://example.invalid/child-exam.pdf" in child_context.split("--- Authored card ---", 1)[0]
     parent["source"]["sections"][0]["problems"] = ["SRC-NEILNOTES"]
     index.write_text("---\n" + yaml.safe_dump(parent, sort_keys=False) + "---\n")
     result = subprocess.run(("just", "--justfile", str(ROOT / "justfile"), "--working-directory", str(tmp_path), "list-cards", "SRC-NEILNOTES"), text=True, capture_output=True)
