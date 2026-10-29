@@ -12,13 +12,18 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source states the identity $\int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)$ with no request. The integrand has nonintegrable simple poles at $\pm1$, so the integral exists only as a principal value; the statement now asks to show the identity for the principal value.'
 ---
 
 ::: {.exercise}
-\[
-I \definedas \int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)
-.\]
-
+Show that the principal value integral satisfies
+$$
+I \coloneqq \operatorname{p.v.}\int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2).
+$$
 :::
 
 ::: {.solution}
@@ -39,18 +44,18 @@ $\int_\Gamma f = 0$ since $\Gamma$ encloses no singularities.
 By Jordan's lemma, $\int_{C_R}f\to 0$, since $\abs{z/(z^2-1)}\le R/(R^2-1)$ on $C_R$.
 A clockwise half-circle about a simple pole contributes $-\pi i$ times the residue in the limit $\eps\to0$.
 With
-\[
+$$
 \Res_{z=-1} f(z) = \lim_{z\to -1} {ze^{2iz} \over z-1} = {e^{-2i} \over 2},
 \qquad
-\Res_{z=1} f(z) = \lim_{z\to 1} {ze^{2iz} \over z+1} = {e^{2i} \over 2}
-,\]
+\Res_{z=1} f(z) = \lim_{z\to 1} {ze^{2iz} \over z+1} = {e^{2i} \over 2},
+$$
 letting $\eps\to0$ and $R\to\infty$ gives
-\[
-0 = I - \pi i\qty{{e^{-2i} \over 2} + {e^{2i}\over 2}}
-,\]
+$$
+0 = I - \pi i\qty{{e^{-2i} \over 2} + {e^{2i}\over 2}},
+$$
 so
-\[
-I = \pi i \cos(2)
-.\]
+$$
+I = \pi i \cos(2).
+$$
 :::
 
