@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-12
 kind: problem
-title: Maxim algebraic topology 4.12
+title: Cohomology of the free loop spaces of $S^3$, $S^2$ and $\CP^n$
 classification:
   areas: [topology]
   topics: []
