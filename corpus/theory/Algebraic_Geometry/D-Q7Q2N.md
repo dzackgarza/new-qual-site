@@ -53,10 +53,12 @@ so $X_\Sigma = \PP^1$.
 :::
 
 ::: {.definition title="The variety"}
+Let $k$ be a field and let $\Sigma$ be a fan in $N_\RR$.
+For $\sigma \in \Sigma$, put
 $$
-\sigma \rightsquigarrow S_\sigma = \dualof{\sigma} \intersect M \rightsquigarrow U_\sigma = \Spec k[S_\sigma] ,
+S_\sigma \coloneqq \dualof{\sigma} \intersect M, \qquad U_\sigma \coloneqq \Spec k[S_\sigma] .
 $$
-and $X_\Sigma$ is obtained by gluing the $U_\sigma$ along the $U_{\sigma \intersect \tau}$.
+The \dfn{toric variety} $X_\Sigma$ of $\Sigma$ is obtained by gluing $U_\sigma$ and $U_\tau$ along $U_{\sigma \intersect \tau}$ for all $\sigma, \tau \in \Sigma$.
 :::
 
 ::: {.remark}
