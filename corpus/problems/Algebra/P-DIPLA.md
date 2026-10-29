@@ -90,3 +90,8 @@ The first isomorphism theorem gives $\Gal(E/F)\cong G/H$.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Part (2) is often asked with "normal" in place of "Galois": an intermediate field $E$ is normal over $F$ if and only if $\Gal(K/E)\trianglelefteq\Gal(K/F)$.
+The proof of step [](#normal){.pf-ref} applies unchanged, since $E/F$ is separable as a subextension of the separable extension $K/F$, so $E/F$ is normal exactly when it is Galois.
+:::

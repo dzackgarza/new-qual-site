@@ -382,7 +382,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-D7DNH.md` | `e65e83de3715038f61d2267007d6a1a62ebecfe1` | `e65e83de3715038f61d2267007d6a1a62ebecfe1` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-DB3EP.md` | `20ece1ad493f8b5a8693257a5c3a73397772a4bc` | `20ece1ad493f8b5a8693257a5c3a73397772a4bc` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-DB72D.md` | `3ecf0c0d3424d5d263d2526d49ce71ff4df35b7f` | `3ecf0c0d3424d5d263d2526d49ce71ff4df35b7f` | Read; retained |
-| [x] | `corpus/problems/Algebra/P-DD42S.md` | `c151e6d125d0c3d2ad6593d215674972dcd7937b` | `c151e6d125d0c3d2ad6593d215674972dcd7937b` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-DEZSR.md` | `6bb3dd177678d6359499a551662883d77548e33a` | `6bb3dd177678d6359499a551662883d77548e33a` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-DFBUX.md` | `bb1229e865c3acb9515691f59264ee4f03fe95c8` | `dd9b1b129e49ae5f5ad6958e80cfaf5f9ed26116` | Read; replaced subjective interest and usefulness framing in authored title and solution with the dyadic subgroup and its proved properties; preserved the source question. |
 | [x] | `corpus/problems/Algebra/P-DG3XG.md` | `7ae8b5ec4ff24fa4dbf0ecab0887f303a6624688` | `7ae8b5ec4ff24fa4dbf0ecab0887f303a6624688` | Read; retained |
