@@ -56,21 +56,16 @@ Give $M_h$ a finite CW structure. Each open cell is evenly covered, and an $n$-s
 
 ::: pf-step
 
-Therefore
+Therefore $\boxed{g=n(h-1)+1}$.
+
+::: pf-proof
+
+The two preceding steps give $2-2g=n(2-2h)$. Dividing by $2$ gives $1-g=n(1-h)$, that is, $g-1=n(h-1)$.
 
 :::
 
 :::
 
-$$
-2-2g=n(2-2h).
-$$
-Dividing by $2$ and rearranging gives
-$$
-g-1=n(h-1),
-$$
-so
-$$
-\boxed{g=n(h-1)+1}.
-$$
+:::
+
 :::
