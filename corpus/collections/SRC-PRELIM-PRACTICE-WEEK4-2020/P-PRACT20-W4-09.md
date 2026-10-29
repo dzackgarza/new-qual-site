@@ -5,7 +5,7 @@ kind: problem
 title: The Bernoulli equation $y'+\frac4xy=x^3y^2$ and the substitution for $y^\alpha$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

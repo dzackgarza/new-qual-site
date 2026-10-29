@@ -5,7 +5,7 @@ kind: collection
 title: "Week 4: Differential Equations & Linear Algebra practice problems"
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics: []
 relations: []
 review: draft
@@ -13,7 +13,7 @@ provenance:
 - assets/attachments/Week4_solns.pdf
 source:
   source_kind: compilation
-  area: applied-algebra
+  area: prelim
   sections:
   - name: Week 4 practice problems
     problems:

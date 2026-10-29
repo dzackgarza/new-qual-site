@@ -5,7 +5,7 @@ kind: problem
 title: Properties of the square of a real $2\times2$ matrix
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

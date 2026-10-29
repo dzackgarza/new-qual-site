@@ -5,7 +5,7 @@ kind: problem
 title: Dimension of cubic polynomials vanishing at $-1$, $0$, $1$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Polynomials

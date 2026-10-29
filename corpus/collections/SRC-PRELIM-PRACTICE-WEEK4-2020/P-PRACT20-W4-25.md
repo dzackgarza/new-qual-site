@@ -5,7 +5,7 @@ kind: problem
 title: Maximum number of ones in an invertible $0$--$1$ matrix
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

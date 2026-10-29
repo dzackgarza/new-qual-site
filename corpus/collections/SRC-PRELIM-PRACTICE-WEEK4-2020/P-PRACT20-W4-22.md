@@ -5,7 +5,7 @@ kind: problem
 title: Noninvertibility from $AB-BA=A$ and from $A^3=B^3$, $A^2B=B^2A$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

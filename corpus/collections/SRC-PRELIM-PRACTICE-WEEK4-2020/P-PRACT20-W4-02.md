@@ -5,7 +5,7 @@ kind: problem
 title: The initial value problem $y'+xy=x$, $y(0)=-1$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

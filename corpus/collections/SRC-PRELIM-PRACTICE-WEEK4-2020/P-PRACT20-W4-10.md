@@ -5,7 +5,7 @@ kind: problem
 title: Solution sets of second-order equations that are subspaces of $C(\RR)$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
   - Linear Algebra

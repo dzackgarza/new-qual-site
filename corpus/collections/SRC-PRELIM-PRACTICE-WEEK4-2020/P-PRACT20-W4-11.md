@@ -5,7 +5,7 @@ kind: problem
 title: Possible dimensions of the intersection of two subspaces
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Subspaces

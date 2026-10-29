@@ -5,7 +5,7 @@ kind: problem
 title: Matrix of reflection in the $x$-axis followed by doubling
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

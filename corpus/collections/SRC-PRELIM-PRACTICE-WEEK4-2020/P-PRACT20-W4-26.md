@@ -5,7 +5,7 @@ kind: problem
 title: Invertibility and inverse of $I_n+\sigma J_n$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

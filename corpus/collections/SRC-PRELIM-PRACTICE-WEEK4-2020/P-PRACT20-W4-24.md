@@ -5,7 +5,7 @@ kind: problem
 title: $1+xy+x^2y^2$ is not a sum of two products of one-variable polynomials
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Polynomials

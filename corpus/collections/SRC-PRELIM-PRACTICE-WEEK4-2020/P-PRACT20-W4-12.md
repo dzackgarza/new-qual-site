@@ -5,7 +5,7 @@ kind: problem
 title: Nullity of a linear map from $2\times3$ matrices onto $\RR^4$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Rank and Nullity

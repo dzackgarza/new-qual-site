@@ -5,7 +5,7 @@ kind: problem
 title: Salt in a tank with equal inflow and outflow rates
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

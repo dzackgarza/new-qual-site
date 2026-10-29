@@ -5,7 +5,7 @@ kind: problem
 title: The solution of $x\,dy+(y-xe^x)\,dx=0$ through $(1,0)$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

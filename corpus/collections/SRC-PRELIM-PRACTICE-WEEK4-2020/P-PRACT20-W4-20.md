@@ -5,7 +5,7 @@ kind: problem
 title: An idempotent operator splits $V$ into its fixed space and kernel
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Linear Transformations

@@ -5,7 +5,7 @@ kind: problem
 title: Evaluating a linear functional on $\RR^2$ from two values
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Linear Transformations

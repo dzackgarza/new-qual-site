@@ -5,7 +5,7 @@ kind: problem
 title: Rank of the $n\times n$ matrix with entries $1,\dots,n^2$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

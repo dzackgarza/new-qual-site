@@ -5,7 +5,7 @@ kind: problem
 title: Graphs of solutions of $(y')^2+2yy'+y^2=0$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

@@ -5,7 +5,7 @@ kind: problem
 title: Solutions of $yy''-2(y')^2=0$ through $(1,1)$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

@@ -5,7 +5,7 @@ kind: problem
 title: Sum, union, intersection and complement of subspaces
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Subspaces

@@ -5,7 +5,7 @@ kind: problem
 title: Real $2\times2$ solutions of $A^{100}=\operatorname{diag}(-1,-\alpha)$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Matrices

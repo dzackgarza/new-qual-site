@@ -5,7 +5,7 @@ kind: problem
 title: The Cauchy--Euler equation $2x^2y''+3xy'-15y=0$ and the repeated-root case
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []

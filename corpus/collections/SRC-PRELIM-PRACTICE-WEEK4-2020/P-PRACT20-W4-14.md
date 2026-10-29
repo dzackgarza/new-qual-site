@@ -5,7 +5,7 @@ kind: problem
 title: Eigenvalues and eigenvectors of the $3\times3$ matrix with zero diagonal and ones elsewhere
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Linear Algebra
   - Eigenvalues and Eigenvectors

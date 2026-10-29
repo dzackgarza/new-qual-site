@@ -5,7 +5,7 @@ kind: problem
 title: Graph of the solution of $y'=1+y^4$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []
