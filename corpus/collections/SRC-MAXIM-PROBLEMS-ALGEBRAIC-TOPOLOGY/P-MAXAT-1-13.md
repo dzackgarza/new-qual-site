@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-13
 kind: problem
-title: Maxim algebraic topology 1.13
+title: $\RP^{2n}$ and $\CP^{2n}$ have the fixed-point property
 classification:
   areas: [topology]
   topics: []
