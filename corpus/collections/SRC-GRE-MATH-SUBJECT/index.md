@@ -1,0 +1,322 @@
+---
+schema: qual/card@1
+id: SRC-GRE-MATH-SUBJECT
+kind: collection
+title: Cracking the GRE Mathematics Subject Test
+classification:
+  areas: [prelim, algebra, real-analysis, applied-algebra]
+  topics: []
+relations: []
+review: draft
+provenance:
+- assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf
+- assets/attachments/chapter-1.pdf
+- assets/attachments/chapter-2.pdf
+- assets/attachments/chapter-3.pdf
+- assets/attachments/chapter-4.pdf
+- assets/attachments/chapter-5.pdf
+- assets/attachments/chapter-6.pdf
+- assets/attachments/Chapter-7.pdf
+source:
+  source_kind: compilation
+  area: prelim
+  date:
+    kind: unknown
+  sections:
+  - name: Chapter 1 review questions
+    problems:
+    - P-GRECH1-01
+    - P-GRECH1-02
+    - P-GRECH1-03
+    - P-GRECH1-04
+    - P-GRECH1-05
+    - P-GRECH1-06
+    - P-GRECH1-07
+    - P-GRECH1-08
+    - P-GRECH1-09
+    - P-GRECH1-10
+    - P-GRECH1-11
+    - P-GRECH1-12
+    - P-GRECH1-13
+    - P-GRECH1-14
+    - P-GRECH1-15
+    - P-GRECH1-16
+    - P-GRECH1-17
+    - P-GRECH1-18
+    - P-GRECH1-19
+    - P-GRECH1-20
+    - P-GRECH1-21
+    - P-GRECH1-22
+    - P-GRECH1-23
+    - P-GRECH1-24
+    - P-GRECH1-25
+  - name: Chapter 2 review questions
+    problems:
+    - P-GRECH2-01
+    - P-GRECH2-02
+    - P-GRECH2-03
+    - P-GRECH2-04
+    - P-GRECH2-05
+    - P-GRECH2-06
+    - P-GRECH2-07
+    - P-GRECH2-08
+    - P-GRECH2-09
+    - P-GRECH2-10
+    - P-GRECH2-11
+    - P-GRECH2-12
+    - P-GRECH2-13
+    - P-GRECH2-14
+    - P-GRECH2-15
+    - P-GRECH2-16
+    - P-GRECH2-17
+    - P-GRECH2-18
+    - P-GRECH2-19
+    - P-GRECH2-20
+    - P-GRECH2-21
+    - P-GRECH2-22
+    - P-GRECH2-23
+    - P-GRECH2-24
+    - P-GRECH2-25
+    - P-GRECH2-26
+    - P-GRECH2-27
+    - P-GRECH2-28
+    - P-GRECH2-29
+    - P-GRECH2-30
+    - P-GRECH2-31
+    - P-GRECH2-32
+    - P-GRECH2-33
+    - P-GRECH2-34
+    - P-GRECH2-35
+    - P-GRECH2-36
+    - P-GRECH2-37
+    - P-GRECH2-38
+    - P-GRECH2-39
+    - P-GRECH2-40
+    - P-GRECH2-41
+    - P-GRECH2-42
+    - P-GRECH2-43
+    - P-GRECH2-44
+    - P-GRECH2-45
+    - P-GRECH2-46
+    - P-GRECH2-47
+    - P-GRECH2-48
+    - P-GRECH2-49
+    - P-GRECH2-50
+  - name: Chapter 3 review questions
+    problems:
+    - P-GRECH3-01
+    - P-GRECH3-02
+    - P-GRECH3-03
+    - P-GRECH3-04
+    - P-GRECH3-05
+    - P-GRECH3-06
+    - P-GRECH3-07
+    - P-GRECH3-08
+    - P-GRECH3-09
+    - P-GRECH3-10
+    - P-GRECH3-11
+    - P-GRECH3-12
+    - P-GRECH3-13
+    - P-GRECH3-14
+    - P-GRECH3-15
+    - P-GRECH3-16
+    - P-GRECH3-17
+    - P-GRECH3-18
+    - P-GRECH3-19
+    - P-GRECH3-20
+    - P-GRECH3-21
+    - P-GRECH3-22
+    - P-GRECH3-23
+    - P-GRECH3-24
+    - P-GRECH3-25
+    - P-GRECH3-26
+    - P-GRECH3-27
+    - P-GRECH3-28
+    - P-GRECH3-29
+    - P-GRECH3-30
+  - name: Chapter 4 review questions
+    problems:
+    - P-GRECH4-01
+    - P-GRECH4-02
+    - P-GRECH4-03
+    - P-GRECH4-04
+    - P-GRECH4-05
+    - P-GRECH4-06
+    - P-GRECH4-07
+    - P-GRECH4-08
+    - P-GRECH4-09
+    - P-GRECH4-10
+    - P-GRECH4-11
+    - P-GRECH4-12
+    - P-GRECH4-13
+    - P-GRECH4-14
+    - P-GRECH4-15
+  - name: Chapter 5 review questions
+    problems:
+    - P-GRECH5-01
+    - P-GRECH5-02
+    - P-GRECH5-03
+    - P-GRECH5-04
+    - P-GRECH5-05
+    - P-GRECH5-06
+    - P-GRECH5-07
+    - P-GRECH5-08
+    - P-GRECH5-09
+    - P-GRECH5-10
+    - P-GRECH5-11
+    - P-GRECH5-12
+    - P-GRECH5-13
+    - P-GRECH5-14
+    - P-GRECH5-15
+    - P-GRECH5-16
+    - P-GRECH5-17
+    - P-GRECH5-18
+    - P-GRECH5-19
+    - P-GRECH5-20
+  - name: Chapter 6 review questions
+    problems:
+    - P-GRECH6-01
+    - P-GRECH6-02
+    - P-GRECH6-03
+    - P-GRECH6-04
+    - P-GRECH6-05
+    - P-GRECH6-06
+    - P-GRECH6-07
+    - P-GRECH6-08
+    - P-GRECH6-09
+    - P-GRECH6-10
+    - P-GRECH6-11
+    - P-GRECH6-12
+    - P-GRECH6-13
+    - P-GRECH6-14
+    - P-GRECH6-15
+    - P-GRECH6-16
+    - P-GRECH6-17
+    - P-GRECH6-18
+    - P-GRECH6-19
+    - P-GRECH6-20
+  - name: Chapter 7 review questions
+    problems:
+    - P-GRECH7-01
+    - P-GRECH7-02
+    - P-GRECH7-03
+    - P-GRECH7-04
+    - P-GRECH7-05
+    - P-GRECH7-06
+    - P-GRECH7-07
+    - P-GRECH7-08
+    - P-GRECH7-09
+    - P-GRECH7-10
+    - P-GRECH7-11
+    - P-GRECH7-12
+    - P-GRECH7-13
+    - P-GRECH7-14
+    - P-GRECH7-15
+    - P-GRECH7-16
+    - P-GRECH7-17
+    - P-GRECH7-18
+    - P-GRECH7-19
+    - P-GRECH7-20
+    - P-GRECH7-21
+    - P-GRECH7-22
+    - P-GRECH7-23
+    - P-GRECH7-24
+    - P-GRECH7-25
+    - P-GRECH7-26
+    - P-GRECH7-27
+    - P-GRECH7-28
+    - P-GRECH7-29
+    - P-GRECH7-30
+    - P-GRECH7-31
+    - P-GRECH7-32
+    - P-GRECH7-33
+    - P-GRECH7-34
+    - P-GRECH7-35
+    - P-GRECH7-36
+    - P-GRECH7-37
+    - P-GRECH7-38
+    - P-GRECH7-39
+    - P-GRECH7-40
+    - P-GRECH7-41
+    - P-GRECH7-42
+    - P-GRECH7-43
+    - P-GRECH7-44
+    - P-GRECH7-45
+    - P-GRECH7-46
+    - P-GRECH7-47
+    - P-GRECH7-48
+    - P-GRECH7-49
+    - P-GRECH7-50
+  - name: Chapter 9 practice test
+    problems:
+    - P-GREPT-01
+    - P-GREPT-02
+    - P-GREPT-03
+    - P-GREPT-04
+    - P-GREPT-05
+    - P-GREPT-06
+    - P-GREPT-07
+    - P-GREPT-08
+    - P-GREPT-09
+    - P-GREPT-10
+    - P-GREPT-11
+    - P-GREPT-12
+    - P-GREPT-13
+    - P-GREPT-14
+    - P-GREPT-15
+    - P-GREPT-16
+    - P-GREPT-17
+    - P-GREPT-18
+    - P-GREPT-19
+    - P-GREPT-20
+    - P-GREPT-21
+    - P-GREPT-22
+    - P-GREPT-23
+    - P-GREPT-24
+    - P-GREPT-25
+    - P-GREPT-26
+    - P-GREPT-27
+    - P-GREPT-28
+    - P-GREPT-29
+    - P-GREPT-30
+    - P-GREPT-31
+    - P-GREPT-32
+    - P-GREPT-33
+    - P-GREPT-34
+    - P-GREPT-35
+    - P-GREPT-36
+    - P-GREPT-37
+    - P-GREPT-38
+    - P-GREPT-39
+    - P-GREPT-40
+    - P-GREPT-41
+    - P-GREPT-42
+    - P-GREPT-43
+    - P-GREPT-44
+    - P-GREPT-45
+    - P-GREPT-46
+    - P-GREPT-47
+    - P-GREPT-48
+    - P-GREPT-49
+    - P-GREPT-50
+    - P-GREPT-51
+    - P-GREPT-52
+    - P-GREPT-53
+    - P-GREPT-54
+    - P-GREPT-55
+    - P-GREPT-56
+    - P-GREPT-57
+    - P-GREPT-58
+    - P-GREPT-59
+    - P-GREPT-60
+    - P-GREPT-61
+    - P-GREPT-62
+    - P-GREPT-63
+    - P-GREPT-64
+    - P-GREPT-65
+---
+
+::: {.remark}
+The review questions at the ends of Chapters 1–7 and the sixty-five questions of the rescaled practice test in Chapter 9, in the book's numbering and order.
+The practice test states its conventions: every logarithm with an unspecified base is natural, $[a,b]$ is the closed interval, and $\ZZ$, $\QQ$, $\RR$, $\CC$ are the integers, rationals, reals and complex numbers.
+:::

@@ -23,19 +23,21 @@ order: 3
 
 ## Multiple-choice review questions by chapter
 
-- [[SRC-GRE-MATH-CH1-REVIEW|Chapter 1: equations, inequalities, conic sections, polynomials, logarithms, and trigonometric and hyperbolic functions]]
+[[SRC-GRE-MATH-SUBJECT|Cracking the GRE Mathematics Subject Test]] has a section of multiple-choice review questions for each chapter, and a practice test:
 
-- [[SRC-GRE-MATH-CH2-REVIEW|Chapter 2: limits, derivatives, integrals, improper integrals, and series]]
+- Chapter 1: equations, inequalities, conic sections, polynomials, logarithms, and trigonometric and hyperbolic functions
 
-- [[SRC-GRE-MATH-CH3-REVIEW|Chapter 3: vectors, lines and planes, partial derivatives, optimization, and line and multiple integrals]]
+- Chapter 2: limits, derivatives, integrals, improper integrals, and series
 
-- [[SRC-GRE-MATH-CH4-REVIEW|Chapter 4: differential equations]]
+- Chapter 3: vectors, lines and planes, partial derivatives, optimization, and line and multiple integrals
 
-- [[SRC-GRE-MATH-CH5-REVIEW|Chapter 5: linear systems, matrices, linear transformations, and eigenvalues]]
+- Chapter 4: differential equations
 
-- [[SRC-GRE-MATH-CH6-REVIEW|Chapter 6: number theory, groups, rings, and fields]]
+- Chapter 5: linear systems, matrices, linear transformations, and eigenvalues
 
-- [[SRC-GRE-MATH-CH7-REVIEW|Chapter 7: logic, sets, combinatorics, graph theory, probability, Lebesgue measure, complex variables, and algorithms]]
+- Chapter 6: number theory, groups, rings, and fields
+
+- Chapter 7: logic, sets, combinatorics, graph theory, probability, Lebesgue measure, complex variables, and algorithms
 
 ## Exams
 
