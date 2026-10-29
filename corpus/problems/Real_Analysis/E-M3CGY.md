@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that every open $U \subseteq \RR^n$ is a countable union of *almost* disjoint closed cubes.
+Show that every open $U \subseteq \RR^n$ is a countable union of *almost* disjoint closed cubes.
 :::
 
 ::: {.solution}
