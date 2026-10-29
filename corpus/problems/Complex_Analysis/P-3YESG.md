@@ -24,70 +24,59 @@ State the standard Schwarz reflection principle involving reflection across the 
 
 Give a linear fractional transformation $T$ mapping $\DD$ to $\HH$.
 Let $g(z) = \bar z$, and show
-\[  
+$$
 (T^{-1} \circ g \circ T)(z) = 1/\bar z
-.\]
+.$$
 
 Suppose that $f$ is holomorphic on $\DD$, continuous on $\bar \DD$, and real on $S^1$.
 Show that $f$ must be constant.
 :::
 
 ::: {.solution}
-**Goal:** (1) State the Schwarz reflection principle across the real axis; (2) give a Möbius map $T: \DD \to \HH$ and verify $T^{-1}\circ g \circ T = 1/\bar z$ for $g(z) = \bar z$; (3) show $f$ holomorphic on $\DD$, continuous on $\bar\DD$, real on $S^1$, must be constant.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-Statement of the Schwarz reflection principle (real axis).
-
-::: pf-proof
-
-Let $\Omega \subseteq \HH$ be a domain whose boundary contains an open interval $I$ of the real axis, and let $f$ be holomorphic on $\Omega$, continuous on $\Omega \cup I$, with $\Im f(z) \to 0$ as $z \to I$ (equivalently $f$ real on $I$). Then $f$ extends holomorphically across $I$ to $\Omega \cup I \cup \overline\Omega$ by $f(\bar z) = \overline{f(z)}$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Give $T: \DD \to \HH$.
+::: {.pf-step #reflection}
+Schwarz reflection principle: let $\Omega\subseteq\HH$ be open, let $I\subseteq\RR$ be an open interval such that $\Omega^+\coloneqq\Omega\cup I$ is a neighborhood of $I$ in $\overline\HH$, and let $\Omega^-\coloneqq\theset{\bar z\st z\in\Omega}$. If $F$ is holomorphic on $\Omega$, continuous on $\Omega\cup I$, and real on $I$, then $F$ extends to a holomorphic function on $\Omega\cup I\cup\Omega^-$ by $F(\bar z)\coloneqq\overline{F(z)}$.
 
 ::: pf-proof
-
-$T(z) = i\frac{1 + z}{1 - z}$ maps the unit disk onto the upper half-plane (the Cayley transform): $z \in \DD$ iff $\Im T(z) > 0$. Its inverse is $T^{-1}(w) = \frac{w - i}{w + i}$.
-
+This is the statement asked for.
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-Verify $T^{-1} \circ g \circ T = 1/\bar z$ with $g(z) = \bar z$.
+::: {.pf-step #cayley}
+$T(z)=i\dfrac{1+z}{1-z}$ maps $\DD$ onto $\HH$ and $S^1\sm\theset{1}$ onto $\RR$, with inverse $T^{-1}(w)=\dfrac{w-i}{w+i}$.
 
 ::: pf-proof
-
-Compute: $g(T(z)) = \overline{T(z)} = \overline{i\frac{1+z}{1-z}} = -i\frac{1+\bar z}{1 - \bar z}$. Then $T^{-1}(\overline{T(z)}) = \frac{\overline{T(z)} - i}{\overline{T(z)} + i} = \frac{-i\frac{1+\bar z}{1-\bar z} - i}{-i\frac{1+\bar z}{1-\bar z} + i} = \frac{-i(1+\bar z) - i(1 - \bar z)}{-i(1+\bar z) + i(1-\bar z)} = \frac{-2i}{-2i\bar z} = \frac{1}{\bar z}$.
-
+Solving $w=i\frac{1+z}{1-z}$ for $z$ gives $T^{-1}$.
+For real $w$, $\abs{w-i}=\abs{w+i}$, and for $\Im w>0$, $w$ is closer to $i$ than to $-i$, so $\abs{T^{-1}(w)}<1$ exactly on $\HH$ and $\abs{T^{-1}(w)}=1$ on $\RR$.
 :::
 
 :::
 
-::: {.pf-step #s4}
-
-Setup for (3): $F = f \circ T^{-1}$ is holomorphic on $\HH$, continuous on $\bar\HH$, and real on $\RR$; extend by reflection to an entire function.
+::: pf-step
+$(T^{-1}\circ g\circ T)(z)=1/\bar z$.
 
 ::: pf-proof
-
-$T^{-1}$ maps $\HH$ onto $\DD$ and $\RR$ onto $S^1 \setminus \{1\}$; since $f$ is real on $S^1$, $F$ is real on $\RR$ (minus possibly one point, removable). By the reflection principle (step [](#s1){.pf-ref}), $F$ extends holomorphically to all of $\CC$ via $F(\bar w) = \overline{F(w)}$. The function $f$ is bounded on the compact $\bar\DD$ (continuous), so $F$ is bounded on $\bar\HH$; the reflected extension is bounded on the lower half-plane too, hence $F$ is a bounded entire function. By Liouville, $F$ is constant.
-
+$\overline{T(z)}=-i\frac{1+\bar z}{1-\bar z}$, so
+$$
+T^{-1}\qty(\overline{T(z)})=\frac{-i\frac{1+\bar z}{1-\bar z}-i}{-i\frac{1+\bar z}{1-\bar z}+i}=\frac{-i(1+\bar z)-i(1-\bar z)}{-i(1+\bar z)+i(1-\bar z)}=\frac{-2i}{-2i\bar z}=\frac1{\bar z}.
+$$
 :::
 
 :::
 
-::: pf-qed
+::: pf-step
+If $f$ is holomorphic on $\DD$, continuous on $\overline\DD$, and real on $S^1$, then $f$ is constant.
 
-Step [](#s4){.pf-ref}: $F$ constant ⟹ $f$ constant. All three parts done: step [](#s1){.pf-ref} states the principle, steps [](#s2){.pf-ref} and [](#s3){.pf-ref} handle the Cayley transform computation, step [](#s4){.pf-ref} proves constancy.
+::: pf-proof
+Let $F\coloneqq f\circ T^{-1}$.
+By step [](#cayley){.pf-ref}, $F$ is holomorphic on $\HH$, continuous on $\HH\cup\RR$, and real on $\RR$.
+By step [](#reflection){.pf-ref} with $\Omega=\HH$ and $I=\RR$, $F$ extends to an entire function with $F(\bar w)=\overline{F(w)}$.
+Since $f$ is bounded on the compact set $\overline\DD$, $F$ is bounded on $\HH\cup\RR$, and by the reflection identity on all of $\CC$.
+By Liouville's theorem $F$ is constant, so $f=F\circ T$ is constant on $\DD$, and by continuity on $\overline\DD$.
+:::
 
 :::
 
