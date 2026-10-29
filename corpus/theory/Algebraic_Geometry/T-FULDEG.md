@@ -25,9 +25,9 @@ prompts:
 ::: {.theorem}
 Let $P \subseteq M_\RR$ be a full-dimensional very ample lattice polytope of dimension $n$, embedded by the lattice points of $P$.
 Then
-\[
+$$
 \deg X_P = n! \cdot \vol(P) ,
-\]
+$$
 the volume normalised so that the standard simplex has volume $1/n!$.
 Equivalently $\deg X_P = D_P^{\,n}$, the top self-intersection of the ample divisor.
 :::
