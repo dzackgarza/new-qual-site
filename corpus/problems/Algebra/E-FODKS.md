@@ -30,12 +30,27 @@ $$
 :::
 
 ::: {.solution}
-Since $a\in(b)$, there is $r\in R$ such that
-$$
-a=rb.
-$$
-Because $a$ is irreducible, either $r$ or $b$ is a unit. But $(b)$ is proper, so $b$ is not a unit. Hence $r$ is a unit, and therefore $a$ and $b$ are associates. Thus
-$$
-(a)=(b)=I.
-$$
+
+::: pf
+
+::: {.pf-step #associates}
+$a$ and $b$ are associates.
+
+::: pf-proof
+Since $a\in(b)$, there is $r\in R$ with $a=rb$. Because $a$ is irreducible, $r$ or $b$ is a unit. Since $(b)$ is proper, $b$ is not a unit, so $r$ is a unit.
+:::
+
+:::
+
+::: pf-step
+$(a)=(b)=I$.
+
+::: pf-proof
+Associates generate the same ideal, so step [](#associates){.pf-ref} gives $(a)=(b)$, and $(b)=I$ by hypothesis.
+:::
+
+:::
+
+:::
+
 :::
