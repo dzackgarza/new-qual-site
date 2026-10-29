@@ -84,7 +84,7 @@ By Cauchy's integral formula for the first derivative, the integral is $2\pi i\,
 ::: pf-proof
 Both poles $\pm i$ lie inside $\abs z=2$. Applying Cauchy's integral formula to $(z^2-1)/(z+i)$ at $i$ and to $(z^2-1)/(z-i)$ at $-i$ gives
 $$
-2\pi i\,\frac{-2}{2i}+2\pi i\,\frac{-2}{-2i}=-2\pi i+2\pi i=0.
+2\pi i\,\frac{-2}{2i}+2\pi i\,\frac{-2}{-2i}=-2\pi+2\pi=0.
 $$
 :::
 
