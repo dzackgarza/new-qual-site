@@ -23,8 +23,8 @@ order: 50
 
 ## Solutions
 
-- [Chapter 12 solutions](attachments/Ch12Sltns.pdf)
+- [Solution outlines for chapter 12 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch12Sltns.pdf)
 
-- [Chapter 13 solutions](attachments/Ch13Sltns.pdf)
+- [Solution outlines for chapter 13 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch13Sltns.pdf)
 
-- [Chapter 14 solutions](attachments/Ch14Sltns.pdf)
+- [Solution outlines for chapter 14 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch14Sltns.pdf)
