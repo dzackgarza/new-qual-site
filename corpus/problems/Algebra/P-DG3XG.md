@@ -25,9 +25,9 @@ audit:
 Let $K \subset L \subset M$ be a tower of finite degree field extensions.
 In each of the following parts, either prove the assertion or give a counterexample (with justification).
 
-1. If $M/K$ is Galois, then $L/K$ is Galois
+(1) If $M/K$ is Galois, then $L/K$ is Galois.
 
-2. If $M/K$ is Galois, then $M/L$ is Galois.
+(2) If $M/K$ is Galois, then $M/L$ is Galois.
 :::
 
 ::: {.solution}
@@ -41,9 +41,9 @@ The assertion “if $M/K$ is Galois, then $L/K$ is Galois” is false.
 ::: pf-proof
 
 Take
-\[
+$$
 K=\QQ,\qquad L=\QQ(\sqrt[3]{2}),\qquad M=\QQ(\sqrt[3]{2},\zeta_3),
-\]
+$$
 where $\zeta_3$ is a primitive cube root of unity. Then $M$ is the splitting field of $x^3-2$ over $\QQ$, so $M/\QQ$ is finite Galois.
 
 However, $L/\QQ$ is not normal: $x^3-2$ is irreducible over $\QQ$, has a root $\sqrt[3]{2}\in L$, and its other two roots are nonreal, hence not in the real field $L$. Thus $L/\QQ$ is not Galois.
