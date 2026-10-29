@@ -25,7 +25,7 @@ sections:
       - ref: P-SXM4Q
       - ref: P-DUUFY
       - ref: P-L7SEG
-      - ref: P-DUVZD
+      - ref: P-AMH-ALG-SG16-13
       - ref: P-VGFA7
       - ref: P-4VJTF
       - ref: P-PSAET
@@ -70,7 +70,7 @@ sections:
       - ref: P-4ZDQQ
       # Algebra Week 4 Rings
       - ref: P-3PTP5
-      - ref: P-HWBXR
+      - ref: P-AMH-ALG-SG16-28
   - slug: real-analysis
     title: Real analysis
     parent: GUIDE-WORKSHOPS
@@ -128,7 +128,7 @@ sections:
       - ref: P-JAEYU
       - ref: P-FNJCM
       - ref: P-WXTVX
-      - ref: P-NNHWB
+      - ref: P-TOPOLOGY-PHD-F08-05
       - ref: P-OTXNQ
       - ref: P-NJNNL
       - ref: P-SG462
