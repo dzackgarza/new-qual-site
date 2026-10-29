@@ -24,57 +24,62 @@ audit:
 ::: {.problem}
 Let $f$ be holomorphic in a neighborhood of $\overline{D_r(z_0)}$. Show that for any $s < r$, there exists a constant $c > 0$ such that
 $$
-\|f\|_{(\infty, s)} \leq c \|f\|_{(1, r)}
-,$$ 
+\norm{f}_{(\infty, s)} \leq c \norm{f}_{(1, r)},
+$$
 where
-$\displaystyle \|f\|_{(\infty, s)} = \sup_{z \in D_s(z_0)}|f(z)|$
-and $\displaystyle \|f\|_{(1, r)} = \iint_{D_r(z_0)} |f(z)|\,dx\,dy$.
+$\displaystyle \norm{f}_{(\infty, s)} = \sup_{z \in D_s(z_0)}\abs{f(z)}$
+and $\displaystyle \norm{f}_{(1, r)} = \iint_{D_r(z_0)} \abs{f(z)}\,dx\,dy$.
 :::
 
 ::: {.solution}
-Let
-\[
-\delta=r-s>0.
-\]
-Fix $z\in D_s(z_0)$. Since $|z-z_0|<s$, the closed disk $\overline{D_\delta(z)}$ is contained in $D_r(z_0)$.
+Put $\delta=r-s>0$.
 
 ::: pf
 
-::: pf-step
-For every $0<\rho<\delta$, the mean-value formula gives
-\[
-f(z)=\frac1{2\pi}\int_0^{2\pi}f(z+\rho e^{i\theta})\,d\theta.
-\]
-Multiply by $2\rho$ and integrate from $0$ to $\delta$. Using polar coordinates,
-\[
-\delta^2 f(z)
-=\frac1\pi\iint_{D_\delta(z)}f(w)\,dA(w).
-\]
-Thus
-\[
+::: {.pf-step #area-mean}
+For every $z\in D_s(z_0)$,
+$$
 f(z)=\frac1{\pi\delta^2}\iint_{D_\delta(z)}f(w)\,dA(w).
-\]
+$$
+
+::: pf-proof
+Since $\abs{z-z_0}<s$, the closed disk $\overline{D_\delta(z)}$ is contained in $D_r(z_0)$, where $f$ is holomorphic.
+For every $0<\rho<\delta$, the mean value property gives
+$$
+f(z)=\frac1{2\pi}\int_0^{2\pi}f(z+\rho e^{i\theta})\,d\theta.
+$$
+Multiplying by $2\rho$, integrating over $\rho\in(0,\delta)$, and using polar coordinates about $z$ gives
+$$
+\delta^2 f(z)=\frac1\pi\iint_{D_\delta(z)}f(w)\,dA(w).
+$$
+:::
+
+:::
+
+::: {.pf-step #pointwise}
+For every $z\in D_s(z_0)$,
+$$
+\abs{f(z)}\le\frac1{\pi(r-s)^2}\norm{f}_{(1,r)}.
+$$
+
+::: pf-proof
+By step [](#area-mean){.pf-ref} and $D_\delta(z)\subseteq D_r(z_0)$,
+$$
+\abs{f(z)}
+\le\frac1{\pi\delta^2}\iint_{D_\delta(z)}\abs{f(w)}\,dA(w)
+\le\frac1{\pi\delta^2}\norm{f}_{(1,r)}.
+$$
+:::
+
 :::
 
 ::: pf-step
-Taking absolute values,
-\[
-|f(z)|
-\le\frac1{\pi\delta^2}\iint_{D_\delta(z)}|f(w)|\,dA(w)
-\le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
-\]
+The inequality holds with $\boxed{c=\frac1{\pi(r-s)^2}}$.
+
+::: pf-proof
+Take the supremum over $z\in D_s(z_0)$ in step [](#pointwise){.pf-ref}.
 :::
 
-::: pf-step
-Taking the supremum over $z\in D_s(z_0)$ yields
-\[
-\|f\|_{(\infty,s)}
-\le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
-\]
-Hence one may take
-\[
-c=\frac1{\pi(r-s)^2}.
-\]
 :::
 
 :::
