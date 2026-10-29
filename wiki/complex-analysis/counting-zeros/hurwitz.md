@@ -8,7 +8,7 @@ topics:
 
 # Hurwitz's theorem
 
-[[D-G42SR]]
+[[D-AIQG3]]
 
 [[D-OHFRH]]
 
