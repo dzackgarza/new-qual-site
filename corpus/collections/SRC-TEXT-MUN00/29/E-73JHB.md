@@ -22,7 +22,8 @@ Show that the one-point compactification of $\ZZ_+$ is homeomorphic with the sub
 :::
 
 ::: {.solution}
-**Goal:** Prove that the one-point compactification $\ZZ_+^* = \ZZ_+ \cup \{\infty\}$ of the discrete space $\ZZ_+$ is homeomorphic to the subspace $K = \{0\} \cup \{1/n \mid n \in \ZZ_+\} \subset \RR$.
+
+Write $\ZZ_+^* = \ZZ_+ \cup \{\infty\}$ for the one-point compactification of the discrete space $\ZZ_+$, and $K = \{0\} \cup \{1/n \mid n \in \ZZ_+\} \subset \RR$.
 
 ::: pf
 
