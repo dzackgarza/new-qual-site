@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP17B
 kind: problem
-title: "Closures in L^1 of continuous compactly supported function classes"
+title: 'Closures in $L^1$ of classes of continuous compactly supported functions'
 classification:
   areas:
   - real-analysis

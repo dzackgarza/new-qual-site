@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP21E
 kind: problem
-title: "Intersection of L^2 balls with distance constraints"
+title: 'Intersection of two $L^2$ balls'
 classification:
   areas:
   - real-analysis

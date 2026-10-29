@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP09A
 kind: problem
-title: "True or false: everywhere-large L^1 functions, Fubini with counting measure, signed measure absolute continuity, products in measure, norm lower semicontinuity"
+title: 'True or false: everywhere-large $L^1$ functions, Fubini with counting measure, signed measure absolute continuity, products in measure, norm lower semicontinuity'
 classification:
   areas:
   - real-analysis

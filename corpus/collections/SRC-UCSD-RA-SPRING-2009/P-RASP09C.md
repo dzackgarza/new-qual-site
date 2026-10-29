@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP09C
 kind: problem
-title: "Measure convergence with L^p domination implies L^p convergence"
+title: 'Convergence in measure with $L^p$ domination implies $L^p$ convergence'
 classification:
   areas:
   - real-analysis

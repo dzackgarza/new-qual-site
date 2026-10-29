@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP04F
 kind: problem
-title: "Multiplication operators on L^2 and bounded convergence"
+title: 'Multiplication operators on $L^2$ and bounded convergence'
 classification:
   areas:
   - real-analysis

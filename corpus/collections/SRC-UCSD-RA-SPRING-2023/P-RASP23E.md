@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP23E
 kind: problem
-title: "Banach limit as weak* cluster point not from l^1"
+title: 'Banach limit as a weak* cluster point not from $\ell^1$'
 classification:
   areas:
   - real-analysis

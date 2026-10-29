@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP25C
 kind: problem
-title: "Weak convergence in C([0,1]) and non-reflexivity"
+title: 'Weak convergence in $C([0,1])$ and non-reflexivity'
 classification:
   areas:
   - real-analysis

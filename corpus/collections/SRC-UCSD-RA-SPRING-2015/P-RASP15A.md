@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP15A
 kind: problem
-title: "True/false on weak convergence, Fubini, L^p membership, and limit of integrals"
+title: 'True or false on weak convergence, Fubini, $L^p$ membership, and limits of integrals'
 classification:
   areas:
   - real-analysis

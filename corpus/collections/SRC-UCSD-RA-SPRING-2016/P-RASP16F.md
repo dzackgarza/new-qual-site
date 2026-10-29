@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP16F
 kind: problem
-title: "L^p boundedness plus L^1 convergence implies L^q convergence for q < p"
+title: '$L^p$ boundedness plus $L^1$ convergence implies $L^q$ convergence for $q<p$'
 classification:
   areas:
   - real-analysis

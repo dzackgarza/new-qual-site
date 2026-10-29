@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP22B
 kind: problem
-title: "Bounded sequence with vanishing local integrals against L^1 functions"
+title: 'Bounded sequence with vanishing local integrals against $L^1$ functions'
 classification:
   areas:
   - real-analysis

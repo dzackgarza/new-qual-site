@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP25A
 kind: problem
-title: "L^2 membership characterized by integral inequality with absolutely continuous function"
+title: '$L^2$ membership characterized by an integral inequality with an absolutely continuous function'
 classification:
   areas:
   - real-analysis

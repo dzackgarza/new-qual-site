@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP07F
 kind: problem
-title: "Distributions annihilated by x and x^2"
+title: 'Distributions annihilated by $x$ and $x^2$'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP15B
 kind: problem
-title: "L^p characterization via distribution function"
+title: '$L^p$ characterization via the distribution function'
 classification:
   areas:
   - real-analysis

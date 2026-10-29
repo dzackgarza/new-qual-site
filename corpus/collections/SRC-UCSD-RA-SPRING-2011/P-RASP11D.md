@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP11D
 kind: problem
-title: "Closedness of L^p balls and embeddings in L^1"
+title: 'Closedness of $L^p$ balls and embeddings in $L^1$'
 classification:
   areas:
   - real-analysis

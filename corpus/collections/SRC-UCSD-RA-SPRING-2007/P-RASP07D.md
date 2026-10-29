@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP07D
 kind: problem
-title: "Weak convergence in l^p implies boundedness and pointwise convergence"
+title: 'Weak convergence in $\ell^p$ implies boundedness and pointwise convergence'
 classification:
   areas:
   - real-analysis

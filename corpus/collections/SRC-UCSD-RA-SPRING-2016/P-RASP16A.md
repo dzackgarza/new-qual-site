@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP16A
 kind: problem
-title: "True or false: limsup measures, Lebesgue points, weak+norm convergence, Schwartz convolution, second derivative of |x|"
+title: 'True or false: limsup of sets, Lebesgue points, weak plus norm convergence, Schwartz convolution, second derivative of $\abs{x}$'
 classification:
   areas:
   - real-analysis

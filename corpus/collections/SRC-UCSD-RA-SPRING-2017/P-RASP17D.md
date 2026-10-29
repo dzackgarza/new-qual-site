@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP17D
 kind: problem
-title: "True or false: uniform boundedness variants and an L^2 membership criterion"
+title: 'True or false: uniform boundedness variants and an $L^2$ membership criterion'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP15G
 kind: problem
-title: "Weak but not strong convergence of sin(kx) in L^p"
+title: 'Weak but not strong convergence of $\sin(kx)$ in $L^p$'
 classification:
   areas:
   - real-analysis

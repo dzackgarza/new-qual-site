@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP18B
 kind: problem
-title: "L^1 convergence from a.e. convergence with uniform L^2 bound"
+title: '$L^1$ convergence from a.e. convergence with a uniform $L^2$ bound'
 classification:
   areas:
   - real-analysis

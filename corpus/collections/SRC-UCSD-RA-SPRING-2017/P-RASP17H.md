@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP17H
 kind: problem
-title: "Smoothness of the Fourier transform of a compactly supported L^2 function; Arzela-Ascoli extraction"
+title: 'Smoothness of the Fourier transform of a compactly supported $L^2$ function; Arzelà–Ascoli extraction'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP22E
 kind: problem
-title: "L^q subset of L^p implies finite measure"
+title: '$L^q\subseteq L^p$ implies finite measure'
 classification:
   areas:
   - real-analysis

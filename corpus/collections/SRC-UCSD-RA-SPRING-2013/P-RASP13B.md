@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP13B
 kind: problem
-title: "Tail measure of an L^1 function vanishes: t times mu{|f| >= t} tends to zero"
+title: '$t\,\mu\{\abs{f}\geq t\}\to0$ for $f\in L^1$'
 classification:
   areas:
   - real-analysis

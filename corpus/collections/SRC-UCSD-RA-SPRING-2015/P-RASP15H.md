@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP15H
 kind: problem
-title: "Distributional n-th derivative of f(|x|)"
+title: 'Distributional $n$-th derivative of $f(\abs{x})$'
 classification:
   areas:
   - real-analysis

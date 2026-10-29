@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP22G
 kind: problem
-title: "Distributional derivatives of f(|x|)"
+title: 'Distributional derivatives of $f(\abs{x})$'
 classification:
   areas:
   - real-analysis

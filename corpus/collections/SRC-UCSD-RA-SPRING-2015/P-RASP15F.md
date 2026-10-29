@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP15F
 kind: problem
-title: "Fourier transform from L^1 to C_0 is not onto"
+title: 'The Fourier transform from $L^1$ to $C_0$ is not onto'
 classification:
   areas:
   - real-analysis

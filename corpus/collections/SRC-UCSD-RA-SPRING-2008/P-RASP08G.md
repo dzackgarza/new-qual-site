@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP08G
 kind: problem
-title: "Distributional derivative of H(x) log|x|"
+title: 'Distributional derivative of $H(x)\log\abs{x}$'
 classification:
   areas:
   - real-analysis

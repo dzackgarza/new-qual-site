@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP24D
 kind: problem
-title: "Weak convergence in l^p characterized by pointwise convergence and boundedness"
+title: 'Weak convergence in $\ell^p$ characterized by pointwise convergence and boundedness'
 classification:
   areas:
   - real-analysis

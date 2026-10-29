@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP13G
 kind: problem
-title: "sin(kx) converges weakly but not strongly to zero in L^p"
+title: '$\sin(kx)$ converges weakly but not strongly to zero in $L^p$'
 classification:
   areas:
   - real-analysis

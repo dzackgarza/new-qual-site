@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP18H
 kind: problem
-title: "Banach limit extension and non-representability by l^1"
+title: 'Banach limit extension and non-representability by $\ell^1$'
 classification:
   areas:
   - real-analysis

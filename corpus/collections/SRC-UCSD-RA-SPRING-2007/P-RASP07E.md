@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP07E
 kind: problem
-title: "Completeness of L^2"
+title: 'Completeness of $L^2$'
 classification:
   areas:
   - real-analysis

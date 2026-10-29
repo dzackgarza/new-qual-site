@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP22A
 kind: problem
-title: "True/false on integral inequalities, L^2 convergence, and Radon measures"
+title: 'True or false on integral inequalities, $L^2$ convergence, and Radon measures'
 classification:
   areas:
   - real-analysis

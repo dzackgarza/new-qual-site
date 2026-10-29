@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP20E
 kind: problem
-title: "Absolute convergence of Fourier series of C^1 function"
+title: 'Absolute convergence of the Fourier series of a $C^1$ function'
 classification:
   areas:
   - real-analysis

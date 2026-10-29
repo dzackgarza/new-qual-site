@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP26A
 kind: problem
-title: "Equi-integrability and strong L^1 convergence"
+title: 'Equi-integrability and strong $L^1$ convergence'
 classification:
   areas:
   - real-analysis

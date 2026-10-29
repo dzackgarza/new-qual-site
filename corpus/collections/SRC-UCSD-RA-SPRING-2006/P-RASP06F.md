@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP06F
 kind: problem
-title: "Sobolev-type embedding via weighted L^p norms"
+title: 'Sobolev-type embedding via weighted $L^p$ norms'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP11B
 kind: problem
-title: "Dyadic averaging operators converge to the identity in L^1"
+title: 'Dyadic averaging operators converge to the identity in $L^1$'
 classification:
   areas:
   - real-analysis

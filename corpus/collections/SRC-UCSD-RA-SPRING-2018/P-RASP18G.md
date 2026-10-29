@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP18G
 kind: problem
-title: "Separability of C(X) for compact metric spaces"
+title: 'Separability of $C(X)$ for compact metric spaces'
 classification:
   areas:
   - real-analysis

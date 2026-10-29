@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP17E
 kind: problem
-title: "Dilations of R^2 act isometrically on L^2 and continuously as t approaches 1"
+title: 'Dilations of $\RR^2$ act isometrically on $L^2$ and continuously as $t\to1$'
 classification:
   areas:
   - real-analysis

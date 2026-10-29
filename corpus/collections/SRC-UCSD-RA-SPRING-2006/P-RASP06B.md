@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP06B
 kind: problem
-title: "Absolutely continuous functions with L^1 convergent derivatives"
+title: 'Absolutely continuous functions with $L^1$-convergent derivatives'
 classification:
   areas:
   - real-analysis

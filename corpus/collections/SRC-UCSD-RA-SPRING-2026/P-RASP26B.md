@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP26B
 kind: problem
-title: "Metric on L^1 via antiderivatives and compactness via Arzela-Ascoli"
+title: 'Metric on $L^1$ via antiderivatives and compactness via Arzelà–Ascoli'
 classification:
   areas:
   - real-analysis

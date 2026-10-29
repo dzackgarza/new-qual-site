@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP20C
 kind: problem
-title: "Unit ball of L^2 is closed and has empty interior in L^1"
+title: 'The unit ball of $L^2$ is closed and has empty interior in $L^1$'
 classification:
   areas:
   - real-analysis

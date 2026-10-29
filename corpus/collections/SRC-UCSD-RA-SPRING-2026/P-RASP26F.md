@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP26F
 kind: problem
-title: "Compactness of uniformly tight L^2 sequences via Fourier concentration"
+title: 'Compactness of uniformly tight $L^2$ sequences via Fourier concentration'
 classification:
   areas:
   - real-analysis

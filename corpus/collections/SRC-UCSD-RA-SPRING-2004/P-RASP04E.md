@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP04E
 kind: problem
-title: "Uniform boundedness from weak sequential boundedness in L^p"
+title: 'Uniform boundedness from weak sequential convergence in $L^3$'
 classification:
   areas:
   - real-analysis

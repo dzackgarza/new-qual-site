@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP24F
 kind: problem
-title: "Fourier uncertainty principle for compactly supported L^2 functions"
+title: 'Fourier uncertainty principle for $L^2$ functions supported on a set of finite measure'
 classification:
   areas:
   - real-analysis

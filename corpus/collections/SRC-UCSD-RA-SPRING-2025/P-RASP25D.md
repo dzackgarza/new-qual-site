@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP25D
 kind: problem
-title: "Closed convex set in L^1 with no best approximation"
+title: 'Closed convex set in $L^1$ with no best approximation'
 classification:
   areas:
   - real-analysis

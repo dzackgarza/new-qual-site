@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP09D
 kind: problem
-title: "Principal value of 1/(x1 + x2) defines a distribution on R^2"
+title: 'Principal value of $\frac{x_1+x_2}{\abs{x}^3}$ defines a distribution on $\RR^2$'
 classification:
   areas:
   - real-analysis
