@@ -36,7 +36,6 @@ source:
   - id: E-LYXHE
   - id: E-M3CGY
   - id: E-MFCCS
-  - id: E-OMK54
   - id: E-QCYEM
   - id: E-QSNCL
   - id: E-SA3HI

@@ -1371,7 +1371,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/E-M3CGY.md` | `3209822cb495c62b215d5ef879f6151da2e2acdd` | `3209822cb495c62b215d5ef879f6151da2e2acdd` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-MFCCS.md` | `d6411091c97316a2e378f7b97fd75aaf6926ed35` | `d6411091c97316a2e378f7b97fd75aaf6926ed35` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-O742O.md` | `ec918bfa7dfa471a34e2b477952f02915cffcfe7` | `ec918bfa7dfa471a34e2b477952f02915cffcfe7` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/E-OMK54.md` | `3d4270c82854881279e38d803359431af64d0a6b` | `26ff450888ead864838130035e8479be4ce49a6a` | Read; removed internal commentary about card contents and solution coverage |
 | [x] | `corpus/problems/Real_Analysis/E-PUNDP.md` | `457f9762cbf95e6da158737fab0465e5703c2dc9` | `457f9762cbf95e6da158737fab0465e5703c2dc9` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-QCYEM.md` | `13ed504485c1fda1f67084b6647930f4a36a570e` | `13ed504485c1fda1f67084b6647930f4a36a570e` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-QSNCL.md` | `e0f3444cbe609b3efe11429c9508d2271dcf0aaf` | `e0f3444cbe609b3efe11429c9508d2271dcf0aaf` | Read; retained |

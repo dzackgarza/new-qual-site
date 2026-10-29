@@ -60,7 +60,7 @@ $E \subseteq \RR^n$ is measurable if and only if $E = H \cup Z$ with $H$ an $F_\
 
 ::: pf-proof
 
-If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied to $E^c$, closed $F_k \subseteq E$ with $m(G_k \setminus E) < 1/k$ and $m(E \setminus F_k) < 1/k$. Then $H = \bigcup_k F_k$ and $V = \bigcap_k G_k$ satisfy $m(E \setminus H) = 0$ and $m(V \setminus E) = 0$. Conversely $F_\sigma$ and $G_\delta$ sets are Borel and null sets are measurable. See [[E-OMK54]].
+If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied to $E^c$, closed $F_k \subseteq E$ with $m(G_k \setminus E) < 1/k$ and $m(E \setminus F_k) < 1/k$. Then $H = \bigcup_k F_k$ and $V = \bigcap_k G_k$ satisfy $m(E \setminus H) = 0$ and $m(V \setminus E) = 0$. Conversely $F_\sigma$ and $G_\delta$ sets are Borel, null sets are Lebesgue measurable, and unions and differences of measurable sets are measurable.
 
 :::
 
@@ -96,7 +96,7 @@ $\int f(x+h)\,dx = \int f$ and $\int \delta^{-n}f(x/\delta)\,dx = \int f$ for $f
 
 ::: pf-proof
 
-For $f = \chi_E$ these are $m(E - h) = m(E)$ and $\delta^{-n}m(\delta E) = m(E)$. Linearity extends them to simple functions, the monotone convergence theorem to measurable $f \geq 0$, and the decomposition $f = f^+ - f^-$ to $L^1$. See [[E-OMK54]].
+For $f = \chi_E$ these are $m(E - h) = m(E)$ and $\delta^{-n}m(\delta E) = m(E)$. Linearity extends them to simple functions, the monotone convergence theorem to measurable $f \geq 0$, since $\tau_h s_k \nearrow \tau_h f$ and $(s_k)_\delta \nearrow f_\delta$ for simple $0 \le s_k \nearrow f$, and the decomposition $f = f^+ - f^-$ to $L^1$.
 
 :::
 
@@ -108,7 +108,7 @@ For $f \in L^1(\RR^n)$, $\lim_{h\to 0}\int|f(x+h) - f(x)|\,dx = 0$.
 
 ::: pf-proof
 
-For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, which tends to $0$. Finite linear combinations of such indicators are dense in $L^1$, and by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \eps$, $\int|f(x+h) - f(x)|\,dx < 2\eps + \int|s(x+h) - s(x)|\,dx$. See [[E-OMK54]].
+For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, and $I \triangle (I-h)$ lies within distance $|h|$ of $\partial I$, so it tends to $0$. Finite linear combinations of such indicators are dense in $L^1$: simple functions are dense, and for $m(E) < \infty$ outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, a finite union $A$ of the almost disjoint closed cubes composing $U$ has $m(U \setminus A) < \eps$, and then $\|\chi_E - \chi_A\|_1 < 2\eps$. Also by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \eps$, $\int|f(x+h) - f(x)|\,dx < 2\eps + \int|s(x+h) - s(x)|\,dx$.
 
 :::
 
@@ -132,7 +132,7 @@ If $\mu(X) < \infty$, then $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
 
 ::: pf-proof
 
-If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. See [[P-RVL3K]].
+If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. So $M \le \liminf_p \|f\|_p \le \limsup_p \|f\|_p \le \|f\|_\infty$ for every such $M$, which gives the limit, also when $\|f\|_\infty = \infty$. See [[P-RVL3K]].
 
 :::
 
