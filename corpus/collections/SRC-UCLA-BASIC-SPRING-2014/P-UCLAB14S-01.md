@@ -14,6 +14,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: 'Checked against Problem 1 of the retained UCLA Basic Examination, Spring 2014. Part (b) is false as printed: over the reals, $t^4+1=(t^2+\sqrt2\,t+1)(t^2-\sqrt2\,t+1)$ with coprime nonconstant factors, so an operator with minimal polynomial $t^4+1$ has nonzero proper invariant primary summands. The problem statement is preserved rather than silently corrected.'
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (b) of the exam asked to show that A has no nontrivial invariant subspace, which is false because t^4+1 factors over R into two coprime quadratics; part (b) now asks to prove or disprove that assertion.
 ---
 
 ::: {.problem}
@@ -24,12 +28,12 @@ Problem 1.
 t^4+1.
 \]
 
-(b) Show that the usual real linear map determined by $v\mapsto Av$ has no nontrivial invariant subspace.
+(b) Prove or disprove: the usual real linear map determined by $v\mapsto Av$ has no nontrivial invariant subspace.
 :::
 
 ::: {.solution}
 
-Part (a) has a straightforward example. Part (b) is false as printed.
+Part (a) has a straightforward example. The assertion in part (b) is false.
 
 ::: pf
 
@@ -363,7 +367,7 @@ Together with step [](#s1-9){.pf-ref},
 
 ::: {.pf-step #s1-11}
 
-Therefore part (b) is false as printed.
+Therefore the assertion in part (b) is false.
 
 
 ::: pf-proof
@@ -386,7 +390,7 @@ Thus the assertion that the associated real linear map has no nontrivial invaria
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers part (a).
-Step [](#s1-11){.pf-ref} gives the mathematically correct disposition of part (b), namely a counterexample to the source assertion.
+Step [](#s1-11){.pf-ref} disproves the assertion in part (b).
 
 :::
 
