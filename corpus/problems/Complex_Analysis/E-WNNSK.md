@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WNNSK
 kind: problem
-title: Working with conjugates
+title: Real part of $\frac{z+2}{z-1}$
 classification:
   areas:
   - complex-analysis
@@ -18,14 +18,30 @@ Find $\Re\qty{z+2\over z-1}$.
 :::
 
 ::: {.solution}
-\[
-{z+2\over z-1}\cdot{\bar{z-1} \over \bar{z-1}}
-&= {(z+2)\bar{z-1} \over \abs{z-1}^2} \\
-&= {((z-1) + 3)\bar{z-1} \over \abs{z-1}^2} \\
-&= {\abs{z-1}^2 + 3\bar{z} -3 \over \abs{z-1}^2} \\
-&= {(x-1)^2 + y^2 + 3(x-iy) - 3 \over (x-1)^2 + y^2} \\
-&= {(x-1)^2 + 3x - 3 + y^2\over (x-1)^2 + y^2} + i{-3y\over (x-1)^2 + y^2} \\
-&= {(x-1)(x+2) + y^2\over (x-1)^2 + y^2} + i{-3y\over (x-1)^2 + y^2} 
-.\]
+Write $z = x+iy$ with $z\neq1$.
+
+::: pf
+
+::: {.pf-step #conj}
+$\frac{z+2}{z-1} = 1 + \frac{3(\bar z - 1)}{\abs{z-1}^2}$.
+
+::: pf-proof
+$\frac{z+2}{z-1} = 1 + \frac{3}{z-1}$, and $\frac{1}{z-1} = \frac{\overline{z-1}}{\abs{z-1}^2}$.
+:::
+
+:::
+
+::: pf-step
+$$
+\Re\qty{z+2\over z-1} = \boxed{\frac{(x-1)(x+2) + y^2}{(x-1)^2 + y^2}}.
+$$
+
+::: pf-proof
+By step [](#conj){.pf-ref} the real part is $1 + \frac{3(x-1)}{(x-1)^2+y^2} = \frac{(x-1)^2 + 3(x-1) + y^2}{(x-1)^2+y^2}$, and $(x-1)^2+3(x-1) = (x-1)(x+2)$.
+:::
+
+:::
+
+:::
 
 :::
