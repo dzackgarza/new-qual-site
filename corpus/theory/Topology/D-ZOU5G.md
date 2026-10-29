@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.definition}
-A \dfn{CW complex} is a topological space $X$ together with subspaces $X^0\subseteq X^1\subseteq\cdots$ constructed as follows.
+A \dfn{CW complex} is a topological space $X$ together with subspaces $X^0\subseteq X^1\subseteq\cdots$ constructed as follows [@Hat02].
 
 1. $X^0$ is a discrete space; its points are the $0$-cells.
 
@@ -24,8 +24,4 @@ $$
 with the quotient topology.
 
 3. Either $X = X^n$ for some $n$, or $X = \Union_{n\geq 0} X^n$ with the weak topology: a subset $A\subseteq X$ is closed if and only if $A \intersect X^n$ is closed in $X^n$ for every $n$.
-:::
-
-::: {.concept}
-[@Hat02].
 :::
