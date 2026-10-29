@@ -16,16 +16,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source part (a) continues an earlier item ("if additionally ... then this converges is almost everywhere") and never states the kernel, the function or the limit; the statement now declares them. The source reads "Show that is f is bounded"; "is" is corrected to "if".
 ---
 
 ::: {.exercise}
-- Show that if additionally $\abs{\phi(x)} \leq c(1 + \abs{x})^{-n-\eps}$ for some $c,\eps>0$, then this converges is almost everywhere.
+Let $\phi \in L^1(\RR^n)$ with $\int \phi = 1$, and put $\phi_t(x) \coloneqq t^{-n}\phi(x/t)$ for $t > 0$.
 
-- Show that is $f$ is bounded and uniformly continuous and $\phi_t$ is an approximation to the identity, then $f\ast \phi_t$ uniformly converges to $f$.
+(a) Show that if $f \in L^1(\RR^n)$ and additionally $\abs{\phi(x)} \leq c(1 + \abs{x})^{-n-\eps}$ for some $c,\eps>0$, then $f \ast \phi_t \to f$ almost everywhere as $t \to 0$.
+
+(b) Show that if $f$ is bounded and uniformly continuous, then $f\ast \phi_t$ uniformly converges to $f$ as $t \to 0$.
 :::
 
 ::: {.solution}
-Let $\phi \in L^1(\RR^n)$ with $\int \phi = 1$, and put $\phi_t(x) \coloneqq t^{-n}\phi(x/t)$ for $t > 0$, so that $\int \phi_t = 1$ and $\norm{\phi_t}_1 = \norm{\phi}_1$. Part (a) concerns $f \in L^1(\RR^n)$ and the convergence $f \ast \phi_t \to f$ as $t \to 0$. Let $Mf$ denote the Hardy--Littlewood maximal function of $f$.
+Then $\int \phi_t = 1$ and $\norm{\phi_t}_1 = \norm{\phi}_1$. Let $Mf$ denote the Hardy--Littlewood maximal function of $f$.
 
 (a)
 
@@ -44,7 +50,7 @@ $\Psi(x) \coloneqq c(1+\abs x)^{-n-\eps}$ is radial, radially decreasing, and in
 For $g \in C_c(\RR^n)$, $g \ast \phi_t \to g$ uniformly as $t \to 0$.
 
 ::: pf-proof
-$g$ is bounded and uniformly continuous, so this is part (b) below.
+$g$ is bounded and uniformly continuous, so this is part (b).
 :::
 
 :::
@@ -58,7 +64,7 @@ $f\ast\phi_t - f = (f-g)\ast\phi_t - (f-g) + (g\ast\phi_t - g)$. The last term t
 
 :::
 
-::: {.pf-step #p1-4}
+::: pf-step
 $\Omega f = 0$ a.e.
 
 ::: pf-proof
@@ -69,10 +75,6 @@ $$
 Since $\eta$ is arbitrary, $m\theset{\Omega f > 2\alpha} = 0$ for every $\alpha > 0$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#p1-4){.pf-ref} says $f\ast\phi_t(x) \to f(x)$ for a.e. $x$.
 :::
 
 :::
