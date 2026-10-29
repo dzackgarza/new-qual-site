@@ -240,7 +240,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 **Owner decision, 2026-10-02: the current work is [Author solutions](#7-author-solutions).** Solutions no longer wait behind `copy-policy-repair` or `audited-deployment`; both are suspended.
 
-**Owner decision, 2026-10-29: `copy-policy-repair` is resumed** and runs as a workflow over the reopened population (`corpus/theory/{Algebra,Algebraic_Geometry,Complex_Analysis,Real_Analysis,Topology}`, `corpus/problems`, `wiki`). Problem cards under `corpus/collections/` are reader-facing too and remain in its population after that pass.
+**Owner decision, 2026-10-29: `copy-policy-repair` is resumed** and runs as a workflow over the reopened population (`corpus/theory/{Algebra,Algebraic_Geometry,Complex_Analysis,Real_Analysis,Topology}`, `corpus/problems`, `wiki`). Copy is reader-facing prose (wiki pages, remarks, site strings); problem statements and proofs are mathematics, not copy, and are outside this node.
 #### Steward checkpoint — 2026-09-26
 
 This section records the 2026-09-26 wind-down checkpoint. The workstream was subsequently resumed later on 2026-09-26 at `copy-policy-repair`; the closure facts and deployment evidence below remain valid.
@@ -342,7 +342,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
   **Reopened 2026-10-02** (closure `e2ef4ef04` reverted): the pass repaired 249 of 323 `corpus/theory/Algebraic_Geometry` cards but touched 15 of 410 `corpus/theory/Algebra`, none of `corpus/theory/Complex_Analysis` (241), `corpus/theory/Real_Analysis` (312), `corpus/theory/Topology` (278) or `corpus/problems` (1641), and 40 of 322 `wiki` pages. At the observed violation density those areas were not read; an earlier handoff's "read algebra, analysis, topology" referred to wiki pages, not the corpus cards. The remaining population is those areas.
 
   **First pass done 2026-10-29** over the reopened population (3,540 files; every file read). Duplicate leads are settled under CARD-04; open leads are in queues/suspected-duplicates.md. P-O2J6S and P-ALVYE are marked unrecovered (no source has the question). Silverman, Simon and Hörmander in wiki/complex-analysis/resources/books-notes.md stay plain text until the books are in Zotero.
-  Suspected duplicates are listed in [queues/suspected-duplicates.md](queues/suspected-duplicates.md). Problem cards under `corpus/collections/` are not yet read.
+  Suspected duplicates are listed in [queues/suspected-duplicates.md](queues/suspected-duplicates.md).
 
 - **`audited-deployment`**. **Needs:** `unsolved-contribution`, `slogans`, `copy-policy-repair`. Push so `pages.yml` deploys, then audit the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds.
   Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies and checks their mathematics for incorrect facts, statements, and solutions; it is a reading of the site, not a lint or crawl count.
