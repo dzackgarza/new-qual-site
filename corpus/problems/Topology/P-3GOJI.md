@@ -21,36 +21,24 @@ audit:
 ---
 
 ::: {.problem}
-(1) Show that for $X$ an arbitrary topological space, the one-point (Alexandroff) compactification $X^* = X \cup \{\infty\}$ is compact.
+(a) Show that for $X$ an arbitrary topological space, the one-point (Alexandroff) compactification $X^* = X \cup \{\infty\}$ is compact.
 
-(2) Prove that every path-connected topological space is connected.
+(b) Prove that every path-connected topological space is connected.
 :::
 
 ::: {.solution}
+
+In the Alexandroff topology on $X^*$, the open sets not containing $\infty$ are the open subsets of $X$, and the open sets containing $\infty$ are the sets $\{\infty\}\cup(X\setminus K)$ with $K\subseteq X$ compact and closed.
 
 ::: pf
 
 ::: pf-step
 
-Let $X^*=X\cup\{\infty\}$ carry the Alexandroff topology: the open sets not containing $\infty$ are the open subsets of $X$, while a neighborhood of $\infty$ has the form
-$$
-\{\infty\}\cup(X\setminus K)
-$$
-with $K\subseteq X$ compact and closed.
-
-:::
-
-::: pf-step
-
-The space $X^*$ is compact.
+(a) $X^*$ is compact.
 
 ::: pf-proof
 
-Let $\mathcal U$ be an open cover of $X^*$. Choose $U_\infty\in\mathcal U$ containing $\infty$. Then for some compact closed $K\subseteq X$,
-$$
-\{\infty\}\cup(X\setminus K)\subseteq U_\infty.
-$$
-The remaining points lie in $K$. The sets $U\cap X$, for $U\in\mathcal U$, cover $K$, so compactness of $K$ gives finitely many of them covering $K$. Together with $U_\infty$ they form a finite subcover of $X^*$.
+Let $\mathcal U$ be an open cover of $X^*$ and choose $U_\infty\in\mathcal U$ containing $\infty$. Then $U_\infty=\{\infty\}\cup(X\setminus K)$ for some compact closed $K\subseteq X$. The sets $U\cap X$, for $U\in\mathcal U$, are open in $X$ and cover $K$, so finitely many of them cover $K$. Together with $U_\infty$ the corresponding members of $\mathcal U$ form a finite subcover of $X^*$.
 
 :::
 
@@ -58,11 +46,11 @@ The remaining points lie in $K$. The sets $U\cap X$, for $U\in\mathcal U$, cover
 
 ::: pf-step
 
-Every path-connected space is connected.
+(b) Every path-connected space $X$ is connected.
 
 ::: pf-proof
 
-Fix $x_0\in X$. For each $x\in X$, choose a path from $x_0$ to $x$. Each path image is connected, all such images contain $x_0$, and their union is $X$. A union of connected subsets with a common point is connected.
+The empty space is connected. Otherwise fix $x_0\in X$ and, for each $x\in X$, a path $\gamma_x$ from $x_0$ to $x$. Each image $\gamma_x([0,1])$ is connected as a continuous image of $[0,1]$, all of them contain $x_0$, and their union is $X$. A union of connected subsets with a common point is connected.
 
 :::
 
