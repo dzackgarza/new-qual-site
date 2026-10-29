@@ -57,6 +57,6 @@ The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real 
 ## Exercises
 
 [[E-P2PEF]]
-[[E-I6W47]]
+[[P-JHUFA11ANB]]
 [[E-BEYZ5]]
 [[E-B4ZSQ]]

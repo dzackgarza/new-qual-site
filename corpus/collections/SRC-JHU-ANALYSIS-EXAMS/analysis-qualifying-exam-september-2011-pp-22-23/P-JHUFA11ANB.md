@@ -100,3 +100,7 @@ Step [](#s2){.pf-ref} proves that $h$ is constant.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+A bounded harmonic function on $\RR^2$ is bounded below, so it is constant by the same proof.
+:::
