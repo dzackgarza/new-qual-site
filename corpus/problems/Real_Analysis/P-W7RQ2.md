@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W7RQ2
 kind: problem
-title: $(1+|\xi|^2)^{-\epsilon}$ is the Fourier transform of an $L^1$ function
+title: $(1+|\xi|^2)^{-\varepsilon}$ is the Fourier transform of an $L^1$ function
 classification:
   areas:
   - real-analysis
@@ -18,31 +18,37 @@ audit:
 ---
 
 ::: {.problem}
-Show that for each \( \epsilon>0 \) the following function is the Fourier transform of an $L^1(\RR^n)$ function:
-\[
-F(\xi) \definedas \qty{1 \over 1 + \abs{\xi}^2}^{\epsilon}
-.\]
 
-*Hint: show that*
+Show that for each $\varepsilon>0$ the following function is the Fourier transform of an $L^1(\RR^n)$ function:
+$$
+F(\xi) \definedas \qty{1 \over 1 + \abs{\xi}^2}^{\varepsilon}.
+$$
 
-\[
-K_\delta(x) &\definedas \delta^{-n/2} e^{-\pi \abs{x}^2 \over \delta} \\
-f(x) &\definedas \int_0^{\infty } K_{\delta}(x) e^{-\pi \delta} \delta^{\epsilon - 1} \,d \delta \\
-\Gamma(s) &\definedas \int_0^{\infty } e^{-t} t^{s-1} \dt \\
-\implies \fourier{f}(\xi) &= \int_0^{\infty } e^{- \pi \delta \abs{\xi}^2} e^{ -\pi \delta} \delta^{\epsilon - 1}
-= \pi^{-s} \Gamma(\epsilon) F(\xi)
-.\]
 :::
+
+::: {.hint}
+
+Show that, with
+$$
+\begin{aligned}
+K_\delta(x) &\definedas \delta^{-n/2} e^{-\pi \abs{x}^2 / \delta}, \\
+f(x) &\definedas \int_0^{\infty } K_{\delta}(x) e^{-\pi \delta} \delta^{\varepsilon - 1} \,d \delta, \\
+\Gamma(s) &\definedas \int_0^{\infty } e^{-t} t^{s-1} \dt,
+\end{aligned}
+$$
+one has
+$$
+\fourier{f}(\xi) = \int_0^{\infty } e^{- \pi \delta \abs{\xi}^2} e^{ -\pi \delta} \delta^{\varepsilon - 1} \,d\delta
+= \pi^{-\varepsilon} \Gamma(\varepsilon) F(\xi).
+$$
+
+:::
+
 ::: {.solution}
-*Setup note.* Normalize the Fourier transform as $\fourier{f}(\xi) = \int f(x) e^{-2\pi i x\cdot\xi}\,dx$. The Gaussian $K_\delta(x) = \delta^{-n/2}e^{-\pi|x|^2/\delta}$ has Fourier transform $e^{-\pi\delta|\xi|^2}$, and $\int K_\delta = 1$ for every $\delta > 0$.
+
+Normalize the Fourier transform as $\fourier{f}(\xi) = \int f(x) e^{-2\pi i x\cdot\xi}\dx$. The Gaussian $K_\delta(x) = \delta^{-n/2}e^{-\pi\abs{x}^2/\delta}$ has Fourier transform $e^{-\pi\delta\abs{\xi}^2}$, and $\int K_\delta = 1$ for every $\delta > 0$. For $\eps > 0$ let $f(x) \definedas \int_0^\infty K_\delta(x)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta$.
 
 ::: pf
-
-::: pf-step
-
-Define $f(x) \definedas \int_0^\infty K_\delta(x)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta$ for $\eps > 0$.
-
-:::
 
 ::: {.pf-step #s2}
 
@@ -50,10 +56,10 @@ $f \in L^1(\RR^n)$.
 
 ::: pf-proof
 
-by Tonelli and $\int K_\delta = 1$,
-\[
-\int_{\RR^n}|f(x)|\,dx \le \int_0^\infty e^{-\pi\delta}\,\delta^{\eps-1} \Big(\int_{\RR^n} K_\delta(x)\,dx\Big)\,d\delta = \int_0^\infty e^{-\pi\delta}\delta^{\eps-1}\,d\delta = \frac{\Gamma(\eps)}{\pi^\eps} < \infty .
-\]
+By Tonelli's theorem and $\int K_\delta = 1$,
+$$
+\int_{\RR^n}\abs{f(x)}\dx = \int_0^\infty e^{-\pi\delta}\,\delta^{\eps-1} \Big(\int_{\RR^n} K_\delta(x)\dx\Big)\,d\delta = \int_0^\infty e^{-\pi\delta}\delta^{\eps-1}\,d\delta = \frac{\Gamma(\eps)}{\pi^\eps} < \infty .
+$$
 
 :::
 
@@ -61,14 +67,14 @@ by Tonelli and $\int K_\delta = 1$,
 
 ::: {.pf-step #s3}
 
-Compute $\fourier{f}$.
+$\fourier{f}(\xi) = \int_0^\infty e^{-\pi\delta(1+\abs{\xi}^2)}\,\delta^{\eps-1}\,d\delta$.
 
 ::: pf-proof
 
-since $f$ is an integral of $L^1$ functions, the Fourier transform passes under the integral (Fubini for the absolutely convergent double integral):
-\[
-\fourier{f}(\xi) = \int_0^\infty \fourier{K_\delta}(\xi)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta = \int_0^\infty e^{-\pi\delta|\xi|^2}\,e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta = \int_0^\infty e^{-\pi\delta(1+|\xi|^2)}\,\delta^{\eps-1}\,d\delta .
-\]
+The function $(x, \delta) \mapsto K_\delta(x) e^{-\pi\delta}\delta^{\eps-1}e^{-2\pi i x\cdot\xi}$ is absolutely integrable on $\RR^n \times (0,\infty)$ by step [](#s2){.pf-ref}, so Fubini's theorem gives
+$$
+\fourier{f}(\xi) = \int_0^\infty \fourier{K_\delta}(\xi)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta = \int_0^\infty e^{-\pi\delta\abs{\xi}^2}\,e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta .
+$$
 
 :::
 
@@ -76,32 +82,22 @@ since $f$ is an integral of $L^1$ functions, the Fourier transform passes under 
 
 ::: {.pf-step #s4}
 
-Evaluate the last integral.
+$\fourier{f}(\xi) = \pi^{-\eps}\,\Gamma(\eps)\,(1+\abs{\xi}^2)^{-\eps}$.
 
 ::: pf-proof
 
-substitute $t = \pi\delta(1+|\xi|^2)$:
-\[
-\int_0^\infty e^{-\pi\delta(1+|\xi|^2)}\,\delta^{\eps-1}\,d\delta = \Big(\pi(1+|\xi|^2)\Big)^{-\eps} \int_0^\infty e^{-t} t^{\eps-1}\,dt = \pi^{-\eps}\,\Gamma(\eps)\,\Big(1+|\xi|^2\Big)^{-\eps} .
-\]
+Substituting $t = \pi\delta(1+\abs{\xi}^2)$ in step [](#s3){.pf-ref} gives
+$$
+\int_0^\infty e^{-\pi\delta(1+\abs{\xi}^2)}\,\delta^{\eps-1}\,d\delta = \Big(\pi(1+\abs{\xi}^2)\Big)^{-\eps} \int_0^\infty e^{-t} t^{\eps-1}\dt = \pi^{-\eps}\,\Gamma(\eps)\,\Big(1+\abs{\xi}^2\Big)^{-\eps} .
+$$
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Conclude.
-
-::: pf-proof
-
-by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $\fourier{f}(\xi) = \pi^{-\eps}\Gamma(\eps)\,(1+|\xi|^2)^{-\eps}$, so
-\[
-F(\xi) = \Big(1+|\xi|^2\Big)^{-\eps} = \frac{\pi^\eps}{\Gamma(\eps)}\,\fourier{f}(\xi) = \fourier{\Big(\frac{\pi^\eps}{\Gamma(\eps)} f\Big)}(\xi),
-\]
-and $\frac{\pi^\eps}{\Gamma(\eps)}f \in L^1$ by step [](#s2){.pf-ref}. Hence $F$ is the Fourier transform of an $L^1$ function.
-
-:::
+By step [](#s4){.pf-ref}, $F = \fourier{g}$ for $g = \frac{\pi^\eps}{\Gamma(\eps)} f$, and $g \in L^1$ by step [](#s2){.pf-ref}.
 
 :::
 
