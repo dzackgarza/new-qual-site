@@ -26,7 +26,7 @@ Let $Y=\Spec R$ and let
 $$
 X_i=\Spec(R/J_i)\hookrightarrow Y
 $$
-be closed subschemes. Their scheme-theoretic intersection from [[D-SCHFIBRES]] has coordinate ring
+be closed subschemes. Their [[D-SCHFIBRES|scheme-theoretic intersection]] has coordinate ring
 $$
 (R/J_1)\tensor_R(R/J_2)
 \cong
