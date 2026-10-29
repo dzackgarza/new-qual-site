@@ -319,6 +319,10 @@ class PandocServer:
         ]
         return self._convert(requests)
 
+    def write_plain(self, documents: list[str]) -> list[PandocResult]:
+        requests = [{"text": document, "from": "json", "to": "plain", "standalone": False, "wrap": "none"} for document in documents]
+        return self._convert(requests)
+
     def _convert(self, requests: list[dict[str, object]]) -> list[PandocResult]:
         results: list[PandocResult] = []
         for offset in range(0, len(requests), BATCH_SIZE):

@@ -74,7 +74,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-fancy-lists`**. **Needs:** none. A proof step opening with `(a)` splits into a
     bare number and a list. **Acceptance:** such steps render as one numbered claim. **Closed.**
   - **`ad-smart-titles`**. **Needs:** none. `--` and `$…$` reach titles, prompts, link
-    text and `<title>`. **Acceptance:** dashes typeset; tab titles carry no TeX.
+    text and `<title>`. **Acceptance:** dashes typeset; tab titles carry no TeX. **Closed.**
   - **`ad-bare-id-links`**. **Needs:** none. 148 wikilinks display a bare card id.
     **Acceptance:** link text is the card title or authored text.
   - **`ad-collection-pages`**. **Needs:** none. Drop cap splits the count; "1 problems.";

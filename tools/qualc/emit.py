@@ -32,7 +32,7 @@ import yaml
 
 from .index import load_areas
 from .lamport import LamportError, apply_lamport
-from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
+from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json, typeset_dashes
 from .pandoc_batch import (
     PARALLEL_WORKERS,
     PandocBatchError,
@@ -306,6 +306,11 @@ def _compile_tikzcd_block(tex_source: str) -> str:
     )
     if result.returncode != 0:
         raise RuntimeError(f"tikzcd compilation failed (exit {result.returncode}): {result.stderr.strip()[:300]}")
+    # A figure LaTeX cannot compile leaves the filter's input untouched, the HTML
+    # writer drops the raw TeX, and pandoc still exits 0: the diagram vanished
+    # from every page without a word. The filter's stderr names the TeX error.
+    if "<svg" not in result.stdout:
+        raise RuntimeError(f"tikzcd compilation produced no SVG:\n{result.stderr.strip()[-3000:]}\n--- source ---\n{tex_source}")
     return result.stdout
 
 
@@ -1266,6 +1271,7 @@ def write_json_pages(
     link_targets: dict[str, Path],
     assets: AssetCatalog,
     random_problem_topics: dict[str, str],
+    preamble: str,
 ) -> None:
     """Convert every tag page independently through one persistent server."""
     documents = [
@@ -1286,6 +1292,7 @@ def write_json_pages(
         html_results,
         "tag-page HTML write",
     )
+    _set_tab_titles(pandoc, [meta for _, meta, _, _ in items], preamble)
     for (path, meta, _, role), body, html_body in zip(
         items,
         bodies,
@@ -1424,6 +1431,7 @@ def write_pages(
     link_targets: dict[str, Path],
     assets: AssetCatalog,
     random_problem_topics: dict[str, str],
+    preamble: str,
 ) -> None:
     """Front matter is machine-read data; the body is prose.
 
@@ -1440,6 +1448,7 @@ def write_pages(
         pandoc.write_html(_html_asts(documents)),
         "page HTML write",
     )
+    _set_tab_titles(pandoc, [meta for (meta, _), _, _ in items], preamble)
     for ((meta, _), path, navigation), body, html_body in zip(
         items,
         bodies,
@@ -1720,14 +1729,14 @@ def _publication_navigation(
     links = (
         NavigationLink(
             key=manifest.id,
-            title=manifest.title,
+            title=typeset_dashes(manifest.title),
             target=PageTarget(_publication_root_route(manifest)),
             parent=RootParent(),
         ),
         *(
             NavigationLink(
                 key=section.slug,
-                title=section.title,
+                title=typeset_dashes(section.title),
                 target=PageTarget(_publication_section_route(manifest, section)),
                 parent=NodeParent(manifest.id),
             )
@@ -1751,13 +1760,13 @@ def _publication_navigation(
     # says where the page is, and the sidebar says what it depends on.
     trail: tuple[Crumb, ...] = (
         Crumb(title="Guides", route=Path("guides.html")),
-        Crumb(title=manifest.title, route=_publication_root_route(manifest)),
+        Crumb(title=typeset_dashes(manifest.title), route=_publication_root_route(manifest)),
     )
     if current_key != manifest.id:
         section = next(item for item in manifest.sections if item.slug == current_key)
         trail = (
             *trail,
-            Crumb(title=section.title, route=_publication_section_route(manifest, section)),
+            Crumb(title=typeset_dashes(section.title), route=_publication_section_route(manifest, section)),
         )
     return PublicationNavigation(
         links=links,
@@ -1781,7 +1790,7 @@ def publication_root_page(
     manifest: PublicationManifest,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    return {"title": manifest.title}, [
+    return {"title": typeset_dashes(manifest.title)}, [
         pf.Para(
             *_inlines(manifest.lede, inline_cache),
         ),
@@ -1865,7 +1874,7 @@ def publication_section_page(
         blocks.append(_transclude(_manifest_card(con, item.ref), counts))
     if section.topics:
         blocks.append(_problem_browse_link_block(manifest.area, section.topics))
-    return {"title": section.title}, blocks
+    return {"title": typeset_dashes(section.title)}, blocks
 
 
 def card_source_collections(
@@ -2269,6 +2278,47 @@ QUARTO_YML = {
 }
 
 
+def _macro_arity(tex_name: str, definition: str) -> int:
+    parameters = {int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)}
+    if parameters and parameters != set(range(1, max(parameters) + 1)):
+        raise ValueError(f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}")
+    return max(parameters, default=0)
+
+
+def tex_preamble(macros: dict[str, str]) -> str:
+    """The corpus macros as LaTeX definitions, for pandoc's `latex_macros` to expand."""
+    return "\n".join(
+        f"\\newcommand{{{name}}}[{arity}]{{{definition}}}" if (arity := _macro_arity(name, definition)) else f"\\newcommand{{{name}}}{{{definition}}}"
+        for name, definition in macros.items()
+    )
+
+
+def _tab_titles(pandoc: PandocServer, titles: list[str], preamble: str) -> list[str]:
+    """Page titles as plain text for the browser tab, which typesets no TeX.
+
+    Pandoc's plain writer sets mathematics in Unicode where it can ($L^1$ is
+    L¹), once the corpus macros are expanded so `\\RR` reaches it as ℝ.
+    """
+    if not titles:
+        return []
+    # One document, so the preamble is read once rather than once per page.
+    [ast] = _successful_outputs(pandoc.read_markdown([preamble + "\n\n" + "\n\n".join(titles)], MARKDOWN), "tab-title read")
+    document = json.loads(ast)
+    blocks = [block for block in document["blocks"] if block["t"] != "RawBlock"]
+    if len(blocks) != len(titles):
+        raise ValueError(f"{len(titles)} page titles read as {len(blocks)} blocks")
+    asts = [json.dumps({**document, "blocks": [block]}) for block in blocks]
+    # Mathematics texmath cannot set in Unicode stays as its TeX source in the tab.
+    unconvertible = (*KNOWN_PANDOC_WARNINGS, "Could not convert TeX math")
+    return [" ".join(text.split()) for text in _successful_outputs(pandoc.write_plain(asts), "tab-title write", unconvertible)]
+
+
+def _set_tab_titles(pandoc: PandocServer, metas: list[dict], preamble: str) -> None:
+    titled = [meta for meta in metas if isinstance(meta.get("title"), str)]
+    for meta, tab_title in zip(titled, _tab_titles(pandoc, [meta["title"] for meta in titled], preamble), strict=True):
+        meta["tab_title"] = tab_title
+
+
 def mathjax_header(macros: dict) -> str:
     mathjax_macros: dict[str, object] = {}
     for tex_name, definition in macros.items():
@@ -2281,15 +2331,8 @@ def mathjax_header(macros: dict) -> str:
         name = tex_name[1:]
         if name in mathjax_macros:
             raise ValueError(f"duplicate MathJax macro name: {name}")
-        parameters = {int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)}
-        if parameters:
-            argument_count = max(parameters)
-            expected = set(range(1, argument_count + 1))
-            if parameters != expected:
-                raise ValueError(f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}")
-            mathjax_macros[name] = [definition, argument_count]
-        else:
-            mathjax_macros[name] = definition
+        argument_count = _macro_arity(tex_name, definition)
+        mathjax_macros[name] = [definition, argument_count] if argument_count else definition
     # The corpus writes multi-line display maths as `\[ a &= b \\ &= c \]`, with bare
     # alignment characters and no environment: 831 blocks across 458 cards. The author's
     # own LaTeX pipeline treats `\[...\]` as aligned, but MathJax's is plain display
@@ -2393,6 +2436,7 @@ def project(
     site_root.mkdir()
     con = sqlite3.connect(db)
     mathjax = mathjax_header(macros)
+    preamble = tex_preamble(macros)
 
     (out / "_quarto.yml").write_text(yaml.safe_dump(QUARTO_YML, sort_keys=False))
     (out / "_macros.html").write_text(mathjax)
@@ -2495,6 +2539,7 @@ def project(
         link_targets,
         assets,
         area_names,
+        preamble,
     )
 
     pages: list[PageItem] = []
@@ -2648,6 +2693,7 @@ Random practice sets are drawn in the [problem browser](problems.html).
         link_targets,
         assets,
         area_names,
+        preamble,
     )
     if wiki_pages:
         cards = {row["id"]: row for row in _rows(con, "select * from cards")}
@@ -2677,5 +2723,6 @@ Random practice sets are drawn in the [problem browser](problems.html).
                 link_targets,
                 assets,
                 area_names,
+                preamble,
             )
     con.close()

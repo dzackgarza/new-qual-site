@@ -13,7 +13,7 @@ import panflute as pf
 from . import emit, index
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LamportError, apply_lamport
-from .model import ParsedCard, discover, load_citations, parse_cards_with, to_json
+from .model import ParsedCard, discover, load_citations, parse_cards_with, to_json, typeset_dashes
 from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
@@ -38,7 +38,7 @@ def load(
     card_routes = {}
     card_titles = {}
     for item in parsed:
-        card_titles[item.card.id] = item.card.title
+        card_titles[item.card.id] = typeset_dashes(item.card.title)
         card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
     if wiki_pages:
         assets = build_asset_catalog(root / "assets")

@@ -782,6 +782,20 @@ def _figure_targets(element: pf.Figure) -> list[str]:
     return urls
 
 
+_MATH_OR_DASH = re.compile(r"(\$[^$]*\$)|---|--")
+
+
+def typeset_dashes(text: str) -> str:
+    """A plain-text field with its dashes typeset, as pandoc's `smart` extension does.
+
+    Titles and prompts are written in Markdown, `Heine--Borel`, but several
+    sinks show them as text rather than through the Markdown reader: the page
+    heading, the tab title, navigation, link text. Pandoc's rule is the one
+    applied: `---` is an em dash and `--` an en dash, outside mathematics.
+    """
+    return _MATH_OR_DASH.sub(lambda m: m.group(1) or ("—" if m.group(0) == "---" else "–"), text)
+
+
 _ROMAN = ((1000, "m"), (900, "cm"), (500, "d"), (400, "cd"), (100, "c"), (90, "xc"), (50, "l"), (40, "xl"), (10, "x"), (9, "ix"), (5, "v"), (4, "iv"), (1, "i"))
 
 

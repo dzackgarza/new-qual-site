@@ -25,6 +25,7 @@ from .model import (
     TermOnly,
     TextbookSource,
     YearOnly,
+    typeset_dashes,
 )
 from .wiki import slug
 
@@ -232,7 +233,7 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
             # Prompts are only ever read back whole and in order, and the side
             # tables carry no position column -- ordering them would mean adding
             # one, which is more invention than a `json.loads` on the way out.
-            (c.id, c.kind, c.title, getattr(c, "slogan", None), json.dumps(c.prompts), c.review, p.source_path, p.ast, card_route(c)),
+            (c.id, c.kind, typeset_dashes(c.title), getattr(c, "slogan", None), json.dumps([typeset_dashes(prompt) for prompt in c.prompts]), c.review, p.source_path, p.ast, card_route(c)),
         )
         for axis, terms in (
             ("area", c.classification.areas),
