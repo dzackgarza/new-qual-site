@@ -53,3 +53,11 @@ def test_the_tab_title_is_plain_text(page: str) -> None:
     assert title.endswith(" · Qual Corpus")
     assert "$" not in title
     assert "\\" not in title
+
+
+def test_the_home_page_title_is_the_site_name(tmp_path_factory: pytest.TempPathFactory) -> None:
+    work = fixture_repo(tmp_path_factory.mktemp("home"))
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    home = (work / "build" / "quarto" / "_site" / "index.html").read_text()
+    assert "<title>Qual Corpus</title>" in home

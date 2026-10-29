@@ -790,6 +790,7 @@ def page_document(
     # The tab cannot typeset TeX; emit supplies the title set as plain text.
     raw_tab_title = meta.get("tab_title", title)
     tab_title = raw_tab_title if isinstance(raw_tab_title, str) else title
+    document_title = tab_title if tab_title == "Qual Corpus" else f"{tab_title} · Qual Corpus"
     raw_subtitle = meta.get("subtitle")
     subtitle = raw_subtitle if isinstance(raw_subtitle, str) else ""
     subtitle_html = f'<p class="page-subtitle" data-pagefind-ignore>{escape(subtitle)}</p>' if subtitle else ""
@@ -857,7 +858,7 @@ def page_document(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="qualc">
   {base_html}
-  <title>{escape(tab_title)} · Qual Corpus</title>
+  <title>{escape(document_title)}</title>
   <link rel="icon" href="data:,">
   {asset_html}
   {mathjax_header}
