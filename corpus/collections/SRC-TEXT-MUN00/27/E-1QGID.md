@@ -30,7 +30,6 @@ Recall that $\RR_K$ denotes $\RR$ in the $K$-topology.
 :::
 
 ::: {.solution}
-**Goal:** Analyze compactness of $[0, 1]$, connectedness of $\RR_K$, and non-path-connectedness of $\RR_K$.
 
 ::: pf
 
