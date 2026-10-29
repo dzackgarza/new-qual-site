@@ -15,14 +15,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source left X, mu and E_k undeclared; the statement now declares a measure space and a sequence of measurable sets.
 ---
 
 ::: {.problem}
-Show that if $\sum \mu(E_k) < \infty$ then almost every $x\in X$ is in at most finitely many $E_k$.
+
+Let $(X, \mathcal{M}, \mu)$ be a measure space and $(E_k)_{k\ge1}$ a sequence of measurable sets. Show that if $\sum \mu(E_k) < \infty$ then almost every $x\in X$ is in at most finitely many $E_k$.
+
 :::
 
 ::: {.solution}
-Let $(X, \mu)$ be a measure space and $E_k$ measurable. The set of points lying in infinitely many $E_k$ is $\limsup_k E_k = \bigcap_{n\ge1}\bigcup_{k\ge n} E_k$, which is measurable.
+
+The set of points lying in infinitely many $E_k$ is $\limsup_k E_k = \bigcap_{n\ge1}\bigcup_{k\ge n} E_k$, which is measurable.
 
 ::: pf
 
