@@ -35,8 +35,6 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove the existence of a star-fine open refinement $\mathcal{B}$ of an open covering $\mathcal{A}$ (satisfying $B \cap B' \neq \varnothing \implies B \cup B' \subseteq A$ for some $A \in \mathcal{A}$) when $X$ is metrizable or compact Hausdorff.
-
 ::: pf
 
 ::: pf-step
