@@ -19,53 +19,62 @@ Let $G$ have order $pqr$ with primes $p<q<r$. Show that $G$ has a normal Sylow s
 :::
 
 ::: {.solution}
-Let $n_r$ be the number of Sylow $r$-subgroups. Sylow gives
-\[
-n_r\mid pq,
-\qquad
-n_r\equiv1\pmod r.
-\]
-Since $p,q<r$, if $n_r\ne1$ then necessarily
-\[
-n_r=pq.
-\]
-If $n_r=1$, the Sylow $r$-subgroup is normal and we are done.
+Let $n_q$ and $n_r$ be the numbers of Sylow $q$- and Sylow $r$-subgroups of $G$.
 
-Assume therefore that $n_r=pq$. Distinct Sylow $r$-subgroups have trivial intersection, so they contribute
-\[
-pq(r-1)
-\]
-nonidentity elements. Thus only
-\[
-pqr-pq(r-1)=pq
-\]
-elements remain.
+::: pf
 
-Now let $n_q$ be the number of Sylow $q$-subgroups. If $n_q>1$, then
-\[
-n_q\equiv1\pmod q,
-\qquad
-n_q\mid pr.
-\]
-Because $p<q$, this forces
-\[
-n_q\ge r.
-\]
-Distinct Sylow $q$-subgroups also intersect trivially, so they would contribute at least
-\[
-r(q-1)
-\]
-nonidentity elements among the $pq-1$ nonidentity elements not already lying in Sylow $r$-subgroups. But
-\[
-r(q-1)>q(q-1)>pq-1
-\]
-because $r>q>p$. This is impossible.
+::: {.pf-step #nr}
 
-Hence
-\[
-n_q=1,
-\]
-so the Sylow $q$-subgroup is normal.
+If $n_r\ne 1$, then $n_r=pq$.
 
-Thus every group of order $pqr$ has a nontrivial proper normal Sylow subgroup and is therefore not simple.
+::: pf-proof
+
+By the Sylow theorems, $n_r\mid pq$ and $n_r\equiv1\pmod r$. The divisors of $pq$ are $1,p,q,pq$, and $p,q$ are less than $r$ and greater than $1$, so neither is $\equiv 1\pmod r$.
+
+:::
+
+:::
+
+::: {.pf-step #nq}
+
+If $n_q\ne 1$, then $n_q\ge r$.
+
+::: pf-proof
+
+By the Sylow theorems, $n_q\mid pr$ and $n_q\equiv1\pmod q$. Since $1<p<q$, $p\not\equiv1\pmod q$, so $n_q\in\{r,pr\}$.
+
+:::
+
+:::
+
+::: {.pf-step #count}
+
+$n_q=1$ or $n_r=1$.
+
+::: pf-proof
+
+Suppose $n_q\ne1$ and $n_r\ne1$. Distinct subgroups of prime order intersect trivially, and an element of order $r$ does not have order $q$. By step [](#nr){.pf-ref}, the Sylow $r$-subgroups contain $pq(r-1)$ elements of order $r$, and by step [](#nq){.pf-ref} the Sylow $q$-subgroups contain at least $r(q-1)$ elements of order $q$. Since $r>q$ and $q-1\ge p$,
+$$
+r(q-1)>q(q-1)\ge pq>pq-1,
+$$
+so these elements number more than $pq(r-1)+pq-1=pqr-1$, the number of nonidentity elements of $G$. This is a contradiction.
+
+:::
+
+:::
+
+::: pf-step
+
+$G$ has a normal Sylow subgroup, and $G$ is not simple.
+
+::: pf-proof
+
+By step [](#count){.pf-ref}, a Sylow $q$- or Sylow $r$-subgroup is the unique one of its order, hence normal. It has prime order, so it is nontrivial and proper in $G$, and $G$ is not simple.
+
+:::
+
+:::
+
+:::
+
 :::
