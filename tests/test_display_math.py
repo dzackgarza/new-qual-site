@@ -22,6 +22,7 @@ from pathlib import Path
 
 import panflute as pf
 import pytest
+from qualc.emit import compile_tikzcd_block
 from qualc.model import parse_card
 from qualc.pandoc_batch import pandoc_executable
 
@@ -93,3 +94,10 @@ def test_raw_tex_does_not_swallow_the_closing_fence(card: Path) -> None:
     assert [k for k, _ in sections] == ["problem", "remark"], sections
     problem_text = next(text for kind, text in sections if kind == "problem")
     assert "must stay outside it" not in problem_text, problem_text
+
+
+def test_a_commutative_diagram_is_a_block_not_a_paragraph() -> None:
+    """The diagram's `<div>` must not sit in a `<p>`, where browsers split it apart."""
+    html = compile_tikzcd_block("\\begin{tikzcd} A \\arrow[r] & B \\end{tikzcd}")
+    assert html.startswith("<div")
+    assert "<p>" not in html

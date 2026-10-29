@@ -293,7 +293,13 @@ def compile_tikzcd_block(tex_source: str) -> str:
     # from every page without a word. The filter's stderr names the TeX error.
     if "<svg" not in result.stdout:
         raise RuntimeError(f"tikzcd compilation produced no SVG:\n{result.stderr.strip()[-3000:]}\n--- source ---\n{tex_source}")
-    return result.stdout
+    # The filter returns the diagram as an inline inside a paragraph, and a
+    # `<div>` inside `<p>` is invalid HTML that browsers split apart. The
+    # diagram is a block, so it is emitted without the paragraph.
+    html = result.stdout.strip()
+    if not (html.startswith("<p>") and html.endswith("</p>")):
+        raise RuntimeError(f"tikzcd filter output is not one paragraph:\n{html[:300]}")
+    return html.removeprefix("<p>").removesuffix("</p>")
 
 
 def _compile_tikzcd(
