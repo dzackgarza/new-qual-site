@@ -119,7 +119,7 @@ So $\varphi([a,1))=[0,1)$, and $\varphi$ maps $\DD\setminus[a,1)$ onto $\DD\setm
 
 - The branch of $z\mapsto z^{1/2}$ with argument in $(0,\pi)$ maps $\DD\setminus[0,1)$ onto the upper half-disk $\DD\intersect\HH$.
 
-- The map $z\mapsto -{1\over2}\qty{z+z^{-1}}$ sends $\DD\intersect\HH$ onto $\HH$, as in [[E-FCTXH]].
+- The map $z\mapsto -{1\over2}\qty{z+z^{-1}}$ sends $\DD\intersect\HH$ onto $\HH$, as in [[P-UGCNF]].
 :::
 
 :::
