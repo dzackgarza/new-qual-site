@@ -20,35 +20,45 @@ Show that
 $$
 z_{1}+z_{2}+\cdots+z_{n} \neq 0, \quad 1 / z_{1}+1 / z_{2}+\cdots+1 / z_{n} \neq 0
 $$
+:::
 
-> Hint: Consider a special situation first.
+::: {.hint}
+Consider a special situation first.
 :::
 
 ::: {.solution}
-Rotate the plane so that the given line becomes the imaginary axis and all the
-$z_k$ lie in the open right half-plane. Multiplication by a unimodular constant
-does not affect whether either displayed sum is zero, so it is enough to treat
-this case. Then
-\[
-\Re z_k>0
-\qquad(k=1,\dots,n).
-\]
-Hence
-\[
-\Re\left(\sum_{k=1}^n z_k\right)
-=\sum_{k=1}^n\Re z_k>0,
-\]
-and therefore $\sum z_k\ne0$.
+Choose $\lambda$ with $\abs\lambda=1$ such that multiplication by $\lambda$ carries the line onto the imaginary axis and the $z_k$ into the open right half-plane. Replacing $z_k$ by $\lambda z_k$ multiplies the first sum by $\lambda$ and the second by $\lambda^{-1}$, so we may assume $\Re z_k>0$ for every $k$.
 
-Moreover,
-\[
-\Re\frac1{z_k}
-=\Re\frac{\overline{z_k}}{|z_k|^2}
-=\frac{\Re z_k}{|z_k|^2}>0.
-\]
-Thus
-\[
-\Re\left(\sum_{k=1}^n\frac1{z_k}\right)>0,
-\]
-so the sum of reciprocals is also nonzero.
+::: pf
+
+::: pf-step
+
+$z_1+\cdots+z_n\neq0$.
+
+::: pf-proof
+
+$\Re\left(\sum_{k=1}^n z_k\right)=\sum_{k=1}^n\Re z_k>0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$1/z_1+\cdots+1/z_n\neq0$.
+
+::: pf-proof
+
+For each $k$,
+$$
+\Re\frac1{z_k}=\Re\frac{\overline{z_k}}{\abs{z_k}^2}=\frac{\Re z_k}{\abs{z_k}^2}>0,
+$$
+so $\Re\left(\sum_{k=1}^n 1/z_k\right)>0$.
+
+:::
+
+:::
+
+:::
+
 :::
