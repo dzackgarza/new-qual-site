@@ -22,7 +22,8 @@ Find a presentation for the fundamental group of $P^2 \# T$.
 :::
 
 ::: {.solution}
-**Goal:** Compute a presentation for the fundamental group of the connected sum $P^2 \# T$ of the real projective plane $P^2$ and the 2-torus $T = T^2$.
+
+Here $P^2$ is the real projective plane and $T = T^2$ is the torus.
 
 ::: pf
 
