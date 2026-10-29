@@ -25,26 +25,37 @@ If $R$ is a UFD, is $R[x]$ again a UFD?
 :::
 
 ::: {.solution}
-Yes. This is Gauss's lemma.
+Let $K=\Frac(R)$. For nonzero $f\in R[x]$ write $f=c(f)f_0$, where the content $c(f)\in R$ is a gcd of the coefficients, defined up to a unit, and $f_0$ is primitive.
 
-Let $K=\operatorname{Frac}(R)$. For a nonzero polynomial $f\in R[x]$, write
-\[
-f=c(f)f_0,
-\]
-where $c(f)\in R$ is the content (a gcd of the coefficients, defined up to a unit) and $f_0$ is primitive.
+::: pf
 
-Gauss's lemma says:
+::: {.pf-step #gauss}
+A product of primitive polynomials is primitive, and a primitive $f\in R[x]$ of positive degree is irreducible in $R[x]$ if and only if it is irreducible in $K[x]$.
 
-1. the product of primitive polynomials is primitive;
-2. if a primitive polynomial in $R[x]$ factors in $K[x]$, then it factors in $R[x]$ after multiplying the factors by units of $K$.
+::: pf-proof
+This is Gauss's lemma. For the first claim, if a prime $\pi$ of $R$ divided every coefficient of $gh$, then $gh=0$ in the domain $(R/\pi)[x]$, so $\pi$ divides $g$ or $h$. For the second, if $f=gh$ in $K[x]$, clearing denominators and taking contents with the first claim gives $f=u\,g_0h_0$ with $u\in R^\times$, a factorization in $R[x]$ of the same degrees.
+:::
 
-Since $K[x]$ is a PID and therefore a UFD, every primitive polynomial factors uniquely into irreducibles in $K[x]$. By Gauss's lemma, these factors may be chosen primitive in $R[x]$, and irreducibility over $K$ agrees with irreducibility for primitive polynomials over $R$.
+:::
 
-The content $c(f)$ factors uniquely in the UFD $R$. Combining the factorization of the content with the primitive factorization gives unique factorization in $R[x]$.
+::: {.pf-step #exist}
+Every nonzero nonunit of $R[x]$ is a product of irreducibles.
 
-Therefore
-\[
-R\text{ UFD}\quad\Longrightarrow\quad R[x]\text{ UFD}.
-\]
-By induction, the same holds for $R[x_1,\ldots,x_n]$.
+::: pf-proof
+Write $f=c(f)f_0$. The content factors into primes of $R$, which remain irreducible in $R[x]$. Factor $f_0$ in the PID $K[x]$ into irreducibles and, as in step [](#gauss){.pf-ref}, rescale the factors to primitive polynomials of $R[x]$ whose product is $f_0$ up to a unit of $R$; each is irreducible in $R[x]$ by step [](#gauss){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{Yes}}$: $R[x]$ is a UFD, and by induction so is $R[x_1,\ldots,x_n]$.
+
+::: pf-proof
+By step [](#exist){.pf-ref}, factorizations exist. The irreducibles of $R[x]$ are the primes of $R$ and the primitive polynomials irreducible in $K[x]$. Given two factorizations of $f$, the products of the constant factors both equal $c(f)$ up to a unit, by step [](#gauss){.pf-ref}, so they agree up to units and order because $R$ is a UFD. The products of the primitive factors both equal $f_0$ up to a unit of $R$, so they agree up to units of $K$ and order because $K[x]$ is a UFD; two primitive polynomials that differ by a unit of $K$ differ by a unit of $R$.
+:::
+
+:::
+
+:::
+
 :::
