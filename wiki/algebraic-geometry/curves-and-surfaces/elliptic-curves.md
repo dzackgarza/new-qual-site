@@ -49,7 +49,7 @@ For the Legendre family this coefficient is, up to a nonzero constant, the Hasse
 [[FE-CRVSSPRIMES]]
 
 For a curve over $\QQ$ with complex multiplication by an order in $K$, a prime of good reduction is supersingular exactly when it does not split in $K$ (Deuring), a set of density $\tfrac{1}{2}$.
-Without complex multiplication the supersingular primes have density $0$ and are infinite in number (Elkies).
+Without complex multiplication the supersingular primes have density $0$ (Serre) and are infinite in number (Elkies).
 For $y^2=x^3-x$, with complex multiplication by $\ZZ[i]$, the supersingular primes are the $p\equiv3\bmod4$, the odd primes inert in $\ZZ[i]$.
 
 ## Rational points
