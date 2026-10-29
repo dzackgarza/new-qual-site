@@ -31,32 +31,20 @@ $$
 \sup \left\{\left|\int_{0}^{1} f(x) e^{x} d x\right| \suchthat f \in L^{2}([0,1], m),~~ \|f\|_{2} \leq 1\right\}
 $$
 :::
+
 ::: {.solution}
+
+Let $e(x) \coloneqq e^x$ on $[0,1]$, so $\norm{e}_2^2 = \int_0^1 e^{2x}\,dx = \frac{e^2-1}{2}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #upper}
 
-Obtain the sharp upper bound.
+$\abs{\int_0^1 f(x)e^x\,dx} \le \norm{e}_2$ whenever $\norm{f}_2 \le 1$.
 
 ::: pf-proof
 
-For any $f\in L^2([0,1])$ with $\|f\|_2\le1$, Cauchy--Schwarz gives
-$$
-\left|\int_0^1 f(x)e^x\,dx\right|
-\le \|f\|_2\,\|e^x\|_2
-\le \|e^x\|_2.
-$$
-Now
-$$
-\|e^x\|_2^2
-=\int_0^1e^{2x}\,dx
-=\frac{e^2-1}{2},
-$$
-so the supremum is at most
-$$
-\sqrt{\frac{e^2-1}{2}}.
-$$
+By the Cauchy--Schwarz inequality, $\abs{\int_0^1 f(x)e^x\,dx} \le \norm{f}_2\norm{e}_2 \le \norm{e}_2$.
 
 :::
 
@@ -64,28 +52,11 @@ $$
 
 ::: pf-step
 
-Show that the bound is attained.
+The supremum is $\boxed{\sqrt{\frac{e^2-1}{2}}}$.
 
 ::: pf-proof
 
-Let
-$$
-f_0(x):=\frac{e^x}{\|e^x\|_2}.
-$$
-Then $\|f_0\|_2=1$ and
-$$
-\int_0^1 f_0(x)e^x\,dx
-=\frac{\|e^x\|_2^2}{\|e^x\|_2}
-=\|e^x\|_2.
-$$
-Therefore
-$$
-\boxed{
-\sup_{\|f\|_2\le1}
-\left|\int_0^1 f(x)e^x\,dx\right|
-=\sqrt{\frac{e^2-1}{2}}.}
-$$
-No form of the Riesz Representation Theorem is needed.
+The function $f_0 \coloneqq e/\norm{e}_2$ has $\norm{f_0}_2 = 1$ and $\int_0^1 f_0(x)e^x\,dx = \norm{e}_2^2/\norm{e}_2 = \norm{e}_2$, so the bound of step [](#upper){.pf-ref} is attained.
 
 :::
 
