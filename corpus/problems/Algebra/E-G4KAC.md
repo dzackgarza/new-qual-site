@@ -71,39 +71,15 @@ Since $J(R)$ is a two-sided ideal, $xr\in J(R)$. Apply step [](#unit-if-j-in-jac
 
 :::
 
-::: {.pf-step #converse-direction}
-Conversely, suppose $1-xr$ is a unit for every $r\in R$. Then $x\in J(R)$.
-
-::: pf-proof
-We first use the elementary identity: if $1-ab$ is a unit, then so is $1-ba$, with inverse
+::: pf-qed
+Conversely, suppose $1-xr$ is a unit for every $r\in R$; then $x\in J(R)$, which with step [](#forward-direction){.pf-ref} proves the equivalence.
+If $1-ab$ is a unit, then so is $1-ba$, with inverse
 $$
 (1-ba)^{-1}=1+b(1-ab)^{-1}a.
 $$
 Hence the hypothesis also gives that $1-rx$ is a unit for every $r\in R$.
-
-Let $M$ be a maximal left ideal. If $x\notin M$, then maximality gives
-$$
-M+Rx=R.
-$$
-Thus $1=m+rx$ for some $m\in M$ and $r\in R$, so
-$$
-m=1-rx.
-$$
-But $1-rx$ is a unit, impossible for an element of the proper left ideal $M$. Therefore $x\in M$ for every maximal left ideal $M$, hence $x\in J(R)$.
-:::
-
-:::
-
-::: pf-step
-Therefore
-$$
-x\in J(R)\iff 1-xR\subseteq R^\times.
-$$
-
-::: pf-proof
-Combine steps [](#forward-direction){.pf-ref} and [](#converse-direction){.pf-ref}.
-:::
-
+Let $M$ be a maximal left ideal. If $x\notin M$, then maximality gives $M+Rx=R$, so $1=m+rx$ for some $m\in M$ and $r\in R$, and $m=1-rx$ is a unit, which is impossible for an element of the proper left ideal $M$.
+Therefore $x\in M$ for every maximal left ideal $M$, hence $x\in J(R)$.
 :::
 
 :::
