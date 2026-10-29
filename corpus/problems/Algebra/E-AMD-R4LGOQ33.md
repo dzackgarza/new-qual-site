@@ -15,10 +15,14 @@ audit:
 - event: solution-written
   by: Claude Opus 5
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source read "Show that every p-group is solvable"; infinite p-groups need not be solvable, so the statement restricts to finite p-groups.'
 ---
 
 ::: {.exercise}
-Show that every $p\dash$group is solvable.
+Let $p$ be a prime. Show that every finite $p\dash$group is solvable.
 :::
 
 ::: {.hint}
@@ -26,12 +30,9 @@ Induct on $\abs G$: $Z(G)$ is nontrivial and abelian, $G/Z(G)$ is a smaller $p$-
 :::
 
 ::: {.solution}
+Let $G$ be a group of order $p^n$. We argue by induction on $n$.
 
 ::: pf
-
-::: pf-step
-Argue by induction on $\abs G = p^n$.
-:::
 
 ::: {.pf-step #base-case-order-le-p}
 Base case: if $n \leq 1$ then $G$ is trivial or of prime order, hence abelian, hence solvable.
@@ -67,7 +68,7 @@ Applying step [](#lifting-subnormal-series){.pf-ref} with $N = Z(G)$ makes $G$ s
 :::
 
 ::: pf-qed
-Steps [](#base-case-order-le-p){.pf-ref} and [](#inductive-step){.pf-ref} complete the induction, so every $p$-group is solvable.
+Steps [](#base-case-order-le-p){.pf-ref} and [](#inductive-step){.pf-ref} complete the induction, so every finite $p$-group is solvable.
 :::
 
 :::
