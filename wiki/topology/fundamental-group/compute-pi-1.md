@@ -27,14 +27,11 @@ If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces a
 
 ## Van Kampen's theorem
 
-::: {.theorem title="Van Kampen"}
-Let $X = U\union V$ with $U, V$ open, and $U, V, U\intersect V$ path connected, and let $x_0\in U\intersect V$.
-Then the maps induced by inclusion give
-$$
-\pi_1(X,x_0) \cong \pi_1(U,x_0) *_{\pi_1(U\intersect V,x_0)} \pi_1(V,x_0).
-$$
-If $U\intersect V$ is simply connected, this is the free product $\pi_1(U,x_0)*\pi_1(V,x_0)$.
-If $V$ is simply connected, this is $\pi_1(U,x_0)$ modulo the normal closure of the image of $\pi_1(U\intersect V,x_0)$.
+[[T-BTPU4]]
+
+::: {.remark title="Two special cases"}
+If $U_1\intersect U_2$ is simply connected, the amalgamated product is the free product $\pi_1(U_1,x_0)*\pi_1(U_2,x_0)$.
+If $U_2$ is simply connected, it is $\pi_1(U_1,x_0)$ modulo the normal closure of the image of $\pi_1(U_1\intersect U_2,x_0)$.
 
 :::
 
@@ -49,14 +46,11 @@ If $V$ is simply connected, this is $\pi_1(U,x_0)$ modulo the normal closure of 
 
 ## Covering spaces
 
-::: {.fact}
-Let $p\colon \tilde X \to X$ be a [[D-ANO2D|covering map]] with $\tilde X$ path connected and $X$ path connected and locally path connected.
+[[PR-R5EN3]]
 
-- $p_*$ is injective, and $p_*\pi_1(\tilde X)$ has index in $\pi_1(X)$ equal to the number of sheets.
-- If $\tilde X$ is simply connected, then $\pi_1(X)$ is isomorphic to the deck group.
-- If the cover is normal, then $\pi_1(X)/p_*\pi_1(\tilde X)$ is isomorphic to the deck group, which acts simply transitively on each fiber.
+[[PR-BHJGY]]
 
-:::
+[[T-F4PQY]]
 
 ::: {.example}
 The universal covers $\RR \to S^1$, $\RR^2\to T^2$, and $S^n \to \RP^n$ for $n\geq 2$ give $\pi_1(S^1)\cong\ZZ$, $\pi_1(T^2)\cong\ZZ^2$, and $\pi_1(\RP^n)\cong\ZZ/2$.
