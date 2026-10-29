@@ -5,24 +5,28 @@ kind: problem
 title: Maximal subgroups of $p$-groups are normal
 classification:
   areas:
-  - algebra
+    - algebra
   topics:
-  - p-Groups
-  - Normal Subgroups
-  - Subgroups
+    - p-Groups
+    - Normal Subgroups
+    - Subgroups
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: OpenAI
-  date: 2026-09-09
-- event: solution-reviewed
-  by: OpenAI
-  date: 2026-09-09
+  - event: solution-written
+    by: OpenAI
+    date: 2026-09-09
+  - event: solution-reviewed
+    by: OpenAI
+    date: 2026-09-09
+  - event: statement-corrected
+    by: Claude Opus 5.5
+    date: "2026-10-29"
+    note: Source prints "a $p$-group"; added "finite", since the normalizer condition and the claim fail for some infinite $p$-groups.
 ---
 
 ::: {.problem}
-Show that every maximal subgroup of a $p$-group is normal.
+Show that every maximal subgroup of a finite $p$-group is normal.
 :::
 
 ::: {.solution}
