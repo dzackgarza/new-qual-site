@@ -10,10 +10,15 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source states the result for any topological space X, which is false (the Warsaw circle is weakly contractible but not contractible). The statement now assumes X is a CW complex.
 ---
 
 ::: {.problem}
-For any topological space $X$, let $X$ be a path-connected space with $\pi_{\geq 2}(X) = 0$ and whose fundamental group is a free group on a set $S$.
+Let $X$ be a path-connected CW complex with $\pi_{\geq 2}(X) = 0$ and whose fundamental group is a free group on a set $S$.
 Show that there is a homotopy equivalence between a bouquet of circles, indexed by $S$, and $X$.
 :::
 
@@ -22,19 +27,10 @@ Show that there is a homotopy equivalence between a bouquet of circles, indexed 
 ::: pf
 
 ::: pf-step
-As printed for an arbitrary topological space, the statement is false.
+There is a map $f:\bigvee_{s\in S}S^1_s\to X$ sending the $s$-th circle to a loop representing the free generator $s$.
 
 ::: pf-proof
-Take the basis set $S=\varnothing$. Then the free group on $S$ is trivial and the bouquet indexed by $S$ is a point. The Warsaw circle $W$ is a standard path-connected weakly contractible but noncontractible compact space: all of its homotopy groups vanish, but $W$ is not homotopy equivalent to a point. Thus $W$ satisfies the printed homotopy-group hypotheses with $S=\varnothing$ but not the asserted conclusion. This is exactly the failure of Whitehead's theorem outside spaces of CW type.
-:::
-
-:::
-
-::: pf-step
-The intended statement is correct if $X$ is a CW complex (more generally, if $X$ has the homotopy type of a CW complex).
-
-::: pf-proof
-Assume first that $X$ is a CW complex. Let
+Let
 $$B=\bigvee_{s\in S}S^1_s.$$
 Choose for each free generator $s\in\pi_1(X)$ a based loop $\gamma_s:S^1\to X$, and let
 $$f:B\to X$$
@@ -56,11 +52,10 @@ is the isomorphism sending each standard free generator to the chosen generator 
 
 ::: pf-step
 Therefore
-$$\boxed{X\simeq\bigvee_{s\in S}S^1}$$
-under the CW-type hypothesis.
+$$\boxed{X\simeq\bigvee_{s\in S}S^1}.$$
 
 ::: pf-proof
-Both $B$ and $X$ are CW complexes, so Whitehead's theorem upgrades the weak homotopy equivalence $f$ from step [](#f-weak-equivalence){.pf-ref} to a homotopy equivalence. If $X$ merely has CW type, replace it by a homotopy-equivalent CW complex and apply the same argument.
+Both $B$ and $X$ are CW complexes, so Whitehead's theorem upgrades the weak homotopy equivalence $f$ from step [](#f-weak-equivalence){.pf-ref} to a homotopy equivalence.
 :::
 
 :::
