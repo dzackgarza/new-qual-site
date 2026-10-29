@@ -196,6 +196,9 @@ mathematical correction under its own node, not under copy policy.
     collections hold 70; P-2J6HK renders its remark before its hint and solution (`STYLE-07`);
     search excerpts cut inside math; collection-mode panes with no values show "No data
     available in table"; `?solution=unsolved` reads as an invalid filter when the count is zero.
+    Analysis round 3: `(a)` and `(i)` lists render as `(A)` and `(I)` because the `ol[type]`
+    selectors in `site/styles.css` lack the case-sensitive `s` flag; appearance comments
+    print a literal `--`; the P-4FH62 sub-part labels run on as one list.
     **Acceptance:** each corrected on the deployed pages.
   - **`ad3-algebra-content`**. **Needs:** none. Wrong mathematics: P-APAS18H invariant-ring
     generators omit $xy(x^2-y^2)$; P-APA22F(a) value; PR-OODAV slogan (an abstract
