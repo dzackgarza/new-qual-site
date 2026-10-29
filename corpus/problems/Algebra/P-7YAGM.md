@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7YAGM
 kind: problem
-title: $[\QQ(\zeta+\zeta^{-1}):\QQ]=\phi(n)/2$
+title: $[\QQ(\zeta+\zeta^{-1}):\QQ]=\varphi(n)/2$
 classification:
   areas:
   - algebra
@@ -23,16 +23,16 @@ audit:
 
 ::: {.problem}
 Let $n>2$ and let $\zeta$ be a primitive $n$th root of unity. Prove that
-\[
+$$
 [\QQ(\zeta+\zeta^{-1}):\QQ]=\frac{\varphi(n)}2.
-\]
+$$
 :::
 
 ::: {.solution}
 Set
-\[
+$$
 K=\QQ(\zeta),\qquad F=\QQ(\zeta+\zeta^{-1}).
-\]
+$$
 
 ::: pf
 
@@ -43,9 +43,9 @@ One has $[K:F]\le2$.
 ::: pf-proof
 
 The element $\zeta$ satisfies
-\[
+$$
 T^2-(\zeta+\zeta^{-1})T+1=0
-\]
+$$
 over $F$. Since $K=F(\zeta)$, this gives $[K:F]\le2$.
 
 :::
@@ -91,16 +91,16 @@ The minimal polynomial of a primitive $n$th root of unity over $\QQ$ is the cycl
 ::: pf-step
 
 Hence
-\[
+$$
 [F:\QQ]=\frac{\varphi(n)}2.
-\]
+$$
 
 ::: pf-proof
 
 The tower law gives
-\[
+$$
 \varphi(n)=[K:\QQ]=[K:F][F:\QQ]=2[F:\QQ].
-\]
+$$
 Dividing by $2$ gives the result.
 
 :::
