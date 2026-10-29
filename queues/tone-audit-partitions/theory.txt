@@ -301,7 +301,6 @@ corpus/theory/Real_Analysis/FD-AI6XN.md
 corpus/theory/Real_Analysis/FD-BA2WU.md
 corpus/theory/Real_Analysis/FD-BBR6Q.md
 corpus/theory/Real_Analysis/FD-D2QPH.md
-corpus/theory/Real_Analysis/FD-D4S7E.md
 corpus/theory/Real_Analysis/FD-D7HOH.md
 corpus/theory/Real_Analysis/FD-F3UU4.md
 corpus/theory/Real_Analysis/FD-HGESN.md

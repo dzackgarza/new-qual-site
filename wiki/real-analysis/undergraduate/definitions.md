@@ -96,7 +96,7 @@ For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for 
 
 [[D-MDJII]]
 
-[[FD-D4S7E]] [[FT-KXFMK]]
+[[FT-KXFMK]]
 
 [[FF-MXNIV]]
 

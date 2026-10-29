@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-MDJII
 kind: definition
 title: Lebesgue measurable sets
+prompts:
+- When is a set $E \subseteq \RR^n$ measurable?
 classification:
   areas:
   - real-analysis
