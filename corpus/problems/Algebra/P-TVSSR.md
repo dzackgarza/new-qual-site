@@ -22,29 +22,45 @@ audit:
 ---
 
 ::: {.problem}
-Compute the Galois group of the cubic polynomial $f(x) = x^3 + 6x + 3$ over $\mathbb{Q}$.
+Compute the Galois group of the cubic polynomial $f(x) = x^3 + 6x + 3$ over $\QQ$.
 :::
 
 ::: {.solution}
-The polynomial
-\[
-f(x)=x^3+6x+3
-\]
-is Eisenstein at $3$, hence irreducible over $\mathbb Q$. Therefore its Galois group is a transitive subgroup of $S_3$, so it is either $A_3$ or $S_3$.
 
-For a depressed cubic $x^3+px+q$, the discriminant is
-\[
-\Delta=-4p^3-27q^2.
-\]
-Here
-\[
-\Delta=-4\cdot6^3-27\cdot3^2=-1107=-3^3\cdot41,
-\]
-which is not a square in $\mathbb Q$.
+::: pf
 
-For an irreducible cubic, the Galois group lies in $A_3$ exactly when the discriminant is a square. Hence
-\[
-\boxed{\operatorname{Gal}(f/\mathbb Q)\cong S_3}.
-\]
-Equivalently, $f'(x)=3x^2+6>0$, so $f$ has one real root and one nonreal conjugate pair; complex conjugation is therefore a transposition in the transitive Galois group.
+::: {.pf-step #transitive}
+$\Gal(f/\QQ)$ is $A_3$ or $S_3$.
+
+::: pf-proof
+$f$ is Eisenstein at $3$, hence irreducible over $\QQ$, so its Galois group is a transitive subgroup of $S_3$.
+:::
+
+:::
+
+::: {.pf-step #discriminant}
+The discriminant of $f$ is $-1107=-3^3\cdot41$, which is not a square in $\QQ$.
+
+::: pf-proof
+The discriminant of $x^3+px+q$ is $-4p^3-27q^2$, which here is $-4\cdot6^3-27\cdot3^2=-864-243=-1107$.
+It is negative, so it is not a rational square.
+:::
+
+:::
+
+::: pf-step
+$\Gal(f/\QQ)\cong\boxed{S_3}$.
+
+::: pf-proof
+For an irreducible cubic, the Galois group lies in $A_3$ exactly when the discriminant is a square, so steps [](#transitive){.pf-ref} and [](#discriminant){.pf-ref} give $S_3$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Alternatively, $f'(x)=3x^2+6>0$, so $f$ has one real root and a pair of nonreal conjugate roots, and complex conjugation is a transposition in the transitive Galois group.
 :::
