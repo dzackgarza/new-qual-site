@@ -26,7 +26,6 @@ Then there exists an indexed open covering $\theset{V_1, V_2, \ldots}$ of $X$ su
 :::
 
 ::: {.solution}
-**Goal:** Prove the Shrinking Lemma for countable point-finite open coverings $\{U_n\}_{n=1}^\infty$ on a normal space $X$.
 
 ::: pf
 
