@@ -35,9 +35,9 @@ For a covering space $p: \tilde{X} \to X$ with $X$ connected, locally path-conne
 
 ::: {.solution}
 Let
-\[
+$$
 G=\pi_1(X,x_0)
-\]
+$$
 act on the fiber $F=p^{-1}(x_0)$ by lifting based loops.
 
 ::: pf
@@ -52,14 +52,14 @@ Suppose first that $\tilde x_1$ is obtained from $\tilde x_0$ by the action of $
 By definition, a lift of $\gamma$ joins these two fiber points, so they lie in the same path component.
 
 Conversely, suppose a path
-\[
+$$
 \tilde\alpha:I\to\widetilde X
-\]
+$$
 joins $\tilde x_0$ to $\tilde x_1$.
 Then
-\[
+$$
 \alpha=p\circ\tilde\alpha
-\]
+$$
 is a loop at $x_0$.
 The path $\tilde\alpha$ is a lift of this loop, so the monodromy action of $[\alpha]$ sends one endpoint to the other, according to the convention used for the action.
 Thus the two fiber points lie in the same orbit.
@@ -88,10 +88,10 @@ This proves part (a).
 
 Fix $\tilde x_0\in F$ and let $\widetilde X_0$ be its component.
 The stabilizer of $\tilde x_0$ is
-\[
+$$
 \operatorname{Stab}_G(\tilde x_0)
-=\{[\gamma]\in G:\text{the lift of $\gamma$ at $\tilde x_0$ is closed}\}.
-\]
+=\{[\gamma]\in G:\text{the lift of } \gamma \text{ at } \tilde x_0 \text{ is closed}\}.
+$$
 
 ::: pf-proof
 
@@ -104,10 +104,10 @@ By definition, $[\gamma]$ fixes $\tilde x_0$ exactly when the lift of $\gamma$ b
 ::: {.pf-step #s4}
 
 One has
-\[
+$$
 \operatorname{Stab}_G(\tilde x_0)
 =p_*\pi_1(\widetilde X_0,\tilde x_0).
-\]
+$$
 
 ::: pf-proof
 
@@ -115,9 +115,9 @@ If $[\tilde\gamma]\in\pi_1(\widetilde X_0,\tilde x_0)$, then $p\circ\tilde\gamma
 Therefore its class lies in the stabilizer.
 
 Conversely, if $[\gamma]$ stabilizes $\tilde x_0$, its lift at $\tilde x_0$ is a loop in the component $\widetilde X_0$, and
-\[
+$$
 p_*[\tilde\gamma]=[\gamma].
-\]
+$$
 Thus the two subgroups coincide.
 
 :::
@@ -131,13 +131,13 @@ Under the connected-covering/subgroup correspondence, the component $\widetilde 
 ::: pf-proof
 
 The subgroup assigned by the Galois correspondence to the pointed connected cover
-\[
+$$
 (\widetilde X_0,\tilde x_0)\to(X,x_0)
-\]
+$$
 is by definition
-\[
+$$
 p_*\pi_1(\widetilde X_0,\tilde x_0).
-\]
+$$
 By step [](#s4){.pf-ref} this is the stabilizer.
 This proves part (b).
 
