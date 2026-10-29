@@ -178,8 +178,6 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 
 [[D-VZS33]]
 
-[[D-TD6AO]]
-
 ::: {.example title="Limits and colimits"}
 \envlist
 

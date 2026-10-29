@@ -679,7 +679,6 @@ corpus/theory/Topology/D-SN2OH.md
 corpus/theory/Topology/D-SOVXO.md
 corpus/theory/Topology/D-SYKQW.md
 corpus/theory/Topology/D-T5Q3V.md
-corpus/theory/Topology/D-TD6AO.md
 corpus/theory/Topology/D-TFVPD.md
 corpus/theory/Topology/D-TK4QD.md
 corpus/theory/Topology/D-TPTOG.md
