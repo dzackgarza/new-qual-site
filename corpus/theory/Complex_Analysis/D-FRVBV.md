@@ -34,7 +34,7 @@ $$
 $$
 T'(z)=\frac{ad-bc}{(cz+d)^2}\neq0,
 $$
-so $T$ is [[D-PCDNH|conformal]] there.
+so $T$ is [[D-TM4TE|conformal]] there.
 :::
 
 ::: {.proof}
