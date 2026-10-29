@@ -19,23 +19,23 @@ audit:
 ---
 
 ::: {.problem}
-- Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
+(a) Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
 
-- Show that if $f\in L^1$ and $g$ is bounded, then  $f\ast g$ is bounded and uniformly continuous.
+(b) Show that if $f\in L^1$ and $g$ is bounded, then  $f\ast g$ is bounded and uniformly continuous.
 
-- If $f, g$ are compactly supported, is it necessarily the case that $f\ast g$ is compactly supported?
+(c) If $f, g$ are compactly supported, is it necessarily the case that $f\ast g$ is compactly supported?
 
-- Show that under any of the following assumptions, $f\ast g$ vanishes at infinity:
+(d) Show that under any of the following assumptions, $f\ast g$ vanishes at infinity:
 
-  - $f, g\in L^1$ are both bounded.
+(i) $f, g\in L^1$ are both bounded.
 
-  - $f, g\in L^1$ with just $g$ bounded.
+(ii) $f, g\in L^1$ with just $g$ bounded.
 
-  - $f, g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
+(iii) $f, g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
 
-  - $f\in L^1$ and $g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
+(iv) $f\in L^1$ and $g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
 
-- Show that if $f\in L^1$ and $g'$ exists with $\dd{g}{x_i}$ all bounded, then $$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$$
+(e) Show that if $f\in L^1$ and $g'$ exists with $\dd{g}{x_i}$ all bounded, then $$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$$
 :::
 
 ::: {.solution}
@@ -112,12 +112,6 @@ which tends to $0$ as $|x| \to \infty$ because $f \in L^1$.
 
 :::
 
-::: pf-qed
-
-Steps [](#s4-1){.pf-ref} and [](#s4-2){.pf-ref}.
-
-:::
-
 :::
 
 :::
@@ -131,12 +125,6 @@ If $f \in L^1$ and $g$ is differentiable with $\dd{g}{x_i}$ bounded, then $\dd{}
 The difference quotient of $f\ast g$ in the direction $e_i$ is $\int f(x-y)\,\frac{g(y + h e_i) - g(y)}{h}\,dy$. By the mean value theorem the quotient of $g$ is bounded by $\sup|\dd{g}{x_i}|$, and it converges pointwise to $\dd{g}{x_i}$, so dominated convergence with dominating function $\sup|\dd{g}{x_i}|\,|f(x-\cdot)|$ applies. See [[E-GQEMZ]].
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} treat the parts in order.
 
 :::
 
