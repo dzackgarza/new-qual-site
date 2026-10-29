@@ -61,3 +61,15 @@ def test_the_home_page_title_is_the_site_name(tmp_path_factory: pytest.TempPathF
     assert result.returncode == 0, result.stderr
     home = (work / "build" / "quarto" / "_site" / "index.html").read_text()
     assert "<title>Qual Corpus</title>" in home
+
+
+def test_a_tab_title_keeps_authored_tex_it_cannot_set(tmp_path_factory: pytest.TempPathFactory) -> None:
+    card = CARD.replace("id: T-DASHED", "id: T-RADICAL").replace(
+        "title: Heine--Borel theorem in $\\RR^n$", "title: Normality of $\\QQ(\\sqrt{2+\\sqrt2})/\\QQ$"
+    )
+    work = fixture_repo(tmp_path_factory.mktemp("radical"), {"T-RADICAL.md": card})
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    page = (work / "build" / "quarto" / "_site" / "tag" / "T-RADICAL.html").read_text()
+    title = page.split("<title>", 1)[1].split("</title>", 1)[0]
+    assert title == "Normality of $\\QQ(\\sqrt{2+\\sqrt2})/\\QQ$ · Qual Corpus"

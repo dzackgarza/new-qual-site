@@ -21,6 +21,7 @@ import shutil
 import sqlite3
 import subprocess
 from collections import Counter
+from collections.abc import Iterator
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
@@ -2328,14 +2329,37 @@ def _tab_titles(pandoc: PandocServer, titles: list[str], preamble: str) -> list[
         pandoc.read_markdown([preamble + "\n\n" + "\n\n".join(titles)], MARKDOWN),
         "tab-title read",
     )
+    [authored_ast] = _successful_outputs(pandoc.read_markdown(["\n\n".join(titles)], MARKDOWN), "tab-title read")
     document = json.loads(ast)
     blocks = [block for block in document["blocks"] if block["t"] != "RawBlock"]
     if len(blocks) != len(titles):
         raise ValueError(f"{len(titles)} page titles read as {len(blocks)} blocks")
-    asts = [json.dumps({**document, "blocks": [block]}) for block in blocks]
-    # Mathematics texmath cannot set in Unicode stays as its TeX source in the tab.
+    # Mathematics texmath cannot set in Unicode stays in the tab as the TeX the
+    # author wrote, `\QQ` rather than its expansion `{\mathbf{Q}}`.
+    expanded = list(_math_nodes(blocks))
+    authored = list(_math_nodes(json.loads(authored_ast)["blocks"]))
+    if len(expanded) != len(authored):
+        raise ValueError(f"{len(authored)} title math spans expanded to {len(expanded)}")
     unconvertible = (*KNOWN_PANDOC_WARNINGS, "Could not convert TeX math")
+    singles = [json.dumps({**document, "blocks": [{"t": "Plain", "c": [node]}]}) for node in expanded]
+    for node, source, result in zip(expanded, authored, pandoc.write_plain(singles), strict=True):
+        if any(message.message.startswith("Could not convert TeX math") for message in result.messages):
+            node["t"], node["c"] = "Str", f"${source['c'][1]}$"
+    asts = [json.dumps({**document, "blocks": [block]}) for block in blocks]
     return [" ".join(text.split()) for text in _successful_outputs(pandoc.write_plain(asts), "tab-title write", unconvertible)]
+
+
+def _math_nodes(value: list | dict) -> Iterator[dict]:
+    """Every Math inline in a Pandoc JSON fragment, in document order."""
+    if isinstance(value, dict):
+        if value.get("t") == "Math":
+            yield value
+            return
+        value = value.get("c", [])
+    if isinstance(value, list):
+        for item in value:
+            if isinstance(item, (dict, list)):
+                yield from _math_nodes(item)
 
 
 def _set_tab_titles(pandoc: PandocServer, metas: list[dict], preamble: str) -> None:
