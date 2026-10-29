@@ -15,27 +15,38 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source part (d) defined tau_h(x) = x+h and wrote int tau_h f; the statement now defines (tau_h f)(x) = f(x+h). Source typo "here H is F_sigma" now reads "where".'
 ---
 
 ::: {.problem}
-- $\star$: Show that for $E\subseteq \RR^n$, TFAE: 
-  1. $E$ is measurable
-  2. $E = H\union Z$ here $H$ is $F_\sigma$ and $Z$ is null
-  3. $E = V\setminus Z'$ where $V\in G_\delta$ and $Z'$ is null.
-- $\star$: Show that if $E\subseteq \RR^n$ is measurable then $m(E) = \sup \theset{ m(K) \suchthat K\subset E\text{ compact}}$ iff for all $\eps> 0$ there exists a compact $K\subseteq E$ such that $m(K) \geq m(E) - \eps$.
-- $\star$: Show that cylinder functions are measurable, i.e. if $f$ is measurable on $\RR^s$, then $F(x, y) \definedas f(x)$ is measurable on $\RR^s\cross \RR^t$ for any $t$.
-- $\star$: Prove that the Lebesgue integral is translation invariant, i.e. if $\tau_h(x) = x+h$ then $\int \tau_h f = \int f$.
-- $\star$: Prove that the Lebesgue integral is dilation invariant, i.e. if $f_\delta(x) = {f({x\over \delta}) \over \delta^n}$ then $\int f_\delta = \int f$.
-- $\star$: Prove continuity in $L^1$, i.e.
-  \[
-  f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int|f(x+h)-f(x)|=0
-  .\]
-- $\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$
+(a) $\star$: Show that for $E\subseteq \RR^n$, TFAE:
 
-- $\star$: Show that if $X\subseteq \RR$ with $\mu(X) < \infty$ then
-\[  
-\norm{f}_p \converges{p\to\infty}\to \norm{f}_\infty
-.\]
+1. $E$ is measurable
+2. $E = H\union Z$ where $H$ is $F_\sigma$ and $Z$ is null
+3. $E = V\setminus Z'$ where $V\in G_\delta$ and $Z'$ is null.
+
+(b) $\star$: Show that if $E\subseteq \RR^n$ is measurable then $m(E) = \sup \theset{ m(K) \suchthat K\subset E\text{ compact}}$ iff for all $\eps> 0$ there exists a compact $K\subseteq E$ such that $m(K) \geq m(E) - \eps$.
+
+(c) $\star$: Show that cylinder functions are measurable, i.e. if $f$ is measurable on $\RR^s$, then $F(x, y) \coloneqq f(x)$ is measurable on $\RR^s\cross \RR^t$ for any $t$.
+
+(d) $\star$: Prove that the Lebesgue integral is translation invariant, i.e. if $(\tau_h f)(x) = f(x+h)$ then $\int \tau_h f = \int f$.
+
+(e) $\star$: Prove that the Lebesgue integral is dilation invariant, i.e. if $f_\delta(x) = {f({x\over \delta}) \over \delta^n}$ then $\int f_\delta = \int f$.
+
+(f) $\star$: Prove continuity in $L^1$, i.e.
+$$
+f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int|f(x+h)-f(x)|=0.
+$$
+
+(g) $\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$
+
+(h) $\star$: Show that if $X\subseteq \RR$ with $\mu(X) < \infty$ then
+$$
+\norm{f}_p \converges{p\to\infty}\to \norm{f}_\infty.
+$$
 :::
 
 ::: {.solution}
@@ -124,12 +135,6 @@ If $\mu(X) < \infty$, then $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
 If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. See [[E-TVBUC]].
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} treat the parts in order.
 
 :::
 
