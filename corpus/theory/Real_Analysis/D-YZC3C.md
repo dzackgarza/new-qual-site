@@ -5,6 +5,7 @@ kind: definition
 title: Uniform convergence
 prompts:
 - What does it mean for $f_n$ to converge uniformly to $f$ on $S$?
+- What does uniform convergence of $\theset{f_n}$ to $f$ on $S$ require of $n_0$?
 classification:
   areas:
   - real-analysis
@@ -32,5 +33,7 @@ The point $x$ at which the estimate fails may depend on $n_0$.
 :::
 
 ::: {.remark}
-With $\norm{g}_\infty \coloneqq \sup_{x\in S}\abs{g(x)}$ for $g\colon S\to\CC$, the sequence $(f_n)$ converges uniformly to $f$ on $S$ if and only if $\norm{f_n - f}_\infty\to 0$ as $n\to\infty$.
+With $\norm{g}_\infty \coloneqq \sup_{x\in S}\abs{g(x)}$ for $g\colon S\to\CC$, the sequence $(f_n)$ converges uniformly to $f$ on $S$ if and only if $\norm{f_n - f}_\infty\to 0$ as $n\to\infty$, where $\norm{f_n-f}_\infty\in[0,\infty]$.
+If $(f_n)$ converges uniformly, then for $\varepsilon>0$ and $n_0$ as in the definition, $\norm{f_n - f}_\infty \leq \varepsilon$ for all $n>n_0$.
+Conversely, if $\norm{f_n - f}_\infty\to 0$, then for $\varepsilon>0$ there is $n_0$ with $\abs{f_n(x) - f(x)}\leq\norm{f_n - f}_\infty<\varepsilon$ for all $n>n_0$ and $x\in S$.
 :::

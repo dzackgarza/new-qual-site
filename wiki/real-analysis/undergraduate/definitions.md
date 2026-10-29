@@ -26,8 +26,6 @@ In the definition of continuity on a set, $\delta$ may depend on both $\varepsil
 
 [[D-YZC3C]]
 
-[[FD-ZTRHG]]
-
 ## Function spaces
 
 [[D-G5N6I]]
