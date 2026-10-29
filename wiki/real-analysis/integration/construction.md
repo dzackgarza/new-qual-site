@@ -39,8 +39,6 @@ A measurable $f$ is integrable if $\int\abs f<\infty$, and then $\int f\coloneqq
 
 [[PR-6OHTJ]]
 
-
-
 ::: {.remark}
 Changing $f$ on a null set changes neither $\int f$ nor its essential supremum, so elements of $L^p$ are equivalence classes of functions equal almost everywhere.
 The integrability of $x^a$ on $(0,1)$ exactly when $a>-1$ and on $(1,\infty)$ exactly when $a<-1$ is the comparison used for singularities at a point and for decay at infinity.
