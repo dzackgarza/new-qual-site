@@ -32,7 +32,7 @@ Show that moreover if $f$ is meromorphic on $\CC$ with infinitely many poles, th
 The set $P_f$ of poles of a meromorphic function $f$ on a Riemann surface $X$ is closed and discrete in $X$.
 
 ::: pf-proof
-Each pole has a punctured neighborhood on which $f$ is holomorphic, so $P_f$ is discrete. Each point not in $P_f$ is a point of holomorphy or a pole-free point with a neighborhood free of poles, by the definition of meromorphic, so $X\setminus P_f$ is open.
+Each pole has a punctured neighborhood on which $f$ is holomorphic, so $P_f$ is discrete. At a point not in $P_f$, $f$ is holomorphic, hence holomorphic on a neighborhood of that point, so $X\setminus P_f$ is open.
 :::
 
 :::
