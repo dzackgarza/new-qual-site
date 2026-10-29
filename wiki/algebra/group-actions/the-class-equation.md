@@ -66,22 +66,22 @@ A = \Disjoint_{x_0\in X} \theset{ (g, x_0) \st gx_0= x_0 } \cong \Disjoint_{x_0\
 $$
 Taking cardinalities,
 $$
-\sum_{g_0\in G} \size \Fix(g_0)
+\sum_{g_0\in G} \size{\Fix(g_0)}
 = \size A
-= \sum_{x_0\in X} \size \Stab(x_0).
+= \sum_{x_0\in X} \size{\Stab(x_0)}.
 $$
-By orbit-stabilizer, $\size \Stab(x_0) = \size G/ \size \Orb(x_0)$, so
+By orbit-stabilizer, $\size{\Stab(x_0)} = \size G/ \size{\Orb(x_0)}$, so
 $$
-{1\over \size G} \sum_{g_0\in G} \size \Fix(g_0)
-= \sum_{x_0\in X} {1\over \size \Orb(x_0)}.
+{1\over \size G} \sum_{g_0\in G} \size{\Fix(g_0)}
+= \sum_{x_0\in X} {1\over \size{\Orb(x_0)}}.
 $$
 Grouping the terms of the right-hand side by orbit,
 $$
 \begin{aligned}
-\sum_{x_0\in X}{1\over \size \Orb(x_0)}
-&= \sum_{\Orb(x_0) \in X/G} \qty{1\over \size \Orb(x_0)}\sum_{y\in \Orb(x_0)} 1 \\
+\sum_{x_0\in X}{1\over \size{\Orb(x_0)}}
+&= \sum_{\Orb(x_0) \in X/G} \qty{1\over \size{\Orb(x_0)}}\sum_{y\in \Orb(x_0)} 1 \\
 &= \sum_{\Orb(x_0) \in X/G} 1 \\
-&= \size (X/G).
+&= \size{X/G}.
 \end{aligned}
 $$
 :::
