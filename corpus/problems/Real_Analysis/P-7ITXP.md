@@ -24,15 +24,15 @@ audit:
 Let $E \subseteq \RR^n$ be bounded.
 Prove the following are equivalent: 
 
-1. For any \( \epsilon>0 \) there exists and open set \( G \) and a closed set \( F \) such that 
-\[
-F \subseteq E \subseteq G && m(G\sm F) < \epsilon
-.\]
+1. For any $\varepsilon>0$ there exists an open set $G$ and a closed set $F$ such that
+$$
+F \subseteq E \subseteq G \quad\text{and}\quad m(G\sm F) < \varepsilon.
+$$
 
-2. There exists a \( G_ \delta \) set $V$ and an \( F_ \sigma \) set $H$ such that 
-\[
-H \subseteq E \subseteq V && m(V\sm H) = 0
-.\]
+2. There exists a $G_\delta$ set $V$ and an $F_\sigma$ set $H$ such that
+$$
+H \subseteq E \subseteq V \quad\text{and}\quad m(V\sm H) = 0.
+$$
 :::
 
 ::: {.solution}
@@ -92,12 +92,6 @@ $$
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
