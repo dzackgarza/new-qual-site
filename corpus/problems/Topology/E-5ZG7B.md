@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5ZG7B
 kind: problem
-title: $\mathbb{R}/\mathbb{Q}$ has the indiscrete topology
+title: $\RR/\QQ$ has the indiscrete topology
 classification:
   areas:
   - topology
@@ -18,19 +18,40 @@ Show that $\RR/\QQ$ has the indiscrete topology.
 :::
 
 ::: {.solution}
-\envlist
+Let $\pi:\RR\to\RR/\QQ$ be the quotient map, and let $U\subseteq\RR/\QQ$ be a nonempty open set. We show $U=\RR/\QQ$.
 
-- Let $U \subset \RR/\QQ$ be open and nonempty, show $U = \RR/\QQ$.
+::: pf
 
-- Let $[x] \in U$, then $x \in \inverseof{\pi}(U) \definedas V \subset\RR$ is open.
+::: {.pf-step #saturated}
 
-- Then $V$ contains an interval $(a, b)$
+$V\coloneqq\inverseof{\pi}(U)$ is a nonempty open subset of $\RR$ with $V+q=V$ for every $q\in\QQ$.
 
-- Every $y\in V$ satisfies $y+q \in V$ for all $q\in \QQ$, since $y+q-y \in \QQ \implies [y+q] = [y]$.
+::: pf-proof
 
-- So $(a-q, b+q) \in V$ for all $q\in \QQ$.
+$V$ is open because $\pi$ is continuous, and nonempty because $\pi$ is surjective. If $y\in V$ and $q\in\QQ$, then $\pi(y+q)=\pi(y)\in U$, so $y+q\in V$.
 
-- So $\union_{q\in \QQ}(a-q, b+q) \in V \implies \RR \subset V$.
+:::
 
-- So $\pi(V) = \RR/\QQ = U$, and thus the only open sets are the entire space and the empty set.
+:::
+
+::: {.pf-step #all}
+
+$V=\RR$.
+
+::: pf-proof
+
+By step [](#saturated){.pf-ref}, $V$ contains an interval $(a,b)$ with $a<b$, and hence every translate $(a+q,b+q)$ with $q\in\QQ$. Given $x\in\RR$, density of $\QQ$ gives $q\in\QQ$ with $x-b<q<x-a$, so $x\in(a+q,b+q)\subseteq V$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#all){.pf-ref} and surjectivity of $\pi$, $U=\pi(V)=\RR/\QQ$. So the only open sets of $\RR/\QQ$ are $\varnothing$ and $\RR/\QQ$.
+
+:::
+
+:::
+
 :::
