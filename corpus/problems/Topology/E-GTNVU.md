@@ -24,7 +24,7 @@ Compute all of the possible cases for $H_*(S^a\cross S^b)$, where $a, b\geq 0$ a
 ::: pf-step
 
 For $a,b>0$, Künneth gives
-$$H_k(S^a\times S^b;\mathbb Z)\cong\bigoplus_{i+j=k}H_i(S^a)\otimes H_j(S^b),$$
+$$H_k(S^a\times S^b;\ZZ)\cong\bigoplus_{i+j=k}H_i(S^a)\otimes H_j(S^b),$$
 with no Tor terms.
 
 ::: pf-proof
@@ -38,7 +38,7 @@ All homology groups of spheres are free abelian.
 ::: pf-step
 
 If $a,b>0$ and $a\ne b$, then
-$$\boxed{H_k\cong\begin{cases}\mathbb Z,&k=0,a,b,a+b,\\0,&\text{otherwise.}\end{cases}}$$
+$$\boxed{H_k\cong\begin{cases}\ZZ,&k=0,a,b,a+b,\\0,&\text{otherwise.}\end{cases}}$$
 
 ::: pf-proof
 
@@ -51,7 +51,7 @@ The four tensor products from degrees $(0,0),(a,0),(0,b),(a,b)$ occur in distinc
 ::: pf-step
 
 If $a=b>0$, then
-$$\boxed{H_k\cong\begin{cases}\mathbb Z,&k=0,2a,\\\mathbb Z^2,&k=a,\\0,&\text{otherwise.}\end{cases}}$$
+$$\boxed{H_k\cong\begin{cases}\ZZ,&k=0,2a,\\\ZZ^2,&k=a,\\0,&\text{otherwise.}\end{cases}}$$
 
 ::: pf-proof
 
@@ -67,7 +67,7 @@ Since $S^0$ is two points, if exactly one of $a,b$ is zero then $S^a\times S^b$ 
 
 ::: pf-proof
 
-Products with a finite discrete set are disjoint unions indexed by that set. Thus for, say, $a=0<b$, $H_0\cong H_b\cong\mathbb Z^2$ and all other groups vanish; for $a=b=0$, $H_0\cong\mathbb Z^4$.
+Products with a finite discrete set are disjoint unions indexed by that set. Thus for, say, $a=0<b$, $H_0\cong H_b\cong\ZZ^2$ and all other groups vanish; for $a=b=0$, $H_0\cong\ZZ^4$.
 
 :::
 
