@@ -17,10 +17,8 @@ topics:
 
 [[PR-OODAV]]
 
-::: {.remark title="Sufficient conditions for splitting"}
-A short [[D-BJYH3|exact sequence]] $0\to A\xrightarrow{f} B\xrightarrow{g} C\to 0$ of $R$-modules splits, and then $B \cong A\oplus C$, if $C$ is projective or if $A$ is injective.
-Every free module is projective, so the sequence splits when $C$ is free.
-Over a PID, applied to $0\to M_t\to M\to M/M_t\to 0$ with $M/M_t$ free, this splits off the free part of a finitely generated module $M$.
+::: {.remark title="Splitting off the free part"}
+Over a PID, a finitely generated module $M$ has $M/M_t$ free, and free modules are projective, so $0\to M_t\to M\to M/M_t\to 0$ splits by [[PR-OODAV]] and $M\cong M_t\oplus M/M_t$.
 :::
 
 ## Tensor products
