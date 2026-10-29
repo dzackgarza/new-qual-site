@@ -46,4 +46,4 @@ Let $(X,\mathcal M,\mu)$ be a measure space, and let $p,q\in[1,\infty]$ be conju
 
 - **Exponential bound.** $1 + x\leq e^x$ for $x\in\RR$, so $\prod_{i}(1-a_i)\leq \exp\qty{-\sum_i a_i}$ for $a_i\in[0,1]$.
 
-The full statements are on [[real-analysis/appendices/appendix-inequalities|Appendix: common inequalities]].
+The full statements are on [[real-analysis/appendices/appendix-inequalities|Common inequalities]].
