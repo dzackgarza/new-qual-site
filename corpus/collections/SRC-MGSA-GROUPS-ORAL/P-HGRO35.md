@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO35
 kind: problem
-title: Normal terms in a composition series for S4
+title: Normal terms in a composition series for $S_4$
 classification:
   areas: [algebra]
   topics: [Group Theory]
