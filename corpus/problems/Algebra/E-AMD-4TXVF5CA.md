@@ -26,24 +26,37 @@ Prove that an irreducible polynomial $\pi(x)\in \FF_p[x]$ divides $x^{p^n}-x \if
 :::
 
 ::: {.solution}
-Let $\pi\in\FF_p[x]$ be irreducible of degree $d$, and let $\alpha$ be a root in $\overline{\FF}_p$. Then
-$$
-\FF_p(\alpha)\cong\FF_{p^d}.
-$$
-Also, the roots of $x^{p^n}-x$ in $\overline{\FF}_p$ are exactly the elements of $\FF_{p^n}$.
+Let $\pi\in\FF_p[x]$ be irreducible of degree $d$, and let $\alpha\in\overline{\FF}_p$ be a root of $\pi$.
 
-If $\pi\mid x^{p^n}-x$, then $\alpha\in\FF_{p^n}$, so
-$$
-\FF_{p^d}=\FF_p(\alpha)\subseteq\FF_{p^n}.
-$$
-By the finite-field subfield criterion, $d\mid n$.
+::: pf
 
-Conversely, if $d\mid n$, then $\FF_{p^d}\subseteq\FF_{p^n}$, hence $\alpha^{p^n}=\alpha$. Therefore $\alpha$ is a root of $x^{p^n}-x$. Since $\pi$ is the minimal polynomial of $\alpha$ over $\FF_p$,
-$$
-\pi(x)\mid x^{p^n}-x.
-$$
-Thus
-$$
-\boxed{\pi\mid x^{p^n}-x\iff \deg\pi\mid n}.
-$$
+::: {.pf-step #root-field}
+$\FF_p(\alpha)$ has $p^d$ elements, and $\pi\mid x^{p^n}-x$ if and only if $\alpha^{p^n}=\alpha$.
+
+::: pf-proof
+$\pi$ is a scalar multiple of the minimal polynomial of $\alpha$ over $\FF_p$, so $[\FF_p(\alpha):\FF_p]=d$. A polynomial over $\FF_p$ has $\alpha$ as a root exactly when the minimal polynomial divides it.
+:::
+
+:::
+
+::: pf-step
+If $\pi\mid x^{p^n}-x$, then $d\mid n$.
+
+::: pf-proof
+The roots of $x^{p^n}-x$ in $\overline{\FF}_p$ form the field $\FF_{p^n}$. By step [](#root-field){.pf-ref}, $\alpha\in\FF_{p^n}$, so $\FF_p(\alpha)\subseteq\FF_{p^n}$, and the tower law gives $n=d\cdot[\FF_{p^n}:\FF_p(\alpha)]$.
+:::
+
+:::
+
+::: pf-step
+If $d\mid n$, then $\pi\mid x^{p^n}-x$.
+
+::: pf-proof
+The multiplicative group of the field $\FF_p(\alpha)$ of order $p^d$ has order $p^d-1$, so $\alpha^{p^d}=\alpha$. Iterating $n/d$ times gives $\alpha^{p^n}=\alpha$, and step [](#root-field){.pf-ref} gives $\pi\mid x^{p^n}-x$.
+:::
+
+:::
+
+:::
+
 :::
