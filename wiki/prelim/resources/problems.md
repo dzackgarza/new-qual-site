@@ -23,19 +23,19 @@ order: 20
 
 ## Multiple-choice review questions by chapter
 
-- [Chapter 1: equations, inequalities, conic sections, polynomials, logarithms, and trigonometric and hyperbolic functions](attachments/chapter-1.pdf)
+- [[SRC-GRE-MATH-CH1-REVIEW|Chapter 1: equations, inequalities, conic sections, polynomials, logarithms, and trigonometric and hyperbolic functions]]
 
-- [Chapter 2: limits, derivatives, integrals, improper integrals, and series](attachments/chapter-2.pdf)
+- [[SRC-GRE-MATH-CH2-REVIEW|Chapter 2: limits, derivatives, integrals, improper integrals, and series]]
 
-- [Chapter 3: vectors, lines and planes, partial derivatives, optimization, and line and multiple integrals](attachments/chapter-3.pdf)
+- [[SRC-GRE-MATH-CH3-REVIEW|Chapter 3: vectors, lines and planes, partial derivatives, optimization, and line and multiple integrals]]
 
-- [Chapter 4: differential equations](attachments/chapter-4.pdf)
+- [[SRC-GRE-MATH-CH4-REVIEW|Chapter 4: differential equations]]
 
-- [Chapter 5: linear systems, matrices, linear transformations, and eigenvalues](attachments/chapter-5.pdf)
+- [[SRC-GRE-MATH-CH5-REVIEW|Chapter 5: linear systems, matrices, linear transformations, and eigenvalues]]
 
-- [Chapter 6: number theory, groups, rings, and fields](attachments/chapter-6.pdf)
+- [[SRC-GRE-MATH-CH6-REVIEW|Chapter 6: number theory, groups, rings, and fields]]
 
-- [Chapter 7: logic, sets, combinatorics, graph theory, probability, Lebesgue measure, complex variables, and algorithms](attachments/Chapter-7.pdf)
+- [[SRC-GRE-MATH-CH7-REVIEW|Chapter 7: logic, sets, combinatorics, graph theory, probability, Lebesgue measure, complex variables, and algorithms]]
 
 ## Exams
 
