@@ -42,7 +42,7 @@ $y_0\in K$ such that $d(x_0,K)=d(x_0,y_0)$.
 
 ::: pf-proof
 
-in $\RR$ (a metric space), the singletons $K_n = \{n\}$ are compact (finite, hence compact). Their union $\cup_n K_n = \NN$ is not compact: the open cover $\{(n - 1/2, n + 1/2) : n \in \NN\}$ has no finite subcover, since each open interval contains exactly one point of $\NN$. (Equivalently, $\NN$ is closed but unbounded, hence not compact.)
+In $\RR$ (a metric space), the singletons $K_n = \{n\}$ are compact (finite, hence compact). Their union $\cup_n K_n = \NN$ is not compact: the open cover $\{(n - 1/2, n + 1/2) : n \in \NN\}$ has no finite subcover, since each open interval contains exactly one point of $\NN$. (Equivalently, $\NN$ is closed but unbounded, hence not compact.)
 
 :::
 
@@ -50,11 +50,11 @@ in $\RR$ (a metric space), the singletons $K_n = \{n\}$ are compact (finite, hen
 
 ::: {.pf-step #s2}
 
-(c) Setup: the function $x \mapsto d(x_0, x)$ is continuous.
+(c) The function $x \mapsto d(x_0, x)$ is continuous.
 
 ::: pf-proof
 
-by the triangle inequality, $|d(x_0,x) - d(x_0,y)| \le d(x,y)$, so the map is $1$-Lipschitz.
+By the triangle inequality, $\abs{d(x_0,x) - d(x_0,y)} \le d(x,y)$, so the map is $1$-Lipschitz.
 
 :::
 
@@ -62,11 +62,11 @@ by the triangle inequality, $|d(x_0,x) - d(x_0,y)| \le d(x,y)$, so the map is $1
 
 ::: pf-step
 
-(c) The distance to $K$ is attained.
+(c) There is $y_0\in K$ with $d(x_0,K)=d(x_0,y_0)$.
 
 ::: pf-proof
 
-$K$ is compact and $d(x_0, \cdot)$ is continuous (step [](#s2){.pf-ref}), so $d(x_0,\cdot)$ attains its minimum on $K$: there is $y_0 \in K$ with $d(x_0, y_0) = \min_{y \in K} d(x_0, y) = d(x_0, K)$, where the last equality is the definition of $d(x_0,K)$ as an infimum, attained by compactness.
+$K$ is compact and $d(x_0, \cdot)$ is continuous (step [](#s2){.pf-ref}), so $d(x_0,\cdot)$ attains its infimum on $K$ (assuming $K\neq\varnothing$, as the definition of $d(x_0,K)$ requires): there is $y_0 \in K$ with $d(x_0, y_0) = \inf_{y \in K} d(x_0, y) = d(x_0, K)$.
 
 :::
 
