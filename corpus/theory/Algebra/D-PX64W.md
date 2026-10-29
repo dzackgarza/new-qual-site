@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-PX64W
 kind: definition
 title: Centralizer of an element or subset
+prompts:
+- What is the centralizer $C_G(H)$ of a subset $H\subseteq G$?
 classification:
   areas:
   - algebra

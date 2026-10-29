@@ -76,18 +76,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair merges both forms and the polynomial-UFD consequence onto `T-JEZZY`, moves the review prompt there, redirects all live references, and deletes `FT-OXN3Y`.
 
-### Duplicate subset-centralizer card FD-SSR6N
-
-- **Object and need:** `D-PX64W` and `FD-SSR6N` in `corpus/theory/Algebra`. `D-PX64W` already defines the centralizer of an arbitrary subset; `FD-SSR6N` repeats the same condition with notation `$Z_G(S)$`.
-
-- **Observed evidence:** both cards define the subgroup of `$g\in G$` that satisfy `$gsg^{-1}=s$` for every `$s\in S$`. The wiki displayed the flashcard beside the canonical centralizer card.
-
-- **Impact and owner:** the flashcard adds no distinct mathematics and creates a second defining occurrence for subset centralizers.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `D-PX64W`, removes the duplicate wiki link, and deletes `FD-SSR6N`.
-
 ### Duplicate transitive-action cards D-KGGWK and FD-KSKDG
 
 - **Object and need:** `D-KGGWK` and `FD-KSKDG` in `corpus/theory/Algebra`. Both define transitivity of a group action by the condition that for every `$x,y\in X$` some `$g\in G$` satisfies `$g\cdot x=y$`.
