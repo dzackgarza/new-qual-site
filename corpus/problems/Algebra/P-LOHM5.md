@@ -19,6 +19,10 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: Source part (b) read "Suppose N = <h> is cyclic and classify all possibilities for G if |h| = p^3, |h| = p", which is inconsistent since |N| = p^2; the statement takes h to be an element of G of largest order, as on E-AMD-LSAG5UZT.
 ---
 
 ::: {.problem}
@@ -26,11 +30,7 @@ Let $p$ be a prime and $\abs{G} = p^3$.
 
 (a) Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 
-(b) Suppose $N = \generators{h}$ is cyclic and classify all possibilities for $G$ if:
-
-(i) $\abs h = p^3$
-
-(ii) $\abs h = p$.
+(b) Let $h \in G$ be an element of largest order. Classify all possibilities for $G$ if (i) $\abs h = p^3$; (ii) $\abs h = p$.
 :::
 
 ::: {.hint}
@@ -70,10 +70,47 @@ Then $G/Z(G)$ has order $p^2$, so it is abelian. Choose a subgroup $L/Z(G)$ of o
 :::
 
 ::: pf-step
-(b) Neither case occurs for the subgroup $N$ of part (a); if instead $G$ has an element $h$ of order $p^3$, then $G=\generators{h}\cong C_{p^3}$, and the existence of an element of order $p$ imposes no condition on $G$.
+(b) If $h$ has largest order in $G$, then (i) $\abs h=p^3$ gives $\boxed{G\cong C_{p^3}}$, and (ii) $\abs h=p$ gives $\boxed{G\cong C_p^3}$ or, for odd $p$, $\boxed{G\cong\operatorname{UT}_3(\FF_p)}$, the group of upper unitriangular $3\times3$ matrices over $\FF_p$.
 
 ::: pf-proof
-If $N=\generators{h}$ has order $p^2$, then $\abs h=p^2$, which is neither $p^3$ nor $p$. An element of order $p^3=\abs G$ generates $G$. Every group of order $p^3$ has an element of order $p$ by Cauchy's theorem.
+
+::: pf-step
+(i) If $\abs h=p^3$, then $G=\generators h\cong C_{p^3}$.
+
+::: pf-proof
+$\generators h$ has $p^3=\abs G$ elements, and a cyclic group is determined by its order.
+:::
+
+:::
+
+::: {.pf-step #abelian-exponent-p}
+(ii) If $\abs h=p$ and $G$ is abelian, then $G\cong C_p^3$.
+
+::: pf-proof
+Every nonidentity element has order $p$, since $p$ is the largest order, so $G$ is an abelian group of exponent $p$, that is, a $3$-dimensional vector space over $\FF_p$.
+:::
+
+:::
+
+::: {.pf-step #heisenberg}
+If $\abs h=p$ and $G$ is nonabelian, then $p$ is odd and $G\cong\operatorname{UT}_3(\FF_p)$.
+
+::: pf-proof
+If $p=2$, then $g^2=1$ for all $g$, so $gk=(gk)^{-1}=k^{-1}g^{-1}=kg$ for all $g,k$, and $G$ is abelian; hence $p$ is odd.
+Since $G$ is nonabelian, $G/Z(G)$ is not cyclic, so $\abs{Z(G)}=p$ and $G/Z(G)\cong C_p^2$.
+Choose $x,y\in G$ whose images generate $G/Z(G)$, and put $z=[x,y]$.
+Then $z\in Z(G)$ because $G/Z(G)$ is abelian, and $z\ne1$ because $x,y$ and $Z(G)$ generate $G$ and $G$ is nonabelian, so $Z(G)=\generators z$.
+Thus $x^p=y^p=z^p=1$, $[x,y]=z$ and $z$ is central, and every element of $G$ is $x^ay^bz^c$ with $0\le a,b,c<p$.
+The matrices $x=I+E_{12}$, $y=I+E_{23}$, $z=I+E_{13}$ satisfy the same relations in $\operatorname{UT}_3(\FF_p)$, which has order $p^3$, so $x^ay^bz^c\mapsto x^ay^bz^c$ is an isomorphism.
+:::
+
+:::
+
+::: pf-qed
+Both cases of (ii) occur: $C_p^3$ has exponent $p$, and for odd $p$ every element $I+M$ of $\operatorname{UT}_3(\FF_p)$, with $M$ strictly upper triangular and $M^3=0$, satisfies $(I+M)^p=I+pM+\binom p2M^2=I$, so $\operatorname{UT}_3(\FF_p)$ has exponent $p$.
+Steps [](#abelian-exponent-p){.pf-ref} and [](#heisenberg){.pf-ref} cover the abelian and nonabelian cases.
+:::
+
 :::
 
 :::
