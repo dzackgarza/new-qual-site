@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FR-7YFAU
 kind: proof
 title: Translation invariance and dilation of the Lebesgue integral
+slogan: 'Translating an $L^1$ function does not change its Lebesgue integral; dilating by $\lambda$ scales it by $\abs{\lambda}^{-d}$.'
 classification:
   areas:
   - real-analysis

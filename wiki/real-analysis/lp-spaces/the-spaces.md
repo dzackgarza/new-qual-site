@@ -38,7 +38,7 @@ By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 
 For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with compact support are dense in $L^p$, and $\norm{f(\wait+h)-f}_p\to0$ as $h\to0$ for every $f\in L^p$.
 
-[[PR-XAVMU]]
+[[FR-7YFAU]]
 
 [[PR-HLPMX]] [[PR-BDHAT]]
 
