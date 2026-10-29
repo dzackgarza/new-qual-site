@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-CF6S3
 kind: theorem
 title: Eisenstein's criterion
+prompts:
+- State Eisenstein's criterion.
 slogan: 'One prime dividing every lower coefficient but not the leading one, with $p^2\nmid a_0$, forces irreducibility over $\QQ$.'
 classification:
   areas:
@@ -33,7 +35,7 @@ If moreover the coefficients of $f$ have no common prime factor, then $f$ is irr
 
 ::: {.proof}
 Suppose $f$ is reducible in $\QQ[x]$.
-By Gauss's lemma $f=gh$ with $g,h\in\ZZ[x]$ of degrees $r,s\geq1$.
+By [[T-JEZZY|Gauss's lemma]] $f=gh$ with $g,h\in\ZZ[x]$ of degrees $r,s\geq1$.
 Reducing modulo $p$ gives $\bar a_nx^n=\bar g\bar h$ in $\FF_p[x]$ with $\bar a_n\neq0$.
 The leading coefficients of $g$ and $h$ multiply to $a_n$, so they are not divisible by $p$ and $\deg\bar g=r$, $\deg\bar h=s$.
 Since $\FF_p[x]$ is a unique factorization domain, $\bar g=bx^r$ and $\bar h=cx^s$ with $b,c\in\FF_p^\times$, so $p$ divides both constant terms $g(0)$ and $h(0)$, and $p^2$ divides $g(0)h(0)=a_0$, a contradiction.
