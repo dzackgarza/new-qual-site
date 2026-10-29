@@ -14,7 +14,7 @@ topics:
 
 [[D-6DAXB]]
 
-## Cauchy–Goursat
+## Cauchy--Goursat
 
 [[T-2OVCI]]
 
@@ -29,7 +29,7 @@ Closed path integrals of holomorphic functions vanish.
 $$
 \oint_{\partial D} f(z) \dz =\int_{D} d(f(z) \dz)=\int_{D}\left(\frac{\partial f}{\partial z} \dz+\frac{\partial f}{\partial \bar{z}} d \bar{z}\right) \wedge \dz=\int_{D} \frac{\partial f}{\partial \bar z} \, d \bar{z} \wedge \dz=0
 ,$$
-since $\dz\wedge\dz = 0$ and $\partial f/\partial\bar z = 0$ by the Cauchy–Riemann equations.
+since $\dz\wedge\dz = 0$ and $\partial f/\partial\bar z = 0$ by the Cauchy--Riemann equations.
 
 :::
 
@@ -48,7 +48,7 @@ The bisection proof is on [[complex-analysis/cauchy-theory/morera-and-converses|
 
 - [[complex-analysis/residues-and-contours/the-residue-theorem|The residue theorem]] computes the integral of a function with isolated singularities inside the curve.
 
-## Exercises
+## Problems
 
 [[E-NKDKF]]
 [[E-XXZVG]]
