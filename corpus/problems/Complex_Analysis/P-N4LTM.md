@@ -22,37 +22,36 @@ Show that there exists $\delta >0$ and $\eps > 0$ such that for each $w$ such th
 :::
 
 ::: {.solution}
-Write
-\[
-f(z)-w_0=(z-z_0)^m g(z),
-\qquad g(z_0)\ne0.
-\]
-Then
-\[
-f'(z)=(z-z_0)^{m-1}h(z)
-\]
-for a holomorphic function $h$ with $h(z_0)=m g(z_0)\ne0$. Choose
-$\delta>0$ so small that the closed disk
-$\overline{D(z_0,\delta)}$ lies in $D$, $z_0$ is the only zero of
-$f-w_0$ there, and $h$ has no zero there. Thus $z_0$ is the only critical
-point of $f$ in this closed disk.
+Write $f(z)-w_0=(z-z_0)^mg(z)$ with $g$ holomorphic on $D$ and $g(z_0)\ne0$, and let $\Delta=\theset{\abs{z-z_0}<\delta}$.
 
-Set
-\[
-M=\min_{|z-z_0|=\delta}|f(z)-w_0|>0
-\]
-and choose $0<\varepsilon<M$. If $0<|w-w_0|<\varepsilon$, then on the boundary
-circle
-\[
-|(w-w_0)|<|f(z)-w_0|.
-\]
-Rouché's theorem therefore implies that
-\[
-f(z)-w=(f(z)-w_0)-(w-w_0)
-\]
-has exactly $m$ zeros in $D(z_0,\delta)$, counted with multiplicity.
+::: pf
 
-None of these zeros is $z_0$, because $w\ne w_0$. At every zero $z$ in the
-disk we also have $f'(z)\ne0$, since $z_0$ is the only critical point there.
-Hence all $m$ zeros are simple. Therefore they are $m$ distinct solutions.
+::: {.pf-step #choose-delta}
+There is $\delta>0$ with $\overline\Delta\subset D$ such that $z_0$ is the only zero of $f-w_0$ in $\overline\Delta$ and the only zero of $f'$ in $\overline\Delta$.
+
+::: pf-proof
+Differentiating gives $f'(z)=(z-z_0)^{m-1}h(z)$ with $h=mg+(z-z_0)g'$ holomorphic and $h(z_0)=mg(z_0)\ne0$. By continuity $g$ and $h$ have no zero on a small closed disk about $z_0$.
+:::
+
+:::
+
+::: {.pf-step #rouche}
+With $\eps\definedas\min_{\abs{z-z_0}=\delta}\abs{f(z)-w_0}>0$, for each $w$ with $0<\abs{w-w_0}<\eps$ the function $f-w$ has exactly $m$ zeros in $\Delta$, counted with multiplicity.
+
+::: pf-proof
+The minimum is positive by step [](#choose-delta){.pf-ref}. On $\abs{z-z_0}=\delta$, $\abs{w-w_0}<\eps\le\abs{f(z)-w_0}$, so by Rouché's theorem $f-w=(f-w_0)-(w-w_0)$ has as many zeros in $\Delta$ as $f-w_0$, namely $m$.
+:::
+
+:::
+
+::: pf-step
+These $m$ zeros are distinct.
+
+::: pf-proof
+A zero $z$ of $f-w$ in $\Delta$ is not $z_0$, since $f(z_0)=w_0\ne w$. By step [](#choose-delta){.pf-ref}, $f'(z)\ne0$, so $z$ is a simple zero. Hence the $m$ zeros of step [](#rouche){.pf-ref}, counted with multiplicity, are $m$ distinct points.
+:::
+
+:::
+
+:::
 :::
