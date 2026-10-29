@@ -29,46 +29,19 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne III.10.8 allows every t and ends "This happens in any characteristic"; in characteristic 2 the conic is the double line (x+y)^2=0, and at t=0 the cone from the vertex on C is the plane z=0, not a member of the pencil limit XZ=0. The statement now assumes char k != 2 and t != 0, says the Y_t are members of the pencil, and omits the any-characteristic sentence.
 ---
 
 ::: {.problem}
-In affine $3\dash$space with coordinates $x, y, z$, let $C$ be the conic $(x-1)^2 + y^2 = 1$ in the $xy\dash$plane, and let $P$ be the point $(0,0,t)$ on the $z\dash$axis.
+Let $k$ be a field of characteristic $\neq 2$.
+In affine $3\dash$space with coordinates $x, y, z$, let $C$ be the conic $(x-1)^2 + y^2 = 1$ in the $xy\dash$plane, and let $P$ be the point $(0,0,t)$ on the $z\dash$axis, with $t \neq 0$.
 Let $Y_t$ be the closure in $\PP^3$ of the cone over $C$ with vertex $P$.
 
-Show that as $t$ varies, the surfaces $\theset{Y_t}$ form a linear system of dimension $1$, with a moving singularity at $P$.
+Show that as $t$ varies, the surfaces $\theset{Y_t}$ are members of a linear system of dimension $1$, with a moving singularity at $P$.
 The base locus of this linear system is the conic $C$ plus the $z\dash$axis.
-
-This happens in any characteristic.
-:::
-
-::: {.remark title="Erratum to the printed all-characteristic statement"}
-There are two literal defects in the printed model.
-
-First, in characteristic $2$,
-$$
-(x-1)^2+y^2=1
-$$
-reduces to
-$$
-(x+y)^2=0,
-$$
-so the displayed $C$ is a doubled line, not a nonsingular conic. The pencil
-equation below also loses its second generator because its coefficient is
-$2$.
-
-Second, the origin $O=(0,0,0)$ lies on $C$. Thus the literal union of lines
-joining $O$ to $C$ is just the plane $z=0$. It is not the $t=0$ member
-$XZ=0$ of the pencil obtained as the flat/projective limit of the cones with
-$t\ne0$.
-
-Accordingly, the printed equations prove the intended moving-singularity
-phenomenon for $\operatorname{char}k\ne2$ and $t\ne0$, with the complete
-pencil obtained by projective closure in the parameter. The phenomenon itself
-does occur in every characteristic: one may replace $C$ by the smooth conic
-$$
-xy+x+y=0,
-$$
-which gives the characteristic-free pencil constructed in step [](#s6){.pf-ref} below.
 :::
 
 ::: {.solution}
@@ -86,7 +59,7 @@ be the projective $z$-axis.
 ::: pf
 
 ::: {.pf-step #s1}
-Assume first that $\operatorname{char}k\ne2$. The projective closure of the printed conic is
+The projective closure of the conic is
 $$
 C=V(Z,Q),
 \qquad
@@ -260,126 +233,9 @@ punctured affine part of the base line $L$.
 
 :::
 
-::: {.pf-step #s6}
-The intended phenomenon has an all-characteristic model.
-
-::: pf-proof
-Replace the printed conic by
-$$
-C'=V(Z,Q'),
-\qquad
-Q'=XY+XW+YW.
-$$
-On the affine chart $W=1$ this is
-$$
-xy+x+y=0.
-$$
-
-This conic is smooth in every characteristic. Indeed,
-$$
-(Q'_X,Q'_Y,Q'_W)=(Y+W,\ X+W,\ X+Y).
-$$
-If these three derivatives vanish, then $X=Y=-W$; substituting into $Q'$
-gives $Q'=-W^2$ (which is $W^2$ in characteristic $2$), so no projective
-point of $C'$ has all derivatives zero.
-
-For $t\ne0$, the same line-parameter elimination as in step [](#s2){.pf-ref} gives the
-cone with vertex $P_t$:
-$$
-Y'_t
-=V\bigl(tQ'-Z(X+Y)\bigr).
-$$
-Thus the cones lie in the pencil
-$$
-\Lambda'=\PP\langle Q',\,Z(X+Y)\rangle,
-$$
-which has dimension one in every characteristic.
-
-Its base locus is
-$$
-V(Q',Z(X+Y)).
-$$
-The component $Z=0$ gives $C'$. If $X+Y=0$, then
-$$
-Q'=XY=-X^2,
-$$
-so set-theoretically $X=Y=0$, giving again the axis $L$.
-Hence
-$$
-|\operatorname{Bs}\Lambda'|=C'\cup L.
-$$
-
-Finally put
-$$
-F'_t=tQ'-Z(X+Y).
-$$
-Its derivatives are
-$$
-(F'_t)_X=t(Y+W)-Z,
-$$
-$$
-(F'_t)_Y=t(X+W)-Z,
-$$
-$$
-(F'_t)_Z=-(X+Y),
-\qquad
-(F'_t)_W=t(X+Y).
-$$
-At $P_t=[0:0:t:1]$ they all vanish.
-Conversely, if all derivatives vanish, then $X+Y=0$ and
-$$
-Z=t(X+W)=t(Y+W).
-$$
-If $\operatorname{char}k\ne2$, these equations force $X=Y=0$.
-If $\operatorname{char}k=2$, substituting $Y=X$ into $F'_t=0$ gives
-$$
-tX^2=0,
-$$
-so again $X=Y=0$ because $t\ne0$.
-Then $Z=tW$, and the unique singular point is $P_t$.
-
-Thus in every characteristic the pencil $\Lambda'$ has a singular point that
-moves along the fixed base line $L$.
-:::
-
-:::
-
-::: {.pf-step #s7}
-The $t=0$ discrepancy in the printed model is exactly the pencil limit.
-
-::: pf-proof
-The origin
-$$
-O=[0:0:0:1]
-$$
-lies on the printed conic $C$. The literal geometric cone obtained by joining
-$O$ to all points of $C$ lies entirely in the plane $Z=0$; since the secant
-lines through a point of a nonsingular plane conic sweep the whole plane, that
-cone is simply
-$$
-V(Z).
-$$
-
-By contrast, the $t\to0$ member of the pencil from step [](#s3){.pf-ref} is
-$$
-V(XZ)=V(X)\cup V(Z).
-$$
-Thus the pencil is the projective closure of the family of cones with
-$t\ne0$, but its special member at parameter $t=0$ is not the literal cone
-with vertex $O$. This is precisely the second defect stated in the erratum.
-:::
-
-:::
-
 ::: pf-qed
-for the corrected statement.
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, and [](#s5){.pf-ref} prove the intended pencil, base-locus, and moving-singularity
-claims for the printed model where that model is valid
-($\operatorname{char}k\ne2$, $t\ne0$). Step [](#s6){.pf-ref} gives an explicit version
-valid in every characteristic, and step [](#s7){.pf-ref} identifies the special
-$t=0$ degeneration that prevents the literal printed family from being the
-whole pencil.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, and [](#s5){.pf-ref} prove the pencil, base-locus, and moving-singularity
+claims.
 :::
 
 :::
