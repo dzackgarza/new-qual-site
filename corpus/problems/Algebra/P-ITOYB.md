@@ -23,18 +23,18 @@ audit:
 ::: {.problem}
 Let $R$ be a commutative ring, let $A$ be an $R$-module, and let $p\in R$.
 Define
-\[
+$$
 A[p]=\{a\in A:pa=0\}.
-\]
+$$
 Show that $A[p]$ is naturally an $R/(p)$-module.
 :::
 
 ::: {.solution}
 Define
-\[
-(r+(p))\cdot a:=ra,
+$$
+(r+(p))\cdot a\coloneqq ra,
 \qquad r\in R,\ a\in A[p].
-\]
+$$
 
 ::: pf
 
@@ -45,9 +45,9 @@ The action is well defined with respect to the residue class of $r$.
 ::: pf-proof
 
 If $r-r'\in(p)$, write $r-r'=sp$. Then for $a\in A[p]$,
-\[
+$$
 ra-r'a=(r-r')a=spa=s(pa)=0.
-\]
+$$
 Hence $ra=r'a$.
 
 :::
@@ -61,9 +61,9 @@ The action preserves $A[p]$.
 ::: pf-proof
 
 If $a\in A[p]$, then
-\[
+$$
 p(ra)=r(pa)=0
-\]
+$$
 by commutativity of $R$. Thus $ra\in A[p]$.
 
 :::
@@ -77,19 +77,19 @@ The module axioms descend from the $R$-module structure on $A$.
 ::: pf-proof
 
 For $r,s\in R$ and $a,b\in A[p]$,
-\[
+$$
 (r+(p))\cdot(a+b)=ra+rb,
-\]
-\[
+$$
+$$
 ((r+s)+(p))\cdot a=ra+sa,
-\]
-\[
+$$
+$$
 ((rs)+(p))\cdot a=(r+(p))\cdot((s+(p))\cdot a),
-\]
+$$
 and
-\[
+$$
 (1+(p))\cdot a=a.
-\]
+$$
 
 :::
 
@@ -97,5 +97,8 @@ and
 
 :::
 
-Therefore $A[p]$ is naturally an $R/(p)$-module. If $(p)$ is maximal, then $R/(p)$ is a field and $A[p]$ is consequently a vector space over that field.
+:::
+
+::: {.remark}
+If $(p)$ is maximal, then $R/(p)$ is a field and $A[p]$ is a vector space over it.
 :::
