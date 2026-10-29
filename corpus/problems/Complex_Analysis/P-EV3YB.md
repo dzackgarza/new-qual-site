@@ -20,26 +20,37 @@ Prove that the sequence $\theset{f\circ g_n}$ is uniformly convergent.
 :::
 
 ::: {.solution}
-Uniformly convergent means that $\norm{g_i - g_j}_{\infty} \to 0$, so $\sup_{x\in X}\abs{g_i(x)-g_j(x)} \convergesto{i, j\to\infty} 0$.
-We want to show that given $\eps$ we can find $N_0$ such that $i, j > N_0$ yields
-\[
-\sup_{x\in X}\abs{ f\circ g_i(x) - f\circ g_j(x) } < \eps
-.\]
+::: pf
 
-Fix $\eps> 0$, then choose $\delta_1 = \delta_1(\eps)$ by uniform continuity of $f$ to guarantee
-\[
-\abs{y_1 - y_2} \leq \delta_1 \implies \abs{f(y_1) - f(y_2) } < \eps \, \forall y_1, y_2\in X
-.\]
-Now by uniform convergence of $\theset{g_n}$, choose $N_0 = N_0(\delta_1)$ such that 
-\[
-i, j \geq N_0 \implies \abs{ g_i(x) - g_j(x) } < \delta_1 \, \forall x\in X
-.\]
+::: {.pf-step #delta}
+Fix $\varepsilon>0$. There is $\delta>0$ such that $\abs{f(y_1)-f(y_2)}<\varepsilon$ for all $y_1,y_2\in\RR$ with $\abs{y_1-y_2}<\delta$.
 
-Now writing $y_1 \definedas g_i(x), y_2 \definedas g_j(x)$, choose $i, j > N_0$ yields
-\[
-\abs{y_1 - y_2} \definedas \abs{g_i(x) - g_j(x) } < \delta_1 \\
-\implies \abs{f(y_1) - f(y_2)} \definedas \abs{f(g_i(x)) - f(g_j(x))} < \eps
-,\]
-and taking the supremum over $x\in X$ preserves the inequality since $\delta_1$ and consequently $N_0$ only depend on $\eps$.
+::: pf-proof
+This is the uniform continuity of $f$.
 :::
 
+:::
+
+::: {.pf-step #cauchy}
+There is $N$ such that $\sup_{x\in\RR}\abs{g_i(x)-g_j(x)}<\delta$ for all $i,j\ge N$.
+
+::: pf-proof
+A uniformly convergent sequence is uniformly Cauchy: if $g_n\to g$ uniformly, choose $N$ with $\sup_x\abs{g_n(x)-g(x)}<\delta/2$ for $n\ge N$ and apply the triangle inequality.
+:::
+
+:::
+
+::: pf-step
+$\theset{f\circ g_n}$ is uniformly convergent.
+
+::: pf-proof
+For $i,j\ge N$ and every $x\in\RR$, step [](#cauchy){.pf-ref} gives $\abs{g_i(x)-g_j(x)}<\delta$, so step [](#delta){.pf-ref} with $y_1=g_i(x)$ and $y_2=g_j(x)$ gives $\abs{f(g_i(x))-f(g_j(x))}<\varepsilon$.
+Since $N$ depends only on $\varepsilon$, the sequence $\theset{f\circ g_n}$ is uniformly Cauchy on $\RR$.
+A uniformly Cauchy sequence of real-valued functions converges uniformly: it converges pointwise because $\RR$ is complete, and letting $j\to\infty$ in the Cauchy estimate bounds the distance to the limit by $\varepsilon$ uniformly in $x$.
+:::
+
+:::
+
+:::
+
+:::
