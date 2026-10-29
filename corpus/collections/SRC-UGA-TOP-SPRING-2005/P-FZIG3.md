@@ -31,8 +31,6 @@ Prove that there exists $\delta > 0$ (a **Lebesgue number** for the covering) su
 :::
 
 ::: {.solution}
-**Goal:** Prove the existence of a Lebesgue number $\delta > 0$ for an open cover of a compact metric space using the Extreme Value Theorem applied to an average distance function to closed complements.
-
 ::: pf
 
 ::: pf-step
