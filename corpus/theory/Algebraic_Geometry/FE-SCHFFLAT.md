@@ -29,6 +29,6 @@ An $R$-module $M$ is faithfully flat if and only if $M$ is flat and the functor 
 :::
 
 ::: {.remark}
-Flatness is needed on both sides: faithfulness of $- \tensor_R M$ alone does not give flatness.
+The flatness hypothesis is not redundant: faithfulness of $- \tensor_R M$ alone does not give flatness.
 For $R = \ZZ$ and $M = \ZZ \oplus \ZZ/2$, $- \tensor_\ZZ M$ is faithful because $M$ has $\ZZ$ as a direct summand, but $M$ is not flat, since $\ZZ \xrightarrow{2} \ZZ$ tensored over $\ZZ$ with $\ZZ/2$ is the zero map on $\ZZ/2 \neq 0$.
 :::
