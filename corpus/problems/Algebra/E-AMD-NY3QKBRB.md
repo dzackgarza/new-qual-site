@@ -19,16 +19,13 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the kernel of the map $G\to \Aut(G)$ given by $g\mapsto (h\mapsto gh\inverseof{g})$ is $Z(G)$.
+Let $G$ be a group. Show that the kernel of the map $G\to \Aut(G)$ given by $g\mapsto (h\mapsto gh\inverseof{g})$ is $Z(G)$.
 :::
 
 ::: {.solution}
+Write $\varphi: G \to \Aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
 
 ::: pf
-
-::: pf-step
-Write $\varphi: G \to \Aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
-:::
 
 ::: {.pf-step #kernel-iff-center}
 $g \in \ker \varphi$ if and only if $g \in Z(G)$.
