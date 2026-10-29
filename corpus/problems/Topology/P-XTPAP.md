@@ -22,23 +22,47 @@ Invariants that separate letters: the number of connected components after remov
 :::
 
 ::: {.solution}
-Up to homotopy (ignoring font-dependent ligatures), each capital letter deformation-retracts onto one of: a point, $S^1$, $S^1\vee S^1$, or a two-point space.
+Take the capital letters in a sans-serif font, drawn as finite graphs in the plane, with the following conventions: the leg of R leaves the bowl at a point other than where the bowl meets the stem, the two arms of K meet each other at a point off the stem, the tail of Q is attached to the circle at one point, and J has no top bar.
+For a point $x$ of such a graph, the number of components of $U \setminus \{x\}$, for $U$ a small connected neighbourhood of $x$, is the degree of $x$; a homeomorphism preserves the degree of each point, and endpoints have degree $1$.
 
-- $\{A, D, O, P, Q, R\}$ and the lowercase letters $\{a, b, d, e, g, o, p, q\}$ are homotopy equivalent to $S^1$: each carries exactly one loop.
-- $\{B\}$ is homotopy equivalent to $S^1\vee S^1$: two loops joined at a junction.
-- The letters $\{i, j\}$, drawn with detached dots, are homotopy equivalent to a two-point discrete space $\{*_1, *_2\}$.
-- Every remaining letter — $\{C, E, F, G, H, I, J, K, L, M, N, S, T, U, V, W, X, Y, Z\}$ and the dotless lowercase forms — is contractible.
+::: pf
 
-Up to homeomorphism, more invariants survive, since homotopy equivalence collapses the wire graphs:
+::: {.pf-step #homotopy}
+Up to homotopy there are three classes: $\{A, D, O, P, Q, R\} \simeq S^1$, $\{B\} \simeq S^1 \vee S^1$, and the remaining $19$ letters, which are contractible.
 
-1. $\{A, R\}$: removing the junction point yields two components homeomorphic to $I$ and $F$ respectively.
-2. $\{D, O\}$: no single point removal disconnects the space; each is homeomorphic to $S^1$.
-3. $\{B\}$: removing the junction point of $S^1\vee S^1$ yields two arcs.
-4. $\{C, G, I, J, L, M, N, S, U, V, W, Z\}$: each has a point whose removal yields exactly two components and none yielding three — each is a straight wire up to twisting, homeomorphic to $[0,1]$.
-5. $\{E, F, T, Y\}$: each has a point (the pasting point of the vee) whose removal yields three components homeomorphic to $I$; these are homeomorphic to $\bigvee_{i=1}^3[0,1]$.
-6. $\{H, K\}$: removing two points disconnects into five components; homeomorphic to $\bigvee_{i=1}^5[0,1]$.
-7. $\{P, Q\}$: each contains a nontrivial loop with an attached arc; homeomorphic to $S^1\vee[0,1]$.
-8. $\{X\}$: removing one point yields four components; homeomorphic to $\bigvee_{i=1}^4[0,1]$.
+::: pf-proof
+A connected finite graph is homotopy equivalent to a wedge of $r$ circles, where $r$ is the number of independent loops, and wedges of different numbers of circles have non-isomorphic $H_1 \cong \ZZ^r$.
+The letters A, D, O, P, Q, and R contain exactly one loop, B contains two, and every other letter is a tree, hence contractible.
+:::
 
-The classifications depend on the chosen font: a lowercase letter may have one or two components depending on whether its dot is detached.
+:::
+
+::: pf-step
+Up to homeomorphism there are eight classes:
+
+(i) $\{C, G, I, J, L, M, N, S, U, V, W, Z\}$, an arc;
+
+(ii) $\{D, O\}$, a circle;
+
+(iii) $\{P, Q\}$, a circle with one arc attached at one point;
+
+(iv) $\{A, R\}$, a circle with two arcs attached at two distinct points;
+
+(v) $\{B\}$, a wedge of two circles;
+
+(vi) $\{E, F, T, Y\}$, three arcs joined at one point;
+
+(vii) $\{X\}$, four arcs joined at one point;
+
+(viii) $\{H, K\}$, two points of degree $3$ joined by an arc, each carrying two further arcs.
+
+::: pf-proof
+Each letter is homeomorphic to the model named in its class, because corners of the drawn letter are points of degree $2$ and can be straightened.
+The models are pairwise non-homeomorphic: the number of loops is a homotopy invariant by step [](#homotopy){.pf-ref}, so, the classes split as $\{$(ii), (iii), (iv)$\}$, $\{$(v)$\}$, and the trees $\{$(i), (vi), (vii), (viii)$\}$.
+Among the circles with arcs, (ii) has no point of degree $3$, (iii) has one, and (iv) has two.
+Among the trees, (i) has no point of degree at least $3$, (vi) has one point of degree $3$, (vii) has one point of degree $4$, and (viii) has two points of degree $3$.
+:::
+
+:::
+
 :::
