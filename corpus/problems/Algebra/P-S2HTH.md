@@ -22,50 +22,66 @@ each class, and prove that this list is complete.
 
 ::: {.solution}
 
+The cycle type of $\sigma\in S_n$ is the multiset of lengths of the cycles in its disjoint cycle decomposition, fixed points counted as $1$-cycles.
 
-::: {.claim title="1"}
-Conjugacy classes in $S_n$ are completely
-determined by cycle type.
+::: pf
+
+::: {.pf-step #conj-formula}
+
+For $\tau\in S_n$ and a cycle $(s_1\ s_2\ \cdots\ s_k)$,
+$$
+\tau(s_1\ s_2\ \cdots\ s_k)\tau^{-1}=(\tau(s_1)\ \tau(s_2)\ \cdots\ \tau(s_k)).
+$$
+
+::: pf-proof
+
+The left side sends $\tau(s_i)$ to $\tau(s_{i+1})$, indices mod $k$, and fixes every point not of the form $\tau(s_i)$, as the right side does.
+
 :::
 
-This follows because of the result on homework 1, which says that for
-any two cycles $\tau,\sigma\in S_n$, we have
-$$\tau(s_1~s_2~\cdots~s_k)\tau^{-1} = (\tau(s^1)~\tau(s^2)~\cdots~\tau(s_k)).$$
-
-In particular, this shows that the cycle type of a single cycle is
-invariant under conjugation. If an element $\sigma \in S_n$ is comprised
-of multiple cycles, say $\sigma = \sigma_1 \cdots \sigma_\ell$, then
-$$\tau(\sigma)\tau^{-1} = \tau(\sigma_1 \cdots \sigma_\ell)\tau^{-1} 
-= (\tau\sigma_1\tau^{-1})\cdots(\tau\sigma_\ell\tau^{-1}),$$
-
-which shows that the entire cycle type is preserved under conjugation.
-So each conjugacy class has exactly one cycle type, and distinct classes
-have distinct cycle types, so this completely determines the conjugacy
-classes.
-
-**Claim 2:** Cycle types in $S_n$ are in bijective correspondence with
-integer partitions of $n$.
-
-This follows because any integer partition of $n$ can be used to obtain
-a canonical representative of a conjugacy class of $S_n$: if
-$n = a_1 + a_2 + \cdots a_n$, we simply take a cycle of length $a_1$ the
-first $a_1$ integers in order, a cycle of length $a_2$ containing the
-integers $a_1 + 1$ to $a_2$ in order, and so on.
-
-Conversely, any permutation can be written as a product of disjoint
-cycles, and when the cycles for fixed points are added in, every integer
-between 1 and $n$ will appear, and the sum of the lengths of all cycles
-must sum to $n$. Thus taking the cycle lengths yields an integer
-partition of $n$.
-
-All integer partitions of 5 are given below, along with a canonical
-representative of the associated conjugacy class. $$\begin{aligned}
-    5 && (1~2~3~4~5) \\
-    4 + 1 && (1~2~3~4)(5) \\
-    3 + 2 &&  (1~2~3)(4~5) \\
-    3 + 1 + 1 && (1~2~3)(4)(5) \\
-    2 + 2 + 1 && (1~2)(3~4)(5) \\
-    2 + 1 + 1 + 1 && (1~2)(3)(4)(5) \\
-    1 + 1 + 1 + 1 + 1 && (1)(2)(3)(4)(5) \\\end{aligned}$$ ◻
 :::
 
+::: {.pf-step #classes}
+
+Two elements of $S_n$ are conjugate if and only if they have the same cycle type.
+
+::: pf-proof
+
+If $\sigma=\sigma_1\cdots\sigma_\ell$ is a product of disjoint cycles, then $\tau\sigma\tau^{-1}=(\tau\sigma_1\tau^{-1})\cdots(\tau\sigma_\ell\tau^{-1})$, and by step [](#conj-formula){.pf-ref} the factors are disjoint cycles of the same lengths. So conjugate elements have the same cycle type. Conversely, if $\sigma$ and $\sigma'$ have the same cycle type, write both as products of disjoint cycles, fixed points included, with cycles of equal length aligned; the permutation $\tau$ sending each entry of $\sigma$ to the entry of $\sigma'$ in the same position satisfies $\tau\sigma\tau^{-1}=\sigma'$ by step [](#conj-formula){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #partitions}
+
+Cycle types in $S_n$ are in bijection with partitions of $n$.
+
+::: pf-proof
+
+The cycle lengths of $\sigma$, fixed points included, sum to $n$, so they form a partition of $n$. Conversely, a partition $n=a_1+\cdots+a_r$ is the cycle type of the permutation whose cycles are $(1\ \cdots\ a_1)$, $(a_1+1\ \cdots\ a_1+a_2)$, and so on through consecutive blocks of integers.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#classes){.pf-ref} and [](#partitions){.pf-ref}, the conjugacy classes of $S_5$ correspond to the seven partitions of $5$, which gives the complete list:
+$$
+\begin{aligned}
+5 &\quad (1\ 2\ 3\ 4\ 5)\\
+4+1 &\quad (1\ 2\ 3\ 4)\\
+3+2 &\quad (1\ 2\ 3)(4\ 5)\\
+3+1+1 &\quad (1\ 2\ 3)\\
+2+2+1 &\quad (1\ 2)(3\ 4)\\
+2+1+1+1 &\quad (1\ 2)\\
+1+1+1+1+1 &\quad \operatorname{id}
+\end{aligned}
+$$
+
+:::
+
+:::
+
+:::
