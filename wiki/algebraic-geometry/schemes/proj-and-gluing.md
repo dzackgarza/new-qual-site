@@ -15,9 +15,6 @@ Every scheme is glued from affine open subschemes along open subschemes of their
 
 [[D-SCHGLUE]]
 
-The geometry depends on the chosen overlap isomorphism.
-Two copies of $\AA^1$ along $\AA^1 \sm \theset{0}$ give $\PP^1$ when the overlap isomorphism is $x\mapsto1/x$ and the non-separated line with a doubled origin when it is the identity.
-
 [[FE-SCHLINE]]
 
 ## Proj
