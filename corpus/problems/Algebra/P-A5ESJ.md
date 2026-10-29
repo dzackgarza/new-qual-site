@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A5ESJ
 kind: problem
-title: $\mathrm{Gal}(x^3+4x+2/\QQ)\cong S_3$
+title: Galois group of $x^3+4x+2$ over $\QQ$ is $S_3$
 classification:
   areas:
   - algebra
@@ -22,14 +22,14 @@ audit:
 ---
 
 ::: {.problem}
-- Show that $\gal(x^3+4x+2)/\QQ \cong S_3$, a symmetric group.
+Show that $\Gal(x^3+4x+2)/\QQ \cong S_3$, a symmetric group.
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 f(x)=x^3+4x+2\in\QQ[x],
-\]
+$$
 and let $L$ be its splitting field.
 
 ::: pf
@@ -41,9 +41,9 @@ The polynomial $f$ is irreducible over $\QQ$.
 ::: pf-proof
 
 A reducible cubic over $\QQ$ has a rational root. Since $f$ is monic, the rational-root theorem says any rational root must be among $\pm1,\pm2$. Directly,
-\[
+$$
 f(1)=7,\quad f(-1)=-3,\quad f(2)=18,\quad f(-2)=-14,
-\]
+$$
 so none is a root. Hence $f$ is irreducible.
 
 :::
@@ -57,9 +57,9 @@ The polynomial $f$ has exactly one real root and two nonreal complex-conjugate r
 ::: pf-proof
 
 Its derivative is
-\[
+$$
 f'(x)=3x^2+4>0
-\]
+$$
 for every real $x$. Thus $f$ is strictly increasing on $\RR$, so it has at most one real root. Since a real cubic has at least one real root, it has exactly one. The remaining two roots are nonreal and, because the coefficients are real, are complex conjugates.
 
 :::
@@ -81,9 +81,9 @@ Irreducibility of $f$ implies that $G$ acts transitively on its three roots. Com
 ::: pf-step
 
 Hence
-\[
+$$
 \Gal(L/\QQ)\cong S_3.
-\]
+$$
 
 ::: pf-proof
 
