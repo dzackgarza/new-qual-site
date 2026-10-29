@@ -52,7 +52,7 @@ So a univalent surjection produced by the Riemann mapping argument is a biholomo
 The map $f(x) = x^3$ is a bijection $\RR\to\RR$ with $f'(0)=0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
 :::
 
-[[E-ISFYB]] [[E-LXY7N]] [[E-YFL4K]]
+[[E-LXY7N]] [[E-YFL4K]]
 
 ## Montel's theorem
 

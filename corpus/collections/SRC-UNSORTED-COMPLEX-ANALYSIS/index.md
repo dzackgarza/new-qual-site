@@ -127,7 +127,6 @@ source:
   - id: E-I6W47
   - id: E-IPIKC
   - id: E-IQQAF
-  - id: E-ISFYB
   - id: E-ITVTT
   - id: E-IVHVW
     comment: Stein--Shakarchi 2.13
