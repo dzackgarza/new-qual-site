@@ -507,7 +507,7 @@ order: 110
 
 ## Differential topology
 
-Guillemin and Pollack, *Differential Topology*.
+Reference: [@GP25].
 
 - degree theory
 
@@ -539,7 +539,7 @@ Guillemin and Pollack, *Differential Topology*.
 
 ## Differential geometry
 
-Spivak, differential geometry.
+Reference: [@Spi99].
 
 - de Rham cohomology
 
