@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-10
 kind: problem
-title: The rational-translation quotient of R has the indiscrete topology
+title: 'The quotient $\RR/\QQ$ has the indiscrete topology'
 classification:
   areas:
   - topology
