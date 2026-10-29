@@ -211,7 +211,6 @@ corpus/theory/Complex_Analysis/T-HRPNO.md
 corpus/theory/Complex_Analysis/T-HSWGS.md
 corpus/theory/Complex_Analysis/T-HWBWI.md
 corpus/theory/Complex_Analysis/T-IEJFA.md
-corpus/theory/Complex_Analysis/T-ISZP3.md
 corpus/theory/Complex_Analysis/T-JH6VL.md
 corpus/theory/Complex_Analysis/T-JXDQT.md
 corpus/theory/Complex_Analysis/T-K66DJ.md

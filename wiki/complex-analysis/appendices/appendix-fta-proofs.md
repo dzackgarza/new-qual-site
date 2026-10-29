@@ -106,7 +106,7 @@ Since $\PP^1(\CC)$ is compact, $P$ is surjective by [[L-ZXBBI]], so $P(z_0) = 0$
 
 ## Singularities and omitted values
 
-[[T-ISZP3]]
+[[T-KOZO4]]
 
 [[T-HWBWI]]
 
