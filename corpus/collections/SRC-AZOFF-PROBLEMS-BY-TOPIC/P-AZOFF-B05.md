@@ -31,6 +31,10 @@ audit:
     invertible. The real solution has complex-linear differential
     -(D_s f)^(-1)D_t f and is therefore holomorphic. The source compilation
     contains no worked solution.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed the domain in part (c) as R^x R^2; it now reads R^2 x R^2.
 ---
 
 ::: {.problem}
@@ -40,12 +44,7 @@ Consider the polynomial function $f(s,t) = 9s^3 - 6st + t^2$. Let $P = (1,3)$.
 
 (b) Carefully state the conclusion of the implicit function theorem concerning the equation $f(s,t) = 0$ when $f$ is considered as a function from $\mathbb{C}^2$ to $\mathbb{C}$.
 
-(c) Use the implicit function theorem for functions from $\mathbb{R}^{\times}\mathbb{R}^2 \to \mathbb{R}^2$ to prove (b). (There are various approaches to this, including the definition of complex derivative, the Cauchy–Riemann equations, and consideration of total derivatives.)
-:::
-
-::: {.remark}
-The source typesets the domain in part (c) as $\mathbb{R}^{\times}\mathbb{R}^2$, a typographical error.
-Viewing $f$ on $\mathbb{C}^2 = \mathbb{R}^2 \times \mathbb{R}^2$ with values in $\mathbb{C} = \mathbb{R}^2$, the intended theorem is the implicit function theorem for maps $\mathbb{R}^2 \times \mathbb{R}^2 \to \mathbb{R}^2$.
+(c) Use the implicit function theorem for functions from $\mathbb{R}^2\times\mathbb{R}^2 \to \mathbb{R}^2$ to prove (b). (There are various approaches to this, including the definition of complex derivative, the Cauchy–Riemann equations, and consideration of total derivatives.)
 :::
 
 ::: {.solution}
