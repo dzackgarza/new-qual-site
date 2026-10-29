@@ -13,7 +13,7 @@ If each $f_n$ is differentiable on a bounded interval $I$, $\sum_n f_n'$ converg
 
 [[T-OXNTU]]
 
-[[T-TR526]]
+[[T-RA-WORKSHOP-D7-6-4]]
 
 [[PR-LTRLV]]
 

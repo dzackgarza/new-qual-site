@@ -87,7 +87,7 @@ Chapter: [[real-analysis/functional-analysis/index|Functional analysis]].
 
 [[T-OXNTU]]
 
-[[T-TR526]]
+[[T-RA-WORKSHOP-D7-6-4]]
 
 [[T-O4UD3]]
 
