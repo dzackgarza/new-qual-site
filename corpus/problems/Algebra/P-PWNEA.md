@@ -19,42 +19,45 @@ Determine the integral closure of $\ZZ$ in $\QQ(i)$.
 :::
 
 ::: {.solution}
-The integral closure is
-\[
-\ZZ[i].
-\]
 
-Every Gaussian integer $a+bi$ with $a,b\in\ZZ$ is integral over $\ZZ$, since it satisfies
-\[
-x^2-2ax+(a^2+b^2)=0.
-\]
-Thus $\ZZ[i]$ is contained in the integral closure.
+::: pf
 
-Conversely, let
-\[
-\alpha=a+bi\in\QQ(i)
-\]
-be integral over $\ZZ$, with $a,b\in\QQ$. Its conjugate $\bar\alpha=a-bi$ is also integral. Hence the trace and norm
-\[
-\alpha+\bar\alpha=2a,
-\qquad
-\alpha\bar\alpha=a^2+b^2
-\]
-are rational algebraic integers, hence integers.
+::: {.pf-step #contains}
+$\ZZ[i]$ is contained in the integral closure.
 
-Write
-\[
-2a=m\in\ZZ.
-\]
-Then
-\[
-(2b)^2=4(a^2+b^2)-m^2\in\ZZ.
-\]
-Since $2b\in\QQ$ and its square is an integer, $2b=k\in\ZZ$. Now
-\[
-m^2+k^2=4(a^2+b^2)
-\]
-is divisible by $4$. Squares modulo $4$ are $0$ or $1$, so $m$ and $k$ must both be even. Therefore $a,b\in\ZZ$, and hence $\alpha\in\ZZ[i]$.
+::: pf-proof
+For $a,b\in\ZZ$, the element $a+bi$ is a root of the monic polynomial $x^2-2ax+(a^2+b^2)\in\ZZ[x]$.
+:::
 
-Thus the integral closure of $\ZZ$ in $\QQ(i)$ is exactly $\ZZ[i]$.
+:::
+
+::: {.pf-step #trace-norm}
+If $\alpha=a+bi$ with $a,b\in\QQ$ is integral over $\ZZ$, then $2a\in\ZZ$ and $a^2+b^2\in\ZZ$.
+
+::: pf-proof
+Complex conjugation is an automorphism of $\QQ(i)$ fixing $\ZZ$, so $\bar\alpha=a-bi$ is integral too. Sums and products of integral elements are integral, so $\alpha+\bar\alpha=2a$ and $\alpha\bar\alpha=a^2+b^2$ are rational numbers integral over $\ZZ$. Since $\ZZ$ is integrally closed in $\QQ$, both lie in $\ZZ$.
+:::
+
+:::
+
+::: {.pf-step #reverse}
+If $\alpha=a+bi$ with $a,b\in\QQ$ is integral over $\ZZ$, then $a,b\in\ZZ$.
+
+::: pf-proof
+By step [](#trace-norm){.pf-ref}, $m\coloneqq2a\in\ZZ$ and $(2b)^2=4(a^2+b^2)-m^2\in\ZZ$. A rational number whose square is an integer is an integer, so $k\coloneqq2b\in\ZZ$. Then $m^2+k^2=4(a^2+b^2)\equiv0\pmod4$. Squares are $0$ or $1$ modulo $4$, so $m^2\equiv k^2\equiv0\pmod 4$, and $m,k$ are even. Hence $a,b\in\ZZ$.
+:::
+
+:::
+
+::: pf-step
+The integral closure of $\ZZ$ in $\QQ(i)$ is $\boxed{\ZZ[i]}$.
+
+::: pf-proof
+Every element of $\QQ(i)$ is $a+bi$ with $a,b\in\QQ$, so steps [](#contains){.pf-ref} and [](#reverse){.pf-ref} give both inclusions.
+:::
+
+:::
+
+:::
+
 :::
