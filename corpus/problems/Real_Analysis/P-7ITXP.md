@@ -14,6 +14,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source condition 2 omitted H ⊆ E ⊆ V, so it held for every E with V = H = ∅; the statement now requires H ⊆ E ⊆ V.'
 ---
 
 ::: {.problem}
@@ -27,12 +31,12 @@ F \subseteq E \subseteq G && m(G\sm F) < \epsilon
 
 2. There exists a \( G_ \delta \) set $V$ and an \( F_ \sigma \) set $H$ such that 
 \[
-m(V\sm H) = 0
+H \subseteq E \subseteq V && m(V\sm H) = 0
 .\]
 :::
 
 ::: {.solution}
-Condition (2) is read with $H \subseteq E \subseteq V$; see the remark below. Fix an open ball $B \supseteq E$.
+Fix an open ball $B \supseteq E$.
 
 ::: pf
 
@@ -42,7 +46,7 @@ Condition (2) is read with $H \subseteq E \subseteq V$; see the remark below. Fi
 
 ::: pf-proof
 
-For each $k$, (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $m(G_k \setminus F_k) < 1/k$. Put $V = \bigcap_k G_k$, a $G_\delta$ set, and $H = \bigcup_k F_k$, an $F_\sigma$ set. Then $H \subseteq E \subseteq V$, and $V \setminus H \subseteq G_k \setminus F_k$ for each $k$, so $m(V \setminus H) < 1/k$ for every $k$.
+For each $k$, (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $m(G_k \setminus F_k) < 1/k$. Put $V = \bigcap_k G_k$, a $G_\delta$ set, and $H = \bigcup_k F_k$, an $F_\sigma$ set. Then $H \subseteq E \subseteq V$, and $V \setminus H \subseteq G_k \setminus F_k$ for each $k$, so $m(V \setminus H) < 1/k$ for every $k$, and $m(V \setminus H) = 0$.
 
 :::
 
@@ -99,8 +103,4 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: condition (2) needs $H \subseteq E \subseteq V$. As printed, it holds for every $E$ with $V = H = \emptyset$, while (1) fails for a bounded non-measurable $E$.
 :::
