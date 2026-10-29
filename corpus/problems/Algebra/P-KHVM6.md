@@ -26,67 +26,45 @@ Explain with field theory why straightedge-and-compass constructions cannot in g
 :::
 
 ::: {.solution}
-A real number constructible from $\QQ$ lies in a tower
-\[
-\QQ=K_0\subset K_1\subset\cdots\subset K_r
-\]
-with each extension degree at most $2$. Hence every constructible algebraic number has degree over $\QQ$ equal to a power of $2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #tower}
+Every real number constructible from $\QQ$ is algebraic over $\QQ$ of degree a power of $2$.
 
+::: pf-proof
+A constructible number lies in the top field of a tower $\QQ=K_0\subset K_1\subset\cdots\subset K_r$ with $[K_{i+1}:K_i]\le 2$ for each $i$. Hence $[K_r:\QQ]$ is a power of $2$, and the degree of the number divides it.
+:::
+
+:::
+
+::: pf-step
 Doubling the cube is impossible.
 
 ::: pf-proof
-
-A cube of side $1$ has volume $1$. Doubling its volume requires side length $\sqrt[3]{2}$. Its minimal polynomial is
-\[
-x^3-2,
-\]
-which is irreducible over $\QQ$ by Eisenstein at $2$. Thus
-\[
-[\QQ(\sqrt[3]{2}):\QQ]=3,
-\]
-not a power of $2$. Hence $\sqrt[3]{2}$ is not constructible.
-
+A cube of volume $2$ has side length $\sqrt[3]{2}$. Its minimal polynomial $x^3-2$ is irreducible over $\QQ$ by Eisenstein's criterion at $2$, so $[\QQ(\sqrt[3]{2}):\QQ]=3$, which is not a power of $2$. By step [](#tower){.pf-ref}, $\sqrt[3]{2}$ is not constructible.
 :::
 
 :::
 
 ::: pf-step
-
-A $60^\circ$ angle cannot be trisected by straightedge and compass.
+A $60^\circ$ angle cannot be trisected.
 
 ::: pf-proof
-
-Trisecting $60^\circ$ would construct $20^\circ$, hence $c=\cos20^\circ$. The triple-angle identity gives
-\[
-4c^3-3c=\cos60^\circ=\frac12,
-\]
-so $c$ is a root of
-\[
-8x^3-6x-1.
-\]
-This cubic has no rational root, hence is irreducible over $\QQ$. Therefore $[\QQ(c):\QQ]=3$, so $c$ is not constructible.
-
+Trisecting $60^\circ$ would construct $c=\cos 20^\circ$. The triple-angle identity gives $4c^3-3c=\cos 60^\circ=\frac12$, so $c$ is a root of $8x^3-6x-1$. By the rational root test this cubic has no rational root, so it is irreducible over $\QQ$ and $[\QQ(c):\QQ]=3$. By step [](#tower){.pf-ref}, $c$ is not constructible.
 :::
 
 :::
 
 ::: pf-step
-
 Squaring the circle is impossible.
 
 ::: pf-proof
-
-A circle of radius $1$ has area $\pi$. A square of the same area would need side length $\sqrt\pi$. Lindemann's theorem implies that $\pi$ is transcendental, hence so is $\sqrt\pi$. Every constructible number is algebraic over $\QQ$, so $\sqrt\pi$ is not constructible.
-
+A square with the area $\pi$ of the unit circle has side length $\sqrt\pi$. By Lindemann's theorem $\pi$ is transcendental, hence so is $\sqrt\pi$. By step [](#tower){.pf-ref}, $\sqrt\pi$ is not constructible.
 :::
 
 :::
 
 :::
 
-Thus each classical construction fails because the required length cannot lie in a tower of quadratic extensions of $\QQ$.
 :::
