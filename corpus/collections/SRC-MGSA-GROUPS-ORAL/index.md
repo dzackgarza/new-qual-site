@@ -15,7 +15,6 @@ provenance:
 - assets/attachments/MGSA_Group_Theory_Oral_Questions.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:

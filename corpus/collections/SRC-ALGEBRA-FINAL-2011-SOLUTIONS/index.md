@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/final2011-solns.pdf
 source:
   source_kind: compilation
-  area: algebra
   problems:
   - P-ALGFINAL11-01
   - P-ALGFINAL11-02

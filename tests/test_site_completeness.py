@@ -167,7 +167,7 @@ def test_the_filters_offer_every_value_problem_appearances_carry(built: tuple[Pa
     carried_institutions = {
         r[0].upper()
         for r in con.execute(
-            "select distinct e.institution from exam_sources e join collection_problems cp on cp.collection_id=e.id join cards c on c.id=cp.problem_id where c.kind='problem'"
+            "select distinct e.institution from source_institutions e join collection_problems cp on cp.collection_id=e.id join cards c on c.id=cp.problem_id where c.kind='problem'"
         )
     }
     carried_years = {

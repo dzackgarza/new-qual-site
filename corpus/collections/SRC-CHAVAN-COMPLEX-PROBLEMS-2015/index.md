@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/ist_ca_2015.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   sections:
   - name: A Maximum Modulus Principle for Analytic Polynomials
     problems:

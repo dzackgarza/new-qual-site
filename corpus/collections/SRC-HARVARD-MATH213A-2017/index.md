@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/McMullen_-_Advanced_Complex_Analysis.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   date:
     kind: year
     year: 2017

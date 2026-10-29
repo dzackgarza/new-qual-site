@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Azoff Problems by Topic.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   date:
     kind: unknown
   sections:

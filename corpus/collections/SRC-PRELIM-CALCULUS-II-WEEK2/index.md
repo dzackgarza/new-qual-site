@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Week2_solns.pdf
 source:
   source_kind: compilation
-  area: prelim
   problems:
   - id: P-PRECALC2-01
     comment: Problem 1

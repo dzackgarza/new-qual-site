@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Week5_solns.pdf
 source:
   source_kind: compilation
-  area: prelim
   sections:
   - name: Week 5 practice problems
     problems:

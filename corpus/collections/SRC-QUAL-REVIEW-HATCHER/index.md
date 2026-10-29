@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf
 source:
   source_kind: compilation
-  area: topology
   date:
     kind: unknown
   sections:

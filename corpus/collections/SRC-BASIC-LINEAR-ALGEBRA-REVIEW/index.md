@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Basic_Linear_Algebra_Review.pdf
 source:
   source_kind: compilation
-  area: prelim
   date:
     kind: unknown
   sections:

@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/linear_algebra_from_test2.pdf
 source:
   source_kind: compilation
-  area: applied-algebra
   sections:
   - name: Selected problems
     problems:

@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Separation_defintions.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: Useful facts to prove
     problems:

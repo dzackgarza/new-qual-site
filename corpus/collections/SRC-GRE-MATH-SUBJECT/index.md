@@ -19,7 +19,6 @@ provenance:
 - assets/attachments/Chapter-7.pdf
 source:
   source_kind: compilation
-  area: prelim
   date:
     kind: unknown
   sections:

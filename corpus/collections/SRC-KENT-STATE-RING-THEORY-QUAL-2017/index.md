@@ -12,7 +12,6 @@ provenance:
 - assets/attachments/Ring_Theory_Qual_Problems.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: General Ring Theory
     problems:

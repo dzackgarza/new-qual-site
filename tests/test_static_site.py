@@ -241,7 +241,6 @@ relations: []
 review: draft
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: year
     year: 2019

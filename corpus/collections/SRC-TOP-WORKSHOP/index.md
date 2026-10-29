@@ -235,7 +235,6 @@ source:
     - P-T05A4
     - P-T06Q1-2
     - P-T14A4
-  area: topology
 ---
 
 

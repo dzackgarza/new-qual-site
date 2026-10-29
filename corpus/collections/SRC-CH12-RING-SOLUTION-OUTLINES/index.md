@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Ch12Sltns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Chapter 12 exercises
     problems:

@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf
 source:
   source_kind: compilation
-  area: topology
   date: {kind: year, year: 2008}
   sections:
   - name: '1. Introduction'

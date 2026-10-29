@@ -11,7 +11,6 @@ relations: []
 review: draft
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   problems:

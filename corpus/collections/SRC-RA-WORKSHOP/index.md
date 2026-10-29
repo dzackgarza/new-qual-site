@@ -130,8 +130,8 @@ source:
     - P-3SSNK
     - P-DEYSQ
     - P-ZCPFV
-    - P-DFDX4
-    - P-RA-WORKSHOP-D8-SEQ1
+    - id: P-DFDX4
+      comment: January 2006, 1
     - P-4E6U3
     - P-XVHFQ
     - P-XCE4G
@@ -141,7 +141,6 @@ source:
   - name: 'Day 10: UNL Math 825/826, May 31, 2018'
     problems:
     - SRC-UNL-RA-SUMMER-2018
-  area: real-analysis
 ---
 
 ::: {.remark}

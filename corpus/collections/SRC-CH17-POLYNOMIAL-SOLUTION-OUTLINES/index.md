@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Ch17Sltns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Chapter 17 exercises
     problems:

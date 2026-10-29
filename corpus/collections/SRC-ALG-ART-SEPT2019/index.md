@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/AlgebraSept2019solutions.pdf
 source:
   source_kind: compilation
-  area: algebra
   problems:
   - P-B2P3P
   - P-PBVSZ

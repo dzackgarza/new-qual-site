@@ -23,7 +23,6 @@ provenance:
 - assets/attachments/groups.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:

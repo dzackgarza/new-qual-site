@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Big_List_of_Math_Problems.pdf
 source:
   source_kind: compilation
-  area: prelim
   date:
     kind: unknown
   sections:

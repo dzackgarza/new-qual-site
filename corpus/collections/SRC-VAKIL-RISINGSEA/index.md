@@ -13,7 +13,6 @@ provenance:
 - https://math.stanford.edu/~vakil/216blog/
 source:
   source_kind: compilation
-  area: algebraic-geometry
   sections:
   - name: Modules and Tensor Products
     problems:

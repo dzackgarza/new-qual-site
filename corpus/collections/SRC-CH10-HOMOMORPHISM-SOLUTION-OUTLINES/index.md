@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Ch10Sltns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Chapter 10 exercises
     problems:

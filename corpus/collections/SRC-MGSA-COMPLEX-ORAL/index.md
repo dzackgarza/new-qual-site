@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/MGSA_Complex_Analysis_Oral_Questions.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   date:
     kind: unknown
   sections:

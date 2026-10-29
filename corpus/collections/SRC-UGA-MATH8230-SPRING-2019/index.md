@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Mike Symplectic Topology Notes.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: Geometry and Hamiltonian flows on R2n
     problems:

@@ -13,7 +13,6 @@ provenance:
 - https://www.math.harvard.edu/media/alggeom.pdf
 source:
   source_kind: compilation
-  area: algebraic-geometry
   sections:
   - name: Curves and Riemann--Hurwitz
     problems:

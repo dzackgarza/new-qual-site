@@ -13,7 +13,6 @@ provenance:
 - https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019-c1.pdf
 source:
   source_kind: compilation
-  area: algebraic-geometry
   sections:
   - name: Affine Varieties and the Nullstellensatz
     problems:

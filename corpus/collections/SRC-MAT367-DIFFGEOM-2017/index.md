@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/DiffGeomNotes.pdf
 source:
   source_kind: compilation
-  area: topology
   date:
     kind: year
     year: 2017

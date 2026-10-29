@@ -12,7 +12,6 @@ completion: complete
 provenance: [assets/attachments/Ch13Sltns.pdf]
 source:
   source_kind: compilation
-  area: algebra
   problems:
   - id: P-CH13-6
     comment: Exercise 6

@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/ALGEBRA_REVIEW1.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: From test 3
     problems:

@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/DG Sample Problems 1.pdf
 source:
   source_kind: compilation
-  area: topology
   date:
     kind: unknown
   problems:

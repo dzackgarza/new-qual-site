@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/solhwg.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Problem set 8
     problems:

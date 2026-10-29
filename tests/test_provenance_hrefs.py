@@ -172,7 +172,6 @@ def test_origin_remark_is_not_an_href(tmp_path: Path) -> None:
                 "review: draft",
                 "source:",
                 "  source_kind: compilation",
-                "  area: algebra",
                 "  date:",
                 "    kind: unknown",
                 "---",

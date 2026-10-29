@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Ch15Sltns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Chapter 15 exercises
     problems:

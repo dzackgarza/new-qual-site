@@ -16,7 +16,6 @@ provenance:
 - assets/attachments/Emory_Qual_Problems_Arango-Pineros.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:

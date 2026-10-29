@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/UW_Algebra_Prelims_2005-2018.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:

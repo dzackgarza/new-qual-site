@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Sample_Comp_Fa03Alg.pdf
 source:
   source_kind: compilation
-  area: algebra
   problems:
   - P-ALGCOMP03-01
   - P-ALGCOMP03-02

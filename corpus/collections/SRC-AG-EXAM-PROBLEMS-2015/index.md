@@ -12,7 +12,6 @@ provenance:
 - assets/attachments/AG Exam Problems.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Intended exam-format example
     problems:

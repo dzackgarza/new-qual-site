@@ -15,7 +15,6 @@ provenance:
 - assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:

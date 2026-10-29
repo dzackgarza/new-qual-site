@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/more_calculus_from_test2.pdf
 source:
   source_kind: compilation
-  area: prelim
   sections:
   - name: Selected questions from Form GR8767
     problems:

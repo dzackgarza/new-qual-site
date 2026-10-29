@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/calculus_practice_test3.pdf
 source:
   source_kind: compilation
-  area: prelim
   sections:
   - name: Practice test questions
     problems:

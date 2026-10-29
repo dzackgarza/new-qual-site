@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Topology_Prelim_Answers_-_Unknown.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: Math 6520 Final Exam 2007
     problems:

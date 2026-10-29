@@ -12,7 +12,6 @@ provenance:
 - assets/attachments/Problems_in_Algebraic_Topology_-_Unknown.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: Manifolds and Poincaré Duality
     problems:

@@ -12,7 +12,6 @@ provenance:
 - assets/attachments/Nori_Galois_Theory_Problems.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Section 2
     problems:

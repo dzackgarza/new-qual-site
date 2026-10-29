@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Complex_Analysis_Exam_Prep_Solutions.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   date:
     kind: unknown
   sections:

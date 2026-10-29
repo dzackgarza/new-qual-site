@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/squal2.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: Section A — Point Set Topology
     problems:

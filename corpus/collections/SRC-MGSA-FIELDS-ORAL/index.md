@@ -16,7 +16,6 @@ provenance:
 - assets/attachments/MGSA_Fields_and_Galois_Theory_Oral_Questions.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Field theory and Galois theory
     problems:

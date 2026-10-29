@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Sequence_Series_(Neil_Lyall_2019).pdf
 source:
   source_kind: compilation
-  area: real-analysis
   date:
     kind: academic-term
     term: fall

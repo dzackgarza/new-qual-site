@@ -13,7 +13,6 @@ provenance:
 - http://www.mat.uniroma2.it/~ricerca/geomet/workshops/Zaidenbergnotes.pdf
 source:
   source_kind: compilation
-  area: algebraic-geometry
   sections:
   - name: General Theory
     problems:

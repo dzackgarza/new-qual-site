@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Fall_2019_Assignments.pdf
 source:
   source_kind: compilation
-  area: real-analysis
   date:
     kind: academic-term
     year: 2019

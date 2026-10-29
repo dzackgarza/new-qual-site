@@ -297,6 +297,13 @@ def test_compilation_sections_are_the_collection_listing_and_central_problem_ind
     assert item["meta"]["collection_section"] == "Day 1"
     assert item["meta"]["collection_locator"] == ""
 
+    # A compilation names its institution as an exam does, and the browser and
+    # source table carry the vocabulary's name for it.
+    assert parsed.source.institution == "uga"
+    assert item["filters"]["institution"] == ["University of Georgia"]
+    sources = {row["id"]: row for row in json.loads((work / "build" / "quarto" / "_site" / "sources.json").read_text())["rows"]}
+    assert sources["SRC-NEILNOTES"]["institution"] == "University of Georgia"
+
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES' order by section_ordinal, ordinal").fetchall()
     assert rows == [("Day 1", "P-INDEXP")]

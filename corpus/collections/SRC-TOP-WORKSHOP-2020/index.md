@@ -87,7 +87,6 @@ source:
     - P-TOP-WORKSHOP-2020-WS5-P6
     - P-TOP-WORKSHOP-2020-WS5-P7
     - P-TOP-WORKSHOP-2020-WS5-P8
-  area: topology
 ---
 
 

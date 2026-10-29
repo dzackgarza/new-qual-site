@@ -88,7 +88,6 @@ source:
     - P-G2TWX
     - P-HXR25
     - P-S2FLD
-  area: algebra
 ---
 
 

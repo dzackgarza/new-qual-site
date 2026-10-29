@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Ch9Sltns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Chapter 9 solutions
     problems:

@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/8000e.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:

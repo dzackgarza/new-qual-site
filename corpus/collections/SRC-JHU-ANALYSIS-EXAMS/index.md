@@ -13,7 +13,6 @@ relations: []
 review: draft
 schema: qual/card@1
 source:
-  area: real-analysis
   date:
     kind: unknown
   sections:

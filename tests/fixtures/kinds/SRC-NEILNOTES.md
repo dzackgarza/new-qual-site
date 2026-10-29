@@ -12,7 +12,7 @@ relations: []
 review: draft
 source:
   source_kind: compilation
-  area: algebra
+  institution: uga
   date:
     kind: academic-term
     year: 2019

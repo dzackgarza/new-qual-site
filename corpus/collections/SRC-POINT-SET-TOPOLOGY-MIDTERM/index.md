@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf
 source:
   source_kind: compilation
-  area: topology
   problems:
   - P-PSTM-01
   - P-PSTM-02

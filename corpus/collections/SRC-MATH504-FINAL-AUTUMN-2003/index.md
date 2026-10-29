@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Algebra_Final_Solns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Autumn 2003 final
     problems:

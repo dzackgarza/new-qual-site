@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Study_Guide_for_Algebra.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Groups and subgroups
     problems:

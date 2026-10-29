@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Tate_Galois_Theory_Problems.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: "October 22, 1985"
     problems:

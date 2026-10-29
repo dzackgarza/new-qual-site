@@ -15,7 +15,6 @@ provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP09_200_Algebra_Qual.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Algebra
     problems:

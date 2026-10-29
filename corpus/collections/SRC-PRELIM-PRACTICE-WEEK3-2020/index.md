@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Week3_solns.pdf
 source:
   source_kind: compilation
-  area: prelim
   sections:
   - name: Week 3 practice problems
     problems:

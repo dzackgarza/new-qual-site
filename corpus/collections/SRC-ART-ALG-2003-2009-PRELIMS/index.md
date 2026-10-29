@@ -107,7 +107,6 @@ source:
     - P-ARTALG-JU03-7
     - P-ARTALG-JU03-8
     - P-ARTALG-JU03-9
-  area: algebra
 ---
 
 

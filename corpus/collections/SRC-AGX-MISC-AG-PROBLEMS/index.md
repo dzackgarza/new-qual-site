@@ -11,7 +11,6 @@ review: draft
 completion: incomplete
 source:
   source_kind: compilation
-  area: algebraic-geometry
   sections:
   - name: Curves and Rationality
     problems:

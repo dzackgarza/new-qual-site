@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Week4_solns.pdf
 source:
   source_kind: compilation
-  area: prelim
   sections:
   - name: Week 4 practice problems
     problems:

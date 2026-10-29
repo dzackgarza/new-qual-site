@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Gompf Contact Topology.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: 1. Plane Fields and Contact Structures
     problems:

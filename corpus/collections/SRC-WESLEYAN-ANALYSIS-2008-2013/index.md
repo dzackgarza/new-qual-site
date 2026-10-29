@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/analysis_2008-2013.pdf
 source:
   source_kind: compilation
-  area: real-analysis
   date:
     kind: unknown
   sections:

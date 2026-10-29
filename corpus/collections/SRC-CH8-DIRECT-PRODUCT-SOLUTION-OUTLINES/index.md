@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/Ch8Sltns.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Chapter 8 exercises
     problems:

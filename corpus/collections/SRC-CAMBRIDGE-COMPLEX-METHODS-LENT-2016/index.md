@@ -12,7 +12,6 @@ provenance:
 - assets/attachments/Cambridge Examples Sheets.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   sections:
   - name: Example Sheet 1
     problems:

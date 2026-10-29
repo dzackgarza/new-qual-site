@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Review1.pdf
 source:
   source_kind: compilation
-  area: algebra
   sections:
   - name: Open-ended questions
     problems:

@@ -17,7 +17,6 @@ provenance:
 - assets/attachments/problemsets.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: PS1
     problems:

@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/qual18wintersol.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: year
     year: 2018

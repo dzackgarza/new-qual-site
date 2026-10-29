@@ -18,7 +18,6 @@ provenance:
 - https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw6.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: academic-term
     year: 2016

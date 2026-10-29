@@ -115,6 +115,5 @@ source:
   - P-UCTOP290-S12-12
   date:
     kind: unknown
-  area: topology
 ---
 

@@ -150,8 +150,8 @@ def load_corpus_provenance(
 
     Origin notes belong in `::: remark` blocks, not in frontmatter. A non-list
     collection `provenance` value is skipped; `qualc check` already rejects that
-    shape. Problem areas are `classification.areas` and `source.area` on exam,
-    homework, and compilation cards.
+    shape. Problem areas are `classification.areas` and `source.area` on exam
+    and homework cards.
     """
     collections: list[CollectionProvenance] = []
     problem_areas: set[str] = set()

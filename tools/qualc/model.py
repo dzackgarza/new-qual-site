@@ -257,10 +257,15 @@ class HomeworkSource(Strict):
 
 
 class CompilationSource(Strict):
-    """A compilation PDF, workshop packet, or other multi-part document."""
+    """A compilation PDF, workshop packet, or other multi-part document.
+
+    Its areas are the card's `classification.areas`: one PDF may hold papers
+    from several areas. `institution` names the department whose papers it
+    compiles, as on an exam; a packet that names no institution omits it.
+    """
 
     source_kind: Literal["compilation"]
-    area: str
+    institution: str | None = None
     date: DateSpec
     problems: list[ProblemEntry] = []
     sections: list[CollectionSection] = []

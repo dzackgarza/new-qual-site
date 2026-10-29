@@ -12,7 +12,6 @@ review: draft
 provenance: []
 source:
   source_kind: compilation
-  area: complex-analysis
   sections:
   - name: Fall 2009
     problems:

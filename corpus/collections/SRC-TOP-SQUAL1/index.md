@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/squal1.pdf
 source:
   source_kind: compilation
-  area: topology
   sections:
   - name: Section A
     problems:

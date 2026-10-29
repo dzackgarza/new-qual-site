@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/UCSD_290_Qualifying_Exams.pdf
 source:
   source_kind: compilation
-  area: topology
   date:
     kind: year
     year: 2015

@@ -856,12 +856,12 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
         select cp.problem_id, cp.collection_id, cp.section_ordinal, cp.section_name, cp.ordinal, cp.comment,
           c.title as collection_title, s.source_kind, s.year as source_year,
           case when s.source_kind='university-exam' then s.year else null end as exam_year,
-          e.institution_name as institution
+          i.institution_name as institution
         from collection_problems cp
         join cards listed on listed.id=cp.problem_id and listed.kind='problem'
         join cards c on c.id=cp.collection_id
         join sources s on s.id=cp.collection_id
-        left join exam_sources e on e.id=s.id
+        left join source_institutions i on i.id=s.id
         order by cp.problem_id, cp.collection_id, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     ):
@@ -1941,7 +1941,7 @@ def index_page(
         select
           (select count(*) from cards where kind='problem') as asked,
           (select count(*) from exam_sources) as sittings,
-          (select count(distinct institution) from exam_sources) as institutions,
+          (select count(distinct institution) from source_institutions) as institutions,
           (select count(*) from cards where kind='problem'
              and id in (select card_id from sections where section_kind = 'solution')) as solved
         """,
@@ -2050,12 +2050,12 @@ def collection_problem_index(
         con,
         """
         select cp.collection_id, cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, cp.comment,
-          source.title as collection_title, problem.title as problem_title, s.source_kind, s.year, e.institution_name as institution
+          source.title as collection_title, problem.title as problem_title, s.source_kind, s.year, i.institution_name as institution
         from collection_problems cp
         join cards source on source.id=cp.collection_id
         join cards problem on problem.id=cp.problem_id and problem.kind='problem'
         join sources s on s.id=cp.collection_id
-        left join exam_sources e on e.id=s.id
+        left join source_institutions i on i.id=s.id
         order by cp.collection_id, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     )
@@ -2151,12 +2151,13 @@ def source_table_data(
         con,
         f"""
         select c.id, c.title, c.route, s.source_kind, s.year, s.term,
-          coalesce(e.institution, '') as institution,
-          coalesce(e.institution_name, '') as institution_name,
+          coalesce(i.institution, '') as institution,
+          coalesce(i.institution_name, '') as institution_name,
           coalesce(e.area, '') as exam_area,
           {TERM_RANK} as term_rank
         from cards c join sources s on s.id=c.id
         left join exam_sources e on e.id=s.id
+        left join source_institutions i on i.id=s.id
         order by c.id
         """,
     )
@@ -2251,10 +2252,11 @@ def source_index_page(
         con,
         """
         select s.source_kind, s.year,
-          coalesce(e.institution, '') as institution,
+          coalesce(i.institution, '') as institution,
           coalesce(e.area, '') as area
         from cards c join sources s on s.id=c.id
         left join exam_sources e on e.id=s.id
+        left join source_institutions i on i.id=s.id
         """,
     )
     unlisted = {row["source_kind"] for row in collections} - set(SOURCE_KIND_HEADINGS)
@@ -2637,9 +2639,10 @@ def project(
             con,
             f"""
             select s.id, s.source_kind,
-              coalesce(e.institution, '') as institution, coalesce(e.area, '') as area, s.year,
+              coalesce(i.institution, '') as institution, coalesce(e.area, '') as area, s.year,
               {TERM_RANK} as term_rank
             from sources s left join exam_sources e on e.id=s.id
+            left join source_institutions i on i.id=s.id
             """,
         )
     }

@@ -14,7 +14,6 @@ provenance:
 - assets/attachments/Group_Theory_(No_Solns).pdf
 source:
   source_kind: compilation
-  area: algebra
   problems:
   - P-MA553-MID1-01
   - id: P-MA553-MID1-02

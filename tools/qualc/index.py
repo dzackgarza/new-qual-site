@@ -53,13 +53,15 @@ create table sources (
   date_kind text not null, year integer, term text,
   completion text not null
 );
-create table exam_sources (
-  id text primary key, institution text not null, area text not null,
+create table exam_sources (id text primary key, area text not null);
+-- Exams and compilations that name the department whose papers they hold.
+create table source_institutions (
+  id text primary key, institution text not null,
   institution_name text not null   -- the vocabulary's name for `institution`
 );
 create table textbook_sources (id text primary key, textbook text not null);
 create table homework_sources (id text primary key, area text not null);
-create table compilation_sources (id text primary key, area text not null);
+create table compilation_sources (id text primary key);
 create table collection_problems (
   collection_id text not null,
   section_ordinal integer,
@@ -155,15 +157,16 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         if isinstance(p.card, CollectionCard):
             # One registry check per variant, matching the union.
             source = p.card.source
-            if isinstance(source, ExamSource) and source.institution not in vocab["institutions"]:
+            institution = source.institution if isinstance(source, (ExamSource, CompilationSource)) else None
+            if institution is not None and institution not in vocab["institutions"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_INSTITUTION,
                         where,
-                        f"unknown institution {source.institution!r}",
+                        f"unknown institution {institution!r}",
                     )
                 )
-            if isinstance(source, (ExamSource, HomeworkSource, CompilationSource)) and source.area not in vocab["areas"]:
+            if isinstance(source, (ExamSource, HomeworkSource)) and source.area not in vocab["areas"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_AREA,
@@ -290,8 +293,12 @@ def build(parsed: list[ParsedCard], db_path: Path, institution_names: dict[str, 
             match c.source:
                 case ExamSource():
                     con.execute(
-                        "insert into exam_sources values (?,?,?,?)",
-                        (c.id, c.source.institution, c.source.area, institution_names[c.source.institution]),
+                        "insert into exam_sources values (?,?)",
+                        (c.id, c.source.area),
+                    )
+                    con.execute(
+                        "insert into source_institutions values (?,?,?)",
+                        (c.id, c.source.institution, institution_names[c.source.institution]),
                     )
                     _insert_problems(con, c.id, None, None, c.source.problems)
                 case TextbookSource():
@@ -309,9 +316,14 @@ def build(parsed: list[ParsedCard], db_path: Path, institution_names: dict[str, 
                     _insert_problems(con, c.id, None, None, c.source.problems)
                 case CompilationSource():
                     con.execute(
-                        "insert into compilation_sources values (?,?)",
-                        (c.id, c.source.area),
+                        "insert into compilation_sources values (?)",
+                        (c.id,),
                     )
+                    if c.source.institution is not None:
+                        con.execute(
+                            "insert into source_institutions values (?,?,?)",
+                            (c.id, c.source.institution, institution_names[c.source.institution]),
+                        )
                     if c.source.sections:
                         for section_ordinal, section in enumerate(c.source.sections):
                             _insert_problems(con, c.id, section_ordinal, section.name, section.problems)

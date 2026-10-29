@@ -21,7 +21,6 @@ provenance:
 - assets/attachments/fields.pdf
 source:
   source_kind: compilation
-  area: algebra
   date:
     kind: unknown
   sections:
