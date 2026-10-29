@@ -19,26 +19,28 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'The source does not say what kind of ring R is; the solution treats commutative rings with identity, and the zero ring satisfies the unit condition without being local, so the statement now assumes R nonzero, commutative, with identity.'
 ---
 
 ::: {.exercise}
-Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a unit.
+Let $R$ be a nonzero commutative ring with identity. Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a unit.
 :::
 
 ::: {.solution}
-Assume \(R\) is a commutative ring with identity.
-
-Suppose first that \(R\) is local with unique maximal ideal \(\mathfrak m\). The nonunits of \(R\) are exactly the elements of \(\mathfrak m\). If both \(x\) and \(1-x\) were nonunits, then both would lie in \(\mathfrak m\), hence
-\[
+Suppose first that $R$ is local with unique maximal ideal $\mathfrak m$. The nonunits of $R$ are exactly the elements of $\mathfrak m$. If both $x$ and $1-x$ were nonunits, then both would lie in $\mathfrak m$, hence
+$$
 1=x+(1-x)\in\mathfrak m,
-\]
-a contradiction. Thus for every \(x\), at least one of \(x\) or \(1-x\) is a unit.
+$$
+a contradiction. Thus for every $x$, at least one of $x$ or $1-x$ is a unit.
 
-Conversely, assume that for every \(x\in R\), either \(x\) or \(1-x\) is a unit. Let \(\mathfrak m,\mathfrak n\) be maximal ideals. If they were distinct, choose \(a\in\mathfrak m\setminus\mathfrak n\). Since \(\mathfrak n\) is maximal and \(a\notin\mathfrak n\), we have \(\mathfrak n+(a)=R\), so
-\[
+Conversely, assume that for every $x\in R$, either $x$ or $1-x$ is a unit. Let $\mathfrak m,\mathfrak n$ be maximal ideals. If they were distinct, choose $a\in\mathfrak m\setminus\mathfrak n$. Since $\mathfrak n$ is maximal and $a\notin\mathfrak n$, we have $\mathfrak n+(a)=R$, so
+$$
 1=b+ra
-\]
-for some \(b\in\mathfrak n\), \(r\in R\). Put \(x=ra\). Then \(x\in\mathfrak m\), so \(x\) is not a unit, while \(1-x=b\in\mathfrak n\), so \(1-x\) is not a unit. This contradicts the hypothesis.
+$$
+for some $b\in\mathfrak n$, $r\in R$. Put $x=ra$. Then $x\in\mathfrak m$, so $x$ is not a unit, while $1-x=b\in\mathfrak n$, so $1-x$ is not a unit. This contradicts the hypothesis.
 
-Hence \(R\) has a unique maximal ideal, so \(R\) is local.
+Hence $R$ has at most one maximal ideal. Since $R\neq 0$, Zorn's lemma gives a maximal ideal, so $R$ has exactly one and is local.
 :::
