@@ -196,12 +196,6 @@ This is exactly the combination of steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 
-::: pf-qed
-
-Step [](#s5){.pf-ref} identifies and justifies both requested adjoints.
-
-:::
-
 :::
 
 :::
