@@ -22,7 +22,7 @@ A \dfn{deformation retraction} of $X$ onto $A$ is a [[D-Z7I7F|homotopy]] $F\colo
 $$
 F_0 = \id_X, \qquad F_1(X) \subseteq A, \qquad F_t(a) = a \text{ for all } a\in A
 .$$
-The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$.
+The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$ [@Hat02].
 :::
 
 ::: {.remark}
@@ -32,8 +32,4 @@ Hence $\iota$ is a [[D-HFR32|homotopy equivalence]] with homotopy inverse $r$.
 
 ::: {.remark}
 Two spaces $X$ and $Y$ are homotopy equivalent if and only if there exists a space $Z$ containing both $X$ and $Y$ as deformation retracts; for a homotopy equivalence $f\colon X\to Y$, the [[D-RMQ7W|mapping cylinder]] of $f$ is such a $Z$.
-:::
-
-::: {.concept}
-[@Hat02].
 :::
