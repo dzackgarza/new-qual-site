@@ -23,54 +23,44 @@ audit:
 
 ::: {.problem}
 For an $R$-module $X$, write
-\[
+$$
 X^\vee=\Hom_R(X,R).
-\]
+$$
 Define the evaluation map
-\[
+$$
 \theta_X:X\to X^{\vee\vee},
 \qquad
 \theta_X(x)(\lambda)=\lambda(x).
-\]
+$$
 Show that $\theta$ is natural: for every $R$-linear map $f:A\to B$,
-\[
+$$
 f^{\vee\vee}\circ\theta_A=\theta_B\circ f.
-\]
+$$
 :::
 
 ::: {.solution}
-The dual map is
-\[
-f^\vee:B^\vee\to A^\vee,
-\qquad
-f^\vee(g)=g\circ f,
-\]
-and the double dual map is
-\[
-f^{\vee\vee}:A^{\vee\vee}\to B^{\vee\vee},
-\qquad
-f^{\vee\vee}(\Phi)=\Phi\circ f^\vee.
-\]
+The dual map is $f^\vee:B^\vee\to A^\vee$, $f^\vee(g)=g\circ f$, and the double dual map is $f^{\vee\vee}:A^{\vee\vee}\to B^{\vee\vee}$, $f^{\vee\vee}(\Phi)=\Phi\circ f^\vee$.
 
-Let $a\in A$. To prove equality of the two elements of $B^{\vee\vee}$, evaluate both at an arbitrary $g\in B^\vee$.
+::: pf
 
-On one hand,
-\[
-\bigl(f^{\vee\vee}(\theta_A(a))\bigr)(g)
-=\theta_A(a)(f^\vee(g))
-=(g\circ f)(a)
-=g(f(a)).
-\]
-On the other hand,
-\[
-\theta_B(f(a))(g)=g(f(a)).
-\]
-Thus
-\[
-f^{\vee\vee}(\theta_A(a))=\theta_B(f(a))
-\]
-for every $a\in A$, proving
-\[
-f^{\vee\vee}\circ\theta_A=\theta_B\circ f.
-\]
+::: {.pf-step #pointwise}
+For every $a\in A$ and $g\in B^\vee$, $\bigl(f^{\vee\vee}(\theta_A(a))\bigr)(g)=\theta_B(f(a))(g)$.
+
+::: pf-proof
+The left side is $\theta_A(a)(f^\vee(g))=(g\circ f)(a)=g(f(a))$, and the right side is $g(f(a))$ by definition of $\theta_B$.
+:::
+
+:::
+
+::: pf-step
+$f^{\vee\vee}\circ\theta_A=\theta_B\circ f$.
+
+::: pf-proof
+By step [](#pointwise){.pf-ref}, the elements $f^{\vee\vee}(\theta_A(a))$ and $\theta_B(f(a))$ of $B^{\vee\vee}$ agree at every $g\in B^\vee$, so they are equal for every $a\in A$.
+:::
+
+:::
+
+:::
+
 :::
