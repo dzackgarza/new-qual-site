@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-JES3E
 kind: problem
 title: $\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx$ solves the Laplace Cauchy problem on the
-  disk with data $\sin(nx)/n$, and $\limsup_n|u|=\infty$ at some points
+  disk with data $\sin(nx)/n$, and $\limsup_n\abs{u}=\infty$ at some points
 classification:
   areas:
   - complex-analysis
@@ -22,69 +22,66 @@ audit:
 ::: {.problem}
 Show that the function $u=u(x,y)$ given by
 $$
-u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\quad \text{for}\ n\in {\mathbf N}
+u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\quad \text{for}\ n\in \NN
 $$
 is the solution on $D=\{(x,y)\ | x^2+y^2<1\}$ of the Cauchy problem for the Laplace equation
-$$\frac{\partial ^2u}{\partial x^2}+\frac{\partial ^2u}{\partial y^2}=0,\quad
-u(x,0)=0,\quad \frac{\partial u}{\partial y}(x,0)=\frac{\sin nx}{n}.$$
+$$
+\frac{\partial ^2u}{\partial x^2}+\frac{\partial ^2u}{\partial y^2}=0,\quad
+u(x,0)=0,\quad \frac{\partial u}{\partial y}(x,0)=\frac{\sin nx}{n}.
+$$
 
-Show that there exist points $(x,y)\in D$ such that $\displaystyle{\limsup_{n\to\infty} |u(x,y)|=\infty}$.
+Show that there exist points $(x,y)\in D$ such that $\limsup_{n\to\infty} \abs{u(x,y)}=\infty$.
 :::
 
 ::: {.solution}
-**Goal:** (1) Verify that $u_n(x,y) = \frac{e^{ny} - e^{-ny}}{2n^2}\sin(nx)$ solves, on $D = \{x^2 + y^2 < 1\}$, the Cauchy problem $\Delta u = 0$, $u(x,0) = 0$, $u_y(x,0) = \frac{\sin(nx)}{n}$; (2) show there exist points $(x,y) \in D$ with $\limsup_{n \to \infty} \abs{u_n(x,y)} = \infty$.
+Write $u_n$ for the function $u$ with index $n$.
 
 ::: pf
 
-::: {.pf-step #boundary-conditions}
-Verify the boundary conditions at $y = 0$.
+::: pf-step
+$u_n(x,0) = 0$ and $\dd{u_n}{y}(x,0) = \frac{\sin(nx)}{n}$.
 
 ::: pf-proof
-$u_n(x,0) = \frac{e^0 - e^0}{2n^2}\sin(nx) = 0$. And $\dd{u_n}{y} = \frac{n e^{ny} + n e^{-ny}}{2n^2}\sin(nx) = \frac{e^{ny} + e^{-ny}}{2n}\sin(nx)$, so $\dd{u_n}{y}(x,0) = \frac{2}{2n}\sin(nx) = \frac{\sin(nx)}{n}$.
+$u_n(x,0) = \frac{e^0 - e^0}{2n^2}\sin(nx) = 0$, and
+$$
+\dd{u_n}{y} = \frac{e^{ny} + e^{-ny}}{2n}\sin(nx),
+$$
+which equals $\frac{\sin(nx)}{n}$ at $y = 0$.
 :::
 
 :::
 
-::: {.pf-step #laplace-equation}
-Verify $\Delta u_n = 0$ on $D$.
+::: pf-step
+$\Delta u_n = 0$ on $D$.
 
 ::: pf-proof
-${\partial^2 u_n \over \partial x^2} = -n^2 u_n$ (since ${d^2 \over dx^2}\sin(nx) = -n^2\sin(nx)$), and ${\partial^2 u_n \over \partial y^2} = \frac{n^2 e^{ny} - n^2 e^{-ny}}{2n^2}\sin(nx) = \frac{e^{ny} - e^{-ny}}{2}\sin(nx) = n^2 u_n$. Hence $u_{xx} + u_{yy} = -n^2 u_n + n^2 u_n = 0$.
+$\frac{\partial^2 u_n}{\partial x^2} = -n^2 u_n$ and $\frac{\partial^2 u_n}{\partial y^2} = \frac{e^{ny} - e^{-ny}}{2}\sin(nx) = n^2 u_n$.
 :::
 
 :::
 
-::: {.pf-step #choose-x}
-For (2), choose $x \in (0,1)$ with $x/\pi$ irrational.
+::: {.pf-step #sin-bound}
+If $x/\pi$ is irrational, then $\abs{\sin(nx)} \ge 1/2$ for infinitely many $n$.
 
 ::: pf-proof
-Any such $x$ has $\abs{x} < 1$, so $(x,y) \in D$ whenever $y$ is small enough that $x^2 + y^2 < 1$; e.g. $x = 1/\pi$ and $y = 1/2$ works since $1/\pi^2 + 1/4 < 1$.
+Since $x/(2\pi)$ is irrational, the sequence $nx \bmod 2\pi$ is dense in $[0, 2\pi]$, so it enters the arc $[\pi/6, 5\pi/6]$, where $\sin \geq 1/2$, infinitely often.
 :::
 
 :::
 
-::: {.pf-step #subsequence-sin-bound}
-Along a subsequence of $n$'s, $\abs{\sin(nx)} \ge 1/2$.
+::: pf-step
+At every $(x,y)\in D$ with $y \neq 0$ and $x/\pi$ irrational, for example $(1/\pi, 1/2)$, $\limsup_{n\to\infty}\abs{u_n(x,y)} = \infty$.
 
 ::: pf-proof
-The sequence $nx \bmod 2\pi$ is equidistributed (Weyl's criterion), because $x/2\pi = (x/\pi)/2$ is irrational; hence $\abs{\sin(nx)} \ge 1/2$ for infinitely many $n$.
+Along the $n$ of step [](#sin-bound){.pf-ref},
+$$
+\abs{u_n(x,y)} \ge \frac{e^{n\abs{y}} - e^{-n\abs{y}}}{4n^2},
+$$
+which tends to $\infty$ because $\abs{y} > 0$.
+The point $(1/\pi, 1/2)$ lies in $D$ since $1/\pi^2 + 1/4 < 1$.
 :::
 
 :::
 
-::: {.pf-step #u-unbounded}
-For fixed $y > 0$, $\abs{u_n(x,y)} \to \infty$ along that subsequence.
-
-::: pf-proof
-Along the subsequence of step [](#subsequence-sin-bound){.pf-ref}, $\abs{u_n(x,y)} \ge \frac{1}{2}\frac{e^{ny} - e^{-ny}}{2n^2} \ge \frac{e^{ny}}{4n^2}\qty(1 - e^{-2ny})$, and for fixed $y > 0$, $e^{ny}/n^2 \to \infty$ and $1 - e^{-2ny} \to 1$. (For $y < 0$ the same argument applies with $e^{-ny}$ in place of $e^{ny}$.)
 :::
-
-:::
-
-::: pf-qed
-Steps [](#boundary-conditions){.pf-ref} and [](#laplace-equation){.pf-ref} verify (1); steps [](#choose-x){.pf-ref}, [](#subsequence-sin-bound){.pf-ref} and [](#u-unbounded){.pf-ref} verify (2) at any point $(x,y) \in D$ with $y \neq 0$ and $x/\pi$ irrational, e.g. $(1/\pi, 1/2)$.
-:::
-
-:::
-
 :::
