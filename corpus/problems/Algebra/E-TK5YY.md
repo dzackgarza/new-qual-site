@@ -114,13 +114,21 @@ $I_n$ ($n\ge2$) is diagonal with the single eigenvalue $1$.
 
 :::
 
+::: pf-step
+(h) If $T$ is diagonalizable, its minimal polynomial $m_T$ is squarefree.
+
+::: pf-proof
+Let $\lambda_1,\ldots,\lambda_r$ be the distinct eigenvalues of $T$. A basis of eigenvectors is killed by $\prod_i(T-\lambda_iI)$, so $m_T$ divides the squarefree polynomial $\prod_i(x-\lambda_i)$.
+:::
+
+:::
+
 ::: {.pf-step #diag-iff-eigenspace-decomp}
-(h), (i) $T\colon V\to V$ is diagonalizable if and only if $V=\bigoplus_i\ker(T-\lambda_iI)$, and then $m_T=\prod_i(x-\lambda_i)$ is squarefree.
+(i) $T\colon V\to V$ is diagonalizable if and only if $V=\bigoplus_i\ker(T-\lambda_iI)$.
 
 ::: pf-proof
 Eigenvectors for distinct eigenvalues are linearly independent, so the sum $\sum_i\ker(T-\lambda_iI)$ is direct.
 $T$ is diagonalizable exactly when $V$ has a basis of eigenvectors, that is, when this sum is $V$.
-In that case $\prod_i(T-\lambda_iI)$ kills every basis vector, so $m_T$ divides the squarefree polynomial $\prod_i(x-\lambda_i)$.
 :::
 
 :::
@@ -131,7 +139,7 @@ In that case $\prod_i(T-\lambda_iI)$ kills every basis vector, so $m_T$ divides 
 ::: pf-proof
 $T^n=I$, so $m_T\mid x^n-1$; and $v_0,Tv_0,\ldots,T^{n-1}v_0$ is a basis, so no nonzero polynomial of degree less than $n$ kills $T$.
 Hence $m_T=x^n-1$.
-Over $\CC$ it has the $n$ distinct roots $e^{2\pi ik/n}$, so by step [](#diag-iff-eigenspace-decomp){.pf-ref} $T$ is diagonalizable.
+Over $\CC$ it has the $n$ distinct roots $\zeta_k=e^{2\pi ik/n}$, so $x^n-1=\prod_k(x-\zeta_k)$ is a product of pairwise coprime factors and the kernel decomposition theorem gives $V=\bigoplus_k\ker(T-\zeta_kI)$. By step [](#diag-iff-eigenspace-decomp){.pf-ref}, $T$ is diagonalizable.
 :::
 
 :::
