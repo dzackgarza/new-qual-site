@@ -110,7 +110,6 @@ semisimple.
 
 Assume conversely that $M$ is semisimple as a $\CC[x]$-module. Then
 $$
-\boxed{
 M
 =
 \bigoplus_{a\in\CC} M_a,
@@ -118,7 +117,6 @@ M
 M_a
 =
 \{m\in M:xm=am\}.
-}
 $$
 
 ::: pf-proof
@@ -263,26 +261,13 @@ a direct sum of simple $R$-modules. Hence $M$ is semisimple.
 
 ::: {.pf-step #s8}
 
-Therefore
-$$
-\boxed{
-M\text{ is semisimple over }\CC[x,y]
-\iff
-M|_{\CC[x]}\text{ and }M|_{\CC[y]}\text{ are semisimple}.
-}
-$$
+The statement is $\boxed{\text{true}}$: an $R$-module $M$ is semisimple if and only if $M|_{\CC[x]}$ and $M|_{\CC[y]}$ are semisimple.
 
 ::: pf-proof
 
 Step [](#s2){.pf-ref} proves the forward implication. Step [](#s7){.pf-ref} proves the converse.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s8){.pf-ref} proves that the statement in the problem is true.
 
 :::
 
