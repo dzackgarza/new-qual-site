@@ -24,8 +24,6 @@ Show that there does not exist a retraction of $S^n \times S^n$ to $A$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that for $n \ge 1$, there exists no retraction $r: S^n \times S^n \to A$, where $A = (S^n \times \{p\}) \cup (\{p\} \times S^n) \subset S^n \times S^n$.
-
 ::: pf
 
 ::: pf-step
