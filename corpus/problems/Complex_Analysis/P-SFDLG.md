@@ -16,67 +16,100 @@ review: draft
 ---
 
 ::: {.problem}
-\envlist
-
-a. Show that in polar coordinates, the Cauchy-Riemann equations take the form
-\[
+(a) Show that in polar coordinates, the Cauchy-Riemann equations take the form
+$$
 \frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \text { and } \frac{\partial v}{\partial r}=-\frac{1}{r} \frac{\partial u}{\partial \theta}
-.\]
+.$$
 
-b. Use (a) to show that the logarithm function, defined as 
-\[
+(b) Use (a) to show that the logarithm function, defined as 
+$$
 \Log z=\log r+i \theta \text { where } z=r e^{i \theta} \text { with }-\pi<\theta<\pi
-.\]
+.$$
 is holomorphic on the region $r> 0, -\pi < \theta < \pi$.
 
 Show also that this branch cannot be extended continuously across the negative
 real axis to all of $\CC\setminus\{0\}$.
+:::
+
+::: {.solution title="(a)"}
+Write $x=r\cos\theta$, $y=r\sin\theta$ with $r>0$.
+
+::: pf
+
+::: {.pf-step #chain}
+
+$u_r=u_x\cos\theta+u_y\sin\theta$, $\frac1ru_\theta=-u_x\sin\theta+u_y\cos\theta$, and likewise for $v$.
+
+::: pf-proof
+
+This is the chain rule, using $x_r=\cos\theta$, $y_r=\sin\theta$, $x_\theta=-r\sin\theta$, $y_\theta=r\cos\theta$.
 
 :::
 
-::: {.solution}
-For (a), write $x=r\cos\theta$ and $y=r\sin\theta$. Then
-\[
-u_r&=u_x\cos\theta+u_y\sin\theta
-=v_y\cos\theta-v_x\sin\theta
-={1\over r}v_\theta,\\
-v_r&=v_x\cos\theta+v_y\sin\theta
-=-u_y\cos\theta+u_x\sin\theta
-=-{1\over r}u_\theta,
-\]
-using the Cartesian Cauchy--Riemann equations $u_x=v_y$ and $u_y=-v_x$.
+:::
 
-For (b), take
-\[
-u(r,\theta)=\log r,
-\qquad
-v(r,\theta)=\theta.
-\]
-Then
-\[
-u_r={1\over r}={1\over r}v_\theta,
-\qquad
-v_r=0=-{1\over r}u_\theta,
-\]
-so the principal branch $\Log z=\log r+i\theta$ is holomorphic on
-\[
-\CC\setminus(-\infty,0]
-=\{re^{i\theta}:r>0,\ -\pi<\theta<\pi\}.
-\]
-In particular it is continuous on that domain.
+::: pf-step
 
-It cannot be extended continuously across the negative real axis. Indeed,
-\[
-z_k^+=e^{i(\pi-1/k)},
+The equations $u_x=v_y$, $u_y=-v_x$ hold if and only if $u_r=\frac1rv_\theta$ and $v_r=-\frac1ru_\theta$.
+
+::: pf-proof
+
+By step [](#chain){.pf-ref},
+$$
+\begin{aligned}
+u_r-\tfrac1rv_\theta&=(u_x-v_y)\cos\theta+(u_y+v_x)\sin\theta,\\
+v_r+\tfrac1ru_\theta&=-(u_x-v_y)\sin\theta+(u_y+v_x)\cos\theta.
+\end{aligned}
+$$
+The coefficient matrix is a rotation, hence invertible, so the left sides vanish exactly when $u_x-v_y$ and $u_y+v_x$ vanish.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.solution title="(b)"}
+On the region $\Omega\coloneqq\theset{re^{i\theta}: r>0,\ -\pi<\theta<\pi}=\CC\setminus(-\infty,0]$, take $u(r,\theta)=\log r$ and $v(r,\theta)=\theta$.
+
+::: pf
+
+::: pf-step
+
+$\Log$ is holomorphic on $\Omega$.
+
+::: pf-proof
+
+The functions $u,v$ are smooth on $\Omega$, so $\Log$ is real differentiable there, and
+$$
+u_r=\frac1r=\frac1rv_\theta,
 \qquad
-z_k^-=e^{-i(\pi-1/k)}
-\]
-both tend to $-1$, while
-\[
-\Log z_k^+=i(\pi-1/k)\to i\pi,
-\qquad
-\Log z_k^-=-i(\pi-1/k)\to-i\pi.
-\]
-The two one-sided limits disagree, so no continuous extension to $-1$, and
-hence no continuous extension of this branch to all of $\CC^\times$, exists.
+v_r=0=-\frac1ru_\theta.
+$$
+By part (a), the Cauchy--Riemann equations hold on $\Omega$, so $\Log$ is holomorphic there.
+
+:::
+
+:::
+
+::: pf-step
+
+$\Log$ has no continuous extension to $\CC\setminus\{0\}$.
+
+::: pf-proof
+
+The points $z_k^\pm=e^{\pm i(\pi-1/k)}$ lie in $\Omega$ and tend to $-1$, while
+$$
+\Log z_k^\pm=\pm i(\pi-1/k)\longrightarrow\pm i\pi.
+$$
+The two limits differ, so $\Log$ has no continuous extension to $-1$.
+
+:::
+
+:::
+
+:::
+
 :::
