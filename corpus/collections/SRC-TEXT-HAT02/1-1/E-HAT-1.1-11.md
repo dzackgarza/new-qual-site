@@ -22,8 +22,6 @@ If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, sh
 :::
 
 ::: {.solution}
-**Goal:** Prove that the inclusion $i: X_0 \hookrightarrow X$ induces an isomorphism $i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ on fundamental groups.
-
 ::: pf
 
 ::: {.pf-step #key-lemma-path-component}
