@@ -71,12 +71,6 @@ It fixes $F(z_1)\ne0$, so $\mu=1$ and $\varphi=\id$, that is, $f=\tilde f$.
 
 :::
 
-::: pf-qed
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give existence and uniqueness.
-
-:::
-
 :::
 
 :::
