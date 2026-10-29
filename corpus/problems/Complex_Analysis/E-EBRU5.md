@@ -13,22 +13,27 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source states $\int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}$ with no request and no branch. On $(0,1)$ the radicand is negative and the other branch gives $-i\pi/2$; the statement now fixes the branch $\sqrt{x^2-1}=-i\sqrt{1-x^2}$ and asks to show the identity.'
 ---
 
 ::: {.exercise}
-\[
-I \definedas \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
-.\]
-
+Take the branch $\sqrt{x^2-1}=-i\sqrt{1-x^2}$ on $(0,1)$. Show that
+$$
+I \coloneqq \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}.
+$$
 :::
 
 ::: {.solution}
-On $(0,1)$ the radicand is negative, so $\sqrt{x^2-1}=\pm i\sqrt{1-x^2}$ and the value of $I$ depends on the branch. The stated value holds for $\sqrt{x^2-1}=-i\sqrt{1-x^2}$; the other branch gives $-i\pi/2$. Put $J\definedas\int_{-1}^1{dx\over\sqrt{1-x^2}}$.
+The other branch, $\sqrt{x^2-1}=i\sqrt{1-x^2}$, gives $-i\pi/2$. Put $J\coloneqq\int_{-1}^1{dx\over\sqrt{1-x^2}}$.
 
 ::: pf
 
 ::: {.pf-step #boundary-values}
-Let $g(z)\definedas\sqrt{z-1}\,\sqrt{z+1}$ with principal square roots. Then $g$ is holomorphic on $\CC\setminus[-1,1]$, and for $-1<x<1$ its boundary values are $g(x+i0)=i\sqrt{1-x^2}$ from above and $g(x-i0)=-i\sqrt{1-x^2}$ from below.
+Let $g(z)\coloneqq\sqrt{z-1}\,\sqrt{z+1}$ with principal square roots. Then $g$ is holomorphic on $\CC\setminus[-1,1]$, and for $-1<x<1$ its boundary values are $g(x+i0)=i\sqrt{1-x^2}$ from above and $g(x-i0)=-i\sqrt{1-x^2}$ from below.
 
 ::: pf-proof
 Each factor is holomorphic off its cut, $(-\infty,1]$ and $(-\infty,-1]$ respectively. On $(-\infty,-1)$ both factors change sign across the real axis, so their product is continuous there and extends holomorphically across it. For $-1<x<1$, $\sqrt{x+1}$ is continuous and positive, while $\sqrt{x-1\pm i0}=\pm i\sqrt{1-x}$.
@@ -54,19 +59,19 @@ Let $\Gamma_\eps$ be the dogbone contour around the slit, oriented counterclockw
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_00-37-42.png)
 
 By Cauchy's theorem on the region between them, $\Gamma_\eps$ and $\abs z=2$ give the same integral. On the circle about $\pm1$, $\abs{z^2-1}=\eps\abs{z\pm1}\ge\eps(2-\eps)\ge\eps$ for $\eps<1$, so that circle contributes at most $2\pi\eps\cdot\eps^{-1/2}\to0$. By step [](#boundary-values){.pf-ref} the edges contribute, as $\eps\to0$,
-\[
+$$
 \int_1^{-1}{dx\over i\sqrt{1-x^2}}+\int_{-1}^1{dx\over -i\sqrt{1-x^2}}
-=\qty{-{1\over i}-{1\over i}}J=2iJ
-.\]
+=\qty{-{1\over i}-{1\over i}}J=2iJ.
+$$
 :::
 
 :::
 
 ::: pf-qed
 Steps [](#circle-integral-2pi-i){.pf-ref} and [](#circle-integral-2iJ){.pf-ref} give $J=\pi$. The integrand $1/\sqrt{1-x^2}$ is even, so with $\sqrt{x^2-1}=-i\sqrt{1-x^2}$,
-\[
-I=\int_0^1{dx\over -i\sqrt{1-x^2}}=i\cdot{J\over2}={i\pi\over2}
-.\]
+$$
+I=\int_0^1{dx\over -i\sqrt{1-x^2}}=i\cdot{J\over2}={i\pi\over2}.
+$$
 :::
 
 :::
