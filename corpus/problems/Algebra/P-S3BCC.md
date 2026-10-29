@@ -45,7 +45,7 @@ $g\in\ker\gamma$ means $c_g=\operatorname{id}_G$, that is, $c_g(h)=h$ for every 
 
 ::: pf-qed
 
-Multiplying $ghg^{-1}=h$ on the right by $g$ shows that it is equivalent to $gh=hg$. So $g\in\ker\gamma$ exactly when $g$ commutes with every $h\in G$, that is, when $g\in Z(G)$. Hence $\ker\gamma=Z(G)$, and the first isomorphism theorem gives $\operatorname{Inn}(G)\cong G/Z(G)$.
+Multiplying $ghg^{-1}=h$ on the right by $g$ shows that it is equivalent to $gh=hg$. So $g\in\ker\gamma$ exactly when $g$ commutes with every $h\in G$, that is, when $g\in Z(G)$. Hence $\ker\gamma=Z(G)$, and the first isomorphism theorem gives $\Inn(G)\cong G/Z(G)$.
 
 :::
 
