@@ -22,19 +22,30 @@ V(I(X)) = \bar{X}
 :::
 
 ::: {.solution}
-$\bar{X} \subseteq V(I(X))$:
-We have $X\subseteq V(I(X))$, and $V(J)$ is closed in the Zariski topology for any ideal $J \normal k[x_1, \cdots, x_{n}]$ by definition, so $V(I(X))$ is closed.
-Thus
-$$
-X\subseteq V(I(X)) \text{ and } V(I(X))\text{ closed } \implies \bar{X} \subseteq V(I(X))
-,$$
-since $\bar{X}$ is the intersection of all closed sets containing $X$.
+::: pf
 
-$V(I(X)) \subseteq \bar{X}$:
-Noting that $V({-})$ and $I({-})$ are individually order-reversing, $V(I({-}))$ is order-*preserving*, so
-$$
-X\subseteq \bar{X} \implies V(I(X)) \subseteq V(I(\bar{X})) = \bar{X}
-,$$
-where the last equality uses part (i) of the Nullstellensatz: if $X$ is an affine variety, then $V(I(X)) = X$.
-This applies because $\bar{X}$ is always closed, and the closed sets in the Zariski topology are precisely the affine varieties.
+::: {.pf-step #closure-in}
+$\bar{X} \subseteq V(I(X))$.
+
+::: pf-proof
+Every $f \in I(X)$ vanishes on $X$, so $X \subseteq V(I(X))$.
+The set $V(I(X))$ is Zariski closed by definition.
+The closure $\bar{X}$ is the intersection of all closed sets that contain $X$, so $\bar{X} \subseteq V(I(X))$.
+:::
+
+:::
+
+::: pf-step
+$V(I(X)) \subseteq \bar{X}$, and hence $V(I(X)) = \bar{X}$.
+
+::: pf-proof
+The closed set $\bar{X}$ is $V(J)$ for some ideal $J$.
+Every $f \in J$ vanishes on $\bar{X}$ and so on $X$, so $J \subseteq I(X)$.
+Since $V$ reverses inclusions, $V(I(X)) \subseteq V(J) = \bar{X}$.
+Together with step [](#closure-in){.pf-ref}, this gives equality.
+:::
+
+:::
+
+:::
 :::
