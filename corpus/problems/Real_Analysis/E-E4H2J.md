@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that if $f\in L^1$ and $g$ is bounded, then  $f\ast g$ is bounded and uniformly continuous.
+Show that if $f\in L^1$ and $g$ is bounded, then $f\ast g$ is bounded and uniformly continuous.
 :::
 
 ::: {.solution}
@@ -28,7 +28,7 @@ Let $f \in L^1(\RR)$ and let $g$ be measurable with $|g| \leq M$ a.e., where $M 
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
 $f\ast g$ is bounded, with $|f\ast g(x)| \leq M\norm{f}_1$ for every $x$.
 
@@ -64,7 +64,7 @@ For a compactly supported continuous $\varphi$ the claim holds by uniform contin
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
 $f\ast g$ is uniformly continuous.
 
@@ -73,12 +73,6 @@ $f\ast g$ is uniformly continuous.
 Given $\eps > 0$, step [](#s3){.pf-ref} gives $\delta > 0$ with $\norm{\tau_h f - f}_1 < \eps/M$ for $|h| < \delta$. Then step [](#s2){.pf-ref} gives $|f\ast g(x+h) - f\ast g(x)| < \eps$ for all $x \in \RR$ and $|h| < \delta$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} gives boundedness and step [](#s4){.pf-ref} gives uniform continuity.
 
 :::
 
