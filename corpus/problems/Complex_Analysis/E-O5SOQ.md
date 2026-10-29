@@ -17,18 +17,36 @@ review: draft
 
 ::: {.exercise}
 Suppose $f$ is entire and for every $z$,
-\[
-\abs{f(z)}\leq \abs{\sin(z)}
-.\]
+$$
+\abs{f(z)}\leq \abs{\sin(z)}.
+$$
 Characterize all possibilities for $f$.
-
- 
-
 :::
 
 ::: {.solution}
-Write $g(z) \definedas f(z) / \sin(z)$, which is meromorphic with singularities at the zeros of $\sin(z)$ and bounded by 1.
-By boundedness, these singularities are removable, so $g$ extends to a bounded entire and thus constant function.
-So $f(z) = c\sin(z)$ where $\abs{c} \leq 1$.
+
+::: pf
+
+::: {.pf-step #constant}
+$g(z) \coloneqq f(z)/\sin(z)$ extends to a constant $c$ with $\abs{c}\leq 1$.
+
+::: pf-proof
+$g$ is holomorphic off the zeros $\pi\ZZ$ of $\sin$, which are isolated, and $\abs{g}\leq 1$ there.
+By Riemann's removable singularity theorem, $g$ extends to a bounded entire function, which is constant by Liouville's theorem.
 :::
 
+:::
+
+::: pf-step
+The possibilities are exactly $\boxed{f(z) = c\sin(z) \text{ with } c\in\CC,\ \abs{c}\leq 1}$.
+
+::: pf-proof
+By step [](#constant){.pf-ref}, $f = c\sin$ off $\pi\ZZ$, hence everywhere by continuity.
+Conversely, $\abs{c\sin(z)}\leq\abs{\sin(z)}$ when $\abs{c}\leq1$.
+:::
+
+:::
+
+:::
+
+:::
