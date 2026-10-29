@@ -25,7 +25,6 @@ If you have an irreducible representation of a subgroup, is the induced represen
 :::
 
 ::: {.solution}
-No.
 
 ::: pf
 
@@ -48,9 +47,9 @@ Its induced representation is the regular representation of $C_2$.
 ::: pf-proof
 
 By definition,
-\[
+$$
 \operatorname{Ind}_H^G(\mathbf 1_H)\cong \CC[G]
-\]
+$$
 as a $G$-representation because $H$ is trivial.
 
 :::
@@ -59,14 +58,14 @@ as a $G$-representation because $H$ is trivial.
 
 ::: pf-step
 
-This induced representation is reducible.
+$\boxed{\text{No}}$: this induced representation is reducible.
 
 ::: pf-proof
 
 The regular representation of $C_2=\{1,s\}$ has basis $e_1,e_s$. The lines
-\[
+$$
 \CC(e_1+e_s),\qquad \CC(e_1-e_s)
-\]
+$$
 are both $G$-stable, giving the decomposition into the trivial and sign representations. Thus the induced representation is not irreducible.
 
 :::
@@ -75,5 +74,4 @@ are both $G$-stable, giving the decomposition into the trivial and sign represen
 
 :::
 
-Hence induction does not in general preserve irreducibility.
 :::
