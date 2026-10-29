@@ -27,11 +27,34 @@ Prove that the quotient ring $R / \operatorname{nil}(R)$ is reduced (i.e. has no
 :::
 
 ::: {.solution}
-Let \(N=\operatorname{nil}(R)\). Suppose \(x+N\in R/N\) is nilpotent. Then for some \(m\ge1\),
-\[
-(x+N)^m=N,
-\]
-so \(x^m\in N\). Hence \((x^m)^k=0\) for some \(k\ge1\), and therefore \(x^{mk}=0\). Thus \(x\in N\), so \(x+N=0\) in \(R/N\).
+Let $N=\operatorname{nil}(R)$.
 
-Hence \(R/N\) has no nonzero nilpotent elements and is reduced.
+::: pf
+
+::: {.pf-step #nilpotent-class}
+
+If $x+N$ is nilpotent in $R/N$, then $x\in N$.
+
+::: pf-proof
+
+Suppose $(x+N)^m=N$ for some $m\ge1$. Then $x^m\in N$, so $(x^m)^k=0$ for some $k\ge1$. Hence $x^{mk}=0$, so $x$ is nilpotent and $x\in N$.
+
+:::
+
+:::
+
+::: pf-step
+
+$R/N$ is reduced.
+
+::: pf-proof
+
+By step [](#nilpotent-class){.pf-ref}, every nilpotent element $x+N$ of $R/N$ satisfies $x\in N$, that is, $x+N=0$.
+
+:::
+
+:::
+
+:::
+
 :::
