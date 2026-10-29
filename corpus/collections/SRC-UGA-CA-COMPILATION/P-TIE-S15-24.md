@@ -29,12 +29,6 @@ Let $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} <
 :::
 
 ::: {.remark}
-The source prints this problem twice, as questions 24 and 30 of Spring 2015.
-Under question 30 it also prints "Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from half disc $\{z = x + iy : \abs{z} < 1,\ y > 0\}$ to upper half plane $\mathbb{H} = \{z = x + iy : y > 0\}$", which is question 25 of the same list.
-It is a separate problem, carried by its own card.
-:::
-
-::: {.remark}
 Erratum: part (b) includes $\alpha=0$ in the hypothesis, but the printed expression
 $$
 \frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}
