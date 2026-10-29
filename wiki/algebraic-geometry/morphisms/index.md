@@ -14,8 +14,7 @@ If $f$ and $g$ agree on a dense open subset of $X$, then $f=g$.
 Separatedness is needed: the two open immersions of $\AA^1_k$ into the line with doubled origin agree on $\AA^1_k\setminus\{0\}$.
 Reducedness is needed: on $X=\Spec k[x,\varepsilon]/(\varepsilon^2,x\varepsilon)$, the morphisms $X\to\AA^1_k$ given by $0$ and $\varepsilon$ agree on the dense open subset $D(x)$, where $\varepsilon=0$.
 
-If the target is separated, two morphisms from a reduced scheme that agree on a dense open subset agree everywhere.
-Dropping reducedness of the source or separatedness of the target gives distinct counterexamples to this uniqueness statement.
+## Syllabus
 
 At the level of [@Har10a, Sections II.3–II.4, II.7, III.9–III.11].
 
