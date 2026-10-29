@@ -23,8 +23,10 @@ audit:
 
 ::: {.exercise}
 Show that every nontrivial normal subgroup of a finite $p$-group meets the center nontrivially.
+:::
 
-> Hint: let $G$ act on the normal subgroup by conjugation and count the orbits.
+::: {.hint}
+Let $G$ act on the normal subgroup by conjugation and count the orbits.
 :::
 
 
@@ -38,9 +40,9 @@ Conjugation gives an action of $G$ on $N$.
 
 ::: pf-proof
 Normality of $N$ gives $gng^{-1}\in N$ for all $g\in G$ and $n\in N$, so
-\[
+$$
 g\cdot n=gng^{-1}
-\]
+$$
 defines the action.
 :::
 
@@ -60,9 +62,9 @@ Every nontrivial orbit has cardinality divisible by $p$.
 
 ::: pf-proof
 For $n\in N$, orbit-stabilizer gives
-\[
+$$
 |G\cdot n|=[G:C_G(n)].
-\]
+$$
 This index divides the order of the $p$-group $G$, so it is a power of $p$. If the orbit has more than one element, its cardinality is therefore divisible by $p$.
 :::
 
@@ -73,13 +75,13 @@ The intersection $N\cap Z(G)$ has cardinality divisible by $p$.
 
 ::: pf-proof
 The orbit decomposition of $N$ gives
-\[
+$$
 |N|=|N\cap Z(G)|+\sum_i |\mathcal O_i|,
-\]
+$$
 where the $\mathcal O_i$ are the nontrivial orbits. Since $N$ is a nontrivial subgroup of a finite $p$-group, $p\mid |N|$, and by step [](#nontrivial-orbit-div-by-p){.pf-ref} each summand in the sum is divisible by $p$. Hence
-\[
+$$
 |N\cap Z(G)|\equiv0\pmod p.
-\]
+$$
 :::
 
 :::
