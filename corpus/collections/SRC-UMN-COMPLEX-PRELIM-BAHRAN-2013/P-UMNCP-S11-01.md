@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-S11-01
 kind: problem
-title: A polynomial az to n plus z plus one has a root in radius two
+title: The polynomial $az^n+z+1$ has a root in the disk of radius $2$
 classification:
   areas:
   - complex-analysis

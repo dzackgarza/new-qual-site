@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-F07-07
 kind: problem
-title: Count zeros of exponential z squared minus four z squared
+title: Zeros of $e^{z^2}-4z^2$ in the unit disk
 classification:
   areas:
   - complex-analysis

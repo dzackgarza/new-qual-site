@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-F09-01
 kind: problem
-title: Count zeros of six z cubed plus exponential z plus one
+title: Zeros of $6z^3+e^z+1$ in the unit disk
 classification:
   areas:
   - complex-analysis

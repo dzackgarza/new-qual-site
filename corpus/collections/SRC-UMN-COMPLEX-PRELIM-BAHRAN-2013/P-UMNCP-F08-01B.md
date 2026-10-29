@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-F08-01B
 kind: problem
-title: Count zeros of z seventh plus z cubed plus one sixteenth
+title: Zeros of $z^7+z^3+\frac{1}{16}$ in the disk of radius $\frac12$
 classification:
   areas:
   - complex-analysis

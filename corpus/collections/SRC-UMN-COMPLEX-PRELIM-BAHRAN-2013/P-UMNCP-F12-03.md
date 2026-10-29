@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-F12-03
 kind: problem
-title: Evaluate a logarithmic rational integral
+title: The integral $\int_0^\infty \frac{\log x}{x^2+\alpha^2}\,dx$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-F11-01
 kind: problem
-title: All zeros of z fifth plus three z cubed plus seven lie in radius two
+title: All zeros of $z^5+3z^3+7$ lie in the disk of radius $2$
 classification:
   areas:
   - complex-analysis

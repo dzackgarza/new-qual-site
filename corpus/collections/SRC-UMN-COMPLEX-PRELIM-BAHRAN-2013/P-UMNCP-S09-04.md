@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNCP-S09-04
 kind: problem
-title: Count zeros of z sixth plus four z squared exponential z plus one minus three
+title: Zeros of $z^6+4z^2e^{z+1}-3$ in the unit disk
 classification:
   areas:
   - complex-analysis
