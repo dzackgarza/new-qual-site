@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $f_n(x) = n^\beta x(1-x^2)^n$, $x \in [0,1]$, $n \in \NN$.
 
-Prove that $\{f_n\}_{n=1}^\infty$ converges pointwise on $[0,1]$ for every $\beta \in \RR$.
+(a) Prove that $\{f_n\}_{n=1}^\infty$ converges pointwise on $[0,1]$ for every $\beta \in \RR$.
 
-Show that the convergence in part (a) is uniform for all $\beta < \frac{1}{2}$, but not uniform for any $\beta \geq \frac{1}{2}$.
+(b) Show that the convergence in part (a) is uniform for all $\beta < \frac{1}{2}$, but not uniform for any $\beta \geq \frac{1}{2}$.
 :::
 
 ::: {.solution}
@@ -39,39 +39,17 @@ Show that the convergence in part (a) is uniform for all $\beta < \frac{1}{2}$, 
 
 ::: pf-step
 
-$f_n \to 0$ pointwise on $[0,1]$ for every $\beta \in \RR$.
+(a) $f_n \to 0$ pointwise on $[0,1]$ for every $\beta \in \RR$.
 
 ::: pf-proof
 
-::: {.pf-step #s1-1}
+::: pf-step
 
-For $x = 0$: $f_n(0) = 0$ for all $n$.
-
-::: pf-proof
-
-the factor $x$ vanishes.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-For $0 < x \le 1$: $f_n(x) = n^\beta x(1 - x^2)^n \to 0$.
+$f_n(0) = 0$ for all $n$.
 
 ::: pf-proof
 
-$(1 - x^2)^n$ decays exponentially in $n$ for $x > 0$ ($1 - x^2 \in [0,1)$), which beats the polynomial growth $n^\beta$; more precisely $n^\beta(1-x^2)^n = n^\beta e^{n\ln(1-x^2)} \to 0$ since $\ln(1 - x^2) < 0$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
-
-:::
+The factor $x$ vanishes at $x = 0$.
 
 :::
 
@@ -79,39 +57,27 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 ::: pf-step
 
-$\sup_{x \in [0,1]}|f_n(x)| = n^\beta \cdot \frac{1}{\sqrt{2n+1}}\left(\frac{2n}{2n+1}\right)^n$.
+For $0 < x \le 1$, $f_n(x) \to 0$.
 
 ::: pf-proof
 
-::: pf-step
+Here $1 - x^2 \in [0,1)$. If $x = 1$, then $f_n(1) = 0$. Otherwise $\ln(1-x^2) < 0$, so $n^\beta(1-x^2)^n = n^\beta e^{n\ln(1-x^2)} \to 0$, because exponential decay dominates the power $n^\beta$.
 
-Maximize $g(x) = x(1 - x^2)^n$: $g'(x) = (1 - x^2)^{n-1}(1 - (2n+1)x^2)$, so the maximum on $[0,1]$ is at $x_n = 1/\sqrt{2n+1}$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #sup-norm}
+
+$\sup_{x \in [0,1]}\abs{f_n(x)} = \frac{n^\beta}{\sqrt{2n+1}}\left(\frac{2n}{2n+1}\right)^n$.
 
 ::: pf-proof
 
-derivative computation; $g' > 0$ for $x < x_n$ and $g' < 0$ for $x > x_n$; $g(0) = g(1) = 0$.
-
-:::
-
-:::
-
-::: pf-step
-
-$g(x_n) = \frac{1}{\sqrt{2n+1}}\left(1 - \frac{1}{2n+1}\right)^n = \frac{1}{\sqrt{2n+1}}\left(\frac{2n}{2n+1}\right)^n$.
-
-::: pf-proof
-
-$1 - x_n^2 = 1 - \frac{1}{2n+1} = \frac{2n}{2n+1}$.
-
-:::
-
-:::
-
-::: pf-qed
-
-$\|f_n\|_\infty = n^\beta g(x_n)$.
-
-:::
+Let $g(x) = x(1 - x^2)^n$. Then $g'(x) = (1 - x^2)^{n-1}(1 - (2n+1)x^2)$, so $g' > 0$ on $(0, x_n)$ and $g' < 0$ on $(x_n, 1)$ for $x_n = 1/\sqrt{2n+1}$. Since $g \geq 0$ on $[0,1]$ and $g(0) = g(1) = 0$, the maximum of $g$ is $g(x_n) = \frac{1}{\sqrt{2n+1}}\left(1 - \frac{1}{2n+1}\right)^n = \frac{1}{\sqrt{2n+1}}\left(\frac{2n}{2n+1}\right)^n$. Multiply by $n^\beta$.
 
 :::
 
@@ -119,51 +85,11 @@ $\|f_n\|_\infty = n^\beta g(x_n)$.
 
 ::: pf-step
 
-Uniform convergence holds iff $\beta < \frac{1}{2}$.
+(b) The convergence is uniform if and only if $\beta < \frac{1}{2}$.
 
 ::: pf-proof
 
-::: pf-step
-
-$\|f_n\|_\infty \asymp n^{\beta - 1/2}$: $\|f_n\|_\infty = n^\beta \cdot \frac{1}{\sqrt{2n+1}}\left(\frac{2n}{2n+1}\right)^n$, and $\left(\frac{2n}{2n+1}\right)^n = \left(1 - \frac{1}{2n+1}\right)^n \to e^{-1/2} > 0$.
-
-::: pf-proof
-
-$\frac{1}{\sqrt{2n+1}} \sim \frac{1}{\sqrt 2}n^{-1/2}$; the factor $\left(\frac{2n}{2n+1}\right)^n$ has a positive limit $e^{-1/2}$.
-
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-
-If $\beta < 1/2$: $\|f_n\|_\infty \to 0$, so $f_n \to 0$ uniformly.
-
-::: pf-proof
-
-$n^{\beta - 1/2} \to 0$.
-
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-
-If $\beta \ge 1/2$: $\|f_n\|_\infty \not\to 0$, so the convergence is not uniform.
-
-::: pf-proof
-
-$n^{\beta - 1/2} \not\to 0$ (it diverges for $\beta > 1/2$ and is bounded away from $0$ for $\beta = 1/2$), and uniform convergence to the pointwise limit $0$ would force $\|f_n\|_\infty \to 0$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s3-2){.pf-ref} and [](#s3-3){.pf-ref}.
-
-:::
+By (a), uniform convergence on $[0,1]$ means $\sup_{x\in[0,1]}\abs{f_n(x)} \to 0$. As $n \to \infty$, $\frac{1}{\sqrt{2n+1}} \sim \frac{1}{\sqrt 2}n^{-1/2}$ and $\left(\frac{2n}{2n+1}\right)^n = \left(1 - \frac{1}{2n+1}\right)^n \to e^{-1/2} > 0$. By step [](#sup-norm){.pf-ref}, the supremum is therefore asymptotic to $\frac{e^{-1/2}}{\sqrt 2}\, n^{\beta - 1/2}$. This tends to $0$ when $\beta < \frac12$, tends to $\frac{e^{-1/2}}{\sqrt 2} \neq 0$ when $\beta = \frac12$, and diverges when $\beta > \frac12$.
 
 :::
 
