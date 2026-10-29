@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF07D
 kind: problem
-title: "Homology of the complement of a knotted S^3 in S^5 via duality"
+title: 'Homology of the complement of a knotted $S^3$ in $S^5$ via duality'
 classification:
   areas:
   - topology

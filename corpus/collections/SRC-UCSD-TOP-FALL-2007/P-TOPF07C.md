@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF07C
 kind: problem
-title: "Integral homology of a product with RP^3"
+title: 'Integral homology of a product with $\RP^3$'
 classification:
   areas:
   - topology

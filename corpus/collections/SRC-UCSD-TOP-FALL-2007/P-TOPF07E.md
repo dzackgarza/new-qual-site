@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF07E
 kind: problem
-title: "Non-separating orientable submanifold in a 3-manifold forces H_1 to contain Z"
+title: 'A non-separating orientable submanifold of a $3$-manifold forces $H_1$ to contain $\ZZ$'
 classification:
   areas:
   - topology
