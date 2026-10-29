@@ -19,6 +19,10 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: Converted the prose solution to a STYLE-08 structured proof.
 ---
 
 ::: {.problem}
@@ -27,19 +31,25 @@ Prove that $N$ is contained in **every** Sylow $p$-subgroup of $G$.
 :::
 
 ::: {.solution}
-Let $P$ be any Sylow $p$-subgroup of $G$. Since $N\trianglelefteq G$, the product $NP$ is a subgroup of $G$. Moreover,
-$$
-\abs{NP}=\frac{\abs{N}\abs{P}}{\abs{N\cap P}},
-$$
-which is a power of $p$. Thus $NP$ is a $p$-subgroup of $G$ containing the Sylow $p$-subgroup $P$.
+Let $P$ be any Sylow $p$-subgroup of $G$.
 
-By maximality of $P$ among $p$-subgroups,
-$$
-NP=P.
-$$
-Therefore
-$$
-N\subseteq NP=P.
-$$
+::: pf
+
+::: {.pf-step #np}
+$NP$ is a $p$-subgroup of $G$ that contains $P$.
+
+::: pf-proof
+Since $N\trianglelefteq G$, the product $NP$ is a subgroup of $G$.
+Its order $\abs{NP}=\abs{N}\abs{P}/\abs{N\cap P}$ is a power of $p$, since $\abs{N}$ and $\abs{P}$ are.
+:::
+
+:::
+
+::: pf-qed
+By step [](#np){.pf-ref} and the maximality of $P$ among $p$-subgroups of $G$, $NP=P$, so $N\subseteq NP=P$.
 Since $P$ was arbitrary, $N$ is contained in every Sylow $p$-subgroup of $G$.
+:::
+
+:::
+
 :::
