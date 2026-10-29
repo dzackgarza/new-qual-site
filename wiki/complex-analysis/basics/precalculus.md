@@ -15,16 +15,16 @@ The interior angles of a convex $n$-gon sum to $(n-2)\pi$, so each interior angl
 ::: {.fact title="Standard forms of conic sections"}
 \envlist
 
-- Circle: $x^2 + y^2 = r^2$, or $\abs{z-a}=r$.
-  For $a\neq b$ and a constant $c>0$ with $c\neq 1$, the locus $\abs{z-a} = c\abs{z-b}$ of points whose distances $d_1, d_2$ to the two points $a, b$ have constant ratio $d_1/d_2 = c$ is also a circle:
+- Circle: $x^2 + y^2 = r^2$, or $\abs{z-z_0}=r$.
+  For $z_1\neq z_2$ in $\CC$ and a constant $c>0$ with $c\neq 1$, the locus $\abs{z-z_1} = c\abs{z-z_2}$ of points whose distances $d_1, d_2$ to the two points $z_1, z_2$ have constant ratio $d_1/d_2 = c$ is also a circle:
 
 ![](figures/2021-12-04_00-49-30.png)
 
-- Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$, or $\abs{z-a} + \abs{z-b} = c$ with $c > \abs{a-b}$, the locus of points whose distances to $a$ and $b$ have constant sum $d_1 + d_2 = c$:
+- Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$, or $\abs{z-z_1} + \abs{z-z_2} = c$ with $c > \abs{z_1-z_2}$, the locus of points whose distances to $z_1$ and $z_2$ have constant sum $d_1 + d_2 = c$:
 
 ![](figures/2021-12-04_00-53-36.png)
 
-- Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$, or $\abs{\abs{z-a} - \abs{z-b}} = c$ with $0 < c < \abs{a-b}$:
+- Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$, or $\abs{\abs{z-z_1} - \abs{z-z_2}} = c$ with $0 < c < \abs{z_1-z_2}$:
 
 ![](figures/2021-12-04_00-57-40.png)
 
