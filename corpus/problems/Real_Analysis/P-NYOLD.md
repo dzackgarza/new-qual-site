@@ -79,7 +79,7 @@ Let $\alpha$ denote the supremum on the right. By step [](#s1){.pf-ref}, $\int_{
 
 ::: pf-step
 
-$\sup_{y>0}|u(x,y)| \le \frac{10}{\pi}Hf(x)$ for every $x$.
+(a) $\sup_{y>0}|u(x,y)| \le \frac{10}{\pi}Hf(x)$ for every $x$.
 
 ::: pf-proof
 
@@ -91,7 +91,7 @@ $|u(x,y)| \le \int|f(x-t)|P_y(t)\,dt$; apply step [](#s2){.pf-ref} with $g = f$ 
 
 ::: pf-step
 
-$u(x,y) \to f(x)$ as $y \to 0$ at every Lebesgue point $x$ of $f$, hence for a.e. $x$.
+(b) $u(x,y) \to f(x)$ as $y \to 0$ at every Lebesgue point $x$ of $f$, hence for a.e. $x$.
 
 ::: pf-proof
 
