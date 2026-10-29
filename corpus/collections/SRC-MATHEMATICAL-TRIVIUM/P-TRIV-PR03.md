@@ -28,11 +28,11 @@ Interpret the first experiment as four independent throws of one die, and the se
 ::: {.pf-step #s1-1}
 
 The probability of at least one $1$ in four single-die throws is
-\[
+$$
 p_1=1-\left(\frac56\right)^4
 =\frac{671}{1296}
 \approx0.517747.
-\]
+$$
 
 
 ::: pf-proof
@@ -46,9 +46,9 @@ The complementary event is that none of the four independent throws shows $1$. E
 ::: {.pf-step #s1-2}
 
 In one throw of two dice, the probability that both show $1$ is
-\[
+$$
 q=\frac1{36}.
-\]
+$$
 
 
 ::: pf-proof
@@ -62,10 +62,10 @@ There are $36$ equally likely ordered outcomes for two fair dice, and only $(1,1
 ::: {.pf-step #s1-3}
 
 The probability of at least one double-$1$ in 24 pair-throws is
-\[
+$$
 p_2
 =1-\left(\frac{35}{36}\right)^{24}.
-\]
+$$
 
 
 ::: pf-proof
@@ -79,9 +79,9 @@ Here the phrase ``at least two 1'' means that in at least one throw of the pair,
 ::: {.pf-step #s1-4}
 
 Numerically,
-\[
+$$
 p_2\approx0.491404<p_1.
-\]
+$$
 
 
 ::: pf-proof
@@ -95,9 +95,9 @@ Evaluating the expression in step [](#s1-3){.pf-ref} gives approximately $0.4914
 ::: {.pf-step #s1-5}
 
 Therefore the more probable event is
-\[
-\boxed{\text{at least one $1$ in four throws of one die}.}
-\]
+$$
+\boxed{\text{at least one } 1 \text{ in four throws of one die}.}
+$$
 
 
 ::: pf-proof
