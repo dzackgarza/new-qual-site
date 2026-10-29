@@ -27,7 +27,7 @@ Then each higher direct image with proper support
 $$
 R^if_!\mcf
 $$
-is constructible $\ell$-adic on $Y$ in the adic derived category. If $f$ is proper, then $Rf_!=Rf_*$, so every $R^if_*\mcf$ is constructible $\ell$-adic.
+is a constructible $\ell$-adic sheaf on $Y$. If $f$ is proper, then $Rf_!=Rf_*$, so every $R^if_*\mcf$ is constructible $\ell$-adic.
 :::
 
 ::: {.remark}
