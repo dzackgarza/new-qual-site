@@ -22,9 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that if $H \leq G$, $K\normal G$ is a normal subgroup, and $H~\text{char}~K$ then $H$ is normal in  $G$.
-
-  > So normality is not transitive, but strengthening one to "characteristic" gives a weak form of transitivity.
+Show that if $H \leq G$, $K\normal G$ is a normal subgroup, and $H~\text{char}~K$ then $H$ is normal in $G$.
 :::
 
 ::: {.solution}
@@ -39,13 +37,13 @@ For every $g\in G$, conjugation by $g$ restricts to an automorphism of $K$.
 ::: pf-proof
 
 Because $K\trianglelefteq G$,
-\[
+$$
 gKg^{-1}=K.
-\]
+$$
 Thus the inner automorphism
-\[
+$$
 c_g:G\to G,\qquad x\mapsto gxg^{-1}
-\]
+$$
 restricts to an automorphism $c_g|_K\in\operatorname{Aut}(K)$.
 
 :::
@@ -59,9 +57,9 @@ Every such conjugation preserves $H$.
 ::: pf-proof
 
 Since $H$ is characteristic in $K$, every automorphism of $K$ maps $H$ to itself. Applying this to $c_g|_K$ from step [](#s1){.pf-ref} gives
-\[
+$$
 gHg^{-1}=H
-\]
+$$
 for every $g\in G$.
 
 :::
@@ -82,4 +80,8 @@ The equality $gHg^{-1}=H$ for all $g\in G$ is exactly the definition of normalit
 
 :::
 
+:::
+
+::: {.remark}
+Normality is not transitive: $H\normal K\normal G$ does not imply $H\normal G$. Strengthening $H\normal K$ to "$H$ is characteristic in $K$" gives this weak form of transitivity.
 :::
