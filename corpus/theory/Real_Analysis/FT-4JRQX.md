@@ -6,6 +6,7 @@ title: Tonelli's theorem
 slogan: 'For nonnegative measurable functions, either order of integration is valid even when the value is $+\infty$.'
 prompts:
 - State Tonelli's theorem.
+- What hypothesis does Tonelli need that Fubini does not?
 classification:
   areas:
   - real-analysis

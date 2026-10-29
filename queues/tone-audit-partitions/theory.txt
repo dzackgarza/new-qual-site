@@ -413,7 +413,6 @@ corpus/theory/Real_Analysis/FT-OR6TO.md
 corpus/theory/Real_Analysis/FT-P5UNP.md
 corpus/theory/Real_Analysis/FT-ST72T.md
 corpus/theory/Real_Analysis/FT-T7OAO.md
-corpus/theory/Real_Analysis/FT-VHK2H.md
 corpus/theory/Real_Analysis/FT-XIVPL.md
 corpus/theory/Real_Analysis/L-75UZY.md
 corpus/theory/Real_Analysis/L-JBMRH.md
