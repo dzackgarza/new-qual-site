@@ -1,5 +1,6 @@
 ---
 order: 90
+title: Proofs of the fundamental theorem of algebra
 ---
 
 # Proofs of the fundamental theorem of algebra
