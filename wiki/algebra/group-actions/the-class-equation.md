@@ -53,39 +53,6 @@ Consequences for a group $G$ of order $p^k$:
 
 [[FD-XRRNZ]]
 
-::: {.proof title="of Burnside's lemma"}
-Let $A \definedas \theset{ (g,x) \in G\cross X \st g\actson x = x }$, and write $\Stab(x) = \theset{g\in G \st gx=x}$ and $\Fix(g) = \theset{x\in X\st gx = x}$.
-
-Partitioning $A$ according to the first coordinate,
-$$
-A = \Disjoint_{g_0\in G} \theset{ (g_0, x) \st g_0 x = x } \cong \Disjoint_{g_0\in G} \theset{g_0}\cross \Fix(g_0).
-$$
-Partitioning $A$ according to the second coordinate,
-$$
-A = \Disjoint_{x_0\in X} \theset{ (g, x_0) \st gx_0= x_0 } \cong \Disjoint_{x_0\in X} \Stab(x_0) \cross \theset{ x_0 }.
-$$
-Taking cardinalities,
-$$
-\sum_{g_0\in G} \size{\Fix(g_0)}
-= \size A
-= \sum_{x_0\in X} \size{\Stab(x_0)}.
-$$
-By orbit-stabilizer, $\size{\Stab(x_0)} = \size G/ \size{\Orb(x_0)}$, so
-$$
-{1\over \size G} \sum_{g_0\in G} \size{\Fix(g_0)}
-= \sum_{x_0\in X} {1\over \size{\Orb(x_0)}}.
-$$
-Grouping the terms of the right-hand side by orbit,
-$$
-\begin{aligned}
-\sum_{x_0\in X}{1\over \size{\Orb(x_0)}}
-&= \sum_{\Orb(x_0) \in X/G} \qty{1\over \size{\Orb(x_0)}}\sum_{y\in \Orb(x_0)} 1 \\
-&= \sum_{\Orb(x_0) \in X/G} 1 \\
-&= \size{X/G}.
-\end{aligned}
-$$
-:::
-
 ::: {.remark title="Counting orbits"}
 Burnside's lemma counts orbits, such as colorings of the beads of a necklace or of the faces of a cube up to the action of a rotation group.
 For $g,h\in G$, $x\mapsto hx$ is a bijection $\Fix(g)\to\Fix(hg\inverseof{h})$, so $\size{\Fix(g)}$ depends only on the conjugacy class of $g$, and the sum may be taken over conjugacy classes, each weighted by its size.
