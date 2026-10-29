@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IS9SV
 kind: problem
-title: Evaluation makes $A$ a module over $\mathrm{End}_R(A)$
+title: Evaluation makes $A$ a module over $\Endo_R(A)$
 classification:
   areas:
   - algebra
@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $R$-module. Show that evaluation
-\[
+$$
 \Endo_R(A)\times A\longrightarrow A,\qquad (f,a)\longmapsto f(a),
-\]
+$$
 makes $A$ into a left module over the endomorphism ring $\Endo_R(A)$.
 :::
 
@@ -41,9 +41,9 @@ The action is additive in the $A$-variable.
 ::: pf-proof
 
 For $a,b\in A$,
-\[
+$$
 f\cdot(a+b)=f(a+b)=f(a)+f(b)=f\cdot a+f\cdot b,
-\]
+$$
 because $f$ is $R$-linear.
 
 :::
@@ -57,9 +57,9 @@ The action is additive in the scalar variable.
 ::: pf-proof
 
 For $f,g\in\Endo_R(A)$,
-\[
+$$
 (f+g)\cdot a=(f+g)(a)=f(a)+g(a)=f\cdot a+g\cdot a.
-\]
+$$
 
 :::
 
@@ -72,9 +72,9 @@ Multiplication in $\Endo_R(A)$ is compatible with the action.
 ::: pf-proof
 
 The ring multiplication is composition, so
-\[
+$$
 (fg)\cdot a=(f\circ g)(a)=f(g(a))=f\cdot(g\cdot a).
-\]
+$$
 
 :::
 
@@ -87,9 +87,9 @@ The identity endomorphism acts as the identity.
 ::: pf-proof
 
 The multiplicative identity of $\Endo_R(A)$ is $\id_A$, and
-\[
+$$
 \id_A\cdot a=\id_A(a)=a.
-\]
+$$
 
 :::
 
@@ -97,5 +97,4 @@ The multiplicative identity of $\Endo_R(A)$ is $\id_A$, and
 
 :::
 
-Therefore $A$ is a left $\Endo_R(A)$-module under evaluation.
 :::
