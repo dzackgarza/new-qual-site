@@ -23,8 +23,6 @@ Show that there is no map $f: S^2 \to S^1$ that commutes with the antipodal map.
 :::
 
 ::: {.solution}
-**Goal:** Prove that there does not exist any continuous map $f \colon S^2 \to S^1$ such that $f(-x) = -f(x)$ for all $x \in S^2$ (i.e. commuting with the antipodal map).
-
 ::: pf
 
 ::: {.pf-step #s1}
