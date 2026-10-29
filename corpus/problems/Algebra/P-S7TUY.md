@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - Geometry
+  - Affine Varieties
   - Prime Ideals
   - Commutative Algebra
 relations: []
