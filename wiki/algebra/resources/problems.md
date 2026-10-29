@@ -1,4 +1,5 @@
 ---
+title: Algebra problem collections
 order: 40
 ---
 
