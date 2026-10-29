@@ -20,6 +20,10 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (c) of the source asks to prove $|G|\equiv1\pmod{p^k}$, which is false since $p^k$ divides $|G|$. Part (c) now asks to prove $|\operatorname{Syl}_p(G)|\equiv1\pmod{p^k}$, the consequence of part (b).
 ---
 
 ::: {.problem}
@@ -35,7 +39,7 @@ $\operatorname{Syl}_p(G)$ by conjugation. For $P \in \operatorname{Syl}_p(G)$, l
 $\mathcal{O}_P$ be the $P_0$-orbit of $P$. Prove that if $P \neq P_0$, then
 $|\mathcal{O}_P| = p^k$.
 
-(c) Prove that $|G| \equiv 1 \pmod{p^k}$.
+(c) Prove that $|\operatorname{Syl}_p(G)| \equiv 1 \pmod{p^k}$.
 :::
 
 ::: {.solution}
@@ -89,11 +93,15 @@ A Sylow \(p\)-subgroup is maximal among \(p\)-subgroups. By step [](#s2){.pf-ref
 \(p\)-subgroup containing \(P_1\), so equality holds. Thus \(K\le P_1\). The standing
 hypothesis gives \(P_1\cap P_2=1\) because \(P_1\ne P_2\).
 
+:::
+
+:::
+
+:::
+
 **(b).**
 
-:::
-
-:::
+::: pf
 
 ::: {.pf-step #s4}
 
@@ -118,7 +126,7 @@ If \(P\ne P_0\), then \(\operatorname{Stab}_{P_0}(P)=1\).
 
 ::: pf-proof
 
-Apply part (a), step [](#s3){.pf-ref}, with \(P_1=P\) and \(P_2=P_0\). Then
+Apply part (a) with \(P_1=P\) and \(P_2=P_0\). Then
 \[
 N_G(P)\cap P_0=1.
 \]
@@ -142,46 +150,29 @@ By orbit-stabilizer and step [](#s5){.pf-ref},
 |\mathcal O_P|=[P_0:\operatorname{Stab}_{P_0}(P)]=|P_0|=p^k.
 \]
 
+:::
+
+:::
+
+:::
+
 **(c).**
 
-:::
-
-:::
+::: pf
 
 ::: pf-step
 
-Part (c) is false as printed in the source: the hypothesis \(|G|=p^km\) implies
-\[
-|G|\equiv0\pmod{p^k},
-\]
-not \(1\pmod{p^k}\).
+\(|\operatorname{Syl}_p(G)|\equiv1\pmod{p^k}\).
 
 ::: pf-proof
 
-The integer \(p^k\) divides \(|G|\) by the first sentence of the problem. Thus the
-requested congruence cannot hold for \(k\ge1\).
-
-:::
-
-:::
-
-::: pf-step
-
-The conclusion that follows from part (b), and hence the evidently intended
-statement, is
+Fix \(P_0\in\operatorname{Syl}_p(G)\) and let \(P_0\) act by conjugation on
+\(\operatorname{Syl}_p(G)\). The orbit of \(P_0\) is \(\{P_0\}\). By part (b), every other
+orbit has exactly \(p^k\) elements. Since the orbits partition \(\operatorname{Syl}_p(G)\),
 \[
-|\operatorname{Syl}_p(G)|\equiv1\pmod{p^k}.
+|\operatorname{Syl}_p(G)|=1+rp^k
 \]
-
-::: pf-proof
-
-Let \(P_0\) act by conjugation on \(\operatorname{Syl}_p(G)\). The subgroup \(P_0\)
-itself is fixed. By step [](#s6){.pf-ref}, every orbit not equal to \(\{P_0\}\) has exactly \(p^k\)
-elements. Thus for some integer \(r\ge0\),
-\[
-|\operatorname{Syl}_p(G)|=1+r p^k,
-\]
-which is the claimed congruence.
+for some integer \(r\ge0\).
 
 :::
 
