@@ -1,8 +1,9 @@
 ---
 schema: qual/card@1
 id: FD-KNEDG
-kind: definition
+kind: proposition
 title: Basic properties of Lebesgue outer measure
+slogan: 'Outer measure is monotone, countably subadditive, outer regular, and additive on almost disjoint cubes.'
 prompts:
 - What four properties does outer measure have?
 classification:
@@ -14,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition}
+::: {.proposition}
 Let $m_*$ be the [[D-3XE77|outer measure]] on $\RR^n$.
 
 1. Monotonicity. If $E_1\subseteq E_2\subseteq\RR^n$, then $m_*(E_1)\leq m_*(E_2)$.
