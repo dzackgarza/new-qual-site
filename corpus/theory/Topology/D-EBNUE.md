@@ -29,7 +29,8 @@ Its identity is the class of the constant loop at $x_0$, and $\inverseof{[\gamma
 
 ::: {.proposition}
 Let $h\colon I\to X$ be a path from $x_0$ to $x_1$, with reverse $\bar h$.
-Then $\beta_h\colon\pi_1(X, x_1)\to\pi_1(X, x_0)$, $\beta_h[\gamma]\coloneqq[h\cdot\gamma\cdot\bar h]$, is a group isomorphism.
+Then $\beta_h\colon\pi_1(X, x_1)\to\pi_1(X, x_0)$, $\beta_h[\gamma]\coloneqq[h\cdot\gamma\cdot\bar h]$, is a group isomorphism with inverse $\beta_{\bar h}$ [@Hat02, Prop. 1.5].
 It depends only on the homotopy class of $h$ rel endpoints, and for a second path $h'$ from $x_0$ to $x_1$, $\beta_{h'} = c\circ\beta_h$, where $c$ is conjugation by $[h'\cdot\bar h]\in\pi_1(X, x_0)$.
+For $x_1 = x_0$, $\beta_h$ is conjugation by $[h]$, so $\beta_h$ is independent of $h$ when $\pi_1(X, x_0)$ is abelian.
 In particular, if $X$ is [[D-X73EB|path connected]], the groups $\pi_1(X, x)$ for $x\in X$ are all isomorphic.
 :::

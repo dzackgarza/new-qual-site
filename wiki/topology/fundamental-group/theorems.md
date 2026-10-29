@@ -48,18 +48,6 @@ Elements of $\pi_1(X,x_0)$ are homotopy classes of loops at $x_0$ rel endpoints,
 
 :::
 
-### Change of basepoint
-
-::: {.proposition title="Change of basepoint"}
-Let $h$ be a path in $X$ from $x_0$ to $x_1$, with reverse path $\bar h$.
-Then $\beta_h\colon \pi_1(X,x_1)\to\pi_1(X,x_0)$, $[f]\mapsto[h\cdot f\cdot\bar h]$, is an isomorphism with inverse $\beta_{\bar h}$, and it depends only on the homotopy class of $h$ rel endpoints.
-If $h'$ is another such path, then $\beta_{h'} = c\circ\beta_h$, where $c$ is conjugation by $[h'\cdot\bar h]\in\pi_1(X,x_0)$.
-In particular, for $x_1=x_0$, $\beta_h$ is conjugation by $[h]$, and the isomorphism $\pi_1(X,x_1)\cong\pi_1(X,x_0)$ is canonical when $\pi_1(X,x_0)$ is abelian.
-
-:::
-
-See [@Hat02, Prop. 1.5] for the proof.
-
 ### Calculating $\pi_1$
 
 [[PR-HQE2T]]
