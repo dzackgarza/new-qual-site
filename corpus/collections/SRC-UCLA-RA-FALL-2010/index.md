@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10F.pdf
+- assets/attachments/analysis-10F.pdf
 source:
   source_kind: university-exam
   institution: ucla
@@ -22,7 +22,7 @@ source:
   - P-625QO
   - P-CH37V
   - P-J64FR
-  - P-B4WQK
+  - P-CAFA23E
   - P-YHXGO
   - P-8XT69
   - E-7ZCKU
