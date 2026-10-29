@@ -110,6 +110,7 @@ source:
   - id: E-FVXIT
   - id: E-FXYTL
   - id: E-FZLDN
+    comment: Stein--Shakarchi 2.15
   - id: E-G3DCH
   - id: E-G4N4D
   - id: E-G55QF
@@ -134,6 +135,7 @@ source:
   - id: E-ITVTT
   - id: E-IVHVW
   - id: E-IYBZP
+    comment: Stein--Shakarchi 2.13
   - id: E-IZKCV
   - id: E-J3QMJ
   - id: E-JK5PG
@@ -177,6 +179,7 @@ source:
   - id: E-O5SOQ
   - id: E-OBU6T
   - id: E-OEEU4
+    comment: Rudin 10.4
   - id: E-ORJPT
   - id: E-OS574
   - id: E-OUBBQ
