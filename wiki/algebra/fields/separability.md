@@ -15,8 +15,6 @@ Every algebraic extension of a field of characteristic $0$ or of a finite field 
 
 [[FD-6WSIA]]
 
-[[PR-ENHVC]]
-
 [[PR-TLBPS]]
 
 [[C-C2GYX]]

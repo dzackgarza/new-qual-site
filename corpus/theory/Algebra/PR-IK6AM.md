@@ -24,9 +24,9 @@ A field $k$ is [[D-KQFIV|perfect]] if and only if either
 :::
 
 ::: {.proof}
-If $\ch k=0$ and $f\in k[x]$ is a nonconstant irreducible polynomial, then $f'\neq0$ and $\deg f'<\deg f$. Hence $\gcd(f,f')=1$, so $f$ is separable by [[PR-ENHVC]]. Thus $k$ is perfect.
+If $\ch k=0$ and $f\in k[x]$ is a nonconstant irreducible polynomial, then $f'\neq0$ and $\deg f'<\deg f$. Hence $\gcd(f,f')=1$, so $f$ is separable by [[PR-TLBPS]]. Thus $k$ is perfect.
 
-Now let $\ch k=p>0$. Suppose first that $k^p=k$. If an irreducible $f\in k[x]$ were inseparable, then [[PR-ENHVC]] would give $\gcd(f,f')\neq1$. Irreducibility and $\deg f'<\deg f$ force $f'=0$. Thus
+Now let $\ch k=p>0$. Suppose first that $k^p=k$. If an irreducible $f\in k[x]$ were inseparable, then [[PR-TLBPS]] would give $\gcd(f,f')\neq1$. Irreducibility and $\deg f'<\deg f$ force $f'=0$. Thus
 $$
 f(x)=\sum_i a_i x^{pi}.
 $$

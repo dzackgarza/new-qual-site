@@ -115,7 +115,7 @@ Chapter: [[algebra/linear-algebra/index|Linear algebra]].
 
 [[PR-OZYUC]]
 
-[[PR-ENHVC]]
+[[PR-TLBPS]]
 
 [[T-QBQLM]]
 

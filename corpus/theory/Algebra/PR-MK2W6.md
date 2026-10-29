@@ -38,6 +38,6 @@ Its coefficient of $x^{j-1}$ is $-j\alpha$.
 Since $j\neq0$ in $\FF_p$, this would imply $\alpha\in k$, hence $t=\alpha^p\in k^p$.
 But $t$ is not a $p$th power in $\FF_p(t)$, since the $t$-adic valuation of a $p$th power is divisible by $p$ while $v_t(t)=1$.
 Thus $f$ is irreducible.
-Its derivative is zero, so [[PR-ENHVC]] shows that $f$ is inseparable.
+Its derivative is zero, so [[PR-TLBPS]] shows that $f$ is inseparable.
 Therefore the minimal polynomial of $\alpha$ over $k$ is inseparable of degree $p$.
 :::

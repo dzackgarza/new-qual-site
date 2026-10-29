@@ -527,7 +527,6 @@ sections:
       - ref: FD-6WSIA
       - ref: D-WB4M5
       - ref: PR-3VQBI
-      - ref: PR-ENHVC
       - ref: PR-TLBPS
       - ref: C-C2GYX
       - ref: D-KQFIV
