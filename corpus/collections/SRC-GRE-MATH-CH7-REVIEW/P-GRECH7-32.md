@@ -13,38 +13,30 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 32 of the Chapter 7 review questions in assets/attachments/extracted/Chapter-7.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source conditions the first branch on $0\le t\le8$, lists only choices (A)--(E), and its solution gives (E) $c=-4/3$ from the miscomputed $16+6c$; no real $c$ makes $f$ a density. The statement now reads $0\le x\le8$, asks for the value of $c$ if any, and adds choice (F) No value of $c$.
 ---
 
 ::: {.problem}
-If $f(x) = \begin{cases} \frac{x}{2} + c & \text{for } 0 \le t \le 8 \\ 0 & \text{otherwise} \end{cases}$, for what value of $c$ is $f(x)$ the probability density function of a random variable $X$?
+If $f(x) = \begin{cases} \frac{x}{2} + c & \text{for } 0 \le x \le 8 \\ 0 & \text{otherwise} \end{cases}$, for what value of $c$, if any, is $f(x)$ the probability density function of a random variable $X$?
 
 (A) $\frac{4}{3}$
 (B) $\frac{2}{3}$
 (C) $0$
 (D) $-\frac{2}{3}$
 (E) $-\frac{4}{3}$
+(F) No value of $c$
 :::
 
 ::: {.solution}
 
 ::: pf
 
-::: {.pf-step #s1-1}
-
-As printed, the piecewise condition uses the variable $t$ rather than the argument $x$, so it does not define a function of $x$ without an evident correction.
-
-
-::: pf-proof
-
-The displayed formula is written as $f(x)$ but its first branch is conditioned on $0\le t\le8$, where $t$ is otherwise undefined. The natural intended correction is to read the branch condition as $0\le x\le8$.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-2}
 
-Under that correction, normalization would force
+Normalization forces
 $$
 c=-\frac{15}{8}.
 $$
@@ -89,25 +81,19 @@ so normalization is impossible. Therefore no real $c$ satisfies both density con
 
 :::
 
-::: {.pf-step #s1-4}
+::: pf-step
 
-Consequently none of choices (A)--(E) is correct; in particular, the source's supplied answer $c=-4/3$ neither normalizes the function nor makes it nonnegative.
+The answer is $\boxed{\text{(F)}}$: no value of $c$ works.
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} proves that no real value of $c$ works. The listed choices are all real numbers, so none can be correct. For $c=-4/3$, one has $f(0)<0$ and
+Step [](#s1-3){.pf-ref} proves that no real value of $c$ works. For instance, for $c=-4/3$, one has $f(0)<0$ and
 $$
 \int_0^8 f(x)\,dx=16-\frac{32}{3}=\frac{16}{3}\ne1.
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify both the malformed variable in the printed statement and the mathematical impossibility of the intended density problem.
 
 :::
 
