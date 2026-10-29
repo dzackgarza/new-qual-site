@@ -47,7 +47,7 @@ because $\deg(K_C-p)=-3$. After base change to $\bar k$, for every $q\in C(\bar 
 $$
 h^0\bigl(C_{\bar k},\OO(p-q)\bigr)=1.
 $$
-Thus the two-dimensional linear system $\abs p$ has no base point and defines a nonconstant morphism to $\PP^1_{\bar k}$. Its degree is $\deg p=1$, so it is an isomorphism. Hence the morphism
+Since $h^0(\OO(p-q))=h^0(\OO(p))-1$ for every $q$, the complete linear system $\abs p$ has no base point and defines a nonconstant morphism to $\PP^1_{\bar k}$. Its degree is $\deg p=1$, so it is an isomorphism. Hence the morphism
 $$
 C\longrightarrow\PP^1_k
 $$
