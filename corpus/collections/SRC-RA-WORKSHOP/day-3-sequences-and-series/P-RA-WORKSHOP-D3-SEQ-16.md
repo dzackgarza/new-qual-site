@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2006 #5) Let $a_{m,n}\ge0$ for $m,n\in\mathbb N$ and assume that the partial sums
+(January 2006 #5) Let $a_{m,n}\ge0$ for $m,n\in\NN$ and assume that the partial sums
 $$
 \sum_{m=1}^{M}\sum_{n=1}^{N}a_{m,n}
 $$
@@ -51,20 +51,20 @@ For fixed $m$, the partial sums $\sum_{n=1}^{N}a_{m,n}$ are nondecreasing and bo
 ::: {.pf-step #s2}
 
 For each $M,N\geq1$,
-\[
+$$
 \sum_{m=1}^{M}A_m=\sup_{N'\geq1}S_{M,N'},
 \qquad
 \sum_{n=1}^{N}C_n=\sup_{M'\geq1}S_{M',N}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, each of the finitely many series defining $A_1,\ldots,A_M$ converges. Passing the limit through this finite sum gives
-\[
+$$
 \sum_{m=1}^{M}A_m
 =\lim_{N'\to\infty}\sum_{m=1}^{M}\sum_{n=1}^{N'}a_{m,n}
 =\sup_{N'\geq1}S_{M,N'},
-\]
+$$
 where the last equality follows from nonnegativity. The other identity follows by interchanging $m$ and $n$.
 
 :::
@@ -74,32 +74,25 @@ where the last equality follows from nonnegativity. The other identity follows b
 ::: {.pf-step #s3}
 
 Both iterated series converge and have the same sum:
-\[
-\boxed{
+$$
 \sum_{m=1}^{\infty}\left(\sum_{n=1}^{\infty}a_{m,n}\right)
 =\sum_{n=1}^{\infty}\left(\sum_{m=1}^{\infty}a_{m,n}\right)
-=B}.
-\]
+=B.
+$$
 
 ::: pf-proof
 
 The identities in step [](#s2){.pf-ref} imply that the partial sums of both iterated series are bounded above by $B$. They are nondecreasing because all their terms are nonnegative, hence each converges. Moreover,
-\[
+$$
 \sum_{m=1}^{\infty}A_m
 =\sup_M\sup_N S_{M,N}
 =B
 =\sup_N\sup_M S_{M,N}
 =\sum_{n=1}^{\infty}C_n.
-\]
+$$
 Here iterated suprema agree because both range over the same set of rectangular partial sums.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} proves existence of the inner sums, and step [](#s3){.pf-ref} proves existence and equality of the finite iterated sums.
 
 :::
 
