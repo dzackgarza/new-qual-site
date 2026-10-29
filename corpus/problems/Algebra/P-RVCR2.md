@@ -25,37 +25,53 @@ audit:
 ::: {.problem}
 Let $R$ be a commutative ring containing a field $k$ such that $\dim_k(R) = d < \infty$.
 Let $a \in R$.
-(1) Show that there exist $n \in \mathbb{N}$ with $1 \le n \le d$ and coefficients $c_0, c_1, \dots, c_{n-1} \in k$ such that:
+
+(a) Show that there exist $n \in \NN$ with $1 \le n \le d$ and coefficients $c_0, c_1, \ldots, c_{n-1} \in k$ such that
 $$a^n + c_{n-1}a^{n-1} + \cdots + c_1 a + c_0 = 0.$$
-(2) Suppose such a relation holds. Show that if $c_0 \ne 0$, then $a$ is a unit in $R$.
-(3) Show that if $a$ is not a zero-divisor in $R$, then $a$ is invertible in $R$.
+
+(b) Suppose such a relation holds. Show that if $c_0 \ne 0$, then $a$ is a unit in $R$.
+
+(c) Show that if $a$ is not a zero-divisor in $R$, then $a$ is invertible in $R$.
 :::
 
 ::: {.solution}
-Since $\dim_kR=d$, the $d+1$ elements
-\[
-1,a,a^2,\dots,a^d
-\]
-are linearly dependent over $k$. Thus there is a nonzero polynomial of degree at most $d$ annihilating $a$. Choosing one of minimal degree and dividing by its leading coefficient gives
-\[
-a^n+c_{n-1}a^{n-1}+\cdots+c_0=0,
-\qquad 1\le n\le d,
-\]
-with $c_i\in k$.
 
-If $c_0\ne0$, then
-\[
-a\bigl(a^{n-1}+c_{n-1}a^{n-2}+\cdots+c_1\bigr)=-c_0,
-\]
-so
-\[
-a^{-1}=-c_0^{-1}\bigl(a^{n-1}+c_{n-1}a^{n-2}+\cdots+c_1\bigr).
-\]
-Hence $a$ is a unit.
+::: pf
 
-Finally suppose $a$ is not a zero-divisor. Multiplication by $a$,
-\[
-m_a:R\to R,\qquad x\mapsto ax,
-\]
-is an injective $k$-linear endomorphism of the finite-dimensional vector space $R$. Therefore it is surjective. In particular there exists $b\in R$ with $ab=1$, so $a$ is invertible.
+::: pf-step
+
+(a) There is a monic relation $a^n+c_{n-1}a^{n-1}+\cdots+c_0=0$ with $c_i\in k$ and $1\le n\le d$.
+
+::: pf-proof
+
+The $d+1$ elements $1,a,\ldots,a^d$ of the $d$-dimensional $k$-space $R$ are linearly dependent, so a nonzero polynomial over $k$ of degree at most $d$ annihilates $a$. A nonzero constant does not annihilate $a$, since $1\neq0$ in $R$, so this polynomial has degree $n\ge1$. Dividing by its leading coefficient gives the monic relation.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) If $c_0\neq0$, then $a$ is a unit.
+
+::: pf-proof
+
+The relation rearranges to
+$$
+a\bigl(a^{n-1}+c_{n-1}a^{n-2}+\cdots+c_1\bigr)=-c_0 ,
+$$
+so $a^{-1}=-c_0^{-1}\bigl(a^{n-1}+c_{n-1}a^{n-2}+\cdots+c_1\bigr)$.
+
+:::
+
+:::
+
+::: pf-qed
+
+(c) If $a$ is not a zero-divisor, the $k$-linear map $m_a\colon R\to R$, $x\mapsto ax$, is injective. An injective linear endomorphism of the finite-dimensional space $R$ is surjective, so $ab=1$ for some $b\in R$, and $a$ is invertible.
+
+:::
+
+:::
+
 :::
