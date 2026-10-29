@@ -22,7 +22,7 @@ source:
   problems:
   - P-WESTOP11-1
   - id: E-RZLC7
-    comment: Problem 2; repeated exactly as the canonical connected-metric-space exercise
+    comment: Problem 2
   - P-WESTOP11-3
   - P-WESTOP11-4
   - P-WESTOP11-5
