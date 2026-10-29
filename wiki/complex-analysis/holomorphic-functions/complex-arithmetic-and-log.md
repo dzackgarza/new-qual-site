@@ -12,8 +12,6 @@ topics:
 
 ## Roots
 
-[[D-YKB3V]]
-
 ::: {.fact title="Complex roots of a number"}
 The $n$th roots of $z \coloneqq r e^{i\theta}\neq 0$ are
 $$
