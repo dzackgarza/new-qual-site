@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-10-30
-  note: "Transcribed from Question 18 of assets/attachments/calculus_practice_test3.pdf, read from a 300 dpi page render; the MinerU extraction garbles this question. Choice (E) reads (1-2x)^2 in the denominator on the scan."
+  note: "Transcribed from Question 18 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction; they agree. Choice (E) reads (1-2x)^2 in the denominator in both the extraction and the page render."
 ---
 
 ::: {.problem}
