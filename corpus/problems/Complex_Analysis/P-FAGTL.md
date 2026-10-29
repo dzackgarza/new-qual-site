@@ -27,11 +27,28 @@ Compare $p$ with its dominant term $9z^4$ on $\abs{z}=1$ and apply Rouché's the
 :::
 
 ::: {.solution}
-Find the big and small term:
+Write $F(z) \coloneqq 9z^4$.
 
-- Big: $F(z) = 9z^4$, so $\abs{F(z)} = 9$ on the boundary
-- Small: $g(z) = p(z) - F(z) = z^6 + z^3 + 2z + 4$, so $\abs{g(z)}\leq 1+1+2+4=8$ on the boundary.
+::: pf
 
-So $\abs{p-F} \leq \abs{F}$ on $\abs{z} = 1$, meaning $Z_{p} = Z_F = 4$.
+::: {.pf-step #bound}
+On $\abs{z} = 1$, $\abs{p(z) - F(z)} < \abs{F(z)}$.
+
+::: pf-proof
+On $\abs z = 1$ we have $\abs{F(z)} = 9$ and $\abs{p(z)-F(z)} = \abs{z^6 + z^3 + 2z + 4} \leq 1+1+2+4 = 8$.
+:::
+
+:::
+
+::: pf-step
+$p$ has $\boxed{4}$ zeros in $\abs{z}<1$, counted with multiplicity.
+
+::: pf-proof
+By step [](#bound){.pf-ref} and Rouché's theorem, $p$ and $F$ have the same number of zeros in $\abs z<1$, and $F$ has a zero of order $4$ at $0$.
+:::
+
+:::
+
+:::
 
 :::
