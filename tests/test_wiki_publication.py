@@ -280,6 +280,7 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "Algebra/index.md": wiki_md("# Algebra\n", order=2, title="Algebra"),
         "Algebra/groups/index.md": wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"),
         "Algebra/groups/sylow.md": wiki_md("# Sylow\n", order=1),
+        "Algebra/groups/page-reference.md": wiki_md("# Page reference\n\nSee [[Algebra/groups/sylow]].\n", order=3),
         "Algebra/groups/syllabus.md": wiki_md(
             "# Syllabus\n\n- [[Algebra/groups/sylow|Sylow theorems]]\n- [[Algebra/groups/transfer|Transfer]]\n",
             order=2,
@@ -310,6 +311,13 @@ def test_a_path_to_an_unwritten_page_is_a_red_link(wiki_site: Path) -> None:
     assert "sylow.html" in [href for href, _, _ in links.links]
     assert '<span class="qual-link-unwritten" title="Not yet written: Algebra/groups/transfer">Transfer</span>' in " ".join(html.split())
     assert not [href for href, _, _ in links.links if "transfer" in href]
+
+
+def test_an_unlabelled_page_link_shows_the_page_title(wiki_site: Path) -> None:
+    html = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "algebra" / "groups" / "page-reference.html").read_text()
+    links = LinkCollector()
+    links.feed(html)
+    assert ("sylow.html", "Sylow") in [(href, text) for href, _, text in links.links]
 
 
 def test_a_standalone_image_is_a_figure_and_a_spaced_page_name_slugs(wiki_site: Path) -> None:

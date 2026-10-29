@@ -654,6 +654,15 @@ def _title_bare_link(link: pf.Link, raw: str, card_titles: dict[str, str]) -> No
             link.classes.append(MATH_LINK_CLASS)
 
 
+def _title_bare_page_link(link: pf.Link, raw: str, destination: WikiPage | None) -> None:
+    """An unlabelled wikilink to a wiki page displays the page's title, not its path."""
+    if destination is None:
+        return
+    path = urlsplit(raw).path
+    if pf.stringify(link).strip() in {path, path.removesuffix(".md"), raw}:
+        link.content = _text_inlines(destination.title)
+
+
 def title_card_links(ast: str, card_titles: dict[str, str]) -> str:
     """A card body with every unlabelled wikilink to a card showing that card's title."""
 
@@ -674,6 +683,7 @@ def resolve_links(
     """Resolve every local page/card/asset link in-place; return failures."""
 
     by_key, by_normalized, by_stem = _page_indexes(pages)
+    pages_by_route = {page.route.as_posix(): page for page in pages}
     errors: list[Diagnostic] = []
     unresolved: list[str] = []
     unwritten: list[str] = []
@@ -702,6 +712,7 @@ def resolve_links(
                     element.url = target
                 if isinstance(element, pf.Link):
                     _title_bare_link(element, raw, card_titles)
+                    _title_bare_page_link(element, raw, pages_by_route.get(target.split("#", 1)[0]))
                 if isinstance(element, pf.Link) and _carries_math(element.content) and MATH_LINK_CLASS not in element.classes:
                     element.classes.append(MATH_LINK_CLASS)
             except MissingPageReference as exc:
