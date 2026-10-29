@@ -25,6 +25,10 @@ audit:
   by: deepseek-v4.1-flash-free
   date: 2026-10-27
   note: Added the solution section proving the corrected nonpositive sign; the earlier entry recorded the argument that the solution now states in full.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam printed that v = A^T(y-Ax) has nonnegative entries, which fails for A=(1), y=-1, x=0; the statement now asks to show that v has nonpositive entries.
 ---
 
 ::: {.problem}
@@ -34,17 +38,11 @@ Show that the vector
 $$
 v=A^T(y-Ax)
 $$
-has nonnegative entries.
-:::
-
-::: {.remark}
-Erratum: the conclusion is false as printed in the source; the correct sign is nonpositive.
-For $m=n=1$, $A=(1)$ and $y=-1$, the minimizer is $x=0$ and $v=-1<0$.
-The solution proves the corrected first-order condition.
+has nonpositive entries.
 :::
 
 ::: {.solution}
-The printed conclusion is false; the remark records the counterexample. We prove the corrected statement: \(v_i\le0\) for every \(i\), and \(v_i=0\) whenever \(x_i>0\). Since \(s\mapsto s^2\) is strictly increasing on \([0,\infty)\), the minimizer \(x\) also minimizes the squared distance \(\norm{y-Az}^2\) over the nonnegative vectors.
+We prove that \(v_i\le0\) for every \(i\), and also that \(v_i=0\) whenever \(x_i>0\). Since \(s\mapsto s^2\) is strictly increasing on \([0,\infty)\), the minimizer \(x\) also minimizes the squared distance \(\norm{y-Az}^2\) over the nonnegative vectors.
 
 ::: pf
 
@@ -91,7 +89,7 @@ Choose \(\delta>0\) with \(x_i-\delta>0\). For every \(t\in(-\delta,\delta)\), t
 Thus \(v\le0\), and \(x_i v_i=0\) for every \(i\).
 
 ::: pf-proof
-Step [](#one-sided){.pf-ref} gives \(v_i\le0\) for every \(i\). If \(x_i>0\), step [](#support){.pf-ref} gives \(v_i=0\); if \(x_i=0\), then \(x_i v_i=0\). Hence \(x_i v_i=0\) for every \(i\), and \(x^Tv=0\). This is the corrected first-order optimality condition for nonnegative least squares.
+Step [](#one-sided){.pf-ref} gives \(v_i\le0\) for every \(i\). If \(x_i>0\), step [](#support){.pf-ref} gives \(v_i=0\); if \(x_i=0\), then \(x_i v_i=0\). Hence \(x_i v_i=0\) for every \(i\), and \(x^Tv=0\).
 :::
 
 :::
