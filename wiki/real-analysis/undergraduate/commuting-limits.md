@@ -18,7 +18,7 @@ topics:
 
 [[PR-DWOXP]]
 
-[[FE-73BWZ]] [[FE-GN3CF]]
+[[FE-73BWZ]]
 
 [[FE-2UZDB]]
 

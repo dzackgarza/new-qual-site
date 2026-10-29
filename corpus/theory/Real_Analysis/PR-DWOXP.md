@@ -4,6 +4,8 @@ id: PR-DWOXP
 kind: proposition
 title: Limits of differentiable functions need not be differentiable
 slogan: 'Uniform limits can lose differentiability, and derivatives need not commute with uniform convergence.'
+prompts:
+- Give a sequence of differentiable functions whose pointwise limit is not differentiable.
 classification:
   areas:
   - real-analysis
@@ -28,6 +30,10 @@ $$
 0\le f_n(x)-\abs{x}=\frac{1/n}{\sqrt{x^2+1/n}+\abs{x}}\le\frac{1}{\sqrt n},
 $$
 so $f_n\to\abs{x}$ uniformly on $\RR$, and $\abs{x}$ is not differentiable at $0$.
+The functions $g_n(x)\coloneqq x^2/\sqrt{x^2+1/n}$ also work: they are differentiable since $x^2+1/n>0$, and
+$$
+\abs{\abs{x} - g_n(x)} = \frac{\abs{x}}{\sqrt{x^2+1/n}}\qty(\sqrt{x^2+1/n} - \abs{x}) \leq \frac{1/n}{\sqrt{x^2+1/n} + \abs{x}} \leq \frac{1}{\sqrt n}.
+$$
 
 (2) Let $f_n(x)\coloneqq n^{-1/2}\sin(nx)$.
 Then $\sup_x\abs{f_n(x)}\le n^{-1/2}$, so $f_n\to f=0$ uniformly, but $f_n'(0)=n^{1/2}\to\infty\neq0=f'(0)$.
