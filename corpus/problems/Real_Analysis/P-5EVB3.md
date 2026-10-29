@@ -23,16 +23,16 @@ audit:
 ::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space and prove the following properties of $L^ \infty (X, \mathcal{M}, \mu)$:
 
-- If $f, g$ are measurable on $X$ then 
-\[
-\norm{fg}_1 \leq \norm{f}_1 \norm{g}_{\infty }
-.\]
+(a) If $f, g$ are measurable on $X$ then
+$$
+\norm{fg}_1 \leq \norm{f}_1 \norm{g}_{\infty }.
+$$
 
-- $\norm{\wait}_{\infty }$ is a norm on $L^{\infty }$ making it a Banach space.
+(b) $\norm{\wait}_{\infty }$ is a norm on $L^{\infty }$ making it a Banach space.
 
-- $\norm{f_n - f}_{\infty } \converges{n\to \infty }\to 0 \iff$ there exists an $E\in \mathcal{M}$ such that $\mu(X\sm E) = 0$ and $f_n \to f$ uniformly on $E$. 
+(c) $\norm{f_n - f}_{\infty } \converges{n\to \infty }\to 0 \iff$ there exists an $E\in \mathcal{M}$ such that $\mu(X\sm E) = 0$ and $f_n \to f$ uniformly on $E$.
 
-- Simple functions are dense in $L^{\infty }$.
+(d) Simple functions are dense in $L^{\infty }$.
 :::
 
 ::: {.solution}
@@ -79,12 +79,6 @@ Every Cauchy sequence $(f_n)$ in $L^\infty$ converges in $L^\infty$.
 For $n, m$ let $Z_{n,m}$ be a null set off which $|f_n - f_m| \le \|f_n - f_m\|_\infty$, and let $Z = \bigcup_{n,m} Z_{n,m}$, a null set. On $X \setminus Z$, $\sup|f_n - f_m| \le \|f_n - f_m\|_\infty$, so $(f_n)$ is uniformly Cauchy there and converges uniformly to a bounded measurable $f$; put $f = 0$ on $Z$. Given $\eps > 0$ choose $N$ with $\|f_n - f_m\|_\infty < \eps$ for $n, m \ge N$; letting $m \to \infty$ gives $|f_n - f| \le \eps$ on $X \setminus Z$, so $\|f_n - f\|_\infty \le \eps$ for $n \geq N$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref}.
 
 :::
 
