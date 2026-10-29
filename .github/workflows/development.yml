@@ -15,7 +15,7 @@ jobs:
       - name: Install TeX Live
         uses: TeX-Live/setup-texlive-action@eb78d21f41941476d9121e3a0abcab73265c876f
         with:
-          package-file: .github/tex-packages.txt
+          packages: scheme-full
       - uses: astral-sh/setup-uv@ae62891fec2bb8e7d6c99fc78c9fec3a63790f8d
         with:
           enable-cache: true
@@ -54,7 +54,7 @@ jobs:
       - name: Install TeX Live
         uses: TeX-Live/setup-texlive-action@eb78d21f41941476d9121e3a0abcab73265c876f
         with:
-          package-file: .github/tex-packages.txt
+          packages: scheme-full
       - uses: astral-sh/setup-uv@ae62891fec2bb8e7d6c99fc78c9fec3a63790f8d
         with:
           enable-cache: true
