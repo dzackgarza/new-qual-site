@@ -198,8 +198,9 @@ mathematical correction under its own node, not under copy policy.
     available in table"; `?solution=unsolved` reads as an invalid filter when the count is zero.
     Analysis round 3: `(a)` and `(i)` lists render as `(A)` and `(I)` because the `ol[type]`
     selectors in `site/styles.css` lack the case-sensitive `s` flag; appearance comments
-    print a literal `--`; the P-4FH62 sub-part labels run on as one list.
-    **Acceptance:** each corrected on the deployed pages.
+    print a literal `--`; the P-4FH62 sub-part labels run on as one list. The `tikzcd` item
+    does not reproduce: all three diagrams render at `5ba163ac9`.
+    **Acceptance:** each corrected on the deployed pages. **Closed.**
   - **`ad3-algebra-content`**. **Needs:** none. Wrong mathematics: P-APAS18H invariant-ring
     generators omit $xy(x^2-y^2)$; P-APA22F(a) value; PR-OODAV slogan (an abstract
     $B\cong A\oplus C$ does not split); P-RPSTO(b) fixed-field tower indexed backwards;
