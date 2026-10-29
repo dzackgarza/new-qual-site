@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UNL872S14-PP-1
 kind: problem
-title: UNL Math 872 Spring 2014 assignment PP.1
+title: Ham sandwich theorem for three blocks in $\RR^3$ via Borsuk–Ulam
 classification:
   areas: [topology]
   topics: []
