@@ -55,7 +55,7 @@ If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ conver
 
 [[D-VFNTY]]
 
-[[FD-WHWSQ]] [[FF-VON2D]]
+[[FF-VON2D]]
 
 ## Measure theory
 
