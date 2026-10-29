@@ -261,7 +261,7 @@ Thus no common zero of the partial derivatives lies on $X$.
 
 The remaining full-group assertion is genuinely a wild-characteristic
 classification input rather than a consequence of Hurwitz's bound.  The
-classification invoked by the starred source exercise identifies the full
+classification invoked by the starred exercise identifies the full
 automorphism group of this characteristic-$2$ Klein curve as
 $$
 \Aut X\cong\GL_3(\FF_2)
