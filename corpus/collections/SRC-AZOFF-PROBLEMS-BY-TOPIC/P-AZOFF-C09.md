@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $\CC \backslash \{ x \in \RR : x \leq 0 \}$ onto the open unit disk.
+Find a conformal map from $\CC\setminus\{x\in\RR:x\leq0\}$ onto the open unit disk.
 :::
 
 ::: {.solution}

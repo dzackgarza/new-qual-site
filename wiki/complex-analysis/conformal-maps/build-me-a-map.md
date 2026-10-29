@@ -131,7 +131,7 @@ Discs and planes:
 
 Slits:
 
-[[E-YAYQB]] [[P-AZOFF-C08]] [[P-IJQ5Z]] [[P-A6PQA]] [[P-CWXEW]]
+[[E-YAYQB]] [[P-AZOFF-C08]] [[P-AZOFF-C09]] [[P-A6PQA]] [[P-CWXEW]]
 
 Strips:
 
@@ -139,7 +139,7 @@ Strips:
 
 Lunes:
 
-[[E-UUBBS]] [[E-VS4XE]] [[P-K7XDT]] [[P-OONH6]] [[P-6N3HI]]
+[[E-UUBBS]] [[E-VS4XE]] [[P-AZOFF-C04]] [[P-OONH6]] [[P-6N3HI]]
 
 Sectors:
 

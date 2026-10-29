@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $D : = \left\{ z \in \CC : | z - i | > 1 , \mathrm { R e } ( z ) > 0 \right\}$ onto the open upper half plane.
+Find a conformal map from $D\coloneqq\{z\in\CC:\abs{z-i}>1,\ \Re(z)>0\}$ onto the open upper half plane.
 :::
 
 ::: {.solution}
