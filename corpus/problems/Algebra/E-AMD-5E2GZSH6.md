@@ -30,36 +30,36 @@ where $X^g = \{x \in X \mid g \cdot x = x\}$ is the fixed point set of $g$.
 
 ::: {.solution}
 Let
-\[
+$$
 S=\{(g,x)\in G\times X:g\cdot x=x\}.
-\]
-We count \(|S|\) in two ways.
+$$
+We count $|S|$ in two ways.
 
-For fixed \(g\in G\), the admissible \(x\) are exactly \(X^g\), so
-\[
+For fixed $g\in G$, the admissible $x$ are exactly $X^g$, so
+$$
 |S|=\sum_{g\in G}|X^g|.
-\]
-For fixed \(x\in X\), the admissible \(g\) are exactly the stabilizer \(G_x\), so
-\[
+$$
+For fixed $x\in X$, the admissible $g$ are exactly the stabilizer $G_x$, so
+$$
 |S|=\sum_{x\in X}|G_x|.
-\]
+$$
 
-Now sum the second expression orbit by orbit. If \(\mathcal O\) is an orbit and \(x\in\mathcal O\), then orbit-stabilizer gives
-\[
+Now sum the second expression orbit by orbit. If $\mathcal O$ is an orbit and $x\in\mathcal O$, then orbit-stabilizer gives
+$$
 |G_x|=\frac{|G|}{|\mathcal O|}.
-\]
+$$
 Hence
-\[
+$$
 \sum_{x\in\mathcal O}|G_x|
 =|\mathcal O|\frac{|G|}{|\mathcal O|}
 =|G|.
-\]
-There are \(|X/G|\) orbits, so
-\[
+$$
+There are $|X/G|$ orbits, so
+$$
 \sum_{x\in X}|G_x|=|G|\,|X/G|.
-\]
+$$
 Combining the two counts yields
-\[
+$$
 \boxed{|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|}.
-\]
+$$
 :::
