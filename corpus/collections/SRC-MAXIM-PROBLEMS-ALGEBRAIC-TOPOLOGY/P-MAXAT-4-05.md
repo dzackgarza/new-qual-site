@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-05
 kind: problem
-title: Maxim algebraic topology 4.5
+title: Cohomology ring of lens spaces
 classification:
   areas: [topology]
   topics: []
