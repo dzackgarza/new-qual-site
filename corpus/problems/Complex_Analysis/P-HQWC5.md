@@ -13,39 +13,51 @@ classification:
   - Rouché
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source asked to show that f(z) = b has n solutions in |z| < 1 without restricting b; this fails for |b| >= 1, since |f| < 1 on the disk. The statement now assumes |b| < 1 and counts solutions with multiplicity.
 ---
 
 ::: {.problem}
-For $k=1,2,\cdots, n$, suppose $\abs{a_k} < 1$ and
-\[
+For $k=1,2,\ldots, n$, suppose $\abs{a_k} < 1$ and
+$$
 f(z) \definedas \qty{z - a_1 \over 1 - \bar a_1 z} \qty{z-a_2 \over 1 - \bar a_2 z} \cdots \qty{z - a_n \over 1 - \bar a_n z}
-.\]
-Show that $f(z) = b$ has $n$ solutions in $\abs{z} < 1$.
+.$$
+Show that for every $b$ with $\abs b<1$, $f(z) = b$ has $n$ solutions in $\abs{z} < 1$, counted with multiplicity.
 :::
 
 ::: {.solution}
-Note that $f$ is holomorphic on $\DD$ and $S^1$, since the poles are at $1/\bar{a_k}$ and if $\abs{a_l} < 1$ then $\abs{\bar{a_k}} > 1$.
-Fix $b$, then define $g_w(z) \definedas f(z) - w$ and form the solution counting function
-\[
-F(w) \definedas {1\over 2\pi i}\oint_{S^1} \logd g_w(z) \dz
-= {1\over 2\pi i} \oint_{S^1} {f'(z) \over f(z)-w}\dz
-.\]
-Start by computing $F(0)$.
-\[
-F(0)
-&= {1\over 2\pi i }\oint_{S^1} \logd \prod_{1\leq k\leq n} \psi_{a_k}(z) \dz \\
-&= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} \logd \psi_{a_k}(z) \dz \\
-&= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} \qty{1-\abs{a_k}^2 \over (1-\bar{a_k} z)^2} \inverseof{\qty{z-a_k \over 1-\bar{a_k} z}} \dz \\
-&= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} {1-\abs{a_k}^2 \over (z-a_k)( 1-\bar{a_k}z) } \dz \\
-&= {1\over 2\pi i } \sum_{1\leq k\leq n} \oint_{S^1} {1-\abs{a_k}^2 \over (z-a_k)( 1-\bar{a_k}z) } \dz \\
-&= {1\over 2\pi i } \sum_{1\leq k\leq n} 2\pi i \\
-&= n
-,\]
-where we've used that the integrand has a simple pole at $a_k$ since $1/\bar{a_k}\in \DD^c$.
-So the equation $f(z) = 0$ has $n$ solutions.
-Now use that $F$ is a continuous function of $w$ on $\DD$ and integer valued, thus constant.
-So $F(w) = n$ for any $w$, meaning $f(z) = w$ has $n$ solutions in $\DD$ for every $w$.
+::: pf
 
-> Alternative: $F$ continuously depends on the $a_k$, so send them all to zero to get $f(z) = z^n$, which has exactly $n$ zeros at the origin.
+::: {.pf-step #holo}
+$f$ is holomorphic on a neighborhood of $\abs z\le 1$, and $\abs{f(z)}=1$ for $\abs z=1$.
+
+::: pf-proof
+The poles of $f$ are at $1/\bar a_k$ (none when $a_k=0$), all of modulus greater than $1$. For $\abs z=1$ and $\abs a<1$, $\abs{1-\bar a z} = \abs{\bar z - \bar a} = \abs{z-a}$, so each factor has modulus $1$.
+:::
+
+:::
+
+::: {.pf-step #zeros}
+$f$ has exactly $n$ zeros in $\DD$, counted with multiplicity.
+
+::: pf-proof
+The zeros of $f$ are the points $a_1,\ldots,a_n$, all in $\DD$, since each factor vanishes only at its $a_k$.
+:::
+
+:::
+
+::: pf-step
+For $\abs b<1$, $f(z)=b$ has exactly $n$ solutions in $\DD$, counted with multiplicity.
+
+::: pf-proof
+On $\abs z=1$, step [](#holo){.pf-ref} gives $\abs{(f(z)-b)-f(z)} = \abs b<1=\abs{f(z)}$. By Rouché's theorem $f-b$ and $f$ have the same number of zeros in $\DD$, which is $n$ by step [](#zeros){.pf-ref}.
+:::
+
+:::
+
+:::
 
 :::
