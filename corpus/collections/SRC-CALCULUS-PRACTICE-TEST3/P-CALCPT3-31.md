@@ -5,7 +5,7 @@ kind: problem
 title: "Integral of a quarter circle glued to a line on $[0,2]$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Integrals]
 relations: []
 review: draft
 audit:
