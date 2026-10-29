@@ -29,24 +29,27 @@ Is it true that the interior of a product is the product of the interiors? Speci
 ::: pf
 
 ::: {.pf-step #s1}
+
 For two factors,
-\[
+$$
 \operatorname{int}_{X\times Y}(A\times B)
 =\operatorname{int}_X(A)\times\operatorname{int}_Y(B).
-\]
+$$
 
 ::: pf-proof
 
 ::: pf-step
+
 The right-hand side is open in $X\times Y$ and contained in $A\times B$, so it is contained in the left-hand side.
 
 :::
 
 ::: pf-step
+
 Conversely, if $(x,y)\in\operatorname{int}(A\times B)$, then some basic open set $U\times V$ satisfies
-\[
+$$
 (x,y)\in U\times V\subseteq A\times B.
-\]
+$$
 Hence $U\subseteq A$ and $V\subseteq B$, so $x\in\operatorname{int}(A)$ and $y\in\operatorname{int}(B)$.
 
 :::
@@ -56,51 +59,57 @@ Hence $U\subseteq A$ and $V\subseteq B$, so $x\in\operatorname{int}(A)$ and $y\i
 :::
 
 ::: pf-step
+
 The same argument gives the finite-product identity
-\[
+$$
 \operatorname{int}\!\left(\prod_{i=1}^n A_i\right)
 =\prod_{i=1}^n\operatorname{int}(A_i).
-\]
+$$
 
 :::
 
 ::: pf-step
+
 Let now $\prod_{i\in I}X_i$ have the product topology and put $A=\prod_{i\in I}A_i$.
 
 ::: pf-proof
 
 ::: pf-step
+
 If $A$ has nonempty interior, choose a basic open set
-\[
+$$
 \prod_{i\in I}U_i\subseteq A,
-\]
+$$
 where $U_i=X_i$ for all but finitely many $i$.
 
 :::
 
 ::: pf-step
+
 For every index with $U_i=X_i$, the inclusion $U_i\subseteq A_i$ forces $A_i=X_i$. Thus $A_i=X_i$ for all but finitely many $i$.
 
 :::
 
 ::: pf-step
+
 Conversely, if $A_i=X_i$ for all but finitely many $i$, then
-\[
+$$
 \operatorname{int}(A)=\prod_{i\in I}\operatorname{int}(A_i),
-\]
+$$
 because the right-hand side is then a basic open product (possibly empty), and the finite-coordinate argument from step [](#s1){.pf-ref} proves maximality.
 
 :::
 
 ::: pf-step
+
 Therefore
-\[
+$$
 \operatorname{int}\!\left(\prod_{i\in I}A_i\right)=
 \begin{cases}
 \prod_{i\in I}\operatorname{int}(A_i),&A_i=X_i\text{ for all but finitely many }i,\\
 \varnothing,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 :::
 
@@ -109,12 +118,13 @@ Therefore
 :::
 
 ::: pf-step
+
 Hence the finite-product identity always holds, whereas for infinite products it can fail. For example,
-\[
-\operatorname{int}_{\mathbb R^{\mathbb N}}([0,1]^{\mathbb N})=\varnothing
+$$
+\operatorname{int}_{\RR^{\NN}}([0,1]^{\NN})=\varnothing
 \quad\text{but}\quad
-\prod_{n\ge1}\operatorname{int}[0,1]=(0,1)^{\mathbb N}\ne\varnothing.
-\]
+\prod_{n\ge1}\operatorname{int}[0,1]=(0,1)^{\NN}\ne\varnothing.
+$$
 
 :::
 
