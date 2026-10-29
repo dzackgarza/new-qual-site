@@ -31,9 +31,10 @@ If $X$ has finitely many path components, then $\operatorname{rank}H_0(X;\ZZ)=\a
 [[T-2YTCZ]]
 
 ::: {.proof}
-Let $X\subseteq\RR^n$ be convex and $f, g\colon Z \to X$ continuous.
-Define $H\colon Z \cross I \to X$ by $H(z,t) \coloneqq tf(z) + (1-t)g(z)$.
-By convexity $H(z,t)\in X$ for all $z$ and $t$, and $H$ is continuous with $H(\wait,0)=g$ and $H(\wait,1)=f$.
+Let $C\subseteq\RR^n$ be convex and $f, g\colon X \to C$ continuous.
+Define $F\colon X \cross I \to C$ by $F(x,t) \coloneqq (1-t)f(x) + t\,g(x)$.
+By convexity $F(x,t)\in C$ for all $x$ and $t$, and $F$ is continuous, since addition and scalar multiplication on $\RR^n$ are continuous, with $F(\wait,0)=f$ and $F(\wait,1)=g$.
+If $X = [0,1]$ and $f(0)=g(0)$, $f(1)=g(1)$, then $F(0,t) = f(0)$ and $F(1,t) = f(1)$ for all $t$, so $F$ is a homotopy rel endpoints.
 
 :::
 
