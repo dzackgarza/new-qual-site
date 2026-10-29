@@ -46,7 +46,7 @@ Equivalently, elements $m_1,\ldots,m_n\in M$ generate $M$ if and only if their i
 
 ## Noetherian rings and Krull dimension
 
-A ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes, equivalently if every ideal is finitely generated.
+Recall that a ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes, equivalently if every ideal is finitely generated.
 Let $R$ be a Noetherian ring and $I\subseteq R$ an ideal.
 
 - By Krull's principal ideal theorem, a prime ideal minimal over a principal ideal has height at most $1$.
@@ -100,4 +100,4 @@ $$
 [[D-JGYK4]]
 
 If $R$ is Noetherian, then so is $R[x_1,\ldots,x_n]$, by Hilbert's basis theorem and induction on $n$.
-An ideal $\mathfrak q\subsetneq R$ is [[D-JGYK4|primary]] if every zero divisor of $R/\mathfrak q$ is nilpotent; every prime ideal is primary, and by the Lasker--Noether theorem every ideal of a Noetherian ring is a finite intersection of primary ideals.
+Recall that an ideal $\mathfrak q\subsetneq R$ is [[D-JGYK4|primary]] if every zero divisor of $R/\mathfrak q$ is nilpotent; every prime ideal is primary, and by the Lasker--Noether theorem every ideal of a Noetherian ring is a finite intersection of primary ideals.
