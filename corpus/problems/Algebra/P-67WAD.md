@@ -26,31 +26,41 @@ Show that the splitting field of $f(x) = x^3-2$ over $\QQ$ is $\QQ(\sqrt[3]{2}, 
 :::
 
 ::: {.solution}
-Let $\alpha=\sqrt[3]{2}$ and let $\zeta_3$ be a primitive cube root of unity. The roots of
-$$
-x^3-2
-$$
-are
-$$
-\alpha,\qquad \zeta_3\alpha,\qquad \zeta_3^2\alpha.
-$$
-Hence
-$$
-K=\QQ(\alpha,\zeta_3)
-$$
-contains all roots, so the splitting field $L$ is contained in $K$.
+Let $\alpha=\sqrt[3]{2}$, let $L$ be the splitting field of $x^3-2$ over $\QQ$ in $\CC$, and let $K=\QQ(\alpha,\zeta_3)$.
 
-Conversely, $L$ contains $\alpha$ and $\zeta_3\alpha$, hence also
-$$
-\zeta_3=\frac{\zeta_3\alpha}{\alpha}.
-$$
-Therefore $K\subseteq L$, and so
-$$
-L=\QQ(\sqrt[3]{2},\zeta_3).
-$$
+::: pf
 
-Moreover, $[\QQ(\alpha):\QQ]=3$ by Eisenstein at $2$, and $\zeta_3\notin\RR$ while $\QQ(\alpha)\subset\RR$. Thus adjoining $\zeta_3$ has degree $2$, giving
-$$
-[L:\QQ]=6.
-$$
+::: {.pf-step #roots}
+The roots of $x^3-2$ are $\alpha$, $\zeta_3\alpha$ and $\zeta_3^2\alpha$.
+
+::: pf-proof
+Each is a root because $\zeta_3^3=1$, and they are distinct because $\alpha\ne0$ and $1,\zeta_3,\zeta_3^2$ are distinct.
+:::
+
+:::
+
+::: pf-step
+$L\subseteq K$.
+
+::: pf-proof
+$K$ contains all roots listed in step [](#roots){.pf-ref}, and $L$ is generated over $\QQ$ by those roots.
+:::
+
+:::
+
+::: pf-step
+$K\subseteq L$, so $L=\QQ(\sqrt[3]{2},\zeta_3)$.
+
+::: pf-proof
+$L$ contains $\alpha$ and $\zeta_3\alpha$ by step [](#roots){.pf-ref}, hence also $\zeta_3=\zeta_3\alpha/\alpha$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+$[L:\QQ]=6$: $[\QQ(\alpha):\QQ]=3$ by Eisenstein at $2$, and $\zeta_3\notin\RR\supset\QQ(\alpha)$ is a root of $x^2+x+1$, so adjoining it has degree $2$.
 :::
