@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the order of the group $\mathrm{GL}_n(\mathbb{F}_q)$ of invertible $n\times n$ matrices over the field $\mathbb{F}_q$ of $q$ elements is $(q^n-1)(q^n-q)\cdots(q^n-q^{n-1})$.
+Show that the order of the group $\GL_n(\FF_q)$ of invertible $n\times n$ matrices over the field $\FF_q$ of $q$ elements is $(q^n-1)(q^n-q)\cdots(q^n-q^{n-1})$.
 :::
 
 ::: {.solution}
@@ -57,9 +57,9 @@ The span of $k$ independent vectors is a $k$-dimensional subspace, hence has $q^
 ::: pf-step
 
 Therefore
-\[
-|\GL_n(\FF_q)|=(q^n-1)(q^n-q)(q^n-q^2)\cdots(q^n-q^{n-1}).
-\]
+$$
+\abs{\GL_n(\FF_q)}=(q^n-1)(q^n-q)(q^n-q^2)\cdots(q^n-q^{n-1}).
+$$
 
 ::: pf-proof
 
