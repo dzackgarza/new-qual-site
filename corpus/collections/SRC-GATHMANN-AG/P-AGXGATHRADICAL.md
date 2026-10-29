@@ -22,33 +22,40 @@ I\definedas \generators{x_1^3 - x_2^6,\, x_1 x_2 - x_2^3} \normal \CC[x_1, x_2]
 :::
 
 ::: {.solution}
-Let $\mci, V$ denote the maps in Hilbert's Nullstellensatz, so that
-\[
-(\mci \circ V)(I) = \sqrt{I}
-.\]
+Write $x=x_1$, $y=x_2$, and $I=\generators{x^3-y^6,\ xy-y^3}$. For $S\subseteq\AA^2$ let $\mci(S)$ be the ideal of polynomials in $\CC[x,y]$ vanishing on $S$.
 
-Consider $V(I) \subseteq \AA^2/\CC$, the vanishing locus of these two polynomials, which yields the system
-\[
-\begin{cases} x^3 - y^6 & = 0 \\ xy - y^3 & = 0. \end{cases}
-\]
-In the second equation $(x- y^2)y = 0$, and since $\CC[x, y]$ is an integral domain, one term must be zero.
+::: pf
 
-1. If $y=0$, then $x^3 = 0 \implies x= 0$, so the origin is contained in this vanishing locus.
+::: {.pf-step #nss}
+For every ideal $J\normal\CC[x,y]$, $\sqrt J=\mci(V(J))$.
 
-2. Otherwise $x-y^2 = 0$, so $x=y^2$, with no further conditions coming from the first equation.
-
-Combining these conditions,
-\[
-P\definedas \theset{(t^2, t) \st t\in \CC} \subset V(I)
-.\]
-In fact $P = V(I)$, and so taking the ideal of $P$ yields
-\[
-\qty{\mci \circ V} (I) = \mci(P) = \generators{y-x^2} \normal \CC[x ,y]
-,\]
-and thus $\sqrt{I} = \generators{y-x^2}$.
+::: pf-proof
+This is Hilbert's Nullstellensatz over the algebraically closed field $\CC$.
 :::
 
-::: {.remark}
-Erratum: the conclusion of the solution swaps the variables.
-With $x=x_1$ and $y=x_2$, the locus $P=\theset{(t^2,t)}$ is the zero locus of $x-y^2$, so $\mci(P)=\generators{x-y^2}$ and $\sqrt{I}=\generators{x_1-x_2^2}$; the ideal $\generators{y-x^2}$ vanishes on the different parabola $\theset{(t,t^2)}$.
+:::
+
+::: {.pf-step #locus}
+$V(I)=V(x-y^2)=\theset{(t^2,t)\st t\in\CC}$.
+
+::: pf-proof
+Since $xy-y^3=y(x-y^2)$, a point of $V(I)$ has $y=0$ or $x=y^2$. If $y=0$, then $x^3=0$, so the point is $(0,0)$, which satisfies $x=y^2$. Conversely, if $x=y^2$, then $x^3-y^6=0$ and $xy-y^3=0$. Hence $V(I)=V(x-y^2)$, the parabola $\theset{(t^2,t)}$.
+:::
+
+:::
+
+::: {.pf-step #prime}
+The ideal $\generators{x-y^2}$ is prime, hence radical.
+
+::: pf-proof
+The ring map $\CC[x,y]\to\CC[y]$, $x\mapsto y^2$, $y\mapsto y$, is surjective. Its kernel is $\generators{x-y^2}$: dividing by $x-y^2$, which is monic in $x$, writes every polynomial as $(x-y^2)q+r(y)$, and $r(y)$ maps to $r(y)$, which is $0$ only if $r=0$. The image $\CC[y]$ is a domain, so the kernel is prime.
+:::
+
+:::
+
+::: pf-qed
+By steps [](#nss){.pf-ref} and [](#locus){.pf-ref}, $\sqrt I=\mci(V(I))=\mci(V(x-y^2))=\sqrt{\generators{x-y^2}}$, and by step [](#prime){.pf-ref} this equals $\generators{x-y^2}$. So $\sqrt I=\generators{x_1-x_2^2}$.
+:::
+
+:::
 :::
