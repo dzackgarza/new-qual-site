@@ -22,18 +22,46 @@ audit:
 ---
 
 ::: {.problem}
-Let $p$ be a prime integer, and let $G$ be a group of order $|G| = p$.
+Let $p$ be a prime integer, and let $G$ be a group of order $\abs{G} = p$.
 Prove that:
-(1) $G$ is cyclic ($G \cong \mathbb{Z}_p$).
-(2) $G$ is simple (has no non-trivial proper normal subgroups).
+
+(a) $G$ is cyclic ($G \cong \ZZ_p$).
+
+(b) $G$ is simple (has no non-trivial proper normal subgroups).
 :::
 
 ::: {.solution}
-Choose $g\in G\setminus\{e\}$. By Lagrange,
-\[
-|\langle g\rangle|\mid |G|=p.
-\]
-Since $g\neq e$, the subgroup $\langle g\rangle$ is nontrivial, so its order is $p$. Hence $\langle g\rangle=G$, and $G\cong C_p$.
 
-Again by Lagrange, every subgroup $H\le G$ has order dividing $p$, so $H=1$ or $H=G$. Thus $G$ has no nontrivial proper normal subgroup and is simple.
+::: pf
+
+::: pf-step
+
+(a) $G$ is cyclic.
+
+::: pf-proof
+
+Choose $g\in G\setminus\{e\}$. By Lagrange's theorem,
+$$
+\abs{\langle g\rangle}\mid \abs{G}=p.
+$$
+Since $g\neq e$, the subgroup $\langle g\rangle$ is nontrivial, so its order is $p$. Hence $\langle g\rangle=G$, and $G\cong \ZZ_p$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) $G$ is simple.
+
+::: pf-proof
+
+By Lagrange's theorem, every subgroup $H\le G$ has order dividing $p$, so $H=1$ or $H=G$. In particular $G$ has no nontrivial proper normal subgroup, and $G\neq1$.
+
+:::
+
+:::
+
+:::
+
 :::
