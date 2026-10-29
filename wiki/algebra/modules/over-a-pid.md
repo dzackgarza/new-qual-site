@@ -33,7 +33,7 @@ Over $\ZZ$, the module $\ZZ$ is indecomposable and not simple, and $\ZZ/4$ is cy
 ## The structure theorem
 
 Let $M$ be a finitely generated module over a PID $R$ with torsion submodule $M_t$.
-Then $M\cong R^n\oplus M_t$, and $M_t$ is the direct sum of its $\generators p$-primary components $M_{(p)}=\theset{m\in M\st p^km=0\text{ for some }k}$ over the primes $p$ of $R$ up to associates, each a finite direct sum of modules $R/\generators{p^e}$.
+Then $M\cong R^n\oplus M_t$, and $M_t$ is the direct sum of its [[FD-LHLDU|$\generators p$-primary components]] $M_t[p^\infty]=M[p^\infty]$ over the primes $p$ of $R$ up to associates, each a finite direct sum of modules $R/\generators{p^e}$.
 The invariant factor and elementary divisor forms are two groupings of this decomposition.
 
 [[PR-DJZLY]]
