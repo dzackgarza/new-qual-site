@@ -20,14 +20,14 @@ audit:
 ---
 
 ::: {.problem}
-- Show that disjoint cycles commute.
+Show that disjoint cycles commute.
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 \sigma=(a_1\,\dots\,a_r),\qquad \tau=(b_1\,\dots\,b_s)
-\]
+$$
 be disjoint cycles.
 
 ::: pf
@@ -35,23 +35,23 @@ be disjoint cycles.
 ::: {.pf-step #s1}
 
 For every point $x$, one has
-\[
+$$
 \sigma\tau(x)=\tau\sigma(x).
-\]
+$$
 
 ::: pf-proof
 
 There are three cases.
 
 If $x$ lies in the support of $\sigma$, then $x$ is fixed by $\tau$ because the supports are disjoint. Also $\sigma(x)$ still lies in the support of $\sigma$, so it is fixed by $\tau$. Hence
-\[
+$$
 \sigma\tau(x)=\sigma(x)=\tau\sigma(x).
-\]
+$$
 
 If $x$ lies in the support of $\tau$, the same argument with the roles reversed gives
-\[
+$$
 \sigma\tau(x)=\tau(x)=\tau\sigma(x).
-\]
+$$
 
 If $x$ lies in neither support, both cycles fix $x$, so both composites fix $x$.
 
