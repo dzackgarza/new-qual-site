@@ -26,35 +26,22 @@ audit:
 ---
 
 ::: {.problem}
-(b) Show by example that the union of infinitely
-many compact subsets of a metric space need not be compact. (c) If
-$(X,d)$ is a metric space and $K\subset X$ is compact, define
-$d(x_0,K)=\inf_{y\in K} d(x_0,y)$. Prove that there exists a point
-$y_0\in K$ such that $d(x_0,K)=d(x_0,y_0)$.
+(b) Show by example that the union of infinitely many compact subsets of a metric space need not be compact.
+
+(c) If $(X,d)$ is a metric space and $K\subset X$ is compact, define $d(x_0,K)=\inf_{y\in K} d(x_0,y)$. Prove that there exists a point $y_0\in K$ such that $d(x_0,K)=d(x_0,y_0)$.
 :::
+
 ::: {.solution}
 
 ::: pf
 
 ::: pf-step
 
-(b) The union of infinitely many compact sets need not be compact.
+(b) In $\RR$, the compact sets $K_n = \theset{n}$, $n \in \NN$, have the noncompact union $\NN$.
 
 ::: pf-proof
 
-In $\RR$ (a metric space), the singletons $K_n = \{n\}$ are compact (finite, hence compact). Their union $\cup_n K_n = \NN$ is not compact: the open cover $\{(n - 1/2, n + 1/2) : n \in \NN\}$ has no finite subcover, since each open interval contains exactly one point of $\NN$. (Equivalently, $\NN$ is closed but unbounded, hence not compact.)
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-(c) The function $x \mapsto d(x_0, x)$ is continuous.
-
-::: pf-proof
-
-By the triangle inequality, $\abs{d(x_0,x) - d(x_0,y)} \le d(x,y)$, so the map is $1$-Lipschitz.
+Each $K_n$ is finite, hence compact. The open cover $\theset{(n - 1/2, n + 1/2) : n \in \NN}$ of $\NN$ has no finite subcover, since each interval contains exactly one point of $\NN$.
 
 :::
 
@@ -66,7 +53,23 @@ By the triangle inequality, $\abs{d(x_0,x) - d(x_0,y)} \le d(x,y)$, so the map i
 
 ::: pf-proof
 
-$K$ is compact and $d(x_0, \cdot)$ is continuous (step [](#s2){.pf-ref}), so $d(x_0,\cdot)$ attains its infimum on $K$ (assuming $K\neq\varnothing$, as the definition of $d(x_0,K)$ requires): there is $y_0 \in K$ with $d(x_0, y_0) = \inf_{y \in K} d(x_0, y) = d(x_0, K)$.
+::: {.pf-step #lipschitz}
+
+The function $x \mapsto d(x_0, x)$ is continuous.
+
+::: pf-proof
+
+By the triangle inequality, $\abs{d(x_0,x) - d(x_0,y)} \le d(x,y)$, so the map is $1$-Lipschitz.
+
+:::
+
+:::
+
+::: pf-qed
+
+The definition of $d(x_0,K)$ requires $K \neq \varnothing$. A continuous function on a nonempty compact set attains its infimum, so by step [](#lipschitz){.pf-ref} there is $y_0 \in K$ with $d(x_0, y_0) = \inf_{y \in K} d(x_0, y) = d(x_0, K)$.
+
+:::
 
 :::
 
