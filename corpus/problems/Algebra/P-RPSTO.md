@@ -66,7 +66,7 @@ Steps [](#nonabelian){.pf-ref} and [](#abelian){.pf-ref} cover the nonabelian an
 (b) Let $L/F$ be a finite Galois extension with solvable group $G=\Gal(L/F)$ whose order is neither $1$ nor prime. Then there is an intermediate field $F\subsetneq E\subsetneq L$ with $E/F$ Galois. Iterating along the derived series gives a tower $F=E_0\subset E_1\subset\cdots\subset E_m=L$ in which each $E_{j+1}/E_j$ is Galois with abelian group.
 
 ::: pf-proof
-By the Galois correspondence, a normal subgroup $N\trianglelefteq G$ corresponds to $E=L^N$ with $E/F$ Galois and $\Gal(E/F)\cong G/N$; $N$ proper and nontrivial gives $E\ne F,L$. With $G^{(j)}$ the derived series, $E_j\coloneqq L^{G^{(m-j)}}$ for the derived length $m$, and $\Gal(E_{j+1}/E_j)\cong G^{(m-j-1)}/G^{(m-j)}$ is abelian.
+By the Galois correspondence, a normal subgroup $N\trianglelefteq G$ corresponds to $E=L^N$ with $E/F$ Galois and $\Gal(E/F)\cong G/N$; $N$ proper and nontrivial gives $E\ne F,L$. Let $G=G^{(0)}\trianglerighteq G^{(1)}\trianglerighteq\cdots\trianglerighteq G^{(m)}=1$ be the derived series and set $E_j\coloneqq L^{G^{(j)}}$, so $E_0=L^G=F$, $E_m=L$ and $\Gal(L/E_j)=G^{(j)}$. Since $G^{(j+1)}\trianglelefteq G^{(j)}$, the Galois correspondence for $L/E_j$ makes $E_{j+1}/E_j$ Galois with $\Gal(E_{j+1}/E_j)\cong G^{(j)}/G^{(j+1)}$, which is abelian.
 :::
 
 :::
