@@ -16,22 +16,26 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked for continuity from above and below for outer measures, f=0 a.e. iff int f=0 for measurable f, and bounded implies integrable with no finiteness hypothesis; continuity from above fails for outer measure, int f=0 needs f>=0, and boundedness needs finite measure. The statement now asks for continuity from below of Lebesgue outer measure and from above for measurable sets of finite measure, assumes f integrable or f>=0, and assumes a finite measure space.'
 ---
 
 ::: {.problem}
-- Show that continuity of measure from above/below holds for outer measures.
+- Show that Lebesgue outer measure $m^*$ on $\RR^n$ is continuous from below, and that Lebesgue measure is continuous from above on decreasing sequences of measurable sets $E_1 \supseteq E_2 \supseteq \cdots$ with $m(E_1) < \infty$.
 
 - Show that a countable union of null sets is null.
 
 Measurability
 
-- Show that $f=0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
+- Show that an integrable real-valued $f$ satisfies $f=0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
 
 Integrability
 
-- Show that if $f$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
+- Show that if $f \geq 0$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
 
-- Show that a bounded function is Lebesgue integrable iff it is measurable.
+- Show that on a measure space of finite measure, a bounded function is Lebesgue integrable iff it is measurable.
 
 - Show that simple functions are dense in $L^1$.
 
@@ -55,10 +59,10 @@ Monotonicity gives $m^*(E_j) \le m^*(E_{j+1}) \le m^*(E)$. Fix $\eps > 0$ and ch
 :::
 
 ::: {.pf-step #s2}
-Continuity from above fails for $m^*$: there are $E_1 \supseteq E_2 \supseteq \cdots$ in $[-1, 2]$ with $\bigcap_j E_j = \emptyset$ and $\inf_j m^*(E_j) > 0$.
+If $E_1 \supseteq E_2 \supseteq \cdots$ are measurable, $m(E_1) < \infty$, and $E = \bigcap_j E_j$, then $m(E_j) \to m(E)$.
 
 ::: pf-proof
-Let $N \subseteq [0,1]$ contain exactly one point of each coset of $\QQ$ in $\RR$ meeting $[0,1]$, a Vitali set; $N$ is not measurable, so $m^*(N) > 0$. Let $(q_k)$ enumerate $\QQ \cap [-1,1]$; the translates $N + q_k$ are pairwise disjoint. Put $E_j = \bigcup_{k \ge j}(N + q_k)$. Then $E_j$ decreases, a point of $\bigcap_j E_j$ would lie in $N + q_k$ for infinitely many $k$, so $\bigcap_j E_j = \emptyset$, and $m^*(E_j) \ge m^*(N + q_j) = m^*(N)$.
+The sets $E_1 \setminus E_j$ increase to $E_1 \setminus E$, so continuity from below for $m$ gives $m(E_1 \setminus E_j) \to m(E_1 \setminus E)$. All these measures are finite, so $m(E_1 \setminus E_j) = m(E_1) - m(E_j)$ and $m(E_1 \setminus E) = m(E_1) - m(E)$; hence $m(E_j) \to m(E)$.
 :::
 
 :::
@@ -77,6 +81,15 @@ For measurable $f \ge 0$, $f = 0$ a.e. if and only if $\int f = 0$, if and only 
 
 ::: pf-proof
 If $f = 0$ a.e., then $f\chi_E = 0$ a.e. and $\int_E f = 0$ for every $E$, in particular for $E = \RR^n$. If $\int f = 0$, then $\int f \ge \frac1n m\theset{f \ge 1/n}$ gives $m\theset{f \ge 1/n} = 0$ for every $n$, and $\theset{f > 0} = \bigcup_n \theset{f \ge 1/n}$ is null.
+:::
+
+:::
+
+::: pf-step
+For integrable real-valued $f$, $f = 0$ a.e. if and only if $\int_E f = 0$ for every measurable $E$.
+
+::: pf-proof
+If $f = 0$ a.e., then $f\chi_E = 0$ a.e. and $\int_E f = 0$. Conversely, $E = \theset{f > 0}$ gives $\int f^+ = \int_E f = 0$, so $f^+ = 0$ a.e. by the previous step; $E = \theset{f < 0}$ gives $\int f^- = -\int_E f = 0$, so $f^- = 0$ a.e. Hence $f = f^+ - f^- = 0$ a.e.
 :::
 
 :::
@@ -119,8 +132,4 @@ Given $f \in L^1$, dominated convergence gives $R$ with $\|f - f\chi_{B(0,R)}\|_
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: continuity from below holds for Lebesgue outer measure (step [](#s1){.pf-ref}), but not for every outer measure; see [[E-ASWCD]]. Continuity from above fails even for Lebesgue outer measure on sets of finite outer measure (step [](#s2){.pf-ref}); it holds for measurable sets. The integral statements need $f \ge 0$: for $f = \chi_{[0,1]} - \chi_{[1,2]}$, $\int f = 0$ but $f \neq 0$ on a set of measure $2$. The boundedness statement needs a finite measure space.
 :::
