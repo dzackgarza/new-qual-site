@@ -28,47 +28,50 @@ $$Z(M_n(R)) \cong Z(R) \quad \text{via the ring isomorphism } r \mapsto r I_n.$$
 :::
 
 ::: {.solution}
-For $n=1$, this is immediate because $M_1(R)=R$.
-Assume $n\ge2$ and let
-\[
-A=(a_{kl})\in Z(M_n(R)).
-\]
-For the matrix units $E_{ij}$, centrality gives
-\[
-AE_{ij}=E_{ij}A
-\qquad(1\le i,j\le n).
-\]
+Write $E_{ij}$ for the matrix units, so that $(AE_{ij})_{kl}=a_{ki}\delta_{jl}$ and $(E_{ij}A)_{kl}=\delta_{ik}a_{jl}$ for $A=(a_{kl})\in M_n(R)$.
 
-Fix $i\neq j$. Comparing the $(i,j)$ entries gives
-\[
-a_{ii}=a_{jj},
-\]
-so all diagonal entries equal some $r\in R$. Comparing the $(k,j)$ entries for $k\neq i$ gives
-\[
-a_{ki}=0.
-\]
-As $i$ varies, every off-diagonal entry vanishes. Hence
-\[
-A=rI_n.
-\]
+::: pf
 
-Now let $x\in R$. Since $A$ commutes with $xE_{11}$,
-\[
-(rx)E_{11}=A(xE_{11})=(xE_{11})A=(xr)E_{11},
-\]
-so $rx=xr$. Thus $r\in Z(R)$.
+::: {.pf-step #scalar}
+Every $A=(a_{kl})\in Z(M_n(R))$ is a scalar matrix $rI_n$ with $r\in R$.
 
-Conversely, if $r\in Z(R)$ and $B=(b_{ij})\in M_n(R)$, then
-\[
-(rI_n)B=(rb_{ij})=(b_{ij}r)=B(rI_n),
-\]
-so $rI_n\in Z(M_n(R))$. Therefore
-\[
-Z(M_n(R))=\{rI_n:r\in Z(R)\}.
-\]
-The map
-\[
-Z(R)\longrightarrow Z(M_n(R)),\qquad r\longmapsto rI_n,
-\]
-is plainly a bijective ring homomorphism.
+::: pf-proof
+For $n=1$ there is nothing to prove.
+For $n\ge2$, fix $i\ne j$; then $AE_{ij}=E_{ij}A$.
+Comparing $(i,j)$ entries gives $a_{ii}=a_{jj}$, and comparing $(k,j)$ entries for $k\ne i$ gives $a_{ki}=0$.
+As $i$ and $j$ vary, all diagonal entries are equal to some $r$ and all off-diagonal entries vanish.
+:::
+
+:::
+
+::: {.pf-step #central}
+If $rI_n\in Z(M_n(R))$, then $r\in Z(R)$.
+
+::: pf-proof
+For $x\in R$, $(rx)E_{11}=(rI_n)(xE_{11})=(xE_{11})(rI_n)=(xr)E_{11}$, so $rx=xr$.
+:::
+
+:::
+
+::: {.pf-step #converse}
+If $r\in Z(R)$, then $rI_n\in Z(M_n(R))$.
+
+::: pf-proof
+For $B=(b_{ij})\in M_n(R)$, $(rI_n)B=(rb_{ij})=(b_{ij}r)=B(rI_n)$.
+:::
+
+:::
+
+::: pf-step
+$r\mapsto rI_n$ is a ring isomorphism $Z(R)\to Z(M_n(R))$.
+
+::: pf-proof
+By steps [](#scalar){.pf-ref}, [](#central){.pf-ref} and [](#converse){.pf-ref}, $Z(M_n(R))=\{rI_n:r\in Z(R)\}$, so the map is well defined and surjective.
+It is injective, and it preserves sums, products and the identity, because $rI_n+sI_n=(r+s)I_n$ and $(rI_n)(sI_n)=(rs)I_n$.
+:::
+
+:::
+
+:::
+
 :::
