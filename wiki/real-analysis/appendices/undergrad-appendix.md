@@ -98,10 +98,7 @@ So $\abs{\Delta f/\Delta x}$ is comparable to $a_nb_n\to\infty$, and $f'(x)$ doe
 
 [[D-5NODS]]
 
-::: {.definition}
-A subset of a topological space is \dfn{residual} if its complement is [[D-5NODS|meager]].
-
-:::
+[[D-GG91S]]
 
 ::: {.example}
 Every countable subset of $\RR$, such as $\QQ$, is meager, since each point is closed with empty interior.
