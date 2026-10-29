@@ -40,131 +40,57 @@ Compute the dimension of the space of $G$-equivariant linear maps from $V_2\otim
 :::
 
 ::: {.solution}
-
-**Goal.** (a) Fill in the missing row $\chi_6$. (b) Compute $\dim \operatorname{Hom}_G(V_2 \otimes V_5, V_3 \otimes V_5)$.
+Write $\alpha\coloneqq\frac{-1+\sqrt{-7}}{2}$, so $\bar\alpha=\frac{-1-\sqrt{-7}}{2}$, $\abs{\alpha}^2=2$ and $\alpha^2=\frac{-3-\sqrt{-7}}{2}$. The centralizer orders $168/\abs{\gamma_j}$ are $168,3,7,7,8,4$.
 
 ::: pf
 
-::: pf-step
-(a) Determine $\chi_6$.
+::: {.pf-step #magnitudes}
+
+$\chi_6(\gamma_1)=6$, $\chi_6(\gamma_2)=0$, $\abs{\chi_6(\gamma_4)}=1$ and $\abs{\chi_6(\gamma_5)}=2$.
 
 ::: pf-proof
 
-::: {.pf-step #chi6-at-gamma1}
-$\chi_6(\gamma_1) = 6$.
+The squared degrees sum to $168$, and $1+9+9+49+64=132$, so $\chi_6(\gamma_1)^2=36$. Column orthogonality gives $\sum_i\abs{\chi_i(\gamma_j)}^2=\abs{C_G(\gamma_j)}$. For $\gamma_2$ the known entries give $1+0+0+1+1=3$, so $\chi_6(\gamma_2)=0$. For $\gamma_4$ they give $1+2+2+0+1=6$, so $\abs{\chi_6(\gamma_4)}^2=1$. For $\gamma_5$ they give $1+1+1+1+0=4$, so $\abs{\chi_6(\gamma_5)}^2=4$.
+
+:::
+
+:::
+
+::: {.pf-step #chi6}
+
+(a) $\boxed{\chi_6=(6,0,-1,-1,2,0)}$.
 
 ::: pf-proof
-the sum of squares of the degrees is $|G| = 168$; $1^2 + 3^2 + 3^2 + 7^2 + 8^2 = 132$, so $\chi_6(\gamma_1)^2 = 168 - 132 = 36$, giving $\chi_6(\gamma_1) = 6$.
-:::
 
-:::
-
-::: {.pf-step #chi6-at-gamma2}
-$\chi_6(\gamma_2) = 0$.
-
-::: pf-proof
-column orthogonality for $\gamma_2$ (centralizer order $3$): $\sum_i |\chi_i(\gamma_2)|^2 = 3$; the known values give $1^2 + 0^2 + 0^2 + 1^2 + (-1)^2 = 3$, so $|\chi_6(\gamma_2)|^2 = 0$.
-:::
-
-:::
-
-::: {.pf-step #chi6-at-gamma4-magnitude}
-$\chi_6(\gamma_4) = \pm 1$.
-
-::: pf-proof
-column orthogonality for $\gamma_4$ (centralizer order $7$): $\sum_i |\chi_i(\gamma_4)|^2 = 7$; the known values give $1^2 + |\frac{-1+\sqrt{-7}}2|^2 + |\frac{-1-\sqrt{-7}}2|^2 + 0^2 + 1^2 = 1 + 2 + 2 + 0 + 1 = 6$, so $|\chi_6(\gamma_4)|^2 = 1$, giving $\chi_6(\gamma_4) = \pm 1$.
-:::
-
-:::
-
-::: {.pf-step #chi6-at-gamma5-magnitude}
-$\chi_6(\gamma_5) = 2$.
-
-::: pf-proof
-column orthogonality for $\gamma_5$ (centralizer order $8$): $\sum_i |\chi_i(\gamma_5)|^2 = 8$; known values give $1 + 1 + 1 + 1 + 0 = 4$, so $|\chi_6(\gamma_5)|^2 = 4$, giving $\chi_6(\gamma_5) = \pm 2$.
-:::
-
-:::
-
-::: {.pf-step #chi6-signs-resolved}
-Row orthogonality with $\chi_1$ pins down the signs: $\chi_6(\gamma_4) = -1$ and $\chi_6(\gamma_5) = 2$.
-
-::: pf-proof
-$\langle \chi_6, \chi_1\rangle = 0$ gives $6 + 24(-1) + 24\chi_6(\gamma_4) + 21\chi_6(\gamma_5) = 0$, i.e. $24\chi_6(\gamma_4) + 21\chi_6(\gamma_5) = 18$; the only solution with $\chi_6(\gamma_4) = \pm 1$, $\chi_6(\gamma_5) = \pm 2$ is $\chi_6(\gamma_4) = -1$, $\chi_6(\gamma_5) = 2$.
-:::
-
-:::
-
-::: {.pf-step #chi6-vector-value}
-Hence $\chi_6 = (6, 0, -1, -1, 2, 0)$.
-
-::: pf-proof
-collect steps [](#chi6-at-gamma1){.pf-ref}, [](#chi6-at-gamma2){.pf-ref}, [](#chi6-at-gamma4-magnitude){.pf-ref}, [](#chi6-at-gamma5-magnitude){.pf-ref} and [](#chi6-signs-resolved){.pf-ref}.
-:::
-
-:::
+$\chi_6$ is the only irreducible character of degree $6$, so it equals its complex conjugate and is real-valued. With step [](#magnitudes){.pf-ref}, $\chi_6(\gamma_4)\in\{\pm1\}$ and $\chi_6(\gamma_5)\in\{\pm2\}$. Orthogonality with $\chi_1$ gives
+$$
+6+56\cdot0+24(-1)+24\chi_6(\gamma_4)+21\chi_6(\gamma_5)+42\cdot0=0,
+$$
+that is, $24\chi_6(\gamma_4)+21\chi_6(\gamma_5)=18$. Of the four sign choices only $\chi_6(\gamma_4)=-1$, $\chi_6(\gamma_5)=2$ satisfies it.
 
 :::
 
 :::
 
 ::: pf-step
-(b) $\dim \operatorname{Hom}_G(V_2 \otimes V_5, V_3 \otimes V_5) = \langle \chi_2 \chi_5, \chi_3 \chi_5\rangle$.
+
+(b) $\dim\operatorname{Hom}_G(V_2\otimes V_5,V_3\otimes V_5)=\boxed{3}$.
 
 ::: pf-proof
 
-::: pf-step
-$\dim \operatorname{Hom}_G(V_2 \otimes V_5, V_3 \otimes V_5) = \langle \chi_{V_2 \otimes V_5}, \chi_{V_3 \otimes V_5}\rangle = \langle \chi_2 \chi_5, \chi_3 \chi_5\rangle$.
-
-::: pf-proof
-the character of a tensor product is the product of characters, and the dimension of $\operatorname{Hom}_G$ is the inner product of characters.
-:::
-
-:::
-
-::: pf-step
-Compute $\langle \chi_2 \chi_5, \chi_3 \chi_5\rangle = \frac{1}{168}\sum_j |\gamma_j| \chi_2(\gamma_j)\chi_5(\gamma_j)\overline{\chi_3(\gamma_j)\chi_5(\gamma_j)}$.
-
-::: pf-proof
-definition of the inner product.
-:::
-
-:::
-
-::: {.pf-step #hom-dimension-value}
-The value is $3$.
-
-::: pf-proof
-Compute the product characters: $\chi_2\chi_5 = (24, 0, \frac{-1-\sqrt{-7}}{2}, \frac{-1+\sqrt{-7}}{2}, 0, 0)$ and $\chi_3\chi_5 = (24, 0, \frac{-1+\sqrt{-7}}{2}, \frac{-1-\sqrt{-7}}{2}, 0, 0)$.
-Only the classes $\gamma_1, \gamma_3, \gamma_4$ contribute (the others have a zero factor), so
+The dimension is $\langle\chi_2\chi_5,\chi_3\chi_5\rangle$. The products vanish on $\gamma_2,\gamma_5,\gamma_6$, and
 $$
-\langle \chi_2\chi_5, \chi_3\chi_5\rangle
-= \frac{1}{168}\left[1\cdot 24\cdot 24 + 24\cdot \frac{-1-\sqrt{-7}}{2}\cdot \frac{-1-\sqrt{-7}}{2} + 24\cdot \frac{-1+\sqrt{-7}}{2}\cdot \frac{-1+\sqrt{-7}}{2}\right].
+\chi_2\chi_5=(24,0,\bar\alpha,\alpha,0,0),\qquad \chi_3\chi_5=(24,0,\alpha,\bar\alpha,0,0).
 $$
-Here $\overline{\frac{-1+\sqrt{-7}}{2}} = \frac{-1-\sqrt{-7}}{2}$, and
+Hence
 $$
-\left(\frac{-1-\sqrt{-7}}{2}\right)^2 = \frac{-3+\sqrt{-7}}{2}, \qquad
-\left(\frac{-1+\sqrt{-7}}{2}\right)^2 = \frac{-3-\sqrt{-7}}{2}.
+\langle\chi_2\chi_5,\chi_3\chi_5\rangle=\frac1{168}\bigl[24^2+24\bar\alpha^2+24\alpha^2\bigr]=\frac1{168}\bigl[576+24(-3)\bigr]=\frac{504}{168}=3,
 $$
-Therefore
-$$
-\langle \chi_2\chi_5, \chi_3\chi_5\rangle
-= \frac{1}{168}\left[576 + 24\cdot\frac{-3+\sqrt{-7}}{2} + 24\cdot\frac{-3-\sqrt{-7}}{2}\right]
-= \frac{1}{168}\left[576 - 36 - 36\right]
-= \frac{504}{168} = 3.
-$$
-:::
+because $\alpha^2+\bar\alpha^2=2\operatorname{Re}\alpha^2=-3$.
 
 :::
 
 :::
 
 :::
-
-::: pf-qed
-Step [](#chi6-vector-value){.pf-ref} gives $\chi_6 = (6,0,-1,-1,2,0)$; step [](#hom-dimension-value){.pf-ref} gives $\dim \operatorname{Hom}_G(V_2 \otimes V_5, V_3 \otimes V_5) = 3$.
-:::
-
-:::
-
 :::
