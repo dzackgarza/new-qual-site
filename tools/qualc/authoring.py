@@ -21,8 +21,8 @@ from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSour
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
 TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
-# STYLE-03: these number systems have vocabulary macros (\NN, \ZZ, \QQ, \RR, \CC).
-RAW_NUMBER_SYSTEM = re.compile(r"\\(?:mathbb|Bbb)\s*(?:\{\s*[NZQRC]\s*\}|[NZQRC](?![A-Za-z]))")
+# STYLE-03: these sets have vocabulary macros (\NN, \ZZ, \QQ, \RR, \CC, \FF, \DD, \RP, \CP).
+RAW_NUMBER_SYSTEM = re.compile(r"\\(?:mathbb|Bbb)\s*(?:\{\s*(?:[NZQRCFD]|RP|CP)\s*\}|[NZQRCFD](?![A-Za-z]))")
 
 
 def card_header(text: str, path: Path) -> Card:
