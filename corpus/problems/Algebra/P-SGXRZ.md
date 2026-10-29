@@ -9,7 +9,7 @@ classification:
   topics:
   - Normal Subgroups
   - Homomorphisms
-  - Geometry
+  - Covering Spaces
 relations: []
 review: draft
 ---
