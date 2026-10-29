@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15F
 kind: problem
-title: "A 3-manifold with torsion in H_1 cannot embed in S^3"
+title: 'A $3$-manifold with torsion in $H_1$ does not embed in $S^3$'
 classification:
   areas:
   - topology

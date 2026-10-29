@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15D
 kind: problem
-title: "Homology of a product of spaces with H_k = Z/kZ"
+title: 'Homology of a product of spaces with $H_k\cong\ZZ/k\ZZ$'
 classification:
   areas:
   - topology

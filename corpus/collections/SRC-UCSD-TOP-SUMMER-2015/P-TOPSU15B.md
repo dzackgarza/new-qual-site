@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15B
 kind: problem
-title: "No compact 4-manifold is homotopy equivalent to the suspension of RP^3"
+title: 'No compact $4$-manifold is homotopy equivalent to the suspension of $\RP^3$'
 classification:
   areas:
   - topology

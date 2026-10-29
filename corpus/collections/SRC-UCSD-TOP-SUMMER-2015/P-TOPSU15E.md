@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15E
 kind: problem
-title: "Z3 action on a genus-3 surface has at least two fixed points"
+title: 'A $\ZZ/3$ action on a genus-$3$ surface has at least two fixed points'
 classification:
   areas:
   - topology

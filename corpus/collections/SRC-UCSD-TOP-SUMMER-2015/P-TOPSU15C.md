@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15C
 kind: problem
-title: "Every map from RP^2 to the torus is null-homotopic"
+title: 'Every map $\RP^2\to T^2$ is null-homotopic'
 classification:
   areas:
   - topology
