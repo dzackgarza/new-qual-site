@@ -19,14 +19,15 @@ audit:
 
 ::: {.problem}
 Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \definedas \theset{x\in H \st Ux = x}$, let $P$ be the orthogonal projection onto $M$, and define
-\[
+$$
 S_N \definedas {1\over N} \sum_{n=0}^{N-1} U^n
-.\]
+.$$
 Show that for all $x\in H$,
-\[
+$$
 \norm{ S_N x - Px}_H \converges{N\to \infty } \to 0
-.\]
+.$$
 :::
+
 ::: {.solution}
 
 ::: pf
