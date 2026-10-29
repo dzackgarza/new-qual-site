@@ -27,7 +27,7 @@ Show that if $R$ is a nonzero ring where every element is either a unit or nilpo
 
 
 ::: {.solution}
-Let $N(R)$ denote the nilradical, i.e. the set of nilpotent elements of $R$.
+Here $R$ is commutative with identity. Let $N(R)$ denote the set of nilpotent elements of $R$.
 
 ::: pf
 
