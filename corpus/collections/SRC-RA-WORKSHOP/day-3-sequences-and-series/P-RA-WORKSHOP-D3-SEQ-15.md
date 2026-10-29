@@ -18,7 +18,13 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Prove Theorems 2.1, 2.2, and 2.3.
+Prove the following.
+
+(a) A monotone increasing (resp. decreasing) sequence of real numbers converges if and only if it is bounded above (resp. below).
+
+(b) If $\sum_{k=1}^{\infty}a_k$ converges, then $\lim_{k\to\infty}a_k=0$.
+
+(c) If $a_1\geq a_2\geq\cdots\geq0$, then $\sum_{n=1}^{\infty}a_n$ converges if and only if $\sum_{k=1}^{\infty}2^k a_{2^k}$ converges.
 :::
 
 ::: {.solution}
@@ -28,19 +34,19 @@ For a series $\sum_{n=1}^{\infty}a_n$, write $S_N=\sum_{n=1}^{N}a_n$.
 
 ::: {.pf-step #s1}
 
-If $a_n\geq0$ for every $n$, then $\sum_n a_n$ converges if and only if $(S_N)$ is bounded above, and in that case its sum is $\sup_N S_N$.
+(a) A nondecreasing real sequence $(s_n)$ converges if and only if it is bounded above, and then $s_n\to\sup_n s_n$; likewise a nonincreasing sequence converges if and only if it is bounded below, and then $s_n\to\inf_n s_n$.
 
 ::: pf-proof
 
-Since $S_{N+1}-S_N=a_{N+1}\geq0$, the sequence $(S_N)$ is nondecreasing. If it is bounded above, completeness of $\mathbb R$ gives $S_N\to\sup_N S_N$. Conversely, every convergent real sequence is bounded. These implications prove the claimed equivalence and identify the sum.
+Every convergent real sequence is bounded. Conversely, let $(s_n)$ be nondecreasing and bounded above, and let $s=\sup_n s_n$, which exists by completeness of $\RR$. Given $\varepsilon>0$, there is $N$ with $s_N>s-\varepsilon$, and then $s-\varepsilon<s_N\leq s_n\leq s$ for all $n\geq N$, so $s_n\to s$. The nonincreasing case follows by applying this to $(-s_n)$.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
-If $\sum_n a_n$ converges, then $a_n\to0$.
+(b) If $\sum_n a_n$ converges, then $a_n\to0$.
 
 ::: pf-proof
 
@@ -50,38 +56,32 @@ Writing $S_N\to S$, one has $a_n=S_n-S_{n-1}\to S-S=0$ for $n\geq2$. Therefore a
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
-If $(a_n)$ is nonincreasing and nonnegative, then
-\[
+(c) If $(a_n)$ is nonincreasing and nonnegative, then
+$$
 \sum_{n=1}^{\infty}a_n\text{ converges}
 \quad\Longleftrightarrow\quad
-\sum_{k=0}^{\infty}2^k a_{2^k}\text{ converges}.
-\]
+\sum_{k=1}^{\infty}2^k a_{2^k}\text{ converges}.
+$$
 
 ::: pf-proof
 
 For each $k\geq0$, monotonicity gives
-\[
+$$
 2^k a_{2^{k+1}}\leq
 \sum_{n=2^k}^{2^{k+1}-1}a_n
 \leq 2^k a_{2^k}.
-\]
-These blocks partition $\mathbb N_{\geq1}$, so summing for $0\leq k<m$ yields
-\[
+$$
+These blocks partition the positive integers, so summing for $0\leq k<m$ yields
+$$
 \frac12\sum_{j=1}^{m}2^j a_{2^j}
 \leq S_{2^m-1}
-\leq\sum_{k=0}^{m-1}2^k a_{2^k}.
-\]
-If the original series converges, its partial sums are bounded; the left inequality then bounds the partial sums of the condensed series (the omitted initial term $a_1$ is finite). Conversely, if the condensed series converges, the right inequality bounds $S_{2^m-1}$ independently of $m$. Since $(S_N)$ is nondecreasing, every $S_N$ is bounded by some such $S_{2^m-1}$ and hence by a common constant. Step [](#s1){.pf-ref} then establishes convergence of the original series. The same step establishes convergence of the condensed series from boundedness of its nonnegative partial sums.
+\leq a_1+\sum_{k=1}^{m-1}2^k a_{2^k}.
+$$
+Both series have nonnegative terms, so their partial sums are nondecreasing, and by step [](#s1){.pf-ref} each converges exactly when its partial sums are bounded above. If the original series converges, the left inequality bounds the partial sums of the condensed series by $2\sup_N S_N$. Conversely, if the condensed series converges, the right inequality bounds $S_{2^m-1}$ independently of $m$; since $(S_N)$ is nondecreasing, every $S_N$ is bounded by some such $S_{2^m-1}$. Hence the two series converge or diverge together.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the three requested assertions.
 
 :::
 
