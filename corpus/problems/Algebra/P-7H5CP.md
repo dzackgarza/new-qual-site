@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that every finite $p$-group is nilpotent.
+Show that every finite $p$-group is nilpotent.
 :::
 
 ::: {.solution}
@@ -36,9 +36,9 @@ Every nontrivial quotient of $G$ has nontrivial center.
 ::: pf-proof
 
 If $N\trianglelefteq G$ and $G/N\ne1$, then $G/N$ is again a finite $p$-group. Every finite $p$-group has nontrivial center by the class equation. Hence
-\[
+$$
 Z(G/N)\ne1.
-\]
+$$
 
 :::
 
@@ -47,22 +47,22 @@ Z(G/N)\ne1.
 ::: {.pf-step #s2}
 
 Define the upper central series by
-\[
+$$
 Z_0(G)=1,
 \qquad
 Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G)).
-\]
+$$
 As long as $Z_i(G)\ne G$, one has
-\[
+$$
 Z_i(G)<Z_{i+1}(G).
-\]
+$$
 
 ::: pf-proof
 
 If $Z_i(G)\ne G$, then the quotient $G/Z_i(G)$ is a nontrivial finite $p$-group. By step [](#s1){.pf-ref} its center is nontrivial. Therefore
-\[
+$$
 Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G))\ne1,
-\]
+$$
 which is equivalent to the strict inclusion.
 
 :::
@@ -76,13 +76,13 @@ The upper central series reaches $G$ after finitely many steps.
 ::: pf-proof
 
 Every $Z_i(G)$ is a subgroup of the finite group $G$. By step [](#s2){.pf-ref}, until the series reaches $G$ its order strictly increases. More precisely, each quotient
-\[
+$$
 Z_{i+1}(G)/Z_i(G)
-\]
-is a nontrivial $p$-group, so its order is at least $p$. If $|G|=p^n$, there can therefore be at most $n$ strict inclusions. Hence for some $c\le n$,
-\[
+$$
+is a nontrivial $p$-group, so its order is at least $p$. If $\abs{G}=p^n$, there can therefore be at most $n$ strict inclusions. Hence for some $c\le n$,
+$$
 Z_c(G)=G.
-\]
+$$
 
 :::
 
