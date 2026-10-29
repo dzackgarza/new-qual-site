@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: E-FZXFR
 kind: problem
-title: $f\in L^1$ need not imply $\hat f\in L^1$; if both, then $f$ is bounded, uniformly
-  continuous, and vanishes at infinity
+title: $f\in L^1$ need not imply $\hat f\in L^1$; if both, then $f$ agrees a.e. with a
+  uniformly continuous function vanishing at infinity
 classification:
   areas:
   - real-analysis
@@ -17,12 +17,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source asks to show that f itself is bounded, uniformly continuous and vanishes at infinity; an L^1 class has these properties only after modification on a null set, which the statement now says.
 ---
 
 ::: {.exercise}
-- Is it the case that $f\in L^1$ implies $\hat f\in L^1$?
+(a) Is it the case that $f\in L^1$ implies $\hat f\in L^1$?
 
-- Show that if $f, \hat f \in L^1$ then $f$ is bounded, uniformly continuous, and vanishes at infinity.
+(b) Show that if $f, \hat f \in L^1$ then $f$ agrees almost everywhere with a function that is bounded, uniformly continuous, and vanishes at infinity.
 :::
 
 ::: {.solution}
@@ -108,7 +112,7 @@ $g(x) = \frac{1}{2\pi}\widehat{\hat f}(-x)$ is a Fourier transform of the $L^1$ 
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} answers the first question negatively. By step [](#s2){.pf-ref}, $f$ agrees a.e. with $g$, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $g$ is bounded, uniformly continuous, and vanishes at infinity; so $f$ has these properties after modification on a null set.
+Step [](#s1){.pf-ref} answers (a) negatively. For (b), by step [](#s2){.pf-ref}, $f$ agrees a.e. with $g$, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $g$ is bounded, uniformly continuous, and vanishes at infinity; so $f$ has these properties after modification on a null set.
 
 :::
 
