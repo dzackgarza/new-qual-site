@@ -19,27 +19,27 @@ Show that if $f = u+iv$ is holomorphic then $u, v$ are harmonic.
 :::
 
 ::: {.solution}
-Idea: use Cauchy-Riemann, take further derivatives, and use equality of partials.
 
-- By CR, 
-\[
-u_x = v_y && u_y = -v_x
-.\]
+::: pf
 
-- Differentiate with respect to $x$: 
-\[
-u_{xx} = v_{yx} && u_{yx} = -v_{xx}
-.\]
-- Differentiate with respect to $y$:
-\[
-u_{xy} = v_{yy} && u_{yy} = -v_{xy}
-.\]
-- Clairaut's theorem: partials are equal, so
-\[
-u_{xx} - v_{yx} = 0 \implies u_{xx} + u_{yy} = 0 \\ \\
-v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
-.\]
+::: {.pf-step #smooth}
+$u$ and $v$ are $C^\infty$, and $u_x = v_y$, $u_y = -v_x$.
 
+::: pf-proof
+A holomorphic function is infinitely complex differentiable, so its real and imaginary parts are $C^\infty$. The equations are the Cauchy–Riemann equations.
+:::
 
+:::
+
+::: pf-step
+$u_{xx} + u_{yy} = 0$ and $v_{xx} + v_{yy} = 0$.
+
+::: pf-proof
+Differentiating the equations of step [](#smooth){.pf-ref} gives $u_{xx} = v_{yx}$, $u_{yy} = -v_{xy}$, $v_{xx} = -u_{yx}$ and $v_{yy} = u_{xy}$. Since $u$ and $v$ are $C^2$, mixed partials commute (Clairaut), so $u_{xx}+u_{yy} = v_{yx}-v_{xy} = 0$ and $v_{xx}+v_{yy} = u_{xy}-u_{yx} = 0$.
+:::
+
+:::
+
+:::
 
 :::
