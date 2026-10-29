@@ -203,7 +203,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-prelim-resource-intake`**. **Needs:** none. `RES-02`: wiki/prelim/resources/problems.md
     links `assets/attachments/calculus_practice_test3.pdf`, which no collection lists as
     provenance. **Acceptance:** the PDF is ingested as a collection, like the GRE chapter
-    reviews, and the page links that collection.
+    reviews, and the page links that collection. **Closed:** ingested as `SRC-CALCULUS-PRACTICE-TEST3`.
 
 ### Marking a node closed
 

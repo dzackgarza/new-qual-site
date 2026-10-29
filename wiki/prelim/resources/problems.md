@@ -15,7 +15,7 @@ order: 20
 
 - [UCLA basic exam problems: analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
 
-- [Multiple-choice calculus questions from a practice test](attachments/calculus_practice_test3.pdf)
+- [[SRC-CALCULUS-PRACTICE-TEST3|Multiple-choice calculus questions from a practice test]]
 
 - [[SRC-LINEAR-ALGEBRA-TEST2-REVIEW|Multiple-choice linear algebra questions from a practice test]]
 
