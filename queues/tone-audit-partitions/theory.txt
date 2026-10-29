@@ -465,7 +465,6 @@ corpus/theory/Real_Analysis/PR-IJOPU.md
 corpus/theory/Real_Analysis/PR-IQYTA.md
 corpus/theory/Real_Analysis/PR-JCZKL.md
 corpus/theory/Real_Analysis/PR-JTFMW.md
-corpus/theory/Real_Analysis/PR-JW3QE.md
 corpus/theory/Real_Analysis/PR-JX4YU.md
 corpus/theory/Real_Analysis/PR-KKJ6O.md
 corpus/theory/Real_Analysis/PR-KNYSF.md
