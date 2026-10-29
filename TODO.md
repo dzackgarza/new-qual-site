@@ -64,6 +64,45 @@ mathematical correction under its own node, not under copy policy.
   A round with any finding resets the count; repair the injected nodes, redeploy, and start again.
   **Acceptance:** three consecutive rounds against the same deployed revision (its stamped
   commit) find nothing.
+  Round 1 (revision `fe928e9a1`) injected the nodes below; `audited-deployment` needs all of them.
+
+  Renderer and site nodes (owner `tools/qualc`, `site/`):
+  - **`ad-citeproc`**. **Needs:** none. Citations in transcluded card bodies render as raw
+    `[@key]`. **Acceptance:** no deployed page shows a literal `[@`.
+  - **`ad-tikzcd`**. **Needs:** none. `tikzcd` blocks vanish on transclusion (D-KRKV7,
+    T-SKJB2, E-B4ZSQ). **Acceptance:** every card diagram renders wherever the card appears.
+  - **`ad-fancy-lists`**. **Needs:** none. A proof step opening with `(a)` splits into a
+    bare number and a list. **Acceptance:** such steps render as one numbered claim.
+  - **`ad-smart-titles`**. **Needs:** none. `--` and `$…$` reach titles, prompts, link
+    text and `<title>`. **Acceptance:** dashes typeset; tab titles carry no TeX.
+  - **`ad-bare-id-links`**. **Needs:** none. 148 wikilinks display a bare card id.
+    **Acceptance:** link text is the card title or authored text.
+  - **`ad-collection-pages`**. **Needs:** none. Drop cap splits the count; "1 problems.";
+    derived "Problem N" locators; transcluded collections render empty (workshop packets).
+    **Acceptance:** each corrected on the deployed pages.
+  - **`ad-site-strings`**. **Needs:** none. Unmatched browser prefilter widens to all rows;
+    `sourced` compatibility filter; Sources/Exams naming; area label spellings; Pagefind
+    excerpts include page facts; "Choose topic" over areas; home contents list.
+    **Acceptance:** each corrected on the deployed pages.
+
+  Content nodes (owner: the named cards and pages; one item at a time):
+  - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
+    (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
+    T-4XKGD/L-6QBOJ, PR-GJLQP/P-5UUNM, T-GJNT5/C-HWX2P/E-NNTQB, P-AMD-QBEEJKCX/E-AMD-UEHZOJ3K);
+    notation and structure defects in D-53LTN, PR-IOMVN, PR-SLWTB, T-WRMBM, PR-KGHJ2, E-P5BF6,
+    the-class-equation, orbit-stabilizer, characteristic-subgroups, is-this-group-abelian.
+    **Acceptance:** each item read and repaired.
+  - **`ad-topology-ag-content`**. **Needs:** none. PR-QV4U5 proof does not prove its CW
+    statement; C-ILVEB empty concept block; C-GJRYO dangling colon; T-BX4LD notation;
+    E-JX67Q delimiters; separated-and-proper and curves-in-projective-space restatements;
+    wiki/prelim/worked-exams/all.md stray remark. **Acceptance:** each item read and repaired.
+  - **`ad-analysis-content`**. **Needs:** none. P-RAF23C step 2 fails for infinite measure;
+    P-RAF23F/G titles carry TeX outside math; P-RAF23G "measurable space"; STYLE-05 part
+    keying in P-SMK7Q, P-NYOLD, P-PEND3, P-7XPOK; GUIDE-REAL-ANALYSIS joint-exam intro
+    describes complex analysis. **Acceptance:** each item read and repaired.
+  - **`ad-public-notes`**. **Needs:** none. Curation notes on public pages
+    (workshops-guide topology lede, SRC-RA-WORKSHOP remark) and RES-01 duplicate PDF links
+    in wiki/prelim/resources/problems.md. **Acceptance:** each item read and repaired.
 
 ### Marking a node closed
 
