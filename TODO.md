@@ -126,15 +126,15 @@ mathematical correction under its own node, not under copy policy.
     D-CNLBT, D-JW63I and D-K5MLW (orientation, local orientation, orientable) into D-6CI7D;
     the fundamental-class theorem stays on D-TS7TZ. D-QTJ7T and T-TUXBP (complex analysis) keep citation-only
     `concept` blocks.
-  - **`ad2-style-03-corpus`**. **Needs:** none. `STYLE-03` number-system typefaces outside the
-    vocabulary macros: 5,183 files under `corpus/` and `wiki/` contain `\mathbb` (measured
-    2026-10-30 with `grep -rlE '\\mathbb' corpus wiki`, excluding SRC-RA-WORKSHOP, which
-    `ad2-real-analysis-content` owns). The largest collections are SRC-TEXT-MUN00, SRC-TEXT-HAT02,
-    SRC-JHU-ANALYSIS-EXAMS, SRC-TEXT-HK71 and SRC-HARVARD-MATH213A-2017. Each use is read in
-    context: a `\mathbb` letter that is not a standard number system with a vocabulary macro
-    stays. **Acceptance:** every remaining `\mathbb` is one that `STYLE-03` permits.
-    **Progress 2026-10-30:** SRC-TEXT-MUN00 done (f3ecc3fa43); it keeps `\mathbb{P}` for the
-    irrationals in E-AKPMH and `\mathbb{B}^2` for the open ball in E-2B91X. Next: SRC-TEXT-HAT02.
+  - **`ad2-style-03-corpus`**. **Needs:** none. `STYLE-03` typefaces written raw instead of with
+    the vocabulary macros. The letters with one meaning (N, Z, Q, R, C, F, D, RP, CP) were
+    rewritten by codemod (579287fd3f, 8176772bad), and `qualc.authoring` now rejects them in any
+    changed card. What remains needs reading, because the letter has several meanings: `\mathbb`
+    H, P, T, A, S, G, E, M (215 files on 2026-10-30, `grep -rlE '\\(mathbb|Bbb)' corpus wiki`),
+    unbraced forms such as `\mathbb Cx` and `\mathbb CP`, and `\mathbf` Z, Q, R, C, N
+    (32 files). Kept on purpose: `\mathbb{P}` for the irrationals in E-AKPMH and
+    `\mathbb{B}^2` for the open ball in E-2B91X. **Acceptance:** every remaining raw form is one
+    that `STYLE-03` permits.
   - **`ad2-complex-analysis-content`**. **Needs:** none. The power-series Dirichlet's-test proof
     swaps the two sequences. CARD-04: PR-K57J6/E-TZJKN; E-6F2HU/E-THK2Z; PR-OOHUL/E-PAQPF;
     PR-Y36BS/D-E7A5W proposition/Cauchy–Riemann page remark; T-E76LX/P-Y5SS5; D-4CSPM/D-OMBQT;
