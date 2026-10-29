@@ -49,9 +49,9 @@ The converse fails in general.
 ::: pf-proof
 
 In $\ZZ$, the zero ideal $(0)$ is prime because $\ZZ$ is an integral domain. But $(0)$ is not maximal, since
-\[
+$$
 (0)\subsetneq (2)\subsetneq \ZZ.
-\]
+$$
 Thus a prime ideal need not be maximal.
 
 :::
