@@ -15,51 +15,84 @@ review: draft
 ---
 
 ::: {.problem}
-a. 
-State the standard Schwarz reflection principle involving reflection across the real axis.
+(a) State the standard Schwarz reflection principle involving reflection across the real axis.
 
-b. 
-Give a linear fractional transformation $T$ mapping $\DD$ to $\HH$.
+(b) Give a linear fractional transformation $T$ mapping $\DD$ to $\HH$.
 Let $g(z) = \bar z$, and show
-\[
-(T^{-1} \circ g \circ T)(z) = 1/\bar z
-.\]
+$$
+(T^{-1} \circ g \circ T)(z) = 1/\bar z.
+$$
 
-c.
-Suppose that $f$ is holomorphic on $\DD$, continuous on $\bar \DD$, and real on $S^1$.
+(c) Suppose that $f$ is holomorphic on $\DD$, continuous on $\bar \DD$, and real on $S^1$.
 Show that $f$ must be constant.
-
 :::
 
 ::: {.solution}
-**Part 1**: Let $\Omega = \Omega^+ \union I \union \Omega^-$ be a region symmetric about $\RR$.
-If $f$ is holomorphic on $\Omega^+$ extending continuously to $I$ and real valued on $I$, then $f$ extends to a holomorphic function $F$ on all of $\Omega$ defined on $\Omega^-$ by $F(z) = \bar{f(\bar{z})}$.
+Write $\Omega^\pm \coloneqq \Omega \cap \{\pm\Im z > 0\}$ and $I \coloneqq \Omega\cap\RR$ for a region $\Omega$ symmetric about $\RR$.
 
-**Part 2**: The map is $T(z) = -i\qty{z+1\over z-1}$ with $\inverseof{T}(z) = {z-i\over z+i}$, so
-\[
-(\inverseof{T} \circ g \circ T)(z)
-&= \inverseof{T}\bar{\qty{-i {z+1\over z-1} }} \\
-&= \inverseof{T}\qty{i{\bar z + 1 \over \bar z - 1}} \\
-&= {i\qty{\bar z + 1 \over \bar z - 1} - i \over i\qty{\bar z + 1 \over \bar z - 1} + i } \\
-&= {(\bar z + 1) - (\bar z - 1) \over (\bar z + 1) + (\bar z - 1)} \\
-&= {1\over \bar{z}}
-.\]
+::: pf
 
-**Part 3**: Define $h: \HH\to \bar{\HH}$ by $h(z) = (T\circ f\circ \inverseof{T})(z)$.
-Under $\inverseof{T}: \DD\to \HH$, we have $T(S^1) = \RR$, so $h$ is a holomorphic function on $\HH$ that is continuous and real-valued on $\RR$.
-By the reflection principle, defining $H(z) \definedas \bar{h(\bar z)}$ for $\Im(z) < 0$ yields an entire function $H: \CC\to \CC$ Noting that for $g(z) \definedas \bar{z}$, $g=\inverseof{g}$, we can write
-\[
-H \definedas \inverseof{g} \circ h \circ = \inverseof{h} \circ (\inverseof{T} \circ f \circ T)\circ g
-.\]
-We can then conjugate $H$ by $T$ to get a direct formula in terms of $f$, and unwinding this yields the extension $F:\CC\to \CC$ defined by
-\[
-F(z) =
-\begin{cases}
-f(z) & z\in \DD
-\\
-f_-(z) \definedas {1\over \bar{f\bar{z}}} & z\in \DD^c \\
-f(z) = f_i(z) & z\in S^1
-\end{cases}
-.\]
-In particular, $H$ is an entire bounded function and thus constant, making $F$ constant as well and consequently $f$ is constant.
+::: pf-step
+(a) If $f$ is holomorphic on $\Omega^+$, extends continuously to $\Omega^+\cup I$, and is real on $I$, then
+$$
+F(z) \coloneqq \begin{cases} f(z) & z\in \Omega^+\cup I \\ \overline{f(\bar z)} & z\in\Omega^- \end{cases}
+$$
+is holomorphic on $\Omega$.
+
+::: pf-proof
+This is the Schwarz reflection principle.
+:::
+
+:::
+
+::: {.pf-step #mobius}
+(b) $T(z) \coloneqq i\,\dfrac{1+z}{1-z}$ maps $\DD$ onto $\HH$, with $T^{-1}(w) = \dfrac{w-i}{w+i}$, and $(T^{-1}\circ g\circ T)(z) = 1/\bar z$.
+
+::: pf-proof
+For $\abs{z}<1$,
+$$
+\Im T(z) = \Re\frac{(1+z)(1-\bar z)}{\abs{1-z}^2} = \frac{1-\abs{z}^2}{\abs{1-z}^2} > 0,
+$$
+and solving $w = T(z)$ for $z$ gives the stated inverse, which maps $\HH$ into $\DD$ because $\abs{w-i}<\abs{w+i}$ for $\Im w>0$.
+Since $\overline{T(z)} = -i\,\dfrac{1+\bar z}{1-\bar z}$,
+$$
+T^{-1}\qty{\overline{T(z)}}
+= \frac{-i\frac{1+\bar z}{1-\bar z} - i}{-i\frac{1+\bar z}{1-\bar z} + i}
+= \frac{(1+\bar z) + (1-\bar z)}{(1+\bar z) - (1-\bar z)}
+= \frac{1}{\bar z}.
+$$
+:::
+
+:::
+
+::: {.pf-step #extension}
+The function
+$$
+F(z) \coloneqq \begin{cases} f(z) & \abs{z}\le 1 \\ \overline{f(1/\bar z)} & \abs{z}>1 \end{cases}
+$$
+is entire.
+
+::: pf-proof
+$F$ is holomorphic on $\abs{z}<1$ and on $\abs{z}>1$, and continuous on $\CC$ because $f$ is real on $S^1$ and $1/\bar z = z$ there.
+Let $h \coloneqq f\circ T^{-1}$ on $\HH\cup\RR$; by step [](#mobius){.pf-ref}, $T^{-1}$ maps $\RR$ onto $S^1\setminus\{1\}$, so $h$ is holomorphic on $\HH$, continuous up to $\RR$, and real on $\RR$.
+By the reflection principle, $w\mapsto\overline{h(\bar w)}$ extends $h$ holomorphically to $\CC\setminus\{-i\}$, the image of $\CC\setminus\{1\}$ under $T$.
+By step [](#mobius){.pf-ref}, for $\Im w<0$ the point $z = T^{-1}(w)$ satisfies $T^{-1}(\bar w) = 1/\bar z$, so $\overline{h(\bar w)} = \overline{f(1/\bar z)} = F(z)$.
+Hence $F = (\text{extension of } h)\circ T$ is holomorphic on $\CC\setminus\{1\}$.
+The point $1$ is an isolated singularity at which $F$ is continuous, hence bounded nearby, so it is removable.
+:::
+
+:::
+
+::: pf-step
+(c) $f$ is constant.
+
+::: pf-proof
+For $\abs{z}\ge1$, $\abs{F(z)} = \abs{f(1/\bar z)} \le \max_{\bar\DD}\abs{f}$, and on $\bar\DD$ the same bound holds since $\bar\DD$ is compact.
+So the entire function $F$ of step [](#extension){.pf-ref} is bounded, hence constant by Liouville's theorem, and $f = F|_{\bar\DD}$ is constant.
+:::
+
+:::
+
+:::
+
 :::
