@@ -1037,7 +1037,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-TDDQI.md` | `0194fb1b83ba0d163afe6fbfefd24986cd0fa776` | `0194fb1b83ba0d163afe6fbfefd24986cd0fa776` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-THK2Z.md` | `b6c0bc52fadc8f80f7bd7111243248e5a0641867` | `b6c0bc52fadc8f80f7bd7111243248e5a0641867` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-TJ3WM.md` | `3e689f1db362f7894d303e17a40d009a708fd88c` | `3e689f1db362f7894d303e17a40d009a708fd88c` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-TM2Z4.md` | `08ef22088b3c77eb249bde1ccdc3094c5b920450` | `08ef22088b3c77eb249bde1ccdc3094c5b920450` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-TOZQJ.md` | `444ff341db7bc059c58f417469fe415cec4a0995` | `444ff341db7bc059c58f417469fe415cec4a0995` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-TUKVC.md` | `b4fcd264869e0d751a20c554308d45628b40dbdc` | `b4fcd264869e0d751a20c554308d45628b40dbdc` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-TVJFL.md` | `158ba8b95c1719d1ddc475c16fe772d334345947` | `158ba8b95c1719d1ddc475c16fe772d334345947` | Read; retained |
@@ -2599,7 +2598,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Real_Analysis/FD-5T3HX.md` | `9f5e808e27033237a71240d60933e5840975c9e7` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-6HUIM.md` | `5d6f38be01958f02bd2c36ec8e5d338ef2c8709d` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-AI6XN.md` | `40f2c6427a120d65838d76e4ef5dcab5262c7bab` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/FD-BA2WU.md` | `79b71493c8fb3036b30788169ddf4dd1bd3d5400` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-BBR6Q.md` | `3df64b9b4858d0a2baa8b09494ed103cfd610a06` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-D2QPH.md` | `e9a5bdfa25c221a0111b9f4d879c6e273fedc5c7` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-D7HOH.md` | `9a914484db0e99e59f13d9350b69de5b30c445ff` | — | Pending |
