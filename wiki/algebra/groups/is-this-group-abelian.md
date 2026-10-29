@@ -26,9 +26,6 @@ Throughout, $G$ is a finite group and $p<q$ are primes.
 
 [[PR-SLWTB]]
 
-For $\size G = p^2$, the [[D-NK7G7|center]] $Z(G)$ is nontrivial by the class equation; if $\size{Z(G)} = p$, then $G/Z(G)$ has order $p$ and is cyclic, and a group whose quotient by its center is cyclic is abelian, so $Z(G)=G$, a contradiction.
-Hence $Z(G)=G$.
-
 ## From a quotient
 
 ::: {.proposition}
