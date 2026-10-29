@@ -53,19 +53,11 @@ Over a field of characteristic $0$, a polynomial is solvable by radicals if and 
 [[T-OHEFT]]
 
 ::: {.proposition}
-For a finite group $G$, the following are equivalent.
-
-- $G$ is nilpotent.
+For a finite group $G$, besides the characterizations above, each of the following is equivalent to $G$ being nilpotent.
 
 - For every proper subgroup $H < G$, $H < N_G(H)$.
 
-- Every Sylow subgroup of $G$ is normal.
-
 - $G$ is the direct product of its Sylow subgroups.
-
-- Every maximal subgroup of $G$ is normal.
-
-- The lower central series of $G$ reaches $1$.
 
 - The upper central series of $G$ reaches $G$.
 :::

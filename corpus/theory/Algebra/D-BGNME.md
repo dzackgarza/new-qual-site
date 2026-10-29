@@ -22,5 +22,4 @@ The \dfn{lower central series} of $G$ is the chain $G^0 \geq G^1 \geq \cdots$.
 
 ::: {.remark}
 The series is descending, while the [[D-XEDSI|upper central series]] is ascending.
-A group $G$ with identity $e$ is [[D-53JVH|nilpotent]] if and only if $G^n = \theset{e}$ for some $n\geq 0$.
 :::
