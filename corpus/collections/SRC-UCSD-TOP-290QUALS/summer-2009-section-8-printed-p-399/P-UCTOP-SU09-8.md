@@ -22,8 +22,6 @@ Show that its Euler characteristic is odd if and only if the dimension of $H_n(M
 :::
 
 ::: {.solution}
-**Goal.** For a closed orientable $2n$-manifold $M$, relate the parity of $\chi(M)$ to $\dim H_n(M;\QQ)$, and deduce a non-orientability statement in dimension $4n+2$.
-
 ::: pf
 
 ::: pf-step
