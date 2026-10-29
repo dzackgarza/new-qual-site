@@ -50,7 +50,6 @@ Show that $f(x) = x - x^2/2$ maps $X$ into $X$ and is a shrinking map that is no
 :::
 
 ::: {.solution}
-**Goal:** Prove the existence and uniqueness of fixed points for contractions and shrinking maps on compact metric spaces, and analyze explicit counterexamples on non-compact and non-contraction spaces.
 
 ::: pf
 
