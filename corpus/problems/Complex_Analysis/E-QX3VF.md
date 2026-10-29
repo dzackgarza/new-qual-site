@@ -20,7 +20,30 @@ Characterize all entire functions with a pole of order $m$ at $\infty$.
 :::
 
 ::: {.solution}
-Since $f$ is entire, $f(z) = \sum_{k\geq 0 } c_k z^k$.
-Expanding about $z_0=\infty$, we have $f(1/z) = \sum_{k\geq 0} c_k z^{-k} = c_0 + {c_1\over z} + \cdots$.
-If $z_0=\infty$ is a pole of order $m$, then $c_m\neq 0$ but $c_{>m} = 0$, which forces $f(z) = \sum_{0\leq k \leq m} c_k z^k$ to be a polynomial of degree $m$.
+Let $f$ be entire, and let $f(z) = \sum_{k\geq 0} c_k z^k$ be its Taylor series, which converges on all of $\CC$.
+
+::: pf
+
+::: pf-step
+$f$ has a pole of order $m$ at $\infty$ if and only if $c_m\neq 0$ and $c_k = 0$ for all $k>m$.
+
+::: pf-proof
+By definition, $f$ has a pole of order $m$ at $\infty$ when $g(w) \coloneqq f(1/w)$ has a pole of order $m$ at $w=0$.
+On $\CC\sm\{0\}$, $g(w) = \sum_{k\geq 0} c_k w^{-k}$ is the Laurent series of $g$ about $0$, with principal part $\sum_{k\geq 1} c_k w^{-k}$.
+The pole has order $m$ exactly when this principal part ends at the term $c_m w^{-m}$ with $c_m\neq 0$.
+:::
+
+:::
+
+::: pf-step
+The entire functions with a pole of order $m$ at $\infty$ are $\boxed{\text{the polynomials of degree exactly } m}$.
+
+::: pf-proof
+By the first step, such an $f$ is $\sum_{k=0}^{m} c_k z^k$ with $c_m\neq 0$, and every such polynomial satisfies the condition of that step.
+:::
+
+:::
+
+:::
+
 :::
