@@ -56,7 +56,7 @@ Abelianizing gives $\ZZ^n\cong\ZZ^m$, and tensoring with $\ZZ/2$ gives $(\ZZ/2)^
 
 ::: pf-proof
 A homeomorphism $h\colon S^2 \to S^3$ would restrict to a homeomorphism $S^2\setminus\{p,q\} \to S^3\setminus\{h(p),h(q)\}$.
-But $S^2\setminus\{p,q\}\simeq S^1$, by the deformation retraction of [[P-6DZST]], and $S^3\setminus\{p',q'\}\simeq S^2$, since by stereographic projection from $p'$ it is $\RR^3$ minus a point.
+But $S^2\setminus\{p,q\}\simeq S^1$, by the deformation retraction of [[P-AMD-KTTTNLDO]], and $S^3\setminus\{p',q'\}\simeq S^2$, since by stereographic projection from $p'$ it is $\RR^3$ minus a point.
 Their fundamental groups are $\ZZ$ and $0$, so the punctured spaces are not homotopy equivalent, hence not homeomorphic.
 :::
 
