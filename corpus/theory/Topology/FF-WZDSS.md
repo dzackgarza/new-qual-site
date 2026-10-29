@@ -5,7 +5,7 @@ kind: fact
 title: $\Ext^*_{\ZZ}(\ZZ/n, A)$
 slogan: 'For $\ZZ/n$, $\Ext^0$ detects $n$-torsion, $\Ext^1$ is quotient by $n$, and higher $\Ext$ vanishes.'
 prompts:
-- What is $\operatorname{Ext}^*_{\mathbf{Z}}(\mathbf{Z}/n, A)$?
+- What is $\Ext^*_{\ZZ}(\ZZ/n, A)$?
 classification:
   areas:
   - topology
