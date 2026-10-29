@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LIK72
 kind: problem
-title: Finitely many poles
+title: A meromorphic function on $\CP^1$ has finitely many poles
 classification:
   areas:
   - complex-analysis
@@ -13,19 +13,48 @@ classification:
   - Riemann Surfaces
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source says the poles "must accumulate on an essential singularity at z=infinity". An accumulation point of poles is not an isolated singularity, so it is not an essential singularity in the usual sense; the statement says the poles accumulate at infinity, so that f does not extend to a meromorphic function on CP^1.
 ---
 
 ::: {.exercise}
 Show that a meromorphic function on $\CP^1$ can have only finitely many poles.
-Show that moreover if $f$ is meromorphic on $\CC$ with infinitely many poles, then the poles must accumulate on an essential singularity at $z=\infty$.
+Show that moreover if $f$ is meromorphic on $\CC$ with infinitely many poles, then the poles must accumulate at $z=\infty$, so that $\infty$ is a non-isolated singularity of $f$ and $f$ does not extend to a meromorphic function on $\CP^1$.
 :::
 
 ::: {.solution}
-Since poles are isolated by definition, the set $P_f$ of poles of $f$ is a discrete subset of $\CP^1$, which is compact.
-Note $P_f$ is closed because being holomorphic is an open condition.
-Any discrete closed subset of a compact space is discrete and compact, thus necessarily finite.
+::: pf
 
-Applying this to any bounded $\Omega \subseteq \CC$, there can only be finitely many poles in any disc of radius $R$.
-If there are infinitely many poles, this forces them to accumulate on $z=0\infty$.
-A limit point of a sequence of poles of $f$ is a limit point of a sequence of zeros of $g\definedas 1/f$, making it an essential singularity for both.
+::: {.pf-step #closed-discrete}
+The set $P_f$ of poles of a meromorphic function $f$ on a Riemann surface $X$ is closed and discrete in $X$.
+
+::: pf-proof
+Each pole has a punctured neighborhood on which $f$ is holomorphic, so $P_f$ is discrete. Each point not in $P_f$ is a point of holomorphy or a pole-free point with a neighborhood free of poles, by the definition of meromorphic, so $X\setminus P_f$ is open.
+:::
+
+:::
+
+::: {.pf-step #finite}
+A meromorphic function on $\CP^1$ has finitely many poles.
+
+::: pf-proof
+By step [](#closed-discrete){.pf-ref}, $P_f$ is a closed discrete subset of the compact space $\CP^1$, hence compact and discrete, hence finite.
+:::
+
+:::
+
+::: pf-step
+If $f$ is meromorphic on $\CC$ with infinitely many poles, then the poles accumulate at $\infty$, and $f$ does not extend to a meromorphic function on $\CP^1$.
+
+::: pf-proof
+By step [](#closed-discrete){.pf-ref} applied to $X=\CC$, each closed disk $\abs z\le R$ contains finitely many poles, so there are poles $p_k$ with $\abs{p_k}\to\infty$. Every neighborhood of $\infty$ in $\CP^1$ then contains poles, so $\infty$ is not an isolated singularity, and a meromorphic extension to $\CP^1$ would contradict step [](#finite){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
