@@ -23,7 +23,3 @@ $$
 \end{aligned}
 $$
 :::
-
-::: {.remark}
-With $iz$ in place of $z$, the same expressions give the trigonometric functions: $\cos(z)=\frac{e^{iz}+e^{-iz}}{2}=\cosh(iz)$ and $\sin(z)=\frac{e^{iz}-e^{-iz}}{2i}=-i\sinh(iz)$.
-:::
