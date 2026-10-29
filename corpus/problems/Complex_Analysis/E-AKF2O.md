@@ -83,3 +83,8 @@ I = \binom{2n}{n} \frac{\pi}{4^n}
 = \frac{(2n)(2n-1)\cdots(n+1)}{n!}\, \frac{\pi}{4^n}.
 $$
 :::
+
+::: {.remark title="Variations"}
+For $n=1$ the formula gives $\int_\RR\frac{dx}{(1+x^2)^2}=\frac{\pi}{2}$.
+Directly, the only pole in the upper half-plane is the double pole at $i$, with residue $\frac{d}{dz}(z+i)^{-2}\big|_{z=i}=-2(2i)^{-3}=\frac{1}{4i}$, and the upper semicircle contributes at most $\pi R/(R^2-1)^2\to0$.
+:::

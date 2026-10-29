@@ -883,7 +883,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-AHBVF.md` | `65d73357eeff87ac9e7c0d76381b33bc9c2a59b2` | `65d73357eeff87ac9e7c0d76381b33bc9c2a59b2` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-AIQEU.md` | `d0226971828f653aad849982065bc6543cef639d` | `d0226971828f653aad849982065bc6543cef639d` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-AKF2O.md` | `6329a7d77935d63736a843ce32b47bfc48bdac76` | `6329a7d77935d63736a843ce32b47bfc48bdac76` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-AKNDW.md` | `d7e318491035b43de5aa31249a3786db77b82188` | `d7e318491035b43de5aa31249a3786db77b82188` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ALB7C.md` | `bd3be146fb8f93b681ec60de0b47e427301e75cb` | `bd3be146fb8f93b681ec60de0b47e427301e75cb` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-AOQLK.md` | `af1f927aa4decbf1181e8173f8a6054cd3ce5714` | `af1f927aa4decbf1181e8173f8a6054cd3ce5714` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ARVUV.md` | `97df018400a2ce2adccb0b916d676ec1fd11be74` | `97df018400a2ce2adccb0b916d676ec1fd11be74` | Read; retained |
