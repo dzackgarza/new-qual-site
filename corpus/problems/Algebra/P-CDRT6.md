@@ -22,16 +22,25 @@ audit:
 ---
 
 ::: {.problem}
-- Does diagonalizable imply distinct eigenvalues?
+Does diagonalizable imply distinct eigenvalues?
 :::
 
-
 ::: {.solution}
-No. For example, the identity matrix
-\[
-I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix}
-\]
-is already diagonal, hence diagonalizable, but it has only one eigenvalue, namely $1$, with algebraic multiplicity $2$.
 
-More generally, a diagonalizable matrix may have repeated diagonal entries. Diagonalizability means that the vector space has a basis of eigenvectors; it does not require the corresponding eigenvalues to be distinct.
+::: pf
+
+::: pf-step
+
+$\boxed{\text{No}}$: the identity matrix $I_2$ is diagonalizable but has the repeated eigenvalue $1$.
+
+::: pf-proof
+
+$I_2$ is diagonal, hence diagonalizable, and its characteristic polynomial is $(x-1)^2$, so its only eigenvalue is $1$, with algebraic multiplicity $2$. Diagonalizability asks for a basis of eigenvectors, not for distinct eigenvalues.
+
+:::
+
+:::
+
+:::
+
 :::
