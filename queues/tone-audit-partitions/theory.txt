@@ -289,7 +289,6 @@ corpus/theory/Real_Analysis/D-SLYE5.md
 corpus/theory/Real_Analysis/D-T4LOC.md
 corpus/theory/Real_Analysis/D-TS42Y.md
 corpus/theory/Real_Analysis/D-TVKFM.md
-corpus/theory/Real_Analysis/D-UYOGE.md
 corpus/theory/Real_Analysis/D-VFNTY.md
 corpus/theory/Real_Analysis/D-YWRVG.md
 corpus/theory/Real_Analysis/D-YZC3C.md
