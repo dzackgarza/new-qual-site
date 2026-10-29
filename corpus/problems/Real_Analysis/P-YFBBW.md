@@ -5,7 +5,7 @@ kind: problem
 title: A continuous $f:\RR\to\RR$ vanishing at $\pm\infty$ is uniformly continuous
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Continuity
   - Continuity
