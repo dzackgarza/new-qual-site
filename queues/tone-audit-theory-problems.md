@@ -2295,7 +2295,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/C-Q6BSL.md` | `9363a40bf0a28bc8b833a8292a2740752076ca17` | `c3b016ddbb1c31d1be6d28d24b9929a483afb058` | Read in full; replaced evaluative title with the residue formula and its denominator hypothesis. |
 | [x] | `corpus/theory/Complex_Analysis/C-TODSQ.md` | `df5bb042badf0815158fdd447825bc3a5cb81581` | `df5bb042badf0815158fdd447825bc3a5cb81581` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/C-YQUHR.md` | `a648cc86a904c6c44d51562dc4ca39b7a3063eab` | `a648cc86a904c6c44d51562dc4ca39b7a3063eab` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/C-ZTEH7.md` | `3eb2e38f948416263a3d240c15eab073da65635b` | `3eb2e38f948416263a3d240c15eab073da65635b` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-2WZLB.md` | `1ab6fe95b01f990475aa21961cb4e29fea0d16f8` | `1ab6fe95b01f990475aa21961cb4e29fea0d16f8` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-4CSPM.md` | `4c27bb5e2b880ccfd0d15a07921527ebd20130de` | `4c27bb5e2b880ccfd0d15a07921527ebd20130de` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-5Y4MC.md` | `479901c8bd8f15d25b3daf9b9948ca495ff9939a` | `479901c8bd8f15d25b3daf9b9948ca495ff9939a` | Read; retained |

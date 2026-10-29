@@ -20,6 +20,7 @@ Then
 $$
 \Res_{z=z_0}\frac{g(z)}{h(z)}=\frac{g(z_0)}{h'(z_0)}.
 $$
+In particular, $\Res_{z=z_0}\frac{1}{h(z)}=\frac{1}{h'(z_0)}$.
 :::
 
 ::: {.proof}
