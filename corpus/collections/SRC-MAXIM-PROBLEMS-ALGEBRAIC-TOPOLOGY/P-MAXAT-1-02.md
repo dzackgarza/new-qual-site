@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-02
 kind: problem
-title: Maxim algebraic topology 1.2
+title: $\RP^{2n}$, $\CP^{2n}$ and $\HP^{2n}$ are not boundaries
 classification:
   areas: [topology]
   topics: []
