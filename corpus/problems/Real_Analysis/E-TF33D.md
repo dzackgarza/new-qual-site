@@ -17,12 +17,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source part (a) read "Give an example showing that this fails if g is not bounded" with no antecedent, and part (b) read "if f in C^1". The statement now names the multiplication formula for f, g in L^1(R), asks for f in L^1(R) and unbounded g, and assumes f is 2pi-periodic in (b).'
 ---
 
 ::: {.exercise}
-- Give an example showing that this fails if $g$ is not bounded.
+(a) The multiplication formula $\int \hat f\,g = \int f\,\hat g$ holds for $f, g \in L^1(\RR)$. Give an example with $f \in L^1(\RR)$ and $g$ unbounded for which this formula fails.
 
-- Show that if $f\in C^1$ then $f$ is equal to its Fourier *series*.
+(b) Show that if $f$ is $2\pi$-periodic and $C^1$, then $f$ is equal to its Fourier *series*.
 :::
 
 ::: {.solution}
@@ -114,7 +118,7 @@ $h = f - g$ is continuous with $\hat h \equiv 0$ by step [](#s2-3){.pf-ref}. By 
 
 ::: pf-qed
 
-Steps [](#s2-2){.pf-ref}, [](#s2-3){.pf-ref} and [](#s2-4){.pf-ref}.
+By steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}, the Fourier series of $f$ converges absolutely and uniformly to $g$, and $g = f$ by step [](#s2-4){.pf-ref}.
 
 :::
 
@@ -124,8 +128,4 @@ Steps [](#s2-2){.pf-ref}, [](#s2-3){.pf-ref} and [](#s2-4){.pf-ref}.
 
 :::
 
-:::
-
-::: {.remark}
-The first part refers to the identity $\int \hat f\,g = \int f\,\hat g$, which holds for $f, g \in L^1$ by Fubini's theorem.
 :::
