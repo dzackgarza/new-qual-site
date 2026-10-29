@@ -27,31 +27,53 @@ Show that the stalk $\iota_p(A)_q = A$ when $q\in \cl_X(\theset{p})$ and $0$ oth
 :::
 
 ::: {.solution}
-**Stalks.** The stalk is $\iota_p(A)_q = \colim_{U\ni q}\iota_p(A)(U)$.
-If $q\in\cl_X(\theset{p})$, every open $U\ni q$ contains $p$, so every term of the colimit is $A$ with identity restriction maps, and $\iota_p(A)_q = A$.
-If $q\notin\cl_X(\theset{p})$, some open $U\ni q$ omits $p$; then $\iota_p(A)(U)=0$, and $\iota_p(A)_q = 0$.
+Write $Z \definedas \cl_X(\theset{p})$ with the subspace topology.
+The restriction maps of $\iota_p(A)$ are the identity of $A$ between opens that contain $p$, and zero otherwise.
 
-**Equality with the pushforward.** The sheaf $\iota_p A \definedas (U\mapsto A \chi_{p\in U})$ is equal to $\iota_* \underline{A}$:
+::: pf
 
-- Let $Z\definedas\cl_X(\theset{p})$ with the subspace topology. An open $U\subseteq X$ meets $Z$ if and only if $p\in U$. Every nonempty open subset $V$ of $Z$ contains $p$, which is dense in $Z$, so $V$ is irreducible and hence connected. The constant sheaf $\underline{A}(V)\definedas\Top(V,A)$ of locally constant functions is therefore
+::: pf-step
+The stalk $\iota_p(A)_q$ is $A$ if $q \in Z$ and $0$ otherwise.
+
+::: pf-proof
+The stalk is $\iota_p(A)_q = \colim_{U \ni q} \iota_p(A)(U)$.
+If $q \in Z$, every open $U \ni q$ contains $p$.
+So every term of the colimit is $A$, with identity transition maps, and the colimit is $A$.
+If $q \notin Z$, some open $U \ni q$ omits $p$, so $\iota_p(A)(U) = 0$.
+The opens inside $U$ are cofinal, so the colimit is $0$.
+:::
+
+:::
+
+::: {.pf-step #constant-on-z}
+For an open $V \subseteq Z$, $\underline{A}(V) = A$ if $V \neq \emptyset$ and $\underline{A}(V) = 0$ if $V = \emptyset$, with identity restriction maps between nonempty opens.
+
+::: pf-proof
+Every nonempty open $V \subseteq Z$ contains $p$, because $p$ is dense in $Z$.
+So $p$ is dense in $V$, and $V$ is irreducible and hence connected.
+The sections $\underline{A}(V)$ are the locally constant functions $V \to A$, which on a connected $V$ are the constant functions.
+:::
+
+:::
+
+::: pf-step
+$\iota_p(A) = \iota_* \underline{A}$.
+
+::: pf-proof
+An open $U \subseteq X$ meets $Z$ if and only if $p \in U$, because $p$ is dense in $Z$.
+So by step [](#constant-on-z){.pf-ref},
 $$
-\underline{A}(V) =
+\iota_* \underline{A}(U) = \underline{A}(U \cap Z) =
 \begin{cases}
-A & V \neq \emptyset \\
-0 & V = \emptyset,
+A & p \in U \\
+0 & p \notin U,
 \end{cases}
 $$
-with identity restriction maps between nonempty opens.
+with identity restriction maps between opens that contain $p$.
+The two sheaves have the same groups and the same restriction maps on every open set, so they are equal.
+:::
 
-- Hence
-$$
-\iota_* \underline{A}(U) \definedas \underline{A} (U\cap Z)
-=
-\begin{cases}
-A & p\in U \\
-0 & p\notin U.
-\end{cases}
-$$
+:::
 
-- The two sheaves have the same groups on every open set and the same restriction maps, so they are equal.
+:::
 :::
