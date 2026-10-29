@@ -13,8 +13,7 @@ Throughout, $\Omega\subseteq\CC$ is a connected open set.
 
 ## Bounded and entire
 
-**Liouville's theorem.**
-A bounded entire function is constant ([[T-QHIHJ]]).
+By [[T-QHIHJ|Liouville's theorem]], a bounded entire function is constant.
 
 Two hypotheses imply boundedness of an entire function $f$:
 
@@ -26,7 +25,6 @@ Two hypotheses imply boundedness of an entire function $f$:
 
 ## Entire, with polynomial growth
 
-**Cauchy's estimates.**
 If $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for all large $\abs z$, then for fixed $z_0$ and large $R$ Cauchy's inequality on the circle $C_R$ given by $\abs{z - z_0} = R$ gives
 $$
 \abs{f^{(n+1)}(z_0)} \leq {(n+1)!\, \norm{f}_{C_R} \over R^{n+1}} \leq {(n+1)!\, C(R+\abs{z_0})^n \over R^{n+1}} \to 0
@@ -37,8 +35,7 @@ See [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estim
 
 ## $\abs f$ has a local maximum in $\Omega$
 
-**Maximum modulus principle.**
-If $\abs f$ has a local maximum at a point of $\Omega$, then $f$ is constant ([[T-BYNL5]]).
+By the [[T-BYNL5|maximum modulus principle]], if $\abs f$ has a local maximum at a point of $\Omega$, then $f$ is constant.
 For $\Omega$ bounded and $f$ continuous on $\overline\Omega$, the maximum of $\abs f$ over $\overline\Omega$ is attained on $\bd\Omega$.
 
 If $f$ does not vanish on $\Omega$, applying the maximum modulus principle to $1/f$ shows that a local minimum of $\abs f$ in $\Omega$ forces $f$ to be constant ([[T-YLI6Y]]).
@@ -46,8 +43,7 @@ The function $f(z)=z$ on $\DD$ has a minimum of $\abs f$ at its zero $0$ and is 
 
 ## The image has empty interior
 
-**Open mapping theorem.**
-A nonconstant holomorphic function on $\Omega$ maps open sets to open sets ([[C-FRF33]]).
+By the [[C-FRF33|open mapping theorem]], a nonconstant holomorphic function on $\Omega$ maps open sets to open sets.
 So $f$ is constant if its image has empty interior, in particular if
 
 - $f(\Omega)$ lies in a line or a circle,
@@ -58,12 +54,11 @@ So $f$ is constant if its image has empty interior, in particular if
 
 - $f(\Omega)$ is a discrete set.
 
-Each of these can also be proved from the Cauchy–Riemann equations.
+Each of these can also be proved from the Cauchy--Riemann equations.
 
 ## $f$ vanishes on a set with a limit point in $\Omega$
 
-**Identity principle.**
-If the zero set of $f$ has a limit point in $\Omega$, then $f\equiv 0$ ([[T-SVF2W]]).
+By the [[T-SVF2W|identity principle]], if the zero set of $f$ has a limit point in $\Omega$, then $f\equiv 0$.
 A segment, an arc, a convergent sequence of distinct points with limit in $\Omega$, and a subset of $\RR\cap\Omega$ of positive measure each have a limit point in $\Omega$.
 
 Applied to $\sin^2 z + \cos^2 z - 1$, which vanishes on $\RR$, the identity principle gives $\sin^2 z + \cos^2 z = 1$ on $\CC$.
@@ -76,11 +71,10 @@ The proofs of Liouville's theorem and of the polynomial-growth bound end with th
 
 ## $f$ omits values
 
-**Little Picard theorem.**
-A nonconstant entire function omits at most one value of $\CC$ ([[T-HWBWI]]).
+By the [[T-HWBWI|little Picard theorem]], a nonconstant entire function omits at most one value of $\CC$.
 
 If an entire function $f$ omits every value in a disc $D_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
-[[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
+[[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
 
 ## Hypotheses
 
