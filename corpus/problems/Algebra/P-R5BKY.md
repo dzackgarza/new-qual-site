@@ -19,19 +19,25 @@ Is $(\RR,+)$ isomorphic to $(\RR_{>0},\times)$? Is the analogous statement true 
 :::
 
 ::: {.solution}
-For the reals, yes. The exponential map
-\[
-\exp:(\RR,+)\longrightarrow(\RR_{>0},\times)
-\]
-is a group isomorphism, with inverse $\log$.
+::: pf
 
-For the rationals, no. The additive group $(\QQ,+)$ is divisible: for every $q\in\QQ$ and every positive integer $n$, there exists $x=q/n$ with
-\[
-nx=q.
-\]
+::: pf-step
+$\boxed{\text{Yes}}$: $(\RR,+)\cong(\RR_{>0},\times)$.
 
-The multiplicative group $(\QQ_{>0},\times)$ is not divisible. For example, $2$ has no square root in $\QQ_{>0}$. Divisibility is preserved by group isomorphism, so
-\[
-(\QQ,+)\not\cong(\QQ_{>0},\times).
-\]
+::: pf-proof
+$\exp:(\RR,+)\to(\RR_{>0},\times)$ is a homomorphism because $e^{x+y}=e^xe^y$, and it is bijective with inverse $\log$.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{No}}$: $(\QQ,+)\not\cong(\QQ_{>0},\times)$.
+
+::: pf-proof
+The group $(\QQ,+)$ is divisible: for every $q\in\QQ$ and every positive integer $n$, $x=q/n$ satisfies $nx=q$. The group $(\QQ_{>0},\times)$ is not divisible, since $2$ has no square root in $\QQ_{>0}$. A group isomorphism preserves divisibility.
+:::
+
+:::
+
+:::
 :::
