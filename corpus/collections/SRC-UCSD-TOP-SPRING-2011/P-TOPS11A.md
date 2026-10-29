@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS11A
 kind: problem
-title: "Maps to S^2 with no antipodal values are homotopic"
+title: 'Maps to $S^2$ that never take antipodal values are homotopic'
 classification:
   areas:
   - topology

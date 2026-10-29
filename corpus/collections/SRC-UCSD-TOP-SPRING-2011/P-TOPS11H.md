@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS11H
 kind: problem
-title: "No odd-degree map from S^2 x S^2 to CP^2"
+title: 'No odd-degree map $S^2\times S^2\to\CP^2$'
 classification:
   areas:
   - topology
