@@ -1,5 +1,5 @@
 ---
-title: The Cauchy-Riemann equations
+title: The Cauchy--Riemann equations
 order: 20
 topics:
 - Cauchy-Riemann
@@ -7,7 +7,7 @@ topics:
 - Partial Derivatives
 ---
 
-# The Cauchy-Riemann equations
+# The Cauchy--Riemann equations
 
 A map $f = u + iv$ that is real differentiable at $z_0$, regarded as a map $\RR^2\to\RR^2$, is complex differentiable at $z_0$ if and only if $u_x = v_y$ and $u_y = -v_x$ at $z_0$.
 
