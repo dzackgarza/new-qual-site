@@ -21,19 +21,19 @@ audit:
 ::: {.problem}
 Let $R$ be a commutative ring.
 
-1. Say what it means for $R$ to be a unique factorization domain (UFD).
+(a) Say what it means for $R$ to be a unique factorization domain (UFD).
 
-2. Say what it means for $R$ to be a principal ideal domain (PID)
+(b) Say what it means for $R$ to be a principal ideal domain (PID).
 
-3. Give an example of a UFD that is not a PID. Prove that it is not a PID.
+(c) Give an example of a UFD that is not a PID. Prove that it is not a PID.
 :::
 
 ::: {.solution}
-(1) A commutative ring $R$ with $1\neq0$ is a \dfn{unique factorization domain} if $R$ is an integral domain, every nonzero nonunit $r\in R$ is a finite product $r=p_1\cdots p_k$ of irreducible elements, and whenever $r=q_1\cdots q_m$ is another such product, $m=k$ and there is $\sigma\in S_k$ with $q_i$ associate to $p_{\sigma(i)}$ for every $i$.
+(a) A commutative ring $R$ with $1\neq0$ is a \dfn{unique factorization domain} if $R$ is an integral domain, every nonzero nonunit $r\in R$ is a finite product $r=p_1\cdots p_k$ of irreducible elements, and whenever $r=q_1\cdots q_m$ is another such product, $m=k$ and there is $\sigma\in S_k$ with $q_i$ associate to $p_{\sigma(i)}$ for every $i$.
 
-(2) A commutative ring $R$ with $1\neq0$ is a \dfn{principal ideal domain} if $R$ is an integral domain and every ideal of $R$ has the form $aR$ for some $a\in R$.
+(b) A commutative ring $R$ with $1\neq0$ is a \dfn{principal ideal domain} if $R$ is an integral domain and every ideal of $R$ has the form $aR$ for some $a\in R$.
 
-(3) The ring $\ZZ[x]$ is a UFD that is not a PID.
+(c) The ring $\ZZ[x]$ is a UFD that is not a PID.
 
 ::: pf
 
