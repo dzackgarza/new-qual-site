@@ -18,25 +18,38 @@ audit:
 ---
 
 ::: {.problem}
-([Rud76, Exercise 5.1]) If $f:\mathbb R\to\mathbb R$ satisfies $|f(x)-f(y)|\le(x-y)^2$ for all $x,y$, then $f$ is constant.
+([Rud76, Exercise 5.1]) If $f:\RR\to\RR$ satisfies $\abs{f(x)-f(y)}\le(x-y)^2$ for all $x,y$, then $f$ is constant.
 :::
 
-:::: {.solution}
+::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #zero-derivative}
 
-Show $f$ is differentiable everywhere with derivative $0$.
-Proof: fix $y \in \mathbb{R}$.
-For $x \ne y$, \[\left|\frac{f(x) - f(y)}{x - y}\right| \le \frac{(x-y)^2}{|x-y|} = |x - y| \to 0 \quad \text{as } x \to y.\] Hence $f'(y) = \lim_{x\to y}\frac{f(x)-f(y)}{x-y}$ exists and equals $0$, for every $y$.
+The function $f$ is differentiable on $\RR$ and $f'\equiv0$.
+
+::: pf-proof
+
+Fix $y \in \RR$. For $x \ne y$,
+$$
+\abs{\frac{f(x) - f(y)}{x - y}} \le \frac{(x-y)^2}{\abs{x-y}} = \abs{x - y},
+$$
+which tends to $0$ as $x \to y$. Hence $f'(y)$ exists and equals $0$.
+
+:::
 
 :::
 
 ::: pf-step
 
-Apply the zero-derivative theorem.
-Proof: by the mean value theorem (D5-W1), a function differentiable on $\mathbb{R}$ with $f' \equiv 0$ is constant.
+The function $f$ is constant.
+
+::: pf-proof
+
+For $x<y$, the mean value theorem and step [](#zero-derivative){.pf-ref} give $\xi\in(x,y)$ with $f(y)-f(x)=f'(\xi)(y-x)=0$.
+
+:::
 
 :::
 
