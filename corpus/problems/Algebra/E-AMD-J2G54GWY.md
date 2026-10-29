@@ -58,7 +58,7 @@ Choose a prime $p\mid |S|$. By Cauchy's theorem there is $x\in S$ of order $p$. 
 :::
 
 ::: pf-qed
-Steps [](#composition-factor-simple-and-solvable){.pf-ref}, [](#simple-solvable-group-abelian){.pf-ref} and [](#simple-abelian-group-prime-order){.pf-ref} show that \(S\) has prime order. Thus every composition factor is cyclic of prime order.
+Steps [](#composition-factor-simple-and-solvable){.pf-ref}, [](#simple-solvable-group-abelian){.pf-ref} and [](#simple-abelian-group-prime-order){.pf-ref} show that $S$ has prime order. Thus every composition factor is cyclic of prime order.
 :::
 
 :::
