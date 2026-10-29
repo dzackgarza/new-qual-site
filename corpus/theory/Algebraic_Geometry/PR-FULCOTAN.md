@@ -36,7 +36,7 @@ It is the unique minimal generating set of $S_\sigma$ as a commutative monoid.
 :::
 
 ::: {.proposition title="The cotangent space"}
-Its maximal ideal and square are
+The maximal ideal of $k[S_\sigma]$ at $x_\sigma$ and its square are
 $$
 \mfm = \generators{ \chi^u \st u \in S_\sigma \smz } , \qquad \mfm^2 = \generators{ \chi^u \st u \in (S_\sigma \smz) + (S_\sigma \smz) } ,
 $$
@@ -47,7 +47,7 @@ T^\vee_{x_\sigma}U_\sigma=\mfm/\mfm^2
 $$
 and hence
 $$
-\dim T_{x_\sigma} U_\sigma = \size\theset{\text{Hilbert basis of } S_\sigma} .
+\dim T_{x_\sigma} U_\sigma = \size\operatorname{Hilb}(S_\sigma) .
 $$
 :::
 
@@ -59,7 +59,7 @@ $U_\sigma$ is smooth at $x_\sigma$ exactly when the Hilbert basis has $n = \dim 
 Each extremal ray of $\dualof{\sigma}$ contributes its primitive generator as an irreducible element, and distinct rays contribute distinct ones.
 So if $U_\sigma$ is smooth at $x_\sigma$ then
 $$
-\size\theset{\text{rays of } \dualof{\sigma}} \leq \size\theset{\text{Hilbert basis}} = \dim T_{x_\sigma} U_\sigma = n .
+\size\sigma^\vee(1) \leq \size\operatorname{Hilb}(S_\sigma) = \dim T_{x_\sigma} U_\sigma = n .
 $$
 A pointed full-dimensional cone in $\RR^n$ has at least $n$ rays, so $\dualof{\sigma}$ has exactly $n$ of them, and the Hilbert basis is exactly those $n$ primitive generators.
 They generate $S_\sigma$, hence generate $M$ as a group, and $n$ generators of a rank-$n$ lattice form a $\ZZ$-basis.
