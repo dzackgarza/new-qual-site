@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XPMW5
 kind: problem
-title: Classifying singularities
+title: Singularities at $0$ of $\Log(1+z)\sin(z)/z^2$, $e^{\sin(1/z)}$, and $(1+z)/(e^z-1)$
 classification:
   areas:
   - complex-analysis
@@ -18,39 +18,51 @@ review: draft
 
 ::: {.exercise}
 Classify the singularities at $z=0$ of the following
-\[
-f_1(z) &= {\Log(1+z) \sin(z) \over z^2} \\
-f_2(z) &= e^{\sin\qty{1\over z}} \\
-f_3(z) &= {1+z \over e^z-1}
-.\]
-
+$$
+\begin{aligned}
+f_1(z) &= \frac{\Log(1+z) \sin(z)}{z^2} \\
+f_2(z) &= e^{\sin\qty{1/z}} \\
+f_3(z) &= \frac{1+z}{e^z-1}.
+\end{aligned}
+$$
 :::
 
 ::: {.solution}
-$f_1$: removable, evident from Laurent expansion at $z=0$:
-\[
-z^{-2}\Log(1+z)\sin(z)
-&= \inverseof{z} \qty{ \sum_{k\geq 1} { (-z)^k \over k} }
-\qty{z - { z^3 \over 3!} + { z^5 \over 5!} - \cdots} \\
-&= z^{-2}
-\qty{ -z+ { z^2 \over 2}  - { z^3 \over 3} + \cdots}
-\qty{z - { z^3 \over 3!} + { z^5 \over 5!} - \cdots} \\
-&= z^{-2}\qty{ z^2(-1) + z^3\qty{1\over 2} + z^2\qty{ -{ 1 \over 3!} - { 1 \over 3} } + \cdots } \\
-&= 1 + {z \over 2} + \cdots
-.\]
 
-$f_2$: essential, evident from a sequence like $z_k \definedas \inverseof{\qty{k\cdot {\pi\over 2} }}$ which makes $\sin(z_k)$ oscillate between 0 and 1.
+::: pf
 
-$f_3$: pole of order 1 with residue 1, evident after some slightly clever Laurent manipulations:
-\[
-{1\over e^z-1}
-&= {1 \over z + {1\over 2}z^2 + \cdots} \\
-&= {1 \over z\qty{1 + {1\over 2}z + \cdots} } \\
-&\definedas {1\over z \qty{1 + p(z)}} && p(z) \definedas {1\over 2} z + {1\over 3!}z^2 + \cdots \\
-&= \inverseof{z} \sum_{k\geq 0}(-p(z))^k z^k \\
-&= \inverseof{z} \qty{1 - zp(z) + z^2p(z)^2 - z^3p(z)^3 + \bigo(z^4)} \\
-&= \inverseof{z}\qty{1- \bigo(z^2) + \bigo(z^4) - \bigo(z^6) } \\
-&={1\over z} - \bigo(z) + \bigo(z^3)
-.\]
+::: pf-step
+$f_1$ has a $\boxed{\text{removable singularity}}$ at $0$.
+
+::: pf-proof
+Near $0$, $\Log(1+z) = z - \frac{z^2}{2} + O(z^3)$ and $\sin z = z + O(z^3)$, so $\Log(1+z)\sin z = z^2 - \frac{z^3}{2} + O(z^4)$ and
+$$
+f_1(z) = 1 - \frac z2 + O(z^2),
+$$
+which has no negative powers of $z$.
+:::
+
+:::
+
+::: pf-step
+$f_2$ has an $\boxed{\text{essential singularity}}$ at $0$.
+
+::: pf-proof
+Along $z_k \coloneqq \frac{1}{2\pi k}\to0$, $\sin(1/z_k) = 0$ and $f_2(z_k) = 1$; along $w_k \coloneqq \frac{1}{\pi/2 + 2\pi k}\to0$, $\sin(1/w_k)=1$ and $f_2(w_k) = e$.
+So $\lim_{z\to0}f_2(z)$ does not exist, and the singularity is not removable; and $\abs{f_2(z_k)}=1$ does not tend to $\infty$, so it is not a pole.
+:::
+
+:::
+
+::: pf-step
+$f_3$ has a $\boxed{\text{simple pole with residue } 1}$ at $0$.
+
+::: pf-proof
+$e^z - 1 = z\,u(z)$ with $u(z) = 1 + \frac z2 + \cdots$ entire and $u(0)=1$, so $f_3(z) = \frac1z\cdot\frac{1+z}{u(z)}$ where $\frac{1+z}{u(z)}$ is holomorphic near $0$ with value $1$ at $0$.
+:::
+
+:::
+
+:::
 
 :::
