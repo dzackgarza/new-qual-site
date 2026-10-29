@@ -14,23 +14,30 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'Part (a) of the source printed m on the left side, which is undefined for a non-measurable union of arbitrary sets E_j; the statement now uses the outer measure m_* there.'
 ---
 
 ::: {.problem}
-Let $m_*(E)$ denote the Lebesgue outer measure of a set \( E \subseteq \RR^n \).
 
-a. Prove using the definition of Lebesgue outer measure that
-\[
-m \qty{ \Union_{j=1}^{\infty } E_j  } \leq \sum_{j=1}^{\infty } m_*(E_j) 
-.\]
+Let $m_*(E)$ denote the Lebesgue outer measure of a set $E \subseteq \RR^n$.
 
-b. Prove that for any \( E \subseteq \RR^n \) and any \( \epsilon> 0 \) there exists an open set $G$ with $E \subseteq G$ and
-\[
-m_*(E) \leq m_*(G) \leq m_*(E) + \epsilon
-.\]
+(a) Prove using the definition of Lebesgue outer measure that
+$$
+m_* \qty{ \Union_{j=1}^{\infty } E_j } \leq \sum_{j=1}^{\infty } m_*(E_j).
+$$
+
+(b) Prove that for any $E \subseteq \RR^n$ and any $\varepsilon> 0$ there exists an open set $G$ with $E \subseteq G$ and
+$$
+m_*(E) \leq m_*(G) \leq m_*(E) + \varepsilon.
+$$
+
 :::
 
 ::: {.solution}
+
 Recall $m_*(E) = \inf\sum_k |Q_k|$, the infimum over countable covers of $E$ by closed boxes $Q_k$.
 
 ::: pf
