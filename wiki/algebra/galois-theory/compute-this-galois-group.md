@@ -131,14 +131,38 @@ $n=5$ and general $n$:
 - A permutation lies in $A_n$ if and only if it has an even number of cycles of even length.
 :::
 
-::: {.fact title="Subgroups of $S_4$"}
-![Subgroups of $S_4$](../../../assets/figures/2021-08-09_14-39-07.png)
+::: {.fact title="Cycle types in the transitive subgroups of $S_4$"}
+Number of elements of each cycle type in each transitive subgroup of $S_4$, with $V=\theset{e,(12)(34),(13)(24),(14)(23)}$:
+
+| Cycle type | $S_4$ | $A_4$ | $D_4$ | $C_4$ | $V$ |
+| --- | --- | --- | --- | --- | --- |
+| $(1,1,1,1)$ | $1$ | $1$ | $1$ | $1$ | $1$ |
+| $(1,1,2)$ | $6$ | $0$ | $2$ | $0$ | $0$ |
+| $(2,2)$ | $3$ | $3$ | $3$ | $1$ | $3$ |
+| $(1,3)$ | $8$ | $8$ | $0$ | $0$ | $0$ |
+| $(4)$ | $6$ | $0$ | $2$ | $2$ | $0$ |
+| Order | $24$ | $12$ | $8$ | $4$ | $4$ |
 :::
 
 ::: {.fact title="Generating sets"}
-Generating sets for $S_n$ and $A_n$: [Keith Conrad, Generating sets](https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf).
+Generating sets for $S_n$, $A_n$, $\SL_2(\ZZ)$ and $\GL_n(\RR)$, from [Keith Conrad, Generating sets](https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf):
 
-![Generating sets for $S_n$ and $A_n$](../../../assets/figures/2021-08-09_18-51-08.png)
+| Group | Generating set | Size |
+| --- | --- | --- |
+| $S_n$, $n\geq2$ | all transpositions $(i\,j)$ | $n(n-1)/2$ |
+| | $(1\,2),(1\,3),\ldots,(1\,n)$ | $n-1$ |
+| | $(1\,2),(2\,3),\ldots,(n-1\;n)$ | $n-1$ |
+| | $(1\,2),(1\,2\,\cdots\,n)$ | $2$ |
+| | $(1\,2),(2\,3\,\cdots\,n)$, $n\geq3$ | $2$ |
+| | $(a\,b),(1\,2\,\cdots\,n)$ with $\gcd(b-a,n)=1$ | $2$ |
+| $A_n$, $n\geq3$ | all $3$-cycles | $n(n-1)(n-2)/3$ |
+| | $(1\,i\,j)$ | $(n-1)(n-2)$ |
+| | $(1\,2\,i)$ | $n-2$ |
+| | $(i\;i+1\;i+2)$ | $n-2$ |
+| | $(1\,2\,3),(1\,2\,\cdots\,n)$, $n\geq4$ odd | $2$ |
+| | $(1\,2\,3),(2\,3\,\cdots\,n)$, $n\geq4$ even | $2$ |
+| $\SL_2(\ZZ)$ | $\begin{pmatrix}0&-1\\1&0\end{pmatrix},\begin{pmatrix}1&1\\0&1\end{pmatrix}$ | $2$ |
+| $\GL_n(\RR)$, $\SL_n(\RR)$ | elementary matrices | infinite |
 :::
 
 ## Structural facts
