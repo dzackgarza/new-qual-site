@@ -20,15 +20,31 @@ Show that if $z_0$ is a pole of order $n$ of $f$, then it is a pole of order $n+
 :::
 
 ::: {.solution}
-Without loss of generality suppose $z_0=0$ is the pole.
-On a punctured disk about $0$, write the Laurent series $f(z) = \sum_{j\geq -n} c_j z^j$ with $c_{-n}\neq0$.
-Differentiating term by term,
-\[
-f^{(k)}(z) = \sum_{j\geq -n} j(j-1)\cdots(j-k+1)\, c_j z^{j-k}
-.\]
-The most negative power that occurs is $z^{-n-k}$, with coefficient
-\[
-(-n)(-n-1)\cdots(-n-k+1)\,c_{-n}=(-1)^k n(n+1)\cdots(n+k-1)\,c_{-n}\neq0
-,\]
-so $0$ is a pole of order $n+k$ of $f^{(k)}$.
+Translating, assume $z_0=0$.
+
+::: pf
+
+::: {.pf-step #laurent}
+On a punctured disc about $0$, $f^{(k)}(z) = \sum_{j\geq -n} j(j-1)\cdots(j-k+1)\, c_j z^{j-k}$, where $f(z)=\sum_{j\ge-n}c_jz^j$ with $c_{-n}\neq0$.
+
+::: pf-proof
+Since $0$ is a pole of order $n$, $f$ has a Laurent series of this form, and a Laurent series may be differentiated term by term on its annulus of convergence.
+:::
+
+:::
+
+::: pf-step
+$0$ is a pole of order $n+k$ of $f^{(k)}$.
+
+::: pf-proof
+The most negative power in step [](#laurent){.pf-ref} is $z^{-n-k}$, with coefficient
+$$
+(-n)(-n-1)\cdots(-n-k+1)\,c_{-n}=(-1)^k n(n+1)\cdots(n+k-1)\,c_{-n}\neq0.
+$$
+:::
+
+:::
+
+:::
+
 :::
