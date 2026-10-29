@@ -22,5 +22,7 @@ Then $H$ is free.
 :::
 
 ::: {.concept}
-[@Hat02].
+Realize $F$ as the fundamental group of a wedge of circles $X$.
+The subgroup $H$ is the fundamental group of the connected covering space of $X$ that corresponds to $H$.
+A covering space of a graph is a graph, and a connected graph is homotopy equivalent to a wedge of circles, so $H$ is free [@Hat02].
 :::
