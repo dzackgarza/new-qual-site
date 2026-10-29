@@ -15,16 +15,26 @@ review: draft
 
 ::: {.exercise}
 Compute
-\[
-\int_{\bd\DD} {e^z\over z^2}\dz
-.\]
+$$
+\int_{\bd\DD} \frac{e^z}{z^2}\dz.
+$$
 
 :::
 
 ::: {.solution}
-By Cauchy's integral formula for the derivative, with $f(z)=e^z$,
-\[
-\int {f(z) \over (z-0)^2}\dz = 2\pi i f^{(1)}(0) = 2\pi i
-.\]
+Orient $\bd\DD$ counterclockwise.
+
+::: pf
+
+::: pf-step
+$\displaystyle\int_{\bd\DD} \frac{e^z}{z^2}\dz=\boxed{2\pi i}$.
+
+::: pf-proof
+By Cauchy's integral formula for the first derivative, applied to the entire function $f(z)=e^z$ at $0$, the integral is $2\pi i f'(0) = 2\pi i$.
 :::
 
+:::
+
+:::
+
+:::
