@@ -29,21 +29,28 @@ Show that $H \operatorname{char} K \operatorname{char} G \implies H \operatornam
 :::
 
 ::: {.solution}
-Let $\phi\in\Aut(G)$. Since $K\operatorname{char}G$,
-$$
-\phi(K)=K,
-$$
-so the restriction
-$$
-\phi|_K:K\longrightarrow K
-$$
-is an automorphism of $K$. Since $H\operatorname{char}K$, every automorphism of $K$ preserves $H$; hence
-$$
-\phi(H)=(\phi|_K)(H)=H.
-$$
-As this holds for every $\phi\in\Aut(G)$, we have
-$$
-H\operatorname{char}G.
-$$
-Thus characteristicity is transitive.
+Let $\phi\in\Aut(G)$.
+
+::: pf
+
+::: {.pf-step #restriction}
+The restriction $\phi|_K$ is an automorphism of $K$.
+
+::: pf-proof
+Since $K\operatorname{char}G$, both $\phi$ and $\phi^{-1}$ map $K$ onto $K$, so $\phi|_K\colon K\to K$ is a bijective homomorphism.
+:::
+
+:::
+
+::: pf-step
+$\phi(H)=H$, so $H\operatorname{char}G$.
+
+::: pf-proof
+Since $H\operatorname{char}K$ and $\phi|_K\in\Aut(K)$ by step [](#restriction){.pf-ref}, $\phi(H)=(\phi|_K)(H)=H$. This holds for every $\phi\in\Aut(G)$.
+:::
+
+:::
+
+:::
+
 :::
