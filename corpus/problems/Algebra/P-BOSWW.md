@@ -21,18 +21,37 @@ audit:
 ---
 
 ::: {.problem}
-- Prove that $A_n$ is normal in $S_n$.
+Prove that $A_n$ is normal in $S_n$.
 :::
 
-
 ::: {.solution}
-Consider the sign homomorphism
-\[
-\operatorname{sgn}:S_n\longrightarrow\{\pm1\}.
-\]
-Its kernel is exactly $A_n$. Kernels of group homomorphisms are normal, hence
-\[
-A_n\trianglelefteq S_n.
-\]
-Equivalently, $A_n$ has index $2$ in $S_n$, and every subgroup of index $2$ is normal.
+
+::: pf
+
+::: pf-step
+
+$A_n$ is the kernel of the sign homomorphism $\sgn:S_n\to\{\pm1\}$.
+
+::: pf-proof
+
+$A_n$ is by definition the set of even permutations, those with $\sgn\sigma=1$.
+
+:::
+
+:::
+
+::: pf-step
+
+$A_n\trianglelefteq S_n$.
+
+::: pf-proof
+
+The kernel of a group homomorphism is normal: if $\sgn\sigma=1$, then $\sgn(\tau\sigma\tau^{-1})=\sgn\tau\,\sgn\sigma\,\sgn\tau^{-1}=1$.
+
+:::
+
+:::
+
+:::
+
 :::
