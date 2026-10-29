@@ -108,7 +108,7 @@ For $f \in L^1(\RR^n)$, $\lim_{h\to 0}\int|f(x+h) - f(x)|\,dx = 0$.
 
 ::: pf-proof
 
-For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, which tends to $0$. Finite linear combinations of such indicators are dense in $L^1$, and by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \eps$, $\int|f(x+h) - f(x)|\,dx < 2\eps + \int|s(x+h) - s(x)|\,dx$. See [[E-F6IXU]].
+For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, which tends to $0$. Finite linear combinations of such indicators are dense in $L^1$, and by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \eps$, $\int|f(x+h) - f(x)|\,dx < 2\eps + \int|s(x+h) - s(x)|\,dx$. See [[E-OMK54]].
 
 :::
 

@@ -1357,7 +1357,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/E-DUWXR.md` | `cbdd1f7510501673c8a80fffa004d0df700e6c0a` | `cbdd1f7510501673c8a80fffa004d0df700e6c0a` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-E4H2J.md` | `f29d93509d92d41302c11ed01edc503f87b92596` | `f29d93509d92d41302c11ed01edc503f87b92596` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-EJN4Q.md` | `ab5eb1acb0a867c9e69462372b3ac76bcea85b28` | `ab5eb1acb0a867c9e69462372b3ac76bcea85b28` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/E-F6IXU.md` | `97960bc747afb94d57d0394c1bab4b8a8a5f2e9a` | `97960bc747afb94d57d0394c1bab4b8a8a5f2e9a` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-FFARP.md` | `c9a55438db691ee719943d7a537860bf8b94df72` | `c9a55438db691ee719943d7a537860bf8b94df72` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-FZXFR.md` | `603c3af673aba82e0a4660b72f8049c70ecec4e4` | `603c3af673aba82e0a4660b72f8049c70ecec4e4` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-GMYE2.md` | `74e77cb2b24d31f34ecea7d2adff6295c93768b1` | `74e77cb2b24d31f34ecea7d2adff6295c93768b1` | Read; retained |
