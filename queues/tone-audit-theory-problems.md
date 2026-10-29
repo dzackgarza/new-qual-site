@@ -1366,7 +1366,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/E-JY5OT.md` | `bd5675f45dcc1975d65a37256039824ead0205f6` | `bd5675f45dcc1975d65a37256039824ead0205f6` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-KO5PK.md` | `b613e149fb8a0f7a97370355ec89c3e496a7d3d0` | `b613e149fb8a0f7a97370355ec89c3e496a7d3d0` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-KUOXT.md` | `249259061d44c330f8d62ac683dabd553ee2bd7a` | `249259061d44c330f8d62ac683dabd553ee2bd7a` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/E-KVDIA.md` | `62fdd85bd320c6e9c0d8fd54be364813e682ea04` | `62fdd85bd320c6e9c0d8fd54be364813e682ea04` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-L3F4O.md` | `e7baaff491ed212e12a9f416a2a127e0c7c40b42` | `e7baaff491ed212e12a9f416a2a127e0c7c40b42` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-LYXHE.md` | `749eb12d3c564f4e275b8a44e0c90e2a0e755eec` | `749eb12d3c564f4e275b8a44e0c90e2a0e755eec` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-M3CGY.md` | `3209822cb495c62b215d5ef879f6151da2e2acdd` | `3209822cb495c62b215d5ef879f6151da2e2acdd` | Read; retained |
