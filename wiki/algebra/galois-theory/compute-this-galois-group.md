@@ -72,7 +72,7 @@ $$
 [[PR-XDWOP]]
 
 ::: {.warnings}
-Dedekind's theorem applies only to primes $p$ not dividing the leading coefficient for which $f \bmod p$ is squarefree.
+Dedekind's theorem applies only to $f\in\ZZ[x]$ and to primes $p$ not dividing the leading coefficient for which $f \bmod p$ is squarefree.
 :::
 
 For such a prime $p$, if $f \bmod p$ factors into irreducibles of degrees $d_1,\ldots,d_k$, then $G$ contains an element of cycle type $(d_1,\ldots,d_k)$.
