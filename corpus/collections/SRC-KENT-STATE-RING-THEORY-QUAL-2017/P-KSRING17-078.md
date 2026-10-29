@@ -13,24 +13,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 78 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source assumes only that $IJ$ is principal, which $J=(0)$ satisfies for any $I$. The statement now assumes $IJ$ is a nonzero principal ideal.
 ---
 
 ::: {.problem}
-Suppose R is a domain and I and J are ideals of R such that IJ is principal.
+Suppose R is a domain and I and J are ideals of R such that IJ is a nonzero principal ideal.
 Show that I (and by symmetry J) is finitely generated.
 
 [Hint: If $I J = ( a )$ , then $a = \sum _ { i = 1 } ^ { n } x _ { i } y _ { i }$ for some $x _ { i } \in I$ and $y _ { i } \in J$ . Show the $x _ { i }$ generate I.]
-:::
-
-::: {.remark}
-Erratum: the statement needs the principal product to be nonzero.
-If $J=(0)$, then $IJ=(0)$ is principal while $I$ may be a non-finitely-generated ideal of a non-Noetherian domain.
-The intended hypothesis is
-$$
-IJ=(a)
-\qquad\text{with}\qquad
-a\ne0.
-$$
 :::
 
 ::: {.solution}
@@ -62,7 +55,6 @@ a
 =
 \sum_{i=1}^{n}x_i y_i.
 $$
-
 
 ::: pf-proof
 
@@ -111,7 +103,6 @@ xy_i
 ar_i.
 $$
 
-
 ::: pf-proof
 
 Because
@@ -154,7 +145,6 @@ ax
 a
 \sum_{i=1}^{n}x_i r_i.
 $$
-
 
 ::: pf-proof
 
@@ -205,7 +195,6 @@ x
 \sum_{i=1}^{n}x_i r_i.
 $$
 
-
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} gives
@@ -240,7 +229,6 @@ $$
 x_1,\ldots,x_n
 $$
 generate $I$.
-
 
 ::: pf-proof
 
@@ -279,7 +267,6 @@ Therefore $I$ is finitely generated.
 
 By symmetry, $J$ is finitely generated.
 
-
 ::: pf-proof
 
 Interchange the roles of
@@ -302,25 +289,18 @@ generate $J$.
 
 ::: {.pf-step #s1-7}
 
-Therefore, under the corrected nonzero-product hypothesis,
+Therefore
 $$
 \boxed{
 I\text{ and }J\text{ are finitely generated}.
 }
 $$
 
-
 ::: pf-proof
 
 Step [](#s1-5){.pf-ref} proves the assertion for $I$, and step [](#s1-6){.pf-ref} proves it for $J$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-7){.pf-ref} is the intended conclusion.
 
 :::
 
