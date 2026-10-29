@@ -29,11 +29,6 @@ Compute the following directly from chain complexes and check using UCT:
 :::
 
 ::: {.solution}
-**Goal:** Compute the following homology and cohomology groups for real projective space $\RP^n$ directly from the cellular chain complex, and verify each result using the Universal Coefficient Theorem (UCT):
-1. $H_*(\RP^n; \ZZ_2)$,
-2. $H_*(\RP^n; \ZZ_3)$,
-3. $H^*(\RP^n; \ZZ_6)$.
-
 ::: pf
 
 ::: {.pf-step #s1}
