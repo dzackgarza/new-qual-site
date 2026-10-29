@@ -40,7 +40,7 @@ sections:
       - ref: D-4CSPM
       - ref: D-T6INB
       - ref: PR-MWUJS
-      - ref: T-E76LX
+      - ref: P-Y5SS5
   - slug: series-and-convergence
     title: Series and convergence
     parent: complex-arithmetic-and-elementary-functions

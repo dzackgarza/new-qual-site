@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Prove that if $D$ is a simply connected domain and $f(z)$ is holomorphic and nonzero on $D$, then $f(z)=e^{g(z)}$, where $g(z)$ is holomorphic on $D$.
+Prove that if $D$ is a [[D-GFM35|simply connected]] domain and $f(z)$ is [[D-E7A5W|holomorphic]] and nonzero on $D$, then $f(z)=e^{g(z)}$, where $g(z)$ is holomorphic on $D$.
 :::
 
 ::: {.solution}
