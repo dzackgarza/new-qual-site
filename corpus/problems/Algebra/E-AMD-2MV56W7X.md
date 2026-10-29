@@ -22,25 +22,26 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the stabilizer of an element $G_x$ is a subgroup of $G$.
+Let a group $G$ act on a set $X$, and let $x\in X$.
+Show that the stabilizer $G_x$ of $x$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 G_x=\{g\in G:g\cdot x=x\}.
-\]
+$$
 We use the subgroup test.
 
 ::: pf
 
 ::: pf-step
 
-The set \(G_x\) is nonempty.
+The set $G_x$ is nonempty.
 
 ::: pf-proof
 
-The identity satisfies \(e\cdot x=x\), so \(e\in G_x\).
+The identity satisfies $e\cdot x=x$, so $e\in G_x$.
 
 :::
 
@@ -48,21 +49,26 @@ The identity satisfies \(e\cdot x=x\), so \(e\in G_x\).
 
 ::: pf-step
 
-If \(g,h\in G_x\), then \(gh^{-1}\in G_x\).
+If $g,h\in G_x$, then $gh^{-1}\in G_x$.
 
 ::: pf-proof
 
-Since \(h\cdot x=x\), applying \(h^{-1}\) gives \(h^{-1}\cdot x=x\). Hence
-\[
+Since $h\cdot x=x$, applying $h^{-1}$ gives $h^{-1}\cdot x=x$. Hence
+$$
 (gh^{-1})\cdot x=g\cdot(h^{-1}\cdot x)=g\cdot x=x.
-\]
-Therefore \(gh^{-1}\in G_x\).
+$$
+Therefore $gh^{-1}\in G_x$.
 
 :::
 
 :::
 
+::: pf-qed
+
+By the subgroup criterion, $G_x\le G$.
+
 :::
 
-By the subgroup criterion, \(G_x\le G\).
+:::
+
 :::
