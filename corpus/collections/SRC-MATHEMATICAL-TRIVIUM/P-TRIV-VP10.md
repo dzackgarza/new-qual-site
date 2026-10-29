@@ -17,6 +17,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Cleaned Variational Principle Problem 10 against page 20 of the source PDF and added a remark on the stray plus sign printed in its boundary condition.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints the boundary condition in (16) as F_{f_x} n_x + F_{f_y} n_y + = g(s) with a dangling plus sign; the statement now reads F_{f_x} n_x + F_{f_y} n_y = g(s).
 ---
 
 ::: {.problem}
@@ -24,7 +28,7 @@ Consider the following problem
 $$
 \begin{cases}
 F_f - \dfrac{\partial}{\partial x} F_{f_x} - \dfrac{\partial}{\partial y} F_{f_y} = 0, & (x, y) \in D \\
-F_{f_x} n_x + F_{f_y} n_y + = g(s), & x \in \partial D,
+F_{f_x} n_x + F_{f_y} n_y = g(s), & x \in \partial D,
 \end{cases}
 \tag{16}
 $$
@@ -41,11 +45,6 @@ $$
 F_{f_x} n_x + F_{f_y} n_y + h(s) f = g(s), \quad h \in C^1(\partial D)
 \tag{18}
 $$
-:::
-
-::: {.remark}
-Erratum: the boundary condition in (16) is printed in the source as "$F_{f_x} n_x + F_{f_y} n_y + = g(s)$, $x \in \partial D$", with a dangling plus sign.
-The condition that makes part (a) true, and that (18) reduces to for $h = 0$, is $F_{f_x} n_x + F_{f_y} n_y = g(s)$ on $\partial D$, where $(n_x, n_y)$ is the outward unit normal and $s$ is arc length along $\partial D$.
 :::
 
 ::: {.solution}
@@ -256,7 +255,7 @@ $\eta|_{\partial D}$ is arbitrary, the boundary coefficient must vanish.
 
 ::: {.pf-step #s1-7}
 
-Thus the extrema of $J$ satisfy precisely the corrected system in
+Thus the extrema of $J$ satisfy precisely the system in
 part (a).
 
 
