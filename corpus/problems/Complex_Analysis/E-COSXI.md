@@ -28,36 +28,48 @@ $$
 :::
 
 ::: {.solution}
-Since $x+i$ is not real, ${\cos(x) \over x+i}\neq \Re\qty{e^{ix}\over x+i}$.
-Use $\cos(z) = {1\over 2}(e^{iz} + e^{-iz})$ to decompose into two integrals:
+Since $x+i$ is not real, $\frac{\cos x}{x+i}\neq\Re\frac{e^{ix}}{x+i}$, so we split the cosine instead.
+Write $\cos z=\frac12(e^{iz}+e^{-iz})$ and
 $$
-I \coloneqq \int_\RR {\cos(x) \over x+i}\dx
-= \int_\RR f_1 + \int_\RR f_2,
-\qquad
-f_1(z)\coloneqq{e^{iz} \over 2(z+i)},\quad f_2(z)\coloneqq{e^{-iz} \over 2(z+i)}.
+f_1(z)\coloneqq\frac{e^{iz}}{2(z+i)},\qquad f_2(z)\coloneqq\frac{e^{-iz}}{2(z+i)},
 $$
-Both are $e^{\pm iz}g(z)$ with $g(z)={1\over 2(z+i)}\to0$ as $\abs z\to\infty$, so Jordan's lemma applies on semicircles: for $e^{i\alpha z}$ with $\alpha>0$ on the upper half-plane (for $f_1$), and with $\alpha<0$ on the lower half-plane (for $f_2$). For $f_1$, use the upper contour:
+so that $I=\int_\RR f_1+\int_\RR f_2$.
+Both have the form $e^{\pm iz}g(z)$ with $g(z)=\frac1{2(z+i)}\to0$ as $\abs z\to\infty$.
+
+::: pf
+
+::: {.pf-step #f1-vanishes}
+$\int_\RR f_1=0$.
+
+::: pf-proof
+Close the segment $[-R,R]$ with the upper semicircle:
 
 ![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-14-14.png)
 
-By Jordan's lemma the arc integral tends to $0$, so $\int_\RR f_1$ is $2\pi i$ times the sum of the residues of $f_1$ in $\HH$.
-The only pole of $f_1$ is $z=-i\notin\HH$, so $\int_\RR f_1=0$ and $I=\int_\RR f_2$.
-For $f_2$, use the lower contour:
+By Jordan's lemma for $e^{iz}$ on the upper half-plane, the arc integral tends to $0$, so $\int_\RR f_1$ is $2\pi i$ times the sum of the residues of $f_1$ in $\HH$.
+The only pole of $f_1$ is $z=-i\notin\HH$.
+:::
+
+:::
+
+::: pf-step
+$I=\boxed{-\frac{i\pi}{e}}$.
+
+::: pf-proof
+By step [](#f1-vanishes){.pf-ref}, $I=\int_\RR f_2$.
+Close the segment with the lower semicircle, oriented counterclockwise:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-39-11.png)
 
-With counterclockwise orientation, the real axis is traversed from $R$ to $-R$, so the piece along $\RR$ converges to $-\int_\RR f_2=-I$.
-By Jordan's lemma the arc integral tends to $0$, so
+The real axis is then traversed from $R$ to $-R$, so that piece tends to $-I$, and by Jordan's lemma for $e^{-iz}$ on the lower half-plane the arc integral tends to $0$.
+The contour encloses the simple pole $z=-i$, so
 $$
-\begin{aligned}
--I
-&= 2\pi i \Res_{z=-i} {e^{-iz}\over 2(z+i)} \\
-&= 2\pi i \cdot{e^{-i(-i)}\over 2} \\
-&= \pi i \inverseof{e},
-\end{aligned}
+-I=2\pi i\Res_{z=-i}\frac{e^{-iz}}{2(z+i)}=2\pi i\cdot\frac{e^{-i(-i)}}2=\frac{\pi i}{e}.
 $$
-so
-$$
-I = -{i\pi \over e}.
-$$
+:::
+
+:::
+
+:::
+
 :::
