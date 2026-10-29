@@ -22,12 +22,12 @@ Use the Lefschetz fixed point theorem to show that a map $f: S^n \to S^n$ has a 
 :::
 
 ::: {.solution}
-**Goal:** Prove via the Lefschetz Fixed Point Theorem that any continuous map $f: S^n \to S^n$ has a fixed point whenever $\deg(f) \neq \deg(a)$, where $a(x) = -x$ is the antipodal map.
+Write $a(x) = -x$ for the antipodal map of $S^n$ and $d = \deg f$.
 
 ::: pf
 
 ::: {.pf-step #s1}
-Degree and Lefschetz number of the antipodal map:
+$\deg(a) = (-1)^{n+1}$.
 
 ::: pf-proof
 
@@ -48,8 +48,8 @@ $$\deg(a) = \deg(r_0 \circ r_1 \circ \cdots \circ r_n) = (-1)^{n+1}.$$
 
 :::
 
-::: pf-step
-Lefschetz number of an arbitrary continuous map $f: S^n \to S^n$:
+::: {.pf-step #lefschetz-number}
+For $n \ge 1$, the Lefschetz number of $f$ is $\Lambda(f) = 1 + (-1)^n d$.
 
 ::: pf-proof
 
@@ -80,7 +80,7 @@ $$\Lambda(f) = \sum_{k=0}^n (-1)^k \operatorname{tr}(f_*|_{H_k(S^n; \QQ)}) = (-1
 :::
 
 ::: pf-step
-Fixed point existence via the Lefschetz Fixed Point Theorem:
+If $\deg(f) \neq \deg(a)$, then $f$ has a fixed point.
 
 ::: pf-proof
 
@@ -93,7 +93,7 @@ By the Lefschetz Fixed Point Theorem, if $\Lambda(f) \neq 0$, then $f$ must have
 :::
 
 ::: pf-step
-Solve for when the Lefschetz number vanishes:
+By step [](#lefschetz-number){.pf-ref}, the Lefschetz number vanishes exactly when
 $$\Lambda(f) = 0 \iff 1 + (-1)^n d = 0 \iff (-1)^n d = -1 \iff d = -(-1)^{-n} = (-1)^{n+1}.$$
 :::
 
@@ -109,15 +109,6 @@ Therefore, $\Lambda(f) = 0$ if and only if $\deg(f) = \deg(a) = (-1)^{n+1}$.
 If $\deg(f) \neq \deg(a)$, then $\Lambda(f) \neq 0$, so $f$ must have a fixed point.
 :::
 
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-
-::: pf-proof
-Every continuous map $f: S^n \to S^n$ has a fixed point unless $\deg(f) = (-1)^{n+1} = \deg(\text{antipodal})$.
 :::
 
 :::
