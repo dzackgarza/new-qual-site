@@ -23,7 +23,7 @@ prompts:
 Glue two copies of $\AA^1_k$ along $\AA^1 \sm \theset{0}$ by the identity.
 The result $X$ has two origins, and $X \to \Spec k$ is not separated: the two inclusions $\AA^1 \to X$ agree on the dense open $\AA^1 \sm \theset{0}$ and differ at $0$, so the agreement locus is not closed.
 
-By the proposition this *is* the failure of separatedness, not merely an illustration of it.
+Here the source $\AA^1$ is reduced, so the conclusion of [[PR-QX0VL]] fails only because $X$ is not separated.
 :::
 
 ::: {.example title="Separated but not reduced"}
