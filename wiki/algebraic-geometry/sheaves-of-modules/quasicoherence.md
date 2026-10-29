@@ -13,7 +13,7 @@ A quasicoherent sheaf is locally the sheaf associated to a module on each affine
 
 [[D-QNTZY]]
 
-Quasicoherence is established by exhibiting such local module presentations; a single global module need not exist on a nonaffine scheme.
+Quasicoherence is established by exhibiting the sheaf as $\widetilde M$ on each open of an affine cover; on a nonaffine scheme there need not be a single global module.
 
 ## The twists
 
