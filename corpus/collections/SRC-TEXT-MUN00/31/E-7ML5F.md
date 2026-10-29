@@ -23,7 +23,6 @@ If one of the spaces is Hausdorff (or regular, or normal), what does that imply 
 :::
 
 ::: {.solution}
-**Goal:** Determine which separation properties (Hausdorff, regular, normal) are preserved when passing to a finer topology ($\mathcal{T} \subset \mathcal{T}'$) or a coarser topology ($\mathcal{T}' \supset \mathcal{T}$), providing proofs and counterexamples.
 
 ::: pf
 
@@ -91,7 +90,6 @@ Summary Table of Implications:
 - **Hausdorff:** Coarser $\implies$ Finer (yes); Finer $\implies$ Coarser (no).
 - **Regular:** Coarser $\implies$ Finer (no); Finer $\implies$ Coarser (no).
 - **Normal:** Coarser $\implies$ Finer (no); Finer $\implies$ Coarser (no).
-Q.E.D.
 :::
 
 :::
