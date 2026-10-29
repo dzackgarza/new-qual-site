@@ -19,6 +19,6 @@ topics:
 
 ## Stacks
 
-Objects with nontrivial automorphisms, such as curves of genus $g \geq 2$ with automorphisms, obstruct the representability of a moduli functor by a scheme or algebraic space ([[D-CRVMOD]]); a stack records the automorphisms as part of the data.
+Objects with nontrivial automorphisms, such as hyperelliptic curves of genus $g \geq 2$, obstruct the representability of a moduli functor by a scheme or algebraic space ([[D-CRVMOD]]); a stack records the automorphisms as part of the data.
 
 [[D-ALGSTACK]]
