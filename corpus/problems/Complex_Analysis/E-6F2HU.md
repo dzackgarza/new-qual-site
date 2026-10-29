@@ -11,12 +11,32 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads "Show that a real-valued holomorphic function is constant" with no domain; the statement takes the domain connected, since on a disconnected open set a locally constant function is a counterexample.
 ---
 
 ::: {.exercise}
-Show that a real-valued holomorphic function is constant.
+Show that a real-valued holomorphic function on a connected open set is constant.
 :::
 
 ::: {.solution}
-Let $f$ be holomorphic and real-valued on a domain $\Omega$. If $f$ were nonconstant, the open mapping theorem would make $f(\Omega)$ a nonempty open subset of $\CC$ contained in $\RR$, but $\RR$ contains no nonempty open subset of $\CC$. So $f$ is constant.
+Let $f$ be holomorphic and real-valued on a connected open set $\Omega$.
+
+::: pf
+
+::: pf-step
+$f$ is constant.
+
+::: pf-proof
+If $f$ were nonconstant, the open mapping theorem would make $f(\Omega)$ a nonempty open subset of $\CC$.
+But $f(\Omega)\subseteq\RR$, and $\RR$ contains no nonempty open subset of $\CC$.
+:::
+
+:::
+
+:::
+
 :::
