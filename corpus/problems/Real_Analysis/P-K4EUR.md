@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed Lambda(f) = int_X g conj(f), which is conjugate-linear in f and fails for linear Lambda != 0 over C, and wrote M\perp; the statement now reads Lambda(f) = int_X f conj(g) and M^perp.'
 ---
 
 ::: {.problem}
@@ -23,13 +27,13 @@ audit:
 
 - Let $\Lambda\in \dualof{L^2(X)}$.
 
-  - Show that $M\definedas \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M\perp$.
+  - Show that $M\definedas \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
 
-  - Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X g \bar f$.
+  - Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X f \bar g$ for all $f \in L^2(X)$.
 :::
 ::: {.solution}
 Write $\langle f, h\rangle = \int_X f\bar h$, linear in $f$.
-For a linear $\Lambda$ the representing formula is $\Lambda(f) = \langle f, g\rangle = \int_X f\bar g$; see the remark below.
+The required formula is $\Lambda(f) = \langle f, g\rangle$.
 
 ::: pf
 
@@ -87,10 +91,4 @@ If $\langle f, g\rangle = \langle f, g'\rangle$ for all $f$, take $f = g - g'$ t
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: since $\Lambda$ is linear and $f \mapsto \int_X g\bar f$ is conjugate-linear, the formula in the statement holds only for $\Lambda = 0$ over $\CC$.
-The representation is $\Lambda(f) = \int_X f\bar g$; equivalently, $\int_X g\bar f$ represents the conjugate-linear functional $\overline{\Lambda}$.
-Over $\RR$ the two formulas agree.
 :::
