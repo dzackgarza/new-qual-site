@@ -5,14 +5,14 @@ kind: definition
 title: Logarithmic derivative
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Argument Principle
-  - Poles
-  - Zeros
+    - Argument Principle
+    - Poles
+    - Zeros
 relations:
-- kind: variant-of
-  target: D-WHYOA
+  - kind: related-to
+    target: D-WHYOA
 review: draft
 ---
 

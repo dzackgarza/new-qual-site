@@ -5,9 +5,9 @@ kind: definition
 title: Generating set of a module
 classification:
   areas:
-  - topology
+    - algebra
   topics:
-  - Modules
+    - Modules
 relations: []
 review: draft
 ---

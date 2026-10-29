@@ -5,10 +5,10 @@ kind: definition
 title: Flat module
 classification:
   areas:
-  - topology
+    - algebra
   topics:
-  - Modules
-  - Homological Algebra
+    - Modules
+    - Homological Algebra
 relations: []
 review: draft
 ---

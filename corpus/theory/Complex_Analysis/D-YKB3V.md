@@ -13,9 +13,11 @@ review: draft
 ---
 
 ::: {.definition}
-A \dfn{toy contour} is a closed Jordan curve $\gamma$ in $\CC$, together with its \dfn{interior} and \dfn{exterior}: the bounded and the unbounded connected components of $\CC\setminus\gamma$.
+A \dfn{toy contour} is a positively oriented closed piecewise-smooth curve $\gamma$ in $\CC$ whose interior is evident from the picture, such as a circle, a triangle, a rectangle, a keyhole, or an indented semicircle.
+Cauchy's theorem and its consequences are proved for toy contours by direct arguments, without appeal to the Jordan curve theorem.
 :::
 
 ::: {.remark}
-By the Jordan curve theorem, $\CC\setminus\gamma$ has exactly two connected components, one bounded and one unbounded, and $\gamma$ is their common boundary.
+This is the usage of Stein and Shakarchi, *Complex Analysis*, Chapter 2.
+For a general closed Jordan curve, the existence of a well-defined interior is the Jordan curve theorem; toy contours make that theorem unnecessary.
 :::

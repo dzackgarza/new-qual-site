@@ -5,11 +5,11 @@ kind: definition
 title: Group ring
 classification:
   areas:
-  - topology
+    - algebra
   topics:
-  - Rings
-  - Groups
-  - Representation Theory
+    - Rings
+    - Groups
+    - Representation Theory
 relations: []
 review: draft
 ---

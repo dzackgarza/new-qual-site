@@ -5,10 +5,10 @@ kind: definition
 title: Perfect pairing
 classification:
   areas:
-  - topology
+    - algebra
   topics:
-  - Modules
-  - Linear Algebra
+    - Modules
+    - Linear Algebra
 relations: []
 review: draft
 ---
