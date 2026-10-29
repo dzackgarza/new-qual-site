@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-2-01
 kind: problem
-title: Maxim algebraic topology 2.1
+title: Spaces with isomorphic homotopy or homology groups but different homotopy types
 classification:
   areas: [topology]
   topics: []
