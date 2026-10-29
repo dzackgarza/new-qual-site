@@ -19,53 +19,44 @@ Let $X \subset \AA^n,\, Y\subset \AA^m$ be irreducible affine varieties, and sho
 :::
 
 ::: {.solution}
-That $X\cross Y$ is again an affine variety follows from writing $X=V(I)$ and $Y=V(J)$; then $X\cross Y = V(I+J)$ where $I+J\normal k[x_1, \cdots, x_n, y_1, \cdots, y_m]$.
-So let
-\[
-X\cross Y = U \union V
-\]
-with $U, V$ proper and closed, and let $\pi_X, \pi_Y$ be the projections onto the factors.
+Write $X=V(I)\subseteq\AA^n$ and $Y=V(J)\subseteq\AA^m$. Then $X\cross Y=V(I+J)$ in $\AA^{n+m}$, where $I$ and $J$ are extended to $k[x_1,\dots,x_n,y_1,\dots,y_m]$; so $X\cross Y$ is an affine variety, and it is nonempty because $X$ and $Y$ are. For $x\in X$ and $y\in Y$, the maps $\iota_x\colon Y\to X\cross Y$, $y'\mapsto(x,y')$, and $j_y\colon X\to X\cross Y$, $x'\mapsto(x',y)$, are given by polynomials, hence are continuous for the Zariski topologies.
 
-**Claim**: for each $x\in X$, $\pi_X^{-1}(x) \cong Y$ is contained in only one of $U$ or $V$.
+::: pf
 
-If this is true, we can write $X = G_U \union G_V$ where
-\[
-G_U\definedas \theset{x\in X \st \pi_X^{-1}(x) \subseteq U}
-\]
-are the points for which the entire fiber lies in $U$, and similarly $G_V$ are those for which the fiber lies in $V$.
-If we can then show that $G_U, G_V$ are closed, irreducibility of $X$ forces (without loss of generality) $G_V = \emptyset$ and $X = G_U$.
-But then
-\[
-\pi_X^{-1}(X) = X\cross Y \text{ and }\pi_X^{-1}(G_U) = U  \implies X\cross Y = U
-,\]
-which shows that $X\cross Y$ is irreducible.
+::: {.pf-step #fibre-in-one}
+Let $X\cross Y=Z_1\union Z_2$ with $Z_1,Z_2$ closed. Then for each $x\in X$, the fibre $\theset{x}\cross Y$ lies in $Z_1$ or in $Z_2$.
 
-*Every fiber is contained in one irreducible component*:
-for any fixed $x$,
-\[
-\pi_X^{-1}(x) = \qty{\pi_X^{-1}(x) \intersect U } \union \qty{\pi_X^{-1}(x) \intersect V}
-.\]
-Since points are closed in the Zariski topology and $\pi_X$ is continuous, each $\pi_X^{-1}(x)$ is closed, and thus $\pi_X^{-1}(x)\intersect U$ is closed (and similarly for $V$).
-Noting that $\pi_X^{-1}(x) \cong \theset{x}\cross Y \cong Y$, where $Y$ was assumed irreducible, we conclude without loss of generality that $\pi_X^{-1}(x) \intersect V = \emptyset$.
-
-*$G_U, G_V$ are closed*:
-without loss of generality consider $G_U \subseteq X$.
-Fixing any point $y_0 \in Y$,
-\[
-X\cong X_{y_0} \definedas X\cross \theset{y_0} \subseteq X\cross Y
-,\]
-so we can identify $G_U \subset X$ with $G_U\subset X_{y_0}$ inside a $Y\dash$fiber of the product.
-But then
-\[
-G_U = X_{y_0} \intersect U \subseteq X\cross Y
-,\]
-where $U$ is closed in $X\cross Y$ and thus closed in $X_{y_0}$, and $X_{y_0}$ is trivially closed in itself.
-This exhibits $G_U$ as the intersection of two sets closed in $X_{y_0} \cong X$.
+::: pf-proof
+We have $Y=\iota_x^{-1}(Z_1)\union\iota_x^{-1}(Z_2)$, a union of two closed subsets of $Y$. Since $Y$ is irreducible, one of them is all of $Y$, so $\theset{x}\cross Y=\iota_x(Y)$ lies in the corresponding $Z_l$.
 :::
 
-::: {.remark}
-Erratum: the fibre argument in the solution is incomplete, and two of its displayed claims are false.
+:::
 
-- The first claim shows only that each fibre $\theset{x}\cross Y$ lies in $U$ or in $V$; it does not give $U=\pi_X^{-1}(G_U)$, only $\pi_X^{-1}(G_U)\subseteq U$. The conclusion should be that $X=G_U$ forces every fibre, hence $X\cross Y$, to lie in $U$.
-- $G_U$ is not $X_{y_0}\intersect U$: the latter records only whether the single point $(x,y_0)$ lies in $U$, not the whole fibre over $x$. Identifying $X$ with $X\cross\theset{y}$ for each $y\in Y$, the correct description is $G_U=\Intersect_{y\in Y}\theset{x\in X \st (x,y)\in U}$, an intersection of closed subsets of $X$.
+::: {.pf-step #G-closed}
+For $l=1,2$, the set $G_l\definedas\theset{x\in X\st \theset{x}\cross Y\subseteq Z_l}$ is closed in $X$.
+
+::: pf-proof
+A point $x$ lies in $G_l$ exactly when $(x,y)\in Z_l$ for every $y\in Y$, so
+\[
+G_l=\Intersect_{y\in Y} j_y^{-1}(Z_l)
+.\]
+Each $j_y^{-1}(Z_l)$ is closed in $X$ because $j_y$ is continuous, and an intersection of closed sets is closed.
+:::
+
+:::
+
+::: {.pf-step #X-is-G}
+$X=G_1$ or $X=G_2$.
+
+::: pf-proof
+By step [](#fibre-in-one){.pf-ref}, $X=G_1\union G_2$. By step [](#G-closed){.pf-ref} both are closed, and $X$ is irreducible, so one of them equals $X$.
+:::
+
+:::
+
+::: pf-qed
+By step [](#X-is-G){.pf-ref}, say $X=G_1$. Then every fibre $\theset{x}\cross Y$ with $x\in X$ lies in $Z_1$, and these fibres cover $X\cross Y$, so $X\cross Y=Z_1$. Hence the nonempty space $X\cross Y$ is not a union of two proper closed subsets, so it is irreducible.
+:::
+
+:::
 :::
