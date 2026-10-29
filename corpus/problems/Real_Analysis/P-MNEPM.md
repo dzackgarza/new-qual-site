@@ -23,12 +23,13 @@ audit:
 ::: {.problem}
 Let $X$ be a normed vector space.
 
-a. Give the definition of what it means for a map $L:X\to \CC$ to be a *linear functional*.
+(a) Give the definition of what it means for a map $L:X\to \CC$ to be a *linear functional*.
 
-b. Define what it means for $L$ to be *bounded* and show $L$ is bounded $\iff L$ is continuous.
+(b) Define what it means for $L$ to be *bounded* and show $L$ is bounded $\iff L$ is continuous.
 
-c. Prove that $(\dualof{X}, \norm{\wait}_{\operatorname{op}})$ is a Banach space.
+(c) Prove that $(\dualof{X}, \norm{\wait}_{\operatorname{op}})$ is a Banach space.
 :::
+
 ::: {.solution}
 (a) $L\colon X \to \CC$ is a \dfn{linear functional} if $L(x + y) = L(x) + L(y)$ and $L(\alpha x) = \alpha L(x)$ for all $x, y \in X$ and $\alpha \in \CC$.
 
@@ -62,7 +63,7 @@ Then $y_n = x_n/n \to 0$ while $|L(y_n)| \ge 1$, contradicting continuity at $0$
 :::
 
 ::: pf-qed
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} are the two implications, so boundedness and continuity of $L$ are equivalent.
 :::
 
 :::
