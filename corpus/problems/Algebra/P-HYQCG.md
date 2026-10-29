@@ -22,14 +22,14 @@ audit:
 ---
 
 ::: {.problem}
-- Define what a composition series is, and state what it means for a group to be simple, solvable, or nilpotent.
+Define what a composition series is, and state what it means for a group to be simple, solvable, or nilpotent.
 
-  - How are the derived and lower/upper central series defined?
-    What type(s) of the groups above does each series correspond to?
+How are the derived and lower/upper central series defined?
+What type(s) of the groups above does each series correspond to?
 :::
 
 ::: {.solution}
-A nontrivial group is \dfn{simple} if its only normal subgroups are $1$ and itself.
+Let $G$ be a group. A nontrivial group is \dfn{simple} if its only normal subgroups are $1$ and itself.
 
 A \dfn{composition series} of a finite group $G$ is a subnormal series
 $$G=G_0\triangleright G_1\triangleright\cdots\triangleright G_n=1$$
