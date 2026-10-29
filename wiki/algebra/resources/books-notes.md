@@ -23,7 +23,7 @@ order: 20
 
 ## Notes
 
-[Review of definitions and theorems](attachments/Algebra_Notes.pdf)
+[Kari Eifler, *Algebra Qual: Math 653/654 -- Definitions, Theorems and Propositions*](attachments/Algebra_Notes.pdf)
 
 [[attachments/Study_Guide_for_Algebra.pdf|Amherst algebra qualifying-exam study guide]]
 
