@@ -22,12 +22,9 @@ Then for all $i$,
 $$
 \tilde H_i(S^n \sm K; \ZZ) \cong \tilde H^{n-i-1}(K;\ZZ)
 .$$
+See [@Hat02].
 :::
 
 ::: {.remark}
 It follows, with $M = S^n$ and the long exact sequence of the pair $(S^n, S^n\sm K)$, from the duality $H_i(M, M\sm K;\ZZ)\cong H^{n-i}(K;\ZZ)$ for a compact, locally contractible subspace $K$ of a closed, orientable $n$-manifold $M$ [@Hat02].
-:::
-
-::: {.concept}
-[@Hat02].
 :::
