@@ -27,4 +27,4 @@ title: "Complex analysis workshop week 1: preliminaries"
 
 ## Qualifying exam problems
 
-[[P-642LC]]
+[[P-8CA28]]

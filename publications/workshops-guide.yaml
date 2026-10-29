@@ -98,7 +98,7 @@ sections:
       # Complex Week 1 Preliminaries
       - ref: E-N6DX3
       - ref: P-UGA8150S21-HW1-06
-      - ref: P-642LC
+      - ref: P-8CA28
       # Complex Week 2 Cauchy
       - ref: E-W3QMS
       - ref: P-IOUZO
