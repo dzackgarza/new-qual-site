@@ -22,29 +22,65 @@ audit:
 ---
 
 ::: {.problem}
-Let $L \in M_5(\mathbb{R})$ be a $5 \times 5$ real matrix with eigenvalues $0, 1 + i, 1 + 2i$.
-Find the characteristic polynomial $\chi_L(x)$ and the minimal polynomial $\mu_L(x)$ of $L$ over $\mathbb{R}$.
+
+Let $L \in M_5(\RR)$ be a $5 \times 5$ real matrix with eigenvalues $0, 1 + i, 1 + 2i$.
+Find the characteristic polynomial $\chi_L(x)$ and the minimal polynomial $\mu_L(x)$ of $L$ over $\RR$.
+
 :::
 
 ::: {.solution}
-Because $L$ has real entries, nonreal eigenvalues occur in complex-conjugate pairs. Thus from the given eigenvalues $0$, $1+i$, and $1+2i$, we also obtain $1-i$ and $1-2i$. These are five distinct complex eigenvalues of a $5\times5$ matrix, so each has algebraic multiplicity $1$.
 
-Hence
-\[
+::: pf
+
+::: {.pf-step #spectrum}
+
+The eigenvalues of $L$ are $0$, $1\pm i$, $1\pm 2i$, each with algebraic multiplicity $1$.
+
+::: pf-proof
+
+Because $\chi_L$ has real coefficients, nonreal eigenvalues occur in complex-conjugate pairs, so $1-i$ and $1-2i$ are also eigenvalues. These are five distinct roots of $\chi_L$, which has degree $5$.
+
+:::
+
+:::
+
+::: pf-step
+
+$$
+\chi_L(x)=\boxed{x(x^2-2x+2)(x^2-2x+5)=x^5-4x^4+11x^3-14x^2+10x}.
+$$
+
+::: pf-proof
+
+By step [](#spectrum){.pf-ref},
+$$
 \begin{aligned}
 \chi_L(x)
 &=x(x-(1+i))(x-(1-i))(x-(1+2i))(x-(1-2i))\\
 &=x\bigl((x-1)^2+1\bigr)\bigl((x-1)^2+4\bigr)\\
-&=x(x^2-2x+2)(x^2-2x+5).
+&=x(x^2-2x+2)(x^2-2x+5),
 \end{aligned}
-\]
-Expanding,
-\[
-\chi_L(x)=x^5-4x^4+11x^3-14x^2+10x.
-\]
+$$
+and expanding gives the quintic.
 
-Every eigenvalue is a root of the minimal polynomial, so $\mu_L$ has at least these five distinct roots. Therefore $\deg\mu_L\ge5$. Since $\mu_L\mid\chi_L$ by Cayley--Hamilton and $\deg\chi_L=5$, we obtain
-\[
-\mu_L(x)=\chi_L(x)=x(x^2-2x+2)(x^2-2x+5).
-\]
+:::
+
+:::
+
+::: pf-step
+
+$$
+\mu_L(x)=\boxed{\chi_L(x)}.
+$$
+
+::: pf-proof
+
+Every eigenvalue is a root of the minimal polynomial, so by step [](#spectrum){.pf-ref} $\mu_L$ has five distinct roots and $\deg\mu_L\ge5$. Since $\mu_L\mid\chi_L$ by the Cayley--Hamilton theorem and $\chi_L$ is monic of degree $5$, $\mu_L=\chi_L$.
+
+:::
+
+:::
+
+:::
+
 :::
