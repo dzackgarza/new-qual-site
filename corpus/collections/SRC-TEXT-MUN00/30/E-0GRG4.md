@@ -23,7 +23,6 @@ Which of our four countability axioms does $\RR^\omega$ in the uniform topology 
 :::
 
 ::: {.solution}
-**Goal:** Determine which of the four countability axioms (first-countable, second-countable, Lindelöf, separable) are satisfied by $\RR^\omega$ equipped with the uniform metric topology.
 
 ::: pf
 
