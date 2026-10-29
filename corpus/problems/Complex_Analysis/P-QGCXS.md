@@ -12,14 +12,19 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source omitted sin before the last summand 2(n-1)pi/n of the sine identity; it now reads sin 2(n-1)pi/n. The stray + before =-1 in the cosine identity is removed.
 ---
 
 ::: {.problem}
 Use $n$-th roots of unity (i.e. solutions of $z^{n}-1=0$ ) to show that
 
 $$
-\cos \frac{2 \pi}{n}+\cos \frac{4 \pi}{n}+\cos \frac{6 \pi}{n}+\cdots+\cos \frac{2(n-1) \pi}{n}+=-1 \text { and } \\
-\sin \frac{2 \pi}{n}+\sin \frac{4 \pi}{n}+\sin \frac{6 \pi}{n}+\cdots \frac{2(n-1) \pi}{n}=0
+\cos \frac{2 \pi}{n}+\cos \frac{4 \pi}{n}+\cos \frac{6 \pi}{n}+\cdots+\cos \frac{2(n-1) \pi}{n}=-1 \text { and } \\
+\sin \frac{2 \pi}{n}+\sin \frac{4 \pi}{n}+\sin \frac{6 \pi}{n}+\cdots+\sin \frac{2(n-1) \pi}{n}=0
 $$
 
 > Hint: If $z^{n}+c_{1} z^{n-1}+\cdots+c_{n-1} z+c_{n}=0$ has roots $z_{1}, z_{2}, \ldots, z_{n}$, then
@@ -30,10 +35,6 @@ $$
 :::
 
 ::: {.solution}
-The final summand in the displayed sine identity is missing its $\sin$ in the
-source. With that typographical correction, both identities follow at once
-from the $n$-th roots of unity.
-
 Let $\omega=e^{2\pi i/n}$. Since
 \[
 1+\omega+\omega^2+\cdots+\omega^{n-1}=0,
