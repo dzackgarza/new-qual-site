@@ -49,6 +49,7 @@ def check(root: Path, *args: str) -> subprocess.CompletedProcess[str]:
         (CARD.replace("kind: problem", "kind: unrelated"), "union_tag_invalid"),
         (CARD.replace("review: draft", "review: [draft]"), "literal_error"),
         (CARD.replace("id: PRB-INDEXP\n", ""), "Field required"),
+        (CARD.replace(":::\n", "", 1), "unclosed fenced div"),
     ],
 )
 def test_staged_header_errors_cannot_be_hidden_by_a_valid_worktree(repo: Path, source: str, diagnostic: str) -> None:

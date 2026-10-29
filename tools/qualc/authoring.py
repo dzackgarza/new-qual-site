@@ -16,16 +16,17 @@ import yaml
 from pydantic import TypeAdapter
 
 from .emit import _collection_source_links
-from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter
+from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter, validate_fenced_divs
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
 
 
 def card_header(text: str, path: Path) -> Card:
-    """Validate one authored header without parsing Markdown or reading other cards."""
+    """Validate one authored header and its fence balance without Pandoc or other cards."""
     try:
-        meta, _ = split_front_matter(text, path)
+        meta, body = split_front_matter(text, path)
+        validate_fenced_divs(body, text[: len(text) - len(body)].count("\n") + 1)
         return CARD_ADAPTER.validate_python(meta)
     except (ValueError, TypeError, yaml.YAMLError) as exc:
         raise ValueError(f"{path}: {exc}") from exc
