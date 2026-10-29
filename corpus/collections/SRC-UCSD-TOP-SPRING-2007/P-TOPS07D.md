@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS07D
 kind: problem
-title: "Homology of the complement of a knotted torus in S^4 via Lefschetz duality"
+title: 'Homology of the complement of a knotted torus in $S^4$ via Lefschetz duality'
 classification:
   areas:
   - topology

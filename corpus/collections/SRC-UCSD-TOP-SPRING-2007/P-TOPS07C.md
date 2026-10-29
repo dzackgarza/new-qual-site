@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS07C
 kind: problem
-title: "Integral homology of RP^2 x RP^3"
+title: 'Integral homology of $\RP^2\times\RP^3$'
 classification:
   areas:
   - topology

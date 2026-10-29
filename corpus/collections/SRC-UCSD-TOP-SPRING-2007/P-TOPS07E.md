@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS07E
 kind: problem
-title: "Any map from S^2 to a surface of genus >= 1 has degree zero"
+title: 'Every map from $S^2$ to a surface of genus $g\ge1$ has degree zero'
 classification:
   areas:
   - topology
