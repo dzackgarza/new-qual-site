@@ -37,8 +37,6 @@ Show that the intersection of the elements of $\mathcal{B}$ belongs to $\mathcal
 :::
 
 ::: {.solution}
-**Goal:** Prove that in a compact Hausdorff space $X$, two points $x, y \in X$ belong to the same quasicomponent if and only if they belong to the same connected component.
-
 ::: pf
 
 ::: pf-step
@@ -150,11 +148,6 @@ Since $D$ is a connected subspace containing both $x$ and $y$, $x$ and $y$ belon
 
 :::
 
-:::
-
-::: pf-step
-Conclusion:
-In any compact Hausdorff space, the quasicomponent of any point coincides with its connected component. Q.E.D.
 :::
 
 :::
