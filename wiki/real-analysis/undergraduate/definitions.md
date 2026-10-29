@@ -55,8 +55,6 @@ If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ conver
 
 [[D-VFNTY]]
 
-[[FF-VON2D]]
-
 ## Measure theory
 
 [[D-PAEDW]]

@@ -5,6 +5,7 @@ kind: definition
 title: Baire space
 prompts:
 - What does it mean for $X$ to be a Baire space?
+- What is a Baire space?
 classification:
   areas:
   - real-analysis
