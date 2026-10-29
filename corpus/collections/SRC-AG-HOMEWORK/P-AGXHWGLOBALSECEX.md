@@ -16,17 +16,17 @@ review: draft
 
 ::: {.problem}
 For any open $U \subseteq X$ show that the functor
-\[
+$$
 \Gamma\qty{U, {-}}: \Sh(X) \to \mathsf{Ab}\mathsf{Grp}
-\]
+$$
 is left exact, but need not be exact.
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 \xi: 0 \to \mcf_1 \xrightarrow{f} \mcf_2 \xrightarrow{g} \mcf_3 \to 0
-\]
+$$
 be an exact sequence of sheaves of abelian groups on $X$, where a morphism such as $f$ is data of the form
 
 \begin{tikzcd}
@@ -41,23 +41,25 @@ be an exact sequence of sheaves of abelian groups on $X$, where a morphism such 
 \end{tikzcd}
 
 Applying $\Gamma(X; {-})$ gives
-\[
+$$
 \xi_X: 0 \to \mcf_1(X) \xrightarrow{f_X} \mcf_2(X) \xrightarrow{g_X} \mcf_3(X)
-,\]
+,$$
 which is exact at $\mcf_1(X)$ and at $\mcf_2(X)$.
 
 **Exactness at $\mcf_1(X)$.**
 
 - Since $f$ is a monomorphism, $\ker f = \mathbf 0$ as a sheaf, so
-\[
+$$
 (\ker f)(U) = (\mathbf 0)(U) = 0
-.\]
+.$$
 
 - Since
-\[
+$$
+\begin{aligned}
 (\ker f)(U) &\definedas \ker f_U \definedas \ker( \mcf_1(U) \xrightarrow{f_U} \mcf_2(U)) \\
 \implies \ker f_X &= (\ker f)(X) = (\mathbf 0)(X) = 0
-.\]
+\end{aligned}
+.$$
 
 - The first equality holds because the kernel presheaf $U\mapsto\ker f_U$ is a sheaf.
   The image presheaf $U\mapsto\im g_U$ is in general not a sheaf; the image sheaf is its sheafification.
@@ -88,11 +90,13 @@ A sequence of sheaves is exact if and only if it is exact on stalks, and restric
 \end{tikzcd}
 
 - Suppose $s\in \mcf_1(X)$ and $f_X(s) = 0$ in $\mcf_2(X)$. Then
-\[
-(\mcf_2 \mid^X_p \circ f_X )(s) &= \mcf_2\mid^X_p( 0) = 0 \in (\mcf_2)_p \quad\text{group homomorphisms send $0$ to $0$}\\
+$$
+\begin{aligned}
+(\mcf_2 \mid^X_p \circ f_X )(s) &= \mcf_2\mid^X_p( 0) = 0 \in (\mcf_2)_p \quad\text{group homomorphisms send } 0 \text{ to } 0\\
 \implies (f_p \circ \mcf_1 \mid^X_p)(s) &= (\mcf_2 \mid^X_p \circ f_X)(s) = 0 \quad\text{by commutativity} \\
-\implies \mcf_1 \mid^X_p (s) &= 0 \quad\text{left-cancel $f_p$ since it is mono}
-,\]
+\implies \mcf_1 \mid^X_p (s) &= 0 \quad\text{left-cancel } f_p \text{ since it is mono}
+\end{aligned}
+,$$
 which holds for all $p$.
 
 - By the sheaf condition on $\mcf_1$, $s= 0 \in \mcf_1(X)$:
@@ -101,9 +105,9 @@ which holds for all $p$.
     For $s\in \mcf_1(X)$, write a representative $\mcf_1\mid^X_p(s) = [U, \tilde s\in \mcf_1(U)]$.
 
   > Recall $(U_1, s_1) \sim (U_2, s_2) \in \mcf_p \iff$ they are both equivalent to $(W, t)$ where $W \subseteq U_1 \intersect U_2$ and
-  > \[
+  > $$
   > \mcf_1 \mid^{U_1}_W (s_1) = t = \mcf_1\mid^{U_2}_W (s_2)
-  > .\]
+  > .$$
 
   - Then $s_p \definedas \mcf_1 \mid^X_p(s) = 0 \sim (W, 0) \in (\mcf_1)_p$ means there is some $W_p$ and a lift $\tilde s(p) = 0 \in \mcf_1(W_p)$ with $\mcf_1\mid^{W_p}_p(\tilde s(p)) = s_p$.
 
@@ -135,9 +139,9 @@ which holds for all $p$.
 \end{tikzcd}
 
 - Choose $r\in\mcf_1(X)$ with $f_X(r)=s$. By commutativity, the image of $s$ in $(\mcf_2)_p$ is $f_p$ applied to the image of $r$ in $(\mcf_1)_p$, so
-\[
+$$
 \mcf_2\mid^X_p(s) \in \im f_p = \ker g_p
-.\]
+.$$
 
 - Put $\ell\definedas g_X(s)$.
   By commutativity, $\mcf_3 \mid^X_p(\ell) = g_p(\mcf_2\mid^X_p(s)) = 0$.
@@ -154,20 +158,20 @@ The arguments above use only the sheaf axioms on the open sets involved, so they
 **Failure of right exactness.**
 
 The exponential $z\mapsto e^{2\pi i z}$ gives the exact sequence of groups
-\[
+$$
 0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\units{\CC}) \to 0 \in \Grp
-,\]
+,$$
 and, on $X\definedas \units{\CC}$, the exact sequence of sheaves
-\[
+$$
 0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \units{\Hol_X({-})} \to 0 \in \Sh(X, \Grp)
-.\]
+.$$
 Here $\units{\Hol_X({-})}$ denotes the multiplicatively invertible functions, i.e. the nonvanishing functions.
 The kernel of the exponential consists of locally constant integer-valued holomorphic functions. Every nonvanishing holomorphic function has a local holomorphic logarithm, so the sequence is exact on stalks.
 
 Applying $\Gamma(X; {-})$ gives
-\[
+$$
 0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \units{\Hol_X(X)} \to 0
-.\]
+.$$
 If $\exp\colon\Hol_X(X)\to\units{\Hol_X(X)}$ were surjective, every nonvanishing holomorphic function on $\units{\CC}$ would have a logarithm on all of $\units{\CC}$.
 The identity function $z\mapsto z$ has none, since $\oint_{\abs{z}=1} dz/z = 2\pi i \neq 0$.
 :::
