@@ -85,7 +85,7 @@ Apply step [](#unimodular-quotient){.pf-ref} with $B(z)=z^n$.
 (c) $f(z)=\lambda\prod_{j=1}^n\frac{z-a_j}{1-\bar a_jz}$ for some $\lambda\in S^1$.
 
 ::: pf-proof
-Each factor $\frac{z-a_j}{1-\bar a_jz}$ is holomorphic on $\abs z<1/\abs{a_j}$, has modulus $1$ on $\abs z=1$, and vanishes only at $a_j$.
+Each factor $\frac{z-a_j}{1-\bar a_jz}$ is holomorphic on a neighbourhood of $\overline\DD$ because $\abs{a_j}<1$, has modulus $1$ on $\abs z=1$, and vanishes only at $a_j$.
 Apply step [](#unimodular-quotient){.pf-ref} with $B$ their product.
 :::
 
