@@ -22,95 +22,56 @@ audit:
 
 ::: {.problem}
 Suppose $a>b>0$ and calculate
-\[
+$$
 \int_0^{2\pi} {1 \over (a+b\cos(\theta))^2} \,d\theta
-.\]
-
+.$$
 :::
 
 ::: {.solution}
+Let $z_{1,2} = \dfrac{-a \pm \sqrt{a^2 - b^2}}{b}$ be the roots of $bz^2+2az+b$.
+
 ::: pf
 
-::: {.pf-step #substitution}
-Substitute $z = e^{i\theta}$, so $d\theta = \frac{dz}{iz}$ and $\cos\theta = \frac{z + z^{-1}}{2}$.
+::: {.pf-step #contour}
+$\displaystyle\int_0^{2\pi} \frac{d\theta}{(a + b\cos\theta)^2} = \oint_{\abs z=1} g(z)\,dz$, where $g(z) = \dfrac{4z}{i b^2(z-z_1)^2(z-z_2)^2}$.
 
 ::: pf-proof
-standard substitution.
+Substitute $z = e^{i\theta}$, so $d\theta = \frac{dz}{iz}$ and $a + b\cos\theta = \frac{bz^2+2az+b}{2z}$. Then the integrand becomes $\frac{4z^2}{(bz^2+2az+b)^2}\cdot\frac{1}{iz}$.
 :::
 
 :::
 
-::: {.pf-step #denominator-expression}
-Then $a + b\cos\theta = a + \frac{b}{2}(z + z^{-1}) = \frac{2az + bz^2 + b}{2z}$.
+::: {.pf-step #roots}
+$\abs{z_1}<1<\abs{z_2}$.
 
 ::: pf-proof
-Step [](#substitution){.pf-ref}.
+$z_1z_2=1$ and $z_2 < -a/b < -1$.
+:::
+
+:::
+
+::: {.pf-step #residue}
+$\operatorname{Res}(g, z_1) = \dfrac{a}{i(a^2 - b^2)^{3/2}}$.
+
+::: pf-proof
+At the double pole $z_1$,
+$$
+\operatorname{Res}(g,z_1) = \frac{4}{ib^2}\,\frac{d}{dz}\frac{z}{(z-z_2)^2}\bigg|_{z=z_1} = \frac{4}{ib^2}\,\frac{-(z_1+z_2)}{(z_1-z_2)^3}.
+$$
+With $z_1+z_2=-2a/b$ and $z_1-z_2 = 2\sqrt{a^2-b^2}/b$, this equals $\frac{4}{ib^2}\cdot\frac{2a/b}{8(a^2-b^2)^{3/2}/b^3} = \frac{a}{i(a^2-b^2)^{3/2}}$.
 :::
 
 :::
 
 ::: pf-step
-Hence
-$$\int_0^{2\pi} \frac{d\theta}{(a + b\cos\theta)^2} = \oint_{|z|=1} \frac{1}{\left(\frac{2az + bz^2 + b}{2z}\right)^2} \frac{dz}{iz} = \oint_{|z|=1} \frac{4z}{i(2az + bz^2 + b)^2}\,dz.$$
+$\displaystyle\int_0^{2\pi} \frac{d\theta}{(a + b\cos\theta)^2} = \boxed{\frac{2\pi a}{(a^2 - b^2)^{3/2}}}$.
 
 ::: pf-proof
-Steps [](#substitution){.pf-ref} and [](#denominator-expression){.pf-ref}.
+By steps [](#contour){.pf-ref} and [](#roots){.pf-ref}, the only pole of $g$ inside the unit circle is $z_1$. The residue theorem and step [](#residue){.pf-ref} give $2\pi i\cdot\frac{a}{i(a^2-b^2)^{3/2}}$.
 :::
 
 :::
 
-::: pf-step
-The integrand has poles where $bz^2 + 2az + b = 0$, i.e. $z = \frac{-a \pm \sqrt{a^2 - b^2}}{b}$.
-
-::: pf-proof
-solve the quadratic.
 :::
-
-:::
-
-::: pf-step
-Since $a > b > 0$, one root $z_1 = \frac{-a + \sqrt{a^2 - b^2}}{b}$ has $|z_1| < 1$ and the other $z_2 = \frac{-a - \sqrt{a^2 - b^2}}{b}$ has $|z_2| > 1$.
-
-::: pf-proof
-$z_1 z_2 = 1$ (product of roots is $b/b = 1$), and $z_1$ is the one inside the unit circle.
-:::
-
-:::
-
-::: {.pf-step #residue-value}
-The integrand has a double pole at $z_1$ (inside the unit circle), and the residue there is $\frac{a}{i(a^2 - b^2)^{3/2}}$.
-
-::: pf-proof
-computing the residue of $\frac{4z}{i b^2 (z - z_1)^2 (z - z_2)^2}$ at $z = z_1$ (a double pole).
-:::
-
-:::
-
-::: {.pf-step #integral-value}
-By the residue theorem, the integral is $2\pi i \cdot \frac{a}{i(a^2 - b^2)^{3/2}} = \frac{2\pi a}{(a^2 - b^2)^{3/2}}$.
-
-::: pf-proof
-Step [](#residue-value){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #final-result}
-Hence $\int_0^{2\pi} \frac{d\theta}{(a + b\cos\theta)^2} = \frac{2\pi a}{(a^2 - b^2)^{3/2}}$.
-
-::: pf-proof
-Step [](#integral-value){.pf-ref}.
-:::
-
-:::
-
-::: pf-qed
-Step [](#final-result){.pf-ref}.
-:::
-
-:::
-
-
-
 
 :::
