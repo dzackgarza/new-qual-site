@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-17
   note: Replaced the discreteness tautology by a proved formal-arc criterion, justified both examples and the normality counterexample, and repaired the citations and structured-proof presentation.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne II.4.12(b) prints the second construction for an arbitrary birational morphism, where the local ring at the generic point of Y' need not be a DVR (blowing up (x^2,y^2) in P^2 gives a nonnormal one). The statement now requires X' normal at the generic point of Y'.
 ---
 
 ::: {.problem}
@@ -37,7 +41,7 @@ Let $k$ be an algebraically closed field.
 
 - If $Y$ is an irreducible curve on $X$ with generic point $x_1$, then the local ring $R = \OO_{x_1, X}$ is a discrete valuation ring of $K/k$ with center at the nonclosed point $x_1$ on $X$.
 
-- If $f: X' \to X$ is a birational morphism, and if $Y'$ is an irreducible curve in $X'$ whose image in $X$ is a single closed point $x_0$, then the local ring $R$ of the generic point of $Y'$ on $X'$ is a discrete valuation ring of $K/k$ with center at the closed point $x_0$ on $X$.
+- If $f: X' \to X$ is a birational morphism, and if $Y'$ is an irreducible curve in $X'$, with $X'$ normal at the generic point of $Y'$, whose image in $X$ is a single closed point $x_0$, then the local ring $R$ of the generic point of $Y'$ on $X'$ is a discrete valuation ring of $K/k$ with center at the closed point $x_0$ on $X$.
 
 - Let $x_0 \in X$ be a closed point.
   Let $f: X_1 \to X$ be the blowing-up of $x_0$ (I, §4) and let $E_1 = \inverseof{f}(x_0)$ be the exceptional curve.
@@ -59,7 +63,6 @@ Furthermore, every valuation ring of $K/k$ except $K$ itself is one of the three
 ::: {.solution}
 For the third construction put $X_0=X$, $A_i=\OO_{X_i,x_i}$, and let $\mathfrak m_i$ be the maximal ideal of $A_i$.
 All these rings are viewed inside $K$ through the birational maps.
-The second construction is treated with $X'$ normal at the generic point of $Y'$, as justified in the erratum.
 
 ::: pf
 
@@ -87,7 +90,7 @@ These are precisely the points in the abstract nonsingular curve $C_K$.
 
 ::: {.pf-step #s2}
 
-The first two surface constructions give DVRs with the stated centers, under the corrected hypothesis in the second construction.
+The first two surface constructions give DVRs with the stated centers.
 
 ::: pf-proof
 
@@ -282,33 +285,11 @@ Its value group is not infinite cyclic, so it is not a DVR.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a). Step [](#s2){.pf-ref} proves the first two surface examples with the stated correction, and step [](#s3){.pf-ref} proves the domination and center assertions for the third.
+Step [](#s1){.pf-ref} proves part (a). Step [](#s2){.pf-ref} proves the first two surface examples, and step [](#s3){.pf-ref} proves the domination and center assertions for the third.
 Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} characterize when the third construction is discrete; steps [](#s6){.pf-ref} and [](#s7){.pf-ref} show that both possibilities occur.
 
 :::
 
 :::
 
-:::
-
-::: {.remark title="Erratum"}
-The second example in part (b) requires $X'$ to be normal at the generic point of $Y'$.
-An arbitrary birational morphism does not supply this hypothesis.
-
-For a counterexample let $X=\PP_k^2$ and blow up the zero-dimensional subscheme supported at the affine origin with ideal $(x^2,y^2)$.
-One affine chart of this birational model has coordinate ring
-$$
-B=k[x,y,s]/(y^2-sx^2)\subset k(x,y),\qquad s=y^2/x^2.
-$$
-The exceptional curve has generic prime $\mathfrak p=(x,y)$.
-After inverting $k[s]\setminus\{0\}$, its local ring is
-$$
-B_{\mathfrak p}\cong
-\bigl(k(s)[x,y]/(y^2-sx^2)\bigr)_{(x,y)}.
-$$
-This is a one-dimensional local domain: $s$ is not a square in $k(s)$, so the defining quadratic is irreducible.
-Its maximal ideal has two independent classes $x,y$ modulo its square, since the defining relation has degree two.
-Hence this local ring is not regular and is not a DVR [@Har10a, Theorem I.6.2A].
-The exceptional curve is nevertheless contracted to the closed origin of $X$.
-Normality at its generic point is therefore necessary for the asserted DVR conclusion, and Theorem I.6.2A makes it sufficient.
 :::
