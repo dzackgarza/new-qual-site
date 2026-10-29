@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF77-7
 kind: problem
-title: $\int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}$ by residues
+title: $\int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}$
 classification:
   areas:
   - prelim
