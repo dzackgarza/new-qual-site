@@ -114,23 +114,6 @@ The Mayer--Vietoris sequence for open neighborhoods of the two pieces, which def
 
 [[PR-6PENU]]
 
-::: {.proof}
-Let $n\geq 1$ and write $S^n = A \cup B$ with $A$ and $B$ open neighborhoods of the closed northern and southern hemispheres, chosen so that $A$ and $B$ are contractible and $A \cap B$ deformation retracts onto the equator $S^{n-1}$.
-The Mayer--Vietoris sequence in reduced cohomology contains
-
-$$
-\tilde H^{i-1}(A) \oplus \tilde H^{i-1}(B) \to \tilde H^{i-1}(S^{n-1}) \xrightarrow{\delta} \tilde H^i(S^n) \to \tilde H^i(A) \oplus \tilde H^i(B)
-.$$
-
-Since $A$ and $B$ are contractible, their reduced cohomology vanishes, so
-
-$$
-0 \to \tilde H^{i-1}(S^{n-1}) \xrightarrow{\delta} \tilde H^i(S^n) \to 0
-$$
-is exact, and $\delta$ is an isomorphism $\tilde H^{i-1}(S^{n-1})\cong \tilde H^i(S^n)$.
-
-:::
-
 ## Further exact sequences
 
 [[T-TZ3X7]]
