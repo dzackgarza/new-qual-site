@@ -19,10 +19,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "let $(p)$ be a prime ideal of $R$", which is false for $p=0$ when $R$ is not a field; the statement requires $(p)$ nonzero.'
 ---
 
 ::: {.problem}
-Let $R$ be a PID and let $(p)$ be a prime ideal of $R$. Prove that $R/(p)$ is a field.
+Let $R$ be a PID and let $(p)$ be a nonzero prime ideal of $R$. Prove that $R/(p)$ is a field.
 :::
 
 ::: {.solution}
@@ -38,17 +42,17 @@ Every $x+(p)\ne (p)$ in $R/(p)$ is invertible.
 
 Here $x\notin(p)$.
 Because $(p)$ is maximal and $(p)\subsetneq (p,x)$, one has
-\[
+$$
 (p,x)=R.
-\]
+$$
 Hence there exist $a,b\in R$ such that
-\[
+$$
 ap+bx=1.
-\]
+$$
 Reducing modulo $(p)$ gives
-\[
+$$
 (b+(p))(x+(p))=1+(p).
-\]
+$$
 Thus every nonzero class in $R/(p)$ has a multiplicative inverse.
 
 :::
@@ -72,5 +76,5 @@ A commutative ring with identity is a field exactly when every nonzero element i
 :::
 
 ::: {.remark}
-The statement needs $p\neq0$: the zero ideal of a PID is prime, and $R/(0)\cong R$ is a field only when $R$ is; for example $(0)\subset\ZZ$ is prime and $\ZZ$ is not a field.
+The hypothesis $p\neq0$ is necessary: the zero ideal of a PID is prime, and $R/(0)\cong R$ is a field only when $R$ is; for example $(0)\subset\ZZ$ is prime and $\ZZ$ is not a field.
 :::
