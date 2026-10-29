@@ -17,20 +17,35 @@ review: draft
 
 ::: {.exercise}
 Find all entire functions $f$ that satisfy
-\[
-\abs{f(z)} \geq e^{\abs{z}} && \forall z\in \CC
-.\]
+$$
+\abs{f(z)} \geq e^{\abs{z}} \qquad \forall z\in \CC.
+$$
 
 :::
 
 ::: {.solution}
-Claim: there are no such functions.
-Consider $g(z) \definedas f(z)/e^z$, which is entire since $e^z$ is nonvanishing.
-Now $g$ is entire and $\abs{g} \geq 1$ everywhere, so $\im(g) \intersect \DD$ is empty.
-This contradicts Casorati-Weierstrass, which requires that $\im g$ be dense in $\CC$.
 
-Alternatively, note $f\neq 0$ by the inequality, so $1/f$ is bounded and entire and thus constant.
-However, $f(z) = c$ contradicts the inequality, since $e^{\abs{z}}\to \infty$ as $\abs{z}\to \infty$.
+::: pf
 
-Alternatively, note that $e^{\abs{z}} \geq 1$ for all $z$, so $\im(f) \intersect \DD$ is empty, again contradicting Casorati-Weierstrass.
+::: {.pf-step #reciprocal}
+If $f$ satisfies the inequality, then $1/f$ is entire and constant.
+
+::: pf-proof
+The inequality gives $\abs{f(z)}\ge1>0$, so $f$ has no zeros and $1/f$ is entire with $\abs{1/f}\le1$.
+By Liouville's theorem $1/f$ is constant.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{No entire function satisfies the inequality.}}$
+
+::: pf-proof
+By step [](#reciprocal){.pf-ref}, such an $f$ would be a constant $c$, but $e^{\abs z}\to\infty$ as $\abs z\to\infty$, so $\abs c\ge e^{\abs z}$ fails for large $\abs z$.
+:::
+
+:::
+
+:::
+
 :::
