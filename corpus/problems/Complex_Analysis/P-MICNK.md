@@ -17,25 +17,31 @@ review: draft
 ::: {.problem}
 Let $a\in \CC$ and $n\geq 2$.
 Show that the following polynomial has at least one root in $\abs{z} \leq 2$:
-\[
-f(z) = az^n + z + 1
-.\]
+$$
+f(z) = az^n + z + 1.
+$$
 :::
 
 ::: {.solution}
-First suppose
-\[
-|a|<2^{-n}.
-\]
-On $|z|=2$,
-\[
-|az^n|=|a|2^n<1\le |z+1|.
-\]
-Rouché's theorem therefore shows that $az^n+z+1$ and $z+1$ have the same number of zeros in $|z|<2$, namely one.
+::: pf
 
-Now suppose $|a|\ge2^{-n}$. Then $a\neq0$. Let $z_1,\ldots,z_n$ be the roots of $f$, counted with multiplicity. Vieta's formula gives
-\[
-\left|\prod_{k=1}^n z_k\right|={1\over|a|}\le2^n.
-\]
-If every root satisfied $|z_k|>2$, their product would have modulus strictly greater than $2^n$, a contradiction. Hence at least one root lies in $|z|\le2$.
+::: pf-step
+If $\abs{a}<2^{-n}$, then $f$ has a root in $\abs{z}<2$.
+
+::: pf-proof
+On $\abs{z}=2$, $\abs{az^n}=\abs{a}2^n<1\le\abs{z}-1\le\abs{z+1}$. By Rouché's theorem $f$ and $z+1$ have the same number of zeros in $\abs{z}<2$, namely one.
+:::
+
+:::
+
+::: pf-step
+If $\abs{a}\ge2^{-n}$, then $f$ has a root in $\abs{z}\le2$.
+
+::: pf-proof
+Here $a\neq0$, so $f$ has degree $n$ with roots $z_1,\ldots,z_n$ counted with multiplicity. By Vieta's formulas $\abs{z_1\cdots z_n}=\abs{1/a}\le2^n$. If every root satisfied $\abs{z_k}>2$, the product would have modulus greater than $2^n$.
+:::
+
+:::
+
+:::
 :::
