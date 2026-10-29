@@ -14,7 +14,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source wrote only "Show that E is measurable iff E is regular", with E and regularity undefined; the statement now takes E in R^n with finite outer measure and defines regularity as equality of inner and outer measure, which fails as a criterion for sets of infinite outer measure.'
