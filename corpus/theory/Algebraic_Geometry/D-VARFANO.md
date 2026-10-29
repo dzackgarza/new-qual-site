@@ -38,6 +38,6 @@ In higher dimension there are smooth complete varieties whose canonical class is
 For smooth projective curves, however, they are exactly the cases $g=0$, $g=1$, and $g\ge2$.
 If $X$ is complete and $-K_X$ is ample, a sufficiently large positive multiple of $-K_X$ defines a closed immersion into projective space; hence every Fano variety in this definition is projective.
 
-The two conventions for Calabi--Yau are not equivalent: abelian varieties have $K_X=0$ but do not satisfy the intermediate-cohomology vanishing, so they satisfy the first convention and not the second.
+The two conventions for Calabi--Yau are not equivalent: abelian varieties of dimension at least $2$ have $K_X=0$ but do not satisfy the intermediate-cohomology vanishing, so they satisfy the first convention and not the second.
 Over an algebraically closed field, the del Pezzo surfaces are $\PP^1\times\PP^1$ and $\PP^2$ blown up at $r\le8$ points in general position; for the latter, $K^2=9-r$. A smooth cubic surface is the case $r=6$ and contains $27$ lines.
 :::
