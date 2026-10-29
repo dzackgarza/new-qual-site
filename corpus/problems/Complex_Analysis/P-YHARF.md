@@ -12,62 +12,68 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'The source printed the series as starting at n = 1, which would force f(0) = 0, a hypothesis it does not state; the series now starts at n = 0. Also removed a commented-out duplicate formula and the doubled word "the the".'
 ---
 
 ::: {.problem}
 Suppose that $f$ is holomorphic in an open set containing the closed
 unit disc, except for a pole at $z_0$ on the unit circle. Let
-$\displaystyle
-%f(z) = \sum_{n = 1}^\infty a_n z^n
-f(z) = \sum_{n = 1}^\infty c_n z^n$ denote the the power series in
+$f(z) = \sum_{n = 0}^\infty c_n z^n$ denote the power series in
 the open disc. Show that (1) $c_n \neq 0$ for all large enough
 $n$'s, and (2)
 $\displaystyle \lim_{n \rightarrow \infty} \frac{c_n}{c_{n+1}}= z_0$.
 :::
 
 ::: {.solution}
-Let the pole of $f$ at $z_0$ have order $m$, with principal part
-\[
-\sum_{j=1}^m\frac{A_j}{(z-z_0)^j},
-\qquad A_m\ne0.
-\]
-Because $f$ is holomorphic on an open neighborhood of the closed unit disk
-except at $z_0$, there is some $R>1$ such that after subtracting this principal
-part the remainder
-\[
-h(z)=f(z)-\sum_{j=1}^m\frac{A_j}{(z-z_0)^j}
-\]
-is holomorphic on $|z|<R$.
+Let the pole of $f$ at $z_0$ have order $m$, with principal part $\sum_{j=1}^m A_j(z-z_0)^{-j}$, $A_m\ne0$.
+The remainder $h(z)=f(z)-\sum_{j=1}^m A_j(z-z_0)^{-j}$ is holomorphic on $\abs{z}<R$ for some $R>1$; write $h(z)=\sum d_nz^n$.
 
-For $|z|<1=|z_0|$,
-\[
+::: pf
+
+::: {.pf-step #coeff}
+$c_n=z_0^{-n}\sum_{j=1}^m(-1)^jA_jz_0^{-j}\binom{n+j-1}{j-1}+d_n$, with $d_n=O(r^{-n})$ for some $r>1$.
+
+::: pf-proof
+For $\abs{z}<1=\abs{z_0}$,
+$$
 \frac1{(z-z_0)^j}
 =(-1)^j z_0^{-j}
 \sum_{n=0}^\infty
 \binom{n+j-1}{j-1}\frac{z^n}{z_0^n}.
-\]
-Hence the coefficient $c_n$ of $z^n$ has the form
-\[
-c_n
-=z_0^{-n}\sum_{j=1}^m
-(-1)^jA_jz_0^{-j}\binom{n+j-1}{j-1}
-+d_n,
-\]
-where the Taylor coefficients of $h$ satisfy $d_n=O(R^{-n})$ by Cauchy's
-estimates.
+$$
+Cauchy's estimates for $h$ on a circle of radius $r$ with $1<r<R$ bound $d_n$.
+:::
 
-The $j=m$ term has degree $m-1$ in $n$ and nonzero leading coefficient,
-whereas all terms with $j<m$ have smaller polynomial degree. Therefore
-\[
-c_n=Cz_0^{-n}n^{m-1}\left(1+O\left(\frac1n\right)\right)
-\]
-for some constant $C\ne0$; the exponentially small term $d_n$ does not affect
-this asymptotic. Consequently $c_n\ne0$ for all sufficiently large $n$, and
-\[
+:::
+
+::: {.pf-step #asym}
+$c_n=Cz_0^{-n}n^{m-1}\qty(1+O(1/n))$ for a constant $C\ne0$.
+
+::: pf-proof
+In step [](#coeff){.pf-ref}, the $j=m$ term is a polynomial in $n$ of degree $m-1$ with leading coefficient $(-1)^mA_mz_0^{-m}/(m-1)!\ne0$, the terms with $j<m$ have smaller degree, and $\abs{z_0^{-n}}=1$ while $d_n$ decays exponentially.
+:::
+
+:::
+
+::: pf-step
+(1) $c_n\ne0$ for all large $n$, and (2) $c_n/c_{n+1}\to z_0$.
+
+::: pf-proof
+Part (1) follows from step [](#asym){.pf-ref}, and
+$$
 \frac{c_n}{c_{n+1}}
-=z_0\left(\frac{n}{n+1}\right)^{m-1}
+=z_0\qty(\frac{n}{n+1})^{m-1}
 \frac{1+O(1/n)}{1+O(1/n)}
 \longrightarrow z_0.
-\]
-This proves both assertions.
+$$
+:::
+
+:::
+
+:::
+
 :::
