@@ -139,7 +139,7 @@ Thus $\rho|_{A_n}$ is trivial.
 
 If $n\geq5$, then
 $$
-\boxed{H=A_n.}
+H=A_n.
 $$
 
 ::: pf-proof
@@ -226,7 +226,7 @@ which does not satisfy the strict inequality.
 
 For $n=3$, the unique possibility is
 $$
-\boxed{H=A_3.}
+H=A_3.
 $$
 
 ::: pf-proof
@@ -371,12 +371,6 @@ Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} classify all cases
 for every $n\geq3$. Steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} exhaust the small cases.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s11){.pf-ref} gives all proper subgroups satisfying the required order bound.
 
 :::
 
