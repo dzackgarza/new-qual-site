@@ -22,10 +22,8 @@ audit:
 ---
 
 ::: {.exercise}
-\envlist
-
-- Let $G$ be a finite group of order $p^e v$, where $e$ and $v$ are positive integers, $p$ is prime, $p>v$, and $p\nmid v$.
-  Show that $G$ has a normal Sylow p-subgroup.
+Let $G$ be a finite group of order $p^e v$, where $e$ and $v$ are positive integers, $p$ is prime, $p>v$, and $p\nmid v$.
+Show that $G$ has a normal Sylow $p$-subgroup.
 :::
 
 ::: {.solution}
@@ -35,17 +33,17 @@ Let $n_p$ denote the number of Sylow $p$-subgroups of $G$.
 
 ::: pf-step
 Sylow's theorem gives
-\[
+$$
 n_p\mid v,
 \qquad
 n_p\equiv1\pmod p.
-\]
+$$
 
 ::: pf-proof
 Since
-\[
+$$
 |G|=p^e v
-\]
+$$
 with $p\nmid v$, a Sylow $p$-subgroup has order $p^e$. The third Sylow theorem says that the number of such subgroups divides the complementary factor $v$ and is congruent to $1$ modulo $p$.
 :::
 
@@ -56,9 +54,9 @@ One has $n_p=1$.
 
 ::: pf-proof
 Because $n_p\mid v$, we have
-\[
+$$
 1\le n_p\le v<p.
-\]
+$$
 The only positive integer strictly less than $p$ that is congruent to $1$ modulo $p$ is $1$. Thus $n_p=1$.
 :::
 
