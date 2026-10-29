@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-15. Suppose $f$ is a non-vanishing continuous function on $\overline{\mathbb{D}}$ that is holomorphic in $\mathbb{D}$.
+15. Suppose $f$ is a non-vanishing continuous function on $\overline{\DD}$ that is holomorphic in $\DD$.
     Prove that if
 
 $$
@@ -26,17 +26,17 @@ $$
 
 then $f$ is constant.
 
-[Hint: Extend $f$ to all of $\mathbb{C}$ by $f ( z ) = 1 / \overline { f ( 1 / \overline { { z } } ) }$ whenever $|z| > 1$, and argue as in the Schwarz reflection principle.]
+[Hint: Extend $f$ to all of $\CC$ by $f ( z ) = 1 / \overline { f ( 1 / \overline { { z } } ) }$ whenever $|z| > 1$, and argue as in the Schwarz reflection principle.]
 :::
 
 ::: {.solution}
-Because $f$ is continuous on $\overline{\mathbb D}$, holomorphic on $\mathbb D$, and satisfies $|f|=1$ on $\partial\mathbb D$, the maximum-modulus principle gives
+Because $f$ is continuous on $\overline{\DD}$, holomorphic on $\DD$, and satisfies $|f|=1$ on $\partial\DD$, the maximum-modulus principle gives
 \[
-|f(z)|\le1\qquad(z\in\mathbb D).
+|f(z)|\le1\qquad(z\in\DD).
 \tag{1}
 \]
 
-Since $f$ is non-vanishing on $\overline{\mathbb D}$, the function $1/f$ is continuous on $\overline{\mathbb D}$ and holomorphic on $\mathbb D$. On the boundary,
+Since $f$ is non-vanishing on $\overline{\DD}$, the function $1/f$ is continuous on $\overline{\DD}$ and holomorphic on $\DD$. On the boundary,
 \[
 \left|\frac1{f(z)}\right|=1.
 \]
@@ -46,10 +46,10 @@ Applying the maximum-modulus principle to $1/f$ yields
 \]
 so
 \[
-|f(z)|\ge1\qquad(z\in\mathbb D).
+|f(z)|\ge1\qquad(z\in\DD).
 \tag{2}
 \]
-Combining (1) and (2) gives $|f(z)|=1$ throughout $\mathbb D$.
+Combining (1) and (2) gives $|f(z)|=1$ throughout $\DD$.
 
-If $f$ were nonconstant, the open mapping theorem would imply that $f(\mathbb D)$ is open in $\mathbb C$, but it is contained in the unit circle, which has empty interior. This is impossible. Hence $f$ is constant.
+If $f$ were nonconstant, the open mapping theorem would imply that $f(\DD)$ is open in $\CC$, but it is contained in the unit circle, which has empty interior. This is impossible. Hence $f$ is constant.
 :::
