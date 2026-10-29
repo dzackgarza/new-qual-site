@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.definition}
-Let $M$ be a [[D-SYKQW|closed]] connected $n$-manifold with an [[D-CNLBT|orientation]] $x\mapsto\mu_x\in H_n(M,M\setminus\theset{x};\ZZ)$.
+Let $M$ be a [[D-SYKQW|closed]] connected $n$-manifold with an [[D-6CI7D|orientation]] $x\mapsto\mu_x\in H_n(M,M\setminus\theset{x};\ZZ)$.
 A \dfn{fundamental class} of $M$ is a class $[M]\in H_n(M;\ZZ)$ whose image under $H_n(M;\ZZ)\to H_n(M,M\setminus\theset{x};\ZZ)$ is $\mu_x$ for every $x\in M$.
 :::
 

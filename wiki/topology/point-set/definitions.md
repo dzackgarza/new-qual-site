@@ -269,8 +269,6 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-BNCTG]]
 
-[[D-JW63I]]
-
 [[D-UBWVX]]
 
 [[D-MN6QW]]
@@ -289,11 +287,7 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-O5NN7]]
 
-[[D-K5MLW]]
-
 [[D-WX7JH]]
-
-[[D-CNLBT]]
 
 [[D-J6XOC]]
 

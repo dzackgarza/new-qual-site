@@ -122,9 +122,9 @@ mathematical correction under its own node, not under copy policy.
     topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
     change-of-basepoint restatement; curves-in-projective-space opening and projection
     paragraphs; T-2YTCZ proof notation. **Acceptance:** each read and repaired.
-    **Closed.** D-BUAYX, a second injective-map card, was merged into D-3ZBXG. CARD-04
-    candidate still unread: D-6CI7D, D-CNLBT and D-JW63I each define local orientation or
-    orientation of a manifold. D-QTJ7T and T-TUXBP (complex analysis) keep citation-only
+    **Closed.** D-BUAYX, a second injective-map card, was merged into D-3ZBXG, and
+    D-CNLBT, D-JW63I and D-K5MLW (orientation, local orientation, orientable) into D-6CI7D;
+    the fundamental-class theorem stays on D-TS7TZ. D-QTJ7T and T-TUXBP (complex analysis) keep citation-only
     `concept` blocks.
   - **`ad2-complex-analysis-content`**. **Needs:** none. The power-series Dirichlet's-test proof
     swaps the two sequences. CARD-04: PR-K57J6/E-TZJKN; E-6F2HU/E-THK2Z; PR-OOHUL/E-PAQPF;

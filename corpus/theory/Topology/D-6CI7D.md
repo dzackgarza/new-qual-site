@@ -22,7 +22,13 @@ For $x\in M$, excision gives $H_n(M\mid x)\cong H_n(\RR^n, \RR^n\sm\theset{0};\Z
 
 - An \dfn{orientation} of $M$ is a function $x\mapsto\mu_x$ assigning to each $x\in M$ a local orientation at $x$, such that each $x\in M$ has an open neighborhood $U\subseteq M$ with a homeomorphism $U\cong\RR^n$ and an open ball $B\subseteq U$ of finite radius containing $x$, together with a generator $\mu_B$ of $H_n(M\mid B)\cong\ZZ$ whose image under the map $H_n(M\mid B)\to H_n(M\mid y)$ induced by inclusion is $\mu_y$ for every $y\in B$.
 
+- An \dfn{oriented manifold} is a pair consisting of a manifold and an orientation of it.
+
 - $M$ is \dfn{orientable} if an orientation of $M$ exists [@Hat02].
+:::
+
+::: {.proposition}
+A nonempty connected orientable $n$-manifold has exactly two orientations.
 :::
 
 ::: {.remark}
