@@ -95,7 +95,7 @@ On the chart $z=1$, the equation is
 $$
 g(x,y)=f(x,y,1)=0.
 $$
-The Jacobian criterion [[PR-MORJAC]] says that $P$ is smooth exactly when
+The [[PR-MORJAC|Jacobian criterion]] says that $P$ is smooth exactly when
 $$
 \bigl(g_x(P),g_y(P)\bigr)
 =
