@@ -15,8 +15,6 @@ Morera's theorem is the converse for continuous functions, and it shows that loc
 
 [[T-LHSMY]]
 
-[[FT-B73T5]]
-
 ::: {.slogan}
 A continuous function whose integral over every triangle vanishes is holomorphic.
 

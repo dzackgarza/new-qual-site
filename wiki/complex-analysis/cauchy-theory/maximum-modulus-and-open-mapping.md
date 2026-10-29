@@ -21,8 +21,6 @@ A nonconstant holomorphic function on a connected open set is an open map, and i
 
 [[T-BYNL5]]
 
-[[FT-DWCQ7]]
-
 [[PR-6WOTK]]
 
 [[PR-QW3ZK]]

@@ -4,6 +4,8 @@ id: T-LHSMY
 kind: theorem
 title: Morera's theorem
 slogan: 'Continuous plus zero integral around every triangle forces holomorphicity.'
+prompts:
+- State Morera's theorem.
 classification:
   areas:
   - complex-analysis

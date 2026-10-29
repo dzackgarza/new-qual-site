@@ -4,6 +4,8 @@ id: T-BYNL5
 kind: theorem
 title: Maximum modulus principle
 slogan: 'A nonconstant holomorphic function has no interior maximum of its modulus.'
+prompts:
+- State the maximum modulus principle.
 classification:
   areas:
   - complex-analysis

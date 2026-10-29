@@ -4,6 +4,8 @@ id: T-2OVCI
 kind: theorem
 title: Cauchy's theorem for simply connected regions
 slogan: 'Holomorphic functions have zero integral around every closed curve in a simply connected region.'
+prompts:
+- State the Cauchy-Goursat theorem.
 classification:
   areas:
   - complex-analysis
