@@ -26,9 +26,9 @@ What's the field with 25 elements?
 ::: {.solution}
 Up to isomorphism there is a unique field with $25=5^2$ elements, namely $\FF_{25}$.
 A concrete model is
-\[
+$$
 \FF_{25}\cong \FF_5[t]/(t^2+2).
-\]
+$$
 
 ::: pf
 
@@ -59,7 +59,7 @@ Irreducibility makes $(t^2+2)$ maximal in $\FF_5[t]$. Every residue class has a 
 :::
 
 Thus one may write
-\[
+$$
 \FF_{25}=\{a+b\alpha:a,b\in\FF_5,\ \alpha^2=3\}.
-\]
+$$
 :::
