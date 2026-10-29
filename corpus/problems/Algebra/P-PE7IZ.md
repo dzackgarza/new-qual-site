@@ -30,25 +30,25 @@ $\ZZ$ is initial among unital rings.
 ::: pf-proof
 
 Let $R$ be a unital ring. Define
-\[
+$$
 \phi:\ZZ\to R,
 \qquad
 \phi(n)=n\cdot1_R,
-\]
+$$
 where for $n>0$ this is a sum of $n$ copies of $1_R$, for $n<0$ it is the negative of $(-n)\cdot1_R$, and $\phi(0)=0$.
 
 Then
-\[
+$$
 \phi(m+n)=\phi(m)+\phi(n),\qquad
 \phi(mn)=\phi(m)\phi(n),\qquad
 \phi(1)=1_R,
-\]
+$$
 so $\phi$ is a unital ring homomorphism.
 
 If $\psi:\ZZ\to R$ is any unital ring homomorphism, then $\psi(1)=1_R$, hence additivity forces
-\[
+$$
 \psi(n)=n\cdot1_R=\phi(n)
-\]
+$$
 for every $n\in\ZZ$. Thus $\phi$ is unique.
 
 :::
@@ -61,19 +61,19 @@ Every abelian group has a unique $\ZZ$-module structure.
 
 ::: pf-proof
 
-For an abelian group $A$, the endomorphism ring $\Endo_{\mathbf{Ab}}(A)$ is unital. A $\ZZ$-module structure on $A$ is equivalent to a unital ring homomorphism
-\[
-\ZZ\to\Endo_{\mathbf{Ab}}(A).
-\]
+For an abelian group $A$, the endomorphism ring $\Endo_{\Ab}(A)$ is unital. A $\ZZ$-module structure on $A$ is equivalent to a unital ring homomorphism
+$$
+\ZZ\to\Endo_{\Ab}(A).
+$$
 By step [](#s1){.pf-ref} there is exactly one such homomorphism. Explicitly,
-\[
+$$
 n\cdot a=
 \begin{cases}
 a+\cdots+a,&n>0,\\
 0,&n=0,\\
 -((-n)\cdot a),&n<0.
 \end{cases}
-\]
+$$
 
 :::
 
