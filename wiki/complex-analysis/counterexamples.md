@@ -14,7 +14,7 @@ topics:
 **Boundedness on $\RR$ only.** $f(z) = \sin z$ is entire and bounded on $\RR$, and $\abs{\sin(iy)} = \sinh\abs y \to \infty$ as $\abs y\to\infty$.
 
 ::: {.remark}
-An entire function with $\abs{f(z)} \leq C\abs z^n$ for large $\abs z$ is a polynomial of degree at most $n$ ([[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]]), so $f(z)=z^n$ is nonconstant under this bound.
+An entire function with $\abs{f(z)} \leq C\abs z^n$ for large $\abs z$ is a polynomial of degree at most $n$ ([[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]]), and $f(z)=z^n$ satisfies this bound without being constant.
 :::
 
 ## The identity principle
