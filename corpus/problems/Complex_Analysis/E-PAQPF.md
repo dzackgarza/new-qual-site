@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PAQPF
 kind: problem
-title: Polar CR equations
+title: Cauchy--Riemann equations in polar coordinates
 classification:
   areas:
   - complex-analysis
@@ -14,48 +14,44 @@ review: draft
 
 ::: {.exercise}
 Show that in polar coordinates, the CR equations take the following form:
-\[  
-\frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{1}{r} \frac{\partial u}{\partial \theta}=-\frac{\partial v}{\partial r}
-.\]
-
+$$
+\frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{1}{r} \frac{\partial u}{\partial \theta}=-\frac{\partial v}{\partial r}.
+$$
 :::
 
 ::: {.solution}
-Setting 
-\[
-z = re^{i\theta} = r(\cos(\theta) + i\sin(\theta) ) = x+iy
-\]
-yields $x=r\cos(\theta), y=r\sin(\theta)$, one can identify
-\[
-x_r = \cos(\theta)&, x_\theta = -r\sin(\theta) \\
-y_r = \sin(\theta)&, y_\theta = r\cos(\theta)
-.\]
 
-Now apply the chain rule:
-\[
-u_r 
-&= u_x x_r + u_y y_r \\
-&= v_y x_r -v_x y_r && \text{CR}\\
-&= v_y \cos(\theta) - v_x \sin(\theta) \\
-&= {1\over r}\qty{ v_y r\cos(\theta) - v_x r\sin(\theta) } \\
-&= {1\over r}\qty { v_y y_\theta + v_x x_\theta} \\
-&= {1\over r} v_\theta
-.\]
-Similarly,
-\[
-v_r
-&= v_x x_r + v_y y_r \\
-&= v_x \cos(\theta) + v_y\sin(\theta) \\
-&= -u_y\cos(\theta) + u_x\sin(\theta) && \text{CR} \\
-&= {1\over r}\qty{ -u_y r\cos(\theta) + u_x r\sin(\theta)} \\
-&= {1\over r}\qty{ -u_y y_\theta - u_x x_0 } \\
-&= -{1\over r} u_\theta
-.\]
+Let $u$ and $v$ be differentiable and satisfy $u_x=v_y$ and $u_y=-v_x$, and write $x=r\cos(\theta)$, $y=r\sin(\theta)$ with $r>0$.
 
-Thus
-\[
-\frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{\partial v}{\partial r}=-\frac{1}{r} \frac{\partial u}{\partial \theta} \\
-.\]
+::: pf
+
+::: {.pf-step #chain}
+For $w\in\{u,v\}$, $w_r = \cos(\theta)\,w_x + \sin(\theta)\,w_y$ and $w_\theta = -r\sin(\theta)\,w_x + r\cos(\theta)\,w_y$.
+
+::: pf-proof
+This is the chain rule with $x_r=\cos(\theta)$, $y_r=\sin(\theta)$, $x_\theta=-r\sin(\theta)$, $y_\theta=r\cos(\theta)$.
+:::
 
 :::
 
+::: pf-step
+$u_r = \frac1r v_\theta$.
+
+::: pf-proof
+By step [](#chain){.pf-ref} and the Cauchy--Riemann equations, $v_\theta = -r\sin(\theta)\,v_x + r\cos(\theta)\,v_y = r\sin(\theta)\,u_y + r\cos(\theta)\,u_x = r\,u_r$.
+:::
+
+:::
+
+::: pf-step
+$\frac1r u_\theta = -v_r$.
+
+::: pf-proof
+By step [](#chain){.pf-ref} and the Cauchy--Riemann equations, $v_r = \cos(\theta)\,v_x + \sin(\theta)\,v_y = -\cos(\theta)\,u_y + \sin(\theta)\,u_x = -\frac1r u_\theta$.
+:::
+
+:::
+
+:::
+
+:::
