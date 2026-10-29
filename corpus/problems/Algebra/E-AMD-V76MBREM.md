@@ -17,15 +17,18 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source reads "Let R be a Noetherian ring and A,B algebras over R. Suppose A is finite type over R and finite over B." Without B a subring of A the claim fails (B = R[x_1,x_2,...] mapping onto A = R by x_i -> 0). The statement now assumes commutative rings R in B in A, as the solution did.
 ---
 
 ::: {.exercise}
-Let $R$ be a Noetherian ring and $A,B$ algebras over $R$.
-Suppose $A$ is finite type over $R$ and finite over B. Then $B$ is finite type over $R$.
+Let $R\subseteq B\subseteq A$ be commutative rings with $R$ Noetherian.
+Suppose $A$ is finite type over $R$ and finite over $B$. Then $B$ is finite type over $R$.
 :::
 
 ::: {.solution}
-The rings are commutative, and $R\subseteq B\subseteq A$.
 Write $A=R[x_1,\dots,x_n]$ and $A=\sum_{j=1}^m By_j$ with $y_1=1$.
 Choose $b_{ij},c_{jkl}\in B$ with
 $$x_i=\sum_{j=1}^m b_{ij}y_j,\qquad y_jy_k=\sum_{l=1}^m c_{jkl}y_l ,$$
