@@ -19,42 +19,39 @@ Classify all groups of order $10$.
 :::
 
 ::: {.solution}
-Let $|G|=10=2\cdot5$.
+Let $G$ be a group with $\abs{G}=10=2\cdot5$.
 
-Sylow's theorem gives
-\[
-n_5\mid2,
-\qquad
-n_5\equiv1\pmod5.
-\]
-Thus
-\[
-n_5=1.
-\]
-So the Sylow $5$-subgroup
-\[
-P\cong C_5
-\]
-is normal.
+::: pf
 
-Let $Q\cong C_2$ be a Sylow $2$-subgroup. Since $P\cap Q=1$ and $|PQ|=10$, one has
-\[
-G\cong C_5\rtimes C_2.
-\]
-The action is determined by a homomorphism
-\[
-C_2\to\operatorname{Aut}(C_5)\cong C_4.
-\]
-There are exactly two possibilities for the image:
+::: {.pf-step #sylow5}
+The Sylow $5$-subgroup $P\cong C_5$ of $G$ is normal.
 
-- the trivial action, giving
-  \[
-  C_5\times C_2\cong C_{10};
-  \]
-- the unique nontrivial element of order $2$ in $C_4$, namely inversion on $C_5$, giving the dihedral group of order $10$.
+::: pf-proof
+By Sylow's theorems $n_5\divides 2$ and $n_5\equiv1\pmod5$, so $n_5=1$.
+:::
 
-Therefore there are exactly two groups of order $10$ up to isomorphism:
-\[
-\boxed{C_{10}\quad\text{and}\quad D_{10}.}
-\]
+:::
+
+::: {.pf-step #semidirect}
+$G\cong C_5\rtimes_\varphi C_2$ for a homomorphism $\varphi:C_2\to\Aut(C_5)\cong C_4$.
+
+::: pf-proof
+Let $Q\cong C_2$ be a Sylow $2$-subgroup. Then $P\cap Q=1$ and $\abs{PQ}=10$, so $G=PQ$ with $P$ normal by step [](#sylow5){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+Up to isomorphism, the groups of order $10$ are $\boxed{C_{10}\text{ and }D_{10}}$, where $D_{10}$ is the dihedral group of order $10$.
+
+::: pf-proof
+$C_4$ has a unique element of order $2$, which acts on $C_5$ by inversion, so by step [](#semidirect){.pf-ref} $\varphi$ is trivial or sends the generator to inversion.
+The trivial action gives $C_5\times C_2\cong C_{10}$, and inversion gives $D_{10}$.
+These are not isomorphic, since $C_{10}$ is abelian and $D_{10}$ is not.
+:::
+
+:::
+
+:::
+
 :::
