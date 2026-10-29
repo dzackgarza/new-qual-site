@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HPSTB
 kind: problem
-title: Inner automorphisms preserve conjugacy of subgroups
+title: Automorphisms preserve conjugacy of subgroups
 classification:
   areas:
   - algebra
@@ -26,11 +26,25 @@ Show that any automorphism (and in particular, every inner automorphism) sends c
 :::
 
 ::: {.solution}
-Suppose $H_2=gH_1g^{-1}$ and let $\varphi\in\operatorname{Aut}(G)$. Then
-\[
+Let $G$ be a group, let $\varphi\in\Aut(G)$, and let $H_1,H_2\le G$ with $H_2=gH_1g^{-1}$ for some $g\in G$.
+
+::: pf
+
+::: pf-step
+$\varphi(H_2)=\varphi(g)\,\varphi(H_1)\,\varphi(g)^{-1}$, so $\varphi(H_1)$ and $\varphi(H_2)$ are conjugate in $G$.
+
+::: pf-proof
+Since $\varphi$ is a homomorphism,
+$$
 \varphi(H_2)
 =\varphi(gH_1g^{-1})
 =\varphi(g)\,\varphi(H_1)\,\varphi(g)^{-1}.
-\]
-Thus $\varphi(H_1)$ and $\varphi(H_2)$ are conjugate subgroups of $G$. In particular, this holds for every inner automorphism.
+$$
+Inner automorphisms are automorphisms, so the conclusion holds for them in particular.
+:::
+
+:::
+
+:::
+
 :::
