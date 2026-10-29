@@ -129,7 +129,7 @@ the polynomial $c$ to all of $U$.
 
 :::
 
-::: {.pf-step #extension-exists-and-unique}
+::: pf-step
 Every regular function on $U$ extends uniquely to a regular
 function on $\AA^2$.
 
@@ -145,11 +145,6 @@ nonempty open subset $U$ of the irreducible variety $\AA^2$. Hence their
 difference is the zero polynomial. The extension is therefore unique.
 :::
 
-:::
-
-::: pf-qed
-Step [](#extension-exists-and-unique){.pf-ref} is exactly the required extension statement, based on the
-localization calculation in steps [](#representation-on-principal-opens){.pf-ref} and [](#representatives-agree-on-overlap){.pf-ref}.
 :::
 
 :::
