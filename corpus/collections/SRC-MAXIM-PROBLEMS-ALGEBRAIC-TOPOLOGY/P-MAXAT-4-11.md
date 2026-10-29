@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-11
 kind: problem
-title: Maxim algebraic topology 4.11
+title: Serre's theorem that homotopy groups of spheres are torsion outside degrees $n$ and $2n-1$
 classification:
   areas: [topology]
   topics: []
