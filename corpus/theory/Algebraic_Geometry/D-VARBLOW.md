@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Blowup"}
-The blowup of $\AA^n$ at the origin is
+The \dfn{blowup} of $\AA^n$ at the origin is
 $$
 \Bl_0 \AA^n \coloneqq \theset{ (x, \ell) \in \AA^n \times \PP^{n-1} \st x \in \ell } ,
 $$
@@ -32,7 +32,8 @@ $$
 \Proj_X\bigoplus_{d\ge0}\mci_p^d,
 $$
 as in [[D-SCHBLOWUP]].
-The \dfn{exceptional divisor} is $E\coloneqq\pi^{-1}(p)$, and its fibre over $p$ is
+Let $\pi\colon\Bl_pX\to X$ be the structure morphism.
+The \dfn{exceptional divisor} is $E\coloneqq\pi^{-1}(p)$, and
 $$
 E
 \cong
@@ -43,12 +44,12 @@ The \dfn{proper transform} of a subvariety $C\subseteq X$ is the closure of $\pi
 :::
 
 ::: {.proposition}
-$\pi$ is an isomorphism away from $E$, hence birational, and $\Bl_p X$ is again a variety, projective over $X$.
+$\pi$ restricts to an isomorphism $\Bl_pX\sm E\to X\sm\theset{p}$, hence is birational, and $\Bl_p X$ is again a variety, projective over $X$.
 If $X$ is smooth of dimension $n$ at $p$, then
 $$
 E\cong\PP^{n-1}_{\kappa(p)},
 $$
-the projective space of one-dimensional quotients of the tangent space at $p$.
+the projective space of lines in the tangent space at $p$.
 In particular, for a smooth surface $E\cong\PP^1_{\kappa(p)}$.
 :::
 
