@@ -1,5 +1,6 @@
 ---
 order: 200
+title: Summary of standard topics
 ---
 
 # Summary of standard topics
