@@ -24,36 +24,39 @@ audit:
 
 ::: {.exercise}
 Prove Poincaré's theorem: if $H\le G$ has finite index $n$, then there is $N\trianglelefteq G$ with $N\subseteq H$ and
-\[
+$$
 [G:N]\mid n!.
-\]
-:::
+$$
 
 ::: {.solution}
-Let $G$ act by left multiplication on the $n$ left cosets $G/H$. This gives a homomorphism
-\[
-\rho:G\longrightarrow S_n.
-\]
-Let
-\[
-N=\ker\rho.
-\]
-Then $N\trianglelefteq G$. Moreover,
-\[
+Let $G$ act by left multiplication on the $n$ left cosets $G/H$, let $\rho\colon G\to S_n$ be the resulting homomorphism, and let $N=\ker\rho$.
+
+::: pf
+
+::: {.pf-step #core}
+$N\trianglelefteq G$ and $N=\bigcap_{x\in G}xHx^{-1}\subseteq H$.
+
+::: pf-proof
+A kernel is normal. Moreover,
+$$
 g\in N
 \iff gxH=xH\text{ for every }x\in G
 \iff x^{-1}gx\in H\text{ for every }x\in G,
-\]
-so
-\[
-N=\bigcap_{x\in G}xHx^{-1}\subseteq H.
-\]
-By the first isomorphism theorem,
-\[
-G/N\cong\operatorname{im}\rho\le S_n.
-\]
-Hence, by Lagrange,
-\[
-[G:N]=|G/N|\mid |S_n|=n!.
-\]
+$$
+and taking $x=1$ gives $N\subseteq H$.
+:::
+
+:::
+
+::: pf-step
+$[G:N]\mid n!$.
+
+::: pf-proof
+By the first isomorphism theorem $G/N\cong\im\rho\le S_n$, so by Lagrange's theorem $[G:N]=\abs{G/N}$ divides $\abs{S_n}=n!$. Together with step [](#core){.pf-ref}, $N$ is the required normal subgroup.
+:::
+
+:::
+
+:::
+
 :::
