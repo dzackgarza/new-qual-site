@@ -28,7 +28,10 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\int _ { 0 } ^ { \infty } { \frac { \sin ^ { 3 } x } { x ^ { 3 } } } d x$
+Evaluate
+$$
+\int_0^\infty \frac{\sin^3 x}{x^3}\,dx.
+$$
 :::
 
 ::: {.solution}

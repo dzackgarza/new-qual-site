@@ -27,7 +27,10 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \sqrt { x } } { 1 + x ^ { 2 } } } d x$
+Evaluate
+$$
+\int_0^\infty \frac{\sqrt{x}}{1+x^2}\,dx.
+$$
 :::
 
 ::: {.solution}

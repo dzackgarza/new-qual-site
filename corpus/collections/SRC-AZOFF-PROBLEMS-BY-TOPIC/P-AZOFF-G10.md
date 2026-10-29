@@ -27,7 +27,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $a > 0$ . Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \cos x } { ( x ^ { 2 } + a ^ { 2 } ) ^ { 2 } } } d x$
+Let $a>0$. Evaluate
+$$
+\int_0^\infty \frac{\cos x}{(x^2+a^2)^2}\,dx.
+$$
 :::
 
 ::: {.solution}
