@@ -23,32 +23,53 @@ audit:
 ---
 
 ::: {.problem}
-(1) Define **solvability by radicals** for a polynomial $f(x) \in F[x]$ and state the Abel–Ruffini / Galois criterion.
-(2) Prove that the alternating group $A_5$ is a **simple group**.
-(3) Explain why the symmetric group $S_5$ is **not solvable**, and why there is no general radical formula for quintic polynomials.
+(a) Define solvability by radicals for a polynomial $f(x) \in F[x]$ and state the Abel--Ruffini / Galois criterion.
+
+(b) Prove that the alternating group $A_5$ is a simple group.
+
+(c) Explain why the symmetric group $S_5$ is not solvable, and why there is no general radical formula for quintic polynomials.
 :::
 
 ::: {.solution}
+Let $F$ have characteristic $0$.
 
-A polynomial $f\in F[x]$ is **solvable by radicals** if its splitting field is contained in a tower
-\[
-F=K_0\subset K_1\subset\cdots\subset K_r
-\]
-in which each $K_{i+1}=K_i(\alpha_i)$ with $\alpha_i^{n_i}\in K_i$ for some $n_i\ge2$ (after adjoining the necessary roots of unity in the standard formulation). Galois theory gives the criterion: $f$ is solvable by radicals if and only if its Galois group is solvable.
+::: pf
 
-We prove that $A_5$ is simple. Its conjugacy classes have sizes
-\[
-1,\ 20,\ 15,\ 12,\ 12,
-\]
-corresponding respectively to the identity, the $3$-cycles, the double transpositions, and the two $A_5$-classes of $5$-cycles. A normal subgroup is a union of conjugacy classes containing the identity, and its order must divide $60$. The sums obtained from a proper nonempty selection of the four nontrivial class sizes are
-\[
-13,16,21,25,28,33,36,40,45,48,
-\]
-none of which divides $60$. Hence the only normal subgroups are $\{e\}$ and $A_5$, so $A_5$ is simple.
+::: pf-step
+(a) $f\in F[x]$ is $\dfn{solvable by radicals}$ if its splitting field is contained in a field $K_r$ of a tower $F=K_0\subset K_1\subset\cdots\subset K_r$ with $K_{i+1}=K_i(\alpha_i)$ and $\alpha_i^{n_i}\in K_i$ for some $n_i\ge1$. Galois's criterion: $f$ is solvable by radicals if and only if $\Gal(f/F)$ is a solvable group.
 
-Now
-\[
-1\triangleleft A_5\triangleleft S_5
-\]
-has composition factors $A_5$ and $S_5/A_5\cong C_2$. Since $A_5$ is nonabelian simple, $S_5$ is not solvable. Therefore any quintic whose Galois group is $S_5$ is not solvable by radicals. Since quintics with Galois group $S_5$ exist, there can be no radical formula valid for all quintic polynomials.
+::: pf-proof
+The criterion is Galois's theorem on solvability by radicals.
+:::
+
+:::
+
+::: {.pf-step #a5-simple}
+(b) $A_5$ is simple.
+
+::: pf-proof
+The conjugacy classes of $A_5$ have sizes $1$ (identity), $20$ ($3$-cycles), $15$ (double transpositions), $12$ and $12$ (the two $A_5$-classes of $5$-cycles). A normal subgroup is a union of conjugacy classes containing the identity, and its order divides $60$. Adding $1$ to the sum of a proper nonempty subcollection of $20,15,12,12$ gives one of $13,16,21,25,28,33,36,40,45,48$, none of which divides $60$. Hence the only normal subgroups are $\{e\}$ and $A_5$.
+:::
+
+:::
+
+::: {.pf-step #s5}
+(c) $S_5$ is not solvable.
+
+::: pf-proof
+$1\triangleleft A_5\triangleleft S_5$ is a composition series with factors $A_5$ and $C_2$, by step [](#a5-simple){.pf-ref}. Since $A_5$ is a nonabelian composition factor, $S_5$ is not solvable.
+:::
+
+:::
+
+::: pf-step
+(c) There is no radical formula valid for all quintic polynomials over $\QQ$.
+
+::: pf-proof
+The polynomial $f=x^5-4x+2$ is irreducible over $\QQ$ by Eisenstein's criterion at $2$, so $\Gal(f/\QQ)\le S_5$ contains a $5$-cycle. Since $f(-2)<0$, $f(0)>0$, $f(1)<0$, $f(2)>0$, and $f'=5x^4-4$ has only two real zeros, $f$ has exactly three real roots, so complex conjugation acts as a transposition. A $5$-cycle and a transposition generate $S_5$, so $\Gal(f/\QQ)=S_5$, which is not solvable by step [](#s5){.pf-ref}. By Galois's criterion, $f$ is not solvable by radicals, so no radical formula covers it.
+:::
+
+:::
+
+:::
 :::
