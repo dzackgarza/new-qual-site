@@ -127,7 +127,6 @@ source:
   - id: E-JXU5L
   - id: E-JZNWV
   - id: E-KC6DS
-  - id: E-KQTPV
   - id: E-KUGNH
   - id: E-KZB33
   - id: E-KZV2Z
