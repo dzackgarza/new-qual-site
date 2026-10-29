@@ -51,6 +51,4 @@ The Lebesgue $\sigma$-algebra is the completion of the Borel $\sigma$-algebra an
 
 ## Problems
 
-[[P-QZT5B]]
-
 [[P-TZJQI]]
