@@ -16,13 +16,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source opens the statement with the line '> Note: (a) is a repeat.', which refers to a part this card does not carry; the line is removed from the statement."
 ---
 
 ::: {.problem}
-> Note: (a) is a repeat.
-
 Let $f: [0, 1]\to \RR$ be continuous, and prove the Weierstrass approximation theorem: for any $\eps> 0$ there exists a polynomial $P$ such that $\norm{f - P}_{\infty} < \eps$.
 :::
+
 ::: {.solution}
 For $n \geq 1$ let $p_{n,k}(x) = \binom{n}{k}x^k(1-x)^{n-k}$ and let $B_n(x) = \sum_{k=0}^n f(k/n)\,p_{n,k}(x)$, the Bernstein polynomial of $f$, of degree at most $n$.
 
