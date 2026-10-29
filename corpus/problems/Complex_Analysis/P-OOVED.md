@@ -32,7 +32,7 @@ $$
 :::
 
 ::: {.solution}
-Let $\Omega\supset\overline\DD$ be the open set on which $f$ is analytic; shrinking it, we may take it connected.
+Since $\overline\DD$ is compact, the open set on which $f$ is analytic contains a disk $\Omega=\theset{\abs{z}<\rho}$ with $\rho>1$.
 
 ::: pf
 
