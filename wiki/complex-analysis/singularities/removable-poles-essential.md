@@ -12,8 +12,6 @@ topics:
 
 Criteria for the type of an isolated singularity are on [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]].
 
-[[D-VAXQT]]
-
 [[D-IWIA5]]
 
 [[FF-QZXBS]]
