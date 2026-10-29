@@ -27,36 +27,36 @@ Prove that $a^2$ is algebraic over $K$, that $[K(a^2) : K]$ is odd, and that $K(
 
 ::: {.solution}
 Since $a$ is algebraic over $K$, so is $a^2$, and
-\[
+$$
 K\subseteq K(a^2)\subseteq K(a).
-\]
+$$
 Hence the tower law gives
-\[
+$$
 [K(a):K]
 =[K(a):K(a^2)]\,[K(a^2):K].
-\]
+$$
 
 Now $a$ is a root of
-\[
+$$
 x^2-a^2\in K(a^2)[x],
-\]
+$$
 so
-\[
+$$
 [K(a):K(a^2)]\le2.
-\]
+$$
 Therefore this degree is either $1$ or $2$. But it divides the odd integer
-\[
+$$
 [K(a):K]=2m+1,
-\]
+$$
 so it cannot be $2$. Thus
-\[
+$$
 [K(a):K(a^2)]=1,
 \qquad
 K(a)=K(a^2).
-\]
+$$
 Consequently
-\[
+$$
 [K(a^2):K]=[K(a):K]=2m+1,
-\]
+$$
 which is odd.
 :::
