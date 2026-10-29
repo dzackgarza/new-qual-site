@@ -18,6 +18,18 @@ Find all entire functions $f$ such that $f(x) = e^x$ on $\RR$.
 :::
 
 ::: {.solution}
-The function $g(z) \definedas f(z) - e^z$ is entire and identically zero on $\RR$, which contains a limit point.
-So $g(z) \equiv 0$ on $\CC$, meaning $f(z) = e^z$ is the only such function.
+::: pf
+
+::: pf-step
+The only such function is $\boxed{f(z) = e^z}$.
+
+::: pf-proof
+$e^z$ is entire and equals $e^x$ on $\RR$.
+Conversely, $g(z) \definedas f(z) - e^z$ is entire and vanishes on $\RR$, a set with a limit point in $\CC$, so $g\equiv0$ by the identity theorem.
+:::
+
+:::
+
+:::
+
 :::
