@@ -14,7 +14,6 @@ source:
   date:
     kind: unknown
   problems:
-  - id: E-22IOS
   - id: E-2BLQW
   - id: E-2EG76
   - id: E-3RLT2
