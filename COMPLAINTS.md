@@ -76,19 +76,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair merges both forms and the polynomial-UFD consequence onto `T-JEZZY`, moves the review prompt there, redirects all live references, and deletes `FT-OXN3Y`.
 
-### Duplicate transitive-action cards D-KGGWK and FD-KSKDG
-
-- **Object and need:** `D-KGGWK` and `FD-KSKDG` in `corpus/theory/Algebra`. Both define transitivity of a group action by the condition that for every `$x,y\in X$` some `$g\in G$` satisfies `$g\cdot x=y$`.
-
-- **Observed evidence:** the definitions are identical.
-  `D-KGGWK` is the dependency used by transitive subgroups, covering-space theory, and the canonical group-action card; the wiki displayed `FD-KSKDG` beside it.
-
-- **Impact and owner:** the flashcard adds no distinct mathematics and creates a second defining occurrence.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `D-KGGWK`, removes the duplicate wiki link, and deletes `FD-KSKDG`.
-
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
 - **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
