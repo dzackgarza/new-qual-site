@@ -19,29 +19,29 @@ What is an irreducible variety? Give an example of a reducible one.
 :::
 
 ::: {.solution}
-A nonempty topological space $X$ is **irreducible** if whenever
-\[
-X=Y\cup Z
-\]
-with $Y,Z$ closed in $X$, then $X=Y$ or $X=Z$. Thus an algebraic variety is irreducible when it cannot be written as the union of two proper closed subvarieties.
 
-For an affine algebraic set $V(I)\subseteq k^n$, over an algebraically closed field $k$, one has
-\[
-V(I)\text{ irreducible}\iff I(V(I))=\sqrt I\text{ is prime}.
-\]
-Indeed, if $\sqrt I$ is prime and
-\[
-V(I)=V(J)\cup V(K)=V(JK),
-\]
-then $JK\subseteq\sqrt I$, so primality gives $J\subseteq\sqrt I$ or $K\subseteq\sqrt I$, hence one of the two closed subsets is all of $V(I)$. The converse is obtained by applying irreducibility to $V(I+(fg))=V(I+(f))\cup V(I+(g))$.
+A nonempty topological space $X$ is irreducible if $X=Y\cup Z$ with $Y,Z$ closed implies $X=Y$ or $X=Z$; a variety is irreducible when its Zariski topology is. Let $k$ be algebraically closed, and for an affine algebraic set $V\subseteq\AA^n_k$ let $I(V)$ be the ideal of polynomials vanishing on $V$.
 
-A basic reducible example is
-\[
-V(xy)\subseteq\mathbb A_k^2.
-\]
-Since
-\[
-V(xy)=V(x)\cup V(y),
-\]
-it is the union of the two coordinate axes, both proper closed subsets. Equivalently, $(xy)$ is not a prime ideal.
+::: pf
+
+::: pf-step
+
+A nonempty affine algebraic set $V$ is irreducible if and only if $I(V)$ is prime.
+
+::: pf-proof
+
+Suppose $I(V)$ is prime and $V=Y\cup Z$ with $Y,Z$ closed. If $Y\neq V$ and $Z\neq V$, choose $f\in I(Y)\setminus I(V)$ and $g\in I(Z)\setminus I(V)$. Then $fg$ vanishes on $Y\cup Z=V$, so $fg\in I(V)$, contradicting primality. Conversely, suppose $V$ is irreducible. Then $I(V)\neq k[x_1,\ldots,x_n]$ because $V\neq\varnothing$. If $fg\in I(V)$, then $V=(V\cap V(f))\cup(V\cap V(g))$, so $V\subseteq V(f)$ or $V\subseteq V(g)$, that is, $f\in I(V)$ or $g\in I(V)$.
+
+:::
+
+:::
+
+::: pf-qed
+
+The algebraic set $V(xy)\subseteq\AA^2_k$ is reducible: $V(xy)=V(x)\cup V(y)$ is the union of the two coordinate axes, each a proper closed subset. Equivalently, $I(V(xy))=(xy)$ is not prime, since $x,y\notin(xy)$.
+
+:::
+
+:::
+
 :::
