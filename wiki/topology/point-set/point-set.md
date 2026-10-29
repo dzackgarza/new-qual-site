@@ -106,16 +106,6 @@ For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NC
 
 [[T-G4GO4]]
 
-::: {.proof}
-Let $N\subseteq X\cross Y$ be open with $\theset{x_0}\cross Y\subseteq N$.
-For each $y\in Y$, choose open sets $U_y\subseteq X$ and $V_y\subseteq Y$ with $(x_0,y)\in U_y\cross V_y\subseteq N$.
-Since $Y$ is compact, finitely many $V_{y_1},\ldots,V_{y_n}$ cover $Y$.
-Let $W\coloneqq \bigcap_{j=1}^n U_{y_j}$, an open set containing $x_0$.
-For $(x,y)\in W\cross Y$, choose $j$ with $y\in V_{y_j}$; since $x\in W\subseteq U_{y_j}$, $(x,y)\in U_{y_j}\cross V_{y_j}\subseteq N$.
-Hence $W\cross Y\subseteq N$.
-
-:::
-
 ::: {.example title="The tube lemma fails without compactness"}
 In $\RR\cross\RR$, the open set $N\coloneqq\theset{(x,y) \suchthat \abs y < e^{-x^2}}$ contains the slice $\RR\cross\theset{0}$, and it contains no tube $\RR\cross(-\delta,\delta)$ with $\delta>0$, since $e^{-x^2}<\delta$ for large $\abs x$.
 Here the slice is taken in the noncompact factor $\RR$.
