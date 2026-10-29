@@ -23,19 +23,19 @@ order: 40
 
 ## Solutions and worked practice
 
-- [Chapter 6 solutions](attachments/Ch6Sltns.pdf)
+- [Solution outlines for chapter 6 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch6Sltns.pdf)
 
-- [Chapter 7 solutions](attachments/Ch7Sltns.pdf)
+- [Solution outlines for chapter 7 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch7Sltns.pdf)
 
-- [Chapter 8 solutions](attachments/Ch8Sltns.pdf)
+- [Solution outlines for chapter 8 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch8Sltns.pdf)
 
 - [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Chapter 9 factor-group solutions]]
 
-- [Chapter 10, part A solutions](attachments/Ch10PtASltns.pdf)
+- [Solution outlines for chapter 10, part A, of Gallian, *Contemporary Abstract Algebra*](attachments/Ch10PtASltns.pdf)
 
-- [Chapter 10 solutions](attachments/Ch10Sltns.pdf)
+- [Solution outlines for chapter 10 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch10Sltns.pdf)
 
-- [Chapter 11 solutions](attachments/Ch11Sltns.pdf)
+- [Solution outlines for chapter 11 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch11Sltns.pdf)
 
 - [Algebra homework 4 solutions](attachments/Algebra_HW_4_Solns.pdf)
 
