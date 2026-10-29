@@ -19,21 +19,40 @@ Show that for every map $f: S^2 \to S^1$, there is a point $x\in S^2$ such that 
 :::
 
 ::: {.solution}
-Suppose towards a contradiction that $f$ does not possess this property, so there is no $x\in S^2$ such that $f(x) = f(-x)$.
+Regard $S^1 \subseteq \CC$, and let $e\colon \RR \to S^1$, $t \mapsto e^{2\pi i t}$, be the universal covering map.
 
-Then define $g: S^2 \into S^1$ by $g(x) = {f(x) - f(-x)}$; by assumption, this is a nontrivial map, i.e. $g(x) \neq 0$ for *any* $x\in S^2$.
+::: pf
 
-In particular, $-g(-x) = -{(f(-x) - f(x))} = {f(x) - f(-x)} = g(x)$, so $-g(x) = g(-x)$ and thus $g$ commutes with the antipodal map $\alpha: S^2 \to S^2$.
+::: {.pf-step #lift}
+There is a map $F\colon S^2 \to \RR$ with $f = e \circ F$.
 
-This means $g$ is constant on the fibers of the quotient map $p: S^2 \into \RP 2$, and thus descends to a well defined map $\tilde g: \RP 2 \into S^1$, and since $S^1 \cong \RP 1$, we can identify this with a map $\tilde g: \RP 2 \into \RP 1$ which thus induces a homomorphism $\tilde g_*: \pi_1(\RP 2) \to \pi_1(\RP 1)$.
-
-Since $g$ was nontrivial, $\tilde g$ is nontrivial, and by functoriality of $\pi_1$, $\tilde g_*$ is nontrivial.
-
-But $\pi_1(\RP 2) = \ZZ_2$ and $\pi_1(\RP 1) = \ZZ$, and $\tilde g_*: \ZZ^2 \into \ZZ$ can only be the trivial homomorphism - a contradiction.
+::: pf-proof
+$S^2$ is simply connected and locally path connected, so the lifting criterion gives a lift of $f$ through the covering $e$.
 :::
 
-::: {.remark}
-**Alternate Solution**
+:::
 
-Use covering space $\RR \surjects S^1$?
+::: {.pf-step #zero}
+The map $h\colon S^2 \to \RR$, $h(x) = F(x) - F(-x)$, has a zero.
+
+::: pf-proof
+$h$ is continuous and $h(-x) = -h(x)$.
+Pick any $x_0 \in S^2$.
+If $h(x_0) = 0$, we are done.
+Otherwise $h(x_0)$ and $h(-x_0)$ have opposite signs, and $S^2$ is connected, so the intermediate value theorem, applied along a path from $x_0$ to $-x_0$, gives a zero of $h$.
+:::
+
+:::
+
+::: pf-step
+Some $x \in S^2$ has $f(x) = f(-x)$.
+
+::: pf-proof
+By step [](#zero){.pf-ref}, some $x$ has $F(x) = F(-x)$.
+By step [](#lift){.pf-ref}, $f(x) = e(F(x)) = e(F(-x)) = f(-x)$.
+:::
+
+:::
+
+:::
 :::
