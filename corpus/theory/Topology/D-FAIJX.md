@@ -36,16 +36,5 @@ Let $X$ be a topological space and $A, B\subseteq X$ subspaces with $X = A^\circ
 Then $\del\colon H_n(X)\to H_{n-1}(A\cap B)$ is well defined and the Mayer--Vietoris sequence of $(A, B)$ is exact [@Hat02].
 :::
 
-::: {.remark}
-Let $C_n(A+B)\subseteq C_n(X)$ be the subgroup of sums of an $n$-chain in $A$ and an $n$-chain in $B$.
-Since $X = A^\circ\cup B^\circ$, the inclusion $C_\bullet(A+B)\hookrightarrow C_\bullet(X)$ induces isomorphisms on homology.
-The Mayer--Vietoris sequence is the long exact homology sequence of the short exact sequence of chain complexes
-$$
-0\to C_n(A\cap B)\xrightarrow{x\mapsto(x, -x)} C_n(A)\oplus C_n(B)\xrightarrow{(x, y)\mapsto x+y} C_n(A+B)\to 0,
-$$
-and $\del$ is its connecting homomorphism; since $\del z = 0$, the chain $\del x = -\del y$ lies in $A\cap B$ and is a cycle there.
-:::
-
-::: {.remark}
 When $A\cap B\neq\emptyset$ there is an exact sequence of the same form in reduced homology, and there is an exact sequence for singular cohomology with the arrows reversed.
 :::
