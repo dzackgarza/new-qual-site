@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FTV4U
 kind: problem
-title: "Bounded variation of x sin(1/x) on the unit interval"
+title: 'Bounded variation of $x\sin(1/x)$ on $[0,1]$'
 classification:
   areas:
   - real-analysis
@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Define $f \colon [0,1] \to [-1,1]$ by $$f(x)\coloneqq \begin{cases} x\sin\big({\frac{1}{x}}\big) & 0 < x \leq 1 \\ 0 & x = 0 \end{cases}$$ Determine, with justification, whether $f$ is if bounded variation on the interval $[0,1]$.
+Define $f \colon [0,1] \to [-1,1]$ by $$f(x)\coloneqq \begin{cases} x\sin\big({\frac{1}{x}}\big) & 0 < x \leq 1 \\ 0 & x = 0 \end{cases}$$ Determine, with justification, whether $f$ is of bounded variation on the interval $[0,1]$.
 :::
 
 ::: {.solution}

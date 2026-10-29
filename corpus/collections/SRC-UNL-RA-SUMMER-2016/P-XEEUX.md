@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XEEUX
 kind: problem
-title: Consider the function $f(x) = \frac{x}{1-x^2}$,
+title: 'Continuity and uniform continuity of $x/(1-x^2)$ on $(0,1)$'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WWNJC
 kind: problem
-title: Without using the Riesz Representation Theorem, compute
+title: 'The norm of the functional $f\mapsto\int_0^1 f(x)e^x\,dx$ on $L^2([0,1])$, computed without the Riesz representation theorem'
 classification:
   areas:
   - real-analysis
