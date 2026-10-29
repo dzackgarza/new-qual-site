@@ -3,7 +3,6 @@ schema: qual/card@1
 id: FD-XVMEE
 kind: definition
 title: Equicontinuous and uniformly equicontinuous families
-slogan: 'Equicontinuity uses one local delta for the whole family; uniform equicontinuity uses one delta everywhere.'
 prompts:
 - What must hold uniformly over the family for $\mcf$ to be equicontinuous at $x_0$?
 - What does it mean for a family $\mcf$ to be equicontinuous at $x_0$?
@@ -28,4 +27,8 @@ Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $\mcf$ be a family of functi
 
 ::: {.remark}
 In equicontinuity at $x_0$ the number $\delta$ depends on $\varepsilon$ and $x_0$ but not on $f\in\mcf$; in uniform equicontinuity one $\delta$ depending only on $\varepsilon$ serves every $f\in\mcf$ and every pair of points of $X$.
+:::
+
+::: {.remark}
+Equicontinuity uses one local delta for the whole family; uniform equicontinuity uses one delta everywhere.
 :::
