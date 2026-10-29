@@ -51,13 +51,13 @@ The generic points of the irreducible components are associated points, and when
 Let $f \colon X \to Y$ be a morphism with $X$ Noetherian and $Y$ integral, regular and of dimension one.
 Then $f$ is flat if and only if every associated point of $X$ maps to the generic point of $Y$.
 In particular, if $X$ is reduced, $f$ is flat if and only if every irreducible component of $X$ dominates $Y$.
-[@Har10a]
+[@Har10a, Proposition III.9.7]
 :::
 
 ::: {.proposition title="Flat limits"}
 Let $Y$ be integral, regular and of dimension one, $P \in Y$ a closed point, and $X^\circ \subseteq \PP^n_{Y \sm P}$ a closed subscheme flat over $Y \sm P$.
 Then there is a unique closed subscheme $X \subseteq \PP^n_Y$, flat over $Y$, whose restriction to $\PP^n_{Y \sm P}$ is $X^\circ$: the scheme-theoretic closure of $X^\circ$.
-[@Har10a]
+[@Har10a, Proposition III.9.8]
 :::
 
 ::: {.example title="What a flat family does not preserve"}
