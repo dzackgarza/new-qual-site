@@ -30,6 +30,7 @@ Let $n\geq 5$. Show that $A_n$ is the only proper nontrivial normal subgroup of 
 :::
 
 ::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
