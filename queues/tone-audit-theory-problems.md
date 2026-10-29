@@ -1691,7 +1691,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebra/D-CXXCG.md` | `b6d5ce997545103558046a0c152ac9085852a312` | `b6d5ce997545103558046a0c152ac9085852a312` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/D-CYAJI.md` | `0162c6d59ab0a319d9956870bba6d17e1a85c1f4` | `0162c6d59ab0a319d9956870bba6d17e1a85c1f4` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/D-D36IY.md` | `370d825c19137b7f6d693ba2daa9e13a0f0e54a3` | `370d825c19137b7f6d693ba2daa9e13a0f0e54a3` | Full file read; retained |
-| [x] | `corpus/theory/Algebra/D-D7L4X.md` | `457d931519a0662d8ef6694ac8daa909fdd2f073` | `457d931519a0662d8ef6694ac8daa909fdd2f073` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/D-D7VK2.md` | `f094d7837fca3c28ab1dfbfd6767b6bf3af6b0c7` | `f094d7837fca3c28ab1dfbfd6767b6bf3af6b0c7` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/D-DFIDP.md` | `7383e3aab580be4ab59c50cd01116cd64ec6f1e7` | `7383e3aab580be4ab59c50cd01116cd64ec6f1e7` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/D-DU4UQ.md` | `1bf24b6f1a95b8f224c6ce97586c6a8d058f10e9` | `1bf24b6f1a95b8f224c6ce97586c6a8d058f10e9` | Full file read; retained |
