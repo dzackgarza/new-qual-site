@@ -19,10 +19,14 @@ audit:
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source does not say that f is entire and asks what happens if the bound holds "on all of C", where z^n vanishes at 0; the statement adds that f is entire and asks about the bound on C minus 0.
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-30
+  note: Merged E-DDKSS (CARD-04), which states that n is a nonnegative integer; the statement now says so.
 ---
 
 ::: {.exercise}
-Let $f$ be entire.
+Let $f$ be entire and let $n\geq 0$ be an integer.
 Show that if $\abs{f(z)/z^n}$ is bounded for $\abs{z}\geq R$, then $f$ is a polynomial of degree at most $n$.
 What happens if this bound holds on all of $\CC\setminus\theset{0}$?
 :::

@@ -78,7 +78,6 @@ source:
   - id: E-CFTRQ
   - id: E-CLMEK
   - id: E-CLSFF
-  - id: E-DDKSS
   - id: E-DHPCV
   - id: E-DR5LY
   - id: E-DUK6M
