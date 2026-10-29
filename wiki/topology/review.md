@@ -9,8 +9,6 @@ order: 7
 
 [[T-HH3YP]]
 
-[[T-4RLPQ]]
-
 [[T-G4GO4]]
 
 [[FT-52GNK]]

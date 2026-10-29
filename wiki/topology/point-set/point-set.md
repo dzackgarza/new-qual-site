@@ -43,8 +43,6 @@ $f(x) = \sqrt x$ on $[0, 1]$ is uniformly continuous, being continuous on a comp
 
 [[T-OPK3N]]
 
-[[T-4RLPQ]]
-
 [[T-PCL4H]]
 
 [[T-HH3YP]]
