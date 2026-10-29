@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a [[D-GURUB|ring]].
-An element $r\in R$ is a \dfn{zero divisor} if there exists $a\in R\setminus\theset 0$ such that $ar = ra = 0$.
+An element $r\in R$ is a \dfn{zero divisor} if there exists $a\in R\setminus\theset 0$ such that $ar = 0$ or $ra = 0$.
 :::
 
 ::: {.remark}
