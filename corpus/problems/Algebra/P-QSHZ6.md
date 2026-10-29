@@ -19,72 +19,49 @@ Classify the prime elements of the Gaussian integers $\ZZ[i]$, up to multiplicat
 :::
 
 ::: {.solution}
-The units of $\ZZ[i]$ are
-\[
-\{\pm1,\pm i\}.
-\]
-Up to these units, the Gaussian primes are exactly the following.
+Write $N(a+bi)\coloneqq a^2+b^2$; it is multiplicative, and $N(\alpha)=1$ exactly when $\alpha$ is a unit, so the units are $\pm1,\pm i$. The ring $\ZZ[i]$ is Euclidean for $N$, so its prime elements are its irreducible elements.
 
 ::: pf
 
-::: pf-step
-
-The ramified prime above $2$:
-\[
-1+i,
-\]
-with
-\[
-2=-i(1+i)^2.
-\]
-
-:::
-
-::: pf-step
-
-Rational primes $p\equiv3\pmod4$.
+::: {.pf-step #prime-norm}
+If $N(\pi)$ is a rational prime, then $\pi$ is a Gaussian prime.
 
 ::: pf-proof
-
-Such a prime remains irreducible in $\ZZ[i]$. If it factored nontrivially, taking norms would write
-\[
-p^2=N(\alpha)N(\beta)
-\]
-with both norms greater than $1$, forcing one factor to have norm $p$. But
-\[
-a^2+b^2=p
-\]
-has no solution when $p\equiv3\pmod4$.
-
+If $\pi=\alpha\beta$, then $N(\alpha)N(\beta)$ is prime, so one of $N(\alpha),N(\beta)$ is $1$ and that factor is a unit.
 :::
 
 :::
 
-::: pf-step
-
-Gaussian integers $a+bi$ with both coordinates nonzero and
-\[
-a^2+b^2=p
-\]
-a rational prime.
+::: {.pf-step #inert}
+A rational prime $p\equiv3\pmod4$ is a Gaussian prime.
 
 ::: pf-proof
-
-Their norm is the rational prime $p$. Since the norm is multiplicative, any factorization would force one factor to have norm $1$, hence be a unit. Thus $a+bi$ is prime.
-
+A nontrivial factorization $p=\alpha\beta$ gives $N(\alpha)N(\beta)=p^2$ with both norms greater than $1$, so $N(\alpha)=a^2+b^2=p$. A sum of two squares is $0$, $1$, or $2$ modulo $4$, never $3$.
 :::
 
 :::
 
+::: {.pf-step #split}
+A rational prime $p\not\equiv3\pmod4$ is not a Gaussian prime.
+
+::: pf-proof
+$2=-i(1+i)^2$. For $p\equiv1\pmod4$, Fermat's two-squares theorem gives $p=a^2+b^2=(a+bi)(a-bi)$ with $N(a\pm bi)=p>1$.
 :::
 
-For rational primes $p\equiv1\pmod4$, Fermat's two-squares theorem gives
-\[
-p=a^2+b^2=(a+bi)(a-bi),
-\]
-so $p$ itself is not Gaussian prime; the factors $a\pm bi$ are.
+:::
 
-Equivalently, a nonunit $a+bi$ is Gaussian prime iff either
-- one of $a,b$ is zero and the absolute value of the other is a rational prime congruent to $3\pmod4$, or
-- both are nonzero and $a^2+b^2$ is a rational prime.
+::: {.pf-step #exhaust}
+Every Gaussian prime $\pi$ is a unit multiple of a Gaussian integer of rational prime norm or of a rational prime $p\equiv3\pmod4$.
+
+::: pf-proof
+The rational integer $N(\pi)=\pi\bar\pi>1$ factors into rational primes, so the prime $\pi$ divides some rational prime $p$. Then $N(\pi)$ divides $N(p)=p^2$, so $N(\pi)\in\{p,p^2\}$. If $N(\pi)=p^2$, then $p=\pi u$ with $N(u)=1$, so $\pi$ is associate to $p$, and $p\equiv3\pmod4$ by step [](#split){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+By steps [](#prime-norm){.pf-ref}, [](#inert){.pf-ref} and [](#exhaust){.pf-ref}, up to units the Gaussian primes are exactly $1+i$; the elements $a\pm bi$ with $a^2+b^2=p$ for each rational prime $p\equiv1\pmod4$; and the rational primes $p\equiv3\pmod4$. Equivalently, a nonunit $a+bi$ is prime if and only if either $a^2+b^2$ is a rational prime, or one of $a,b$ is $0$ and the absolute value of the other is a rational prime congruent to $3$ modulo $4$.
+:::
+
+:::
 :::
