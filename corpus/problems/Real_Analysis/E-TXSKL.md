@@ -18,8 +18,9 @@ review: draft
 ::: {.exercise}
 Compute the following limits:
 
-- $\lim_{n\to\infty} \sum_{k\geq 1} {1\over k^2} \sin^n(k)$
-- $\lim_{n\to\infty} \sum_{k\geq 1} {1\over k} e^{-k/n}$
+(a) $\lim_{n\to\infty} \sum_{k\geq 1} {1\over k^2} \sin^n(k)$
+
+(b) $\lim_{n\to\infty} \sum_{k\geq 1} {1\over k} e^{-k/n}$
 :::
 
 ::: {.solution}
