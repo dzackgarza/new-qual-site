@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-02
 kind: problem
-title: Maxim algebraic topology 4.2
+title: The Freudenthal suspension theorem
 classification:
   areas: [topology]
   topics: []
