@@ -19,13 +19,10 @@ review: draft
 ::: {.proposition}
 Let $f_n,f\colon\RR\to\RR$ be Lebesgue measurable for $n\geq1$, and consider the following modes of convergence of $(f_n)$ to $f$:
 
-(U) $f_n\to f$ [[D-YZC3C|uniformly]] on $\RR$;
-
-(P) $f_n\to f$ [[D-IYDZU|pointwise]] on $\RR$, that is, $f_n(x)\to f(x)$ for every $x\in\RR$;
-
-(AE) $f_n(x)\to f(x)$ for almost every $x\in\RR$;
-
-(N) $f_n,f\in L^1(\RR)$ and $\norm{f_n-f}_1=\int_\RR\abs{f_n-f}\to0$.
+- **(U)** $f_n\to f$ [[D-YZC3C|uniformly]] on $\RR$;
+- **(P)** $f_n\to f$ [[D-IYDZU|pointwise]] on $\RR$, that is, $f_n(x)\to f(x)$ for every $x\in\RR$;
+- **(AE)** $f_n(x)\to f(x)$ for almost every $x\in\RR$;
+- **(N)** $f_n,f\in L^1(\RR)$ and $\norm{f_n-f}_1=\int_\RR\abs{f_n-f}\to0$.
 
 Then (U) implies (P), and (P) implies (AE).
 Neither implication reverses, none of (U), (P), (AE) implies (N), and (N) implies none of (U), (P), (AE).
