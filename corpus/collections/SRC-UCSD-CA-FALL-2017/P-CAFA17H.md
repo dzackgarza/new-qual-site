@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17H
 kind: problem
-title: "A harmonic function with polynomial growth on $\mathbb C$ is a polynomial"
+title: 'A harmonic function with polynomial growth on $\mathbb C$ is a polynomial'
 classification:
   areas:
   - complex-analysis

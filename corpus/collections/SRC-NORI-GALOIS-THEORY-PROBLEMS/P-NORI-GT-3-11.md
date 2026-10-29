@@ -20,7 +20,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The source printed R = {m/2^n : m >= 0, n in Z}, which is not a ring. The statement now defines R = {m/2^n : m in Z, n >= 0} = Z[1/2], the ring the hint uses.
+  note: 'The source printed R = {m/2^n : m >= 0, n in Z}, which is not a ring. The statement now defines R = {m/2^n : m in Z, n >= 0} = Z[1/2], the ring the hint uses.'
 ---
 
 ::: {.problem}
