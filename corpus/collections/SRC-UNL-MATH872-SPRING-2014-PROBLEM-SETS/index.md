@@ -24,7 +24,8 @@ source:
     comment: Assignment 6.A.4
   - id: P-UNL872S14-6-A-5
     comment: Assignment 6.A.5
-  - P-UNL872S14-6-B-1
+  - id: P-UNL872S14-6-B-1
+    comment: Assignment 6.B.1
   - P-UNL872S14-6-B-2
   - P-UNL872S14-6-B-3
   - P-UNL872S14-PP-1
