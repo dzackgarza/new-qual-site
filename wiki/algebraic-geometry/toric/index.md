@@ -9,7 +9,7 @@ topics:
 
 # Toric varieties
 
-Fans, the orbit-cone correspondence, and toric resolution of singularities.
+This chapter covers fans, the orbit-cone correspondence, and toric resolution of singularities.
 
 ## Syllabus
 
