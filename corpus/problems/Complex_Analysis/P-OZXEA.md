@@ -19,96 +19,45 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f(z)$ is entire and 
-\[
-\lim_{z\to\infty} {f(z) \over z} = 0
-.\]
+Suppose $f(z)$ is entire and
+$$
+\lim_{z\to\infty} {f(z) \over z} = 0.
+$$
 
 Show that $f(z)$ is a constant.
 :::
 
 ::: {.solution}
+Let $g(z)\definedas\frac{f(z)-f(0)}{z}$ for $z\neq0$ and $g(0)\definedas f'(0)$.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-$f(z)/z\to0$ as $z\to\infty$ implies $f$ bounded: for $|z|>R$, $|f(z)|\le|z|$.
+::: {.pf-step #entire}
+$g$ is entire.
 
 ::: pf-proof
+$g$ is holomorphic on $\CC\setminus\theset{0}$, and continuous at $0$ by the definition of $f'(0)$, so the singularity at $0$ is removable.
+:::
 
-limit.
+:::
 
+::: {.pf-step #vanishes}
+$g(z)\to0$ as $z\to\infty$.
+
+::: pf-proof
+$g(z)=\frac{f(z)}{z}-\frac{f(0)}{z}$, and both terms tend to $0$.
 :::
 
 :::
 
 ::: pf-step
-
-Cauchy estimate for $f'$: $|f'(0)|\le \max_{|z|=R}|f(z)|/R$.
-
-::: pf-proof
-
-Cauchy.
-
-:::
-
-:::
-
-::: pf-step
-
-For large $R$, $\max_{|z|=R}|f(z)|\le2R$, so $|f'(0)|\le2$.
+$f$ is constant.
 
 ::: pf-proof
-
-Step [](#s1){.pf-ref}.
-
+By step [](#vanishes){.pf-ref}, $\abs{g}\le1$ outside some disk, and $g$ is bounded on that compact disk by continuity, so $g$ is a bounded entire function by step [](#entire){.pf-ref}. By Liouville's theorem it is constant, and by step [](#vanishes){.pf-ref} the constant is $0$. Hence $f(z)=f(0)$ for all $z$.
 :::
 
 :::
 
-::: pf-step
-
-More generally $f(z)-f(0)$ satisfies same condition, and $g(z)=(f(z)-f(0))/z$ entire? Actually consider $g(z)=(f(z)-f(0))/z$ entire (removable at $0$).
-
-::: pf-proof
-
-$g$ entire.
-
 :::
-
-:::
-
-::: {.pf-step #s5}
-
-$g(z)\to0$ as $z\to\infty$ (since $f(z)/z\to0$), so $g$ bounded entire, hence constant $0$ by Liouville.
-
-::: pf-proof
-
-$g$ bounded.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $f(z)=f(0)$ constant.
-
-::: pf-proof
-
-Step [](#s5){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
 :::
