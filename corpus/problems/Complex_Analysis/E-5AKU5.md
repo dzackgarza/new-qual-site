@@ -13,15 +13,19 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source names no domain; the statement places the functions on an open set Omega.
 ---
 
 ::: {.exercise}
-Show that if $f_n\to f$ locally uniformly and each $f_n$ is holomorphic then $f$ is holomorphic.
+Let $\Omega\subseteq\CC$ be open. Show that if $f_n\to f$ locally uniformly on $\Omega$ and each $f_n$ is holomorphic on $\Omega$, then $f$ is holomorphic on $\Omega$.
 
 :::
 
 ::: {.solution}
-Let $\Omega$ be the open set on which the $f_n$ are holomorphic.
 
 ::: pf
 
