@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-07
 kind: problem
-title: Maxim algebraic topology 6.7
+title: $\CP^4$ does not embed smoothly in $\RR^{11}$
 classification:
   areas: [topology]
   topics: []
