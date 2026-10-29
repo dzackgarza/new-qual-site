@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-01
 kind: problem
-title: Maxim algebraic topology 1.1
+title: A connected manifold bounding a compact manifold has even Euler characteristic
 classification:
   areas: [topology]
   topics: []
