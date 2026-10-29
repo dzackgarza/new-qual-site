@@ -23,25 +23,31 @@ Show that $f'=0$ on $\Omega$, and conclude by connectedness.
 :::
 
 ::: {.solution}
-\envlist
+Write $f = u + iv$, so that $\bar f = u - iv$.
 
-- Write $f = u + iv$. 
-  Since $f$ is analytic, it satisfies CR, so 
-  \[
-  u_x = v_y && u_y = -v_x
-  .\]
+::: pf
 
-- Similarly write $\bar f = U + iV$ where $U = u$ and $V = -v$.
-  Since $\bar f$ is analytic, it also satisfies CR , so
-\[
-U_x = V_y && U_y = -V_x \\ \\
-\implies u_x = -v_y && u_y = v_x
-.\]
+::: {.pf-step #partials}
+$u_x=u_y=v_x=v_y=0$ on $\Omega$.
 
-- Add the LHS of these two equations to get $2u_x = 0 \implies u_x = 0$.
-  Subtract the right-hand side to get $-2v_x = 0 \implies v_x = 0$
+::: pf-proof
+The Cauchy--Riemann equations for $f$ give $u_x = v_y$ and $u_y = -v_x$.
+The Cauchy--Riemann equations for $\bar f=u+i(-v)$ give $u_x = -v_y$ and $u_y = v_x$.
+Adding and subtracting the two pairs gives $u_x=v_y=0$ and $u_y=v_x=0$.
+:::
 
-- Since $f$ is analytic, it is holomorphic, so $f'$ exists and satisfies $f' = u_x + iv_x$.
-  But by above, this is zero.
-- Since $\Omega$ is connected and $f'=0$ on $\Omega$, $f$ is constant.
+:::
+
+::: pf-step
+$f$ is constant on $\Omega$.
+
+::: pf-proof
+Since $f$ is holomorphic, $f' = u_x + iv_x$, which vanishes by step [](#partials){.pf-ref}.
+A holomorphic function with zero derivative on the connected open set $\Omega$ is constant.
+:::
+
+:::
+
+:::
+
 :::
