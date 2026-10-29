@@ -15,13 +15,6 @@ Galois theory exercises with solutions: [chapter 4](https://feog.github.io/chap4
 
 ## Degree bounds
 
-- $\size{G} = [\SF(f):\QQ]$.
-
-- If $f$ is irreducible, $G$ acts transitively on the roots, so by orbit-stabilizer $n = \size{\Orb(r_1)} = [G:\Stab_G(r_1)]$ divides $\size G$, and
-  $$
-  n\divides \size G \divides n!.
-  $$
-
 - For each root $r_i$, $[\QQ(r_i):\QQ]$ divides $[\SF(f):\QQ]$.
 
 [[T-AILFB]]
@@ -52,7 +45,7 @@ is a transitive subgroup of $S_8$ via its regular action, and it is not isomorph
 
 [[D-W3DSO]]
 
-For monic $f$, the discriminant is $\Delta_f = \prod_{i<j}(r_i - r_j)^2$, a product of $n(n-1)/2$ factors, and $\Delta_f\neq 0$ because $f$ is separable.
+Since $f$ is separable, $\Delta_f\neq 0$.
 Then
 $$
 G \subseteq A_n \iff \sqrt{\Delta_f} \in \QQ.

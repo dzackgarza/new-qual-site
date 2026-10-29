@@ -17,10 +17,6 @@ The fields $\QQ(\sqrt d)$ for squarefree integers $d\neq1$ are pairwise distinct
 
 ## Cubics
 
-For an irreducible cubic $f\in\QQ[x]$ with discriminant $\Delta$, the Galois group is $S_3$ or $A_3 \cong C_3$:
-$$
-G = A_3 \text{ if } \Delta \text{ is a square in } \QQ, \qquad G = S_3 \text{ otherwise}.
-$$
 For a cubic $t^3+pt+q$, $\Delta = -4p^3-27q^2$.
 
 [[PR-XPDHE]]

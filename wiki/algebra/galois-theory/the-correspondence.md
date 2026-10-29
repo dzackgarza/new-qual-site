@@ -28,41 +28,13 @@ topics:
 
 ## Criteria for Galois extensions
 
-::: {.fact title="Criteria"}
-**Irreducibility of $f\in\QQ[x]$.**
+**Irreducibility of $f\in\QQ[x]$.** Apply [[T-CF6S3|Eisenstein's criterion]] to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
 
-- Eisenstein's criterion, applied to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$.
+**Separability.** [[PR-TLBPS|The derivative detects separability]]; [[PR-25FLW|algebraic extensions of perfect fields are separable]]; [[PR-3VQBI|characterizations of separability for finite extensions]]; separable extensions form a [[D-JMATC|distinguished class]].
 
-- If $f\in\ZZ[x]$ has leading coefficient not divisible by a prime $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$.
+**Normality.** [[PR-TZN4M|Finite normal extensions are splitting fields]].
 
-- A polynomial of degree $2$ or $3$ over a field is irreducible if and only if it has no root in the field.
-
-**Separability of $f$.**
-
-- $f$ is separable if and only if $\gcd(f,f')=1$.
-
-- Over a perfect field, every irreducible polynomial is separable.
-
-- An irreducible $f$ is separable if and only if $f' \neq 0$.
-
-**Separability of an extension.**
-
-- The splitting field of a separable polynomial is separable and normal, hence Galois.
-
-- Every algebraic extension of a perfect field is separable; in characteristic $0$ a finite extension is Galois if and only if it is normal.
-
-- A finite extension $L/k$ is separable if and only if its separable degree $[L:k]_s$ equals $[L:k]$, and separable extensions form a distinguished class.
-
-**Normality.**
-
-- A finite extension $L/k$ is normal if and only if $L$ is the splitting field over $k$ of some polynomial.
-
-**Galois.**
-
-- A finite extension is Galois if and only if it is normal and separable, if and only if it is the splitting field of a separable polynomial.
-
-- Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield.
-:::
+**Galois.** [[D-5JYEI|Galois extension]]; [[PR-ZCKLJ|separable splitting fields are Galois]]. Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield.
 
 ## Irreducibility
 
