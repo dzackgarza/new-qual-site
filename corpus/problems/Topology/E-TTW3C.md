@@ -23,8 +23,6 @@ Show that if $f: A\to B$ is a continuous map between metric spaces and $K\subset
 :::
 
 ::: {.solution}
-**Goal:** Show that if $f: A \to B$ is a continuous map between metric spaces and $K \subset A$ is compact, then the restriction $\restrictionof{f}{K}$ is uniformly continuous.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -81,7 +79,7 @@ $f(x_{n_j}) \to f(x)$ and $f(y_{n_j}) \to f(x)$.
 
 ::: pf-proof
 
-Continuity of $f$ at $x$, applied to the sequences steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+This follows from continuity of $f$ at $x$, applied to the convergent sequences of steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 
@@ -93,7 +91,7 @@ $d(f(x_{n_j}), f(y_{n_j})) \to 0$.
 
 ::: pf-proof
 
-Triangle inequality: $d(f(x_{n_j}), f(y_{n_j})) \leq d(f(x_{n_j}), f(x)) + d(f(x), f(y_{n_j})) \to 0$ by step [](#s5){.pf-ref}.
+By the triangle inequality, $d(f(x_{n_j}), f(y_{n_j})) \leq d(f(x_{n_j}), f(x)) + d(f(x), f(y_{n_j})) \to 0$ by step [](#s5){.pf-ref}.
 
 :::
 
@@ -101,19 +99,13 @@ Triangle inequality: $d(f(x_{n_j}), f(y_{n_j})) \leq d(f(x_{n_j}), f(x)) + d(f(x
 
 ::: pf-step
 
-Contradiction.
+$\restrictionof{f}{K}$ is uniformly continuous.
 
 ::: pf-proof
 
-Step [](#s6){.pf-ref} contradicts $d(f(x_n), f(y_n)) \geq \varepsilon > 0$ from step [](#s1){.pf-ref}.
+Step [](#s6){.pf-ref} contradicts $d(f(x_n), f(y_n)) \geq \varepsilon > 0$ from step [](#s1){.pf-ref}, so the assumption of step [](#s1){.pf-ref} is false.
 
 :::
-
-:::
-
-::: pf-qed
-
-The assumption step [](#s1){.pf-ref} leads to a contradiction, so $\restrictionof{f}{K}$ is uniformly continuous.
 
 :::
 
