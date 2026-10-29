@@ -46,7 +46,12 @@ $$
 
 ::: pf
 
-::: {.pf-step #f-measurable-implies-a-measurable}
+::: pf-step
+(1) $f$ is measurable if and only if $\mathcal A$ is measurable.
+
+::: pf-proof
+
+::: pf-step
 If $f$ is measurable, then $\mathcal A$ is measurable.
 
 ::: pf-proof
@@ -82,11 +87,22 @@ Thus $f$ is measurable.
 
 :::
 
-::: {.pf-step #measure-of-subgraph}
-If $f$ is measurable, then $m_{n+1}(\mathcal A)=\int_{\RR^n}f(x)\,dx$.
+:::
+
+:::
+
+::: pf-step
+(2) If $f$ is measurable, then $\boxed{m_{n+1}(\mathcal A)=\int_{\RR^n}f(x)\,dx=\int_0^\infty m_n(\theset{x \suchthat f(x)\ge t})\,dt.}$
 
 ::: pf-proof
-By step [](#f-measurable-implies-a-measurable){.pf-ref}, $\mathcal A$ is measurable, so integrating first in $t$ and using the sections of step [](#a-measurable-implies-f-measurable){.pf-ref}, Tonelli gives
+
+By (1), $\mathcal A$ is measurable, so Tonelli's theorem applies to $\mathbf1_{\mathcal A}$ in either order.
+
+::: pf-step
+$m_{n+1}(\mathcal A)=\int_{\RR^n}f(x)\,dx$.
+
+::: pf-proof
+Integrating first in $t$ and using the sections computed in step [](#a-measurable-implies-f-measurable){.pf-ref},
 $$
 m_{n+1}(\mathcal A)
 =\int_{\RR^n}\qty(\int_{\RR}\mathbf1_{\mathcal A}(x,t)\,dt)dx
@@ -96,8 +112,8 @@ $$
 
 :::
 
-::: {.pf-step #layer-cake-formula}
-If $f$ is measurable, then $m_{n+1}(\mathcal A)=\int_0^\infty m_n(\theset{x \suchthat f(x)\ge t})\,dt$.
+::: pf-step
+$m_{n+1}(\mathcal A)=\int_0^\infty m_n(\theset{x \suchthat f(x)\ge t})\,dt$.
 
 ::: pf-proof
 For $t\ge0$, the horizontal section is
@@ -107,7 +123,7 @@ $$
 =\theset{x \suchthat f(x)\ge t},
 $$
 and for $t<0$ it is empty.
-Integrating first in $x$, Tonelli gives
+Integrating first in $x$,
 $$
 m_{n+1}(\mathcal A)
 =\int_0^\infty\qty(\int_{\RR^n}\mathbf1_{\mathcal A}(x,t)\,dx)dt
@@ -117,14 +133,8 @@ $$
 
 :::
 
-::: pf-qed
-By steps [](#f-measurable-implies-a-measurable){.pf-ref} and [](#a-measurable-implies-f-measurable){.pf-ref}, $f$ is measurable if and only if $\mathcal A$ is, and by steps [](#measure-of-subgraph){.pf-ref} and [](#layer-cake-formula){.pf-ref}, for measurable $f$,
-$$
-\boxed{
-m_{n+1}(\mathcal A)
-=\int_{\RR^n}f(x)\,dx
-=\int_0^\infty m_n(\theset{f\ge t})\,dt.}
-$$
+:::
+
 :::
 
 :::
