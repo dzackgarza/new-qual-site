@@ -25,50 +25,54 @@ Show that if the two squares in this diagram are cartesian, then the outer squar
 :::
 
 ::: {.solution}
-- We must show that given two maps $R\to V$ and $R\to Y$ such that $(V\to Z) \circ (R\to V) = (Y\to Z) \circ (R\to Y)$, there is a unique map $R\to U$ giving a commuting diagram:
+Name the maps $p : U\to V$, $q : U\to W$, $v : V\to X$, $w : W\to X$, $r : W\to Y$, $x : X\to Z$, and $y : Y\to Z$.
+The squares commute, so $vp = wq$ and $xw = yr$.
+The outer square has sides $xv : V\to Z$ and $rq : U\to Y$, and it commutes because $xvp = xwq = yrq$.
+To show it is cartesian, fix an object $T$ and maps $\alpha : T\to V$ and $\beta : T\to Y$ with $xv\alpha = y\beta$.
 
-\begin{tikzcd}
-	U\ar[drr, bend left] \ar[rdd, bend right] & & \\
-	& R\ar[ul, dotted, "\exists !\, ?"] \ar[r]\ar[d] & V\ar[d] \\
-	& Y \ar[r] & Z
-\end{tikzcd}
+::: pf
 
-- Applying the bottom square:
+::: {.pf-step #bottom}
+There is a unique $\gamma : T\to W$ with $w\gamma = v\alpha$ and $r\gamma = \beta$.
 
-  - We need maps $R\to X$ and $R\to Y$.
-
-  - We are given a map $R\to Y$ by assumption.
-
-  - We build a map $R\to X$ as $(V\to X) \circ (R\to V)$.
-
-  - We then get a map $R\to W$:
-
-\begin{tikzcd}
-	W\ar[drr, bend left] \ar[rdd, bend right] & & \\
-	& R\ar[ul, dotted, "\exists !"] \ar[r]\ar[d] & X\ar[d] \\
-	& Y \ar[r] & Z
-\end{tikzcd}
-
-- Applying the top square:
-
-  - We have a map $R\to V$ by assumption.
-
-  - We have a map $R\to W$ from the previous step.
-
-  - We have maps $V\to X$ and $W\to X$ from the top square.
-
-  - We thus obtain
-
-\begin{tikzcd}
-	U\ar[drr, bend left] \ar[rdd, bend right] & & \\
-	& R\ar[ul, dotted, "\exists !"] \ar[r]\ar[d] & V\ar[d] \\
-	& W \ar[r] & X
-\end{tikzcd}
+::: pf-proof
+The maps $v\alpha : T\to X$ and $\beta : T\to Y$ satisfy $x(v\alpha) = y\beta$, so the bottom square, which is cartesian, gives a unique such $\gamma$.
 :::
 
-::: {.remark}
-Erratum: the argument above produces a map $R \to U$ but never proves it unique, and it omits the compatibility the top square needs.
+:::
 
-- The top square applies to $R\to W$ and $R\to V$ only if their composites to $X$ agree; they do, because $R\to W$ was built so that its composite to $X$ is $(V\to X)\circ(R\to V)$. The composite $R\to U\to W\to Y$ is then the given $R\to Y$.
-- Uniqueness: if $u, u' : R\to U$ both commute with the maps to $V$ and $Y$, then their composites to $W$ have the same composites to $X$ and to $Y$, so they are equal by uniqueness in the bottom square. Then $u$ and $u'$ have the same composites to $V$ and $W$, so $u = u'$ by uniqueness in the top square.
+::: {.pf-step #top}
+There is a unique $\delta : T\to U$ with $p\delta = \alpha$ and $q\delta = \gamma$.
+
+::: pf-proof
+The maps $\alpha : T\to V$ and $\gamma : T\to W$ satisfy $v\alpha = w\gamma$ by step [](#bottom){.pf-ref}, so the top square, which is cartesian, gives a unique such $\delta$.
+:::
+
+:::
+
+::: {.pf-step #existence}
+$\delta$ satisfies $p\delta = \alpha$ and $rq\delta = \beta$.
+
+::: pf-proof
+By steps [](#top){.pf-ref} and [](#bottom){.pf-ref}, $p\delta = \alpha$ and $rq\delta = r\gamma = \beta$.
+:::
+
+:::
+
+::: {.pf-step #uniqueness}
+If $\delta' : T\to U$ satisfies $p\delta' = \alpha$ and $rq\delta' = \beta$, then $\delta' = \delta$.
+
+::: pf-proof
+The map $q\delta' : T\to W$ satisfies $w(q\delta') = vp\delta' = v\alpha$ and $r(q\delta') = \beta$, so $q\delta' = \gamma$ by the uniqueness in step [](#bottom){.pf-ref}.
+Then $p\delta' = \alpha$ and $q\delta' = \gamma$, so $\delta' = \delta$ by the uniqueness in step [](#top){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+For every $T$ and every pair $\alpha, \beta$ with $xv\alpha = y\beta$, steps [](#existence){.pf-ref} and [](#uniqueness){.pf-ref} give exactly one $\delta : T\to U$ with $p\delta = \alpha$ and $rq\delta = \beta$.
+This is the universal property of $U = V\times_Z Y$, so the outer square is cartesian.
+:::
+
+:::
 :::
