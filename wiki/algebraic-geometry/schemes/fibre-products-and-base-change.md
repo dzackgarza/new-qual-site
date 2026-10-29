@@ -9,33 +9,26 @@ topics:
 
 # Fibre products and base change
 
-For closed subschemes $Y,Z\subseteq X$, $Y\times_XZ$ is the scheme-theoretic intersection; for $f\colon X\to Y$ and $y\in Y$, $X\times_Y\Spec\kappa(y)$ is the fibre over $y$; for a field extension $L/k$ and a $k$-scheme $X$, $X\times_{\Spec k}\Spec L$ is the base change $X_L$.
+For closed subschemes $Y,Z\subseteq X$, $Y\times_XZ$ is the scheme-theoretic intersection.
 
 [[D-SCHFPR]]
-
-On affine schemes the construction is computed by a tensor product and then glued.
-The underlying set of a scheme-theoretic fibre product need not be the fibre product of the underlying sets: $\Spec\CC\times_{\Spec\RR}\Spec\CC=\Spec(\CC\otimes_\RR\CC)\cong\Spec(\CC\times\CC)$ has two points.
 
 ## Fibres
 
 [[PR-SCHFIB]]
 
-For $\Spec k[x]\to\Spec k[t]$, $t\mapsto x^2$, with $\operatorname{char}k\neq2$, the fibre over $t=0$ is the double point $\Spec k[x]/(x^2)$.
 For $\Spec\ZZ[i]\to\Spec\ZZ$, the fibre over $(3)$ is $\Spec\FF_9$, one point whose residue field has degree $2$ over $\FF_3$.
 
 ## Base change
 
 [[D-SCHBC]]
 
-A $k$-scheme $X$ is geometrically integral when $X_{\bar k}$ is integral; the fibre over $y$ is the base change along $\Spec\kappa(y)\to Y$; a scheme over the fraction field $K$ of a ring $R$ spreads out over $R$ when it is the base change of an $R$-scheme along $\Spec K\to\Spec R$.
+A scheme over the fraction field $K$ of a ring $R$ spreads out over $R$ when it is the base change of an $R$-scheme along $\Spec K\to\Spec R$.
 Integrality is not stable under base change: $\Spec\CC$ is an integral $\RR$-scheme, and its base change $\Spec(\CC\otimes_\RR\CC)$ is not.
 
 ## The functor of points
 
 [[PR-SCHFOP]]
-
-The universal property in the definition of the fibre product is a statement about $\Hom(T, -)$ for all $T$, which is to say it is a statement about the functor of points.
-Maps $\Spec K\to X$ are $K$-points, while maps from the dual numbers lifting a $K$-point encode tangent vectors; moduli problems use the same functorial dependence on a test scheme $T$.
 
 ## Fibres of families
 
