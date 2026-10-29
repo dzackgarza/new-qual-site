@@ -16,26 +16,41 @@ review: draft
 
 ::: {.problem}
 Let $L/K$ be a finite Galois extension with
-\[
-\operatorname{Gal}(L/K)\cong C_{42}.
-\]
+$$\Gal(L/K)\cong C_{42}.$$
 List the proper nontrivial intermediate fields and their degrees over $K$.
 :::
 
 ::: {.solution}
-By the Galois correspondence, intermediate fields correspond bijectively and inclusion-reversingly to subgroups of $C_{42}$.
 
-A cyclic group has exactly one subgroup of order $d$ for every divisor $d\mid42$. The proper nontrivial subgroup orders are
-\[
-2,3,6,7,14,21.
-\]
-If a subgroup has order $d$, its fixed field $E$ satisfies
-\[
-[E:K]=[C_{42}:H]=\frac{42}{d}.
-\]
-Therefore there is exactly one intermediate field of each degree
-\[
-21,14,7,6,3,2.
-\]
-Equivalently, for every proper nontrivial divisor $e$ of $42$, there is a unique intermediate extension of degree $e$ over $K$.
+::: pf
+
+::: {.pf-step #correspondence}
+An intermediate field $E$ with $K\subsetneq E\subsetneq L$ corresponds to a proper nontrivial subgroup $H\le C_{42}$, namely $H=\Gal(L/E)$, and $[E:K]=[C_{42}:H]=42/\abs{H}$.
+
+::: pf-proof
+This is the fundamental theorem of Galois theory: $E\mapsto\Gal(L/E)$ is an inclusion-reversing bijection from intermediate fields to subgroups, and $[L:E]=\abs{\Gal(L/E)}$, so $[E:K]=[L:K]/[L:E]=42/\abs{H}$.
+:::
+
+:::
+
+::: {.pf-step #subgroups}
+$C_{42}$ has exactly one subgroup of each order $d\mid 42$, and the proper nontrivial orders are $d=2,3,6,7,14,21$.
+
+::: pf-proof
+A cyclic group of order $n$ has exactly one subgroup of order $d$ for each divisor $d$ of $n$. The divisors of $42=2\cdot3\cdot7$ other than $1$ and $42$ are $2,3,6,7,14,21$.
+:::
+
+:::
+
+::: pf-step
+There is $\boxed{\text{exactly one intermediate field of each degree } 2,3,6,7,14,21}$ over $K$, and no others.
+
+::: pf-proof
+By step [](#subgroups){.pf-ref} the proper nontrivial subgroups have orders $2,3,6,7,14,21$, one of each. By step [](#correspondence){.pf-ref} their fixed fields have degrees $21,14,7,6,3,2$ over $K$, one of each.
+:::
+
+:::
+
+:::
+
 :::
