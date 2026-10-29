@@ -23,45 +23,47 @@ audit:
 ---
 
 ::: {.exercise}
-1. Define a perfect field.
-2. Give an imperfect field and an inseparable polynomial over it.
-3. Prove that every finite field is perfect.
+(a) Define a perfect field.
+
+(b) Give an imperfect field and an inseparable polynomial over it.
+
+(c) Prove that every finite field is perfect.
 :::
 
 ::: {.solution}
-A field $K$ is \dfn{perfect} if every irreducible polynomial over $K$ is separable. In characteristic $p>0$, this is equivalent to surjectivity of Frobenius
-\[
+(a) A field $K$ is \dfn{perfect} if every irreducible polynomial over $K$ is separable. In characteristic $p>0$, this is equivalent to surjectivity of the Frobenius map
+$$
 F:K\to K,\qquad x\mapsto x^p.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
-Every finite field is perfect.
+(b) The field $\FF_p(t)$ is imperfect, and $x^p-t$ is an inseparable irreducible polynomial over it.
 
 ::: pf-proof
-Let $K=\mathbb F_{p^m}$. Frobenius is injective because $x^p=0$ implies $x=0$. Since $K$ is finite, every injective self-map is surjective. Hence $K^p=K$, so $K$ is perfect.
+Its $p$th powers form
+$$
+\FF_p(t)^p=\FF_p(t^p),
+$$
+which does not contain $t$. Thus $t$ has no $p$th root in $\FF_p(t)$. The polynomial
+$$
+x^p-t
+$$
+is irreducible over $\FF_p(t)$ by Eisenstein's criterion at the prime $t$ of $\FF_p[t]$ and Gauss's lemma, while its derivative is zero. In an algebraic closure it is
+$$
+(x-t^{1/p})^p,
+$$
+so it is inseparable. Hence $\FF_p(t)$ is not perfect.
 :::
 
 :::
 
 ::: pf-step
-The field $\mathbb F_p(t)$ is imperfect.
+(c) Every finite field is perfect.
 
 ::: pf-proof
-Its $p$th powers form
-\[
-\mathbb F_p(t)^p=\mathbb F_p(t^p),
-\]
-which does not contain $t$. Thus $t$ has no $p$th root in $\mathbb F_p(t)$. The polynomial
-\[
-x^p-t
-\]
-is irreducible over $\mathbb F_p(t)$ (for example by Eisenstein at $t$ in $\mathbb F_p[t]$ and Gauss's lemma), while its derivative is zero. In an algebraic closure it is
-\[
-(x-t^{1/p})^p,
-\]
-so it is inseparable. Hence $\mathbb F_p(t)$ is not perfect.
+Let $K=\FF_{p^m}$. Frobenius is injective because $x^p=0$ implies $x=0$. Since $K$ is finite, every injective self-map is surjective. Hence $K^p=K$, so $K$ is perfect.
 :::
 
 :::
