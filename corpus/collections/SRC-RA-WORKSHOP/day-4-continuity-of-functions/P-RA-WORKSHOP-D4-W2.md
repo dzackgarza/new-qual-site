@@ -21,7 +21,7 @@ audit:
 :::
 
 ::: {.solution}
-Set $g:[0,1]\to\mathbb R$ by $g(t)=f(t)-t$.
+Set $g:[0,1]\to\RR$ by $g(t)=f(t)-t$.
 
 ::: pf
 
@@ -37,7 +37,7 @@ The difference of the continuous functions $f$ and $t\mapsto t$ is continuous. S
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 There exists $x\in[0,1]$ such that $f(x)=x$.
 
@@ -46,12 +46,6 @@ There exists $x\in[0,1]$ such that $f(x)=x$.
 By step [](#s1){.pf-ref}, zero lies between the endpoint values $g(0)$ and $g(1)$. The intermediate value theorem gives $x\in[0,1]$ with $g(x)=0$. By definition of $g$, this is equivalent to $f(x)=x$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} establishes the required fixed point.
 
 :::
 
