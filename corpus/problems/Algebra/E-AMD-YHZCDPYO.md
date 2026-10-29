@@ -34,15 +34,15 @@ One has $\operatorname{rad}(IJ)\subseteq\operatorname{rad}(I)\cap\operatorname{r
 
 ::: pf-proof
 Since $IJ\subseteq I$ and $IJ\subseteq J$, monotonicity of radicals gives
-\[
+$$
 \operatorname{rad}(IJ)\subseteq\operatorname{rad}(I),
 \qquad
 \operatorname{rad}(IJ)\subseteq\operatorname{rad}(J).
-\]
+$$
 Hence
-\[
+$$
 \operatorname{rad}(IJ)\subseteq\operatorname{rad}(I)\cap\operatorname{rad}(J).
-\]
+$$
 :::
 
 :::
@@ -52,15 +52,15 @@ One has $\operatorname{rad}(I)\cap\operatorname{rad}(J)\subseteq\operatorname{ra
 
 ::: pf-proof
 Let $x\in\operatorname{rad}(I)\cap\operatorname{rad}(J)$. Then for some integers $m,n\ge1$,
-\[
+$$
 x^m\in I,
 \qquad
 x^n\in J.
-\]
+$$
 Therefore
-\[
+$$
 x^{m+n}=x^m x^n\in IJ,
-\]
+$$
 so $x\in\operatorname{rad}(IJ)$.
 :::
 
@@ -68,9 +68,9 @@ so $x\in\operatorname{rad}(IJ)$.
 
 ::: pf-step
 Therefore
-\[
+$$
 \operatorname{rad}(IJ)=\operatorname{rad}(I)\cap\operatorname{rad}(J).
-\]
+$$
 
 ::: pf-proof
 Combine steps [](#rad-ij-subset-cap){.pf-ref} and [](#cap-subset-rad-ij){.pf-ref}.
