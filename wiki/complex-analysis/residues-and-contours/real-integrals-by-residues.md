@@ -81,7 +81,7 @@ $$
 ## Branch cuts: powers
 
 ::: {.example}
-For $-1<a<1$, with the branch $\arg z\in(0,2\pi)$ on the keyhole contour, the poles $i$ and $-i$ have $z^a = e^{\pi i a/2}$ and $e^{3\pi i a/2}$.
+For $-1<a<1$ with $a\neq 0$, with the branch $\arg z\in(0,2\pi)$ on the keyhole contour, the poles $i$ and $-i$ have $z^a = e^{\pi i a/2}$ and $e^{3\pi i a/2}$.
 Setting $\omega \coloneqq e^{\pi i a \over 2}$,
 $$
 \int_{0}^{\infty} \frac{x^{a}}{1+x^{2}} \dx =
