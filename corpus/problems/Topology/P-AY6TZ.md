@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Show that there is no covering map
-\[
+$$
 p:T^2=S^1\times S^1\longrightarrow\RP^2.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -32,9 +32,9 @@ p:T^2=S^1\times S^1\longrightarrow\RP^2.
 ::: {.pf-step #s1}
 
 A covering map $p:T^2\to\RP^2$ would induce an injective homomorphism
-\[
+$$
 p_*:\pi_1(T^2)\hookrightarrow\pi_1(\RP^2).
-\]
+$$
 
 ::: pf-proof
 
@@ -47,23 +47,23 @@ A covering-space projection induces an injection on fundamental groups of path-c
 ::: {.pf-step #s2}
 
 The groups in step [](#s1){.pf-ref} are
-\[
+$$
 \pi_1(T^2)\cong\ZZ^2,
 \qquad
 \pi_1(\RP^2)\cong\ZZ/2\ZZ.
-\]
+$$
 
 ::: pf-proof
 
 The first follows from
-\[
+$$
 T^2=S^1\times S^1
-\]
+$$
 and the product formula for fundamental groups.
 The second is the standard computation from the universal double cover
-\[
+$$
 S^2\to\RP^2.
-\]
+$$
 
 :::
 
