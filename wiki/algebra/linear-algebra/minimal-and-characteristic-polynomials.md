@@ -70,4 +70,4 @@ The quotient is $x^2-4x+4 = (x-2)^2$, so $f(x) = (x-2)^3$.
 
 [[L-Y5KNM]]
 
-[[PR-OF7ZW]]
+[[PR-4GQIZ]]

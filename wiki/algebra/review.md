@@ -95,8 +95,6 @@ Chapter: [[algebra/modules/index|Modules]].
 
 [[PR-4GQIZ]]
 
-[[PR-GBL6P]]
-
 [[FD-XT6HD]]
 
 [[FT-BC6S2]]

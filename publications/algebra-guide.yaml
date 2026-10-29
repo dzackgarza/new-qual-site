@@ -441,7 +441,6 @@ sections:
       - ref: PR-RPL4Q
       - ref: D-RHJMK
       - ref: D-ZJJ7G
-      - ref: FD-BPUNZ
       - ref: FF-CY5EA
       - ref: PR-4K4XZ
       - ref: D-BJYH3
@@ -691,8 +690,6 @@ sections:
       - ref: D-HJR7M
       - ref: FD-XT6HD
       - ref: PR-4GQIZ
-      - ref: PR-GBL6P
-      - ref: PR-OF7ZW
       - ref: L-CD6QT
       - ref: PR-5A2W4
       - ref: PR-5A2W4

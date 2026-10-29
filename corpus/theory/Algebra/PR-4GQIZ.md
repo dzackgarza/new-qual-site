@@ -34,3 +34,10 @@ The following are equivalent:
 
 - The [[FD-XT6HD|rational canonical form]] of $T$ has a single block.
 :::
+
+::: {.example}
+If $T$ has $\dim_k V$ distinct eigenvalues in $k$, then $T$ satisfies these conditions, but the converse fails.
+The characteristic polynomial is then a product of distinct linear factors, each of which divides the minimal polynomial, so the two polynomials are equal.
+For the converse, let $n=\dim_k V\geq 2$ and let $T$ have matrix the Jordan block $J_n(\lambda)$ for some $\lambda\in k$.
+Its minimal and characteristic polynomials are both $(x-\lambda)^n$, but $\lambda$ is its only eigenvalue.
+:::

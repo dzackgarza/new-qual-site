@@ -18,10 +18,8 @@ It exists over every field; the [[algebra/linear-algebra/jordan-canonical-form|J
 
 [[PR-4GQIZ]]
 
-[[PR-GBL6P]]
-
 ::: {.proof}
-Let $V = k^n$ with $x$ acting by $A$.
+This proves that $\min_T = \det(xI-T)$ if and only if $V$ admits a cyclic vector. Write $A \coloneqq T$ and $n \coloneqq \dim_k V$.
 
 $\impliedby$: Suppose $v$ is a cyclic vector, so that $v, Av, \ldots, A^{n-1}v$ is a basis of $V$.
 If $n' \definedas \deg\min_A < n$, then $\min_A(A)v = 0$ is a linear dependence among $v, Av, \ldots, A^{n'}v$, a contradiction.
