@@ -5,7 +5,7 @@ kind: problem
 title: "Derivative of $\\sum_{n\\ge0}(-1)^nx^{2n}$ on $(0,1)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Power Series, Differentiation]
 relations: []
 review: draft
 audit:
