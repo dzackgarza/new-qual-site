@@ -21,16 +21,33 @@ Show that an element $r\in R$ is not invertible iff it is contained in a maximal
 :::
 
 ::: {.solution}
-Suppose first that $r$ is noninvertible. Then the principal ideal $(r)$ is proper: if $(r)=R$, then $1=sr$ for some $s\in R$, making $r$ a unit. By Zorn's lemma, every proper ideal is contained in a maximal ideal, so there exists a maximal ideal $\mathfrak m$ with
-\[
-r\in(r)\subseteq\mathfrak m.
-\]
 
-Conversely, suppose $r\in\mathfrak m$ for some maximal ideal $\mathfrak m$. If $r$ were invertible, then
-\[
-1=r^{-1}r\in\mathfrak m,
-\]
-which would imply $\mathfrak m=R$, contradicting maximality.
+::: pf
 
-Thus $r$ is noninvertible exactly when it belongs to some maximal ideal.
+::: pf-step
+
+If $r$ is not invertible, then $r$ lies in a maximal ideal.
+
+::: pf-proof
+
+The principal ideal $(r)$ is proper: if $(r)=R$, then $1=sr$ for some $s\in R$, making $r$ a unit. By Zorn's lemma, every proper ideal is contained in a maximal ideal, so there is a maximal ideal $\mathfrak m$ with $r\in(r)\subseteq\mathfrak m$.
+
+:::
+
+:::
+
+::: pf-step
+
+If $r$ lies in a maximal ideal $\mathfrak m$, then $r$ is not invertible.
+
+::: pf-proof
+
+If $r$ were invertible, then $1=r^{-1}r\in\mathfrak m$, so $\mathfrak m=R$, contradicting that a maximal ideal is proper.
+
+:::
+
+:::
+
+:::
+
 :::
