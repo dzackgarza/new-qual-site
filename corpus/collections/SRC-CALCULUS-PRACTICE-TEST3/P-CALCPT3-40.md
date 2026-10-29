@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-10-30
-  note: "Transcribed from Question 40 of assets/attachments/calculus_practice_test3.pdf, read from the page render; the MinerU extraction omits this question."
+  note: "Transcribed from Question 40 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction; they agree."
 ---
 
 ::: {.problem}
