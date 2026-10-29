@@ -66,7 +66,7 @@ sections:
       - ref: P-ZBTCU
       - ref: E-AMD-IWU3CMM5
       - ref: P-USPU6
-      - ref: P-K2U6D
+      - ref: P-M504F03-3
       - ref: P-4ZDQQ
       # Algebra Week 4 Rings
       - ref: P-3PTP5
@@ -97,7 +97,7 @@ sections:
     items:
       # Complex Week 1 Preliminaries
       - ref: E-N6DX3
-      - ref: E-USHMH
+      - ref: P-UGA8150S21-HW1-06
       - ref: P-642LC
       # Complex Week 2 Cauchy
       - ref: E-W3QMS
