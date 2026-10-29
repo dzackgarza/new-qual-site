@@ -20,40 +20,21 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked for a unique U with orthonormal columns for every A, false for A = 0; the statement now asks for existence of U, uniqueness of H, and uniqueness of U when A has rank n.'
 ---
 
 ::: {.problem}
-Given $A \in M_{m,n}$ with $m \geq n$, prove that there exists a unique $U \in M_{m,n}$ with orthonormal columns, and a unique Hermitian positive semidefinite $H \in M_n$ such that $A = UH$.
+Given $A \in M_{m,n}$ with $m \geq n$, prove that there exist $U \in M_{m,n}$ with orthonormal columns and a unique Hermitian positive semidefinite $H \in M_n$ such that $A = UH$, and that $U$ is also unique when $A$ has rank $n$.
 (State in detail any auxiliary results used without proof.)
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: pf-step
-
-The uniqueness assertion for $U$ is false as printed. If $A=0$, then $H=0$, while every $m\times n$ matrix with orthonormal columns satisfies $A=UH$.
-
-::: pf-proof
-
-Since $m\ge n$, such matrices exist and are not unique.
-
-:::
-
-:::
-
-::: pf-step
-
-The correct statement is that $H=(A^*A)^{1/2}$ is uniquely determined, there exists an isometry $U:\mathbb C^n\to\mathbb C^m$ with $A=UH$, and $U$ is unique exactly when $A$ has full column rank.
-
-::: pf-proof
-
 We use the standard fact that a Hermitian positive semidefinite matrix has a unique Hermitian positive semidefinite square root.
 
-:::
-
-:::
+::: pf
 
 ::: {.pf-step #s3}
 
@@ -113,23 +94,11 @@ Hence $H_1$ is the positive semidefinite square root of $A^*A$, so $H_1=H$.
 
 ::: pf-step
 
-If $A$ has full column rank, then $H$ is invertible and $U=AH^{-1}$, so $U$ is unique.
+If $A$ has rank $n$, then $H$ is invertible and $U=AH^{-1}$, so $U$ is unique.
 
 ::: pf-proof
 
-Full column rank is equivalent to $\ker H=0$ by step [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-If $A$ is rank-deficient, then $U$ is not unique.
-
-::: pf-proof
-
-Now $K\ne0$. The map $U$ is fixed on $K^\perp$ but may be changed on $K$ by choosing a different orthonormal extension; since $H$ vanishes on $K$, all such extensions still satisfy $UH=A$.
+Rank $n$ is equivalent to $\ker H=0$ by step [](#s3){.pf-ref}.
 
 :::
 
