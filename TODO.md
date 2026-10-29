@@ -98,6 +98,19 @@ mathematical correction under its own node, not under copy policy.
     topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
     change-of-basepoint restatement; curves-in-projective-space opening and projection
     paragraphs; T-2YTCZ proof notation. **Acceptance:** each read and repaired.
+  - **`ad2-site-surfaces`**. **Needs:** none. Renderer: a "problem N" locator is derived when an
+    appearance comment is empty; solved counts include child-collection rows
+    (SRC-MATH8100-FALL-2019-ASSIGNMENTS, SRC-RA-WORKSHOP); institution ids are upper-cased
+    instead of named from the vocabulary; guide titles differ from area names; Pagefind indexes
+    the slogan link, backlinks and the collection count; unlabelled page wikilinks show the raw
+    path (wiki/archives/qual-workshop-index.md); the home `<title>` repeats the site name;
+    SRC-RA-WORKSHOP provenance chips carry no document name. Corpus: E-AMD-4SSSVQJY,
+    E-AMD-564ETBH5 and E-AMD-E3N4BHJH are in no collection; stem or truncated titles in
+    SRC-RA-WORKSHOP and Berkeley 1977 (`CARD-01`); TeX outside math in titles (P-CAFA22B,
+    P-CAFA22D, the 1-connected CW complex card); P-2J6HK remark before hint and solution
+    (`STYLE-07`); the topology packets lede names sections that do not exist; SRC-RA-WORKSHOP
+    has no institution. Round-2 candidates C5, C6, C8 and C9 remain for the owner.
+    **Acceptance:** each item read and repaired.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
