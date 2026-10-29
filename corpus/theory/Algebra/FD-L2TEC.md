@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: FD-L2TEC
-kind: definition
+kind: theorem
 title: Class equation
 prompts:
 - State the class equation for a finite group $G$.
