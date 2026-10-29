@@ -19,15 +19,27 @@ Prove that $A\union B$ is also connected.
 :::
 
 ::: {.solution}
-Suppose, for contradiction, that $A\cup B$ is disconnected. Then there are
-disjoint nonempty sets $U,V$, open in the subspace topology of $A\cup B$, such
-that
-\[
-A\cup B=U\cup V.
-\]
-Because $A$ is connected, it must lie entirely in one of $U,V$; likewise $B$
-must lie entirely in one of them. Since $A\cap B\ne\varnothing$, the two sets
-cannot lie in different members of the separation. Hence both $A$ and $B$ lie
-in the same one, leaving the other empty, a contradiction. Therefore
-$A\cup B$ is connected.
+Suppose $A\cup B=U\cup V$ with $U,V$ disjoint and open in the subspace topology of $A\cup B$. It suffices to show that $U$ or $V$ is empty.
+
+::: pf
+
+::: {.pf-step #each-in-one}
+$A$ lies in $U$ or in $V$, and so does $B$.
+
+::: pf-proof
+$A\cap U$ and $A\cap V$ are disjoint, relatively open in $A$, and cover $A$. Since $A$ is connected, one of them is empty. The same holds for $B$.
+:::
+
+:::
+
+::: pf-step
+$U$ or $V$ is empty.
+
+::: pf-proof
+Pick $p\in A\cap B$; say $p\in U$. By step [](#each-in-one){.pf-ref}, $A\subseteq U$ and $B\subseteq U$, since each meets $U$ at $p$. Hence $V=V\cap(A\cup B)=\varnothing$.
+:::
+
+:::
+
+:::
 :::
