@@ -20,6 +20,8 @@ def test_pages_workflow_uses_the_direct_build_and_immutable_actions() -> None:
         "profile": "python",
         "infra_ref": "main",
         "setup_recipe": "_ci-setup",
+        "setup_cache_paths": "~/texlive",
+        "setup_cache_key_files": "ci/texlive.profile",
     }
     assert jobs["build"]["needs"] == "qc-ci"
     steps = [*jobs["build"]["steps"], *jobs["deploy"]["steps"]]
