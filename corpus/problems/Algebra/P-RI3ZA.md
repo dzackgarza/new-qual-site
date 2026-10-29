@@ -27,36 +27,36 @@ audit:
 
 ::: {.problem}
 Give an example of a tower of field extensions
-\[
+$$
 K\subseteq L\subseteq M
-\]
-such that \(L/K\) and \(M/L\) are normal, but \(M/K\) is not normal.
+$$
+such that $L/K$ and $M/L$ are normal, but $M/K$ is not normal.
 :::
 
 ::: {.solution}
 Take
-\[
-K=\mathbb Q,
+$$
+K=\QQ,
 \qquad
-L=\mathbb Q(\sqrt2),
+L=\QQ(\sqrt2),
 \qquad
-M=\mathbb Q(\sqrt[4]{2}).
-\]
-Put \(\alpha=\sqrt[4]{2}\), so \(\alpha^2=\sqrt2\).
+M=\QQ(\sqrt[4]{2}).
+$$
+Put $\alpha=\sqrt[4]{2}$, so $\alpha^2=\sqrt2$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The extension \(L/K\) is normal.
+The extension $L/K$ is normal.
 
 ::: pf-proof
 
-The field \(L=\mathbb Q(\sqrt2)\) is the splitting field over \(\mathbb Q\) of
-\[
+The field $L=\QQ(\sqrt2)$ is the splitting field over $\QQ$ of
+$$
 x^2-2=(x-\sqrt2)(x+\sqrt2).
-\]
-Hence \(L/K\) is normal.
+$$
+Hence $L/K$ is normal.
 
 :::
 
@@ -64,19 +64,19 @@ Hence \(L/K\) is normal.
 
 ::: {.pf-step #s2}
 
-The extension \(M/L\) is normal.
+The extension $M/L$ is normal.
 
 ::: pf-proof
 
-Over \(L\), the element \(\alpha\) is a root of
-\[
+Over $L$, the element $\alpha$ is a root of
+$$
 x^2-\sqrt2.
-\]
-This polynomial splits in \(M\) as
-\[
+$$
+This polynomial splits in $M$ as
+$$
 (x-\alpha)(x+\alpha).
-\]
-Moreover \(\alpha\notin L\), since \([\mathbb Q(\alpha):\mathbb Q]=4\) by Eisenstein's criterion applied to \(x^4-2\), whereas \([L:\mathbb Q]=2\). Thus \(M=L(\alpha)\) is the splitting field of \(x^2-\sqrt2\) over \(L\), so \(M/L\) is normal.
+$$
+Moreover $\alpha\notin L$, since $[\QQ(\alpha):\QQ]=4$ by Eisenstein's criterion applied to $x^4-2$, whereas $[L:\QQ]=2$. Thus $M=L(\alpha)$ is the splitting field of $x^2-\sqrt2$ over $L$, so $M/L$ is normal.
 
 :::
 
@@ -84,31 +84,19 @@ Moreover \(\alpha\notin L\), since \([\mathbb Q(\alpha):\mathbb Q]=4\) by Eisens
 
 ::: {.pf-step #s3}
 
-The extension \(M/K\) is not normal.
+The extension $M/K$ is not normal.
 
 ::: pf-proof
 
 The polynomial
-\[
+$$
 x^4-2
-\]
-is irreducible over \(\mathbb Q\) by Eisenstein's criterion at \(2\), so it is the minimal polynomial of \(\alpha\) over \(K\). Its roots are
-\[
+$$
+is irreducible over $\QQ$ by Eisenstein's criterion at $2$, so it is the minimal polynomial of $\alpha$ over $K$. Its roots are
+$$
 \alpha,-\alpha,i\alpha,-i\alpha.
-\]
-But \(M=\mathbb Q(\alpha)\subseteq\mathbb R\), so \(i\alpha\notin M\). Hence the minimal polynomial of \(\alpha\) over \(K\) does not split in \(M\), and therefore \(M/K\) is not normal.
-
-:::
-
-:::
-
-::: pf-step
-
-Thus normality of field extensions is not transitive.
-
-::: pf-proof
-
-Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+$$
+But $M=\QQ(\alpha)\subseteq\RR$, so $i\alpha\notin M$. Hence the minimal polynomial of $\alpha$ over $K$ does not split in $M$, and therefore $M/K$ is not normal.
 
 :::
 
