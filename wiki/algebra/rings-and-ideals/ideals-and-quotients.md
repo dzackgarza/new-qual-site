@@ -97,7 +97,7 @@ The existence of maximal ideals by Zorn's lemma is on [[algebra/rings-and-ideals
 ## Exercises on nilradicals and Jacobson radicals
 
 Every element of a finite ring is a unit or a zero divisor.
-An element that is nilpotent modulo the nilradical is nilpotent, the nilradical is contained in the Jacobson radical, and the nilradical is the intersection of the prime ideals.
+An element that is nilpotent modulo the nilradical is nilpotent, and the nilradical is contained in the Jacobson radical.
 
 [[E-AMD-4SSSVQJY]]
 
@@ -106,5 +106,3 @@ An element that is nilpotent modulo the nilradical is nilpotent, the nilradical 
 [[E-AMD-E3N4BHJH]]
 
 [[P-AMD-FEHSX2WH]]
-
-[[E-AMD-UEHZOJ3K]]
