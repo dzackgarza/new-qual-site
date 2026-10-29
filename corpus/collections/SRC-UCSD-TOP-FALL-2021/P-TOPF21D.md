@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF21D
 kind: problem
-title: "Homology of a quartic K3 surface in CP^3 from Euler characteristic"
+title: 'Homology of a quartic K3 surface in $\CP^3$ from its Euler characteristic'
 classification:
   areas:
   - topology

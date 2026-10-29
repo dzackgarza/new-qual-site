@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF21B
 kind: problem
-title: "CP^2 as a covering space, homology of CP^2 x RP^2"
+title: '$\CP^2$ as a covering space, and the homology of $\CP^2\times\RP^2$'
 classification:
   areas:
   - topology
