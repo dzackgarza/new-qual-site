@@ -5,7 +5,7 @@ kind: fact
 title: $\Hom_R(R,A)\cong A$
 slogan: 'An $R$-linear map out of $R$ is determined uniquely by the image of $1$.'
 prompts:
-- What is $\mathop{\mathrm{Hom}}_R(R, A)$ for a left $R$-module $A$?
+- What is $\Hom_R(R, A)$ for a left $R$-module $A$?
 classification:
   areas:
   - topology
