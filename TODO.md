@@ -439,7 +439,13 @@ mathematical correction under its own node, not under copy policy.
     Guides: complex guide `parent:` chains (`NAV-01`) and the "grouped by type" ledes.
     Moved from `ad3-real-analysis-content`: E-M5MWL interval $(-1,1]$; "exact existing owner"
     appearance comments on the Wesleyan complex-analysis exams; titles of P-AEWN6, E-SS4.PR-2,
-    E-SS9.PR-1 and FT-FZERI.
+    E-SS9.PR-1 and FT-FZERI. Also moved: complex cards of report section I (P-Y5SS5,
+    E-TZJKN, E-WNXIR, P-Z776N, E-SS1.EX-13, E-THK2Z, P-7UIYI, P-HCAX18, P-CHAVAN-CA-3-7,
+    P-CM16-S2-08, P-TWN5M, P-FOXHV, P-7UTDI, P-F7HCN, E-SS1.EX-19, P-K4WSJ, E-VGNUI, E-WIANB,
+    P-EMCA9, E-SS2.EX-15, P-AQRVL, P-MMAQ-WPHHQBXBQ3, P-MMAQ-YUXDCVQRF5, P-RGBUN,
+    P-AZOFF-G04, P-TIE-F11-02, E-SS2.EX-2, P-PSIBT, UNSORTED-COMPLEX "Rudin 10.4" comments);
+    T-ZO5UU and T-SSNLT alt text; the 40 complex UCSD titles with a bare `^`
+    (P-CAF09A through P-CASP26C); P-UCLARA14S-12 is a complex problem filed as real analysis.
     **Acceptance:** each read and repaired, or kept with the reason.
 
   Round 3 (revision `5ba163ac9`, real analysis) injected the node below; `audited-deployment`
@@ -464,7 +470,13 @@ mathematical correction under its own node, not under copy policy.
     lists, notation and form on the real-analysis cards of the round-3 report (I1-I16, including
     P-XEEUX, P-VACDU, P-JPDRQ, P-E33SA). Guides: `NAV-01` parent chains in
     publications/real-analysis-guide.yaml; the real-analysis-workshop-packet lede cites numbers no card shows.
-    **Acceptance:** each read and repaired, or kept with the reason.
+    **Acceptance:** each read and repaired, or kept with the reason. **Closed.**
+    Kept apart after reading: D-PAEDW (sequences of sets) and D-HOKQD (real sequences);
+    D-TVKFM keeps its own content and links D-KJBAK for density. P-8RB01 was P-VO7MI and
+    P-2B2T5 joined as (a) and (b), so it was deleted and the two single cards kept. Unchanged
+    and already correct: UGA real-analysis titles, the appendix-unsorted title, continuity.md,
+    P-OPH7A, P-4FH62. Week 2 (lim sup and lim inf, Lebesgue-Stieltjes regularity) and
+    undergrad-appendix (differentiation and Baire facts) still state results that have no card.
 
   Round 3 (site surfaces) injected the node below; `audited-deployment` needs it.
   - **`ad3-duplicate-extractions`**. **Needs:** none. 133 PDFs under `assets/attachments/`
