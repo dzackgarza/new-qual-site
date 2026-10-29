@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA22D
 kind: problem
-title: "Mean value inequality and completeness of A^1(G)"
+title: Mean value inequality and completeness of $A^1(G)$
 classification:
   areas:
   - complex-analysis
