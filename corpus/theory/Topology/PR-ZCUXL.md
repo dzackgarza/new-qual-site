@@ -2,14 +2,13 @@
 schema: qual/card@1
 id: PR-ZCUXL
 kind: proposition
-title: Continuous images of compact, connected and separable spaces
-slogan: 'Continuous images preserve compactness, connectedness, and separability.'
+title: Continuous images of connected and separable spaces
+slogan: 'Continuous images preserve connectedness and separability.'
 classification:
   areas:
   - topology
   topics:
   - Continuity
-  - Compactness
   - Connectedness
   - Density
 relations: []
@@ -18,8 +17,6 @@ review: draft
 
 ::: {.proposition}
 Let $f\colon X\to Y$ be continuous.
-
-- If $X$ is compact, then $f(X)$ is compact [@Mun00].
 
 - If $X$ is connected, then $f(X)$ is connected [@Mun00].
 
