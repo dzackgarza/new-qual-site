@@ -40,10 +40,10 @@ $$
 :::
 
 ::: {.remark}
-In general $H_{k} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{k} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_k$.
+In general $H_{n} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{n} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_n$.
 If the integral homology groups of $A$ are free, then
 $$
-H_{k} (A\cross B) \cong \bigoplus_{i+j=k} H_{i}(A) \tensor_\ZZ H_{j}(B)
+H_{n} (A\cross B) \cong \bigoplus_{i+j=n} H_{i}(A) \tensor_\ZZ H_{j}(B)
 $$
 and if the integral homology groups of $X_1,\ldots,X_{k-1}$ are free, iterating gives
 $$
@@ -97,7 +97,7 @@ $$
 
 [[FF-QOQ2K]]
 
-## Mayer-Vietoris
+## Mayer--Vietoris
 
 ::: {.fact title="Splitting over a free quotient"}
 Since $\ZZ^m$ is free, every exact sequence of abelian groups $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits, so $A\cong \ZZ^{n}\oplus \ZZ^m$.
@@ -153,14 +153,14 @@ is exact, and $\delta$ is an isomorphism $\tilde H^{i-1}(S^{n-1})\cong \tilde H^
   $$
 
 - For a CW complex $X$, the cellular filtration satisfies
-$$
-H_j(X^{(k)},X^{(k-1)}) \cong
-\begin{cases}
-\ZZ[\theset{\text{$k$-cells of $X$}}] & j=k,\\
-0 & j\neq k,
-\end{cases}
-$$
-since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres, one for each $k$-cell.
+  $$
+  H_j(X^{(k)},X^{(k-1)}) \cong
+  \begin{cases}
+  \ZZ[\theset{\text{$k$-cells of $X$}}] & j=k,\\
+  0 & j\neq k,
+  \end{cases}
+  $$
+  since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres, one for each $k$-cell.
 
 :::
 
