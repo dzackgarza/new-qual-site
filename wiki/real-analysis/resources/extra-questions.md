@@ -208,8 +208,8 @@ The remaining headings are the January, June, and May exam tags printed in Days 
 ## Sequences and series of numbers and functions
 
 ### January 2006, 1
-[[P-DFDX4]]
 
+[[P-DFDX4]]
 
 ### Day 8, problem 2
 
