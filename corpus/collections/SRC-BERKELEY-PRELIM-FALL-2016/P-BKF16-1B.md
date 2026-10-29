@@ -31,10 +31,14 @@ audit:
     Checked the polar Jacobian, the t=r^2 substitution, the gamma
     integration-by-parts boundary terms, and the evaluations C=sqrt(pi) and
     S_4=2 pi^2.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: F16_Exam.pdf prints the parenthetical value S_3 = 4 pi/3 (the volume of the unit ball); the statement now reads S_3 = 4 pi.
 ---
 
 ::: {.problem}
-Let $C = \int_{-\infty}^{\infty} e^{-x^2}\,dx$ and let $S_n$ be the $(n-1)$-dimensional "surface area" of the unit sphere in $\mathbb{R}^n$ (so $S_2 = 2\pi$, $S_3 = 4\pi/3$).
+Let $C = \int_{-\infty}^{\infty} e^{-x^2}\,dx$ and let $S_n$ be the $(n-1)$-dimensional "surface area" of the unit sphere in $\mathbb{R}^n$ (so $S_2 = 2\pi$, $S_3 = 4\pi$).
 
 (a) Prove that $C^n = S_n \Gamma(n/2)/2$, where $\Gamma(s) = \int_0^\infty e^{-t} t^{s-1}\,dt$.
 (Evaluate the integral of $e^{-(x_1^2 + \cdots + x_n^2)}$ over $\mathbb{R}^n$ in rectangular and polar coordinates.)
@@ -307,9 +311,4 @@ respectively.
 
 :::
 
-:::
-
-::: {.remark}
-The source's parenthetical value $S_3 = 4\pi/3$ is an erratum: the surface area of the unit sphere in $\mathbb{R}^3$ is $S_3 = 4\pi$, and $4\pi/3$ is the volume of the unit ball.
-The formula in (a) gives $S_3 = 2C^3/\Gamma(3/2) = 2\pi^{3/2}/(\sqrt{\pi}/2) = 4\pi$.
 :::
