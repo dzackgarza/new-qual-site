@@ -79,8 +79,6 @@ Recall the following classes of rings.
 
 - A ring is [[D-TGB4R|local]] if it has a unique maximal ideal.
 
-- A [[D-HWLVG|valuation ring]] is an integral domain $R$ with fraction field $K$ such that $x\in R$ or $\inverseof{x}\in R$ for every $x\in K^\times$; a [[D-VK2KZ|discrete valuation ring]] is a valuation ring whose valuation has value group $\ZZ$.
-
 - In a [[D-WUGPG|Dedekind domain]] every nonzero proper ideal is a product of prime ideals, uniquely up to order.
 
 - A Noetherian local ring $(R,\mfm)$ is [[D-DEFREGLR|regular]] if $\dim_{R/\mfm}\mfm/\mfm^2=\dim R$.
