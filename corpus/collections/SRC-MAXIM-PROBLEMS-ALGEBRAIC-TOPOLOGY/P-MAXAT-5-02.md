@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-5-02
 kind: problem
-title: Maxim algebraic topology 5.2
+title: Vector bundles over a simply connected base are orientable
 classification:
   areas: [topology]
   topics: []
