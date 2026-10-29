@@ -29,35 +29,24 @@ If $A=\varnothing$, it is bounded. Assume $A\ne\varnothing$ and fix $x_0\in A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #ball}
 
-The nested balls
-$$
-B(x_0,1),B(x_0,2),\dots
-$$
-form an open cover of $A$.
+There is $N\in\NN$ with $A\subseteq B(x_0,N)$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-Compactness gives a finite subcover. If $N$ is the largest radius occurring, then
-$$
-A\subseteq B(x_0,N).
-$$
-
-:::
-
-::: pf-step
-
-Therefore for all $x,y\in A$,
+The nested balls $B(x_0,1)\subseteq B(x_0,2)\subseteq\cdots$ form an open cover of $A$. Compactness gives a finite subcover, and the ball of largest radius $N$ in it contains all the others.
 
 :::
 
 :::
 
-$$
-d(x,y)\le d(x,x_0)+d(x_0,y)<2N.
-$$
-Thus $A$ is bounded.
+::: pf-qed
+
+For all $x,y\in A$, step [](#ball){.pf-ref} and the triangle inequality give $d(x,y)\le d(x,x_0)+d(x_0,y)<2N$. Thus $A$ is bounded.
+
+:::
+
+:::
+
 :::
