@@ -31,6 +31,10 @@ audit:
     constant-path identities. For part (ii), proved the forward direction,
     exhibited a two-point discrete counterexample to the literal converse, and
     proved the intended converse after adding path-connectedness.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (ii) of the source omits path-connectedness, and its converse fails for a two-point discrete space. The statement now assumes X is path-connected in part (ii).
 ---
 
 ::: {.problem}
@@ -38,7 +42,7 @@ audit:
 Let $f,g:I\to X$ be two paths from $p$ to $q$.
 Show that $f\sim g$, that is, $f$ is homotopic to $g$ if and only if $f\mathbin{\cdot}g^{-1}\sim c_p$ where $g^{-1}$ is the inverse path to $g$, $c_p$ denotes the constant path based at $p$ and the “$\mathbin{\cdot}$” denotes the product of (compatible) paths.
 
-(ii) Show that $X$ is simply connected if and only if any two paths in $X$ with the same initial and terminal points are path homotopic.
+(ii) Let $X$ be path-connected. Show that $X$ is simply connected if and only if any two paths in $X$ with the same initial and terminal points are path homotopic.
 :::
 
 ::: {.solution}
@@ -167,7 +171,7 @@ This proves part (i).
 :::
 
 ::: {.pf-step #simply-connected-implies-path-homotopic}
-Under the standard definition of simply connected, if $X$ is simply connected, then any two paths in $X$ with the same initial and terminal points are path homotopic.
+If $X$ is simply connected, then any two paths in $X$ with the same initial and terminal points are path homotopic.
 
 ::: pf-proof
 Let $f,g:I\to X$ both run from $p$ to $q$.
@@ -188,34 +192,11 @@ f\simeq_p g.
 
 :::
 
-::: {.pf-step #discrete-counterexample}
-The converse in part (ii) is false as literally stated if "simply connected" includes path-connectedness.
-
-::: pf-proof
-Let
-\[
-X=\{0,1\}
-\]
-with the discrete topology.
-Every continuous map
-\[
-\alpha:I\to X
-\]
-is constant because $I$ is connected and the image of a connected space is connected, whereas the only connected subsets of a discrete space are singletons.
-Consequently, whenever two paths in $X$ have the same initial and terminal points, they are the same constant path and hence are path homotopic.
-
-However, $X$ is not path-connected: there is no path from $0$ to $1$.
-Thus $X$ is not simply connected under the standard definition.
-So the path-homotopy condition alone does not imply simple connectedness.
-:::
-
-:::
-
 ::: {.pf-step #path-connected-converse}
-The intended converse becomes correct after adding the hypothesis that $X$ is path-connected.
+If any two paths in $X$ with the same initial and terminal points are path homotopic, then $X$ is simply connected.
 
 ::: pf-proof
-Assume $X$ is path-connected and that any two paths with the same initial and terminal points are path homotopic.
+Assume that any two paths with the same initial and terminal points are path homotopic.
 Fix $p\in X$ and let
 \[
 \ell:I\to X
@@ -234,13 +215,8 @@ Together with the assumed path-connectedness, this says that $X$ is simply conne
 
 :::
 
-::: pf-step
-Thus part (ii) is correct either with path-connectedness included as a hypothesis in the converse, or under the nonstandard convention that "simply connected" means only that every loop is null-homotopic componentwise.
-
-::: pf-proof
-The standard forward implication is step [](#simply-connected-implies-path-homotopic){.pf-ref}, the literal converse fails by step [](#discrete-counterexample){.pf-ref}, and the corrected standard converse is step [](#path-connected-converse){.pf-ref}. If one drops path-connectedness from the definition of simply connected, the proof in step [](#path-connected-converse){.pf-ref} applies within each path component without any additional global hypothesis.
-:::
-
+::: pf-qed
+Step [](#concatenation-converse){.pf-ref} and the step before it prove part (i); steps [](#simply-connected-implies-path-homotopic){.pf-ref} and [](#path-connected-converse){.pf-ref} prove part (ii).
 :::
 
 :::
