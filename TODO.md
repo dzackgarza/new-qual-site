@@ -428,34 +428,31 @@ mathematical correction under its own node, not under copy policy.
 
   Round 3 (revision `5ba163ac9`, real analysis) injected the node below; `audited-deployment`
   needs it.
-  - **`ad3-real-analysis-content`**. **Needs:** none. Wrong mathematics: P-RASP11E title names
-    Carleson's theorem; D-2MJRE closure; E-M5MWL interval; P-YIC3K cites the intermediate value
-    theorem for the extreme value theorem; the undergraduate notation page $\norm{f}_\infty$
-    against D-3PVRB, `\dd` and a double arrow; P-X1WOB(d) vacuous converse. Process text
-    (`QUAL-08`, `SEC-7`): "exact existing owner" appearance comments (SRC-AZOFF-PROBLEMS-BY-TOPIC,
-    SRC-MATHEMATICAL-TRIVIUM, MATH4100 A1 and A8, Wesleyan summer exams); P-FPWLY; raw Proof and
-    Solution on P-I73ZD, P-PUYFS, P-YIC3K; E-QVMUV "two preceding steps"; extractor wording in
-    Wesleyan real-analysis titles; P-3SSNK source tag; SRC-RA-WORKSHOP locators in statements
-    (D6-10, D4-07, D8-SEQ1) and the room number. Titles (`CARD-01`, `CARD-06`): P-WWNJC, P-XEEUX,
-    P-WESRA12-4, P-AEWN6, E-SS4.PR-2, P-FTV4U, UMN, UCLA, UCSD, JHU, Math8100 and UGA
-    formula-in-words titles, FT-FZERI, P-RA-WORKSHOP-D8-SEQ1, appendix-unsorted,
-    P-RA-WORKSHOP-D3-SEQ-14. `CARD-04`: D-YWRVG/D-3PVRB; PR-XAVMU/FR-7YFAU; T-QBTWN/T-W5SDY;
-    PR-A7UFG/PR-PRSKG; FE-LJRG2/FE-VT5N3/FE-BFDRF/FE-3RPMC against PR-TC76W; the PR-2JV43
-    example in PR-TC76W; PR-ZI7M3/T-5AALA; P-VO7MI/P-2B2T5/P-8RB01; D-HHVPT/D-WGYSB;
-    D-TVKFM/D-KJBAK; D-PAEDW/D-HOKQD; FS-5FKPD/FF-IAUQG; FS-FZL2X/PR-WUZSG; condensation block
-    against PR-4EVYE; negation block against FS-THMMW; PR-25GM2/T-YOZX6; FF-AVBFU Lebesgue
-    criterion against PR-TDH2A; repeated commuting-limits counterexamples; advice H⊔N bullet
-    against PR-PIVFR; P-PCOHF/P-T7IKN; P-5CM5W/P-KC3PY; P-DFDX4/P-RA-WORKSHOP-D8-SEQ1;
-    P-UMNCP-F12-01/P-JHUSP02CAF; P-3IDAX/P-ZZO3P; T-AZSCN/FF-IAUQG; T-6F3GO/FF-XZGIY;
-    D-PPYCK/D-2CCDB; FD-XUGN3 remark; the Folland exercise list on preface.md and problems.md.
-    `QUAL-10` proofs: continuity.md, advice.md, the theorem-list pointer, T-OTR5M, PR-6OHTJ,
-    T-MN6WQ, T-RIY2P, T-BFOJT, T-DTXIA, T-4BDE3, T-J3AN3, T-ERNLN, FF-IAUQG, D-YZC3C.
+  - **`ad3-real-analysis-content`**. **Needs:** none. Open items. Wrong mathematics: E-M5MWL
+    interval. Process text (`QUAL-08`, `SEC-7`): "exact existing owner" appearance comments on
+    the Wesleyan complex-analysis exams; P-3SSNK source tag; SRC-RA-WORKSHOP locators in
+    statements (D6-10, D4-07, D8-SEQ1). Titles (`CARD-01`, `CARD-06`): P-AEWN6, E-SS4.PR-2,
+    E-SS9.PR-1, UMN, UCLA, UCSD, JHU, Math8100 and UGA formula-in-words titles, FT-FZERI,
+    P-RA-WORKSHOP-D8-SEQ1, appendix-unsorted, P-RA-WORKSHOP-D3-SEQ-14, T-S3C3S, UCSD titles
+    with a bare `^`. Figures: T-OXNTU, T-ZO5UU, T-SSNLT, PR-YO7MV alt text. P-4FH62 sub-part
+    labels. `CARD-04`: D-YWRVG/D-3PVRB; PR-XAVMU/FR-7YFAU; T-QBTWN/T-W5SDY; PR-A7UFG/PR-PRSKG;
+    FE-LJRG2/FE-VT5N3/FE-BFDRF/FE-3RPMC against PR-TC76W; P-VO7MI/P-2B2T5/P-8RB01;
+    D-HHVPT/D-WGYSB; D-TVKFM/D-KJBAK; D-PAEDW/D-HOKQD; FS-5FKPD/FF-IAUQG; FS-FZL2X/PR-WUZSG;
+    condensation block against PR-4EVYE; negation block against FS-THMMW; PR-25GM2/T-YOZX6;
+    FF-AVBFU Lebesgue criterion against PR-TDH2A; repeated commuting-limits counterexamples;
+    advice H⊔N bullet against PR-PIVFR; P-PCOHF/P-T7IKN; P-5CM5W/P-KC3PY;
+    P-DFDX4/P-RA-WORKSHOP-D8-SEQ1; P-UMNCP-F12-01/P-JHUSP02CAF; P-3IDAX/P-ZZO3P;
+    T-AZSCN/FF-IAUQG; FD-XUGN3 remark; the Folland exercise list on preface.md and problems.md.
+    `QUAL-10` proofs: T-OTR5M, PR-6OHTJ, T-MN6WQ, T-RIY2P, T-BFOJT, T-DTXIA, T-4BDE3, T-J3AN3,
+    T-ERNLN, FF-IAUQG, D-YZC3C; the advice.md measurability proof under the graph (read whether
+    it is a standard result); the theorem-list pointer to littlewood-principles-notes.
     Restatements (`DEF-1`, `THEOREM-01`): the measure-level pages, undergrad-appendix, week 2,
     sets-and-compactness. `STYLE-04`/`STYLE-08`: typed steps, vacuous QED steps, "a." part
-    lists, notation and form on the real-analysis cards of the round-3 report (I1-I16), P-X1WOB
-    heading claims. Guides: `NAV-01` parent chains in publications/real-analysis-guide.yaml; the
-    workshops guide repeats P-6XW74 and P-KPEPM; the real-analysis-workshop-packet lede cites
-    numbers no card shows. **Acceptance:** each read and repaired, or kept with the reason.
+    lists, notation and form on the real-analysis cards of the round-3 report (I1-I16, including
+    P-XEEUX, P-VACDU, P-JPDRQ, P-E33SA). Guides: `NAV-01` parent chains in
+    publications/real-analysis-guide.yaml; the workshops guide repeats P-6XW74 and P-KPEPM in its
+    algebra weeks; the real-analysis-workshop-packet lede cites numbers no card shows.
+    **Acceptance:** each read and repaired, or kept with the reason.
 
   Round 3 (site surfaces) injected the node below; `audited-deployment` needs it.
   - **`ad3-duplicate-extractions`**. **Needs:** none. 133 PDFs under `assets/attachments/`
