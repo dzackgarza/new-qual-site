@@ -73,19 +73,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the prompt, odd definition, and parity remark to `D-TMME3`, redirects `FD-X4DBP`, removes duplicate reader-facing references, and deletes `FD-PIVQZ`.
 
-### Duplicate Euclidean-domain cards D-NKRGN and FD-GXXBV
-
-- **Object and need:** `D-NKRGN` and `FD-GXXBV` in `corpus/theory/Algebra`. Both define a Euclidean domain by a Euclidean function and the division-with-remainder inequality.
-
-- **Observed evidence:** the only difference is that `D-NKRGN` defines the function on all of `$R$`, while `FD-GXXBV` defines it on `$R\setminus\{0\}$`; the Euclidean condition never requires a value at zero.
-  The wiki and algebra guide displayed both cards.
-
-- **Impact and owner:** the flashcard adds no mathematical distinction and creates a second defining occurrence.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `D-NKRGN`, removes duplicate reader-facing references, and deletes `FD-GXXBV`.
-
 ### Duplicate lying-over/going-up cards FF-IBDAT and PR-RJ3P7
 
 - **Object and need:** `FF-IBDAT` and `PR-RJ3P7`. Both state lying over for integral extensions and the going-up theorem for chains of prime ideals.
