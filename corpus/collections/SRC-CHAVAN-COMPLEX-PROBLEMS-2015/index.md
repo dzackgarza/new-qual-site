@@ -52,7 +52,7 @@ source:
     - P-CHAVAN-CA-8-1
     - P-CHAVAN-CA-8-2
     - id: E-TJ3WM
-      comment: Problem 8.7; holomorphic automorphisms of C are exactly z -> az+b with a nonzero
+      comment: Problem 8.7
   - name: Zeros of Analytic Polynomials in Several Variables
     problems:
     - P-CHAVAN-CA-9-1
