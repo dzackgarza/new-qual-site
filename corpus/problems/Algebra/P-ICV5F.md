@@ -27,6 +27,7 @@ Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary
 :::
 
 ::: {.solution}
+Write $\inner{v}{w}=\sum_i v_i\overline{w_i}$ for the standard Hermitian inner product on $\CC^n$ and $\norm{v}=\inner{v}{v}^{1/2}$.
 
 ::: pf
 
@@ -37,14 +38,14 @@ Every eigenvalue of a Hermitian matrix is real.
 ::: pf-proof
 
 Let $A=A^*$ and let $Av=\lambda v$ with $v\ne0$. Then
-\[
-\lambda\langle v,v\rangle
-=\langle Av,v\rangle
-=\langle v,A^*v\rangle
-=\langle v,Av\rangle
-=\overline\lambda\langle v,v\rangle.
-\]
-Since $\langle v,v\rangle>0$, one gets $\lambda=\overline\lambda$, so $\lambda\in\RR$.
+$$
+\lambda\inner{v}{v}
+=\inner{Av}{v}
+=\inner{v}{A^*v}
+=\inner{v}{Av}
+=\overline\lambda\inner{v}{v}.
+$$
+Since $\inner{v}{v}>0$, one gets $\lambda=\overline\lambda$, so $\lambda\in\RR$.
 
 :::
 
@@ -57,10 +58,10 @@ Every eigenvalue of a unitary matrix has modulus $1$.
 ::: pf-proof
 
 Let $U^*U=I$ and $Uv=\lambda v$ with $v\ne0$. Unitary matrices preserve norms, so
-\[
-\|v\|=\|Uv\|=\|\lambda v\|=|\lambda|\,\|v\|.
-\]
-Thus $|\lambda|=1$.
+$$
+\norm{v}=\norm{Uv}=\norm{\lambda v}=\abs{\lambda}\,\norm{v}.
+$$
+Thus $\abs{\lambda}=1$.
 
 :::
 
