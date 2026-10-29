@@ -28,17 +28,32 @@ Show that $\gamma*\gamma$ is nullhomotopic.
 :::
 
 ::: {.solution}
-Use the double covering
-$$
-SU(2)\cong S^3\longrightarrow SO(3).
-$$
-A rotation through angles from $0$ to $2\pi$ about a fixed axis lifts to a path in $SU(2)$ beginning at $1$ and ending at $-1$.
-Consequently the concatenated loop $\gamma*\gamma$ lifts to a closed loop beginning and ending at $1$ (the second traverse continues from $-1$ back to $1$).
+Identify $SU(2)$ with the unit quaternions $S^3$.
+A unit quaternion $q$ acts on the purely imaginary quaternions $\RR^3$ by $v \mapsto q v \bar q$, and this gives a covering homomorphism $p\colon S^3 \to SO(3)$ with kernel $\theset{\pm 1}$.
+Let $u$ be a unit vector along the axis, so that $\gamma(t)$ is rotation by $t$ about $u$ for $t \in [0, 2\pi]$.
 
-Since $SU(2)\cong S^3$ is simply connected, that lifted loop is null-homotopic.
-Projecting its null-homotopy to $SO(3)$ shows that
-$$
-\boxed{\gamma*\gamma\simeq *}.
-$$
-Equivalently, $[\gamma]$ is the nontrivial element of $\pi_1(SO(3))\cong\ZZ/2$.
+::: pf
+
+::: {.pf-step #lift}
+The path $\tilde\gamma(t) = \cos(t/2) + \sin(t/2)\, u$, $t \in [0, 4\pi]$, is a lift of $\gamma * \gamma$ to $S^3$, and it is a closed loop at $1$.
+
+::: pf-proof
+For $q = \cos(t/2) + \sin(t/2)\, u$, the map $v \mapsto q v \bar q$ fixes $u$ and rotates the plane orthogonal to $u$ by the angle $t$.
+So $p(\tilde\gamma(t))$ is rotation by $t$ about $u$, and as $t$ runs over $[0, 4\pi]$ it traverses $\gamma$ twice, which is $\gamma * \gamma$ after reparametrization.
+Also $\tilde\gamma(0) = 1 = \cos(2\pi) = \tilde\gamma(4\pi)$.
+:::
+
+:::
+
+::: pf-step
+$\gamma * \gamma$ is nullhomotopic.
+
+::: pf-proof
+$S^3$ is simply connected, so the loop $\tilde\gamma$ of step [](#lift){.pf-ref} is nullhomotopic rel endpoints.
+Composing that nullhomotopy with $p$ gives a nullhomotopy of $p \circ \tilde\gamma$, which is a reparametrization of $\gamma * \gamma$.
+:::
+
+:::
+
+:::
 :::
