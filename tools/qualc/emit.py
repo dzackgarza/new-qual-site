@@ -288,7 +288,7 @@ _TIKZCD_FILTER = Path.home() / ".pandoc" / "filters" / "tikzcd.lua"
 _TIKZCD_START = "\\begin{tikzcd}"
 
 
-def _compile_tikzcd_block(tex_source: str) -> str:
+def compile_tikzcd_block(tex_source: str) -> str:
     """Compile a single tikz/tikzcd block to an inline-SVG HTML fragment.
 
     Uses the canonical pandoc lua filter at ``~/.pandoc/filters/tikzcd.lua``,
@@ -344,7 +344,7 @@ def _compile_tikzcd(
     text = cast(str, getattr(element, "text", ""))
     if _TIKZCD_START not in text:
         return None
-    svg_html = _compile_tikzcd_block(text)
+    svg_html = compile_tikzcd_block(text)
     return pf.RawBlock(svg_html, format="html")
 
 

@@ -15,11 +15,12 @@ from pathlib import Path
 import yaml
 from pydantic import TypeAdapter
 
-from .emit import _collection_source_links
+from .emit import _collection_source_links, compile_tikzcd_block
 from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter, validate_fenced_divs
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
+TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
 
 
 def card_header(text: str, path: Path) -> Card:
@@ -38,16 +39,25 @@ class GitChange(Strict):
 
 
 def check_git_changes(changes: list[GitChange]) -> int:
-    """Validate card blobs selected by the shared hook or a manual range check."""
-    cards = [change for change in changes if change.path.is_relative_to("corpus") and change.path.suffix == ".md"]
+    """Validate card and wiki blobs selected by the shared hook or a manual range check.
+
+    Diagrams are compiled here because the site build is the only other place
+    that compiles them, and a malformed one otherwise first fails the deploy.
+    """
+    cards = [change for change in changes if change.path.parts[0] in ("corpus", "wiki") and change.path.suffix == ".md"]
     errors: list[str] = []
     for change in cards:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{change.path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
         try:
-            card_header(source, change.path)
+            if change.path.parts[0] == "corpus":
+                card_header(source, change.path)
+            for diagram in TIKZCD.findall(source):
+                compile_tikzcd_block(diagram)
         except ValueError as exc:
             errors.append(str(exc))
+        except RuntimeError as exc:
+            errors.append(f"{change.path}: {exc}")
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
@@ -62,7 +72,7 @@ def check_git_cards(version: str, diff_args: tuple[str, ...]) -> int:
     selection and blob transport (git-diff and gitrevisions manuals).
     """
     names = subprocess.run(
-        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", "corpus/"],
+        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", "corpus/", "wiki/"],
         check=True,
         stdout=subprocess.PIPE,
         text=True,
