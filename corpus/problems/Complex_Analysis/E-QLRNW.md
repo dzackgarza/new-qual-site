@@ -13,62 +13,88 @@ classification:
   - Power Series
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source reads "differentiable functions" on Omega; for real-differentiable functions the conclusions fail, so the statement says complex differentiable on an open set. The source also reads "\sum{k\geq 0}", corrected to a subscripted sum.'
 ---
 
 ::: {.exercise}
-Suppose $f_k: \Omega\to \CC$ is a sequence of differentiable functions converging locally uniformly to $f:\Omega\to \CC$.
+Suppose $\Omega\subseteq\CC$ is open and $f_k: \Omega\to \CC$ is a sequence of complex differentiable functions converging locally uniformly to $f:\Omega\to \CC$.
 Show that
 
-- $f$ is continuous,
-- $f$ is differentiable,
-- $\theset{f_k'}\to f'$ locally uniformly.
+(a) $f$ is continuous,
 
-Thus if $f(z) = \sum{k\geq 0} c_k (z-z_0)^k$ is a power series, since $S_N\to f$ locally uniformly, $f$ can be differentiated term-by-term within its radius of convergence.
+(b) $f$ is differentiable,
 
+(c) $\theset{f_k'}\to f'$ locally uniformly.
+
+Thus if $f(z) = \sum_{k\geq 0} c_k (z-z_0)^k$ is a power series, since $S_N\to f$ locally uniformly, $f$ can be differentiated term-by-term within its radius of convergence.
 :::
 
 ::: {.solution}
-That $f$ is continuous is a local question: fixing a point $z_0$, take a closed disc $\DD+z_0$ about $z_0$.
-By local uniform convergence $f_k\to f$ uniformly on $\DD+z_0$, and differentiable $\implies$ continuous.
-So each $f_k$ is continuous, making $f$ continuous on $\DD+z_0$ by the uniform limit theorem.
 
-That $f$ is differentiable is again a local question: fix $z$ and write $\gamma \definedas \bar{\DD + z}$ as the boundary of the disc about $z$.
-Define $g_k(\xi) \definedas {f_k\over \xi-z}$, so $g_k \to {f \over \xi-a}$ locally uniformly.
-Now apply Cauchy's integral formula at $z$:
-\[
-f(z) 
-&= \lim_k f_k(z) \\
-&= \lim_k {1\over 2\pi i}\int_\gamma {f_k(\xi) \over \xi - z}\dxi \\
-&= \lim_k {1\over 2\pi i}\int_\gamma g_k(\xi)\dxi\\
-&= {1\over 2\pi i}\int_\gamma \lim_k g_k(\xi)\dxi \\
-&= {1\over 2\pi i}\int_\gamma g(\xi)\dxi\\
-&= {1\over 2\pi i}\int_\gamma {f(\xi) \over \xi - z} \dxi
-,\]
-where we've used uniform convergence on $\gamma$ to commute the limit and integral.
-So $f$ has an integral representation, making it differentiable.
+All circles are positively oriented.
 
-That $f_k'\to f'$: 
-\[
-\lim_k f_k'(z)
-&= \lim_k {1\over 2\pi i}\int_\gamma {f_k(\xi) \over (\xi - z)^2 }\dxi\\
-&= {1\over 2\pi i}\int_\gamma \lim_k {f_k(\xi) \over (\xi - z)^2}\dxi\\
-&= {1\over 2\pi i}\int_\gamma {f(\xi) \over (\xi - z)^2}\dxi\\
-&= f'(z)
-.\]
+::: pf
 
-That the convergence is locally uniform:
-first consider what happens on an closed discs $K = D$ with $\gamma \definedas \bd{D}$.
-Then for $z\in D$,
-\[
-\abs{f'(z) - f_k'(z) }
-&= \abs{{1\over 2\pi i} \int_{\gamma} {f(\xi) - f_k(\xi) \over (\xi - z)^2}\dxi }\\
-&\leq {1\over 2\pi}\int_{\gamma} {\abs{f(\xi) - f_k(\xi) } \over \abs{\xi - z}^2} \dxi\\
-&\leq {1\over 2\pi}\int_{\gamma } { \sup_{\xi \in \gamma} \abs{f(\xi) - f_k(\xi) } \over r^2 } \dxi\\
-&= {1\over 2\pi} { \sup_{\xi \in \gamma } \abs{f(\xi) - f_k(\xi) } \over r^2} \cdot {2\pi r} \\
-&= { \sup_{\xi \in \gamma } \abs{f(\xi) - f_k(\xi) }}/r 
-.\]
-Since $\gamma$ is compact, using locally uniform convergence of $f_k\to f$, there exists an $n_0$ such that $n\geq n_0$ bounds this $\sup$ by $\eps$.
-For $K$ arbitrary, cover $K$ by discs $D_z$ for every $z\in K$ and extract a finite cover $\theset{D_{z_k}}_{k\leq N}$.
-Produce $n_0, n_1,\cdots, n_N$ as in the above argument, and take $n\definedas \max\theset{n_k}_{k\leq N}$ to obtain uniform convergence on every $D_{z_k}$ and thus on $K$.
+::: {.pf-step #part-a}
+(a) $f$ is continuous.
+
+::: pf-proof
+Each $f_k$ is continuous, and continuity is local; on each closed disc in $\Omega$, $f$ is a uniform limit of the continuous $f_k$.
 :::
 
+:::
+
+::: {.pf-step #part-b}
+(b) $f$ is holomorphic, and for $\overline{D_r(w)}\subseteq\Omega$ and $\abs{z-w}<r$, $f(z) = \frac{1}{2\pi i}\oint_{\abs{\xi-w}=r}\frac{f(\xi)}{\xi-z}\,d\xi$.
+
+::: pf-proof
+By the Cauchy integral formula, $f_k(z) = \frac{1}{2\pi i}\oint_{\abs{\xi-w}=r}\frac{f_k(\xi)}{\xi-z}\,d\xi$.
+On the circle, $\frac{1}{\abs{\xi-z}}$ is bounded and $f_k\to f$ uniformly, so letting $k\to\infty$ gives the formula for $f$.
+The right side is holomorphic in $z$ on $D_r(w)$, by differentiation under the integral sign, since $f$ is continuous by step [](#part-a){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #estimate}
+If $\overline{D_{2r}(w)}\subseteq\Omega$, then $\sup_{\overline{D_r(w)}}\abs{f_k'-f'}\leq\frac1r\sup_{\overline{D_{2r}(w)}}\abs{f_k-f}$.
+
+::: pf-proof
+For $z\in\overline{D_r(w)}$, $\overline{D_r(z)}\subseteq\overline{D_{2r}(w)}$; by step [](#part-b){.pf-ref}, $f_k-f$ is holomorphic, and the Cauchy integral formula for the derivative gives
+$$
+\abs{f_k'(z)-f'(z)} = \abs{\frac{1}{2\pi i}\oint_{\abs{\xi-z}=r}\frac{f_k(\xi)-f(\xi)}{(\xi-z)^2}\,d\xi}\leq\frac{1}{2\pi}\cdot2\pi r\cdot\frac{1}{r^2}\sup_{\overline{D_{2r}(w)}}\abs{f_k-f}.
+$$
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) $f_k'\to f'$ locally uniformly.
+
+::: pf-proof
+Let $K\subseteq\Omega$ be compact.
+Each $w\in K$ has $r_w>0$ with $\overline{D_{2r_w}(w)}\subseteq\Omega$; finitely many discs $D_{r_{w_j}}(w_j)$, $1\leq j\leq N$, cover $K$.
+By step [](#estimate){.pf-ref},
+$$
+\sup_K\abs{f_k'-f'}\leq\max_{j}\frac{1}{r_{w_j}}\sup_{\overline{D_{2r_{w_j}}(w_j)}}\abs{f_k-f},
+$$
+which tends to $0$ since $f_k\to f$ uniformly on the compact union of the closed discs.
+:::
+
+:::
+
+::: pf-step
+A power series may be differentiated term by term inside its disc of convergence.
+
+::: pf-proof
+The partial sums $S_N$ are polynomials converging locally uniformly to $f$ on the disc of convergence, so by steps [](#part-b){.pf-ref} and [](#part-c){.pf-ref}, $f$ is holomorphic and $f' = \lim_N S_N' = \sum_{k\geq1}kc_k(z-z_0)^{k-1}$.
+:::
+
+:::
+
+:::
+
+:::
