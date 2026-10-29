@@ -13,19 +13,24 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source left the ring unqualified; the statement now assumes R commutative with identity, as the solution does.'
 ---
 
 ::: {.exercise}
-Suppose $\mfm \in \mspec R$ is a proper maximal ideal.
+Let $R$ be a commutative ring with identity, and suppose $\mfm \in \mspec R$ is a proper maximal ideal.
 Show that under either of the following two conditions, $R$ is local:
 
 - $R\sm \mfm \subseteq \units{R}$, so every element of $R\sm \mfm$ is a unit, or
 
-- $1 + \mfm \subseteq \units{R}$
+- $1 + \mfm \subseteq \units{R}$.
 :::
 
 ::: {.solution}
-Let $R$ be a commutative ring with identity and $N \definedas R\sm \units{R}$ its set of nonunits.
+Let $N \definedas R\sm \units{R}$ be the set of nonunits of $R$.
 
 ::: pf
 
