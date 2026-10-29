@@ -5,7 +5,7 @@ kind: fact
 title: Homology of $\RP^3$
 slogan: '$\RP^3$ has $\ZZ$ in degrees $0$ and $3$, $\ZZ/2$ in degree $1$, and zero otherwise.'
 prompts:
-- What is $H_* \mathbb{RP}^3$?
+- What is $H_* \RP^3$?
 classification:
   areas:
   - topology
