@@ -84,8 +84,6 @@ $$
 \alpha\beta.
 $$
 
-## Restricting the matrix
-
 ::: pf
 
 ::: pf-step
@@ -351,6 +349,26 @@ $$
 ::: pf-proof
 
 There are four sign choices in each of the two permutation patterns.
+
+:::
+
+:::
+
+::: pf-step
+
+Define homeomorphisms
+$$
+A:S^n\to S^n,\quad A(x)=-x;
+\qquad
+h_1=\mathrm{id}_{S^n},\quad h_{-1}=A;
+\qquad
+\tau:X\to X,\quad \tau(x,y)=(y,x).
+$$
+
+
+::: pf-proof
+
+Each map is continuous and is its own inverse.
 
 :::
 
