@@ -32,16 +32,16 @@ Let $A\in M_n(F)$ satisfy $A^2=A$. Prove that $A$ is diagonalizable over $F$, an
 ::: {.pf-step #s1}
 
 The minimal polynomial of $A$ divides
-\[
+$$
 x^2-x=x(x-1).
-\]
+$$
 
 ::: pf-proof
 
 The relation $A^2=A$ is exactly
-\[
+$$
 A(A-I)=0,
-\]
+$$
 so the polynomial $x(x-1)$ annihilates $A$. Hence the minimal polynomial divides it.
 
 :::
@@ -75,17 +75,17 @@ A linear operator is diagonalizable over $F$ if and only if its minimal polynomi
 ::: pf-step
 
 In a suitable basis,
-\[
-A\sim\operatorname{diag}(\underbrace{1,\ldots,1}_{r},\underbrace{0,\ldots,0}_{n-r})
-\]
+$$
+A\sim\diag(\underbrace{1,\ldots,1}_{r},\underbrace{0,\ldots,0}_{n-r})
+$$
 for some $0\le r\le n$.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref} the only possible eigenvalues are the roots $0$ and $1$ of the annihilating polynomial. Hence a diagonal form consists only of $0$'s and $1$'s. The number $r$ of $1$'s is
-\[
-r=\operatorname{rank}(A)=\dim\operatorname{im}(A),
-\]
+By step [](#s1){.pf-ref} the only possible eigenvalues are the roots $0$ and $1$ of the annihilating polynomial. Hence a diagonal form consists only of $0$'s and $1$'s. The number $r$ of $1$'s is
+$$
+r=\rank(A)=\dim\im(A),
+$$
 while the number of $0$'s is $n-r=\dim\ker A$.
 
 :::
