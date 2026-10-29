@@ -22,9 +22,9 @@ audit:
 ---
 
 ::: {.problem}
-What is a Lie group? Define a unitary representation and state the Peter--Weyl theorem. What is the Lie algebra of a Lie group, the Jacobi identity, and the adjoint representation? What is the commutator of vector fields?
+(a) What is a Lie group? Define a unitary representation and state the Peter--Weyl theorem. What is the Lie algebra of a Lie group, the Jacobi identity, and the adjoint representation? What is the commutator of vector fields?
 
-For a finite-dimensional complex representation of $\ZZ$, when is it completely reducible, and what are its indecomposable modules?
+(b) For a finite-dimensional complex representation of $\ZZ$, when is it completely reducible, and what are its indecomposable modules?
 :::
 
 ::: {.solution}
@@ -32,101 +32,76 @@ For a finite-dimensional complex representation of $\ZZ$, when is it completely 
 ::: pf
 
 ::: pf-step
+(a) A Lie group is a smooth manifold $G$ with a group structure for which multiplication and inversion are smooth maps.
 
-A **Lie group** is a smooth manifold $G$ equipped with a group structure for which multiplication and inversion are smooth.
+::: pf-proof
 
-Its **Lie algebra** is
-\[
-\mathfrak g=T_eG,
-\]
-identified with the left-invariant vector fields on $G$. The bracket is the commutator of vector fields:
-\[
-[X,Y](f)=X(Yf)-Y(Xf).
-\]
-It is bilinear, alternating, and satisfies the Jacobi identity
-\[
+::: pf-step
+The commutator of vector fields $X,Y$ on a manifold is the vector field $[X,Y]$ acting on smooth functions by $[X,Y](f)=X(Yf)-Y(Xf)$.
+
+:::
+
+::: pf-step
+The Lie algebra of $G$ is $\mathfrak g=T_eG$, identified with the left-invariant vector fields on $G$, with the commutator of vector fields as bracket. The bracket is bilinear, alternating, and satisfies the Jacobi identity
+$$
 [X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0.
-\]
-
-The **adjoint representation** of the Lie algebra is
-\[
-\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g),
-\qquad
-\operatorname{ad}_X(Y)=[X,Y].
-\]
+$$
 
 :::
 
 ::: pf-step
-
-A **unitary representation** of a topological group $G$ is a continuous homomorphism
-\[
-\pi:G\to U(V)
-\]
-for a complex Hilbert space $V$.
-
-For a compact group, the Peter--Weyl theorem says that the matrix coefficients of finite-dimensional irreducible unitary representations are dense in $C(G)$; equivalently, the left regular representation on $L^2(G)$ decomposes as a Hilbert direct sum of finite-dimensional irreducibles, each occurring with multiplicity equal to its dimension.
+The adjoint representation of $G$ is $\operatorname{Ad}:G\to\GL(\mathfrak g)$, where $\operatorname{Ad}_g$ is the derivative at $e$ of conjugation $h\mapsto ghg^{-1}$. Its derivative is the adjoint representation of $\mathfrak g$,
+$$
+\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g),\qquad \operatorname{ad}_X(Y)=[X,Y].
+$$
 
 :::
 
 ::: pf-step
+A unitary representation of a topological group $G$ is a homomorphism $\pi:G\to U(V)$ into the unitary group of a complex Hilbert space $V$ that is strongly continuous: $g\mapsto\pi(g)v$ is continuous for each $v\in V$.
 
-A finite-dimensional complex representation of $\ZZ$ is the same thing as an invertible linear operator.
+:::
+
+::: pf-step
+The Peter--Weyl theorem: for a compact group $G$, the matrix coefficients of finite-dimensional irreducible unitary representations are dense in $C(G)$; equivalently, the left regular representation on $L^2(G)$ is the Hilbert direct sum of the finite-dimensional irreducible representations, each occurring with multiplicity equal to its dimension.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+(b) Let $\rho:\ZZ\to\GL(V)$ be a finite-dimensional complex representation and $T=\rho(1)$. Then $\rho$ is completely reducible if and only if $T$ is diagonalizable, and its indecomposable summands are the Jordan blocks $J_r(\lambda)$ with $r\ge1$ and $\lambda\in\CC^\times$.
 
 ::: pf-proof
 
-A representation
-\[
-\rho:\ZZ\to GL(V)
-\]
-is determined by
-\[
-T=\rho(1)\in GL(V),
-\]
-and then $\rho(n)=T^n$. Conversely every invertible $T$ defines such a representation.
+::: {.pf-step #operator}
+Representations of $\ZZ$ on $V$ are the same as invertible operators on $V$.
 
+::: pf-proof
+A representation is determined by $T=\rho(1)\in\GL(V)$ through $\rho(n)=T^n$, and every invertible $T$ defines one this way.
 :::
 
 :::
 
 ::: pf-step
-
-The representation is completely reducible if and only if $T$ is diagonalizable over $\CC$.
+$\rho$ is completely reducible if and only if $T$ is diagonalizable.
 
 ::: pf-proof
-
-The irreducible complex representations of the abelian group $\ZZ$ are one-dimensional characters
-\[
-n\longmapsto\lambda^n,
-\qquad \lambda\in\CC^\times.
-\]
-Thus a direct sum of irreducibles is exactly a decomposition of $V$ into eigenspaces of $T$, i.e. diagonalizability.
-
+By step [](#operator){.pf-ref}, a subrepresentation is a $T$-invariant subspace. The irreducible complex representations of the abelian group $\ZZ$ are one-dimensional, given by the characters $n\mapsto\lambda^n$ with $\lambda\in\CC^\times$, since $T$ has an eigenvector in every nonzero invariant subspace. A direct sum of irreducibles is therefore a basis of eigenvectors of $T$.
 :::
 
 :::
 
 ::: pf-step
-
-The finite-dimensional indecomposable complex representations are the Jordan blocks
-\[
-J_r(\lambda),
-\qquad r\ge1,
-\quad \lambda\in\CC^\times.
-\]
+The indecomposable finite-dimensional representations are the Jordan blocks $J_r(\lambda)$, $r\ge1$, $\lambda\in\CC^\times$.
 
 ::: pf-proof
+A representation is a module over $\CC[\ZZ]\cong\CC[t,t^{-1}]$, a PID, with $t$ acting by $T$. A finite-dimensional module is torsion, and by the structure theorem its indecomposable summands are the primary cyclic modules $\CC[t,t^{-1}]/((t-\lambda)^r)$ with $\lambda\ne0$. On such a module $t$ acts by the Jordan block $J_r(\lambda)$.
+:::
 
-The group algebra is
-\[
-\CC[\ZZ]\cong\CC[t,t^{-1}],
-\]
-a PID. Finite-dimensional modules are torsion modules, and the indecomposable primary cyclic modules are
-\[
-\CC[t,t^{-1}]/((t-\lambda)^r),
-\qquad \lambda\ne0.
-\]
-Under the action of $t$, these are exactly Jordan blocks $J_r(\lambda)$.
+:::
 
 :::
 
