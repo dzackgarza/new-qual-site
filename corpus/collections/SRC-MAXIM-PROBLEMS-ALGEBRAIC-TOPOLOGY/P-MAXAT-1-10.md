@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-10
 kind: problem
-title: Maxim algebraic topology 1.10
+title: Torsion in $H^i(M)$ and $H^{n-i+1}(M)$ agree for a closed oriented $n$-manifold
 classification:
   areas: [topology]
   topics: []
