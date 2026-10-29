@@ -409,7 +409,6 @@ source:
   - id: P-GAPV3
   - id: P-GRNXH
   - id: P-GSTFL
-  - id: P-GTJDX
   - id: P-GW3Y7
   - id: P-H2WTL
   - id: P-HH4R3

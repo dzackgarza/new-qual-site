@@ -1219,7 +1219,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/P-GAPV3.md` | `fe55540e87d40fe94cbd7319c035c1c5df85ce28` | `fe55540e87d40fe94cbd7319c035c1c5df85ce28` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-GRNXH.md` | `beeb6cf0e0f67a229718c5c4a4f5df2ca8f86256` | `beeb6cf0e0f67a229718c5c4a4f5df2ca8f86256` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-GSTFL.md` | `50d08cbcf8c45aa8b612d3d89694a45f22991218` | `50d08cbcf8c45aa8b612d3d89694a45f22991218` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/P-GTJDX.md` | `e6b4240434ee182203c4c7973560841355e45991` | `e6b4240434ee182203c4c7973560841355e45991` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-GW3Y7.md` | `78a6a07c2d9173f438e65173ba27f3e3535faf8f` | `78a6a07c2d9173f438e65173ba27f3e3535faf8f` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-H2WTL.md` | `f97eb0e8b924411ff69525560eddbf8dcda52d6e` | `f97eb0e8b924411ff69525560eddbf8dcda52d6e` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-HH4R3.md` | `eab9119ab4e78a407327b6415836a48bc48b9243` | `eab9119ab4e78a407327b6415836a48bc48b9243` | Read; retained |
