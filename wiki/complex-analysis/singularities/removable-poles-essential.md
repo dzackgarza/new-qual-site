@@ -65,9 +65,16 @@ Its Taylor series is $h(z) = \sum_{k\geq 2} a_k(z-z_0)^k$, so $f(z) = \sum_{k\ge
 
 :::
 
-![](../../../../assets/assets/figures/2021-10-29_01-30-50.png)
+::: {.proof title="Riemann's removable singularity theorem, by Laurent coefficients"}
+Suppose $\abs f\leq M$ on $0<\abs{z-z_0}<\delta$, and write $f(z)=\sum_{k\in\ZZ}c_k(z-z_0)^k$ there.
+For $n\geq 1$ and $0<r<\delta$,
+$$
+\abs{c_{-n}} = \abs{\frac{1}{2\pi i}\oint_{\abs{z-z_0}=r} f(z)(z-z_0)^{n-1}\,dz} \leq M r^{n} ,
+$$
+which tends to $0$ as $r\to 0$.
+So $c_{-n}=0$ for every $n\geq 1$, and the Laurent series is a power series that extends $f$ holomorphically across $z_0$.
 
-![](../../../../assets/assets/figures/2021-10-29_01-31-06.png)
+:::
 
 ::: {.remark title="Showing a singularity is removable"}
 A singularity at $z_0$ is removable if the Laurent expansion $\sum_{k\in\ZZ} c_k (z-z_0)^k$ has $c_k = 0$ for $k<0$, or if $f$ is bounded near $z_0$, by Riemann's theorem [[T-ZZJDP]].
