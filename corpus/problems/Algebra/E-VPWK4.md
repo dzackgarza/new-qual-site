@@ -36,30 +36,30 @@ Under the conjugation action of $G$ on itself, the orbit of $x$ is its conjugacy
 
 ::: pf-proof
 The conjugation orbit is
-\[
+$$
 G\cdot x=\{gxg^{-1}:g\in G\}=\operatorname{Cl}_G(x).
-\]
+$$
 Moreover,
-\[
+$$
 g\cdot x=x
 \quad\Longleftrightarrow\quad
 gxg^{-1}=x
 \quad\Longleftrightarrow\quad
 gx=xg,
-\]
+$$
 so
-\[
-\operatorname{Stab}_G(x)=C_G(x).
-\]
+$$
+\Stab_G(x)=C_G(x).
+$$
 :::
 
 :::
 
 ::: {.pf-step #class-size-index}
 Hence
-\[
-|\operatorname{Cl}_G(x)|=[G:C_G(x)].
-\]
+$$
+\abs{\operatorname{Cl}_G(x)}=[G:C_G(x)].
+$$
 
 ::: pf-proof
 This is the orbit-stabilizer theorem applied to the conjugation action, using step [](#orbit-stabilizer-conjugation){.pf-ref}.
@@ -72,13 +72,13 @@ Therefore the size of the conjugacy class divides $|G|$.
 
 ::: pf-proof
 Since $C_G(x)\le G$ and $G$ is finite, Lagrange's theorem gives
-\[
-|G|=|C_G(x)|[G:C_G(x)].
-\]
-By step [](#class-size-index){.pf-ref}, the second factor is $|\operatorname{Cl}_G(x)|$, so
-\[
-|\operatorname{Cl}_G(x)|\mid |G|.
-\]
+$$
+|G|=\abs{C_G(x)}[G:C_G(x)].
+$$
+By step [](#class-size-index){.pf-ref}, the second factor is $\abs{\operatorname{Cl}_G(x)}$, so
+$$
+\abs{\operatorname{Cl}_G(x)}\mid |G|.
+$$
 :::
 
 :::
