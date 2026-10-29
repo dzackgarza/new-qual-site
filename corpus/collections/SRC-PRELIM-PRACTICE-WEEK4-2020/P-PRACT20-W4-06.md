@@ -17,9 +17,40 @@ Find the general solution of $y ^ { \prime \prime \prime } - 3 y ^ { \prime \pri
 :::
 
 ::: {.solution}
-Guessing $y ( x ) = e ^ { r x }$ , we have $r ^ { 3 } - 3 r ^ { 2 } + 3 r - 1 = 0$ which implies $( r - 1 ) ^ { 3 } = 0$ . This equation has a triple root at $r = 1$ , so the general solution is
+Write $D$ for the differentiation operator $d/dx$.
 
-$$
-\boxed { y ( x ) = C _ { 0 } e ^ { x } + C _ { 1 } x e ^ { x } + C _ { 2 } x ^ { 2 } e ^ { x } . }
-$$
+::: pf
+
+::: {.pf-step #factor}
+The equation is $(D-1)^3y=0$.
+
+::: pf-proof
+$(D-1)^3 = D^3-3D^2+3D-1$, and the coefficients are constant, so the factors commute.
+:::
+
+:::
+
+::: {.pf-step #conjugate}
+For every three-times differentiable $u$, $(D-1)^3(e^xu) = e^xu'''$.
+
+::: pf-proof
+By the product rule, $(D-1)(e^xu) = e^xu + e^xu' - e^xu = e^xu'$.
+Applying this three times gives $(D-1)^3(e^xu) = e^xu'''$.
+:::
+
+:::
+
+::: pf-step
+The general solution is $\boxed{y(x) = (C_0 + C_1x + C_2x^2)e^x}$ with constants $C_0, C_1, C_2$.
+
+::: pf-proof
+Every function $y$ can be written $y = e^xu$ with $u = e^{-x}y$.
+By steps [](#factor){.pf-ref} and [](#conjugate){.pf-ref}, $y$ is a solution exactly when $e^xu'''=0$, that is, when $u'''=0$.
+Integrating three times, $u'''=0$ exactly when $u = C_0 + C_1x + C_2x^2$.
+:::
+
+:::
+
+:::
+
 :::
