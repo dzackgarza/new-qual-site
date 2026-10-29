@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO34
 kind: problem
-title: A composition series for S4
+title: A composition series for $S_4$
 classification:
   areas: [algebra]
   topics: [Group Theory]
