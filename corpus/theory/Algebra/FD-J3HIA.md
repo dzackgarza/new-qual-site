@@ -12,7 +12,7 @@ classification:
   - Field Extensions
   - Fields
 relations:
-- kind: variant-of
+- kind: related-to
   target: FD-3V3ZW
 review: draft
 ---
