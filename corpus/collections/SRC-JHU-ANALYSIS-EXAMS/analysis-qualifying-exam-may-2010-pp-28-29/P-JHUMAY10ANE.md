@@ -72,7 +72,7 @@ Set
 $$
 w(\xi)=(1+|\xi|^2)^\sigma
 $$
-which is positive and measurable for every real $\sigma$. By step [](#s1){.pf-ref} and [[FT-P5UNP|Fatou's lemma]],
+which is positive and measurable for every real $\sigma$. By step [](#s1){.pf-ref} and [[T-LDJNS|Fatou's lemma]],
 $$
 \begin{aligned}
 \|f\|_{H^\sigma}^2

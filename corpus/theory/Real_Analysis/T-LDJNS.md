@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-LDJNS
 kind: theorem
 title: Fatou's lemma and reverse Fatou's lemma
+prompts:
+- State Fatou's lemma.
 slogan: '$\int\liminf f_n\le\liminf\int f_n$; if $f_n\le g$ with $g\in L^1$, then $\limsup\int f_n\le\int\limsup f_n$.'
 classification:
   areas:
@@ -26,6 +28,12 @@ $$
 $$
 \limsup_{n\to\infty} \int_X f_n\dmu \leq \int_X \limsup_{n\to\infty} f_n\dmu .
 $$
+:::
+
+::: {.example}
+The inequality in (1) can be strict.
+On $\RR$ with Lebesgue measure, let $f_n\coloneqq\chi_{[n,n+1]}$.
+Then $\liminf_n f_n=0$ pointwise, so the right side is $0$, while $\int_\RR f_n=1$ for every $n$.
 :::
 
 ::: {.example}

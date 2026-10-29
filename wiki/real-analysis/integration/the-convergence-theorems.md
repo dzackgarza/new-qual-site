@@ -31,8 +31,6 @@ If $f_n\to f$ almost everywhere and $\abs{f_n}\leq g$ with $g\in L^1$, then $f\i
 
 [[T-LDJNS]]
 
-[[FT-P5UNP]]
-
 ::: {.remark title="Relations among the three theorems"}
 The monotone convergence theorem and Fatou's lemma can each be proved from the other.
 The dominated convergence theorem follows from Fatou's lemma applied to $2g - \abs{f_n - f}\geq0$, which converges to $2g$ and gives $\limsup_n\int\abs{f_n-f}\leq 0$.

@@ -77,7 +77,7 @@ The limit \(f\) satisfies
 
 ::: pf-proof
 
-By assumption 1, the nonnegative functions \(|f_n|\), \(|f_n|^2\), and \(|x|\,|f_n|\) converge almost everywhere to \(|f|\), \(|f|^2\), and \(|x|\,|f|\), respectively. Applying [[FT-P5UNP|Fatou's lemma]] and using step [](#s1-1){.pf-ref} and assumptions 2--3 gives
+By assumption 1, the nonnegative functions \(|f_n|\), \(|f_n|^2\), and \(|x|\,|f_n|\) converge almost everywhere to \(|f|\), \(|f|^2\), and \(|x|\,|f|\), respectively. Applying [[T-LDJNS|Fatou's lemma]] and using step [](#s1-1){.pf-ref} and assumptions 2--3 gives
 \[
 \int|f|\le\liminf_n\int|f_n|\le10\sqrt2+100,
 \]
