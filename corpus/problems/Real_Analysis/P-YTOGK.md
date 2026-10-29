@@ -19,16 +19,19 @@ audit:
 ---
 
 ::: {.problem}
+
 Suppose that
-\[
-1\leq p_j \leq \infty, && \sum_{j=1}^n {1\over p_j} = {1\over r} \leq 1
-.\]
+$$
+1\leq p_j \leq \infty, \qquad \sum_{j=1}^n {1\over p_j} = {1\over r} \leq 1.
+$$
 
 Show that if $f_j \in L^{p_j}$ for each $1\leq j \leq n$, then
-\[
-\prod f_j \in L^r, && \norm{ \prod f_j }_r \leq \prod \norm{f_j}_{p_j}
-.\]
+$$
+\prod f_j \in L^r, \qquad \norm{ \prod f_j }_r \leq \prod \norm{f_j}_{p_j}.
+$$
+
 :::
+
 ::: {.solution}
 
 ::: pf
@@ -39,7 +42,7 @@ Reduce to the case where all $p_j < \infty$.
 
 ::: pf-proof
 
-if some $p_j = \infty$, then $|f_j| \le \norm{f_j}_\infty$ a.e., so $\norm{\prod f_j}_r \le \norm{f_j}_\infty \norm{\prod_{k\ne j} f_k}_r$, reducing to the $(n-1)$-term case. Iterating, assume $1 \le p_j < \infty$.
+If some $p_j = \infty$, then $|f_j| \le \norm{f_j}_\infty$ a.e., so $\norm{\prod f_j}_r \le \norm{f_j}_\infty \norm{\prod_{k\ne j} f_k}_r$, reducing to the $(n-1)$-term case. Iterating, assume $1 \le p_j < \infty$.
 
 :::
 
@@ -63,28 +66,22 @@ Apply Hölder's inequality to the functions $|f_j|^r$ with exponents $q_j$.
 
 ::: pf-proof
 
-by the generalized (multiplicative) Hölder inequality — iterated from the two-factor case — step [](#s2){.pf-ref} gives
-\[
+By the generalized (multiplicative) Hölder inequality — iterated from the two-factor case — step [](#s2){.pf-ref} gives
+$$
 \int \prod_j |f_j|^r \le \prod_j \Big(\int |f_j|^{r q_j}\Big)^{1/q_j} = \prod_j \Big(\int |f_j|^{p_j}\Big)^{r/p_j} = \prod_j \norm{f_j}_{p_j}^r .
-\]
+$$
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Conclude.
-
-::: pf-proof
-
-taking the $r$-th root in step [](#s3){.pf-ref}:
-\[
+Taking the $r$-th root in step [](#s3){.pf-ref}:
+$$
 \norm{\prod_j f_j}_r = \Big(\int \prod_j |f_j|^r\Big)^{1/r} \le \prod_j \norm{f_j}_{p_j} ,
-\]
+$$
 so $\prod f_j \in L^r$ with the claimed norm bound. (When $r = \infty$, i.e. $\sum 1/p_j = 0$, all $p_j = \infty$ and the product is bounded by $\prod \norm{f_j}_\infty$.)
-
-:::
 
 :::
 
