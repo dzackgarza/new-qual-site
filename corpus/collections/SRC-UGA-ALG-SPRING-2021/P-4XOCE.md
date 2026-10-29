@@ -19,79 +19,34 @@ Let $H \normal G$ be a normal subgroup of a finite group $G$, where the order of
 Prove that $H$ is contained in the center of $G$.
 :::
 
-::: {.concept}
-\envlist
-
-- $x\in Z(G)$ iff $\size C_x = 1$, i.e. the size of its conjugacy class is one.
-
-- Normal subgroups are disjoint unions of (some) conjugacy classes in $G$.
-
-  - In fact, this is a characterization of normal subgroups (i.e. $H$ is normal iff $H$ is a union of conjugacy classes in $G$).
-
-  - Why: if $H\normal G$ then $gh\inverseof{g} \in H$ for all $g$, so $C_h \subseteq H$ and $\Union_h C_h = H$.
-    Conversely, if $H = \Union_{h\in H} C_h$, then $gh\inverseof{g} \in C_h \subseteq H$ and thus $gH\inverseof{g} = H$.
-
-- Orbit stabilizer theorem: $\size C_g = \size G/ \size K_g$ where $C_g$ is the centralizer and $K_g$ is the conjugacy class of $g$.
-
-  - In particular, $\size C_g$ divides $\size G$.
-:::
-
 ::: {.strategy}
-Show an element $x$ is central by showing $\size C_x = 1$.
-:::
-
-::: {.proof}
-> Solution due to Swaroop Hegde, typed up + modifications added by DZG.
-
-\envlist
-
-- Let $p \definedas \size H$.
-
-- Let $\theset{ C_i }_{i\leq n}$ be the conjugacy classes in $G$, then $G = \disjoint_{i\leq n} C_i$
-
-- By the first fact, there is a sub-collection $\theset{ C_{i_j}}_{j\leq k }$  such that 
-$$
-H = \disjoint_{j\leq k} C_{i_j}
-.$$
-
-- The identity is always in a single conjugacy class, so $C_e = \theset{ e }$.
-
-- Since $e\in H$, without loss of generality, label $C_{i_1} = \theset{ e }$.
-
-- So
-$$
-H 
-= \Disjoint_{j\leq k} C_{i_j} 
-= C_{i_1}{\textstyle  \coprod} \displaystyle\Disjoint_{\substack{ j\leq k \\ j\neq 1} } C_{i_j} 
-.$$
-
-- Take cardinality in the above equation 
-$$
-p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
-.$$
-
-- So $\size C_{i_j} \leq p-1$ for all $j\neq 1$.
-
-- Every $\size C_{i_j}$ divides $\size G$, but $p$ was the *minimal* prime dividing $\size G$, forcing $\size C_{i_j} = 1$ for all $j \neq 1$.
-
-  - This rules out $\size C_{i_j}$ being a prime less than $p$, but also rules out composites: if a prime $q\divides \size C_{i_j}$, then $q<p$ and $q\divides \size G$, a contradiction.
-
-- By fact 3, each $x\in C_{i_j}$ satisfies $x\in Z(G)$.
-
-- $\union C_{i_j} = H$, so $H \subseteq Z(G)$.
-
+Show that conjugation by every $g\in G$ acts trivially on $H$, by bounding the image of $G\to\Aut(H)$.
 :::
 
 ::: {.solution}
-Because $|H|=p$ is prime, $H\cong C_p$.
-Conjugation by $G$ on $H$ gives a homomorphism
-$$
-\varphi:G\longrightarrow \operatorname{Aut}(H)\cong C_{p-1}.
-$$
-Hence $|\operatorname{im}\varphi|$ divides both $|G|$ and $p-1$.
-Every prime divisor of $|\operatorname{im}\varphi|$ therefore divides $|G|$, so by minimality of $p$ it is at least $p$; but it also divides $p-1$.
-Thus $|\operatorname{im}\varphi|=1$.
+::: pf
 
-Therefore conjugation by every $g\in G$ acts trivially on $H$.
-Equivalently, $ghg^{-1}=h$ for all $g\in G$ and $h\in H$, so $H\subseteq Z(G)$.
+::: {.pf-step #aut}
+Conjugation gives a homomorphism $\varphi\colon G\to\Aut(H)$, and $\abs{\Aut(H)}=p-1$.
+
+::: pf-proof
+$H$ is normal, so $g\mapsto(h\mapsto ghg^{-1})$ maps $G$ into $\Aut(H)$, and it is a homomorphism. Since $\abs H=p$ is prime, $H\cong\ZZ/p\ZZ$ and $\Aut(H)\cong(\ZZ/p\ZZ)^\times$ has order $p-1$.
+:::
+
+:::
+
+::: {.pf-step #trivial}
+$\varphi$ is trivial.
+
+::: pf-proof
+$\abs{\im\varphi}$ divides $\abs G$ by the first isomorphism theorem and divides $p-1$ by Lagrange's theorem and step [](#aut){.pf-ref}. A prime divisor $q$ of $\abs{\im\varphi}$ would divide $\abs G$, so $q\geq p$ by minimality of $p$, and would divide $p-1$, so $q<p$. Hence $\abs{\im\varphi}=1$.
+:::
+
+:::
+
+::: pf-qed
+By step [](#trivial){.pf-ref}, $ghg^{-1}=h$ for all $g\in G$ and $h\in H$, so $H\subseteq Z(G)$.
+:::
+
+:::
 :::
