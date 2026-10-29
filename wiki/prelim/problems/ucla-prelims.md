@@ -4,74 +4,74 @@ order: 31
 
 # UCLA prelims
 
-[Fall 2001 Basic Examination](attachments/basic-01F.pdf)
+[[SRC-UCLA-BASIC-FALL-2001|Fall 2001 Basic Examination]]
 
-[Winter 2002 Basic Examination](attachments/basic-02W.pdf)
+[[SRC-UCLA-BASIC-WINTER-2002|Winter 2002 Basic Examination]]
 
-[Spring 2002 Basic Examination](attachments/basic-02S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2002|Spring 2002 Basic Examination]]
 
-[Fall 2002 Basic Examination](attachments/basic-02F.pdf)
+[[SRC-UCLA-BASIC-FALL-2002|Fall 2002 Basic Examination]]
 
-[Spring 2003 Basic Examination](attachments/basic-03S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2003|Spring 2003 Basic Examination]]
 
-[Fall 2003 Basic Examination](attachments/basic-03F.pdf)
+[[SRC-UCLA-BASIC-FALL-2003|Fall 2003 Basic Examination]]
 
-[Spring 2004 Basic Examination](attachments/basic-04S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2004|Spring 2004 Basic Examination]]
 
-[Fall 2004 Basic Examination](attachments/basic-04F.pdf)
+[[SRC-UCLA-BASIC-FALL-2004|Fall 2004 Basic Examination]]
 
-[Spring 2005 Basic Examination](attachments/basic-05S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2005|Spring 2005 Basic Examination]]
 
-[Fall 2005 Basic Examination](attachments/basic-05F.pdf)
+[[SRC-UCLA-BASIC-FALL-2005|Fall 2005 Basic Examination]]
 
-[Winter 2006 Basic Examination](attachments/basic-06W.pdf)
+[[SRC-UCLA-BASIC-WINTER-2006|Winter 2006 Basic Examination]]
 
-[Spring 2006 Basic Examination](attachments/basic-06S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2006|Spring 2006 Basic Examination]]
 
-[Spring 2007 Basic Examination](attachments/basic-07S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2007|Spring 2007 Basic Examination]]
 
-[Fall 2007 Basic Examination](attachments/basic-07F.pdf)
+[[SRC-UCLA-BASIC-FALL-2007|Fall 2007 Basic Examination]]
 
-[Spring 2008 Basic Examination](attachments/basic-08S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2008|Spring 2008 Basic Examination]]
 
-[Fall 2008 Basic Examination](attachments/basic-08F.pdf)
+[[SRC-UCLA-BASIC-FALL-2008|Fall 2008 Basic Examination]]
 
-[Spring 2009 Basic Examination](attachments/basic-09S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2009|Spring 2009 Basic Examination]]
 
-[Fall 2009 Basic Examination](attachments/basic-09F.pdf)
+[[SRC-UCLA-BASIC-FALL-2009|Fall 2009 Basic Examination]]
 
-[Spring 2010 Basic Examination](attachments/basic-10S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2010|Spring 2010 Basic Examination]]
 
-[Fall 2010 Basic Examination](attachments/basic-10F.pdf)
+[[SRC-UCLA-BASIC-FALL-2010|Fall 2010 Basic Examination]]
 
-[Spring 2011 Basic Examination](attachments/basic-11S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2011|Spring 2011 Basic Examination]]
 
-[Fall 2011 Basic Examination](attachments/basic-11F.pdf)
+[[SRC-UCLA-BASIC-FALL-2011|Fall 2011 Basic Examination]]
 
-[Spring 2012 Basic Examination](attachments/basic-12S.pdf)
+[[SRC-UCLA-BASIC-WINTER-2012|Spring 2012 Basic Examination]]
 
-[Fall 2012 Basic Examination](attachments/basic-12F.pdf)
+[[SRC-UCLA-BASIC-FALL-2012|Fall 2012 Basic Examination]]
 
-[Spring 2013 Basic Examination](attachments/basic-13S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2013|Spring 2013 Basic Examination]]
 
-[Fall 2013 Basic Examination](attachments/basic-13F.pdf)
+[[SRC-UCLA-BASIC-FALL-2013|Fall 2013 Basic Examination]]
 
-[Spring 2014 Basic Examination](attachments/basic-14S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2014|Spring 2014 Basic Examination]]
 
-[Fall 2014 Basic Examination](attachments/basic-14F.pdf)
+[[SRC-UCLA-BASIC-FALL-2014|Fall 2014 Basic Examination]]
 
-[Spring 2015 Basic Examination](attachments/basic-15S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2015|Spring 2015 Basic Examination]]
 
-[Fall 2015 Basic Examination](attachments/basic-15F.pdf)
+[[SRC-UCLA-BASIC-FALL-2015|Fall 2015 Basic Examination]]
 
-[Spring 2016 Basic Examination](attachments/basic-16S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2016|Spring 2016 Basic Examination]]
 
-[Fall 2016 Basic Examination](attachments/basic-16F.pdf)
+[[SRC-UCLA-BASIC-FALL-2016|Fall 2016 Basic Examination]]
 
-[Spring 2017 Basic Examination](attachments/basic-17S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2017|Spring 2017 Basic Examination]]
 
-[Fall 2017 Basic Examination](attachments/basic-17F.pdf)
+[[SRC-UCLA-BASIC-FALL-2017|Fall 2017 Basic Examination]]
 
-[Spring 2018 Basic Examination](attachments/basic-18S.pdf)
+[[SRC-UCLA-BASIC-SPRING-2018|Spring 2018 Basic Examination]]
 
-[Fall 2018 Basic Examination](attachments/basic-18F.pdf)
+[[SRC-UCLA-BASIC-FALL-2018|Fall 2018 Basic Examination]]
