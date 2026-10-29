@@ -22,7 +22,7 @@ prompts:
 ::: {.definition title="Saturated"}
 An affine semigroup $S \subseteq M$ is \dfn{saturated} if
 $$
-k \in \ZZ_{>0}, \quad m \in M, \quad km \in S \implies m \in S .
+n \in \ZZ_{>0}, \quad m \in M, \quad nm \in S \implies m \in S .
 $$
 $\Spec k[S]$ is normal exactly when $S$ is saturated in the lattice $\ZZ S$ it generates, and $S_\sigma = \dualof{\sigma} \intersect M$ is saturated for every cone, since its defining inequalities are homogeneous.
 :::
