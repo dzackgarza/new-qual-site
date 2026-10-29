@@ -16,25 +16,56 @@ review: draft
 ::: {.exercise}
 
 Find a conformal map $L\to \DD$ where
-\[
-L\definedas \theset{\abs{z - i } < \sqrt 2} \intersect \theset{\abs{z+i} < \sqrt 2}
-,\]
+$$
+L\definedas \theset{\abs{z - i } < \sqrt 2} \intersect \theset{\abs{z+i} < \sqrt 2},
+$$
 i.e. a lune with vertices $-1$ and $1$.
 
 :::
 
-::: {.solution}
-The key insight: for lunes, map the corners to $0$ and $\infty$; this yields a sector.
-Here we want $-1\mapsto 0$ and $1\mapsto \infty$, so $f(z) = {z+1\over z-1}$ gets things started.
+::: {.hint}
+A Möbius map sending the two vertices of a lune to $0$ and $\infty$ sends the lune to a sector.
+:::
 
+::: {.solution}
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-01-04.png)
 
-In steps:
+::: pf
 
-- $z\mapsto {1+z\over 1-z}$ sends the lune to the sector $\Arg(z) \in (-\pi/4, \pi/4)$, since it fixes and must be symmetric about the real axis, and preserves the right angle between the circles at $z=-1$.
-- $z\mapsto e^{i\pi/4}z$ to rotate this into $Q_1$.
-- $z\mapsto z^2$ to dilate into $\HH$.
-- $z\mapsto {z-i\over z+i}$ the standard Cayley map $\HH\to\DD$.
+::: {.pf-step #sector}
+$T(z)=\frac{1+z}{1-z}$ maps $L$ conformally onto the sector $S=\theset{\abs{\Arg w}<\pi/4}$.
+
+::: pf-proof
+Both boundary circles pass through $\pm1$, since $\abs{1\mp i}=\abs{-1\mp i}=\sqrt2$.
+$T$ sends $-1\mapsto0$ and $1\mapsto\infty$, so it sends each boundary circle to a line through $0$.
+The circles have centers $\pm i$ and equal radii, so they are swapped by $z\mapsto\bar z$, which commutes with $T$; hence the image lines are symmetric about $\RR$.
+At $z=1$ the radii $1-i$ and $1+i$ are perpendicular, so the circles meet at angle $\pi/2$, and the image lines meet at angle $\pi/2$.
+Since $T(0)=1\in S$ and $0\in L$, $T(L)=S$.
+:::
 
 :::
 
+::: {.pf-step #half-plane}
+$w\mapsto i w^2$ maps $S$ conformally onto the upper half-plane $\HH$.
+
+::: pf-proof
+Squaring maps $\theset{\abs{\Arg w}<\pi/4}$ bijectively onto $\theset{\abs{\Arg u}<\pi/2}$, and multiplication by $i$ rotates that half-plane onto $\HH$.
+:::
+
+:::
+
+::: pf-step
+$$
+\boxed{F(z)=\frac{i\qty(\frac{1+z}{1-z})^2-i}{i\qty(\frac{1+z}{1-z})^2+i}=\frac{(1+z)^2-(1-z)^2}{(1+z)^2+(1-z)^2}=\frac{2z}{1+z^2}}
+$$
+maps $L$ conformally onto $\DD$.
+
+::: pf-proof
+Compose steps [](#sector){.pf-ref} and [](#half-plane){.pf-ref} with the Cayley map $u\mapsto\frac{u-i}{u+i}$, which maps $\HH$ conformally onto $\DD$, and simplify.
+:::
+
+:::
+
+:::
+
+:::
