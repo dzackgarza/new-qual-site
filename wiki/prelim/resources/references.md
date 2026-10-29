@@ -9,25 +9,25 @@ order: 0
 
 [UCLA summer notes](https://www.math.ucla.edu/~bonsoon/summer2020/files/concepts.pdf)
 
-- L. Ahlfors, *Complex Analysis* (McGraw-Hill, 1973).
+- [@Ahl73]
 
-- V. Arnold, *Ordinary Differential Equations* (MIT Press).
+- [@Arn73]
 
-- M. Artin, *Algebra* (Prentice Hall, 1991).
+- [@Art91]
 
-- F. Kirwan, *Complex Algebraic Curves*, London Mathematical Society Student Texts 23 (Cambridge, 1992).
+- [@Kir92]
 
-- W. Massey, *A Basic Course in Algebraic Topology*, Graduate Texts in Mathematics 127 (Springer-Verlag, 1991).
+- [@Mas91]
 
-- J. Milnor, *Topology from the Differentiable Viewpoint*.
+- [@Mil97]
 
-- S. Ross, *A First Course in Probability*, 5th edition (Prentice-Hall, 1997).
+- [@Ros97]
 
-- W. Rudin, *Real and Complex Analysis*.
+- [@Rud74]
 
-- J-P. Serre, *A Course in Arithmetic*.
+- [@Ser73]
 
-- J-P. Serre, *Linear Representations of Finite Groups*.
+- [@Ser77]
 
 ## Notes
 
