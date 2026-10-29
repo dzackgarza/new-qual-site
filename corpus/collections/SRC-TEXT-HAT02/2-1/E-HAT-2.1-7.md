@@ -23,8 +23,6 @@ Find a way of identifying pairs of faces of $\Delta^3$ to produce a $\Delta$-com
 :::
 
 ::: {.solution}
-**Goal.** Give $S^3$ a $\Delta$-complex structure with a single $3$-simplex and compute its simplicial homology.
-
 ::: pf
 
 ::: pf-step
@@ -75,7 +73,7 @@ the two face-pairs give two $2$-simplices $P = F_0 \sim F_1$ and $Q = F_2 \sim F
 
 ::: pf-step
 
-Compute the boundary maps.
+The simplicial boundary maps are $\partial_3 = 0$, $\partial_2(P) = e_{23}$, $\partial_2(Q) = e_{01}$, $\partial_1(e_{01}) = \partial_1(e_{23}) = 0$, and $\partial_1(c) = B - A$.
 
 ::: pf-proof
 
@@ -121,7 +119,7 @@ $e_{01}$ is a loop at $A$ and $e_{23}$ a loop at $B$, so their boundaries vanish
 
 ::: pf-step
 
-Compute the homology.
+$\boxed{H_0 \cong H_3 \cong \ZZ,\ H_1 = H_2 = 0}$, and $H_n = 0$ for $n > 3$.
 
 ::: pf-proof
 
@@ -174,12 +172,6 @@ $\ker \partial_3 = \ZZ$ and there is no $4$-simplex, so $H_3 = \ZZ/0 = \ZZ$.
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-$H_0 = H_3 = \ZZ$ and $H_1 = H_2 = 0$, the homology of $S^3$.
 
 :::
 
