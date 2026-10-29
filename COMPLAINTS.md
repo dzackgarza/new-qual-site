@@ -50,22 +50,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair removes `C-XRC67` and retains `C-HWX2P` as the canonical statement.
 
-### Zero-divisor definition was wrong for noncommutative rings and duplicated
-
-- **Object and need:** `D-4I3SL` and `FD-S62UB` in `corpus/theory/Algebra`. `D-GURUB` defines rings without commutativity, but `D-4I3SL` defined a zero divisor by requiring one nonzero element to annihilate the given element on both the left and the right.
-  `FD-S62UB` separately gave the standard commutative definition.
-
-- **Observed evidence:** `D-4I3SL` quantified over an arbitrary ring and required `$ar=ra=0$`; `FD-S62UB` quantified over a commutative ring and required a nonzero `$x$` with `$rx=0$`. Current uses of the zero-divisor card in the domain, primary-ideal, and Noetherian-ring material are in the commutative setting.
-  The wiki and algebra guide exposed both definitions side by side.
-
-- **Impact and owner:** the canonical card misstated the noncommutative notion and duplicated a second card for the commutative notion.
-  In a noncommutative ring, left and right zero divisors need not coincide; the simultaneous two-sided condition is not the standard generic definition.
-
-- **Uncertainty:** none about the defect.
-  The corpus currently needs the commutative notion; noncommutative left/right variants can be introduced separately if needed later.
-
-- **Repair:** a `CARD-04` repair restricts `D-4I3SL` to commutative rings, uses the standard annihilator definition, preserves the review prompt there, removes duplicate reader-facing references to `FD-S62UB`, and deletes the duplicate card.
-
 ### D-5JYEI delegated the separable-degree statement to an opaque screenshot
 
 - **Object and need:** `D-5JYEI`, Galois extension and Galois group.
