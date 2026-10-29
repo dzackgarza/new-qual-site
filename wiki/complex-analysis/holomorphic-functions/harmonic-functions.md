@@ -18,33 +18,7 @@ The real and imaginary parts of a holomorphic function are harmonic, and a harmo
 
 [[PR-JKE6C]]
 
-[[PR-K57J6]]
-
-::: {.proof}
-\envlist
-
-- By the Cauchy--Riemann equations,
-$$
-\begin{aligned}
-u_x = v_y && u_y = -v_x
-\end{aligned}.$$
-
-- Differentiate in $x$:
-$$
-\begin{aligned}
-u_{xx} = v_{yx} && u_{yx} = -v_{xx}
-\end{aligned}.$$
-- Differentiate in $y$:
-$$
-\begin{aligned}
-u_{xy} = v_{yy} && u_{yy} = -v_{xy}
-\end{aligned}.$$
-- A holomorphic function is analytic, so $u$ and $v$ are $C^\infty$, and by Clairaut's theorem the mixed partials agree. Hence
-$$
-u_{xx} + u_{yy} = 0, \qquad v_{xx} + v_{yy} = 0
-.$$
-
-:::
+[[E-TZJKN]]
 
 ## The mean value property
 
@@ -83,7 +57,6 @@ The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real 
 ## Exercises
 
 [[E-P2PEF]]
-[[E-TZJKN]]
 [[E-I6W47]]
 [[E-BEYZ5]]
 [[E-B4ZSQ]]

@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that if $f = u+iv$ is holomorphic then $u, v$ are harmonic.
+Let $\Omega\subseteq\CC$ be open and let $f = u+iv$ be [[D-E7A5W|holomorphic]] on $\Omega$, with $u,v$ real-valued. Show that $u$ and $v$ are [[D-CFBSA|harmonic]] on $\Omega$.
 :::
 
 ::: {.solution}
