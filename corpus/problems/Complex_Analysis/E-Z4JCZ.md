@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-Z4JCZ
 kind: problem
-title: $1/1+a^2+2a\cos(\theta)$, Poisson kernels
+title: $\int_0^{2\pi} d\theta/(1+a^2-2a\cos\theta)$ and the Poisson kernel
 classification:
   areas:
   - complex-analysis
@@ -14,47 +14,58 @@ classification:
   - Harmonic Functions
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed the formula without saying what a is; for complex a the formula is false, so the statement now takes a real with |a| != 1 and asks to show the formula.'
 ---
 
 ::: {.exercise}
-\[
+Let $a\in\RR$ with $\abs a\neq1$. Show that
+$$
 \int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos (\theta)}
-= \begin{cases}\frac{2 \pi}{a^{2}-1} & \text { if }|a|>1 \\ \frac{2 \pi}{1-a^{2}} & \text { if }|a|<1\end{cases}
-.\]
-
+= \begin{cases}\frac{2 \pi}{a^{2}-1} & \text { if }\abs a>1 \\ \frac{2 \pi}{1-a^{2}} & \text { if }\abs a<1.\end{cases}
+$$
 :::
 
 ::: {.solution}
-The usual substitution: $z=e^{i\theta}, \dz = (iz)\dtheta$.
-\[
-I\definedas \int_{[0, 2\pi]} \inverseof{\qty{a^2 - 2a\cos(\theta) + 1}} \dtheta
-&= \oint \inverseof{\qty{a^2-2(z+\inverseof{z}) + 1}} \inverseof{(iz)} \dz \\
-&= -i\oint \inverseof{\qty{za^2 - a(z^2+1) +z}} \dz \\
-&= -i \oint\inverseof{\qty{-az^2 + (a^2+1)z - a}}\dz \\
-&= {i\over a}\oint \inverseof{\qty{z^2 - \qty{a^2+a\over a}z + 1}} \dz \\
-&= {i\over a}\oint \inverseof{(z-a)} \inverseof{(z-\inverseof{a})} \dz
-,\]
-noting that ${a^2+a\over a} = a+\inverseof{a}$.
-Now there are two cases:
+Write $I$ for the integral.
+If $a=0$, the integrand is $1$ and $I = 2\pi = \frac{2\pi}{1-a^2}$, so assume $a\neq0$.
 
-- $\abs{a} < 1$: then $a\in \DD,\inverseof{a}\in \DD^c$, so there is a simple pole at $a$.
-  Then 
-  \[
-  I 
-  &= {i\over a}\, 2\pi i \Res_{z=a} \inverseof{(z-a)}\inverseof{(z-\inverseof{a})} \\
-  &=  -{2\pi \over a} \inverseof{(z-\inverseof{a})} \evalfrom_{z=a} \\
-  &= -{2\pi \over a(a-\inverseof{a})} \\
-  &= {2\pi \over 1 - a^2}
-  .\]
+::: pf
 
-- $\abs{a}> 1$: then $\inverseof{a} \in \DD, a\in \DD^c$ so there is a simple pole at $\inverseof{a}$.
-  Then 
-  \[
-  I 
-  &= {i\over a}\, 2\pi i \Res_{z=\inverseof{a} } \inverseof{(z-a)}\inverseof{(z-\inverseof{a})} \\
-  &=  -{2\pi \over a} \inverseof{(z-a)} \evalfrom_{z=\inverseof{a}} \\
-  &= -{2\pi \over a(\inverseof{a} - a)} \\
-  &= {2\pi \over a^2 - 1}
-  .\]
+::: {.pf-step #contour}
+$\displaystyle I = \frac ia\oint_{\abs z=1}\frac{dz}{(z-a)(z-a^{-1})}$.
+
+::: pf-proof
+Substitute $z = e^{i\theta}$, so $d\theta = \frac{dz}{iz}$ and $2\cos\theta = z + z^{-1}$.
+Then $iz\qty(1+a^2 - a(z+z^{-1})) = -i\qty(az^2 - (1+a^2)z + a) = -ia(z-a)(z-a^{-1})$.
+The integrand has no pole on $\abs z=1$ because $\abs a\neq1$.
+:::
+
+:::
+
+::: pf-step
+If $0<\abs a<1$, then $I = \boxed{\dfrac{2\pi}{1-a^2}}$.
+
+::: pf-proof
+Only the simple pole $a$ lies inside the circle, with residue $\frac{1}{a-a^{-1}}$.
+By step [](#contour){.pf-ref} and the residue theorem, $I = \frac ia\cdot 2\pi i\cdot\frac{1}{a-a^{-1}} = \frac{-2\pi}{a^2-1}$.
+:::
+
+:::
+
+::: pf-step
+If $\abs a>1$, then $I = \boxed{\dfrac{2\pi}{a^2-1}}$.
+
+::: pf-proof
+Only the simple pole $a^{-1}$ lies inside the circle, with residue $\frac{1}{a^{-1}-a}$.
+By step [](#contour){.pf-ref} and the residue theorem, $I = \frac ia\cdot2\pi i\cdot\frac{1}{a^{-1}-a} = \frac{-2\pi}{1-a^2}$.
+:::
+
+:::
+
+:::
 
 :::
