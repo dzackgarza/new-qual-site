@@ -98,3 +98,7 @@ The partial sums $S_N$ are polynomials converging locally uniformly to $f$ on th
 :::
 
 :::
+
+::: {.remark title="Holomorphy of the limit by Morera"}
+Part (b) also follows from Morera's theorem: for a closed triangle $T$ in a disc in $\Omega$, $\int_{\partial T}f=\lim_k\int_{\partial T}f_k=0$ by uniform convergence on $\partial T$ and Goursat's theorem.
+:::

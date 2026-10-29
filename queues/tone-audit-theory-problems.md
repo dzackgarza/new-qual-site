@@ -995,7 +995,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-N6PDJ.md` | `9a2be3b2a63158c8e66089e3098da3f4f60fd297` | `9a2be3b2a63158c8e66089e3098da3f4f60fd297` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-NIPUY.md` | `19c8d883d231a1935677233a8431f9ac7d178380` | `f8a0b738aca2ee092f8734bb93ea00a49bdbce39` | Read in full; removed internal commentary about an old solution; retained the counterexample and source-statement correction (PROSE-11). |
 | [x] | `corpus/problems/Complex_Analysis/E-NKDKF.md` | `cf6bac97d1757b2b5cf2bbd402bf8cec8a9f5b64` | `cf6bac97d1757b2b5cf2bbd402bf8cec8a9f5b64` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-NSN6G.md` | `bcbdb42d0867533e6b0ad305934b005308a0e020` | `bcbdb42d0867533e6b0ad305934b005308a0e020` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-NT2T3.md` | `2e8016bca3b83baf714b46df5ec05ec7cc856781` | `2e8016bca3b83baf714b46df5ec05ec7cc856781` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-NTKTA.md` | `6fad739dd9b95bc5182e45a55a8e4ab2a467bae4` | `6fad739dd9b95bc5182e45a55a8e4ab2a467bae4` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-NVCIF.md` | `4e94a42302612e88e82635fa87a8ee37827fb9e8` | `4e94a42302612e88e82635fa87a8ee37827fb9e8` | Read; retained |
