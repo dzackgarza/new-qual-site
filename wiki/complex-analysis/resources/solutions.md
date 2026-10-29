@@ -1,4 +1,5 @@
 ---
+title: Solutions
 order: 20
 ---
 
