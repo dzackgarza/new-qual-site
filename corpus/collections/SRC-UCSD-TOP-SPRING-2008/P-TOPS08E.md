@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS08E
 kind: problem
-title: "Every compact oriented n-manifold admits a degree-one map to S^n"
+title: 'Every compact oriented $n$-manifold admits a degree-one map to $S^n$'
 classification:
   areas:
   - topology

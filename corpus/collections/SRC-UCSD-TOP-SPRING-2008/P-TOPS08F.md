@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS08F
 kind: problem
-title: "A manifold admitting a degree-one map from S^n has the homology of S^n"
+title: 'A manifold receiving a degree-one map from $S^n$ has the homology of $S^n$'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS08C
 kind: problem
-title: "No antipodal-preserving map from S^n to S^m for n > m >= 1"
+title: 'No antipodal-preserving map $S^n\to S^m$ for $n>m\ge1$'
 classification:
   areas:
   - topology

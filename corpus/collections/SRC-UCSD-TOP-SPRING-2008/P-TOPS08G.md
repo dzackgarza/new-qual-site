@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS08G
 kind: problem
-title: "A degree-one self-map of the torus induces an SL(2,Z) action on H_1"
+title: 'A degree-one self-map of the torus induces an element of $\SL_2(\ZZ)$ on $H^1$'
 classification:
   areas:
   - topology

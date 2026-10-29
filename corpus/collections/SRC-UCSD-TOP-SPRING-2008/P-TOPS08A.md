@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS08A
 kind: problem
-title: "Fundamental group of RP^2 # RP^2"
+title: 'Fundamental group of $\RP^2\#\RP^2$'
 classification:
   areas:
   - topology
