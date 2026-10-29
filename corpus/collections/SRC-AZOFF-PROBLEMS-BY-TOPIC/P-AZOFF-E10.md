@@ -37,6 +37,10 @@ audit:
     |sin(nz)|<=e^(nc), so the nth summand is bounded by
     (e^c/2)^n. Since e^c/2<1, the Weierstrass M-test gives uniform
     convergence; compact subsets of the open strip lie in such a substrip.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked for uniform convergence on {Im z < ln 2}, false at z = -2i; the statement asks for uniform convergence on each closed substrip |Im z| <= c < ln 2 and local uniform convergence on |Im z| < ln 2. The rendered erratum remark is removed.'
 ---
 
 ::: {.problem}
@@ -172,18 +176,10 @@ $K$.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves the corrected uniform-convergence statement for every
-closed substrip, and step [](#s3){.pf-ref} gives the stated local uniform convergence.
+Step [](#s2){.pf-ref} gives uniform convergence on every closed substrip, and step [](#s3){.pf-ref} gives local uniform convergence on the open strip.
 
 :::
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the statement is false as written in the source.
-For $z = iy$ we have $\abs{\sin(nz)} = \sinh(n\abs{y})$, so at $z = -2i$ the terms have modulus $\sinh(2n)/2^n \to \infty$ and the series diverges, although $\operatorname{Im}(-2i) < \ln 2$.
-Even on the strip $\{\abs{\operatorname{Im} z} < \ln 2\}$, where the series converges, the convergence is not uniform: at $z = iy$ with $0 < y < \ln 2$ the terms are $i\sinh(ny)/2^n$, with $\sinh(ny)/2^n \ge (e^{y}/2)^n/4$ for $ny \ge 1$, and $e^y/2 \to 1$ as $y \to \ln 2$, so no tail is uniformly small.
-The correct statement is that the series converges uniformly on $\{z : \abs{\operatorname{Im} z} \le c\}$ for each $0\le c < \ln 2$, hence locally uniformly on $\{z : \abs{\operatorname{Im} z} < \ln 2\}$.
 :::
