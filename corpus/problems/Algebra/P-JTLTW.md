@@ -26,21 +26,37 @@ Let $G$ be a group of order $p^3$, where $p$ is prime. Show that $Z(G)$ is nontr
 :::
 
 ::: {.solution}
-Let $G$ act on itself by conjugation. The class equation is
-\[
-|G|=|Z(G)|+\sum_i [G:C_G(x_i)],
-\]
-where the $x_i$ represent the noncentral conjugacy classes.
 
-For noncentral $x_i$, the centralizer $C_G(x_i)$ is a proper subgroup of the $p$-group $G$, so
-\[
-[G:C_G(x_i)]
-\]
-is divisible by $p$. Hence every term in the sum is divisible by $p$. Since $|G|=p^3$ is divisible by $p$, the class equation gives
-\[
-|Z(G)|\equiv0\pmod p.
-\]
-But the identity lies in $Z(G)$, so $|Z(G)|\ge1$. Therefore $|Z(G)|\ge p$, and $Z(G)$ is nontrivial.
+::: pf
 
-The center is characteristic in $G$, hence normal. Thus $G$ has a nontrivial normal subgroup.
+::: {.pf-step #center}
+
+$Z(G)\ne1$.
+
+::: pf-proof
+
+The class equation for the conjugation action reads
+$$
+\abs{G}=\abs{Z(G)}+\sum_i[G:C_G(x_i)],
+$$
+where the $x_i$ represent the noncentral conjugacy classes. For noncentral $x_i$, $C_G(x_i)$ is a proper subgroup of $G$, so $[G:C_G(x_i)]$ is a positive power of $p$. Since $p\mid\abs{G}$, it follows that $p\mid\abs{Z(G)}$, and $\abs{Z(G)}\ge1$ gives $\abs{Z(G)}\ge p$.
+
+:::
+
+:::
+
+::: pf-step
+
+$G$ has a nontrivial normal subgroup.
+
+::: pf-proof
+
+The center is normal, and it is nontrivial by step [](#center){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
