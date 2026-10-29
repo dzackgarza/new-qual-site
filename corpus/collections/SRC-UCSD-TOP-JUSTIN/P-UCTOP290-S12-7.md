@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP290-S12-7
 kind: problem
-title: "The cohomology ring of the n-torus is an exterior algebra on H^1"
+title: 'The cohomology ring of the $n$-torus is an exterior algebra on $H^1$'
 classification:
   areas:
   - topology

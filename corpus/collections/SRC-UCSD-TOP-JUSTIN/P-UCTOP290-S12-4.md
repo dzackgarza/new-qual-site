@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP290-S12-4
 kind: problem
-title: "The torus and the wedge S^1 vee S^1 vee S^2 are not homotopy-equivalent"
+title: 'The torus and $S^1\vee S^1\vee S^2$ are not homotopy equivalent'
 classification:
   areas:
   - topology

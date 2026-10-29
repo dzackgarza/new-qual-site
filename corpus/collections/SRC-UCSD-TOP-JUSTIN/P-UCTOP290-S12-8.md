@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP290-S12-8
 kind: problem
-title: "No retraction from CP^n onto CP^k for k < n, and the mod-2 analogue for RP^n"
+title: 'No retraction $\CP^n\to\CP^k$ for $k<n$, and the mod $2$ analogue for $\RP^n$'
 classification:
   areas:
   - topology
