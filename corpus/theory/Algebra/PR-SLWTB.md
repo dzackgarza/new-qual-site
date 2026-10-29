@@ -13,6 +13,7 @@ classification:
   - Groups
 relations: []
 review: draft
+---
 
 ::: {.proposition}
 Let $p$ and $q$ be primes with $p<q$, and let $G$ be a group of order $pq$.
