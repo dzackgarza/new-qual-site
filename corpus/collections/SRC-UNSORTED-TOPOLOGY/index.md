@@ -27,7 +27,6 @@ source:
   - id: E-5CCAN
   - id: E-5VQHD
   - id: E-5W3U6
-  - id: E-5ZG7B
   - id: E-6MBWQ
   - id: E-6W4WA
   - id: E-6XHXX
