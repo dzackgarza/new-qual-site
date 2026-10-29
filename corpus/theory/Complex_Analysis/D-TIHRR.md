@@ -11,9 +11,7 @@ classification:
   topics:
   - Equicontinuity
   - Sequences of Functions
-relations:
-- kind: variant-of
-  target: D-5Y4MC
+relations: []
 review: draft
 ---
 
