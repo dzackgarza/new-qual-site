@@ -20,13 +20,30 @@ Show that there is no continuous square root function defined on all of $\CC$.
 :::
 
 ::: {.solution}
-Suppose $f(z)^2 = z$.
-Then $f$ is a section to the covering map
-\[
-p: \units{\CC} &\to \units{\CC} \\
-z & \mapsto z^2
-,\]
-so $p\circ f = \id$.
-Using $\pi_1(\units{\CC}) = \ZZ$, the induced maps are $p_*(1) = 2$ and $f_*(1) = n$ for some $n\in \ZZ$.
-But then $p_* \circ f_*$ is multiplication by $2n$, contradicting $p_* \circ f_* = \id$ by functoriality.
+Suppose toward a contradiction that $f:\CC\to\CC$ is continuous with $f(z)^2=z$ for all $z$, and let $p:\units{\CC}\to\units{\CC}$ be the covering map $p(z)=z^2$.
+
+::: pf
+
+::: {.pf-step #section}
+$f$ restricts to a continuous map $\units{\CC}\to\units{\CC}$ with $p\circ f=\id$.
+
+::: pf-proof
+For $z\neq0$, $f(z)^2=z\neq0$, so $f(z)\neq0$ and $p(f(z))=z$.
+:::
+
+:::
+
+::: pf-step
+This is impossible.
+
+::: pf-proof
+Identify $\pi_1(\units{\CC})$ with $\ZZ$ by the winding number about $0$.
+Then $p_*$ is multiplication by $2$, and $f_*$ is multiplication by some $n\in\ZZ$.
+By functoriality and step [](#section){.pf-ref}, $p_*\circ f_*=\id$, so $2n=1$, which has no solution in $\ZZ$.
+:::
+
+:::
+
+:::
+
 :::
