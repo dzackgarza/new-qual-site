@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF18D
 kind: problem
-title: "Integral of |f(x) - f(y)| over a thin diagonal strip"
+title: 'Integral of $\abs{f(x)-f(y)}$ over a thin diagonal strip'
 classification:
   areas:
   - real-analysis

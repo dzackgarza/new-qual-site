@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF18C
 kind: problem
-title: "Dilation of L^1 function vanishes a.e."
+title: '$f(n^2x)\to0$ a.e. for $f\in L^1$'
 classification:
   areas:
   - real-analysis

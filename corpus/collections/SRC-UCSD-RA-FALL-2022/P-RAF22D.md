@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF22D
 kind: problem
-title: "Compact metric spaces are second countable and C(X) is separable"
+title: 'Compact metric spaces are second countable and $C(X)$ is separable'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF18F
 kind: problem
-title: "A bounded linear functional on L^infinity not arising from L^1"
+title: 'A bounded linear functional on $L^\infty$ not arising from $L^1$'
 classification:
   areas:
   - real-analysis

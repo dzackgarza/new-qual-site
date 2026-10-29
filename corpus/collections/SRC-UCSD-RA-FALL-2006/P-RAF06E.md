@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF06E
 kind: problem
-title: "Laplace transform operator: Schur's test bound on L^p and L^2"
+title: 'Laplace transform operator: Schur''s test bound on $L^p$ and $L^2$'
 classification:
   areas:
   - real-analysis

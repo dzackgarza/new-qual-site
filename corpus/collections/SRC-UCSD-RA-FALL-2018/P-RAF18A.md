@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF18A
 kind: problem
-title: "L^1 convergence from a.e. convergence with uniformly bounded running maxima"
+title: '$L^1$ convergence from a.e. convergence with uniformly bounded running maxima'
 classification:
   areas:
   - real-analysis

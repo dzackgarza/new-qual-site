@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF25F
 kind: problem
-title: "Separability of l^2 and sequential compactness of uncountable subsets"
+title: 'Separability of $\ell^2$ and sequential compactness of uncountable subsets'
 classification:
   areas:
   - real-analysis

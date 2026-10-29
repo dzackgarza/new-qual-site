@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF17G
 kind: problem
-title: "Precompactness of Sobolev-type unit balls in C([0,1])"
+title: 'Precompactness of Sobolev-type unit balls in $C([0,1])$'
 classification:
   areas:
   - real-analysis

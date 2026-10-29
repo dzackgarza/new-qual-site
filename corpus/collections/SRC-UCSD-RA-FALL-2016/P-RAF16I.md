@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF16I
 kind: problem
-title: "Ratio of L^k norms converges to L^infinity norm"
+title: 'Ratios of $L^k$ norms converge to the $L^\infty$ norm'
 classification:
   areas:
   - real-analysis

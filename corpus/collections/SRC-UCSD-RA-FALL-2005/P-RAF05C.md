@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF05C
 kind: problem
-title: "e^x sin(e^x) defines a tempered distribution"
+title: '$e^x\sin(e^x)$ defines a tempered distribution'
 classification:
   areas:
   - real-analysis

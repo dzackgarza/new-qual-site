@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF25E
 kind: problem
-title: "Translations of an L^2 function with nonvanishing Fourier transform span a dense subspace"
+title: 'Translations of an $L^2$ function with nonvanishing Fourier transform span a dense subspace'
 classification:
   areas:
   - real-analysis

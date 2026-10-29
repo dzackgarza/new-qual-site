@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF17B
 kind: problem
-title: "True/false on convergence in L^p and pointwise convergence"
+title: 'True or false on convergence in $L^p$ and pointwise convergence'
 classification:
   areas:
   - real-analysis

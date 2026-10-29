@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF10D
 kind: problem
-title: "Continuous functions in a closed subspace of L^2 are bounded in L^infinity"
+title: 'Continuous functions in a closed subspace of $L^2$ are bounded in $L^\infty$'
 classification:
   areas:
   - real-analysis

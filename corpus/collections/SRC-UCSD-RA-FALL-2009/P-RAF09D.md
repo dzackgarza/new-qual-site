@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF09D
 kind: problem
-title: "Principal value integral and distributional derivatives of log|x|"
+title: 'Principal value integral and distributional derivatives of $\log\abs{x}$'
 classification:
   areas:
   - real-analysis

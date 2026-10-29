@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF11D
 kind: problem
-title: "Convolution with L^1 kernel preserves weak L^2 convergence"
+title: 'Convolution with an $L^1$ kernel preserves weak $L^2$ convergence'
 classification:
   areas:
   - real-analysis

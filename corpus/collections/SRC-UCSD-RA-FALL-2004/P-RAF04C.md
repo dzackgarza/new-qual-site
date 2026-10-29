@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF04C
 kind: problem
-title: "Translation inner product of L^2 functions vanishes at infinity"
+title: 'Translation inner product of $L^2$ functions vanishes at infinity'
 classification:
   areas:
   - real-analysis

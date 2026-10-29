@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF16B
 kind: problem
-title: "Limits involving sin^k x, convergence in measure, and distributional derivatives"
+title: 'Limits involving $\sin^k x$, convergence in measure, and distributional derivatives'
 classification:
   areas:
   - real-analysis

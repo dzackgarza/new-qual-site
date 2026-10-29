@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF18G
 kind: problem
-title: "Derivative of an integral involving min(x,y)"
+title: 'Derivative of an integral involving $\min(x,y)$'
 classification:
   areas:
   - real-analysis

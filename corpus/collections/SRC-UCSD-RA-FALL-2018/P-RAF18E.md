@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF18E
 kind: problem
-title: "Interpolation of L^p convergence and weak convergence"
+title: 'Interpolation of $L^p$ convergence and weak convergence'
 classification:
   areas:
   - real-analysis

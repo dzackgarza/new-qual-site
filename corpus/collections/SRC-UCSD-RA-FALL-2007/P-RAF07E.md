@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF07E
 kind: problem
-title: "Tempered distribution e^{iax} and its Fourier transform"
+title: 'The tempered distribution $e^{iax}$ and its Fourier transform'
 classification:
   areas:
   - real-analysis

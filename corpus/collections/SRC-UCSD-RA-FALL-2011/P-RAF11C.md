@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF11C
 kind: problem
-title: "Uniform integrability and convergence in L^1"
+title: 'Uniform integrability and convergence in $L^1$'
 classification:
   areas:
   - real-analysis

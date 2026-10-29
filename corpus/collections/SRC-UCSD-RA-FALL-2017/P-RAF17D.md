@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF17D
 kind: problem
-title: "L^p integrability from weak-type boundedness"
+title: '$L^p$ integrability from weak-type boundedness'
 classification:
   areas:
   - real-analysis

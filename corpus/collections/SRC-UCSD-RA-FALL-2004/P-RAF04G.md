@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF04G
 kind: problem
-title: "Polynomials in a continuous injective function are dense in L^1([-1,1])"
+title: 'Polynomials in a continuous injective function are dense in $L^1([-1,1])$'
 classification:
   areas:
   - real-analysis

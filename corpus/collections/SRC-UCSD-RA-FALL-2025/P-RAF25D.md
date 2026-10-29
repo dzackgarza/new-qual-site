@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF25D
 kind: problem
-title: "Orthogonal projection onto the mean-zero subspace of L^2"
+title: 'Orthogonal projection onto the mean-zero subspace of $L^2$'
 classification:
   areas:
   - real-analysis

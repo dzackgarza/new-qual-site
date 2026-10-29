@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF16F
 kind: problem
-title: "Vanishing of C^1 function from moment conditions"
+title: 'Vanishing of a $C^1$ function from moment conditions'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF06B
 kind: problem
-title: "L^p convergence implies convergence in measure; converse with domination"
+title: '$L^p$ convergence implies convergence in measure; converse with domination'
 classification:
   areas:
   - real-analysis

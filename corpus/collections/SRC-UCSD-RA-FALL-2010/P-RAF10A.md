@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF10A
 kind: problem
-title: "True/false on Banach spaces, L^p spaces, and topologies"
+title: 'True or false on Banach spaces, $L^p$ spaces, and topologies'
 classification:
   areas:
   - real-analysis

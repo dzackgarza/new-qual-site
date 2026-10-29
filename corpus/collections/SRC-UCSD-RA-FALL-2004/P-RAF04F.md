@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF04F
 kind: problem
-title: "L^1 convergence of derivatives implies absolute continuity of the limit"
+title: '$L^1$ convergence of derivatives implies absolute continuity of the limit'
 classification:
   areas:
   - real-analysis

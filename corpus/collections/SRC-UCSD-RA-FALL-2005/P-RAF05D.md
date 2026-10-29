@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF05D
 kind: problem
-title: "l^infinity is not separable"
+title: '$\ell^\infty$ is not separable'
 classification:
   areas:
   - real-analysis

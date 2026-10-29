@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF04B
 kind: problem
-title: "Limit of the integral of g(x) sin^2(nx) as n goes to infinity"
+title: 'Limit of $\int_\RR g(x)\sin^2(nx)\,dx$ for $g\in L^1$'
 classification:
   areas:
   - real-analysis

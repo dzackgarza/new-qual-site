@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF16G
 kind: problem
-title: "Absolutely convergent series from bounded linear functional on c_0"
+title: 'Absolutely convergent series from a bounded linear functional on $c_0$'
 classification:
   areas:
   - real-analysis
