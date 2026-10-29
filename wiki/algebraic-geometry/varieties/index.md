@@ -24,7 +24,7 @@ At the level of [@Har10a, Chapter I].
 
 - [[algebraic-geometry/varieties/regular-functions|Regular functions]], the rings $\OO(X)$, $\OO_{X,p}$, and $k(X)$, and quasi-affine varieties.
 
-- [[algebraic-geometry/varieties/morphisms-of-varieties|Morphisms]], morphisms of varieties, the equivalence between affine varieties and finitely generated reduced $k$-algebras, and the Segre and Veronese embeddings.
+- [[algebraic-geometry/varieties/morphisms-of-varieties|Morphisms]], morphisms of varieties, the equivalence between affine varieties and finitely generated $k$-algebras that are domains, and the Segre and Veronese embeddings.
 
 - [[algebraic-geometry/varieties/rational-maps|Rational maps]], dominant rational maps, birational equivalence, and the equivalence with finitely generated field extensions of $k$.
 
