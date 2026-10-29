@@ -18,9 +18,13 @@ audit:
   date: 2026-09-14
   note: Records the source defect and proves both requested assertions after the standard correction $V=\mathbb C^n$ (equivalently, after complexifying the real operator).
 ---
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source sets V = R^n while allowing complex lambda, so T - lambda I is not an operator on V. The statement now sets V = C^n.
 
 ::: {.problem}
-The source sets $V=\mathbb R^n$, lets $T:V\to V$ be linear, and for $\lambda\in\mathbb C$ defines
+Let $V=\mathbb C^n$, let $T:V\to V$ be linear, and for $\lambda\in\mathbb C$ define
 \[
 V(\lambda)=\{v\in V:(T-\lambda I)^Nv=0\text{ for some }N\geq1\}.
 \]
@@ -43,11 +47,6 @@ Hint: raise both sides of
 =I
 \]
 to a sufficiently high power.
-:::
-
-::: {.remark}
-As printed, the definition is not meaningful for nonreal $\lambda$: if $V=\mathbb R^n$, then $T-\lambda I$ is not an endomorphism of $V$.
-Replace $V$ by $\mathbb C^n$, or equivalently complexify $T$.
 :::
 
 ::: {.solution}
@@ -215,7 +214,7 @@ Every vector in the intersection is zero by step [](#s1-5){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s1-2){.pf-ref} proves part (a), with the uniform choice $M=n$, and step [](#s1-6){.pf-ref} proves part (b) for the corrected complexified statement.
+Step [](#s1-2){.pf-ref} proves part (a), with the uniform choice $M=n$, and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 
