@@ -19,18 +19,46 @@ Let $f\in \QQ[x]$ be an irreducible quintic with exactly two non-real roots. Pro
 :::
 
 ::: {.solution}
-Let $L$ be the splitting field and let
-\[
-G=\operatorname{Gal}(L/\QQ)\le S_5
-\]
-act on the five roots.
+Let $L$ be the splitting field of $f$, and regard $G=\Gal(L/\QQ)$ as a subgroup of $S_5$ through its action on the five distinct roots of $f$.
 
-Because $f$ is irreducible, this action is transitive. Hence $5\mid |G|$, so by Cauchy's theorem $G$ contains an element of order $5$, necessarily a $5$-cycle.
+::: pf
 
-Since $f$ has rational coefficients and exactly two non-real roots, complex conjugation fixes the three real roots and swaps the two non-real conjugate roots. Thus complex conjugation acts as a transposition in $G$.
+::: {.pf-step #five-cycle}
 
-A $5$-cycle together with any transposition generates $S_5$: after conjugating the transposition by powers of the $5$-cycle one obtains enough adjacent/star transpositions to generate all of $S_5$. Therefore
-\[
-G=S_5.
-\]
+$G$ contains a $5$-cycle.
+
+::: pf-proof
+
+Because $f$ is irreducible, $G$ acts transitively on the roots, so $5\mid\abs{G}$. By Cauchy's theorem $G$ contains an element of order $5$, and an element of order $5$ in $S_5$ is a $5$-cycle.
+
+:::
+
+:::
+
+::: {.pf-step #transposition}
+
+$G$ contains a transposition.
+
+::: pf-proof
+
+Complex conjugation restricts to an automorphism of $L$. It fixes the three real roots and swaps the two non-real roots, which are conjugate because $f$ has rational coefficients.
+
+:::
+
+:::
+
+::: pf-step
+
+$G=S_5$.
+
+::: pf-proof
+
+Let $\sigma$ be the $5$-cycle of step [](#five-cycle){.pf-ref} and $\tau=(a\ b)$ the transposition of step [](#transposition){.pf-ref}. Since $\sigma$ generates a transitive cyclic group of prime order, some power $\sigma^k$ is a $5$-cycle with $\sigma^k(a)=b$. Labelling the roots so that $\sigma^k=(1\ 2\ 3\ 4\ 5)$ and $\tau=(1\ 2)$, conjugation by powers of $\sigma^k$ gives $(2\ 3)$, $(3\ 4)$ and $(4\ 5)$ in $G$. The adjacent transpositions $(i\ i{+}1)$ generate $S_5$.
+
+:::
+
+:::
+
+:::
+
 :::
