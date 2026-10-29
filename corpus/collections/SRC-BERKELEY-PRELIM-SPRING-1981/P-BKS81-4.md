@@ -22,6 +22,10 @@ audit:
     Checked the radial logistic equation, the finite backward-time blow-up
     counterexample to Part 1, the explicit global forward solution, and the
     convergence of the radius to one.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part 1 of the source asks for a unique solution defined for all real t, but for x_0^2+y_0^2>1 the radius blows up at a finite negative time. Part 1 now asks for a unique solution defined for all t >= 0.
 ---
 
 ::: {.problem}
@@ -32,7 +36,7 @@ Consider
 \frac{dy}{dt}=-x+y(1-x^2-y^2).
 \]
 
-1. Show that for every initial condition $(x(0),y(0))=(x_0,y_0)$ there is a unique solution defined for all $t\in\mathbb R$.
+1. Show that for every initial condition $(x(0),y(0))=(x_0,y_0)$ there is a unique solution defined for all $t\geq 0$.
 2. Show that if $x_0\ne0$ and $y_0\ne0$, then the solution approaches the circle $x^2+y^2=1$ as $t\to\infty$.
 :::
 
@@ -68,43 +72,9 @@ $$
 
 :::
 
-::: {.pf-step #part-one-is-false}
-Part (1) is false as printed.
-
-::: pf-proof
-Take
-$$
-(x_0,y_0)=(2,0),
-\qquad
-s_0=4.
-$$
-The scalar equation in step [](#radial-ode){.pf-ref} with this initial value has the solution
-$$
-s(t)=\frac{4}{4-3e^{-2t}}.
-$$
-Its denominator vanishes at
-$$
-t_*
-=
-\frac12\log\frac34
-<0,
-$$
-and
-$$
-s(t)\longrightarrow+\infty
-\qquad
-\text{as }t\downarrow t_*.
-$$
-Any solution of the original system must have its squared radius satisfy
-step [](#radial-ode){.pf-ref}, so no solution with this initial condition can extend to all
-$t\in\RR$.
-:::
-
-:::
-
 ::: {.pf-step #forward-solution-exists}
-The corrected forward-time assertion is true: for every initial
-condition there is a unique solution defined for all $t\ge0$.
+For every initial condition there is a unique solution defined for
+all $t\ge0$. This is Part (1).
 
 ::: pf-proof
 The vector field is polynomial, hence locally Lipschitz, so the initial-value
@@ -192,30 +162,5 @@ $\abs{r-1}$, so the asserted distance tends to zero.
 :::
 
 :::
-
-::: {.pf-step #summary}
-Thus Part (1) is false as stated, while its forward-time correction
-and Part (2) are true.
-
-::: pf-proof
-Step [](#part-one-is-false){.pf-ref} gives the counterexample to the printed Part (1), step [](#forward-solution-exists){.pf-ref} proves
-the corrected forward-time assertion, and step [](#approaches-unit-circle){.pf-ref} proves Part (2).
 :::
-
-:::
-
-::: pf-qed
-Step [](#summary){.pf-ref} settles both printed requests, including the necessary correction
-to the first.
-:::
-
-:::
-:::
-
-::: {.remark}
-Part (1) is false as printed. Replacing "defined for all $t\in\mathbb R$"
-by "defined for all $t\ge0$" makes it correct for every initial condition.
-The original two-sided statement is correct exactly for initial conditions
-satisfying $x_0^2+y_0^2\le1$; when $x_0^2+y_0^2>1$, the radial solution
-blows up at a finite negative time.
 :::
