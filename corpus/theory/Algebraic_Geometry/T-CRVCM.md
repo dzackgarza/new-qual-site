@@ -66,12 +66,11 @@ The realization inside $\CC$ identifies endomorphisms with lattice-preserving sc
 Given $\alpha$ with $\alpha\Lambda \subseteq \Lambda$, multiplication by $\alpha$ descends to a holomorphic endomorphism of $\CC/\Lambda$ fixing $0$, which is algebraic by GAGA. Conversely a holomorphic map $\CC/\Lambda \to \CC/\Lambda$ fixing $0$ lifts to an entire map of $\CC$ fixing $0$ and commuting with $\Lambda$-translation, whose derivative is $\Lambda$-periodic and therefore constant; so the lift is $z \mapsto \alpha z$.
 Addition of endomorphisms becomes addition of scalars and composition becomes multiplication, so the identification is a ring isomorphism, not just a bijection.
 
-Why the dichotomy is sharp: $R_\Lambda \subseteq \Lambda$ because $\alpha = \alpha \cdot 1 \in \Lambda$, so $R_\Lambda$ is a rank-one or rank-two subgroup of $\Lambda \cong \ZZ^2$ closed under multiplication.
+The dichotomy has no intermediate case. Indeed, $R_\Lambda \subseteq \Lambda$ because $\alpha = \alpha \cdot 1 \in \Lambda$, so $R_\Lambda$ is a rank-one or rank-two subgroup of $\Lambda \cong \ZZ^2$ closed under multiplication.
 Rank one is $\ZZ$.
-Rank two means some $\alpha \notin \RR$ satisfies a monic-after-clearing integral quadratic, and since $\alpha^2 \in R_\Lambda$ is an integer combination of $1$ and $\alpha$, that quadratic has no real root; writing $\alpha = a + b\tau$ with $b \neq 0$ then puts $\tau$ in the same imaginary quadratic field.
-There is no intermediate case, and in particular the endomorphism ring of an elliptic curve over $\CC$ is never an order in a quaternion algebra --- that happens only for supersingular curves in characteristic $p$.
+If the rank is two, then $R_\Lambda$ contains some $\alpha \notin \RR$, since $\Lambda \cap \RR = \ZZ$; as $\alpha^2 \in R_\Lambda$ is an integer combination of $1$ and $\alpha$, the element $\alpha$ is a root of a monic integral quadratic with no real root; writing $\alpha = a + b\tau$ with $b \neq 0$ then puts $\tau$ in the same imaginary quadratic field.
+In particular the endomorphism ring of an elliptic curve over $\CC$ is never an order in a quaternion algebra --- that happens only for supersingular curves in characteristic $p$.
 
 Complex multiplication is decided by the lattice parameter $\tau$, and only countably many $\tau$ are imaginary quadratic, so only countably many $j \in \CC$ are CM $j$-invariants; the generic curve has $\operatorname{End} = \ZZ$.
-That still leaves it hard to decide for a given equation, because passing from an equation to $\tau$ requires transcendental data.
-The route that does work is class field theory.
+Passing from an equation to $\tau$ requires transcendental data; [[T-CRVCMCFT]] gives an arithmetic test on $j$ instead.
 :::
