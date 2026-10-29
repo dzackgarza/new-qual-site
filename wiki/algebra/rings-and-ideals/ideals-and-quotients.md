@@ -101,8 +101,6 @@ An element that is nilpotent modulo the nilradical is nilpotent, and the nilradi
 
 [[P-Q67AG]]
 
-[[E-AMD-564ETBH5]]
-
 [[E-AMD-E3N4BHJH]]
 
 [[P-AMD-FEHSX2WH]]

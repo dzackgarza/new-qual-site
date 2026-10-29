@@ -326,7 +326,6 @@ source:
   - id: P-AMD-2NXEX5LK
   - id: P-AMD-FEHSX2WH
   - id: P-AMD-QBEEJKCX
-  - id: P-AMD-ZIGVO4GJ
   - id: P-AOLOK
   - id: P-AP4TX
   - id: P-APB3H
@@ -536,7 +535,6 @@ source:
   - id: P-MQ3H7
   - id: P-MQK32
   - id: P-MUABR
-  - id: P-MV6ZQ
   - id: P-MVETM
   - id: P-MWSPM
   - id: P-MZIFW
