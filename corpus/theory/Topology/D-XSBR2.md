@@ -19,7 +19,7 @@ The \dfn{direct product} of the family is the set
 $$
 \prod_{\alpha\in A} M_\alpha \coloneqq \theset{ (m_\alpha)_{\alpha\in A} \st m_\alpha \in M_\alpha \text{ for all } \alpha\in A }
 $$
-with componentwise addition and scalar multiplication, together with the projections $\pi_\beta\colon\prod_{\alpha\in A} M_\alpha\to M_\beta$, $(m_\alpha)_{\alpha\in A}\mapsto m_\beta$, for $\beta\in A$.
+with componentwise addition and scalar multiplication, together with the projections $\pi_\beta\colon\prod_{\alpha\in A} M_\alpha\to M_\beta$, $(m_\alpha)_{\alpha\in A}\mapsto m_\beta$, for $\beta\in A$ [@DF04].
 :::
 
 ::: {.proposition}
@@ -28,9 +28,5 @@ Thus $\prod_{\alpha\in A} M_\alpha$ is the categorical product of the family in 
 :::
 
 ::: {.example}
-In $\Top$, the categorical product of a family of spaces $(X_\alpha)_{\alpha\in A}$ is the set $\prod_{\alpha\in A} X_\alpha$ with the [[D-JKH35|product topology]], the coarsest topology for which every projection $\pi_\beta$ is continuous.
-:::
-
-::: {.concept}
-[@DF04]; [@Hat02].
+In $\Top$, the categorical product of a family of spaces $(X_\alpha)_{\alpha\in A}$ is the set $\prod_{\alpha\in A} X_\alpha$ with the [[D-JKH35|product topology]], the coarsest topology for which every projection $\pi_\beta$ is continuous [@Hat02].
 :::

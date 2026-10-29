@@ -34,10 +34,6 @@ c. Let $X = (0, 1]$.
 Is $X$ compact?
 :::
 
-::: {.concept}
-See Munkres p.164, especially for (ii).
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -48,7 +44,7 @@ A topological space is compact if every open cover has a finite subcover.
 
 ::: pf-proof
 
-This is the definition of compactness.
+This is the definition of compactness [@Mun00, p. 164].
 
 :::
 
