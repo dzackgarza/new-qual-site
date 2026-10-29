@@ -470,7 +470,9 @@ Inline mathematics is `$…$` and displayed mathematics is `$$…$$`. Multi-line
 
 The natural numbers, integers, rationals, reals, complex numbers, finite fields, and affine and projective space are written with the macros in `vocabularies/macros.json` — `\NN`, `\ZZ`, `\QQ`, `\RR`, `\CC`, `\FF`, `\AA`, `\PP` — so their typeface is set in one place.
 This applies in problem statements too: the typeface of $\QQ$ is presentation, not the source's notation.
-The disk and other named sets follow the same rule where the vocabulary defines a macro (`\DD`).
+Every other named object written in blackboard bold has one semantic macro per meaning, defined once in the pandoc-config preamble and mirrored by `just macros`: the disk `\DD`, the upper half-plane `\halfplane`, the quaternions `\quaternions`, the circle group `\circlegroup`, a probability `\Prob`, the irrationals `\irrationals`, and so on.
+A letter shared by several meanings is never written raw: the display choice belongs to the meaning, not the letter.
+A symbol one card defines for its own use takes the letter macro (`\bE`). A new meaning gets a new macro in the preamble, not a raw `\mathbb`; the card check rejects any raw `\mathbb` or `\Bbb`.
 
 **Bad:** `\mathbb{Q}`, `\mathbb Q`, `\Bbb Q`, `\mathbf{Q}`, or a bare `Q` for the rationals.
 

@@ -21,8 +21,9 @@ from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSour
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
 TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
-# STYLE-03: these sets have vocabulary macros (\NN, \ZZ, \QQ, \RR, \CC, \FF, \DD, \RP, \CP).
-RAW_NUMBER_SYSTEM = re.compile(r"\\(?:mathbb|Bbb)\s*(?:\{\s*(?:[NZQRCFD]|RP|CP)\s*\}|[NZQRCFD](?![A-Za-z]))")
+# STYLE-03: every blackboard-bold object has a semantic macro in vocabularies/macros.json,
+# so the display choice for each meaning is made once in the preamble.
+RAW_BLACKBOARD = re.compile(r"\\(?:mathbb|Bbb)(?![A-Za-z])")
 
 
 def card_header(text: str, path: Path) -> Card:
@@ -56,8 +57,8 @@ def check_git_changes(changes: list[GitChange]) -> int:
                 card_header(source, change.path)
             for diagram in TIKZCD.findall(source):
                 compile_tikzcd_block(diagram)
-            if raw := RAW_NUMBER_SYSTEM.search(source):
-                errors.append(f"{change.path}: {raw.group()} is written with its vocabulary macro (STYLE-03)")
+            if raw := RAW_BLACKBOARD.search(source):
+                errors.append(f"{change.path}: {raw.group()} is written with its semantic macro (STYLE-03)")
         except ValueError as exc:
             errors.append(str(exc))
         except RuntimeError as exc:

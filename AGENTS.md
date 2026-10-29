@@ -286,8 +286,10 @@ reading and mathematical judgment.
 Notation is the exception. Rewriting a raw LaTeX command to the vocabulary macro that
 has exactly one meaning for it (`\mathbb{R}` to `\RR`) changes no mathematics, so it
 is one codemod over the whole corpus plus a commit check that rejects the raw form,
-never a card-by-card agent sweep. Only a form with several meanings (`\mathbb{P}`:
-projective space, a probability, the irrationals) is read in context.
+never a card-by-card agent sweep. A letter with several meanings (`\mathbb{P}`:
+projective space, a probability, the irrationals) gets one semantic macro per meaning
+in the preamble; each occurrence is classified once by meaning, and the same codemod
+applies the classification.
 
 ## Do not end a turn without the next source started
 
