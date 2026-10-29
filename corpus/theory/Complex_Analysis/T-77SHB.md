@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-The [[D-DKJEU|fractional linear transformation]]
+The [[D-FRVBV|fractional linear transformation]]
 $$
 G(w)=i\,\frac{1-w}{1+w}
 $$

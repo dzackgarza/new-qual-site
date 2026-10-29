@@ -50,3 +50,8 @@ T'(z)=\frac{a(cz+d)-c(az+b)}{(cz+d)^2}=\frac{ad-bc}{(cz+d)^2},
 $$
 which is nonzero because $ad-bc\neq0$.
 :::
+
+::: {.remark}
+The condition $ad-bc\neq0$ says that the vectors $(a,b)$ and $(c,d)$ are linearly independent.
+In particular $(c,d)\neq(0,0)$, so the domain $\{z\in\CC:cz+d\neq0\}$ is $\CC$ minus at most one point, and $T$ is not constant there.
+:::
