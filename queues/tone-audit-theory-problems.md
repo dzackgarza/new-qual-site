@@ -2621,7 +2621,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Real_Analysis/FD-OOCQD.md` | `f61c0e4537dce45e7fd3293a42bd6165241af6d8` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-Q3XHG.md` | `4b9a952c67efcf492dd78172805111602e37a87d` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-Q7EEG.md` | `13c5ce4fb993e19e74fdbb9182af2363ce4104b5` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/FD-QEQIY.md` | `ceb18f433e9f08617b89d7c3216b3848817efa64` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-SMWLB.md` | `20e65c0bacc1db5614eb8364d5902171b121e9ca` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-ST7TD.md` | `7c0e927cc26b28e9f0bde4d24fad79637a56034b` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FD-T7SN6.md` | `1f0348f19c62d8c0393ce9656f06e17678e35df1` | — | Pending |
@@ -2674,10 +2673,8 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Real_Analysis/FF-NOX4C.md` | `101505056fa431cc353e5606a79c58e172beb242` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-NRCZN.md` | `b8c7bc77a1d68a819abc0a4d755af5bd4ad30bc0` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-OQ6YZ.md` | `71fbb73686a05afcff73bdac3085ff80d702af0c` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/FF-QLQYF.md` | `52ba6ed73c145abd0ef3a0a81c335ddf6bc5783f` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-QLRXX.md` | `4a3de0f82f14ba936f3af43cd5c7812d67389b2e` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-SF7VN.md` | `56c5ce99bf88fac39b135b3908fc1273f286c6cb` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/FF-SZR6O.md` | `b67a125c919d122290f3d8b2b0b00f8edb998f73` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-TGHJ5.md` | `9c321ee86e19c654ad4472647af91e0ceb567012` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-TGTS7.md` | `d67493c294b930733f1b2071e3116abe3c0f3de1` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-UT5GL.md` | `71cae13032fc62091b44c7c45f357562e6e072cc` | — | Pending |

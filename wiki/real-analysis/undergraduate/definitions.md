@@ -51,9 +51,7 @@ If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ conver
 
 [[D-5NODS]]
 
-[[FD-QEQIY]] [[FF-SZR6O]]
-
-[[FD-JGBSF]] [[FF-QLQYF]]
+[[FD-JGBSF]]
 
 [[D-VFNTY]]
 
