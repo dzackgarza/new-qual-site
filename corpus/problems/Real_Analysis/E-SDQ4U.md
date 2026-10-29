@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SDQ4U
 kind: problem
-title: $L^p$ inclusions on finite measure spaces and $\ell^p$ inclusions on $\mathbb{Z}$
+title: $L^p$ inclusions on finite measure spaces and $\ell^p$ inclusions on $\ZZ$
 classification:
   areas:
   - real-analysis
@@ -24,10 +24,12 @@ audit:
 
 ::: {.exercise}
 - Prove the following inclusions of $L^p$ spaces for $m(X) < \infty$:
-\[
-L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
-\ell^1(\ZZ) &\subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)
-.\]
+$$
+\begin{aligned}
+L^\infty(X) &\subset L^2(X) \subset L^1(X), \\
+\ell^1(\ZZ) &\subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ).
+\end{aligned}
+$$
 :::
 
 ::: {.solution}
@@ -107,7 +109,7 @@ $\sum_{n \geq 1} 1/n$ diverges and $\sum_{n \geq 1} 1/n^2$ converges, and $\sup_
 :::
 
 ::: pf-qed
-Steps [](#s2-1){.pf-ref} through [](#s2-3){.pf-ref}.
+Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref} give the inclusions, and step [](#s2-3){.pf-ref} shows that they are strict.
 :::
 
 :::
