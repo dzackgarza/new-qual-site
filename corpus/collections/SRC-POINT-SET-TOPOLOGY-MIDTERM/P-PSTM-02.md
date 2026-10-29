@@ -11,17 +11,38 @@ review: draft
 ---
 
 ::: {.problem}
-Let X be a space.
-Show that X is Hausdorff if, and only if, the diagonal $\Delta : =$ $\{ ( x , x ) \mid x \in X \}$ is a closed subspace of $X \times X$.
+Let $X$ be a space.
+Show that $X$ is Hausdorff if, and only if, the diagonal $\Delta \coloneqq \{ (x, x) \mid x \in X \}$ is a closed subspace of $X \times X$.
 :::
 
 ::: {.solution}
-Suppose $X$ is a Hausdorff space.
-We show that the complement of the diagonal, $\Delta^{c} \coloneqq X \times X \setminus \Delta$, is open.
-Let $(x, y) \in \Delta^{c}$. Then $x \neq y$, and so there are disjoint open sets $U$ and $V$ containing $x$ and $y$, respectively.
-By definition of the product topology, $U \times V$ is an open subset of $X \times X$, and $U \times V \subset \Delta^{c}$, since a point $(z,z) \in U \times V$ would lie in $U \cap V = \emptyset$. This shows that $\Delta^{c}$ is open.
+Write $\Delta^c \coloneqq (X \times X) \setminus \Delta$.
+For subsets $U, V \subseteq X$, the product $U \times V$ meets $\Delta$ exactly when $U \cap V \neq \emptyset$.
 
-Conversely, suppose $\Delta$ is closed, that is to say, $\Delta^{c}$ is open.
-Let $x$ and $y$ be two distinct elements of $X$. Then $(x, y) \in \Delta^{c}$, and so there is a basic open set $U \times V \subset \Delta^{c}$ containing $(x, y)$. Then $U$ and $V$ are open, disjoint subsets of $X$ containing $x$ and $y$, respectively.
-This shows that $X$ is Hausdorff.
+::: pf
+
+::: pf-step
+If $X$ is Hausdorff, then $\Delta$ is closed.
+
+::: pf-proof
+Let $(x, y) \in \Delta^c$, so $x \neq y$.
+There are disjoint open sets $U \ni x$ and $V \ni y$.
+Then $U \times V$ is open in $X \times X$, contains $(x, y)$, and does not meet $\Delta$, because $U \cap V = \emptyset$.
+So $\Delta^c$ is open.
+:::
+
+:::
+
+::: pf-step
+If $\Delta$ is closed, then $X$ is Hausdorff.
+
+::: pf-proof
+Let $x \neq y$ in $X$, so $(x, y)$ lies in the open set $\Delta^c$.
+Products of open sets form a basis of $X \times X$, so there are open $U \ni x$ and $V \ni y$ with $U \times V \subseteq \Delta^c$.
+Then $U \times V$ does not meet $\Delta$, so $U \cap V = \emptyset$.
+:::
+
+:::
+
+:::
 :::
