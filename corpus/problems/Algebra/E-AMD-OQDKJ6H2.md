@@ -21,22 +21,22 @@ audit:
 ---
 
 ::: {.exercise}
-Show that
-\[
+Let $G$ be a group. Show that
+$$
 Z(G)=\bigcap_{a\in G}C_G(a).
-\]
+$$
 :::
 
 ::: {.solution}
 An element $z\in G$ lies in the center exactly when it commutes with every element of $G$:
-\[
+$$
 z\in Z(G)
 \iff za=az\text{ for all }a\in G
 \iff z\in C_G(a)\text{ for all }a\in G.
-\]
+$$
 The last condition is precisely
-\[
+$$
 z\in\bigcap_{a\in G}C_G(a).
-\]
+$$
 Hence the two subgroups are equal.
 :::
