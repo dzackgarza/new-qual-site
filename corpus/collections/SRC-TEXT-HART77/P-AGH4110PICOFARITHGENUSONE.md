@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH4110PICOFARITHGENUSONE
 kind: problem
-title: $\Pic X$ is in bijection with $X_{\reg}$ when $p_a(X)=1$
+title: $\Pic^0 X$ is in bijection with $X_{\reg}$ when $p_a(X)=1$
 classification:
   areas:
   - algebraic-geometry
@@ -24,20 +24,22 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne IV Ex. 1.10 printed the target group as Pic X; the statement and title now read Pic^0 X.
 ---
 
 ::: {.problem}
 Let $X$ be an integral projective scheme of dimension 1 over $k$, which is locally complete intersection, and has $p_a=1$.
 Fix a point $P_0 \in X_{\reg}$.
-Imitate (1.3.7) to show that the map $P \mapsto \mcl(P-P_0)$ gives a one-to-one correspondence between the points of $X_{\reg}$ and the elements of the group $\Pic X$.
+Imitate (1.3.7) to show that the map $P \mapsto \mcl(P-P_0)$ gives a one-to-one correspondence between the points of $X_{\reg}$ and the elements of the group $\Pic^0 X$.
 
 This generalizes (II, 6.11.4) and (II, Ex.
 6.7).
 :::
 
 ::: {.solution}
-We prove the corrected statement with target $\Pic^0 X$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -297,17 +299,10 @@ step [](#s6){.pf-ref} proves surjectivity.
 
 ::: pf-qed
 
-for the corrected statement.
-
 Step [](#s7){.pf-ref} is the required one-to-one correspondence with $\Pic^0X$.
 
 :::
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the target group is $\Pic^0 X$, not $\Pic X$.
-The sheaf $\mcl(P-P_0)$ has degree $0$, so the map $P \mapsto \mcl(P-P_0)$ lands in the subgroup $\Pic^0 X$ of invertible sheaves of degree $0$, and the one-to-one correspondence is between the points of $X_{\reg}$ and $\Pic^0 X$ [@Har10a, Exercise IV.1.10].
 :::
