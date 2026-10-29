@@ -16,28 +16,34 @@ review: draft
 
 ::: {.problem}
 Find the Laurent expansions about $z=0$ of the following functions:
-\[
-e^{1\over z} \hspace{8em} \cos \qty{1\over z}
-.\]
+$$
+e^{1\over z}, \qquad \cos \qty{1\over z}.
+$$
 :::
 
 ::: {.solution}
-Substitute $1/z$ into the usual Taylor series.
 
-For the exponential,
-\[
-e^{1/z}
-=\sum_{n=0}^\infty {1\over n!z^n}
-=1+{1\over z}+{1\over2!z^2}+{1\over3!z^3}+\cdots.
-\]
+::: pf
 
-For the cosine,
-\[
-\cos\qty{1\over z}
-=\sum_{n=0}^\infty {(-1)^n\over(2n)!z^{2n}}
-=1-{1\over2!z^2}+{1\over4!z^4}-{1\over6!z^6}+\cdots.
-\]
+::: pf-step
+$e^{1/z}=\sum_{n=0}^\infty \frac{1}{n!\,z^n}=1+\frac1z+\frac1{2!\,z^2}+\frac1{3!\,z^3}+\cdots$ for $z\neq0$.
 
-Both Laurent series converge for every $z\neq0$, so their annulus of convergence is $0<|z|<\infty$.
+::: pf-proof
+Substitute $w=1/z$ in $e^w=\sum_{n\ge0}w^n/n!$, which converges for every $w\in\CC$.
 :::
 
+:::
+
+::: pf-step
+$\cos(1/z)=\sum_{n=0}^\infty \frac{(-1)^n}{(2n)!\,z^{2n}}=1-\frac1{2!\,z^2}+\frac1{4!\,z^4}-\frac1{6!\,z^6}+\cdots$ for $z\neq0$.
+
+::: pf-proof
+Substitute $w=1/z$ in $\cos w=\sum_{n\ge0}(-1)^nw^{2n}/(2n)!$, which converges for every $w\in\CC$.
+Both series converge on the annulus $0<\abs{z}<\infty$, so they are the Laurent expansions there.
+:::
+
+:::
+
+:::
+
+:::
