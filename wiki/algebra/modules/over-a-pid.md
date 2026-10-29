@@ -18,8 +18,6 @@ Over $\ZZ$, the module $\ZZ$ is indecomposable and not simple, and $\ZZ/4$ is cy
 
 [[PR-TAPZF]]
 
-[[FF-UYMWY]]
-
 [[D-JUYFQ]]
 
 [[PR-JBDUI]]

@@ -4,6 +4,8 @@ id: PR-TAPZF
 kind: proposition
 title: One-step submodule test
 slogan: 'A nonempty subset is a submodule once it is closed under $rx+y$.'
+prompts:
+- What is the one-step submodule test?
 classification:
   areas:
   - algebra
