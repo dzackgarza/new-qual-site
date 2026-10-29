@@ -59,7 +59,7 @@ Multiplication by $p$ has degree $p^2$ in both cases; its separable degree is $p
 :::
 
 ::: {.remark title="Endomorphisms"}
-Let $E_{\bar k}$ be the base change of $E$ to $\bar k$.
+Let $E_{\bar k}$ be the base change of $E$ to $\bar k$, and let $p_0$ be its origin.
 For $E$ ordinary, $\operatorname{End}(E_{\bar k},p_0)$ is $\ZZ$ or an order in an imaginary quadratic field, and it is an order in an imaginary quadratic field when $k$ is finite.
 For $E$ supersingular, $\operatorname{End}(E_{\bar k},p_0)$ is a maximal order in the quaternion algebra over $\QQ$ ramified exactly at $p$ and $\infty$; it has rank four and is noncommutative.
 Over $\CC$, the endomorphism ring of an elliptic curve has rank $1$ or $2$, and the $j$-invariants of the curves with rank $2$ are the singular moduli; the name supersingular refers to the larger endomorphism ring, and a supersingular curve is smooth.
