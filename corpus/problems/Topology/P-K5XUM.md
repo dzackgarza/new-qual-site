@@ -28,13 +28,13 @@ Show that $X \times Y$ is compact if and only if both $X$ and $Y$ are compact.
 
 :::
 
-::: {.concept}
+::: {.hint}
 \envlist
 - The tube lemma.
 - A continuous image of a compact space is compact.
 :::
 
-::: {.strategy}
+::: {.hint}
 ![figures/image_2021-05-21-01-16-52.png](../../assets/figures/image_2021-05-21-01-16-52.png)
 
 Take an open cover of the product, use that vertical fibers are compact to get a finite cover for each fiber.
