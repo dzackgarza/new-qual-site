@@ -32,3 +32,7 @@ $$
    F'(t) = \int_X \frac{\partial f}{\partial t}(x, t) \dmu(x) .
    $$
 :::
+
+::: {.remark title="Variations"}
+Both parts hold, with the same proof by dominated convergence, when $I$ is an open interval or any interval of positive length [@Fol13].
+:::
