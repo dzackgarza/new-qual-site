@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-09
 kind: problem
-title: Maxim algebraic topology 6.9
+title: $\CP^{2n}$ is not an oriented boundary
 classification:
   areas: [topology]
   topics: []
