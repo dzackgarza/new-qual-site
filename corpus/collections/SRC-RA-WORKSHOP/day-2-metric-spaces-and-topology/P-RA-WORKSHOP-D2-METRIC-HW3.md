@@ -25,23 +25,11 @@ Is the set of all sequences $x_1,x_2,\ldots$ with $x_i\in\{0,1\}$ for $i=1,2,\ld
 
 ::: {.pf-step #s1}
 
-Assume that the set $\{0,1\}^{\mathbb N}$ is countable, and choose a surjection $f:\mathbb N\to\{0,1\}^{\mathbb N}$.
+No map $f:\NN\to\{0,1\}^{\NN}$ is surjective.
 
 ::: pf-proof
 
-The set is nonempty. Under the assumed countability it admits an enumeration, with repetitions permitted. Write $f(n)=(x^{(n)}_k)_{k\geq1}$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The sequence $y=(1-x^{(n)}_n)_{n\geq1}$ belongs to $\{0,1\}^{\mathbb N}$ but is unequal to $f(n)$ for every $n\in\mathbb N$.
-
-::: pf-proof
-
-Each $x^{(n)}_n$ belongs to $\{0,1\}$, so the coordinate $y_n=1-x^{(n)}_n$ also belongs to $\{0,1\}$. Moreover $y_n\ne x^{(n)}_n$, hence $y\ne f(n)$ for every $n$. This contradicts surjectivity of $f$ in step [](#s1){.pf-ref}.
+Write $f(n)=(x^{(n)}_k)_{k\geq1}$ and set $y=(1-x^{(n)}_n)_{n\geq1}$. Each $x^{(n)}_n$ belongs to $\{0,1\}$, so the coordinate $y_n=1-x^{(n)}_n$ also belongs to $\{0,1\}$, and $y\in\{0,1\}^{\NN}$. Moreover $y_n\ne x^{(n)}_n$, hence $y\ne f(n)$ for every $n\in\NN$, and $y$ is not in the image of $f$.
 
 :::
 
@@ -49,7 +37,7 @@ Each $x^{(n)}_n$ belongs to $\{0,1\}$, so the coordinate $y_n=1-x^{(n)}_n$ also 
 
 ::: pf-qed
 
-The contradiction between steps [](#s1){.pf-ref} and [](#s2){.pf-ref} proves that the set of binary sequences is uncountable.
+A nonempty set is countable exactly when it is the image of a map from $\NN$. The set $\{0,1\}^{\NN}$ is nonempty, so by step [](#s1){.pf-ref} it is not countable: $\boxed{\text{the set of binary sequences is uncountable}}$.
 
 :::
 
