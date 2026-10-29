@@ -23,33 +23,31 @@ audit:
 
 ::: {.problem}
 Does every complex matrix $A$ admit a complex matrix square root $B$ with
-\[
+$$
 B^2=A?
-\]
+$$
 :::
 
 ::: {.solution}
-No.
+Let $A=J_2(0)=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the nilpotent Jordan block of size $2$.
 
-Consider the nilpotent Jordan block
-\[
-A=J_2(0)=
-\begin{pmatrix}
-0&1\\
-0&0
-\end{pmatrix}.
-\]
-Suppose $B^2=A$. Every eigenvalue $\mu$ of $B$ would satisfy
-\[
-\mu^2\in\operatorname{Spec}(A)=\{0\},
-\]
-so every eigenvalue of $B$ is $0$. Thus a $2\times2$ complex matrix $B$ would be nilpotent, and hence by Cayley--Hamilton
-\[
-B^2=0.
-\]
-This contradicts $B^2=A\ne0$.
+::: pf
 
-Therefore not every complex matrix has a square root.
+::: pf-step
+$\boxed{\text{No}}$: there is no complex $2\times 2$ matrix $B$ with $B^2=A$.
 
-By contrast, every **invertible** complex matrix does have a square root: put it in Jordan form and choose a square root of each nonzero eigenvalue; on a block $J_r(\lambda)=\lambda(I+N/\lambda)$, the finite binomial series for $(I+N/\lambda)^{1/2}$ gives a square root because $N$ is nilpotent.
+::: pf-proof
+Suppose $B^2=A$.
+Every eigenvalue $\mu$ of $B$ satisfies $\mu^2=0$, since $\mu^2$ is an eigenvalue of $A$, so $B$ is nilpotent.
+By the Cayley--Hamilton theorem, the characteristic polynomial of $B$ is $x^2$, so $B^2=0\ne A$, a contradiction.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Every invertible complex matrix has a square root: on a Jordan block $J_r(\lambda)=\lambda(I+N/\lambda)$ with $\lambda\ne0$, choose a square root of $\lambda$ and use the binomial series for $(I+N/\lambda)^{1/2}$, which terminates because $N$ is nilpotent.
 :::
