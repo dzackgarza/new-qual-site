@@ -275,7 +275,7 @@ This proves the corrected statement of part (a).
 
 ::: pf-proof
 
-Step [](#s2){.pf-ref} reduces to the finite-extension, nonfield case; steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct the required DVR.  Step [](#s1){.pf-ref} records the unique excluded case in the source statement.
+Step [](#s2){.pf-ref} reduces to the finite-extension, nonfield case; steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct the required DVR.  Step [](#s1){.pf-ref} records the unique excluded case in the statement of part (a).
 
 :::
 
