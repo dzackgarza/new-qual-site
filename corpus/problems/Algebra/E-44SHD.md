@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Prove that if $A$ and $B$ are invertible matrices over a field $\boldsymbol{k}$, then $A+\lambda B$ is invertible for all but finitely many $\lambda \in \boldsymbol{k}$.
+Prove that if $A$ and $B$ are invertible matrices over a field $\boldsymbol{k}$, then $A+\lambda B$ is invertible for all but finitely many $\lambda \in \boldsymbol{k}$.
 :::
 
 ::: {.solution}
@@ -31,15 +31,15 @@ audit:
 
 ::: {.pf-step #s1}
 
-Suppose \(A,B\in M_n(k)\) are invertible.
-For \(\lambda\in k\),
-\[
+Suppose $A,B\in M_n(k)$ are invertible.
+For $\lambda\in k$,
+$$
 A+\lambda B=B\bigl(B^{-1}A+\lambda I_n\bigr).
-\]
+$$
 
 ::: pf-proof
 
-Expanding the right-hand side gives \(BB^{-1}A+\lambda BI_n=A+\lambda B\).
+Expanding the right-hand side gives $BB^{-1}A+\lambda BI_n=A+\lambda B$.
 
 :::
 
@@ -48,11 +48,11 @@ Expanding the right-hand side gives \(BB^{-1}A+\lambda BI_n=A+\lambda B\).
 ::: pf-step
 
 Hence
-\[
+$$
 \det(A+\lambda B)=\det(B)\,p(\lambda),
 \qquad
-p(t):=\det(B^{-1}A+tI_n)\in k[t].
-\]
+p(t)\coloneqq\det(B^{-1}A+tI_n)\in k[t].
+$$
 
 ::: pf-proof
 
@@ -64,11 +64,11 @@ Apply multiplicativity of the determinant to step [](#s1){.pf-ref}.
 
 ::: pf-step
 
-The polynomial \(p(t)\) is nonzero and has degree \(n\).
+The polynomial $p(t)$ is nonzero and has degree $n$.
 
 ::: pf-proof
 
-In the determinant expansion of \(B^{-1}A+tI_n\), the product of the \(t\)-terms on the diagonal contributes \(t^n\), and no other term has degree \(n\). Thus \(p(t)\) is monic of degree \(n\).
+In the determinant expansion of $B^{-1}A+tI_n$, the product of the $t$-terms on the diagonal contributes $t^n$, and no other term has degree $n$. Thus $p(t)$ is monic of degree $n$.
 
 :::
 
@@ -76,17 +76,17 @@ In the determinant expansion of \(B^{-1}A+tI_n\), the product of the \(t\)-terms
 
 ::: {.pf-step #s4}
 
-Therefore \(A+\lambda B\) is singular for at most \(n\) values of \(\lambda\in k\).
+Therefore $A+\lambda B$ is singular for at most $n$ values of $\lambda\in k$.
 
 ::: pf-proof
 
-Because \(B\) is invertible, \(\det(B)\neq0\). Thus
-\[
+Because $B$ is invertible, $\det(B)\neq0$. Thus
+$$
 \det(A+\lambda B)=0
 \quad\Longleftrightarrow\quad
 p(\lambda)=0.
-\]
-A nonzero polynomial of degree \(n\) over a field has at most \(n\) roots.
+$$
+A nonzero polynomial of degree $n$ over a field has at most $n$ roots.
 
 :::
 
@@ -94,7 +94,7 @@ A nonzero polynomial of degree \(n\) over a field has at most \(n\) roots.
 
 ::: pf-step
 
-Hence \(A+\lambda B\) is invertible for all but finitely many \(\lambda\in k\).
+Hence $A+\lambda B$ is invertible for all but finitely many $\lambda\in k$.
 
 ::: pf-proof
 
