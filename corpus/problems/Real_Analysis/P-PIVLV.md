@@ -39,21 +39,15 @@ Inductively choose a measurable $B_n$ with $2^n + \sum_{k<n} \mu(E_k) \le \mu(B_
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
-$f = \sum_n \mu(E_n)^{-1/p}\chi_{E_n}$ lies in $L^q \setminus L^p$.
+$f = \sum_n \mu(E_n)^{-1/p}\chi_{E_n}$ lies in $L^q \setminus L^p$, so $L^q \not\subseteq L^p$.
 
 ::: pf-proof
 
 The $E_n$ are disjoint, so $\int f^q = \sum_n \mu(E_n)^{1 - q/p} \le \sum_n 2^{n(1-q/p)} < \infty$ because $q/p > 1$, while $\int f^p = \sum_n 1 = \infty$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} shows $L^q \not\subseteq L^p$.
 
 :::
 
