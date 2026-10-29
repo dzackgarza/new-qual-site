@@ -24,3 +24,30 @@ $$1-\sin^2\left(\arccos\frac{\pi}{12}\right)=$$
 (D) $\frac{\pi}{6}$
 (E) $\frac{\pi^2}{144}$
 :::
+
+::: {.solution}
+Write $\theta=\arccos\frac{\pi}{12}$.
+
+::: pf
+
+::: {.pf-step #defined}
+$\theta$ is defined and $\cos\theta=\frac{\pi}{12}$.
+
+::: pf-proof
+Since $0<\pi<12$, the number $\frac{\pi}{12}$ lies in $[-1,1]$, the domain of $\arccos$, and $\cos(\arccos t)=t$ for every $t\in[-1,1]$.
+:::
+
+:::
+
+::: pf-step
+The expression equals $\boxed{\frac{\pi^2}{144}}$, choice (E).
+
+::: pf-proof
+By the identity $\sin^2\theta+\cos^2\theta=1$ and step [](#defined){.pf-ref}, $1-\sin^2\theta=\cos^2\theta=\left(\frac{\pi}{12}\right)^2=\frac{\pi^2}{144}$.
+:::
+
+:::
+
+:::
+
+:::
