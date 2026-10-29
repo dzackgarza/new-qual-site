@@ -7,15 +7,19 @@ slogan: 'Integral extensions lift ascending prime chains; integrally closed-doma
 classification:
   areas:
   - algebraic-geometry
+  - algebra
   topics:
   - Going Up
   - Finite Morphisms
   - Flatness
+  - Integral Extensions
+  - Prime Ideals
 relations:
 - kind: uses
   target: D-VKR54
 review: draft
 prompts:
+- What is the going up theorem?
 - What does the going up theorem mean in algebraic geometry?
 - What does going down mean geometrically?
 ---

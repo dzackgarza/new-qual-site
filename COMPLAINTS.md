@@ -61,20 +61,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the prompt, odd definition, and parity remark to `D-TMME3`, redirects `FD-X4DBP`, removes duplicate reader-facing references, and deletes `FD-PIVQZ`.
 
-### Duplicate lying-over/going-up cards FF-IBDAT and PR-RJ3P7
-
-- **Object and need:** `FF-IBDAT` and `PR-RJ3P7`. Both state lying over for integral extensions and the going-up theorem for chains of prime ideals.
-
-- **Observed evidence:** the Algebra card is exactly the two algebraic clauses already contained in the first theorem block of `PR-RJ3P7`; the latter also proves closedness and states going down.
-  The Algebra wiki and guide pointed to `FF-IBDAT`, while the algebraic-geometry wiki pointed to `PR-RJ3P7`.
-
-- **Impact and owner:** one standard theorem had two intrinsic addresses split by subject area, with no mathematical or source-appearance distinction.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the plain “What is going up?”
-  prompt to `PR-RJ3P7`, redirects the Algebra wiki and guide, and deletes `FF-IBDAT`.
-
 ### Krull's maximal-ideal theorem had three intrinsic cards
 
 - **Object and need:** `PR-UTFSY`, `T-QSTRJ`, and `FF-QELG7` in `corpus/theory/Algebra`. All three state that every proper ideal is contained in a maximal ideal.
