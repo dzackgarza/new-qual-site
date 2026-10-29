@@ -24,7 +24,7 @@ The limit of such a subsequence need not lie in $\mathcal F$: normality says tha
 
 ::: {.remark}
 In the proof of the Riemann mapping theorem for a simply connected open set $\Omega\subsetneq\CC$ and $z_0\in\Omega$, one maximizes $\abs{f'(z_0)}$ over the injective holomorphic maps $f\colon\Omega\to\DD$ with $f(z_0)=0$.
-This family is uniformly bounded, hence normal by [[T-4ALS2|Montel's theorem]], so a maximizing sequence has a locally uniformly convergent subsequence, whose limit is the candidate Riemann map.
+This family is uniformly bounded, hence normal by [[T-4ALS2|Montel's theorem]] [@SS03, Theorem 3.3], so a maximizing sequence has a locally uniformly convergent subsequence, whose limit is the candidate Riemann map.
 :::
 
 ::: {.remark}
@@ -36,8 +36,4 @@ In [@Ahl79], a family is normal if every sequence has a subsequence that either 
 ::: {.example}
 The family $\{f_n\}_{n\ge1}$ with $f_n(z)=n(z^2-n)$ on $\CC$ is normal in the sense of [@Ahl79], and the sequence $(f_n)$ has no locally uniformly convergent subsequence.
 On $\abs{z}\le R$ and for $n>R^2$, $\abs{f_n(z)}\ge n^2-nR^2\to\infty$ uniformly, so every subsequence tends uniformly to $\infty$ on compact sets and none converges uniformly on compact sets to a finite function.
-:::
-
-::: {.concept}
-[[T-4ALS2|Montel's theorem]] is [@SS03, Theorem 3.3].
 :::

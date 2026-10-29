@@ -30,19 +30,15 @@ Then there are a neighbourhood $B\subseteq\RR^k$ of $\vector a$ and a unique con
 $$
 f(\vector x,g(\vector x))=0\quad\text{for all }\vector x\in B,
 $$
-and this $g$ is of class $C^r$.
+and this $g$ is of class $C^r$ [@Mun91, Section 9, Theorem 9.2].
 :::
 
 ::: {.remark}
-Differentiating $f(\vector x,g(\vector x))=0$ gives
+Differentiating $f(\vector x,g(\vector x))=0$ gives [@Mun91, Theorem 9.1]
 $$
 \frac{\partial f}{\partial\vector x}+\frac{\partial f}{\partial\vector y}\,Dg=0,
 \qquad\text{so}\qquad
 Dg(\vector x)=-\Bigl[\frac{\partial f}{\partial\vector y}(\vector x,g(\vector x))\Bigr]^{-1}\frac{\partial f}{\partial\vector x}(\vector x,g(\vector x)).
 $$
 The proof applies the inverse function theorem to $F(\vector x,\vector y)\coloneqq(\vector x,f(\vector x,\vector y))$, whose derivative at a point is invertible if and only if $\partial f/\partial\vector y$ is invertible there.
-:::
-
-::: {.concept}
-See [@Mun91, Section 9, Theorem 9.2]; the formula for $Dg$ is [@Mun91, Theorem 9.1].
 :::
