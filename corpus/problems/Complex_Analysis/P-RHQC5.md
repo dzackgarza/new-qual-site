@@ -23,18 +23,49 @@ Show that if $f_n\to g$ for some $g: \DD \to \CC$ uniformly on every compact $K\
 :::
 
 ::: {.solution}
-Local uniform convergence implies that $g$ is continuous. Let $T$ be any
-triangle whose closure lies in $\mathbb D$. Since $f_n\to g$ uniformly on
-$\partial T$,
-\[
-\int_{\partial T}g(z)\,dz
-=\lim_{n\to\infty}\int_{\partial T}f_n(z)\,dz.
-\]
-Each integral on the right is zero by Cauchy's theorem because $f_n$ is
-holomorphic. Hence
-\[
-\int_{\partial T}g(z)\,dz=0
-\]
-for every such triangle. Morera's theorem therefore implies that $g$ is
-holomorphic on $\mathbb D$.
+
+::: pf
+
+::: {.pf-step #continuous}
+
+$g$ is continuous on $\DD$.
+
+::: pf-proof
+
+Each point of $\DD$ has a compact neighborhood in $\DD$, on which $g$ is a uniform limit of continuous functions.
+
+:::
+
+:::
+
+::: {.pf-step #triangles}
+
+$\int_{\partial T}g(z)\,dz=0$ for every closed triangle $T\subset\DD$.
+
+::: pf-proof
+
+$f_n\to g$ uniformly on the compact set $\partial T$, so
+$$
+\int_{\partial T}g(z)\,dz=\lim_{n\to\infty}\int_{\partial T}f_n(z)\,dz,
+$$
+and each integral on the right is $0$ by Cauchy's theorem.
+
+:::
+
+:::
+
+::: pf-step
+
+$g$ is analytic on $\DD$.
+
+::: pf-proof
+
+By steps [](#continuous){.pf-ref} and [](#triangles){.pf-ref}, Morera's theorem applies.
+
+:::
+
+:::
+
+:::
+
 :::
