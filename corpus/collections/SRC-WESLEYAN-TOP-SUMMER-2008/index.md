@@ -21,9 +21,9 @@ source:
     year: 2008
   problems:
   - id: E-MGS22
-    comment: Part I Problem 1; repeated exactly as the canonical continuous-image-of-compact exercise
+    comment: Part I Problem 1
   - id: E-E3JL6
-    comment: Part I Problem 2; repeated exactly as the canonical product-Hausdorff exercise
+    comment: Part I Problem 2
   - {id: P-WESTOP08-I3, comment: Part I Problem 3}
   - {id: P-WESTOP08-II1, comment: Part II Problem 1}
   - {id: P-WESTOP08-II2, comment: Part II Problem 2}
