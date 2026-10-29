@@ -19,8 +19,7 @@ By Maschke's theorem, every finite-dimensional complex representation of a finit
 [[T-PIO2B]]
 
 ::: {.remark title="Hypotheses and proof"}
-Let $G$ be a finite group and $k$ a field whose characteristic does not divide $\size G$.
-Every finite-dimensional representation of $G$ over $k$ is a direct sum of irreducible representations, so $k[G]$ is semisimple, and a finite-dimensional complex representation is determined up to isomorphism by the multiplicities of its irreducible summands.
+So $k[G]$ is semisimple, and a finite-dimensional complex representation is determined up to isomorphism by the multiplicities of its irreducible summands.
 
 If $\operatorname{char}k = p$ divides $\size G$, the conclusion can fail: the regular representation of $\ZZ/p$ over $\FF_p$ is indecomposable and not irreducible.
 If $G$ is infinite, the conclusion can fail: $\ZZ$ acting on $\CC^2$ by $n\mapsto\matt{1}{n}{0}{1}$ has the invariant line $\CC e_1$ and no invariant complement.
@@ -33,14 +32,9 @@ Then $\pi_G$ is a $G$-equivariant projection onto $W$, and $\ker\pi_G$ is a $G$-
 
 [[T-YHH3M]]
 
-::: {.remark title="The two statements"}
-For irreducible representations $V$ and $W$ of $G$:
-
-- every $G$-equivariant linear map $V\to W$ is zero or an isomorphism;
-
-- if $V$ is finite-dimensional over an algebraically closed field such as $\CC$, every $G$-equivariant linear map $f\colon V\to V$ is a scalar multiple of the identity.
-
-For the second statement, $f$ has an eigenvalue $\lambda$ because the field is algebraically closed, and $f - \lambda I$ is a $G$-equivariant map with nonzero kernel, hence zero by the first statement.
+::: {.remark title="Proof"}
+For irreducible representations $V$ and $W$ of $G$, every $G$-equivariant linear map $V\to W$ is zero or an isomorphism, because its kernel and image are subrepresentations.
+For $f\in\Endo_G(V)$ with $V$ finite-dimensional over an algebraically closed field, $f$ has an eigenvalue $\lambda$, and $f - \lambda I$ is a $G$-equivariant map with nonzero kernel, hence zero.
 
 For irreducible complex representations, $\dim \Hom_G(V,W)=0$ if $V\not\cong W$ and $\dim \operatorname{End}_G(V)=1$; together with Maschke's theorem, these give the character orthogonality relations and the multiplicity formula.
 :::
