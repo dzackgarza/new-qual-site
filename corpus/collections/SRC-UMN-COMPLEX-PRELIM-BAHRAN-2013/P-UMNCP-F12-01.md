@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-UMNCP-F12-01
 kind: problem
-title: Mobius transformations send generalized circles to generalized circles
+title: Möbius transformations map lines and circles to lines and circles
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:
@@ -234,12 +235,14 @@ is described by another equation of the same form. Since $T$ is bijective on the
 
 :::
 
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} is the required conclusion.
-
 :::
 
 :::
 
+::: {.remark title="Alternative proof"}
+For $c\ne0$,
+$$
+T(z)=\frac ac+\frac{bc-ad}{c^2}\cdot\frac1{z+d/c},
+$$
+so every Möbius transformation is a composition of translations, nonzero complex dilations and the inversion $z\mapsto1/z$. Translations and dilations preserve lines and circles. For the inversion, substituting $z=1/w$ into $A|z|^2+Bz+\overline B\,\overline z+C=0$ and multiplying by $|w|^2$ gives $C|w|^2+\overline B w+B\overline w+A=0$, an equation of the same form with $|B|^2-AC$ unchanged.
 :::

@@ -392,7 +392,7 @@ source:
     - P-JHUSP02CAC
     - P-JHUSP02CAD
     - P-JHUSP02CAE
-    - P-JHUSP02CAF
+    - P-UMNCP-F12-01
   - name: Real Analysis Qualifying Exam, Fall 2001 (pp. 53–54)
     problems:
     - P-JHUFA01RAA
