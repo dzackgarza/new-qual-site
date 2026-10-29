@@ -5,7 +5,7 @@ kind: theorem
 title: Rouché's theorem, symmetric form
 slogan: 'If at each boundary point $f(z)$ and $g(z)$ are nonzero and $g(z)$ is not a negative real multiple of $f(z)$, then $f$ and $g$ have the same number of zeros inside.'
 prompts:
-- State Rouche's theorem in its symmetric form.
+- State Rouché's theorem in its symmetric form.
 classification:
   areas:
   - complex-analysis
