@@ -115,7 +115,9 @@ viewed as a map $\ZZ^4\to\ZZ^3$ on coordinates $(x_1,x_2,x_3,x_4)$, has kernel g
 $$
 \ker = \generators{(2,-1,0,0),\ (2,0,-1,-1)}.
 $$
-Its rows span the image of the transpose, $\generators{(1,2,0,2),(0,0,1,-1)}\subseteq\ZZ^4$.
+The kernel is the same over $\QQ$ and over $\ZZ$ here, because $\ker_\ZZ = \ker_\QQ\intersect\ZZ^4$ and row reduction does not change $\ker_\QQ$.
+The image of the transpose is different: over $\QQ$ it is spanned by the nonzero rows $(1,2,0,2)$ and $(0,0,1,-1)$, but over $\ZZ$ the row lattice of the original matrix can be a proper sublattice of their span, for example when $(2,4,0,4)$ is a row of the original matrix.
+The integer row lattice is read off from the Hermite normal form, which uses only invertible integer row operations, and $H_n$ from the Smith normal form as in item 5 above.
 
 :::
 
