@@ -22,28 +22,28 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\operatorname{Inn}(G) \cong G / Z(G)$.
+Show that $\Inn(G) \cong G / Z(G)$.
 :::
 
 ::: {.solution}
 Define
-\[
+$$
 \Phi:G\to\Aut(G),\qquad \Phi(g)(x)=gxg^{-1}.
-\]
+$$
 Then
-\[
+$$
 \Phi(gh)=\Phi(g)\Phi(h),
-\]
+$$
 so $\Phi$ is a homomorphism. Its image is, by definition, $\Inn(G)$.
 
 Moreover,
-\[
+$$
 g\in\ker\Phi
 \iff gxg^{-1}=x\ \text{for all }x\in G
 \iff g\in Z(G).
-\]
+$$
 Thus $\ker\Phi=Z(G)$. The first isomorphism theorem gives
-\[
+$$
 \boxed{G/Z(G)\cong\Inn(G)}.
-\]
+$$
 :::
