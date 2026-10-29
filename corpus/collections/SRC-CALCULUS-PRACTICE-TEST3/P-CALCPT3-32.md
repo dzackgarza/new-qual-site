@@ -5,7 +5,7 @@ kind: problem
 title: "Which of four subsets of $\\RR$ are subfields"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Fields]
 relations: []
 review: draft
 audit:
