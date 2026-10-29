@@ -26,50 +26,47 @@ Show that $S_n$ for $n \ge 5$ has exactly one non-trivial proper normal subgroup
 :::
 
 ::: {.solution}
-For \(n\ge5\), \(A_n\) is simple ([[E-AMD-6TLQZZWT]]).
+For $n\ge5$, $A_n$ is simple ([[E-AMD-6TLQZZWT]]).
 
-Let \(N\trianglelefteq S_n\) be nontrivial. Then
-\[
+Let $N\trianglelefteq S_n$ be nontrivial. Then
+$$
 N\cap A_n\trianglelefteq A_n.
-\]
-By simplicity of \(A_n\), either
-\[
+$$
+By simplicity of $A_n$, either
+$$
 N\cap A_n=A_n
 \qquad\text{or}\qquad
 N\cap A_n=1.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #intersection-full-case}
-If \(N\cap A_n=A_n\), then \(N=A_n\) or \(N=S_n\).
+If $N\cap A_n=A_n$, then $N=A_n$ or $N=S_n$.
 
 ::: pf-proof
-In this case \(A_n\le N\le S_n\). Since \([S_n:A_n]=2\), there is no intermediate subgroup strictly between them.
+In this case $A_n\le N\le S_n$. Since $[S_n:A_n]=2$, there is no intermediate subgroup strictly between them.
 :::
 
 :::
 
 ::: {.pf-step #intersection-trivial-impossible}
-The case \(N\cap A_n=1\) is impossible.
+The case $N\cap A_n=1$ is impossible.
 
 ::: pf-proof
-The quotient map \(S_n\to S_n/A_n\cong C_2\) restricts injectively to \(N\), because its kernel on \(N\) is \(N\cap A_n=1\). Since \(N\ne1\), it follows that \(|N|=2\).
+The quotient map $S_n\to S_n/A_n\cong C_2$ restricts injectively to $N$, because its kernel on $N$ is $N\cap A_n=1$. Since $N\ne1$, it follows that $\abs{N}=2$.
 
-Write \(N=\{1,\sigma\}\). Normality implies
-\[
+Write $N=\{1,\sigma\}$. Normality implies
+$$
 g\sigma g^{-1}\in N\setminus\{1\}=\{\sigma\}
-\]
-for every \(g\in S_n\). Hence \(\sigma\in Z(S_n)\). But \(Z(S_n)=1\) for \(n\ge3\), contradiction.
+$$
+for every $g\in S_n$. Hence $\sigma\in Z(S_n)$. But $Z(S_n)=1$ for $n\ge3$ ([[E-AMD-74T5EHRR]]), contradiction.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#intersection-full-case){.pf-ref} and [](#intersection-trivial-impossible){.pf-ref} show that every nontrivial proper normal subgroup of \(S_n\) equals \(A_n\). Therefore
-\[
-\boxed{A_n\text{ is the unique nontrivial proper normal subgroup of }S_n\quad(n\ge5).}
-\]
+The subgroup $A_n$ has index $2$ in $S_n$, so it is normal, and it is nontrivial and proper. By steps [](#intersection-full-case){.pf-ref} and [](#intersection-trivial-impossible){.pf-ref}, every nontrivial proper normal subgroup of $S_n$ equals $A_n$.
 :::
 
 :::
