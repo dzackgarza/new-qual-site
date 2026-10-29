@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the fundamental group $\pi_1(S^n, x_0)$ for $n \ge 2$ using the **Seifert–van Kampen Theorem** by decomposing the $n$-sphere $S^n$ into the complements of the north and south poles.
+Compute the fundamental group $\pi_1(S^n, x_0)$ for $n \ge 2$ using the Seifert–van Kampen theorem by decomposing the $n$-sphere $S^n$ into the complements of the north and south poles.
 :::
 
 ::: {.solution}
@@ -31,40 +31,42 @@ Compute the fundamental group $\pi_1(S^n, x_0)$ for $n \ge 2$ using the **Seifer
 ::: pf-step
 
 Let $N,S\in S^n$ be the north and south poles and set
-\[
+$$
 U=S^n\setminus\{S\},\qquad V=S^n\setminus\{N\}.
-\]
-By stereographic projection, both $U$ and $V$ are homeomorphic to $\mathbb R^n$, hence
-\[
+$$
+By stereographic projection, both $U$ and $V$ are homeomorphic to $\RR^n$, hence
+$$
 \pi_1(U)=\pi_1(V)=1.
-\]
+$$
 
 :::
 
 ::: pf-step
 
 Their intersection is
-\[
-U\cap V=S^n\setminus\{N,S\}\cong\mathbb R^n\setminus\{0\}.
-\]
+$$
+U\cap V=S^n\setminus\{N,S\}\cong\RR^n\setminus\{0\}.
+$$
 This deformation retracts onto $S^{n-1}$, which is path-connected for $n\ge2$. Thus $U\cap V$ is path-connected.
 
 :::
 
 ::: pf-step
 
+For $n\ge2$, $\pi_1(S^n,x_0)=\boxed{1}$.
+
+::: pf-proof
+
 Choose $x_0\in U\cap V$. Seifert--van Kampen identifies $\pi_1(S^n,x_0)$ with the pushout
-
-:::
-
-:::
-
-\[
+$$
 \pi_1(U,x_0)*_{\pi_1(U\cap V,x_0)}\pi_1(V,x_0).
-\]
-Both maps from $\pi_1(U\cap V,x_0)$ land in the trivial group, so this pushout is trivial. Therefore
-\[
-\pi_1(S^n,x_0)=1
-\qquad(n\ge2).
-\]
+$$
+Both factors $\pi_1(U,x_0)$ and $\pi_1(V,x_0)$ are trivial, so this pushout is trivial.
+
+:::
+
+:::
+
+:::
+
 :::
