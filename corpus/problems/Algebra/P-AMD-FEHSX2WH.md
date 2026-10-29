@@ -23,14 +23,43 @@ audit:
 
 ::: {.problem}
 The nilradical is contained in the Jacobson radical, i.e.
-\[
-\nilrad{R} \subseteq J(R)
-.\]
+$$
+\nilrad{R} \subseteq J(R).
+$$
 :::
 
 ::: {.solution}
-Let \(x\in\operatorname{nil}(R)\), so \(x^n=0\) for some \(n\). For every prime ideal \(\mathfrak p\), primality gives \(x\in\mathfrak p\) from \(x^n\in\mathfrak p\). Every maximal ideal is prime in a commutative ring with identity, hence \(x\) lies in every maximal ideal. Therefore
-\[
-\operatorname{nil}(R)\subseteq\bigcap_{\mathfrak m\in\operatorname{mSpec}R}\mathfrak m=J(R).
-\]
+Let $R$ be a commutative ring with identity.
+
+::: pf
+
+::: {.pf-step #nil-in-prime}
+
+Every nilpotent element lies in every prime ideal.
+
+::: pf-proof
+
+If $x^n=0$ and $\mathfrak p$ is prime, then $x^n\in\mathfrak p$, and primality gives $x\in\mathfrak p$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\nilrad{R}\subseteq J(R)$.
+
+::: pf-proof
+
+Every maximal ideal is prime, so by step [](#nil-in-prime){.pf-ref} every nilpotent element lies in every maximal ideal, that is, in
+$$
+\bigcap_{\mathfrak m\in\mspec R}\mathfrak m=J(R).
+$$
+
+:::
+
+:::
+
+:::
+
 :::
