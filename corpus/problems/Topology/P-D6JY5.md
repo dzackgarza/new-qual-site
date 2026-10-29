@@ -12,10 +12,15 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "Source text: if M^orientable -> M^non-orientable is a k-fold cover then k is even or infinity. Connectedness of both spaces, which the solution uses, is now stated."
 ---
 
 ::: {.problem}
-- Show that if $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
+Let $M$ be a connected non-orientable manifold and let $\pi:\widetilde M\to M$ be a $k$-fold covering map with $\widetilde M$ connected and orientable. Show that $k$ is even or $k=\infty$.
 :::
 
 ::: {.solution}
@@ -24,7 +29,7 @@ review: draft
 
 ::: pf-step
 
-Let $p:\widetilde M\to M$ be a connected orientable covering of a connected nonorientable manifold, and let $H=p_*(\pi_1\widetilde M)\le\pi_1(M)$.
+Let $H=\pi_*(\pi_1\widetilde M)\le\pi_1(M)$.
 
 ::: pf-proof
 
@@ -36,7 +41,7 @@ The number of sheets is the index $[\pi_1(M):H]$.
 
 ::: pf-step
 
-The orientation character $w_1:\pi_1(M)\to\mathbb Z/2$ is nontrivial and vanishes on $H$.
+The orientation character $w_1:\pi_1(M)\to\ZZ/2$ is nontrivial and vanishes on $H$.
 
 ::: pf-proof
 
