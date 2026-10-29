@@ -66,7 +66,7 @@ The polar form applies directly to functions given in terms of $r$ and $\theta$.
 
 ## Wirtinger derivatives
 
-In terms of the Wirtinger derivatives $\del$ and $\delbar$, the Cauchy–Riemann equations are the single equation $\delbar f = 0$.
+In terms of the Wirtinger derivatives $\del$ and $\delbar$, the Cauchy--Riemann equations are the single equation $\delbar f = 0$.
 
 [[D-OAFF5]]
 
