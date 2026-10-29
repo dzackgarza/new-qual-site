@@ -66,25 +66,11 @@ Then $\mu^*$ is an [[D-79EWM|outer measure]].
 
 A property holds almost everywhere if the set where it fails has measure zero.
 
-::: {.definition}
-For sets $E_n$,
-$$
-\limsup_n E_n \coloneqq \bigcap_{k\geq1}\bigcup_{n\geq k}E_n, \qquad \liminf_n E_n\coloneqq\bigcup_{k\geq1}\bigcap_{n\geq k}E_n,
-$$
-so $\limsup_nE_n = \theset{x \st x\in E_n\text{ for infinitely many } n}$ and $\liminf_nE_n = \theset{x \st x\in E_n\text{ for all but finitely many } n}$.
+[[D-PAEDW]]
+
 De Morgan's laws state $\qty{\bigcup_\alpha E_\alpha}^c = \bigcap_\alpha E_\alpha^c$ and $\qty{\bigcap_\alpha E_\alpha}^c = \bigcup_\alpha E_\alpha^c$.
 
-:::
-
-::: {.theorem}
-Let $\mu$ be a Lebesgue--Stieltjes measure on $\RR$ with $\sigma$-algebra $\mathcal M_\mu$.
-If $E\in\mathcal M_\mu$, then
-$$
-\mu(E) = \inf\theset{\mu(U) \st U\supseteq E,\ U\text{ open}} = \sup\theset{\mu(K) \st K\subseteq E,\ K\text{ compact}}.
-$$
-For $E\subseteq\RR$ the following are equivalent: (a) $E\in\mathcal M_\mu$; (b) $E = V\setminus N_1$ with $V$ a $G_\delta$ set and $\mu(N_1)=0$; (c) $E = H\cup N_2$ with $H$ an $F_\sigma$ set and $\mu(N_2)=0$.
-
-:::
+[[T-7X52J]]
 
 ## Fubini--Tonelli
 
