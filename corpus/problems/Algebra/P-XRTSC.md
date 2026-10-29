@@ -19,153 +19,63 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The problem block held a worked argument (a proof of rank-nullity over a division ring and of the one-sided inverse criteria) instead of a statement; it is replaced by the statement that argument answers. The removed argument claimed that rank A < m gives a pair of linearly dependent columns, which is false, and the correct second solution is kept as a structured proof.
 ---
 
 ::: {.problem}
-**Lemma**:
-The rank-nullity theorem holds over division rings.
+Let $D$ be a division ring.
 
-Proof:
-A linear map $\phi: D^m \to D^n$ induces a short exact sequence:
-$$
-0 \to \ker \phi \to D^m \mapsvia{\phi} \im\phi \to 0
-$$
+(a) Prove the rank-nullity theorem for a $D$-linear map $\phi:D^m\to D^n$: $m=\dim_D\ker\phi+\dim_D\im\phi$.
 
-But every module over a division ring is free; in particular, $\im \phi \leq D^n$ is a module over $D$ and is thus free.
-So by a lemma in class, since the right-most term is a free module, this sequence splits and we have
-$$
-D^m \cong \ker \phi \oplus \im \phi
-$$
+(b) Show that $A\in M_{n\times m}(D)$ has a left inverse if and only if $\rank A=m$.
 
-and taking dimensions yields 
-$$
-m = \dim \ker(\phi) + \rank(\phi).
-$$
-$\qed$
-
-1. $A \in M(n\times m, D)$ has a left inverse $B \iff \rank(A) = m$:
-
-$\implies$:
-Suppose toward the contrapositive that $\rank(A) < m$, so $A$ has at least one pair of linearly dependent columns.
-So wlog write 
-$$
-A = [\vector a_1^t, \vector a_2^t, \cdots, \vector a_m^t]
-$$ 
-in block form with each $\vector a_i$ a column vector, and we can assume that $\vector a_1, \vector a_2$ are linearly dependent.
-
-Now suppose such a left inverse $B$ were to exist. 
-Write it in block form as 
-$$
-B =[\vector b_1, \vector b_2, \cdots, \vector b_n]^t,
-$$ 
-so each $\vector b_i$ is a row of $B$.
-
-Now if $BA = I_m$ is to hold, noting that $(BA)_{ij} = \inner{\vector b_i}{\vector a_j}$, we must have
-
-\begin{align*}
-I_{1,1}  &= \inner{\vector b_1}{\vector a_1} = 1 \\
-I_{1, 2} &= \inner{\vector b_1}{\vector a_2} = 0 \\
-I_{1, 3} &= \inner{\vector b_1}{\vector a_3} = 0 \\
-&\vdots \\
-I_{2, 1} &= \inner{\vector b_2}{\vector a_1} = 0 \\
-I_{2, 2} &= \inner{\vector b_2}{\vector a_2} = 1 \\
-I_{2, 3} &= \inner{\vector b_2}{\vector a_3} = 0 \\
-&\vdots
-.\end{align*}
-
-
-But the claim is that this can *not* happen if $\vector a_1, \vector a_2$ are linearly dependent.
-To see why, note that the linear dependence supplies elements $d_1, d_2 \neq 0 \in D$ such that $d_1 \vector a_1 + d_2 \vector a_2 = \vector 0$. 
-But then taking inner products against, e.g. $\vector b_1$ (that is, applying $\inner{\vector b_1}{\wait}$ to everything in sight), we obtain
-
-\begin{align*}
-d_1 \vector a_1 + d_2 \vector a_2 = \vector 0 \\
-\implies \inner{\vector b_1}{d_1 \vector a_1} + \inner{\vector b_1}{d_2 \vector a_2} = \inner{\vector b_1}{\vector 0} = 0 \\
-\implies d_1 \inner{\vector b_1}{\vector a_1} + d_2\inner{\vector b_1}{\vector a_2} = \inner{\vector b_1}{\vector 0} = 0 \\
-\implies d_1 \inner{\vector b_1}{\vector a_1} + d_2\inner{\vector b_1}{\vector a_2}  = 0 \\
-\implies d_1 + d_2\inner{\vector b_1}{\vector a_2}  = 0 \\
-\implies \inner{\vector b_1}{\vector a_2} = -\frac{d_1}{d_2} \neq 0 
-,\end{align*}
-
-which contradicts $\inner{\vector b_1}{\vector a_2} = 0$ as required by the previous equations.
-
-
-$\impliedby$:
-Suppose $\rank(A) = m$, so $A$ has $m$ linearly independent columns -- note that this is *all* of its columns.
-
-> Note: since row rank equals column rank, this also says that $A$ has $m$ linearly independent rows, so $n\geq m$.
-
-Viewing $A$ as a representative of a map $\phi: D^m \to D^n$, we find that $\dim \im \phi = m \leq n$.
-In particular, from the rank nullity theorem, we have 
-$$
-m = \dim \ker \phi + \rank(\phi) = \dim \ker \phi + m \implies \dim \ker \phi = 0.
-$$
-So $\ker A = \theset{\vector 0}$, and $A$ represents an injective map $f_A: D^m \to D^n$.
-
-But any injective *set* map $f: S_1\to S_2$ has a left-inverse $g$ such that $g\circ f = \id_{S_1}$. 
-So $f_A: D^m \to D^n$ *as a set map* has a left inverse $g_B: D^n \to D^m$ satisfying $g_B\circ f_A = \id_{D^m}$.
-But then taking the matrix associated to $g_B$ yields a matrix $B \in M(m\times n, D)$ such that $BA = I_m$ as desired.
-$\qed$
-
-2. $A$ has a right inverse $B \iff \rank(A) = n$:
-
-$\implies$:
-By a similar argument, supposing that $\rank A < n$ but $AB = I_n$ for some $B$, we find that $A$ has at least two linearly dependent *rows* this time, say $\vector a_1, \vector a_2$, whereas we obtain a system of equations of the form $\inner{a_i}{\vector b_k} = \delta_{ik}$ where $\vector b_i$ are now the columns of $B$.
-
-In a similar manner, the linear dependence forces, say, $\inner{\vector a_2}{\vector b_1} \neq 0$, which is a contradiction.
-
-$\impliedby$:
-By another similar argument, we find that $A$ represents a map $f_A: D^m \to D^n$, and since $\rank A = \dim \im A = n$, we find that $A$ represents a surjective map $f_A$.
-Surjective set maps have *right* inverses, so there is some $g_B: D^n \to D^m$ such that $f_A \circ g_B = \id_{D^n}$, and when translated to matrices this yields $AB = I_{n}$.
-$\qed$
+(c) Show that $A\in M_{n\times m}(D)$ has a right inverse if and only if $\rank A=n$.
 :::
 
 ::: {.solution}
-Fix the convention that $D^m,D^n$ are right vector spaces over the division ring $D$, and matrices act on column vectors by left multiplication.
+Regard $D^m$ and $D^n$ as right vector spaces over $D$, with a matrix acting on column vectors by left multiplication, and write $e_1,\ldots,e_m$ for the standard basis of $D^m$.
+Every vector space over a division ring has a basis, and every linearly independent set extends to a basis.
 
-For a $D$-linear map
-\[
-\phi:D^m\to D^n,
-\]
-choose a basis of $\ker\phi$ and extend it to a basis of $D^m$. The images of the added basis vectors form a basis of $\operatorname{im}\phi$. Hence
-\[
-\boxed{m=\dim_D\ker\phi+\dim_D\operatorname{im}\phi},
-\]
-which is rank-nullity.
+::: pf
 
-Now let $A\in M_{n\times m}(D)$.
+::: {.pf-step #rank-nullity}
+(a) $m=\dim_D\ker\phi+\dim_D\im\phi$.
 
-If $BA=I_m$ for some $B$, then $Av=0$ implies
-\[
-v=BAv=0,
-\]
-so $A:D^m\to D^n$ is injective. Rank-nullity gives
-\[
-\operatorname{rank}A=m.
-\]
-Conversely, if $\operatorname{rank}A=m$, then $A$ is injective. Choose a basis of $\operatorname{im}A$ and extend it to a basis of $D^n$. Define a linear map
-\[
-B:D^n\to D^m
-\]
-by sending $A(e_i)$ back to $e_i$ and sending the complementary basis vectors to $0$. Then
-\[
-BA=I_m.
-\]
-Thus
-\[
-\boxed{A\text{ has a left inverse}\iff\operatorname{rank}A=m}.
-\]
+::: pf-proof
+Choose a basis $u_1,\ldots,u_k$ of $\ker\phi$ and extend it by $w_1,\ldots,w_l$ to a basis of $D^m$.
+The vectors $\phi(w_1),\ldots,\phi(w_l)$ span $\im\phi$.
+They are independent: if $\sum_j\phi(w_j)c_j=0$, then $\sum_j w_jc_j\in\ker\phi$, so it is a combination of the $u_i$, and independence of the basis forces every $c_j=0$.
+Hence $\dim\im\phi=l=m-k$.
+:::
 
-Similarly, if $AB=I_n$, then $A$ is surjective, so $\operatorname{rank}A=n$. Conversely, if $\operatorname{rank}A=n$, then $A$ is surjective. Choose a basis of $\ker A$ and extend it to a basis of $D^m$; the complementary basis maps to a basis of $D^n$. Sending that latter basis back to its chosen preimages defines a linear section
-\[
-B:D^n\to D^m
-\]
-with
-\[
-AB=I_n.
-\]
-Hence
-\[
-\boxed{A\text{ has a right inverse}\iff\operatorname{rank}A=n}.
-\]
+:::
+
+::: pf-step
+(b) $A$ has a left inverse if and only if $\rank A=m$.
+
+::: pf-proof
+If $BA=I_m$ and $Av=0$, then $v=BAv=0$, so $\ker A=0$ and $\rank A=m$ by step [](#rank-nullity){.pf-ref}.
+Conversely, if $\rank A=m$, then $\ker A=0$ by step [](#rank-nullity){.pf-ref}, so $Ae_1,\ldots,Ae_m$ is a basis of $\im A$.
+Extend it to a basis of $D^n$ and let $B:D^n\to D^m$ be the linear map with $B(Ae_i)=e_i$ and sending the added basis vectors to $0$.
+Then $BA=I_m$.
+:::
+
+:::
+
+::: pf-step
+(c) $A$ has a right inverse if and only if $\rank A=n$.
+
+::: pf-proof
+If $AB=I_n$, then every $v\in D^n$ equals $A(Bv)$, so $A$ is surjective and $\rank A=n$.
+Conversely, if $\rank A=n$, then $A$ is surjective; choose $x_i\in D^m$ with $Ax_i=e_i$ for the standard basis $e_1,\ldots,e_n$ of $D^n$, and let $B$ be the linear map with $Be_i=x_i$.
+Then $AB=I_n$.
+:::
+
+:::
+
+:::
+
 :::
