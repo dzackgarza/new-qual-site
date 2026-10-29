@@ -20,18 +20,7 @@ A \dfn{metric} on a set $X$ is a function $\rho\colon X\times X\to[0,\infty)$ su
 
 To prove $x=y$ in a metric space it suffices to show $\rho(x,y)<\varepsilon$ for every $\varepsilon>0$, and the triangle inequality splits an estimate of $\rho(x,z)$ through an intermediate point.
 
-::: {.definition}
-Let $f_n, f\colon S\to\RR$.
-The sequence $(f_n)$ \dfn{converges uniformly} to $f$ if
-$$
-(\forall\varepsilon>0)\,(\exists n_0)\,(\forall x\in S)\,(\forall n>n_0)\quad \abs{f_n(x)-f(x)}<\varepsilon,
-$$
-and \dfn{converges pointwise} to $f$ if
-$$
-(\forall\varepsilon>0)\,(\forall x\in S)\,(\exists n_0 = n_0(x,\varepsilon))\,(\forall n>n_0)\quad \abs{f_n(x)-f(x)}<\varepsilon.
-$$
-
-:::
+[[D-YZC3C]] [[D-IYDZU]]
 
 ::: {.remark}
 Uniform convergence fails exactly when
@@ -73,17 +62,16 @@ For $\varepsilon>0$, $\sum_{n\geq1}\varepsilon2^{-n} = \varepsilon$, which distr
 
 ## Measure theory
 
+[[D-RPOGQ]]
+
 ::: {.definition}
-An $F_\sigma$ set is a countable union of closed sets, and a $G_\delta$ set is a countable intersection of open sets.
 A $\sigma$-algebra on $X$ is a collection of subsets of $X$ containing $X$ and closed under complements and countable unions, hence under countable intersections.
 
 :::
 
-::: {.definition}
-Let $\mathcal M$ be a $\sigma$-algebra on $X$.
-A \dfn{measure} on $\mathcal M$ is a function $\mu\colon\mathcal M\to[0,\infty]$ with $\mu(\varnothing)=0$ and $\mu\qty{\bigcup_{j\geq1}E_j} = \sum_{j\geq1}\mu(E_j)$ for every sequence of disjoint $E_j\in\mathcal M$ (countable additivity), which implies finite additivity.
+[[D-QYLPH]]
 
-:::
+Countable additivity implies finite additivity.
 
 ::: {.theorem}
 Let $(X,\mathcal M,\mu)$ be a measure space.
@@ -118,12 +106,9 @@ Then $\mu^*$ is an outer measure.
 
 :::
 
-::: {.definition}
-The Lebesgue outer measure of $E\subseteq\RR^n$ is $m_*(E)\coloneqq\inf\sum_i\abs{Q_i}$, the infimum over countable covers of $E$ by closed cubes $Q_i$.
+[[D-3XE77]]
 
-:::
-
-A property holds \dfn{almost everywhere} if the set where it fails has measure zero.
+A property holds almost everywhere if the set where it fails has measure zero.
 
 ::: {.definition}
 For sets $E_n$,
