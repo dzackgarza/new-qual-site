@@ -24,7 +24,7 @@ Show that $\ker A \into A\tensor \QQ$ given by $a \mapsto a\tensor 1$ is the tor
 :::
 
 ::: {.solution}
-**Goal.** For an abelian group $A$, show the kernel of $A \to A \otimes \QQ$, $a \mapsto a \otimes 1$, is the torsion subgroup $T(A)$.
+Let $A$ be an abelian group with torsion subgroup $T(A)$.
 
 ::: pf
 
