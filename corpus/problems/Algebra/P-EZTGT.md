@@ -22,69 +22,71 @@ audit:
 ---
 
 ::: {.problem}
-(1) What is a valuation on a field $K$ (specifically a discrete valuation)?
-(2) Define the $p$-adic valuation $v_p$ and the $p$-adic absolute value $|\cdot|_p$ on $\mathbb{Q}$.
-(3) Define the ring of $p$-adic integers $\mathbb{Z}_p$ and the field of $p$-adic numbers $\mathbb{Q}_p$ (both algebraically via inverse limits and analytically via completion).
+(a) What is a valuation on a field $K$ (specifically a discrete valuation)?
+
+(b) Define the $p$-adic valuation $v_p$ and the $p$-adic absolute value $\abs{\cdot}_p$ on $\QQ$.
+
+(c) Define the ring of $p$-adic integers $\ZZ_p$ and the field of $p$-adic numbers $\QQ_p$ (both algebraically via inverse limits and analytically via completion).
 :::
 
 ::: {.solution}
-A discrete valuation on a field $K$ is a map
-\[
-v:K\to\mathbb Z\cup\{\infty\}
-\]
+(a) A discrete valuation on a field $K$ is a map
+$$
+v:K\to\ZZ\cup\{\infty\}
+$$
 such that
-\[
+$$
 v(x)=\infty\iff x=0,\qquad
 v(xy)=v(x)+v(y),\qquad
 v(x+y)\ge\min\{v(x),v(y)\},
-\]
-and whose image on $K^\times$ is all of $\mathbb Z$. Its valuation ring is
-\[
+$$
+and whose image on $K^\times$ is all of $\ZZ$. Its valuation ring is
+$$
 \mathcal O_v=\{x:v(x)\ge0\},
-\]
+$$
 with maximal ideal
-\[
+$$
 \mathfrak m_v=\{x:v(x)>0\}.
-\]
+$$
 
-For a prime $p$, every nonzero $x\in\mathbb Q$ has a unique form
-\[
+(b) For a prime $p$, every nonzero $x\in\QQ$ has a unique form
+$$
 x=p^k\frac ab,
 \qquad p\nmid a,b,
-\]
+$$
 and one defines
-\[
+$$
 v_p(x)=k,\qquad v_p(0)=\infty.
-\]
+$$
 The associated absolute value is
-\[
-|x|_p=p^{-v_p(x)},\qquad |0|_p=0,
-\]
+$$
+\abs{x}_p=p^{-v_p(x)},\qquad \abs{0}_p=0,
+$$
 and satisfies
-\[
-|x+y|_p\le\max\{|x|_p,|y|_p\}.
-\]
+$$
+\abs{x+y}_p\le\max\{\abs{x}_p,\abs{y}_p\}.
+$$
 
-The field of $p$-adic numbers is the metric completion
-\[
-\mathbb Q_p=\widehat{\mathbb Q}^{\,|\cdot|_p}.
-\]
+(c) The field of $p$-adic numbers is the metric completion
+$$
+\QQ_p=\widehat{\QQ}^{\,\abs{\cdot}_p}.
+$$
 Its valuation ring is
-\[
-\mathbb Z_p=\{x\in\mathbb Q_p:v_p(x)\ge0\}
-=\{x:|x|_p\le1\}.
-\]
+$$
+\ZZ_p=\{x\in\QQ_p:v_p(x)\ge0\}
+=\{x:\abs{x}_p\le1\}.
+$$
 Algebraically,
-\[
-\mathbb Z_p\cong\varprojlim_n\mathbb Z/p^n\mathbb Z,
-\]
-and every $x\in\mathbb Z_p$ has a unique expansion
-\[
-x=\sum_{n\ge0}a_np^n,\qquad a_n\in\{0,1,\dots,p-1\}.
-\]
+$$
+\ZZ_p\cong\varprojlim_n\ZZ/p^n\ZZ,
+$$
+and every $x\in\ZZ_p$ has a unique expansion
+$$
+x=\sum_{n\ge0}a_np^n,\qquad a_n\in\{0,1,\ldots,p-1\}.
+$$
 Finally,
-\[
-\mathbb Q_p=\operatorname{Frac}(\mathbb Z_p)=\mathbb Z_p[1/p],
-\]
+$$
+\QQ_p=\Frac(\ZZ_p)=\ZZ_p[1/p],
+$$
 so every nonzero $p$-adic number has a Laurent expansion with only finitely many negative powers of $p$.
 :::
