@@ -2373,7 +2373,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/FD-BIAA7.md` | `971a50956eb068ff7e6cf2610155403198da69e6` | `971a50956eb068ff7e6cf2610155403198da69e6` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FD-BRJK5.md` | `62a31c844d73d0e20e29753380bb97588d4c60b9` | `62a31c844d73d0e20e29753380bb97588d4c60b9` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FD-C7EQD.md` | `279679e3204cb1af1329c872091be7e1f13e1879` | `279679e3204cb1af1329c872091be7e1f13e1879` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/FD-CCVUQ.md` | `7244e83907ca761b3c9af4c6907bc315aba00d64` | `7244e83907ca761b3c9af4c6907bc315aba00d64` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FD-EKGLW.md` | `019c9289b31fedf46e54caef12897fbbe44e07c1` | `019c9289b31fedf46e54caef12897fbbe44e07c1` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FD-GK7JE.md` | `5567f4b8261997f2e3cf2daef6f9246e4d76c91d` | `5567f4b8261997f2e3cf2daef6f9246e4d76c91d` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FD-XUGN3.md` | `bf0e9cd0c1c93ff22852cff881afef7f5ef0aaba` | `bf0e9cd0c1c93ff22852cff881afef7f5ef0aaba` | Read; retained |

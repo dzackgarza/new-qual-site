@@ -41,7 +41,7 @@ In terms of limiting behavior:
 
 [[D-BQLJV]]
 
-[[FD-BRJK5]] [[FD-CCVUQ]]
+[[FD-BRJK5]]
 
 ::: {.example title="Removable singularities"}
 \envlist

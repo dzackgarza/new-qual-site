@@ -5,6 +5,7 @@ kind: definition
 title: Removable singularity and boundedness near it
 prompts:
 - What is a removable singularity, and how does $f$ behave near one?
+- What is a removable singularity, in terms of the order of a pole?
 classification:
   areas:
   - complex-analysis
