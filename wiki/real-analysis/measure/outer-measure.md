@@ -24,9 +24,11 @@ For arbitrary $E_n\in\mathcal M$, the sets $F_n\coloneqq E_n\setminus\bigcup_{k<
 
 ## Outer measure
 
-An outer measure $\mu^*$ on $X$ is defined on every subset of $X$, with $\mu^*(\varnothing)=0$, monotone, and countably subadditive.
-A set $A$ is Carathéodory measurable if $\mu^*(E) = \mu^*(E\cap A)+\mu^*(E\setminus A)$ for every $E\subseteq X$.
-By Carathéodory's theorem, the Carathéodory measurable sets form a $\sigma$-algebra on which $\mu^*$ is countably additive, hence a measure.
+[[D-79EWM]]
+
+[[D-TWUBM]]
+
+By Carathéodory's theorem, the [[D-TWUBM|Carathéodory measurable]] sets form a $\sigma$-algebra on which $\mu^*$ is countably additive, hence a measure.
 
 [[PR-LF7SW]]
 
