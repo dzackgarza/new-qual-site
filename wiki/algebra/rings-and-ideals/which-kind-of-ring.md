@@ -43,12 +43,3 @@ For a field $k$ and a nonconstant $f\in k[x]$, the following are equivalent: $\g
 ::: {.fact}
 If $\mfm\subseteq R$ is a maximal ideal and $x\in R\sm\mfm$, then $\mfm + Rx = R$, so $1 = m + rx$ for some $m\in\mfm$ and $r\in R$.
 :::
-
-## Gorenstein rings
-
-[[D-DU4UQ]]
-
-::: {.example title="Finite-dimensional graded Gorenstein algebras"}
-Let $k$ be a field and $R = R_0 \oplus R_1 \oplus \cdots \oplus R_n$ a graded commutative $k$-algebra with $R_0 = k$, $\dim_k R < \infty$, and $R_n\neq0$.
-Then $R$ is Gorenstein if and only if $R$ satisfies Poincaré duality: $\dim_k R_n = 1$, and for each $i$ the multiplication pairing $R_i \times R_{n-i} \to R_n$ is perfect.
-:::
