@@ -176,7 +176,6 @@ source:
   - id: E-NZY3B
   - id: E-O5SOQ
   - id: E-OBU6T
-  - id: E-OEEU4
     comment: Rudin 10.4
   - id: E-ORJPT
   - id: E-OS574

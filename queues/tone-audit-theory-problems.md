@@ -998,7 +998,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-NZY3B.md` | `69070f22bdf2c7cefe023d3022029ce5fbc7f037` | `69070f22bdf2c7cefe023d3022029ce5fbc7f037` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-O5SOQ.md` | `e4d00cb86ee86b4d9458d6e40bdb51cb0416516e` | `e4d00cb86ee86b4d9458d6e40bdb51cb0416516e` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-OBU6T.md` | `945e587cc7f79a7673c9689e84f43afc62270bbd` | `945e587cc7f79a7673c9689e84f43afc62270bbd` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-OEEU4.md` | `88e67b9a39c4469bc11947f6756cff985540353b` | `88e67b9a39c4469bc11947f6756cff985540353b` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ORJPT.md` | `866ea42ca72d6382a6909331256e1810307992a1` | `866ea42ca72d6382a6909331256e1810307992a1` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-OS574.md` | `b6994494cb37e96dea56b8e3d5aa73df8f489523` | `b6994494cb37e96dea56b8e3d5aa73df8f489523` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-OUBBQ.md` | `12444366767e28c99186862db5172726dd50f680` | `12444366767e28c99186862db5172726dd50f680` | Read; retained |

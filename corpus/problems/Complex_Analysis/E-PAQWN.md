@@ -63,3 +63,7 @@ Then $0 = g' = f'e^{f}$, and $e^{f}$ never vanishes, so $f'\equiv0$ and $f$ is c
 :::
 
 :::
+
+::: {.remark title="Variations"}
+In (a), the bound $\abs{f(z)}\leq A+B\abs{z}^k$ for $\abs{z}\geq M$ also forces $f$ to be a polynomial of degree at most $k$: the Cauchy estimate becomes $\abs{c_n}\leq A\rho^{-n}+B\rho^{k-n}$, which tends to $0$ for $n>k$.
+:::
