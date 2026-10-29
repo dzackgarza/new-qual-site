@@ -15,23 +15,52 @@ review: draft
 ---
 
 ::: {.problem}
+
 What can you say about the eigenvalues of a real symmetric matrix?
+
 :::
 
-
 ::: {.solution}
-Let $A\in M_n(\RR)$ satisfy $A^t=A$. Regard an eigenpair $Av=\lambda v$ in $\CC^n$. Then
-\[
-\lambda\langle v,v\rangle
-=\langle Av,v\rangle
-=\langle v,Av\rangle
-=\overline\lambda\langle v,v\rangle.
-\]
-Since $v\ne0$, this gives $\lambda=\overline\lambda$, so every eigenvalue is real.
 
-The real spectral theorem strengthens this: there is an orthogonal matrix $Q$ and real numbers $\lambda_1,\ldots,\lambda_n$ such that
-\[
-Q^tAQ=\operatorname{diag}(\lambda_1,\ldots,\lambda_n).
-\]
-Thus a real symmetric matrix has only real eigenvalues, is diagonalizable over $\RR$, and admits an orthonormal basis of eigenvectors. Eigenspaces belonging to distinct eigenvalues are orthogonal.
+Let $A\in M_n(\RR)$ satisfy $A^t=A$, and let $\inner{v}{w}=\sum_k v_k\overline{w_k}$ be the standard Hermitian inner product on $\CC^n$.
+
+::: pf
+
+::: pf-step
+
+Every eigenvalue of $A$ is real.
+
+::: pf-proof
+
+Let $Av=\lambda v$ with $\lambda\in\CC$ and $0\ne v\in\CC^n$. Since $A$ is real and symmetric, $\inner{Av}{v}=\inner{v}{Av}$, so
+$$
+\lambda\inner{v}{v}
+=\inner{Av}{v}
+=\inner{v}{Av}
+=\overline\lambda\inner{v}{v}.
+$$
+Since $\inner{v}{v}>0$, $\lambda=\overline\lambda$.
+
+:::
+
+:::
+
+::: pf-step
+
+There are an orthogonal matrix $Q$ and real numbers $\lambda_1,\ldots,\lambda_n$ such that
+$$
+Q^tAQ=\diag(\lambda_1,\ldots,\lambda_n).
+$$
+In particular, $A$ is diagonalizable over $\RR$, $\RR^n$ has an orthonormal basis of eigenvectors of $A$, and eigenspaces belonging to distinct eigenvalues are orthogonal.
+
+::: pf-proof
+
+This is the real spectral theorem.
+
+:::
+
+:::
+
+:::
+
 :::
