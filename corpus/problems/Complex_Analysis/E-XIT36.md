@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XIT36
 kind: problem
-title: Application of summation by parts
+title: Convergence of $\sum \sin(n)/n$ by summation by parts
 classification:
   areas:
   - complex-analysis
@@ -12,47 +12,61 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed "show that sin(n)/n converges", which as a sequence is immediate and needs no summation by parts; the statement now asks for convergence of the series sum_{n>=1} sin(n)/n.'
 ---
 
 ::: {.exercise}
-Use summation by parts to show that $\sin(n)/n$ converges.
+Use summation by parts to show that $\displaystyle\sum_{n=1}^\infty \frac{\sin(n)}{n}$ converges.
 :::
 
 ::: {.solution}
-As written, $\sin(n)/n$ is a sequence rather than a series, and its
-convergence is immediate:
-\[
-\left|{\sin n\over n}\right|\le {1\over n}\longrightarrow0.
-\]
-Thus the displayed sequence converges to $0$; summation by parts is not needed
-for this assertion.
+Write $B_N \coloneqq \sum_{n=1}^N \sin n$ and $B_0 \coloneqq 0$.
 
-The standard summation-by-parts exercise suggested by the wording is the
-convergence of
-\[
-\sum_{n=1}^\infty {\sin n\over n}.
-\]
-For that corrected statement, put
-\[
-B_N=\sum_{n=1}^N\sin n.
-\]
-Using a geometric sum,
-\[
-\sum_{n=1}^N e^{in}
-=e^i{1-e^{iN}\over1-e^i},
-\]
-so $(B_N)$ is bounded. Summation by parts gives, for $N>M$,
-\[
-\sum_{n=M}^N {\sin n\over n}
-={B_N\over N}-{B_{M-1}\over M}
-+\sum_{n=M}^{N-1}B_n\left({1\over n}-{1\over n+1}\right).
-\]
-If $|B_n|\le C$, the absolute value of the right-hand side is at most
-\[
-{C\over N}+{C\over M}
-+C\sum_{n=M}^{N-1}\left({1\over n}-{1\over n+1}\right)
-\le {3C\over M},
-\]
-which tends to $0$ as $M\to\infty$. Hence the corrected series is Cauchy and
-therefore convergent.
+::: pf
+
+::: {.pf-step #bounded}
+$\abs{B_N} \le C \coloneqq \dfrac{2}{\abs{1-e^i}}$ for all $N$.
+
+::: pf-proof
+$B_N$ is the imaginary part of the geometric sum
+$$
+\sum_{n=1}^N e^{in} = e^i\,\frac{1-e^{iN}}{1-e^i},
+$$
+whose modulus is at most $2/\abs{1-e^i}$.
+:::
+
+:::
+
+::: {.pf-step #abel}
+For $N>M\ge1$,
+$$
+\sum_{n=M}^N \frac{\sin n}{n} = \frac{B_N}{N} - \frac{B_{M-1}}{M} + \sum_{n=M}^{N-1} B_n\qty{\frac1n - \frac{1}{n+1}}.
+$$
+
+::: pf-proof
+Substitute $\sin n = B_n - B_{n-1}$ and regroup the terms by $B_n$.
+:::
+
+:::
+
+::: pf-step
+The series converges.
+
+::: pf-proof
+By steps [](#bounded){.pf-ref} and [](#abel){.pf-ref}, and since $\frac1n - \frac1{n+1} > 0$ telescopes,
+$$
+\abs{\sum_{n=M}^N \frac{\sin n}{n}} \le \frac CN + \frac CM + C\qty{\frac1M - \frac1N} \le \frac{3C}{M},
+$$
+which tends to $0$ as $M\to\infty$.
+So the partial sums are Cauchy, and the series converges.
+:::
+
+:::
+
+:::
+
 :::
