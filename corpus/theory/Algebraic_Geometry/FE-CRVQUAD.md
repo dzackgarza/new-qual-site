@@ -64,7 +64,7 @@ It is a hypersurface and hence Cohen--Macaulay; since the only possible nonregul
 Its complement of $L$ is the affine plane $D_+(x_0)$.
 The divisor restriction sequence therefore generates its class group by $[L]$.
 There is no relation: a rational function with divisor supported on $L$ is a unit on that affine plane, hence is a nonzero constant and has zero divisor [@Har10a, Proposition II.6.5].
-On the chart $x_2\ne0$, the hyperplane equation is $x_0/x_2=(x_1/x_2)^2$, so the hyperplane divisor is $2L$.
+On the chart $x_2\ne0$, the cone is $x_0/x_2=(x_1/x_2)^2$, so the hyperplane section $V_+(x_0)\cap Q_0$ is the divisor $2L$.
 
 Write $[C]=m[L]$.
 On a normal scheme, the ideal of an integral prime divisor is the sheaf of rational functions whose divisor is at least that divisor; regularity elsewhere is checked at the other codimension-one points.
