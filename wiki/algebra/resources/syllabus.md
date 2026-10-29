@@ -157,7 +157,7 @@ Adapted from a remark written by Roy Smith, August 2006:
 
   - Existence of maximal ideals in countable or Noetherian rings without Zorn's lemma
 
-  > See [@Smi96, sec. 844-1].
+  > See [@Smi96, handout 844-1].
 
 - The Chinese remainder theorem
 
@@ -221,7 +221,7 @@ Adapted from a remark written by Roy Smith, August 2006:
 
 - The structure of $\units{(\ZZ/n\ZZ)}$ as a product of cyclic groups
 
-  > See [@DF04] and [@Smi96, sec. 844-2.18].
+  > See [@DF04] and [@Smi96, handout 844-2.18].
 
 - Gröbner bases and division algorithms for polynomials in several variables [@DF04, sec. 9.6]
 
@@ -245,7 +245,7 @@ Adapted from a remark written by Roy Smith, August 2006:
 
   - Constructive proof of the decomposition [@DF04, exs. 12.1.16--19]
 
-  > [@Smi96, secs. 845-1 and 845-2] discusses the constructive proof in detail.
+  > [@Smi96, handouts 845-1 and 845-2] discusses the constructive proof in detail.
 
 ## Field theory
 
