@@ -23,7 +23,8 @@ prompts:
 ---
 
 ::: {.proposition}
-$\Pic(X) \cong H^1(X, \OO_X^\times)$.
+Let $(X,\OO_X)$ be a ringed space.
+Then $\Pic(X) \cong H^1(X, \OO_X^\times)$.
 For $\OO_X$-modules $\mcf$ and $\mcg$, equivalence classes of extensions
 $$
 0 \to \mcf \to \mce \to \mcg \to 0
@@ -57,6 +58,6 @@ H^1(X,\ZZ)\to H^1(X,\OO_X)\to\Pic(X)\xrightarrow{c_1}H^2(X,\ZZ)\to H^2(X,\OO_X).
 $$
 Thus $c_1$ records the integral cohomology class of a holomorphic line bundle, and
 $$
-\ker(c_1)\cong H^1(X,\OO_X)/\operatorname{im}H^1(X,\ZZ).
+\ker(c_1)\cong H^1(X,\OO_X)/\im H^1(X,\ZZ).
 $$
 :::
