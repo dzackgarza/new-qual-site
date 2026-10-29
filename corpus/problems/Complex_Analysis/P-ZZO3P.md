@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZZO3P
 kind: problem
-title: The Fundamental Theorem of Algebra
+title: The fundamental theorem of algebra
 classification:
   areas:
   - complex-analysis
@@ -24,22 +24,41 @@ Argue by contradiction: if a nonconstant polynomial had no roots, $1/p$ would be
 :::
 
 ::: {.solution}
-- Suppose $p$ is non-constant and has no roots.
-- Claim: $1/p(z)$ is a bounded holomorphic function on $\CC$.
-  - Holomorphic: since $p$ has no roots.
-  - Bounded: for $z\neq 0$, write
-    \begin{align*}
-    \frac{P(z)}{z^{n}}=a_{n}+\left(\frac{a_{n-1}}{z}+\cdots+\frac{a_{0}}{z^{n}}\right)
-    .\end{align*}
+Let $p(z)=a_nz^n+\cdots+a_0$ with $n\ge1$ and $a_n\ne0$, and suppose, toward a contradiction, that $p$ has no root in $\CC$.
 
-  - The term in parentheses goes to 0 as $\abs{z}\to \infty$
-  - Thus there exists an $R>0$ such that
-    \begin{align*}
-    \abs{z} > R \implies \abs{P(z) \over z^n} \geq c \definedas {\abs{a_n} \over 2}
-    .\end{align*}
+::: pf
 
-  - So $p$ is bounded below when $\abs{z} > R$
-  - Since $p$ is continuous and has no roots in $\abs{z} \leq R$, it is bounded below when $\abs{z} \leq R$.
-  - Thus $p$ is bounded below on $\CC$ and thus $1/p$ is bounded above on $\CC$.
-- By Liouville's theorem, $1/p$ is constant and thus $p$ is constant, a contradiction.
+::: {.pf-step #far}
+There is $R>0$ such that $\abs{p(z)}\ge\frac{\abs{a_n}}{2}R^n$ for $\abs{z}>R$.
+
+::: pf-proof
+For $z\ne0$,
+$$
+\frac{p(z)}{z^n}=a_n+\qty(\frac{a_{n-1}}{z}+\cdots+\frac{a_0}{z^n}),
+$$
+and the term in parentheses tends to $0$ as $\abs{z}\to\infty$. Choose $R\ge1$ with that term of modulus at most $\abs{a_n}/2$ for $\abs{z}>R$; then $\abs{p(z)}\ge\frac{\abs{a_n}}{2}\abs{z}^n\ge\frac{\abs{a_n}}{2}R^n$.
+:::
+
+:::
+
+::: {.pf-step #bounded}
+$1/p$ is a bounded entire function.
+
+::: pf-proof
+$1/p$ is entire because $p$ has no roots. On the compact disk $\abs{z}\le R$, the continuous function $\abs{p}$ has a positive minimum, and step [](#far){.pf-ref} bounds $\abs{p}$ below for $\abs{z}>R$.
+:::
+
+:::
+
+::: pf-step
+$p$ is constant, a contradiction.
+
+::: pf-proof
+By step [](#bounded){.pf-ref} and Liouville's theorem, $1/p$ is constant, so $p$ is constant, contrary to $n\ge1$ and $a_n\ne0$.
+:::
+
+:::
+
+:::
+
 :::
