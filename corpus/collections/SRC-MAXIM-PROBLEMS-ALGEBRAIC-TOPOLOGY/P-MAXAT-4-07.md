@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-07
 kind: problem
-title: Maxim algebraic topology 4.7
+title: Rational cohomology of $K(\ZZ,n)$
 classification:
   areas: [topology]
   topics: []
