@@ -20,8 +20,28 @@ Find the orders of zeros of the following functions:
 :::
 
 ::: {.solution}
-\envlist
 
-- The zeros are $z=2\pi i k$, $k\in\ZZ$, each of order 3: if $z_0$ is a zero of order $n$ for $f$, then it is a zero of order $kn$ for $f^k$.
-  The zeros of $e^z-1$ are exactly the points $2\pi ik$, and $\dd{}{z}(e^z-1)\mid_{z=2\pi ik} = e^{2\pi ik}=1\neq 0$, so each is a zero of order 1.
+::: pf
+
+::: {.pf-step #simple}
+The zeros of $e^z-1$ are the points $2\pi ik$ with $k\in\ZZ$, and each is simple.
+
+::: pf-proof
+$e^z=1$ exactly when $z=2\pi ik$ with $k\in\ZZ$, and the derivative $e^z$ of $e^z-1$ equals $1\neq0$ at each of these points.
+:::
+
+:::
+
+::: pf-step
+The zeros of $(e^z-1)^3$ are the points $2\pi ik$ with $k\in\ZZ$, each of order $\boxed{3}$.
+
+::: pf-proof
+By step [](#simple){.pf-ref}, near $z_0=2\pi ik$ we have $e^z-1=(z-z_0)h(z)$ with $h$ holomorphic and $h(z_0)\neq0$.
+Hence $(e^z-1)^3=(z-z_0)^3h(z)^3$ with $h(z_0)^3\neq0$.
+:::
+
+:::
+
+:::
+
 :::
