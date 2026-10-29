@@ -25,17 +25,28 @@ Show that every finite $p$-group is solvable.
 :::
 
 ::: {.solution}
-We argue by induction on $|G|$.
+We argue by induction on $\abs{G}$; the trivial group is solvable. Let $G$ be a nontrivial finite $p$-group.
 
-If $|G|=1$, the result is trivial. Let $G$ be a nontrivial finite $p$-group. Its center is nontrivial, so choose a subgroup
-\[
-C\le Z(G)
-\]
-of order $p$. Then $C\trianglelefteq G$ and $C$ is abelian.
+::: pf
 
-The quotient $G/C$ is again a finite $p$-group of smaller order. By induction, $G/C$ is solvable.
+::: {.pf-step #central}
+$G$ has a normal subgroup $C$ of order $p$.
 
-A group extension of a solvable group by a solvable normal subgroup is solvable. Since $C$ is abelian, hence solvable, and $G/C$ is solvable, it follows that $G$ is solvable.
+::: pf-proof
+The center $Z(G)$ is nontrivial by the class equation, so by Cauchy's theorem it contains a subgroup $C$ of order $p$. Every subgroup of the center is normal.
+:::
 
-Equivalently, iterating this argument gives a normal series whose successive factors all have order $p$, hence are cyclic and abelian.
+:::
+
+::: pf-step
+$G$ is solvable.
+
+::: pf-proof
+By step [](#central){.pf-ref}, $G/C$ is a finite $p$-group of smaller order, hence solvable by induction. Pulling back a subnormal series of $G/C$ with abelian factors and prepending $\{e\}\trianglelefteq C$ gives a subnormal series of $G$ whose factors are those of $G/C$ together with $C\cong\ZZ/p\ZZ$, all abelian.
+:::
+
+:::
+
+:::
+
 :::
