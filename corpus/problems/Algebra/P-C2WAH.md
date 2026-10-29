@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C2WAH
 kind: problem
-title: Nilradical is intersection of primes
+title: The nilradical is the intersection of the prime ideals
 classification:
   areas:
   - algebra
@@ -12,30 +12,76 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source leaves R unspecified; the statement declares R a commutative ring.
 ---
 
 ::: {.problem}
-The nilradical is the intersection of all prime ideals, i.e.
-\[
+Let $R$ be a commutative ring. The nilradical is the intersection of all prime ideals, i.e.
+$$
 \nilrad{R} = \Intersect_{\mathfrak{p} \in \Spec(R)} \mathfrak{p}
-\]
+$$
 :::
 
 ::: {.solution}
-\envlist
 
-- $\nilrad{R} \subseteq \intersect \mathfrak{p}$:
+::: pf
 
-- $x \in \nilrad{R} \implies x^n = 0 \in \mathfrak p$, and induction on $n$ using that $\mfp$ is prime gives $x\in \mathfrak{p}$.
+::: pf-step
 
-- $R\sm \nilrad{R} \subseteq \union_{\mfp} (R\sm \mathfrak{p})$:
+$\nilrad{R}\subseteq\mfp$ for every prime ideal $\mfp$.
 
-- Fix $a$ non-nilpotent and define $S = \theset{I\normal R \suchthat a^n\not\in I \text{ for any } n\geq 1}$.
+::: pf-proof
 
-- Then $\generators{0}\in S$, and the union of a chain in $S$ is again in $S$, so Zorn's lemma gives an ideal $\mfp$ maximal *within $S$*.
+If $x^n=0\in\mfp$, then induction on $n$, using that $\mfp$ is prime, gives $x\in\mfp$.
 
-- Such a $\mfp$ is prime: if $a', b'\not\in \mfp$ then $\mfp + \generators{a'}$ and $\mfp + \generators{b'}$ strictly contain $\mfp$, hence leave $S$, so some $a^m \in \mfp + \generators{a'}$ and $a^n \in \mfp + \generators{b'}$; then $a^{m+n} \in \mfp + \generators{a'b'}$, which forces $a'b'\not\in\mfp$.
+:::
 
-- Note $\mfp$ need not be a maximal ideal, only maximal among the ideals avoiding all powers of $a$.
-  Since $\mfp\in S$ we have $a\not\in \mfp$, so $a$ escapes the intersection.
+:::
+
+::: {.pf-step #zorn}
+
+For a non-nilpotent $a\in R$, let $S$ be the set of ideals $I$ with $a^n\notin I$ for all $n\ge1$. Then $S$ has a maximal element $\mfp$.
+
+::: pf-proof
+
+$(0)\in S$ because $a$ is not nilpotent. The union of a chain in $S$ is an ideal containing no power of $a$, so it lies in $S$. Zorn's lemma gives a maximal element.
+
+:::
+
+:::
+
+::: {.pf-step #prime}
+
+The ideal $\mfp$ of step [](#zorn){.pf-ref} is prime.
+
+::: pf-proof
+
+$\mfp\ne R$ because $a\notin\mfp$. Let $a',b'\notin\mfp$. Then $\mfp+(a')$ and $\mfp+(b')$ strictly contain $\mfp$, so they are not in $S$: $a^m\in\mfp+(a')$ and $a^n\in\mfp+(b')$ for some $m,n$. Multiplying, $a^{m+n}\in\mfp+(a'b')$, so $\mfp+(a'b')\notin S$ and hence $\mfp+(a'b')\ne\mfp$, that is, $a'b'\notin\mfp$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\Intersect_{\mfp\in\Spec(R)}\mfp\subseteq\nilrad{R}$.
+
+::: pf-proof
+
+If $a$ is not nilpotent, the prime ideal $\mfp$ of step [](#prime){.pf-ref} lies in $S$, so $a\notin\mfp$ and $a$ is not in the intersection.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+The prime ideal $\mfp$ maximal among ideals avoiding the powers of $a$ need not be a maximal ideal; it is maximal only among the ideals that avoid all powers of $a$.
 :::
