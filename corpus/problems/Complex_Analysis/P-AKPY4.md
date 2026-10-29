@@ -20,10 +20,30 @@ Prove that if $fg = 0$ on $D$, then either $f \equiv 0$ or $g\equiv 0$ on $D$.
 :::
 
 ::: {.solution}
-Suppose $fg=0$ on $D$ but $f\not\equiv 0$, we'll show $g\equiv 0$ on $D$.
-Since $f\not \equiv 0$, $f(z_0)\neq 0$ at some point $z_0$.
-Since $f$ is holomorphic, in particular $f$ is continuous, so there is a neighborhood $U\ni z_0$ where $f(z)\neq 0$ for any $z\in U$.
-But $f(z)g(z) = 0$ for all $z\in U$, and since $\CC$ is an integral domain, this forces $g(z) = 0$ for every $z\in U$.
-So $g\equiv 0$ on $U$.
-Now $U$ is a set with a limit point, so by the identity principle, $g\equiv 0$ on $D$.
+Suppose $fg=0$ on $D$ and $f\not\equiv 0$; we show $g\equiv0$.
+
+::: pf
+
+::: {.pf-step #local}
+$g$ vanishes on a nonempty open set $U\subseteq D$.
+
+::: pf-proof
+Pick $z_0\in D$ with $f(z_0)\neq0$.
+Since $f$ is continuous, $f$ has no zeros on some open neighbourhood $U\subseteq D$ of $z_0$.
+For $z\in U$, $f(z)g(z)=0$ and $f(z)\neq0$, so $g(z)=0$, because $\CC$ is a field.
+:::
+
+:::
+
+::: pf-step
+$g\equiv0$ on $D$.
+
+::: pf-proof
+The open set $U$ of step [](#local){.pf-ref} has limit points in $D$, and $D$ is connected, so the identity theorem applies.
+:::
+
+:::
+
+:::
+
 :::
