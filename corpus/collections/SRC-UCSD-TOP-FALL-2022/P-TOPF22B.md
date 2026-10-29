@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF22B
 kind: problem
-title: "Fundamental group and H_2 of universal cover of a torus with attached discs"
+title: 'Fundamental group and $H_2$ of the universal cover of a torus with attached discs'
 classification:
   areas:
   - topology

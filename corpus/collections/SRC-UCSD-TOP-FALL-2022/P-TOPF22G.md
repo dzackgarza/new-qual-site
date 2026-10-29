@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF22G
 kind: problem
-title: "Homology of the complement of a knotted S^3 in S^5 via Lefschetz duality"
+title: 'Homology of the complement of a knotted $S^3$ in $S^5$ via Lefschetz duality'
 classification:
   areas:
   - topology

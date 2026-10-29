@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF22C
 kind: problem
-title: "Mod 2 cohomology ring of the Klein bottle times S^1"
+title: 'Mod $2$ cohomology ring of the Klein bottle times $S^1$'
 classification:
   areas:
   - topology
