@@ -95,14 +95,18 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-topology-ag-content`**. **Needs:** none. PR-QV4U5 proof does not prove its CW
     statement; C-ILVEB empty concept block; C-GJRYO dangling colon; T-BX4LD notation;
     E-JX67Q delimiters; separated-and-proper and curves-in-projective-space restatements;
-    wiki/prelim/worked-exams/all.md stray remark. **Acceptance:** each item read and repaired.
+    wiki/prelim/worked-exams/all.md stray remark. **Acceptance:** each item read and repaired. **Closed.**
   - **`ad-analysis-content`**. **Needs:** none. P-RAF23C step 2 fails for infinite measure;
     P-RAF23F/G titles carry TeX outside math; P-RAF23G "measurable space"; STYLE-05 part
     keying in P-SMK7Q, P-NYOLD, P-PEND3, P-7XPOK; GUIDE-REAL-ANALYSIS joint-exam intro
     describes complex analysis. **Acceptance:** each item read and repaired. **Closed.**
   - **`ad-public-notes`**. **Needs:** none. Curation notes on public pages
     (workshops-guide topology lede, SRC-RA-WORKSHOP remark) and RES-01 duplicate PDF links
-    in wiki/prelim/resources/problems.md. **Acceptance:** each item read and repaired.
+    in wiki/prelim/resources/problems.md. **Acceptance:** each item read and repaired. **Closed.**
+  - **`ad-prelim-resource-intake`**. **Needs:** none. `RES-02`: wiki/prelim/resources/problems.md
+    links `assets/attachments/calculus_practice_test3.pdf`, which no collection lists as
+    provenance. **Acceptance:** the PDF is ingested as a collection, like the GRE chapter
+    reviews, and the page links that collection.
 
 ### Marking a node closed
 
