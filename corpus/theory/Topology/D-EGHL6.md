@@ -16,9 +16,11 @@ review: draft
 ::: {.definition}
 Let $R$ be a commutative ring and $M$, $N$, $L$ $R$-modules.
 A \dfn{pairing} of $M$ and $N$ with values in $L$ is an $R$-bilinear map $p\colon M\times N\to L$, equivalently an $R$-linear map $M\otimes_R N\to L$ on the [[D-DEFTENS|tensor product]].
-The pairing $p$ is \dfn{perfect} if the $R$-linear map
+The pairing $p$ is \dfn{perfect} if both $R$-linear maps
 $$
-\phi\colon M\to\Hom_R(N, L),\qquad \phi(m)(n)\coloneqq p(m, n),
+\phi\colon M\to\Hom_R(N, L),\quad \phi(m)(n)\coloneqq p(m, n),
+\qquad
+\psi\colon N\to\Hom_R(M, L),\quad \psi(n)(m)\coloneqq p(m, n),
 $$
-is an isomorphism.
+are isomorphisms.
 :::
