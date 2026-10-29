@@ -17,15 +17,16 @@ review: draft
 
 ::: {.exercise}
 Compute
-\[
-\Res_{z=0} {1\over z^2 \sin(z)}
-.\]
+$$
+\Res_{z=0} {1\over z^2 \sin(z)}.
+$$
 
 :::
 
 ::: {.solution}
 First expand $\inverseof{(\sin(z))}$:
-\[
+$$
+\begin{aligned}
 {1\over \sin(z)}
 &= \inverseof{\qty{z - {1\over 3!}z^3 + {1\over 5!}z^5 -\cdots }} \\
 &= \inverseof{z} \inverseof{\qty{1 - {1\over 3!}z^2 + {1\over 5!}z^4 - \cdots }} \\
@@ -33,19 +34,22 @@ First expand $\inverseof{(\sin(z))}$:
 \qty{{1\over 3!}z^2 - {1\over 5!} z^4 + \cdots} +
 \qty{{1\over 3!}z^2 - \cdots}^2 + \cdots
 } \\
-&= \inverseof{z}\qty{1 + {1\over 3!}z^2 + O(z^4) }
-,\]
+&= \inverseof{z}\qty{1 + {1\over 3!}z^2 + O(z^4) },
+\end{aligned}
+$$
 using that $\inverseof{(1-x)} = 1 + x + x^2 + \cdots$ with $x={1\over 3!}z^2 - {1\over 5!} z^4 + \cdots$.
 
 Thus
-\[
+$$
+\begin{aligned}
 z^{-2}\inverseof{\qty{\sin(z)}}
 &= z^{-2} \cdot
 \inverseof{z}\qty{1 + {1\over 3!}z^2 + O(z^4) } \\
-&= z^{-3} + {1\over 3!}\inverseof{z} + O(z)
-,\]
+&= z^{-3} + {1\over 3!}\inverseof{z} + O(z),
+\end{aligned}
+$$
 and the residue is the coefficient of $\inverseof{z}$:
-\[
-\Res_{z=0} {1\over z^2 \sin(z)}=\boxed{1\over 6}
-.\]
+$$
+\Res_{z=0} {1\over z^2 \sin(z)}=\boxed{1\over 6}.
+$$
 :::
