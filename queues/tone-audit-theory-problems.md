@@ -1490,7 +1490,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Topology/E-AUAOC.md` | `1346514fae44eacd3595325a4847b27b7ed1d772` | `1346514fae44eacd3595325a4847b27b7ed1d772` | Read; retained |
 | [x] | `corpus/problems/Topology/E-AZ7SN.md` | `3b0973e7bb5b6ec6af759dc86a7bb9ef1c2b529d` | `3b0973e7bb5b6ec6af759dc86a7bb9ef1c2b529d` | Read; retained |
 | [x] | `corpus/problems/Topology/E-BOLN3.md` | `b937b38d58d6c12fadcb99e99fadefdfb41784fb` | `b937b38d58d6c12fadcb99e99fadefdfb41784fb` | Read; retained |
-| [x] | `corpus/problems/Topology/E-BPYQ4.md` | `89f9958823d0fc1cc8355b5417f0d4ec7efba749` | `89f9958823d0fc1cc8355b5417f0d4ec7efba749` | Read; retained |
 | [x] | `corpus/problems/Topology/E-C74H7.md` | `2ff4c6014eb1d62e0b2ac0e2b2668a82d257a192` | `2ff4c6014eb1d62e0b2ac0e2b2668a82d257a192` | Read; retained |
 | [x] | `corpus/problems/Topology/E-CNWHF.md` | `f970b2eb4e339786c0099796220658a6a0487db0` | `f970b2eb4e339786c0099796220658a6a0487db0` | Read; retained |
 | [x] | `corpus/problems/Topology/E-E7FYR.md` | `f48d4a7d60550dbb347c8ff8554f67677964a5fb` | `b0775e0c3888e9a5159e72ce23e08856d0428caf` | Read; replaced extraction and merger commentary with hypotheses and a proof reference |
