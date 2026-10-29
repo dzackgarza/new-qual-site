@@ -19,238 +19,60 @@ audit:
 ---
 
 ::: {.problem}
-Show that 
-\[
-\displaystyle \int_0^\infty \frac{x^{a-1}} {1+x^n} \dx=\frac{\pi}{n\sin \frac{a\pi}{n}}
-.\]
+Show that
+$$
+\int_0^\infty \frac{x^{a-1}} {1+x^n} \dx=\frac{\pi}{n\sin \frac{a\pi}{n}}
+$$
 using complex analysis, $0< a < n$. Here $n$ is a positive integer.
 :::
 
 ::: {.solution}
+Let $I$ be the integral; it converges because the integrand is $O(x^{a-1})$ at $0$ and $O(x^{a-1-n})$ at $\infty$.
+Let $f(z)=z^{a-1}/(1+z^n)$, where $z^{a-1}=\abs{z}^{a-1}e^{i(a-1)\arg z}$ with $\arg z$ taken continuously in $[0,2\pi/n]$ on the closed sector $S=\theset{0\le\arg z\le2\pi/n}$; for $n=1$ the ray $\arg z=2\pi$ is the lower side of the cut along $[0,\infty)$.
+For $0<\varepsilon<1<R$, let $\Gamma$ be the positively oriented boundary of $S\cap\theset{\varepsilon\le\abs{z}\le R}$: the segment $[\varepsilon,R]$, the arc $\Gamma_R$ of $\abs{z}=R$, the ray segment from $Re^{2\pi i/n}$ to $\varepsilon e^{2\pi i/n}$, and the arc $\Gamma_\varepsilon$ of $\abs{z}=\varepsilon$ traversed clockwise.
 
 ::: pf
 
-::: pf-step
-
-Choose the integrand and contour:
-
-::: pf-proof
-
-::: pf-step
-
-Let $f(z) = \frac{z^{a-1}}{1 + z^n}$, where $z^{a-1} = \exp\bigl((a-1)\operatorname{Log}(z)\bigr)$ using the branch of the logarithm with argument $\arg(z) \in [0, 2\pi)$.
+::: {.pf-step #residue}
+$\displaystyle\int_\Gamma f(z)\,dz=-\frac{2\pi i}{n}e^{ia\pi/n}$.
 
 ::: pf-proof
-
-definition of power function.
-
+The poles of $f$ are the roots of $z^n=-1$, with arguments $(2k+1)\pi/n$. Only $z_0=e^{i\pi/n}$ lies inside $\Gamma$, since the next root has argument $3\pi/n>2\pi/n$. It is simple, and
+$$
+\Res(f,z_0)=\frac{z_0^{a-1}}{nz_0^{n-1}}=\frac{z_0^a}{nz_0^n}=-\frac1ne^{ia\pi/n}.
+$$
+The residue theorem gives the claim.
 :::
 
 :::
 
-::: pf-step
-
-Let $\Gamma = \Gamma_1 + \Gamma_R - \Gamma_2 - \Gamma_\varepsilon$ be the closed wedge contour in the complex plane:
-- $\Gamma_1$: the line segment along the positive real axis from $\varepsilon$ to $R$.
-- $\Gamma_R$: the circular arc $z = R e^{i\theta}$ with $\theta \in [0, 2\pi/n]$.
-- $\Gamma_2$: the ray $z = r e^{i 2\pi/n}$ with $r \in [\varepsilon, R]$.
-- $\Gamma_\varepsilon$: the circular arc $z = \varepsilon e^{i\theta}$ with $\theta \in [0, 2\pi/n]$.
+::: {.pf-step #arcs}
+$\int_{\Gamma_R}f\,dz\to0$ as $R\to\infty$ and $\int_{\Gamma_\varepsilon}f\,dz\to0$ as $\varepsilon\to0$.
 
 ::: pf-proof
-
-standard sector contour of angle $2\pi/n$.
-
+On $\Gamma_R$, $\abs{1+z^n}\ge R^n-1$, so the integral is at most $\frac{2\pi R}{n}\cdot\frac{R^{a-1}}{R^n-1}\to0$ since $a<n$.
+On $\Gamma_\varepsilon$, $\abs{1+z^n}\ge1-\varepsilon^n$, so the integral is at most $\frac{2\pi\varepsilon}{n}\cdot\frac{\varepsilon^{a-1}}{1-\varepsilon^n}\to0$ since $a>0$.
 :::
 
 :::
 
+::: {.pf-step #rays}
+The two straight pieces contribute $(1-e^{2\pi ia/n})\int_\varepsilon^R\frac{x^{a-1}}{1+x^n}\,dx$.
+
+::: pf-proof
+On $[\varepsilon,R]$, $f(x)=x^{a-1}/(1+x^n)$. On the ray $z=re^{2\pi i/n}$, $z^n=r^n$ and $z^{a-1}\,dz=r^{a-1}e^{2\pi i(a-1)/n}e^{2\pi i/n}\,dr=e^{2\pi ia/n}r^{a-1}\,dr$, and the ray is traversed inward.
 :::
 
 :::
 
 ::: pf-step
-
-Locate the poles of $f(z)$ inside $\Gamma$ and calculate the residue:
-
-::: pf-proof
-
-::: pf-step
-
-The poles of $f(z)$ occur where $1 + z^n = 0 \iff z^n = -1 = e^{i\pi}$.
+$I=\dfrac{\pi}{n\sin(a\pi/n)}$.
 
 ::: pf-proof
-
-roots of the denominator.
-
-:::
-
-:::
-
-::: pf-step
-
-The only pole strictly inside the sector $0 < \arg(z) < 2\pi/n$ is $z_0 = e^{i\pi/n}$.
-
-::: pf-proof
-
-$\arg(z_0) = \pi/n \in (0, 2\pi/n)$, while the next root has argument $3\pi/n > 2\pi/n$.
-
-:::
-
-:::
-
-::: pf-step
-
-$z_0$ is a simple pole, and its residue is:
-\[
-\operatorname{Res}(f, z_0) = \frac{z_0^{a-1}}{\left.\frac{d}{dz}(1+z^n)\right|_{z=z_0}} = \frac{z_0^{a-1}}{n z_0^{n-1}} = \frac{z_0^a}{n z_0^n} = \frac{e^{i a\pi/n}}{n (-1)} = -\frac{1}{n} e^{i a\pi/n}.
-\]
-
-::: pf-proof
-
-residue at a simple pole for a quotient $g(z)/h(z)$ with $h'(z_0) \neq 0$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Evaluate the integrals along the boundary pieces:
-
-::: pf-proof
-
-::: pf-step
-
-Along $\Gamma_1$:
-\[
-\int_{\Gamma_1} f(z)\,dz = \int_\varepsilon^R \frac{x^{a-1}}{1 + x^n}\,dx \xrightarrow[\substack{\varepsilon \to 0^+ \\ R \to \infty}]{} I = \int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx.
-\]
-
-::: pf-proof
-
-definition of improper integral.
-
-:::
-
-:::
-
-::: pf-step
-
-Along $\Gamma_2$: substitute $z = r e^{i 2\pi/n}$ so $dz = e^{i 2\pi/n}\,dr$ and $z^n = r^n e^{i 2\pi} = r^n$:
-\[
-\int_{\Gamma_2} f(z)\,dz = \int_\varepsilon^R \frac{r^{a-1} e^{i(a-1)2\pi/n}}{1 + r^n} e^{i 2\pi/n}\,dr = e^{i 2\pi a/n} \int_\varepsilon^R \frac{r^{a-1}}{1 + r^n}\,dr \xrightarrow[\substack{\varepsilon \to 0^+ \\ R \to \infty}]{} e^{i 2\pi a/n} I.
-\]
-
-::: pf-proof
-
-parametrization of $\Gamma_2$ and $e^{i(a-1)2\pi/n} e^{i 2\pi/n} = e^{i 2\pi a/n}$.
-
-:::
-
-:::
-
-::: pf-step
-
-Along the outer arc $\Gamma_R$: for $R > 1$, $|1 + z^n| \ge R^n - 1$, so:
-\[
-\left|\int_{\Gamma_R} f(z)\,dz\right| \le \frac{R^{a-1}}{R^n - 1} \cdot \frac{2\pi R}{n} = \frac{2\pi}{n} \frac{R^a}{R^n - 1} \xrightarrow[R \to \infty]{} 0 \quad (\text{since } a < n).
-\]
-
-::: pf-proof
-
-ML estimate on arc of length $2\pi R / n$.
-
-:::
-
-:::
-
-::: pf-step
-
-Along the inner arc $\Gamma_\varepsilon$: for $\varepsilon < 1$, $|1 + z^n| \ge 1 - \varepsilon^n$, so:
-\[
-\left|\int_{\Gamma_\varepsilon} f(z)\,dz\right| \le \frac{\varepsilon^{a-1}}{1 - \varepsilon^n} \cdot \frac{2\pi \varepsilon}{n} = \frac{2\pi}{n} \frac{\varepsilon^a}{1 - \varepsilon^n} \xrightarrow[\varepsilon \to 0^+]{} 0 \quad (\text{since } a > 0).
-\]
-
-::: pf-proof
-
-ML estimate on arc of length $2\pi \varepsilon / n$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Apply the Cauchy Residue Theorem and solve for $I$:
-
-::: pf-proof
-
-::: {.pf-step #s4-1}
-
-By the Residue Theorem:
-\[
-\oint_\Gamma f(z)\,dz = 2\pi i \operatorname{Res}(f, z_0) = -\frac{2\pi i}{n} e^{i a\pi/n}.
-\]
-
-::: pf-proof
-
-Cauchy Residue Theorem.
-
-:::
-
-:::
-
-::: pf-step
-
-Taking the limit as $\varepsilon \to 0^+$ and $R \to \infty$:
-\[
-(1 - e^{i 2\pi a/n}) I = -\frac{2\pi i}{n} e^{i a\pi/n}.
-\]
-
-::: pf-proof
-
-Steps [](#s3){.pf-ref} and [](#s4-1){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-Solving for $I$:
-\[
-I = \frac{-2\pi i e^{i a\pi/n}}{n(1 - e^{i 2\pi a/n})} = \frac{2\pi i}{n(e^{i a\pi/n} - e^{-i a\pi/n})} = \frac{\pi}{n \left(\frac{e^{i a\pi/n} - e^{-i a\pi/n}}{2i}\right)} = \frac{\pi}{n \sin\left(\frac{a\pi}{n}\right)}.
-\]
-
-::: pf-proof
-
-Euler's formula $\sin(\theta) = \frac{e^{i\theta} - e^{-i\theta}}{2i}$ with $\theta = a\pi/n$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-$\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx = \frac{\pi}{n \sin(a\pi/n)}$. Q.E.D.
-
-::: pf-proof
-
-Step [](#s4){.pf-ref}.
-
+Letting $\varepsilon\to0$ and $R\to\infty$ in steps [](#residue){.pf-ref}, [](#arcs){.pf-ref} and [](#rays){.pf-ref} gives $(1-e^{2\pi ia/n})I=-\frac{2\pi i}{n}e^{ia\pi/n}$, so
+$$
+I=\frac{2\pi i}{n\qty(e^{ia\pi/n}-e^{-ia\pi/n})}=\frac{\pi}{n\sin(a\pi/n)}.
+$$
 :::
 
 :::
