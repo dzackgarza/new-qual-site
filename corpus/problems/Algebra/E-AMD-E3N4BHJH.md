@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-E3N4BHJH
 kind: problem
-title: A maximal ideal is prime; $(0)$ in $\ZZ$ is prime but not maximal
+title: Maximal ideals are prime, and the converse fails
 classification:
   areas:
   - algebra
