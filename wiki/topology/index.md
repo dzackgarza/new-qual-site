@@ -26,9 +26,9 @@ The standard-spaces table lists $\pi_1$ and $H_*$ of the spaces from which wedge
 
 4. [[topology/cw-complexes/index|CW complexes]] -- cell structures and attaching maps.
 
-5. [[topology/homology/index|Homology]] -- cellular, Mayer-Vietoris, the long exact sequence.
+5. [[topology/homology/index|Homology]] -- cellular, Mayer--Vietoris, the long exact sequence.
 
-6. [[topology/degree/index|Degree and fixed points]] -- Brouwer, Lefschetz, Borsuk-Ulam.
+6. [[topology/degree/index|Degree and fixed points]] -- Brouwer, Lefschetz, Borsuk--Ulam.
 
 7. [[topology/surfaces/index|Surfaces and manifolds]] -- the classification.
 
@@ -68,7 +68,7 @@ The University of Georgia [study guide for the topology exam](https://math.uga.e
 
 - Fundamental group [@Mas19, chap. 2]; [@Hat02, sec. 1.1]
 
-- van Kampen’s theorem [@Mas19, chaps. 3-4]; [@Hat02, sec. 1.2]
+- van Kampen's theorem [@Mas19, chaps. 3--4]; [@Hat02, sec. 1.2]
 
 - Classification of covering spaces [@Mas19, chap. 5]; [@Hat02, sec. 1.3]
 
