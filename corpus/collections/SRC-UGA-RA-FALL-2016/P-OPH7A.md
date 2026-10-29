@@ -30,10 +30,10 @@ $$
 Show that either
 
 1. $f(x) = g(x)$ almost everywhere, or
-2. There exists a measurable set $E \subset [a, b]$ such that
-\[
-\int _{E} f(x) \, dx > \int _{E} g(x) \, dx
-\]
+2. There exists a measurable set $E \subseteq [a, b]$ such that
+$$
+\int _{E} f(x) \, dx > \int _{E} g(x) \, dx .
+$$
 :::
 
 ::: {.concept}
@@ -50,45 +50,75 @@ The non-obvious move: split $A$ itself up to get a strict inequality.
 :::
 
 ::: {.solution}
-Let
-\[
-h=f-g.
-\]
-Then $h\in L^1([a,b])$ and
-\[
-\int_a^b h\,dx=0.
-\]
-If $h=0$ almost everywhere, then $f=g$ almost everywhere and alternative (1) holds.
+Let $h\coloneqq f-g$, so $h\in L^1([a,b])$ and $\int_a^b h\,dx=0$.
+Put $E_+\coloneqq\theset{h>0}$ and $E_-\coloneqq\theset{h<0}$.
 
-Assume instead that $h\ne0$ on a set of positive measure. Write
-\[
-E_+=\{h>0\},
-\qquad
-E_-=\{h<0\}.
-\]
-If $m(E_+)=0$, then $h\le0$ almost everywhere and $h<0$ on a set of positive measure. Consequently
-\[
-\int_a^b h\,dx<0,
-\]
-contradicting $\int h=0$. Thus $m(E_+)>0$.
+::: pf
 
-Because $h>0$ on $E_+$,
-\[
-E_+=\bigcup_{k=1}^\infty\{h\ge 1/k\}.
-\]
-Hence some $k$ satisfies
-\[
-m(\{h\ge1/k\})>0.
-\]
-It follows that
-\[
-\int_{E_+}h\,dx
-\ge \frac1k\,m(\{h\ge1/k\})>0.
-\]
-Taking $E=E_+$ gives
-\[
-\int_E f\,dx-\int_E g\,dx
-=\int_E h\,dx>0.
-\]
-Therefore alternative (2) holds.
+::: {.pf-step #positive-integral}
+
+If $u\geq0$ is measurable and $m(\theset{u>0})>0$, then $\int u\,dx>0$.
+
+::: pf-proof
+
+Since $\theset{u>0}=\bigcup_{k\geq1}\theset{u\geq 1/k}$, countable subadditivity gives some $k$ with $m(\theset{u\ge1/k})>0$, and then
+$$
+\int u\,dx\ge \frac1k\,m(\theset{u\ge1/k})>0 .
+$$
+
+:::
+
+:::
+
+::: {.pf-step #both-null}
+
+If $m(E_+)=m(E_-)=0$, then $f=g$ almost everywhere.
+
+::: pf-proof
+
+Then $h=0$ off the null set $E_+\cup E_-$.
+
+:::
+
+:::
+
+::: {.pf-step #plus-positive}
+
+If $m(E_+)+m(E_-)>0$, then $m(E_+)>0$.
+
+::: pf-proof
+
+Suppose $m(E_+)=0$. Then $m(E_-)>0$ and $h^+=0$ almost everywhere, so by step [](#positive-integral){.pf-ref} applied to $u=h^-$,
+$$
+\int_a^b h\,dx=-\int_a^b h^-\,dx<0,
+$$
+contradicting $\int_a^b h\,dx=0$.
+
+:::
+
+:::
+
+::: {.pf-step #integral-on-plus}
+
+If $m(E_+)>0$, then $\int_{E_+}f\,dx>\int_{E_+}g\,dx$.
+
+::: pf-proof
+
+Apply step [](#positive-integral){.pf-ref} to $u=h\chi_{E_+}\ge0$, which is positive exactly on $E_+$:
+$$
+\int_{E_+} f\,dx-\int_{E_+} g\,dx=\int_{E_+} h\,dx>0 .
+$$
+
+:::
+
+:::
+
+::: pf-qed
+
+If $f=g$ almost everywhere fails, then $m(E_+)+m(E_-)>0$ by step [](#both-null){.pf-ref}, so $m(E_+)>0$ by step [](#plus-positive){.pf-ref}, and $E\coloneqq E_+$ satisfies alternative 2 by step [](#integral-on-plus){.pf-ref}.
+
+:::
+
+:::
+
 :::
