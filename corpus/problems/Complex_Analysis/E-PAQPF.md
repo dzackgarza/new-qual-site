@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that in polar coordinates, the CR equations take the following form:
+Let $\Omega\subseteq\CC\sm\theset{0}$ be open and let $f=u+iv$ be [[D-E7A5W|holomorphic]] on $\Omega$, with $u,v$ real-valued. Writing $u$ and $v$ as functions of $(r,\theta)$ through $z=re^{i\theta}$, $r>0$, show that the Cauchy--Riemann equations take the form
 $$
 \frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{1}{r} \frac{\partial u}{\partial \theta}=-\frac{\partial v}{\partial r}.
 $$
