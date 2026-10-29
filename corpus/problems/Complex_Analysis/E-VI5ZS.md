@@ -16,40 +16,38 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source states the identity without hypotheses; the statement adds that f and g are holomorphic where fg is nonzero.
 ---
 
 ::: {.exercise}
-Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. 
-\[
-{ (fg)' \over fg} = {f'\over f} + {g' \over g}
-.\]
+Let $f$ and $g$ be holomorphic on a region where $fg\neq0$. Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. 
+$$
+{ (fg)' \over fg} = {f'\over f} + {g' \over g}.
+$$
 :::
 
 ::: {.solution}
-**Goal:** Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. $(fg)'/(fg) = f'/f + g'/g$, wherever $f, g$ are nonzero holomorphic functions.
-
 ::: pf
 
 ::: {.pf-step #product-rule}
-Differentiate $fg$ by the product rule.
-
-::: pf-proof
 $(fg)' = f'g + fg'$.
-:::
-
-:::
-
-::: {.pf-step #divide-by-fg}
-Divide both sides by $fg \neq 0$.
 
 ::: pf-proof
-$\frac{(fg)'}{fg} = \frac{f'g + fg'}{fg} = \frac{f'g}{fg} + \frac{fg'}{fg} = \frac{f'}{f} + \frac{g'}{g}$.
+This is the product rule.
 :::
 
 :::
 
-::: pf-qed
-Steps [](#product-rule){.pf-ref} and [](#divide-by-fg){.pf-ref} establish the identity, valid on any region where $f, g$ are holomorphic and $fg \neq 0$.
+::: pf-step
+$\frac{(fg)'}{fg} = \frac{f'}{f} + \frac{g'}{g}$ wherever $fg\neq0$.
+
+::: pf-proof
+Divide step [](#product-rule){.pf-ref} by $fg$: $\frac{f'g + fg'}{fg} = \frac{f'}{f} + \frac{g'}{g}$.
+:::
+
 :::
 
 :::
