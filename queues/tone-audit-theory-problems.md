@@ -145,7 +145,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/E-AMD-ZF6SCEFC.md` | `845f0294a130fe2835eefa8a2d182c2c57dad64e` | `845f0294a130fe2835eefa8a2d182c2c57dad64e` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-AXWM3.md` | `9e067a96d1d8ac308798d1a4eefb2d62b8120ac7` | `9e067a96d1d8ac308798d1a4eefb2d62b8120ac7` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-BAOST.md` | `c157ecc8e3ce8c82b8b02f0547cb68affe23aee0` | `c157ecc8e3ce8c82b8b02f0547cb68affe23aee0` | Read; retained |
-| [x] | `corpus/problems/Algebra/E-BH6Q6.md` | `748cf7a9a2177811540599ab12ff764c3bcf5d0d` | `748cf7a9a2177811540599ab12ff764c3bcf5d0d` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-BSGSM.md` | `a57ecfb7d41dde23150e57ac9bd999b217ea284d` | `a57ecfb7d41dde23150e57ac9bd999b217ea284d` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-D62SD.md` | `2d625952cb4899a3d7e2ae3794be7d1fb047cd43` | `2d625952cb4899a3d7e2ae3794be7d1fb047cd43` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-DAS3L.md` | `0c15d1ebf140148d4e28c93207ea74302e130a94` | `0c15d1ebf140148d4e28c93207ea74302e130a94` | Read; retained |

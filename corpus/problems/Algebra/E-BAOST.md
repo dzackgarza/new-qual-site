@@ -20,6 +20,10 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source states part (d) with "assume G has a normal subgroup of order p" and then names it H, and part (e) for any finite G with "the permutation corresponding to x -> gx is 1". The sign of y -> xy is -1 and needs |G| even. The statement now names H in part (d) and in part (e) assumes |G| even and asks for sign -1 of y -> xy.
 ---
 
 ::: {.exercise}

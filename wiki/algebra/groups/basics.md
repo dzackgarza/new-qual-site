@@ -111,4 +111,4 @@ For subgroups $K\le H\le G$ of finite index, $[G:K]=[G:H]\,[H:K]$.
 
 ## Exercises
 
-[[E-BAOST]] [[E-BH6Q6]]
+[[E-BAOST]]

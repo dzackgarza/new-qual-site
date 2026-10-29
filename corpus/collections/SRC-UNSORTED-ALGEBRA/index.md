@@ -147,7 +147,6 @@ source:
   - id: E-AMD-ZF6SCEFC
   - id: E-AXWM3
   - id: E-BAOST
-  - id: E-BH6Q6
   - id: E-BSGSM
   - id: E-D62SD
   - id: E-DAS3L
