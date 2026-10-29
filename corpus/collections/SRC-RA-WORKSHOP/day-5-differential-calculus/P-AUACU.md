@@ -20,14 +20,15 @@ audit:
 ::: {.problem}
 Prove that if $f'$ exists and is bounded on $(a,b]$, then $\lim_{x\to a^+}f(x)$ exists.
 :::
+
 ::: {.solution}
-Let $M\geq0$ satisfy $|f'(t)|\leq M$ for all $t\in(a,b]$.
+Let $M\geq0$ satisfy $\abs{f'(t)}\leq M$ for all $t\in(a,b]$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For all $a<x<y\leq b$, one has $|f(y)-f(x)|\leq M(y-x)$.
+For all $a<x<y\leq b$, one has $\abs{f(y)-f(x)}\leq M(y-x)$.
 
 ::: pf-proof
 
@@ -39,39 +40,33 @@ Differentiability implies continuity on $[x,y]$ and differentiability on $(x,y)$
 
 ::: {.pf-step #s2}
 
-The sequence $f(a+(b-a)/n)$, for positive integers $n$, converges to some $L\in\mathbb R$.
+The sequence $f(a+(b-a)/n)$, for positive integers $n$, converges to some $L\in\RR$.
 
 ::: pf-proof
 
 Put $x_n=a+(b-a)/n$. By step [](#s1){.pf-ref}, for all positive integers $m,n$,
-\[
-|f(x_n)-f(x_m)|\leq M|x_n-x_m|.
-\]
-Since $(x_n)$ converges to $a$, it is Cauchy, so $(f(x_n))$ is Cauchy. Completeness of $\mathbb R$ gives its limit $L$.
+$$
+\abs{f(x_n)-f(x_m)}\leq M\abs{x_n-x_m}.
+$$
+Since $(x_n)$ converges to $a$, it is Cauchy, so $(f(x_n))$ is Cauchy. Completeness of $\RR$ gives its limit $L$.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
-The right-hand limit is $\boxed{\lim_{x\to a^+}f(x)=L}$.
+$\lim_{x\to a^+}f(x)=L$.
 
 ::: pf-proof
 
 For $x\in(a,b]$, step [](#s1){.pf-ref} and the triangle inequality give
-\[
-|f(x)-L|\leq M|x-x_n|+|f(x_n)-L|.
-\]
-Letting $n\to\infty$ and using step [](#s2){.pf-ref} yields $|f(x)-L|\leq M(x-a)$. Given $\varepsilon>0$, choose $\delta=\min\{b-a,\varepsilon/(M+1)\}>0$. If $a<x<a+\delta$, then $|f(x)-L|\leq M(x-a)<\varepsilon$.
+$$
+\abs{f(x)-L}\leq M\abs{x-x_n}+\abs{f(x_n)-L}.
+$$
+Letting $n\to\infty$ and using step [](#s2){.pf-ref} yields $\abs{f(x)-L}\leq M(x-a)$. Given $\varepsilon>0$, choose $\delta=\min\{b-a,\varepsilon/(M+1)\}>0$. If $a<x<a+\delta$, then $\abs{f(x)-L}\leq M(x-a)<\varepsilon$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} establishes the required finite right-hand limit.
 
 :::
 
