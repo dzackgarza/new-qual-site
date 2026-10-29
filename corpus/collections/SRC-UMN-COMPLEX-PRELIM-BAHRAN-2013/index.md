@@ -13,7 +13,6 @@ provenance:
 - assets/attachments/complex_prelim.pdf
 source:
   source_kind: compilation
-  area: complex-analysis
   sections:
   - name: Open mapping theorem
     problems:
