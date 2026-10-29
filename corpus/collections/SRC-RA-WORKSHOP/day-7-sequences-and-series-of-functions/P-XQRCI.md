@@ -18,25 +18,26 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n(x) = \frac{x}{1+nx^2}$ for $n \in \mathbb{N}$.
-Let $\mathcal{F} := \{f_n \, \colon \, n = 1, 2, 3, \ldots\}$ and $[a,b]$ be any compact subset of $\mathbb{R}$.
+Let $f_n(x) = \frac{x}{1+nx^2}$ for $n \in \NN$.
+Let $\mathcal{F} \coloneqq \{f_n \, \colon \, n = 1, 2, 3, \ldots\}$ and $[a,b]$ be any compact subset of $\RR$.
 Is $\mathcal{F}$ equicontinuous?
 Justify your answer.
 :::
+
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #derivative}
 
-Compute the derivative.
+$f_n'(x) = \dfrac{1 - nx^2}{(1+nx^2)^2}$.
 
 ::: pf-proof
 
-$f_n(x) = \frac{x}{1+nx^2}$, so
-\[
+By the quotient rule,
+$$
 f_n'(x) = \frac{(1+nx^2) - 2nx^2}{(1+nx^2)^2} = \frac{1 - nx^2}{(1+nx^2)^2}.
-\]
+$$
 
 :::
 
@@ -44,13 +45,13 @@ f_n'(x) = \frac{(1+nx^2) - 2nx^2}{(1+nx^2)^2} = \frac{1 - nx^2}{(1+nx^2)^2}.
 
 ::: {.pf-step #s2}
 
-$|f_n'(x)| \le 1$ for all $n$ and all $x$.
+$\abs{f_n'(x)} \le 1$ for all $n$ and all $x$.
 
 ::: pf-proof
 
-let $u = nx^2 \ge 0$; then $|f_n'(x)| = \frac{|1-u|}{(1+u)^2}$.
+Let $u = nx^2 \ge 0$. By step [](#derivative){.pf-ref}, $\abs{f_n'(x)} = \abs{1-u}/(1+u)^2$.
 For $0 \le u \le 1$: $\frac{1-u}{(1+u)^2} \le \frac{1}{(1+u)^2} \le 1$.
-For $u > 1$: $\frac{u-1}{(1+u)^2} \le \frac{u}{(1+u)^2} \cdot \frac{u}{u} \le 1$ (indeed $u-1 < u \le (1+u)^2$). Hence $|f_n'| \le 1$ everywhere.
+For $u > 1$: $\frac{u-1}{(1+u)^2} \le \frac{u}{(1+u)^2} \le 1$, because $u \le (1+u)^2$.
 
 :::
 
@@ -58,14 +59,15 @@ For $u > 1$: $\frac{u-1}{(1+u)^2} \le \frac{u}{(1+u)^2} \cdot \frac{u}{u} \le 1$
 
 ::: pf-step
 
-$\mathcal{F}$ is equicontinuous on $\RR$, hence on every compact $[a,b]$.
+$\boxed{\text{Yes}}$: $\mathcal{F}$ is equicontinuous on $\RR$, hence on every compact $[a,b]$.
 
 ::: pf-proof
 
-by the mean value theorem and step [](#s2){.pf-ref}, for all $n$ and all $x, y$, \[
-|f_n(x) - f_n(y)| \le \sup |f_n'| \cdot |x - y| \le |x - y|.
-\] So the family is uniformly $1$-Lipschitz: given $\eps > 0$, take $\delta = \eps$ independently of $n$ and $x$.
-In particular $\mathcal{F}$ is equicontinuous on any compact $[a,b]$ (and in fact on all of $\RR$).
+By the mean value theorem and step [](#s2){.pf-ref}, for all $n$ and all $x, y$,
+$$
+\abs{f_n(x) - f_n(y)} \le \sup \abs{f_n'} \cdot \abs{x - y} \le \abs{x - y}.
+$$
+So the family is uniformly $1$-Lipschitz: given $\varepsilon > 0$, the choice $\delta = \varepsilon$ works independently of $n$ and $x$.
 
 :::
 
