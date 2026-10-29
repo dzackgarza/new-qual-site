@@ -17,12 +17,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source stated f=0 a.e. iff int f=0 for every measurable f, false for chi_[0,1] - chi_[1,2], and bounded iff integrable with no finiteness hypothesis, false for f=1 on R; the statement now assumes f >= 0 and a finite measure space.'
 ---
 
 ::: {.exercise}
-- Show that if $f$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
+- Show that if $f \geq 0$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
 
-- Show that a bounded function is Lebesgue integrable iff it is measurable.
+- Show that on a measure space of finite measure, a bounded function is Lebesgue integrable iff it is measurable.
 
 - Show that simple functions are dense in $L^1$.
 
@@ -151,8 +155,4 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the first part needs $f \geq 0$ (or $|f|$ in place of $f$). For $f = \chi_{[0,1]} - \chi_{[1,2]}$, $\int f = 0$ but $f \neq 0$ on a set of measure $2$. The second part needs a finite measure space: on $\RR$ with Lebesgue measure, $f \equiv 1$ is bounded and measurable but not integrable.
 :::
