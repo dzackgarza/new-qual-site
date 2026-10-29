@@ -24,84 +24,33 @@ Prove $f$ is analytic on $U$.
 :::
 
 ::: {.solution}
+Let $g \coloneqq f^2$, which is analytic on $U$, and let $Z \coloneqq \{z \in U : f(z) = 0\}$, which is also the zero set of $g$.
+It suffices to show that $f$ is complex differentiable at every point of $U$.
 
 ::: pf
 
-::: pf-step
-
-Let $Z = \{z \in U : f(z) = 0\}$ be the zero set of $f$.
-
-::: pf-proof
-
-definition.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-On $U \setminus Z$, $f$ is nonzero, and $f = f^2/f$ is the quotient of two analytic functions, hence analytic.
+::: {.pf-step #off-zeros}
+$f$ is complex differentiable at every $z_0 \in U \setminus Z$, with $f'(z_0) = g'(z_0)/(2f(z_0))$.
 
 ::: pf-proof
-
-$f^2$ is analytic and $f$ is nonzero (so $1/f = f/f^2$ is analytic where $f \neq 0$).
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-At a point $z_0 \in Z$, if $f$ is identically zero in a neighborhood of $z_0$, then $f$ is analytic there (it is the zero function).
-
-::: pf-proof
-
-the zero function is analytic.
-
+For $z \in U$ with $z \neq z_0$ and $f(z) + f(z_0) \neq 0$, the difference of squares gives
+$$\frac{f(z) - f(z_0)}{z - z_0} = \frac{g(z) - g(z_0)}{z - z_0} \cdot \frac{1}{f(z) + f(z_0)}.$$
+Since $f$ is continuous, $f(z) + f(z_0) \to 2f(z_0) \neq 0$ as $z \to z_0$, so the condition holds near $z_0$ and the right side tends to $g'(z_0)/(2f(z_0))$.
 :::
 
 :::
 
 ::: pf-step
-
-Otherwise, $z_0$ is an isolated zero of $f$ (since $f^2$ is analytic and not identically zero, its zeros are isolated, and $f$ and $f^2$ have the same zeros).
-
-::: pf-proof
-
-the zeros of the analytic function $f^2$ are isolated (unless $f^2 \equiv 0$).
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Near an isolated zero $z_0$, $f$ is continuous and $f^2$ is analytic with a zero of some order $2m$; then $f$ has a removable singularity at $z_0$ (it is bounded near $z_0$ since $f$ is continuous), and $f$ extends analytically.
+$f$ is complex differentiable at every $z_0 \in Z$.
 
 ::: pf-proof
-
-$f$ is continuous, hence bounded near $z_0$, so any singularity is removable; and $f = \pm \sqrt{f^2}$ locally (choosing a consistent branch), which is analytic.
-
+Choose an open disc $D \subset U$ centred at $z_0$.
+If $g \equiv 0$ on $D$, then $f \equiv 0$ on $D$, so $f$ is complex differentiable at $z_0$.
+Otherwise $g$ is analytic and not identically zero on the connected set $D$, so its zero $z_0$ is isolated: some punctured disc $D^\ast$ about $z_0$ misses $Z$.
+By step [](#off-zeros){.pf-ref}, $f$ is analytic on $D^\ast$, and $f$ is bounded near $z_0$ because it is continuous.
+By the Riemann removable singularity theorem, $f|_{D^\ast}$ extends to an analytic function $F$ on $D^\ast \cup \{z_0\}$, and $F(z_0) = \lim_{z \to z_0} f(z) = f(z_0)$ by continuity of $f$.
+Hence $f = F$ near $z_0$, and $f$ is complex differentiable at $z_0$.
 :::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $f$ is analytic on all of $U$.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s5){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref}.
 
 :::
 
