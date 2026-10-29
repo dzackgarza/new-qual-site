@@ -24,8 +24,6 @@ Show that $X$ is homotopy equivalent to $S^3$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that every closed, simply connected 3-manifold $X$ is homotopy equivalent to $S^3$ using algebraic topology.
-
 ::: pf
 
 ::: pf-step
