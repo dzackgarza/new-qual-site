@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BH6Q6
 kind: problem
-title: Fixed-point-free elements, quotients of $\mathbb{Z}^3$, groups of order $pq$,
+title: Fixed-point-free elements, quotients of $\ZZ^3$, groups of order $pq$,
   and cyclic Sylow $2$-subgroups
 classification:
   areas:
@@ -87,7 +87,7 @@ If $p$ is the smallest prime dividing $|G|$ and $H\trianglelefteq G$ has order $
 
 ::: pf-proof
 Conjugation gives a homomorphism $\theta\colon G\to\Aut(H)\cong(\ZZ/p\ZZ)^\times$, a group of order $p-1$.
-$|\operatorname{im}\theta|$ divides $|G|$ and $p-1$; every prime factor of $p-1$ is less than $p$, so $\gcd(|G|,p-1)=1$ and $\theta$ is trivial.
+$|\im\theta|$ divides $|G|$ and $p-1$; every prime factor of $p-1$ is less than $p$, so $\gcd(|G|,p-1)=1$ and $\theta$ is trivial.
 Thus every element of $G$ commutes with every element of $H$.
 :::
 
