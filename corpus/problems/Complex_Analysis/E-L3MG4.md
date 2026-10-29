@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-L3MG4
 kind: problem
-title: $\sqrt{x^2-1}$
+title: $\int_{-1}^1\sqrt{1-x^2}\,dx$ by a dogbone contour
 classification:
   areas:
   - complex-analysis
@@ -16,51 +16,57 @@ review: draft
 ---
 
 ::: {.exercise}
-\[
-I\definedas \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}
-.\]
+Show that
+$$
+I\coloneqq \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}
+.$$
 
 :::
 
 ::: {.solution title="Dogbone and residue at $\infty$"}
-Take a branch cut $[-1, 1]$ and $\Gamma$ the standard dogbone contour:
+Let $g$ be the branch of $\sqrt{z^2-1}$ on $\CC\setminus[-1,1]$ with $g(z)=z\sqrt{1-z^{-2}}$ for $\abs z>1$, using the principal square root of $1-z^{-2}$.
+Let $\Gamma$ be the dogbone contour around $[-1,1]$, oriented counterclockwise: the upper edge from $1$ to $-1$, a small circle around $-1$, the lower edge from $-1$ to $1$, and a small circle around $1$.
 
-![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_01-50-50.png)
+![Dogbone contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_01-50-50.png)
 
-Orient $\Gamma$ positively about *infinity*, i.e. counterclockwise.
+::: pf
 
-Contribution from $\gamma_1 \definedas\theset{t+i\eps \st t\in [-1, 1]}$, the upper horizontal piece:
-\[
-\int_{\gamma_1}f(z)\dz \to \int_{-1}^1 \sqrt{1-t^2} \dt = I
-.\]
+::: {.pf-step #boundary-values}
+For $-1<x<1$, $g(x\pm i0)=\pm i\sqrt{1-x^2}$.
 
-Contribution from $\gamma_2\definedas\theset{t-i\eps \st t\in [-1, 1]}$, the lower horizontal piece:
-note that following $e^{2\pi i t}z$ to $t=1$ sends $\sqrt{z}$ to $-\sqrt{z}$, so
-\[
-\int_{\gamma_2}f(z)\dz \to \int_{1}^{-1} - \sqrt{1-t^2} \dt = I
-.\]
-
-Contributions from the circles: use that $f(z) \definedas \sqrt{z^2-1}$ is a continuous function and these arcs are compact, so they are uniformly bounded.
-Thus $\int f\to 0$ by the ML estimate on these arcs.
-
-The total contribution:
-\[
-\qty{\int_{\gamma_1} + \int_{\gamma_2}} f = 2I
-.\]
-
-The residue at infinity:
-\[
-\Res_{z=\infty}f(z) 
-&= \Res_{z=0} - {1\over z^2}\sqrt{1 - {1\over z^2}} \\
-&= \Res_{z=0} - {1\over z^2}\sqrt{z^2-1 \over z^2} \\
-&= \Res_{z=0} - {i\over z^3}\sqrt{1-z^2} \\
-&= \Res_{z=0} - {i\over z^3}\sum_{k\geq 0} {1/2\choose k}z^{2k} \\
-&= \Res_{z=0} - {i\over z^3} \qty{1 - {1\over 2}z^2 - \bigo(z^3) } \\
-&= {i\over 2}
-,\]
-thus
-\[
-2\pi i \cdot -{i\over 2} = 2I \implies I = {\pi \over 2}
-.\]
+::: pf-proof
+$g^2=z^2-1$, so $g(x\pm i0)=\pm i\sqrt{1-x^2}$ for one choice of sign on each edge, constant along the edge by continuity. At $z=iy$ with $y>0$, $g(iy)=iy\sqrt{1+y^{-2}}=i\sqrt{y^2+1}$, which tends to $i$ as $y\to0^+$, and $g(-z)=-g(z)$ fixes the lower edge.
 :::
 
+:::
+
+::: {.pf-step #dogbone}
+$\int_\Gamma g\,dz\to-2iI$ as $\Gamma$ shrinks to $[-1,1]$.
+
+::: pf-proof
+By step [](#boundary-values){.pf-ref}, the upper edge contributes $\int_1^{-1}i\sqrt{1-x^2}\,dx=-iI$ and the lower edge $\int_{-1}^1(-i)\sqrt{1-x^2}\,dx=-iI$. The small circles contribute $0$ in the limit because $g$ is bounded near $\pm1$ and their lengths tend to $0$.
+:::
+
+:::
+
+::: {.pf-step #infinity}
+$\int_\Gamma g\,dz=-\pi i$.
+
+::: pf-proof
+By Cauchy's theorem, $\int_\Gamma g\,dz=\int_{\abs z=R}g\,dz$ for $R>1$. For $\abs z>1$, $g(z)=z\qty{1-\frac1{2z^2}+\bigo(z^{-4})}=z-\frac1{2z}+\bigo(z^{-3})$, so $\int_{\abs z=R}g\,dz=2\pi i\cdot\qty(-\frac12)$.
+:::
+
+:::
+
+::: pf-step
+$I=\frac\pi2$.
+
+::: pf-proof
+Steps [](#dogbone){.pf-ref} and [](#infinity){.pf-ref} give $-2iI=-\pi i$.
+:::
+
+:::
+
+:::
+
+:::
