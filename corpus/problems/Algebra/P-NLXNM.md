@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-NLXNM
 kind: problem
-title: Conjugation on Sylow $p$-subgroups; $|G|$ divides $n_p!$ if $G$ is simple;
-  no simple group of order $ap^k$ for $1\le a\le 4$
+title: 'Conjugation on Sylow $p$-subgroups; $|G|$ divides $n_p!$ if $G$ is simple and $n_p>1$; groups of order $ap^k$ with $1\le a\le 4$'
 classification:
   areas:
   - algebra
@@ -13,104 +12,90 @@ classification:
   - Group Actions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source part 2 reads "Deduce that if $G$ is simple then the order of $G$ divides $n_p!$", which fails for $G$ cyclic of prime order and whenever $p$ does not divide $|G|$; the statement adds the hypothesis $n_p>1$. The source part 3 reads "Show that for any $1\leq a \leq 4$ and any prime power $p^k$, no group of order $ap^k$ is simple", which fails for groups of prime order; the statement takes $k\ge1$ and excepts groups of prime order. The source writes $\mathrm{Sym}(X)$ for $\mathrm{Sym}(X_p)$.'
 ---
 
 ::: {.problem}
 Let $G$ be a finite group and $p$ a prime number. Let
 $X_p$ be the set of Sylow-$p$ subgroups of $G$ and $n_p$ be the
-cardinality of $X_p$. Let $\mathrm{Sym}(X)$ be the permutation group on
+cardinality of $X_p$. Let $\Sym(X_p)$ be the permutation group on
 the set $X_p$.
 
-1.  Construct a homomorphism $\rho: G \to \mathrm{Sym}(X_p)$ with image
-    a transitive subgroup (i.e. with a single orbit).
+(1) Construct a homomorphism $\rho: G \to \Sym(X_p)$ with image
+a transitive subgroup (i.e. with a single orbit).
 
-2.  Deduce that if $G$ is simple then the order of $G$ divides $n_p!$.
+(2) Deduce that if $G$ is simple and $n_p>1$, then the order of $G$ divides $n_p!$.
 
-3.  Show that for any $1\leq a \leq 4$ and any prime power $p^k$, no
-    group of order $ap^k$ is simple.
+(3) Show that for any $1\leq a \leq 4$ and any prime power $p^k$ with $k\ge1$, a
+group of order $ap^k$ is simple only if its order is prime.
 :::
 
 ::: {.solution}
-\envlist
+::: pf
 
-1.  Define the required group action by $$\begin{aligned}
-            \rho: G \to \mathrm{Sym}(X_p) \\
-            g \mapsto (\gamma_g: P \mapsto gPg^{-1}).
-        \end{aligned}$$ The claim is that this action is transitive on
-    $X_p$. This can be equivalently stated as
-    $$\forall P \in X_p, \exists g \in G, P' \in X_p \mid gP'g^{-1} = P.$$
+::: {.pf-step #action}
+(1) The map $\rho\colon G\to\Sym(X_p)$, $\rho(g)(P)=gPg^{-1}$, is a homomorphism with transitive image.
 
-    However, by Sylow 2, all Sylow $p-$subgroups are conjugate to each
-    other, and thus this condition is satisfied.
-
-2.  Suppose that $G$ is simple, so that we have
-    $$H \trianglelefteq G \implies H = \{ e \} \text{ or } H = G.$$
-
-    Note that $\mathrm{Sym}(X_p) = (n_p)!$, and if we have an injective
-    homomorphism $G \xrightarrow{\phi} \mathrm{Sym}(X_p)$, then
-    $|G| = |\phi(G)|$, since $\phi(G) \leq \mathrm{Sym}(X_p)$ will be a
-    subgroup and thus have order dividing $(n_p)!$, which proves the
-    statement.
-
-    Using the $\phi$ defined in (1), we can apply the first isomorphism
-    theorem
-    $$G / \ker \phi \cong \mathrm{im} \phi \leq \mathrm{Sym}(X_p),$$ and
-    so it suffices to show that $\ker \phi = \{e\}$.
-
-    Note that since $\ker \phi \trianglelefteq G$ and $G$ is simple, we
-    can only have $\ker \phi = \{e\}$ or $\ker \phi = G$.
-
-    Towards a contradiction, suppose $\ker \phi = G$.
-
-    By definition, we have $$\begin{aligned}
-        \ker \phi &= \{ g\in G \mid \gamma_g = \mathrm{id}_{X_p} \} \\
-        &= \{ g\in G \mid \forall P \in X_p,~ gPg^{-1} = P \} \\
-        &= \bigcap_{P \in X_p} N_G(P),
-        \end{aligned}$$
-
-    and so the kernel of $\varphi$ is the intersection of all of the
-    normalizers of the Sylow $p-$subgroups.
-
-    But this means that $N_G(P) = G$ for every Sylow $p-$subgroup, which
-    means that $n_p = 1$ and there is a unique $P$ which must be normal
-    in $G$. Since $G$ is simple, this forces $P$ to be trivial or the
-    whole group.
-
-    Towards a contradiction, suppose $P = G$. Then $G$ is a $p-$group
-    and thus has order $p^n$. But then $G$ has normal subgroups of order
-    $p^k$ for all $0 < k < n$, contradicting the simplicity of $G$.
-
-    But the only other option is that $P$ is trivial, whereas we know
-    nontrivial Sylow $p-$subgroups exist by Sylow 1.
-
-    Thus we can not have $\ker \phi = G$, and so $\ker \phi$ is trivial
-    as desired.
-
-3.  Suppose $\left| G \right| = ap^k$, where $1 \leq a \leq 4$. Then by
-    Sylow 3, we have $n_p = 1 \mod p$ and $n_p$ divides $a$. If $a=1$,
-    then $n_p = 1$, and so $G$ can not be simple. Moreover, if
-    $p \geq a$, then $n_p \leq a$ and $n_p = 1\mod p$ forces $n_p = 1$
-    again.
-
-    So we can restrict our attention to $2 \leq a \leq 4$ and
-    $p = 2, 3$, which reduces to checking the cases
-    $ap^k = 2 (3^k), 4 (3^k)$, or $3 (2^k)$ for $k\geq 1$.
-
-    If $ap^k = 2(3^k)$, we have $n_3 = 1 \mod 3$ and $n_3 \divides 2$,
-    which forces $n_3 = 1$, so this can not be a simple group.
-
-    Similarly, if $ap^k = 4(3^k)$, then $n_3 = 1 \mod 3$ and $n_3$
-    divides 4, which forces $n_3 = 1$ and thus $G$ can't be simple.
-
-    If $ap^k = 3(2^k)$, then $n_2 = 1 \mod 2$ and $n_2$ divides 3, so
-    $n_2 = 1, 3$. But then $n_3! = 6$, and if $k > 1$, we have
-    $3(2^k) > 6 = n_3!$, so $G$ can not be simple by the result in (2).
-
-    If $k = 1$, then $G$ is order 6, so $G$ is isomorphic to either
-    $\ZZ_6$ or $S_3$. The group $S_3$ is not simple, since
-    $A_3 \trianglelefteq S_3$, and the only simple cyclic groups are of
-    prime order, so $\ZZ_6$ is not simple. This exhausts all of the
-    possible cases. 
+::: pf-proof
+A conjugate of a Sylow $p$-subgroup is a Sylow $p$-subgroup, $\rho(e)=\id$, and $\rho(gh)(P)=ghPh^{-1}g^{-1}=\rho(g)\rho(h)(P)$, so $\rho$ is a homomorphism.
+By the second Sylow theorem any two Sylow $p$-subgroups are conjugate, so the image is transitive.
+:::
 
 :::
 
+::: {.pf-step #divides}
+(2) If $G$ is simple and $n_p>1$, then $\abs{G}$ divides $n_p!$.
+
+::: pf-proof
+The kernel of $\rho$ is a normal subgroup of $G$.
+It is not $G$, because by step [](#action){.pf-ref} the image acts transitively on $n_p>1$ points and is therefore nontrivial.
+Since $G$ is simple, $\ker\rho=1$, so $G\cong\rho(G)\le\Sym(X_p)$, and Lagrange's theorem gives $\abs{G}\mid n_p!$.
+:::
+
+:::
+
+::: {.pf-step #pgroup}
+A group of order $p^m$ with $m\ge2$ is not simple.
+
+::: pf-proof
+Its center is nontrivial.
+If the center is proper, it is a proper nontrivial normal subgroup.
+If the group is abelian, the subgroup generated by an element of order $p$ is normal of order $p<p^m$.
+:::
+
+:::
+
+::: {.pf-step #order6}
+A group of order $6$ or $12$ is not simple.
+
+::: pf-proof
+For order $6$, $n_3\equiv1\pmod 3$ and $n_3\mid2$, so $n_3=1$ and the Sylow $3$-subgroup is a proper nontrivial normal subgroup.
+For order $12$, $n_3\in\{1,4\}$.
+If $n_3=1$, the Sylow $3$-subgroup is normal.
+If $n_3=4$, the four subgroups of order $3$ meet trivially and contain $8$ elements of order $3$; the remaining $4$ elements form the only possible Sylow $2$-subgroup, so $n_2=1$ and that subgroup is normal.
+:::
+
+:::
+
+::: pf-step
+(3) If $1\le a\le4$, $k\ge1$, and $G$ is simple of order $ap^k$, then $\abs{G}$ is prime.
+
+::: pf-proof
+If $a=1$, step [](#pgroup){.pf-ref} gives $k=1$.
+If $a\ge2$ and $p\mid a$, then $a=p$ or $(a,p)=(4,2)$, so $\abs{G}$ is a power of $p$ at least $p^2$, which step [](#pgroup){.pf-ref} excludes.
+
+Suppose $a\ge2$ and $p\nmid a$, so a Sylow $p$-subgroup $P$ has order $p^k$ and $n_p\mid a$, $n_p\equiv1\pmod p$.
+If $n_p=1$, then $P$ is normal, nontrivial because $k\ge1$, and proper because $a\ge2$, which is impossible.
+So $n_p>1$, hence $p+1\le n_p\le a\le4$, which leaves $p=2$, $n_2=a=3$, or $p=3$, $n_3=a=4$.
+By step [](#divides){.pf-ref}, $3\cdot2^k\mid3!$ in the first case and $4\cdot3^k\mid4!$ in the second, so $\abs{G}$ is $6$ or $12$, which step [](#order6){.pf-ref} excludes.
+:::
+
+:::
+
+:::
+
+:::
