@@ -28,9 +28,9 @@ Affine, quasi-affine, and projective varieties are quasi-projective.
 :::
 
 ::: {.proposition title="Standard charts"}
-$U_i \definedas \theset{x_i \neq 0} \subseteq \PP^n$ is open, the map
+$U_i \coloneqq \theset{x_i \neq 0} \subseteq \PP^n$ is open, the map
 $$
-\phi_i: U_i \to \AA^n, \qquad \thevector{x_0 : \cdots : x_n} \mapsto \qty{ x_0/x_i, \ldots, \widehat{x_i/x_i}, \ldots, x_n/x_i }
+\phi_i\colon U_i \to \AA^n, \qquad \thevector{x_0 : \cdots : x_n} \mapsto \qty{ x_0/x_i, \ldots, \widehat{x_i/x_i}, \ldots, x_n/x_i }
 $$
 is an isomorphism of varieties, and $\PP^n = \union_{i=0}^n U_i$.
 :::
