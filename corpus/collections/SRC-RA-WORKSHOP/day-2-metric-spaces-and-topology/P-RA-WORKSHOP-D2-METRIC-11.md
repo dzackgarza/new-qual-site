@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Show that if $f:\mathbb R\to\mathbb R$ is monotone increasing, then $f$ has at most a countable set of jump discontinuities.
+Show that if $f:\RR\to\RR$ is monotone increasing, then $f$ has at most a countable set of jump discontinuities.
 :::
 
 ::: {.solution}
@@ -86,7 +86,7 @@ For every $t\in(u,v)$, monotonicity yields
 $$
 f(u)\le f(t)\le f(v),
 $$
-hence $|f(t)-f(x)|<\varepsilon$. Thus $f$ is continuous at $x$.
+hence $\abs{f(t)-f(x)}<\varepsilon$. Thus $f$ is continuous at $x$.
 
 :::
 
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-Choose any $s$ with $x<s<y$. By the definitions of the one-sided limits,
+Let $s$ satisfy $x<s<y$. By the definitions of the one-sided limits,
 $$
 f(x+)\le f(s)\le f(y-).
 $$
@@ -169,7 +169,7 @@ $\QQ$. Therefore it is at most countable.
 
 ::: pf-qed
 
-Step [](#s6){.pf-ref} is the required conclusion.
+Every discontinuity of a monotone function is a jump discontinuity, because both one-sided limits exist by step [](#s1){.pf-ref}. By step [](#s6){.pf-ref}, a monotone increasing $f$ therefore has at most countably many jump discontinuities.
 
 :::
 
