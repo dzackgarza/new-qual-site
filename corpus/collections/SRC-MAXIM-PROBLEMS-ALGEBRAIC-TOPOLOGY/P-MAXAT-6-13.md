@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-13
 kind: problem
-title: Maxim algebraic topology 6.13
+title: $\CP^n$ is not a nontrivial product of complex manifolds
 classification:
   areas: [topology]
   topics: []
