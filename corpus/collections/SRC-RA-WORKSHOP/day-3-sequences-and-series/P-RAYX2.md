@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAYX2
 kind: problem
-title: Produce sequences $\{a_n\},\,\{b_n\}$ of
+title: $\liminf$ of a product of positive sequences
 classification:
   areas:
   - real-analysis
