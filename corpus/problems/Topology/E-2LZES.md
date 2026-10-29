@@ -18,23 +18,26 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source read "Show that if X is metrizable, then X is compact", which is false (R is metrizable and not compact); the statement asks for the equivalence of compactness, limit point compactness and sequential compactness for metrizable X.'
 ---
 
 ::: {.exercise}
+
 Show that for $X$ metrizable, the following are equivalent:
 
-- $X$ is compact;
+(i) $X$ is compact;
 
-- $X$ is limit point compact;
+(ii) $X$ is limit point compact;
 
-- $X$ is sequentially compact.
-:::
+(iii) $X$ is sequentially compact.
 
-::: {.remark}
-The original exercise read "Show that if $X$ is metrizable, then $X$ is compact", which is false ($\RR$ is metrizable and not compact).
 :::
 
 ::: {.solution}
+
 Fix a metric $d$ inducing the topology of $X$.
 
 ::: pf
@@ -124,12 +127,6 @@ $$
 cover $X$. Each such ball lies in some member of $\mathcal U$, so those finitely many members form a finite subcover.
 
 :::
-
-:::
-
-::: pf-step
-
-Hence compactness, limit-point compactness, and sequential compactness are equivalent for metrizable spaces.
 
 :::
 
