@@ -15,57 +15,85 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is analytic.
+Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \overline{f(\bar z)}$ is analytic.
 :::
 
 ::: {.solution title="Cauchy-Riemann"}
-It suffices to show that $g(z) \definedas \bar{f(\bar z)}$ satisfies CR.
-Write $f=u+iv$, then
-\[
-g(x, y) \definedas a(x, y) + ib(x, y) = u(x, -y) -i v(x, -y)
-,\]
-so we want to show $a_x = b_y$ and $a_y = -b_x$.
-By the chain rule,
-\[
-a_x &= \del_x (x\mapsto u(x, -y)) = u_x \\ 
-a_y &= \del_x (y\mapsto u(x, y))\circ(y\mapsto -y) = -u_y \\ 
-b_x &= \del_x(x\mapsto -v(x, -y)) = -v_x \\
-b_y &= \del_x(y \mapsto - v(x, y))\circ(y\mapsto -y) = v_y
-.\]
-Now use CR for $f$ to write
-\[
-a_x &= u_x = v_y = b_y \\
-a_y &= -u_y = v_x = -b_x
-.\]
+Let $f$ be analytic on an open set $\Omega$, and let $\Omega^* \coloneqq \theset{\bar z \suchthat z\in\Omega}$.
+Define $g(z) \coloneqq \overline{f(\bar z)}$ on $\Omega^*$.
+Write $f = u + iv$ and $g = a + ib$, so that $a(x,y) = u(x,-y)$ and $b(x,y) = -v(x,-y)$.
 
+::: pf
 
+::: {.pf-step #partials}
+$a_x = u_x$, $a_y = -u_y$, $b_x = -v_x$ and $b_y = v_y$, where the partial derivatives of $u$ and $v$ are evaluated at $(x,-y)$.
 
+::: pf-proof
+This is the chain rule applied to $(x,y)\mapsto(x,-y)$.
+In particular $a$ and $b$ are real-differentiable, since $u$ and $v$ are.
+:::
 
+:::
+
+::: pf-step
+$g$ is analytic on $\Omega^*$.
+
+::: pf-proof
+By step [](#partials){.pf-ref} and the Cauchy--Riemann equations $u_x = v_y$, $u_y = -v_x$ for $f$,
+$$
+a_x = u_x = v_y = b_y, \qquad a_y = -u_y = v_x = -b_x.
+$$
+So $g$ is real-differentiable and satisfies the Cauchy--Riemann equations, hence is holomorphic.
+:::
+
+:::
+
+:::
 
 :::
 
 ::: {.solution title="Direct definition"}
-Set $g(z) \definedas (f(z^*))^* \definedas \bar{f(\bar z)}$, we can then show $g'$ exists:
-\[
-\lim_{h\to 0} {g(z+h) - g(z) \over h} 
-&\definedas \lim_{h\to 0} {f((z+h)^*)^* - f(z^*)^* \over h^{**}} \\
-&= \lim_{h\to 0} {\qty{ f(z^* + h^*) - f(z^*) }^* \over h^{**}} \\
-&= \lim_{h\to 0} \qty{ f(z^* + h^* ) - f(z^*) \over h^* }^* \\
-&\definedas \qty{f'(z^*)}^*
-,\]
-where we've used that $w\mapsto w^*$ is continuous to commute a limit.
-So this limit exists, $g$ is differentiable with $g'(z) \definedas \bar{f'(\bar z)}$.
+Let $f$ be analytic on an open set $\Omega$ and $g(z) \coloneqq \overline{f(\bar z)}$ for $\bar z\in\Omega$.
 
+::: pf
+
+::: pf-step
+$g$ is complex differentiable at each $z$ with $\bar z\in\Omega$, and $g'(z) = \overline{f'(\bar z)}$.
+
+::: pf-proof
+For $h\neq0$ small,
+$$
+\frac{g(z+h) - g(z)}{h} = \overline{\left(\frac{f(\bar z + \bar h) - f(\bar z)}{\bar h}\right)}.
+$$
+As $h\to0$, $\bar h\to0$, so the quotient inside the conjugation tends to $f'(\bar z)$.
+Since conjugation is continuous, the left side tends to $\overline{f'(\bar z)}$.
+:::
+
+:::
+
+:::
 
 :::
 
 ::: {.solution title="Power series"}
-Since $f$ is analytic, take a Laurent expansion $f(z) = \sum_{k\geq 0} c_k z^k$.
-Then
-\[
-g(z) \definedas (f(z^*))^*
-= \qty{\sum_{k\geq 0} c_k \bar{z^k} }^* 
-= \sum_{k\geq 0} \bar{c_k} z^k
-,\] 
-making $g$ analytic.
+Let $f$ be analytic on an open set $\Omega$ and $g(z) \coloneqq \overline{f(\bar z)}$ for $\bar z\in\Omega$.
+
+::: pf
+
+::: pf-step
+Near each point $z_0$ with $\bar z_0\in\Omega$, $g$ is given by a convergent power series in $z - z_0$.
+
+::: pf-proof
+Since $f$ is analytic at $\bar z_0$, $f(w) = \sum_{k\ge0} c_k (w-\bar z_0)^k$ for $\abs{w - \bar z_0}<r$, for some $r>0$.
+For $\abs{z-z_0}<r$, put $w = \bar z$; then $\abs{w-\bar z_0} = \abs{z - z_0}$ and
+$$
+g(z) = \overline{\sum_{k\ge0} c_k \overline{(z-z_0)}^{\,k}} = \sum_{k\ge0} \bar c_k (z-z_0)^k,
+$$
+using that conjugation is continuous and additive.
+:::
+
+:::
+
+:::
+
 :::
