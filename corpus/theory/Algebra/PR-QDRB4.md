@@ -41,9 +41,9 @@ $$
 :::
 
 ::: {.proof}
-(a) $L$ is the splitting field over $k$ of a separable polynomial $f\in k[x]$, and $L$ is also generated over $F$ by the roots of $f\in F[x]$, so $L$ is the splitting field of $f$ over $F$ and $L/F$ is Galois.
+Part (a). $L$ is the splitting field over $k$ of a separable polynomial $f\in k[x]$, and $L$ is also generated over $F$ by the roots of $f\in F[x]$, so $L$ is the splitting field of $f$ over $F$ and $L/F$ is Galois.
 
-(b) and (c). Fix an algebraic closure $\bar k$ containing $L$.
+Parts (b) and (c). Fix an algebraic closure $\bar k$ containing $L$.
 Every $k$-embedding $F\to\bar k$ extends to a $k$-embedding $L\to\bar k$, which has image $L$ by [[PR-OZYUC]] because $L/k$ is normal; so the $k$-embeddings $F\to\bar k$ are exactly the restrictions $\sigma|_F$ with $\sigma\in\Gal(L/k)$.
 For $\sigma\in\Gal(L/k)$ we have $\Gal(L/\sigma(F))=\sigma\Gal(L/F)\sigma^{-1}$, and by the Galois correspondence $\sigma(F)=F$ if and only if $\sigma\Gal(L/F)\sigma^{-1}=\Gal(L/F)$.
 Hence $\Gal(L/F)\normal\Gal(L/k)$ if and only if $\sigma(F)=F$ for every $\sigma\in\Gal(L/k)$, if and only if every $k$-embedding $F\to\bar k$ has image $F$, which by [[PR-OZYUC]] means $F/k$ is normal.
