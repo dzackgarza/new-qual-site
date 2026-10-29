@@ -1,9 +1,9 @@
 ---
 order: 52
-title: Qualifying exam review
+title: UGA prelim exams, Fall 2014 to Fall 2017
 ---
 
-# Qualifying exam review
+# UGA prelim exams, Fall 2014 to Fall 2017
 
 - [[prelim/worked-exams/fall-2017|Fall 2017]]
 
