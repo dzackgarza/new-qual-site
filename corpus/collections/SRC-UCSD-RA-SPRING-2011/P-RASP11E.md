@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP11E
 kind: problem
-title: "Carleson's theorem: Fourier partial sums converge a.e."
+title: "An a.e.-convergent subsequence of the Fourier partial sums of an $L^2$ function"
 classification:
   areas:
   - real-analysis
@@ -51,7 +51,7 @@ $$
 $$
 Therefore the orthogonal projections satisfy
 $$
-\|S_Nf-f\|_2\longrightarrow0.
+\norm{S_Nf-f}_2\longrightarrow0.
 $$
 
 :::
@@ -60,7 +60,7 @@ $$
 
 ::: pf-step
 
-Extract a subsequence converging almost everywhere.
+Some subsequence $S_{N_k}f$ converges to $f$ almost everywhere.
 
 ::: pf-proof
 
@@ -70,16 +70,16 @@ N_1<N_2<\cdots
 $$
 so that
 $$
-\|S_{N_k}f-f\|_2^2<2^{-3k}
+\norm{S_{N_k}f-f}_2^2<2^{-3k}
 $$
 for every $k$. Set
 $$
-E_k=\{x:|S_{N_k}f(x)-f(x)|>2^{-k}\}.
+E_k=\{x:\abs{S_{N_k}f(x)-f(x)}>2^{-k}\}.
 $$
 By Chebyshev's inequality,
 $$
 m(E_k)
-\le 2^{2k}\|S_{N_k}f-f\|_2^2
+\le 2^{2k}\norm{S_{N_k}f-f}_2^2
 <2^{-k}.
 $$
 Thus
@@ -88,7 +88,7 @@ $$
 $$
 By the first Borel--Cantelli lemma, almost every $x$ belongs to only finitely many $E_k$. For such $x$,
 $$
-|S_{N_k}f(x)-f(x)|\le2^{-k}
+\abs{S_{N_k}f(x)-f(x)}\le2^{-k}
 $$
 for all sufficiently large $k$, and therefore
 $$
