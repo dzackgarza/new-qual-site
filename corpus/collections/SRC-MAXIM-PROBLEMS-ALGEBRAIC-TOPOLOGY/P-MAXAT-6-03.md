@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-03
 kind: problem
-title: Maxim algebraic topology 6.3
+title: Stiefel–Whitney obstructions to immersing and embedding $\RP^n$ in $\RR^{n+k}$
 classification:
   areas: [topology]
   topics: []
