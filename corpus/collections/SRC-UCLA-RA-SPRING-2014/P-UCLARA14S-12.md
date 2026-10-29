@@ -97,7 +97,7 @@ and conversely. Step [](#s1-2){.pf-ref} shows that this involution preserves zer
 
 :::
 
-::: {.pf-step #s1-4}
+::: pf-step
 
 The polynomial $f$ has exactly
 $$
@@ -115,12 +115,6 @@ $$
 zeros.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-4){.pf-ref} gives the requested count.
 
 :::
 
