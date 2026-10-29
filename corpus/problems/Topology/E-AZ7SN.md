@@ -15,14 +15,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Source printed "Show that if f:X -> R and X is compact then f is bounded and attains its min/max" without the continuity hypothesis, which the result needs; the statement adds "continuous".
 ---
 
 ::: {.exercise}
-Show that if $f:X\to \RR$ and $X$ is compact then $f$ is bounded and attains its min/max.
+Show that if $f:X\to \RR$ is continuous and $X$ is compact then $f$ is bounded and attains its min/max.
 :::
 
 ::: {.solution}
-**Goal:** Show that if $f: X \to \RR$ is continuous and $X$ is compact, then $f$ is bounded and attains its minimum and maximum.
 
 ::: pf
 
@@ -99,7 +102,7 @@ Same argument as step [](#s4){.pf-ref} with $\inf$ in place of $\sup$ (or apply 
 :::
 
 ::: pf-qed
-step [](#s3){.pf-ref} gives boundedness; step [](#s4){.pf-ref} and step [](#s5){.pf-ref} give attainment of max and min.
+Step [](#s3){.pf-ref} gives boundedness, and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show that $f$ attains its maximum and minimum.
 :::
 
 :::
