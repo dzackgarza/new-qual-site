@@ -24,101 +24,33 @@ Show that a compact Hausdorff space is metrizable if and only if it is second-co
 :::
 
 ::: {.solution}
-**Goal:** Prove that a compact Hausdorff space $X$ is metrizable if and only if it has a countable basis (second-countable).
+Let $X$ be a compact Hausdorff space.
 
 ::: pf
 
 ::: pf-step
 
-Forward direction: Compact and metrizable $\implies$ second-countable.
-    *Proof:*
+If $X$ is metrizable, then $X$ is second-countable.
 
 ::: pf-proof
 
-::: pf-step
+Fix a metric $d$ inducing the topology.
 
-Let $(X, d)$ be a compact metric space.
+::: {.pf-step #s1-1}
 
-:::
-
-::: pf-step
-
-For each positive integer $m \in \mathbb{N}$, the collection of open balls $\{B(x, 1/m) : x \in X\}$ is an open cover of $X$.
-
-:::
-
-::: pf-step
-
-By compactness of $X$, there exists a finite set of points $D_m = \{x_{m,1}, x_{m,2}, \dots, x_{m,k_m}\} \subset X$ such that
-    $$X = \bigcup_{i=1}^{k_m} B(x_{m,i}, 1/m).$$
-
-:::
-
-::: pf-step
-
-Define $\mathcal{B} = \bigcup_{m=1}^\infty \{B(x_{m,i}, 1/m) : 1 \le i \le k_m\}$. As a countable union of finite sets, $\mathcal{B}$ is countable.
-
-:::
-
-::: pf-step
-
-We show $\mathcal{B}$ is a basis: let $U \subseteq X$ be open and $x \in U$. Choose $r > 0$ such that $B(x, r) \subseteq U$, and choose $m \in \mathbb{N}$ with $1/m < r/2$.
-
-:::
-
-::: pf-step
-
-Since $D_m$ covers $X$, there is some $x_{m,i} \in D_m$ with $x \in B(x_{m,i}, 1/m)$.
-
-:::
-
-::: pf-step
-
-For any $y \in B(x_{m,i}, 1/m)$, the triangle inequality gives
-    $$d(y, x) \le d(y, x_{m,i}) + d(x_{m,i}, x) < \frac{1}{m} + \frac{1}{m} = \frac{2}{m} < r,$$
-    so $x \in B(x_{m,i}, 1/m) \subseteq B(x, r) \subseteq U$.
-
-:::
-
-::: pf-step
-
-Thus $\mathcal{B}$ is a countable basis for the topology of $X$, so $X$ is second-countable.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Backward direction: Compact Hausdorff and second-countable $\implies$ metrizable.
-    *Proof:*
+For each $m\in\NN$ there is a finite set $D_m\subseteq X$ with $X=\bigcup_{z\in D_m}B(z,1/m)$.
 
 ::: pf-proof
 
-::: pf-step
-
-Every compact Hausdorff space is normal ($T_4$).
-    *Proof of normality:* For any closed set $F \subset X$ and point $y \notin F$, since $X$ is Hausdorff, each $x \in F$ has disjoint open neighborhoods $U_x \ni x$ and $V_x \ni y$. By compactness of $F$, finitely many $U_{x_i}$ cover $F$, and $\bigcap V_{x_i}$ is an open neighborhood of $y$ disjoint from $\bigcup U_{x_i}$. Repeating this argument for two disjoint closed sets separates them by disjoint open neighborhoods.
+The balls $B(x,1/m)$, $x\in X$, form an open cover of the compact space $X$.
 
 :::
 
-::: pf-step
-
-Every normal $T_1$ space is regular ($T_3$).
-
 :::
 
-::: pf-step
+::: pf-qed
 
-By the Urysohn Metrization Theorem, every second-countable regular space is metrizable.
-
-:::
-
-::: pf-step
-
-Therefore $X$ is metrizable.
+The family $\mathcal{B}=\{B(z,1/m):m\in\NN,\ z\in D_m\}$ is a countable union of finite sets, hence countable. It is a basis: let $U$ be open and $x\in U$, choose $r>0$ with $B(x,r)\subseteq U$ and $m$ with $2/m<r$, and by step [](#s1-1){.pf-ref} choose $z\in D_m$ with $x\in B(z,1/m)$. For $y\in B(z,1/m)$, $d(y,x)\le d(y,z)+d(z,x)<2/m<r$, so $x\in B(z,1/m)\subseteq U$.
 
 :::
 
@@ -128,12 +60,32 @@ Therefore $X$ is metrizable.
 
 ::: pf-step
 
-Conclusion:
+If $X$ is second-countable, then $X$ is metrizable.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+$X$ is regular.
+
+::: pf-proof
+
+Let $F\subseteq X$ be closed and $y\notin F$. Each $x\in F$ has disjoint open neighborhoods $U_x\ni x$ and $V_x\ni y$ because $X$ is Hausdorff. The closed set $F$ is compact, so finitely many $U_{x_1},\ldots,U_{x_k}$ cover $F$, and then $\bigcup_iU_{x_i}$ and $\bigcap_iV_{x_i}$ are disjoint open sets containing $F$ and $y$. Points are closed because $X$ is Hausdorff.
 
 :::
 
 :::
 
-    *Proof:*
-    By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, a compact Hausdorff space is metrizable if and only if it is second-countable.
+::: pf-qed
+
+By step [](#s2-1){.pf-ref} and the Urysohn metrization theorem, a second-countable regular space is metrizable.
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::
