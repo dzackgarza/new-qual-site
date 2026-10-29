@@ -2,28 +2,32 @@
 schema: qual/card@1
 id: P-G6HSM
 kind: problem
-title: $|1-\bar z_1z_2|^2-|z_1-z_2|^2=(1-|z_1|^2)(1-|z_2|^2)$
+title: The modulus of $\frac{z_1-z_2}{1-\bar z_1z_2}$ is less than $1$ on the disc and equal to $1$ on the circle
 classification:
   areas:
   - complex-analysis
   topics:
-  - Holomorphic Functions
+  - Blaschke Factors
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-For $z_1,z_2\in\CC$:
-(a) prove
+Let $z_1,z_2\in\CC$.
+
+(a) Prove that
 $$
-|1-\bar z_1z_2|^2-|z_1-z_2|^2
-=(1-|z_1|^2)(1-|z_2|^2);
+\abs{1-\bar z_1z_2}^2-\abs{z_1-z_2}^2
+=(1-\abs{z_1}^2)(1-\abs{z_2}^2).
 $$
-(b) deduce that if $|z_1|,|z_2|<1$, then
+
+(b) Deduce that if $\abs{z_1},\abs{z_2}<1$, then
 $$
-\left|\frac{z_1-z_2}{1-\bar z_1z_2}\right|<1;
+\abs{\frac{z_1-z_2}{1-\bar z_1z_2}}<1.
 $$
-(c) if $z_1\ne z_2$, prove that the last modulus equals $1$ if and only
+
+(c) If $z_1\ne z_2$, prove that the last modulus equals $1$ if and only
 if $|z_1|=1$ or $|z_2|=1$.
 :::
 
