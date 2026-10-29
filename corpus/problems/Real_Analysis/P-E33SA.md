@@ -20,17 +20,20 @@ audit:
 ---
 
 ::: {.exercise}
-- What does it mean for a function to be **uniformly continuous** on a set?
+(a) What does it mean for a function to be **uniformly continuous** on a set?
 
-- Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$?
-  If so, produce such a function, if not, why?
+(b) Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$?
+If so, produce such a function, if not, why?
 
-  - Can the set of discontinuities be precisely the irrationals $\RR\sm\QQ$?
+(c) Can the set of discontinuities be precisely the irrationals $\RR\sm\QQ$?
 
-- Find a sequence of continuous functions that does *not* converge uniformly, but still has a pointwise limit that is continuous.
+(d) Find a sequence of continuous functions that does *not* converge uniformly, but still has a pointwise limit that is continuous.
 :::
+
 ::: {.solution}
-A function $f$ is \dfn{uniformly continuous} on $E$ if for every $\eps > 0$ there is $\delta > 0$ such that $|f(x) - f(y)| < \eps$ for all $x, y \in E$ with $|x - y| < \delta$.
+(a) A function $f$ is \dfn{uniformly continuous} on $E$ if for every $\eps > 0$ there is $\delta > 0$ such that $|f(x) - f(y)| < \eps$ for all $x, y \in E$ with $|x - y| < \delta$.
+
+The three top-level steps answer (b), (c), and (d) in order.
 
 ::: pf
 
@@ -66,7 +69,7 @@ $f(p/q) = 1/q > 0$, while irrationals $y \to p/q$ have $f(y) = 0$.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, the set of discontinuities of $f$ is exactly $\QQ$.
 
 :::
 
@@ -106,7 +109,7 @@ If $\RR\setminus\QQ = \bigcup_n F_n$ with $F_n$ closed, then $\QQ = \bigcap_n U_
 
 ::: pf-qed
 
-Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref}.
+If $f$ were discontinuous exactly on $\RR \setminus \QQ$, step [](#s2-1){.pf-ref} would make $\RR \setminus \QQ$ an $F_\sigma$ set, contradicting step [](#s2-2){.pf-ref}.
 
 :::
 
