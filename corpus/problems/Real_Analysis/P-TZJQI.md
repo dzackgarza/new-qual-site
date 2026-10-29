@@ -14,26 +14,31 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source wrote only "Show that E is measurable iff E is regular", with E and regularity undefined; the statement now takes E in R^n with finite outer measure and defines regularity as equality of inner and outer measure, which fails as a criterion for sets of infinite outer measure.'
 ---
 
 ::: {.problem}
-Show that $E$ is measurable iff $E$ is regular.
+
+Let $\mu$ be Lebesgue measure on $\RR^n$, $\mu^*$ Lebesgue outer measure, and $E \subseteq \RR^n$ a set with $\mu^*(E) < \infty$. Call $E$ regular if its inner measure $\mu_*(E) \coloneqq \sup\theset{\mu(F) : F \subseteq E,\ F \text{ compact}}$ equals $\mu^*(E)$. Show that $E$ is measurable iff $E$ is regular.
+
 :::
+
 ::: {.solution}
-*Setup note.* For Lebesgue measure on $\RR^n$, "regular" means: $\mu^*(E) = \inf\{\mu(G) : G \supseteq E,\ G \text{ open}\}$ (outer) and $\mu_*(E) = \sup\{\mu(F) : F \subseteq E,\ F \text{ compact}\}$ (inner, with $\mu_*(E) = \mu^*(E)$). We prove measurability is equivalent to regularity.
+
+Outer measure is outer regular: $\mu^*(E) = \inf\theset{\mu(G) : G \supseteq E,\ G \text{ open}}$ for every $E \subseteq \RR^n$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Measurable $\Rightarrow$ outer regular.
+If $A$ is measurable and $\eps > 0$, there is an open $G \supseteq A$ with $\mu(G \setminus A) < \eps$.
 
 ::: pf-proof
 
-for measurable $E$ with $\mu(E) < \infty$, by definition of $\mu^*$ there is a cover by boxes with total measure $< \mu(E) + \eps$; the open set $G$ obtained by enlarging the boxes slightly contains $E$ and has $\mu(G) \le \mu(E) + \eps$.
-
-For $\mu(E) = \infty$, exhaust by $E \cap B(0,k)$ and take unions.
-Hence $\mu(E) = \inf_{G \supseteq E \text{ open}}\mu(G)$.
+Write $A = \bigcup_k A_k$ with $A_k = A \cap B(0,k)$, so $\mu(A_k) < \infty$. Outer regularity gives open $G_k \supseteq A_k$ with $\mu(G_k) < \mu(A_k) + \eps 2^{-k}$, so $\mu(G_k \setminus A_k) < \eps 2^{-k}$. Then $G = \bigcup_k G_k$ is open, contains $A$, and $G \setminus A \subseteq \bigcup_k (G_k \setminus A_k)$ has measure less than $\eps$.
 
 :::
 
@@ -41,14 +46,13 @@ Hence $\mu(E) = \inf_{G \supseteq E \text{ open}}\mu(G)$.
 
 ::: pf-step
 
-Measurable $\Rightarrow$ inner regular.
+Measurable $\Rightarrow$ regular.
 
 ::: pf-proof
 
-for measurable $E$ with $\mu(E) < \infty$, first approximate by closed sets: $E^c$ is measurable, so by step [](#s1){.pf-ref} there is open $G \supseteq E^c$ with $\mu(G \setminus E^c) < \eps$, giving closed $F = G^c \subseteq E$ with $\mu(E \setminus F) = \mu(G \setminus E^c) < \eps$.
-
-Then approximate the closed set by compact sets ($F \cap B(0,k) \nearrow F$), and for infinite measure decompose $E$ into finite-measure pieces.
-Hence $\mu(E) = \sup_{F \subseteq E \text{ compact}}\mu(F)$.
+Let $\eps > 0$. $E^c$ is measurable, so step [](#s1){.pf-ref} gives an open $G \supseteq E^c$ with $\mu(G \setminus E^c) < \eps$, and the closed set $F = G^c \subseteq E$ satisfies $\mu(E \setminus F) = \mu(G \setminus E^c) < \eps$.
+The compact sets $F \cap \overline{B(0,k)}$ increase to $F$, so $\mu(F \cap \overline{B(0,k)}) > \mu(E) - 2\eps$ for large $k$.
+Hence $\mu_*(E) = \mu(E) = \mu^*(E)$.
 
 :::
 
@@ -60,10 +64,10 @@ Regular $\Rightarrow$ measurable.
 
 ::: pf-proof
 
-outer regularity gives open $G_k \supseteq E$ with $\mu(G_k) \le \mu^*(E) + 1/k$; let $V = \cap_k G_k$, a $G_\delta$ containing $E$, with $\mu(V) = \mu^*(E)$.
+Outer regularity gives open $G_k \supseteq E$ with $\mu(G_k) \le \mu^*(E) + 1/k$; let $V = \cap_k G_k$, a $G_\delta$ containing $E$, with $\mu(V) = \mu^*(E)$.
 
-Similarly inner regularity gives compact $F_k \subseteq E$ with $\mu(F_k) \ge \mu_*(E) - 1/k$; let $H = \cup_k F_k$, an $F_\sigma$ inside $E$, with $\mu(H) = \mu_*(E)$.
-Regularity means $\mu^*(E) = \mu_*(E)$, so $E = V \setminus (V \setminus H)$ with $V$ measurable and $V \setminus H$ null (as $\mu(V \setminus H) = \mu(V) - \mu(H) = 0$); hence $E$ is measurable.
+The definition of $\mu_*$ gives compact $F_k \subseteq E$ with $\mu(F_k) \ge \mu_*(E) - 1/k$; let $H = \cup_k F_k$, an $F_\sigma$ inside $E$, with $\mu(H) = \mu_*(E)$.
+Since $\mu^*(E) = \mu_*(E) < \infty$, $\mu(V \setminus H) = \mu(V) - \mu(H) = 0$. Then $E = H \cup (E \setminus H)$ with $H$ measurable and $E \setminus H \subseteq V \setminus H$ null, hence measurable because Lebesgue measure is complete; so $E$ is measurable.
 
 :::
 
