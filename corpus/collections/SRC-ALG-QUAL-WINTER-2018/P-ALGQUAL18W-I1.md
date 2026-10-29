@@ -222,13 +222,7 @@ Hence $K$ itself is the splitting field.
 
 ::: {.pf-step #s7}
 
-Therefore
-$$
-\boxed{
-\QQ(\sqrt{2+\sqrt2})/\QQ
-\text{ is normal}.
-}
-$$
+The statement is $\boxed{\text{true}}$: $\QQ(\sqrt{2+\sqrt2})/\QQ$ is normal.
 
 ::: pf-proof
 
@@ -240,12 +234,6 @@ $$
 over $\QQ$. Hence $K/\QQ$ is normal.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s7){.pf-ref} proves that the statement in the problem is true.
 
 :::
 
