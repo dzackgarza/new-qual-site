@@ -24,7 +24,7 @@ The [[D-2IO6Q|Jacobson radical]] $J(R)$ is the largest ideal of $R$ all of whose
 
 ::: {.proof}
 Let $x\in J(R)$.
-If $1-x$ were not a unit, it would lie in a maximal ideal $\mfm$ by [[FF-QELG7]], and so would $x$, giving $1\in\mfm$.
+If $1-x$ were not a unit, it would lie in a maximal ideal $\mfm$ by [[PR-UTFSY]], and so would $x$, giving $1\in\mfm$.
 
 Let $I$ be an ideal consisting of quasiregular elements, let $x\in I$, and suppose $x\notin\mfm$ for a maximal ideal $\mfm$.
 Then $\mfm+(x)=R$, so $1=y+rx$ with $y\in\mfm$ and $r\in R$.

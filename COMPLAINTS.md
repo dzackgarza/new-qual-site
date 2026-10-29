@@ -49,19 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Krull's maximal-ideal theorem had three intrinsic cards
-
-- **Object and need:** `PR-UTFSY`, `T-QSTRJ`, and `FF-QELG7` in `corpus/theory/Algebra`. All three state that every proper ideal is contained in a maximal ideal.
-
-- **Observed evidence:** `PR-UTFSY` gives the full Zorn proof for arbitrary unital rings; `T-QSTRJ` states the same theorem without proof; `FF-QELG7` repeats it for commutative rings with the same Zorn proof and contributes the review prompt.
-  The wiki and algebra guide displayed all three together.
-
-- **Impact and owner:** one standard theorem had three canonical-looking addresses, and a downstream Jacobson-radical proof linked to the flashcard duplicate.
-
-- **Uncertainty:** none after reading all three complete cards.
-
-- **Repair:** a `CARD-04` repair keeps `PR-UTFSY`, gives it the Krull title and review prompt, redirects all live references, and deletes `T-QSTRJ` and `FF-QELG7`.
-
 ### Duplicate Eisenstein theorem cards FT-2P5VV and T-CF6S3
 
 - **Object and need:** `FT-2P5VV` and `T-CF6S3` in `corpus/theory/Algebra`. Both state Eisenstein's criterion for `$f\in\ZZ[x]$` and prove it by Gauss's lemma and reduction modulo `$p$`.
