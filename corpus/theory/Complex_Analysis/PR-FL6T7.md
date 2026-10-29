@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-FL6T7
 kind: proposition
-title: Half-plane to disc
+title: Cayley transform $\frac{i-z}{i+z}$ from the upper half-plane to the disc
 slogan: 'The Möbius map $(i-z)/(i+z)$ sends the upper half-plane biholomorphically onto the unit disc.'
 classification:
   areas:
