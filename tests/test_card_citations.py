@@ -40,3 +40,20 @@ def test_a_card_citation_renders_its_label_and_no_reference_list(tmp_path: Path)
     divs: list[str] = []
     document.walk(lambda el, doc: divs.append(el.identifier) if isinstance(el, pf.Div) else None)
     assert "refs" not in divs, "a transcluded card must not carry its own reference list"
+
+
+def test_a_card_citation_links_to_the_textbook_card_for_its_work(tmp_path: Path) -> None:
+    """With no reference list on the card, the label must lead to the work: the
+    textbook collection keyed on the citation key, on the card's own page."""
+    from conftest import FIXTURE_CORPUS, fixture_repo, run_qualc
+
+    textbook = (FIXTURE_CORPUS / "SRC-DUMMIT.md").read_text().replace("SRC-DUMMIT", "SRC-TEXT-DF04")
+    citing = CITING.replace("areas: [topology]", "areas: [algebra]").replace("[@Hat02, Theorem 1.7]", "[@DF04]")
+    work = fixture_repo(tmp_path, {"SRC-TEXT-DF04.md": textbook, "E-CITING.md": citing})
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    [page] = list(site.glob("*/E-CITING.html"))
+    [target] = [p.relative_to(site).as_posix() for p in site.glob("*/SRC-TEXT-DF04.html")]
+    assert f'href="../{target}">[DuFo04]</a>' in page.read_text()

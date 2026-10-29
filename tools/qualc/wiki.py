@@ -564,6 +564,26 @@ def link_citations(pages: list[WikiPage], card_routes: dict[str, Path]) -> int:
     return linked
 
 
+def link_card_citations(ast: str, card_routes: dict[str, Path]) -> str:
+    """A card body with each single-work citation linked to that work's textbook card.
+
+    Card bodies drop citeproc's reference list (a transcluded card must not
+    repeat one), so the link is the reader's only way from `[DuFo04]` to the
+    book. The link names the card id, which resolves like any card wikilink.
+    """
+
+    def visit(element: pf.Element, doc: pf.Doc) -> pf.Element:
+        del doc
+        if not isinstance(element, pf.Cite) or len(element.citations) != 1:
+            return element
+        card = TEXTBOOK_CARD.format(element.citations[0].id.upper())
+        if card not in card_routes:
+            return element
+        return pf.Link(*cast(list[pf.Inline], element.content), url=card)
+
+    return to_json(from_ast(ast).walk(visit))
+
+
 def _asset_target(raw: str, assets: AssetCatalog) -> Path:
     source = _asset_source(raw, assets)
     return Path("assets") / source.relative_to(assets.root)
