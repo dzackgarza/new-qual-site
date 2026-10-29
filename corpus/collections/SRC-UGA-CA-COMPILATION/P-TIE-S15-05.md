@@ -200,7 +200,7 @@ for every polynomial $p$, respectively with and without using part (1).
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} gives the corrected form of part (1) and identifies the source's strict-inequality exception. Step [](#s1-4){.pf-ref} proves part (2) by both requested methods.
+Step [](#s1-1){.pf-ref} gives the corrected form of part (1) and identifies the exception to the strict inequality stated in part (1). Step [](#s1-4){.pf-ref} proves part (2) by both requested methods.
 
 :::
 
