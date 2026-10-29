@@ -28,23 +28,23 @@ Show that every maximal subgroup $M$ of a finite $p$-group $G$ is normal and has
 
 ::: {.solution}
 We use the normalizer condition: if $H<G$ is a proper subgroup of a finite $p$-group, then
-\[
+$$
 H<N_G(H).
-\]
+$$
 Indeed, let $H$ act on the left cosets $G/H$ by left multiplication. Since $[G:H]$ is a positive power of $p$, the number of fixed points is divisible by $p$. A coset $gH$ is fixed exactly when $g^{-1}Hg=H$, so the fixed-point set is $N_G(H)/H$. It contains $H$, hence has at least one element; divisibility by $p$ therefore gives
-\[
+$$
 [N_G(H):H]\ge p,
-\]
+$$
 so $H<N_G(H)$.
 
 Apply this to a maximal subgroup $M<G$. Then
-\[
+$$
 M<N_G(M)\le G.
-\]
+$$
 Maximality forces $N_G(M)=G$, hence $M\trianglelefteq G$.
 
 Now $G/M$ is a nontrivial finite $p$-group. Since $M$ is maximal, $G/M$ has no nontrivial proper subgroup. By Cauchy's theorem, a nontrivial finite $p$-group has an element of order $p$; therefore $G/M$ itself must have order $p$. Hence
-\[
+$$
 [G:M]=p.
-\]
+$$
 :::
