@@ -27,39 +27,59 @@ Classify them completely using the discriminant and irreducibility.
 :::
 
 ::: {.solution}
-Let $L$ be the splitting field of a cubic $f\in K[x]$, with $\operatorname{char}K\ne2,3$.
+Let $L$ be the splitting field of a cubic $f\in K[x]$, with $\ch K\ne2,3$.
 
-If $f$ splits over $K$, then $L=K$ and the Galois group is trivial. If
-\[
-f=(x-a)q(x)
-\]
-with $q$ irreducible quadratic, then $L$ is the quadratic splitting field of $q$, so
-\[
-\operatorname{Gal}(L/K)\cong C_2.
-\]
+::: pf
 
-Now suppose $f$ is irreducible. Then its roots are distinct and the Galois group $G\le S_3$ acts transitively, so
-\[
-G\cong A_3\quad\text{or}\quad S_3.
-\]
-Let
-\[
-\delta=(\alpha_1-\alpha_2)(\alpha_1-\alpha_3)(\alpha_2-\alpha_3),
-\qquad \Delta(f)=\delta^2.
-\]
-A permutation of the roots sends $\delta$ to its sign times $\delta$. Therefore
-\[
-G\subseteq A_3
-\iff \delta\in K
-\iff \Delta(f)\in K^{\times2}.
-\]
-Consequently,
-\[
-\operatorname{Gal}(L/K)\cong
+::: {.pf-step #reducible}
+If $f$ splits over $K$, then $\Gal(L/K)=1$; if $f=(x-a)q(x)$ with $q$ irreducible quadratic, then $\Gal(L/K)\cong C_2$.
+
+::: pf-proof
+In the first case $L=K$.
+In the second case $L$ is the splitting field of $q$, a quadratic extension, which is Galois since $\ch K\ne2$.
+:::
+
+:::
+
+::: {.pf-step #transitive}
+If $f$ is irreducible, then $G=\Gal(L/K)$ is $A_3\cong C_3$ or $S_3$.
+
+::: pf-proof
+An irreducible polynomial in characteristic $\ne3$ has nonzero derivative, so its roots are distinct, and $G$ acts on them as a transitive subgroup of $S_3$.
+:::
+
+:::
+
+::: {.pf-step #discriminant}
+If $f$ is irreducible, then $G\subseteq A_3$ if and only if the discriminant $\Delta(f)$ is a square in $K$.
+
+::: pf-proof
+Let $\delta=(\alpha_1-\alpha_2)(\alpha_1-\alpha_3)(\alpha_2-\alpha_3)$, so $\Delta(f)=\delta^2\in K$ and $\delta\ne0$.
+A permutation of the roots sends $\delta$ to its sign times $\delta$, and $\delta\ne-\delta$ since $\ch K\ne2$.
+So $G\subseteq A_3$ if and only if $\delta\in L^G=K$, which holds if and only if $\Delta(f)$ is a square in $K$.
+:::
+
+:::
+
+::: pf-step
+The possible Galois groups are
+$$
+\boxed{
+\Gal(L/K)\cong
 \begin{cases}
-C_3,& f\text{ irreducible and }\Delta(f)\text{ is a square in }K,\\
-S_3,& f\text{ irreducible and }\Delta(f)\text{ is not a square in }K.
-\end{cases}
-\]
-These, together with the trivial and $C_2$ reducible cases, are all possibilities.
+1,& f\text{ splits over }K,\\
+C_2,& f=(x-a)q\text{ with }q\text{ irreducible quadratic},\\
+C_3,& f\text{ irreducible and }\Delta(f)\text{ a square in }K,\\
+S_3,& f\text{ irreducible and }\Delta(f)\text{ not a square in }K.
+\end{cases}}
+$$
+
+::: pf-proof
+A cubic either splits, has exactly one root in $K$, or has none and is then irreducible; steps [](#reducible){.pf-ref}, [](#transitive){.pf-ref} and [](#discriminant){.pf-ref} treat these cases.
+:::
+
+:::
+
+:::
+
 :::
