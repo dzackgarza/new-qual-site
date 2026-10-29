@@ -22,7 +22,7 @@ source:
   date:
     kind: unknown
   sections:
-  - name: 'Day 1: UNL Math 825/826, May 26, 2016 (Avery Hall 347)'
+  - name: 'Day 1: UNL Math 825/826, May 26, 2016'
     problems:
     - SRC-UNL-RA-SUMMER-2016
   - name: Day 2 Metric Spaces and Topology

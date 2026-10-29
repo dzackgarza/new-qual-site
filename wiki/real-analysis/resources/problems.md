@@ -61,4 +61,4 @@ Exercises from [@Fol13]:
 
 ## Qualifying exam workshop
 
-[[SRC-RA-WORKSHOP]] is the UNL real analysis workshop packet, organized by day, with links to the source PDFs; Days 1, 9, and 10 are the corresponding qualifying exam collections.
+The [[SRC-RA-WORKSHOP|UNL real analysis workshop packet]] is organized by day, with links to the source PDFs; Days 1, 9, and 10 are the corresponding qualifying exam collections.
