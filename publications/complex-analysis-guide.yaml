@@ -36,7 +36,6 @@ sections:
       - ref: FF-XKATS
       - ref: FF-TBIC5
       - ref: FF-2OHYV
-      - ref: D-OMBQT
       - ref: D-4CSPM
       - ref: D-T6INB
       - ref: PR-MWUJS

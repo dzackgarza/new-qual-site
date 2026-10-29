@@ -25,3 +25,8 @@ $$
 z^{\alpha}\coloneqq e^{\alpha\Log(z)}.
 $$
 :::
+
+::: {.remark title="Variations"}
+Some sources extend $\Log$ to all of $\CC\setminus\theset{0}$: with the principal argument $\Arg(z)\in(-\pi,\pi]$, the unique $\theta\in(-\pi,\pi]$ with $z=\abs{z}e^{i\theta}$, the principal value of the logarithm is $\Log(z)\coloneqq\log\abs{z}+i\Arg(z)$.
+It satisfies $e^{\Log(z)}=z$, restricts to the principal branch on $\CC\setminus(-\infty,0]$, and is discontinuous at every point of $(-\infty,0)$, where $\Arg$ jumps from values near $-\pi$ to $\pi$.
+:::

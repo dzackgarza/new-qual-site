@@ -57,8 +57,6 @@ Once a branch of $\log$ is fixed, $z^\alpha\coloneqq e^{\alpha\log z}$, and a di
 
 [[D-4CSPM]]
 
-[[D-OMBQT]]
-
 [[D-T6INB]]
 
 For a nonvanishing holomorphic function $f$ on a domain $\Omega$, a holomorphic logarithm $g$ of $f$ satisfies $g'=f'/f$, so $\int_\gamma f'/f = 0$ for every closed curve $\gamma$ in $\Omega$.
