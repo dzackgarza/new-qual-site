@@ -84,7 +84,7 @@ For fixed $w$ and $R>\abs w$ this reads $\abs{f(w)} \leq \abs w/R$, and letting 
 
 Other theorems whose conclusion is that a holomorphic function is constant are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]].
 
-## Exercises
+## Problems
 
 [[E-FZLDN]]
 [[E-BPSOU]]
