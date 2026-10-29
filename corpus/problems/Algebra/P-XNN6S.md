@@ -15,39 +15,34 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A$ be a simple module and let
-\[
-\phi:A\to A
-\]
-be a module endomorphism. Prove that either $\phi=0$ or $\phi$ is an isomorphism.
+Let $A$ be a simple module and let $\phi:A\to A$ be a module endomorphism. Prove that either $\phi=0$ or $\phi$ is an isomorphism.
 :::
 
 ::: {.solution}
-Both
-\[
-\ker\phi
-\quad\text{and}\quad
-\operatorname{im}\phi
-\]
-are submodules of $A$.
 
-Since $A$ is simple, its only submodules are $0$ and $A$.
+::: pf
 
-If $\operatorname{im}\phi=0$, then $\phi=0$.
+::: {.pf-step #submodules}
+Each of $\ker\phi$ and $\im\phi$ is $0$ or $A$.
 
-Otherwise
-\[
-\operatorname{im}\phi=A,
-\]
-so $\phi$ is surjective. In this case $\phi\ne0$, hence
-\[
-\ker\phi\ne A.
-\]
-Simplicity therefore forces
-\[
-\ker\phi=0.
-\]
-Thus $\phi$ is injective and surjective, hence an isomorphism.
+::: pf-proof
+Both are submodules of $A$, and the only submodules of the simple module $A$ are $0$ and $A$.
+:::
 
-This is Schur's lemma in module form.
+:::
+
+::: pf-step
+Either $\phi=0$ or $\phi$ is an isomorphism.
+
+::: pf-proof
+If $\im\phi=0$, then $\phi=0$.
+Otherwise $\im\phi=A$ by step [](#submodules){.pf-ref}, so $\phi$ is surjective and nonzero.
+Then $\ker\phi\ne A$, so $\ker\phi=0$ by step [](#submodules){.pf-ref}, and $\phi$ is injective.
+Hence $\phi$ is bijective, and a bijective module homomorphism is an isomorphism.
+:::
+
+:::
+
+:::
+
 :::
