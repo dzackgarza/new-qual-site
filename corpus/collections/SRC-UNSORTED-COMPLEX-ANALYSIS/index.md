@@ -11,7 +11,6 @@ relations: []
 review: draft
 source:
   source_kind: compilation
-  area: complex-analysis
   date:
     kind: unknown
   problems:
@@ -284,7 +283,6 @@ source:
   - id: E-ZGZYQ
   - id: E-ZQGR5
   - id: E-ZSOC4
-  - id: E-ZVO5P
   - id: E-ZWNTH
   - id: P-2CKBC
   - id: P-2DXZW

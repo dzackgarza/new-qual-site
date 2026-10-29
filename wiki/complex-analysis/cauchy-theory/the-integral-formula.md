@@ -31,4 +31,4 @@ This is the argument for the [[complex-analysis/cauchy-theory/maximum-modulus-an
 ## Problems
 
 [[E-RLHXB]] [[E-VGNUI]] [[E-3B2YA]]
-[[E-ZVO5P]] [[E-5AKU5]] [[E-AZSMO]] [[E-DDKSS]]
+[[E-5AKU5]] [[E-AZSMO]] [[E-DDKSS]]
