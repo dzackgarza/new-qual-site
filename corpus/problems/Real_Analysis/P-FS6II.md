@@ -20,23 +20,22 @@ audit:
 ---
 
 ::: {.problem}
-a.
-Carefully state Tonelli's theorem for a nonnegative function $F(x, t)$ on $\RR^n\cross \RR$.
+(a) Carefully state Tonelli's theorem for a nonnegative function $F(x, t)$ on $\RR^n\cross \RR$.
 
-b.
-  Let $f:\RR^n\to [0, \infty]$ and define
-\[
-\mca \definedas \theset{(x, t) \in \RR^n\cross \RR \suchthat 0\leq t \leq f(x)}
-.\]
+(b) Let $f:\RR^n\to [0, \infty]$ and define
+$$
+\mca \definedas \theset{(x, t) \in \RR^n\cross \RR \suchthat 0\leq t \leq f(x)}.
+$$
+Prove the validity of the following two statements:
 
-  Prove the validity of the following two statements:
+(i) $f$ is Lebesgue measurable on $\RR^{n} \iff \mca$ is a Lebesgue measurable subset of $\RR^{n+1}$.
 
-  1. $f$ is Lebesgue measurable on $\RR^{n} \iff \mca$ is a Lebesgue measurable subset of $\RR^{n+1}$.
-  2. If $f$ is Lebesgue measurable on $\RR^n$ then
-  \[
-  m(\mathcal{A})=\int_{\mathbb{R}^{n}} f(x) d x=\int_{0}^{\infty} m\left(\left\{x \in \mathbb{R}^{n}\suchthat f(x) \geq t\right\}\right) d t
-  .\]
+(ii) If $f$ is Lebesgue measurable on $\RR^n$ then
+$$
+m(\mca)=\int_{\RR^{n}} f(x) \,dx=\int_{0}^{\infty} m\left(\left\{x \in \RR^{n}\suchthat f(x) \geq t\right\}\right) dt.
+$$
 :::
+
 ::: {.solution}
 (a) Let $F\colon \RR^n \times \RR \to [0,\infty]$ be Lebesgue measurable on $\RR^{n+1}$. Then for a.e. $x \in \RR^n$ the slice $t \mapsto F(x,t)$ is measurable on $\RR$, the function $x \mapsto \int_\RR F(x, t)\,dt$, defined a.e., is measurable on $\RR^n$, and
 $$
@@ -86,7 +85,7 @@ By step [](#s1){.pf-ref}, $\chi_\mca$ is measurable. Part (a) with the $t$-integ
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are (b)1, and step [](#s3){.pf-ref} is (b)2.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} together give (b)(i), and step [](#s3){.pf-ref} is (b)(ii).
 
 :::
 
