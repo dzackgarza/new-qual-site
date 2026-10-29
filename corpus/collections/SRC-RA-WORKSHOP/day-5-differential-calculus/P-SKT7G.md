@@ -20,11 +20,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb{R}\to\mathbb{R}$ be a differentiable function with $f'\in C(\mathbb{R})$.
-Assume that there are $a,b\in\mathbb{R}$ with $\lim_{x\to\infty}f(x)=a$ and $\lim_{x\to\infty}f'(x)=b$.
+Let $f:\RR\to\RR$ be a differentiable function with $f'\in C(\RR)$.
+Assume that there are $a,b\in\RR$ with $\lim_{x\to\infty}f(x)=a$ and $\lim_{x\to\infty}f'(x)=b$.
 Prove that $b=0$.
 Then, find a counterexample to show that the assumption $\lim_{x\to\infty}f'(x)$ exists is necessary.
 :::
+
 ::: {.solution}
 
 ::: pf
@@ -35,7 +36,7 @@ $b = 0$.
 
 ::: pf-proof
 
-by the mean value theorem applied to $f$ on $[x, x+1]$, for each $x$ there is $\xi_x \in (x, x+1)$ with \[ f(x+1) - f(x) = f'(\xi_x) . \] As $x \to \infty$, the left side tends to $a - a = 0$ (both $f(x+1)$ and $f(x)$ tend to $a$). Also $\xi_x \to \infty$, so $f'(\xi_x) \to b$ (since $\lim_{x\to\infty} f'(x) = b$). Hence $b = 0$.
+By the mean value theorem applied to $f$ on $[x, x+1]$, for each $x$ there is $\xi_x \in (x, x+1)$ with $$ f(x+1) - f(x) = f'(\xi_x) . $$ As $x \to \infty$, the left side tends to $a - a = 0$, because both $f(x+1)$ and $f(x)$ tend to $a$. Also $\xi_x \to \infty$, so $f'(\xi_x) \to b$. Hence $b = 0$.
 
 :::
 
@@ -43,11 +44,15 @@ by the mean value theorem applied to $f$ on $[x, x+1]$, for each $x$ there is $\
 
 ::: pf-step
 
-The assumption that $\lim_{x\to\infty} f'(x)$ exists is necessary.
+The function $\boxed{f(x)=\sin(x^2)/\sqrt{1+x^2}}$ is continuously differentiable on $\RR$ and satisfies $\lim_{x\to\infty}f(x)=0$, but $\lim_{x\to\infty}f'(x)$ does not exist.
 
 ::: pf-proof
 
-$f(x) = \sin(x^2)/x$ tends to $0$ as $x \to \infty$, but \[ f'(x) = 2\cos(x^2) - \frac{\sin(x^2)}{x^2}, \] whose limit as $x \to \infty$ does not exist (the term $2\cos(x^2)$ oscillates between $-2$ and $2$ while the second term tends to $0$). So $f$ is differentiable, $\lim f = 0$, yet $\lim f'$ fails to exist.
+The function $f$ is a quotient of smooth functions with nonvanishing denominator, so $f\in C^1(\RR)$. Since $\abs{f(x)}\leq(1+x^2)^{-1/2}$, $f(x)\to0$. Differentiation gives
+$$
+f'(x) = \frac{2x\cos(x^2)}{\sqrt{1+x^2}} - \frac{x\sin(x^2)}{(1+x^2)^{3/2}}.
+$$
+The second term tends to $0$, and $2x/\sqrt{1+x^2}\to2$. Along $x_k=\sqrt{2\pi k}$ the first term tends to $2$, and along $y_k=\sqrt{(2k+1)\pi}$ it tends to $-2$. Hence $f'(x_k)\to2$ and $f'(y_k)\to-2$, so $\lim_{x\to\infty}f'(x)$ does not exist.
 
 :::
 
