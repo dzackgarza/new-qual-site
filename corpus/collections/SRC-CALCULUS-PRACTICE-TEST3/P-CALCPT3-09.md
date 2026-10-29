@@ -5,7 +5,7 @@ kind: problem
 title: "Evaluate $\\int_0^1 x/(2-x^2)\\,dx$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Integrals, u-Substitution]
 relations: []
 review: draft
 audit:
