@@ -25,3 +25,31 @@ At this inflation rate, in approximately how many years would the dollar be wort
 (D) $100$
 (E) $125$
 :::
+
+::: {.solution}
+Model the value after $t$ years as $V(t)=V_0\,2^{-t/5}$, the value halving every $5$ years.
+
+::: pf
+
+::: {.pf-step #halvings}
+The value reaches $\frac{1}{1{,}000{,}000}V_0$ after $n=\frac{6}{\log_{10}2}\approx 19.9$ halvings.
+
+::: pf-proof
+The equation $2^{-n}=10^{-6}$ gives $n\log_{10}2=6$, and $\log_{10}2\approx 0.301$, so $n\approx 6/0.301\approx 19.9$.
+Equivalently, $2^{20}=1{,}048{,}576\approx 10^6$.
+:::
+
+:::
+
+::: pf-step
+The time is approximately $\boxed{100}$ years, choice (D).
+
+::: pf-proof
+By step [](#halvings){.pf-ref}, about $20$ halvings are needed, and each takes $5$ years, so $t=5n\approx 99.7\approx 100$.
+:::
+
+:::
+
+:::
+
+:::
