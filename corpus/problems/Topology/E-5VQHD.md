@@ -26,57 +26,44 @@ Show that if $f: A\to B$ is a continuous map between metric spaces and $K\subset
 :::
 
 ::: {.solution}
+Fix $\varepsilon>0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #radii}
 
-Fix $\varepsilon>0$. For each $x\in K$, continuity of $f$ at $x$ gives $r_x>0$ such that
-\[
-d_A(z,x)<r_x\implies d_B(f(z),f(x))<\varepsilon/2.
-\]
-The balls $B_A(x,r_x/2)$ cover $K$.
+For each $x\in K$ there is $r_x>0$ such that $d_A(z,x)<r_x$ implies $d_B(f(z),f(x))<\varepsilon/2$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-By compactness, choose $x_1,\dots,x_m\in K$ such that
-\[
-K\subseteq\bigcup_{i=1}^m B_A(x_i,r_{x_i}/2).
-\]
-Set
-\[
-\delta=\min_{1\le i\le m}r_{x_i}/2>0.
-\]
-
-:::
-
-::: pf-step
-
-Let $x,y\in K$ with $d_A(x,y)<\delta$. Choose $i$ with $x\in B_A(x_i,r_{x_i}/2)$. Then
+This is continuity of $f$ at $x$.
 
 :::
 
 :::
 
-\[
-d_A(x,x_i)<r_{x_i}/2<r_{x_i}
-\]
-and
-\[
-d_A(y,x_i)\le d_A(y,x)+d_A(x,x_i)
-<\delta+r_{x_i}/2\le r_{x_i}.
-\]
-Therefore
-\[
-d_B(f(x),f(x_i))<\varepsilon/2,
-\qquad
-d_B(f(y),f(x_i))<\varepsilon/2.
-\]
-The triangle inequality gives
-\[
-d_B(f(x),f(y))<\varepsilon.
-\]
-Thus $f|_K$ is uniformly continuous.
+::: {.pf-step #delta}
+
+There are $x_1,\ldots,x_m\in K$ with $K\subseteq\bigcup_{i=1}^m B_A(x_i,r_{x_i}/2)$, and then $\delta=\min_{1\le i\le m}r_{x_i}/2>0$.
+
+::: pf-proof
+
+The balls $B_A(x,r_x/2)$, $x\in K$, cover the compact set $K$, so finitely many of them do. A minimum of finitely many positive numbers is positive.
+
+:::
+
+:::
+
+::: pf-qed
+
+Let $x,y\in K$ with $d_A(x,y)<\delta$. By step [](#delta){.pf-ref}, choose $i$ with $x\in B_A(x_i,r_{x_i}/2)$. Then $d_A(x,x_i)<r_{x_i}/2<r_{x_i}$ and
+$$
+d_A(y,x_i)\le d_A(y,x)+d_A(x,x_i)<\delta+r_{x_i}/2\le r_{x_i}.
+$$
+By step [](#radii){.pf-ref}, $d_B(f(x),f(x_i))<\varepsilon/2$ and $d_B(f(y),f(x_i))<\varepsilon/2$, so the triangle inequality gives $d_B(f(x),f(y))<\varepsilon$. Since $\delta$ depends only on $\varepsilon$, $\restrictionof{f}{K}$ is uniformly continuous.
+
+:::
+
+:::
+
 :::
