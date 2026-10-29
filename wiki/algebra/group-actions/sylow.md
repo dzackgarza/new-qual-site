@@ -32,11 +32,6 @@ Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^k m$ with $p\not
 
 [[T-WRMBM]]
 
-::: {.slogan}
-For every $\beta \leq k$, $G$ has a subgroup of order $p^{\beta}$; in particular Sylow $p$-subgroups exist.
-Every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup.
-:::
-
 ### Conjugacy
 
 [[T-EF2MZ]]
