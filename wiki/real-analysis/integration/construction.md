@@ -39,7 +39,7 @@ A measurable $f$ is integrable if $\int\abs f<\infty$, and then $\int f\coloneqq
 
 [[PR-6OHTJ]]
 
-[[FF-C7GY4]] [[FF-LMANJ]]
+
 
 ::: {.remark}
 Changing $f$ on a null set changes neither $\int f$ nor its essential supremum, so elements of $L^p$ are equivalence classes of functions equal almost everywhere.
