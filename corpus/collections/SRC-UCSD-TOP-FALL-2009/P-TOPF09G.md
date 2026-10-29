@@ -26,8 +26,6 @@ Use this to show that the suspension is homotopy-equivalent to $S^4$.
 :::
 
 ::: {.solution}
-**Goal:** Compute the fundamental group $\pi_1(\Sigma M)$ and homology groups $H_*(\Sigma M)$ of the suspension of a homology 3-sphere $M$, and prove that $\Sigma M \simeq S^4$.
-
 ::: pf
 
 ::: pf-step
