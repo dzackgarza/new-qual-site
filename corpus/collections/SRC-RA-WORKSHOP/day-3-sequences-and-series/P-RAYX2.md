@@ -16,11 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (b) of the source assumed only that a_n converges, and a_n=1/n, b_n=n gives 1 against the undefined product 0 times infinity; part (b) now assumes a_n converges to a positive limit.
 ---
 ::: {.problem}
 Produce sequences $\{a_n\},\,\{b_n\}$ of positive real numbers such that $$\liminf_{n\to\infty}(a_nb_n)>\left(\liminf_{n\to\infty} a_n\right) \left(\liminf_{n\to\infty} b_n\right).$$
 
-If $\{a_n\},\,\{b_n\}$ are sequences of positive real numbers and $\{a_n\}$ converges, prove that $$\liminf_{n\to\infty}(a_nb_n)=\left(\lim_{n\to\infty}a_n\right)\left(\liminf_{n\to\infty}b_n\right).$$
+If $\{a_n\},\,\{b_n\}$ are sequences of positive real numbers and $\{a_n\}$ converges to a positive limit, prove that $$\liminf_{n\to\infty}(a_nb_n)=\left(\lim_{n\to\infty}a_n\right)\left(\liminf_{n\to\infty}b_n\right).$$
 :::
 ::: {.solution}
 
@@ -45,19 +49,7 @@ Both sequences have terms in $\{1,3\}$, and each has lower limit $1$. On the oth
 
 ::: {.pf-step #s2}
 
-Part (b), as stated in the source, is false.
-
-::: pf-proof
-
-Take $a_n=1/n$ and $b_n=n$. Both sequences are positive and $a_n\to0$, while $a_nb_n=1$ for every $n$. Thus $\liminf(a_nb_n)=1$. The right-hand side of the proposed identity is $0\cdot(+\infty)$, which is undefined in the extended real numbers. Assigning it the value $0$ would give a false identity. The source's unrestricted assertion is therefore not a well-defined equality under its stated hypotheses.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-If $a_n\to a>0$, then $\liminf(a_nb_n)=a\liminf b_n$, including when $\liminf b_n=+\infty$.
+In part (b), if $a_n\to a>0$, then $\liminf(a_nb_n)=a\liminf b_n$, including when $\liminf b_n=+\infty$.
 
 ::: pf-proof
 
@@ -77,7 +69,7 @@ Letting $\varepsilon\downarrow0$ proves the equality. If $L=+\infty$, the lower 
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} answers part (a). Step [](#s2){.pf-ref} identifies the defect in part (b), and step [](#s3){.pf-ref} proves the corrected assertion under the sufficient additional hypothesis $a>0$.
+Step [](#s1){.pf-ref} answers part (a), and step [](#s2){.pf-ref} proves part (b).
 
 :::
 
