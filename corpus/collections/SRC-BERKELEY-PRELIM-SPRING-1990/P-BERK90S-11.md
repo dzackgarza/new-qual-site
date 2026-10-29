@@ -68,7 +68,7 @@ $$
 \Re\zeta\geq\Re z-\abs{\zeta-z}\geq\Re z-c>0.
 $$
 Thus the closed disc of radius $c$ centered at $z$ lies in $H$.
-The [[FT-AK34G|Cauchy integral formula for derivatives]] on its
+The [[T-LA2UI|Cauchy integral formula for derivatives]] on its
 counterclockwise boundary circle gives
 $$
 f'(z)=\frac{1}{2\pi i}
