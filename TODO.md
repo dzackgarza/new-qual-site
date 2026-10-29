@@ -359,6 +359,12 @@ mathematical correction under its own node, not under copy policy.
       E-PER08-21.7, E-PER08-23.1, E-PER08-23.4, E-PER08-24.1, E-PER08-24.3, E-PER08-26.2,
       E-PER08-26.3, E-PER08-6.7, E-PER08-7.1, E-PER08-9.3, P-PSTM-01, P-PSTM-02, P-PSTM-03,
       P-PSTM-04, P-PSTM-05, P-PSTM-06, P-TOPF10C, P-DDUA3, P-IWMWM, P-AT75W.
+    - Proof gaps found during the Goal repair: E-HAT-2.2-42 (finiteness of $G$ unused,
+      unproved existence step); E-HAT-3.2-14 ($\CP^1\to\HP^1$ degree, $\abs{\beta}$, the
+      $\HP$ case); E-HAT-1.2-19 (perturbation over infinitely many spheres, continuity at
+      $t=1$); E-8EX2G (annulus quotient is a Möbius band); E-8NCA4 (match with Munkres §68
+      Example 1); E-79XXG (figure-dependent claims); E-HAT-4.3-19 (statement $\langle X,B\rangle$
+      against $\langle X,\Omega B\rangle$, checked against Hatcher).
 
     **Acceptance:** each read and repaired, or kept with the reason.
 
