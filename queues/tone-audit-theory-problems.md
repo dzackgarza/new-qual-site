@@ -1006,7 +1006,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-PCVOI.md` | `b6013ee25d0d8f5063f3851dd3279068a26a7046` | `b6013ee25d0d8f5063f3851dd3279068a26a7046` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-PGGNF.md` | `ba68a5de41bc04ed15ebdbe588ee484e810fac6b` | `ba68a5de41bc04ed15ebdbe588ee484e810fac6b` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-PIB7A.md` | `561278a5b296c050650f8a50064404992f9d97d3` | `561278a5b296c050650f8a50064404992f9d97d3` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-PLJCK.md` | `bbce2943104043094542f81c230ba4a8fe816f13` | `bbce2943104043094542f81c230ba4a8fe816f13` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-PMURO.md` | `89ae2e368d808259a6e7bca7b1268c3e77ced23a` | `89ae2e368d808259a6e7bca7b1268c3e77ced23a` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-PQ7NC.md` | `d8544cfb573c1da67df6631b964100947047779b` | `d8544cfb573c1da67df6631b964100947047779b` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-PWVJS.md` | `6c5ab70f69c7ece957afd7eec1f1a46b7c7ec093` | `6c5ab70f69c7ece957afd7eec1f1a46b7c7ec093` | Read; retained |
