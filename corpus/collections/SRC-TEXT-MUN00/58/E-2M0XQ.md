@@ -49,7 +49,6 @@ The following subsets of $\RR^2$:
 :::
 
 ::: {.solution}
-**Goal:** Determine the fundamental group of each of the twelve spaces, classifying each as trivial ($\{1\}$), infinite cyclic ($\ZZ$), or figure-eight ($\ZZ * \ZZ$).
 
 ::: pf
 
