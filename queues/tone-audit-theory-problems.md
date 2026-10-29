@@ -1098,7 +1098,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-YZUOC.md` | `b7f2bf0e01a9a08ab272a9561fa767692c842f22` | `b7f2bf0e01a9a08ab272a9561fa767692c842f22` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-Z23VB.md` | `6b39325add7a833809686d23e2c5a49311d19586` | `6b39325add7a833809686d23e2c5a49311d19586` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-Z4JCZ.md` | `4d2cd2596d82143a7d3172409c004f7b18f020d7` | `4d2cd2596d82143a7d3172409c004f7b18f020d7` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-Z66NC.md` | `c397fc644c43a1629cb6f5464e9be216debdd405` | `c397fc644c43a1629cb6f5464e9be216debdd405` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ZC34M.md` | `1d85faeccbaee6d88422f1c76452a4262165c926` | `1d85faeccbaee6d88422f1c76452a4262165c926` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ZCPKK.md` | `5203d22d4db043ac9d24e78ff2eafe596fd7f061` | `5203d22d4db043ac9d24e78ff2eafe596fd7f061` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ZDVLE.md` | `347c5dd2b558c7ede2bfdd98bca274936c0a31c4` | `347c5dd2b558c7ede2bfdd98bca274936c0a31c4` | Read; retained |

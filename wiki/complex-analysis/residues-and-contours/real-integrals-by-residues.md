@@ -75,7 +75,6 @@ $$
 [[E-ENWYG]]
 [[E-KC6DS]]
 [[E-HHSCS]]
-[[E-Z66NC]]
 
 ## Branch cuts: powers
 
