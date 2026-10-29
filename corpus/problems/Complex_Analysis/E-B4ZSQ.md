@@ -15,10 +15,9 @@ review: draft
 
 ::: {.exercise}
 Find a harmonic conjugate for
-\[
-u(x, y) = x^3 - 3xy^2 -x -y
-.\]
-
+$$
+u(x, y) = x^3 - 3xy^2 -x -y.
+$$
 :::
 
 ::: {.concept}
@@ -51,24 +50,37 @@ The same steps as a diagram:
 :::
 
 ::: {.solution}
-First, check that $u$ is actually harmonic: 
-\[
-\laplacian u = \dd{}{x}(3x^2-3y^2-1) + \dd{}{y}(-6xy - 1) = 6x + (-6x) = 0
-.\]
 
-Integrate $v_y=u_x$ with respect to $y$,
-\[
-v_y = u_x = 3x^2 - 3y^2 - 1 \implies 
-v = \int u_x \dy = 3x^2y - y^3 - y + f_1(x)
-.\]
-Now differentiate $v$ with respect to $x$ and set $v_x = -u_y$:
-\[
-v_x = 6xy + (f_1)_x = -u_y = 6xy + 1\implies f_1 = x + c_1
-.\]
-Thus
-\[
-v(x, y) = 3x^2y - y^3 - y + x + c_1
-.\]
+::: pf
+
+::: pf-step
+$u$ is harmonic on $\RR^2$.
+
+::: pf-proof
+$\laplacian u = \dd{}{x}(3x^2-3y^2-1) + \dd{}{y}(-6xy - 1) = 6x - 6x = 0$.
+:::
 
 :::
 
+::: {.pf-step #integrate}
+Every $v$ with $v_y=u_x$ has the form $v = 3x^2y - y^3 - y + f_1(x)$.
+
+::: pf-proof
+Integrate $v_y = u_x = 3x^2 - 3y^2 - 1$ with respect to $y$.
+:::
+
+:::
+
+::: pf-step
+$\boxed{v(x, y) = 3x^2y - y^3 - y + x + c}$, for any constant $c$, is a harmonic conjugate of $u$.
+
+::: pf-proof
+For $v$ as in step [](#integrate){.pf-ref}, the second Cauchy--Riemann equation reads $v_x = 6xy + f_1'(x) = -u_y = 6xy + 1$, so $f_1(x) = x + c$.
+Both Cauchy--Riemann equations then hold.
+:::
+
+:::
+
+:::
+
+:::
