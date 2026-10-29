@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-06
 kind: problem
-title: Maxim algebraic topology 4.6
+title: Integral cohomology of $K(\ZZ,3)$
 classification:
   areas: [topology]
   topics: []
