@@ -11,14 +11,19 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source leaves I undeclared and asks for continuity on all of Q; the statement takes I to be an open interval and asks about the rationals in I.
 ---
 
 ::: {.exercise}
-Can there be a function $f:I\to \RR$ that is continuous on $\QQ$ and discontinuous otherwise?
+Let $I \subseteq \RR$ be an open interval. Can there be a function $f:I\to \RR$ that is continuous on $\QQ \cap I$ and discontinuous otherwise?
 :::
 
 ::: {.solution}
-No. Let $I \subseteq \RR$ be an open interval and $f\colon I \to \RR$ any function. For $n \geq 1$ let
+No. Let $f\colon I \to \RR$ be any function. For $n \geq 1$ let
 $$
 U_n = \theset{x \in I : \operatorname{diam} f(U) < 1/n \text{ for some open } U \subseteq I \text{ containing } x}.
 $$
