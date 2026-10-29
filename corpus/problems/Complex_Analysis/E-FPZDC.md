@@ -70,14 +70,12 @@ $$
 Hence, by absolute convergence and Fubini,
 $$
 \begin{aligned}
-\begin{aligned}
 \Gamma(s)\Gamma(1-s)
 &=\int_0^\infty\int_0^\infty
  e^{-t}t^{s-1}\,t e^{-vt}(vt)^{-s}\,dv\,dt\\
 &=\int_0^\infty v^{-s}
 \left(\int_0^\infty e^{-(1+v)t}\,dt\right)dv\\
 &=\int_0^\infty {v^{-s}\over1+v}\,dv.
-\end{aligned}
 \end{aligned}
 $$
 For
