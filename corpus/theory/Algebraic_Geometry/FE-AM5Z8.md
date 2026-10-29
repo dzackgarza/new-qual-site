@@ -51,6 +51,6 @@ $\OO(1) \tensor_{\OO_X} \OO(-1) \cong \OO_X$, with $H^0 = k$.
 :::
 
 ::: {.remark}
-Given $\varphi : \mcf \to \mcg$ of sheaves, the presheaf $U \mapsto \mcg(U)/\varphi(\mcf(U))$ need not be a sheaf, and the sheaf cokernel is its sheafification ([[D-A7LCT]]); the presheaf $U \mapsto \ker \varphi_U$ is a sheaf.
+Given $\varphi \colon \mcf \to \mcg$ of sheaves, the presheaf $U \mapsto \mcg(U)/\varphi(\mcf(U))$ need not be a sheaf, and the sheaf cokernel is its sheafification ([[D-A7LCT]]); the presheaf $U \mapsto \ker \varphi_U$ is a sheaf.
 A sequence of sheaves is exact if and only if it is exact on every stalk; a surjection of sheaves need not be surjective on sections over every open set, as $\exp\colon\OO\to\OO^\times$ on $\CC\sm\theset{0}$ shows.
 :::
