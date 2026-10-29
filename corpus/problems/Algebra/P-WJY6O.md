@@ -19,36 +19,36 @@ Show that every nilpotent group is solvable.
 
 ::: {.solution}
 Suppose $G$ is nilpotent. Then its lower central series
-\[
+$$
 \gamma_1(G)=G,
 \qquad
 \gamma_{i+1}(G)=[\gamma_i(G),G]
-\]
+$$
 terminates:
-\[
+$$
 \gamma_{c+1}(G)=1
-\]
+$$
 for some $c$.
 
 Let $G^{(i)}$ denote the derived series,
-\[
+$$
 G^{(0)}=G,
 \qquad
 G^{(i+1)}=[G^{(i)},G^{(i)}].
-\]
+$$
 We claim inductively that
-\[
-G^{(i)}\le \gamma_{2^i}(G).
-\]
-For $i=0$ this is clear. If it holds for $i$, then
-\[
+$$
+G^{(i)}\le \gamma_{i+1}(G).
+$$
+For $i=0$ this is $G\le G$. If it holds for $i$, then, since $G^{(i)}\le G$,
+$$
 G^{(i+1)}=[G^{(i)},G^{(i)}]
-\le [\gamma_{2^i}(G),\gamma_{2^i}(G)]
-\le \gamma_{2^{i+1}}(G).
-\]
-Choose $i$ with $2^i>c$. Then
-\[
-G^{(i)}\le \gamma_{2^i}(G)=1.
-\]
+\le [\gamma_{i+1}(G),G]
+=\gamma_{i+2}(G).
+$$
+Taking $i=c$ gives
+$$
+G^{(c)}\le \gamma_{c+1}(G)=1.
+$$
 Hence the derived series terminates, so $G$ is solvable.
 :::
