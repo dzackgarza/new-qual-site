@@ -29,9 +29,9 @@ Prove that every fractional linear transformation corresponding to $g \in G$ is 
 :::
 
 ::: {.solution}
-Let $G_0 = \langle S, T_2 \rangle$, and recall that for $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}\in\operatorname{SL}_2(\ZZ)$ and $\tau\in\mathbb H$,
+Let $G_0 = \langle S, T_2 \rangle$, and recall that for $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}\in\operatorname{SL}_2(\ZZ)$ and $\tau\in\halfplane$,
 $$\Im(M\tau) = \frac{\Im\tau}{\abs{c\tau + d}^2}.$$
-Put $\mathcal{F} = \{\tau \in \mathbb{H} : |\tau| \ge 1,\ |\Re\tau| \le 1\}$.
+Put $\mathcal{F} = \{\tau \in \halfplane : |\tau| \ge 1,\ |\Re\tau| \le 1\}$.
 
 ::: pf
 
@@ -49,11 +49,11 @@ For $S$: $a=d=0$ have the same parity, $b=-1$ and $c=1$ have the same parity, an
 
 ::: {.pf-step #s2}
 
-Every $G_0$-orbit in $\mathbb H$ meets $\mathcal F$.
+Every $G_0$-orbit in $\halfplane$ meets $\mathcal F$.
 
 ::: pf-proof
 
-Fix $\tau\in\mathbb H$. The numbers $c\tau+d$, for bottom rows $(c,d)$ of matrices in $G_0$, lie in the lattice $\ZZ\tau+\ZZ$ and are nonzero, so $\abs{c\tau+d}$ attains a positive minimum; hence some $\tau'$ in the orbit maximizes $\Im$ over the orbit. Choose $k\in\ZZ$ with $\tau'' = \tau' + 2k$ satisfying $|\Re\tau''| \le 1$; then $\Im\tau''=\Im\tau'$ is still maximal. If $|\tau''| < 1$, then $\Im(S\tau'') = \Im\tau''/|\tau''|^2 > \Im\tau''$, contradicting maximality. So $\tau''\in\mathcal F$.
+Fix $\tau\in\halfplane$. The numbers $c\tau+d$, for bottom rows $(c,d)$ of matrices in $G_0$, lie in the lattice $\ZZ\tau+\ZZ$ and are nonzero, so $\abs{c\tau+d}$ attains a positive minimum; hence some $\tau'$ in the orbit maximizes $\Im$ over the orbit. Choose $k\in\ZZ$ with $\tau'' = \tau' + 2k$ satisfying $|\Re\tau''| \le 1$; then $\Im\tau''=\Im\tau'$ is still maximal. If $|\tau''| < 1$, then $\Im(S\tau'') = \Im\tau''/|\tau''|^2 > \Im\tau''$, contradicting maximality. So $\tau''\in\mathcal F$.
 
 :::
 

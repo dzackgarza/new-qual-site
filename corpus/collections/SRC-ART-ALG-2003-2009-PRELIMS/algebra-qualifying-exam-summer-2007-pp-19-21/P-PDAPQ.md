@@ -30,7 +30,7 @@ audit:
 Give an example of each of the following.
 (You don't need to justify your answers.)
 
-a. A maximal ideal of $\mathbf{Z}[x]$.
+a. A maximal ideal of $\ZZ[x]$.
 
 b. A ring $R$ and an ideal $I$ of $R$ that is prime but not maximal.
 

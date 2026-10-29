@@ -32,7 +32,7 @@ Let $d\nu$ be a finite complex Borel measure on $[0,1)$ absolutely continuous wi
 :::
 
 ::: {.solution}
-Identify $[0,1)$ with the circle $\mathbb T=\RR/\ZZ$ by $x\mapsto x+\ZZ$; this is a Borel isomorphism under which $e^{2\pi i n x}$ is a continuous character of $\mathbb T$.
+Identify $[0,1)$ with the circle $\circlegroup=\RR/\ZZ$ by $x\mapsto x+\ZZ$; this is a Borel isomorphism under which $e^{2\pi i n x}$ is a continuous character of $\circlegroup$.
 
 ::: pf
 
@@ -41,11 +41,11 @@ Write $d\nu=f\,d\mu$ with $f\in L^1(|\mu|)$, and fix $\varepsilon>0$. There is a
 $$
 P(x)=\sum_{m=-N}^N c_m e^{2\pi i m x}
 $$
-with $\int_{\mathbb T}|f-P|\,d|\mu|<\varepsilon$.
+with $\int_{\circlegroup}|f-P|\,d|\mu|<\varepsilon$.
 
 ::: pf-proof
 The density $f$ exists by the Radon--Nikodym theorem for complex measures.
-Continuous functions are dense in $L^1(|\mu|)$ on the compact metric space $\mathbb T$, and trigonometric polynomials are uniformly dense in $C(\mathbb T)$ by the Stone--Weierstrass theorem; since $|\mu|$ is finite, uniform approximation controls the $L^1(|\mu|)$ distance.
+Continuous functions are dense in $L^1(|\mu|)$ on the compact metric space $\circlegroup$, and trigonometric polynomials are uniformly dense in $C(\circlegroup)$ by the Stone--Weierstrass theorem; since $|\mu|$ is finite, uniform approximation controls the $L^1(|\mu|)$ distance.
 :::
 
 :::
@@ -56,14 +56,14 @@ $\limsup_{n\to\infty}|\widehat\nu(n)|\le\varepsilon$.
 ::: pf-proof
 For every $n$,
 $$
-\left|\widehat\nu(n)-\int_{\mathbb T}e^{2\pi i n x}P(x)\,d\mu(x)\right|
-=\left|\int_{\mathbb T}e^{2\pi i n x}(f-P)\,d\mu\right|
-\le\int_{\mathbb T}|f-P|\,d|\mu|
+\left|\widehat\nu(n)-\int_{\circlegroup}e^{2\pi i n x}P(x)\,d\mu(x)\right|
+=\left|\int_{\circlegroup}e^{2\pi i n x}(f-P)\,d\mu\right|
+\le\int_{\circlegroup}|f-P|\,d|\mu|
 <\varepsilon,
 $$
 and
 $$
-\int_{\mathbb T}e^{2\pi i n x}P(x)\,d\mu(x)
+\int_{\circlegroup}e^{2\pi i n x}P(x)\,d\mu(x)
 =\sum_{m=-N}^N c_m\widehat\mu(n+m)
 \longrightarrow0
 $$

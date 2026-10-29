@@ -125,7 +125,7 @@ order: 10
 
 ### Functional analysis
 
-1. Hilbert spaces: direct sums, orthogonal complements, the Riesz representation theorem, orthonormal bases in the separable and non-separable cases, the Fourier basis for $L^2(\mathbb T)$, $\mathbb T = \RR/2\pi\ZZ$.
+1. Hilbert spaces: direct sums, orthogonal complements, the Riesz representation theorem, orthonormal bases in the separable and non-separable cases, the Fourier basis for $L^2(\circlegroup)$, $\circlegroup = \RR/2\pi\ZZ$.
 
 2. Banach spaces: continuous linear maps, duals, direct sums and quotients, the Hahn--Banach theorem, the Baire category theorem, the Banach--Steinhaus theorem (uniform boundedness principle), the open mapping theorem.
 
@@ -133,7 +133,7 @@ order: 10
 
 4. Locally convex spaces: the Minkowski gauge, the equivalence of convex balanced absorbing neighborhoods and seminorms, the Hahn--Banach theorem, metrizability, Fréchet spaces, the Banach--Steinhaus and open mapping theorems.
 
-5. Distributions: $C^\infty(\mathbb T)$ and its dual $\mathcal D'(\mathbb T)$, Schwartz functions $\mathcal S(\RR^n)$ and tempered distributions $\mathcal S'(\RR^n)$, differentiation of distributions, multiplication of distributions by smooth functions, convergence of sequences of distributions, the distributions $(x\pm i0)^{-1}$ and $\delta_0$, support of distributions.
+5. Distributions: $C^\infty(\circlegroup)$ and its dual $\mathcal D'(\circlegroup)$, Schwartz functions $\mathcal S(\RR^n)$ and tempered distributions $\mathcal S'(\RR^n)$, differentiation of distributions, multiplication of distributions by smooth functions, convergence of sequences of distributions, the distributions $(x\pm i0)^{-1}$ and $\delta_0$, support of distributions.
 
 6. Bounded operators on Banach spaces: adjoints, the spectrum, the resolvent, the spectrum of bounded self-adjoint operators on Hilbert spaces, integration and differentiation with values in Banach spaces, the spectral radius, continuous functional calculus for bounded self-adjoint operators on Hilbert spaces and the spectral measure.
 
@@ -141,6 +141,6 @@ order: 10
 
 ### Fourier analysis
 
-1. Fourier series on $\mathbb T = \RR/2\pi\ZZ$: orthogonality, $L^2$ completeness, uniform convergence and its failure, Fourier series in $C^\infty(\mathbb T)$ and $\mathcal D'(\mathbb T)$, interaction with differentiation and multiplication by $e^{i\theta}$, the Sobolev spaces $H^s(\mathbb T)$, compactness of the inclusion $H^s(\mathbb T)\subseteq H^r(\mathbb T)$ for $s>r$, the representation of distributions as derivatives of continuous functions, the Schwartz kernel theorem.
+1. Fourier series on $\circlegroup = \RR/2\pi\ZZ$: orthogonality, $L^2$ completeness, uniform convergence and its failure, Fourier series in $C^\infty(\circlegroup)$ and $\mathcal D'(\circlegroup)$, interaction with differentiation and multiplication by $e^{i\theta}$, the Sobolev spaces $H^s(\circlegroup)$, compactness of the inclusion $H^s(\circlegroup)\subseteq H^r(\circlegroup)$ for $s>r$, the representation of distributions as derivatives of continuous functions, the Schwartz kernel theorem.
 
 2. The Fourier transform on $\RR^n$: isomorphism on $\mathcal S(\RR^n)$ and $\mathcal S'(\RR^n)$, isometry on $L^2(\RR^n)$, interaction with differentiation and multiplication by the coordinate functions $x_j$, the Fourier transform of compactly supported distributions, the Fourier transform of Gaussians and the heat equation, the Sobolev spaces $H^s(\RR^n)$ and the inclusion $H^s(\RR^n)\subseteq C^0(\RR^n)$ for $s>n/2$.

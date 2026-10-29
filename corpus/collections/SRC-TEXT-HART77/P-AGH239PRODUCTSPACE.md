@@ -43,10 +43,10 @@ Describe the product scheme $\fiberprod{\Spec k(s)}{\Spec k}{\Spec k(t)}$.
 The product of the two affine lines over $k$ is
 \[
 \boxed{
-\mathbb A^1_k\times_{\Spec k}\mathbb A^1_k
+\AA^1_k\times_{\Spec k}\AA^1_k
 \cong
 \Spec k[x,y]
-=\mathbb A^2_k.}
+=\AA^2_k.}
 \]
 
 ::: pf-proof
@@ -73,7 +73,7 @@ is an isomorphism, giving the result.
 
 ::: {.pf-step #s2}
 
-Even when $k$ is algebraically closed, the underlying point set of $\mathbb A^2_k$ is not the Cartesian product of the underlying point sets of the two copies of $\mathbb A^1_k$.
+Even when $k$ is algebraically closed, the underlying point set of $\AA^2_k$ is not the Cartesian product of the underlying point sets of the two copies of $\AA^1_k$.
 
 ::: pf-proof
 
@@ -103,9 +103,9 @@ Indeed,
 \]
 Thus the natural map of point sets
 \[
-|\mathbb A^2_k|
+|\AA^2_k|
 \longrightarrow
-|\mathbb A^1_k|\times|\mathbb A^1_k|
+|\AA^1_k|\times|\AA^1_k|
 \]
 is not injective.  Hence the point set of the scheme product is not the set-theoretic product, regardless of algebraic closedness of $k$.
 

@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a doubly-periodic meromorphic function: $f(z + 1) = f(z) = f(z + i)$ for all $z \in \mathbf{C}$. Let $z_a$ be the zeroes of $f$ inside the unit square $0 < \operatorname{Re} z, \operatorname{Im} z < 1$, $w_b$ be its poles inside the square, and $k_a$ and $l_b$ be respective multiplicities. Assuming that $f$ has no zeroes or poles on the boundary of the square, prove that
+Let $f$ be a doubly-periodic meromorphic function: $f(z + 1) = f(z) = f(z + i)$ for all $z \in \CC$. Let $z_a$ be the zeroes of $f$ inside the unit square $0 < \operatorname{Re} z, \operatorname{Im} z < 1$, $w_b$ be its poles inside the square, and $k_a$ and $l_b$ be respective multiplicities. Assuming that $f$ has no zeroes or poles on the boundary of the square, prove that
 
 $$
 \sum_a k_a z_a - \sum_b l_b w_b \in \ZZ[i],

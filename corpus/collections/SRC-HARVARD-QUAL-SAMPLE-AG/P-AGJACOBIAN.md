@@ -130,7 +130,7 @@ By Abel's theorem, $p-q$ is principal.  If $p\ne q$, there would be a nonconstan
 \[
 \operatorname{div}(f)=p-q.
 \]
-Such an $f:X\to\mathbb P^1$ has exactly one simple pole, hence degree $1$.  A degree-one morphism between smooth projective curves is an isomorphism, so $X\cong\mathbb P^1$, contradicting $g\ge1$.  Therefore $p=q$.
+Such an $f:X\to\PP^1$ has exactly one simple pole, hence degree $1$.  A degree-one morphism between smooth projective curves is an isomorphism, so $X\cong\PP^1$, contradicting $g\ge1$.  Therefore $p=q$.
 :::
 
 :::
@@ -159,7 +159,7 @@ If $g\ge2$, then a degree-one divisor $p$ satisfies
 \[
 \ell(p)=1,
 \]
-for otherwise it would give a degree-one map $X\to\mathbb P^1$.  Riemann--Roch gives
+for otherwise it would give a degree-one map $X\to\PP^1$.  Riemann--Roch gives
 \[
 \ell(K-p)
 =\ell(p)+\deg(K-p)+1-g

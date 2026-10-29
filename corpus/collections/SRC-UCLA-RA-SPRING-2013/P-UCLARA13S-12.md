@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb H$ be the upper half-plane and let $f:\mathbb H\to\mathbb H$ be holomorphic.
+Let $\halfplane$ be the upper half-plane and let $f:\halfplane\to\halfplane$ be holomorphic.
 Assume
 \[
 \lim_{y\to\infty} y f(iy)=i,
 \qquad
 |f(z)|\le \frac{1}{\operatorname{Im}z}
-\quad(z\in\mathbb H).
+\quad(z\in\halfplane).
 \]
 For $\varepsilon>0$, define
 \[
@@ -49,14 +49,14 @@ u_\varepsilon(z)
 \coloneqq
 \operatorname{Im}f(z+i\varepsilon)
 \qquad
-(z\in\mathbb H).
+(z\in\halfplane).
 \]
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The function $u_\varepsilon$ is a positive bounded harmonic function on $\mathbb H$, extends continuously to $\RR$, and
+The function $u_\varepsilon$ is a positive bounded harmonic function on $\halfplane$, extends continuously to $\RR$, and
 \[
 u_\varepsilon(x)
 =
@@ -68,7 +68,7 @@ u_\varepsilon(x)
 
 ::: pf-proof
 
-Because $f$ is holomorphic and maps $\mathbb H$ into itself, its imaginary part is positive harmonic. Translation by $i\varepsilon$ preserves harmonicity, so $u_\varepsilon$ is positive harmonic.
+Because $f$ is holomorphic and maps $\halfplane$ into itself, its imaginary part is positive harmonic. Translation by $i\varepsilon$ preserves harmonicity, so $u_\varepsilon$ is positive harmonic.
 
 The hypothesis
 \[
@@ -95,7 +95,7 @@ Since $f$ is holomorphic on the larger half-plane $\operatorname{Im}w>0$, the tr
 
 ::: {.pf-step #s1-2}
 
-For $z=x+iy\in\mathbb H$,
+For $z=x+iy\in\halfplane$,
 \[
 u_\varepsilon(x+iy)
 =
@@ -140,7 +140,7 @@ g_\varepsilon\ge0
 
 ::: pf-proof
 
-Positivity follows from $f(\mathbb H)\subset\mathbb H$.
+Positivity follows from $f(\halfplane)\subset\halfplane$.
 
 Set $x=0$ in step [](#s1-2){.pf-ref} and multiply by $y$:
 \[
@@ -178,19 +178,19 @@ Since $y/Y\to1$, the left-hand side above tends to $1$. Hence the integral of $g
 
 ::: pf-step
 
-For $z\in\mathbb H$, define
+For $z\in\halfplane$, define
 \[
 F_\varepsilon(z)
 \coloneqq
 \int_{\RR}
 \frac{g_\varepsilon(t)}{t-z}\,dt.
 \]
-Then $F_\varepsilon$ is holomorphic on $\mathbb H$.
+Then $F_\varepsilon$ is holomorphic on $\halfplane$.
 
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, $g_\varepsilon\in L^1(\RR)$. If $z=x+iy\in\mathbb H$, then
+By step [](#s1-3){.pf-ref}, $g_\varepsilon\in L^1(\RR)$. If $z=x+iy\in\halfplane$, then
 \[
 |t-z|\ge y,
 \]
@@ -206,7 +206,7 @@ so
 =
 \frac1y.
 \]
-On compact subsets of $\mathbb H$, the same positive lower bound for $\operatorname{Im}z$ permits differentiation under the integral sign, proving holomorphy.
+On compact subsets of $\halfplane$, the same positive lower bound for $\operatorname{Im}z$ permits differentiation under the integral sign, proving holomorphy.
 
 :::
 
@@ -214,7 +214,7 @@ On compact subsets of $\mathbb H$, the same positive lower bound for $\operatorn
 
 ::: {.pf-step #s1-5}
 
-For every $z\in\mathbb H$,
+For every $z\in\halfplane$,
 \[
 \operatorname{Im}F_\varepsilon(z)
 =
@@ -257,7 +257,7 @@ D_\varepsilon(z)
 \coloneqq
 f(z+i\varepsilon)-F_\varepsilon(z)
 \]
-is a real constant on $\mathbb H$.
+is a real constant on $\halfplane$.
 
 
 ::: pf-proof
@@ -266,7 +266,7 @@ By step [](#s1-5){.pf-ref},
 \[
 \operatorname{Im}D_\varepsilon(z)=0
 \]
-throughout the connected domain $\mathbb H$. A holomorphic function with image contained in $\RR$ is constant, by the open mapping theorem.
+throughout the connected domain $\halfplane$. A holomorphic function with image contained in $\RR$ is constant, by the open mapping theorem.
 
 :::
 
@@ -313,7 +313,7 @@ Since $D_\varepsilon$ is constant by step [](#s1-6){.pf-ref}, that constant is $
 
 ::: {.pf-step #s1-8}
 
-For every $\varepsilon>0$ and $z\in\mathbb H$,
+For every $\varepsilon>0$ and $z\in\halfplane$,
 \[
 \boxed{
 f(z+i\varepsilon)
@@ -368,7 +368,7 @@ Banach--Alaoglu makes that ball weak-* compact. Since $C_0(\RR)$ is separable, t
 
 ::: {.pf-step #s1-10}
 
-For every $z\in\mathbb H$,
+For every $z\in\halfplane$,
 \[
 f(z)
 =
@@ -379,7 +379,7 @@ f(z)
 
 ::: pf-proof
 
-For fixed $z\in\mathbb H$, the function
+For fixed $z\in\halfplane$, the function
 \[
 t\longmapsto\frac1{t-z}
 \]

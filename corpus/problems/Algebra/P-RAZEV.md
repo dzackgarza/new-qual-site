@@ -49,10 +49,10 @@ $\QQ[C_2]\cong\QQ[x]/(x^2-1)\cong\QQ\times\QQ$ by the Chinese remainder theorem,
 :::
 
 ::: pf-step
-$\QQ[Q_8]\cong\boxed{\QQ^4\times\mathbb H_\QQ}$, where $\mathbb H_\QQ\coloneqq\QQ\langle i,j\mid i^2=j^2=-1,\ ij=-ji\rangle$ is the rational Hamilton quaternion division algebra.
+$\QQ[Q_8]\cong\boxed{\QQ^4\times\quaternions_\QQ}$, where $\quaternions_\QQ\coloneqq\QQ\langle i,j\mid i^2=j^2=-1,\ ij=-ji\rangle$ is the rational Hamilton quaternion division algebra.
 
 ::: pf-proof
-Let $z=-1\in Q_8$, a central element of order $2$, and $e_\pm\coloneqq(1\pm z)/2$, central orthogonal idempotents with $e_++e_-=1$. Then $\QQ[Q_8]\cong\QQ[Q_8]e_+\times\QQ[Q_8]e_-$. The first factor is $\QQ[Q_8/\langle z\rangle]\cong\QQ[C_2\times C_2]\cong\QQ^4$ by step [](#klein){.pf-ref}, so the second factor has dimension $8-4=4$. The homomorphism $\QQ[Q_8]\to\mathbb H_\QQ$ sending $i,j$ to $i,j$ is surjective and sends $z$ to $-1$, so it kills $e_+$ and maps $\QQ[Q_8]e_-$ onto the $4$-dimensional $\mathbb H_\QQ$; it is therefore an isomorphism on that factor. $\mathbb H_\QQ$ is a division algebra because $a+bi+cj+dk\ne0$ has inverse $(a-bi-cj-dk)/(a^2+b^2+c^2+d^2)$.
+Let $z=-1\in Q_8$, a central element of order $2$, and $e_\pm\coloneqq(1\pm z)/2$, central orthogonal idempotents with $e_++e_-=1$. Then $\QQ[Q_8]\cong\QQ[Q_8]e_+\times\QQ[Q_8]e_-$. The first factor is $\QQ[Q_8/\langle z\rangle]\cong\QQ[C_2\times C_2]\cong\QQ^4$ by step [](#klein){.pf-ref}, so the second factor has dimension $8-4=4$. The homomorphism $\QQ[Q_8]\to\quaternions_\QQ$ sending $i,j$ to $i,j$ is surjective and sends $z$ to $-1$, so it kills $e_+$ and maps $\QQ[Q_8]e_-$ onto the $4$-dimensional $\quaternions_\QQ$; it is therefore an isomorphism on that factor. $\quaternions_\QQ$ is a division algebra because $a+bi+cj+dk\ne0$ has inverse $(a-bi-cj-dk)/(a^2+b^2+c^2+d^2)$.
 :::
 
 :::

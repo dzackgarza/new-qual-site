@@ -24,7 +24,7 @@ Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where
 
 ```
 (1) Show that the function $u=u(x,y)$ given by
-    $$u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\quad \text{for}\ n\in {\mathbf N}$$
+    $$u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\quad \text{for}\ n\in {\NN}$$
     is the solution on $D=\{(x,y)\ | x^2+y^2<1\}$ of the Cauchy problem for
     the Laplace equation
     $$\frac{\partial ^2u}{\partial x^2}+\frac{\partial ^2u}{\partial y^2}=0,\quad

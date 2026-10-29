@@ -52,16 +52,16 @@ in $\operatorname{SL}_2(\ZZ)$.
    \theta:(\ZZ/2)*(\ZZ/3)=\langle a,b\mid a^2,b^3\rangle\to\operatorname{PSL}_2(\ZZ)
    \]
    by $\theta(a)=\pm S$ and $\theta(b)=\pm U$.
-   Using the Möbius action on the upper half-plane $\mathbb H$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
+   Using the Möbius action on the upper half-plane $\halfplane$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
    \[
-   D=\{z\in\mathbb H:0<\operatorname{Re}z<1/2,\ |z-1|>1\}.
+   D=\{z\in\halfplane:0<\operatorname{Re}z<1/2,\ |z-1|>1\}.
    \]
    Deduce that $\theta$ is an isomorphism.
 
 For the last part, the source suggests considering
 \[
-A=\{z\in\mathbb H:\operatorname{Re}z>0\},\qquad
-B=\{z\in\mathbb H:|z-1|>\max(1,|z|)\}.
+A=\{z\in\halfplane:\operatorname{Re}z>0\},\qquad
+B=\{z\in\halfplane:|z-1|>\max(1,|z|)\}.
 \]
 :::
 
@@ -258,10 +258,10 @@ u^3(z)=z.
 \]
 Let
 \[
-\mathcal A=\{z\in\mathbb H:\operatorname{Re}z>0\},
+\mathcal A=\{z\in\halfplane:\operatorname{Re}z>0\},
 \]
 \[
-\mathcal B=\{z\in\mathbb H:|z-1|>\max(1,|z|)\}.
+\mathcal B=\{z\in\halfplane:|z-1|>\max(1,|z|)\}.
 \]
 Since
 \[
@@ -301,9 +301,9 @@ Therefore
 \]
 so
 \[
-s(\mathbb H\setminus\mathcal B)
+s(\halfplane\setminus\mathcal B)
 \subseteq
-\mathbb H\setminus\mathcal A.
+\halfplane\setminus\mathcal A.
 \tag{1}
 \]
 
@@ -329,10 +329,10 @@ Since $\operatorname{Im}z>0$ and $\operatorname{Re}z\le0$, we have $|z-1|>1$, so
 \]
 Thus $u^2(z)\notin\mathcal B$. Consequently
 \[
-u(\mathbb H\setminus\mathcal A),\
-u^2(\mathbb H\setminus\mathcal A)
+u(\halfplane\setminus\mathcal A),\
+u^2(\halfplane\setminus\mathcal A)
 \subseteq
-\mathbb H\setminus\mathcal B.
+\halfplane\setminus\mathcal B.
 \tag{2}
 \]
 
@@ -359,7 +359,7 @@ hence $u(z)\notin\mathcal B$. Finally, because $|z-1|>1$,
 so $u^2(z)\notin\mathcal B$. Therefore
 \[
 u(D),\
-u^2(D)\subseteq\mathbb H\setminus\mathcal B.
+u^2(D)\subseteq\halfplane\setminus\mathcal B.
 \tag{4}
 \]
 
@@ -381,15 +381,15 @@ has a reduced form whose factors alternate between the nonidentity element $a$ o
 
 Read such a reduced word from right to left, which is the order in which its Möbius transformations act.
 
-If the rightmost factor is $a$, then by (3) it sends $D$ into $\mathbb H\setminus\mathcal A$. The next factor, necessarily $b$ or $b^2$, sends that set into $\mathbb H\setminus\mathcal B$ by (2). The next $a$ sends it back into $\mathbb H\setminus\mathcal A$ by (1), and so on.
+If the rightmost factor is $a$, then by (3) it sends $D$ into $\halfplane\setminus\mathcal A$. The next factor, necessarily $b$ or $b^2$, sends that set into $\halfplane\setminus\mathcal B$ by (2). The next $a$ sends it back into $\halfplane\setminus\mathcal A$ by (1), and so on.
 
-If the rightmost factor is $b$ or $b^2$, then by (4) it sends $D$ into $\mathbb H\setminus\mathcal B$. The next $a$ sends that set into $\mathbb H\setminus\mathcal A$ by (1), and the same alternation continues.
+If the rightmost factor is $b$ or $b^2$, then by (4) it sends $D$ into $\halfplane\setminus\mathcal B$. The next $a$ sends that set into $\halfplane\setminus\mathcal A$ by (1), and the same alternation continues.
 
 Thus the final image $\mu_w(D)$ lies entirely in either
 \[
-\mathbb H\setminus\mathcal A
+\halfplane\setminus\mathcal A
 \quad\text{or}\quad
-\mathbb H\setminus\mathcal B.
+\halfplane\setminus\mathcal B.
 \]
 Since
 \[

@@ -130,7 +130,7 @@ The quotient is
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} identifies $M$ with $\bigoplus_{i=1}^4\mathbb Zu_i$, and step [](#s1-3){.pf-ref} identifies $N$ with $\bigoplus_{i=1}^4d_i\mathbb Zu_i$. Taking the quotient coordinatewise gives $\bigoplus_i\ZZ/d_i\ZZ$. The first summand, for $d_1=1$, vanishes; the remaining ones have orders $2,4,4$. Their product has cardinality $32$, agreeing independently with $[M:N]=[\ZZ^4:N]/[\ZZ^4:M]=64/2$.
+Step [](#s1-2){.pf-ref} identifies $M$ with $\bigoplus_{i=1}^4\ZZ u_i$, and step [](#s1-3){.pf-ref} identifies $N$ with $\bigoplus_{i=1}^4d_i\ZZ u_i$. Taking the quotient coordinatewise gives $\bigoplus_i\ZZ/d_i\ZZ$. The first summand, for $d_1=1$, vanishes; the remaining ones have orders $2,4,4$. Their product has cardinality $32$, agreeing independently with $[M:N]=[\ZZ^4:N]/[\ZZ^4:M]=64/2$.
 
 :::
 

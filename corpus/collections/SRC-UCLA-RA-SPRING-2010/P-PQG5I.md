@@ -174,14 +174,14 @@ Equip the circle with normalized measure $d\theta/(2\pi)$.
 
 ::: {.pf-step #s5}
 
-The sequence $g_{x,N}$ converges in $L^2(\mathbb T)$ to a function $g_x$, and
+The sequence $g_{x,N}$ converges in $L^2(\circlegroup)$ to a function $g_x$, and
 \[
 \|g_x-g_y\|_{L^2}=\|x-y\|_{\ell^2}.
 \]
 
 ::: pf-proof
 
-The functions $e^{in\theta}$, $n\ge1$, are orthonormal in $L^2(\mathbb T,d\theta/(2\pi))$.
+The functions $e^{in\theta}$, $n\ge1$, are orthonormal in $L^2(\circlegroup,d\theta/(2\pi))$.
 Hence for $M>N$,
 \[
 \|g_{x,M}-g_{x,N}\|_{L^2}^2
@@ -189,7 +189,7 @@ Hence for $M>N$,
 \sum_{n=N+1}^M|x_n|^2.
 \]
 Since $x\in\ell^2$, the right-hand side tends to zero as $M,N\to\infty$.
-Thus $g_{x,N}$ is Cauchy in the complete space $L^2(\mathbb T)$ and has a limit $g_x$.
+Thus $g_{x,N}$ is Cauchy in the complete space $L^2(\circlegroup)$ and has a limit $g_x$.
 Applying the same orthogonality identity to the coefficient sequence $x-y$ and passing to the limit gives
 \[
 \|g_x-g_y\|_{L^2}^2
@@ -218,7 +218,7 @@ Because the circle has normalized measure $1$, Cauchy--Schwarz gives
 \[
 \|h\|_{L^1}\le\|h\|_{L^2}
 \]
-for every $h\in L^2(\mathbb T)$.
+for every $h\in L^2(\circlegroup)$.
 In particular $g_x\in L^1$, so $\Phi(x)$ is finite.
 Moreover, the reverse triangle inequality gives
 \[

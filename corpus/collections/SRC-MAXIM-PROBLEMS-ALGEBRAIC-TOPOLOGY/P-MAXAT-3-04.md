@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-If there exists a division algebra on $\RR ^ { n }$ , then $\RR \mathbb { P } ^ { n - 1 }$ is orientable, hence $n = 2 ^ { r }$ , for some r.
+If there exists a division algebra on $\RR ^ { n }$ , then $\RP ^ { n - 1 }$ is orientable, hence $n = 2 ^ { r }$ , for some r.
 :::
 
 ::: {.solution}

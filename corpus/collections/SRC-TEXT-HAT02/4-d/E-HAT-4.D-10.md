@@ -25,17 +25,17 @@ audit:
 ---
 
 ::: {.problem}
-Fill in the details of the following argument to show that every $n \times n$ matrix $A$ with entries in $\mathbb{H}$ has an eigenvalue in $\mathbb{H}$.
-For $t \in [0, 1]$ and $\lambda \in S^3 \subset \mathbb{H}$, consider the matrix $t\lambda I + (1-t)A$.
+Fill in the details of the following argument to show that every $n \times n$ matrix $A$ with entries in $\quaternions$ has an eigenvalue in $\quaternions$.
+For $t \in [0, 1]$ and $\lambda \in S^3 \subset \quaternions$, consider the matrix $t\lambda I + (1-t)A$.
 If $A$ has no eigenvalues, this is invertible for all $t$.
-Thus the map $S^3 \to GL_n(\mathbb{H})$, $\lambda \mapsto \lambda I$, is nullhomotopic.
-But by the preceding problem and Exercise 10(b) in §3.C, this map represents $n$ times a generator of $\pi_3 GL_n(\mathbb{H})$.
+Thus the map $S^3 \to GL_n(\quaternions)$, $\lambda \mapsto \lambda I$, is nullhomotopic.
+But by the preceding problem and Exercise 10(b) in §3.C, this map represents $n$ times a generator of $\pi_3 GL_n(\quaternions)$.
 :::
 
 ::: {.solution}
-Assume, for contradiction, that \(A\in M_n(\mathbb H)\) has no (left) eigenvalue. In particular \(A\) is invertible. For
+Assume, for contradiction, that \(A\in M_n(\quaternions)\) has no (left) eigenvalue. In particular \(A\) is invertible. For
 \[
-t\in[0,1],\qquad \lambda\in S^3\subset\mathbb H,
+t\in[0,1],\qquad \lambda\in S^3\subset\quaternions,
 \]
 set
 \[
@@ -47,7 +47,7 @@ Av=-\frac{t}{1-t}\lambda v,
 \]
 so \(-\frac{t}{1-t}\lambda\) would be an eigenvalue of \(A\), contrary to hypothesis. For \(t=1\), \(H(1,\lambda)=\lambda I\) is invertible. Thus
 \[
-H:[0,1]\times S^3\to GL_n(\mathbb H)
+H:[0,1]\times S^3\to GL_n(\quaternions)
 \]
 is a homotopy from the constant map \(\lambda\mapsto A\) to
 \[
@@ -55,16 +55,16 @@ is a homotopy from the constant map \(\lambda\mapsto A\) to
 \]
 Hence the latter map would be nullhomotopic.
 
-But \(GL_n(\mathbb H)\) deformation retracts onto \(Sp(n)\), and the preceding exercise homotopes \(\lambda I=\operatorname{diag}(\lambda,\ldots,\lambda)\) to
+But \(GL_n(\quaternions)\) deformation retracts onto \(Sp(n)\), and the preceding exercise homotopes \(\lambda I=\operatorname{diag}(\lambda,\ldots,\lambda)\) to
 \[
 \operatorname{diag}(\lambda^n,1,\ldots,1).
 \]
 By Exercise 10(b) of §3.C, the power map \(S^3\to S^3\), \(\lambda\mapsto\lambda^n\), represents \(n\) times a generator of \(\pi_3(S^3)\). The inclusion \(Sp(1)\hookrightarrow Sp(n)\) induces an isomorphism on \(\pi_3\), so \(\lambda\mapsto\lambda I\) represents
 \[
-n\ne0\in\pi_3(GL_n(\mathbb H))\cong\ZZ.
+n\ne0\in\pi_3(GL_n(\quaternions))\cong\ZZ.
 \]
 This contradicts nullhomotopy. Therefore every quaternionic matrix has an eigenvalue:
 \[
-\boxed{\exists\lambda\in\mathbb H,\ v\ne0\text{ with }Av=\lambda v.}
+\boxed{\exists\lambda\in\quaternions,\ v\ne0\text{ with }Av=\lambda v.}
 \]
 :::

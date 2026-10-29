@@ -28,7 +28,7 @@ N:=A-\lambda I.
 \]
 Since $gm(\lambda)=1$,
 \[
-\ker N=\mathbb Cx.
+\ker N=\CC x.
 \]
 
 ::: pf
@@ -57,7 +57,7 @@ Thus $W$ is $A$-invariant.
 ::: {.pf-step #x-intersect-w-trivial}
 One has
 \[
-\mathbb Cx\cap W=\{0\}.
+\CC x\cap W=\{0\}.
 \]
 
 ::: pf-proof
@@ -86,7 +86,7 @@ With respect to the basis $(x,z)$ of $U$, the restriction $A|_U$ has matrix
 \end{pmatrix}.
 \]
 Hence the characteristic polynomial of $A|_U$ is $(t-\lambda)^2$. Extending $(x,z)$ to a basis adapted to the invariant subspace $U$ makes the matrix of $A$ block upper triangular, so $(t-\lambda)^2$ divides the characteristic polynomial of $A$. This contradicts $am(\lambda)=1$.
-Therefore $\mathbb Cx\cap W=0$.
+Therefore $\CC x\cap W=0$.
 :::
 
 :::
@@ -94,7 +94,7 @@ Therefore $\mathbb Cx\cap W=0$.
 ::: {.pf-step #p-is-nonsingular}
 Therefore
 \[
-\CC^n=\mathbb Cx\oplus W.
+\CC^n=\CC x\oplus W.
 \]
 Choose a basis $x_2,\ldots,x_n$ of $W$ and set
 \[
@@ -107,7 +107,7 @@ Then $P$ is nonsingular.
 ::: pf-proof
 By steps [](#w-is-invariant-complement-candidate){.pf-ref} and [](#x-intersect-w-trivial){.pf-ref},
 \[
-\dim(\mathbb Cx+W)=1+(n-1)=n,
+\dim(\CC x+W)=1+(n-1)=n,
 \]
 so the sum is direct and equals all of $\CC^n$. Hence the columns of $P$ form a basis, so $P$ is invertible.
 :::
@@ -126,9 +126,9 @@ P^{-1}AP=
 for some $(n-1)\times(n-1)$ matrix $M$.
 
 ::: pf-proof
-The line $\mathbb Cx$ is $A$-invariant and $Ax=\lambda x$. By step [](#w-is-invariant-complement-candidate){.pf-ref}, the complementary subspace $W$ is also $A$-invariant. Therefore the matrix of $A$ with respect to the direct-sum basis
+The line $\CC x$ is $A$-invariant and $Ax=\lambda x$. By step [](#w-is-invariant-complement-candidate){.pf-ref}, the complementary subspace $W$ is also $A$-invariant. Therefore the matrix of $A$ with respect to the direct-sum basis
 \[
-\CC^n=\mathbb Cx\oplus W
+\CC^n=\CC x\oplus W
 \]
 has no off-diagonal blocks. Its first block is $[\lambda]$, and the second block is the matrix $M$ of $A|_W$ in the basis $x_2,\ldots,x_n$.
 :::

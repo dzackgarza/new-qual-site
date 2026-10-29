@@ -440,7 +440,7 @@ Steps [](#s12){.pf-ref} and [](#s13){.pf-ref} construct the two inverse operatio
 
 Assume
 \[
-X\cong\mathbb A^1_{\CC}.
+X\cong\AA^1_{\CC}.
 \]
 Then $X_0$ is affine by part (b), and its coordinate ring is the invariant ring of a conjugate-linear involution
 \[
@@ -539,7 +539,7 @@ The invariant ring is
 \]
 Consequently
 \[
-\boxed{X_0\cong\mathbb A^1_{\RR}.}
+\boxed{X_0\cong\AA^1_{\RR}.}
 \]
 
 ::: pf-proof
@@ -578,19 +578,19 @@ Step [](#s17){.pf-ref} is the required classification of the real form of the af
 
 Assume now
 \[
-X\cong\mathbb P^1_{\CC}.
+X\cong\PP^1_{\CC}.
 \]
 Then $X_0$ is a smooth proper geometrically integral curve of genus $0$ over $\RR$.
 
 ::: pf-proof
 
-After the faithfully flat base change $\RR\subseteq\CC$, the scheme $X_0$ becomes $\mathbb P^1_{\CC}$.
+After the faithfully flat base change $\RR\subseteq\CC$, the scheme $X_0$ becomes $\PP^1_{\CC}$.
 
 Smoothness, properness, and geometric integrality descend under faithfully flat field extension.  Thus $X_0$ is a smooth proper geometrically integral curve over $\RR$.
 
 Its geometric genus is the genus of its complexification, namely
 \[
-g(\mathbb P^1)=0.
+g(\PP^1)=0.
 \]
 
 :::
@@ -623,7 +623,7 @@ Conversely, a complex point fixed by $\sigma$ gives a morphism $p:\Spec\CC\to X$
 
 If $X_0(\RR)\ne\varnothing$, then
 \[
-\boxed{X_0\cong\mathbb P^1_{\RR}.}
+\boxed{X_0\cong\PP^1_{\RR}.}
 \]
 
 ::: pf-proof
@@ -636,7 +636,7 @@ For completeness, if $P\in X_0(\RR)$, Riemann--Roch gives
 \]
 The complete linear system $|P|$ therefore defines a nonconstant morphism
 \[
-X_0\longrightarrow\mathbb P^1_{\RR}
+X_0\longrightarrow\PP^1_{\RR}
 \]
 of degree $1$.  A degree-one finite morphism between smooth proper integral curves is an isomorphism.
 
@@ -652,7 +652,7 @@ If $X_0(\RR)=\varnothing$, then $X_0$ is isomorphic to a smooth plane conic with
 
 Every smooth proper geometrically integral genus-zero curve is a Severi--Brauer curve.  Equivalently, its anticanonical system has degree $2$ and dimension $2$, and embeds it as a smooth conic
 \[
-C\subseteq\mathbb P^2_{\RR}.
+C\subseteq\PP^2_{\RR}.
 \]
 
 The isomorphism preserves rational points, so the conic has no $\RR$-point.
@@ -688,12 +688,12 @@ Thus the conic is isomorphic to the displayed one.
 
 ::: {.pf-step #s24}
 
-Hence, when $X\cong\mathbb P^1_{\CC}$,
+Hence, when $X\cong\PP^1_{\CC}$,
 \[
 \boxed{
-X_0\cong\mathbb P^1_{\RR}
+X_0\cong\PP^1_{\RR}
 \quad\text{or}\quad
-X_0\cong V(x_0^2+x_1^2+x_2^2)\subseteq\mathbb P^2_{\RR}.
+X_0\cong V(x_0^2+x_1^2+x_2^2)\subseteq\PP^2_{\RR}.
 }
 \]
 

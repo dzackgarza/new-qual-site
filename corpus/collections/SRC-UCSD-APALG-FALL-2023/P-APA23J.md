@@ -135,7 +135,7 @@ The variety $V(I)$ is irreducible.
 ::: pf-proof
 The map
 \[
-\mathbb A^1_{\CC}\longrightarrow V(I),
+\AA^1_{\CC}\longrightarrow V(I),
 \qquad
 a\longmapsto(a,0,\ldots,0)
 \]

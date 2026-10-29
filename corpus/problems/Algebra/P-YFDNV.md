@@ -26,7 +26,7 @@ State Frobenius's Theorem classifying all finite-dimensional associative divisio
 :::
 
 ::: {.solution}
-Write $\HH$ for the quaternions and $\mathbb O$ for the octonions.
+Write $\HH$ for the quaternions and $\octonions$ for the octonions.
 The three results below are stated with their standard names; the question asks only for statements.
 
 ::: pf
@@ -41,7 +41,7 @@ This is Frobenius' theorem.
 :::
 
 ::: pf-step
-(Hurwitz, Zorn) A finite-dimensional real normed division algebra, equivalently a real composition algebra with positive-definite norm, is isomorphic to exactly one of $\boxed{\RR,\ \CC,\ \HH,\ \mathbb O}$, of dimensions $1,2,4,8$; the same four algebras are the finite-dimensional alternative division algebras over $\RR$.
+(Hurwitz, Zorn) A finite-dimensional real normed division algebra, equivalently a real composition algebra with positive-definite norm, is isomorphic to exactly one of $\boxed{\RR,\ \CC,\ \HH,\ \octonions}$, of dimensions $1,2,4,8$; the same four algebras are the finite-dimensional alternative division algebras over $\RR$.
 The octonions are alternative and not associative.
 
 ::: pf-proof

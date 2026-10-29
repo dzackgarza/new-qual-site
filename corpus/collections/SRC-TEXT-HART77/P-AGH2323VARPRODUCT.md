@@ -48,9 +48,9 @@ Then the classical product variety $V\times W$ is affine with coordinate ring
 \]
 
 ::: pf-proof
-This is the affine product construction from Hartshorne I, Exercises 3.15--3.16: embed $V\subseteq\mathbb A^m$ and $W\subseteq\mathbb A^n$.  Then
+This is the affine product construction from Hartshorne I, Exercises 3.15--3.16: embed $V\subseteq\AA^m$ and $W\subseteq\AA^n$.  Then
 \[
-V\times W\subseteq\mathbb A^{m+n}
+V\times W\subseteq\AA^{m+n}
 \]
 is cut out by the equations defining $V$ in the first set of variables and those defining $W$ in the second set.  Thus if
 \[

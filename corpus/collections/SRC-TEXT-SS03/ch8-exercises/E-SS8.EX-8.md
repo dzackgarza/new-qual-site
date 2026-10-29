@@ -38,7 +38,7 @@ Let $Q = \{z \in \CC : \Re z > 0, \Im z > 0\}$. Every $z \in Q$ has polar repres
 :::
 
 ::: pf-step
-Define $F(z) = z^2$. For $z \in Q$, $F(z) = r^2 e^{i 2\theta}$ with $2\theta \in (0, \pi)$, so $F$ maps $Q$ biholomorphically onto the upper half-plane $\mathbb{H} = \{w \in \CC : \Im w > 0\}$.
+Define $F(z) = z^2$. For $z \in Q$, $F(z) = r^2 e^{i 2\theta}$ with $2\theta \in (0, \pi)$, so $F$ maps $Q$ biholomorphically onto the upper half-plane $\halfplane = \{w \in \CC : \Im w > 0\}$.
 :::
 
 ::: pf-step
@@ -53,22 +53,22 @@ The boundary components of $Q$ map under $z \mapsto z^2$ as follows:
 :::
 
 ::: {.pf-step #s2}
-Construction of the harmonic profile on the upper half-plane $\mathbb{H}$:
+Construction of the harmonic profile on the upper half-plane $\halfplane$:
 
 ::: pf-proof
 
 ::: pf-step
-For $w \in \mathbb{H}$, let $\arg(w) = \operatorname{Im}(\log w) \in (0, \pi)$ and $\arg(w - 1) = \operatorname{Im}(\log(w - 1)) \in (0, \pi)$, where $\log$ denotes the principal branch of logarithm holomorphic on $\CC \setminus (-\infty, 0]$.
+For $w \in \halfplane$, let $\arg(w) = \operatorname{Im}(\log w) \in (0, \pi)$ and $\arg(w - 1) = \operatorname{Im}(\log(w - 1)) \in (0, \pi)$, where $\log$ denotes the principal branch of logarithm holomorphic on $\CC \setminus (-\infty, 0]$.
 :::
 
 ::: pf-step
-Both $\arg(w)$ and $\arg(w - 1)$ are real parts of holomorphic functions (namely $\operatorname{Re}(-i \log w)$), so they are harmonic on $\mathbb{H}$.
+Both $\arg(w)$ and $\arg(w - 1)$ are real parts of holomorphic functions (namely $\operatorname{Re}(-i \log w)$), so they are harmonic on $\halfplane$.
 :::
 
 ::: pf-step
-Define $v: \mathbb{H} \to \RR$ by
+Define $v: \halfplane \to \RR$ by
 $$v(w) = 1 - \frac{1}{\pi}\Big(\arg(w - 1) - \arg(w)\Big).$$
-As a linear combination of harmonic functions, $v$ is harmonic on $\mathbb{H}$.
+As a linear combination of harmonic functions, $v$ is harmonic on $\halfplane$.
 :::
 
 ::: pf-step
@@ -92,7 +92,7 @@ Define $u: Q \to \RR$ by $u(z) = v(F(z)) = v(z^2)$.
 :::
 
 ::: pf-step
-Since $F(z) = z^2$ is holomorphic on $Q$ and $v$ is harmonic on $\mathbb{H}$, the composition $u = v \circ F$ is harmonic on $Q$.
+Since $F(z) = z^2$ is holomorphic on $Q$ and $v$ is harmonic on $\halfplane$, the composition $u = v \circ F$ is harmonic on $Q$.
 :::
 
 ::: pf-step

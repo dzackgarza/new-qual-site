@@ -243,7 +243,7 @@ The sheaf first-isomorphism theorem gives the displayed quotient isomorphism.
 
 Let now
 \[
-X=\mathbb P^1_k,
+X=\PP^1_k,
 \qquad
 Y=\{P,Q\}
 \]
@@ -294,7 +294,7 @@ is not surjective.
 
 ::: pf-proof
 
-Every global regular function on the projective integral curve $\mathbb P^1_k$ is constant, so
+Every global regular function on the projective integral curve $\PP^1_k$ is constant, so
 \[
 \Gamma(X,\mathcal O_X)=k.
 \]
@@ -342,7 +342,7 @@ Step [](#s7){.pf-ref} shows that the last map need not be surjective, so $\Gamma
 
 ::: {.pf-step #s9}
 
-Continue with $X=\mathbb P^1_k$.
+Continue with $X=\PP^1_k$.
 Let
 \[
 K=k(X)
@@ -423,9 +423,9 @@ The support of any section of a sheaf is closed in $U$.
 We show more directly that it is finite.
 
 Every point of $U$ has a neighborhood on which the section is represented by a section of $\mathcal K$, hence by one rational function in $K$.
-Since $X=\mathbb P^1_k$ is noetherian, the open set $U$ is quasicompact, so finitely many such neighborhoods cover $U$.
+Since $X=\PP^1_k$ is noetherian, the open set $U$ is quasicompact, so finitely many such neighborhoods cover $U$.
 
-A rational function on the nonsingular projective curve $\mathbb P^1$ has only finitely many poles.
+A rational function on the nonsingular projective curve $\PP^1$ has only finitely many poles.
 On a neighborhood where the quotient section is represented by a rational function $f$, its germ is zero at every point where $f$ is regular.
 Thus the support on that neighborhood is contained in the finite pole set of $f$.
 
@@ -522,7 +522,7 @@ Take global sections of the isomorphism in step [](#s13){.pf-ref}. As noted in s
 
 ::: {.pf-step #s15}
 
-Every finite collection of principal parts on $\mathbb P^1$ is the collection of principal parts of a single rational function.
+Every finite collection of principal parts on $\PP^1$ is the collection of principal parts of a single rational function.
 
 ::: pf-proof
 
@@ -532,7 +532,7 @@ x
 \]
 on
 \[
-\mathbb A^1=\mathbb P^1\setminus\{\infty\}.
+\AA^1=\PP^1\setminus\{\infty\}.
 \]
 Let a finite tuple
 \[
@@ -657,7 +657,7 @@ Left exactness of global sections applied to
 gives exactness at the first two terms.
 Step [](#s16){.pf-ref} gives surjectivity of the final map.
 
-Equivalently, the kernel consists of rational functions with no pole anywhere on $\mathbb P^1$, hence the global regular functions, which are the constants $k$.
+Equivalently, the kernel consists of rational functions with no pole anywhere on $\PP^1$, hence the global regular functions, which are the constants $k$.
 
 :::
 

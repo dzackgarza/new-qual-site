@@ -151,13 +151,13 @@ The statement can fail if $X$ is not separated.
 
 Let
 \[
-U_1\cong\mathbb A^2_k,
+U_1\cong\AA^2_k,
 \qquad
-U_2\cong\mathbb A^2_k
+U_2\cong\AA^2_k
 \]
 be two copies of the affine plane, and glue them by the identity along
 \[
-W=\mathbb A^2_k\setminus\{(0,0)\}.
+W=\AA^2_k\setminus\{(0,0)\}.
 \]
 Hartshorne II.2.12 gives a scheme $X$ covered by the two affine opens $U_1,U_2$, with
 \[
@@ -183,13 +183,13 @@ If $W$ were affine, the canonical morphism
 W\longrightarrow
 \Spec\Gamma(W,\mathcal O_W)
 =
-\mathbb A^2_k
+\AA^2_k
 \]
 would be an isomorphism.  But this canonical morphism is the usual open immersion
 \[
-\mathbb A^2_k\setminus\{0\}
+\AA^2_k\setminus\{0\}
 \hookrightarrow
-\mathbb A^2_k,
+\AA^2_k,
 \]
 which misses the origin.  Hence $W$ is not affine.
 

@@ -93,7 +93,7 @@ Standard semicircular contour.
 :::
 
 ::: pf-step
-The only singularity of $f(z)$ in the upper half-plane $\mathbb{H}$ is at $z = i$, which is a pole of order 2.
+The only singularity of $f(z)$ in the upper half-plane $\halfplane$ is at $z = i$, which is a pole of order 2.
 
 ::: pf-proof
 The zeros of $(z^2+1)^2$ are $z = \pm i$.

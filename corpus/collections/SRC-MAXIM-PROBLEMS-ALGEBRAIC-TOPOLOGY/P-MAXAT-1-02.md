@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb { R P } ^ { 2 n } , \mathbb { C P } ^ { 2 n }$ , HP2n cannot be boundaries.
+Show that $\RP ^ { 2 n } , \CP ^ { 2 n }$ , HP2n cannot be boundaries.
 :::
 
 ::: {.solution}
@@ -101,13 +101,13 @@ All $2n+1$ cells from step [](#s1-3){.pf-ref} have even dimension, so each contr
 
 ::: {.pf-step #s1-5}
 
-Quaternionic projective space $\mathbb{HP}^{2n}$ has one cell in each real dimension
+Quaternionic projective space $\quatprojective^{2n}$ has one cell in each real dimension
 \[
 0,4,8,\ldots,8n,
 \]
 so
 \[
-\chi(\mathbb{HP}^{2n})=2n+1.
+\chi(\quatprojective^{2n})=2n+1.
 \]
 
 
@@ -150,7 +150,7 @@ If any one were such a boundary, its Euler characteristic would be even by the b
 Therefore
 \[
 \boxed{
-\RP^{2n},\ \CP^{2n},\ \mathbb{HP}^{2n}
+\RP^{2n},\ \CP^{2n},\ \quatprojective^{2n}
 \text{ are not boundaries}.}
 \]
 

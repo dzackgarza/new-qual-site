@@ -30,11 +30,11 @@ $$
 ::: {.solution}
 Put $\beta_j=1-\alpha_j$. Choose a Möbius map
 \[
-\phi:\mathbb H\longrightarrow\DD
+\phi:\halfplane\longrightarrow\DD
 \]
 whose inverse sends real points $x_j$ to the boundary points $B_j\in\partial\DD$ that correspond under $F$ to the polygon vertices $a_j$.
 
-Then $G=F\circ\phi$ maps $\mathbb H$ conformally onto $P$. By the Schwarz--Christoffel formula,
+Then $G=F\circ\phi$ maps $\halfplane$ conformally onto $P$. By the Schwarz--Christoffel formula,
 \[
 G'(w)=C\prod_{j=1}^n(w-x_j)^{-\beta_j}.
 \tag{1}

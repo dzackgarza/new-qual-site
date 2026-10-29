@@ -32,15 +32,15 @@ Prove that there exists a Galois extension of $\QQ$ whose Galois group is a cycl
 
 ::: {.pf-step #s1}
 
-Let $\zeta_5$ be a primitive fifth root of unity and set $K=\mathbf Q(\zeta_5)$.
+Let $\zeta_5$ be a primitive fifth root of unity and set $K=\QQ(\zeta_5)$.
 
 ::: pf-proof
 
-The field $K$ is the splitting field over $\mathbf Q$ of the fifth cyclotomic polynomial
+The field $K$ is the splitting field over $\QQ$ of the fifth cyclotomic polynomial
 \[
 \Phi_5(x)=x^4+x^3+x^2+x+1,
 \]
-so $K/\mathbf Q$ is Galois.
+so $K/\QQ$ is Galois.
 
 :::
 
@@ -48,9 +48,9 @@ so $K/\mathbf Q$ is Galois.
 
 ::: {.pf-step #s2}
 
-Every automorphism of $K/\mathbf Q$ is determined by
+Every automorphism of $K/\QQ$ is determined by
 \[
-\zeta_5\longmapsto\zeta_5^a,\qquad a\in(\mathbf Z/5\mathbf Z)^\times,
+\zeta_5\longmapsto\zeta_5^a,\qquad a\in(\ZZ/5\ZZ)^\times,
 \]
 and every such choice occurs.
 
@@ -58,7 +58,7 @@ and every such choice occurs.
 
 The conjugates of $\zeta_5$ are exactly the primitive fifth roots $\zeta_5^a$ with $a$ invertible modulo $5$. The usual cyclotomic Galois action therefore gives an isomorphism
 \[
-\operatorname{Gal}(K/\mathbf Q)\cong(\mathbf Z/5\mathbf Z)^\times.
+\operatorname{Gal}(K/\QQ)\cong(\ZZ/5\ZZ)^\times.
 \]
 
 :::
@@ -67,7 +67,7 @@ The conjugates of $\zeta_5$ are exactly the primitive fifth roots $\zeta_5^a$ wi
 
 ::: {.pf-step #s3}
 
-The group $(\mathbf Z/5\mathbf Z)^\times$ is cyclic of order $4$.
+The group $(\ZZ/5\ZZ)^\times$ is cyclic of order $4$.
 
 ::: pf-proof
 
@@ -79,7 +79,7 @@ Its four elements are $1,2,3,4$ modulo $5$, and $2$ has order $4$ because $2^2\e
 
 ::: pf-step
 
-Hence $K/\mathbf Q$ is a Galois extension with cyclic Galois group of order $4$.
+Hence $K/\QQ$ is a Galois extension with cyclic Galois group of order $4$.
 
 ::: pf-proof
 

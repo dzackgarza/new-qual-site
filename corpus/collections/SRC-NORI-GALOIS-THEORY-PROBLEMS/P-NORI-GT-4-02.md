@@ -72,7 +72,7 @@ is not injective.
 
 ::: pf-proof
 
-The same matrix $T$ may be viewed in $\mathbb M_n(K)$. Its determinant in $K$ is still $0$. Over a field, a square matrix is invertible if and only if its determinant is nonzero. Thus $T_K$ is singular and has a nonzero kernel vector.
+The same matrix $T$ may be viewed in $\Mat_n(K)$. Its determinant in $K$ is still $0$. Over a field, a square matrix is invertible if and only if its determinant is nonzero. Thus $T_K$ is singular and has a nonzero kernel vector.
 
 :::
 

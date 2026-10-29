@@ -15,7 +15,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
-  note: Checked against Problem 6 of the official UCSD Fall 2024 real-analysis qualifying exam, using the standard Fourier-series convention \hat f(k)=\int_{\mathbb T}f(x)e^{-2\pi i kx}\,dx.
+  note: Checked against Problem 6 of the official UCSD Fall 2024 real-analysis qualifying exam, using the standard Fourier-series convention \hat f(k)=\int_{\circlegroup}f(x)e^{-2\pi i kx}\,dx.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-08
@@ -28,7 +28,7 @@ audit:
 Show that for any $p > 1$, there is a constant $C_p < \infty$ such that
 \[
 \sum_{k=-\infty}^{\infty} |\hat{f}(k)| \le \|f\|_{L^1} + C_p \|f'\|_{L^p}
-\quad\text{for each } f \in C^1(\mathbb{T}).
+\quad\text{for each } f \in C^1(\circlegroup).
 \]
 :::
 
@@ -45,7 +45,7 @@ Separate the zero Fourier mode.
 For $k=0$,
 \[
 |\widehat f(0)|
-=\left|\int_{\mathbb T}f(x)\,dx\right|
+=\left|\int_{\circlegroup}f(x)\,dx\right|
 \le \|f\|_{L^1}.
 \]
 Thus it remains to control the sum over $k\ne0$.
@@ -60,7 +60,7 @@ Integrate by parts for the nonzero modes.
 
 ::: pf-proof
 
-Because $f\in C^1(\mathbb T)$ is periodic, integration by parts gives, for every $k\ne0$,
+Because $f\in C^1(\circlegroup)$ is periodic, integration by parts gives, for every $k\ne0$,
 \[
 \widehat{f'}(k)
 =2\pi i k\,\widehat f(k).
@@ -115,7 +115,7 @@ Treat the range $p\ge2$.
 
 ::: pf-proof
 
-Since $\mathbb T$ has finite measure,
+Since $\circlegroup$ has finite measure,
 \[
 \|f'\|_{L^2}\le \|f'\|_{L^p}.
 \]

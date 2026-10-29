@@ -58,17 +58,17 @@ Its determinant has the sign of
 \[
 (x_3-x_1)(x_3-x_2)(x_2-x_1).
 \]
-For $x_1<x_2<x_3$ this sign is positive, so $M_x$ maps $\mathbb H$ to itself.
+For $x_1<x_2<x_3$ this sign is positive, so $M_x$ maps $\halfplane$ to itself.
 
 Define $M_y$ analogously. Under each of the three stated cyclic orderings of $(y_1,y_2,y_3)$,
 \[
 (y_3-y_1)(y_3-y_2)(y_2-y_1)>0,
 \]
-so $M_y$ also belongs to $\operatorname{Aut}(\mathbb H)$. Hence
+so $M_y$ also belongs to $\operatorname{Aut}(\halfplane)$. Hence
 \[
 \Phi=M_y^{-1}\circ M_x
 \]
-is an automorphism of $\mathbb H$ satisfying $\Phi(x_j)=y_j$ for $j=1,2,3$.
+is an automorphism of $\halfplane$ satisfying $\Phi(x_j)=y_j$ for $j=1,2,3$.
 
 If $\Psi$ is another such automorphism, then $\Psi^{-1}\circ\Phi$ fixes $x_1,x_2,x_3$, so part (a) implies $\Psi^{-1}\circ\Phi=\mathrm{id}$. Therefore $\Phi$ is unique.
 :::

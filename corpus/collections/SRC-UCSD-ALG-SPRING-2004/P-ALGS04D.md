@@ -33,17 +33,17 @@ Use the Chinese Remainder Theorem to prove there exists a unique polynomial $f(X
 
 ::: {.pf-step #s1}
 
-For distinct \(i,j\in\{0,\dots,m\}\), the ideals \((X-i)\) and \((X-j)\) of \(\mathbf Q[X]\) are comaximal.
+For distinct \(i,j\in\{0,\dots,m\}\), the ideals \((X-i)\) and \((X-j)\) of \(\QQ[X]\) are comaximal.
 
 ::: pf-proof
 
-Because \(i-j\in\mathbf Q^\times\),
+Because \(i-j\in\QQ^\times\),
 \[
 1=\frac{1}{j-i}(X-i)-\frac{1}{j-i}(X-j).
 \]
 Thus
 \[
-(X-i)+(X-j)=\mathbf Q[X].
+(X-i)+(X-j)=\QQ[X].
 \]
 
 :::
@@ -54,11 +54,11 @@ Thus
 
 By the Chinese Remainder Theorem,
 \[
-\mathbf Q[X]\Big/\Big(\prod_{i=0}^m(X-i)\Big)
+\QQ[X]\Big/\Big(\prod_{i=0}^m(X-i)\Big)
 \cong
-\prod_{i=0}^m \mathbf Q[X]/(X-i)
+\prod_{i=0}^m \QQ[X]/(X-i)
 \cong
-\mathbf Q^{m+1}.
+\QQ^{m+1}.
 \]
 
 ::: pf-proof
@@ -66,7 +66,7 @@ By the Chinese Remainder Theorem,
 The ideals \((X-i)\) are pairwise comaximal by step [](#s1){.pf-ref}, so their intersection equals their product and the CRT applies.
 Evaluation at \(i\) identifies
 \[
-\mathbf Q[X]/(X-i)\cong\mathbf Q.
+\QQ[X]/(X-i)\cong\QQ.
 \]
 
 :::
@@ -75,7 +75,7 @@ Evaluation at \(i\) identifies
 
 ::: pf-step
 
-There exists a polynomial \(F(X)\in\mathbf Q[X]\) such that
+There exists a polynomial \(F(X)\in\QQ[X]\) such that
 \[
 F(i)=n_i
 \qquad(0\le i\le m).
@@ -85,7 +85,7 @@ F(i)=n_i
 
 Under the isomorphism in step [](#s2){.pf-ref}, the tuple
 \[
-(n_0,\dots,n_m)\in\mathbf Q^{m+1}
+(n_0,\dots,n_m)\in\QQ^{m+1}
 \]
 has a preimage in the quotient.
 Choose any polynomial representative \(F\) of that residue class.
@@ -126,7 +126,7 @@ Such a polynomial \(f\) is unique among polynomials of degree at most \(m\).
 
 ::: pf-proof
 
-Suppose \(f,g\in\mathbf Q[X]\) both have degree at most \(m\) and satisfy
+Suppose \(f,g\in\QQ[X]\) both have degree at most \(m\) and satisfy
 \[
 f(i)=g(i)=n_i
 \qquad(0\le i\le m).

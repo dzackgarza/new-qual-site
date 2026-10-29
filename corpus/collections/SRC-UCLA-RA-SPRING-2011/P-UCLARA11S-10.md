@@ -80,7 +80,7 @@ S(w)=w^2
 \]
 maps $Q$ biholomorphically onto the upper half-plane
 \[
-\mathbb H
+\halfplane
 \coloneqq
 \{\zeta:\operatorname{Im}\zeta>0\}.
 \]
@@ -88,9 +88,9 @@ maps $Q$ biholomorphically onto the upper half-plane
 
 ::: pf-proof
 
-Every $w\in Q$ has argument in $(0,\pi/2)$, so $w^2$ has argument in $(0,\pi)$ and therefore lies in $\mathbb H$.
+Every $w\in Q$ has argument in $(0,\pi/2)$, so $w^2$ has argument in $(0,\pi)$ and therefore lies in $\halfplane$.
 
-Conversely, every $\zeta\in\mathbb H$ has a unique square root with argument in $(0,\pi/2)$, so $S:Q\to\mathbb H$ is bijective. Its derivative
+Conversely, every $\zeta\in\halfplane$ has a unique square root with argument in $(0,\pi/2)$, so $S:Q\to\halfplane$ is bijective. Its derivative
 \[
 S'(w)=2w
 \]
@@ -112,7 +112,7 @@ Therefore
 \]
 is a biholomorphism
 \[
-\Phi:\Omega\to\mathbb H.
+\Phi:\Omega\to\halfplane.
 \]
 
 
@@ -230,7 +230,7 @@ Therefore
 
 Let
 \[
-G:\mathbb H\to\DD
+G:\halfplane\to\DD
 \]
 be holomorphic. Then
 \[
@@ -323,7 +323,7 @@ Define
 \[
 G
 \coloneqq
-f\circ\Phi^{-1}:\mathbb H\to\DD.
+f\circ\Phi^{-1}:\halfplane\to\DD.
 \]
 Then
 \[

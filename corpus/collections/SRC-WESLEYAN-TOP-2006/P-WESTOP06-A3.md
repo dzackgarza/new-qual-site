@@ -135,19 +135,19 @@ For the property “normal,” products preserve the property exactly when \(\ka
 
 ::: pf-proof
 
-For \(\kappa=0\), the product is a one-point space, and for \(\kappa=1\) it is just the single normal factor. For \(\kappa\ge2\), let \(\mathbb S\) be the Sorgenfrey line. It is normal: its basic intervals \([a,b)\) are clopen, so it is regular, it is Lindelöf, and every regular Lindelöf space is normal.
+For \(\kappa=0\), the product is a one-point space, and for \(\kappa=1\) it is just the single normal factor. For \(\kappa\ge2\), let \(\sorgenfrey\) be the Sorgenfrey line. It is normal: its basic intervals \([a,b)\) are clopen, so it is regular, it is Lindelöf, and every regular Lindelöf space is normal.
 
-The Sorgenfrey plane \(\mathbb S^2\) is not normal. The countable set \(\QQ^2\) is dense in \(\mathbb S^2\), while
+The Sorgenfrey plane \(\sorgenfrey^2\) is not normal. The countable set \(\QQ^2\) is dense in \(\sorgenfrey^2\), while
 \[
 D=\{(x,-x):x\in\RR\}
 \]
 is a closed discrete subspace of cardinality \(2^{\aleph_0}\). Indeed, a sufficiently small basic rectangle about \((x,-x)\) meets \(D\) only there, and if \((u,v)\notin D\), then a sufficiently small basic rectangle about \((u,v)\) has all coordinate sums of the same nonzero sign as \(u+v\), so it misses \(D\).
 
-If \(\mathbb S^2\) were normal, then for every subset \(E\subseteq D\), Urysohn's lemma would give a continuous \(f_E:\mathbb S^2\to[0,1]\) with \(f_E=0\) on \(E\) and \(f_E=1\) on \(D\setminus E\). Distinct subsets give distinct functions. But a continuous real-valued function is determined by its values on the dense countable set \(\QQ^2\), so there are at most
+If \(\sorgenfrey^2\) were normal, then for every subset \(E\subseteq D\), Urysohn's lemma would give a continuous \(f_E:\sorgenfrey^2\to[0,1]\) with \(f_E=0\) on \(E\) and \(f_E=1\) on \(D\setminus E\). Distinct subsets give distinct functions. But a continuous real-valued function is determined by its values on the dense countable set \(\QQ^2\), so there are at most
 \[
 |\RR|^{\aleph_0}=2^{\aleph_0}
 \]
-such functions, whereas \(D\) has \(2^{2^{\aleph_0}}\) subsets. This contradicts Cantor's theorem. Hence \(\mathbb S^2\) is not normal. Taking two factors equal to \(\mathbb S\) and every remaining factor to be a singleton gives a product homeomorphic to \(\mathbb S^2\), so normality is not always preserved.
+such functions, whereas \(D\) has \(2^{2^{\aleph_0}}\) subsets. This contradicts Cantor's theorem. Hence \(\sorgenfrey^2\) is not normal. Taking two factors equal to \(\sorgenfrey\) and every remaining factor to be a singleton gives a product homeomorphic to \(\sorgenfrey^2\), so normality is not always preserved.
 
 For sums, let \(E,F\) be disjoint closed subsets of \(\sum_{a\in A}X_a\). Then \(E\cap X_a\) and \(F\cap X_a\) are disjoint closed subsets of the normal space \(X_a\), so there are disjoint open sets \(U_a,V_a\subseteq X_a\) containing them. The unions \(\bigcup_aU_a\) and \(\bigcup_aV_a\) are disjoint open subsets of the topological sum containing \(E\) and \(F\), respectively. Hence arbitrary sums of normal spaces are normal.
 

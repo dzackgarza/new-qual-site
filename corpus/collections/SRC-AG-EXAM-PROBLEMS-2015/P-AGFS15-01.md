@@ -22,7 +22,7 @@ audit:
   note: Verified the determinantal equations, irreducibility via the Segre cone, and the dimension by an explicit dense affine chart.
 ---
 ::: {.problem}
-Let $X$ be the set of all $2\times3$ matrices over an algebraically closed field $k$ having rank at most one, viewed as a subset of $\operatorname{Mat}_{2,3}(k)=\mathbb A^6$.
+Let $X$ be the set of all $2\times3$ matrices over an algebraically closed field $k$ having rank at most one, viewed as a subset of $\operatorname{Mat}_{2,3}(k)=\AA^6$.
 Show that $X$ is an affine variety.
 Is it irreducible?
 What is its dimension?
@@ -59,7 +59,7 @@ x_1y_3-x_3y_1,
 \qquad
 x_2y_3-x_3y_2.
 \]
-Thus the displayed zero set is exactly \(X\), so \(X\subseteq\mathbb A^6\) is Zariski closed.
+Thus the displayed zero set is exactly \(X\), so \(X\subseteq\AA^6\) is Zariski closed.
 
 :::
 
@@ -73,14 +73,14 @@ Thus the displayed zero set is exactly \(X\), so \(X\subseteq\mathbb A^6\) is Za
 
 Consider
 \[
-\phi:\mathbb A^2\times\mathbb A^3\longrightarrow\mathbb A^6,
+\phi:\AA^2\times\AA^3\longrightarrow\AA^6,
 \qquad
 (u,v)\longmapsto uv^T.
 \]
 Every matrix \(uv^T\) has rank at most one, so \(\operatorname{im}\phi\subseteq X\).
 Conversely, every nonzero matrix of rank one can be written as \(uv^T\): choose any nonzero column \(u\); every other column is a scalar multiple of \(u\), and the three scalars form \(v\). The zero matrix is \(\phi(0,v)\). Hence \(\phi\) is surjective onto \(X\).
 
-The variety \(\mathbb A^2\times\mathbb A^3\cong\mathbb A^5\) is irreducible, and the image of an irreducible topological space under a continuous map is irreducible. Since polynomial maps are Zariski continuous, \(X=\phi(\mathbb A^5)\) is irreducible.
+The variety \(\AA^2\times\AA^3\cong\AA^5\) is irreducible, and the image of an irreducible topological space under a continuous map is irreducible. Since polynomial maps are Zariski continuous, \(X=\phi(\AA^5)\) is irreducible.
 
 Equivalently, \(X\) is the affine cone over the Segre embedding
 \[
@@ -110,7 +110,7 @@ y_3=\frac{x_3y_1}{x_1},
 and then the third minor vanishes automatically. Therefore
 \[
 U\cong \operatorname{Spec}k[x_1^{\pm1},x_2,x_3,y_1]
-\cong\mathbb G_m\times\mathbb A^3,
+\cong\Gm\times\AA^3,
 \]
 so \(\dim U=4\).
 

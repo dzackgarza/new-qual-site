@@ -37,7 +37,7 @@ A fair coin is flipped $100$ times. Approximately what is the probability of get
 
 For $X\sim\operatorname{Binomial}(100,1/2)$ the exact probability is
 $$
-\mathbb P(40\le X\le50)
+\Prob(40\le X\le50)
 =2^{-100}\sum_{k=40}^{50}\binom{100}{k}
 =\frac{661960194919833116818686458436}{1267650600228229401496703205376}.
 $$

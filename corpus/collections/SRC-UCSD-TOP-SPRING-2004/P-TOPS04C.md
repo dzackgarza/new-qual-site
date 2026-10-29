@@ -14,10 +14,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathbb{K} = \RR$, $\CC$, or $\mathbb{H}$.
+Let $\bK = \RR$, $\CC$, or $\quaternions$.
 Show that for $n \geq 1$ the Hopf fibrations
 $$
-p : \mathbb{K}^{n+1} \setminus \{0\} \to \mathbb{K}P^n
+p : \bK^{n+1} \setminus \{0\} \to \bK P^n
 $$
 do not admit a section $s$ (i.e. there is no continuous $s$ satisfying $p \circ s = \operatorname{id}$).
 :::
@@ -28,7 +28,7 @@ do not admit a section $s$ (i.e. there is no continuous $s$ satisfying $p \circ 
 
 ::: {.pf-step #s1}
 
-A section would make $p_*:H_*(\mathbb K^{n+1}-\{0\})\to H_*(\mathbb KP^n)$ split surjective.
+A section would make $p_*:H_*(\bK^{n+1}-\{0\})\to H_*(\bK P^n)$ split surjective.
 
 ::: pf-proof
 
@@ -40,11 +40,11 @@ If $p\circ s=\operatorname{id}$, then $p_*\circ s_*=\operatorname{id}$ on homolo
 
 ::: {.pf-step #s2}
 
-For $\mathbb K=\CC$, no section exists.
+For $\bK=\CC$, no section exists.
 
 ::: pf-proof
 
-The total space deformation-retracts onto $S^{2n+1}$, whose $H_2$ vanishes for $n\ge1$. But $H_2(\mathbb CP^n;\ZZ)\cong\ZZ$. This contradicts the split surjectivity from step [](#s1){.pf-ref}.
+The total space deformation-retracts onto $S^{2n+1}$, whose $H_2$ vanishes for $n\ge1$. But $H_2(\CP^n;\ZZ)\cong\ZZ$. This contradicts the split surjectivity from step [](#s1){.pf-ref}.
 
 :::
 
@@ -52,11 +52,11 @@ The total space deformation-retracts onto $S^{2n+1}$, whose $H_2$ vanishes for $
 
 ::: {.pf-step #s3}
 
-For $\mathbb K=\mathbb H$, no section exists.
+For $\bK=\quaternions$, no section exists.
 
 ::: pf-proof
 
-The total space deformation-retracts onto $S^{4n+3}$, whose $H_4$ vanishes, whereas $H_4(\mathbb HP^n;\ZZ)\cong\ZZ$ for $n\ge1$.
+The total space deformation-retracts onto $S^{4n+3}$, whose $H_4$ vanishes, whereas $H_4(\quaternions P^n;\ZZ)\cong\ZZ$ for $n\ge1$.
 
 :::
 
@@ -64,11 +64,11 @@ The total space deformation-retracts onto $S^{4n+3}$, whose $H_4$ vanishes, wher
 
 ::: {.pf-step #s4}
 
-For $\mathbb K=\RR$ and $n\ge2$, no section exists.
+For $\bK=\RR$ and $n\ge2$, no section exists.
 
 ::: pf-proof
 
-The total space deformation-retracts onto $S^n$, so $H_1(-;\FF_2)=0$. But $H_1(\mathbb RP^n;\FF_2)\cong\FF_2$, contradicting step [](#s1){.pf-ref}.
+The total space deformation-retracts onto $S^n$, so $H_1(-;\FF_2)=0$. But $H_1(\RP^n;\FF_2)\cong\FF_2$, contradicting step [](#s1){.pf-ref}.
 
 :::
 
@@ -76,11 +76,11 @@ The total space deformation-retracts onto $S^n$, so $H_1(-;\FF_2)=0$. But $H_1(\
 
 ::: {.pf-step #s5}
 
-For $\mathbb K=\RR$ and $n=1$, no section exists either.
+For $\bK=\RR$ and $n=1$, no section exists either.
 
 ::: pf-proof
 
-After radial deformation retraction the map is the double covering $S^1\to\mathbb RP^1\cong S^1$, whose induced map on $H_1(-;\ZZ)$ is multiplication by $2$. Such a map cannot have a right inverse as a homomorphism $\ZZ\to\ZZ$.
+After radial deformation retraction the map is the double covering $S^1\to\RP^1\cong S^1$, whose induced map on $H_1(-;\ZZ)$ is multiplication by $2$. Such a map cannot have a right inverse as a homomorphism $\ZZ\to\ZZ$.
 
 :::
 

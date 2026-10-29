@@ -107,7 +107,7 @@ Zeros of $(z^2+1)(z^2+4)$.
 
 ::: pf-step
 
-The poles enclosed inside $\Gamma_R$ in the upper half-plane $\mathbb{H}$ are $z_1 = i$ and $z_2 = 2i$.
+The poles enclosed inside $\Gamma_R$ in the upper half-plane $\halfplane$ are $z_1 = i$ and $z_2 = 2i$.
 
 ::: pf-proof
 

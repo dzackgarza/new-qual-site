@@ -37,7 +37,7 @@ Since $A$ is not scalar, there is a vector $v\in\CC^2$ such that $v$ and $Av$ ar
 
 ::: pf-proof
 
-Suppose instead that $Av\in\mathbb Cv$ for every nonzero $v$. Choose a basis $e_1,e_2$. Then
+Suppose instead that $Av\in\CC v$ for every nonzero $v$. Choose a basis $e_1,e_2$. Then
 \[
 Ae_1=\lambda e_1,
 \qquad

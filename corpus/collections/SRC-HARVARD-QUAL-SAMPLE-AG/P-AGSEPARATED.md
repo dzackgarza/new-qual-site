@@ -145,7 +145,7 @@ A=k[x,\varepsilon]/(\varepsilon^2,x\varepsilon),
 \qquad
 Z=\operatorname{Spec}A,
 \qquad
-X=\mathbb A^1_k=\operatorname{Spec}k[t].
+X=\AA^1_k=\operatorname{Spec}k[t].
 \]
 The scheme $Z$ is nonreduced because $\varepsilon\ne0$ but $\varepsilon^2=0$.
 
@@ -175,11 +175,11 @@ g|_{D(x)}=h|_{D(x)}.
 \]
 The open $D(x)$ is dense because the underlying topological space of $Z$ is the same as that of
 \[
-\operatorname{Spec}(A/(\varepsilon))\cong\mathbb A^1_k,
+\operatorname{Spec}(A/(\varepsilon))\cong\AA^1_k,
 \]
 and $D(x)$ is the complement of the single closed point $x=0$ there.
 
-Hence two maps to the separated scheme $\mathbb A^1$ can agree on a dense open and still differ when the source is nonreduced.
+Hence two maps to the separated scheme $\AA^1$ can agree on a dense open and still differ when the source is nonreduced.
 :::
 
 :::
@@ -190,13 +190,13 @@ Separatedness of $f$ is also necessary, even when $Z$ is reduced.
 ::: pf-proof
 Let $X$ be the affine line with doubled origin, obtained by gluing
 \[
-U_1\cong\mathbb A^1_k,
+U_1\cong\AA^1_k,
 \qquad
-U_2\cong\mathbb A^1_k
+U_2\cong\AA^1_k
 \]
 along their common open
 \[
-\mathbb G_m=D(t)
+\Gm=D(t)
 \]
 by the identity.  Then
 \[
@@ -206,7 +206,7 @@ is not separated.
 
 Take the reduced scheme
 \[
-Z=\mathbb A^1_k
+Z=\AA^1_k
 \]
 and let
 \[
@@ -214,7 +214,7 @@ g:Z\xrightarrow{\sim}U_1\hookrightarrow X,
 \qquad
 h:Z\xrightarrow{\sim}U_2\hookrightarrow X
 \]
-be the two chart inclusions.  They agree on the dense open $\mathbb G_m$, because that is the locus on which the two copies are identified, but
+be the two chart inclusions.  They agree on the dense open $\Gm$, because that is the locus on which the two copies are identified, but
 \[
 g(0)\ne h(0)
 \]

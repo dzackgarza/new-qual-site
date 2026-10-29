@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb { C P } ^ { 2 n }$ is not an oriented boundary.
+Show that $\CP ^ { 2 n }$ is not an oriented boundary.
 (Hint: use the Pontrjagin number)
 :::
 

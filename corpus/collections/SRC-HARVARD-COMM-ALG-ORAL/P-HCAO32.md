@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be the twisted cubic in $\mathbb A^3$.
+Let $X$ be the twisted cubic in $\AA^3$.
 
 a. Find $I(X)$ and show that two generators suffice.
 
@@ -30,7 +30,7 @@ c. Show that
 \[
 \langle x^2-yw,\ xz-y^2,\ xy-zw\rangle
 \]
-generates the ideal of the closure $\overline X$ in $\mathbb P^3$.
+generates the ideal of the closure $\overline X$ in $\PP^3$.
 
 d. Compute the Hilbert polynomial of $X$.
 :::

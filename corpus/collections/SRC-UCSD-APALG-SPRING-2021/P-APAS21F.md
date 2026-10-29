@@ -36,7 +36,7 @@ We claim that $V$ is nevertheless indecomposable. If
 \[
 V=V_1\oplus V_2
 \]
-were a decomposition into two nonzero submodules, then, because $\dim V=2$, both $V_1$ and $V_2$ would be invariant lines. But a line $\mathbb Cv$ is invariant under every $\rho(t)$ if and only if it is invariant under
+were a decomposition into two nonzero submodules, then, because $\dim V=2$, both $V_1$ and $V_2$ would be invariant lines. But a line $\CC v$ is invariant under every $\rho(t)$ if and only if it is invariant under
 \[
 N=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \]

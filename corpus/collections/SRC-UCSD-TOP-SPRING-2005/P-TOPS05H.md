@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show there is no map $f : \mathbb{HP}^n \to \CP^{2n}$ such that the induced map $H_{4n}(f) : H_{4n}(\mathbb{HP}^n; \ZZ) \to H_{4n}(\CP^{2n}; \ZZ)$ maps the generator $\zeta_{\mathbb{HP}^n}$ to $k\zeta_{\CP^{2n}}$ for $k \neq 0$.
+Show there is no map $f : \quatprojective^n \to \CP^{2n}$ such that the induced map $H_{4n}(f) : H_{4n}(\quatprojective^n; \ZZ) \to H_{4n}(\CP^{2n}; \ZZ)$ maps the generator $\zeta_{\quatprojective^n}$ to $k\zeta_{\CP^{2n}}$ for $k \neq 0$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ H^*(\CP^{2n};\ZZ)=\ZZ[x]/(x^{2n+1}),\quad |x|=2,
 $$
 and
 $$
-H^*(\mathbb{HP}^{n};\ZZ)=\ZZ[u]/(u^{n+1}),\quad |u|=4.
+H^*(\quatprojective^{n};\ZZ)=\ZZ[u]/(u^{n+1}),\quad |u|=4.
 $$
 
 ::: pf-proof
@@ -43,14 +43,14 @@ These are the standard integral cohomology rings of complex and quaternionic pro
 
 ::: pf-step
 
-Since $H^2(\mathbb{HP}^n;\ZZ)=0$, every map $f:\mathbb{HP}^n\to\CP^{2n}$ satisfies
+Since $H^2(\quatprojective^n;\ZZ)=0$, every map $f:\quatprojective^n\to\CP^{2n}$ satisfies
 $$
 f^*x=0.
 $$
 
 ::: pf-proof
 
-The target of $f^*:H^2(\CP^{2n})\to H^2(\mathbb{HP}^n)$ is zero.
+The target of $f^*:H^2(\CP^{2n})\to H^2(\quatprojective^n)$ is zero.
 
 :::
 
@@ -77,10 +77,10 @@ If $f_*$ sent the top homology generator to $k$ times the top generator with $k\
 
 ::: pf-proof
 
-For top cohomology generators $\eta_{\CP}$ and $\eta_{\mathbb{HP}}$ dual to the fundamental classes,
+For top cohomology generators $\eta_{\CP}$ and $\eta_{\quatprojective}$ dual to the fundamental classes,
 $$
-\langle f^*\eta_{\CP},[\mathbb{HP}^n]\rangle
-=\langle \eta_{\CP},f_*[\mathbb{HP}^n]\rangle=k.
+\langle f^*\eta_{\CP},[\quatprojective^n]\rangle
+=\langle \eta_{\CP},f_*[\quatprojective^n]\rangle=k.
 $$
 
 :::

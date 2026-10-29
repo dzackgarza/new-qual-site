@@ -192,7 +192,7 @@ E(w)=e^{2\pi w}
 $$
 maps $S$ into the upper half-plane
 $$
-\mathbb H
+\halfplane
 =
 \{\zeta:\operatorname{Im}\zeta>0\}.
 $$
@@ -231,7 +231,7 @@ $$
 
 ::: {.pf-step #s1-5}
 
-The map $E:S\to\mathbb H$ is injective.
+The map $E:S\to\halfplane$ is injective.
 
 
 ::: pf-proof
@@ -268,14 +268,14 @@ Thus $k=0$ and $w_1=w_2$.
 
 ::: {.pf-step #s1-6}
 
-The map $E:S\to\mathbb H$ is surjective.
+The map $E:S\to\halfplane$ is surjective.
 
 
 ::: pf-proof
 
 Let
 $$
-\zeta\in\mathbb H.
+\zeta\in\halfplane.
 $$
 Write
 $$
@@ -343,7 +343,7 @@ By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref},
 $$
 w\mapsto e^{2\pi w}
 $$
-is a biholomorphism from $S$ to $\mathbb H$.
+is a biholomorphism from $S$ to $\halfplane$.
 Their composition is the displayed map.
 
 :::

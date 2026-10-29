@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. Let $F : \mathbb { H } \to \CC$ be a holomorphic function that satisfies
+10. Let $F : \halfplane \to \CC$ be a holomorphic function that satisfies
 
 $$
 | F (z) | \leq 1 \quad \text { and } \quad F (i) = 0.
@@ -29,7 +29,7 @@ Figure 11. Successive conformal maps in Exercise 8
 Prove that
 
 $$
-| F (z) | \leq \left| \frac {z - i}{z + i} \right| \quad \text {   for   all   } z \in \mathbb {H}.
+| F (z) | \leq \left| \frac {z - i}{z + i} \right| \quad \text {   for   all   } z \in \halfplane.
 $$
 :::
 
@@ -49,6 +49,6 @@ Then $g$ is holomorphic on $\DD$, $|g(w)|\le1$, and $g(0)=F(i)=0$. By Schwarz's 
 Taking $w=\phi(z)$ gives
 \[
 |F(z)|\le\left|\frac{z-i}{z+i}\right|,
-\qquad z\in\mathbb H.
+\qquad z\in\halfplane.
 \]
 :::

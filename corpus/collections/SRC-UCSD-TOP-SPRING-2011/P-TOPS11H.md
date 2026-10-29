@@ -62,7 +62,7 @@ Let $f:S^2\times S^2\to\CP^2$ be continuous.
 ::: pf-proof
 
 ::: pf-step
-Since $H^2(S^2\times S^2;\ZZ)=\mathbb Zu\oplus\mathbb Zv$, write
+Since $H^2(S^2\times S^2;\ZZ)=\ZZ u\oplus\ZZ v$, write
 $$
 f^*(x)=au+bv
 $$

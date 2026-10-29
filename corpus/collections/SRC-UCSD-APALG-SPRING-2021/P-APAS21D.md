@@ -79,7 +79,7 @@ satisfies
 \[
 A^2=yz^Hyz^H=y(z^Hy)z^H=yz^H=A,
 \]
-and $\operatorname{range}A=\mathbb Cy=Y$.
+and $\operatorname{range}A=\CC y=Y$.
 Thus $A$ is a projection onto $Y$, generally oblique.
 Its complementary projection is
 \[

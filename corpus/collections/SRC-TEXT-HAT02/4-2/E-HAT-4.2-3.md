@@ -65,7 +65,7 @@ then
 \]
 Multiplication by \(t-1\) gives an exact sequence
 \[
-0\longrightarrow\mathbb ZN
+0\longrightarrow\ZZ N
 \longrightarrow\ZZ[G]
 \xrightarrow{\ t-1\ }
 I_G\longrightarrow0,
@@ -76,7 +76,7 @@ I_G=\ker(\varepsilon:\ZZ[G]\to\ZZ)
 \]
 is the augmentation ideal. Hence
 \[
-\ZZ[G]/\mathbb ZN\cong I_G
+\ZZ[G]/\ZZ N\cong I_G
 \]
 as \(\ZZ[G]\)-modules.
 

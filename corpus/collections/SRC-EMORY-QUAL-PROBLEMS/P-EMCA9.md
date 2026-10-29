@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-If $f$ is a non-constant entire function, then $f(\mathbf{C})$ is dense in the plane.
+If $f$ is a non-constant entire function, then $f(\CC)$ is dense in the plane.
 :::
 
 ::: {.solution}

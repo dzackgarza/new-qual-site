@@ -13,8 +13,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(e^{it})$ be a piecewise continuous, real-valued function on $\mathbb{T}$, and consider the harmonic function in the unit disk $\DD$ given by $$u(z) := \frac{1}{2\pi}\int_{-\pi}^{\pi} P_r(\theta - t) f(e^{it})\,dt,$$ where $P_r(\theta)$ denotes the Poisson kernel and $z = re^{i\theta}$.
-Suppose that $A \subset \mathbb{T}$ is an open sub-arc on which $f$ is continuous.
+Let $f(e^{it})$ be a piecewise continuous, real-valued function on $\circlegroup$, and consider the harmonic function in the unit disk $\DD$ given by $$u(z) := \frac{1}{2\pi}\int_{-\pi}^{\pi} P_r(\theta - t) f(e^{it})\,dt,$$ where $P_r(\theta)$ denotes the Poisson kernel and $z = re^{i\theta}$.
+Suppose that $A \subset \circlegroup$ is an open sub-arc on which $f$ is continuous.
 Show that $$\lim_{z \to a} u(z) = f(a)$$ for every $a = e^{i\theta} \in A$.
 :::
 

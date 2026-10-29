@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.L-3
 kind: problem
-title: No bundle $S^4 \to \mathbb{HP}^5 \to \mathbb{OP}^2$ exists
+title: No bundle $S^4 \to \quatprojective^5 \to \OP^2$ exists
 classification:
   areas:
   - topology
@@ -25,31 +25,31 @@ audit:
 ---
 
 ::: {.problem}
-Since there is a fiber bundle $S^2 \to \CP^5 \to \mathbb{HP}^2$ by Exercise 35 in §4.2, one might ask whether there is an analogous bundle $S^4 \to \mathbb{HP}^5 \to \mathbb{OP}^2$.
+Since there is a fiber bundle $S^2 \to \CP^5 \to \quatprojective^2$ by Exercise 35 in §4.2, one might ask whether there is an analogous bundle $S^4 \to \quatprojective^5 \to \OP^2$.
 Use Steenrod powers for the prime 3 to show that such a bundle cannot exist.
 :::
 
 ::: {.solution}
 Assume there were a fiber bundle
 \[
-S^4\longrightarrow\mathbb{HP}^5
-\xrightarrow{p}\mathbb{OP}^2.
+S^4\longrightarrow\quatprojective^5
+\xrightarrow{p}\OP^2.
 \]
 Write
 \[
-H^*(\mathbb{HP}^5;\ZZ_3)=\ZZ_3[x]/(x^6),
+H^*(\quatprojective^5;\ZZ_3)=\ZZ_3[x]/(x^6),
 \qquad |x|=4,
 \]
 and
 \[
-H^*(\mathbb{OP}^2;\ZZ_3)=\ZZ_3[y]/(y^3),
+H^*(\OP^2;\ZZ_3)=\ZZ_3[y]/(y^3),
 \qquad |y|=8.
 \]
 
 The Gysin sequence of the \(S^4\)-bundle shows that
 \[
-p^*:H^8(\mathbb{OP}^2;\ZZ_3)
-\longrightarrow H^8(\mathbb{HP}^5;\ZZ_3)
+p^*:H^8(\OP^2;\ZZ_3)
+\longrightarrow H^8(\quatprojective^5;\ZZ_3)
 \]
 is an isomorphism: the adjacent base cohomology groups in degrees \(3\) and \(4\) vanish. Hence, after rescaling \(y\),
 \[
@@ -59,14 +59,14 @@ p^*y=x^2.
 
 At the prime \(3\), the reduced power \(P^1\) raises degree by \(4\). Since
 \[
-H^{12}(\mathbb{OP}^2;\ZZ_3)=0,
+H^{12}(\OP^2;\ZZ_3)=0,
 \]
 we have
 \[
 P^1y=0.
 \tag{2}
 \]
-For the generator \(x\in H^4(\mathbb{HP}^\infty;\ZZ_3)\), the splitting-principle calculation gives
+For the generator \(x\in H^4(\quatprojective^\infty;\ZZ_3)\), the splitting-principle calculation gives
 \[
 P^1x=x^2.
 \]
@@ -86,6 +86,6 @@ Naturality applied to (1), together with (2), would give
 \]
 contradicting (3). Hence
 \[
-\boxed{\text{no bundle }S^4\to\mathbb{HP}^5\to\mathbb{OP}^2\text{ exists}.}
+\boxed{\text{no bundle }S^4\to\quatprojective^5\to\OP^2\text{ exists}.}
 \]
 :::

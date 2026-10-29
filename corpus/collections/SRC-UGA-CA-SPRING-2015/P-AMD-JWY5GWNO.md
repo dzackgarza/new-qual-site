@@ -22,19 +22,19 @@ audit:
 Find a conformal map
 
 ```
-1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb H$
+1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\halfplane$
 
 2.  from $\{ z: |z - 1/2| > 1/2, |z| <1  \}$ to $\DD$
 
 3.  from the intersection of the disk $|z + i| < \sqrt{2}$ with
-    ${\mathbb H}$ to ${\DD}$.
+    ${\halfplane}$ to ${\DD}$.
 
 4.  from ${\DD}  \backslash [a, 1)$ to
     ${\DD} \backslash [0, 1)$ ($0<a<1)$. \[ Short solution
     possible using Blaschke factor\]
 
 5.  from $\{ z: |z| < 1, \text{Re}(z) > 0 \} \backslash (0, 1/2]$ to
-    $\mathbb H$.
+    $\halfplane$.
 ```
 :::
 
@@ -43,7 +43,7 @@ Find a conformal map
 
 * * *
 
-### Part 1: Map from $\Omega_1 = \{ z \in \CC : |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb{H} = \{w : \text{Im}(w) > 0\}$
+### Part 1: Map from $\Omega_1 = \{ z \in \CC : |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\halfplane = \{w : \text{Im}(w) > 0\}$
 
 ::: pf
 
@@ -120,12 +120,12 @@ Follows from definition of $w_2$.
 :::
 
 ::: pf-step
-**The exponential map $w \mapsto e^{w_2} = \exp\left(\frac{i\pi}{z}\right)$ maps the horizontal strip conformally onto the upper half-plane $\mathbb{H}$.**
+**The exponential map $w \mapsto e^{w_2} = \exp\left(\frac{i\pi}{z}\right)$ maps the horizontal strip conformally onto the upper half-plane $\halfplane$.**
 
 ::: pf-proof
 
 ::: pf-step
-The exponential function maps the strip $\{ \xi + i\eta : \xi \in \RR, 0 < \eta < \pi \}$ biholomorphically onto $\mathbb{H} = \{ r e^{i\theta} : r > 0, 0 < \theta < \pi \}$.
+The exponential function maps the strip $\{ \xi + i\eta : \xi \in \RR, 0 < \eta < \pi \}$ biholomorphically onto $\halfplane = \{ r e^{i\theta} : r > 0, 0 < \theta < \pi \}$.
 
 ::: pf-proof
 Standard property of the complex exponential function.
@@ -134,7 +134,7 @@ Standard property of the complex exponential function.
 :::
 
 ::: pf-step
-Thus, the composite map $f_1(z) = \exp\left(\frac{i\pi}{z}\right)$ is a conformal map from $\Omega_1$ to $\mathbb{H}$.
+Thus, the composite map $f_1(z) = \exp\left(\frac{i\pi}{z}\right)$ is a conformal map from $\Omega_1$ to $\halfplane$.
 
 ::: pf-proof
 Composition of biholomorphisms is a biholomorphism.
@@ -218,7 +218,7 @@ $\text{Im}(i w_2) = \text{Re}(w_2) \in (0, \pi)$.
 :::
 
 ::: pf-step
-Exponentiate: $w_4 = e^{w_3} = \exp\left(\frac{2\pi i z}{z-1}\right)$ maps onto the upper half-plane $\mathbb{H}$.
+Exponentiate: $w_4 = e^{w_3} = \exp\left(\frac{2\pi i z}{z-1}\right)$ maps onto the upper half-plane $\halfplane$.
 
 ::: pf-proof
 Standard exponential mapping of a horizontal strip of width $\pi$.
@@ -230,7 +230,7 @@ Standard exponential mapping of a horizontal strip of width $\pi$.
 Cayley transform to $\DD$: $f_2(z) = \frac{w_4 - i}{w_4 + i} = \frac{\exp\left(\frac{2\pi i z}{z-1}\right) - i}{\exp\left(\frac{2\pi i z}{z-1}\right) + i}$ is a conformal map from $\Omega_2$ to $\DD$.
 
 ::: pf-proof
-The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\mathbb{H}$ biholomorphically onto $\DD$.
+The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\halfplane$ biholomorphically onto $\DD$.
 :::
 
 :::
@@ -243,7 +243,7 @@ The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\mathbb{H}$ biholomorphic
 
 * * *
 
-### Part 3: Map from $\Omega_3 = \{z \in \mathbb{H} : |z + i| < \sqrt{2}\}$ to $\DD$
+### Part 3: Map from $\Omega_3 = \{z \in \halfplane : |z + i| < \sqrt{2}\}$ to $\DD$
 
 ::: pf
 
@@ -319,10 +319,10 @@ Rotation by $-3\pi/4$.
 :::
 
 ::: pf-step
-Power map $w_3 = w_2^4 = \left(e^{-3\pi i/4} \frac{z+1}{z-1}\right)^4 = - \left(\frac{z+1}{z-1}\right)^4$ maps the sector of angle $\pi/4$ onto $\mathbb{H}$.
+Power map $w_3 = w_2^4 = \left(e^{-3\pi i/4} \frac{z+1}{z-1}\right)^4 = - \left(\frac{z+1}{z-1}\right)^4$ maps the sector of angle $\pi/4$ onto $\halfplane$.
 
 ::: pf-proof
-$z \mapsto z^4$ multiplies arguments by 4, sending $(0, \pi/4)$ to $(0, \pi) = \mathbb{H}$, and $(e^{-3\pi i/4})^4 = e^{-3\pi i} = -1$.
+$z \mapsto z^4$ multiplies arguments by 4, sending $(0, \pi/4)$ to $(0, \pi) = \halfplane$, and $(e^{-3\pi i/4})^4 = e^{-3\pi i} = -1$.
 :::
 
 :::
@@ -397,7 +397,7 @@ Restriction of a biholomorphism to an open subset.
 
 * * *
 
-### Part 5: Map from $\Omega_5 = \{ z : |z| < 1, \text{Re}(z) > 0 \} \setminus (0, 1/2]$ to $\mathbb{H}$
+### Part 5: Map from $\Omega_5 = \{ z : |z| < 1, \text{Re}(z) > 0 \} \setminus (0, 1/2]$ to $\halfplane$
 
 ::: pf
 
@@ -492,7 +492,7 @@ Composition of $z \mapsto z^2$ and $\psi$.
 :::
 
 ::: pf-step
-**Map $\DD \setminus (-1, 0]$ onto the upper half-plane $\mathbb{H}$.**
+**Map $\DD \setminus (-1, 0]$ onto the upper half-plane $\halfplane$.**
 
 ::: pf-proof
 
@@ -506,11 +506,11 @@ The principal square root maps the slit plane $\CC \setminus (-\infty, 0]$ to th
 :::
 
 ::: pf-step
-Joukowsky-type transform: $w_4 = -i \frac{w_3 - 1}{w_3 + 1}$ maps the right half-disc to the first quadrant, or directly use the Joukowsky map $J(\zeta) = -\frac{1}{2}(\zeta + 1/\zeta)$ which maps the upper half-disc to $\mathbb{H}$.
+Joukowsky-type transform: $w_4 = -i \frac{w_3 - 1}{w_3 + 1}$ maps the right half-disc to the first quadrant, or directly use the Joukowsky map $J(\zeta) = -\frac{1}{2}(\zeta + 1/\zeta)$ which maps the upper half-disc to $\halfplane$.
 Rotating the right half-disc to the upper half-disc via $w_3 \mapsto i w_3$ and applying $J$ gives: $f_5(z) = -\frac{1}{2}\left(i\sqrt{\frac{4z^2-1}{4-z^2}} + \frac{1}{i\sqrt{\frac{4z^2-1}{4-z^2}}}\right) = -\frac{i}{2}\left(\sqrt{\frac{4z^2-1}{4-z^2}} - \sqrt{\frac{4-z^2}{4z^2-1}}\right)$.
 
 ::: pf-proof
-Composition of biholomorphisms ending in $\mathbb{H}$.
+Composition of biholomorphisms ending in $\halfplane$.
 :::
 
 :::

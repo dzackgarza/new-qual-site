@@ -26,16 +26,16 @@ Assume the fact that $H^*(\CC P^n;\ZZ) = \ZZ[\alpha]/(\alpha^{n+1})$, where $\al
 
 Let
 $$
-i:\mathbb CP^k\hookrightarrow\mathbb CP^n
+i:\CP^k\hookrightarrow\CP^n
 $$
-be the standard inclusion and suppose a retraction $r:\mathbb CP^n\to\mathbb CP^k$ existed. Then
+be the standard inclusion and suppose a retraction $r:\CP^n\to\CP^k$ existed. Then
 $$
-i^*\circ r^*=\operatorname{id}_{H^*(\mathbb CP^k;\ZZ)}.
+i^*\circ r^*=\operatorname{id}_{H^*(\CP^k;\ZZ)}.
 $$
 
 ::: pf-proof
 
-A retraction satisfies $r\circ i=\operatorname{id}_{\mathbb CP^k}$. Cohomology is contravariant, so $(r\circ i)^*=i^*r^*$.
+A retraction satisfies $r\circ i=\operatorname{id}_{\CP^k}$. Cohomology is contravariant, so $(r\circ i)^*=i^*r^*$.
 
 :::
 
@@ -43,14 +43,14 @@ A retraction satisfies $r\circ i=\operatorname{id}_{\mathbb CP^k}$. Cohomology i
 
 ::: pf-step
 
-If $\alpha_k\in H^2(\mathbb CP^k)$ and $\alpha_n\in H^2(\mathbb CP^n)$ are the standard generators, then
+If $\alpha_k\in H^2(\CP^k)$ and $\alpha_n\in H^2(\CP^n)$ are the standard generators, then
 $$
 r^*(\alpha_k)=\alpha_n.
 $$
 
 ::: pf-proof
 
-The standard inclusion satisfies $i^*(\alpha_n)=\alpha_k$. Since $H^2(\mathbb CP^n)\cong\ZZ$, write $r^*(\alpha_k)=m\alpha_n$. Applying $i^*$ and using step [](#s1){.pf-ref} gives $m\alpha_k=\alpha_k$, hence $m=1$.
+The standard inclusion satisfies $i^*(\alpha_n)=\alpha_k$. Since $H^2(\CP^n)\cong\ZZ$, write $r^*(\alpha_k)=m\alpha_n$. Applying $i^*$ and using step [](#s1){.pf-ref} gives $m\alpha_k=\alpha_k$, hence $m=1$.
 
 :::
 
@@ -62,13 +62,13 @@ This is impossible when $k<n$.
 
 ::: pf-proof
 
-In $H^*(\mathbb CP^k)$ one has $\alpha_k^{k+1}=0$. Therefore
+In $H^*(\CP^k)$ one has $\alpha_k^{k+1}=0$. Therefore
 $$
 0=r^*(\alpha_k^{k+1})=r^*(\alpha_k)^{k+1}=\alpha_n^{k+1}.
 $$
 But $k+1\le n$, so $\alpha_n^{k+1}\ne0$ in
 $$
-H^*(\mathbb CP^n;\ZZ)=\ZZ[\alpha_n]/(\alpha_n^{n+1}),
+H^*(\CP^n;\ZZ)=\ZZ[\alpha_n]/(\alpha_n^{n+1}),
 $$
 a contradiction.
 
@@ -80,7 +80,7 @@ a contradiction.
 
 The identical argument over $\FF_2$ rules out a retraction
 $$
-\mathbb RP^n\to\mathbb RP^k
+\RP^n\to\RP^k
 $$
 for $k<n$.
 

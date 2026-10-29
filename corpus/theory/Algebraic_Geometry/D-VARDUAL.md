@@ -20,14 +20,14 @@ prompts:
 
 ::: {.definition title="Dual variety"}
 Let $X \subseteq \PP^n$ be an irreducible projective variety, and let $\dualof{(\PP^n)}$ be the projective space of hyperplanes in $\PP^n$.
-A hyperplane $H$ is \dfn{tangent} to $X$ at a smooth point $p$ when $H$ contains the projective tangent space $\mathbb{T}_p X$.
+A hyperplane $H$ is \dfn{tangent} to $X$ at a smooth point $p$ when $H$ contains the projective tangent space $\projtangent_p X$.
 The \dfn{dual variety} $\dualof{X} \subseteq \dualof{(\PP^n)}$ is the closure of the set of hyperplanes tangent to $X$ at some smooth point.
 :::
 
 ::: {.proposition}
 The incidence correspondence
 $$
-\Phi = \overline{\theset{ (p, H) \st p \in X_{\mathrm{sm}},\ \mathbb{T}_p X \subseteq H }} \subseteq X \times \dualof{(\PP^n)}
+\Phi = \overline{\theset{ (p, H) \st p \in X_{\mathrm{sm}},\ \projtangent_p X \subseteq H }} \subseteq X \times \dualof{(\PP^n)}
 $$
 is irreducible of dimension $n-1$, since over each smooth point $p$ the fibre is a projective space of dimension $n - 1 - \dim X$.
 So $\dualof{X}$, the image of $\Phi$ under the second projection, is irreducible of dimension at most $n-1$.

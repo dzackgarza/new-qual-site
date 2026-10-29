@@ -30,7 +30,7 @@ Prove that
   =\frac{1-|\alpha|^2}{|\alpha|^2}\log \frac{1}{1-|\alpha|^2}.
   $$
 
-Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a conformal map from half disc $\{z=x+iy:\ |z|<1,\ y>0\}$ to upper half plane $\mathbb H=\{z=x+iy:\ y>0\}$.
+Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a conformal map from half disc $\{z=x+iy:\ |z|<1,\ y>0\}$ to upper half plane $\halfplane=\{z=x+iy:\ y>0\}$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a con
 
 2. Prove that $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right)$ (for $\alpha \neq 0$, with limit $1$ as $\alpha \to 0$).
 
-3. Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the upper half-disk $\DD^+ = \{z = x+iy : |z| < 1, y > 0\}$ to the upper half-plane $\mathbb{H} = \{w = u+iv : v > 0\}$.
+3. Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the upper half-disk $\DD^+ = \{z = x+iy : |z| < 1, y > 0\}$ to the upper half-plane $\halfplane = \{w = u+iv : v > 0\}$.
 
 * * *
 
@@ -234,7 +234,7 @@ Combines steps [](#s5-4){.pf-ref} and [](#s5-5){.pf-ref}.
 
 * * *
 
-### Part 3: Conformal Map $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ from $\DD^+$ to $\mathbb{H}$
+### Part 3: Conformal Map $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ from $\DD^+$ to $\halfplane$
 
 ::: pf
 
@@ -276,7 +276,7 @@ Points $\pm 1$ have $y=0$ and $|z|=1$, so they lie on the boundary, not in $\DD^
 :::
 
 ::: pf-step
-**$f$ maps $\DD^+$ into the upper half-plane $\mathbb{H}$.**
+**$f$ maps $\DD^+$ into the upper half-plane $\halfplane$.**
 
 ::: pf-proof
 
@@ -300,7 +300,7 @@ Extracting the imaginary component.
 
 ::: pf-step
 Since $0 < r < 1$, $\frac{1}{r} - r > 0$; and since $0 < \theta < \pi$, $\sin\theta > 0$.
-Thus $\text{Im}(f(z)) > 0$, so $f(\DD^+) \subseteq \mathbb{H}$.
+Thus $\text{Im}(f(z)) > 0$, so $f(\DD^+) \subseteq \halfplane$.
 
 ::: pf-proof
 Product of two strictly positive real numbers is strictly positive.
@@ -313,12 +313,12 @@ Product of two strictly positive real numbers is strictly positive.
 :::
 
 ::: {.pf-step #s8}
-**$f: \DD^+ \to \mathbb{H}$ is bijective.**
+**$f: \DD^+ \to \halfplane$ is bijective.**
 
 ::: pf-proof
 
 ::: pf-step
-Let $w \in \mathbb{H}$ be given.
+Let $w \in \halfplane$ be given.
 We solve $f(z) = w \iff -\frac{1}{2}(z + 1/z) = w \iff z^2 + 2w z + 1 = 0$.
 
 ::: pf-proof
@@ -338,7 +338,7 @@ Vieta's formulas for $z^2 + 2wz + 1 = 0$.
 :::
 
 ::: pf-step
-Since $w \in \mathbb{H}$, $w \notin [-1, 1]$, so $w^2 - 1 \neq 0$ and the two roots are distinct and neither has modulus $1$ (if $|z|=1$ with $z=e^{i\theta}$, then $-\frac{1}{2}(e^{i\theta}+e^{-i\theta}) = -\cos\theta \in [-1,1] \subset \RR$, which has imaginary part $0$).
+Since $w \in \halfplane$, $w \notin [-1, 1]$, so $w^2 - 1 \neq 0$ and the two roots are distinct and neither has modulus $1$ (if $|z|=1$ with $z=e^{i\theta}$, then $-\frac{1}{2}(e^{i\theta}+e^{-i\theta}) = -\cos\theta \in [-1,1] \subset \RR$, which has imaginary part $0$).
 
 ::: pf-proof
 Modulus 1 points map to the real interval $[-1, 1]$.
@@ -366,7 +366,7 @@ Sign of $\sin(\arg z_1)$ must match the sign of $\text{Im}(w)$.
 :::
 
 ::: pf-step
-Thus, for each $w \in \mathbb{H}$, there is a unique $z \in \DD^+$ such that $f(z) = w$.
+Thus, for each $w \in \halfplane$, there is a unique $z \in \DD^+$ such that $f(z) = w$.
 
 ::: pf-proof
 Exactly one of the two quadratic roots lies in $\DD^+$.
@@ -379,12 +379,12 @@ Exactly one of the two quadratic roots lies in $\DD^+$.
 :::
 
 ::: pf-step
-**Conclusion: $f$ is a conformal map (biholomorphism) from $\DD^+$ to $\mathbb{H}$.**
+**Conclusion: $f$ is a conformal map (biholomorphism) from $\DD^+$ to $\halfplane$.**
 
 ::: pf-proof
 
 ::: pf-step
-By steps [](#s6){.pf-ref} and [](#s8){.pf-ref}, $f$ is a holomorphic bijection from $\DD^+$ to $\mathbb{H}$, hence a biholomorphism / conformal map.
+By steps [](#s6){.pf-ref} and [](#s8){.pf-ref}, $f$ is a holomorphic bijection from $\DD^+$ to $\halfplane$, hence a biholomorphism / conformal map.
 
 ::: pf-proof
 A bijective holomorphic function between open domains in $\CC$ has a holomorphic inverse.

@@ -17,37 +17,37 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let $\mathbb T$ be the unit circle in the complex plane $\CC$, and for each $\alpha\in\mathbb T$ define the rotation map $R_\alpha:\mathbb T\to\mathbb T$ by
+Problem 4. Let $\circlegroup$ be the unit circle in the complex plane $\CC$, and for each $\alpha\in\circlegroup$ define the rotation map $R_\alpha:\circlegroup\to\circlegroup$ by
 \[
 R_\alpha(z)=\alpha z.
 \]
-A Borel probability measure $\mu$ on $\mathbb T$ is called $\alpha$-invariant if
+A Borel probability measure $\mu$ on $\circlegroup$ is called $\alpha$-invariant if
 \[
 \mu(R_\alpha(E))=\mu(E)
 \]
-for every Borel set $E\subset\mathbb T$.
+for every Borel set $E\subset\circlegroup$.
 
-(a) Let $m$ be Lebesgue measure on $\mathbb T$ (defined, for instance, by identifying $\mathbb T$ with $[0,1)$ through the exponential function). Show that for every $\alpha\in\mathbb T$, $m$ is $\alpha$-invariant.
+(a) Let $m$ be Lebesgue measure on $\circlegroup$ (defined, for instance, by identifying $\circlegroup$ with $[0,1)$ through the exponential function). Show that for every $\alpha\in\circlegroup$, $m$ is $\alpha$-invariant.
 
-(b) Prove that if $\alpha$ is not a root of unity, then the set of powers $\{\alpha^n:n\in\ZZ\}$ is dense in $\mathbb T$.
+(b) Prove that if $\alpha$ is not a root of unity, then the set of powers $\{\alpha^n:n\in\ZZ\}$ is dense in $\circlegroup$.
 
-(c) Prove that, if we fix a single $\alpha\in\mathbb T$ which is not a root of unity, then $m$ is the only $\alpha$-invariant Borel probability measure on $\mathbb T$.
+(c) Prove that, if we fix a single $\alpha\in\circlegroup$ which is not a root of unity, then $m$ is the only $\alpha$-invariant Borel probability measure on $\circlegroup$.
 :::
 
 ::: {.solution}
 
-Write \(q(t)=e^{2\pi i t}\), so that \(\mathbb T\cong\RR/\ZZ\), and let \(m\) be normalized Lebesgue measure under this identification.
+Write \(q(t)=e^{2\pi i t}\), so that \(\circlegroup\cong\RR/\ZZ\), and let \(m\) be normalized Lebesgue measure under this identification.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For every \(\alpha\in\mathbb T\), the measure \(m\) is \(\alpha\)-invariant.
+For every \(\alpha\in\circlegroup\), the measure \(m\) is \(\alpha\)-invariant.
 
 
 ::: pf-proof
 
-Write \(\alpha=q(a)\) with \(0\le a<1\). Under \(\mathbb T\cong[0,1)\), the rotation \(R_\alpha\) is
+Write \(\alpha=q(a)\) with \(0\le a<1\). Under \(\circlegroup\cong[0,1)\), the rotation \(R_\alpha\) is
 \[
 \tau_a(t)=t+a\pmod 1.
 \]
@@ -67,7 +67,7 @@ The two pieces are disjoint, and translation invariance of Lebesgue measure on \
 \[
 m(\tau_a(E))=m(E_0)+m(E_1)=m(E).
 \]
-Thus \(m(R_\alpha(E))=m(E)\) for every Borel \(E\subseteq\mathbb T\).
+Thus \(m(R_\alpha(E))=m(E)\) for every Borel \(E\subseteq\circlegroup\).
 
 :::
 
@@ -75,12 +75,12 @@ Thus \(m(R_\alpha(E))=m(E)\) for every Borel \(E\subseteq\mathbb T\).
 
 ::: {.pf-step #s1-2}
 
-Let \(H\subseteq\mathbb T\) be an infinite subgroup and let \(\overline H\) be its closure. Then points of \(H\setminus\{1\}\) occur arbitrarily close to \(1\).
+Let \(H\subseteq\circlegroup\) be an infinite subgroup and let \(\overline H\) be its closure. Then points of \(H\setminus\{1\}\) occur arbitrarily close to \(1\).
 
 
 ::: pf-proof
 
-The compact set \(\overline H\) contains infinitely many points, so \(H\) has an accumulation point \(z\in\mathbb T\). Choose pairwise distinct \(h_j\in H\) with \(h_j\to z\). Then
+The compact set \(\overline H\) contains infinitely many points, so \(H\) has an accumulation point \(z\in\circlegroup\). Choose pairwise distinct \(h_j\in H\) with \(h_j\to z\). Then
 \[
 h_{2j}h_{2j-1}^{-1}\in H\setminus\{1\}
 \]
@@ -92,7 +92,7 @@ for every \(j\), while \(h_{2j}h_{2j-1}^{-1}\to zz^{-1}=1\). Hence nonidentity e
 
 ::: {.pf-step #s1-3}
 
-Every infinite subgroup \(H\subseteq\mathbb T\) is dense in \(\mathbb T\).
+Every infinite subgroup \(H\subseteq\circlegroup\) is dense in \(\circlegroup\).
 
 
 ::: pf-proof
@@ -111,7 +111,7 @@ partition \([0,1]\) into gaps of length \(\theta\), except for the final gap \(1
 \[
 1,h,h^2,\ldots,h^N\in H
 \]
-form an \(\varepsilon\)-net in \(\mathbb T\). Since \(\varepsilon>0\) was arbitrary, \(H\) is dense.
+form an \(\varepsilon\)-net in \(\circlegroup\). Since \(\varepsilon>0\) was arbitrary, \(H\) is dense.
 
 :::
 
@@ -121,7 +121,7 @@ form an \(\varepsilon\)-net in \(\mathbb T\). Since \(\varepsilon>0\) was arbitr
 
 If \(\alpha\) is not a root of unity, then
 \[
-\boxed{\{\alpha^n:n\in\ZZ\}\text{ is dense in }\mathbb T}.
+\boxed{\{\alpha^n:n\in\ZZ\}\text{ is dense in }\circlegroup}.
 \]
 
 
@@ -152,16 +152,16 @@ Iteration gives invariance for all negative powers as well.
 
 ::: {.pf-step #s1-6}
 
-Assume \(\alpha\) is not a root of unity. If \(\mu\) is \(\alpha\)-invariant, then for every \(\beta\in\mathbb T\) and every \(f\in C(\mathbb T)\),
+Assume \(\alpha\) is not a root of unity. If \(\mu\) is \(\alpha\)-invariant, then for every \(\beta\in\circlegroup\) and every \(f\in C(\circlegroup)\),
 \[
-\int_{\mathbb T}f(\beta z)\,d\mu(z)
-=\int_{\mathbb T}f(z)\,d\mu(z).
+\int_{\circlegroup}f(\beta z)\,d\mu(z)
+=\int_{\circlegroup}f(z)\,d\mu(z).
 \]
 
 
 ::: pf-proof
 
-By step [](#s1-4){.pf-ref}, choose integers \(n_j\) with \(\alpha^{n_j}\to\beta\). Since \(f\) is uniformly continuous on compact \(\mathbb T\),
+By step [](#s1-4){.pf-ref}, choose integers \(n_j\) with \(\alpha^{n_j}\to\beta\). Since \(f\) is uniformly continuous on compact \(\circlegroup\),
 \[
 f(\alpha^{n_j}z)\longrightarrow f(\beta z)
 \]
@@ -177,9 +177,9 @@ for every \(j\). Passing to the limit under the integral, justified by uniform c
 
 ::: {.pf-step #s1-7}
 
-Under the same hypotheses, for every \(f\in C(\mathbb T)\),
+Under the same hypotheses, for every \(f\in C(\circlegroup)\),
 \[
-\int_{\mathbb T}f\,d\mu=\int_{\mathbb T}f\,dm.
+\int_{\circlegroup}f\,d\mu=\int_{\circlegroup}f\,dm.
 \]
 
 
@@ -188,14 +188,14 @@ Under the same hypotheses, for every \(f\in C(\mathbb T)\),
 By step [](#s1-6){.pf-ref}, the inner integral below is independent of \(\beta\). Hence Fubini's theorem and step [](#s1-1){.pf-ref} give
 \[
 \begin{aligned}
-\int_{\mathbb T}f(z)\,d\mu(z)
-&=\int_{\mathbb T}\int_{\mathbb T}f(\beta z)\,d\mu(z)\,dm(\beta)\\
-&=\int_{\mathbb T}\int_{\mathbb T}f(\beta z)\,dm(\beta)\,d\mu(z)\\
-&=\int_{\mathbb T}\left(\int_{\mathbb T}f(\beta)\,dm(\beta)\right)d\mu(z)\\
-&=\int_{\mathbb T}f\,dm.
+\int_{\circlegroup}f(z)\,d\mu(z)
+&=\int_{\circlegroup}\int_{\circlegroup}f(\beta z)\,d\mu(z)\,dm(\beta)\\
+&=\int_{\circlegroup}\int_{\circlegroup}f(\beta z)\,dm(\beta)\,d\mu(z)\\
+&=\int_{\circlegroup}\left(\int_{\circlegroup}f(\beta)\,dm(\beta)\right)d\mu(z)\\
+&=\int_{\circlegroup}f\,dm.
 \end{aligned}
 \]
-In the third line, multiplication by the fixed \(z\in\mathbb T\) is a rotation, so it preserves \(m\) by step [](#s1-1){.pf-ref}.
+In the third line, multiplication by the fixed \(z\in\circlegroup\) is a rotation, so it preserves \(m\) by step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -208,7 +208,7 @@ If \(\alpha\) is not a root of unity, then \(\boxed{m\text{ is the unique }\alph
 
 ::: pf-proof
 
-Existence is step [](#s1-1){.pf-ref}. If \(\mu\) is any other \(\alpha\)-invariant Borel probability measure, step [](#s1-7){.pf-ref} shows that \(\mu\) and \(m\) have the same integral against every real-valued continuous function on compact \(\mathbb T\). By uniqueness in the Riesz representation theorem, \(\mu=m\).
+Existence is step [](#s1-1){.pf-ref}. If \(\mu\) is any other \(\alpha\)-invariant Borel probability measure, step [](#s1-7){.pf-ref} shows that \(\mu\) and \(m\) have the same integral against every real-valued continuous function on compact \(\circlegroup\). By uniqueness in the Riesz representation theorem, \(\mu=m\).
 
 :::
 

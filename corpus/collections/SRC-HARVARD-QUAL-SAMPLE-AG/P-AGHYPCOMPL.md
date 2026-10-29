@@ -33,7 +33,7 @@ Let
 \[
 S=k[x_0,x_1,x_2],
 \qquad
-\mathbb P^2_k=\operatorname{Proj}S,
+\PP^2_k=\operatorname{Proj}S,
 \]
 and let the hypersurface be
 \[
@@ -46,7 +46,7 @@ for a nonzero homogeneous polynomial $F\in S$ of positive degree.
 ::: {.pf-step #complement-is-dplus}
 The complement of $H$ is the standard projective open
 \[
-\mathbb P^2\setminus H=D_+(F).
+\PP^2\setminus H=D_+(F).
 \]
 
 ::: pf-proof
@@ -91,7 +91,7 @@ Conversely, a prime of $(S_F)_0$ determines the corresponding homogeneous prime 
 Hence
 \[
 \boxed{
-\mathbb P^2_k\setminus H\text{ is affine}.
+\PP^2_k\setminus H\text{ is affine}.
 }
 \]
 
@@ -102,7 +102,7 @@ By step [](#complement-is-dplus){.pf-ref} the complement is $D_+(F)$, and by ste
 :::
 
 ::: {.pf-step #general-hypersurface-complement}
-The complement of every hypersurface $V_+(F)$ in $\mathbb P^2_k$ is affine, whether $F$ is irreducible, reducible, or has repeated factors, and whether $V_+(F)$ is smooth or singular.
+The complement of every hypersurface $V_+(F)$ in $\PP^2_k$ is affine, whether $F$ is irreducible, reducible, or has repeated factors, and whether $V_+(F)$ is smooth or singular.
 
 ::: pf-proof
 Steps [](#complement-is-dplus){.pf-ref}, [](#dplus-affine-chart){.pf-ref} and [](#complement-affine){.pf-ref} use only that $H$ is cut out scheme-theoretically by one homogeneous equation $F$ of positive degree, so its complement is the standard affine open $D_+(F)$.
@@ -118,7 +118,7 @@ H=V_+(x_0),
 then
 \[
 D_+(x_0)\cong\operatorname{Spec}k\!\left[\frac{x_1}{x_0},\frac{x_2}{x_0}\right]
-\cong\mathbb A^2_k.
+\cong\AA^2_k.
 \]
 
 ::: pf-proof

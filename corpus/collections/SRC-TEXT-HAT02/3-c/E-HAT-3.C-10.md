@@ -34,7 +34,7 @@ For maps $f, g: X \to X$, the product $fg: X \to X$ is defined by $(fg)(x) = f(x
 (b) Deduce that the $k$-th power map $x \mapsto x^k$ induces the map $\alpha \mapsto k\alpha$ on primitive elements $\alpha$.
 In particular the quaternionic $k$-th power map $S^3 \to S^3$ has degree $k$.
 
-(c) Show that every polynomial $a_n x^n b_n + \dotsb + a_1 x b_1 + a_0$ of nonzero degree with coefficients in $\mathbb{H}$ has a root in $\mathbb{H}$.
+(c) Show that every polynomial $a_n x^n b_n + \dotsb + a_1 x b_1 + a_0$ of nonzero degree with coefficients in $\quaternions$ has a root in $\quaternions$.
 [See Theorem 1.8.]
 :::
 
@@ -100,7 +100,7 @@ has a root.
 
 ::: pf-proof
 
-View $\mathbb H$ as $\RR^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
+View $\quaternions$ as $\RR^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
 \[
 \widehat P:S^4\to S^4.
 \]
@@ -115,7 +115,7 @@ Left and right multiplication by a nonzero quaternion are orientation-preserving
 \[
 \deg\widehat P=n\ne0.
 \]
-If $P$ had no root, then $0\notin P(\mathbb H)$; a proper map missing a point has degree $0$, contradiction. Thus $P(x)=0$ for some $x\in\mathbb H$.
+If $P$ had no root, then $0\notin P(\quaternions)$; a proper map missing a point has degree $0$, contradiction. Thus $P(x)=0$ for some $x\in\quaternions$.
 
 :::
 

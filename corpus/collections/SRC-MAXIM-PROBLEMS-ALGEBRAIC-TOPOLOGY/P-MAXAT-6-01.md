@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $w ( \mathbb { R P } ^ { n } ) , c ( \mathbb { C P } ^ { n } ) , p ( \mathbb { C P } ^ { n } )$
+Calculate $w ( \RP ^ { n } ) , c ( \CP ^ { n } ) , p ( \CP ^ { n } )$
 :::
 
 ::: {.solution}

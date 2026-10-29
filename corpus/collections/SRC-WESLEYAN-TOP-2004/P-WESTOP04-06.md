@@ -123,7 +123,7 @@ for closed subspaces.
 
 Let
 $$
-\mathbb S
+\sorgenfrey
 $$
 be the Sorgenfrey line, whose basic open sets are intervals
 $$
@@ -131,7 +131,7 @@ $$
 $$
 Set
 $$
-X=\mathbb S\times\mathbb S.
+X=\sorgenfrey\times\sorgenfrey.
 $$
 The countable set
 $$
@@ -228,7 +228,7 @@ for closed subspaces.
 
 Use the same
 $$
-X=\mathbb S\times\mathbb S
+X=\sorgenfrey\times\sorgenfrey
 $$
 and closed discrete
 $$

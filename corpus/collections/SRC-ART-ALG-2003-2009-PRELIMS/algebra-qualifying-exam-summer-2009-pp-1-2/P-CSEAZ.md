@@ -29,9 +29,9 @@ audit:
 ::: {.problem}
 a. List all isomorphism classes of groups of size 120.
 
-b. Find all isomorphism classes of $\mathbf{Q}[x]$ modules $V$ such that $\dim_{\mathbf{Q}} V=6$ and $V$ is annihilated by $(x-3)^2(x+5)$.
+b. Find all isomorphism classes of $\QQ[x]$ modules $V$ such that $\dim_{\QQ} V=6$ and $V$ is annihilated by $(x-3)^2(x+5)$.
 
-c. Find all possible rational canonical forms for a 6 by 6 matrix over $\mathbf{Q}$ that has minimal polynomial $(x-3)^2(x+5)$.
+c. Find all possible rational canonical forms for a 6 by 6 matrix over $\QQ$ that has minimal polynomial $(x-3)^2(x+5)$.
 :::
 
 ::: {.solution}
@@ -474,7 +474,7 @@ abelian groups, not the full answer to part (a).
 
 ::: {.pf-step #s8}
 
-For part (b), put $R=\mathbf Q[x]$, $p=x-3$, and $q=x+5$.
+For part (b), put $R=\QQ[x]$, $p=x-3$, and $q=x+5$.
 The complete, irredundant list consists of
 $$
 V_{a,b,c}=(R/(p^2))^a\oplus(R/(p))^b\oplus(R/(q))^c,

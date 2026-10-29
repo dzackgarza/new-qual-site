@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that $\mathbb{QP}^2 \vee S^3$ and $\RP^3$ are not homotopy-equivalent.
+Prove that $\quatprojective^2 \vee S^3$ and $\RP^3$ are not homotopy-equivalent.
 :::
 
 ::: {.solution}
@@ -21,10 +21,10 @@ Prove that $\mathbb{QP}^2 \vee S^3$ and $\RP^3$ are not homotopy-equivalent.
 ::: pf
 
 ::: pf-step
-The space $\mathbb{QP}^2$ has one cell in dimensions $0,4,8$, so
+The space $\quatprojective^2$ has one cell in dimensions $0,4,8$, so
 $$
-H_4(\mathbb{QP}^2;\ZZ)\cong\ZZ,
-\qquad H_8(\mathbb{QP}^2;\ZZ)\cong\ZZ.
+H_4(\quatprojective^2;\ZZ)\cong\ZZ,
+\qquad H_8(\quatprojective^2;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -36,7 +36,7 @@ Quaternionic projective $n$-space has the standard CW decomposition with one cel
 ::: {.pf-step #h4-wedge}
 Therefore
 $$
-H_4(\mathbb{QP}^2\vee S^3;\ZZ)\cong\ZZ.
+H_4(\quatprojective^2\vee S^3;\ZZ)\cong\ZZ.
 $$
 
 ::: pf-proof
@@ -58,7 +58,7 @@ The space $\RP^3$ is a $3$-dimensional CW complex.
 :::
 
 ::: pf-step
-Hence $\mathbb{QP}^2\vee S^3$ and $\RP^3$ are not homotopy-equivalent.
+Hence $\quatprojective^2\vee S^3$ and $\RP^3$ are not homotopy-equivalent.
 
 ::: pf-proof
 Homotopy-equivalent spaces have isomorphic integral homology groups in every degree, contradicting steps [](#h4-wedge){.pf-ref} and [](#h4-rp3-zero){.pf-ref}.

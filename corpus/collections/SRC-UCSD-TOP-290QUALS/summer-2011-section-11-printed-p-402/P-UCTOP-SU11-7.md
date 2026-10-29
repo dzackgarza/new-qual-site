@@ -26,7 +26,7 @@ For $g=1$, the universal cover of $\Sigma_g=T^2$ is $\RR^2$; for $g\ge2$, the un
 
 ::: pf-proof
 
-The torus is $\RR^2/\ZZ^2$. Every closed orientable surface of genus at least $2$ admits a hyperbolic structure, whose universal cover is $\mathbb H^2$, homeomorphic to an open disk.
+The torus is $\RR^2/\ZZ^2$. Every closed orientable surface of genus at least $2$ admits a hyperbolic structure, whose universal cover is $\hyperbolicspace^2$, homeomorphic to an open disk.
 
 :::
 

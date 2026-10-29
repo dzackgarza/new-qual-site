@@ -138,13 +138,13 @@ Thus $f(Z)\cap V$ is closed in every affine member $V$ of an open cover of $Y$. 
 
 Let $k$ be a field and define
 \[
-X=\mathbb G_{m,k}\amalg\Spec k,
+X=\Gm_{k}\amalg\Spec k,
 \qquad
-Y=\mathbb A^1_k.
+Y=\AA^1_k.
 \]
 Map the first component to $Y$ by the usual open immersion
 \[
-\mathbb G_m=D(t)\hookrightarrow\mathbb A^1
+\Gm=D(t)\hookrightarrow\AA^1
 \]
 and map the second component to the origin.
 Then
@@ -167,7 +167,7 @@ k[t]\longrightarrow k[t]/(t)\cong k.
 \]
 Since $X$ is the finite disjoint union of these two components, $f$ is of finite type.
 
-For $a\ne0$, the fibre over $a$ consists of the single point $a\in\mathbb G_m$.  The fibre over $0$ consists of the single extra point $\Spec k$.  Hence every fibre is finite, so $f$ is quasi-finite.
+For $a\ne0$, the fibre over $a$ consists of the single point $a\in\Gm$.  The fibre over $0$ consists of the single extra point $\Spec k$.  Hence every fibre is finite, so $f$ is quasi-finite.
 
 :::
 
@@ -181,14 +181,14 @@ The morphism in step [](#s5){.pf-ref} is not finite.
 
 The component
 \[
-\mathbb G_m\subseteq X
+\Gm\subseteq X
 \]
 is closed, because it is a component of a disjoint union.
 Its image is
 \[
-\mathbb A^1\setminus\{0\},
+\AA^1\setminus\{0\},
 \]
-which is not closed in $\mathbb A^1$.
+which is not closed in $\AA^1$.
 
 By step [](#s4){.pf-ref}, every finite morphism is closed.  Therefore this morphism cannot be finite.
 

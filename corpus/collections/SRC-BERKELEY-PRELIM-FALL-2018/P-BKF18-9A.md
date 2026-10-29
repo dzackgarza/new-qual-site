@@ -22,7 +22,7 @@ Prove that there exists an element $g\in G$ of order $p$.
 :::
 
 ::: {.solution}
-Consider the set $X = \{ ( g _ { 1 } , \dotsc , g _ { p } ) \in G ^ { p } \mid g _ { 1 } \cdot \cdot \cdot g _ { p } = e \}$ . It is acted upon by the cyclic group $\mathbf { Z } / p \mathbf { Z }$ with ${ \bf 1 } \in { \bf Z } / p { \bf Z }$ acting as the cyclic shift
+Consider the set $X = \{ ( g _ { 1 } , \dotsc , g _ { p } ) \in G ^ { p } \mid g _ { 1 } \cdot \cdot \cdot g _ { p } = e \}$ . It is acted upon by the cyclic group $\ZZ / p \ZZ$ with ${ \bf 1 } \in { \bf Z } / p { \bf Z }$ acting as the cyclic shift
 
 $$
 ( g _ { 1 } , \dotsc , g _ { p } ) \longmapsto ( g _ { p } , g _ { 1 } , \dotsc , g _ { p - 1 } ) .

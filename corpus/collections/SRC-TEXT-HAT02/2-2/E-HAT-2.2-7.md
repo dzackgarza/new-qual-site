@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-For an invertible linear transformation $f: \RR^n \to \RR^n$ show that the induced map on $H_n(\RR^n, \RR^n - \{0\}) \approx \tilde{H}_{n-1}(\RR^n - \{0\}) \approx \ZZ$ is $\mathbb{1}$ or $-\mathbb{1}$ according to whether the determinant of $f$ is positive or negative.
+For an invertible linear transformation $f: \RR^n \to \RR^n$ show that the induced map on $H_n(\RR^n, \RR^n - \{0\}) \approx \tilde{H}_{n-1}(\RR^n - \{0\}) \approx \ZZ$ is $\id$ or $-\id$ according to whether the determinant of $f$ is positive or negative.
 [Use Gaussian elimination to show that the matrix of $f$ can be joined by a path of invertible matrices to a diagonal matrix with $\pm 1$'s on the diagonal.]
 :::
 

@@ -28,7 +28,7 @@ Yes. Let
 \[
 h(z)=i\frac{1+z}{1-z},
 \]
-which maps $\DD$ conformally onto the upper half-plane $\mathbb H$. Then
+which maps $\DD$ conformally onto the upper half-plane $\halfplane$. Then
 \[
 g(z)=h(z)-i
 \]

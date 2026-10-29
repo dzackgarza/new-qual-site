@@ -127,7 +127,7 @@ Separability is necessary for the short exact sequence.
 ::: pf-proof
 In characteristic $p>0$, consider the purely inseparable degree-$p$ map
 \[
-F:\mathbb P^1_k\longrightarrow\mathbb P^1_k,
+F:\PP^1_k\longrightarrow\PP^1_k,
 \qquad
 [X:Y]\longmapsto[X^p:Y^p].
 \]
@@ -137,9 +137,9 @@ F^*(dt)=d(t^p)=pt^{p-1}dt=0.
 \]
 Thus the map
 \[
-F^*\Omega_{\mathbb P^1/k}^1
+F^*\Omega_{\PP^1/k}^1
 \longrightarrow
-\Omega_{\mathbb P^1/k}^1
+\Omega_{\PP^1/k}^1
 \]
 is zero, not injective.  Hence a nonconstant inseparable map need not give a short exact cotangent sequence.
 :::

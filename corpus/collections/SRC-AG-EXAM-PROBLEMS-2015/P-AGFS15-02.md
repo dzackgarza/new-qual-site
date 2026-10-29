@@ -29,9 +29,9 @@ Determine whether each statement is true or false.
 
 2. $f$ is injective if and only if $f^\sharp$ is surjective.
 
-3. If $f:\mathbb A^1\to\mathbb A^1$ is an isomorphism, then $f$ is affine linear: $f(x)=ax+b$ for some $a,b\in k$.
+3. If $f:\AA^1\to\AA^1$ is an isomorphism, then $f$ is affine linear: $f(x)=ax+b$ for some $a,b\in k$.
 
-4. If $f:\mathbb A^2\to\mathbb A^2$ is an isomorphism, then $f$ is affine linear: $f(x)=Ax+b$ for some $A\in\operatorname{Mat}_{2,2}(k)$ and $b\in k^2$.
+4. If $f:\AA^2\to\AA^2$ is an isomorphism, then $f$ is affine linear: $f(x)=Ax+b$ for some $A\in\operatorname{Mat}_{2,2}(k)$ and $b\in k^2$.
 :::
 
 ::: {.solution}
@@ -48,13 +48,13 @@ If \(f:X\to Y\) is surjective and \(g\in A(Y)\) satisfies \(f^\sharp(g)=g\circ f
 
 The converse fails. Take the open immersion
 \[
-j:\mathbb G_m\hookrightarrow\mathbb A^1.
+j:\Gm\hookrightarrow\AA^1.
 \]
 On coordinate rings,
 \[
 j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 \]
-is the natural inclusion, so it is injective, but \(j\) is not surjective because \(0\notin\mathbb G_m\).
+is the natural inclusion, so it is injective, but \(j\) is not surjective because \(0\notin\Gm\).
 
 :::
 
@@ -70,7 +70,7 @@ If \(f^\sharp:A(Y)\to A(X)\) is surjective, then \(f\) is a closed immersion ont
 
 Again the converse fails for
 \[
-j:\mathbb G_m\hookrightarrow\mathbb A^1.
+j:\Gm\hookrightarrow\AA^1.
 \]
 The map \(j\) is injective, but
 \[
@@ -88,7 +88,7 @@ Statement 3 is \(\boxed{\text{true}}\).
 
 ::: pf-proof
 
-An isomorphism \(f:\mathbb A^1\to\mathbb A^1\) induces a \(k\)-algebra automorphism
+An isomorphism \(f:\AA^1\to\AA^1\) induces a \(k\)-algebra automorphism
 \[
 f^\sharp:k[t]\longrightarrow k[t].
 \]
@@ -118,7 +118,7 @@ Statement 4 is \(\boxed{\text{false}}\).
 
 Consider
 \[
-F:\mathbb A^2\longrightarrow\mathbb A^2,
+F:\AA^2\longrightarrow\AA^2,
 \qquad
 F(x,y)=(x,y+x^2).
 \]

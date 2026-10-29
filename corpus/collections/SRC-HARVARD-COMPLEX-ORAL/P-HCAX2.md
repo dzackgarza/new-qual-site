@@ -23,24 +23,24 @@ Prove Picard's theorem using the fact that the modular invariant $j$ uniformizes
 ::: {.solution}
 We prove the little Picard theorem: an entire function omitting two values of
 $\CC$ is constant. Let $J=j/1728$, let $\rho=e^{2\pi i/3}$, and let
-$\mathbb H$ be the upper half-plane.
+$\halfplane$ be the upper half-plane.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Let $\mathbb H'=\mathbb H\setminus\operatorname{PSL}_2(\ZZ)\{i,\rho\}$.
-Then $J\colon\mathbb H'\to\CC\setminus\{0,1\}$ is a holomorphic covering map.
+Let $\halfplane'=\halfplane\setminus\operatorname{PSL}_2(\ZZ)\{i,\rho\}$.
+Then $J\colon\halfplane'\to\CC\setminus\{0,1\}$ is a holomorphic covering map.
 
 ::: pf-proof
 
 The given uniformization says that $J$ identifies
-$\operatorname{PSL}_2(\ZZ)\backslash\mathbb H$ with $\CC$, with $J(\rho)=0$,
+$\operatorname{PSL}_2(\ZZ)\backslash\halfplane$ with $\CC$, with $J(\rho)=0$,
 $J(i)=1$, and ramification of order $3$ over $0$ and order $2$ over $1$. The
 group $\operatorname{PSL}_2(\ZZ)$ acts properly discontinuously on
-$\mathbb H$, and the points with nontrivial stabilizer are exactly the orbits
+$\halfplane$, and the points with nontrivial stabilizer are exactly the orbits
 of $i$ and $\rho$. It therefore acts freely and properly discontinuously on
-$\mathbb H'$, so the quotient map $\mathbb H'\to\CC\setminus\{0,1\}$ is a
+$\halfplane'$, so the quotient map $\halfplane'\to\CC\setminus\{0,1\}$ is a
 covering map.
 
 :::
@@ -62,13 +62,13 @@ constant exactly when $f$ is.
 
 ::: pf-step
 
-There is a holomorphic $\tilde f\colon\CC\to\mathbb H$ with
+There is a holomorphic $\tilde f\colon\CC\to\halfplane$ with
 $J\circ\tilde f=f$.
 
 ::: pf-proof
 
 $\CC$ is simply connected and locally path-connected, so $f$ lifts through the
-covering map of step [](#s1){.pf-ref} to a continuous $\tilde f\colon\CC\to\mathbb H'$.
+covering map of step [](#s1){.pf-ref} to a continuous $\tilde f\colon\CC\to\halfplane'$.
 The covering map is a local biholomorphism, so $\tilde f$ is holomorphic.
 
 :::
@@ -82,7 +82,7 @@ $f$ is constant.
 ::: pf-proof
 
 With the Cayley transform $C(\zeta)=(\zeta-i)/(\zeta+i)$, which maps
-$\mathbb H$ onto $\DD$, the entire function $C\circ\tilde f$ is bounded, hence
+$\halfplane$ onto $\DD$, the entire function $C\circ\tilde f$ is bounded, hence
 constant by Liouville's theorem. Since $C$ is injective, $\tilde f$ is
 constant, and so is $f=J\circ\tilde f$.
 

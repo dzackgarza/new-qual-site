@@ -185,7 +185,7 @@ The three singularities in step [](#singular-points-list){.pf-ref} are ordinary 
 ::: pf-proof
 The three distinct lines in step [](#line-factorization){.pf-ref} have no common point: their coefficient matrix is a nonzero scalar multiple of the $3\times3$ Fourier matrix, whose determinant is nonzero because $1,\omega,\omega^2$ are distinct.
 
-Hence each singular point lies on exactly two of the three components, and those two distinct lines meet transversely in $\mathbb P^2$.  Therefore each singularity is an ordinary double point.  There are three pairwise intersections, agreeing with the three points found in step [](#singular-points-list){.pf-ref}.
+Hence each singular point lies on exactly two of the three components, and those two distinct lines meet transversely in $\PP^2$.  Therefore each singularity is an ordinary double point.  There are three pairwise intersections, agreeing with the three points found in step [](#singular-points-list){.pf-ref}.
 :::
 
 :::

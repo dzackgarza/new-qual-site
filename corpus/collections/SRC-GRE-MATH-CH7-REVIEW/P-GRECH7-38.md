@@ -16,11 +16,11 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The source calls $F_X(t)=1/3^t$ and $F_Y(t)=1/4^t$ distribution functions (they decrease, so they cannot be CDFs), names the second variable $W$, and does not state independence. The statement now gives these as tail probabilities $\mathbb P(X>t)$, $\mathbb P(Y>t)$ of independent $X$, $Y$, as the source solution uses them.
+  note: The source calls $F_X(t)=1/3^t$ and $F_Y(t)=1/4^t$ distribution functions (they decrease, so they cannot be CDFs), names the second variable $W$, and does not state independence. The statement now gives these as tail probabilities $\Prob(X>t)$, $\Prob(Y>t)$ of independent $X$, $Y$, as the source solution uses them.
 ---
 
 ::: {.problem}
-Let $X$ and $Y$ be independent random variables with values in $\ZZ^+$ whose tail probabilities are $\mathbb{P}(X>t)=1/3^t$ and $\mathbb{P}(Y>t)=1/4^t$ for $t\in\ZZ^+$. What is the probability that at least one of the variables $X$ and $Y$ is greater than $2$?
+Let $X$ and $Y$ be independent random variables with values in $\ZZ^+$ whose tail probabilities are $\Prob(X>t)=1/3^t$ and $\Prob(Y>t)=1/4^t$ for $t\in\ZZ^+$. What is the probability that at least one of the variables $X$ and $Y$ is greater than $2$?
 
 (A) $5/6$
 (B) $64/81$
@@ -37,7 +37,7 @@ Let $X$ and $Y$ be independent random variables with values in $\ZZ^+$ whose tai
 
 One has
 $$
-\mathbb P(X>2\text{ or }Y>2)=\boxed{\frac16},
+\Prob(X>2\text{ or }Y>2)=\boxed{\frac16},
 $$
 so the answer is (E).
 
@@ -47,9 +47,9 @@ so the answer is (E).
 By independence and the given tail probabilities,
 $$
 \begin{aligned}
-\mathbb P(X>2\text{ or }Y>2)
-&=1-\mathbb P(X\le2,Y\le2)\\
-&=1-\mathbb P(X\le2)\mathbb P(Y\le2)\\
+\Prob(X>2\text{ or }Y>2)
+&=1-\Prob(X\le2,Y\le2)\\
+&=1-\Prob(X\le2)\Prob(Y\le2)\\
 &=1-\frac89\cdot\frac{15}{16}\\
 &=1-\frac56\\
 &=\frac16.

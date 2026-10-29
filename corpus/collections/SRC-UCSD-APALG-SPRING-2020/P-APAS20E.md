@@ -73,7 +73,7 @@ For (c), multiplication of Frobenius characteristics records tensor products of 
 \[
 \operatorname{Sym}^4\otimes\operatorname{Sym}^3
 \cong
-\mathbb S_{(7)}\oplus\mathbb S_{(6,1)}\oplus\mathbb S_{(5,2)}\oplus\mathbb S_{(4,3)}
+\schur_{(7)}\oplus\schur_{(6,1)}\oplus\schur_{(5,2)}\oplus\schur_{(4,3)}
 \]
 in sufficiently large vector-space dimension. Likewise the decomposition in (b), the Schur expansion of \(h_4h_1^3\), computes the irreducible Schur-functor decomposition of
 \[

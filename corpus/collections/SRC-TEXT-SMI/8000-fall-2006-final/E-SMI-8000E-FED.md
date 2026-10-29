@@ -122,7 +122,7 @@ C_2\longrightarrow\operatorname{Aut}(C_5).
 $$
 Now
 $$
-\operatorname{Aut}(C_5)\cong(\mathbf Z/5\mathbf Z)^\times\cong C_4.
+\operatorname{Aut}(C_5)\cong(\ZZ/5\ZZ)^\times\cong C_4.
 $$
 A homomorphism from $C_2$ to $C_4$ has image either trivial or the unique
 subgroup of order two.

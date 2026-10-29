@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb { C P } ^ { 2 } \# \mathbb { C P } ^ { 2 }$ cannot be the boundary of an orientable 5-manifold.
+Show that $\CP ^ { 2 } \# \CP ^ { 2 }$ cannot be the boundary of an orientable 5-manifold.
 However, it is the boundary of a non-orientable manifold.
 :::
 

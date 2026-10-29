@@ -26,7 +26,7 @@ Describe the isomorphism classes of subgroups of the additive group of rational 
 
 (1) How many isomorphism classes are there (what is the exact cardinality)?
 
-(2) Are the subrings $\ZZ[1/p \mid p \in S]$ associated to different sets of primes $S \subseteq \mathbb{P}$ distinct and non-isomorphic?
+(2) Are the subrings $\ZZ[1/p \mid p \in S]$ associated to different sets of primes $S \subseteq \primes$ distinct and non-isomorphic?
 
 (3) Do these exhaust all subgroups of $\QQ$? (Explain Baer's classification via height vectors and types).
 :::

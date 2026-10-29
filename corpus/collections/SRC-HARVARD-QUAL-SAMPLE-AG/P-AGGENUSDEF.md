@@ -164,7 +164,7 @@ are invariants of the abstract curve itself.  Likewise the normalization is intr
 
 Thus changing an embedding
 \[
-C\hookrightarrow\mathbb P^N
+C\hookrightarrow\PP^N
 \]
 can change the degree and the full Hilbert polynomial presentation, but it cannot change $p_a$, $p_g$, or the smooth genus $g$.
 :::

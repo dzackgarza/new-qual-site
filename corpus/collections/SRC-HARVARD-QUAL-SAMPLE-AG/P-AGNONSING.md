@@ -92,7 +92,7 @@ Taking duals does not change the dimension of the finite-dimensional $k$-vector 
 ::: {.pf-step #jacobian-criterion}
 The second criterion is the Jacobian criterion.  Suppose an affine neighborhood of $p$ is presented as
 \[
-C\cap U=V(f_1,\ldots,f_r)\subseteq\mathbb A^n_k.
+C\cap U=V(f_1,\ldots,f_r)\subseteq\AA^n_k.
 \]
 Let
 \[

@@ -113,7 +113,7 @@ p_i\equiv1\pmod{n_i}
 $$
 for $1\le i\le r$. Since $p_i$ is prime,
 $$
-(\mathbf Z/p_i\mathbf Z)^\times
+(\ZZ/p_i\ZZ)^\times
 $$
 is cyclic of order $p_i-1$. Because $n_i\mid p_i-1$, it has a unique subgroup
 $H_i$ of order
@@ -122,7 +122,7 @@ $$
 $$
 and therefore
 $$
-(\mathbf Z/p_i\mathbf Z)^\times/H_i\cong C_{n_i}.
+(\ZZ/p_i\ZZ)^\times/H_i\cong C_{n_i}.
 $$
 
 :::
@@ -141,9 +141,9 @@ N=p_1p_2\cdots p_r.
 $$
 The Chinese remainder theorem gives
 $$
-(\mathbf Z/N\mathbf Z)^\times
+(\ZZ/N\ZZ)^\times
 \cong
-\prod_{i=1}^r(\mathbf Z/p_i\mathbf Z)^\times.
+\prod_{i=1}^r(\ZZ/p_i\ZZ)^\times.
 $$
 Let
 $$
@@ -152,10 +152,10 @@ $$
 under this identification. Then
 $$
 \begin{aligned}
-(\mathbf Z/N\mathbf Z)^\times/H
+(\ZZ/N\ZZ)^\times/H
 &\cong
 \prod_{i=1}^r
-\bigl((\mathbf Z/p_i\mathbf Z)^\times/H_i\bigr)\\
+\bigl((\ZZ/p_i\ZZ)^\times/H_i\bigr)\\
 &\cong C_{n_1}\times\cdots\times C_{n_r}\\
 &\cong A.
 \end{aligned}
@@ -173,12 +173,12 @@ Apply cyclotomic Galois theory and the fundamental theorem of Galois theory.
 
 Let
 $$
-L=\mathbf Q(\zeta_N).
+L=\QQ(\zeta_N).
 $$
 Cyclotomic Galois theory gives
 $$
-\operatorname{Gal}(L/\mathbf Q)
-\cong(\mathbf Z/N\mathbf Z)^\times
+\operatorname{Gal}(L/\QQ)
+\cong(\ZZ/N\ZZ)^\times
 $$
 via
 $$
@@ -191,17 +191,17 @@ K=L^H.
 $$
 
 The ambient Galois group is abelian, so $H$ is normal. Hence
-$K/\mathbf Q$ is Galois, and the fundamental theorem of Galois theory yields
+$K/\QQ$ is Galois, and the fundamental theorem of Galois theory yields
 $$
-\operatorname{Gal}(K/\mathbf Q)
-\cong\operatorname{Gal}(L/\mathbf Q)/H
+\operatorname{Gal}(K/\QQ)
+\cong\operatorname{Gal}(L/\QQ)/H
 \cong A.
 $$
 Thus
 $$
 \boxed{\text{every finite abelian group occurs as }
-\operatorname{Gal}(K/\mathbf Q)
-\text{ for a subfield }K\subseteq\mathbf Q(\zeta_N).}
+\operatorname{Gal}(K/\QQ)
+\text{ for a subfield }K\subseteq\QQ(\zeta_N).}
 $$
 
 :::

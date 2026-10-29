@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Show that $V _ { n } ( \RR ^ { \infty } ) , V _ { n } ( \CC ^ { \infty } ) , V _ { n } ( \mathbb { H } ^ { \infty } )$ are contractible.
+Show that $V _ { n } ( \RR ^ { \infty } ) , V _ { n } ( \CC ^ { \infty } ) , V _ { n } ( \quaternions ^ { \infty } )$ are contractible.
 :::
 
 ::: {.solution}
 
-Let $\FF$ denote any of $\RR,\CC,\mathbb H$, and write
+Let $\FF$ denote any of $\RR,\CC,\quaternions$, and write
 \[
 V_n(\FF^m)
 \]
@@ -134,12 +134,12 @@ By step [](#s1-4){.pf-ref} all homotopy groups vanish, and by step [](#s1-5){.pf
 
 ::: {.pf-step #s1-7}
 
-Applying step [](#s1-6){.pf-ref} to $\FF=\RR,\CC,\mathbb H$ gives
+Applying step [](#s1-6){.pf-ref} to $\FF=\RR,\CC,\quaternions$ gives
 \[
 \boxed{
 V_n(\RR^\infty),\quad
 V_n(\CC^\infty),\quad
-V_n(\mathbb H^\infty)
+V_n(\quaternions^\infty)
 \text{ are contractible}.}
 \]
 

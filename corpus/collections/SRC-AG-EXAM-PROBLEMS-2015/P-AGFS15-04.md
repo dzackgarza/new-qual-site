@@ -24,37 +24,37 @@ audit:
 ::: {.problem}
 Let $f\in k[z,z^{-1}]$ be viewed as a morphism
 \[
-f:\mathbb A^1\setminus\{0\}\longrightarrow\mathbb A^1.
+f:\AA^1\setminus\{0\}\longrightarrow\AA^1.
 \]
 
-1. Show that $f$ extends uniquely to a morphism $\overline f:\mathbb P^1\to\mathbb P^1$.
+1. Show that $f$ extends uniquely to a morphism $\overline f:\PP^1\to\PP^1$.
 
-2. For which $f$ is $f$ an automorphism of $\mathbb A^1\setminus\{0\}$?
+2. For which $f$ is $f$ an automorphism of $\AA^1\setminus\{0\}$?
 
 3. For which $f$ is
    \[
-   \overline f^{\,*}:\Omega_{\mathbb P^1}\longrightarrow\Omega_{\mathbb P^1}
+   \overline f^{\,*}:\Omega_{\PP^1}\longrightarrow\Omega_{\PP^1}
    \]
-   an isomorphism, where $\Omega_{\mathbb P^1}$ is the $k(\mathbb P^1)$-vector space of rational differentials on $\mathbb P^1$?
+   an isomorphism, where $\Omega_{\PP^1}$ is the $k(\PP^1)$-vector space of rational differentials on $\PP^1$?
 :::
 
 ::: {.solution}
-Write \(K=k(z)=k(\mathbb P^1)\).
+Write \(K=k(z)=k(\PP^1)\).
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Every Laurent polynomial extends uniquely to \(\mathbb P^1\).
+Every Laurent polynomial extends uniquely to \(\PP^1\).
 
 ::: pf-proof
 
-A Laurent polynomial \(f\) is an element of the rational function field \(K=k(z)\). A rational function on the nonsingular complete curve \(\mathbb P^1\) determines a morphism to \(\mathbb P^1\): at a point where \(f\) is finite it has value \([f:1]\), and at a pole it has value \([1:0]\). Thus \(f\) extends to a morphism
+A Laurent polynomial \(f\) is an element of the rational function field \(K=k(z)\). A rational function on the nonsingular complete curve \(\PP^1\) determines a morphism to \(\PP^1\): at a point where \(f\) is finite it has value \([f:1]\), and at a pole it has value \([1:0]\). Thus \(f\) extends to a morphism
 \[
-\overline f:\mathbb P^1\longrightarrow\mathbb P^1.
+\overline f:\PP^1\longrightarrow\PP^1.
 \]
 
-The punctured affine line is a dense open subset of \(\mathbb P^1\). Since \(\mathbb P^1\) is separated, two morphisms \(\mathbb P^1\to\mathbb P^1\) agreeing on a dense open subset agree everywhere. Hence the extension is unique.
+The punctured affine line is a dense open subset of \(\PP^1\). Since \(\PP^1\) is separated, two morphisms \(\PP^1\to\PP^1\) agreeing on a dense open subset agree everywhere. Hence the extension is unique.
 
 :::
 
@@ -62,14 +62,14 @@ The punctured affine line is a dense open subset of \(\mathbb P^1\). Since \(\ma
 
 ::: {.pf-step #s2}
 
-The automorphisms of \(\mathbb G_m\) arising from Laurent polynomials are exactly
+The automorphisms of \(\Gm\) arising from Laurent polynomials are exactly
 \[
 \boxed{f(z)=az^{\pm1}\qquad(a\in k^\times).}
 \]
 
 ::: pf-proof
 
-The coordinate ring of \(\mathbb G_m\) is
+The coordinate ring of \(\Gm\) is
 \[
 k[z,z^{-1}].
 \]
@@ -102,7 +102,7 @@ The pullback on rational differentials is an isomorphism exactly for
 
 The \(K\)-vector space of rational differentials is one-dimensional:
 \[
-\Omega_{\mathbb P^1}=K\,dz.
+\Omega_{\PP^1}=K\,dz.
 \]
 For \(h(z)\in K\), pullback by \(\overline f\) is
 \[
@@ -118,7 +118,7 @@ If \(f'(z)=0\), the pullback is zero and cannot be an isomorphism. If \(f'(z)\ne
 \[
 k(f(z))=k(z).
 \]
-This is equivalent to the rational map \(\overline f:\mathbb P^1\to\mathbb P^1\) having degree \(1\), hence being an automorphism of \(\mathbb P^1\).
+This is equivalent to the rational map \(\overline f:\PP^1\to\PP^1\) having degree \(1\), hence being an automorphism of \(\PP^1\).
 
 A degree-one rational function is a Möbius transformation. Since \(f\in k[z,z^{-1}]\), its only possible poles are \(0\) and \(\infty\). A degree-one map has exactly one simple pole. If that pole is \(\infty\), then
 \[
@@ -136,7 +136,7 @@ with \(a\ne0\). Conversely, each of these functions has degree one, so its pullb
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves the unique extension, step [](#s2){.pf-ref} classifies the automorphisms of $\mathbb G_m$, and step [](#s3){.pf-ref} classifies when pullback on rational differentials is an isomorphism.
+Step [](#s1){.pf-ref} proves the unique extension, step [](#s2){.pf-ref} classifies the automorphisms of $\Gm$, and step [](#s3){.pf-ref} classifies when pullback on rational differentials is an isomorphism.
 
 :::
 

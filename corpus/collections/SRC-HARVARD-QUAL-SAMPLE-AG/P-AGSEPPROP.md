@@ -132,23 +132,23 @@ Quasi-separatedness does not imply the uniqueness statement in step [](#dense-re
 ::: pf-proof
 Let $X$ be the affine line with doubled origin: glue two copies
 \[
-U_1\cong\mathbb A^1_k,
+U_1\cong\AA^1_k,
 \qquad
-U_2\cong\mathbb A^1_k
+U_2\cong\AA^1_k
 \]
 along
 \[
-D(t)=\mathbb G_{m,k}
+D(t)=\Gm_{k}
 \]
 by the identity.  The morphism
 \[
 X\longrightarrow\operatorname{Spec}k
 \]
-is quasi-separated, because the intersection of the two affine opens $U_1$ and $U_2$ is the affine, hence quasicompact, open $\mathbb G_m$.
+is quasi-separated, because the intersection of the two affine opens $U_1$ and $U_2$ is the affine, hence quasicompact, open $\Gm$.
 
 Let
 \[
-Z=\mathbb A^1_k
+Z=\AA^1_k
 \]
 and let
 \[
@@ -158,14 +158,14 @@ h:Z\xrightarrow{\sim}U_2\hookrightarrow X
 \]
 be the two chart inclusions.  They agree on the dense open
 \[
-\mathbb G_m\subseteq\mathbb A^1,
+\Gm\subseteq\AA^1,
 \]
 because that is precisely the open along which the two copies were glued, but they send $0$ to the two distinct origins.  Hence
 \[
 g\ne h.
 \]
 
-Their equalizer is exactly $\mathbb G_m\hookrightarrow\mathbb A^1$, which is a quasicompact immersion, as step [](#quasiseparated-gives-quasicompact-immersion){.pf-ref} predicts, but not a closed immersion.
+Their equalizer is exactly $\Gm\hookrightarrow\AA^1$, which is a quasicompact immersion, as step [](#quasiseparated-gives-quasicompact-immersion){.pf-ref} predicts, but not a closed immersion.
 :::
 
 :::

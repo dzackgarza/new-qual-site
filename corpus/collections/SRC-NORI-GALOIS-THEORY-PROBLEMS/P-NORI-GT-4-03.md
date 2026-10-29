@@ -31,7 +31,7 @@ m_\alpha(s)=\alpha s.
 $$
 With respect to any $R$-basis of the free rank-$n$ module $S$, this is represented by a matrix
 $$
-T_\alpha\in\mathbb M_n(R),
+T_\alpha\in\Mat_n(R),
 $$
 and by definition
 $$

@@ -25,10 +25,10 @@ audit:
 Assume $\operatorname{char}k=0$.
 Let
 \[
-C:\quad y^2=(x-e_1)(x-e_2)(x-e_3)\subset\mathbb A^2,
+C:\quad y^2=(x-e_1)(x-e_2)(x-e_3)\subset\AA^2,
 \]
 where $e_1,e_2,e_3\in k$ are pairwise distinct.
-Let $P_j=(e_j,0)\in C$, and let $P_\infty$ be the point at infinity of the projective closure $\overline C\subset\mathbb P^2$.
+Let $P_j=(e_j,0)\in C$, and let $P_\infty$ be the point at infinity of the projective closure $\overline C\subset\PP^2$.
 
 Show that
 \[

@@ -25,7 +25,7 @@ audit:
   note: "Checked the integral-coordinate argument, multiplicativity and positivity of the absolute norm, and the uniform three-quarter remainder bound."
 ---
 ::: {.problem}
-Let $O$ be the ring of integers of $\mathbf{Q}(\sqrt2)$.
+Let $O$ be the ring of integers of $\QQ(\sqrt2)$.
 Show that $O$ is a Euclidean domain with respect to the absolute field norm
 $$
 \delta(a+b\sqrt2)=\left|a^2-2b^2\right|.

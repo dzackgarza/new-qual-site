@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Fix $f\in C(\mathbb T)$, where $\mathbb T=\RR/(2\pi\ZZ)$, and let $s_n$ denote the $n$th partial sum of the Fourier series of $f$.
+Fix $f\in C(\circlegroup)$, where $\circlegroup=\RR/(2\pi\ZZ)$, and let $s_n$ denote the $n$th partial sum of the Fourier series of $f$.
 Prove that
 \[
-\lim_{n\to\infty}\frac{\|s_n\|_{L^\infty(\mathbb T)}}{\log n}=0.
+\lim_{n\to\infty}\frac{\|s_n\|_{L^\infty(\circlegroup)}}{\log n}=0.
 \]
 :::
 
@@ -85,7 +85,7 @@ Dividing by $2\pi$ proves the claim.
 
 ::: {.pf-step #s1-2}
 
-For every continuous $g$ on $\mathbb T$,
+For every continuous $g$ on $\circlegroup$,
 $$
 \|s_n(g)\|_\infty
 \le C_0(1+\log n)\|g\|_\infty.
@@ -120,7 +120,7 @@ $$
 
 ::: pf-proof
 
-Trigonometric polynomials are uniformly dense in $C(\mathbb T)$ by the Stone--Weierstrass theorem.
+Trigonometric polynomials are uniformly dense in $C(\circlegroup)$ by the Stone--Weierstrass theorem.
 
 :::
 
@@ -179,7 +179,7 @@ One has
 $$
 \boxed{
 \lim_{n\to\infty}
-\frac{\|s_n\|_{L^\infty(\mathbb T)}}{\log n}=0.}
+\frac{\|s_n\|_{L^\infty(\circlegroup)}}{\log n}=0.}
 $$
 
 

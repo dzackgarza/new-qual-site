@@ -29,7 +29,7 @@ Find an example of a projective curve which is not rational.
 ::: {.solution}
 Consider the Fermat cubic
 \[
-C=V(x^3+y^3+z^3)\subseteq\mathbb P^2_{\CC}.
+C=V(x^3+y^3+z^3)\subseteq\PP^2_{\CC}.
 \]
 
 ::: pf
@@ -86,13 +86,13 @@ If $C$ were rational, its function field would be isomorphic to
 \[
 \CC(t),
 \]
-so its smooth projective model would be $\mathbb P^1_{\CC}$.  Equivalently, $C$ would be birational to $\mathbb P^1$.
+so its smooth projective model would be $\PP^1_{\CC}$.  Equivalently, $C$ would be birational to $\PP^1$.
 
 Genus is a birational invariant of smooth projective curves, but
 \[
 g(C)=1
 \qquad\text{and}\qquad
-g(\mathbb P^1)=0.
+g(\PP^1)=0.
 \]
 This is impossible.  Hence $C$ is not rational.
 :::
@@ -102,7 +102,7 @@ This is impossible.  Hence $C$ is not rational.
 ::: {.pf-step #final-example}
 Therefore
 \[
-\boxed{V(x^3+y^3+z^3)\subseteq\mathbb P^2_{\CC}}
+\boxed{V(x^3+y^3+z^3)\subseteq\PP^2_{\CC}}
 \]
 is a projective curve that is not rational.
 

@@ -167,7 +167,7 @@ Substitute this into step [](#delta-invariant-formula){.pf-ref}.
 ::: {.pf-step #cuspidal-cubic-example}
 For example, the cuspidal cubic
 \[
-C=V(y^3-x^2z)\subseteq\mathbb P^2
+C=V(y^3-x^2z)\subseteq\PP^2
 \]
 has
 \[
@@ -185,7 +185,7 @@ so step [](#delta-invariant-formula){.pf-ref} gives
 \[
 p_g(C)=1-1=0.
 \]
-Equivalently, the normalization is $\mathbb P^1$, which has genus $0$.
+Equivalently, the normalization is $\PP^1$, which has genus $0$.
 :::
 
 :::

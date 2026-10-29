@@ -40,7 +40,7 @@ Choose a primitive element $e\in L$. Since the functional $B(e,-)$ is primitive 
 \[
 B(e,f)=1.
 \]
-Then the restriction of $B$ to $P=\mathbb Ze\oplus\mathbb Zf$ has matrix
+Then the restriction of $B$ to $P=\ZZ e\oplus\ZZ f$ has matrix
 \[
 \begin{pmatrix}0&1\\-1&0\end{pmatrix}.
 \]

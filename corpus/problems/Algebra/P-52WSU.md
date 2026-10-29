@@ -20,25 +20,25 @@ audit:
 ---
 
 ::: {.problem}
-What is a Toeplitz operator? Define the Hardy space $H^2(\mathbb{T})$, the Toeplitz operator $T_\varphi$ associated with a symbol $\varphi \in L^\infty(\mathbb{T})$, and describe its matrix representation.
+What is a Toeplitz operator? Define the Hardy space $H^2(\circlegroup)$, the Toeplitz operator $T_\varphi$ associated with a symbol $\varphi \in L^\infty(\circlegroup)$, and describe its matrix representation.
 :::
 
 ::: {.solution}
-Let $\mathbb T=\{z\in\CC:\abs{z}=1\}$ with normalized Lebesgue measure. The Hardy space is
+Let $\circlegroup=\{z\in\CC:\abs{z}=1\}$ with normalized Lebesgue measure. The Hardy space is
 $$
-H^2(\mathbb T)
+H^2(\circlegroup)
 =
-\left\{f\in L^2(\mathbb T):\widehat f(n)=0\text{ for }n<0\right\}
+\left\{f\in L^2(\circlegroup):\widehat f(n)=0\text{ for }n<0\right\}
 =
 \overline{\operatorname{span}}\{1,z,z^2,\ldots\}.
 $$
 Let
 $$
-P_+:L^2(\mathbb T)\to H^2(\mathbb T)
+P_+:L^2(\circlegroup)\to H^2(\circlegroup)
 $$
 be the orthogonal (Szegő) projection.
 
-For $\varphi\in L^\infty(\mathbb T)$, multiplication by $\varphi$ is bounded on $L^2$, and the Toeplitz operator with symbol $\varphi$ is
+For $\varphi\in L^\infty(\circlegroup)$, multiplication by $\varphi$ is bounded on $L^2$, and the Toeplitz operator with symbol $\varphi$ is
 $$
 T_\varphi=P_+M_\varphi|_{H^2},
 \qquad

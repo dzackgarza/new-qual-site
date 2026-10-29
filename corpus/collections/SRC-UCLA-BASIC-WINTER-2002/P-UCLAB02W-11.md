@@ -36,7 +36,7 @@ We construct an orthonormal basis for each form.
 
 For the standard upper-triangular form, use induction on $n=\dim V$.
 Over $\CC$, the adjoint $T^*$ has an eigenvector $0\ne w\in V$.
-Let $W=\mathbb Cw$.
+Let $W=\CC w$.
 Then $W$ is $T^*$-invariant, so by the orthogonal-complement criterion of the hint, $W^\perp$ is $T$-invariant.
 By induction, $T|_{W^\perp}$ has an orthonormal basis in which its matrix is upper triangular.
 Appending the unit vector $w/\|w\|$ gives an orthonormal basis of $V$ in which the matrix of $T$ is upper triangular, i.e. its entries vanish for $i>j$.

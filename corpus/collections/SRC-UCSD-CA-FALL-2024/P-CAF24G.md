@@ -13,8 +13,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathbb{H} = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane.
-Let $u : \mathbb{H} \to \RR$ be a continuous bounded function which is harmonic in $\mathbb{H}$ and $u = 0$ on $\partial\mathbb{H}$.
+Let $\halfplane = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane.
+Let $u : \halfplane \to \RR$ be a continuous bounded function which is harmonic in $\halfplane$ and $u = 0$ on $\partial\halfplane$.
 Show that $u$ is constant.
 :::
 

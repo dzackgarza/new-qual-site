@@ -23,7 +23,7 @@ Give Hausdorff examples of each requested phenomenon:
 
 ::: {.solution}
 
-Let \(\mathbb S\) denote the Sorgenfrey line.
+Let \(\sorgenfrey\) denote the Sorgenfrey line.
 
 ## 1. Normal factors with nonnormal product
 
@@ -122,7 +122,7 @@ countable subcover of \(\mathcal U\).
 
 ::: {.pf-step #s1-3}
 
-Therefore \(\mathbb S\) is normal.
+Therefore \(\sorgenfrey\) is normal.
 
 
 ::: pf-proof
@@ -137,7 +137,7 @@ A regular Lindelöf space is normal. Apply steps [](#s1-1){.pf-ref} through [](#
 
 The Sorgenfrey plane
 \[
-\mathbb S^2
+\sorgenfrey^2
 \]
 is separable.
 
@@ -164,7 +164,7 @@ The anti-diagonal
 \[
 D=\{(x,-x):x\in\RR\}
 \]
-is closed in \(\mathbb S^2\).
+is closed in \(\sorgenfrey^2\).
 
 
 ::: pf-proof
@@ -285,7 +285,7 @@ Thus
 
 ::: {.pf-step #s1-9}
 
-If \(\mathbb S^2\) were normal, then it would admit at least
+If \(\sorgenfrey^2\) were normal, then it would admit at least
 \[
 2^{\mathfrak c}
 \]
@@ -298,13 +298,13 @@ For each subset
 \[
 A\subseteq D,
 \]
-both \(A\) and \(D-A\) are closed in \(\mathbb S^2\), because \(D\) is
+both \(A\) and \(D-A\) are closed in \(\sorgenfrey^2\), because \(D\) is
 closed and discrete.
 
-If \(\mathbb S^2\) were normal, Urysohn's lemma would provide a continuous
+If \(\sorgenfrey^2\) were normal, Urysohn's lemma would provide a continuous
 function
 \[
-f_A:\mathbb S^2\to[0,1]
+f_A:\sorgenfrey^2\to[0,1]
 \]
 such that
 \[
@@ -348,8 +348,8 @@ compare steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref}.
 Therefore
 \[
 \boxed{
-\mathbb S\text{ and }\mathbb S\text{ are normal, but }
-\mathbb S\times\mathbb S\text{ is not normal}.}
+\sorgenfrey\text{ and }\sorgenfrey\text{ are normal, but }
+\sorgenfrey\times\sorgenfrey\text{ is not normal}.}
 \]
 
 
@@ -380,7 +380,7 @@ Hausdorff space is completely regular by Urysohn's lemma.
 
 Therefore
 \[
-Y=\mathbb S^2
+Y=\sorgenfrey^2
 \]
 is completely regular Hausdorff.
 
@@ -420,7 +420,7 @@ not normal.
 
 ::: pf-proof
 
-Compact Hausdorff spaces are normal. The subspace \(Y\cong\mathbb S^2\) is
+Compact Hausdorff spaces are normal. The subspace \(Y\cong\sorgenfrey^2\) is
 not normal by step [](#s1-11){.pf-ref}.
 
 :::

@@ -21,22 +21,22 @@ audit:
 14. Prove that all conformal mappings from the upper half-plane H to the unit disc D take the form
 
 $$
-e ^ {i \theta} \frac {z - \beta}{z - \overline {{\beta}}}, \qquad \theta \in \RR \text {   and   } \beta \in \mathbb {H}.
+e ^ {i \theta} \frac {z - \beta}{z - \overline {{\beta}}}, \qquad \theta \in \RR \text {   and   } \beta \in \halfplane.
 $$
 :::
 
 ::: {.solution}
-For $\beta\in\mathbb H$, define
+For $\beta\in\halfplane$, define
 \[
 \phi_\beta(z)=\frac{z-\beta}{z-\overline\beta}.
 \]
-For $z\in\mathbb H$,
+For $z\in\halfplane$,
 \[
 |z-\beta|<|z-\overline\beta|,
 \]
-so $|\phi_\beta(z)|<1$. The map $\phi_\beta$ is Möbius, sends $\beta$ to $0$, and maps the real axis to the unit circle; hence it is a conformal bijection $\mathbb H\to\DD$.
+so $|\phi_\beta(z)|<1$. The map $\phi_\beta$ is Möbius, sends $\beta$ to $0$, and maps the real axis to the unit circle; hence it is a conformal bijection $\halfplane\to\DD$.
 
-Now let $F:\mathbb H\to\DD$ be any conformal bijection and let
+Now let $F:\halfplane\to\DD$ be any conformal bijection and let
 \[
 \beta=F^{-1}(0).
 \]
@@ -53,5 +53,5 @@ for some $\theta\in\RR$. Therefore
 F(z)=e^{i\theta}\phi_\beta(z)
 =e^{i\theta}\frac{z-\beta}{z-\overline\beta}.
 \]
-Conversely, every map of this form is a rotation composed with the conformal bijection $\phi_\beta$, so it maps $\mathbb H$ conformally onto $\DD$.
+Conversely, every map of this form is a rotation composed with the conformal bijection $\phi_\beta$, so it maps $\halfplane$ conformally onto $\DD$.
 :::

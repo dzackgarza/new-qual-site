@@ -446,13 +446,13 @@ A finite type morphism can have image which is open but not closed.
 ::: pf-proof
 The projection
 \[
-\pi:V(xy-1)\subseteq\mathbb A^2_k\longrightarrow\mathbb A^1_k,
+\pi:V(xy-1)\subseteq\AA^2_k\longrightarrow\AA^1_k,
 \qquad
 (x,y)\longmapsto x,
 \]
 has image
 \[
-\mathbb A^1_k\setminus\{0\}.
+\AA^1_k\setminus\{0\}.
 \]
 Indeed, the equation $xy=1$ has a solution $y=x^{-1}$ exactly when $x\ne0$.  This image is open and not closed.
 :::
@@ -465,7 +465,7 @@ A finite type morphism can have image which is closed but not open.
 ::: pf-proof
 The closed immersion
 \[
-\{0\}\hookrightarrow\mathbb A^1_k
+\{0\}\hookrightarrow\AA^1_k
 \]
 is finite type and has image the closed point $\{0\}$, which is not open.
 :::
@@ -478,7 +478,7 @@ A finite type morphism can have image which is neither open nor closed.
 ::: pf-proof
 Consider
 \[
-F:\mathbb A^2_k\longrightarrow\mathbb A^2_k,
+F:\AA^2_k\longrightarrow\AA^2_k,
 \qquad
 (x,y)\longmapsto(x,xy).
 \]
@@ -488,7 +488,7 @@ D(x)\cup\{(0,0)\}.
 \]
 For $x\ne0$, any second coordinate $v$ occurs by taking $y=v/x$.  For $x=0$, the second coordinate is forced to be $0$.
 
-This subset is not closed because it contains the dense open $D(x)$ but is not all of $\mathbb A^2$.  It is not open because every Zariski-open neighborhood of $(0,0)$ meets the line $x=0$ away from the origin, while those points are not in the image.
+This subset is not closed because it contains the dense open $D(x)$ but is not all of $\AA^2$.  It is not open because every Zariski-open neighborhood of $(0,0)$ meets the line $x=0$ away from the origin, while those points are not in the image.
 Equivalently, its complement
 \[
 \{(0,v):v\ne0\}

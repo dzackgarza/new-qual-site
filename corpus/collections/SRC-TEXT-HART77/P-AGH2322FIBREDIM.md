@@ -278,7 +278,7 @@ B[t_1,\ldots,t_e]\hookrightarrow A
 \]
 defines a dominant generically finite morphism
 \[
-g:X\longrightarrow X_1:=\Spec B[t_1,\ldots,t_e]\cong\mathbb A^e_Y.
+g:X\longrightarrow X_1:=\Spec B[t_1,\ldots,t_e]\cong\AA^e_Y.
 \]
 
 ::: pf-proof
@@ -335,7 +335,7 @@ For every $y\in f(U)$,
 The morphism $X_1\to Y$ is affine $e$-space.
 Its fibre at $y$ is
 \[
-(X_1)_y\cong\mathbb A^e_{\kappa(y)}.
+(X_1)_y\cong\AA^e_{\kappa(y)}.
 \]
 The open set $W_y$ is nonempty because $y\in f(U)$ and $U\to W$ is surjective.
 Hence

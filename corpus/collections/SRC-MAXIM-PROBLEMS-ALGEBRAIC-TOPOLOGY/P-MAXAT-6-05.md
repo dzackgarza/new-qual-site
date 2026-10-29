@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if n is a power of 2, then $\mathbb { R P } ^ { n }$ cannot be smoothly embedded in $\RR ^ { 2 n - 1 }$
+Show that if n is a power of 2, then $\RP ^ { n }$ cannot be smoothly embedded in $\RR ^ { 2 n - 1 }$
 :::
 
 ::: {.solution}

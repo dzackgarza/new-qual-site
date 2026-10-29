@@ -183,9 +183,9 @@ For $m,n\geq 1$ and $d = \gcd(m, n)$, with the first argument indexing rows and 
 | --- | --- | --- | --- |
 | $\ZZ/n$ | $\ZZ/d$ | $\ZZ/n$ | $0$ |
 | $\ZZ$ | $0$ | $0$ | $0$ |
-| $\QQ$ | $0$ | $\mathbb{A}_f/\QQ$ | $0$ |
+| $\QQ$ | $0$ | $\adeles_f/\QQ$ | $0$ |
 
-Here $\mathbb{A}_f$ is the ring of finite adeles of $\QQ$, containing $\QQ$ diagonally.
+Here $\adeles_f$ is the ring of finite adeles of $\QQ$, containing $\QQ$ diagonally.
 A computation of $\Ext^1_\ZZ(\QQ,\ZZ)$ is in [these notes on Tor and Ext](http://math.jhu.edu/~jmb/note/torext.pdf).
 
 :::

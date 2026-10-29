@@ -95,7 +95,7 @@ If $\operatorname{char}F\ne2$, the $\RP^\infty$ tail contributes no positive-dim
 p_X(t)=\frac{1-t^{2n+2}}{1-t^2}.
 \]
 
-For the analogous pushout $Y$ associated to $\CP^\infty\to\mathbb{HP}^\infty$, the pair $(Y,\mathbb{HP}^n)$ is the same cellular pair as $(\CP^\infty,\CP^{2n+1})$. Thus, over every field,
+For the analogous pushout $Y$ associated to $\CP^\infty\to\quatprojective^\infty$, the pair $(Y,\quatprojective^n)$ is the same cellular pair as $(\CP^\infty,\CP^{2n+1})$. Thus, over every field,
 \[
 H^*(Y;F)
 \]

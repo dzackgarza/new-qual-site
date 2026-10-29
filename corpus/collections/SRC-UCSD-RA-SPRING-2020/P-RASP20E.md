@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \in C^1(\mathbb{T})$.
+Let $f \in C^1(\circlegroup)$.
 Let $\hat{f}(k)$ ($k \in \ZZ$) be the Fourier coefficients of $f$.
 Prove that
 $$
-\sum_{k=-\infty}^{\infty} |\hat{f}(k)| \leq \|f\|_{L^1(\mathbb{T})} + \frac{1}{\sqrt{2}\pi}\|f'\|_{L^2(\mathbb{T})} \sqrt{\sum_{k=1}^{\infty} \frac{1}{k^2}}.
+\sum_{k=-\infty}^{\infty} |\hat{f}(k)| \leq \|f\|_{L^1(\circlegroup)} + \frac{1}{\sqrt{2}\pi}\|f'\|_{L^2(\circlegroup)} \sqrt{\sum_{k=1}^{\infty} \frac{1}{k^2}}.
 $$
 :::
 
@@ -50,7 +50,7 @@ we have
 \[
 |\widehat f(0)|
 =\left|\int_0^1f(x)\,dx\right|
-\le \|f\|_{L^1(\mathbb T)}.
+\le \|f\|_{L^1(\circlegroup)}.
 \]
 
 :::

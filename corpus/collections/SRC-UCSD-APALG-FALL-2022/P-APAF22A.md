@@ -128,7 +128,7 @@ In particular,
 Taking $k=8$ in step [](#phi-k-formula){.pf-ref} gives
 \[
 \phi^8(e_{10})=8!\,e_2+v_8,
-\qquad v_8\in F_1=\mathbb Ce_1.
+\qquad v_8\in F_1=\CC e_1.
 \]
 Since $8!\ne0$ in $\CC$, the coefficient of $e_2$ is nonzero. Hence the vector cannot vanish.
 :::

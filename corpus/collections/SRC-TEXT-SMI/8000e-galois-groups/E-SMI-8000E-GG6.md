@@ -34,11 +34,11 @@ Show there is also a transposition, and deduce that the Galois group over $\QQ$ 
 ::: {.solution}
 Let
 $$
-f(X)=X^5-X-1\in\mathbf Z[X]
+f(X)=X^5-X-1\in\ZZ[X]
 $$
 and let
 $$
-G=\operatorname{Gal}(f/\mathbf Q)\le S_5.
+G=\operatorname{Gal}(f/\QQ)\le S_5.
 $$
 
 ::: pf
@@ -178,7 +178,7 @@ S_5\le G\le S_5.
 $$
 Therefore
 $$
-\boxed{\operatorname{Gal}(X^5-X-1/\mathbf Q)\cong S_5.}
+\boxed{\operatorname{Gal}(X^5-X-1/\QQ)\cong S_5.}
 $$
 
 :::

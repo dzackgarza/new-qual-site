@@ -101,7 +101,7 @@ If $m=0$, define
 \widetilde g(d+kc)=g(d)
 \qquad(d\in D,\ k\in\ZZ).
 \]
-This is well defined and extends $g$ to the strictly larger subgroup $D+\mathbb Zc$, contradicting maximality.
+This is well defined and extends $g$ to the strictly larger subgroup $D+\ZZ c$, contradicting maximality.
 
 ::: pf-proof
 
@@ -122,7 +122,7 @@ Define
 \[
 \widetilde g(d+kc)=g(d)+ka.
 \]
-Then $\widetilde g:D+\mathbb Zc\to A$ is a well-defined homomorphism extending $g$.
+Then $\widetilde g:D+\ZZ c\to A$ is a well-defined homomorphism extending $g$.
 
 ::: pf-proof
 
@@ -141,7 +141,7 @@ Additivity is immediate from the formula.
 
 ::: pf-step
 
-Since $c\notin D$, the subgroup $D+\mathbb Zc$ strictly contains $D$, contradicting maximality in both cases.
+Since $c\notin D$, the subgroup $D+\ZZ c$ strictly contains $D$, contradicting maximality in both cases.
 Therefore $D=C$, so $f$ extends to $C$.
 Hence $A$ is injective.
 

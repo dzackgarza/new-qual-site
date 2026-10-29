@@ -33,7 +33,7 @@ Construct a non-abelian group of order $39$ or prove that no such group exists.
 
 ::: {.pf-step #s1}
 
-Let $N=\langle a\rangle\cong C_{13}$. Then $\operatorname{Aut}(N)\cong(\mathbf Z/13\mathbf Z)^\times\cong C_{12}$ contains an automorphism of order $3$.
+Let $N=\langle a\rangle\cong C_{13}$. Then $\operatorname{Aut}(N)\cong(\ZZ/13\ZZ)^\times\cong C_{12}$ contains an automorphism of order $3$.
 
 ::: pf-proof
 

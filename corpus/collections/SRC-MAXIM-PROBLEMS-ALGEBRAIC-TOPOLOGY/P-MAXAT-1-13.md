@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb { R P } ^ { 2 n } , \mathbb { C P } ^ { 2 n }$ are fixed-point free spaces.
+Show that $\RP ^ { 2 n } , \CP ^ { 2 n }$ are fixed-point free spaces.
 :::
 
 ::: {.solution}

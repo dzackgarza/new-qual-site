@@ -41,11 +41,11 @@ A
 Indeed, if $0\ne v=Nw\in\ker N$, then $N^2w=0$ while $Nw\ne0$, which would give a Jordan chain of length at least $2$ for $\lambda$, contradicting algebraic multiplicity one. Rank-nullity now gives
 \[
 \CC^n=\ker N\oplus\operatorname{im}N
-=\mathbb Cx\oplus\operatorname{im}(A-\lambda I).
+=\CC x\oplus\operatorname{im}(A-\lambda I).
 \]
 The subspace $\operatorname{im}N$ is $A$-invariant, because $A$ commutes with $N$: if $v=Nu$, then $Av=N(Au)\in\operatorname{im}N$.
 
-Choose the columns of $X$ to be a basis of $\operatorname{im}N$. Then $S=(x\;X)$ is nonsingular. Relative to the decomposition above, $A$ acts by $\lambda$ on $\mathbb Cx$ and preserves $\operatorname{im}N$, so for some $(n-1)\times(n-1)$ matrix $M$,
+Choose the columns of $X$ to be a basis of $\operatorname{im}N$. Then $S=(x\;X)$ is nonsingular. Relative to the decomposition above, $A$ acts by $\lambda$ on $\CC x$ and preserves $\operatorname{im}N$, so for some $(n-1)\times(n-1)$ matrix $M$,
 \[
 S^{-1}AS=\begin{pmatrix}\lambda&0\\0&M\end{pmatrix}.
 \]

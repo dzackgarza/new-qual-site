@@ -18,15 +18,15 @@ review: draft
 ::: {.problem}
 Let $A(z) = \sum_{n=0}^\infty a_n z^n$ be a power series with radius of convergence equal to one.
 
-(a) Give an example where $A(z)$ diverges at each point of $\mathbb{T}$, and explain why.
+(a) Give an example where $A(z)$ diverges at each point of $\circlegroup$, and explain why.
 
-(b) Give an example where $A(z)$ converges absolutely on $\mathbb{T}$, and explain why.
+(b) Give an example where $A(z)$ converges absolutely on $\circlegroup$, and explain why.
 
-(c) Prove that $A(z)$ has a singularity on $\mathbb{T}$, i.e. cannot be analytically continued to an open set containing $\overline{\DD}$.
+(c) Prove that $A(z)$ has a singularity on $\circlegroup$, i.e. cannot be analytically continued to an open set containing $\overline{\DD}$.
 
 (d) Prove that if $A(z)$ has nonnegative coefficients, the point $z = 1$ is a singularity of $A(z)$.
 
-(e) Verify that $A(z) = \sum_{n=0}^\infty z^{n!}$ has radius of convergence one, and that each point of $\mathbb{T}$ is a singularity of $A(z)$.
+(e) Verify that $A(z) = \sum_{n=0}^\infty z^{n!}$ has radius of convergence one, and that each point of $\circlegroup$ is a singularity of $A(z)$.
 :::
 
 ::: {.remark}
@@ -42,7 +42,7 @@ A(z)=\sum_{n=0}^\infty z^n.
 \]
 Its radius of convergence is $1$. At every $|z|=1$, the terms $z^n$ have
 modulus $1$ and hence do not tend to $0$, so the series diverges at every
-point of $\mathbb T$.
+point of $\circlegroup$.
 
 (b) Take
 \[
@@ -56,7 +56,7 @@ $\overline{\DD}$, compactness of $\overline{\DD}$ would give
 $\varepsilon>0$ such that the continuation is holomorphic on
 $|z|<1+\varepsilon$. Its Taylor series at $0$ would then have radius of
 convergence at least $1+\varepsilon$, contradicting the assumed radius $1$.
-Thus at least one point of $\mathbb T$ is a singularity.
+Thus at least one point of $\circlegroup$ is a singularity.
 
 (d) This is Pringsheim's theorem in this special case. Suppose, to the
 contrary, that $A$ were holomorphic in a neighborhood of $1$. Choose
@@ -93,5 +93,5 @@ Thus the radius of convergence is $1$. The nonzero exponents satisfy
 \frac{(n+1)!}{n!}=n+1\ge2.
 \]
 By the Hadamard gap theorem, the unit circle is a natural boundary for this
-lacunary series. Hence every point of $\mathbb T$ is a singularity.
+lacunary series. Hence every point of $\circlegroup$ is a singularity.
 :::

@@ -33,11 +33,11 @@ What does the degree — the leading term of the Hilbert polynomial $P_X(r)$ —
 ::: pf-step
 If
 \[
-i:C\hookrightarrow\mathbb P^N
+i:C\hookrightarrow\PP^N
 \]
 is a projective embedding of a smooth projective curve, then the embedding is encoded by the very ample line bundle
 \[
-L=i^*\mathcal O_{\mathbb P^N}(1).
+L=i^*\mathcal O_{\PP^N}(1).
 \]
 
 ::: pf-proof
@@ -58,7 +58,7 @@ P_C(r)=\chi(C,L^{\otimes r})
 ::: pf-proof
 By definition,
 \[
-\mathcal O_C(r)=i^*\mathcal O_{\mathbb P^N}(r)=L^{\otimes r},
+\mathcal O_C(r)=i^*\mathcal O_{\PP^N}(r)=L^{\otimes r},
 \]
 so
 \[
@@ -92,9 +92,9 @@ Geometrically, this is the same statement: a general hyperplane cuts the curve i
 :::
 
 ::: {.pf-step #cubic-veronese}
-On $\mathbb P^1$,
+On $\PP^1$,
 \[
-L=\mathcal O_{\mathbb P^1}(3)
+L=\mathcal O_{\PP^1}(3)
 \]
 has four global sections
 \[
@@ -102,7 +102,7 @@ s^3,\ s^2t,\ st^2,\ t^3
 \]
 and defines the cubic Veronese embedding
 \[
-\nu_3:\mathbb P^1\hookrightarrow\mathbb P^3,
+\nu_3:\PP^1\hookrightarrow\PP^3,
 \qquad
 [s:t]\longmapsto[s^3:s^2t:st^2:t^3].
 \]
@@ -111,9 +111,9 @@ Its image is the twisted cubic.
 ::: pf-proof
 One has
 \[
-h^0(\mathbb P^1,\mathcal O(3))=4,
+h^0(\PP^1,\mathcal O(3))=4,
 \]
-and the displayed monomials form a basis.  The complete linear system $|\mathcal O(3)|$ is very ample, so the associated map is an embedding.  By definition its image is the degree-three rational normal curve in $\mathbb P^3$, i.e. the twisted cubic.
+and the displayed monomials form a basis.  The complete linear system $|\mathcal O(3)|$ is very ample, so the associated map is an embedding.  By definition its image is the degree-three rational normal curve in $\PP^3$, i.e. the twisted cubic.
 :::
 
 :::
@@ -121,15 +121,15 @@ and the displayed monomials form a basis.  The complete linear system $|\mathcal
 ::: {.pf-step #twisted-cubic-hilbert-poly}
 Its Hilbert polynomial is
 \[
-\boxed{P_{\nu_3(\mathbb P^1)}(r)=3r+1.}
+\boxed{P_{\nu_3(\PP^1)}(r)=3r+1.}
 \]
 
 ::: pf-proof
 By step [](#hilbert-poly-embedded-curve){.pf-ref},
 \[
 P(r)
-=\chi\bigl(\mathbb P^1,\mathcal O(3r)\bigr)
-=3r+1-g(\mathbb P^1)
+=\chi\bigl(\PP^1,\mathcal O(3r)\bigr)
+=3r+1-g(\PP^1)
 =3r+1.
 \]
 Thus the leading coefficient is $3$, exactly the degree of $\mathcal O(3)$ and of the twisted cubic.
@@ -141,13 +141,13 @@ Thus the leading coefficient is $3$, exactly the degree of $\mathcal O(3)$ and o
 This also explains why degree can change when the same abstract curve is embedded differently.
 
 ::: pf-proof
-The identity embedding of $\mathbb P^1$ uses $\mathcal O(1)$ and has degree $1$, while the cubic Veronese uses $\mathcal O(3)$ and has degree $3$.  The abstract curve and its genus have not changed; only the embedding line bundle has.
+The identity embedding of $\PP^1$ uses $\mathcal O(1)$ and has degree $1$, while the cubic Veronese uses $\mathcal O(3)$ and has degree $3$.  The abstract curve and its genus have not changed; only the embedding line bundle has.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#hilbert-poly-embedded-curve){.pf-ref}, [](#degree-equals-linebundle-degree){.pf-ref}, [](#cubic-veronese){.pf-ref} and [](#twisted-cubic-hilbert-poly){.pf-ref} give the requested connection between the leading Hilbert-polynomial term and $\mathcal O(3)$ on $\mathbb P^1$.
+Steps [](#hilbert-poly-embedded-curve){.pf-ref}, [](#degree-equals-linebundle-degree){.pf-ref}, [](#cubic-veronese){.pf-ref} and [](#twisted-cubic-hilbert-poly){.pf-ref} give the requested connection between the leading Hilbert-polynomial term and $\mathcal O(3)$ on $\PP^1$.
 :::
 
 :::

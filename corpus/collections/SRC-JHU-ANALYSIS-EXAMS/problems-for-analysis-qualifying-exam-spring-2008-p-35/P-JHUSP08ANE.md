@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-5) Prove the following statement: If f and g are entire functions, $g ( z ) \neq 0$ and $| f ( z ) | \leq | g ( z ) |$ for all $z \in \mathbf { C } .$ , then $f ( z ) = C g ( z )$ for some constant C.
+5) Prove the following statement: If f and g are entire functions, $g ( z ) \neq 0$ and $| f ( z ) | \leq | g ( z ) |$ for all $z \in \CC .$ , then $f ( z ) = C g ( z )$ for some constant C.
 :::
 
 ::: {.solution}

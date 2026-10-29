@@ -83,7 +83,7 @@ Both kernels are $A$-invariant because they are kernels of polynomials in $A$.
 
 Since the geometric multiplicity of $\lambda$ is one,
 \[
-\ker(A-\lambda I)=\mathbb Cx.
+\ker(A-\lambda I)=\CC x.
 \]
 Choose a matrix $X$ whose columns form a basis of $\ker q(A)$.
 Then
@@ -94,7 +94,7 @@ is nonsingular.
 
 ::: pf-proof
 
-The eigenspace for $\lambda$ is one-dimensional and contains the nonzero eigenvector $x$, so it is exactly $\mathbb Cx$.
+The eigenspace for $\lambda$ is one-dimensional and contains the nonzero eigenvector $x$, so it is exactly $\CC x$.
 By step [](#s2){.pf-ref}, adjoining a basis of the complementary summand $\ker q(A)$ to $x$ gives a basis of $V$.
 
 :::
@@ -115,7 +115,7 @@ for some $(n-1)\times(n-1)$ matrix $M$.
 
 ::: pf-proof
 
-The first summand $\mathbb Cx$ is $A$-invariant and $Ax=\lambda x$, while the complementary summand $\ker q(A)$ is also $A$-invariant by step [](#s2){.pf-ref}. Therefore there are no off-diagonal blocks, and the restriction of $A$ to $\mathbb Cx$ is multiplication by $\lambda$.
+The first summand $\CC x$ is $A$-invariant and $Ax=\lambda x$, while the complementary summand $\ker q(A)$ is also $A$-invariant by step [](#s2){.pf-ref}. Therefore there are no off-diagonal blocks, and the restriction of $A$ to $\CC x$ is multiplication by $\lambda$.
 
 :::
 

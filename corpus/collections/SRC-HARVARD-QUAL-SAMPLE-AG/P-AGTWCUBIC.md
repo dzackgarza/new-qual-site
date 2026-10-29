@@ -32,9 +32,9 @@ More generally, for a curve $Y \subseteq \AA^3$ with $Y \cong \AA^1$: is it a se
 :::
 
 ::: {.solution}
-Let $C\subseteq\mathbb P^3$ be the projective closure of the affine twisted cubic.  In homogeneous coordinates $[x:y:z:w]$ it is parametrized by
+Let $C\subseteq\PP^3$ be the projective closure of the affine twisted cubic.  In homogeneous coordinates $[x:y:z:w]$ it is parametrized by
 \[
-\nu_3:\mathbb P^1\longrightarrow\mathbb P^3,
+\nu_3:\PP^1\longrightarrow\PP^3,
 \qquad
 [s:t]\longmapsto[s^3:s^2t:st^2:t^3].
 \]
@@ -161,7 +161,7 @@ Therefore $V(F,G)=C$ as sets.
 :::
 
 ::: {.pf-step #not-scheme-theoretic-intersection}
-The twisted cubic is not the scheme-theoretic intersection of two surfaces in $\mathbb P^3$.
+The twisted cubic is not the scheme-theoretic intersection of two surfaces in $\PP^3$.
 
 ::: pf-proof
 Suppose instead that

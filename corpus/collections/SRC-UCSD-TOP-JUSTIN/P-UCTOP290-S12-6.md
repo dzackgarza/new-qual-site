@@ -87,15 +87,15 @@ The forgetful map from relative to absolute cohomology sends the relative produc
 
 ::: pf-step
 
-Consequently $\mathbb CP^n$ cannot be covered by fewer than $n+1$ contractible open sets.
+Consequently $\CP^n$ cannot be covered by fewer than $n+1$ contractible open sets.
 
 ::: pf-proof
 
 In
 $$
-H^*(\mathbb CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1}),\qquad |\alpha|=2,
+H^*(\CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1}),\qquad |\alpha|=2,
 $$
-the $n$-fold product $\alpha^n$ is nonzero. If $\mathbb CP^n$ were covered by $n$ contractible open sets, step [](#s4){.pf-ref} would force $\alpha^n=0$.
+the $n$-fold product $\alpha^n$ is nonzero. If $\CP^n$ were covered by $n$ contractible open sets, step [](#s4){.pf-ref} would force $\alpha^n=0$.
 
 :::
 
@@ -103,13 +103,13 @@ the $n$-fold product $\alpha^n$ is nonzero. If $\mathbb CP^n$ were covered by $n
 
 ::: pf-step
 
-Likewise $\mathbb RP^n$ cannot be covered by fewer than $n+1$ contractible open sets.
+Likewise $\RP^n$ cannot be covered by fewer than $n+1$ contractible open sets.
 
 ::: pf-proof
 
 Use mod-$2$ cohomology
 $$
-H^*(\mathbb RP^n;\FF_2)=\FF_2[\beta]/(\beta^{n+1}),\qquad |\beta|=1,
+H^*(\RP^n;\FF_2)=\FF_2[\beta]/(\beta^{n+1}),\qquad |\beta|=1,
 $$
 for which $\beta^n\ne0$.
 

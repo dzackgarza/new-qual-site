@@ -38,9 +38,9 @@ topics:
 
 ::: {.example title="Standard spaces"}
 $$
-S^n,\ \DD^n,\ T^n,\ \RP^n,\ \CP^n,\ \mathbb{M},\ \mathbb{K},\ \Sigma_{g},\ \RP^\infty,\ \CP^\infty,
+S^n,\ \DD^n,\ T^n,\ \RP^n,\ \CP^n,\ \mobiusband,\ \KK,\ \Sigma_{g},\ \RP^\infty,\ \CP^\infty,
 $$
-where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma_g$ the closed orientable surface of genus $g$.
+where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ the closed orientable surface of genus $g$.
 
 :::
 

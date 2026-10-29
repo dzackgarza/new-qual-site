@@ -84,7 +84,7 @@ A zero-dimensional finitely generated $k$-algebra is Artinian.  An Artinian ring
 ::: {.pf-step #gcd-nontrivial}
 Hence, if the curves
 \[
-V(f),\qquad V(g)\subseteq\mathbb A^2_k
+V(f),\qquad V(g)\subseteq\AA^2_k
 \]
 have infinitely many common points, then
 \[

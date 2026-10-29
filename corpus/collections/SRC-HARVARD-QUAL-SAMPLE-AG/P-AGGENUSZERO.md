@@ -38,7 +38,7 @@ Let $C$ be a smooth projective geometrically integral curve of genus $0$ over a 
 ::: {.pf-step #rational-point-gives-p1}
 If $C$ has a $k$-rational point $P$, then
 \[
-\boxed{C\cong\mathbb P^1_k.}
+\boxed{C\cong\PP^1_k.}
 \]
 
 ::: pf-proof
@@ -54,7 +54,7 @@ Riemann--Roch gives
 \]
 Thus the complete linear system $|P|$ defines a morphism
 \[
-\phi_{|P|}:C\longrightarrow\mathbb P^1.
+\phi_{|P|}:C\longrightarrow\PP^1.
 \]
 
 The system has no base point.  Away from $P$, the canonical section of $\mathcal O_C(P)$ is nonzero.  At $P$, the strict inequality
@@ -65,7 +65,7 @@ supplies a section not vanishing at $P$.
 
 Moreover
 \[
-\phi_{|P|}^*\mathcal O_{\mathbb P^1}(1)
+\phi_{|P|}^*\mathcal O_{\PP^1}(1)
 \cong\mathcal O_C(P),
 \]
 whose degree is $1$.  Hence the finite nonconstant map $\phi_{|P|}$ has degree $1$.  A degree-one morphism between smooth projective curves is an isomorphism, proving the claim.
@@ -74,9 +74,9 @@ whose degree is $1$.  Hence the finite nonconstant map $\phi_{|P|}$ has degree $
 :::
 
 ::: {.pf-step #base-change-p1}
-Over an algebraic closure $\bar k$, every genus-zero curve becomes $\mathbb P^1$:
+Over an algebraic closure $\bar k$, every genus-zero curve becomes $\PP^1$:
 \[
-C_{\bar k}\cong\mathbb P^1_{\bar k}.
+C_{\bar k}\cong\PP^1_{\bar k}.
 \]
 
 ::: pf-proof
@@ -114,7 +114,7 @@ one has $\ell(2K_C)=0$, hence $\ell(-K_C)=3$.
 :::
 
 ::: {.pf-step #anticanonical-embedding}
-The complete anticanonical system embeds $C$ as a smooth conic in $\mathbb P^2_k$.
+The complete anticanonical system embeds $C$ as a smooth conic in $\PP^2_k$.
 
 ::: pf-proof
 The three-dimensional space
@@ -123,15 +123,15 @@ H^0(C,\omega_C^{-1})
 \]
 defines the anticanonical morphism
 \[
-\phi_{|-K_C|}:C\longrightarrow\mathbb P^2_k.
+\phi_{|-K_C|}:C\longrightarrow\PP^2_k.
 \]
-After base change to $\bar k$, step [](#base-change-p1){.pf-ref} identifies $C_{\bar k}$ with $\mathbb P^1_{\bar k}$, and
+After base change to $\bar k$, step [](#base-change-p1){.pf-ref} identifies $C_{\bar k}$ with $\PP^1_{\bar k}$, and
 \[
-(\omega_C^{-1})_{\bar k}\cong\mathcal O_{\mathbb P^1}(2).
+(\omega_C^{-1})_{\bar k}\cong\mathcal O_{\PP^1}(2).
 \]
 Thus the base change of $\phi_{|-K_C|}$ is the quadratic Veronese embedding
 \[
-\mathbb P^1_{\bar k}\hookrightarrow\mathbb P^2_{\bar k},
+\PP^1_{\bar k}\hookrightarrow\PP^2_{\bar k},
 \qquad
 [s:t]\longmapsto[s^2:st:t^2].
 \]
@@ -139,7 +139,7 @@ Being a closed immersion can be checked after the faithfully flat extension $k\s
 
 Its image has degree
 \[
-\deg\phi^*\mathcal O_{\mathbb P^2}(1)
+\deg\phi^*\mathcal O_{\PP^2}(1)
 =\deg\omega_C^{-1}
 =2.
 \]
@@ -153,13 +153,13 @@ Thus
 \[
 \boxed{
 \text{every genus-zero curve is a smooth plane conic, and }
-C\cong\mathbb P^1_k
+C\cong\PP^1_k
 \iff C(k)\ne\varnothing.
 }
 \]
 
 ::: pf-proof
-Step [](#anticanonical-embedding){.pf-ref} gives the conic model.  Step [](#rational-point-gives-p1){.pf-ref} shows that a $k$-point forces $C\cong\mathbb P^1$.  Conversely $\mathbb P^1(k)$ is nonempty, so an isomorphism with $\mathbb P^1$ gives a $k$-point on $C$.
+Step [](#anticanonical-embedding){.pf-ref} gives the conic model.  Step [](#rational-point-gives-p1){.pf-ref} shows that a $k$-point forces $C\cong\PP^1$.  Conversely $\PP^1(k)$ is nonempty, so an isomorphism with $\PP^1$ gives a $k$-point on $C$.
 :::
 
 :::
@@ -170,7 +170,7 @@ If $k$ is finite, the nonsplit conic case cannot occur.
 ::: pf-proof
 Let
 \[
-C=V(Q)\subseteq\mathbb P^2_{\FF_q}
+C=V(Q)\subseteq\PP^2_{\FF_q}
 \]
 be the conic from step [](#anticanonical-embedding){.pf-ref}, with $Q$ a homogeneous quadratic polynomial in three variables.  By the Chevalley--Warning theorem, because
 \[
@@ -184,7 +184,7 @@ in $\FF_q^3$ is divisible by the characteristic $p$ of $\FF_q$.
 
 The zero vector is one solution, so divisibility by $p$ forces at least one further, nonzero solution.  Its projective class is an $\FF_q$-rational point of $C$.  Step [](#genus-zero-classification){.pf-ref} therefore gives
 \[
-C\cong\mathbb P^1_{\FF_q}.
+C\cong\PP^1_{\FF_q}.
 \]
 :::
 

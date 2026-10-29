@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the only real projective spaces which can be parallelizable are P 1 , P 3 and $\mathbb { P } ^ { 7 }$
+Show that the only real projective spaces which can be parallelizable are P 1 , P 3 and $\RP ^ { 7 }$
 :::
 
 ::: {.solution}
@@ -93,7 +93,7 @@ The spaces $\RP^1$, $\RP^3$, and $\RP^7$ are in fact parallelizable.
 
 Use the normed real division algebras
 \[
-\CC,\qquad\mathbb H,\qquad\mathbb O
+\CC,\qquad\quaternions,\qquad\octonions
 \]
 of real dimensions $2,4,8$. Their unit spheres are respectively
 \[

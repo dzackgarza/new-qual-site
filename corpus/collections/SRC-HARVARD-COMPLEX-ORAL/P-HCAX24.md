@@ -44,13 +44,13 @@ with a matrix identified with its negative.
 
 ::: {.pf-step #s2}
 
-The modular group acts on $\mathbb H$ by Möbius transformations.
+The modular group acts on $\halfplane$ by Möbius transformations.
 
 ::: pf-proof
 
 For
 $$
-\mathbb H=\{z\in\CC:\operatorname{Im}z>0\},
+\halfplane=\{z\in\CC:\operatorname{Im}z>0\},
 $$
 define
 $$
@@ -61,7 +61,7 @@ $$
 \operatorname{Im}(\gamma\cdot z)
 =\frac{\operatorname{Im}z}{|cz+d|^2}>0,
 $$
-so every group element preserves $\mathbb H$. Matrix multiplication corresponds to composition of the associated Möbius transformations, hence this is a group action.
+so every group element preserves $\halfplane$. Matrix multiplication corresponds to composition of the associated Möbius transformations, hence this is a group action.
 
 :::
 

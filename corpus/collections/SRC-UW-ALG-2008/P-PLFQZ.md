@@ -22,9 +22,9 @@ audit:
 
 ::: {.problem}
 - Let $G$ be a group of (finite) order $n$.
-  Show that any irreducible left module over the group algebra $\mathbb CG$ has complex dimension at most $\sqrt n$.
+  Show that any irreducible left module over the group algebra $\CC G$ has complex dimension at most $\sqrt n$.
 
-- Give an example of a group $G$ of order $n\geq5$ and an irreducible left module over $\mathbb CG$ of complex dimension $\lfloor\sqrt n\rfloor$, the greatest integer to $\sqrt n$.
+- Give an example of a group $G$ of order $n\geq5$ and an irreducible left module over $\CC G$ of complex dimension $\lfloor\sqrt n\rfloor$, the greatest integer to $\sqrt n$.
 :::
 
 ::: {.solution}
@@ -79,7 +79,7 @@ n=\sum_{i=1}^r d_i^2.
 
 ::: pf-proof
 
-Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\mathbb CG$ has dimension $|G|=n$, while the summand $V_i^{\oplus d_i}$ has dimension $d_i^2$.
+Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\CC G$ has dimension $|G|=n$, while the summand $V_i^{\oplus d_i}$ has dimension $d_i^2$.
 
 :::
 
@@ -87,7 +87,7 @@ Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\mathbb CG
 
 ::: pf-step
 
-Every irreducible $\mathbb CG$-module $V$ satisfies
+Every irreducible $\CC G$-module $V$ satisfies
 \[
 \dim_{\CC}V\le\sqrt n.
 \]

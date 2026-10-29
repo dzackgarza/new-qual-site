@@ -26,7 +26,7 @@ Find a conformal map from
 \[
 \theset{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }
 \]
-to $\mathbb{H}$.
+to $\halfplane$.
 
 :::
 

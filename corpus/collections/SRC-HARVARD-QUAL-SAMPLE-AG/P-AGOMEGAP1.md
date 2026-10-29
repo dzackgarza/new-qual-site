@@ -28,7 +28,7 @@ Calculate $H^0(\PP^1, \Omega^1)$.
 
 ::: {.solution}
 \[
-\boxed{H^0(\mathbb P^1_k,\Omega^1_{\mathbb P^1/k})=0.}
+\boxed{H^0(\PP^1_k,\Omega^1_{\PP^1/k})=0.}
 \]
 
 ::: pf
@@ -36,7 +36,7 @@ Calculate $H^0(\PP^1, \Omega^1)$.
 ::: {.pf-step #affine-chart-differential}
 On the standard affine chart
 \[
-U_0=\{X_0\ne0\}\cong\mathbb A^1_k
+U_0=\{X_0\ne0\}\cong\AA^1_k
 \]
 with coordinate
 \[
@@ -103,7 +103,7 @@ If $f\ne0$, at least one coefficient is nonzero, and every displayed exponent of
 :::
 
 ::: {.pf-step #global-differential-vanishes}
-Therefore a global regular differential on $\mathbb P^1$ must vanish identically.
+Therefore a global regular differential on $\PP^1$ must vanish identically.
 
 ::: pf-proof
 A global differential restricts on $U_0$ to some $f(x)dx$ by step [](#affine-chart-differential){.pf-ref}.  It must also be regular on $U_1$, in particular at $u=0$.  Step [](#pole-at-infinity){.pf-ref} shows this is possible only if
@@ -118,11 +118,11 @@ Thus the global section is zero.
 ::: pf-step
 Equivalently,
 \[
-\Omega^1_{\mathbb P^1/k}\cong\mathcal O_{\mathbb P^1}(-2),
+\Omega^1_{\PP^1/k}\cong\mathcal O_{\PP^1}(-2),
 \]
 so the calculation is the identity
 \[
-H^0(\mathbb P^1,\mathcal O(-2))=0.
+H^0(\PP^1,\mathcal O(-2))=0.
 \]
 
 ::: pf-proof
@@ -130,7 +130,7 @@ On the overlap, step [](#transition-formula){.pf-ref} says the local generators 
 \[
 dx=-u^{-2}du.
 \]
-This is the transition function of $\mathcal O(-2)$ up to the invertible constant $-1$.  Hence the two line bundles are isomorphic.  A negative-degree line bundle on $\mathbb P^1$ has no nonzero global section, agreeing with step [](#global-differential-vanishes){.pf-ref}.
+This is the transition function of $\mathcal O(-2)$ up to the invertible constant $-1$.  Hence the two line bundles are isomorphic.  A negative-degree line bundle on $\PP^1$ has no nonzero global section, agreeing with step [](#global-differential-vanishes){.pf-ref}.
 :::
 
 :::

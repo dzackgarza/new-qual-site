@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $x_0<x_1<\cdots<x_n$ be points in $[a,b]$, and let $\mathbb P^n$ be the vector space of polynomials of degree at most $n$.
-Define $l_j:\mathbb P^n\to\RR$ by $l_j(p)=p(x_j)$.
+Let $x_0<x_1<\cdots<x_n$ be points in $[a,b]$, and let $\polys^n$ be the vector space of polynomials of degree at most $n$.
+Define $l_j:\polys^n\to\RR$ by $l_j(p)=p(x_j)$.
 
 (a) Show that $\{l_j\}_{j=0}^n$ is linearly independent.
 
-(b) Show that there are unique coefficients $c_j$ such that \[\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)\] for every $p\in\mathbb P^n$.
+(b) Show that there are unique coefficients $c_j$ such that \[\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)\] for every $p\in\polys^n$.
 :::
 
 ::: {.solution}
@@ -69,7 +69,7 @@ The functionals
 \[
 l_0,\ldots,l_n
 \]
-are linearly independent in $(\mathbb P^n)^*$.
+are linearly independent in $(\polys^n)^*$.
 
 
 ::: pf-proof
@@ -78,7 +78,7 @@ Suppose
 \[
 \sum_{j=0}^n a_jl_j=0
 \]
-as a linear functional on $\mathbb P^n$. Fix $k$. Evaluating this functional at $L_k$ gives
+as a linear functional on $\polys^n$. Fix $k$. Evaluating this functional at $L_k$ gives
 \[
 0
 =
@@ -100,12 +100,12 @@ The set
 \[
 \{l_0,\ldots,l_n\}
 \]
-is a basis of $(\mathbb P^n)^*$.
+is a basis of $(\polys^n)^*$.
 
 
 ::: pf-proof
 
-The vector space $\mathbb P^n$ has dimension $n+1$, so its dual also has dimension $n+1$. Step [](#s1-2){.pf-ref} gives $n+1$ linearly independent vectors in the dual, hence a basis.
+The vector space $\polys^n$ has dimension $n+1$, so its dual also has dimension $n+1$. Step [](#s1-2){.pf-ref} gives $n+1$ linearly independent vectors in the dual, hence a basis.
 
 :::
 
@@ -115,7 +115,7 @@ The vector space $\mathbb P^n$ has dimension $n+1$, so its dual also has dimensi
 
 The map
 \[
-I:\mathbb P^n\to\RR,
+I:\polys^n\to\RR,
 \qquad
 I(p)=\int_a^b p(x)\,dx,
 \]
@@ -157,7 +157,7 @@ I=\sum_{j=0}^n c_jl_j.
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, the functionals $l_0,\ldots,l_n$ form a basis of $(\mathbb P^n)^*$. By step [](#s1-4){.pf-ref}, $I$ is an element of this dual space. Therefore $I$ has a unique expansion in that basis.
+By step [](#s1-3){.pf-ref}, the functionals $l_0,\ldots,l_n$ form a basis of $(\polys^n)^*$. By step [](#s1-4){.pf-ref}, $I$ is an element of this dual space. Therefore $I$ has a unique expansion in that basis.
 
 :::
 
@@ -193,7 +193,7 @@ by step [](#s1-1){.pf-ref}.
 
 ::: {.pf-step #s1-7}
 
-For every $p\in\mathbb P^n$,
+For every $p\in\polys^n$,
 \[
 \boxed{
 \int_a^b p(x)\,dx

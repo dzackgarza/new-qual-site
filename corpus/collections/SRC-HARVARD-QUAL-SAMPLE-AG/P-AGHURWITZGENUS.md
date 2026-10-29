@@ -44,7 +44,7 @@ and the ramification divisor $R$ of $f$.
 ::: pf-proof
 Riemann--Hurwitz compares the genus of $X$ to that of a target curve through exactly these two pieces of data.  In practice one often takes
 \[
-Y=\mathbb P^1
+Y=\PP^1
 \]
 by choosing a nonconstant rational function on $X$; then $g_Y=0$.
 :::
@@ -109,7 +109,7 @@ g_X
 ::: pf-proof
 Substitute
 \[
-g_Y=g(\mathbb P^1)=0
+g_Y=g(\PP^1)=0
 \]
 into step [](#riemann-hurwitz-formula){.pf-ref}.
 :::
@@ -119,13 +119,13 @@ into step [](#riemann-hurwitz-formula){.pf-ref}.
 ::: {.pf-step #double-cover-example}
 For example, let
 \[
-f:X\longrightarrow\mathbb P^1
+f:X\longrightarrow\PP^1
 \]
 be a double cover with $r$ simple branch points.  Then
 \[
 \boxed{g_X=\frac{r-2}{2}.}
 \]
-In particular a hyperelliptic curve of genus $g$ has $2g+2$ branch points in its degree-two map to $\mathbb P^1$.
+In particular a hyperelliptic curve of genus $g$ has $2g+2$ branch points in its degree-two map to $\PP^1$.
 
 ::: pf-proof
 Here

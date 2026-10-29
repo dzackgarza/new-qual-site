@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: P-JH3BD
 kind: problem
-title: Factorizations of $x^5-1$, $x^6-1$, and related polynomials over $\mathbf{C}$,
-  $\mathbf{Q}$, and finite fields
+title: Factorizations of $x^5-1$, $x^6-1$, and related polynomials over $\CC$,
+  $\QQ$, and finite fields
 classification:
   areas:
   - algebra
@@ -29,11 +29,11 @@ audit:
 Give a complete factorization of each of the following over the indicated rings.
 Explain why the factors you obtain are irreducible.
 
-a. $x^5-1$ over $\mathbf{C}$.
+a. $x^5-1$ over $\CC$.
 
-b. $x^6-1$ over $\mathbf{Q}$.
+b. $x^6-1$ over $\QQ$.
 
-c. $x^7+3x^5-6x^3+9x-15$ over $\mathbf{Q}$.
+c. $x^7+3x^5-6x^3+9x-15$ over $\QQ$.
 
 d. $x^{11}-x$ over $\mathbf{F}_{11}$.
 

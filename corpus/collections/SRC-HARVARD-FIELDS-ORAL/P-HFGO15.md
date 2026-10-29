@@ -32,7 +32,7 @@ many roots.
 
 Let
 \[
-\mathbb H=\{a+bi+cj+dk:a,b,c,d\in\RR\}
+\quaternions=\{a+bi+cj+dk:a,b,c,d\in\RR\}
 \]
 be the Hamilton quaternions, with
 \[
@@ -40,7 +40,7 @@ i^2=j^2=k^2=ijk=-1.
 \]
 Consider
 \[
-f(x)=x^2+1\in\RR[x]\subseteq\mathbb H[x].
+f(x)=x^2+1\in\RR[x]\subseteq\quaternions[x].
 \]
 
 ::: pf
@@ -78,7 +78,7 @@ f(q)=q^2+1=0.
 ::: pf-step
 
 The polynomial $f$ has infinitely many roots in the division ring
-$\mathbb H$.
+$\quaternions$.
 
 ::: pf-proof
 

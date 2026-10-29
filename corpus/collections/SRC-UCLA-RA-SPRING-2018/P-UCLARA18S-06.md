@@ -17,16 +17,16 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $\mathbb T$ denote the unit circle in the complex plane, let $\mathcal P(\mathbb T)$ denote the space of Borel probability measures on $\mathbb T$, and let $\mathcal P(\mathbb T\times\mathbb T)$ denote the space of Borel probability measures on $\mathbb T\times\mathbb T$. Fix $\mu,\nu\in\mathcal P(\mathbb T)$ and define
+Problem 6. Let $\circlegroup$ denote the unit circle in the complex plane, let $\mathcal P(\circlegroup)$ denote the space of Borel probability measures on $\circlegroup$, and let $\mathcal P(\circlegroup\times\circlegroup)$ denote the space of Borel probability measures on $\circlegroup\times\circlegroup$. Fix $\mu,\nu\in\mathcal P(\circlegroup)$ and define
 \[
-\mathcal M=\left\{\gamma\in\mathcal P(\mathbb T\times\mathbb T):
-\iint_{\mathbb T\times\mathbb T}f(x)g(y)\,d\gamma(x,y)
-=\int_{\mathbb T}f(x)\,d\mu(x)\int_{\mathbb T}g(y)\,d\nu(y)
-\text{ for all }f,g\in C(\mathbb T)\right\}.
+\mathcal M=\left\{\gamma\in\mathcal P(\circlegroup\times\circlegroup):
+\iint_{\circlegroup\times\circlegroup}f(x)g(y)\,d\gamma(x,y)
+=\int_{\circlegroup}f(x)\,d\mu(x)\int_{\circlegroup}g(y)\,d\nu(y)
+\text{ for all }f,g\in C(\circlegroup)\right\}.
 \]
 Show that $F:\mathcal M\to\RR$ defined by
 \[
-F(\gamma)=\iint_{\mathbb T\times\mathbb T}
+F(\gamma)=\iint_{\circlegroup\times\circlegroup}
 \sin^2\!\left(\frac{\theta-\phi}{2}\right)
 \,d\gamma(e^{i\theta},e^{i\phi})
 \]
@@ -48,9 +48,9 @@ The product probability measure
 \[
 \mu\times\nu
 \]
-belongs to \(\mathcal P(\mathbb T\times\mathbb T)\). For every
+belongs to \(\mathcal P(\circlegroup\times\circlegroup)\). For every
 \[
-f,g\in C(\mathbb T),
+f,g\in C(\circlegroup),
 \]
 Fubini's theorem gives
 \[
@@ -131,11 +131,11 @@ F(\gamma)
 \Bigg[
 1
 &-
-\left(\int_{\mathbb T}\operatorname{Re}(x)\,d\mu(x)\right)
-\left(\int_{\mathbb T}\operatorname{Re}(y)\,d\nu(y)\right)\\
+\left(\int_{\circlegroup}\operatorname{Re}(x)\,d\mu(x)\right)
+\left(\int_{\circlegroup}\operatorname{Re}(y)\,d\nu(y)\right)\\
 &-
-\left(\int_{\mathbb T}\operatorname{Im}(x)\,d\mu(x)\right)
-\left(\int_{\mathbb T}\operatorname{Im}(y)\,d\nu(y)\right)
+\left(\int_{\circlegroup}\operatorname{Im}(x)\,d\mu(x)\right)
+\left(\int_{\circlegroup}\operatorname{Im}(y)\,d\nu(y)\right)
 \Bigg].
 \end{aligned}
 \]
@@ -149,7 +149,7 @@ The functions
 \operatorname{Re},\qquad
 \operatorname{Im}
 \]
-are continuous on \(\mathbb T\). Apply the defining identity of
+are continuous on \(\circlegroup\). Apply the defining identity of
 \(\mathcal M\) to the three product functions
 \[
 1\cdot1,\qquad

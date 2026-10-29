@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in\mathbb M_3(\RR)$ be invertible and satisfy $A^{-1}=A^t$ and $\det A=1$.
+Let $A\in\Mat_3(\RR)$ be invertible and satisfy $A^{-1}=A^t$ and $\det A=1$.
 Prove that $A$ has $1$ as an eigenvalue.
 :::
 

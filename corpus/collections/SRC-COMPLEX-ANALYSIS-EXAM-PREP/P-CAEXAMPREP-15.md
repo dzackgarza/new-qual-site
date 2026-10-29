@@ -32,7 +32,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-The Joukowski map $J$ is a biholomorphism from $A$ onto the upper half-plane $\mathbb H$.
+The Joukowski map $J$ is a biholomorphism from $A$ onto the upper half-plane $\halfplane$.
 
 
 ::: pf-proof
@@ -42,13 +42,13 @@ $$
 \operatorname{Im}J(z)
 =\left(r-\frac1r\right)\sin\theta>0,
 $$
-so $J(A)\subseteq\mathbb H$. If $J(z_1)=J(z_2)$, then
+so $J(A)\subseteq\halfplane$. If $J(z_1)=J(z_2)$, then
 $$
 (z_1-z_2)\left(1-\frac1{z_1z_2}\right)=0.
 $$
 Since $|z_1z_2|>1$, the second factor cannot vanish; hence $z_1=z_2$.
 
-Conversely, let $w\in\mathbb H$. The roots of
+Conversely, let $w\in\halfplane$. The roots of
 $$
 z^2-wz+1=0
 $$
@@ -79,7 +79,7 @@ has the boundary of $A$ as a streamline.
 
 ::: pf-proof
 
-The uniform horizontal flow on $\mathbb H$ has complex potential $F_0(w)=\alpha w$, whose stream function is $\operatorname{Im}F_0(w)=\alpha\operatorname{Im}w$ and hence vanishes on $\partial\mathbb H=\RR$. By step [](#s1-1){.pf-ref}, pulling this potential back by $J$ gives $F=F_0\circ J$ on $A$.
+The uniform horizontal flow on $\halfplane$ has complex potential $F_0(w)=\alpha w$, whose stream function is $\operatorname{Im}F_0(w)=\alpha\operatorname{Im}w$ and hence vanishes on $\partial\halfplane=\RR$. By step [](#s1-1){.pf-ref}, pulling this potential back by $J$ gives $F=F_0\circ J$ on $A$.
 
 Equivalently, for $z=re^{i\theta}$,
 $$

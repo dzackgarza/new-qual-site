@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZNVSP
 kind: problem
-title: Density of $f(\mathbb{H})$ for a holomorphic map of the half-plane real precisely
+title: Density of $f(\halfplane)$ for a holomorphic map of the half-plane real precisely
   on $\RR$
 classification:
   areas:

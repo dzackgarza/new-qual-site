@@ -22,7 +22,7 @@ Show that there exist polynomials $p_n$ such that
 :::
 
 ::: {.solution}
-Choose pairwise disjoint open arcs $I_n\subset\mathbb T$. Define
+Choose pairwise disjoint open arcs $I_n\subset\circlegroup$. Define
 \[
 K_n=
 \left\{z:\frac1n\le |z|\le n,

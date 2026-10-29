@@ -32,7 +32,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f : (0, 1) \to \mathbf{R}$ is a continuous function with $\int_0^1 |f(t)| \, dt < \infty$. Define $g : (0, 1) \to \mathbf{R}$ by
+Suppose that $f : (0, 1) \to \RR$ is a continuous function with $\int_0^1 |f(t)| \, dt < \infty$. Define $g : (0, 1) \to \RR$ by
 
 $$
 g(x) = \int_x^1 \frac{f(t)}{t} \, dt.

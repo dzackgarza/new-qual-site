@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $z_1, \ldots, z_n$ be points on $\mathbb{T}$.
-Prove that there is $z_0 \in \mathbb{T}$ such that the product of the distances from $z_0$ to each of the given points is at least one.
+Let $z_1, \ldots, z_n$ be points on $\circlegroup$.
+Prove that there is $z_0 \in \circlegroup$ such that the product of the distances from $z_0$ to each of the given points is at least one.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ By the maximum modulus principle applied on the closed unit disk,
 \[
 1=|p(0)|\le \max_{|z|=1}|p(z)|.
 \]
-Choose $z_0\in\mathbb T$ where this maximum is attained. Then
+Choose $z_0\in\circlegroup$ where this maximum is attained. Then
 \[
 \prod_{j=1}^n|z_0-z_j|=|p(z_0)|\ge1,
 \]

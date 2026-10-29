@@ -24,5 +24,5 @@ So $d$ is $k$-linear but not $\OO_X$-linear, and the de Rham complex $\Omega^\bu
 :::
 
 ::: {.remark}
-This is why algebraic de Rham cohomology is the hypercohomology $\mathbb{H}^\bullet(X, \Omega^\bullet_{X/k})$ of a complex of $k$-sheaves, and why its Hodge-to-de Rham spectral sequence starts from the $\OO_X$-module cohomology groups $H^q(X, \Omega^p_{X/k})$ of the individual terms.
+This is why algebraic de Rham cohomology is the hypercohomology $\hypercohomology^\bullet(X, \Omega^\bullet_{X/k})$ of a complex of $k$-sheaves, and why its Hodge-to-de Rham spectral sequence starts from the $\OO_X$-module cohomology groups $H^q(X, \Omega^p_{X/k})$ of the individual terms.
 :::

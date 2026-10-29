@@ -23,7 +23,7 @@ Show that the induced map $q^*: H^*(\CP^\infty; \ZZ) \to H^*(\RP^\infty; \ZZ)$ i
 
 Next, form a quotient space $X$ of $\RP^\infty \amalg \CP^n$ by identifying each point $x \in \RP^{2n}$ with $q(x) \in \CP^n$.
 Show there are ring isomorphisms $H^*(X; \ZZ) \approx \ZZ[\alpha]/(2\alpha^{n+1})$ and $H^*(X; \ZZ_2) \approx \ZZ_2[\alpha, \beta]/(\beta^2 - \alpha^{2n+1})$, where $|\alpha| = 2$ and $|\beta| = 2n+1$.
-Make a similar construction and analysis for the quotient map $q: \CP^\infty \to \mathbb{HP}^\infty$.
+Make a similar construction and analysis for the quotient map $q: \CP^\infty \to \quatprojective^\infty$.
 :::
 
 ::: {.solution}

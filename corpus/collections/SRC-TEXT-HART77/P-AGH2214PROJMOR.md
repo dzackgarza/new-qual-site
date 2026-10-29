@@ -560,7 +560,7 @@ Therefore $f$ is an isomorphism.
 :::
 
 ::: {.pf-step #affine-coord-ring-of-vi}
-Let $V\subseteq\mathbb P^n_k$ be a projective variety with homogeneous coordinate ring
+Let $V\subseteq\PP^n_k$ be a projective variety with homogeneous coordinate ring
 \[
 S=k[x_0,\ldots,x_n]/I(V).
 \]
@@ -580,7 +580,7 @@ S_{(x_i)}.
 ::: pf-proof
 Dehomogenizing with respect to $x_i$ identifies the affine variety $V_i$ with the zero set of the dehomogenized equations of $I(V)$ in the affine chart
 \[
-\{x_i\ne0\}\cong\mathbb A^n.
+\{x_i\ne0\}\cong\AA^n.
 \]
 Its coordinate ring is precisely the degree-zero part of the localization
 \[

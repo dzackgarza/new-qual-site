@@ -89,7 +89,7 @@ Step [](#phi1-biholomorphism){.pf-ref}.
 ::: pf
 
 ::: pf-step
-**The exponential map $\phi_2(\zeta) = e^\zeta$ maps the horizontal strip $S$ conformally onto the upper half-plane $\mathbb{H} = \{u \in \CC : \text{Im}(u) > 0\}$.**
+**The exponential map $\phi_2(\zeta) = e^\zeta$ maps the horizontal strip $S$ conformally onto the upper half-plane $\halfplane = \{u \in \CC : \text{Im}(u) > 0\}$.**
 
 ::: pf-proof
 
@@ -112,7 +112,7 @@ Since $e^\xi > 0$ and $\sin\eta > 0$ for $\eta \in (0, \pi)$, $\text{Im}(e^\zeta
 :::
 
 ::: {.pf-step #phi2-biholomorphism}
-The map $\zeta \mapsto e^\zeta$ is a biholomorphism from the strip $S = \{\xi + i\eta : \xi \in \RR, 0 < \eta < \pi\}$ onto $\mathbb{H}$.
+The map $\zeta \mapsto e^\zeta$ is a biholomorphism from the strip $S = \{\xi + i\eta : \xi \in \RR, 0 < \eta < \pi\}$ onto $\halfplane$.
 
 ::: pf-proof
 *Proof:* Standard property of the complex exponential function.
@@ -137,12 +137,12 @@ Step [](#phi2-biholomorphism){.pf-ref}.
 ::: pf
 
 ::: pf-step
-**The inverse Joukowsky map $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ (each factor the principal square root) maps $\mathbb{H}$ conformally onto the upper half unit disk $\DD^+$.**
+**The inverse Joukowsky map $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ (each factor the principal square root) maps $\halfplane$ conformally onto the upper half unit disk $\DD^+$.**
 
 ::: pf-proof
 
 ::: pf-step
-Recall that the Joukowsky map $J(w) = -\frac{1}{2}(w + 1/w)$ maps $\DD^+$ biholomorphically onto $\mathbb{H}$.
+Recall that the Joukowsky map $J(w) = -\frac{1}{2}(w + 1/w)$ maps $\DD^+$ biholomorphically onto $\halfplane$.
 
 ::: pf-proof
 *Proof:* For $w = r e^{i\theta} \in \DD^+$ ($0 < r < 1, 0 < \theta < \pi$), $\text{Im}(J(w)) = \frac{1}{2}(1/r - r)\sin\theta > 0$.
@@ -160,10 +160,10 @@ Solving $J(w) = u \iff -\frac{1}{2}(w + 1/w) = u \iff w^2 + 2u w + 1 = 0$ yields
 :::
 
 ::: {.pf-step #phi3-biholomorphism}
-The function $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ is the biholomorphic inverse $J^{-1}: \mathbb{H} \to \DD^+$.
+The function $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ is the biholomorphic inverse $J^{-1}: \halfplane \to \DD^+$.
 
 ::: pf-proof
-*Proof:* For $u \in \mathbb{H}$, both $u - 1$ and $u + 1$ lie in $\mathbb{H}$, so the principal square roots are holomorphic there and $s(u) = \sqrt{u - 1}\,\sqrt{u + 1}$ is a holomorphic function with $s(u)^2 = u^2 - 1$. Hence $\phi_3(u)$ is a root of $w^2 + 2uw + 1 = 0$. The product of the two roots is $1$, and neither root lies on $|w| = 1$ because $J$ is real there; so exactly one root lies in the open unit disk, and it lies in $\DD^+$ because $J$ maps the lower half-disk into the lower half-plane. At $u = it$ with $t > 0$ the arguments of $\sqrt{u-1}$ and $\sqrt{u+1}$ sum to $\pi/2$, so $\phi_3(it) = i\big(\sqrt{t^2+1} - t\big) \in \DD^+$. The set of $u \in \mathbb{H}$ with $\phi_3(u) \in \DD^+$ is open and closed in the connected set $\mathbb{H}$ and nonempty, so it is all of $\mathbb{H}$. The single-valued principal branch of $\sqrt{u^2-1}$ is not usable here: it is discontinuous on the imaginary axis, where $u^2 - 1 < -1$.
+*Proof:* For $u \in \halfplane$, both $u - 1$ and $u + 1$ lie in $\halfplane$, so the principal square roots are holomorphic there and $s(u) = \sqrt{u - 1}\,\sqrt{u + 1}$ is a holomorphic function with $s(u)^2 = u^2 - 1$. Hence $\phi_3(u)$ is a root of $w^2 + 2uw + 1 = 0$. The product of the two roots is $1$, and neither root lies on $|w| = 1$ because $J$ is real there; so exactly one root lies in the open unit disk, and it lies in $\DD^+$ because $J$ maps the lower half-disk into the lower half-plane. At $u = it$ with $t > 0$ the arguments of $\sqrt{u-1}$ and $\sqrt{u+1}$ sum to $\pi/2$, so $\phi_3(it) = i\big(\sqrt{t^2+1} - t\big) \in \DD^+$. The set of $u \in \halfplane$ with $\phi_3(u) \in \DD^+$ is open and closed in the connected set $\halfplane$ and nonempty, so it is all of $\halfplane$. The single-valued principal branch of $\sqrt{u^2-1}$ is not usable here: it is discontinuous on the imaginary axis, where $u^2 - 1 < -1$.
 :::
 
 :::
@@ -208,7 +208,7 @@ Then $F(z) = \phi_3(u(z)) = -u(z) + \sqrt{u(z) - 1}\,\sqrt{u(z) + 1}$, where $u(
 :::
 
 ::: {.pf-step #F-is-biholomorphism}
-As a composition of biholomorphic maps $\Omega \xrightarrow{\phi_1} S \xrightarrow{\phi_2} \mathbb{H} \xrightarrow{\phi_3} \DD^+$, $F$ is an analytic isomorphism from $\Omega$ to $\DD^+$.
+As a composition of biholomorphic maps $\Omega \xrightarrow{\phi_1} S \xrightarrow{\phi_2} \halfplane \xrightarrow{\phi_3} \DD^+$, $F$ is an analytic isomorphism from $\Omega$ to $\DD^+$.
 
 ::: pf-proof
 *Proof:* Composition of biholomorphisms is a biholomorphism.

@@ -27,7 +27,7 @@ What does the constant term of $P_X(r)$ represent?
 :::
 
 ::: {.solution}
-Let $X\subseteq\mathbb P^N$ be a projective scheme with Hilbert polynomial $P_X(r)$.
+Let $X\subseteq\PP^N$ be a projective scheme with Hilbert polynomial $P_X(r)$.
 
 ::: pf
 

@@ -31,9 +31,9 @@ Does there exist a *projective* variety with $\Pic(V) = \ZZ/3$?
 ::: {.solution}
 Let
 \[
-B=\mathbb P^1_k,
+B=\PP^1_k,
 \qquad
-L=\mathcal O_{\mathbb P^1}(3),
+L=\mathcal O_{\PP^1}(3),
 \]
 let
 \[
@@ -59,7 +59,7 @@ Pullback along $p$ gives an isomorphism
 \]
 
 ::: pf-proof
-The total space of a vector bundle over the regular scheme $B=\mathbb P^1$ is an affine-space bundle over $B$.  Homotopy invariance of the Picard group for regular schemes gives
+The total space of a vector bundle over the regular scheme $B=\PP^1$ is an affine-space bundle over $B$.  Homotopy invariance of the Picard group for regular schemes gives
 \[
 \operatorname{Pic}(B)
 \cong
@@ -81,8 +81,8 @@ p\circ s=\operatorname{id}_B.
 ::: {.pf-step #zero-section-class}
 Under the identification in step [](#pic-b-pic-e-iso){.pf-ref}, the divisor class of the zero section $D$ corresponds to
 \[
-[L]=[\mathcal O_{\mathbb P^1}(3)]
-\in\operatorname{Pic}(\mathbb P^1)\cong\ZZ.
+[L]=[\mathcal O_{\PP^1}(3)]
+\in\operatorname{Pic}(\PP^1)\cong\ZZ.
 \]
 
 ::: pf-proof
@@ -133,7 +133,7 @@ Therefore
 ::: pf-proof
 One has
 \[
-\operatorname{Pic}(\mathbb P^1)
+\operatorname{Pic}(\PP^1)
 \cong\ZZ,
 \qquad
 [\mathcal O(1)]\longmapsto1.

@@ -37,7 +37,7 @@ What is the expectation (mean) of $X$?
 
 The expectation is
 $$
-\mathbb E[X]
+\EE[X]
 =\int_1^\infty t\,\frac12e^{-(t-1)/2}\,dt.
 $$
 
@@ -106,7 +106,7 @@ Letting $R\to\infty$ gives $1$, since $Re^{-R}\to0$.
 
 Therefore
 $$
-\mathbb E[X]=\boxed{3},
+\EE[X]=\boxed{3},
 $$
 so the answer is (C).
 
@@ -115,7 +115,7 @@ so the answer is (C).
 
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
-\mathbb E[X]
+\EE[X]
 =2\int_0^\infty se^{-s}\,ds+\int_0^\infty e^{-s}\,ds
 =2+1=3.
 $$

@@ -70,7 +70,7 @@ a direct calculation gives
 \tag{1}
 \]
 
-For part (a), start with \(z=\tau\in\mathbb H\). Translate by an integral power of \(T_1\) so that
+For part (a), start with \(z=\tau\in\halfplane\). Translate by an integral power of \(T_1\) so that
 \[
 |\Re z|\le\frac12.
 \]

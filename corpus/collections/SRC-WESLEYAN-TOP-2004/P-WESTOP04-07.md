@@ -30,7 +30,7 @@ Statement (1) is false.
 
 Use the Sorgenfrey line
 $$
-\mathbb S,
+\sorgenfrey,
 $$
 whose topology has basis
 $$
@@ -41,11 +41,11 @@ a<b
 $$
 Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that
 $$
-\mathbb S
+\sorgenfrey
 $$
 is Lindelöf but
 $$
-\mathbb S\times\mathbb S
+\sorgenfrey\times\sorgenfrey
 $$
 is not.
 
@@ -57,7 +57,7 @@ is not.
 
 The Sorgenfrey line
 $$
-\mathbb S
+\sorgenfrey
 $$
 is Lindelöf.
 
@@ -70,7 +70,7 @@ $$
 $$
 be an open cover of
 $$
-\mathbb S.
+\sorgenfrey.
 $$
 Refining if necessary, for each
 $$
@@ -172,7 +172,7 @@ x\in D,
 $$
 cover the remaining points. Thus a countable collection of the chosen basic intervals covers
 $$
-\mathbb S.
+\sorgenfrey.
 $$
 Replacing each basic interval by the original member of
 $$
@@ -200,7 +200,7 @@ x\in\RR
 $$
 is a closed discrete subspace of
 $$
-\mathbb S\times\mathbb S.
+\sorgenfrey\times\sorgenfrey.
 $$
 
 
@@ -282,7 +282,7 @@ is open.
 
 The product
 $$
-\mathbb S\times\mathbb S
+\sorgenfrey\times\sorgenfrey
 $$
 is not Lindelöf.
 
@@ -328,7 +328,7 @@ F.
 $$
 Therefore
 $$
-\mathbb S\times\mathbb S
+\sorgenfrey\times\sorgenfrey
 $$
 cannot be Lindelöf.
 

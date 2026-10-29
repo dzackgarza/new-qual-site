@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $H ^ { * } ( \RR \mathbb { P } ^ { \infty } ; \ZZ ) , H ^ { * } ( \RR \mathbb { P } ^ { 2 n } ; \ZZ ) , H ^ { * } ( \RR \mathbb { P } ^ { 2 n + 1 } ; \ZZ )$
+Calculate $H ^ { * } ( \RP ^ { \infty } ; \ZZ ) , H ^ { * } ( \RP ^ { 2 n } ; \ZZ ) , H ^ { * } ( \RP ^ { 2 n + 1 } ; \ZZ )$
 :::
 
 ::: {.solution}

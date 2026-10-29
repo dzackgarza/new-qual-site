@@ -22,12 +22,12 @@ Show that the irrationals are a Baire space.
 :::
 
 ::: {.solution}
-Let $\mathbb{P} = \RR \setminus \QQ$ with the subspace topology.
+Let $\irrationals = \RR \setminus \QQ$ with the subspace topology.
 
 ::: pf
 
 ::: pf-step
-Representation of $\mathbb{P}$ as a $G_\delta$ subset of $\RR$:
+Representation of $\irrationals$ as a $G_\delta$ subset of $\RR$:
 
 ::: pf-proof
 
@@ -41,7 +41,7 @@ For each $n \ge 1$, the singleton $\{q_n\}$ is closed in $\RR$, so $U_n = \RR \s
 
 ::: pf-step
 The subspace of irrational numbers is:
-$$\mathbb{P} = \RR \setminus \QQ = \bigcap_{n=1}^\infty U_n.$$
+$$\irrationals = \RR \setminus \QQ = \bigcap_{n=1}^\infty U_n.$$
 :::
 
 :::
@@ -54,15 +54,15 @@ Verification of the dense open intersection condition:
 ::: pf-proof
 
 ::: pf-step
-Let $\{V_k\}_{k=1}^\infty$ be a countable sequence of dense open subsets of the subspace $\mathbb{P}$.
+Let $\{V_k\}_{k=1}^\infty$ be a countable sequence of dense open subsets of the subspace $\irrationals$.
 :::
 
 ::: pf-step
-Since each $V_k$ is open in $\mathbb{P}$, there exists an open set $W_k \subseteq \RR$ such that $V_k = W_k \cap \mathbb{P}$.
+Since each $V_k$ is open in $\irrationals$, there exists an open set $W_k \subseteq \RR$ such that $V_k = W_k \cap \irrationals$.
 :::
 
 ::: pf-step
-Because $V_k$ is dense in $\mathbb{P}$ and $\mathbb{P}$ is dense in $\RR$, the open set $W_k$ is dense in $\RR$ for each $k \ge 1$.
+Because $V_k$ is dense in $\irrationals$ and $\irrationals$ is dense in $\RR$, the open set $W_k$ is dense in $\RR$ for each $k \ge 1$.
 :::
 
 ::: pf-step
@@ -71,12 +71,12 @@ The combined collection $\{W_k\}_{k=1}^\infty \cup \{U_n\}_{n=1}^\infty$ is a co
 
 ::: pf-step
 By the Baire category theorem, the complete metric space $\RR$ is a Baire space, so the countable intersection:
-$$\bigcap_{k=1}^\infty W_k \cap \bigcap_{n=1}^\infty U_n = \left(\bigcap_{k=1}^\infty W_k\right) \cap \mathbb{P} = \bigcap_{k=1}^\infty V_k$$
+$$\bigcap_{k=1}^\infty W_k \cap \bigcap_{n=1}^\infty U_n = \left(\bigcap_{k=1}^\infty W_k\right) \cap \irrationals = \bigcap_{k=1}^\infty V_k$$
 is dense in $\RR$.
 :::
 
 ::: pf-step
-Since this intersection lies in $\mathbb{P}$ and is dense in $\RR$, it is dense in the subspace $\mathbb{P}$.
+Since this intersection lies in $\irrationals$ and is dense in $\RR$, it is dense in the subspace $\irrationals$.
 :::
 
 :::
@@ -84,7 +84,7 @@ Since this intersection lies in $\mathbb{P}$ and is dense in $\RR$, it is dense 
 :::
 
 ::: pf-qed
-By step [](#s2){.pf-ref}, every countable intersection of dense open subsets of $\mathbb{P}$ is dense in $\mathbb{P}$.
+By step [](#s2){.pf-ref}, every countable intersection of dense open subsets of $\irrationals$ is dense in $\irrationals$.
 :::
 
 :::

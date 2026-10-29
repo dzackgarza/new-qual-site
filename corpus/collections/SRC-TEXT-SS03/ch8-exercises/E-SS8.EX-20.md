@@ -46,7 +46,7 @@ For part (a), the finite branch points must be distinct, so the intended hypothe
 \[
 F'(z)=\frac1{\sqrt{z(z-1)(z-\lambda)}}
 \]
-that is holomorphic on $\mathbb H$. The Schwarz--Christoffel formula says that a factor $(z-a)^{-\beta}$ at a real prevertex produces interior angle $(1-\beta)\pi$. At each of $0,1,\lambda$ the exponent is $-1/2$, so each corresponding angle is $\pi/2$.
+that is holomorphic on $\halfplane$. The Schwarz--Christoffel formula says that a factor $(z-a)^{-\beta}$ at a real prevertex produces interior angle $(1-\beta)\pi$. At each of $0,1,\lambda$ the exponent is $-1/2$, so each corresponding angle is $\pi/2$.
 
 At infinity put $w=1/z$. Since $F'(z)=O(z^{-3/2})$,
 \[

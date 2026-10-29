@@ -101,15 +101,15 @@ if and only if $C$ is hyperelliptic.
 ::: pf-proof
 Such a divisor carries a pencil of meromorphic functions with poles bounded by $D$.  The associated nonconstant map
 \[
-C\longrightarrow\mathbb P^1
+C\longrightarrow\PP^1
 \]
-has degree at most $2$: after removing the base divisor of the pencil, its degree is the degree of the moving part of $D$.  It cannot have degree $1$, since a degree-one map of smooth projective curves would make $C\cong\mathbb P^1$, contradicting $g\ge2$.  Hence the moving part has degree $2$, so there is no base divisor and the map has degree $2$.  This is the definition of a hyperelliptic curve.
+has degree at most $2$: after removing the base divisor of the pencil, its degree is the degree of the moving part of $D$.  It cannot have degree $1$, since a degree-one map of smooth projective curves would make $C\cong\PP^1$, contradicting $g\ge2$.  Hence the moving part has degree $2$, so there is no base divisor and the map has degree $2$.  This is the definition of a hyperelliptic curve.
 
 Conversely, a degree-two morphism
 \[
-C\longrightarrow\mathbb P^1
+C\longrightarrow\PP^1
 \]
-pulls a point of $\mathbb P^1$ back to a degree-two divisor whose complete linear system contains the pulled-back pencil, so $\ell(D)\ge2$.
+pulls a point of $\PP^1$ back to a degree-two divisor whose complete linear system contains the pulled-back pencil, so $\ell(D)\ge2$.
 :::
 
 :::
@@ -161,9 +161,9 @@ The canonical system has no base point: if $p$ were a base point, then
 \[
 \ell(K_C-p)=\ell(K_C)=2,
 \]
-so the degree-one divisor $K_C-p$ would have two independent sections and would define a nonconstant map of degree at most $1$ to $\mathbb P^1$, forcing $C\cong\mathbb P^1$.  Thus the canonical system itself is a base-point-free degree-two pencil, so every genus-two curve is hyperelliptic and the canonical map is the double cover
+so the degree-one divisor $K_C-p$ would have two independent sections and would define a nonconstant map of degree at most $1$ to $\PP^1$, forcing $C\cong\PP^1$.  Thus the canonical system itself is a base-point-free degree-two pencil, so every genus-two curve is hyperelliptic and the canonical map is the double cover
 \[
-C\longrightarrow\mathbb P^1,
+C\longrightarrow\PP^1,
 \]
 not an embedding.
 
@@ -173,20 +173,20 @@ For $g\ge3$, step [](#genus-geq-2-equivalence){.pf-ref} gives the asserted equiv
 :::
 
 ::: {.pf-step #hyperelliptic-canonical-map}
-In the hyperelliptic case, the canonical map is explicitly two-to-one onto a rational normal curve of degree $g-1$ in $\mathbb P^{g-1}$.
+In the hyperelliptic case, the canonical map is explicitly two-to-one onto a rational normal curve of degree $g-1$ in $\PP^{g-1}$.
 
 ::: pf-proof
 Let
 \[
-\pi:C\longrightarrow\mathbb P^1
+\pi:C\longrightarrow\PP^1
 \]
 be the hyperelliptic double cover.  The canonical bundle satisfies
 \[
-K_C\cong\pi^*\mathcal O_{\mathbb P^1}(g-1).
+K_C\cong\pi^*\mathcal O_{\PP^1}(g-1).
 \]
 Indeed, put
 \[
-L=\pi^*\mathcal O_{\mathbb P^1}(g-1).
+L=\pi^*\mathcal O_{\PP^1}(g-1).
 \]
 Then
 \[
@@ -194,7 +194,7 @@ Then
 \]
 and pullback gives at least
 \[
-h^0(\mathbb P^1,\mathcal O(g-1))=g
+h^0(\PP^1,\mathcal O(g-1))=g
 \]
 independent sections of $L$.  Riemann--Roch gives
 \[
@@ -204,8 +204,8 @@ Thus $h^0(K_C\otimes L^{-1})\ge1$.  The line bundle $K_C\otimes L^{-1}$ has degr
 
 Therefore the canonical map factors as
 \[
-C\xrightarrow{\pi}\mathbb P^1
-\xrightarrow{|\mathcal O(g-1)|}\mathbb P^{g-1},
+C\xrightarrow{\pi}\PP^1
+\xrightarrow{|\mathcal O(g-1)|}\PP^{g-1},
 \]
 where the second map is the rational normal curve embedding.  The first map has degree $2$, so the composition cannot be an embedding.
 :::

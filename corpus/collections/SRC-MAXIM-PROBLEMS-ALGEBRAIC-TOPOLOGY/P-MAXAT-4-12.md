@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { 1 } \to S ^ { 2 }$ and $S ^ { 1 } \to \mathbb { C P } ^ { n }$
+Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { 1 } \to S ^ { 2 }$ and $S ^ { 1 } \to \CP ^ { n }$
 :::
 
 ::: {.solution}
@@ -174,14 +174,14 @@ least $3$, proving the additive statement.
 For $n\ge1$, Cohen--Jones--Yan compute the shifted loop homology
 algebra
 \[
-\mathbb H_*(L\CP^n)
+\bH_*(L\CP^n)
 \coloneqq
 H_{*+2n}(L\CP^n;\ZZ)
 \]
 as
 \[
 \boxed{
-\mathbb H_*(L\CP^n)
+\bH_*(L\CP^n)
 \cong
 \frac{
 \ZZ[a_{-2},x_{-1},y_{2n}]

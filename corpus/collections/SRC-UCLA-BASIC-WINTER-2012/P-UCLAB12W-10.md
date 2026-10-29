@@ -198,7 +198,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} proves the identity with no hypothesis beyond $A\in\mathbb M_n(\CC)$.
+Step [](#s1-6){.pf-ref} proves the identity with no hypothesis beyond $A\in\Mat_n(\CC)$.
 
 :::
 

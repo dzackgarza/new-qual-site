@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Describe $H^*(\CP^\infty / \CP^1; \ZZ)$ as a ring with finitely many multiplicative generators.
-How does this ring compare with $H^*(S^6 \times \mathbb{HP}^\infty; \ZZ)$?
+How does this ring compare with $H^*(S^6 \times \quatprojective^\infty; \ZZ)$?
 :::
 
 ::: {.solution}
@@ -57,7 +57,7 @@ Thus
 
 For comparison,
 \[
-H^*(S^6\times\mathbb{HP}^\infty;\ZZ)
+H^*(S^6\times\quatprojective^\infty;\ZZ)
 \cong \ZZ[x,y]/(x^2),
 \qquad |x|=6,\ |y|=4.
 \]
@@ -65,5 +65,5 @@ The two graded groups are isomorphic: both have one copy of $\ZZ$ in degree $0$ 
 \[
 b^2=a^3\ne0,
 \]
-whereas in $H^*(S^6\times\mathbb{HP}^\infty)$ the degree-$6$ generator $x$ has square zero.
+whereas in $H^*(S^6\times\quatprojective^\infty)$ the degree-$6$ generator $x$ has square zero.
 :::

@@ -81,12 +81,12 @@ The intersection of the diagonal image with this open consists of the pairs
 \[
 (a,a)
 \]
-with $a\ne0$, because the two charts represent the same point of $X$ precisely on the gluing locus $\mathbb G_m$.  Hence
+with $a\ne0$, because the two charts represent the same point of $X$ precisely on the gluing locus $\Gm$.  Hence
 \[
 \Delta(X)\cap(U_1\times U_2)
 =V(x-y)\cap D(x)
 \]
-inside $\mathbb A^2$.
+inside $\AA^2$.
 
 Its closure in $U_1\times U_2$ is the whole line
 \[
@@ -111,7 +111,7 @@ is not separated.
 In $X$, every open neighborhood of $0_1$ meets every open neighborhood of $0_2$.
 
 ::: pf-proof
-An open neighborhood of $0_i$ meets the common copy of $\mathbb G_m$ in a nonempty open subset.  Two nonempty open subsets of the irreducible curve $\mathbb G_m$ intersect.  The point $(0_1,0_2)$ in the closure of the diagonal in step [](#not-separated){.pf-ref} is the scheme-theoretic form of this statement.
+An open neighborhood of $0_i$ meets the common copy of $\Gm$ in a nonempty open subset.  Two nonempty open subsets of the irreducible curve $\Gm$ intersect.  The point $(0_1,0_2)$ in the closure of the diagonal in step [](#not-separated){.pf-ref} is the scheme-theoretic form of this statement.
 :::
 
 :::

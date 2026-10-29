@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a conformal map from half disc $\{z=x+iy:\ |z|<1,\ y>0\}$ to upper
 
-half plane ${\mathbb H}=\{z=x+iy:\ y>0\}$.
+half plane ${\halfplane}=\{z=x+iy:\ y>0\}$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ on $G$. Hence
 \[
 \operatorname{Im}f(z)>0,
 \]
-so $f(G)\subset\mathbb H$.
+so $f(G)\subset\halfplane$.
 
 Also
 \[
@@ -60,8 +60,8 @@ upper semicircle, $1/z=\overline z$, so again $f(z)=-\operatorname{Re}z$ is
 real. As $z\to0$ through $G$, $|f(z)|\to\infty$. Hence the boundary is mapped
 to the extended real line. Since $f$ is injective and holomorphic with
 nonvanishing derivative, $f(G)$ is a simply connected open subset of
-$\mathbb H$ whose boundary in the sphere is the full extended real line. It
-must therefore be all of $\mathbb H$.
+$\halfplane$ whose boundary in the sphere is the full extended real line. It
+must therefore be all of $\halfplane$.
 
-Thus $f:G\to\mathbb H$ is a conformal bijection.
+Thus $f:G\to\halfplane$ is a conformal bijection.
 :::

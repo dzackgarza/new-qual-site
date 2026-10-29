@@ -23,7 +23,7 @@ Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\fr
 :::
 
 ::: {.solution}
-Let $\Omega = \{z \in \CC : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the crescent and $\mathbb{H} = \{w \in \CC : \text{Im}(w) > 0\}$ the upper half-plane.
+Let $\Omega = \{z \in \CC : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the crescent and $\halfplane = \{w \in \CC : \text{Im}(w) > 0\}$ the upper half-plane.
 
 * * *
 
@@ -166,7 +166,7 @@ $\frac{1}{z-1} + 1 = \frac{z}{z-1}$.
 
 ::: pf-step
 
-**The exponential function maps $S_2$ conformally onto the upper half-plane $\mathbb{H}$.**
+**The exponential function maps $S_2$ conformally onto the upper half-plane $\halfplane$.**
 
 ::: pf-proof
 
@@ -197,7 +197,7 @@ Properties of the complex exponential function.
 
 ::: pf-step
 
-Thus $\phi_3(\zeta) = e^\zeta$ is a biholomorphism from $S_2$ onto $\mathbb{H} = \{w \in \CC : \text{Im}(w) > 0\}$.
+Thus $\phi_3(\zeta) = e^\zeta$ is a biholomorphism from $S_2$ onto $\halfplane = \{w \in \CC : \text{Im}(w) > 0\}$.
 
 ::: pf-proof
 
@@ -221,7 +221,7 @@ Standard holomorphic isomorphism between a horizontal strip of height $\pi$ and 
 
 ::: pf-step
 
-**Conclusion: The composite map $F = \phi_3 \circ \phi_2 \circ \phi_1$ is an analytic isomorphism from $\Omega$ to $\mathbb{H}$.**
+**Conclusion: The composite map $F = \phi_3 \circ \phi_2 \circ \phi_1$ is an analytic isomorphism from $\Omega$ to $\halfplane$.**
 
 ::: pf-proof
 
@@ -239,7 +239,7 @@ Direct composition of $\phi_1, \phi_2, \phi_3$.
 
 ::: pf-step
 
-As a composition of biholomorphic mappings $\Omega \xrightarrow{\phi_1} S_1 \xrightarrow{\phi_2} S_2 \xrightarrow{\phi_3} \mathbb{H}$, $F$ is an analytic isomorphism from $\Omega$ onto $\mathbb{H}$.
+As a composition of biholomorphic mappings $\Omega \xrightarrow{\phi_1} S_1 \xrightarrow{\phi_2} S_2 \xrightarrow{\phi_3} \halfplane$, $F$ is an analytic isomorphism from $\Omega$ onto $\halfplane$.
 
 ::: pf-proof
 

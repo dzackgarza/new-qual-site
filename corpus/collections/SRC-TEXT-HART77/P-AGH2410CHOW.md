@@ -113,7 +113,7 @@ X'=\coprod_{i=1}^mY_i'.
 \]
 A finite disjoint union of projective $S$-schemes is projective over $S$: if
 \[
-Y_i'\hookrightarrow\mathbb P^{n_i}_S,
+Y_i'\hookrightarrow\PP^{n_i}_S,
 \]
 embed the finitely many projective spaces into pairwise disjoint coordinate linear subspaces of one sufficiently large projective space over $S$; their finite union is closed.
 
@@ -169,31 +169,31 @@ B[t_1,\ldots,t_N]\twoheadrightarrow A,
 \]
 which gives a closed immersion
 \[
-W\hookrightarrow\mathbb A^N_V.
+W\hookrightarrow\AA^N_V.
 \]
 
-The affine space $\mathbb A^N_V$ is the standard open subset of
+The affine space $\AA^N_V$ is the standard open subset of
 \[
-\mathbb P^N_V,
+\PP^N_V,
 \]
-and $\mathbb P^N_V$ is itself an open subscheme of
+and $\PP^N_V$ is itself an open subscheme of
 \[
-\mathbb P^N_S
+\PP^N_S
 \]
 because $V\subseteq S$ is open.
 Thus the composite
 \[
-W\longrightarrow\mathbb P^N_S
+W\longrightarrow\PP^N_S
 \]
 is a locally closed immersion.
 
-Let $P_W$ be its scheme-theoretic closure in $\mathbb P^N_S$.  Then
+Let $P_W$ be its scheme-theoretic closure in $\PP^N_S$.  Then
 \[
 W\hookrightarrow P_W
 \]
 is an open immersion and
 \[
-P_W\hookrightarrow\mathbb P^N_S
+P_W\hookrightarrow\PP^N_S
 \]
 is a closed immersion.  Hence $P_W$ is projective over $S$, and $W$ is quasi-projective over $S$.
 

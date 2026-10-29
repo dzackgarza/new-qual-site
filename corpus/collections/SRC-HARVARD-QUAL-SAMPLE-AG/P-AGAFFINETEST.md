@@ -130,19 +130,19 @@ The projective line and the punctured affine plane are not affine: for both, the
 ::: pf-proof
 For the projective line,
 \[
-\Gamma(\mathbb P^1_k,\mathcal O)=k,
+\Gamma(\PP^1_k,\mathcal O)=k,
 \]
 so the canonical map in step [](#recognition-criterion){.pf-ref} is
 \[
-\mathbb P^1_k\longrightarrow\operatorname{Spec}k,
+\PP^1_k\longrightarrow\operatorname{Spec}k,
 \]
-which is not an isomorphism.  Thus $\mathbb P^1$ is not affine.
+which is not an isomorphism.  Thus $\PP^1$ is not affine.
 
-For $X=\mathbb A^2_k\setminus\{0\}$, Hartogs extension gives
+For $X=\AA^2_k\setminus\{0\}$, Hartogs extension gives
 \[
 \Gamma(X,\mathcal O_X)=k[x,y],
 \]
-so $\eta_X$ is the open immersion $X\hookrightarrow\mathbb A^2_k$, which misses the origin and is not an isomorphism.  Thus $X$ is not affine, although its ring of global functions is the coordinate ring of an affine scheme.
+so $\eta_X$ is the open immersion $X\hookrightarrow\AA^2_k$, which misses the origin and is not an isomorphism.  Thus $X$ is not affine, although its ring of global functions is the coordinate ring of an affine scheme.
 :::
 
 :::

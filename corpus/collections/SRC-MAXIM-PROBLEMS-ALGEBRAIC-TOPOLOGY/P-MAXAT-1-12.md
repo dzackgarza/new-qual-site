@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\RR \mathbb { P } ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
+Show that $\RP ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
 :::
 
 ::: {.solution}

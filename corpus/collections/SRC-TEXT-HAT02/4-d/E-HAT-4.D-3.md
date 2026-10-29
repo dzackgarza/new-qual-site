@@ -101,7 +101,7 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
 ::: {.pf-step #s7}
 
 In the quaternionic case, the fiber is $S^{4k-4n+3}$ (a quaternionic sphere), so
-$$H^*(V_n(\mathbb{H}^k)) \cong \Lambda_\ZZ[x_{4k-4n+3}, x_{4k-4n+7}, \ldots, x_{4k-1}].$$
+$$H^*(V_n(\quaternions^k)) \cong \Lambda_\ZZ[x_{4k-4n+3}, x_{4k-4n+7}, \ldots, x_{4k-1}].$$
 
 ::: pf-proof
 

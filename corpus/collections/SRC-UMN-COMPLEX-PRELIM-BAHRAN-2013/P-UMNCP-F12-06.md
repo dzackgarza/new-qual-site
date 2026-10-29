@@ -35,7 +35,7 @@ $$
 
 The map
 $$
-\phi:\mathbb H\longrightarrow\DD
+\phi:\halfplane\longrightarrow\DD
 $$
 is a biholomorphism satisfying
 $$
@@ -51,7 +51,7 @@ $$
 $$
 is the standard Cayley map from the upper half-plane
 $$
-\mathbb H
+\halfplane
 =
 \{z:\operatorname{Im}z>0\}
 $$
@@ -80,7 +80,7 @@ $$
 =
 i\frac{1+w}{1-w},
 $$
-which maps $\DD$ to $\mathbb H$. Finally,
+which maps $\DD$ to $\halfplane$. Finally,
 $$
 \phi(i)=0.
 $$

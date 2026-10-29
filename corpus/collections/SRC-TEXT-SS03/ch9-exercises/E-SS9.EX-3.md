@@ -21,7 +21,7 @@ audit:
 3. In contrast with the result in Lemma 1.5, prove that the series
 
 $$
-\sum_ {n + m \tau \in \Lambda^ {*}} \frac {1}{| n + m \tau | ^ {2}} \quad \mathrm{where} \tau \in \mathbb {H}
+\sum_ {n + m \tau \in \Lambda^ {*}} \frac {1}{| n + m \tau | ^ {2}} \quad \mathrm{where} \tau \in \halfplane
 $$
 
 does not converge.
@@ -65,7 +65,7 @@ Thus
 =2\pi\log R+O(1).
 \]
 
-Now let $\tau\in\mathbb H$. Since the real-linear map
+Now let $\tau\in\halfplane$. Since the real-linear map
 \[
 (m,n)\longmapsto n+m\tau
 \]

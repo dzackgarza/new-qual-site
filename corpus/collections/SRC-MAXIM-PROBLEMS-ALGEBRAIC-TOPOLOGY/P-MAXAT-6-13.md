@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-$\mathbb { C P } ^ { n }$ cannot be expressed non-trivially as a product of complex manifolds.
+$\CP ^ { n }$ cannot be expressed non-trivially as a product of complex manifolds.
 :::
 
 ::: {.solution}

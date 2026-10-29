@@ -100,9 +100,9 @@ Embed the dual unit ball into a compact product.
 
 ::: pf-proof
 
-Let $\mathbb K$ denote the scalar field. For each $x\in X$, set
+Let $\bK$ denote the scalar field. For each $x\in X$, set
 \[
-D_x:=\{z\in\mathbb K:|z|\le\|x\|\}.
+D_x:=\{z\in\bK:|z|\le\|x\|\}.
 \]
 Each $D_x$ is compact. Hence, by Tychonoff's theorem,
 \[
@@ -144,7 +144,7 @@ a_{x+y}=a_x+a_y
 and
 \[
 a_{\lambda x}=\lambda a_x
-\qquad(x\in X,\ \lambda\in\mathbb K).
+\qquad(x\in X,\ \lambda\in\bK).
 \]
 For fixed $x,y,\lambda$, each identity defines a closed subset of $K$, because coordinate projections are continuous. Therefore
 \[
