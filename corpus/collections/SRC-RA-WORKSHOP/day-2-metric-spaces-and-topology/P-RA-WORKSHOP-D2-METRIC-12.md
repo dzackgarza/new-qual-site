@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-12
 kind: problem
-title: Open subsets of $\mathbb R$ are finite or countable unions of disjoint open intervals
+title: Open subsets of $\RR$ are finite or countable unions of disjoint open intervals
 classification:
   areas:
   - real-analysis
@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Prove Proposition 1.4: Every open set $G\subset\mathbb R$ can be written as a finite or countable union of disjoint open intervals $(a_j,b_j)$ with at most one $a_j=-\infty$ and at most one $b_j=\infty$.
+Prove that every open set $G\subset\RR$ can be written as a finite or countable union of disjoint open intervals $(a_j,b_j)$ with at most one $a_j=-\infty$ and at most one $b_j=\infty$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ Each $C_x$ is an open interval, possibly unbounded.
 
 ::: pf-proof
 
-Every connected subset of $\mathbb R$ is an interval. Given $y\in C_x$, openness of $G$ supplies $\varepsilon>0$ such that $I=(y-\varepsilon,y+\varepsilon)\subseteq G$. The union $C_x\cup I$ is connected since the two sets meet at $y$. Maximality of $C_x$ implies $I\subseteq C_x$. Therefore $C_x$ is open, hence is an interval $(a_x,b_x)$ with endpoints in the extended real line.
+Every connected subset of $\RR$ is an interval. Given $y\in C_x$, openness of $G$ supplies $\varepsilon>0$ such that $I=(y-\varepsilon,y+\varepsilon)\subseteq G$. The union $C_x\cup I$ is connected since the two sets meet at $y$. Maximality of $C_x$ implies $I\subseteq C_x$. Therefore $C_x$ is open, hence is an interval $(a_x,b_x)$ with endpoints in the extended real line.
 
 :::
 
@@ -43,7 +43,7 @@ The family of distinct components is at most countable.
 
 ::: pf-proof
 
-Enumerate $\mathbb Q$ as $(q_n)_{n\geq1}$. For each component $C$, define $n(C)$ as the least $n$ for which $q_n\in C$; this exists by step [](#s1){.pf-ref} and density of $\mathbb Q$. Distinct components are disjoint, so $n(C)=n(D)$ implies $C=D$. Thus $C\mapsto n(C)$ is an injection into $\mathbb N$.
+Let $(q_n)_{n\geq1}$ be an enumeration of $\QQ$. For each component $C$, let $n(C)$ be the least $n$ for which $q_n\in C$; this exists by step [](#s1){.pf-ref} and density of $\QQ$. Distinct components are disjoint, so $n(C)=n(D)$ implies $C=D$. Thus $C\mapsto n(C)$ is an injection into $\NN$.
 
 :::
 
