@@ -19,56 +19,47 @@ Which groups of order $4$ occur as Galois groups over $\QQ$?
 :::
 
 ::: {.solution}
-Up to isomorphism there are exactly two groups of order $4$:
-\[
-C_4,\qquad C_2\times C_2.
-\]
-Both occur over $\QQ$.
 
 ::: pf
 
-::: pf-step
-
-The cyclic group $C_4$ occurs.
-
-::: pf-proof
-
-The cyclotomic extension
-\[
-\QQ(\zeta_5)/\QQ
-\]
-is Galois, and
-\[
-\operatorname{Gal}(\QQ(\zeta_5)/\QQ)
-\cong (\ZZ/5\ZZ)^\times
-\cong C_4.
-\]
-
-:::
-
-:::
-
-::: pf-step
-
-The Klein four group occurs.
+::: {.pf-step #two-groups}
+Up to isomorphism the groups of order $4$ are $C_4$ and $C_2\times C_2$.
 
 ::: pf-proof
+A group of order $4$ with an element of order $4$ is cyclic. Otherwise every nonidentity element has order $2$, so the group is abelian, and it is $C_2\times C_2$.
+:::
 
-The biquadratic extension
-\[
-\QQ(\sqrt2,\sqrt3)/\QQ
-\]
-is Galois. Independently changing the signs of $\sqrt2$ and $\sqrt3$ gives four automorphisms, so
-\[
-\operatorname{Gal}(\QQ(\sqrt2,\sqrt3)/\QQ)
-\cong C_2\times C_2.
-\]
+:::
 
+::: {.pf-step #cyclic}
+$C_4$ occurs.
+
+::: pf-proof
+The cyclotomic extension $\QQ(\zeta_5)/\QQ$ is Galois, and
+$$\Gal(\QQ(\zeta_5)/\QQ)\cong(\ZZ/5\ZZ)^\times\cong C_4.$$
+:::
+
+:::
+
+::: {.pf-step #klein}
+$C_2\times C_2$ occurs.
+
+::: pf-proof
+The biquadratic extension $\QQ(\sqrt2,\sqrt3)/\QQ$ is the splitting field of $(x^2-2)(x^2-3)$, so it is Galois of degree $4$. Changing the signs of $\sqrt2$ and $\sqrt3$ independently gives four automorphisms, each of order dividing $2$, so
+$$\Gal(\QQ(\sqrt2,\sqrt3)/\QQ)\cong C_2\times C_2.$$
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{Both groups of order } 4}$ occur as Galois groups over $\QQ$.
+
+::: pf-proof
+By step [](#two-groups){.pf-ref} there are no other groups of order $4$, and steps [](#cyclic){.pf-ref} and [](#klein){.pf-ref} realize each of them.
 :::
 
 :::
 
 :::
 
-Thus every group of order $4$ is realizable as a Galois group over $\QQ$.
 :::
