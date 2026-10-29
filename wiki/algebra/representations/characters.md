@@ -12,7 +12,7 @@ Throughout, $G$ is a finite group and representations are finite-dimensional ove
 [[D-CTAKB]]
 
 ::: {.remark title="Characters determine representations"}
-The character $\chi_V(g) \definedas \tr\rho_V(g)$ determines $V$ up to isomorphism: by [[T-PIO2B|Maschke's theorem]] $V$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] and the orthogonality relations the multiplicity of each irreducible summand is an inner product of characters.
+The [[D-CTAKB|character]] $\chi_V$ of a representation $V$ determines $V$ up to isomorphism: by [[T-PIO2B|Maschke's theorem]] $V$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] and the orthogonality relations the multiplicity of each irreducible summand is an inner product of characters.
 
 - $\chi_V$ is a class function, since the trace is invariant under conjugation.
 
