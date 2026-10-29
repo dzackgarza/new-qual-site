@@ -4,6 +4,8 @@ id: C-CT2NX
 kind: corollary
 title: Euler characteristic of a connected sum of surfaces
 slogan: 'Connected sum of closed surfaces adds Euler characteristics and subtracts two.'
+prompts:
+- What is $\chi(A\# B)$?
 classification:
   areas:
   - topology
@@ -15,9 +17,10 @@ review: draft
 ---
 
 ::: {.corollary}
-Let $A$ and $B$ be closed surfaces, and let $A \# B$ be their connected sum.
+Let $A$ and $B$ be connected [[FD-QPIIL|closed surfaces]], and let $A \# B$ be their connected sum.
 Then the [[D-QK5BM|Euler characteristics]] satisfy
 $$
 \chi(A \# B) = \chi(A) + \chi(B) - 2
-.$$
+$$
+[@Hat02].
 :::
