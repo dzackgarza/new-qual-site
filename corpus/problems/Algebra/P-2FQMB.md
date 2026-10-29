@@ -32,14 +32,14 @@ Give an example of a $\CC\dash$algebra which is not semisimple.
 ::: pf-step
 
 Let
-\[
-A=\mathbb C[\varepsilon]/(\varepsilon^2).
-\]
-Then $A$ is a two-dimensional unital $\mathbb C$-algebra with basis $1,\varepsilon$ and relation $\varepsilon^2=0$.
+$$
+A=\CC[\varepsilon]/(\varepsilon^2).
+$$
+Then $A$ is a two-dimensional unital $\CC$-algebra with basis $1,\varepsilon$ and relation $\varepsilon^2=0$.
 
 ::: pf-proof
 
-Every class modulo $(\varepsilon^2)$ has a unique representative $a+b\varepsilon$ with $a,b\in\mathbb C$.
+Every class modulo $(\varepsilon^2)$ has a unique representative $a+b\varepsilon$ with $a,b\in\CC$.
 
 :::
 
@@ -48,17 +48,17 @@ Every class modulo $(\varepsilon^2)$ has a unique representative $a+b\varepsilon
 ::: {.pf-step #s2}
 
 The one-dimensional subspace
-\[
-J=\mathbb C\varepsilon
-\]
+$$
+J=\CC\varepsilon
+$$
 is a nonzero left ideal of $A$.
 
 ::: pf-proof
 
 For $a+b\varepsilon\in A$ and $c\varepsilon\in J$,
-\[
+$$
 (a+b\varepsilon)(c\varepsilon)=ac\varepsilon+bc\varepsilon^2=ac\varepsilon\in J.
-\]
+$$
 Also $\varepsilon\neq0$ in $A$, so $J\neq0$.
 
 :::
@@ -72,19 +72,19 @@ The ideal $J$ has no complementary left ideal in the regular left $A$-module $A$
 ::: pf-proof
 
 Suppose
-\[
+$$
 A=J\oplus K
-\]
+$$
 for a left ideal $K$.
-Since $\dim_{\mathbb C}A=2$ and $\dim_{\mathbb C}J=1$, one has $\dim_{\mathbb C}K=1$.
+Since $\dim_{\CC}A=2$ and $\dim_{\CC}J=1$, one has $\dim_{\CC}K=1$.
 Choose a nonzero element
-\[
+$$
 k=a+b\varepsilon\in K.
-\]
+$$
 Because $K$ is a left ideal,
-\[
+$$
 \varepsilon k=a\varepsilon\in K.
-\]
+$$
 If $a\neq0$, then $\varepsilon\in K$, contradicting $J\cap K=0$.
 Thus $a=0$, so $k=b\varepsilon\in J$. Since $k\neq0$, this again contradicts $J\cap K=0$.
 Therefore no such $K$ exists.
