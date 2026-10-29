@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS06B
 kind: problem
-title: "No finite covering from a higher-genus surface to a lower-genus surface for n > 2"
+title: No finite covering $\Sigma_{n+1} \to \Sigma_n$ for $n > 2$
 classification:
   areas:
   - topology
