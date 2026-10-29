@@ -52,36 +52,57 @@ Determine, with proof, the Jordan Normal Form of $\phi$.
 
 
 ::: {.solution}
-The second displayed matrix is upper triangular, so the characteristic polynomial of $\phi$ is
-$$
-\chi_\phi(t)=t^3(t-1)^3(t-17).
-$$
-Hence the algebraic multiplicities of $0,1,17$ are respectively $3,3,1$.
+Write $J_m(\lambda)$ for the Jordan block of size $m$ with eigenvalue $\lambda$.
 
-Consider the $3$-dimensional subspace spanned by the first three vectors of $B_1$. It is $\phi$-stable, and the restriction of $\phi$ to it has matrix
-$$
-N=\begin{pmatrix}
-1&1&0\\
--1&-1&0\\
-0&0&0
-\end{pmatrix}.
-$$
-Now $N\ne0$, $\operatorname{rank}N=1$, and a direct multiplication gives $N^2=0$. Therefore the Jordan form of this restriction is
-$$
-J_2(0)\oplus J_1(0).
-$$
-This already accounts for the full algebraic multiplicity $3$ of the eigenvalue $0$, so the $0$-primary part of the Jordan form of $\phi$ is exactly $J_2(0)\oplus J_1(0)$.
+::: pf
 
-For the eigenvalue $1$, the hypothesis
-$$
-\dim\ker(\phi-I)=1
-$$
-says that there is exactly one Jordan block with eigenvalue $1$. Since the algebraic multiplicity of $1$ is $3$, that block must be $J_3(1)$.
+::: {.pf-step #charpoly}
 
-Finally, $17$ has algebraic multiplicity $1$, so its Jordan block is $J_1(17)$.
+$\chi_\phi(t)=t^3(t-1)^3(t-17)$.
 
-Thus, up to permutation of Jordan blocks, the Jordan normal form is uniquely
-$$
-\boxed{J_2(0)\oplus J_1(0)\oplus J_3(1)\oplus J_1(17).}
-$$
+::: pf-proof
+
+The matrix $\mathcal M(\phi,B_2,B_2)$ is upper triangular with diagonal $0,0,0,1,1,1,17$.
+
+:::
+
+:::
+
+::: {.pf-step #zero-part}
+
+The Jordan blocks of $\phi$ with eigenvalue $0$ are $J_2(0)$ and $J_1(0)$.
+
+::: pf-proof
+
+The first three columns of $\mathcal M(\phi,B_1,B_1)$ vanish below row $3$, so the span $U$ of the first three vectors of $B_1$ is $\phi$-stable, and $\phi|_U$ has matrix $N=\begin{pmatrix}1&1&0\\-1&-1&0\\0&0&0\end{pmatrix}$. Direct multiplication gives $N^2=0$, and $\operatorname{rank}N=1$, so $\phi|_U$ is nilpotent with Jordan form $J_2(0)\oplus J_1(0)$. Thus $U$ lies in the generalized $0$-eigenspace of $\phi$, which has dimension $3$ by step [](#charpoly){.pf-ref}, so the two are equal.
+
+:::
+
+:::
+
+::: {.pf-step #one-part}
+
+The only Jordan block of $\phi$ with eigenvalue $1$ is $J_3(1)$.
+
+::: pf-proof
+
+The number of Jordan blocks for the eigenvalue $1$ is $\dim\ker(\phi-\operatorname{id})=1$, and their sizes add up to the algebraic multiplicity $3$ of step [](#charpoly){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+The Jordan normal form of $\phi$ is $\boxed{J_2(0)\oplus J_1(0)\oplus J_3(1)\oplus J_1(17)}$, up to the order of the blocks.
+
+::: pf-proof
+
+The eigenvalue $17$ is simple by step [](#charpoly){.pf-ref}, so it contributes $J_1(17)$; steps [](#zero-part){.pf-ref} and [](#one-part){.pf-ref} give the other blocks.
+
+:::
+
+:::
+
+:::
 :::
