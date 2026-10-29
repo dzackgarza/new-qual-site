@@ -19,20 +19,21 @@ Throughout, "locally uniformly" means "uniformly on every compact subset".
 
 ## Equicontinuity
 
-[[D-TIHRR]]
+[[D-2CCDB]]
 
 ::: {.slogan}
-An equicontinuous family is uniformly continuous with one $\delta(\varepsilon)$ for every member.
+A uniformly equicontinuous family is uniformly continuous with one $\delta(\varepsilon)$ for every member.
 :::
 
-[[T-6F3GO]]
+[[FF-XZGIY]]
 
 ::: {.remark}
-Applied on each compact set, the Arzelà--Ascoli theorem shows that a pointwise bounded, equicontinuous sequence of continuous functions on a compact metric space has a uniformly convergent subsequence, whose limit is continuous.
+On a compact metric space, a pointwise bounded family that is equicontinuous at every point is uniformly bounded, so the Arzelà--Ascoli theorem applies to it: every sequence in it has a uniformly convergent subsequence, and the limit is continuous.
+For holomorphic families on an open set $\Omega\subseteq\CC$, apply this on each compact subset of $\Omega$ and take a diagonal subsequence, which converges locally uniformly on $\Omega$.
 :::
 
-::: {.remark title="Negation of equicontinuity"}
-A family $\mathcal F$ of functions on a metric space $X$ is not equicontinuous if and only if there exist $\varepsilon>0$, points $x_k, y_k\in X$, and $f_k\in \mathcal F$ with $\abs{x_k-y_k}\to 0$ and $\abs{f_k(x_k) - f_k(y_k)} \geq \varepsilon$ for all $k$.
+::: {.remark title="Negation of uniform equicontinuity"}
+A family $\mathcal F$ of functions on a metric space $X$ is not uniformly equicontinuous if and only if there exist $\varepsilon>0$, points $x_k, y_k\in X$, and $f_k\in \mathcal F$ with $\abs{x_k-y_k}\to 0$ and $\abs{f_k(x_k) - f_k(y_k)} \geq \varepsilon$ for all $k$.
 :::
 
 ## Normal families

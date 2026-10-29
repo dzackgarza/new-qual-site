@@ -136,13 +136,9 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 
 [[D-AIQG3]]
 
-[[D-TIHRR]]
+[[D-2CCDB]]
 
-::: {.remark title="Arzelà--Ascoli"}
-For $X$ compact Hausdorff, equip $C(X; \RR)$ with the uniform norm $\norm{f}_{\infty} \coloneqq \sup_{x\in X} \abs{f(x)}$.
-A subset $A \subseteq C(X;\RR)$ is compact if and only if it is closed, bounded, and [[D-TIHRR|equicontinuous]]. In particular, every bounded equicontinuous sequence in $C(X;\RR)$ has a uniformly convergent subsequence.
-
-:::
+[[FF-XZGIY]]
 
 [[D-QTJ7T]]
 

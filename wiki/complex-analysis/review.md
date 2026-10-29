@@ -103,7 +103,7 @@ See [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 [[T-VGDFW]]
 
-[[T-6F3GO]]
+[[FF-XZGIY]]
 
 [[T-4ALS2]]
 
