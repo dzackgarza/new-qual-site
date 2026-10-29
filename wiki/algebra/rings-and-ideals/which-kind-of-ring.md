@@ -10,10 +10,6 @@ topics:
 
 ## The chain of inclusions
 
-$$
-\text{fields} \subset \text{Euclidean domains} \subset \text{PIDs} \subset \text{UFDs} \subset \text{integral domains} \subset \text{commutative rings}
-$$
-
 [[PR-LLBRB]]
 
 ::: {.remark title="Proofs of the inclusions"}
@@ -26,24 +22,6 @@ $$
 
 - **PID $\implies$ UFD.** A PID is Noetherian, so a nonzero nonunit that is not a product of irreducibles would give a strictly ascending chain $\generators a \subsetneq \generators{a_1}\subsetneq\cdots$ of principal ideals; hence factorizations exist.
   In a PID every irreducible element $p$ generates a maximal ideal, so $p$ is prime, and two factorizations into primes agree up to order and units by cancelling one prime at a time.
-:::
-
-## Strictness of the inclusions
-
-::: {.example title="Each inclusion is strict"}
-\envlist
-
-- **Euclidean domain, not a field.** $k[x]$ for a field $k$: the division algorithm makes it Euclidean, and $x$ is not invertible.
-
-- **PID, not a Euclidean domain.** $\ZZ\left[\frac{1 + \sqrt{-19}}{2}\right]$.
-
-- **UFD, not a PID.** $\ZZ[x]$.
-  Since $\ZZ$ is a UFD, so is $\ZZ[x]$.
-  The ideal $\generators{2,x} = \theset{\sum r_ix^i \st r_0 \in 2\ZZ}$ is proper and not principal: a constant generator $\pm2$ generates only polynomials with even coefficients and misses $x$, and a generator of degree at least one misses $2$.
-
-- **Integral domain, not a UFD.** $\ZZ[\sqrt{-5}]$, where $(2+\sqrt{-5})(2-\sqrt{-5}) = 9 = 3\cdot 3$ and $2\pm\sqrt{-5}$ and $3$ are irreducible and $3$ is associate to neither $2+\sqrt{-5}$ nor $2-\sqrt{-5}$, by the multiplicativity of the norm $N(a+b\sqrt{-5})=a^2+5b^2$.
-
-- **Commutative ring, not an integral domain.** $\ZZ/4$, where $[2]^2 = [0]$.
 :::
 
 [[E-XH2QU]]
