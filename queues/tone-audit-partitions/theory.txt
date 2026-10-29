@@ -306,7 +306,6 @@ corpus/theory/Real_Analysis/FD-OFT7I.md
 corpus/theory/Real_Analysis/FD-OOCQD.md
 corpus/theory/Real_Analysis/FD-Q3XHG.md
 corpus/theory/Real_Analysis/FD-Q7EEG.md
-corpus/theory/Real_Analysis/FD-SMWLB.md
 corpus/theory/Real_Analysis/FD-ST7TD.md
 corpus/theory/Real_Analysis/FD-T7SN6.md
 corpus/theory/Real_Analysis/FD-V5ISD.md
