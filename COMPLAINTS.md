@@ -37,19 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Second duplicate Burnside card FF-OL75S
-
-- **Object and need:** `C-HE5SL` and `FF-OL75S` in `corpus/theory/Algebra`. Both state Burnside's orbit-counting formula for a finite group acting on a finite set.
-
-- **Observed evidence:** the displayed formulas are identical after the notational substitution `$X^g=\Fix(g)$`; `FF-OL75S` adds only the review prompt and the standard double-counting proof.
-  The wiki and algebra guide displayed both cards.
-
-- **Impact and owner:** a second flashcard-derived address remained for the same theorem after the earlier `C-CM7ZS` duplicate was removed.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt and double-counting proof to `C-HE5SL`, removes duplicate reader-facing references, and deletes `FF-OL75S`.
-
 ### Duplicate class-equation cards C-A6UAR, C-O7CP3, and FD-L2TEC
 
 - **Object and need:** `C-A6UAR`, `C-O7CP3`, and `FD-L2TEC` in `corpus/theory/Algebra`. They are intrinsic cards for the same class equation (`CARD-04`, `SOURCE-02`).
