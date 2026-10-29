@@ -24,71 +24,43 @@ Show that a continuous map from a compact space to a Hausdorff space is closed.
 
 ::: {.solution}
 
-::: pf
-
-::: {.pf-step #s1}
-
 Let $f : X \to Y$ be continuous, with $X$ compact and $Y$ Hausdorff, and let $C \subseteq X$ be closed.
 
-::: pf-proof
+::: pf
 
-setup.
+::: {.pf-step #c-compact}
 
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-$C$ is compact (a closed subset of a compact space is compact).
+$C$ is compact.
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref}.
+A closed subset of a compact space is compact.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #image-compact}
 
-$f(C)$ is compact (the continuous image of a compact set is compact).
+$f(C)$ is compact.
 
 ::: pf-proof
 
-Step [](#s2){.pf-ref} and continuity.
+The continuous image of a compact set is compact, and $C$ is compact by step [](#c-compact){.pf-ref}.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-$f(C)$ is closed (a compact subset of a Hausdorff space is closed).
+$f(C)$ is closed in $Y$, so $f$ is a closed map.
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref} and $Y$ Hausdorff.
+A compact subset of a Hausdorff space is closed; apply this to step [](#image-compact){.pf-ref}.
 
 :::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence $f$ maps closed sets to closed sets, so $f$ is a closed map.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s5){.pf-ref}.
 
 :::
 
