@@ -16,31 +16,40 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source hint defines H(xi) = e^{2 pi i xi} int_0^1 y e^{2 pi i y xi} dy, for which H(xi) + H(-xi) is not hat G(xi) with hat g(xi) = int g(x) e^{-2 pi i x xi} dx (at xi = 1/4 it has the opposite imaginary-part sign). The substitution y = 1 - x on [0,1] gives the factor e^{-2 pi i xi}; the hint now uses it and sits in a hint block."
 ---
 
 ::: {.problem}
 Define
-\[
+$$
+\begin{aligned}
 F(x) &\definedas \qty{ \sin(\pi x) \over \pi x}^2 \\
-G(x) &\definedas 
+G(x) &\definedas
 \begin{cases}
 1 - \abs{x} & \abs{x} \leq 1
 \\
 0 & \text{else}.
 \end{cases}
-\]
+\end{aligned}
+$$
 
-a. Show that $\fourier{G}(\xi) = F(\xi)$
+(a) Show that $\fourier{G}(\xi) = F(\xi)$.
 
-b. Compute $\fourier{F}$.
+(b) Compute $\fourier{F}$.
 
-c. Give an example of a function $g\not \in L^1(\RR)$ which is the Fourier transform of an $L^1$ function.
-
-*Hint: write \( \fourier{G}(\xi) = H(\xi) + H(-\xi) \)  where*
-\[
-H(\xi) \definedas e^{2\pi i \xi} \int_0^1 y e^{2\pi i y \xi }\dy 
-.\]
+(c) Give an example of a function $g\not \in L^1(\RR)$ which is the Fourier transform of an $L^1$ function.
 :::
+
+::: {.hint}
+For (a), write $\fourier{G}(\xi) = H(\xi) + H(-\xi)$, where
+$$
+H(\xi) \definedas e^{-2\pi i \xi} \int_0^1 y e^{2\pi i y \xi }\dy.
+$$
+:::
+
 ::: {.solution}
 Use $\hat g(\xi) = \int g(x)e^{-2\pi i x\xi}\,dx$.
 
