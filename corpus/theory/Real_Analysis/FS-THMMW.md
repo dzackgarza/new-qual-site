@@ -21,3 +21,7 @@ To show that $(f_n)$ does not [[D-YZC3C|converge uniformly]] to $f$ on $S$, exhi
 ::: {.example}
 On $S=(0,\infty)$, the functions $f_n(x)=\frac{1}{1+nx}$ converge pointwise to $f=0$, but not uniformly: with $\varepsilon=\frac12$ and $x_n=\frac1n$, $\abs{f_n(x_n)-f(x_n)}=\frac{1}{2}$ for every $n$.
 :::
+
+::: {.remark title="Variations"}
+To show that $(f_n)$ is not uniformly Cauchy on $S$, exhibit $\varepsilon>0$ and, for every $N$, indices $m,n\geq N$ and a point $x\in S$ with $\abs{f_n(x)-f_m(x)}\geq\varepsilon$.
+:::
