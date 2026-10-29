@@ -285,7 +285,7 @@ Then $H'(y,0)=f(y)$ and $H'(y,1)=x_0$, so $H'$ is a homotopy from $f$ to a const
 [[C-GJRYO]]
 
 ::: {.proof}
-Suppose $f = p \circ \tilde f$ with $\tilde f\colon X\to Z$, $p\colon Z\to Y$, and $Z$ contractible:
+Suppose $f = p \circ \tilde f$ with $\tilde f\colon X\to Z$, $p\colon Z\to Y$, and $Z$ contractible, so that the following triangle commutes.
 
 \begin{tikzcd}
 	&& {Z} \\
