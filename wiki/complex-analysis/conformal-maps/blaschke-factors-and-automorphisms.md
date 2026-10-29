@@ -82,6 +82,6 @@ $$
 
 [[T-VGDFW]]
 
-## Exercises
+## Problems
 
 [[E-IVHVW]] [[E-XQ4BA]] [[E-CFTRQ]]
