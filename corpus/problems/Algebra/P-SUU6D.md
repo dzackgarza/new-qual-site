@@ -22,32 +22,31 @@ audit:
 ---
 
 ::: {.problem}
-How many elements in the automorphism group $\operatorname{Aut}(\mathbb{Z}/20\mathbb{Z})$ have order 4?
+How many elements in the automorphism group $\Aut(\ZZ/20\ZZ)$ have order 4?
 :::
 
 ::: {.solution}
-Since $\mathbb Z/20\mathbb Z$ is cyclic,
-\[
-\operatorname{Aut}(\mathbb Z/20\mathbb Z)\cong(\mathbb Z/20\mathbb Z)^\times.
-\]
-By the Chinese remainder theorem,
-\[
-(\mathbb Z/20\mathbb Z)^\times
-\cong(\mathbb Z/4\mathbb Z)^\times\times(\mathbb Z/5\mathbb Z)^\times
-\cong C_2\times C_4.
-\]
-An element $(a,b)\in C_2\times C_4$ has order $4$ exactly when $b$ has order $4$. There are two choices for $a$ and two elements of order $4$ in $C_4$, hence
-\[
-2\cdot2=4
-\]
-such elements.
 
-Explicitly, they correspond to
-\[
-3,7,13,17\pmod{20}.
-\]
-Therefore the answer is
-\[
-\boxed{4}.
-\]
+::: pf
+
+::: pf-step
+
+$\Aut(\ZZ/20\ZZ)\cong(\ZZ/20\ZZ)^\times\cong C_2\times C_4$.
+
+::: pf-proof
+
+An endomorphism of the cyclic group $\ZZ/20\ZZ$ is multiplication by some $u$, and it is an automorphism exactly when $u$ is a unit. By the Chinese remainder theorem, $(\ZZ/20\ZZ)^\times\cong(\ZZ/4\ZZ)^\times\times(\ZZ/5\ZZ)^\times\cong C_2\times C_4$.
+
+:::
+
+:::
+
+::: pf-qed
+
+An element $(a,b)\in C_2\times C_4$ has order $\operatorname{lcm}(\operatorname{ord}a,\operatorname{ord}b)$, which is $4$ exactly when $b$ has order $4$. There are $2$ choices of $a$ and $2$ elements of order $4$ in $C_4$, so there are $\boxed{4}$ such automorphisms: multiplication by $3,7,13,17$ modulo $20$.
+
+:::
+
+:::
+
 :::
