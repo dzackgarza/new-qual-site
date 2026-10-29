@@ -39,6 +39,10 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne V.2.15(c) asks for a nonsingular curve Y = 3C_0-3f; adjunction gives p_a(Y)=4 while its normalization C has genus 3. The statement now asks for an integral curve of that class with normalization C.
 ---
 
 ::: {.problem}
@@ -52,40 +56,9 @@ c. Now let $\mathcal{E}$ be defined by $\xi$ as an extension
 \[
 0 \rightarrow \mathcal{O}_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(P) \rightarrow 0,
 \]
-and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains a nonsingular curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
+and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$ with normalization $C$, such that $\pi: Y \rightarrow C$ is purely inseparable.
 
     Show that the divisor $D=2 C_0$ satisfies the hypotheses of (2.21.b), but is not ample.
-:::
-
-::: {.remark title="Erratum to part (c)"}
-The curve of class
-$$
-3C_0-3f
-$$
-constructed from the Frobenius-split extension is **not nonsingular**.  The
-correct conclusion is that there is an integral curve $Y$ of this class whose
-normalization is $C$, and for which
-$$
-\pi|_Y:Y\longrightarrow C
-$$
-is purely inseparable of degree $3$.
-
-Indeed, the proof below gives $e=-1$ and $g(C)=3$, so
-$$
-K_X\equiv-2C_0+5f.
-$$
-Adjunction then gives
-$$
-2p_a(Y)-2
-=(3C_0-3f)\cdot(C_0+2f)
-=6,
-$$
-hence
-$$
-p_a(Y)=4.
-$$
-But the normalization is the genus-$3$ curve $C$. Thus $Y$ has total
-$\delta$-invariant $1$ and cannot be nonsingular.
 :::
 
 ::: {.solution}
@@ -573,42 +546,6 @@ Therefore so is $\pi|_Y$.
 
 :::
 
-::: {.pf-step #s11}
-
-The curve $Y$ is singular; more precisely,
-$$
-p_a(Y)=4,
-\qquad
-g(\widetilde Y)=3.
-$$
-
-::: pf-proof
-
-The base curve is a nonsingular plane quartic, so $g=3$. Step [](#s6){.pf-ref} gives
-$e=-1$, hence the canonical divisor of the ruled surface is numerically
-$$
-K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f.
-$$
-Using step [](#s9){.pf-ref} and adjunction,
-$$
-\begin{aligned}
-2p_a(Y)-2
-&=Y\cdot(Y+K_X)\\
-&=(3C_0-3f)\cdot(C_0+2f)\\
-&=6.
-\end{aligned}
-$$
-Thus
-$$
-p_a(Y)=4.
-$$
-Its normalization is $C$ by step [](#s9){.pf-ref}, so its geometric genus is $3$.
-Consequently $Y$ is singular, proving the correction recorded above.
-
-:::
-
-:::
-
 ::: {.pf-step #s12}
 
 The divisor
@@ -672,12 +609,8 @@ This is exactly the characteristic-$3$ failure that the exercise exhibits.
 :::
 
 ::: pf-qed
-
-for the corrected statement.
-
 Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), and steps
-[](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove the corrected form of part (c) and the non-ampleness
-counterexample.
+[](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s12){.pf-ref} prove part (c).
 
 :::
 
