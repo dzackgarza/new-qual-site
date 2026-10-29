@@ -12,30 +12,46 @@ classification:
   - Laurent Series
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source says "Laurent expand tan(z) at 0 using this method", referring to an earlier geometric-series inversion; the statement now names that method and the order z^5 the solution computes.'
 ---
 
 ::: {.exercise}
-Laurent expand $\tan(z)$ at $0$ using this method to compute $1/\cos(z)$ and taking the product $\sin(z) \cdot {1\over \cos(z)}$.
+Expand $\tan z$ in a power series at $0$ through the term in $z^5$: compute $1/\cos z$ by writing $\cos z=1-u$ and expanding $\frac{1}{1-u}$ as a geometric series, then take the product $\sin z\cdot\frac{1}{\cos z}$.
 :::
 
 ::: {.solution}
+Write $\mathcal{O}(z^m)$ for a power series whose terms have degree at least $m$.
 
-Example.
-To find the coefficients of $z^m$ for $m \leq 5$ in the power series expansion of $\tan z=\sin z / \cos z$ about $z=0$, we calculate as follows, again using the notation $\mathcal{O}\left(z^m\right)$ for terms involving powers $z^k$ for $k \geq m$ :
-\[
-\begin{aligned}
-\frac{1}{\cos z} & =\frac{1}{1-\left(z^2 / 2 !\right)+\left(z^4 / 4 !\right)+\mathcal{O}\left(z^6\right)} \\
-& =1+\left(\frac{z^2}{2 !}-\frac{z^4}{4 !}+\mathcal{O}\left(z^6\right)\right)+\left(\frac{z^2}{2 !}-\frac{z^4}{4 !}+\mathcal{O}\left(z^6\right)\right)^2+\mathcal{O}\left(z^6\right) \\
-& =1+\frac{1}{2} z^2+\frac{5}{24} z^4+\mathcal{O}\left(z^6\right)
-\end{aligned}
-\]
-so that
-\[
-\begin{aligned}
-\frac{\sin z}{\cos z} & =\left(z-\frac{z^3}{3 !}+\frac{z^5}{5 !}+\mathcal{O}\left(z^7\right)\right)\left(1+\frac{1}{2} z^2+\frac{5}{24} z^4+\mathcal{O}\left(z^6\right)\right) \\
-& =z+\frac{1}{3} z^3+\frac{2}{15} z^5+\mathcal{O}\left(z^7\right) .
-\end{aligned}
-\]
-The end result can be checked by differentiating $\tan z$ five times.
-Note that $\tan z$ is an odd function, so that only odd terms appear in the power series.
+::: pf
+
+::: {.pf-step #secant}
+$\frac{1}{\cos z}=1+\frac{1}{2}z^2+\frac{5}{24}z^4+\mathcal{O}(z^6)$.
+
+::: pf-proof
+$\cos z=1-u$ with $u=\frac{z^2}{2}-\frac{z^4}{24}+\mathcal{O}(z^6)$, and $u=\mathcal{O}(z^2)$, so
+$$
+\frac{1}{\cos z}=1+u+u^2+\mathcal{O}(z^6)=1+\frac{z^2}{2}-\frac{z^4}{24}+\frac{z^4}{4}+\mathcal{O}(z^6).
+$$
+:::
+
+:::
+
+::: pf-step
+$\tan z=\boxed{z+\frac{1}{3}z^3+\frac{2}{15}z^5+\mathcal{O}(z^7)}$.
+
+::: pf-proof
+By step [](#secant){.pf-ref},
+$$
+\tan z=\Bigl(z-\frac{z^3}{6}+\frac{z^5}{120}+\mathcal{O}(z^7)\Bigr)\Bigl(1+\frac{z^2}{2}+\frac{5z^4}{24}+\mathcal{O}(z^6)\Bigr).
+$$
+The coefficient of $z^3$ is $\frac12-\frac16=\frac13$ and that of $z^5$ is $\frac{5}{24}-\frac{1}{12}+\frac{1}{120}=\frac{2}{15}$. Since $\tan z$ is odd, no even powers occur, so the error term is $\mathcal{O}(z^7)$.
+:::
+
+:::
+
+:::
 :::
