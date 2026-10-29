@@ -173,7 +173,7 @@ $$
 ::: pf-proof
 
 Step [](#s1-1){.pf-ref} answers the classification request.
-Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove that the source's boundary word cannot encode the claimed pairwise edge identification, so there is no mathematically determined surface to classify without an external correction to the source.
+Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove that the stated boundary word cannot encode the claimed pairwise edge identification, so there is no mathematically determined surface to classify without an external correction to the statement.
 
 :::
 
