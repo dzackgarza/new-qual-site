@@ -20,7 +20,7 @@ topics:
 ## Point-set topology
 
 ::: {.remark title="The prefix \"locally\""}
-For a property $P$ of spaces, \"$X$ is locally $P$\" has two definitions in use: every $x\in X$ has some neighborhood with property $P$, or every $x\in X$ has a neighborhood basis of sets with property $P$.
+For a property $P$ of spaces, "$X$ is locally $P$" has two definitions in use: every $x\in X$ has some neighborhood with property $P$, or every $x\in X$ has a neighborhood basis of sets with property $P$.
 Local connectedness and local path connectedness use the second.
 :::
 
@@ -28,7 +28,7 @@ Local connectedness and local path connectedness use the second.
 
 [[D-WKURJ]]
 
-[[D-3KS2F]] [[D-2GCTV]] [[D-KW52R]]
+[[D-KW52R]]
 
 [[D-YO6NZ]]
 
@@ -72,7 +72,7 @@ Local connectedness and local path connectedness use the second.
 
 [[D-GYBZ2]]
 
-[[D-5EOQZ]] [[D-6JJJU]]
+[[D-5EOQZ]]
 
 [[FD-ONITX]]
 
@@ -123,8 +123,6 @@ For every point $x_0$ of a space $X$, the constant map $X\to\theset{x_0}$ is a r
 
 [[D-23NTI]]
 
-[[D-23NTI]]
-
 [[D-LB2LS]]
 
 [[D-RT2FT]]
@@ -139,6 +137,7 @@ For every point $x_0$ of a space $X$, the constant map $X\to\theset{x_0}$ is a r
 - $T_0$ but not $T_1$: $\Spec R$ with the Zariski topology, for a commutative ring $R$ with a prime ideal that is not maximal.
   The closure of a point $\mathfrak p$ is $V(\mathfrak p)$, so the points of $\Spec R \sm \mspec R$ are not closed.
 :::
+
 [[D-2TZAI]]
 
 ::: {.example}
