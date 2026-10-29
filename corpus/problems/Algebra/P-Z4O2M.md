@@ -25,35 +25,40 @@ audit:
 ::: {.problem}
 Let $R$ and $S$ be commutative rings with multiplicative identity.
 
-1. Prove that when $R$ is a field, every non-zero ring homomorphism $\phi: R\to S$ is injective.
+(a) Prove that when $R$ is a field, every non-zero ring homomorphism $\phi: R\to S$ is injective.
 
-2. Does (a) still hold if we only assume that $R$ is a domain?
-   If so, prove it, and if not provide a counterexample.
+(b) Does (a) still hold if we only assume that $R$ is a domain?
+If so, prove it, and if not provide a counterexample.
 :::
 
 ::: {.solution}
-Let $R$ be a field and let
-\[
-\phi:R\to S
-\]
-be a nonzero ring homomorphism. Its kernel is an ideal of $R$, so
-\[
-\ker\phi=(0)\quad\text{or}\quad R.
-\]
-The second possibility would make $\phi$ the zero map. Hence
-\[
-\ker\phi=(0),
-\]
-so $\phi$ is injective. This argument does not require a convention that ring homomorphisms preserve $1$.
 
-The statement fails for integral domains. For example,
-\[
-\mathbb Z\to\mathbb Z/2\mathbb Z,
-\qquad n\mapsto n\bmod2,
-\]
-is a nonzero ring homomorphism, but
-\[
-\ker\phi=2\mathbb Z\ne0.
-\]
-Thus a nonzero homomorphism from a domain need not be injective.
+::: pf
+
+::: pf-step
+
+(a) If $R$ is a field, every nonzero ring homomorphism $\phi\colon R\to S$ is injective.
+
+::: pf-proof
+
+The kernel $\ker\phi$ is an ideal of $R$, and the only ideals of a field are $(0)$ and $R$. Since $\phi\ne0$, $\ker\phi\ne R$, so $\ker\phi=(0)$ and $\phi$ is injective. This argument does not use the convention that ring homomorphisms preserve $1$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) No: the reduction map $\phi\colon\ZZ\to\ZZ/2\ZZ$, $n\mapsto n\bmod 2$, is a nonzero homomorphism from a domain that is not injective.
+
+::: pf-proof
+
+$\ZZ$ is a domain, $\phi$ is a ring homomorphism with $\phi(1)=1\ne0$, and $\ker\phi=2\ZZ\ne0$.
+
+:::
+
+:::
+
+:::
+
 :::
