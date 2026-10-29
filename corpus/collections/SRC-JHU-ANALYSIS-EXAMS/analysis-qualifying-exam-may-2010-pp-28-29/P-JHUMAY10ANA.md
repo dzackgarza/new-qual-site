@@ -22,6 +22,10 @@ Suppose that $|f(z)| \le |z|^{-1/2}$ for all $z \in U$.
 Prove that $f$ has a removable singularity at $0$.
 :::
 
+::: {.hint}
+Riemann's removable singularity theorem does not apply to $z^{1/2}f(z)$, because $z^{1/2}$ has no single-valued holomorphic branch on a punctured neighbourhood of $0$. Apply it to $zf(z)$.
+:::
+
 ::: {.solution}
 
 ::: pf
