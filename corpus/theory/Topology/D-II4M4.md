@@ -20,7 +20,7 @@ The \dfn{cone} on $X$ is the quotient space
 $$
 CX\coloneqq(X\times I)/(X\times\theset{0}),
 $$
-in which $X\times\theset{0}$ is collapsed to a point.
+in which $X\times\theset{0}$ is collapsed to a point [@Hat02].
 :::
 
 ::: {.proposition}
@@ -29,8 +29,4 @@ If $X$ is nonempty, then $CX$ is [[D-K43GA|contractible]], and $x\mapsto[(x, 1)]
 
 ::: {.example}
 The cone $CS^1$ on the circle is homeomorphic to the closed disk $D^2$, by $[(z, t)]\mapsto tz$ for $z\in S^1\subseteq\CC$ and $t\in I$.
-:::
-
-::: {.concept}
-See [@Hat02].
 :::

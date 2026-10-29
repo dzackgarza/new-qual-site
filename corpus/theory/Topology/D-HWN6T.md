@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a ring and $C_\bullet$, $D_\bullet$ chain complexes of $R$-modules.
-A [[D-36ONS|chain map]] $f\colon C_\bullet\to D_\bullet$ is a \dfn{quasi-isomorphism} if the induced map $H_n(f)\colon H_n(C_\bullet)\to H_n(D_\bullet)$ is an isomorphism for every $n\in\ZZ$.
+A [[D-36ONS|chain map]] $f\colon C_\bullet\to D_\bullet$ is a \dfn{quasi-isomorphism} if the induced map $H_n(f)\colon H_n(C_\bullet)\to H_n(D_\bullet)$ is an isomorphism for every $n\in\ZZ$ [@Wei94].
 :::
 
 ::: {.proposition}
@@ -31,8 +31,4 @@ Every chain map $D_\bullet\to C_\bullet$ is zero, since $\Hom(\ZZ/2, \ZZ) = 0$, 
 
 ::: {.remark}
 The derived category of $R$-modules is obtained from the category of chain complexes by formally inverting the quasi-isomorphisms.
-:::
-
-::: {.concept}
-[@Wei94].
 :::
