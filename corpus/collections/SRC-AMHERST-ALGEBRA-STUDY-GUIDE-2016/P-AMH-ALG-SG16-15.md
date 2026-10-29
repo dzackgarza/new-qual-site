@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(February 2007) Fix an integer $n\ge 2$, and write $S_n$ for the permutation group on $n$ letters.
+Fix an integer $n\ge 2$, and write $S_n$ for the permutation group on $n$ letters.
 Let $\varphi:S_n\to G$ be a homomorphism, where $G$ is a group of odd order.
 (I.e., $G$ is a finite group with an odd number of elements.)
 (a) Prove that every transposition (i.e., $2$-cycle) $\tau\in S_n$ is in $\ker\varphi$.

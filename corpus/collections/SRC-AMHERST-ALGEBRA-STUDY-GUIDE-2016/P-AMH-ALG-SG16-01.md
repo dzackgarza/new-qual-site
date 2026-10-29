@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2012) Let $G$ be a group, and let $H,K\subseteq G$ be subgroups of $G$.
+Let $G$ be a group, and let $H,K\subseteq G$ be subgroups of $G$.
 Prove the following standard theorem about subgroups: that $H\cap K$ is a subgroup of $G$.
 :::
 

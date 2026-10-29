@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2012) Let
+Let
 $$
 R=\left\{\begin{pmatrix}a&b\\0&c\end{pmatrix}:a,b,c\in\RR\right\}.
 $$

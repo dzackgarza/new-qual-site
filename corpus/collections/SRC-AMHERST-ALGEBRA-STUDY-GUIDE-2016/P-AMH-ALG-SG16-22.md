@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2014) A nonzero element $a$ of a ring is said to be nilpotent if there is a positive integer $n\ge 1$ such that $a^n=0$.
+A nonzero element $a$ of a ring is said to be nilpotent if there is a positive integer $n\ge 1$ such that $a^n=0$.
 (The element $0$ itself is not said to be nilpotent.)
 Let $R$ be a commutative ring, and let $I\subseteq R$ be an ideal.
 Prove that the following two statements are equivalent.

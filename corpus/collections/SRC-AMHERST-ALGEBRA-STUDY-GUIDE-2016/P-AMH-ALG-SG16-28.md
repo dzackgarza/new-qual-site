@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 1999) Let $k$ be a field. Show that a cubic polynomial $f(x)\in k[x]$ is irreducible in $k[x]$ if and only if $f(x)$ has no roots in $k$.
+Let $k$ be a field. Show that a cubic polynomial $f(x)\in k[x]$ is irreducible in $k[x]$ if and only if $f(x)$ has no roots in $k$.
 :::
 
 ::: {.solution}

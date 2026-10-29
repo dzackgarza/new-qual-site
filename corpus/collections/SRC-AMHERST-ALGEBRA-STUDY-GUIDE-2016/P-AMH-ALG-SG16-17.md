@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(February 1982) Prove that if an ideal $I$ of the ring $\ZZ$ contains two relatively prime integers, then $I=\ZZ$.
+Prove that if an ideal $I$ of the ring $\ZZ$ contains two relatively prime integers, then $I=\ZZ$.
 :::
 
 ::: {.solution}

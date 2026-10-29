@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2014) For the polynomial ring $R=\RR[x]$, define
+For the polynomial ring $R=\RR[x]$, define
 $$
 I=\{f\in R\mid f(2)=f(5)=0\}.
 $$

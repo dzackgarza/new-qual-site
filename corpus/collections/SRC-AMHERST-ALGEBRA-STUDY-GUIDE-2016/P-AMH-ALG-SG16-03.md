@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2016) Let $G$ be a group, let $H\subseteq G$ be a subgroup, and define the set
+Let $G$ be a group, let $H\subseteq G$ be a subgroup, and define the set
 $$
 K=\{x\in G\mid Hx=xH\}.
 $$

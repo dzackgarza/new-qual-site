@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2009) (a) Prove that $f(X)=X^4+X^2+1$ is reducible in the polynomial ring $\FF_2[X]$, where $\FF_2=\{0,1\}$ is the field of two elements.
+(a) Prove that $f(X)=X^4+X^2+1$ is reducible in the polynomial ring $\FF_2[X]$, where $\FF_2=\{0,1\}$ is the field of two elements.
 (b) Prove that $g(X)=X^3+2X^2+2X+3$ is irreducible in the polynomial ring $\FF_5[X]$, where $\FF_5=\{0,1,2,3,4\}$ is the field of five elements.
 :::
 

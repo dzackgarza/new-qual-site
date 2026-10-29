@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 1997) Suppose that $\sigma$ is a permutation in the alternating group $A_{10}$ given by
+Suppose that $\sigma$ is a permutation in the alternating group $A_{10}$ given by
 $$
 \begin{pmatrix}
 1&2&3&4&5&6&7&8&9&10\\

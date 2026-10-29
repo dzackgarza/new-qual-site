@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2012) Let $G$ be a group, and let $H,K\subseteq G$ be normal subgroups of $G$.
+Let $G$ be a group, and let $H,K\subseteq G$ be normal subgroups of $G$.
 Prove that $H\cap K$ is a normal subgroup of $G$.
 You may assume without proof that $H\cap K$ is a subgroup.
 :::

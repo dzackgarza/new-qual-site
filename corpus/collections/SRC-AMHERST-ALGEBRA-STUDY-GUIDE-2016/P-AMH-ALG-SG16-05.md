@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2011) Suppose that $H\subseteq G$ is a subgroup with the property that for every $x,y\in G$, we have $xyx^{-1}y^{-1}\in H$.
+Suppose that $H\subseteq G$ is a subgroup with the property that for every $x,y\in G$, we have $xyx^{-1}y^{-1}\in H$.
 Prove that $H$ is a normal subgroup of $G$.
 :::
 

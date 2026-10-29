@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(February 2008) Let $\varphi:R\to S$ be a ring homomorphism.
+Let $\varphi:R\to S$ be a ring homomorphism.
 Let $I\subseteq R$ be an ideal of $R$, and set
 $$
 J=\{x\in I\mid \varphi(x)=0_S\},

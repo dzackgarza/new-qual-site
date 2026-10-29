@@ -23,7 +23,7 @@ audit:
   note: Checked against the vendored Amherst College Study Guide for Algebra (September 2016).
 ---
 ::: {.problem}
-(January 2016) Define what it means for a subset $I\subseteq R$ to be an ideal of $R$.
+Define what it means for a subset $I\subseteq R$ to be an ideal of $R$.
 Note: If you use other technical terms like "closed," "subring," "subgroup," etc., you must fully define those terms as well.
 
 Answer: $I\subseteq R$ is an ideal if:

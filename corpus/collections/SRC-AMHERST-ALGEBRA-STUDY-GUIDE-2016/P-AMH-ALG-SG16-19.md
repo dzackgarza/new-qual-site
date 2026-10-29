@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(January 2010) Let $R$ be a commutative ring and $S\subseteq R$ a subset of $R$.
+Let $R$ be a commutative ring and $S\subseteq R$ a subset of $R$.
 Define the annihilator of $S$ in $R$ to be
 $$
 \operatorname{Ann}(S)=\{r\in R\mid rs=0\text{ for every }s\in S\}.

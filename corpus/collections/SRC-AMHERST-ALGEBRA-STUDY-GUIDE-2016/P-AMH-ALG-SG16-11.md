@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(February 2013) Let $G_1$ and $G_2$ be groups, let $\varphi:G_1\to G_2$ be a homomorphism, and let $H_1\subseteq G_1$ be a subgroup.
+Let $G_1$ and $G_2$ be groups, let $\varphi:G_1\to G_2$ be a homomorphism, and let $H_1\subseteq G_1$ be a subgroup.
 Recall that the set
 $$
 H_2=\{\varphi(x)\mid x\in H_1\}
