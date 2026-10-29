@@ -24,31 +24,19 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne III.12.5 omits the rank hypothesis, and for rank one P(E) = Y. The statement now requires E to have rank at least 2.
 ---
 
 ::: {.problem}
 Let $Y$ be an integral scheme of finite type over an algebraically closed field $k$.
-Let $\mce$ be a locally free sheaf on $Y$, and let $X = \PP(\mce)$; see (II, §7).
+Let $\mce$ be a locally free sheaf of rank $\geq 2$ on $Y$, and let $X = \PP(\mce)$; see (II, §7).
 
 Show that $\Pic X \cong (\Pic Y) \times \ZZ$.
 This strengthens (II, Ex.
 7.9).
-:::
-
-::: {.remark title="Erratum: the rank-one case"}
-The displayed formula requires
-$$
-\operatorname{rank}\mce\ge2,
-$$
-as in Exercise II.7.9. If \(\operatorname{rank}\mce=1\), then
-\(\PP(\mce)\cong Y\), so
-$$
-\Pic\PP(\mce)\cong\Pic Y
-$$
-rather than \(\Pic Y\times\ZZ\) in general.
-
-The solution below proves the corrected statement for
-\(\operatorname{rank}\mce\ge2\).
 :::
 
 ::: {.solution}
@@ -265,11 +253,7 @@ Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that \(\Phi\) is a bijective gr
 
 ::: pf-qed
 
-for the corrected statement.
-
-Step [](#s5){.pf-ref} proves the asserted formula under the necessary rank hypothesis,
-and the preceding erratum explains why the printed rank-one case cannot
-satisfy it.
+Step [](#s5){.pf-ref} proves the asserted formula.
 
 :::
 
