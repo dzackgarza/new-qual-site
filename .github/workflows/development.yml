@@ -95,7 +95,6 @@ jobs:
       profile: python
       infra_ref: main
       setup_recipe: _ci-setup
-    steps: []
 'on':
   push:
     branches:
