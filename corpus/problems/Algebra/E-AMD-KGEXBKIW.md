@@ -26,9 +26,9 @@ Show that every cyclic group is solvable.
 :::
 
 ::: {.solution}
-Every cyclic group is abelian. Hence its commutator subgroup is trivial:
-\[
+Let $G$ be a cyclic group. Every cyclic group is abelian, so its commutator subgroup is trivial:
+$$
 [G,G]=1.
-\]
+$$
 Therefore the derived series reaches the identity after one step, so $G$ is solvable.
 :::
