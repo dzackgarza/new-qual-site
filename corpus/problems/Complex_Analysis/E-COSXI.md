@@ -13,24 +13,29 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source displays the integral I with no request; the statement now asks to compute it.
 ---
 
 ::: {.exercise}
-\[
-I \definedas \int_\RR {\cos(x) \over x+i}\dx
-.\]
-
+Compute
+$$
+I \coloneqq \int_\RR {\cos(x) \over x+i}\dx.
+$$
 :::
 
 ::: {.solution}
 Since $x+i$ is not real, ${\cos(x) \over x+i}\neq \Re\qty{e^{ix}\over x+i}$.
 Use $\cos(z) = {1\over 2}(e^{iz} + e^{-iz})$ to decompose into two integrals:
-\[
-I \definedas \int_\RR {\cos(x) \over x+i}\dx
+$$
+I \coloneqq \int_\RR {\cos(x) \over x+i}\dx
 = \int_\RR f_1 + \int_\RR f_2,
 \qquad
-f_1(z)\definedas{e^{iz} \over 2(z+i)},\quad f_2(z)\definedas{e^{-iz} \over 2(z+i)}
-.\]
+f_1(z)\coloneqq{e^{iz} \over 2(z+i)},\quad f_2(z)\coloneqq{e^{-iz} \over 2(z+i)}.
+$$
 Both are $e^{\pm iz}g(z)$ with $g(z)={1\over 2(z+i)}\to0$ as $\abs z\to\infty$, so Jordan's lemma applies on semicircles: for $e^{i\alpha z}$ with $\alpha>0$ on the upper half-plane (for $f_1$), and with $\alpha<0$ on the lower half-plane (for $f_2$). For $f_1$, use the upper contour:
 
 ![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-14-14.png)
@@ -43,14 +48,16 @@ For $f_2$, use the lower contour:
 
 With counterclockwise orientation, the real axis is traversed from $R$ to $-R$, so the piece along $\RR$ converges to $-\int_\RR f_2=-I$.
 By Jordan's lemma the arc integral tends to $0$, so
-\[
+$$
+\begin{aligned}
 -I
 &= 2\pi i \Res_{z=-i} {e^{-iz}\over 2(z+i)} \\
 &= 2\pi i \cdot{e^{-i(-i)}\over 2} \\
-&= \pi i \inverseof{e}
-,\]
+&= \pi i \inverseof{e},
+\end{aligned}
+$$
 so
-\[
-I = -{i\pi \over e}
-.\]
+$$
+I = -{i\pi \over e}.
+$$
 :::
