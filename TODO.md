@@ -79,7 +79,7 @@ mathematical correction under its own node, not under copy policy.
     **Acceptance:** link text is the card title or authored text. **Closed.**
   - **`ad-collection-pages`**. **Needs:** none. Drop cap splits the count; "1 problems.";
     derived "Problem N" locators; transcluded collections render empty (workshop packets).
-    **Acceptance:** each corrected on the deployed pages.
+    **Acceptance:** each corrected on the deployed pages. **Closed.**
   - **`ad-site-strings`**. **Needs:** none. Unmatched browser prefilter widens to all rows;
     `sourced` compatibility filter; Sources/Exams naming; area label spellings; Pagefind
     excerpts include page facts; "Choose topic" over areas; home contents list.

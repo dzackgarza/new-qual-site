@@ -136,6 +136,7 @@ sections:
   lede: The group-theory section.
   items:
   - ref: P-TEXT
+  - ref: SRC-UGA-LIST
 """
     )
 
@@ -293,7 +294,7 @@ def test_compilation_sections_are_the_collection_listing_and_central_problem_ind
     [item] = index["SRC-NEILNOTES"]["items"]
     assert item["id"] == "P-INDEXP"
     assert item["meta"]["collection_section"] == "Day 1"
-    assert item["meta"]["collection_locator"] == "Problem 1"
+    assert item["meta"]["collection_locator"] == ""
 
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES' order by section_ordinal, ordinal").fetchall()
@@ -400,12 +401,22 @@ def test_collection_page_lists_problems_and_links_the_central_browser(collection
     assert "Problem 3" in exam_qmd
     assert "problems.html?collection=SRC-UGA-LIST" in exam_qmd
 
+    # The count is singular, and outside the paragraph the drop cap takes.
+    exam_html = (work / "build" / "quarto" / "_site" / "exam" / "SRC-UGA-LIST.html").read_text()
+    assert '<div class="collection-count">\n<p>1 problem.</p>' in exam_html
+
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
     assert [item["id"] for item in index["SRC-UGA-LIST"]["items"]] == ["P-LISTED"]
 
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select problem_id from collection_problems where collection_id='SRC-UGA-LIST' order by ordinal")] == ["P-LISTED"]
     assert [row[0] for row in con.execute("select collection_id from collection_problems where problem_id='P-LISTED'")] == ["SRC-UGA-LIST"]
+
+
+def test_a_transcluded_collection_shows_its_source_order_listing(collections_site: Path) -> None:
+    guide = (collections_site / "build" / "quarto" / "_site" / "guide" / "GUIDE-ALGEBRA" / "groups.html").read_text()
+    transclusion = guide.split('<div id="SRC-UGA-LIST"', 1)[1]
+    assert '<li><a href="../../tag/P-LISTED.html">' in transclusion.split('<div id="', 1)[0]
 
 
 def test_collection_page_renders_provenance_links(collections_site: Path) -> None:

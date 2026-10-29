@@ -707,7 +707,17 @@ def _namespace_pf_labels(body: list[object], card_id: str) -> None:
     retarget(body)
 
 
-def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
+def _transcluded_listing(con: sqlite3.Connection, card: sqlite3.Row, inline_cache: dict[str, list[pf.Inline]]) -> list[pf.Block]:
+    """A transcluded collection's source-order contents; other cards have none.
+
+    A collection's body is its prose, often empty: what it is is its listing.
+    """
+    if card["kind"] != "collection":
+        return []
+    return _collection_listing(card["id"], _collection_rows(con, card["id"]), inline_cache, base="")
+
+
+def _transclude(card: sqlite3.Row, counts: Counter[str], listing: list[pf.Block]) -> pf.Div:
     """The card as one labelled section: kind and number, name, tag, body.
 
     The card's own outermost section div is unwrapped and this one takes its
@@ -729,6 +739,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
     counts[kind] += 1
     _rename_json(body)
     _namespace_pf_labels(body, card["id"])
+    listing_json = json.loads(to_json(pf.Doc(*listing)))["blocks"]
     document["blocks"] = [
         {
             "t": "Div",
@@ -738,14 +749,19 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
                     [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
                     [["data-label", f"{kind.title()} {counts[kind]}"]],
                 ],
-                [_transclusion_head(card), *_slogan_json(card), *body, *_prompts_json(card)],
+                [_transclusion_head(card), *_slogan_json(card), *body, *listing_json, *_prompts_json(card)],
             ],
         }
     ]
     return cast(pf.Div, from_ast(json.dumps(document)).content[0])
 
 
-def _transclude_wikilinks(blocks: list[pf.Block], cards: dict[str, sqlite3.Row]) -> list[pf.Block]:
+def _transclude_wikilinks(
+    blocks: list[pf.Block],
+    cards: dict[str, sqlite3.Row],
+    con: sqlite3.Connection,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> list[pf.Block]:
     """Replace every standalone-wikilink paragraph with the cards it names.
 
     A card already transcluded on the page is dropped rather than repeated: the
@@ -766,7 +782,8 @@ def _transclude_wikilinks(blocks: list[pf.Block], cards: dict[str, sqlite3.Row])
             if card_id in seen:
                 continue
             seen.add(card_id)
-            rendered.append(_transclude(cards[card_id], counts))
+            card = cards[card_id]
+            rendered.append(_transclude(card, counts, _transcluded_listing(con, card, inline_cache)))
         return rendered
 
     return list(pf.Doc(*blocks).walk(visit).content)
@@ -777,6 +794,8 @@ def _wiki_blocks(
     incoming: list[WikiPage],
     cards: dict[str, sqlite3.Row],
     areas: set[str],
+    con: sqlite3.Connection,
+    inline_cache: dict[str, list[pf.Inline]],
 ) -> list[pf.Block]:
     """An authored wiki page gets the same section labelling a card gets.
 
@@ -786,7 +805,7 @@ def _wiki_blocks(
     Transcluded cards are inserted first, so the same walk labels those too.
     Incoming wikilinks are inverted from the resolved graph, not authored.
     """
-    blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content)
+    blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards, con, inline_cache)).walk(_rename).content)
     branch = slug(page.source_rel.parts[0]) if len(page.source_rel.parts) > 1 else ""
     is_subject_root = page.source_rel.name == "index.md" and len(page.source_rel.parts) == 2 and branch in areas
     if is_subject_root:
@@ -1537,13 +1556,9 @@ def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     return _card_meta(card, areas, topics), _blocks(card)
 
 
-def collection_page(
-    con: sqlite3.Connection,
-    src: sqlite3.Row,
-    inline_cache: dict[str, list[pf.Inline]],
-    repo_root: Path,
-) -> Page:
-    listed = _rows(
+def _collection_rows(con: sqlite3.Connection, collection_id: str) -> list[sqlite3.Row]:
+    """The cards a collection lists, in source order."""
+    return _rows(
         con,
         """
         select cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, cp.comment,
@@ -1553,8 +1568,17 @@ def collection_page(
         where cp.collection_id=?
         order by coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
-        (src["id"],),
+        (collection_id,),
     )
+
+
+def collection_page(
+    con: sqlite3.Connection,
+    src: sqlite3.Row,
+    inline_cache: dict[str, list[pf.Inline]],
+    repo_root: Path,
+) -> Page:
+    listed = _collection_rows(con, src["id"])
     provenance = [
         row["href"]
         for row in _rows(
@@ -1630,6 +1654,7 @@ def _collection_listing(
     collection_id: str,
     listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
+    base: str = "../",
 ) -> list[pf.Block]:
     """Render the collection's authored source-order contents.
 
@@ -1643,7 +1668,7 @@ def _collection_listing(
         inlines: list[pf.Inline] = [
             pf.Link(
                 *_inlines(row["title"], inline_cache),
-                url=f"../{row['route']}/{row['problem_id']}.html",
+                url=f"{base}{row['route']}/{row['problem_id']}.html",
             )
         ]
         if row["comment"]:
@@ -1652,11 +1677,16 @@ def _collection_listing(
 
     blocks: list[pf.Block] = []
     problem_count = sum(row["kind"] == "problem" for row in listed)
+    # The count sits in its own div so the page's drop cap, which takes the
+    # first letter of the first paragraph, does not split the number.
     blocks.append(
-        pf.Para(
-            pf.Str(str(problem_count)),
-            pf.Space(),
-            *_inlines("problems.", inline_cache),
+        pf.Div(
+            pf.Para(
+                pf.Str(str(problem_count)),
+                pf.Space(),
+                pf.Str("problem." if problem_count == 1 else "problems."),
+            ),
+            classes=["collection-count"],
         )
     )
     if listed:
@@ -1871,7 +1901,8 @@ def publication_section_page(
         if item.ref in seen:
             continue
         seen.add(item.ref)
-        blocks.append(_transclude(_manifest_card(con, item.ref), counts))
+        card = _manifest_card(con, item.ref)
+        blocks.append(_transclude(card, counts, _transcluded_listing(con, card, inline_cache)))
     if section.topics:
         blocks.append(_problem_browse_link_block(manifest.area, section.topics))
     return {"title": typeset_dashes(section.title)}, blocks
@@ -2059,7 +2090,7 @@ def collection_problem_index(
             filters["institution"] = [row["institution"].upper()]
         if row["year"] is not None:
             filters["year"] = [str(row["year"])]
-        locator = row["comment"] or f"Problem {row['ordinal'] + 1}"
+        locator = row["comment"] or ""
         items = collections[collection_id]["items"]
         assert isinstance(items, list)
         items.append(
@@ -2707,6 +2738,8 @@ Random practice sets are drawn in the [problem browser](problems.html).
                         incoming_pages[page.route.as_posix()],
                         cards,
                         set(area_names),
+                        con,
+                        inline_cache,
                     ),
                 ),
                 out / page.route.with_suffix(".qmd"),
