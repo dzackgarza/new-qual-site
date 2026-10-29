@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QO2S7
 kind: problem
-title: Bounded Complex Analytic Functions form a Banach Space
+title: Bounded holomorphic functions form a Banach space
 classification:
   areas:
   - complex-analysis
@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-For an open set $\Omega\subseteq\CC$, show that $A(\Omega)\definedas \theset{f: \Omega \to \CC \st f\text{ is holomorphic and bounded}}$, with the supremum norm, is a Banach space.
+For an open set $\Omega\subseteq\CC$, show that $A(\Omega)\coloneqq \theset{f: \Omega \to \CC \st f\text{ is holomorphic and bounded}}$, with the supremum norm, is a Banach space.
 :::
 
 ::: {.hint}
@@ -28,7 +28,7 @@ Apply Morera's theorem and Cauchy's theorem.
 :::
 
 ::: {.solution}
-Write $A(\Omega) \coloneqq \{f: \Omega \to \CC \st f \text{ bounded and holomorphic}\}$ and $\norm{f}_\infty \coloneqq \sup_{z \in \Omega}\abs{f(z)}$, and let $\{f_n\}$ be a Cauchy sequence in $A(\Omega)$.
+Write $\norm{f}_\infty \coloneqq \sup_{z \in \Omega}\abs{f(z)}$, and let $\{f_n\}$ be a Cauchy sequence in $A(\Omega)$.
 
 ::: pf
 
@@ -56,7 +56,7 @@ $f$ is holomorphic.
 
 ::: pf-proof
 By step [](#uniform-limit-exists){.pf-ref}, $f$ is a uniform limit of continuous functions, so $f$ is continuous on $\Omega$, and for every closed triangle $T\subseteq\Omega$, $\int_{\partial T} f = \lim_n \int_{\partial T} f_n = \lim_n 0 = 0$ (uniform convergence lets the limit pass through the integral; each integral vanishes by Goursat's theorem).
-Hence $f$ is holomorphic by Morera's theorem [[T-LHSMY]].
+Hence $f$ is holomorphic by [[T-LHSMY|Morera's theorem]].
 :::
 
 :::
