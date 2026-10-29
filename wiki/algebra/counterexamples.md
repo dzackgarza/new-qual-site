@@ -12,6 +12,7 @@ topics:
 ::: {.example title="Converse of Lagrange's theorem"}
 A finite group need not have a subgroup of each order dividing its order.
 The [[D-TMME3|alternating group]] $A_4$ has order $12$ and no subgroup of order $6$; $A_5$ has order $60$ and no subgroup of order $30$.
+The proofs are on [[algebra/group-actions/orbit-stabilizer|Orbit-stabilizer]].
 :::
 
 ::: {.example title="Groups of prime-cube order"}
@@ -91,6 +92,7 @@ A finite extension need not be [[D-LZTAK|normal]]; $\QQ(2^{1/3})/\QQ$, since $x^
 
 ::: {.example title="Transitivity of normality"}
 $\QQ(2^{1/4})/\QQ(\sqrt2)$ and $\QQ(\sqrt2)/\QQ$ are normal, being of degree $2$, but $\QQ(2^{1/4})/\QQ$ is not.
+The argument is on [[algebra/fields/splitting-and-normal|Splitting fields and normal extensions]].
 :::
 
 ::: {.example title="Separability"}
