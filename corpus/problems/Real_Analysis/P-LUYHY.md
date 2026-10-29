@@ -16,21 +16,26 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source writes L^p and L^q without naming the underlying space; the statement names R^n, on which the solution works.
 ---
 
 ::: {.problem}
 Suppose $1\leq p,q,r \leq \infty$ with
-\[
+$$
 {1\over p } + {1 \over q} = 1 + {1 \over r}
-.\]
+.$$
 
 Prove that
-\[
-f \in L^p, g\in L^q \implies f \convolve g \in L^r \text{ and } \norm{f \convolve g}_r \leq \norm{f}_p \norm{g}_q
-.\]
+$$
+f \in L^p(\RR^n), g\in L^q(\RR^n) \implies f \convolve g \in L^r \text{ and } \norm{f \convolve g}_r \leq \norm{f}_p \norm{g}_q
+.$$
 :::
+
 ::: {.solution}
-Work on $\RR^n$, fix $f \in L^p$, let $p'$ be the conjugate exponent of $p$, and let $Tg = f \ast g$.
+Fix $f \in L^p$, let $p'$ be the conjugate exponent of $p$, and let $Tg = f \ast g$.
 
 ::: pf
 
