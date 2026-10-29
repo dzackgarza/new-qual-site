@@ -23,10 +23,10 @@ audit:
 
 ::: {.exercise}
 Compute $\JCF(A)$ for
-\[
+$$
 A \definedas
 \mattt{1}{-1}{0}{-1}{4}{-1}{-4}{13}{-3}.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -36,14 +36,14 @@ A \definedas
 ::: {.pf-step #s1}
 
 The characteristic polynomial of $A$ is
-\[
+$$
 \chi_A(t)=t(t-1)^2.
-\]
+$$
 
 ::: pf-proof
 
 Direct expansion gives
-\[
+$$
 \det(tI-A)
 =
 \det\begin{pmatrix}
@@ -53,7 +53,7 @@ t-1&1&0\\
 \end{pmatrix}
 =(t-1)(t^2-t+1)-(t-1)
 =t(t-1)^2.
-\]
+$$
 
 :::
 
@@ -79,20 +79,20 @@ The eigenspace for the eigenvalue $1$ is one-dimensional.
 ::: pf-proof
 
 One has
-\[
+$$
 A-I=
 \begin{pmatrix}
 0&-1&0\\
 -1&3&-1\\
 -4&13&-4
 \end{pmatrix}.
-\]
-The first two rows are linearly independent, while the third row equals $-13$ times the
-first row plus $4$ times the second row. Hence $\operatorname{rank}(A-I)=2$, so by
+$$
+The first two rows are linearly independent, while the third row equals $4$ times the
+second row minus the first row. Hence $\operatorname{rank}(A-I)=2$, so by
 rank-nullity
-\[
+$$
 \dim\ker(A-I)=1.
-\]
+$$
 
 :::
 
@@ -115,18 +115,18 @@ there is exactly one such block, and its total size must be $2$.
 ::: pf-step
 
 Therefore
-\[
+$$
 \JCF(A)=J_2(1)\oplus J_1(0),
-\]
+$$
 up to permutation of Jordan blocks; explicitly,
-\[
+$$
 \JCF(A)\sim
 \begin{pmatrix}
 1&1&0\\
 0&1&0\\
 0&0&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
