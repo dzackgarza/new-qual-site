@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the cohomology groups and cohomology ring $H^*(S^2 \vee S^2 \vee S^4; \mathbb{Z})$ of the wedge sum $X = S^2 \vee S^2 \vee S^4$.
+Compute the cohomology groups and cohomology ring $H^*(S^2 \vee S^2 \vee S^4; \ZZ)$ of the wedge sum $X = S^2 \vee S^2 \vee S^4$.
 :::
 
 ::: {.solution}
@@ -37,10 +37,10 @@ $$
 
 The reduced cohomology of a finite wedge is the direct sum of the reduced cohomologies of the summands. Hence
 $$
-H^k(X;\mathbb Z)\cong
+H^k(X;\ZZ)\cong
 \begin{cases}
-\mathbb Z,&k=0,4,\\
-\mathbb Z^2,&k=2,\\
+\ZZ,&k=0,4,\\
+\ZZ^2,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -49,7 +49,7 @@ $$
 
 ::: pf-step
 
-Let $\alpha,\beta\in H^2(X;\mathbb Z)$ be the classes coming from the two $2$-sphere summands, and let $\gamma\in H^4(X;\mathbb Z)$ be the class coming from the $4$-sphere summand.
+Let $\alpha,\beta\in H^2(X;\ZZ)$ be the classes coming from the two $2$-sphere summands, and let $\gamma\in H^4(X;\ZZ)$ be the class coming from the $4$-sphere summand.
 
 :::
 
@@ -72,16 +72,16 @@ and every product involving $\gamma$ also vanishes by degree.
 ::: pf-step
 
 Therefore, as a graded ring,
-
-:::
-
-:::
-
 $$
-H^*(X;\mathbb Z)
+\boxed{H^*(X;\ZZ)
 \cong
-\mathbb Z[\alpha,\beta,\gamma]/
-(\alpha^2,\beta^2,\alpha\beta,\alpha\gamma,\beta\gamma,\gamma^2),
+\ZZ[\alpha,\beta,\gamma]/
+(\alpha^2,\beta^2,\alpha\beta,\alpha\gamma,\beta\gamma,\gamma^2),}
 $$
-with $|\alpha|=|\beta|=2$ and $|\gamma|=4$.
+with $\abs{\alpha}=\abs{\beta}=2$ and $\abs{\gamma}=4$.
+
+:::
+
+:::
+
 :::
