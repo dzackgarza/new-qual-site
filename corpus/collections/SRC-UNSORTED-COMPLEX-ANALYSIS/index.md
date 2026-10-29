@@ -143,8 +143,6 @@ source:
   - id: E-NTKTA
   - id: E-NZY3B
   - id: E-O5SOQ
-  - id: E-OBU6T
-    comment: Rudin 10.4
   - id: E-ORJPT
   - id: E-OUBBQ
   - id: E-P2PEF
