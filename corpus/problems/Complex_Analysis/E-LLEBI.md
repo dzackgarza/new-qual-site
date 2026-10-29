@@ -3,7 +3,7 @@ schema: qual/card@1
 id: E-LLEBI
 kind: problem
 title: $\frac{|f(0)|-|z|}{1+|f(0)||z|}\le|f(z)|\le\frac{|f(0)|+|z|}{1-|f(0)||z|}$
-  for holomorphic $f:\mathbb{D}\to\mathbb{D}$
+  for holomorphic $f:\DD\to\DD$
 classification:
   areas:
   - complex-analysis

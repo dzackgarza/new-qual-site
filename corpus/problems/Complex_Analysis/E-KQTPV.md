@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KQTPV
 kind: problem
-title: Injective conformal maps from $\{\Re z>0,\ |z-1|>1\}$ onto $\mathbb{D}$
+title: Injective conformal maps from $\{\Re z>0,\ |z-1|>1\}$ onto $\DD$
 classification:
   areas:
   - complex-analysis
