@@ -17,24 +17,30 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source asks for the norm of f - g, where no g is defined; the statement asks for the norm of f - h.
 ---
 
 ::: {.problem}
 Consider $L^2([0, 1])$ and define
-\[
+$$
+\begin{aligned}
 e_0(x) &= 1 \\
-e_1(x) &= \sqrt{3}(2x-1)
-.\]
+e_1(x) &= \sqrt{3}(2x-1).
+\end{aligned}
+$$
 
-a. Show that $\theset{e_0, e_1}$ is an orthonormal system.
+(a) Show that $\theset{e_0, e_1}$ is an orthonormal system.
 
-b. Show that the polynomial $p(x)$ where $\deg(p) = 1$ which is closest to $f(x) = x^2$ in $L^2([0, 1])$ is given by
-\[
-h(x) = x - {1\over 6}
-.\]
-
-Compute $\norm{f - g}_2$.
+(b) Show that the polynomial $p(x)$ where $\deg(p) = 1$ which is closest to $f(x) = x^2$ in $L^2([0, 1])$ is given by
+$$
+h(x) = x - {1\over 6}.
+$$
+Compute $\norm{f - h}_2$.
 :::
+
 ::: {.solution}
 
 ::: pf
@@ -77,8 +83,4 @@ $f - h$ is orthogonal to $h$, so $\|f - h\|_2^2 = \|f\|_2^2 - \|h\|_2^2$. Here $
 
 :::
 
-:::
-
-::: {.remark}
-In the last line of the statement, $g$ is read as $h$.
 :::
