@@ -32,9 +32,9 @@ source:
   - id: P-WESTOP13-II1
     comment: Part II Problem 1
   - id: P-TOPS11B
-    comment: Part II Problem 2; repeated exactly as the canonical antipodal-boundary cylinder problem
+    comment: Part II Problem 2
   - id: E-HAT-1.2-8
-    comment: Part II Problem 3; repeated exactly as the canonical two-tori-glued-along-a-circle problem
+    comment: Part II Problem 3
   - id: P-WESTOP13-II4
     comment: Part II Problem 4
 ---
