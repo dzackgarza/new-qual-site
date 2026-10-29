@@ -27,33 +27,14 @@ The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihi
 
 [[T-SJCF7]]
 
-::: {.proposition}
-$\min_A$ divides $\chi_A$, and $\min_A$ and $\chi_A$ have the same irreducible factors; in particular they have the same roots.
-:::
-
-::: {.proof}
-By Cayley--Hamilton, $\chi_A(A) = 0$, so $\min_A$ divides $\chi_A$.
-Let $p_1\divides p_2\divides\cdots\divides p_m$ be the invariant factors of $V$, so that $\chi_A = p_1\cdots p_m$ and $\min_A = p_m$.
-Every irreducible factor of $\chi_A$ divides some $p_i$, hence divides $p_m = \min_A$.
-For the roots directly: if $A\vector v_i = \lambda_i\vector v_i$ with $\vector v_i\neq\vector 0$, then
-$$
-\min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0,
-$$
-so $\min_A(\lambda_i) = 0$.
-:::
-
 ::: {.remark title="The exponents"}
-Since $\min_A$ divides $\chi_A$ and has the same irreducible factors, $\min_A$ is determined by the exponents of the irreducible factors of $\chi_A$ in it.
+By [[PR-UFVPY]], $\min_A$ divides $\chi_A$ and has the same irreducible factors, so $\min_A$ is determined by the exponents of the irreducible factors of $\chi_A$ in it.
 When $\chi_A$ splits, the exponent of $(t-\lambda)$ in $\min_A$ is the size of the largest Jordan block for $\lambda$, and in $\chi_A$ it is the sum of the sizes of those blocks; these do not determine the Jordan form in general, as for $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$.
 :::
 
 ## Computing the minimal polynomial
 
 [[PR-UFVPY]]
-
-::: {.remark title="Computation"}
-If $\chi_A = \prod_i q_i^{e_i}$ with the $q_i$ distinct monic irreducibles, then $\min_A = \prod_i q_i^{f_i}$ with $1\leq f_i\leq e_i$, and $\min_A$ is the polynomial of this form of least degree with $\min_A(A)=0$.
-:::
 
 ::: {.example title="Polynomial long division"}
 For $f(x) \definedas x^3-6x^2+12x-8$, [[PR-RRTST|the rational root theorem]] restricts the rational roots to $\theset{\pm 8, \pm 4, \pm 2, \pm 1}$.
