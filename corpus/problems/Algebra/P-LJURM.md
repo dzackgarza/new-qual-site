@@ -22,36 +22,32 @@ audit:
 ---
 
 ::: {.problem}
-Give a polynomial with $S_3$ as its Galois group over $\mathbb{Q}$, and prove it.
+Give a polynomial with $S_3$ as its Galois group over $\QQ$, and prove it.
 :::
 
 ::: {.solution}
-Take
-\[
-f(x)=x^3-2.
-\]
-It is irreducible over $\mathbb Q$ by Eisenstein at $2$. Let $\alpha=\sqrt[3]{2}$ and let $\omega$ be a primitive cube root of unity. The roots are
-\[
-\alpha,\quad \alpha\omega,\quad \alpha\omega^2,
-\]
-so the splitting field is
-\[
-K=\mathbb Q(\alpha,\omega).
-\]
-Now
-\[
-[\mathbb Q(\alpha):\mathbb Q]=3,
-\]
-and $\mathbb Q(\alpha)\subset\mathbb R$ while $\omega\notin\mathbb R$, so
-\[
-[K:\mathbb Q(\alpha)]=2.
-\]
-Hence
-\[
-[K:\mathbb Q]=6.
-\]
-Since $K/\mathbb Q$ is the splitting field of a separable cubic, its Galois group embeds in $S_3$, and its order is $6$. Therefore
-\[
-\operatorname{Gal}(K/\mathbb Q)\cong S_3.
-\]
+Let $f(x)=x^3-2$, $\alpha=\sqrt[3]{2}\in\RR$, and $\omega$ a primitive cube root of unity.
+
+::: pf
+
+::: {.pf-step #splitting}
+The splitting field of $f$ is $K=\QQ(\alpha,\omega)$, and $[K:\QQ]=6$.
+
+::: pf-proof
+The roots of $f$ are $\alpha$, $\alpha\omega$, $\alpha\omega^2$, which generate $\QQ(\alpha,\omega)$. By Eisenstein's criterion at $2$, $f$ is irreducible, so $[\QQ(\alpha):\QQ]=3$. Since $\QQ(\alpha)\subset\RR$ and $\omega\notin\RR$ is a root of $x^2+x+1$, $[K:\QQ(\alpha)]=2$.
+:::
+
+:::
+
+::: pf-step
+$\Gal(K/\QQ)\cong S_3$, so $\boxed{x^3-2}$ has Galois group $S_3$ over $\QQ$.
+
+::: pf-proof
+The Galois group acts faithfully on the three roots of the separable cubic $f$, so it embeds in $S_3$. By step [](#splitting){.pf-ref} it has order $6=\abs{S_3}$.
+:::
+
+:::
+
+:::
+
 :::
