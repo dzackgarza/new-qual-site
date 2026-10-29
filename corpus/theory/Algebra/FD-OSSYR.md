@@ -4,7 +4,7 @@ id: FD-OSSYR
 kind: definition
 title: Prime ideal
 prompts:
-- When is an ideal $\mathfrak{p} \normal R$ prime?
+- When is an ideal $\mfp$ of a commutative ring $R$ prime?
 classification:
   areas:
   - algebra
