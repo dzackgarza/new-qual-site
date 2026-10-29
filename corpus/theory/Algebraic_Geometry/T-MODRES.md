@@ -25,15 +25,15 @@ prompts:
 
 ::: {.theorem}
 Every coherent $\mcf$ on $\PP^n_k$ admits a finite resolution
-\[
+$$
 0 \to \mce_m \to \cdots \to \mce_1 \to \mce_0 \to \mcf \to 0
-\]
+$$
 with each $\mce_j$ a finite direct sum of twists $\OO(-d)$, and one may take $m \leq n$.
 :::
 
 ::: {.remark}
-Serre's theorem A supplies the surjection $\mce_0 \surjects \mcf$; iterating it on the kernel gives a possibly infinite resolution, and the Hilbert syzygy theorem for $k[x_0,\dots,x_n]$ is what truncates it.
-So the statement is a graded-module theorem read through $\tilde{\wait\,}$, and its length bound is the global dimension $n+1$ of the polynomial ring, dropping by one on passage to $\Proj$.
+Serre's theorem A supplies the surjection $\mce_0 \surjects \mcf$; iterating it on the kernel gives a possibly infinite resolution, and the Hilbert syzygy theorem for $k[x_0,\ldots,x_n]$ is what truncates it.
+So the statement is a graded-module theorem read through the functor $M\mapsto\tilde M$, and its length bound is the global dimension $n+1$ of the polynomial ring, dropping by one on passage to $\Proj$.
 
 This is the standard device for reducing any additive invariant of coherent sheaves to the twists.
 Cohomology, the Euler characteristic, and the Hilbert polynomial are all computed this way: break the resolution into short exact sequences, apply the known values on $\OO(d)$, and alternate signs.
