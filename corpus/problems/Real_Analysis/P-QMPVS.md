@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'Part (a) of the source printed the conclusion of Hölder''s inequality as ||fg||_p <= ||f||_p ||g||_q; the statement now bounds ||fg||_1.'
