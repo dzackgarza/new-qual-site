@@ -15,10 +15,12 @@ review: draft
 ---
 
 ::: {.problem}
-- Compute $\pi_1(X)$ where $X \definedas S^2/\sim$, where $x\sim -x$ only for $x$ on the equator $S^1 \injects S^2$.
+Compute $\pi_1(X)$ where $X \definedas S^2/\sim$, where $x\sim -x$ only for $x$ on the equator $S^1 \injects S^2$.
+:::
 
-  - Hint: try cellular homology.
-    Should yield $[\ZZ, \ZZ/2\ZZ, \ZZ, 0, \cdots]$.
+::: {.hint}
+Try cellular homology.
+It should yield $H_* = [\ZZ, \ZZ/2\ZZ, \ZZ, 0, \cdots]$.
 :::
 
 ::: {.solution}
@@ -52,7 +54,7 @@ Each hemisphere boundary is the original equator, and after passing to the quoti
 ::: pf-step
 
 Hence van Kampen gives
-$$\pi_1(X)\cong\langle a\mid a^2,a^2\rangle\cong\boxed{\mathbb Z/2}.$$
+$$\pi_1(X)\cong\langle a\mid a^2,a^2\rangle\cong\boxed{\ZZ/2}.$$
 
 ::: pf-proof
 
@@ -64,13 +66,13 @@ Attaching either $2$-cell kills $a^2$; the second gives the same relation up to 
 
 ::: pf-step
 
-The same CW complex has cellular boundary $\partial_2:\mathbb Z^2\to\mathbb Z$ given by $(m,n)\mapsto2m\pm2n$, so
-$$H_2(X)\cong\mathbb Z,\qquad H_1(X)\cong\mathbb Z/2,$$
+The same CW complex has cellular boundary $\partial_2:\ZZ^2\to\ZZ$ given by $(m,n)\mapsto2m\pm2n$, so
+$$H_2(X)\cong\ZZ,\qquad H_1(X)\cong\ZZ/2,$$
 in agreement with the hint.
 
 ::: pf-proof
 
-The image is $2\mathbb Z$ and the kernel has rank $1$.
+The image is $2\ZZ$ and the kernel has rank $1$.
 
 :::
 
