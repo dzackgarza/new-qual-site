@@ -24,9 +24,7 @@ source:
   - P-YQVRO
   - P-8TF15
   - id: P-DRVWD
-    comment: >-
-      Problem 8; this appearance asks for $\pi_1$ and $H_1$ rather than all of
-      $H_*$.
+    comment: Problem 8
   date:
     kind: academic-term
     term: fall
