@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF03G
 kind: problem
-title: "A map from S^2 to CP^2 disjoint from CP^1 is null-homotopic"
+title: 'A map $S^2\to\CP^2$ disjoint from $\CP^1$ is null-homotopic'
 classification:
   areas:
   - topology

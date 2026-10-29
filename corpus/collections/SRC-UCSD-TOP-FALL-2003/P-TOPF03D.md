@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF03D
 kind: problem
-title: "Homology of the exterior of a thickened torus in S^3 via Mayer-Vietoris"
+title: 'Homology of the exterior of a thickened torus in $S^3$ via Mayer–Vietoris'
 classification:
   areas:
   - topology
