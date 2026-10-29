@@ -46,20 +46,7 @@ Here the source $\AA_k^1$ is reduced, so the conclusion fails only because $X$ i
 The doubled line is also a standard example of a scheme that is not a classical variety, which shows why separatedness is imposed in the scheme-theoretic definition of a variety.
 :::
 
-::: {.example title="A nonreduced source and a separated target"}
-Put $R=k[t,\varepsilon]/(\varepsilon^2,t\varepsilon)$ and $Z=\Spec R$.
-Its underlying space is $\Spec k[t]$, since quotienting by the nilpotent ideal $(\varepsilon)$ does not change the prime spectrum.
-Thus $D(t)$ is dense in $Z$.
-The two ring homomorphisms
-$$
-k[z]\rightrightarrows R,\qquad z\longmapsto0,\quad z\longmapsto\varepsilon
-$$
-define distinct morphisms $Z\to\AA_k^1$: the class of $\varepsilon$ is nonzero, as its image in $R/(t)=k[\varepsilon]/(\varepsilon^2)$ is nonzero.
-They agree on $D(t)$ because $t\varepsilon=0$ makes $\varepsilon$ zero after inverting $t$.
-The target is affine and therefore separated; the failure of dense-open uniqueness here comes from the nonreduced source, not from the target.
-:::
-
 ::: {.remark}
-The calculation of [[P-AGH274AMPLESEP|invertible sheaves on $X$]] gives $\Pic(X)\cong\ZZ$.
+For the doubled line $X$, the calculation of [[P-AGH274AMPLESEP|invertible sheaves on the doubled line]] gives $\Pic(X)\cong\ZZ$.
 Only the trivial class is globally generated, and no class is ample.
 :::

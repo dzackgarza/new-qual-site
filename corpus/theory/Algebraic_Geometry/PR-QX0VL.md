@@ -44,9 +44,12 @@ Reducedness is necessary. Let
 $$
 Z=\Spec k[x,\varepsilon]/(\varepsilon^2,x\varepsilon).
 $$
-On the dense open subset $U=D(x)$ one has $\varepsilon=0$. Hence the two morphisms
+Its underlying space is that of $\Spec k[x]$, because $(\varepsilon)$ is a nilpotent ideal, so $U=D(x)$ is dense in $Z$.
+On $U$ one has $\varepsilon=0$, because $x\varepsilon=0$ and $x$ is inverted. Hence the two morphisms
 $$
 Z\rightrightarrows\AA^1_k
 $$
-induced by $t\mapsto0$ and $t\mapsto\varepsilon$ agree on $U$ but are distinct on $Z$.
+induced by $t\mapsto0$ and $t\mapsto\varepsilon$ agree on $U$.
+They are distinct on $Z$, because the image of $\varepsilon$ in $k[x,\varepsilon]/(\varepsilon^2,x) = k[\varepsilon]/(\varepsilon^2)$ is nonzero.
+The target $\AA^1_k$ is affine and therefore separated, so the failure comes from the nonreduced source.
 :::
