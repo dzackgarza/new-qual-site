@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XOCPO
 kind: problem
-title: Laurent expanding exponentials
+title: Laurent expansion of $1/e^{1-z}$ on $\abs{z}>1$
 classification:
   areas:
   - complex-analysis
@@ -16,15 +16,28 @@ review: draft
 
 ::: {.exercise}
 Find a Laurent expansion that converges for $\abs{z} > 1$ of
-\[
-f(z) \definedas {1 \over e^{1-z}}
-.\]
-
+$$
+f(z) \coloneqq \frac{1}{e^{1-z}}.
+$$
 :::
 
 ::: {.solution}
-\[
-f(z) = e^{-(1-z)} = e^{z-1} = \inverseof{e} e^z = \inverseof{e}\sum_{k\geq 0} {z^k\over k!}
-.\]
-Since $e^z$ is entire, this converges on $\CC$.
+
+::: pf
+
+::: pf-step
+$$
+\boxed{f(z) = \sum_{k\ge0} \frac{z^k}{e\cdot k!}},
+$$
+and this expansion converges on all of $\CC$, in particular on $\abs{z}>1$.
+
+::: pf-proof
+$f(z) = e^{-(1-z)} = e^{-1}e^z$, and the exponential series converges on $\CC$.
+By uniqueness of Laurent expansions on the annulus $\abs{z}>1$, this is the Laurent expansion there; its principal part is zero.
+:::
+
+:::
+
+:::
+
 :::
