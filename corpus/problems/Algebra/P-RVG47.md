@@ -25,17 +25,17 @@ Do you know a Lie group that has no faithful finite-dimensional representation?
 
 ::: {.solution}
 
-Let $G=\widetilde{\operatorname{SL}_2(\RR)}$ be the universal covering group of $\operatorname{SL}_2(\RR)$, with covering homomorphism $p\colon G\to\operatorname{SL}_2(\RR)$. Its kernel is central and $\ker p\cong\pi_1(\operatorname{SL}_2(\RR))\cong\ZZ$. Let $\rho\colon G\to\operatorname{GL}(V)$ be a finite-dimensional continuous representation; replacing a real $V$ by $V\otimes_\RR\CC$, we may take $V$ complex.
+Let $G=\widetilde{\SL_2(\RR)}$ be the universal covering group of $\SL_2(\RR)$, with covering homomorphism $p\colon G\to\SL_2(\RR)$. Its kernel is central and $\ker p\cong\pi_1(\SL_2(\RR))\cong\ZZ$. Let $\rho\colon G\to\GL(V)$ be a finite-dimensional continuous representation; replacing a real $V$ by $V\otimes_\RR\CC$, we may take $V$ complex.
 
 ::: pf
 
 ::: {.pf-step #factor}
 
-There is a representation $\rho'$ of $\operatorname{SL}_2(\RR)$ with $d(\rho'\circ p)=d\rho$.
+There is a representation $\rho'$ of $\SL_2(\RR)$ with $d(\rho'\circ p)=d\rho$.
 
 ::: pf-proof
 
-The differential $d\rho\colon\mathfrak{sl}_2(\RR)\to\mathfrak{gl}(V)$ extends complex-linearly to a representation of $\mathfrak{sl}_2(\CC)$. Since $\operatorname{SL}_2(\CC)$ is simply connected, this integrates to a representation of $\operatorname{SL}_2(\CC)$; let $\rho'$ be its restriction to $\operatorname{SL}_2(\RR)$. The differential of $\rho'\circ p$ is the restriction of the $\mathfrak{sl}_2(\CC)$-representation to $\mathfrak{sl}_2(\RR)$, which is $d\rho$.
+The differential $d\rho\colon\mathfrak{sl}_2(\RR)\to\mathfrak{gl}(V)$ extends complex-linearly to a representation of $\mathfrak{sl}_2(\CC)$. Since $\SL_2(\CC)$ is simply connected, this integrates to a representation of $\SL_2(\CC)$; let $\rho'$ be its restriction to $\SL_2(\RR)$. The differential of $\rho'\circ p$ is the restriction of the $\mathfrak{sl}_2(\CC)$-representation to $\mathfrak{sl}_2(\RR)$, which is $d\rho$.
 
 :::
 
@@ -55,7 +55,7 @@ $G$ is connected and simply connected, so a finite-dimensional representation of
 
 ::: pf-qed
 
-By step [](#equal){.pf-ref}, $\ker p\subseteq\ker\rho$, and $\ker p\cong\ZZ$ is nontrivial. Hence no finite-dimensional representation of $G$ is faithful, and $\boxed{\widetilde{\operatorname{SL}_2(\RR)}}$ is a connected Lie group with no faithful finite-dimensional representation.
+By step [](#equal){.pf-ref}, $\ker p\subseteq\ker\rho$, and $\ker p\cong\ZZ$ is nontrivial. Hence no finite-dimensional representation of $G$ is faithful, and $\boxed{\widetilde{\SL_2(\RR)}}$ is a connected Lie group with no faithful finite-dimensional representation.
 
 :::
 
