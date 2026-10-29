@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ZSOC4
 kind: problem
-title: Forcing a map to be the identity
+title: A Blaschke factor is an involution
 classification:
   areas:
   - complex-analysis
@@ -12,29 +12,46 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source reads "Let psi_a be a Blaschke factor" without defining it; the statement defines psi_a(z) = (a-z)/(1-conj(a) z) for a in the unit disc, the factor the solution uses.'
 ---
 
 ::: {.exercise}
-Let $\psi_a$ be a Blaschke factor and use the Schwarz lemma to prove that $\psi_a \circ \psi_a = \id_\DD$.
-
+For $a\in\DD$, let $\psi_a(z) \coloneqq \dfrac{a-z}{1-\bar a z}$ be a Blaschke factor.
+Use the Schwarz lemma to prove that $\psi_a \circ \psi_a = \id_\DD$.
 :::
 
 ::: {.solution}
-First, $\psi_a$ maps $\DD\to \DD$.
-Fix $z\in S^1$, then
-\[
-\abs{\psi_a(z)} \definedas
-\abs{a-z\over 1-\bar{a} z}
-&= \abs{a-z\over 1-\bar{a} z} \cdot \inverseof{\abs{\bar z}} \\
-&= \abs{a-z\over \bar{a} - \bar{z}} \\
-&= \abs{a-z \over \bar{a-z} } \\
-&\definedas \abs{w \over \bar w } \\
-&= \abs{w \over \abs{w}^2/w }\\
-&= \abs{w^2 \over \abs{w}^2} \\
-&= 1
-.\]
-$\psi_a$ is holomorphic on $\DD$ since it has a simple pole at $z=1/\bar{a}$, but $\abs{a}<1$ implies $\abs{1/\bar{a}} > 1$.
-Let $g\definedas \psi_a\circ \psi_a$, then $g(0) = 0$ so Schwarz applies.
-Since $g(a) = a$ with $a\neq 0$, the 2nd part of Schwarz also applies since $\abs{g(a)} = \abs{a}$ and $g(z) = \lambda z$ is a rotation.
-Since $a = g(a) = \lambda a$, this forces $\lambda = 1$, so $g$ is the identity.
+
+::: pf
+
+::: {.pf-step #maps-disc}
+$\psi_a$ is holomorphic on a neighborhood of $\overline{\DD}$ and maps $\DD$ into $\DD$.
+
+::: pf-proof
+The only pole of $\psi_a$ is $1/\bar a$, which lies outside $\overline{\DD}$ because $\abs{a}<1$ (there is no pole when $a=0$).
+For $\abs{z}=1$, $\abs{1-\bar a z} = \abs{z}\,\abs{\bar z-\bar a} = \abs{\overline{z-a}} = \abs{a-z}$, so $\abs{\psi_a(z)}=1$.
+Since $\psi_a$ is not constant, the maximum modulus principle gives $\abs{\psi_a}<1$ on $\DD$.
+:::
+
+:::
+
+::: pf-step
+$\psi_a\circ\psi_a = \id_\DD$.
+
+::: pf-proof
+Let $g \coloneqq \psi_a\circ\psi_a$.
+By step [](#maps-disc){.pf-ref}, $g$ is a holomorphic map $\DD\to\DD$, and $g(0)=\psi_a(a)=0$.
+If $a=0$, then $\psi_0(z)=-z$ and $g=\id_\DD$.
+If $a\neq 0$, then $g(a)=\psi_a(0)=a$, so $\abs{g(a)}=\abs{a}$ at a point $a\neq 0$, and the equality case of the Schwarz lemma gives $g(z)=\lambda z$ for some $\abs{\lambda}=1$.
+Then $a=g(a)=\lambda a$ forces $\lambda=1$.
+:::
+
+:::
+
+:::
+
 :::
