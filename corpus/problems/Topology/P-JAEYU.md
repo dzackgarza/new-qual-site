@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-- Show that the topologist's sine curve is connected but not path-connected.
+Show that the topologist's sine curve is connected but not path-connected.
 :::
 
 ::: {.solution}
