@@ -26,27 +26,30 @@ State Baer's Criterion and the characterization of injective modules over PIDs (
 :::
 
 ::: {.solution}
-A left $R$-module $Q$ is **injective** if every homomorphism into $Q$ defined on a submodule extends across the containing module: whenever $A\hookrightarrow B$ is injective and $f:A\to Q$ is $R$-linear, there exists $g:B\to Q$ with $g|_A=f$. Equivalently, the contravariant functor
-\[
-\operatorname{Hom}_R(-,Q)
-\]
-is exact.
+A left $R$-module $Q$ is injective if for every injective $R$-linear map $A\hookrightarrow B$ and every $R$-linear $f:A\to Q$ there is an $R$-linear $g:B\to Q$ with $g|_A=f$. Equivalently, the contravariant functor $\Hom_R(-,Q)$ is exact.
 
-**Baer's criterion.** A left $R$-module $Q$ is injective if and only if every $R$-linear map
-\[
-f:I\to Q
-\]
-from a left ideal $I\subseteq R$ extends to an $R$-linear map $R\to Q$.
+Baer's criterion: a left $R$-module $Q$ is injective if and only if every $R$-linear map $f:I\to Q$ from a left ideal $I\subseteq R$ extends to an $R$-linear map $R\to Q$.
 
-Now let $R$ be a commutative PID. An $R$-module $Q$ is **divisible** if, for every $0\ne r\in R$ and $q\in Q$, there exists $y\in Q$ with
-\[
-ry=q.
-\]
-Over a PID,
-\[
-Q\text{ is injective}\iff Q\text{ is divisible}.
-\]
-Indeed, every ideal is $(r)$. A homomorphism $f:(r)\to Q$ is determined by $q=f(r)$. Extending $f$ to $R$ is equivalent to finding $y=g(1)$ with $ry=q$, exactly the divisibility condition.
+Over a PID $R$, a module $Q$ is divisible if for every $0\ne r\in R$ and $q\in Q$ there is $y\in Q$ with $ry=q$.
 
-Thus over $\mathbb Z$ the injective modules are precisely the divisible abelian groups; examples include $\mathbb Q$, $\mathbb Q/\mathbb Z$, and the Prüfer $p$-groups. More generally, if $R$ is a PID, its fraction field $\operatorname{Frac}(R)$ is divisible and therefore injective as an $R$-module.
+::: pf
+
+::: pf-step
+
+Over a PID $R$, an $R$-module $Q$ is injective if and only if it is divisible.
+
+::: pf-proof
+
+Every ideal is $(r)$ for some $r\in R$, and the zero ideal imposes no condition in Baer's criterion. For $r\ne0$, the map $r\mapsto q$ defines an $R$-linear $f:(r)\to Q$ for each $q\in Q$, since $R$ is a domain, and every $f$ arises this way with $q=f(r)$. An extension $g:R\to Q$ of $f$ is determined by $y=g(1)$, and it extends $f$ exactly when $ry=q$. So Baer's criterion for $Q$ is the divisibility condition.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Over $\ZZ$, the injective modules are the divisible abelian groups, such as $\QQ$, $\QQ/\ZZ$, and the Prüfer $p$-groups. Over any PID $R$, the field $\Frac(R)$ is divisible and hence injective as an $R$-module.
 :::
