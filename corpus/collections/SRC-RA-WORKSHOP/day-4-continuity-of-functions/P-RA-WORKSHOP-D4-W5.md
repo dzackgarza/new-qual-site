@@ -17,11 +17,11 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-A useful lemma: Let $\{x_n\}$ be a real sequence with $\liminf_{n\to\infty}x_n$, $\limsup_{n\to\infty}x_n\in\mathbb R$.
-Show that for any $\epsilon>0$ there exists some $N\in\mathbb N$ so that
+A useful lemma: Let $\{x_n\}$ be a real sequence with $\liminf_{n\to\infty}x_n$, $\limsup_{n\to\infty}x_n\in\RR$.
+Show that for any $\varepsilon>0$ there exists some $N\in\NN$ so that
 $$
-\left(\liminf_{n\to\infty}x_n\right)-\epsilon<x_n<
-\left(\limsup_{n\to\infty}x_n\right)+\epsilon
+\left(\liminf_{n\to\infty}x_n\right)-\varepsilon<x_n<
+\left(\limsup_{n\to\infty}x_n\right)+\varepsilon
 \qquad\text{for all }n\ge N.
 $$
 What does this result imply if $\limsup_{n\to\infty}x_n<L$?
@@ -56,12 +56,12 @@ By definition, $\ell=\sup_{N\geq1}\inf_{n\geq N}x_n$. The supremum property supp
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
 For every $\varepsilon>0$, there exists $N$ such that
-\[
-\boxed{\ell-\varepsilon<x_n<u+\varepsilon\quad(n\geq N)}.
-\]
+$$
+\ell-\varepsilon<x_n<u+\varepsilon\qquad(n\geq N).
+$$
 
 ::: pf-proof
 
@@ -71,21 +71,15 @@ Choose $N=\max(N_1,N_2)$ with the indices from steps [](#s1){.pf-ref} and [](#s2
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-If $\limsup x_n<L$, then $x_n<L$ for every sufficiently large $n$.
+If $\limsup x_n<L$, then $\boxed{x_n<L\text{ for every sufficiently large }n}$.
 
 ::: pf-proof
 
 Set $\varepsilon=L-u>0$. Step [](#s1){.pf-ref} gives an index $N$ such that $x_n<u+\varepsilon=L$ for every $n\geq N$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} gives the requested two-sided tail inequality, and step [](#s4){.pf-ref} establishes its consequence.
 
 :::
 
