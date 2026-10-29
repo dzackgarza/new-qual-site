@@ -4,6 +4,8 @@ id: T-WRMBM
 kind: theorem
 title: 'Sylow''s first theorem: existence of prime-power subgroups'
 slogan: 'Every power of $p$ dividing $\abs G$ is the order of a subgroup, and every $p$-subgroup lies in a Sylow $p$-subgroup.'
+prompts:
+- State the three Sylow theorems.
 classification:
   areas:
   - algebra

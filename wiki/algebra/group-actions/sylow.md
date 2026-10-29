@@ -9,24 +9,18 @@ topics:
 
 # Sylow theory
 
-Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^k m$ with $p\notdivides m$, $\Syl_p(G)$ is the set of Sylow $p$-subgroups of $G$, and $n_p = \size{\Syl_p(G)}$.
+Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^a m$ with $p\notdivides m$, $\Syl_p(G)$ is the set of Sylow $p$-subgroups of $G$, and $n_p = \size{\Syl_p(G)}$.
 
 [[D-7TQ2M]]
 
-::: {.remark title="Counting Sylow subgroups"}
-\envlist
-
-- $n_p\divides m$ and $n_p\equiv1\pmod p$; the case $n_p=1$ is the normality criterion in [[algebra/group-actions/sylow#Conjugacy|Conjugacy]].
-
-- If $k=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$.
-  For $k>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
+::: {.remark title="Intersections of Sylow subgroups"}
+If $a=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$.
+For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 :::
 
 [[L-DJKXL]]
 
 ## The Sylow theorems
-
-[[FT-ZENUU]]
 
 ### Existence
 
@@ -36,25 +30,13 @@ Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^k m$ with $p\not
 
 [[T-EF2MZ]]
 
-::: {.corollary}
-A Sylow $p$-subgroup $P$ is normal if and only if $n_p = 1$.
-:::
-
-::: {.proof}
-Every Sylow $p$-subgroup is conjugate to $P$, so $\Syl_p(G) = \theset{gP\inverseof{g} \st g\in G}$, and this set is $\theset P$ if and only if $P\normal G$.
-:::
-
 ### The number of Sylow subgroups
 
 [[T-S5T5C]]
 
-::: {.remark title="The conditions on $n_p$"}
-For $P\in\Syl_p(G)$,
-$$
-n_p \equiv 1 \pmod p, \qquad n_p \divides m, \qquad n_p = [G : N_G(P)].
-$$
+::: {.remark title="Where the conditions on $n_p$ come from"}
 The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$.
-The congruence follows from the conjugation action of $P$ on $\Syl_p(G)$: its only fixed point is $P$, and every other orbit has size divisible by $p$.
+The congruence $n_p\equiv1\pmod p$ follows from the conjugation action of $P$ on $\Syl_p(G)$: its only fixed point is $P$, and every other orbit has size divisible by $p$.
 :::
 
 ## Applications
