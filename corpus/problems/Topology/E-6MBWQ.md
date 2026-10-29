@@ -17,6 +17,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-16
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Upstream printed "Show that if X is metrizable, then X is compact", false for R; the statement reads that a metrizable space is compact iff it is sequentially compact.'
 ---
 
 ::: {.exercise}
@@ -69,6 +73,4 @@ Let $(X, d)$ be a metric space.
 
 ::: {.remark}
 Munkres, *Topology*, §28, Theorem 28.2, which adds limit point compactness as a third equivalent condition.
-
-As printed upstream this exercise read "Show that if $X$ is metrizable, then $X$ is compact", which is false: $\RR$ is metrizable and not compact.
 :::
