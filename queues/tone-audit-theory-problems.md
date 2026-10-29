@@ -2410,12 +2410,10 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/FT-B73T5.md` | `a9d98b1b243a9a58c8d034b8f62c2ae1c818a75c` | `a9d98b1b243a9a58c8d034b8f62c2ae1c818a75c` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FT-BSOZF.md` | `9c743fb27a20001ad009fb66e84fb26e294930cf` | `9c743fb27a20001ad009fb66e84fb26e294930cf` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FT-DWCQ7.md` | `ba47df578e5a160f5bc5f61ac6ee6e4adbd15c21` | `ba47df578e5a160f5bc5f61ac6ee6e4adbd15c21` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/FT-EPR7J.md` | `e416908d93e095f4b47a94e1d7c5eb03a4a594f7` | `e416908d93e095f4b47a94e1d7c5eb03a4a594f7` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FT-FZERI.md` | `3ca7e49b7bf571cd2221f9bb32d92b28b10b62f8` | `3ca7e49b7bf571cd2221f9bb32d92b28b10b62f8` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FT-LGWHM.md` | `fcbf69befac0590123c9fc104a1c2baee9a457da` | `fcbf69befac0590123c9fc104a1c2baee9a457da` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FT-OEYLQ.md` | `a076279d2213bd63e5e76d04a5f7ec491ef81807` | `a076279d2213bd63e5e76d04a5f7ec491ef81807` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/FT-REHJT.md` | `0eeba76dbd6cad4cc4088554974377d887293123` | `0eeba76dbd6cad4cc4088554974377d887293123` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/FT-ZJQ2T.md` | `003a07d62c691691dbf199a01632dbbc0be695b3` | `003a07d62c691691dbf199a01632dbbc0be695b3` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/L-EAZX6.md` | `923275ef785be399b0572d4102e794ad90fcf0bd` | `923275ef785be399b0572d4102e794ad90fcf0bd` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/L-MYZOX.md` | `1f20383c3551b46198bc157a603ff5cbbe03df39` | `1f20383c3551b46198bc157a603ff5cbbe03df39` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/L-TVIDY.md` | `4b9665d655d81cec459df86e5cd7ee75f47c4fba` | `4b9665d655d81cec459df86e5cd7ee75f47c4fba` | Read; retained |

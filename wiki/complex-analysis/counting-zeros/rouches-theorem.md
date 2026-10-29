@@ -10,9 +10,7 @@ topics:
 
 [[T-CJCKL]]
 
-[[FT-EPR7J]] [[FT-FZERI]]
-
-[[FT-ZJQ2T]]
+[[FT-FZERI]]
 
 ::: {.slogan}
 Adding to $M$ a function $m$ with $\abs{m} < \abs{M}$ on the boundary curve does not change the number of zeros minus poles inside it.

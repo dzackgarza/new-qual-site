@@ -6,6 +6,8 @@ title: Rouché's theorem
 slogan: 'If $\abs{f-g}<\abs{f}+\abs{g}$ on the boundary circle, then $f$ and $g$ have the same number of zeros in the disc.'
 prompts:
 - What does Rouché's theorem conclude about the zero counts of $f$ and $g$?
+- State Rouché's theorem in its symmetric form.
+- State Rouché's theorem on a closed disc $\abs{z - z_0} \leq R$.
 classification:
   areas:
   - complex-analysis
