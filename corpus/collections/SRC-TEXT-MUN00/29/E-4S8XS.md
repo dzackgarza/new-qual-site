@@ -23,7 +23,6 @@ Show that if $X$ is Hausdorff, a net in $X$ converges to at most one point.
 :::
 
 ::: {.solution}
-**Goal:** Prove that in a Hausdorff topological space $X$, limits of nets are unique (i.e. every net converges to at most one point).
 
 ::: pf
 
