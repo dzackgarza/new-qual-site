@@ -31,7 +31,6 @@ Here $\gamma$ denotes the circle centered at the origin, of radius $r$, with the
 :::
 
 ::: {.remark}
-This is part 3 of question 1 of the Spring 2014 list in the source, whose opening instruction is to solve the problem without using Cauchy's theorem.
 The source prints $dz$ twice in the integral.
 :::
 
@@ -205,7 +204,7 @@ Therefore the whole sum is $0$.
 
 :::
 
-::: {.pf-step #s1-6}
+::: pf-step
 
 Therefore
 $$
@@ -240,12 +239,6 @@ I
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-6){.pf-ref} is the required evaluation, obtained without Cauchy's theorem.
 
 :::
 

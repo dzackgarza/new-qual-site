@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17A
 kind: problem
-title: "Residue computation of the integral of cos(x)/(1+x^2)^2 from 0 to 1"
+title: The integral $\int_0^\infty\frac{\cos x}{(1+x^2)^2}\,dx$ by residues
 classification:
   areas:
   - complex-analysis
@@ -18,11 +18,6 @@ Using the calculus of residues, compute
 $$
 \int_0^\infty \frac{\cos x}{(1 + x^2)^2} \, dx.
 $$
-:::
-
-::: {.remark}
-The local transcription previously had upper limit $1$. The official Spring
-2017 UCSD exam has upper limit $\infty$.
 :::
 
 ::: {.solution}
