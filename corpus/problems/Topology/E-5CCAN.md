@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5CCAN
 kind: problem
-title: $\mathbb{R}$ is not homeomorphic to $[0,\infty)$
+title: $\RR$ is not homeomorphic to $[0,\infty)$
 classification:
   areas:
   - topology
@@ -26,43 +26,25 @@ Show that $\RR$ is not homeomorphic to $[0, \infty)$.
 :::
 
 ::: {.solution}
+Suppose, for a contradiction, that $f:[0,\infty)\to\RR$ is a homeomorphism, and set $y=f(0)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #restrict}
 
-Suppose that a homeomorphism
-$$
-f:[0,\infty)\longrightarrow\mathbb R
-$$
-exists, and set $y=f(0)$.
+$f$ restricts to a homeomorphism $(0,\infty)\to\RR\setminus\{y\}$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-Restricting $f$ gives a homeomorphism
-$$
-(0,\infty)=[0,\infty)\setminus\{0\}
-\longrightarrow
-\mathbb R\setminus\{y\}.
-$$
+A bijection that is a homeomorphism restricts to a homeomorphism from any subspace onto its image, and $f\big([0,\infty)\setminus\{0\}\big)=\RR\setminus\{y\}$.
 
 :::
 
-::: pf-step
-
-The space $(0,\infty)$ is connected, whereas
-$$
-\mathbb R\setminus\{y\}=(-\infty,y)\sqcup(y,\infty)
-$$
-is disconnected.
-
 :::
 
-::: pf-step
+::: pf-qed
 
-This contradicts invariance of connectedness under homeomorphism. Therefore $\mathbb R$ is not homeomorphic to $[0,\infty)$.
+The space $(0,\infty)$ is connected, whereas $\RR\setminus\{y\}=(-\infty,y)\sqcup(y,\infty)$ is a union of two disjoint nonempty open sets, hence disconnected. Connectedness is preserved by homeomorphisms, so step [](#restrict){.pf-ref} is impossible. Therefore $\RR$ is not homeomorphic to $[0,\infty)$.
 
 :::
 
