@@ -196,8 +196,6 @@ If $\mathcal A$ is measurable, each slice $\mathcal A_x = [0,f(x)]$ has $m(\math
 
 ## Qual problems
 
-Problems suggested by Peter Woolfitt:
-
 [[P-8RA35]]
 
 [[P-OPH7A]]
