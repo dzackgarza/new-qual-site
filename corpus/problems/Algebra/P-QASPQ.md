@@ -23,19 +23,32 @@ audit:
 
 ::: {.problem}
 (1) Prove that if $H \operatorname{char} G$ (i.e. $H$ is a characteristic subgroup of $G$), then $H \trianglelefteq G$ ($H$ is a normal subgroup of $G$).
+
 (2) Give an example showing that normality does not imply characteristic (so "characteristic" is strictly stronger than "normal").
 :::
 
 ::: {.solution}
-If $H\operatorname{char}G$, then $H$ is fixed by every automorphism of $G$. In particular it is fixed by every inner automorphism
-\[
-\iota_g(x)=gxg^{-1},\qquad g\in G.
-\]
-Hence $gHg^{-1}=H$ for every $g\in G$, so $H\trianglelefteq G$.
 
-The converse fails. In the Klein four-group
-\[
-V_4=\{1,a,b,c\},
-\]
-every subgroup is normal because $V_4$ is abelian. But $\langle a\rangle$ is not characteristic: an automorphism exchanging $a$ and $b$ sends $\langle a\rangle$ to $\langle b\rangle$.
+::: pf
+
+::: pf-step
+(1) If $H\operatorname{char}G$, then $H\trianglelefteq G$.
+
+::: pf-proof
+For $g\in G$, conjugation $\iota_g(x)=gxg^{-1}$ is an automorphism of $G$, so $gHg^{-1}=\iota_g(H)=H$.
+:::
+
+:::
+
+::: pf-step
+(2) In the Klein four-group $V_4=\{1,a,b,c\}$, the subgroup $\boxed{\langle a\rangle}$ is normal but not characteristic.
+
+::: pf-proof
+$V_4$ is abelian, so every subgroup is normal. Identifying $V_4$ with $\FF_2^2$ via $a\mapsto(1,0)$, $b\mapsto(0,1)$, the linear map swapping the two coordinates is an automorphism with $a\mapsto b$, so it sends $\langle a\rangle=\{1,a\}$ to $\langle b\rangle\ne\langle a\rangle$.
+:::
+
+:::
+
+:::
+
 :::
