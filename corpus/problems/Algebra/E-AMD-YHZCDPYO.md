@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-YHZCDPYO
 kind: problem
-title: $\mathrm{rad}(IJ)=\mathrm{rad}(I)\cap\mathrm{rad}(J)$
+title: $\operatorname{rad}(IJ)=\operatorname{rad}(I)\cap\operatorname{rad}(J)$
 classification:
   areas:
   - algebra
@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
+Show that $\operatorname{rad}(IJ) = \operatorname{rad}(I) \intersect \operatorname{rad}(J)$.
 :::
 
 
