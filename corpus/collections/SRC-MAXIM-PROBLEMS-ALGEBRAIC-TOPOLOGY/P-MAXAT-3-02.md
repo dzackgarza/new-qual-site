@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-3-02
 kind: problem
-title: Maxim algebraic topology 3.2
+title: Integral cohomology of $\RP^\infty$, $\RP^{2n}$ and $\RP^{2n+1}$
 classification:
   areas: [topology]
   topics: []
