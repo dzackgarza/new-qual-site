@@ -5,7 +5,7 @@ kind: problem
 title: "Solve $f''=f'$ with $f(0)=0$, $f'(0)=-1$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Ordinary Differential Equations]
 relations: []
 review: draft
 audit:
