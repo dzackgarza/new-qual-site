@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-NLPZY
 kind: theorem
 title: Fundamental theorem of Galois theory
+prompts:
+- State the fundamental theorem of Galois theory.
 slogan: 'Intermediate fields and subgroups correspond in reverse, with normal subgroups exactly the Galois intermediate fields.'
 classification:
   areas:

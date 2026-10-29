@@ -49,19 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Duplicate fundamental-theorem-of-Galois-theory cards
-
-- **Object and need:** `FT-GJ6NR` and `T-NLPZY` in `corpus/theory/Algebra`. Both state the subgroup/intermediate-field anti-isomorphism and its standard consequences.
-
-- **Observed evidence:** the field/subgroup bijection, inclusion reversal, degree formulas, normal-subgroup criterion, and compositum/intersection formulas agree exactly.
-  `T-NLPZY` additionally records the normalizer of an intermediate field and distinguishes `$\langle H_1,H_2\rangle$` from the product set `$H_1H_2$`; `FT-GJ6NR` contributes only the review prompt.
-
-- **Impact and owner:** the same major theorem had two intrinsic addresses in the Galois wiki and algebra guide.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `T-NLPZY`, removes duplicate reader-facing references, and deletes `FT-GJ6NR`.
-
 ### Duplicate maximal-ideal cards D-7XH2R and FD-CD2FE
 
 - **Object and need:** `D-7XH2R` and `FD-CD2FE` in `corpus/theory/Algebra`. Both define a proper ideal to be maximal when no proper strictly larger ideal exists.
@@ -138,19 +125,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none after reading both complete cards.
 
 - **Repair:** a `CARD-04` repair moves the review prompt to `D-NKRGN`, removes duplicate reader-facing references, and deletes `FD-GXXBV`.
-
-### Duplicate matrix-power counterexamples
-
-- **Object and need:** `FE-ISVDM`, `FE-W56LS`, and later `FF-VKYM3` in `corpus/theory/Algebra`. They answer the same prompt about whether `$A^n=B^n$` forces `$A=B$`.
-
-- **Observed evidence:** `FE-ISVDM` and `FE-W56LS` both use `$M=\begin{psmallmatrix}0&1\\1&0\end{psmallmatrix}$`, `$M^2=I$`, and `$M\ne I$`; `FE-W56LS` already declares itself `variant-of: FE-ISVDM`. `FF-VKYM3` gives the same claim with another square-root-of-`$-I$` example.
-  All three examples only treated `$n=2$`, even though their body copy said “for `$n\ge2$`.”
-
-- **Impact and owner:** one intrinsic counterexample question had multiple addresses, and the displayed witnesses did not justify the universal `$n\ge2$` wording.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** `FE-W56LS` is merged into `FE-ISVDM`. A `CARD-04` repair replaces the `FE-ISVDM` witness by the rotation matrix through `$2\pi/n$`, which works for every `$n\ge2$`, redirects the remaining guide and wiki references, and deletes `FF-VKYM3`.
 
 ### Duplicate lying-over/going-up cards FF-IBDAT and PR-RJ3P7
 
