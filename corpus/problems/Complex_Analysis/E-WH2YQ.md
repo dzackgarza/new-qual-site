@@ -26,7 +26,7 @@ $$
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-16_00-06-08.png)
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ArcCapable.gif/440px-ArcCapable.gif)
+![](../../assets/Complex_Analysis/999_Quals/figures/ArcCapable.gif)
 
 Assume $a\neq b$, take $\Arg$ with values in $(-\pi,\pi]$, and let $L_\theta$ denote the locus; it excludes $a$ and $b$.
 
