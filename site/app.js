@@ -19,6 +19,25 @@
     await window.MathJax?.typesetPromise?.([node]);
   };
 
+  // A result's excerpt is source text too. Cut it at `limit` characters, but
+  // never inside a math span: a span the limit would split is dropped whole,
+  // so MathJax never sees an unclosed `\(` and the reader no raw TeX.
+  // The excerpt Pagefind stores can itself end inside a span, so the scan
+  // tracks delimiters rather than matching whole spans.
+  const MATH_DELIMITER = /\\\(|\\\)|\\\[|\\\]|\$\$|\$/g;
+  const CLOSER = { "\\(": "\\)", "\\[": "\\]", $$: "$$", $: "$" };
+  const excerptOf = (text, limit) => {
+    let end = Math.min(limit, text.length);
+    let open = null;
+    for (const delimiter of text.matchAll(MATH_DELIMITER)) {
+      if (delimiter.index + delimiter[0].length > end) break;
+      if (open === null && CLOSER[delimiter[0]]) open = delimiter;
+      else if (open !== null && delimiter[0] === CLOSER[open[0]]) open = null;
+    }
+    if (open !== null) end = open.index;
+    return end < text.length ? `${text.slice(0, end).trimEnd()} …` : text;
+  };
+
   const randomProblem = document.querySelector("#random-problem");
   if (randomProblem) {
     const subject = document.querySelector("#random-problem-subject");
@@ -93,7 +112,7 @@
         kind.textContent = (data.filters.kind || [])[0] || "";
         const detail = document.createElement("span");
         detail.className = "search-result-detail";
-        detail.textContent = data.plain_excerpt ? data.plain_excerpt.slice(0, 120) : "";
+        detail.textContent = data.plain_excerpt ? excerptOf(data.plain_excerpt, 120) : "";
         detail.title = decodeURIComponent(data.url);
         metadata.append(kind, detail);
         item.append(link, metadata);
