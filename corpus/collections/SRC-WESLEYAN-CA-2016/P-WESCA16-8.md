@@ -13,10 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Problem 8 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source did not exclude f identically zero, for which f(z)=w has no solution when w is nonzero; the statement now assumes f is holomorphic on a domain containing 0 and not identically zero.
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic with
+Let $f$ be holomorphic on a domain containing $0$, not identically zero, with
 \[
 f(0)=f'(0)=f''(0)=0.
 \]
@@ -33,34 +37,7 @@ has at least three zeros counted with multiplicity.
 
 ::: {.pf-step #s1-1}
 
-The statement as printed is false.
-
-
-::: pf-proof
-
-Take
-\[
-f(z)\equiv0.
-\]
-Then
-\[
-f(0)=f'(0)=f''(0)=0,
-\]
-but for every nonzero $w$ the equation
-\[
-f(z)=w
-\]
-has no solutions. Hence no positive $\varepsilon$ can satisfy the printed
-conclusion for this $f$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Assume in addition that $f\not\equiv0$ on the connected component of
-its domain containing $0$. Then $0$ is a zero of finite order $m\ge3$.
+The point $0$ is a zero of finite order $m\ge3$.
 
 
 ::: pf-proof
@@ -85,7 +62,7 @@ Therefore $m\ge3$.
 
 :::
 
-::: {.pf-step #s1-3}
+::: {.pf-step #s1-2}
 
 There is $r>0$ such that $f$ has no zeros on
 \[
@@ -95,7 +72,7 @@ There is $r>0$ such that $f$ has no zeros on
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref},
+By step [](#s1-1){.pf-ref},
 \[
 f(z)=z^m g(z)
 \]
@@ -108,7 +85,7 @@ $\overline{B_r(0)}$ lies in this neighborhood.
 
 :::
 
-::: {.pf-step #s1-4}
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -119,14 +96,14 @@ Then $\varepsilon>0$.
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, $f$ has no zeros on the compact circle $|z|=r$. The continuous
+By step [](#s1-2){.pf-ref}, $f$ has no zeros on the compact circle $|z|=r$. The continuous
 function $|f|$ therefore has a positive minimum on that circle.
 
 :::
 
 :::
 
-::: {.pf-step #s1-5}
+::: {.pf-step #s1-4}
 
 If $|w|<\varepsilon$, then $f(z)-w$ has exactly $m$ zeros in
 $B_r(0)$, counted with multiplicity.
@@ -134,7 +111,7 @@ $B_r(0)$, counted with multiplicity.
 
 ::: pf-proof
 
-On $|z|=r$, step [](#s1-4){.pf-ref} gives
+On $|z|=r$, step [](#s1-3){.pf-ref} gives
 \[
 |w|<\varepsilon\le |f(z)|.
 \]
@@ -144,23 +121,23 @@ Thus
 \]
 on the boundary circle. Rouché's theorem implies that $f-w$ and $f$ have
 the same number of zeros in $B_r(0)$, counted with multiplicity. By step
-[](#s1-3){.pf-ref}, $f$ has exactly the single zero $0$ there, with multiplicity $m$.
+[](#s1-2){.pf-ref}, $f$ has exactly the single zero $0$ there, with multiplicity $m$.
 Hence $f-w$ has exactly $m$ zeros in $B_r(0)$, counted with multiplicity.
 
 :::
 
 :::
 
-::: {.pf-step #s1-6}
+::: {.pf-step #s1-5}
 
-Under the additional hypothesis $f\not\equiv0$, there is
+There is
 $\varepsilon>0$ such that every $|w|<\varepsilon$ has at least three
 preimages under $f$, counted with multiplicity.
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $m\ge3$. Step [](#s1-5){.pf-ref} gives exactly $m$ zeros of
+By step [](#s1-1){.pf-ref}, $m\ge3$. Step [](#s1-4){.pf-ref} gives exactly $m$ zeros of
 \[
 f(z)-w
 \]
@@ -173,8 +150,7 @@ zeros counted with multiplicity.
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} refutes the literal source statement, and step [](#s1-6){.pf-ref} proves the
-corrected statement obtained by excluding the identically-zero function.
+Step [](#s1-5){.pf-ref} is the assertion.
 
 :::
 
