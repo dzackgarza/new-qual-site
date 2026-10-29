@@ -170,12 +170,6 @@ therefore zero, and so its trace is zero.
 
 :::
 
-::: pf-qed
-
-Step [](#s4){.pf-ref} is the required trace identity.
-
-:::
-
 :::
 
 :::
