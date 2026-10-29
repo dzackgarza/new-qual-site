@@ -31,39 +31,51 @@ Let $X$ be a normed vector space.
 :::
 
 ::: {.solution}
-(a) $L\colon X \to \CC$ is a \dfn{linear functional} if $L(x + y) = L(x) + L(y)$ and $L(\alpha x) = \alpha L(x)$ for all $x, y \in X$ and $\alpha \in \CC$.
 
-(b) A linear functional $L$ is \dfn{bounded} if $\|L\|_{\operatorname{op}} \coloneqq \sup_{\|x\| \le 1}|L(x)| < \infty$, equivalently if $|L(x)| \le C\|x\|$ for some $C$ and all $x$.
+Let $X^*$ be the space of bounded linear functionals on $X$, with $\norm{L}_{\operatorname{op}} \coloneqq \sup_{\norm{x} \le 1}\abs{L(x)}$.
 
 ::: pf
 
 ::: pf-step
-A linear functional $L$ is bounded if and only if it is continuous.
+
+(a) $L\colon X \to \CC$ is a \dfn{linear functional} if $L(x + y) = L(x) + L(y)$ and $L(\alpha x) = \alpha L(x)$ for all $x, y \in X$ and $\alpha \in \CC$.
 
 ::: pf-proof
 
-::: {.pf-step #s1-1}
+This is the definition of a linear map into the scalar field $\CC$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) A linear functional $L$ is \dfn{bounded} if $\norm{L}_{\operatorname{op}} < \infty$, equivalently if $\abs{L(x)} \le C\norm{x}$ for some $C$ and all $x$; and $L$ is bounded if and only if it is continuous.
+
+::: pf-proof
+
+::: pf-step
+
 If $L$ is bounded, then $L$ is continuous.
 
 ::: pf-proof
-$|L(x) - L(y)| = |L(x - y)| \le \|L\|_{\operatorname{op}}\|x - y\|$.
-:::
+
+$\abs{L(x) - L(y)} = \abs{L(x - y)} \le \norm{L}_{\operatorname{op}}\norm{x - y}$, so $L$ is Lipschitz.
 
 :::
 
-::: {.pf-step #s1-2}
+:::
+
+::: pf-step
+
 If $L$ is continuous, then $L$ is bounded.
 
 ::: pf-proof
+
 Suppose not.
-Then there are $x_n$ with $\|x_n\| = 1$ and $|L(x_n)| \ge n$.
-Then $y_n = x_n/n \to 0$ while $|L(y_n)| \ge 1$, contradicting continuity at $0$, where $L(0) = 0$.
-:::
+Then there are $x_n$ with $\norm{x_n} = 1$ and $\abs{L(x_n)} \ge n$.
+Then $y_n = x_n/n \to 0$ while $\abs{L(y_n)} \ge 1$, contradicting continuity at $0$, where $L(0) = 0$.
 
-:::
-
-::: pf-qed
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} are the two implications, so boundedness and continuity of $L$ are equivalent.
 :::
 
 :::
@@ -72,47 +84,58 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} are the two implications, so bou
 
 :::
 
-(c) Let $X^*$ be the space of bounded linear functionals on $X$.
+::: pf-step
 
-::: pf
-
-::: {.pf-step #s2}
-$\|\cdot\|_{\operatorname{op}}$ is a norm on $X^*$.
+(c) $(X^*, \norm{\wait}_{\operatorname{op}})$ is a Banach space.
 
 ::: pf-proof
-If $\|L\|_{\operatorname{op}} = 0$ then $L(x) = 0$ for $\|x\| \le 1$, hence for all $x$ by scaling.
-$\|\alpha L\|_{\operatorname{op}} = |\alpha|\,\|L\|_{\operatorname{op}}$, and $|(L + M)(x)| \le |L(x)| + |M(x)|$ gives $\|L + M\|_{\operatorname{op}} \le \|L\|_{\operatorname{op}} + \|M\|_{\operatorname{op}}$.
-:::
+
+::: pf-step
+
+$\norm{\wait}_{\operatorname{op}}$ is a norm on $X^*$.
+
+::: pf-proof
+
+If $\norm{L}_{\operatorname{op}} = 0$ then $L(x) = 0$ for $\norm{x} \le 1$, hence for all $x$ by scaling.
+$\norm{\alpha L}_{\operatorname{op}} = \abs{\alpha}\,\norm{L}_{\operatorname{op}}$, and $\abs{(L + M)(x)} \le \abs{L(x)} + \abs{M(x)}$ gives $\norm{L + M}_{\operatorname{op}} \le \norm{L}_{\operatorname{op}} + \norm{M}_{\operatorname{op}}$.
 
 :::
 
-::: {.pf-step #s3}
+:::
+
+::: pf-step
+
 Every Cauchy sequence $(L_n)$ in $X^*$ converges in $X^*$.
 
 ::: pf-proof
 
 ::: pf-step
+
 For each $x \in X$, $L(x) \coloneqq \lim_n L_n(x)$ exists, and $L$ is linear.
 
 ::: pf-proof
-$|L_n(x) - L_m(x)| \le \|L_n - L_m\|_{\operatorname{op}}\|x\|$, so $(L_n(x))$ is Cauchy in the complete space $\CC$.
+
+$\abs{L_n(x) - L_m(x)} \le \norm{L_n - L_m}_{\operatorname{op}}\norm{x}$, so $(L_n(x))$ is Cauchy in the complete space $\CC$.
 Linearity passes to the limit: $L(\alpha x + y) = \lim_n(\alpha L_n(x) + L_n(y)) = \alpha L(x) + L(y)$.
-:::
-
-:::
-
-::: pf-qed
-Given $\eps > 0$, choose $N$ with $\|L_n - L_m\|_{\operatorname{op}} < \eps$ for $n, m \ge N$.
-For $\|x\| \le 1$ and $n \geq N$, $|L(x) - L_n(x)| = \lim_m |L_m(x) - L_n(x)| \le \eps$, so $\|L - L_n\|_{\operatorname{op}} \le \eps$.
-Then $\|L\|_{\operatorname{op}} \le \|L_N\|_{\operatorname{op}} + \eps$, so $L \in X^*$, and $L_n \to L$ in $X^*$.
-:::
 
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $X^*$ is a Banach space.
+
+Given $\varepsilon > 0$, choose $N$ with $\norm{L_n - L_m}_{\operatorname{op}} < \varepsilon$ for $n, m \ge N$.
+For $\norm{x} \le 1$ and $n \geq N$, $\abs{L(x) - L_n(x)} = \lim_m \abs{L_m(x) - L_n(x)} \le \varepsilon$, so $\norm{L - L_n}_{\operatorname{op}} \le \varepsilon$.
+Then $\norm{L}_{\operatorname{op}} \le \norm{L_N}_{\operatorname{op}} + \varepsilon$, so $L \in X^*$, and $L_n \to L$ in $X^*$.
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::
 
 :::
