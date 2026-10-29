@@ -2,7 +2,7 @@
 title: The Galois correspondence
 order: 10
 topics:
-- Isomorphism Theorems
+- Galois Theory
 - Irreducibility Criteria
 ---
 

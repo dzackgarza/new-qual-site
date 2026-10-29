@@ -2,7 +2,7 @@
 title: Worked examples
 order: 30
 topics:
-- Factorization
+- Galois Theory
 - Polynomials
 ---
 
