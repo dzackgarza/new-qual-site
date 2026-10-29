@@ -37,6 +37,15 @@ A cone in $\RR^3$ can have any number of edges; the cross-sections in the figure
 ![Two three-dimensional cones, with five and with four edges.](../../../assets/algebraic-geometry/toric/cones-with-five-and-four-edges.png){width=550px}
 :::
 
+::: {.definition title="The variety"}
+Let $k$ be a field and let $\Sigma$ be a fan in $N_\RR$.
+For $\sigma \in \Sigma$, put
+$$
+S_\sigma \coloneqq \dualof{\sigma} \intersect M, \qquad U_\sigma \coloneqq \Spec k[S_\sigma] .
+$$
+The \dfn{toric variety} $X_\Sigma$ of $\Sigma$ is obtained by gluing $U_\sigma$ and $U_\tau$ along $U_{\sigma \intersect \tau}$ for all $\sigma, \tau \in \Sigma$.
+:::
+
 ::: {.example title="The projective line"}
 The fan $\theset{\RR_{\geq 0}, \theset{0}, \RR_{\leq 0}}$ in $N_\RR = \RR$ gives two copies of $\AA^1_k$ glued along $\GG_{m,k}$ by $x \mapsto x^{-1}$:
 
@@ -50,15 +59,6 @@ The fan $\theset{\RR_{\geq 0}, \theset{0}, \RR_{\leq 0}}$ in $N_\RR = \RR$ gives
 \end{tikzcd}
 
 so $X_\Sigma = \PP^1$.
-:::
-
-::: {.definition title="The variety"}
-Let $k$ be a field and let $\Sigma$ be a fan in $N_\RR$.
-For $\sigma \in \Sigma$, put
-$$
-S_\sigma \coloneqq \dualof{\sigma} \intersect M, \qquad U_\sigma \coloneqq \Spec k[S_\sigma] .
-$$
-The \dfn{toric variety} $X_\Sigma$ of $\Sigma$ is obtained by gluing $U_\sigma$ and $U_\tau$ along $U_{\sigma \intersect \tau}$ for all $\sigma, \tau \in \Sigma$.
 :::
 
 ::: {.remark}
