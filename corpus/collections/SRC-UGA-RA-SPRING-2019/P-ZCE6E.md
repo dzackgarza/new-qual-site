@@ -26,21 +26,20 @@ audit:
   date: 2026-09-08
 ---
 
-
 ::: {.problem}
-Let $f:\mathbb R^n\to[0,\infty]$ and define
-\[
-\mathcal A:=\{(x,t)\in\mathbb R^n\times\mathbb R:0\le t\le f(x)\}.
-\]
+Let $f\colon\RR^n\to[0,\infty]$ and define
+$$
+\mathcal A\coloneqq\theset{(x,t)\in\RR^n\times\RR \suchthat 0\le t\le f(x)}.
+$$
 
-1. Prove that $f$ is Lebesgue measurable if and only if $\mathcal A$ is Lebesgue measurable in $\mathbb R^{n+1}$.
+1. Prove that $f$ is Lebesgue measurable if and only if $\mathcal A$ is Lebesgue measurable in $\RR^{n+1}$.
 
 2. If $f$ is measurable, prove
-\[
+$$
 m_{n+1}(\mathcal A)
-=\int_{\mathbb R^n}f(x)\,dx
-=\int_0^\infty m_n(\{x:f(x)\ge t\})\,dt.
-\]
+=\int_{\RR^n}f(x)\,dx
+=\int_0^\infty m_n(\theset{x \suchthat f(x)\ge t})\,dt.
+$$
 :::
 
 ::: {.solution}
@@ -51,15 +50,12 @@ m_{n+1}(\mathcal A)
 If $f$ is measurable, then $\mathcal A$ is measurable.
 
 ::: pf-proof
-Define
-\[
-H(x,t):=f(x)-t.
-\]
-The map $(x,t)\mapsto f(x)$ is measurable, as is $(x,t)\mapsto t$, so $H$ is measurable. Therefore
-\[
+The map $(x,t)\mapsto f(x)$ is measurable on $\RR^{n+1}$, since the preimage of a Borel set $B$ is $f^{-1}(B)\times\RR$, and $(x,t)\mapsto t$ is continuous.
+Hence $H(x,t)\coloneqq f(x)-t$, with values in $(-\infty,\infty]$, is measurable, and
+$$
 \mathcal A
-=(\mathbb R^n\times[0,\infty))\cap H^{-1}([0,\infty])
-\]
+=(\RR^n\times[0,\infty))\cap H^{-1}([0,\infty])
+$$
 is Lebesgue measurable.
 :::
 
@@ -69,74 +65,66 @@ is Lebesgue measurable.
 If $\mathcal A$ is measurable, then $f$ is measurable.
 
 ::: pf-proof
-For every fixed $x\in\mathbb R^n$, the vertical section is
-\[
+For every $x\in\RR^n$, the vertical section is
+$$
 \mathcal A_x
-:=\{t:(x,t)\in\mathcal A\}
-=[0,f(x)].
-\]
-Hence
-\[
+\coloneqq\theset{t \suchthat (x,t)\in\mathcal A}
+=[0,f(x)]\cap\RR,
+$$
+so
+$$
 f(x)=m_1(\mathcal A_x)
-=\int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt.
-\]
-Since $\mathbf1_{\mathcal A}$ is a nonnegative measurable function on $\mathbb R^{n+1}$, Tonelli's theorem implies that the function
-\[
-x\longmapsto \int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt
-\]
-is measurable. Thus $f$ is measurable.
+=\int_{\RR}\mathbf1_{\mathcal A}(x,t)\,dt.
+$$
+Since $\mathbf1_{\mathcal A}$ is a nonnegative measurable function on $\RR^{n+1}=\RR^n\times\RR$, Tonelli's theorem for Lebesgue measure implies that $x\mapsto \int_{\RR}\mathbf1_{\mathcal A}(x,t)\,dt$ is measurable.
+Thus $f$ is measurable.
 :::
 
 :::
 
 ::: {.pf-step #measure-of-subgraph}
-Compute the measure of the subgraph.
+If $f$ is measurable, then $m_{n+1}(\mathcal A)=\int_{\RR^n}f(x)\,dx$.
 
 ::: pf-proof
-Assume $f$ is measurable. By Step [](#f-measurable-implies-a-measurable){.pf-ref}, $\mathcal A$ is measurable, so Tonelli gives
-\[
-\begin{aligned}
+By step [](#f-measurable-implies-a-measurable){.pf-ref}, $\mathcal A$ is measurable, so integrating first in $t$ and using the sections of step [](#a-measurable-implies-f-measurable){.pf-ref}, Tonelli gives
+$$
 m_{n+1}(\mathcal A)
-&=\int_{\mathbb R^{n+1}}\mathbf1_{\mathcal A}(x,t)\,d(x,t)\\
-&=\int_{\mathbb R^n}\left(\int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt\right)dx\\
-&=\int_{\mathbb R^n}f(x)\,dx.
-\end{aligned}
-\]
+=\int_{\RR^n}\qty(\int_{\RR}\mathbf1_{\mathcal A}(x,t)\,dt)dx
+=\int_{\RR^n}f(x)\,dx.
+$$
 :::
 
 :::
 
 ::: {.pf-step #layer-cake-formula}
-Derive the layer-cake formula.
+If $f$ is measurable, then $m_{n+1}(\mathcal A)=\int_0^\infty m_n(\theset{x \suchthat f(x)\ge t})\,dt$.
 
 ::: pf-proof
 For $t\ge0$, the horizontal section is
-\[
+$$
 \mathcal A^t
-:=\{x:(x,t)\in\mathcal A\}
-=\{x:f(x)\ge t\}.
-\]
-A second application of Tonelli gives
-\[
-\begin{aligned}
+\coloneqq\theset{x \suchthat (x,t)\in\mathcal A}
+=\theset{x \suchthat f(x)\ge t},
+$$
+and for $t<0$ it is empty.
+Integrating first in $x$, Tonelli gives
+$$
 m_{n+1}(\mathcal A)
-&=\int_0^\infty\left(\int_{\mathbb R^n}\mathbf1_{\mathcal A}(x,t)\,dx\right)dt\\
-&=\int_0^\infty m_n(\{x:f(x)\ge t\})\,dt.
-\end{aligned}
-\]
-Combining with Step [](#measure-of-subgraph){.pf-ref} yields
-\[
-\boxed{
-m_{n+1}(\mathcal A)
-=\int_{\mathbb R^n}f(x)\,dx
-=\int_0^\infty m_n(\{f\ge t\})\,dt.}
-\]
+=\int_0^\infty\qty(\int_{\RR^n}\mathbf1_{\mathcal A}(x,t)\,dx)dt
+=\int_0^\infty m_n(\theset{x \suchthat f(x)\ge t})\,dt.
+$$
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#f-measurable-implies-a-measurable){.pf-ref} and [](#a-measurable-implies-f-measurable){.pf-ref} answer part 1, and steps [](#measure-of-subgraph){.pf-ref} and [](#layer-cake-formula){.pf-ref} answer part 2.
+By steps [](#f-measurable-implies-a-measurable){.pf-ref} and [](#a-measurable-implies-f-measurable){.pf-ref}, $f$ is measurable if and only if $\mathcal A$ is, and by steps [](#measure-of-subgraph){.pf-ref} and [](#layer-cake-formula){.pf-ref}, for measurable $f$,
+$$
+\boxed{
+m_{n+1}(\mathcal A)
+=\int_{\RR^n}f(x)\,dx
+=\int_0^\infty m_n(\theset{f\ge t})\,dt.}
+$$
 :::
 
 :::
