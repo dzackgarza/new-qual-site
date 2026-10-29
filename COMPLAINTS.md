@@ -37,22 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Duplicate class-equation cards C-A6UAR, C-O7CP3, and FD-L2TEC
-
-- **Object and need:** `C-A6UAR`, `C-O7CP3`, and `FD-L2TEC` in `corpus/theory/Algebra`. They are intrinsic cards for the same class equation (`CARD-04`, `SOURCE-02`).
-
-- **Observed evidence:** after reading all three complete cards, they have the same title, hypotheses, centralizer notation, choice of noncentral conjugacy-class representatives, and class-equation formula.
-  Their only substantive source difference is presentation syntax (`\#` versus the repository's `\size` macro).
-  `FD-L2TEC` later restated the same theorem and added its standard conjugation-action proof.
-  The wiki and algebra guide exposed the duplicate theorem beside `C-O7CP3`.
-
-- **Impact and owner:** retaining the duplicates gives multiple canonical-looking addresses for one theorem and splits guide references.
-  `C-O7CP3` is already the wiki-facing statement and uses the current notation convention.
-
-- **Uncertainty:** none after reading all three complete cards; no distinct source appearance or mathematical variant was found.
-
-- **Repair:** a `CARD-04` repair redirects the algebra guide to `C-O7CP3`, moves the review prompt and proof from `FD-L2TEC` onto `C-O7CP3`, removes duplicate reader-facing references, and deletes `C-A6UAR` and `FD-L2TEC`.
-
 ### Duplicate coset-counting cards C-HWX2P and C-XRC67
 
 - **Object and need:** `C-HWX2P` and `C-XRC67` in `corpus/theory/Algebra`. They state the same coset-counting formula and therefore violate the single-owner expectation for standard statements (`CARD-04`, `SOURCE-02`).
