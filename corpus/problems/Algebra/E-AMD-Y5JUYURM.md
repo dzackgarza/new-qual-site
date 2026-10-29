@@ -27,24 +27,37 @@ Show that every maximal subgroup $M$ of a finite $p$-group $G$ is normal and has
 :::
 
 ::: {.solution}
-We use the normalizer condition: if $H<G$ is a proper subgroup of a finite $p$-group, then
-$$
-H<N_G(H).
-$$
-Indeed, let $H$ act on the left cosets $G/H$ by left multiplication. Since $[G:H]$ is a positive power of $p$, the number of fixed points is divisible by $p$. A coset $gH$ is fixed exactly when $g^{-1}Hg=H$, so the fixed-point set is $N_G(H)/H$. It contains $H$, hence has at least one element; divisibility by $p$ therefore gives
-$$
-[N_G(H):H]\ge p,
-$$
-so $H<N_G(H)$.
+Let $M$ be a maximal subgroup of the finite $p$-group $G$.
 
-Apply this to a maximal subgroup $M<G$. Then
-$$
-M<N_G(M)\le G.
-$$
-Maximality forces $N_G(M)=G$, hence $M\trianglelefteq G$.
+::: pf
 
-Now $G/M$ is a nontrivial finite $p$-group. Since $M$ is maximal, $G/M$ has no nontrivial proper subgroup. By Cauchy's theorem, a nontrivial finite $p$-group has an element of order $p$; therefore $G/M$ itself must have order $p$. Hence
-$$
-[G:M]=p.
-$$
+::: {.pf-step #normalizer-condition}
+If $H<G$ is a proper subgroup of the finite $p$-group $G$, then $H<N_G(H)$.
+
+::: pf-proof
+Let $H$ act on the left cosets $G/H$ by left multiplication. Since $[G:H]$ is a positive power of $p$, the number of fixed points is congruent to $[G:H]\equiv0\pmod p$. A coset $gH$ is fixed exactly when $g^{-1}Hg=H$, so the fixed-point set is $N_G(H)/H$. It contains the coset $H$, so it has at least one element, and divisibility by $p$ gives $[N_G(H):H]\ge p$.
+:::
+
+:::
+
+::: {.pf-step #m-normal}
+$M\trianglelefteq G$.
+
+::: pf-proof
+By step [](#normalizer-condition){.pf-ref}, $M<N_G(M)\le G$. Maximality of $M$ forces $N_G(M)=G$.
+:::
+
+:::
+
+::: pf-step
+$[G:M]=p$.
+
+::: pf-proof
+By step [](#m-normal){.pf-ref}, $G/M$ is a nontrivial finite $p$-group. By the correspondence theorem, maximality of $M$ means $G/M$ has no nontrivial proper subgroup. By Cauchy's theorem $G/M$ has a subgroup of order $p$, which must be all of $G/M$.
+:::
+
+:::
+
+:::
+
 :::
