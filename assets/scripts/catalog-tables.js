@@ -168,10 +168,18 @@
       if (!filled) column.searchPanes.show = false;
     });
     const unmatched = unmatchedValues(rows, columns, preSelect);
+    // A known solution status with no rows is a count of zero, not a bad filter.
+    const onlySolution =
+      preSelect.length === 1 &&
+      preSelect[0].column === 9 &&
+      unmatched.every((value) => value === "Solved" || value === "Unsolved");
+    const emptyProblems = onlySolution
+      ? `No ${unmatched.join(" or ").toLowerCase()} problems.`
+      : emptyMessage("problems", unmatched);
 
     const table = new DataTable(problemTable, {
       data: unmatched.length ? [] : rows,
-      language: unmatched.length ? { emptyTable: emptyMessage("problems", unmatched) } : {},
+      language: unmatched.length ? { emptyTable: emptyProblems } : {},
       deferRender: true,
       pageLength: 50,
       lengthMenu: [25, 50, 100],

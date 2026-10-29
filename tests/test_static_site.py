@@ -491,6 +491,8 @@ def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submiss
     script = (site / "assets" / "scripts" / "catalog-tables.js").read_text()
     assert 'values("solution")' in script
     assert 'data: "solutionStatus"' in script
+    # Zero rows of a known status is a count, reported as such, not a bad filter.
+    assert '`No ${unmatched.join(" or ").toLowerCase()} problems.`' in script
 
     unsolved = LinkCollector()
     unsolved.feed((site / "tag" / "P-CENTER.html").read_text())
