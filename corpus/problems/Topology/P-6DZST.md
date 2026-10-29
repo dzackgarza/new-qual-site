@@ -11,44 +11,40 @@ classification:
   - Homotopy
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The problem block held a numbered solution sketch (flow along great circles through the poles to the equator; alternatively S^2 minus a point is R^2 and R^2 minus a point is S^1 x R) instead of a question. The statement now asks for the deformation retraction; the great-circle flow is a remark."
 ---
 
 ::: {.problem}
-5. WLOG, assume $p_0, p_1$ are the north and south poles of $S^2$.
-   We can then form a deformation retract of $X$ onto the equator of $S^2$, which is equal to $S^1$.
-   To do so, just move every point $x$ along the unique great circle connecting $x, p_0, p_1$, and proceed at linear speed towards the equator.
-   This is well defined at every point on $S^2$ *except* the poles, which are not included in $X$, and the equator is fixed at every instant.
-   So this forms a deformation retract.
-   Alternatively, use the fact that $\RR^n -\pt \cong S^{n-1} \cross \RR$ via polar coordinates, and $S^n - \pt \cong \RR^n$ by stereographic projection.
-   So $S^2 - \theset{p_0, p_1} \cong \RR^2 - \theset{p_1} \cong S^{1} \cross \RR$.
-   But since $\RR$ is contractible, the last one is homotopic to $S^1 \cross \theset {0} \cong S^1$.
-   **Alternatively**: use the lemma, then $k=2$ and so $S^2 - \theset{p_1, p_2} \homotopic \bigvee_{i=1}^{1}S^1 = S^1$.
+Let $p_0\neq p_1$ be points of $S^2$ and $X=S^2\setminus\theset{p_0,p_1}$. Show that $X$ deformation retracts onto a subspace homeomorphic to $S^1$.
 :::
 
 ::: {.solution}
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #stereographic}
 
-Removing one point from $S^2$ gives $\mathbb R^2$ by stereographic projection; the second removed point becomes one point of $\mathbb R^2$.
+There is a homeomorphism $\sigma:X\to\RR^2\setminus\{0\}$.
 
 ::: pf-proof
 
-Choose one of the two deleted points as the projection point.
+Stereographic projection from $p_0$ is a homeomorphism $S^2\setminus\{p_0\}\to\RR^2$; compose it with the translation taking the image of $p_1$ to $0$.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: {.pf-step #punctured-plane}
 
-The punctured plane $\mathbb R^2\setminus\{0\}$ strongly deformation retracts onto the unit circle by
-$$H(x,t)=\bigl((1-t)+t/\|x\|\bigr)x.$$
+$\RR^2\setminus\{0\}$ strongly deformation retracts onto the unit circle $S^1$ by $H(x,t)=\bigl((1-t)+t/\norm{x}\bigr)x$.
 
 ::: pf-proof
 
-For $x\ne0$ the scalar is positive, so the homotopy stays in the punctured plane; at $t=1$ it is radial projection and it fixes the unit circle.
+For $x\ne0$ the scalar is positive, so the homotopy stays in the punctured plane; at $t=1$ it is radial projection, and it fixes the unit circle.
 
 :::
 
@@ -56,12 +52,11 @@ For $x\ne0$ the scalar is positive, so the homotopy stays in the punctured plane
 
 ::: pf-step
 
-Therefore
-$$\boxed{S^2\setminus\{p,q\}\simeq S^1.}$$
+$X$ strongly deformation retracts onto $\sigma^{-1}(S^1)\cong S^1$.
 
 ::: pf-proof
 
-Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+Conjugate the homotopy of step [](#punctured-plane){.pf-ref} by the homeomorphism of step [](#stereographic){.pf-ref}: $(x,t)\mapsto\sigma^{-1}H(\sigma(x),t)$.
 
 :::
 
@@ -69,4 +64,8 @@ Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
+:::
+
+::: {.remark}
+When $p_0,p_1$ are antipodal, say the north and south poles, a direct deformation retraction onto the equator moves each point of $X$ along its meridian at linear speed in latitude to the equator. It is defined everywhere except at the poles, which are not in $X$, and it fixes the equator.
 :::
