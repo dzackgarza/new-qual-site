@@ -22,6 +22,10 @@ audit:
   note: >-
     Checked the area identity for a function and its inverse, both cases
     relative to b=f(a), and the conjugate-exponent specialization.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam paper prints both inequalities with <= in place of >=; the statement now reads >=.
 ---
 
 ::: {.problem}
@@ -202,11 +206,4 @@ Young's inequality.
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the exam paper prints both inequalities with $\le$ in place of
-$\ge$. The reversed inequalities are false: for $f(x)=x$, $a=1$, and
-$b=2$, the left-hand side of the first inequality is
-$\frac12+2=\frac52>2=ab$.
 :::
