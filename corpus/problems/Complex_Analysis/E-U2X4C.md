@@ -18,5 +18,27 @@ Show that if $f$ is entire and $\abs{f(z)} > 1$ for all $z$, then $f$ is constan
 :::
 
 ::: {.solution}
-The inequality forces $f\neq 0$ anywhere, so $1/f$ is entire and bounded by 1. By Liouville, $1/f$ is constant, and thus so is $f$.
+
+::: pf
+
+::: {.pf-step #reciprocal}
+$1/f$ is entire and $\abs{1/f}<1$ on $\CC$.
+
+::: pf-proof
+The inequality $\abs{f}>1$ shows $f$ has no zeros, so $1/f$ is entire, and $\abs{1/f} = 1/\abs{f} < 1$.
+:::
+
+:::
+
+::: pf-step
+$f$ is constant.
+
+::: pf-proof
+By step [](#reciprocal){.pf-ref} and Liouville's theorem, $1/f$ is a constant, which is nonzero, so $f$ is constant.
+:::
+
+:::
+
+:::
+
 :::
