@@ -32,7 +32,7 @@ Fix $x,y\in G$ and define $\tau\colon xH\to yH$ by $\tau(xh)=yh$ for $h\in H$.
 
 ::: pf
 
-::: {.pf-step #well-defined}
+::: pf-step
 
 $\tau$ is well defined.
 
