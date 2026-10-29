@@ -22,26 +22,50 @@ audit:
 ---
 
 ::: {.problem}
-What are the irreducible representations of finite abelian groups over $\mathbb{C}$?
+What are the irreducible representations of finite abelian groups over $\CC$?
 Prove that every irreducible representation is 1-dimensional, and describe the dual group $\widehat{G} \cong G$.
 :::
 
 ::: {.solution}
-Let $(\rho,V)$ be an irreducible complex representation of a finite abelian group $G$. For every $g\in G$, the operator $\rho(g)$ commutes with every $\rho(h)$. By Schur's lemma, each $\rho(g)$ is scalar. Hence every one-dimensional subspace of $V$ is $G$-stable, so irreducibility forces $\dim_{\mathbb C}V=1$.
+Let $G$ be a finite abelian group and $\widehat G=\Hom(G,\CC^\times)$, a group under pointwise multiplication.
 
-Thus the irreducible representations are exactly the characters
-\[
-\widehat G=\operatorname{Hom}(G,\mathbb C^\times),
-\]
-with pointwise multiplication. Because $G$ is finite, all character values are roots of unity.
+::: pf
 
-For $C_n=\langle g\rangle$, a character is determined by the choice of $\chi(g)$ among the $n$th roots of unity, so $\widehat{C_n}\cong C_n$. If
-\[
-G\cong C_{n_1}\times\cdots\times C_{n_r},
-\]
-then
-\[
-\widehat G\cong \widehat{C_{n_1}}\times\cdots\times\widehat{C_{n_r}}\cong G.
-\]
-This isomorphism with $G$ is noncanonical; the evaluation map $G\to\widehat{\widehat G}$ is canonical.
+::: {.pf-step #dim}
+Every irreducible complex representation $(\rho,V)$ of $G$ is one-dimensional.
+
+::: pf-proof
+For each $g\in G$, $\rho(g)$ commutes with every $\rho(h)$ because $G$ is abelian, so $\rho(g)$ is a $G$-endomorphism of $V$, and Schur's lemma makes it a scalar.
+Then every line in $V$ is $G$-stable, and irreducibility forces $\dim_{\CC}V=1$.
+:::
+
+:::
+
+::: pf-step
+The irreducible representations of $G$ are, up to isomorphism, exactly the elements of $\widehat G$, and their values are roots of unity.
+
+::: pf-proof
+By step [](#dim){.pf-ref}, an irreducible representation is a homomorphism $G\to\GL_1(\CC)=\CC^\times$, and isomorphic one-dimensional representations are equal homomorphisms.
+If $g^n=e$, then $\chi(g)^n=1$.
+:::
+
+:::
+
+::: pf-step
+$\widehat G\cong G$.
+
+::: pf-proof
+For a cyclic group $C_n=\langle g\rangle$, a character is determined by $\chi(g)$, which may be any $n$-th root of unity, so $\widehat{C_n}\cong\mu_n\cong C_n$.
+A character of a product is the product of its restrictions to the factors, so $\widehat{A\times B}\cong\widehat A\times\widehat B$.
+Writing $G\cong C_{n_1}\times\cdots\times C_{n_r}$ gives $\widehat G\cong\widehat{C_{n_1}}\times\cdots\times\widehat{C_{n_r}}\cong G$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+The isomorphism $\widehat G\cong G$ depends on the choice of a decomposition and of generators; the evaluation map $G\to\widehat{\widehat G}$ is a canonical isomorphism.
 :::
