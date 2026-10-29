@@ -5,6 +5,7 @@ kind: definition
 title: Almost disjoint sets
 prompts:
 - When are two sets almost disjoint?
+- What are almost disjoint sets?
 classification:
   areas:
   - real-analysis

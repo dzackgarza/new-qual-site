@@ -88,7 +88,7 @@ For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for 
 
 [[FD-6HUIM]]
 
-[[FD-5T3HX]] [[FF-NOX4C]]
+[[FD-5T3HX]]
 
 [[FD-T7SN6]]
 
