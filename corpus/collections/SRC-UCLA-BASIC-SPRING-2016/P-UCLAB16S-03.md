@@ -244,9 +244,9 @@ The second limit is the ordinary left-endpoint Riemann-sum convergence for the c
 
 ::: {.pf-step #s1-10}
 
-Thus the expression converges to
+Thus the limit exists and equals
 \[
-\frac{f(0)+f(1)}2.
+\boxed{\frac{f(0)+f(1)}2}.
 \]
 
 
@@ -277,12 +277,6 @@ f(1)
 \]
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1-6){.pf-ref} through [](#s1-10){.pf-ref} show that the limit exists and equals $\dfrac{f(0)+f(1)}{2}$.
 
 :::
 
