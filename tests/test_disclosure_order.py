@@ -54,3 +54,18 @@ def test_a_card_page_shows_its_hint_above_its_solutions(tmp_path: Path) -> None:
     labels = [re.sub(r"<[^>]+>", "", summary).strip().split(":")[0] for summary in SUMMARY.findall(page)]
 
     assert labels == ["Hint", "Solution"], labels
+
+
+def test_a_card_page_keeps_its_remark_after_its_solution(tmp_path: Path) -> None:
+    """STYLE-07: problem, hints, solutions, remarks, as the card writes them."""
+    card = PROBLEM_ANSWERING_ITSELF + '\n::: {.remark title="Variations"}\nAsked only for existence, the count suffices.\n:::\n'
+    work = fixture_repo(tmp_path, {"P-SELFANS.md": card})
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = (work / "build" / "quarto" / "_site" / "tag" / "P-SELFANS.html").read_text()
+    positions = [page.index(marker) for marker in ("Show that", "reveal qual-hint", "reveal qual-solution", "Asked only for existence")]
+    assert positions == sorted(positions), positions
+    statement = page.split('<div class="card-statement">', 1)[1].split("</div>", 1)[0]
+    assert "Asked only for existence" not in statement

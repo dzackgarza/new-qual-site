@@ -1123,12 +1123,25 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     emitter knows and a reader of the HTML would have to guess: taking blocks
     up to the first answer truncates the 11 problems that write more of the
     question after one.
+
+    Answers and remarks keep their authored places (`STYLE-07`: problem,
+    hints, solutions, remarks); only the question's blocks gather into the
+    statement, which stands where its first block stood.
     """
-    statement = [block for block in blocks if not (block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES)]
-    answers = [block for block in blocks if block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES]
+
+    def is_kept_in_place(block: dict) -> bool:
+        return block.get("t") == "Div" and bool(set(block["c"][0][1]) & (ANSWER_CLASSES | {"remark"}))
+
+    statement = [block for block in blocks if not is_kept_in_place(block)]
     if not statement:
-        return answers
-    return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
+        return blocks
+    ordered: list[dict] = []
+    for block in blocks:
+        if is_kept_in_place(block):
+            ordered.append(block)
+        elif block is statement[0]:
+            ordered.append({"t": "Div", "c": [["", ["card-statement"], []], statement]})
+    return ordered
 
 
 def _prepare_json_body(job: tuple[bool, list[dict]]) -> list[dict]:
