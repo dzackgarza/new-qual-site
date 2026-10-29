@@ -18,94 +18,52 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source hint reads "You may use that fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of xi"; the statement keeps the permission and drops the reference to an unnamed textbook.'
 ---
 
 ::: {.problem}
-Prove by *justifying all steps* that for all $\xi \in {\mathbb C}$ we have $\displaystyle e^{- \pi \xi^2} = \int_{- \infty}^\infty e^{- \pi x^2} e^{2 \pi i x \xi} dx \; .$
+Prove by *justifying all steps* that for all $\xi \in \CC$ we have $\displaystyle e^{- \pi \xi^2} = \int_{- \infty}^\infty e^{- \pi x^2} e^{2 \pi i x \xi} dx \; .$
 
-> Hint: You may use that fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of $\xi$.
+You may assume without proof that the identity holds for real values of $\xi$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that for all $\xi\in\mathbb C$,
-$$
-e^{-\pi\xi^2}=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
-$$
+
+For $\xi\in\CC$, let $F(\xi)\coloneqq\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx$.
 
 ::: pf
 
-::: pf-step
-Define the transform:
+::: {.pf-step #dominated}
+For $V>0$ and $\abs{\Im\xi}\leq V$, $\abs{e^{-\pi x^2}e^{2\pi i x\xi}}\leq e^{-\pi x^2+2\pi V\abs{x}}$, which is integrable on $\RR$.
 
 ::: pf-proof
-
-::: pf-step
-For $\xi=u+iv$, the integrand satisfies
-$$|e^{-\pi x^2}e^{2\pi i x\xi}|=e^{-\pi x^2-2\pi vx}=e^{-\pi(x+v)^2+\pi v^2}.$$
-:::
-
-::: pf-step
-Hence
-$$F(\xi):=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx$$
-is well-defined for all $\xi\in\mathbb C$ and is entire by dominated convergence on compact sets.
+With $\xi=u+iv$, $\abs{e^{2\pi i x\xi}}=e^{-2\pi xv}\leq e^{2\pi V\abs{x}}$, and $e^{-\pi x^2+2\pi V\abs{x}}\leq e^{\pi V^2}e^{-\pi(\abs{x}-V)^2}$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-Derive a differential equation:
+::: {.pf-step #entire}
+$F$ is entire.
 
 ::: pf-proof
-
-::: pf-step
-Differentiate under the integral to get
-$$F'(\xi)=\int_{-\infty}^{\infty}(2\pi i x)e^{-\pi x^2}e^{2\pi i x\xi}\,dx.$$
-:::
-
-::: pf-step
-Integrate by parts:
-$$
-\begin{aligned}
-F'(\xi)
-&= -i\int_{-\infty}^{\infty}\frac{d}{dx}\left(e^{-\pi x^2}\right)e^{2\pi i x\xi}\,dx\\
-&= -i\Big[e^{-\pi x^2}e^{2\pi i x\xi}\Big]_{-\infty}^{\infty}
-+\,2\pi i\xi\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx \\
-&= -2\pi\xi F(\xi).
-\end{aligned}
-$$
-:::
-
+By step [](#dominated){.pf-ref}, $F$ is defined on $\CC$ and, by dominated convergence, continuous on each strip $\abs{\Im\xi}\leq V$.
+For a closed triangle $T$ in such a strip, Fubini's theorem, justified by the same bound, gives $\oint_{\partial T}F(\xi)\,d\xi=\int_{-\infty}^\infty e^{-\pi x^2}\oint_{\partial T}e^{2\pi i x\xi}\,d\xi\,dx=0$, because $\xi\mapsto e^{2\pi i x\xi}$ is entire.
+Morera's theorem then shows $F$ is holomorphic on every strip, hence on $\CC$.
 :::
 
 :::
 
 ::: pf-step
-Solve the ODE:
+$F(\xi)=e^{-\pi\xi^2}$ for every $\xi\in\CC$.
 
 ::: pf-proof
-
-::: pf-step
-$F'+2\pi\xi F=0$ has general solution $F(\xi)=Ce^{-\pi\xi^2}$.
+Both sides are entire, by step [](#entire){.pf-ref}, and they agree on $\RR$ by the permitted real case.
+Since $\RR$ has accumulation points in the connected set $\CC$, the identity theorem gives equality on $\CC$.
 :::
 
-::: pf-step
-Evaluate at $\xi=0$:
-$$F(0)=\int_{-\infty}^{\infty}e^{-\pi x^2}\,dx=1,$$
-so $C=1$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-
-By uniqueness of solutions to this linear ODE on entire functions,
-$$F(\xi)=e^{-\pi\xi^2}$$
-for all $\xi\in\mathbb C$. Q.E.D.
 :::
 
 :::
