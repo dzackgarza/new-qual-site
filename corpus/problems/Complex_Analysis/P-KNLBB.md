@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KNLBB
 kind: problem
-title: $z^2$ is uniformly continuous on $|z|<R$ but not on $\CC$
+title: $z^2$ is uniformly continuous on $\abs{z}<R$ but not on $\CC$
 classification:
   areas:
   - complex-analysis
@@ -11,38 +11,47 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The card body carried the source label "Tie, Fall 2009" above the statement; it was removed from the public card. The earlier solution bounded on the wrong disc and mixed w = z + delta/2 with w = z + delta; it was rewritten.'
 ---
 
-> Tie, Fall 2009
-
 ::: {.problem}
-Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\mathbb C$.
+Show that $f(z) = z^2$ is uniformly continuous in any open disk $\abs{z} < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\CC$.
 :::
 
 ::: {.solution}
-A direct computation: fix $\eps>0$ and suppose $\abs{z-w} < R$. 
-Then
-\[
-\abs{z^2-w^2} 
-&= \abs{z-w}\abs{z+w} \\
-&\leq \delta \qty{\abs z + \abs w} \\
-&\leq \delta \cdot 2R
-,\]
-so choose $\delta < { \eps \over 2R}$ to get uniform continuity on $\DD_{R/2}(0)$.
+::: pf
 
-To see $f$ can't be uniformly continuous on $\CC$, take $\eps \definedas c$ any constant and suppose the appropriate $\delta$ exists.
-We'll look for a bad pair of $z, w$, so take $w = z + {1\over 2}\delta$.
-This would imply
-\[
-\abs{z^2 - w^2}
-&= \abs{z^2 - (z+\delta)^2} \\
-&= \abs{-2z\delta - \delta^2} \\
-&= \abs{2z\delta + \delta^2} \\
-&= \delta \abs{2z + \delta} \\
-&\convergesto{\abs{z}\to\infty}\infty
-,\]
-using the $\delta = \delta(\eps)$ can't depend on $z$ or $w$, and is thus constant in this expression.
-This contradicts that $\abs{z^2-w^2} < \eps = c < \infty$.
+::: pf-step
+$f$ is uniformly continuous on $\abs{z} < R$.
+
+::: pf-proof
+Let $\varepsilon > 0$ and $\delta = \frac{\varepsilon}{2R}$.
+For $\abs{z}, \abs{w} < R$ with $\abs{z - w} < \delta$,
+$$
+\abs{z^2-w^2} = \abs{z-w}\abs{z+w} < \delta \cdot 2R = \varepsilon.
+$$
 :::
 
+:::
 
+::: pf-step
+$f$ is not uniformly continuous on $\CC$.
+
+::: pf-proof
+Take $\varepsilon = 1$ and any $\delta > 0$.
+For real $x > 0$ let $z = x + \delta/2$ and $w = x$, so $\abs{z - w} < \delta$ and
+$$
+\abs{z^2 - w^2} = \frac{\delta}{2}\left(2x + \frac{\delta}{2}\right) \geq \delta x,
+$$
+which exceeds $1$ once $x > 1/\delta$.
+So no $\delta$ works for $\varepsilon = 1$.
+:::
+
+:::
+
+:::
+:::
