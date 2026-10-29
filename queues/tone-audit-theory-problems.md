@@ -2412,7 +2412,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/PR-EWOP5.md` | `feaa6c8b3dc040a428fb805e7c405a91007a2764` | `feaa6c8b3dc040a428fb805e7c405a91007a2764` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-FBQ6F.md` | `f43d45d528087412633beb98cca556e08e5200bd` | `f43d45d528087412633beb98cca556e08e5200bd` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-FL6T7.md` | `2fb3b8307d567c651fac7af2e7486f162a976952` | `2fb3b8307d567c651fac7af2e7486f162a976952` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/PR-FRVPJ.md` | `f1b784b68a49d00b51daebbececeacebc82931db` | `f1b784b68a49d00b51daebbececeacebc82931db` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-IK6LA.md` | `13f2525bedd7fc9538441b806354f9646a3e7145` | `13f2525bedd7fc9538441b806354f9646a3e7145` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-ITZIT.md` | `9a95e8f7df43986d1f8c97a3beda20f93273f2a3` | `9a95e8f7df43986d1f8c97a3beda20f93273f2a3` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-JKE6C.md` | `f5bcabdd6cda0c489e018cbdd142fd30f0c5310f` | `f5bcabdd6cda0c489e018cbdd142fd30f0c5310f` | Read; retained |
