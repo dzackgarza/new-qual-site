@@ -32,6 +32,13 @@ The following are equivalent:
 In particular, if $M$ has $n$ distinct eigenvalues in $F$, equivalently if $\min_M(x)$ has $n$ distinct roots in $F$, then $M$ is diagonalizable over $F$.
 :::
 
+::: {.proof}
+(1)$\Rightarrow$(2): if $M=PDP^{-1}$ with $D$ diagonal whose distinct diagonal entries are $\lambda_1,\ldots,\lambda_r$, then $\prod_i(x-\lambda_i)$ annihilates $D$ and hence $M$, so $\min_M$ divides a product of distinct linear factors.
+
+(2)$\Rightarrow$(3): suppose $\min_M=\prod_{i=1}^r(x-\lambda_i)$ with the $\lambda_i\in F$ distinct.
+The factors are pairwise coprime, so by the kernel decomposition $F^n=\ker\min_M(M)=\bigoplus_{i=1}^r\ker(M-\lambda_i I)$, and a basis of each eigenspace gives a basis of $F^n$ of eigenvectors of $M$.
+:::
+
 ::: {.example}
 A matrix whose minimal polynomial splits over $F$ need not be diagonalizable over $F$.
 For $M=\begin{bmatrix}1&1\\0&1\end{bmatrix}$ over any field $F$, $\min_M(x)=(x-1)^2$ splits over $F$, and $M$ is not diagonalizable, because its only eigenvalue is $1$ and $M\ne I$.

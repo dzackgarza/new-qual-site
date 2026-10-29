@@ -23,17 +23,10 @@ A real symmetric or complex Hermitian matrix is diagonalizable in an orthonormal
 
 [[L-C5DDK]]
 
-[[T-6ABNR]]
-
 [[FT-BC6S2]]
 
-::: {.proof}
-$\impliedby$: If $\min_A$ is a product of distinct linear factors, then every invariant factor of $A$ divides $\min_A$, so every elementary divisor is linear, and the Jordan form of $A$ is diagonal.
-:::
-
 ::: {.remark title="Criterion"}
-$A$ is diagonalizable over $F$ if and only if $\min_A$ is a product of distinct linear factors over $F$.
-Hence a polynomial identity $f(A) = 0$ with $f$ a product of distinct linear factors over $F$, such as $A^2 = A$, implies that $A$ is diagonalizable; see [[algebra/linear-algebra/find-the-canonical-form|Find the canonical form]].
+By [[FT-BC6S2]], a polynomial identity $f(M) = 0$ with $f$ a product of distinct linear factors over $F$, such as $M^2 = M$, implies that $M$ is diagonalizable; see [[algebra/linear-algebra/find-the-canonical-form|Find the canonical form]].
 :::
 
 ## The spectral theorem

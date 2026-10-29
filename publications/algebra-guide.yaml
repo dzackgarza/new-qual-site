@@ -650,7 +650,6 @@ sections:
       - ref: D-BSUV4
       - ref: T-WQHMA
       - ref: FD-K6FVX
-      - ref: T-6ABNR
       - ref: FT-BC6S2
       - ref: PR-GV5CF
       - ref: L-C5DDK

@@ -99,7 +99,7 @@ Chapter: [[algebra/modules/index|Modules]].
 
 [[FD-XT6HD]]
 
-[[T-6ABNR]]
+[[FT-BC6S2]]
 
 [[T-WQHMA]]
 
