@@ -22,39 +22,35 @@ audit:
 ---
 
 ::: {.problem}
-What is the stabilizer of a point $z_0 \in \mathbb{D}$ in the open unit disk under the group of conformal automorphisms $\operatorname{Aut}(\mathbb{D})$?
+What is the stabilizer of a point $z_0 \in \DD$ in the open unit disk under the group of conformal automorphisms $\Aut(\DD)$?
 Describe the group structure and express the automorphisms explicitly.
 :::
 
 ::: {.solution}
-Let
-\[
-\phi_{z_0}(z)=\frac{z-z_0}{1-\overline{z_0}z}.
-\]
-Then $\phi_{z_0}\in\operatorname{Aut}(\mathbb D)$ and $\phi_{z_0}(z_0)=0$.
+Let $\phi_{z_0}(z)=\dfrac{z-z_0}{1-\overline{z_0}z}$; then $\phi_{z_0}\in\Aut(\DD)$ and $\phi_{z_0}(z_0)=0$.
 
-By Schwarz's lemma, an automorphism of $\mathbb D$ fixing $0$ has the form
-\[
-z\longmapsto e^{i\theta}z.
-\]
-Hence
-\[
-\operatorname{Stab}_{\operatorname{Aut}(\mathbb D)}(0)
-=\{z\mapsto e^{i\theta}z\}
-\cong U(1).
-\]
-Conjugating by $\phi_{z_0}$ gives
-\[
-\operatorname{Stab}(z_0)
-=\phi_{z_0}^{-1}\,U(1)\,\phi_{z_0}.
-\]
-Thus every element of the stabilizer is
-\[
-f_\theta(z)
-=\phi_{z_0}^{-1}\!\left(e^{i\theta}\phi_{z_0}(z)\right),
-\]
-and
-\[
-\boxed{\operatorname{Stab}(z_0)\cong U(1)\cong SO(2)}.
-\]
+::: pf
+
+::: {.pf-step #origin}
+$\Stab(0)=\{z\mapsto e^{i\theta}z:\theta\in\RR\}\cong U(1)$.
+
+::: pf-proof
+Rotations are automorphisms fixing $0$.
+Conversely, if $f\in\Aut(\DD)$ fixes $0$, the Schwarz lemma applied to $f$ and $f^{-1}$ gives $\abs{f'(0)}\le1$ and $\abs{1/f'(0)}\le1$, so $\abs{f'(0)}=1$ and $f$ is a rotation.
+Composition of rotations adds angles, so $\Stab(0)\cong\RR/2\pi\ZZ\cong U(1)$.
+:::
+
+:::
+
+::: pf-step
+$\Stab(z_0)=\{\phi_{z_0}^{-1}(e^{i\theta}\phi_{z_0}(z)):\theta\in\RR\}$, and $\boxed{\Stab(z_0)\cong U(1)\cong\SO(2)}$.
+
+::: pf-proof
+An automorphism $f$ fixes $z_0$ if and only if $\phi_{z_0}f\phi_{z_0}^{-1}$ fixes $0$, so conjugation by $\phi_{z_0}$ is an isomorphism $\Stab(z_0)\to\Stab(0)$; apply step [](#origin){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
