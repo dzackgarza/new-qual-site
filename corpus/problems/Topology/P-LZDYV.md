@@ -23,10 +23,14 @@ audit:
 
 ::: {.problem}
 (a) State the Seifert–van Kampen Theorem.
+
 (b) Calculate the fundamental group of the space obtained by taking two copies of the torus $T = S^1 \times S^1$ and gluing them along a circle $S^1 \times \{p\}$.
+
 (c) Calculate the fundamental group of the Klein bottle $K$.
+
 (d) Calculate the fundamental group of the wedge sum $T^2 \vee S^1 = (S^1 \times S^1) \vee S^1$.
-(e) Calculate the fundamental group of the wedge sum $T^2 \vee \mathbb{RP}^2$.
+
+(e) Calculate the fundamental group of the wedge sum $T^2 \vee \RP^2$.
 :::
 
 ::: {.solution}
@@ -35,7 +39,7 @@ audit:
 
 ::: pf-step
 
-**Seifert--van Kampen.** If $X=U\cup V$, where $U,V,U\cap V$ are path-connected open sets containing a common basepoint $x_0$, then
+(a) Seifert--van Kampen theorem: if $X=U\cup V$, where $U,V,U\cap V$ are path-connected open sets containing a common basepoint $x_0$, then
 $$
 \pi_1(X,x_0)
 \cong
@@ -47,7 +51,7 @@ where the amalgamation uses the two inclusion-induced homomorphisms.
 
 ::: pf-step
 
-For two tori glued along a circle representing one standard generator in each torus,
+(b) For two tori glued along a circle representing one standard generator in each torus,
 $$
 \pi_1
 \cong
@@ -55,31 +59,31 @@ $$
 $$
 Since $a$ commutes with both free generators $b_1,b_2$, this is
 $$
-\mathbb Z\times F_2.
+\ZZ\times F_2.
 $$
 
 :::
 
 ::: pf-step
 
-The Klein bottle has the standard presentation
+(c) The Klein bottle has the standard presentation
 $$
 \pi_1(K)
 \cong
 \langle a,b\mid aba^{-1}=b^{-1}\rangle
-\cong \mathbb Z\rtimes_{-1}\mathbb Z,
+\cong \ZZ\rtimes_{-1}\ZZ,
 $$
-where the generator represented by $a$ acts on $\langle b\rangle\cong\mathbb Z$ by inversion.
+where the generator represented by $a$ acts on $\langle b\rangle\cong\ZZ$ by inversion.
 
 :::
 
 ::: pf-step
 
-For a wedge of connected CW complexes, van Kampen gives a free product. Hence
+(d) For a wedge of connected CW complexes, van Kampen gives a free product. Hence
 $$
 \pi_1(T^2\vee S^1)
 \cong
-\mathbb Z^2*\mathbb Z
+\ZZ^2*\ZZ
 \cong
 \langle a,b,c\mid[a,b]=1\rangle.
 $$
@@ -88,17 +92,17 @@ $$
 
 ::: pf-step
 
-Likewise,
-
-:::
-
-:::
-
+(e) Likewise, since $\pi_1(\RP^2)\cong\ZZ/2$,
 $$
-\pi_1(T^2\vee\mathbb{RP}^2)
+\pi_1(T^2\vee\RP^2)
 \cong
-\mathbb Z^2*(\mathbb Z/2)
+\ZZ^2*(\ZZ/2)
 \cong
 \langle a,b,d\mid[a,b]=1,\ d^2=1\rangle.
 $$
+
+:::
+
+:::
+
 :::
