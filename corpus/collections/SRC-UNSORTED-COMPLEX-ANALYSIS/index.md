@@ -117,7 +117,6 @@ source:
     comment: Stein--Shakarchi 2.13
   - id: E-IZKCV
   - id: E-J3QMJ
-  - id: E-JKROF
   - id: E-JLGWE
   - id: E-JOSK3
   - id: E-JPAJE

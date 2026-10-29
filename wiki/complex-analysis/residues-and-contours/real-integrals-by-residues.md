@@ -17,7 +17,6 @@ Upper semicircle; the arc integral tends to $0$ by the ML estimate.
 [[E-AKF2O]]
 [[E-JZNWV]]
 [[E-SPIVX]]
-[[E-JK5PG]]
 
 ## Rational against $e^{iz}$
 
@@ -67,7 +66,7 @@ $$
 
 [[E-BEIHP]]
 [[E-Z4JCZ]]
-[[E-JKROF]]
+[[E-SS3.EX-8]]
 
 ## Branch cuts: logarithms
 
