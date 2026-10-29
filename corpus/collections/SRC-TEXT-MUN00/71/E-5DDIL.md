@@ -24,7 +24,6 @@ Show that if for each $i$, the point $p$ is a deformation retract of an open set
 :::
 
 ::: {.solution}
-**Goal:** Prove that the fundamental group of a wedge sum $X = X_1 \vee \dots \vee X_n$ of well-pointed spaces (where $p$ is a deformation retract of an open neighborhood $W_i \subseteq X_i$) is isomorphic to the free product $*_{i=1}^n \pi_1(X_i, p)$ via the Seifert-van Kampen Theorem.
 
 ::: pf
 
