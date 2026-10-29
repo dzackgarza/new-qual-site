@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-02
 kind: problem
-title: Maxim algebraic topology 6.2
+title: A manifold is orientable if and only if $w_1$ vanishes
 classification:
   areas: [topology]
   topics: []
