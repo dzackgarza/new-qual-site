@@ -24,57 +24,66 @@ b. If $X$ is an irreducible affine variety and $U\subset X$ is a nonempty open s
 :::
 
 ::: {.solution}
-> Strictly for notational convenience, we treat $\theset{U_i}$ as if it were a countable open cover.
+The dimension of a topological space is the supremum of the lengths $n$ of chains $Z_0 \subsetneq Z_1 \subsetneq \cdots \subsetneq Z_n$ of nonempty closed irreducible subsets.
+Two standard facts are used throughout: the closure of an irreducible subset is irreducible, and a nonempty open subset of an irreducible space is irreducible and dense.
 
-**Part a**:
-First note that if $U \subseteq V$, then $\dim U \leq \dim V$.
-If this were not the case, one could find a chain $\theset{I_j}$ of closed irreducible subsets of $V$ of length $n>\dim U$.
-But then $I'_j \definedas I_j \intersect U$ would again be closed and irreducible, yielding a chain of length $n$ in $U$.
-Thus $\dim X\geq \dim U_i$, and it remains true that $\dim X \geq \sup \dim U_i$, so it suffices to show that $\dim X \leq \sup \dim U_i$.
+::: pf
 
-Set $s \definedas \sup_i \dim U_i$ and $n\definedas \dim X$; we want to show $s\geq n$.
-Let $\theset{I_j}_{j\leq n}$ be a maximal chain of length $n$ of closed irreducible subsets of $X$, so
-\[
-\emptyset \subsetneq I_0 \subsetneq I_1 \subsetneq \cdots \subsetneq I_n \subseteq X
-.\]
+::: {.pf-step #monotone}
+If $U \subseteq V$ carries the subspace topology, then $\dim U \leq \dim V$.
 
-Since $I_0\subset X$ and $\theset{U_i}$ covers $X$, we can find some $U_{0}\in \theset{U_i}$ such that $I_0\intersect U_0$ is nonempty, since otherwise there would be a point in $I_0 \intersect \qty{X\sm \Union_{i\in J} U_i} = \emptyset$.
-We can do this for every $I_j$, so define $A_j \definedas I_j \intersect U_0$.
-
-Each $A_j$ is closed in $U_0$, and remains irreducible, since any decomposition of $A_j$ would lift to a decomposition of $I_0$.
-To see that $A_0 \subsetneq A_1$, i.e. that the inclusions are still proper, note that
-\[
-x\in A_{i+1}\sm A_i \iff x\in \qty{I_{i+1} \intersect U_0} \sm \qty{I_{i} \intersect U_0} = \qty{I_1 \sm I_2}\intersect U_0 = \emptyset
-.\]
-But this exhibits a length $n$ chain in $U_0$, so $\dim U_0 \geq n$.
-Taking suprema,
-\[
-n \leq \dim U_0 \leq \sup_{i\in J} \dim U_i = s
-.\]
-
-**Part b**: the answer is **no**: we can produce a space $X$ with some $\dim X$ and a subset $U$ satisfying $\dim U < \dim X$.
-
-Define a space and a topology by
-\[
-X \definedas \theset{a, b} \qquad \tau \definedas \theset{\emptyset, X, \theset{a}}
-.\]
-Here $\theset{b}$ is the only proper closed subset, since its complement is open, so $X$ must be irreducible.
-We can find a maximal ascending chain of length $1$,
-\[
-\emptyset \subsetneq \theset{b} \subsetneq X
-,\]
-and so $\dim X = 1$.
-However, for $U\definedas \theset{a}$ there is only one possible maximal chain,
-\[
-\emptyset \subsetneq \theset{a} = U
-,\]
-so $\dim U = 0$.
+::: pf-proof
+Let $Z_0 \subsetneq \cdots \subsetneq Z_n$ be a chain of nonempty closed irreducible subsets of $U$, and let $\overline{Z_j}$ be the closure of $Z_j$ in $V$.
+Each $\overline{Z_j}$ is nonempty, closed and irreducible, and $\overline{Z_j} \subseteq \overline{Z_{j+1}}$.
+Since $Z_j$ is closed in $U$, $Z_j = \overline{Z_j} \intersect U$, so $\overline{Z_j} = \overline{Z_{j+1}}$ would give $Z_j = Z_{j+1}$.
+So the closures form a chain of length $n$ in $V$, and $\dim V \geq n$.
 :::
 
-::: {.remark}
-Erratum: part a of the solution has three faulty steps.
+:::
 
-- The monotonicity step starts from a chain in $V$ and intersects it with $U$, which neither keeps the members irreducible nor keeps the inclusions proper. It should start from a chain $Z_0 \subsetneq \cdots \subsetneq Z_n$ of closed irreducible subsets of $U$: their closures $\overline{Z_j}$ in $V$ are closed and irreducible, and they are distinct because $Z_j = \overline{Z_j} \intersect U$.
-- Irreducibility of $A_j = I_j \intersect U_0$ does not come from a decomposition of $I_0$. Once $U_0$ meets $I_0$ it meets every $I_j \supseteq I_0$, and $A_j$ is a nonempty open subset of the irreducible space $I_j$, hence irreducible and dense in $I_j$.
-- The displayed computation of $A_{i+1} \sm A_i$ is garbled: it mixes indices and concludes that the difference is empty, which is the opposite of what is wanted. If $A_i = A_{i+1}$, then $I_{i+1} = \overline{A_{i+1}} = \overline{A_i} \subseteq I_i$ by density, contradicting $I_i \subsetneq I_{i+1}$.
+::: {.pf-step}
+Part a: $\dim X = \sup_{i\in I} \dim U_i$.
+
+::: pf-proof
+By step [](#monotone){.pf-ref}, $\dim U_i \leq \dim X$ for each $i$, so $\sup_i \dim U_i \leq \dim X$.
+
+For the reverse inequality, let $Z_0 \subsetneq \cdots \subsetneq Z_n$ be a chain of nonempty closed irreducible subsets of $X$.
+Choose $p \in Z_0$ and an index $i$ with $p \in U_i$, and put $A_j \definedas Z_j \intersect U_i$.
+Each $A_j$ contains $p$, so it is a nonempty open subset of the irreducible space $Z_j$; hence $A_j$ is irreducible and dense in $Z_j$.
+Each $A_j$ is closed in $U_i$, and $A_0 \subseteq \cdots \subseteq A_n$.
+If $A_j = A_{j+1}$, then by density $Z_{j+1} = \overline{A_{j+1}} = \overline{A_j} = Z_j$, which is false.
+So $A_0 \subsetneq \cdots \subsetneq A_n$ is a chain of length $n$ in $U_i$, and $\sup_i \dim U_i \geq n$.
+Since the chain in $X$ was arbitrary, $\sup_i \dim U_i \geq \dim X$.
+:::
+
+:::
+
+::: {.pf-step}
+Part b: if $X$ is an irreducible affine variety and $U \subseteq X$ is nonempty and open, then $\dim U = \dim X$.
+
+::: pf-proof
+The complement $X \sm U$ is $V(f_1,\ldots,f_r)$ for some $f_1,\ldots,f_r \in A(X)$.
+Since $U$ is nonempty, $X \sm U \neq X$, so some $f \definedas f_l$ is not the zero function.
+Then the principal open set $D(f)$ is nonempty and contained in $U$.
+$D(f)$ is an irreducible affine variety with coordinate ring $A(X)_f$, whose field of fractions equals that of $A(X)$, namely the function field $K(X)$.
+The dimension of an irreducible affine variety is the transcendence degree of its function field over $k$, so $\dim D(f) = \operatorname{trdeg}_k K(X) = \dim X$.
+By step [](#monotone){.pf-ref}, $\dim X = \dim D(f) \leq \dim U \leq \dim X$.
+:::
+
+:::
+
+::: {.pf-step}
+Part b: the equality $\dim U = \dim X$ fails for a general irreducible topological space.
+
+::: pf-proof
+Let $X \definedas \theset{a,b}$ with open sets $\emptyset$, $\theset{a}$, $X$.
+Its closed sets are $\emptyset$, $\theset{b}$, $X$.
+$X$ is irreducible, because its only nonempty proper closed subset is $\theset{b}$ and $\theset{b} \union \theset{b} \neq X$.
+The chain $\theset{b} \subsetneq X$ has length $1$ and no chain is longer, so $\dim X = 1$.
+The nonempty open subset $U \definedas \theset{a}$ is a single point, so $\dim U = 0 \neq \dim X$.
+:::
+
+:::
+
+:::
 :::
