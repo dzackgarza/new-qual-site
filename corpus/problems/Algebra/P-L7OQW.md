@@ -23,40 +23,44 @@ audit:
 
 ::: {.problem}
 Give an example of subgroups
-\[
+$$
 H\trianglelefteq K\trianglelefteq G
-\]
+$$
 with $H$ not normal in $G$.
 :::
 
 ::: {.solution}
-Take
-\[
-G=A_4,
-\qquad
-K=V_4=\{e,(12)(34),(13)(24),(14)(23)\},
-\]
-and
-\[
-H=\langle(12)(34)\rangle.
-\]
+Take $G=A_4$, $K=V_4=\{e,(12)(34),(13)(24),(14)(23)\}$, and $H=\langle(12)(34)\rangle$.
 
-The subgroup $K$ is normal in $A_4$: it consists of the identity together with all three double transpositions, and conjugation preserves cycle type.
+::: pf
 
-The subgroup $H$ has order $2$. Since $K\cong C_2\times C_2$ is abelian, every subgroup of $K$ is normal, so
-\[
-H\trianglelefteq K.
-\]
+::: pf-step
+$K\trianglelefteq G$.
 
-But $H$ is not normal in $A_4$. For example,
-\[
-(123)(12)(34)(123)^{-1}=(23)(14),
-\]
-which is not in $H$.
+::: pf-proof
+$K$ consists of the identity and all three double transpositions in $A_4$, and conjugation preserves cycle type.
+:::
 
-Thus
-\[
-H\trianglelefteq K\trianglelefteq G
-\]
-does not imply $H\trianglelefteq G$.
+:::
+
+::: pf-step
+$H\trianglelefteq K$.
+
+::: pf-proof
+$K\cong C_2\times C_2$ is abelian, so every subgroup of $K$ is normal in $K$.
+:::
+
+:::
+
+::: pf-step
+$H$ is not normal in $G$.
+
+::: pf-proof
+$(123)(12)(34)(123)^{-1}=(14)(23)\notin H$.
+:::
+
+:::
+
+:::
+
 :::
