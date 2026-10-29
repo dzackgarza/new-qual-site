@@ -22,7 +22,7 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, load_citations, from_ast, load_front_matter, reject_extraction_residue, unread_math
+from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, load_citations, unlist_step_claims, from_ast, load_front_matter, reject_extraction_residue, unread_math
 from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
@@ -311,7 +311,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             if padded:
                 errors.append(padded)
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
-            document = from_ast(result.output).walk(drop_path_captions).walk(anchor_block_markers).walk(unpack_cross_references)
+            document = from_ast(result.output).walk(drop_path_captions).walk(unlist_step_claims).walk(anchor_block_markers).walk(unpack_cross_references)
             for key in CITEPROC_METADATA:
                 document.metadata.content.pop(key, None)
             order = _order(metadata, path)

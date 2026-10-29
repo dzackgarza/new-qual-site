@@ -42,7 +42,7 @@ An integer is odd exactly when it has this form.
 :::
 
 ::: pf-step
-Their sum is $2(a+b+1)$.
+(a) Their sum is $2(a+b+1)$.
 
 ::: pf-proof
 Add the two forms from step [](#forms){.pf-ref}.
@@ -70,7 +70,8 @@ def site(tmp_path_factory: pytest.TempPathFactory) -> Path:
 def test_steps_are_numbered_and_references_resolved_by_the_filter(site: Path) -> None:
     page = (site / "build" / "quarto" / "_site" / "tag" / "P-LAMPORT.html").read_text()
     assert '<span class="pf-number">1.</span>' in page
-    assert '<span class="pf-number">2.</span>' in page
+    # A claim opening with a part label stays one paragraph beside its number.
+    assert '<span class="pf-number">2.</span> (a) Their sum is' in page
     assert '<span class="pf-number">3. QED</span>' in page
     assert 'id="forms"' in page
     assert 'class="pf-ref">1</a>' in page
@@ -153,6 +154,6 @@ def test_two_transcluded_cards_may_reuse_a_step_label(tmp_path_factory: pytest.T
 
 def test_a_malformed_proof_fails_the_check(tmp_path: Path) -> None:
     """Two steps with one label cannot both be the target of a reference."""
-    card = CARD.replace("::: pf-step\nTheir sum", "::: {.pf-step #forms}\nTheir sum", 1)
+    card = CARD.replace("::: pf-step\n(a) Their sum", "::: {.pf-step #forms}\n(a) Their sum", 1)
     assert card != CARD
     assert diagnostic_codes(fixture_repo(tmp_path, {"P-LAMPORT.md": card})) == [DiagnosticCode.LAMPORT_PROOF_INVALID]

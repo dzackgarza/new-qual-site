@@ -782,6 +782,59 @@ def _figure_targets(element: pf.Figure) -> list[str]:
     return urls
 
 
+_ROMAN = ((1000, "m"), (900, "cm"), (500, "d"), (400, "cd"), (100, "c"), (90, "xc"), (50, "l"), (40, "xl"), (10, "x"), (9, "ix"), (5, "v"), (4, "iv"), (1, "i"))
+
+
+def _list_marker(number: int, style: str, delimiter: str) -> str:
+    """The marker pandoc read as a list start, spelled back as the author wrote it.
+
+    Follows pandoc's own marker writer (`orderedListMarkers` in
+    Text.Pandoc.Shared, with `toRomanNumeral`'s subtractive notation).
+    """
+    match style:
+        case "LowerAlpha" | "UpperAlpha":
+            label = chr(ord("a") + number - 1)
+        case "LowerRoman" | "UpperRoman":
+            label = ""
+            for value, numeral in _ROMAN:
+                count, number = divmod(number, value)
+                label += numeral * count
+        case _:
+            label = str(number)
+    if style.startswith("Upper"):
+        label = label.upper()
+    match delimiter:
+        case "TwoParens":
+            return f"({label})"
+        case "OneParen":
+            return f"{label})"
+        case _:
+            return f"{label}."
+
+
+def unlist_step_claims(element: pf.Element, doc: pf.Doc) -> pf.Element:
+    """Keep a proof step's claim one paragraph when it opens with a part label.
+
+    STYLE-05 labels parts "(a)", "(b)", and a step proving part (a) opens its
+    claim with that label. Pandoc's `fancy_lists` reads such a paragraph as a
+    one-item ordered list, so the step's claim became a list and the Lamport
+    filter numbered an empty paragraph above it. The list is turned back into
+    the paragraph that was written.
+    """
+    del doc
+    if not isinstance(element, pf.Div) or "pf-step" not in element.classes or not element.content:
+        return element
+    first = element.content[0]
+    if not isinstance(first, pf.OrderedList) or len(first.content) != 1:
+        return element
+    item = first.content[0].content
+    if len(item) != 1 or not isinstance(item[0], pf.Para | pf.Plain):
+        return element
+    marker = _list_marker(first.start, first.style, first.delimiter)
+    element.content[0] = pf.Para(pf.Str(marker), pf.Space(), *item[0].content)
+    return element
+
+
 def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     """Take the caption off a figure captioned with its own path.
 
@@ -987,7 +1040,7 @@ def drop_bibliography(element: pf.Element, document: pf.Doc) -> list[pf.Block] |
 
 def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
     try:
-        document = from_ast(source).walk(drop_path_captions).walk(drop_bibliography)
+        document = from_ast(source).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims)
         return NormalizedAst(
             ast=to_json(document),
             sections=extract_sections(document),

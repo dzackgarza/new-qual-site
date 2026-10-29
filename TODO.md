@@ -72,7 +72,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-tikzcd`**. **Needs:** none. `tikzcd` blocks vanish on transclusion (D-KRKV7,
     T-SKJB2, E-B4ZSQ). **Acceptance:** every card diagram renders wherever the card appears.
   - **`ad-fancy-lists`**. **Needs:** none. A proof step opening with `(a)` splits into a
-    bare number and a list. **Acceptance:** such steps render as one numbered claim.
+    bare number and a list. **Acceptance:** such steps render as one numbered claim. **Closed.**
   - **`ad-smart-titles`**. **Needs:** none. `--` and `$…$` reach titles, prompts, link
     text and `<title>`. **Acceptance:** dashes typeset; tab titles carry no TeX.
   - **`ad-bare-id-links`**. **Needs:** none. 148 wikilinks display a bare card id.
