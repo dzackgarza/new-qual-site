@@ -16,13 +16,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed the second line as l^2(Z) ⊂ l^1(Z) ⊂ l^∞(Z), which is false since (1/|n|) is in l^2 but not l^1; the statement now reads l^1(Z) ⊂ l^2(Z) ⊂ l^∞(Z).'
 ---
 
 ::: {.exercise}
 - Prove the following inclusions of $L^p$ spaces for $m(X) < \infty$:
 \[
 L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
-\ell^2(\ZZ) &\subset \ell^1(\ZZ) \subset \ell^\infty(\ZZ)
+\ell^1(\ZZ) &\subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)
 .\]
 :::
 
@@ -111,13 +115,9 @@ Steps [](#s2-1){.pf-ref} through [](#s2-3){.pf-ref}.
 :::
 
 ::: pf-qed
-Step [](#s1){.pf-ref} proves the first line of the display. Step [](#s2){.pf-ref} proves the second line with $\ell^1$ and $\ell^2$ exchanged; by step [](#s2-3){.pf-ref}, the inclusion $\ell^2(\ZZ) \subset \ell^1(\ZZ)$ printed in the problem is false.
+Step [](#s1){.pf-ref} proves the first line of the display and step [](#s2){.pf-ref} the second.
 :::
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the second line of the display should read $\ell^1(\ZZ) \subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)$. On a finite measure space the $L^p$ spaces decrease as $p$ increases, and for counting measure on $\ZZ$ the $\ell^p$ spaces increase as $p$ increases.
 :::
