@@ -22,28 +22,40 @@ audit:
 ---
 
 ::: {.problem}
-Give an example of a cubic polynomial over $\mathbb{Q}$ with Galois group $S_3$, and prove that its Galois group is indeed $S_3$.
+Give an example of a cubic polynomial over $\QQ$ with Galois group $S_3$, and prove that its Galois group is indeed $S_3$.
 :::
 
 ::: {.solution}
-Take
-\[
-f(x)=x^3-2.
-\]
-It is irreducible over $\mathbb Q$ by Eisenstein at $2$. Its discriminant is
-\[
-\Delta(f)=-108,
-\]
-which is not a square in $\mathbb Q$.
+Let $f(x)\coloneqq x^3-2$.
 
-For an irreducible cubic, the Galois group is a transitive subgroup of $S_3$, hence either $A_3$ or $S_3$. It is contained in $A_3$ exactly when the discriminant is a square. Therefore
-\[
-\operatorname{Gal}(f/\mathbb Q)\cong S_3.
-\]
+::: pf
 
-Equivalently, the splitting field is
-\[
-\mathbb Q(\sqrt[3]2,\zeta_3).
-\]
-The real cubic field $\mathbb Q(\sqrt[3]2)$ has degree $3$, while adjoining the nonreal element $\zeta_3$ gives degree $2$, so the splitting field has degree $6$.
+::: {.pf-step #irreducible}
+$f$ is irreducible over $\QQ$.
+
+::: pf-proof
+Eisenstein's criterion applies at the prime $2$.
+:::
+
+:::
+
+::: {.pf-step #disc}
+The discriminant $\Delta(f)=-108$ is not a square in $\QQ$.
+
+::: pf-proof
+For $x^3+px+q$ the discriminant is $-4p^3-27q^2$; with $p=0$, $q=-2$ this is $-108<0$.
+:::
+
+:::
+
+::: pf-step
+$\Gal(f/\QQ)\cong\boxed{S_3}$.
+
+::: pf-proof
+By step [](#irreducible){.pf-ref}, the Galois group acts transitively on the three roots, so it is $A_3$ or $S_3$. It lies in $A_3$ exactly when $\Delta(f)$ is a square in $\QQ$, which step [](#disc){.pf-ref} excludes. As a check, the splitting field $\QQ(\sqrt[3]2,\zeta_3)$ has degree $6$: $[\QQ(\sqrt[3]2):\QQ]=3$, and this real field does not contain the nonreal $\zeta_3$, which has degree $2$ over it.
+:::
+
+:::
+
+:::
 :::
