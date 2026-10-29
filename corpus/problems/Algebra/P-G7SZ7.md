@@ -19,12 +19,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\pi: \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z}$ be the canonical quotient homomorphism of $\mathbb{Z}$-modules.
+Let $\pi: \ZZ \to \ZZ/2\ZZ$ be the canonical quotient homomorphism of $\ZZ$-modules.
 Show that the induced homomorphism on Hom groups:
-\[
-\pi_*: \operatorname{Hom}_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, \mathbb{Z}) \to \operatorname{Hom}_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, \mathbb{Z}/2\mathbb{Z}), \quad f \mapsto \pi \circ f
-\]
-is not surjective, and conclude that the functor $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, -)$ is not right exact.
+$$
+\pi_*: \Hom_{\ZZ}(\ZZ/2\ZZ, \ZZ) \to \Hom_{\ZZ}(\ZZ/2\ZZ, \ZZ/2\ZZ), \quad f \mapsto \pi \circ f
+$$
+is not surjective, and conclude that the functor $\Hom_{\ZZ}(\ZZ/2\ZZ, -)$ is not right exact.
 :::
 
 ::: {.solution}
@@ -50,7 +50,7 @@ $\Hom_{\ZZ}(\ZZ/2\ZZ,\ZZ/2\ZZ)\neq0$.
 
 ::: pf-proof
 
-It contains $\operatorname{id}_{\ZZ/2\ZZ}$, which sends $[1]$ to $[1]\neq[0]$.
+It contains $\id_{\ZZ/2\ZZ}$, which sends $[1]$ to $[1]\neq[0]$.
 
 :::
 
