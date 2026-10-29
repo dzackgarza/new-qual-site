@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $I \normal R$ is prime iff $R/I$ is an integral domain.
+Let $R$ be a commutative ring with identity. Show that an ideal $I \normal R$ is prime iff $R/I$ is an integral domain.
 :::
 
 ::: {.solution}
