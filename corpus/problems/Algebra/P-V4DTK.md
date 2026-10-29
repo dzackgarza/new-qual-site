@@ -25,11 +25,21 @@ Describe the irreducible representations of the compact Lie groups $\SO(2)$ and 
 :::
 
 ::: {.solution}
-For $\SO(2)\cong S^1$, every irreducible complex representation is one-dimensional because the group is abelian. Writing $R_\theta$ for rotation by $\theta$, they are
-$$
-\chi_n(R_\theta)=e^{in\theta},\qquad n\in\ZZ.
-$$
-Over $\RR$, the irreducibles are the trivial one-dimensional representation and, for each $m\ge1$, the two-dimensional rotation representation
+Write $R_\theta$ for rotation by $\theta$ in $\SO(2)$.
+
+::: pf
+
+::: pf-step
+The irreducible complex representations of $\SO(2)$ are the characters $\chi_n(R_\theta)=e^{in\theta}$, $n\in\ZZ$.
+
+::: pf-proof
+The group $\SO(2)\cong S^1$ is abelian, so every irreducible complex representation is one-dimensional, that is, a continuous homomorphism $S^1\to\CC^\times$; these are the $\chi_n$, $n\in\ZZ$.
+:::
+
+:::
+
+::: pf-step
+The irreducible real representations of $\SO(2)$ are the trivial one-dimensional representation and, for each $m\ge1$, the two-dimensional representation
 $$
 R_\theta\longmapsto
 \begin{pmatrix}
@@ -38,17 +48,33 @@ R_\theta\longmapsto
 \end{pmatrix}.
 $$
 
-For $\SO(3)$, use the double cover
-$$
-\SU(2)\to\SO(3).
-$$
-The irreducible complex representations of $\SU(2)$ are
-$$
-\Sym^m(\CC^2),\qquad m\ge0,
-$$
-of dimension $m+1$. The central element $-I$ acts by $(-1)^m$, so the representation descends to $\SO(3)$ exactly when $m=2\ell$ is even. Hence the irreducible complex representations of $\SO(3)$ are indexed by $\ell\ge0$ and have dimensions
-$$
-2\ell+1.
-$$
-They may be realized as the degree-$\ell$ spherical harmonics. These models are defined over $\RR$, giving the irreducible real representations of the same dimensions.
+::: pf-proof
+For $m\ge1$ the complex characters $\chi_m$ and $\chi_{-m}$ are complex conjugates, and their sum is the complexification of the displayed real representation, which has no real invariant line.
+The character $\chi_0$ is real and gives the trivial representation.
+:::
+
+:::
+
+::: pf-step
+The irreducible complex representations of $\SO(3)$ are indexed by $\ell\ge0$ and have dimensions $2\ell+1$.
+
+::: pf-proof
+Use the double cover $\SU(2)\to\SO(3)$ with kernel $\{\pm I\}$.
+The irreducible complex representations of $\SU(2)$ are $\Sym^m(\CC^2)$, $m\ge0$, of dimension $m+1$.
+The central element $-I$ acts by $(-1)^m$, so the representation descends to $\SO(3)$ exactly when $m=2\ell$ is even.
+:::
+
+:::
+
+::: pf-step
+The irreducible real representations of $\SO(3)$ also have dimensions $2\ell+1$, $\ell\ge0$.
+
+::: pf-proof
+The complex representation of dimension $2\ell+1$ is realized as the degree-$\ell$ spherical harmonics, which are defined over $\RR$.
+These real models give the irreducible real representations of the same dimensions.
+:::
+
+:::
+
+:::
 :::
