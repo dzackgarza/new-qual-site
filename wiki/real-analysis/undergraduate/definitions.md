@@ -43,8 +43,6 @@ If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ conver
 
 [[D-2MJRE]]
 
-[[FF-HRUA3]]
-
 [[FF-YXTQY]]
 
 [[D-5NODS]]
