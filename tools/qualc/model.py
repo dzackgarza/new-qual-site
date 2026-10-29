@@ -33,6 +33,7 @@ from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LAMPORT_CLASSES
 from .pandoc_batch import (
     PARALLEL_WORKERS,
+    Citations,
     PandocBatchError,
     PandocFailure,
     PandocServer,
@@ -959,9 +960,34 @@ def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     return found
 
 
+# The cards and the wiki cite one bibliography, kept with the other vocabularies.
+VOCABULARIES = Path(__file__).resolve().parents[2] / "vocabularies"
+
+
+def load_citations(root: Path) -> Citations:
+    """The BibTeX the corpus cites, and the style its references are set in."""
+    return Citations(
+        bibliography=(root / "references.bib").read_text(),
+        style=(root / "citation-style.csl").read_text(),
+    )
+
+
+def drop_bibliography(element: pf.Element, document: pf.Doc) -> list[pf.Block] | None:
+    """Remove the reference list citeproc appends to a card.
+
+    A card is a component: wiki pages and guides transclude it, and a reference
+    list per card would repeat inside every box. The citations themselves stay,
+    resolved in place to their rendered labels.
+    """
+    del document
+    if isinstance(element, pf.Div) and element.identifier == "refs":
+        return []
+    return None
+
+
 def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
     try:
-        document = from_ast(source).walk(drop_path_captions)
+        document = from_ast(source).walk(drop_path_captions).walk(drop_bibliography)
         return NormalizedAst(
             ast=to_json(document),
             sections=extract_sections(document),
@@ -1003,10 +1029,11 @@ def parse_cards_with(
             )
 
     bodies = [body for _, _, body in prepared]
+    citations = load_citations(VOCABULARIES)
     results = (
-        read_markdown_parallel(bodies, MARKDOWN)
+        read_markdown_parallel(bodies, MARKDOWN, citations)
         if len(bodies) >= 1_000
-        else pandoc.read_markdown(bodies, MARKDOWN)
+        else pandoc.read_markdown(bodies, MARKDOWN, citations)
     )
     processable: list[tuple[Path, Card, str]] = []
     for (path, card, _), result in zip(prepared, results, strict=True):

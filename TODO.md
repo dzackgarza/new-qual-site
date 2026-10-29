@@ -68,7 +68,7 @@ mathematical correction under its own node, not under copy policy.
 
   Renderer and site nodes (owner `tools/qualc`, `site/`):
   - **`ad-citeproc`**. **Needs:** none. Citations in transcluded card bodies render as raw
-    `[@key]`. **Acceptance:** no deployed page shows a literal `[@`.
+    `[@key]`. **Acceptance:** no deployed page shows a literal `[@`. **Closed.**
   - **`ad-tikzcd`**. **Needs:** none. `tikzcd` blocks vanish on transclusion (D-KRKV7,
     T-SKJB2, E-B4ZSQ). **Acceptance:** every card diagram renders wherever the card appears.
   - **`ad-fancy-lists`**. **Needs:** none. A proof step opening with `(a)` splits into a

@@ -13,12 +13,12 @@ import panflute as pf
 from . import emit, index
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LamportError, apply_lamport
-from .model import ParsedCard, discover, parse_cards_with, to_json
+from .model import ParsedCard, discover, load_citations, parse_cards_with, to_json
 from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
 from .tex import unrenderable_tex
-from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_sources, validate_wiki_tree
+from .wiki import WikiPage, link_citations, parse_pages, resolve_links, validate_wiki_sources, validate_wiki_tree
 
 
 def load(

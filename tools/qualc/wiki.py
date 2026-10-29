@@ -22,20 +22,13 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, from_ast, load_front_matter, reject_extraction_residue, unread_math
+from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, load_citations, from_ast, load_front_matter, reject_extraction_residue, unread_math
 from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
 
 WIKI_BATCH_SIZE = 8
 
-
-def load_citations(root: Path) -> Citations:
-    """The BibTeX the authored wiki cites, and the style its references are set in."""
-    return Citations(
-        bibliography=(root / "references.bib").read_text(),
-        style=(root / "citation-style.csl").read_text(),
-    )
 
 
 # citeproc reports a key no entry defines as a warning and renders it as

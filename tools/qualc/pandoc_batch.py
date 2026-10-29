@@ -64,9 +64,10 @@ PandocResult = PandocOutput | PandocFailure
 def _read_markdown_partition(
     texts: list[str],
     markdown_format: str,
+    citations: Citations | None,
 ) -> list[PandocResult]:
     with PandocServer() as pandoc:
-        return pandoc.read_markdown(texts, markdown_format)
+        return pandoc.read_markdown(texts, markdown_format, citations)
 
 
 def _write_markdown_partition(
@@ -98,6 +99,7 @@ def _parallel_results(
 def read_markdown_parallel(
     texts: list[str],
     markdown_format: str,
+    citations: Citations | None = None,
 ) -> list[PandocResult]:
     if not texts:
         return []
@@ -109,6 +111,7 @@ def read_markdown_parallel(
                 _read_markdown_partition,
                 partitions,
                 [markdown_format] * len(partitions),
+                [citations] * len(partitions),
             )
         )
     return _parallel_results(partitions, results, workers)
