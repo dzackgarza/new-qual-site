@@ -22,40 +22,44 @@ audit:
 ---
 
 ::: {.problem}
-Can it happen that a proper subfield of $\mathbb{C}$ is isomorphic to $\mathbb{C}$?
+Can it happen that a proper subfield of $\CC$ is isomorphic to $\CC$?
 How?
 :::
 
 ::: {.solution}
-Yes.
+Choose a transcendence basis $B$ of $\CC/\QQ$, so $\abs{B}=\trdeg_{\QQ}\CC=2^{\aleph_0}$. Fix $t\in B$, put $B_0=B\setminus\{t\}$, and let $K$ be the algebraic closure of $\QQ(B_0)$ in $\CC$, that is, the set of elements of $\CC$ algebraic over $\QQ(B_0)$.
 
-Choose a transcendence basis $B$ of $\mathbb C/\mathbb Q$. Then
-\[
-|B|=\operatorname{trdeg}_{\mathbb Q}\mathbb C=2^{\aleph_0}.
-\]
-Pick $t\in B$ and put
-\[
-B_0=B\setminus\{t\}.
-\]
-Since $B$ is infinite,
-\[
-|B_0|=|B|.
-\]
-Let $K$ be the algebraic closure of $\mathbb Q(B_0)$ inside $\mathbb C$, i.e. the set of elements of $\mathbb C$ algebraic over $\mathbb Q(B_0)$.
+::: pf
 
-The field $K$ is proper because $t$ is transcendental over $\mathbb Q(B_0)$, so $t\notin K$. On the other hand, $K$ is algebraically closed of characteristic $0$ and
-\[
-\operatorname{trdeg}_{\mathbb Q}K=|B_0|=|B|=\operatorname{trdeg}_{\mathbb Q}\mathbb C.
-\]
-By the classification of algebraically closed fields by characteristic and transcendence degree,
-\[
-K\cong\mathbb C.
-\]
-Thus $\mathbb C$ has a proper subfield isomorphic to itself.
+::: {.pf-step #proper}
+$K$ is a proper subfield of $\CC$.
 
-Equivalently, a bijection $B\to B_0$ extends to an isomorphism
-\[
-\mathbb C\xrightarrow{\sim}K\subsetneq\mathbb C,
-\]
-giving an injective but non-surjective field endomorphism of $\mathbb C$.
+::: pf-proof
+The element $t$ is transcendental over $\QQ(B_0)$ because $B$ is algebraically independent, so $t\notin K$.
+:::
+
+:::
+
+::: {.pf-step #closed}
+$K$ is algebraically closed of characteristic $0$ with $\trdeg_{\QQ}K=\trdeg_{\QQ}\CC$.
+
+::: pf-proof
+A root in $\CC$ of a polynomial over $K$ is algebraic over $K$, hence over $\QQ(B_0)$, so it lies in $K$; since $\CC$ is algebraically closed, $K$ is algebraically closed.
+The set $B_0$ is a transcendence basis of $K/\QQ$, and $\abs{B_0}=\abs{B}$ because $B$ is infinite.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{Yes}}$: $K\cong\CC$, so $K$ is a proper subfield of $\CC$ isomorphic to $\CC$.
+
+::: pf-proof
+Algebraically closed fields of the same characteristic and the same transcendence degree over the prime field are isomorphic: a bijection $B\to B_0$ extends to an isomorphism $\QQ(B)\to\QQ(B_0)$ and then to an isomorphism of their algebraic closures $\CC\to K$.
+By steps [](#proper){.pf-ref} and [](#closed){.pf-ref}, this gives an injective but non-surjective field endomorphism of $\CC$.
+:::
+
+:::
+
+:::
+
 :::
