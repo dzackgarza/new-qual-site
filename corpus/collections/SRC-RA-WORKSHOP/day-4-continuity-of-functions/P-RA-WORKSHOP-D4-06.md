@@ -25,27 +25,21 @@ Prove your answer.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-The function $\ln:(0,1]\to\mathbb R$ is not uniformly continuous.
+The function $\ln:(0,1]\to\RR$ is not uniformly continuous.
 
 ::: pf-proof
 
 For every integer $n\geq1$, set $x_n=e^{-n}$ and $y_n=e^{-(n+1)}$. Both points belong to $(0,1]$, and
-\[
-|x_n-y_n|=(1-e^{-1})e^{-n}\longrightarrow0,
+$$
+\abs{x_n-y_n}=(1-e^{-1})e^{-n}\longrightarrow0,
 \qquad
-|\ln x_n-\ln y_n|=1.
-\]
-Suppose that $\ln$ were uniformly continuous. Applying its definition with $\varepsilon=1/2$ would give $\delta>0$ such that $|x-y|<\delta$ implies $|\ln x-\ln y|<1/2$. Choosing $n$ sufficiently large that $|x_n-y_n|<\delta$ contradicts the displayed equality.
+\abs{\ln x_n-\ln y_n}=1.
+$$
+Suppose that $\ln$ were uniformly continuous. Applying its definition with $\varepsilon=1/2$ would give $\delta>0$ such that $\abs{x-y}<\delta$ implies $\abs{\ln x-\ln y}<1/2$. Choosing $n$ sufficiently large that $\abs{x_n-y_n}<\delta$ contradicts the displayed equality.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} supplies the required counterexample to uniform continuity.
 
 :::
 
@@ -54,5 +48,5 @@ Step [](#s1){.pf-ref} supplies the required counterexample to uniform continuity
 :::
 
 ::: {.remark}
-Another example is $g:(0,\pi]\to\mathbb R$, $g(x)=\sin(1/x)$. For $n\geq1$, take $u_n=(\pi/2+2\pi n)^{-1}$ and $v_n=(3\pi/2+2\pi n)^{-1}$. Both lie in $(0,\pi]$, and $|u_n-v_n|\to0$, whereas $g(u_n)=1$ and $g(v_n)=-1$. Hence $g$ is not uniformly continuous.
+Another example is $g:(0,\pi]\to\RR$, $g(x)=\sin(1/x)$. For $n\geq1$, take $u_n=(\pi/2+2\pi n)^{-1}$ and $v_n=(3\pi/2+2\pi n)^{-1}$. Both lie in $(0,\pi]$, and $\abs{u_n-v_n}\to0$, whereas $g(u_n)=1$ and $g(v_n)=-1$. Hence $g$ is not uniformly continuous.
 :::
