@@ -164,12 +164,6 @@ finitely many vectors and satisfies the displayed dimension bound.
 
 :::
 
-::: pf-qed
-
-Step [](#s5){.pf-ref} is the required finite-dimensionality statement.
-
-:::
-
 :::
 
 :::
