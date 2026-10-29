@@ -17,18 +17,24 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source did not define the approximate identity, put no hypothesis on f in the first part, and read "this converges is almost everywhere" and "Show that is f". The statement now defines phi_t from phi in L^1 with integral 1, assumes f in L^1(R^n) in (a), and corrects the two typos.'
 ---
 
 ::: {.problem}
-- Show that if $\phi$ is an approximate identity, then $$\norm{f\ast \phi_t - f}_1 \converges{t\to 0}\to 0.$$
+Let $\phi \in L^1(\RR^n)$ with $\int \phi = 1$, and let $\phi_t(x) = t^{-n}\phi(x/t)$ be the corresponding approximate identity.
 
-  - Show that if additionally $\abs{\phi(x)} \leq c(1 + \abs{x})^{-n-\eps}$ for some $c,\eps>0$, then this converges is almost everywhere.
+(a) Show that if $f \in L^1(\RR^n)$, then $$\norm{f\ast \phi_t - f}_1 \converges{t\to 0}\to 0.$$
 
-- Show that is $f$ is bounded and uniformly continuous and $\phi_t$ is an approximation to the identity, then $f\ast \phi_t$ uniformly converges to $f$.
+(b) Show that if additionally $\abs{\phi(x)} \leq c(1 + \abs{x})^{-n-\eps}$ for some $c,\eps>0$, then this convergence is also almost everywhere.
+
+(c) Show that if $f$ is bounded and uniformly continuous, then $f\ast \phi_t$ uniformly converges to $f$.
 :::
 
 ::: {.solution}
-Let $\phi \in L^1(\RR^n)$ with $\int\phi = 1$ and $\phi_t(x) = t^{-n}\phi(x/t)$. Then
+For all three parts,
 $$
 f\ast\phi_t(x) - f(x) = \int\phi(y)\big(f(x - ty) - f(x)\big)\,dy
 $$
