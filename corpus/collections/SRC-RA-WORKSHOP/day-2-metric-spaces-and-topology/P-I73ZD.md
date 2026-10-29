@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define
-$d_{M \times N} \colon (M \times N) \times (M \times N) \to \mathbb{R}$
+$d_{M \times N} \colon (M \times N) \times (M \times N) \to \RR$
 by
-$$d_{M \times N}((x_1, y_1), (x_2, y_2)) := d_M(x_1, x_2) + d_N(y_1, y_2).$$
+$$d_{M \times N}((x_1, y_1), (x_2, y_2)) \coloneqq d_M(x_1, x_2) + d_N(y_1, y_2).$$
 
 Prove that $(M \times N, d_{M \times N})$ is a metric space.
 
@@ -86,13 +86,9 @@ $d_M(x_1,x_2)\leq d_M(x_1,x_3)+d_M(x_3,x_2)$ and that
 $d_N(y_1,y_2)\leq d_N(y_1,y_3)+d_N(y_3,y_2).$ Therefore,
 $$\begin{aligned}
 d_{M \times N}((x_1,y_1),(x_2,y_2))&=d_M(x_1,x_2)+d_N(y_1,y_2)\\
-d_M(x_1,x_2)+d_N(y_1,y_2) &\leq d_M(x_1,x_3)+d_M(x_3,x_2)+d_N(y_1,y_3)+d_N(y_3,y_2)\\
-d_M(x_1,x_3)+d_M(x_3,x_2)+d_N(y_1,y_3)+d_N(y_3,y_2) &=d_M(x_1,x_3)+d_N(y_1,y_3)+d_M(x_3,x_2)+d_N(y_3,y_2)\\
-d_M(x_1,x_3)+d_N(y_1,y_3)+d_M(x_3,x_2)+d_N(y_3,y_2)&=d_M((x_1,y_1),(x_3,y_3))+d_M((x_3,y_3),(x_2,y_2)). 
+&\leq d_M(x_1,x_3)+d_M(x_3,x_2)+d_N(y_1,y_3)+d_N(y_3,y_2)\\
+&=d_{M \times N}((x_1,y_1),(x_3,y_3))+d_{M \times N}((x_3,y_3),(x_2,y_2)).
 \end{aligned}$$
-
-Hence
-$d_{M \times N}((x_1,y_1),(x_2,y_2))\leq d_M((x_1,y_1),(x_3,y_3))+d_M((x_3,y_3),(x_2,y_2)).$
 
 Therefore $d_{M \times N}$ is a metric on $M \times N$ and
 $(M \times N, d_{M\times N})$ is a metric space. ◻
@@ -112,17 +108,14 @@ Thus $\{s_{n_{k_j}}\}$ is a subsequence of $\{s_{n_k}\}.$ And
 since $\{s_{n_k}\}$ converges to $s_0$, then any subsequence
 also converges to $s_0.$
 
-Let $\epsilon >0$ be given. Then for $\epsilon/2$ there exists
-$N_1, N_2\in \mathbb{N}$ such that for all
-$n_{k_j}\geq N_1, d_M(s_{n_{k_j}},s_0)<\epsilon/2$, and for all
-$n_{k_j}\geq N_2, d_N(t_{n_{k_j}},t_0)<\epsilon/2$. Choose
-$N=\text{Max}(\{N_1,N_2\}).$
+Let $\varepsilon >0$ be given. Then for $\varepsilon/2$ there exist
+$N_1, N_2\in \NN$ such that for all
+$j\geq N_1$, $d_M(s_{n_{k_j}},s_0)<\varepsilon/2$, and for all
+$j\geq N_2$, $d_N(t_{n_{k_j}},t_0)<\varepsilon/2$. Choose
+$N=\max\{N_1,N_2\}$.
 
-Then
-$d_{M \times N}((s_{n_{k_j}},t_{n_{k_j}}),(s_0,t_0))=d_M(s_{n_{k_j}},s_0)+d_N(t_{n_{k_j}},t_0)<\epsilon/2 + \epsilon/2 = \epsilon.$
-
-Therefore
-$d_{M \times N}((s_{n_{k_j}},t_{n_{k_j}}),(s_0,t_0))< \epsilon.$
+Then for $j\geq N$,
+$d_{M \times N}((s_{n_{k_j}},t_{n_{k_j}}),(s_0,t_0))=d_M(s_{n_{k_j}},s_0)+d_N(t_{n_{k_j}},t_0)<\varepsilon/2 + \varepsilon/2 = \varepsilon.$
 
 Hence $\{(s_{n_{k_j}},t_{n_{k_j}})$ converges to $(s_0,t_0).$
 Therefore $S \times T$ is sequentially compact and $S \times T$
@@ -161,7 +154,7 @@ $d_{M\times N}(p_1,p_3) = d_M(x_1,x_3) + d_N(y_1,y_3) \le (d_M(x_1,x_2) + d_M(x_
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} are the metric axioms.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} verify positivity, symmetry, and the triangle inequality for $d_{M\times N}$, so $(M\times N, d_{M\times N})$ is a metric space.
 :::
 
 :::
@@ -210,7 +203,7 @@ $d_{M\times N}((s_{k_{j_l}},t_{k_{j_l}}),(s,t)) = d_M(s_{k_{j_l}}, s) + d_N(t_{k
 $S \times T$ is compact.
 
 ::: pf-proof
-Step [](#s5){.pf-ref} is sequential compactness, equivalent to compactness in metric spaces. (Alternatively: $S \times T$ is closed and bounded in the product of complete spaces, or use the open-cover/finite-subcover argument.)
+Step [](#s5){.pf-ref} shows that $S \times T$ is sequentially compact, and in a metric space sequential compactness is equivalent to compactness.
 :::
 
 :::
