@@ -19,7 +19,5 @@ A \dfn{universal cover} of $X$ is a [[D-ANO2D|covering space]] $p\colon \tilde X
 :::
 
 ::: {.remark}
-Let $X$ be path-connected and locally path-connected.
-Then $X$ has a universal cover if and only if $X$ is [[D-EPQ54|semilocally simply connected]] [@Hat02], and a universal cover is unique up to isomorphism of covering spaces [@Hat02].
-A universal cover covers every path-connected covering space of $X$ [@Hat02], and its [[D-4VGAW|deck transformation group]] is isomorphic to $\pi_1(X)$ [@Hat02].
+[[PR-UBJ6P|The existence and uniqueness theorem]] says when a universal cover exists, that it is unique, and that its deck group is $\pi_1(X)$.
 :::

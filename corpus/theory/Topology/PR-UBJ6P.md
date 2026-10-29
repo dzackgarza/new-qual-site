@@ -16,7 +16,7 @@ review: draft
 
 ::: {.proposition}
 Let $X$ be path-connected, locally path-connected and [[D-EPQ54|semilocally simply connected]].
-Then $X$ has a [[D-BX3WD|universal cover]] $p\colon\hat X \to X$ [@Hat02].
+Then $X$ has a [[D-BX3WD|universal cover]] $p\colon\hat X \to X$ [@Hat02]; conversely, a path-connected, locally path-connected space with a universal cover is semilocally simply connected [@Hat02].
 If $q\colon C\to X$ is a covering map with $C$ path-connected, then there is a covering map $\tilde p\colon \hat{X} \to C$ with $q\circ\tilde p = p$ [@Hat02]:
 
 \begin{tikzcd}
