@@ -60,5 +60,5 @@ For $X = \PP^n$ this is the symmetry already visible in the twists, with $\omega
 
 Properness cannot be dropped at all: on $\AA^n$ the top cohomology that would receive the pairing is zero.
 
-Two consequences worth saying immediately: $h^i(\mcl) = h^{n-i}(\omega \tensor \dualof{\mcl})$ and $\chi(\mcl) = (-1)^n \chi(\omega \tensor \dualof{\mcl})$, and taking $\mcl = \OO$ gives $h^n(\OO_X) = h^0(\omega_X) = p_g$.
+Consequently $h^i(\mcl) = h^{n-i}(\omega \tensor \dualof{\mcl})$ and $\chi(\mcl) = (-1)^n \chi(\omega \tensor \dualof{\mcl})$, and taking $\mcl = \OO$ gives $h^n(\OO_X) = h^0(\omega_X) = p_g$.
 :::
