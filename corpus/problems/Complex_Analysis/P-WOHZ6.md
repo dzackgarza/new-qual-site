@@ -21,6 +21,10 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source asks to prove uniform convergence on the half-plane Im z < ln 2, which is false, since the series diverges where Im z <= -ln 2. Part (a) asks whether it converges uniformly there; an earlier hedge inviting the reader to supply a domain was removed.'
 ---
 
 ::: {.problem}
@@ -29,7 +33,7 @@ $$
 \sum_{n=1}^\infty \frac{\sin(nz)}{2^n}.
 $$
 
-(a) Determine whether the series converges uniformly on the half-plane $\{ z \in \CC \mid \Im(z) < \ln 2 \}$, or clarify the correct domain of uniform convergence (such as $\{ \Im(z) \ge -c \}$ or compact subsets $\{ \abs{\Im(z)} \le Y \}$ / disks $\{ \abs{z} \le r \}$).
+(a) Determine whether the series converges uniformly on the half-plane $\{ z \in \CC \mid \Im(z) < \ln 2 \}$.
 
 (b) Prove that for every $r$ with $0<r<\ln 2$, the series converges **uniformly on the closed disk** $\{ z \in \CC \mid \abs{z} \le r \}$.
 :::
