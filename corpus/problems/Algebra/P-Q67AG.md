@@ -27,7 +27,7 @@ For $a\in R$, let $L_a:R\to R$ be left multiplication, $L_a(y)=ay$; it is a homo
 
 ::: pf
 
-::: {.pf-step #injective-unit}
+::: pf-step
 If $L_a$ is injective, then $a$ is a unit.
 
 ::: pf-proof
