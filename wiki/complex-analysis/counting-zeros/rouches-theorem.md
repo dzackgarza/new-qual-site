@@ -33,36 +33,6 @@ Let $f$, $g$, $M$, $m$ be holomorphic on a neighborhood of the closed region bou
 - For partial sums $f_n$ of a power series of $f$: if $\abs f\geq L$ and $\abs{f - f_n}\leq U$ on $\gamma$ with $U < L$, then $Z_f = Z_{f_n}$.
 :::
 
-::: {.proof title="Rouché's theorem"}
-On $\gamma$, $(M+m)/M = 1 + m/M$ takes values in the disc $\abs{w-1}<1$, which does not contain $0$, so the winding number of $((M+m)/M)\circ\gamma$ about $0$ is zero.
-By the argument principle applied to $(M+m)/M$, whose logarithmic derivative is $(M+m)'/(M+m) - M'/M$, the zeros minus poles of $M+m$ and of $M$ agree.
-Alternatively, $t\mapsto Z_{M+tm}-P_{M+tm}$ is given by a continuous integral in $t \in [0,1]$ and is integer valued, hence constant.
-:::
-
-::: {.proof title="Rouché's theorem, by homotopy"}
-Let $f$ and $g$ be holomorphic near a closed curve $C$ bounding a region, with $\abs f > \abs g$ on $C$.
-For $t\in[0,1]$ let $f_t \coloneqq f + tg$, so $f_0 = f$ and $f_1 = f+g$.
-No $f_t$ vanishes on $C$: if $f_t(z) = 0$ with $z\in C$, then $\abs{f(z)} = t\abs{g(z)} < \abs{f(z)}$, a contradiction.
-By the argument principle the number of zeros of $f_t$ inside $C$ is
-$$
-n_t = {1\over 2\pi i}\int_C {f_t'(z)\over f_t(z)}\dz
-.$$
-The integrand depends continuously on $t$ and $f_t$ never vanishes on the compact curve $C$, so $n_t$ is a continuous function of $t$.
-It is integer valued, so it is constant on $[0,1]$, and $n_0 = n_1$.
-:::
-
-::: {.proof title="Rouché's theorem, by the argument of $1 + g/f$"}
-If $\abs f > \abs g$ on $\gamma$, then neither $f$ nor $f+g$ vanishes on $\gamma$.
-Let
-$$
-h(z) \coloneqq {f(z)+g(z)\over f(z)} = 1 + {g(z)\over f(z)}
-.$$
-The zeros of $h$ are the zeros of $f+g$ and the poles of $h$ are the zeros of $f$, counted with multiplicity.
-For $z\in\gamma$, $h(z)\in B(1,1)\subseteq\theset{\Re w > 0}$, so $h\circ\gamma$ is a closed curve in the right half-plane and has winding number $0$ about $0$.
-Equivalently, $\arg(f+g) = \arg f + \arg(1 + g/f)$ and the second term has zero net increase around $\gamma$.
-By the argument principle, $h$ has as many zeros as poles inside $\gamma$, so $f+g$ and $f$ have the same number of zeros there.
-:::
-
 ::: {.example title="Zeros of a monic polynomial in a disc"}
 Let $p(z) = z^d + a_1z^{d-1} + \cdots + a_d$ with $\abs{a_i} < R^i/d$ for each $i$.
 Then $p$ has $d$ zeros in $\abs z < R$.
