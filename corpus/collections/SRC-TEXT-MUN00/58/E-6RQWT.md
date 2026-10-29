@@ -23,7 +23,6 @@ Show that $X$ is contractible if and only if $X$ has the homotopy type of a one-
 :::
 
 ::: {.solution}
-**Goal:** Prove that a topological space $X$ is contractible (i.e. $\operatorname{id}_X$ is nullhomotopic) if and only if $X$ is homotopy equivalent to a one-point space $P = \{p_0\}$.
 
 ::: pf
 
