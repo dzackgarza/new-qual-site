@@ -17,8 +17,9 @@ Fano, Calabi--Yau, and general type are distinguished by the positivity behavior
 
 [[FE-VARADJ]]
 
-Adjunction computes $K$ of a hypersurface from $K$ of the ambient space. Since $K_{\PP^n}=-(n+1)H$, a degree-$d$ hypersurface in $\PP^n$ is distinguished by the sign of $d-(n+1)$.
-For surfaces in $\PP^3$, the quadric, cubic, and quartic correspond to degrees $2,3,4$ against the threshold $n+1=4$.
+Adjunction computes $K$ of a hypersurface from $K$ of the ambient space. Since $K_{\PP^n}=-(n+1)H$, a smooth hypersurface $X\subseteq\PP^n$ of degree $d$, with $n\geq 2$, has $K_X=(d-n-1)H|_X$.
+So $X$ is Fano for $d<n+1$, has trivial canonical class for $d=n+1$, and is of general type for $d>n+1$.
+Among smooth surfaces in $\PP^3$, the quadric and the cubic are Fano, the quartic has trivial canonical class, and every surface of degree at least $5$ is of general type.
 
 ## Where completeness enters
 
