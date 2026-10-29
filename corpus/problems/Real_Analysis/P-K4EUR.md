@@ -20,17 +20,20 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'Source printed Lambda(f) = int_X g conj(f), which is conjugate-linear in f and fails for linear Lambda != 0 over C, and wrote M\perp; the statement now reads Lambda(f) = int_X f conj(g) and M^perp.'
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source opens the statement with the line '> Note: (a) is a repeat.'; the line is removed, the two bullet items are labelled (a) and (b), and the statement declares X a measure space."
 ---
 
 ::: {.problem}
-> Note: (a) is a repeat.
+Let $X$ be a measure space and let $\Lambda\in \dualof{L^2(X)}$.
 
-- Let $\Lambda\in \dualof{L^2(X)}$.
+(a) Show that $M\definedas \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
 
-  - Show that $M\definedas \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
-
-  - Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X f \bar g$ for all $f \in L^2(X)$.
+(b) Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X f \bar g$ for all $f \in L^2(X)$.
 :::
+
 ::: {.solution}
 Write $\langle f, h\rangle = \int_X f\bar h$, linear in $f$.
 The required formula is $\Lambda(f) = \langle f, g\rangle$.
