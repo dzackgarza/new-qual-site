@@ -22,7 +22,7 @@ Show that any non-surjective map $f: X \rightarrow S^n$ is homotopic to the cons
 :::
 
 ::: {.solution}
-**Goal:** Let $X$ be an arbitrary topological space, and let $f \colon X \to S^n$ be a continuous map ($n \ge 1$). Prove that if $f$ is not surjective, then $f$ is nullhomotopic (homotopic to a constant map).
+Let $X$ be a topological space and let $f \colon X \to S^n$ be a continuous map that is not surjective.
 
 ::: pf
 
