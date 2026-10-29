@@ -24,3 +24,13 @@ order: 60
 - MIT fields and Galois theory: [problems for discussion](https://www.mit.edu/~fengt/FieldGalois.pdf), [combined problem file](https://www.mit.edu/~fengt/FGProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/FieldGaloisSolns.pdf).
 
 - Additional MIT qual problems: Spring 2016 A5, Fall 2016 M2, Fall 2012 M5, Fall 2014 A5, Spring 2012 A9, Fall 2013 A4, Spring 2016 M5.
+
+- [Nori, Galois theory problems](attachments/Nori_Galois_Theory_Problems.pdf)
+
+## Solutions
+
+- [Algebra homework 11 solutions (Clay Shonkwiler)](attachments/603_11.pdf) -- separable extensions, primitive elements, and Galois groups.
+
+- [Math 114 Galois-theory homework solutions](attachments/solhwg.pdf)
+
+- [Solution outlines for chapter 20 (extension fields) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch20Sltns.pdf)

@@ -5,34 +5,16 @@ order: 90
 
 # Solutions (rings)
 
-## Fields
+## Ring homomorphisms and polynomial rings
 
-[Solution outlines for chapter 15 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch15Sltns.pdf)
+[Solution outlines for chapter 15 (ring homomorphisms) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch15Sltns.pdf)
 
-[Solution outlines for chapter 16 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch16Sltns.pdf)
+[Solution outlines for chapter 16 (polynomial rings) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch16Sltns.pdf)
 
-[Solution outlines for chapter 17 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch17Sltns.pdf)
-
-[Algebra homework 11 (Clay Shonkwiler)](attachments/603_11.pdf)
+[Solution outlines for chapter 17 (factorization of polynomials) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch17Sltns.pdf)
 
 ## Commutative algebra
 
 - [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), also collected in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
 
 - [Hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf) to those problems.
-
-- Additional MIT qual problem: Spring 2015 M5.
-
-## Galois theory
-
-[Algebra homework 11 solutions](attachments/Algebra_HW_11_Solns.pdf)
-
-[Math 114 Galois-theory homework solutions](attachments/solhwg.pdf)
-
-[Solution outlines for chapter 20 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch20Sltns.pdf)
-
-[Calculating a Galois group from a polynomial](attachments/calculating_galois_from_polynomial.pdf)
-
-[Nori, Galois theory problems](attachments/Nori_Galois_Theory_Problems.pdf)
-
-[Galois-group practice problems](attachments/Galois_Group_Practice.pdf)

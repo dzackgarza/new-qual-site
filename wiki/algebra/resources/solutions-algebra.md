@@ -7,6 +7,8 @@ order: 50
 
 - [[archives/solution-compendia|Solution compendia]] -- solutions spanning several subjects, including UCLA algebra quals, Maryland 600, UVM, and course notes.
 
-- [[algebra/rings-and-ideals/solutions|Solutions (rings)]] -- solutions to ring, field, and Galois theory homework.
+- [[algebra/rings-and-ideals/solutions|Solutions (rings)]] -- solutions to ring theory homework.
+
+- [[algebra/resources/fields|Field and Galois theory resources]] -- includes solutions to field and Galois theory homework.
 
 - [[algebra/resources/groups|Group theory resources]] -- includes solutions to group theory homework.
