@@ -35,7 +35,7 @@ so Jordan's lemma bounds the arc integral by $\pi/(R^2-1)$.
 :::
 
 [[E-AXBZQ]]
-[[E-FRWVZ]]
+[[E-SS3.EX-3]]
 [[E-2RKYE]]
 
 ## No clear decay
