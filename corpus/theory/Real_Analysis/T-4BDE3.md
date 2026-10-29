@@ -37,6 +37,11 @@ $$
 Letting $N\to\infty$ gives the inequality.
 :::
 
+::: {.remark title="Variations"}
+The statement holds in every inner product space, complete or not.
+The proof above applies unchanged, since it uses only the inner product and orthonormality.
+:::
+
 ::: {.remark}
 The inequality extends to an orthonormal family $(u_i)_{i\in I}$ indexed by an arbitrary, possibly uncountable, set $I$: for every $x\in\mch$,
 $$
