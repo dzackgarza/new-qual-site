@@ -44,7 +44,7 @@ By uniqueness of the Laurent expansion on a given annulus, any convergent expans
 - **Geometric series.** Write the expression as ${1 \over 1 - u}$ with $\abs u < 1$ on the given annulus, and expand.
   On $\abs{z}<1$ one takes $u$ a multiple of $z$, and on $\abs z>1$ a multiple of $\inverseof{z}$.
 
-- **Products and compositions of known expansions.** For $f = g\cdot h$ with $g$ having a pole and $h$ holomorphic, expand $h$ as a Taylor series and multiply through by the finite principal part of $g$.
+- **Products with known expansions.** For $f = g\cdot h$ with $g$ having a pole and $h$ holomorphic, expand $h$ as a Taylor series and multiply through by the finite principal part of $g$.
 
 - **Poles of known order.** For $f$ with a pole of order $N$ at $z_0$, $(z-z_0)^N f(z)$ has a removable singularity at $z_0$; its Taylor series divided by $(z-z_0)^N$ is the Laurent series of $f$ on a punctured disc.
 
