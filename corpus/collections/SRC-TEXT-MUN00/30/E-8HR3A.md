@@ -24,7 +24,7 @@ Show that if $X$ has a countable basis $\theset{B_n}$, then every basis $\mathca
 :::
 
 ::: {.solution}
-**Goal:** Prove that if a topological space $X$ has a countable basis $\mathcal{B} = \{B_n\}_{n \in \ZZ_+}$, then every basis $\mathcal{C}$ for $X$ contains a countable subcollection $\mathcal{C}' \subseteq \mathcal{C}$ that is also a basis for $X$.
+Write $\mathcal{B} = \{B_n\}_{n \in \ZZ_+}$ for the given countable basis.
 
 ::: pf
 
@@ -98,8 +98,7 @@ Thus $x \in C_{n, m} \subseteq U$ with $C_{n, m} \in \mathcal{C}'$.
 :::
 
 ::: pf-step
-Conclusion:
-$\mathcal{C}'$ is a countable subset of $\mathcal{C}$ that forms a basis for the topology of $X$. Q.E.D.
+$\mathcal{C}'$ is a countable subset of $\mathcal{C}$ that forms a basis for the topology of $X$.
 :::
 
 :::
