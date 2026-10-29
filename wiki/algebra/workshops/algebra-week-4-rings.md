@@ -29,4 +29,4 @@ title: "Algebra qual prep week 4: rings"
 
 [[P-3PTP5]]
 
-[[P-HWBXR]]
+[[P-AMH-ALG-SG16-28]]

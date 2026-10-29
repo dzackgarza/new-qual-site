@@ -117,3 +117,8 @@ $$
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The same criterion holds for a quadratic $f\in k[x]$.
+The proof applies with degrees $1+1$ in place of $1+2$: in step [](#s1-1){.pf-ref} a nontrivial factorization of a quadratic has a linear factor, and in step [](#s1-2){.pf-ref} the quotient $q$ has degree $1$.
+:::
