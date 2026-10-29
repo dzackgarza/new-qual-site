@@ -23,17 +23,15 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Located all possible poles relative to the off-center circle, excluded boundary poles, and checked the third-order and simple-pole residues and orientation sign."
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source writes the contour as the circle {|z-1|<2}, which is the open disk; the statement reads the boundary circle |z-1|=2.
 ---
 
 ::: {.problem}
 Determine $\int_\gamma \frac{dz}{z^3\cos z}$, where
 $\gamma$ is the circle $\abs{z-1}=2$ traversed counterclockwise.
-:::
-
-::: {.remark}
-Erratum: the source writes the contour as "the circle
-$\{\abs{z-1}<2\}$". That set is the open disk; the contour is
-its boundary circle $\abs{z-1}=2$.
 :::
 
 ::: {.solution}
