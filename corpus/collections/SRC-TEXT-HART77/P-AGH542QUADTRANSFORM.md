@@ -59,20 +59,6 @@ Hint: Use (Ex.
 3.2).
 :::
 
-::: {.remark title="Erratum"}
-The exclusion of the three lines joining pairs of base points is necessary.
-Those are precisely the three curves contracted by the quadratic transformation.
-For example, the line through $P_2$ and $P_3$ has
-$$
-d=1,
-\qquad
-r_1=0,
-\qquad
-r_2=r_3=1,
-$$
-so the displayed degree formula gives $d'=0$: its image is the point $Q_1$, not a plane curve.
-:::
-
 ::: {.solution}
 Let
 $$
