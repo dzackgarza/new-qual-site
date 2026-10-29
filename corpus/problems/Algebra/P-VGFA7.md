@@ -22,29 +22,56 @@ audit:
 ---
 
 ::: {.problem}
-Let $n \ge 2$, and let $G$ be a finite group of odd order $|G| = m$.
+Let $n \ge 2$, and let $G$ be a finite group of odd order $\abs{G} = m$.
 Let $\phi: S_n \to G$ be a group homomorphism.
-(1) Prove that if $\tau \in S_n$ is a transposition, then $\tau \in \ker\phi$.
-(2) Prove that $\phi$ is the trivial homomorphism ($\ker\phi = S_n$).
-(3) Does this result depend on whether $n$ is even or odd?
+
+(a) Prove that if $\tau \in S_n$ is a transposition, then $\tau \in \ker\phi$.
+
+(b) Prove that $\phi$ is the trivial homomorphism ($\ker\phi = S_n$).
+
+(c) Does this result depend on whether $n$ is even or odd?
 :::
 
 ::: {.solution}
-Let $\tau\in S_n$ be a transposition. Since $\tau^2=1$,
-\[
-\phi(\tau)^2=1.
-\]
-Thus the order of $\phi(\tau)$ divides $2$. It also divides $|G|$, which is odd. Hence
-\[
-\operatorname{ord}(\phi(\tau))=1,
-\]
-so $\phi(\tau)=1$ and every transposition lies in $\ker\phi$.
 
-Transpositions generate $S_n$. Therefore
-\[
-\ker\phi=S_n,
-\]
-and $\phi$ is trivial.
+::: pf
 
-The parity of $n$ plays no role; the argument works for every $n\ge2$.
+::: {.pf-step #transp}
+
+(a) Every transposition $\tau$ lies in $\ker\phi$.
+
+::: pf-proof
+
+Since $\tau^2=1$, $\phi(\tau)^2=1$, so the order of $\phi(\tau)$ divides $2$. It also divides $\abs{G}$, which is odd. Hence $\phi(\tau)$ has order $1$, so $\phi(\tau)=1$.
+
+:::
+
+:::
+
+::: {.pf-step #trivial}
+
+(b) $\ker\phi=S_n$.
+
+::: pf-proof
+
+Transpositions generate $S_n$, and by step [](#transp){.pf-ref} they all lie in the subgroup $\ker\phi$.
+
+:::
+
+:::
+
+::: pf-step
+
+(c) The result does not depend on the parity of $n$.
+
+::: pf-proof
+
+Steps [](#transp){.pf-ref} and [](#trivial){.pf-ref} use only $n\ge2$.
+
+:::
+
+:::
+
+:::
+
 :::
