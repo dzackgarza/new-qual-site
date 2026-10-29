@@ -24,8 +24,6 @@ audit:
 :::
 
 ::: {.solution}
-**Goal.** (a) Every map $P^2 \to S^1$ is null-homotopic. (b) Find a non-null-homotopic map $T^2 \to S^1$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -100,7 +98,7 @@ composing a null-homotopy of $\tilde f$ with the covering map $p$ gives a null-h
 
 ::: {.pf-step #s2}
 
-(b) A non-null-homotopic map $T^2 \to S^1$.
+(b) The projection $f: T^2 = S^1 \times S^1 \to S^1$, $f(x, y) = x$, is not null-homotopic.
 
 ::: pf-proof
 
@@ -141,12 +139,6 @@ a null-homotopic map induces the zero map on $\pi_1$.
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} proves (a); step [](#s2){.pf-ref} gives the example for (b).
 
 :::
 
