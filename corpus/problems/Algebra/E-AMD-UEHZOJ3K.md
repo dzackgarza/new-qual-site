@@ -19,7 +19,7 @@ Show that the nilradical of a commutative ring $R$ is equal to the intersection 
 :::
 
 ::: {.solution}
-Let $R$ be a commutative ring with identity, and put $P=\bigcap_{\mathfrak p\in\operatorname{Spec}(R)}\mathfrak p$.
+Let $R$ be a commutative ring with identity, and put $P=\bigcap_{\mfp\in\Spec(R)}\mfp$.
 
 ::: pf
 
@@ -27,15 +27,15 @@ Let $R$ be a commutative ring with identity, and put $P=\bigcap_{\mathfrak p\in\
 $\operatorname{Nil}(R)\subseteq P$.
 
 ::: pf-proof
-Let $x^n=0$ with $n\ge1$, and let $\mathfrak p$ be prime.
-Then $x^n=0\in\mathfrak p$.
-If $x^k\in\mathfrak p$ with $k\ge2$, then $x\cdot x^{k-1}\in\mathfrak p$ gives $x\in\mathfrak p$ or $x^{k-1}\in\mathfrak p$; induction on $k$ gives $x\in\mathfrak p$.
+Let $x^n=0$ with $n\ge1$, and let $\mfp$ be prime.
+Then $x^n=0\in\mfp$.
+If $x^k\in\mfp$ with $k\ge2$, then $x\cdot x^{k-1}\in\mfp$ gives $x\in\mfp$ or $x^{k-1}\in\mfp$; induction on $k$ gives $x\in\mfp$.
 :::
 
 :::
 
 ::: {.pf-step #maximal-element-exists}
-For $f\in R$ not nilpotent, the family $\mathcal F$ of ideals $I$ with $I\cap\{f^n:n\ge0\}=\varnothing$ has a maximal element $\mathfrak p$.
+For $f\in R$ not nilpotent, the family $\mathcal F$ of ideals $I$ with $I\cap\{f^n:n\ge0\}=\varnothing$ has a maximal element $\mfp$.
 
 ::: pf-proof
 Put $S=\{f^n:n\ge0\}$; since $f$ is not nilpotent, $0\notin S$, so $(0)\in\mathcal F$.
@@ -46,14 +46,14 @@ Zorn's lemma gives a maximal element.
 :::
 
 ::: {.pf-step #maximal-element-is-prime}
-The ideal $\mathfrak p$ of step [](#maximal-element-exists){.pf-ref} is prime and $f\notin\mathfrak p$.
+The ideal $\mfp$ of step [](#maximal-element-exists){.pf-ref} is prime and $f\notin\mfp$.
 
 ::: pf-proof
-Since $1=f^0\in S$, $\mathfrak p\neq R$, and $f=f^1\in S$ gives $f\notin\mathfrak p$.
-Let $a,b\notin\mathfrak p$.
-By maximality, $\mathfrak p+(a)$ and $\mathfrak p+(b)$ meet $S$: $f^m\in\mathfrak p+(a)$ and $f^n\in\mathfrak p+(b)$ for some $m,n\ge0$.
-Then $f^{m+n}\in(\mathfrak p+(a))(\mathfrak p+(b))\subseteq\mathfrak p+(ab)$.
-If $ab\in\mathfrak p$, then $f^{m+n}\in\mathfrak p\cap S=\varnothing$, a contradiction; so $ab\notin\mathfrak p$.
+Since $1=f^0\in S$, $\mfp\neq R$, and $f=f^1\in S$ gives $f\notin\mfp$.
+Let $a,b\notin\mfp$.
+By maximality, $\mfp+(a)$ and $\mfp+(b)$ meet $S$: $f^m\in\mfp+(a)$ and $f^n\in\mfp+(b)$ for some $m,n\ge0$.
+Then $f^{m+n}\in(\mfp+(a))(\mfp+(b))\subseteq\mfp+(ab)$.
+If $ab\in\mfp$, then $f^{m+n}\in\mfp\cap S=\varnothing$, a contradiction; so $ab\notin\mfp$.
 :::
 
 :::
