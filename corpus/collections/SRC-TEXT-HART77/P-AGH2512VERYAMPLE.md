@@ -20,6 +20,10 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne II.5.12 prints both parts over arbitrary base schemes, where part (b) is false with the open-in-closed immersion convention. The statement requires Y in (a) and Z in (b) to be locally noetherian.
 ---
 
 ::: {.problem}
@@ -37,7 +41,6 @@ Use a Segre embedding.
 
 ::: {.solution}
 Use [[D-MODAMPLE|very ampleness]] and the [[D-MORIMM|immersion]] convention in which the source is an open subscheme of a closed subscheme of the target.
-The locally noetherian hypotheses give a corrected formulation of the exercise; the erratum treats its unrestricted version.
 
 ::: pf
 
@@ -154,115 +157,12 @@ Thus this sheaf is very ample relative to $Z$.
 
 :::
 
-::: {.pf-step #s5}
-
-With the closed-in-open immersion convention, the same two assertions hold over arbitrary base schemes.
-
-::: pf-proof
-
-The constructions in steps [](#s3){.pf-ref} and [](#s4){.pf-ref} already give locally closed immersions and the asserted pullbacks over arbitrary bases.
-Only the conversion in step [](#s2){.pf-ref} used local noetherianity.
-Omitting that conversion proves the arbitrary-base formulation when very ampleness is witnessed by a closed immersion into an open subscheme of a finite-dimensional relative projective space.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the corrected assertions in the convention of the statement, and step [](#s5){.pf-ref} proves their arbitrary-base closed-in-open formulation.
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (a) and (b).
 
 :::
 
 :::
 
-:::
-
-::: {.remark title="Erratum to the unrestricted statement"}
-Exercise II.5.12 does not state the locally noetherian hypotheses added here.
-The definition preceding Remark II.5.16.1 uses open-in-closed immersions, not closed-in-open immersions [@Har10a, Chapter II, §5 and Exercise II.5.12].
-With that definition, unrestricted part (b) is false.
-The locally noetherian hypotheses are sufficient conditions for both assertions, not a claim of necessity in part (a).
-
-Let $k$ be a field, put $A=k[x_1,x_2,\ldots]$, and let
-$$
-V=\Spec A,\qquad U=\bigcup_{n\ge1}D(x_n).
-$$
-On $D(x_n)$ take the ideal
-$$
-I_n=(x_1^n,\ldots,x_{n-1}^n,x_n-1,x_{n+1},x_{n+2},\ldots)A_{x_n}.
-$$
-For $m\ne n$, localizing $I_n$ at $x_m$ gives the unit ideal, so these ideals glue to a quasi-coherent ideal on $U$.
-Its closed subscheme is
-$$
-W=\coprod_{n\ge1}W_n,\qquad
-W_n=\Spec R_n,\qquad
-R_n=k[x_1,\ldots,x_{n-1}]/(x_1^n,\ldots,x_{n-1}^n).
-$$
-In the structural map $A\to R_n$, the variable $x_n$ maps to $1$ and every $x_i$ with $i>n$ maps to $0$.
-Each $W_n$ has one point, denoted $w_n$.
-This is the [nonfactorizable immersion example](https://stacks.math.columbia.edu/tag/01QW).
-The following argument strengthens its conclusion: $W$ has no open immersion over $A$ into any finite-type $A$-scheme.
-
-Suppose such an open immersion existed.
-A finite affine cover of the finite-type target would contain an affine member whose intersection with $W$ contains $W_n$ for an infinite set $E\subseteq\NN_{>0}$.
-Since $W_n$ has only one point, its nonempty intersection with that member is all of $W_n$.
-We would obtain an open immersion
-$$
-W_E=\coprod_{n\in E}W_n\longrightarrow\Spec B
-$$
-with $B$ a finite-type $A$-algebra.
-Quotient $B$ by the kernel of $B\to\Gamma(W_E,\OO_{W_E})=\prod_{n\in E}R_n$.
-Every element of that kernel restricts to zero on $W_E$, so this quotient preserves the open subscheme $W_E$.
-Thus we may assume $B\subseteq\prod_{n\in E}R_n$.
-
-The map $A\to B$ is injective.
-Indeed, a nonzero polynomial in finitely many $x_i$ survives in $R_n$ whenever $n\in E$ exceeds every variable index and every exponent appearing in it.
-Choose a presentation $B=A[t_1,\ldots,t_q]/J$ and put $K=\operatorname{Frac}A$.
-The ideal $J_K\subset K[t_1,\ldots,t_q]$ is proper and has finitely many generators.
-Choose $m$ so that the coefficients of these generators all belong to $K_m=k(x_1,\ldots,x_m)$, and put $A_m=k[x_1,\ldots,x_m]$.
-Let $J^0\subset K_m[t_1,\ldots,t_q]$ be their generated ideal and set
-$$
-J_m=J^0\cap A_m[t_1,\ldots,t_q].
-$$
-Then
-$$
-J_K\cap A[t_1,\ldots,t_q]=J_m A[t_1,\ldots,t_q].
-$$
-To verify this equality, first pass from $A_m$ to $K_m$ and expand polynomials coefficientwise in the remaining $x_i$.
-The module
-$$
-\bigl(K_m[t_1,\ldots,t_q]/J^0\bigr)[x_{m+1},x_{m+2},\ldots]
-$$
-is free over $K_m[x_{m+1},x_{m+2},\ldots]$, by choosing a $K_m$-basis of the coefficient algebra.
-Consequently localization of that polynomial base to $K$ is injective, and contraction is computed coefficientwise as claimed.
-
-The noetherian ring $A_m[t_1,\ldots,t_q]$ makes $J_m$ finitely generated, say by $F_1,\ldots,F_a$.
-For each $F_j\in J_K$, choose a nonzero $d_j\in A$ such that $d_jF_j\in J$.
-Choose $n\in E$ larger than $m$, than every variable index in the finitely many $d_j$, and than their total degrees.
-Each $d_j$ has nonzero image in $R_n$.
-Since $d_jF_j=0$ in $R_n$, the image of $F_j$ cannot be a unit in this local ring.
-It therefore has zero residue at $w_n$.
-
-It follows that $w_n$ lies in the closed subscheme
-$$
-H=\Spec\bigl(A[t_1,\ldots,t_q]/J_m A[t_1,\ldots,t_q]\bigr)
-\subseteq\Spec B.
-$$
-Its coordinate ring is
-$$
-\bigl(A_m[t_1,\ldots,t_q]/J_m\bigr)[x_{m+1},x_{m+2},\ldots].
-$$
-Because $n>m$, multiplication by the monic polynomial $x_n-1$ is injective on this ring and remains injective in its nonzero local ring at $w_n$.
-Thus $x_n-1$ is nonzero in $\OO_{H,w_n}$.
-But $W_E$ is open in $\Spec B$, so $\OO_{\Spec B,w_n}=R_n$, in which $x_n-1=0$.
-Its image in the quotient local ring $\OO_{H,w_n}$ must also be zero, a contradiction.
-This proves the nonembedding assertion.
-
-Now take $f:W\hookrightarrow U$ to be the closed immersion and $g:U\hookrightarrow V$ the open immersion, with $\mcl=\OO_W$ and $\mcm=\OO_U$.
-Both sheaves are very ample over their respective bases using $\PP^0$ and the immersion convention of the statement.
-Their proposed tensor product is $\OO_W$.
-If it were very ample over $V$, there would be an immersion of $W$ as an open subscheme of a closed subscheme of some $\PP_V^N$.
-That closed subscheme is of finite type over $A$, contradicting the nonembedding assertion.
-Hence the unrestricted conclusion of part (b) fails; failure of a particular Segre map is not the only obstruction.
 :::
