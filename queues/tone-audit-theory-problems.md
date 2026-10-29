@@ -1323,7 +1323,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/P-VDVNE.md` | `e14bdda9246282ab66b0ff706ab7ea5384182499` | `e14bdda9246282ab66b0ff706ab7ea5384182499` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-VFAXW.md` | `20336354663a52f527a0a1b59937cfc7a72a94f4` | `20336354663a52f527a0a1b59937cfc7a72a94f4` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-VH7IY.md` | `868350a4bd5917ee1ed2fa1a64043cccb7d6b612` | `868350a4bd5917ee1ed2fa1a64043cccb7d6b612` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/P-VO5YR.md` | `4e9b66dddd8ede653919ee1d0f5106b9a58eafcb` | `4e9b66dddd8ede653919ee1d0f5106b9a58eafcb` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-VT4TV.md` | `f46b7a615698fcd2e2f2c76705c27277f1b63aec` | `f46b7a615698fcd2e2f2c76705c27277f1b63aec` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-VTCZF.md` | `1eda0237ac0bd989cdb3cb2a7a3fb808937b5d15` | `1eda0237ac0bd989cdb3cb2a7a3fb808937b5d15` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-WB56B.md` | `2a2a33fda0497fb90e52ae164bef7c479e6c8a72` | `2a2a33fda0497fb90e52ae164bef7c479e6c8a72` | Read; retained |

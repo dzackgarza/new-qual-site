@@ -56,3 +56,9 @@ $\frac{1}{\sin z} = \frac{1}{z}\cdot\frac{1}{f(z)}$, and step [](#coeffs){.pf-re
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The same expansion can be asked for by a geometric series: since the series of $\sin z$ has zero constant term, write $\sin z = z\qty(1 - p(z))$ with $p(z) \coloneqq \frac{z^2}{3!} - \frac{z^4}{5!} + \bigo(z^6)$.
+Near $0$, $\abs{p(z)} < 1$, so $\frac{1}{1-p} = 1 + p + p^2 + \bigo(z^6)$, and $p^2 = \frac{z^4}{36} + \bigo(z^6)$ gives the coefficient $-\frac{1}{120} + \frac{1}{36} = \frac{7}{360}$ of $z^4$.
+Dividing by $z$ gives the same expansion as the main solution; this computes $b_2$ and $b_4$ of step [](#coeffs){.pf-ref} without the recursion.
+:::

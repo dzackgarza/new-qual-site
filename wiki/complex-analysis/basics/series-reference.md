@@ -175,7 +175,7 @@ If $A(z) = z^m \tilde A(z)$ with $\tilde A(0) \neq 0$, then $1/A(z) = z^{-m}/\ti
 
 [[FF-UQZNR]]
 
-[[P-VO5YR]] [[P-NBSTW]]
+[[P-VT4TV]] [[P-NBSTW]]
 
 ## Long division of power series
 
