@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.problem}
-- Compute $\pi_1(S^1 \vee S^1)$
+(a) Compute $\pi_1(S^1 \vee S^1)$.
 
-- Compute $\pi_1(S^1 \cross S^1)$
+(b) Compute $\pi_1(S^1 \times S^1)$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ $$\boxed{\pi_1(S^1\vee S^1)\cong F_2.}$$
 
 ::: pf-proof
 
-Apply van Kampen to neighborhoods of the two circle summands whose intersection is contractible. The result is the free product $\mathbb Z*\mathbb Z$.
+Apply van Kampen to neighborhoods of the two circle summands whose intersection is contractible. The result is the free product $\ZZ*\ZZ$.
 
 :::
 
@@ -40,11 +40,11 @@ Apply van Kampen to neighborhoods of the two circle summands whose intersection 
 ::: pf-step
 
 The torus satisfies
-$$\boxed{\pi_1(S^1\times S^1)\cong\mathbb Z^2.}$$
+$$\boxed{\pi_1(S^1\times S^1)\cong\ZZ^2.}$$
 
 ::: pf-proof
 
-Fundamental groups commute with products, so $\pi_1(S^1\times S^1)\cong\pi_1(S^1)\times\pi_1(S^1)\cong\mathbb Z^2$.
+Fundamental groups commute with products, so $\pi_1(S^1\times S^1)\cong\pi_1(S^1)\times\pi_1(S^1)\cong\ZZ^2$.
 
 :::
 
