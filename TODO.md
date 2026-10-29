@@ -283,6 +283,16 @@ mathematical correction under its own node, not under copy policy.
     `area`, so the Wesleyan compilations lose the `wesleyan` institution and carry
     `area: real-analysis` for mixed real and complex papers. The Wesleyan topology PDFs are
     still split across collections.
+  Round 3 (analysis provenance follow-up) injected the node below; `audited-deployment` needs it.
+  - **`ad3-compilation-schema`**. **Needs:** none. `CompilationSource` has no `institution`
+    and one `area`, so mixed-area compilations mislabel their papers; the Wesleyan topology
+    PDFs topology_2005-2003.pdf and topology_2006-2014.pdf are split across 14 collections;
+    round-3 provenance findings C5-C12 that no other node owns. **Acceptance:** a compilation
+    carries `institution` as an exam source does and takes its areas from the one mechanism
+    every source kind shares; the three SRC-WESLEYAN-ANALYSIS compilations name `wesleyan`
+    and their real areas; each Wesleyan topology PDF is one compilation with one section per
+    exam and every entry kept; each unowned C5-C12 finding read and repaired, or kept with
+    the reason.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
