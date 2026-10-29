@@ -18,10 +18,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads 1/sin(pi x); the statement writes the variable as z.
 ---
 
 ::: {.exercise}
-Show that the complex zeros of $f(z) \definedas \sin(\pi z)$ are exactly $\ZZ$, and each is order 1. Calculate the residue of $1/\sin(\pi x)$ at $z=n\in \ZZ$.
+Show that the complex zeros of $f(z) \definedas \sin(\pi z)$ are exactly $\ZZ$, and each is order 1. Calculate the residue of $1/\sin(\pi z)$ at $z=n\in \ZZ$.
 :::
 
 ![image_2021-05-17-13-32-46](../../assets/figures/image_2021-05-17-13-32-46.png)
@@ -33,8 +37,6 @@ Show that the complex zeros of $f(z) \definedas \sin(\pi z)$ are exactly $\ZZ$, 
 ![image_2021-05-17-13-33-30](../../assets/figures/image_2021-05-17-13-33-30.png)
 
 ::: {.solution}
-**Goal:** Show that the complex zeros of $f(z) = \sin(\pi z)$ are exactly $\ZZ$, each of order 1, and compute the residue of $1/\sin(\pi z)$ at $z = n \in \ZZ$.
-
 ::: pf
 
 ::: {.pf-step #zeros-are-integers}
@@ -68,13 +70,9 @@ The denominator vanishes to order exactly 1 at each integer (step [](#zeros-simp
 The residue of $1/\sin(\pi z)$ at $z = n$ is $(-1)^n/\pi$.
 
 ::: pf-proof
-For a simple pole, $\Res_{z = n} \frac{1}{\sin(\pi z)} = \lim_{z \to n} (z - n)\frac{1}{\sin(\pi z)} = \frac{1}{\sin'(\pi n)} = \frac{1}{\pi \cos(\pi n)} = \frac{1}{\pi (-1)^n} = \frac{(-1)^n}{\pi}$.
+For a simple pole, $\Res_{z = n} \frac{1}{\sin(\pi z)} = \lim_{z \to n} (z - n)\frac{1}{\sin(\pi z)} = \frac{1}{\pi \cos(\pi n)} = \frac{1}{\pi (-1)^n} = \frac{(-1)^n}{\pi}$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#zeros-are-integers){.pf-ref} and [](#zeros-simple){.pf-ref} identify the zeros and their orders; steps [](#simple-pole){.pf-ref} and [](#residue-value){.pf-ref} give the residues.
 :::
 
 :::
