@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YYRZX
 kind: problem
-title: $e^{x/2} / 1+e^x,$ replication
+title: $\int_\RR e^{x/2}/(1+e^x)\,dx$ by a rectangular contour
 classification:
   areas:
   - complex-analysis
@@ -15,65 +15,58 @@ review: draft
 ---
 
 ::: {.exercise}
-\[
-I \definedas \int_\RR {e^{x\over 2}\over 1+e^x}\dx
-.\]
-
+Compute
+$$
+I \coloneqq \int_\RR \frac{e^{x/2}}{1+e^x}\,dx.
+$$
 :::
 
 ::: {.solution}
-Replication: find $b$ such that $f(z) = f(z+ib)$ and use a rectangle.
-\[
-f(z+ib) 
-= {e^{z\over 2}e^{ib\over 2} \over 1 + e^{ib}e^z} 
-= e^{ib\over 2} {e^{z\over 2} \over 1 + e^{ib}e^z } = f(z) \impliedby e^{ib} = 1 \impliedby b=2\pi
-,\]
-in which case
-\[
-f(z + 2\pi i) = e^{ib\over 2}f(z) = e^{2\pi i \over 2}f(z) = -f(z)
-.\]
-
-So take the following rectangle where $H_-$ is at $2\pi i$ and $H_+$ is at 0, with sides at $\pm R$:
+Let $f(z)\coloneqq\dfrac{e^{z/2}}{1+e^z}$ and let $\Gamma_R$ be the positively oriented boundary of the rectangle with vertices $\pm R$ and $\pm R + 2\pi i$: the bottom edge $H_+$ on $\RR$, the top edge $H_-$ on $\RR + 2\pi i$, and the vertical sides $V_\pm$ at $\Re z = \pm R$.
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-21_21-25-04.png)
 
-Write $\Gamma$ for the entire contour.
-Note that integrating left-to-right on $H_-$ yields $-I$, since $w = z+2\pi i$ for $w\in H_-$ and $f(w) = -f(z)$.
-Then reversing the orientation, going right-to-left yields $\int_{H_i} f = I$.
+::: pf
 
-Claim: the integrals over the sides $V_{\pm}$ vanish. For the right,
-\[
-\abs{\int_{V_+} f(z) \dz} 
-&\leq 2\pi \sup_{t\in [0, 2\pi]} \abs{e^{R + it\over 2} \over 1 + e^{R + it} } \\
-&\leq 2\pi \sup_t {\abs{ e^{R\over 2} e^{it \over 2} }  \over \abs{e^{R}e^{it}} - 1} \\
-&\leq 2\pi \sup_t {\abs{ e^{R\over 2} }  \over \abs{e^{R}} - 1} \\
-&\in \bigo(e^{- {R\over 2} }) \to 0
-.\]
+::: {.pf-step #horizontal}
+$\displaystyle\int_{H_+}f + \int_{H_-}f = 2\int_{-R}^R f(x)\,dx$.
 
-For the left:
-\[
-\abs{\int_{V_-} f(z) \dz} 
-&\leq \sup_{t\in [0, 2\pi] } \abs{ e^{-R-it\over 2} \over 1 + e^{-R- it}} \\
-&\leq \sup_{t\in [0, 2\pi]}\abs{e^{-R\over 2} e^{-it\over 2}} \\
-&\leq \sup_{t\in [0, 2\pi]}\abs{e^{-R\over 2}} \\
-&\in \bigo(e^{- {R\over 2} }) \to 0
-,\]
-where we've thrown away positive terms in the denominator, which only makes this quantity larger.
-
-Finding the poles within $\Gamma$: the poles occur when the denominator vanishes, i.e. when $e^z = -1$; writing $z = x + iy$, $e^z = e^x e^{iy} = -1$ forces $e^x = 1$ (so $x = 0$) and $e^{iy} = -1$ (so $y = (2k+1)\pi$), giving $z = (2k+1)\pi i$ for $k \in \ZZ$.
-Exactly one falls into this contour, $z_k = i\pi$.
-By the residue theorem,
-\[
-2\pi i \Res_{z=i\pi} f(z) = \int_\Gamma f(z) \dz = \qty{\int_{H_-} + \int_{H_+}} f = 2I \implies I = \pi i \Res_{z=i\pi } f
-.\]
-Computing this residue:
-\[
-\pi i \Res_{z=i\pi }f(z) 
-&= \pi i \lim_{z\to i\pi} { (z-i\pi) e^{z\over 2}\over e^z + 1} \\
-&\eqLH \pi i \lim_{z\to i\pi} {e^{z\over 2} \over e^z} \\
-&= \pi i  e^{-i\pi \over 2} \\
-&= \pi
-.\]
+::: pf-proof
+$f(z+2\pi i) = e^{i\pi}f(z) = -f(z)$, and $H_-$ is traversed from $R+2\pi i$ to $-R+2\pi i$, so $\int_{H_-}f = -\int_{-R}^R f(x+2\pi i)\,dx = \int_{-R}^R f(x)\,dx$.
+:::
 
 :::
 
+::: {.pf-step #vertical}
+$\displaystyle\int_{V_\pm}f\to0$ as $R\to\infty$.
+
+::: pf-proof
+Each side has length $2\pi$.
+On $V_+$, $\abs{f(R+it)}\le\dfrac{e^{R/2}}{e^R-1}$, and on $V_-$, $\abs{f(-R+it)}\le\dfrac{e^{-R/2}}{1-e^{-R}}$; both bounds are $O(e^{-R/2})$.
+:::
+
+:::
+
+::: {.pf-step #residue}
+The only pole of $f$ inside $\Gamma_R$ is $i\pi$, with $\operatorname{Res}_{z=i\pi}f = -i$.
+
+::: pf-proof
+$1+e^z = 0$ exactly when $z = (2k+1)\pi i$ with $k\in\ZZ$, and only $k=0$ lies in $0<\Im z<2\pi$.
+The zero is simple, so the residue is $\dfrac{e^{z/2}}{e^z}\Big|_{z=i\pi} = \dfrac{i}{-1}$.
+:::
+
+:::
+
+::: pf-step
+$I = \boxed{\pi}$.
+
+::: pf-proof
+By the residue theorem and step [](#residue){.pf-ref}, $\oint_{\Gamma_R}f = 2\pi i\cdot(-i) = 2\pi$ for $R>0$.
+Letting $R\to\infty$, steps [](#horizontal){.pf-ref} and [](#vertical){.pf-ref} give $2I = 2\pi$; the integral $I$ converges absolutely since $f(x) = O(e^{-\abs x/2})$.
+:::
+
+:::
+
+:::
+
+:::
