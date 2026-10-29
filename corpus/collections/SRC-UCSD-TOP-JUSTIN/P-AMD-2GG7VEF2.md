@@ -22,12 +22,10 @@ Show $\pi_1(S^n) = 1$ for $n\geq 2$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that for all integers $n \geq 2$, the fundamental group $\pi_1(S^n, x_0)$ is trivial.
-
 ::: pf
 
 ::: pf-step
-Cover $S^n$ by two open subsets $U$ and $V$.
+$U = S^n \setminus \{S\}$ and $V = S^n \setminus \{N\}$, for the poles $N$ and $S$, are open and cover $S^n$.
 
 ::: pf-proof
 
@@ -120,8 +118,8 @@ By steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}, $U \cap V \cong \RR^n \setmi
 
 :::
 
-::: {.pf-step #s4}
-Apply the Seifert-van Kampen theorem to the cover $\{U, V\}$.
+::: pf-step
+$\pi_1(S^n, x_0) = 1$.
 
 ::: pf-proof
 
@@ -152,10 +150,6 @@ Substituting $\pi_1(U, x_0) = 1$ and $\pi_1(V, x_0) = 1$ from step [](#s2){.pf-r
 
 :::
 
-:::
-
-::: pf-qed
-Step [](#s4){.pf-ref} establishes $\pi_1(S^n, x_0) = 1$ for all $n \geq 2$.
 :::
 
 :::
