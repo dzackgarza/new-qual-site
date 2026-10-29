@@ -87,9 +87,9 @@ The following are topological groups, with the subspace topology from the space 
 
 - the orthogonal group $O(n)$ and the special orthogonal group $\SO(n)$;
 
-- the unitary group $U(n)$ and the special unitary group $SU(n)$ of complex unitary matrices of determinant $1$;
+- the unitary group $U(n)$ and the special unitary group $\SU(n)$ of complex unitary matrices of determinant $1$;
 
-- the real symplectic group $Sp(2n,\RR)$.
+- the real symplectic group $\operatorname{Sp}(2n,\RR)$.
 
 :::
 
