@@ -46,7 +46,7 @@ For sufficiently large $n$, the positive-degree cohomology of every $\mathcal E_
 $$
 H^i(\PP_A^r,\mathcal K_0(n))\cong H^{i+r}(\PP_A^r,\mathcal K_r(n))=0.
 $$
-The last vanishing follows from the standard cover by $r+1$ affine opens: its intersections are affine, so its Cech complex computes quasi-coherent cohomology and has no terms in degrees greater than $r$ [@Har10a, Theorem III.4.5]. For $r=0$, affineness gives the vanishing directly.
+The last vanishing follows from the standard cover by $r+1$ affine opens: its intersections are affine, so its Čech complex computes quasi-coherent cohomology and has no terms in degrees greater than $r$ [@Har10a, Theorem III.4.5]. For $r=0$, affineness gives the vanishing directly.
 Thus a finite initial part of the resolution suffices for this dimension-shifting proof, even when the resolution does not terminate.
 :::
 
