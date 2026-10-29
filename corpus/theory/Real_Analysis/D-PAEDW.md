@@ -4,7 +4,7 @@ id: D-PAEDW
 kind: definition
 title: Limit superior and limit inferior of a sequence of sets
 prompts:
-- What are $\limsup_n A_n$ and $\liminf_n A_n$ for a sequence of sets?
+- What are $\limsup_n E_n$ and $\liminf_n E_n$ for a sequence of sets?
 - Define $\limsup, \liminf$ for sequences of sets. What are their containments?
 classification:
   areas:
