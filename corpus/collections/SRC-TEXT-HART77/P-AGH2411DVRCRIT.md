@@ -20,12 +20,16 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne II.4.11(a) has no restriction, but when O = K is a field and L/K is algebraic no DVR of L dominates O. The statement now assumes that O is not a field or that L is not algebraic over K.
 ---
 
 ::: problem
 If we are willing to do harder commutative algebra and stick to noetherian schemes, then the valuative criteria of separatedness and properness can be expressed using only **discrete** valuation rings.
 
-a. If $\OO, \mfm$ is a noetherian local domain with quotient field $K$, and if $L$ is a finitely generated field extension of $K$, then there exists a discrete valuation ring $R$ of $L$ dominating $\OO$.
+a. If $\OO, \mfm$ is a noetherian local domain with quotient field $K$, and if $L$ is a finitely generated field extension of $K$ such that $\OO$ is not a field or $L$ is not algebraic over $K$, then there exists a discrete valuation ring $R$ of $L$ dominating $\OO$.
    Prove this in the following steps.
 
     - By taking a polynomial ring over $\OO$, reduce to the case where $L$ is a finite extension field of $K$.
@@ -47,36 +51,9 @@ be a noetherian local domain with fraction field $K$, and let $L/K$ be finitely 
 
 ::: pf
 
-::: {.pf-step #s1}
-
-In the exceptional case $\mathfrak m=0$ and $L/K$ finite algebraic, no DVR of $L$ dominates $\OO=K$.
-
-::: pf-proof
-
-Suppose $R\subseteq L$ is a valuation ring containing $K$ and with
-\[
-\mathfrak m_R\cap K=(0).
-\]
-Let $v$ be its valuation.  Then $v(c)=0$ for every $c\in K^\times$.
-
-If $0\ne\alpha\in L$ is algebraic over $K$, write a polynomial relation
-\[
-c_0+c_1\alpha+\cdots+c_n\alpha^n=0
-\]
-with $c_0c_n\ne0$.
-If $v(\alpha)>0$, the term $c_0$ has strictly smaller value than every other term, impossible in a vanishing sum.  If $v(\alpha)<0$, the term $c_n\alpha^n$ has strictly smaller value than every other term, again impossible.  Hence
-\[
-v(\alpha)=0.
-\]
-Thus the valuation is trivial on all of $L$, so $R=L$ is a field rather than a DVR.
-
-:::
-
-:::
-
 ::: {.pf-step #s2}
 
-Apart from the exceptional case of step [](#s1){.pf-ref}, it is enough to prove part (a) when $L/K$ is finite and $\mathfrak m\ne0$.
+It is enough to prove part (a) when $L/K$ is finite and $\mathfrak m\ne0$.
 
 ::: pf-proof
 
@@ -90,7 +67,7 @@ L/K(t_1,\ldots,t_r)
 \]
 is finite.
 
-If $r=0$, then $L/K$ is already finite.  Since we have excluded step [](#s1){.pf-ref}, $\mathfrak m\ne0$.
+If $r=0$, then $L/K$ is already finite.  Since $L$ is algebraic over $K$, the hypothesis of part (a) says that $\OO$ is not a field, so $\mathfrak m\ne0$.
 
 If $r>0$, put
 \[
@@ -271,11 +248,11 @@ Its fraction field is $L$, and the contraction of its maximal ideal to $\OO'_{\m
 
 ::: {.pf-step #s8}
 
-This proves the corrected statement of part (a).
+This proves part (a).
 
 ::: pf-proof
 
-Step [](#s2){.pf-ref} reduces to the finite-extension, nonfield case; steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct the required DVR.  Step [](#s1){.pf-ref} records the unique excluded case in the statement of part (a).
+Step [](#s2){.pf-ref} reduces to the finite-extension, nonfield case; steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct the required DVR.
 
 :::
 
@@ -489,20 +466,10 @@ The forward implications are step [](#s9){.pf-ref}.  The converse separatedness 
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove the corrected form of part (a), and steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (b).
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (a), and steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (b).
 
 :::
 
 :::
 
-:::
-
-::: {.remark title="Erratum"}
-Part (a), as stated in the source, has one exceptional case.  If $\OO=K$ is a field and $L/K$ is finite algebraic, then no nontrivial discrete valuation ring of $L$ can dominate $K$: any valuation of $L$ which is trivial on $K$ is trivial on the algebraic extension $L/K$, so its valuation ring is the field $L$.
-
-The intended statement is correct provided either $\OO$ is not a field or
-\[
-\operatorname{trdeg}_K L>0.
-\]
-This is the form proved in the solution.  It is exactly the form needed in the nontrivial specialization arguments of part (b).
 :::
