@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MCTII
 kind: problem
-title: Estimating and conformal maps
+title: Schwarz lemma bound for a bounded function on the right half-plane
 classification:
   areas:
   - complex-analysis
@@ -20,22 +20,32 @@ Find an upper bound for $\abs{f(2)}$.
 :::
 
 ::: {.solution}
-Use
-\[
-\phi(z)={z-1\over z+1},
-\]
-which maps the right half-plane biholomorphically onto $\DD$ and satisfies $\phi(1)=0$.
-Set
-\[
-F=f\circ\phi^{-1}:\DD\to\DD.
-\]
-Then $F(0)=f(1)=0$, so Schwarz's lemma gives $|F(w)|\le|w|$.
-Since
-\[
-\phi(2)={1\over3},
-\]
-we obtain
-\[
-|f(2)|=|F(\phi(2))|=|F(1/3)|\le {1\over3}.
-\]
+Let $\phi(z)\coloneqq\frac{z-1}{z+1}$.
+
+::: pf
+
+::: {.pf-step #cayley}
+$\phi$ maps $\theset{\Re z>0}$ biholomorphically onto $\DD$, with $\phi(1)=0$ and $\phi(2)=\frac13$.
+
+::: pf-proof
+$\abs{z-1}<\abs{z+1}$ if and only if $\Re z>0$, and $\phi$ is a Möbius transformation with inverse $w\mapsto\frac{1+w}{1-w}$, which maps $\DD$ into $\theset{\Re z>0}$.
+:::
+
+:::
+
+::: pf-step
+$\abs{f(2)}\le\boxed{\frac13}$.
+
+::: pf-proof
+By step [](#cayley){.pf-ref}, $F\coloneqq f\circ\phi^{-1}$ is holomorphic on $\DD$ with $\abs F\le1$ and $F(0)=f(1)=0$, so the Schwarz lemma gives $\abs{F(w)}\le\abs w$. Hence $\abs{f(2)}=\abs{F(\frac13)}\le\frac13$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+The bound is attained by $f=\phi$.
 :::
