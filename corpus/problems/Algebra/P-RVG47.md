@@ -24,34 +24,41 @@ Do you know a Lie group that has no faithful finite-dimensional representation?
 :::
 
 ::: {.solution}
-A standard example is the universal covering group
-\[
-G=\widetilde{\operatorname{SL}_2(\mathbb R)}.
-\]
-Let
-\[
-p:G\to\operatorname{SL}_2(\mathbb R)
-\]
-be the covering homomorphism. Its kernel is infinite cyclic and central:
-\[
-\ker p\cong\pi_1(\operatorname{SL}_2(\mathbb R))\cong\mathbb Z.
-\]
 
-Let $\rho:G\to\operatorname{GL}(V)$ be a finite-dimensional continuous representation. Its differential
-\[
-d\rho:\mathfrak{sl}_2(\mathbb R)\to\mathfrak{gl}(V)
-\]
-complexifies to a finite-dimensional representation of $\mathfrak{sl}_2(\mathbb C)$. Every such representation integrates to the simply connected complex group $\operatorname{SL}_2(\mathbb C)$. Restricting the resulting group representation to the real subgroup $\operatorname{SL}_2(\mathbb R)$ and then pulling back along $p$ gives a representation of $G$ with differential $d\rho$.
+Let $G=\widetilde{\operatorname{SL}_2(\RR)}$ be the universal covering group of $\operatorname{SL}_2(\RR)$, with covering homomorphism $p\colon G\to\operatorname{SL}_2(\RR)$. Its kernel is central and $\ker p\cong\pi_1(\operatorname{SL}_2(\RR))\cong\ZZ$. Let $\rho\colon G\to\operatorname{GL}(V)$ be a finite-dimensional continuous representation; replacing a real $V$ by $V\otimes_\RR\CC$, we may take $V$ complex.
 
-Because $G$ is connected and simply connected, a finite-dimensional Lie-group representation is uniquely determined by its differential. Hence $\rho$ is exactly that pullback. Therefore
-\[
-\ker p\subseteq\ker\rho.
-\]
-Since $\ker p\ne1$, no finite-dimensional representation of $G$ is faithful.
+::: pf
 
-Thus
-\[
-\boxed{\widetilde{\operatorname{SL}_2(\mathbb R)}}
-\]
-is a connected Lie group with no faithful finite-dimensional representation.
+::: {.pf-step #factor}
+
+There is a representation $\rho'$ of $\operatorname{SL}_2(\RR)$ with $d(\rho'\circ p)=d\rho$.
+
+::: pf-proof
+
+The differential $d\rho\colon\mathfrak{sl}_2(\RR)\to\mathfrak{gl}(V)$ extends complex-linearly to a representation of $\mathfrak{sl}_2(\CC)$. Since $\operatorname{SL}_2(\CC)$ is simply connected, this integrates to a representation of $\operatorname{SL}_2(\CC)$; let $\rho'$ be its restriction to $\operatorname{SL}_2(\RR)$. The differential of $\rho'\circ p$ is the restriction of the $\mathfrak{sl}_2(\CC)$-representation to $\mathfrak{sl}_2(\RR)$, which is $d\rho$.
+
+:::
+
+:::
+
+::: {.pf-step #equal}
+
+$\rho=\rho'\circ p$.
+
+::: pf-proof
+
+$G$ is connected and simply connected, so a finite-dimensional representation of $G$ is determined by its differential. Step [](#factor){.pf-ref} shows that the two representations have the same differential.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#equal){.pf-ref}, $\ker p\subseteq\ker\rho$, and $\ker p\cong\ZZ$ is nontrivial. Hence no finite-dimensional representation of $G$ is faithful, and $\boxed{\widetilde{\operatorname{SL}_2(\RR)}}$ is a connected Lie group with no faithful finite-dimensional representation.
+
+:::
+
+:::
+
 :::
