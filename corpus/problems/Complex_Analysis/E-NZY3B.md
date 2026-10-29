@@ -30,7 +30,7 @@ Write $\sqrt{\cdot}$ for the principal branch of the square root on $\CC\setminu
 ::: pf
 
 ::: {.pf-step #mobius}
-$T(z) \coloneqq \frac{z+1}{z-1}$ maps $\CC\sm[-1,1]$ conformally onto $\CC\setminus(-\infty,0]$.
+$T(z) \coloneqq \frac{z+1}{z-1}$ maps $\CC\sm[-1,1]$ conformally onto $\CC\setminus\big((-\infty,0]\cup\{1\}\big)$.
 
 ::: pf-proof
 $T$ is a Möbius transformation with $T(-1)=0$, $T(1)=\infty$, $T(\infty)=1$, so it maps the circle $\RR\cup\{\infty\}$ to itself and the arc $[-1,1]$ through $T(0)=-1$ onto the arc $[-\infty,0]$ through $-1$.
