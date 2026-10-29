@@ -44,7 +44,7 @@ The \dfn{exceptional inverse image} $f^!$ is the right adjoint of $Rf_!$; it exi
 ::: {.proposition}
 1. For $f$ proper, $Rf_! = Rf_*$; for $j$ an open inclusion, $j^! = j^{-1}$.
 
-2. Base change: for a Cartesian square with $g \colon Y' \to Y$ and $f' \colon X' \to Y'$, $g^{-1} Rf_! \cong Rf'_! g'^{-1}$.
+2. Base change: for a Cartesian square with $X' = \fiberprod{X}{Y}{Y'}$, projections $g' \colon X' \to X$ and $f' \colon X' \to Y'$, and $g \colon Y' \to Y$, $g^{-1} Rf_! \cong Rf'_! g'^{-1}$.
 
 3. Projection formula:
    $$
