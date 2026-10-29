@@ -306,7 +306,14 @@ mathematical correction under its own node, not under copy policy.
     coordinates that the source does not ask for (C8); the UCLA 2009 and 2010 real-analysis
     collections are not checked for complex-analysis problems (C11); P-4FH62 holds 17
     problems that six UGA exams cite as one card (C12). **Acceptance:** each item repaired
-    against its source PDF.
+    against its source PDF. **Closed.** UNSORTED moved to `ad3-unsorted-dissolution`.
+    C7: Problem 4 was P-7QJS2; Problem 3 was merged into P-8XT21 and is now P-SBKCW. C8,
+    C11 (four UCLA 2009-2010 papers) and C12 (P-4FH62 split; the six UGA exam parts are
+    listed by their exams, eleven parts stay in the real-analysis bucket) are repaired. C5:
+    no qualifying href found in this repository or sibling clones (only make-me-a-qual and
+    qual-review-and-solutions copies, which are not provenance); the web search service
+    failed, so the four lists stay empty. UCLA Fall 2010 Problems 1, 7 and 10 have no card
+    in SRC-UCLA-RA-FALL-2010.
   Round 3 (provenance finding C5) injected the node below; `audited-deployment` needs it.
   - **`ad3-unsorted-dissolution`**. **Needs:** none. The UNSORTED buckets (about 1500
     problems) are not dissolved into source collections. For each card, one at a time: find
