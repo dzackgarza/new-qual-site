@@ -1,6 +1,6 @@
 ---
 title: Which technique?
-order: 0
+order: 1
 topics:
 - Integrals
 - u-Substitution

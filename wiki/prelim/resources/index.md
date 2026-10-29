@@ -1,6 +1,6 @@
 ---
 title: Resources
-order: 18
+order: 6
 ---
 
 # Resources

@@ -1,5 +1,5 @@
 ---
-order: 52
+order: 5
 title: UGA prelim exams, Fall 2014 to Fall 2017
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Solutions
-order: 30
+order: 4
 ---
 
 # Solutions

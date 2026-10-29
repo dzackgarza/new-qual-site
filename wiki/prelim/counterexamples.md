@@ -1,6 +1,6 @@
 ---
 title: Counterexamples
-order: 8
+order: 3
 topics:
 - Counterexamples
 - Logic and Quantifiers
