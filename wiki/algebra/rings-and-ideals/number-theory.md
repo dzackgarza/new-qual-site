@@ -1,4 +1,5 @@
 ---
+title: Number theory
 order: 25
 topics:
 - Number Theory
