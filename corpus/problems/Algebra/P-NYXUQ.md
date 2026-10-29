@@ -19,6 +19,10 @@ audit:
 - event: solution-written
   by: openai-gpt-5.6-sol
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source asks only "What group-theoretic construct relates the stabilizer of two points in the same orbit under a group action?"; the statement declares the action and asks for a proof of the relation the solution establishes.'
 ---
 
 ::: {.problem}
