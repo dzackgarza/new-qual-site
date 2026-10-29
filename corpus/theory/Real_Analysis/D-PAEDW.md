@@ -3,7 +3,6 @@ schema: qual/card@1
 id: D-PAEDW
 kind: definition
 title: Limit superior and limit inferior of a sequence of sets
-slogan: '$\liminf$ means eventually always; $\limsup$ means infinitely often.'
 prompts:
 - What are $\limsup_n A_n$ and $\liminf_n A_n$ for a sequence of sets?
 - Define $\limsup, \liminf$ for sequences of sets. What are their containments?
@@ -29,7 +28,7 @@ $$
 :::
 
 ::: {.remark}
-The descriptions by membership follow from the formulas.
+In words, $\liminf$ means "eventually always" and $\limsup$ means "infinitely often"; these descriptions follow from the formulas.
 A point lies in $\bigcap_{n\geq N}E_n$ for some $N$ exactly when it lies in every $E_n$ with $n\geq N$ for some $N$, that is, in all but finitely many $E_n$.
 A point lies in $\bigcup_{n\geq N}E_n$ for every $N$ exactly when for every $N$ it lies in some $E_n$ with $n\geq N$, that is, in infinitely many $E_n$.
 A point in all but finitely many $E_n$ lies in infinitely many of them, so $\liminf_n E_n\subseteq\limsup_n E_n$.
