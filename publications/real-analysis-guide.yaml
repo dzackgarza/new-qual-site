@@ -167,7 +167,6 @@ sections:
       - ref: D-RA-WORKSHOP-D7-CONVERGENCE
       - ref: T-RA-WORKSHOP-D7-6-1
       - ref: T-ERNLN
-      - ref: T-RA-WORKSHOP-D7-6-2
       - ref: FF-IAUQG
       - ref: T-RA-WORKSHOP-D7-6-3
       - ref: T-RA-WORKSHOP-D7-6-4
