@@ -22,13 +22,13 @@ audit:
 ---
 
 ::: {.problem}
-- Show that every field is simple.
+Show that every field is simple.
 :::
 
 ::: {.solution}
 Let $F$ be a field and let $I\trianglelefteq F$. If $I=(0)$ there is nothing to prove. Otherwise choose $0\ne x\in I$. Since $x$ is a unit,
-\[
+$$
 1=x^{-1}x\in I.
-\]
+$$
 Therefore every $a\in F$ satisfies $a=a\cdot1\in I$, so $I=F$. Thus the only ideals of $F$ are $(0)$ and $F$, and every field is a simple ring.
 :::
