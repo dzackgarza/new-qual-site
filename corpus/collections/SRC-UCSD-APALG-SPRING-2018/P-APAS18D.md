@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS18D
 kind: problem
-title: $D_8$-orbits on diagonals of a regular octogon; rank of the Reynolds operator
+title: $D_8$-orbits on diagonals of a regular octagon; rank of the Reynolds operator
 classification:
   areas:
   - applied-algebra
@@ -28,22 +28,33 @@ What is the rank of $R_{D_8}$?
 :::
 
 ::: {.solution}
-Label the vertices of the regular octagon by the elements of $\ZZ/8\ZZ$. An unordered pair of distinct vertices is determined up to the dihedral action by its cyclic distance
-$$
-d=\min(|i-j|,8-|i-j|).
-$$
-Edges have $d=1$, so the diagonals have $d=2,3,4$. The dihedral group preserves $d$, and it acts transitively on the diagonals of each fixed distance. Therefore $X$ has exactly three $D_8$-orbits.
+Label the vertices of the octagon by $\ZZ/8\ZZ$, so that $D_8$ acts by $i\mapsto i+1$ and $i\mapsto -i$. For a pair $\{i,j\}$ of distinct vertices put $d(i,j)\coloneqq\min(\abs{i-j},8-\abs{i-j})$, computed with representatives in $\{0,\ldots,7\}$.
 
-For a permutation representation $\CC[X]$, the invariant subspace consists exactly of functions on $X$ that are constant on each orbit. Hence
-$$
-\dim V^{D_8}=3.
-$$
-The Reynolds operator is the projection of $V$ onto $V^{D_8}$: it fixes every invariant vector, and its image is invariant because for $h\in D_8$,
-$$
-hR_{D_8}(v)=\frac1{|D_8|}\sum_{g\in D_8}hg\cdot v=R_{D_8}(v).
-$$
-Thus
-$$
-\operatorname{rank}R_{D_8}=\dim V^{D_8}=3.
-$$
+::: pf
+
+::: {.pf-step #orbits}
+
+(a) The action has $\boxed{3}$ orbits.
+
+::: pf-proof
+
+A pair is an edge when $d=1$, so the diagonals are the pairs with $d\in\{2,3,4\}$; there are $8+8+4=20$ of them. Rotations and reflections preserve $d$, so diagonals with different $d$ lie in different orbits. The rotation $i\mapsto i+k$ sends $\{0,d\}$ to $\{k,k+d\}$, so the rotations alone act transitively on the diagonals with a given $d$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) $\operatorname{rank}R_{D_8}=\boxed{3}$.
+
+::: pf-proof
+
+For $h\in D_8$, $hR_{D_8}(v)=\frac1{\abs{D_8}}\sum_{g}hg\cdot v=R_{D_8}(v)$, so the image of $R_{D_8}$ lies in $V^{D_8}$; and $R_{D_8}$ fixes every invariant vector. Hence $R_{D_8}$ is a projection onto $V^{D_8}$ and its rank is $\dim V^{D_8}$. A vector $\sum_x c_x x\in\CC[X]$ is invariant exactly when $c$ is constant on orbits, so $\dim V^{D_8}$ is the number of orbits, $3$ by step [](#orbits){.pf-ref}.
+
+:::
+
+:::
+
+:::
 :::
