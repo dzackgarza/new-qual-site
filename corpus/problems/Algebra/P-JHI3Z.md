@@ -25,7 +25,7 @@ What is a nilpotent matrix?
 :::
 
 ::: {.solution}
-A square matrix $A$ over a ring is nilpotent if $A^r=0$ for some integer $r\ge1$. The least such $r$ is the nilpotency index of $A$.
+A square matrix $A$ over a ring is [[D-HGMOW|nilpotent]] if $A^r=0$ for some integer $r\ge1$. The least such $r$ is the nilpotency index of $A$.
 :::
 
 ::: {.remark}
