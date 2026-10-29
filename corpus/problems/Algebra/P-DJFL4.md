@@ -48,14 +48,14 @@ The map $L$ is not surjective.
 ::: pf-proof
 
 By rank-nullity,
-\[
-5=\dim\ker L+\dim\operatorname{im}L.
-\]
+$$
+5=\dim\ker L+\dim\imL.
+$$
 Since $\dim\ker L\ge1$,
-\[
-\dim\operatorname{im}L\le4<5=\dim\RR^5.
-\]
-Hence $\operatorname{im}L\ne\RR^5$.
+$$
+\dim\imL\le4<5=\dim\RR^5.
+$$
+Hence $\imL\ne\RR^5$.
 
 :::
 
