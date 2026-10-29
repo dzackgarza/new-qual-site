@@ -18,34 +18,9 @@ For $x_n \coloneqq \frac{n+1}{n}$, $\sup_n x_n = x_1 = 2$, while $x_n\to1$, so $
 
 [[T-TRW6N]]
 
-::: {.theorem title="Fatou's lemma"}
-If $f_n \geq 0$ are Lebesgue measurable functions on $\RR^d$ and $f_n\to f$ pointwise, then
-$$
-\int f \leq \liminf_{n\to\infty} \int f_n.
-$$
+[[T-LDJNS]]
 
-:::
-
-::: {.proof}
-Let $g$ be a bounded measurable function supported on a set of finite measure with $0\leq g\leq f$, and let $g_n \coloneqq \min(g, f_n)$.
-Then $g_n\to\min(g,f) = g$ pointwise, and the $g_n$ are uniformly bounded and supported in the support of $g$, so the bounded convergence theorem gives $\int g_n\to\int g$.
-Since $\int g_n\leq\int f_n$, this gives $\int g\leq\liminf_n\int f_n$.
-Taking the supremum over all such $g$ gives $\int f\leq\liminf_n\int f_n$.
-
-:::
-
-::: {.theorem title="Monotone convergence theorem"}
-If $0 \leq f_1 \leq f_2 \leq \cdots$ are Lebesgue measurable functions and $f(x) \coloneqq \lim_n f_n(x)$, then
-$$
-\int f = \lim_{n\to\infty} \int f_n.
-$$
-
-:::
-
-::: {.proof}
-Since $f_n\leq f$, $\limsup_n\int f_n\leq\int f$, and Fatou's lemma gives $\int f\leq\liminf_n\int f_n$.
-
-:::
+[[T-5K3IO]]
 
 ## Differentiation
 
@@ -70,27 +45,7 @@ $$
 
 :::
 
-::: {.proof}
-Let $F(x)\coloneqq m(E\cap(-\infty,x])$, an indefinite integral of $\chi_E\in L^1(\RR)$.
-By the Lebesgue differentiation theorem, $F'=\chi_E$ almost everywhere, and at each point $x$ where $F$ is differentiable,
-$$
-\frac{m(E\cap B(x,r))}{m(B(x,r))} = \frac{F(x+r)-F(x-r)}{2r}\to F'(x)\quad (r\to0).
-$$
-
-:::
-
-::: {.theorem title="A continuous nowhere differentiable function"}
-There exists a continuous function $f\colon\RR\to\RR$ that is differentiable at no point.
-
-:::
-
-::: {.remark}
-Weierstrass's function $\sum_{n\geq0} a^n\cos(b^n\pi x)$ with $0<a<1$, $b$ an odd positive integer, and $ab>1+3\pi/2$ is such a function; see [[real-analysis/counterexamples-undergraduate#The Weierstrass function|Undergraduate counterexamples]].
-Another such function is $f(x)\coloneqq\sum_{n\geq1} a_n\sin(b_nx)$ with $\sum a_n<\infty$ and $a_nb_n\to\infty$ rapidly, for example $a_n = 10^{-n}$ and $b_n = 10^{6n}$.
-For each $n$ and $x$, an increment $\Delta x$ of size comparable to $1/b_n$ makes the $n$th term change by an amount comparable to $a_n$, while the terms with $k<n$ change by at most $\sum_{k<n}a_kb_k/b_n$, which is small compared with $a_n$, and the terms with $k>n$ change by at most $\sum_{k>n}2a_k$, also small compared with $a_n$.
-So $\abs{\Delta f/\Delta x}$ is comparable to $a_nb_n\to\infty$, and $f'(x)$ does not exist.
-
-:::
+A continuous function $\RR\to\RR$ need not be differentiable at any point: see [[real-analysis/counterexamples-undergraduate#The Weierstrass function|the Weierstrass function]].
 
 ## Baire category
 
