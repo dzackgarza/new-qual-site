@@ -17,197 +17,131 @@ review: draft
 ::: {.problem}
 Let $n\ge3$, let $\alpha=2^{1/n}$, and let $\zeta_n$ be a primitive $n$th root of unity.
 
-1. Show that the splitting field of $x^n-2$ over $\QQ$ is
-\[
+(a) Show that the splitting field of $x^n-2$ over $\QQ$ is
+$$
 L=\QQ(\alpha,\zeta_n),
-\]
+$$
 and that
-\[
+$$
 \Gal(L/\QQ)\hookrightarrow (\ZZ/n\ZZ)\rtimes(\ZZ/n\ZZ)^\times
-\]
+$$
 via
-\[
+$$
 \sigma(\alpha)=\zeta_n^a\alpha,
 \qquad
 \sigma(\zeta_n)=\zeta_n^b.
-\]
+$$
 
-2. Prove that $\Gal(L/\QQ)$ is dihedral of order $2n$ exactly for
-\[
+(b) Prove that $\Gal(L/\QQ)$ is dihedral of order $2n$ exactly for
+$$
 n=3,4,6.
-\]
+$$
 :::
 
 ::: {.solution}
+Write $\zeta=\zeta_n$, write $(a,b)$ for the automorphism with $\alpha\mapsto\zeta^a\alpha$ and $\zeta\mapsto\zeta^b$, and let $G=\Gal(L/\QQ)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #affine}
+(a) $L=\QQ(\alpha,\zeta)$ is the splitting field, and $\sigma\mapsto(a,b)$ is an injective homomorphism $G\hookrightarrow(\ZZ/n\ZZ)\rtimes(\ZZ/n\ZZ)^\times$ for the law $(a,b)(c,d)=(a+bc,bd)$.
 
-The affine embedding.
-The roots of $x^n-2$ are
-\[
-\zeta_n^j\alpha,
-\qquad j\in\ZZ/n\ZZ,
-\]
-so the splitting field is $L=\QQ(\alpha,\zeta_n)$.
+::: pf-proof
+The roots of $x^n-2$ are $\zeta^j\alpha$ for $j\in\ZZ/n\ZZ$, and they generate $\QQ(\alpha,\zeta)$ because $\zeta=(\zeta\alpha)/\alpha$. Every $\sigma\in G$ permutes these roots, so $\sigma(\alpha)=\zeta^a\alpha$ for a unique $a\in\ZZ/n\ZZ$, and $\sigma(\zeta)=\zeta^b$ for a unique $b\in(\ZZ/n\ZZ)^\times$. Since $\alpha$ and $\zeta$ generate $L$, the pair $(a,b)$ determines $\sigma$. For $\sigma=(a,b)$ and $\tau=(c,d)$ we have $\sigma\tau(\alpha)=\sigma(\zeta^c\alpha)=\zeta^{a+bc}\alpha$ and $\sigma\tau(\zeta)=\zeta^{bd}$.
+:::
 
-Every $\sigma\in\Gal(L/\QQ)$ permutes these roots, hence
-\[
-\sigma(\alpha)=\zeta_n^a\alpha
-\]
-for a unique $a\in\ZZ/n\ZZ$. Also
-\[
-\sigma(\zeta_n)=\zeta_n^b
-\]
-for a unique $b\in(\ZZ/n\ZZ)^\times$. Since $\alpha$ and $\zeta_n$ generate $L$, the pair $(a,b)$ determines $\sigma$, giving the claimed injection. Composition is the affine law
-\[
-(a,b)(c,d)=(a+bc,bd).
-\]
+:::
+
+::: {.pf-step #dihedral-small}
+(b) For $n=3,4,6$, $G\cong D_{2n}$.
+
+::: pf-proof
+
+::: {.pf-step #degree-small}
+$[L:\QQ]=2n$.
+
+::: pf-proof
+$[\QQ(\alpha):\QQ]=n$ since $x^n-2$ is irreducible by Eisenstein's criterion at $2$. For $n=3,4,6$ we have $\varphi(n)=2$, and $\zeta\notin\RR\supseteq\QQ(\alpha)$, so $[L:\QQ(\alpha)]=2$.
+:::
 
 :::
 
 ::: pf-step
+$G\cong D_{2n}$.
 
-The cases $n=3,4,6$ are dihedral.
-For $n=3,4,6$, the cyclotomic field has degree $2$. In each case
-\[
-\QQ(\alpha)\cap\QQ(\zeta_n)=\QQ:
-\]
-for $n=3,6$ the cyclotomic field is imaginary quadratic while $\QQ(\alpha)\subset\RR$, and for $n=4$ it is $\QQ(i)$ while $\QQ(\alpha)$ is real. Thus
-\[
-[L:\QQ]=2n.
-\]
-There is a rotation
-\[
-r:\alpha\mapsto\zeta_n\alpha,\qquad \zeta_n\mapsto\zeta_n
-\]
-of order $n$, and complex conjugation
-\[
-s:\alpha\mapsto\alpha,\qquad \zeta_n\mapsto\zeta_n^{-1}
-\]
-has order $2$ and satisfies
-\[
-srs=r^{-1}.
-\]
-Hence
-\[
-\Gal(L/\QQ)\cong D_{2n}.
-\]
+::: pf-proof
+The subgroup $\Gal(L/\QQ(\zeta))$ has order $2n/2=n$ by step [](#degree-small){.pf-ref} and embeds into the translations $\{(a,1)\}\cong\ZZ/n\ZZ$, so it is all of them; let $r=(1,1)$, of order $n$. Complex conjugation restricts to $s=(0,-1)$, of order $2$. By the law in step [](#affine){.pf-ref}, $srs=(-1,1)=r^{-1}$. Since $s\notin\langle r\rangle$, the group $\langle r,s\rangle$ has order $2n=\abs{G}$, so $G=\langle r,s\rangle\cong D_{2n}$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #candidates}
+If $G\cong D_{2n}$, then $n\in\{3,4,6,8,12\}$.
+
+::: pf-proof
+Restriction gives a surjection $G\twoheadrightarrow\Gal(\QQ(\zeta)/\QQ)\cong(\ZZ/n\ZZ)^\times$ onto an abelian group, so $(\ZZ/n\ZZ)^\times$ is a quotient of the abelianization of $D_{2n}$, which is $C_2$ for odd $n$ and $C_2\times C_2$ for even $n$. Hence $\varphi(n)\le4$ and $(\ZZ/n\ZZ)^\times$ has exponent at most $2$. For $n\ge3$, $\varphi(n)\le4$ gives $n\in\{3,4,5,6,8,10,12\}$, and for $n=5,10$ the group $(\ZZ/n\ZZ)^\times$ is cyclic of order $4$.
+:::
+
+:::
+
+::: {.pf-step #eight}
+For $n=8$, $G$ is not dihedral.
+
+::: pf-proof
+
+::: pf-step
+$[L:\QQ]=16$.
+
+::: pf-proof
+Both $\QQ(\alpha)$ and $\QQ(\zeta_8)$ contain $\sqrt2=\alpha^4=\zeta_8+\zeta_8^{-1}$. Their intersection is real, and the maximal real subfield of $\QQ(\zeta_8)$ is $\QQ(\sqrt2)$, so the intersection is $\QQ(\sqrt2)$. As $\QQ(\zeta_8)/\QQ$ is Galois, $[L:\QQ(\alpha)]=[\QQ(\zeta_8):\QQ(\sqrt2)]=2$, and $[L:\QQ]=8\cdot2=16$.
+:::
 
 :::
 
 ::: pf-step
+$G$ contains $r=(1,5)$ and $s=(0,7)$, and $G=\langle r,s\rangle$ with $r^8=s^2=1$ and $srs=r^3$.
 
-A dihedral group forces a very small cyclotomic quotient.
-Restriction gives a surjection
-\[
-\Gal(L/\QQ)\twoheadrightarrow
-\Gal(\QQ(\zeta_n)/\QQ)
-\cong(\ZZ/n\ZZ)^\times.
-\]
-If $\Gal(L/\QQ)\cong D_{2n}$, then every abelian quotient factors through the abelianization of $D_{2n}$, which is $C_2$ for odd $n$ and $C_2\times C_2$ for even $n$. Therefore
-\[
-\varphi(n)\le4
-\]
-and $(\ZZ/n\ZZ)^\times$ must have exponent at most $2$.
-
-For $n\ge3$, the cases with $\varphi(n)=2$ are exactly $n=3,4,6$. The only additional cases with $\varphi(n)\le4$ are
-\[
-n=5,8,10,12.
-\]
-For $n=5,10$, the unit group is cyclic of order $4$, so it cannot be an abelian quotient of a dihedral group. It remains to exclude $8$ and $12$.
+::: pf-proof
+Restriction to $\QQ(\zeta_8)$ is surjective, so some $\sigma=(a,5)\in G$. It sends $\sqrt2=\zeta_8+\zeta_8^{-1}$ to $\zeta_8^5+\zeta_8^{-5}=-\sqrt2$, while $\sigma(\alpha^4)=\zeta_8^{4a}\sqrt2$; hence $a$ is odd. The kernel of restriction has order $16/4=4$, so it is $\{(2k,1)\}$, and composing $\sigma$ with a suitable element of it gives $r=(1,5)\in G$. Complex conjugation is $s=(0,7)$. By the law in step [](#affine){.pf-ref}, $r^2=(6,1)$, $r^4=(4,1)$, $r^8=(0,1)$, so $r$ has order $8$; and $srs=(7,5)=r^3$. Every element of $\langle r\rangle$ has $b\in\{1,5\}$, so $s\notin\langle r\rangle$ and $\abs{\langle r,s\rangle}=16=\abs{G}$.
+:::
 
 :::
 
 ::: pf-step
+$G\not\cong D_{16}$.
 
-The case $n=8$ is not dihedral.
-Here
-\[
-\QQ(\alpha)\cap\QQ(\zeta_8)=\QQ(\sqrt2),
-\]
-because both fields contain $\sqrt2=\alpha^4=\zeta_8+\zeta_8^{-1}$, while the intersection is real and the maximal real subfield of $\QQ(\zeta_8)$ is exactly $\QQ(\sqrt2)$. Hence
-\[
-[L:\QQ]=\frac{8\cdot4}{2}=16.
-\]
+::: pf-proof
+In $D_{16}$ the cyclic subgroup of order $8$ is unique, and every element outside it conjugates each element of it to its inverse. Here $\langle r\rangle$ has order $8$, $s\notin\langle r\rangle$, and $srs=r^3\ne r^7=r^{-1}$.
+:::
 
-Restriction to $\QQ(\zeta_8)$ is surjective. Its kernel has order
-\[
-16/4=4
-\]
-and consists of the even translations
-\[
-(0,1),(2,1),(4,1),(6,1).
-\]
-Take the cyclotomic automorphism $\zeta_8\mapsto\zeta_8^5$. Any lift to $L$ must send $\alpha$ to $\zeta_8^a\alpha$ with $a$ odd, because
-\[
-\alpha^4=\sqrt2=\zeta_8+\zeta_8^{-1}
-\]
-is sent to $-\sqrt2$. Composing with an even translation, we may choose a lift
-\[
-r=(1,5).
-\]
-Let complex conjugation be
-\[
-s=(0,7).
-\]
-Using the affine multiplication law,
-\[
-r^8=s^2=1,
-\qquad |r|=8,
-\qquad srs=r^3.
-\]
-They generate a subgroup of order $16$, hence all of $\Gal(L/\QQ)$.
+:::
 
-If this group were $D_{16}$, its cyclic subgroup of order $8$ would be the unique rotation subgroup, and every element outside it would conjugate a generator to its inverse. But here
-\[
-srs=r^3\ne r^{-1}=r^7.
-\]
-Therefore the group is not dihedral.
+:::
+
+:::
+
+::: {.pf-step #twelve}
+For $n=12$, $G$ is not dihedral.
+
+::: pf-proof
+Suppose $G\cong D_{24}$. Restriction to $\QQ(\zeta_{12})$ has image $(\ZZ/12\ZZ)^\times$ of order $4$, so its kernel has order $6$. The kernel consists of translations $(a,1)$, a subgroup of $\ZZ/12\ZZ$, so it is the unique subgroup of order $6$, generated by $(2,1)$. This fixes $\alpha^6=\sqrt2$, so $\sqrt2$ lies in the fixed field of the kernel, which is $\QQ(\zeta_{12})=\QQ(i,\sqrt3)$. But the quadratic subfields of $\QQ(i,\sqrt3)$ are $\QQ(i)$, $\QQ(\sqrt3)$ and $\QQ(\sqrt{-3})$, none of which contains $\sqrt2$.
+:::
 
 :::
 
 ::: pf-step
+$G$ is dihedral of order $2n$ exactly for $\boxed{n=3,4,6}$.
 
-The case $n=12$ is not dihedral.
-
+::: pf-proof
+The cases $3,4,6$ are dihedral by step [](#dihedral-small){.pf-ref}, and steps [](#candidates){.pf-ref}, [](#eight){.pf-ref} and [](#twelve){.pf-ref} exclude every other $n$.
 :::
 
 :::
 
-Suppose for contradiction that
-\[
-\Gal(L/\QQ)\cong D_{24}.
-\]
-Restriction to $\QQ(\zeta_{12})$ has quotient
-\[
-(\ZZ/12\ZZ)^\times\cong C_2\times C_2,
-\]
-so its kernel would have order $6$.
+:::
 
-An automorphism fixing $\zeta_{12}$ acts by a translation
-\[
-\alpha\mapsto\zeta_{12}^a\alpha,
-\]
-so the kernel is a subgroup of the cyclic translation group $C_{12}$. Its unique subgroup of order $6$ is generated by translation by $2$, which fixes
-\[
-\alpha^6=\sqrt2.
-\]
-Hence $\sqrt2$ would belong to the fixed field of the kernel, namely $\QQ(\zeta_{12})$.
-
-But
-\[
-\QQ(\zeta_{12})=\QQ(i,\sqrt3)
-\]
-has quadratic subfields only
-\[
-\QQ(i),\qquad \QQ(\sqrt3),\qquad \QQ(\sqrt{-3}),
-\]
-so it does not contain $\sqrt2$. Contradiction.
-
-Thus the only dihedral cases are
-\[
-\boxed{n=3,4,6}.
-\]
 :::
