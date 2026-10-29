@@ -146,6 +146,4 @@ source:
 
 ::: {.remark}
 The UNL Math 825/826 qualifying-exam preparation packet.
-Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying exams ([[SRC-UNL-RA-SUMMER-2016]], [[SRC-UNL-RA-SPRING-2019]], [[SRC-UNL-RA-SUMMER-2018]]).
-Days 2--8 are topic sheets; Day 2 labels one item "(May 2019, #1)".
 :::
