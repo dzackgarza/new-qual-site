@@ -27,35 +27,60 @@ $$
 :::
 
 ::: {.solution}
-Let $f(z)={ze^{2iz}\over z^2-1}$. The denominator is $(z-1)(z+1)$, so $f$ has simple poles at $\pm1$ on $\RR$, and $I$ is a principal value there.
-For $0<\eps<1<R$, define the contour
+Let $f(z)=\frac{ze^{2iz}}{z^2-1}$, which has simple poles at $\pm1$ on $\RR$.
+For $0<\varepsilon<1<R$, let $\Gamma=C_1+C_2+C_4+C_R$, where
 
-- $C_1: [-R, -1-\eps]$, $[-1+\eps, 1-\eps]$ and $[1+\eps, R]$ on the real axis
-- $C_2: -1 + \eps e^{it}$, $t$ from $\pi$ to $0$ (clockwise, above $-1$)
-- $C_4: 1 + \eps e^{it}$, $t$ from $\pi$ to $0$ (clockwise, above $1$)
-- $C_R: Re^{it}, t\in [0, \pi]$
-- $\Gamma = C_1 + C_2 + C_4 + C_R$
+- $C_1$ is $[-R,-1-\varepsilon]\cup[-1+\varepsilon,1-\varepsilon]\cup[1+\varepsilon,R]$ on the real axis;
+- $C_2$ is $-1+\varepsilon e^{it}$ and $C_4$ is $1+\varepsilon e^{it}$, each for $t$ from $\pi$ to $0$ (clockwise, above the pole);
+- $C_R$ is $Re^{it}$ for $t\in[0,\pi]$.
 
 The figure shows the same indentations on a rectangular contour; here the outer arc is the semicircle $C_R$:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-21_01-47-37.png)
 
-$\int_\Gamma f = 0$ since $\Gamma$ encloses no singularities.
-By Jordan's lemma, $\int_{C_R}f\to 0$, since $\abs{z/(z^2-1)}\le R/(R^2-1)$ on $C_R$.
-A clockwise half-circle about a simple pole contributes $-\pi i$ times the residue in the limit $\eps\to0$.
-With
+::: pf
+
+::: {.pf-step #zero}
+$\int_\Gamma f=0$.
+
+::: pf-proof
+$\Gamma$ encloses no singularity of $f$.
+:::
+
+:::
+
+::: {.pf-step #arc}
+$\int_{C_R}f\to0$ as $R\to\infty$.
+
+::: pf-proof
+This is Jordan's lemma for $e^{2iz}$ on the upper half-plane, since $\abs{z/(z^2-1)}\le R/(R^2-1)\to0$ on $C_R$.
+:::
+
+:::
+
+::: {.pf-step #indent}
+As $\varepsilon\to0$, $\int_{C_2}f\to-\pi i\cdot\frac{e^{-2i}}2$ and $\int_{C_4}f\to-\pi i\cdot\frac{e^{2i}}2$.
+
+::: pf-proof
+A clockwise half-circle about a simple pole contributes $-\pi i$ times the residue in the limit, and
 $$
-\Res_{z=-1} f(z) = \lim_{z\to -1} {ze^{2iz} \over z-1} = {e^{-2i} \over 2},
-\qquad
-\Res_{z=1} f(z) = \lim_{z\to 1} {ze^{2iz} \over z+1} = {e^{2i} \over 2},
+\Res_{z=-1}f=\lim_{z\to-1}\frac{ze^{2iz}}{z-1}=\frac{e^{-2i}}2,\qquad
+\Res_{z=1}f=\lim_{z\to1}\frac{ze^{2iz}}{z+1}=\frac{e^{2i}}2.
 $$
-letting $\eps\to0$ and $R\to\infty$ gives
-$$
-0 = I - \pi i\qty{{e^{-2i} \over 2} + {e^{2i}\over 2}},
-$$
-so
-$$
-I = \pi i \cos(2).
-$$
+:::
+
+:::
+
+::: pf-step
+$I=i\pi\cos(2)$.
+
+::: pf-proof
+Letting $\varepsilon\to0$ and $R\to\infty$, $\int_{C_1}f\to I$, and steps [](#zero){.pf-ref}, [](#arc){.pf-ref} and [](#indent){.pf-ref} give $0=I-\pi i\qty(\frac{e^{-2i}}2+\frac{e^{2i}}2)=I-\pi i\cos(2)$.
+:::
+
+:::
+
+:::
+
 :::
 
