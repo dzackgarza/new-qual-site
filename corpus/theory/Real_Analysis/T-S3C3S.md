@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Lebesgue differentiation theorem"}
+::: {.theorem}
 Let $d\geq1$ and let $f\colon\RR^d\to\CC$ be Lebesgue [[D-R5DL3|integrable]].
 Then for almost every $x\in\RR^d$,
 $$
