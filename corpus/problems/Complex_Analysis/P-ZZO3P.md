@@ -62,3 +62,7 @@ By step [](#bounded){.pf-ref} and Liouville's theorem, $1/p$ is constant, so $p$
 :::
 
 :::
+
+::: {.remark}
+By induction on the degree with the factor theorem, a root $\alpha$ gives $p(z)=(z-\alpha)q(z)$ with $\deg q=\deg p-1$, so every nonconstant polynomial in $\CC[z]$ factors into linear factors.
+:::
