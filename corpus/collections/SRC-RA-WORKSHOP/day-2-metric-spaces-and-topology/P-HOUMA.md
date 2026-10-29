@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $(X,d)$ be an unbounded and connected metric space.
-Prove that for each $x_0 \in X$, the set $\{x \in X \, \colon \,  d(x,x_0) = r\}$ is nonempty.
+Prove that for each $x_0 \in X$ and each $r \geq 0$, the set $\{x \in X \, \colon \,  d(x,x_0) = r\}$ is nonempty.
 :::
 ::: {.solution}
 
@@ -27,11 +27,11 @@ Prove that for each $x_0 \in X$, the set $\{x \in X \, \colon \,  d(x,x_0) = r\}
 
 ::: pf-step
 
-Fix $x_0 \in X$ and $r > 0$; the map $d_{x_0} : X \to [0, \infty)$, $x \mapsto d(x, x_0)$, is continuous.
+For $x_0 \in X$, the map $d_{x_0} : X \to [0, \infty)$, $x \mapsto d(x, x_0)$, is continuous.
 
 ::: pf-proof
 
-the triangle inequality gives $|d(x, x_0) - d(y, x_0)| \le d(x, y)$.
+The triangle inequality gives $\abs{d(x, x_0) - d(y, x_0)} \le d(x, y)$.
 
 :::
 
@@ -75,9 +75,7 @@ $0 \in d_{x_0}(X)$ (step [](#s3){.pf-ref}) and $d_{x_0}$ is unbounded (step [](#
 
 ::: pf-qed
 
-: $\{x \in X : d(x, x_0) = r\} = \inverseof{d_{x_0}}(r) \neq \varnothing$ for every $r \ge 0$.
-
-Step [](#s4){.pf-ref} says $r$ has a preimage under $d_{x_0}$, which is exactly a point at distance $r$ from $x_0$.
+By step [](#s4){.pf-ref}, every $r\geq 0$ has a preimage under $d_{x_0}$, so $\{x \in X : d(x, x_0) = r\} = \inverseof{d_{x_0}}(r) \neq \varnothing$.
 
 :::
 
