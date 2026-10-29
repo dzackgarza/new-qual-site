@@ -243,7 +243,10 @@ then the translation component in the $y$-direction of $\gamma$ must have absolu
 
 ::: {.pf-step #s1-9}
 
-Every $\Gamma$-orbit meets $Q$.
+Every $\Gamma$-orbit meets the closed unit square
+$$
+Q=[0,1]\times[0,1].
+$$
 
 
 ::: pf-proof
