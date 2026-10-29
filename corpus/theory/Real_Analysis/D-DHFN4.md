@@ -3,6 +3,9 @@ schema: qual/card@1
 id: D-DHFN4
 kind: definition
 title: Measurable function
+prompts:
+- Which sets must be Lebesgue measurable for $f$ to be a measurable function?
+- Which preimages must be measurable for $f$ to be a measurable function?
 classification:
   areas:
   - real-analysis
@@ -22,6 +25,8 @@ Let $\mcb_\RR$ and $\mcb_{\RR^d}$ denote the Borel $\sigma$-algebras and $\mcl_{
 - A function $f\colon \RR^d\to \RR$ is \dfn{Borel measurable} if it is $(\mcb_{\RR^d}, \mcb_\RR)$-measurable.
 
 - A function $f\colon \RR^d\to \RR$ is \dfn{Lebesgue measurable} if it is $(\mcl_{\RR^d}, \mcb_\RR)$-measurable.
+
+- Let $E\subseteq\RR^d$ be Lebesgue measurable. A function $f\colon E\to[-\infty,\infty]$ is \dfn{Lebesgue measurable} if $\theset{x\in E\suchthat f(x)>a}=\inverseof{f}((a,\infty])$ is Lebesgue measurable for every $a\in\RR$. When $E$ is a Borel set, $f$ is \dfn{Borel measurable} if $\inverseof{f}((a,\infty])$ is a Borel set for every $a\in\RR$.
 :::
 
 ::: {.proposition}

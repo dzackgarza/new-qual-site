@@ -20,8 +20,6 @@ A simple function is a measurable function with finitely many values, and $\int\
 
 [[D-DHFN4]]
 
-[[FD-OFT7I]] [[FD-OOCQD]]
-
 [[PR-EWXRO]]
 
 [[D-553MO]]
