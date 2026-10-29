@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YSL2C
 kind: problem
-title: Conjugacy classes in $\mathrm{SL}_2(\RR)$
+title: Conjugacy classes in $\SL_2(\RR)$
 classification:
   areas:
   - algebra
@@ -19,100 +19,52 @@ Classify the conjugacy classes in $\SL_2(\RR)$.
 :::
 
 ::: {.solution}
-Let $A\in\SL_2(\RR)$ and set
-\[
-t=\operatorname{tr}(A).
-\]
-Its characteristic polynomial is
-\[
-x^2-tx+1.
-\]
-The conjugacy classification is determined by the sign of $t^2-4$, with an additional orientation sign in the elliptic and nontrivial parabolic cases.
+Let $A\in\SL_2(\RR)$ with $t=\tr A$, so its characteristic polynomial is $x^2-tx+1$.
+Write $R_\theta=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}$, $J=R_{\pi/2}$, $U_\pm=\begin{pmatrix}1&\pm1\\0&1\end{pmatrix}$ and $D=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$.
+If $A$ is conjugate to $B$ by some $P\in\GL_2(\RR)$, then it is conjugate to $B$ in $\SL_2(\RR)$ exactly when some such $P$ has $\det P>0$, because scaling $P$ by a positive real does not change the conjugation.
 
 ::: pf
 
 ::: pf-step
+(Hyperbolic, $\abs{t}>2$) There is exactly one class for each such $t$, represented by $\diag(\lambda,\lambda^{-1})$ with $\lambda+\lambda^{-1}=t$.
 
-Hyperbolic classes: $|t|>2$.
-
-The eigenvalues are distinct real numbers $\lambda,\lambda^{-1}$. Thus $A$ is $\SL_2(\RR)$-conjugate to
-\[
-\begin{pmatrix}\lambda&0\\0&\lambda^{-1}\end{pmatrix},
-\qquad
-\lambda+\lambda^{-1}=t.
-\]
-Swapping the two eigenvalues is achieved by
-\[
-\begin{pmatrix}0&-1\\1&0\end{pmatrix}\in\SL_2(\RR),
-\]
-so there is one conjugacy class for each trace $|t|>2$.
+::: pf-proof
+The eigenvalues $\lambda\ne\lambda^{-1}$ are real, so $A$ is diagonalized by a matrix of eigenvectors; negating one column makes its determinant positive.
+The swap of $\lambda$ and $\lambda^{-1}$ is conjugation by $J\in\SL_2(\RR)$.
+:::
 
 :::
 
 ::: pf-step
+(Elliptic, $\abs{t}<2$) Write $t=2\cos\theta$ with $0<\theta<\pi$. There are exactly two classes with trace $t$, represented by $R_\theta$ and $R_{-\theta}$.
 
-Elliptic classes: $|t|<2$.
+::: pf-proof
+The eigenvalues $e^{\pm i\theta}$ are non-real, so $A$ is $\GL_2(\RR)$-conjugate to $R_\theta$; since $DR_\theta D^{-1}=R_{-\theta}$ and $\det D<0$, $A$ is $\SL_2(\RR)$-conjugate to $R_\theta$ or to $R_{-\theta}$.
+If $PR_\theta P^{-1}=R_{-\theta}$, then, as $R_{\pm\theta}=\cos\theta\,I\pm\sin\theta\,J$ and $\sin\theta\ne0$, we get $PJ=-JP$.
+Writing $P=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, this forces $c=b$ and $d=-a$, so $\det P=-(a^2+b^2)<0$.
+:::
 
-Write
-\[
-t=2\cos\theta,
-\qquad
-0<\theta<\pi.
-\]
-Then $A$ is conjugate in $\GL_2(\RR)$ to a rotation. In $\SL_2(\RR)$ there are two classes:
-\[
-R_\theta=
-\begin{pmatrix}
-\cos\theta&-\sin\theta\\
-\sin\theta&\cos\theta
-\end{pmatrix},
-\qquad
-R_{-\theta}.
-\]
-They are not $\SL_2(\RR)$-conjugate. Indeed, if $P R_\theta P^{-1}=R_{-\theta}$, then, after subtracting $\cos\theta I$ and dividing by $\sin\theta$, one gets
-\[
-PJP^{-1}=-J,
-\qquad
-J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
-\]
-Every real matrix satisfying $PJ=-JP$ has negative determinant unless it is singular, so no such $P$ lies in $\SL_2(\RR)$.
+:::
+
+::: {.pf-step #parabolic}
+(Parabolic, $t=2$) There are exactly three classes: $\{I\}$, the class of $U_+$, and the class of $U_-$.
+
+::: pf-proof
+If $A\ne I$, then $A$ has the single eigenvalue $1$ and is not diagonalizable, so it is $\GL_2(\RR)$-conjugate to $U_+$; since $DU_+D^{-1}=U_-$, it is $\SL_2(\RR)$-conjugate to $U_+$ or to $U_-$.
+Every $P$ with $PU_+P^{-1}=U_-$ is $D$ times an element of the centralizer of $U_+$, which consists of the matrices $\begin{pmatrix}a&b\\0&a\end{pmatrix}$ with $a\ne0$, so $\det P=-a^2<0$.
+:::
 
 :::
 
 ::: pf-step
+(Parabolic, $t=-2$) There are exactly three classes: $\{-I\}$, the class of $-U_+$, and the class of $-U_-$.
 
-Parabolic classes: $t=2$.
-
-Either $A=I$, or $A$ is nontrivial unipotent. Every nontrivial unipotent is $\SL_2(\RR)$-conjugate to exactly one of
-\[
-U_+=\begin{pmatrix}1&1\\0&1\end{pmatrix},
-\qquad
-U_-=\begin{pmatrix}1&-1\\0&1\end{pmatrix}.
-\]
-They are not $\SL_2(\RR)$-conjugate: a $\GL_2(\RR)$-conjugator between them has negative determinant, while the centralizer of $U_+$ consists of matrices
-\[
-\begin{pmatrix}a&b\\0&a\end{pmatrix}
-\]
-with determinant $a^2>0$. Hence the sign cannot be changed by a determinant-$1$ conjugator.
-
+::: pf-proof
+Multiplication by $-I$ is a bijection of $\SL_2(\RR)$ that commutes with conjugation and changes the trace from $2$ to $-2$; apply step [](#parabolic){.pf-ref}.
 :::
-
-::: pf-step
-
-Parabolic classes: $t=-2$.
 
 :::
 
 :::
 
-Likewise there are exactly three classes:
-\[
--I,
-\qquad
--U_+,
-\qquad
--U_-.
-\]
-
-Therefore trace determines the hyperbolic class, while for each elliptic trace there are two classes and for each trace $\pm2$ there are the scalar class and two nontrivial parabolic classes.
 :::
