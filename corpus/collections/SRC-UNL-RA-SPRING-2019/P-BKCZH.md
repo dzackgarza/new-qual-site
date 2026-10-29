@@ -35,52 +35,29 @@ Prove that $f(x)=0$ for all $x\in[0,1]$.
 
 ::: {.solution}
 
+Let $M \coloneqq \max_{[0,1]}\abs{f}$, which is finite because $f$ is continuous on $[0,1]$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #integral}
 
-Obtain an integral inequality.
+$\abs{f(x)} \le k\int_0^x \abs{f(t)}\,dt$ for $0 \le x \le 1$.
 
 ::: pf-proof
 
-Since $f$ is continuous on $[0,1]$, let
-$$
-M:=\max_{[0,1]}|f|<\infty.
-$$
-The derivative bound gives $|f'|\le kM$, so $f$ is Lipschitz and hence absolutely continuous. Therefore, using $f(0)=0$,
-$$
-|f(x)|
-=\left|\int_0^x f'(t)\,dt\right|
-\le k\int_0^x |f(t)|\,dt
-\qquad(0\le x\le1).
-$$
+The derivative bound gives $\abs{f'} \le kM$, so $f$ is Lipschitz and hence absolutely continuous. By the fundamental theorem of calculus and $f(0)=0$, $\abs{f(x)} = \abs{\int_0^x f'(t)\,dt} \le k\int_0^x \abs{f(t)}\,dt$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #iterate}
 
-Iterate the inequality.
+$\abs{f(x)} \le M\frac{(kx)^n}{n!}$ for every integer $n \ge 1$ and $0 \le x \le 1$.
 
 ::: pf-proof
 
-We claim that for every integer $n\ge1$,
-$$
-|f(x)|\le M\frac{(kx)^n}{n!}
-\qquad(0\le x\le1).
-$$
-For $n=1$, Step 1 and $|f(t)|\le M$ give
-$$
-|f(x)|\le kMx.
-$$
-If the estimate holds for $n$, then Step 1 gives
-$$
-|f(x)|
-\le k\int_0^x M\frac{(kt)^n}{n!}\,dt
-=M\frac{(kx)^{n+1}}{(n+1)!}.
-$$
-Thus the claim follows by induction.
+We induct on $n$. For $n = 1$, step [](#integral){.pf-ref} and $\abs{f} \le M$ give $\abs{f(x)} \le kMx$. If the bound holds for $n$, then step [](#integral){.pf-ref} gives $\abs{f(x)} \le k\int_0^x M\frac{(kt)^n}{n!}\,dt = M\frac{(kx)^{n+1}}{(n+1)!}$.
 
 :::
 
@@ -88,19 +65,11 @@ Thus the claim follows by induction.
 
 ::: pf-step
 
-Let the iteration order tend to infinity.
+$\boxed{f \equiv 0 \text{ on } [0,1]}$.
 
 ::: pf-proof
 
-For each fixed $x\in[0,1]$,
-$$
-0\le |f(x)|\le M\frac{(kx)^n}{n!}\longrightarrow0
-\qquad(n\to\infty).
-$$
-Hence $f(x)=0$. Since $x$ was arbitrary,
-$$
-\boxed{f\equiv0\text{ on }[0,1].}
-$$
+For fixed $x \in [0,1]$, step [](#iterate){.pf-ref} gives $0 \le \abs{f(x)} \le M\frac{(kx)^n}{n!}$, and the right side tends to $0$ as $n \to \infty$.
 
 :::
 
