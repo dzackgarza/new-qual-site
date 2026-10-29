@@ -9,9 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance:
-- assets/Complex_Analysis/UGA Question (no solutions)/Complex_Analysis_Problems.pdf
-- assets/attachments/Questions_from_Tie.pdf
+provenance: []
 source:
   source_kind: compilation
   area: complex-analysis
