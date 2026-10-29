@@ -22,32 +22,59 @@ audit:
   note: Reduced the duplicate inner-automorphism proof to the conjugation homomorphism.
 ---
 
-::: {.exercise}
+::: {.problem}
 Show that
-\[
-\operatorname{Inn}(G)\cong G/Z(G).
-\]
+$$
+\Inn(G)\cong G/Z(G).
+$$
 :::
 
 ::: {.solution}
 Define
-\[
-\Phi:G\longrightarrow\operatorname{Aut}(G),
+$$
+\Phi:G\longrightarrow\Aut(G),
 \qquad
 \Phi(g)(x)=gxg^{-1}.
-\]
-Then $\Phi$ is a homomorphism and
-\[
-\operatorname{im}\Phi=\operatorname{Inn}(G).
-\]
-Moreover,
-\[
-g\in\ker\Phi
-\iff gxg^{-1}=x\text{ for all }x\in G
-\iff g\in Z(G).
-\]
-Thus $\ker\Phi=Z(G)$. The first isomorphism theorem gives
-\[
-G/Z(G)\cong\operatorname{Inn}(G).
-\]
+$$
+
+::: pf
+
+::: {.pf-step #hom}
+
+$\Phi$ is a homomorphism with image $\Inn(G)$.
+
+::: pf-proof
+
+Each $\Phi(g)$ is an automorphism with inverse $\Phi(g^{-1})$, and $\Phi(gh)(x)=ghxh^{-1}g^{-1}=\Phi(g)(\Phi(h)(x))$. By definition, $\Inn(G)$ is the set of the automorphisms $\Phi(g)$.
+
+:::
+
+:::
+
+::: {.pf-step #kernel}
+
+$\ker\Phi=Z(G)$.
+
+::: pf-proof
+
+$g\in\ker\Phi$ if and only if $gxg^{-1}=x$ for all $x\in G$, that is, if and only if $g\in Z(G)$.
+
+:::
+
+:::
+
+::: pf-step
+
+$G/Z(G)\cong\Inn(G)$.
+
+::: pf-proof
+
+Apply the first isomorphism theorem to $\Phi$, using steps [](#hom){.pf-ref} and [](#kernel){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
