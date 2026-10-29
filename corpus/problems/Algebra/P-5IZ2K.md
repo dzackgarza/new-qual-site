@@ -26,31 +26,31 @@ Find a non-symmetric polynomial in several variables whose square is symmetric, 
 
 ::: {.solution}
 Over any field of characteristic different from $2$, take
-\[
+$$
 P(x,y)=x-y.
-\]
+$$
 It is not symmetric because
-\[
+$$
 P(y,x)=y-x=-P(x,y)\ne P(x,y).
-\]
+$$
 But
-\[
+$$
 P(x,y)^2=(x-y)^2
-\]
+$$
 is symmetric, since interchanging $x$ and $y$ leaves it unchanged.
 
 More generally, the Vandermonde polynomial
-\[
+$$
 \Delta(x_1,\ldots,x_n)=\prod_{i<j}(x_i-x_j)
-\]
+$$
 is alternating:
-\[
+$$
 \Delta(x_{\sigma(1)},\ldots,x_{\sigma(n)})
 =\operatorname{sgn}(\sigma)\Delta(x_1,\ldots,x_n).
-\]
-Hence $\Delta$ is nonsymmetric when the characteristic is not $2$, while
-\[
+$$
+Hence for $n\ge2$ the polynomial $\Delta$ is nonsymmetric when the characteristic is not $2$ (a transposition changes its sign), while
+$$
 \Delta^2=\prod_{i<j}(x_i-x_j)^2
-\]
+$$
 is invariant under every permutation of the variables and therefore symmetric.
 :::
