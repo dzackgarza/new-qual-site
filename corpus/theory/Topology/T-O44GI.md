@@ -27,3 +27,7 @@ Then
 
 [@Hat02].
 :::
+
+::: {.remark title="Variations"}
+If $Y$ is simply connected and locally path-connected, then $p$ is a universal cover and (3) reads $\pi_1(Y/G)\cong G$ [@Hat02].
+:::
