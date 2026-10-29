@@ -22,8 +22,8 @@ prompts:
 
 ::: {.definition}
 Let $X$ be a smooth projective surface over $\CC$ and let $C$ be a smooth projective curve over $\CC$.
-A surface $X$ is \dfn{ruled} over a curve $C$ if it is birational to $C \times \PP^1$; it is **geometrically ruled** if there is a morphism $X \to C$ whose every fibre is $\PP^1$, equivalently $X = \PP(\mathcal{E})$ for a rank-two bundle $\mathcal{E}$ on $C$.
-$X$ is **rational** if it is birational to $\PP^2$.
+A surface $X$ is \dfn{ruled} over a curve $C$ if it is birational to $C \times \PP^1$; it is \dfn{geometrically ruled} if there is a morphism $X \to C$ whose every fibre is $\PP^1$, equivalently $X = \PP(\mathcal{E})$ for a rank-two bundle $\mathcal{E}$ on $C$.
+$X$ is \dfn{rational} if it is birational to $\PP^2$.
 :::
 
 ::: {.example title="Hirzebruch surfaces"}
