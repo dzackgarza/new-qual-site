@@ -29,11 +29,15 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne IV.2.3 does not assume d >= 2, and part (h) says a quartic has exactly 28 bitangents, with a four-fold-contact tangent giving a tacnode on the dual curve; with the bitangent definition of part (b) a quartic with h hyperflexes has 28-h bitangents, and the dual point is a unibranch E6 cusp. The statement now assumes d >= 2, counts a four-fold-contact line as a bitangent in (h), and names the dual point as a unibranch multiplicity-3 singularity.
 review: draft
 ---
 
 ::: {.problem}
-Let $X$ be a curve of degree $d$ in $\PP^2$.
+Let $X$ be a curve of degree $d \geq 2$ in $\PP^2$.
 For each point $P \in X$, let $T_P(X)$ be the tangent line to $X$ at $P$ (I, Ex.
 7.3). Considering $T_P(X)$ as a point of the dual projective plane $(\PP^2)^*$, the map $P \mapsto T_P(X)$ gives a morphism of $X$ to its **dual curve** $X^*$ in $(\PP^2)^*$ (I, Ex.
 7.3).
@@ -76,51 +80,11 @@ g. For example, a plane cubic curve has exactly 9 inflection points, all ordinar
 The line joining any two of them intersects the curve in a third one.
 
 h. A plane quartic curve has exactly 28 bitangents.
-(This holds even if the curve has a tangent with four-fold contact, in which case the dual curve $X^*$ has a tacnode.)
-:::
-
-::: {.remark title="Erratum to the degree-one setup and part (h)"}
-The setup should assume $d\geq2$.  For $d=1$ the Gauss map has a point as
-its image and the map $\varphi$ in part (a) is constant, so the ramification
-and degree assertions are not statements about a finite morphism of curves.
-
-There is also a genuine inconsistency between parts (b) and (h).  Part (b)
-defines a bitangent to be tangent at **two distinct points**.  With that
-definition, part (h) is false for quartics having a hyperflex.  The invariant
-statement is:
-
-> Every nonsingular plane quartic in characteristic $0$ has exactly $28$
-> generalized bitangent lines, where a line with section $4P$ is counted as
-> a degenerate bitangent $2P+2P$.  If $h$ is the number of hyperflex lines,
-> then there are exactly $28-h$ bitangents in the strict sense of part (b).
-
-For a concrete counterexample to the literal statement, take the Fermat
-quartic
-$$
-X=V(x^4+y^4+z^4)
-$$
-over $\CC$.  If $\zeta^4=-1$, then
-$$
-P=[0:1:\zeta]\in X
-$$
-has tangent line
-$$
-y+\zeta^3z=0.
-$$
-Restricting the quartic equation to this line gives $x^4=0$, so the tangent
-section is $4P$.  Permuting the zero coordinate and choosing the four values
-of $\zeta$ gives $12$ hyperflexes.  Step [](#s14){.pf-ref} below shows that this quartic
-therefore has $16$, not $28$, strict bitangents.
-
-The final parenthetical of the statement is also incorrect: the dual germ of a
-four-fold contact is unibranch of multiplicity $3$, with local leading
-parametrization $(t^3,t^4)$ and $\delta=3$.  It is an $E_6$ cusp, not a
-tacnode.  A tacnode has two branches.  This local calculation is included in
-step [](#s11){.pf-ref}.
+(This holds even if the curve has a tangent with four-fold contact, provided such a line is counted as a bitangent; the corresponding point of the dual curve $X^*$ is a unibranch singular point of multiplicity $3$.)
 :::
 
 ::: {.solution}
-Assume throughout that $d\geq2$.  Let
+Let
 $$
 \gamma:X\longrightarrow X^*\subset(\PP^2)^*
 $$
@@ -495,7 +459,7 @@ has parametrization $(t^2,t^3)$, the ordinary cusp.
 ::: {.pf-step #s11}
 The Gauss map $\gamma:X\to X^*$ is the normalization of $X^*$.
 If $P$ is a hyperflex, then $\gamma(P)$ is a unibranch multiplicity-$3$
-singularity with $\delta=3$, not a tacnode.
+singularity with $\delta=3$.
 
 ::: pf-proof
 The Gauss map is nonconstant by the argument of step [](#s3){.pf-ref}, hence finite onto
@@ -538,8 +502,7 @@ and the normalization quotient has length
 $$
 \delta=3.
 $$
-This is the $E_6$ cusp (characteristic parametrization $(t^3,t^4)$).  In
-particular it cannot be a tacnode, because a tacnode has two branches.
+This is the $E_6$ cusp (characteristic parametrization $(t^3,t^4)$).
 :::
 
 :::
@@ -661,8 +624,8 @@ hyperflex lines and $b$ the number of strict bitangents, then
 $$
 b=28-h.
 $$
-Consequently there are always exactly $28$ generalized bitangent lines when
-hyperflexes are included.
+Consequently there are always exactly $28$ bitangent lines when
+hyperflex lines are counted as bitangents.
 
 ::: pf-proof
 For a quartic, every tangent contact has order at most $4$.  Let $f$ be the
@@ -705,15 +668,8 @@ Using $f=24-2h$ yields
 $$
 b=52-(24-2h)-3h=28-h.
 $$
-Thus $b+h=28$, proving the corrected form of part (h).
+Thus $b+h=28$, proving the count in part (h).
 
-For the Fermat quartic in the erratum, the $12$ displayed hyperflexes already
-contribute total inflection weight $24$, so step [](#s9){.pf-ref} shows there are no
-others.  Hence $h=12$ and
-$$
-b=28-12=16,
-$$
-which explicitly disproves the literal strict-bitangent reading of part (h).
 :::
 
 :::
@@ -722,8 +678,7 @@ which explicitly disproves the literal strict-bitangent reading of part (h).
 Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} prove part (a), step [](#s4){.pf-ref} proves part (b), steps [](#s5){.pf-ref} and [](#s6){.pf-ref}
 prove part (c), step [](#s7){.pf-ref} proves part (d), steps [](#s8){.pf-ref}, [](#s9){.pf-ref}, and [](#s10){.pf-ref} prove part (e),
 step [](#s12){.pf-ref} proves part (f), step [](#s13){.pf-ref} proves part (g), and step [](#s14){.pf-ref} proves
-the corrected form of part (h).  Step [](#s11){.pf-ref} supplies the local correction to
-the four-fold-contact parenthetical of the statement.
+the count in part (h), and step [](#s11){.pf-ref} proves its parenthetical.
 :::
 
 :::
