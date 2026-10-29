@@ -7,7 +7,7 @@ title: Complex arithmetic
 
 ## Problems on complex arithmetic
 
-[[P-TWN5M]]
+[[P-UGA8150S21-HW1-01]]
 
 [[P-3HHKX]]
 
@@ -15,7 +15,7 @@ title: Complex arithmetic
 
 [[P-CZ3R7]]
 
-[[P-FOXHV]]
+[[P-UGA8150S21-HW1-05]]
 
 [[P-37Z7J]]
 
