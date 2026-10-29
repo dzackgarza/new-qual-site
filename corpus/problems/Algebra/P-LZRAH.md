@@ -23,48 +23,44 @@ audit:
 
 ::: {.problem}
 Let $A\in M_n(F)$, where $F$ has characteristic $0$. Suppose
-\[
-\operatorname{tr}(A^k)=0
-\]
+$$
+\tr(A^k)=0
+$$
 for every $k\ge1$. What can you conclude about $A$?
 :::
 
 ::: {.solution}
-The matrix $A$ is nilpotent.
+Over an algebraic closure of $F$, let $\lambda_1,\ldots,\lambda_n$ be the eigenvalues of $A$ with algebraic multiplicity, let $p_k=\sum_i\lambda_i^k$, and let $e_j$ be the elementary symmetric functions of the $\lambda_i$, with $e_0=1$.
 
-Pass to an algebraic closure of $F$ and let the eigenvalues of $A$ be
-\[
-\lambda_1,\ldots,\lambda_n
-\]
-with algebraic multiplicity. Then
-\[
-\operatorname{tr}(A^k)=\lambda_1^k+\cdots+\lambda_n^k.
-\]
-Thus every power sum
-\[
-p_k:=\sum_i\lambda_i^k
-\]
-vanishes.
+::: pf
 
-Write the characteristic polynomial as
-\[
-\chi_A(x)=x^n-e_1x^{n-1}+e_2x^{n-2}-\cdots+(-1)^ne_n,
-\]
-where $e_j$ are the elementary symmetric functions of the eigenvalues. Newton's identities give, for $1\le m\le n$,
-\[
-me_m=\sum_{i=1}^m(-1)^{i-1}e_{m-i}p_i.
-\]
-Since every $p_i=0$ and $m$ is invertible in characteristic $0$, induction gives
-\[
-e_1=e_2=\cdots=e_n=0.
-\]
-Hence
-\[
-\chi_A(x)=x^n.
-\]
-By Cayley--Hamilton,
-\[
-A^n=0.
-\]
-Therefore $A$ is nilpotent.
+::: {.pf-step #power-sums}
+$p_k=0$ for every $k\ge1$.
+
+::: pf-proof
+Triangularizing $A$ shows that $A^k$ has eigenvalues $\lambda_i^k$, so $p_k=\tr(A^k)=0$.
+:::
+
+:::
+
+::: {.pf-step #char-poly}
+$\chi_A(x)=x^n$.
+
+::: pf-proof
+$\chi_A(x)=\sum_{j=0}^n(-1)^je_jx^{n-j}$. Newton's identities give $me_m=\sum_{i=1}^m(-1)^{i-1}e_{m-i}p_i$ for $1\le m\le n$. By step [](#power-sums){.pf-ref} the right side is $0$, and $m$ is invertible in characteristic $0$, so $e_m=0$ for $1\le m\le n$.
+:::
+
+:::
+
+::: pf-step
+$A$ is $\boxed{\text{nilpotent}}$: $A^n=0$.
+
+::: pf-proof
+By step [](#char-poly){.pf-ref} and the Cayley--Hamilton theorem, $A^n=\chi_A(A)=0$.
+:::
+
+:::
+
+:::
+
 :::
