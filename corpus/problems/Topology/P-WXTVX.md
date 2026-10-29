@@ -29,28 +29,23 @@ Prove that $X$ is **connected** if and only if the only subsets of $X$ that are 
 ::: pf
 
 ::: pf-step
+If $X$ is connected, then its only clopen subsets are $\varnothing$ and $X$.
 
-Suppose $X$ is connected and $A\subseteq X$ is clopen. If $A$ were neither $\varnothing$ nor $X$, then
-$$
-X=A\sqcup(X\setminus A)
-$$
-would be a union of two disjoint nonempty open sets, contradicting connectedness. Hence the only clopen subsets are $\varnothing$ and $X$.
+::: pf-proof
+Let $A\subseteq X$ be clopen.
+Then $A$ and $X\setminus A$ are disjoint open sets with union $X$, so connectedness forces one of them to be empty, that is, $A=\varnothing$ or $A=X$.
+:::
 
 :::
 
 ::: pf-step
+If the only clopen subsets of $X$ are $\varnothing$ and $X$, then $X$ is connected.
 
-Conversely, suppose the only clopen subsets are $\varnothing$ and $X$. If $X$ were disconnected, there would be disjoint nonempty open sets $U,V$ with $X=U\cup V$. Then
-$$
-X\setminus U=V
-$$
-is open, so $U$ is also closed. Thus $U$ is a nontrivial clopen subset, a contradiction.
-
+::: pf-proof
+Suppose $X=U\cup V$ with $U,V$ disjoint open sets.
+Then $X\setminus U=V$ is open, so $U$ is clopen, and hence $U=\varnothing$ or $V = X \setminus U=\varnothing$.
+So $X$ admits no separation.
 :::
-
-::: pf-step
-
-Therefore $X$ is connected if and only if its only clopen subsets are $\varnothing$ and $X$.
 
 :::
 
