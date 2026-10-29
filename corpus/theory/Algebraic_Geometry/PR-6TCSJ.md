@@ -39,7 +39,7 @@ An irreducible scheme has a unique [[D-SCHPTS|generic point]] $\eta$. For $\Spec
 :::
 
 ::: {.remark}
-The affine integral criterion follows from the first three rows: if $A$ is reduced, then its nilradical is $(0)$, and irreducibility says this ideal is prime.
+The affine integral criterion follows from the first two rows: if $A$ is reduced, then its nilradical is $(0)$, and irreducibility says this ideal is prime.
 
 For an integral scheme $X$ with generic point $\eta$, its function field is the residue field $\kappa(\eta)$.
 :::
