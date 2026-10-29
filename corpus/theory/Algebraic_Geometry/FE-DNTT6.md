@@ -27,16 +27,16 @@ It is exact as a sequence of sheaves, because it is exact on stalks: near any po
 
 It is not exact as a sequence of presheaves.
 Cover $\CC^*$ by contractible opens $U_i$, on each of which $\log$ exists, so $\id_{U_i} \in \OO^*(U_i)$ lies in the image presheaf.
-These sections agree on overlaps and glue to $\id_{\CC^*}$, which is **not** in the image presheaf: a global logarithm on $\CC^*$ does not exist.
+These sections agree on overlaps and glue to $\id_{\CC^*}$, which is not in the image presheaf: a global logarithm on $\CC^*$ does not exist.
 
 So the image presheaf fails the gluing axiom, and sheafifying it is exactly what supplies the missing section.
 :::
 
 ::: {.remark}
-The same sequence, taken in cohomology, is where the Picard group comes from:
+The long exact cohomology sequence of the exponential sequence contains
 $$
 H^1(X, \OO) \to H^1(X, \OO^*) \to H^2(X, \ZZ) ,
 $$
 with $H^1(X,\OO^*) = \Pic(X)$ and the right-hand map the first Chern class.
-The failure to glue here and the failure of surjectivity on global sections in [[PR-C9ZEK]] are the same phenomenon counted twice.
+The failure to glue here and the failure of surjectivity on global sections in [[PR-C9ZEK]] are the same phenomenon: $\id_{\CC^*}$ is a global section of $\OO^*$ that is not the exponential of a global section of $\OO$.
 :::
