@@ -17,42 +17,47 @@ review: draft
 
 ::: {.exercise}
 Compute the following integrals:
-\[
-\int_{\abs{z-1} = 1} {1\over z^2-1} \dz \\
-\int_{\abs{z-0} = 2} {1\over z^2-1} \dz \\
-.\]
+
+(a) $\displaystyle\int_{\abs{z-1} = 1} {1\over z^2-1} \dz$
+
+(b) $\displaystyle\int_{\abs{z-0} = 2} {1\over z^2-1} \dz$
+
 Compute the 2nd integral by finding a primitive.
 
 :::
 
 ::: {.solution}
-For the first integral:
-\[
-\int_\gamma{1\over z^2-1}\dz 
-&= {1\over 2}\int_\gamma {1\over z-1} + {1\over z+1}\dz \\
-&= {1\over 2}\int_\gamma {1\over z-1} \\
-&= {1\over 2}\cdot 2\pi i \Res_{z=1}f(z) \\
-&= {1\over 2}\cdot 2\pi i \cdot 1 \\
-&= \pi i
-,\]
-using that $f(z) = {1\over z-1}$ is already an expansion of $f$ about $z=1$ since it is a Laurent series in $(z-1)^k$, so the residue is $1$.
+Write $f(z)\coloneqq\frac1{z^2-1}=\frac12\qty(\frac1{z-1}-\frac1{z+1})$, with both circles positively oriented.
 
-For the second integral:
-attempt to define a primitive
-\[
-F(z) \definedas {1\over 2}\log\qty{z-1\over z+1} \implies F'(z) = {1\over z^2-1}
-.\]
-If this primitive is well-defined on $\gamma$, the integral will vanish because this is a closed curve.
-Choose the branch cut $\CC\sm(-\infty, 0]$ and define $g(z) = {z-1\over z+1}$, so that $F(z) = {1\over 2}\log(g(z))$.
-Then then $g(z)\in (-\infty, 0] \iff z\in [-1, 1]$, and this is well-defined on $\gamma$ since $[-1, 1]$ does not intersect $\gamma$.
+::: pf
 
-Thus for $\gamma$ any parameterization of $\abs{z} = 2$,
-\[
-\int_{\abs{z} = 2} f(z) \dz
-= \int_{\abs{z} = 2} F'(z)\dz
-= F(\gamma(0)) - F(\gamma(1))
-= 0
-.\]
+::: pf-step
+(a) $\int_{\abs{z-1}=1}f\,dz=\boxed{\pi i}$.
+
+::: pf-proof
+The pole $1$ lies inside the circle and $-1$ lies outside it. The term $-\frac{1}{2(z+1)}$ is holomorphic on a neighborhood of the closed disk, so its integral is $0$, and $\int_{\abs{z-1}=1}\frac{dz}{2(z-1)}=\frac12\cdot2\pi i$.
+:::
 
 :::
 
+::: {.pf-step #primitive}
+$F(z)\coloneqq\frac12\operatorname{Log}\frac{z-1}{z+1}$, with $\operatorname{Log}$ the principal branch on $\CC\setminus(-\infty,0]$, is holomorphic on $\CC\setminus[-1,1]$ with $F'=f$.
+
+::: pf-proof
+For $g(z)\coloneqq\frac{z-1}{z+1}$, $g(z)=t\le0$ if and only if $z=\frac{1+t}{1-t}\in[-1,1)$. So $F$ is holomorphic off $[-1,1]$, and $F'=\frac12\frac{g'}{g}=\frac12\qty(\frac1{z-1}-\frac1{z+1})=f$.
+:::
+
+:::
+
+::: pf-step
+(b) $\int_{\abs z=2}f\,dz=\boxed{0}$.
+
+::: pf-proof
+The circle $\abs z=2$ lies in $\CC\setminus[-1,1]$, where $f$ has the primitive $F$ of step [](#primitive){.pf-ref}, and the integral of a derivative over a closed curve is $0$.
+:::
+
+:::
+
+:::
+
+:::
