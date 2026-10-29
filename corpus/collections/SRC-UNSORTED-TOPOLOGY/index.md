@@ -50,7 +50,6 @@ source:
   - id: E-HYQMG
   - id: E-IECHS
   - id: E-IOZ4G
-  - id: E-ITANC
   - id: E-J3IO7
   - id: E-KJQUD
   - id: E-MKK6X
