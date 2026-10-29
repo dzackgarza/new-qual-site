@@ -33,7 +33,6 @@ where $N_1$ is the least normal subgroup of $\pi_1(U, x_0)$ containing image $i_
 :::
 
 ::: {.solution}
-**Goal:** Prove that when the inclusion $i: U \cap V \to X$ induces the trivial homomorphism on $\pi_1$, $\pi_1(X, x_0)$ is naturally isomorphic to the free product of the quotients $(\pi_1(U, x_0)/N_1) \ast (\pi_1(V, x_0)/N_2)$.
 
 ::: pf
 
