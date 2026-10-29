@@ -23,6 +23,7 @@ Find all real-valued harmonic functions $u$ on $\DD$ such that $u(1/2) = 2$ and 
 :::
 
 ::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #sign}
