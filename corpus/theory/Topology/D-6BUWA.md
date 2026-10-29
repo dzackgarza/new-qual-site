@@ -21,7 +21,7 @@ $$
 \del_n \sigma \coloneqq \sum_{i=0}^n (-1)^i \restrictionof{\sigma}{[v_0,\ldots, \hat v_i, \ldots, v_n]}
 $$
 on singular simplices, each face $[v_0,\ldots, \hat v_i, \ldots, v_n]$ being identified with $\Delta^{n-1}$ by the order-preserving linear homeomorphism.
-The \dfn{singular homology} of $X$ is
+The \dfn{singular homology} of $X$ [@Hat02] is
 $$
 H_n(X) \coloneqq \ker \del_n / \im \del_{n+1}
 .$$
@@ -29,8 +29,4 @@ H_n(X) \coloneqq \ker \del_n / \im \del_{n+1}
 
 ::: {.remark}
 The quotient is defined because $\del_n \circ \del_{n+1} = 0$.
-:::
-
-::: {.concept}
-[@Hat02].
 :::
