@@ -18,7 +18,7 @@ State and prove Frobenius reciprocity for group representations.
 
 ::: {.solution}
 
-Let $H\le G$, let $R$ be a commutative ring, let $V$ be an $R[H]$-module, and let $W$ be an $R[G]$-module. Write $\operatorname{Ind}_H^GV=R[G]\otimes_{R[H]}V$, and let $\operatorname{Res}_H^GW$ be $W$ viewed as an $R[H]$-module.
+Let $H\le G$, let $R$ be a commutative ring, let $V$ be an $R[H]$-module, and let $W$ be an $R[G]$-module. Write $\operatorname{Ind}_H^GV=R[G]\otimes_{R[H]}V$, and let $\Res_H^GW$ be $W$ viewed as an $R[H]$-module.
 
 ::: pf
 
@@ -26,7 +26,7 @@ Let $H\le G$, let $R$ be a commutative ring, let $V$ be an $R[H]$-module, and le
 
 Statement: there is an isomorphism, natural in $V$ and $W$,
 $$
-\Hom_{R[G]}\bigl(\operatorname{Ind}_H^GV,W\bigr)\cong\Hom_{R[H]}\bigl(V,\operatorname{Res}_H^GW\bigr).
+\Hom_{R[G]}\bigl(\operatorname{Ind}_H^GV,W\bigr)\cong\Hom_{R[H]}\bigl(V,\Res_H^GW\bigr).
 $$
 
 :::
