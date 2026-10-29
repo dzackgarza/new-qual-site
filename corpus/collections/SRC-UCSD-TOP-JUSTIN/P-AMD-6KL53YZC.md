@@ -32,7 +32,7 @@ Conclude that for every $n\ge1$ and every integer $d\in\ZZ$, there exists a self
 :::
 
 ::: {.solution}
-**Goal:** Let $f \colon S^n \to S^n$ be continuous with $n\ge1$. Prove $\deg(\Sigma f)=\deg(f)$ and deduce that every integer occurs as the degree of a self-map of every sphere $S^n$, $n\ge1$.
+Throughout, $f \colon S^n \to S^n$ is continuous with $n\ge1$, and $\Sigma f$ is its suspension.
 
 ::: pf
 
