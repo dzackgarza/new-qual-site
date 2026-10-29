@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-08
 kind: problem
-title: Maxim algebraic topology 1.8
+title: A closed oriented $(4n+2)$-manifold has even Euler characteristic
 classification:
   areas: [topology]
   topics: []
