@@ -24,7 +24,7 @@ Show that an injective continuous map from a compact space to a Hausdorff space 
 :::
 
 ::: {.solution}
-**Goal:** Show that an injective continuous map $f: X \to Y$ from a compact space $X$ to a Hausdorff space $Y$ is an embedding: a homeomorphism onto its image.
+Let $f: X \to Y$ be an injective continuous map from a compact space $X$ to a Hausdorff space $Y$.
 
 ::: pf
 
@@ -86,13 +86,13 @@ Compact subsets of Hausdorff spaces are closed; and closed in $Y$ implies closed
 $f^{-1}: f(X) \to X$ is continuous.
 
 ::: pf-proof
-A bijective map is a homeomorphism iff it is a closed map (equivalently: $f^{-1}$ is continuous iff for every closed $C \subseteq X$, $(f^{-1})^{-1}(C) = f(C)$ is closed in $f(X)$), and step [](#s3){.pf-ref} gives closedness.
+For every closed $C \subseteq X$, the preimage $(f^{-1})^{-1}(C) = f(C)$ is closed in $f(X)$ by step [](#s3){.pf-ref}.
 :::
 
 :::
 
 ::: pf-qed
-step [](#s1){.pf-ref} and step [](#s4){.pf-ref} show $f: X \to f(X)$ is a homeomorphism, i.e. $f$ is an embedding.
+By step [](#s1){.pf-ref} and step [](#s4){.pf-ref}, $f: X \to f(X)$ is a continuous bijection with continuous inverse, that is, a homeomorphism, so $f$ is an embedding.
 :::
 
 :::
