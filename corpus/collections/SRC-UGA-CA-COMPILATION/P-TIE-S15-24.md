@@ -18,6 +18,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Absorbed the duplicate P-TIE-S15-30, which the source prints again as Spring 2015, question 30, page 14 of Questions_from_Tie.pdf, and took over its typed statement and remark.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source states part (b) for all |alpha| < 1, where the printed right-hand side is undefined at alpha = 0. Part (b) now assumes 0 < |alpha| < 1.
 ---
 
 ::: {.problem}
@@ -25,16 +29,7 @@ Let $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} <
 
 (a) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}^2\,dx\,dy = 1$.
 
-(b) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}\,dx\,dy = \frac{1 - \abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1 - \abs{\alpha}^2}$.
-:::
-
-::: {.remark}
-Erratum: part (b) includes $\alpha=0$ in the hypothesis, but the printed expression
-$$
-\frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}
-\log\frac1{1-\abs{\alpha}^2}
-$$
-is undefined there. For $\alpha=0$, the normalized integral equals $1$, which is also the limit of the displayed expression as $\alpha\to0$.
+(b) for $0 < \abs{\alpha} < 1$, $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}\,dx\,dy = \frac{1 - \abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1 - \abs{\alpha}^2}$.
 :::
 
 ::: {.solution}
@@ -257,51 +252,9 @@ Replacing $r$ by $\abs\alpha$ gives the formula.
 
 :::
 
-::: {.pf-step #s1-6}
-
-If $\alpha=0$, then
-$$
-\boxed{
-\frac1\pi
-\iint_{\DD}
-\abs{\psi_0'(z)}\,dA(z)
-=1.
-}
-$$
-
-
-::: pf-proof
-
-When $\alpha=0$,
-$$
-\psi_0(z)=-z,
-$$
-so
-$$
-\abs{\psi_0'(z)}=1.
-$$
-Hence
-$$
-\frac1\pi
-\iint_{\DD}1\,dA
-=1.
-$$
-Also,
-$$
-\lim_{r\downarrow0}
-\frac{1-r^2}{r^2}
-\log\frac1{1-r^2}
-=1,
-$$
-so this is precisely the continuous extension of the formula in step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-3){.pf-ref} proves part (a), while steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b), including the case $\alpha=0$, where the displayed expression is read as its limit.
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 
