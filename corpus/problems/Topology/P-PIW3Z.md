@@ -16,74 +16,46 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source statement carried a nested bullet giving the answer, 'Known to be [ZZ, 0, ZZ^2, 0, ZZ, 0, 0, ...]'; the answer is removed from the statement and established in the solution."
 ---
 
 ::: {.problem}
-- Use the Kunneth formula to compute $H^*(S^2\cross S^2; \ZZ)$.
-
-  - Known to be $[\ZZ, 0, \ZZ^2, 0, \ZZ, 0, 0, \cdots]$.
+Use the Künneth formula to compute $H^*(S^2\cross S^2; \ZZ)$.
 :::
 
 ::: {.solution}
 
 ::: pf
 
-::: {.pf-step #s1}
-
-$H^*(S^2;\ZZ) = \ZZ$ in degree $0$, $\ZZ$ in degree $2$, and $0$ otherwise.
-
-::: pf-proof
-
-standard computation of the cohomology of $S^2$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-By the Künneth formula (with $\ZZ$ coefficients, and all the relevant groups free so the Tor terms vanish),
-$$H^n(S^2 \times S^2;\ZZ) \cong \bigoplus_{i+j=n} H^i(S^2;\ZZ) \otimes H^j(S^2;\ZZ).$$
+::: {.pf-step #sphere}
+$H^n(S^2;\ZZ)$ is $\ZZ$ for $n = 0, 2$ and $0$ otherwise.
 
 ::: pf-proof
-
-Künneth theorem; since $H^*(S^2;\ZZ)$ is free, $\operatorname{Tor}$ vanishes.
-
+This is the cohomology of the $2$-sphere; it follows from $H_n(S^2;\ZZ)$ by the universal coefficient theorem, since $H_*(S^2;\ZZ)$ is free.
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-The nonzero tensor products are:
-- $n=0$: $H^0 \otimes H^0 = \ZZ$;
-- $n=2$: $H^2 \otimes H^0 \oplus H^0 \otimes H^2 = \ZZ \oplus \ZZ = \ZZ^2$;
-- $n=4$: $H^2 \otimes H^2 = \ZZ$.
+::: {.pf-step #kunneth}
+$H^n(S^2 \times S^2;\ZZ) \cong \bigoplus_{i+j=n} H^i(S^2;\ZZ) \otimes H^j(S^2;\ZZ)$.
 
 ::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
-
+The groups $H^i(S^2;\ZZ)$ are finitely generated and free by step [](#sphere){.pf-ref}, so the $\operatorname{Tor}$ terms of the Künneth formula vanish.
 :::
 
 :::
 
-::: {.pf-step #s4}
-
-Hence
-$$H^n(S^2 \times S^2;\ZZ) = \begin{cases} \ZZ & n = 0, 4 \\ \ZZ^2 & n = 2 \\ 0 & \text{otherwise}. \end{cases}$$
+::: pf-step
+$$
+H^n(S^2 \times S^2;\ZZ) \cong \boxed{\begin{cases} \ZZ & n = 0, 4, \\ \ZZ^2 & n = 2, \\ 0 & \text{otherwise}. \end{cases}}
+$$
 
 ::: pf-proof
-
-Step [](#s3){.pf-ref}.
-
+By steps [](#sphere){.pf-ref} and [](#kunneth){.pf-ref}, the only nonzero summands are $H^0 \otimes H^0 = \ZZ$ in degree $0$, $H^2 \otimes H^0 \oplus H^0 \otimes H^2 = \ZZ^2$ in degree $2$, and $H^2 \otimes H^2 = \ZZ$ in degree $4$.
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref}, matching the known answer $[\ZZ, 0, \ZZ^2, 0, \ZZ, 0, \ldots]$.
 
 :::
 
