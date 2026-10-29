@@ -28,7 +28,7 @@ For $\Spec\ZZ[i]\to\Spec\ZZ$, the fibre over $(3)$ is $\Spec\FF_9$, one point wh
 [[D-SCHBC]]
 
 A $k$-scheme $X$ is geometrically integral when $X_{\bar k}$ is integral; the fibre over $y$ is the base change along $\Spec\kappa(y)\to Y$; a scheme over the fraction field $K$ of a ring $R$ spreads out over $R$ when it is the base change of an $R$-scheme along $\Spec K\to\Spec R$.
-Integrality is not stable under base change: $\Spec\CC$ is integral over $\RR$, and its base change $\Spec(\CC\otimes_\RR\CC)$ is not.
+Integrality is not stable under base change: $\Spec\CC$ is an integral $\RR$-scheme, and its base change $\Spec(\CC\otimes_\RR\CC)$ is not.
 
 ## The functor of points
 
