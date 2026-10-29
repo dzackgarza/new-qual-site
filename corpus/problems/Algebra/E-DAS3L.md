@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DAS3L
 kind: problem
-title: Cyclic groups, Euler's totient, and $\operatorname{Aut}(\mathbb{Z}/n\mathbb{Z})$
+title: Cyclic groups, Euler's totient, and $\Aut(\ZZ/n\ZZ)$
 classification:
   areas:
   - algebra
