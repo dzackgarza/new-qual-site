@@ -23,3 +23,7 @@ $$
 $$
 This is the case $q=1$, $r=p$ of [[PR-2C3SZ|Young's convolution inequality]].
 :::
+
+::: {.remark title="Variations"}
+The case $p=1$: if $f,g\in L^1(\RR^n)$, then $f\ast g\in L^1(\RR^n)$ and $\norm{f\ast g}_1\leq\norm{f}_1\norm{g}_1$, so $L^1(\RR^n)$ is closed under convolution.
+:::
