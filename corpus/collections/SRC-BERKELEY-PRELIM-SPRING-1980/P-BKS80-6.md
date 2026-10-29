@@ -19,10 +19,14 @@ audit:
     exception: the coset action either has a nontrivial proper kernel or is an
     isomorphism onto S_k; in the latter case A_k gives the required normal
     subgroup for k>=3.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed the problem for any finite group of order n, which fails for G=C_2, H={e}. The statement now assumes n>2.
 ---
 
 ::: {.problem}
-Let $G$ be a finite group of order $n$ and $H<G$ a proper subgroup of order $m$.
+Let $G$ be a finite group of order $n>2$ and $H<G$ a proper subgroup of order $m$.
 Assume
 \[
 (n/m)!<2n.
@@ -31,19 +35,6 @@ Prove that $G$ has a proper nontrivial normal subgroup.
 :::
 
 ::: {.solution}
-The statement is false as printed. The exceptional case is
-$$
-G\cong C_2,
-\qquad
-H=\{e\}.
-$$
-Indeed, then $n=2$, $m=1$, and
-$$
-(n/m)!=2!<4=2n,
-$$
-but $C_2$ has no proper nontrivial subgroup.
-
-The following argument shows that this is the only exception.
 
 ::: pf
 
@@ -114,12 +105,12 @@ $\varphi(G)=S_k$ and $G\cong S_k$.
 
 ::: {.pf-step #s4}
 
-Under the hypothesis of step [](#s3){.pf-ref}, if $k\ge3$, then $G$ has a
+Under the hypothesis of step [](#s3){.pf-ref}, $G$ has a
 proper nontrivial normal subgroup.
 
 ::: pf-proof
 
-For $k\ge3$, the alternating group
+Since $k!=|S_k|=n>2$, one has $k\ge3$. The alternating group
 $$
 A_k
 $$
@@ -131,51 +122,11 @@ $G$.
 
 :::
 
-::: {.pf-step #s5}
-
-Under the hypothesis of step [](#s3){.pf-ref}, if $k=2$, then
-$$
-G\cong C_2
-\qquad\text{and}\qquad
-H=\{e\}.
-$$
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} gives $G\cong S_2\cong C_2$, so $n=2$. Since
-$$
-k=\frac nm=2,
-$$
-one has $m=1$, hence $H=\{e\}$.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Consequently the sharp conclusion under the printed hypotheses is:
-$$
-\boxed{
-\text{either }(G,H)\cong(C_2,\{e\}),
-\text{ or }G\text{ has a proper nontrivial normal subgroup}.}
-$$
-
-::: pf-proof
-
-If the kernel $K$ from step [](#s1){.pf-ref} is nontrivial, apply step [](#s2){.pf-ref}. If it is
-trivial, step [](#s3){.pf-ref} identifies $G$ with $S_k$; step [](#s4){.pf-ref} settles $k\ge3$,
-while step [](#s5){.pf-ref} identifies the unique remaining case $k=2$ with the
-displayed exception.
-
-:::
-
-:::
-
 ::: pf-qed
 
-The opening counterexample disproves the statement as printed, and step
-[](#s6){.pf-ref} proves the corrected assertion with the unique exceptional case.
+If the kernel $K$ from step [](#s1){.pf-ref} is nontrivial, step [](#s2){.pf-ref} applies. If it is
+trivial, step [](#s3){.pf-ref} identifies $G$ with $S_k$, and step [](#s4){.pf-ref} gives the
+proper nontrivial normal subgroup.
 
 :::
 
