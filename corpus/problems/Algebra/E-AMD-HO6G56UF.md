@@ -27,15 +27,15 @@ Show that if $A,B$ are diagonalizable and $[A, B] = 0$, then $A$ and $B$ are sim
 
 ::: {.solution}
 Let
-\[
+$$
 V=\bigoplus_\lambda E_A(\lambda)
-\]
+$$
 be the eigenspace decomposition for the diagonalizable operator $A$.
 
 Because $AB=BA$, each $A$-eigenspace is $B$-stable: if $v\in E_A(\lambda)$, then
-\[
+$$
 A(Bv)=B(Av)=\lambda Bv.
-\]
+$$
 Thus $B$ restricts to an operator on every $E_A(\lambda)$.
 
 Since $B$ is diagonalizable, its minimal polynomial splits into distinct linear factors. The minimal polynomial of each restriction $B|_{E_A(\lambda)}$ divides the minimal polynomial of $B$, hence also splits into distinct linear factors. Therefore each restriction is diagonalizable.
