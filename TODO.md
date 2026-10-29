@@ -334,7 +334,7 @@ mathematical correction under its own node, not under copy policy.
     (`applied-algebra`) and the other P-PRACT20-W3-* and P-PRACT20-W4-* cards carry core-qual
     areas for prelim practice drills (COMPLAINTS.md "2020 prelim practice weeks 3 and 4").
     **Acceptance:** each card and both collections read and given the area of the exam track
-    they belong to.
+    they belong to. **Closed.** All 54 cards and both collections are `prelim`.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
