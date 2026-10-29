@@ -56,10 +56,11 @@ Suppose for contradiction that neither $Q$ nor $R$ is normal in $G$, so $n_5 = 2
 
 ::: pf-step
 
-Count elements:
-        - Each Sylow 5-subgroup has prime order 5, so any two distinct Sylow 5-subgroups intersect only in the identity $\{e\}$. Together they contain $21 \cdot (5 - 1) = 84$ elements of order 5.
-        - Each Sylow 7-subgroup has prime order 7, so any two distinct Sylow 7-subgroups intersect only in $\{e\}$. Together they contain $15 \cdot (7 - 1) = 90$ elements of order 7.
-        - Since 5 and 7 are distinct primes, no element can have both order 5 and order 7.
+$G$ has $84$ elements of order $5$ and $90$ elements of order $7$, and no element has both orders.
+
+::: pf-proof
+Each Sylow $5$-subgroup has prime order $5$, so two distinct ones meet only in $\{e\}$, and together they contain $21 \cdot (5 - 1) = 84$ elements of order $5$. Likewise the Sylow $7$-subgroups contain $15 \cdot (7 - 1) = 90$ elements of order $7$. Since $5$ and $7$ are distinct primes, no element has both orders.
+:::
 
 :::
 
@@ -119,10 +120,11 @@ The order of $H$ is
 
 ::: pf-step
 
-$H$ is cyclic:
-        - In $H$, the number of Sylow 7-subgroups $n_7(H)$ satisfies $n_7(H) \equiv 1 \pmod 7$ and $n_7(H) \mid 5 \implies n_7(H) = 1$, so the Sylow 7-subgroup $R \trianglelefteq H$.
-        - The number of Sylow 5-subgroups $n_5(H)$ satisfies $n_5(H) \equiv 1 \pmod 5$ and $n_5(H) \mid 7 \implies n_5(H) = 1$, so the Sylow 5-subgroup $Q \trianglelefteq H$.
-        - Since $Q, R \trianglelefteq H$ and $Q \cap R = \{e\}$, $H \cong Q \times R \cong \ZZ/5\ZZ \times \ZZ/7\ZZ \cong \ZZ/35\ZZ$.
+$H$ is cyclic.
+
+::: pf-proof
+In $H$, the number $n_7(H)$ of Sylow $7$-subgroups satisfies $n_7(H) \equiv 1 \pmod 7$ and $n_7(H) \mid 5$, so $n_7(H) = 1$ and $R \trianglelefteq H$. Likewise $n_5(H) \equiv 1 \pmod 5$ and $n_5(H) \mid 7$, so $n_5(H) = 1$ and $Q \trianglelefteq H$. Since $Q, R \trianglelefteq H$ and $Q \cap R = \{e\}$, $H \cong Q \times R \cong \ZZ/5\ZZ \times \ZZ/7\ZZ \cong \ZZ/35\ZZ$.
+:::
 
 :::
 
@@ -208,9 +210,11 @@ All three Sylow subgroups $P, Q, R$ are normal in $G$.
 
 ::: pf-step
 
-Since $|P| = 3$, $|Q| = 5$, $|R| = 7$ are pairwise coprime:
-        - $P \cap (Q R) = \{e\}$ because $|P| = 3$ and $|Q R| = 35$ with $\gcd(3, 35) = 1$.
-        - $Q \cap R = \{e\}$ because $\gcd(5, 7) = 1$.
+$P \cap (Q R) = \{e\}$ and $Q \cap R = \{e\}$.
+
+::: pf-proof
+The orders $\abs{P} = 3$, $\abs{Q} = 5$, $\abs{R} = 7$ are pairwise coprime. An intersection of two subgroups has order dividing both orders, and $\gcd(3, 35) = \gcd(5, 7) = 1$.
+:::
 
 :::
 
