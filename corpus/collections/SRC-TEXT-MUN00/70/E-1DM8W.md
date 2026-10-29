@@ -34,7 +34,6 @@ where $M$ is the least normal subgroup of $\pi_1(U, x_0)$ containing $i_1(\ker i
 :::
 
 ::: {.solution}
-**Goal:** Prove that when the inclusion homomorphism $i_2: \pi_1(U \cap V, x_0) \to \pi_1(V, x_0)$ is surjective, $\pi_1(X, x_0) \cong \pi_1(U, x_0)/M$, where $M$ is the normal closure of $i_1(\ker i_2)$.
 
 ::: pf
 
