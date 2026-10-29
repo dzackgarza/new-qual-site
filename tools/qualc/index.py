@@ -167,6 +167,17 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                         f"unknown source area {source.area!r}",
                     )
                 )
+            problems = source.problems if isinstance(source, (ExamSource, HomeworkSource, CompilationSource)) else []
+            sections = source.sections if isinstance(source, (TextbookSource, CompilationSource)) else []
+            for entry in [*problems, *(entry for section in sections for entry in section.problems)]:
+                if entry.id not in by_id:
+                    errors.append(
+                        Diagnostic(
+                            DiagnosticCode.DANGLING_MEMBER,
+                            where,
+                            f"lists {entry.id!r}, which has no card",
+                        )
+                    )
             if isinstance(source, TextbookSource) and source.textbook not in vocab["textbooks"]:
                 errors.append(
                     Diagnostic(

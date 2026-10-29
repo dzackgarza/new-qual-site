@@ -40,7 +40,7 @@ def _problem_card(card_id: str) -> ParsedCard:
     )
 
 
-def _collection_card(area: str) -> ParsedCard:
+def _collection_card(area: str, problems: tuple[str, ...] = ()) -> ParsedCard:
     return ParsedCard(
         card=CollectionCard.model_validate(
             {
@@ -56,6 +56,7 @@ def _collection_card(area: str) -> ParsedCard:
                     "institution": "uga",
                     "area": area,
                     "date": {"kind": "year", "year": 2016},
+                    "problems": [{"id": problem} for problem in problems],
                 },
             }
         ),
@@ -77,3 +78,12 @@ def test_unregistered_source_area_is_rejected() -> None:
     # And the same card with a registered area passes, so the guard is not
     # simply rejecting every collection card.
     assert validate([_collection_card("algebra")], vocab) == []
+
+
+def test_collection_member_without_a_card_is_rejected() -> None:
+    """A collection that lists a retired problem id names a card the site cannot render."""
+    vocab = load_vocabularies(ROOT / "vocabularies", ROOT / "wiki")
+
+    errors = validate([_collection_card("algebra", ["P-RETIRED"])], vocab)
+    assert [error.code for error in errors] == [DiagnosticCode.DANGLING_MEMBER]
+    assert validate([_collection_card("algebra", ["P-LISTED"]), _problem_card("P-LISTED")], vocab) == []

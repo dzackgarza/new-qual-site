@@ -19,6 +19,7 @@ class DiagnosticCode(Enum):
     UNKNOWN_TEXTBOOK = "unknown-textbook"
     # relations
     DANGLING_RELATION = "dangling-relation"
+    DANGLING_MEMBER = "dangling-member"
     # reading
     CARD_UNREADABLE = "card-unreadable"
     READER_WARNING = "reader-warning"
