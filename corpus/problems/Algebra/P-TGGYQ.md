@@ -14,51 +14,47 @@ review: draft
 
 ::: {.problem}
 Compute
-\[
+$$
 [\QQ(\sqrt2+\sqrt3):\QQ].
-\]
+$$
 :::
 
 ::: {.solution}
-Set
-\[
-\alpha=\sqrt2+\sqrt3.
-\]
-Since
-\[
-(\sqrt3+\sqrt2)(\sqrt3-\sqrt2)=1,
-\]
-we have
-\[
-\alpha^{-1}=\sqrt3-\sqrt2\in\QQ(\alpha).
-\]
-Therefore
-\[
-\sqrt3=\frac{\alpha+\alpha^{-1}}2,
-\qquad
-\sqrt2=\frac{\alpha-\alpha^{-1}}2,
-\]
-so
-\[
-\QQ(\alpha)=\QQ(\sqrt2,\sqrt3).
-\]
+Let $\alpha=\sqrt2+\sqrt3$.
 
-Now
-\[
-[\QQ(\sqrt2):\QQ]=2,
-\]
-and $\sqrt3\notin\QQ(\sqrt2)$; otherwise writing $\sqrt3=a+b\sqrt2$ with $a,b\in\QQ$ and squaring would force $2ab=0$ and then either $3=a^2$ or $3=2b^2$, impossible in $\QQ$. Hence
-\[
-[\QQ(\sqrt2,\sqrt3):\QQ(\sqrt2)]=2.
-\]
-By the tower law,
-\[
-[\QQ(\sqrt2+\sqrt3):\QQ]=4.
-\]
+::: pf
 
-Indeed, $\alpha$ satisfies
-\[
-x^4-10x^2+1=0,
-\]
-which is therefore its minimal polynomial.
+::: {.pf-step #generates}
+$\QQ(\alpha)=\QQ(\sqrt2,\sqrt3)$.
+
+::: pf-proof
+Since $(\sqrt3+\sqrt2)(\sqrt3-\sqrt2)=1$, $\alpha^{-1}=\sqrt3-\sqrt2\in\QQ(\alpha)$.
+Hence $\sqrt3=(\alpha+\alpha^{-1})/2$ and $\sqrt2=(\alpha-\alpha^{-1})/2$ lie in $\QQ(\alpha)$, and the reverse inclusion is clear.
+:::
+
+:::
+
+::: {.pf-step #sqrt3}
+$\sqrt3\notin\QQ(\sqrt2)$.
+
+::: pf-proof
+Suppose $\sqrt3=a+b\sqrt2$ with $a,b\in\QQ$. Squaring gives $3=a^2+2b^2+2ab\sqrt2$, so $2ab=0$ because $\sqrt2\notin\QQ$.
+Then $3=a^2$ or $3=2b^2$, and neither has a rational solution.
+:::
+
+:::
+
+::: pf-step
+$[\QQ(\sqrt2+\sqrt3):\QQ]=\boxed{4}$.
+
+::: pf-proof
+$[\QQ(\sqrt2):\QQ]=2$, and by step [](#sqrt3){.pf-ref} $[\QQ(\sqrt2,\sqrt3):\QQ(\sqrt2)]=2$.
+The tower law and step [](#generates){.pf-ref} give degree $4$.
+Accordingly, $\alpha$ is a root of $x^4-10x^2+1$, which is its minimal polynomial.
+:::
+
+:::
+
+:::
+
 :::
