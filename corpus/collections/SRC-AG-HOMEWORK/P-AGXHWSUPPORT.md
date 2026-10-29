@@ -17,78 +17,70 @@ review: draft
 ::: {.problem}
 Let $\mcf\in \Sh(X)$ and $s\in \mcf(U)$ be a section, and define
 $$
+\begin{aligned}
 \supp s &\definedas \theset{p\in U \st s_p \neq 0} \subseteq U \\
 \supp \mcf &\definedas \theset{p\in X \st \mcf_p\neq 0} \subseteq  X
+\end{aligned}
 ,$$
 where $s_p$ denotes the germ of $s$ in the stalk $\mcf_p$.
 Show that $\supp s$ is closed in $U$ but $\supp \mcf$ need not be closed in $X$.
 :::
 
 ::: {.solution}
-**$\supp(s)$ is closed.**
+::: pf
 
-- By definition,
+::: pf-step
+$\supp s$ is closed in $U$.
+
+::: pf-proof
+Let $p \in U \sm \supp s$, so $s_p = 0$.
+By the definition of the stalk, there is an open neighborhood $W \subseteq U$ of $p$ with $s|_W = 0$.
+Then $s_{p'} = 0$ for every $p' \in W$, so $W \subseteq U \sm \supp s$.
+Hence $U \sm \supp s$ is open in $U$.
+:::
+
+:::
+
+::: pf-step
+$\supp \mcf$ need not be closed in $X$.
+
+::: pf-proof
+
+::: {.pf-step #sheaf-f}
+Fix $q \in X$ and an abelian group $A \neq 0$, and let $\mcf$ be the sheafification of the presheaf
 $$
-\supp(s) &\definedas \theset{p\in U \st \mcf\mid^U_p(s) \neq 0} \subseteq U \\
-\implies \supp(s)^c \definedas U\sm \supp(s) &\definedas \theset{p\in U \st \mcf\mid^U_p(s) = 0} \subseteq U
-.$$
-
-- If $p\in U$ and $s=0$ in the stalk at $p$, then $s=0$ on an open neighborhood $W_p$ of $p$ with $W_p \subseteq U\sm \supp(s)$, so every such $p$ is interior. Hence $U\sm\supp(s)$ is open in $U$.
-
-**$\supp(\mcf)$ need not be closed.**
-
-- Fix $q\in X$ and an abelian group $A\neq 0$. The skyscraper sheaf $q_*\underline{A}$ is the pushforward of the constant sheaf on the point $q$ along the inclusion $q\injects X$:
-
-\begin{tikzcd}
-	{\underline{A}} & {q_* \underline{A}} \\
-	q & X
-	\arrow["{q_*}", from=1-1, to=1-2]
-	\arrow["q", hook, from=2-1, to=2-2]
-\end{tikzcd}
-
-
-- Its sections and stalks are
-$$
-q_* \underline{A}(U) =
+P(U) \definedas
 \begin{cases}
-A & q\in U  \\
-0 & \text{else},
-\end{cases}
-\qquad (q_* \underline{A})_p =
-\begin{cases}
-A & p\in\cl_X(\theset{q})  \\
-0 & \text{else}.
+A & q \notin U \\
+0 & q \in U,
 \end{cases}
 $$
+with identity restriction maps between opens that omit $q$ and zero maps otherwise.
+Then $\supp \mcf = X \sm \cl_X(\theset{q})$.
 
-- Exchange the roles of $A$ and $0$:
-$$
-\mcf \definedas \left( U \mapsto
-\begin{cases}
-A & q\not\in U  \\
-0 & q\in U
-\end{cases}
-\right)^{\scriptscriptstyle \mathrm{sh}}
-.$$
+::: pf-proof
+Sheafification preserves stalks, so $\mcf_p = P_p = \colim_{U \ni p} P(U)$.
+If $p \notin \cl_X(\theset{q})$, some open $U \ni p$ omits $q$.
+Every open $V \subseteq U$ also omits $q$, so $P(V) = A$ with identity transition maps, and $\mcf_p = A \neq 0$.
+If $p \in \cl_X(\theset{q})$, every open $U \ni p$ contains $q$, so $P(U) = 0$ and $\mcf_p = 0$.
+:::
 
-- The presheaf and its sheafification $\mcf$ have the same stalks, and
-$$
-\mcf_p =
-\begin{cases}
-A & p\notin\cl_X(\theset{q}) \\
-0 & p\in\cl_X(\theset{q}).
-\end{cases}
-$$
+:::
 
-- Then for a fixed $q\in X$, $\supp \mcf = X \sm \cl_X(\theset{q})$.
-  - If there is some neighborhood $U\ni p$ that does not contain $q$, then the presheaf takes value $A$ on every $V \subseteq U$, so the colimit stabilizes and equals $A$.
-  - If every neighborhood of $p$ contains $q$, then the presheaf takes value $0$ on every neighborhood of $p$, so the colimit is zero.
+::: pf-step
+For $X = \AA^1_k$ with $k$ infinite and $q = 0$, the set $\supp \mcf$ is not closed.
 
-- For example, take $X \definedas \AA^1\slice{k}$ and $q=0$; then $\theset{0} = V(x)$ for $x\in k[x]$ is closed, so $\cl_X(\theset{0}) = \theset{0}$.
+::: pf-proof
+The point $0 = V(x)$ is closed, so step [](#sheaf-f){.pf-ref} gives $\supp \mcf = \AA^1 \sm \theset{0} = D(x)$.
+The proper closed subsets of $\AA^1_k$ are finite sets of points, together with the empty set.
+The set $D(x)$ is a proper subset that contains the infinitely many closed points $x - a$ with $a \in \units{k}$, so it is not closed.
+:::
 
-- Thus
-$$
-\supp \mcf = \AA^1 \sm \cl_X(\theset{0}) = \AA^1\smz = D(x)
-$$
-is open and not closed when $k$ is infinite.
+:::
+
+:::
+
+:::
+
+:::
 :::
