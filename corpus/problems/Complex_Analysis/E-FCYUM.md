@@ -24,32 +24,27 @@ $$
 :::
 
 ::: {.solution}
-First expand $\inverseof{(\sin(z))}$:
-$$
-\begin{aligned}
-{1\over \sin(z)}
-&= \inverseof{\qty{z - {1\over 3!}z^3 + {1\over 5!}z^5 -\cdots }} \\
-&= \inverseof{z} \inverseof{\qty{1 - {1\over 3!}z^2 + {1\over 5!}z^4 - \cdots }} \\
-&= \inverseof{z} \qty{1 +
-\qty{{1\over 3!}z^2 - {1\over 5!} z^4 + \cdots} +
-\qty{{1\over 3!}z^2 - \cdots}^2 + \cdots
-} \\
-&= \inverseof{z}\qty{1 + {1\over 3!}z^2 + O(z^4) },
-\end{aligned}
-$$
-using that $\inverseof{(1-x)} = 1 + x + x^2 + \cdots$ with $x={1\over 3!}z^2 - {1\over 5!} z^4 + \cdots$.
 
-Thus
-$$
-\begin{aligned}
-z^{-2}\inverseof{\qty{\sin(z)}}
-&= z^{-2} \cdot
-\inverseof{z}\qty{1 + {1\over 3!}z^2 + O(z^4) } \\
-&= z^{-3} + {1\over 3!}\inverseof{z} + O(z),
-\end{aligned}
-$$
-and the residue is the coefficient of $\inverseof{z}$:
-$$
-\Res_{z=0} {1\over z^2 \sin(z)}=\boxed{1\over 6}.
-$$
+::: pf
+
+::: {.pf-step #reciprocal}
+$\frac1{\sin z}=z^{-1}\qty(1+\frac16z^2+O(z^4))$ near $0$.
+
+::: pf-proof
+$\sin z=z\qty(1-x)$ with $x=\frac1{3!}z^2-\frac1{5!}z^4+\cdots=O(z^2)$, and $\frac1{1-x}=1+x+O(x^2)=1+\frac16z^2+O(z^4)$.
+:::
+
+:::
+
+::: pf-step
+$\Res_{z=0}\frac1{z^2\sin z}=\boxed{\frac16}$.
+
+::: pf-proof
+By step [](#reciprocal){.pf-ref}, $\frac1{z^2\sin z}=z^{-3}+\frac16z^{-1}+O(z)$, and the residue is the coefficient of $z^{-1}$.
+:::
+
+:::
+
+:::
+
 :::
