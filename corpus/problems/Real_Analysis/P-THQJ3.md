@@ -15,15 +15,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source took E to be an arbitrary subset and wrote E\\perp in part (a); for a subset, (E^perp)^perp is the closed span of E, so the statement now takes E to be a linear subspace, and part (a) reads E^perp."
 ---
 
 ::: {.problem}
-Let $E \subseteq H$ a Hilbert space.
 
-a. Show that $E\perp \subseteq H$ is a closed subspace.
+Let $H$ be a Hilbert space and $E \subseteq H$ a linear subspace.
 
-b. Show that $(E^\perp)^\perp = \cl_H(E)$.
+(a) Show that $E^\perp \subseteq H$ is a closed subspace.
+
+(b) Show that $(E^\perp)^\perp = \cl_H(E)$.
+
 :::
+
 ::: {.solution}
 
 ::: pf
@@ -48,7 +55,7 @@ $E^\perp$ is closed.
 
 ::: pf-proof
 
-if $x_n \in E^\perp$ and $x_n \to x$, then for each $e \in E$, $\langle x, e\rangle = \lim_n \langle x_n, e\rangle = 0$ (continuity of the inner product), so $x \in E^\perp$.
+If $x_n \in E^\perp$ and $x_n \to x$, then for each $e \in E$, $\langle x, e\rangle = \lim_n \langle x_n, e\rangle = 0$ (continuity of the inner product), so $x \in E^\perp$.
 
 :::
 
@@ -60,7 +67,7 @@ $E \subseteq (E^\perp)^\perp$, hence $\cl_H(E) \subseteq (E^\perp)^\perp$.
 
 ::: pf-proof
 
-for $e \in E$ and $x \in E^\perp$, $\langle e, x\rangle = \overline{\langle x, e\rangle} = 0$, so $e \in (E^\perp)^\perp$.
+For $e \in E$ and $x \in E^\perp$, $\langle e, x\rangle = \overline{\langle x, e\rangle} = 0$, so $e \in (E^\perp)^\perp$.
 
 Since $(E^\perp)^\perp$ is closed by step [](#s2){.pf-ref} (applied to $E^\perp$), the closure of $E$ lies inside it.
 
@@ -74,7 +81,7 @@ $(E^\perp)^\perp \subseteq \cl_H(E)$.
 
 ::: pf-proof
 
-let $M = \cl_H(E)$, a closed subspace.
+Let $M = \cl_H(E)$, which is a closed subspace because $E$ is a subspace.
 
 Take $x \in (E^\perp)^\perp$ and write $x = y + z$ with $y \in M$, $z \in M^\perp$ (Hilbert space projection onto the closed subspace $M$). Since $M^\perp \subseteq E^\perp$ (as $E \subseteq M$), $z \in E^\perp$; and $z = x - y \in (E^\perp)^\perp$ (a subspace, by step [](#s1){.pf-ref}, containing $x$ and $y \in M \subseteq (E^\perp)^\perp$ by step [](#s3){.pf-ref}). Hence $z \in E^\perp \cap (E^\perp)^\perp$, so $\langle z, z\rangle = 0$ and $z = 0$.
 Thus $x = y \in M$.
