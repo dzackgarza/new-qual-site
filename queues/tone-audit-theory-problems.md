@@ -3022,7 +3022,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Topology/D-TD6AO.md` | `b441d6a26eab99796800f80dc95d695cc3e2c6d2` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-TFVPD.md` | `a5dd99d9a5b70aa23bb692c5ef30f1461d5a1c18` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-TK4QD.md` | `256bf0058668dad8f97cf974f8ac82fbd092107d` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-TNBFZ.md` | `1a1183033255a8875ada10b41709fb29b6dd524e` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-TPTOG.md` | `4630a7e551ccbe90fc8836e6e643adda8ac40450` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-TS7TZ.md` | `c464744d2b1bff7f21934db49307f15912305ea5` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-TZSG2.md` | `1904f7ff91ff129d359fbcdd821563453b747b16` | — | Pending |

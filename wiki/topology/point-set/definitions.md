@@ -88,9 +88,7 @@ Local connectedness and local path connectedness use the second.
 
 [[D-CTGON]]
 
-[[D-HQSEQ]] [[D-TNBFZ]]
-
-[[D-ITBUT]]
+[[D-HQSEQ]] [[D-ITBUT]]
 
 [[D-X73EB]]
 
