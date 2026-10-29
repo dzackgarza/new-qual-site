@@ -11,4 +11,4 @@ Compiled algebra prelim exams:
 
 - [[SRC-ART-ALG-2003-2009-PRELIMS]]
 
-Individual university exams are listed by subject, institution, and year in the [Sources listing](exams.html).
+Individual university exams are listed by subject, institution, and year in the [Sources listing](sources.html).

@@ -29,4 +29,4 @@ order: 11
 
 - [[algebra/resources/representations|Representation theory resources]].
 
-Exam collections are listed by subject, institution, and year in the [Sources listing](exams.html).
+Exam collections are listed by subject, institution, and year in the [Sources listing](sources.html).

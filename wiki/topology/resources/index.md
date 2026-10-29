@@ -15,4 +15,4 @@ Books, problem lists, and solutions for the topology qual.
 
 - [[topology/resources/solutions|Solutions (Topology)]], the solution index.
 
-- The [Sources listing](exams.html) lists exams by subject, institution, and year.
+- The [Sources listing](sources.html) lists exams by subject, institution, and year.

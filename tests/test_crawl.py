@@ -15,10 +15,10 @@ def test_crawl_follows_data_driven_catalog_urls(tmp_path: Path) -> None:
     site = tmp_path / "_site"
     write(
         site / "index.html",
-        '<a href="problems.html">Problems</a><a href="exams.html">Exams</a>',
+        '<a href="problems.html">Problems</a><a href="sources.html">Sources</a>',
     )
     write(site / "problems.html", '<table id="problem-table"></table>')
-    write(site / "exams.html", '<table id="source-table"></table>')
+    write(site / "sources.html", '<table id="source-table"></table>')
     write(site / "tag" / "P-ONE.html", "Problem")
     write(site / "exam" / "SRC-ONE.html", "Exam")
     write(site / "404.html", "not found")

@@ -21,7 +21,7 @@
 
   const randomProblem = document.querySelector("#random-problem");
   if (randomProblem) {
-    const topic = document.querySelector("#random-problem-topic");
+    const subject = document.querySelector("#random-problem-subject");
     const submit = randomProblem.querySelector('button[type="submit"]');
     const status = document.querySelector("#random-problem-status");
     let problemData;
@@ -30,7 +30,7 @@
       event.preventDefault();
       if (!randomProblem.reportValidity()) return;
 
-      const selected = topic.selectedOptions[0];
+      const selected = subject.selectedOptions[0];
       const areaName = selected.dataset.areaName;
       submit.disabled = true;
       status.textContent = "";
@@ -42,7 +42,7 @@
         }
         const candidates = problemData.rows.filter((row) => row.areas.includes(areaName));
         if (candidates.length === 0) {
-          status.textContent = "No problems are filed under this topic.";
+          status.textContent = "No problems are filed under this subject.";
           submit.disabled = false;
           return;
         }

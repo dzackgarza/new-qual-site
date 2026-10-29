@@ -1153,6 +1153,7 @@ def _prepare_json_body(job: tuple[bool, list[dict]]) -> list[dict]:
 
 def _card_meta(
     card: sqlite3.Row,
+    area_names: dict[str, str],
     areas: list[str],
     topics: list[str],
     institutions: list[str] | None = None,
@@ -1163,7 +1164,7 @@ def _card_meta(
     meta: dict[str, object] = {
         "title": card["title"],
         "subtitle": card["id"],
-        "area": ", ".join(a.replace("-", " ").title() for a in areas),
+        "area": ", ".join(area_names[a] for a in areas),
         "topics": ", ".join(topics),
         "review": card["review"],
         "categories": sorted(set(topics + areas + institutions + years)),
@@ -1175,18 +1176,19 @@ def _card_meta(
     return meta
 
 
-def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
+def _asked_meta(data: CardPageData, card: sqlite3.Row, area_names: dict[str, str]) -> dict[str, object]:
     facets = _page_rows(data.facets, card["id"])
     institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
     years = sorted({str(f["exam_year"]) for f in facets if f["exam_year"] is not None})
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
-    return _card_meta(card, areas, topics, institutions, years)
+    return _card_meta(card, area_names, areas, topics, institutions, years)
 
 
 def asked_json(
     data: CardPageData,
     card: sqlite3.Row,
+    area_names: dict[str, str],
     body: list[dict],
     source_collections: dict[str, list[Appearance]],
     guide_appearances: dict[str, list[Appearance]],
@@ -1209,7 +1211,7 @@ def asked_json(
             wiki_mentions.get(card["id"], []),
         )
     )
-    return _asked_meta(data, card), body
+    return _asked_meta(data, card, area_names), body
 
 
 def plain_json(
@@ -1261,10 +1263,6 @@ def _card_filters(
         *sorted({("collection", row["collection_id"]) for row in facets}),
         *sorted({("institution", row["institution"].upper()) for row in facets if row["institution"]}),
         *sorted({("year", str(row["source_year"])) for row in facets if row["source_year"] is not None}),
-        # Compatibility for old saved generator URLs. The canonical browser now
-        # exposes source kind directly, but this Boolean still answers whether a
-        # problem has ever appeared on a university exam.
-        ("sourced", "yes" if any(row["source_kind"] == "university-exam" for row in facets) else "no"),
     )
 
 
@@ -1289,7 +1287,7 @@ def write_json_pages(
     mathjax: str,
     link_targets: dict[str, Path],
     assets: AssetCatalog,
-    random_problem_topics: dict[str, str],
+    random_problem_subjects: dict[str, str],
     preamble: str,
 ) -> None:
     """Convert every tag page independently through one persistent server."""
@@ -1338,7 +1336,7 @@ def write_json_pages(
             link_targets,
             assets,
             StandardPage(role),
-            random_problem_topics,
+            random_problem_subjects,
         )
 
 
@@ -1386,25 +1384,6 @@ def _inlines(
     return copy.deepcopy(cache[source])
 
 
-def _link_inline(
-    card: sqlite3.Row,
-    inline_cache: dict[str, list[pf.Inline]],
-    base: str = "../",
-) -> pf.Link:
-    return pf.Link(
-        *_inlines(card["title"], inline_cache),
-        url=f"{base}{card['route']}/{card['id']}.html",
-    )
-
-
-def _link(
-    card: sqlite3.Row,
-    inline_cache: dict[str, list[pf.Inline]],
-    base: str = "../",
-) -> pf.Plain:
-    return pf.Plain(_link_inline(card, inline_cache, base))
-
-
 Page = tuple[dict, list[pf.Block]]
 PageItem = tuple[Page, Path, PageChrome]
 
@@ -1449,7 +1428,7 @@ def write_pages(
     mathjax: str,
     link_targets: dict[str, Path],
     assets: AssetCatalog,
-    random_problem_topics: dict[str, str],
+    random_problem_subjects: dict[str, str],
     preamble: str,
 ) -> None:
     """Front matter is machine-read data; the body is prose.
@@ -1495,65 +1474,15 @@ def write_pages(
             link_targets,
             assets,
             navigation,
-            random_problem_topics,
+            random_problem_subjects,
         )
 
-
-def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite3.Row]:
-    return _rows(
-        con,
-        "select c.* from relations r join cards c on c.id = r.source_id where r.target_id=? and r.kind=? order by c.id",
-        (problem_id, kind),
-    )
 
 
 # --- publication manifests --------------------------------------------------
 
 
 # --- pages ------------------------------------------------------------------
-
-
-def problem_page(
-    con: sqlite3.Connection,
-    card: sqlite3.Row,
-    inline_cache: dict[str, list[pf.Inline]],
-) -> Page:
-    # Institution facets come from exam collections that list this problem. A
-    # problem cited from a textbook contributes a year but no institution.
-    facets = _rows(
-        con,
-        """
-        select distinct e.institution, case when s.source_kind='exam' then s.year else null end as year
-        from collection_problems cp
-        join sources s on s.id=cp.collection_id
-        left join exam_sources e on e.id=s.id
-        where cp.problem_id=?
-        """,
-        (card["id"],),
-    )
-    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
-    years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
-    areas = _terms(con, card["id"], "area")
-    topics = _terms(con, card["id"], "topic")
-
-    blocks = _blocks(card)
-
-    uses = _rows(
-        con,
-        "select c.* from relations r join cards c on c.id=r.target_id where r.source_id=? and r.kind='uses'",
-        (card["id"],),
-    )
-    if uses:
-        blocks.append(pf.Header(pf.Str("Uses"), level=2))
-        blocks.append(pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses]))
-
-    return _card_meta(card, areas, topics, institutions, years), blocks
-
-
-def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
-    areas = _terms(con, card["id"], "area")
-    topics = _terms(con, card["id"], "topic")
-    return _card_meta(card, areas, topics), _blocks(card)
 
 
 def _collection_rows(con: sqlite3.Connection, collection_id: str) -> list[sqlite3.Row]:
@@ -1577,6 +1506,7 @@ def collection_page(
     src: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
     repo_root: Path,
+    area_names: dict[str, str],
 ) -> Page:
     listed = _collection_rows(con, src["id"])
     provenance = [
@@ -1589,7 +1519,7 @@ def collection_page(
     ]
     areas = _terms(con, src["id"], "area")
     topics = _terms(con, src["id"], "topic")
-    meta = _card_meta(src, areas, topics)
+    meta = _card_meta(src, area_names, areas, topics)
     source_links = _collection_source_links(repo_root, provenance)
     if source_links:
         meta["source_links"] = source_links
@@ -1978,13 +1908,12 @@ def index_page(
         f"{scale['solved']:,} carry a written solution.\n\n"
     )
     links = (
-        "## Contents\n\n"
         "[Problems](problems.html)\n"
         ": Every problem, filtered by topic and source, with random samples and print/PDF output.\n\n"
-        "[Exams](exams.html)\n"
-        ": Each exam sitting, problem by problem.\n\n"
+        "[Sources](sources.html)\n"
+        ": The exams, textbooks, homework sets and compilations the problems come from, each listing its problems in source order.\n\n"
         "[Guides](guides.html)\n"
-        ": Ordered subject guides linking these problems by subject.\n\n"
+        ": Study guides that put a subject's definitions, theorems and problems in reading order.\n\n"
         "[Wiki](wiki/index.html)\n"
         ": Notes filed by subject and topic.\n"
     )
@@ -2290,7 +2219,7 @@ QUARTO_YML = {
             "left": [
                 {"href": "index.qmd", "text": "Home"},
                 {"href": "problems.qmd", "text": "Problems"},
-                {"href": "exams.qmd", "text": "Sources"},
+                {"href": "sources.qmd", "text": "Sources"},
                 {"href": "guides.qmd", "text": "Guides"},
                 {"href": "wiki/index.qmd", "text": "Wiki"},
             ]
@@ -2537,6 +2466,7 @@ def project(
         meta, body = asked_json(
             card_page_data,
             card,
+            area_names,
             body,
             source_collections,
             guide_appearances,
@@ -2600,7 +2530,7 @@ def project(
         kind, worked, order = collection_facts.get(src["id"], ("", "", ""))
         pages.append(
             (
-                collection_page(con, src, inline_cache, site.parent),
+                collection_page(con, src, inline_cache, site.parent, area_names),
                 out / src["route"] / f"{src['id']}.qmd",
                 StandardPage(
                     SearchDocument(
@@ -2688,7 +2618,7 @@ Random practice sets are drawn in the [problem browser](problems.html).
     pages.append(
         (
             source_index_page(con, area_names),
-            out / "exams.qmd",
+            out / "sources.qmd",
             StandardPage(Listing()),
         ),
     )

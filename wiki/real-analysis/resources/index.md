@@ -17,4 +17,4 @@ order: 11
 
 - [[real-analysis/resources/extra-questions|Extra questions]] -- problems from the UNL real analysis workshop packet, grouped by topic.
 
-The [Sources listing](exams.html) lists exams by subject, institution, and year, and each exam page links its source material.
+The [Sources listing](sources.html) lists exams by subject, institution, and year, and each exam page links its source material.

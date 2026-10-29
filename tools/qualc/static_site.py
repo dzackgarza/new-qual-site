@@ -340,7 +340,7 @@ def _metadata(meta: dict[str, object], relative_path: Path) -> str:
         rows.append(f'<div class="page-fact"><dt>Source</dt><dd>{links}</dd></div>')
     if not rows:
         return ""
-    return '<dl class="page-facts">' + "".join(rows) + "</dl>"
+    return '<dl class="page-facts" data-pagefind-ignore>' + "".join(rows) + "</dl>"
 
 
 def _relative_url(relative_path: Path, target: Path) -> str:
@@ -776,7 +776,7 @@ def page_document(
     body: str,
     mathjax_header: str,
     chrome: PageChrome,
-    random_problem_topics: dict[str, str] | None = None,
+    random_problem_subjects: dict[str, str] | None = None,
 ) -> str:
     prefix = _prefix(relative_path)
     body, toc = _toc(body)
@@ -792,17 +792,17 @@ def page_document(
     tab_title = raw_tab_title if isinstance(raw_tab_title, str) else title
     raw_subtitle = meta.get("subtitle")
     subtitle = raw_subtitle if isinstance(raw_subtitle, str) else ""
-    subtitle_html = f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
-    topics = random_problem_topics or {}
+    subtitle_html = f'<p class="page-subtitle" data-pagefind-ignore>{escape(subtitle)}</p>' if subtitle else ""
+    subjects = random_problem_subjects or {}
     random_problem_options = "".join(
         f'<option value="{escape(area, quote=True)}" data-area-name="{escape(name, quote=True)}">{escape(name)}</option>'
-        for area, name in sorted(topics.items(), key=lambda item: item[1].casefold())
+        for area, name in sorted(subjects.items(), key=lambda item: item[1].casefold())
     )
     random_problem_html = (
         '<form id="random-problem" class="header-random-problem" data-problems-url="problems.json">'
-        '<label for="random-problem-topic">Random problem</label>'
-        '<select id="random-problem-topic" required>'
-        '<option value="" selected disabled>Choose topic</option>'
+        '<label for="random-problem-subject">Random problem</label>'
+        '<select id="random-problem-subject" required>'
+        '<option value="" selected disabled>Choose subject</option>'
         f"{random_problem_options}"
         "</select>"
         '<button type="submit">Go</button>'
@@ -870,7 +870,7 @@ def page_document(
       <div class="site-links">
         <a href="{prefix}problems.html">Problems</a>
         <a href="{prefix}problems.html?solution=unsolved">Unsolved</a>
-        <a href="{prefix}exams.html">Sources</a>
+        <a href="{prefix}sources.html">Sources</a>
         <a href="{prefix}guides.html">Guides</a>
         <a href="{prefix}wiki/index.html">Wiki</a>
       </div>
@@ -922,7 +922,7 @@ def write_page(
     link_targets: dict[str, Path],
     assets: AssetCatalog,
     chrome: PageChrome,
-    random_problem_topics: dict[str, str] | None = None,
+    random_problem_subjects: dict[str, str] | None = None,
 ) -> None:
     path = site_root / relative_path
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -941,6 +941,6 @@ def write_page(
             rewritten,
             mathjax_header,
             chrome,
-            random_problem_topics,
+            random_problem_subjects,
         )
     )

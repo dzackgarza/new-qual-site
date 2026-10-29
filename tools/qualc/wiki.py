@@ -553,7 +553,7 @@ def _asset_target(raw: str, assets: AssetCatalog) -> Path:
 # name as a missing wiki page and fails the build. Written site-root-relative,
 # which is the form `write_page` turns into a URL from wherever the page sits.
 # `index.html` is not here: the wiki has one of its own.
-SITE_PAGES = frozenset({"problems.html", "generate.html", "exams.html", "guides.html"})
+SITE_PAGES = frozenset({"problems.html", "generate.html", "sources.html", "guides.html"})
 
 
 def _canonical_target(

@@ -24,7 +24,7 @@ Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/top
 
 ## Qualifying-exam collections
 
-The UNL topology qualifying exams from 2002--2020 are source collections on the [Sources listing](exams.html).
+The UNL topology qualifying exams from 2002--2020 are source collections on the [Sources listing](sources.html).
 
 Compiled scans of earlier exams:
 

@@ -72,7 +72,7 @@ def _json(path: pathlib.Path) -> Any:
 def browser_targets(site: pathlib.Path = SITE) -> dict[pathlib.Path, list[pathlib.Path]]:
     """Canonical URLs rendered by the JavaScript problem/source browsers."""
     out: dict[pathlib.Path, list[pathlib.Path]] = {}
-    for page_name, data_name in (("problems.html", "problems.json"), ("exams.html", "sources.json")):
+    for page_name, data_name in (("problems.html", "problems.json"), ("sources.html", "sources.json")):
         data_path = site / data_name
         if not data_path.exists():
             continue

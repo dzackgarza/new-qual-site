@@ -13,4 +13,4 @@ order: 12
 
 - [[complex-analysis/resources/solutions|Solutions]] — solved qualifying exams, course exams, and problem sets.
 
-- The [Sources listing](exams.html) lists exams by subject, institution, and year; each exam page links its source material.
+- The [Sources listing](sources.html) lists exams by subject, institution, and year; each exam page links its source material.

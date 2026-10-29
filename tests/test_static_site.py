@@ -140,11 +140,11 @@ def test_random_problem_topic_selector_is_in_the_shared_header(built_fixture: Pa
         assert len(header) == 1, route
         forms = header[0].find_all("form", id="random-problem")
         assert len(forms) == 1, route
-        selects = forms[0].find_all("select", id="random-problem-topic")
+        selects = forms[0].find_all("select", id="random-problem-subject")
         assert len(selects) == 1, route
         options = selects[0].find_all("option")
         assert [(option.attrs["value"], option.text) for option in options] == [
-            ("", "Choose topic"),
+            ("", "Choose subject"),
             ("algebra", "Algebra"),
             ("complex-analysis", "Complex Analysis"),
             ("real-analysis", "Real Analysis"),
@@ -450,6 +450,30 @@ def test_problem_browser_uses_datatables_searchpanes(built_fixture: Path) -> Non
     assert "listing-filters" not in markup
     assert len(page.root.find_all("button", id="practice-sample")) == 1
     assert len(page.root.find_all("button", id="practice-print")) == 1
+
+
+def test_sources_are_one_named_route_and_area_labels_come_from_the_registry(built_fixture: Path) -> None:
+    site = built_fixture / "build" / "quarto" / "_site"
+    home = read_html(site / "index.html")
+    main = home.root.find_all("main")[0]
+    assert [h.text for h in main.find_all("h2")] == []
+    links = {a.text: a.attrs["href"] for a in main.find_all("a")}
+    assert links["Sources"] == "sources.html"
+    assert (site / "sources.html").is_file()
+    assert not (site / "exams.html").exists()
+
+
+def test_a_card_area_is_labelled_by_the_subject_registry(tmp_path: Path) -> None:
+    """The label is the subject's wiki title, not the area id title-cased."""
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "Algebra" / "index.md").write_text("---\ntitle: Abstract Algebra\norder: 1\n---\n\n# Abstract Algebra\n")
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    card = read_html(work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html")
+    [facts] = card.root.find_all("dl", **{"class": "page-facts"})
+    assert "data-pagefind-ignore" in facts.attrs
+    [area] = [fact.find_all("dd")[0].text for fact in facts.find_all("div") if fact.find_all("dt")[0].text == "Area"]
+    assert area == "Abstract Algebra"
 
 
 def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submission(static_site: Path) -> None:

@@ -17,6 +17,6 @@ UCSD Math 202 covers five subjects.
 
 - [[applied-algebra/invariant-theory/index|Invariant theory]] -- the finiteness theorems of Noether and Hilbert, Molien's formula, the Reynolds operator.
 
-Past exams are listed in the [Sources listing](exams.html); each exam page lists its problems in exam order.
+Past exams are listed in the [Sources listing](sources.html); each exam page lists its problems in exam order.
 
 [[applied-algebra/resources/index|Resources]].

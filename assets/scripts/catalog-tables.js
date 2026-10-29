@@ -37,6 +37,19 @@
     await window.MathJax?.typesetPromise?.([node]);
   };
   const pane = (column, rows) => (rows.length ? { column, rows } : null);
+  // SearchPanes silently drops a preselected value that no row carries, so a
+  // URL filter that matches nothing would widen to every row. A pane none of
+  // whose values occur makes the result empty instead, and the table says why.
+  const unmatchedValues = (rows, columns, preSelect) =>
+    preSelect
+      .filter(({ column, rows: wanted }) => {
+        const field = columns[column].data;
+        const present = new Set(rows.flatMap((row) => [].concat(row[field] ?? []).map(String)));
+        return !wanted.some((value) => present.has(String(value)));
+      })
+      .flatMap(({ rows: wanted }) => wanted);
+  const emptyMessage = (noun, unmatched) =>
+    `No ${noun} match the filter ${unmatched.map((value) => `“${value}”`).join(", ")}.`;
 
   const initProblemTable = async () => {
     const payload = await fetch(new URL("problems.json", siteRoot)).then((response) => response.json());
@@ -93,14 +106,7 @@
       pane(9, values("solution").map(solutionLabel)),
     ].filter(Boolean);
 
-    const table = new DataTable(problemTable, {
-      data: rows,
-      deferRender: true,
-      pageLength: 50,
-      lengthMenu: [25, 50, 100],
-      search: { search: params.get("q") || "" },
-      order: [[10, "asc"]],
-      columns: [
+    const columns = [
         {
           data: "title",
           render: linkRender,
@@ -155,7 +161,18 @@
           searchPanes: { show: true },
         },
         { data: "order", visible: false, searchable: false },
-      ],
+    ];
+    const unmatched = unmatchedValues(rows, columns, preSelect);
+
+    const table = new DataTable(problemTable, {
+      data: unmatched.length ? [] : rows,
+      language: unmatched.length ? { emptyTable: emptyMessage("problems", unmatched) } : {},
+      deferRender: true,
+      pageLength: 50,
+      lengthMenu: [25, 50, 100],
+      search: { search: params.get("q") || "" },
+      order: [[10, "asc"]],
+      columns,
       rowGroup: collectionMode ? { dataSrc: "section" } : false,
       searchPanes: {
         cascadePanes: true,
@@ -260,14 +277,7 @@
       pane(4, values("year")),
     ].filter(Boolean);
 
-    const table = new DataTable(sourceTable, {
-      data: payload.rows,
-      deferRender: true,
-      pageLength: 50,
-      lengthMenu: [25, 50, 100],
-      search: { search: params.get("q") || "" },
-      order: [[6, "asc"]],
-      columns: [
+    const columns = [
         {
           data: "title",
           render: linkRender,
@@ -283,7 +293,18 @@
         { data: "year", searchPanes: { show: true } },
         { data: "worked", searchPanes: { show: false } },
         { data: "order", visible: false, searchable: false },
-      ],
+    ];
+    const unmatched = unmatchedValues(payload.rows, columns, preSelect);
+
+    const table = new DataTable(sourceTable, {
+      data: unmatched.length ? [] : payload.rows,
+      language: unmatched.length ? { emptyTable: emptyMessage("sources", unmatched) } : {},
+      deferRender: true,
+      pageLength: 50,
+      lengthMenu: [25, 50, 100],
+      search: { search: params.get("q") || "" },
+      order: [[6, "asc"]],
+      columns,
       searchPanes: {
         cascadePanes: true,
         initCollapsed: true,

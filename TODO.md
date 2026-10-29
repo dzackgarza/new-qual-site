@@ -83,7 +83,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-site-strings`**. **Needs:** none. Unmatched browser prefilter widens to all rows;
     `sourced` compatibility filter; Sources/Exams naming; area label spellings; Pagefind
     excerpts include page facts; "Choose topic" over areas; home contents list.
-    **Acceptance:** each corrected on the deployed pages.
+    **Acceptance:** each corrected on the deployed pages. **Closed.**
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1

@@ -8,7 +8,7 @@ order: 90
 
 Syllabus topic lists, solution collections, examination papers from other programs, and the workshop index.
 
-- [[card-archives|Source archives]] — the [Sources](exams.html) listing of exams, textbooks, and problem sets by subject, institution, and year.
+- [[card-archives|Source archives]] — the [Sources](sources.html) listing of exams, textbooks, and problem sets by subject, institution, and year.
 
 - [[archives/topics|Undergraduate syllabus topics]] — calculus, linear algebra, algebra, real analysis, complex analysis, and point-set topology.
 
