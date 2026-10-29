@@ -23,48 +23,51 @@ audit:
 ---
 
 ::: {.problem}
-(1) Prove that the set of diagonalizable $N \times N$ matrices over $\mathbb{C}$ is **dense** in $M_N(\mathbb{C})$ in the standard Euclidean/metric topology.
-(2) Prove that over any algebraically closed field $K$, the set of diagonalizable matrices is **Zariski dense** in $M_N(K) \cong \mathbb{A}^{N^2}$.
+(a) Prove that the set of diagonalizable $N \times N$ matrices over $\CC$ is dense in $M_N(\CC)$ in the standard Euclidean/metric topology.
+
+(b) Prove that over any algebraically closed field $K$, the set of diagonalizable matrices is Zariski dense in $M_N(K) \cong \AA^{N^2}$.
 :::
 
 ::: {.solution}
-Let $A\in M_N(K)$. If the characteristic polynomial $\chi_A(t)$ has $N$ distinct roots, then $A$ is diagonalizable. The discriminant
-\[
-\Delta(A)=\operatorname{Disc}(\chi_A)
-\]
-is a polynomial in the $N^2$ entries of $A$, and
-\[
-\Delta(A)\ne0
-\]
-exactly when $\chi_A$ has distinct roots.
+A matrix whose characteristic polynomial has $N$ distinct roots is diagonalizable.
 
-This polynomial is not identically zero. Indeed, over any algebraically closed field $K$ one can choose $N$ distinct scalars $a_1,\dots,a_N\in K$; then for
-\[
-D=\operatorname{diag}(a_1,\dots,a_N)
-\]
-we have
-\[
+::: pf
+
+::: pf-step
+
+(a) Diagonalizable matrices are dense in $M_N(\CC)$ for the Euclidean topology.
+
+::: pf-proof
+
+Let $A\in M_N(\CC)$ and $\varepsilon>0$. Write $A=UTU^*$ with $U$ unitary and $T$ upper triangular (Schur triangularization), with diagonal entries $\lambda_1,\ldots,\lambda_N$. Choose $\delta_1,\ldots,\delta_N\in\CC$ with $\abs{\delta_i}<\varepsilon$ such that the numbers $\lambda_i+\delta_i$ are pairwise distinct, and set
+$$
+A_\varepsilon=U\bigl(T+\diag(\delta_1,\ldots,\delta_N)\bigr)U^*.
+$$
+The eigenvalues of $A_\varepsilon$ are the distinct numbers $\lambda_i+\delta_i$, so $A_\varepsilon$ is diagonalizable, and in the operator norm
+$$
+\norm{A_\varepsilon-A}=\norm{\diag(\delta_1,\ldots,\delta_N)}=\max_i\abs{\delta_i}<\varepsilon.
+$$
+
+:::
+
+:::
+
+::: pf-step
+
+(b) Diagonalizable matrices are Zariski dense in $M_N(K)$.
+
+::: pf-proof
+
+The discriminant $\Delta(A)$ of the characteristic polynomial $\chi_A$ is a polynomial in the $N^2$ entries of $A$, and $\Delta(A)\ne0$ exactly when $\chi_A$ has distinct roots. It is not identically zero: $K$ is infinite, so there are distinct $a_1,\ldots,a_N\in K$, and $D=\diag(a_1,\ldots,a_N)$ has
+$$
 \Delta(D)=\prod_{i<j}(a_i-a_j)^2\ne0.
-\]
-Thus the principal open set
-\[
-U_\Delta=\{A:\Delta(A)\ne0\}
-\]
-is nonempty and consists of diagonalizable matrices. Since affine space $M_N(K)\cong\mathbb A^{N^2}$ is irreducible, every nonempty Zariski-open subset is dense. Hence diagonalizable matrices are Zariski dense in $M_N(K)$.
+$$
+Hence the principal open set $U_\Delta=\{A:\Delta(A)\ne0\}$ is nonempty and consists of diagonalizable matrices. Since $\AA^{N^2}$ is irreducible, every nonempty Zariski-open subset is dense.
 
-For the ordinary topology over $\mathbb C$, let $A=UTU^*$ be a Schur triangularization, with diagonal entries $\lambda_1,\dots,\lambda_N$. Given $\varepsilon>0$, choose $\delta_1,\dots,\delta_N$ with
-\[
-|\delta_i|<\varepsilon
-\]
-such that the numbers $\lambda_i+\delta_i$ are pairwise distinct, and set
-\[
-T_\varepsilon=T+\operatorname{diag}(\delta_1,\dots,\delta_N),
-\qquad
-A_\varepsilon=UT_\varepsilon U^*.
-\]
-Then $A_\varepsilon$ has distinct eigenvalues and is therefore diagonalizable, while
-\[
-\|A_\varepsilon-A\|=\max_i|\delta_i|<\varepsilon
-\]
-for the operator norm. Thus diagonalizable complex matrices are Euclidean-dense as well.
+:::
+
+:::
+
+:::
+
 :::
