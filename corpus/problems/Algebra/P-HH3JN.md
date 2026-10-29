@@ -22,39 +22,69 @@ audit:
 ---
 
 ::: {.problem}
-Prove that every real symmetric matrix $A \in M_n(\mathbb{R})$ has **real eigenvalues** and can be **orthogonally diagonalized**: there exists an orthogonal matrix $Q \in O(n)$ such that $Q^T A Q = \operatorname{diag}(\lambda_1, \dots, \lambda_n)$ (The Real Spectral Theorem).
+
+Prove that every real symmetric matrix $A \in M_n(\RR)$ has real eigenvalues and can be orthogonally diagonalized: there exists an orthogonal matrix $Q \in O(n)$ such that $Q^T A Q = \diag(\lambda_1, \ldots, \lambda_n)$ (the real spectral theorem).
+
 :::
 
 ::: {.solution}
-Let $A=A^T\in M_n(\mathbb R)$. Regard $A$ as a complex matrix. If $Av=\lambda v$ with $v\ne0$, then
-\[
-v^*Av=\lambda v^*v.
-\]
-Because $A^*=A$, the scalar $v^*Av$ is real:
-\[
-\overline{v^*Av}=v^*A^*v=v^*Av.
-\]
-Since $v^*v>0$, it follows that $\lambda=\overline\lambda$, hence every eigenvalue is real.
 
-We prove orthogonal diagonalizability by induction on $n$. The case $n=1$ is immediate. For $n>1$, choose a unit eigenvector $u_1\in\mathbb R^n$ with $Au_1=\lambda_1u_1$. Let
-\[
-W=u_1^\perp.
-\]
+Let $A=A^T\in M_n(\RR)$, and let $\inner{v}{w}=v^Tw$ be the standard inner product on $\RR^n$.
+
+::: pf
+
+::: {.pf-step #real}
+
+Every eigenvalue of $A$ is real.
+
+::: pf-proof
+
+Regard $A$ as a complex matrix, and let $Av=\lambda v$ with $\lambda\in\CC$ and $0\ne v\in\CC^n$. Then $v^*Av=\lambda v^*v$. Because $A^*=A$, the scalar $v^*Av$ is real: $\overline{v^*Av}=v^*A^*v=v^*Av$. Since $v^*v>0$, $\lambda$ is real.
+
+:::
+
+:::
+
+::: {.pf-step #eigenvector}
+
+If $n\ge1$, then $A$ has a unit eigenvector $u_1\in\RR^n$.
+
+::: pf-proof
+
+The characteristic polynomial of $A$ has a root $\lambda_1\in\CC$, which is real by step [](#real){.pf-ref}. Then $A-\lambda_1I$ is a singular real matrix, so it has a nonzero kernel vector in $\RR^n$; normalize it.
+
+:::
+
+:::
+
+::: {.pf-step #invariant}
+
+If $Au_1=\lambda_1u_1$, then $W=u_1^\perp$ is $A$-invariant, and $A$ restricted to $W$ is symmetric with respect to $\inner{\cdot}{\cdot}$.
+
+::: pf-proof
+
 For $w\in W$,
-\[
-\langle Aw,u_1\rangle
-=\langle w,A u_1\rangle
-=\lambda_1\langle w,u_1\rangle=0,
-\]
-so $W$ is $A$-invariant. The restriction $A|_W$ is again symmetric. By induction, $W$ has an orthonormal basis $u_2,\dots,u_n$ of eigenvectors of $A$.
+$$
+\inner{Aw}{u_1}=\inner{w}{Au_1}=\lambda_1\inner{w}{u_1}=0,
+$$
+so $Aw\in W$. The identity $\inner{Aw}{w'}=\inner{w}{Aw'}$ holds for all $w,w'\in\RR^n$, in particular on $W$.
 
-Thus $u_1,\dots,u_n$ is an orthonormal eigenbasis of $\mathbb R^n$. If
-\[
-Q=[u_1\ \cdots\ u_n],
-\]
-then $Q^TQ=I$ and
-\[
-Q^TAQ=\operatorname{diag}(\lambda_1,\dots,\lambda_n).
-\]
-Hence every real symmetric matrix has real eigenvalues and is orthogonally diagonalizable.
+:::
+
+:::
+
+::: pf-step
+
+$\RR^n$ has an orthonormal basis $u_1,\ldots,u_n$ of eigenvectors of $A$, and with $Q=[u_1\ \cdots\ u_n]$ we have $Q^TQ=I$ and $Q^TAQ=\diag(\lambda_1,\ldots,\lambda_n)$.
+
+::: pf-proof
+
+We argue by induction on $n$; the case $n=1$ is immediate. For $n>1$, take $u_1$ from step [](#eigenvector){.pf-ref}. By step [](#invariant){.pf-ref} and induction applied to the symmetric operator $A|_W$ on the $(n-1)$-dimensional inner product space $W$, $W$ has an orthonormal basis $u_2,\ldots,u_n$ of eigenvectors of $A$. Together with $u_1$ this is an orthonormal eigenbasis of $\RR^n$. Orthonormality gives $Q^TQ=I$, and $AQ=Q\diag(\lambda_1,\ldots,\lambda_n)$ gives the diagonalization.
+
+:::
+
+:::
+
+:::
+
 :::
