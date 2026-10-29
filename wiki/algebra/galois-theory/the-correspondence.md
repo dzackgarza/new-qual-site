@@ -18,8 +18,6 @@ topics:
 
 [[PR-QDRB4]]
 
-[[PR-3TYBE]]
-
 ## The fundamental theorem
 
 [[T-NLPZY]]
@@ -27,15 +25,6 @@ topics:
 [[T-SGY3O]]
 
 [[PR-FM5FN]]
-
-::: {.remark title="Degrees, indices, and normal subgroups"}
-Let $L/F$ be a finite Galois extension with $G=\Gal(L/F)$.
-The correspondence $K\mapsto\Gal(L/K)$ from intermediate fields to subgroups is inclusion-reversing, and if $K$ corresponds to $H$, then
-$$
-[L:K] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = \size G.
-$$
-The extension $K/F$ is Galois if and only if $H$ is normal in $G$, and then $\Gal(K/F)\cong G/H$.
-:::
 
 ## Criteria for Galois extensions
 
