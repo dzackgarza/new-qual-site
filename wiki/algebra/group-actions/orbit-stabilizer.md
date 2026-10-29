@@ -47,16 +47,8 @@ Hence the number of $g\in G$ with $g^p=e$ is congruent to $\size X\equiv 0 \pmod
 [[D-3T6O2]]
 
 ::: {.remark}
-Lying in the same orbit is an equivalence relation, so the orbits partition $X$, and $G$ acts transitively on each orbit.
 A point $x$ is fixed if and only if $\Orb(x) = \theset x$, equivalently $\Stab_G(x) = G$.
 The notation is listed on [[algebra/groups/notation|Notation]].
-:::
-
-::: {.fact}
-For an action $\psi\colon G\to\Aut_\Sets(X)$, the kernel is the intersection of the stabilizers:
-$$
-\ker \psi = \Intersect_{x\in X} G_x.
-$$
 :::
 
 [[D-KGGWK]]
