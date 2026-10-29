@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Given a fibration $F \to E \xrightarrow{p} B$, define a natural action of $\Omega B$ on the homotopy fiber $F_p$ and use this to show that exactness at $\langle X, F \rangle$ in the long exact sequence can be improved to the statement that two elements of $\langle X, F \rangle$ have the same image in $\langle X, E \rangle$ if they are in the same orbit of the induced action of $\langle X, \Omega B \rangle$ on $\langle X, F \rangle$.
+Given a fibration $F \to E \xrightarrow{p} B$, define a natural action of $\Omega B$ on the homotopy fiber $F_p$ and use this to show that exactness at $\langle X, F \rangle$ in the long exact sequence in the preceding problem can be improved to the statement that two elements of $\langle X, F \rangle$ have the same image in $\langle X, E \rangle$ iff they are in the same orbit of the induced action of $\langle X, \Omega B \rangle$ on $\langle X, F \rangle$.
 :::
 
 ::: {.solution}
