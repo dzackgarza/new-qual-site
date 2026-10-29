@@ -30,3 +30,39 @@ III. $\dfrac{\partial^2\phi}{\partial z\,\partial y}$
 (D) II and III only
 (E) I, II, and III
 :::
+
+::: {.solution}
+
+::: pf
+
+::: {.pf-step #first-partial}
+$\dfrac{\partial\phi}{\partial y}=2x$.
+
+::: pf-proof
+Only the term $2xy$ depends on $y$, and its partial derivative in $y$ is $2x$.
+:::
+
+:::
+
+::: {.pf-step #second-partials}
+$\dfrac{\partial^2\phi}{\partial y^2}=0$, $\dfrac{\partial^2\phi}{\partial x\,\partial y}=2$, and $\dfrac{\partial^2\phi}{\partial z\,\partial y}=0$.
+
+::: pf-proof
+Differentiate $2x$ from step [](#first-partial){.pf-ref} in $y$, in $x$, and in $z$ respectively.
+Since $\phi$ is a polynomial, the order of mixed differentiation does not matter.
+:::
+
+:::
+
+::: pf-step
+The identically zero derivatives are $\boxed{\text{I and III only}}$, choice (C).
+
+::: pf-proof
+By step [](#second-partials){.pf-ref}, I and III vanish identically and II is the nonzero constant $2$.
+:::
+
+:::
+
+:::
+
+:::
