@@ -16,7 +16,8 @@ source:
   problems:
   - id: P-UNL872S14-6-A-1
     comment: Assignment 6.A.1
-  - P-UNL872S14-6-A-2
+  - id: P-UNL872S14-6-A-2
+    comment: Assignment 6.A.2
   - P-UNL872S14-6-A-3
   - P-UNL872S14-6-A-4
   - P-UNL872S14-6-A-5
