@@ -58,3 +58,7 @@ A zero $z$ of $f-w$ in $\Delta$ is not $z_0$, since $f(z_0)=w_0\ne w$. By step [
 
 :::
 :::
+
+::: {.remark title="Alternative count by Rouché's theorem"}
+Step [](#count){.pf-ref} also follows from Rouché's theorem. On $\abs{z-z_0}=\delta$, $\abs{w-w_0}<\eps\le\abs{f(z)-w_0}$, so $f-w=(f-w_0)-(w-w_0)$ has as many zeros in $\Delta$ as $f-w_0$, namely $m$.
+:::
