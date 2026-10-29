@@ -79,7 +79,9 @@ A real harmonic function $u$ is continuous and has the mean value property, so t
 
 [[PR-6WOTK]]
 
-::: {.proof title="from Gamelin"}
+::: {.proof}
+The argument follows [@Gam01].
+
 The set $\theset{u(z)=M}$ is open.
 Suppose $u(z_1)=M$ and $\DD_\rho(z_1)\subseteq D$, and write the mean value equality as
 $$
@@ -94,7 +96,9 @@ Since $D$ is connected one of them is empty, so either $u<M$ throughout or $u\eq
 
 [[PR-QW3ZK]]
 
-::: {.proof title="from Gamelin"}
+::: {.proof}
+The argument follows [@Gam01].
+
 Replace $h(z)$ by $\lambda h(z)$ for a unimodular constant $\lambda$ so that $h(z_0) = M$, and set $u = \Re h$.
 Then $u$ is harmonic on $D$ and attains its maximum at $z_0$, so $u \equiv M$ by the [[PR-6WOTK|strict maximum principle for real harmonic functions]].
 Since $\abs h \leq M$ and $\Re h = M$, we get $\Im h = 0$, so $h$ is constant.
