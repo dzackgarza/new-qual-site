@@ -276,6 +276,7 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "twice.md": wiki_md("# Twice\n\n[[DEF-PGROUP]]\n\n[[LEM-FRATTINI]]\n\n[[DEF-PGROUP]]\n", order=8),
         "yaml-title.md": wiki_md("# YAML title\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n", order=9),
         "citations.md": wiki_md("# Citations\n\nReferences: [@DF04], [@Smi96].\n", order=10),
+        "paren-list.md": wiki_md("# Paren list\n\n(a) First.\n(b) Second.\n", order=13),
         "block-title.md": wiki_md('# Block title\n\n::: {.theorem title="Arzelà--Ascoli [@DF04]"}\nStatement.\n:::\n', order=12),
         "captions.md": wiki_md("# Captions\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n", order=11),
         "Algebra/index.md": wiki_md("# Algebra\n", order=2, title="Algebra"),
@@ -579,6 +580,13 @@ def test_a_block_title_is_read_like_the_body(wiki_site: Path) -> None:
     assert "Arzelà–Ascoli" in qualifier
     assert "[@" not in qualifier
     assert "[DuFo04]" in qualifier
+
+
+def test_a_parenthesized_list_keeps_its_parentheses(wiki_site: Path) -> None:
+    """An authored "(a)" list carries its delimiter to the stylesheet's counter style."""
+    page = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "paren-list.html").read_text()
+    assert '<div class="list-two-parens">' in page
+    assert '<ol type="a">' in page.split('<div class="list-two-parens">', 1)[1]
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(wiki_site: Path) -> None:

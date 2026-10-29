@@ -1556,3 +1556,104 @@ div.panel > ul {
     order: 4;
   }
 }
+
+/* Parenthesized list markers: see `mark_list_delimiters` in tools/qualc/model.py. */
+@counter-style two-parens-decimal {
+  system: extends decimal;
+  prefix: "(";
+  suffix: ") ";
+}
+
+.list-two-parens > ol {
+  list-style-type: two-parens-decimal;
+}
+
+@counter-style one-paren-decimal {
+  system: extends decimal;
+  prefix: "";
+  suffix: ") ";
+}
+
+.list-one-paren > ol {
+  list-style-type: one-paren-decimal;
+}
+
+@counter-style two-parens-lower-alpha {
+  system: extends lower-alpha;
+  prefix: "(";
+  suffix: ") ";
+}
+
+.list-two-parens > ol[type="a"] {
+  list-style-type: two-parens-lower-alpha;
+}
+
+@counter-style one-paren-lower-alpha {
+  system: extends lower-alpha;
+  prefix: "";
+  suffix: ") ";
+}
+
+.list-one-paren > ol[type="a"] {
+  list-style-type: one-paren-lower-alpha;
+}
+
+@counter-style two-parens-upper-alpha {
+  system: extends upper-alpha;
+  prefix: "(";
+  suffix: ") ";
+}
+
+.list-two-parens > ol[type="A"] {
+  list-style-type: two-parens-upper-alpha;
+}
+
+@counter-style one-paren-upper-alpha {
+  system: extends upper-alpha;
+  prefix: "";
+  suffix: ") ";
+}
+
+.list-one-paren > ol[type="A"] {
+  list-style-type: one-paren-upper-alpha;
+}
+
+@counter-style two-parens-lower-roman {
+  system: extends lower-roman;
+  prefix: "(";
+  suffix: ") ";
+}
+
+.list-two-parens > ol[type="i"] {
+  list-style-type: two-parens-lower-roman;
+}
+
+@counter-style one-paren-lower-roman {
+  system: extends lower-roman;
+  prefix: "";
+  suffix: ") ";
+}
+
+.list-one-paren > ol[type="i"] {
+  list-style-type: one-paren-lower-roman;
+}
+
+@counter-style two-parens-upper-roman {
+  system: extends upper-roman;
+  prefix: "(";
+  suffix: ") ";
+}
+
+.list-two-parens > ol[type="I"] {
+  list-style-type: two-parens-upper-roman;
+}
+
+@counter-style one-paren-upper-roman {
+  system: extends upper-roman;
+  prefix: "";
+  suffix: ") ";
+}
+
+.list-one-paren > ol[type="I"] {
+  list-style-type: one-paren-upper-roman;
+}

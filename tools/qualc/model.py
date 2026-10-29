@@ -508,7 +508,7 @@ NON_SEMANTIC_CLASSES = {"foldopen"}
 # Structured-proof classes belong to the Lamport filter's grammar (lamport.py).
 # The block that `typeset_block_titles` makes of an authored `title=`.
 QUALIFIER_CLASS = "qual-section-qualifier"
-KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES | LAMPORT_CLASSES | {QUALIFIER_CLASS}
+KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES | LAMPORT_CLASSES | {QUALIFIER_CLASS, "list-one-paren", "list-two-parens"}
 
 
 # A fence line that Pandoc does not read as a div silently changes the tree:
@@ -848,6 +848,22 @@ def unlist_step_claims(element: pf.Element, doc: pf.Doc) -> pf.Element:
     return element
 
 
+# Pandoc's HTML writer keeps an ordered list's numbering style in `type` and
+# drops its delimiter, so an authored "(a)" list showed "a.". The wrapper class
+# carries the delimiter to `styles.css`, whose counter styles print it.
+LIST_DELIMITER_CLASSES = {"OneParen": "list-one-paren", "TwoParens": "list-two-parens"}
+
+
+def mark_list_delimiters(element: pf.Element, doc: pf.Doc) -> pf.Element:
+    """Wrap a parenthesized ordered list in a Div naming its delimiter."""
+    del doc
+    if not isinstance(element, pf.OrderedList) or element.delimiter not in LIST_DELIMITER_CLASSES:
+        return element
+    if isinstance(element.parent, pf.Div) and LIST_DELIMITER_CLASSES[element.delimiter] in element.parent.classes:
+        return element
+    return pf.Div(element, classes=[LIST_DELIMITER_CLASSES[element.delimiter]])
+
+
 def typeset_link_dashes(element: pf.Element, doc: pf.Doc) -> pf.Element:
     """Typeset the dashes in a wikilink's text, which Pandoc leaves as written.
 
@@ -1111,7 +1127,14 @@ def typeset_block_titles(pandoc: PandocServer, outputs: list[str], citations: Ci
 
 def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
     try:
-        document = drop_citeproc_metadata(from_ast(source)).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims).walk(typeset_link_dashes)
+        document = (
+            drop_citeproc_metadata(from_ast(source))
+            .walk(drop_path_captions)
+            .walk(drop_bibliography)
+            .walk(unlist_step_claims)
+            .walk(mark_list_delimiters)
+            .walk(typeset_link_dashes)
+        )
         return NormalizedAst(
             ast=to_json(document),
             sections=extract_sections(document),
