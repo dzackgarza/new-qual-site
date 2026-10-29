@@ -18,28 +18,53 @@ When does an $S_n$-conjugacy class contained in $A_n$ split into two $A_n$-conju
 :::
 
 ::: {.solution}
-An $S_n$-conjugacy class contained in $A_n$ splits into two $A_n$-classes exactly when its cycle type consists of **distinct odd parts**.
 
-Let $\sigma\in A_n$. Since $A_n\normal S_n$ has index $2$, the $S_n$-class of $\sigma$ either stays one $A_n$-class or splits into two equal $A_n$-classes. By orbit--stabilizer,
-\[
-|\operatorname{Cl}_{S_n}(\sigma)|=[S_n:C_{S_n}(\sigma)],
-\qquad
-|\operatorname{Cl}_{A_n}(\sigma)|=[A_n:C_{A_n}(\sigma)].
-\]
-The $S_n$-class splits exactly when
-\[
-C_{S_n}(\sigma)\subseteq A_n.
-\]
+Let $\sigma\in A_n$, with cycle type taken to include fixed points as $1$-cycles.
 
-Now inspect the centralizer from the cycle decomposition of $\sigma$.
+::: pf
 
-If an even cycle occurs, that cycle itself is an odd permutation lying in $C_{S_n}(\sigma)$, so no splitting occurs.
+::: {.pf-step #criterion}
 
-If two cycles have the same odd length, there is a permutation interchanging those two cycles position-by-position. This centralizes $\sigma$ and is a product of an odd number of transpositions, hence is odd. Again no splitting occurs.
+The $S_n$-class of $\sigma$ splits into two $A_n$-classes if and only if $C_{S_n}(\sigma)\subseteq A_n$.
 
-Conversely, suppose all cycle lengths are odd and pairwise distinct. Then every element of the centralizer must preserve each cycle support separately, because there are no equal-length cycles to permute. On each support it is a power of that odd cycle. Every power of an odd cycle is even. Hence every element of $C_{S_n}(\sigma)$ is even, so
-\[
-C_{S_n}(\sigma)\subseteq A_n.
-\]
-Therefore the class splits exactly for cycle types with distinct odd parts.
+::: pf-proof
+
+By orbit--stabilizer, the $S_n$-class has $[S_n:C_{S_n}(\sigma)]$ elements and the $A_n$-class has $[A_n:C_{A_n}(\sigma)]$ elements, where $C_{A_n}(\sigma)=C_{S_n}(\sigma)\cap A_n$. Since $A_n\normal S_n$ has index $2$, the $S_n$-class is a union of $A_n$-classes permuted transitively by $S_n/A_n$, so it is one class or two of equal size. The ratio of the two class sizes is $2/[C_{S_n}(\sigma):C_{A_n}(\sigma)]$, which is $2$ exactly when $C_{S_n}(\sigma)\subseteq A_n$.
+
+:::
+
+:::
+
+::: {.pf-step #no-split}
+
+If the cycle type of $\sigma$ has an even part or a repeated odd part, then $C_{S_n}(\sigma)\not\subseteq A_n$.
+
+::: pf-proof
+
+An even-length cycle of $\sigma$ commutes with $\sigma$ and is an odd permutation. If $(a_1\ \cdots\ a_k)$ and $(b_1\ \cdots\ b_k)$ are two cycles of $\sigma$ with $k$ odd, the permutation $(a_1\ b_1)(a_2\ b_2)\cdots(a_k\ b_k)$ commutes with $\sigma$ and is a product of $k$ transpositions, hence odd.
+
+:::
+
+:::
+
+::: {.pf-step #split}
+
+If the cycle type of $\sigma$ consists of distinct odd parts, then $C_{S_n}(\sigma)\subseteq A_n$.
+
+::: pf-proof
+
+An element $\tau\in C_{S_n}(\sigma)$ maps each cycle of $\sigma$ to a cycle of $\sigma$ of the same length, so with distinct lengths it preserves the support of each cycle. On the support of a $k$-cycle $c$, $\tau$ commutes with $c$, so it is a power of $c$, because the centralizer of a $k$-cycle in the symmetric group on its support is $\langle c\rangle$. Each power of an odd-length cycle is even, so $\tau$ is even.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#criterion){.pf-ref}, [](#no-split){.pf-ref}, and [](#split){.pf-ref}, the class splits exactly when its cycle type consists of $\boxed{\text{distinct odd parts}}$.
+
+:::
+
+:::
+
 :::
