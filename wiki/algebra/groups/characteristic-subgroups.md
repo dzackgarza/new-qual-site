@@ -8,7 +8,7 @@ topics:
 
 # Characteristic subgroups, normal closures, and cores
 
-Normality is not transitive: in $A_4$, $\langle (1\,2)(3\,4)\rangle \normal V_4$ and $V_4 \normal A_4$, but $\langle (1\,2)(3\,4)\rangle$ is not normal in $A_4$.
+Normality is not transitive; the standard counterexample, a subgroup of $V_4$ in $A_4$, is on [[algebra/counterexamples|Counterexamples]].
 A [[D-53LTN|characteristic subgroup]] is invariant under every automorphism, and a characteristic subgroup of a normal subgroup of $G$ is normal in $G$.
 
 ## Characteristic subgroups
