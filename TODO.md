@@ -312,8 +312,12 @@ mathematical correction under its own node, not under copy policy.
     listed by their exams, eleven parts stay in the real-analysis bucket) are repaired. C5:
     no qualifying href found in this repository or sibling clones (only make-me-a-qual and
     qual-review-and-solutions copies, which are not provenance); the web search service
-    failed, so the four lists stay empty. UCLA Fall 2010 Problems 1, 7 and 10 have no card
-    in SRC-UCLA-RA-FALL-2010.
+    failed, so the four lists stay empty. Closing note (2026-10-30): a web search on
+    distinctive problem text (NUS zero count of $2z^5-6z^2-z+1$, the region between
+    $\abs z=1$ and $\abs{z-1/2}=1/2$, the finite-cover outer-measure statement, the
+    Spring 2020 homework statements) found no external document for the four collections,
+    so their provenance stays empty. UCLA Fall 2010 Problems 1, 7 and 10 are existing cards
+    P-4KTFN, P-B4WQK and E-7ZCKU, now listed in SRC-UCLA-RA-FALL-2010 in source order.
   Round 3 (provenance finding C5) injected the node below; `audited-deployment` needs it.
   - **`ad3-unsorted-dissolution`**. **Needs:** none. The UNSORTED buckets (about 1500
     problems) are not dissolved into source collections. For each card, one at a time: find
