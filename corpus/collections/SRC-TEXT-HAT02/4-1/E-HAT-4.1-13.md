@@ -21,12 +21,10 @@ Use the **Extension Lemma** (homotopy extension property for CW pairs) to show t
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $(X, A)$ is a CW pair with $A$ contractible, there exists a continuous retraction $r: X \to A$ ($r|_A = \operatorname{id}_A$).
-
 ::: pf
 
 ::: pf-step
-The Homotopy Extension Property (HEP) / Extension Lemma for CW Pairs:
+The CW pair $(X, A)$ has the homotopy extension property with respect to every space $Y$.
 
 ::: pf-proof
 
@@ -50,7 +48,7 @@ Specifically: Given a continuous map $f: X \to Y$ and a homotopy $h: A \times I 
 :::
 
 ::: pf-step
-Setup for Contractible Subcomplex $A$:
+There is a homotopy $\bar{h}: A \times I \to A$ from the constant map at a point $a_0 \in A$ to $\operatorname{id}_A$.
 
 ::: pf-proof
 
@@ -79,7 +77,7 @@ satisfying $\bar{h}(a, 0) = a_0$ (constant map) and $\bar{h}(a, 1) = a = \operat
 :::
 
 ::: pf-step
-Extending the Homotopy to $X$:
+$\bar{h}$ extends to a homotopy $H: X \times I \to A$ starting at the constant map $x \mapsto a_0$.
 
 ::: pf-proof
 
@@ -110,7 +108,7 @@ such that:
 :::
 
 ::: pf-step
-Constructing the Retraction $r: X \to A$:
+$r(x) = H(x, 1)$ is a retraction of $X$ onto $A$.
 
 ::: pf-proof
 
@@ -134,11 +132,6 @@ Thus $r|_A = \operatorname{id}_A$, which proves that $r: X \to A$ is a **retract
 
 :::
 
-:::
-
-::: pf-step
-Conclusion:
-$X$ retracts onto the contractible subcomplex $A$.
 :::
 
 :::
