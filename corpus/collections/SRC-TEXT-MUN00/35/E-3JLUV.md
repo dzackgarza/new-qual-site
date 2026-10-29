@@ -32,7 +32,6 @@ Show that the following are equivalent:
 :::
 
 ::: {.solution}
-**Goal:** Prove the equivalence of (i) universal metric boundedness, (ii) pseudocompactness (boundedness of continuous real-valued functions), and (iii) limit point compactness for any metrizable space $X$.
 
 ::: pf
 
