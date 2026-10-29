@@ -24,12 +24,22 @@ audit:
 :::
 
 ::: {.solution}
-A subset $E\subseteq X$ is **dense in $X$** if
-$$
-\overline E=X.
-$$
-Equivalently, every nonempty open subset of $X$ meets $E$.
-::: {.proof}
-A point $x$ lies in $\overline E$ exactly when every open neighborhood of $x$ intersects $E$. Hence $\overline E=X$ exactly when every nonempty open set intersects $E$.
+A subset $E\subseteq X$ is dense in $X$ if $\overline E=X$.
+
+::: pf
+
+::: pf-step
+
+$E$ is dense in $X$ if and only if every nonempty open subset of $X$ meets $E$.
+
+::: pf-proof
+
+A point $x$ lies in $\overline E$ exactly when every open neighborhood of $x$ meets $E$. Hence $\overline E=X$ exactly when every nonempty open set meets $E$.
+
 :::
+
+:::
+
+:::
+
 :::
