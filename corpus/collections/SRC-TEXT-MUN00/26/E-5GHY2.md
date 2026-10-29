@@ -23,7 +23,6 @@ Show that if $Y$ is compact, then the projection $\pi_1: X \times Y \to X$ is a 
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $Y$ is a compact topological space, then the canonical projection $\pi_1: X \times Y \to X$ is a closed map (Kuratowski's projection theorem / Tube Lemma).
 
 ::: pf
 
