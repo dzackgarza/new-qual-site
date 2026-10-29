@@ -22,44 +22,130 @@ audit:
 ---
 
 ::: {.problem}
-- Show that localizing a ring at a prime ideal produces a local ring.
+(a) Show that localizing a ring at a prime ideal produces a local ring.
 
-- Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a unit.
+(b) Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a unit.
 
-- Show that if $R$ is a local ring then $R\setminus R^\times$ is a proper ideal that is contained in the Jacobson radical $J(R)$ (and equals it).
+(c) Show that if $R$ is a local ring then $R\setminus R^\times$ is a proper ideal that is contained in the Jacobson radical $J(R)$ (and equals it).
 
-- Show that if $R\neq 0$ is a ring in which every non-unit is nilpotent then $R$ is local.
+(d) Show that if $R\neq 0$ is a ring in which every non-unit is nilpotent then $R$ is local.
 
-- Show that every prime ideal is primary.
+(e) Show that every prime ideal is primary.
 
-- Show that every prime ideal is irreducible.
+(f) Show that every prime ideal is irreducible.
 :::
 
 ::: {.solution}
-Let all rings here be commutative with identity.
+All rings are commutative with identity.
 
-1. If $\mathfrak p\in\operatorname{Spec}R$, then in $R_{\mathfrak p}$ every fraction $a/s$ with $a\notin\mathfrak p$ is a unit, with inverse $s/a$. Thus the nonunits are exactly
-\[
-\mathfrak pR_{\mathfrak p},
-\]
-so this is the unique maximal ideal and $R_{\mathfrak p}$ is local.
+::: pf
 
-2. Suppose first that $(R,\mathfrak m)$ is local. If both $x$ and $1-x$ were nonunits, both would lie in $\mathfrak m$, forcing $1\in\mathfrak m$, impossible. Hence one of $x,1-x$ is a unit.
+::: {.pf-step #ideal-criterion}
 
-Conversely, assume that for every $x$, one of $x,1-x$ is a unit. Let $\mathfrak m$ be the set of nonunits. If $x\in\mathfrak m$ and $r\in R$, then $rx$ is a nonunit. If $x,y\in\mathfrak m$ but $u=x+y$ were a unit, then
-\[
-1=u^{-1}x+u^{-1}y.
-\]
-Since $u^{-1}x$ is a nonunit, the hypothesis makes $u^{-1}y=1-u^{-1}x$ a unit, hence $y$ a unit, contradiction. Thus $\mathfrak m$ is an ideal. Every proper ideal consists of nonunits, so every proper ideal is contained in $\mathfrak m$; hence $\mathfrak m$ is the unique maximal ideal.
+If $R\ne0$ and the set $\mathfrak m=R\setminus R^\times$ of nonunits is an ideal, then $R$ is local with maximal ideal $\mathfrak m$.
 
-3. Therefore, in a local ring,
-\[
-R\setminus R^\times=\mathfrak m=J(R).
-\]
+::: pf-proof
 
-4. Suppose $R\ne0$ and every nonunit is nilpotent. A nilpotent element cannot be a unit, so the set of nonunits is exactly the nilradical $\sqrt{(0)}$, which is an ideal. By part 2, $R$ is local.
+$\mathfrak m$ is proper since $1\notin\mathfrak m$. Every proper ideal consists of nonunits, so it is contained in $\mathfrak m$. Hence $\mathfrak m$ is the unique maximal ideal.
 
-5. If $\mathfrak p$ is prime and $xy\in\mathfrak p$ with $x\notin\mathfrak p$, then $y\in\mathfrak p$, so $\mathfrak p$ is primary (with exponent $1$).
+:::
 
-6. If $\mathfrak p=I\cap J$ and both $I,J$ strictly contain $\mathfrak p$, choose $a\in I\setminus\mathfrak p$ and $b\in J\setminus\mathfrak p$. Then $ab\in IJ\subseteq I\cap J=\mathfrak p$, contradicting primality. Hence $I=\mathfrak p$ or $J=\mathfrak p$, so every prime ideal is irreducible.
+:::
+
+::: pf-step
+
+(a) For $\mathfrak p\in\Spec R$, the ring $R_{\mathfrak p}$ is local with maximal ideal $\mathfrak pR_{\mathfrak p}$.
+
+::: pf-proof
+
+A fraction $a/s$ with $a\notin\mathfrak p$ is a unit with inverse $s/a$. A fraction $a/s$ with $a\in\mathfrak p$ is not a unit: if $(a/s)(b/t)=1$, then $u(ab-st)=0$ for some $u\notin\mathfrak p$, so $uab=ust\notin\mathfrak p$, contradicting $a\in\mathfrak p$. Hence the nonunits of $R_{\mathfrak p}$ form the ideal $\mathfrak pR_{\mathfrak p}$. Also $R_{\mathfrak p}\ne0$, since $1/1$ is a unit. Step [](#ideal-criterion){.pf-ref} applies.
+
+:::
+
+:::
+
+::: {.pf-step #units}
+
+(b) $R$ is local if and only if, for every $x\in R$, $x$ or $1-x$ is a unit.
+
+::: pf-proof
+
+::: {.pf-step #units-forward}
+
+If $(R,\mathfrak m)$ is local, then $x$ or $1-x$ is a unit.
+
+::: pf-proof
+
+Every nonunit lies in a maximal ideal, hence in $\mathfrak m$. If $x$ and $1-x$ were both nonunits, then $1=x+(1-x)\in\mathfrak m$, which is impossible.
+
+:::
+
+:::
+
+::: pf-step
+
+If, for every $x$, $x$ or $1-x$ is a unit, then $R$ is local.
+
+::: pf-proof
+
+$R\ne0$, since in the zero ring $0$ and $1-0$ are nonunits. Let $\mathfrak m$ be the set of nonunits. If $x\in\mathfrak m$ and $r\in R$, then $rx\in\mathfrak m$, since a multiple of a nonunit is a nonunit. Let $x,y\in\mathfrak m$ and suppose $u=x+y$ is a unit. Then $1=u^{-1}x+u^{-1}y$. Since $u^{-1}x$ is a nonunit, the hypothesis makes $u^{-1}y=1-u^{-1}x$ a unit, so $y$ is a unit, a contradiction. Hence $\mathfrak m$ is an ideal, and step [](#ideal-criterion){.pf-ref} applies.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(c) If $(R,\mathfrak m)$ is local, then $R\setminus R^\times=\mathfrak m=J(R)$, a proper ideal.
+
+::: pf-proof
+
+Every nonunit lies in some maximal ideal, which is $\mathfrak m$, and no element of $\mathfrak m$ is a unit; so $R\setminus R^\times=\mathfrak m$. The Jacobson radical is the intersection of the maximal ideals, which is $\mathfrak m$.
+
+:::
+
+:::
+
+::: pf-step
+
+(d) If $R\ne0$ and every nonunit is nilpotent, then $R$ is local.
+
+::: pf-proof
+
+A nilpotent element is not a unit, so the set of nonunits equals the nilradical, which is an ideal. Apply step [](#ideal-criterion){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+(e) Every prime ideal is primary.
+
+::: pf-proof
+
+Let $\mathfrak p$ be prime and $xy\in\mathfrak p$ with $x\notin\mathfrak p$. Then $y\in\mathfrak p$, so $y^1\in\mathfrak p$; and $\mathfrak p$ is proper.
+
+:::
+
+:::
+
+::: pf-step
+
+(f) Every prime ideal is irreducible.
+
+::: pf-proof
+
+Let $\mathfrak p=I\cap J$ with $I,J$ ideals, and suppose both strictly contain $\mathfrak p$. Choose $a\in I\setminus\mathfrak p$ and $b\in J\setminus\mathfrak p$. Then $ab\in I\cap J=\mathfrak p$, contradicting primality. Hence $I=\mathfrak p$ or $J=\mathfrak p$.
+
+:::
+
+:::
+
+:::
+
 :::
