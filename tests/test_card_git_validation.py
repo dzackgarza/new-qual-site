@@ -51,7 +51,7 @@ def check(root: Path, *args: str) -> subprocess.CompletedProcess[str]:
         (CARD.replace("id: PRB-INDEXP\n", ""), "Field required"),
         (CARD.replace(":::\n", "", 1), "unclosed fenced div"),
         (CARD.replace("\n\n::: {.hint}", "\nA trailing line.\n::: {.hint}", 1), "follows text"),
-        (CARD + "\n\\begin{tikzcd}\n\ta \\\\\n\t& b\n\t\\arrow[from=1-1, to=2-1]\n\\end{tikzcd}\n", "No shape named"),
+        (CARD + "\n\\begin{tikzcd}\n\ta \\\\\n\t& b\n\t\\arrow[from=1-1, to=2-1]\n\\end{tikzcd}\n", "tikzcd compilation produced no SVG"),
     ],
 )
 def test_staged_header_errors_cannot_be_hidden_by_a_valid_worktree(repo: Path, source: str, diagnostic: str) -> None:
