@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS02A
 kind: problem
-title: "A free group action on S^{2n} has order at most 2"
+title: 'A group acting freely on $S^{2n}$ has order at most $2$'
 classification:
   areas:
   - topology

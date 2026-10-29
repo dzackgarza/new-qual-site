@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS02H
 kind: problem
-title: "Degree-one map from S^n to a closed oriented manifold forces homology isomorphism"
+title: 'A degree-one map from $S^n$ to a closed oriented manifold forces a homology isomorphism'
 classification:
   areas:
   - topology

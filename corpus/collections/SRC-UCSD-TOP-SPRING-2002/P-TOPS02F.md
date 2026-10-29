@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS02F
 kind: problem
-title: "Orientation sheaf of an R-orientable manifold is a trivial local system"
+title: 'The orientation sheaf of an $R$-orientable manifold is a trivial local system'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS02E
 kind: problem
-title: "The covering map S^n to RP^n is not null-homotopic"
+title: 'The covering map $S^n\to\RP^n$ is not null-homotopic'
 classification:
   areas:
   - topology
