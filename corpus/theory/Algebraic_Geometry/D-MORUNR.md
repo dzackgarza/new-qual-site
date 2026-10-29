@@ -31,7 +31,7 @@ Equivalently, $\Omega_{X/Y} = 0$; equivalently, $\Delta_{X/Y}$ is an open immers
 :::
 
 ::: {.remark}
-The first condition says that for every $y\in Y$ and $x\in X_y$, the local ring $\OO_{X_y,x}$ is the field $\kappa(x)$, a finite separable extension of $\kappa(y)$.
+The two conditions say that for every $y\in Y$ and $x\in X_y$, the local ring $\OO_{X_y,x}$ is the field $\kappa(x)$, a finite separable extension of $\kappa(y)$.
 Since the diagonal of an unramified morphism is open, two sections $s,t\colon Y\to X$ of an unramified morphism $f$ agree on an open subset of $Y$, namely $(s,t)^{-1}(\Delta_{X/Y})$.
 
 For a nonconstant map of smooth integral curves over an algebraically closed field, the local picture at a closed point is $f^\sharp(\mfm_{f(p)}) \OO_{X,p} = \mfm_p^{e_p}$, and $f$ is unramified exactly when every ramification index $e_p$ equals $1$.
