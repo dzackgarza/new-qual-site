@@ -14,21 +14,43 @@ review: draft
 ---
 
 ::: {.exercise}
-Let $A(z) \definedas 2z-1$ and find $1/A(z)$.
+Let $A(z) \coloneqq 2z-1$ and find $1/A(z)$.
 :::
 
 ::: {.solution}
-To compute the inverse of $A(z) \definedas (2z-1)$, note $a_0 = -1, a_1 = 2$, so
+Write $A(z) = \sum_k a_k z^k$ with $a_0 = -1$, $a_1 = 2$ and $a_k = 0$ for $k \geq 2$, and $1/A(z) = \sum_k b_k z^k$ near $0$.
 
-- $b_0 = 1/a_0 = -1$
-- $b_1 = -{1\over a_0}(a_1b_0) = 1(2\cdot -1) = -2$
-- $b_2 = -{1\over a_0}(a_2 b_0 + a_1 b_1) = 1(0\cdot 1 + 2\cdot -2) = -4$
-- $b_3 = -{1\over a_0}(a_3b_0 + a_2 b_1 + a_1 b_2) = 1(0 + 0 + 2\cdot -4) = -8$
+::: pf
 
-so
-\[
-{1\over 2z-1} = -1 - 2z - 4z^2 - 8z^3 - \cdots 
-= - \sum_{k\geq 0} (2z)^k
-.\]
+::: {.pf-step #recursion}
+$b_0 = 1/a_0$ and $b_n = -\frac{1}{a_0}\sum_{j=1}^{n} a_j b_{n-j}$ for $n \geq 1$.
 
+::: pf-proof
+Since $a_0 \neq 0$, $1/A$ is holomorphic near $0$, and comparing coefficients in $A(z)\cdot\frac{1}{A(z)} = 1$ gives $a_0 b_0 = 1$ and $\sum_{j=0}^{n} a_j b_{n-j} = 0$ for $n \geq 1$.
+:::
+
+:::
+
+::: {.pf-step #coefficients}
+$b_n = -2^n$ for every $n \geq 0$.
+
+::: pf-proof
+Here step [](#recursion){.pf-ref} reads $b_0 = -1$ and $b_n = a_1 b_{n-1} = 2b_{n-1}$, so $b_0 = -1$, $b_1 = -2$, $b_2 = -4$, $b_3 = -8$, and by induction $b_n = -2^n$.
+:::
+
+:::
+
+::: pf-step
+For $\abs{z} < 1/2$,
+$$
+\boxed{\frac{1}{2z-1} = -1 - 2z - 4z^2 - 8z^3 - \cdots = -\sum_{k\geq 0} (2z)^k}.
+$$
+
+::: pf-proof
+By step [](#coefficients){.pf-ref} this is the Taylor series of $1/A$ at $0$; it is the geometric series $-\frac{1}{1-2z}$, which converges exactly for $\abs{2z} < 1$, the disc up to the pole at $z = 1/2$.
+:::
+
+:::
+
+:::
 :::
