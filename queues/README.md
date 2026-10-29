@@ -12,7 +12,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 
 | File | State | What |
 | --- | --- | --- |
-| `A-title-question-marks.md` | done | Wiki files with `:::{.proof title="?"}` at HEAD. All resolved — zero instances remain. |
 | `B-naked-urls.md` | done | Wiki files with bare `<https://...>` link text. All 161 converted and committed. |
 | `C-unsolved-cards.md` | active, generated | Every unsolved problem card. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit or mirror its changing count here: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | done | Duplicate-body pair, dispositioned (keep both). |
