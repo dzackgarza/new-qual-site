@@ -32,8 +32,6 @@ Prove that $\mathcal{T}^*$ defines a topology on $X^*$ and that $(X^*, \mathcal{
 :::
 
 ::: {.solution}
-**Goal:** Prove that $\mathcal{T}^*$ satisfies the topology axioms (empty set/whole space, arbitrary unions, finite intersections) and that every open cover of $X^*$ has a finite subcover.
-
 ::: pf
 
 ::: pf-step
