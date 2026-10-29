@@ -22,8 +22,6 @@ Show that $[0, 1]$ is not limit point compact as a subspace of $\RR_\ell$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the closed unit interval $[0, 1]$ endowed with the subspace topology from the lower limit line $\RR_\ell$ is not limit point compact.
-
 ::: pf
 
 ::: pf-step
@@ -88,10 +86,10 @@ Case $x = 1$: The set $U_1 = [1, 2) \cap [0, 1] = \{1\}$ is open in $[0, 1]_{\RR
 :::
 
 ::: pf-step
-Conclusion:
+$[0, 1]$ is not limit point compact as a subspace of $\RR_\ell$.
 
 ::: pf-proof
-The infinite subset $A \subset [0, 1]$ has no limit point in $[0, 1]_{\RR_\ell}$. Therefore $[0, 1]$ is not limit point compact in $\RR_\ell$.
+The infinite subset $A \subset [0, 1]$ has no limit point in $[0, 1]_{\RR_\ell}$.
 :::
 
 :::
