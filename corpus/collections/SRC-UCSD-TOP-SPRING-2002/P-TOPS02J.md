@@ -10,42 +10,62 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source put no hypothesis on X, and the identity of X_1 ⊔ X_2 restricted to X_1 is not surjective; the statement now assumes X connected and locally path-connected.'
 ---
 
 ::: {.problem}
-Let $p : E \to X$ be a covering space and let $C \subset E$ be a connected component of $E$.
+Let $X$ be connected and locally path-connected, let $p : E \to X$ be a covering space and let $C \subset E$ be a connected component of $E$.
 Prove $p|_C : C \to X$ is also a covering space.
 :::
 
 ::: {.solution}
+Call an open set $U \subseteq X$ evenly covered if $p^{-1}(U)$ is a disjoint union of open sets each mapped homeomorphically onto $U$ by $p$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #good-nbhd}
 
-The statement as printed is false when the base is disconnected.
-
-::: pf-proof
-
-Let $X=X_1\sqcup X_2$ be a disjoint union of two nonempty connected spaces and take the identity covering $p:E=X\to X$. If $C=X_1$ is a connected component of $E$, then $p|_C:C\to X$ is not surjective, hence is not a covering map onto $X$ under the usual convention that coverings are surjective.
-
-:::
-
-:::
-
-::: pf-step
-
-If the base $X$ is path-connected, then the restriction of a covering map to any connected component $C$ of $E$ is a covering map $C\to X$.
+Every $x \in X$ has a path-connected evenly covered open neighborhood $U$, and every sheet over such a $U$ is path-connected.
 
 ::: pf-proof
 
-Fix $c_0\in C$ and $x_0=p(c_0)$. For any $x\in X$, choose a path $\gamma$ from $x_0$ to $x$. Its lift beginning at $c_0$ remains in the connected component $C$ and ends over $x$. Hence $p(C)=X$.
-
-Now let $U$ be an evenly covered neighborhood in $X$. Each sheet $V$ of $p^{-1}(U)$ is connected after replacing $U$ by a path-connected evenly covered neighborhood if necessary; a sheet meeting $C$ lies entirely in $C$. Therefore
-$$C\cap p^{-1}(U)$$
-is a disjoint union of sheets, each mapped homeomorphically onto $U$. Thus $p|_C$ is a covering map.
+Take an evenly covered neighborhood $W$ of $x$ and, by local path-connectedness, a path-connected open $U$ with $x \in U \subseteq W$. Then $U$ is evenly covered by the intersections of the sheets over $W$ with $p^{-1}(U)$, and each such sheet is homeomorphic to $U$, hence path-connected.
 
 :::
+
+:::
+
+::: {.pf-step #sheets-in-c}
+
+If $U$ is as in step [](#good-nbhd){.pf-ref}, then $C \cap p^{-1}(U)$ is the union of the sheets over $U$ that meet $C$.
+
+::: pf-proof
+
+A sheet is connected, so a sheet meeting the component $C$ lies in $C$.
+
+:::
+
+:::
+
+::: {.pf-step #onto}
+
+$p(C) = X$.
+
+::: pf-proof
+
+$X$ is connected and locally path-connected, hence path-connected. Fix $c_0 \in C$. For $x \in X$, choose a path $\gamma$ from $p(c_0)$ to $x$. Its lift starting at $c_0$ is a connected set containing $c_0$, so it lies in $C$, and it ends at a point of $C$ over $x$.
+
+:::
+
+:::
+
+::: pf-qed
+
+$C$ is open in $E$: for $c \in C$, the sheet over a neighborhood $U$ of $p(c)$ as in step [](#good-nbhd){.pf-ref} that contains $c$ lies in $C$ by step [](#sheets-in-c){.pf-ref}. By step [](#sheets-in-c){.pf-ref}, $(p|_C)^{-1}(U)$ is a disjoint union of open subsets of $C$ each mapped homeomorphically onto $U$, for every such $U$, and by step [](#onto){.pf-ref} this union is nonempty. These $U$ cover $X$, so $p|_C$ is a covering map.
 
 :::
 
