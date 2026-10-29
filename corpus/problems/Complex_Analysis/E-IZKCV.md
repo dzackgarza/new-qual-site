@@ -13,47 +13,69 @@ classification:
   - Poles
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source prints only the identity, without an instruction or the differential dx; the statement asks to show it and supplies dx.
 ---
 
 ::: {.exercise}
-\[
-\int_\RR {1 \over x^4 + 1} = {\pi \sqrt{2} \over 2} = {\pi \over \sqrt 2}
-.\]
-
+Show that
+$$
+\int_\RR {dx \over x^4 + 1} = {\pi \sqrt{2} \over 2} = {\pi \over \sqrt 2}
+.$$
 :::
 
 ::: {.solution}
-The integrand $f\in \bigo\qty{1\over z^4} \subseteq \bigo\qty{1\over z^{1+\eps}}$, so a semicircular contour works.
-Factoring the denominator: find a principal root 
-\[
-\omega^4 = -1 = e^{i\pi} \implies \omega = e^{i\pi\over 4}
-,\]
-so 
-\[
-z^4 + 1 = (z-\omega)(z-\omega\zeta_4)(z-\omega\zeta_4^2)(z-\omega\zeta_4^3) \leadsto {\pi \over 4}, {3\pi \over 4}, {5\pi \over 4}, {7\pi \over 4}
-.\]
-So there are two simple poles in $\HH$:
+Let $f(z)\coloneqq{1\over z^4+1}$, and for $R>1$ let $\Gamma_R$ be the segment $[-R,R]$ followed by the semicircle $C_R=\theset{Re^{it} \st t\in[0,\pi]}$.
 
-![figures/2021-07-29_18-41-05.png](../../assets/figures/2021-07-29_18-41-05.png)
+![](../../assets/figures/2021-07-29_18-41-05.png)
 
-Write them as $z_1 = e^{i\pi \over 4}$ and $z_2 = e^{3 i \pi \over 4}$.
-Computing the residues:
-\[
-\Res_{z=z_k} f(z) 
-&= \lim_{z\to z_k} {z-z_k \over z^4 + 1} \\
-&\eqLH \lim_{z\to z_k} {1\over 4z^3} \\
-&= {z^{-3}\over 4 }\evalfrom_{z=z_k}
-,\]
-so
-\[
-2\pi i \sum \Res_{z=z_k} 
-&= {2\pi i \over 4}\qty{z_1^{-3} + z_2^{-3}} \\
-&= {\pi i \over 2}\qty{e^{-3 i \pi \over 4} + e^{-9 i \pi \over 4}} \\
-&= {\pi i \over 2}\qty{e^{-3 i \pi \over 4} + e^{-i \pi \over 4}} \\
-&= {\pi i \over 2}\cdot e^{-2i\pi \over 4}\qty{e^{- i \pi \over 4} + e^{i \pi \over 4}} \\
-&= \pi i\, {1\over i} \cos\qty{\pi \over 4} \\
-&= {\pi \sqrt 2 \over 2}
-.\]
+::: pf
+
+::: {.pf-step #poles}
+The poles of $f$ in $\HH$ are $z_1=e^{i\pi/4}$ and $z_2=e^{3i\pi/4}$, both simple, with $\Res_{z=z_k}f={1\over4z_k^3}$.
+
+::: pf-proof
+The roots of $z^4=-1$ are $e^{i\pi/4},e^{3i\pi/4},e^{5i\pi/4},e^{7i\pi/4}$, of which the first two lie in $\HH$.
+They are simple since $\dd{}{z}(z^4+1)=4z^3\neq0$ there, and the residue of $1/q$ at a simple zero $z_k$ of $q$ is $1/q'(z_k)$.
+:::
 
 :::
 
+::: {.pf-step #sum}
+$2\pi i\qty{\Res_{z=z_1}f+\Res_{z=z_2}f}={\pi\sqrt2\over2}$.
+
+::: pf-proof
+By step [](#poles){.pf-ref},
+$$
+\begin{aligned}
+2\pi i \sum_k \Res_{z=z_k}f
+&= {\pi i \over 2}\qty{e^{-3 i \pi/4} + e^{-9 i \pi/4}}
+= {\pi i \over 2}\qty{e^{-3 i \pi/4} + e^{-i \pi/4}} \\
+&= {\pi i \over 2}\, e^{-i\pi/2}\qty{e^{- i \pi/4} + e^{i \pi/4}}
+= \pi \cos\qty{\pi \over 4}
+= {\pi \sqrt 2 \over 2}
+.\end{aligned}
+$$
+:::
+
+:::
+
+::: {.pf-step #arc}
+$\int_{C_R}f(z)\dz\to0$ as $R\to\infty$.
+
+::: pf-proof
+On $C_R$, $\abs{z^4+1}\ge R^4-1$, so the ML estimate bounds the integral by $\pi R/(R^4-1)$.
+:::
+
+:::
+
+::: pf-qed
+By the residue theorem, $\int_{-R}^R f(x)\dx+\int_{C_R}f(z)\dz={\pi\sqrt2\over2}$ for $R>1$ by step [](#sum){.pf-ref}, and letting $R\to\infty$ with step [](#arc){.pf-ref} gives the result.
+:::
+
+:::
+
+:::
