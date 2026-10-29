@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a [[D-2TZAI|topological space]].
-A subset $U \subseteq X$ is \dfn{closed} in $X$ if its complement $X\sm U$ is open in $X$.
+A subset $U \subseteq X$ is \dfn{closed} in $X$ if its complement $X\sm U$ is open in $X$ [@Mun00].
 If $Y \subseteq X$ carries the [[D-LB2LS|subspace topology]] and $U \subseteq Y$, then $U$ is \dfn{closed in the subspace} $Y$ if $Y\sm U$ is open in $Y$.
 :::
 
@@ -29,8 +29,4 @@ Let $X$ be a topological space and $U\subseteq X$.
 (c) If $Y\subseteq X$ is a subspace and $U\subseteq Y$, then $U$ is closed in $Y$ if and only if $U = Y \intersect V$ for some closed subset $V$ of $X$.
 
 (d) If $Y\subseteq X$ is a subspace and $U\subseteq Y$, then the closure of $U$ in $Y$ is $\cl_Y(U) = \cl_X(U)\intersect Y$.
-:::
-
-::: {.concept}
-[@Mun00].
 :::
