@@ -22,7 +22,6 @@ Show that if $X$ is regular, every pair of points of $X$ have neighborhoods whos
 :::
 
 ::: {.solution}
-**Goal:** Prove that in a regular ($T_3$) topological space $X$, every pair of distinct points possesses open neighborhoods with disjoint closures (i.e. $X$ is an Urysohn / $T_{2\frac{1}{2}}$ space).
 
 ::: pf
 
