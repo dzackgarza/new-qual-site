@@ -15,7 +15,11 @@ audit:
 - event: source-checked
   by: deepseek-v4.1-flash-free
   date: 2026-10-27
-  note: Checked Problem 2 on p.204 against the source PDF. The printed formula has $x^\rho/(\rho(\rho+1))$ and $E=c_1x+c_0+\cdots$; the contour shift of Proposition 2.3 gives $x^{\rho+1}/(\rho(\rho+1))$ and the constant $+c_0$, so the corrected error term is $c_1x-c_0+\cdots$. The erratum records the correction; the solution proves the corrected formula.
+  note: Checked Problem 2 on p.204 against the source PDF. The printed formula has $x^\rho/(\rho(\rho+1))$ and $E=c_1x+c_0+\cdots$; the contour shift of Proposition 2.3 gives $x^{\rho+1}/(\rho(\rho+1))$ and the constant $+c_0$, so the corrected error term is $c_1x-c_0+\cdots$. The solution proves the corrected formula.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints $x^\rho/(\rho(\rho+1))$ and $E(x)=c_1x+c_0+\cdots$; the statement now has $x^{\rho+1}/(\rho(\rho+1))$ and $E(x)=c_1x-c_0+\cdots$.
 ---
 
 ::: {.exercise}
@@ -29,16 +33,11 @@ where the sum is taken over all zeros $\rho$ of the zeta function in the critica
 The error term is given by $E ( x ) = c _ { 1 } x - c _ { 0 } + \sum _ { k = 1 } ^ { \infty } x ^ { 1 - 2 k } / ( 2 k ( 2 k - 1 ) )$ , where $c _ { 1 } = \zeta ^ { \prime } ( 0 ) / \zeta ( 0 )$ and $c _ { 0 } = \zeta ^ { \prime } ( - 1 ) / \zeta ( - 1 )$ . Note that $\textstyle \sum _ { \rho } 1 / | \rho | ^ { 1 + \epsilon } < \infty$ for every $\epsilon > 0$ , because $( 1 - s ) \zeta ( s )$ has order of growth 1. (See Exercise 8.) Also, obviously $E ( x ) = O ( x )$ as $x \to \infty$
 :::
 
-::: {.remark title="Erratum"}
-The printed source has $x^\rho/(\rho(\rho+1))$ and $E(x)=c_1x+c_0+\cdots$. The contour integral of Proposition 2.3 gives $x^{\rho+1}/(\rho(\rho+1))$ and the constant term $+c_0$, so the corrected formula is the one stated above.
-:::
-
 ::: {.solution}
 Let \(x>1\), and put
 \[
 c_1=\frac{\zeta'(0)}{\zeta(0)},\qquad c_0=\frac{\zeta'(-1)}{\zeta(-1)}.
 \]
-We prove the formula stated above.
 
 ::: pf
 
