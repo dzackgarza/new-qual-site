@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YFT35
 kind: problem
-title: $\mathbb{F}_{p^n}$ is the splitting field of $x^{p^n}-x$ over $\mathbb{F}_p$
+title: $\FF_{p^n}$ is the splitting field of $x^{p^n}-x$ over $\FF_p$
 classification:
   areas:
   - algebra
@@ -22,36 +22,45 @@ audit:
 ---
 
 ::: {.exercise}
-Let $p$ be prime and $n\ge1$. Prove that $\mathbb F_{p^n}$ is the splitting field over $\mathbb F_p$ of
-\[
+Let $p$ be prime and $n\ge1$. Prove that $\FF_{p^n}$ is the splitting field over $\FF_p$ of
+$$
 x^{p^n}-x.
-\]
+$$
 :::
 
 ::: {.solution}
-Let
-\[
-f(x)=x^{p^n}-x\in\mathbb F_p[x].
-\]
-Its derivative is
-\[
-f'(x)=-1,
-\]
-so all roots are simple.
+Let $f(x)=x^{p^n}-x\in\FF_p[x]$.
 
-In an algebraic closure of $\mathbb F_p$, let
-\[
-S=\{a:a^{p^n}=a\}.
-\]
-Because Frobenius powers respect addition and multiplication in characteristic $p$, $S$ is closed under addition, subtraction, and multiplication; if $a\ne0$ lies in $S$, then
-\[
-(a^{-1})^{p^n}=a^{-1}.
-\]
-Thus $S$ is a field. Since $f$ has degree $p^n$ and is separable, its splitting field contains exactly $p^n$ roots, so
-\[
-|S|=p^n.
-\]
-Therefore $S$ is the finite field $\mathbb F_{p^n}$.
+::: pf
 
-Equivalently, every $a\in\mathbb F_{p^n}$ satisfies $a^{p^n}=a$: for $a\ne0$ this follows from $|\mathbb F_{p^n}^\times|=p^n-1$, and it is trivial for $a=0$. Hence $f$ splits completely over $\mathbb F_{p^n}$, and its roots generate that field. Thus $\mathbb F_{p^n}$ is its splitting field over $\mathbb F_p$.
+::: {.pf-step #separable}
+$f$ has $p^n$ distinct roots in an algebraic closure of $\FF_p$.
+
+::: pf-proof
+Its derivative is $f'(x)=p^nx^{p^n-1}-1=-1$, which has no common root with $f$, so all roots of the degree-$p^n$ polynomial $f$ are simple.
+:::
+
+:::
+
+::: {.pf-step #splits}
+$f$ splits completely over $\FF_{p^n}$.
+
+::: pf-proof
+Every $a\in\FF_{p^n}$ satisfies $a^{p^n}=a$: for $a\ne0$ this follows from $\abs{\FF_{p^n}^\times}=p^n-1$ and Lagrange's theorem, and it is trivial for $a=0$.
+Thus the $p^n$ elements of $\FF_{p^n}$ are $p^n$ roots of $f$, which by step [](#separable){.pf-ref} are all its roots.
+:::
+
+:::
+
+::: pf-step
+$\FF_{p^n}$ is the splitting field of $f$ over $\FF_p$.
+
+::: pf-proof
+By step [](#splits){.pf-ref}, $f$ splits over $\FF_{p^n}$, and its roots are all elements of $\FF_{p^n}$, so they generate $\FF_{p^n}$ over $\FF_p$.
+:::
+
+:::
+
+:::
+
 :::
