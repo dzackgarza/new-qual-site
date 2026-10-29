@@ -189,7 +189,8 @@ def test_the_problem_browser_owns_filtering_sampling_and_legacy_generate_redirec
     assert "dataTables.searchPanes.min.js" in markup
     table_script = (site / "assets" / "scripts" / "catalog-tables.js").read_text()
     assert "preSelect" in table_script
-    assert ".getAll(key)" in table_script
+    # One filter value per repeated parameter, never split: institution names carry commas.
+    assert "const values = (key) => params.getAll(key).filter(Boolean);" in table_script
     assert "collection-problems.json" in table_script
     assert "pageLength: 50" in table_script
     assert "listing-more" not in markup

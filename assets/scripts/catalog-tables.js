@@ -10,11 +10,9 @@
   syncLibraryTheme();
   darkScheme.addEventListener("change", syncLibraryTheme);
   const params = new URLSearchParams(location.search);
-  const values = (key) =>
-    params
-      .getAll(key)
-      .flatMap((value) => value.split(","))
-      .filter(Boolean);
+  // One value per repeated parameter: vocabulary names such as
+  // "University of California, Berkeley" contain commas.
+  const values = (key) => params.getAll(key).filter(Boolean);
   const solutionLabel = (value) => {
     const normalized = value.toLowerCase();
     if (normalized === "solved") return "Solved";
