@@ -6,7 +6,7 @@ title: Monotone pointwise convergence to $0$ of continuous functions on $[0,1]$ 
   uniform
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Convergence
   - Sequences of Functions
