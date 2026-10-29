@@ -19,65 +19,46 @@ Let $G$ be a group of order $p^2q$, where $p$ and $q$ are primes. Show that $G$ 
 :::
 
 ::: {.solution}
-If $p=q$, then $G$ itself is the unique Sylow $p$-subgroup, so assume $p\ne q$.
+Write $n_r$ for the number of Sylow $r$-subgroups of $G$.
 
 ::: pf
 
 ::: pf-step
+If $p=q$, then $G$ is a normal Sylow $p$-subgroup of itself.
 
+::: pf-proof
+Then $\abs{G}=p^3$, so $G$ is its own Sylow $p$-subgroup.
+:::
+
+:::
+
+::: pf-step
 If $p>q$, the Sylow $p$-subgroup is normal.
 
 ::: pf-proof
+By the Sylow theorems, $n_p\mid q$ and $n_p\equiv1\pmod p$, so $n_p\in\{1,q\}$. Since $1<q<p$, $q\not\equiv1\pmod p$, so $n_p=1$.
+:::
 
-Sylow gives
-\[
-n_p\mid q,
-\qquad
-n_p\equiv1\pmod p.
-\]
-Thus $n_p\in\{1,q\}$. Since $q<p$, the value $q$ cannot be congruent to $1$ modulo $p$, so $n_p=1$.
+:::
 
+::: {.pf-step #small-q}
+If $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
+
+::: pf-proof
+By the Sylow theorems, $n_q\mid p^2$ and $n_q\equiv1\pmod q$, so $n_q\in\{1,p,p^2\}$. Since $1<p<q$, $n_q\ne p$. If $n_q=p^2$, then $q\mid p^2-1=(p-1)(p+1)$; as $q>p-1>0$, this forces $q\mid p+1$, so $q=p+1$. The only primes differing by $1$ are $2$ and $3$.
 :::
 
 :::
 
 ::: pf-step
-
-Suppose $p<q$. Then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
-
-::: pf-proof
-
-Sylow gives
-\[
-n_q\mid p^2,
-\qquad
-n_q\equiv1\pmod q.
-\]
-Hence $n_q\in\{1,p,p^2\}$. Since $1<p<q$, the value $p$ is impossible. If $n_q=p^2$, then
-\[
-q\mid p^2-1=(p-1)(p+1).
-\]
-Because $q>p$, this forces $q\mid p+1$, hence $q=p+1$. The only consecutive primes are $2$ and $3$.
-
-:::
-
-:::
-
-::: pf-step
-
-In the exceptional order-$12$ case, a Sylow subgroup is still normal.
+If $(p,q)=(2,3)$, so that $\abs{G}=12$, a Sylow subgroup of $G$ is normal.
 
 ::: pf-proof
-
-If the Sylow $3$-subgroup is unique, we are done. Otherwise $n_3=4$. The four order-$3$ subgroups intersect only in the identity, so they contribute $4(3-1)=8$ nonidentity elements. Exactly three nonidentity elements remain.
-
-Every Sylow $2$-subgroup has order $4$, and its three nonidentity elements cannot lie in an order-$3$ subgroup. Hence every Sylow $2$-subgroup consists of the identity together with exactly those same three remaining elements. Therefore the Sylow $2$-subgroup is unique and normal.
-
+If $n_3=1$, the Sylow $3$-subgroup is normal. Otherwise $n_3=4$. Distinct subgroups of order $3$ meet only in the identity, so they contain $4\cdot2=8$ elements of order $3$, and exactly $3$ nonidentity elements of $G$ have order other than $3$. A Sylow $2$-subgroup has order $4$, and its three nonidentity elements have order $2$ or $4$, so it consists of the identity and exactly these three elements. Hence $n_2=1$, and the Sylow $2$-subgroup is normal.
 :::
 
 :::
 
 :::
 
-Thus every group of order $p^2q$ has a normal Sylow subgroup.
 :::
