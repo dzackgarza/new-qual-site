@@ -58,7 +58,7 @@ The classification separates according to the speciality of $\OO_C(1)$.
 Nonspecial hyperplane sections satisfy the degree bound $d\ge g+3$.
 Special hyperplane sections first occur in the low-degree list at degree $6$ and include the named canonical examples above.
 
-Two curves with the same $(d,g)$ can be genuinely different: degree $9$ and genus $10$ admits both the complete intersection of two cubics and the type-$(3,6)$ curve on a quadric.
-They are distinguished by $h^0(\mci_C(2))$, which is $0$ for the first and $1$ for the second, and semicontinuity shows neither degenerates to the other.
-The dimensions of the corresponding Hilbert-scheme/moduli loci are not known in this generality.
+Two curves with the same $(d,g)$ can be different: degree $9$ and genus $10$ admits both the complete intersection of two cubics and the type-$(3,6)$ curve on a quadric.
+They are distinguished by $h^0(\mci_C(2))$, which is $0$ for the first and $1$ for the second.
+By semicontinuity of $h^0(\mci_C(2))$, in a flat family whose general member lies on a quadric every member lies on a quadric, so a type-$(3,6)$ curve does not degenerate to a complete intersection of two cubics.
 :::
