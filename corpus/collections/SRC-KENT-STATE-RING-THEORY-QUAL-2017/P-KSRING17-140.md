@@ -13,17 +13,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 140 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source says every nonzero ideal; $A=R$ is contained in no prime ideal. The statement now says every nonzero proper ideal.
 ---
 
 ::: {.problem}
 Let R be a commutative Noetherian ring.
-Prove that every nonzero ideal A of R contains a product of prime ideals (not necessarily distinct) each of which contains A.
-:::
-
-::: {.remark}
-Erratum: under the usual convention that the product contains at least one prime-ideal factor, the ideal $A$ must be assumed proper.
-Indeed, no prime ideal contains $R$ itself.
-The proof below establishes the intended statement for nonzero proper ideals.
+Prove that every nonzero proper ideal A of R contains a product of prime ideals (not necessarily distinct) each of which contains A.
 :::
 
 ::: {.solution}
