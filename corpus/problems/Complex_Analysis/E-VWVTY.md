@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-VWVTY
 kind: problem
-title: Convergence of a $\ZZ\dash$index series
+title: Annulus of convergence of $\sum_{k\in\ZZ}2^{-\abs{k}}z^k$
 classification:
   areas:
   - complex-analysis
@@ -12,29 +12,57 @@ classification:
   - Power Series
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source asks for the radius of convergence; a series indexed by Z converges on an annulus, so the statement asks for the region of convergence.
 ---
 
 ::: {.exercise}
-Find the radius of convergence for 
-\[
-f(z) \definedas \sum_{k\in \ZZ} 2^{-\abs{k}}z^k
-.\]
+Find the region of convergence for
+$$
+f(z) \definedas \sum_{k\in \ZZ} 2^{-\abs{k}}z^k.
+$$
 
 :::
 
 ::: {.solution}
-Break this up into a principal part at $z=0$ and a holomorphic part:
-\[
-f(z) = f_1(z) + f_2(z) \definedas \sum_{k\geq 1} 2^{-k}z^{-k} + \sum_{k\geq 0} 2^{-k}z^k
-.\]
+Split $f = f_1 + f_2$ with
+$$
+f_1(z) \definedas \sum_{k\geq 1} (2z)^{-k}, \qquad f_2(z) \definedas \sum_{k\geq 0} (z/2)^k.
+$$
+The series $f$ converges exactly where both $f_1$ and $f_2$ converge.
 
-Using the ratio test:
-\[
-f_1(z) < \infty &\impliedby \limsup_k \abs{2^{-k}z^{-k}}^{1\over k} < 1 \iff \limsup_k \abs{1\over 2z} < 1 \iff {1\over 2}< \abs{z} \\
-f_2(z) < \infty &\impliedby \limsup_k \abs{2^{-k}z^{k}}^{1\over k} < 1 \iff \limsup_k \abs{z\over 2}< 1 \iff \abs{z} < 2 
-.\]
+::: pf
 
-So $f$ converges on ${1\over 2}< \abs{z} < 2$.
+::: {.pf-step #f1}
+$f_1(z)$ converges if and only if $\abs{z} > \frac12$.
+
+::: pf-proof
+It is a geometric series in $(2z)^{-1}$, which converges if and only if $\abs{(2z)^{-1}} < 1$.
+:::
 
 :::
 
+::: {.pf-step #f2}
+$f_2(z)$ converges if and only if $\abs{z} < 2$.
+
+::: pf-proof
+It is a geometric series in $z/2$, which converges if and only if $\abs{z/2} < 1$.
+:::
+
+:::
+
+::: pf-step
+$f$ converges exactly on the annulus $\boxed{\frac12 < \abs{z} < 2}$.
+
+::: pf-proof
+Intersect the regions of steps [](#f1){.pf-ref} and [](#f2){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
