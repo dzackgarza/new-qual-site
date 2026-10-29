@@ -19,38 +19,44 @@ Let $D$ be the region obtained by deleting the real interval $[0, 1)$ from $\DD$
 :::
 
 ::: {.solution}
-On
-\[
-D=\{0<|z|<1:\arg z\in(0,2\pi)\}
-\]
-choose the square-root branch
-\[
-s(z)=\sqrt z=|z|^{1/2}e^{i\arg z/2},
-\qquad 0<\arg z<2\pi.
-\]
-Then $s$ maps $D$ biholomorphically onto the upper half-disk
-\[
-U=\{w:|w|<1,\ \Im w>0\}.
-\]
 
-Next
-\[
-T(w)=\frac{1+w}{1-w}
-\]
-maps $U$ biholomorphically onto the first quadrant: the diameter $(-1,1)$
-goes to the positive real axis, while the upper semicircle goes to the
-positive imaginary axis. Therefore $T(w)^2$ maps $U$ biholomorphically onto
-the upper half-plane. Finally the Cayley map
-\[
-C(\zeta)=\frac{\zeta-i}{\zeta+i}
-\]
-maps the upper half-plane onto $\mathbb D$. Thus one required map is
-\[
+Write $D=\{z: 0<\abs{z}<1,\ 0<\arg z<2\pi\}$.
+
+::: pf
+
+::: {.pf-step #root}
+$s(z)\coloneqq\abs{z}^{1/2}e^{i\arg z/2}$, with $0<\arg z<2\pi$, maps $D$ biholomorphically onto the upper half-disc $U\coloneqq\{\abs{w}<1,\ \Im w>0\}$.
+
+::: pf-proof
+$s$ is a holomorphic branch of $\sqrt z$ on $D$; it halves arguments in $(0,2\pi)$ and takes square roots of moduli in $(0,1)$, with inverse $w\mapsto w^2$.
+:::
+
+:::
+
+::: {.pf-step #quadrant}
+$T(w)\coloneqq\frac{1+w}{1-w}$ maps $U$ biholomorphically onto the first quadrant.
+
+::: pf-proof
+$T$ maps the diameter $(-1,1)$ onto the positive real axis and the upper semicircle onto the positive imaginary axis, and $T(i/2)=\frac{3+4i}{5}$ lies in the first quadrant.
+:::
+
+:::
+
+::: pf-step
+$$
 \boxed{
 F(z)=
 \frac{\left(\frac{1+\sqrt z}{1-\sqrt z}\right)^2-i}
-     {\left(\frac{1+\sqrt z}{1-\sqrt z}\right)^2+i},
-}
-\]
-with the square-root branch specified above.
+     {\left(\frac{1+\sqrt z}{1-\sqrt z}\right)^2+i}}
+$$
+with $\sqrt z=s(z)$ maps $D$ biholomorphically onto $\DD$.
+
+::: pf-proof
+Squaring maps the first quadrant onto the upper half-plane, and the Cayley map $\zeta\mapsto\frac{\zeta-i}{\zeta+i}$ maps the upper half-plane onto $\DD$; compose with steps [](#root){.pf-ref} and [](#quadrant){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
