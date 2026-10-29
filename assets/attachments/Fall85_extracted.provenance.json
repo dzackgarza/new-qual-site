@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Fall85.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall85.md",
   "card_comparison": "The twenty top-level source problems were reconciled from this deterministic baseline. Problem 4 exactly repeats canonical card P-BKF78-18; the other nineteen source positions have source-local cards.",
   "known_extractor_defects": [
     "Problem 3 appends stray OCR glyphs after the field name; both parts ask for monic irreducible polynomials over the field Z_5, represented as F_5 on the card.",

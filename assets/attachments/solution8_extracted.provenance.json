@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/solution8.pdf --language en",
   "generated_at": "2026-09-14",
-  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/solution8.md",
   "superseded_extraction_sha256": "35cddf3d95fa0dbf5c5ed70e21f130f55690df852155fd56b575fca65ff4052d",
   "fresh_vs_superseded_delta": "The fresh baseline has the same 517-line source structure. It changes only Problem 1's boxed T/F label capitalization and one worked-solution line in Problem 5, where Flash now emits the missing sine integrand/upper limit. No problem-card obligation changes.",
   "source_identification": "Harvard Math 21b Spring 2018 Practice Final 8 with worked solutions and fourteen top-level problems.",

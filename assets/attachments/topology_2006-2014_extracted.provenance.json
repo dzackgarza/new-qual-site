@@ -10,12 +10,18 @@
   "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/topology_2006-2014.pdf --language en",
   "whole_file_result": "[-30003] file page count exceeds Flash API limit (20 pages)",
   "page_ranges": [
-    { "pages": "1-20", "exit": 0, "bytes": 33865 },
-    { "pages": "21-22", "exit": 0, "bytes": 2934 }
+    {
+      "pages": "1-20",
+      "exit": 0,
+      "bytes": 33865
+    },
+    {
+      "pages": "21-22",
+      "exit": 0,
+      "bytes": 2934
+    }
   ],
   "assembly": "The final baseline concatenates the successful 1-20 and 21-22 Markdown range outputs in source-page order, separated only by blank lines.",
-  "old_unknown_provenance_extraction": "assets/attachments/extracted/topology_2006-2014.md",
-  "old_unknown_provenance_sha256": "b7fdd9113291752f7accdf4b46410fa4c00f3d4c4f3375c54175449859afecf8",
   "source_identification": "Wesleyan University topology qualifying-exam compilation containing June 2014 (6 top-level problems), August 2013 (8), August 2012 (8), August 2011 (9), August 2010 (8), August 2009 (10), August 2008 (7), June 2007 (10), and June 2006 (16), for 82 top-level positions total.",
   "card_reconciliation": "The nine existing complete Wesleyan topology collections represent all 82 top-level source positions in sitting order, with exact repeated statements routed to their existing canonical owners. The fresh baseline corroborates the sitting boundaries and problem counts. No collection path is modified in this intake because the collection trees carry concurrent shared residue.",
   "known_source_or_extractor_defects": [

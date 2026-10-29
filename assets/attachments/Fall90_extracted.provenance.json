@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Fall90.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall90.md",
   "card_comparison": "All eighteen top-level source problems are represented by source-local cards P-BKF90-1 through P-BKF90-18.",
   "known_extractor_defects": [
     "Problem 12 drops both arrows in the homomorphisms u,v:A->A; the card restores the domain and codomain from the deterministic sentence.",

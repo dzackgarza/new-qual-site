@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/squal1.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/squal1.md",
   "source_identification": "Undated topology qualifying exam with four Section A problems and four Section B problems. The retained PDF does not identify an institution or date.",
   "card_reconciliation": "The existing complete collection SRC-TOP-SQUAL1 represents all eight source positions in order. No collection path is modified in this intake because the live shared tree owns those paths separately."
 }

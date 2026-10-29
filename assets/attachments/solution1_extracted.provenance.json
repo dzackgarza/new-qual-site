@@ -11,8 +11,6 @@
   "whole_file_result": "[-30001] file size exceeds lightweight API limit (10MB)",
   "transport_split": "pdfseparate assets/attachments/solution1.pdf assets/attachments/intermediate/solution1_flash/page-%03d.pdf",
   "page_extraction": "Each of the 20 losslessly separated source pages was passed independently to `mineru-open-api flash-extract <page.pdf> --language en`; all 20 commands exited 0 and produced nonempty Markdown. The final baseline concatenates those page Markdown outputs in pages 1-20 source order, separated only by blank lines.",
-  "old_unknown_provenance_extraction": "assets/attachments/extracted/solution1.md",
-  "old_unknown_provenance_sha256": "b50c87b9f224ef8f441ae456cb7ffeae56ea745b89d269e5866b21cf3662c822",
   "source_identification": "Harvard Math 21b Spring 2018 Practice Final 1 with worked solutions. The packet score table enumerates fourteen top-level problems.",
   "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-1 lists fourteen cards in source order. The fresh deterministic baseline supports the recoverable mathematical statements already recorded there; no collection path is modified in this intake because that tree carries concurrent shared residue.",
   "known_source_or_extractor_defects": [

@@ -13,7 +13,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: "Re-transcribed from Chapter 6 review Question 14 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription."
+  note: "Re-transcribed from Chapter 6 review Question 14 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/chapter-6_extracted.md, replacing the earlier paraphrased transcription."
 ---
 
 ::: {.problem}

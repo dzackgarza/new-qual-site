@@ -10,12 +10,18 @@
   "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/Topology_Prelim_Answers_-_Unknown.pdf --language en",
   "whole_file_result": "[-30003] file page count exceeds Flash API limit (20 pages)",
   "page_ranges": [
-    { "pages": "1-20", "exit": 0, "bytes": 41416 },
-    { "pages": "21-36", "exit": 0, "bytes": 13416 }
+    {
+      "pages": "1-20",
+      "exit": 0,
+      "bytes": 41416
+    },
+    {
+      "pages": "21-36",
+      "exit": 0,
+      "bytes": 13416
+    }
   ],
   "assembly": "The final baseline concatenates the successful 1-20 and 21-36 Markdown range outputs in source-page order, separated only by blank lines.",
-  "old_unknown_provenance_extraction": "assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md",
-  "old_unknown_provenance_sha256": "235257226049a18d6b6dd6dd99a1b6bf05a06d5a113d64fb8757492965430a41",
   "source_identification": "William Malone and Matt Housley topology/preliminary-exam worked-answer compilation, Summer 2007. It contains Math 6520 Final Exam 2007 (8 numbered positions), January 2007 (16), Math 6510 Final Exam (8), August 2006 (16), January 2006 (9), an embedded August 2005 block (8), and January 2005 (10), for 75 numbered source positions total.",
   "card_reconciliation": "The existing complete SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007 collection represents all 75 numbered positions with 72 canonical cards and three exact repeated appearances. The fresh deterministic baseline preserves the same section boundaries and the same unrecovered source gaps, so no collection/card edit is warranted in this intake; those paths carry concurrent shared residue.",
   "raw_control_bytes": 77,

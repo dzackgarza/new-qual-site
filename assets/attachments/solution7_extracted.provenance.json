@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/solution7.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/solution7.md",
   "source_identification": "Harvard Math 21b Spring 2018 Practice Final 7 with worked solutions and fourteen top-level problems.",
   "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-7 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
   "known_source_or_extractor_defects": [

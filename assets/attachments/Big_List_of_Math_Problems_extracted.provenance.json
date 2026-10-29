@@ -11,6 +11,5 @@
   ],
   "assembly": "The two Flash Markdown outputs were concatenated in page order without normalization or semantic rewriting.",
   "generated_at": "2026-09-14",
-  "retained_extraction_comparison": "different from assets/attachments/extracted/Big_List_of_Math_Problems.md; the old extraction had unknown provenance and was not used as source evidence.",
   "reconciliation": "The source contains 243 numbered positions: LA 48, RA 62, CA 34, VP 15, DE 51, PR 33. One exact canonical occurrence (the Dirichlet integral, P-BKS04-7A) is reused; 242 Mathematical-Trivium-owned cards represent the remaining positions. Source-order numbering repairs and explicit extraction/figure gaps are documented on affected cards."
 }

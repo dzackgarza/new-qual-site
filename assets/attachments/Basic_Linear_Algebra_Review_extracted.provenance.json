@@ -7,6 +7,5 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract 'assets/attachments/Basic_Linear_Algebra_Review.pdf' --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_comparison": "different from assets/attachments/extracted/Basic_Linear_Algebra_Review.md; the old extraction had unknown provenance and was not used as source evidence.",
   "reconciliation": "The source is predominantly expository Math 150-01 linear-algebra review notes. Its final Review Problems section contains exactly seven numbered source problems, represented by SRC-BASIC-LINEAR-ALGEBRA-REVIEW. Expository definitions and worked examples are retained as reference content rather than converted into artificial problem cards. Review Problem 7(d) contains an explicit domain/formula mismatch, recorded on its card."
 }

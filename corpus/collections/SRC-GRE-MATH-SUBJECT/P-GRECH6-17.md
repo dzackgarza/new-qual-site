@@ -13,7 +13,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: "Re-transcribed from Chapter 6 review Question 17 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription. The book extraction garbles the ring in item III as Z_p^b; the chapter-6.md extraction reads Z_{p^2}, and the book's Chapter 8 solution discusses Z_{p^2}."
+  note: "Re-transcribed from Chapter 6 review Question 17 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/chapter-6_extracted.md, replacing the earlier paraphrased transcription. The book extraction garbles the ring in item III as Z_p^b; the chapter-6.md extraction reads Z_{p^2}, and the book's Chapter 8 solution discusses Z_{p^2}."
 ---
 
 ::: {.problem}

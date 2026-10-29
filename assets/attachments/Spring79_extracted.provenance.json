@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Spring79.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Spring79.md",
   "source_identification": "UC Berkeley Preliminary Exam, Spring 1979, containing Problems 1-20 in source order.",
   "card_reconciliation": "The existing complete collection SRC-BERKELEY-PRELIM-SPRING-1979 represents all twenty source positions in order by nineteen source-local cards plus exact canonical reuse of P-BERK97S-08 for Problem 11. No collection path is modified in this intake because the live shared tree owns those paths separately.",
   "known_source_or_extractor_defects": [

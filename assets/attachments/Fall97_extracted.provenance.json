@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Fall97.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall97.md",
   "card_comparison": "The eighteen top-level source problems are represented by eighteen source-local cards in source order.",
   "known_extractor_defects": [
     "Problem 12 drops the map arrows in both declarations f:R^m->R^n; the cards restore those arrows from the deterministic surrounding definition.",

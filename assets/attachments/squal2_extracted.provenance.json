@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/squal2.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/squal2.md",
   "source_identification": "Undated topology qualifying exam with four point-set topology problems and four homotopy/homology problems. The retained PDF does not identify an institution or date.",
   "card_reconciliation": "The existing complete collection SRC-TOP-SQUAL2 represents all eight source positions in order by six source-local cards plus exact canonical reuse of P-T07A2 for Section A Problem 4 and P-OMOPR for Section B Problem 6. No collection path is modified in this intake because the live shared tree owns those paths separately."
 }

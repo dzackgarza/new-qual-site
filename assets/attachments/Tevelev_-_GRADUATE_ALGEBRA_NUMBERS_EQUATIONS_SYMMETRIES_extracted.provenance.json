@@ -17,7 +17,6 @@
     "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en --pages 81-99"
   ],
   "range_results": "All five page-range commands exited 0 and produced nonempty Markdown. The final baseline concatenates their outputs in source-page order, separated only by blank lines.",
-  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.md",
   "superseded_extraction_sha256": "7957e1c5a1982797c685875f2713d31436d851e3d392b50b6feb5fcccd2d0a6f",
   "source_identification": "Jenia Tevelev, Graduate Algebra: Numbers, Equations, Symmetries.",
   "source_role": "Reference/course text. The document is organized as graduate-algebra exposition with exercise sections and sample midterms embedded in the text, covering field extensions and Galois theory, radicals and cyclotomic fields, quadratic reciprocity, transcendence, affine algebraic geometry and the Nullstellensatz, localization and Nakayama's lemma, and representations and characters of finite groups. It is not a standalone exam or problem sheet, so no problem collection is manufactured.",

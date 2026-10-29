@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Fall84.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall84.md",
   "card_comparison": "The deterministic extraction contains twenty top-level problems. SRC-BERKELEY-PRELIM-FALL-1984 represents all twenty in source order by source-local cards.",
   "known_extractor_defects": [
     "Problem 2 drops the arrow in the limit t to 0; the card restores t -> 0.",

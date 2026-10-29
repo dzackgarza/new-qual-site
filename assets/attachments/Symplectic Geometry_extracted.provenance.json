@@ -15,7 +15,6 @@
     "mineru-open-api flash-extract assets/attachments/Symplectic Geometry.pdf --language en --pages 41-42"
   ],
   "range_results": "All three page-range commands exited 0 and produced nonempty Markdown. The final baseline concatenates their outputs in source-page order, separated only by blank lines.",
-  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/Symplectic Geometry.md",
   "superseded_extraction_sha256": "3df09d3517f270b7cd6a2b01091e92fecb349a992f74cdae23ffcd7bc0a571bb",
   "source_identification": "J.J. Duistermaat, Symplectic Geometry, Spring School, June 7-14, 2004, Utrecht.",
   "source_role": "Reference/course notes. The four expository chapters cover symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton-Jacobi theory. Each chapter ends with an exercise section integrated into the lecture text; this is not a standalone exam or problem sheet, so no problem collection is manufactured.",

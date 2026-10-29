@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Spring99.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Spring99.md",
   "source_identification": "UC Berkeley Preliminary Exam, Spring 1999, containing Problems 1-18 in source order.",
   "card_reconciliation": "The existing complete collection SRC-BERKELEY-PRELIM-SPRING-1999 represents all eighteen source positions in order. No collection path is modified in this intake because the live shared tree owns those paths separately.",
   "known_source_or_extractor_defects": [

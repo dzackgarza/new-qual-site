@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/871-872January_2004_871-953.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/871-872January_2004_871-953.md",
   "card_comparison": "All ten source positions were reconciled against this baseline: seven owned cards and three reused canonical topology cards match the extracted problems after the explicitly recorded extractor cleanups.",
   "known_extractor_defects": [
     "Part I Problem 5 drops the map arrow between the displayed source and target; the card restores the map notation from the surrounding deterministic text.",

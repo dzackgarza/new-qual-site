@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Complex_Analysis_Exam_Prep_Solutions.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Complex_Analysis_Exam_Prep_Solutions.md",
   "card_comparison": "All sixteen numbered practice problems were compared against this baseline. P-CAEXAMPREP-07 restores the source hint's radius-one-ball parenthetical and P-CAEXAMPREP-09 restores the source hints for parts (a) and (b); the other fourteen problem statements match.",
   "source_structure": {
     "numbered_practice_problems": 16,

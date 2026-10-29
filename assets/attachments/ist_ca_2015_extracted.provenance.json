@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/ist_ca_2015.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/ist_ca_2015.md",
   "problem_count": 25,
   "card_comparison": "Twenty-four explicit Problem x.y headings are represented by source-local cards; Problem 8.7 reuses canonical card E-TJ3WM because it asks exactly for the holomorphic automorphisms of C.",
   "transcription_corrections": [

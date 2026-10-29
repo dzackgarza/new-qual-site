@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Fall88.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall88.md",
   "card_comparison": "All eighteen top-level source problems are represented by source-local cards P-BKF88-1 through P-BKF88-18.",
   "known_extractor_defects": [
     "Problem 8 renders Im z as a malformed blackboard-S glyph; the card restores the strip as -pi/2 < Im z < pi/2 from the deterministic complex-analytic context.",

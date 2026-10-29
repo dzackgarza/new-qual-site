@@ -8,7 +8,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/topology_2005-2003.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/topology_2005-2003.md",
   "source_identification": "Wesleyan topology qualifying-exam compilation. The primary sequence contains August 2005, August 2004, and June 2003; the retained packet then appends duplicate source copies of 2013 Part II, the full June 2006 exam, and June 2003 again.",
   "card_reconciliation": "Existing Wesleyan collections represent all 60 top-level appearances in the retained PDF: 30 primary positions across August 2005, August 2004, and June 2003, plus the appended 2013 Part II, 2006, and repeated 2003 material. Exact repeats reuse canonical cards/collections and the compilation is supplemental provenance where appropriate. No shared collection path is modified in this intake.",
   "known_source_or_extractor_defects": [

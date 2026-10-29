@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/s04solution.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/s04solution.md",
   "source_identification": "Companion solution packet for the UC Berkeley Preliminary Examination, Spring 2004, with solutions 1A-9A and 1B-9B.",
   "card_reconciliation": "All 18 SRC-BERKELEY-PRELIM-SPRING-2004 cards carry solution-reviewed audit events against this retained solution packet."
 }

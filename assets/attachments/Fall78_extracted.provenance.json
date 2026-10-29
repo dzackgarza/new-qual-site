@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/Fall78.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall78.md",
   "card_comparison": "The deterministic extraction contains twenty top-level problems. SRC-BERKELEY-PRELIM-FALL-1978 represents all twenty in source order with nineteen source-local cards and exact reuse of P-RA-WORKSHOP-D2-METRIC-11 for Problem 1.",
   "known_extractor_defects": [
     "Problem 7 renders the inequality xH != Hx as the text 'xH 6= Hx'; the card restores the inequality symbol.",

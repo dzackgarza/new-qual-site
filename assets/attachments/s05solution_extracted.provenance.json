@@ -7,7 +7,6 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract assets/attachments/s05solution.pdf --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/s05solution.md",
   "source_identification": "Companion solution packet for the UC Berkeley Preliminary Examination, Spring 2005, repeating problems 1A-9A and 1B-9B before their worked solutions.",
   "card_reconciliation": "The packet's repeated problem statements independently support the 18 source-checked cards. The worked solution prose is retained as provenance rather than imported wholesale into cards because the deterministic solution extraction contains visible glyph corruption; no guessed solution repair was made."
 }

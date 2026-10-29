@@ -7,6 +7,5 @@
   "extractor_version": "v0.5.9",
   "command": "mineru-open-api flash-extract 'assets/attachments/Azoff Problems by Topic.pdf' --language en",
   "generated_at": "2026-09-14",
-  "retained_extraction_comparison": "byte-identical to assets/attachments/extracted/Azoff Problems by Topic.md",
   "reconciliation": "The packet contains 89 source positions across nine topic blocks. 15 exact existing canonical owners are reused and 74 Azoff-owned problem cards represent the remaining source obligations. Concrete Flash defects corrected in cards are documented on the affected audit entries."
 }
