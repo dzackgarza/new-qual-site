@@ -6,9 +6,9 @@ order: 20
 
 Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/topobank.pdf)
 
-[Wesleyan topology preliminary exams, 2006–2014](attachments/topology_2006-2014.pdf)
+[Wesleyan topology preliminary exams, 2006--2014](attachments/topology_2006-2014.pdf)
 
-[Wesleyan topology preliminary exams, 2003–2005](attachments/topology_2005-2003.pdf)
+[Wesleyan topology preliminary exams, 2003--2005](attachments/topology_2005-2003.pdf)
 
 [Math 872 problem sets, Spring 2014](attachments/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf)
 
@@ -24,7 +24,7 @@ Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/top
 
 ## Qualifying-exam collections
 
-The UNL topology qualifying exams from 2002–2020 are source collections on the [Sources listing](exams.html).
+The UNL topology qualifying exams from 2002--2020 are source collections on the [Sources listing](exams.html).
 
 Compiled scans of earlier exams:
 
