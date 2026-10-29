@@ -5,7 +5,7 @@ kind: problem
 title: "A vector orthogonal to $\\mathbf i+\\mathbf j-\\mathbf k$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Orthogonality]
 relations: []
 review: draft
 audit:
