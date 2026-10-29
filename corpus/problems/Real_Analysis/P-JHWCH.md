@@ -17,26 +17,32 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source states part (a) for L^+(R) and the series for L^+(R^n), and uses L^+ and mu_f without defining them, citing countable additivity of mu_f 'established above'. The statement works on R^n throughout, defines L^+ and mu_f, and says that countable additivity follows from (a)."
 ---
 
 ::: {.problem}
-a. Prove that if $f, g\in L^+(\RR)$ then 
-\[
-\int(f +g) = \int f + \int g
-.\]
-  Extend this to establish that if $\theset{ f_k} \subseteq L^+(\RR^n)$ then
-  \[
-  \int \sum_k f_k = \sum_k \int f_k
-  .\]
+Let $L^+(\RR^n)$ be the set of measurable functions on $\RR^n$ with values in $[0,\infty]$, and for $f \in L^+(\RR^n)$ and measurable $A$ let $\mu_f(A) = \int_A f$.
 
-b. Let $\theset{E_j}_{j\in \NN} \subseteq \mathcal{M}(\RR^n)$ with $E_j \nearrow E$. 
-  Use the countable additivity of $\mu_f$ on \( \mathcal{M}(\RR^n)  \) established above to show that
-  \[
-  \mu_f(E) = \lim_{j\to \infty } \mu_f(E_j)
-  .\]
+(a) Prove that if $f, g\in L^+(\RR^n)$ then
+$$
+\int(f +g) = \int f + \int g.
+$$
+Extend this to establish that if $\theset{ f_k} \subseteq L^+(\RR^n)$ then
+$$
+\int \sum_k f_k = \sum_k \int f_k.
+$$
+
+(b) Let $\theset{E_j}_{j\in \NN} \subseteq \mathcal{M}(\RR^n)$ with $E_j \nearrow E$.
+Use the countable additivity of $\mu_f$ on $\mathcal{M}(\RR^n)$, which follows from (a), to show that
+$$
+\mu_f(E) = \lim_{j\to \infty } \mu_f(E_j).
+$$
 :::
+
 ::: {.solution}
-Here $L^+$ is the set of measurable functions with values in $[0,\infty]$, and $\mu_f(A) = \int_A f$ for $f \in L^+$.
 
 ::: pf
 
