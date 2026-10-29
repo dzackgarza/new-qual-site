@@ -24,19 +24,24 @@ audit:
 ---
 
 ::: {.problem}
+
 Let $f, g$ be non-negative measurable functions on $[0, \infty)$ with
-\[
-A &\definedas \int_0^{\infty } f(y) y^{-1/2} \dy < \infty \\
-B &\definedas \qty{ \int_0^{\infty } \abs{ g(y) }^2 \dy }^{1/2} < \infty  
-.\]
+$$
+\begin{aligned}
+A &\coloneqq \int_0^{\infty } f(y) y^{-1/2} \dy < \infty, \\
+B &\coloneqq \qty{ \int_0^{\infty } \abs{ g(y) }^2 \dy }^{1/2} < \infty.
+\end{aligned}
+$$
 
 Show that
-\[
-\int_0^{\infty } \qty{ \int_0^{x} f(y) \dy } {g(x) \over x} \dx \leq AB
-.\]
+$$
+\int_0^{\infty } \qty{ \int_0^{x} f(y) \dy } \frac{g(x)}{x} \dx \leq AB.
+$$
+
 :::
 
 ::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
