@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO12
 kind: problem
-title: No surjection from $A_4$ onto $ZZ/2ZZ$
+title: No surjection from $A_4$ onto $\ZZ/2\ZZ$
 classification:
   areas: [algebra]
   topics: [Group Theory]
