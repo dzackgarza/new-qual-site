@@ -15,41 +15,39 @@ review: draft
 ---
 
 ::: {.problem}
-Let $V$ be $6$-dimensional and let $T\in\operatorname{End}(V)$ satisfy
-\[
+Let $V$ be $6$-dimensional and let $T\in\Endo(V)$ satisfy
+$$
 T^6=0,
 \qquad
 T^5\ne0.
-\]
+$$
 Show that $T$ has a single Jordan block of size $6$.
 :::
 
 ::: {.solution}
-Since $T^6=0$, the minimal polynomial is a power of $x$:
-\[
-m_T(x)=x^r
-\]
-for some $r\le6$. The condition $T^5\ne0$ forces $r>5$, so
-\[
-m_T(x)=x^6.
-\]
+Write $m_T$ for the minimal polynomial and $\chi_T$ for the characteristic polynomial of $T$.
 
-Because $\dim V=6$, the characteristic polynomial has degree $6$. Since the only eigenvalue is $0$,
-\[
-\chi_T(x)=x^6.
-\]
+::: pf
 
-In Jordan form, the exponent of $x$ in the minimal polynomial is the size of the largest Jordan block. Thus the largest block has size $6$. But the sum of all Jordan-block sizes is also $6$. Therefore there can be only one block:
-\[
-J(T)=J_6(0)
-=
-\begin{pmatrix}
-0&1&0&0&0&0\\
-0&0&1&0&0&0\\
-0&0&0&1&0&0\\
-0&0&0&0&1&0\\
-0&0&0&0&0&1\\
-0&0&0&0&0&0
-\end{pmatrix}.
-\]
+::: {.pf-step #minpoly}
+$m_T(x)=x^6$.
+
+::: pf-proof
+$T^6=0$ gives $m_T\mid x^6$, so $m_T=x^r$ with $r\le6$, and $T^5\ne0$ forces $r>5$.
+:::
+
+:::
+
+::: pf-step
+The Jordan form of $T$ is the single block $J_6(0)$.
+
+::: pf-proof
+All roots of $m_T$ are $0$, so $\chi_T(x)=x^6$ splits and $T$ has a Jordan form, with all blocks for the eigenvalue $0$.
+The largest block has size equal to the exponent of $x$ in $m_T$, which is $6$ by step [](#minpoly){.pf-ref}, and the block sizes sum to $\dim V=6$, so there is exactly one block.
+:::
+
+:::
+
+:::
+
 :::
