@@ -45,18 +45,18 @@ Then $E$ is supersingular exactly when $h_p(\lambda) = 0$.
 :::
 
 ::: {.remark title="Where the criterion comes from"}
-Each step in the coefficient criterion is forced by the cohomological realization below.
+The Hasse invariant is the action of Frobenius on the one-dimensional space $H^1(\OO_E)$, and the coefficient criterion computes it in Čech cohomology.
 
 The ideal sheaf of a plane cubic is $\OO_{\PP^2}(-3)$, so
-\[
+$$
 0 \to \OO_{\PP^2}(-3) \xrightarrow{\ f\ } \OO_{\PP^2} \to \OO_E \to 0 .
-\]
+$$
 Since $h^1(\OO_{\PP^2}) = h^2(\OO_{\PP^2}) = 0$, the long exact sequence gives $H^1(\OO_E) \iso H^2(\PP^2; \OO(-3))$.
 That group is one-dimensional with basis the Čech class $\tfrac{1}{xyz}$ --- it is the unique monomial of degree $-3$ with all three exponents negative.
-So the line whose endomorphism is being tested has a canonical monomial basis, and the test becomes a computation with monomials.
+So $H^1(\OO_E)$ has a canonical monomial basis, and the test becomes a computation with monomials.
 
 Frobenius on $\PP^2$ sends $\tfrac{1}{xyz} \mapsto \tfrac{1}{(xyz)^p}$.
-Transporting along the diagram that compares $E = V(f)$ with $V(f^p)$ multiplies by $f^{p-1}$, so the image is the class of
+Frobenius carries the presentation of $E = V(f)$ to that of $V(f^p)$, and the inclusion $E \subseteq V(f^p)$ induces multiplication by $f^{p-1}$ from $H^2(\PP^2; \OO(-3p))$ to $H^2(\PP^2; \OO(-3))$, so the image is the class of
 $$
 \frac{f^{p-1}}{(xyz)^{p}} .
 $$
