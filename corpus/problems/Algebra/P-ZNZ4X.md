@@ -20,55 +20,63 @@ Define the "radical" of an ideal $I\trianglelefteq R$ and prove it is an ideal.
 Prove that the ideal of all polynomials vanishing on the zero set of $I$ is $\sqrt{I}$.
 :::
 
-
 ::: {.solution}
-The radical is
-\[
-\sqrt I=\{f\in R:f^m\in I\text{ for some }m\ge1\}.
-\]
+Let $Z(I)=\{a\in k^n:h(a)=0\text{ for every }h\in I\}$, and let $I(Z(I))$ be the ideal of polynomials vanishing on $Z(I)$.
 
-It is an ideal. If $f^m\in I$ and $g^n\in I$, then every term in the binomial expansion of $(f+g)^{m+n}$ contains either $f^m$ or $g^n$, so
-\[
-(f+g)^{m+n}\in I.
-\]
-Also, for $r\in R$,
-\[
-(rf)^m=r^mf^m\in I.
-\]
-Thus $f+g,rf\in\sqrt I$.
+::: pf
 
-Let
-\[
-Z(I)=\{a\in k^n:h(a)=0\text{ for every }h\in I\},
-\]
-and let $I(Z(I))$ be the ideal of polynomials vanishing on $Z(I)$.
+::: pf-step
 
-First, $\sqrt I\subseteq I(Z(I))$: if $f^m\in I$, then for every $a\in Z(I)$,
-\[
-f(a)^m=0,
-\]
-so $f(a)=0$.
+The radical of $I$ is $\sqrt I\coloneqq\{f\in R:f^m\in I\text{ for some }m\ge1\}$, and it is an ideal.
 
-For the reverse inclusion, let $f\in I(Z(I))$. In
-\[
-k[x_1,\ldots,x_n,y]
-\]
-consider
-\[
-J=I+(1-yf).
-\]
-There is no common zero of $J$: a common zero would have its first $n$ coordinates in $Z(I)$, hence $f=0$, while simultaneously $1-yf=0$, impossible. By the weak Nullstellensatz, $J=(1)$. Hence
-\[
-1=\sum_i a_i h_i+b(1-yf),\qquad h_i\in I.
-\]
-Substitute $y=f^{-1}$ in the localization $R_f$. The last term vanishes, so $1\in IR_f$. Clearing a power of $f$ gives
-\[
-f^N\in I
-\]
-for some $N$, hence $f\in\sqrt I$.
+::: pf-proof
 
-Therefore
-\[
-\boxed{I(Z(I))=\sqrt I}.
-\]
+Let $f^m\in I$, $g^n\in I$, and $r\in R$. Each term of the binomial expansion of $(f+g)^{m+n}$ is a multiple of $f^ig^{m+n-i}$, and either $i\ge m$ or $m+n-i>n$, so the term lies in $I$; hence $f+g\in\sqrt I$. Also $(rf)^m=r^mf^m\in I$, so $rf\in\sqrt I$, and $0\in\sqrt I$.
+
+:::
+
+:::
+
+::: {.pf-step #easy}
+
+$\sqrt I\subseteq I(Z(I))$.
+
+::: pf-proof
+
+If $f^m\in I$ and $a\in Z(I)$, then $f(a)^m=0$, so $f(a)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #hard}
+
+$I(Z(I))\subseteq\sqrt I$.
+
+::: pf-proof
+
+Let $f\in I(Z(I))$; if $f=0$ there is nothing to prove. In $k[x_1,\ldots,x_n,y]$ consider $J=IR[y]+(1-yf)$. A common zero $(a,b)$ of $J$ would have $a\in Z(I)$, hence $f(a)=0$, and $1-bf(a)=0$, which is impossible. By the weak Nullstellensatz, $J=(1)$, so
+$$
+1=\sum_i a_ih_i+b(1-yf),\qquad h_i\in I,\ a_i,b\in k[x_1,\ldots,x_n,y].
+$$
+Apply the homomorphism $k[x_1,\ldots,x_n,y]\to R_f$ with $y\mapsto f^{-1}$; the last term vanishes and $1=\sum_i a_i(x,f^{-1})h_i$. Multiplying by a power $f^N$ that clears the denominators gives $f^N\in I$, so $f\in\sqrt I$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\boxed{I(Z(I))=\sqrt I}$.
+
+::: pf-proof
+
+Combine steps [](#easy){.pf-ref} and [](#hard){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
