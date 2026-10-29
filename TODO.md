@@ -99,7 +99,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-analysis-content`**. **Needs:** none. P-RAF23C step 2 fails for infinite measure;
     P-RAF23F/G titles carry TeX outside math; P-RAF23G "measurable space"; STYLE-05 part
     keying in P-SMK7Q, P-NYOLD, P-PEND3, P-7XPOK; GUIDE-REAL-ANALYSIS joint-exam intro
-    describes complex analysis. **Acceptance:** each item read and repaired.
+    describes complex analysis. **Acceptance:** each item read and repaired. **Closed.**
   - **`ad-public-notes`**. **Needs:** none. Curation notes on public pages
     (workshops-guide topology lede, SRC-RA-WORKSHOP remark) and RES-01 duplicate PDF links
     in wiki/prelim/resources/problems.md. **Acceptance:** each item read and repaired.
