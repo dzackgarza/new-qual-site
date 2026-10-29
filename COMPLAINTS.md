@@ -76,18 +76,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair merges both forms and the polynomial-UFD consequence onto `T-JEZZY`, moves the review prompt there, redirects all live references, and deletes `FT-OXN3Y`.
 
-### Duplicate stabilizer card FD-IGEOR
-
-- **Object and need:** `D-WYC7C` and `FD-IGEOR` in `corpus/theory/Algebra`. `D-WYC7C` already defines the stabilizer `$G_x$`; `FD-IGEOR` repeats that definition and adds only prompts plus the proof that `$G_x$` is a subgroup.
-
-- **Observed evidence:** both complete cards use `$G_x=\{g\in G\mid g\cdot x=x\}$`. The canonical action card is the dependency used throughout orbit–stabilizer theory, while the wiki and algebra guide displayed the flashcard as an additional recall unit.
-
-- **Impact and owner:** the duplicated definition splits a basic group-action concept, while the subgroup fact belongs naturally on the canonical card.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the two prompts and subgroup proposition/proof to `D-WYC7C`, removes duplicate reader-facing references, and deletes `FD-IGEOR`.
-
 ### Duplicate subset-centralizer card FD-SSR6N
 
 - **Object and need:** `D-PX64W` and `FD-SSR6N` in `corpus/theory/Algebra`. `D-PX64W` already defines the centralizer of an arbitrary subset; `FD-SSR6N` repeats the same condition with notation `$Z_G(S)$`.

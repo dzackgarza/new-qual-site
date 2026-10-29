@@ -3,6 +3,9 @@ schema: qual/card@1
 id: D-WYC7C
 kind: definition
 title: Group actions, orbits, and stabilizers
+prompts:
+- For a group action $G \actson X$, what is $G_x$?
+- What is the stabilizer of a point under a group action?
 classification:
   areas:
   - algebra
@@ -38,6 +41,8 @@ Let $G$ act on $X$.
 (b) The action is [[D-KGGWK|transitive]] if and only if it has exactly one orbit, provided $X\neq\emptyset$.
 
 (c) The kernel of the associated homomorphism $G\to\Sym(X)$, $g\mapsto(x\mapsto g\cdot x)$, is $\bigcap_{x\in X}G_x$.
+
+(d) For every $x\in X$, the stabilizer $G_x$ is a [[D-IQ4OX|subgroup]] of $G$.
 :::
 
 ::: {.proof}
@@ -48,4 +53,6 @@ Its equivalence classes are the orbits.
 (b) The action is transitive exactly when every two points of $X$ are related by $\sim$, that is, when the nonempty set $X$ is a single equivalence class.
 
 (c) An element $g$ acts as the identity permutation if and only if $g\cdot x=x$ for every $x\in X$, that is, $g\in G_x$ for every $x$.
+
+(d) $e\in G_x$ because $e\cdot x=x$; if $g,h\in G_x$, then $(gh)\cdot x=g\cdot(h\cdot x)=x$; and if $g\in G_x$, then $g^{-1}\cdot x=g^{-1}\cdot(g\cdot x)=(g^{-1}g)\cdot x=x$.
 :::
