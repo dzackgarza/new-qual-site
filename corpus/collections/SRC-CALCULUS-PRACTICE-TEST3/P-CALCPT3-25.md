@@ -5,7 +5,7 @@ kind: problem
 title: "Regularity of a function with $f(x)-f(y)\\le K|x-y|$ on $[0,1]$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Continuity, Differentiation]
 relations: []
 review: draft
 audit:
