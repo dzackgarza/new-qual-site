@@ -24,7 +24,7 @@ Galois theory exercises with solutions: [chapter 4](https://feog.github.io/chap4
 
 - For each root $r_i$, $[\QQ(r_i):\QQ]$ divides $[\SF(f):\QQ]$.
 
-[[PR-LXSGE]]
+[[T-AILFB]]
 
 ## Transitive subgroups of $S_n$
 

@@ -125,7 +125,7 @@ Chapter: [[algebra/linear-algebra/index|Linear algebra]].
 
 [[T-CF6S3]]
 
-[[PR-LXSGE]]
+[[T-AILFB]]
 
 [[PR-XDWOP]]
 

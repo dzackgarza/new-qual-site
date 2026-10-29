@@ -36,3 +36,7 @@ These facts give a procedure for computing $G$.
 Check that $f$ is irreducible and separable, compute $[L:k]=\abs G$, and list the transitive subgroups of $S_n$ of that order.
 The remaining candidates are separated by the cycle types that occur in $G$, read off from factorizations of $f$ modulo primes when $k=\QQ$ ([[PR-XDWOP]]), or, for cubics, by the [[D-W3DSO|discriminant]] ([[PR-XPDHE]]).
 :::
+
+::: {.remark title="Variations"}
+Without separability, let $f$ be irreducible with $m$ distinct roots $\alpha_1,\ldots,\alpha_m$ in a splitting field $\SF(f)$. Then $\Gal(\SF(f)/k)$ still acts faithfully and transitively on $\theset{\alpha_1,\ldots,\alpha_m}$, so it is isomorphic to a transitive subgroup of $S_m$: the proof of (b) applies unchanged, with $n$ replaced by $m$. Only (a) and the divisibility $n\divides\abs G$ use separability.
+:::
