@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $G$ be a [[D-T2NZ4|simple]] group and $H < G$ a proper subgroup of finite [[D-VJGH5|index]] $[G:H] = n$.
+Let $G$ be a [[FD-2UWAQ|simple]] group and $H < G$ a proper subgroup of finite [[D-VJGH5|index]] $[G:H] = n$.
 Then there is an injective group homomorphism $\phi\colon G \injects S_n$.
 :::
 
