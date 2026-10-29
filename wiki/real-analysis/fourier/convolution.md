@@ -34,5 +34,3 @@ With $\phi\in C_c^\infty$, $\int\phi=1$, and $\phi_t(x)\coloneqq t^{-n}\phi(x/t)
 [[T-3UXK7]]
 
 [[PR-PRSKG]]
-
-[[PR-A7UFG]]
