@@ -26,50 +26,62 @@ Prove that $f$ is uniformly continuous on $\mathbb{R}$.
 :::
 
 ::: {.solution}
-Fix $\varepsilon>0$. Since
-\[
-f(x)\longrightarrow0
-\qquad(x\to\pm\infty),
-\]
-choose $M>0$ such that
-\[
-|x|\ge M\implies |f(x)|<\varepsilon/2.
-\]
+Fix $\varepsilon>0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #tail}
 
-By Heine--Cantor, $f$ is uniformly continuous on the compact interval
-\[
-[-M-1,M+1].
-\]
-Hence there is $\delta_0>0$ such that for $x,y$ in this interval,
-\[
-|x-y|<\delta_0\implies |f(x)-f(y)|<\varepsilon.
-\]
-Set
-\[
-\delta=\min\{1,\delta_0\}.
-\]
+There is $M>0$ such that $\abs{f(x)}<\varepsilon/2$ whenever $\abs{x}\ge M$.
+
+::: pf-proof
+
+This is the hypothesis $\lim_{x\to\pm\infty}f(x)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #compact}
+
+There is $\delta_0>0$ such that $\abs{f(x)-f(y)}<\varepsilon$ whenever $x,y\in[-M-1,M+1]$ and $\abs{x-y}<\delta_0$.
+
+::: pf-proof
+
+By the Heine--Cantor theorem, $f$ is uniformly continuous on the compact interval $[-M-1,M+1]$.
+
+:::
 
 :::
 
 ::: pf-step
 
-Let $|x-y|<\delta$.
+With $\delta\coloneqq\min\{1,\delta_0\}$, every $x,y\in\RR$ with $\abs{x-y}<\delta$ satisfy $\abs{f(x)-f(y)}<\varepsilon$; hence $f$ is uniformly continuous on $\RR$.
 
 ::: pf-proof
 
 ::: pf-step
 
-If both $x,y\in[-M-1,M+1]$, the compact-interval estimate applies.
+If $x,y\in[-M-1,M+1]$, then $\abs{f(x)-f(y)}<\varepsilon$.
+
+::: pf-proof
+
+This is step [](#compact){.pf-ref}, since $\delta\le\delta_0$.
+
+:::
 
 :::
 
 ::: pf-step
 
-Otherwise, suppose for example $x>M+1$. Since $|x-y|<1$, one has $y>M$, so
+If $x$ or $y$ lies outside $[-M-1,M+1]$, then $\abs{f(x)-f(y)}<\varepsilon$.
+
+::: pf-proof
+
+By symmetry suppose $\abs{x}>M+1$. Since $\abs{x-y}<1$, we have $\abs{y}>M$. Step [](#tail){.pf-ref} gives
+$$
+\abs{f(x)-f(y)}\le\abs{f(x)}+\abs{f(y)}<\varepsilon.
+$$
 
 :::
 
@@ -79,10 +91,6 @@ Otherwise, suppose for example $x>M+1$. Since $|x-y|<1$, one has $y>M$, so
 
 :::
 
-\[
-|f(x)-f(y)|\le |f(x)|+|f(y)|<\varepsilon.
-\]
-The case $x<-M-1$ is identical, and the same argument applies if $y$ is the point outside the compact interval.
+:::
 
-Thus the same $\delta$ works for all $x,y\in\mathbb R$, so $f$ is uniformly continuous.
 :::
