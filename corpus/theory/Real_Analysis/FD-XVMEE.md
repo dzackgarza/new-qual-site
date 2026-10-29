@@ -3,17 +3,18 @@ schema: qual/card@1
 id: FD-XVMEE
 kind: definition
 title: Equicontinuous and uniformly equicontinuous families
+slogan: 'Equicontinuity uses one local delta for the whole family; uniform equicontinuity uses one delta everywhere.'
 prompts:
 - What must hold uniformly over the family for $\mcf$ to be equicontinuous at $x_0$?
+- What does it mean for a family $\mcf$ to be equicontinuous at $x_0$?
+- What is equicontinuity? Uniform equicontinuity?
 classification:
   areas:
   - real-analysis
   topics:
   - Equicontinuity
   - Metric Spaces
-relations:
-- kind: variant-of
-  target: FD-TGBYP
+relations: []
 review: draft
 ---
 

@@ -312,7 +312,6 @@ corpus/theory/Real_Analysis/FD-Q7EEG.md
 corpus/theory/Real_Analysis/FD-SMWLB.md
 corpus/theory/Real_Analysis/FD-ST7TD.md
 corpus/theory/Real_Analysis/FD-T7SN6.md
-corpus/theory/Real_Analysis/FD-TGBYP.md
 corpus/theory/Real_Analysis/FD-V5ISD.md
 corpus/theory/Real_Analysis/FD-WHWSQ.md
 corpus/theory/Real_Analysis/FD-WN55Z.md
@@ -337,7 +336,6 @@ corpus/theory/Real_Analysis/FF-4WIMZ.md
 corpus/theory/Real_Analysis/FF-4XBYG.md
 corpus/theory/Real_Analysis/FF-54Z44.md
 corpus/theory/Real_Analysis/FF-5EBCJ.md
-corpus/theory/Real_Analysis/FF-63IWC.md
 corpus/theory/Real_Analysis/FF-7JOOD.md
 corpus/theory/Real_Analysis/FF-7NXLO.md
 corpus/theory/Real_Analysis/FF-ATMHV.md
