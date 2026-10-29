@@ -36,7 +36,6 @@ Then the action of $G$ is properly discontinuous, and $X/G$ is locally compact H
 :::
 
 ::: {.solution}
-**Goal:** Prove that a free, properly discontinuous group action with compact interference on a locally compact Hausdorff space $X$ yields a properly discontinuous action and a locally compact Hausdorff quotient $X/G$.
 
 ::: pf
 
