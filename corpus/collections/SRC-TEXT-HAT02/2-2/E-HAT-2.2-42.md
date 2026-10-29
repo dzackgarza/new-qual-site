@@ -26,8 +26,6 @@ What goes wrong when $m = 2$?
 :::
 
 ::: {.solution}
-**Goal.** For a finite connected graph $X$ with $H_1(X;\ZZ) \cong \ZZ^n$ ($n > 1$) and no vertex of valence $1$, show a finite group $G$ of homeomorphisms of $X$ acts faithfully on $H_1(X;\ZZ)$, and analyze the $\ZZ_m$ and $m = 2$ cases.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -103,7 +101,7 @@ combine step [](#s2-2){.pf-ref} with step [](#s1){.pf-ref}.
 :::
 
 ::: {.pf-step #s3}
-Failure at $m = 2$.
+For $m = 2$ the map $G \to GL_n(\ZZ_2)$ can fail to be injective.
 
 ::: pf-proof
 
@@ -136,10 +134,6 @@ Step [](#s3-2){.pf-ref} gives a nontrivial element in the kernel.
 
 :::
 
-:::
-
-::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} are the three requested statements.
 :::
 
 :::
