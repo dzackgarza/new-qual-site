@@ -24,7 +24,7 @@ Show that a closed subset of a Hausdorff space need not be compact.
 
 ::: {.pf-step #s1}
 
-Take $X=\mathbb R$ with its usual topology and $A=\mathbb R$.
+Take $X=\RR$ with its usual topology and $A=\RR$.
 
 ::: pf-proof
 
