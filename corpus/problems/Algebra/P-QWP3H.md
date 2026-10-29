@@ -24,64 +24,35 @@ Let $k$ be a field.
 ::: pf
 
 ::: pf-step
-
-Prime ideal example.
+The ideal $(x)\subset k[x,y]$ is prime and not maximal, and its variety is the $y$-axis $V(x)=\{(0,b):b\in k\}$.
 
 ::: pf-proof
-
-The ideal
-\[
-(x)\subset k[x,y]
-\]
-is prime because
-\[
-k[x,y]/(x)\cong k[y]
-\]
-is an integral domain. Its affine variety is the $y$-axis
-\[
-V(x)=\{(0,b):b\in k\}.
-\]
-
+$k[x,y]/(x)\cong k[y]$ is an integral domain and not a field, and a point $(a,b)$ is a zero of $x$ exactly when $a=0$.
 :::
 
 :::
 
 ::: pf-step
-
-Maximal ideals over an algebraically closed field.
+For every $(a,b)\in k^2$, the ideal $\mathfrak m_{a,b}\coloneqq(x-a,y-b)$ is maximal, and its variety is the point $\{(a,b)\}$. If $k$ is algebraically closed, these are all the maximal ideals of $k[x,y]$.
 
 ::: pf-proof
-
-Assume now that $k$ is algebraically closed. For every $(a,b)\in k^2$,
-\[
-\mathfrak m_{a,b}=(x-a,y-b)
-\]
-is maximal because
-\[
-k[x,y]/\mathfrak m_{a,b}\cong k.
-\]
-The weak Nullstellensatz says that these are all maximal ideals of $k[x,y]$.
-
+Evaluation at $(a,b)$ induces $k[x,y]/\mathfrak m_{a,b}\cong k$, a field. The only common zero of $x-a$ and $y-b$ is $(a,b)$. The last sentence is the weak Nullstellensatz.
 :::
 
 :::
 
 ::: pf-step
-
-Strong Nullstellensatz.
+(Nullstellensatz.) Let $k$ be algebraically closed. Every maximal ideal of $k[x_1,\ldots,x_n]$ has the form $(x_1-a_1,\ldots,x_n-a_n)$ (weak form), and for every ideal $I\subseteq k[x_1,\ldots,x_n]$,
+$$
+I(V(I))=\sqrt I
+$$
+(strong form): a polynomial vanishes on every common zero of $I$ exactly when some power of it lies in $I$.
 
 ::: pf-proof
-
-For any ideal $I\subseteq k[x_1,\dots,x_n]$ with $k$ algebraically closed,
-\[
-I(V(I))=\sqrt I.
-\]
-Equivalently, a polynomial vanishes on every common zero of $I$ exactly when some power of it lies in $I$.
-
+This is Hilbert's Nullstellensatz.
 :::
 
 :::
 
 :::
-
 :::
