@@ -10,9 +10,6 @@ order: 50
 - [[SRC-UCSD-ALG-REVIEW-RINGS-MODULES|UCSD ring and module theory qual review]].
 
 - [McNulty's ring-theory qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/rng.pdf)
-
-- [[SRC-UCSD-ALG-REVIEW-FIELDS|UCSD field theory qual review]].
-
 ## Problems
 
 - [Ring-theory qualifying-exam problems](attachments/Ring_Theory_Qual_Problems.pdf)
