@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6TMP7
 kind: problem
-title: Galois group of $x^2-2$ is $\mathbb{Z}/2\mathbb{Z}$
+title: Galois group of $x^2-2$ is $\ZZ/2\ZZ$
 classification:
   areas:
   - algebra
@@ -11,14 +11,19 @@ classification:
   - Splitting Fields
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Compute the Galois group of $x^2-2$." with no base field; the statement now names the base field $\QQ$ that the solution uses.'
 ---
 
 ::: {.exercise}
-Compute the Galois group of $x^2-2$.
+Compute the Galois group of $x^2-2$ over $\QQ$.
 :::
 
 ::: {.solution}
 Over $\QQ$, the roots of $x^2-2$ are $\pm\sqrt2$, and $\sqrt2\notin\QQ$, so $x^2-2$ is irreducible and its splitting field is $\QQ(\sqrt2)$, of degree $2$ over $\QQ$.
 A group of order $2$ is cyclic, so
-$$\Gal(\QQ(\sqrt2)/\QQ)=\{\mathrm{id},\ \sqrt2\mapsto-\sqrt2\}\cong\boxed{\ZZ/2\ZZ}.$$
+$$\Gal(\QQ(\sqrt2)/\QQ)=\{\operatorname{id},\ \sqrt2\mapsto-\sqrt2\}\cong\boxed{\ZZ/2\ZZ}.$$
 :::
