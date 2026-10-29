@@ -19,21 +19,32 @@ Show that if $f$ has a primitive $F$ on $\Omega$ then $\displaystyle\int_\gamma 
 :::
 
 ::: {.solution}
-Let $F$ be a primitive of $f$, so $\dd{}{z}F = f$.
-Then
-\[
-\int_\gamma f(z) \dz = F(\gamma(1)) - F(\gamma(0)) = F(p) - F(p) = 0
-.\]
-More explicitly, let $z(t): [a, b]\to \CC$ be any parameterization of $\gamma$, then
-\[
-\int_\gamma f(z) \dz 
-&= \int_a^b f(z(t)) z'(t)\dt \\
-&= \int_a^b F'(z(t))z'(t) \dt \\
-&= \int_a^b \tilde F'(t)\dt && \text{ where } \tilde F(t) \definedas F(z(t)) \text{ by the chain rule} \\
-&= F(z(b)) - F(z(a)) && \text{ by FTC} \\
-&= 0
-,\]
-since $z(b) = z(a)$ for a closed curve.
+
+Let $z:[a,b]\to\Omega$ be a piecewise-smooth parametrization of $\gamma$, so $z(a)=z(b)$, and let $F'=f$ on $\Omega$.
+
+::: pf
+
+::: {.pf-step #chain-rule}
+$\frac{d}{dt}F(z(t)) = f(z(t))\,z'(t)$ at every $t$ where $z$ is differentiable.
+
+::: pf-proof
+This is the chain rule, since $F$ is complex differentiable with $F'=f$.
+:::
 
 :::
 
+::: pf-step
+$\int_\gamma f = 0$.
+
+::: pf-proof
+By step [](#chain-rule){.pf-ref} and the fundamental theorem of calculus on each smooth piece,
+$$
+\int_\gamma f(z)\dz = \int_a^b f(z(t))\,z'(t)\dt = F(z(b))-F(z(a)) = 0.
+$$
+:::
+
+:::
+
+:::
+
+:::
