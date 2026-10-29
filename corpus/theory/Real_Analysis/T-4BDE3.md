@@ -28,18 +28,8 @@ $$
 $$
 :::
 
-::: {.proof}
-Fix $N\geq 1$ and put $s_N\coloneqq\sum_{k=1}^{N}\inner{x}{u_k}u_k$.
-By orthonormality, $\inner{x}{s_N} = \inner{s_N}{s_N} = \sum_{k=1}^{N}\abs{\inner{x}{u_k}}^2$, so
-$$
-0\leq\norm{x - s_N}^2 = \norm{x}^2 - 2\operatorname{Re}\inner{x}{s_N} + \norm{s_N}^2 = \norm{x}^2 - \sum_{k=1}^{N}\abs{\inner{x}{u_k}}^2.
-$$
-Letting $N\to\infty$ gives the inequality.
-:::
-
 ::: {.remark title="Variations"}
 The statement holds in every inner product space, complete or not.
-The proof above applies unchanged, since it uses only the inner product and orthonormality.
 :::
 
 ::: {.remark}
