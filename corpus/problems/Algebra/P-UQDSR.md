@@ -17,27 +17,52 @@ Show directly that every $k$-cycle is a product of transpositions, and determine
 :::
 
 ::: {.solution}
-For a $k$-cycle
-\[
-\sigma=(a_1\ a_2\ \cdots\ a_k),
-\]
-one has
-\[
-\sigma
-=(a_1\ a_k)(a_1\ a_{k-1})\cdots(a_1\ a_2),
-\]
-where products are composed from right to left. Thus every $k$-cycle is a product of $k-1$ transpositions.
+Let $\sigma=(a_1\ a_2\ \cdots\ a_k)$ be a $k$-cycle in $S_n$. Products are composed from right to left, and the number of cycles of a permutation counts fixed points as cycles of length $1$.
 
-This number is minimal. Multiplying a permutation by a transposition changes the number of cycles in its disjoint-cycle decomposition, counting fixed points, by exactly $1$: it either joins two cycles or splits one cycle into two.
+::: pf
 
-The identity on the support $\{a_1,\ldots,a_k\}$ has $k$ cycles, while a $k$-cycle has one cycle. Therefore at least
-\[
-k-1
-\]
-transpositions are required to pass from the identity to a $k$-cycle.
+::: {.pf-step #upper}
 
-Hence the minimum number is exactly
-\[
-\boxed{k-1}.
-\]
+$\sigma=(a_1\ a_k)(a_1\ a_{k-1})\cdots(a_1\ a_2)$, a product of $k-1$ transpositions.
+
+::: pf-proof
+
+For $1\le i<k$, the transpositions to the right of $(a_1\ a_{i+1})$ do not move $a_i$ unless $i=1$, and they send $a_1$ to $a_2$; in both cases the product sends $a_i$ to $a_{i+1}$. The point $a_k$ is moved only by the last factor $(a_1\ a_k)$, which sends it to $a_1$. Every other point is fixed.
+
+:::
+
+:::
+
+::: {.pf-step #change}
+
+Multiplying a permutation by a transposition changes its number of cycles by exactly $1$.
+
+::: pf-proof
+
+If the two points of the transposition lie in different cycles, the product joins those cycles; if they lie in the same cycle, the product splits it into two. The other cycles are unchanged.
+
+:::
+
+:::
+
+::: {.pf-step #lower}
+
+At least $k-1$ transpositions are needed.
+
+::: pf-proof
+
+The identity of $S_n$ has $n$ cycles and $\sigma$ has $n-k+1$. By step [](#change){.pf-ref}, a product of $t$ transpositions has at least $n-t$ cycles, so $\sigma$ needs $t\ge k-1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#upper){.pf-ref} and [](#lower){.pf-ref}, the minimum number of transpositions is $\boxed{k-1}$.
+
+:::
+
+:::
+
 :::
