@@ -23,14 +23,11 @@ Show that $M$ is homeomorphic to the space obtained by deleting an open disc fro
 :::
 
 ::: {.solution}
-**Goal:** Prove that deleting an open disc from the real projective plane $\RP^2$ yields a space homeomorphic to the Möbius band $M$.
-
 ::: pf
 
 ::: pf-step
 
-Quotient model of the real projective plane:
-    *Proof:*
+The real projective plane is a quotient of the closed disc.
 
 ::: pf-proof
 
@@ -51,10 +48,9 @@ Let $q: D^2 \to \RP^2$ be the canonical quotient map.
 
 :::
 
-::: pf-step
+::: {.pf-step #y-is-annulus-quotient}
 
-Deleting an open disc from $\RP^2$:
-    *Proof:*
+Deleting an open disc $U$ from $\RP^2$ leaves the quotient $A/\sim$ of a closed annulus $A$.
 
 ::: pf-proof
 
@@ -80,10 +76,9 @@ The punctured space $Y = \RP^2 \setminus U$ is homeomorphic to the quotient of t
 
 :::
 
-::: pf-step
+::: {.pf-step #annulus-quotient-is-mobius}
 
-Homeomorphism between the identified annulus $A/\sim$ and the Möbius strip $M$:
-    *Proof:*
+The identified annulus $A/\sim$ is homeomorphic to the Möbius strip $M$.
 
 ::: pf-proof
 
@@ -136,11 +131,16 @@ Hence $Y = A/\sim$ is homeomorphic to $M$.
 
 ::: pf-step
 
-Conclusion:
+The space obtained by deleting an open disc from $\RP^2$ is homeomorphic to the Möbius band $M$.
+
+::: pf-proof
+
+By step [](#y-is-annulus-quotient){.pf-ref}, $\RP^2 \setminus U \cong A/\sim$, and by step [](#annulus-quotient-is-mobius){.pf-ref}, $A/\sim \cong M$.
 
 :::
 
 :::
 
-    The space obtained by deleting an open disc from $\RP^2$ is homeomorphic to the Möbius band $M$. Q.E.D.
+:::
+
 :::
