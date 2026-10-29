@@ -16,23 +16,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "Show that any disjoint intervals is countable."; a family of disjoint singletons is uncountable, so the statement requires intervals with nonempty interior, as the title does.
 ---
 
 ::: {.exercise}
-- Show that any disjoint intervals is countable.
+Show that any family of pairwise disjoint intervals in $\RR$, each with nonempty interior, is countable.
 :::
 
 ::: {.solution}
+Let $\mathcal I$ be such a family.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-A family $\mathcal I$ of pairwise disjoint intervals in $\RR$, each with nonempty interior, is at most countable.
-
-::: pf-proof
-
-::: {.pf-step #s1-1}
+::: {.pf-step #rational}
 
 Each $I \in \mathcal I$ contains a rational number $q_I$.
 
@@ -44,46 +43,22 @@ $I$ contains a nonempty open interval, and $\QQ$ is dense in $\RR$.
 
 :::
 
-::: {.pf-step #s1-2}
+::: pf-step
 
-The map $I \mapsto q_I$ is injective.
-
-::: pf-proof
-
-If $I \neq J$, then $I \cap J = \emptyset$, so $q_I \neq q_J$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give an injection of $\mathcal I$ into the countable set $\QQ$.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The family of singletons $\theset{\theset{x} : x \in \RR}$ is an uncountable family of pairwise disjoint degenerate intervals $[x,x]$.
+The map $\mathcal I \to \QQ$, $I \mapsto q_I$, is injective, so $\mathcal I$ is at most countable.
 
 ::: pf-proof
 
-Distinct singletons are disjoint, and $\RR$ is uncountable.
+The map is defined by step [](#rational){.pf-ref}. If $I \neq J$, then $I \cap J = \emptyset$, so $q_I \neq q_J$. The set $\QQ$ is countable.
 
 :::
 
 :::
 
-::: pf-qed
-
-Step [](#s1){.pf-ref} is the statement for intervals with nonempty interior, in particular for open intervals; step [](#s2){.pf-ref} shows that it fails for degenerate intervals.
-
 :::
 
 :::
 
+::: {.remark}
+The hypothesis of nonempty interior is needed: the singletons $\theset{x} = [x,x]$, $x \in \RR$, form an uncountable family of pairwise disjoint degenerate intervals.
 :::
