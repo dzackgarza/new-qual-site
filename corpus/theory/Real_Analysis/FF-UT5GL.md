@@ -5,7 +5,7 @@ kind: fact
 title: Riesz representation theorem for Hilbert spaces
 slogan: 'Every continuous linear functional on a Hilbert space is inner product with a unique vector of the same norm.'
 prompts:
-- What is the Riesz Representation theorem?
+- What is the Riesz representation theorem for Hilbert spaces?
 classification:
   areas:
   - real-analysis
