@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO38
 kind: problem
-title: Sylow 3-subgroups from S3 through S9
+title: Sylow $3$-subgroups of $S_3$ through $S_9$
 classification:
   areas: [algebra]
   topics: [Sylow Theory, Permutation Groups]
