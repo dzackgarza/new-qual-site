@@ -35,7 +35,7 @@ This follows from the cellular chain complex of the wedge, or from Mayer--Vietor
 
 ::: pf-step
 
-The torus has $H_0=H_2=\mathbb Z$ and $H_1=\mathbb Z^2$, while $S^1$ has $H_0=H_1=\mathbb Z$.
+The torus has $H_0=H_2=\ZZ$ and $H_1=\ZZ^2$, while $S^1$ has $H_0=H_1=\ZZ$.
 
 ::: pf-proof
 
@@ -48,11 +48,11 @@ These are the standard homology computations.
 ::: pf-step
 
 Therefore
-$$\boxed{H_k((S^1\times S^1)\vee S^1;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,2,\\\mathbb Z^3,&k=1,\\0,&\text{otherwise.}\end{cases}}$$
+$$\boxed{H_k((S^1\times S^1)\vee S^1;\ZZ)\cong\begin{cases}\ZZ,&k=0,2,\\\ZZ^3,&k=1,\\0,&\text{otherwise.}\end{cases}}$$
 
 ::: pf-proof
 
-Add the reduced homology groups in positive degrees and retain one copy of $\mathbb Z$ in degree zero because the wedge is connected.
+Add the reduced homology groups in positive degrees and retain one copy of $\ZZ$ in degree zero because the wedge is connected.
 
 :::
 
