@@ -16,32 +16,32 @@ review: draft
 
 ::: {.problem}
 Let $G$ act by conjugation on its set of subgroups. Show that the number of subgroups conjugate to $H\le G$ is
-\[
+$$
 [G:N_G(H)].
-\]
+$$
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 \mathcal O(H)=\{gHg^{-1}:g\in G\}
-\]
+$$
 be the conjugacy orbit of $H$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #stab}
 
 The stabilizer of $H$ is its normalizer.
 
 ::: pf-proof
 
 By definition,
-\[
-\operatorname{Stab}_G(H)
+$$
+\Stab_G(H)
 =\{g\in G:gHg^{-1}=H\}
 =N_G(H).
-\]
+$$
 
 :::
 
@@ -49,19 +49,18 @@ By definition,
 
 ::: pf-step
 
-Apply orbit-stabilizer.
+$\abs{\mathcal O(H)}=[G:N_G(H)]$.
 
 ::: pf-proof
 
-Orbit-stabilizer gives a bijection
-\[
+By step [](#stab){.pf-ref} and the orbit-stabilizer theorem, there is a bijection
+$$
 G/N_G(H)\longrightarrow \mathcal O(H),\qquad gN_G(H)\longmapsto gHg^{-1}.
-\]
+$$
 Hence
-\[
-|\mathcal O(H)|=[G:N_G(H)].
-\]
-Thus the number of conjugates of $H$ is the index of its normalizer.
+$$
+\abs{\mathcal O(H)}=[G:N_G(H)].
+$$
 
 :::
 
