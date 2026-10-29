@@ -1,5 +1,6 @@
 ---
 order: 100
+title: Complex arithmetic
 ---
 
 # Complex arithmetic
@@ -59,19 +60,19 @@ So a sum or difference of two exponentials is a unimodular complex scalar times 
 Put $\ell \coloneqq \frac{a+b}{2}$ and $k \coloneqq \frac{a-b}{2}$, so that $a - \ell = k$ and $b - \ell = -k$.
 Then
 $$
-e^{aiw} \pm e^{biw} = e^{\ell iw} \qty{ e^{(a-\ell)iw} \pm e^{(b - \ell)iw} } = e^{\ell i w} \qty{ e^{kiw} \pm e^{-kiw}},
+e^{ai\omega} \pm e^{bi\omega} = e^{\ell i\omega} \qty{ e^{(a-\ell)i\omega} \pm e^{(b - \ell)i\omega} } = e^{\ell i\omega} \qty{ e^{ki\omega} \pm e^{-ki\omega}},
 $$
-which is $e^{\ell i w}\cdot 2\cos(kw)$ for the sum and $e^{\ell i w}\cdot 2i\sin(kw)$ for the difference.
+which is $e^{\ell i\omega}\cdot 2\cos(k\omega)$ for the sum and $e^{\ell i\omega}\cdot 2i\sin(k\omega)$ for the difference.
 :::
 
 ::: {.example}
-With $w \coloneqq \pi/2$, $a=-1$, $b=-3$,
+With $\omega \coloneqq \pi/2$, $a=-1$, $b=-3$,
 $$
 \begin{aligned}
 e^{-i\pi / 2}+ e^{-3i\pi / 2}
-&= e^{-iw} + e^{-3iw} \\
-&= e^{-2iw} \qty{e^{iw} + e^{-iw}}\\
-&= e^{-2iw}\cdot 2\cos(w) \\
+&= e^{-i\omega} + e^{-3i\omega} \\
+&= e^{-2i\omega} \qty{e^{i\omega} + e^{-i\omega}}\\
+&= e^{-2i\omega}\cdot 2\cos(\omega) \\
 &= e^{-i\pi}\cdot 2\cos\qty{\pi / 2} \\
 &= 0.
 \end{aligned}
@@ -144,7 +145,7 @@ In polar coordinates the inversion $z\mapsto 1/z$ is $Re^{i\theta}\mapsto {1\ove
 
 :::
 
-## Exercises
+## Further problems
 
 [[E-X4MBB]]
 
