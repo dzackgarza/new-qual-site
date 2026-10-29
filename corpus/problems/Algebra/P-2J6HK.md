@@ -32,11 +32,6 @@ The group is abelian because $G/Z(G)$ cannot be a nontrivial cyclic group.
 If there is no element of order $p^2$, take $a\ne1$, take $b\notin\generators{a}$, and recognize $G$ as the internal direct product $\generators{a}\times\generators{b}$.
 :::
 
-::: {.remark title="Variations"}
-Asked only to prove that every group of order $p^2$ is abelian, stop at step [](#abelian){.pf-ref}.
-Asked only to classify the groups of order $p^2$, the whole proof applies unchanged.
-:::
-
 ::: {.solution}
 Let $G$ be a group with $\abs G=p^2$, $p$ prime.
 
@@ -96,4 +91,9 @@ The two groups are not isomorphic, since only $C_{p^2}$ has an element of order 
 
 :::
 
+:::
+
+::: {.remark title="Variations"}
+Asked only to prove that every group of order $p^2$ is abelian, stop at step [](#abelian){.pf-ref}.
+Asked only to classify the groups of order $p^2$, the whole proof applies unchanged.
 :::
