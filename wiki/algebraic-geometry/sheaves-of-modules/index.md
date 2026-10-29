@@ -10,7 +10,7 @@ topics:
 
 # Sheaves of modules
 
-Quasicoherence, coherence, twisting sheaves, and line bundles.
+This chapter covers quasicoherent and coherent sheaves, twisting sheaves, and line bundles.
 
 Natural sheaves such as the sheaf of differentials are tested for quasicoherence on affine charts, while resolutions by twists reduce many coherent-sheaf cohomology computations on projective space to $H^*(\PP^n,\OO(d))$.
 
