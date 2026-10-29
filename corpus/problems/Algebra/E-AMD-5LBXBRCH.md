@@ -26,15 +26,15 @@ Show that a finite group $G$ is solvable if and only if all of its composition f
 :::
 
 ::: {.solution}
-Let \(G\) be finite.
+Let $G$ be finite.
 
-Suppose first that \(G\) is solvable. Every quotient and subgroup of a solvable group is solvable, so every composition factor of \(G\) is a finite simple solvable group. If \(S\) is simple and solvable, then its commutator subgroup \([S,S]\) is a normal subgroup of \(S\). It cannot equal \(S\), since then the derived series would never descend, so \([S,S]=1\). Thus \(S\) is abelian. A finite simple abelian group is cyclic of prime order.
+Suppose first that $G$ is solvable. Every quotient and subgroup of a solvable group is solvable, so every composition factor of $G$ is a finite simple solvable group. If $S$ is simple and solvable, then its commutator subgroup $[S,S]$ is a normal subgroup of $S$. It cannot equal $S$, since then the derived series would never descend, so $[S,S]=1$. Thus $S$ is abelian. A finite simple abelian group is cyclic of prime order.
 
-Conversely, suppose every composition factor of \(G\) is cyclic of prime order. A composition series
-\[
+Conversely, suppose every composition factor of $G$ is cyclic of prime order. A composition series
+$$
 1=G_0\trianglelefteq G_1\trianglelefteq\cdots\trianglelefteq G_r=G
-\]
-then has abelian successive quotients \(G_{i+1}/G_i\). Hence it is a subnormal series with abelian factors, so \(G\) is solvable.
+$$
+then has abelian successive quotients $G_{i+1}/G_i$. Hence it is a subnormal series with abelian factors, so $G$ is solvable.
 
 Therefore a finite group is solvable exactly when all of its composition factors are cyclic of prime order.
 :::
