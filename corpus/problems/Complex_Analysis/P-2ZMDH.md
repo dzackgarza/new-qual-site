@@ -25,15 +25,15 @@ Suppose that $f$ is an analytic function in the region $D$ which
 contains the point $a$. Let
 $$F(z)= z-a-qf(z),\quad \text{where}~ q \ \text{is a complex parameter}.$$
 
-(1) Let $K$ be a circle with the center at point $a$ such that the closed disc $\bar{K}$ whose boundary is $K$ lies in $D$, and also we assume that $f(z)\not =0$ for $z\in K$.
+(a) Let $K$ be a circle with the center at point $a$ such that the closed disc $\bar{K}$ whose boundary is $K$ lies in $D$, and also we assume that $f(z)\not =0$ for $z\in K$.
 Prove that the function $F$ has one and only one zero $z=w$ on $\bar{K}$ if $\displaystyle{|q|<\min_{z\in K} \frac{|z-a|}{|f(z)|}.}$
 
-(2) Let $G(z)$ be an analytic function on the disk $\bar{K}$. Apply
+(b) Let $G(z)$ be an analytic function on the disk $\bar{K}$. Apply
 the residue theorem to prove that
 $\displaystyle{ \frac{G(w)}{F'(w)}=\frac{1}{2\pi
-i}\int_K \frac{G(z)}{F(z)} dz,}$ where $w$ is the zero from (1).
+i}\int_K \frac{G(z)}{F(z)} dz,}$ where $w$ is the zero from (a).
 
-(3) If $z\in K$, prove that the function
+(c) If $z\in K$, prove that the function
 $\displaystyle{\frac{1}{F(z)}}$ can be represented as a convergent
 series with respect to $q$: $\displaystyle{
 \frac{1}{F(z)}=\sum_{n=0}^{\infty} \frac{(qf(z))^n}{(z-a)^{n+1}}.}$
@@ -55,7 +55,7 @@ This is the hypothesis on $q$ multiplied by $\abs{f(z)}>0$.
 :::
 
 ::: {.pf-step #unique-zero}
-(1) $F$ has exactly one zero $w$ in $\bar K$, it lies in the open disc, and it is simple, so $F'(w)\neq0$.
+(a) $F$ has exactly one zero $w$ in $\bar K$, it lies in the open disc, and it is simple, so $F'(w)\neq0$.
 
 ::: pf-proof
 By step [](#boundary){.pf-ref} and Rouché's theorem, $F=(z-a)-qf(z)$ and $z-a$ have the same number of zeros, counted with multiplicity, in the open disc bounded by $K$.
@@ -66,7 +66,7 @@ By step [](#boundary){.pf-ref}, $\abs{F(z)}\geq R-\abs{qf(z)}>0$ on $K$, so $F$ 
 :::
 
 ::: pf-step
-(2) $\dfrac{G(w)}{F'(w)}=\dfrac1{2\pi i}\displaystyle\int_K\frac{G(z)}{F(z)}\,dz$.
+(b) $\dfrac{G(w)}{F'(w)}=\dfrac1{2\pi i}\displaystyle\int_K\frac{G(z)}{F(z)}\,dz$.
 
 ::: pf-proof
 By step [](#unique-zero){.pf-ref}, $G/F$ is meromorphic on a neighborhood of $\bar K$ whose only pole in $\bar K$ is at most a simple pole at $w$, with $\Res_{z=w}\frac{G}{F}=\frac{G(w)}{F'(w)}$.
@@ -76,7 +76,7 @@ The residue theorem gives the formula.
 :::
 
 ::: pf-step
-(3) For $z\in K$, $\dfrac1{F(z)}=\displaystyle\sum_{n=0}^\infty\frac{(qf(z))^n}{(z-a)^{n+1}}$, and the series converges absolutely.
+(c) For $z\in K$, $\dfrac1{F(z)}=\displaystyle\sum_{n=0}^\infty\frac{(qf(z))^n}{(z-a)^{n+1}}$, and the series converges absolutely.
 
 ::: pf-proof
 By step [](#boundary){.pf-ref}, $\abs{\frac{qf(z)}{z-a}}<1$, so the geometric series gives
