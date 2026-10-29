@@ -19,10 +19,10 @@ audit:
 ---
 
 ::: {.exercise}
-- $\star$: Prove continuity in $L^1$, i.e.
-  \[
-  f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int|f(x+h)-f(x)|=0
-  .\]
+$\star$: Prove continuity in $L^1$, i.e.
+$$
+f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int|f(x+h)-f(x)|=0.
+$$
 :::
 
 ::: {.solution}
@@ -65,7 +65,7 @@ Simple functions $\sum_i c_i\chi_{E_i}$ with $m(E_i)<\infty$ are dense in $L^1(\
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
 For every $f \in L^1(\RR)$ and $\eps > 0$ there is $\delta > 0$ with $\int |f(x+h) - f(x)|\,dx < \eps$ for $|h| < \delta$.
 
@@ -77,12 +77,6 @@ $$
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref} is the definition of $\lim_{h \to 0} \int|f(x+h)-f(x)|\,dx = 0$.
 
 :::
 
