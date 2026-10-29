@@ -26,19 +26,25 @@ Show that the set $\theset{ u_k(j) \definedas \delta_{kj} } \subseteq \ell^2(\ZZ
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-$u_k = (\delta_{kj})_{j \in \ZZ}$ lies in $\ell^2(\ZZ)$ and $\|u_k\|_2 = 1$.
+$\theset{u_k}_{k \in \ZZ}$ is orthonormal: $\norm{u_k}_2 = 1$ for every $k$ and $\inner{u_k}{u_m} = 0$ for $k \neq m$.
 
 ::: pf-proof
 
-Exactly one entry of $u_k$, at $j = k$, is nonzero, and it equals $1$, so $\|u_k\|_2^2 = \sum_j |\delta_{kj}|^2 = 1$.
+::: pf-step
+
+$u_k = (\delta_{kj})_{j \in \ZZ}$ lies in $\ell^2(\ZZ)$ and $\norm{u_k}_2 = 1$.
+
+::: pf-proof
+
+Exactly one entry of $u_k$, at $j = k$, is nonzero, and it equals $1$, so $\norm{u_k}_2^2 = \sum_j \abs{\delta_{kj}}^2 = 1$.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 $\inner{u_k}{u_m} = 0$ for $k \neq m$.
 
@@ -50,9 +56,7 @@ $\inner{u_k}{u_m} = \sum_j \delta_{kj}\delta_{mj}$, and each term vanishes becau
 
 :::
 
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the two conditions for $\theset{u_k}_{k \in \ZZ}$ to be orthonormal.
+:::
 
 :::
 
