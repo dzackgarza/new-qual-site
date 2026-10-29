@@ -5,7 +5,7 @@ kind: problem
 title: "When $\\log(1+\\sin 2\\pi x)$ is not real"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Trigonometry]
 relations: []
 review: draft
 audit:
