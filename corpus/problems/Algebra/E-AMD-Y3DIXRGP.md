@@ -33,9 +33,9 @@ Consider the natural action of $S_3$ on $X=\{1,2,3\}$.
 
 ::: pf-step
 The stabilizer of $1$ is
-\[
+$$
 (S_3)_1=\{1,(23)\}.
-\]
+$$
 
 ::: pf-proof
 A permutation fixes $1$ exactly when it permutes only $2$ and $3$. Hence the only possibilities are the identity and $(23)$.
@@ -48,13 +48,13 @@ This stabilizer is not normal in $S_3$.
 
 ::: pf-proof
 Conjugating its nonidentity element by $(12)$ gives
-\[
+$$
 (12)(23)(12)^{-1}=(13),
-\]
+$$
 and $(13)\notin\{1,(23)\}$. Therefore
-\[
+$$
 (12)(S_3)_1(12)^{-1}\neq(S_3)_1,
-\]
+$$
 so $(S_3)_1$ is not normal in $S_3$.
 :::
 
