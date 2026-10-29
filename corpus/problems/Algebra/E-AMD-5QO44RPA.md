@@ -26,27 +26,46 @@ Show that no group of order $p^2 q^2$ is simple for $p<q$ primes.
 :::
 
 ::: {.solution}
-Let $|G|=p^2q^2$ with primes $p<q$, and write $n_q$ for the number of Sylow $q$-subgroups. Sylow gives
-$$
-n_q\mid p^2,
-\qquad
-n_q\equiv1\pmod q,
-$$
-so $n_q\in\{1,p,p^2\}$. The value $p$ is impossible because $p<q$.
+Let $\abs G=p^2q^2$ with primes $p<q$, and let $n_q$ be the number of Sylow $q$-subgroups.
 
-If $n_q=1$, the Sylow $q$-subgroup is a proper nontrivial normal subgroup, so $G$ is not simple.
+::: pf
 
-It remains to consider $n_q=p^2$. Then
-$$
-p^2\equiv1\pmod q,
-$$
-so $q\mid(p-1)(p+1)$. Since $q>p$, we have $q\nmid p-1$, hence $q\mid p+1$. Thus $q=p+1$, forcing $(p,q)=(2,3)$. Hence $|G|=36$ and $n_3=4$.
+::: {.pf-step #nq-values}
+$n_q=1$ or $n_q=p^2$.
 
-Let $G$ act by conjugation on its four Sylow $3$-subgroups. This gives a homomorphism
-$$
-\varphi:G\to S_4.
-$$
-The action is nontrivial because it is transitive on a set of size $4$, so $\ker\varphi\ne G$. It is also not faithful, because $|G|=36>|S_4|=24$, so $\ker\varphi\ne1$. Therefore $\ker\varphi$ is a proper nontrivial normal subgroup of $G$.
+::: pf-proof
+Sylow's theorems give $n_q\mid p^2$ and $n_q\equiv1\pmod q$. The value $n_q=p$ would give $q\mid p-1$, impossible since $0<p-1<q$.
+:::
 
-Thus no group of order $p^2q^2$ with $p<q$ is simple.
+:::
+
+::: pf-step
+If $n_q=1$, then $G$ is not simple.
+
+::: pf-proof
+The unique Sylow $q$-subgroup is normal, nontrivial and proper.
+:::
+
+:::
+
+::: {.pf-step #order-36}
+If $n_q=p^2$, then $(p,q)=(2,3)$, $\abs G=36$ and $n_3=4$.
+
+::: pf-proof
+$p^2\equiv1\pmod q$ gives $q\mid(p-1)(p+1)$. Since $q>p-1>0$ or $p-1=1$, $q\nmid p-1$, so $q\mid p+1$. As $q>p$, this forces $q=p+1$, so $(p,q)=(2,3)$.
+:::
+
+:::
+
+::: pf-step
+If $n_q=p^2$, then $G$ is not simple.
+
+::: pf-proof
+By step [](#order-36){.pf-ref}, $G$ acts by conjugation on its four Sylow $3$-subgroups, giving a homomorphism $\varphi\colon G\to S_4$. The action is transitive on four points, so $\ker\varphi\ne G$, and $\abs G=36>24=\abs{S_4}$, so $\ker\varphi\ne1$. Thus $\ker\varphi$ is a proper nontrivial normal subgroup.
+:::
+
+:::
+
+:::
+
 :::
