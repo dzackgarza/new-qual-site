@@ -12,28 +12,47 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Invert $\sin(z)$ using a geometric series, heeding the warning above.", referring to a warning earlier in the source that the series of sin z has zero constant term; the statement now states that point and asks for the Laurent expansion at 0.'
 ---
 
 ::: {.exercise}
-Invert $\sin(z)$ using a geometric series, heeding the warning above.
+The power series of $\sin(z)$ at $0$ has zero constant term, so it cannot be inverted directly as a power series.
+Invert $\sin(z)$ using a geometric series: find the Laurent expansion of $1/\sin(z)$ at $0$ through the $z^3$ term.
 :::
 
 ::: {.solution}
-Just a computation:
-\[
-{1\over \sin(z)}
-&= {1\over z-{z^3\over 3!} + {z^5\over 5!} - \bigo(z^7) } \\
-&={1\over z\qty{ 1 - {z^2\over 3!} + {z^4 \over 5!} - \bigo(z^6)} } \\
-&= \inverseof{z} \qty{1\over 1 - p(z)}
-\qquad p(z) \definedas {z^2\over 3!} - {z^4\over 5!} + \bigo(z^6) \\
-&= \inverseof{z} \sum_{k\geq 0} p(z)^k \\
-&= \inverseof{z}\qty{ 1 + p(z) + p(z)^2 + \bigo(z^2)^3 } \\
-&= \inverseof{z}\qty{ 1
-\ + \qty{{z^2\over 3!} - {z^4\over 5!} + \bigo(z^6)}
-\ + \qty{{z^2\over 3!} - {z^4\over 5!} + \bigo(z^6)}^2
-\ + \bigo(z^6)} \\
-&= {1\over z}\qty{ 1 + {1\over 3!}z^2 + \qty{\qty{1\over 3!}^2 - {1\over 5!} }z^4 + \bigo(z^6) }\\
-&= {1\over z} + {1\over 6}z + {7\over 360}z^3 + \bigo(z^5)
-.\]
+Write $\sin z = z\qty(1 - p(z))$ with $p(z) \coloneqq \frac{z^2}{3!} - \frac{z^4}{5!} + \bigo(z^6)$.
+
+::: pf
+
+::: {.pf-step #geom}
+
+$\dfrac{1}{1 - p(z)} = 1 + \dfrac{1}{6}z^2 + \dfrac{7}{360}z^4 + \bigo(z^6)$ near $0$.
+
+::: pf-proof
+
+Since $p(z) = \bigo(z^2)$, $\abs{p(z)} < 1$ near $0$ and the geometric series gives $\frac{1}{1-p} = 1 + p + p^2 + \bigo(z^6)$. Here $p^2 = \frac{z^4}{36} + \bigo(z^6)$, so the coefficient of $z^4$ is $-\frac{1}{120} + \frac{1}{36} = \frac{-3 + 10}{360} = \frac{7}{360}$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\dfrac{1}{\sin z} = \boxed{\dfrac{1}{z} + \dfrac{1}{6}z + \dfrac{7}{360}z^3 + \bigo(z^5)}$.
+
+::: pf-proof
+
+Divide step [](#geom){.pf-ref} by $z$.
+
+:::
+
+:::
+
+:::
 
 :::
