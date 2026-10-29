@@ -21,8 +21,8 @@ audit:
 ---
 
 ::: {.problem}
-- Let $H\leq G$ be a subgroup and $N\normal G$ be a normal subgroup.
-  Show that $NH \leq G$ is a subgroup.
+Let $H\leq G$ be a subgroup and $N\normal G$ be a normal subgroup.
+Show that $NH \leq G$ is a subgroup.
 :::
 
 ::: {.solution}
@@ -45,26 +45,26 @@ Since $e\in N\cap H$, one has $e=ee\in NH$.
 ::: {.pf-step #s2}
 
 If $n_1h_1,n_2h_2\in NH$, then
-\[
+$$
 (n_1h_1)(n_2h_2)^{-1}\in NH.
-\]
+$$
 
 ::: pf-proof
 
 Compute
-\[
+$$
 (n_1h_1)(n_2h_2)^{-1}
 =n_1h_1h_2^{-1}n_2^{-1}.
-\]
+$$
 Put $h=h_1h_2^{-1}\in H$. Since $N\trianglelefteq G$,
-\[
+$$
 hn_2^{-1}h^{-1}\in N.
-\]
+$$
 Hence
-\[
+$$
 n_1h n_2^{-1}
 =n_1(hn_2^{-1}h^{-1})h,
-\]
+$$
 which is a product of an element of $N$ and an element of $H$, so it lies in $NH$.
 
 :::
