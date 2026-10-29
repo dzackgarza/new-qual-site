@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMVRP
 kind: problem
-title: Groups with nontrivial automorphisms
+title: Groups with trivial automorphism group
 classification:
   areas:
   - algebra
@@ -18,35 +18,52 @@ Which groups have trivial automorphism group?
 :::
 
 ::: {.solution}
-The only groups with trivial automorphism group are
-\[
-1\qquad\text{and}\qquad C_2.
-\]
 
-Suppose $\operatorname{Aut}(G)=1$. Every inner automorphism is then trivial, so
-\[
-\operatorname{Inn}(G)=1.
-\]
-Hence
-\[
-G/Z(G)=1,
-\]
-and therefore $G$ is abelian.
+::: pf
 
-For an abelian group, inversion
-\[
-x\longmapsto x^{-1}
-\]
-is an automorphism. Since every automorphism is trivial, inversion must be the identity, so
-\[
-x=x^{-1}
-\]
-for every $x\in G$. Thus every element has order dividing $2$, and $G$ is a vector space over $\FF_2$.
+::: {.pf-step #abelian}
 
-If its dimension were at least $2$, a nontrivial linear automorphism could interchange two basis vectors. Therefore the dimension is at most $1$, giving
-\[
-G=1\quad\text{or}\quad G\cong C_2.
-\]
+If $\Aut(G)=1$, then $G$ is abelian.
 
-Conversely, both $1$ and $C_2$ plainly have only the identity automorphism.
+::: pf-proof
+
+Every inner automorphism is trivial, so $\Inn(G)\cong G/Z(G)$ is trivial and $G=Z(G)$.
+
+:::
+
+:::
+
+::: {.pf-step #exp2}
+
+If $\Aut(G)=1$, then every element of $G$ has order dividing $2$, so $G$ is a vector space over $\FF_2$.
+
+::: pf-proof
+
+By step [](#abelian){.pf-ref}, inversion $x\mapsto x^{-1}$ is an automorphism of $G$. It is trivial, so $x=x^{-1}$ for every $x\in G$.
+
+:::
+
+:::
+
+::: {.pf-step #dim}
+
+If $\Aut(G)=1$, then $G=1$ or $G\cong C_2$.
+
+::: pf-proof
+
+By step [](#exp2){.pf-ref}, $G$ is an $\FF_2$-vector space, and every linear automorphism is a group automorphism. If its dimension were at least $2$, the linear map interchanging two basis vectors and fixing the others would be a nontrivial automorphism. So the dimension is at most $1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Conversely, $1$ and $C_2$ have only the identity automorphism, since an automorphism fixes the identity and $C_2$ has only one other element. With step [](#dim){.pf-ref}, the groups with trivial automorphism group are exactly
+$$\boxed{1\quad\text{and}\quad C_2.}$$
+
+:::
+
+:::
+
 :::
