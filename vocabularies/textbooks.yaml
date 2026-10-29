@@ -28,5 +28,7 @@
   name: Smith, Algebra Course Notes
 - id: stein-shakarchi-complex
   name: Stein and Shakarchi, Complex Analysis
+- id: stein-shakarchi-real
+  name: Stein and Shakarchi, Real Analysis
 - id: weibel
   name: Weibel, An Introduction to Homological Algebra

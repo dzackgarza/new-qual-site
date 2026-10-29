@@ -64,7 +64,6 @@ source:
   - id: P-6BKXI
   - id: P-6QCZ5
   - id: P-7J4VR
-  - id: P-AGH3O
   - id: P-DQE3F
   - id: P-DQYX5
   - id: P-DS4D6
