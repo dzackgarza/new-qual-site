@@ -93,3 +93,9 @@ Step [](#s2){.pf-ref} proves (a) and step [](#s4){.pf-ref} proves (b).
 :::
 
 :::
+
+::: {.remark title="Variations"}
+In (a), the bound $\abs{f(z)}\leq A+B\abs{z}^k$ for $\abs{z}\geq M$ also forces $f$ to be a polynomial of degree at most $k$: the Cauchy estimate becomes $\abs{c_n}\leq A\rho^{-n}+B\rho^{k-n}$, which tends to $0$ for $n>k$.
+
+The weaker hypothesis $f(z)/z^n\to0$ as $z\to\infty$, for an integer $n\geq1$, gives degree at most $n-1$: for each $\varepsilon>0$ the same estimate yields $\abs{c_k}\leq\varepsilon\rho^{n-k}\leq\varepsilon$ for $k\geq n$ and all large $\rho\geq1$, so $c_k=0$.
+:::
