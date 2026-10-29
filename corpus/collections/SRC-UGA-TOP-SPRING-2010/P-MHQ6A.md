@@ -25,8 +25,6 @@ where $\bar{A}$ and $\bar{B}$ denote the closures of $A$ and $B$ with respect to
 :::
 
 ::: {.solution}
-**Goal:** Define disconnectedness of a subspace via ambient open sets, and construct separated sets $A, B$ whose ambient closures do not intersect the other set.
-
 ::: pf
 
 ::: {.pf-step #s1}
