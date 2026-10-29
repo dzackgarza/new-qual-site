@@ -14,11 +14,11 @@ review: draft
 ---
 
 ::: {.proposition}
-All functions below are [[D-DHFN4|Lebesgue measurable]] functions with values in $[-\infty,\infty]$ unless stated otherwise.
+Throughout, measurable means [[D-DHFN4|Lebesgue measurable]].
 
 - For a [[D-MDJII|Lebesgue measurable]] set $E\subseteq\RR^d$, the characteristic function $\chi_E$ is measurable.
 
-- If $f_n\colon\RR^d\to[-\infty,\infty]$ are measurable for $n\geq1$, then $\abs{f_n}$, $\sup_n f_n$, $\inf_n f_n$, $\limsup_n f_n$, and $\liminf_n f_n$ are measurable, and so is $\lim_n f_n$ wherever the sequence converges everywhere.
+- If $f_n\colon\RR^d\to[-\infty,\infty]$ are measurable for $n\geq1$, then $\abs{f_n}$, $\sup_n f_n$, $\inf_n f_n$, $\limsup_n f_n$, and $\liminf_n f_n$ are measurable; if $(f_n)$ converges pointwise everywhere, then $\lim_n f_n$ is measurable.
 
 - If $f,g\colon\RR^d\to\RR$ are measurable and finite-valued, then $f+g$ and $f-g$ are measurable.
 
