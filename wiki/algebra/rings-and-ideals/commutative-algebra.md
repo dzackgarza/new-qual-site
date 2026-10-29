@@ -97,4 +97,4 @@ $$
 
 [[D-JGYK4]]
 
-Recall that an ideal $\mathfrak q\subsetneq R$ is [[D-JGYK4|primary]] if every zero divisor of $R/\mathfrak q$ is nilpotent; every prime ideal is primary, and by the Lasker--Noether theorem every ideal of a Noetherian ring is a finite intersection of primary ideals.
+By the Lasker--Noether theorem, every ideal of a Noetherian ring is a finite intersection of [[D-JGYK4|primary ideals]].
