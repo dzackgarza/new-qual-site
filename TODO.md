@@ -842,7 +842,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/sheaves/stalks-and-exactness.md
   - [x] wiki/algebraic-geometry/sheaves/the-sheaf-condition.md
   - [x] wiki/algebraic-geometry/stacks-and-moduli/functors-and-topologies.md
-  - [ ] wiki/algebraic-geometry/stacks-and-moduli/index.md
+  - [x] wiki/algebraic-geometry/stacks-and-moduli/index.md
   - [ ] wiki/algebraic-geometry/stacks-and-moduli/spaces-and-stacks.md
   - [ ] wiki/algebraic-geometry/syllabus.md
   - [ ] wiki/algebraic-geometry/toric/affine-computations.md
