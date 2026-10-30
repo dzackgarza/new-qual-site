@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-9
 kind: problem
 title: Two real-value lines for a nonconstant entire function meet at a rational angle
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

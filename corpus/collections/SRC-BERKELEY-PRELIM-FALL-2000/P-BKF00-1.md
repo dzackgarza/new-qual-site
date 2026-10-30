@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-1
 kind: problem
 title: Trace of an endomorphism equals the trace of its restriction to its image
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

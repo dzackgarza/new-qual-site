@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-8
 kind: problem
 title: A Singer cycle in $GL_n(\FF_p)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

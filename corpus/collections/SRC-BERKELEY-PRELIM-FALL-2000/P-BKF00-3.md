@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-3
 kind: problem
 title: A two-generator algebra with $a^2=b^2=0$ and $(a+b)^2=1$ is $M_2(K)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-4
 kind: problem
 title: The integral $\frac1{2\pi i}\int_{\abs{z}=1}1/\sin(4z)\,dz$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

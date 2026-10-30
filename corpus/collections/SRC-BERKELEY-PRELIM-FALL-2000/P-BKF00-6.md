@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-6
 kind: problem
 title: The ring $E(U,U)$ of endomorphisms with $F(U)$ finite-dimensional modulo $U$, and its ideals $E(V,U)$ and $E(U,0)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

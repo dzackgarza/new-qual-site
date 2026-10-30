@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-5
 kind: problem
 title: Does a finite limit of $f(x)/x^2$ force $f''(0)$ to exist?
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

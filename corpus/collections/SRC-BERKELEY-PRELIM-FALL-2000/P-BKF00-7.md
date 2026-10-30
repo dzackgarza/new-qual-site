@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-7
 kind: problem
 title: A uniformly continuous function on $\RR$ has at most affine growth
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

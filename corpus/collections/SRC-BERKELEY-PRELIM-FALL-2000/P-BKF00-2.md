@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF00-2
 kind: problem
 title: A subset on which every continuous real function attains a maximum is compact
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
