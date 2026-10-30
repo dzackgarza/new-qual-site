@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/j16.pdf",
+  "source_pdf_sha256": "e7302add7aedd6e33143f8706cd78a4143b0999731048caafae8dd6c235e093b",
+  "source_url": "https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf",
+  "extracted_markdown": "assets/attachments/j16_extracted.md",
+  "extracted_markdown_sha256": "c3352d7fdde7a930c4f7a2a3887dba39701015821da9da526dd91ca983f708b1",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/j16.pdf --language en",
+  "generated_at": "2026-10-30"
+}

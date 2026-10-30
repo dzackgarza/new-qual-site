@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a16.pdf
+- assets/attachments/a16.pdf
 source:
   source_kind: university-exam
   institution: tamu
