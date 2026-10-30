@@ -518,6 +518,16 @@ mathematical correction under its own node, not under copy policy.
     chapter-6.pdf is a degraded scan: its per-page Flash extraction garbles Questions 1 and 5,
     and a Mistral OCR pass is still owed when the API accepts requests.
 
+  Round 3 (finding I4, [COMPLAINTS.md](COMPLAINTS.md)) injected the node below; `audited-deployment` needs it.
+  - **`ad3-style04-notation`**. **Needs:** none. `STYLE-04` delimiter and definition forms are
+    corpus-wide: 166 cards write `\definedas` and about 1913 cards write raw `|` bars.
+    **Acceptance:** `\definedas` is rewritten to `\coloneqq` by one codemod; each raw bar pair is
+    classified once by its meaning (absolute value, norm, cardinality, set-builder separator,
+    divisibility, restriction or evaluation, conditional) and the same codemod applies the
+    vocabulary macro for that meaning; each changed card's Pandoc AST differs only in those
+    substitutions; the card check in `tools/qualc/authoring.py` rejects the raw forms; the
+    codemod is trashed after the rewrite is committed.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
