@@ -18,8 +18,3 @@ review: draft
 ::: {.proposition}
 The series $e^z=\sum_{n\ge0}\frac{z^n}{n!}$ converges uniformly on every bounded subset of $\CC$, in particular on every disc in $\CC$.
 :::
-
-::: {.proof}
-A bounded set lies in a disc $\abs{z}\le R$ for some $R>0$.
-There $\abs{z^n/n!}\le R^n/n!$, and $\sum_n R^n/n!=e^R<\infty$, so the Weierstrass $M$-test gives uniform convergence.
-:::

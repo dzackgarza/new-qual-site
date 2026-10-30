@@ -33,17 +33,6 @@ A_{n} B_{n}=\sum_{k=1}^{n} A_{k} b_{k}+\sum_{k=1}^{n} a_{k} B_{k-1}.
 $$
 :::
 
-::: {.proof}
-For (b), $f_{k+1}g_{k+1}-f_kg_k=f_k\,\Delta g_k+g_{k+1}\,\Delta f_k$ for every $k$; summing over $m\le k\le n$ telescopes the left side to $f_{n+1}g_{n+1}-f_mg_m$.
-
-For (a), substitute $a_k=A_k-A_{k-1}$:
-$$
-\sum_{k=m}^n a_kb_k=\sum_{k=m}^nA_kb_k-\sum_{k=m-1}^{n-1}A_kb_{k+1}=A_nb_n-A_{m-1}b_m-\sum_{k=m}^{n-1}A_k(b_{k+1}-b_k).
-$$
-
-For (c), $A_kB_k-A_{k-1}B_{k-1}=A_k(B_{k-1}+b_k)-(A_k-a_k)B_{k-1}=A_kb_k+a_kB_{k-1}$ for every $k\ge1$; summing over $1\le k\le n$ and using $A_0B_0=0$ gives the identity.
-:::
-
 ::: {.remark}
 Identity (a) is the discrete analogue of integration by parts: for $F$ an antiderivative of $f$ on $[a,b]$ and $g$ continuously differentiable,
 $$
