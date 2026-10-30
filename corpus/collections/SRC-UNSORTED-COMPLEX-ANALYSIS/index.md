@@ -162,7 +162,6 @@ source:
   - id: E-SMOHZ
   - id: E-SNRS5
   - id: E-SQ4GJ
-  - id: E-T4VAX
   - id: E-T5ERF
   - id: E-TCONN
   - id: E-TDDQI
