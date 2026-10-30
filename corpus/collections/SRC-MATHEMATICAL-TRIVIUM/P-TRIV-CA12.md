@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { 0 } ^ { \infty } \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x ;$
+Compute $\int_0^{\infty} \frac{1}{1 + x^2}\, \mathrm{d}x$.
 :::
 
 ::: {.solution}

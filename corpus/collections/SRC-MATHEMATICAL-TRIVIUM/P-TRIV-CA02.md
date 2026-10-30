@@ -17,9 +17,8 @@ audit:
 
 ::: {.problem}
 Write the following complex numbers in cartesian form
-
 $$
-e ^ { i \theta } , \qquad 3 e ^ { i \pi / 4 } , \qquad { \frac { 1 } { 2 } } e ^ { i \pi } , \qquad 2 e ^ { 2 i \pi / 3 } , \qquad e ^ { - 3 i \pi / 4 } .
+e^{i\theta}, \qquad 3e^{i\pi/4}, \qquad \frac{1}{2}e^{i\pi}, \qquad 2e^{2i\pi/3}, \qquad e^{-3i\pi/4}.
 $$
 :::
 

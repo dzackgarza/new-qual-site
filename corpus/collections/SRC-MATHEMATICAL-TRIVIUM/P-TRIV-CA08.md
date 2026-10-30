@@ -16,13 +16,15 @@ audit:
 ---
 
 ::: {.problem}
-OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z + 1 ) ( z + 2 ) } } \end{array}$ such that it converges in the regions (a) $\abs{ z } < 1 ;$
+Find the Laurent series of $f(z) = \frac{1}{(z + 1)(z + 2)}$ such that it converges in the regions
 
-(b) $1 < \abs{ z } < 2 ;$
+(a) $\abs{z} < 1$;
 
-(c) $\abs{ z } > 2 ;$
+(b) $1 < \abs{z} < 2$;
 
-(d) $0 < \abs{ z + 1 } < 1 .$
+(c) $\abs{z} > 2$;
+
+(d) $0 < \abs{z + 1} < 1$.
 :::
 
 ::: {.solution}

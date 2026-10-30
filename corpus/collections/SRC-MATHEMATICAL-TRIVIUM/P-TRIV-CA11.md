@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-What is the image of $\{ z \st \mathrm { R e } ( z ) > \mathrm { I m } ( z ) > 0 \}$ under the mapping $e ^ { z ^ { 2 } } ?$
+What is the image of $\{z \st \Re(z) > \Im(z) > 0\}$ under the mapping $e^{z^2}$?
 :::
 
 ::: {.solution}

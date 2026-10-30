@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { 0 } ^ { \pi } ( \cos \theta ) ^ { 2 n } \mathrm { d } \theta ;$
+Compute $\int_0^{\pi} (\cos\theta)^{2n}\, \mathrm{d}\theta$.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find an analytic map that sends the unit disk $( \abs{ z } < 1 )$ onto the left half plane $( \mathrm { R e } ( z ) < 0 )$
+Find an analytic map that sends the unit disk ($\abs{z} < 1$) onto the left half plane ($\Re(z) < 0$).
 :::
 
 ::: {.solution}

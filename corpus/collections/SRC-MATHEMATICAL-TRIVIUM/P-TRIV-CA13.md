@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { - \infty } ^ { \infty } \frac { 1 } { 1 + x ^ { 6 } } \mathrm { d } x ;$
+Compute $\int_{-\infty}^{\infty} \frac{1}{1 + x^6}\, \mathrm{d}x$.
 :::
 
 ::: {.solution}

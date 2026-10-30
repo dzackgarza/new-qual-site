@@ -17,9 +17,8 @@ audit:
 
 ::: {.problem}
 Write the following complex numbers in polar form:
-
 $$
-3 i , \qquad 1 - i , \qquad 2 + i , \qquad - 4 , \qquad 2 - i { \sqrt { 3 } } , \qquad { \frac { 2 - i } { 1 + 4 i } } , \qquad \abs{ 3 + i } .
+3i, \qquad 1 - i, \qquad 2 + i, \qquad -4, \qquad 2 - i\sqrt{3}, \qquad \frac{2 - i}{1 + 4i}, \qquad \abs{3 + i}.
 $$
 :::
 

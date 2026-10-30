@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the Laurent series of $f ( z ) = \frac { e ^ { z } } { ( z - 1 ) ^ { 2 } }$ around $z _ { 0 } = 1$ give the region of convergence.
+Compute the Laurent series of $f(z) = \frac{e^z}{(z - 1)^2}$ around $z_0 = 1$; give the region of convergence.
 :::
 
 ::: {.solution}

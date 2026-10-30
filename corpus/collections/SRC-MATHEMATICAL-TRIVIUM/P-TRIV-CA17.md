@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-For real $\theta$ with $\sin\theta\ne0$, compute $\int _ { - \infty } ^ { \infty } \frac { x ^ { 2 } } { x ^ { 4 } - 2 x ^ { 2 } \cos 2 \theta + 1 } \mathrm { d } x ;$
+For real $\theta$ with $\sin\theta \neq 0$, compute $\int_{-\infty}^{\infty} \frac{x^2}{x^4 - 2x^2\cos 2\theta + 1}\, \mathrm{d}x$.
 :::
 
 ::: {.remark}

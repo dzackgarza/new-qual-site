@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Use the saddle point method to approximate $f ( t ) = \int _ { - \infty } ^ { \infty } \frac { e ^ { - t ( z ^ { 2 } - 1 / 4 ) } \cos t z } { 1 + z ^ { 2 } } \mathrm { d } z$ for $t \gg 1$
+Use the saddle point method to approximate $f(t) = \int_{-\infty}^{\infty} \frac{e^{-t(z^2 - 1/4)}\cos tz}{1 + z^2}\, \mathrm{d}z$ for $t \gg 1$.
 :::
 
 ::: {.solution}

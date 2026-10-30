@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Using Stirling's approximation, find the leading behavior of:
 
-(a) $\binom { 2 N } { N }$ for large N.
+(a) $\binom{2N}{N}$ for large $N$.
 
-(b) $S = \log Z ( N , m )$ with $\begin{array} { r } { Z = \frac { N ! } { ( N - m ) ! m ! } } \end{array}$ for large N.
+(b) $S = \log Z(N, m)$ with $Z = \frac{N!}{(N - m)!\, m!}$ for large $N$.
 :::
 
 ::: {.solution}

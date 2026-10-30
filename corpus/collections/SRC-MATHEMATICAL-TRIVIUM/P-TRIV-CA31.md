@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find an analytic continuation $g ( z )$ of the function $f ( z ) = \int _ { 0 } ^ { \infty } t e ^ { - z t } d t . \ f ( z )$ is defined only for $z > 0$ . What is the domain of $g ( z ) ?$
+Find an analytic continuation $g(z)$ of the function $f(z) = \int_0^{\infty} te^{-zt}\, dt$. $f(z)$ is defined only for $z > 0$. What is the domain of $g(z)$?
 :::
 
 ::: {.solution}

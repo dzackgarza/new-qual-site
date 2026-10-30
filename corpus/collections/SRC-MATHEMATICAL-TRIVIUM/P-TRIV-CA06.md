@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the Laurent series of $f ( z ) = { \frac { z } { ( z + 1 ) ( z - 1 ) } }$ around $z _ { 0 } = 1$ ; give the region of convergence.
+Compute the Laurent series of $f(z) = \frac{z}{(z + 1)(z - 1)}$ around $z_0 = 1$; give the region of convergence.
 :::
 
 ::: {.solution}

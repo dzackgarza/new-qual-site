@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the Laurent series of $f ( z ) = { \frac { 1 } { ( z - 3 ) ^ { 3 } } }$ around $z _ { 0 } = i ;$ give the region of convergence.
+Compute the Laurent series of $f(z) = \frac{1}{(z - 3)^3}$ around $z_0 = i$; give the region of convergence.
 :::
 
 ::: {.solution}

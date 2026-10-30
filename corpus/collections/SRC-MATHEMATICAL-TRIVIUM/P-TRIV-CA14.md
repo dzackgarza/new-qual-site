@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { - \infty } ^ { \infty } { \frac { e ^ { i \alpha x } } { x ^ { 2 } + m ^ { 2 } } }$ dx with $\alpha , m \in \RR$ and $m\ne0$ (hint: consider the two cases of positive or negative α separately);
+Compute $\int_{-\infty}^{\infty} \frac{e^{i\alpha x}}{x^2 + m^2}\, \mathrm{d}x$ with $\alpha, m \in \RR$ and $m \neq 0$ (hint: consider the two cases of positive or negative $\alpha$ separately).
 :::
 
 ::: {.remark}

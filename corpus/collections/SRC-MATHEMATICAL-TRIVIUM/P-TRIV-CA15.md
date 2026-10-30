@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-For real $\alpha$, compute $\int _ { - \infty } ^ { \infty } \frac { e ^ { i \alpha x } } { ( 3 - i x ) ( 1 + i x ) } \mathrm { d } x$
+For real $\alpha$, compute $\int_{-\infty}^{\infty} \frac{e^{i\alpha x}}{(3 - ix)(1 + ix)}\, \mathrm{d}x$.
 :::
 
 ::: {.remark}

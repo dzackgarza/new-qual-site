@@ -17,9 +17,8 @@ audit:
 
 ::: {.problem}
 Find the (possibly complex) roots of these polynomials
-
 $$
-z ^ { 2 } + 3 z + 1 2 = 0 , \qquad z ^ { 4 } + 5 z ^ { 2 } + 4 = 0 , \qquad z ^ { 6 } = 1 , \qquad z ^ { 3 } = - 1 .
+z^2 + 3z + 12 = 0, \qquad z^4 + 5z^2 + 4 = 0, \qquad z^6 = 1, \qquad z^3 = -1.
 $$
 :::
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find Stirling's approximation: consider $\begin{array} { r } { n ! = \Gamma ( n + 1 ) = \int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x } \end{array}$ for $n \gg 1$
+Find Stirling's approximation: consider $n! = \Gamma(n + 1) = \int_0^{\infty} x^n e^{-x}\, dx$ for $n \gg 1$.
 :::
 
 ::: {.solution}
