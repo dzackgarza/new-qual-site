@@ -52,7 +52,7 @@ Then
 $$
 a_1(\lambda_1-\lambda_m)v_1
 +\cdots+
-+a_{m-1}(\lambda_{m-1}-\lambda_m)v_{m-1}
+a_{m-1}(\lambda_{m-1}-\lambda_m)v_{m-1}
 =0.
 $$
 
