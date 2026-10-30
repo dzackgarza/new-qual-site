@@ -40,9 +40,9 @@ $$
 
 Every cofinite-open subset of $Z$ is open in the product topology:
 $$
-\mathcal T_{mathrm{fc}}
+\mathcal T_{\mathrm{fc}}
 \subseteq
-\mathcal T_{mathrm{prod}}.
+\mathcal T_{\mathrm{prod}}.
 $$
 
 
@@ -50,7 +50,7 @@ $$
 
 Let
 $$
-O\in\mathcal T_{mathrm{fc}}.
+O\in\mathcal T_{\mathrm{fc}}.
 $$
 If
 $$
@@ -142,7 +142,7 @@ Hence no point of $F$ lies in $U\times V$.
 Therefore every point of $O$ has a product-basic neighborhood contained in
 $O$, so
 $$
-O\in\mathcal T_{mathrm{prod}}.
+O\in\mathcal T_{\mathrm{prod}}.
 $$
 
 :::
@@ -177,7 +177,7 @@ Hence
 $$
 W
 \in
-\mathcal T_{mathrm{prod}}.
+\mathcal T_{\mathrm{prod}}.
 $$
 
 But
@@ -189,13 +189,13 @@ $$
 which is infinite.
 Therefore $W$ is neither empty nor cofinite, so
 $$
-W\notin\mathcal T_{mathrm{fc}}.
+W\notin\mathcal T_{\mathrm{fc}}.
 $$
 Thus
 $$
-\mathcal T_{mathrm{prod}}
+\mathcal T_{\mathrm{prod}}
 \nsubseteq
-\mathcal T_{mathrm{fc}}.
+\mathcal T_{\mathrm{fc}}.
 $$
 
 :::
@@ -207,9 +207,9 @@ $$
 Consequently
 $$
 \boxed{
-\mathcal T_{mathrm{fc}}
+\mathcal T_{\mathrm{fc}}
 \subsetneq
-\mathcal T_{mathrm{prod}}.
+\mathcal T_{\mathrm{prod}}.
 }
 $$
 
