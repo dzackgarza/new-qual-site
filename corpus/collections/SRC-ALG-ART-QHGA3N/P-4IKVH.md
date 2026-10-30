@@ -139,3 +139,7 @@ Step [](#s7){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The proof above uses $p\ne q$. If $p=q$, then $\abs G=p^3$. A finite $p$-group has a normal subgroup of every order dividing its order, so $G$ has a normal subgroup of order $p$, which is nontrivial and proper.
+:::
