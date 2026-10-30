@@ -925,7 +925,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/resources/index.md
   - [x] wiki/complex-analysis/resources/problems.md
   - [x] wiki/complex-analysis/resources/solutions.md
-  - [ ] wiki/complex-analysis/resources/study-schedule-and-topics.md
+  - [x] wiki/complex-analysis/resources/study-schedule-and-topics.md
   - [ ] wiki/complex-analysis/review.md
   - [ ] wiki/complex-analysis/singularities/casorati-weierstrass-and-picard.md
   - [ ] wiki/complex-analysis/singularities/classifying-a-singularity.md
