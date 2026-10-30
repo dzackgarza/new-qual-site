@@ -911,7 +911,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/holomorphic-functions/complex-arithmetic-and-log.md
   - [x] wiki/complex-analysis/holomorphic-functions/harmonic-functions.md
   - [x] wiki/complex-analysis/holomorphic-functions/index.md
-  - [ ] wiki/complex-analysis/holomorphic-functions/is-it-holomorphic.md
+  - [x] wiki/complex-analysis/holomorphic-functions/is-it-holomorphic.md
   - [ ] wiki/complex-analysis/holomorphic-functions/power-series.md
   - [ ] wiki/complex-analysis/holomorphic-functions/the-cauchy-riemann-equations.md
   - [ ] wiki/complex-analysis/index.md
