@@ -227,111 +227,208 @@ source:
       comment: 1.B.9
   - name: '2.1'
     problems:
-    - E-HAT-2.1-1
-    - E-HAT-2.1-2
-    - E-HAT-2.1-3
-    - E-HAT-2.1-4
-    - E-HAT-2.1-5
-    - E-HAT-2.1-6
-    - E-HAT-2.1-7
-    - E-HAT-2.1-8
-    - E-HAT-2.1-9
-    - E-HAT-2.1-10
-    - E-HAT-2.1-11
-    - E-HAT-2.1-12
-    - E-HAT-2.1-13
-    - E-HAT-2.1-14
-    - E-HAT-2.1-15
-    - E-HAT-2.1-16
-    - E-HAT-2.1-17
-    - E-HAT-2.1-18
-    - E-HAT-2.1-19
-    - E-HAT-2.1-20
-    - E-HAT-2.1-21
-    - E-HAT-2.1-22
-    - E-HAT-2.1-23
-    - E-HAT-2.1-24
-    - E-HAT-2.1-25
-    - E-HAT-2.1-26
-    - E-HAT-2.1-27
-    - E-HAT-2.1-28
-    - E-HAT-2.1-29
-    - E-HAT-2.1-30
-    - E-HAT-2.1-31
+    - id: E-HAT-2.1-1
+      comment: 2.1.1
+    - id: E-HAT-2.1-2
+      comment: 2.1.2
+    - id: E-HAT-2.1-3
+      comment: 2.1.3
+    - id: E-HAT-2.1-4
+      comment: 2.1.4
+    - id: E-HAT-2.1-5
+      comment: 2.1.5
+    - id: E-HAT-2.1-6
+      comment: 2.1.6
+    - id: E-HAT-2.1-7
+      comment: 2.1.7
+    - id: E-HAT-2.1-8
+      comment: 2.1.8
+    - id: E-HAT-2.1-9
+      comment: 2.1.9
+    - id: E-HAT-2.1-10
+      comment: 2.1.10
+    - id: E-HAT-2.1-11
+      comment: 2.1.11
+    - id: E-HAT-2.1-12
+      comment: 2.1.12
+    - id: E-HAT-2.1-13
+      comment: 2.1.13
+    - id: E-HAT-2.1-14
+      comment: 2.1.14
+    - id: E-HAT-2.1-15
+      comment: 2.1.15
+    - id: E-HAT-2.1-16
+      comment: 2.1.16
+    - id: E-HAT-2.1-17
+      comment: 2.1.17
+    - id: E-HAT-2.1-18
+      comment: 2.1.18
+    - id: E-HAT-2.1-19
+      comment: 2.1.19
+    - id: E-HAT-2.1-20
+      comment: 2.1.20
+    - id: E-HAT-2.1-21
+      comment: 2.1.21
+    - id: E-HAT-2.1-22
+      comment: 2.1.22
+    - id: E-HAT-2.1-23
+      comment: 2.1.23
+    - id: E-HAT-2.1-24
+      comment: 2.1.24
+    - id: E-HAT-2.1-25
+      comment: 2.1.25
+    - id: E-HAT-2.1-26
+      comment: 2.1.26
+    - id: E-HAT-2.1-27
+      comment: 2.1.27
+    - id: E-HAT-2.1-28
+      comment: 2.1.28
+    - id: E-HAT-2.1-29
+      comment: 2.1.29
+    - id: E-HAT-2.1-30
+      comment: 2.1.30
+    - id: E-HAT-2.1-31
+      comment: 2.1.31
   - name: '2.2'
     problems:
-    - E-HAT-2.2-1
-    - E-HAT-2.2-2
-    - E-HAT-2.2-3
-    - E-HAT-2.2-4
-    - E-HAT-2.2-5
-    - E-HAT-2.2-6
-    - E-HAT-2.2-7
-    - E-HAT-2.2-8
-    - E-HAT-2.2-9
-    - E-HAT-2.2-10
-    - E-HAT-2.2-11
-    - E-HAT-2.2-12
-    - E-HAT-2.2-13
-    - E-HAT-2.2-14
-    - E-HAT-2.2-15
-    - E-HAT-2.2-16
-    - E-HAT-2.2-17
-    - E-HAT-2.2-18
-    - E-HAT-2.2-19
-    - E-HAT-2.2-20
-    - E-HAT-2.2-21
-    - E-HAT-2.2-22
-    - E-HAT-2.2-23
-    - E-HAT-2.2-24
-    - E-HAT-2.2-25
-    - E-HAT-2.2-26
-    - E-HAT-2.2-27
-    - E-HAT-2.2-28
-    - E-HAT-2.2-29
-    - E-HAT-2.2-30
-    - E-HAT-2.2-31
-    - E-HAT-2.2-32
-    - E-HAT-2.2-33
-    - E-HAT-2.2-35
-    - E-HAT-2.2-36
-    - E-HAT-2.2-37
-    - E-HAT-2.2-38
-    - E-HAT-2.2-39
-    - E-HAT-2.2-40
-    - E-HAT-2.2-41
-    - E-HAT-2.2-42
-    - E-HAT-2.2-43
+    - id: E-HAT-2.2-1
+      comment: 2.2.1
+    - id: E-HAT-2.2-2
+      comment: 2.2.2
+    - id: E-HAT-2.2-3
+      comment: 2.2.3
+    - id: E-HAT-2.2-4
+      comment: 2.2.4
+    - id: E-HAT-2.2-5
+      comment: 2.2.5
+    - id: E-HAT-2.2-6
+      comment: 2.2.6
+    - id: E-HAT-2.2-7
+      comment: 2.2.7
+    - id: E-HAT-2.2-8
+      comment: 2.2.8
+    - id: E-HAT-2.2-9
+      comment: 2.2.9
+    - id: E-HAT-2.2-10
+      comment: 2.2.10
+    - id: E-HAT-2.2-11
+      comment: 2.2.11
+    - id: E-HAT-2.2-12
+      comment: 2.2.12
+    - id: E-HAT-2.2-13
+      comment: 2.2.13
+    - id: E-HAT-2.2-14
+      comment: 2.2.14
+    - id: E-HAT-2.2-15
+      comment: 2.2.15
+    - id: E-HAT-2.2-16
+      comment: 2.2.16
+    - id: E-HAT-2.2-17
+      comment: 2.2.17
+    - id: E-HAT-2.2-18
+      comment: 2.2.18
+    - id: E-HAT-2.2-19
+      comment: 2.2.19
+    - id: E-HAT-2.2-20
+      comment: 2.2.20
+    - id: E-HAT-2.2-21
+      comment: 2.2.21
+    - id: E-HAT-2.2-22
+      comment: 2.2.22
+    - id: E-HAT-2.2-23
+      comment: 2.2.23
+    - id: E-HAT-2.2-24
+      comment: 2.2.24
+    - id: E-HAT-2.2-25
+      comment: 2.2.25
+    - id: E-HAT-2.2-26
+      comment: 2.2.26
+    - id: E-HAT-2.2-27
+      comment: 2.2.27
+    - id: E-HAT-2.2-28
+      comment: 2.2.28
+    - id: E-HAT-2.2-29
+      comment: 2.2.29
+    - id: E-HAT-2.2-30
+      comment: 2.2.30
+    - id: E-HAT-2.2-31
+      comment: 2.2.31
+    - id: E-HAT-2.2-32
+      comment: 2.2.32
+    - id: E-HAT-2.2-33
+      comment: 2.2.33
+    - id: E-HAT-2.2-35
+      comment: 2.2.35
+    - id: E-HAT-2.2-36
+      comment: 2.2.36
+    - id: E-HAT-2.2-37
+      comment: 2.2.37
+    - id: E-HAT-2.2-38
+      comment: 2.2.38
+    - id: E-HAT-2.2-39
+      comment: 2.2.39
+    - id: E-HAT-2.2-40
+      comment: 2.2.40
+    - id: E-HAT-2.2-41
+      comment: 2.2.41
+    - id: E-HAT-2.2-42
+      comment: 2.2.42
+    - id: E-HAT-2.2-43
+      comment: 2.2.43
   - name: '2.3'
     problems:
-    - E-HAT-2.3-1
-    - E-HAT-2.3-2
-    - E-HAT-2.3-3
-    - E-HAT-2.3-4
+    - id: E-HAT-2.3-1
+      comment: 2.3.1
+    - id: E-HAT-2.3-2
+      comment: 2.3.2
+    - id: E-HAT-2.3-3
+      comment: 2.3.3
+    - id: E-HAT-2.3-4
+      comment: 2.3.4
   - name: 2.B
     problems:
-    - E-HAT-2.B-1
-    - E-HAT-2.B-2
-    - E-HAT-2.B-3
-    - E-HAT-2.B-4
-    - E-HAT-2.B-5
-    - E-HAT-2.B-6
-    - E-HAT-2.B-7
-    - E-HAT-2.B-8
-    - E-HAT-2.B-9
-    - E-HAT-2.B-10
-    - E-HAT-2.B-11
+    - id: E-HAT-2.B-1
+      comment: 2.B.1
+    - id: E-HAT-2.B-2
+      comment: 2.B.2
+    - id: E-HAT-2.B-3
+      comment: 2.B.3
+    - id: E-HAT-2.B-4
+      comment: 2.B.4
+    - id: E-HAT-2.B-5
+      comment: 2.B.5
+    - id: E-HAT-2.B-6
+      comment: 2.B.6
+    - id: E-HAT-2.B-7
+      comment: 2.B.7
+    - id: E-HAT-2.B-8
+      comment: 2.B.8
+    - id: E-HAT-2.B-9
+      comment: 2.B.9
+    - id: E-HAT-2.B-10
+      comment: 2.B.10
+    - id: E-HAT-2.B-11
+      comment: 2.B.11
   - name: 2.C
     problems:
-    - E-HAT-2.C-1
-    - E-HAT-2.C-2
-    - E-HAT-2.C-3
-    - E-HAT-2.C-4
-    - E-HAT-2.C-5
-    - E-HAT-2.C-6
-    - E-HAT-2.C-7
-    - E-HAT-2.C-8
-    - E-HAT-2.C-9
+    - id: E-HAT-2.C-1
+      comment: 2.C.1
+    - id: E-HAT-2.C-2
+      comment: 2.C.2
+    - id: E-HAT-2.C-3
+      comment: 2.C.3
+    - id: E-HAT-2.C-4
+      comment: 2.C.4
+    - id: E-HAT-2.C-5
+      comment: 2.C.5
+    - id: E-HAT-2.C-6
+      comment: 2.C.6
+    - id: E-HAT-2.C-7
+      comment: 2.C.7
+    - id: E-HAT-2.C-8
+      comment: 2.C.8
+    - id: E-HAT-2.C-9
+      comment: 2.C.9
   - name: '3.1'
     problems:
     - id: E-HAT-3.1-1
