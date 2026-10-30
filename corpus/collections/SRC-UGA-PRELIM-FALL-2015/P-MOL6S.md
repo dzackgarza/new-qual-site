@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - Taylor Series
+  - Induction
   - Differentiation
 relations: []
 review: draft
