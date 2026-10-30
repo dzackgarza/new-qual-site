@@ -71,3 +71,7 @@ Steps [](#euler-char-even){.pf-ref} and [](#euler-char-odd){.pf-ref} give incomp
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The Fall 2014 exam asks the same question with $M$ also assumed connected.
+:::

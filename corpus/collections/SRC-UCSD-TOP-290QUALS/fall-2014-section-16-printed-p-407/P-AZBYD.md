@@ -15,33 +15,81 @@ review: draft
 ---
 
 ::: {.problem}
-Let $L$ be a 3-manifold with homology $[\ZZ, \ZZ_3, 0, \ZZ, \ldots]$ and let $X = L \cross \Sigma L$. Compute $H_*(X), H^*(X)$.
+Let $L$ be a $3$-manifold whose homology groups are $\ZZ, \ZZ_3, 0, \ZZ$ in dimensions $0, 1, 2, 3$.
+Compute the homology $H_*(X;\ZZ)$ and cohomology $H^*(X;\ZZ)$ of the space $X = L \times \Sigma L$.
+(Here $\Sigma$ denotes the suspension of a space.)
 :::
 
 ::: {.solution}
-Useful facts:
 
-- $H_{k}(X\times Y) \cong \bigoplus _{{i+j=k}}H_{i}(X)\otimes H_{j}(Y) \bigoplus_{i+j=k-1}\Tor(H_i(X), H_j(Y))$
-- $\tilde H_i(\Sigma X) = \tilde H_{i-1}(X)$
+::: pf
 
-We will use the fact that $H_*(\Sigma L) = [\ZZ, \ZZ, \ZZ_3, 0, \ZZ]$.
+::: {.pf-step #suspension}
 
-Represent $H_*(L)$ by $p(x, y) = 1 + yx + x^3$ and $H_*(\Sigma L)$ by $q(x,y) = 1 + x + yx^2 + x^4$, we can extract the free part of $H_*(X)$ by multiplying
+$H_*(\Sigma L;\ZZ)$ is $\ZZ, 0, \ZZ_3, 0, \ZZ$ in dimensions $0,1,2,3,4$ and zero above.
 
-$$p(x,y)q(x,y) = 1 + (1+y)x + 2yx^2 + (y^2+1)x^3 + 2x^4 + 2yx^5 + x^7$$
+::: pf-proof
 
-where multiplication corresponds to the tensor product, addition to the direct sum/product.
+$\widetilde H_i(\Sigma L)\cong\widetilde H_{i-1}(L)$, and $\Sigma L$ is path connected.
 
-So the free portion is
-$$H_*(X) = [\ZZ, \ZZ\oplus \ZZ_3, \ZZ_3\tensor \ZZ_3, \ZZ \oplus \ZZ_3\tensor \ZZ_3, \ZZ^2, \ZZ_3^2, 0, \ZZ] \\
-=[\ZZ, \ZZ\oplus \ZZ_3, \ZZ_3, \ZZ \oplus \ZZ_3, \ZZ^2, \ZZ_3^2, 0, \ZZ]
+:::
+
+:::
+
+::: {.pf-step #kunneth}
+
+The Künneth formula
 $$
+H_k(L\times\Sigma L)\cong\bigoplus_{i+j=k}H_i(L)\otimes H_j(\Sigma L)\ \oplus\bigoplus_{i+j=k-1}\operatorname{Tor}(H_i(L),H_j(\Sigma L))
+$$
+has the following nonzero terms.
 
-We can add in the correction from torsion by noting that only terms of the form $\Tor(\ZZ_3, \ZZ_3) = \ZZ_3$ survive. These come from the terms $i=1, j=2$, so $i+j=k-1 \implies k = 1+2+1 = 4$ and there is thus an additional torsion term appearing in dimension 4. So we have
+| $(i,j)$ | term | degree |
+|---|---|---|
+| $(0,0)$ | $\ZZ\otimes\ZZ=\ZZ$ | $0$ |
+| $(1,0)$ | $\ZZ_3\otimes\ZZ=\ZZ_3$ | $1$ |
+| $(0,2)$ | $\ZZ\otimes\ZZ_3=\ZZ_3$ | $2$ |
+| $(1,2)$ | $\ZZ_3\otimes\ZZ_3=\ZZ_3$ | $3$ |
+| $(3,0)$ | $\ZZ\otimes\ZZ=\ZZ$ | $3$ |
+| $(0,4)$ | $\ZZ\otimes\ZZ=\ZZ$ | $4$ |
+| $(1,2)$ | $\operatorname{Tor}(\ZZ_3,\ZZ_3)=\ZZ_3$ | $4$ |
+| $(1,4)$ | $\ZZ_3\otimes\ZZ=\ZZ_3$ | $5$ |
+| $(3,2)$ | $\ZZ\otimes\ZZ_3=\ZZ_3$ | $5$ |
+| $(3,4)$ | $\ZZ\otimes\ZZ=\ZZ$ | $7$ |
 
-$$H_*(X) = [\ZZ, \ZZ\times \ZZ_3, \ZZ_3, \ZZ \times \ZZ_3, \ZZ^2 \times \ZZ_3, \ZZ_3^2, 0, \ZZ] \\ = [\ZZ, \ZZ, 0,\ZZ,\ZZ^2,0,0,\ZZ] \times [0,\ZZ_3,\ZZ_3,\ZZ_3,\ZZ_3,\ZZ_3^2,0,0]$$
+::: pf-proof
 
-and $$H^*(X)= [\ZZ, \ZZ, 0,\ZZ,\ZZ^2,0,0,\ZZ] \times [0, 0,\ZZ_3,\ZZ_3,\ZZ_3,\ZZ_3,\ZZ_3^2,0] \\ = [\ZZ, \ZZ, \ZZ_3,\ZZ\times \ZZ_3,\ZZ^2\times \ZZ_3,\ZZ_3,\ZZ_3^2,\ZZ].$$
+Use $H_*(L)$ from the statement and $H_*(\Sigma L)$ from Step [](#suspension){.pf-ref}. A $\operatorname{Tor}$ term is nonzero only when both factors have torsion, which happens only for $(i,j)=(1,2)$.
 
+:::
+
+:::
+
+::: {.pf-step #homology}
+
+$$
+H_*(X;\ZZ)\cong \ZZ,\ \ZZ_3,\ \ZZ_3,\ \ZZ\oplus\ZZ_3,\ \ZZ\oplus\ZZ_3,\ \ZZ_3^2,\ 0,\ \ZZ
+$$
+in dimensions $0,1,\ldots,7$, and $H_k(X)=0$ for $k\ge8$.
+
+::: pf-proof
+
+Sum the rows of Step [](#kunneth){.pf-ref} by degree.
+
+:::
+
+:::
+
+::: pf-qed
+
+By the universal coefficient theorem, $H^k(X;\ZZ)\cong\operatorname{Hom}(H_k(X),\ZZ)\oplus\operatorname{Ext}(H_{k-1}(X),\ZZ)$, which is the free part of $H_k$ plus the torsion of $H_{k-1}$. Step [](#homology){.pf-ref} gives
+$$
+H^*(X;\ZZ)\cong \ZZ,\ 0,\ \ZZ_3,\ \ZZ\oplus\ZZ_3,\ \ZZ\oplus\ZZ_3,\ \ZZ_3,\ \ZZ_3^2,\ \ZZ
+$$
+in dimensions $0,1,\ldots,7$, and $H^k(X)=0$ for $k\ge8$.
+
+:::
+
+:::
 
 :::

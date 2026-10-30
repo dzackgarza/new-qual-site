@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TEDZR
 kind: problem
-title: Homology of a solid torus minus two linked solid tori
+title: Homology of a solid torus minus two disjoint solid tori
 classification:
   areas:
   - topology
@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X = S^1 \cross B^2 - L$ where $L$ is two linked solid torii inside a larger solid torus.
-Compute $H_*(X)$.
+Let $L \subseteq V$ be the disjoint union of two solid tori ($S^1 \times B^2$) lying inside a larger solid torus $V = S^1 \times B^2$ as shown in the source figure, and let $X = V - \mathring{L}$ be the complement, obtained by removing the interior of $L$.
+Compute $H_*(X;\ZZ)$.
 :::
 
 ::: {.solution}
