@@ -29,45 +29,16 @@ b. Show that the function $f: \RR^2 \to \RR$ defined by $$f(x,y) = \frac{xy}{x^2
 
 ::: pf
 
-::: {.pf-step #s1}
-
-Part (a): Definition of differentiability:
-
-::: pf-proof
-
 ::: pf-step
 
-A function $f: \RR^n \to \RR$ is differentiable at a point $p \in \RR^n$ if there exists a linear transformation $L: \RR^n \to \RR$ (or equivalently a gradient vector $\nabla f(p) \in \RR^n$ such that $L(h) = \langle \nabla f(p), h \rangle$) satisfying:
+(a) The function $f$ is differentiable at $p$ if there is a linear map $L\colon \RR^n \to \RR$ such that
 $$
 \lim_{h \to 0} \frac{\abs{f(p + h) - f(p) - L(h)}}{\norm{h}} = 0.
 $$
-Equivalently, $f(p + h) = f(p) + L(h) + o(\norm{h})$ as $\norm{h} \to 0$.
 
 ::: pf-proof
 
-standard definition of Fréchet differentiability on $\RR^n$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Part (b): Non-differentiability of $f(x, y)$ at $(0, 0)$:
-
-::: pf-proof
-
-::: {.pf-step #s2-1}
-
-If a function $f$ is differentiable at $p$, then $f$ is continuous at $p$.
-
-::: pf-proof
-
-$\abs{f(p+h) - f(p)} \le \abs{L(h)} + o(\norm{h}) \le \norm{L} \norm{h} + o(\norm{h}) \to 0$ as $h \to 0$.
+This is the definition of (Fréchet) differentiability. The map $L$ is then unique, and $L(h) = \langle \nabla f(p), h \rangle$.
 
 :::
 
@@ -75,59 +46,45 @@ $\abs{f(p+h) - f(p)} \le \abs{L(h)} + o(\norm{h}) \le \norm{L} \norm{h} + o(\nor
 
 ::: pf-step
 
-We evaluate the limit of $f(x, y) = \frac{xy}{x^2 + y^2}$ as $(x, y) \to (0, 0)$ along lines $y = mx$:
-For $x \neq 0$:
+(b) The function $f$ is not differentiable at $(0,0)$.
+
+::: pf-proof
+
+::: {.pf-step #diff-cont}
+
+A function $g\colon \RR^n \to \RR$ that is differentiable at $p$ is continuous at $p$.
+
+::: pf-proof
+
+Let $L$ be as in the definition, and let $r(h) = g(p+h) - g(p) - L(h)$, so that $\abs{r(h)}/\norm{h} \to 0$ as $h \to 0$.
+A linear map on $\RR^n$ is bounded, so there is $C$ with $\abs{L(h)} \le C\norm{h}$.
+Then $\abs{g(p+h) - g(p)} \le C\norm{h} + \abs{r(h)} \to 0$ as $h \to 0$.
+
+:::
+
+:::
+
+::: {.pf-step #discont}
+
+The function $f$ is not continuous at $(0,0)$.
+
+::: pf-proof
+
+For $x \neq 0$,
 $$
-f(x, mx) = \frac{x(mx)}{x^2 + (mx)^2} = \frac{m x^2}{x^2(1 + m^2)} = \frac{m}{1 + m^2}.
+f(x, x) = \frac{x^2}{2x^2} = \frac12.
 $$
-
-::: pf-proof
-
-algebraic substitution $y = mx$.
+Thus $f(x,x) \to \frac12$ as $x \to 0$, but $f(0,0) = 0$.
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Along the line $y = 0$ ($m = 0$), $\lim_{x \to 0} f(x, 0) = 0$.
-Along the line $y = x$ ($m = 1$), $\lim_{x \to 0} f(x, x) = \frac{1}{1 + 1^2} = \frac{1}{2} \neq f(0, 0)$.
-Since the limit depends on the path of approach, $\lim_{(x, y) \to (0, 0)} f(x, y)$ does not exist.
-Thus $f$ is discontinuous at $(0, 0)$.
-
-::: pf-proof
-
-non-uniqueness of directional limits.
+By step [](#discont){.pf-ref}, $f$ is not continuous at $(0,0)$, so by step [](#diff-cont){.pf-ref} it is not differentiable there.
 
 :::
-
-:::
-
-::: pf-step
-
-Since $f$ is not continuous at $(0, 0)$, by step [](#s2-1){.pf-ref} $f$ cannot be differentiable at $(0, 0)$.
-
-::: pf-proof
-
-contrapositive of differentiability implies continuity.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-$f$ is defined to be differentiable if its linear approximation error is $o(\norm{h})$, and $f(x, y) = \frac{xy}{x^2+y^2}$ is not differentiable at $(0, 0)$ due to discontinuity. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
