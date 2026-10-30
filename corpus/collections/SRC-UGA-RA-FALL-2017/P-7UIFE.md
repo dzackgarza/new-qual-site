@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-7UIFE
 kind: problem
-title: 'Approximate identity $K_j=j\varphi(jx)$: $f*K_j$ is smooth of compact support
-  and converges in $L^1$'
+title: 'Mollifiers $K_j=j\varphi(jx)$: $f*K_j$ is smooth and $f*K_j\to f$ in $L^1$'
 classification:
   areas:
   - real-analysis
@@ -24,7 +23,11 @@ Prove:
 
 (a) Each $f * K_j$ is smooth ($C^\infty(\RR)$), and if $f$ is compactly supported, then $f * K_j \in C_c^\infty(\RR)$.
 
-(b) $\lim_{j \to \infty} \norm{f * K_j - f}_{L^1(\RR)} = 0$.
+(b) $\lim_{j \to \infty} \norm{f * K_j - f}_{L^1(\RR)} = 0$. (You may use $\lim_{y\to0}\int_\RR\abs{f(x-y)-f(x)}\,dx=0$ without proof.)
+:::
+
+::: {.remark}
+The exam asks that every $f*K_j$ vanish outside a compact interval. For a general $f\in L^1(\RR)$ this is false: if $f>0$ everywhere and $\varphi\ge0$, then $f*K_j>0$ everywhere. The compact-support conclusion holds when $f$ has compact support, which is the form stated in (a).
 :::
 
 ::: {.solution}

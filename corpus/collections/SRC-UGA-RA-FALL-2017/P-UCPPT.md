@@ -22,20 +22,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x) = x^2$ and $E \subset [0, \infty) \coloneqq \RR^+$.
+Let $f(x) = x^2$ and let $E \subseteq [0, \infty)$.
 
-1. Show that
-$$
-m^*(E) = 0 \iff m^*(f(E)) = 0.
-$$
+(a) Show that $m^*(E) = 0$ if and only if $m^*(f(E)) = 0$, where $m^*$ is Lebesgue outer measure.
 
-2. Deduce that the map
-
-$$
-\phi: \mathcal{L}(\RR^+) &\to \mathcal{L}(\RR^+) \\
-E &\mapsto f(E)
-$$
-  is a bijection from the class of Lebesgue measurable sets of $[0, \infty)$ to itself.
+(b) Deduce that $E\mapsto f(E)$ is a bijection from the class of Lebesgue measurable subsets of $[0, \infty)$ onto itself.
 :::
 
 ::: {.solution}
@@ -127,7 +118,7 @@ Since $f$ is injective,
 $$
 f(E)\triangle f(B)=f(E\triangle B).
 $$
-By part 1, $f(E\triangle B)$ is null, while $f(B)$ is Borel. Therefore $f(E)$ is Lebesgue measurable.
+By part (a), $f(E\triangle B)$ is null, while $f(B)$ is Borel. Therefore $f(E)$ is Lebesgue measurable.
 
 :::
 
