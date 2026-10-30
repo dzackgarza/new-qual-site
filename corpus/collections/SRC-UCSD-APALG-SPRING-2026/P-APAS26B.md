@@ -136,6 +136,7 @@ Thus $\{v_i\}_{i: r_i > 0}$ form an orthonormal set of right singular vectors fo
 ::: pf-qed
 Conclusion:
 The non-zero singular values are $\sigma_i = \sqrt{r_i}$ for $r_i > 0$; the left singular vectors are standard basis vectors $e_i \in \RR^m$, and the right singular vectors are normalized indicator vectors $v_i = \frac{1}{\sqrt{r_i}} \sum_{j \in S_i} \hat{e}_j \in \RR^n$.
+Several rows can have the same sum, so for each nonzero singular value $s$ the left singular space is $\operatorname{span}\{e_i : r_i = s^2\}$, with orthonormal basis $\{e_i : r_i = s^2\}$, and the right singular space is $\operatorname{span}\{v_i : r_i = s^2\}$, with orthonormal basis $\{v_i : r_i = s^2\}$.
 :::
 
 :::

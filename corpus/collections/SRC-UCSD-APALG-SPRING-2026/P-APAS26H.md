@@ -15,6 +15,11 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Solution rewritten: the previous argument was vague and garbled; the new one uses
+    the averaging idempotent and a dimension parity count.'
 ---
 
 ::: {.problem}
@@ -25,85 +30,39 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 :::
 
 ::: {.solution}
+Write $\delta_g$ for the indicator function of $g\in G$, so that $\delta_g*\delta_h=\delta_{gh}$, the unit is $\delta_e$, and $\delta_g^*=\delta_{g^{-1}}$.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-$\mathcal{C}(G) \cong \CC[G]$, the group algebra, which decomposes as $\bigoplus_i M_{n_i}(\CC)$ (by Maschke's theorem and the Artin–Wedderburn theorem).
-
-::: pf-proof
-
-the convolution algebra is the group algebra, which is semisimple.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-For any subgroup $H \le G$, $\mathcal{C}(H) \cong \CC[H]$ is a direct sum of matrix algebras $M_{m_j}(\CC)$.
+::: {.pf-step #idempotent}
+The element $p=\frac1{\cardinality{G}}\sum_{g\in G}\delta_g$ satisfies $p*p=p=p^*$ and $p\ne0,\delta_e$.
 
 ::: pf-proof
-
-same as step [](#s1){.pf-ref} for $H$.
-
+For every $h\in G$, $\delta_h*p=p$, because $g\mapsto hg$ permutes $G$. Averaging over $h$ gives $p*p=p$. Inversion permutes $G$, so $p^*=p$. The coefficient of $\delta_e$ in $p$ is $1/\cardinality{G}$, and the coefficients of $p$ are all equal, so $p\ne0$; since $G$ is nontrivial, $p$ has a nonzero coefficient away from $e$, so $p\ne\delta_e$.
 :::
 
 :::
 
-::: pf-step
-
-Since $\cardinality{G}$ is odd, the group algebra $\CC[G]$ has a nontrivial $1$-dimensional factor (the trivial representation), and more importantly, $\CC[G]$ contains a copy of $\CC$ (the trivial representation) as a direct summand.
+::: {.pf-step #subalgebra}
+$\mathcal{B}=\operatorname{span}\{p,\ \delta_e-p\}$ is a subalgebra of $\mathcal{C}(G)$ isomorphic to $\CC\oplus\CC$, and $\dim\mathcal{B}=2$.
 
 ::: pf-proof
-
-the trivial representation is always present.
-
+By step [](#idempotent){.pf-ref}, $p$ and $q=\delta_e-p$ are nonzero self-adjoint idempotents with $p+q=\delta_e$ and $p*q=q*p=p-p*p=0$. Hence $\mathcal{B}$ contains the unit, is closed under convolution and conjugation, and $ap+bq\mapsto(a,b)$ is an isomorphism onto $\CC\oplus\CC$ with componentwise operations. Linear independence of $p$ and $q$ follows from $p*q=0$ with $p,q\ne0$.
 :::
 
 :::
 
-::: pf-step
-
-Consider the subalgebra $\mathcal{B} = \CC \oplus \CC$ (the direct sum of two copies of $\CC$, embedded as the span of the trivial character and one other $1$-dimensional character, or more simply as a $2$-dimensional commutative subalgebra).
+::: {.pf-step #subgroups}
+For a subgroup $H\le G$, $\dim\mathcal{C}(H)=\cardinality{H}$ is odd.
 
 ::: pf-proof
-
-construct a candidate subalgebra.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Since $\cardinality{G}$ is odd, $G$ has no element of order $2$, so $\CC[G]$ has no nontrivial $1$-dimensional real subalgebra of the form $\CC \oplus \CC$ arising from a subgroup of order $2$; more precisely, any subgroup $H$ of odd order has $\CC[H]$ with an odd number of $1$-dimensional factors, so $\CC[H]$ cannot be isomorphic to $\CC \oplus \CC$ (which has two $1$-dimensional factors).
-
-::: pf-proof
-
-a subgroup $H$ of odd order has $\CC[H] \cong \bigoplus_j M_{m_j}(\CC)$ where the number of $1$-dimensional factors equals the number of linear characters of $H$, which is $\cardinality{H^{\mathrm{ab}}}$, an odd number.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $\mathcal{B} = \CC \oplus \CC$ is a subalgebra of $\mathcal{C}(G)$ that is not isomorphic to $\mathcal{C}(H)$ for any subgroup $H$ (since $\mathcal{C}(H)$ has an odd number of $1$-dimensional factors, while $\mathcal{B}$ has two).
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s5){.pf-ref}.
-
+$\mathcal{C}(H)$ has the basis $\{\delta_h:h\in H\}$, and $\cardinality{H}$ divides the odd number $\cardinality{G}$ by Lagrange's theorem.
 :::
 
 :::
 
 ::: pf-qed
-
-Step [](#s6){.pf-ref}.
-
+An isomorphism preserves dimension. By steps [](#subalgebra){.pf-ref} and [](#subgroups){.pf-ref}, $\dim\mathcal{B}=2$ is even and $\dim\mathcal{C}(H)$ is odd for every $H\le G$, so $\mathcal{B}$ is isomorphic to no $\mathcal{C}(H)$.
 :::
 
 :::
