@@ -133,5 +133,5 @@ A union of connected subspaces with a common point is connected.
 
 :::
 
-![Image](../../assets/figures/2020-01-21-20%3A53.png)
+![The horizontal slice $X\times\{b\}$ and a vertical slice $\{x\}\times Y$ meeting at $(x,b)$.](../../../assets/figures/2020-01-21-20%3A53.png)
 :::
