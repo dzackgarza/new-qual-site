@@ -11,11 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $S _ { n }$ be the group of permutations of $\{ 1 , \ldots , n \}$ , and let $A _ { n }$ be the alternating subgroup. Suppose $m \leq n$
+Let $S_{n}$ be the group of permutations of $\{1, \ldots, n\}$, and let $A_{n}$ be the alternating subgroup. Suppose $m \leq n$.
 
-(a) Identify $S _ { m }$ with the subgroup of $S _ { n }$ consisting of elements that fix $m + 1 , \ldots , n$ Prove that $A _ { n } \cap S _ { m } = A _ { m }$
+(a) Identify $S_{m}$ with the subgroup of $S_{n}$ consisting of elements that fix $m + 1, \ldots, n$. Prove that $A_{n} \cap S_{m} = A_{m}$.
 
-(b) Is it true in general that if $f \colon S _ { m } \to S _ { n }$ is an injective homomorphism, then $A _ { n } \bigcap { f ( S _ { m } ) } = f ( A _ { m } ) ?$ Give a proof or a counterexample.
+(b) Is it true in general that if $f \colon S_{m} \to S_{n}$ is an injective homomorphism, then $A_{n} \cap f(S_{m}) = f(A_{m})$? Give a proof or a counterexample.
 :::
 
 ::: {.solution}

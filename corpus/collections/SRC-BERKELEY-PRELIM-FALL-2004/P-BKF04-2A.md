@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-For $c \in \QQ$ , define $R _ { c } : = \QQ [ x ] / ( x ^ { 3 } - c x )$ . Let $a , b \in \QQ$ . Show that the rings $R _ { a }$ and $R _ { b }$ are isomorphic if and only if there exists a nonzero $r \in \QQ$ such that $b = r ^ { 2 } a$
+For $c \in \QQ$, define $R_{c} := \QQ[x]/(x^{3} - cx)$. Let $a, b \in \QQ$. Show that the rings $R_{a}$ and $R_{b}$ are isomorphic if and only if there exists a nonzero $r \in \QQ$ such that $b = r^{2}a$.
 :::
 
 ::: {.solution}

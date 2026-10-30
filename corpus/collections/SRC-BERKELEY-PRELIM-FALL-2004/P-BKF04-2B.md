@@ -11,17 +11,15 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f \colon  { \RR } ^ { 3 } \to  { \RR }$ be a continuous function of compact support (i.e., $f$ vanishes outside some bounded set).
+Let $f \colon \RR^{3} \to \RR$ be a continuous function of compact support (i.e., $f$ vanishes outside some bounded set).
 
 (a) Show that
-
 $$
-u ( x ) : = \int { \frac { f ( y ) } { \norm{ x - y } } } d y
+u(x) := \int \frac{f(y)}{\norm{x - y}}\, dy
 $$
+converges, where the integral is over all $y \in \RR^{3}$.
 
-converges, where the integral is over all $\boldsymbol { y } \in \RR ^ { 3 }$
-
-(b) Show that $\lim_{\norm{x}\to\infty}u(x)\norm{x}$ exists.
+(b) Show that $\lim_{\norm{x}\to\infty} u(x)\norm{x}$ exists.
 :::
 
 ::: {.solution}

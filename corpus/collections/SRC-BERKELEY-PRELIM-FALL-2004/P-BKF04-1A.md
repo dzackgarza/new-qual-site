@@ -11,13 +11,14 @@ review: draft
 ---
 
 ::: {.problem}
-Show that there is a unique piecewise continuous function $y ( x )$ on R satisfying the two conditions
-
+Show that there is a unique piecewise continuous function $y(x)$ on $\RR$ satisfying the two conditions
 $$
-\begin{array} { l l l } { { y ( x ) = \displaystyle \int _ { 0 } ^ { \infty } e ^ { - 2 s } y ( x - s ) d s ~ } } & { { \qquad } } & { { \mathrm { f o r ~ } x > 0 , \mathrm { a n d ~ } } } \\ { { y ( x ) = e ^ { x } , ~ } } & { { \qquad } } & { { \mathrm { f o r ~ } x \le 0 , } } \end{array}
+\begin{aligned}
+y(x) &= \int_{0}^{\infty} e^{-2s}\, y(x-s)\, ds && \text{for } x > 0, \text{ and} \\
+y(x) &= e^{x} && \text{for } x \le 0,
+\end{aligned}
 $$
-
-and find an explicit formula for $y ( x )$ for $x > 0$
+and find an explicit formula for $y(x)$ for $x > 0$.
 :::
 
 ::: {.solution}
