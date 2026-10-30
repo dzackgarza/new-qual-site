@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-a. Prove that every cubic 3 edge-connected graph is 3-connected.
+a. Prove that every cubic 3-edge-connected graph is 3-connected.
 
-b. Let us define a snarl as a graph that can be obtained from $K _ { 4 }$ by repeated applications of the operation of subdividing two edges and joining the two new vertices.
+b. Let us define a snarl as a graph that can be obtained from $K_{4}$ by repeated applications of the operation of subdividing two edges and joining the two new vertices.
    Show that every snarl is 3-connected.
    (In fact it is true that every 3-connected cubic graph is a snarl.)
 :::

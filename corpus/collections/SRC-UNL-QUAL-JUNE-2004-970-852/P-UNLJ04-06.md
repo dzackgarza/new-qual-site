@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $A _ { 1 } , A _ { 2 } , \ldots , A _ { n }$ be finite sets, and $d _ { 1 } , d _ { 2 } , \ldots , d _ { n }$ non-negative integers.
-Prove that there are disjoint subsets $D _ { i } \subset A _ { i }$ with $\cardinality{ D _ { i } } = d _ { i }$ if and only if for all $I \subset$ $\{ 1 , 2 , \ldots , n \}$ we have
+Let $A_{1}, A_{2}, \ldots, A_{n}$ be finite sets, and $d_{1}, d_{2}, \ldots, d_{n}$ non-negative integers.
+Prove that there are disjoint subsets $D_{i} \subset A_{i}$ with $\cardinality{D_{i}} = d_{i}$ if and only if for all $I \subset \{1, 2, \ldots, n\}$ we have
 
 $$
-\cardinality{ \bigcup _ { i \in I } A _ { i } } \geq \sum _ { i \in I } d _ { i } .
+\cardinality{\bigcup_{i \in I} A_{i}} \geq \sum_{i \in I} d_{i}.
 $$
 :::
 
