@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Decide whether or not each of the following fields is a splitting field over $\QQ$.
 
-a. $\QQ(\sqrt[3]{2})$.
+(a) $\QQ(\sqrt[3]{2})$.
 
-b. $\QQ(\sqrt{2} + \sqrt{5})$.
+(b) $\QQ(\sqrt{2} + \sqrt{5})$.
 :::
 
 ::: {.solution}

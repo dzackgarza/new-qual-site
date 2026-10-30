@@ -19,11 +19,11 @@ audit:
   date: 2026-08-29
 ---
 ::: {.problem}
-Let $\FF_p$ be the finite field with $p$ elements, and let $f(x) \in \FF_p[x]$ be a polynomial of degree 4.
+Let $\FF_p$ be the finite field with $p$ elements, and let $f(x) \in \FF_p[x]$ be a polynomial of degree $4$.
 
-a. Show that $f(x)$ is irreducible if and only if the polynomials $f(x)$ and $x^{p^2} - x$ are relatively prime.
+(a) Show that $f(x)$ is irreducible if and only if the polynomials $f(x)$ and $x^{p^2} - x$ are relatively prime.
 
-b. Assuming $f(x)$ is irreducible over $\FF_p$, describe the Galois group of $f(x)$ over $\FF_p$.
+(b) Assuming $f(x)$ is irreducible over $\FF_p$, describe the Galois group of $f(x)$ over $\FF_p$.
 Include a generating set for the Galois group in your answer.
 :::
 
