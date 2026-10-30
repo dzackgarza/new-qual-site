@@ -768,7 +768,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/modules/index.md
   - [x] wiki/algebra/modules/over-a-pid.md
   - [x] wiki/algebra/representations/characters.md
-  - [ ] wiki/algebra/representations/index.md
+  - [x] wiki/algebra/representations/index.md
   - [ ] wiki/algebra/representations/maschke-and-schur.md
   - [ ] wiki/algebra/resources/books-notes.md
   - [ ] wiki/algebra/resources/external.md
