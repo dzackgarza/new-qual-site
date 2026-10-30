@@ -16,17 +16,15 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose f and g are holomorphic in a region containing the disc $\abs{ z } \leq 1$ Suppose that f has a simple zero at $z = 0$ and vanishes nowhere else in $\abs{ z } \leq 1$ Let
-
+Suppose $f$ and $g$ are holomorphic in a region containing the disc $\abs{z} \leq 1$. Suppose that $f$ has a simple zero at $z = 0$ and vanishes nowhere else in $\abs{z} \leq 1$. Let
 $$
-f _ {\epsilon} (z) = f (z) + \epsilon g (z).
+f_\epsilon(z) = f(z) + \epsilon g(z).
 $$
+Show that if $\epsilon$ is sufficiently small, then
 
-Show that if ǫ is suficiently small, then
+(a) $f_\epsilon(z)$ has a unique zero in $\abs{z} \leq 1$, and
 
-(a) $f _ { \epsilon } ( z )$ has a unique zero in $\abs{ z } \leq 1$ , and
-
-(b) $\mathrm { i f } \ z _ { \epsilon }$ is this zero, the mapping $\epsilon \mapsto z _ { \epsilon }$ is continuous.
+(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.
 :::
 
 ::: {.solution}

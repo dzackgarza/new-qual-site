@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that there is no holomorphic function f in the unit disc D that extends continuously to $\partial D$ such that $f ( z ) = 1 / z \ \mathrm { f o r } \ z \in \partial \DD$
+Show that there is no holomorphic function $f$ in the unit disc $\DD$ that extends continuously to $\partial\DD$ such that $f(z) = 1/z$ for $z \in \partial\DD$.
 :::
 
 ::: {.solution}

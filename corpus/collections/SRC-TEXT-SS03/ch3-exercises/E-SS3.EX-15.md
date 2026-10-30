@@ -18,20 +18,17 @@ audit:
 ::: {.exercise}
 Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 
-(a) Prove that if f is an entire function that satisfies
-
+(a) Prove that if $f$ is an entire function that satisfies
 $$
-\sup _ {\abs{ z } = R} \abs{ f (z) } \leq A R ^ {k} + B
+\sup_{\abs{z} = R} \abs{f(z)} \leq AR^k + B
 $$
+for all $R > 0$, and for some integer $k \geq 0$ and some constants $A, B > 0$, then $f$ is a polynomial of degree $\leq k$.
 
-for all $R > 0$ , and for some integer $k \geq 0$ and some constants $A , B > 0$ , then f is a polynomial of degree $\leq k$
+(b) Show that if $f$ is holomorphic in the unit disc, is bounded, and converges uniformly to zero in the sector $\theta < \arg z < \varphi$ as $\abs{z} \to 1$, then $f = 0$.
 
-(b) Show that if f is holomorphic in the unit disc, is bounded, and converges uniformly to zero in the sector $\theta < \arg z < \varphi { \mathrm { ~ a s ~ } } \abs{ z } \to 1$ , then $f = 0$
+(c) Let $w_1, \ldots, w_n$ be points on the unit circle in the complex plane. Prove that there exists a point $z$ on the unit circle such that the product of the distances from $z$ to the points $w_j$, $1 \leq j \leq n$, is at least $1$. Conclude that there exists a point $w$ on the unit circle such that the product of the distances from $w$ to the points $w_j$, $1 \leq j \leq n$, is exactly equal to $1$.
 
-(c) Let $w _ { 1 } , \ldots , w _ { n }$ be points on the unit circle in the complex plane.
-Prove that there exists a point z on the unit circle such that the product of the distances from z to the points $w_j$, $1 \leq j \leq n _ { \mathrm { : } }$ , is at least 1. Conclude that there exists a point w on the unit circle such that the product of the distances from w to the points $w_j$ , $1 \leq j \leq n$ , is exactly equal to 1.
-
-(d) Show that if the real part of an entire function f is bounded, then f is constant.
+(d) Show that if the real part of an entire function $f$ is bounded, then $f$ is constant.
 :::
 
 ::: {.solution}

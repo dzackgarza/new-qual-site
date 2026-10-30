@@ -18,30 +18,21 @@ audit:
 ---
 
 ::: {.exercise}
-Let u be a harmonic function in the unit disc that is continuous on its closure.
-   Deduce Poisson’s integral formula
-
+Let $u$ be a harmonic function in the unit disc that is continuous on its closure. Deduce Poisson's integral formula
 $$
-u (z _ {0}) = \frac {1}{2 \pi} \int_ {0} ^ {2 \pi} \frac {1 - \abs{ z _ {0} } ^ {2}}{\abs{ e ^ {i \theta} - z _ {0} } ^ {2}} u (e ^ {i \theta}) d \theta \quad \mathrm{for} \abs{ z _ {0} } <   1
+u(z_0) = \frac{1}{2\pi} \int_0^{2\pi} \frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2}\, u(e^{i\theta})\, d\theta \quad \text{for } \abs{z_0} < 1
 $$
-
-from the special case $z _ { 0 } = 0$ (the mean value theorem).
-Show that if $z _ { 0 } = r e ^ { i \varphi }$ ， then
-
+from the special case $z_0 = 0$ (the mean value theorem). Show that if $z_0 = re^{i\varphi}$, then
 $$
-\frac {1 - \abs{ z _ {0} } ^ {2}}{\abs{ e ^ {i \theta} - z _ {0} } ^ {2}} = \frac {1 - r ^ {2}}{1 - 2 r \cos (\theta - \varphi) + r ^ {2}} = P _ {r} (\theta - \varphi),
+\frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi),
 $$
-
 and we recover the expression for the Poisson kernel derived in the exercises of the previous chapter.
 
-[Hint: Set $u _ { 0 } ( z ) = u ( T ( z ) )$ where
-
+[Hint: Set $u_0(z) = u(T(z))$ where
 $$
-T (z) = \frac {z _ {0} - z}{1 - \overline {{z _ {0}}} z}.
+T(z) = \frac{z_0 - z}{1 - \overline{z_0} z}.
 $$
-
-Prove that $u _ { 0 }$ is harmonic.
-Then apply the mean value theorem to $u _ { 0 }$ , and make a change of variables in the integral.]
+Prove that $u_0$ is harmonic. Then apply the mean value theorem to $u_0$, and make a change of variables in the integral.]
 :::
 
 ::: {.solution}

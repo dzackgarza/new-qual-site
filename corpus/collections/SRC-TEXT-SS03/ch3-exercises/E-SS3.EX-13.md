@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $f ( z )$ is holomorphic in a punctured disc $D _ { r } ( z _ { 0 } ) - \{ z _ { 0 } \}$ . Suppose also that
-
+Suppose $f(z)$ is holomorphic in a punctured disc $D_r(z_0) - \{z_0\}$. Suppose also that
 $$
-\abs{ f (z) } \leq A \abs{ z - z _ {0} } ^ {- 1 + \epsilon}
+\abs{f(z)} \leq A\abs{z - z_0}^{-1+\epsilon}
 $$
-
-for some $\epsilon > 0$ , and all $z \ \mathrm { n e a r } \ z _ { 0 }$ . Show that the singularity of $f$ at $z _ { 0 }$ is removable.
+for some $\epsilon > 0$, and all $z$ near $z_0$. Show that the singularity of $f$ at $z_0$ is removable.
 :::
 
 ::: {.solution}

@@ -16,28 +16,22 @@ audit:
 ---
 
 ::: {.exercise}
-This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions.
-    If U is an open subset of C we use the notation
-
+This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions. If $U$ is an open subset of $\CC$ we use the notation
 $$
-\norm{ f } _ {L ^ {2} (U)} = \left(\int_ {U} \abs{ f (z) } ^ {2} d x d y\right) ^ {1 / 2}
+\norm{f}_{L^2(U)} = \left( \int_U \abs{f(z)}^2\, dx\, dy \right)^{1/2}
 $$
-
 for the mean square norm, and
-
 $$
-\norm{ f } _ {L ^ {\infty} (U)} = \sup _ {z \in U} \abs{ f (z) }
+\norm{f}_{L^\infty(U)} = \sup_{z \in U} \abs{f(z)}
 $$
-
 for the sup norm.
 
-(a) If f is holomorphic in a neighborhood of the disc $D _ { r } ( z _ { 0 } )$ , show that for any $0 < s < r$ there exists a constant $C > 0$ (which depends on s and $r )$ such that
-
+(a) If $f$ is holomorphic in a neighborhood of the disc $D_r(z_0)$, show that for any $0 < s < r$ there exists a constant $C > 0$ (which depends on $s$ and $r$) such that
 $$
-\norm{ f } _ {L ^ {\infty} (D _ {s} (z _ {0}))} \leq C \norm{ f } _ {L ^ {2} (D _ {r} (z _ {0}))}.
+\norm{f}_{L^\infty(D_s(z_0))} \leq C\norm{f}_{L^2(D_r(z_0))}.
 $$
 
-(b) Prove that if $\left\{ f _ { n } \right\}$ is a Cauchy sequence of holomorphic functions in the mean square norm $\norm{ \cdot } _ { L ^ { 2 } ( U ) }$ , then the sequence $\left\{ f _ { n } \right\}$ converges uniformly on every compact subset of $\dot { U }$ to a holomorphic function.
+(b) Prove that if $\{f_n\}$ is a Cauchy sequence of holomorphic functions in the mean square norm $\norm{\cdot}_{L^2(U)}$, then the sequence $\{f_n\}$ converges uniformly on every compact subset of $U$ to a holomorphic function.
 
 [Hint: Use the mean-value property.]
 :::

@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\mathrm { i f } \ \abs{ a } < 1$ , then
-
+Show that if $\abs{a} < 1$, then
 $$
-\int_ {0} ^ {2 \pi} \log \abs{ 1 - a e ^ {i \theta} } d \theta = 0.
+\int_0^{2\pi} \log\abs{1 - ae^{i\theta}}\, d\theta = 0.
 $$
-
-Then, prove that the above result remains true if we assume only that $\abs{ a } \le 1$
+Then, prove that the above result remains true if we assume only that $\abs{a} \leq 1$.
 :::
 
 ::: {.solution}

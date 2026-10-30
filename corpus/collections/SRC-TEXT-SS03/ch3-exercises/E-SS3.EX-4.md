@@ -17,9 +17,8 @@ audit:
 
 ::: {.exercise}
 Show that
-
 $$
-\int_ {- \infty} ^ {\infty} \frac {x \sin x}{x ^ {2} + a ^ {2}} d x = \pi e ^ {- a}, \quad \text { for   all } a > 0.
+\int_{-\infty}^{\infty} \frac{x\sin x}{x^2 + a^2}\, dx = \pi e^{-a}, \quad \text{for all } a > 0.
 $$
 :::
 
