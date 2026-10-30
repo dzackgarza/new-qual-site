@@ -22,6 +22,11 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Hungerford V.6.1 prints nv in K, so the statement stays; a remark proves the purely inseparable
+    v^n in K version.
 ---
 
 ::: {.problem}
@@ -87,4 +92,12 @@ $$
 
 :::
 
+:::
+
+::: {.remark}
+The same hypotheses give a multiplicative version that uses the exponent instead of the
+multiple. If $v\in F$ is purely inseparable over $K$ and $v^n\in K$, then $v\in K$. Indeed,
+$v^{p^e}\in K$ for some $e\ge0$. Since $(n,p^e)=1$, there are integers $a,b$ with $an+bp^e=1$,
+and so $v=(v^n)^a\,(v^{p^e})^b\in K$. This needs $v\ne0$ when $a$ or $b$ is negative, and
+$v=0$ is already in $K$.
 :::
