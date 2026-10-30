@@ -5,7 +5,8 @@ kind: problem
 title: $\norm{A^n}=O(n^{d-1})$ when every eigenvalue of $A$ has modulus $1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

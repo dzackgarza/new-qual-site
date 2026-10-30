@@ -5,7 +5,8 @@ kind: problem
 title: Every real invertible $2\times2$ matrix is an $n$-th power exactly when $n$ is odd
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

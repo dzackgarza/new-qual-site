@@ -5,7 +5,8 @@ kind: problem
 title: A common eigenvector when $AB-BA$ is a linear combination of $A$ and $B$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

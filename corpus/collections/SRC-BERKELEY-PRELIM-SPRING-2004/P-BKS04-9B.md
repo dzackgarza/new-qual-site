@@ -5,7 +5,8 @@ kind: problem
 title: Every automorphism of $S_4$ is inner, so $\cardinality{\operatorname{Aut}(S_4)}=24$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

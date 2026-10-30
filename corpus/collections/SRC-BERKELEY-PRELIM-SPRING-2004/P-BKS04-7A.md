@@ -5,7 +5,8 @@ kind: problem
 title: The Dirichlet integral $\int_0^\infty\sin x/x\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

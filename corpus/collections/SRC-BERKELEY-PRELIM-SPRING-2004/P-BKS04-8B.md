@@ -5,7 +5,8 @@ kind: problem
 title: Limit of $n((1+x/n)^n-e^x)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

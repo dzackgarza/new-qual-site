@@ -5,7 +5,8 @@ kind: problem
 title: A multilinear map vanishing on equal adjacent arguments is zero when $\dim V<n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Harmonic $u_n$ with $\partial_yu_n(x,0)=0$ and $u_n(x,0)\to0$ uniformly need not tend to $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

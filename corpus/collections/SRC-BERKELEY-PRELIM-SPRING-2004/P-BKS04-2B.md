@@ -5,7 +5,8 @@ kind: problem
 title: Maximum of $\abs{f'(1)}$ for $f$ holomorphic with $\abs{f}\le1$ on $\abs{z}=2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Unique maximum of $\log\prod x_i$ on the simplex $\sum a_ix_i=1$, $x_i>0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

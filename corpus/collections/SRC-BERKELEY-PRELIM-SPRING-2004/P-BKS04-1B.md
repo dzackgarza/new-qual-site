@@ -5,7 +5,8 @@ kind: problem
 title: $y^2+a(x)y+b(x)$ is irreducible over $F(x)$ when $\deg a\le g$ and $\deg b=2g+1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

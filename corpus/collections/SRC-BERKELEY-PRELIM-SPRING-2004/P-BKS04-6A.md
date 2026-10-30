@@ -5,7 +5,8 @@ kind: problem
 title: Integers $a,b$ with $\ZZ[x]/(x^2+ax+b)\cong\ZZ\times\ZZ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

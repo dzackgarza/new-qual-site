@@ -5,7 +5,8 @@ kind: problem
 title: A finite group with pairwise noncommuting elements of prescribed orders
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

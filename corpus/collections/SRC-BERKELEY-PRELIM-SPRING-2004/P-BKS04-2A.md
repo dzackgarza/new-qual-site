@@ -5,7 +5,8 @@ kind: problem
 title: A countable abelian group with $2^{\aleph_0}$ endomorphisms
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

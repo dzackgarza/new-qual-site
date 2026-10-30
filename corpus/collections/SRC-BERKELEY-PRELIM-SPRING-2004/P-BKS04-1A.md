@@ -5,7 +5,8 @@ kind: problem
 title: Locally uniform convergence on $[a,b]$ is uniform
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

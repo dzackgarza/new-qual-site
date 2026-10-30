@@ -5,7 +5,8 @@ kind: problem
 title: Rational interpolation with prescribed pole-order bounds
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
