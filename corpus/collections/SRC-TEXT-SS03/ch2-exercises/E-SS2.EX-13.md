@@ -46,3 +46,8 @@ Every discrete subset of $\CC$ is countable: for each of its points choose a dis
 
 Therefore some $f^{(n)}$ is identically zero, and consequently $f$ is a polynomial.
 :::
+
+::: {.remark title="Variations"}
+The conclusion holds for $f$ holomorphic on a connected open set $\Omega\subseteq\CC$ in place of $\CC$.
+The proof applies unchanged with $\Omega$ in place of $\CC$: on a connected $\Omega$, $f^{(n)}\equiv0$ makes $f$ a polynomial of degree at most $n-1$, each $Z_n$ is otherwise discrete in $\Omega$ and so countable, and $\Omega$ is uncountable.
+:::

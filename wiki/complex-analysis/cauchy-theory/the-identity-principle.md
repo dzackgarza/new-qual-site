@@ -59,5 +59,4 @@ Then for fixed $z\in\CC$, $w\mapsto F(z,w)$ is entire and vanishes on $\RR$, so 
 
 ## Problems
 
-[[E-G4N4D]]
 [[E-SS2.EX-13]]
