@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Do the series $\sum _ { n = 1 } ^ { \infty } { \frac { n ! } { 2 ^ { n ^ { 2 } } } }$ and $\sum _ { n = 1 } ^ { \infty } { \frac { n ^ { \sqrt { n } } } { 2 ^ { n } } }$ converge or diverge?
+Do the series $\displaystyle \sum_{n=1}^{\infty} \frac{n!}{2^{n^{2}}}$ and $\displaystyle \sum_{n=1}^{\infty} \frac{n^{\sqrt{n}}}{2^{n}}$ converge or diverge?
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-What volume is created if the area between $f ( x ) = x$ and $g ( x ) = x ^ { 2 }$ for $x \in [ 0 , 1 ]$ is revolved about the x-axis? What if the same area is revolved about the y-axis?
+What volume is created if the area between $f(x) = x$ and $g(x) = x^{2}$ for $x \in [0, 1]$ is revolved about the $x$-axis? What if the same area is revolved about the $y$-axis?
 :::
 
 ::: {.solution}

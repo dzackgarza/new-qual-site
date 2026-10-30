@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\int _ { 0 } ^ { \infty } \frac { \log ( t ) } { 1 + t ^ { 2 } } d t .$
+Compute $\displaystyle \int_{0}^{\infty} \frac{\log(t)}{1 + t^{2}}\, dt$.
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\int { \frac { x + 2 } { x ^ { 3 } - x ^ { 2 } + 2 x - 2 } } d x .$
+Compute $\displaystyle \int \frac{x + 2}{x^{3} - x^{2} + 2x - 2}\, dx$.
 :::
 
 ::: {.solution}

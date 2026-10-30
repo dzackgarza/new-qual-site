@@ -12,19 +12,15 @@ review: draft
 ---
 
 ::: {.problem}
-Find a sequence $\left( a _ { n } \right)$ such that $a _ { n } > 0$ for all $n \in \NN$ and $a _ { n } \to 0$ but
-
+Find a sequence $(a_{n})$ such that $a_{n} > 0$ for all $n \in \NN$ and $a_{n} \to 0$ but
 $$
-\sum _ { n = 1 } ^ { \infty } ( - 1 ) ^ { n } a _ { n } \mathrm { d i v e r g e s } .
+\sum_{n=1}^{\infty} (-1)^{n} a_{n} \text{ diverges}.
 $$
-
-[Note: this shows that the assumption that $a _ { n }$ is decreasing is necessary in the Alternating Series Test.] Find a sequence $\left( b _ { n } \right)$ such that
-
+[Note: this shows that the assumption that $a_{n}$ is decreasing is necessary in the Alternating Series Test.] Find a sequence $(b_{n})$ such that
 $$
-\sum _ { n = 1 } ^ { \infty } b _ { n } \mathrm { c o n v e r g e s ~ w h i l e } \sum _ { n = 1 } ^ { \infty } b _ { n } ^ { 2 } \mathrm { d i v e r g e s } .
+\sum_{n=1}^{\infty} b_{n} \text{ converges while } \sum_{n=1}^{\infty} b_{n}^{2} \text{ diverges}.
 $$
-
-Is it possible to choose $\left( b _ { n } \right)$ so that $\sum _ { n = 1 } ^ { \infty } b _ { n }$ converges absolutely while $\textstyle \sum _ { n = 1 } ^ { \infty } b _ { n } ^ { 2 }$ diverges?
+Is it possible to choose $(b_{n})$ so that $\sum_{n=1}^{\infty} b_{n}$ converges absolutely while $\sum_{n=1}^{\infty} b_{n}^{2}$ diverges?
 :::
 
 ::: {.solution}

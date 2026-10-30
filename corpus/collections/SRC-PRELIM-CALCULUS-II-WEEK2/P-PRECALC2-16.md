@@ -13,9 +13,8 @@ review: draft
 
 ::: {.problem}
 Decide whether the following series converge or diverge:
-
 $$
-( \mathrm { a } ) \sum _ { n = 1 } ^ { \infty } [ 1 - \operatorname { t a n h } ( n ) ] , \quad \quad ( \mathrm { b } ) \sum _ { n = 1 } ^ { \infty } \left( { \frac { \pi } { 2 } } - \arctan ( n ) \right) .
+\text{(a)}\ \sum_{n=1}^{\infty} \left[ 1 - \tanh(n) \right], \qquad \text{(b)}\ \sum_{n=1}^{\infty} \left( \frac{\pi}{2} - \arctan(n) \right).
 $$
 :::
 

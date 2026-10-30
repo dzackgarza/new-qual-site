@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the integral $\int _ { 0 } ^ { 1 } \frac { \log ( 1 + t ) } { 1 + t ^ { 2 } } d t .$
+Compute the integral $\displaystyle \int_{0}^{1} \frac{\log(1 + t)}{1 + t^{2}}\, dt$.
 :::
 
 ::: {.solution}

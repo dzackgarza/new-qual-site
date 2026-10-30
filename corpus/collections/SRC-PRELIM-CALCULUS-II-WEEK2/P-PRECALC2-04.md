@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Perform the integral $\int _ { - \infty } ^ { x } { \frac { d t } { \cosh ( t ) } }$ . (Recall $\begin{array} { r } { \cosh ( t ) = \frac { e ^ { t } + e ^ { - t } } { 2 } ) } \end{array}$
+Perform the integral $\displaystyle \int_{-\infty}^{x} \frac{dt}{\cosh(t)}$. (Recall $\cosh(t) = \frac{e^{t} + e^{-t}}{2}$.)
 :::
 
 ::: {.solution}

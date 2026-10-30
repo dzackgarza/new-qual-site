@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\int _ { e ^ { - 3 } } ^ { e ^ { - 2 } } \frac { d x } { x \log ( x ) } .$
+Compute $\displaystyle \int_{e^{-3}}^{e^{-2}} \frac{dx}{x \log(x)}$.
 :::
 
 ::: {.solution}

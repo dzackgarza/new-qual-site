@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\int _ { 0 } ^ { \pi / 2 } \frac { d x } { 1 + \tan ( x ) ^ { 2 0 2 0 } } .$
+Compute $\displaystyle \int_{0}^{\pi/2} \frac{dx}{1 + \tan(x)^{2020}}$.
 :::
 
 ::: {.solution}

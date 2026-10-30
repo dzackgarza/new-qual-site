@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Decide whether the following integral converges: $\int _ { 0 } ^ { \infty } { \frac { d x } { 1 + x ^ { 4 } \sin ^ { 2 } ( x ) } }$
+Decide whether the following integral converges: $\displaystyle \int_{0}^{\infty} \frac{dx}{1 + x^{4} \sin^{2}(x)}$.
 :::
 
 ::: {.solution}

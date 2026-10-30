@@ -12,10 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Fix an integer $m > 0$ . Evaluate the infinite sum
-
+Fix an integer $m > 0$. Evaluate the infinite sum
 $$
-\sum _ { n = 1 } ^ { \infty } { \frac { m } { n ( n + m ) } } .
+\sum_{n=1}^{\infty} \frac{m}{n(n + m)}.
 $$
 :::
 

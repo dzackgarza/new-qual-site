@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $( x ( t ) , y ( t ) )$ for $t \in [ a , b ]$ is the parameterization a curve and that $x ^ { \prime } ( t ) \neq 0$ for all $t \in [ a , b ]$ . Find $\textstyle { \frac { d y } { d x } }$ and $\textstyle { \frac { d ^ { 2 } y } { d x ^ { 2 } } }$ as functions of t.
+Suppose that $(x(t), y(t))$ for $t \in [a, b]$ is the parameterization of a curve and that $x'(t) \neq 0$ for all $t \in [a, b]$. Find $\frac{dy}{dx}$ and $\frac{d^{2} y}{dx^{2}}$ as functions of $t$.
 :::
 
 ::: {.solution}
