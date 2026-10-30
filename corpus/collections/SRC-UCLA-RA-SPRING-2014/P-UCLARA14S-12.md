@@ -5,7 +5,7 @@ kind: problem
 title: 'Zeros of $z^6+iz^4+1$ in the upper half-plane'
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics: []
 relations: []
 review: draft
