@@ -6,7 +6,10 @@ title: Hamel spanning and weakly null unit vectors in Hilbert space
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
+  - Weak Convergence
+  - Baire Category
 relations: []
 review: draft
 audit:

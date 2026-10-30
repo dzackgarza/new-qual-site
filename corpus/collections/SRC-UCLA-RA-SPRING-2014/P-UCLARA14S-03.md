@@ -6,7 +6,9 @@ title: Lebesgue criterion for Riemann integrability
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Riemann Integrability
+  - Continuity
 relations: []
 review: draft
 audit:

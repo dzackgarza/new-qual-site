@@ -6,7 +6,10 @@ title: 'Almost-everywhere finiteness of a fractional potential of an $L^1$ funct
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 audit:

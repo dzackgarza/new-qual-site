@@ -6,7 +6,10 @@ title: 'Layer-cake formula for the $L^1$ distance'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fubini-Tonelli
+  - L¹
+  - Measure Theory
 relations: []
 review: draft
 audit:

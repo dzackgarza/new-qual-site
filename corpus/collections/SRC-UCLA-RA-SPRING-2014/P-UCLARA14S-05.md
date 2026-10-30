@@ -6,7 +6,10 @@ title: Separability of sequence spaces and nonexistence of a quotient map from e
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Separability
+  - Banach Spaces
+  - Bounded Operators
 relations: []
 review: draft
 audit:

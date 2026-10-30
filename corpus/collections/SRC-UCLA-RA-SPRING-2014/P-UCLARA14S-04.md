@@ -6,7 +6,10 @@ title: 'Functionals on $C([0,1])$ and $L^\infty$ not represented by $L^1$ densit
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Riesz Representation
+  - Dual Spaces
+  - L∞
 relations: []
 review: draft
 audit:
