@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-APAF21C
 kind: problem
-title: Square root and modulus; singular values; PSD characterization; similarity of $\operatorabs{A}$ and $\operatorabs{A^H}$
+title: Square root and modulus; singular values; PSD characterization; similarity of $\operatorabs{A}$
+  and $\operatorabs{A^H}$
 classification:
   areas:
   - applied-algebra
@@ -19,6 +20,12 @@ audit:
   by: OpenAI
   date: 2026-09-10
   note: Completed the rectangular zero-block similarity statement in part (e).
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam asks to prove that |A| and |A^H| are similar, which only makes sense for
+    m = n; part (e) states the rectangular version (same nonzero eigenvalues, similar after
+    padding with zero blocks).
 ---
 
 ::: {.problem}
