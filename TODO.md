@@ -694,7 +694,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UNL-QUAL-JUNE-2004-970-852
   - [x] SRC-UNL-RA-SPRING-2019
   - [x] SRC-UNL-RA-SUMMER-2016
-  - [ ] SRC-UNL-RA-SUMMER-2018
+  - [x] SRC-UNL-RA-SUMMER-2018
   - [ ] SRC-UNSORTED-ALGEBRA
   - [ ] SRC-UNSORTED-COMPLEX-ANALYSIS
   - [ ] SRC-UNSORTED-PRELIM
