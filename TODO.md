@@ -1031,7 +1031,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/index.md
   - [ ] wiki/topology/point-set/definitions.md
   - [x] wiki/topology/point-set/examples.md
-  - [ ] wiki/topology/point-set/index.md
+  - [x] wiki/topology/point-set/index.md
   - [ ] wiki/topology/point-set/notation-and-background.md
   - [ ] wiki/topology/point-set/point-set.md
   - [ ] wiki/topology/resources/books-notes.md
