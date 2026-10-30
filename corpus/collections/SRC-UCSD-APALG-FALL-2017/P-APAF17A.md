@@ -18,14 +18,18 @@ audit:
   by: OpenAI
   date: 2026-09-10
   note: Verified the image-chain stabilization argument.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The statement carried an added claim that the ranks equal rank A^2 for k >= 3, which
+    the exam does not ask; removed so the statement reads as the exam.
 ---
 
 ::: {.problem}
-Let $A \in \RR^{n \times n}$ be a square matrix such that:
-$$\operatorname{rank}(A^2) \le \operatorname{rank}(A^3).$$
-Show that:
-$$\operatorname{rank}(A^k) \le \operatorname{rank}(A^{k+1})$$
-(and in fact, $\operatorname{rank}(A^k) = \operatorname{rank}(A^{k+1}) = \operatorname{rank}(A^2)$) for all integers $k \ge 3$.
+Let $A \in \RR^{n \times n}$ be a matrix such that $\operatorname{rank} A^2 \le \operatorname{rank} A^3$.
+Show that
+$$\operatorname{rank} A^k \le \operatorname{rank} A^{k+1}$$
+for all integers $k \ge 3$.
 :::
 
 ::: {.solution}

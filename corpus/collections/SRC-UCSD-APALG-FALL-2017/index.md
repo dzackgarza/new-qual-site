@@ -12,7 +12,6 @@ review: draft
 completion: complete
 provenance:
 - assets/attachments/Applied-Algebra.pdf
-- assets/attachments/Applied-Algebra-FA17.pdf
 source:
   source_kind: university-exam
   institution: ucsd
