@@ -45,3 +45,7 @@ $$
 \boxed{\int_{-\infty}^{\infty}\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}}.
 $$
 :::
+
+::: {.remark title="Variations"}
+At $a=1$ the main statement gives $\int_\RR\frac{x\sin x}{1+x^2}\,dx=\frac{\pi}{e}$.
+:::
