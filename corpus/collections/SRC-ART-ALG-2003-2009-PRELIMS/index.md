@@ -64,7 +64,7 @@ source:
     problems:
     - P-ARTALG-JU06-1
     - P-ARTALG-JU06-2
-    - P-ARTALG-JU06-3
+    - P-HGRO20
     - P-ARTALG-JU06-4
     - P-ARTALG-JU06-5
     - P-ARTALG-JU06-6
@@ -87,7 +87,7 @@ source:
     - P-ARTALG-AL04-1
     - P-ARTALG-AL04-2
     - P-ARTALG-AL04-3
-    - P-ARTALG-AL04-4
+    - P-HGRO20
     - P-ARTALG-AL04-5
     - P-ARTALG-AL04-6
     - P-ARTALG-AL04-7

@@ -42,7 +42,7 @@ source:
     problems:
     - P-W13PQ
     - P-W13IN
-    - P-W13SP
+    - P-HGRO20
     - P-XVV4O
     - P-SHNTG
     - P-W5LVB
