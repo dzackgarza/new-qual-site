@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-For each $\psi \in C_0^\infty(\CC)$ (the space of smooth functions with compact support) satisfying $$\iint_{\CC} \psi(z) z^n \, dx\,dy = 0$$ for all $n \geq 0$, there exists a $u \in C_0^\infty(\CC)$ such that $\frac{\partial u}{\partial \bar{z}} = \psi$.
+Prove that for each $\psi \in C_0^\infty(\CC)$ (the space of smooth functions with compact support) satisfying $$\iint_{\CC} \psi(z) z^n \, dx\,dy = 0$$ for all $n \geq 0$, there exists a $u \in C_0^\infty(\CC)$ such that $\frac{\partial u}{\partial \bar{z}} = \psi$.
 :::
 
 ::: {.solution}

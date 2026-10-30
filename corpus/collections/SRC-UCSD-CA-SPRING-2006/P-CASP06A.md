@@ -20,6 +20,8 @@ Show that
 (a) $d(K, \CC \setminus \Omega) = d(\hat{K}, \CC \setminus \Omega)$;
 
 (b) $\hat{K} \subset \hat{K}_c$.
+
+Hint: A set $S \subset \CC$ is convex if and only if $tz_1 + (1-t)z_2 \in S$ for all $t \in [0,1]$ whenever $z_1, z_2 \in S$.
 :::
 
 ::: {.solution}
