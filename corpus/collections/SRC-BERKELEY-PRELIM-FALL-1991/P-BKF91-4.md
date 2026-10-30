@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF91-4
 kind: problem
 title: Decomposition of a real matrix into antisymmetric, traceless symmetric, and scalar parts
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -25,13 +25,13 @@ audit:
 ::: {.problem}
 Let $M$ be a real $n\times n$ matrix.
 
-1. Prove that
+(a) Prove that
 $$
 M=A+S+cI,
 $$
 where $A$ is antisymmetric, $S$ is symmetric with $\operatorname{tr}S=0$, and $c$ is a scalar.
 
-2. Prove that, with this notation,
+(b) Prove that, with this notation,
 $$
 \operatorname{tr}(M^2)
 =\operatorname{tr}(A^2)+\operatorname{tr}(S^2)
@@ -222,7 +222,7 @@ Substitute this into step [](#s5){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part 1, and step [](#s6){.pf-ref} proves part 2.
+Step [](#s2){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
 
 :::
 

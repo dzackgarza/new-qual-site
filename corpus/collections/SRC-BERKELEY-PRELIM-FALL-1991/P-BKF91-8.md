@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF91-8
 kind: problem
 title: Convergence of $\sum\sqrt{a_na_{n+1}}$ from convergence of $\sum a_n$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
@@ -24,14 +24,14 @@ audit:
 ::: {.problem}
 Let $a_1,a_2,\ldots$ be positive real numbers.
 
-1. Prove that
+(a) Prove that
 $$
 \sum_{n=1}^{\infty}a_n<\infty
 \quad\Longrightarrow\quad
 \sum_{n=1}^{\infty}\sqrt{a_na_{n+1}}<\infty.
 $$
 
-2. Prove that the converse is false.
+(b) Prove that the converse is false.
 :::
 
 ::: {.solution}
@@ -157,7 +157,7 @@ Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give a positive sequence for which t
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part 1, and step [](#s5){.pf-ref} proves part 2.
+Step [](#s2){.pf-ref} proves part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 

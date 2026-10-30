@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF91-7
 kind: problem
 title: Exponential norm bound for a time-dependent linear system
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

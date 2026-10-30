@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF91-1
 kind: problem
 title: Every finite group of order at least $3$ has a nontrivial automorphism
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

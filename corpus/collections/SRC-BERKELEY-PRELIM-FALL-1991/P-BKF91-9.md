@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF91-9
 kind: problem
 title: A group of order $2p$ with a normal subgroup of order $2$ is cyclic
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

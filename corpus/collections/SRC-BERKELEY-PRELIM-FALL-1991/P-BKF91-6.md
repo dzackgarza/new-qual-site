@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: P-BKF91-6
 kind: problem
-title: An $L^1$ bound on radial values of $f'$ controls $f$ on a radius
-classification: {areas: [prelim], topics: []}
+title: An $L^1$ bound on the circle means of $f'$ makes $f$ integrable along a radius
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
