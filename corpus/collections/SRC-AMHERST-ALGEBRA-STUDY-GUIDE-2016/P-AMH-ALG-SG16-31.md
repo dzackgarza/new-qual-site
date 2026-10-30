@@ -17,14 +17,43 @@ audit:
 ---
 
 ::: {.problem}
-(March 2008) Let $g(x)=x^2+3\in\FF_7[x]$, where $\FF_7=\{0,1,2,3,4,5,6\}$ is the field of seven elements.
+Let $g(x)=x^2+3\in\FF_7[x]$, where $\FF_7=\{0,1,2,3,4,5,6\}$ is the field of seven elements.
 (a) Prove that $g$ is reducible in $\FF_7[x]$.
 (b) Let $\langle g\rangle\subseteq\FF_7[x]$ denote the principal ideal $\{gh\mid h\in\FF_7[x]\}$.
 Find an ideal $I\subseteq\FF_7[x]$ such that $\langle g\rangle\subsetneq I\subsetneq\FF_7[x]$.
 :::
 
 ::: {.solution}
-(a) Evaluating $g$ at the elements of $\FF_7$ gives $g(2)=7=0$, so $x-2$ divides $g$. Long division gives $g(x)=(x-2)(x+2)$, so $g$ is reducible.
-
-(b) Let $I=\langle x-2\rangle\subseteq\FF_7[x]$. Every element of $\langle g\rangle$ has the form $hg$ with $h\in\FF_7[x]$, and $hg=\bigl((x+2)h\bigr)(x-2)\in I$. Thus $\langle g\rangle\subseteq I\subseteq\FF_7[x]$. Moreover $x-2\notin\langle g\rangle$, because a multiple $hg$ of $g$ is either $0$ or has degree $\deg(hg)\ge\deg g=2$, whereas $\deg(x-2)=1$. Finally $1\notin I$, because a multiple $h\cdot(x-2)$ is either $0$ or has degree at least $1$, whereas $\deg 1=0$. Hence $\langle g\rangle\subsetneq I\subsetneq\FF_7[x]$.
+::: pf
+::: {.pf-step #s1-1}
+In $\FF_7[x]$, $g(x)=(x-2)(x+2)$.
+::: pf-proof
+$(x-2)(x+2)=x^2-4=x^2+3$, because $-4\equiv3\pmod 7$.
+:::
+:::
+::: {.pf-step #s1-2}
+Part (a): $g$ is reducible.
+::: pf-proof
+Step [](#s1-1){.pf-ref} writes $g$ as a product of two polynomials of degree $1$.
+:::
+:::
+::: {.pf-step #s1-3}
+Let $I=\langle x-2\rangle$. Then $\langle g\rangle\subseteq I$.
+::: pf-proof
+For $h\in\FF_7[x]$, step [](#s1-1){.pf-ref} gives $hg=\bigl((x+2)h\bigr)(x-2)\in I$.
+:::
+:::
+::: {.pf-step #s1-4}
+$x-2\notin\langle g\rangle$ and $1\notin I$.
+::: pf-proof
+A nonzero multiple of $g$ has degree at least $2$, and $\deg(x-2)=1$. A nonzero multiple of $x-2$ has degree at least $1$, and $\deg 1=0$.
+:::
+:::
+::: pf-step
+Part (b): $\boxed{I=\langle x-2\rangle}$ satisfies $\langle g\rangle\subsetneq I\subsetneq\FF_7[x]$.
+::: pf-proof
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
+:::
+:::
+:::
 :::

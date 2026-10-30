@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(March 2015) Let $G_1,G_2$ be groups, let $H_2\subseteq G_2$ be a subgroup, and let $\varphi:G_1\to G_2$ be a homomorphism.
+Let $G_1,G_2$ be groups, let $H_2\subseteq G_2$ be a subgroup, and let $\varphi:G_1\to G_2$ be a homomorphism.
 Define
 $$
 H_1=\{x\in G_1\mid \varphi(x)\in H_2\}.

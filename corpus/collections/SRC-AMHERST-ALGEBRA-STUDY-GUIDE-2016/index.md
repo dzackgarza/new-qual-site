@@ -20,7 +20,7 @@ source:
     - id: P-AMH-ALG-SG16-01
       comment: Problem 1 (January 2012)
     - id: P-AMH-ALG-SG16-02
-      comment: Problem 2
+      comment: Problem 2 (March 2007)
     - id: P-AMH-ALG-SG16-03
       comment: Problem 3 (January 2016)
     - id: P-AMH-ALG-SG16-04
@@ -32,11 +32,11 @@ source:
     - id: P-AMH-ALG-SG16-07
       comment: Problem 7 (February 2013)
     - id: P-AMH-ALG-SG16-08
-      comment: Problem 8
+      comment: Problem 8 (March 2013)
     - id: P-AMH-ALG-SG16-09
       comment: Problem 9 (January 2012)
     - id: P-AMH-ALG-SG16-10
-      comment: Problem 10
+      comment: Problem 10 (March 2015)
     - id: P-AMH-ALG-SG16-11
       comment: Problem 11 (February 2013)
   - name: Permutations
@@ -60,7 +60,7 @@ source:
     - id: P-AMH-ALG-SG16-19
       comment: Problem 19 (January 2010)
     - id: P-AMH-ALG-SG16-20
-      comment: Problem 20
+      comment: Problem 20 (March 2015)
     - id: P-AMH-ALG-SG16-21
       comment: Problem 21 (January 2009)
     - id: P-AMH-ALG-SG16-22
@@ -70,7 +70,7 @@ source:
     - id: P-3PTP5
       comment: Section 12, field criterion stated before Problem 24
     - id: P-AMH-ALG-SG16-24
-      comment: Problem 24
+      comment: Problem 24 (March 2005)
     - id: P-AMH-ALG-SG16-25
       comment: Problem 25 (February 2013)
   - name: Polynomial rings
@@ -78,7 +78,7 @@ source:
     - id: P-AMH-ALG-SG16-26
       comment: Problem 26 (January 2014)
     - id: P-AMH-ALG-SG16-27
-      comment: Problem 27
+      comment: Problem 27 (March 2009)
     - id: P-AMH-ALG-SG16-28
       comment: Problem 28 (January 1999)
     - id: P-AMH-ALG-SG16-29
@@ -86,7 +86,7 @@ source:
     - id: P-AMH-ALG-SG16-30
       comment: Problem 30 (January 2009)
     - id: P-AMH-ALG-SG16-31
-      comment: Problem 31
+      comment: Problem 31 (March 2008)
   date:
     kind: unknown
 ---

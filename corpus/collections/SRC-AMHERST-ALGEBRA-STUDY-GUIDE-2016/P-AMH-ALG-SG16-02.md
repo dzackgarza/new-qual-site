@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(March 2007) Let $p,q\ge 2$ be prime numbers, and let $G$ be a group of order $\cardinality{G}=pq$.
+Let $p,q\ge 2$ be prime numbers, and let $G$ be a group of order $\cardinality{G}=pq$.
 Let $H\subsetneq G$ be a proper subgroup (i.e., $H$ is a subgroup but is not the full group $G$). Prove that $H$ is cyclic.
 :::
 

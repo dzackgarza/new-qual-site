@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(March 2009) Let $F$ be a field, let $R=F[x]$ be the ring of polynomials in one variable with coefficients in $F$, and let $f(x)\in R$ be a polynomial of degree $2009$.
+Let $F$ be a field, let $R=F[x]$ be the ring of polynomials in one variable with coefficients in $F$, and let $f(x)\in R$ be a polynomial of degree $2009$.
 Let
 $$
 I=\{g(x)f(x)\mid g\in R\}

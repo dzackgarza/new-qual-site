@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(March 2015) Let $R=\ZZ[x]$ be the ring of polynomials (in one variable) with integer coefficients.
+Let $R=\ZZ[x]$ be the ring of polynomials (in one variable) with integer coefficients.
 Note that the constant polynomial $6$ and the degree one polynomial $x+1$ are both elements of $R$.
 Define
 $$
