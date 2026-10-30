@@ -1043,7 +1043,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/surfaces/index.md
   - [x] wiki/topology/surfaces/surfaces-and-manifolds.md
   - [ ] wiki/topology/the-standard-spaces.md
-  - [ ] wiki/topology/workshops/index.md
+  - [x] wiki/topology/workshops/index.md
   - [ ] wiki/topology/workshops/topology-week-1-preliminaries.md
   Site surfaces:
   - [ ] index, sources, problems, bibliography, search
