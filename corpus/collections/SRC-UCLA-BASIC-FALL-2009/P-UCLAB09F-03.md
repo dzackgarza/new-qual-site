@@ -22,28 +22,12 @@ f(x_1,\ldots,x_n)=x_1+\cdots+x_n+\frac1{x_1x_2\cdots x_n}
 $$
 on the positive orthant $\RR_+^n$.
 
-::: pf
-
-::: pf-step
-
-Explain carefully why $f$ attains a global minimum at some $p\in\RR_+^n$.
+(i) Explain carefully why $f$ attains a global minimum at some $p\in\RR_+^n$.
 (Consider what happens as some $x_i\to0$ or $x_i\to\infty$.)
 
-:::
+(ii) Find $p$.
 
-::: pf-step
-
-Find $p$.
-
-:::
-
-::: pf-step
-
-Deduce that if $x_1,\ldots,x_n>0$ and $\prod_i x_i=1$, then
-
-:::
-
-:::
+(iii) Deduce that if $x_1,\ldots,x_n>0$ and $\prod_i x_i=1$, then
 
 $$
 \sum_i x_i\ge n,

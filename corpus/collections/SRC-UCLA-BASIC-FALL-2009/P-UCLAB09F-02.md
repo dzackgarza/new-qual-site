@@ -17,11 +17,7 @@ audit:
 ---
 ::: {.problem}
 
-::: pf
-
-::: {.pf-step #p1-s1}
-
-Let $(X,d)$ be a complete metric space.
+(i) Let $(X,d)$ be a complete metric space.
 A map $T\colon X\to X$ is a contraction if there is $0<\lambda<1$ such that
 $$
 d(Tx,Ty)\le \lambda d(x,y)
@@ -29,15 +25,7 @@ $$
 for all $x,y\in X$.
 Prove that every contraction has a fixed point.
 
-:::
-
-::: pf-step
-
-Using step [](#p1-s1){.pf-ref}, show that if $f\colon\RR\to\RR$ is differentiable and
-
-:::
-
-:::
+(ii) Using (i), show that if $f\colon\RR\to\RR$ is differentiable and
 
 $$
 f'(x)=e^{-x^2}-e^{-x^4},
@@ -147,7 +135,7 @@ T\left(\lim_{n\to\infty}x_n\right)
 =
 x.
 $$
-This proves part step [](#p2-s1){.pf-ref}.
+This proves part (i).
 
 :::
 
@@ -254,7 +242,7 @@ $$
 
 ::: pf-proof
 
-The real line with its usual metric is complete. By step [](#p2-s7){.pf-ref}, $f$ is a contraction. Applying part step [](#p2-s1){.pf-ref}, proved in steps [](#p2-s1){.pf-ref}, [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref} and [](#p2-s4){.pf-ref}, gives a fixed point $\alpha$.
+The real line with its usual metric is complete. By step [](#p2-s7){.pf-ref}, $f$ is a contraction. Applying part (i), proved in steps [](#p2-s1){.pf-ref}, [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref} and [](#p2-s4){.pf-ref}, gives a fixed point $\alpha$.
 
 :::
 

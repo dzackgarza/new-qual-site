@@ -17,22 +17,10 @@ audit:
 ---
 ::: {.problem}
 
-::: pf
-
-::: {.pf-step #p1-s1}
-
-For each $n\in\NN$, let $f_n\colon\NN\to\RR$ satisfy $\abs{f_n(m)}\le 1$ for all $m,n\in\NN$.
+(i) For each $n\in\NN$, let $f_n\colon\NN\to\RR$ satisfy $\abs{f_n(m)}\le 1$ for all $m,n\in\NN$.
 Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\NN$, the sequence $f_{n_i}(m)$ converges.
 
-:::
-
-::: pf-step
-
-For $(n_i)$ as in step [](#p1-s1){.pf-ref}, assume in addition that
-
-:::
-
-:::
+(ii) For $(n_i)$ as in (i), assume in addition that
 
 $$
 \lim_{m\to\infty}\lim_{i\to\infty} f_{n_i}(m)=0.
@@ -157,7 +145,7 @@ constructed at stage $m$. Therefore it converges.
 
 ::: {.pf-step #p2-s5}
 
-This proves part step [](#p2-s1){.pf-ref}.
+This proves part (i).
 
 ::: pf-proof
 
@@ -169,7 +157,7 @@ The strictly increasing sequence $(n_i)$ from step [](#p2-s3){.pf-ref} is infini
 
 ::: {.pf-step #p2-s6}
 
-The assertion in part step [](#p2-s2){.pf-ref} is false in general.
+The assertion in part (ii) is false in general.
 
 ::: pf-proof
 
@@ -229,7 +217,7 @@ Thus the reverse iterated limit exists but is not equal to $0$.
 
 ::: pf-qed
 
-Step [](#p2-s5){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and step [](#p2-s6){.pf-ref} disproves the assertion in part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s5){.pf-ref} proves part (i), and step [](#p2-s6){.pf-ref} disproves the assertion in part (ii).
 
 :::
 

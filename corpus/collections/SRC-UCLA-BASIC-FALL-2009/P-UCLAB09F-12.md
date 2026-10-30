@@ -22,21 +22,9 @@ $$
 T(e_1)=e_2,\quad \ldots,\quad T(e_{n-1})=e_n,\quad T(e_n)=e_1.
 $$
 
-::: pf
+(i) Show that $1$ is an eigenvalue of $T$, write down an eigenvector with eigenvalue $1$, and prove that it is unique up to scaling.
 
-::: pf-step
-
-Show that $1$ is an eigenvalue of $T$, write down an eigenvector with eigenvalue $1$, and prove that it is unique up to scaling.
-
-:::
-
-::: pf-step
-
-Is $T$ diagonalizable?
-
-:::
-
-:::
+(ii) Is $T$ diagonalizable?
 
 Hint: compute its characteristic polynomial.
 :::
@@ -239,7 +227,7 @@ $$
 
 ::: pf-qed
 
-Steps [](#p2-s1){.pf-ref} and [](#p2-s2){.pf-ref} prove part step [](#p2-s1){.pf-ref}, while steps [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref} and [](#p2-s5){.pf-ref} compute the characteristic polynomial and prove diagonalizability in part step [](#p2-s2){.pf-ref}.
+Steps [](#p2-s1){.pf-ref} and [](#p2-s2){.pf-ref} prove part (i), while steps [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref} and [](#p2-s5){.pf-ref} compute the characteristic polynomial and prove diagonalizability in part (ii).
 
 :::
 

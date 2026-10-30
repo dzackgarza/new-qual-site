@@ -17,29 +17,13 @@ audit:
 ---
 ::: {.problem}
 
-::: pf
+(i) State the Cayley--Hamilton theorem for matrices $A\in M_n(\CC)$.
 
-::: pf-step
+(ii) Prove the theorem directly for diagonalizable matrices.
 
-State the Cayley--Hamilton theorem for matrices $A\in M_n(\CC)$.
+(iii) Identify $M_n(\CC)$ with $\CC^{n^2}$ via a fixed linear isomorphism and give it the Euclidean metric.
 
-:::
-
-::: {.pf-step #p1-s2}
-
-Prove the theorem directly for diagonalizable matrices.
-
-:::
-
-::: pf-step
-
-Identify $M_n(\CC)$ with $\CC^{n^2}$ via a fixed linear isomorphism and give it the Euclidean metric.
-
-:::
-
-:::
-
-Using the fact that the diagonalizable matrices are dense in $M_n(\CC)$, together with step [](#p1-s2){.pf-ref}, prove the Cayley--Hamilton theorem for arbitrary complex matrices.
+Using the fact that the diagonalizable matrices are dense in $M_n(\CC)$, together with (ii), prove the Cayley--Hamilton theorem for arbitrary complex matrices.
 :::
 
 ::: {.solution}

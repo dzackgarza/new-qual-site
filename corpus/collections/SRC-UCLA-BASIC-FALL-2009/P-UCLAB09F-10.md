@@ -18,25 +18,13 @@ audit:
 ::: {.problem}
 Let $I=[0,2]$.
 
-::: pf
-
-::: pf-step
-
-If $f\colon I\to\RR$ is continuous and
+(i) If $f\colon I\to\RR$ is continuous and
 $$
 \int_I f(x)\,dx=36,
 $$
 prove that there exists $x\in I$ such that $f(x)=18$.
 
-:::
-
-::: pf-step
-
-If $g\colon I^2\to\RR$ is continuous and
-
-:::
-
-:::
+(ii) If $g\colon I^2\to\RR$ is continuous and
 
 $$
 \int_{I^2}g(x,y)\,dx\,dy=36,
@@ -196,7 +184,7 @@ $$
 
 ::: pf-qed
 
-Step [](#p2-s2){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and step [](#p2-s4){.pf-ref} proves part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s2){.pf-ref} proves part (i), and step [](#p2-s4){.pf-ref} proves part (ii).
 
 :::
 
