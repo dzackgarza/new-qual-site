@@ -70,7 +70,7 @@ There can be at most one nonidentity element of $G$.
 
 ::: pf-proof
 
-If $g,h\ne e$ are distinct, then $gh\ne e$ unless $h=g^{-1}$. But degree is multiplicative, so $\deg(gh)=(-1)(-1)=+1$. If $gh\ne e$, this contradicts step [](#s3){.pf-ref}. Hence every pair of nonidentity elements must be inverses; in particular choosing $h=g$ shows $g^2=e$, and there cannot be a second nonidentity element distinct from $g$.
+The degree map $g\mapsto\deg g$ is a homomorphism $G\to\{\pm1\}$, because degree is multiplicative. By step [](#s3){.pf-ref} its kernel is $\{e\}$, so it is injective and $\cardinality{G}\le2$.
 
 :::
 

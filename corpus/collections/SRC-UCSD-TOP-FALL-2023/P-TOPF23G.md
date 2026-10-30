@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF23G
 kind: problem
-title: 'Half lives, half dies: complementary pieces of $S^3$ have isomorphic $H_1$, and $\RP^3$ minus a ball does not embed in $S^3$'
+title: 'For complementary pieces of $S^3$, $H^1(N)\cong H_1(M)$; $\RP^3$ minus a ball does not embed in $S^3$'
 classification:
   areas:
   - topology
@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Suppose that $S^3 = M \cup_\Sigma N$ is a decomposition of the $3$-sphere into two compact $3$-manifolds-with-boundary, glued along their common boundary surface $\Sigma$.
-Prove that $H_1(N; \ZZ) \cong H_1(M; \ZZ)$.
+Prove that $H^1(N; \ZZ) \cong H_1(M; \ZZ)$.
 Let $X$ be the compact $3$-manifold-with-boundary obtained by removing the interior of a small ball from $\RP^3$.
 Conclude that $X$ cannot be embedded in $S^3$.
 :::
