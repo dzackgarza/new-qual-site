@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that A has distinct eigenvalues $\lambda _ { 1 } , \ldots , \lambda _ { k }$ with corresponding eigenvectors $v _ { 1 } , \dots v _ { k }$ . Show that $\{ v _ { 1 } \ldots , v _ { k } \}$ is a linearly independent set.
+Suppose that $A$ has distinct eigenvalues $\lambda_{1}, \ldots, \lambda_{k}$ with corresponding eigenvectors $v_{1}, \ldots, v_{k}$. Show that $\{v_{1}, \ldots, v_{k}\}$ is a linearly independent set.
 :::
 
 ::: {.solution}

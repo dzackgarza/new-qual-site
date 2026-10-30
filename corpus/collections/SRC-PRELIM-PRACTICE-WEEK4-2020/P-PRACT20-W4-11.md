@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-If V, W are 2-dimensional subspaces of $\RR ^ { 4 }$ , what are the possible dimensions of $V \cap W ?$ What if $V , W$ are 4-dimensional subspaces of $\RR ^ { 7 } ?$
+If $V, W$ are $2$-dimensional subspaces of $\RR^{4}$, what are the possible dimensions of $V \cap W$? What if $V, W$ are $4$-dimensional subspaces of $\RR^{7}$?
 :::
 
 ::: {.solution}

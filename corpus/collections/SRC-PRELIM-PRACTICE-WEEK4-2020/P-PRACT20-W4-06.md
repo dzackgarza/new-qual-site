@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the general solution of $y ^ { \prime \prime \prime } - 3 y ^ { \prime \prime } + 3 y ^ { \prime } - y = 0$
+Find the general solution of $y''' - 3y'' + 3y' - y = 0$.
 :::
 
 ::: {.solution}

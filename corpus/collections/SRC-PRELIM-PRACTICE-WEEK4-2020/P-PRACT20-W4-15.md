@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f : \RR ^ { 2 } \to \RR$ is linear.
-If $f ( 1 , 1 ) = 1$ and $f ( - 1 , 0 ) = 2$ , what is $f ( 3 , 5 ) ?$
+Suppose that $f \colon \RR^{2} \to \RR$ is linear.
+If $f(1, 1) = 1$ and $f(-1, 0) = 2$, what is $f(3, 5)$?
 :::
 
 ::: {.solution}

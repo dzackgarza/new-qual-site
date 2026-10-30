@@ -15,13 +15,11 @@ review: draft
 ---
 
 ::: {.problem}
-Show that there are no polynomials $a , b , c , d : \RR \to \RR$ such that
-
+Show that there are no polynomials $a, b, c, d \colon \RR \to \RR$ such that
 $$
-1 + x y + x ^ { 2 } y ^ { 2 } = a ( x ) b ( y ) + c ( x ) d ( y )
+1 + xy + x^{2} y^{2} = a(x) b(y) + c(x) d(y)
 $$
-
-for all $x , y \in \RR$
+for all $x, y \in \RR$.
 :::
 
 ::: {.solution}

@@ -15,13 +15,13 @@ review: draft
 ---
 
 ::: {.problem}
-Which of the following are linear subspaces of the continuous functions from R to R?
+Which of the following are linear subspaces of the continuous functions from $\RR$ to $\RR$?
 
-I. $\{ f : f$ is twice differentiable and $f ^ { \prime \prime } ( x ) - 2 f ^ { \prime } ( x ) + 3 f ( x ) = 0$ for all x}
+I. $\{ f : f \text{ is twice differentiable and } f''(x) - 2f'(x) + 3f(x) = 0 \text{ for all } x \}$
 
-II. $\{ g : g$ is twice differentiable and $g ^ { \prime \prime } ( x ) = 3 g ^ { \prime } ( x )$ for all x}
+II. $\{ g : g \text{ is twice differentiable and } g''(x) = 3g'(x) \text{ for all } x \}$
 
-III. $\{ h : h$ is twice differentiable and $h ^ { \prime \prime } ( x ) = h ( x ) + 1 { \mathrm { ~ f o r ~ a l l ~ } } x \}$
+III. $\{ h : h \text{ is twice differentiable and } h''(x) = h(x) + 1 \text{ for all } x \}$
 :::
 
 ::: {.solution}

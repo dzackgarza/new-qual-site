@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the solution of $x d y + ( y - x e ^ { x } ) d x = 0$ which passes through the point (1, 0).
+Find the solution of $x\, dy + (y - x e^{x})\, dx = 0$ which passes through the point $(1, 0)$.
 :::
 
 ::: {.solution}

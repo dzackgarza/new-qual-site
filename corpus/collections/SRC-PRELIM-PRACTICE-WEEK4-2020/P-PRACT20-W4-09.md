@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-(Bernoulli Equations) Find the general solution of the differential equation $\begin{array} { r } { y ^ { \prime } + \frac { 4 } { x } y = x ^ { 3 } y ^ { 2 } } \end{array}$ by making the substitution $u = 1 / y$ . Can you generalize this substitution so that it would work if $y ^ { 2 }$ on the right hand side was replaced by $y ^ { \alpha }$ for any $\alpha \neq 0 , 1$?
+(Bernoulli Equations) Find the general solution of the differential equation $y' + \frac{4}{x} y = x^{3} y^{2}$ by making the substitution $u = 1/y$. Can you generalize this substitution so that it would work if $y^{2}$ on the right hand side was replaced by $y^{\alpha}$ for any $\alpha \neq 0, 1$?
 :::
 
 ::: {.solution}

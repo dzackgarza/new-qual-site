@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let A be a $2 \times 2$ real matrix.
-Which of the following are necessarily true: (a) All entries of $A ^ { 2 }$ are non-negative, (b) the determinant of $A ^ { 2 }$ is non-negative, (c) if A has two distinct eigenvalues then $A ^ { 2 }$ has two distinct eigenvalues.
+Let $A$ be a $2 \times 2$ real matrix.
+Which of the following are necessarily true: (a) All entries of $A^{2}$ are non-negative, (b) the determinant of $A^{2}$ is non-negative, (c) if $A$ has two distinct eigenvalues then $A^{2}$ has two distinct eigenvalues.
 :::
 
 ::: {.solution}

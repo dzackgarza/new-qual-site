@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Find the rank of the $n \times n$ matrix with entries which simply count up from 1 to $n ^ { 2 }$ in increasing order.
-For example, if $n = 3$ , we are considering the matrix $\left( \begin{array} { l l l } { 1 } & { 2 } & { 3 } \\ { 4 } & { 5 } & { 6 } \\ { 7 } & { 8 } & { 9 } \end{array} \right)$
+Find the rank of the $n \times n$ matrix with entries which simply count up from $1$ to $n^{2}$ in increasing order.
+For example, if $n = 3$, we are considering the matrix $\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$.
 :::
 
 ::: {.solution}

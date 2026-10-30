@@ -13,9 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-(Cauchy-Euler Equations) Consider the equation $2 x ^ { 2 } y ^ { \prime \prime } + 3 x y ^ { \prime } - 1 5 y = 0$ for $x > 0$ . Find the general solution by either (1) making the substitution $x = e ^ { t }$ or (2) searching for a solution of the
-
-form $y ( x ) = x ^ { \lambda }$ . If you try the latter, you will arrive at a quadratic polynomial for λ which has two roots.
+(Cauchy-Euler Equations) Consider the equation $2x^{2} y'' + 3x y' - 15y = 0$ for $x > 0$. Find the general solution by either (1) making the substitution $x = e^{t}$ or (2) searching for a solution of the form $y(x) = x^{\lambda}$. If you try the latter, you will arrive at a quadratic polynomial for $\lambda$ which has two roots.
 If the equation were changed so that the polynomial has only one root, you would only find one solution.
 How could you adjust to find another linearly independent solution?
 :::

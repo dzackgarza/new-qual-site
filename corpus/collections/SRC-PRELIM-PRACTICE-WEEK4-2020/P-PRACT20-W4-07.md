@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find all the solutions of the equation $y y ^ { \prime \prime } - 2 ( y ^ { \prime } ) ^ { 2 } = 0$ which pass through $x = 1 , y = 1$
+Find all the solutions of the equation $y y'' - 2(y')^{2} = 0$ which pass through $x = 1$, $y = 1$.
 :::
 
 ::: {.solution}

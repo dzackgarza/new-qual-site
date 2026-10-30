@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Assume that V is a finite dimensional vector space and $T : V \to V$ is a linear transformation such that $T ^ { 2 } = T$ . Show that each $v \in V$ can be uniquely written as $v = v _ { 1 } + v _ { 2 }$ where $T ( v _ { 1 } ) = v _ { 1 }$ and $T ( v _ { 2 } ) = 0$
+Assume that $V$ is a finite dimensional vector space and $T \colon V \to V$ is a linear transformation such that $T^{2} = T$. Show that each $v \in V$ can be uniquely written as $v = v_{1} + v_{2}$ where $T(v_{1}) = v_{1}$ and $T(v_{2}) = 0$.
 :::
 
 ::: {.solution}

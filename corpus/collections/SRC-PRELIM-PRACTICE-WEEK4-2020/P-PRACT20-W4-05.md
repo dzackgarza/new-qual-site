@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Which of the following indicates the graphs of two functions satisfying $\begin{array} { r } { \left( \frac { d y } { d x } \right) ^ { 2 } + 2 y \frac { d y } { d x } + y ^ { 2 } = 0 ? } \end{array}$
+Which of the following indicates the graphs of two functions satisfying $\left( \frac{dy}{dx} \right)^{2} + 2y \frac{dy}{dx} + y^{2} = 0$?
 
 ![Source page preserving the figure/choices for this problem.](../../../assets/attachments/prelim-practice-week4-2020/page-2.png)
 :::

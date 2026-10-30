@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that V is the vector space of real $2 \times 3$ matrices.
-If T is a linear transformation from V onto $\RR ^ { 4 }$ , what is the dimension of the null space of T ?
+Suppose that $V$ is the vector space of real $2 \times 3$ matrices.
+If $T$ is a linear transformation from $V$ onto $\RR^{4}$, what is the dimension of the null space of $T$?
 :::
 
 ::: {.solution}

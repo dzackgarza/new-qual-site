@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Solve the initial value problem $y ^ { \prime } + x y = x , y ( 0 ) = - 1$
+Solve the initial value problem $y' + xy = x$, $y(0) = -1$.
 :::
 
 ::: {.solution}

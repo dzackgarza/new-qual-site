@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $I _ { n }$ by the $n \times n$ identity matrix and let $J _ { n }$ be the $n \times n$ matrix with all entries equal to 1. Determine the values of $\sigma \in \RR$ so that $I _ { n } + \sigma J _ { n }$ is invertible.
-Find $( I _ { n } + \sigma J _ { n } ) ^ { - 1 }$ for such σ.
+Let $I_{n}$ be the $n \times n$ identity matrix and let $J_{n}$ be the $n \times n$ matrix with all entries equal to $1$. Determine the values of $\sigma \in \RR$ so that $I_{n} + \sigma J_{n}$ is invertible.
+Find $(I_{n} + \sigma J_{n})^{-1}$ for such $\sigma$.
 :::
 
 ::: {.solution}

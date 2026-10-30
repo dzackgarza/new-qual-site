@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Which of the following most closely represents the graph of the solution to $y ^ { \prime } = 1 + y ^ { 4 }$?
+Which of the following most closely represents the graph of the solution to $y' = 1 + y^{4}$?
 
 ![Source page preserving the figure/choices for this problem.](../../../assets/attachments/prelim-practice-week4-2020/page-1.png)
 :::
