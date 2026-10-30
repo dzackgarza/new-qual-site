@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Group Actions
+  - Normal Subgroups
 relations: []
 review: draft
 audit:

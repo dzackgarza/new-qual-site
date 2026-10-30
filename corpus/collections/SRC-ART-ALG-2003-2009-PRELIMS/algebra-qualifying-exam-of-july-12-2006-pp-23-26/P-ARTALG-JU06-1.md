@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Class Equation
+  - p-Groups
 relations: []
 review: draft
 audit:

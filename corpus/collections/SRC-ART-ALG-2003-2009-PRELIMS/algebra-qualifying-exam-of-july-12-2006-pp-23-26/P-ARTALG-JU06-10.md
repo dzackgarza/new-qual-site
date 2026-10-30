@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-ARTALG-JU06-10
 kind: problem
-title: Principal ideal domains
+title: Which of $\QQ[x]$, $\QQ[x]/(x^2-2)$, $\QQ[x]/(x^2-4)$, $\QQ[x,y]$ are PIDs
 classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

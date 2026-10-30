@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-ARTALG-JU06-12
 kind: problem
-title: Rational canonical form over Q
+title: Rational canonical form of a $3\times3$ upper triangular matrix
 classification:
   areas:
   - algebra
   topics:
+  - Rational Canonical Form
   - Linear Algebra
 relations: []
 review: draft

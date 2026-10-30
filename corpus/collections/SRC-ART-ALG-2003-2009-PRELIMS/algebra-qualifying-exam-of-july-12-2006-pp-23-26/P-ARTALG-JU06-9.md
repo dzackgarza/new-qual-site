@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Abelian Groups
+  - Structure Theorem
 relations: []
 review: draft
 audit:
@@ -26,7 +27,7 @@ audit:
 ::: {.problem}
 (a) State the structure theorem for finitely generated Abelian groups.
 
-(b) Up to isomorphism, what are the Abelian groups of order $300 = 2^2 \cdot 3 \cdot 5^2$?
+(b) Up to isomorphism, what are the Abelian groups of order $300 = 2^2 \cdot 3 \cdot 5^2$? You should give a list of pairwise non-isomorphic Abelian groups, of order $300$, such that every Abelian group of order $300$ is isomorphic to a group on the list.
 :::
 
 ::: {.solution}

@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 audit:

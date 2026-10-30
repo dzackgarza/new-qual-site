@@ -8,6 +8,8 @@ classification:
   - algebra
   topics:
   - Galois Theory
+  - Finite Fields
+  - Separability
 relations: []
 review: draft
 audit:

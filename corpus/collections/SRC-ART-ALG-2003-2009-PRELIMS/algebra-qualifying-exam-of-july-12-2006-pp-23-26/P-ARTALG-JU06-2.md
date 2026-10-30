@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-ARTALG-JU06-2
 kind: problem
-title: Sylow subgroups and simplicity
+title: No simple group of order $132$
 classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Sylow Theory
+  - Simple Groups
 relations: []
 review: draft
 audit:
