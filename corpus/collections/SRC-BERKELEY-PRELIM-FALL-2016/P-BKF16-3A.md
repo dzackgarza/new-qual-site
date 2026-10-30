@@ -30,17 +30,15 @@ audit:
 ---
 
 ::: {.problem}
-Given $K \geq 0$ , let $\mathrm { L i p } _ { K }$ be the set of functions $f : \RR \to \RR$ which satisfy $\abs{ f ( x ) - f ( y ) } \leq$ $K \abs{ x - y }$ for all $x , y \in \RR$
+Given $K \geq 0$, let $\operatorname{Lip}_K$ be the set of functions $f\colon \RR \to \RR$ which satisfy $\abs{f(x) - f(y)} \leq K\abs{x - y}$ for all $x, y \in \RR$.
 
 (a) Show that the formula
-
 $$
-d ( f _ { 1 } , f _ { 2 } ) = \sum _ { j = 1 } ^ { \infty } 2 ^ { - j } \operatorname* { s u p } _ { z \in [ - j , j ] } \abs{ f _ { 1 } ( z ) - f _ { 2 } ( z ) }
+d(f_1, f_2) = \sum_{j=1}^\infty 2^{-j} \sup_{z \in [-j, j]} \abs{f_1(z) - f_2(z)}
 $$
+converges and defines a metric $d$ on $\operatorname{Lip}_K$.
 
-converges and defines a metric d on $\mathrm { L i p } _ { K }$
-
-(b) Show that $\mathrm { L i p } _ { K }$ is a complete metric space with this metric.
+(b) Show that $\operatorname{Lip}_K$ is a complete metric space with this metric.
 :::
 
 ::: {.solution}

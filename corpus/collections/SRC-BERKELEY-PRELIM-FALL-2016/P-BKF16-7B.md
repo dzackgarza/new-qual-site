@@ -30,18 +30,15 @@ audit:
 ---
 
 ::: {.problem}
-Find an example of a vector space V over the real numbers R and two linear maps $f , g : V \to V$ such that $f$ is injective but not surjective and g is surjective but not injective and such that $f + g$ is equal to the identity map $1 _ { V }$
+Find an example of a vector space $V$ over the real numbers $\RR$ and two linear maps $f, g\colon V \to V$ such that $f$ is injective but not surjective and $g$ is surjective but not injective and such that $f + g$ is equal to the identity map $1_V$.
 
-Hint: construct V as a subspace of the space of sequences of real numbers, closed under the linear maps
-
+Hint: construct $V$ as a subspace of the space of sequences of real numbers, closed under the linear maps
 $$
-f ( a _ { 1 } , a _ { 2 } , a _ { 3 } , . . . ) = ( a _ { 1 } - a _ { 2 } , a _ { 2 } - a _ { 3 } , . . . )
+f(a_1, a_2, a_3, \ldots) = (a_1 - a_2, a_2 - a_3, \ldots)
 $$
-
 and
-
 $$
-g ( a _ { 1 } , a _ { 2 } , a _ { 3 } , . . . ) = ( a _ { 2 } , a _ { 3 } , . . . ) .
+g(a_1, a_2, a_3, \ldots) = (a_2, a_3, \ldots).
 $$
 :::
 

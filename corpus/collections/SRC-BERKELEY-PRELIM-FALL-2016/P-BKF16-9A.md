@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime number, $\FF _ { p }$ be the finite field of $p$ elements, and ${ \mathrm { G L } } _ { n } ( \FF _ { p } )$ be the finite group of all invertible $n \times n$ matrices with coefficients in $\FF _ { p } .$ . Find the order of ${ \mathrm { G L } } _ { n } ( \FF _ { p } )$
+Let $p$ be a prime number, $\FF_p$ be the finite field of $p$ elements, and $\GL_n(\FF_p)$ be the finite group of all invertible $n \times n$ matrices with coefficients in $\FF_p$. Find the order of $\GL_n(\FF_p)$.
 :::
 
 ::: {.solution}

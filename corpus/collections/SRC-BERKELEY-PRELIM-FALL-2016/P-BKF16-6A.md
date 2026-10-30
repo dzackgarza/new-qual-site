@@ -29,19 +29,15 @@ audit:
 ---
 
 ::: {.problem}
-Fix $N \geq 1$ . Let $s _ { 1 } , \ldots , s _ { N } , t _ { 1 } , \ldots , t _ { N }$ be 2N complex numbers of magnitude less than or equal to 1. Let A be the $N \times N$ matrix with entries
-
+Fix $N \geq 1$. Let $s_1, \ldots, s_N, t_1, \ldots, t_N$ be $2N$ complex numbers of magnitude less than or equal to $1$. Let $A$ be the $N \times N$ matrix with entries
 $$
-A _ { i j } = \exp { ( t _ { i } s _ { j } ) } .
+A_{ij} = \exp(t_i s_j).
 $$
-
-Show that for every $m \geq 1$ there is an $N \times N$ matrix B with rank less than or equal to m such that
-
+Show that for every $m \geq 1$ there is an $N \times N$ matrix $B$ with rank less than or equal to $m$ such that
 $$
-\abs{ A _ { i j } - B _ { i j } } \le \frac { 2 } { m ! }
+\abs{A_{ij} - B_{ij}} \le \frac{2}{m!}
 $$
-
-for all i and $j .$
+for all $i$ and $j$.
 :::
 
 ::: {.solution}

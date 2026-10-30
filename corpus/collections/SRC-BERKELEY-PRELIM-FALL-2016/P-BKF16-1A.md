@@ -31,9 +31,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Prove that if $s > 1$ then $\textstyle \sum _ { n > 0 } n ^ { - s } = \prod _ { p } 1 / ( 1 - p ^ { - s } )$ , where the product is over all primes p.
+(a) Prove that if $s > 1$ then $\sum_{n>0} n^{-s} = \prod_p 1/(1 - p^{-s})$, where the product is over all primes $p$.
 
-(b) Prove that the sum $\textstyle \sum _ { p } 1 / p$ over all primes p diverges.
+(b) Prove that the sum $\sum_p 1/p$ over all primes $p$ diverges.
 :::
 
 ::: {.solution}

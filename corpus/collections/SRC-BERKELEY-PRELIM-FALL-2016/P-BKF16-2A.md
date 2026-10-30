@@ -29,19 +29,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $x \colon [ a , b ] \to \RR$ and $f \colon [ a , b ] \to \RR$ be non-negative continuous functions satisfying
-
+Let $x\colon [a,b] \to \RR$ and $f\colon [a,b] \to \RR$ be non-negative continuous functions satisfying
 $$
-x ^ { 2 } ( t ) \leq 1 + \int _ { a } ^ { t } f ( s ) x ( s ) d s
+x^2(t) \leq 1 + \int_a^t f(s)x(s)\,ds
 $$
-
-for $a \leq t \leq b$ . Show that
-
+for $a \leq t \leq b$. Show that
 $$
-x ( t ) \leq 1 + { \frac { 1 } { 2 } } \int _ { a } ^ { t } f ( s ) d s
+x(t) \leq 1 + \frac{1}{2} \int_a^t f(s)\,ds
 $$
-
-for $a \leq t \leq b$
+for $a \leq t \leq b$.
 :::
 
 ::: {.solution}

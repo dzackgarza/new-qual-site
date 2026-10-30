@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Is there a function f(z) analytic in C \ {0} such that $\begin{array} { r } { \abs{ f ( z ) } \geq \frac { 1 } { \sqrt { \abs{ z } } } } \end{array}$ for all $z \neq 0 ?$
+Is there a function $f(z)$ analytic in $\CC \setminus \{0\}$ such that $\abs{f(z)} \geq \dfrac{1}{\sqrt{\abs{z}}}$ for all $z \neq 0$?
 :::
 
 ::: {.solution}

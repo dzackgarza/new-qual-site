@@ -31,8 +31,8 @@ audit:
 ---
 
 ::: {.problem}
-Let G be a group and n be a positive integer.
-Assume that there exists a surjective group homomorphism $\ZZ ^ { n } \to G$ and an injective group homomorphism $\ZZ ^ { n } \to G$ . Prove that the group G is isomorphic to $\ZZ ^ { n }$
+Let $G$ be a group and $n$ be a positive integer.
+Assume that there exists a surjective group homomorphism $\ZZ^n \to G$ and an injective group homomorphism $\ZZ^n \to G$. Prove that the group $G$ is isomorphic to $\ZZ^n$.
 :::
 
 ::: {.solution}

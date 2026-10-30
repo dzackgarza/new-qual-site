@@ -31,7 +31,7 @@ audit:
 ---
 
 ::: {.problem}
-Let A and B be two $n \times n$ matrices with coefficients in Q. For any field extension K of Q, we say that A and B are similar over K if $A = P B P ^ { - 1 }$ for some $n \times n$ invertible matrix P with coefficients in K. Prove that A and B are similar over Q if and only if they are similar over C.
+Let $A$ and $B$ be two $n \times n$ matrices with coefficients in $\QQ$. For any field extension $K$ of $\QQ$, we say that $A$ and $B$ are similar over $K$ if $A = PBP^{-1}$ for some $n \times n$ invertible matrix $P$ with coefficients in $K$. Prove that $A$ and $B$ are similar over $\QQ$ if and only if they are similar over $\CC$.
 :::
 
 ::: {.solution}

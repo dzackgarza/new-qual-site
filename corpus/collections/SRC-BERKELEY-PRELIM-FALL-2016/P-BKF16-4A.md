@@ -32,9 +32,8 @@ audit:
 
 ::: {.problem}
 Find
-
 $$
-\int _ { - \infty } ^ { \infty } { \frac { \sin ^ { 3 } ( x ) } { x ^ { 3 } } } d x .
+\int_{-\infty}^{\infty} \frac{\sin^3(x)}{x^3}\,dx.
 $$
 :::
 
