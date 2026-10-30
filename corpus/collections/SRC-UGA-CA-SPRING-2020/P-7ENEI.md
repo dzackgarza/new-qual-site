@@ -22,15 +22,32 @@ $$
 :::
 
 ::: {.solution}
-Compute the series expansion of the RHS:
-$$
-(z-1) f(z) 
-&= (z-1) \sum_{n\geq 1} c_n z^k \\
-&= -c_1z + \sum_{n\geq 2} (c_{n-1} - c_n) z^n \\
-&\convergesto{z\to 1} -c_1 + \sum_{n\geq 2} c_{n-1} - c_n \\
-&\coloneqq \lim_{N\to\infty} -c_1 z + \sum_{n=2}^N c_{n-1} - c_n \\
-&= \lim_{N\to\infty} -c_N
-,$$
-where we've used that the sum is telescoping.
+Let $A=\lim_{z\to1}(z-1)f(z)$, the residue of $f$ at its simple pole $1$.
+
+::: pf
+
+::: {.pf-step #split}
+$g(z)=f(z)-\dfrac{A}{z-1}$ is holomorphic on a disk $\abs{z}<\rho$ with $\rho>1$.
+
+::: pf-proof
+$f$ is holomorphic on an open set containing $\overline\DD\setminus\{1\}$, and subtracting the principal part removes the simple pole at $1$. So $g$ is holomorphic on an open set containing $\overline\DD$. This open set contains a disk $\abs{z}<\rho$ with $\rho>1$, because $\overline\DD$ is compact.
 :::
 
+:::
+
+::: {.pf-step #coeff}
+Write $g(z)=\sum_{n\ge0}b_nz^n$ on $\abs{z}<\rho$. Then $c_n=b_n-A$ for $n\ge1$, and $b_n\to0$.
+
+::: pf-proof
+For $\abs{z}<1$, $\dfrac{A}{z-1}=-A\sum_{n\ge0}z^n$, so $f(z)=\sum_{n\ge0}(b_n-A)z^n$ there, and uniqueness of power series coefficients gives $c_n=b_n-A$. The series of $g$ converges at $z=r$ for any $1<r<\rho$, so $b_nr^n\to0$ and hence $b_n\to0$.
+:::
+
+:::
+
+::: pf-qed
+By step [](#coeff){.pf-ref}, $\lim_{n\to\infty}c_n=-A=-\lim_{z\to1}(z-1)f(z)$.
+:::
+
+:::
+
+:::
