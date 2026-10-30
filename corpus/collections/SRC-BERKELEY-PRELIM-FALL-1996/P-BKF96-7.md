@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-7
 kind: problem
 title: Possible orders of elements of $GL_2(\FF_p)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

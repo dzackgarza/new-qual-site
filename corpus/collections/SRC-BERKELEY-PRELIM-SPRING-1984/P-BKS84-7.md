@@ -5,7 +5,8 @@ kind: problem
 title: Roots of $z^7-4z^3-11$ in the annulus $1<\abs{z}<2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -26,7 +27,7 @@ Find the number of roots of
 $$
 z^7-4z^3-11=0
 $$
-that lie between the circles
+that lie between the circles, counted with multiplicity,
 $$
 \abs{z}=1
 \qquad\text{and}\qquad

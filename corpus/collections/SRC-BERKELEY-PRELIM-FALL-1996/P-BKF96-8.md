@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-8
 kind: problem
 title: Denominator of $\binom{1/2}{n}$ is a power of two
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

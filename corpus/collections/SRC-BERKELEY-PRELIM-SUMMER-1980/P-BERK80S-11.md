@@ -6,7 +6,8 @@ title: Finite groups as permutation and even-permutation groups
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,9 +27,9 @@ audit:
 ::: {.problem}
 Prove that every finite group is isomorphic to
 
-1. A group of permutations;
+(a) a group of permutations;
 
-2. A group of even permutations.
+(b) a group of even permutations.
 :::
 
 ::: {.solution}
@@ -129,7 +130,7 @@ Composing this embedding with the Cayley embedding of $G$ proves that $G$ is iso
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part 1, and step [](#s2){.pf-ref} proves part 2.
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b).
 
 :::
 

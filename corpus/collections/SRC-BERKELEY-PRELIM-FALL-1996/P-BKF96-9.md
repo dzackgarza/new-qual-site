@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-9
 kind: problem
 title: A distributive identity for gcd and lcm
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

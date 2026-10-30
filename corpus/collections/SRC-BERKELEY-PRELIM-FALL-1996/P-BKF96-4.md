@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-4
 kind: problem
 title: Can a holomorphic function on $\CC^*$ be bounded below by $\abs{z}^{-1/2}$?
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-6
 kind: problem
 title: Simultaneous normal form for two anticommuting involutions on $\RR^2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

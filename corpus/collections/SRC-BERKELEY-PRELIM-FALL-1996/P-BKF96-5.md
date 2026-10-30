@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-5
 kind: problem
 title: Every real endomorphism of $\RR^3$ has invariant lines and planes
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -29,8 +29,9 @@ T:\RR^3\to\RR^3
 $$
 has
 
-1. a one-dimensional invariant subspace;
-2. a two-dimensional invariant subspace.
+(a) a one-dimensional invariant subspace;
+
+(b) a two-dimensional invariant subspace.
 :::
 
 ::: {.solution}

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF96-2
 kind: problem
 title: An upper-semicontinuous function on a compact interval is bounded above
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
