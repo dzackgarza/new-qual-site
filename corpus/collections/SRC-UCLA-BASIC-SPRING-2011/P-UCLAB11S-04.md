@@ -3,7 +3,10 @@ schema: qual/card@1
 id: P-UCLAB11S-04
 kind: problem
 title: Existence and uniqueness of LU decomposition
-classification: {areas: [prelim], topics: []}
+classification:
+  areas:
+  - prelim
+  topics: []
 relations: []
 review: draft
 audit:
@@ -11,13 +14,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against Problem 4 of the retained UCLA Basic Examination, Spring 2011.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam asks for uniqueness of the unit-lower-triangular LU decomposition whenever
+    one exists, which fails for singular matrices (the solution exhibits a one-parameter family);
+    part (b) now assumes the nonzero leading principal minors under which uniqueness holds.
 ---
 ::: {.problem}
 Let $A$ be an $n\times n$ real matrix.
 
 (a) Define an $LU$ decomposition of $A$ and state a necessary and sufficient condition for such a decomposition to exist.
 
-(b) If the diagonal entries of $L$ are normalized to be $1$, prove that the decomposition, when it exists, is unique.
+(b) Suppose that every leading principal minor of $A$ is nonzero. If the diagonal entries of $L$ are normalized to be $1$, prove that the decomposition is unique.
 
 (c) Find an $LU$ decomposition of
 $$
