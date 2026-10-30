@@ -50,3 +50,7 @@ A splitting field of a polynomial is a normal extension; this is a standard theo
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The polynomial may be required to be separable. For $L/K$ normal and separable, $L$ is the splitting field of the product of the distinct minimal polynomials of a basis, and each of those is separable.
+:::
