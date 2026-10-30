@@ -1019,7 +1019,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/cw-complexes/cw-complexes.md
   - [x] wiki/topology/cw-complexes/index.md
   - [x] wiki/topology/degree/fixed-points-and-degree.md
-  - [ ] wiki/topology/degree/index.md
+  - [x] wiki/topology/degree/index.md
   - [ ] wiki/topology/fundamental-group/compute-pi-1.md
   - [ ] wiki/topology/fundamental-group/index.md
   - [ ] wiki/topology/fundamental-group/theorems.md
