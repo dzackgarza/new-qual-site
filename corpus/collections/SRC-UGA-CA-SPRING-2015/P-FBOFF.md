@@ -67,3 +67,7 @@ This follows from steps [](#bounded-away){.pf-ref} and [](#contradiction){.pf-re
 
 The assertion resembles Casorati--Weierstrass because every finite complex value is a limit of values of $f$ arbitrarily near $a$. The difference is that Casorati--Weierstrass concerns an isolated essential singularity, whereas here $a$ is not an isolated singularity at all: poles of $f$ accumulate at $a$.
 :::
+
+::: remark
+One printing asks to show that $f(U)$ is dense in the complex plane, noting that $z_0$ is not an isolated singularity of $f$. This is the same statement as (1).
+:::
