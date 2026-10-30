@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that a has order 15. Find all of the left cosets of $< a ^ { 5 } >$ in $< a >$ .
+Suppose that $a$ has order $15$. Find all of the left cosets of $\langle a^{5} \rangle$ in $\langle a \rangle$.
 :::
 
 ::: {.solution}
