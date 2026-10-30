@@ -22,11 +22,11 @@ audit:
 ::: {.problem}
 Give an example (without proof) of each of the following:
 
-a. An integrable function $f: \RR \to \RR$ so that the function $F(x) = \int_0^x f(t)\,dt$ is differentiable everywhere but at $x = 1$.
+(a) An integrable function $f: \RR \to \RR$ so that the function $F(x) = \int_0^x f(t)\,dt$ is differentiable everywhere but at $x = 1$.
 
-b. A sequence $\{a_n\}$ of real numbers such that $\sum_{n=1}^{\infty} a_n$ converges and $\sum_{n=1}^{\infty} a_n^2$ diverges.
+(b) A sequence $\{a_n\}$ of real numbers such that $\sum_{n=1}^{\infty} a_n$ converges and $\sum_{n=1}^{\infty} a_n^2$ diverges.
 
-c. A basis for the subspace of $\mathcal{P}_3$ spanned by $x^2 + x + 1$, $x^3 - x + 2$, $x^3 + x^2 + 3$, and $-x^3 + x^2 + 2x + 1$.
+(c) A basis for the subspace of $\mathcal{P}_3$ spanned by $x^2 + x + 1$, $x^3 - x + 2$, $x^3 + x^2 + 3$, and $-x^3 + x^2 + 2x + 1$.
 :::
 
 ::: {.solution}

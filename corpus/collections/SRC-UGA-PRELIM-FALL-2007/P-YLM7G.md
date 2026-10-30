@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Suppose $A$, $B$, and $C$ are sets, and $f: B \to C$ and $g: A \to B$ are functions.
 
-a. Prove that if $f$ and $g$ are surjective (onto), then so is $f \circ g$.
+(a) Prove that if $f$ and $g$ are surjective (onto), then so is $f \circ g$.
 
-b. Prove or give a counterexample: If $g$ is not surjective, then $f \circ g$ is not surjective.
+(b) Prove or give a counterexample: If $g$ is not surjective, then $f \circ g$ is not surjective.
 :::
 
 ::: {.solution}
