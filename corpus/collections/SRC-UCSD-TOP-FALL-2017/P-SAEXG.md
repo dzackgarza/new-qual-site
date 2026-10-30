@@ -19,8 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-How many path-connected 2-fold covering spaces does $S^1 \vee \RP 2$ have?
-What are the total spaces?
+Up to equivalence, how many path-connected $2$-fold covering spaces does $S^1 \vee \RP^2$ have?
+Describe the total spaces of these coverings.
 :::
 
 ::: {.solution}

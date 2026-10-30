@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X = S^1 \cross S^1$ and $A\subset X$ be a subspace with $A \cong S^1 \vee S^1$.
+Let $X = S^1 \times S^1$, and let $A \subseteq X$ be a subspace which is homeomorphic to $S^1 \vee S^1$.
 Show that there is no retraction from $X$ to $A$.
 :::
 

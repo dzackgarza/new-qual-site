@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that for every map $f: S^2 \to S^1$, there is a point $x\in S^2$ such that $f(x) = f(-x)$.
+Show that if $f : S^2 \to S^1$ then there exists a point $x \in S^2$ such that $f(-x) = f(x)$.
 :::
 
 ::: {.solution}
