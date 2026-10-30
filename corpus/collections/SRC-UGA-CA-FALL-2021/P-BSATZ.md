@@ -20,52 +20,55 @@ $$
 $$
 :::
 
-::: {.concept}
-The strategy:
+::: {.solution}
 
-- Write the RHS as $a$.
-  Note that we need to get rid of the $M^2$ on the LHS, so keep the $M$ around and write $a \coloneqq z/R$ so $z = aR$.
+Assume $\abs{f(0)}<M$; the case $\abs{f(0)}=M$ is treated in the remark. Let $F(\zeta)=f(R\zeta)/M$ for $\zeta\in\DD$, let $a=F(0)=f(0)/M$, and let $\psi_a(w)=\frac{w-a}{1-\bar aw}$, an automorphism of $\DD$ because $\abs{a}<1$.
 
-- Make the substitution to get
-$$
-\abs{f(aR) - f(0) \over M^2 - \bar{f(0)} f(aR) } \leq \inverseof{M} \abs{a} \\
-\implies
-\abs{M\qty{ f(aR) - f(0)}  \over M^2 - \bar{f(0)} f(aR) } \leq \abs{a} \\
-\abs{ f(aR)/M - f(0)/M  \over 1 - \bar{f(0)} f(aR)/M^2 } \leq \abs{a} 
-.$$
+::: pf
 
-  - Recognize the LHS as $\psi_w(g(a))$ for $w\coloneqq f(0)/M$ and $g(a) \coloneqq f(aR)/M$.
+::: {.pf-step #into}
+
+$F$ maps $\DD$ into $\DD$.
+
+::: pf-proof
+
+$\abs{F}\le1$ on $\DD$. If $\abs{F(\zeta_0)}=1$ for some $\zeta_0\in\DD$, the maximum modulus principle makes $F$ constant, so $\abs{a}=1$, contrary to the assumption.
 
 :::
 
-::: {.solution}
+:::
 
-> Proof due to Swaroop Hegde!
+::: {.pf-step #schwarz}
 
-Fix $R, M$ and make a clever choice: define
-$$
-F: \DD &\to \CC \\
-z &\mapsto {f(Rz) \over M}
-.$$
-Write $a\coloneqq F(0)$ and consider the Blaschke factor
-$$
-\psi_a(z) \coloneqq {a-z \over 1-\bar{a} z} \in \Aut(\DD)
-,$$
-and define
-$$
-g: \DD &\to \DD \\
-z &\mapsto (\psi_a \circ F)(z)
-.$$
-Then $g(0) = 0$ and $\abs{g(z)} \leq 1$ for all $z\in \DD$, so by Schwarz we have $\abs{g(z)} \leq \abs{z}$ for all $z\in \DD$.
-Thus for all $z\in \DD$,
-$$
-&\abs{g(z)} \leq z \\ \\
-\iff & \abs{\psi_a(F(z)) } \leq \abs{z} \\ \\
-\iff & \abs{ {f(Rz) \over M} - a \over 1 - {\bar a f(Rz) \over M}  } \leq \abs{z} \\ \\
-\iff & \abs{f(Rz) - f(0) \over 1 - {\bar{f(0)} f(Rz) \over M^2 } } \leq \abs{z} \\ \\
-\iff & \abs{f(Rz) - f(0) \over M^2 - \bar{f(0)} f(Rz) } \leq {\abs{z} \over M} \\ \\
-\iff & \abs{f(w) - f(0) \over M^2 - \bar{f(0)} f(w) } \leq {\abs{w} \over MR}
-,$$
-which holds for all $w\in \DD$ by replacing $Rz$ with $w$ (i.e. to show this equality for arbitrary $w\in \DD$, write $w = Rz$ for some $z\in \DD$ and run this chain of inequalities backward).
+$\abs{\psi_a(F(\zeta))}\le\abs{\zeta}$ for $\zeta\in\DD$.
 
+::: pf-proof
+
+By Step [](#into){.pf-ref}, $\psi_a\circ F$ is a holomorphic self-map of $\DD$, and it sends $0$ to $\psi_a(a)=0$. Apply the Schwarz lemma.
+
+:::
+
+:::
+
+::: pf-qed
+
+Let $z\in D(0,R)$ and $\zeta=z/R$. Then
+$$
+\psi_a(F(\zeta))=\frac{f(z)/M-f(0)/M}{1-\overline{f(0)}f(z)/M^2}=M\,\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)},
+$$
+where the denominator is nonzero because $\abs{\overline{f(0)}f(z)}<M^2$. Step [](#schwarz){.pf-ref} gives
+$$
+\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}\le\frac{\abs{z}}{MR}.
+$$
+
+:::
+
+:::
+
+:::
+
+::: remark
+If $\abs{f(0)}=M$, the maximum modulus principle makes $f$ the constant $f(0)$, and the left side is $0/0$. The inequality is meaningful only when $\abs{f(0)}<M$.
+
+The argument is due to Swaroop Hegde.
 :::

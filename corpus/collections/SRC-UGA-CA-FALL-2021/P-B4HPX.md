@@ -19,16 +19,33 @@ Prove that $f(z)$ is necessarily a constant if $f(\bar{z})$ is also analytic.
 :::
 
 ::: {.solution}
-Let $\tilde f(z) \coloneqq f(\bar z)$.
-Using that $f$ is analytic iff its components solve Cauchy-Riemann, using that $f, \tilde f$ are analytic,
+
+Let $\DD=\{\abs{z}<1\}$ and $g(z)=f(\bar z)$, which is analytic on $\DD$ by hypothesis.
+
+::: pf
+
+::: {.pf-step #deriv}
+
+$f'(z_0)=0$ for every $z_0\in\DD$.
+
+::: pf-proof
+
+The function $g$ is complex differentiable at $\bar z_0$, so
 $$
-u_x = v_y && u_y = -v_x \\
-u_x = -v_y && u_y = v_x \\ \\
-\implies 2u_x = v_y - v_y = 0 \implies u_x = 0 \\
-\implies 2u_y = v_x - v_x = 0 \implies u_y = 0 \\
-\implies 0 = u_y - u_y = v_x - (-v_x) = 2v_x  \implies v_x = 0 \\
-\implies 0 = u_x - u_x = v_y - (-v_y) = 2v_y  \implies v_y = 0
-,$$
-so $\grad u = [u_x, u_y] \equiv \vector 0$ making $u$ constant.
-Similarly $\grad v = [v_x, v_y] = \vector 0$, so $f: \RR^2\to \RR$ is constant.
+g'(\bar z_0)=\lim_{h\to0}\frac{g(\bar z_0+h)-g(\bar z_0)}{h}=\lim_{h\to0}\frac{f(z_0+\bar h)-f(z_0)}{h}.
+$$
+For real $h=t\to0$ the quotient tends to $f'(z_0)$. For $h=it$ with $t$ real, $\bar h=-it$ and the quotient is $-\frac{f(z_0-it)-f(z_0)}{-it}\to-f'(z_0)$. Both limits equal $g'(\bar z_0)$, so $f'(z_0)=-f'(z_0)$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Step [](#deriv){.pf-ref}, $f'\equiv0$ on the connected open set $\DD$, so $f$ is constant.
+
+:::
+
+:::
+
 :::

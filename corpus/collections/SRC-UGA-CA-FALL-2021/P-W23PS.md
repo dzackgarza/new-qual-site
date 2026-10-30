@@ -79,3 +79,7 @@ $$
 :::
 
 :::
+
+::: remark
+The exam paper prints the integral over $(-\infty,\infty)$. For odd $n$ that integral is not defined, because $1+x^n$ vanishes at $x=-1$. For even $n$ the integrand is even, and the integral over $(-\infty,\infty)$ is $2I=\dfrac{2\pi}{n\sin(\pi/n)}$.
+:::

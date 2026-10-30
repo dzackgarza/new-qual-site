@@ -28,52 +28,51 @@ if $f$ has zeros.
 :::
 
 ::: {.solution}
-First show the hint: assume $f$ has nonzero zeros.
-Write $Z(f) \coloneqq \inverseof{f}(0)$ for the set of zeros in $\bar{\DD}$.
 
-::: {.claim}
-If we assume $f$ is continuous on $\DD$, then $\size Z(f) < \infty$
-:::
+::: pf
 
-::: {.proof}
-Suppose $\size Z(f) = \infty$, then by compactness of $\bar{\DD}$ there is a limit point $z_0$.
-If $z_0 \in \DD$, then there is a sequence $\theset{z_k}\to z_0$ with $f(z_k) = 0$ for every $k$, so $f$ is zero on a set $S\coloneqq \theset{z_k}_{k\geq 1} \union \theset{z_0}$ with an accumulation point and this forces $f\equiv 0$ on $\bar{\DD}$ by the identity principle, contradicting $\abs{f} = 1$ on $\bd \DD$>
+::: {.pf-step #zeros}
 
-Otherwise, if $z_0\in \bd \DD$, using continuity of $f$ we have $f(z_k) = 0$ for all $k$ and $z_k\to z_0$ so $f(z_0) = 0$, again contradiicting $\abs{f} = 1$ on $\bd \DD$.
-:::
+$f$ has finitely many zeros in $\overline\DD$, all in $\DD$.
 
-So write $Z(f) = \theset{z_1,\cdots, z_m}$ and define
-$$
-g(z) \coloneqq \prod_{1\leq k \leq m} {z-z_k \over 1 - \bar{z_k} z},
-\quad
-h(z) \coloneqq {f(z) \over g(z)}
-.$$
+::: pf-proof
 
-::: {.claim}
-$h(z) \equiv 1$ is constant on $\bar{\DD}$, so that $f = \lambda g$ for some $\lambda \in S^1$, i.e. $\lambda = e^{i\theta}$ for some $\theta$.
-:::
-
-::: {.proof}
-Note that $h$ cancels all zeros of $f$, so $h$ is nonzero and holomorphic on $\bar{\DD}$.
-Moreover $\abs{g(z)} \leq 1$ on $\bar{\DD}$ since these are well-known to be in $\Aut(\DD)$.
-It's also well-known that $\abs{g(z)} = 1$ on $\bd \DD$.
-Thus $\abs{h(z)} = 1$ and $\abs{1\over h(z)} =1$ on $\bd \DD$, and by the maximum modulus principle,
-$$
-\abs{h(z)} \leq 1 \quad\text{ and }\quad \abs{1\over h(z)}\leq 1 \quad \text{ on } \DD
-,$$
-forcing $\abs{h(z)}\equiv 1$ and thus $h(z) = e^{i\theta}$ for some $\theta$.
+$f\not\equiv0$ because $\abs{f}=1$ on $\abs{z}=1$, so its zeros are isolated, and a compact set contains only finitely many of them. None lies on $\abs{z}=1$.
 
 :::
 
-So we now have
-$$
-f(z) = e^{i\theta} \prod_{1\leq k\leq m} {z-z_k \over 1 -\bar{z_k} z}
-,$$
-which has poles at points $z$ for which $\bar{z_k}z=1$ for some $z_k\in Z(f)$.
-However, since we assumed $f$ was entire, it can have no such poles, which forces $z_k = 0$ for all $k$.
-But then
-$$
-f(z) = e^{i\theta}\prod_{1\leq k \leq m}{z- 0 \over 1 - 0\cdot z} = e^{i\theta}z^m
-.$$
+:::
+
+::: {.pf-step #blaschke}
+
+Let $z_1,\dots,z_n$ be the zeros of $f$ in $\DD$, listed with multiplicity ($n=0$ is allowed), and $B(z)=\prod_{k=1}^n\frac{z-z_k}{1-\bar z_kz}$. Then $f=e^{i\theta}B$ on $\overline\DD$ for some real $\theta$.
+
+::: pf-proof
+
+Each factor of $B$ is holomorphic on $\abs{z}<1/\abs{z_k}$ and has modulus $1$ on $\abs{z}=1$, so $\abs{B}=1$ there, and $B$ has the same zeros as $f$ in $\overline\DD$, with the same multiplicities. Hence $h=f/B$ is holomorphic and zero-free on a neighborhood of $\overline\DD$, with $\abs{h}=1$ on $\abs{z}=1$. The maximum modulus principle applied to $h$ and to $1/h$ gives $\abs{h}\le1$ and $\abs{1/h}\le1$ on $\DD$, so $\abs{h}\equiv1$. A holomorphic function of constant modulus on a domain is constant by the open mapping theorem, so $h\equiv e^{i\theta}$.
+
+:::
+
+:::
+
+::: {.pf-step #origin}
+
+Every $z_k$ equals $0$.
+
+::: pf-proof
+
+The functions $f$ and $e^{i\theta}B$ are holomorphic on $\CC$ minus the finite set $P=\{1/\bar z_k:z_k\neq0\}$ and agree on $\DD$ by Step [](#blaschke){.pf-ref}, so they agree on the connected set $\CC\setminus P$. If some $z_k\neq0$, then $B$ has a pole at $1/\bar z_k$: the numerator of $B$ vanishes only at the points $z_j\in\DD$, and $\abs{1/\bar z_k}>1$. Then $f$ is unbounded near $1/\bar z_k$, which is impossible for the entire function $f$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Steps [](#blaschke){.pf-ref} and [](#origin){.pf-ref}, $B(z)=z^n$, so $f(z)=e^{i\theta}z^n$ on $\overline\DD$, and on $\CC$ by the identity theorem.
+
+:::
+
+:::
 
 :::
