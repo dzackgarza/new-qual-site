@@ -71,3 +71,15 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** this is the doctor's current installation result, not a failure of the Pages tests or build.
 
 - **Repair:** reconcile the shared PR installation with `QUAL-09`'s direct-to-main workflow before changing branch protection.
+
+### `STYLE-04` delimiter and definition forms are corpus-wide, not per-card
+
+- **Object and need:** `STYLE-04` requires `\abs{…}` for absolute values and `\coloneqq` for definitional equality.
+
+- **Observed evidence:** on 2026-10-30, 166 tracked corpus cards contain `\definedas`, which `vocabularies/macros.json` defines as `\coloneqq`, and about 1913 tracked corpus cards contain a raw `|` delimiter inside inline mathematics (for example E-VGNUI, E-SS2.EX-15, P-EMCA9, P-AQRVL).
+
+- **Impact and owner:** a card-by-card repair touches about two thousand cards. `\definedas` to `\coloneqq` is a one-meaning rewrite, so the notation exception in `AGENTS.md` makes it one codemod plus a commit check that rejects the raw form. A raw `|` pair is not always an absolute value (`\mid` in set builder, conditional bars, divisibility), so that rewrite needs a classification of each occurrence first.
+
+- **Uncertainty:** the 1913 count is a grep for `|` followed by a letter inside a `$` span; it over-counts set-builder and divisibility bars.
+
+- **Repair:** the `\definedas` codemod and its check; a classification pass for raw `|` pairs before an `\abs` codemod.
