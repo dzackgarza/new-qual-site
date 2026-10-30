@@ -941,7 +941,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/prelim/counterexamples.md
   - [x] wiki/prelim/index.md
   - [x] wiki/prelim/problems/berkeley-prelims.md
-  - [ ] wiki/prelim/problems/index.md
+  - [x] wiki/prelim/problems/index.md
   - [ ] wiki/prelim/problems/integral-practice.md
   - [ ] wiki/prelim/problems/ucla-prelims.md
   - [ ] wiki/prelim/resources/index.md
