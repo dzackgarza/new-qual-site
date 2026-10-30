@@ -26,7 +26,7 @@ source:
   - id: P-UGA8150S21-HW3-06
     comment: Problem 6
   - P-Y2YJL
-  - id: P-UGA8150S21-HW3-08
+  - id: E-SS2.EX-2
     comment: Problem 8
   - E-SS2.EX-5
   - id: P-UGA8150S21-HW3-10
