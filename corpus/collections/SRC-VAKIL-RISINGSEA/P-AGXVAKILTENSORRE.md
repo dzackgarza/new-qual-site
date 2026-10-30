@@ -15,11 +15,13 @@ review: draft
 ---
 
 ::: {.problem}
-Show that the endofunctor
+Let $R$ be a ring and $N$ an $R$-module. Show that the endofunctor
 $$
+\begin{aligned}
 F: \mods{R} &\to \mods{R} \\
 X &\mapsto X\tensor_R N \\
 (X\xrightarrow{f} Y) &\mapsto (X\tensor_R N \xrightarrow{f \tensor \id_N} Y\tensor_R N)
+\end{aligned}
 $$
 is right exact.
 :::
