@@ -67,4 +67,4 @@ Since $M$ has exactly one zero in $\DD$, so does $M + m$.
 
 ## Exercises
 
-[[E-XQ4BS]] [[P-FAGTL]] [[P-YSJO3]] [[P-WECI4]] [[P-GW3Y7]] [[P-ER23C]] [[P-5S2DR]] [[P-4JM4Y]] [[P-4NBXB]]
+[[P-FAGTL]] [[P-YSJO3]] [[P-WECI4]] [[P-GW3Y7]] [[P-ER23C]] [[P-5S2DR]] [[P-4JM4Y]] [[P-4NBXB]]
