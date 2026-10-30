@@ -21,5 +21,6 @@ source:
   sections:
   - name: '5.5'
     problems:
-    - P-MMAQ-WV7QEYSPXM
+    - id: P-MMAQ-WV7QEYSPXM
+      comment: 5.5.6
 ---
