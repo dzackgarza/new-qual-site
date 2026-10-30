@@ -100,7 +100,6 @@ source:
   - id: E-LZTNT
   - id: E-M5MWL
   - id: E-M7K4C
-  - id: E-MCTII
   - id: E-N5RKI
   - id: E-N6DX3
   - id: E-NIPUY
