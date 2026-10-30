@@ -29,7 +29,7 @@ parameterize a circle by a line; for instance $F(z)\coloneqq{i-z\over i+z}$ sati
 ::: {.solution}
 The line $i\RR$, traversed from $-i\infty$ through $0$ to $i\infty$, is to be mapped to the circle traversed from $0$ through $1$ back to $0$:
 
-![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-18_22-01-30.png)
+![The imaginary axis, parametrized by s = i omega, is mapped by w = 1/(s+1) onto the circle of radius 1/2 centred at 1/2, with 0 sent to 1, infinity sent to 0, and plus or minus 2i sent to points on the circle.](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-18_22-01-30.png)
 
 Let $R(z)\coloneqq{1\over z+1}$, the fractional linear transformation sending $0\mapsto1$, $\infty\mapsto0$ and $-1\mapsto\infty$.
 

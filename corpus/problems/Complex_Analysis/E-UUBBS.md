@@ -28,7 +28,7 @@ A Möbius map sending the two vertices of a lune to $0$ and $\infty$ sends the l
 :::
 
 ::: {.solution}
-![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-01-04.png)
+![The lune with vertices -1 and 1 is mapped by (1+z)/(1-z) to the sector between the lines at angles -pi/4 and pi/4, rotated by e^{i pi/4} to the first quadrant, squared to the upper half-plane, and sent to the unit disc by (z-i)/(z+i).](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-01-04.png)
 
 ::: pf
 

@@ -30,7 +30,7 @@ $$
 J(z)=\frac{1}{2}\qty{z + z^{-1}}.
 $$
 
-![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-13-43.png)
+![The Joukowski map as a composite: zeta = (z-1)/(z+1) takes the part of the upper half-plane outside the unit disc to the first quadrant, xi = zeta squared takes the quadrant to the upper half-plane, and w = (1+xi)/(1-xi) takes the upper half-plane to itself.](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-13-43.png)
 
 ::: pf
 
