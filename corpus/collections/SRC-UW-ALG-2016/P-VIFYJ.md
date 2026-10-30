@@ -20,10 +20,10 @@ audit:
 ::: {.problem}
 Let $A = \CC[x,y]/(y^2-(x-1)^3 - (x-1)^2)$.
 
-- Show that $A$ is an integral domain and sketch the $\RR$-points of $\text{Spec} A$.
+(a) Show that $A$ is an integral domain and sketch the $\RR$-points of $\Spec A$.
 
-- Find the integral closure of $A$.
-  Recall that for an integral domain $A$ with fraction field $K$, the integral closure of $A$ in $K$ is the set of all elements of $K$ integral over $A$.
+(b) Find the integral closure of $A$.
+Recall that for an integral domain $A$ with fraction field $K$, the integral closure of $A$ in $K$ is the set of all elements of $K$ integral over $A$.
 :::
 
 ::: {.solution}
@@ -52,7 +52,7 @@ Because $f$ is monic in $y$, Gauss's Lemma implies $f(x, y)$ is irreducible in $
 :::
 
 ::: pf-step
-Since $\CC[x, y]$ is a commutative ring and $f(x, y)$ is irreducible, the principal ideal $\langle f(x, y) \rangle$ is prime.
+Since $\CC[x, y]$ is a UFD and $f(x, y)$ is irreducible, the principal ideal $\langle f(x, y) \rangle$ is prime.
 Therefore $A = \CC[x, y]/\langle f(x, y) \rangle$ is an integral domain.
 
 :::

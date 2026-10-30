@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite simple group.
+Let $G$ be a finite simple group (that is, a group with no proper nontrivial normal subgroup).
 Assume that every proper subgroup of $G$ is abelian.
 Prove that then $G$ is cyclic of prime order.
 :::
@@ -115,6 +115,10 @@ contradicting simplicity.
 ::: pf-step
 Therefore $G$ is abelian.
 
+::: pf-proof
+The preceding step contradicts the assumption of step [](#s2){.pf-ref}.
+:::
+
 :::
 
 ::: pf-step
@@ -129,8 +133,12 @@ Let $1\ne g\in G$. The cyclic subgroup $\langle g\rangle$ is normal because $G$ 
 ::: pf-step
 Thus
 $$
-\boxed{G\cong C_p\text{ for some prime }p}.
+G\cong C_p\text{ for some prime }p.
 $$
+
+::: pf-proof
+The two preceding steps.
+:::
 
 :::
 

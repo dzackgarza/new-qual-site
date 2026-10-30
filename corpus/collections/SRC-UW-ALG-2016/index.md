@@ -19,10 +19,12 @@ source:
   problems:
   - P-MMAQ-AWWA4FOL2L
   - P-MMAQ-4NMAR4LSEK
+  - P-AKYLF
   - P-QQLLL
   - P-MMAQ-G2X5HB5VJS
   - P-VIFYJ
   - P-MMAQ-DNT3HIFV7M
+  - P-R44X8
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2016
 ---

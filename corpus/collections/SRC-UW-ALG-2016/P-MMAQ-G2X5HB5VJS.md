@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-G2X5HB5VJS
 kind: problem
-title: Equivalence of $\mathrm{Ann}(M)\not\subset\mathfrak{p}$, $M_{\mathfrak{p}}=0$,
+title: Equivalence of $\Ann(M)\not\subset\mathfrak{p}$, $M_{\mathfrak{p}}=0$,
   and $M\otimes_A k(\mathfrak{p})=0$ for finitely generated modules
 classification:
   areas:
@@ -23,16 +23,16 @@ audit:
 ::: {.problem}
 Let $A$ be a commutative ring and $M$ a finitely generated $A$-module.
 Define
-`\begin{align*}
-  \Ann(M) = \{a \in A: am = 0 \text{ for all } m \in M\}
-.\end{align*}`{=tex}
+$$
+\Ann(M) = \{a \in A: am = 0 \text{ for all } m \in M\}.
+$$
 Show that for a prime ideal $\mathfrak p \subset A$, the following are equivalent:
 
--   $\Ann(M) \not\subset \mathfrak p$
+(a) $\Ann(M) \not\subset \mathfrak p$
 
--   The localization of $M$ at the prime ideal $\mathfrak p$ is $0$.
+(b) The localization of $M$ at the prime ideal $\mathfrak p$ is $0$.
 
--   $M \otimes_A k(\mathfrak p) = 0$, where $k(\mathfrak p) = A_{\mathfrak p}/\mathfrak p A_{\mathfrak p}$ is the residue field of $A$ at $\mathfrak p$.
+(c) $M \otimes_A k(\mathfrak p) = 0$, where $k(\mathfrak p) = A_{\mathfrak p}/\mathfrak p A_{\mathfrak p}$ is the residue field of $A$ at $\mathfrak p$.
 :::
 
 ::: {.solution}
@@ -164,18 +164,22 @@ $$
 ::: pf-step
 
 Hence the three conditions are equivalent:
-
-:::
-
-:::
-
 $$
-\boxed{
-\operatorname{Ann}(M)\not\subset\mathfrak p
+\Ann(M)\not\subset\mathfrak p
 \iff
 M_{\mathfrak p}=0
 \iff
 M\otimes_A k(\mathfrak p)=0.
-}
 $$
+
+::: pf-proof
+
+The four preceding steps.
+
+:::
+
+:::
+
+:::
+
 :::
