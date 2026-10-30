@@ -47,7 +47,7 @@ Let $f(z) = z^2 + z = z(z+1)$.
 The winding number is the total change of a continuous branch of $\arg$ along the image curve, divided by $2\pi$, and it is additive over sub-curves.
 For a curve in $\HH$ from a point of $(0,\infty)$ to a point of $(-\infty,0)$, a continuous branch of $\arg$ with values in $[0,\pi]$ changes by $\pi$.
 
-![](../../../../assets/assets/figures/2021-12-10_18-06-04.png)
+![An image curve f(gamma(t)) in the upper half-plane runs from f(gamma(a)) on the positive real axis to f(gamma(b)) on the negative real axis, looping as it goes; arg f(gamma(t)) is the angle of the segment from 0 to the current point.](../../../../assets/assets/figures/2021-12-10_18-06-04.png)
 
 :::
 
