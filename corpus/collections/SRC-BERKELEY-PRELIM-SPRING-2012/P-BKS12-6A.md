@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-A positive integer m is called a pseudoprime to the base 2 if m divides $2 ^ { m - 1 } - 1$ . Show $2 ^ { p } - 1$ is a pseudoprime to the base 2 if $p$ is prime.
+A positive integer $m$ is called a pseudoprime to the base $2$ if $m$ divides $2^{m-1} - 1$. Show $2^{p} - 1$ is a pseudoprime to the base $2$ if $p$ is prime.
 :::
 
 ::: {.solution}

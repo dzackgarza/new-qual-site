@@ -25,12 +25,10 @@ audit:
 
 ::: {.problem}
 Find the solution of the differential equation
-
 $$
-x ^ { 2 } { \frac { d ^ { 2 } y } { d x ^ { 2 } } } + x { \frac { d y } { d x } } + y = 0
+x^{2} \frac{d^{2}y}{dx^{2}} + x \frac{dy}{dx} + y = 0
 $$
-
-in $x > 0$ , such that $y ( 1 ) = 0$ and $\frac { d y } { d x } = 1$ at $x = 1$
+in $x > 0$, such that $y(1) = 0$ and $\frac{dy}{dx} = 1$ at $x = 1$.
 :::
 
 ::: {.solution}

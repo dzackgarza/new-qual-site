@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-For G a finite group, H a proper subgroup, show that $G \neq \bigcup \{ g H g ^ { - 1 } ; g \in G \}$
+For $G$ a finite group, $H$ a proper subgroup, show that $G \neq \bigcup \{ gHg^{-1} ; g \in G \}$.
 :::
 
 ::: {.solution}

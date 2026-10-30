@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the eigenvalues of the $n \times n$ matrix with entries $a _ { i j }$ , where $a _ { i j }$ is 1 if $i = j + 1 , - 1$ if $i = j - 1$ , and 0 otherwise.
+Find the eigenvalues of the $n \times n$ matrix with entries $a_{ij}$, where $a_{ij}$ is $1$ if $i = j + 1$, $-1$ if $i = j - 1$, and $0$ otherwise.
 :::
 
 ::: {.solution}

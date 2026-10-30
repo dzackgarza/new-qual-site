@@ -24,10 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Find the Fourier series of the function with period 2π that is 1 if $\abs{ x } < \epsilon$ and 0 if $\epsilon \le \abs{ x } < \pi$ Find the sum
-
+Find the Fourier series of the function with period $2\pi$ that is $1$ if $\abs{x} < \epsilon$ and $0$ if $\epsilon \le \abs{x} < \pi$. Find the sum
 $$
-{ \frac { \sin 1 } { 1 } } + { \frac { \sin 2 } { 2 } } + { \frac { \sin 3 } { 3 } } + \cdots
+\frac{\sin 1}{1} + \frac{\sin 2}{2} + \frac{\sin 3}{3} + \cdots
 $$
 :::
 

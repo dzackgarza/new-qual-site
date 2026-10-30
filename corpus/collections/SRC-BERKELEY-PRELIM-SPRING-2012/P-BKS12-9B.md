@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that there are infinitely many integer solutions of $x ^ { 2 } - 2 y ^ { 2 } = 7$
+Show that there are infinitely many integer solutions of $x^{2} - 2y^{2} = 7$.
 :::
 
 ::: {.solution}

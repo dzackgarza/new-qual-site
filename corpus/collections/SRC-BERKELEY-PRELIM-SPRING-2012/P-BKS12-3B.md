@@ -25,12 +25,10 @@ audit:
 
 ::: {.problem}
 Compute
-
 $$
-\int _ { C } { \frac { z ^ { 4 } } { z ^ { 5 } - z - 1 } } d z ,
+\int_{C} \frac{z^{4}}{z^{5} - z - 1}\, dz,
 $$
-
-where C is a circle of radius 2 around the origin.
+where $C$ is a circle of radius $2$ around the origin.
 :::
 
 ::: {.solution}

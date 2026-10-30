@@ -24,13 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose the power series $\sum _ { n } a _ { n } x ^ { n }$ converges for all real $x ,$ and the smooth real valued function $f$ has the property that
-
+Suppose the power series $\sum_{n} a_{n} x^{n}$ converges for all real $x$, and the smooth real valued function $f$ has the property that
 $$
-\operatorname* { l i m } _ { x \to 0 } { \frac { f ( x ) - \sum _ { j = 0 } ^ { n } a _ { j } x ^ { j } } { x ^ { n } } } = 0
+\lim_{x \to 0} \frac{f(x) - \sum_{j=0}^{n} a_{j} x^{j}}{x^{n}} = 0
 $$
-
-for all n. Prove or give a counterexample to the claim that $\textstyle f ( x ) = \sum _ { n } a _ { n } x ^ { n }$
+for all $n$. Prove or give a counterexample to the claim that $f(x) = \sum_{n} a_{n} x^{n}$.
 :::
 
 ::: {.solution}
