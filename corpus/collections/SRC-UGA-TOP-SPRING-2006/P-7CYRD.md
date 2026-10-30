@@ -33,11 +33,9 @@ State criteria for continuity of a function $f : X \to X$ in terms of:
 
 i. open sets;
 
-ii.
-$\eps$'s and $\delta$'s; and
+ii. $\eps$'s and $\delta$'s; and
 
-iii.
-convergent sequences.
+iii. convergent sequences.
 
 Then prove that (iii) implies (i).
 :::
