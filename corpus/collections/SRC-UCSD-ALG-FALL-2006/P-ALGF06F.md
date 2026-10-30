@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF06F
 kind: problem
-title: "Structure and module-theoretic properties of Z[X]/(2X + 1)"
+title: "Structure and module-theoretic properties of $\\ZZ[X]/(2X+1)$"
 classification:
   areas:
   - algebra

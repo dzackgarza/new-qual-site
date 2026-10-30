@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF06C
 kind: problem
-title: "Center of a group with cyclic central quotient and p-groups of order p^3"
+title: "Groups with cyclic central quotient, and centers of nonabelian groups of order $p^3$"
 classification:
   areas:
   - algebra

@@ -373,7 +373,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCLA-RA-SPRING-2018
   - [x] SRC-UCR-PIERCE-FUNDAMENTAL-ALGEBRA
   - [x] SRC-UCSD-ALG-200A-HOMEWORK
-  - [ ] SRC-UCSD-ALG-FALL-2006
+  - [x] SRC-UCSD-ALG-FALL-2006
   - [ ] SRC-UCSD-ALG-FALL-2007
   - [ ] SRC-UCSD-ALG-FALL-2008
   - [ ] SRC-UCSD-ALG-FALL-2009

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF06E
 kind: problem
-title: "Local versus non-local polynomial quotient rings over Q(X) and Q[X,Y]"
+title: "Local versus non-local quotients by $(Y^2+X)^3$ of $\\QQ(X)[Y]$ and $\\QQ[X,Y]$"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF06G
 kind: problem
-title: "Units, irreducibility, primality, and factorization in Z[sqrt(10)]"
+title: "Units, irreducibility, primality, and factorization in $\\ZZ[\\sqrt{10}]$"
 classification:
   areas:
   - algebra
