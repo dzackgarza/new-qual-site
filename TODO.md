@@ -1040,7 +1040,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/resources/solutions.md
   - [x] wiki/topology/resources/topics.md
   - [x] wiki/topology/review.md
-  - [ ] wiki/topology/surfaces/index.md
+  - [x] wiki/topology/surfaces/index.md
   - [ ] wiki/topology/surfaces/surfaces-and-manifolds.md
   - [ ] wiki/topology/the-standard-spaces.md
   - [ ] wiki/topology/workshops/index.md
