@@ -96,7 +96,6 @@ sections:
       - ref: PR-JKE6C
       - ref: D-OAFF5
       - ref: PR-TVPCM
-      - ref: D-CFBSA
       - ref: E-TZJKN
       - ref: D-V6UQJ
       - ref: PR-QNDSD
