@@ -15,6 +15,11 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam writes |K| = min{n | x^n = x for all x in K}; n = 1 satisfies the condition,
+    so the statement and solution now take the minimum over n > 1.
 ---
 
 ::: {.problem}
@@ -23,7 +28,7 @@ Let $E$ be a splitting field of $x^p - x + 1$ over $\FF_p$.
 
 (a) Prove that, if $\alpha \in E$ is a root of $x^p - x + 1$, then for any $0 \leq i \leq p$ we have $\alpha^{p^i} = \alpha - i$.
 
-(b) Explain why if $K$ is any finite field, then $\cardinality{K} = \min\{n \mid x^n = x \text{ for all } x \in K\}$.
+(b) Explain why if $K$ is any finite field, then $\cardinality{K} = \min\{n>1 \mid x^n = x \text{ for all } x \in K\}$.
 Then prove that $x^p - x + 1$ is irreducible over $\FF_p$ and find $\cardinality{E}$.
 :::
 
@@ -93,16 +98,16 @@ Lagrange's theorem applied to $K^\times$, and $0^q = 0$.
 :::
 
 ::: {.pf-step #no-smaller-n}
-No smaller positive $n$ satisfies $x^n = x$ for all $x \in K$.
+No $n$ with $1<n<q$ satisfies $x^n = x$ for all $x \in K$.
 
 ::: pf-proof
-if $x^n = x$ for all $x \in K$, then $x^{n-1} = 1$ for all $x \in K^\times$, so $q - 1 \mid n - 1$ (the multiplicative group is cyclic of order $q-1$), forcing $n \ge q$.
+if $x^n = x$ for all $x \in K$, then $x^{n-1} = 1$ for all $x \in K^\times$, so $q - 1 \mid n - 1$ (the multiplicative group is cyclic of order $q-1$); since $n-1>0$, this forces $n-1\ge q-1$.
 :::
 
 :::
 
 ::: {.pf-step #min-n-equals-order}
-Hence $\cardinality{K} = \min\{n : x^n = x \text{ for all } x \in K\}$.
+Hence $\cardinality{K} = \min\{n>1 : x^n = x \text{ for all } x \in K\}$.
 
 ::: pf-proof
 step [](#lagrange-fact){.pf-ref} and step [](#no-smaller-n){.pf-ref}.
