@@ -89,27 +89,6 @@ The continuation extends $\zeta$ meromorphically to $\CC$, and the functional eq
 Recall that for a lattice $\Lambda=\omega_1\ZZ+\omega_2\ZZ$ with $\omega_1/\omega_2\notin\RR$, an [[D-CRVWEIER|elliptic function]] is a meromorphic function $f$ on $\CC$ with $f(z+\omega)=f(z)$ for every $\omega\in\Lambda$.
 The Weierstrass $\wp$-function is elliptic, with a double pole at each lattice point and no other poles.
 
-::: {.proposition}
-An entire elliptic function is constant.
-:::
-
-::: {.proof}
-It is continuous on the compact closed fundamental parallelogram, so bounded there, and by periodicity bounded on $\CC$; apply [[T-QHIHJ|Liouville's theorem]].
-:::
-
-[[E-4NGIV]]
-
-::: {.proposition}
-A nonconstant elliptic function has at least two poles, counted with multiplicity, in each fundamental parallelogram.
-:::
-
-::: {.proof}
-Translate the parallelogram $P$ so that $f$ has no poles on $\bd P$.
-By periodicity the integrals of $f$ over opposite sides of $\bd P$ cancel, so the sum of the residues of $f$ in $P$ is $0$.
-A nonconstant elliptic function has a pole in $P$, since an entire elliptic function is constant.
-If it had only one pole counted with multiplicity, that pole would be simple with nonzero residue, a contradiction.
-:::
-
 [[E-WXHMJ]]
 
 ## Infinite series and products
@@ -140,13 +119,6 @@ $$
 \sum_{n=-\infty}^{\infty}(-1)^{n} f\qty{\frac{2 n+1}{2}} &= \sum \Res\qty{\pi \sec (\pi z) f(z)}.
 \end{aligned}
 $$
-:::
-
-::: {.proof}
-For the first identity, $\pi\cot(\pi z)$ has a simple pole with residue $1$ at each integer, so $\Res_{z=n}\pi\cot(\pi z)f(z) = f(n)$.
-On the squares $C_N$ with vertices $\qty{N+\tfrac12}(\pm1\pm i)$, $\abs{\pi\cot(\pi z)}$ is bounded independently of $N$, and the bound on $z^2f(z)$ gives $\oint_{C_N}\pi\cot(\pi z)f(z)\dz\to 0$.
-By the residue theorem the sum of all residues of $\pi\cot(\pi z)f(z)$ is therefore $0$.
-The other identities follow in the same way, since $\pi\csc(\pi z)$ has residue $(-1)^n$ at $n$, $\pi\tan(\pi z)$ has residue $-1$ at $\frac{2n+1}{2}$, and $\pi\sec(\pi z)$ has residue $-(-1)^n$ at $\frac{2n+1}{2}$; for the last two, use the squares with vertices $N(\pm1\pm i)$.
 :::
 
 [[E-2GYXM]]
