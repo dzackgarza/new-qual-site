@@ -28,7 +28,6 @@ source:
   - id: E-AMD-2MV56W7X
   - id: E-AMD-2QM6SJIQ
   - id: E-AMD-2SZMALTL
-  - id: E-AMD-3LUW3P7R
   - id: E-AMD-3MQL7TPB
   - id: E-AMD-3TYWSS7F
   - id: E-AMD-4M7MSCEI
@@ -37,7 +36,6 @@ source:
   - id: E-AMD-4ZKQKRLH
   - id: E-AMD-5E2GZSH6
   - id: E-AMD-5LBXBRCH
-  - id: E-AMD-5QO44RPA
   - id: E-AMD-5UFPG7F5
   - id: E-AMD-6TLQZZWT
   - id: E-AMD-74T5EHRR
