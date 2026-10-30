@@ -4,7 +4,8 @@ id: P-UCLAB02W-11
 kind: problem
 title: Triangularization in an orthonormal basis
 classification:
-  areas: [prelim]
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
@@ -12,11 +13,21 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against Problem 11 of the official UCLA Basic Examination, Winter 2002 PDF. The source calls the matrix "upper triangular" but then specifies $A_{ij}=0$ for $i<j$, which is the standard lower-triangular index condition.
+  note: Checked against Problem 11 of the official UCLA Basic Examination, Winter 2002 PDF.
+    The source calls the matrix "upper triangular" but then specifies $A_{ij}=0$ for $i<j$,
+    which is the standard lower-triangular index condition.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Records the terminology/index mismatch. Standard Schur triangularization gives the upper-triangular convention $A_{ij}=0$ for $i>j$; reversing an orthonormal basis converts it to the printed lower-triangular convention.
+  note: Records the terminology/index mismatch. Standard Schur triangularization gives the
+    upper-triangular convention $A_{ij}=0$ for $i>j$; reversing an orthonormal basis converts
+    it to the printed lower-triangular convention.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam calls the matrix upper triangular and then writes A_ij = 0 for i < j, the
+    lower-triangular condition; the statement now uses the upper-triangular condition A_ij
+    = 0 for i > j that its words name.
 ---
 
 ::: {.problem}
@@ -24,7 +35,7 @@ Let $V$ be a finite-dimensional complex inner-product space and let $T:V\to V$ b
 Prove that there exists an ordered orthonormal basis of $V$ such that the matrix $A=(A_{ij})$ of $T$ in this basis is upper triangular, i.e.,
 $$
 A_{ij}=0
-\qquad\text{if }i<j.
+\qquad\text{if }i>j.
 $$
 
 Hint: first show that if $S:V\to V$ is linear and $W\subset V$ is a subspace, then $W$ is $S$-invariant if and only if $W^\perp$ is $S^*$-invariant.
