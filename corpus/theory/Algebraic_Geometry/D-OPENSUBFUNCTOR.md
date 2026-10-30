@@ -22,7 +22,7 @@ prompts:
 - When is a functor on schemes representable?
 ---
 
-For a scheme $X$, write $h_X = \Hom(-, X) \colon \Sch^{\mathrm{op}} \to \mathsf{Set}$ for its functor of points ([[PR-SCHFOP]]).
+For a scheme $X$, write $h_X = \Hom(-, X) \colon \Sch^{\mathrm{op}} \to \mathsf{Set}$ for its [[PR-SCHFOP|functor of points]].
 
 ::: {.definition title="Zariski sheaf"}
 A functor $F \colon \Sch^{\mathrm{op}} \to \mathsf{Set}$ is a \dfn{Zariski sheaf} if for every scheme $Y$ the presheaf $U \mapsto F(U)$ on the open subsets $U \subseteq Y$, with restriction maps $F(U) \to F(U')$ induced by the inclusions $U' \subseteq U$, is a sheaf of sets on $Y$.
@@ -40,7 +40,7 @@ Then $F$ is represented by a scheme $X$ covered by open subschemes isomorphic to
 :::
 
 ::: {.example}
-The functor $\PP^n$ of [[FE-SCHREPFUNCTORS]] is a Zariski sheaf because line bundles and their sections glue.
+The [[FE-SCHREPFUNCTORS|functor $\PP^n$]] is a Zariski sheaf because line bundles and their sections glue.
 For $0 \leq i \leq n$ the subfunctor $G_i$ of pairs $(\mathcal{L}, s_0, \ldots, s_n)$ in which $s_i$ generates $\mathcal{L}$ is open, its fibre product with $h_X$ being represented by the open set $X_{s_i} = \{x \in X : s_i(x) \neq 0\}$.
 Each $G_i$ is represented by $\AA^n_\ZZ$, via $(\mathcal{L}, s) \mapsto (s_j/s_i)_{j \neq i}$, and the $G_i$ cover because generating sections have no common zero, so the theorem constructs $\PP^n_\ZZ$ by gluing $n+1$ copies of $\AA^n_\ZZ$.
 :::

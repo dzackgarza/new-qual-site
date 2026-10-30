@@ -131,7 +131,7 @@ $\OO_X$ and $X$ is flat over $Y$. By step [](#fibre-cohomology-h0-h1){.pf-ref}, 
 $$
 h^0(X_y,\mcl_y)=2
 $$
-are constant. Cohomology and base change [[T-COHBC]] therefore gives that
+are constant. [[T-COHBC|Cohomology and base change]] therefore gives that
 $f_*\mcl$ is locally free of rank $2$ and commutes with restriction to
 every fibre.
 :::
@@ -150,7 +150,7 @@ $$
 By step [](#fibre-cohomology-h0-h1){.pf-ref}, $\mcl_y$ has a nonzero section. Its zero divisor is an
 effective divisor of degree $1$, hence a single $\kappa(y)$-rational point
 $p$. A smooth proper genus-zero curve with a rational point is
-$\PP^1_{\kappa(y)}$ [[D-VARSEVBRAUER]], and under such an identification
+$\PP^1_{\kappa(y)}$ (a [[D-VARSEVBRAUER|Severi--Brauer variety]] of dimension one), and under such an identification
 $$
 \mcl_y\cong\OO_{\PP^1}(p)\cong\OO_{\PP^1}(1).
 $$
@@ -254,7 +254,7 @@ theorem gives
 $$
 \operatorname{Br}(K)=0,
 $$
-so [[D-VARSEVBRAUER]] yields
+so the [[D-VARSEVBRAUER|theory of Severi--Brauer varieties]] yields
 $$
 X_\eta\cong\PP^1_K.
 $$

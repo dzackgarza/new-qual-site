@@ -41,7 +41,7 @@ Put $K=k(X)$ and $L=k(Y)$. Pure inseparability of degree $p^n$ implies
 $$
 K^{p^n}\subseteq L\subseteq K.
 $$
-By [[D-IV2FROBTWIST]], $[K:K^{p^n}]=p^n$. Since also $[K:L]=p^n$, the tower formula gives
+By the [[D-IV2FROBTWIST|degree of relative Frobenius]], $[K:K^{p^n}]=p^n$. Since also $[K:L]=p^n$, the tower formula gives
 $$
 L=K^{p^n}.
 $$
@@ -65,11 +65,11 @@ is zero: on function fields every element of $L=K^{p^n}$ is a $p^n$-th power, wh
 $$
 \Omega_{X/Y}\cong\Omega_{X/k},
 $$
-which has rank one rather than being a torsion sheaf. The ramification divisor in [[D-IV2RAM]], defined from the lengths of the torsion sheaf $\Omega_{X/Y}$ for a separable morphism, is therefore not defined in this way for $f$, and the Riemann--Hurwitz proof in [[T-LKT0U]] does not apply.
+which has rank one rather than being a torsion sheaf. The [[D-IV2RAM|ramification divisor]], defined from the lengths of the torsion sheaf $\Omega_{X/Y}$ for a separable morphism, is therefore not defined in this way for $f$, and the [[T-LKT0U|proof of Riemann--Hurwitz]] does not apply.
 
 More generally, every finite nonconstant morphism of smooth projective curves in characteristic $p$ factors as
 $$
 X\xrightarrow{F_{X/k}^{(n)}}X^{(p^n)}\longrightarrow Y,
 $$
-where the second morphism induces a separable extension of function fields. Relative Frobenius preserves genus, while Riemann--Hurwitz gives $g(X^{(p^n)})\geq g(Y)$ for the separable factor. Therefore $g(X)\geq g(Y)$ for every such finite morphism, as used in [[T-IV2LUROTH]].
+where the second morphism induces a separable extension of function fields. Relative Frobenius preserves genus, while Riemann--Hurwitz gives $g(X^{(p^n)})\geq g(Y)$ for the separable factor. Therefore $g(X)\geq g(Y)$ for every such finite morphism, as used in the proof of [[T-IV2LUROTH|Lüroth's theorem]].
 :::

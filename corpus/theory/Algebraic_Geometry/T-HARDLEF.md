@@ -39,7 +39,7 @@ $$
 :::
 
 ::: {.remark}
-The weak Lefschetz theorem is the Lefschetz hyperplane theorem [[T-LEFHYP]]: restriction to a smooth hyperplane section $Y$ is an isomorphism $H^i(X) \to H^i(Y)$ for $i < n-1$ and injective for $i = n-1$.
+The weak Lefschetz theorem is the [[T-LEFHYP|Lefschetz hyperplane theorem]]: restriction to a smooth hyperplane section $Y$ is an isomorphism $H^i(X) \to H^i(Y)$ for $i < n-1$ and injective for $i = n-1$.
 The hard Lefschetz theorem fails for compact complex manifolds that are not Kähler, and for singular projective varieties unless ordinary cohomology is replaced by intersection cohomology.
 On a smooth projective curve it says $H^0 \cong H^2$ via the class of a point; on a surface it says $H^1 \cong H^3$ via a hyperplane class, so $b_1 = b_3$, which Poincaré duality also gives.
 :::

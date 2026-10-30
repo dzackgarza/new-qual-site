@@ -48,7 +48,7 @@ If two maximal cones give the same vertex, the support function is linear across
 
 [[FE-FULAVA]]
 
-Very ampleness is not visible from the fan alone; [[FE-FULAVA]] gives a strictly convex support function and an ample divisor whose associated map is two-to-one rather than an embedding.
+Very ampleness is not visible from the fan alone; the [[FE-FULAVA|example of an ample divisor that is not very ample]] gives a strictly convex support function and an ample divisor whose associated map is two-to-one rather than an embedding.
 
 ## Fano and Calabi-Yau
 

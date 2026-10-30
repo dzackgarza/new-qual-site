@@ -63,7 +63,7 @@ $$
 \pi_U:U\longrightarrow V
 $$
 is proper. By proper pushforward of coherent sheaves, or equivalently the
-finite part of Stein factorisation [[T-MORSTEIN]],
+finite part of [[T-MORSTEIN|Stein factorisation]],
 $$
 (\pi_U)_*\OO_U
 $$

@@ -582,12 +582,12 @@ mathematical correction under its own node, not under copy policy.
     - [x] D-IV2ETCOV: "proper nonempty open $U$" fails for clopen $U$; require $U$ not closed.
     - [x] D-MORLOCAL: the $\PP^1$ example shows non-locality for proper only; add the
       doubled-origin line for separated.
-    - [ ] F2, wiki link text that breaks the sentence (`[[ID]]` rendered as the card title
+    - [x] F2, wiki link text that breaks the sentence (`[[ID]]` rendered as the card title
       inside prose): T-HARDLEF, T-COHSVAN, functors-and-topologies, FE-FULHIRZBUN,
       toric/polytopes-and-divisors, T-SRFZMT, T-CRVCM, T-CRVUNIF,
       P-AGXMISCTSENPONEBUNDLE steps 3, 4 (raw `\PP` visible), 8, D-CRVMOD, T-CRVJINV,
       PR-MORFINCHAR, P-AGXMISCOCONNECTED step 1, PR-IV2INSEP (two), resources exercise list.
-      The pattern is corpus-wide; read whether prose links should carry explicit link text.
+      CONTRIBUTING (`XREF-1`) already requires explicit link text; the listed cards now carry it. The bare prose links in the rest of the corpus remain.
     - [ ] F1, page prose restating a transcluded card: functors-and-topologies, blowups,
       affine-or-projective, dimension-and-degree, smooth-and-singular, projective-schemes,
       vanishing-and-duality, families, derived-functors-and-vanishing, toric/criteria,

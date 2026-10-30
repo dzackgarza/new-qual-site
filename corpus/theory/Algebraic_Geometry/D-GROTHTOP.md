@@ -72,6 +72,6 @@ A \dfn{Grothendieck topos} is a category equivalent to $\Sh(\mathcal{C},J)$ for 
 
 ::: {.example}
 For a topological space $X$, let $\operatorname{Op}(X)$ be the category of open subsets with inclusions, where $V \times_U W = V \cap W$, and let the coverings of $U$ be the families $\{U_i \subseteq U\}$ with $\bigcup_i U_i = U$.
-The sheaves on this site are the sheaves on $X$ in the sense of [[D-RCCFY]], and $\Sh(X)$ is a topos.
-The étale and fppf topologies on a category of schemes are the sites of [[D-ETFPPF]].
+The sheaves on this site are the sheaves on $X$ in the [[D-RCCFY|usual sense]], and $\Sh(X)$ is a topos.
+The étale and fppf topologies on a category of schemes are the [[D-ETFPPF|étale and fppf sites]].
 :::

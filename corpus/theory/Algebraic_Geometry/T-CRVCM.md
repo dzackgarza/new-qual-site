@@ -35,7 +35,7 @@ $$
 \coloneqq \theset{ \alpha \in \CC \st \alpha \Lambda \subseteq \Lambda } ,
 $$
 where the endomorphism induced by multiplication by $\alpha$ corresponds to $\alpha$, and $[n]$ corresponds to $n\in\ZZ$.
-By the definition in [[PR-CRVGRP]], $E$ has complex multiplication exactly when $R_\Lambda\supsetneq\ZZ$.
+By the [[PR-CRVGRP|definition of multiplication by $n$]], $E$ has complex multiplication exactly when $R_\Lambda\supsetneq\ZZ$.
 This happens exactly when $\tau$ is imaginary quadratic, that is $\tau \in K\coloneqq \QQ(\sqrt{-d})$ for some squarefree $d > 0$, and in that case
 $$
 \ZZ \subsetneq R_\Lambda \subseteq \OO_K
@@ -72,5 +72,5 @@ If the rank is two, then $R_\Lambda$ contains some $\alpha \notin \RR$, since $\
 In particular the endomorphism ring of an elliptic curve over $\CC$ is never an order in a quaternion algebra --- that happens only for supersingular curves in characteristic $p$.
 
 Complex multiplication is decided by the lattice parameter $\tau$, and only countably many $\tau$ are imaginary quadratic, so only countably many $j \in \CC$ are CM $j$-invariants; the generic curve has $\operatorname{End} = \ZZ$.
-Passing from an equation to $\tau$ requires transcendental data; [[T-CRVCMCFT]] gives an arithmetic test on $j$ instead.
+Passing from an equation to $\tau$ requires transcendental data; [[T-CRVCMCFT|integrality of $j$ for CM curves]] gives an arithmetic test on $j$ instead.
 :::

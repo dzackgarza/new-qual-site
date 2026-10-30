@@ -80,5 +80,5 @@ What does not depend on the convention is the pair of self-intersections $\these
 
 For $a \geq 1$ the negative section is the unique irreducible curve on $\FF_a$ with negative self-intersection, which is why $\FF_a \cong \FF_b$ forces $a = b$: the integer $a$ is recovered from the surface.
 For $a = 0$ there is no negative curve and $\FF_0 = \PP^1 \times \PP^1$ has two rulings instead of one.
-Contracting the negative section of $\FF_a$ gives the projective cone over the rational normal curve of degree $a$, whose vertex is the singular point of the affine cone in [[FE-FULQUOT]].
+Contracting the negative section of $\FF_a$ gives the projective cone over the rational normal curve of degree $a$, whose vertex is the singular point of the affine cone over the rational normal curve, [[FE-FULQUOT|a cyclic quotient singularity]].
 :::

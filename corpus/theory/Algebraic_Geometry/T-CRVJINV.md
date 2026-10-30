@@ -83,7 +83,7 @@ The residual ambiguity is the $S_3$-action permuting $\{0,1,\lambda\}$, whose or
 The complete linear system $\abs{3p_0}$ gives a plane cubic Weierstrass model.
 The Legendre form is instead obtained from the degree-two map above by normalizing its branch divisor.
 
-The space $\AA^1_j$ is only coarse; the twisting obstruction to a fine moduli space is described in [[D-CRVMOD]].
+The space $\AA^1_j$ is only coarse; the twisting obstruction to a fine moduli space is described under [[D-CRVMOD|coarse versus fine moduli spaces]].
 :::
 
 ::: {.theorem title="Automorphisms"}

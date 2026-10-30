@@ -39,12 +39,12 @@ Isomorphism classes of $\mathcal{G}$-torsors trivialized on a covering $\mathfra
 :::
 
 ::: {.example}
-On a scheme $X$ with the Zariski topology, a $\GG_m = \OO_X^\times$-torsor is the sheaf of nowhere-vanishing local sections of an invertible sheaf $\mathcal{L}$, so $\Pic X \cong H^1(X, \OO_X^\times)$ ([[PR-DIVLB]]).
+On a scheme $X$ with the Zariski topology, a $\GG_m = \OO_X^\times$-torsor is the sheaf of nowhere-vanishing local sections of an invertible sheaf $\mathcal{L}$, so $\Pic X \cong H^1(X, \OO_X^\times)$ by the [[PR-DIVLB|correspondence between Cartier divisors and invertible sheaves]].
 Likewise $\GL_n$-torsors correspond to locally free sheaves of rank $n$, through their sheaves of local frames.
 :::
 
 ::: {.example}
 Let $k$ be a field and $n$ invertible in $k$.
-On $(\Spec k)_{\mathrm{et}}$, the Kummer sequence of [[D-ETFPPF]] and $H^1((\Spec k)_{\mathrm{et}}, \GG_m) = 0$ (Hilbert's Theorem 90) give $H^1((\Spec k)_{\mathrm{et}}, \mu_n) \cong k^\times / (k^\times)^n$.
+On $(\Spec k)_{\mathrm{et}}$, the [[D-ETFPPF|Kummer sequence]] and $H^1((\Spec k)_{\mathrm{et}}, \GG_m) = 0$ (Hilbert's Theorem 90) give $H^1((\Spec k)_{\mathrm{et}}, \mu_n) \cong k^\times / (k^\times)^n$.
 The torsor corresponding to $a \in k^\times$ is $\Spec k[z]/(z^n - a)$ with $\mu_n$ acting by $z \mapsto \zeta z$.
 :::

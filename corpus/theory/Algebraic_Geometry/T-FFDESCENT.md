@@ -73,5 +73,5 @@ A quasi-inverse sends $(N, \theta)$ to $\{ n \in N : \theta(1 \otimes n) = n \ot
 
 ::: {.remark}
 Replacing modules by quasicoherent sheaves and $\Spec B\to\Spec A$ by a faithfully flat quasicompact morphism $S'\to S$ gives fpqc descent of quasicoherent sheaves.
-Representable functors are fpqc sheaves, hence in particular fppf sheaves; [[D-ETFPPF]] records the fppf topology.
+Representable functors are fpqc sheaves, hence in particular sheaves for the [[D-ETFPPF|fppf topology]].
 :::

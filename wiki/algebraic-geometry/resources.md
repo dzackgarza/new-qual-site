@@ -74,7 +74,7 @@ A selection of exercises from [@Har10a] recommended by Elham Izadi, by chapter a
 
 - II.5: 1, 3, 5; 2, 4, 7, 8, 9; 10, 11, 12, 13; 14, 15, 16, 17, 18. Many textbooks prove these results in the text.
 
-- II.6: 1, 8; 5, 10; and [[P-AGXMISCINJINVERTIBLE]].
+- II.6: 1, 8; 5, 10; and the problem on [[P-AGXMISCINJINVERTIBLE|injectivity of nonzero maps of invertible sheaves]].
 
 - II.7: 1, 2, 3; 4, 5, 7, 8, 9.
 

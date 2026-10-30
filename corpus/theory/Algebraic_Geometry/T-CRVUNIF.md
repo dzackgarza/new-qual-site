@@ -53,10 +53,10 @@ $$
 :::
 
 ::: {.remark}
-The differential equation in [[D-CRVWEIER]] shows that $\phi$ lands in $E_\Lambda$.
+The [[D-CRVWEIER|differential equation of the Weierstrass $\wp$-function]] shows that $\phi$ lands in $E_\Lambda$.
 The function $\wp$ has degree $2$ and is even, so $\wp(z)=\wp(z')$ implies $z'=\pm z$ in $\CC/\Lambda$; the odd function $\wp'$ distinguishes the two signs away from the branch points. The point at infinity is the image of $0\in\CC/\Lambda$. Hence $\phi$ is bijective and therefore an isomorphism of compact Riemann surfaces; GAGA identifies it with an algebraic isomorphism.
 
-For the converse, [[T-CRVMODJ]] gives surjectivity of $J=g_2^3/\Delta$ on homothety classes of lattices. Scaling $\Lambda\mapsto\alpha\Lambda$ sends
+For the converse, [[T-CRVMODJ|the theory of the modular function $J$]] gives surjectivity of $J=g_2^3/\Delta$ on homothety classes of lattices. Scaling $\Lambda\mapsto\alpha\Lambda$ sends
 $$
 (g_2,g_3)\longmapsto(\alpha^{-4}g_2,\alpha^{-6}g_3),
 $$

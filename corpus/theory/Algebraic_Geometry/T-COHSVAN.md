@@ -35,19 +35,19 @@ H^1\bigl(\PP_k^1,\OO(n-m)\bigr)=0
 \quad\Longleftrightarrow\quad
 n\ge m-1.
 $$
-At $n=m-2$, this first cohomology group is one-dimensional [@Har10a, Theorem III.5.1]. Thus the family $\OO_{\PP_k^1}(-m)$ has no common Serre-vanishing bound as $m$ varies; [[T-MODSERRE]] gives the explicit cohomology and global-generation bounds.
+At $n=m-2$, this first cohomology group is one-dimensional [@Har10a, Theorem III.5.1]. Thus the family $\OO_{\PP_k^1}(-m)$ has no common Serre-vanishing bound as $m$ varies; [[T-MODSERRE|Serre's theorems A and B]] give the explicit cohomology and global-generation bounds.
 :::
 
 ::: {.remark title="Euler characteristics over a field"}
 Suppose $A=k$ is a field.
-The dimensions $h^i(X,\mcf(n))=\dim_k H^i(X,\mcf(n))$ are finite by [[T-COHFIN]]. For all sufficiently large $n$, Serre vanishing gives
+The dimensions $h^i(X,\mcf(n))=\dim_k H^i(X,\mcf(n))$ are finite by [[T-COHFIN|finiteness of coherent cohomology]]. For all sufficiently large $n$, Serre vanishing gives
 $$
 \chi(X,\mcf(n))=\sum_i(-1)^i h^i(X,\mcf(n))=h^0(X,\mcf(n)).
 $$
-If $S$ is a finitely generated graded $k$-algebra with $S_0=k$, generated in degree one, and $M$ is a finite graded $S$-module with $X=\Proj S$ and $\mcf=\widetilde M$, then [[P-AGH259GAMMASTAR]] identifies the last term with $\dim_k M_n$ for all sufficiently large $n$.
+If $S$ is a finitely generated graded $k$-algebra with $S_0=k$, generated in degree one, and $M$ is a finite graded $S$-module with $X=\Proj S$ and $\mcf=\widetilde M$, then [[P-AGH259GAMMASTAR|the comparison of $M$ with $\Gamma_*(\widetilde M)$]] identifies the last term with $\dim_k M_n$ for all sufficiently large $n$.
 Consequently this Euler characteristic agrees in large degrees with the Hilbert polynomial of $M$ [@Har10a, Chapter I, §7].
 :::
 
 ::: {.remark title="Converse"}
-On a proper scheme over a noetherian ring, eventual vanishing of higher cohomology for every coherent sheaf characterizes ampleness; this is the cohomological part of [[T-DIVSERRE]].
+On a proper scheme over a noetherian ring, eventual vanishing of higher cohomology for every coherent sheaf characterizes ampleness; this is the cohomological part of [[T-DIVSERRE|Serre's ampleness criterion]].
 :::

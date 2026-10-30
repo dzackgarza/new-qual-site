@@ -49,9 +49,9 @@ Consequently every birational map of smooth projective surfaces is a finite sequ
 :::
 
 ::: {.remark}
-The connectedness theorem follows from [[T-MORSTEIN]]: in the Stein factorization of a proper birational map to normal $Y$, the finite birational factor is an isomorphism, so the original morphism has connected fibres.
+The connectedness theorem follows from [[T-MORSTEIN|Stein factorization]]: in the Stein factorization of a proper birational map to normal $Y$, the finite birational factor is an isomorphism, so the original morphism has connected fibres.
 
-For a birational morphism of smooth projective surfaces, the exceptional locus is a finite union of curves and its image is a finite set of points. A fibre over such a point can contain several irreducible curves. Surface factorization proceeds one $(-1)$-curve at a time: Castelnuovo's criterion [[T-SRFCAST]] contracts one such curve to a smooth point, and induction factors the whole morphism into point blowups.
+For a birational morphism of smooth projective surfaces, the exceptional locus is a finite union of curves and its image is a finite set of points. A fibre over such a point can contain several irreducible curves. Surface factorization proceeds one $(-1)$-curve at a time: [[T-SRFCAST|Castelnuovo's contractibility criterion]] contracts one such curve to a smooth point, and induction factors the whole morphism into point blowups.
 
 Fundamental points are the points where the inverse map fails to be defined: the map is a morphism on a largest open $U$, and $X \setminus U$ is that finite set.
 The total transform of a fundamental point is connected by the preceding theorem and is positive-dimensional whenever the inverse is undefined there.
