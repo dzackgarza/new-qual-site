@@ -22,4 +22,8 @@ source:
     problems:
     - id: P-FFLLF
       comment: '2.16'
+  - name: Ch. 5 Exercises
+    problems:
+    - id: P-O7DMP
+      comment: '5.2 as part (a)'
 ---
