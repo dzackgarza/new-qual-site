@@ -776,7 +776,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/resources/groups.md
   - [x] wiki/algebra/resources/index.md
   - [x] wiki/algebra/resources/modules.md
-  - [ ] wiki/algebra/resources/problems.md
+  - [x] wiki/algebra/resources/problems.md
   - [ ] wiki/algebra/resources/representations.md
   - [ ] wiki/algebra/resources/rings-and-ideals.md
   - [ ] wiki/algebra/resources/solutions-algebra.md
