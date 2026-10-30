@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.problem}
-a) Give the definition for a function $L: \RR^n \to \RR^m$ to be a linear transformation.
+(a) Give the definition for a function $L: \RR^n \to \RR^m$ to be a linear transformation.
 
-b) Prove that the kernel of a linear transformation $L: \RR^n \to \RR^m$ is a subspace of $\RR^n$.
+(b) Prove that the kernel of a linear transformation $L: \RR^n \to \RR^m$ is a subspace of $\RR^n$.
 :::
 
 ::: {.solution}
@@ -38,6 +38,7 @@ definition of a linear transformation.
 :::
 
 ::: pf-step
+
 (b) $\ker L = \theset{x \in \RR^n : L(x) = 0}$ is a subspace.
 
 ::: pf-proof

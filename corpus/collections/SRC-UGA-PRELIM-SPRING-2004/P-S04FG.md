@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Suppose $f, g: A \to A$ are functions with $f \circ g$ injective.
 
-a) Prove that $g$ must be injective.
+(a) Prove that $g$ must be injective.
 
-b) Give an example to show that $f$ need not be injective.
+(b) Give an example to show that $f$ need not be injective.
 :::
 
 ::: {.solution}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S04LM
 kind: problem
-title: Continuity preserves sequential limits of $g$
+title: The limit of $f\circ g$ at $0$ when $g\to L$ and $f$ is continuous at $L$
 classification:
   areas:
   - prelim
