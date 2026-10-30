@@ -2,157 +2,98 @@
 schema: qual/card@1
 id: P-TA3FG
 kind: problem
-title: 'Power series of radius $1$: convergence on $S^1$ versus analyticity at every
-  point of $S^1$'
+title: 'Power series of radius $1$: convergence on the circle versus analyticity at every boundary point'
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Power Series
-  - Convergence Tests
-  - Singularities
+    - Power Series
+    - Convergence Tests
+    - Singularities
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of convergence exactly 1.
+Here $\DD$ denotes the open unit disk and $\TT=\partial\DD$ the unit circle. Suppose $\Omega \subset \CC$ is a region containing $\DD$ and $f$ is holomorphic on $\Omega$. Suppose that on $\DD$ we have $f(z)=\sum a_nz^n$ and the series has radius of convergence equal to $1$.
 
-(a) Give an example of such a series that converges at every point of the unit circle $S^1 = \{\abs{z} = 1\}$.
+(a) Give an example of such an $f$ so that the series converges at every point of $\TT$.
 
-(b) Give an example of such a function $f$ that is analytic at $z = 1$, but whose series $\sum_{n=0}^\infty a_n$ diverges.
+(b) Give an example of such an $f$ that is analytic at $z_0 \in \TT$ and for which $\sum a_nz_0^n$ diverges.
 
-(c) Prove that $f$ cannot be analytically continued to be analytic at *every* point of $S^1$.
+(c) Prove that $f$ cannot be analytic at every point of $\TT$.
 :::
 
 ::: {.solution}
-**Goal:** Provide examples illustrating boundary convergence/divergence vs analyticity, and prove that every power series with radius of convergence 1 has at least one singularity on its circle of convergence.
 
 ::: pf
 
-::: pf-step
-Part (a): Example converging everywhere on $S^1$.
+::: {.pf-step #a}
+
+$f(z)=\sum_{n\ge1}z^n/n^2$ on $\Omega=\DD$ is an example for part (a).
 
 ::: pf-proof
 
-::: pf-step
-Define the power series
-$$f(z) = \sum_{n=1}^\infty \frac{z^n}{n^2}.$$
-:::
-
-::: pf-step
-Radius of convergence:
-$$R = \lim_{n \to \infty} \abs{ \frac{a_n}{a_{n+1}} } = \lim_{n \to \infty} \frac{(n+1)^2}{n^2} = 1.$$
-:::
-
-::: pf-step
-Convergence on $S^1$:
-
-- For any $z \in S^1$, $\abs{z} = 1$, so $\abs{ \frac{z^n}{n^2} } = \frac{1}{n^2}$.
-- The series $\sum_{n=1}^\infty \frac{1}{n^2} < \infty$ converges ($p$-series with $p = 2 > 1$).
-- By the Weierstrass $M$-test, the series converges absolutely (and uniformly) on the entire closed disk $\overline{\DD} = \{\abs{z} \le 1\}$.
-:::
-
-::: pf-step
-Thus $f(z)$ converges at every point of $S^1$.
-:::
+The radius of convergence is $\lim_n\bigl((n+1)/n\bigr)^2=1$. For $\abs{z}=1$, $\abs{z^n/n^2}=1/n^2$, and $\sum1/n^2<\infty$, so the series converges absolutely at every point of $\TT$.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): Example analytic at $z = 1$ with divergent series $\sum a_n$.
+::: {.pf-step #b}
+
+$f(z)=\dfrac{1}{1+z}=\sum_{n\ge0}(-1)^nz^n$ on $\Omega=\CC\setminus\{-1\}$, with $z_0=1$, is an example for part (b).
 
 ::: pf-proof
 
-::: pf-step
-Define the function
-$$f(z) = \frac{1}{1 + z} = \sum_{n=0}^\infty (-1)^n z^n \quad \text{for } \abs{z} < 1.$$
-:::
-
-::: pf-step
-Radius of convergence: $R = 1$ because the sequence of coefficients is $a_n = (-1)^n$, so $\limsup_{n \to \infty} \abs{a_n}^{1/n} = 1$.
-:::
-
-::: pf-step
-Analyticity at $z = 1$:
-
-- $f(z) = \frac{1}{1 + z}$ is holomorphic on the open set $\CC \setminus \{-1\}$.
-- In particular, $f(z)$ is holomorphic in the open disk $D(1, 1)$, so $f$ is analytic at $z = 1$.
-:::
-
-::: pf-step
-Divergence of the series at $z = 1$:
-
-- At $z = 1$, $\sum_{n=0}^\infty a_n 1^n = \sum_{n=0}^\infty (-1)^n = 1 - 1 + 1 - 1 + \cdots$.
-- The sequence of terms does not converge to 0 ($\lim_{n \to \infty} (-1)^n \ne 0$), so the series diverges by the Divergence Test.
-:::
+The coefficients have modulus $1$, so the radius of convergence is $1$. The function is holomorphic on $\Omega\ni1$. At $z_0=1$ the terms $(-1)^n$ do not tend to $0$, so the series diverges.
 
 :::
 
 :::
 
-::: pf-step
-Part (c): $f$ cannot be analytic at every point of $S^1$.
+::: {.pf-step #cover}
+
+Suppose $f$ is analytic at every point of $\TT$. Then there are finitely many disks $D_j=D(w_j,r_j)$, $w_j\in\TT$, that cover $\TT$, and holomorphic $f_j$ on $D_j$ with $f_j=f$ on $D_j\cap\DD$.
 
 ::: pf-proof
 
-::: pf-step
-Suppose for contradiction that $f$ can be analytically continued across every point of $S^1$.
-:::
-
-::: pf-step
-Local extensions: For each point $w \in S^1$, there exists an open disk $D(w, r_w)$ and a holomorphic function $f_w: D(w, r_w) \to \CC$ such that $f_w(z) = f(z)$ on $D(w, r_w) \cap \DD$.
-:::
-
-::: pf-step
-Open cover of compact $S^1$:
-
-- The collection $\{D(w, r_w) \mid w \in S^1\}$ is an open cover of the compact set $S^1$.
-- By compactness, there exists a finite subcover $\{D(w_1, r_1), \dots, D(w_m, r_m)\}$ of $S^1$.
-:::
-
-::: pf-step
-Global extension:
-
-- Define the open domain $U = \DD \cup \bigcup_{j=1}^m D(w_j, r_j)$.
-- The functions $f$ and $f_{w_j}$ agree on all pairwise intersections by the Identity Theorem for connected domains.
-- Thus they define a single holomorphic function $F: U \to \CC$ that extends $f$.
-:::
-
-::: pf-step
-Enlarged disk:
-
-- The domain $U$ is an open set containing the compact set $\overline{\DD} = \{\abs{z} \le 1\}$.
-- By the Lebesgue Covering Lemma (or distance from a compact set to the complement), there exists $\varepsilon > 0$ such that the disk $D(0, 1 + \varepsilon) \subseteq U$.
-:::
-
-::: pf-step
-Radius of convergence contradiction:
-
-- Since $F$ is holomorphic on the open disk $D(0, 1 + \varepsilon)$, its Taylor series centered at 0 converges on all of $D(0, 1 + \varepsilon)$.
-- The Taylor coefficients of $F$ at 0 are given by $\frac{F^{(n)}(0)}{n!} = \frac{f^{(n)}(0)}{n!} = a_n$.
-- This implies that the radius of convergence of $\sum_{n=0}^\infty a_n z^n$ is at least $1 + \varepsilon > 1$.
-- This contradicts the hypothesis that the radius of convergence is exactly 1.
-:::
-
-::: pf-step
-Therefore, $f$ must have at least one singular point on $S^1$.
-:::
+Analyticity at $w\in\TT$ gives a disk $D(w,r_w)$ and a holomorphic $f_w$ on it that equals $f$ on $D(w,r_w)\cap\DD$. These disks cover the compact set $\TT$, so finitely many of them cover it.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
+::: {.pf-step #glue}
+
+$f$ and the $f_j$ define one holomorphic function $F$ on $U=\DD\cup D_1\cup\cdots\cup D_m$.
 
 ::: pf-proof
-$\sum z^n/n^2$ converges on $S^1$, $\frac{1}{1+z}$ is analytic at 1 with divergent series, and every power series has a singularity on its circle of convergence by compactness and Taylor's theorem.
-:::
+
+It suffices that $f_j=f_k$ on $D_j\cap D_k$ when this set is nonempty. The intersection of two disks is convex, so it is connected. It meets $\DD$: if $w_j=w_k$ it is a disk centered on $\TT$; otherwise $\abs{w_j-w_k}<r_j+r_k$, so some point of the open segment from $w_j$ to $w_k$ lies in both disks, and that open segment lies in $\DD$ because $\DD$ is strictly convex. On the nonempty open set $D_j\cap D_k\cap\DD$ both functions equal $f$, so by the identity theorem $f_j=f_k$ on $D_j\cap D_k$.
 
 :::
 
 :::
+
+::: {.pf-step #c}
+
+This contradicts the radius of convergence $1$, which proves part (c).
+
+::: pf-proof
+
+The open set $U$ contains the compact set $\overline\DD$, so it contains $D(0,1+\varepsilon)$ for some $\varepsilon>0$. By Step [](#glue){.pf-ref}, $F$ is holomorphic there, so its Taylor series at $0$ converges on $D(0,1+\varepsilon)$. Since $F=f$ on $\DD$, that Taylor series is $\sum a_nz^n$. Its radius of convergence is then at least $1+\varepsilon$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#a){.pf-ref}, [](#b){.pf-ref} and [](#c){.pf-ref} answer parts (a), (b) and (c).
+
+:::
+
+:::
+
 :::
