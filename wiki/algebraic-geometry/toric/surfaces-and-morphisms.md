@@ -9,9 +9,6 @@ topics:
 
 # Toric surfaces and toric morphisms
 
-A smooth complete toric surface is given by primitive vectors $u_1,\ldots,u_r\in\ZZ^2$ in cyclic order, consecutive pairs forming bases of $\ZZ^2$.
-Writing $u_{i-1}+u_{i+1}=b_iu_i$, the boundary divisors satisfy $D_i^2=-b_i$ and $D_i\cdot D_{i+1}=1$.
-
 [[PR-TORMOR]]
 
 ![The fan of $\PP^2$ with each cone labelled by $\lim_{t \to 0} \lambda^u(t)$](/assets/algebraic-geometry/toric/one-parameter-subgroup-limits-in-fan-of-p2.png)
