@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Applied-Algebra-Qual-Spring-2019.pdf",
+  "source_pdf_sha256": "05fcb01ed1774c3bbcd494b26c7d26f73a8215c976c8921efaf8c6a3e4ad5cbb",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra-Qual-Spring-2019.pdf",
+  "extracted_markdown": "assets/attachments/Applied-Algebra-Qual-Spring-2019_extracted.md",
+  "extracted_markdown_sha256": "ca0a1a73855cdbd7a292c5970357d0e4f6de1d3b417eb13fbc4aedb0e57be706",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Applied-Algebra-Qual-Spring-2019.pdf --language en",
+  "generated_at": "2026-10-30"
+}

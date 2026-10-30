@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP22-202ABC-Applied.pdf",
+  "source_pdf_sha256": "3e9f3b18ec941414dc3f1771bb034b10bc33a31afbaf82ea0a8c012e3d5d548f",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP22-202ABC-Applied.pdf",
+  "extracted_markdown": "assets/attachments/SP22-202ABC-Applied_extracted.md",
+  "extracted_markdown_sha256": "b2ab230ebf50d60769a7f5e9e95d64df780092b51463f795211daf7d5da3411b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP22-202ABC-Applied.pdf --language en",
+  "generated_at": "2026-10-30"
+}

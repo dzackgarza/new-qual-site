@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA22_APPLIED_202ABC.pdf",
+  "source_pdf_sha256": "dc45ceb6466ec30e5eea1f6047b56e5f9c111c4f0a885018e1d660cbf2596188",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_APPLIED_202ABC.pdf",
+  "extracted_markdown": "assets/attachments/FA22_APPLIED_202ABC_extracted.md",
+  "extracted_markdown_sha256": "bdf981e2c1cf041a19c3b36993332e9c8e00293c58799231df209b898db36bb5",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA22_APPLIED_202ABC.pdf --language en",
+  "generated_at": "2026-10-30"
+}

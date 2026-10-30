@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/PartCFall2023.pdf",
+  "source_pdf_sha256": "4aa353c698a36950a844fe869db9dea8b9d706636ce38f0a663ed6cc85adb671",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/PartCFall2023.pdf",
+  "extracted_markdown": "assets/attachments/PartCFall2023_extracted.md",
+  "extracted_markdown_sha256": "367b21e498a6071ab7c8faa2d71424acfb5a3b9c66a3abf7b3a34ab749acacfb",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/PartCFall2023.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: incomplete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra-Qual-Spring-2019.pdf
+- assets/attachments/Applied-Algebra-Qual-Spring-2019.pdf
 source:
   source_kind: university-exam
   institution: ucsd

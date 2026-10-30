@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP04_202_Applied_Algebra_Qual.pdf",
+  "source_pdf_sha256": "67a20666977ab7b191125ae2cf78e9a262006b7337d05f0bcefa386fbb571c62",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP04_202_Applied_Algebra_Qual.pdf",
+  "extracted_markdown": "assets/attachments/SP04_202_Applied_Algebra_Qual_extracted.md",
+  "extracted_markdown_sha256": "4e33a67ffaa4fb1f3a7305764d1b1f7860e7a98ac5266ec3bde9ed023807989b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP04_202_Applied_Algebra_Qual.pdf --language en",
+  "generated_at": "2026-10-30"
+}

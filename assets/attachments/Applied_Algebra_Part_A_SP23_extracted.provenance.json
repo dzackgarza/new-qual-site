@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Applied_Algebra_Part_A_SP23.pdf",
+  "source_pdf_sha256": "c2f478e9306ed5f10ef0a35873b76faf110d05ba26dedf1ce826ecac91b77b63",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied%20Algebra%20Part%20A%20SP23.pdf",
+  "extracted_markdown": "assets/attachments/Applied_Algebra_Part_A_SP23_extracted.md",
+  "extracted_markdown_sha256": "03794e1213eebb8d42c68486808cbd67178a477d179475f18da8d2a6f68c178d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Applied_Algebra_Part_A_SP23.pdf --language en",
+  "generated_at": "2026-10-30"
+}

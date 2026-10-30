@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA21-Applied-Algebra.pdf",
+  "source_pdf_sha256": "4c8ac5e307d1142f75a30a63ed19770662f304ab505a066ae965d31ca1495433",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Applied-Algebra.pdf",
+  "extracted_markdown": "assets/attachments/FA21-Applied-Algebra_extracted.md",
+  "extracted_markdown_sha256": "54fa4f448310945d326275dd5c6747435e69637f167849b93a00d1904f98e8b0",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA21-Applied-Algebra.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra.pdf
+- assets/attachments/Applied-Algebra.pdf
 - assets/attachments/Applied-Algebra-FA17.pdf
 source:
   source_kind: university-exam

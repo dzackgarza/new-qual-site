@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/qual-23-Fall.pdf",
+  "source_pdf_sha256": "ad1336b30a9ae984d90a4418e525e30b583ab6363e0cc9c4e2f2789727cbc34e",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/qual-23-Fall.pdf",
+  "extracted_markdown": "assets/attachments/qual-23-Fall_extracted.md",
+  "extracted_markdown_sha256": "e8735a4087195547f79eb15d3e0f12de6f6dbecc92fcc899fda57e7c17bb58c7",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/qual-23-Fall.pdf --language en",
+  "generated_at": "2026-10-30"
+}

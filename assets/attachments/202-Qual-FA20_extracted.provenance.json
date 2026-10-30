@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/202-Qual-FA20.pdf",
+  "source_pdf_sha256": "008fb03b9719818c0a756e9192fe851553ba2bdc68f0118f7b41530d5aec32eb",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/202-Qual-FA20.pdf",
+  "extracted_markdown": "assets/attachments/202-Qual-FA20_extracted.md",
+  "extracted_markdown_sha256": "225d44ceba5c9005416e3884f1a46fd5518890a5a8c9e36cad03ba281a2c71b3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/202-Qual-FA20.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -11,8 +11,8 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied%20Algebra%20Part%20A%20SP23.pdf
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied%20Algebra%20Part%20B%20SP23.pdf
+- assets/attachments/Applied_Algebra_Part_A_SP23.pdf
+- assets/attachments/Applied_Algebra_Part_B_SP23.pdf
 source:
   source_kind: university-exam
   institution: ucsd

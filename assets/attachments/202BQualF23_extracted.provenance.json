@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/202BQualF23.pdf",
+  "source_pdf_sha256": "77d7a8509dbbc606c51ffeb0e3f2d1f3f7f3bdac0c67f47a02e0ab643acb8f5c",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/202BQualF23.pdf",
+  "extracted_markdown": "assets/attachments/202BQualF23_extracted.md",
+  "extracted_markdown_sha256": "88359ac57b6bed843a2ec03dc16fba3902fd9f805ce9e04d6584304c25398c7d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/202BQualF23.pdf --language en",
+  "generated_at": "2026-10-30"
+}

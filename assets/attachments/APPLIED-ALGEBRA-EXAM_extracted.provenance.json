@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/APPLIED-ALGEBRA-EXAM.pdf",
+  "source_pdf_sha256": "9e8f11b5746f406c0d58634d936f928f8ce34a3731c940ae4851e45584825d09",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/APPLIED-ALGEBRA-EXAM.pdf",
+  "extracted_markdown": "assets/attachments/APPLIED-ALGEBRA-EXAM_extracted.md",
+  "extracted_markdown_sha256": "c18c53263f3c57c6380a2ba85950de82c281d361a6910f4c26878f89addb2216",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/APPLIED-ALGEBRA-EXAM.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA25_-_Applied_Algebra_Qualifying_Exam.pdf",
+  "source_pdf_sha256": "f2d60fe597bcecda908e6faced9a6aa2c15c751851afaf97657091374e7d2402",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA25%20-%20Applied%20Algebra%20Qualifying%20Exam.pdf",
+  "extracted_markdown": "assets/attachments/FA25_-_Applied_Algebra_Qualifying_Exam_extracted.md",
+  "extracted_markdown_sha256": "d3d09ca7425436747541d05f2fc1b5ba81a4cc086d1413685a59036cb397be07",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA25_-_Applied_Algebra_Qualifying_Exam.pdf --language en",
+  "generated_at": "2026-10-30"
+}
