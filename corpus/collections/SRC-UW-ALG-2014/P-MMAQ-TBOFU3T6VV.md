@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-TBOFU3T6VV
 kind: problem
-title: Recall that a ring $A$ is called \textit{graded} if it admits a direct
+title: A graded ring is Noetherian iff $A_0$ is Noetherian and $A$ is a finitely generated $A_0$-algebra
 classification:
   areas:
   - algebra
