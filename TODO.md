@@ -733,7 +733,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/fields/separability.md
   - [x] wiki/algebra/fields/splitting-and-normal.md
   - [x] wiki/algebra/galois-theory/compute-this-galois-group.md
-  - [ ] wiki/algebra/galois-theory/cyclotomic-and-radical-extensions.md
+  - [x] wiki/algebra/galois-theory/cyclotomic-and-radical-extensions.md
   - [ ] wiki/algebra/galois-theory/index.md
   - [ ] wiki/algebra/galois-theory/the-correspondence.md
   - [ ] wiki/algebra/galois-theory/worked-examples.md
