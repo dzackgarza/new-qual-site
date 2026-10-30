@@ -26,98 +26,51 @@ for all natural numbers $n$ and all real numbers $x$.
 :::
 
 ::: {.solution}
-  1. Suppose $f_n \rightrightarrows g$ with each $f_n$ bounded; we want to show that all of the $f_n$ are uniformly bounded by some $M$, i.e.
-  $$
-  \exists M \suchthat \forall x\in \RR, \forall n\in \NN, \quad \abs{f_n(x)} \leq M.
-  $$
-  - Since each $f_n$ is bounded, we can produce some $M_n$ such that $\abs{f_n(x)} \leq M < \infty$.
-  - Since $f_n \rightrightarrows g$, we can give ourselves an epsilon of room and get an $N$ such that $n\geq N \implies \abs{f_n(x) - g(x)} < \varepsilon$. We then write
-  $$
-  f_n(x) = f_n(x) - g(x) + g(x) - f_N(x) + f_N(x) \\
-  \implies \abs{f_n(x)} \leq \abs{f_n(x) - g(x)} + \abs{g(x) - f_N(x)} + \abs{f_N(x)} \\
-  \leq \varepsilon + \varepsilon + M_N
-  $$
-
-  by the above two statements. But $N<\infty$, so we can choose $M = \max\theset{M_1, M_2, \cdots M_{N-1}, 2\varepsilon + M_N}$ as a uniform bound. Then just take $\varepsilon \to 0$. (Maybe not necessary?)
-:::
-
-::: {.solution}
-**Goal:** Let $E$ be a set, and let $(f_n)_{n=1}^\infty$ be a sequence of functions $f_n: E \to \RR$ such that each $f_n$ is bounded on $E$. Suppose $f_n \to g$ uniformly on $E$. Prove that the sequence $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$, i.e., there exists a constant $M > 0$ such that $\abs{f_n(x)} \le M$ for all $n \in \NN$ and all $x \in E$.
 
 ::: pf
 
-::: {.pf-step #s1}
-Definition of uniform convergence: There exists an integer $N \ge 1$ such that for all $n \ge N$ and all $x \in E$, $\abs{f_n(x) - g(x)} < 1$.
+::: {.pf-step #tail}
 
-::: pf-proof
-By the definition of uniform convergence with $\varepsilon = 1 > 0$.
-:::
-
-:::
-
-::: {.pf-step #s2}
-For all $n \ge N$ and all $x \in E$, $\abs{f_n(x)} \le \abs{f_N(x)} + 2$.
+There is $N \in \NN$ such that $\abs{f_n(x)} < \abs{f_N(x)} + 2$ for all $n \ge N$ and all $x \in \RR$.
 
 ::: pf-proof
 
-::: pf-step
-By the triangle inequality:
-$$\abs{f_n(x) - f_N(x)} \le \abs{f_n(x) - g(x)} + \abs{g(x) - f_N(x)}.$$
-:::
-
-::: pf-step
-For any $n \ge N$, applying step [](#s1){.pf-ref} gives $\abs{f_n(x) - g(x)} < 1$ and $\abs{f_N(x) - g(x)} < 1$.
-Thus $\abs{f_n(x) - f_N(x)} < 1 + 1 = 2$.
-:::
-
-::: pf-step
-Again by the triangle inequality:
-$$\abs{f_n(x)} \le \abs{f_N(x)} + \abs{f_n(x) - f_N(x)} < \abs{f_N(x)} + 2.$$
-:::
+By uniform convergence with $\varepsilon = 1$, there is $N$ such that $\abs{f_n(x) - f(x)} < 1$ for all $n \ge N$ and all $x$.
+For $n \ge N$ the triangle inequality gives
+$$
+\abs{f_n(x)} \le \abs{f_N(x)} + \abs{f_N(x) - f(x)} + \abs{f(x) - f_n(x)} < \abs{f_N(x)} + 2.
+$$
 
 :::
 
 :::
 
-::: {.pf-step #s3}
-For each $k \in \{1, 2, \dots, N\}$, there exists a constant $M_k < \infty$ such that $\abs{f_k(x)} \le M_k$ for all $x \in E$.
+::: {.pf-step #heads}
 
-::: pf-proof
-By hypothesis, each function $f_k$ is bounded on $E$.
-:::
-
-:::
-
-::: {.pf-step #s4}
-Define $M = \max\{M_1, M_2, \dots, M_{N-1}, M_N + 2\}$. Then $\abs{f_n(x)} \le M$ for all $n \in \NN$ and all $x \in E$.
+For each $k \in \{1, \dots, N\}$ there is $M_k \ge 0$ with $\abs{f_k(x)} \le M_k$ for all $x \in \RR$.
 
 ::: pf-proof
 
-::: pf-step
-If $1 \le n < N$, then for all $x \in E$, $\abs{f_n(x)} \le M_n \le M$ by step [](#s3){.pf-ref} and definition of $M$.
-:::
-
-::: pf-step
-If $n \ge N$, then by steps [](#s2){.pf-ref} and [](#s3){.pf-ref}:
-$$\abs{f_n(x)} < \abs{f_N(x)} + 2 \le M_N + 2 \le M.$$
-:::
-
-::: pf-step
-In all cases, $\abs{f_n(x)} \le M$ for all $n \in \NN$ and all $x \in E$.
-:::
+Each $f_k$ is bounded by hypothesis.
 
 :::
 
 :::
 
 ::: pf-step
-Conclusion: $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$.
+
+The number $M = \max\{M_1, \dots, M_{N-1}, M_N + 2\} > 0$ satisfies $\abs{f_n(x)} \le M$ for all $n \in \NN$ and all $x \in \RR$.
 
 ::: pf-proof
-Follows directly from step [](#s4){.pf-ref}.
-:::
+
+We have $M \ge M_N + 2 > 0$.
+If $n < N$, then $\abs{f_n(x)} \le M_n \le M$ by step [](#heads){.pf-ref}.
+If $n \ge N$, then $\abs{f_n(x)} < M_N + 2 \le M$ by steps [](#tail){.pf-ref} and [](#heads){.pf-ref}.
 
 :::
 
 :::
+
+:::
+
 :::
