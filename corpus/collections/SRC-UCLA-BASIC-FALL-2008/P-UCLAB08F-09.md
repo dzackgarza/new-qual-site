@@ -17,21 +17,9 @@ audit:
 ---
 ::: {.problem}
 
-::: pf
+(a) Prove that every linear transformation $T\colon\CC^n\to\CC^n$ has a nonzero eigenvector.
 
-::: {.pf-step #p1-s1}
-
-Prove that every linear transformation $T\colon\CC^n\to\CC^n$ has a nonzero eigenvector.
-
-:::
-
-::: pf-step
-
-Is step [](#p1-s1){.pf-ref} true for every real-linear transformation $T\colon\RR^n\to\RR^n$?
-
-:::
-
-:::
+(b) Is (a) true for every linear transformation $T\colon\RR^n\to\RR^n$?
 
 Prove your assertion.
 :::
@@ -147,7 +135,7 @@ $$
 
 ::: pf-proof
 
-Step [](#p2-s1){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and steps [](#p2-s2){.pf-ref} and [](#p2-s3){.pf-ref} give a counterexample to part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s1){.pf-ref} proves part (a), and steps [](#p2-s2){.pf-ref} and [](#p2-s3){.pf-ref} give a counterexample to part (b).
 
 :::
 

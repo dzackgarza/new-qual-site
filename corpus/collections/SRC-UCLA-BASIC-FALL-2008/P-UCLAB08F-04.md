@@ -17,25 +17,13 @@ audit:
 ---
 ::: {.problem}
 
-::: pf
-
-::: {.pf-step #p1-s1}
-
-Let $K,F\subset\RR^2$, with $K$ closed and bounded and $F$ closed.
+(a) Let $K,F\subset\RR^2$, with $K$ closed and bounded and $F$ closed.
 Prove that if $K\cap F=\varnothing$, then
 $$
 d(K,F):=\inf\{d(x,y):x\in K,\ y\in F\}>0.
 $$
 
-:::
-
-::: pf-step
-
-Is step [](#p1-s1){.pf-ref} still true if $K$ is only assumed closed?
-
-:::
-
-:::
+(b) Is (a) still true if $K$ is only assumed closed?
 
 Prove your assertion.
 :::
@@ -47,7 +35,7 @@ Assume first that both $K$ and $F$ are nonempty; if one is empty, the distance s
 
 ::: {.pf-step #p2-s1}
 
-Under the hypotheses of part step [](#p2-s1){.pf-ref}, the set $K$ is compact.
+Under the hypotheses of part (a), the set $K$ is compact.
 
 ::: pf-proof
 
@@ -172,7 +160,7 @@ $$
 
 ::: {.pf-step #p2-s6}
 
-Part step [](#p2-s1){.pf-ref} is false if $K$ is assumed only closed.
+Part (a) is false if $K$ is assumed only closed.
 
 ::: pf-proof
 
@@ -211,7 +199,7 @@ $$
 
 ::: pf-qed
 
-Step [](#p2-s5){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and step [](#p2-s6){.pf-ref} gives a counterexample to part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s5){.pf-ref} proves part (a), and step [](#p2-s6){.pf-ref} gives a counterexample to part (b).
 
 :::
 

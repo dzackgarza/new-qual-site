@@ -36,21 +36,9 @@ A=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-::: pf
+(a) Show that $A$ is singular.
 
-::: pf-step
-
-Show that $A$ is singular.
-
-:::
-
-::: pf-step
-
-Determine the condition on $\mathbf f$ necessary and sufficient for a solution to exist.
-
-:::
-
-:::
+(b) Determine the condition on $\mathbf f$ necessary and sufficient for a solution to exist.
 
 :::
 
@@ -250,7 +238,7 @@ $$
 
 ::: pf-qed
 
-Step [](#p2-s2){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and step [](#p2-s6){.pf-ref} gives the necessary and sufficient solvability condition in part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s2){.pf-ref} proves part (a), and step [](#p2-s6){.pf-ref} gives the necessary and sufficient solvability condition in part (b).
 
 :::
 

@@ -18,21 +18,9 @@ audit:
 ::: {.problem}
 Let $A\subset\RR^2$ be nonempty and connected.
 
-::: pf
+(a) Prove that if $A$ is open, then $A$ is path connected.
 
-::: {.pf-step #p1-s1}
-
-Prove that if $A$ is open, then $A$ is path connected.
-
-:::
-
-::: pf-step
-
-Is step [](#p1-s1){.pf-ref} still true if $A$ is closed?
-
-:::
-
-:::
+(b) Is (a) still true if $A$ is closed?
 
 Prove your assertion.
 :::
