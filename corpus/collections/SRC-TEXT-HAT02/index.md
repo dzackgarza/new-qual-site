@@ -432,160 +432,251 @@ source:
   - name: '3.1'
     problems:
     - id: E-HAT-3.1-1
-      comment: Exercise 3.1.1
+      comment: 3.1.1
     - id: E-HAT-3.1-2
-      comment: Exercise 3.1.2
+      comment: 3.1.2
     - id: E-HAT-3.1-3
-      comment: Exercise 3.1.3
+      comment: 3.1.3
     - id: E-HAT-3.1-4
-      comment: Exercise 3.1.4
+      comment: 3.1.4
     - id: E-HAT-3.1-5
-      comment: Exercise 3.1.5
+      comment: 3.1.5
     - id: E-HAT-3.1-6
-      comment: Exercise 3.1.6
+      comment: 3.1.6
     - id: E-HAT-3.1-7
-      comment: Exercise 3.1.7
+      comment: 3.1.7
     - id: E-HAT-3.1-8
-      comment: Exercise 3.1.8
+      comment: 3.1.8
     - id: E-HAT-3.1-9
-      comment: Exercise 3.1.9
+      comment: 3.1.9
     - id: E-HAT-3.1-10
-      comment: Exercise 3.1.10
+      comment: 3.1.10
     - id: E-HAT-3.1-11
-      comment: Exercise 3.1.11
+      comment: 3.1.11
     - id: E-HAT-3.1-12
-      comment: Exercise 3.1.12
+      comment: 3.1.12
     - id: E-HAT-3.1-13
-      comment: Exercise 3.1.13
+      comment: 3.1.13
   - name: '3.2'
     problems:
     - id: E-HAT-3.2-1
-      comment: Exercise 3.2.1
+      comment: 3.2.1
     - id: E-HAT-3.2-2
-      comment: Exercise 3.2.2
+      comment: 3.2.2
     - id: E-HAT-3.2-3
-      comment: Exercise 3.2.3
+      comment: 3.2.3
     - id: E-HAT-3.2-4
-      comment: Exercise 3.2.4
+      comment: 3.2.4
     - id: E-HAT-3.2-5
-      comment: Exercise 3.2.5
+      comment: 3.2.5
     - id: E-HAT-3.2-6
-      comment: Exercise 3.2.6
+      comment: 3.2.6
     - id: E-HAT-3.2-7
-      comment: Exercise 3.2.7
+      comment: 3.2.7
     - id: E-HAT-3.2-8
-      comment: Exercise 3.2.8
+      comment: 3.2.8
     - id: E-HAT-3.2-9
-      comment: Exercise 3.2.9
+      comment: 3.2.9
     - id: E-HAT-3.2-10
-      comment: Exercise 3.2.10
-    - E-HAT-3.2-11
-    - E-HAT-3.2-12
-    - E-HAT-3.2-13
-    - E-HAT-3.2-14
-    - E-HAT-3.2-15
-    - E-HAT-3.2-16
-    - E-HAT-3.2-18
+      comment: 3.2.10
+    - id: E-HAT-3.2-11
+      comment: 3.2.11
+    - id: E-HAT-3.2-12
+      comment: 3.2.12
+    - id: E-HAT-3.2-13
+      comment: 3.2.13
+    - id: E-HAT-3.2-14
+      comment: 3.2.14
+    - id: E-HAT-3.2-15
+      comment: 3.2.15
+    - id: E-HAT-3.2-16
+      comment: 3.2.16
+    - id: E-HAT-3.2-18
+      comment: 3.2.18
   - name: '3.3'
     problems:
-    - E-HAT-3.3-1
-    - E-HAT-3.3-2
-    - E-HAT-3.3-3
-    - E-HAT-3.3-4
-    - E-HAT-3.3-5
-    - E-HAT-3.3-6
-    - E-HAT-3.3-7
-    - E-HAT-3.3-8
-    - E-HAT-3.3-9
-    - E-HAT-3.3-10
-    - E-HAT-3.3-11
-    - E-HAT-3.3-12
-    - E-HAT-3.3-13
-    - E-HAT-3.3-14
-    - E-HAT-3.3-15
-    - E-HAT-3.3-16
-    - E-HAT-3.3-17
-    - E-HAT-3.3-18
-    - E-HAT-3.3-19
-    - E-HAT-3.3-20
-    - E-HAT-3.3-21
-    - E-HAT-3.3-22
-    - E-HAT-3.3-23
-    - E-HAT-3.3-24
-    - E-HAT-3.3-25
-    - E-HAT-3.3-26
-    - E-HAT-3.3-27
-    - E-HAT-3.3-28
-    - E-HAT-3.3-29
-    - E-HAT-3.3-30
-    - E-HAT-3.3-31
-    - E-HAT-3.3-32
-    - E-HAT-3.3-33
-    - E-HAT-3.3-34
-    - E-HAT-3.3-35
+    - id: E-HAT-3.3-1
+      comment: 3.3.1
+    - id: E-HAT-3.3-2
+      comment: 3.3.2
+    - id: E-HAT-3.3-3
+      comment: 3.3.3
+    - id: E-HAT-3.3-4
+      comment: 3.3.4
+    - id: E-HAT-3.3-5
+      comment: 3.3.5
+    - id: E-HAT-3.3-6
+      comment: 3.3.6
+    - id: E-HAT-3.3-7
+      comment: 3.3.7
+    - id: E-HAT-3.3-8
+      comment: 3.3.8
+    - id: E-HAT-3.3-9
+      comment: 3.3.9
+    - id: E-HAT-3.3-10
+      comment: 3.3.10
+    - id: E-HAT-3.3-11
+      comment: 3.3.11
+    - id: E-HAT-3.3-12
+      comment: 3.3.12
+    - id: E-HAT-3.3-13
+      comment: 3.3.13
+    - id: E-HAT-3.3-14
+      comment: 3.3.14
+    - id: E-HAT-3.3-15
+      comment: 3.3.15
+    - id: E-HAT-3.3-16
+      comment: 3.3.16
+    - id: E-HAT-3.3-17
+      comment: 3.3.17
+    - id: E-HAT-3.3-18
+      comment: 3.3.18
+    - id: E-HAT-3.3-19
+      comment: 3.3.19
+    - id: E-HAT-3.3-20
+      comment: 3.3.20
+    - id: E-HAT-3.3-21
+      comment: 3.3.21
+    - id: E-HAT-3.3-22
+      comment: 3.3.22
+    - id: E-HAT-3.3-23
+      comment: 3.3.23
+    - id: E-HAT-3.3-24
+      comment: 3.3.24
+    - id: E-HAT-3.3-25
+      comment: 3.3.25
+    - id: E-HAT-3.3-26
+      comment: 3.3.26
+    - id: E-HAT-3.3-27
+      comment: 3.3.27
+    - id: E-HAT-3.3-28
+      comment: 3.3.28
+    - id: E-HAT-3.3-29
+      comment: 3.3.29
+    - id: E-HAT-3.3-30
+      comment: 3.3.30
+    - id: E-HAT-3.3-31
+      comment: 3.3.31
+    - id: E-HAT-3.3-32
+      comment: 3.3.32
+    - id: E-HAT-3.3-33
+      comment: 3.3.33
+    - id: E-HAT-3.3-34
+      comment: 3.3.34
+    - id: E-HAT-3.3-35
+      comment: 3.3.35
   - name: 3.A
     problems:
-    - E-HAT-3.A-1
-    - E-HAT-3.A-2
-    - E-HAT-3.A-3
-    - E-HAT-3.A-4
-    - E-HAT-3.A-5
-    - E-HAT-3.A-6
+    - id: E-HAT-3.A-1
+      comment: 3.A.1
+    - id: E-HAT-3.A-2
+      comment: 3.A.2
+    - id: E-HAT-3.A-3
+      comment: 3.A.3
+    - id: E-HAT-3.A-4
+      comment: 3.A.4
+    - id: E-HAT-3.A-5
+      comment: 3.A.5
+    - id: E-HAT-3.A-6
+      comment: 3.A.6
   - name: 3.B
     problems:
-    - E-HAT-3.B-1
-    - E-HAT-3.B-2
-    - E-HAT-3.B-3
-    - E-HAT-3.B-4
-    - E-HAT-3.B-5
+    - id: E-HAT-3.B-1
+      comment: 3.B.1
+    - id: E-HAT-3.B-2
+      comment: 3.B.2
+    - id: E-HAT-3.B-3
+      comment: 3.B.3
+    - id: E-HAT-3.B-4
+      comment: 3.B.4
+    - id: E-HAT-3.B-5
+      comment: 3.B.5
   - name: 3.C
     problems:
-    - E-HAT-3.C-1
-    - E-HAT-3.C-2
-    - E-HAT-3.C-3
-    - E-HAT-3.C-4
-    - E-HAT-3.C-5
-    - E-HAT-3.C-6
-    - E-HAT-3.C-7
-    - E-HAT-3.C-8
-    - E-HAT-3.C-9
-    - E-HAT-3.C-10
-    - E-HAT-3.C-11
-    - E-HAT-3.C-12
-    - E-HAT-3.C-13
-    - E-HAT-3.C-14
-    - E-HAT-3.C-15
-    - E-HAT-3.C-16
+    - id: E-HAT-3.C-1
+      comment: 3.C.1
+    - id: E-HAT-3.C-2
+      comment: 3.C.2
+    - id: E-HAT-3.C-3
+      comment: 3.C.3
+    - id: E-HAT-3.C-4
+      comment: 3.C.4
+    - id: E-HAT-3.C-5
+      comment: 3.C.5
+    - id: E-HAT-3.C-6
+      comment: 3.C.6
+    - id: E-HAT-3.C-7
+      comment: 3.C.7
+    - id: E-HAT-3.C-8
+      comment: 3.C.8
+    - id: E-HAT-3.C-9
+      comment: 3.C.9
+    - id: E-HAT-3.C-10
+      comment: 3.C.10
+    - id: E-HAT-3.C-11
+      comment: 3.C.11
+    - id: E-HAT-3.C-12
+      comment: 3.C.12
+    - id: E-HAT-3.C-13
+      comment: 3.C.13
+    - id: E-HAT-3.C-14
+      comment: 3.C.14
+    - id: E-HAT-3.C-15
+      comment: 3.C.15
+    - id: E-HAT-3.C-16
+      comment: 3.C.16
   - name: 3.D
     problems:
-    - E-HAT-3.D-1
-    - E-HAT-3.D-2
-    - E-HAT-3.D-3
+    - id: E-HAT-3.D-1
+      comment: 3.D.1
+    - id: E-HAT-3.D-2
+      comment: 3.D.2
+    - id: E-HAT-3.D-3
+      comment: 3.D.3
   - name: 3.E
     problems:
-    - E-HAT-3.E-1
-    - E-HAT-3.E-2
-    - E-HAT-3.E-3
-    - E-HAT-3.E-4
+    - id: E-HAT-3.E-1
+      comment: 3.E.1
+    - id: E-HAT-3.E-2
+      comment: 3.E.2
+    - id: E-HAT-3.E-3
+      comment: 3.E.3
+    - id: E-HAT-3.E-4
+      comment: 3.E.4
   - name: 3.F
     problems:
-    - E-HAT-3.F-1
-    - E-HAT-3.F-2
-    - E-HAT-3.F-3
-    - E-HAT-3.F-4
-    - E-HAT-3.F-5
-    - E-HAT-3.F-6
-    - E-HAT-3.F-7
-    - E-HAT-3.F-8
-    - E-HAT-3.F-9
+    - id: E-HAT-3.F-1
+      comment: 3.F.1
+    - id: E-HAT-3.F-2
+      comment: 3.F.2
+    - id: E-HAT-3.F-3
+      comment: 3.F.3
+    - id: E-HAT-3.F-4
+      comment: 3.F.4
+    - id: E-HAT-3.F-5
+      comment: 3.F.5
+    - id: E-HAT-3.F-6
+      comment: 3.F.6
+    - id: E-HAT-3.F-7
+      comment: 3.F.7
+    - id: E-HAT-3.F-8
+      comment: 3.F.8
+    - id: E-HAT-3.F-9
+      comment: 3.F.9
   - name: 3.H
     problems:
-    - E-HAT-3.H-1
-    - E-HAT-3.H-2
-    - E-HAT-3.H-3
-    - E-HAT-3.H-4
-    - E-HAT-3.H-5
-    - E-HAT-3.H-6
+    - id: E-HAT-3.H-1
+      comment: 3.H.1
+    - id: E-HAT-3.H-2
+      comment: 3.H.2
+    - id: E-HAT-3.H-3
+      comment: 3.H.3
+    - id: E-HAT-3.H-4
+      comment: 3.H.4
+    - id: E-HAT-3.H-5
+      comment: 3.H.5
+    - id: E-HAT-3.H-6
+      comment: 3.H.6
   - name: '4.1'
     problems:
     - E-HAT-4.1-1
