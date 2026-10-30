@@ -130,7 +130,7 @@ Homology in degrees $0$ and $n$:
 ::: pf-proof
 
 ::: pf-step
-In degree $0$, since $S^n$ is path-connected and $f(S^n) = N$, $N$ is path-connected, so $H_0(N; \ZZ) \cong \ZZ$.
+In degree $0$, $f$ is surjective: otherwise it factors through $N$ minus a point, whose $H_n$ vanishes, contradicting $f_*([S^n]) = [N] \neq 0$. Since $S^n$ is path-connected, so is $N = f(S^n)$, and $H_0(N; \ZZ) \cong \ZZ$.
 
 ::: pf-proof
 path-connectedness.
