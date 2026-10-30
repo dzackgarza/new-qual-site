@@ -136,7 +136,7 @@ sections:
       - ref: P-YBQ3V
       - ref: P-T16A2
       - ref: P-WHXWM
-      - ref: P-TC2PJ
+      - ref: E-4TG52
   - slug: real-analysis-workshop-packet
     title: Real analysis workshop packet
     parent: real-analysis
