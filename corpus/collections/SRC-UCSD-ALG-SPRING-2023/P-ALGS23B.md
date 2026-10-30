@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS23B
 kind: problem
-title: "Sylow p-subgroups with trivial pairwise intersections and congruence condition"
+title: "Sylow $p$-subgroups with trivial pairwise intersections: $\\cardinality{\\operatorname{Syl}_p(G)} \\equiv 1 \\pmod{p^k}$"
 classification:
   areas:
   - algebra
@@ -33,6 +33,7 @@ $P_1 \cap P_2 = \{1\}$ for every two distinct Sylow $p$-subgroups $P_1$ and $P_2
 
 (a) Prove that $N_G(P_1) \cap P_2 = \{1\}$, where $P_1, P_2 \in \operatorname{Syl}_p(G)$
 are distinct.
+(Derive this based on Sylow's theorems.)
 
 (b) Suppose $P_0 \in \operatorname{Syl}_p(G)$ and consider its action on
 $\operatorname{Syl}_p(G)$ by conjugation. For $P \in \operatorname{Syl}_p(G)$, let

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS23G
 kind: problem
-title: "Splitting field of x^n - a over F_p and its Galois group"
+title: "Splitting field of $x^n - a$ over $\\FF_p$ with $n \\mid p-1$ and its Galois group"
 classification:
   areas:
   - algebra
