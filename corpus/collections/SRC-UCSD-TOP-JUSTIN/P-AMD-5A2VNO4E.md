@@ -19,77 +19,55 @@ audit:
 ---
 
 ::: {.problem}
-Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
+Classify the capital letters of the alphabet up to homeomorphism, and up to homotopy.
+
+Regard each letter as a finite graph in the plane, drawn in a standard sans-serif font: the leg of R is a segment that leaves the bowl at a point other than where the bowl meets the stem, the two arms of K meet each other at a point off the stem, the tail of Q is a segment attached to the circle at one point, and J has no top bar.
+:::
+
+::: {.hint}
+Invariants that separate letters: the number of connected components after removing one or two points, and the presence of a nontrivial loop.
 :::
 
 ::: {.solution}
+Take the capital letters in a sans-serif font, drawn as finite graphs in the plane, with the following conventions: the leg of R leaves the bowl at a point other than where the bowl meets the stem, the two arms of K meet each other at a point off the stem, the tail of Q is attached to the circle at one point, and J has no top bar.
+For a point $x$ of such a graph, the number of components of $U \setminus \{x\}$, for $U$ a small connected neighbourhood of $x$, is the degree of $x$; a homeomorphism preserves the degree of each point, and endpoints have degree $1$.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-As preserved, the problem does not determine a unique classification of the alphabet.
-
-::: pf-proof
-
-The retained source, *Justin's Problems*, says only “Classify the letters of the alphabet up to homeomorphism, and up to homotopy.” It does not specify uppercase versus lowercase letters, a font, whether strokes have positive thickness or are treated as one-dimensional centerlines, or how crossings/junctions are interpreted. These choices change the underlying topological spaces. For example, a lowercase ``i`` in an ordinary font is disconnected, whereas an uppercase ``I`` may be an interval or a tree with extra branches depending on the font; a capital ``Q`` may have a tail meeting the loop at one point or crossing it. Hence there is no source-faithful partition of the 26 letter names without additional glyph data.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-If a letter is specified as a finite one-dimensional CW complex (a finite graph), then its homotopy type is completely determined, component by component, by the number of connected components and the first Betti number of each component.
+::: {.pf-step #homotopy}
+Up to homotopy there are three classes: $\{A, D, O, P, Q, R\} \simeq S^1$, $\{B\} \simeq S^1 \vee S^1$, and the remaining $19$ letters, which are contractible.
 
 ::: pf-proof
-
-Let $G$ be a finite connected graph. Choose a maximal tree $T\subset G$. Collapsing $T$ to a point is a homotopy equivalence and leaves one circle for each edge not in $T$. Since a tree on $V$ vertices has $V-1$ edges, the number of remaining edges is
-$$
-E-(V-1)=E-V+1=1-\chi(G)=\operatorname{rank}H_1(G;\ZZ).
-$$
-Thus
-$$
-G\simeq \bigvee^{\beta_1(G)}S^1.
-$$
-For a disconnected finite graph, apply this argument to each connected component. Therefore two specified finite graph glyphs are homotopy equivalent exactly when their components can be paired with equal first Betti numbers.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Homeomorphism of finite graph glyphs is finer than equality of Betti numbers or of the multiset of local valences.
-
-::: pf-proof
-
-A homeomorphism preserves the full incidence pattern of branch points and endpoints, not merely the multiset of their valences. For instance, consider two trees having four vertices of valence $3$ and six endpoints. In the first, the four trivalent vertices form a path of length $3$, with respectively $2,1,1,2$ endpoint leaves attached. In the second, one trivalent vertex is adjacent to each of the other three trivalent vertices, and each outer trivalent vertex has two endpoint leaves. Both trees have the same valence multiset—four vertices of valence $3$ and six of valence $1$—but deleting the set of branch points leaves different branch-point adjacency graphs (a path versus a $3$-star), so they are not homeomorphic.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-For a specified finite graph glyph, its homeomorphism type is obtained by suppressing valence-$2$ vertices and recording the resulting incidence graph, with a circle component recorded separately when it has no vertices of valence different from $2$.
-
-::: pf-proof
-
-Subdividing an edge by inserting a valence-$2$ vertex does not change the underlying topological space. Conversely, in a finite graph every point whose punctured sufficiently small neighborhood has a number of components different from $2$ is topologically distinguished; these are precisely the endpoints and branch points. A homeomorphism must biject these distinguished points and preserve which pairs are joined by components of their complement. Suppressing all valence-$2$ subdivision vertices therefore leaves exactly the incidence data determining the homeomorphism type, except for components homeomorphic to $S^1$, which contain no distinguished point and must be recorded separately.
-
+A connected finite graph is homotopy equivalent to a wedge of $r$ circles, where $r$ is the number of independent loops, and wedges of different numbers of circles have non-isomorphic $H_1 \cong \ZZ^r$.
+The letters A, D, O, P, Q, and R contain exactly one loop, B contains two, and every other letter is a tree, hence contractible.
 :::
 
 :::
 
 ::: pf-step
+Up to homeomorphism there are eight classes:
 
-Consequently, once concrete glyphs are supplied, the requested classification is algorithmic: compute the reduced incidence graph for homeomorphism and the componentwise first Betti numbers for homotopy. But the retained problem statement alone does not determine which glyph graph corresponds to each letter.
+(i) $\{C, G, I, J, L, M, N, S, U, V, W, Z\}$, an arc;
+
+(ii) $\{D, O\}$, a circle;
+
+(iii) $\{P, Q\}$, a circle with one arc attached at one point;
+
+(iv) $\{A, R\}$, a circle with two arcs attached at two distinct points;
+
+(v) $\{B\}$, a wedge of two circles;
+
+(vi) $\{E, F, T, Y\}$, three arcs joined at one point;
+
+(vii) $\{X\}$, four arcs joined at one point;
+
+(viii) $\{H, K\}$, two points of degree $3$ joined by an arc, each carrying two further arcs.
 
 ::: pf-proof
-
-This follows from steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}. Any explicit alphabet partition would require additional graphical conventions not present in the preserved source.
-
+Each letter is homeomorphic to the model named in its class, because corners of the drawn letter are points of degree $2$ and can be straightened.
+The models are pairwise non-homeomorphic: the number of loops is a homotopy invariant by step [](#homotopy){.pf-ref}, so, the classes split as $\{$(ii), (iii), (iv)$\}$, $\{$(v)$\}$, and the trees $\{$(i), (vi), (vii), (viii)$\}$.
+Among the circles with arcs, (ii) has no point of degree $3$, (iii) has one, and (iv) has two.
+Among the trees, (i) has no point of degree at least $3$, (vi) has one point of degree $3$, (vii) has one point of degree $4$, and (viii) has two points of degree $3$.
 :::
 
 :::
