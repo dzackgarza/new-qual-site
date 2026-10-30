@@ -871,7 +871,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/archives/graduate-topics.md
   - [x] wiki/archives/index.md
   - [x] wiki/archives/qual-workshop-index.md
-  - [ ] wiki/archives/solution-compendia.md
+  - [x] wiki/archives/solution-compendia.md
   - [ ] wiki/archives/topics.md
   - [ ] wiki/complex-analysis/appendices/appendix-fta-proofs.md
   - [ ] wiki/complex-analysis/appendices/appendix-unsorted.md
