@@ -75,14 +75,14 @@ Since $\rho^n=-1$, one has $\rho^{3-n}=-\rho^3$, giving the formula.
 The integral over the circular arc of radius $R$ in this sector tends to $0$ as $R\to\infty$.
 
 ::: pf-proof
-On the arc, $|z|=R$.
+On the arc, $\abs{z}=R$.
 For $R$ large,
 $$
-|1+z^n|\ge R^n-1,
+\abs{1+z^n}\ge R^n-1,
 $$
 so
 $$
-|F(z)|\le \frac{R^2}{R^n-1}=O(R^{2-n}).
+\abs{F(z)}\le \frac{R^2}{R^n-1}=O(R^{2-n}).
 $$
 The arc length is $2\pi R/n$, hence its integral is $O(R^{3-n})$.
 Since $n\ge4$, this tends to $0$.

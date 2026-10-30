@@ -78,7 +78,7 @@ If $G$ is nonabelian with a normal Sylow $2$-subgroup, there exists a normal sub
 
 ::: pf-step
 
-Let $P \in \operatorname{Syl}_2(G)$ with $|P| = 4$ and $P \trianglelefteq G$.
+Let $P \in \operatorname{Syl}_2(G)$ with $\cardinality{P} = 4$ and $P \trianglelefteq G$.
 
 :::
 
@@ -90,8 +90,8 @@ Number of Sylow 3-subgroups: By Sylow's Theorems, $n_3 \equiv 1 \pmod 3$ and $n_
 
 ::: pf-step
 
-If $n_3 = 1$, let $Q \in \operatorname{Syl}_3(G)$ ($|Q| = 9$). Then $Q \trianglelefteq G$.
-        - Since $P \trianglelefteq G$ and $Q \trianglelefteq G$ with $\gcd(|P|, |Q|) = \gcd(4, 9) = 1$, $P \cap Q = \{e\}$ and $G \cong P \times Q$.
+If $n_3 = 1$, let $Q \in \operatorname{Syl}_3(G)$ ($\cardinality{Q} = 9$). Then $Q \trianglelefteq G$.
+        - Since $P \trianglelefteq G$ and $Q \trianglelefteq G$ with $\gcd(\cardinality{P}, \cardinality{Q}) = \gcd(4, 9) = 1$, $P \cap Q = \{e\}$ and $G \cong P \times Q$.
         - Any group of order $p^2$ is abelian, so both $P$ and $Q$ are abelian.
         - The direct product of abelian groups is abelian, so $G$ is abelian, contradicting the hypothesis that $G$ is non-abelian.
 
@@ -114,12 +114,12 @@ Conjugation action on $\operatorname{Syl}_3(G)$:
 ::: pf-step
 
 Kernel and image of $\rho$:
-        - Let $Q \in X$. The stabilizer is $\operatorname{Stab}_G(Q) = N_G(Q)$, which has index $[G : N_G(Q)] = n_3 = 4$, so $|N_G(Q)| = 36/4 = 9$, which forces $N_G(Q) = Q$.
-        - The kernel $N = \ker(\rho) = \bigcap_{g \in G} g Q g^{-1} \subseteq Q$ is a 3-group, so $|N| \in \{1, 3, 9\}$.
-        - The image $\operatorname{Im}(\rho) \cong G/N$ has order $\frac{36}{|N|}$ and is a subgroup of $S_4$, so $\frac{36}{|N|}$ divides $|S_4| = 24$.
-        - Thus $\frac{36}{|N|}$ divides 24, which requires $3 \mid |N|$.
-        - If $|N| = 9$, then $N = Q \trianglelefteq G$, which would mean $n_3 = 1$, a contradiction.
-        - Hence $|N| = 3$.
+        - Let $Q \in X$. The stabilizer is $\operatorname{Stab}_G(Q) = N_G(Q)$, which has index $[G : N_G(Q)] = n_3 = 4$, so $\cardinality{N_G(Q)} = 36/4 = 9$, which forces $N_G(Q) = Q$.
+        - The kernel $N = \ker(\rho) = \bigcap_{g \in G} g Q g^{-1} \subseteq Q$ is a 3-group, so $\cardinality{N} \in \{1, 3, 9\}$.
+        - The image $\operatorname{Im}(\rho) \cong G/N$ has order $\frac{36}{\cardinality{N}}$ and is a subgroup of $S_4$, so $\frac{36}{\cardinality{N}}$ divides $\cardinality{S_4} = 24$.
+        - Thus $\frac{36}{\cardinality{N}}$ divides 24, which requires $3 \mid \cardinality{N}$.
+        - If $\cardinality{N} = 9$, then $N = Q \trianglelefteq G$, which would mean $n_3 = 1$, a contradiction.
+        - Hence $\cardinality{N} = 3$.
 
 :::
 
@@ -129,7 +129,7 @@ Identification of the quotient:
 
 :::
 
-- $|\operatorname{Im}(\rho)| = \frac{36}{3} = 12$.
+- $\cardinality{\operatorname{Im}(\rho)} = \frac{36}{3} = 12$.
 - Since $\operatorname{Im}(\rho)$ is a subgroup of order 12 in $S_4$, by the given assumption $\operatorname{Im}(\rho) = A_4$.
 - Therefore $G/N \cong A_4$, where $N = \ker(\rho) \trianglelefteq G$ is of order 3.
 
@@ -145,14 +145,14 @@ If $N\trianglelefteq G$, $G/N\cong A_4$, and $H\leq G$ with $H\cong A_4$, then $
 
 ::: pf-step
 
-We are given $N \trianglelefteq G$ with $G/N \cong A_4$ ($|N| = 3$) and $H \le G$ with $H \cong A_4$ ($|H| = 12$).
+We are given $N \trianglelefteq G$ with $G/N \cong A_4$ ($\cardinality{N} = 3$) and $H \le G$ with $H \cong A_4$ ($\cardinality{H} = 12$).
 
 :::
 
 ::: pf-step
 
 Trivial intersection $N \cap H = \{e\}$:
-        - $N \cap H$ is a normal subgroup of $H \cong A_4$ whose order divides $|N| = 3$.
+        - $N \cap H$ is a normal subgroup of $H \cong A_4$ whose order divides $\cardinality{N} = 3$.
         - The normal subgroups of $A_4$ are $\{e\}$, $V_4$ (order 4), and $A_4$ (order 12); $A_4$ has no normal subgroup of order 3.
         - Thus $N \cap H = \{e\}$.
 
@@ -161,7 +161,7 @@ Trivial intersection $N \cap H = \{e\}$:
 ::: pf-step
 
 Full group product:
-        - $|N H| = \frac{|N| |H|}{|N \cap H|} = \frac{3 \cdot 12}{1} = 36 = |G|$.
+        - $\cardinality{N H} = \frac{\cardinality{N} \cardinality{H}}{\cardinality{N \cap H}} = \frac{3 \cdot 12}{1} = 36 = \cardinality{G}$.
         - Therefore $G = N H$.
 
 :::
@@ -170,7 +170,7 @@ Full group product:
 
 Commutativity of elements:
         - Conjugation defines a homomorphism $\psi: H \to \operatorname{Aut}(N)$.
-        - Since $|N| = 3$, $\operatorname{Aut}(N) \cong (\ZZ/3\ZZ)^\times \cong \ZZ/2\ZZ$.
+        - Since $\cardinality{N} = 3$, $\operatorname{Aut}(N) \cong (\ZZ/3\ZZ)^\times \cong \ZZ/2\ZZ$.
         - The commutator subgroup $[H, H] = [A_4, A_4] = V_4$, so the abelianization of $H$ is $H^{\text{ab}} \cong A_4/V_4 \cong \ZZ/3\ZZ$.
         - Since $\gcd(3, 2) = 1$, there are no non-trivial homomorphisms from $A_4$ to $\ZZ/2\ZZ$, so $\psi$ is trivial.
         - Thus $h n h^{-1} = n$, i.e., $n h = h n$ for all $n \in N$ and $h \in H$.
@@ -202,7 +202,7 @@ The dihedral group of order 36 has presentation:
 
 ::: pf-step
 
-$|D_{18}| = 36$. Since $s r = r^{17} s \ne r s$, $D_{18}$ is non-abelian.
+$\cardinality{D_{18}} = 36$. Since $s r = r^{17} s \ne r s$, $D_{18}$ is non-abelian.
 
 :::
 

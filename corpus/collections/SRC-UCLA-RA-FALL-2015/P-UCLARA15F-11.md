@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Let $\Omega = \{(x,y) \in \RR^2 ; x > 0, y > 0\}$ and let $u$ be subharmonic in $\Omega$, continuous in $\overline{\Omega}$, such that
 $$
-u(x,y) \leq |x + iy|,
+u(x,y) \leq \abs{x + iy},
 $$
 for large $(x,y) \in \Omega$. Assume that
 $$
@@ -151,9 +151,9 @@ $$
 $$
 Hence
 $$
-\left|
+\abs{
 p\left(\theta-\frac{\pi}{4}\right)
-\right|
+}
 \le
 \frac{p\pi}{4}
 <

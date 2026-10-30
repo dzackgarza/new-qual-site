@@ -78,7 +78,7 @@ $$
 X_1(p),\dots,X_{n-1}(p),Y(p)
 $$
 are linearly independent. Linear independence is an open condition, so after
-shrinking $U$, they remain a frame of $TM|_U$.
+shrinking $U$, they remain a frame of $TM\restrict_U$.
 
 :::
 
@@ -154,7 +154,7 @@ Hence $\alpha_q\ne0$.
 
 One has
 $$
-\boxed{\xi|_U=\ker\alpha}.
+\boxed{\xi\restrict_U=\ker\alpha}.
 $$
 
 
@@ -260,7 +260,7 @@ Choose any local $C^k$ frame
 $$
 Y,E_1,\dots,E_{n-1}
 $$
-of $TM|_U$.
+of $TM\restrict_U$.
 
 
 ::: pf-proof

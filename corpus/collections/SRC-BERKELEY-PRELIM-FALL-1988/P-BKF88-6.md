@@ -49,7 +49,7 @@ The square $[0,1]^2$ is compact. By hypothesis, $G_f$ is closed in $[0,1]^2$, an
 
 The restricted projection
 $$
-\pi_1|_{G_f}:G_f\longrightarrow[0,1]
+\pi_1\restrict_{G_f}:G_f\longrightarrow[0,1]
 $$
 is a homeomorphism.
 
@@ -57,7 +57,7 @@ is a homeomorphism.
 
 The restriction is continuous. It is surjective because for every $x\in[0,1]$ the point $(x,f(x))$ belongs to $G_f$, and it is injective because a graph contains exactly one point with any prescribed first coordinate.
 
-By step [](#s1){.pf-ref}, the domain $G_f$ is compact, while $[0,1]$ is Hausdorff. A continuous bijection from a compact space to a Hausdorff space is a homeomorphism. Hence $\pi_1|_{G_f}$ is a homeomorphism.
+By step [](#s1){.pf-ref}, the domain $G_f$ is compact, while $[0,1]$ is Hausdorff. A continuous bijection from a compact space to a Hausdorff space is a homeomorphism. Hence $\pi_1\restrict_{G_f}$ is a homeomorphism.
 
 :::
 
@@ -71,7 +71,7 @@ The function $f$ is continuous.
 
 For every $x\in[0,1]$,
 $$
-\left(\pi_1|_{G_f}\right)^{-1}(x)
+\left(\pi_1\restrict_{G_f}\right)^{-1}(x)
 =
 (x,f(x)).
 $$
@@ -79,9 +79,9 @@ Therefore
 $$
 f
 =
-\pi_2\circ\left(\pi_1|_{G_f}\right)^{-1}.
+\pi_2\circ\left(\pi_1\restrict_{G_f}\right)^{-1}.
 $$
-By step [](#s2){.pf-ref}, the inverse of $\pi_1|_{G_f}$ is continuous, and $\pi_2$ is continuous. Hence their composition $f$ is continuous.
+By step [](#s2){.pf-ref}, the inverse of $\pi_1\restrict_{G_f}$ is continuous, and $\pi_2$ is continuous. Hence their composition $f$ is continuous.
 
 :::
 

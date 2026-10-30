@@ -272,7 +272,7 @@ The field $k(t)$ is countably infinite. It has a countably
 infinite basis over $k$: a finite basis would give a finite
 set, while any basis is a subset of the countable set $R$.
 The elements of $D$ correspond to arbitrary assignments of
-zero or one on that basis, so $|D|=2^{\aleph_0}$.
+zero or one on that basis, so $\cardinality{D}=2^{\aleph_0}$.
 Thus $D$ and $R$ do not even have the same cardinality,
 and in particular $D\not\cong R$ as $R$-modules.
 

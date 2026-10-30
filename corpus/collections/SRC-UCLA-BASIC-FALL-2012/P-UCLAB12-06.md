@@ -49,9 +49,9 @@ F(x,y)>\frac12F(x_0,y_0)>0
 $$
 whenever
 $$
-|x-x_0|<\delta,
+\abs{x-x_0}<\delta,
 \qquad
-|y-y_0|<\delta.
+\abs{y-y_0}<\delta.
 $$
 Choose a square $S$ centered at $(x_0,y_0)$ with sides parallel to the axes and contained in this neighborhood. Then
 $$

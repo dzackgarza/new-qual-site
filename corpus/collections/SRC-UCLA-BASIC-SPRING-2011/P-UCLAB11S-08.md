@@ -19,7 +19,7 @@ Give examples of the following.
 
 ::: pf-step
 
-A function $f:[0,1]\to\RR$ that is not Riemann integrable although $|f|$ is Riemann integrable.
+A function $f:[0,1]\to\RR$ that is not Riemann integrable although $\abs{f}$ is Riemann integrable.
 
 :::
 
@@ -57,7 +57,7 @@ f(x)
 $$
 Then
 $$
-\boxed{|f(x)|=1}
+\boxed{\abs{f(x)}=1}
 $$
 for every
 $$
@@ -74,17 +74,17 @@ Both possible values of $f$ have absolute value $1$.
 
 ::: {.pf-step #p2-s2}
 
-The function $|f|$ is Riemann integrable.
+The function $\abs{f}$ is Riemann integrable.
 
 ::: pf-proof
 
 By step [](#p2-s1){.pf-ref},
 $$
-|f|\equiv1.
+\abs{f}\equiv1.
 $$
 Constant functions are Riemann integrable, with
 $$
-\int_0^1|f(x)|\,dx=1.
+\int_0^1\abs{f(x)}\,dx=1.
 $$
 
 :::

@@ -42,14 +42,14 @@ $F$ is continuous and antipodal-preserving (odd): $F(-x) = f(-x) - f(x) = -F(x)$
 :::
 
 ::: pf-step
-Define $g \colon S^2 \to S^1$ by $g(x) = \frac{F(x)}{\|F(x)\|}$.
+Define $g \colon S^2 \to S^1$ by $g(x) = \frac{F(x)}{\norm{F(x)}}$.
 :::
 
 ::: pf-step
-The map $g$ is continuous and odd: $g(-x) = \frac{-F(x)}{\|-F(x)\|} = -g(x)$ for all $x \in S^2$.
+The map $g$ is continuous and odd: $g(-x) = \frac{-F(x)}{\norm{-F(x)}} = -g(x)$ for all $x \in S^2$.
 
 ::: pf-proof
-The map $g$ is the composition of the continuous map $F$ with the continuous normalization $y \mapsto y/\|y\|$, so it is continuous; the oddness follows from $F(-x) = -F(x)$.
+The map $g$ is the composition of the continuous map $F$ with the continuous normalization $y \mapsto y/\norm{y}$, so it is continuous; the oddness follows from $F(-x) = -F(x)$.
 :::
 
 :::
@@ -64,7 +64,7 @@ Restrict $g$ to the equatorial circle $S^1 \subset S^2$.
 ::: pf-proof
 
 ::: pf-step
-Let $h = g|_{S^1} \colon S^1 \to S^1$.
+Let $h = g\restrict_{S^1} \colon S^1 \to S^1$.
 :::
 
 ::: pf-step
@@ -128,14 +128,14 @@ $D_+^2$ is homeomorphic to the closed 2-disk $D^2$, and its boundary is $\partia
 :::
 
 ::: pf-step
-The restriction $g|_{D_+^2} \colon D_+^2 \to S^1$ is a continuous extension of $h = g|_{S^1}$ to the entire disk $D_+^2$.
+The restriction $g\restrict_{D_+^2} \colon D_+^2 \to S^1$ is a continuous extension of $h = g\restrict_{S^1}$ to the entire disk $D_+^2$.
 :::
 
 ::: pf-step
 If a continuous map $h \colon S^1 \to S^1$ extends to a continuous map $D^2 \to S^1$, then $h$ is nullhomotopic, so $\deg(h) = 0$.
 
 ::: pf-proof
-The disk $D^2$ is contractible, so the inclusion $\iota \colon S^1 \hookrightarrow D^2$ induces the zero map on $\pi_1(S^1)$; hence $h_* = (g|_{D^2} \circ \iota)_* = 0$, so $\deg(h) = 0$.
+The disk $D^2$ is contractible, so the inclusion $\iota \colon S^1 \hookrightarrow D^2$ induces the zero map on $\pi_1(S^1)$; hence $h_* = (g\restrict_{D^2} \circ \iota)_* = 0$, so $\deg(h) = 0$.
 :::
 
 :::

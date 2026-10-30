@@ -22,7 +22,7 @@ audit:
 ::: {.exercise}
 Find the region of convergence for
 $$
-f(z) \definedas \sum_{k\in \ZZ} 2^{-\abs{k}}z^k.
+f(z) \coloneqq \sum_{k\in \ZZ} 2^{-\abs{k}}z^k.
 $$
 
 :::
@@ -30,7 +30,7 @@ $$
 ::: {.solution}
 Split $f = f_1 + f_2$ with
 $$
-f_1(z) \definedas \sum_{k\geq 1} (2z)^{-k}, \qquad f_2(z) \definedas \sum_{k\geq 0} (z/2)^k.
+f_1(z) \coloneqq \sum_{k\geq 1} (2z)^{-k}, \qquad f_2(z) \coloneqq \sum_{k\geq 0} (z/2)^k.
 $$
 The series $f$ converges exactly where both $f_1$ and $f_2$ converge.
 

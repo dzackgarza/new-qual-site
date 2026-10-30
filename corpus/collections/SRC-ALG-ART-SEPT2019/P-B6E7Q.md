@@ -44,7 +44,7 @@ What group is $H$?
 **(a)** Let $g \in G$.
 As $g^N=1$ for some $N$, the minimal polynomial of $\rho(g)$ divides $x^N-1$, which has distinct linear factors over $\CC$.
 Hence, $\rho(g)$ is diagonalizable, say to $\operatorname{diag}(c_1,\dots,c_n)$, each $c_i$ a root of unity.
-So $\chi(g) = c_1+\cdots+c_n$, and by the triangle inequality $|c_1+\cdots+c_n| \le |c_1|+\cdots+|c_n| = n$, with equality iff $c_1=\cdots=c_n$.
+So $\chi(g) = c_1+\cdots+c_n$, and by the triangle inequality $\abs{c_1+\cdots+c_n} \le \abs{c_1}+\cdots+\abs{c_n} = n$, with equality iff $c_1=\cdots=c_n$.
 
 Now $\chi(g)=\chi(1) \iff c_1+\cdots+c_n = n \iff c_1=\cdots=c_n=1 \iff \rho(g)=I \iff g\in\ker\rho$.
 
@@ -59,8 +59,8 @@ $$0 = C_4\cdot C_7 = 4\gamma,\qquad 0 = C_4\cdot C_5 = 1-(\alpha+\beta),\qquad 0
 where the first uses nothing about $\alpha,\beta$ and the last two use $\gamma=0$. So $\gamma=0$, and $\alpha,\beta$ are the roots of $x^2-x-1$, giving $\alpha,\beta = \dfrac{1\pm\sqrt5}{2}$.
 
 **(c)** $Z(G) =$ union of classes of size $1$.
-So $Z(G) = C_1 \cup C_2$, size $2$, while $|G|=120$.
-So $|G/Z(G)| = 60$.
+So $Z(G) = C_1 \cup C_2$, size $2$, while $\cardinality{G}=120$.
+So $\cardinality{G/Z(G)} = 60$.
 
 If $C_2=\{z\}$, $z^2=1$, so it's either $+1$ or $-1$ on each irrep.
 The irreps of $G/Z(G)$ are the same as ones of $G$ on which $z$ is $+1$.

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 11. Suppose
 $$
-\sum_{n=1}^{\infty}|a_n|<\infty.
+\sum_{n=1}^{\infty}\abs{a_n}<\infty.
 $$
 Let $\sigma:\NN\to\NN$ be a bijection.
 Prove that every rearrangement
@@ -51,7 +51,7 @@ N
 $$
 such that
 $$
-\sum_{n>N}|a_n|<\varepsilon.
+\sum_{n>N}\abs{a_n}<\varepsilon.
 $$
 
 
@@ -59,7 +59,7 @@ $$
 
 The positive series
 $$
-\sum_{n=1}^{\infty}|a_n|
+\sum_{n=1}^{\infty}\abs{a_n}
 $$
 converges.
 Therefore its tails tend to zero.
@@ -138,11 +138,11 @@ m\ge M,
 $$
 one has
 $$
-\left|
+\abs{
 \sum_{j=1}^m a_{\sigma(j)}-S
-\right|
+}
 \le
-\sum_{n>N}|a_n|.
+\sum_{n>N}\abs{a_n}.
 $$
 
 
@@ -187,13 +187,13 @@ $$
 $$
 Therefore
 $$
-\left|
+\abs{
 \sum_{j=1}^m a_{\sigma(j)}-S
-\right|
+}
 \le
-\sum_{\substack{n\notin E_m\\n>N}}|a_n|
+\sum_{\substack{n\notin E_m\\n>N}}\abs{a_n}
 \le
-\sum_{n>N}|a_n|.
+\sum_{n>N}\abs{a_n}.
 $$
 
 :::
@@ -208,9 +208,9 @@ m\ge M,
 $$
 one has
 $$
-\left|
+\abs{
 \sum_{j=1}^m a_{\sigma(j)}-S
-\right|
+}
 <
 \varepsilon.
 $$

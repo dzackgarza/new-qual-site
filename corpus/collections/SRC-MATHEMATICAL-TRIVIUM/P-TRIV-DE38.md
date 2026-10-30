@@ -23,7 +23,7 @@ Show that ${ \frac { d } { d x } } \log x = { \frac { 1 } { x } } - i \pi \delta
 
 Interpret $\log x$ as the boundary value $\log(x+i0)$ of the principal complex logarithm. Then
 $$
-\log(x+i0)=\log|x|+i\pi H(-x),
+\log(x+i0)=\log\abs{x}+i\pi H(-x),
 $$
 where $H$ is the Heaviside function.
 
@@ -33,7 +33,7 @@ where $H$ is the Heaviside function.
 
 Distributionally,
 $$
-\frac d{dx}\log|x|=\operatorname{pv}\frac1x.
+\frac d{dx}\log\abs{x}=\operatorname{pv}\frac1x.
 $$
 
 
@@ -41,12 +41,12 @@ $$
 
 For a test function $\phi$,
 $$
-\left\langle\frac d{dx}\log|x|,\phi\right\rangle
-=-\int_{-\infty}^{\infty}\log|x|\,\phi'(x)\,dx.
+\left\langle\frac d{dx}\log\abs{x},\phi\right\rangle
+=-\int_{-\infty}^{\infty}\log\abs{x}\,\phi'(x)\,dx.
 $$
 Integrating by parts separately on $(-\infty,-\epsilon)$ and $(\epsilon,\infty)$ gives
 $$
-\int_{|x|>\epsilon}\frac{\phi(x)}x\,dx
+\int_{\abs{x}>\epsilon}\frac{\phi(x)}x\,dx
 +\log\epsilon\bigl(\phi(-\epsilon)-\phi(\epsilon)\bigr).
 $$
 The last term tends to zero because $\phi(-\epsilon)-\phi(\epsilon)=O(\epsilon)$, while the first tends by definition to $\langle\operatorname{pv}(1/x),\phi\rangle$.
@@ -91,7 +91,7 @@ $$
 
 Differentiate the boundary-value decomposition preceding step [](#s1-1){.pf-ref} and apply steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}:
 $$
-\frac d{dx}\bigl(\log|x|+i\pi H(-x)\bigr)
+\frac d{dx}\bigl(\log\abs{x}+i\pi H(-x)\bigr)
 =\operatorname{pv}\frac1x-i\pi\delta(x).
 $$
 

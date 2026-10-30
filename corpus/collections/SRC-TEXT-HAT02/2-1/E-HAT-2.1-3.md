@@ -75,7 +75,7 @@ The origin lies in the interior of the convex polytope $C$.
 Every ray from the origin meets $\partial C$ in exactly one point.
 Thus
 $$
-x\longmapsto \frac{x}{\|x\|}
+x\longmapsto \frac{x}{\norm{x}}
 $$
 is a continuous bijection from compact $\partial C$ to Hausdorff $S^n$, hence a homeomorphism.
 

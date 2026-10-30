@@ -47,7 +47,7 @@ u,v\in M
 $$
 both minimize the Euclidean distance to $b$, and let
 $$
-d=\|b-u\|=\|b-v\|.
+d=\norm{b-u}=\norm{b-v}.
 $$
 Since $M$ is a subspace,
 $$
@@ -61,19 +61,19 @@ q=b-v,
 $$
 one obtains
 $$
-\left\|b-\frac{u+v}{2}\right\|^2
+\norm{b-\frac{u+v}{2}}^2
 =
-\frac12\|b-u\|^2
+\frac12\norm{b-u}^2
 +
-\frac12\|b-v\|^2
+\frac12\norm{b-v}^2
 -
-\frac14\|u-v\|^2.
+\frac14\norm{u-v}^2.
 $$
 Thus
 $$
-\left\|b-\frac{u+v}{2}\right\|^2
+\norm{b-\frac{u+v}{2}}^2
 =
-d^2-\frac14\|u-v\|^2.
+d^2-\frac14\norm{u-v}^2.
 $$
 If $u\ne v$, the right side is strictly smaller than $d^2$, contradicting minimality of $d$. Hence
 $$

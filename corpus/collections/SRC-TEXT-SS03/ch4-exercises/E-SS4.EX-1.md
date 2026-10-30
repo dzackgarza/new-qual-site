@@ -117,7 +117,7 @@ $A$ and $B$ agree on $\RR$ and are holomorphic on their respective half-planes, 
 $F$ is bounded.
 
 ::: pf-proof
-$|A(z)| \le \int_{-\infty}^t |f(x)| e^{2\pi \Im(z)(x-t)}\,dx$, which is bounded for $\Im z \ge 0$ (moderate decrease of $f$); similarly for $B$ on the lower half-plane.
+$\abs{A(z)} \le \int_{-\infty}^t \abs{f(x)} e^{2\pi \Im(z)(x-t)}\,dx$, which is bounded for $\Im z \ge 0$ (moderate decrease of $f$); similarly for $B$ on the lower half-plane.
 :::
 
 :::

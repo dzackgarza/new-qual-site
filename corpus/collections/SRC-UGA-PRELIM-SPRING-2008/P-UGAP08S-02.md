@@ -43,11 +43,11 @@ $$
 $$
 such that
 $$
-|x-2|<\delta
+\abs{x-2}<\delta
 $$
 implies
 $$
-|x^3-8|<\varepsilon.
+\abs{x^3-8}<\varepsilon.
 $$
 
 :::
@@ -58,10 +58,10 @@ $$
 
 Factor the difference:
 $$
-|x^3-8|
+\abs{x^3-8}
 =
-|x-2|
-\,|x^2+2x+4|.
+\abs{x-2}
+\,\abs{x^2+2x+4}.
 $$
 
 
@@ -82,7 +82,7 @@ $$
 
 If
 $$
-|x-2|<1,
+\abs{x-2}<1,
 $$
 then
 $$
@@ -94,7 +94,7 @@ $$
 
 The inequality
 $$
-|x-2|<1
+\abs{x-2}<1
 $$
 is equivalent to
 $$
@@ -113,7 +113,7 @@ $$
 
 Under the same restriction,
 $$
-|x^2+2x+4|<19.
+\abs{x^2+2x+4}<19.
 $$
 
 
@@ -125,14 +125,14 @@ $$
 $$
 one has
 $$
-|x|<3.
+\abs{x}<3.
 $$
 Therefore
 $$
 \begin{aligned}
-|x^2+2x+4|
+\abs{x^2+2x+4}
 &\le
-|x|^2+2|x|+4\\
+\abs{x}^2+2\abs{x}+4\\
 &<
 9+6+4\\
 &=
@@ -176,11 +176,11 @@ estimate.
 
 If
 $$
-|x-2|<\delta,
+\abs{x-2}<\delta,
 $$
 then
 $$
-|x^3-8|
+\abs{x^3-8}
 <
 \varepsilon.
 $$
@@ -196,12 +196,12 @@ step [](#s1-4){.pf-ref} applies.
 Hence
 $$
 \begin{aligned}
-|x^3-8|
+\abs{x^3-8}
 &=
-|x-2|
-\,|x^2+2x+4|\\
+\abs{x-2}
+\,\abs{x^2+2x+4}\\
 &<
-19|x-2|\\
+19\abs{x-2}\\
 &<
 19\delta\\
 &\le

@@ -21,8 +21,8 @@ Show that
 $$
 \lim_{n\to\infty}
 \sum_{j=1}^n
-\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
-=\int_0^1|f'(t)|\,dt.
+\abs{f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)}
+=\int_0^1\abs{f'(t)}\,dt.
 $$
 :::
 
@@ -38,8 +38,8 @@ $$
 $$
 such that
 $$
-\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
-=\frac1n|f'(\xi_{j,n})|.
+\abs{f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)}
+=\frac1n\abs{f'(\xi_{j,n})}.
 $$
 
 
@@ -65,8 +65,8 @@ Taking absolute values gives the claim.
 For every $n$,
 $$
 \sum_{j=1}^n
-\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
-=\sum_{j=1}^n\frac1n|f'(\xi_{j,n})|.
+\abs{f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)}
+=\sum_{j=1}^n\frac1n\abs{f'(\xi_{j,n})}.
 $$
 
 
@@ -82,13 +82,13 @@ Sum the identities from step [](#s1-1){.pf-ref} over $j=1,\ldots,n$.
 
 The right-hand side in step [](#s1-2){.pf-ref} converges to
 $$
-\int_0^1|f'(t)|\,dt.
+\int_0^1\abs{f'(t)}\,dt.
 $$
 
 
 ::: pf-proof
 
-Because $f$ is $C^1$, the function $t\mapsto|f'(t)|$ is continuous on $[0,1]$. The sum in step [](#s1-2){.pf-ref} is a tagged Riemann sum for this function on the uniform partition of $[0,1]$ into subintervals of length $1/n$. Since the mesh is $1/n\to0$, the Riemann sums converge to the integral.
+Because $f$ is $C^1$, the function $t\mapsto\abs{f'(t)}$ is continuous on $[0,1]$. The sum in step [](#s1-2){.pf-ref} is a tagged Riemann sum for this function on the uniform partition of $[0,1]$ into subintervals of length $1/n$. Since the mesh is $1/n\to0$, the Riemann sums converge to the integral.
 
 :::
 
@@ -101,8 +101,8 @@ $$
 \boxed{
 \lim_{n\to\infty}
 \sum_{j=1}^n
-\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
-=\int_0^1|f'(t)|\,dt.}
+\abs{f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)}
+=\int_0^1\abs{f'(t)}\,dt.}
 $$
 
 

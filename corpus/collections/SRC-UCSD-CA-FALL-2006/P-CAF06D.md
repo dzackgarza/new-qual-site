@@ -14,10 +14,10 @@ review: draft
 
 ::: {.problem}
 Assume that $f$ is an entire function.
-Let $M(r) = \sup_{|z|=r} |f(z)|$.
+Let $M(r) = \sup_{\abs{z}=r} \abs{f(z)}$.
 Assume that the discrete sequence $\{a_n\}$ are zeros of $f$, indexed so that
-$|a_1|\le |a_2|\le\cdots$, and $f(0) = 1$.
-Show that $$k\log 2 \leq \log(M(2|a_k|)).$$
+$\abs{a_1}\le \abs{a_2}\le\cdots$, and $f(0) = 1$.
+Show that $$k\log 2 \leq \log(M(2\abs{a_k})).$$
 :::
 
 ::: {.remark}
@@ -31,25 +31,25 @@ false.
 Jensen's formula for $f(0)=1$ gives, for every $R>0$ avoiding zeros on the
 circle,
 $$
-\sum_{|a_j|<R}\log\frac{R}{|a_j|}
-=\frac1{2\pi}\int_0^{2\pi}\log|f(Re^{it})|\,dt
+\sum_{\abs{a_j}<R}\log\frac{R}{\abs{a_j}}
+=\frac1{2\pi}\int_0^{2\pi}\log\abs{f(Re^{it})}\,dt
 \le \log M(R).
 $$
 The same inequality follows for arbitrary $R$ by a limiting argument.
 
-Take $R=2|a_k|$. By the ordering,
+Take $R=2\abs{a_k}$. By the ordering,
 $$
-|a_j|\le |a_k|\qquad(1\le j\le k),
+\abs{a_j}\le \abs{a_k}\qquad(1\le j\le k),
 $$
 so for each of the first $k$ zeros,
 $$
-\log\frac{2|a_k|}{|a_j|}\ge\log2.
+\log\frac{2\abs{a_k}}{\abs{a_j}}\ge\log2.
 $$
 Therefore
 $$
 k\log2
-\le \sum_{j=1}^k\log\frac{2|a_k|}{|a_j|}
-\le \log M(2|a_k|),
+\le \sum_{j=1}^k\log\frac{2\abs{a_k}}{\abs{a_j}}
+\le \log M(2\abs{a_k}),
 $$
 which is the required estimate.
 :::

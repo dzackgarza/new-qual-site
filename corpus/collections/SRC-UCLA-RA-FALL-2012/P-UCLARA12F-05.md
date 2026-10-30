@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Let $(f_n)$ be a sequence of functions $f_n:\RR^3\to\RR$ such that
 $$
-\sup_n\|f_n\|_{L^2}<\infty.
+\sup_n\norm{f_n}_{L^2}<\infty.
 $$
 Show that if $f_n$ converges almost everywhere to a function $f:\RR^3\to\RR$, then
 $$
-\int_{\RR^3}\left(|f_n|^2-|f_n-f|^2-|f|^2\right)\,dx\longrightarrow0.
+\int_{\RR^3}\left(\abs{f_n}^2-\abs{f_n-f}^2-\abs{f}^2\right)\,dx\longrightarrow0.
 $$
 :::
 
@@ -31,7 +31,7 @@ $$
 
 Choose $M<\infty$ such that
 $$
-\|f_n\|_{L^2}\le M
+\norm{f_n}_{L^2}\le M
 $$
 for every $n$.
 
@@ -46,10 +46,10 @@ The almost-everywhere limit $f$ belongs to $L^2(\RR^3)$.
 
 By Fatou's lemma,
 $$
-\int_{\RR^3}|f|^2
+\int_{\RR^3}\abs{f}^2
 \le
 \liminf_{n\to\infty}
-\int_{\RR^3}|f_n|^2
+\int_{\RR^3}\abs{f_n}^2
 \le M^2.
 $$
 
@@ -74,7 +74,7 @@ This is exactly the result of `P-UCLARA12F-01` applied with $p=2$: an almost-eve
 
 For every $n$,
 $$
-|f_n|^2-|f_n-f|^2-|f|^2
+\abs{f_n}^2-\abs{f_n-f}^2-\abs{f}^2
 =2f(f_n-f)
 $$
 almost everywhere.
@@ -84,8 +84,8 @@ almost everywhere.
 
 Since the functions are real-valued,
 $$
-|f_n-f|^2
-=|f_n|^2-2f_nf+|f|^2.
+\abs{f_n-f}^2
+=\abs{f_n}^2-2f_nf+\abs{f}^2.
 $$
 Rearranging gives the displayed identity.
 
@@ -99,7 +99,7 @@ One has
 $$
 \boxed{
 \int_{\RR^3}
-\left(|f_n|^2-|f_n-f|^2-|f|^2\right)\,dx
+\left(\abs{f_n}^2-\abs{f_n-f}^2-\abs{f}^2\right)\,dx
 \longrightarrow0.}
 $$
 
@@ -109,7 +109,7 @@ $$
 By steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref},
 $$
 \int_{\RR^3}
-\left(|f_n|^2-|f_n-f|^2-|f|^2\right)
+\left(\abs{f_n}^2-\abs{f_n-f}^2-\abs{f}^2\right)
 =2\int_{\RR^3}f(f_n-f).
 $$
 Since $f\in L^2$, it is an admissible test function for weak convergence. Step [](#s1-2){.pf-ref} therefore gives

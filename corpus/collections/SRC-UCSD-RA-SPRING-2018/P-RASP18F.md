@@ -28,7 +28,7 @@ Let $f : \RR \to [0,1]$ be a Borel measurable function.
 For $t \geq 0$, let $\varphi(t) = m(\{x \in \RR : f(x) \geq t\})$.
 
 1. Assume that $f \in L^1(\RR, m)$.
-   Prove that $\varphi(t) \leq \frac{1}{t}\|f\|_1$ for all $t > 0$.
+   Prove that $\varphi(t) \leq \frac{1}{t}\norm{f}_1$ for all $t > 0$.
 
 2. Prove that $\int_{\RR} f\,dm = \int_0^\infty \varphi(t)\,dt$.
 
@@ -51,11 +51,11 @@ $$
 t\,\varphi(t)
 =t\,m(\{f\ge t\})
 \le \int_{\{f\ge t\}}f\,dm
-\le \|f\|_1.
+\le \norm{f}_1.
 $$
 Therefore
 $$
-\boxed{\varphi(t)\le \frac{\|f\|_1}{t}.}
+\boxed{\varphi(t)\le \frac{\norm{f}_1}{t}.}
 $$
 
 :::

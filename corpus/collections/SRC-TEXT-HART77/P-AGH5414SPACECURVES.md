@@ -68,7 +68,7 @@ If
 $$
 D=ah-\sum_{i=1}^6b_i e_i,
 $$
-then a nonsingular member $C\in|D|$ has
+then a nonsingular member $C\in\linearsystem{D}$ has
 $$
 \boxed{
 \deg C=3a-\sum_i b_i,
@@ -228,7 +228,7 @@ every line on the cubic surface. Therefore alternative (c) of
 nonsingular irreducible curve.
 
 For such a curve, step [](#nine-divisor-classes){.pf-ref} computes its degree and genus. Since the cubic
-surface is already embedded in $\PP^3$ by $|H|$, these are nonsingular curves
+surface is already embedded in $\PP^3$ by $\linearsystem{H}$, these are nonsingular curves
 in $\PP^3$ with precisely the degree-genus pairs requested in the problem.
 :::
 

@@ -246,7 +246,7 @@ $$
 \cong
 \left\langle
 q,r,s
-\ \middle|\
+\ \presentationbar\
 qrs,\ s^{-1}rq,\ rs^{-1}q^{-1}
 \right\rangle}.
 $$
@@ -413,7 +413,7 @@ $$
 \cong
 \left\langle
 r,q
-\ \middle|\
+\ \presentationbar\
 r^4=1,\ q^2=r^2,\ q^{-1}rq=r^{-1}
 \right\rangle.
 $$

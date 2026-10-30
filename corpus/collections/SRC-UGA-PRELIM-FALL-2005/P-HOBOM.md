@@ -32,7 +32,7 @@ Every group of prime order is cyclic, hence abelian.
 ::: pf-proof
 
 ::: pf-step
-Let $G$ be a group with $|G| = 5$.
+Let $G$ be a group with $\cardinality{G} = 5$.
 
 ::: pf-proof
 setup.
@@ -44,13 +44,13 @@ setup.
 Choose an element $g \in G \setminus \{e\}$.
 
 ::: pf-proof
-$|G| = 5 > 1$.
+$\cardinality{G} = 5 > 1$.
 :::
 
 :::
 
 ::: pf-step
-By Lagrange's theorem, the order of the subgroup $\langle g \rangle$ divides $|G| = 5$.
+By Lagrange's theorem, the order of the subgroup $\langle g \rangle$ divides $\cardinality{G} = 5$.
 
 ::: pf-proof
 Lagrange's theorem.
@@ -59,7 +59,7 @@ Lagrange's theorem.
 :::
 
 ::: {.pf-step #s1-4}
-Since $g \neq e$, $|\langle g \rangle| > 1$, so $|\langle g \rangle| = 5$.
+Since $g \neq e$, $\cardinality{\langle g \rangle} > 1$, so $\cardinality{\langle g \rangle} = 5$.
 
 ::: pf-proof
 $5$ is prime, so its only positive divisors are $1$ and $5$.

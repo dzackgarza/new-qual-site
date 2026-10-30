@@ -17,7 +17,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ and $Y$ be topological spaces.
-A continuous map $f\colon X\to Y$ is a \dfn{local homeomorphism} if every $x\in X$ has an open [[D-JMRPA|neighborhood]] $U_x$ such that $f(U_x)$ is open in $Y$ and $f\vert_{U_x}\colon U_x \to f(U_x)$ is a [[D-9KQZT|homeomorphism]].
+A continuous map $f\colon X\to Y$ is a \dfn{local homeomorphism} if every $x\in X$ has an open [[D-JMRPA|neighborhood]] $U_x$ such that $f(U_x)$ is open in $Y$ and $f\restrict_{U_x}\colon U_x \to f(U_x)$ is a [[D-9KQZT|homeomorphism]].
 :::
 
 ::: {.example}

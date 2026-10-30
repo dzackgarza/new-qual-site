@@ -46,7 +46,7 @@ Polynomials are dense in $C([0,1])$ by the Weierstrass approximation theorem, an
 
 Choose polynomials $p_j$ such that
 $$
-\|f-p_j\|_2\longrightarrow0.
+\norm{f-p_j}_2\longrightarrow0.
 $$
 Since $f$ is orthogonal to every polynomial,
 $$
@@ -55,15 +55,15 @@ $$
 Therefore
 $$
 \begin{aligned}
-\|f\|_2^2
+\norm{f}_2^2
 &=\langle f,f\rangle\\
 &=\langle f,f-p_j\rangle\\
-&\le \|f\|_2\,\|f-p_j\|_2
+&\le \norm{f}_2\,\norm{f-p_j}_2
 \end{aligned}
 $$
 by Cauchy--Schwarz. Letting $j\to\infty$ gives
 $$
-\|f\|_2^2=0.
+\norm{f}_2^2=0.
 $$
 Hence
 $$

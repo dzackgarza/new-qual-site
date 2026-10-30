@@ -19,7 +19,7 @@ Prove that if $f$ is an entire function such that $\lim_{z \to \infty} f(z) = \i
 ::: {.solution}
 Set $g(w)=f(1/w)$ on a punctured neighborhood of $0$. The hypothesis says
 $$
-|g(w)|\to\infty\qquad (w\to0).
+\abs{g(w)}\to\infty\qquad (w\to0).
 $$
 Hence $1/g(w)\to0$, so $1/g$ has a removable singularity at $0$, with value $0$ there. Therefore $g$ has a pole at $0$.
 

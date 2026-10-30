@@ -178,9 +178,9 @@ $$
 
 By Schwarz's lemma,
 $$
-|G(\zeta)|
+\abs{G(\zeta)}
 \le
-|\zeta|
+\abs{\zeta}
 $$
 for every $\zeta\in\DD$.
 
@@ -197,7 +197,7 @@ The map $G:\DD\to\DD$ is holomorphic and fixes $0$ by step [](#s1-3){.pf-ref}.
 
 At the nonzero point $a$,
 $$
-|G(a)|=|a|.
+\abs{G(a)}=\abs{a}.
 $$
 
 
@@ -226,7 +226,7 @@ for some real $\theta$.
 
 The equality case of Schwarz's lemma says that if
 $$
-|G(a)|=|a|
+\abs{G(a)}=\abs{a}
 $$
 at some nonzero $a\in\DD$, then $G$ is a rotation.
 

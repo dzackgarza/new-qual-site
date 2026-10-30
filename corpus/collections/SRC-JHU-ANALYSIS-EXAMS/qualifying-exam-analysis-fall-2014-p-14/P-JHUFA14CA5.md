@@ -49,7 +49,7 @@ factor gives its residue [@SS03]:
 $$
 \begin{aligned}
 \operatorname{Res}_{z=i}F
-&=\left.\frac{d}{dz}\frac{e^{iaz}}{(z+i)^2}\right|_{z=i}\\
+&=\evaluated{\frac{d}{dz}\frac{e^{iaz}}{(z+i)^2}}_{z=i}\\
 &=e^{-a}\left(\frac{ia}{(2i)^2}-\frac{2}{(2i)^3}\right)
 =-\frac{i(a+1)e^{-a}}4.
 \end{aligned}
@@ -74,15 +74,15 @@ The semicircle vanishes and symmetry gives the requested value.
 ::: pf-proof
 
 On $\Gamma_R$, the assumption $a>0$ implies
-$|e^{iaz}|=e^{-a\operatorname{Im}z}\leq1$. Also
-$|1+z^2|\geq R^2-1$. Hence
+$\abs{e^{iaz}}=e^{-a\operatorname{Im}z}\leq1$. Also
+$\abs{1+z^2}\geq R^2-1$. Hence
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\frac{\pi R}{(R^2-1)^2}\longrightarrow0.
 $$
 The integral on the real line converges absolutely:
 its absolute integrand is $(1+x^2)^{-2}$, bounded on
-$[-1,1]$ and at most $|x|^{-4}$ outside that interval.
+$[-1,1]$ and at most $\abs{x}^{-4}$ outside that interval.
 Letting $R\to\infty$ in step [](#s1){.pf-ref} is therefore justified.
 Its real part is
 $$

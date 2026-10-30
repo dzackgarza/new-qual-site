@@ -131,7 +131,7 @@ Therefore $\alpha\beta$ is diagonalizable and all of its eigenvalues are positiv
 ::: pf-proof
 By steps [](#gamma-self-adjoint){.pf-ref} and [](#gamma-positive-definite){.pf-ref}, $\gamma$ is positive definite and self-adjoint. The spectral theorem therefore gives an orthonormal eigenbasis for $\gamma$, and every eigenvalue $\lambda$ of $\gamma$ satisfies
 $$
-\lambda\|v\|^2=\langle\gamma v,v\rangle>0
+\lambda\norm{v}^2=\langle\gamma v,v\rangle>0
 $$
 for a corresponding nonzero eigenvector $v$. Thus every eigenvalue of $\gamma$ is real and positive, and $\gamma$ is diagonalizable.
 

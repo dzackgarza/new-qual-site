@@ -23,7 +23,7 @@ $$
 $$
 
 which shows that f is discontinuous by the sequential criterion theorem.
-Now at $x = 0$ , we can take any $\varepsilon > 0$ and set $\delta = \varepsilon / 3$ to find that $| f ( x ) - f ( 0 ) | < \varepsilon$ when $| x - 0 | < \delta$ , which shows that $f$ is continuous at $x = 0$
+Now at $x = 0$ , we can take any $\varepsilon > 0$ and set $\delta = \varepsilon / 3$ to find that $\abs{ f ( x ) - f ( 0 ) } < \varepsilon$ when $\abs{ x - 0 } < \delta$ , which shows that $f$ is continuous at $x = 0$
 
 More generally, if $D \subset \RR$ is such that D and $\RR \backslash D$ are both dense in R (which is true when $D = \QQ )$ and we define
 

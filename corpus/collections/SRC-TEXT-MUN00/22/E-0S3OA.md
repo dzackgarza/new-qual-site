@@ -32,7 +32,7 @@ If $K\subseteq G$ is a subgroup, then $K$ with the subspace topology is a topolo
 
 ::: pf-proof
 By [[E-R3NOE]], the product topology on $K\times K$ is the subspace topology from $G\times G$.
-The maps $m|_{K\times K}$ and $i|_K$ are restrictions of continuous maps to subspaces, and they take values in the subspace $K$ because $K$ is a subgroup; a continuous map with image in a subspace is continuous into that subspace.
+The maps $m\restrict_{K\times K}$ and $i\restrict_K$ are restrictions of continuous maps to subspaces, and they take values in the subspace $K$ because $K$ is a subgroup; a continuous map with image in a subspace is continuous into that subspace.
 :::
 
 :::

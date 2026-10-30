@@ -35,7 +35,7 @@ $$\tau_n(\sigma)=\sum_{g\in G}g\widetilde\sigma.$$
 
 ::: pf-proof
 
-The simplex has exactly $d=|G|$ lifts, and they are precisely the translates of any chosen lift. Thus the sum is independent of the chosen lift.
+The simplex has exactly $d=\cardinality{G}$ lifts, and they are precisely the translates of any chosen lift. Thus the sum is independent of the chosen lift.
 
 :::
 

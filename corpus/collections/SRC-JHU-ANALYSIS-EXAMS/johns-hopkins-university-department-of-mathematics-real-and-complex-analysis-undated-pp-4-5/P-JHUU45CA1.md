@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \in \CC$.
+Suppose that $f, g$ are entire functions with $\abs{f(z)} \leq \abs{g(z)}$ for all $z \in \CC$.
 Prove that there is a constant $c \in \CC$ such that $f = cg$.
 :::
 
@@ -42,12 +42,12 @@ If $g$ is not identically zero, the quotient $f/g$ extends to a bounded entire f
 Let $Z=\{z:g(z)=0\}$. The zeros of a nonzero entire
 function are isolated [@SS03]. On $\CC\setminus Z$,
 the quotient $h=f/g$ is holomorphic and satisfies
-$|h|\leq1$ by hypothesis. In a sufficiently small punctured
+$\abs{h}\leq1$ by hypothesis. In a sufficiently small punctured
 disk around each point of $Z$, this bound makes the
 singularity removable [@SS03]. The resulting local
 extensions agree with the same quotient off $Z$, so
 they define one entire function $H$. Continuity at
-the removed points preserves $|H|\leq1$ on the whole plane.
+the removed points preserves $\abs{H}\leq1$ on the whole plane.
 
 :::
 
@@ -60,7 +60,7 @@ The functions are proportional in every case.
 ::: pf-proof
 
 Under the assumption of step [](#s1){.pf-ref}, Liouville's theorem
-makes $H$ a constant $c$ with $|c|\leq1$ [@SS03].
+makes $H$ a constant $c$ with $\abs{c}\leq1$ [@SS03].
 Thus $f=cg$ off $Z$. At a point of $Z$, the original
 inequality forces $f=0=cg$, so the equality holds everywhere.
 

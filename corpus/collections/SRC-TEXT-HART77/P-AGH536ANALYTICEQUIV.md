@@ -174,7 +174,7 @@ t^{21}\bigl(z^3+tz+1\bigr)=0.
 $$
 At $t=0$, the equation $z^3+1=0$ has the root $z=-1$, and
 $$
-\frac{\partial}{\partial z}(z^3+tz+1)\bigg|_{(0,-1)}=3\ne0.
+\frac{\partial}{\partial z}(z^3+tz+1)\evalfrom_{(0,-1)}=3\ne0.
 $$
 The formal implicit-function theorem therefore gives a unique
 $z(t)\in\CC[[t]]$ with

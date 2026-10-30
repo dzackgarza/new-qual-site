@@ -32,7 +32,7 @@ $$
 \coloneqq
 \inf_{\delta>0}
 \sup\{
-|f(y)-f(z)|:
+\abs{f(y)-f(z)}:
 y,z\in[a,b]\cap(x-\delta,x+\delta)
 \}.
 $$
@@ -51,13 +51,13 @@ $$
 
 If $f$ is continuous at $x$, then for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
-|f(y)-f(x)|<\frac\varepsilon2
+\abs{f(y)-f(x)}<\frac\varepsilon2
 $$
-whenever $y\in[a,b]$ and $|y-x|<\delta$. Thus for such $y,z$,
+whenever $y\in[a,b]$ and $\abs{y-x}<\delta$. Thus for such $y,z$,
 $$
-|f(y)-f(z)|
+\abs{f(y)-f(z)}
 \le
-|f(y)-f(x)|+|f(z)-f(x)|
+\abs{f(y)-f(x)}+\abs{f(z)-f(x)}
 <
 \varepsilon,
 $$
@@ -66,7 +66,7 @@ so $\omega_f(x)=0$.
 Conversely, if $\omega_f(x)=0$, then for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
 \sup\{
-|f(y)-f(z)|:
+\abs{f(y)-f(z)}:
 y,z\in[a,b]\cap(x-\delta,x+\delta)
 \}
 <
@@ -74,9 +74,9 @@ y,z\in[a,b]\cap(x-\delta,x+\delta)
 $$
 Taking $z=x$ gives
 $$
-|f(y)-f(x)|<\varepsilon
+\abs{f(y)-f(x)}<\varepsilon
 $$
-whenever $y\in[a,b]$ and $|y-x|<\delta$, so $f$ is continuous at $x$.
+whenever $y\in[a,b]$ and $\abs{y-x}<\delta$, so $f$ is continuous at $x$.
 
 :::
 
@@ -101,7 +101,7 @@ $$
 $$
 is strictly less than $1/n$.
 
-If $y\in[a,b]$ and $|y-x|<\delta/2$, then
+If $y\in[a,b]$ and $\abs{y-x}<\delta/2$, then
 $$
 [a,b]\cap(y-\delta/2,y+\delta/2)
 \subset
@@ -176,11 +176,11 @@ The asserted limits follow.
 
 For each $n$, define step functions $L_n,U_n$ by taking on each subinterval $I$ of $P_n$ the values
 $$
-L_n|_I
+L_n\restrict_I
 =
 \inf_I f,
 \qquad
-U_n|_I
+U_n\restrict_I
 =
 \sup_I f.
 $$
@@ -230,11 +230,11 @@ $$
 
 The monotonicity from step [](#s1-5){.pf-ref} gives the pointwise limits away from the null set of partition endpoints. Since $f$ is bounded, choose $M$ with
 $$
-|f|\le M.
+\abs{f}\le M.
 $$
 Then
 $$
-|L_n|,|U_n|\le M,
+\abs{L_n},\abs{U_n}\le M,
 $$
 so dominated convergence gives
 $$
@@ -301,7 +301,7 @@ U_n(x)-L_n(x)<\varepsilon.
 $$
 For all $y\in I_n(x)$,
 $$
-|f(y)-f(x)|
+\abs{f(y)-f(x)}
 \le
 U_n(x)-L_n(x)
 <

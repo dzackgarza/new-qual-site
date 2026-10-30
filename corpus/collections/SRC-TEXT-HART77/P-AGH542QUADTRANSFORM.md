@@ -76,7 +76,7 @@ q:S\longrightarrow\PP^{2\prime}
 $$
 defined by the complete linear system
 $$
-|H'|,
+\linearsystem{H'},
 \qquad
 H'=2H-E_1-E_2-E_3.
 $$
@@ -170,7 +170,7 @@ Since $C$ is irreducible and is not one of the corresponding three lines in the 
 Hence its generic point lies in the locus on which $q$ is an isomorphism.
 Its image is therefore an irreducible curve $C'$, and
 $$
-q|_{\overline C}:\overline C\dashrightarrow C'
+q\restrict_{\overline C}:\overline C\dashrightarrow C'
 $$
 is birational.
 :::

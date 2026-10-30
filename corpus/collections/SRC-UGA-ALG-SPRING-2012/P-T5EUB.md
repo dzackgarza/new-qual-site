@@ -65,7 +65,7 @@ The center $Z(H)$ is a nontrivial abelian normal subgroup of $G$, of order divis
 
 ::: pf-proof
 
-Since $H$ is a nontrivial finite $p$-group, its class equation implies $|Z(H)|$ is a positive multiple of $p$. By definition $Z(H)$ is abelian. It is characteristic in $H$, since every automorphism of $H$ preserves the condition of commuting with all members of $H$. Conjugation by an element of $G$ restricts to an automorphism of $H$ because $H\trianglelefteq G$, so it preserves $Z(H)$. Thus $Z(H)\trianglelefteq G$.
+Since $H$ is a nontrivial finite $p$-group, its class equation implies $\cardinality{Z(H)}$ is a positive multiple of $p$. By definition $Z(H)$ is abelian. It is characteristic in $H$, since every automorphism of $H$ preserves the condition of commuting with all members of $H$. Conjugation by an element of $G$ restricts to an automorphism of $H$ because $H\trianglelefteq G$, so it preserves $Z(H)$. Thus $Z(H)\trianglelefteq G$.
 
 :::
 

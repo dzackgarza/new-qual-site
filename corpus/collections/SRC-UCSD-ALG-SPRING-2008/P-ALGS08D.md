@@ -68,14 +68,14 @@ H\trianglelefteq G.
 $$
 The quotient has order
 $$
-|G/H|=[G:H]=2,
+\cardinality{G/H}=[G:H]=2,
 $$
 and therefore
 $$
 G/H\cong C_2.
 $$
 Equivalently, $G$ admits a surjective homomorphism onto $C_2$.
-In particular $|G|$ is even.
+In particular $\cardinality{G}$ is even.
 
 This is the general structural conclusion: $\operatorname{Gal}(F/E)$ has a normal subgroup of index $2$.
 

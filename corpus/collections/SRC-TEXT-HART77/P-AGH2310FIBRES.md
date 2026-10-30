@@ -63,7 +63,7 @@ U\times_V\Spec\kappa(y)
 \cong
 \Spec\bigl(A\otimes_B\kappa(\mathfrak p)\bigr).
 $$
-These affine pieces cover $X_y$, so it suffices to compare each $|U_y|$ with $U\cap f^{-1}(y)$.
+These affine pieces cover $X_y$, so it suffices to compare each $\underlyingspace{U_y}$ with $U\cap f^{-1}(y)$.
 :::
 
 :::
@@ -126,7 +126,7 @@ These are exactly the points of $U$ mapping to $y$.
 :::
 
 ::: {.pf-step #uy-homeomorphism-onto-fiber}
-The bijection in step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism from $|U_y|$ onto $U\cap f^{-1}(y)$ with the induced topology.
+The bijection in step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism from $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
 
 ::: pf-proof
 Let $R=S^{-1}(A/\mathfrak pA)$ be the fibre ring.  Any closed subset of $\Spec R$ is $V_R(J)$ for an ideal $J\subseteq R$.
@@ -146,7 +146,7 @@ Thus closed subsets on the fibre side are precisely intersections with closed su
 ::: {.pf-step #xy-homeomorphism-global}
 Therefore
 $$
-\boxed{|X_y|\xrightarrow{\sim}f^{-1}(y)}
+\boxed{\underlyingspace{X_y}\xrightarrow{\sim}f^{-1}(y)}
 $$
 is a homeomorphism onto the set-theoretic fibre with its subspace topology.
 

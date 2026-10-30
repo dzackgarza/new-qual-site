@@ -52,7 +52,7 @@ g:X\to X
 $$
 by
 $$
-g|_{C_n}=h_n
+g\restrict_{C_n}=h_n
 $$
 for every $n\ge0$.
 Define
@@ -61,7 +61,7 @@ f:X\to X
 $$
 by collapsing $C_0$ to $x_0$ and, for $n\ge0$, setting
 $$
-f|_{C_{n+1}}=h_n^{-1}.
+f\restrict_{C_{n+1}}=h_n^{-1}.
 $$
 
 ::: pf-proof
@@ -84,7 +84,7 @@ $$
 
 For every $n\ge0$,
 $$
-(f\circ g)|_{C_n}=h_n^{-1}\circ h_n=\operatorname{id}_{C_n}.
+(f\circ g)\restrict_{C_n}=h_n^{-1}\circ h_n=\operatorname{id}_{C_n}.
 $$
 The wedgepoint is fixed as well.
 

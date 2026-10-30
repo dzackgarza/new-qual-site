@@ -134,7 +134,7 @@ Each field in the table is the fixed field of the indicated subgroup.
 
 ::: pf-proof
 
-The Galois correspondence gives $[K^H:\QQ]=8/|H|$ [@DF04].
+The Galois correspondence gives $[K^H:\QQ]=8/\cardinality{H}$ [@DF04].
 It therefore suffices to show that each proposed field is fixed
 by $H$ and has this degree.
 

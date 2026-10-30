@@ -120,7 +120,7 @@ On $S^1\subset\CC$, the map
 $$
 g_d(z)=z^d
 $$
-has degree $d$ for $d\ge0$; for $d<0$ the same formula means $z^d=\overline z^{\,|d|}$ on $S^1$ and again has degree $d$. For $d=0$, it is the constant map $1$.
+has degree $d$ for $d\ge0$; for $d<0$ the same formula means $z^d=\overline z^{\,\abs{d}}$ on $S^1$ and again has degree $d$. For $d=0$, it is the constant map $1$.
 
 ::: pf-proof
 Writing $z=e^{i\theta}$ gives $g_d(e^{i\theta})=e^{id\theta}$. Thus the induced map on $H_1(S^1)\cong\ZZ$ is multiplication by $d$.

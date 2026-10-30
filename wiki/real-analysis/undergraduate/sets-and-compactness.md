@@ -61,6 +61,6 @@ If $U\subseteq\RR^n$ is open and $(f_k)$ is a pointwise bounded, equicontinuous 
 
 - Closed subsets of compact sets are compact, and compact subsets of Hausdorff spaces are closed.
 
-- **Urysohn's lemma.** If $A$ and $B$ are disjoint closed subsets of a metric space or of a compact Hausdorff space $X$, there is a continuous $f\colon X \to [0,1]$ with $f|_A = 0$ and $f|_B = 1$.
+- **Urysohn's lemma.** If $A$ and $B$ are disjoint closed subsets of a metric space or of a compact Hausdorff space $X$, there is a continuous $f\colon X \to [0,1]$ with $f\restrict_A = 0$ and $f\restrict_B = 1$.
 
 - A continuous function with compact support on $\RR^n$ is bounded and uniformly continuous; see [[real-analysis/undergraduate/continuity#Uniform continuity|Continuity]] for the proof of the Heine--Cantor theorem.

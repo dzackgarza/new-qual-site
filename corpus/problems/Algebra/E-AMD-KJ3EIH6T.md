@@ -27,11 +27,11 @@ Classify all groups of order $28$.
 :::
 
 ::: {.solution}
-Let $|G|=28=4\cdot7$. Sylow gives
+Let $\cardinality{G}=28=4\cdot7$. Sylow gives
 $$
 n_7\equiv1\pmod7,\qquad n_7\mid4,
 $$
-so $n_7=1$. Thus the Sylow $7$-subgroup $P\cong C_7$ is normal. If $Q$ is a Sylow $2$-subgroup, then $|Q|=4$, $P\cap Q=1$, and $PQ=G$. Hence
+so $n_7=1$. Thus the Sylow $7$-subgroup $P\cong C_7$ is normal. If $Q$ is a Sylow $2$-subgroup, then $\cardinality{Q}=4$, $P\cap Q=1$, and $PQ=G$. Hence
 $$
 G\cong C_7\rtimes Q,
 $$

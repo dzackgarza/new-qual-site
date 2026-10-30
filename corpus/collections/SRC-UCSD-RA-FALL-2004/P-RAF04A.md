@@ -32,7 +32,7 @@ Find, with justification, the values of the following limits and integrals:
 
 (b) $\displaystyle\int_0^\infty \left[\int_0^\infty \frac{x}{1 + x^2} e^{-xt} \, dx\right] dt$
 
-(c) $\displaystyle\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx$
+(c) $\displaystyle\lim_{n \to \infty} \int_{-\infty}^\infty e^{-\abs{x+n}} \, dx$
 :::
 
 ::: {.solution}
@@ -60,12 +60,12 @@ continuity of cosine at 0.
 ::: pf-step
 For all $n \ge 1$ and $x > 0$:
 $$
-|f_n(x)| = \left| \cos\left(\frac{x}{n}\right) \right| e^{-x} \le e^{-x} =: g(x).
+\abs{f_n(x)} = \abs{ \cos\left(\frac{x}{n}\right) } e^{-x} \le e^{-x} =: g(x).
 $$
 The dominating function $g(x) = e^{-x}$ is integrable on $(0, \infty)$ since $\int_0^\infty e^{-x} \, dx = 1 < \infty$.
 
 ::: pf-proof
-$|\cos \theta| \le 1$.
+$\abs{\cos \theta} \le 1$.
 :::
 
 :::
@@ -133,7 +133,7 @@ standard antiderivative of $\frac{1}{1+x^2}$.
 :::
 
 ::: {.pf-step #s3}
-Part (c): Evaluation of $\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx$:
+Part (c): Evaluation of $\lim_{n \to \infty} \int_{-\infty}^\infty e^{-\abs{x+n}} \, dx$:
 
 ::: pf-proof
 
@@ -141,7 +141,7 @@ Part (c): Evaluation of $\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \,
 For each $n \in \NN$, make the linear substitution $u = x + n$, so $du = dx$.
 The integral becomes:
 $$
-\int_{-\infty}^\infty e^{-|x+n|} \, dx = \int_{-\infty}^\infty e^{-|u|} \, du.
+\int_{-\infty}^\infty e^{-\abs{x+n}} \, dx = \int_{-\infty}^\infty e^{-\abs{u}} \, du.
 $$
 
 ::: pf-proof
@@ -153,7 +153,7 @@ translation invariance of Lebesgue integration.
 ::: pf-step
 Evaluating the integral by symmetry:
 $$
-\int_{-\infty}^\infty e^{-|u|} \, du = 2 \int_0^\infty e^{-u} \, du = 2 \Big[ -e^{-u} \Big]_0^\infty = 2(1) = 2.
+\int_{-\infty}^\infty e^{-\abs{u}} \, du = 2 \int_0^\infty e^{-u} \, du = 2 \Big[ -e^{-u} \Big]_0^\infty = 2(1) = 2.
 $$
 
 ::: pf-proof
@@ -165,7 +165,7 @@ symmetry of even function.
 ::: pf-step
 Since the integral is constant and equal to $2$ for every $n \in \NN$, its limit is:
 $$
-\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx = \lim_{n \to \infty} 2 = 2.
+\lim_{n \to \infty} \int_{-\infty}^\infty e^{-\abs{x+n}} \, dx = \lim_{n \to \infty} 2 = 2.
 $$
 
 ::: pf-proof

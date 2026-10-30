@@ -135,7 +135,7 @@ f(I_2)=I_2
 $$
 such that
 $$
-f|_U:U\longrightarrow V
+f\restrict_U:U\longrightarrow V
 $$
 is a diffeomorphism. In particular, $f$ has a local inverse near
 $I_2$.
@@ -209,7 +209,7 @@ but step [](#s4){.pf-ref} gives
 $$
 f(X_t)=I_2=f(J).
 $$
-Hence $f|_U$ is not injective.
+Hence $f\restrict_U$ is not injective.
 
 :::
 

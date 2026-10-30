@@ -265,7 +265,7 @@ C\times\{t\}\cong C
 $$
 gives
 $$
-M'|_{C\times\{t\}}\cong L'.
+M'\restrict_{C\times\{t\}}\cong L'.
 $$
 If $M'$ were very ample on $X$, an embedding defined by $M'$ would restrict to
 a closed immersion of this fibre, so its restriction $L'$ would be very ample.

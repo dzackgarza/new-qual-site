@@ -52,7 +52,7 @@ e^{i\xi_k\cos x}f(x)\longrightarrow e^{i\xi\cos x}f(x),
 $$
 and
 $$
-|e^{i\xi_k\cos x}f(x)|=|f(x)|.
+\abs{e^{i\xi_k\cos x}f(x)}=\abs{f(x)}.
 $$
 Since $f\in L^1(\RR)$, dominated convergence gives
 $$
@@ -76,13 +76,13 @@ G_n(\xi,x):=(i\cos x)^n e^{i\xi\cos x}f(x).
 $$
 Then
 $$
-|G_n(\xi,x)|\le |f(x)|
+\abs{G_n(\xi,x)}\le \abs{f(x)}
 $$
 for every $\xi,x$. Also
 $$
 \frac{\partial}{\partial\xi}G_n(\xi,x)=G_{n+1}(\xi,x).
 $$
-Because $|G_{n+1}(\xi,x)|\le|f(x)|\in L^1$, dominated convergence applied to difference quotients justifies differentiation under the integral. Inductively,
+Because $\abs{G_{n+1}(\xi,x)}\le\abs{f(x)}\in L^1$, dominated convergence applied to difference quotients justifies differentiation under the integral. Inductively,
 $$
 \boxed{
 g^{(n)}(\xi)=\int_{\RR}(i\cos x)^n e^{i\xi\cos x}f(x)\,dx.}
@@ -104,29 +104,29 @@ Prove that $g^{(n)}\to0$ uniformly in $\xi$.
 
 For every $\xi\in\RR$,
 $$
-|g^{(n)}(\xi)|
-\le \int_{\RR}|\cos x|^n|f(x)|\,dx.
+\abs{g^{(n)}(\xi)}
+\le \int_{\RR}\abs{\cos x}^n\abs{f(x)}\,dx.
 $$
 For almost every $x\in\RR$,
 $$
-|\cos x|<1,
+\abs{\cos x}<1,
 $$
-because $|\cos x|=1$ only on the countable set $\pi\ZZ$. Hence
+because $\abs{\cos x}=1$ only on the countable set $\pi\ZZ$. Hence
 $$
-|\cos x|^n|f(x)|\longrightarrow0
+\abs{\cos x}^n\abs{f(x)}\longrightarrow0
 $$
 for almost every $x$, while
 $$
-|\cos x|^n|f(x)|\le|f(x)|\in L^1.
+\abs{\cos x}^n\abs{f(x)}\le\abs{f(x)}\in L^1.
 $$
 Dominated convergence therefore yields
 $$
-\int_{\RR}|\cos x|^n|f(x)|\,dx\longrightarrow0.
+\int_{\RR}\abs{\cos x}^n\abs{f(x)}\,dx\longrightarrow0.
 $$
 Since the bound is independent of $\xi$,
 $$
 \boxed{
-\sup_{\xi\in\RR}|g^{(n)}(\xi)|\longrightarrow0.}
+\sup_{\xi\in\RR}\abs{g^{(n)}(\xi)}\longrightarrow0.}
 $$
 Thus $g^{(n)}\to0$ uniformly on $\RR$.
 

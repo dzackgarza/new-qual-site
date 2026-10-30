@@ -109,17 +109,17 @@ The uniform limit $f$ is bounded.
 
 Choose $N$ such that
 $$
-\|f-f_N\|_\infty<1.
+\norm{f-f_N}_\infty<1.
 $$
 Since $f_N$ is Riemann integrable, it is bounded; let
 $$
-|f_N(x)|\le M.
+\abs{f_N(x)}\le M.
 $$
 Then
 $$
-|f(x)|
+\abs{f(x)}
 \le
-|f(x)-f_N(x)|+|f_N(x)|
+\abs{f(x)-f_N(x)}+\abs{f_N(x)}
 <
 1+M
 $$
@@ -134,7 +134,7 @@ for every $x\in[0,1]$.
 Fix $\varepsilon>0$.
 Choose $N$ such that
 $$
-\|f-f_N\|_\infty<\frac{\varepsilon}{4}.
+\norm{f-f_N}_\infty<\frac{\varepsilon}{4}.
 $$
 
 

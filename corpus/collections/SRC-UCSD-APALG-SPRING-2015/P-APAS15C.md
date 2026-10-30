@@ -67,7 +67,7 @@ on the five conjugacy classes.
 The multiplicity of $S^\lambda$ in $V$ is
 $$
 m_\lambda=\langle \chi_V,\chi^\lambda\rangle
-=\frac1{24}\sum_C |C|\chi_V(C)\overline{\chi^\lambda(C)}.
+=\frac1{24}\sum_C \cardinality{C}\chi_V(C)\overline{\chi^\lambda(C)}.
 $$
 Substituting the class sizes and character values gives
 $$

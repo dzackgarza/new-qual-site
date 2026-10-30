@@ -50,17 +50,17 @@ If $A$ is upper triangular and normal, then $a_{1j}=0$ for every $j>1$.
 
 Normality gives $AA^*=A^*A$. Comparing the $(1,1)$-entries,
 $$
-(AA^*)_{11}=\sum_{j=1}^n |a_{1j}|^2,
+(AA^*)_{11}=\sum_{j=1}^n \abs{a_{1j}}^2,
 \qquad
-(A^*A)_{11}=\sum_{j=1}^n |a_{j1}|^2.
+(A^*A)_{11}=\sum_{j=1}^n \abs{a_{j1}}^2.
 $$
 Because $A$ is upper triangular, $a_{j1}=0$ for every $j>1$. Hence
 $$
-\sum_{j=1}^n |a_{1j}|^2=|a_{11}|^2,
+\sum_{j=1}^n \abs{a_{1j}}^2=\abs{a_{11}}^2,
 $$
 so
 $$
-\sum_{j=2}^n |a_{1j}|^2=0.
+\sum_{j=2}^n \abs{a_{1j}}^2=0.
 $$
 Therefore $a_{1j}=0$ for all $j>1$.
 
@@ -81,9 +81,9 @@ where $B$ is upper triangular and normal.
 Upper triangularity already gives $a_{j1}=0$ for $j>1$, and step [](#s2){.pf-ref} gives $a_{1j}=0$ for $j>1$, so the displayed block form holds.
 Then
 $$
-AA^*=\begin{pmatrix}|a_{11}|^2&0\\0&BB^*\end{pmatrix},
+AA^*=\begin{pmatrix}\abs{a_{11}}^2&0\\0&BB^*\end{pmatrix},
 \qquad
-A^*A=\begin{pmatrix}|a_{11}|^2&0\\0&B^*B\end{pmatrix}.
+A^*A=\begin{pmatrix}\abs{a_{11}}^2&0\\0&B^*B\end{pmatrix}.
 $$
 Since $AA^*=A^*A$, one has $BB^*=B^*B$, so $B$ is normal.
 
@@ -113,7 +113,7 @@ Conversely, every diagonal matrix is normal.
 
 If $A=\operatorname{diag}(\lambda_1,\dots,\lambda_n)$, then
 $$
-AA^*=A^*A=\operatorname{diag}(|\lambda_1|^2,\dots,|\lambda_n|^2).
+AA^*=A^*A=\operatorname{diag}(\abs{\lambda_1}^2,\dots,\abs{\lambda_n}^2).
 $$
 
 :::

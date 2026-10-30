@@ -25,7 +25,7 @@ Show that $f$ is homotopic to $g$.
 ::: pf-step
 For $x\in X$ and $t\in I$, define
 $$
-H(x,t)=\frac{(1-t)f(x)+t g(x)}{\|(1-t)f(x)+t g(x)\|}.
+H(x,t)=\frac{(1-t)f(x)+t g(x)}{\norm{(1-t)f(x)+t g(x)}}.
 $$
 
 ::: pf-proof

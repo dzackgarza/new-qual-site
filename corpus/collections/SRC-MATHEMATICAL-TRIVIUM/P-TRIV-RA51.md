@@ -36,7 +36,7 @@ For ordinary convergence, assume $a>0$.
 
 Put
 $$
-k=|\vec k|
+k=\norm{\vec k}
 $$
 and
 $$

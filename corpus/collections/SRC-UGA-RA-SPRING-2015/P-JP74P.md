@@ -63,8 +63,8 @@ $$
 $$
 Hence
 $$
-\left|\frac1N\sum_{n=1}^Ne^{2\pi i kn\alpha}\right|
-\le \frac{2}{N|1-e^{2\pi i k\alpha}|}
+\abs{\frac1N\sum_{n=1}^Ne^{2\pi i kn\alpha}}
+\le \frac{2}{N\abs{1-e^{2\pi i k\alpha}}}
 \longrightarrow0.
 $$
 Also
@@ -85,16 +85,16 @@ Pass from trigonometric polynomials to continuous periodic functions.
 
 Trigonometric polynomials are uniformly dense in the continuous $1$-periodic functions. Fix $\varepsilon>0$ and choose a trigonometric polynomial $P$ with
 $$
-\|f-P\|_\infty<\varepsilon.
+\norm{f-P}_\infty<\varepsilon.
 $$
 Then for every $N$,
 $$
-\left|\frac1N\sum_{n=1}^N(f-P)(n\alpha)\right|
+\abs{\frac1N\sum_{n=1}^N(f-P)(n\alpha)}
 \le\varepsilon,
 $$
 and
 $$
-\left|\int_0^1(f-P)(t)\,dt\right|
+\abs{\int_0^1(f-P)(t)\,dt}
 \le\varepsilon.
 $$
 By Step 1,
@@ -105,9 +105,9 @@ $$
 Therefore
 $$
 \limsup_{N\to\infty}
-\left|
+\abs{
 \frac1N\sum_{n=1}^Nf(n\alpha)-\int_0^1f(t)\,dt
-\right|
+}
 \le2\varepsilon.
 $$
 Since $\varepsilon$ is arbitrary,

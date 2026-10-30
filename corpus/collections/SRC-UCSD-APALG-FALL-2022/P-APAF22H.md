@@ -55,7 +55,7 @@ By step [](#class-sum-is-central){.pf-ref}, the operator afforded by $K_\alpha$ 
 If $f^\lambda=\dim V^\lambda$ and $\chi^\lambda$ is its character, then
 $$
 \boxed{\omega_\alpha^\lambda
-=\frac{|C_\alpha|\,\chi^\lambda(\alpha)}{f^\lambda}}
+=\frac{\cardinality{C_\alpha}\,\chi^\lambda(\alpha)}{f^\lambda}}
 =\frac{d!}{z_\alpha}\frac{\chi^\lambda(\alpha)}{f^\lambda},
 $$
 where $z_\alpha=\prod_i i^{m_i}m_i!$ for $\alpha=(1^{m_1}2^{m_2}\cdots)$.
@@ -66,9 +66,9 @@ $$
 \omega_\alpha^\lambda f^\lambda
 =\operatorname{tr}_{V^\lambda}(K_\alpha)
 =\sum_{g\in C_\alpha}\chi^\lambda(g)
-=|C_\alpha|\chi^\lambda(\alpha).
+=\cardinality{C_\alpha}\chi^\lambda(\alpha).
 $$
-The class-size formula is $|C_\alpha|=d!/z_\alpha$.
+The class-size formula is $\cardinality{C_\alpha}=d!/z_\alpha$.
 :::
 
 :::

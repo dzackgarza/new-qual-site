@@ -82,7 +82,7 @@ restricts to a nonconstant finite morphism from $Y$ to $C$ unless $Y$ is
 contained in a fibre. Its degree is the intersection number with a general
 fibre:
 $$
-\deg(\pi|_Y)=Y\cdot f=a.
+\deg(\pi\restrict_Y)=Y\cdot f=a.
 $$
 Since $Y$ is not a fibre, this degree is positive.
 

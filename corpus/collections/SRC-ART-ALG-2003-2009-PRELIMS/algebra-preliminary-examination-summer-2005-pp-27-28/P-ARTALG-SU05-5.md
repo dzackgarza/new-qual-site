@@ -43,7 +43,7 @@ satisfies $a^{80}=1$.
 
 ::: pf-proof
 
-The additive order of $1$ divides $|F|=81$. It is a prime:
+The additive order of $1$ divides $\cardinality{F}=81$. It is a prime:
 if it were $uv$ with $1<u,v<uv$, then the two nonzero field
 elements $u\cdot1$ and $v\cdot1$ would have product zero.
 Thus the characteristic is the only prime dividing $81$, namely

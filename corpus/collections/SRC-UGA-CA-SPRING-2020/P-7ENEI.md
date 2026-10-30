@@ -28,7 +28,7 @@ $$
 &= (z-1) \sum_{n\geq 1} c_n z^k \\
 &= -c_1z + \sum_{n\geq 2} (c_{n-1} - c_n) z^n \\
 &\convergesto{z\to 1} -c_1 + \sum_{n\geq 2} c_{n-1} - c_n \\
-&\definedas \lim_{N\to\infty} -c_1 z + \sum_{n=2}^N c_{n-1} - c_n \\
+&\coloneqq \lim_{N\to\infty} -c_1 z + \sum_{n=2}^N c_{n-1} - c_n \\
 &= \lim_{N\to\infty} -c_N
 ,$$
 where we've used that the sum is telescoping.

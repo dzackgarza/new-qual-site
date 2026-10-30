@@ -27,13 +27,13 @@ audit:
 ::: {.problem}
 Let $E\subset\RR$ be measurable.
 
-(a) If $|E|<\infty$, prove that
+(a) If $\setmeasure{E}<\infty$, prove that
 $$
 F(x)=\int_{\RR}\chi_E(y)\chi_E(y-x)\,dy
 $$
 is continuous.
 
-(b) If $|E|>0$, possibly infinite, prove that $E-E$ contains an interval $(-\varepsilon,\varepsilon)$ for some $\varepsilon>0$.
+(b) If $\setmeasure{E}>0$, possibly infinite, prove that $E-E$ contains an interval $(-\varepsilon,\varepsilon)$ for some $\varepsilon>0$.
 :::
 
 ::: {.solution}
@@ -46,12 +46,12 @@ Continuity when $E$ has finite measure.
 
 ::: pf-proof
 
-Since $|E|<\infty$, one has $\chi_E\in L^2(\RR)$. For $h\in\RR$,
+Since $\setmeasure{E}<\infty$, one has $\chi_E\in L^2(\RR)$. For $h\in\RR$,
 $$
 \begin{aligned}
-|F(x+h)-F(x)|
-&=\left|\int \chi_E(y)\bigl(\chi_E(y-x-h)-\chi_E(y-x)\bigr)\,dy\right|\\
-&\le \|\chi_E\|_2\,\|\chi_E(\cdot-h)-\chi_E\|_2.
+\abs{F(x+h)-F(x)}
+&=\abs{\int \chi_E(y)\bigl(\chi_E(y-x-h)-\chi_E(y-x)\bigr)\,dy}\\
+&\le \norm{\chi_E}_2\,\norm{\chi_E(\cdot-h)-\chi_E}_2.
 \end{aligned}
 $$
 The inequality is [[FF-4XBYG|Cauchy--Schwarz in $L^2$]]. The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by [[T-BFOJT|continuity of translation in $L^p$]]. Thus $F$ is uniformly continuous.
@@ -66,7 +66,7 @@ Positive-measure sets have a neighborhood of zero in the difference set.
 
 ::: pf-proof
 
-Assume $|E|>0$. Because Lebesgue measure is sigma-finite, there exists $R>0$ such that
+Assume $\setmeasure{E}>0$. Because Lebesgue measure is sigma-finite, there exists $R>0$ such that
 $$
 A=E\cap[-R,R]
 $$
@@ -76,12 +76,12 @@ F_A(x)=\int\chi_A(y)\chi_A(y-x)\,dy.
 $$
 Then
 $$
-F_A(0)=|A|>0.
+F_A(0)=\setmeasure{A}>0.
 $$
 By continuity, there exists $\varepsilon>0$ such that
 $$
 F_A(x)>0
-\qquad(|x|<\varepsilon).
+\qquad(\abs{x}<\varepsilon).
 $$
 If $F_A(x)>0$, then the set of $y$ with
 $$

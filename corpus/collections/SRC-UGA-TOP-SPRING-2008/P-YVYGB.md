@@ -131,7 +131,7 @@ G
 \cong
 \left\langle
 a_1,b_1,a_2,b_2
-\ \middle|\
+\ \presentationbar\
 [a_1,b_1][a_2,b_2]=1
 \right\rangle.
 $$

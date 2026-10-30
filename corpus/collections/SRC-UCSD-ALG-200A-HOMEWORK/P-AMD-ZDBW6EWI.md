@@ -37,7 +37,7 @@ Let $G$ be a cyclic group of order $n$.
 
 Show that $\operatorname{Aut}(G)$ is abelian and
 $$
-|\operatorname{Aut}(G)|=\varphi(n).
+\cardinality{\operatorname{Aut}(G)}=\varphi(n).
 $$
 :::
 
@@ -94,11 +94,11 @@ $$
 By definition, Euler's totient $\varphi(n)$ is the number of residue classes modulo $n$ represented by integers coprime to $n$.
 Therefore
 $$
-|(\ZZ/n\ZZ)^\times|=\varphi(n).
+\cardinality{(\ZZ/n\ZZ)^\times}=\varphi(n).
 $$
 Using step [](#aut-iso-to-units){.pf-ref},
 $$
-|\operatorname{Aut}(G)|=\varphi(n).
+\cardinality{\operatorname{Aut}(G)}=\varphi(n).
 $$
 :::
 

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Consider
 $$
-\min_{\mathbf x\in\RR^n}\|A\mathbf x-\mathbf b\|_2,
+\min_{\mathbf x\in\RR^n}\norm{A\mathbf x-\mathbf b}_2,
 \qquad A\in\RR^{m\times n},\quad m\ge n.
 $$
 Prove that if $\mathbf x$ and $\mathbf x+\alpha\mathbf z$ are both minimizers for some $\alpha\ne0$, then $\mathbf z\in\ker A$.
@@ -29,7 +29,7 @@ Prove that if $\mathbf x$ and $\mathbf x+\alpha\mathbf z$ are both minimizers fo
 
 Let
 $$
-\Phi(\mathbf y)=\|A\mathbf y-\mathbf b\|_2^2.
+\Phi(\mathbf y)=\norm{A\mathbf y-\mathbf b}_2^2.
 $$
 
 ::: pf
@@ -57,13 +57,13 @@ $$
 \begin{aligned}
 g(t)
 &=
-\|A\mathbf y-\mathbf b+tA\mathbf h\|_2^2\\
+\norm{A\mathbf y-\mathbf b+tA\mathbf h}_2^2\\
 &=
-\|A\mathbf y-\mathbf b\|_2^2
+\norm{A\mathbf y-\mathbf b}_2^2
 +
 2t\,(A\mathbf y-\mathbf b)^tA\mathbf h
 +
-t^2\|A\mathbf h\|_2^2.
+t^2\norm{A\mathbf h}_2^2.
 \end{aligned}
 $$
 Hence
@@ -140,7 +140,7 @@ $$
 =
 \mathbf z^tA^tA\mathbf z
 =
-\|A\mathbf z\|_2^2.
+\norm{A\mathbf z}_2^2.
 $$
 Therefore
 $$

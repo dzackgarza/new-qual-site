@@ -112,7 +112,7 @@ $$
 
 Let $(X,d)$ be a metric space and let $A\subseteq X$. The restriction
 $$
-d|_{A\times A}:A\times A\to[0,\infty)
+d\restrict_{A\times A}:A\times A\to[0,\infty)
 $$
 is a metric on $A$. Its open balls are exactly
 $$

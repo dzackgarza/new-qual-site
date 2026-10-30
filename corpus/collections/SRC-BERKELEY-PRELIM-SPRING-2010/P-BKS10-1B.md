@@ -118,9 +118,9 @@ $$
 $$
 For each fixed $n\geq1$,
 $$
-\left|
+\abs{
 \frac{\sin(\sqrt n\,R)}{\sqrt n\,R}
-\right|
+}
 \leq
 \frac{1}{\sqrt n\,R}
 \longrightarrow0.

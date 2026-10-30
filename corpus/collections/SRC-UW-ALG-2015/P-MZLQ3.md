@@ -66,7 +66,7 @@ $$
 
 We have $Q\cap P=1$ and
 $$
-|QP|=|Q||P|=pq=|G|,
+\cardinality{QP}=\cardinality{Q}\cardinality{P}=pq=\cardinality{G},
 $$
 so $G=QP$. Since $Q\trianglelefteq G$, this is a semidirect product. Conjugation by $P$ on $Q$ gives the action $\varphi$.
 

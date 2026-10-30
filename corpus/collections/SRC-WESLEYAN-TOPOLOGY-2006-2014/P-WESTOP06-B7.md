@@ -56,7 +56,7 @@ V_0\times I\subseteq H^{-1}(U_0).
 $$
 Set $V=V_0\cap U_0$. Then $V$ is a neighborhood of $x$ with $V\subseteq U$, and
 $$
-H|_{V\times I}:V\times I\to U_0\subseteq U
+H\restrict_{V\times I}:V\times I\to U_0\subseteq U
 $$
 is a homotopy from the inclusion $V\hookrightarrow U$ to the constant map with value $x$. Hence the inclusion is null-homotopic.
 
@@ -139,7 +139,7 @@ after decreasing $\delta$ if necessary so that $B_\delta(p)\subseteq B_\varepsil
 
 If $y_0<1-r_0$, choose a rational number $r\ne r_0$ sufficiently close to $r_0$ that
 $$
-|r-r_0|<\delta
+\abs{r-r_0}<\delta
 \qquad\text{and}\qquad
 y_0<1-r.
 $$
@@ -148,7 +148,7 @@ $$
 q=(r,y_0)\in X\cap B_\delta(p)\subseteq V.
 $$
 
-If $y_0=1-r_0$, choose instead a rational $r<r_0$ with $|r-r_0|<\delta$. Then $1-r>1-r_0=y_0$, so again $q=(r,y_0)\in V$.
+If $y_0=1-r_0$, choose instead a rational $r<r_0$ with $\abs{r-r_0}<\delta$. Then $1-r>1-r_0=y_0$, so again $q=(r,y_0)\in V$.
 
 In either case, $q$ and $p$ have different first coordinates. By step [](#s1-3){.pf-ref}, no path in $U$ can join them.
 

@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Suppose $(f_n)$ is a sequence in $L^2(\RR)$ that converges weakly to $f\in L^2(\RR)$. Is it possible that
 $$
-\|f_n\|_{L^2}\longrightarrow\infty?
+\norm{f_n}_{L^2}\longrightarrow\infty?
 $$
 :::
 
@@ -52,7 +52,7 @@ T_n(g)=\langle f_n,g\rangle\longrightarrow\langle f,g\rangle.
 $$
 Hence for every $g$ the scalar sequence $(T_n(g))$ is bounded. By the [[T-F2THV|uniform boundedness principle]],
 $$
-\sup_n\|T_n\|<\infty.
+\sup_n\norm{T_n}<\infty.
 $$
 
 :::
@@ -67,11 +67,11 @@ The functional norms are the $L^2$ norms of the representing functions.
 
 By the [[T-LDCZB|Riesz representation theorem for Hilbert spaces]],
 $$
-\|T_n\|=\|f_n\|_2.
+\norm{T_n}=\norm{f_n}_2.
 $$
 Therefore
 $$
-\sup_n\|f_n\|_2<\infty.
+\sup_n\norm{f_n}_2<\infty.
 $$
 
 :::
@@ -80,7 +80,7 @@ $$
 
 ::: pf-qed
 
-By step [](#s1){.pf-ref}, the norms $\|T_n\|$ are uniformly bounded; step [](#s2){.pf-ref} therefore shows that $\|f_n\|_2$ cannot tend to infinity.
+By step [](#s1){.pf-ref}, the norms $\norm{T_n}$ are uniformly bounded; step [](#s2){.pf-ref} therefore shows that $\norm{f_n}_2$ cannot tend to infinity.
 
 :::
 

@@ -37,17 +37,17 @@ $$
 
 The convergence is not uniform on $[0,\infty)$. Indeed,
 $$
-|f_n(x)-f(x)|
-=\left|\frac{nx}{n+x}-x\right|
+\abs{f_n(x)-f(x)}
+=\abs{\frac{nx}{n+x}-x}
 =\frac{x^2}{n+x}.
 $$
 Taking $x=n$ gives
 $$
-|f_n(n)-f(n)|=\frac{n}{2},
+\abs{f_n(n)-f(n)}=\frac{n}{2},
 $$
 which does not tend to $0$. Therefore
 $$
-\sup_{x\ge0}|f_n(x)-f(x)|\not\to0,
+\sup_{x\ge0}\abs{f_n(x)-f(x)}\not\to0,
 $$
 so convergence is not uniform.
 :::

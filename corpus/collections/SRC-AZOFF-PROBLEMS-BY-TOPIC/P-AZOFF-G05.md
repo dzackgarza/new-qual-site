@@ -69,12 +69,12 @@ For a double pole,
 $$
 \Res(F;ia)
 =
-\left.
+\evaluated{
 \frac{d}{dz}
 \left(
 \frac{z^2}{(z+ia)^2}
 \right)
-\right|_{z=ia}.
+}_{z=ia}.
 $$
 Differentiating,
 $$

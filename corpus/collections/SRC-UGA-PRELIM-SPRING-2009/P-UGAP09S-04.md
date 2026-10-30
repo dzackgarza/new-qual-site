@@ -39,7 +39,7 @@ a_n\to0.
 $$
 Every convergent sequence is bounded, so there is $M>0$ such that
 $$
-|a_n|\le M
+\abs{a_n}\le M
 $$
 for every $n$.
 
@@ -59,15 +59,15 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|a_nb_n|
+\abs{a_nb_n}
 \le
-M|b_n|.
+M\abs{b_n}.
 $$
 Hence
 $$
-\sum_{n=1}^\infty|a_nb_n|
+\sum_{n=1}^\infty\abs{a_nb_n}
 \le
-M\sum_{n=1}^\infty|b_n|
+M\sum_{n=1}^\infty\abs{b_n}
 <\infty.
 $$
 The comparison test gives absolute convergence.

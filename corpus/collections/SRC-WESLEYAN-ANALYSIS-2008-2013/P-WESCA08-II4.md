@@ -205,20 +205,20 @@ $$
 
 If $m<n$, then step [](#s1-5){.pf-ref} gives
 $$
-\left|
+\abs{
 \frac{f'(z)}{g'(z)}
-\right|
+}
 =
-|z-z_0|^{m-n}
-\left|
+\abs{z-z_0}^{m-n}
+\abs{
 \frac{F_1(z)}{G_1(z)}
-\right|.
+}.
 $$
 The second factor tends to the nonzero finite number
 $$
-\left|
+\abs{
 \frac{mF(z_0)}{nG(z_0)}
-\right|,
+},
 $$
 while $m-n<0$, so the first factor tends to $+\infty$. This contradicts
 the assumed finite limit.

@@ -26,8 +26,8 @@ audit:
 ::: {.problem}
 For which $\sigma\in\RR$ does there exist $C_\sigma<\infty$ such that
 $$
-\left|\sum_{j,k=1}^\infty (1+|j-k|)^\sigma a_jb_k\right|
-\le C_\sigma\|a\|_{\ell^2}\|b\|_{\ell^2}
+\abs{\sum_{j,k=1}^\infty (1+\abs{j-k})^\sigma a_jb_k}
+\le C_\sigma\norm{a}_{\ell^2}\norm{b}_{\ell^2}
 $$
 for all $a,b\in\ell^2$?
 :::
@@ -48,7 +48,7 @@ Sufficiency for $\sigma<-1$.
 
 Set
 $$
-K_{jk}=(1+|j-k|)^\sigma.
+K_{jk}=(1+\abs{j-k})^\sigma.
 $$
 If $\sigma<-1$, then
 $$
@@ -62,11 +62,11 @@ and similarly every column sum is at most $M$. By Schur's test, the operator
 $$
 (Tb)_j=\sum_{k=1}^\infty K_{jk}b_k
 $$
-is bounded on $\ell^2$ with $\|T\|\le M$. Therefore
+is bounded on $\ell^2$ with $\norm{T}\le M$. Therefore
 $$
-\left|\sum_{j,k}K_{jk}a_jb_k\right|
-=|\langle a,Tb\rangle|
-\le M\|a\|_2\|b\|_2.
+\abs{\sum_{j,k}K_{jk}a_jb_k}
+=\abs{\langle a,Tb\rangle}
+\le M\norm{a}_2\norm{b}_2.
 $$
 
 :::
@@ -83,9 +83,9 @@ For $N\ge1$, let
 $$
 a_j=b_j=\begin{cases}N^{-1/2},&1\le j\le N,\\0,&j>N.\end{cases}
 $$
-Then $\|a\|_2=\|b\|_2=1$, while the bilinear form equals
+Then $\norm{a}_2=\norm{b}_2=1$, while the bilinear form equals
 $$
-S_N=\frac1N\sum_{j,k=1}^N(1+|j-k|)^\sigma
+S_N=\frac1N\sum_{j,k=1}^N(1+\abs{j-k})^\sigma
 =1+\frac2N\sum_{m=1}^{N-1}(N-m)(1+m)^\sigma.
 $$
 For $1\le m\le N/2$, one has $N-m\ge N/2$, hence

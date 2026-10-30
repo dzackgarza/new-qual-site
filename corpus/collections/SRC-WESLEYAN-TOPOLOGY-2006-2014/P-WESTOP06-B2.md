@@ -82,7 +82,7 @@ from $\operatorname{id}_T$ to a constant map with value $t_0\in T$. Since $T\hoo
 $$
 H:G\times I\to G
 $$
-with $H_0=\operatorname{id}_G$ and $H|_{T\times I}=C$.
+with $H_0=\operatorname{id}_G$ and $H\restrict_{T\times I}=C$.
 
 At time $1$, the map $H_1$ is constant on $T$, so it factors uniquely through the quotient:
 $$

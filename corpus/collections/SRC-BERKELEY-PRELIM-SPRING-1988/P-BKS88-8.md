@@ -58,7 +58,7 @@ and
 $$
 \frac{2\rho}{1-\rho^2}=\frac1s.
 $$
-For $|\rho|<1$, the geometric series for $(1-\rho e^{i\theta})^{-1}$ and $(1-\rho e^{-i\theta})^{-1}$ converge uniformly in $\theta$. Adding them gives the Poisson-kernel identity
+For $\abs{\rho}<1$, the geometric series for $(1-\rho e^{i\theta})^{-1}$ and $(1-\rho e^{-i\theta})^{-1}$ converge uniformly in $\theta$. Adding them gives the Poisson-kernel identity
 $$
 \frac{1-\rho^2}{1-2\rho\cos\theta+\rho^2}
 =1+2\sum_{k=1}^{\infty}\rho^k\cos k\theta.

@@ -35,7 +35,7 @@ g:[0,1]\to\RR
 $$
 such that
 $$
-g|_{[0,1)}=f.
+g\restrict_{[0,1)}=f.
 $$
 Then $f$ is uniformly continuous on $[0,1)$.
 
@@ -61,11 +61,11 @@ $$
 x,y\in[0,1],
 $$
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|g(x)-g(y)|<\varepsilon.
+\abs{g(x)-g(y)}<\varepsilon.
 $$
 In particular, the same implication holds for
 $$
@@ -110,25 +110,25 @@ m,n,
 $$
 one has
 $$
-\left|
+\abs{
 \left(1-\frac1m\right)
 -
 \left(1-\frac1n\right)
-\right|
+}
 =
-\left|
+\abs{
 \frac1m-\frac1n
-\right|
+}
 <
 \delta.
 $$
 Hence
 $$
-\left|
+\abs{
 f\left(1-\frac1m\right)
 -
 f\left(1-\frac1n\right)
-\right|
+}
 <
 \varepsilon.
 $$
@@ -181,11 +181,11 @@ $$
 $$
 such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{2}.
+\abs{f(x)-f(y)}<\frac{\varepsilon}{2}.
 $$
 Choose $N$ sufficiently large that
 $$
@@ -193,9 +193,9 @@ $$
 $$
 and
 $$
-\left|
+\abs{
 f\left(1-\frac1N\right)-L
-\right|
+}
 <
 \frac{\varepsilon}{2}.
 $$
@@ -205,9 +205,9 @@ $$
 $$
 then
 $$
-\left|
+\abs{
 x-\left(1-\frac1N\right)
-\right|
+}
 \le
 (1-x)+\frac1N
 <
@@ -215,24 +215,24 @@ x-\left(1-\frac1N\right)
 $$
 Therefore
 $$
-\left|
+\abs{
 f(x)-f\left(1-\frac1N\right)
-\right|
+}
 <
 \frac{\varepsilon}{2}.
 $$
 Hence
 $$
 \begin{aligned}
-|f(x)-L|
+\abs{f(x)-L}
 &\le
-\left|
+\abs{
 f(x)-f\left(1-\frac1N\right)
-\right|
+}
 +
-\left|
+\abs{
 f\left(1-\frac1N\right)-L
-\right|\\
+}\\
 &<
 \varepsilon.
 \end{aligned}

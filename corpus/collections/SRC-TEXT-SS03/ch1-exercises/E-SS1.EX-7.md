@@ -22,13 +22,13 @@ audit:
 (a) Let $z , w$ be two complex numbers such that $\overline { { z } } w \ne 1$ . Prove that
 
 $$
-\left| \frac {w - z}{1 - \overline {{w}} z} \right| <   1 \quad \text { if } | z | <   1 \text { and } | w | <   1,
+\abs{ \frac {w - z}{1 - \overline {{w}} z} } <   1 \quad \text { if } \abs{ z } <   1 \text { and } \abs{ w } <   1,
 $$
 
 and also that
 
 $$
-\left| \frac {w - z}{1 - \overline {{w}} z} \right| = 1 \quad \text { if } | z | = 1 \text { or } | w | = 1.
+\abs{ \frac {w - z}{1 - \overline {{w}} z} } = 1 \quad \text { if } \abs{ z } = 1 \text { or } \abs{ w } = 1.
 $$
 
 [Hint: Why can one assume that z is real?
@@ -52,7 +52,7 @@ satisfies the following conditions:
 
 (ii) F interchanges 0 and $w ,$ namely $F ( 0 ) = w$ and $F ( w ) = 0$
 
-(iii) $| F ( z ) | = 1 { \mathrm { ~ i f ~ } } | z | = 1 .$
+(iii) $\abs{ F ( z ) } = 1 { \mathrm { ~ i f ~ } } \abs{ z } = 1 .$
 
 (iv) $F : \DD \to \DD$ is bijective.
 [Hint: Calculate $F \circ F . ]$
@@ -82,11 +82,11 @@ Replacing $(z,w)$ by $(e^{i\theta}z,e^{i\theta}w)$ multiplies $w-z$ by $e^{i\the
 
 ::: {.pf-step #s1-2}
 
-For $r\ge0$, $\abs{1-\bar w r}^2-\abs{w-r}^2=(1 - r^2)(1 - |w|^2)$.
+For $r\ge0$, $\abs{1-\bar w r}^2-\abs{w-r}^2=(1 - r^2)(1 - \abs{w}^2)$.
 
 ::: pf-proof
 
-Expanding, $\abs{w-r}^2=(r - w)(r - \bar w)=r^2 - r(w + \bar w) + |w|^2$ and $\abs{1-\bar wr}^2=(1 - rw)(1 - r\bar w)=1 - r(w + \bar w) + r^2|w|^2$; subtract.
+Expanding, $\abs{w-r}^2=(r - w)(r - \bar w)=r^2 - r(w + \bar w) + \abs{w}^2$ and $\abs{1-\bar wr}^2=(1 - rw)(1 - r\bar w)=1 - r(w + \bar w) + r^2\abs{w}^2$; subtract.
 
 :::
 
@@ -139,7 +139,7 @@ Substitution gives (ii), and step [](#s1){.pf-ref} gives (iii).
 ::: pf-proof
 
 For $z\in\DD$,
-$$F(F(z)) = \frac{w - \frac{w - z}{1 - \bar w z}}{1 - \bar w \frac{w - z}{1 - \bar w z}} = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - |w|^2)}{1 - |w|^2} = z.$$
+$$F(F(z)) = \frac{w - \frac{w - z}{1 - \bar w z}}{1 - \bar w \frac{w - z}{1 - \bar w z}} = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - \abs{w}^2)}{1 - \abs{w}^2} = z.$$
 By step [](#s2-1){.pf-ref}, $F$ maps $\DD$ into itself, so $F$ is its own inverse on $\DD$.
 
 :::

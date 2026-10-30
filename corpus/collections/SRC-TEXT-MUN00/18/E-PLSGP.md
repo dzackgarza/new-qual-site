@@ -36,7 +36,7 @@ $$
 $$
 By epsilon-delta continuity at $x$, there is $\delta>0$ such that
 $$
-|t-x|<\delta\implies |f(t)-f(x)|<\varepsilon.
+\abs{t-x}<\delta\implies \abs{f(t)-f(x)}<\varepsilon.
 $$
 Thus
 $$

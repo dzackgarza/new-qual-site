@@ -247,7 +247,7 @@ discarded by the projection.
 By strangeness, the tangent line $T_PC$ is precisely a line through $A$.
 Since $T_PC$ is one-dimensional,
 $$
-d\pi_A|_{T_PC}=0.
+d\pi_A\restrict_{T_PC}=0.
 $$
 
 :::

@@ -19,7 +19,7 @@ audit:
 Write the following complex numbers in polar form:
 
 $$
-3 i , \qquad 1 - i , \qquad 2 + i , \qquad - 4 , \qquad 2 - i { \sqrt { 3 } } , \qquad { \frac { 2 - i } { 1 + 4 i } } , \qquad | 3 + i | .
+3 i , \qquad 1 - i , \qquad 2 + i , \qquad - 4 , \qquad 2 - i { \sqrt { 3 } } , \qquad { \frac { 2 - i } { 1 + 4 i } } , \qquad \abs{ 3 + i } .
 $$
 :::
 
@@ -139,7 +139,7 @@ $$
 $$
 The point lies in the fourth quadrant and
 $$
-\tan|\theta|
+\tan\abs{\theta}
 =
 \frac{\sqrt3}{2}.
 $$
@@ -217,7 +217,7 @@ $$
 
 Finally,
 $$
-|3+i|
+\abs{3+i}
 =
 \sqrt{10}
 =
@@ -229,7 +229,7 @@ $$
 
 One has
 $$
-|3+i|
+\abs{3+i}
 =
 \sqrt{3^2+1^2}
 =

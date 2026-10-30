@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Prove that for $n \geq 5$, the alternating group $A_n$ has no subgroup $H$ such that $|A_n : H| = n/2$.
+(a) Prove that for $n \geq 5$, the alternating group $A_n$ has no subgroup $H$ such that $\subgroupindex{A_n : H} = n/2$.
 Conclude that $A_n$ has no subgroup isomorphic to $S_{n-1}$.
 
 (b) Is the result of part (a) true when $n = 4$?
@@ -68,7 +68,7 @@ This is impossible. Hence $A_n$ has no subgroup of index $n/2$.
 
 Injectivity would imply
 $$
-|A_n|=\frac{n!}{2}\le \left(\frac n2\right)!.
+\cardinality{A_n}=\frac{n!}{2}\le \left(\frac n2\right)!.
 $$
 But for every even $n\ge6$,
 $$
@@ -88,7 +88,7 @@ Consequently $A_n$ has no subgroup isomorphic to $S_{n-1}$.
 
 A subgroup isomorphic to $S_{n-1}$ would have order $(n-1)!$, hence index
 $$
-\frac{|A_n|}{(n-1)!}=\frac{n!/2}{(n-1)!}=\frac n2.
+\frac{\cardinality{A_n}}{(n-1)!}=\frac{n!/2}{(n-1)!}=\frac n2.
 $$
 This contradicts step [](#s3){.pf-ref}.
 
@@ -106,7 +106,7 @@ A subgroup $H\le A_4$ of index $2$ would be normal and have order $6$. If $H$ co
 $$
 A_4^{\mathrm{ab}}\cong A_4/V_4\cong C_3,
 $$
-which has no quotient of order $2$. Thus no index-two subgroup exists. Since $|S_3|=6$, an embedded $S_3$ would have index $2$, so it cannot exist either.
+which has no quotient of order $2$. Thus no index-two subgroup exists. Since $\cardinality{S_3}=6$, an embedded $S_3$ would have index $2$, so it cannot exist either.
 
 :::
 

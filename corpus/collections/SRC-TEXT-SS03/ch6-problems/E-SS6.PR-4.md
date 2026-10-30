@@ -32,7 +32,7 @@ where $B _ { k } = B _ { k } ( 0 )$ are the Bernoulli numbers. For the definitio
 ::: {.solution}
 Let $B_m(x)$ be the Bernoulli polynomials, defined by
 $$
-\frac{z e^{xz}}{e^z-1}=\sum_{m=0}^\infty B_m(x)\frac{z^m}{m!},\qquad |z|<2\pi,
+\frac{z e^{xz}}{e^z-1}=\sum_{m=0}^\infty B_m(x)\frac{z^m}{m!},\qquad \abs{z}<2\pi,
 $$
 and write $B_m=B_m(0)$. The generating function gives $B_0(x)=1$ and $B_1(x)=x-\frac12$. The functions $Q_k$ are those of [[E-SS6.PR-3|the previous problem]].
 
@@ -140,7 +140,7 @@ $$
 ::: pf-proof
 By step [](#even-coefficients){.pf-ref},
 $$
-\sum_{n\ne0}\left|\widehat B_{2k}(n)\right|
+\sum_{n\ne0}\abs{\widehat B_{2k}(n)}
 =\frac{2(2k)!}{(2\pi)^{2k}}\sum_{n=1}^\infty\frac{1}{n^{2k}}<\infty
 $$
 because $k\ge1$. Hence the Fourier series converges absolutely and uniformly to a continuous $1$-periodic function $F$. The same series converges to $B_{2k}$ in $L^2([0,1])$, so $F=B_{2k}$ almost everywhere; both functions are continuous, so $F=B_{2k}$ everywhere. The coefficient at $n=0$ is $\int_0^1B_{2k}=0$ by step [](#bernoulli-identities){.pf-ref}. Pair the terms $n$ and $-n$ and use $\widehat B_{2k}(-n)=\widehat B_{2k}(n)$ to obtain the cosine series.

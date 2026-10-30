@@ -82,8 +82,8 @@ $$
 $$
 Letting $R\to\infty$, since $u(R)\to0$,
 $$
-\left|\int_1^\infty x^{-3/2}e^{inx}\,dx\right|
-\le \frac1n\left(1+\int_1^\infty|u'(x)|\,dx\right).
+\abs{\int_1^\infty x^{-3/2}e^{inx}\,dx}
+\le \frac1n\left(1+\int_1^\infty\abs{u'(x)}\,dx\right).
 $$
 The right side tends to $0$. Thus
 $$

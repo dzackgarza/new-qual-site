@@ -42,7 +42,7 @@ n_7\equiv1\pmod7,
 \qquad
 n_7\mid3.
 $$
-The only possibility is $n_7=1$. Hence $N\trianglelefteq G$, and since $|N|=7$, we have
+The only possibility is $n_7=1$. Hence $N\trianglelefteq G$, and since $\cardinality{N}=7$, we have
 $$
 N\cong C_7.
 $$
@@ -64,9 +64,9 @@ $$
 
 ::: pf-proof
 
-Since $|H|=3$, the group $H$ is cyclic. The intersection $N\cap H$ has order dividing both $7$ and $3$, hence is trivial. Therefore
+Since $\cardinality{H}=3$, the group $H$ is cyclic. The intersection $N\cap H$ has order dividing both $7$ and $3$, hence is trivial. Therefore
 $$
-|NH|=\frac{|N||H|}{|N\cap H|}=21=|G|,
+\cardinality{NH}=\frac{\cardinality{N}\cardinality{H}}{\cardinality{N\cap H}}=21=\cardinality{G},
 $$
 so $NH=G$.
 

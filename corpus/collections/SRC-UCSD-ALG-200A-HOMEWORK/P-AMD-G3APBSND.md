@@ -102,20 +102,20 @@ m=[G:N_G(H)],
 $$
 then
 $$
-\left|\bigcup_{g\in G}gHg^{-1}\right|
-\le 1+m(|H|-1).
+\cardinality{\bigcup_{g\in G}gHg^{-1}}
+\le 1+m(\cardinality{H}-1).
 $$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, there are exactly $m$ distinct conjugates of $H$.
-Every conjugate has cardinality $|H|$, and every conjugate contains the identity element $e$.
+Every conjugate has cardinality $\cardinality{H}$, and every conjugate contains the identity element $e$.
 
-After counting $e$ once, each of the $m$ conjugates can contribute at most $|H|-1$ further elements.
+After counting $e$ once, each of the $m$ conjugates can contribute at most $\cardinality{H}-1$ further elements.
 Hence
 $$
-\left|\bigcup_{g\in G}gHg^{-1}\right|
-\le 1+m(|H|-1).
+\cardinality{\bigcup_{g\in G}gHg^{-1}}
+\le 1+m(\cardinality{H}-1).
 $$
 
 :::
@@ -148,16 +148,16 @@ Thus $m$ divides, and in particular is at most, $[G:H]$.
 
 ::: {.pf-step #s5}
 
-The union of the conjugates of $H$ has strictly fewer than $|G|$ elements.
+The union of the conjugates of $H$ has strictly fewer than $\cardinality{G}$ elements.
 
 ::: pf-proof
 
 By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \begin{aligned}
-\left|\bigcup_{g\in G}gHg^{-1}\right|
-&\le 1+[G:H](|H|-1)\\
-&=1+|G|-[G:H].
+\cardinality{\bigcup_{g\in G}gHg^{-1}}
+&\le 1+[G:H](\cardinality{H}-1)\\
+&=1+\cardinality{G}-[G:H].
 \end{aligned}
 $$
 Since $H$ is proper,
@@ -166,11 +166,11 @@ $$
 $$
 Hence
 $$
-1+|G|-[G:H]\le |G|-1<|G|.
+1+\cardinality{G}-[G:H]\le \cardinality{G}-1<\cardinality{G}.
 $$
 Therefore
 $$
-\left|\bigcup_{g\in G}gHg^{-1}\right|<|G|.
+\cardinality{\bigcup_{g\in G}gHg^{-1}}<\cardinality{G}.
 $$
 
 :::

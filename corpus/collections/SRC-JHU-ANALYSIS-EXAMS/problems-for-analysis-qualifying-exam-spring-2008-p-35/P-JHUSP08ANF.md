@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-6) Let $D = \{ z \in \CC : | z | < 1 \}$ and P and Q be distinct points in D. Prove the following statement: If f and g are conformal (or equivalently biholomorphic) self-maps of D, $f ( P ) = g ( P )$ and $f ( Q ) = g ( Q )$ , then $f \equiv g$
+6) Let $D = \{ z \in \CC : \abs{ z } < 1 \}$ and P and Q be distinct points in D. Prove the following statement: If f and g are conformal (or equivalently biholomorphic) self-maps of D, $f ( P ) = g ( P )$ and $f ( Q ) = g ( Q )$ , then $f \equiv g$
 :::
 
 ::: {.solution}
@@ -48,8 +48,8 @@ $$
 $$
 Direct substitution gives the inverse identities, and
 $$
-1-|\phi(z)|^2=
-\frac{(1-|P|^2)(1-|z|^2)}{|1-\overline Pz|^2}>0
+1-\abs{\phi(z)}^2=
+\frac{(1-\abs{P}^2)(1-\abs{z}^2)}{\abs{1-\overline Pz}^2}>0
 \quad(z\in D).
 $$
 The corresponding identity for $\phi^{-1}$ shows that
@@ -67,7 +67,7 @@ The normalized map is the identity.
 
 ::: pf-proof
 
-Schwarz's lemma gives $|H(w)|\leq|w|$ [@SS03]. The
+Schwarz's lemma gives $\abs{H(w)}\leq\abs{w}$ [@SS03]. The
 quotient $H(w)/w$ extends holomorphically at zero by
 the Taylor expansion and is bounded by one. Its value
 at $q$ is $H(q)/q=1$. The maximum modulus principle

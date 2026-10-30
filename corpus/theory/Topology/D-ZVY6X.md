@@ -22,10 +22,10 @@ $$
 H_n(U_i, U_i\sm\theset{x_i})\cong H_n(S^n, S^n\sm\theset{x_i})\cong H_n(S^n)\cong\ZZ, \qquad H_n(V, V\sm\theset{y})\cong H_n(S^n, S^n\sm\theset{y})\cong H_n(S^n)\cong\ZZ
 $$
 given by excision and the long exact sequence of the pair, the induced homomorphism $f_{i*}$ is multiplication by an integer.
-This integer is the \dfn{local degree} $\deg f\vert_{x_i}$ of $f$ at $x_i$ [@Hat02].
+This integer is the \dfn{local degree} $\deg f\restrict_{x_i}$ of $f$ at $x_i$ [@Hat02].
 :::
 
 ::: {.proposition}
 Let $n\geq 1$, let $f\colon S^n\to S^n$ be a continuous map, and let $y\in S^n$ be a point with finite preimage $\inverseof{f}(y) = \theset{x_1, \ldots, x_m}$.
-Then $\deg f = \sum_{i=1}^m \deg f\vert_{x_i}$, where $\deg f$ is the [[D-XC53X|degree]] of $f$.
+Then $\deg f = \sum_{i=1}^m \deg f\restrict_{x_i}$, where $\deg f$ is the [[D-XC53X|degree]] of $f$.
 :::

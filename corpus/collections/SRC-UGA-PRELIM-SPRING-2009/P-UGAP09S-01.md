@@ -28,7 +28,7 @@ The function $f:\RR\to\RR$ is uniformly continuous if
 $$
 \boxed{
 \forall\varepsilon>0\ \exists\delta>0\ \forall x,y\in\RR,\quad
-|x-y|<\delta\Longrightarrow |f(x)-f(y)|<\varepsilon }.
+\abs{x-y}<\delta\Longrightarrow \abs{f(x)-f(y)}<\varepsilon }.
 $$
 
 
@@ -48,9 +48,9 @@ $$
 \boxed{
 \exists\varepsilon_0>0\ \forall\delta>0\ \exists x,y\in\RR
 \text{ such that }
-|x-y|<\delta
+\abs{x-y}<\delta
 \text{ and }
-|f(x)-f(y)|\ge\varepsilon_0 }.
+\abs{f(x)-f(y)}\ge\varepsilon_0 }.
 $$
 
 
@@ -60,11 +60,11 @@ This is the logical negation of the quantifier statement in step [](#s1-1){.pf-r
 the existential and universal quantifiers reverse, the implication fails by
 having its hypothesis true and conclusion false, and
 $$
-|f(x)-f(y)|<\varepsilon_0
+\abs{f(x)-f(y)}<\varepsilon_0
 $$
 becomes
 $$
-|f(x)-f(y)|\ge\varepsilon_0.
+\abs{f(x)-f(y)}\ge\varepsilon_0.
 $$
 The displayed statement itself uses no occurrence of the word prohibited by
 the problem.

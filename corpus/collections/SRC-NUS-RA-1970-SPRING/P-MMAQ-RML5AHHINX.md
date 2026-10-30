@@ -39,7 +39,7 @@ Proof of (a).
 ::: pf-proof
 
 ::: pf-step
-Define $g(x) \definedas f(x) - 2x$; then $g'(-1) = f'(-1) - 2 < 0$ and $g'(1) = f'(1) - 2 > 0$.
+Define $g(x) \coloneqq f(x) - 2x$; then $g'(-1) = f'(-1) - 2 < 0$ and $g'(1) = f'(1) - 2 > 0$.
 
 ::: pf-proof
 Differentiate $g$; the inequalities are the hypotheses.

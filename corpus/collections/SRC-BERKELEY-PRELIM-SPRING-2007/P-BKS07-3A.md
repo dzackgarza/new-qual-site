@@ -14,7 +14,7 @@ review: draft
 Suppose $f : \RR \to \RR$ is real analytic and periodic with period 2π. Prove that $f$ has an analytic continuation F defined on a strip
 
 $$
-S = \{ x + i y \in \CC ~ : ~ | y | < \rho \}
+S = \{ x + i y \in \CC ~ : ~ \abs{ y } < \rho \}
 $$
 
 with $\rho > 0$ , and that $F ( z + 2 \pi ) = F ( z )$ for $z \in S$

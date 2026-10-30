@@ -131,7 +131,7 @@ The loop $\gamma$ is homotopic rel basepoint to a product of loops each lying en
 
 Let
 $$
-\gamma_j=\gamma|_{[t_{j-1},t_j]}
+\gamma_j=\gamma\restrict_{[t_{j-1},t_j]}
 $$
 with the usual reparametrization to $[0,1]$, and define the based loop
 $$

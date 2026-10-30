@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-2B
 kind: problem
-title: Maximum of $|f'(1)|$ for $f$ holomorphic with $|f|\le1$ on $|z|=2$
+title: Maximum of $\abs{f'(1)}$ for $f$ holomorphic with $\abs{f}\le1$ on $\abs{z}=2$
 classification:
   areas: [prelim]
   topics: []

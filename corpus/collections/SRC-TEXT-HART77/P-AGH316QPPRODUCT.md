@@ -185,7 +185,7 @@ $$
 is an open neighborhood of $z$.
 On $W$, the pair $(f,g)$ lands in the affine product $U\times V$ and is a morphism by the universal property proved in [[P-AGH315AFFPRODUCT]].
 The identification of that affine product with the corresponding Segre open is an isomorphism by the row-and-column formulas of step [](#s1){.pf-ref}.
-Thus $h|_W$ is a morphism.
+Thus $h\restrict_W$ is a morphism.
 Since such neighborhoods cover $Z$, $h$ is a morphism globally.
 
 By construction

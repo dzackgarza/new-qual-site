@@ -64,7 +64,7 @@ $$
 $$
 such that
 $$
-|\mu_i-\lambda_i|<\varepsilon.
+\abs{\mu_i-\lambda_i}<\varepsilon.
 $$
 
 

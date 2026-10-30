@@ -28,24 +28,24 @@ audit:
 ::: {.solution}
 The proof of Theorem 4.2 for polygonal regions uses only two geometric facts about the target boundary: the region is bounded, and for every boundary point $w_0$ there is $r_0>0$ such that for $0<r<r_0$ the intersection
 $$
-\Omega\cap \{w:|w-w_0|=r\}
+\Omega\cap \{w:\abs{w-w_0}=r\}
 $$
 is a single arc. We verify that a piecewise-smooth Jordan boundary has the same local property, and then the proof of Theorem 4.2 applies verbatim.
 
 Let $w_0=\gamma(t_0)$. At a smooth point, $\gamma'(t_0)\ne0$ and
 $$
-\gamma(t)=w_0+\gamma'(t_0)(t-t_0)+o(|t-t_0|).
+\gamma(t)=w_0+\gamma'(t_0)(t-t_0)+o(\abs{t-t_0}).
 $$
 After a rotation and translation, the curve is therefore locally the graph of a continuous function over its tangent line, with the two sides of the Jordan curve lying on opposite sides. Hence every sufficiently small circle centered at $w_0$ meets $\gamma$ in exactly two nearby points, and its intersection with $\Omega$ is the single open arc between them. At a corner the same conclusion follows from the two one-sided nonzero tangent vectors. Since the boundary is piecewise smooth and simple, this gives the required local-arc property at every boundary point.
 
 Now repeat the proof of Theorem 4.2. For $\zeta_0\in\partial\DD$, let $C_r$ be the circle centered at $\zeta_0$ of radius $r$. If $z_r,z_r'\in C_r\cap\DD$ are joined by the arc of $C_r\cap\DD$, then Cauchy--Schwarz gives
 $$
-|F(z_r)-F(z_r')|^2
-\le 2\pi r\int_{C_r\cap\DD}|F'(z)|^2\,|dz|.
+\abs{F(z_r)-F(z_r')}^2
+\le 2\pi r\int_{C_r\cap\DD}\abs{F'(z)}^2\,\abs{dz}.
 $$
 If the left side were bounded below by a positive constant for every sufficiently small $r$, integration in $dr/r$ would give an infinite lower bound, while
 $$
-\iint_{\DD}|F'(z)|^2\,dx\,dy
+\iint_{\DD}\abs{F'(z)}^2\,dx\,dy
 =\operatorname{Area}(\Omega)<\infty,
 $$
 a contradiction. Thus there is a sequence $r_n\downarrow0$ along which the oscillation of $F$ on the relevant circular arc tends to zero.

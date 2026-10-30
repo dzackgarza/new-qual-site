@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S14-03
 kind: problem
-title: $\int_{|z|=r}\frac{dz}{(z-a)(z-b)}$ for $|a|<r<|b|$ without Cauchy's theorem
+title: $\int_{\abs{z}=r}\frac{dz}{(z-a)(z-b)}$ for $\abs{a}<r<\abs{b}$ without Cauchy's theorem
 classification:
   areas:
   - complex-analysis

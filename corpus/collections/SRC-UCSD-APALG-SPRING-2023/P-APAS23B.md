@@ -57,13 +57,13 @@ $$
 $$
 x=\sum_{i=1}^n c_i u_i,
 \qquad
-\sum_{i=1}^n|c_i|^2=1.
+\sum_{i=1}^n\abs{c_i}^2=1.
 $$
 Then
 $$
 x^HAx
 =
-\sum_{i=1}^n\lambda_i|c_i|^2.
+\sum_{i=1}^n\lambda_i\abs{c_i}^2.
 $$
 This is a convex combination of the real numbers $\lambda_1,\ldots,\lambda_n$, hence
 $$

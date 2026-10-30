@@ -73,7 +73,7 @@ Because $k$ is algebraically closed, it is infinite. A finite union of proper li
 $$
 F\in I(Z)_d
 $$
-outside all these evaluation kernels. Then $F|_Z=0$ and $F(p_i)\ne0$ for every $i$.
+outside all these evaluation kernels. Then $F\restrict_Z=0$ and $F(p_i)\ne0$ for every $i$.
 
 :::
 

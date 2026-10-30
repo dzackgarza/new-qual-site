@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Suppose that $\{f_n\}_{n=1}^{\infty} \subset L^3(\mu)$ such that $\lim_{n \to \infty} \int_X f_n \varphi\,d\mu$ exists in $\CC$ for all $\varphi \in L^{3/2}(\mu)$.
-Show $M := \sup_n \|f_n\|_{L^3(\mu)} < \infty$.
+Show $M := \sup_n \norm{f_n}_{L^3(\mu)} < \infty$.
 :::
 
 ::: {.solution}
@@ -47,11 +47,11 @@ definition.
 
 ::: {.pf-step #s2}
 
-Each $\Lambda_n$ is bounded, with $\|\Lambda_n\| = \|f_n\|_{L^3}$.
+Each $\Lambda_n$ is bounded, with $\norm{\Lambda_n} = \norm{f_n}_{L^3}$.
 
 ::: pf-proof
 
-by Hölder's inequality, $|\Lambda_n(\varphi)| \le \|f_n\|_{L^3}\|\varphi\|_{L^{3/2}}$, and the dual of $L^{3/2}$ is $L^3$ (since $3/2$ and $3$ are conjugate exponents), so $\|\Lambda_n\| = \|f_n\|_{L^3}$.
+by Hölder's inequality, $\abs{\Lambda_n(\varphi)} \le \norm{f_n}_{L^3}\norm{\varphi}_{L^{3/2}}$, and the dual of $L^{3/2}$ is $L^3$ (since $3/2$ and $3$ are conjugate exponents), so $\norm{\Lambda_n} = \norm{f_n}_{L^3}$.
 
 :::
 
@@ -59,7 +59,7 @@ by Hölder's inequality, $|\Lambda_n(\varphi)| \le \|f_n\|_{L^3}\|\varphi\|_{L^{
 
 ::: {.pf-step #s3}
 
-For each $\varphi \in L^{3/2}$, $\sup_n |\Lambda_n(\varphi)| < \infty$.
+For each $\varphi \in L^{3/2}$, $\sup_n \abs{\Lambda_n(\varphi)} < \infty$.
 
 ::: pf-proof
 
@@ -71,7 +71,7 @@ the limit $\lim_n \Lambda_n(\varphi)$ exists (by hypothesis), so the sequence $\
 
 ::: {.pf-step #s4}
 
-By the uniform boundedness principle (Banach–Steinhaus), $\sup_n \|\Lambda_n\| < \infty$.
+By the uniform boundedness principle (Banach–Steinhaus), $\sup_n \norm{\Lambda_n} < \infty$.
 
 ::: pf-proof
 
@@ -83,7 +83,7 @@ Step [](#s3){.pf-ref} and the uniform boundedness principle applied to the famil
 
 ::: {.pf-step #s5}
 
-Hence $M = \sup_n \|f_n\|_{L^3} = \sup_n \|\Lambda_n\| < \infty$.
+Hence $M = \sup_n \norm{f_n}_{L^3} = \sup_n \norm{\Lambda_n} < \infty$.
 
 ::: pf-proof
 

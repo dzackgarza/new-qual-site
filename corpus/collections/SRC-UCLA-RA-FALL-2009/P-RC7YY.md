@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-RC7YY
 kind: problem
-title: Unitary operators, invertibility of $S-\lambda I$ for $|\lambda|<1$, and the
-  positive harmonic function $\operatorname{Re}\langle(S+\lambda I)(S-\lambda I)^{-1}v,v\rangle$
+title: Unitary operators, invertibility of $S-\lambda I$ for $\abs{\lambda}<1$, and the positive harmonic function $\operatorname{Re}\langle(S+\lambda I)(S-\lambda I)^{-1}v,v\rangle$
 classification:
   areas:
   - real-analysis
@@ -37,9 +36,9 @@ audit:
 a. Define *unitary operator* on a complex Hilbert space.
 
 b. Let $S$ be a unitary operator on a complex Hilbert space.
-Prove that for every complex number $|\lambda|<1$ the operator $S-\lambda I$ is invertible.
+Prove that for every complex number $\abs{\lambda}<1$ the operator $S-\lambda I$ is invertible.
 
-c. For a fixed vector $v$ in the Hilbert space and all $|\lambda|<1$, define $$h(\lambda) = \langle (S+\lambda I)(S-\lambda I)^{-1}v, v\rangle.$$ Show $\text{Re}(h)$ is a positive harmonic function (you may not use the spectral theorem).
+c. For a fixed vector $v$ in the Hilbert space and all $\abs{\lambda}<1$, define $$h(\lambda) = \langle (S+\lambda I)(S-\lambda I)^{-1}v, v\rangle.$$ Show $\text{Re}(h)$ is a positive harmonic function (you may not use the spectral theorem).
 :::
 
 ::: {.solution}
@@ -63,7 +62,7 @@ $$
 The first condition is a standard definition.
 It implies
 $$
-\|Sx\|=\|x\|,
+\norm{Sx}=\norm{x},
 $$
 so $S$ is an isometry.
 Surjectivity then makes it bijective, and its inverse is its adjoint:
@@ -79,7 +78,7 @@ Conversely, those two identities imply both inner-product preservation and inver
 
 ::: {.pf-step #s2}
 
-If $|\lambda|<1$, then
+If $\abs{\lambda}<1$, then
 $$
 I-\lambda S^{-1}
 $$
@@ -94,11 +93,11 @@ where the series converges in operator norm.
 
 Since $S$ is unitary,
 $$
-\|S^{-1}\|=1.
+\norm{S^{-1}}=1.
 $$
 Hence
 $$
-\|\lambda S^{-1}\|=|\lambda|<1.
+\norm{\lambda S^{-1}}=\abs{\lambda}<1.
 $$
 The Neumann series theorem therefore gives
 $$
@@ -113,7 +112,7 @@ $$
 
 ::: {.pf-step #s3}
 
-For every $|\lambda|<1$, the operator $S-\lambda I$ is invertible.
+For every $\abs{\lambda}<1$, the operator $S-\lambda I$ is invertible.
 
 ::: pf-proof
 
@@ -152,13 +151,13 @@ $$
 $$
 with convergence in operator norm uniformly on every closed disk
 $$
-|\lambda|\le r<1.
+\abs{\lambda}\le r<1.
 $$
 Thus
 $$
 \lambda\longmapsto(S-\lambda I)^{-1}
 $$
-is an operator-valued holomorphic function on $|\lambda|<1$.
+is an operator-valued holomorphic function on $\abs{\lambda}<1$.
 Multiplication by $S+\lambda I$, application to the fixed vector $v$, and pairing with $v$ preserve holomorphy.
 Hence $h$ is holomorphic.
 
@@ -168,14 +167,14 @@ Hence $h$ is holomorphic.
 
 ::: {.pf-step #s5}
 
-For $|\lambda|<1$, let
+For $\abs{\lambda}<1$, let
 $$
 w=(S-\lambda I)^{-1}v.
 $$
 Then
 $$
 \operatorname{Re}h(\lambda)
-=(1-|\lambda|^2)\|w\|^2.
+=(1-\abs{\lambda}^2)\norm{w}^2.
 $$
 
 ::: pf-proof
@@ -193,7 +192,7 @@ Using the convention that the inner product is linear in its first variable, exp
 $$
 \begin{aligned}
 h(\lambda)
-&=\|Sw\|^2-|\lambda|^2\|w\|^2
+&=\norm{Sw}^2-\abs{\lambda}^2\norm{w}^2
 -\overline\lambda\langle Sw,w\rangle
 +\lambda\langle w,Sw\rangle.
 \end{aligned}
@@ -207,16 +206,16 @@ the last two terms have purely imaginary sum.
 Therefore
 $$
 \operatorname{Re}h(\lambda)
-=\|Sw\|^2-|\lambda|^2\|w\|^2.
+=\norm{Sw}^2-\abs{\lambda}^2\norm{w}^2.
 $$
 Unitarity gives
 $$
-\|Sw\|=\|w\|,
+\norm{Sw}=\norm{w},
 $$
 so
 $$
 \operatorname{Re}h(\lambda)
-=(1-|\lambda|^2)\|w\|^2.
+=(1-\abs{\lambda}^2)\norm{w}^2.
 $$
 
 :::
@@ -236,10 +235,10 @@ $$
 $$
 is harmonic.
 
-By step [](#s5){.pf-ref} and $|\lambda|<1$,
+By step [](#s5){.pf-ref} and $\abs{\lambda}<1$,
 $$
 \operatorname{Re}h(\lambda)
-=(1-|\lambda|^2)\|(S-\lambda I)^{-1}v\|^2
+=(1-\abs{\lambda}^2)\norm{(S-\lambda I)^{-1}v}^2
 \ge0.
 $$
 If $v\ne0$, invertibility of $S-\lambda I$ implies

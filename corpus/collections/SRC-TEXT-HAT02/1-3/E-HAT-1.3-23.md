@@ -136,7 +136,7 @@ By step [](#s2){.pf-ref} this forces $g^{-1}h=e$, hence $g=h$.
 
 The orbit map restricts to a homeomorphism
 $$
-q|_V:V\longrightarrow q(V).
+q\restrict_V:V\longrightarrow q(V).
 $$
 Moreover,
 $$
@@ -147,14 +147,14 @@ $$
 
 The second equality follows from the definition of an orbit.
 By step [](#s3){.pf-ref} the union is disjoint.
-The map $q|_V$ is injective because two points of $V$ in the same orbit would lie in $V\cap gV$ for some $g$, forcing $g=e$.
+The map $q\restrict_V$ is injective because two points of $V$ in the same orbit would lie in $V\cap gV$ for some $g$, forcing $g=e$.
 It is surjective onto $q(V)$ by definition.
 The quotient map $q$ is open because
 $$
 q^{-1}(q(W))=\bigcup_{g\in G}gW
 $$
 is open for every open $W\subseteq X$.
-Hence $q|_V$ is an open continuous bijection, thus a homeomorphism.
+Hence $q\restrict_V$ is an open continuous bijection, thus a homeomorphism.
 
 :::
 

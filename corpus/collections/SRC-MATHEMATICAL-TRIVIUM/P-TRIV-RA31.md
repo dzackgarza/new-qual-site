@@ -36,9 +36,9 @@ $$
 $$
 so the integrand is bounded. For large $x$,
 $$
-\left|
+\abs{
 e^{-ax}\frac{\sin(xy)}x
-\right|
+}
 \leq
 \frac{e^{-ax}}x,
 $$

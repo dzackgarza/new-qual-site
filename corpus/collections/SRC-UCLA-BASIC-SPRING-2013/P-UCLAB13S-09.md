@@ -40,7 +40,7 @@ Regard the real matrix $A$ as a complex matrix acting on $\CC^n$.
 
 Every complex eigenvalue $\lambda$ of $A$ satisfies
 $$
-|\lambda|=1.
+\abs{\lambda}=1.
 $$
 
 
@@ -60,23 +60,23 @@ A^*A=A^TA=I.
 $$
 Thus $A$ preserves the Hermitian norm on $\CC^n$:
 $$
-\|Az\|=\|z\|.
+\norm{Az}=\norm{z}.
 $$
 But
 $$
-\|Az\|
+\norm{Az}
 =
-\|\lambda z\|
+\norm{\lambda z}
 =
-|\lambda|\,\|z\|.
+\abs{\lambda}\,\norm{z}.
 $$
 Since
 $$
-\|z\|>0,
+\norm{z}>0,
 $$
 one gets
 $$
-|\lambda|=1.
+\abs{\lambda}=1.
 $$
 
 :::
@@ -221,7 +221,7 @@ Hence $P$ is a two-dimensional invariant plane.
 
 The restriction
 $$
-A|_P
+A\restrict_P
 $$
 is an orthogonal transformation of the real inner-product plane $P$ with determinant $1$.
 
@@ -231,7 +231,7 @@ is an orthogonal transformation of the real inner-product plane $P$ with determi
 Since $A$ is orthogonal on $\RR^n$, its restriction to any invariant real subspace preserves the inner product.
 Thus
 $$
-A|_P
+A\restrict_P
 $$
 is orthogonal.
 
@@ -252,7 +252,7 @@ $$
 
 ::: {.pf-step #s1-7}
 
-There is an orthonormal basis of $P$ in which the matrix of $A|_P$ is
+There is an orthonormal basis of $P$ in which the matrix of $A\restrict_P$ is
 $$
 \boxed{
 \begin{pmatrix}
@@ -269,7 +269,7 @@ Choose any unit vector
 $$
 e_1\in P.
 $$
-Because $A|_P$ is orientation-preserving and orthogonal by step [](#s1-6){.pf-ref}, it is a rotation of the Euclidean plane.
+Because $A\restrict_P$ is orientation-preserving and orthogonal by step [](#s1-6){.pf-ref}, it is a rotation of the Euclidean plane.
 Choose the unit vector $e_2$ so that $(e_1,e_2)$ is positively oriented.
 Then for some angle $\theta$,
 $$

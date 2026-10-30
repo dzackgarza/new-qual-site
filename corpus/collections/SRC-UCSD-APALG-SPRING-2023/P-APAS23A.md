@@ -30,7 +30,7 @@ A
 $$
 with $M \in M_{n-1}$.
 
-(ii) Hence prove that the angle $\theta$ between $x$ and $y$ satisfies $\sec \theta = \|y\|_2$.
+(ii) Hence prove that the angle $\theta$ between $x$ and $y$ satisfies $\sec \theta = \norm{y}_2$.
 :::
 
 
@@ -89,14 +89,14 @@ $$
 
 (ii) For nonzero complex vectors, define the acute angle $\theta$ by
 $$
-\cos\theta=\frac{|y^Hx|}{\|y\|_2\|x\|_2}.
+\cos\theta=\frac{\abs{y^Hx}}{\norm{y}_2\norm{x}_2}.
 $$
-Here $\|x\|_2=1$ and $y^Hx=1$, so
+Here $\norm{x}_2=1$ and $y^Hx=1$, so
 $$
-\cos\theta=\frac1{\|y\|_2}.
+\cos\theta=\frac1{\norm{y}_2}.
 $$
 Hence
 $$
-\boxed{\sec\theta=\|y\|_2}.
+\boxed{\sec\theta=\norm{y}_2}.
 $$
 :::

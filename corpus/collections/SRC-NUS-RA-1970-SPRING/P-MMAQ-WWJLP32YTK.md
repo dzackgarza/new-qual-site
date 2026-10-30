@@ -37,7 +37,7 @@ Prove or disprove each of the following statements.
 ::: pf-proof
 
 ::: {.pf-step #lusin-theorem-application}
-For every $\varepsilon > 0$ there is a compact $K \subseteq [0,1]$ with $m([0,1] \setminus K) < \varepsilon$ and $f|_K$ continuous relative to $K$.
+For every $\varepsilon > 0$ there is a compact $K \subseteq [0,1]$ with $m([0,1] \setminus K) < \varepsilon$ and $f\restrict_K$ continuous relative to $K$.
 
 ::: pf-proof
 This is Lusin's theorem for the real-valued measurable function $f$ on the set $[0,1]$ of finite measure.

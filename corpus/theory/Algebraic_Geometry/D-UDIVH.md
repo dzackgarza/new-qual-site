@@ -38,7 +38,7 @@ For every open set $U\subseteq X$ and $s\in\mcf(U)$, the subset $\supp(s)$ is cl
 :::
 
 ::: {.proof}
-If $s_x=0$, the definition of a [[D-0QSI0|germ]] gives an open neighborhood $x\in V\subseteq U$ with $s|_V=0$.
+If $s_x=0$, the definition of a [[D-0QSI0|germ]] gives an open neighborhood $x\in V\subseteq U$ with $s\restrict_V=0$.
 Every point of $V$ therefore lies outside $\supp(s)$.
 Thus $U\setminus\supp(s)$ is open.
 :::
@@ -60,7 +60,7 @@ For the open inclusion $j:\{\eta\}\hookrightarrow X$, this sheaf is the extensio
 ::: {.proposition}
 Let $X$ be a scheme and $\mcf$ a [[D-QNTZY|quasi-coherent]] $\OO_X$-module of finite type.
 Then $\supp(\mcf)$ is closed.
-For an affine open $U=\Spec A$ with $\mcf|_U\cong\widetilde M$,
+For an affine open $U=\Spec A$ with $\mcf\restrict_U\cong\widetilde M$,
 $$
 \supp(\mcf)\cap U=V(\Ann_A M).
 $$

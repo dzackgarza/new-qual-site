@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Show that for any $p > 1$, there is a constant $C_p < \infty$ such that
 $$
-\sum_{k=-\infty}^{\infty} |\hat{f}(k)| \le \|f\|_{L^1} + C_p \|f'\|_{L^p}
+\sum_{k=-\infty}^{\infty} \abs{\hat{f}(k)} \le \norm{f}_{L^1} + C_p \norm{f'}_{L^p}
 \quad\text{for each } f \in C^1(\circlegroup).
 $$
 :::
@@ -44,9 +44,9 @@ Separate the zero Fourier mode.
 
 For $k=0$,
 $$
-|\widehat f(0)|
-=\left|\int_{\circlegroup}f(x)\,dx\right|
-\le \|f\|_{L^1}.
+\abs{\widehat f(0)}
+=\abs{\int_{\circlegroup}f(x)\,dx}
+\le \norm{f}_{L^1}.
 $$
 Thus it remains to control the sum over $k\ne0$.
 
@@ -67,14 +67,14 @@ $$
 $$
 Hence
 $$
-|\widehat f(k)|
-\le \frac1{2\pi|k|}\,|\widehat{f'}(k)|.
+\abs{\widehat f(k)}
+\le \frac1{2\pi\abs{k}}\,\abs{\widehat{f'}(k)}.
 $$
 Therefore
 $$
-\sum_{k\ne0}|\widehat f(k)|
+\sum_{k\ne0}\abs{\widehat f(k)}
 \le \frac1{2\pi}
-\sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}.
+\sum_{k\ne0}\frac{\abs{\widehat{f'}(k)}}{\abs{k}}.
 $$
 
 :::
@@ -89,20 +89,20 @@ Treat the range $1<p\le2$.
 
 Let $p'=p/(p-1)$. By Hölder's inequality for sequences,
 $$
-\sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}
+\sum_{k\ne0}\frac{\abs{\widehat{f'}(k)}}{\abs{k}}
 \le
-\left(\sum_{k\ne0}|k|^{-p}\right)^{1/p}
-\left(\sum_{k\ne0}|\widehat{f'}(k)|^{p'}\right)^{1/p'}.
+\left(\sum_{k\ne0}\abs{k}^{-p}\right)^{1/p}
+\left(\sum_{k\ne0}\abs{\widehat{f'}(k)}^{p'}\right)^{1/p'}.
 $$
 Since $p>1$, the first series converges. By the Hausdorff--Young inequality,
 $$
-\|\widehat{f'}\|_{\ell^{p'}}
-\le \|f'\|_{L^p}.
+\norm{\widehat{f'}}_{\ell^{p'}}
+\le \norm{f'}_{L^p}.
 $$
 Thus
 $$
-\sum_{k\ne0}|\widehat f(k)|
-\le C_p\|f'\|_{L^p}.
+\sum_{k\ne0}\abs{\widehat f(k)}
+\le C_p\norm{f'}_{L^p}.
 $$
 
 :::
@@ -117,17 +117,17 @@ Treat the range $p\ge2$.
 
 Since $\circlegroup$ has finite measure,
 $$
-\|f'\|_{L^2}\le \|f'\|_{L^p}.
+\norm{f'}_{L^2}\le \norm{f'}_{L^p}.
 $$
 By Cauchy--Schwarz and Plancherel,
 $$
 \begin{aligned}
-\sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}
+\sum_{k\ne0}\frac{\abs{\widehat{f'}(k)}}{\abs{k}}
 &\le
-\left(\sum_{k\ne0}|k|^{-2}\right)^{1/2}
-\left(\sum_{k\ne0}|\widehat{f'}(k)|^2\right)^{1/2}\\
-&\le C\|f'\|_{L^2}
-\le C\|f'\|_{L^p}.
+\left(\sum_{k\ne0}\abs{k}^{-2}\right)^{1/2}
+\left(\sum_{k\ne0}\abs{\widehat{f'}(k)}^2\right)^{1/2}\\
+&\le C\norm{f'}_{L^2}
+\le C\norm{f'}_{L^p}.
 \end{aligned}
 $$
 Hence the same estimate holds for every $p\ge2$.
@@ -145,8 +145,8 @@ Combine the estimates.
 Steps 1--4 give, for every $p>1$,
 $$
 \boxed{
-\sum_{k\in\ZZ}|\widehat f(k)|
-\le \|f\|_{L^1}+C_p\|f'\|_{L^p}.}
+\sum_{k\in\ZZ}\abs{\widehat f(k)}
+\le \norm{f}_{L^1}+C_p\norm{f'}_{L^p}.}
 $$
 The constant $C_p$ depends only on $p$ and the Fourier normalization.
 

@@ -27,7 +27,7 @@ $$
 \bigcap_{\sigma \in G} \sigma G_a \sigma^{-1} = \{1\}.
 $$
 
-(b) Suppose that $G$ is **abelian**. Prove that $|G| = |A|$, and deduce that every abelian transitive subgroup of the symmetric group $S_n$ has order exactly $n$.
+(b) Suppose that $G$ is **abelian**. Prove that $\cardinality{G} = \cardinality{A}$, and deduce that every abelian transitive subgroup of the symmetric group $S_n$ has order exactly $n$.
 :::
 
 ::: {.solution}
@@ -82,12 +82,12 @@ Every subgroup of an abelian group is normal, so every conjugate of $G_a$ equals
 
 The conclusions of part (b) are
 $$
-\boxed{|G|=|A|,\qquad\text{and every abelian transitive subgroup of }S_n\text{ has order }n.}
+\boxed{\cardinality{G}=\cardinality{A},\qquad\text{and every abelian transitive subgroup of }S_n\text{ has order }n.}
 $$
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref} gives a bijection $G\cong A$, so their cardinalities agree, including when $G$ and $A$ are infinite. For an abelian transitive subgroup $H\leq S_n$, its natural action on $\{1,\ldots,n\}$ is faithful because the homomorphism $H\hookrightarrow S_n$ is injective. The same argument gives $|H|=n$.
+Step [](#s3){.pf-ref} gives a bijection $G\cong A$, so their cardinalities agree, including when $G$ and $A$ are infinite. For an abelian transitive subgroup $H\leq S_n$, its natural action on $\{1,\ldots,n\}$ is faithful because the homomorphism $H\hookrightarrow S_n$ is injective. The same argument gives $\cardinality{H}=n$.
 
 :::
 

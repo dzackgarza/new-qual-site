@@ -47,17 +47,17 @@ Every group of order $9$ is abelian.
 
 Let $G$ have order
 $$
-|G|=9=3^2.
+\cardinality{G}=9=3^2.
 $$
 A finite $p$-group has nontrivial center, so
 $$
-|Z(G)|\in\{3,9\}.
+\cardinality{Z(G)}\in\{3,9\}.
 $$
-If $|Z(G)|=9$, then $Z(G)=G$ and $G$ is abelian.
+If $\cardinality{Z(G)}=9$, then $Z(G)=G$ and $G$ is abelian.
 
-If $|Z(G)|=3$, then
+If $\cardinality{Z(G)}=3$, then
 $$
-|G/Z(G)|=3,
+\cardinality{G/Z(G)}=3,
 $$
 so $G/Z(G)$ is cyclic. A group whose quotient by its center is cyclic is
 abelian: if $gZ(G)$ generates $G/Z(G)$, every element has the form
@@ -76,7 +76,7 @@ Every group of order $10$ is a semidirect product $C_5\rtimes C_2$.
 
 ::: pf-proof
 
-Let $|G|=10$. Sylow gives
+Let $\cardinality{G}=10$. Sylow gives
 $$
 n_5\mid2,
 \qquad
@@ -99,7 +99,7 @@ P\cap Q=1.
 $$
 Since
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}=10,
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}=10,
 $$
 we have $G=PQ$. Thus
 $$

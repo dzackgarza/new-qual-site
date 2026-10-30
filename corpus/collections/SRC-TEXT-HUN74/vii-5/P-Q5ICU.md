@@ -45,7 +45,7 @@ For $v \in E_{\lambda_i}(\psi)$, $\psi(\phi(v)) = \phi(\psi(v)) = \lambda_i \phi
 
 ::: {.pf-step #s1-2}
 
-The restriction $\phi_i=\phi|_{E_{\lambda_i}(\psi)}$ is diagonalizable.
+The restriction $\phi_i=\phi\restrict_{E_{\lambda_i}(\psi)}$ is diagonalizable.
 
 ::: pf-proof
 

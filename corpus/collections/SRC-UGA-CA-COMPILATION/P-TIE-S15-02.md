@@ -21,7 +21,7 @@ Let $f _ { n } , f$ be analytic functions on the unit disk D. Show that the foll
 
 (i) $f _ { n } ( z )$ converges to f(z) uniformly on compact subsets in D.
 
-(ii) $\int _ { | z | = r } | f _ { n } ( z ) - f ( z ) | | d z |$ converges to 0 if $0 < r < 1$
+(ii) $\int _ { \abs{ z } = r } \abs{ f _ { n } ( z ) - f ( z ) } \abs{ d z }$ converges to 0 if $0 < r < 1$
 :::
 
 ::: {.solution}

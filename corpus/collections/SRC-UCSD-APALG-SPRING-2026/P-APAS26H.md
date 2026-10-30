@@ -54,7 +54,7 @@ same as step [](#s1){.pf-ref} for $H$.
 
 ::: pf-step
 
-Since $|G|$ is odd, the group algebra $\CC[G]$ has a nontrivial $1$-dimensional factor (the trivial representation), and more importantly, $\CC[G]$ contains a copy of $\CC$ (the trivial representation) as a direct summand.
+Since $\cardinality{G}$ is odd, the group algebra $\CC[G]$ has a nontrivial $1$-dimensional factor (the trivial representation), and more importantly, $\CC[G]$ contains a copy of $\CC$ (the trivial representation) as a direct summand.
 
 ::: pf-proof
 
@@ -78,11 +78,11 @@ construct a candidate subalgebra.
 
 ::: {.pf-step #s5}
 
-Since $|G|$ is odd, $G$ has no element of order $2$, so $\CC[G]$ has no nontrivial $1$-dimensional real subalgebra of the form $\CC \oplus \CC$ arising from a subgroup of order $2$; more precisely, any subgroup $H$ of odd order has $\CC[H]$ with an odd number of $1$-dimensional factors, so $\CC[H]$ cannot be isomorphic to $\CC \oplus \CC$ (which has two $1$-dimensional factors).
+Since $\cardinality{G}$ is odd, $G$ has no element of order $2$, so $\CC[G]$ has no nontrivial $1$-dimensional real subalgebra of the form $\CC \oplus \CC$ arising from a subgroup of order $2$; more precisely, any subgroup $H$ of odd order has $\CC[H]$ with an odd number of $1$-dimensional factors, so $\CC[H]$ cannot be isomorphic to $\CC \oplus \CC$ (which has two $1$-dimensional factors).
 
 ::: pf-proof
 
-a subgroup $H$ of odd order has $\CC[H] \cong \bigoplus_j M_{m_j}(\CC)$ where the number of $1$-dimensional factors equals the number of linear characters of $H$, which is $|H^{\mathrm{ab}}|$, an odd number.
+a subgroup $H$ of odd order has $\CC[H] \cong \bigoplus_j M_{m_j}(\CC)$ where the number of $1$-dimensional factors equals the number of linear characters of $H$, which is $\cardinality{H^{\mathrm{ab}}}$, an odd number.
 
 :::
 

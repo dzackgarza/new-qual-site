@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-C1CYC
 kind: problem
-title: A finite abelian group is cyclic iff it has a unique subgroup of each order
-  dividing $|A|$
+title: A finite abelian group is cyclic iff it has a unique subgroup of each order dividing $\cardinality{A}$
 classification:
   areas:
   - algebra

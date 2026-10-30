@@ -103,7 +103,7 @@ The map $r$ is a retraction of $X$ onto $A$.
 On every vertex and every edge of $A$, the construction used the identity map.
 Thus
 $$
-r|_A=\operatorname{id}_A.
+r\restrict_A=\operatorname{id}_A.
 $$
 
 :::

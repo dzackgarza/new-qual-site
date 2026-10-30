@@ -22,7 +22,7 @@ $$
 \frac{x\sin x}{x^2+a^2},
 $$
 so it is half the real-line integral. Assume first $a\ne0$ and put
-$b=|a|>0$. Consider
+$b=\abs{a}>0$. Consider
 $$
 F(z)=\frac{ze^{iz}}{z^2+b^2}
 $$
@@ -48,7 +48,7 @@ Therefore
 $$
 \boxed{
 \int_0^\infty\frac{x\sin x}{x^2+a^2}\,dx
-=\frac\pi2 e^{-|a|}.}
+=\frac\pi2 e^{-\abs{a}}.}
 $$
 
 For $a=0$ this becomes the Dirichlet integral

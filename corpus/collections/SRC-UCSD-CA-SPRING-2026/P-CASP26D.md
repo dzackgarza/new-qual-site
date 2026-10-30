@@ -23,7 +23,7 @@ Assume that
 
 (ii) $f(x) \in \RR$ for all $x \in \RR \setminus \{0\}$,
 
-(iii) there exists an integer $N > 0$ such that $|f(z)| \leq |z|^N + |z|^{-N}$ for all $z \in H$.
+(iii) there exists an integer $N > 0$ such that $\abs{f(z)} \leq \abs{z}^N + \abs{z}^{-N}$ for all $z \in H$.
 
 Prove that there are constants $a_k \in \RR$ such that $f(z) = \sum_{k=-N}^{N} a_k z^k$.
 :::
@@ -44,7 +44,7 @@ F(\bar z)=\overline{F(z)}
 $$
 and the same growth estimate
 $$
-|F(z)|\le |z|^N+|z|^{-N}.
+\abs{F(z)}\le \abs{z}^N+\abs{z}^{-N}.
 $$
 
 Write the Laurent expansion on $\CC^*$ as
@@ -53,7 +53,7 @@ F(z)=\sum_{k\in\ZZ}a_k z^k.
 $$
 For every $r>0$, Cauchy's coefficient formula gives
 $$
-|a_k|
+\abs{a_k}
 \le (r^N+r^{-N})r^{-k}.
 $$
 If $k>N$, let $r\to\infty$ to obtain $a_k=0$. If $k<-N$, let $r\to0$

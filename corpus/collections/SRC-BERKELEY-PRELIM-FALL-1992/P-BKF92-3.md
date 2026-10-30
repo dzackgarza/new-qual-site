@@ -27,7 +27,7 @@ $$
 p(z)=2z^5+4z^2+1.
 $$
 
-1. How many roots does $p$ have in the disk $|z|<1$?
+1. How many roots does $p$ have in the disk $\abs{z}<1$?
 2. How many roots does $p$ have on the real axis?
 :::
 

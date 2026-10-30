@@ -28,18 +28,18 @@ audit:
 Let $f\in L^\infty([0,1])$ and assume $f$ is not zero almost everywhere.
 Define
 $$
-a_n=\int_0^1|f(x)|^n\,dx.
+a_n=\int_0^1\abs{f(x)}^n\,dx.
 $$
 Prove that
 $$
-\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\|f\|_\infty.
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\norm{f}_\infty.
 $$
 :::
 
 ::: {.solution}
 Set
 $$
-M=\|f\|_\infty>0.
+M=\norm{f}_\infty>0.
 $$
 
 ::: pf
@@ -53,7 +53,7 @@ The ratios are nondecreasing and bounded above by $M$.
 By the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]],
 $$
 a_{n+1}^2
-=\left(\int |f|^{n/2}|f|^{(n+2)/2}\right)^2
+=\left(\int \abs{f}^{n/2}\abs{f}^{(n+2)/2}\right)^2
 \le a_n a_{n+2}.
 $$
 Since $a_n>0$,
@@ -61,7 +61,7 @@ $$
 \frac{a_{n+1}}{a_n}\le\frac{a_{n+2}}{a_{n+1}}.
 $$
 Thus the ratios are nondecreasing.
-Also $|f|\le M$ almost everywhere, so
+Also $\abs{f}\le M$ almost everywhere, so
 $$
 a_{n+1}\le M a_n,
 $$
@@ -84,7 +84,7 @@ The limit cannot be smaller than $M$.
 Fix $0<\varepsilon<M$.
 By the definition of essential supremum, the set
 $$
-E_\varepsilon=\{x:|f(x)|>M-\varepsilon\}
+E_\varepsilon=\{x:\abs{f(x)}>M-\varepsilon\}
 $$
 has positive measure.
 Hence
@@ -107,7 +107,7 @@ $$
 Since $\varepsilon>0$ is arbitrary, $M\le L$.
 Together with $L\le M$, this gives
 $$
-L=M=\|f\|_\infty.
+L=M=\norm{f}_\infty.
 $$
 
 :::
@@ -119,13 +119,13 @@ $$
 Therefore
 $$
 \boxed{
-\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\|f\|_\infty.
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\norm{f}_\infty.
 }
 $$
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref} gives existence of the ratio limit $L$, and step [](#s2){.pf-ref} proves $L=\|f\|_\infty$.
+Step [](#s1){.pf-ref} gives existence of the ratio limit $L$, and step [](#s2){.pf-ref} proves $L=\norm{f}_\infty$.
 
 :::
 

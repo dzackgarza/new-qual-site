@@ -144,7 +144,7 @@ The field $E$ is the splitting field of $f$. Since $F$ has characteristic zero, 
 
 Hence
 $$
-|\operatorname{Gal}(E/F)|=[E:F]=p,
+\cardinality{\operatorname{Gal}(E/F)}=[E:F]=p,
 $$
 so
 $$

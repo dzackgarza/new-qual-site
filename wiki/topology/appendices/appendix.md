@@ -36,12 +36,12 @@ The inclusion $SU(n)\injects U(n)$ induces isomorphisms on $\pi_k$ for $k\geq 2$
 ::: {.definition title="Cup and cap products"}
 For a space $X$, a ring $R$, cochains $\varphi\in C^p(X;R)$ and $\psi\in C^q(X;R)$, and a singular simplex $\sigma\colon\Delta^{p+q}\to X$, the \dfn{cup product} $\varphi\cup\psi\in C^{p+q}(X;R)$ is
 $$
-(\varphi \cup \psi)(\sigma) \coloneqq \varphi\bigl(\sigma|_{[v_0,\ldots,v_p]}\bigr)\, \psi\bigl(\sigma|_{[v_p,\ldots,v_{p+q}]}\bigr),
+(\varphi \cup \psi)(\sigma) \coloneqq \varphi\bigl(\sigma\restrict_{[v_0,\ldots,v_p]}\bigr)\, \psi\bigl(\sigma\restrict_{[v_p,\ldots,v_{p+q}]}\bigr),
 $$
 the product of $\varphi$ on the front $p$-face and $\psi$ on the back $q$-face.
 For $\sigma\colon\Delta^{k}\to X$ with $k\geq p$, the \dfn{cap product} $\sigma\cap\varphi\in C_{k-p}(X;R)$ is
 $$
-\sigma \cap \varphi \coloneqq \varphi\bigl(\sigma|_{[v_0,\ldots,v_p]}\bigr)\, \sigma|_{[v_p,\ldots,v_k]}.
+\sigma \cap \varphi \coloneqq \varphi\bigl(\sigma\restrict_{[v_0,\ldots,v_p]}\bigr)\, \sigma\restrict_{[v_p,\ldots,v_k]}.
 $$
 
 :::

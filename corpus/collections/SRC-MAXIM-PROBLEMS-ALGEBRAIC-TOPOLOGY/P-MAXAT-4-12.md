@@ -85,7 +85,7 @@ H^*(\Omega S^3;\ZZ)
 \cong
 \Gamma_{\ZZ}(u_2),
 \qquad
-|u_2|=2,
+\gradeddegree{u_2}=2,
 $$
 where $\Gamma$ denotes the divided-power algebra.
 

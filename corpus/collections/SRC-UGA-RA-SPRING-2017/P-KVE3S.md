@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KVE3S
 kind: problem
-title: $C^1([a,b])$ is Banach under $\sup|f|+\sup|f'|$
+title: $C^1([a,b])$ is Banach under $\sup\abs{f}+\sup\abs{f'}$
 classification:
   areas:
   - real-analysis
@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Show that the space $C^1([a,b])$ is a Banach space when equipped with the norm
 $$
-\|f\|:=\sup_{x\in[a,b]}|f(x)|+\sup_{x\in[a,b]}|f'(x)|.
+\norm{f}:=\sup_{x\in[a,b]}\abs{f(x)}+\sup_{x\in[a,b]}\abs{f'(x)}.
 $$
 :::
 
@@ -58,8 +58,8 @@ f'=g.
 $$
 Therefore
 $$
-\|f_n-f\|
-=\|f_n-f\|_\infty+\|f_n'-f'\|_\infty
+\norm{f_n-f}
+=\norm{f_n-f}_\infty+\norm{f_n'-f'}_\infty
 \longrightarrow0.
 $$
 Thus every Cauchy sequence converges in the given norm, so

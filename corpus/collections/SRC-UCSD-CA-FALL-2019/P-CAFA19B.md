@@ -13,11 +13,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be analytic on $\DD$ with $|f(z)| \leq 1/2$ on $\DD$ and $f(0) = r \in \RR$, where $0 < r < 1/2$.
+Let $f$ be analytic on $\DD$ with $\abs{f(z)} \leq 1/2$ on $\DD$ and $f(0) = r \in \RR$, where $0 < r < 1/2$.
 
-(a) Prove that $f(z)$ has no zeros in the disk $\{|z| < 2r\}$.
+(a) Prove that $f(z)$ has no zeros in the disk $\{\abs{z} < 2r\}$.
 
-(b) Can $f(z)$ have a zero on the circle $\{|z| = 2r\}$?
+(b) Can $f(z)$ have a zero on the circle $\{\abs{z} = 2r\}$?
 If so, find all such functions $f(z)$.
 :::
 
@@ -26,17 +26,17 @@ Set $g=2f$. Then $g:\DD\to\DD$ is holomorphic and $g(0)=2r$.
 
 If $g(a)=0$, Schwarz--Pick gives
 $$
-\left|\frac{g(0)-g(a)}{1-\overline{g(a)}g(0)}\right|
+\abs{\frac{g(0)-g(a)}{1-\overline{g(a)}g(0)}}
 \le
-\left|\frac{0-a}{1-\bar a\,0}\right|,
+\abs{\frac{0-a}{1-\bar a\,0}},
 $$
 hence
 $$
-2r\le |a|.
+2r\le \abs{a}.
 $$
-Therefore $f$ has no zero in $|z|<2r$.
+Therefore $f$ has no zero in $\abs{z}<2r$.
 
-Now suppose $f(a)=0$ with $|a|=2r$. Equality holds in Schwarz--Pick at the
+Now suppose $f(a)=0$ with $\abs{a}=2r$. Equality holds in Schwarz--Pick at the
 distinct points $0$ and $a$, so $g$ is an automorphism of the disk. Thus
 $$
 g(z)=e^{i\theta}\frac{z-a}{1-\bar a z}.

@@ -250,7 +250,7 @@ e^{z_0}-1=0
 $$
 and $z_0\ne0$. Moreover,
 $$
-\frac{d}{dz}(e^z-1)\bigg|_{z=z_0}
+\frac{d}{dz}(e^z-1)\evalfrom_{z=z_0}
 =
 e^{z_0}
 =

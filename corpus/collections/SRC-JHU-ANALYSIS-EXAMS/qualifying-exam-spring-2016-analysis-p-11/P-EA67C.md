@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\RR^d$, then for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
-$$\int_E |f| < \epsilon \quad \text{whenever} \quad m(E) < \delta.$$
+$$\int_E \abs{f} < \epsilon \quad \text{whenever} \quad m(E) < \delta.$$
 :::
 
 ::: {.solution}
@@ -41,12 +41,12 @@ Truncate the integrable function.
 
 Fix $\varepsilon>0$. Since $f\in L^1(\RR^d)$,
 $$
-\int_{\{|f|>M\}}|f|\,dx\longrightarrow0
+\int_{\{\abs{f}>M\}}\abs{f}\,dx\longrightarrow0
 \qquad(M\to\infty).
 $$
 Choose $M>0$ so large that
 $$
-\int_{\{|f|>M\}}|f|<\frac\varepsilon2.
+\int_{\{\abs{f}>M\}}\abs{f}<\frac\varepsilon2.
 $$
 
 :::
@@ -65,14 +65,14 @@ $$
 $$
 If $m(E)<\delta$, split
 $$
-E=E\cap\{|f|\le M\}\;\cup\;E\cap\{|f|>M\}.
+E=E\cap\{\abs{f}\le M\}\;\cup\;E\cap\{\abs{f}>M\}.
 $$
 Then
 $$
 \begin{aligned}
-\int_E|f|
-&\le \int_{E\cap\{|f|\le M\}}|f|
-+\int_{\{|f|>M\}}|f|\\
+\int_E\abs{f}
+&\le \int_{E\cap\{\abs{f}\le M\}}\abs{f}
++\int_{\{\abs{f}>M\}}\abs{f}\\
 &\le M\,m(E)+\frac\varepsilon2\\
 &<M\delta+\frac\varepsilon2
 =\varepsilon.
@@ -81,7 +81,7 @@ $$
 Thus
 $$
 \boxed{
-m(E)<\delta\Longrightarrow\int_E|f|<\varepsilon.}
+m(E)<\delta\Longrightarrow\int_E\abs{f}<\varepsilon.}
 $$
 
 :::

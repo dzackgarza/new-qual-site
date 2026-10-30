@@ -103,7 +103,7 @@ $$
 U=h^{-1}(B)
 $$
 is open in $M$: because $h^{-1}(B)$ is open in the subspace $N$, write it as $N\cap G$ for some open $G\subseteq M$; since it lies in $O\subseteq N$, it equals $O\cap G$.
-Finally, composing $h|_U$ with a homeomorphism $B\cong\RR^n$ gives the desired open chart
+Finally, composing $h\restrict_U$ with a homeomorphism $B\cong\RR^n$ gives the desired open chart
 $$
 U\cong\RR^n
 $$
@@ -128,12 +128,12 @@ U\setminus\{q\}
 $$
 The radial map
 $$
-x\longmapsto\frac{x}{\|x\|}
+x\longmapsto\frac{x}{\norm{x}}
 $$
 is the endpoint of the deformation retraction
 $$
 H(x,t)
-=\left((1-t)+\frac{t}{\|x\|}\right)x
+=\left((1-t)+\frac{t}{\norm{x}}\right)x
 $$
 from $\RR^n\setminus\{0\}$ onto $S^{n-1}$.
 Since $n\ge3$, the sphere $S^{n-1}$ has dimension at least $2$ and is path-connected.

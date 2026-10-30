@@ -57,7 +57,7 @@ The real integral becomes
 $$
 \int_0^{2\pi}\frac{dx}{10-8\cos x}
 =
-\oint_{|z|=1}
+\oint_{\abs{z}=1}
 \frac{i\,dz}{2(2z-1)(z-2)}.
 $$
 
@@ -103,7 +103,7 @@ $$
 
 ::: pf-proof
 
-The poles are $1/2$ and $2$, so only $1/2$ lies inside $|z|=1$. For
+The poles are $1/2$ and $2$, so only $1/2$ lies inside $\abs{z}=1$. For
 $$
 F(z)=\frac{i}{2(2z-1)(z-2)},
 $$
@@ -139,7 +139,7 @@ $$
 
 By the residue theorem and step [](#s1-3){.pf-ref},
 $$
-\oint_{|z|=1}F(z)\,dz
+\oint_{\abs{z}=1}F(z)\,dz
 =
 2\pi i\left(-\frac{i}{6}\right)
 =

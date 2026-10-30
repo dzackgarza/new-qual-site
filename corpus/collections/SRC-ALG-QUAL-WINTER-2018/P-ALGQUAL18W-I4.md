@@ -261,7 +261,7 @@ a direct sum of simple $R$-modules. Hence $M$ is semisimple.
 
 ::: {.pf-step #s8}
 
-The statement is $\boxed{\text{true}}$: an $R$-module $M$ is semisimple if and only if $M|_{\CC[x]}$ and $M|_{\CC[y]}$ are semisimple.
+The statement is $\boxed{\text{true}}$: an $R$-module $M$ is semisimple if and only if $M\restrict_{\CC[x]}$ and $M\restrict_{\CC[y]}$ are semisimple.
 
 ::: pf-proof
 

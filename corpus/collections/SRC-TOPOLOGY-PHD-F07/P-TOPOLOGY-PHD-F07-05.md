@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $D$ be the open unit disk in the complex plane that is $D:=\{z\mid |z|<1\}$.
-Let $\sim$ be an equivalence relation on $D$ defined by $z_1\sim z_2$ if $|z_1|=|z_2|$.
+Let $D$ be the open unit disk in the complex plane that is $D:=\{z\mid \abs{z}<1\}$.
+Let $\sim$ be an equivalence relation on $D$ defined by $z_1\sim z_2$ if $\abs{z_1}=\abs{z_2}$.
 Is the quotient space $D/\sim$ Hausdorff?
 Prove or disprove.
 :::
@@ -41,7 +41,7 @@ be the quotient map and let
 $$
 r:D\longrightarrow[0,1),
 \qquad
-r(z)=|z|.
+r(z)=\abs{z}.
 $$
 
 ::: pf
@@ -54,7 +54,7 @@ By definition,
 $$
 z_1\sim z_2
 \quad\Longleftrightarrow\quad
-|z_1|=|z_2|
+\abs{z_1}=\abs{z_2}
 \quad\Longleftrightarrow\quad
 r(z_1)=r(z_2).
 $$
@@ -70,7 +70,7 @@ $$
 $$
 satisfying
 $$
-\bar r(q(z))=|z|.
+\bar r(q(z))=\abs{z}.
 $$
 
 ::: pf-proof
@@ -90,13 +90,13 @@ The map $\bar r$ is bijective.
 For surjectivity, if $t\in[0,1)$, regard $t$ as the point $t+0i\in D$.
 Then
 $$
-\bar r(q(t))=|t|=t.
+\bar r(q(t))=\abs{t}=t.
 $$
 For injectivity, if
 $$
 \bar r(q(z_1))=\bar r(q(z_2)),
 $$
-then $|z_1|=|z_2|$, so $z_1\sim z_2$ by definition and hence $q(z_1)=q(z_2)$.
+then $\abs{z_1}=\abs{z_2}$, so $z_1\sim z_2$ by definition and hence $q(z_1)=q(z_2)$.
 :::
 
 :::
@@ -129,10 +129,10 @@ $$
 Conversely, for $q(z)\in D/\!\sim$,
 $$
 (s\circ\bar r)(q(z))
-=s(|z|)
-=q(|z|).
+=s(\abs{z})
+=q(\abs{z}).
 $$
-Since $z\sim |z|$, their quotient classes agree, so $q(|z|)=q(z)$.
+Since $z\sim \abs{z}$, their quotient classes agree, so $q(\abs{z})=q(z)$.
 Hence $s$ and $\bar r$ are mutual inverses.
 :::
 

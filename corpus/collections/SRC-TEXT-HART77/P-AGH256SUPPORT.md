@@ -182,11 +182,11 @@ Part (e) follows from the affine description in step [](#s4){.pf-ref}.
 
 ::: pf-proof
 
-For an affine open $U=\Spec A$ in $X$, write $Z\cap U=V(\mfa)$ and $\mcf|_U\cong\widetilde M$.
+For an affine open $U=\Spec A$ in $X$, write $Z\cap U=V(\mfa)$ and $\mcf\restrict_U\cong\widetilde M$.
 The [[P-AGH2120SUPPSUBSHEAF|definition of the supported subsheaf]] commutes with restriction to $U$.
 Step [](#s4){.pf-ref} therefore gives
 $$
-\mch_Z^0(\mcf)|_U\cong\widetilde{\Gamma_\mfa(M)}.
+\mch_Z^0(\mcf)\restrict_U\cong\widetilde{\Gamma_\mfa(M)}.
 $$
 These descriptions make $\mch_Z^0(\mcf)$ [[D-QNTZY|quasi-coherent]].
 If $\mcf$ is [[D-QNTZY|coherent]], then $M$ is finitely generated over the noetherian ring $A$.

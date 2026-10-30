@@ -25,7 +25,7 @@ For a path connected space $X$, the following are equivalent:
 
 (ii) every continuous map $\gamma\colon S^1\to X$ is [[D-Z7I7F|homotopic]] to a constant map;
 
-(iii) every continuous map $\gamma\colon S^1\to X$ extends to a continuous map $\hat\gamma\colon D^2\to X$, that is, $\hat\gamma|_{S^1} = \gamma$;
+(iii) every continuous map $\gamma\colon S^1\to X$ extends to a continuous map $\hat\gamma\colon D^2\to X$, that is, $\hat\gamma\restrict_{S^1} = \gamma$;
 
 (iv) any two [[D-J6XOC|paths]] $p_1, p_2\colon[0,1]\to X$ with $p_1(0) = p_2(0)$ and $p_1(1) = p_2(1)$ are homotopic rel endpoints.
 :::

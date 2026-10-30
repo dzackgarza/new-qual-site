@@ -29,7 +29,7 @@ $$
 U \mapsto \colim_{V \supseteq f(U)} \mcg(V) ,
 $$
 the colimit over open subsets $V \subseteq Y$ containing $f(U)$.
-If $i: Z \injects X$ is the inclusion of a subspace, the \dfn{restriction} of a sheaf $\mcf$ on $X$ is $\restrictionof{\mcf}{Z} \definedas \inverseof{i} \mcf$.
+If $i: Z \injects X$ is the inclusion of a subspace, the \dfn{restriction} of a sheaf $\mcf$ on $X$ is $\restrictionof{\mcf}{Z} \coloneqq \inverseof{i} \mcf$.
 :::
 
 ::: {.proposition}
@@ -42,7 +42,7 @@ If $\mcg$ is an $\OO_Y$-module, then $\inverseof{f} \mcg$ is an $\inverseof{f} \
 For $f: X \to Y$ of ringed spaces, $f_*\mcf$ is the $\OO_Y$-module $U \mapsto \mcf(\inverseof{f} U)$.
 For $\mcg \in \mods{\OO_Y}$, the \dfn{inverse image} is
 $$
-f^*\mcg \definedas \inverseof{f} \mcg \tensor_{\inverseof{f} \OO_Y} \OO_X ,
+f^*\mcg \coloneqq \inverseof{f} \mcg \tensor_{\inverseof{f} \OO_Y} \OO_X ,
 $$
 the sheaf-theoretic inverse image, base changed along $\inverseof{f}\OO_Y \to \OO_X$.
 :::

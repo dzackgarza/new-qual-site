@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\CC:|z|<1\}$, and let $f:D\to\CC$
+Let $D=\{z\in\CC:\abs{z}<1\}$, and let $f:D\to\CC$
 be holomorphic with simple zeros at $1/3$, $2/3$ and $i/4$
 and no other zeros. Evaluate
 $$
-\int_{|z|=1/2}(z^2-1)e^z\frac{f'(z)}{f(z)}\,dz,
+\int_{\abs{z}=1/2}(z^2-1)e^z\frac{f'(z)}{f(z)}\,dz,
 $$
 with counterclockwise orientation.
 :::
@@ -73,13 +73,13 @@ The two enclosed zeros give the stated sum.
 
 ::: pf-proof
 
-The zeros $1/3$ and $i/4$ lie inside $|z|=1/2$, while
+The zeros $1/3$ and $i/4$ lie inside $\abs{z}=1/2$, while
 $2/3$ lies outside. None lies on the contour. The closed
 radius-one-half disk has a neighborhood contained in $D$,
 so the residue theorem applies to this counterclockwise
 circle [@SS03]. Using step [](#s1){.pf-ref}, it gives
 $$
-\int_{|z|=1/2}W(z)\frac{f'(z)}{f(z)}\,dz
+\int_{\abs{z}=1/2}W(z)\frac{f'(z)}{f(z)}\,dz
 =2\pi i\bigl(W(1/3)+W(i/4)\bigr).
 $$
 Finally,

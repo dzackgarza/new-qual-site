@@ -39,7 +39,7 @@ There is no simple group of order $30$.
 
 ::: pf-proof
 
-Suppose $|G|=30$ and $G$ is simple. By Sylow's third theorem,
+Suppose $\cardinality{G}=30$ and $G$ is simple. By Sylow's third theorem,
 $$
 n_5\equiv1\pmod5,\qquad n_5\mid6,
 $$
@@ -149,7 +149,7 @@ If the fifteen Sylow $2$-subgroups were pairwise disjoint away from the identity
 $$
 15(4-1)=45
 $$
-nonidentity elements, impossible. Therefore two distinct Sylow $2$-subgroups $P,Q$ intersect nontrivially. Since $|P|=|Q|=4$, their intersection has order $2$; let
+nonidentity elements, impossible. Therefore two distinct Sylow $2$-subgroups $P,Q$ intersect nontrivially. Since $\cardinality{P}=\cardinality{Q}=4$, their intersection has order $2$; let
 $$
 P\cap Q=\langle x\rangle,\qquad x\ne1.
 $$
@@ -159,11 +159,11 @@ P,Q\le C_G(x).
 $$
 Because $P\ne Q$, the centralizer strictly contains $P$. Its order divides $60$ and is divisible by $4$, so
 $$
-|C_G(x)|\in\{12,20,60\}.
+\cardinality{C_G(x)}\in\{12,20,60\}.
 $$
 The value $60$ would put $x$ in $Z(G)$, impossible because a nonabelian simple group has trivial center. The value $20$ would give a subgroup of index $3$; the coset action on three points would produce a nontrivial homomorphism $G\to S_3$, hence an injection by simplicity, again impossible. Therefore
 $$
-|C_G(x)|=12,
+\cardinality{C_G(x)}=12,
 $$
 so $C_G(x)$ has index $5$.
 

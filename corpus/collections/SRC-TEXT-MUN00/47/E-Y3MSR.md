@@ -21,9 +21,9 @@ If $X$ is a locally compact Hausdorff space, then a subspace $\mathcal{F}$ of $\
 :::
 
 ::: {.solution}
-Suppose first that $\overline{\mathcal F}$ is compact in compact convergence. Evaluation at each $x$ is continuous, so $\{f(x):f\in\mathcal F\}$ has compact, hence bounded, closure. Thus $\mathcal F$ is pointwise bounded. If equicontinuity failed at $x$, there would be an $\varepsilon>0$, a net $f_i\in\mathcal F$, and a net $x_i\to x$ with $|f_i(x_i)-f_i(x)|\ge\varepsilon$. Let $K$ be a compact neighborhood of $x$; eventually $x_i\in K$. Compactness of $\overline{\mathcal F}$ gives a subnet $f_i\to f\in\overline{\mathcal F}$ uniformly on $K$. Then
+Suppose first that $\overline{\mathcal F}$ is compact in compact convergence. Evaluation at each $x$ is continuous, so $\{f(x):f\in\mathcal F\}$ has compact, hence bounded, closure. Thus $\mathcal F$ is pointwise bounded. If equicontinuity failed at $x$, there would be an $\varepsilon>0$, a net $f_i\in\mathcal F$, and a net $x_i\to x$ with $\abs{f_i(x_i)-f_i(x)}\ge\varepsilon$. Let $K$ be a compact neighborhood of $x$; eventually $x_i\in K$. Compactness of $\overline{\mathcal F}$ gives a subnet $f_i\to f\in\overline{\mathcal F}$ uniformly on $K$. Then
 $$
-|f_i(x_i)-f_i(x)|\le|f_i(x_i)-f(x_i)|+|f(x_i)-f(x)|+|f(x)-f_i(x)|\to0
+\abs{f_i(x_i)-f_i(x)}\le\abs{f_i(x_i)-f(x_i)}+\abs{f(x_i)-f(x)}+\abs{f(x)-f_i(x)}\to0
 $$
 along the subnet, by uniform convergence on $K$ and continuity of $f$, a contradiction. Hence $\mathcal F$ is equicontinuous.
 

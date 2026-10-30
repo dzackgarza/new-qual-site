@@ -78,10 +78,10 @@ $$
 Therefore
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_\Gamma
 \left(p_n(z)-\frac1z\right)\,dz
-\right|
+}
 &\leq
 \operatorname{length}(\Gamma)
 \sup_{z\in\Gamma}

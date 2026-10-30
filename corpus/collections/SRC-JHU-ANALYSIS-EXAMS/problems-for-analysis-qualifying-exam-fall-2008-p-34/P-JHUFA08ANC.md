@@ -37,7 +37,7 @@ x^A_n=\begin{cases}1,&n\in A,\\0,&n\notin A.\end{cases}
 $$
 If $A\ne B$, then for some $n$ exactly one of $A,B$ contains $n$, so
 $$
-\|x^A-x^B\|_\infty=1.
+\norm{x^A-x^B}_\infty=1.
 $$
 Thus
 $$

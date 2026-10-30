@@ -32,7 +32,7 @@ $$
 
 2.
 $$
-\left.\frac d{dt}\operatorname{tr}(A+tB)^k\right|_{t=0}.
+\evaluated{\frac d{dt}\operatorname{tr}(A+tB)^k}_{t=0}.
 $$
 :::
 
@@ -115,9 +115,9 @@ $$
 
 By linearity of trace and step [](#s2){.pf-ref},
 $$
-\left.
+\evaluated{
 \frac d{dt}\operatorname{tr}(A+tB)^k
-\right|_{t=0}
+}_{t=0}
 =
 \sum_{j=0}^{k-1}
 \operatorname{tr}\left(A^jBA^{k-1-j}\right).

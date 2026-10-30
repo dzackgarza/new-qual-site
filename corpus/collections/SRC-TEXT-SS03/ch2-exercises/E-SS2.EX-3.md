@@ -36,7 +36,7 @@ A=\sqrt{a^2+b^2},
 \qquad
 \sin\omega=\frac bA,
 $$
-with $|\omega|<\pi/2$ because $a>0$. Then
+with $\abs{\omega}<\pi/2$ because $a>0$. Then
 $$
 Ae^{-i\omega}=a-ib.
 $$

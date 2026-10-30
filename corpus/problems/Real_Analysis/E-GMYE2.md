@@ -34,7 +34,7 @@ audit:
 
 (c) Show that the uniform limit of bounded functions is uniformly bounded.
 
-(d) Construct sequences of functions $\theset{f_n}_{n\in \NN}$ and $\theset{g_n}_{n\in \NN}$ which converge uniformly on some set $E$, and yet their product sequence $\theset{h_n}_{n\in \NN}$ with $h_n \definedas f_n g_n$ does *not* converge uniformly.
+(d) Construct sequences of functions $\theset{f_n}_{n\in \NN}$ and $\theset{g_n}_{n\in \NN}$ which converge uniformly on some set $E$, and yet their product sequence $\theset{h_n}_{n\in \NN}$ with $h_n \coloneqq f_n g_n$ does *not* converge uniformly.
 Show that if $f_n, g_n$ are additionally bounded, then $h_n$ does converge uniformly.
 
 (e) Find a sequence of functions such that $$\frac{d}{d x} \lim _{n \rightarrow \infty} f_{n}(x) \neq \lim _{n \rightarrow \infty} \frac{d}{d x} f_{n}(x).$$
@@ -77,7 +77,7 @@ $f$ is differentiable everywhere, with $f'(0) = 0$ and $f'(x) = 2x\sin(1/x) - \c
 
 ::: pf-proof
 
-$\frac{f(h) - f(0)}{h} = h\sin(1/h)$ and $|h\sin(1/h)| \leq |h| \to 0$. For $x \neq 0$, $f$ is a product and composition of differentiable functions near $x$, and the product and chain rules give the formula.
+$\frac{f(h) - f(0)}{h} = h\sin(1/h)$ and $\abs{h\sin(1/h)} \leq \abs{h} \to 0$. For $x \neq 0$, $f$ is a product and composition of differentiable functions near $x$, and the product and chain rules give the formula.
 
 :::
 
@@ -107,7 +107,7 @@ At $x_k = 1/(2k\pi)$, $f'(x_k) = -1$ for every $k$, while $x_k \to 0$ and $f'(0)
 
 ::: {.pf-step #s2-1}
 
-Fix $x_0 \in E$ and $\eps > 0$. There are $n$ with $\|f - f_n\|_\infty < \eps/3$ and $\delta > 0$ with $|f_n(x) - f_n(x_0)| < \eps/3$ for $x \in E$, $|x - x_0| < \delta$.
+Fix $x_0 \in E$ and $\eps > 0$. There are $n$ with $\norm{f - f_n}_\infty < \eps/3$ and $\delta > 0$ with $\abs{f_n(x) - f_n(x_0)} < \eps/3$ for $x \in E$, $\abs{x - x_0} < \delta$.
 
 ::: pf-proof
 
@@ -119,7 +119,7 @@ The first is uniform convergence; the second is continuity of $f_n$ at $x_0$.
 
 ::: pf-qed
 
-For $x \in E$ with $|x - x_0| < \delta$, step [](#s2-1){.pf-ref} and the triangle inequality give $|f(x) - f(x_0)| \le |f(x) - f_n(x)| + |f_n(x) - f_n(x_0)| + |f_n(x_0) - f(x_0)| < \eps$.
+For $x \in E$ with $\abs{x - x_0} < \delta$, step [](#s2-1){.pf-ref} and the triangle inequality give $\abs{f(x) - f(x_0)} \le \abs{f(x) - f_n(x)} + \abs{f_n(x) - f_n(x_0)} + \abs{f_n(x_0) - f(x_0)} < \eps$.
 
 :::
 
@@ -129,11 +129,11 @@ For $x \in E$ with $|x - x_0| < \delta$, step [](#s2-1){.pf-ref} and the triangl
 
 ::: {.pf-step #s3}
 
-(c) If $f_n \to f$ uniformly and each $f_n$ is bounded, then $f$ is bounded, and $\sup_{n}\|f_n\|_\infty < \infty$.
+(c) If $f_n \to f$ uniformly and each $f_n$ is bounded, then $f$ is bounded, and $\sup_{n}\norm{f_n}_\infty < \infty$.
 
 ::: pf-proof
 
-Choose $N$ with $\|f - f_n\|_\infty \le 1$ for $n \geq N$. Then $\|f\|_\infty \le \|f_N\|_\infty + 1$, and $\|f_n\|_\infty \leq \|f\|_\infty + 1$ for $n \geq N$, so $\sup_n \|f_n\|_\infty \leq \max(\|f_1\|_\infty, \ldots, \|f_{N-1}\|_\infty, \|f\|_\infty + 1)$.
+Choose $N$ with $\norm{f - f_n}_\infty \le 1$ for $n \geq N$. Then $\norm{f}_\infty \le \norm{f_N}_\infty + 1$, and $\norm{f_n}_\infty \leq \norm{f}_\infty + 1$ for $n \geq N$, so $\sup_n \norm{f_n}_\infty \leq \max(\norm{f_1}_\infty, \ldots, \norm{f_{N-1}}_\infty, \norm{f}_\infty + 1)$.
 
 :::
 
@@ -151,7 +151,7 @@ On $E = [1, \infty)$, $f_n(x) = x + \frac{1}{n}$ and $g_n(x) = x$ converge unifo
 
 ::: pf-proof
 
-$\sup_{x\ge1}|f_n(x) - x| = 1/n \to 0$, and $g_n$ is constant in $n$. But $h_n(x) = x^2 + \frac{x}{n} \to x^2$ pointwise, and $\sup_{x\ge1}|h_n(x) - x^2| = \sup_{x\ge1}\frac{x}{n} = \infty$ for every $n$.
+$\sup_{x\ge1}\abs{f_n(x) - x} = 1/n \to 0$, and $g_n$ is constant in $n$. But $h_n(x) = x^2 + \frac{x}{n} \to x^2$ pointwise, and $\sup_{x\ge1}\abs{h_n(x) - x^2} = \sup_{x\ge1}\frac{x}{n} = \infty$ for every $n$.
 
 :::
 
@@ -163,7 +163,7 @@ If $f_n \to f$ and $g_n \to g$ uniformly and every $f_n$ and $g_n$ is bounded, t
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $g$ is bounded and there is $M$ with $\|f_n\|_\infty \le M$ for all $n$ and $\|g\|_\infty \le M$. Then $|f_n g_n - fg| \le |f_n|\,|g_n - g| + |g|\,|f_n - f| \le M\|g_n - g\|_\infty + M\|f_n - f\|_\infty \to 0$ uniformly on $E$.
+By step [](#s3){.pf-ref}, $g$ is bounded and there is $M$ with $\norm{f_n}_\infty \le M$ for all $n$ and $\norm{g}_\infty \le M$. Then $\abs{f_n g_n - fg} \le \abs{f_n}\,\abs{g_n - g} + \abs{g}\,\abs{f_n - f} \le M\norm{g_n - g}_\infty + M\norm{f_n - f}_\infty \to 0$ uniformly on $E$.
 
 :::
 
@@ -179,7 +179,7 @@ By step [](#s3){.pf-ref}, $g$ is bounded and there is $M$ with $\|f_n\|_\infty \
 
 ::: pf-proof
 
-$|f_n| \leq 1/n$, so $f_n \to 0$ uniformly and $\frac{d}{dx}\lim_n f_n(x) = 0$. But $f_n'(x) = \cos(nx)$, so $\lim_n f_n'(0) = 1 \ne 0$.
+$\abs{f_n} \leq 1/n$, so $f_n \to 0$ uniformly and $\frac{d}{dx}\lim_n f_n(x) = 0$. But $f_n'(x) = \cos(nx)$, so $\lim_n f_n'(0) = 1 \ne 0$.
 
 :::
 
@@ -187,17 +187,17 @@ $|f_n| \leq 1/n$, so $f_n \to 0$ uniformly and $\frac{d}{dx}\lim_n f_n(x) = 0$. 
 
 ::: pf-step
 
-(f) $f_n(x) = \sqrt{x^2 + \frac{1}{n}}$ are differentiable on $\RR$ and converge uniformly to $|x|$, which is not differentiable at $0$.
+(f) $f_n(x) = \sqrt{x^2 + \frac{1}{n}}$ are differentiable on $\RR$ and converge uniformly to $\abs{x}$, which is not differentiable at $0$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$f_n \to |x|$ uniformly.
+$f_n \to \abs{x}$ uniformly.
 
 ::: pf-proof
 
-$0 \le \sqrt{x^2 + 1/n} - |x| = \frac{1/n}{\sqrt{x^2 + 1/n} + |x|} \le \frac{1/n}{\sqrt{1/n}} = \frac{1}{\sqrt n} \to 0$.
+$0 \le \sqrt{x^2 + 1/n} - \abs{x} = \frac{1/n}{\sqrt{x^2 + 1/n} + \abs{x}} \le \frac{1/n}{\sqrt{1/n}} = \frac{1}{\sqrt n} \to 0$.
 
 :::
 
@@ -205,11 +205,11 @@ $0 \le \sqrt{x^2 + 1/n} - |x| = \frac{1/n}{\sqrt{x^2 + 1/n} + |x|} \le \frac{1/n
 
 ::: pf-step
 
-Each $f_n$ is smooth, and $|x|$ is not differentiable at $0$.
+Each $f_n$ is smooth, and $\abs{x}$ is not differentiable at $0$.
 
 ::: pf-proof
 
-$x \mapsto \sqrt{x^2 + c}$ is smooth for $c > 0$, since $x^2 + c > 0$. The function $|x|$ has left derivative $-1$ and right derivative $1$ at $0$.
+$x \mapsto \sqrt{x^2 + c}$ is smooth for $c > 0$, since $x^2 + c > 0$. The function $\abs{x}$ has left derivative $-1$ and right derivative $1$ at $0$.
 
 :::
 

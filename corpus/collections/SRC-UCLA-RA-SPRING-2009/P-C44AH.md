@@ -48,7 +48,7 @@ Let $(f_n) \subset H$ with $f_n \to f$ in $L^2$; we show $f \in H$ (after modifi
 $(f_n)$ is Cauchy in $\sup$ on compacta.
 
 ::: pf-proof
-for any compact $K \subset \DD$, the mean-value estimate gives $\sup_K |f_n - f_m| \le C_K \|f_n - f_m\|_{L^2} \to 0$ as $n, m \to \infty$ (by part (i) of the companion mean-value inequality applied to the holomorphic function $f_n - f_m$).
+for any compact $K \subset \DD$, the mean-value estimate gives $\sup_K \abs{f_n - f_m} \le C_K \norm{f_n - f_m}_{L^2} \to 0$ as $n, m \to \infty$ (by part (i) of the companion mean-value inequality applied to the holomorphic function $f_n - f_m$).
 :::
 
 :::
@@ -75,7 +75,7 @@ $f_n \to f$ in $L^2$ implies $f_n \to f$ in measure along a subsequence, and a.e
 $f \in H$.
 
 ::: pf-proof
-by step [](#s2-2){.pf-ref} and step [](#s2-3){.pf-ref}, $f$ equals a.e. the holomorphic function $g$, and $\int_\DD |g|^2\, d\mu = \int_\DD |f|^2\, d\mu < \infty$; so the class of $f$ in $L^2$ is represented by the holomorphic function $g$, i.e. $f \in H$.
+by step [](#s2-2){.pf-ref} and step [](#s2-3){.pf-ref}, $f$ equals a.e. the holomorphic function $g$, and $\int_\DD \abs{g}^2\, d\mu = \int_\DD \abs{f}^2\, d\mu < \infty$; so the class of $f$ in $L^2$ is represented by the holomorphic function $g$, i.e. $f \in H$.
 :::
 
 :::

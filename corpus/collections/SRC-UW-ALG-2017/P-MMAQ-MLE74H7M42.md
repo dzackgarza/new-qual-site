@@ -29,7 +29,7 @@ $$
 $$
 we have
 $$
-|F|=p^n.
+\cardinality{F}=p^n.
 $$
 Thus every finite field has prime-power order.
 
@@ -51,7 +51,7 @@ X^{p^n}-X.
 $$
 The derivative of this polynomial is $-1$, so all roots are simple. Therefore it has exactly $p^n$ roots in the algebraic closure, and
 $$
-|E|=p^n.
+\cardinality{E}=p^n.
 $$
 Thus a field of order $p^n$ exists for every prime power.
 

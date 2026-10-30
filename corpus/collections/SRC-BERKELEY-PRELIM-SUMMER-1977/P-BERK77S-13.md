@@ -29,7 +29,7 @@ audit:
 Let $f$ be analytic and suppose
 $$
 f(z)=1+2z+3z^2+\cdots
-\qquad(|z|<1).
+\qquad(\abs{z}<1).
 $$
 Define real numbers $a_0,a_1,a_2,\dots$ by
 $$

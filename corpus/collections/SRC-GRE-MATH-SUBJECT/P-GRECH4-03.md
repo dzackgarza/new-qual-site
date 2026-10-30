@@ -91,7 +91,7 @@ $$
 $$
 so integration on $x>0$ gives
 $$
-\log|y|=2\log x+C,
+\log\abs{y}=2\log x+C,
 $$
 and hence $y=cx^2$ for a constant $c$. The zero solution is obtained by taking $c=0$, so the same formula describes the full family.
 

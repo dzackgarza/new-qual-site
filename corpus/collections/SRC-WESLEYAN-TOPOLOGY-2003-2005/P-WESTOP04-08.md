@@ -69,7 +69,7 @@ C(F,s)
 \coloneqq
 \{
 x\in\{0,1\}^{\kappa}:
-x|_F=s
+x\restrict_F=s
 \}.
 $$
 Because
@@ -366,7 +366,7 @@ is an open bijection. Its inverse is therefore continuous.
 
 Taking
 $$
-\kappa=|\mathcal B|,
+\kappa=\cardinality{\mathcal B},
 $$
 the space $X$ is homeomorphic to a subspace of
 $$
@@ -388,11 +388,11 @@ e(X)
 $$
 Any indexing set of cardinality
 $$
-|\mathcal B|
+\cardinality{\mathcal B}
 $$
 gives a canonically homeomorphic product, so this is a generalized Cantor cube of exponent
 $$
-\kappa=|\mathcal B|.
+\kappa=\cardinality{\mathcal B}.
 $$
 
 :::

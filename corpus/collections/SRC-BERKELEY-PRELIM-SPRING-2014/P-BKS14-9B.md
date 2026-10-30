@@ -31,11 +31,11 @@ $$
 
 (a) Show that
 $$
-|G|=\sum_{g\in G}|\operatorname{Fix}_g(X)|.
+\cardinality{G}=\sum_{g\in G}\cardinality{\operatorname{Fix}_g(X)}.
 $$
 Hint: count $\{(x,g)\in X\times G:gx=x\}$ in two ways.
 
-(b) Show that if $|X|>1$, then some $g\in G$ fixes no point of $X$.
+(b) Show that if $\cardinality{X}>1$, then some $g\in G$ fixes no point of $X$.
 :::
 
 ::: {.solution}

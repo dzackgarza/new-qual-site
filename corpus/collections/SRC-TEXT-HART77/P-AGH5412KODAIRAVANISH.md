@@ -93,7 +93,7 @@ $$
 ::: {.pf-step #nonsingular-curve-in-class}
 The divisor class $D$ contains a nonsingular irreducible curve
 $$
-\boxed{C\in|D|.}
+\boxed{C\in\linearsystem{D}.}
 $$
 
 ::: pf-proof

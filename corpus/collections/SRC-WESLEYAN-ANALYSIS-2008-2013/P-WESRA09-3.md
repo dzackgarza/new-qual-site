@@ -143,14 +143,14 @@ The map $f$ is a continuous linear bijection between Banach spaces. The [[T-FO27
 
 ::: {.pf-step #s1-5}
 
-Every function in the uniform closure $\overline{\mathcal S}^{\|\cdot\|_\infty}$ vanishes at $0$.
+Every function in the uniform closure $\overline{\mathcal S}^{\norm{\cdot}_\infty}$ vanishes at $0$.
 
 
 ::: pf-proof
 
 Every $s\in\mathcal S$ satisfies $s(0)=0$. Evaluation at $0$ is continuous in the uniform norm, since
 $$
-|u(0)-v(0)|\le\|u-v\|_\infty.
+\abs{u(0)-v(0)}\le\norm{u-v}_\infty.
 $$
 Therefore every uniform limit of functions in $\mathcal S$ also vanishes at $0$.
 
@@ -160,22 +160,22 @@ Therefore every uniform limit of functions in $\mathcal S$ also vanishes at $0$.
 
 ::: {.pf-step #s1-6}
 
-Every $g\in C([-1,2],\RR)$ with $g(0)=0$ belongs to $\overline{\mathcal S}^{\|\cdot\|_\infty}$.
+Every $g\in C([-1,2],\RR)$ with $g(0)=0$ belongs to $\overline{\mathcal S}^{\norm{\cdot}_\infty}$.
 
 
 ::: pf-proof
 
 Fix $\varepsilon>0$. By the [[T-3QNBQ|Weierstrass approximation theorem]], choose a real polynomial $p$ such that
 $$
-\|g-p\|_\infty<\frac{\varepsilon}{4}.
+\norm{g-p}_\infty<\frac{\varepsilon}{4}.
 $$
-Since $g(0)=0$, one has $|p(0)|<\varepsilon/4$. Thus
+Since $g(0)=0$, one has $\abs{p(0)}<\varepsilon/4$. Thus
 $$
 r(x)=p(x)-p(0)
 $$
 satisfies $r(0)=0$ and
 $$
-\|g-r\|_\infty<\frac{\varepsilon}{2}.
+\norm{g-r}_\infty<\frac{\varepsilon}{2}.
 $$
 Write $r(x)=xh(x)$ for a real polynomial $h$. The function
 $$
@@ -183,23 +183,23 @@ H(t)=h(t^{1/3}),\qquad -1\le t\le8,
 $$
 is continuous. Applying Weierstrass again, choose a real polynomial $q$ such that
 $$
-\sup_{-1\le t\le8}|H(t)-q(t)|<\frac{\varepsilon}{4}.
+\sup_{-1\le t\le8}\abs{H(t)-q(t)}<\frac{\varepsilon}{4}.
 $$
 Then $xq(x^3)\in\mathcal S$, and for $x\in[-1,2]$,
 $$
 \begin{aligned}
-|r(x)-xq(x^3)|
-&=|x|\,|h(x)-q(x^3)|\\
-&=|x|\,|H(x^3)-q(x^3)|\\
+\abs{r(x)-xq(x^3)}
+&=\abs{x}\,\abs{h(x)-q(x^3)}\\
+&=\abs{x}\,\abs{H(x^3)-q(x^3)}\\
 &<2\cdot\frac{\varepsilon}{4}
 =\frac{\varepsilon}{2}.
 \end{aligned}
 $$
 Hence
 $$
-\|g-xq(x^3)\|_\infty<\varepsilon.
+\norm{g-xq(x^3)}_\infty<\varepsilon.
 $$
-Since $\varepsilon$ was arbitrary, $g\in\overline{\mathcal S}^{\|\cdot\|_\infty}$.
+Since $\varepsilon$ was arbitrary, $g\in\overline{\mathcal S}^{\norm{\cdot}_\infty}$.
 
 :::
 
@@ -210,7 +210,7 @@ Since $\varepsilon$ was arbitrary, $g\in\overline{\mathcal S}^{\|\cdot\|_\infty}
 The answer to part (d) is
 $$
 \boxed{
-\overline{\mathcal S}^{\|\cdot\|_\infty}
+\overline{\mathcal S}^{\norm{\cdot}_\infty}
 =\{g\in C([-1,2],\RR):g(0)=0\}}.
 $$
 

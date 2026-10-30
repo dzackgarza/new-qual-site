@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-A function $f \in C([0,1])$ is called Hölder continuous of order $\delta > 0$ if there is a constant $C > 0$ such that $|f(x) - f(y)| \leq C|x-y|^\delta$, $x, y \in [0,1]$. Show that the Hölder continuous functions form a set of the first category (a meager set) in $C([0,1])$.
+A function $f \in C([0,1])$ is called Hölder continuous of order $\delta > 0$ if there is a constant $C > 0$ such that $\abs{f(x) - f(y)} \leq C\abs{x-y}^\delta$, $x, y \in [0,1]$. Show that the Hölder continuous functions form a set of the first category (a meager set) in $C([0,1])$.
 :::
 
 ::: {.solution}
@@ -32,9 +32,9 @@ C([0,1])
 $$
 with the sup norm
 $$
-\|f\|_\infty
+\norm{f}_\infty
 =
-\sup_{x\in[0,1]}|f(x)|.
+\sup_{x\in[0,1]}\abs{f(x)}.
 $$
 
 For integers
@@ -48,9 +48,9 @@ A_{m,k}
 =
 \left\{
 f\in C([0,1]):
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
-k|x-y|^{1/m}
+k\abs{x-y}^{1/m}
 \text{ for all }x,y\in[0,1]
 \right\}.}
 $$
@@ -69,9 +69,9 @@ $$
 
 Let $f$ be Hölder continuous of order $\delta>0$. Then there exists $C>0$ such that
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
-C|x-y|^\delta.
+C\abs{x-y}^\delta.
 $$
 
 Choose $m$ so large that
@@ -82,21 +82,21 @@ and choose an integer $k\ge C$.
 
 Since
 $$
-0\le|x-y|\le1,
+0\le\abs{x-y}\le1,
 $$
 and $\delta\ge1/m$,
 $$
-|x-y|^\delta
+\abs{x-y}^\delta
 \le
-|x-y|^{1/m}.
+\abs{x-y}^{1/m}.
 $$
 Therefore
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
-C|x-y|^\delta
+C\abs{x-y}^\delta
 \le
-k|x-y|^{1/m},
+k\abs{x-y}^{1/m},
 $$
 so $f\in A_{m,k}$.
 
@@ -144,9 +144,9 @@ uniformly.
 
 For fixed $x,y\in[0,1]$,
 $$
-|f_j(x)-f_j(y)|
+\abs{f_j(x)-f_j(y)}
 \le
-k|x-y|^{1/m}.
+k\abs{x-y}^{1/m}.
 $$
 Uniform convergence implies pointwise convergence, so
 $$
@@ -156,9 +156,9 @@ f_j(y)\to f(y).
 $$
 Passing to the limit gives
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
-k|x-y|^{1/m}.
+k\abs{x-y}^{1/m}.
 $$
 Since $x,y$ were arbitrary,
 $$
@@ -173,9 +173,9 @@ $$
 
 By uniform continuity of $f$, there exists $\eta>0$ such that
 $$
-|x-y|<\eta
+\abs{x-y}<\eta
 \Longrightarrow
-|f(x)-f(y)|<\frac{\varepsilon}{4}.
+\abs{f(x)-f(y)}<\frac{\varepsilon}{4}.
 $$
 
 
@@ -277,7 +277,7 @@ The sum of continuous functions is continuous.
 One has
 $$
 \boxed{
-\|g-f\|_\infty
+\norm{g-f}_\infty
 \le
 \frac{\varepsilon}{2}
 <
@@ -293,9 +293,9 @@ $$
 $$
 Thus
 $$
-\|g-f\|_\infty
+\norm{g-f}_\infty
 =
-\|\varphi\|_\infty
+\norm{\varphi}_\infty
 \le
 \frac{\varepsilon}{2}.
 $$
@@ -309,7 +309,7 @@ $$
 The oscillation of $f$ between $x_0$ and $x_1$ satisfies
 $$
 \boxed{
-|f(x_1)-f(x_0)|
+\abs{f(x_1)-f(x_0)}
 <
 \frac{\varepsilon}{4}.}
 $$
@@ -319,7 +319,7 @@ $$
 
 By step [](#s1-6){.pf-ref},
 $$
-|x_1-x_0|=h<\eta.
+\abs{x_1-x_0}=h<\eta.
 $$
 Apply step [](#s1-4){.pf-ref}.
 
@@ -331,11 +331,11 @@ Apply step [](#s1-4){.pf-ref}.
 
 Therefore
 $$
-|g(x_1)-g(x_0)|
+\abs{g(x_1)-g(x_0)}
 \ge
 \frac{\varepsilon}{2}
 -
-|f(x_1)-f(x_0)|.
+\abs{f(x_1)-f(x_0)}.
 $$
 
 
@@ -358,7 +358,7 @@ Apply the reverse triangle inequality.
 Hence
 $$
 \boxed{
-|g(x_1)-g(x_0)|
+\abs{g(x_1)-g(x_0)}
 >
 \frac{\varepsilon}{4}.}
 $$
@@ -377,7 +377,7 @@ Use step [](#s1-10){.pf-ref} in step [](#s1-11){.pf-ref}.
 But
 $$
 \boxed{
-k|x_1-x_0|^{1/m}
+k\abs{x_1-x_0}^{1/m}
 =
 k h^{1/m}
 <
@@ -397,9 +397,9 @@ Use steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 Therefore
 $$
-|g(x_1)-g(x_0)|
+\abs{g(x_1)-g(x_0)}
 >
-k|x_1-x_0|^{1/m}.
+k\abs{x_1-x_0}^{1/m}.
 $$
 
 
@@ -437,7 +437,7 @@ Thus every open ball around every $f\in A_{m,k}$ contains a point outside $A_{m,
 
 Given any $\varepsilon>0$, steps [](#s1-8){.pf-ref} through [](#s1-15){.pf-ref} construct $g$ with
 $$
-\|g-f\|_\infty<\varepsilon
+\norm{g-f}_\infty<\varepsilon
 $$
 but
 $$

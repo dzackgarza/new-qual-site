@@ -30,7 +30,7 @@ $$
 X = \{ ( g , h ) \in G \times G : g h = h g \} .
 $$
 
-Prove that $| X | = c | G |$ where c is the number of conjugacy classes in G.
+Prove that $\cardinality{ X } = c \cardinality{ G }$ where c is the number of conjugacy classes in G.
 
 (b) Compute the number of pairs of commuting permutations on five letters.
 :::
@@ -41,38 +41,38 @@ Prove that $| X | = c | G |$ where c is the number of conjugacy classes in G.
 ::: pf
 
 ::: {.pf-step #centralizer-count}
-For each $g\in G$, the number of elements commuting with $g$ is $|C_G(g)|$.
+For each $g\in G$, the number of elements commuting with $g$ is $\cardinality{C_G(g)}$.
 
 ::: pf-proof
 By definition,
 $$
 C_G(g)=\{h\in G:hg=gh\}.
 $$
-Thus for fixed $g$, exactly $|C_G(g)|$ pairs in $X$ have first coordinate $g$.
+Thus for fixed $g$, exactly $\cardinality{C_G(g)}$ pairs in $X$ have first coordinate $g$.
 Consequently
 $$
-|X|=\sum_{g\in G}|C_G(g)|.
+\cardinality{X}=\sum_{g\in G}\cardinality{C_G(g)}.
 $$
 :::
 
 :::
 
 ::: {.pf-step #conjugacy-class-contributes-G}
-Each conjugacy class contributes exactly $|G|$ to this sum.
+Each conjugacy class contributes exactly $\cardinality{G}$ to this sum.
 
 ::: pf-proof
 Let $K$ be the conjugacy class of an element $g$.
 Centralizer size is constant on conjugacy classes, so
 $$
-\sum_{x\in K}|C_G(x)|=|K|\,|C_G(g)|.
+\sum_{x\in K}\cardinality{C_G(x)}=\cardinality{K}\,\cardinality{C_G(g)}.
 $$
 By the orbit-stabilizer theorem for the conjugation action,
 $$
-|K|=[G:C_G(g)],
+\cardinality{K}=[G:C_G(g)],
 $$
 and hence
 $$
-|K|\,|C_G(g)|=|G|.
+\cardinality{K}\,\cardinality{C_G(g)}=\cardinality{G}.
 $$
 :::
 
@@ -81,12 +81,12 @@ $$
 ::: {.pf-step #X-equals-cG}
 If $c$ is the number of conjugacy classes of $G$, then
 $$
-|X|=c|G|.
+\cardinality{X}=c\cardinality{G}.
 $$
 
 ::: pf-proof
 Partition the sum in step [](#centralizer-count){.pf-ref} by conjugacy classes.
-By step [](#conjugacy-class-contributes-G){.pf-ref} each of the $c$ classes contributes $|G|$, giving the formula.
+By step [](#conjugacy-class-contributes-G){.pf-ref} each of the $c$ classes contributes $\cardinality{G}$, giving the formula.
 :::
 
 :::
@@ -101,9 +101,9 @@ $$
 5,\ 4+1,\ 3+2,\ 3+1+1,\ 2+2+1,\ 2+1+1+1,\ 1+1+1+1+1.
 $$
 Thus $c=7$.
-Since $|S_5|=5!=120$, step [](#X-equals-cG){.pf-ref} gives
+Since $\cardinality{S_5}=5!=120$, step [](#X-equals-cG){.pf-ref} gives
 $$
-|X|=7\cdot120=\boxed{840}.
+\cardinality{X}=7\cdot120=\boxed{840}.
 $$
 :::
 

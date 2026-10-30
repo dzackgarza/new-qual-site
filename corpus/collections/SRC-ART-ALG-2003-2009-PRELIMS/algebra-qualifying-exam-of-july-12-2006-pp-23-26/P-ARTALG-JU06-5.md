@@ -93,7 +93,7 @@ $$
 For every intermediate field $E$, the extension $K/E$ is
 Galois. With $H=\operatorname{Gal}(K/E)$, the degree formulas are
 $$
-[K:E]=|H|,\qquad [E:F]=[G:H],\qquad [K:F]=|G|.
+[K:E]=\cardinality{H},\qquad [E:F]=[G:H],\qquad [K:F]=\cardinality{G}.
 $$
 
 :::

@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ONXNRKJ737
 kind: problem
-title: The sum of group elements is central and nilpotent in $\FF[G]$ when
-  $\mathrm{char}\,\FF=p$ and $|G|=p^n$, so $\FF[G]$ is not semisimple
+title: The sum of group elements is central and nilpotent in $\FF[G]$ when $\mathrm{char}\,\FF=p$ and $\cardinality{G}=p^n$, so $\FF[G]$ is not semisimple
 classification:
   areas:
   - algebra
@@ -107,7 +106,7 @@ Using $xu=u$ for every $x\in G$,
 $$
 u^2=\left(\sum_{x\in G}x\right)u
 =\sum_{x\in G}u
-=|G|u=p^n u=0
+=\cardinality{G}u=p^n u=0
 $$
 because $\operatorname{char}\FF=p$. Thus one may take $k=2$. Since $Ru=\FF u$ by step [](#s2){.pf-ref}, every product of two elements of $Ru$ is a scalar multiple of $u^2$, hence is zero.
 

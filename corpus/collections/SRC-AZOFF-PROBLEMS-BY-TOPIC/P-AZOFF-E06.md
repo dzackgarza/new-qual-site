@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E06
 kind: problem
-title: Entire functions with $|f(z)|\ge|z|$
+title: Entire functions with $\abs{f(z)}\ge\abs{z}$
 classification:
   areas: [complex-analysis]
   topics: []

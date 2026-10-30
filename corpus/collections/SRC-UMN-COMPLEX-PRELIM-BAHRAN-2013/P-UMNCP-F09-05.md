@@ -52,7 +52,7 @@ The function $f$ is entire by hypothesis, multiplication by $i$ preserves entire
 
 The function $g$ is bounded:
 $$
-\boxed{|g(z)|<1}
+\boxed{\abs{g(z)}<1}
 $$
 for every $z\in\CC$.
 
@@ -75,9 +75,9 @@ iu(z)-v(z),
 $$
 so
 $$
-|g(z)|
+\abs{g(z)}
 =
-|e^{iu(z)-v(z)}|
+\abs{e^{iu(z)-v(z)}}
 =
 e^{-v(z)}
 <1.

@@ -35,7 +35,7 @@ Explain precisely which theorems from calculus you use and why they apply.
 
 ::: {.solution}
 
-Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\RR)$, for example the operator norm induced by the Euclidean norm.
+Fix any submultiplicative matrix norm $\norm{\cdot}$ on $M_n(\RR)$, for example the operator norm induced by the Euclidean norm.
 
 ::: pf
 
@@ -47,24 +47,24 @@ E(t)
 =
 \sum_{k=0}^{\infty}\frac{A^kt^k}{k!}
 $$
-converges uniformly for $|t|\le R$.
+converges uniformly for $\abs{t}\le R$.
 
 
 ::: pf-proof
 
-For $|t|\le R$,
+For $\abs{t}\le R$,
 $$
-\left\|
+\norm{
 \frac{A^kt^k}{k!}
-\right\|
+}
 \le
-\frac{\|A\|^kR^k}{k!}.
+\frac{\norm{A}^kR^k}{k!}.
 $$
 The scalar series
 $$
-\sum_{k=0}^{\infty}\frac{\|A\|^kR^k}{k!}
+\sum_{k=0}^{\infty}\frac{\norm{A}^kR^k}{k!}
 =
-e^{\|A\|R}
+e^{\norm{A}R}
 $$
 converges. The Weierstrass $M$-test therefore gives uniform convergence of the matrix series on $[-R,R]$, equivalently uniform convergence of each entry series.
 
@@ -79,25 +79,25 @@ $$
 \sum_{k=1}^{\infty}
 \frac{kA^kt^{k-1}}{k!},
 $$
-also converges uniformly for $|t|\le R$.
+also converges uniformly for $\abs{t}\le R$.
 
 
 ::: pf-proof
 
-For $|t|\le R$,
+For $\abs{t}\le R$,
 $$
-\left\|
+\norm{
 \frac{kA^kt^{k-1}}{k!}
-\right\|
+}
 \le
-\frac{\|A\|^kR^{k-1}}{(k-1)!}.
+\frac{\norm{A}^kR^{k-1}}{(k-1)!}.
 $$
 The scalar majorant satisfies
 $$
 \sum_{k=1}^{\infty}
-\frac{\|A\|^kR^{k-1}}{(k-1)!}
+\frac{\norm{A}^kR^{k-1}}{(k-1)!}
 =
-\|A\|e^{\|A\|R},
+\norm{A}e^{\norm{A}R},
 $$
 so the Weierstrass $M$-test again gives uniform convergence.
 

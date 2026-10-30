@@ -48,7 +48,7 @@ Any two elements are $g^a,g^b$, and $g^ag^b=g^{a+b}=g^bg^a$.
 
 ::: pf-proof
 If $H=\{e\}$, then $H=\langle e\rangle$.
-Otherwise $H$ contains some $g^k$ with $k\neq0$, hence also $g^{|k|}$, so let $m$ be the least positive integer with $g^m\in H$.
+Otherwise $H$ contains some $g^k$ with $k\neq0$, hence also $g^{\abs{k}}$, so let $m$ be the least positive integer with $g^m\in H$.
 For $g^k\in H$, write $k=qm+r$ with $0\le r<m$; then $g^r=g^k(g^m)^{-q}\in H$, so $r=0$ by minimality.
 Hence $H=\langle g^m\rangle$.
 :::
@@ -56,11 +56,11 @@ Hence $H=\langle g^m\rangle$.
 :::
 
 ::: {.pf-step #phi-n-formula}
-(c) $\phi(n)=|(\ZZ/n\ZZ)^\times|=n\prod_{p\mid n}\left(1-\frac1p\right)$.
+(c) $\phi(n)=\cardinality{(\ZZ/n\ZZ)^\times}=n\prod_{p\mid n}\left(1-\frac1p\right)$.
 
 ::: pf-proof
 For $n=\prod_i p_i^{a_i}$, the Chinese remainder theorem gives $(\ZZ/n\ZZ)^\times\cong\prod_i(\ZZ/p_i^{a_i}\ZZ)^\times$.
-The nonunits of $\ZZ/p^a\ZZ$ are the $p^{a-1}$ multiples of $p$, so $|(\ZZ/p^a\ZZ)^\times|=p^a-p^{a-1}=p^a(1-1/p)$.
+The nonunits of $\ZZ/p^a\ZZ$ are the $p^{a-1}$ multiples of $p$, so $\cardinality{(\ZZ/p^a\ZZ)^\times}=p^a-p^{a-1}=p^a(1-1/p)$.
 Multiplying over the prime powers dividing $n$ gives the formula.
 :::
 

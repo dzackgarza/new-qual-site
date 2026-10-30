@@ -16,7 +16,7 @@ Find the value of $\textstyle \sum _ { n = 1 } ^ { \infty } n ^ { 2 } x ^ { n }$
 :::
 
 ::: {.solution}
-The geometric series converges for $| x | < 1 ;$ we can differentiate the series term-by-term without affecting the radius of convergence.
+The geometric series converges for $\abs{ x } < 1 ;$ we can differentiate the series term-by-term without affecting the radius of convergence.
 We see
 
 $$

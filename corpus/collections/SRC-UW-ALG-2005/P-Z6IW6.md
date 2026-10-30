@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-Z6IW6
 kind: problem
-title: The kernel of a surjection $\ZZ^m\to G$ onto a finite abelian group is isomorphic
-  to $\ZZ^m$, with $|\det A|=|G|$
+title: The kernel of a surjection $\ZZ^m\to G$ onto a finite abelian group is isomorphic to $\ZZ^m$, with $\abs{\det A}=\cardinality{G}$
 classification:
   areas:
   - algebra
@@ -28,7 +27,7 @@ Let $K$ be the kernel of $f$.
 - Prove that $K$ is isomorphic to $\ZZ^m$.
 
 - We can therefore write the inclusion map $K\rightarrow\ZZ^m$ as $\ZZ^m\rightarrow\ZZ^m$ and represent it by an $m\times m$ integer matrix $A$.
-  Prove that $|\det A|=|G|$.
+  Prove that $\abs{\det A}=\cardinality{G}$.
 :::
 
 ::: {.solution}
@@ -111,7 +110,7 @@ $$
 be a Smith normal form of $A$, with $U,V\in\operatorname{GL}_m(\ZZ)$ and each $d_i>0$.
 Then
 $$
-|G|=d_1\cdots d_m.
+\cardinality{G}=d_1\cdots d_m.
 $$
 
 ::: pf-proof
@@ -123,7 +122,7 @@ G\cong \ZZ^m/A\ZZ^m
 $$
 Therefore
 $$
-|G|=\prod_{i=1}^m d_i.
+\cardinality{G}=\prod_{i=1}^m d_i.
 $$
 :::
 
@@ -132,20 +131,20 @@ $$
 ::: pf-step
 Finally,
 $$
-|\det A|=|G|.
+\abs{\det A}=\cardinality{G}.
 $$
 
 ::: pf-proof
 Since $U$ and $V$ are unimodular,
 $$
-|\det U|=|\det V|=1.
+\abs{\det U}=\abs{\det V}=1.
 $$
 Thus
 $$
-|\det A|
-=|\det(UAV)|
+\abs{\det A}
+=\abs{\det(UAV)}
 =\prod_{i=1}^m d_i
-=|G|
+=\cardinality{G}
 $$
 by step [](#s5){.pf-ref}.
 :::

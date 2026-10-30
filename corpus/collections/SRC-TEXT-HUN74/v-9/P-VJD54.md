@@ -64,7 +64,7 @@ $$
 For every finite extension, the number of $K$-automorphisms is at most its
 degree, so
 $$
-n!=|\operatorname{Aut}_K(F)|\le [F:K]\le n!.
+n!=\cardinality{\operatorname{Aut}_K(F)}\le [F:K]\le n!.
 $$
 Hence equality holds throughout. A finite extension has as many
 $K$-automorphisms as its degree exactly when it is Galois. Thus $F/K$ is

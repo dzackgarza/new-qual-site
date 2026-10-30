@@ -53,14 +53,14 @@ $$
 
 ::: {.pf-step #s2}
 
-If $|F|=q$ and $[E:F]=n$, then $|E|=q^n$ and every element of $E$ is a root of
+If $\cardinality{F}=q$ and $[E:F]=n$, then $\cardinality{E}=q^n$ and every element of $E$ is a root of
 $$
 g(x)=x^{q^n}-x\in F[x].
 $$
 
 ::: pf-proof
 
-The field $E$ is an $n$-dimensional vector space over the $q$-element field $F$, so $|E|=q^n$. For $a\in E^\times$, Lagrange's theorem in the finite group $E^\times$ gives
+The field $E$ is an $n$-dimensional vector space over the $q$-element field $F$, so $\cardinality{E}=q^n$. For $a\in E^\times$, Lagrange's theorem in the finite group $E^\times$ gives
 $$
 a^{q^n-1}=1,
 $$

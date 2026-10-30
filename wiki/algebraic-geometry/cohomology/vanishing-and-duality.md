@@ -12,7 +12,7 @@ topics:
 [[T-5IOUR]]
 
 The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideal sheaves.
-It fails without quasicompactness: $X=\coprod_{n\in\NN}\Spec k$ has $H^p(X,\mcf)=\prod_nH^p(\Spec k,\mcf|_{\Spec k})=0$ for every quasicoherent $\mcf$ on $X$ and every $p>0$, and $X$ is not quasicompact, hence not affine.
+It fails without quasicompactness: $X=\coprod_{n\in\NN}\Spec k$ has $H^p(X,\mcf)=\prod_nH^p(\Spec k,\mcf\restrict_{\Spec k})=0$ for every quasicoherent $\mcf$ on $X$ and every $p>0$, and $X$ is not quasicompact, hence not affine.
 
 ## Serre duality and Riemann--Roch for curves
 

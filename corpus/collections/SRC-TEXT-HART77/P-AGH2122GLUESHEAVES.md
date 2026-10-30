@@ -67,9 +67,9 @@ such that for every pair $i,j$,
 $$
 \boxed{
 \phi_{ij}
-\bigl(s_i|_{V\cap U_i\cap U_j}\bigr)
+\bigl(s_i\restrict_{V\cap U_i\cap U_j}\bigr)
 =
-s_j|_{V\cap U_i\cap U_j}.
+s_j\restrict_{V\cap U_i\cap U_j}.
 }
 $$
 
@@ -93,17 +93,17 @@ s=(s_i)_i\in\mathcal F(V).
 $$
 Define
 $$
-s|_W
+s\restrict_W
 =
-\bigl(s_i|_{W\cap U_i}\bigr)_i.
+\bigl(s_i\restrict_{W\cap U_i}\bigr)_i.
 $$
 
 For every $i,j$, restriction of the compatibility equation from step [](#s1){.pf-ref} gives
 $$
 \phi_{ij}
-\bigl(s_i|_{W\cap U_i\cap U_j}\bigr)
+\bigl(s_i\restrict_{W\cap U_i\cap U_j}\bigr)
 =
-s_j|_{W\cap U_i\cap U_j},
+s_j\restrict_{W\cap U_i\cap U_j},
 $$
 because $\phi_{ij}$ is a morphism of sheaves and hence commutes with restrictions.  Thus the restricted tuple lies in $\mathcal F(W)$.
 
@@ -133,9 +133,9 @@ in $\mathcal F(V)$ have equal restrictions to every $V_\alpha$.
 
 Fix $i$.  Then
 $$
-s_i|_{V_\alpha\cap U_i}
+s_i\restrict_{V_\alpha\cap U_i}
 =
-t_i|_{V_\alpha\cap U_i}
+t_i\restrict_{V_\alpha\cap U_i}
 $$
 for every $\alpha$.  The opens $V_\alpha\cap U_i$ cover $V\cap U_i$, and $\mathcal F_i$ is a sheaf, so
 $$
@@ -231,7 +231,7 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the presheaf 
 For every $i$, projection to the $i$th component defines a morphism of sheaves on $U_i$,
 $$
 \psi_i:
-\mathcal F|_{U_i}
+\mathcal F\restrict_{U_i}
 \longrightarrow
 \mathcal F_i.
 $$
@@ -275,7 +275,7 @@ $$
 s_j
 =
 \phi_{ij}
-\bigl(t|_{V\cap U_j}\bigr)
+\bigl(t\restrict_{V\cap U_j}\bigr)
 \in
 \mathcal F_j(V\cap U_j).
 $$
@@ -354,7 +354,7 @@ is unique up to a unique isomorphism compatible with all the $\psi_i$.
 
 Suppose $\mathcal G$ is another sheaf on $X$ with isomorphisms
 $$
-\chi_i:\mathcal G|_{U_i}\xrightarrow{\sim}\mathcal F_i
+\chi_i:\mathcal G\restrict_{U_i}\xrightarrow{\sim}\mathcal F_i
 $$
 satisfying
 $$
@@ -371,7 +371,7 @@ $$
 \Theta_V(t)
 =
 \left(
-\chi_i(t|_{V\cap U_i})
+\chi_i(t\restrict_{V\cap U_i})
 \right)_i.
 $$
 The overlap condition on the $\chi_i$ says exactly that this tuple is compatible in the sense of step [](#s1){.pf-ref}.  Hence
@@ -385,7 +385,7 @@ $$
 
 On $U_i$ one has
 $$
-\psi_i\circ\Theta|_{U_i}
+\psi_i\circ\Theta\restrict_{U_i}
 =\chi_i.
 $$
 Since both $\psi_i$ and $\chi_i$ are isomorphisms, $\Theta$ restricts to an isomorphism on every member of the cover.  A morphism of sheaves which is locally an isomorphism on an open cover is an isomorphism globally.
@@ -396,9 +396,9 @@ $$
 $$
 is another morphism compatible with all local identifications, then
 $$
-\Theta'|_{U_i}
+\Theta'\restrict_{U_i}
 =\psi_i^{-1}\chi_i
-=\Theta|_{U_i}
+=\Theta\restrict_{U_i}
 $$
 for every $i$.  Since the $U_i$ cover $X$, the two sheaf morphisms are equal.  Thus the compatible isomorphism is unique.
 
@@ -411,7 +411,7 @@ for every $i$.  Since the $U_i$ cover $X$, the two sheaf morphisms are equal.  T
 Therefore the sheaves $\mathcal F_i$ glue along the cocycle $\phi_{ij}$ to a sheaf $\mathcal F$ on $X$, uniquely up to the unique compatible isomorphism:
 $$
 \boxed{
-\mathcal F|_{U_i}\cong\mathcal F_i,
+\mathcal F\restrict_{U_i}\cong\mathcal F_i,
 \qquad
 \psi_j=\phi_{ij}\psi_i.
 }

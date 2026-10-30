@@ -32,6 +32,6 @@ $$
 where again $C > 0$ . Plugging in $y ( 1 ) = 1$ shows that $D - C = 1 { \mathrm { ~ s o ~ } } D = 1 + C$ . So the set of all such solutions is
 
 $$
-{ \Bigg | } y ( x ) = { \frac { 1 } { 1 + C ( 1 - x ) } } , { \Bigg | } \quad \mathrm { f o r } \ C > 0 .
+\boxed{ y ( x ) = { \frac { 1 } { 1 + C ( 1 - x ) } } } , \quad \mathrm { f o r } \ C > 0 .
 $$
 :::

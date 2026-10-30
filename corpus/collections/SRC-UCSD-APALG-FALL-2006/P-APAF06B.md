@@ -62,7 +62,7 @@ properties of the adjoint and $U^* U = I_n$.
 
 ::: pf-step
 
-Since $x^* (A^* A) x = \|Ax\|^2 \ge 0$, $A^* A$ is a Hermitian positive semidefinite matrix in $M_n$.
+Since $x^* (A^* A) x = \norm{Ax}^2 \ge 0$, $A^* A$ is a Hermitian positive semidefinite matrix in $M_n$.
 
 ::: pf-proof
 

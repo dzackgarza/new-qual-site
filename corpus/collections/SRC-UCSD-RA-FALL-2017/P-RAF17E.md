@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $g : \RR^d \to \RR^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $|g(x)| \leq M$ for $m$-a.e. $x \in \RR^d$.
+Let $g : \RR^d \to \RR^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $\abs{g(x)} \leq M$ for $m$-a.e. $x \in \RR^d$.
 For $f \in L^1(m) := L^1(\RR^d, m)$, let
 $$
 (f * g)(x) = \int_{\RR^d} f(x-y)g(y)\,dy.
 $$
 
-1. Show $(f * g)(x)$ is well defined (i.e. the integral exists) and $|(f * g)(x)| \leq M\|f\|_1$ for all $x \in \RR^d$.
+1. Show $(f * g)(x)$ is well defined (i.e. the integral exists) and $\abs{(f * g)(x)} \leq M\norm{f}_1$ for all $x \in \RR^d$.
 
 2. Show $(f * g)(x)$ may also be written as
 $$
@@ -54,13 +54,13 @@ Prove existence and the uniform bound.
 
 For every $x\in\RR^d$,
 $$
-\int_{\RR^d}|f(x-y)g(y)|\,dy
-\le M\int_{\RR^d}|f(x-y)|\,dy
-=M\|f\|_1<\infty.
+\int_{\RR^d}\abs{f(x-y)g(y)}\,dy
+\le M\int_{\RR^d}\abs{f(x-y)}\,dy
+=M\norm{f}_1<\infty.
 $$
 Thus $(f*g)(x)$ is well defined for every $x$, and
 $$
-\boxed{|(f*g)(x)|\le M\|f\|_1.}
+\boxed{\abs{(f*g)(x)}\le M\norm{f}_1.}
 $$
 
 :::
@@ -97,14 +97,14 @@ Prove continuity for $f_n\in C_c(\RR^d)$.
 For $h\in\RR^d$,
 $$
 \begin{aligned}
-|(f_n*g)(x+h)-(f_n*g)(x)|
-&\le M\int_{\RR^d}|f_n(x+h-y)-f_n(x-y)|\,dy\\
-&=M\|\tau_h f_n-f_n\|_1,
+\abs{(f_n*g)(x+h)-(f_n*g)(x)}
+&\le M\int_{\RR^d}\abs{f_n(x+h-y)-f_n(x-y)}\,dy\\
+&=M\norm{\tau_h f_n-f_n}_1,
 \end{aligned}
 $$
 where $(\tau_hf_n)(z)=f_n(z+h)$. Since $f_n\in L^1$, translations are continuous in $L^1$:
 $$
-\|\tau_hf_n-f_n\|_1\longrightarrow0
+\norm{\tau_hf_n-f_n}_1\longrightarrow0
 \qquad(h\to0).
 $$
 The bound is independent of $x$, so $f_n*g$ is in fact uniformly continuous.
@@ -121,12 +121,12 @@ Approximate a general $f\in L^1$ by compactly supported continuous functions.
 
 Choose $f_n\in C_c(\RR^d)$ such that
 $$
-\|f_n-f\|_1\longrightarrow0.
+\norm{f_n-f}_1\longrightarrow0.
 $$
 By Step 1 applied to $f_n-f$,
 $$
-\sup_{x\in\RR^d}|(f_n*g)(x)-(f*g)(x)|
-\le M\|f_n-f\|_1
+\sup_{x\in\RR^d}\abs{(f_n*g)(x)-(f*g)(x)}
+\le M\norm{f_n-f}_1
 \longrightarrow0.
 $$
 Thus $f_n*g\to f*g$ uniformly. Each $f_n*g$ is continuous by Step 3, so the uniform limit $f*g$ is continuous. Hence

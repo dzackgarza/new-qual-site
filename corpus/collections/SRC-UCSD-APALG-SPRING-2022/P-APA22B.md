@@ -23,7 +23,7 @@ Prove that $\phi \colon V \to V$ is unitary if and only if $\sigma_i = 1$ for al
 
 Now let $W = \CC^{100}$, considered as an inner product space with its usual inner product (i.e., dot product).
 
-(b) Suppose $\psi \colon W \to W$ is a linear map such that (a) $\|\psi\|_{\mathrm{Frob}} = 30$, and (b) $\|\psi\|_{\mathrm{op}} \leq 3$, where $\|\psi\|_{\mathrm{op}}$ denotes the operator norm with respect to the usual $\ell^2$-norm on $W$.
+(b) Suppose $\psi \colon W \to W$ is a linear map such that (a) $\norm{\psi}_{\mathrm{Frob}} = 30$, and (b) $\norm{\psi}_{\mathrm{op}} \leq 3$, where $\norm{\psi}_{\mathrm{op}}$ denotes the operator norm with respect to the usual $\ell^2$-norm on $W$.
 Using (a), or otherwise, prove that $\psi$ is diagonalizable.
 :::
 

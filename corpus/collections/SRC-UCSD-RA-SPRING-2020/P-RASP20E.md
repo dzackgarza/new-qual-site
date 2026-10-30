@@ -28,7 +28,7 @@ Let $f \in C^1(\circlegroup)$.
 Let $\hat{f}(k)$ ($k \in \ZZ$) be the Fourier coefficients of $f$.
 Prove that
 $$
-\sum_{k=-\infty}^{\infty} |\hat{f}(k)| \leq \|f\|_{L^1(\circlegroup)} + \frac{1}{\sqrt{2}\pi}\|f'\|_{L^2(\circlegroup)} \sqrt{\sum_{k=1}^{\infty} \frac{1}{k^2}}.
+\sum_{k=-\infty}^{\infty} \abs{\hat{f}(k)} \leq \norm{f}_{L^1(\circlegroup)} + \frac{1}{\sqrt{2}\pi}\norm{f'}_{L^2(\circlegroup)} \sqrt{\sum_{k=1}^{\infty} \frac{1}{k^2}}.
 $$
 :::
 
@@ -48,9 +48,9 @@ $$
 $$
 we have
 $$
-|\widehat f(0)|
-=\left|\int_0^1f(x)\,dx\right|
-\le \|f\|_{L^1(\circlegroup)}.
+\abs{\widehat f(0)}
+=\abs{\int_0^1f(x)\,dx}
+\le \norm{f}_{L^1(\circlegroup)}.
 $$
 
 :::
@@ -70,31 +70,31 @@ $$
 $$
 Hence
 $$
-|\widehat f(k)|
-=\frac{|\widehat{f'}(k)|}{2\pi|k|}.
+\abs{\widehat f(k)}
+=\frac{\abs{\widehat{f'}(k)}}{2\pi\abs{k}}.
 $$
 Therefore, by Cauchy--Schwarz,
 $$
 \begin{aligned}
-\sum_{k\ne0}|\widehat f(k)|
+\sum_{k\ne0}\abs{\widehat f(k)}
 &\le \frac1{2\pi}
-\left(\sum_{k\ne0}|\widehat{f'}(k)|^2\right)^{1/2}
+\left(\sum_{k\ne0}\abs{\widehat{f'}(k)}^2\right)^{1/2}
 \left(\sum_{k\ne0}\frac1{k^2}\right)^{1/2}\\
 &=\frac1{2\pi}
-\left(\sum_{k\ne0}|\widehat{f'}(k)|^2\right)^{1/2}
+\left(\sum_{k\ne0}\abs{\widehat{f'}(k)}^2\right)^{1/2}
 \sqrt{2\sum_{k=1}^\infty\frac1{k^2}}.
 \end{aligned}
 $$
 By Parseval,
 $$
-\sum_{k\in\ZZ}|\widehat{f'}(k)|^2
-=\|f'\|_2^2.
+\sum_{k\in\ZZ}\abs{\widehat{f'}(k)}^2
+=\norm{f'}_2^2.
 $$
 Thus
 $$
-\sum_{k\ne0}|\widehat f(k)|
+\sum_{k\ne0}\abs{\widehat f(k)}
 \le
-\frac1{\sqrt2\,\pi}\|f'\|_2
+\frac1{\sqrt2\,\pi}\norm{f'}_2
 \sqrt{\sum_{k=1}^\infty\frac1{k^2}}.
 $$
 
@@ -111,9 +111,9 @@ Combine the estimates.
 Adding the zero mode from Step 1 yields
 $$
 \boxed{
-\sum_{k=-\infty}^\infty|\widehat f(k)|
-\le \|f\|_1
-+\frac1{\sqrt2\,\pi}\|f'\|_2
+\sum_{k=-\infty}^\infty\abs{\widehat f(k)}
+\le \norm{f}_1
++\frac1{\sqrt2\,\pi}\norm{f'}_2
 \sqrt{\sum_{k=1}^\infty\frac1{k^2}}.}
 $$
 In particular the Fourier series is absolutely convergent.

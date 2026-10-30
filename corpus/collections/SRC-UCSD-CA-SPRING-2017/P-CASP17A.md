@@ -26,14 +26,14 @@ $$
 F(z)=\frac{e^{iz}}{(1+z^2)^2}
 $$
 over the upper semicircle. The arc contribution tends to $0$ by Jordan's
-lemma (or directly from $|e^{iz}|=e^{-\operatorname{Im}z}$). The only pole in
+lemma (or directly from $\abs{e^{iz}}=e^{-\operatorname{Im}z}$). The only pole in
 the upper half-plane is the double pole at $z=i$. Since
 $$
 F(z)=\frac{e^{iz}}{(z-i)^2(z+i)^2},
 $$
 $$
 \operatorname{Res}_{z=i}F
-=\left.\frac{d}{dz}\frac{e^{iz}}{(z+i)^2}\right|_{z=i}
+=\evaluated{\frac{d}{dz}\frac{e^{iz}}{(z+i)^2}}_{z=i}
 =-\frac{i}{2e}.
 $$
 Hence

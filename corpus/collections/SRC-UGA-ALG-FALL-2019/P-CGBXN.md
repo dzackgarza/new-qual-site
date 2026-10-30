@@ -41,13 +41,13 @@ The field $E = F(\omega)$ is a finite field extension of $F = \FF_q$ of degree $
 
 ::: pf-step
 
-The cardinality of $E$ is $|E| = |F|^k = q^k$.
+The cardinality of $E$ is $\cardinality{E} = \cardinality{F}^k = q^k$.
 
 :::
 
 ::: pf-step
 
-The multiplicative group of units $E^\times = E \setminus \{0\}$ has order $|E^\times| = q^k - 1$.
+The multiplicative group of units $E^\times = E \setminus \{0\}$ has order $\cardinality{E^\times} = q^k - 1$.
 
 :::
 

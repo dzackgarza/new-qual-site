@@ -62,7 +62,7 @@ $$
 
 (c) When these equivalent conditions hold, every $\sigma\in G$ satisfies $\sigma(E)=E$, so restriction gives a homomorphism
 $$
-\rho:G\to\Gal(E/F),\qquad \sigma\mapsto \sigma|_E.
+\rho:G\to\Gal(E/F),\qquad \sigma\mapsto \sigma\restrict_E.
 $$
 Its kernel is $H$. Every $F$-automorphism of $E$ extends to an $F$-automorphism of the normal extension $K/F$, so $\rho$ is surjective. By the first isomorphism theorem,
 $$

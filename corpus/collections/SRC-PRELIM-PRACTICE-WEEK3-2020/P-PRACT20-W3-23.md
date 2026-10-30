@@ -25,7 +25,7 @@ Use this to evaluate the Gaussian integral $\int _ { - \infty } ^ { \infty } e ^
 In polar coordinates,
 
 $$
-\iint _ { D } e ^ { - ( x ^ { 2 } + y ^ { 2 } ) } d x d y = \int _ { 0 } ^ { \pi / 2 } \int _ { 0 } ^ { \infty } e ^ { - r ^ { 2 } } r d r d \theta = { \frac { \pi } { 2 } } ( - { \frac { 1 } { 2 } } e ^ { - r ^ { 2 } } { \bigg | } _ { r = 0 } ^ { r \to \infty } ) = { \frac { \pi } { 4 } } .
+\iint _ { D } e ^ { - ( x ^ { 2 } + y ^ { 2 } ) } d x d y = \int _ { 0 } ^ { \pi / 2 } \int _ { 0 } ^ { \infty } e ^ { - r ^ { 2 } } r d r d \theta = { \frac { \pi } { 2 } } ( - { \frac { 1 } { 2 } } e ^ { - r ^ { 2 } } { \evalfrom } _ { r = 0 } ^ { r \to \infty } ) = { \frac { \pi } { 4 } } .
 $$
 
 Now notice that by Fubini’s theorem,

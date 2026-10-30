@@ -81,7 +81,7 @@ Therefore
 $$
 \int\frac{dx}{\sin x}
 =
-\log|t|+C.
+\log\abs{t}+C.
 $$
 
 
@@ -93,7 +93,7 @@ $$
 =
 \int\frac{dt}{t}
 =
-\log|t|+C.
+\log\abs{t}+C.
 $$
 
 :::
@@ -107,7 +107,7 @@ $$
 \boxed{
 \int\frac{dx}{\sin x}
 =
-\log\left|\tan\frac x2\right|+C.
+\log\abs{\tan\frac x2}+C.
 }
 $$
 

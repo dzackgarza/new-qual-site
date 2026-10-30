@@ -30,7 +30,7 @@ What is the corresponding result for maps $\CP^n \to \CP^m$?
 
 (b) Prove the Borsuk–Ulam theorem by the following argument.
 Suppose on the contrary that $f: S^n \to \RR^n$ satisfies $f(x) \neq f(-x)$ for all $x$.
-Then define $g: S^n \to S^{n-1}$ by $g(x) = \bigl(f(x) - f(-x)\bigr) / \bigl|f(x) - f(-x)\bigr|$, so $g(-x) = -g(x)$ and $g$ induces a map $\RP^n \to \RP^{n-1}$.
+Then define $g: S^n \to S^{n-1}$ by $g(x) = \bigl(f(x) - f(-x)\bigr) / \norm{f(x) - f(-x)}$, so $g(-x) = -g(x)$ and $g$ induces a map $\RP^n \to \RP^{n-1}$.
 Show that part (a) applies to this map.
 :::
 
@@ -38,7 +38,7 @@ Show that part (a) applies to this map.
 With $\ZZ_2$ coefficients,
 $$
 H^*(\RP^r;\ZZ_2)\cong
-\ZZ_2[\alpha]/(\alpha^{r+1}),\qquad |\alpha|=1.
+\ZZ_2[\alpha]/(\alpha^{r+1}),\qquad \gradeddegree{\alpha}=1.
 $$
 Suppose $f:\RP^n\to\RP^m$ with $n>m$ induces a nonzero map on $H^1$. Since both $H^1$ groups are one-dimensional, if $\alpha_m,\alpha_n$ denote the generators then
 $$
@@ -53,7 +53,7 @@ contradicting $m+1\le n$, since $\alpha_n^{m+1}\ne0$. Thus every such map is zer
 Similarly
 $$
 H^*(\CP^r;\ZZ)\cong
-\ZZ[\beta]/(\beta^{r+1}),\qquad |\beta|=2.
+\ZZ[\beta]/(\beta^{r+1}),\qquad \gradeddegree{\beta}=2.
 $$
 If $n>m$ and $f:\CP^n\to\CP^m$ has $f^*(\beta_m)=d\beta_n$, then
 $$
@@ -63,7 +63,7 @@ Since $H^{2m+2}(\CP^n;\ZZ)$ is torsion-free and $\beta_n^{m+1}\ne0$, this forces
 
 For Borsuk--Ulam, suppose $f:S^n\to\RR^n$ satisfies $f(x)\ne f(-x)$ for all $x$. Then
 $$
-g(x)=\frac{f(x)-f(-x)}{|f(x)-f(-x)|}
+g(x)=\frac{f(x)-f(-x)}{\norm{f(x)-f(-x)}}
 $$
 defines an antipodal-equivariant map $g:S^n\to S^{n-1}$, so it descends to
 $$

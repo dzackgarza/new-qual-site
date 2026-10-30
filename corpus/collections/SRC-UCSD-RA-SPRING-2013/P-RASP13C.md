@@ -45,12 +45,12 @@ for every real polynomial $p$.
 
 Since $f\in C([0,1])$, the Weierstrass approximation theorem gives polynomials $p_k$ such that
 $$
-\|p_k-f\|_\infty\longrightarrow0.
+\norm{p_k-f}_\infty\longrightarrow0.
 $$
 Therefore
 $$
-\left|\int_0^1(p_k-f)f\,dx\right|
-\le \|p_k-f\|_\infty\int_0^1|f(x)|\,dx
+\abs{\int_0^1(p_k-f)f\,dx}
+\le \norm{p_k-f}_\infty\int_0^1\abs{f(x)}\,dx
 \longrightarrow0.
 $$
 But

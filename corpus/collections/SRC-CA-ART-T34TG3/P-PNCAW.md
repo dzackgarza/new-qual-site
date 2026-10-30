@@ -36,11 +36,11 @@ $$
 
 On the semicircular arc $z=Re^{i\theta}$,
 $$
-|e^{iz}|=e^{-R\sin\theta},
+\abs{e^{iz}}=e^{-R\sin\theta},
 $$
 and, for large $R$,
 $$
-\left|\frac{z}{z^2+a^2}\right|\le \frac{C}{R}.
+\abs{\frac{z}{z^2+a^2}}\le \frac{C}{R}.
 $$
 Hence the arc integral is bounded by
 $$

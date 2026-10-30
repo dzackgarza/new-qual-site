@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \definedas \theset{x\in H \st Ux = x}$, let $P$ be the orthogonal projection onto $M$, and define
+Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \coloneqq \theset{x\in H \st Ux = x}$, let $P$ be the orthogonal projection onto $M$, and define
 $$
-S_N \definedas {1\over N} \sum_{n=0}^{N-1} U^n
+S_N \coloneqq {1\over N} \sum_{n=0}^{N-1} U^n
 .$$
 Show that for all $x\in H$,
 $$
@@ -58,11 +58,11 @@ $U^n x = x$ for all $n$.
 
 ::: {.pf-step #s3}
 
-$\|S_N\| \le 1$, and $\|S_N x\| \to 0$ for $x \in \operatorname{ran}(U - I)$.
+$\norm{S_N} \le 1$, and $\norm{S_N x} \to 0$ for $x \in \operatorname{ran}(U - I)$.
 
 ::: pf-proof
 
-$\|U^n\| = 1$, so $\|S_N\| \le \frac1N\sum_{n<N}\|U^n\| = 1$. For $x = Uy - y$, the sum telescopes: $S_N x = \frac{1}{N}\sum_{n=0}^{N-1}(U^{n+1}y - U^ny) = \frac{1}{N}(U^N y - y)$, so $\|S_N x\| \le \frac{2\|y\|}{N}$.
+$\norm{U^n} = 1$, so $\norm{S_N} \le \frac1N\sum_{n<N}\norm{U^n} = 1$. For $x = Uy - y$, the sum telescopes: $S_N x = \frac{1}{N}\sum_{n=0}^{N-1}(U^{n+1}y - U^ny) = \frac{1}{N}(U^N y - y)$, so $\norm{S_N x} \le \frac{2\norm{y}}{N}$.
 
 :::
 
@@ -70,11 +70,11 @@ $\|U^n\| = 1$, so $\|S_N\| \le \frac1N\sum_{n<N}\|U^n\| = 1$. For $x = Uy - y$, 
 
 ::: {.pf-step #s4}
 
-$\|S_N x\| \to 0$ for $x \in M^\perp$.
+$\norm{S_N x} \to 0$ for $x \in M^\perp$.
 
 ::: pf-proof
 
-Given $\eps > 0$, step [](#s1){.pf-ref} gives $z \in \operatorname{ran}(U - I)$ with $\|x - z\| < \eps/2$. By step [](#s3){.pf-ref}, $\|S_N x\| \le \|S_N (x - z)\| + \|S_N z\| < \eps/2 + \|S_N z\| < \eps$ for $N$ large.
+Given $\eps > 0$, step [](#s1){.pf-ref} gives $z \in \operatorname{ran}(U - I)$ with $\norm{x - z} < \eps/2$. By step [](#s3){.pf-ref}, $\norm{S_N x} \le \norm{S_N (x - z)} + \norm{S_N z} < \eps/2 + \norm{S_N z} < \eps$ for $N$ large.
 
 :::
 

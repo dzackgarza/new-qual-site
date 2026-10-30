@@ -24,12 +24,12 @@ What is below is the correct version of the inequality.
 
 (a) Show that 
 $$
-\left|1-\bar{z}_{1} z_{2}\right|^{2}-\left|z_{1}-z_{2}\right|^{2}=\left(1-\left|z_{1}\right|^{2}\right)\left(1-\left|z_{2}\right|^2\right)
+\abs{1-\bar{z}_{1} z_{2}}^{2}-\abs{z_{1}-z_{2}}^{2}=\left(1-\abs{z_{1}}^{2}\right)\left(1-\abs{z_{2}}^2\right)
 $$
 
-(b) Show that if $\left|z_{1}\right|<1$ and $\left|z_{2}\right|<1$, then $\left|\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}\right|<1 .$
+(b) Show that if $\abs{z_{1}}<1$ and $\abs{z_{2}}<1$, then $\abs{\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}}<1 .$
 
-(c) Assume that $z_{1} \neq z_{2}$. Show that $\left|\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}\right|=1$ if only if $\left|z_{1}\right|=1$ or $\left|z_{2}\right|=1$.
+(c) Assume that $z_{1} \neq z_{2}$. Show that $\abs{\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}}=1$ if only if $\abs{z_{1}}=1$ or $\abs{z_{2}}=1$.
 :::
 
 ::: {.solution}

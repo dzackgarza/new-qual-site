@@ -19,7 +19,7 @@ Find all poles and residues of $1/\sin z$.
 ::: {.solution}
 The zeros of $\sin z$ are exactly the points $z=n\pi$, $n\in\ZZ$. Since
 $$
-(\sin z)'\big|_{z=n\pi}=\cos(n\pi)=(-1)^n\ne0,
+(\sin z)'\evalfrom_{z=n\pi}=\cos(n\pi)=(-1)^n\ne0,
 $$
 each zero is simple. Therefore $1/\sin z$ has a simple pole at each $n\pi$ and no other poles.
 

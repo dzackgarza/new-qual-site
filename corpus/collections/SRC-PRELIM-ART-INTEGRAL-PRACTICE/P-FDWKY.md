@@ -45,7 +45,7 @@ $$
 $$
 so
 $$
-\boxed{x+\ln|x-1|+C.}
+\boxed{x+\ln\abs{x-1}+C.}
 $$
 Also
 $$
@@ -53,7 +53,7 @@ $$
 $$
 hence
 $$
-\boxed{3\ln|x+2|+4\ln|x-1|+C.}
+\boxed{3\ln\abs{x+2}+4\ln\abs{x-1}+C.}
 $$
 Next,
 $$
@@ -61,7 +61,7 @@ $$
 $$
 so
 $$
-\boxed{\frac35\ln|x-3|+\frac25\ln|x+2|+C.}
+\boxed{\frac35\ln\abs{x-3}+\frac25\ln\abs{x+2}+C.}
 $$
 Further,
 $$
@@ -69,7 +69,7 @@ $$
 $$
 therefore
 $$
-\boxed{-x+\ln|x+1|-\ln|x-1|+C.}
+\boxed{-x+\ln\abs{x+1}-\ln\abs{x-1}+C.}
 $$
 For the repeated factor,
 $$
@@ -77,7 +77,7 @@ $$
 $$
 which gives
 $$
-\boxed{\ln|x|-\ln|x-1|-\frac1{x-1}+C.}
+\boxed{\ln\abs{x}-\ln\abs{x-1}-\frac1{x-1}+C.}
 $$
 Finally,
 $$
@@ -85,6 +85,6 @@ $$
 $$
 so
 $$
-\boxed{\ln|x+5|+\frac5{x+5}+C.}
+\boxed{\ln\abs{x+5}+\frac5{x+5}+C.}
 $$
 :::

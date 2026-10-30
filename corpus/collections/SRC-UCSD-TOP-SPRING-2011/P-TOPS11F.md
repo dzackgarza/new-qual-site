@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS11F
 kind: problem
-title: '$\pi_3(P\vee S^3)$ for a spherical $3$-manifold with $|\pi_1(P)|=120$'
+title: '$\pi_3(P\vee S^3)$ for a spherical $3$-manifold with $\cardinality{\pi_1(P)}=120$'
 classification:
   areas:
   - topology

@@ -28,7 +28,7 @@ b. Determine the limit and use the definition to prove your answer: $$\lim_{x \t
 ::: {.solution}
 The statement $\lim_{x\to a}f(x)=\ell$ means: for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-0<|x-a|<\delta\implies |f(x)-\ell|<\varepsilon.
+0<\abs{x-a}<\delta\implies \abs{f(x)-\ell}<\varepsilon.
 $$
 
 Here the candidate limit is
@@ -37,16 +37,16 @@ $$
 $$
 Moreover
 $$
-\left|\frac{2x+1}{x^2+1}-1\right|
-=\frac{|x(2-x)|}{x^2+1}.
+\abs{\frac{2x+1}{x^2+1}-1}
+=\frac{\abs{x(2-x)}}{x^2+1}.
 $$
-If $|x-2|<1$, then $|x|<3$, while $x^2+1\ge1$. Thus
+If $\abs{x-2}<1$, then $\abs{x}<3$, while $x^2+1\ge1$. Thus
 $$
-\left|\frac{2x+1}{x^2+1}-1\right|\le3|x-2|.
+\abs{\frac{2x+1}{x^2+1}-1}\le3\abs{x-2}.
 $$
 Given $\varepsilon>0$, choose
 $$
 \delta=\min\{1,\varepsilon/3\}.
 $$
-Then $0<|x-2|<\delta$ implies the displayed error is $<\varepsilon$. Hence the limit is $1$.
+Then $0<\abs{x-2}<\delta$ implies the displayed error is $<\varepsilon$. Hence the limit is $1$.
 :::

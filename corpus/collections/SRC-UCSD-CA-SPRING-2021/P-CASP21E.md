@@ -29,11 +29,11 @@ $$
 The zeros of a bounded nonzero holomorphic function satisfy the Blaschke
 condition
 $$
-\sum_n(1-|a_n|)<\infty.
+\sum_n(1-\abs{a_n})<\infty.
 $$
 But here
 $$
-\sum_{n=2}^\infty(1-|a_n|)
+\sum_{n=2}^\infty(1-\abs{a_n})
 =\sum_{n=2}^\infty\frac1n
 =\infty.
 $$

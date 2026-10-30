@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-18
 kind: problem
-title: Complex numbers with $z^2=|z|^2$
+title: Complex numbers with $z^2=\abs{z}^2$
 classification:
   areas:
   - complex-analysis
@@ -28,7 +28,7 @@ What is the set of points $z \in \CC$ such that $z^2 = \abs{z}^2$?
 
 If $z=0$, then
 $$
-z^2=|z|^2.
+z^2=\abs{z}^2.
 $$
 
 
@@ -44,7 +44,7 @@ Both sides are equal to $0$.
 
 If $z\ne0$ and
 $$
-z^2=|z|^2,
+z^2=\abs{z}^2,
 $$
 then $z$ is real.
 
@@ -53,7 +53,7 @@ then $z$ is real.
 
 Since
 $$
-|z|^2=z\overline z,
+\abs{z}^2=z\overline z,
 $$
 the equation becomes
 $$
@@ -79,7 +79,7 @@ Every real number satisfies the equation.
 
 If $z=x\in\RR$, then
 $$
-z^2=x^2=|x|^2=|z|^2.
+z^2=x^2=\abs{x}^2=\abs{z}^2.
 $$
 
 :::

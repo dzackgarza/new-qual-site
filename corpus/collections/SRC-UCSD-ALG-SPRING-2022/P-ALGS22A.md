@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-The subgroup $Q$ has order $3$ and intersects $PR$ trivially. Since $|PR||Q|=674\cdot3=2022=|G|$, one has $G=PRQ$. Because $PR\trianglelefteq G$, this is a semidirect product.
+The subgroup $Q$ has order $3$ and intersects $PR$ trivially. Since $\cardinality{PR}\cardinality{Q}=674\cdot3=2022=\cardinality{G}$, one has $G=PRQ$. Because $PR\trianglelefteq G$, this is a semidirect product.
 
 :::
 

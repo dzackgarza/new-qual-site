@@ -20,7 +20,7 @@ audit:
 Let $f\in L^1(\RR)$ and $\beta\in(0,1)$.
 Prove that
 $$
-\int_{\RR}\frac{|f(x)|}{|x-a|^\beta}\,dx<\infty
+\int_{\RR}\frac{\abs{f(x)}}{\abs{x-a}^\beta}\,dx<\infty
 $$
 for Lebesgue-almost every $a\in\RR$.
 :::
@@ -32,7 +32,7 @@ $$
 F(a)
 \coloneqq
 \int_{\RR}
-\frac{|f(x)|}{|x-a|^\beta}\,dx
+\frac{\abs{f(x)}}{\abs{x-a}^\beta}\,dx
 \in[0,\infty].
 $$
 Also set
@@ -49,7 +49,7 @@ $$
 There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\RR$,
 $$
 \int_{\RR}
-\frac{w(a)}{|x-a|^\beta}\,da
+\frac{w(a)}{\abs{x-a}^\beta}\,da
 \le
 C_\beta.
 $$
@@ -57,23 +57,23 @@ $$
 
 ::: pf-proof
 
-Split the integral into the regions $|a-x|<1$ and $|a-x|\ge1$.
+Split the integral into the regions $\abs{a-x}<1$ and $\abs{a-x}\ge1$.
 
 On the first region, $w(a)\le1$, so after the change of variables $h=a-x$,
 $$
-\int_{|a-x|<1}
-\frac{w(a)}{|x-a|^\beta}\,da
+\int_{\abs{a-x}<1}
+\frac{w(a)}{\abs{x-a}^\beta}\,da
 \le
-\int_{|h|<1}|h|^{-\beta}\,dh
+\int_{\abs{h}<1}\abs{h}^{-\beta}\,dh
 =
 \frac{2}{1-\beta},
 $$
 which is finite because $0<\beta<1$.
 
-On the second region, $|x-a|^{-\beta}\le1$, hence
+On the second region, $\abs{x-a}^{-\beta}\le1$, hence
 $$
-\int_{|a-x|\ge1}
-\frac{w(a)}{|x-a|^\beta}\,da
+\int_{\abs{a-x}\ge1}
+\frac{w(a)}{\abs{x-a}^\beta}\,da
 \le
 \int_{\RR}\frac{da}{1+a^2}
 =
@@ -96,7 +96,7 @@ One has
 $$
 \int_{\RR}w(a)F(a)\,da
 \le
-C_\beta\|f\|_{L^1(\RR)}
+C_\beta\norm{f}_{L^1(\RR)}
 <
 \infty.
 $$
@@ -108,7 +108,7 @@ The function
 $$
 (a,x)
 \longmapsto
-w(a)\frac{|f(x)|}{|x-a|^\beta}
+w(a)\frac{\abs{f(x)}}{\abs{x-a}^\beta}
 $$
 is nonnegative and measurable. Tonelli's theorem therefore gives
 $$
@@ -117,13 +117,13 @@ $$
 &=
 \int_{\RR}
 \int_{\RR}
-w(a)\frac{|f(x)|}{|x-a|^\beta}\,dx\,da\\
+w(a)\frac{\abs{f(x)}}{\abs{x-a}^\beta}\,dx\,da\\
 &=
 \int_{\RR}
-|f(x)|
+\abs{f(x)}
 \left(
 \int_{\RR}
-\frac{w(a)}{|x-a|^\beta}\,da
+\frac{w(a)}{\abs{x-a}^\beta}\,da
 \right)dx.
 \end{aligned}
 $$
@@ -132,7 +132,7 @@ $$
 \int_{\RR}w(a)F(a)\,da
 \le
 C_\beta
-\int_{\RR}|f(x)|\,dx.
+\int_{\RR}\abs{f(x)}\,dx.
 $$
 The right-hand side is finite because $f\in L^1(\RR)$.
 
@@ -175,7 +175,7 @@ Therefore
 $$
 \boxed{
 \int_{\RR}
-\frac{|f(x)|}{|x-a|^\beta}\,dx
+\frac{\abs{f(x)}}{\abs{x-a}^\beta}\,dx
 <
 \infty
 }

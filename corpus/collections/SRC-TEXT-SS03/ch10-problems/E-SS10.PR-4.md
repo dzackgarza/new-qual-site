@@ -22,7 +22,7 @@ Let $G = \Gamma_\theta \subset \operatorname{SL}_2(\ZZ)$ denote the theta subgro
 
 (a) Suppose that $f : \halfplane \to \CC$ is holomorphic, bounded, and that there exists a sequence of points $\tau_k = x_k + i y_k \in \halfplane$ such that
 $$
-f(\tau_k) = 0, \quad \sum_{k=1}^\infty y_k = \infty, \quad 0 < y_k \le 1, \quad \text{and} \quad |x_k| \le 1.
+f(\tau_k) = 0, \quad \sum_{k=1}^\infty y_k = \infty, \quad 0 < y_k \le 1, \quad \text{and} \quad \abs{x_k} \le 1.
 $$
 Prove that $f \equiv 0$.
 
@@ -44,8 +44,8 @@ Prove that $f \equiv 0$.
 ::: pf-proof
 
 Let $\Phi(z) = \frac{z - i}{z + i}$ be the Cayley transform $\halfplane\to\DD$ and $g=f\circ\Phi^{-1}$, a bounded holomorphic function on $\DD$ vanishing at $\alpha_k = \Phi(\tau_k)$. Then
-$$1 - |\alpha_k|^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}\ge\frac{4y_k}{5},$$
-since $x_k^2 + (y_k + 1)^2 \le 1 + 4$. Using $1 - r \ge \frac{1}{2}(1 - r^2)$ for $0\le r<1$, $\sum_k (1 - |\alpha_k|) \ge \frac{2}{5} \sum_k y_k = \infty$. By [[E-SS5.PR-1]], the zeros of a bounded holomorphic function on $\DD$ that is not identically zero satisfy $\sum(1-\abs{\alpha_k})<\infty$. Hence $g \equiv 0$ and $f \equiv 0$.
+$$1 - \abs{\alpha_k}^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}\ge\frac{4y_k}{5},$$
+since $x_k^2 + (y_k + 1)^2 \le 1 + 4$. Using $1 - r \ge \frac{1}{2}(1 - r^2)$ for $0\le r<1$, $\sum_k (1 - \abs{\alpha_k}) \ge \frac{2}{5} \sum_k y_k = \infty$. By [[E-SS5.PR-1]], the zeros of a bounded holomorphic function on $\DD$ that is not identically zero satisfy $\sum(1-\abs{\alpha_k})<\infty$. Hence $g \equiv 0$ and $f \equiv 0$.
 
 :::
 

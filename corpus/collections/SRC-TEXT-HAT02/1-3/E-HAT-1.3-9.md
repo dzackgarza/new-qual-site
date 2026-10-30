@@ -42,7 +42,7 @@ The image $f_*(\pi_1(X, x_0))$ is a subgroup of $\ZZ$.
 :::
 
 ::: pf-step
-By the First Isomorphism Theorem for groups, $|f_*(\pi_1(X, x_0))|$ divides $|\pi_1(X, x_0)| < \infty$, so the image is a finite subgroup of $\ZZ$.
+By the First Isomorphism Theorem for groups, $\cardinality{f_*(\pi_1(X, x_0))}$ divides $\cardinality{\pi_1(X, x_0)} < \infty$, so the image is a finite subgroup of $\ZZ$.
 :::
 
 ::: pf-step

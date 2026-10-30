@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4X3OY
 kind: problem
-title: Positivity of $f(x,0)$ persists for small $|t|$ when $X$ is compact
+title: Positivity of $f(x,0)$ persists for small $\abs{t}$ when $X$ is compact
 classification:
   areas:
   - topology
@@ -35,7 +35,7 @@ Prove that there is $\varepsilon>0$ such that
 $$
 f(x,t)>0
 $$
-whenever $|t|<\varepsilon$.
+whenever $\abs{t}<\varepsilon$.
 Moreover, give an example showing that this conclusion may not hold if $X$ is not assumed compact.
 :::
 
@@ -49,7 +49,7 @@ For every $x\in X$, there are an open neighborhood $U_x\subseteq X$ of $x$ and a
 $$
 f(y,t)>0
 \qquad
-\text{for all }y\in U_x\text{ and }|t|<\varepsilon_x.
+\text{for all }y\in U_x\text{ and }\abs{t}<\varepsilon_x.
 $$
 
 ::: pf-proof
@@ -87,10 +87,10 @@ Set
 $$
 \varepsilon=\min_{1\le j\le m}\varepsilon_{x_j}>0.
 $$
-If $x\in X$ and $|t|<\varepsilon$, choose $j$ with $x\in U_{x_j}$.
+If $x\in X$ and $\abs{t}<\varepsilon$, choose $j$ with $x\in U_{x_j}$.
 Then
 $$
-|t|<\varepsilon\le\varepsilon_{x_j},
+\abs{t}<\varepsilon\le\varepsilon_{x_j},
 $$
 so step [](#s1){.pf-ref} gives $f(x,t)>0$.
 
@@ -124,7 +124,7 @@ $$
 t=\frac{\varepsilon}{2}
 $$
 and choose $x>2/\varepsilon$.
-Then $|t|<\varepsilon$ but
+Then $\abs{t}<\varepsilon$ but
 $$
 x^2t^2>1,
 \qquad

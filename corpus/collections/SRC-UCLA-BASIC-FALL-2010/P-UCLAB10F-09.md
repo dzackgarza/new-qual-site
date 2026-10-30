@@ -249,7 +249,7 @@ $$
 $$
 Therefore
 $$
-\|\vec e_k\|\to\infty,
+\norm{\vec e_k}\to\infty,
 $$
 so $\vec x_k$ does not converge.
 

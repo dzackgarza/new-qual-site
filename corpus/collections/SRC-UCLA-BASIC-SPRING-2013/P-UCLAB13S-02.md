@@ -26,8 +26,8 @@ S_{[a,b]}f=
 $$
 If $f$ has continuous derivatives up to order three, prove that
 $$
-\left|\int_a^b f(x)\,dx-S_{[a,b]}f\right|
-\le C(b-a)^4\max_{[a,b]}|f^{(3)}(x)|,
+\abs{\int_a^b f(x)\,dx-S_{[a,b]}f}
+\le C(b-a)^4\max_{[a,b]}\abs{f^{(3)}(x)},
 $$
 where $C$ does not depend on $f$.
 :::
@@ -46,7 +46,7 @@ $$
 $$
 Also set
 $$
-M=\max_{x\in[a,b]}|f^{(3)}(x)|.
+M=\max_{x\in[a,b]}\abs{f^{(3)}(x)}.
 $$
 
 ::: pf
@@ -67,7 +67,7 @@ f(m)+f'(m)t+\frac12f''(m)t^2
 $$
 and
 $$
-\boxed{|R(t)|\le\frac{M}{6}|t|^3}.
+\boxed{\abs{R(t)}\le\frac{M}{6}\abs{t}^3}.
 $$
 
 
@@ -84,9 +84,9 @@ $$
 for some $\xi_t$ between $m$ and $m+t$.
 Therefore
 $$
-|R(t)|
+\abs{R(t)}
 \le
-\frac16M|t|^3.
+\frac16M\abs{t}^3.
 $$
 
 :::
@@ -201,9 +201,9 @@ by step [](#s1-1){.pf-ref}, this term will vanish in the estimate below.
 
 The integral remainder satisfies
 $$
-\left|
+\abs{
 \int_{-h}^{h}R(t)\,dt
-\right|
+}
 \le
 \frac{M}{12}h^4.
 $$
@@ -214,19 +214,19 @@ $$
 By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_{-h}^{h}R(t)\,dt
-\right|
+}
 &\le
-\int_{-h}^{h}|R(t)|\,dt\\
+\int_{-h}^{h}\abs{R(t)}\,dt\\
 &\le
 \frac{M}{6}
-\int_{-h}^{h}|t|^3\,dt.
+\int_{-h}^{h}\abs{t}^3\,dt.
 \end{aligned}
 $$
 Now
 $$
-\int_{-h}^{h}|t|^3\,dt
+\int_{-h}^{h}\abs{t}^3\,dt
 =
 2\int_0^h t^3\,dt
 =
@@ -234,9 +234,9 @@ $$
 $$
 Thus
 $$
-\left|
+\abs{
 \int_{-h}^{h}R(t)\,dt
-\right|
+}
 \le
 \frac{M}{12}h^4.
 $$
@@ -249,12 +249,12 @@ $$
 
 The Simpson remainder satisfies
 $$
-\left|
+\abs{
 2h
 \left[
 \frac16\bigl(R(-h)+R(h)\bigr)
 \right]
-\right|
+}
 \le
 \frac{M}{9}h^4.
 $$
@@ -264,17 +264,17 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|R(\pm h)|
+\abs{R(\pm h)}
 \le
 \frac{M}{6}h^3.
 $$
 Therefore
 $$
 \begin{aligned}
-\left|
+\abs{
 \frac{h}{3}
 \bigl(R(-h)+R(h)\bigr)
-\right|
+}
 &\le
 \frac{h}{3}
 \left(
@@ -300,9 +300,9 @@ this is the displayed bound.
 
 Hence
 $$
-\left|
+\abs{
 \int_a^b f(x)\,dx-S_{[a,b]}f
-\right|
+}
 \le
 \frac7{36}Mh^4.
 $$
@@ -340,13 +340,13 @@ $$
 one obtains
 $$
 \boxed{
-\left|
+\abs{
 \int_a^b f(x)\,dx-S_{[a,b]}f
-\right|
+}
 \le
 \frac7{576}
 (b-a)^4
-\max_{[a,b]}|f^{(3)}|.
+\max_{[a,b]}\abs{f^{(3)}}.
 }
 $$
 

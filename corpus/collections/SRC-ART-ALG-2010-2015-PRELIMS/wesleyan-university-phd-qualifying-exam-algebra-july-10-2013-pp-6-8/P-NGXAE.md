@@ -167,7 +167,7 @@ are as follows.
 ::: pf-proof
 
 The Galois correspondence sends a subgroup $H$ to its fixed
-field $K^H$, with $[K^H:\QQ]=8/|H|$. Moreover,
+field $K^H$, with $[K^H:\QQ]=8/\cardinality{H}$. Moreover,
 $K^H/\QQ$ is Galois exactly when $H$ is normal
 in $G$ [@DF04]. Step [](#s3){.pf-ref} lists one subgroup of order $1$,
 five of order $2$, three of order $4$, and one of order $8$.

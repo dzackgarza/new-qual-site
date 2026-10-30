@@ -30,7 +30,7 @@ Let $O\subset E$ be open. For each $e\in O$, choose an evenly covered neighborho
 $$
 O\cap V_e
 $$
-is open in $V_e$, and the restriction $p|_{V_e}:V_e\to U_e$ is a homeomorphism. Hence
+is open in $V_e$, and the restriction $p\restrict_{V_e}:V_e\to U_e$ is a homeomorphism. Hence
 $$
 p(O\cap V_e)
 $$

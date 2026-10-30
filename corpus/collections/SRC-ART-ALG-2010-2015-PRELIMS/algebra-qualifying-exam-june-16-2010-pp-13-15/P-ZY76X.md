@@ -49,7 +49,7 @@ G=\operatorname{Gal}(K/F)
 \qquad r^4=s^2=1,\quad srs=r^{-1}.
 $$
 The subgroup-to-field correspondence has
-$[K^H:F]=8/|H|$, and $K^H/F$ is Galois exactly when
+$[K^H:F]=8/\cardinality{H}$, and $K^H/F$ is Galois exactly when
 $H\lhd G$.
 
 ::: pf-proof
@@ -59,7 +59,7 @@ taking $r$ to a quarter-turn and $s$ to a reflection.
 The displayed elements and relations describe these eight
 symmetries. Since $K/F$ is Galois, its fixed field $K^G$
 is $F$. The fixed-field theorem for a finite group of
-field automorphisms gives $[K:F]=|G|=8$, so the finite
+field automorphisms gives $[K:F]=\cardinality{G}=8$, so the finite
 Galois correspondence applies with the asserted degree
 and normality properties [@DF04].
 

@@ -28,7 +28,7 @@ $$
 
 (b) Prove that
 $$
-\chi^{A\uparrow_H^G}=\frac{1}{|H|}\sum_{\sigma\in G}\sigma\cdot\chi^{\overline{A}}\cdot\sigma^{-1}.
+\chi^{A\uparrow_H^G}=\frac{1}{\cardinality{H}}\sum_{\sigma\in G}\sigma\cdot\chi^{\overline{A}}\cdot\sigma^{-1}.
 $$
 
 (c) State and prove the Frobenius Reciprocity Theorem.
@@ -71,7 +71,7 @@ $$
 \chi^A(t_i^{-1}gt_i).
 $$
 
-Now each left coset $t_iH$ contains $|H|$ elements, and if $x=t_ih$, then
+Now each left coset $t_iH$ contains $\cardinality{H}$ elements, and if $x=t_ih$, then
 $$
 x^{-1}gx=h^{-1}(t_i^{-1}gt_i)h.
 $$
@@ -82,7 +82,7 @@ $$
 Thus
 $$
 \chi^{A\uparrow_H^G}(g)
-=\frac1{|H|}\sum_{x\in G}\chi^{\overline A}(x^{-1}gx).
+=\frac1{\cardinality{H}}\sum_{x\in G}\chi^{\overline A}(x^{-1}gx).
 $$
 If the action of $x\in G$ on functions is written as
 $$
@@ -92,7 +92,7 @@ this is exactly
 $$
 \boxed{
 \chi^{A\uparrow_H^G}
-=\frac1{|H|}\sum_{x\in G}x\cdot\chi^{\overline A}\cdot x^{-1}.}
+=\frac1{\cardinality{H}}\sum_{x\in G}x\cdot\chi^{\overline A}\cdot x^{-1}.}
 $$
 
 For part (c), Frobenius reciprocity states that if $V$ is a finite-dimensional representation of $H$ with character $\chi$, and $W$ is a finite-dimensional representation of $G$ with character $\psi$, then
@@ -113,10 +113,10 @@ Using the character formula just proved,
 $$
 \begin{aligned}
 \left\langle \operatorname{Ind}_H^G\chi,\psi\right\rangle_G
-&=\frac1{|G|}\sum_{g\in G}
-\left(\frac1{|H|}\sum_{x\in G}\chi^{\overline A}(x^{-1}gx)\right)
+&=\frac1{\cardinality{G}}\sum_{g\in G}
+\left(\frac1{\cardinality{H}}\sum_{x\in G}\chi^{\overline A}(x^{-1}gx)\right)
 \overline{\psi(g)}\\
-&=\frac1{|G||H|}\sum_{x\in G}\sum_{g\in G}
+&=\frac1{\cardinality{G}\cardinality{H}}\sum_{x\in G}\sum_{g\in G}
 \chi^{\overline A}(x^{-1}gx)\overline{\psi(g)}.
 \end{aligned}
 $$
@@ -128,8 +128,8 @@ Hence the inner sum is independent of $x$, and
 $$
 \begin{aligned}
 \left\langle \operatorname{Ind}_H^G\chi,\psi\right\rangle_G
-&=\frac1{|H|}\sum_{h\in G}\chi^{\overline A}(h)\overline{\psi(h)}\\
-&=\frac1{|H|}\sum_{h\in H}\chi(h)\overline{\psi(h)}\\
+&=\frac1{\cardinality{H}}\sum_{h\in G}\chi^{\overline A}(h)\overline{\psi(h)}\\
+&=\frac1{\cardinality{H}}\sum_{h\in H}\chi(h)\overline{\psi(h)}\\
 &=\left\langle \chi,\operatorname{Res}_H^G\psi\right\rangle_H.
 \end{aligned}
 $$

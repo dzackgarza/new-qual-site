@@ -51,9 +51,9 @@ Let $S$ be a set and let $(f_n)$ and $(g_n)$ be sequences of functions $S\to\RR$
 Suppose the hypotheses of part (a) hold. Choose constants
 $B,C\ge0$ such that
 $$
-|f(s)|\le B,
+\abs{f(s)}\le B,
 \qquad
-|g(s)|\le C
+\abs{g(s)}\le C
 $$
 for every $s\in S$.
 
@@ -69,7 +69,7 @@ Such constants exist because $f$ and $g$ are bounded by hypothesis.
 
 There is $N_0$ such that
 $$
-|f_n(s)|\le B+1
+\abs{f_n(s)}\le B+1
 $$
 for every $n\ge N_0$ and every $s\in S$.
 
@@ -77,14 +77,14 @@ for every $n\ge N_0$ and every $s\in S$.
 
 Since $f_n\to f$ uniformly, there is $N_0$ such that
 $$
-|f_n(s)-f(s)|<1
+\abs{f_n(s)-f(s)}<1
 $$
 for all $n\ge N_0$ and all $s\in S$. Then step [](#s1){.pf-ref} and the triangle
 inequality give
 $$
-|f_n(s)|
+\abs{f_n(s)}
 \le
-|f(s)|+|f_n(s)-f(s)|
+\abs{f(s)}+\abs{f_n(s)-f(s)}
 <
 B+1.
 $$
@@ -102,13 +102,13 @@ The sequence $(f_ng_n)$ converges uniformly to $fg$ on $S$.
 Let $\varepsilon>0$. Uniform convergence supplies integers $N_1,N_2$
 such that, for every $s\in S$,
 $$
-|g_n(s)-g(s)|
+\abs{g_n(s)-g(s)}
 <
 \frac{\varepsilon}{2(B+1)}
 $$
 when $n\ge N_1$, and
 $$
-|f_n(s)-f(s)|
+\abs{f_n(s)-f(s)}
 <
 \frac{\varepsilon}{2(C+1)}
 $$
@@ -121,13 +121,13 @@ $$
 For $n\ge N$ and every $s\in S$, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 \begin{aligned}
-|f_n(s)g_n(s)-f(s)g(s)|
+\abs{f_n(s)g_n(s)-f(s)g(s)}
 &=
-|f_n(s)(g_n(s)-g(s))+(f_n(s)-f(s))g(s)|\\
+\abs{f_n(s)(g_n(s)-g(s))+(f_n(s)-f(s))g(s)}\\
 &\le
-|f_n(s)|\,|g_n(s)-g(s)|
+\abs{f_n(s)}\,\abs{g_n(s)-g(s)}
 +
-|f_n(s)-f(s)|\,|g(s)|\\
+\abs{f_n(s)-f(s)}\,\abs{g(s)}\\
 &<
 (B+1)\frac{\varepsilon}{2(B+1)}
 +
@@ -171,11 +171,11 @@ uniformly on $\RR$, while $f$ is unbounded.
 
 For every $n$,
 $$
-\sup_{x\in\RR}|f_n(x)-f(x)|=0.
+\sup_{x\in\RR}\abs{f_n(x)-f(x)}=0.
 $$
 Also
 $$
-\sup_{x\in\RR}|g_n(x)-g(x)|
+\sup_{x\in\RR}\abs{g_n(x)-g(x)}
 =
 \frac1n
 \longrightarrow
@@ -202,9 +202,9 @@ $$
 Hence for every fixed $n$,
 $$
 \sup_{x\in\RR}
-|f_n(x)g_n(x)-f(x)g(x)|
+\abs{f_n(x)g_n(x)-f(x)g(x)}
 =
-\sup_{x\in\RR}\frac{|x|}{n}
+\sup_{x\in\RR}\frac{\abs{x}}{n}
 =
 \infty.
 $$

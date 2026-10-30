@@ -78,14 +78,14 @@ Ax=\lambda x,
 \qquad
 Az=x+\lambda z.
 $$
-With respect to the basis $(x,z)$ of $U$, the restriction $A|_U$ has matrix
+With respect to the basis $(x,z)$ of $U$, the restriction $A\restrict_U$ has matrix
 $$
 \begin{pmatrix}
 \lambda&1\\
 0&\lambda
 \end{pmatrix}.
 $$
-Hence the characteristic polynomial of $A|_U$ is $(t-\lambda)^2$. Extending $(x,z)$ to a basis adapted to the invariant subspace $U$ makes the matrix of $A$ block upper triangular, so $(t-\lambda)^2$ divides the characteristic polynomial of $A$. This contradicts $am(\lambda)=1$.
+Hence the characteristic polynomial of $A\restrict_U$ is $(t-\lambda)^2$. Extending $(x,z)$ to a basis adapted to the invariant subspace $U$ makes the matrix of $A$ block upper triangular, so $(t-\lambda)^2$ divides the characteristic polynomial of $A$. This contradicts $am(\lambda)=1$.
 Therefore $\CC x\cap W=0$.
 :::
 
@@ -130,7 +130,7 @@ The line $\CC x$ is $A$-invariant and $Ax=\lambda x$. By step [](#w-is-invariant
 $$
 \CC^n=\CC x\oplus W
 $$
-has no off-diagonal blocks. Its first block is $[\lambda]$, and the second block is the matrix $M$ of $A|_W$ in the basis $x_2,\ldots,x_n$.
+has no off-diagonal blocks. Its first block is $[\lambda]$, and the second block is the matrix $M$ of $A\restrict_W$ in the basis $x_2,\ldots,x_n$.
 :::
 
 :::

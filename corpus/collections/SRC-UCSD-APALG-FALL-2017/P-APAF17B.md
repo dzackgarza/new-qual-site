@@ -21,7 +21,7 @@ audit:
 Let $A\in\CC^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\dots,\lambda_n\in\CC$.
 If
 $$
-\|A\|_F^2\leq|\lambda_1|^2+\cdots+|\lambda_n|^2,
+\norm{A}_F^2\leq\abs{\lambda_1}^2+\cdots+\abs{\lambda_n}^2,
 $$
 show that $A$ is normal, i.e., $AA^*=A^*A$.
 :::
@@ -56,7 +56,7 @@ Schur's Theorem.
 
 The Frobenius norm is unitarily invariant:
 $$
-\|A\|_F^2 = \operatorname{tr}(A^* A) = \operatorname{tr}\big((U T U^*)^*(U T U^*)\big) = \operatorname{tr}(U T^* T U^*) = \operatorname{tr}(T^* T) = \|T\|_F^2.
+\norm{A}_F^2 = \operatorname{tr}(A^* A) = \operatorname{tr}\big((U T U^*)^*(U T U^*)\big) = \operatorname{tr}(U T^* T U^*) = \operatorname{tr}(T^* T) = \norm{T}_F^2.
 $$
 
 ::: pf-proof
@@ -73,7 +73,7 @@ cyclic property of trace and $U^* U = I$.
 
 ::: {.pf-step #s2}
 
-Expansion of $\|T\|_F^2$ and vanishing of strictly upper triangular entries:
+Expansion of $\norm{T}_F^2$ and vanishing of strictly upper triangular entries:
 
 ::: pf-proof
 
@@ -81,7 +81,7 @@ Expansion of $\|T\|_F^2$ and vanishing of strictly upper triangular entries:
 
 Decompose the sum of squares of entries of the upper triangular matrix $T = (t_{ij})$:
 $$
-\|T\|_F^2 = \sum_{i=1}^n |t_{ii}|^2 + \sum_{1 \le i < j \le n} |t_{ij}|^2 = \sum_{i=1}^n |\lambda_i|^2 + \sum_{1 \le i < j \le n} |t_{ij}|^2.
+\norm{T}_F^2 = \sum_{i=1}^n \abs{t_{ii}}^2 + \sum_{1 \le i < j \le n} \abs{t_{ij}}^2 = \sum_{i=1}^n \abs{\lambda_i}^2 + \sum_{1 \le i < j \le n} \abs{t_{ij}}^2.
 $$
 
 ::: pf-proof
@@ -94,9 +94,9 @@ $t_{ij} = 0$ for $i > j$ and $t_{ii} = \lambda_i$.
 
 ::: pf-step
 
-By the given hypothesis $\|A\|_F^2 \le \sum_{i=1}^n |\lambda_i|^2$:
+By the given hypothesis $\norm{A}_F^2 \le \sum_{i=1}^n \abs{\lambda_i}^2$:
 $$
-\sum_{i=1}^n |\lambda_i|^2 + \sum_{1 \le i < j \le n} |t_{ij}|^2 \le \sum_{i=1}^n |\lambda_i|^2.
+\sum_{i=1}^n \abs{\lambda_i}^2 + \sum_{1 \le i < j \le n} \abs{t_{ij}}^2 \le \sum_{i=1}^n \abs{\lambda_i}^2.
 $$
 
 ::: pf-proof
@@ -109,11 +109,11 @@ substituting step [](#s2-1){.pf-ref} into hypothesis.
 
 ::: pf-step
 
-Subtracting $\sum_{i=1}^n |\lambda_i|^2$ from both sides yields:
+Subtracting $\sum_{i=1}^n \abs{\lambda_i}^2$ from both sides yields:
 $$
-\sum_{1 \le i < j \le n} |t_{ij}|^2 \le 0.
+\sum_{1 \le i < j \le n} \abs{t_{ij}}^2 \le 0.
 $$
-Since $|t_{ij}|^2 \ge 0$ for all pairs $(i, j)$, we must have $t_{ij} = 0$ for all $1 \le i < j \le n$.
+Since $\abs{t_{ij}}^2 \ge 0$ for all pairs $(i, j)$, we must have $t_{ij} = 0$ for all $1 \le i < j \le n$.
 
 ::: pf-proof
 
@@ -149,7 +149,7 @@ Step [](#s2){.pf-ref}.
 
 Any complex diagonal matrix commutes with its conjugate transpose:
 $$
-T T^* = \operatorname{diag}(|\lambda_1|^2, \dots, |\lambda_n|^2) = T^* T.
+T T^* = \operatorname{diag}(\abs{\lambda_1}^2, \dots, \abs{\lambda_n}^2) = T^* T.
 $$
 
 ::: pf-proof

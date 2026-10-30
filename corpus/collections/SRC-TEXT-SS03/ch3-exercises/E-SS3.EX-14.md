@@ -30,7 +30,7 @@ It also cannot be essential. By Casorati-Weierstrass, if $0$ were an essential s
 $$
 f(1/\zeta_n)=g(\zeta_n)\to f(z_0).
 $$
-Because $f$ is injective and entire, the inverse function theorem applies at $z_0$ once we note $f'(z_0)\ne0$ (otherwise the local power-series expansion would have multiplicity at least $2$, contradicting local injectivity). Hence $f$ is locally one-to-one with a continuous local inverse near $f(z_0)$, forcing $1/\zeta_n\to z_0$, impossible since $|1/\zeta_n|\to\infty$.
+Because $f$ is injective and entire, the inverse function theorem applies at $z_0$ once we note $f'(z_0)\ne0$ (otherwise the local power-series expansion would have multiplicity at least $2$, contradicting local injectivity). Hence $f$ is locally one-to-one with a continuous local inverse near $f(z_0)$, forcing $1/\zeta_n\to z_0$, impossible since $\abs{1/\zeta_n}\to\infty$.
 
 Therefore $g$ has a pole at $0$. Equivalently, $f$ has a pole at infinity, so $f$ is a polynomial. An injective polynomial must have degree $1$: if $\deg f=d\ge2$, then $f'$ has degree $d-1$ and hence has a zero, contradicting injectivity as above. Thus
 $$

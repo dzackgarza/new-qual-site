@@ -321,7 +321,7 @@ in the uniform topology.
 
 Using the bounded metrics
 $$
-\rho_j(s,t)=\min\{|s-t|,1\},
+\rho_j(s,t)=\min\{\abs{s-t},1\},
 $$
 one has
 $$

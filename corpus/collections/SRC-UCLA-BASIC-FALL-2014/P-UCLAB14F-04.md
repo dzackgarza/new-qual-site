@@ -155,7 +155,7 @@ f:[-2,2]\to[0,1]
 $$
 is $1$-Lipschitz on $[-1,1]$:
 $$
-|f(y)-f(x)|\le|y-x|
+\abs{f(y)-f(x)}\le\abs{y-x}
 $$
 for all $x,y\in[-1,1]$.
 
@@ -172,7 +172,7 @@ $$
 $$
 Multiplying by $y-x>0$ gives
 $$
-|f(y)-f(x)|\le y-x.
+\abs{f(y)-f(x)}\le y-x.
 $$
 The case $x>y$ follows by symmetry, and $x=y$ is trivial.
 
@@ -184,7 +184,7 @@ The case $x>y$ follows by symmetry, and $x=y$ is trivial.
 
 The family
 $$
-\{f_n|_{[-1,1]}:n\in\NN\}
+\{f_n\restrict_{[-1,1]}:n\in\NN\}
 $$
 is uniformly bounded and equicontinuous.
 
@@ -204,9 +204,9 @@ $$
 $$
 gives
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \quad\Longrightarrow\quad
-|f_n(x)-f_n(y)|<\varepsilon
+\abs{f_n(x)-f_n(y)}<\varepsilon
 $$
 simultaneously for all $n$.
 Hence the family is equicontinuous.

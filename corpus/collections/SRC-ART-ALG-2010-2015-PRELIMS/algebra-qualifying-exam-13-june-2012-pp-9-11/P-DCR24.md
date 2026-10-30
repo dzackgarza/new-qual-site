@@ -27,7 +27,7 @@ c. For each of the divisors $d = 6, 10, 15$ of 60, either find a subgroup of $A_
 :::
 
 ::: {.solution}
-Since $|A_5|=5!/2=60=2^2\cdot3\cdot5$, Sylow subgroups have
+Since $\cardinality{A_5}=5!/2=60=2^2\cdot3\cdot5$, Sylow subgroups have
 orders $4$, $3$, and $5$.
 
 ::: pf
@@ -51,7 +51,7 @@ $$
 $$
 so it has order $4$. The other two displayed generators have orders $3$
 and $5$, respectively. These are the full powers of $2$, $3$, and $5$
-dividing $|A_5|$, so the three subgroups are Sylow subgroups.
+dividing $\cardinality{A_5}$, so the three subgroups are Sylow subgroups.
 
 :::
 
@@ -131,7 +131,7 @@ n_5=24/4=6.
 $$
 Orbit-stabilizer for conjugation gives
 $$
-|N_{A_5}(P_5)|=|A_5|/n_5=60/6=10.
+\cardinality{N_{A_5}(P_5)}=\cardinality{A_5}/n_5=60/6=10.
 $$
 
 Let $r=(12345)$ and $s=(25)(34)$. Then $s$ is even,

@@ -49,7 +49,7 @@ with differentiation justified by dominated convergence on compact subsets of $\
 Now suppose also that $\widehat f$ has compact support. Then there exists $M>0$ such that
 $$
 F(\xi)=\widehat f(\xi)=0
-\qquad\text{for all real }|\xi|>M.
+\qquad\text{for all real }\abs{\xi}>M.
 $$
 Thus the entire function $F$ vanishes on the nonempty open interval $(M,\infty)$ of the real axis. By the identity theorem for holomorphic functions,
 $$

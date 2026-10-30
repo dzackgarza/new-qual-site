@@ -23,10 +23,10 @@ $$
 $$
 so that the closed disk $\overline{D(a,R)}$ lies in $\Omega$.
 
-For $|z-a|<R$, Cauchy's integral formula gives
+For $\abs{z-a}<R$, Cauchy's integral formula gives
 $$
 f(z)=\frac{1}{2\pi i}
-\int_{|\zeta-a|=R}\frac{f(\zeta)}{\zeta-z}\,d\zeta.
+\int_{\abs{\zeta-a}=R}\frac{f(\zeta)}{\zeta-z}\,d\zeta.
 $$
 On the integration circle,
 $$
@@ -38,7 +38,7 @@ $$
 $$
 Because
 $$
-\left|\frac{z-a}{\zeta-a}\right|=\frac{|z-a|}{R}<1,
+\abs{\frac{z-a}{\zeta-a}}=\frac{\abs{z-a}}{R}<1,
 $$
 this geometric series converges uniformly on the contour, so it may be integrated term by term. Hence
 $$
@@ -48,7 +48,7 @@ where
 $$
 a_n
 =\frac{1}{2\pi i}
-\int_{|\zeta-a|=R}
+\int_{\abs{\zeta-a}=R}
 \frac{f(\zeta)}{(\zeta-a)^{n+1}}\,d\zeta.
 $$
 By Cauchy's differentiation formula,
@@ -62,5 +62,5 @@ $$
 f(z)=\sum_{n=0}^{\infty}
 \frac{f^{(n)}(a)}{n!}(z-a)^n}
 $$
-for every $|z-a|<R$. Since $R$ may be any radius smaller than the distance from $a$ to the boundary of the domain, every holomorphic function is analytic at every point of its domain.
+for every $\abs{z-a}<R$. Since $R$ may be any radius smaller than the distance from $a$ to the boundary of the domain, every holomorphic function is analytic at every point of its domain.
 :::

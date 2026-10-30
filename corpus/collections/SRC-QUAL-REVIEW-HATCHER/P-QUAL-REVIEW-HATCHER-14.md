@@ -47,7 +47,7 @@ H^*(\CP^n;\ZZ)
 \cong
 \ZZ[x]/(x^{n+1})},
 \qquad
-|x|=2.
+\gradeddegree{x}=2.
 $$
 
 

@@ -19,15 +19,15 @@ review: draft
 Let $f(z)$ be analytic on $\DD$.
 Prove the following statements.
 
-(a) If $|f'(z) - f'(0)| < |f'(0)|$ for all $z \in \DD$, then $f(z)$ is injective.
+(a) If $\abs{f'(z) - f'(0)} < \abs{f'(0)}$ for all $z \in \DD$, then $f(z)$ is injective.
 
-(b) If $|f(z)| < 1$ for all $z \in \DD$ and $f(z)$ has two distinct fixed points, then $f(z) = z$.
+(b) If $\abs{f(z)} < 1$ for all $z \in \DD$ and $f(z)$ has two distinct fixed points, then $f(z) = z$.
 :::
 
 ::: {.solution}
 (a) Since
 $$
-|f'(z)-f'(0)|<|f'(0)|,
+\abs{f'(z)-f'(0)}<\abs{f'(0)},
 $$
 we have $f'(0)\ne0$ and
 $$
@@ -49,7 +49,7 @@ $$
 F=\phi\circ f\circ\phi^{-1}.
 $$
 Then $F:\DD\to\DD$ fixes $0$ and also the nonzero point
-$\phi(b)$. Schwarz's lemma gives $|F(z)|\le|z|$, and equality at the nonzero
+$\phi(b)$. Schwarz's lemma gives $\abs{F(z)}\le\abs{z}$, and equality at the nonzero
 fixed point forces
 $$
 F(z)=e^{i\theta}z.

@@ -30,19 +30,19 @@ An \dfn{isomorphism} $g:(X,f,\theset{U_i},\theset{\psi_i})\to(X',f',\theset{U'_i
 
 (a) Let $\mce$ be a locally free sheaf of rank $n$ on $Y$.
     Let $S(\mce)$ be its symmetric algebra and let $X=\Spec_Y S(\mce)$ with projection $f:X\to Y$.
-    For each open affine $U\subseteq Y$ on which $\mce|_U$ is free, choose a basis and use $S(\mce(U))\cong\OO_Y(U)[x_1,\ldots,x_n]$ to define $\psi:f^{-1}(U)\to\AA^n_U$.
+    For each open affine $U\subseteq Y$ on which $\mce\restrict_U$ is free, choose a basis and use $S(\mce(U))\cong\OO_Y(U)[x_1,\ldots,x_n]$ to define $\psi:f^{-1}(U)\to\AA^n_U$.
 
 Show that these trivializations define a vector bundle of rank $n$ whose isomorphism class does not depend on the bases.
 Denote it by $\mathbf V(\mce)$.
 
-(b) For a morphism $f:X\to Y$, a \dfn{section} over an open set $U\subseteq Y$ is a morphism $s:U\to f^{-1}(U)$ with $(f|_{f^{-1}(U)})\circ s=\id_U$.
+(b) For a morphism $f:X\to Y$, a \dfn{section} over an open set $U\subseteq Y$ is a morphism $s:U\to f^{-1}(U)$ with $(f\restrict_{f^{-1}(U)})\circ s=\id_U$.
     Sections restrict and glue to form a sheaf of sets $\mcs(X/Y)$ on $Y$.
     Show that for a rank-$n$ vector bundle this sheaf has a natural $\OO_Y$-module structure making it locally free of rank $n$.
 
 (c) Let $\mce$ be locally free of rank $n$, put $X=\mathbf V(\mce)$, and let $\mcs=\mcs(X/Y)$.
-For an open set $V\subseteq Y$, send a section $s\in\Gamma(V,\dualof{\mce})=\Hom_{\OO_V}(\mce|_V,\OO_V)$ to its induced $\OO_V$-algebra homomorphism $S(\mce|_V)\to\OO_V$, and then to the resulting section
+For an open set $V\subseteq Y$, send a section $s\in\Gamma(V,\dualof{\mce})=\Hom_{\OO_V}(\mce\restrict_V,\OO_V)$ to its induced $\OO_V$-algebra homomorphism $S(\mce\restrict_V)\to\OO_V$, and then to the resulting section
 $$
-V=\Spec_V\OO_V\longrightarrow\Spec_V S(\mce|_V)=f^{-1}(V).
+V=\Spec_V\OO_V\longrightarrow\Spec_V S(\mce\restrict_V)=f^{-1}(V).
 $$
 Show that this construction gives an isomorphism $\dualof{\mce}\cong\mcs$.
 
@@ -115,10 +115,10 @@ $$
 
 ::: pf-proof
 
-For an open set $U\subseteq Y$, a section of $\dualof{\mce}$ is an $\OO_U$-linear sheaf morphism $\lambda:\mce|_U\to\OO_U$.
+For an open set $U\subseteq Y$, a section of $\dualof{\mce}$ is an $\OO_U$-linear sheaf morphism $\lambda:\mce\restrict_U\to\OO_U$.
 By the symmetric-algebra universal property, it extends uniquely to an $\OO_U$-algebra morphism
 $$
-S(\mce|_U)\longrightarrow\OO_U.
+S(\mce\restrict_U)\longrightarrow\OO_U.
 $$
 Taking spectra on affine opens of $U$ and gluing gives a section $s_\lambda:U\to X$ over $Y$, by the relative-spectrum construction of [[P-AGH2517AFFMOR]]. Conversely, a section of $X$ over $U$ induces this algebra homomorphism on each affine open of $U$.
 Its restriction to degree one gives $\lambda$.
@@ -140,7 +140,7 @@ Every rank-$n$ bundle $f:X\to Y$ is canonically isomorphic, as a bundle, to $\ma
 
 The morphism $f$ is affine: refine the trivializing cover by affine opens, whose inverse images are affine $n$-spaces.
 Put $\mathcal B=f_*\OO_X$.
-On a trivializing affine open $U$, the algebra $\mathcal B|_U$ is $\OO_U[x_1,\ldots,x_n]$.
+On a trivializing affine open $U$, the algebra $\mathcal B\restrict_U$ is $\OO_U[x_1,\ldots,x_n]$.
 Its degree-one summand consists of the linear forms in the coordinates.
 The transition maps are linear and preserve this summand, so these summands glue to a locally free subsheaf $\mathcal E\subseteq\mathcal B$ of rank $n$.
 

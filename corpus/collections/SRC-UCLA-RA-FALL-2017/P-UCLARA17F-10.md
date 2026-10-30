@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-10
 kind: problem
-title: Subharmonicity of $\sum|f_n|^2$ for holomorphic $f_n$
+title: Subharmonicity of $\sum\abs{f_n}^2$ for holomorphic $f_n$
 classification:
   areas:
   - real-analysis
@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 10. Let $\{f_n\}$ be a sequence of holomorphic functions on $\DD$ with the property that
 $$
-F(z):=\sum_{n=1}^{\infty}|f_n(z)|^2\le1
+F(z):=\sum_{n=1}^{\infty}\abs{f_n(z)}^2\le1
 $$
 for all $z\in\DD$. Show that the series defining $F(z)$ converges uniformly on compact subsets of $\DD$ and that $F$ is subharmonic.
 :::
@@ -28,7 +28,7 @@ for all $z\in\DD$. Show that the series defining $F(z)$ converges uniformly on c
 
 For $N\ge1$, set
 $$
-g_N(z)\coloneqq\sum_{n=1}^N|f_n(z)|^2.
+g_N(z)\coloneqq\sum_{n=1}^N\abs{f_n(z)}^2.
 $$
 
 ::: pf
@@ -46,9 +46,9 @@ $$
 
 If $f$ is holomorphic, then
 $$
-\Delta |f|^2=4|f'|^2\ge0,
+\Delta \abs{f}^2=4\abs{f'}^2\ge0,
 $$
-so $|f|^2$ is subharmonic. Finite sums of subharmonic functions are subharmonic, hence each $g_N$ is subharmonic; continuity is immediate from holomorphy of the $f_n$. The monotone convergence to $F$ is exactly the definition of the series, whose terms are nonnegative.
+so $\abs{f}^2$ is subharmonic. Finite sums of subharmonic functions are subharmonic, hence each $g_N$ is subharmonic; continuity is immediate from holomorphy of the $f_n$. The monotone convergence to $F$ is exactly the definition of the series, whose terms are nonnegative.
 
 :::
 
@@ -101,20 +101,20 @@ The function
 $$
 v_{N,M}\coloneqq g_M-g_N
 =
-\sum_{n=N+1}^M|f_n|^2
+\sum_{n=N+1}^M\abs{f_n}^2
 $$
 is nonnegative and subharmonic. Applying the subharmonic Poisson inequality on the disk $B(w_j,2\rho)$ gives
 $$
 v_{N,M}(z)
 \le
 \frac1{2\pi}\int_0^{2\pi}
-\frac{4\rho^2-|z-w_j|^2}
-{|2\rho e^{i\theta}-(z-w_j)|^2}
+\frac{4\rho^2-\abs{z-w_j}^2}
+{\abs{2\rho e^{i\theta}-(z-w_j)}^2}
 v_{N,M}(w_j+2\rho e^{i\theta})\,d\theta.
 $$
-For $|z-w_j|<\rho$, the Poisson kernel is bounded by
+For $\abs{z-w_j}<\rho$, the Poisson kernel is bounded by
 $$
-\frac{2\rho+|z-w_j|}{2\rho-|z-w_j|}
+\frac{2\rho+\abs{z-w_j}}{2\rho-\abs{z-w_j}}
 \le3.
 $$
 Also $0\le v_{N,M}\le F-g_N$. Substituting these two bounds yields the stated estimate.
@@ -183,7 +183,7 @@ Step [](#s2-4){.pf-ref} proves the claim of step [](#s2){.pf-ref} for an arbitra
 
 The series
 $$
-\sum_{n=1}^{\infty}|f_n(z)|^2
+\sum_{n=1}^{\infty}\abs{f_n(z)}^2
 $$
 converges uniformly on every compact subset of $\DD$ to $F$.
 

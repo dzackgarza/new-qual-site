@@ -50,7 +50,7 @@ p^{-1}(b)=\{x_1,\ldots,x_r\}.
 $$
 Choose pairwise disjoint open neighborhoods $U_i$ of the $x_i$ such that each restriction
 $$
-p|_{U_i}:U_i\longrightarrow p(U_i)
+p\restrict_{U_i}:U_i\longrightarrow p(U_i)
 $$
 is a homeomorphism onto an open neighborhood of $b$.
 
@@ -92,7 +92,7 @@ $V$ is a finite intersection of open sets that contain $b$, by step [](#b-not-in
 $$
 p^{-1}(V)=\bigsqcup_{i=1}^r (U_i\cap p^{-1}(V)),
 $$
-a union of pairwise disjoint open sets. Since $V\subseteq p(U_i)$ and $p|_{U_i}$ is a homeomorphism onto $p(U_i)$, each restriction $p:U_i\cap p^{-1}(V)\to V$ is a homeomorphism.
+a union of pairwise disjoint open sets. Since $V\subseteq p(U_i)$ and $p\restrict_{U_i}$ is a homeomorphism onto $p(U_i)$, each restriction $p:U_i\cap p^{-1}(V)\to V$ is a homeomorphism.
 
 :::
 

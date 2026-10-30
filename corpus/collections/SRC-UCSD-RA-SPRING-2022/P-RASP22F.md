@@ -34,7 +34,7 @@ Prove that if $\mu(U) = \int_U f\,d\mu$ whenever $U$ is open, then $f = 1$ $\mu$
 ::: {.solution}
 Let
 $$
-M:=\|1-f\|_\infty<\infty.
+M:=\norm{1-f}_\infty<\infty.
 $$
 We first show that
 $$
@@ -55,8 +55,8 @@ $$
 Therefore
 $$
 \begin{aligned}
-\left|\int_E(1-f)\,d\mu\right|
-&=\left|\int_{U\setminus E}(1-f)\,d\mu\right|\\
+\abs{\int_E(1-f)\,d\mu}
+&=\abs{\int_{U\setminus E}(1-f)\,d\mu}\\
 &\le M\mu(U\setminus E)\\
 &\le M\varepsilon.
 \end{aligned}

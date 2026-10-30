@@ -59,7 +59,7 @@ This is the standard spherical parametrization.
 
 The surface-area element is
 $$
-\|X_\theta\times X_\varphi\|
+\norm{X_\theta\times X_\varphi}
 \,d\theta\,d\varphi
 =
 R^2\sin\theta
@@ -201,7 +201,7 @@ Differentiate the parametrization from step [](#s1-5){.pf-ref}.
 
 Their cross product has norm
 $$
-\|Y_\theta\times Y_\varphi\|
+\norm{Y_\theta\times Y_\varphi}
 =
 R_1(R_2+R_1\cos\theta).
 $$
@@ -211,11 +211,11 @@ $$
 
 The two tangent vectors are orthogonal. Their norms are
 $$
-\|Y_\theta\|=R_1
+\norm{Y_\theta}=R_1
 $$
 and
 $$
-\|Y_\varphi\|
+\norm{Y_\varphi}
 =
 R_2+R_1\cos\theta.
 $$

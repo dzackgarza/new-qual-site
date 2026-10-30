@@ -43,14 +43,14 @@ Prove convergence when $\mu(X)<\infty$.
 
 Uniform convergence gives
 $$
-\|f_n-f\|_\infty\longrightarrow0.
+\norm{f_n-f}_\infty\longrightarrow0.
 $$
 Since $\mu(X)<\infty$,
 $$
 \begin{aligned}
-\left|\int_X f_n\,d\mu-\int_X f\,d\mu\right|
-&\le\int_X|f_n-f|\,d\mu\\
-&\le \mu(X)\|f_n-f\|_\infty
+\abs{\int_X f_n\,d\mu-\int_X f\,d\mu}
+&\le\int_X\abs{f_n-f}\,d\mu\\
+&\le \mu(X)\norm{f_n-f}_\infty
 \longrightarrow0.
 \end{aligned}
 $$
@@ -75,7 +75,7 @@ f_n(x)=\frac1n\mathbf1_{[0,n]}(x).
 $$
 Then
 $$
-\|f_n\|_\infty=\frac1n\longrightarrow0,
+\norm{f_n}_\infty=\frac1n\longrightarrow0,
 $$
 so $f_n\to0$ uniformly. However,
 $$

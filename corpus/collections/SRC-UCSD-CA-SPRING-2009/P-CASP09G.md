@@ -26,9 +26,9 @@ $$
 \widehat s(t):=
 \int_{-\infty}^{\infty}s(x)e^{itx}\,dx
 =\begin{cases}
-\pi,&|t|<1,\\
-\pi/2,&|t|=1,\\
-0,&|t|>1.
+\pi,&\abs{t}<1,\\
+\pi/2,&\abs{t}=1,\\
+0,&\abs{t}>1.
 \end{cases}
 $$
 The endpoint values are irrelevant for convolution.
@@ -51,17 +51,17 @@ The integrand equals $\pi^2$ exactly where
 $$
 u\in[-1,1]\cap[t-1,t+1].
 $$
-That intersection has length $2-|t|$ for $|t|\le2$ and length $0$ for
-$|t|\ge2$. Hence
+That intersection has length $2-\abs{t}$ for $\abs{t}\le2$ and length $0$ for
+$\abs{t}\ge2$. Hence
 $$
 \boxed{
 \int_{-\infty}^{\infty}
 \left(\frac{\sin x}{x}\right)^2e^{itx}\,dx
 =
 \begin{cases}
-\pi\left(1-\dfrac{|t|}{2}\right),&|t|\le2,\\[4pt]
-0,&|t|\ge2.
+\pi\left(1-\dfrac{\abs{t}}{2}\right),&\abs{t}\le2,\\[4pt]
+0,&\abs{t}\ge2.
 \end{cases}}
 $$
-At $|t|=2$ both formulas give $0$.
+At $\abs{t}=2$ both formulas give $0$.
 :::

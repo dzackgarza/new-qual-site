@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $f$ be an injective holomorphic function on the open unit disk $U\subset\CC$. Show that the area of $f(U)$ is
 $$
-\int_U |f'(z)|^2\,dx\,dy.
+\int_U \abs{f'(z)}^2\,dx\,dy.
 $$
 Compute the area of the image of $U$ under
 $$

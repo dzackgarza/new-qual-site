@@ -44,7 +44,7 @@ are linear subspaces, and which of the maps
 $$
 T(f)=a_1(f)f,
 \qquad
-T(f)=\|f\|\sin x
+T(f)=\norm{f}\sin x
 $$
 are linear.
 
@@ -164,9 +164,9 @@ S(2f)=a_1(2f)(2f)=4a_1(f)f=4S(f)\neq2S(f),
 $$
 so $S$ is not linear.
 
-For $R(f)=\|f\|\sin x$, any nonzero $f$ gives
+For $R(f)=\norm{f}\sin x$, any nonzero $f$ gives
 $$
-R(-f)=\|-f\|\sin x=\|f\|\sin x=R(f)\neq-R(f).
+R(-f)=\norm{-f}\sin x=\norm{f}\sin x=R(f)\neq-R(f).
 $$
 Thus $R$ is not linear.
 

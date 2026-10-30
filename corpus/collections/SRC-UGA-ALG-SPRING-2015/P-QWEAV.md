@@ -144,7 +144,7 @@ Since $N \equiv 2 \pmod 4$, $2 \mid N$ and $N/2$ is an odd integer.
 
 ::: pf-step
 
-By Cauchy's Theorem for finite groups, since $2 \mid |G| = N$, $G$ contains an element $g \in G$ of order $d = 2$.
+By Cauchy's Theorem for finite groups, since $2 \mid \cardinality{G} = N$, $G$ contains an element $g \in G$ of order $d = 2$.
 
 :::
 
@@ -175,19 +175,19 @@ Since $\varepsilon(e) = 1$ and $\varepsilon(g) = -1$, the homomorphism $\varepsi
 ::: pf-step
 
 By the First Isomorphism Theorem, the kernel $H = \ker(\varepsilon)$ is a normal subgroup of $G$ of index:
-    $$[G : H] = |\{\pm 1\}| = 2.$$
+    $$[G : H] = \cardinality{\{\pm 1\}} = 2.$$
 
 :::
 
 ::: pf-step
 
-The order of $H$ is $|H| = |G|/2 = N/2$.
+The order of $H$ is $\cardinality{H} = \cardinality{G}/2 = N/2$.
 
 :::
 
 ::: pf-step
 
-Since $N > 2$, $1 < |H| = N/2 < N$, so $H$ is a non-trivial, proper normal subgroup of $G$.
+Since $N > 2$, $1 < \cardinality{H} = N/2 < N$, so $H$ is a non-trivial, proper normal subgroup of $G$.
 
 :::
 

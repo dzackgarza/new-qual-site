@@ -34,7 +34,7 @@ Find the number of conjugacy classes of $\operatorname{GL}_3(\FF_q)$, where $q$ 
 
 Conjugacy classes in $\operatorname{GL}_3(\FF_q)$ are classified by rational canonical form, equivalently by assigning to each monic irreducible polynomial $\phi\neq x$ a partition $\lambda_\phi$, with
 $$
-\sum_\phi (\deg\phi)|\lambda_\phi|=3.
+\sum_\phi (\deg\phi)\multiindexsize{\lambda_\phi}=3.
 $$
 
 ::: pf-proof

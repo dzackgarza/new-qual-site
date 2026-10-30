@@ -44,7 +44,7 @@ A point $\mathbf{q}$ satisfies $g_k(\phi(\mathbf{q}))=0$ for all $k$ exactly whe
 There is such a $\phi$ for which the first coordinates of the points $\phi(\mathbf{p}_j)$ are pairwise distinct.
 
 ::: pf-proof
-For $j\neq l$, the vector $\mathbf{p}_j-\mathbf{p}_l$ is nonzero, so $H_{jl}\definedas\theset{\lambda\in k^n\st \lambda\cdot(\mathbf{p}_j-\mathbf{p}_l)=0}$ is a proper linear subspace of $k^n$. Over the infinite field $k$, a finite union of proper subspaces is not all of $k^n$, so there is $\lambda\notin\Union_{j\neq l}H_{jl}$; in particular $\lambda\neq0$. Extend $\lambda$ to a basis $\lambda,\mu_2,\dots,\mu_n$ of $k^n$ and put $\phi(\mathbf{v})\definedas(\lambda\cdot\mathbf{v},\mu_2\cdot\mathbf{v},\dots,\mu_n\cdot\mathbf{v})$, which is invertible. The first coordinates $\lambda\cdot\mathbf{p}_j$ are pairwise distinct by the choice of $\lambda$.
+For $j\neq l$, the vector $\mathbf{p}_j-\mathbf{p}_l$ is nonzero, so $H_{jl}\coloneqq\theset{\lambda\in k^n\st \lambda\cdot(\mathbf{p}_j-\mathbf{p}_l)=0}$ is a proper linear subspace of $k^n$. Over the infinite field $k$, a finite union of proper subspaces is not all of $k^n$, so there is $\lambda\notin\Union_{j\neq l}H_{jl}$; in particular $\lambda\neq0$. Extend $\lambda$ to a basis $\lambda,\mu_2,\dots,\mu_n$ of $k^n$ and put $\phi(\mathbf{v})\coloneqq(\lambda\cdot\mathbf{v},\mu_2\cdot\mathbf{v},\dots,\mu_n\cdot\mathbf{v})$, which is invertible. The first coordinates $\lambda\cdot\mathbf{p}_j$ are pairwise distinct by the choice of $\lambda$.
 :::
 
 :::
@@ -60,13 +60,13 @@ Apply the distinct case to $\phi(X)$ with $\phi$ from step [](#distinct-first){.
 ::: {.pf-step}
 If $p_1^1,\dots,p_d^1$ are pairwise distinct, then $X=V(f_1,\dots,f_n)$, where
 $$
-f_1\definedas\prod_{j=1}^d(x_1-p_j^1),
+f_1\coloneqq\prod_{j=1}^d(x_1-p_j^1),
 \qquad
-f_k\definedas \tilde f_k(x_1)-x_k\quad(2\leq k\leq n),
+f_k\coloneqq \tilde f_k(x_1)-x_k\quad(2\leq k\leq n),
 $$
 and $\tilde f_k\in k[t]$ is the Lagrange interpolating polynomial
 $$
-\tilde f_k(t)\definedas\sum_{j=1}^d p_j^k\prod_{\substack{1\leq m\leq d\\ m\neq j}}\frac{t-p_m^1}{p_j^1-p_m^1}
+\tilde f_k(t)\coloneqq\sum_{j=1}^d p_j^k\prod_{\substack{1\leq m\leq d\\ m\neq j}}\frac{t-p_m^1}{p_j^1-p_m^1}
 .$$
 
 ::: pf-proof

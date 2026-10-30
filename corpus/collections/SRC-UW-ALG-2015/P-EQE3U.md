@@ -83,7 +83,7 @@ Let $\alpha$ denote the image of $x$ in $F$. Then $\alpha$ has multiplicative or
 
 The multiplicative group $F^\times$ has
 $$
-|F^\times|=32-1=31
+\cardinality{F^\times}=32-1=31
 $$
 elements. Since $31$ is prime, every nonidentity element of $F^\times$ has order $31$. The element $\alpha$ is nonzero because $f(0)\ne0$, and $\alpha\ne1$ because $f(1)\ne0$. Hence $\alpha$ has order $31$.
 

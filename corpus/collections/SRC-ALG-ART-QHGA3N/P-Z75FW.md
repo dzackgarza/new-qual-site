@@ -31,7 +31,7 @@ Show that there exist no simple groups of order 148.
 
 Let $G$ be a group of order
 $$
-|G|=148=2^2\cdot37.
+\cardinality{G}=148=2^2\cdot37.
 $$
 If $n_{37}$ denotes the number of Sylow $37$-subgroups, then
 $$

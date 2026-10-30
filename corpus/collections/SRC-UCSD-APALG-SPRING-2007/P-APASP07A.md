@@ -135,7 +135,7 @@ The two representations $W_1$ and $W_2$ are not isomorphic, because the central 
 
 Thus we have found nine irreducibles of dimension $1$ and two irreducibles of dimension $3$. Their squared dimensions sum to
 $$
-9\cdot1^2+2\cdot3^2=27=|G|.
+9\cdot1^2+2\cdot3^2=27=\cardinality{G}.
 $$
 For a finite group, the sum of the squares of the dimensions of the pairwise inequivalent irreducible complex representations equals the group order. Hence there can be no further irreducibles.
 

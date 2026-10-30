@@ -74,8 +74,8 @@ orbit has size a power of $p$ greater than one,
 and hence divisible by $p$.
 
 Partitioning $G$ into its conjugacy classes therefore
-gives $|G|\equiv|Z(G)|\pmod p$. Since $p\mid|G|$,
-one has $p\mid|Z(G)|$. The center contains the identity,
+gives $\cardinality{G}\equiv\cardinality{Z(G)}\pmod p$. Since $p\mid\cardinality{G}$,
+one has $p\mid\cardinality{Z(G)}$. The center contains the identity,
 so its positive order is at least $p$.
 :::
 

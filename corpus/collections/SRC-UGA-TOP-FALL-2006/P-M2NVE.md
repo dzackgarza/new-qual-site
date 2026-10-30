@@ -60,9 +60,9 @@ Then $H(x,t)\in S^2$ for every $(x,t)$.
 Since both $x$ and $f(x)$ lie on the unit sphere and are orthogonal by step [](#assume-orthogonal-map){.pf-ref},
 $$
 \begin{aligned}
-\|H(x,t)\|^2
-&=\cos^2(\pi t)\|x\|^2
-  +\sin^2(\pi t)\|f(x)\|^2
+\norm{H(x,t)}^2
+&=\cos^2(\pi t)\norm{x}^2
+  +\sin^2(\pi t)\norm{f(x)}^2
   +2\cos(\pi t)\sin(\pi t)\langle x,f(x)\rangle\\
 &=\cos^2(\pi t)+\sin^2(\pi t)\\
 &=1.

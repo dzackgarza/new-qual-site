@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $A$ and $B$ be positive-definite real symmetric $n\times n$ matrices such that
 $$
-\|BA^{-1}x\|\le \|x\|\qquad\text{for every }x\in\RR^n.
+\norm{BA^{-1}x}\le \norm{x}\qquad\text{for every }x\in\RR^n.
 $$
 
 (a) For $x,y\in\RR^n$, show that
@@ -30,7 +30,7 @@ admits an analytic continuation from $0<z<1$ to the whole complex plane.
 
 (b) Show that
 $$
-\|B^\theta A^{-\theta}x\|\le \|x\|
+\norm{B^\theta A^{-\theta}x}\le \norm{x}
 $$
 for every $0\le\theta\le1$ and every $x\in\RR^n$.
 :::
@@ -115,7 +115,7 @@ Step [](#s1-2){.pf-ref} gives an entire function whose restriction to $0<z<1$ is
 
 The hypothesis
 $$
-\|BA^{-1}x\|\le\|x\|
+\norm{BA^{-1}x}\le\norm{x}
 \qquad
 (x\in\RR^n)
 $$
@@ -139,15 +139,15 @@ $$
 Hence
 $$
 \begin{aligned}
-\|BA^{-1}x\|^2
+\norm{BA^{-1}x}^2
 &=
-\|BA^{-1}u\|^2
+\norm{BA^{-1}u}^2
 +
-\|BA^{-1}v\|^2\\
+\norm{BA^{-1}v}^2\\
 &\le
-\|u\|^2+\|v\|^2\\
+\norm{u}^2+\norm{v}^2\\
 &=
-\|x\|^2.
+\norm{x}^2.
 \end{aligned}
 $$
 
@@ -159,9 +159,9 @@ $$
 
 For every real $t$,
 $$
-\|B^{it}\|_{\mathrm{op}}
+\norm{B^{it}}_{\mathrm{op}}
 =
-\|A^{-it}\|_{\mathrm{op}}
+\norm{A^{-it}}_{\mathrm{op}}
 =1
 $$
 on $\CC^n$.
@@ -187,9 +187,9 @@ $$
 $$
 then
 $$
-|F_{x,y}(z)|
+\abs{F_{x,y}(z)}
 \le
-\|x\|\,\|y\|.
+\norm{x}\,\norm{y}.
 $$
 
 
@@ -198,13 +198,13 @@ $$
 Write $z=it$. By Cauchy--Schwarz and step [](#s1-5){.pf-ref},
 $$
 \begin{aligned}
-|F_{x,y}(it)|
+\abs{F_{x,y}(it)}
 &=
-|y^T B^{it}A^{-it}x|\\
+\abs{y^T B^{it}A^{-it}x}\\
 &\le
-\|y\|\,\|B^{it}A^{-it}x\|\\
+\norm{y}\,\norm{B^{it}A^{-it}x}\\
 &\le
-\|y\|\,\|x\|.
+\norm{y}\,\norm{x}.
 \end{aligned}
 $$
 Here $y$ is real, so $y^T$ agrees with its Hermitian transpose.
@@ -221,9 +221,9 @@ $$
 $$
 then
 $$
-|F_{x,y}(z)|
+\abs{F_{x,y}(z)}
 \le
-\|x\|\,\|y\|.
+\norm{x}\,\norm{y}.
 $$
 
 
@@ -237,14 +237,14 @@ B^{it}(BA^{-1})A^{-it}.
 $$
 By steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref},
 $$
-\|B^{it}(BA^{-1})A^{-it}\|_{\mathrm{op}}
+\norm{B^{it}(BA^{-1})A^{-it}}_{\mathrm{op}}
 \le1.
 $$
 Therefore Cauchy--Schwarz gives
 $$
-|F_{x,y}(1+it)|
+\abs{F_{x,y}(1+it)}
 \le
-\|x\|\,\|y\|.
+\norm{x}\,\norm{y}.
 $$
 
 :::
@@ -269,7 +269,7 @@ c\,\lambda^z\mu^{-z}
 $$
 with $\lambda,\mu>0$. On the strip,
 $$
-|\lambda^z\mu^{-z}|
+\abs{\lambda^z\mu^{-z}}
 =
 \lambda^{\operatorname{Re}z}
 \mu^{-\operatorname{Re}z},
@@ -284,9 +284,9 @@ which is bounded because $0\le\operatorname{Re}z\le1$. Hence every matrix entry,
 
 For every $0\le\theta\le1$,
 $$
-|F_{x,y}(\theta)|
+\abs{F_{x,y}(\theta)}
 \le
-\|x\|\,\|y\|.
+\norm{x}\,\norm{y}.
 $$
 
 
@@ -303,9 +303,9 @@ Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the bound on both boundary 
 For every $0\le\theta\le1$ and $x\in\RR^n$,
 $$
 \boxed{
-\|B^\theta A^{-\theta}x\|
+\norm{B^\theta A^{-\theta}x}
 \le
-\|x\|
+\norm{x}
 }.
 $$
 
@@ -318,12 +318,12 @@ v=B^\theta A^{-\theta}x
 $$
 is real. Hence
 $$
-\|v\|
+\norm{v}
 =
-\sup_{\substack{y\in\RR^n\\\|y\|=1}}
-|\langle y,v\rangle|.
+\sup_{\substack{y\in\RR^n\\\norm{y}=1}}
+\abs{\langle y,v\rangle}.
 $$
-By step [](#s1-9){.pf-ref}, every term in this supremum is at most $\|x\|$. Thus $\|v\|\le\|x\|$.
+By step [](#s1-9){.pf-ref}, every term in this supremum is at most $\norm{x}$. Thus $\norm{v}\le\norm{x}$.
 
 :::
 

@@ -43,11 +43,11 @@ uniformly in $x$. Hence $f_n\to f$ uniformly.
 
 (b) Compactness is necessary. On $X=\RR$, let
 $$
-f_n(x)=\frac{n}{n+|x|}.
+f_n(x)=\frac{n}{n+\abs{x}}.
 $$
 Each $f_n$ is continuous, $f_n(x)\uparrow 1$ for each fixed $x$, but
 $$
-\sup_x |1-f_n(x)|=1,
+\sup_x \abs{1-f_n(x)}=1,
 $$
 so convergence is not uniform.
 

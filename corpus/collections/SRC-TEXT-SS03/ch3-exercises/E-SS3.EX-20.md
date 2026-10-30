@@ -20,13 +20,13 @@ audit:
     If U is an open subset of C we use the notation
 
 $$
-\| f \| _ {L ^ {2} (U)} = \left(\int_ {U} | f (z) | ^ {2} d x d y\right) ^ {1 / 2}
+\norm{ f } _ {L ^ {2} (U)} = \left(\int_ {U} \abs{ f (z) } ^ {2} d x d y\right) ^ {1 / 2}
 $$
 
 for the mean square norm, and
 
 $$
-\| f \| _ {L ^ {\infty} (U)} = \sup _ {z \in U} | f (z) |
+\norm{ f } _ {L ^ {\infty} (U)} = \sup _ {z \in U} \abs{ f (z) }
 $$
 
 for the sup norm.
@@ -34,10 +34,10 @@ for the sup norm.
 (a) If f is holomorphic in a neighborhood of the disc $D _ { r } ( z _ { 0 } )$ , show that for any $0 < s < r$ there exists a constant $C > 0$ (which depends on s and $r )$ such that
 
 $$
-\| f \| _ {L ^ {\infty} (D _ {s} (z _ {0}))} \leq C \| f \| _ {L ^ {2} (D _ {r} (z _ {0}))}.
+\norm{ f } _ {L ^ {\infty} (D _ {s} (z _ {0}))} \leq C \norm{ f } _ {L ^ {2} (D _ {r} (z _ {0}))}.
 $$
 
-(b) Prove that if $\left\{ f _ { n } \right\}$ is a Cauchy sequence of holomorphic functions in the mean square norm $\| \cdot \| _ { L ^ { 2 } ( U ) }$ , then the sequence $\left\{ f _ { n } \right\}$ converges uniformly on every compact subset of $\dot { U }$ to a holomorphic function.
+(b) Prove that if $\left\{ f _ { n } \right\}$ is a Cauchy sequence of holomorphic functions in the mean square norm $\norm{ \cdot } _ { L ^ { 2 } ( U ) }$ , then the sequence $\left\{ f _ { n } \right\}$ converges uniformly on every compact subset of $\dot { U }$ to a holomorphic function.
 
 [Hint: Use the mean-value property.]
 :::
@@ -49,13 +49,13 @@ $$
 $$
 For every $z\in D_s(z_0)$, the closed disc $\overline{D_\rho(z)}$ lies in $D_r(z_0)$. By the mean-value property, $f(z)$ is the average of $f$ over $D_\rho(z)$, so the Cauchy--Schwarz inequality gives
 $$
-|f(z)|^2\le \frac1{\pi\rho^2}\int_{D_\rho(z)}|f(w)|^2\,dA(w)
-\le \frac1{\pi\rho^2}\|f\|_{L^2(D_r(z_0))}^2.
+\abs{f(z)}^2\le \frac1{\pi\rho^2}\int_{D_\rho(z)}\abs{f(w)}^2\,dA(w)
+\le \frac1{\pi\rho^2}\norm{f}_{L^2(D_r(z_0))}^2.
 $$
 Thus
 $$
-\|f\|_{L^\infty(D_s(z_0))}
-\le \frac1{\sqrt\pi\rho}\|f\|_{L^2(D_r(z_0))}.
+\norm{f}_{L^\infty(D_s(z_0))}
+\le \frac1{\sqrt\pi\rho}\norm{f}_{L^2(D_r(z_0))}.
 $$
 So one may take $C=(\sqrt\pi\rho)^{-1}$.
 
@@ -69,8 +69,8 @@ K\subset\bigcup_{j=1}^N D_{s_j}(z_j),
 $$
 Applying part (a) to $f_n-f_m$ on each disc gives
 $$
-\|f_n-f_m\|_{L^\infty(K)}
-\le C_K\|f_n-f_m\|_{L^2(U)}
+\norm{f_n-f_m}_{L^\infty(K)}
+\le C_K\norm{f_n-f_m}_{L^2(U)}
 $$
 for a constant $C_K$ independent of $m,n$. Since $(f_n)$ is Cauchy in $L^2(U)$, it is uniformly Cauchy on $K$. Hence it converges uniformly on every compact subset of $U$ to a function $f$. By the Weierstrass theorem on locally uniform limits of holomorphic functions, $f$ is holomorphic on $U$.
 :::

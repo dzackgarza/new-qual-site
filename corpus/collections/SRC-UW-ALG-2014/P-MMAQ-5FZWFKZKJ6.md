@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5FZWFKZKJ6
 kind: problem
-title: Class sums form a $\ZZ$-basis of the center of $\ZZ[G]$, and
-  $|C|\chi_\pi(C)/\dim V$ is an algebraic integer
+title: Class sums form a $\ZZ$-basis of the center of $\ZZ[G]$, and $\cardinality{C}\chi_\pi(C)/\dim V$ is an algebraic integer
 classification:
   areas:
   - algebra
@@ -25,9 +24,9 @@ For each conjugacy class $C \subseteq G$, let $P_C = \sum_{g \in C} g$ be the cl
 (1) Show that the class sums $\{P_C\}$ form a $\ZZ$-basis for $\mathcal{Z}$. Hence $\mathcal{Z} \cong \ZZ^d$ as an abelian group, where $d$ is the number of conjugacy classes in $G$.
 (2) Show that if a ring $R$ is isomorphic to $\ZZ^d$ as an abelian group, then every element in $R$ satisfies a monic integral polynomial (i.e. is integral over $\ZZ$).
 (3) Let $\pi: G \to \operatorname{GL}(V)$ be an irreducible complex representation of $G$. Show that $\pi(P_C)$ acts on $V$ as multiplication by the scalar:
-$$\omega_\pi(C) = \frac{|C| \chi_\pi(C)}{\dim V}$$
+$$\omega_\pi(C) = \frac{\cardinality{C} \chi_\pi(C)}{\dim V}$$
 where $\chi_\pi(C)$ is the value of the character $\chi_\pi$ on any element of $C$.
-(4) Conclude that $\frac{|C| \chi_\pi(C)}{\dim V}$ is an **algebraic integer**.
+(4) Conclude that $\frac{\cardinality{C} \chi_\pi(C)}{\dim V}$ is an **algebraic integer**.
 :::
 
 ::: {.solution}
@@ -168,14 +167,14 @@ $$\operatorname{Tr}(\pi(P_C)) = \operatorname{Tr}(\lambda_C \operatorname{id}_V)
 
 ::: pf-step
 On the other hand, by linearity of trace and definition of character $\chi_\pi$:
-$$\operatorname{Tr}(\pi(P_C)) = \sum_{g \in C} \operatorname{Tr}(\pi(g)) = \sum_{g \in C} \chi_\pi(g) = |C| \chi_\pi(C)$$
+$$\operatorname{Tr}(\pi(P_C)) = \sum_{g \in C} \operatorname{Tr}(\pi(g)) = \sum_{g \in C} \chi_\pi(g) = \cardinality{C} \chi_\pi(C)$$
 since $\chi_\pi$ is constant on the conjugacy class $C$.
 
 :::
 
 ::: pf-step
 Equating the two trace computations:
-$$n \lambda_C = |C| \chi_\pi(C) \implies \lambda_C = \frac{|C| \chi_\pi(C)}{\dim V}.$$
+$$n \lambda_C = \cardinality{C} \chi_\pi(C) \implies \lambda_C = \frac{\cardinality{C} \chi_\pi(C)}{\dim V}.$$
 
 :::
 
@@ -184,13 +183,13 @@ $$n \lambda_C = |C| \chi_\pi(C) \implies \lambda_C = \frac{|C| \chi_\pi(C)}{\dim
 :::
 
 ::: pf-step
-Part 4: $\frac{|C|\chi_\pi(C)}{\dim V}$ is an Algebraic Integer:
+Part 4: $\frac{\cardinality{C}\chi_\pi(C)}{\dim V}$ is an Algebraic Integer:
 
 ::: pf-proof
 
 ::: pf-step
 The algebra homomorphism $\pi: \ZZ[G] \to \operatorname{End}_\CC(V)$ restricts on the center to a ring homomorphism:
-$$\pi|_\mathcal{Z}: \mathcal{Z} \longrightarrow \CC \cdot \operatorname{id}_V \cong \CC, \qquad P_C \longmapsto \lambda_C = \frac{|C|\chi_\pi(C)}{\dim V}.$$
+$$\pi\restrict_\mathcal{Z}: \mathcal{Z} \longrightarrow \CC \cdot \operatorname{id}_V \cong \CC, \qquad P_C \longmapsto \lambda_C = \frac{\cardinality{C}\chi_\pi(C)}{\dim V}.$$
 
 :::
 
@@ -206,12 +205,12 @@ By Part 2, the class sum $P_C \in \mathcal{Z}$ satisfies a monic polynomial $p(t
 
 ::: pf-step
 Applying the ring homomorphism $\pi$:
-$$p(\lambda_C) = p\left(\frac{|C|\chi_\pi(C)}{\dim V}\right) = 0.$$
+$$p(\lambda_C) = p\left(\frac{\cardinality{C}\chi_\pi(C)}{\dim V}\right) = 0.$$
 
 :::
 
 ::: pf-step
-Since $\lambda_C$ is a root of a monic polynomial with integer coefficients, $\frac{|C|\chi_\pi(C)}{\dim V}$ is an **algebraic integer**.
+Since $\lambda_C$ is a root of a monic polynomial with integer coefficients, $\frac{\cardinality{C}\chi_\pi(C)}{\dim V}$ is an **algebraic integer**.
 
 :::
 
@@ -221,7 +220,7 @@ Since $\lambda_C$ is a root of a monic polynomial with integer coefficients, $\f
 
 ::: pf-step
 Conclusion:
-Class sums form a $\ZZ$-basis of $\mathcal{Z} \cong \ZZ^d$, whose elements are integral over $\ZZ$; by Schur's Lemma $\pi(P_C) = \omega_\pi(C) \operatorname{id}_V$, so $\omega_\pi(C) = \frac{|C|\chi_\pi(C)}{\dim V}$ is an algebraic integer.
+Class sums form a $\ZZ$-basis of $\mathcal{Z} \cong \ZZ^d$, whose elements are integral over $\ZZ$; by Schur's Lemma $\pi(P_C) = \omega_\pi(C) \operatorname{id}_V$, so $\omega_\pi(C) = \frac{\cardinality{C}\chi_\pi(C)}{\dim V}$ is an algebraic integer.
 :::
 
 :::

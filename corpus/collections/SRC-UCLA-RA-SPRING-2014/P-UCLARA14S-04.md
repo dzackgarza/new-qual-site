@@ -47,7 +47,7 @@ $$
 $$
 is bounded and satisfies
 $$
-\|\varphi\|\le1.
+\norm{\varphi}\le1.
 $$
 
 
@@ -56,14 +56,14 @@ $$
 For $f\in C([0,1])$,
 $$
 \begin{aligned}
-|\varphi(f)|
+\abs{\varphi(f)}
 &\le
-\sum_{n=1}^{\infty}2^{-n}|f(a_n)|\\
+\sum_{n=1}^{\infty}2^{-n}\abs{f(a_n)}\\
 &\le
-\|f\|_\infty
+\norm{f}_\infty
 \sum_{n=1}^{\infty}2^{-n}\\
 &=
-\|f\|_\infty.
+\norm{f}_\infty.
 \end{aligned}
 $$
 Thus $\varphi$ is continuous.
@@ -93,11 +93,11 @@ Define
 $$
 f_k(x)
 \coloneqq
-\max\{1-k|x-a_1|,0\}.
+\max\{1-k\abs{x-a_1},0\}.
 $$
 Each $f_k$ is continuous, takes values in $[0,1]$, and satisfies $f_k(a_1)=1$. If $x\ne a_1$, then for all sufficiently large $k$ one has
 $$
-k|x-a_1|>1,
+k\abs{x-a_1}>1,
 $$
 so $f_k(x)=0$.
 
@@ -149,9 +149,9 @@ f_k(x)g(x)\longrightarrow0
 $$
 for almost every $x\in[0,1]$, because the only possible exceptional point is $a_1$. Also
 $$
-|f_k(x)g(x)|
+\abs{f_k(x)g(x)}
 \le
-|g(x)|,
+\abs{g(x)},
 $$
 and $g\in L^1([0,1])$. Dominated convergence therefore gives
 $$

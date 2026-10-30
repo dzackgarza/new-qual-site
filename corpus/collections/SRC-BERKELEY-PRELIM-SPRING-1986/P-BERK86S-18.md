@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $f,g_1,g_2,\dots$ be entire. Suppose
 $$
-|g_n^{(k)}(0)|\le|f^{(k)}(0)|
+\abs{g_n^{(k)}(0)}\le\abs{f^{(k)}(0)}
 $$
 for all $n,k$, and suppose
 $$

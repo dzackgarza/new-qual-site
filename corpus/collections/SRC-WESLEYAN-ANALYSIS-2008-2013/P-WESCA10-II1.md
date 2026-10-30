@@ -34,24 +34,24 @@ $$
 
 For every $r>0$,
 $$
-\left|\int_{\gamma_r}\frac{e^{iz}}{z^2}\,dz\right|
+\abs{\int_{\gamma_r}\frac{e^{iz}}{z^2}\,dz}
 \le \frac{\pi}{r}.
 $$
 
 
 ::: pf-proof
 
-For $z\in\gamma_r$, one has $|z|=r$ and
+For $z\in\gamma_r$, one has $\abs{z}=r$ and
 $$
-|e^{iz}|=e^{-\operatorname{Im}z}\le 1,
+\abs{e^{iz}}=e^{-\operatorname{Im}z}\le 1,
 $$
 because $\operatorname{Im}z\ge0$ on the upper semicircle. Hence
 $$
-\left|\frac{e^{iz}}{z^2}\right|\le\frac1{r^2}.
+\abs{\frac{e^{iz}}{z^2}}\le\frac1{r^2}.
 $$
 The length of $\gamma_r$ is $\pi r$, so the ML inequality gives
 $$
-\left|\int_{\gamma_r}\frac{e^{iz}}{z^2}\,dz\right|
+\abs{\int_{\gamma_r}\frac{e^{iz}}{z^2}\,dz}
 \le (\pi r)\frac1{r^2}
 =\frac\pi r.
 $$

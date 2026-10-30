@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Let
 $$
-\DD=\{z\in\CC:|z|<1\}
+\DD=\{z\in\CC:\abs{z}<1\}
 $$
 be the open unit disk and let $\overline{\DD}$ be the closed unit disk. Let $\{p_n\}$ be distinct points in $\DD$, and let $r_n>0$ be such that the disks
 $$
-D_n=\{z:|z-p_n|\le r_n\}
+D_n=\{z:\abs{z-p_n}\le r_n\}
 $$
 satisfy (i) $D_n\subset\DD$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
 $$
@@ -56,7 +56,7 @@ $$
 
 Write $p_n=a_n+ib_n$. The vertical line $\operatorname{Re}z=x$ meets $D_n$ exactly when
 $$
-|x-a_n|\le r_n.
+\abs{x-a_n}\le r_n.
 $$
 Hence
 $$
@@ -127,15 +127,15 @@ The set $X$ has positive area.
 
 Let
 $$
-m(x)\coloneqq |X_x|.
+m(x)\coloneqq \setmeasure{X_x}.
 $$
 By Fubini--Tonelli applied to the indicator function of the measurable set $X$,
 $$
-|X|=\int_{-1}^1m(x)\,dx.
+\setmeasure{X}=\int_{-1}^1m(x)\,dx.
 $$
 By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, one has $m(x)>0$ for almost every $x\in(-1,1)$. Since $m$ is nonnegative and positive on a set of positive measure,
 $$
-\boxed{|X|>0}.
+\boxed{\setmeasure{X}>0}.
 $$
 
 :::

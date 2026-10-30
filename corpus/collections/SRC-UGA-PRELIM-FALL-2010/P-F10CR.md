@@ -30,7 +30,7 @@ $-2 - 2i = 2\sqrt{2}\, e^{-3\pi i/4}$.
 
 ::: pf-proof
 
-$|-2-2i| = \sqrt{4+4} = 2\sqrt{2}$, and $\arg(-2-2i) = -3\pi/4$.
+$\abs{-2-2i} = \sqrt{4+4} = 2\sqrt{2}$, and $\arg(-2-2i) = -3\pi/4$.
 
 :::
 

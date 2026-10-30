@@ -49,13 +49,13 @@ There is an injective linear map $J:E\to F$ with $T\circ J=S$.
 ::: pf-proof
 
 Choose complements $E=E_0\oplus\ker S$ and $F=F_0\oplus\ker T$.
-The restrictions $S|_{E_0}$ and $T|_{F_0}$ are isomorphisms onto $V$.
+The restrictions $S\restrict_{E_0}$ and $T\restrict_{F_0}$ are isomorphisms onto $V$.
 Since
 $$
 \dim\ker S=n+1-r\le m+1-r=\dim\ker T,
 $$
 choose an injection $J_1:\ker S\to\ker T$.
-Define $J$ on $E_0$ to be $(T|_{F_0})^{-1}\circ S|_{E_0}$, and on $\ker S$ to be $J_1$.
+Define $J$ on $E_0$ to be $(T\restrict_{F_0})^{-1}\circ S\restrict_{E_0}$, and on $\ker S$ to be $J_1$.
 The images of these two summands lie in the complementary subspaces $F_0$ and $\ker T$, and both restrictions are injective.
 Thus $J$ is injective, and its construction gives $T\circ J=S$.
 
@@ -80,7 +80,7 @@ p_A([z])=[\ell_0(z):\cdots:\ell_n(z)].
 $$
 The kernel of the surjection $A:k^{m+1}\to k^{n+1}$ has dimension $m-n$, so its projectivization is the stated center.
 Choose a vector-space complement $W$ to this kernel.
-Projection along the kernel maps $\PP^m\setminus L$ to the linear $n$-plane of lines in $W$, and $A|_W$ identifies that plane with $\PP^n$.
+Projection along the kernel maps $\PP^m\setminus L$ to the linear $n$-plane of lines in $W$, and $A\restrict_W$ identifies that plane with $\PP^n$.
 Thus $p_A$ is a linear projection followed by a projective linear isomorphism of its target.
 Under any fixed linear identification of that target with $\PP^n$, the latter is an automorphism of $\PP^n$.
 When $m=n$, $A$ is invertible, the center is empty, and $p_A$ itself is a projective linear automorphism; the dimension $-1$ convention refers to this empty center.

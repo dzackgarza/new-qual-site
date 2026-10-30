@@ -56,20 +56,20 @@ $$
 \chi^{\mathrm{reg}}(g)
 =
 \begin{cases}
-|G|,&g=e,\\
+\cardinality{G},&g=e,\\
 0,&g\ne e.
 \end{cases}
 $$
 Hence
 $$
-\chi^{\mathrm{reg}}(e_\lambda)=|G|c_e.
+\chi^{\mathrm{reg}}(e_\lambda)=\cardinality{G}c_e.
 $$
 Combining this with the preceding computation gives
 $$
-|G|c_e=d_\lambda,
+\cardinality{G}c_e=d_\lambda,
 $$
 so
 $$
-\boxed{c_e=\frac{d_\lambda}{|G|}}.
+\boxed{c_e=\frac{d_\lambda}{\cardinality{G}}}.
 $$
 :::

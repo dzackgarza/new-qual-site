@@ -58,7 +58,7 @@ Form the semidirect product
 $$
 H=C_{61}\rtimes_{\varphi} C_3.
 $$
-Then $|H|=183$ and $H$ is nonabelian.
+Then $\cardinality{H}=183$ and $H$ is nonabelian.
 
 ::: pf-proof
 
@@ -85,7 +85,7 @@ Then $G$ is a nonabelian group of order $2013$.
 
 We have
 $$
-|G|=183\cdot11=3\cdot11\cdot61=2013.
+\cardinality{G}=183\cdot11=3\cdot11\cdot61=2013.
 $$
 Since the factor $H$ is nonabelian, the direct product $G$ is nonabelian.
 

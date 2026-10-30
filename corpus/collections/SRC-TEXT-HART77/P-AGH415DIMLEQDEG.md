@@ -45,18 +45,18 @@ $$
 
 The divisor sequence gives
 $$
-0\to\mco_X\to\mco_X(D)\to\mco_X(D)|_D\to0,
+0\to\mco_X\to\mco_X(D)\to\mco_X(D)\restrict_D\to0,
 $$
 and
 $$
-h^0(D,\mco_X(D)|_D)=d.
+h^0(D,\mco_X(D)\restrict_D)=d.
 $$
 
 ::: pf-proof
 
 The first map is multiplication by the canonical section with zero divisor
 $D$. The finite scheme $D$ has length $d$. Since
-$\mco_X(D)|_D$ is locally free of rank one on $D$, it also has length
+$\mco_X(D)\restrict_D$ is locally free of rank one on $D$, it also has length
 $d$, so its space of global sections has dimension $d$.
 
 :::
@@ -72,7 +72,7 @@ One has $\dim\abs{D}\le\deg D$.
 Global sections of step [](#s1){.pf-ref} give
 $$
 0\to H^0(X,\mco_X)\to H^0(X,\mco_X(D))
-\to H^0(D,\mco_X(D)|_D).
+\to H^0(D,\mco_X(D)\restrict_D).
 $$
 Since $h^0(X,\mco_X)=1$, step [](#s1){.pf-ref} gives
 $\ell(D)\le d+1$. Therefore

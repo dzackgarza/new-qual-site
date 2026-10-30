@@ -49,11 +49,11 @@ Both critical points of $f_2$ are nondegenerate.
 ::: pf-proof
 Near the north pole use $(x,y)$ as local coordinates, with
 $$
-z=\sqrt{1-x^2-y^2}=1-\frac{x^2+y^2}{2}+O(\|(x,y)\|^4).
+z=\sqrt{1-x^2-y^2}=1-\frac{x^2+y^2}{2}+O(\norm{(x,y)}^4).
 $$
 Thus the Hessian at the north pole is $-I_2$. Near the south pole,
 $$
-z=-\sqrt{1-x^2-y^2}=-1+\frac{x^2+y^2}{2}+O(\|(x,y)\|^4),
+z=-\sqrt{1-x^2-y^2}=-1+\frac{x^2+y^2}{2}+O(\norm{(x,y)}^4),
 $$
 so the Hessian is $+I_2$. Both are nonsingular.
 :::

@@ -23,7 +23,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Part (c) of the source asks to prove $|G|\equiv1\pmod{p^k}$, which is false since $p^k$ divides $|G|$. Part (c) now asks to prove $|\operatorname{Syl}_p(G)|\equiv1\pmod{p^k}$, the consequence of part (b).
+  note: Part (c) of the source asks to prove $\cardinality{G}\equiv1\pmod{p^k}$, which is false since $p^k$ divides $\cardinality{G}$. Part (c) now asks to prove $\cardinality{\operatorname{Syl}_p(G)}\equiv1\pmod{p^k}$, the consequence of part (b).
 ---
 
 ::: {.problem}
@@ -37,9 +37,9 @@ are distinct.
 (b) Suppose $P_0 \in \operatorname{Syl}_p(G)$ and consider its action on
 $\operatorname{Syl}_p(G)$ by conjugation. For $P \in \operatorname{Syl}_p(G)$, let
 $\mathcal{O}_P$ be the $P_0$-orbit of $P$. Prove that if $P \neq P_0$, then
-$|\mathcal{O}_P| = p^k$.
+$\cardinality{\mathcal{O}_P} = p^k$.
 
-(c) Prove that $|\operatorname{Syl}_p(G)| \equiv 1 \pmod{p^k}$.
+(c) Prove that $\cardinality{\operatorname{Syl}_p(G)} \equiv 1 \pmod{p^k}$.
 :::
 
 ::: {.solution}
@@ -72,7 +72,7 @@ The product $P_1K$ is a $p$-subgroup of $G$.
 
 Because $K\le N_G(P_1)$, the subgroup $P_1$ is normal in $P_1K$. Therefore
 $$
-|P_1K|=\frac{|P_1||K|}{|P_1\cap K|}
+\cardinality{P_1K}=\frac{\cardinality{P_1}\cardinality{K}}{\cardinality{P_1\cap K}}
 $$
 is a power of $p$, so $P_1K$ is a $p$-subgroup of $G$.
 
@@ -140,14 +140,14 @@ Combine this with step [](#s4){.pf-ref}.
 
 If $P\ne P_0$, then
 $$
-|\mathcal O_P|=p^k.
+\cardinality{\mathcal O_P}=p^k.
 $$
 
 ::: pf-proof
 
 By orbit-stabilizer and step [](#s5){.pf-ref},
 $$
-|\mathcal O_P|=[P_0:\operatorname{Stab}_{P_0}(P)]=|P_0|=p^k.
+\cardinality{\mathcal O_P}=[P_0:\operatorname{Stab}_{P_0}(P)]=\cardinality{P_0}=p^k.
 $$
 
 :::
@@ -162,7 +162,7 @@ $$
 
 ::: pf-step
 
-$|\operatorname{Syl}_p(G)|\equiv1\pmod{p^k}$.
+$\cardinality{\operatorname{Syl}_p(G)}\equiv1\pmod{p^k}$.
 
 ::: pf-proof
 
@@ -170,7 +170,7 @@ Fix $P_0\in\operatorname{Syl}_p(G)$ and let $P_0$ act by conjugation on
 $\operatorname{Syl}_p(G)$. The orbit of $P_0$ is $\{P_0\}$. By part (b), every other
 orbit has exactly $p^k$ elements. Since the orbits partition $\operatorname{Syl}_p(G)$,
 $$
-|\operatorname{Syl}_p(G)|=1+rp^k
+\cardinality{\operatorname{Syl}_p(G)}=1+rp^k
 $$
 for some integer $r\ge0$.
 

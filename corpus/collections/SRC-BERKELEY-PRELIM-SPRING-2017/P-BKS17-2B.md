@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-10-02
-  note: Independently reviewed the supplied Berkeley Spring 2017 solutions. The first printed method approximates $f$ and concludes from an integral of $f^2$, which is not valid for a complex-valued function; the solution below instead approximates $\overline f$ and obtains an integral of $|f|^2$.
+  note: Independently reviewed the supplied Berkeley Spring 2017 solutions. The first printed method approximates $f$ and concludes from an integral of $f^2$, which is not valid for a complex-valued function; the solution below instead approximates $\overline f$ and obtains an integral of $\abs{f}^2$.
 - event: solution-written
   by: chatgpt
   date: 2026-10-02
@@ -71,7 +71,7 @@ $$
 
 For every $\varepsilon>0$, there is a complex polynomial $P$ such that
 $$
-\sup_{x\in[-1,1]}|\overline{f(x)}-P(x)|<\varepsilon.
+\sup_{x\in[-1,1]}\abs{\overline{f(x)}-P(x)}<\varepsilon.
 $$
 
 
@@ -79,17 +79,17 @@ $$
 
 Write $f=u+iv$ with real-valued continuous functions $u,v$. By the Weierstrass approximation theorem, there are real polynomials $A$ and $B$ satisfying
 $$
-\|u-A\|_\infty<\frac{\varepsilon}{2},
+\norm{u-A}_\infty<\frac{\varepsilon}{2},
 \qquad
-\|v-B\|_\infty<\frac{\varepsilon}{2}.
+\norm{v-B}_\infty<\frac{\varepsilon}{2}.
 $$
 For $P\coloneqq A-iB$,
 $$
-|\overline f-P|
+\abs{\overline f-P}
 =
-|(u-A)-i(v-B)|
+\abs{(u-A)-i(v-B)}
 \leq
-|u-A|+|v-B|
+\abs{u-A}+\abs{v-B}
 <\varepsilon
 $$
 uniformly on $[-1,1]$.
@@ -102,7 +102,7 @@ uniformly on $[-1,1]$.
 
 One has
 $$
-\int_{-1}^1|f(x)|^2\,dx=0.
+\int_{-1}^1\abs{f(x)}^2\,dx=0.
 $$
 
 
@@ -111,7 +111,7 @@ $$
 Let $\varepsilon>0$ and choose $P$ as in step [](#s1-2){.pf-ref}. By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
-\int_{-1}^1|f(x)|^2\,dx
+\int_{-1}^1\abs{f(x)}^2\,dx
 &=\int_{-1}^1 f(x)\overline{f(x)}\,dx\\
 &=\int_{-1}^1 f(x)(\overline{f(x)}-P(x))\,dx.
 \end{aligned}
@@ -119,11 +119,11 @@ $$
 Hence
 $$
 0\leq
-\int_{-1}^1|f(x)|^2\,dx
+\int_{-1}^1\abs{f(x)}^2\,dx
 \leq
-\varepsilon\int_{-1}^1|f(x)|\,dx.
+\varepsilon\int_{-1}^1\abs{f(x)}\,dx.
 $$
-The last integral is finite because $f$ is continuous on the compact interval $[-1,1]$. Since the inequality holds for every $\varepsilon>0$, the integral of $|f|^2$ must be zero.
+The last integral is finite because $f$ is continuous on the compact interval $[-1,1]$. Since the inequality holds for every $\varepsilon>0$, the integral of $\abs{f}^2$ must be zero.
 
 :::
 
@@ -139,7 +139,7 @@ $$
 
 ::: pf-proof
 
-The function $|f|^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_0\in[-1,1]$, continuity would give a nontrivial interval relative to $[-1,1]$ on which $|f|^2$ is bounded below by a positive constant. Its integral would then be positive, contradicting step [](#s1-3){.pf-ref}. Thus $f(x)=0$ for every $x\in[-1,1]$.
+The function $\abs{f}^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_0\in[-1,1]$, continuity would give a nontrivial interval relative to $[-1,1]$ on which $\abs{f}^2$ is bounded below by a positive constant. Its integral would then be positive, contradicting step [](#s1-3){.pf-ref}. Thus $f(x)=0$ for every $x\in[-1,1]$.
 
 :::
 

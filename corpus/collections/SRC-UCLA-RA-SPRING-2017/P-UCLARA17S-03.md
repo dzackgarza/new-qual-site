@@ -34,17 +34,17 @@ Enumerate the dense set $\QQ\cap[0,1]$ as $q_1,q_2,\ldots$.
 
 For every $h\in C([0,1])$,
 $$
-\|h\|_\infty=\sup_{j\ge1}|h(q_j)|.
+\norm{h}_\infty=\sup_{j\ge1}\abs{h(q_j)}.
 $$
 
 
 ::: pf-proof
 
-The right-hand side is at most $\|h\|_\infty$. Conversely, continuity on the compact interval implies that $|h|$ attains its maximum at some $x_0\in[0,1]$. Choose rationals $q_{j_k}\to x_0$. By continuity,
+The right-hand side is at most $\norm{h}_\infty$. Conversely, continuity on the compact interval implies that $\abs{h}$ attains its maximum at some $x_0\in[0,1]$. Choose rationals $q_{j_k}\to x_0$. By continuity,
 $$
-|h(q_{j_k})|\to |h(x_0)|=\|h\|_\infty.
+\abs{h(q_{j_k})}\to \abs{h(x_0)}=\norm{h}_\infty.
 $$
-Hence the supremum over the rational points is at least $\|h\|_\infty$.
+Hence the supremum over the rational points is at least $\norm{h}_\infty$.
 
 :::
 
@@ -54,7 +54,7 @@ Hence the supremum over the rational points is at least $\|h\|_\infty$.
 
 For each fixed $g\in C([0,1])$, the map
 $$
-N_g(f)\coloneqq\|f-g\|_\infty
+N_g(f)\coloneqq\norm{f-g}_\infty
 $$
 is $\mathcal F$-measurable.
 
@@ -63,17 +63,17 @@ is $\mathcal F$-measurable.
 
 For every $j$, the function
 $$
-f\longmapsto |L_{q_j}(f)-g(q_j)|
+f\longmapsto \abs{L_{q_j}(f)-g(q_j)}
 $$
 is $\mathcal F$-measurable because $L_{q_j}$ is measurable and absolute value is continuous. By step [](#s1-1){.pf-ref},
 $$
-N_g(f)=\sup_{j\ge1}|L_{q_j}(f)-g(q_j)|.
+N_g(f)=\sup_{j\ge1}\abs{L_{q_j}(f)-g(q_j)}.
 $$
 A countable supremum of measurable real-valued functions is measurable. Explicitly, for every $a\in\RR$,
 $$
 \{f:N_g(f)\le a\}
 =\bigcap_{j=1}^{\infty}
-\{f:|L_{q_j}(f)-g(q_j)|\le a\}
+\{f:\abs{L_{q_j}(f)-g(q_j)}\le a\}
 \in\mathcal F.
 $$
 
@@ -109,9 +109,9 @@ Let $\mathcal P_{\QQ}$ be the set of polynomials with rational coefficients. It 
 $$
 p(x)=\sum_{k=0}^d a_kx^k
 $$
-with $\|f-p\|_\infty<\varepsilon/2$. Choose rational numbers $b_k$ so close to $a_k$ that
+with $\norm{f-p}_\infty<\varepsilon/2$. Choose rational numbers $b_k$ so close to $a_k$ that
 $$
-\sum_{k=0}^d|a_k-b_k|<\frac\varepsilon2.
+\sum_{k=0}^d\abs{a_k-b_k}<\frac\varepsilon2.
 $$
 For
 $$
@@ -119,11 +119,11 @@ q(x)=\sum_{k=0}^d b_kx^k\in\mathcal P_{\QQ},
 $$
 one has, since $0\le x\le1$,
 $$
-\|p-q\|_\infty
-\le\sum_{k=0}^d|a_k-b_k|
+\norm{p-q}_\infty
+\le\sum_{k=0}^d\abs{a_k-b_k}
 <\frac\varepsilon2.
 $$
-Thus $\|f-q\|_\infty<\varepsilon$.
+Thus $\norm{f-q}_\infty<\varepsilon$.
 
 :::
 
@@ -142,13 +142,13 @@ $$
 $$
 is countable. It is a basis for the metric topology: if $O$ is open and $f\in O$, choose $\varepsilon>0$ with $B(f,\varepsilon)\subseteq O$. Choose $g\in D$ with
 $$
-\|f-g\|_\infty<\frac\varepsilon3,
+\norm{f-g}_\infty<\frac\varepsilon3,
 $$
 and then choose a positive rational $r$ satisfying
 $$
-\|f-g\|_\infty<r<\varepsilon-\|f-g\|_\infty.
+\norm{f-g}_\infty<r<\varepsilon-\norm{f-g}_\infty.
 $$
-Such an $r$ exists because $\|f-g\|_\infty<\varepsilon/3$. Then
+Such an $r$ exists because $\norm{f-g}_\infty<\varepsilon/3$. Then
 $$
 f\in B(g,r)\subseteq B(f,\varepsilon)\subseteq O.
 $$

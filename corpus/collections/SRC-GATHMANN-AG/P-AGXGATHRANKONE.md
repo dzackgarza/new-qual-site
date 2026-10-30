@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Define
 $$
-X \definedas \theset{M \in \Mat(2\times 3, k) \st \rank M \leq 1} \subseteq \AA^6/k
+X \coloneqq \theset{M \in \Mat(2\times 3, k) \st \rank M \leq 1} \subseteq \AA^6/k
 .$$
 
 Show that $X$ is an irreducible variety, and find its dimension.
@@ -70,7 +70,7 @@ By step [](#image){.pf-ref}, $X=\Phi(\AA^5)$ is irreducible, and by step [](#clo
 :::
 
 ::: {.pf-step #chart}
-The open subset $X_x\definedas X\cap D(x)$ of $X$ is isomorphic to the open subset $D(x)$ of $\AA^4$ with coordinates $x,y,z,a$.
+The open subset $X_x\coloneqq X\cap D(x)$ of $X$ is isomorphic to the open subset $D(x)$ of $\AA^4$ with coordinates $x,y,z,a$.
 
 ::: pf-proof
 Let $\pi:X_x\to D(x)\subseteq\AA^4$ forget $b$ and $c$, and define

@@ -30,25 +30,25 @@ audit:
 ::: {.solution}
 By definition, $f\in\mathfrak F_a$ means that $f$ is holomorphic on
 $$
-S_a=\{z:|\Im z|<a\}
+S_a=\{z:\abs{\Im z}<a\}
 $$
 and that for some $A>0$,
 $$
-|f(x+iy)|\le \frac{A}{1+x^2}
-\qquad(x\in\RR,\ |y|<a).
+\abs{f(x+iy)}\le \frac{A}{1+x^2}
+\qquad(x\in\RR,\ \abs{y}<a).
 \tag{1}
 $$
 Fix $0\le b<a$ and an integer $n\ge1$. Put
 $$
 \rho=\frac{a-b}{2}>0.
 $$
-If $z=x+iy$ with $|y|<b$, then the closed circle $|w-z|=\rho$ lies in $S_a$. Cauchy's inequalities give
+If $z=x+iy$ with $\abs{y}<b$, then the closed circle $\abs{w-z}=\rho$ lies in $S_a$. Cauchy's inequalities give
 $$
-|f^{(n)}(z)|\le \frac{n!}{\rho^n}
-\sup_{|w-z|=\rho}|f(w)|.
+\abs{f^{(n)}(z)}\le \frac{n!}{\rho^n}
+\sup_{\abs{w-z}=\rho}\abs{f(w)}.
 \tag{2}
 $$
-Write $w=u+iv$. Then $|u-x|\le\rho$. Hence
+Write $w=u+iv$. Then $\abs{u-x}\le\rho$. Hence
 $$
 x^2\le 2u^2+2\rho^2,
 $$
@@ -58,13 +58,13 @@ $$
 $$
 Therefore (1) implies
 $$
-|f(w)|\le \frac{A(2+2\rho^2)}{1+x^2}
+\abs{f(w)}\le \frac{A(2+2\rho^2)}{1+x^2}
 $$
 on the circle. Substituting in (2),
 $$
-|f^{(n)}(x+iy)|
+\abs{f^{(n)}(x+iy)}
 \le \frac{A_n}{1+x^2},
-\qquad |y|<b,
+\qquad \abs{y}<b,
 $$
 where
 $$

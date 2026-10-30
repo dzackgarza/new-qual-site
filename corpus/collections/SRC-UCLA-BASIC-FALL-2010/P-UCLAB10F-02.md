@@ -134,9 +134,9 @@ The interval $[a,b]$ is compact. The Heine--Cantor theorem states that every con
 
 Given $\varepsilon>0$, there exists $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 <
 \frac{\varepsilon}{b-a}
 $$

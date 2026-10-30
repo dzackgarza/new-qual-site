@@ -62,7 +62,7 @@ the generators are primitive (they come from the sphere factors in the CW struct
 
 ::: {.pf-step #s4}
 
-Hence the Pontryagin ring is $H_*(SO(5)) \cong \Lambda_\ZZ[x_1, x_3]$ with $|x_1| = 1$, $|x_3| = 3$, and $x_1^2 = x_3^2 = 0$, $x_1 x_3 = -x_3 x_1$.
+Hence the Pontryagin ring is $H_*(SO(5)) \cong \Lambda_\ZZ[x_1, x_3]$ with $\gradeddegree{x_1} = 1$, $\gradeddegree{x_3} = 3$, and $x_1^2 = x_3^2 = 0$, $x_1 x_3 = -x_3 x_1$.
 
 ::: pf-proof
 

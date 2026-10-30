@@ -60,7 +60,7 @@ S^*S
 &=
 (T^*-\overline{\lambda}I)(T-\lambda I)\\
 &=
-T^*T-\lambda T^*-\overline{\lambda}T+|\lambda|^2I,
+T^*T-\lambda T^*-\overline{\lambda}T+\abs{\lambda}^2I,
 \end{aligned}
 $$
 while
@@ -70,7 +70,7 @@ SS^*
 &=
 (T-\lambda I)(T^*-\overline{\lambda}I)\\
 &=
-TT^*-\overline{\lambda}T-\lambda T^*+|\lambda|^2I.
+TT^*-\overline{\lambda}T-\lambda T^*+\abs{\lambda}^2I.
 \end{aligned}
 $$
 These are equal because
@@ -87,7 +87,7 @@ Thus $S$ is normal.
 
 For every normal operator $N$ on a finite-dimensional complex inner-product space,
 $$
-\|Nx\|=\|N^*x\|
+\norm{Nx}=\norm{N^*x}
 $$
 for all $x$.
 
@@ -101,7 +101,7 @@ $$
 Therefore
 $$
 \begin{aligned}
-\|Nx\|^2
+\norm{Nx}^2
 &=
 \langle Nx,Nx\rangle\\
 &=
@@ -111,7 +111,7 @@ $$
 &=
 \langle N^*x,N^*x\rangle\\
 &=
-\|N^*x\|^2.
+\norm{N^*x}^2.
 \end{aligned}
 $$
 Taking nonnegative square roots gives the claim.
@@ -155,17 +155,17 @@ $$
 By step [](#s1-1){.pf-ref}, $S$ is normal.
 Therefore step [](#s1-2){.pf-ref} gives
 $$
-\|S^*v\|
+\norm{S^*v}
 =
-\|Sv\|.
+\norm{Sv}.
 $$
 By step [](#s1-3){.pf-ref},
 $$
-\|Sv\|=0.
+\norm{Sv}=0.
 $$
 Hence
 $$
-\|S^*v\|=0,
+\norm{S^*v}=0,
 $$
 so
 $$

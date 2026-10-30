@@ -51,7 +51,7 @@ Every group of order $15$ is cyclic.
 
 ::: pf-proof
 
-For $|H|=15$, Sylow's theorems give $n_5\mid3$, $n_5\equiv1\pmod5$, $n_3\mid5$, and $n_3\equiv1\pmod3$. Thus both counts equal one. Their normal Sylow subgroups of orders $5$ and $3$ have trivial intersection and generate $H$, so $H\cong C_5\times C_3\cong C_{15}$.
+For $\cardinality{H}=15$, Sylow's theorems give $n_5\mid3$, $n_5\equiv1\pmod5$, $n_3\mid5$, and $n_3\equiv1\pmod3$. Thus both counts equal one. Their normal Sylow subgroups of orders $5$ and $3$ have trivial intersection and generate $H$, so $H\cong C_5\times C_3\cong C_{15}$.
 
 :::
 

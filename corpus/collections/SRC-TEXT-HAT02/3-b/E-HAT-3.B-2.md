@@ -43,7 +43,7 @@ The boundary of $I \otimes C$ is $\partial(v_i \otimes c) = v_i \otimes \partial
 
 ::: pf-proof
 
-$\partial(e) = v_1 - v_0$, and the boundary of a tensor product is $\partial(a \otimes c) = \partial a \otimes c + (-1)^{|a|} a \otimes \partial c$.
+$\partial(e) = v_1 - v_0$, and the boundary of a tensor product is $\partial(a \otimes c) = \partial a \otimes c + (-1)^{\gradeddegree{a}} a \otimes \partial c$.
 
 :::
 

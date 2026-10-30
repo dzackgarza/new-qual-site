@@ -2,10 +2,7 @@
 schema: qual/card@1
 id: P-SWLWB
 kind: problem
-title: $\int_0^\infty\frac{dx}{(1+x^n)^2}$, $\int_0^\infty\frac{\cos x}{(x^2+a^2)^2}\,dx$,
-  $\int_0^\pi\frac{d\theta}{a+\sin\theta}$, $\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}$,
-  $\int_{|z|=2}\frac{dz}{(z^5-1)(z-3)}$, $\int_{-\infty}^{\infty}\frac{\sin(\pi a)\,e^{-ix\xi}}{\cosh(\pi
-  x)+\cos(\pi a)}\,dx$, and $\int_{|z|=1}\cot^2 z\,dz$
+title: $\int_0^\infty\frac{dx}{(1+x^n)^2}$, $\int_0^\infty\frac{\cos x}{(x^2+a^2)^2}\,dx$, $\int_0^\pi\frac{d\theta}{a+\sin\theta}$, $\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}$, $\int_{\abs{z}=2}\frac{dz}{(z^5-1)(z-3)}$, $\int_{-\infty}^{\infty}\frac{\sin(\pi a)\,e^{-ix\xi}}{\cosh(\pi x)+\cos(\pi a)}\,dx$, and $\int_{\abs{z}=1}\cot^2 z\,dz$
 classification:
   areas:
   - complex-analysis
@@ -34,11 +31,11 @@ Compute the following integrals.
 
 (iv) $\displaystyle \int_0^{\frac{\pi}{2}} \frac{d \theta}{a+ \sin ^2 \theta},$ $a >0$.
 
-(v) $\displaystyle \int_{|z|=2} \frac{1}{(z^{5} -1) (z-3)} \, dz$
+(v) $\displaystyle \int_{\abs{z}=2} \frac{1}{(z^{5} -1) (z-3)} \, dz$
 
 (vi) $\displaystyle \int_{- \infty}^{\infty} \frac{\sin \pi a}{\cosh \pi x + \cos \pi a} e^{- i x \xi} \, d x$, $0< a <1$, $\xi \in \RR$
 
-(vii) $\displaystyle \int_{|z| = 1} \cot^2 z \, dz$.
+(vii) $\displaystyle \int_{\abs{z} = 1} \cot^2 z \, dz$.
 :::
 
 ::: {.solution title="(i)"}

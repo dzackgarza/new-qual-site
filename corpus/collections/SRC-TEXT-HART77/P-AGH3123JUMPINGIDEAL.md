@@ -181,7 +181,7 @@ $$
 \longrightarrow0.
 $$
 For $a\ne0$, the embedding $X_a\cong\PP^1\hookrightarrow\PP^4$ is the
-complete linear series $|\mco_{\PP^1}(4)|$. Therefore the restriction map
+complete linear series $\linearsystem{\mco_{\PP^1}(4)}$. Therefore the restriction map
 $$
 H^0(\PP^4,\mco(1))
 \longrightarrow

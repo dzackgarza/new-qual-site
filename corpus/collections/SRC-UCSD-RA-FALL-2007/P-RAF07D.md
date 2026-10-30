@@ -84,7 +84,7 @@ State Banach--Alaoglu.
 
 **Banach--Alaoglu theorem.** The closed unit ball
 $$
-B_{X^*}:=\{\phi\in X^*: \|\phi\|\le1\}
+B_{X^*}:=\{\phi\in X^*: \norm{\phi}\le1\}
 $$
 is compact in the weak* topology $\sigma(X^*,X)$.
 
@@ -102,7 +102,7 @@ Embed the dual unit ball into a compact product.
 
 Let $\bK$ denote the scalar field. For each $x\in X$, set
 $$
-D_x:=\{z\in\bK:|z|\le\|x\|\}.
+D_x:=\{z\in\bK:\abs{z}\le\norm{x}\}.
 $$
 Each $D_x$ is compact. Hence, by Tychonoff's theorem,
 $$
@@ -116,7 +116,7 @@ J:B_{X^*}\to K,
 \qquad
 J(\phi)=(\phi(x))_{x\in X}.
 $$
-Since $|\phi(x)|\le\|\phi\|\|x\|\le\|x\|$, this is well defined. It is injective because a linear functional is determined by all its values on $X$.
+Since $\abs{\phi(x)}\le\norm{\phi}\norm{x}\le\norm{x}$, this is well defined. It is injective because a linear functional is determined by all its values on $X$.
 
 The product topology restricted to $J(B_{X^*})$ is exactly the weak* topology: the coordinate maps are precisely the evaluations $\phi\mapsto\phi(x)$.
 
@@ -134,7 +134,7 @@ A point $a=(a_x)_{x\in X}\in K$ lies in $J(B_{X^*})$ exactly when the assignment
 $$
 x\longmapsto a_x
 $$
-is linear. Indeed, the bound $|a_x|\le\|x\|$ then makes it a bounded linear functional of norm at most $1$.
+is linear. Indeed, the bound $\abs{a_x}\le\norm{x}$ then makes it a bounded linear functional of norm at most $1$.
 
 Linearity is expressed by the coordinate identities
 $$

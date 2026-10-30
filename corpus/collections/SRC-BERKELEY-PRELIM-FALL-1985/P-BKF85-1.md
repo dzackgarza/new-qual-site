@@ -108,7 +108,7 @@ F(s)
 $$
 and
 $$
-\left|\frac{\sin(u/s)}u\right|\leq\frac1s,
+\abs{\frac{\sin(u/s)}u}\leq\frac1s,
 $$
 so $\abs{F(s)}\leq1/s$.
 
@@ -151,9 +151,9 @@ t\longmapsto\frac{e^{-st}}t
 $$
 is positive and decreasing on $[R,\infty)$. Dirichlet's estimate therefore gives, uniformly in $s\geq0$,
 $$
-\left|
+\abs{
 \int_R^\infty e^{-st}\frac{\sin t}{t}\,dt
-\right|
+}
 \leq
 \frac{2}{R}.
 $$

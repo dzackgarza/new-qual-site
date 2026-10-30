@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Let $GL_2(\ZZ_m)$ be the multiplicative group of invertible $2\times2$ matrices over the ring of integers modulo $m$. Find
 $$
-|GL_2(\ZZ_{p^n})|
+\cardinality{GL_2(\ZZ_{p^n})}
 $$
 for every prime $p$ and positive integer $n$.
 :::
@@ -64,7 +64,7 @@ invertible over $R_n$. Thus $\rho(\widetilde A)=A$.
 
 The kernel of $\rho$ has order
 $$
-\lvert\ker\rho\rvert=p^{4(n-1)}.
+\cardinality{\ker\rho}=p^{4(n-1)}.
 $$
 
 ::: pf-proof
@@ -90,8 +90,8 @@ is a bijection.
 The ideal $pR_n$ has $p^{n-1}$ elements, including the case $n=1$, when
 $pR_1=\{0\}$. Hence
 $$
-\lvert\ker\rho\rvert
-=\lvert pR_n\rvert^4
+\cardinality{\ker\rho}
+=\cardinality{ pR_n}^4
 =p^{4(n-1)}.
 $$
 
@@ -103,7 +103,7 @@ $$
 
 The group $GL_2(k)$ has order
 $$
-\lvert GL_2(k)\rvert=(p^2-1)(p^2-p).
+\cardinality{ GL_2(k)}=(p^2-1)(p^2-p).
 $$
 
 ::: pf-proof
@@ -123,7 +123,7 @@ $k^2$.
 For every prime $p$ and positive integer $n$,
 $$
 \boxed{
-\lvert GL_2(\ZZ/p^n\ZZ)\rvert
+\cardinality{ GL_2(\ZZ/p^n\ZZ)}
 =p^{4(n-1)}(p^2-1)(p^2-p)
 }.
 $$

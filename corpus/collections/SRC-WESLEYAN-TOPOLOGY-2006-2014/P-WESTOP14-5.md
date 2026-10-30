@@ -13,11 +13,11 @@ audit:
 ::: {.problem}
 Let $C[0,1]$ be the set of continuous functions $f:[0,1]\to\RR$. Define
 $$
-\rho(f,g)=\int_0^1|f(x)-g(x)|\,dx
+\rho(f,g)=\int_0^1\abs{f(x)-g(x)}\,dx
 $$
 and
 $$
-\mu(f,g)=\max_{x\in[0,1]}|f(x)-g(x)|.
+\mu(f,g)=\max_{x\in[0,1]}\abs{f(x)-g(x)}.
 $$
 Both define metrics on $C[0,1]$. Which metric induces the finer topology?
 :::
@@ -38,12 +38,12 @@ $$
 
 For every $x\in[0,1]$,
 $$
-|f(x)-g(x)|\le\mu(f,g).
+\abs{f(x)-g(x)}\le\mu(f,g).
 $$
 Integrating over an interval of length $1$ gives
 $$
 \rho(f,g)
-=\int_0^1|f(x)-g(x)|\,dx
+=\int_0^1\abs{f(x)-g(x)}\,dx
 \le\int_0^1\mu(f,g)\,dx
 =\mu(f,g).
 $$

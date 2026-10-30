@@ -29,20 +29,20 @@ The growth order of $F$ is linked with the growth of the coefficients $a_n$ as $
 1. Suppose that
 
    $$
-   |F(z)|\leq Ae^{a|z|^\rho}.
+   \abs{F(z)}\leq Ae^{a\abs{z}^\rho}.
    $$
 
    Show that
 
    $$
-   \limsup_{n\to\infty}|a_n|^{1/n}n^{1/\rho}<\infty.
+   \limsup_{n\to\infty}\abs{a_n}^{1/n}n^{1/\rho}<\infty.
    \tag{8}
    $$
 
 2. Conversely, if (8) holds, show that
 
    $$
-   |F(z)|\leq A_\varepsilon e^{a_\varepsilon|z|^{\rho+\varepsilon}}
+   \abs{F(z)}\leq A_\varepsilon e^{a_\varepsilon\abs{z}^{\rho+\varepsilon}}
    $$
 
    for every $\varepsilon>0$.
@@ -50,7 +50,7 @@ The growth order of $F$ is linked with the growth of the coefficients $a_n$ as $
 *Hint.* For part 1, use Cauchy's inequality
 
 $$
-|a_n|\leq \frac{A}{r^n}e^{ar^\rho}
+\abs{a_n}\leq \frac{A}{r^n}e^{ar^\rho}
 $$
 
 and the fact that $u^{-n}e^{u^\rho}$, for $u>0$, has minimum
@@ -62,10 +62,10 @@ $$
 at $u=n^{1/\rho}/\rho^{1/\rho}$.
 Choose $r$ in terms of $n$ to attain this minimum.
 
-For part 2, note that for $|z|=r$,
+For part 2, note that for $\abs{z}=r$,
 
 $$
-|F(z)|
+\abs{F(z)}
 \leq \sum_n\frac{c^nr^n}{n^{n/\rho}}
 \leq \sum_n\frac{c^nr^n}{(n!)^{1/\rho}}
 $$
@@ -77,7 +77,7 @@ This reduces the problem to Problem 3.
 ::: {.solution}
 For part 1, Cauchy's inequality gives, for every $r>0$,
 $$
-|a_n|\le \frac{A}{r^n}e^{ar^\rho}.
+\abs{a_n}\le \frac{A}{r^n}e^{ar^\rho}.
 $$
 Choose
 $$
@@ -85,22 +85,22 @@ r=\left(\frac{n}{a\rho}\right)^{1/\rho}.
 $$
 Then $ar^\rho=n/\rho$, and therefore
 $$
-|a_n|^{1/n}
+\abs{a_n}^{1/n}
 \le A^{1/n}e^{1/\rho}\left(\frac{a\rho}{n}\right)^{1/\rho}.
 $$
 Hence
 $$
-\limsup_{n\to\infty}|a_n|^{1/n}n^{1/\rho}
+\limsup_{n\to\infty}\abs{a_n}^{1/n}n^{1/\rho}
 \le e^{1/\rho}(a\rho)^{1/\rho}<\infty.
 $$
 
 Conversely, assume (8). Then there is $c>0$ such that, for all sufficiently large $n$,
 $$
-|a_n|\le \frac{c^n}{n^{n/\rho}}.
+\abs{a_n}\le \frac{c^n}{n^{n/\rho}}.
 $$
 After increasing a constant to absorb finitely many initial terms,
 $$
-|F(z)|\le C\sum_{n=0}^\infty \frac{(c|z|)^n}{n^{n/\rho}}.
+\abs{F(z)}\le C\sum_{n=0}^\infty \frac{(c\abs{z})^n}{n^{n/\rho}}.
 $$
 Since $n!\le n^n$,
 $$
@@ -108,11 +108,11 @@ $$
 $$
 Thus
 $$
-|F(z)|\le C\sum_{n=0}^\infty\frac{(c|z|)^n}{(n!)^{1/\rho}}.
+\abs{F(z)}\le C\sum_{n=0}^\infty\frac{(c\abs{z})^n}{(n!)^{1/\rho}}.
 $$
 By Problem 3, the entire function on the right has order $\rho$. Hence for every $\varepsilon>0$ there are constants $A_\varepsilon,a_\varepsilon>0$ such that
 $$
-|F(z)|\le A_\varepsilon e^{a_\varepsilon|z|^{\rho+\varepsilon}}.
+\abs{F(z)}\le A_\varepsilon e^{a_\varepsilon\abs{z}^{\rho+\varepsilon}}.
 $$
 This proves the converse.
 :::

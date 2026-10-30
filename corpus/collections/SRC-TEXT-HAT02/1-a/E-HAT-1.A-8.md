@@ -53,7 +53,7 @@ covering space theory (subgroups of $\pi_1$ correspond to connected covers).
 
 ::: {.pf-step #s3}
 
-An $n$-fold cover of a finite graph $\Gamma$ is itself a finite graph with $n \cdot |V(\Gamma)|$ vertices and $n \cdot |E(\Gamma)|$ edges.
+An $n$-fold cover of a finite graph $\Gamma$ is itself a finite graph with $n \cdot \cardinality{V(\Gamma)}$ vertices and $n \cdot \cardinality{E(\Gamma)}$ edges.
 
 ::: pf-proof
 

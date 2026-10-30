@@ -122,18 +122,18 @@ $$
 f\notin L^1(\RR^2).
 $$
 
-This can also be seen directly from Tonelli's theorem applied to $|f|$. In polar coordinates in the first quadrant,
+This can also be seen directly from Tonelli's theorem applied to $\abs{f}$. In polar coordinates in the first quadrant,
 $$
-|f(r\cos\theta,r\sin\theta)|
-=\frac{|\cos(2\theta)|}{r^2}.
+\abs{f(r\cos\theta,r\sin\theta)}
+=\frac{\abs{\cos(2\theta)}}{r^2}.
 $$
-On any angular subinterval where $|\cos(2\theta)|\ge c>0$, the contribution near $r=0$ is bounded below by a positive constant times
+On any angular subinterval where $\abs{\cos(2\theta)}\ge c>0$, the contribution near $r=0$ is bounded below by a positive constant times
 $$
 \int_0^\varepsilon\frac{dr}{r}=\infty.
 $$
 Hence
 $$
-\iint_{\RR^2}|f(x,y)|\,dx\,dy=\infty.
+\iint_{\RR^2}\abs{f(x,y)}\,dx\,dy=\infty.
 $$
 So Tonelli confirms that absolute integrability fails, exactly as required for the two iterated integrals to differ.
 

@@ -68,7 +68,7 @@ the $k$th elementary symmetric polynomial.
 
 The pullback of the universal $n$-plane bundle to $BT^n$ splits as the direct sum of the $n$ universal line bundles. By the Whitney product formula,
 $$
-c(\gamma_n^{\CC}|_{BT^n})
+c(\gamma_n^{\CC}\restrict_{BT^n})
 =\prod_{i=1}^n(1+x_i).
 $$
 Comparing homogeneous components gives the elementary symmetric polynomials.
@@ -84,7 +84,7 @@ $$
 \boxed{
 H^*(BU(n);\ZZ)
 \cong\ZZ[c_1,\ldots,c_n],
-\qquad |c_i|=2i.}
+\qquad \gradeddegree{c_i}=2i.}
 $$
 
 
@@ -140,7 +140,7 @@ $$
 under which
 $$
 w_k\longmapsto e_k(y_1,\ldots,y_n),
-\qquad |y_i|=1.
+\qquad \gradeddegree{y_i}=1.
 $$
 
 
@@ -164,7 +164,7 @@ $$
 \boxed{
 H^*(BO(n);\FF_2)
 \cong\FF_2[w_1,\ldots,w_n],
-\qquad |w_i|=i.}
+\qquad \gradeddegree{w_i}=i.}
 $$
 
 

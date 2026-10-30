@@ -44,7 +44,7 @@ Prove or give a counterexample.
 
 If $A$ is symmetric, then
 $$
-\lVert Ax\rVert\leq\rho\lVert x\rVert
+\norm{ Ax}\leq\rho\norm{ x}
 $$
 for every $x\in\RR^n$.
 
@@ -61,15 +61,15 @@ Ax=\sum_{i=1}^n \lambda_i c_i u_i.
 $$
 Orthogonality gives
 $$
-\lVert Ax\rVert^2
+\norm{ Ax}^2
 =
 \sum_{i=1}^n \lambda_i^2c_i^2
 \leq
 \rho^2\sum_{i=1}^n c_i^2
 =
-\rho^2\lVert x\rVert^2,
+\rho^2\norm{ x}^2,
 $$
-because $|\lambda_i|\leq\rho$ for every $i$. Taking square roots gives the claimed inequality.
+because $\abs{\lambda_i}\leq\rho$ for every $i$. Taking square roots gives the claimed inequality.
 
 :::
 
@@ -96,7 +96,7 @@ Ae_2=e_1,
 $$
 so
 $$
-\lVert Ae_2\rVert=1>0=\rho\lVert e_2\rVert.
+\norm{ Ae_2}=1>0=\rho\norm{ e_2}.
 $$
 
 :::

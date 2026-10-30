@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Let $\{g_n\}$ be a sequence of Riemann-integrable functions from $[0,1]$ to $\RR$ such that
 $$
-|g_n(x)|\le 1
+\abs{g_n(x)}\le 1
 $$
 for every $n$ and $x$.
 Define

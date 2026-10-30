@@ -100,9 +100,9 @@ $$
 $$
 so the integrand is bounded near $0$. For $\abs{x}\ge1$,
 $$
-\left|
+\abs{
 \frac{\sin^3x}{x^3}
-\right|
+}
 \le
 \frac1{\abs{x}^3},
 $$
@@ -169,10 +169,10 @@ $$
 $$
 The arc has length $\pi R$, so the estimation lemma gives
 $$
-\left|
+\abs{
 \int_{\abs z=R,\ \operatorname{Im}z\ge0}
 F(z)\,dz
-\right|
+}
 \le
 \frac{4\pi}{R^2}
 \longrightarrow

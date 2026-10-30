@@ -116,9 +116,9 @@ $$
 \begin{aligned}
 \abs{f(w_n)-f(z_n)}
 &=
-\left|
+\abs{
 \left(n+\frac1n\right)^2-n^2
-\right|\\
+}\\
 &=
 2+\frac1{n^2}
 \longrightarrow2.

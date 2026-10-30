@@ -65,7 +65,7 @@ The integrand $h(z) = e^z/(z^2+\pi^2)^2$ has double poles at $\pm i\pi$, both in
 
 ::: pf-proof
 
-$z^2+\pi^2 = (z-i\pi)(z+i\pi)$ and $\pi < 4$. By part (a) with $m=2$, $\operatorname{Res}_{z=i\pi}h = \frac{d}{dz}\frac{e^z}{(z+i\pi)^2}\Big|_{z=i\pi} = \frac{e^{i\pi}}{(2i\pi)^2} - \frac{2e^{i\pi}}{(2i\pi)^3} = \frac{1}{4\pi^2} + \frac{i}{4\pi^3}$. The same computation at $-i\pi$, with $e^{-i\pi} = -1$ and $(-2i\pi)^3 = 8i\pi^3$, gives $\frac{1}{4\pi^2} - \frac{i}{4\pi^3}$.
+$z^2+\pi^2 = (z-i\pi)(z+i\pi)$ and $\pi < 4$. By part (a) with $m=2$, $\operatorname{Res}_{z=i\pi}h = \frac{d}{dz}\frac{e^z}{(z+i\pi)^2}\evalfrom_{z=i\pi} = \frac{e^{i\pi}}{(2i\pi)^2} - \frac{2e^{i\pi}}{(2i\pi)^3} = \frac{1}{4\pi^2} + \frac{i}{4\pi^3}$. The same computation at $-i\pi$, with $e^{-i\pi} = -1$ and $(-2i\pi)^3 = 8i\pi^3$, gives $\frac{1}{4\pi^2} - \frac{i}{4\pi^3}$.
 
 :::
 

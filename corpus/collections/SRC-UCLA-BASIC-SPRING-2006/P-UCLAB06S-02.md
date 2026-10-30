@@ -31,7 +31,7 @@ C=
 \left\{
 r\ge0:
 \sum_{n=0}^{\infty}a_nx^n
-\text{ converges for every }x\text{ with }|x|<r
+\text{ converges for every }x\text{ with }\abs{x}<r
 \right\}.
 $$
 The set $C$ is nonempty because
@@ -49,7 +49,7 @@ x_0,
 $$
 then it converges absolutely at every $x$ with
 $$
-|x|<|x_0|.
+\abs{x}<\abs{x_0}.
 $$
 
 
@@ -73,23 +73,23 @@ M>0
 $$
 such that
 $$
-|a_nx_0^n|\le M
+\abs{a_nx_0^n}\le M
 $$
 for all $n$.
 
 If
 $$
-|x|<|x_0|,
+\abs{x}<\abs{x_0},
 $$
 set
 $$
-q=\frac{|x|}{|x_0|}<1.
+q=\frac{\abs{x}}{\abs{x_0}}<1.
 $$
 Then
 $$
-|a_nx^n|
+\abs{a_nx^n}
 =
-|a_nx_0^n|q^n
+\abs{a_nx_0^n}q^n
 \le
 Mq^n.
 $$
@@ -114,7 +114,7 @@ x_0,
 $$
 then it diverges at every $x$ with
 $$
-|x|>|x_0|.
+\abs{x}>\abs{x_0}.
 $$
 
 
@@ -122,9 +122,9 @@ $$
 
 Suppose instead that the series converged at some $x$ satisfying
 $$
-|x|>|x_0|.
+\abs{x}>\abs{x_0}.
 $$
-Then step [](#s1-1){.pf-ref}, applied to the convergence point $x$, would imply convergence at every point whose absolute value is smaller than $|x|$, in particular at $x_0$.
+Then step [](#s1-1){.pf-ref}, applied to the convergence point $x$, would imply convergence at every point whose absolute value is smaller than $\abs{x}$, in particular at $x_0$.
 This contradicts the assumed divergence at $x_0$.
 
 :::
@@ -144,7 +144,7 @@ x
 $$
 with
 $$
-|x|<\rho.
+\abs{x}<\rho.
 $$
 
 
@@ -152,11 +152,11 @@ $$
 
 Fix $x$ with
 $$
-|x|<\rho.
+\abs{x}<\rho.
 $$
 Choose a number $r$ satisfying
 $$
-|x|<r<\rho.
+\abs{x}<r<\rho.
 $$
 By the definition of the supremum, there exists
 $$
@@ -168,7 +168,7 @@ r<s\le\rho.
 $$
 Since
 $$
-|x|<s
+\abs{x}<s
 $$
 and
 $$
@@ -188,7 +188,7 @@ $$
 $$
 then the series diverges for every $x$ with
 $$
-|x|>\rho.
+\abs{x}>\rho.
 $$
 
 
@@ -196,24 +196,24 @@ $$
 
 Suppose, for contradiction, that the series converges at some $x$ with
 $$
-|x|>\rho.
+\abs{x}>\rho.
 $$
 By step [](#s1-1){.pf-ref}, it then converges for every $y$ satisfying
 $$
-|y|<|x|.
+\abs{y}<\abs{x}.
 $$
 Hence
 $$
-|x|\in C.
+\abs{x}\in C.
 $$
 But
 $$
-|x|>\rho=\sup C,
+\abs{x}>\rho=\sup C,
 $$
 a contradiction.
 Therefore the series diverges for every
 $$
-|x|>\rho.
+\abs{x}>\rho.
 $$
 
 :::
@@ -262,7 +262,7 @@ x
 $$
 with
 $$
-\rho_1<|x|<\rho_2.
+\rho_1<\abs{x}<\rho_2.
 $$
 The property for $\rho_1$ would force divergence at $x$, while the property for $\rho_2$ would force convergence at $x$.
 This contradiction shows that two distinct radii cannot satisfy the condition.
@@ -281,11 +281,11 @@ $$
 $$
 such that the power series converges for
 $$
-|x|<\rho
+\abs{x}<\rho
 $$
 and diverges for
 $$
-|x|>\rho.
+\abs{x}>\rho.
 $$
 
 

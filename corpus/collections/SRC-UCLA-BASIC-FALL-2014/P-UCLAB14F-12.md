@@ -158,7 +158,7 @@ p_c(x_0)\ne0.
 $$
 By continuity, there is a nontrivial interval around $x_0$ on which
 $$
-|p_c(x)|\ge\eta>0
+\abs{p_c(x)}\ge\eta>0
 $$
 for some $\eta$.
 Therefore

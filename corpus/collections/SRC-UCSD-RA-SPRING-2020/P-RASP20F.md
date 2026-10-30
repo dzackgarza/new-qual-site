@@ -33,7 +33,7 @@ $$
 
 (2) There exists $M \geq 0$ such that for any $N \in \NN$ and any $a_n \in \RR$ ($n = 0, \ldots, N$),
 $$
-\left|\sum_{n=0}^{N} a_n c_n\right| \leq M \max_{0 \leq t \leq 1} \left|\sum_{n=0}^{N} a_n t^n\right|.
+\abs{\sum_{n=0}^{N} a_n c_n} \leq M \max_{0 \leq t \leq 1} \abs{\sum_{n=0}^{N} a_n t^n}.
 $$
 :::
 
@@ -62,13 +62,13 @@ $$
 $$
 Therefore
 $$
-\left|\sum_{n=0}^N a_nc_n\right|
-\le \int_0^1|p|\,d|\mu|
-\le |\mu|([0,1])\,\|p\|_\infty.
+\abs{\sum_{n=0}^N a_nc_n}
+\le \int_0^1\abs{p}\,d\totalvariation{\mu}
+\le \totalvariation{\mu}([0,1])\,\norm{p}_\infty.
 $$
 Thus (2) holds with
 $$
-M=|\mu|([0,1]).
+M=\totalvariation{\mu}([0,1]).
 $$
 
 :::
@@ -91,7 +91,7 @@ L(p):=\sum_{n=0}^N a_nc_n.
 $$
 The monomial representation of a polynomial is unique, so $L$ is well defined and linear. Condition (2) gives
 $$
-|L(p)|\le M\|p\|_\infty.
+\abs{L(p)}\le M\norm{p}_\infty.
 $$
 Hence $L$ is bounded on the polynomial subspace of $C([0,1])$.
 

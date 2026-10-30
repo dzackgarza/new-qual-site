@@ -692,7 +692,7 @@ $$
 
 If
 $$
-|r|<1,
+\abs{r}<1,
 $$
 then
 $$
@@ -721,7 +721,7 @@ at $x=0$.
 
 Hence the series diverges when
 $$
-\boxed{|r|<1}.
+\boxed{\abs{r}<1}.
 $$
 
 
@@ -782,7 +782,7 @@ $$
 
 Assume
 $$
-|r|>1.
+\abs{r}>1.
 $$
 Then
 $$
@@ -809,7 +809,7 @@ r^{-n}\to0,
 $$
 there exists $N$ such that for $n\ge N$,
 $$
-|1+r^{-n}|\ge\frac12.
+\abs{1+r^{-n}}\ge\frac12.
 $$
 
 
@@ -817,13 +817,13 @@ $$
 
 Choose $N$ so that
 $$
-|r^{-n}|<\frac12.
+\abs{r^{-n}}<\frac12.
 $$
 Then the reverse triangle inequality gives
 $$
-|1+r^{-n}|
+\abs{1+r^{-n}}
 \ge
-1-|r^{-n}|
+1-\abs{r^{-n}}
 >
 \frac12.
 $$
@@ -836,11 +836,11 @@ $$
 
 For $n\ge N$,
 $$
-\left|
+\abs{
 \frac1{1+r^n}
-\right|
+}
 \le
-2|r|^{-n}.
+2\abs{r}^{-n}.
 $$
 
 
@@ -856,7 +856,7 @@ Use step [](#s1-33){.pf-ref} and the denominator bound in step [](#s1-34){.pf-re
 
 Therefore Series 6 converges absolutely for
 $$
-\boxed{|r|>1}.
+\boxed{\abs{r}>1}.
 $$
 
 
@@ -864,11 +864,11 @@ $$
 
 The geometric series
 $$
-\sum |r|^{-n}
+\sum \abs{r}^{-n}
 $$
 converges because
 $$
-|r|^{-1}<1.
+\abs{r}^{-1}<1.
 $$
 Apply the comparison test using step [](#s1-35){.pf-ref}.
 
@@ -880,10 +880,10 @@ Apply the comparison test using step [](#s1-35){.pf-ref}.
 
 Thus, for real $r$, Series 6 is
 $$
-\boxed{\text{absolutely convergent for }|r|>1,}
+\boxed{\text{absolutely convergent for }\abs{r}>1,}
 $$
 $$
-\boxed{\text{divergent for }|r|<1\text{ or }r=1,}
+\boxed{\text{divergent for }\abs{r}<1\text{ or }r=1,}
 $$
 while
 $$
@@ -913,7 +913,7 @@ $$
 3 & \text{converges iff }p>1\\
 4 & \text{converges}\\
 5 & \text{converges}\\
-6 & \text{absolute if }|r|>1;\ \text{divergent if }|r|<1\text{ or }r=1;\ r=-1\text{ undefined}.
+6 & \text{absolute if }\abs{r}>1;\ \text{divergent if }\abs{r}<1\text{ or }r=1;\ r=-1\text{ undefined}.
 \end{array}}
 $$
 

@@ -24,7 +24,7 @@ Show that $q$ is also a covering map.
 :::
 
 ::: {.solution}
-Fix $y \in Y$, let $U \subseteq X$ be an evenly covered open neighborhood of $f(y)$ with $p^{-1}(U) = \bigsqcup_\alpha \widetilde U_\alpha$ and each $p|_{\widetilde U_\alpha}\colon \widetilde U_\alpha \to U$ a homeomorphism, and put $V = f^{-1}(U)$, an open neighborhood of $y$ because $f$ is continuous. For each $\alpha$ let $s_\alpha = (p|_{\widetilde U_\alpha})^{-1}\colon U \to \widetilde U_\alpha$ and $W_\alpha = \widetilde Y \cap (V \times \widetilde U_\alpha)$.
+Fix $y \in Y$, let $U \subseteq X$ be an evenly covered open neighborhood of $f(y)$ with $p^{-1}(U) = \bigsqcup_\alpha \widetilde U_\alpha$ and each $p\restrict_{\widetilde U_\alpha}\colon \widetilde U_\alpha \to U$ a homeomorphism, and put $V = f^{-1}(U)$, an open neighborhood of $y$ because $f$ is continuous. For each $\alpha$ let $s_\alpha = (p\restrict_{\widetilde U_\alpha})^{-1}\colon U \to \widetilde U_\alpha$ and $W_\alpha = \widetilde Y \cap (V \times \widetilde U_\alpha)$.
 
 ::: pf
 
@@ -42,11 +42,11 @@ Each $W_\alpha$ is open in $\widetilde Y$ because $V \times \widetilde U_\alpha$
 
 ::: {.pf-step #s2}
 
-For each $\alpha$, $q|_{W_\alpha}\colon W_\alpha \to V$ is a homeomorphism.
+For each $\alpha$, $q\restrict_{W_\alpha}\colon W_\alpha \to V$ is a homeomorphism.
 
 ::: pf-proof
 
-The map $\sigma_\alpha\colon V \to W_\alpha$, $\sigma_\alpha(y') = (y', s_\alpha(f(y')))$, is continuous, lands in $\widetilde Y$ because $p(s_\alpha(f(y'))) = f(y')$, and satisfies $q \circ \sigma_\alpha = \operatorname{id}_V$. If $(y', \widetilde x) \in W_\alpha$, then $\widetilde x \in \widetilde U_\alpha$ and $p(\widetilde x) = f(y')$, so $\widetilde x = s_\alpha(f(y'))$ and $\sigma_\alpha(q(y', \widetilde x)) = (y', \widetilde x)$. Thus $\sigma_\alpha$ is a continuous inverse of the continuous map $q|_{W_\alpha}$.
+The map $\sigma_\alpha\colon V \to W_\alpha$, $\sigma_\alpha(y') = (y', s_\alpha(f(y')))$, is continuous, lands in $\widetilde Y$ because $p(s_\alpha(f(y'))) = f(y')$, and satisfies $q \circ \sigma_\alpha = \operatorname{id}_V$. If $(y', \widetilde x) \in W_\alpha$, then $\widetilde x \in \widetilde U_\alpha$ and $p(\widetilde x) = f(y')$, so $\widetilde x = s_\alpha(f(y'))$ and $\sigma_\alpha(q(y', \widetilde x)) = (y', \widetilde x)$. Thus $\sigma_\alpha$ is a continuous inverse of the continuous map $q\restrict_{W_\alpha}$.
 
 :::
 

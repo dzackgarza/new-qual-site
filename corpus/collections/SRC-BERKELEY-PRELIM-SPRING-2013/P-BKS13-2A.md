@@ -31,7 +31,7 @@ Suppose that $f$ is a smooth real function defined for all real $x$, such that $
 (2) Given $x _ { 0 } ,$ define a sequence by $x _ { n + 1 } = x _ { n } - f ( x _ { n } ) / f ^ { \prime } ( x _ { n } )$ . Show that
 
 $$
-| x _ { n + 1 } - z | \leq | x _ { n } - z | ^ { 2 } M / \epsilon .
+\abs{ x _ { n + 1 } - z } \leq \abs{ x _ { n } - z } ^ { 2 } M / \epsilon .
 $$
 
 (Hint: $f(x_n) = \int_z^{x_n} f'(x)\,dx$.)

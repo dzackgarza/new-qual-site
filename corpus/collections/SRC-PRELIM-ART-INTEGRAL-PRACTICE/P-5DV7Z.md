@@ -38,7 +38,7 @@ Then $du = 2x \, dx \implies x \, dx = \frac{1}{2} \, du$.
 
 ::: pf-proof
 
-The substitution rule for indefinite integrals states that if $u = g(x)$ is differentiable and $F$ is an antiderivative of $f$, then $\int f(g(x))\, g'(x)\, dx = F(g(x)) + C$. Here $g(x) = x^2 + 9$ is differentiable for all $x$ with $g'(x) = 2x$, and $f(u) = 1/u$ with antiderivative $F(u) = \ln|u|$, so the substitution $u = x^2 + 9$ is valid.
+The substitution rule for indefinite integrals states that if $u = g(x)$ is differentiable and $F$ is an antiderivative of $f$, then $\int f(g(x))\, g'(x)\, dx = F(g(x)) + C$. Here $g(x) = x^2 + 9$ is differentiable for all $x$ with $g'(x) = 2x$, and $f(u) = 1/u$ with antiderivative $F(u) = \ln\abs{u}$, so the substitution $u = x^2 + 9$ is valid.
 
 :::
 
@@ -46,7 +46,7 @@ The substitution rule for indefinite integrals states that if $u = g(x)$ is diff
 
 ::: pf-step
 
-Rewrite and evaluate the integral: $$\int \frac{x}{x^2+9} \, dx = \int \frac{1}{u} \left(\frac{1}{2} \, du\right) = \frac{1}{2} \int \frac{1}{u} \, du = \frac{1}{2} \ln|u| + C.$$
+Rewrite and evaluate the integral: $$\int \frac{x}{x^2+9} \, dx = \int \frac{1}{u} \left(\frac{1}{2} \, du\right) = \frac{1}{2} \int \frac{1}{u} \, du = \frac{1}{2} \ln\abs{u} + C.$$
 
 ::: pf-proof
 
@@ -64,7 +64,7 @@ The constant factor $\frac{1}{2}$ pulls out of the integral.
 
 ::: pf-step
 
-The antiderivative of $\frac{1}{u}$ is $\ln|u|$, so $\frac{1}{2}\int\frac{1}{u}\,du = \frac{1}{2}\ln|u| + C$.
+The antiderivative of $\frac{1}{u}$ is $\ln\abs{u}$, so $\frac{1}{2}\int\frac{1}{u}\,du = \frac{1}{2}\ln\abs{u} + C$.
 
 :::
 
@@ -74,13 +74,13 @@ The antiderivative of $\frac{1}{u}$ is $\ln|u|$, so $\frac{1}{2}\int\frac{1}{u}\
 
 ::: pf-step
 
-Substitute back $u = x^2 + 9$: Since $x^2 + 9 > 0$ for all $x \in \RR$, $|u| = x^2 + 9$, so: $$\int \frac{x}{x^2+9} \, dx = \frac{1}{2} \ln(x^2+9) + C.$$
+Substitute back $u = x^2 + 9$: Since $x^2 + 9 > 0$ for all $x \in \RR$, $\abs{u} = x^2 + 9$, so: $$\int \frac{x}{x^2+9} \, dx = \frac{1}{2} \ln(x^2+9) + C.$$
 
 ::: pf-proof
 
 ::: pf-step
 
-Replacing $u$ by $x^2 + 9$ in $\frac{1}{2}\ln|u| + C$ gives $\frac{1}{2}\ln(x^2+9) + C$.
+Replacing $u$ by $x^2 + 9$ in $\frac{1}{2}\ln\abs{u} + C$ gives $\frac{1}{2}\ln(x^2+9) + C$.
 
 :::
 

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $G$ is a group with $|G| = 2^k m$, where $m$ is odd and $k \geq 0$.
+Suppose that $G$ is a group with $\cardinality{G} = 2^k m$, where $m$ is odd and $k \geq 0$.
 Assume that $G$ has a cyclic Sylow $2$-subgroup.
 Prove that $G$ has a characteristic subgroup $H$ which has order $m$.
 :::
@@ -34,7 +34,7 @@ Prove that $G$ has a characteristic subgroup $H$ which has order $m$.
 ::: {.solution}
 Let $P$ be a cyclic Sylow $2$-subgroup of $G$, so
 $$
-|P|=2^k.
+\cardinality{P}=2^k.
 $$
 
 ::: pf
@@ -45,7 +45,7 @@ If $k=0$, the conclusion holds with $H=G$.
 
 ::: pf-proof
 
-In this case $|G|=m$, and $G$ is characteristic in itself.
+In this case $\cardinality{G}=m$, and $G$ is characteristic in itself.
 Hence assume from now on that $k\ge 1$.
 
 :::
@@ -67,7 +67,7 @@ N_G(P)/C_G(P)\hookrightarrow \operatorname{Aut}(P).
 $$
 Since $P$ is cyclic of order $2^k$,
 $$
-|\operatorname{Aut}(P)|=\varphi(2^k),
+\cardinality{\operatorname{Aut}(P)}=\varphi(2^k),
 $$
 which is a power of $2$.
 
@@ -123,13 +123,13 @@ By step [](#s3){.pf-ref}, that conjugate must equal $u^r$. Multiplying over all 
 $$
 V(u)=u^{\sum r}=u^{[G:P]}=u^m.
 $$
-Because $m$ is odd and $|P|=2^k$, the map
+Because $m$ is odd and $\cardinality{P}=2^k$, the map
 $$
 P\longrightarrow P,
 \qquad
 u\longmapsto u^m
 $$
-is an automorphism of the cyclic group $P$. Hence the restriction $V|_P$ is surjective, and therefore $V$ is surjective.
+is an automorphism of the cyclic group $P$. Hence the restriction $V\restrict_P$ is surjective, and therefore $V$ is surjective.
 
 :::
 
@@ -147,11 +147,11 @@ is a normal subgroup of order $m$.
 
 By step [](#s4){.pf-ref}, $V$ is a surjective homomorphism onto $P$, so the first isomorphism theorem gives
 $$
-[G:H]=|P|=2^k.
+[G:H]=\cardinality{P}=2^k.
 $$
 Consequently
 $$
-|H|=\frac{|G|}{2^k}=m.
+\cardinality{H}=\frac{\cardinality{G}}{2^k}=m.
 $$
 As a kernel, $H$ is normal in $G$.
 
@@ -167,9 +167,9 @@ The subgroup $H$ is characteristic in $G$.
 
 First, $H$ is the unique normal subgroup of $G$ having order $m$. Indeed, if $K\trianglelefteq G$ also has order $m$, then $HK$ is a subgroup because both $H$ and $K$ are normal, and
 $$
-|HK|=\frac{|H||K|}{|H\cap K|}
+\cardinality{HK}=\frac{\cardinality{H}\cardinality{K}}{\cardinality{H\cap K}}
 $$
-is odd. Since the largest odd divisor of $|G|=2^k m$ is $m$, we have $|HK|\le m$. But $H\subseteq HK$ and $|H|=m$, so $HK=H$, whence $K\subseteq H$. Equal orders give $K=H$.
+is odd. Since the largest odd divisor of $\cardinality{G}=2^k m$ is $m$, we have $\cardinality{HK}\le m$. But $H\subseteq HK$ and $\cardinality{H}=m$, so $HK=H$, whence $K\subseteq H$. Equal orders give $K=H$.
 
 Every automorphism of $G$ sends a normal subgroup of order $m$ to another normal subgroup of order $m$. By uniqueness it fixes $H$. Therefore $H$ is characteristic.
 

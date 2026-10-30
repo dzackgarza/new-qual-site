@@ -38,7 +38,7 @@ Lifting and definition of the winding number:
 Consider the standard universal covering map $e: \RR \to S^1$ given by $e(t) = (\cos 2\pi t, \sin 2\pi t) = e^{2\pi i t}$.
 The normalized loop $g: [0, 1] \to S^1$ is defined by:
 $$
-g(s) = \frac{f(s) - a}{\|f(s) - a\|}.
+g(s) = \frac{f(s) - a}{\norm{f(s) - a}}.
 $$
 
 ::: pf-proof

@@ -36,7 +36,7 @@ and that this reflection is unique.
 
 Let
 $$
-d=\|x-y\|_2.
+d=\norm{x-y}_2.
 $$
 Since $x\ne y$,
 $$
@@ -92,7 +92,7 @@ $$
 
 Because
 $$
-\|u\|_2=1,
+\norm{u}_2=1,
 $$
 one has
 $$
@@ -172,13 +172,13 @@ c=x^Ty.
 $$
 Since
 $$
-\|x\|=\|y\|=1,
+\norm{x}=\norm{y}=1,
 $$
 one has
 $$
 d^2
 =
-\|x-y\|^2
+\norm{x-y}^2
 =
 2-2c
 =
@@ -255,7 +255,7 @@ one has
 $$
 u^Ty
 =
-\frac{x^Ty-\|y\|^2}{d}
+\frac{x^Ty-\norm{y}^2}{d}
 =
 \frac{c-1}{d}
 =
@@ -404,7 +404,7 @@ Thus
 $$
 u
 =
-\frac{x-y}{\|x-y\|}
+\frac{x-y}{\norm{x-y}}
 $$
 also lies in
 $$

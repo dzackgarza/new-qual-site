@@ -33,19 +33,19 @@ Let $h:[0,1]\to\RR$ be bounded and Riemann integrable, and let $\phi$ be continu
 
 Choose $M>0$ such that
 $$
-|h(x)|\le M
+\abs{h(x)}\le M
 $$
 for all $x$, and let
 $$
-K=\max_{|t|\le M}|\phi(t)|.
+K=\max_{\abs{t}\le M}\abs{\phi(t)}.
 $$
 If $K=0$, then $\phi\circ h=0$ and there is nothing to prove. Assume $K>0$.
 
 Fix $\varepsilon>0$. Uniform continuity of $\phi$ on $[-M,M]$ gives $\delta>0$ such that
 $$
-|s-t|<\delta
+\abs{s-t}<\delta
 \quad\Longrightarrow\quad
-|\phi(s)-\phi(t)|<\frac{\varepsilon}{2}.
+\abs{\phi(s)-\phi(t)}<\frac{\varepsilon}{2}.
 $$
 Since $h$ is Riemann integrable, there is a partition
 $$
@@ -72,15 +72,15 @@ Call $I_i$ good if $\omega_i<\delta$ and bad otherwise.
 
 On a good interval, the oscillation of $\phi\circ h$ is at most $\varepsilon/2$. On every interval, it is at most $2K$. Moreover, for the bad intervals,
 $$
-\delta\sum_{\mathrm{bad}}|I_i|
+\delta\sum_{\mathrm{bad}}\setmeasure{I_i}
 \le
-\sum_{\mathrm{bad}}\omega_i|I_i|
+\sum_{\mathrm{bad}}\omega_i\setmeasure{I_i}
 \le
 U(h,P)-L(h,P),
 $$
 so
 $$
-\sum_{\mathrm{bad}}|I_i|
+\sum_{\mathrm{bad}}\setmeasure{I_i}
 <
 \frac{\varepsilon}{4K}.
 $$
@@ -89,9 +89,9 @@ $$
 \begin{aligned}
 U(\phi\circ h,P)-L(\phi\circ h,P)
 &\le
-\frac{\varepsilon}{2}\sum_{\mathrm{good}}|I_i|
+\frac{\varepsilon}{2}\sum_{\mathrm{good}}\setmeasure{I_i}
 +
-2K\sum_{\mathrm{bad}}|I_i|\\
+2K\sum_{\mathrm{bad}}\setmeasure{I_i}\\
 &<
 \frac{\varepsilon}{2}
 +

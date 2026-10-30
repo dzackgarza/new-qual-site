@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-06
 kind: problem
-title: Orthonormal systems with $\|f\|_\infty\le C\|f\|_2$ on their span are finite
+title: Orthonormal systems with $\norm{f}_\infty\le C\norm{f}_2$ on their span are finite
 classification:
   areas:
   - real-analysis
@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Suppose that $\{\phi_n\}$ is an orthonormal system of continuous functions in $L^2([0,1])$ and let $S$ be the closure of the span of $\{\phi_n\}$. If
 $$
-\sup_{f\in S\setminus\{0\}}\frac{\lVert f\rVert_\infty}{\lVert f\rVert_2}<\infty,
+\sup_{f\in S\setminus\{0\}}\frac{\norm{ f}_\infty}{\norm{ f}_2}<\infty,
 $$
 prove that $S$ is finite dimensional.
 :::
@@ -28,9 +28,9 @@ prove that $S$ is finite dimensional.
 
 Choose $M<\infty$ such that
 $$
-\|f\|_\infty
+\norm{f}_\infty
 \le
-M\|f\|_2
+M\norm{f}_2
 \qquad
 (f\in S).
 $$
@@ -41,7 +41,7 @@ $$
 
 For every positive integer $N$ and every $x\in[0,1]$,
 $$
-\sum_{n=1}^N|\phi_n(x)|^2
+\sum_{n=1}^N\abs{\phi_n(x)}^2
 \le
 M^2.
 $$
@@ -57,31 +57,31 @@ f_a
 $$
 Then $f_a\in S$, and orthonormality gives
 $$
-\|f_a\|_2^2
+\norm{f_a}_2^2
 =
-\sum_{n=1}^N|a_n|^2.
+\sum_{n=1}^N\abs{a_n}^2.
 $$
 Because $f_a$ is continuous on $[0,1]$, its ordinary supremum norm equals its $L^\infty$ norm. Hence
 $$
-\left|
+\abs{
 \sum_{n=1}^N a_n\phi_n(x)
-\right|
+}
 \le
-\|f_a\|_\infty
+\norm{f_a}_\infty
 \le
 M
 \left(
-\sum_{n=1}^N|a_n|^2
+\sum_{n=1}^N\abs{a_n}^2
 \right)^{1/2}.
 $$
 Taking the supremum over all coefficient vectors with
 $$
-\sum_{n=1}^N|a_n|^2=1
+\sum_{n=1}^N\abs{a_n}^2=1
 $$
 and using the Euclidean dual-norm identity yields
 $$
 \left(
-\sum_{n=1}^N|\phi_n(x)|^2
+\sum_{n=1}^N\abs{\phi_n(x)}^2
 \right)^{1/2}
 \le M.
 $$
@@ -103,10 +103,10 @@ $$
 \begin{aligned}
 N
 &=
-\sum_{n=1}^N\|\phi_n\|_2^2\\
+\sum_{n=1}^N\norm{\phi_n}_2^2\\
 &=
 \int_0^1
-\sum_{n=1}^N|\phi_n(x)|^2\,dx\\
+\sum_{n=1}^N\abs{\phi_n(x)}^2\,dx\\
 &\le
 \int_0^1 M^2\,dx
 =M^2.

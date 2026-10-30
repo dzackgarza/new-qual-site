@@ -67,7 +67,7 @@ The only singularity of the integrand inside $C$ is $z=0$.
 ::: pf-proof
 
 The term $\cos z$ is entire, while $z\cos(1/z)$ is holomorphic on
-$\CC\setminus\{0\}$. Since the circle $|z|=\pi$ encloses the origin, $0$ is
+$\CC\setminus\{0\}$. Since the circle $\abs{z}=\pi$ encloses the origin, $0$ is
 the only enclosed singularity.
 
 :::

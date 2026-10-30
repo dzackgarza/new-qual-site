@@ -71,7 +71,7 @@ has exactly the zero function as its solution.
 ::: {.pf-step #t-defined}
 Assume $d>0$. Differentiation restricts to a linear endomorphism
 $$
-T\coloneqq D|_V:V\to V.
+T\coloneqq D\restrict_V:V\to V.
 $$
 
 ::: pf-proof

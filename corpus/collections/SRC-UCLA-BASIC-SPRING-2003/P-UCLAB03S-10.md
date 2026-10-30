@@ -35,7 +35,7 @@ $$
 \operatorname{tr}(T^2)
 =\sum_{i=1}^n\langle T^2e_i,e_i\rangle
 =\sum_{i=1}^n\langle Te_i,Te_i\rangle
-=\sum_{i=1}^n\|Te_i\|^2.
+=\sum_{i=1}^n\norm{Te_i}^2.
 $$
 Every summand is nonnegative.
 If the trace is zero, then $Te_i=0$ for every $i$.

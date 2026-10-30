@@ -53,7 +53,7 @@ Fix $n\ge5$.
 
 A proper subgroup $H<A_n$ of index $m$ would force
 $$
-|A_n|\mid m!.
+\cardinality{A_n}\mid m!.
 $$
 
 ::: pf-proof
@@ -75,7 +75,7 @@ $$
 Thus $\rho$ is injective, so $A_n$ is isomorphic to a subgroup of $S_m$.
 Lagrange's theorem therefore gives
 $$
-|A_n|\mid |S_m|=m!.
+\cardinality{A_n}\mid \cardinality{S_m}=m!.
 $$
 
 :::
@@ -94,17 +94,17 @@ m=[A_n:H]<n.
 $$
 Then step [](#s1){.pf-ref} gives
 $$
-|A_n|\mid m!.
+\cardinality{A_n}\mid m!.
 $$
 But
 $$
-|A_n|=\frac{n!}{2}=\frac n2\,(n-1)!>(n-1)!
+\cardinality{A_n}=\frac{n!}{2}=\frac n2\,(n-1)!>(n-1)!
 $$
 because $n\ge5$, while
 $$
 m!\le(n-1)!.
 $$
-Hence $|A_n|>m!$, so the positive integer $|A_n|$ cannot divide $m!$, a contradiction.
+Hence $\cardinality{A_n}>m!$, so the positive integer $\cardinality{A_n}$ cannot divide $m!$, a contradiction.
 
 :::
 
@@ -144,7 +144,7 @@ By step [](#s3){.pf-ref}, the orbit of $i$ has cardinality $n$.
 Orbit-stabilizer therefore gives
 $$
 [A_n:H]
-=|A_n\cdot i|
+=\cardinality{A_n\cdot i}
 =n.
 $$
 Thus $A_n$ has a subgroup of index exactly $n$.

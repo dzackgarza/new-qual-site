@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-PUDXH
 kind: problem
-title: $\int_0^\infty\frac{g(x)}{x}\int_0^x f(y)\,dy\,dx\le AB$ with $A=\int_0^\infty
-  f(y)y^{-1/2}\,dy$ and $B=\|g\|_2$
+title: $\int_0^\infty\frac{g(x)}{x}\int_0^x f(y)\,dy\,dx\le AB$ with $A=\int_0^\infty f(y)y^{-1/2}\,dy$ and $B=\norm{g}_2$
 classification:
   areas:
   - real-analysis

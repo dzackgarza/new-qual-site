@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-24ETT
 kind: problem
-title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f\colon\DD\to\Omega$ is biholomorphic
-  and $f(0)=g(0)$
+title: $g(\{\abs{z}<r\})\subseteq f(\{\abs{z}<r\})$ when $f\colon\DD\to\Omega$ is biholomorphic and $f(0)=g(0)$
 classification:
   areas:
   - complex-analysis

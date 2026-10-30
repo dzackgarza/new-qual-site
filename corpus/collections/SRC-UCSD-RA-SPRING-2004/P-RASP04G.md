@@ -90,12 +90,12 @@ Every continuous function belongs to $\mathcal H$.
 
 Let $\varphi\in C([-1,1])$. By the Weierstrass approximation theorem there are real polynomials $p_n$ such that
 $$
-\|p_n-\varphi\|_\infty\longrightarrow0.
+\norm{p_n-\varphi}_\infty\longrightarrow0.
 $$
 For multiplication operators,
 $$
-\|M_{p_n\circ f}-M_{\varphi\circ f}\|
-\le \|p_n-\varphi\|_\infty,
+\norm{M_{p_n\circ f}-M_{\varphi\circ f}}
+\le \norm{p_n-\varphi}_\infty,
 $$
 and similarly with $g$. Since $p_n\in\mathcal H$ by Step 1,
 $$
@@ -122,7 +122,7 @@ $\mathcal H$ is closed under bounded pointwise convergence.
 
 Suppose $\varphi_n\in\mathcal H$, $\varphi_n(t)\to\varphi(t)$ for every $t\in[-1,1]$, and
 $$
-\sup_n\|\varphi_n\|_\infty<\infty.
+\sup_n\norm{\varphi_n}_\infty<\infty.
 $$
 Fix $h\in L^2(\mu)$. By the preceding exercise,
 $$

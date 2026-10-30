@@ -79,7 +79,7 @@ Let $P$ be a Sylow $p$-subgroup of $G$. Suppose $P<G$. Then its fixed field $E^P
 $$
 [E^P:F]=[G:P].
 $$
-Because $P$ is Sylow, $[G:P]$ is not divisible by $p$. This contradicts the hypothesis that every nontrivial finite extension of $F$ has degree divisible by $p$. Hence $P=G$, so $|G|$ is a power of $p$.
+Because $P$ is Sylow, $[G:P]$ is not divisible by $p$. This contradicts the hypothesis that every nontrivial finite extension of $F$ has degree divisible by $p$. Hence $P=G$, so $\cardinality{G}$ is a power of $p$.
 
 :::
 

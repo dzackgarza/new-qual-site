@@ -76,7 +76,7 @@ Let
 $$
 F(x)=\sum_{n=0}^\infty F_nx^n.
 $$
-By induction $0\le F_n\le 2^n$, so the series converges absolutely for $|x|<1/2$. Using $F_0=0$, $F_1=1$, and $F_n=F_{n-1}+F_{n-2}$ for $n\ge2$,
+By induction $0\le F_n\le 2^n$, so the series converges absolutely for $\abs{x}<1/2$. Using $F_0=0$, $F_1=1$, and $F_n=F_{n-1}+F_{n-2}$ for $n\ge2$,
 $$
 \begin{aligned}
 F(x)

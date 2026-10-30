@@ -62,7 +62,7 @@ Suppose instead that the component $C$ of $\RR^n-A$ containing $0$ is bounded. S
 $$
 g:C\cup A\longrightarrow\RR^n-\{0\}
 $$
-with $g|_A=j$.
+with $g\restrict_A=j$.
 
 Let
 $$
@@ -80,13 +80,13 @@ g(x),&x\in C\cup A,\\
 x,&x\in D
 \end{cases}
 $$
-is a continuous map $G:\RR^n\to\RR^n-\{0\}$. Since $C$ is bounded, choose a closed ball $B$ centered at $0$ containing $C$ in its interior. On $\partial B$ we have $G=\operatorname{id}$. Composing $G|_B$ with radial projection
+is a continuous map $G:\RR^n\to\RR^n-\{0\}$. Since $C$ is bounded, choose a closed ball $B$ centered at $0$ containing $C$ in its interior. On $\partial B$ we have $G=\operatorname{id}$. Composing $G\restrict_B$ with radial projection
 $$
 r:\RR^n-\{0\}\longrightarrow\partial B
 $$
 gives a retraction
 $$
-r\circ G|_B:B\longrightarrow\partial B\cong S^{n-1},
+r\circ G\restrict_B:B\longrightarrow\partial B\cong S^{n-1},
 $$
 contrary to the assumed no-retraction theorem. Therefore $0$ lies in the unbounded component, which is exactly the Borsuk lemma for $S^n$.
 

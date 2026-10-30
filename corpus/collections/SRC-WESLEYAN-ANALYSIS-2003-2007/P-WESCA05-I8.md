@@ -18,13 +18,13 @@ audit:
 ::: {.problem}
 Evaluate
 $$
-\int_{|z|=2}\frac{e^{\pi z}}{(z-1)^2}\,dz.
+\int_{\abs{z}=2}\frac{e^{\pi z}}{(z-1)^2}\,dz.
 $$
 :::
 
 ::: {.solution}
 
-Assume the circle $|z|=2$ has its standard positive orientation.
+Assume the circle $\abs{z}=2$ has its standard positive orientation.
 
 ::: pf
 
@@ -34,14 +34,14 @@ The function
 $$
 F(z)=e^{\pi z}
 $$
-is analytic on and inside the circle $|z|=2$, and $1$ lies inside that circle.
+is analytic on and inside the circle $\abs{z}=2$, and $1$ lies inside that circle.
 
 
 ::: pf-proof
 
 The exponential function is entire, so $F$ is analytic on all of $\CC$. Moreover
 $$
-|1|=1<2.
+\abs{1}=1<2.
 $$
 Thus the hypotheses of the differentiated Cauchy integral formula apply at $a=1$.
 
@@ -53,7 +53,7 @@ Thus the hypotheses of the differentiated Cauchy integral formula apply at $a=1$
 
 The differentiated Cauchy integral formula gives
 $$
-\int_{|z|=2}\frac{e^{\pi z}}{(z-1)^2}\,dz
+\int_{\abs{z}=2}\frac{e^{\pi z}}{(z-1)^2}\,dz
 =
 2\pi i\,F'(1).
 $$
@@ -68,7 +68,7 @@ F'(a)
 \frac{1}{2\pi i}
 \int_C\frac{F(z)}{(z-a)^2}\,dz.
 $$
-Apply this with $C=\{|z|=2\}$, $a=1$, and $F(z)=e^{\pi z}$, using step [](#s1-1){.pf-ref}.
+Apply this with $C=\{\abs{z}=2\}$, $a=1$, and $F(z)=e^{\pi z}$, using step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -99,7 +99,7 @@ Evaluating at $z=1$ gives the claim.
 Therefore
 $$
 \boxed{\displaystyle
-\int_{|z|=2}\frac{e^{\pi z}}{(z-1)^2}\,dz
+\int_{\abs{z}=2}\frac{e^{\pi z}}{(z-1)^2}\,dz
 =2\pi^2 i e^\pi.}
 $$
 

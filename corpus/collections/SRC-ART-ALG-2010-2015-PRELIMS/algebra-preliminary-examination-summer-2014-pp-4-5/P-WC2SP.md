@@ -29,17 +29,17 @@ A local ring is a commutative ring with 1 which has a unique maximal ideal.
 
 a. Show that the group of units of a local ring is precisely the set of elements lying outside of $M$.
 
-b. Let $F$ be a field, and $| \ | : F \longrightarrow \RR$ such that
+b. Let $F$ be a field, and $\abs{ \ } : F \longrightarrow \RR$ such that
 
-i. $|x| \geq 0$ for all $x \in F$ and $|x| = 0$ if and only if $x = 0$;
+i. $\abs{x} \geq 0$ for all $x \in F$ and $\abs{x} = 0$ if and only if $x = 0$;
 
 ii.
-$|xy| = |x||y|$, for all $x, y \in F$;
+$\abs{xy} = \abs{x}\abs{y}$, for all $x, y \in F$;
 
 iii.
-$|x + y| \leq \max\{|x|, |y|\}$, for all $x, y \in F$.
+$\abs{x + y} \leq \max\{\abs{x}, \abs{y}\}$, for all $x, y \in F$.
 
-Show that the set $R = \{x \in F : |x| \leq 1\}$ is a local ring.
+Show that the set $R = \{x \in F : \abs{x} \leq 1\}$ is a local ring.
 
 c. Let $M$ be a maximal ideal of a commutative ring $R$ with 1 and $n$ be a positive integer.
 Show that $R/M^n$ is a local ring.
@@ -76,27 +76,27 @@ of $A$ [@DF04]. By uniqueness it is $M$, so $a\in M$.
 
 In part (b), $R$ is local with unique maximal ideal
 $$
-\mathfrak m=\{x\in F:|x|<1\}.
+\mathfrak m=\{x\in F:\abs{x}<1\}.
 $$
 
 ::: pf-proof
 
-The axioms imply $|0|=0$ and $|1|>0$. Multiplicativity gives
-$|1|=|1|^2$, hence $|1|=1$. Also $|-1|^2=|1|=1$ and
-$|-1|\geq0$, so $|-1|=1$ and $|-x|=|x|$.
+The axioms imply $\abs{0}=0$ and $\abs{1}>0$. Multiplicativity gives
+$\abs{1}=\abs{1}^2$, hence $\abs{1}=1$. Also $\abs{-1}^2=\abs{1}=1$ and
+$\abs{-1}\geq0$, so $\abs{-1}=1$ and $\abs{-x}=\abs{x}$.
 
 The set $R$ contains $0,1$. For $x,y\in R$,
-$|x-y|\leq\max\{|x|,|y|\}\leq1$ and
-$|xy|=|x||y|\leq1$. Thus $R$ is a commutative unital subring
+$\abs{x-y}\leq\max\{\abs{x},\abs{y}\}\leq1$ and
+$\abs{xy}=\abs{x}\abs{y}\leq1$. Thus $R$ is a commutative unital subring
 of $F$. The set $\mathfrak m$ contains zero, is closed under
 subtraction by the same inequality, and satisfies
-$|rx|=|r||x|<1$ for $r\in R$, $x\in\mathfrak m$.
-It is an ideal of $R$, proper because $|1|=1$.
+$\abs{rx}=\abs{r}\abs{x}<1$ for $r\in R$, $x\in\mathfrak m$.
+It is an ideal of $R$, proper because $\abs{1}=1$.
 
-For $x\ne0$, multiplicativity gives $|x^{-1}|=1/|x|$.
+For $x\ne0$, multiplicativity gives $\abs{x^{-1}}=1/\abs{x}$.
 Consequently an element $x\in R$ is a unit in $R$ exactly
-when $|x|=1$: in that case its inverse lies in $R$, and
-conversely $xy=1$ with $x,y\in R$ forces $|x|=|y|=1$.
+when $\abs{x}=1$: in that case its inverse lies in $R$, and
+conversely $xy=1$ with $x,y\in R$ forces $\abs{x}=\abs{y}=1$.
 Thus every element of $R\setminus\mathfrak m$ is a unit.
 An ideal strictly containing $\mathfrak m$ contains such a
 unit and hence is all of $R$, proving maximality.

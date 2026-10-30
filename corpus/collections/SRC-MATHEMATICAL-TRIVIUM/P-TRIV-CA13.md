@@ -146,17 +146,17 @@ $R\to\infty$.
 
 ::: pf-proof
 
-On $|z|=R$,
+On $\abs{z}=R$,
 $$
-|1+z^6|
+\abs{1+z^6}
 \geq
 R^6-1.
 $$
 The arc length is $\pi R$. Thus the $ML$ estimate gives
 $$
-\left|
+\abs{
 \int_{\Gamma_R}F(z)\,dz
-\right|
+}
 \leq
 \frac{\pi R}{R^6-1}
 \longrightarrow0.

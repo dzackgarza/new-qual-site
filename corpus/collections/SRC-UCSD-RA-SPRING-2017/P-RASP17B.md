@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-What is the closure of each of $\Gamma \subset L^1(\RR, m)$ in the Banach space norm, $\|f\|_1 := \int_\RR |f| \, dm$, in each of the three cases listed below? Briefly justify your answer.
+What is the closure of each of $\Gamma \subset L^1(\RR, m)$ in the Banach space norm, $\norm{f}_1 := \int_\RR \abs{f} \, dm$, in each of the three cases listed below? Briefly justify your answer.
 
 1) $\Gamma = C_c(\RR, \RR)$
 
@@ -68,7 +68,7 @@ Let $u\in C_c(\RR)$. Choose continuous cutoffs $\chi_n:\RR\to[0,1]$ such that
 $$
 \chi_n(0)=0,
 \qquad
-\chi_n(x)=1\quad\text{for }|x|\ge1/n.
+\chi_n(x)=1\quad\text{for }\abs{x}\ge1/n.
 $$
 Then
 $$
@@ -78,11 +78,11 @@ u_n(0)=0.
 $$
 Moreover,
 $$
-|u_n-u|\le |u|\mathbf1_{[-1/n,1/n]},
+\abs{u_n-u}\le \abs{u}\mathbf1_{[-1/n,1/n]},
 $$
 so by absolute continuity of the Lebesgue integral,
 $$
-\|u_n-u\|_1\to0.
+\norm{u_n-u}_1\to0.
 $$
 Thus every compactly supported continuous function lies in the $L^1$-closure of the subclass vanishing at $0$. By Step 1,
 $$
@@ -108,7 +108,7 @@ L(f)=\int_{[-1,1]}f\,dm.
 $$
 Then
 $$
-|L(f)|\le\|f\|_1,
+\abs{L(f)}\le\norm{f}_1,
 $$
 so $L$ is continuous. Therefore
 $$
@@ -135,8 +135,8 @@ $$
 $$
 Also
 $$
-\|v_n-f\|_1
-\le \|u_n-f\|_1+|L(u_n)|\,\|\psi\|_1
+\norm{v_n-f}_1
+\le \norm{u_n-f}_1+\abs{L(u_n)}\,\norm{\psi}_1
 \to0.
 $$
 Thus

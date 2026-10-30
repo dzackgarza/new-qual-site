@@ -124,7 +124,7 @@ Nondegeneracy of $X$ implies that neither $H$ nor $H'$ contains $X$.
 
 The hyperplane divisor
 $$
-D_H=H|_X
+D_H=H\restrict_X
 $$
 is the reduced divisor consisting of the $d$ points of $\Gamma$. Since every
 point of $\Gamma$ lies in $H'$, one has

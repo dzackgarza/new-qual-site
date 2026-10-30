@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-State and prove **Lagrange's Theorem** for finite groups: if $G$ is a finite group and $H \le G$ is a subgroup, then $|H|$ divides $|G|$ and $|G| = [G : H] \cdot |H|$.
+State and prove **Lagrange's Theorem** for finite groups: if $G$ is a finite group and $H \le G$ is a subgroup, then $\cardinality{H}$ divides $\cardinality{G}$ and $\cardinality{G} = [G : H] \cdot \cardinality{H}$.
 :::
 
 ::: {.solution}
@@ -44,11 +44,11 @@ For each $g\in G$, left multiplication
 $$
 H\to gH,\qquad h\mapsto gh
 $$
-is a bijection, so every left coset has cardinality $|H|$. Therefore
+is a bijection, so every left coset has cardinality $\cardinality{H}$. Therefore
 $$
-|G|
-=\sum_{i=1}^{[G:H]}|g_iH|
-=[G:H]|H|.
+\cardinality{G}
+=\sum_{i=1}^{[G:H]}\cardinality{g_iH}
+=[G:H]\cardinality{H}.
 $$
-In particular, $|H|$ divides $|G|$.
+In particular, $\cardinality{H}$ divides $\cardinality{G}$.
 :::

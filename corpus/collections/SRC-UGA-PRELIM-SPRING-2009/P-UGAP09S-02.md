@@ -30,43 +30,43 @@ is continuous at $x=3$.
 
 If
 $$
-|x-3|<1,
+\abs{x-3}<1,
 $$
 then
 $$
-\left|f(x)-f(3)\right|
+\abs{f(x)-f(3)}
 \le
-\frac76|x-3|.
+\frac76\abs{x-3}.
 $$
 
 
 ::: pf-proof
 
-The inequality $|x-3|<1$ implies
+The inequality $\abs{x-3}<1$ implies
 $$
 2<x<4,
 $$
-so in particular $|x|>2$. Since
+so in particular $\abs{x}>2$. Since
 $$
 f(3)=3+\frac13=\frac{10}{3},
 $$
 one has
 $$
 \begin{aligned}
-\left|f(x)-f(3)\right|
+\abs{f(x)-f(3)}
 &=
-\left|x-3+\frac1x-\frac13\right|\\
+\abs{x-3+\frac1x-\frac13}\\
 &\le
-|x-3|
-+\left|\frac{3-x}{3x}\right|\\
+\abs{x-3}
++\abs{\frac{3-x}{3x}}\\
 &=
-|x-3|
-\left(1+\frac1{3|x|}\right)\\
+\abs{x-3}
+\left(1+\frac1{3\abs{x}}\right)\\
 &\le
-|x-3|
+\abs{x-3}
 \left(1+\frac16\right)
 =
-\frac76|x-3|.
+\frac76\abs{x-3}.
 \end{aligned}
 $$
 
@@ -84,11 +84,11 @@ $$
 
 ::: pf-proof
 
-If $|x-3|<\delta$, then $|x-3|<1$, so step [](#s1-1){.pf-ref} applies, and
+If $\abs{x-3}<\delta$, then $\abs{x-3}<1$, so step [](#s1-1){.pf-ref} applies, and
 $$
-\left|f(x)-f(3)\right|
+\abs{f(x)-f(3)}
 \le
-\frac76|x-3|
+\frac76\abs{x-3}
 <
 \frac76\delta
 \le

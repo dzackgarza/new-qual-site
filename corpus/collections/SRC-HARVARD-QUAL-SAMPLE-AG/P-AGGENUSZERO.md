@@ -52,9 +52,9 @@ $$
 =\deg P+1-g(C)
 =2.
 $$
-Thus the complete linear system $|P|$ defines a morphism
+Thus the complete linear system $\linearsystem{P}$ defines a morphism
 $$
-\phi_{|P|}:C\longrightarrow\PP^1.
+\phi_{\linearsystem{P}}:C\longrightarrow\PP^1.
 $$
 
 The system has no base point.  Away from $P$, the canonical section of $\mathcal O_C(P)$ is nonzero.  At $P$, the strict inequality
@@ -65,10 +65,10 @@ supplies a section not vanishing at $P$.
 
 Moreover
 $$
-\phi_{|P|}^*\mathcal O_{\PP^1}(1)
+\phi_{\linearsystem{P}}^*\mathcal O_{\PP^1}(1)
 \cong\mathcal O_C(P),
 $$
-whose degree is $1$.  Hence the finite nonconstant map $\phi_{|P|}$ has degree $1$.  A degree-one morphism between smooth projective curves is an isomorphism, proving the claim.
+whose degree is $1$.  Hence the finite nonconstant map $\phi_{\linearsystem{P}}$ has degree $1$.  A degree-one morphism between smooth projective curves is an isomorphism, proving the claim.
 :::
 
 :::
@@ -123,13 +123,13 @@ H^0(C,\omega_C^{-1})
 $$
 defines the anticanonical morphism
 $$
-\phi_{|-K_C|}:C\longrightarrow\PP^2_k.
+\phi_{\linearsystem{-K_C}}:C\longrightarrow\PP^2_k.
 $$
 After base change to $\bar k$, step [](#base-change-p1){.pf-ref} identifies $C_{\bar k}$ with $\PP^1_{\bar k}$, and
 $$
 (\omega_C^{-1})_{\bar k}\cong\mathcal O_{\PP^1}(2).
 $$
-Thus the base change of $\phi_{|-K_C|}$ is the quadratic Veronese embedding
+Thus the base change of $\phi_{\linearsystem{-K_C}}$ is the quadratic Veronese embedding
 $$
 \PP^1_{\bar k}\hookrightarrow\PP^2_{\bar k},
 \qquad

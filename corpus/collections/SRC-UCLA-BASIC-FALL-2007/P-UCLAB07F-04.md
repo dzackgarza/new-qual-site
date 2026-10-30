@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\RR\to\RR$ is twice differentiable and $|f''(x)|\le B$.
+Suppose $f:\RR\to\RR$ is twice differentiable and $\abs{f''(x)}\le B$.
 
-(a) Prove that $$\left|2Af(0)-\int_{-A}^{A}f(x)\,dx\right|\le \frac{A^3}{3}B.$$
+(a) Prove that $$\abs{2Af(0)-\int_{-A}^{A}f(x)\,dx}\le \frac{A^3}{3}B.$$
 
-(b) Use part (a) to justify $$\left|\int_a^b f(x)\,dx-\frac{b-a}{n}\sum_{k=1}^n f\!\left(a+\frac{2k-1}{2n}(b-a)\right)\right|\le Cn^{-2},$$ where $C$ is independent of $n$.
+(b) Use part (a) to justify $$\abs{\int_a^b f(x)\,dx-\frac{b-a}{n}\sum_{k=1}^n f\!\left(a+\frac{2k-1}{2n}(b-a)\right)}\le Cn^{-2},$$ where $C$ is independent of $n$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ Suppose $f:\RR\to\RR$ is twice differentiable and $|f''(x)|\le B$.
 
 For every $x\in\RR$,
 $$
-|f'(x)-f'(0)|\le B|x|.
+\abs{f'(x)-f'(0)}\le B\abs{x}.
 $$
 
 
@@ -43,9 +43,9 @@ f'(x)-f'(0)=f''(\xi)x.
 $$
 Therefore
 $$
-|f'(x)-f'(0)|
+\abs{f'(x)-f'(0)}
 \le
-B|x|.
+B\abs{x}.
 $$
 
 :::
@@ -56,7 +56,7 @@ $$
 
 For every $x\in\RR$,
 $$
-\left|f(x)-f(0)-xf'(0)\right|
+\abs{f(x)-f(0)-xf'(0)}
 \le
 \frac B2x^2.
 $$
@@ -72,9 +72,9 @@ f(x)-f(0)-xf'(0)
 $$
 Using step [](#s1-1){.pf-ref},
 $$
-\left|f(x)-f(0)-xf'(0)\right|
+\abs{f(x)-f(0)-xf'(0)}
 \le
-\int_0^{|x|}Bt\,dt
+\int_0^{\abs{x}}Bt\,dt
 =
 \frac B2x^2.
 $$
@@ -88,9 +88,9 @@ $$
 For every $A>0$,
 $$
 \boxed{
-\left|
+\abs{
 2Af(0)-\int_{-A}^{A}f(x)\,dx
-\right|
+}
 \le
 \frac{A^3}{3}B
 }.
@@ -101,7 +101,7 @@ $$
 
 By step [](#s1-2){.pf-ref},
 $$
-\left|f(x)-f(0)-xf'(0)\right|
+\abs{f(x)-f(0)-xf'(0)}
 \le
 \frac B2x^2.
 $$
@@ -112,9 +112,9 @@ $$
 one obtains
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_{-A}^{A}f(x)\,dx-2Af(0)
-\right|
+}
 &\le
 \int_{-A}^{A}\frac B2x^2\,dx\\
 &=
@@ -166,10 +166,10 @@ These are exactly the $n$ equal subintervals of the uniform partition of $[a,b]$
 
 For each $k$,
 $$
-\left|
+\abs{
 \int_{c_k-h/2}^{c_k+h/2}f(x)\,dx
 -hf(c_k)
-\right|
+}
 \le
 \frac{Bh^3}{24}.
 $$
@@ -187,15 +187,15 @@ A=\frac h2.
 $$
 Since
 $$
-|g_k''(t)|=|f''(c_k+t)|\le B,
+\abs{g_k''(t)}=\abs{f''(c_k+t)}\le B,
 $$
 step [](#s1-3){.pf-ref} gives
 $$
-\left|
+\abs{
 h f(c_k)
 -
 \int_{-h/2}^{h/2}f(c_k+t)\,dt
-\right|
+}
 \le
 \frac{B}{3}\left(\frac h2\right)^3
 =
@@ -212,13 +212,13 @@ Changing variables $x=c_k+t$ gives the stated estimate.
 The midpoint quadrature error satisfies
 $$
 \boxed{
-\left|
+\abs{
 \int_a^b f(x)\,dx
 -
 \frac{b-a}{n}
 \sum_{k=1}^n
 f\!\left(a+\frac{2k-1}{2n}(b-a)\right)
-\right|
+}
 \le
 \frac{B(b-a)^3}{24}\,n^{-2}
 }.
@@ -241,10 +241,10 @@ $$
 and apply the triangle inequality together with step [](#s1-5){.pf-ref}:
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_a^b f
 -h\sum_{k=1}^n f(c_k)
-\right|
+}
 &\le
 \sum_{k=1}^n\frac{Bh^3}{24}\\
 &=

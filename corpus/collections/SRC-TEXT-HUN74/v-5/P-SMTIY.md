@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $|K| = p^n$, then every element of $K$ has a unique $p$th root in $K$.
+Show that if $\cardinality{K} = p^n$, then every element of $K$ has a unique $p$th root in $K$.
 :::
 
 ::: {.solution}

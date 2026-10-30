@@ -67,7 +67,7 @@ factor $H$ [@SS03]. At $i$, this gives
 $$
 \begin{aligned}
 \operatorname{Res}_{i}f
-&=\left.\frac{d}{dz}\frac{e^{\pi z}}{(z+i)^2}\right|_{z=i}\\
+&=\evaluated{\frac{d}{dz}\frac{e^{\pi z}}{(z+i)^2}}_{z=i}\\
 &=e^{\pi i}\left(\frac{\pi}{(2i)^2}-\frac{2}{(2i)^3}\right)
 =\frac{\pi+i}{4}.
 \end{aligned}
@@ -76,7 +76,7 @@ At $-i$, the same calculation with the other factor yields
 $$
 \begin{aligned}
 \operatorname{Res}_{-i}f
-&=\left.\frac{d}{dz}\frac{e^{\pi z}}{(z-i)^2}\right|_{z=-i}\\
+&=\evaluated{\frac{d}{dz}\frac{e^{\pi z}}{(z-i)^2}}_{z=-i}\\
 &=e^{-\pi i}\left(\frac{\pi}{(-2i)^2}-\frac{2}{(-2i)^3}\right)
 =\frac{\pi-i}{4}.
 \end{aligned}

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $C$ denote the real Banach space of all convergent real sequences under the norm $\|\cdot\|_\infty$.
+Let $C$ denote the real Banach space of all convergent real sequences under the norm $\norm{\cdot}_\infty$.
 Compute the extreme points of the unit ball $B$ of $C$ and determine whether $B$ is the closed convex hull of its extreme points.
 :::
 
@@ -34,13 +34,13 @@ Compute the extreme points of the unit ball $B$ of $C$ and determine whether $B$
 
 ::: {.pf-step #s1}
 
-If $a=(a_n)\in B$ has $|a_m|<1$ for some $m$, then $a$ is not an extreme point of $B$.
+If $a=(a_n)\in B$ has $\abs{a_m}<1$ for some $m$, then $a$ is not an extreme point of $B$.
 
 ::: pf-proof
 
 Choose $\delta>0$ with
 $$
-|a_m\pm\delta|\le1.
+\abs{a_m\pm\delta}\le1.
 $$
 Define $b^+,b^-\in C$ by changing only the $m$-th coordinate:
 $$
@@ -48,7 +48,7 @@ b_n^\pm=a_n\quad(n\ne m),
 \qquad
 b_m^\pm=a_m\pm\delta.
 $$
-Changing one coordinate preserves convergence, and $\|b^\pm\|_\infty\le1$, so $b^\pm\in B$.
+Changing one coordinate preserves convergence, and $\norm{b^\pm}_\infty\le1$, so $b^\pm\in B$.
 They are distinct and
 $$
 a={b^++b^-\over2}.
@@ -60,7 +60,7 @@ $$
 
 ::: {.pf-step #s2}
 
-If $a=(a_n)\in B$ satisfies $|a_n|=1$ for every $n$, then $a$ is an extreme point of $B$.
+If $a=(a_n)\in B$ satisfies $\abs{a_n}=1$ for every $n$, then $a$ is an extreme point of $B$.
 
 ::: pf-proof
 
@@ -74,8 +74,8 @@ b,c\in B.
 $$
 For each $n$,
 $$
-1=|a_n|
-\le\lambda|b_n|+(1-\lambda)|c_n|
+1=\abs{a_n}
+\le\lambda\abs{b_n}+(1-\lambda)\abs{c_n}
 \le1.
 $$
 Since the scalars are real and $a_n=\pm1$, equality forces
@@ -93,7 +93,7 @@ Thus $b=c=a$.
 The extreme points are exactly the convergent sign sequences:
 $$
 \operatorname{Ext}(B)
-=\left\{a\in C:|a_n|=1\text{ for all }n\right\}.
+=\left\{a\in C:\abs{a_n}=1\text{ for all }n\right\}.
 $$
 Equivalently, they are the $\{\pm1\}$-valued sequences that are eventually constant.
 
@@ -114,15 +114,15 @@ a^{(N)}=(a_1,\ldots,a_N,L,L,\ldots).
 $$
 Then
 $$
-\|a-a^{(N)}\|_\infty\longrightarrow0.
+\norm{a-a^{(N)}}_\infty\longrightarrow0.
 $$
 
 ::: pf-proof
 
 We have
 $$
-\|a-a^{(N)}\|_\infty
-=\sup_{n>N}|a_n-L|,
+\norm{a-a^{(N)}}_\infty
+=\sup_{n>N}\abs{a_n-L},
 $$
 which tends to $0$ because $a_n\to L$.
 

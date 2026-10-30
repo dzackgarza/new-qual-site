@@ -124,7 +124,7 @@ $$
 The space $E_0(A)$ is nonzero. Since it is a finite-dimensional complex
 vector space, the restriction
 $$
-B|_{E_0(A)}
+B\restrict_{E_0(A)}
 $$
 has an eigenvector $v\neq0$. For some $\mu\in\CC$,
 $$

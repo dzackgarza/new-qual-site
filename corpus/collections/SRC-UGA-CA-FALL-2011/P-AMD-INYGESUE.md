@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\CC$.
+Show that $f(z) = z^2$ is uniformly continuous in any open disk $\abs{z} < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\CC$.
 
 ```
 (1) Show that the function $u=u(x,y)$ given by
@@ -37,11 +37,11 @@ Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where
 ::: {.solution}
 **Goal:**
 
-1. Prove that $f(z) = z^2$ is uniformly continuous on the open disk $D(0, R) = \{z \in \CC : |z| < R\}$ for any fixed $R > 0$, but is not uniformly continuous on $\CC$.
+1. Prove that $f(z) = z^2$ is uniformly continuous on the open disk $D(0, R) = \{z \in \CC : \abs{z} < R\}$ for any fixed $R > 0$, but is not uniformly continuous on $\CC$.
 
 2. For the function $u_n(x,y) = \frac{e^{ny}-e^{-ny}}{2n^2}\sin(nx) = \frac{\sinh(ny)}{n^2}\sin(nx)$ on $D = \{(x,y) \in \RR^2 : x^2+y^2 < 1\}$, verify it solves the Laplace equation with Cauchy initial data $u_n(x,0) = 0$ and $\frac{\partial u_n}{\partial y}(x,0) = \frac{\sin(nx)}{n}$.
 
-3. Show that there exist points $(x,y) \in D$ where $\limsup_{n\to\infty} |u_n(x,y)| = \infty$.
+3. Show that there exist points $(x,y) \in D$ where $\limsup_{n\to\infty} \abs{u_n(x,y)} = \infty$.
 
 * * *
 
@@ -50,12 +50,12 @@ Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where
 ::: pf
 
 ::: pf-step
-**$f(z) = z^2$ is uniformly continuous on $D(0, R) = \{z \in \CC : |z| < R\}$.**
+**$f(z) = z^2$ is uniformly continuous on $D(0, R) = \{z \in \CC : \abs{z} < R\}$.**
 
 ::: pf-proof
 
 ::: {.pf-step #s1-1}
-For any $z_1, z_2 \in D(0, R)$, $|f(z_1) - f(z_2)| = |z_1^2 - z_2^2| = |z_1 + z_2| |z_1 - z_2|$.
+For any $z_1, z_2 \in D(0, R)$, $\abs{f(z_1) - f(z_2)} = \abs{z_1^2 - z_2^2} = \abs{z_1 + z_2} \abs{z_1 - z_2}$.
 
 ::: pf-proof
 By the algebraic factorization of difference of squares and multiplicativity of the complex modulus.
@@ -64,16 +64,16 @@ By the algebraic factorization of difference of squares and multiplicativity of 
 :::
 
 ::: {.pf-step #s1-2}
-For any $z_1, z_2 \in D(0, R)$, $|z_1 + z_2| \leq |z_1| + |z_2| < R + R = 2R$.
+For any $z_1, z_2 \in D(0, R)$, $\abs{z_1 + z_2} \leq \abs{z_1} + \abs{z_2} < R + R = 2R$.
 
 ::: pf-proof
-By the triangle inequality and the condition $|z_1| < R, |z_2| < R$.
+By the triangle inequality and the condition $\abs{z_1} < R, \abs{z_2} < R$.
 :::
 
 :::
 
 ::: {.pf-step #s1-3}
-Thus, for any $z_1, z_2 \in D(0, R)$, $|f(z_1) - f(z_2)| \leq 2R |z_1 - z_2|$, so $f$ is Lipschitz continuous on $D(0,R)$ with Lipschitz constant $2R$.
+Thus, for any $z_1, z_2 \in D(0, R)$, $\abs{f(z_1) - f(z_2)} \leq 2R \abs{z_1 - z_2}$, so $f$ is Lipschitz continuous on $D(0,R)$ with Lipschitz constant $2R$.
 
 ::: pf-proof
 Follows directly from steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
@@ -82,7 +82,7 @@ Follows directly from steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 :::
 
 ::: pf-step
-For every $\varepsilon > 0$, choosing $\delta = \frac{\varepsilon}{2R} > 0$, if $|z_1 - z_2| < \delta$ with $z_1, z_2 \in D(0, R)$, then $|f(z_1) - f(z_2)| \leq 2R |z_1 - z_2| < 2R \delta = \varepsilon$.
+For every $\varepsilon > 0$, choosing $\delta = \frac{\varepsilon}{2R} > 0$, if $\abs{z_1 - z_2} < \delta$ with $z_1, z_2 \in D(0, R)$, then $\abs{f(z_1) - f(z_2)} \leq 2R \abs{z_1 - z_2} < 2R \delta = \varepsilon$.
 
 ::: pf-proof
 Direct substitution of $\delta = \frac{\varepsilon}{2R}$ into step [](#s1-3){.pf-ref}.
@@ -100,8 +100,8 @@ Direct substitution of $\delta = \frac{\varepsilon}{2R}$ into step [](#s1-3){.pf
 ::: pf-proof
 
 ::: pf-step
-A function $f: \CC \to \CC$ is uniformly continuous if and only if $\forall \varepsilon > 0, \exists \delta > 0, \forall z_1, z_2 \in \CC, |z_1 - z_2| < \delta \implies |f(z_1) - f(z_2)| < \varepsilon$.
-The negation is: $\exists \varepsilon_0 > 0, \forall \delta > 0, \exists z_1, z_2 \in \CC$ such that $|z_1 - z_2| < \delta$ and $|f(z_1) - f(z_2)| \geq \varepsilon_0$.
+A function $f: \CC \to \CC$ is uniformly continuous if and only if $\forall \varepsilon > 0, \exists \delta > 0, \forall z_1, z_2 \in \CC, \abs{z_1 - z_2} < \delta \implies \abs{f(z_1) - f(z_2)} < \varepsilon$.
+The negation is: $\exists \varepsilon_0 > 0, \forall \delta > 0, \exists z_1, z_2 \in \CC$ such that $\abs{z_1 - z_2} < \delta$ and $\abs{f(z_1) - f(z_2)} \geq \varepsilon_0$.
 
 ::: pf-proof
 Standard logical negation of uniform continuity.
@@ -120,7 +120,7 @@ Explicit construction of test points.
 :::
 
 ::: pf-step
-$|z_1 - z_2| = \frac{\delta}{2} < \delta$.
+$\abs{z_1 - z_2} = \frac{\delta}{2} < \delta$.
 
 ::: pf-proof
 By definition of $z_1$ and $z_2$.
@@ -129,7 +129,7 @@ By definition of $z_1$ and $z_2$.
 :::
 
 ::: pf-step
-$|f(z_2) - f(z_1)| = |z_2^2 - z_1^2| = |(z_2 - z_1)(z_2 + z_1)| = \frac{\delta}{2} \cdot \left(\frac{2}{\delta} + \frac{\delta}{2}\right) = 1 + \frac{\delta^2}{4} > 1 = \varepsilon_0$.
+$\abs{f(z_2) - f(z_1)} = \abs{z_2^2 - z_1^2} = \abs{(z_2 - z_1)(z_2 + z_1)} = \frac{\delta}{2} \cdot \left(\frac{2}{\delta} + \frac{\delta}{2}\right) = 1 + \frac{\delta^2}{4} > 1 = \varepsilon_0$.
 
 ::: pf-proof
 By direct calculation since $z_1, z_2$ are positive real numbers.
@@ -223,7 +223,7 @@ Direct evaluation at $y=0$.
 ::: pf
 
 ::: pf-step
-**There exist points $(x,y) \in D$ such that $\limsup_{n\to\infty} |u_n(x,y)| = \infty$.**
+**There exist points $(x,y) \in D$ such that $\limsup_{n\to\infty} \abs{u_n(x,y)} = \infty$.**
 
 ::: pf-proof
 
@@ -237,7 +237,7 @@ Point belongs to $D$ as its distance to origin is $\frac{1}{\sqrt{2}} < 1$.
 :::
 
 ::: {.pf-step #s5-2}
-For any $y > 0$, $|u_n(x,y)| = \frac{e^{ny} - e^{-ny}}{2n^2} |\sin(nx)| \geq \frac{e^{ny} - 1}{2n^2} |\sin(nx)|$.
+For any $y > 0$, $\abs{u_n(x,y)} = \frac{e^{ny} - e^{-ny}}{2n^2} \abs{\sin(nx)} \geq \frac{e^{ny} - 1}{2n^2} \abs{\sin(nx)}$.
 
 ::: pf-proof
 For $y > 0, n \geq 1$, $e^{-ny} \leq 1$.
@@ -246,7 +246,7 @@ For $y > 0, n \geq 1$, $e^{-ny} \leq 1$.
 :::
 
 ::: {.pf-step #s5-3}
-By Dirichlet's approximation theorem / equidistribution modulo $2\pi$, there exists a subsequence $n_k \to \infty$ such that $|\sin(n_k x_0)| = |\sin(n_k / 2)| \geq \frac{1}{2}$.
+By Dirichlet's approximation theorem / equidistribution modulo $2\pi$, there exists a subsequence $n_k \to \infty$ such that $\abs{\sin(n_k x_0)} = \abs{\sin(n_k / 2)} \geq \frac{1}{2}$.
 
 ::: pf-proof
 The fractional parts of $\frac{n}{2\pi}$ are dense in $[0,1]$ (since $\frac{1}{2\pi}$ is irrational), so $n/2 \pmod \pi$ visits the interval $[\pi/6, 5\pi/6]$ infinitely often, where $\sin \geq 1/2$.
@@ -255,7 +255,7 @@ The fractional parts of $\frac{n}{2\pi}$ are dense in $[0,1]$ (since $\frac{1}{2
 :::
 
 ::: pf-step
-Along this subsequence $n_k$, $|u_{n_k}(x_0, y_0)| \geq \frac{e^{n_k / 2} - 1}{2n_k^2} \cdot \frac{1}{2} = \frac{e^{n_k/2} - 1}{4n_k^2}$.
+Along this subsequence $n_k$, $\abs{u_{n_k}(x_0, y_0)} \geq \frac{e^{n_k / 2} - 1}{2n_k^2} \cdot \frac{1}{2} = \frac{e^{n_k/2} - 1}{4n_k^2}$.
 
 ::: pf-proof
 Follows from steps [](#s5-2){.pf-ref} and [](#s5-3){.pf-ref}.
@@ -264,7 +264,7 @@ Follows from steps [](#s5-2){.pf-ref} and [](#s5-3){.pf-ref}.
 :::
 
 ::: pf-step
-Since $\lim_{k\to\infty} \frac{e^{n_k/2} - 1}{4n_k^2} = \infty$ (exponential growth dominates polynomial growth), $\limsup_{n\to\infty} |u_n(x_0, y_0)| = \infty$.
+Since $\lim_{k\to\infty} \frac{e^{n_k/2} - 1}{4n_k^2} = \infty$ (exponential growth dominates polynomial growth), $\limsup_{n\to\infty} \abs{u_n(x_0, y_0)} = \infty$.
 
 ::: pf-proof
 Limit of $e^{t}/t^2$ as $t \to \infty$ is $\infty$.

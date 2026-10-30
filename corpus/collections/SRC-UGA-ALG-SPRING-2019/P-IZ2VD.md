@@ -40,7 +40,7 @@ Construct the field $K = \FF_p[x]/\langle \pi(x) \rangle$. Since $\pi(x)$ is irr
 
 ::: pf-step
 
-The extension degree is $[K : \FF_p] = \deg \pi(x) = d$, so $|K| = p^d$.
+The extension degree is $[K : \FF_p] = \deg \pi(x) = d$, so $\cardinality{K} = p^d$.
 
 :::
 

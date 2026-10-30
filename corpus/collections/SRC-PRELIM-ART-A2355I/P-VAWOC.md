@@ -28,7 +28,7 @@ Work out the Taylor series for $f(x) = \ln x$ around $x=1$ and use it to approxi
 ::: {.solution}
 The Taylor series about $x=1$ is
 $$
-\boxed{\ln x=\sum_{n=1}^{\infty}(-1)^{n+1}\frac{(x-1)^n}{n},\qquad |x-1|<1.}
+\boxed{\ln x=\sum_{n=1}^{\infty}(-1)^{n+1}\frac{(x-1)^n}{n},\qquad \abs{x-1}<1.}
 $$
 In particular,
 $$
@@ -44,13 +44,13 @@ Derive the series from the geometric series.
 
 ::: pf-proof
 
-For $|t|<1$,
+For $\abs{t}<1$,
 $$
 \frac1{1+t}=\sum_{n=0}^{\infty}(-1)^n t^n.
 $$
 The power series converges uniformly on every closed interval
 $[-r,r]$ with $0<r<1$, so it may be integrated term by term.
-Thus, for $|u|<1$,
+Thus, for $\abs{u}<1$,
 $$
 \ln(1+u)
 =\int_0^u\frac{dt}{1+t}
@@ -80,7 +80,7 @@ S_2=0.1-0.005=0.095.
 $$
 The alternating-series remainder satisfies
 $$
-|\ln(1.1)-S_2|\leq\frac{0.1^3}{3}=\frac1{3000}<0.00034.
+\abs{\ln(1.1)-S_2}\leq\frac{0.1^3}{3}=\frac1{3000}<0.00034.
 $$
 Hence
 $$

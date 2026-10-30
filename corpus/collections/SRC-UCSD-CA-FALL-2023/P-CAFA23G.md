@@ -16,7 +16,7 @@ review: draft
 Determine whether the following statements are true or false.
 Justify your answer.
 
-(a) Let $G = \{z \in \CC : |z| < 2 \text{ and } |z-1| > 1\}$.
+(a) Let $G = \{z \in \CC : \abs{z} < 2 \text{ and } \abs{z-1} > 1\}$.
 Then the set of polynomials is dense in the space $H(G)$ of analytic functions on $G$.
 
 (b) Let $u_1, u_2$ be harmonic functions on $\DD$.
@@ -27,15 +27,15 @@ Then $u := \max\{u_1, u_2\}$ is also harmonic on $\DD$.
 (a) **True.** By Runge's theorem, polynomials are dense in $H(G)$ exactly
 when the complement of $G$ in the Riemann sphere is connected. Here
 $$
-G=\{|z|<2\}\cap\{|z-1|>1\}.
+G=\{\abs{z}<2\}\cap\{\abs{z-1}>1\}.
 $$
 Its complement is the union of
 $$
-\{|z|\ge2\}\cup\{\infty\}
+\{\abs{z}\ge2\}\cup\{\infty\}
 $$
 and
 $$
-\{|z-1|\le1\}.
+\{\abs{z-1}\le1\}.
 $$
 These two closed sets meet at $z=2$, so the complement is connected. Hence
 polynomials are dense in $H(G)$.
@@ -48,7 +48,7 @@ u_2(x+iy)=-x.
 $$
 Both are harmonic, but
 $$
-\max\{u_1,u_2\}=|x|
+\max\{u_1,u_2\}=\abs{x}
 $$
 is not even differentiable on the imaginary axis and therefore is not
 harmonic.

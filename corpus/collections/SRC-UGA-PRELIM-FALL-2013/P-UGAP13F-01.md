@@ -17,7 +17,7 @@ audit:
 ::: {.problem}
 A function $f:\RR\to\RR$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-|x-y|<\delta\implies |f(x)-f(y)|<\varepsilon.
+\abs{x-y}<\delta\implies \abs{f(x)-f(y)}<\varepsilon.
 $$
 
 (a) Give a definition of what it means for $f$ not to be uniformly continuous.
@@ -39,9 +39,9 @@ $$
 \forall\delta>0
 \text{ there exist }x,y\in\RR
 \text{ with }
-|x-y|<\delta
+\abs{x-y}<\delta
 \text{ and }
-|f(x)-f(y)|\ge\varepsilon_0.
+\abs{f(x)-f(y)}\ge\varepsilon_0.
 }
 $$
 
@@ -52,9 +52,9 @@ Uniform continuity is the statement
 $$
 \forall\varepsilon>0+\exists\delta>0+\forall x,y\in\RR,
 \quad
-|x-y|<\delta
+\abs{x-y}<\delta
 \Longrightarrow
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 
 Negating the quantifiers gives
@@ -64,17 +64,17 @@ $$
 such that the implication fails.
 Failure of
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \Longrightarrow
-|f(x)-f(y)|<\varepsilon_0
+\abs{f(x)-f(y)}<\varepsilon_0
 $$
 means precisely
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 and
 $$
-|f(x)-f(y)|\ge\varepsilon_0.
+\abs{f(x)-f(y)}\ge\varepsilon_0.
 $$
 
 :::
@@ -136,7 +136,7 @@ y=x+h.
 $$
 Then
 $$
-|x-y|
+\abs{x-y}
 =
 h
 =
@@ -148,7 +148,7 @@ $$
 But
 $$
 \begin{aligned}
-|f(y)-f(x)|
+\abs{f(y)-f(x)}
 &=
 (x+h)^2-x^2\\
 &=

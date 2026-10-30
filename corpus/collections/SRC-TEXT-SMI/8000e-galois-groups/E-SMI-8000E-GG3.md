@@ -88,7 +88,7 @@ $$
 $$
 so
 $$
-|K|=|L|=5^3=125.
+\cardinality{K}=\cardinality{L}=5^3=125.
 $$
 
 :::

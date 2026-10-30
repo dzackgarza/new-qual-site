@@ -26,10 +26,10 @@ justify the statement that $\int_0^1\int_0^1 \frac{(x-y)\sin(xy)}{x^2+y^2}dxdy=\
 :::
 
 ::: {.solution}
-Fubini's theorem applies once the integrand is shown to be absolutely integrable. Since $|\sin(xy)|\le1$,
+Fubini's theorem applies once the integrand is shown to be absolutely integrable. Since $\abs{\sin(xy)}\le1$,
 $$
-\left|\frac{(x-y)\sin(xy)}{x^2+y^2}\right|
-\le \frac{|x-y|}{x^2+y^2}.
+\abs{\frac{(x-y)\sin(xy)}{x^2+y^2}}
+\le \frac{\abs{x-y}}{x^2+y^2}.
 $$
 The square $[0,1]^2$ is contained in the quarter disk
 $$
@@ -38,10 +38,10 @@ $$
 Hence, using polar coordinates,
 $$
 \begin{aligned}
-\int_{[0,1]^2}\left|\frac{(x-y)\sin(xy)}{x^2+y^2}\right|\,dx\,dy
+\int_{[0,1]^2}\abs{\frac{(x-y)\sin(xy)}{x^2+y^2}}\,dx\,dy
 &\le \int_0^{\pi/2}\int_0^{\sqrt2}
-\frac{r|\cos\theta-\sin\theta|}{r^2}\,r\,dr\,d\theta\\
-&=\sqrt2\int_0^{\pi/2}|\cos\theta-\sin\theta|\,d\theta\\
+\frac{r\abs{\cos\theta-\sin\theta}}{r^2}\,r\,dr\,d\theta\\
+&=\sqrt2\int_0^{\pi/2}\abs{\cos\theta-\sin\theta}\,d\theta\\
 &<\infty.
 \end{aligned}
 $$

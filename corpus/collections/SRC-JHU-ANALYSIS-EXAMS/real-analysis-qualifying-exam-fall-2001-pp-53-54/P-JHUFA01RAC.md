@@ -26,49 +26,49 @@ audit:
 ::: {.problem}
 Let $(f_n)$ be real-valued functions in $L^{4/3}(0,1)$ such that $f_n\to0$ in measure and
 $$
-\int_0^1 |f_n(x)|^{4/3}\,dx\le1
+\int_0^1 \abs{f_n(x)}^{4/3}\,dx\le1
 \qquad(n\ge1).
 $$
 Show that
 $$
-\int_0^1|f_n(x)|\,dx\longrightarrow0.
+\int_0^1\abs{f_n(x)}\,dx\longrightarrow0.
 $$
 :::
 
 ::: {.solution}
 Fix $\varepsilon>0$. Choose $\eta=\varepsilon/2$ and split
 $$
-\int_0^1|f_n|
+\int_0^1\abs{f_n}
 =
-\int_{\{|f_n|\le\eta\}}|f_n|
+\int_{\{\abs{f_n}\le\eta\}}\abs{f_n}
 +
-\int_{\{|f_n|>\eta\}}|f_n|.
+\int_{\{\abs{f_n}>\eta\}}\abs{f_n}.
 $$
 The first term satisfies
 $$
-\int_{\{|f_n|\le\eta\}}|f_n|\le\eta=\frac\varepsilon2.
+\int_{\{\abs{f_n}\le\eta\}}\abs{f_n}\le\eta=\frac\varepsilon2.
 $$
 For the second term, Hölder's inequality with exponents $4/3$ and $4$ gives
 $$
 \begin{aligned}
-\int_{\{|f_n|>\eta\}}|f_n|
+\int_{\{\abs{f_n}>\eta\}}\abs{f_n}
 &\le
-\left(\int_0^1|f_n|^{4/3}\right)^{3/4}
- m\{|f_n|>\eta\}^{1/4}\\
-&\le m\{|f_n|>\eta\}^{1/4}.
+\left(\int_0^1\abs{f_n}^{4/3}\right)^{3/4}
+ m\{\abs{f_n}>\eta\}^{1/4}\\
+&\le m\{\abs{f_n}>\eta\}^{1/4}.
 \end{aligned}
 $$
 Because $f_n\to0$ in measure,
 $$
-m\{|f_n|>\eta\}\longrightarrow0.
+m\{\abs{f_n}>\eta\}\longrightarrow0.
 $$
 Hence for all sufficiently large $n$,
 $$
-m\{|f_n|>\eta\}^{1/4}<\frac\varepsilon2.
+m\{\abs{f_n}>\eta\}^{1/4}<\frac\varepsilon2.
 $$
 Therefore
 $$
-\int_0^1|f_n|<\varepsilon
+\int_0^1\abs{f_n}<\varepsilon
 $$
 for all sufficiently large $n$, proving $f_n\to0$ in $L^1(0,1)$.
 :::

@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Suppose $\mu$ is a Borel probability measure on the unit circle such that
 $$
-\lim_{n\to\infty}\int_{|z|=1} z^n\,d\mu(z)=0.
+\lim_{n\to\infty}\int_{\abs{z}=1} z^n\,d\mu(z)=0.
 $$
 For $f\in L^1(\mu)$, show that
 $$
-\lim_{n\to\infty}\int_{|z|=1} z^n f(z)\,d\mu(z)=0.
+\lim_{n\to\infty}\int_{\abs{z}=1} z^n f(z)\,d\mu(z)=0.
 $$
 :::
 
@@ -44,9 +44,9 @@ P(z)=\sum_{m=-N}^N c_m z^m.
 $$
 Then
 $$
-\int_{|z|=1} z^nP(z)\,d\mu(z)
+\int_{\abs{z}=1} z^nP(z)\,d\mu(z)
 =\sum_{m=-N}^N c_m
-\int_{|z|=1} z^{n+m}\,d\mu(z).
+\int_{\abs{z}=1} z^{n+m}\,d\mu(z).
 $$
 For each fixed $m$, one has $n+m\to\infty$ as $n\to\infty$. By hypothesis each term in the finite sum tends to $0$, so the whole sum tends to $0$.
 
@@ -72,7 +72,7 @@ Since the unit circle is a compact metric space and $\mu$ is a finite Borel meas
 For every $f\in L^1(\mu)$,
 $$
 \boxed{
-\int_{|z|=1} z^n f(z)\,d\mu(z)
+\int_{\abs{z}=1} z^n f(z)\,d\mu(z)
 \longrightarrow0.}
 $$
 
@@ -81,21 +81,21 @@ $$
 
 Let $\varepsilon>0$. By step [](#s1-2){.pf-ref}, choose a trigonometric polynomial $P$ such that
 $$
-\|f-P\|_{L^1(\mu)}<\varepsilon.
+\norm{f-P}_{L^1(\mu)}<\varepsilon.
 $$
 By step [](#s1-1){.pf-ref}, for all sufficiently large $n$,
 $$
-\left|\int z^nP\,d\mu\right|<\varepsilon.
+\abs{\int z^nP\,d\mu}<\varepsilon.
 $$
-Since $|z^n|=1$ on the unit circle,
+Since $\abs{z^n}=1$ on the unit circle,
 $$
 \begin{aligned}
-\left|\int z^nf\,d\mu\right|
+\abs{\int z^nf\,d\mu}
 &\le
-\left|\int z^n(f-P)\,d\mu\right|
-+\left|\int z^nP\,d\mu\right|\\
+\abs{\int z^n(f-P)\,d\mu}
++\abs{\int z^nP\,d\mu}\\
 &\le
-\int|f-P|\,d\mu+\varepsilon\\
+\int\abs{f-P}\,d\mu+\varepsilon\\
 &<2\varepsilon.
 \end{aligned}
 $$

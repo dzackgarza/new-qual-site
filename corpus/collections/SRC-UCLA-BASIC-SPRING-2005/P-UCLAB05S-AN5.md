@@ -70,19 +70,19 @@ $$
 
 Let $\varepsilon>0$. Choose $N_0$ such that
 $$
-|b_n|<\frac\varepsilon2
+\abs{b_n}<\frac\varepsilon2
 $$
 for every $n\ge N_0$. Set
 $$
-C\coloneqq\sum_{n=1}^{N_0-1}|b_n|.
+C\coloneqq\sum_{n=1}^{N_0-1}\abs{b_n}.
 $$
 For $N\ge N_0$,
 $$
 \begin{aligned}
-\left|\frac1N\sum_{n=1}^N b_n\right|
+\abs{\frac1N\sum_{n=1}^N b_n}
 &\le
-\frac1N\sum_{n=1}^{N_0-1}|b_n|
-+\frac1N\sum_{n=N_0}^N|b_n|\\
+\frac1N\sum_{n=1}^{N_0-1}\abs{b_n}
++\frac1N\sum_{n=N_0}^N\abs{b_n}\\
 &\le\frac CN+\frac\varepsilon2.
 \end{aligned}
 $$
@@ -130,7 +130,7 @@ $$
 $$
 Hence
 $$
-\left|\frac1N\sum_{n=1}^N(-1)^n\right|\le\frac1N\to0.
+\abs{\frac1N\sum_{n=1}^N(-1)^n}\le\frac1N\to0.
 $$
 Thus the Cesàro means converge although the original sequence does not.
 

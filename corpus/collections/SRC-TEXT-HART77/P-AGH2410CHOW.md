@@ -79,11 +79,11 @@ be the scheme-theoretic closure of the open immersion
 $$
 V_i\hookrightarrow X.
 $$
-Then $|Y_i|=X_i$, so $Y_i$ is irreducible as a topological space.
+Then $\underlyingspace{Y_i}=X_i$, so $Y_i$ is irreducible as a topological space.
 It is a closed subscheme of the proper $S$-scheme $X$, hence is proper over $S$.
 Moreover
 $$
-Y_i|_{V_i}=V_i
+Y_i\restrict_{V_i}=V_i
 $$
 scheme-theoretically: over the open set $V_i$ the given immersion is already a closed immersion onto all of $V_i$, so its scheme-theoretic image there is $V_i$ itself.
 
@@ -444,7 +444,7 @@ This factor is again a closed immersion.
 
 The restriction
 $$
-h|_{X_i'}:X_i'\longrightarrow P
+h\restrict_{X_i'}:X_i'\longrightarrow P
 $$
 is an immersion for every $i$.
 
@@ -533,7 +533,7 @@ is a closed immersion.
 
 The morphism $U\to P$ is the product of the maps
 $$
-j_i|_U:U\to P_i.
+j_i\restrict_U:U\to P_i.
 $$
 The scheme $P$ is separated over $S$, being projective.  Therefore the graph
 $$

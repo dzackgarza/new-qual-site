@@ -187,7 +187,7 @@ $$
 
 ::: pf-proof
 
-Since $|G|=pqm$ and $p\nmid qm$, a Sylow $p$-subgroup
+Since $\cardinality{G}=pqm$ and $p\nmid qm$, a Sylow $p$-subgroup
 has order $p$. The element $\tau^q$ has order $p$, so
 its subgroup $P$ is Sylow. Conjugation by $\tau$ fixes
 $\tau^q$, and conjugation by $\sigma_b$ sends it to

@@ -124,7 +124,7 @@ The second column of $A$ is
 $$
 \mu k_2,
 $$
-where $k_2$ is the second column of $K$. Since $\lVert k_2\rVert=1$ and $\mu>0$,
+where $k_2$ is the second column of $K$. Since $\norm{ k_2}=1$ and $\mu>0$,
 $$
 \mu=\sqrt{b^2+d^2}=r
 $$

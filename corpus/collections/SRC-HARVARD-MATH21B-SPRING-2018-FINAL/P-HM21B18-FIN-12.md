@@ -17,8 +17,8 @@ On $[-\pi,\pi]$, let
 $$
 f(x)=
 \begin{cases}
-1,&|x|>1,\\
--1,&|x|\le1.
+1,&\abs{x}>1,\\
+-1,&\abs{x}\le1.
 \end{cases}
 $$
 
@@ -168,9 +168,9 @@ For the inner product underlying the stated coefficient normalization,
 Parseval's identity gives
 $$
 a_0^2+\sum_{n=1}^\infty(a_n^2+b_n^2)
-=\frac1\pi\int_{-\pi}^{\pi}|f(x)|^2\,dx.
+=\frac1\pi\int_{-\pi}^{\pi}\abs{f(x)}^2\,dx.
 $$
-Since $|f(x)|=1$ everywhere,
+Since $\abs{f(x)}=1$ everywhere,
 $$
 \frac1\pi\int_{-\pi}^{\pi}1\,dx=2.
 $$

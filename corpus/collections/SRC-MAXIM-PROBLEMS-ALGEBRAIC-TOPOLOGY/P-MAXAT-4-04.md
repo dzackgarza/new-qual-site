@@ -84,7 +84,7 @@ gives
 $$
 H^*(\Omega S^{2n+1};\ZZ)
 \cong\Gamma_{mathbb Z}(y_{2n}),
-\qquad |y_{2n}|=2n.
+\qquad \gradeddegree{y_{2n}}=2n.
 $$
 
 
@@ -202,7 +202,7 @@ The James--Bott--Samelson calculation gives
 $$
 H_*(\Omega S^n;\ZZ)\cong T(\widetilde H_*(S^{n-1};\ZZ))=T(t_{n-1}).
 $$
-The cohomology ring is its graded Hopf dual, whose multiplication is the signed shuffle product. When $n$ is even, $|t|=n-1$ is odd, so the Koszul signs are essential and the ring is not the ordinary divided-power algebra of step [](#s1-7){.pf-ref}.
+The cohomology ring is its graded Hopf dual, whose multiplication is the signed shuffle product. When $n$ is even, $\gradeddegree{t}=n-1$ is odd, so the Koszul signs are essential and the ring is not the ordinary divided-power algebra of step [](#s1-7){.pf-ref}.
 
 :::
 

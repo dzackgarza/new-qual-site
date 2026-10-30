@@ -48,7 +48,7 @@ every coefficient $a_m$ is real.
 
 ::: pf-proof
 Since $g(x)\in\RR$ for real $x$, every real derivative of the restriction
-$g|_{\RR}$ at $0$ is real. Because $g$ is holomorphic, these derivatives
+$g\restrict_{\RR}$ at $0$ is real. Because $g$ is holomorphic, these derivatives
 are the complex derivatives $g^{(m)}(0)$. Hence
 $$
 a_m=\frac{g^{(m)}(0)}{m!}\in\RR

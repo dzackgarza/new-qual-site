@@ -86,13 +86,13 @@ a_{3m+2}=0.
 $$
 For fixed $z\in\CC$, the ratio of successive terms in the first nonzero subseries is
 $$
-\frac{|a_{3m+3}z^{3m+3}|}{|a_{3m}z^{3m}|}
-=\frac{|z|^3}{(3m+3)(3m+2)}\longrightarrow0.
+\frac{\abs{a_{3m+3}z^{3m+3}}}{\abs{a_{3m}z^{3m}}}
+=\frac{\abs{z}^3}{(3m+3)(3m+2)}\longrightarrow0.
 $$
 For the second nonzero subseries,
 $$
-\frac{|a_{3m+4}z^{3m+4}|}{|a_{3m+1}z^{3m+1}|}
-=\frac{|z|^3}{(3m+4)(3m+3)}\longrightarrow0.
+\frac{\abs{a_{3m+4}z^{3m+4}}}{\abs{a_{3m+1}z^{3m+1}}}
+=\frac{\abs{z}^3}{(3m+4)(3m+3)}\longrightarrow0.
 $$
 Thus both subseries converge absolutely for every $z$, and the third subseries is zero.
 Hence the full series has infinite radius of convergence and defines an entire function.

@@ -183,7 +183,7 @@ $$
 be absolutely convergent with sum $S$, and let $\sigma:\NN\to\NN$ be a bijection.
 Fix $\varepsilon>0$. Choose $N$ such that
 $$
-\sum_{n>N}|a_n|<\varepsilon.
+\sum_{n>N}\abs{a_n}<\varepsilon.
 $$
 Since $\sigma$ is onto, there is $M$ such that
 $$
@@ -197,7 +197,7 @@ $$
 $$
 and $S$ consists only of terms $a_n$ with $n>N$, some included and some omitted. Therefore its absolute value is bounded by
 $$
-\sum_{n>N}|a_n|<\varepsilon.
+\sum_{n>N}\abs{a_n}<\varepsilon.
 $$
 Hence the rearranged partial sums converge to $S$.
 

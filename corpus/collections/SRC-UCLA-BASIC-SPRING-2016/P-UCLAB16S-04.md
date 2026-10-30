@@ -92,9 +92,9 @@ $$
 $$
 one has
 $$
-\|K\varphi-K\psi\|_\infty
+\norm{K\varphi-K\psi}_\infty
 \le
-q\|\varphi-\psi\|_\infty.
+q\norm{\varphi-\psi}_\infty.
 $$
 
 
@@ -106,19 +106,19 @@ x\in[0,1],
 $$
 $$
 \begin{aligned}
-|(K\varphi)(x)-(K\psi)(x)|
+\abs{(K\varphi)(x)-(K\psi)(x)}
 &=
-\left|
+\abs{
 \int_0^x
 \beta(t)(\varphi(t)-\psi(t))
 \,dt
-\right|\\
+}\\
 &\le
 \int_0^x
-q\|\varphi-\psi\|_\infty
+q\norm{\varphi-\psi}_\infty
 \,dt\\
 &\le
-q\|\varphi-\psi\|_\infty.
+q\norm{\varphi-\psi}_\infty.
 \end{aligned}
 $$
 Take the supremum over $x$.
@@ -151,9 +151,9 @@ $$
 is complete in the uniform norm.
 Step [](#s1-2){.pf-ref} gives
 $$
-\|\mathcal T(\varphi)-\mathcal T(\psi)\|_\infty
+\norm{\mathcal T(\varphi)-\mathcal T(\psi)}_\infty
 \le
-q\|\varphi-\psi\|_\infty
+q\norm{\varphi-\psi}_\infty
 $$
 with
 $$

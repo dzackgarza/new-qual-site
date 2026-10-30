@@ -51,24 +51,24 @@ Put $P(w)=3w^2/2+2w+3/2$. For $w=e^{i\theta}$,
 $$
 P(w)=(2+3\cos\theta)e^{i\theta}=\gamma(\theta).
 $$
-The parameter $w$ runs twice counterclockwise around $|w|=1$.
+The parameter $w$ runs twice counterclockwise around $\abs{w}=1$.
 Consequently, for a point $a$ off the curve, substitution
 in the index integral and the argument principle give
 $$
 \operatorname{Ind}(\gamma,a)
-=2\frac1{2\pi i}\int_{|w|=1}\frac{P'(w)}{P(w)-a}\,dw
+=2\frac1{2\pi i}\int_{\abs{w}=1}\frac{P'(w)}{P(w)-a}\,dw
 =2N_a,
 $$
-where $N_a$ is the number of zeros of $P-a$ in $|w|<1$,
+where $N_a$ is the number of zeros of $P-a$ in $\abs{w}<1$,
 counted with multiplicity [@SS03].
 
 For $a=1/2$ the two roots are $(-2\pm i\sqrt2)/3$,
 of modulus $\sqrt6/3<1$. For $a=2$ the roots are
 $(-2\pm\sqrt7)/3$; the plus root has modulus less than
 one and the minus root has modulus greater than one,
-since $2<\sqrt7<3$. Finally, on $|w|=1$,
+since $2<\sqrt7<3$. Finally, on $\abs{w}=1$,
 $$
-|3w^2/2+2w|\leq7/2<\sqrt{109}/2=|3/2+5i|.
+\abs{3w^2/2+2w}\leq7/2<\sqrt{109}/2=\abs{3/2+5i}.
 $$
 Rouché's theorem compares $P+5i$ with the nonzero constant
 $3/2+5i$, giving no zeros in the disk [@SS03]. These
@@ -91,7 +91,7 @@ The only possible poles of $f$ are $1/2$, $2$, and $-5i$.
 At the first two, the residues are
 $$
 \operatorname{Res}_{1/2}f=e^{1/2}/2,
-\qquad \operatorname{Res}_{2}f=(\sin(2z))'|_{z=2}=2\cos4.
+\qquad \operatorname{Res}_{2}f=(\sin(2z))'\evalfrom_{z=2}=2\cos4.
 $$
 The other summands are holomorphic at each respective point.
 The third residue is multiplied by index zero, so contributes

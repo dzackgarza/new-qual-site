@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-09
 kind: problem
-title: Entire functions with $|f|=1$ on the unit circle are monomials
+title: Entire functions with $\abs{f}=1$ on the unit circle are monomials
 classification:
   areas:
   - real-analysis
@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\CC\to\CC$ be entire and assume that $|f(z)|=1$ when $|z|=1$. Show that
+Let $f:\CC\to\CC$ be entire and assume that $\abs{f(z)}=1$ when $\abs{z}=1$. Show that
 $$
 f(z)=Cz^m
 $$
-for some integer $m\ge0$ and $C\in\CC$ with $|C|=1$.
+for some integer $m\ge0$ and $C\in\CC$ with $\abs{C}=1$.
 :::
 
 ::: {.solution}
@@ -41,23 +41,23 @@ If $f$ has no zeros in $\DD$, take $N=0$ and $B\equiv1$.
 
 The function $B$ is holomorphic on a neighborhood of $\overline{\DD}$, has exactly the same zeros as $f$ in $\DD$ with the same multiplicities, and satisfies
 $$
-|B(z)|=1
+\abs{B(z)}=1
 \qquad
-(|z|=1).
+(\abs{z}=1).
 $$
 
 
 ::: pf-proof
 
-Because $|f|=1$ on the unit circle, $f$ has no zeros there. Zeros of a nonzero holomorphic function are isolated, so compactness of $\overline{\DD}$ implies that there are only finitely many zeros in $\DD$.
+Because $\abs{f}=1$ on the unit circle, $f$ has no zeros there. Zeros of a nonzero holomorphic function are isolated, so compactness of $\overline{\DD}$ implies that there are only finitely many zeros in $\DD$.
 
-For $|a_j|<1$, the denominator $1-\overline{a_j}z$ has its only zero at $1/\overline{a_j}$, whose modulus is greater than $1$. Thus every factor is holomorphic on a neighborhood of $\overline{\DD}$. For $|z|=1$,
+For $\abs{a_j}<1$, the denominator $1-\overline{a_j}z$ has its only zero at $1/\overline{a_j}$, whose modulus is greater than $1$. Thus every factor is holomorphic on a neighborhood of $\overline{\DD}$. For $\abs{z}=1$,
 $$
-|z-a_j|
+\abs{z-a_j}
 =
-|z|\,|1-\overline{z}a_j|
+\abs{z}\,\abs{1-\overline{z}a_j}
 =
-|1-\overline{a_j}z|,
+\abs{1-\overline{a_j}z},
 $$
 so each factor has modulus $1$ on the unit circle. The assertion about zeros is immediate from the numerators.
 
@@ -73,9 +73,9 @@ h\coloneqq\frac{f}{B}
 $$
 extends to a holomorphic nonvanishing function on $\DD$ and satisfies
 $$
-|h(z)|=1
+\abs{h(z)}=1
 \qquad
-(|z|=1).
+(\abs{z}=1).
 $$
 
 
@@ -83,9 +83,9 @@ $$
 
 By step [](#s1-1){.pf-ref}, $f$ and $B$ have the same zeros in $\DD$ with the same multiplicities, so all apparent singularities of $f/B$ are removable and the extension has no zeros. On the unit circle, step [](#s1-1){.pf-ref} and the hypothesis give
 $$
-|h(z)|
+\abs{h(z)}
 =
-\frac{|f(z)|}{|B(z)|}
+\frac{\abs{f(z)}}{\abs{B(z)}}
 =1.
 $$
 
@@ -95,7 +95,7 @@ $$
 
 ::: {.pf-step #s1-3}
 
-There is a constant $C\in\CC$ with $|C|=1$ such that
+There is a constant $C\in\CC$ with $\abs{C}=1$ such that
 $$
 f(z)=C B(z)
 \qquad
@@ -107,15 +107,15 @@ $$
 
 By the maximum-modulus principle applied to $h$,
 $$
-|h(z)|\le1
+\abs{h(z)}\le1
 \qquad
 (z\in\DD).
 $$
 Since $h$ is nonvanishing, $1/h$ is holomorphic on $\DD$ and also has boundary modulus $1$. Applying the maximum-modulus principle to $1/h$ gives
 $$
-|h(z)|\ge1.
+\abs{h(z)}\ge1.
 $$
-Hence $|h|\equiv1$ on $\DD$. By the open mapping theorem, a nonconstant holomorphic function has open image, whereas the unit circle has empty interior. Thus $h$ is constant, say $h\equiv C$, with $|C|=1$.
+Hence $\abs{h}\equiv1$ on $\DD$. By the open mapping theorem, a nonconstant holomorphic function has open image, whereas the unit circle has empty interior. Thus $h$ is constant, say $h\equiv C$, with $\abs{C}=1$.
 
 :::
 
@@ -134,9 +134,9 @@ p_j
 \coloneqq
 \frac1{\overline{a_j}},
 \qquad
-|p_j|>1.
+\abs{p_j}>1.
 $$
-No numerator factor vanishes at $p_j$, because every numerator zero $a_k$ lies in $\DD$ while $|p_j|>1$. Hence $B$ has a genuine pole at $p_j$.
+No numerator factor vanishes at $p_j$, because every numerator zero $a_k$ lies in $\DD$ while $\abs{p_j}>1$. Hence $B$ has a genuine pole at $p_j$.
 
 On the connected domain obtained from $\CC$ by deleting the finitely many poles of $B$, both $f$ and $CB$ are holomorphic and agree on the nonempty open set $\DD$ by step [](#s1-3){.pf-ref}. The identity theorem therefore gives
 $$
@@ -156,7 +156,7 @@ $$
 \qquad
 (z\in\CC),
 $$
-with $|C|=1$.
+with $\abs{C}=1$.
 
 
 ::: pf-proof

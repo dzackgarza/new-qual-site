@@ -43,10 +43,10 @@ Since $\Omega$ is connected and $f\not\equiv0$, $U = \emptyset$.
 If $f(a) = 0$, then $f$ is nonzero on a punctured disk about $a$.
 
 ::: pf-proof
-By step [](#open-closed){.pf-ref}, let $m\ge1$ be minimal with $c_m \definedas f^{(m)}(a)/m! \neq 0$.
+By step [](#open-closed){.pf-ref}, let $m\ge1$ be minimal with $c_m \coloneqq f^{(m)}(a)/m! \neq 0$.
 On a disk $\abs{z-a}<r$ in $\Omega$,
 $$
-f(z) = \sum_{k\geq m} c_k (z-a)^k = (z-a)^m g(z), \qquad g(z) \definedas \sum_{k\ge m}c_k(z-a)^{k-m},
+f(z) = \sum_{k\geq m} c_k (z-a)^k = (z-a)^m g(z), \qquad g(z) \coloneqq \sum_{k\ge m}c_k(z-a)^{k-m},
 $$
 with $g$ holomorphic and $g(a) = c_m\neq0$.
 By continuity $g\neq0$ on a smaller disk about $a$, and there $f(z)\neq0$ for $z\neq a$.

@@ -56,9 +56,9 @@ so $f_0$ is holomorphic [@SS03]. Since it is nonconstant
 on connected $U$, its zeros are isolated. If it had
 distinct zeros $a,b$, choose disjoint closed disks around
 them contained in $U$, with no zero of $f_0$ on either
-boundary. The minimum of $|f_0|$ on the two boundaries
+boundary. The minimum of $\abs{f_0}$ on the two boundaries
 is positive. For sufficiently large $n$, uniform convergence
-gives $|f_n-f_0|<|f_0|$ on both circles.
+gives $\abs{f_n-f_0}<\abs{f_0}$ on both circles.
 
 Rouché's theorem then gives at least one zero of $f_n$
 in each disk, since $f_0$ has one in each [@SS03]. The
@@ -80,7 +80,7 @@ the closed disk $\overline{D(a,r)}$ lies in $U$ and
 $f_0$ has no zero on its boundary. As in step [](#s1){.pf-ref},
 Rouché's theorem shows that $f_n$ has a zero inside
 this disk for all sufficiently large $n$. Its only
-zero is $c_n$, so $|c_n-a|<r$ eventually. Such radii
+zero is $c_n$, so $\abs{c_n-a}<r$ eventually. Such radii
 can be chosen arbitrarily small; hence the entire
 sequence $c_n$ converges to $a$.
 
@@ -98,8 +98,8 @@ Suppose $c_{n_k}\to a\in U$. Choose a fixed compact
 disk $K\subset U$ about $a$; it contains $c_{n_k}$
 for all sufficiently large $k$. Since $f_{n_k}(c_{n_k})=0$,
 $$
-|f_0(a)|\leq |f_0(a)-f_0(c_{n_k})|
-+\sup_{z\in K}|f_0(z)-f_{n_k}(z)|\longrightarrow0.
+\abs{f_0(a)}\leq \abs{f_0(a)-f_0(c_{n_k})}
++\sup_{z\in K}\abs{f_0(z)-f_{n_k}(z)}\longrightarrow0.
 $$
 The first term tends to zero by continuity of the fixed
 function $f_0$, and the second by compact-uniform convergence.
@@ -124,13 +124,13 @@ A nonconstant zero-free limit is possible under the stated uniform convergence.
 
 ::: pf-proof
 
-Take $U=D=\{|z|<1\}$ and
+Take $U=D=\{\abs{z}<1\}$ and
 $$
 c_n=1-\frac1{n+1},\qquad f_n(z)=z-c_n,
 \qquad f_0(z)=z-1.
 $$
 Each $f_n$ has exactly the one zero $c_n\in D$, and
-$\sup_{z\in D}|f_n(z)-f_0(z)|=1/(n+1)\to0$.
+$\sup_{z\in D}\abs{f_n(z)-f_0(z)}=1/(n+1)\to0$.
 The limit $f_0$ is nonconstant and has no zero in $D$;
 its only zero is the boundary point one. This supplies
 the example required in (b) and verifies the criterion.

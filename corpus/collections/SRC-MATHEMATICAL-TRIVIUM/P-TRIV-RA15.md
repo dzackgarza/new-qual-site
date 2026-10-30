@@ -73,7 +73,7 @@ $$
 =
 \int\frac{du}{u}
 =
-\boxed{\log|\sin x|+C}.
+\boxed{\log\abs{\sin x}+C}.
 $$
 
 
@@ -81,7 +81,7 @@ $$
 
 Use steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} and the antiderivative
 $$
-\int\frac{du}{u}=\log|u|+C.
+\int\frac{du}{u}=\log\abs{u}+C.
 $$
 
 :::

@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that, for any $\varepsilon > 0$ , the function $\begin{array} { r } { f ( z ) = \sin { z } + \frac { 1 } { z + i } } \end{array}$ has infinitely many zeros in the strip $| \operatorname { I m } z | < \varepsilon$
+Prove that, for any $\varepsilon > 0$ , the function $\begin{array} { r } { f ( z ) = \sin { z } + \frac { 1 } { z + i } } \end{array}$ has infinitely many zeros in the strip $\abs{ \operatorname { I m } z } < \varepsilon$
 :::
 
 ::: {.solution}
@@ -37,9 +37,9 @@ $$
 $$
 For each positive integer $n$, let
 $$
-C_n\coloneqq\{z\in\CC:|z-2\pi n|=\rho\},
+C_n\coloneqq\{z\in\CC:\abs{z-2\pi n}=\rho\},
 \qquad
-D_n\coloneqq\{z\in\CC:|z-2\pi n|<\rho\}.
+D_n\coloneqq\{z\in\CC:\abs{z-2\pi n}<\rho\}.
 $$
 
 ::: pf
@@ -48,26 +48,26 @@ $$
 
 There is a constant $m_\rho>0$ such that
 $$
-|\sin z|\geq m_\rho
+\abs{\sin z}\geq m_\rho
 $$
 for every $z\in C_n$ and every $n$.
 
 ::: pf-proof
 
-The circle $|w|=\rho$ contains no zero of $\sin w$, because the zeros
+The circle $\abs{w}=\rho$ contains no zero of $\sin w$, because the zeros
 of sine are the integer multiples of $\pi$ and $0<\rho<\pi$.
 Hence compactness gives
 $$
 m_\rho
 \coloneqq
-\min_{|w|=\rho}|\sin w|
+\min_{\abs{w}=\rho}\abs{\sin w}
 >0.
 $$
 Since sine has period $2\pi$,
 $$
-|\sin z|
+\abs{\sin z}
 =
-|\sin(z-2\pi n)|
+\abs{\sin(z-2\pi n)}
 \geq m_\rho
 $$
 on $C_n$.
@@ -80,7 +80,7 @@ on $C_n$.
 
 For all sufficiently large $n$,
 $$
-\left|\frac1{z+i}\right|<m_\rho
+\abs{\frac1{z+i}}<m_\rho
 $$
 for every $z\in C_n$, and the closed disk bounded by $C_n$ does not
 contain the pole $-i$.
@@ -89,7 +89,7 @@ contain the pole $-i$.
 
 For $z\in C_n$,
 $$
-|z+i|
+\abs{z+i}
 \geq
 2\pi n-\rho-1.
 $$
@@ -97,9 +97,9 @@ The right-hand side tends to infinity with $n$. Thus for all
 sufficiently large $n$ it exceeds $1/m_\rho$, which gives the
 required inequality. Also
 $$
-|2\pi n-(-i)|
+\abs{2\pi n-(-i)}
 =
-|2\pi n+i|
+\abs{2\pi n+i}
 >2\pi n
 >\rho,
 $$
@@ -122,9 +122,9 @@ has exactly one zero in $D_n$, counted with multiplicity.
 For such $n$, both $\sin z$ and $1/(z+i)$ are holomorphic on a
 neighborhood of $\overline{D_n}$. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
-\left|\frac1{z+i}\right|
+\abs{\frac1{z+i}}
 <
-|\sin z|
+\abs{\sin z}
 $$
 on $C_n$. By Rouché's theorem, $f$ and $\sin z$ have the same number
 of zeros in $D_n$.
@@ -141,15 +141,15 @@ $2\pi n$. Hence $f$ has exactly one zero there.
 These zeros give infinitely many distinct zeros of $f$ in the
 strip
 $$
-|\operatorname{Im}z|<\varepsilon.
+\abs{\operatorname{Im}z}<\varepsilon.
 $$
 
 ::: pf-proof
 
 If $z\in D_n$, then
 $$
-|\operatorname{Im}z|
-\leq|z-2\pi n|
+\abs{\operatorname{Im}z}
+\leq\abs{z-2\pi n}
 <\rho
 <\varepsilon,
 $$

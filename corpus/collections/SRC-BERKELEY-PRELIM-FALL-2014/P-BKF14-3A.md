@@ -39,7 +39,7 @@ Suppose that $f$ is a twice-differentiable real-valued function on the real line
 
 For all $x,y\in\RR$,
 $$
-|f'(x)-f'(y)|\le|x-y|.
+\abs{f'(x)-f'(y)}\le\abs{x-y}.
 $$
 
 ::: pf-proof
@@ -49,7 +49,7 @@ $c$ between $x$ and $y$ such that
 $$
 f'(x)-f'(y)=f''(c)(x-y).
 $$
-Since $|f''(c)|\le1$, the claimed estimate follows. The case $x=y$ is
+Since $\abs{f''(c)}\le1$, the claimed estimate follows. The case $x=y$ is
 immediate.
 
 :::
@@ -58,10 +58,10 @@ immediate.
 
 ::: {.pf-step #s2}
 
-Fix $x_0\in\RR$ and put $M\coloneqq|f'(x_0)|$. After replacing
+Fix $x_0\in\RR$ and put $M\coloneqq\abs{f'(x_0)}$. After replacing
 $f$ by $-f$ if necessary, one may assume $f'(x_0)=M\ge0$, and then
 $$
-f'(x_0+t)\ge M-|t|
+f'(x_0+t)\ge M-\abs{t}
 \qquad
 (-M\le t\le M).
 $$
@@ -69,14 +69,14 @@ $$
 ::: pf-proof
 
 Replacing $f$ by $-f$ preserves the hypotheses and the value of
-$|f'(x_0)|$. Under the resulting assumption $f'(x_0)=M$, step [](#s1){.pf-ref}
+$\abs{f'(x_0)}$. Under the resulting assumption $f'(x_0)=M$, step [](#s1){.pf-ref}
 gives
 $$
 f'(x_0+t)
 \ge
-f'(x_0)-|t|
+f'(x_0)-\abs{t}
 =
-M-|t|.
+M-\abs{t}.
 $$
 
 :::
@@ -100,12 +100,12 @@ f(x_0+M)-f(x_0-M)
 &=
 \int_{-M}^{M}f'(x_0+t)\,dt\\
 &\ge
-\int_{-M}^{M}(M-|t|)\,dt\\
+\int_{-M}^{M}(M-\abs{t})\,dt\\
 &=
 M^2.
 \end{aligned}
 $$
-On the other hand, $|f|\le1$, so
+On the other hand, $\abs{f}\le1$, so
 $$
 f(x_0+M)-f(x_0-M)\le2.
 $$
@@ -128,7 +128,7 @@ Suppose instead that $M^2=2$. Then every inequality in step [](#s3){.pf-ref} mus
 be an equality. In particular, the continuous nonnegative function
 $$
 q(t)\coloneqq
-f'(x_0+t)-(M-|t|)
+f'(x_0+t)-(M-\abs{t})
 $$
 has integral $0$ on $[-M,M]$, so $q(t)=0$ throughout that interval.
 Hence
@@ -159,9 +159,9 @@ works.
 
 The point $x_0$ was arbitrary. By step [](#s4){.pf-ref},
 $$
-|f'(x_0)|^2=M^2<2,
+\abs{f'(x_0)}^2=M^2<2,
 $$
-and therefore $|f'(x_0)|<\sqrt2$ for every $x_0\in\RR$.
+and therefore $\abs{f'(x_0)}<\sqrt2$ for every $x_0\in\RR$.
 
 :::
 

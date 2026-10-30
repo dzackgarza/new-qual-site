@@ -30,7 +30,7 @@ Show that under either of the following two conditions, $R$ is local:
 :::
 
 ::: {.solution}
-Let $N \definedas R\sm \units{R}$ be the set of nonunits of $R$.
+Let $N \coloneqq R\sm \units{R}$ be the set of nonunits of $R$.
 
 ::: pf
 

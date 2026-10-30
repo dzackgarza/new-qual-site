@@ -19,7 +19,7 @@ Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontriv
 :::
 
 ::: {.solution}
-Let $|G|=p^2q$, and let $n_p,n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
+Let $\cardinality{G}=p^2q$, and let $n_p,n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
 
 ::: pf
 
@@ -29,7 +29,7 @@ If $p=q$, then $G$ has a proper nontrivial normal subgroup.
 
 ::: pf-proof
 
-$|G|=p^3$, so $Z(G)\neq1$ by the class equation.
+$\cardinality{G}=p^3$, so $Z(G)\neq1$ by the class equation.
 If $Z(G)\neq G$, it is the required subgroup; if $G$ is abelian, every subgroup of order $p$ (which exists by Cauchy's theorem) is normal.
 
 :::

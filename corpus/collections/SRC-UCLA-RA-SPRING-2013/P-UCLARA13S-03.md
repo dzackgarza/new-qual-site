@@ -25,7 +25,7 @@ Mf(x,y)=\sup_{0<r<1} A_r f(x,y).
 $$
 By a theorem of Bourgain, there is an absolute constant $C$ such that
 $$
-\|Mf\|_{L^3(\RR^2)}\le C\|f\|_{L^3(\RR^2)}
+\norm{Mf}_{L^3(\RR^2)}\le C\norm{f}_{L^3(\RR^2)}
 $$
 for all $f\in C_c(\RR^2)$.
 Use this to show that if $K\subset\RR^2$ is compact, then
@@ -94,16 +94,16 @@ $$
 \begin{aligned}
 m(\{Mf_k>t\})
 &\le
-t^{-3}\|Mf_k\|_3^3\\
+t^{-3}\norm{Mf_k}_3^3\\
 &\le
-C^3t^{-3}\|f_k\|_3^3.
+C^3t^{-3}\norm{f_k}_3^3.
 \end{aligned}
 $$
 Because $0\le f_k\le\chi_S$,
 $$
-\|f_k\|_3^3
+\norm{f_k}_3^3
 =
-\int_{\RR^2}|f_k|^3
+\int_{\RR^2}\abs{f_k}^3
 \le
 m(S).
 $$
@@ -186,7 +186,7 @@ E_n
 \left\{
 x\in K:
 \limsup_{r\downarrow0}
-|A_r\chi_K(x)-1|
+\abs{A_r\chi_K(x)-1}
 >
 \frac1n
 \right\}.
@@ -231,7 +231,7 @@ $$
 For every $x\in K$,
 $$
 \limsup_{r\downarrow0}
-|A_r\chi_K(x)-1|
+\abs{A_r\chi_K(x)-1}
 \le
 M\chi_{U\setminus K}(x).
 $$
@@ -256,9 +256,9 @@ $$
 one obtains
 $$
 \begin{aligned}
-|A_r\chi_K(x)-1|
+\abs{A_r\chi_K(x)-1}
 &=
-|A_r\chi_K(x)-A_r\chi_U(x)|\\
+\abs{A_r\chi_K(x)-A_r\chi_U(x)}\\
 &=
 A_r\chi_{U\setminus K}(x)\\
 &\le
@@ -342,14 +342,14 @@ has outer measure zero.
 If $x\in K\setminus E$, then
 $$
 \limsup_{r\downarrow0}
-|A_r\chi_K(x)-1|
+\abs{A_r\chi_K(x)-1}
 \le
 \frac1n
 $$
 for every $n$. Therefore
 $$
 \limsup_{r\downarrow0}
-|A_r\chi_K(x)-1|
+\abs{A_r\chi_K(x)-1}
 =0,
 $$
 which is equivalent to

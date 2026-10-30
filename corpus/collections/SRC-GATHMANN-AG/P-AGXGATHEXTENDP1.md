@@ -157,7 +157,7 @@ $$
 is closed. It contains a dense open subset, hence it is all of $U_1$.
 Therefore
 $$
-\hat f|_{U_1}=f.
+\hat f\restrict_{U_1}=f.
 $$
 
 If $f$ is constant, the corresponding constant map on $\AA^1$ is already
@@ -218,7 +218,7 @@ $$
 $$
 As in step [](#extension-restricts-correctly){.pf-ref}, separatedness of $\PP^1$ implies that
 $$
-F|_{L_x}
+F\restrict_{L_x}
 $$
 is the constant map with value $[1:0]$. In particular,
 $$

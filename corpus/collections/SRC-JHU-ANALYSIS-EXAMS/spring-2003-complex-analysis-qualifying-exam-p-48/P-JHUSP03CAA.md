@@ -33,12 +33,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\CC:|z|<1\}$.
+Let $\Delta=\{z\in\CC:\abs{z}<1\}$.
 
 (a) Let $f : \CC \to \CC$ be meromorphic with a pole at infinity.
 Show that $f$ must be a rational function.
 
-(b) Use the above to prove the following: if $f : \Delta \to \CC$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $|f(z)| = 1$ for all $|z| = 1$, then $f(z)$ is the restriction of a rational function.
+(b) Use the above to prove the following: if $f : \Delta \to \CC$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $\abs{f(z)} = 1$ for all $\abs{z} = 1$, then $f(z)$ is the restriction of a rational function.
 :::
 
 ::: {.solution}
@@ -53,10 +53,10 @@ A meromorphic function on the sphere is rational; in particular, part (a) holds.
 
 Suppose $f$ is meromorphic on $\CC$ and has either
 a pole or a removable singularity at infinity. Then it
-has no finite pole for $|z|>R$, for some $R>0$. Its
+has no finite pole for $\abs{z}>R$, for some $R>0$. Its
 finite poles form a locally finite set: the local
 meromorphic factorization at any point gives a neighborhood
-with at most one pole. Compactness of $|z|\leq R$ therefore
+with at most one pole. Compactness of $\abs{z}\leq R$ therefore
 makes the list of poles finite, say $a_1,\ldots,a_m$.
 
 Let the principal part at $a_j$ be
@@ -96,7 +96,7 @@ The boundary condition in part (b) produces a meromorphic function on the sphere
 
 ::: pf-proof
 
-Let $f$ be as in part (b). Define for $|z|>1$
+Let $f$ be as in part (b). Define for $\abs{z}>1$
 $$
 F(z)=\frac{1}{\overline{f(1/\overline z)}}.
 $$
@@ -106,16 +106,16 @@ f^*(w)=\overline{f(\overline w)}
 $$
 is holomorphic on the unit disk: conjugating the Taylor
 coefficients of $f$ gives its Taylor series. Thus on
-$|z|>1$, the expression $F(z)=1/f^*(1/z)$ is meromorphic.
+$\abs{z}>1$, the expression $F(z)=1/f^*(1/z)$ is meromorphic.
 The boundary modulus excludes $f\equiv0$.
 
 Uniform continuity of $f$ on $\overline\Delta$ gives
-$0<\eta<1/2$ such that $|f(z)|>1/2$ whenever
-$1-\eta<|z|\leq1$: compare $f(z)$ to the unit-modulus
-value $f(z/|z|)$. The reflected expression consequently
-has no pole for $1<|z|<1/(1-\eta)$.
+$0<\eta<1/2$ such that $\abs{f(z)}>1/2$ whenever
+$1-\eta<\abs{z}\leq1$: compare $f(z)$ to the unit-modulus
+value $f(z/\abs{z})$. The reflected expression consequently
+has no pole for $1<\abs{z}<1/(1-\eta)$.
 
-On $|z|=1$, one has $1/\overline z=z$, and the boundary hypothesis gives
+On $\abs{z}=1$, one has $1/\overline z=z$, and the boundary hypothesis gives
 $$
 \frac1{\overline{f(z)}}=f(z).
 $$
@@ -130,17 +130,17 @@ $$
 These inverse holomorphic maps take $p$ to zero and the
 unit circle locally to the real axis. Indeed,
 $$
-1-\left|\frac{i-w}{i+w}\right|^2
-=\frac{4\operatorname{Im}w}{|i+w|^2},
+1-\abs{\frac{i-w}{i+w}}^2
+=\frac{4\operatorname{Im}w}{\abs{i+w}^2},
 $$
 so the upper and lower sides correspond to the inside
 and outside of the circle. Choose $\varepsilon>0$ so
-the inverse maps $|w|<\varepsilon$ into the pole-free
+the inverse maps $\abs{w}<\varepsilon$ into the pole-free
 collar just established. The pullback
 $K(w)=F(p(i-w)/(i+w))$ is continuous there and holomorphic
 off the real axis.
 
-For any closed triangle contained in $|w|<\varepsilon$,
+For any closed triangle contained in $\abs{w}<\varepsilon$,
 cut it along the real axis into at most two polygons.
 Translate its upper piece by $i\delta$ and its lower
 piece by $-i\delta$. For sufficiently small $\delta>0$
@@ -149,9 +149,9 @@ in the respective open half-planes, so their boundary
 integrals of $K$ are zero by Cauchy's theorem [@SS03].
 For either piece $P$,
 $$
-\left|\int_{\partial P}(K(w\pm i\delta)-K(w))\,dw\right|
+\abs{\int_{\partial P}(K(w\pm i\delta)-K(w))\,dw}
 \leq\operatorname{length}(\partial P)
-\sup_{w\in\partial P}|K(w\pm i\delta)-K(w)|\longrightarrow0.
+\sup_{w\in\partial P}\abs{K(w\pm i\delta)-K(w)}\longrightarrow0.
 $$
 The limit follows from uniform continuity on a compact
 neighborhood of the triangle. Degenerate pieces have

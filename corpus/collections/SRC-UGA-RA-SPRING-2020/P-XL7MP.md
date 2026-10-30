@@ -37,7 +37,7 @@ $$
 $$
 Prove that if $f \in L^1([0, 1])$ and $(\hat{f}(n))_{n \in \ZZ} \in \ell^1(\ZZ)$, then the partial sums
 $$
-S_N f(x) = \sum_{|n| \le N} \hat{f}(n) e^{2\pi i n x}
+S_N f(x) = \sum_{\abs{n} \le N} \hat{f}(n) e^{2\pi i n x}
 $$
 converge uniformly on $[0, 1]$ to a continuous function $g$ such that $g(x) = f(x)$ almost everywhere.
 :::
@@ -61,13 +61,13 @@ Let $f \in L^2([0, 1])$.
 :::
 
 ::: pf-step
-Apply Cauchy–Schwarz (Hölder's inequality with $p = q = 2$) to $|f|$ and the constant function $1 \in L^2([0, 1])$:
-$$\|f\|_{L^1} = \int_0^1 |f(x)| \cdot 1 \, dx \le \left( \int_0^1 |f(x)|^2 \, dx \right)^{1/2} \left( \int_0^1 1^2 \, dx \right)^{1/2} = \|f\|_{L^2} \cdot 1.$$
+Apply Cauchy–Schwarz (Hölder's inequality with $p = q = 2$) to $\abs{f}$ and the constant function $1 \in L^2([0, 1])$:
+$$\norm{f}_{L^1} = \int_0^1 \abs{f(x)} \cdot 1 \, dx \le \left( \int_0^1 \abs{f(x)}^2 \, dx \right)^{1/2} \left( \int_0^1 1^2 \, dx \right)^{1/2} = \norm{f}_{L^2} \cdot 1.$$
 
 :::
 
 ::: pf-step
-Since $\|f\|_{L^2} < \infty$, $\|f\|_{L^1} < \infty$, so $f \in L^1([0, 1])$.
+Since $\norm{f}_{L^2} < \infty$, $\norm{f}_{L^1} < \infty$, so $f \in L^1([0, 1])$.
 
 :::
 
@@ -81,18 +81,18 @@ Part (a): $\ell^1(\ZZ) \subseteq \ell^2(\ZZ)$.
 ::: pf-proof
 
 ::: pf-step
-Let $c = (c_n)_{n \in \ZZ} \in \ell^1(\ZZ)$, so $\sum_{n \in \ZZ} |c_n| < \infty$.
+Let $c = (c_n)_{n \in \ZZ} \in \ell^1(\ZZ)$, so $\sum_{n \in \ZZ} \abs{c_n} < \infty$.
 
 :::
 
 ::: pf-step
-The convergence of the series implies $\|c\|_{\ell^\infty} = \sup_{n \in \ZZ} |c_n| \le \sum_{n \in \ZZ} |c_n| = \|c\|_{\ell^1} < \infty$.
+The convergence of the series implies $\norm{c}_{\ell^\infty} = \sup_{n \in \ZZ} \abs{c_n} \le \sum_{n \in \ZZ} \abs{c_n} = \norm{c}_{\ell^1} < \infty$.
 
 :::
 
 ::: pf-step
 Estimate the $\ell^2$ norm:
-$$\|c\|_{\ell^2}^2 = \sum_{n \in \ZZ} |c_n|^2 = \sum_{n \in \ZZ} |c_n| \cdot |c_n| \le \|c\|_{\ell^\infty} \sum_{n \in \ZZ} |c_n| = \|c\|_{\ell^\infty} \|c\|_{\ell^1} \le \|c\|_{\ell^1}^2 < \infty.$$
+$$\norm{c}_{\ell^2}^2 = \sum_{n \in \ZZ} \abs{c_n}^2 = \sum_{n \in \ZZ} \abs{c_n} \cdot \abs{c_n} \le \norm{c}_{\ell^\infty} \sum_{n \in \ZZ} \abs{c_n} = \norm{c}_{\ell^\infty} \norm{c}_{\ell^1} \le \norm{c}_{\ell^1}^2 < \infty.$$
 
 :::
 
@@ -117,12 +117,12 @@ For each $n \in \ZZ$, define the continuous function $u_n(x) = \hat{f}(n) e^{2\p
 
 ::: pf-step
 For all $x \in [0, 1]$:
-$$|u_n(x)| = |\hat{f}(n)| \cdot |e^{2\pi i n x}| = |\hat{f}(n)| =: M_n.$$
+$$\abs{u_n(x)} = \abs{\hat{f}(n)} \cdot \abs{e^{2\pi i n x}} = \abs{\hat{f}(n)} =: M_n.$$
 
 :::
 
 ::: pf-step
-By hypothesis, $\sum_{n \in \ZZ} M_n = \sum_{n \in \ZZ} |\hat{f}(n)| = \|\hat{f}\|_{\ell^1} < \infty$.
+By hypothesis, $\sum_{n \in \ZZ} M_n = \sum_{n \in \ZZ} \abs{\hat{f}(n)} = \norm{\hat{f}}_{\ell^1} < \infty$.
 
 :::
 
@@ -152,13 +152,13 @@ Since $S_N f \to g$ uniformly on $[0, 1]$, we can interchange summation and inte
 
 ::: pf-step
 For any $k \in \ZZ$:
-$$\hat{g}(k) = \int_0^1 g(x) e^{-2\pi i k x} \, dx = \lim_{N \to \infty} \int_0^1 \left( \sum_{|n| \le N} \hat{f}(n) e^{2\pi i n x} \right) e^{-2\pi i k x} \, dx.$$
+$$\hat{g}(k) = \int_0^1 g(x) e^{-2\pi i k x} \, dx = \lim_{N \to \infty} \int_0^1 \left( \sum_{\abs{n} \le N} \hat{f}(n) e^{2\pi i n x} \right) e^{-2\pi i k x} \, dx.$$
 
 :::
 
 ::: pf-step
 By orthogonality of the complex exponentials on $[0, 1]$ ($\int_0^1 e^{2\pi i (n - k) x} \, dx = \delta_{n k}$):
-$$\int_0^1 \left( \sum_{|n| \le N} \hat{f}(n) e^{2\pi i n x} \right) e^{-2\pi i k x} \, dx = \hat{f}(k) \quad \text{for all } N \ge |k|.$$
+$$\int_0^1 \left( \sum_{\abs{n} \le N} \hat{f}(n) e^{2\pi i n x} \right) e^{-2\pi i k x} \, dx = \hat{f}(k) \quad \text{for all } N \ge \abs{k}.$$
 
 :::
 
@@ -187,7 +187,7 @@ By linearity of the integral, $\hat{h}(k) = \hat{f}(k) - \hat{g}(k) = 0$ for all
 :::
 
 ::: pf-step
-Consider the Fejér means $\sigma_N h(x) = \frac{1}{N+1} \sum_{j=0}^N S_j h(x) = \sum_{|n| \le N} \left(1 - \frac{|n|}{N+1}\right) \hat{h}(n) e^{2\pi i n x}$.
+Consider the Fejér means $\sigma_N h(x) = \frac{1}{N+1} \sum_{j=0}^N S_j h(x) = \sum_{\abs{n} \le N} \left(1 - \frac{\abs{n}}{N+1}\right) \hat{h}(n) e^{2\pi i n x}$.
 
 :::
 
@@ -197,12 +197,12 @@ Since $\hat{h}(n) = 0$ for all $n$, $\sigma_N h(x) \equiv 0$ for all $N \ge 0$.
 :::
 
 ::: pf-step
-By Fejér's Theorem for $L^1([0, 1])$, $\lim_{N \to \infty} \|\sigma_N h - h\|_{L^1} = 0$.
+By Fejér's Theorem for $L^1([0, 1])$, $\lim_{N \to \infty} \norm{\sigma_N h - h}_{L^1} = 0$.
 
 :::
 
 ::: pf-step
-Since $\sigma_N h = 0$, $\|h\|_{L^1} = 0$.
+Since $\sigma_N h = 0$, $\norm{h}_{L^1} = 0$.
 
 :::
 

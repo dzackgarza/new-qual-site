@@ -38,7 +38,7 @@ The polynomial $f$ has no rational root.
 
 ::: pf-proof
 
-Since $f$ is monic with integer coefficients, any rational root is an integer $r$ dividing $a$. Thus $0<|r|\le a$.
+Since $f$ is monic with integer coefficients, any rational root is an integer $r$ dividing $a$. Thus $0<\abs{r}\le a$.
 
 If $r>0$, then $r^5\le a^4r$, so
 $$
@@ -91,12 +91,12 @@ $$
 
 Equation (1) shows that the nonzero integers $u$, $v$, and $2v-u^2$ all divide $a$. Hence
 $$
-|u|\le a,
-\qquad |v|\le a.
+\abs{u}\le a,
+\qquad \abs{v}\le a.
 $$
 If $a>1$, then
 $$
-|u^4-3u^2v+v^2|
+\abs{u^4-3u^2v+v^2}
 \le a^4+3a^3+a^2
 <5a^4,
 $$

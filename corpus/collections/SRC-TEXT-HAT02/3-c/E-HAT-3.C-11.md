@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-If $T^n$ is the $n$-dimensional torus, the product of $n$ circles, show that the Pontryagin ring $H_*(T^n; \ZZ)$ is the exterior algebra $\Lambda_\ZZ[x_1, \dots, x_n]$ with $|x_i| = 1$.
+If $T^n$ is the $n$-dimensional torus, the product of $n$ circles, show that the Pontryagin ring $H_*(T^n; \ZZ)$ is the exterior algebra $\Lambda_\ZZ[x_1, \dots, x_n]$ with $\gradeddegree{x_i} = 1$.
 :::
 
 ::: {.solution}
@@ -28,7 +28,7 @@ If $T^n$ is the $n$-dimensional torus, the product of $n$ circles, show that the
 
 ::: {.pf-step #s1}
 
-$H_*(S^1; \ZZ) = \ZZ \oplus \ZZ x$ with $|x| = 1$, and the Pontryagin product (induced by the group structure of $S^1$) satisfies $x^2 = 0$.
+$H_*(S^1; \ZZ) = \ZZ \oplus \ZZ x$ with $\gradeddegree{x} = 1$, and the Pontryagin product (induced by the group structure of $S^1$) satisfies $x^2 = 0$.
 
 ::: pf-proof
 

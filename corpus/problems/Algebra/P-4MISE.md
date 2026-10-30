@@ -26,7 +26,7 @@ Determine the number of groups of order $15$ up to isomorphism, and prove your r
 :::
 
 ::: {.solution}
-Let $|G|=15=3\cdot5$. By Sylow,
+Let $\cardinality{G}=15=3\cdot5$. By Sylow,
 $$
 n_5\mid3,\qquad n_5\equiv1\pmod5,
 $$
@@ -38,7 +38,7 @@ and since $5\not\equiv1\pmod3$, we get $n_3=1$.
 
 Thus the Sylow subgroups $P$ of order $5$ and $Q$ of order $3$ are both normal. Their intersection is trivial, and
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}=15,
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}=15,
 $$
 so $G=PQ$. Since both factors are normal and intersect trivially, they commute and
 $$

@@ -46,7 +46,7 @@ If $H$ is transitive, all equivalence classes have the same number of elements.
 
 ::: pf-proof
 
-Let $B$ and $B'$ be classes, and pick $x \in B$ and $y \in B'$. By transitivity there is $\sigma \in H$ with $\sigma(x) = y$. By step [](#s1){.pf-ref}, $\sigma(B)$ is the class containing $y$, namely $B'$. Since $\sigma$ is a bijection of $\Omega$, $|B'| = |\sigma(B)| = |B|$.
+Let $B$ and $B'$ be classes, and pick $x \in B$ and $y \in B'$. By transitivity there is $\sigma \in H$ with $\sigma(x) = y$. By step [](#s1){.pf-ref}, $\sigma(B)$ is the class containing $y$, namely $B'$. Since $\sigma$ is a bijection of $\Omega$, $\cardinality{B'} = \cardinality{\sigma(B)} = \cardinality{B}$.
 
 :::
 

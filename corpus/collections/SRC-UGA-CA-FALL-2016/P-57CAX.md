@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 (a) Let Let $f:{\CC}\rightarrow {\CC}$ be an entire function.
-Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $|z|>R$ the inequality $$|f(z)| \leq L |z|^m$$ holds.
+Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $\abs{z}>R$ the inequality $$\abs{f(z)} \leq L \abs{z}^m$$ holds.
 Prove that $f$ is a polynomial of degree $\leq m$.
 
 (b) Let $f:{\CC}\rightarrow {\CC}$ be an entire function.
@@ -62,7 +62,7 @@ The Taylor expansion of the entire function $f$ about $0$ is $f(z) = \sum_{n=0}^
 
 ::: {.pf-step #s3}
 
-(b): $g(z) \definedas e^{f(z)}$ is entire and bounded by $e^M$.
+(b): $g(z) \coloneqq e^{f(z)}$ is entire and bounded by $e^M$.
 
 ::: pf-proof
 

@@ -22,7 +22,7 @@ Show that this potential can be written as $\textstyle u ( r ) = { \frac { a } {
 
 ::: {.solution}
 
-Let $u=u(r)$ with $r=|x|$ in $\RR^d$, where $d\geq3$.
+Let $u=u(r)$ with $r=\norm{x}$ in $\RR^d$, where $d\geq3$.
 
 ::: pf
 

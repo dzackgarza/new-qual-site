@@ -113,7 +113,7 @@ $$
 $$
 be the $U$-coordinate projection. Define
 $$
-\overline f=\pi_U|_{zX}.
+\overline f=\pi_U\restrict_{zX}.
 $$
 This map is continuous. For every $x\in X$,
 $$

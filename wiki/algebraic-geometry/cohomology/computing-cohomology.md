@@ -25,7 +25,7 @@ The perfect pairing $H^0(\PP^n,\OO(d))\times H^n(\PP^n,\OO(-d-n-1))\to H^n(\PP^n
 [[PR-ET5PQ]]
 
 For an exact sequence $0\to\mcf'\to\mcf\to\mcf''\to0$ of sheaves of abelian groups, a section $s\in\Gamma(X,\mcf'')$ lifts to $\Gamma(X,\mcf)$ if and only if $\delta(s)=0$ in $H^1(X,\mcf')$.
-On a cover $\{U_i\}$ with local lifts $t_i\in\mcf(U_i)$ of $s$, the Čech cocycle $(t_j-t_i)|_{U_i\cap U_j}$ with values in $\mcf'$ represents $\delta(s)$.
+On a cover $\{U_i\}$ with local lifts $t_i\in\mcf(U_i)$ of $s$, the Čech cocycle $(t_j-t_i)\restrict_{U_i\cap U_j}$ with values in $\mcf'$ represents $\delta(s)$.
 Under $\Pic X\cong H^1(X,\OO_X^\times)$, the Čech cocycle of a line bundle is its family of transition functions $g_{ij}\in\OO_X^\times(U_i\cap U_j)$.
 
 ## Dévissage

@@ -36,7 +36,7 @@ $$
 Hence
 $$
 \int \frac{1+e^x}{1-e^x}\,dx
-=\ln u-2\ln|1-u|+C
-=\boxed{x-2\ln|1-e^x|+C}.
+=\ln u-2\ln\abs{1-u}+C
+=\boxed{x-2\ln\abs{1-e^x}+C}.
 $$
 :::

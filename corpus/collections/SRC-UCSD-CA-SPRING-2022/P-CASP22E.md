@@ -26,14 +26,14 @@ $\overline{B(a,r)}\subset G$ and $a$ is the only pole of $f$ in that disk.
 The coefficient of $(z-a)^{-m}$ in the Laurent expansion of $f$ is nonzero,
 so
 $$
-\int_{|z-a|=r}(z-a)^{m-1}f(z)\,dz\ne0.
+\int_{\abs{z-a}=r}(z-a)^{m-1}f(z)\,dz\ne0.
 $$
 
-On the circle $|z-a|=r$, the limit $f$ is finite. Meromorphic convergence is
+On the circle $\abs{z-a}=r$, the limit $f$ is finite. Meromorphic convergence is
 therefore ordinary uniform convergence there, so for all sufficiently large
 $n$,
 $$
-\int_{|z-a|=r}(z-a)^{m-1}f_n(z)\,dz\ne0.
+\int_{\abs{z-a}=r}(z-a)^{m-1}f_n(z)\,dz\ne0.
 $$
 If such an $f_n$ had no pole in $B(a,r)$, the integrand would be holomorphic
 there and the integral would be zero by Cauchy's theorem. Hence every

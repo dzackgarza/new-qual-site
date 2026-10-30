@@ -70,10 +70,10 @@ The group $G$ is a semidirect product $C_{65}\rtimes C_3$.
 ::: pf-proof
 
 Let $P$ be a Sylow $3$-subgroup of $G$.
-Then $|P|=3$, $N\cap P=1$, and $N$ is normal.
+Then $\cardinality{P}=3$, $N\cap P=1$, and $N$ is normal.
 Therefore $NP$ is a subgroup and
 $$
-|NP|=\frac{|N||P|}{|N\cap P|}=65\cdot3=|G|.
+\cardinality{NP}=\frac{\cardinality{N}\cardinality{P}}{\cardinality{N\cap P}}=65\cdot3=\cardinality{G}.
 $$
 Thus $G=NP$ and
 $$

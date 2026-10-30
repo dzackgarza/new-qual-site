@@ -53,7 +53,7 @@ this closed disk. On its punctured interior,
 $$
 \frac{f'(z)}{f(z)}=-\frac{m}{z-z_0}+\frac{h'(z)}{h(z)}.
 $$
-For the positively oriented circle $\gamma:|z-z_0|=r$,
+For the positively oriented circle $\gamma:\abs{z-z_0}=r$,
 Cauchy's theorem applied to the holomorphic function $h'/h$
 and the circle parametrization give
 $$

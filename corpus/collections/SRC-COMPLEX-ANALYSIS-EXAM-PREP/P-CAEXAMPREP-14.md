@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-On the unit disk $|z|<1$, the electric potential is maintained at $\phi=0$ on the lower semicircle and at $\phi=1$ on the upper semicircle.
+On the unit disk $\abs{z}<1$, the electric potential is maintained at $\phi=0$ on the lower semicircle and at $\phi=1$ on the upper semicircle.
 Find $\phi$ inside the disk.
 :::
 
@@ -37,7 +37,7 @@ The map $W$ is a biholomorphism from the unit disk $\DD$ onto the upper half-pla
 For $z\in\DD$, direct calculation gives
 $$
 \operatorname{Im}W(z)
-=\frac{1-|z|^2}{|1-z|^2}>0,
+=\frac{1-\abs{z}^2}{\abs{1-z}^2}>0,
 $$
 so $W(\DD)\subseteq\halfplane$. Solving $w=W(z)$ gives
 $$
@@ -45,9 +45,9 @@ z=\frac{w-i}{w+i}.
 $$
 If $\operatorname{Im}w>0$, then
 $$
-|w+i|^2-|w-i|^2=4\operatorname{Im}w>0,
+\abs{w+i}^2-\abs{w-i}^2=4\operatorname{Im}w>0,
 $$
-so the inverse satisfies $|z|<1$. Thus $W$ is bijective between $\DD$ and $\halfplane$, and both $W$ and its inverse are holomorphic there.
+so the inverse satisfies $\abs{z}<1$. Thus $W$ is bijective between $\DD$ and $\halfplane$, and both $W$ and its inverse are holomorphic there.
 
 :::
 
@@ -66,7 +66,7 @@ is harmonic on $\DD$.
 
 On $\halfplane$, choose the holomorphic branch
 $$
-\operatorname{Log}w=\log|w|+i\operatorname{Arg}w,
+\operatorname{Log}w=\log\abs{w}+i\operatorname{Arg}w,
 \qquad 0<\operatorname{Arg}w<\pi.
 $$
 By step [](#s1-1){.pf-ref}, $\operatorname{Log}W(z)$ is holomorphic on $\DD$. The imaginary part of a holomorphic function is harmonic: the Cauchy--Riemann equations imply its Laplacian is zero. Therefore

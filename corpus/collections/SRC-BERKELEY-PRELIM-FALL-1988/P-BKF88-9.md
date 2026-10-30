@@ -30,11 +30,11 @@ $$
 
 For every $v\in\RR^n$,
 $$
-a_1\lVert v\rVert^2
+a_1\norm{ v}^2
 \leq
 v^{\mathsf T}Av
 \leq
-a_2\lVert v\rVert^2.
+a_2\norm{ v}^2.
 $$
 
 ::: pf-proof
@@ -49,7 +49,7 @@ v^{\mathsf T}Av
 =
 \sum_{i=1}^n\lambda_i c_i^2,
 \qquad
-\lVert v\rVert^2
+\norm{ v}^2
 =
 \sum_{i=1}^n c_i^2.
 $$
@@ -63,11 +63,11 @@ Bounding each $\lambda_i$ between $a_1$ and $a_2$ gives the claimed inequalities
 
 For every $v\in\RR^n$,
 $$
-b_1\lVert v\rVert^2
+b_1\norm{ v}^2
 \leq
 v^{\mathsf T}Bv
 \leq
-b_2\lVert v\rVert^2.
+b_2\norm{ v}^2.
 $$
 
 ::: pf-proof
@@ -82,11 +82,11 @@ Apply the argument of step [](#s1){.pf-ref} to the real symmetric matrix $B$ and
 
 For every $v\in\RR^n$,
 $$
-(a_1+b_1)\lVert v\rVert^2
+(a_1+b_1)\norm{ v}^2
 \leq
 v^{\mathsf T}(A+B)v
 \leq
-(a_2+b_2)\lVert v\rVert^2.
+(a_2+b_2)\norm{ v}^2.
 $$
 
 ::: pf-proof
@@ -119,9 +119,9 @@ Then
 $$
 v^{\mathsf T}(A+B)v
 =
-\lambda\lVert v\rVert^2.
+\lambda\norm{ v}^2.
 $$
-Substituting this into step [](#s3){.pf-ref} and dividing by the positive number $\lVert v\rVert^2$ gives
+Substituting this into step [](#s3){.pf-ref} and dividing by the positive number $\norm{ v}^2$ gives
 $$
 a_1+b_1
 \leq

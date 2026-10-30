@@ -55,7 +55,7 @@ If $T\in S_v$, its rotation axis is a line $L\subset v^\perp$. A half-turn fixes
 
 Conversely, suppose $T\in SO(3)$ and $Tv=-v$. Because $T$ is orthogonal, the plane $v^\perp$ is $T$-invariant. Moreover,
 $$
-\det(T|_{v^\perp})=\frac{\det T}{-1}=-1.
+\det(T\restrict_{v^\perp})=\frac{\det T}{-1}=-1.
 $$
 An orthogonal operator on a two-dimensional real inner-product space with determinant $-1$ has eigenvalues $1$ and $-1$. Hence there is a unit vector $u\in v^\perp$ with $Tu=u$. If $z\in v^\perp$ is a unit vector orthogonal to $u$, then the determinant condition forces $Tz=-z$. Together with $Tv=-v$, this shows that $T$ fixes the axis $\RR u$ and negates its orthogonal complement. Thus $T$ is the rotation through $180^\circ$ about the line $\RR u\subset v^\perp$, so $T\in S_v$.
 :::

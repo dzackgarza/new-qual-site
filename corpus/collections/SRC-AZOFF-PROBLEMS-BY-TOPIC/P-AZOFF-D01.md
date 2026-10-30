@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D01
 kind: problem
-title: Riemann integrability of $g$ when $|g(x)-g(y)|\le|f(x)-f(y)|$
+title: Riemann integrability of $g$ when $\abs{g(x)-g(y)}\le\abs{f(x)-f(y)}$
 classification:
   areas: [complex-analysis]
   topics: []
@@ -30,7 +30,7 @@ audit:
 Suppose $f , g : [ 0 , 1 ] \to \RR$ with $f$ Riemann integrable and
 
 $$
-| g ( x ) - g ( y ) | \leq | f ( x ) - f ( y ) | , \qquad x , y \in [ 0 , 1 ] .
+\abs{ g ( x ) - g ( y ) } \leq \abs{ f ( x ) - f ( y ) } , \qquad x , y \in [ 0 , 1 ] .
 $$
 
 Prove that $g$ is also Riemann integrable.

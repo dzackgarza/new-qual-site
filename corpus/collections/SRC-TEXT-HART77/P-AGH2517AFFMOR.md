@@ -115,8 +115,8 @@ $$
 compatible with restriction [@Har10a, Proposition II.5.4].
 Thus $X_{D_V(a)}=\Spec B_a$ identifies with $h_V^{-1}(D_V(a))$ as an open subscheme of $X_V$.
 
-On this distinguished-open basis, the sections of $(h_V)_*\OO_{X_V}$ are $B_a$, with the same restrictions as $\mca|_V$.
-Therefore $(h_V)_*\OO_{X_V}\cong\mca|_V$ as sheaves of algebras.
+On this distinguished-open basis, the sections of $(h_V)_*\OO_{X_V}$ are $B_a$, with the same restrictions as $\mca\restrict_V$.
+Therefore $(h_V)_*\OO_{X_V}\cong\mca\restrict_V$ as sheaves of algebras.
 The morphism $h_V$ is affine by the one-member affine cover of $V$.
 For any affine open $U\subseteq V$, step [](#s1){.pf-ref} makes $h_V^{-1}(U)$ affine, and its coordinate ring is
 $$
@@ -168,7 +168,7 @@ The identifications respect restriction and algebra multiplication, giving $f_*\
 
 Conversely, let $f$ be affine and put $\mca=f_*\OO_X$.
 For an affine open $V=\Spec A$, write $f^{-1}(V)=\Spec B$.
-On $D_V(a)$ its direct image has sections $B_a$, so $\mca|_V$ is the quasi-coherent algebra associated to the $A$-algebra $B$.
+On $D_V(a)$ its direct image has sections $B_a$, so $\mca\restrict_V$ is the quasi-coherent algebra associated to the $A$-algebra $B$.
 This holds on an affine cover, proving quasi-coherence on $Y$.
 The relative spectrum of $\mca$ is glued from the affine schemes $\Spec B$ and the restriction maps already present in $X$.
 The uniqueness in step [](#s4){.pf-ref} gives $X\cong\Spec_Y\mca$ over $Y$.
@@ -190,7 +190,7 @@ For $a\in A$, the associated-sheaf description of $\mathcal N$ gives
 $$
 (f_*\mathcal N)(D_V(a))=N_a.
 $$
-Thus $(f_*\mathcal N)|_V$ is the sheaf associated to $N$ viewed as an $A$-module, and is quasi-coherent over $\OO_V$.
+Thus $(f_*\mathcal N)\restrict_V$ is the sheaf associated to $N$ viewed as an $A$-module, and is quasi-coherent over $\OO_V$.
 Morphisms of $\OO_X$-modules induce $B$-linear maps on these section modules and hence $\mca$-linear sheaf morphisms after direct image.
 
 :::
@@ -209,7 +209,7 @@ For a distinguished open $D_V(a)$, quasi-coherence over $\OO_Y$ gives $\mcm(D_V(
 The associated sheaf of this localized module is exactly the restriction of $\widetilde{M_V}$ to $\Spec B_a$.
 These identifications commute with further localization.
 
-Equivalently, the direct image of $\widetilde{M_V}$ to $V$ is canonically $\mcm|_V$, by the distinguished-open calculation.
+Equivalently, the direct image of $\widetilde{M_V}$ to $V$ is canonically $\mcm\restrict_V$, by the distinguished-open calculation.
 For any smaller affine open $U\subseteq V$, its restriction to the affine scheme $f^{-1}(U)$ therefore has global module $\mcm(U)$.
 The affine sheaf-module equivalence identifies it with $\widetilde{M_U}$.
 Using common affine refinements as in step [](#s4){.pf-ref}, these identifications glue the local sheaves to $\widetilde{\mcm}$ on $X$.
@@ -220,7 +220,7 @@ They commute with the gluing identifications, defining this construction on morp
 The same calculations give a natural isomorphism $f_*\widetilde{\mcm}\cong\mcm$ on every affine open of $Y$, hence on $Y$.
 For a quasi-coherent $\mathcal N$ on $X$, the isomorphism $\widetilde{f_*\mathcal N}\cong\mathcal N$ on $f^{-1}(V)$ is the canonical affine identification
 $$
-\widetilde{\Gamma(f^{-1}(V),\mathcal N)}\cong\mathcal N|_{f^{-1}(V)}.
+\widetilde{\Gamma(f^{-1}(V),\mathcal N)}\cong\mathcal N\restrict_{f^{-1}(V)}.
 $$
 It is natural and compatible with restrictions, so it glues on $X$.
 These two natural isomorphisms prove the equivalence of categories, including its morphisms.

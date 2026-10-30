@@ -28,7 +28,7 @@ Prove that $I+A$ is invertible.
 
 Let
 $$
-\|A\|_F
+\norm{A}_F
 =
 \left(
 a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
@@ -42,7 +42,7 @@ be the Frobenius norm.
 
 The hypothesis gives
 $$
-\|A\|_F<\frac1{\sqrt{10}}<1.
+\norm{A}_F<\frac1{\sqrt{10}}<1.
 $$
 
 
@@ -67,9 +67,9 @@ x\in\RR^2,
 $$
 one has
 $$
-\|Ax\|_2
+\norm{Ax}_2
 \le
-\|A\|_F\|x\|_2.
+\norm{A}_F\norm{x}_2.
 $$
 
 
@@ -101,9 +101,9 @@ i=1,2.
 $$
 Then
 $$
-\|Ax\|_2^2
+\norm{Ax}_2^2
 \le
-\|A\|_F^2\|x\|_2^2.
+\norm{A}_F^2\norm{x}_2^2.
 $$
 Take square roots.
 
@@ -147,21 +147,21 @@ then steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give a contradiction.
 
 By step [](#s1-3){.pf-ref},
 $$
-\|x\|_2
+\norm{x}_2
 =
-\|Ax\|_2.
+\norm{Ax}_2.
 $$
 Step [](#s1-2){.pf-ref} gives
 $$
-\|Ax\|_2
+\norm{Ax}_2
 \le
-\|A\|_F\|x\|_2.
+\norm{A}_F\norm{x}_2.
 $$
 Thus
 $$
-\|x\|_2
+\norm{x}_2
 \le
-\|A\|_F\|x\|_2.
+\norm{A}_F\norm{x}_2.
 $$
 If
 $$
@@ -169,11 +169,11 @@ x\ne0,
 $$
 divide by
 $$
-\|x\|_2>0
+\norm{x}_2>0
 $$
 to obtain
 $$
-1\le\|A\|_F,
+1\le\norm{A}_F,
 $$
 contradicting step [](#s1-1){.pf-ref}.
 

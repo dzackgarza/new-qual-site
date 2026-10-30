@@ -138,11 +138,11 @@ R_N\coloneqq N+\frac12
 $$
 and let $\Gamma_N$ be the positively oriented boundary of the square
 $$
-\{z:|\operatorname{Re}z|\le R_N,\ |\operatorname{Im}z|\le R_N\}.
+\{z:\abs{\operatorname{Re}z}\le R_N,\ \abs{\operatorname{Im}z}\le R_N\}.
 $$
 There is a constant $C>0$, independent of $N$, such that
 $$
-|\cot(\pi z)|\le C
+\abs{\cot(\pi z)}\le C
 $$
 for every $z\in\Gamma_N$.
 
@@ -155,24 +155,24 @@ $$
 Writing $z=x+iy$ and using the elementary formulas for sine and cosine
 of a complex argument gives
 $$
-|\cot(\pi z)|
+\abs{\cot(\pi z)}
 =
-|\tanh(\pi y)|
+\abs{\tanh(\pi y)}
 \le1.
 $$
 
 On a horizontal side,
 $$
-|\operatorname{Im}z|=R_N\ge\frac12.
+\abs{\operatorname{Im}z}=R_N\ge\frac12.
 $$
 For $z=x+iy$,
 $$
-|\cot(\pi z)|^2
+\abs{\cot(\pi z)}^2
 =
 \frac{\cos^2(\pi x)+\sinh^2(\pi y)}
 {\sin^2(\pi x)+\sinh^2(\pi y)}
 \le
-\coth^2(\pi|y|)
+\coth^2(\pi\abs{y})
 \le
 \coth^2\left(\frac\pi2\right).
 $$
@@ -198,20 +198,20 @@ $$
 
 Every point of $\Gamma_N$ satisfies
 $$
-|z|\ge R_N.
+\abs{z}\ge R_N.
 $$
 By step [](#s3){.pf-ref},
 $$
-|F_n(z)|
+\abs{F_n(z)}
 \le
 \frac{\pi C}{R_N^n}
 $$
 on $\Gamma_N$. The perimeter of the square is $8R_N$, so the
 $ML$-estimate gives
 $$
-\left|
+\abs{
 \int_{\Gamma_N}F_n(z)\,dz
-\right|
+}
 \le
 8\pi C R_N^{1-n}.
 $$

@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 (a) Let $K$ denote the splitting field of $x^5 - 2$ over $\QQ$. Show that the Galois group $\operatorname{Gal}(K/\QQ)$ is isomorphic to the matrix group
 $$
-\operatorname{Aff}(\FF_5) = \left\{ \begin{pmatrix} a & b \\ 0 & 1 \end{pmatrix} \;\middle|\; a \in \FF_5^\times, \, b \in \FF_5 \right\}.
+\operatorname{Aff}(\FF_5) = \left\{ \begin{pmatrix} a & b \\ 0 & 1 \end{pmatrix} \;\st\; a \in \FF_5^\times, \, b \in \FF_5 \right\}.
 $$
 
 (b) Determine all intermediate fields between $K$ and $\QQ$ that are Galois over $\QQ$.

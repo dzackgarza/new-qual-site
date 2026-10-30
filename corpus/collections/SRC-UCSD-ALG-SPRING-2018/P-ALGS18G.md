@@ -39,10 +39,10 @@ Hint: You can use whatever has been proved about groups of order $p(p+1)$.
 ::: pf
 
 ::: pf-step
-Let $G = \operatorname{Gal}(E/\QQ)$; then $|G| = [E:\QQ] = p(p+1)$.
+Let $G = \operatorname{Gal}(E/\QQ)$; then $\cardinality{G} = [E:\QQ] = p(p+1)$.
 
 ::: pf-proof
-$E/\QQ$ is a splitting field, hence Galois, so $|G| = [E:\QQ]$.
+$E/\QQ$ is a splitting field, hence Galois, so $\cardinality{G} = [E:\QQ]$.
 :::
 
 :::
@@ -62,7 +62,7 @@ $G$ is a Frobenius group: it has a normal subgroup $N$ of order $p+1$ (the Frobe
 ::: pf-proof
 
 ::: pf-step
-The stabilizer of a root has order $|G|/(p+1) = p$.
+The stabilizer of a root has order $\cardinality{G}/(p+1) = p$.
 
 ::: pf-proof
 orbit–stabilizer theorem applied to the transitive action on $p+1$ roots.
@@ -75,7 +75,7 @@ A point stabilizer $H$ (order $p$) acts freely on the other $p$ roots.
 
 ::: pf-proof
 Let $1\neq h\in H$.
-Since $|H|=p$, the permutation induced by $h$ has order $p$.
+Since $\cardinality{H}=p$, the permutation induced by $h$ has order $p$.
 On a set of $p+1$ points, a nonidentity permutation of order $p$ has exactly one $p$-cycle and one fixed point.
 Because $h\in H$, that fixed point is the chosen root.
 Hence $h$ fixes no second root.
@@ -125,7 +125,7 @@ $f$ is irreducible of degree $p+1$.
 $\operatorname{Gal}(E/\QQ(\alpha))$ is the stabilizer of $\alpha$, of order $p$.
 
 ::: pf-proof
-the fixed field of the stabilizer of $\alpha$ is $\QQ(\alpha)$; its order is $|G|/(p+1) = p$ by step [](#p1-s3){.pf-ref}.
+the fixed field of the stabilizer of $\alpha$ is $\QQ(\alpha)$; its order is $\cardinality{G}/(p+1) = p$ by step [](#p1-s3){.pf-ref}.
 :::
 
 :::
@@ -184,7 +184,7 @@ $N$ is normal in $G$, so its fixed field $K$ is Galois over $\QQ$ (fundamental t
 $\operatorname{Gal}(K/\QQ) = G/N$, of order $p$.
 
 ::: pf-proof
-fundamental theorem of Galois theory; $|G/N| = p(p+1)/(p+1) = p$.
+fundamental theorem of Galois theory; $\cardinality{G/N} = p(p+1)/(p+1) = p$.
 :::
 
 :::

@@ -206,7 +206,7 @@ not by the chosen basis $F_0,F_1$ of the pencil.
 ::: pf-proof
 The common zero scheme
 $$
-\operatorname{Bs}|V|
+\operatorname{Bs}\linearsystem{V}
 =
 \bigcap_{F\in V}V(F)
 $$

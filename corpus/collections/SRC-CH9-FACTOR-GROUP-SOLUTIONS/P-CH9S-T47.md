@@ -39,7 +39,7 @@ The subgroup $\pi(H)$ is either $\{N\}$ or all of $G/N$.
 ::: pf-proof
 
 Because $H\leq G$ and $\pi$ is a homomorphism, $\pi(H)$ is a subgroup
-of $G/N$. By hypothesis $|G/N|$ is prime. A group of prime order has
+of $G/N$. By hypothesis $\cardinality{G/N}$ is prime. A group of prime order has
 no subgroups other than the identity subgroup and the whole group, so
 $$
 \pi(H)=\{N\}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-4B
 kind: problem
-title: Nonreal zeros of $z^{11}-3z^3+1$ in the annulus $1\le\lvert z\rvert\le2$
+title: Nonreal zeros of $z^{11}-3z^3+1$ in the annulus $1\le\abs{ z}\le2$
 classification:
   areas: [prelim]
   topics: []

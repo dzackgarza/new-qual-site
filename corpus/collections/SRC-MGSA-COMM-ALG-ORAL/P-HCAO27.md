@@ -75,7 +75,7 @@ Therefore the Hilbert function of $S/I$ is computed by counting standard
 monomials:
 $$
 H_{S/I}(d)
-=\#\{x^\alpha:|\alpha|=d,\ x^\alpha\notin\operatorname{in}(I)\}.
+=\#\{x^\alpha:\multiindexsize{\alpha}=d,\ x^\alpha\notin\operatorname{in}(I)\}.
 $$
 
 ::: pf-proof

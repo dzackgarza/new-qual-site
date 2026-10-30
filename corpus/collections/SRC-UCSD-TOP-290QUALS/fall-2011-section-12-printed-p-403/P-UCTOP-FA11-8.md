@@ -25,7 +25,7 @@ Write
 $$
 H^*(\CP^2\times\CP^2;\ZZ)
 \cong\ZZ[x,y]/(x^3,y^3),
-\qquad |x|=|y|=2.
+\qquad \gradeddegree{x}=\gradeddegree{y}=2.
 $$
 
 ::: pf-proof

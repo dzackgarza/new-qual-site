@@ -71,7 +71,7 @@ so every sphere centered at the origin is preserved.
 Conversely, suppose the radius-$R$ sphere is preserved setwise. For every
 unit vector $u$, the point $Ru$ lies on the sphere, so
 $$
-\|ARu\|=R.
+\norm{ARu}=R.
 $$
 Thus
 $$

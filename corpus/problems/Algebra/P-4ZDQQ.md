@@ -96,7 +96,7 @@ An intermediate field $E$ satisfies $[L:E]=2$ exactly when the corresponding sub
 
 By the fundamental theorem of Galois theory,
 $$
-[L:E]=|\operatorname{Gal}(L/E)|.
+[L:E]=\cardinality{\operatorname{Gal}(L/E)}.
 $$
 Thus quadratic extensions $L/E$ correspond precisely to order-$2$ subgroups of $G$.
 
@@ -110,7 +110,7 @@ Such intermediate fields always exist.
 
 ::: pf-proof
 
-Since $2\mid |G|$, Cauchy's theorem gives an element of order $2$, hence a subgroup of order $2$. By step [](#s3){.pf-ref} this subgroup corresponds to an intermediate field $E$ with $[L:E]=2$.
+Since $2\mid \cardinality{G}$, Cauchy's theorem gives an element of order $2$, hence a subgroup of order $2$. By step [](#s3){.pf-ref} this subgroup corresponds to an intermediate field $E$ with $[L:E]=2$.
 
 :::
 

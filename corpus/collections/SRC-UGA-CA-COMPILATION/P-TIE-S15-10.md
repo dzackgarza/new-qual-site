@@ -134,7 +134,7 @@ is holomorphic there. Choose a connected nonempty open subset $V\subset B(z_0,r)
 $$
 F(V)\subset i\RR.
 $$
-If $F|_V$ were nonconstant, the open mapping theorem would make $F(V)$ open in $\CC$, impossible because $i\RR$ has empty interior. Thus $F$ is constant on $V$. The identity theorem then implies that $F$ is constant on the whole disk. Its real part is $u$, and since $u=0$ on $V$, one has
+If $F\restrict_V$ were nonconstant, the open mapping theorem would make $F(V)$ open in $\CC$, impossible because $i\RR$ has empty interior. Thus $F$ is constant on $V$. The identity theorem then implies that $F$ is constant on the whole disk. Its real part is $u$, and since $u=0$ on $V$, one has
 $$
 u\equiv0
 $$

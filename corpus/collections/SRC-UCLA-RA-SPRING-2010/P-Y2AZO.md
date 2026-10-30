@@ -32,14 +32,14 @@ audit:
 
 ::: {.problem}
 For $f:\RR\to\RR$ in $L^1(\RR)$, let $Mf$ be the (centered) Hardy-Littlewood maximal function.
-Prove there is a constant $A$ such that for any $\lambda>0$, $$m\{x\in\RR: Mf(x)>\lambda\} \le \frac{A}{\lambda}||f||_{L^1}$$ where $m$ is Lebesgue measure.
+Prove there is a constant $A$ such that for any $\lambda>0$, $$m\{x\in\RR: Mf(x)>\lambda\} \le \frac{A}{\lambda}\norm{f}_{L^1}$$ where $m$ is Lebesgue measure.
 If you use a covering lemma, you should prove it.
 :::
 
 ::: {.solution}
 Write
 $$
-Mf(x)=\sup_{r>0}\frac1{2r}\int_{x-r}^{x+r}|f(t)|\,dt
+Mf(x)=\sup_{r>0}\frac1{2r}\int_{x-r}^{x+r}\abs{f(t)}\,dt
 $$
 and, for $\lambda>0$, set
 $$
@@ -57,23 +57,23 @@ The set $E_\lambda$ is open.
 Fix $x\in E_\lambda$.
 Choose $r>0$ such that
 $$
-\frac1{2r}\int_{x-r}^{x+r}|f(t)|\,dt>\lambda.
+\frac1{2r}\int_{x-r}^{x+r}\abs{f(t)}\,dt>\lambda.
 $$
 Define
 $$
-F(s)=\int_{-\infty}^{s}|f(t)|\,dt.
+F(s)=\int_{-\infty}^{s}\abs{f(t)}\,dt.
 $$
 Because $f\in L^1(\RR)$, the function $F$ is continuous.
 Hence
 $$
-y\longmapsto \int_{y-r}^{y+r}|f(t)|\,dt
+y\longmapsto \int_{y-r}^{y+r}\abs{f(t)}\,dt
 =F(y+r)-F(y-r)
 $$
 is continuous.
 It is strictly larger than $2r\lambda$ at $y=x$, so it remains larger than $2r\lambda$ for all $y$ in some neighborhood of $x$.
 For such $y$,
 $$
-Mf(y)\ge\frac1{2r}\int_{y-r}^{y+r}|f(t)|\,dt>\lambda.
+Mf(y)\ge\frac1{2r}\int_{y-r}^{y+r}\abs{f(t)}\,dt>\lambda.
 $$
 Thus a neighborhood of $x$ lies in $E_\lambda$.
 
@@ -103,19 +103,19 @@ By construction the selected intervals $I_1,\ldots,I_N$ are pairwise disjoint.
 Let $J\in\mathcal F$.
 At the stage when $J$ was deleted, it either was itself selected or it met a selected interval $I_j$ with
 $$
-|J|\le |I_j|,
+\setmeasure{J}\le \setmeasure{I_j},
 $$
 because $I_j$ had maximal length among the intervals then remaining.
-Let $c_J,c_j$ be the centers of $J,I_j$ and put $L=|I_j|$.
+Let $c_J,c_j$ be the centers of $J,I_j$ and put $L=\setmeasure{I_j}$.
 Since $J$ meets $I_j$,
 $$
-|c_J-c_j|\le\frac{|J|+L}{2}\le L.
+\abs{c_J-c_j}\le\frac{\setmeasure{J}+L}{2}\le L.
 $$
 For every $y\in J$,
 $$
-|y-c_j|
-\le |y-c_J|+|c_J-c_j|
-\le\frac{|J|}{2}+L
+\abs{y-c_j}
+\le \abs{y-c_J}+\abs{c_J-c_j}
+\le\frac{\setmeasure{J}}{2}+L
 \le\frac{3L}{2}.
 $$
 Thus $J\subseteq3I_j$.
@@ -129,7 +129,7 @@ This holds for every $J\in\mathcal F$, proving the lemma.
 
 Every compact set $K\subseteq E_\lambda$ satisfies
 $$
-m(K)\le\frac{3}{\lambda}\|f\|_{L^1}.
+m(K)\le\frac{3}{\lambda}\norm{f}_{L^1}.
 $$
 
 ::: pf-proof
@@ -140,7 +140,7 @@ I_x=(x-r_x,x+r_x)
 $$
 satisfies
 $$
-\frac1{|I_x|}\int_{I_x}|f(t)|\,dt>\lambda.
+\frac1{\setmeasure{I_x}}\int_{I_x}\abs{f(t)}\,dt>\lambda.
 $$
 The intervals $I_x$ form an open cover of the compact set $K$, so finitely many of them, say
 $$
@@ -160,10 +160,10 @@ Therefore
 $$
 \begin{aligned}
 m(K)
-&\le \sum_{j=1}^N|3I_j|\\
-&=3\sum_{j=1}^N|I_j|\\
-&<\frac3\lambda\sum_{j=1}^N\int_{I_j}|f(t)|\,dt\\
-&\le\frac3\lambda\|f\|_{L^1}.
+&\le \sum_{j=1}^N\setmeasure{3I_j}\\
+&=3\sum_{j=1}^N\setmeasure{I_j}\\
+&<\frac3\lambda\sum_{j=1}^N\int_{I_j}\abs{f(t)}\,dt\\
+&\le\frac3\lambda\norm{f}_{L^1}.
 \end{aligned}
 $$
 The last inequality uses the pairwise disjointness of the selected intervals.
@@ -176,7 +176,7 @@ The last inequality uses the pairwise disjointness of the selected intervals.
 
 One has
 $$
-m(E_\lambda)\le\frac{3}{\lambda}\|f\|_{L^1}.
+m(E_\lambda)\le\frac{3}{\lambda}\norm{f}_{L^1}.
 $$
 
 ::: pf-proof
@@ -184,7 +184,7 @@ $$
 Since $E_\lambda$ is open by step [](#s1){.pf-ref}, define
 $$
 K_n=\left\{x\in E_\lambda:
-|x|\le n,
+\abs{x}\le n,
 \ \operatorname{dist}(x,E_\lambda^c)\ge\frac1n
 \right\}.
 $$
@@ -199,7 +199,7 @@ $$
 \begin{aligned}
 m(E_\lambda)
 &=\lim_{n\to\infty}m(K_n)\\
-&\le\frac3\lambda\|f\|_{L^1}.
+&\le\frac3\lambda\norm{f}_{L^1}.
 \end{aligned}
 $$
 Thus the desired weak-type $(1,1)$ estimate holds with $A=3$.

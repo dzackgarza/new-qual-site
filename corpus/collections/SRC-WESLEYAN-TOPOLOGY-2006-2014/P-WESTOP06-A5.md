@@ -23,11 +23,11 @@ Call $X$ *zero-dimensional* if $\operatorname{clop}(X)$ is a basis, and let $wX$
 
 1. Show that $\QQ$ with its usual topology is zero-dimensional and that
    $$
-   w\QQ<|\operatorname{clop}(\QQ)|.
+   w\QQ<\cardinality{\operatorname{clop}(\QQ)}.
    $$
 2. Prove that if $X$ is infinite, compact Hausdorff, and zero-dimensional, then
    $$
-   wX=|\operatorname{clop}(X)|.
+   wX=\cardinality{\operatorname{clop}(X)}.
    $$
 :::
 
@@ -109,7 +109,7 @@ $$
 \qquad
 a\longmapsto C_a,
 $$
-is injective. Since $|\RR\setminus\QQ|=2^{\aleph_0}$, the claim follows.
+is injective. Since $\cardinality{\RR\setminus\QQ}=2^{\aleph_0}$, the claim follows.
 
 :::
 
@@ -119,7 +119,7 @@ is injective. Since $|\RR\setminus\QQ|=2^{\aleph_0}$, the claim follows.
 
 Therefore
 $$
-\boxed{w\QQ<|\operatorname{clop}(\QQ)|.}
+\boxed{w\QQ<\cardinality{\operatorname{clop}(\QQ)}.}
 $$
 
 
@@ -127,7 +127,7 @@ $$
 
 By step [](#s1-2){.pf-ref}, $w\QQ=\aleph_0$, while step [](#s1-3){.pf-ref} gives
 $$
-|\operatorname{clop}(\QQ)|\ge2^{\aleph_0}>\aleph_0
+\cardinality{\operatorname{clop}(\QQ)}\ge2^{\aleph_0}>\aleph_0
 $$
 by Cantor's theorem.
 
@@ -139,7 +139,7 @@ by Cantor's theorem.
 
 If $X$ is infinite, compact, Hausdorff, and zero-dimensional, then
 $$
-\boxed{wX=|\operatorname{clop}(X)|.}
+\boxed{wX=\cardinality{\operatorname{clop}(X)}.}
 $$
 
 
@@ -147,12 +147,12 @@ $$
 
 Because $X$ is zero-dimensional, $\operatorname{clop}(X)$ itself is a basis. Therefore
 $$
-wX\le|\operatorname{clop}(X)|.
+wX\le\cardinality{\operatorname{clop}(X)}.
 $$
 
 Let $\mathcal B$ be a basis of cardinality
 $$
-|\mathcal B|=wX=\kappa.
+\cardinality{\mathcal B}=wX=\kappa.
 $$
 Since $X$ is infinite Hausdorff, $\kappa$ is infinite. Let $C\in\operatorname{clop}(X)$. For each $x\in C$, choose $B_x\in\mathcal B$ with
 $$
@@ -166,7 +166,7 @@ Thus every clopen set is a finite union of members of $\mathcal B$.
 
 An infinite set of cardinality $\kappa$ has only $\kappa$ finite subsets, so there are at most $\kappa$ finite unions of members of $\mathcal B$. Consequently
 $$
-|\operatorname{clop}(X)|\le\kappa=wX.
+\cardinality{\operatorname{clop}(X)}\le\kappa=wX.
 $$
 Combining the two inequalities gives the claimed equality.
 

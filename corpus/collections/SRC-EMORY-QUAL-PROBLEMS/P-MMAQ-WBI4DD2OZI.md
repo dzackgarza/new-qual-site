@@ -37,7 +37,7 @@ Proof of Fatou's lemma.
 ::: pf-proof
 
 ::: {.pf-step #s1-1}
-Define $g_k \definedas \inf_{n \geq k} f_n$; then $g_k$ is measurable, $0 \leq g_k \leq f_n$ for all $n \geq k$, and $g_k$ increases to $\liminf_n f_n$ as $k \to \infty$.
+Define $g_k \coloneqq \inf_{n \geq k} f_n$; then $g_k$ is measurable, $0 \leq g_k \leq f_n$ for all $n \geq k$, and $g_k$ increases to $\liminf_n f_n$ as $k \to \infty$.
 
 ::: pf-proof
 Each $g_k$ is a countable infimum of measurable functions, hence measurable; $g_k \leq f_n$ for $n \geq k$ by definition; the sequence $(g_k)$ is nondecreasing; and $\lim_k g_k = \lim_k \inf_{n \geq k} f_n = \liminf_n f_n$ by definition of $\liminf$.

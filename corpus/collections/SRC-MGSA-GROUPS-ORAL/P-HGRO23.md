@@ -56,12 +56,12 @@ The order of the center is divisible by $p$.
 
 The class equation is
 $$
-|G|=|Z(G)|+\sum_i [G:C_G(x_i)],
+\cardinality{G}=\cardinality{Z(G)}+\sum_i [G:C_G(x_i)],
 $$
 where the $x_i$ represent the noncentral conjugacy classes. By step [](#s1){.pf-ref} every term
-in the sum is divisible by $p$, and $|G|=p^r$ is divisible by $p$. Hence
+in the sum is divisible by $p$, and $\cardinality{G}=p^r$ is divisible by $p$. Hence
 $$
-|Z(G)|\equiv0\pmod p.
+\cardinality{Z(G)}\equiv0\pmod p.
 $$
 
 :::
@@ -74,7 +74,7 @@ Therefore $Z(G)$ is nontrivial.
 
 ::: pf-proof
 
-Since $p$ divides $|Z(G)|$, we have $|Z(G)|\ge p>1$.
+Since $p$ divides $\cardinality{Z(G)}$, we have $\cardinality{Z(G)}\ge p>1$.
 
 :::
 

@@ -22,7 +22,7 @@ If $m > 1$, show the fundamental group of the $m$-fold projective plane is not a
 For the $m$-fold projective plane,
 $$
 \pi_1(P^{2\# m})\cong
-\left\langle \alpha_1,\ldots,\alpha_m\ \middle|\
+\left\langle \alpha_1,\ldots,\alpha_m\ \presentationbar\
 \alpha_1^2\alpha_2^2\cdots\alpha_m^2=1\right\rangle.
 $$
 Let

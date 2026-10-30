@@ -19,9 +19,9 @@ audit:
 Suppose $F:\RR^2\to\RR^2$ is differentiable everywhere, its derivative matrix is continuous everywhere, and its Jacobian determinant is everywhere nonzero.
 Assume also that
 $$
-\|F(x,y)\|\geq1
+\norm{F(x,y)}\geq1
 \quad\text{whenever}\quad
-\|(x,y)\|=1,
+\norm{(x,y)}=1,
 $$
 and that
 $$
@@ -41,7 +41,7 @@ Hint: if $U=\{(x,y):x^2+y^2<1\}$, prove that $F(U)\cap U$ is open and closed in 
 
 Let
 $$
-U=\{p\in\RR^2:\|p\|<1\}
+U=\{p\in\RR^2:\norm{p}<1\}
 $$
 and define
 $$
@@ -171,7 +171,7 @@ The closed unit disk
 $$
 \overline U
 =
-\{p\in\RR^2:\|p\|\le1\}
+\{p\in\RR^2:\norm{p}\le1\}
 $$
 is compact.
 Every $x_n$ belongs to $U\subseteq\overline U$.
@@ -218,11 +218,11 @@ The limit point $x$ lies in $U$, not on $\partial U$.
 
 Suppose
 $$
-\|x\|=1.
+\norm{x}=1.
 $$
 Then the boundary hypothesis gives
 $$
-\|F(x)\|\ge1.
+\norm{F(x)}\ge1.
 $$
 By step [](#s1-6){.pf-ref},
 $$
@@ -234,12 +234,12 @@ y\in U,
 $$
 so
 $$
-\|y\|<1,
+\norm{y}<1,
 $$
 a contradiction.
 Thus
 $$
-\|x\|<1,
+\norm{x}<1,
 $$
 so $x\in U$.
 

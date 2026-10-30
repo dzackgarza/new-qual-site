@@ -31,7 +31,7 @@ Suppose the complex power series $\textstyle \sum _ { n = 0 } ^ { \infty } a _ {
 
 a) Prove that the series converges absolutely for each $z$ with $\abs{z} < \abs{z_0}$
 
-b) Suppose $0 < r < | z _ { 0 } |$ . Show that the series converges uniformly on $| z | \leq r$
+b) Suppose $0 < r < \abs{ z _ { 0 } }$ . Show that the series converges uniformly on $\abs{ z } \leq r$
 :::
 
 ::: {.solution}

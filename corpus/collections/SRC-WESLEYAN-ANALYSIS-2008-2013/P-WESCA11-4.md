@@ -69,7 +69,7 @@ AB>0,
 $$
 and fix $z\in\CC$ with
 $$
-\boxed{|z|<AB}.
+\boxed{\abs{z}<AB}.
 $$
 
 
@@ -91,7 +91,7 @@ s<B
 $$
 such that
 $$
-\boxed{|z|<rs}.
+\boxed{\abs{z}<rs}.
 $$
 
 
@@ -99,10 +99,10 @@ $$
 
 Since
 $$
-|z|<AB,
+\abs{z}<AB,
 $$
 choose $r<A$ sufficiently close to $A$ and $s<B$ sufficiently close to
-$B$ so that their product still exceeds $|z|$. If one radius is infinite,
+$B$ so that their product still exceeds $\abs{z}$. If one radius is infinite,
 choose the corresponding finite $r$ or $s$ large enough.
 
 :::
@@ -113,7 +113,7 @@ choose the corresponding finite $r$ or $s$ large enough.
 
 The series
 $$
-\sum_{n=0}^{\infty}|a_n|r^n
+\sum_{n=0}^{\infty}\abs{a_n}r^n
 $$
 converges.
 
@@ -132,7 +132,7 @@ of convergence. Since $r<A$, apply this to the first power series.
 Therefore the sequence
 $$
 \boxed{
-\{|a_n|r^n\}_{n\ge0}}
+\{\abs{a_n}r^n\}_{n\ge0}}
 $$
 is bounded.
 
@@ -151,7 +151,7 @@ terms form a bounded sequence.
 Likewise,
 $$
 \boxed{
-\{|b_n|s^n\}_{n\ge0}}
+\{\abs{b_n}s^n\}_{n\ge0}}
 $$
 is bounded.
 
@@ -173,11 +173,11 @@ M,N>0
 $$
 such that
 $$
-|a_n|r^n\le M
+\abs{a_n}r^n\le M
 $$
 and
 $$
-|b_n|s^n\le N
+\abs{b_n}s^n\le N
 $$
 for all $n$.
 
@@ -195,7 +195,7 @@ Use the boundedness from steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 Set
 $$
 \boxed{
-q=\frac{|z|}{rs}}.
+q=\frac{\abs{z}}{rs}}.
 $$
 Then
 $$
@@ -215,9 +215,9 @@ This is step [](#s1-3){.pf-ref} divided by the positive number $rs$.
 
 For every $n$,
 $$
-|a_nb_nz^n|
+\abs{a_nb_nz^n}
 =
-(|a_n|r^n)(|b_n|s^n)q^n.
+(\abs{a_n}r^n)(\abs{b_n}s^n)q^n.
 $$
 
 
@@ -225,15 +225,15 @@ $$
 
 Since
 $$
-|z|^n
+\abs{z}^n
 =
 (rs)^nq^n,
 $$
 one has
 $$
-|a_nb_n||z|^n
+\abs{a_nb_n}\abs{z}^n
 =
-(|a_n|r^n)(|b_n|s^n)q^n.
+(\abs{a_n}r^n)(\abs{b_n}s^n)q^n.
 $$
 
 :::
@@ -245,7 +245,7 @@ $$
 Hence
 $$
 \boxed{
-|a_nb_nz^n|
+\abs{a_nb_nz^n}
 \le
 MNq^n}.
 $$
@@ -300,7 +300,7 @@ Apply the comparison test using steps [](#s1-10){.pf-ref} through [](#s1-11){.pf
 
 Since every $z$ with
 $$
-|z|<AB
+\abs{z}<AB
 $$
 lies in the disk of convergence of the coefficientwise product series,
 $$
@@ -310,7 +310,7 @@ $$
 
 ::: pf-proof
 
-Step [](#s1-12){.pf-ref} holds for an arbitrary $z$ satisfying $|z|<AB$. Therefore the
+Step [](#s1-12){.pf-ref} holds for an arbitrary $z$ satisfying $\abs{z}<AB$. Therefore the
 radius $R$ is at least $AB$.
 
 :::

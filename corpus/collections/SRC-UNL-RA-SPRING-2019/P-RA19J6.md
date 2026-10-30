@@ -39,7 +39,7 @@ Cover $[a,b]$ by neighborhoods where $f$ is bounded below by a positive constant
 ::: pf-proof
 
 ::: pf-step
-For each $x_0 \in [a,b]$: since $f(x_0) > 0$ and $f$ is continuous at $x_0$, choose $\delta_{x_0} > 0$ with $|f(x) - f(x_0)| < f(x_0)/2$ for $|x - x_0| < \delta_{x_0}$; then $f(x) > f(x_0)/2 > 0$ on $(x_0 - \delta_{x_0}, x_0 + \delta_{x_0}) \cap [a,b]$.
+For each $x_0 \in [a,b]$: since $f(x_0) > 0$ and $f$ is continuous at $x_0$, choose $\delta_{x_0} > 0$ with $\abs{f(x) - f(x_0)} < f(x_0)/2$ for $\abs{x - x_0} < \delta_{x_0}$; then $f(x) > f(x_0)/2 > 0$ on $(x_0 - \delta_{x_0}, x_0 + \delta_{x_0}) \cap [a,b]$.
 
 ::: pf-proof
 $\varepsilon$-$\delta$ definition of continuity with $\varepsilon = f(x_0)/2$.

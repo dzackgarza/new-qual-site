@@ -31,7 +31,7 @@ audit:
 ::: {.problem}
 Given: $G\in \mathbf{Ab}$
 
-Show: $T(G) \leq G$ (where $T(G) = \{ g\in G : |g| < \infty\}$
+Show: $T(G) \leq G$ (where $T(G) = \{ g\in G : \elementorder{g} < \infty\}$
 :::
 
 ::: {.solution}

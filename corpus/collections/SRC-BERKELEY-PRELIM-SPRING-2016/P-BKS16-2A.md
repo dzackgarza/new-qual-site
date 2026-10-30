@@ -29,7 +29,7 @@ Show that
 $$
 \int_{-\infty}^{\infty} f g'\,dx=-\int_{-\infty}^{\infty} f'g\,dx.
 $$
-(Recall that $L^2(\RR)$ is the set of integrable functions $h$ such that $\int_{-\infty}^{\infty}|h|^2\,dx<\infty$.)
+(Recall that $L^2(\RR)$ is the set of integrable functions $h$ such that $\int_{-\infty}^{\infty}\abs{h}^2\,dx<\infty$.)
 :::
 
 ::: {.solution}

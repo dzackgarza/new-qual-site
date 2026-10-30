@@ -74,12 +74,12 @@ Use polynomial density to test against $f$ itself.
 
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
 $$
-\|p_n-f\|_\infty\longrightarrow0.
+\norm{p_n-f}_\infty\longrightarrow0.
 $$
 Since $f$ is continuous, it is integrable, and
 $$
-\left|\int_0^1 f(x)(p_n(x)-f(x))\,dx\right|
-\le \|p_n-f\|_\infty\int_0^1|f(x)|\,dx
+\abs{\int_0^1 f(x)(p_n(x)-f(x))\,dx}
+\le \norm{p_n-f}_\infty\int_0^1\abs{f(x)}\,dx
 \longrightarrow0.
 $$
 But Step 1 gives

@@ -25,8 +25,8 @@ Show that there exist polynomials $p_n$ such that
 Choose pairwise disjoint open arcs $I_n\subset\circlegroup$. Define
 $$
 K_n=
-\left\{z:\frac1n\le |z|\le n,
-\ \frac z{|z|}\notin I_n\right\}
+\left\{z:\frac1n\le \abs{z}\le n,
+\ \frac z{\abs{z}}\notin I_n\right\}
 $$
 and
 $$
@@ -44,7 +44,7 @@ $$
 It is continuous on $L_n$ and holomorphic in its interior. By Mergelyan's
 theorem, for any $\varepsilon_n>0$ there is a polynomial $q_n$ with
 $$
-\sup_{L_n}|q_n-h_n|<\varepsilon_n.
+\sup_{L_n}\abs{q_n-h_n}<\varepsilon_n.
 $$
 Choose $\varepsilon_n$ so small that
 $$
@@ -53,11 +53,11 @@ $$
 n^2\varepsilon_n\to0.
 $$
 Because $q_n$ is $\varepsilon_n$-close to the constant $1$ on
-$|z|\le1/(2n)$, Cauchy's estimate gives
+$\abs{z}\le1/(2n)$, Cauchy's estimate gives
 $$
-|q_n'(0)|\le 2n\varepsilon_n,
+\abs{q_n'(0)}\le 2n\varepsilon_n,
 \qquad
-|q_n(0)-1|\le\varepsilon_n.
+\abs{q_n(0)-1}\le\varepsilon_n.
 $$
 For large $n$ define
 $$
@@ -71,13 +71,13 @@ p_n'(0)=0.
 $$
 
 Now fix $z\ne0$. For all sufficiently large $n$ we have
-$1/n\le|z|\le n$. Since the arcs $I_n$ are pairwise disjoint, the direction
-$z/|z|$ belongs to at most one of them. Hence $z\in K_n$ for all sufficiently
+$1/n\le\abs{z}\le n$. Since the arcs $I_n$ are pairwise disjoint, the direction
+$z/\abs{z}$ belongs to at most one of them. Hence $z\in K_n$ for all sufficiently
 large $n$. On $K_n$,
 $$
-|q_n(z)|\le\varepsilon_n,
+\abs{q_n(z)}\le\varepsilon_n,
 \qquad
-|q_n'(0)z|\le2n\varepsilon_n|z|.
+\abs{q_n'(0)z}\le2n\varepsilon_n\abs{z}.
 $$
 Both terms tend to $0$, while $q_n(0)\to1$. Therefore
 $$

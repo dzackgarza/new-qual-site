@@ -46,9 +46,9 @@ $$
 $$
 Then
 $$
-|\Omega|
+\cardinality{\Omega}
 =
-\sum_{g\in G}|\operatorname{Fix}(g)|.
+\sum_{g\in G}\cardinality{\operatorname{Fix}(g)}.
 $$
 
 ::: pf-proof
@@ -68,29 +68,29 @@ Summing their cardinalities over $g$ gives the displayed identity.
 
 If $X/G$ denotes the set of orbits, then
 $$
-|\Omega|=|G|\,|X/G|.
+\cardinality{\Omega}=\cardinality{G}\,\cardinality{X/G}.
 $$
 
 ::: pf-proof
 
 Count instead by the second coordinate:
 $$
-|\Omega|
+\cardinality{\Omega}
 =
-\sum_{x\in X}|G_x|,
+\sum_{x\in X}\cardinality{G_x},
 $$
 where $G_x$ is the stabilizer of $x$. For a fixed orbit
 $O\subseteq X$, orbit-stabilizer gives
 $$
-|G_x|=\frac{|G|}{|O|}
+\cardinality{G_x}=\frac{\cardinality{G}}{\cardinality{O}}
 $$
 for every $x\in O$. Hence
 $$
-\sum_{x\in O}|G_x|
+\sum_{x\in O}\cardinality{G_x}
 =
-|O|\frac{|G|}{|O|}
+\cardinality{O}\frac{\cardinality{G}}{\cardinality{O}}
 =
-|G|.
+\cardinality{G}.
 $$
 Summing once over all orbits proves the claim.
 
@@ -103,17 +103,17 @@ Summing once over all orbits proves the claim.
 Therefore the number of orbits is
 $$
 \boxed{
-|X/G|
+\cardinality{X/G}
 =
-\frac1{|G|}
-\sum_{g\in G}|\operatorname{Fix}(g)|.
+\frac1{\cardinality{G}}
+\sum_{g\in G}\cardinality{\operatorname{Fix}(g)}.
 }
 $$
 
 ::: pf-proof
 
-Equate the two expressions for $|\Omega|$ from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}
-and divide by $|G|$. This proves part (a).
+Equate the two expressions for $\cardinality{\Omega}$ from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}
+and divide by $\cardinality{G}$. This proves part (a).
 
 :::
 

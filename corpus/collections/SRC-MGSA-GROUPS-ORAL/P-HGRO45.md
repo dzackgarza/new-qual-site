@@ -72,14 +72,14 @@ The exceptional Mathieu actions are sharply $4$- and $5$-transitive.
 
 The natural action of $M_{11}$ has degree $11$ and
 $$
-|M_{11}|=11\cdot10\cdot9\cdot8,
+\cardinality{M_{11}}=11\cdot10\cdot9\cdot8,
 $$
 the number of ordered $4$-tuples of distinct points. Since the action is
 $4$-transitive, it is therefore sharp.
 
 Likewise the natural action of $M_{12}$ has degree $12$ and
 $$
-|M_{12}|=12\cdot11\cdot10\cdot9\cdot8,
+\cardinality{M_{12}}=12\cdot11\cdot10\cdot9\cdot8,
 $$
 the number of ordered $5$-tuples of distinct points. Its $5$-transitivity is
 therefore sharp.

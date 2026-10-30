@@ -65,7 +65,7 @@ Since $\phi$ is diagonalizable,
 $$
 E=\bigoplus_\lambda E_\lambda.
 $$
-By step [](#invariant){.pf-ref}, every $E_\lambda$ is $\psi$-invariant. Since $\psi$ is diagonalizable, its minimal polynomial splits into distinct linear factors; the minimal polynomial of each restriction $\psi|_{E_\lambda}$ divides it, so each restriction is diagonalizable. Choose an eigenbasis for $\psi$ inside each $E_\lambda$. The union of these bases is a basis of $E$ consisting of simultaneous eigenvectors of $\phi$ and $\psi$.
+By step [](#invariant){.pf-ref}, every $E_\lambda$ is $\psi$-invariant. Since $\psi$ is diagonalizable, its minimal polynomial splits into distinct linear factors; the minimal polynomial of each restriction $\psi\restrict_{E_\lambda}$ divides it, so each restriction is diagonalizable. Choose an eigenbasis for $\psi$ inside each $E_\lambda$. The union of these bases is a basis of $E$ consisting of simultaneous eigenvectors of $\phi$ and $\psi$.
 :::
 
 :::

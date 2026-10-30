@@ -30,7 +30,7 @@ $$
 \frac{\partial^2u}{\partial x^2}+\frac{\partial^2u}{\partial y^2}=0,\qquad u(x,0)=0,\qquad\frac{\partial u}{\partial y}(x,0)=\frac{\sin nx}{n}.
 $$
 
-(2) Show that there exist points $(x,y)\in D$ such that $\limsup_{n\to\infty}|u(x,y)|=\infty$.
+(2) Show that there exist points $(x,y)\in D$ such that $\limsup_{n\to\infty}\abs{u(x,y)}=\infty$.
 :::
 
 ::: {.solution}
@@ -189,9 +189,9 @@ n=12k+3,
 $$
 one has
 $$
-\left|
+\abs{
 \sin\left(\frac{n\pi}{6}\right)
-\right|
+}
 =1.
 $$
 
@@ -214,7 +214,7 @@ whose sine is $1$.
 
 At the point from step [](#s1-5){.pf-ref},
 $$
-\limsup_{n\to\infty}|u_n(x,y)|=\boxed{\infty}.
+\limsup_{n\to\infty}\abs{u_n(x,y)}=\boxed{\infty}.
 $$
 
 
@@ -223,14 +223,14 @@ $$
 Along the subsequence from step [](#s1-6){.pf-ref},
 $$
 \begin{aligned}
-\left|
+\abs{
 u_n\left(\frac\pi6,\frac12\right)
-\right|
+}
 &=
 \frac{e^{n/2}-e^{-n/2}}{2n^2}
-\left|
+\abs{
 \sin\left(\frac{n\pi}{6}\right)
-\right|\\
+}\\
 &=
 \frac{e^{n/2}-e^{-n/2}}{2n^2}.
 \end{aligned}

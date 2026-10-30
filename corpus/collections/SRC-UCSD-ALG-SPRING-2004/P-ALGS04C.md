@@ -64,13 +64,13 @@ Form the semidirect product
 $$
 G:=V\rtimes_A C_3.
 $$
-Then $|G|=75$.
+Then $\cardinality{G}=75$.
 
 ::: pf-proof
 
-The additive group $V$ has order $5^2=25$, and $|C_3|=3$. Hence
+The additive group $V$ has order $5^2=25$, and $\cardinality{C_3}=3$. Hence
 $$
-|G|=|V|\,|C_3|=25\cdot3=75.
+\cardinality{G}=\cardinality{V}\,\cardinality{C_3}=25\cdot3=75.
 $$
 
 :::

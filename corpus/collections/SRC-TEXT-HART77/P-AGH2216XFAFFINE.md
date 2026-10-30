@@ -52,7 +52,7 @@ U=\operatorname{Spec}B\subseteq X
 $$
 be affine, and let
 $$
-\bar f=f|_U\in B.
+\bar f=f\restrict_U\in B.
 $$
 For a point $x\in U$ corresponding to a prime $\mathfrak p\subseteq B$,
 $$
@@ -111,11 +111,11 @@ U_i=\operatorname{Spec}B_i.
 $$
 Let
 $$
-f_i=f|_{U_i},
+f_i=f\restrict_{U_i},
 \qquad
-a_i=a|_{U_i}.
+a_i=a\restrict_{U_i}.
 $$
-If $a|_{X_f}=0$, then for every $i$ there is an integer $n_i\ge0$ such that
+If $a\restrict_{X_f}=0$, then for every $i$ there is an integer $n_i\ge0$ such that
 $$
 f_i^{n_i}a_i=0
 $$
@@ -128,7 +128,7 @@ U_i\cap X_f=D(f_i).
 $$
 The hypothesis says
 $$
-a_i|_{D(f_i)}=0.
+a_i\restrict_{D(f_i)}=0.
 $$
 Since
 $$
@@ -161,7 +161,7 @@ n>\max_i n_i.
 $$
 Then on every $U_i$,
 $$
-(f^na)|_{U_i}
+(f^na)\restrict_{U_i}
 =f_i^na_i
 =0.
 $$
@@ -205,7 +205,7 @@ Write
 $$
 U_i=\operatorname{Spec}B_i,
 \qquad
-f_i=f|_{U_i}.
+f_i=f\restrict_{U_i}.
 $$
 By step [](#u-cap-xf-equals-dfbar){.pf-ref},
 $$
@@ -262,7 +262,7 @@ Rename $c_i'$ as $c_i$.
 ::: {.pf-step #dij-vanishes-on-xf}
 On every overlap $U_{ij}$, the difference
 $$
-d_{ij}=c_i|_{U_{ij}}-c_j|_{U_{ij}}
+d_{ij}=c_i\restrict_{U_{ij}}-c_j\restrict_{U_{ij}}
 $$
 restricts to zero on
 $$
@@ -293,7 +293,7 @@ on $U_{ij}$.
 ::: pf-proof
 The scheme $U_{ij}$ is quasi-compact by hypothesis.  Apply part (b), proved in steps [](#local-annihilator-exponents-exist){.pf-ref} and [](#f-n-a-zero-global){.pf-ref}, to the quasi-compact scheme $U_{ij}$, the global function
 $$
-f|_{U_{ij}},
+f\restrict_{U_{ij}},
 $$
 and the section $d_{ij}$.  Step [](#dij-vanishes-on-xf){.pf-ref} is exactly the hypothesis that $d_{ij}$ vanishes on its nonvanishing locus.  Therefore some power of $f$ annihilates $d_{ij}$.
 :::
@@ -334,7 +334,7 @@ a\in A=\Gamma(X,\mathcal O_X)
 $$
 such that
 $$
-\boxed{a|_{X_f}=f^{n_0+m}b.}
+\boxed{a\restrict_{X_f}=f^{n_0+m}b.}
 $$
 
 ::: pf-proof
@@ -398,13 +398,13 @@ $$
 \qquad
 \frac a{f^r}
 \longmapsto
-\frac{a|_{X_f}}{(f|_{X_f})^r}.
+\frac{a\restrict_{X_f}}{(f\restrict_{X_f})^r}.
 $$
 
 ::: pf-proof
 On $X_f$, the section $f$ is a unit in every stalk and hence is a unit of the sheaf of rings locally.  In fact its pointwise inverse glues uniquely, so
 $$
-f|_{X_f}
+f\restrict_{X_f}
 $$
 is an invertible global section.  Therefore the restriction map
 $$
@@ -423,9 +423,9 @@ Suppose
 $$
 \theta\left(\frac a{f^r}\right)=0.
 $$
-Since $f|_{X_f}$ is invertible, this implies
+Since $f\restrict_{X_f}$ is invertible, this implies
 $$
-a|_{X_f}=0.
+a\restrict_{X_f}=0.
 $$
 By step [](#x-quasicompact-under-c){.pf-ref}, $X$ is quasi-compact, so part (b), namely step [](#f-n-a-zero-global){.pf-ref}, gives an integer $n>0$ with
 $$
@@ -454,12 +454,12 @@ a\in A
 $$
 such that
 $$
-a|_{X_f}=f^nb.
+a\restrict_{X_f}=f^nb.
 $$
 Since $f$ is invertible on $X_f$,
 $$
 b
-=\frac{a|_{X_f}}{f^n}
+=\frac{a\restrict_{X_f}}{f^n}
 =\theta\left(\frac a{f^n}\right).
 $$
 Thus every section lies in the image.

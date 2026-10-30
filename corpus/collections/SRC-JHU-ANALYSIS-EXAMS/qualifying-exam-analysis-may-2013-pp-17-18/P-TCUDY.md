@@ -30,13 +30,13 @@ $$(f, g) = \int_{\RR^d} f(x) \overline{g(x)} \, dx, \quad \text{for } f, g \in L
 
 which induces the $L^2$-norm
 
-$$\|f\|_{L^2} = (f, f)^{1/2}.$$
+$$\norm{f}_{L^2} = (f, f)^{1/2}.$$
 
-(a) If the sequence of functions $\{f_n\}_{n=1}^\infty$ in $L^2(\RR^d)$ satisfy that $\|f_n\|_{L^2} = 1$, show that there exists a subsequence of functions $\{f_{n_j}\}_{j=1}^\infty$ such that $f_{n_j}$ converges weakly to some function $f$ in $L^2(\RR^d)$, i.e.,
+(a) If the sequence of functions $\{f_n\}_{n=1}^\infty$ in $L^2(\RR^d)$ satisfy that $\norm{f_n}_{L^2} = 1$, show that there exists a subsequence of functions $\{f_{n_j}\}_{j=1}^\infty$ such that $f_{n_j}$ converges weakly to some function $f$ in $L^2(\RR^d)$, i.e.,
 
 $$(f_{n_j}, g) \to (f, g) \quad \text{for all } g \in L^2(\RR^d).$$
 
-(b) If $f_n \rightharpoonup f$ weakly in $L^2(\RR^d)$ and $\|f_n\|_{L^2} \to \|f\|_{L^2}$ as $n \to \infty$, show that $\|f_n - f\|_{L^2} \to 0$ as $n \to \infty$.
+(b) If $f_n \rightharpoonup f$ weakly in $L^2(\RR^d)$ and $\norm{f_n}_{L^2} \to \norm{f}_{L^2}$ as $n \to \infty$, show that $\norm{f_n - f}_{L^2} \to 0$ as $n \to \infty$.
 :::
 
 ::: {.solution}
@@ -73,27 +73,27 @@ Prove part (b).
 
 Weak convergence gives
 $$
-(f_n,f)\longrightarrow(f,f)=\|f\|_2^2.
+(f_n,f)\longrightarrow(f,f)=\norm{f}_2^2.
 $$
 Using the Hilbert-space norm identity,
 $$
 \begin{aligned}
-\|f_n-f\|_2^2
-&=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}(f_n,f).
+\norm{f_n-f}_2^2
+&=\norm{f_n}_2^2+\norm{f}_2^2-2\operatorname{Re}(f_n,f).
 \end{aligned}
 $$
 By hypothesis,
 $$
-\|f_n\|_2^2\longrightarrow\|f\|_2^2,
+\norm{f_n}_2^2\longrightarrow\norm{f}_2^2,
 $$
-and the weak-convergence term tends to $\|f\|_2^2$. Hence
+and the weak-convergence term tends to $\norm{f}_2^2$. Hence
 $$
-\|f_n-f\|_2^2\longrightarrow
-\|f\|_2^2+\|f\|_2^2-2\|f\|_2^2=0.
+\norm{f_n-f}_2^2\longrightarrow
+\norm{f}_2^2+\norm{f}_2^2-2\norm{f}_2^2=0.
 $$
 Therefore
 $$
-\boxed{\|f_n-f\|_2\to0.}
+\boxed{\norm{f_n-f}_2\to0.}
 $$
 
 :::

@@ -238,7 +238,7 @@ V\subseteq Y
 $$
 such that
 $$
-f|_U:U\xrightarrow{\sim}V.
+f\restrict_U:U\xrightarrow{\sim}V.
 $$
 Restricting rational functions to these dense opens identifies
 $$

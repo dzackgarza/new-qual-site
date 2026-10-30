@@ -26,14 +26,14 @@ audit:
 
 ::: {.problem}
 Let $f$ and $g$ be functions holomorphic defined on a domain $U \subseteq \CC$.
-Set $\varphi(z) = |f(z)| + |g(z)|$ for $z \in U$.
+Set $\varphi(z) = \abs{f(z)} + \abs{g(z)}$ for $z \in U$.
 If $\varphi$ assumes a maximum value on $U$, show that both $f$ and $g$ are constants on $U$.
 :::
 
 ::: {.solution}
 Choose $z_0\in U$ where the maximum is attained and set
-$M=|f(z_0)|+|g(z_0)|$. If $M=0$, the inequality
-$0\leq|f(z)|+|g(z)|\leq M$ makes both functions zero.
+$M=\abs{f(z_0)}+\abs{g(z_0)}$. If $M=0$, the inequality
+$0\leq\abs{f(z)}+\abs{g(z)}\leq M$ makes both functions zero.
 Assume henceforth that $M>0$.
 
 ::: pf
@@ -45,12 +45,12 @@ A suitable holomorphic linear combination is constant.
 ::: pf-proof
 
 Choose complex numbers $\alpha,\beta$ of modulus one with
-$\alpha f(z_0)=|f(z_0)|$ and $\beta g(z_0)=|g(z_0)|$.
+$\alpha f(z_0)=\abs{f(z_0)}$ and $\beta g(z_0)=\abs{g(z_0)}$.
 For a nonzero value, take its conjugate divided by its
 modulus; for a zero value, any unit complex number works.
 The holomorphic function $H=\alpha f+\beta g$ satisfies
 $$
-|H(z)|\leq|f(z)|+|g(z)|\leq M,
+\abs{H(z)}\leq\abs{f(z)}+\abs{g(z)}\leq M,
 \qquad H(z_0)=M.
 $$
 The maximum modulus principle on the connected domain
@@ -68,8 +68,8 @@ Each summand must be constant separately.
 
 For every $z\in U$,
 $$
-\bigl(|\alpha f(z)|-\operatorname{Re}(\alpha f(z))\bigr)
-+\bigl(|\beta g(z)|-\operatorname{Re}(\beta g(z))\bigr)
+\bigl(\abs{\alpha f(z)}-\operatorname{Re}(\alpha f(z))\bigr)
++\bigl(\abs{\beta g(z)}-\operatorname{Re}(\beta g(z))\bigr)
 =\varphi(z)-M\leq0.
 $$
 Each term on the left is nonnegative, so both vanish.

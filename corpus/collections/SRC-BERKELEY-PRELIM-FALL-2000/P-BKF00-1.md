@@ -27,7 +27,7 @@ Let $V$ be finite-dimensional, let $f:V\to V$ be linear, and let
 $$
 W=\operatorname{im}f.
 $$
-Prove that the restriction $f|_W:W\to W$ has the same trace as $f:V\to V$.
+Prove that the restriction $f\restrict_W:W\to W$ has the same trace as $f:V\to V$.
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ Hence
 $$
 f(w)=f(f(v))\in\operatorname{im}f=W.
 $$
-Therefore $f(W)\subseteq W$, so the restriction $f|_W:W\to W$ is an
+Therefore $f(W)\subseteq W$, so the restriction $f\restrict_W:W\to W$ is an
 endomorphism.
 :::
 
@@ -89,14 +89,14 @@ A&B\\
 0&0
 \end{pmatrix},
 $$
-where $A$ is the matrix of $f|_W$ in the basis
+where $A$ is the matrix of $f\restrict_W$ in the basis
 $w_1,\ldots,w_r$.
 
 ::: pf-proof
 By step [](#W-f-invariant){.pf-ref}, each $f(w_i)$ belongs to $W$, so the first $r$ columns have
 zero coordinates in the complementary basis vectors
 $u_{r+1},\ldots,u_n$. Their first $r$ coordinates are exactly the columns
-of the matrix $A$ of $f|_W$.
+of the matrix $A$ of $f\restrict_W$.
 
 For every $j>r$, the vector $f(u_j)$ also belongs to
 $\operatorname{im}f=W$ by the definition of $W$. Thus the remaining
@@ -111,7 +111,7 @@ This gives the displayed matrix.
 The two traces are equal:
 $$
 \boxed{
-\operatorname{tr}(f|_W)=\operatorname{tr}(f).
+\operatorname{tr}(f\restrict_W)=\operatorname{tr}(f).
 }
 $$
 
@@ -123,8 +123,8 @@ $$
 =
 \operatorname{tr}(A).
 $$
-Since $A$ is the matrix of $f|_W$, its trace is
-$\operatorname{tr}(f|_W)$.
+Since $A$ is the matrix of $f\restrict_W$, its trace is
+$\operatorname{tr}(f\restrict_W)$.
 :::
 
 :::

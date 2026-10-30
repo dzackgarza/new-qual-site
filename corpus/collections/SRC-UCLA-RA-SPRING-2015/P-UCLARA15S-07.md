@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let
 $$
-D=\{z\in\CC:|z|<1\},\qquad \CC_+=\{z\in\CC:\operatorname{Im}z>0\}.
+D=\{z\in\CC:\abs{z}<1\},\qquad \CC_+=\{z\in\CC:\operatorname{Im}z>0\}.
 $$
 Suppose $f_n:D\to\CC_+$ is a sequence of holomorphic functions and $f_n(0)\to0$ as $n\to\infty$.
 Show that $f_n(z)\to0$ uniformly on compact subsets of $D$.
@@ -85,7 +85,7 @@ h_n(z)
 $$
 Then $h_n:D\to D$ is holomorphic, $h_n(0)=0$, and
 $$
-|h_n(z)|\le|z|
+\abs{h_n(z)}\le\abs{z}
 \qquad
 (z\in D).
 $$
@@ -108,7 +108,7 @@ is an automorphism of $D$ sending $a_n$ to $0$. Therefore $h_n$ is a holomorphic
 
 For every $0<r<1$,
 $$
-\sup_{|z|\le r}|g_n(z)-a_n|
+\sup_{\abs{z}\le r}\abs{g_n(z)-a_n}
 \longrightarrow0.
 $$
 
@@ -126,25 +126,25 @@ Hence
 $$
 g_n(z)-a_n
 =
-\frac{(1-|a_n|^2)h_n(z)}
+\frac{(1-\abs{a_n}^2)h_n(z)}
 {1+\overline{a_n}h_n(z)}.
 $$
-For $|z|\le r$, step [](#s1-2){.pf-ref} gives $|h_n(z)|\le r$, so
+For $\abs{z}\le r$, step [](#s1-2){.pf-ref} gives $\abs{h_n(z)}\le r$, so
 $$
-|1+\overline{a_n}h_n(z)|
+\abs{1+\overline{a_n}h_n(z)}
 \ge
-1-|a_n|r
+1-\abs{a_n}r
 \ge
 1-r.
 $$
 Therefore
 $$
-\sup_{|z|\le r}
-|g_n(z)-a_n|
+\sup_{\abs{z}\le r}
+\abs{g_n(z)-a_n}
 \le
-\frac{r(1-|a_n|^2)}{1-r}.
+\frac{r(1-\abs{a_n}^2)}{1-r}.
 $$
-By step [](#s1-1){.pf-ref}, $|a_n|\to1$, so the right-hand side tends to $0$.
+By step [](#s1-1){.pf-ref}, $\abs{a_n}\to1$, so the right-hand side tends to $0$.
 
 :::
 
@@ -156,18 +156,18 @@ For every $0<r<1$,
 $$
 g_n\longrightarrow-1
 $$
-uniformly on $\{|z|\le r\}$.
+uniformly on $\{\abs{z}\le r\}$.
 
 
 ::: pf-proof
 
 By the triangle inequality,
 $$
-\sup_{|z|\le r}|g_n(z)+1|
+\sup_{\abs{z}\le r}\abs{g_n(z)+1}
 \le
-\sup_{|z|\le r}|g_n(z)-a_n|
+\sup_{\abs{z}\le r}\abs{g_n(z)-a_n}
 +
-|a_n+1|.
+\abs{a_n+1}.
 $$
 The first term tends to $0$ by step [](#s1-3){.pf-ref}, and the second tends to $0$ by step [](#s1-1){.pf-ref}.
 
@@ -181,7 +181,7 @@ For every $0<r<1$,
 $$
 \boxed{
 f_n\longrightarrow0
-\text{ uniformly on }\{|z|\le r\}
+\text{ uniformly on }\{\abs{z}\le r\}
 }.
 $$
 
@@ -200,7 +200,7 @@ step [](#s1-4){.pf-ref} gives
 $$
 1+g_n\longrightarrow0
 $$
-uniformly on $|z|\le r$, while
+uniformly on $\abs{z}\le r$, while
 $$
 1-g_n\longrightarrow2
 $$
@@ -219,7 +219,7 @@ $f_n\to0$ uniformly on compact subsets of $D$.
 
 Every compact subset of $D$ is contained in a closed disk
 $$
-\{|z|\le r\}
+\{\abs{z}\le r\}
 $$
 for some $r<1$. Apply step [](#s1-5){.pf-ref}.
 

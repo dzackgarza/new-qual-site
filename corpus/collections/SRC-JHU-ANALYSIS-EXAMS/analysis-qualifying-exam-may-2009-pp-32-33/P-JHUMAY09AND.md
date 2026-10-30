@@ -46,9 +46,9 @@ The real integral exists absolutely.
 
 ::: pf-proof
 
-For real $x$, $|e^{-ix}|=1$. The function
+For real $x$, $\abs{e^{-ix}}=1$. The function
 $(1+x^2)^{-1}$ is bounded on $[-1,1]$ and is at most
-$x^{-2}$ for $|x|\geq1$. Since the latter is integrable
+$x^{-2}$ for $\abs{x}\geq1$. Since the latter is integrable
 on both tails, the integral of $e^{-ix}/(1+x^2)$ is
 absolutely convergent. Thus limits of its truncated
 integrals determine its ordinary integral, not merely
@@ -95,12 +95,12 @@ The semicircle contribution tends to zero.
 
 On $\Gamma_R$, one has $\operatorname{Im}z\leq0$ and
 $$
-|e^{-iz}|=e^{\operatorname{Im}z}\leq1,
-\qquad |1+z^2|\geq R^2-1.
+\abs{e^{-iz}}=e^{\operatorname{Im}z}\leq1,
+\qquad \abs{1+z^2}\geq R^2-1.
 $$
 The arc length is $\pi R$, so
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\frac{\pi R}{R^2-1}\longrightarrow0.
 $$
 Letting $R\to\infty$ in the identity of step [](#s2){.pf-ref},

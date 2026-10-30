@@ -27,7 +27,7 @@ Let $\mcf$ be a sheaf on $X$ and let $s \in \mcf(U)$ be a section over an open s
 The **support of $s$**, denoted $\supp s$, is defined to be $\theset{P \in U \st s_P \neq 0}$, where $s_P$ denotes the germ of $s$ in the stalk $\mcf_P$.
 Show that $\supp s$ is a closed subset of $U$.
 
-Define the support of $\mcf$ to be $\supp \mcf \definedas \theset{P \in X \st \mcf_P \neq 0}$.
+Define the support of $\mcf$ to be $\supp \mcf \coloneqq \theset{P \in X \st \mcf_P \neq 0}$.
 Show that this need not be a closed subset.
 :::
 
@@ -55,7 +55,7 @@ P\in V\subseteq U
 $$
 such that
 $$
-s|_V=0.
+s\restrict_V=0.
 $$
 For every $Q\in V$, therefore,
 $$

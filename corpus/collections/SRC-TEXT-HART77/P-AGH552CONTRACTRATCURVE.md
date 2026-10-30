@@ -105,7 +105,7 @@ $$
 ::: {.pf-step #m-restricts-trivial}
 The divisor $D$ has degree zero on $Y$, and hence
 $$
-\boxed{\mathcal M|_Y\cong\OO_{\PP^1}.}
+\boxed{\mathcal M\restrict_Y\cong\OO_{\PP^1}.}
 $$
 
 ::: pf-proof
@@ -122,7 +122,7 @@ $$
 Since $Y\cong\PP^1$, every line bundle of degree zero on $Y$ is trivial.
 Therefore
 $$
-\mathcal M|_Y\cong\OO_Y\cong\OO_{\PP^1}.
+\mathcal M\restrict_Y\cong\OO_Y\cong\OO_{\PP^1}.
 $$
 :::
 
@@ -222,7 +222,7 @@ The restriction map
 $$
 H^0(X,\mathcal M)
 \longrightarrow
-H^0(Y,\mathcal M|_Y)
+H^0(Y,\mathcal M\restrict_Y)
 $$
 is surjective.
 
@@ -241,7 +241,7 @@ $$
 \longrightarrow
 \mathcal M
 \longrightarrow
-\mathcal M|_Y
+\mathcal M\restrict_Y
 \longrightarrow
 0.
 $$
@@ -261,11 +261,11 @@ The line bundle $\mathcal M$ is globally generated on all of $X$.
 ::: pf-proof
 Step [](#globally-generated-away-from-y){.pf-ref} gives generation away from $Y$. By step [](#m-restricts-trivial){.pf-ref},
 $$
-\mathcal M|_Y\cong\OO_Y.
+\mathcal M\restrict_Y\cong\OO_Y.
 $$
 Choose the nowhere-zero constant section
 $$
-1\in H^0(Y,\mathcal M|_Y).
+1\in H^0(Y,\mathcal M\restrict_Y).
 $$
 By step [](#restriction-surjective){.pf-ref} it lifts to a section
 $$
@@ -280,7 +280,7 @@ step [](#globally-generated-away-from-y){.pf-ref} this proves global generation.
 :::
 
 ::: {.pf-step #y-maps-to-point}
-The complete linear system $|\mathcal M|$ defines a morphism
+The complete linear system $\linearsystem{\mathcal M}$ defines a morphism
 $$
 \varphi:X\longrightarrow\PP^N
 $$
@@ -295,12 +295,12 @@ complete linear system.
 
 By step [](#m-restricts-trivial){.pf-ref},
 $$
-\mathcal M|_Y\cong\OO_Y,
+\mathcal M\restrict_Y\cong\OO_Y,
 $$
 so every global section of $\mathcal M$, when restricted to $Y$, is a
 constant multiple of one fixed nowhere-zero trivializing section. Therefore
-all homogeneous coordinate ratios of $\varphi|_Y$ are constant. Hence
-$\varphi|_Y$ is constant, with image a single point $P$.
+all homogeneous coordinate ratios of $\varphi\restrict_Y$ are constant. Hence
+$\varphi\restrict_Y$ is constant, with image a single point $P$.
 :::
 
 :::
@@ -345,7 +345,7 @@ assertion.
 The restriction
 $$
 \boxed{
-\varphi|_{X\setminus Y}:
+\varphi\restrict_{X\setminus Y}:
 X\setminus Y
 \xrightarrow{\sim}
 \varphi(X)\setminus\{P\}}
@@ -358,7 +358,7 @@ $$
 \iota_m:X\hookrightarrow\PP^r
 $$
 be the closed immersion defined by the very ample complete linear system
-$|mH|$ and the basis $\sigma_0,\ldots,\sigma_r$ from step [](#fiber-over-p-is-y){.pf-ref}.
+$\linearsystem{mH}$ and the basis $\sigma_0,\ldots,\sigma_r$ from step [](#fiber-over-p-is-y){.pf-ref}.
 
 Choose homogeneous coordinates on $\PP^N$ for $\varphi$ so that the first
 $r+1$ coordinates are the sections
@@ -395,19 +395,19 @@ $$
 $$
 Thus
 $$
-\rho\circ\varphi|_{X\setminus Y}
+\rho\circ\varphi\restrict_{X\setminus Y}
 =
-\iota_m|_{X\setminus Y}.
+\iota_m\restrict_{X\setminus Y}.
 $$
 Because $\iota_m$ is a closed immersion, its inverse on its image is a
 morphism. Therefore
 $$
-\bigl(\iota_m|_{X\setminus Y}\bigr)^{-1}
+\bigl(\iota_m\restrict_{X\setminus Y}\bigr)^{-1}
 \circ
 \rho
 $$
 is a morphism on $\varphi(X)\setminus\{P\}$ and is inverse to
-$\varphi|_{X\setminus Y}$. Step [](#fiber-over-p-is-y){.pf-ref} ensures that every point of
+$\varphi\restrict_{X\setminus Y}$. Step [](#fiber-over-p-is-y){.pf-ref} ensures that every point of
 $\varphi(X)\setminus\{P\}$ comes from $X\setminus Y$. Hence the restriction
 is an isomorphism.
 :::

@@ -28,7 +28,7 @@ audit:
 Let $O$ be the ring of integers of $\QQ(\sqrt2)$.
 Show that $O$ is a Euclidean domain with respect to the absolute field norm
 $$
-\delta(a+b\sqrt2)=\left|a^2-2b^2\right|.
+\delta(a+b\sqrt2)=\abs{a^2-2b^2}.
 $$
 :::
 
@@ -90,7 +90,7 @@ $$
 N(\alpha)=\alpha\tau(\alpha),\qquad
 N(\alpha\beta)=N(\alpha)N(\beta),
 $$
-and absolute values give multiplicativity of $\delta=|N|$.
+and absolute values give multiplicativity of $\delta=\abs{N}$.
 Step [](#s1){.pf-ref} makes $N$ integer-valued on $O$. If $\alpha\ne0$, then
 both $\alpha$ and $\tau(\alpha)$ are nonzero field elements, so
 $\delta(\alpha)$ is a positive integer.
@@ -109,13 +109,13 @@ Let $\alpha,\beta\in O$ with $\beta\ne0$, and write
 $$
 \frac{\alpha}{\beta}=u+v\sqrt2,\qquad u,v\in\QQ.
 $$
-Choose integers $m,n$ such that $|u-m|\leq1/2$ and $|v-n|\leq1/2$,
+Choose integers $m,n$ such that $\abs{u-m}\leq1/2$ and $\abs{v-n}\leq1/2$,
 and put $q=m+n\sqrt2\in O$ and $r=\alpha-\beta q\in O$.
 If $r=0$, the division has zero remainder. Otherwise step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 \delta(r)
-&=\delta(\beta)\left|(u-m)^2-2(v-n)^2\right|\\
+&=\delta(\beta)\abs{(u-m)^2-2(v-n)^2}\\
 &\leq\delta(\beta)\bigl((u-m)^2+2(v-n)^2\bigr)\\
 &\leq\frac34\delta(\beta)<\delta(\beta).
 \end{aligned}

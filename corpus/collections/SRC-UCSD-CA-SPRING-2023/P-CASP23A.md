@@ -40,7 +40,7 @@ $\sum n!z^n$, which has radius of convergence $0$.
 $$
 A(z)=\sum_{n=0}^\infty z^n.
 $$
-Its radius of convergence is $1$. At every $|z|=1$, the terms $z^n$ have
+Its radius of convergence is $1$. At every $\abs{z}=1$, the terms $z^n$ have
 modulus $1$ and hence do not tend to $0$, so the series diverges at every
 point of $\circlegroup$.
 
@@ -48,13 +48,13 @@ point of $\circlegroup$.
 $$
 A(z)=\sum_{n=1}^\infty \frac{z^n}{n^2}.
 $$
-The root test gives radius $1$, while on $|z|=1$ the series converges
+The root test gives radius $1$, while on $\abs{z}=1$ the series converges
 absolutely because $\sum n^{-2}<\infty$.
 
 (c) If $A$ admitted an analytic continuation to an open neighborhood of
 $\overline{\DD}$, compactness of $\overline{\DD}$ would give
 $\varepsilon>0$ such that the continuation is holomorphic on
-$|z|<1+\varepsilon$. Its Taylor series at $0$ would then have radius of
+$\abs{z}<1+\varepsilon$. Its Taylor series at $0$ would then have radius of
 convergence at least $1+\varepsilon$, contradicting the assumed radius $1$.
 Thus at least one point of $\circlegroup$ is a singularity.
 
@@ -86,7 +86,7 @@ $$
 As a usual power series, its coefficients are $0$ or $1$, with infinitely many
 coefficients equal to $1$, so
 $$
-\limsup_{m\to\infty}|a_m|^{1/m}=1.
+\limsup_{m\to\infty}\abs{a_m}^{1/m}=1.
 $$
 Thus the radius of convergence is $1$. The nonzero exponents satisfy
 $$

@@ -50,7 +50,7 @@ $c(0)=c(2\pi)$. The ordinary real logarithm is therefore
 defined along its entire image and has derivative $c'/c$.
 By the chain rule,
 $$
-\int_{|z|=1}\frac{f'(z)}{f(z)}\,dz
+\int_{\abs{z}=1}\frac{f'(z)}{f(z)}\,dz
 =\int_0^{2\pi}\frac{c'(t)}{c(t)}\,dt
 =\log c(2\pi)-\log c(0)=0.
 $$
@@ -77,7 +77,7 @@ a finite set, with finite orders, by their local
 meromorphic factorizations and compactness [@SS03].
 The argument principle gives
 $$
-N-P=\frac1{2\pi i}\int_{|z|=1}\frac{f'}f\,dz=0,
+N-P=\frac1{2\pi i}\int_{\abs{z}=1}\frac{f'}f\,dz=0,
 $$
 where $N$ is the sum of the zero orders and $P$ the sum
 of the pole orders in $D$ [@SS03]. Thus $N=P$, exactly

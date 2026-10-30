@@ -192,7 +192,7 @@ for $n\ge N$, and step [](#s1-1){.pf-ref} gives nonnegativity.
 
 Therefore
 $$
-\boxed{\|f_n\|_\infty\to0}.
+\boxed{\norm{f_n}_\infty\to0}.
 $$
 
 
@@ -200,7 +200,7 @@ $$
 
 Step [](#s1-6){.pf-ref} shows that for every $\varepsilon>0$, there exists $N$ such that for every $n\ge N$,
 $$
-\sup_{x\in[0,1]}|f_n(x)|
+\sup_{x\in[0,1]}\abs{f_n(x)}
 <
 \varepsilon.
 $$

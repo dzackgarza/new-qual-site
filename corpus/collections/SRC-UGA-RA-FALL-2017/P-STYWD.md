@@ -38,13 +38,13 @@ Let $I \subseteq \RR$ be a bounded interval.
 :::
 
 ::: pf-step
-Since $I$ is bounded, there exists $M \in (0, \infty)$ such that $|x| \le M$ for all $x \in I$.
+Since $I$ is bounded, there exists $M \in (0, \infty)$ such that $\abs{x} \le M$ for all $x \in I$.
 
 :::
 
 ::: pf-step
 For each $n \ge 0$ and $x \in I$, the terms are bounded by
-$$\left| \frac{x^n}{n!} \right| = \frac{|x|^n}{n!} \le \frac{M^n}{n!} =: M_n.$$
+$$\abs{ \frac{x^n}{n!} } = \frac{\abs{x}^n}{n!} \le \frac{M^n}{n!} =: M_n.$$
 
 :::
 
@@ -74,7 +74,7 @@ If a series of functions $\sum_{n=0}^\infty u_n(x)$ converges uniformly on a set
 
 ::: pf-step
 In particular, the general term must converge uniformly to 0 on $E$:
-$$\lim_{n \to \infty} \sup_{x \in E} |u_n(x)| = \lim_{n \to \infty} \sup_{x \in E} |S_n(x) - S_{n-1}(x)| = 0.$$
+$$\lim_{n \to \infty} \sup_{x \in E} \abs{u_n(x)} = \lim_{n \to \infty} \sup_{x \in E} \abs{S_n(x) - S_{n-1}(x)} = 0.$$
 
 :::
 
@@ -97,7 +97,7 @@ Case 1 ($I$ is unbounded from above):
 
 - There exists a sequence $(x_k)_{k=1}^\infty \subset I$ such that $x_k \to +\infty$.
 - For any fixed $n \ge 1$:
-$$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \NN} \frac{x_k^n}{n!} = \infty.$$
+$$\sup_{x \in I} \abs{ \frac{x^n}{n!} } \ge \sup_{k \in \NN} \frac{x_k^n}{n!} = \infty.$$
 - Thus the terms $u_n(x) = \frac{x^n}{n!}$ do not tend to 0 uniformly on $I$.
 
 :::
@@ -107,8 +107,8 @@ Case 2 ($I$ is unbounded from below):
 
 - There exists a sequence $(x_k)_{k=1}^\infty \subset I$ such that $x_k \to -\infty$.
 - For any fixed $n \ge 1$:
-$$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \NN} \frac{|x_k|^n}{n!} = \infty.$$
-- Again, $\sup_{x \in I} |u_n(x)| = \infty$ for each $n \ge 1$.
+$$\sup_{x \in I} \abs{ \frac{x^n}{n!} } \ge \sup_{k \in \NN} \frac{\abs{x_k}^n}{n!} = \infty.$$
+- Again, $\sup_{x \in I} \abs{u_n(x)} = \infty$ for each $n \ge 1$.
 
 :::
 

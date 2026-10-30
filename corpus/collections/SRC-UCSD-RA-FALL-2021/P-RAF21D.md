@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let functions $f_n \in C([0, 1])$ satisfy $\sup_n |f_n(x)| < \infty$ for each $x \in [0, 1]$.
-Show that there are $0 \leq a < b \leq 1$ such that $\sup_n \|f_n \chi_{(a,b)}\|_u < \infty$.
+Let functions $f_n \in C([0, 1])$ satisfy $\sup_n \abs{f_n(x)} < \infty$ for each $x \in [0, 1]$.
+Show that there are $0 \leq a < b \leq 1$ such that $\sup_n \norm{f_n \chi_{(a,b)}}_u < \infty$.
 :::
 
 ::: {.solution}
@@ -36,17 +36,17 @@ Show that there are $0 \leq a < b \leq 1$ such that $\sup_n \|f_n \chi_{(a,b)}\|
 
 ::: pf-step
 
-The sets $E_m\coloneqq\{x\in[0,1]:|f_n(x)|\le m\text{ for every }n\}$, $m\ge1$, are closed and cover $[0,1]$.
+The sets $E_m\coloneqq\{x\in[0,1]:\abs{f_n(x)}\le m\text{ for every }n\}$, $m\ge1$, are closed and cover $[0,1]$.
 
 ::: pf-proof
 
 For each integer $m\ge1$, define
 $$
-E_m:=\{x\in[0,1]: |f_n(x)|\le m\text{ for every }n\}.
+E_m:=\{x\in[0,1]: \abs{f_n(x)}\le m\text{ for every }n\}.
 $$
 Since each $f_n$ is continuous,
 $$
-E_m=\bigcap_{n=1}^\infty\{x:|f_n(x)|\le m\}
+E_m=\bigcap_{n=1}^\infty\{x:\abs{f_n(x)}\le m\}
 $$
 is closed in $[0,1]$.
 
@@ -61,7 +61,7 @@ $$
 
 ::: pf-step
 
-Some $E_{m_0}$ contains an interval $(a,b)$ with $0\le a<b\le1$, and then $\sup_n\|f_n\chi_{(a,b)}\|_u\le m_0$.
+Some $E_{m_0}$ contains an interval $(a,b)$ with $0\le a<b\le1$, and then $\sup_n\norm{f_n\chi_{(a,b)}}_u\le m_0$.
 
 ::: pf-proof
 
@@ -73,15 +73,15 @@ $$
 $$
 Then for every $n$ and every $x\in(a,b)$,
 $$
-|f_n(x)|\le m_0.
+\abs{f_n(x)}\le m_0.
 $$
 Consequently
 $$
-\|f_n\chi_{(a,b)}\|_u\le m_0
+\norm{f_n\chi_{(a,b)}}_u\le m_0
 $$
 for every $n$, and hence
 $$
-\boxed{\sup_n\|f_n\chi_{(a,b)}\|_u<\infty.}
+\boxed{\sup_n\norm{f_n\chi_{(a,b)}}_u<\infty.}
 $$
 
 :::

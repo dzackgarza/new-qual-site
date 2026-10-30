@@ -24,7 +24,7 @@ $$
 :::
 
 ::: {.solution}
-Note $\cosh(z) \definedas {1\over 2}(e^z + e^{-z})$, and
+Note $\cosh(z) \coloneqq {1\over 2}(e^z + e^{-z})$, and
 $$
 \cosh(z) &= 0 \\
 \iff e^z + e^{-z} &= 0 \\
@@ -66,7 +66,7 @@ $$
 &= -\int_{-R}^{R} { e^{i\xi(t+i\pi)} \over \cosh(t + i\pi) }\dt \\
 &= -e^{-\xi \pi} \int_{-R}^R {e^{i\xi t} \over \cosh(t+i\pi)} \dt \\
 &= e^{-\xi \pi} \int_{-R}^R {e^{i\xi t} \over \cosh(t)} \dt \\
-&\definedas e^{-\xi \pi} I
+&\coloneqq e^{-\xi \pi} I
 ,$$
 using that $\cosh(z + i\pi) = -\cosh(z)$.
 

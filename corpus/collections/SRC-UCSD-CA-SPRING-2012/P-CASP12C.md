@@ -18,12 +18,12 @@ audit:
 
 ::: {.problem}
 Let $f: \DD \to \DD$ be an analytic function satisfying $f(0) = 0$.
-Prove that $$|f(z) + f(-z)| \leq 2|z|^2$$ for all $z \in \DD$.
-Further, show that this inequality is strict for all $z \in \DD \setminus \{0\}$ unless $f(z) + f(-z) = 2cz^2$ for some $c \in \CC$ with $|c| = 1$.
+Prove that $$\abs{f(z) + f(-z)} \leq 2\abs{z}^2$$ for all $z \in \DD$.
+Further, show that this inequality is strict for all $z \in \DD \setminus \{0\}$ unless $f(z) + f(-z) = 2cz^2$ for some $c \in \CC$ with $\abs{c} = 1$.
 :::
 
 ::: {.solution}
-**Goal.** Prove $|f(z) + f(-z)| \le 2|z|^2$ and characterize equality.
+**Goal.** Prove $\abs{f(z) + f(-z)} \le 2\abs{z}^2$ and characterize equality.
 
 ::: pf
 
@@ -69,10 +69,10 @@ step [](#s3){.pf-ref}.
 :::
 
 ::: {.pf-step #s4-2}
-$|g(z)| \le 1$ for all $z \in \DD$.
+$\abs{g(z)} \le 1$ for all $z \in \DD$.
 
 ::: pf-proof
-for $|z| = r < 1$, $|g(z)| = \frac{|f(z)+f(-z)|}{2r^2} \le \frac{|f(z)|+|f(-z)|}{2r^2} < \frac{2}{2r^2} = \frac{1}{r^2}$; by the maximum modulus principle on $|z| \le r$ and letting $r \to 1^-$, $|g(z)| \le 1$.
+for $\abs{z} = r < 1$, $\abs{g(z)} = \frac{\abs{f(z)+f(-z)}}{2r^2} \le \frac{\abs{f(z)}+\abs{f(-z)}}{2r^2} < \frac{2}{2r^2} = \frac{1}{r^2}$; by the maximum modulus principle on $\abs{z} \le r$ and letting $r \to 1^-$, $\abs{g(z)} \le 1$.
 :::
 
 :::
@@ -82,7 +82,7 @@ for $|z| = r < 1$, $|g(z)| = \frac{|f(z)+f(-z)|}{2r^2} \le \frac{|f(z)|+|f(-z)|}
 :::
 
 ::: {.pf-step #s5}
-Hence $|f(z) + f(-z)| = 2|z|^2 |g(z)| \le 2|z|^2$.
+Hence $\abs{f(z) + f(-z)} = 2\abs{z}^2 \abs{g(z)} \le 2\abs{z}^2$.
 
 ::: pf-proof
 step [](#s4-2){.pf-ref}.
@@ -96,16 +96,16 @@ Equality case.
 ::: pf-proof
 
 ::: pf-step
-If $|f(z) + f(-z)| = 2|z|^2$ for some $z \neq 0$, then $|g(z)| = 1$ for that $z$.
+If $\abs{f(z) + f(-z)} = 2\abs{z}^2$ for some $z \neq 0$, then $\abs{g(z)} = 1$ for that $z$.
 
 ::: pf-proof
-$|f(z)+f(-z)| = 2|z|^2|g(z)| = 2|z|^2$ forces $|g(z)| = 1$.
+$\abs{f(z)+f(-z)} = 2\abs{z}^2\abs{g(z)} = 2\abs{z}^2$ forces $\abs{g(z)} = 1$.
 :::
 
 :::
 
 ::: pf-step
-By the maximum modulus principle, $|g(z)| = 1$ at an interior point forces $g$ to be constant of modulus $1$.
+By the maximum modulus principle, $\abs{g(z)} = 1$ at an interior point forces $g$ to be constant of modulus $1$.
 
 ::: pf-proof
 a holomorphic function attaining its maximum modulus at an interior point is constant.
@@ -114,7 +114,7 @@ a holomorphic function attaining its maximum modulus at an interior point is con
 :::
 
 ::: pf-step
-Hence $g \equiv c$ with $|c| = 1$, so $f(z) + f(-z) = 2cz^2$.
+Hence $g \equiv c$ with $\abs{c} = 1$, so $f(z) + f(-z) = 2cz^2$.
 
 ::: pf-proof
 $f(z) + f(-z) = 2z^2 g(z) = 2cz^2$.

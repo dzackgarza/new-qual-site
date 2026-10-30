@@ -104,14 +104,14 @@ Step [](#s1-2){.pf-ref} gives $u(z)\le M+\varepsilon$ for every $\varepsilon>0$.
 
 For part (b), let $p_1,\ldots,p_N$ be the exceptional boundary points. Choose $d>0$ so large that
 $$
-|z-p_j|<d
+\abs{z-p_j}<d
 $$
 for every $z\in\Omega$ and every $j$, and define
 $$
 v(z)
 \coloneqq
 -\sum_{j=1}^N
-\log\frac{|z-p_j|}{d}.
+\log\frac{\abs{z-p_j}}{d}.
 $$
 Then $v$ is harmonic and nonnegative on $\Omega$, and
 $$
@@ -122,9 +122,9 @@ as $z\to p_j$ from within $\Omega$.
 
 ::: pf-proof
 
-Each point $p_j$ lies on $\partial\Omega$, hence outside $\Omega$. Therefore $z\mapsto\log|z-p_j|$ is harmonic on $\Omega$. By the choice of $d$,
+Each point $p_j$ lies on $\partial\Omega$, hence outside $\Omega$. Therefore $z\mapsto\log\abs{z-p_j}$ is harmonic on $\Omega$. By the choice of $d$,
 $$
-0<\frac{|z-p_j|}{d}<1,
+0<\frac{\abs{z-p_j}}{d}<1,
 $$
 so each summand is nonnegative. As $z\to p_j$, the corresponding logarithm tends to $-\infty$, hence the negative logarithm tends to $+\infty$.
 

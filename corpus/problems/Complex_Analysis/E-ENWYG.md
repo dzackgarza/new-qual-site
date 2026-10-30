@@ -62,10 +62,10 @@ $\Res_{z=i}f=-{\pi\over4}+{i\pi^2\over16}$ and $\Res_{z=-i}f={3\pi\over4}-{9i\pi
 ::: pf-proof
 With $h(z)=\log^2z$, $h'(z)=2\log z/z$, and on this branch $\log i=i\pi/2$, $\log(-i)=3\pi i/2$. At the double poles,
 $$
-\Res_{z=i}f=\dd{}{z}{h(z)\over(z+i)^2}\bigg|_{z=i}={h'(i)\over(2i)^2}-{2h(i)\over(2i)^3}={\pi\over-4}-{-\pi^2/2\over-8i}=-{\pi\over4}+{i\pi^2\over16},
+\Res_{z=i}f=\dd{}{z}{h(z)\over(z+i)^2}\evalfrom_{z=i}={h'(i)\over(2i)^2}-{2h(i)\over(2i)^3}={\pi\over-4}-{-\pi^2/2\over-8i}=-{\pi\over4}+{i\pi^2\over16},
 $$
 $$
-\Res_{z=-i}f=\dd{}{z}{h(z)\over(z-i)^2}\bigg|_{z=-i}={h'(-i)\over(-2i)^2}-{2h(-i)\over(-2i)^3}={-3\pi\over-4}-{-9\pi^2/2\over8i}={3\pi\over4}-{9i\pi^2\over16}.
+\Res_{z=-i}f=\dd{}{z}{h(z)\over(z-i)^2}\evalfrom_{z=-i}={h'(-i)\over(-2i)^2}-{2h(-i)\over(-2i)^3}={-3\pi\over-4}-{-9\pi^2/2\over8i}={3\pi\over4}-{9i\pi^2\over16}.
 $$
 :::
 

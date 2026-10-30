@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 1. Suppose $f\in L^1(\RR)$ satisfies
 $$
-\limsup_{h\to0}\int_{\RR}\left|\frac{f(x+h)-f(x)}{h}\right|\,dx=0.
+\limsup_{h\to0}\int_{\RR}\abs{\frac{f(x+h)-f(x)}{h}}\,dx=0.
 $$
 Show that $f=0$ almost everywhere.
 :::
@@ -28,7 +28,7 @@ Show that $f=0$ almost everywhere.
 
 Define
 $$
-F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
+F(x)=\int_{-\infty}^{x}\abs{f(t)}\,dt.
 $$
 
 ::: pf
@@ -37,14 +37,14 @@ $$
 
 For every $x\in\RR$ and every $h\ne0$,
 $$
-\left|
+\abs{
 \frac{F(x+h)-F(x)}{h}
-\right|
+}
 \le
 \int_{\RR}
-\left|
+\abs{
 \frac{f(t+h)-f(t)}{h}
-\right|\,dt.
+}\,dt.
 $$
 
 
@@ -54,39 +54,39 @@ First suppose $h>0$. By the change of variables $s=t+h$,
 $$
 F(x+h)
 =
-\int_{-\infty}^{x+h}|f(s)|\,ds
+\int_{-\infty}^{x+h}\abs{f(s)}\,ds
 =
-\int_{-\infty}^{x}|f(t+h)|\,dt.
+\int_{-\infty}^{x}\abs{f(t+h)}\,dt.
 $$
 Hence
 $$
 \begin{aligned}
-\left|
+\abs{
 \frac{F(x+h)-F(x)}{h}
-\right|
+}
 &=
-\left|
+\abs{
 \frac1h
 \int_{-\infty}^{x}
-\bigl(|f(t+h)|-|f(t)|\bigr)\,dt
-\right|\\
+\bigl(\abs{f(t+h)}-\abs{f(t)}\bigr)\,dt
+}\\
 &\le
 \int_{-\infty}^{x}
 \frac{
-\bigl||f(t+h)|-|f(t)|\bigr|
+\abs{\abs{f(t+h)}-\abs{f(t)}}
 }{h}\,dt\\
 &\le
 \int_{\RR}
-\frac{|f(t+h)-f(t)|}{h}\,dt.
+\frac{\abs{f(t+h)-f(t)}}{h}\,dt.
 \end{aligned}
 $$
-For $h<0$, the same computation with $|h|$ in the denominator gives the
+For $h<0$, the same computation with $\abs{h}$ in the denominator gives the
 identical final bound, namely
 $$
 \int_{\RR}
-\left|
+\abs{
 \frac{f(t+h)-f(t)}{h}
-\right|\,dt.
+}\,dt.
 $$
 
 :::
@@ -99,9 +99,9 @@ The hypothesis implies
 $$
 \lim_{h\to0}
 \int_{\RR}
-\left|
+\abs{
 \frac{f(t+h)-f(t)}{h}
-\right|\,dt
+}\,dt
 =0.
 $$
 
@@ -127,9 +127,9 @@ $$
 
 Fix $x\in\RR$. By step [](#s1-1){.pf-ref},
 $$
-\left|
+\abs{
 \frac{F(x+h)-F(x)}{h}
-\right|
+}
 $$
 is bounded above by a quantity independent of $x$ that tends to $0$ by
 step [](#s1-2){.pf-ref}. Therefore
@@ -171,9 +171,9 @@ $$
 
 ::: pf-proof
 
-Since $|f|\in L^1(\RR)$,
+Since $\abs{f}\in L^1(\RR)$,
 $$
-\int_{-\infty}^{x}|f(t)|\,dt
+\int_{-\infty}^{x}\abs{f(t)}\,dt
 \longrightarrow0
 \qquad(x\to-\infty).
 $$
@@ -187,7 +187,7 @@ Thus the constant value from step [](#s1-4){.pf-ref} must be $0$.
 
 Therefore
 $$
-\int_{\RR}|f(t)|\,dt=0.
+\int_{\RR}\abs{f(t)}\,dt=0.
 $$
 
 
@@ -195,10 +195,10 @@ $$
 
 By monotone convergence,
 $$
-\int_{\RR}|f(t)|\,dt
+\int_{\RR}\abs{f(t)}\,dt
 =
 \lim_{x\to\infty}
-\int_{-\infty}^{x}|f(t)|\,dt
+\int_{-\infty}^{x}\abs{f(t)}\,dt
 =
 \lim_{x\to\infty}F(x)
 =0
@@ -220,7 +220,7 @@ $$
 ::: pf-proof
 
 A nonnegative integrable function with integral zero vanishes almost
-everywhere. Apply this to $|f|$ using step [](#s1-6){.pf-ref}.
+everywhere. Apply this to $\abs{f}$ using step [](#s1-6){.pf-ref}.
 
 :::
 

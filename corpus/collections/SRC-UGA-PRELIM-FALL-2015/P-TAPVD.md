@@ -62,7 +62,7 @@ Dividing step [](#s1){.pf-ref} by $h$,
 $$
 \frac{f(hu_1,hu_2)-f(0,0)}{h}=f_x(\xi_h,hu_2)\,u_1+f_y(0,\eta_h)\,u_2.
 $$
-As $h\to0$, the points $(\xi_h,hu_2)$ and $(0,\eta_h)$ tend to $(0,0)$ because $|\xi_h|\le|hu_1|$ and $|\eta_h|\le|hu_2|$.
+As $h\to0$, the points $(\xi_h,hu_2)$ and $(0,\eta_h)$ tend to $(0,0)$ because $\abs{\xi_h}\le\abs{hu_1}$ and $\abs{\eta_h}\le\abs{hu_2}$.
 Continuity of $f_x$ and $f_y$ at $(0,0)$ makes the right side tend to $f_x(0,0)u_1+f_y(0,0)u_2$, so the difference quotient has this limit.
 
 :::

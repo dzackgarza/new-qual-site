@@ -21,7 +21,7 @@ Compute the operator norm of
 $$
 A=\begin{pmatrix}2&1\\0&\sqrt3\end{pmatrix};
 $$
-that is, determine the maximum of $\|Ax\|$ over all unit vectors $x$.
+that is, determine the maximum of $\norm{Ax}$ over all unit vectors $x$.
 :::
 
 ::: {.solution}
@@ -125,7 +125,7 @@ $$
 
 For every unit vector $x\in\RR^2$,
 $$
-\|Ax\|_2^2
+\norm{Ax}_2^2
 =
 x^TA^TAx
 \le
@@ -148,7 +148,7 @@ x^TA^TAx\le6.
 $$
 Since
 $$
-\|Ax\|_2^2
+\norm{Ax}_2^2
 =
 (Ax)^TAx
 =
@@ -178,7 +178,7 @@ v=
 $$
 one has
 $$
-\|v\|_2=1
+\norm{v}_2=1
 $$
 and
 $$
@@ -188,7 +188,7 @@ A^TAv
 $$
 Therefore
 $$
-\|Av\|_2^2
+\norm{Av}_2^2
 =
 v^TA^TAv
 =
@@ -197,7 +197,7 @@ v^TA^TAv
 $$
 Hence
 $$
-\|Av\|_2=\sqrt6.
+\norm{Av}_2=\sqrt6.
 $$
 
 :::
@@ -208,7 +208,7 @@ $$
 
 Thus the operator norm is
 $$
-\boxed{\|A\|_{\mathrm{op}}=\sqrt6}.
+\boxed{\norm{A}_{\mathrm{op}}=\sqrt6}.
 $$
 
 
@@ -216,7 +216,7 @@ $$
 
 Step [](#s1-3){.pf-ref} shows that
 $$
-\|Ax\|_2\le\sqrt6
+\norm{Ax}_2\le\sqrt6
 $$
 for every unit vector $x$.
 Step [](#s1-4){.pf-ref} gives a unit vector for which equality holds.

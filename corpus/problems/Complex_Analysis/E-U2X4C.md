@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-U2X4C
 kind: problem
-title: Entire functions with $|f(z)|>1$ are constant
+title: Entire functions with $\abs{f(z)}>1$ are constant
 classification:
   areas:
   - complex-analysis

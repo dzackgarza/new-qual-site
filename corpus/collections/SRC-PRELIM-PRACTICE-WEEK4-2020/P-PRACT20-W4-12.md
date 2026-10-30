@@ -26,5 +26,5 @@ $$
 \mathrm { d i m } \left( R ( T ) \right) + \mathrm { d i m } \left( N ( T ) \right) = 6
 $$
 
-and since T is onto, we have dim $( R ( T ) ) = \mathrm { d i m } ( \RR ^ { 4 } ) = 4 \ \mathrm { s o } | \mathrm { d i m } ( N ( T ) ) = 2 .$
+and since T is onto, we have dim $( R ( T ) ) = \mathrm { d i m } ( \RR ^ { 4 } ) = 4 \ \mathrm { s o } \boxed{ \mathrm { d i m } ( N ( T ) ) = 2 } .$
 :::

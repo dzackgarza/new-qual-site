@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $G$ be a finite group whose order is divisible by a prime number $p$, and let $P \trianglelefteq G$ be a normal $p$-subgroup of $G$ with $|P| = p^c$ for some integer $c \ge 1$.
+Let $G$ be a finite group whose order is divisible by a prime number $p$, and let $P \trianglelefteq G$ be a normal $p$-subgroup of $G$ with $\cardinality{P} = p^c$ for some integer $c \ge 1$.
 
 (a) Show that $P$ is contained in every Sylow $p$-subgroup of $G$.
 
@@ -52,7 +52,7 @@ Suppose $P\not\subseteq M$. Since $P\trianglelefteq G$, the product $MP$ is a su
 $$
 [G:M]=[MP:M]=[P:M\cap P].
 $$
-Lagrange's theorem gives $|M\cap P|=p^a$ with $0\leq a<c$, since $M\cap P$ is a proper subgroup of the group $P$ of order $p^c$. Hence $[G:M]=p^{c-a}$, with $1\leq c-a\leq c$.
+Lagrange's theorem gives $\cardinality{M\cap P}=p^a$ with $0\leq a<c$, since $M\cap P$ is a proper subgroup of the group $P$ of order $p^c$. Hence $[G:M]=p^{c-a}$, with $1\leq c-a\leq c$.
 
 :::
 

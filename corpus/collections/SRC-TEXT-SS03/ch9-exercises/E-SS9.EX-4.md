@@ -24,46 +24,46 @@ $$
 \frac {1}{z ^ {2}} + \sum_ {\omega \in \Lambda^ {*}} \left[ \frac {1}{(z + \omega) ^ {2}} - \frac {1}{\omega^ {2}} \right],
 $$
 
-show directly, without diferentiation, that $\wp ( z + \omega ) = \wp ( z )$ whenever $\omega \in \Lambda .$ [Hint: For R suficiently large, note that $\wp ( z ) = \wp ^ { R } ( z ) + O ( 1 / R )$ where $\begin{array} { r } { \dot { \wp } ^ { R } ( z ) = z ^ { - 2 } + \sum _ { 0 < \lvert \omega \rvert < R } ( ( z + \omega ) ^ { - 2 } - \omega ^ { - 2 } ) } \end{array}$ Next, observe that both $\boldsymbol { \wp } ^ { R } ( z + 1 ) - \boldsymbol { \wp } ^ { R } ( z )$ and $\wp ^ { R } ( z + \tau ) - \wp ^ { R } ( z )$ are $\begin{array} { r } { O ( \sum _ { R - c < | \omega | < R + c } | \omega | ^ { - 2 } ) = O ( 1 / R ) . ] } \end{array}$
+show directly, without diferentiation, that $\wp ( z + \omega ) = \wp ( z )$ whenever $\omega \in \Lambda .$ [Hint: For R suficiently large, note that $\wp ( z ) = \wp ^ { R } ( z ) + O ( 1 / R )$ where $\begin{array} { r } { \dot { \wp } ^ { R } ( z ) = z ^ { - 2 } + \sum _ { 0 < \abs{ \omega } < R } ( ( z + \omega ) ^ { - 2 } - \omega ^ { - 2 } ) } \end{array}$ Next, observe that both $\boldsymbol { \wp } ^ { R } ( z + 1 ) - \boldsymbol { \wp } ^ { R } ( z )$ and $\wp ^ { R } ( z + \tau ) - \wp ^ { R } ( z )$ are $\begin{array} { r } { O ( \sum _ { R - c < \abs{ \omega } < R + c } \abs{ \omega } ^ { - 2 } ) = O ( 1 / R ) . ] } \end{array}$
 :::
 
 ::: {.solution}
 It suffices to prove periodicity under an arbitrary fixed $\lambda\in\Lambda$. For $R>0$, define
 $$
 \wp^R(z)=\frac1{z^2}+
-\sum_{0<|\omega|<R}
+\sum_{0<\abs{\omega}<R}
 \left(\frac1{(z+\omega)^2}-\frac1{\omega^2}\right).
 $$
 For $z$ in a fixed compact set disjoint from $-\Lambda$, the tail satisfies
 $$
 \wp(z)-\wp^R(z)
-=O\left(\sum_{|\omega|\ge R}|\omega|^{-3}\right)
+=O\left(\sum_{\abs{\omega}\ge R}\abs{\omega}^{-3}\right)
 =O(R^{-1}),
 \tag{1}
 $$
 because
 $$
-\frac1{(z+\omega)^2}-\frac1{\omega^2}=O(|\omega|^{-3})
+\frac1{(z+\omega)^2}-\frac1{\omega^2}=O(\abs{\omega}^{-3})
 $$
 uniformly on such compact sets.
 
 Also
 $$
 \wp^R(z)=
-\sum_{|\omega|<R}\frac1{(z+\omega)^2}
--\sum_{0<|\omega|<R}\frac1{\omega^2}.
+\sum_{\abs{\omega}<R}\frac1{(z+\omega)^2}
+-\sum_{0<\abs{\omega}<R}\frac1{\omega^2}.
 $$
 Thus, after reindexing $\eta=\omega+\lambda$,
 $$
 \wp^R(z+\lambda)-\wp^R(z)
 =
-\sum_{|\eta-\lambda|<R}\frac1{(z+\eta)^2}
--\sum_{|\eta|<R}\frac1{(z+\eta)^2}.
+\sum_{\abs{\eta-\lambda}<R}\frac1{(z+\eta)^2}
+-\sum_{\abs{\eta}<R}\frac1{(z+\eta)^2}.
 \tag{2}
 $$
 Only lattice points in the symmetric difference of the two radius-$R$ discs contribute. They lie in the annulus
 $$
-R-|\lambda|<|\eta|<R+|\lambda|.
+R-\abs{\lambda}<\abs{\eta}<R+\abs{\lambda}.
 $$
 This annulus contains $O(R)$ lattice points, while each summand in (2) is $O(R^{-2})$. Hence
 $$

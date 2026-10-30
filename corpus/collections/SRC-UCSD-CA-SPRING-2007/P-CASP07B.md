@@ -13,11 +13,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(z)$ be analytic with $|f(z)| \leq M$ in $\DD$ and $f(0) = \alpha > 0$.
+Let $f(z)$ be analytic with $\abs{f(z)} \leq M$ in $\DD$ and $f(0) = \alpha > 0$.
 
-(a) Show that $f(z)$ has no zeros in the disk $|z| < \alpha/M$.
+(a) Show that $f(z)$ has no zeros in the disk $\abs{z} < \alpha/M$.
 
-(b) Find all functions $f(z)$ (satisfying the above) such that $f(z)$ has a zero on the circle $|z| = \alpha/M$.
+(b) Find all functions $f(z)$ (satisfying the above) such that $f(z)$ has a zero on the circle $\abs{z} = \alpha/M$.
 :::
 
 ::: {.solution}
@@ -31,21 +31,21 @@ If $h$ is nonconstant, in fact $h(\DD)\subset\DD$.
 
 Suppose $h(z_0)=0$. Schwarz--Pick gives
 $$
-\left|\frac{h(z_0)-h(0)}{1-\overline{h(0)}h(z_0)}\right|
-\le |z_0|,
+\abs{\frac{h(z_0)-h(0)}{1-\overline{h(0)}h(z_0)}}
+\le \abs{z_0},
 $$
 hence
 $$
-a\le |z_0|.
+a\le \abs{z_0}.
 $$
 This proves (a).
 
-For equality, assume first $a<1$ and $|z_0|=a$. Equality holds in
+For equality, assume first $a<1$ and $\abs{z_0}=a$. Equality holds in
 Schwarz--Pick at two distinct points, so $h$ is a disk automorphism. Every
 extremal therefore has the form
 $$
 h(z)=e^{i\theta}\frac{z-z_0}{1-\overline{z_0}z},
-\qquad |z_0|=a,
+\qquad \abs{z_0}=a,
 $$
 and the condition $h(0)=a>0$ forces
 $$
@@ -56,7 +56,7 @@ $$
 \boxed{
 f(z)=-M\frac{a}{z_0}
 \frac{z-z_0}{1-\overline{z_0}z},
-\qquad |z_0|=a=\alpha/M.}
+\qquad \abs{z_0}=a=\alpha/M.}
 $$
 
 If $a=1$, the maximum principle forces $h\equiv1$, so there is no zero in

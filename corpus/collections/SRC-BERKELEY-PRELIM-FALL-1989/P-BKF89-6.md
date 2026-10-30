@@ -15,7 +15,7 @@ audit:
 ::: {.problem}
 Let $X\subset\RR^n$ be closed and let $r>0$. Define
 $$
-Y=\{y\in\RR^n:|x-y|=r\text{ for some }x\in X\}.
+Y=\{y\in\RR^n:\norm{x-y}=r\text{ for some }x\in X\}.
 $$
 Show that $Y$ is closed.
 :::
@@ -32,7 +32,7 @@ y\in\RR^n.
 $$
 For each $k$, choose $x_k\in X$ such that
 $$
-|x_k-y_k|=r.
+\norm{x_k-y_k}=r.
 $$
 
 ::: pf-proof
@@ -51,13 +51,13 @@ The sequence $(x_k)$ is bounded.
 
 Since $y_k\to y$, the sequence $(y_k)$ is bounded. Hence there is $M>0$ such that
 $$
-|y_k|\leq M
+\norm{y_k}\leq M
 $$
 for all $k$. By the triangle inequality,
 $$
-|x_k|
+\norm{x_k}
 \leq
-|x_k-y_k|+|y_k|
+\norm{x_k-y_k}+\norm{y_k}
 \leq
 r+M.
 $$
@@ -95,9 +95,9 @@ y_{k_j}\longrightarrow y.
 $$
 By continuity of the Euclidean norm,
 $$
-|x-y|
+\norm{x-y}
 =
-\lim_{j\to\infty}|x_{k_j}-y_{k_j}|
+\lim_{j\to\infty}\norm{x_{k_j}-y_{k_j}}
 =
 r.
 $$

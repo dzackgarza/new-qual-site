@@ -33,7 +33,7 @@ Assume, as usual for representations of compact topological groups, that $R$ is 
 ::: {.pf-step #uniform-operator-norm-bound}
 There is a constant $M>0$ such that
 $$
-\|R(h)\|_{\mathrm{op}}\le M
+\norm{R(h)}_{\mathrm{op}}\le M
 \qquad\text{for every }h\in G.
 $$
 
@@ -44,7 +44,7 @@ Because $G$ is compact and $R:G\to\mathrm{GL}(H)$ is continuous, the image $R(G)
 :::
 
 ::: {.pf-step #eigenvalue-modulus-at-most-one}
-If $R(g)v=\lambda v$ with $v\ne0$, then $|\lambda|\le1$.
+If $R(g)v=\lambda v$ with $v\ne0$, then $\abs{\lambda}\le1$.
 
 ::: pf-proof
 For every positive integer $n$,
@@ -53,22 +53,22 @@ R(g^n)v=R(g)^nv=\lambda^n v.
 $$
 Hence, by step [](#uniform-operator-norm-bound){.pf-ref},
 $$
-|\lambda|^n\|v\|
-=\|R(g^n)v\|
-\le \|R(g^n)\|_{\mathrm{op}}\|v\|
-\le M\|v\|.
+\abs{\lambda}^n\norm{v}
+=\norm{R(g^n)v}
+\le \norm{R(g^n)}_{\mathrm{op}}\norm{v}
+\le M\norm{v}.
 $$
 Since $v\ne0$,
 $$
-|\lambda|^n\le M
+\abs{\lambda}^n\le M
 $$
-for every $n$. If $|\lambda|>1$, the left side tends to infinity, a contradiction. Thus $|\lambda|\le1$.
+for every $n$. If $\abs{\lambda}>1$, the left side tends to infinity, a contradiction. Thus $\abs{\lambda}\le1$.
 :::
 
 :::
 
 ::: {.pf-step #eigenvalue-modulus-at-least-one}
-In fact $|\lambda|\ge1$.
+In fact $\abs{\lambda}\ge1$.
 
 ::: pf-proof
 Since $R(g)$ is invertible,
@@ -77,9 +77,9 @@ R(g^{-1})v=R(g)^{-1}v=\lambda^{-1}v.
 $$
 Applying step [](#eigenvalue-modulus-at-most-one){.pf-ref} to the group element $g^{-1}$ and its eigenvalue $\lambda^{-1}$ gives
 $$
-|\lambda^{-1}|\le1,
+\abs{\lambda^{-1}}\le1,
 $$
-so $|\lambda|\ge1$.
+so $\abs{\lambda}\ge1$.
 :::
 
 :::
@@ -90,11 +90,11 @@ Therefore every eigenvalue of every $R(g)$ has modulus $1$.
 ::: pf-proof
 Combine steps [](#eigenvalue-modulus-at-most-one){.pf-ref} and [](#eigenvalue-modulus-at-least-one){.pf-ref}:
 $$
-1\le|\lambda|\le1.
+1\le\abs{\lambda}\le1.
 $$
 Hence
 $$
-\boxed{|\lambda|=1}.
+\boxed{\abs{\lambda}=1}.
 $$
 :::
 

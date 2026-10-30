@@ -60,7 +60,7 @@ Let $u_i\in H^{2i}(X;\ZZ)$, $k+1\le i\le n$, be the unique generator characteriz
 $$
 q^*(u_i)=x^i,
 $$
-where $H^*(\CP^n;\ZZ)=\ZZ[x]/(x^{n+1})$, $|x|=2$.
+where $H^*(\CP^n;\ZZ)=\ZZ[x]/(x^{n+1})$, $\gradeddegree{x}=2$.
 
 ::: pf-proof
 From the long exact sequence of the pair, the map $q^*:H^{2i}(X)\to H^{2i}(\CP^n)$ is an isomorphism for $i>k$ because $H^{2i}(\CP^k)=0$ there.
@@ -93,7 +93,7 @@ Therefore, as a graded ring,
 $$
 H^*(X;\ZZ)=\ZZ\cdot1\oplus\bigoplus_{i=k+1}^{n}\ZZ u_i,
 $$
-with $|u_i|=2i$ and multiplication given by step [](#product-formula){.pf-ref}.
+with $\gradeddegree{u_i}=2i$ and multiplication given by step [](#product-formula){.pf-ref}.
 
 ::: pf-proof
 The additive groups are those of step [](#additive-cohomology){.pf-ref}, the unit is the degree-$0$ generator, and step [](#product-formula){.pf-ref} determines every product of positive-degree classes.

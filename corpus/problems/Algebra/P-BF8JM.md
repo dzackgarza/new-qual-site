@@ -44,7 +44,7 @@ Every $\phi\in G$ preserves $L$ setwise.
 
 ::: pf-proof
 
-Because $L/K$ is Galois, it is normal. Therefore every $K$-embedding of $L$ into an algebraic closure has image $L$. The restriction $\phi|_L$ is such a $K$-embedding, so
+Because $L/K$ is Galois, it is normal. Therefore every $K$-embedding of $L$ into an algebraic closure has image $L$. The restriction $\phi\restrict_L$ is such a $K$-embedding, so
 $$
 \phi(L)=L.
 $$

@@ -79,7 +79,7 @@ $$
 Each line $M_P$ meets the irreducible plane cubic $C$ in a divisor of degree
 $3$:
 $$
-M_P|_C=P+P'+P''.
+M_P\restrict_C=P+P'+P''.
 $$
 The same statement holds for $M_Q$ and $M_R$. Since $C$ is irreducible of
 degree $3$, no line is a component of $C$. Therefore the product cubic $D$

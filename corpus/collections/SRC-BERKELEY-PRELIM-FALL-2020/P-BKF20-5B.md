@@ -37,7 +37,7 @@ audit:
 ::: {.problem}
 (a) Find a function holomorphic on the closed unit disk, of absolute value $1$ on the unit circle, whose only zero in the disk is $1/2$.
 
-(b) Let $f$ be holomorphic on the closed disk with $f(1/2)=0$ and $|f(z)|\le|e^z|$ for $|z|=1$. How large can $|f(0)|$ be?
+(b) Let $f$ be holomorphic on the closed disk with $f(1/2)=0$ and $\abs{f(z)}\le\abs{e^z}$ for $\abs{z}=1$. How large can $\abs{f(0)}$ be?
 :::
 
 ::: {.solution}
@@ -71,17 +71,17 @@ nonzero there.
 
 ::: {.pf-step #s2}
 
-For every $|z|=1$,
+For every $\abs{z}=1$,
 $$
-|g(z)|=1.
+\abs{g(z)}=1.
 $$
 
 ::: pf-proof
 
-If $|z|=1$, then $\overline z=z^{-1}$ and
+If $\abs{z}=1$, then $\overline z=z^{-1}$ and
 $$
 \begin{aligned}
-\left|z-\frac12\right|^2
+\abs{z-\frac12}^2
 &=
 \left(z-\frac12\right)
 \left(\overline z-\frac12\right)\\
@@ -92,7 +92,7 @@ $$
 while
 $$
 \begin{aligned}
-\left|1-\frac z2\right|^2
+\abs{1-\frac z2}^2
 &=
 \left(1-\frac z2\right)
 \left(1-\frac{\overline z}{2}\right)\\
@@ -100,7 +100,7 @@ $$
 \frac54-\frac12(z+\overline z).
 \end{aligned}
 $$
-The numerator and denominator of $|g(z)|^2$ are therefore equal.
+The numerator and denominator of $\abs{g(z)}^2$ are therefore equal.
 Together with step [](#s1){.pf-ref}, this proves part (a).
 
 :::
@@ -150,18 +150,18 @@ which is holomorphic. This gives the desired extension.
 
 On the unit circle,
 $$
-|h(z)|\le1.
+\abs{h(z)}\le1.
 $$
 
 ::: pf-proof
 
-For $|z|=1$, step [](#s2){.pf-ref} and the hypothesis on $f$ give
+For $\abs{z}=1$, step [](#s2){.pf-ref} and the hypothesis on $f$ give
 $$
-|h(z)|
+\abs{h(z)}
 =
-\frac{|f(z)|}{|g(z)|\,|e^z|}
+\frac{\abs{f(z)}}{\abs{g(z)}\,\abs{e^z}}
 \le
-\frac{|e^z|}{1\cdot|e^z|}
+\frac{\abs{e^z}}{1\cdot\abs{e^z}}
 =
 1.
 $$
@@ -174,7 +174,7 @@ $$
 
 One has
 $$
-|f(0)|\le\frac12.
+\abs{f(0)}\le\frac12.
 $$
 
 ::: pf-proof
@@ -182,7 +182,7 @@ $$
 By step [](#s3){.pf-ref}, $h$ is holomorphic on the unit disk and continuous on its
 boundary. Step [](#s4){.pf-ref} and the maximum modulus principle imply
 $$
-|h(0)|\le1.
+\abs{h(0)}\le1.
 $$
 Since
 $$
@@ -192,15 +192,15 @@ e^0=1,
 $$
 we have
 $$
-|h(0)|
+\abs{h(0)}
 =
-\frac{|f(0)|}{|g(0)|}
+\frac{\abs{f(0)}}{\abs{g(0)}}
 =
-2|f(0)|.
+2\abs{f(0)}.
 $$
 Therefore
 $$
-|f(0)|\le\frac12.
+\abs{f(0)}\le\frac12.
 $$
 
 :::
@@ -221,19 +221,19 @@ Then $f$ is holomorphic on the closed unit disk and
 $$
 f\left(\frac12\right)=0.
 $$
-For $|z|=1$, step [](#s2){.pf-ref} gives
+For $\abs{z}=1$, step [](#s2){.pf-ref} gives
 $$
-|f(z)|
+\abs{f(z)}
 =
-|g(z)|\,|e^z|
+\abs{g(z)}\,\abs{e^z}
 =
-|e^z|.
+\abs{e^z}.
 $$
 Finally,
 $$
-|f(0)|
+\abs{f(0)}
 =
-|g(0)|
+\abs{g(0)}
 =
 \frac12.
 $$

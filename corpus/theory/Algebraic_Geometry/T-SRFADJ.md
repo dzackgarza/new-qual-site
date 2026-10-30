@@ -25,7 +25,7 @@ prompts:
 Let $C$ be a smooth integral curve on a smooth projective surface $X$.
 Then
 $$
-\omega_C \cong (\omega_X \otimes \OO_X(C))\vert_C,
+\omega_C \cong (\omega_X \otimes \OO_X(C))\restrict_C,
 \qquad
 2g(C)-2=C\cdot(C+K_X).
 $$
@@ -48,6 +48,6 @@ On $\PP^1 \times \PP^1$, $K = (-2,-2)$ and the same computation gives $g = (a-1)
 
 In any dimension, for a smooth effective Cartier divisor $D$ on a smooth variety $X$,
 $$
-\omega_D\cong(\omega_X\otimes\OO_X(D))|_D.
+\omega_D\cong(\omega_X\otimes\OO_X(D))\restrict_D.
 $$
 :::

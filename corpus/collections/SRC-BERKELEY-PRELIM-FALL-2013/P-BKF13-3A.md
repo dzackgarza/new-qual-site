@@ -109,7 +109,7 @@ $1/2<\alpha<2/3$.
 
 On $(1/2,2/3)$ one has
 $$
-\lvert f'(x)\rvert<\frac49.
+\abs{ f'(x)}<\frac49.
 $$
 
 ::: pf-proof
@@ -120,7 +120,7 @@ f'(x)=-\frac1{(1+x)^2},
 $$
 the inequality $x>1/2$ gives
 $$
-\lvert f'(x)\rvert
+\abs{ f'(x)}
 =\frac1{(1+x)^2}
 <\frac1{(3/2)^2}
 =\frac49.
@@ -134,9 +134,9 @@ $$
 
 For every $n\ge3$,
 $$
-\lvert x_{n+1}-\alpha\rvert
+\abs{ x_{n+1}-\alpha}
 \le
-\frac49\lvert x_n-\alpha\rvert.
+\frac49\abs{ x_n-\alpha}.
 $$
 
 ::: pf-proof
@@ -144,9 +144,9 @@ $$
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, both $x_n$ and $\alpha$ lie in
 $(1/2,2/3)$. The mean value theorem and step [](#s3){.pf-ref} give
 $$
-\lvert f(x_n)-f(\alpha)\rvert
+\abs{ f(x_n)-f(\alpha)}
 \le
-\frac49\lvert x_n-\alpha\rvert.
+\frac49\abs{ x_n-\alpha}.
 $$
 Since $f(x_n)=x_{n+1}$ and $f(\alpha)=\alpha$, this is the desired
 estimate.
@@ -166,10 +166,10 @@ $$
 
 Iterating step [](#s4){.pf-ref} gives, for $n\ge3$,
 $$
-\lvert x_n-\alpha\rvert
+\abs{ x_n-\alpha}
 \le
 \left(\frac49\right)^{n-3}
-\lvert x_3-\alpha\rvert.
+\abs{ x_3-\alpha}.
 $$
 The right-hand side tends to $0$, so $x_n\to\alpha$.
 

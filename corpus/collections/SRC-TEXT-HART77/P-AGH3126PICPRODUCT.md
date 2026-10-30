@@ -72,7 +72,7 @@ $$
 Then there is an open neighborhood $U$ of $t$ and an invertible sheaf
 $\mcn_U$ on $U$ such that
 $$
-\mcf|_{X\times U}\cong q_U^*\mcn_U,
+\mcf\restrict_{X\times U}\cong q_U^*\mcn_U,
 $$
 where $q_U:X\times U\to U$ is the projection.
 
@@ -124,7 +124,7 @@ $$
 is surjective. Applying III.12.11 in degree zero, after another shrinking
 the sheaf
 $$
-\mcn_U=(q_U)_*(\mcf|_{X\times U})
+\mcn_U=(q_U)_*(\mcf\restrict_{X\times U})
 $$
 is locally free and degree-zero base change is an isomorphism. Its rank is
 $$
@@ -138,7 +138,7 @@ so $\mcn_U$ is invertible.
 
 There is a canonical evaluation map
 $$
-\epsilon:q_U^*\mcn_U\longrightarrow\mcf|_{X\times U}.
+\epsilon:q_U^*\mcn_U\longrightarrow\mcf\restrict_{X\times U}.
 $$
 On the fibre over $t$, base change identifies it with
 $$

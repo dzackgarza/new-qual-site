@@ -20,7 +20,7 @@ audit:
 Fix $f\in C(\circlegroup)$, where $\circlegroup=\RR/(2\pi\ZZ)$, and let $s_n$ denote the $n$th partial sum of the Fourier series of $f$.
 Prove that
 $$
-\lim_{n\to\infty}\frac{\|s_n\|_{L^\infty(\circlegroup)}}{\log n}=0.
+\lim_{n\to\infty}\frac{\norm{s_n}_{L^\infty(\circlegroup)}}{\log n}=0.
 $$
 :::
 
@@ -42,7 +42,7 @@ $$
 
 There is an absolute constant $C_0$ such that
 $$
-\frac1{2\pi}\|D_n\|_{L^1(-\pi,\pi)}
+\frac1{2\pi}\norm{D_n}_{L^1(-\pi,\pi)}
 \le C_0(1+\log n)
 $$
 for every $n\ge2$.
@@ -50,27 +50,27 @@ for every $n\ge2$.
 
 ::: pf-proof
 
-For $|t|\le\pi$,
+For $\abs{t}\le\pi$,
 $$
-|D_n(t)|
+\abs{D_n(t)}
 \le 2n+1
 $$
 by the finite-sum formula. Also, since
 $$
-|\sin(t/2)|\ge \frac{|t|}{\pi}
+\abs{\sin(t/2)}\ge \frac{\abs{t}}{\pi}
 $$
-for $|t|\le\pi$, the quotient formula gives
+for $\abs{t}\le\pi$, the quotient formula gives
 $$
-|D_n(t)|\le\frac{\pi}{|t|}
+\abs{D_n(t)}\le\frac{\pi}{\abs{t}}
 $$
 for $t\ne0$. Hence
 $$
-|D_n(t)|\le C\min\left(n,\frac1{|t|}\right)
+\abs{D_n(t)}\le C\min\left(n,\frac1{\abs{t}}\right)
 $$
 for an absolute constant $C$. Therefore
 $$
 \begin{aligned}
-\|D_n\|_1
+\norm{D_n}_1
 &\le
 2C\left(\int_0^{1/n}n\,dt
 +\int_{1/n}^{\pi}\frac{dt}{t}\right)\\
@@ -87,8 +87,8 @@ Dividing by $2\pi$ proves the claim.
 
 For every continuous $g$ on $\circlegroup$,
 $$
-\|s_n(g)\|_\infty
-\le C_0(1+\log n)\|g\|_\infty.
+\norm{s_n(g)}_\infty
+\le C_0(1+\log n)\norm{g}_\infty.
 $$
 
 
@@ -97,11 +97,11 @@ $$
 Using the convolution formula and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
-|s_n(g)(x)|
+\abs{s_n(g)(x)}
 &\le\frac1{2\pi}
-\int_{-\pi}^{\pi}|g(x-t)|\,|D_n(t)|\,dt\\
-&\le\frac1{2\pi}\|g\|_\infty\|D_n\|_1\\
-&\le C_0(1+\log n)\|g\|_\infty.
+\int_{-\pi}^{\pi}\abs{g(x-t)}\,\abs{D_n(t)}\,dt\\
+&\le\frac1{2\pi}\norm{g}_\infty\norm{D_n}_1\\
+&\le C_0(1+\log n)\norm{g}_\infty.
 \end{aligned}
 $$
 Taking the supremum over $x$ gives the estimate.
@@ -114,7 +114,7 @@ Taking the supremum over $x$ gives the estimate.
 
 Let $\varepsilon>0$. There is a trigonometric polynomial $P$ such that
 $$
-\|f-P\|_\infty<\varepsilon.
+\norm{f-P}_\infty<\varepsilon.
 $$
 
 
@@ -146,9 +146,9 @@ The Fourier series of a trigonometric polynomial has only finitely many nonzero 
 
 For every $n\ge N$,
 $$
-\|s_n(f)\|_\infty
+\norm{s_n(f)}_\infty
 \le
-\|P\|_\infty
+\norm{P}_\infty
 +C_0(1+\log n)\varepsilon.
 $$
 
@@ -162,10 +162,10 @@ $$
 Therefore step [](#s1-2){.pf-ref} gives
 $$
 \begin{aligned}
-\|s_n(f)\|_\infty
-&\le\|P\|_\infty+\|s_n(f-P)\|_\infty\\
-&\le\|P\|_\infty+C_0(1+\log n)\|f-P\|_\infty\\
-&<\|P\|_\infty+C_0(1+\log n)\varepsilon.
+\norm{s_n(f)}_\infty
+&\le\norm{P}_\infty+\norm{s_n(f-P)}_\infty\\
+&\le\norm{P}_\infty+C_0(1+\log n)\norm{f-P}_\infty\\
+&<\norm{P}_\infty+C_0(1+\log n)\varepsilon.
 \end{aligned}
 $$
 
@@ -179,7 +179,7 @@ One has
 $$
 \boxed{
 \lim_{n\to\infty}
-\frac{\|s_n\|_{L^\infty(\circlegroup)}}{\log n}=0.}
+\frac{\norm{s_n}_{L^\infty(\circlegroup)}}{\log n}=0.}
 $$
 
 
@@ -188,7 +188,7 @@ $$
 Divide the estimate from step [](#s1-5){.pf-ref} by $\log n$ and let $n\to\infty$:
 $$
 \limsup_{n\to\infty}
-\frac{\|s_n(f)\|_\infty}{\log n}
+\frac{\norm{s_n(f)}_\infty}{\log n}
 \le C_0\varepsilon.
 $$
 Since $\varepsilon>0$ was arbitrary, the limsup is $0$. The quotient is nonnegative, so the limit is $0$.

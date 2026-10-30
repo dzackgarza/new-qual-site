@@ -30,7 +30,7 @@ audit:
 ::: {.problem}
 If $f$ is analytic from the unit disk into itself and $f(0)=0$, prove that
 $$
-|f'(0)|\le1.
+\abs{f'(0)}\le1.
 $$
 :::
 
@@ -72,21 +72,21 @@ for $z\neq0$, and the removable value at $0$ is $a_1=f'(0)$. Hence the displayed
 
 For every $0<r<1$,
 $$
-|g(0)|\leq\frac1r.
+\abs{g(0)}\leq\frac1r.
 $$
 
 
 ::: pf-proof
 
-On the circle $|z|=r$, the hypothesis that $f$ maps the unit disk into itself gives $|f(z)|<1$. Therefore
+On the circle $\abs{z}=r$, the hypothesis that $f$ maps the unit disk into itself gives $\abs{f(z)}<1$. Therefore
 $$
-|g(z)|=\frac{|f(z)|}{|z|}<\frac1r.
+\abs{g(z)}=\frac{\abs{f(z)}}{\abs{z}}<\frac1r.
 $$
-By the maximum modulus principle applied to $g$ on the closed disk $|z|\leq r$,
+By the maximum modulus principle applied to $g$ on the closed disk $\abs{z}\leq r$,
 $$
-|g(0)|
+\abs{g(0)}
 \leq
-\max_{|z|=r}|g(z)|
+\max_{\abs{z}=r}\abs{g(z)}
 \leq
 \frac1r.
 $$
@@ -99,7 +99,7 @@ $$
 
 One has
 $$
-\boxed{|f'(0)|\leq1}.
+\boxed{\abs{f'(0)}\leq1}.
 $$
 
 
@@ -107,7 +107,7 @@ $$
 
 By definition, $g(0)=f'(0)$. Step [](#s1-2){.pf-ref} holds for every $0<r<1$; letting $r\uparrow1$ gives
 $$
-|f'(0)|=|g(0)|\leq1.
+\abs{f'(0)}=\abs{g(0)}\leq1.
 $$
 
 :::

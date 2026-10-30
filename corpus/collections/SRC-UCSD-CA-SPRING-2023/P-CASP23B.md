@@ -24,17 +24,17 @@ Consider the polynomial
 $$
 p(z)=\prod_{j=1}^n(z-z_j).
 $$
-Since every $|z_j|=1$,
+Since every $\abs{z_j}=1$,
 $$
-|p(0)|=\prod_{j=1}^n|z_j|=1.
+\abs{p(0)}=\prod_{j=1}^n\abs{z_j}=1.
 $$
 By the maximum modulus principle applied on the closed unit disk,
 $$
-1=|p(0)|\le \max_{|z|=1}|p(z)|.
+1=\abs{p(0)}\le \max_{\abs{z}=1}\abs{p(z)}.
 $$
 Choose $z_0\in\circlegroup$ where this maximum is attained. Then
 $$
-\prod_{j=1}^n|z_0-z_j|=|p(z_0)|\ge1,
+\prod_{j=1}^n\abs{z_0-z_j}=\abs{p(z_0)}\ge1,
 $$
 as required.
 :::

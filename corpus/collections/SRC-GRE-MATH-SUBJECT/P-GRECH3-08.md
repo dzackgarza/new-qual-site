@@ -87,7 +87,7 @@ so the answer is (C).
 
 By step [](#s1-1){.pf-ref}, the segment from the origin to the intersection point in step [](#s1-2){.pf-ref} is perpendicular to the plane. Its length is
 $$
-\|P\|
+\norm{P}
 =\sqrt{\left(\frac23\right)^2+\left(\frac43\right)^2+\left(\frac43\right)^2}
 =\sqrt{\frac{36}{9}}
 =2.

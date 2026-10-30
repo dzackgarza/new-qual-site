@@ -104,7 +104,7 @@ dP_\sigma,
 $$
 and therefore
 $$
-|G|=64\cdot6=384.
+\cardinality{G}=64\cdot6=384.
 $$
 
 ::: pf-proof
@@ -115,7 +115,7 @@ D\rtimes S_3.
 $$
 Their intersection is trivial: the only diagonal permutation matrix is the identity. Hence the expression $dP_\sigma$ is unique, and
 $$
-|G|=|D||S_3|=64\cdot6=384.
+\cardinality{G}=\cardinality{D}\cardinality{S_3}=64\cdot6=384.
 $$
 
 :::

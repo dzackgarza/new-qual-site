@@ -44,7 +44,7 @@ The real integral is absolutely convergent.
 ::: pf-proof
 
 For $0<x\leq1$, its absolute integrand is at most
-$|\log x|/16$, whose integral is finite. For $x\geq1$,
+$\abs{\log x}/16$, whose integral is finite. For $x\geq1$,
 the inequalities $\log x\leq x$ and $(x^2+4)^2\geq x^4$
 bound it by $x^{-3}$. Both endpoint integrals therefore
 converge absolutely. Denote the requested integral by $I$.
@@ -73,8 +73,8 @@ $L=\operatorname{Log}(2i)=\log2+i\pi/2$, its residue is
 $$
 \begin{aligned}
 \operatorname{Res}_{2i}F
-&=\left.\frac{d}{dz}\frac{\operatorname{Log}z}{(z+2i)^2}
-\right|_{z=2i}\\
+&=\evaluated{\frac{d}{dz}\frac{\operatorname{Log}z}{(z+2i)^2}
+}_{z=2i}\\
 &=\frac{1}{(2i)(4i)^2}-\frac{2L}{(4i)^3}
 =\frac{i(1-L)}{32}.
 \end{aligned}
@@ -104,10 +104,10 @@ $$
 $$
 On the inner semicircle the analogous bound is
 $$
-\frac{\pi\varepsilon(|\log\varepsilon|+\pi)}
+\frac{\pi\varepsilon(\abs{\log\varepsilon}+\pi)}
 {(4-\varepsilon^2)^2}\longrightarrow0.
 $$
-These follow from the arc lengths, $|\arg z|\leq\pi$
+These follow from the arc lengths, $\abs{\arg z}\leq\pi$
 on the upper half-plane, and the reverse triangle
 inequality for $z^2+4$. Taking real parts in step [](#s2){.pf-ref}
 and then letting $\varepsilon\downarrow0$, $R\to\infty$

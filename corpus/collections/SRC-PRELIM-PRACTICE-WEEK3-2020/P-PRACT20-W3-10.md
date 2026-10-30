@@ -24,7 +24,7 @@ $$
 \sqrt { 1 + \varepsilon } \approx 1 + \left( \frac { 1 } { 2 } \right) \frac { \varepsilon } { 1 ! } + \left( \frac { 1 } { 2 } \right) \left( - \frac { 1 } { 2 } \right) \frac { \varepsilon ^ { 2 } } { 2 ! } + \left( \frac { 1 } { 2 } \right) \left( - \frac { 1 } { 2 } \right) \left( - \frac { 3 } { 2 } \right) \frac { \varepsilon ^ { 3 } } { 3 ! } = 1 + \frac { \varepsilon } { 2 } - \frac { \varepsilon ^ { 2 } } { 8 } + \frac { \varepsilon ^ { 3 } } { 1 6 }
 $$
 
-when $\left| \varepsilon \right| \ll 1$ . Thus
+when $\abs{ \varepsilon } \ll 1$ . Thus
 
 $$
 \sqrt { 1 + \varepsilon } - p ( 1 + \varepsilon ) \approx \frac { \varepsilon ^ { 3 } } { 1 6 } .

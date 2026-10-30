@@ -51,7 +51,7 @@ $$
 Since $h'/h$ is holomorphic on the full disk, Cauchy's
 theorem and direct circle integration give
 $$
-\int_{|z-P|=r}\frac{f'(z)}{f(z)}\,dz=-2\pi im\ne0
+\int_{\abs{z-P}=r}\frac{f'(z)}{f(z)}\,dz=-2\pi im\ne0
 $$
 with counterclockwise orientation [@SS03].
 :::

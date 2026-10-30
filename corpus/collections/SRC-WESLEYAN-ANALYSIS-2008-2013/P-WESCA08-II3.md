@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $f$ be analytic on a domain $D$, and suppose there is $z_0\in D$ such that
 $$
-|f(z)|\ge |f(z_0)|>0\qquad(z\in D).
+\abs{f(z)}\ge \abs{f(z_0)}>0\qquad(z\in D).
 $$
 Show that $f$ is constant on $D$.
 :::
@@ -36,9 +36,9 @@ The function $f$ has no zeros in $D$.
 
 For every $z\in D$,
 $$
-|f(z)|
+\abs{f(z)}
 \ge
-|f(z_0)|
+\abs{f(z_0)}
 >
 0.
 $$
@@ -80,9 +80,9 @@ Step [](#s1-1){.pf-ref} guarantees that the denominator never vanishes.
 For every $z\in D$,
 $$
 \boxed{
-|g(z)|
+\abs{g(z)}
 \le
-|g(z_0)|}.
+\abs{g(z_0)}}.
 $$
 
 
@@ -90,19 +90,19 @@ $$
 
 The hypothesis gives
 $$
-|f(z)|
+\abs{f(z)}
 \ge
-|f(z_0)|
+\abs{f(z_0)}
 >
 0.
 $$
 Taking reciprocals reverses the inequality:
 $$
-\frac1{|f(z)|}
+\frac1{\abs{f(z)}}
 \le
-\frac1{|f(z_0)|}.
+\frac1{\abs{f(z_0)}}.
 $$
-These are exactly $|g(z)|$ and $|g(z_0)|$.
+These are exactly $\abs{g(z)}$ and $\abs{g(z_0)}$.
 
 :::
 
@@ -110,13 +110,13 @@ These are exactly $|g(z)|$ and $|g(z_0)|$.
 
 ::: {.pf-step #s1-4}
 
-Thus $|g|$ attains its maximum on $D$ at the interior point
+Thus $\abs{g}$ attains its maximum on $D$ at the interior point
 $z_0$.
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} shows that no value of $|g|$ exceeds $|g(z_0)|$, and
+Step [](#s1-3){.pf-ref} shows that no value of $\abs{g}$ exceeds $\abs{g(z_0)}$, and
 $z_0\in D$.
 
 :::
@@ -134,7 +134,7 @@ $$
 ::: pf-proof
 
 The domain $D$ is connected, $g$ is analytic by step [](#s1-2){.pf-ref}, and
-$|g|$ attains a maximum at an interior point by step [](#s1-4){.pf-ref}. The strong
+$\abs{g}$ attains a maximum at an interior point by step [](#s1-4){.pf-ref}. The strong
 maximum modulus principle therefore forces $g$ to be constant.
 
 :::

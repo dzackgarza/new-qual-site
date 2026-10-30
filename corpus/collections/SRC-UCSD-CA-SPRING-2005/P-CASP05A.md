@@ -26,9 +26,9 @@ Write
 $$
 F_w(z)=z^5(z-2)-w=z^6-2z^5-w.
 $$
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|z^6-w|\le 1+|w|<2=|-2z^5|.
+\abs{z^6-w}\le 1+\abs{w}<2=\abs{-2z^5}.
 $$
 Hence Rouché's theorem shows that $F_w$ and $-2z^5$ have the same number of
 zeros in $\DD$, namely five, counted with multiplicity.
@@ -41,9 +41,9 @@ Such a zero is either $0$ or $5/3$. The first cannot solve $F_w=0$ when
 $w\ne0$, and the second is outside $\DD$. Thus the five roots in
 $\DD$ are distinct.
 
-For part (b), on $|z-2|=1$ one has $|z|\ge1$, and in fact
+For part (b), on $\abs{z-2}=1$ one has $\abs{z}\ge1$, and in fact
 $$
-|z^5(z-2)|=|z|^5\ge1>|w|.
+\abs{z^5(z-2)}=\abs{z}^5\ge1>\abs{w}.
 $$
 Rouché therefore shows that $F_w$ and $z^5(z-2)$ have the same number of zeros
 in $B(2,1)$. The latter has exactly the one zero $z=2$ there, so $F_w$ has
@@ -52,8 +52,8 @@ exactly one zero in $B(2,1)$.
 That zero is simple. Indeed, the only critical points of $z^5(z-2)$ are
 $0$ and $5/3$, and
 $$
-\left|\left(\frac53\right)^5\left(\frac53-2\right)\right|
-=\frac{3125}{729}>1>|w|,
+\abs{\left(\frac53\right)^5\left(\frac53-2\right)}
+=\frac{3125}{729}>1>\abs{w},
 $$
 so neither critical point can solve $F_w=0$ for $w\in\DD$.
 :::

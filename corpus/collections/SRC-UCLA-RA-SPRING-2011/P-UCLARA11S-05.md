@@ -11,9 +11,9 @@ review: draft
 ::: {.problem}
 (a) Show that $\ell^\infty(\ZZ)$ contains continuum many functions $x_\alpha:\ZZ\to\RR$ satisfying
 $$
-\|x_\alpha\|_{\ell^\infty}=1,
+\norm{x_\alpha}_{\ell^\infty}=1,
 \qquad
-\|x_\alpha-x_\beta\|_{\ell^\infty}\ge1
+\norm{x_\alpha-x_\beta}_{\ell^\infty}\ge1
 \quad\text{whenever }\alpha\ne\beta.
 $$
 
@@ -61,7 +61,7 @@ x_A(j)
 $$
 Then
 $$
-\|x_A\|_\infty=1.
+\norm{x_A}_\infty=1.
 $$
 
 
@@ -81,7 +81,7 @@ while $x_A$ takes only the values $0$ and $1$. Hence its supremum norm is exactl
 
 If $A\ne B$, then
 $$
-\|x_A-x_B\|_\infty=1.
+\norm{x_A-x_B}_\infty=1.
 $$
 
 
@@ -93,7 +93,7 @@ j\in A\triangle B.
 $$
 Then
 $$
-|x_A(j)-x_B(j)|=1.
+\abs{x_A(j)-x_B(j)}=1.
 $$
 At every coordinate the difference has absolute value at most $1$, so the supremum norm is exactly $1$.
 
@@ -131,11 +131,11 @@ For each $n$, by the definition of the dual norm choose
 $$
 x_n\in X,
 \qquad
-\|x_n\|=1,
+\norm{x_n}=1,
 $$
 such that
 $$
-|\varphi_n(x_n)|>\frac12.
+\abs{\varphi_n(x_n)}>\frac12.
 $$
 Let
 $$
@@ -149,15 +149,15 @@ Suppose $Y\ne X$. Choose $x\notin Y$. By Hahn--Banach, there is
 $$
 \psi\in X^*,
 \qquad
-\|\psi\|=1,
+\norm{\psi}=1,
 $$
 such that
 $$
-\psi|_Y=0.
+\psi\restrict_Y=0.
 $$
 Choose $n$ with
 $$
-\|\psi-\varphi_n\|<\frac14.
+\norm{\psi-\varphi_n}<\frac14.
 $$
 Since $x_n\in Y$,
 $$
@@ -165,17 +165,17 @@ $$
 $$
 Therefore
 $$
-|\varphi_n(x_n)|
+\abs{\varphi_n(x_n)}
 =
-|\varphi_n(x_n)-\psi(x_n)|
+\abs{\varphi_n(x_n)-\psi(x_n)}
 \le
-\|\varphi_n-\psi\|\|x_n\|
+\norm{\varphi_n-\psi}\norm{x_n}
 <
 \frac14,
 $$
 contradicting
 $$
-|\varphi_n(x_n)|>\frac12.
+\abs{\varphi_n(x_n)}>\frac12.
 $$
 Thus $Y=X$, so $X$ is separable.
 
@@ -235,7 +235,7 @@ T_a(x)
 $$
 defines a bounded linear functional on $\ell^1$ with
 $$
-\|T_a\|=\|a\|_\infty.
+\norm{T_a}=\norm{a}_\infty.
 $$
 Conversely, if $T\in(\ell^1)^*$, define
 $$
@@ -243,9 +243,9 @@ a_j=T(e_j),
 $$
 where $e_j$ is the standard basis vector. Then
 $$
-|a_j|
+\abs{a_j}
 \le
-\|T\|,
+\norm{T},
 $$
 so $a\in\ell^\infty$, and density of finitely supported sequences gives $T=T_a$.
 

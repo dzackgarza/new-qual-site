@@ -82,22 +82,22 @@ Prove that $T$ is a distribution.
 
 Linearity is immediate. Let $K\subset\RR$ be compact and suppose $\operatorname{supp}\phi\subset K$. By the mean-value estimate,
 $$
-|\phi(x)-\phi(0)|\le x\sup_{0\le t\le1}|\phi'(t)|
+\abs{\phi(x)-\phi(0)}\le x\sup_{0\le t\le1}\abs{\phi'(t)}
 \qquad(0\le x\le1),
 $$
 so
 $$
-\left|\int_0^1\frac{\phi(x)-\phi(0)}x\,dx\right|
-\le \sup_{0\le t\le1}|\phi'(t)|.
+\abs{\int_0^1\frac{\phi(x)-\phi(0)}x\,dx}
+\le \sup_{0\le t\le1}\abs{\phi'(t)}.
 $$
 If $K\cap[1,\infty)\subset[1,R]$, then
 $$
-\left|\int_1^\infty\frac{\phi(x)}x\,dx\right|
-\le (\log R)\sup_K|\phi|
+\abs{\int_1^\infty\frac{\phi(x)}x\,dx}
+\le (\log R)\sup_K\abs{\phi}
 $$
 (with this term absent if $K\cap[1,\infty)=\varnothing$). Thus on every fixed compact support,
 $$
-|T(\phi)|\le C_K\bigl(\sup_K|\phi|+\sup_K|\phi'|\bigr).
+\abs{T(\phi)}\le C_K\bigl(\sup_K\abs{\phi}+\sup_K\abs{\phi'}\bigr).
 $$
 This is precisely the required continuity estimate for a distribution. Therefore
 $$
@@ -120,7 +120,7 @@ f(x)=H(x)\log x,
 $$
 so $f(x)=0$ for $x<0$ and $f(x)=\log x$ for $x>0$. The only possible local singularity is at $0$, but
 $$
-\int_0^1|\log x|\,dx=1<\infty.
+\int_0^1\abs{\log x}\,dx=1<\infty.
 $$
 Away from $0$, $\log x$ is locally integrable. Hence
 $$

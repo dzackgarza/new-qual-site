@@ -20,6 +20,6 @@ Let $H = \{(1), (12)(34), (13)(24), (14)(23)\}$ be as in Exercise 1. How many le
 :::
 
 ::: {.solution}
-Using Corollary 1 of Lagrange’s theorem, there are $\frac { | S _ { 4 } | } { | H | } = \frac { 4 ! } { 4 } = 6$ left cosets.
+Using Corollary 1 of Lagrange’s theorem, there are $\frac { \cardinality{ S _ { 4 } } } { \cardinality{ H } } = \frac { 4 ! } { 4 } = 6$ left cosets.
 (Note: this makes sense given that there are three in $A _ { 4 }$ and $S _ { 4 }$ is twice as large.)
 :::

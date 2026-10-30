@@ -41,5 +41,5 @@ A nilpotent $T$ is similar to a sum of Jordan blocks with eigenvalue $0$, one fo
 
 **(b) ii.** The orbit size equals the index of the centralizer in $GL_5(\FF_q)$.
 The centralizer of a regular nilpotent (single Jordan block) consists of invertible matrices of the form $$\begin{pmatrix} a&b&c&d&e\\ &a&b&c&d\\ &&a&b&c\\ &&&a&b\\ &&&&a \end{pmatrix}$$ which has order $(q-1)q^4$.
-Since $|GL_5(\FF_q)| = q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)$, the number of such linear maps $T$ is $$\frac{q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)}{(q-1)q^4} = q^6(q^5-1)(q^4-1)(q^3-1)(q^2-1)$$
+Since $\cardinality{GL_5(\FF_q)} = q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)$, the number of such linear maps $T$ is $$\frac{q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)}{(q-1)q^4} = q^6(q^5-1)(q^4-1)(q^3-1)(q^2-1)$$
 :::

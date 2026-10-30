@@ -100,7 +100,7 @@ $$
 Restrict the tangent bundle of the product to the graph. Under the
 identification $D\cong C$ this gives
 $$
-T_{C\times\PP^1}|_D
+T_{C\times\PP^1}\restrict_D
 \cong
 T_C\oplus u^*T_{\PP^1}.
 $$
@@ -320,7 +320,7 @@ $$
 H^0(C,A)\hookrightarrow H^0(C,A+Q')=H^0(C,L)
 $$
 is therefore an isomorphism. Every section of $L$ consequently vanishes at
-the added point $Q'$, so $Q'$ is a base point of $|L|$. This contradicts the
+the added point $Q'$, so $Q'$ is a base point of $\linearsystem{L}$. This contradicts the
 fact that the two pulled-back sections from $\PP^1$ generate $L$. Thus no
 degree-three morphism exists.
 

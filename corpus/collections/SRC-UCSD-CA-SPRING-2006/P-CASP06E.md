@@ -23,11 +23,11 @@ sense of a linear fractional (Möbius) transformation.
 
 Let the first pair be the boundary circles of the annulus
 $$
-A(r,R)=\{r<|z-a|<R\},\qquad 0<r<R,
+A(r,R)=\{r<\abs{z-a}<R\},\qquad 0<r<R,
 $$
 and let the image pair bound
 $$
-A(r',R')=\{r'<|w-b|<R'\}.
+A(r',R')=\{r'<\abs{w-b}<R'\}.
 $$
 The Möbius transformation restricts to a conformal equivalence between these
 annuli, possibly interchanging the two boundary components.

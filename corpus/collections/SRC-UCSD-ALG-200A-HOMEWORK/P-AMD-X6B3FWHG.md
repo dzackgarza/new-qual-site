@@ -181,18 +181,18 @@ A finite group in which every Sylow subgroup is normal is nilpotent.
 
 ::: pf-proof
 
-Let $K$ be such a group and choose one Sylow subgroup $S_p$ for each prime $p\mid |K|$.
+Let $K$ be such a group and choose one Sylow subgroup $S_p$ for each prime $p\mid \cardinality{K}$.
 If $p\ne q$, normality gives
 $$
 [S_p,S_q]\le S_p\cap S_q=1.
 $$
 Thus the Sylow subgroups commute pairwise, and their product has order
 $$
-\prod_{p\mid |K|}|S_p|=|K|.
+\prod_{p\mid \cardinality{K}}\cardinality{S_p}=\cardinality{K}.
 $$
 Hence
 $$
-K=\prod_{p\mid |K|}S_p
+K=\prod_{p\mid \cardinality{K}}S_p
 $$
 is their internal direct product.
 
@@ -247,7 +247,7 @@ Let $H$ act by left multiplication on the finite set $P/H$ of left cosets.
 Every orbit has size a power of $p$.
 Since $H<P$,
 $$
-|P:H|
+\subgroupindex{P:H}
 $$
 is divisible by $p$.
 
@@ -258,13 +258,13 @@ $$
 that is, exactly when $x\in N_P(H)$.
 Hence the number of fixed cosets is
 $$
-|N_P(H):H|.
+\subgroupindex{N_P(H):H}.
 $$
 The orbit decomposition gives
 $$
-|P:H|\equiv |N_P(H):H|\pmod p.
+\subgroupindex{P:H}\equiv \subgroupindex{N_P(H):H}\pmod p.
 $$
-Thus $p$ divides $|N_P(H):H|$.
+Thus $p$ divides $\subgroupindex{N_P(H):H}$.
 Since this index is positive, it is at least $p$, so
 $$
 H<N_P(H).
@@ -294,7 +294,7 @@ The quotient $P/M$ is therefore a nontrivial finite $p$-group.
 Since $M$ is maximal, $P/M$ has no nontrivial proper subgroup.
 Every nontrivial finite $p$-group has a subgroup of order $p$, so this is possible only when
 $$
-|P/M|=p.
+\cardinality{P/M}=p.
 $$
 Thus $[P:M]=p$.
 

@@ -30,7 +30,7 @@ Put $z = e^{i\theta}$, so $\cos\theta = \frac{z+z^{-1}}{2}$ and $d\theta = \frac
 
 ::: {.pf-step #s1}
 
-$\displaystyle\int_0^{2\pi} \frac{d\theta}{(a+\cos\theta)^2} = \oint_{|z|=1} \frac{4z}{i(z-z_0)^2(z-z_1)^2}\,dz$, and $z_0$ is the only pole inside $\abs z=1$.
+$\displaystyle\int_0^{2\pi} \frac{d\theta}{(a+\cos\theta)^2} = \oint_{\abs{z}=1} \frac{4z}{i(z-z_0)^2(z-z_1)^2}\,dz$, and $z_0$ is the only pole inside $\abs z=1$.
 
 ::: pf-proof
 

@@ -72,9 +72,9 @@ Their degree-$q$ components are denoted $T^q(\mcf)$, $S^q(\mcf)=\Sym^q(\mcf)$, a
 :::
 
 ::: {.proposition}
-If $\mcf$ is [[D-QNTZY|quasi-coherent]] and $\mcf|_{\Spec A}\cong\widetilde M$, then
+If $\mcf$ is [[D-QNTZY|quasi-coherent]] and $\mcf\restrict_{\Spec A}\cong\widetilde M$, then
 $$
-(\bigwedge^q\mcf)|_{\Spec A}\cong\widetilde{\bigwedge_A^q M},
+(\bigwedge^q\mcf)\restrict_{\Spec A}\cong\widetilde{\bigwedge_A^q M},
 $$
 and the corresponding identities hold for tensor and symmetric powers.
 These identities follow from compatibility of tensor products and their defining quotients with localization [@Har10a, Propositions II.5.2 and II.5.7, Exercise II.5.16(e)].

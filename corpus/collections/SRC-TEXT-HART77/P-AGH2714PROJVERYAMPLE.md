@@ -80,7 +80,7 @@ The restriction $W_i\to V_i$ is of finite type, so choose finitely many $A_i$-al
 The [localization formula for sections](https://stacks.math.columbia.edu/tag/01PW) on the quasi-compact, quasi-separated scheme $X$ gives sections
 $$
 t_{ij}\in\Gamma(X,\mcl^{d_iq_{ij}}),\qquad
-t_{ij}|_{W_i}=b_{ij}s_i^{q_{ij}}
+t_{ij}\restrict_{W_i}=b_{ij}s_i^{q_{ij}}
 $$
 for some integers $q_{ij}\ge0$.
 Choose a positive common multiple $h$ of the $d_i$ large enough that $h/d_i\ge q_{ij}$ for every pair.

@@ -79,7 +79,7 @@ $$
 \sum_{n=1}^{\infty}
 \frac{(-1)^{n+1}}{n}
 \left(\frac{x-2}{2}\right)^n,
-\qquad |x-2|<2,
+\qquad \abs{x-2}<2,
 }
 $$
 and its radius of convergence is $\boxed{2}$.
@@ -92,15 +92,15 @@ $$
 \ln x
 =\ln 2+\ln\!\left(1+\frac{x-2}{2}\right).
 $$
-For $|u|<1$,
+For $\abs{u}<1$,
 $$
 \ln(1+u)=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}u^n.
 $$
 Substituting $u=(x-2)/2$ gives the displayed expansion. For the $n$th term of the resulting power series, the ratio of successive absolute values tends to
 $$
-\frac{|x-2|}{2}.
+\frac{\abs{x-2}}{2}.
 $$
-Hence the series converges for $|x-2|<2$ and diverges for $|x-2|>2$, so its radius of convergence is $2$.
+Hence the series converges for $\abs{x-2}<2$ and diverges for $\abs{x-2}>2$, so its radius of convergence is $2$.
 
 :::
 

@@ -72,7 +72,7 @@ $$
 Then
 $$
 \frac{x^HAx}{x^Hx}
-=\frac{\sum_{j=k}^n\lambda_j(A)|c_j|^2}{\sum_{j=k}^n|c_j|^2}.
+=\frac{\sum_{j=k}^n\lambda_j(A)\abs{c_j}^2}{\sum_{j=k}^n\abs{c_j}^2}.
 $$
 Every eigenvalue appearing in this convex combination is at most $\lambda_k(A)$, so the quotient is at most $\lambda_k(A)$.
 
@@ -261,7 +261,7 @@ $$
 $$
 If $x\in K$, then $B^Hx=0$, hence
 $$
-x^HBB^Hx=\|B^Hx\|^2=0.
+x^HBB^Hx=\norm{B^Hx}^2=0.
 $$
 Therefore
 $$
@@ -490,7 +490,7 @@ $$
 $$
 Moreover, for every $x\in K$,
 $$
-x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
+x^HCx=x^HAx+x^HBB^Hx=x^HAx+\norm{B^Hx}^2=x^HAx.
 $$
 
 ::: pf
@@ -540,7 +540,7 @@ $$
 For $x=\sum_{j=k}^n c_ju_j\neq0$,
 $$
 \frac{x^HAx}{x^Hx}
-=\frac{\sum_{j=k}^n |c_j|^2\lambda_j(A)}{\sum_{j=k}^n |c_j|^2}
+=\frac{\sum_{j=k}^n \abs{c_j}^2\lambda_j(A)}{\sum_{j=k}^n \abs{c_j}^2}
 \le \lambda_k(A).
 $$
 
@@ -641,7 +641,7 @@ $$
 $$
 If $x\in K$, then $B^Hx=0$, and therefore
 $$
-x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
+x^HCx=x^HAx+x^HBB^Hx=x^HAx+\norm{B^Hx}^2=x^HAx.
 $$
 Dividing by $x^Hx$ gives the equality of Rayleigh quotients.
 
@@ -799,7 +799,7 @@ $$
 then
 $$
 R_C(x)
-=\frac{\sum_{i=1}^{k+2}|a_i|^2\lambda_i(C)}{\sum_{i=1}^{k+2}|a_i|^2}
+=\frac{\sum_{i=1}^{k+2}\abs{a_i}^2\lambda_i(C)}{\sum_{i=1}^{k+2}\abs{a_i}^2}
 \ge \lambda_{k+2}(C).
 $$
 

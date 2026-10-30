@@ -78,7 +78,7 @@ Statement (b) is true.
 ::: pf-proof
 
 ::: pf-step
-Define $g(x) \definedas f(x) - x$ on $[0,1]$; then $g$ is continuous, $g(0) = f(0) \geq 0$, and $g(1) = f(1) - 1 \leq 0$.
+Define $g(x) \coloneqq f(x) - x$ on $[0,1]$; then $g$ is continuous, $g(0) = f(0) \geq 0$, and $g(1) = f(1) - 1 \leq 0$.
 
 ::: pf-proof
 $f: [0,1] \to [0,1]$, so $f(0) \in [0,1]$ and $f(1) \in [0,1]$; continuity of $g$ follows from continuity of $f$.

@@ -28,7 +28,7 @@ Let $H$ be a real Hilbert space and $M$ a nonempty, closed subspace of $H$.
 Suppose $x_0 \in H \setminus M$.
 Prove that
 $$
-\min\{\|x - x_0\| : x \in M\} = \max\{\langle x_0, y \rangle : y \in M^\perp,\; \|y\| = 1\}.
+\min\{\norm{x - x_0} : x \in M\} = \max\{\langle x_0, y \rangle : y \in M^\perp,\; \norm{y} = 1\}.
 $$
 :::
 
@@ -70,13 +70,13 @@ x_0-x=(m_0-x)+z,
 $$
 where $m_0-x\in M$ and $z\in M^\perp$. Hence, by Pythagoras,
 $$
-\|x_0-x\|^2
-=\|m_0-x\|^2+\|z\|^2
-\ge\|z\|^2.
+\norm{x_0-x}^2
+=\norm{m_0-x}^2+\norm{z}^2
+\ge\norm{z}^2.
 $$
 Equality holds at $x=m_0$. Therefore
 $$
-\min_{x\in M}\|x-x_0\|=\|z\|.
+\min_{x\in M}\norm{x-x_0}=\norm{z}.
 $$
 
 :::
@@ -89,26 +89,26 @@ Compute the maximum over the unit sphere of $M^\perp$.
 
 ::: pf-proof
 
-If $y\in M^\perp$ and $\|y\|=1$, then
+If $y\in M^\perp$ and $\norm{y}=1$, then
 $$
 \langle x_0,y\rangle
 =\langle m_0+z,y\rangle
 =\langle z,y\rangle
-\le\|z\|
+\le\norm{z}
 $$
 by Cauchy--Schwarz. Taking
 $$
-y_0=\frac{z}{\|z\|}\in M^\perp
+y_0=\frac{z}{\norm{z}}\in M^\perp
 $$
-gives $\|y_0\|=1$ and
+gives $\norm{y_0}=1$ and
 $$
-\langle x_0,y_0\rangle=\|z\|.
+\langle x_0,y_0\rangle=\norm{z}.
 $$
 Thus
 $$
-\max_{\substack{y\in M^\perp\\\|y\|=1}}\langle x_0,y\rangle
-=\|z\|
-=\min_{x\in M}\|x-x_0\|.
+\max_{\substack{y\in M^\perp\\\norm{y}=1}}\langle x_0,y\rangle
+=\norm{z}
+=\min_{x\in M}\norm{x-x_0}.
 $$
 
 :::

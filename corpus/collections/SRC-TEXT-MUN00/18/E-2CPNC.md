@@ -30,7 +30,7 @@ Show that if the family $\theset{A_\alpha}$ is locally finite and each $A_\alpha
 :::
 
 ::: {.solution}
-For a closed set $C\subseteq Y$ put $F_\alpha=(f|_{A_\alpha})^{-1}(C)=f^{-1}(C)\cap A_\alpha$, so that $f^{-1}(C)=\bigcup_\alpha F_\alpha$ because the $A_\alpha$ cover $X$.
+For a closed set $C\subseteq Y$ put $F_\alpha=(f\restrict_{A_\alpha})^{-1}(C)=f^{-1}(C)\cap A_\alpha$, so that $f^{-1}(C)=\bigcup_\alpha F_\alpha$ because the $A_\alpha$ cover $X$.
 
 ::: pf
 
@@ -38,7 +38,7 @@ For a closed set $C\subseteq Y$ put $F_\alpha=(f|_{A_\alpha})^{-1}(C)=f^{-1}(C)\
 If $A_\alpha$ is closed in $X$, then $F_\alpha$ is closed in $X$ and $F_\alpha\subseteq A_\alpha$.
 
 ::: pf-proof
-Since $f|_{A_\alpha}$ is continuous, $F_\alpha$ is closed in the subspace $A_\alpha$, and a closed subset of a closed subspace is closed in $X$.
+Since $f\restrict_{A_\alpha}$ is continuous, $F_\alpha$ is closed in the subspace $A_\alpha$, and a closed subset of a closed subspace is closed in $X$.
 :::
 
 :::

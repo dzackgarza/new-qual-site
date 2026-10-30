@@ -53,13 +53,13 @@ Part (a): Case $m_*(E) < \infty$.
 
 ::: pf-step
 By definition of outer measure on $\RR$, for any $E \subseteq \RR$:
-$$m_*(E) = \inf \left\{ \sum_{j=1}^\infty |I_j| \;\middle|\; E \subseteq \bigcup_{j=1}^\infty I_j, \, I_j \text{ open intervals} \right\}.$$
+$$m_*(E) = \inf \left\{ \sum_{j=1}^\infty \setmeasure{I_j} \;\st\; E \subseteq \bigcup_{j=1}^\infty I_j, \, I_j \text{ open intervals} \right\}.$$
 
 :::
 
 ::: pf-step
 For each integer $k \ge 1$, by the definition of the infimum, there exists a countable collection of open intervals $\{I_{j, k}\}_{j=1}^\infty$ covering $E$ such that
-$$\sum_{j=1}^\infty |I_{j, k}| < m_*(E) + \frac{1}{k}.$$
+$$\sum_{j=1}^\infty \setmeasure{I_{j, k}} < m_*(E) + \frac{1}{k}.$$
 
 :::
 
@@ -69,7 +69,7 @@ Define the open set $U_k = \bigcup_{j=1}^\infty I_{j, k}$.
 :::
 
 ::: pf-step
-Then $E \subseteq U_k$, and by countable subadditivity, $m_*(U_k) \le \sum_{j=1}^\infty |I_{j, k}| < m_*(E) + \frac{1}{k}$.
+Then $E \subseteq U_k$, and by countable subadditivity, $m_*(U_k) \le \sum_{j=1}^\infty \setmeasure{I_{j, k}} < m_*(E) + \frac{1}{k}$.
 
 :::
 

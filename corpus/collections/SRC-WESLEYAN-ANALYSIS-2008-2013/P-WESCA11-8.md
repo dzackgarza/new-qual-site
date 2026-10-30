@@ -36,7 +36,7 @@ $$
 
 The polynomial $P$ has exactly one zero in the disk
 $$
-|z|<1.
+\abs{z}<1.
 $$
 
 
@@ -44,7 +44,7 @@ $$
 
 On the circle
 $$
-|z|=1,
+\abs{z}=1,
 $$
 write
 $$
@@ -54,23 +54,23 @@ P(z)
 $$
 Then
 $$
-|-6z|
+\abs{-6z}
 =
 6,
 $$
 while
 $$
-|z^4+3|
+\abs{z^4+3}
 \le
-|z|^4+3
+\abs{z}^4+3
 =
 4.
 $$
 Thus
 $$
-|z^4+3|
+\abs{z^4+3}
 <
-|-6z|
+\abs{-6z}
 $$
 on the entire unit circle.
 
@@ -80,7 +80,7 @@ $$
 $$
 have the same number of zeros in
 $$
-|z|<1,
+\abs{z}<1,
 $$
 counted with multiplicity. The latter has exactly one zero there, namely
 $$
@@ -96,7 +96,7 @@ Hence $P$ has exactly one zero in the unit disk.
 
 The polynomial $P$ has exactly four zeros in the disk
 $$
-|z|<2.
+\abs{z}<2.
 $$
 
 
@@ -104,7 +104,7 @@ $$
 
 On the circle
 $$
-|z|=2,
+\abs{z}=2,
 $$
 write
 $$
@@ -114,23 +114,23 @@ z^4+(-6z+3).
 $$
 Then
 $$
-|z^4|
+\abs{z^4}
 =
 16,
 $$
 while
 $$
-|-6z+3|
+\abs{-6z+3}
 \le
-6|z|+3
+6\abs{z}+3
 =
 15.
 $$
 Thus
 $$
-|-6z+3|
+\abs{-6z+3}
 <
-|z^4|
+\abs{z^4}
 $$
 on the entire circle.
 
@@ -140,7 +140,7 @@ z^4
 $$
 have the same number of zeros in
 $$
-|z|<2,
+\abs{z}<2,
 $$
 counted with multiplicity. The polynomial $z^4$ has four zeros there,
 counted with multiplicity. Therefore $P$ has four zeros in the disk.
@@ -153,9 +153,9 @@ counted with multiplicity. Therefore $P$ has four zeros in the disk.
 
 The polynomial has no zero on either boundary circle
 $$
-|z|=1
+\abs{z}=1
 \qquad\text{or}\qquad
-|z|=2.
+\abs{z}=2.
 $$
 
 
@@ -182,15 +182,15 @@ roots of $P$ have modulus strictly between $1$ and $2$.
 
 Step [](#s1-2){.pf-ref} gives four zeros in
 $$
-|z|<2,
+\abs{z}<2,
 $$
 and step [](#s1-1){.pf-ref} gives one zero in
 $$
-|z|<1.
+\abs{z}<1.
 $$
 By step [](#s1-3){.pf-ref}, no zero lies on either boundary circle. Therefore the annulus
 $$
-1<|z|<2
+1<\abs{z}<2
 $$
 contains
 $$

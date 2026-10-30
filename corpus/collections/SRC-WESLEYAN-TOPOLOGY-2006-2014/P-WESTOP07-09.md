@@ -408,7 +408,7 @@ U:Y\to[-1,1]
 $$
 with
 $$
-U|_F=u.
+U\restrict_F=u.
 $$
 
 
@@ -432,7 +432,7 @@ u:A\to\{0,1\},
 $$
 where
 $$
-\mathfrak c=|\RR|.
+\mathfrak c=\cardinality{\RR}.
 $$
 
 
@@ -450,11 +450,11 @@ is continuous.
 
 Since
 $$
-|A|=\mathfrak c,
+\cardinality{A}=\mathfrak c,
 $$
 the number of such functions is
 $$
-2^{|A|}
+2^{\cardinality{A}}
 =
 2^{\mathfrak c}.
 $$
@@ -507,7 +507,7 @@ D
 $$
 is countable,
 $$
-|\RR^D|
+\cardinality{\RR^D}
 =
 \mathfrak c^{\aleph_0}
 =
@@ -515,7 +515,7 @@ $$
 $$
 Therefore
 $$
-|C(X,\RR)|
+\cardinality{C(X,\RR)}
 \le
 \mathfrak c.
 $$

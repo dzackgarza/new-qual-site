@@ -31,13 +31,13 @@ be the Eisenstein series of order 4.
 (b) More precisely,
 
 $$
-\left| E _ {4} (\tau) - \frac {\pi^ {4}}{4 5} \right| \leq c e ^ {- 2 \pi t} \quad \text { if } \tau = x + i t \text { and } t \geq 1.
+\abs{ E _ {4} (\tau) - \frac {\pi^ {4}}{4 5} } \leq c e ^ {- 2 \pi t} \quad \text { if } \tau = x + i t \text { and } t \geq 1.
 $$
 
 (c) Deduce that
 
 $$
-\left| E _ {4} (\tau) - \tau^ {- 4} \frac {\pi^ {4}}{4 5} \right| \leq c t ^ {- 4} e ^ {- 2 \pi / t} \quad \text { if } \tau = i t \text { and } 0 <   t \leq 1.
+\abs{ E _ {4} (\tau) - \tau^ {- 4} \frac {\pi^ {4}}{4 5} } \leq c t ^ {- 4} e ^ {- 2 \pi / t} \quad \text { if } \tau = i t \text { and } 0 <   t \leq 1.
 $$
 :::
 
@@ -62,12 +62,12 @@ because $2\zeta(4)=\pi^4/45$.
 
 If $t\ge1$, taking absolute values in (2) gives
 $$
-\left|E_4(\tau)-\frac{\pi^4}{45}\right|
+\abs{E_4(\tau)-\frac{\pi^4}{45}}
 \le \frac{16\pi^4}{3}\sum_{m,r\ge1}r^3e^{-2\pi rmt}.
 $$
 Since $e^{-2\pi rmt}\le e^{-2\pi t}e^{-2\pi(rm-1)}$ for $t\ge1$, the remaining double sum is finite and independent of $t$. Thus
 $$
-\left|E_4(\tau)-\frac{\pi^4}{45}\right|\le Ce^{-2\pi t}.
+\abs{E_4(\tau)-\frac{\pi^4}{45}}\le Ce^{-2\pi t}.
 $$
 Part (a) follows immediately.
 
@@ -84,8 +84,8 @@ E_4(it)=t^{-4}E_4(i/t).
 $$
 Applying part (b) at height $1/t\ge1$,
 $$
-\left|E_4(it)-t^{-4}\frac{\pi^4}{45}\right|
-=t^{-4}\left|E_4(i/t)-\frac{\pi^4}{45}\right|
+\abs{E_4(it)-t^{-4}\frac{\pi^4}{45}}
+=t^{-4}\abs{E_4(i/t)-\frac{\pi^4}{45}}
 \le Ct^{-4}e^{-2\pi/t},
 $$
 as required.

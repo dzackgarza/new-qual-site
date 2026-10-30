@@ -100,11 +100,11 @@ Choose $M$ large enough that both inequalities hold.
 
 There exists $N_0$ such that for every $n\ge N_0$,
 $$
-|f_n(-M)-f(-M)|<\frac{\varepsilon}{4}
+\abs{f_n(-M)-f(-M)}<\frac{\varepsilon}{4}
 $$
 and
 $$
-|f_n(M)-f(M)|<\frac{\varepsilon}{4}.
+\abs{f_n(M)-f(M)}<\frac{\varepsilon}{4}.
 $$
 
 
@@ -125,7 +125,7 @@ $$
 
 For every $n\ge N_0$ and every $x\le -M$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 
@@ -143,7 +143,7 @@ By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 f_n(-M)
 \le
-|f_n(-M)-f(-M)|+f(-M)
+\abs{f_n(-M)-f(-M)}+f(-M)
 <
 \frac{\varepsilon}{2}.
 $$
@@ -153,7 +153,7 @@ f(-M)<\frac{\varepsilon}{4}.
 $$
 Therefore
 $$
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 \le
 f_n(x)+f(x)
 <
@@ -170,7 +170,7 @@ $$
 
 For every $n\ge N_0$ and every $x\ge M$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 
@@ -204,7 +204,7 @@ By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 1-f_n(M)
 \le
-|f_n(M)-f(M)|
+\abs{f_n(M)-f(M)}
 +
 (1-f(M))
 <
@@ -219,9 +219,9 @@ $$
 Therefore
 $$
 \begin{aligned}
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 &=
-|(1-f_n(x))-(1-f(x))|\\
+\abs{(1-f_n(x))-(1-f(x))}\\
 &\le
 (1-f_n(x))+(1-f(x))\\
 &<
@@ -267,11 +267,11 @@ for every $j$.
 
 By step [](#s1-6){.pf-ref}, choose $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{3}.
+\abs{f(x)-f(y)}<\frac{\varepsilon}{3}.
 $$
 Take a partition with mesh less than $\delta$.
 Since $f$ is increasing by step [](#s1-1){.pf-ref},
@@ -290,7 +290,7 @@ $$
 
 There exists $N_1$ such that for every $n\ge N_1$ and every partition point $x_j$,
 $$
-|f_n(x_j)-f(x_j)|
+\abs{f_n(x_j)-f(x_j)}
 <
 \frac{\varepsilon}{3}.
 $$
@@ -309,7 +309,7 @@ There are finitely many partition points, so take the maximum of those indices.
 
 For every $n\ge N_1$ and every $x\in[-M,M]$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 
@@ -365,7 +365,7 @@ f(x_j)-f_n(x_{j-1})\\
 $$
 Therefore
 $$
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 <
 \varepsilon.
 $$
@@ -386,7 +386,7 @@ x\in\RR,
 $$
 one has
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 

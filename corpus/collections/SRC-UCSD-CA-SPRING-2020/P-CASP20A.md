@@ -23,9 +23,9 @@ Hint: $e < \pi$.
 :::
 
 ::: {.solution}
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-\left|\pi^2 z^5 e^{-2z}\right|
+\abs{\pi^2 z^5 e^{-2z}}
 =\pi^2 e^{-2\operatorname{Re}z}
 \ge \frac{\pi^2}{e^2}>1.
 $$

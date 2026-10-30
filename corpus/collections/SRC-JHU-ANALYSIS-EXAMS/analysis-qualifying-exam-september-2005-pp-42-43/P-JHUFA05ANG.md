@@ -31,7 +31,7 @@ $$
 z ^ { 9 } + z ^ { 5 } - 8 z ^ { 3 } - z + 2
 $$
 
-have between the circles $\{ | z | = 1 \}$ and $\{ | z | = 2 \}$ . Justify your answer.
+have between the circles $\{ \abs{ z } = 1 \}$ and $\{ \abs{ z } = 2 \}$ . Justify your answer.
 :::
 
 ::: {.solution}
@@ -46,14 +46,14 @@ The unit disk contains three zeros.
 
 ::: pf-proof
 
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|z^9+z^5-z+2|\leq1+1+1+2=5<8=|-8z^3|.
+\abs{z^9+z^5-z+2}\leq1+1+1+2=5<8=\abs{-8z^3}.
 $$
 Rouché's theorem gives the same number of zeros for
 $p$ and $-8z^3$ in this disk, namely three counted
 with multiplicity [@SS03]. The strict inequality also
-gives $|p(z)|\geq3$ on the circle, so there are no
+gives $\abs{p(z)}\geq3$ on the circle, so there are no
 boundary zeros.
 
 :::
@@ -66,15 +66,15 @@ The radius-two disk contains nine zeros, leaving six in the annulus.
 
 ::: pf-proof
 
-On $|z|=2$,
+On $\abs{z}=2$,
 $$
-|z^5-8z^3-z+2|\leq32+64+2+2=100<512=|z^9|.
+\abs{z^5-8z^3-z+2}\leq32+64+2+2=100<512=\abs{z^9}.
 $$
 Rouché's theorem now compares $p$ with $z^9$, giving
-nine zeros in $|z|<2$, with multiplicity [@SS03].
+nine zeros in $\abs{z}<2$, with multiplicity [@SS03].
 Again the strict inequality excludes zeros on the
-boundary. Subtracting the three inside $|z|<1$ gives
-$9-3=6$ in $1<|z|<2$. Since neither circle contains
+boundary. Subtracting the three inside $\abs{z}<1$ gives
+$9-3=6$ in $1<\abs{z}<2$. Since neither circle contains
 a zero, including the boundary circles would not
 change this answer.
 

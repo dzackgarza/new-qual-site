@@ -18,17 +18,17 @@ audit:
 
 ::: {.problem}
 Let $U \subset \CC$ be an open set that contains the closed unit disc $\overline{\DD} \subset U$.
-Show that for all holomorphic functions $f: U \to \CC$ we have $$\max_{|z|=1} \left|f(z) - \frac{e^z}{z}\right| \geq 1.$$
+Show that for all holomorphic functions $f: U \to \CC$ we have $$\max_{\abs{z}=1} \abs{f(z) - \frac{e^z}{z}} \geq 1.$$
 :::
 
 ::: {.solution}
-**Goal.** Show $\max_{|z|=1} |f(z) - e^z/z| \ge 1$ for every holomorphic $f$ on $U \supseteq \overline{\DD}$.
+**Goal.** Show $\max_{\abs{z}=1} \abs{f(z) - e^z/z} \ge 1$ for every holomorphic $f$ on $U \supseteq \overline{\DD}$.
 
 ::: pf
 
 ::: pf-step
 
-Suppose $\max_{|z|=1} |f(z) - e^z/z| < 1$.
+Suppose $\max_{\abs{z}=1} \abs{f(z) - e^z/z} < 1$.
 
 ::: pf-proof
 
@@ -40,11 +40,11 @@ assume for contradiction.
 
 ::: pf-step
 
-Then $|f(z) - e^z/z| < 1$ on $|z| = 1$, so $|z f(z) - e^z| < 1$ on $|z| = 1$.
+Then $\abs{f(z) - e^z/z} < 1$ on $\abs{z} = 1$, so $\abs{z f(z) - e^z} < 1$ on $\abs{z} = 1$.
 
 ::: pf-proof
 
-multiply by $|z| = 1$.
+multiply by $\abs{z} = 1$.
 
 :::
 
@@ -64,11 +64,11 @@ $f$ is holomorphic and $e^z$ is entire.
 
 ::: pf-step
 
-By the maximum modulus principle, $|z f(z) - e^z| < 1$ on all of $\overline{\DD}$.
+By the maximum modulus principle, $\abs{z f(z) - e^z} < 1$ on all of $\overline{\DD}$.
 
 ::: pf-proof
 
-the maximum of a holomorphic function on $\overline{\DD}$ is attained on the boundary $|z| = 1$.
+the maximum of a holomorphic function on $\overline{\DD}$ is attained on the boundary $\abs{z} = 1$.
 
 :::
 
@@ -76,7 +76,7 @@ the maximum of a holomorphic function on $\overline{\DD}$ is attained on the bou
 
 ::: {.pf-step #s5}
 
-Evaluate at $z = 0$: $|0 \cdot f(0) - e^0| = |0 - 1| = 1 < 1$, a contradiction.
+Evaluate at $z = 0$: $\abs{0 \cdot f(0) - e^0} = \abs{0 - 1} = 1 < 1$, a contradiction.
 
 ::: pf-proof
 
@@ -88,7 +88,7 @@ at $z = 0$, $z f(z) - e^z = -1$, so its modulus is $1$, contradicting $< 1$.
 
 ::: pf-qed
 
-Step [](#s5){.pf-ref} gives the contradiction, so $\max_{|z|=1} |f(z) - e^z/z| \ge 1$.
+Step [](#s5){.pf-ref} gives the contradiction, so $\max_{\abs{z}=1} \abs{f(z) - e^z/z} \ge 1$.
 
 :::
 

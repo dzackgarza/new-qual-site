@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-7A
 kind: problem
-title: The equation $1+z+az^n=0$ has a root in $\lvert z\rvert\le2$
+title: The equation $1+z+az^n=0$ has a root in $\abs{ z}\le2$
 classification:
   areas: [prelim]
   topics: []
@@ -30,7 +30,7 @@ Prove that for every $a\in\CC$ and every integer $n\ge2$, the equation
 $$
 1+z+az^n=0
 $$
-has at least one root in the disk $|z|\le2$.
+has at least one root in the disk $\abs{z}\le2$.
 :::
 
 ::: {.solution}

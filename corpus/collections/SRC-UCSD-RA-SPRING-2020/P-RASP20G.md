@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Let $H$ be a real Hilbert space.
-Recall: If $K$ is a nonempty, closed, and convex subset of $H$, and $x \in H \setminus K$, then there exists a unique $y \in K$ such that $\|x - y\| = \min_{z \in K} \|x - z\|$.
+Recall: If $K$ is a nonempty, closed, and convex subset of $H$, and $x \in H \setminus K$, then there exists a unique $y \in K$ such that $\norm{x - y} = \min_{z \in K} \norm{x - z}$.
 Moreover, $\langle x - y, z - y \rangle \leq 0$ for all $z \in K$.
 
 (1) Let $K$ be a nonempty, closed, and convex subset of $H$.
@@ -115,7 +115,7 @@ weak convergence is preserved under translation.
 :::
 
 ::: pf-step
-Thus $\lim_{n\to\infty} \langle u - y, u_n - y \rangle = \langle u - y, u - y \rangle = \|u - y\|^2$.
+Thus $\lim_{n\to\infty} \langle u - y, u_n - y \rangle = \langle u - y, u - y \rangle = \norm{u - y}^2$.
 
 ::: pf-proof
 definition of weak convergence.
@@ -124,7 +124,7 @@ definition of weak convergence.
 :::
 
 ::: pf-step
-Since every term in the sequence is non-positive by step [](#s5){.pf-ref}, the limit satisfies $\|u - y\|^2 \le 0$.
+Since every term in the sequence is non-positive by step [](#s5){.pf-ref}, the limit satisfies $\norm{u - y}^2 \le 0$.
 
 ::: pf-proof
 limits preserve non-strict inequalities.
@@ -137,7 +137,7 @@ limits preserve non-strict inequalities.
 :::
 
 ::: {.pf-step #s7}
-Hence $\|u - y\| = 0 \implies u = y \in K$, contradicting $u \notin K$.
+Hence $\norm{u - y} = 0 \implies u = y \in K$, contradicting $u \notin K$.
 
 ::: pf-proof
 positive definiteness of the norm and step [](#s2){.pf-ref}.
@@ -172,17 +172,17 @@ Hilbert projection theorem applied to the closed convex set $K_n$ and $x = 0$.
 ::: {.pf-step #s10}
 The characterization $\langle 0 - x_n, z - x_n \rangle \le 0$ for all $z \in K_n$ gives:
 $$
-\langle x_n, z \rangle \ge \|x_n\|^2 \quad \text{for all } z \in K_n.
+\langle x_n, z \rangle \ge \norm{x_n}^2 \quad \text{for all } z \in K_n.
 $$
 
 ::: pf-proof
-expanding the inner product $\langle -x_n, z - x_n \rangle = - \langle x_n, z \rangle + \|x_n\|^2 \le 0$.
+expanding the inner product $\langle -x_n, z - x_n \rangle = - \langle x_n, z \rangle + \norm{x_n}^2 \le 0$.
 :::
 
 :::
 
 ::: {.pf-step #s11}
-The sequence of norms $\{\|x_n\|\}$ is monotonically non-decreasing:
+The sequence of norms $\{\norm{x_n}\}$ is monotonically non-decreasing:
 
 ::: pf-proof
 
@@ -196,7 +196,7 @@ hypothesis that $\{K_n\}$ is a decreasing sequence.
 :::
 
 ::: {.pf-step #s11-2}
-Setting $z = x_m$ in step [](#s10){.pf-ref} gives $\langle x_n, x_m \rangle \ge \|x_n\|^2$.
+Setting $z = x_m$ in step [](#s10){.pf-ref} gives $\langle x_n, x_m \rangle \ge \norm{x_n}^2$.
 
 ::: pf-proof
 step [](#s10){.pf-ref} applied to $z = x_m \in K_n$.
@@ -207,7 +207,7 @@ step [](#s10){.pf-ref} applied to $z = x_m \in K_n$.
 ::: pf-step
 By the Cauchy–Schwarz inequality:
 $$
-\|x_n\|^2 \le \langle x_n, x_m \rangle \le \|x_n\| \|x_m\| \implies \|x_n\| \le \|x_m\|.
+\norm{x_n}^2 \le \langle x_n, x_m \rangle \le \norm{x_n} \norm{x_m} \implies \norm{x_n} \le \norm{x_m}.
 $$
 
 ::: pf-proof
@@ -221,13 +221,13 @@ Cauchy–Schwarz inequality in $H$.
 :::
 
 ::: {.pf-step #s12}
-Bound the distance $\|x_m - x_n\|^2$ for $m \ge n$:
+Bound the distance $\norm{x_m - x_n}^2$ for $m \ge n$:
 $$
-\|x_m - x_n\|^2 = \|x_m\|^2 - 2\langle x_n, x_m \rangle + \|x_n\|^2 \le \|x_m\|^2 - 2\|x_n\|^2 + \|x_n\|^2 = \|x_m\|^2 - \|x_n\|^2.
+\norm{x_m - x_n}^2 = \norm{x_m}^2 - 2\langle x_n, x_m \rangle + \norm{x_n}^2 \le \norm{x_m}^2 - 2\norm{x_n}^2 + \norm{x_n}^2 = \norm{x_m}^2 - \norm{x_n}^2.
 $$
 
 ::: pf-proof
-expanding the norm squared and using $\langle x_n, x_m \rangle \ge \|x_n\|^2$ from step [](#s11-2){.pf-ref}.
+expanding the norm squared and using $\langle x_n, x_m \rangle \ge \norm{x_n}^2$ from step [](#s11-2){.pf-ref}.
 :::
 
 :::
@@ -238,7 +238,7 @@ $\{x_n\}$ is a Cauchy sequence in $H$:
 ::: pf-proof
 
 ::: {.pf-step #s13-1}
-Since $x_n\in K_n\subseteq K_1$ for every $n$ and $K_1$ is bounded, the non-decreasing sequence $\{\|x_n\|\}$ is bounded above. Hence $L = \lim_{n\to\infty} \|x_n\| < \infty$ exists.
+Since $x_n\in K_n\subseteq K_1$ for every $n$ and $K_1$ is bounded, the non-decreasing sequence $\{\norm{x_n}\}$ is bounded above. Hence $L = \lim_{n\to\infty} \norm{x_n} < \infty$ exists.
 
 ::: pf-proof
 boundedness of $K_1$ and monotone convergence for real sequences.
@@ -247,7 +247,7 @@ boundedness of $K_1$ and monotone convergence for real sequences.
 :::
 
 ::: {.pf-step #s13-2}
-For $m \ge n$, $\|x_m - x_n\|^2 \le \|x_m\|^2 - \|x_n\|^2 \to L^2 - L^2 = 0$ as $n, m \to \infty$.
+For $m \ge n$, $\norm{x_m - x_n}^2 \le \norm{x_m}^2 - \norm{x_n}^2 \to L^2 - L^2 = 0$ as $n, m \to \infty$.
 
 ::: pf-proof
 step [](#s12){.pf-ref} and step [](#s13-1){.pf-ref}.

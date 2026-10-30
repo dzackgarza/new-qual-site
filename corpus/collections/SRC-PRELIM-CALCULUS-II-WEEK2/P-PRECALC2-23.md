@@ -55,14 +55,14 @@ Hence its integral there is finite.
 
 For every real $u$ with
 $$
-|u|\le\frac{\pi}{2},
+\abs{u}\le\frac{\pi}{2},
 $$
 one has
 $$
 \boxed{
-|\sin u|
+\abs{\sin u}
 \ge
-\frac{2}{\pi}|u|}.
+\frac{2}{\pi}\abs{u}}.
 $$
 
 
@@ -123,14 +123,14 @@ x=n\pi+u\in I_n,
 $$
 then
 $$
-|u|\le\frac{\pi}{2}
+\abs{u}\le\frac{\pi}{2}
 $$
 and
 $$
 \boxed{
-|\sin x|
+\abs{\sin x}
 =
-|\sin u|}.
+\abs{\sin u}}.
 $$
 
 

@@ -36,7 +36,7 @@ Prove that for every $\eps > 0$ there exists $M>0$ and a set $E\subseteq X$ such
 ::: pf
 
 ::: pf-step
-Define $g(x) = \sup_{n \ge 1}|f_n(x)|$ (extended real-valued).
+Define $g(x) = \sup_{n \ge 1}\abs{f_n(x)}$ (extended real-valued).
 
 ::: pf-proof
 $g$ is measurable as the supremum of countably many measurable functions.
@@ -48,7 +48,7 @@ $g$ is measurable as the supremum of countably many measurable functions.
 $g(x) < \infty$ for almost every $x$.
 
 ::: pf-proof
-for a.e. $x$, $f_n(x) \to f(x) \in \RR$, so the sequence $(f_n(x))$ is bounded and $\sup_n|f_n(x)| < \infty$.
+for a.e. $x$, $f_n(x) \to f(x) \in \RR$, so the sequence $(f_n(x))$ is bounded and $\sup_n\abs{f_n(x)} < \infty$.
 :::
 
 :::
@@ -63,10 +63,10 @@ the sets $\{g > M\}$ decrease to $\{g = \infty\}$ as $M \to \infty$, which has m
 :::
 
 ::: {.pf-step #choose-m-and-e}
-Given $\eps > 0$, choose $M$ with $\mu\{g > M\} < \eps$ and set $E = \{g > M\}$; then $\mu(E) \le \eps$ and $|f_n(x)| \le M$ for all $x \in X \setminus E$ and all $n$.
+Given $\eps > 0$, choose $M$ with $\mu\{g > M\} < \eps$ and set $E = \{g > M\}$; then $\mu(E) \le \eps$ and $\abs{f_n(x)} \le M$ for all $x \in X \setminus E$ and all $n$.
 
 ::: pf-proof
-Step [](#measure-tail-vanishes){.pf-ref} gives $M$; for $x \notin E$: $g(x) \le M$, so $|f_n(x)| \le g(x) \le M$ for every $n$ by definition of $g$.
+Step [](#measure-tail-vanishes){.pf-ref} gives $M$; for $x \notin E$: $g(x) \le M$, so $\abs{f_n(x)} \le g(x) \le M$ for every $n$ by definition of $g$.
 :::
 
 :::

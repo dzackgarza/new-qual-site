@@ -35,7 +35,7 @@ We follow the printed presentation
 $$
 D_6=\langle r,s\mid r^6=s^2=1,\ srs=r^{-1}\rangle,
 $$
-so $|D_6|=12$.
+so $\cardinality{D_6}=12$.
 
 ::: pf
 
@@ -178,7 +178,7 @@ $$
 which gives the first four rows. The last two rows follow from step [](#s4){.pf-ref} by evaluating the relevant cosines.
 The six displayed representations are pairwise nonisomorphic irreducibles, and their degree squares sum to
 $$
-4\cdot1^2+2\cdot2^2=12=|D_6|.
+4\cdot1^2+2\cdot2^2=12=\cardinality{D_6}.
 $$
 Therefore they exhaust all irreducible representations, so the table is complete.
 

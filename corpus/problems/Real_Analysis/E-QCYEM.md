@@ -45,7 +45,7 @@ Substituting $u = ty$ in $f \ast \phi_t(x) = \int f(x - u)\phi_t(u)\,du$ gives $
 
 ::: {.pf-step #s2}
 
-$\|f \ast \phi_t - f\|_1 \le \int |\phi(y)|\,\omega(ty)\,dy$.
+$\norm{f \ast \phi_t - f}_1 \le \int \abs{\phi(y)}\,\omega(ty)\,dy$.
 
 ::: pf-proof
 
@@ -57,7 +57,7 @@ Take absolute values in step [](#s1){.pf-ref}, integrate in $x$, and exchange th
 
 ::: {.pf-step #s3}
 
-$\omega(h) \le 2\|f\|_1$ for every $h$, and $\omega(h) \to 0$ as $h \to 0$.
+$\omega(h) \le 2\norm{f}_1$ for every $h$, and $\omega(h) \to 0$ as $h \to 0$.
 
 ::: pf-proof
 
@@ -73,7 +73,7 @@ $\norm{f \ast \phi_t - f}_1 \to 0$ as $t \to 0$.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref} it suffices that $\int |\phi(y)|\,\omega(ty)\,dy \to 0$. For each $y$, $\omega(ty) \to 0$ as $t \to 0$ by step [](#s3){.pf-ref}, and $|\phi(y)|\,\omega(ty) \le 2\|f\|_1|\phi(y)|$, which is integrable. The dominated convergence theorem applies along every sequence $t_k \to 0$.
+By step [](#s2){.pf-ref} it suffices that $\int \abs{\phi(y)}\,\omega(ty)\,dy \to 0$. For each $y$, $\omega(ty) \to 0$ as $t \to 0$ by step [](#s3){.pf-ref}, and $\abs{\phi(y)}\,\omega(ty) \le 2\norm{f}_1\abs{\phi(y)}$, which is integrable. The dominated convergence theorem applies along every sequence $t_k \to 0$.
 
 :::
 

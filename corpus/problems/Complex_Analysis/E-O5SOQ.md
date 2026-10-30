@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-O5SOQ
 kind: problem
-title: Entire functions with $|f(z)|\le|\sin z|$ are $c\sin z$ with $|c|\le 1$
+title: Entire functions with $\abs{f(z)}\le\abs{\sin z}$ are $c\sin z$ with $\abs{c}\le 1$
 classification:
   areas:
   - complex-analysis

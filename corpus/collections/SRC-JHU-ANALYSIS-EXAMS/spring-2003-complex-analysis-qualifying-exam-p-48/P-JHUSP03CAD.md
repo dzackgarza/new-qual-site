@@ -33,14 +33,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\CC:|z|<1\}$.
+Let $\Delta=\{z\in\CC:\abs{z}<1\}$.
 
 (a) State Rouche's Theorem.
 
 (b) Let $\varphi : \Omega \to \CC$ be holomorphic on an open convex set $\Omega$.
 Show that for $z, w \in \Omega$
 
-$$|\varphi(z) - \varphi(w)| \leq \max_{\xi \in L} |\varphi'(\xi)| \cdot |z - w|,$$
+$$\abs{\varphi(z) - \varphi(w)} \leq \max_{\xi \in L} \abs{\varphi'(\xi)} \cdot \abs{z - w},$$
 
 where $L$ is the straight line segment from $z$ to $w$.
 
@@ -50,7 +50,7 @@ $$f(z) = z + \sum_{n=2}^\infty a_n z^n$$
 
 where
 
-$$\sum_{n=2}^\infty n|a_n| \leq 1.$$
+$$\sum_{n=2}^\infty n\abs{a_n} \leq 1.$$
 
 Show that $f(z)$ is a 1-1 holomorphic function on $\Delta$.
 :::
@@ -68,13 +68,13 @@ Part (a): Rouché's theorem.
 Let $C$ be a positively oriented, piecewise smooth simple closed contour and suppose $F,G$ are
 holomorphic on an open set containing $C$ and its interior. If
 $$
-|G(z)|<|F(z)|\qquad(z\in C),
+\abs{G(z)}<\abs{F(z)}\qquad(z\in C),
 $$
 then $F$ and $F+G$ have the same number of zeros inside $C$, counted with
 multiplicity.
 
 Indeed, $F$ has no zero on $C$, and for $0\le t\le1$ the functions
-$F+tG$ also have no zero on $C$, since $|tG|<|F|$. Therefore the integer
+$F+tG$ also have no zero on $C$, since $\abs{tG}<\abs{F}$. Therefore the integer
 $$
 \frac1{2\pi i}\int_C\frac{F'(z)+tG'(z)}{F(z)+tG(z)}\,dz
 $$
@@ -103,9 +103,9 @@ $$
 $$
 Hence
 $$
-|\varphi(z)-\varphi(w)|
-\le |z-w|\int_0^1|\varphi'(w+t(z-w))|\,dt
-\le |z-w|\max_{\xi\in L}|\varphi'(\xi)|.
+\abs{\varphi(z)-\varphi(w)}
+\le \abs{z-w}\int_0^1\abs{\varphi'(w+t(z-w))}\,dt
+\le \abs{z-w}\max_{\xi\in L}\abs{\varphi'(\xi)}.
 $$
 The maximum exists because $L$ is compact and $\varphi'$ is continuous.
 
@@ -126,9 +126,9 @@ $$
 On every closed disk of radius $r<1$, the coefficient
 hypothesis gives convergent majorants for both series:
 $$
-\sum_{n=2}^\infty |a_n|r^n\leq\sum_{n=2}^\infty n|a_n|<\infty,
+\sum_{n=2}^\infty \abs{a_n}r^n\leq\sum_{n=2}^\infty n\abs{a_n}<\infty,
 \qquad
-\sum_{n=2}^\infty n|a_n|r^{n-1}\le\sum_{n=2}^\infty n|a_n|<\infty.
+\sum_{n=2}^\infty n\abs{a_n}r^{n-1}\le\sum_{n=2}^\infty n\abs{a_n}<\infty.
 $$
 Thus the series defines a holomorphic function on $\Delta$
 and can be differentiated term by term [@SS03], giving
@@ -138,24 +138,24 @@ $$
 Take distinct $z,w\in\Delta$ and let $L$ be their segment. Compactness of $L$
 and openness of the disk give
 $$
-r:=\max_{\xi\in L}|\xi|<1.
+r:=\max_{\xi\in L}\abs{\xi}<1.
 $$
 For every $\xi\in L$, since $n-1\geq1$,
 $$
-|h'(\xi)|
-\le\sum_{n=2}^\infty n|a_n|r^{n-1}
-\leq r\sum_{n=2}^\infty n|a_n|
+\abs{h'(\xi)}
+\le\sum_{n=2}^\infty n\abs{a_n}r^{n-1}
+\leq r\sum_{n=2}^\infty n\abs{a_n}
 \leq r<1.
 $$
 Applying part (b) to $h$ on the convex disk gives
 $$
-|h(z)-h(w)|\leq r|z-w|<|z-w|.
+\abs{h(z)-h(w)}\leq r\abs{z-w}<\abs{z-w}.
 $$
 Therefore
 $$
-|f(z)-f(w)|
-=|(z-w)+(h(z)-h(w))|
-\ge |z-w|-|h(z)-h(w)|>0.
+\abs{f(z)-f(w)}
+=\abs{(z-w)+(h(z)-h(w))}
+\ge \abs{z-w}-\abs{h(z)-h(w)}>0.
 $$
 Hence $f(z)\ne f(w)$ whenever $z\ne w$, so $f$ is one-to-one on $\Delta$.
 

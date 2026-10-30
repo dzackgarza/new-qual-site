@@ -48,9 +48,9 @@ $$
 f^{\circ n}(z)=z+n a_m z^m+O(z^{m+1}).
 $$
 Choose $r>0$ with $\overline{D(0,r)}\subset G$. Since $G$ is bounded, there is
-$M$ with $|w|\le M$ for every $w\in G$. Every iterate maps $G$ into $G$, so
+$M$ with $\abs{w}\le M$ for every $w\in G$. Every iterate maps $G$ into $G$, so
 $$
-|f^{\circ n}(z)|\le M\qquad(|z|\le r).
+\abs{f^{\circ n}(z)}\le M\qquad(\abs{z}\le r).
 $$
 Cauchy's estimate therefore bounds the coefficient of $z^m$ in every iterate
 by $M/r^m$, independently of $n$. But that coefficient is $n a_m$, a

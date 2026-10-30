@@ -185,7 +185,7 @@ By [[T-DEFNAKA|Nakayama's lemma]], $M=0$.
 
 There is an open neighborhood $U$ of $y$ such that
 $$
-R^if_*\mcf|_U=0.
+R^if_*\mcf\restrict_U=0.
 $$
 
 ::: pf-proof

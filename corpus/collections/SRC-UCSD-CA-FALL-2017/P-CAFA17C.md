@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find a bijective analytic function $f$ from $\{z : |z| < 1, \operatorname{Re} z > 0\}$ to $\{z : \operatorname{Im} z > 0\}$.
+Find a bijective analytic function $f$ from $\{z : \abs{z} < 1, \operatorname{Re} z > 0\}$ to $\{z : \operatorname{Im} z > 0\}$.
 :::
 
 ::: {.solution}

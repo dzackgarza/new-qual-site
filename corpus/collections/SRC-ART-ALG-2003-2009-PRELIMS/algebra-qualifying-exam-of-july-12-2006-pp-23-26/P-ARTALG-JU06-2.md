@@ -80,7 +80,7 @@ leaves $n_3=1$ or $4$.
 If $n_3=1$, the unique subgroup of order $3$ is normal and is
 nontrivial and proper. If $n_3=4$, conjugation on these four
 subgroups gives a homomorphism $\varphi:G\to S_4$. It is not
-injective, since $|G|=132>24=|S_4|$, so $\ker\varphi\ne\{1\}$.
+injective, since $\cardinality{G}=132>24=\cardinality{S_4}$, so $\ker\varphi\ne\{1\}$.
 Its image is not trivial: Sylow conjugacy makes the action
 transitive on a set of four elements, whereas the trivial action
 has singleton orbits. Thus $\ker\varphi\ne G$ as well.

@@ -44,7 +44,7 @@ $$
 Standard reduction and $u$-substitutions give
 $$
 \boxed{\int\sec^3x\,dx
-=\frac12\bigl(\sec x\tan x+\ln|\sec x+\tan x|\bigr)+C,}
+=\frac12\bigl(\sec x\tan x+\ln\abs{\sec x+\tan x}\bigr)+C,}
 $$
 $$
 \boxed{\int\sec^4x\,dx=\tan x+\frac13\tan^3x+C,}
@@ -53,7 +53,7 @@ $$
 \boxed{\int\tan^2x\,dx=\tan x-x+C,}
 $$
 $$
-\boxed{\int\tan^3x\,dx=\frac12\tan^2x+\ln|\cos x|+C,}
+\boxed{\int\tan^3x\,dx=\frac12\tan^2x+\ln\abs{\cos x}+C,}
 $$
 $$
 \boxed{\int\tan^4x\,dx=\frac13\tan^3x-\tan x+x+C.}
@@ -72,10 +72,10 @@ $$
 so
 $$
 \boxed{\int\frac{2\sin^2x}{\cos^3x}dx
-=\sec x\tan x-\ln|\sec x+\tan x|+C.}
+=\sec x\tan x-\ln\abs{\sec x+\tan x}+C.}
 $$
 Using $(\sec x-\tan x)(\sec x+\tan x)=1$, this is equivalently
 $$
-\sec x\tan x+\ln|\sec x-\tan x|+C.
+\sec x\tan x+\ln\abs{\sec x-\tan x}+C.
 $$
 :::

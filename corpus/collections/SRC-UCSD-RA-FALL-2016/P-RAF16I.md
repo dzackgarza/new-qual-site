@@ -25,14 +25,14 @@ audit:
 
 ::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
-Let $f \in L^\infty(\mu)$ with $\|f\|_\infty > 0$.
+Let $f \in L^\infty(\mu)$ with $\norm{f}_\infty > 0$.
 Define
 $$
-\alpha_k = \int_X |f|^k\,d\mu \qquad \text{for } k = 1, 2, \ldots.
+\alpha_k = \int_X \abs{f}^k\,d\mu \qquad \text{for } k = 1, 2, \ldots.
 $$
 Prove that
 $$
-\lim_{k \to \infty} \frac{\alpha_{k+1}}{\alpha_k} = \|f\|_\infty.
+\lim_{k \to \infty} \frac{\alpha_{k+1}}{\alpha_k} = \norm{f}_\infty.
 $$
 :::
 

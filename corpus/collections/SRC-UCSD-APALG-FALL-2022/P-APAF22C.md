@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let $V$ and $W$ be two finite-dimensional real inner product spaces, $\dim V = \dim W = n$, and let $\phi \colon V \to W$ be a linear map.
 
-Suppose there exists a vector $v_0 \in V$, $\|v_0\| = 1$, such that $\|\phi(v_0)\| \leq 10^{-10}$.
+Suppose there exists a vector $v_0 \in V$, $\norm{v_0} = 1$, such that $\norm{\phi(v_0)} \leq 10^{-10}$.
 
 Prove the following “approximate rank–nullity” statement: there exists a subspace $W' \subseteq W$ with $\dim W' \leq n - 1$, with the property that
 $$
-\forall v \in V,\ \|v\| \leq 1:\ \exists w \in W':\ \|\phi(v) - w\| \leq 10^{-10}.
+\forall v \in V,\ \norm{v} \leq 1:\ \exists w \in W':\ \norm{\phi(v) - w} \leq 10^{-10}.
 $$
 
 [Hint: you can use the singular value decomposition, or argue directly.]
@@ -50,7 +50,7 @@ $$
 The subspace $W'$ has dimension at most $n-1$.
 
 ::: pf-proof
-Since $\|v_0\|=1$, the vector $v_0$ is nonzero. Therefore its orthogonal complement $U=v_0^\perp$ has codimension one in $V$, so
+Since $\norm{v_0}=1$, the vector $v_0$ is nonzero. Therefore its orthogonal complement $U=v_0^\perp$ has codimension one in $V$, so
 $$
 \dim U=n-1.
 $$
@@ -70,11 +70,11 @@ v=av_0+u,
 $$
 where
 $$
-|a|\le\|v\|.
+\abs{a}\le\norm{v}.
 $$
 
 ::: pf-proof
-Because $\|v_0\|=1$, take
+Because $\norm{v_0}=1$, take
 $$
 a=\langle v,v_0\rangle,
 \qquad
@@ -88,18 +88,18 @@ $$
 $$
 so $u\in U$. By Cauchy--Schwarz,
 $$
-|a|=|\langle v,v_0\rangle|
-\le\|v\|\,\|v_0\|
-=\|v\|.
+\abs{a}=\abs{\langle v,v_0\rangle}
+\le\norm{v}\,\norm{v_0}
+=\norm{v}.
 $$
 :::
 
 :::
 
 ::: {.pf-step #approximation-property}
-If $\|v\|\le1$, there exists $w\in W'$ such that
+If $\norm{v}\le1$, there exists $w\in W'$ such that
 $$
-\|\phi(v)-w\|\le10^{-10}.
+\norm{\phi(v)-w}\le10^{-10}.
 $$
 
 ::: pf-proof
@@ -119,9 +119,9 @@ $$
 $$
 Therefore
 $$
-\|\phi(v)-w\|
-=|a|\,\|\phi(v_0)\|
-\le \|v\|\,10^{-10}
+\norm{\phi(v)-w}
+=\abs{a}\,\norm{\phi(v_0)}
+\le \norm{v}\,10^{-10}
 \le10^{-10}.
 $$
 :::

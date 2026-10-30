@@ -137,7 +137,7 @@ By step [](#s1-2){.pf-ref}, the index set $Y_0$ is countable, and by step [](#s1
 
 The restriction
 $$
-f|_{X_0}:X_0\to\RR
+f\restrict_{X_0}:X_0\to\RR
 $$
 is injective.
 
@@ -254,7 +254,7 @@ $$
 
 The space $X_0$, with its inherited Borel structure, is a standard Borel space because it is a Borel subset of the Polish space $\RR$. The map
 $$
-f|_{X_0}
+f\restrict_{X_0}
 $$
 is Borel measurable by step [](#s1-7){.pf-ref} and injective by step [](#s1-5){.pf-ref}.
 

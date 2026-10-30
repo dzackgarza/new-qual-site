@@ -27,7 +27,7 @@ audit:
 (a) Let $(X, \mathcal{M}, \mu)$ be a finite measure space.
 Suppose that $f_n \in L^1(d\mu)$ is a sequence of functions with the property that for every $\epsilon > 0$ there exists a $\delta > 0$ such that for all $E \in \mathcal{M}$:
 $$
-|E| < \delta \implies \sup_n \int_E |f_n|\,d\mu < \epsilon.
+\setmeasure{E} < \delta \implies \sup_n \int_E \abs{f_n}\,d\mu < \epsilon.
 $$
 Suppose in addition that there exists $f$ with $f_n \to f$ $\mu$-a.e. Show that $f_n \to f$ in $L^1(d\mu)$.
 
@@ -48,18 +48,18 @@ Fix $\varepsilon>0$. By hypothesis there is $\delta>0$ such that
 $$
 \mu(E)<\delta
 \quad\Longrightarrow\quad
-\sup_n\int_E|f_n|\,d\mu<\varepsilon.
+\sup_n\int_E\abs{f_n}\,d\mu<\varepsilon.
 $$
 For such an $E$, Fatou's lemma and $f_n\to f$ almost everywhere give
 $$
-\int_E|f|\,d\mu
-\le \liminf_{n\to\infty}\int_E|f_n|\,d\mu
+\int_E\abs{f}\,d\mu
+\le \liminf_{n\to\infty}\int_E\abs{f_n}\,d\mu
 \le\varepsilon.
 $$
 Consequently
 $$
-\int_E|f_n-f|\,d\mu
-\le\int_E|f_n|\,d\mu+\int_E|f|\,d\mu
+\int_E\abs{f_n-f}\,d\mu
+\le\int_E\abs{f_n}\,d\mu+\int_E\abs{f}\,d\mu
 <2\varepsilon
 $$
 for every $n$.
@@ -82,19 +82,19 @@ and $f_n\to f$ uniformly on $X\setminus E$.
 
 For all sufficiently large $n$,
 $$
-\sup_{X\setminus E}|f_n-f|<\frac{\eta}{2\mu(X)}
+\sup_{X\setminus E}\abs{f_n-f}<\frac{\eta}{2\mu(X)}
 $$
 when $\mu(X)>0$; the case $\mu(X)=0$ is trivial. Hence
 $$
-\int_{X\setminus E}|f_n-f|\,d\mu<\frac\eta2.
+\int_{X\setminus E}\abs{f_n-f}\,d\mu<\frac\eta2.
 $$
 By Step 1,
 $$
-\int_E|f_n-f|\,d\mu<\frac\eta2.
+\int_E\abs{f_n-f}\,d\mu<\frac\eta2.
 $$
 Therefore
 $$
-\|f_n-f\|_1<\eta
+\norm{f_n-f}_1<\eta
 $$
 for all sufficiently large $n$. Thus
 $$
@@ -118,13 +118,13 @@ f_n=\mathbf1_{[n,n+1]}.
 $$
 For every $\varepsilon>0$, choose $\delta=\varepsilon$. If $m(E)<\delta$, then
 $$
-\sup_n\int_E|f_n|\,dm
+\sup_n\int_E\abs{f_n}\,dm
 =\sup_n m(E\cap[n,n+1])
 \le m(E)<\varepsilon.
 $$
 Thus the stated uniform small-set condition holds. Also $f_n(x)\to0$ for every $x\in\RR$. Nevertheless
 $$
-\|f_n\|_1=1
+\norm{f_n}_1=1
 $$
 for every $n$, so $f_n$ does not converge to $0$ in $L^1$. Hence finiteness of $\mu(X)$ cannot be dropped.
 

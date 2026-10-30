@@ -24,7 +24,7 @@ Show that $p \mid E'$ is not a covering map.
 
 ::: {.solution}
 
-Write $q = p|_{E'}: E' \to X$, where $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$.
+Write $q = p\restrict_{E'}: E' \to X$, where $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$.
 
 ::: pf
 
@@ -147,5 +147,5 @@ Conclusion:
 
 :::
 
-    $q = p|_{E'}$ is not a covering map. Q.E.D.
+    $q = p\restrict_{E'}$ is not a covering map. Q.E.D.
 :::

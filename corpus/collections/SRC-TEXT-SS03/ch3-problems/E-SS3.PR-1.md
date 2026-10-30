@@ -31,13 +31,13 @@ Show that despite this new assumption, there exists no $r > 0$ satisfying the de
 
 The Koebe-Bieberbach theorem states that if in addition to $f(0) = 0$ and $f'(0) = 1$ we also assume that $f$ is injective, then such an $r$ exists and the best possible value is $r = 1/4$.
 
-(c) As a first step, show that if $h(z) = \frac{1}{z} + c_0 + c_1 z + c_2 z^2 + \cdots$ is analytic and injective for $0 < |z| < 1$, then $\sum_{n=1}^{\infty} n|c_n|^2 \leq 1$.
+(c) As a first step, show that if $h(z) = \frac{1}{z} + c_0 + c_1 z + c_2 z^2 + \cdots$ is analytic and injective for $0 < \abs{z} < 1$, then $\sum_{n=1}^{\infty} n\abs{c_n}^2 \leq 1$.
 [Hint: Calculate the area of the complement of $h(D_\rho(0) - \{0\})$ where $0 < \rho < 1$, and let $\rho \to 1$.]
 
 (d) If $f(z) = z + a_2 z^2 + \cdots$ satisfies the hypotheses of the theorem, show that there exists another function $g$ satisfying the hypotheses of the theorem such that $g^2(z) = f(z^2)$.
 [Hint: $f(z)/z$ is nowhere vanishing so there exists $\psi$ such that $\psi^2(z) = f(z)/z$ and $\psi(0) = 1$. Check that $g(z) = z\psi(z^2)$ is injective.]
 
-(e) With the notation of the previous part, show that $|a_2| \leq 2$, and that equality holds if and only if
+(e) With the notation of the previous part, show that $\abs{a_2} \leq 2$, and that equality holds if and only if
 
 $$
 f(z) = \frac{z}{(1 - e^{i\theta}z)^2} \quad \text{for some } \theta \in \RR.
@@ -45,7 +45,7 @@ $$
 
 [Hint: What is the power series expansion of $1/g(z)$? Use part (c).]
 
-(f) If $h(z) = \frac{1}{z} + c_0 + c_1 z + c_2 z^2 + \cdots$ is injective on $\DD$ and avoids the values $z_1$ and $z_2$, show that $|z_1 - z_2| \leq 4$.
+(f) If $h(z) = \frac{1}{z} + c_0 + c_1 z + c_2 z^2 + \cdots$ is injective on $\DD$ and avoids the values $z_1$ and $z_2$, show that $\abs{z_1 - z_2} \leq 4$.
 [Hint: Look at the second coefficient in the power series expansion of $1/(h(z) - z_j)$.]
 
 (g) Complete the proof of the theorem.
@@ -75,7 +75,7 @@ $f_n(0) = 0$ and $f_n$ is holomorphic on $\DD$.
 $1/n \notin f_n(\DD)$.
 
 ::: pf-proof
-$f_n(\DD) = \theset{z/n : |z| < 1} = D_{1/n}(0)$, which does not contain $1/n$ (it contains points of modulus $< 1/n$).
+$f_n(\DD) = \theset{z/n : \abs{z} < 1} = D_{1/n}(0)$, which does not contain $1/n$ (it contains points of modulus $< 1/n$).
 :::
 
 :::
@@ -139,15 +139,15 @@ for any $r > 0$, choose $\epsilon < r$; then $-\epsilon \in D_r(0)$ but $-\epsil
 :::
 
 ::: {.pf-step #s3}
-(c) For $h(z) = 1/z + c_0 + c_1 z + \cdots$ injective on $0 < |z| < 1$, one has $\sum_{n\ge 1} n|c_n|^2 \le 1$.
+(c) For $h(z) = 1/z + c_0 + c_1 z + \cdots$ injective on $0 < \abs{z} < 1$, one has $\sum_{n\ge 1} n\abs{c_n}^2 \le 1$.
 
 ::: pf-proof
 
 ::: {.pf-step #s3-1}
-The complement of $h(D_\rho(0) \sm \theset{0})$ has area $\pi\qty(\frac{1}{\rho^2} - \sum_{n\ge 1} n|c_n|^2 \rho^{2n})$.
+The complement of $h(D_\rho(0) \sm \theset{0})$ has area $\pi\qty(\frac{1}{\rho^2} - \sum_{n\ge 1} n\abs{c_n}^2 \rho^{2n})$.
 
 ::: pf-proof
-by the area theorem (Gronwall's area theorem), the area of the complement of the image of the punctured disk under $h$ is $\pi(1/\rho^2 - \sum_{n\ge1} n|c_n|^2 \rho^{2n})$.
+by the area theorem (Gronwall's area theorem), the area of the complement of the image of the punctured disk under $h$ is $\pi(1/\rho^2 - \sum_{n\ge1} n\abs{c_n}^2 \rho^{2n})$.
 :::
 
 :::
@@ -162,7 +162,7 @@ area is nonnegative.
 :::
 
 ::: pf-step
-Hence $\sum_{n\ge1} n|c_n|^2 \rho^{2n} \le 1/\rho^2$ for all $\rho < 1$.
+Hence $\sum_{n\ge1} n\abs{c_n}^2 \rho^{2n} \le 1/\rho^2$ for all $\rho < 1$.
 
 ::: pf-proof
 rearrange step [](#s3-1){.pf-ref}.
@@ -171,7 +171,7 @@ rearrange step [](#s3-1){.pf-ref}.
 :::
 
 ::: pf-step
-Letting $\rho \to 1^-$ gives $\sum_{n\ge1} n|c_n|^2 \le 1$.
+Letting $\rho \to 1^-$ gives $\sum_{n\ge1} n\abs{c_n}^2 \le 1$.
 
 ::: pf-proof
 take the limit (monotone convergence).
@@ -229,7 +229,7 @@ $g(0) = 0$ and $g'(0) = \psi(0) = 1$; injectivity follows from $g^2 = f \circ (z
 :::
 
 ::: {.pf-step #s5}
-(e) $|a_2| \le 2$, with equality iff $f(z) = z/(1 - e^{i\theta}z)^2$.
+(e) $\abs{a_2} \le 2$, with equality iff $f(z) = z/(1 - e^{i\theta}z)^2$.
 
 ::: pf-proof
 
@@ -261,16 +261,16 @@ $\psi(z) = \sqrt{f(z)/z} = 1 + \frac{a_2}{2} z + \cdots$, so $\psi(z^2) = 1 + \f
 :::
 
 ::: pf-step
-By (c) applied to $1/g$, $|b_2| \le 1/\sqrt2$... more precisely $1\cdot |b_2|^2 \le 1$, so $|b_2| \le 1$.
+By (c) applied to $1/g$, $\abs{b_2} \le 1/\sqrt2$... more precisely $1\cdot \abs{b_2}^2 \le 1$, so $\abs{b_2} \le 1$.
 
 ::: pf-proof
-(c) gives $\sum n|c_n|^2 \le 1$, so $|c_1| = |b_2| \le 1$.
+(c) gives $\sum n\abs{c_n}^2 \le 1$, so $\abs{c_1} = \abs{b_2} \le 1$.
 :::
 
 :::
 
 ::: pf-step
-Hence $|a_2| = 2|b_2| \le 2$.
+Hence $\abs{a_2} = 2\abs{b_2} \le 2$.
 
 ::: pf-proof
 $a_2 = 2b_2$.
@@ -279,10 +279,10 @@ $a_2 = 2b_2$.
 :::
 
 ::: pf-step
-Equality $|a_2| = 2$ forces $|b_2| = 1$, which by the equality case of (c) forces $1/g(z) = 1/z + e^{i\theta} z$, i.e. $g(z) = z/(1 + e^{i\theta}z^2)$.
+Equality $\abs{a_2} = 2$ forces $\abs{b_2} = 1$, which by the equality case of (c) forces $1/g(z) = 1/z + e^{i\theta} z$, i.e. $g(z) = z/(1 + e^{i\theta}z^2)$.
 
 ::: pf-proof
-equality in the area theorem forces $h$ to have the form $1/z + c_1 z$ with $|c_1| = 1$.
+equality in the area theorem forces $h$ to have the form $1/z + c_1 z$ with $\abs{c_1} = 1$.
 :::
 
 :::
@@ -301,7 +301,7 @@ substitute $z^2 \mapsto z$.
 :::
 
 ::: {.pf-step #s6}
-(f) If $h$ is injective on $\DD$ and avoids $z_1, z_2$, then $|z_1 - z_2| \le 4$.
+(f) If $h$ is injective on $\DD$ and avoids $z_1, z_2$, then $\abs{z_1 - z_2} \le 4$.
 
 ::: pf-proof
 
@@ -315,7 +315,7 @@ $h - z_j$ has a simple pole at $0$ and avoids $0$, so its reciprocal is injectiv
 :::
 
 ::: pf-step
-By (c), $|c_1| \le 1$ for each $j$.
+By (c), $\abs{c_1} \le 1$ for each $j$.
 
 ::: pf-proof
 apply (c) to $1/(h - z_j)$.
@@ -324,10 +324,10 @@ apply (c) to $1/(h - z_j)$.
 :::
 
 ::: pf-step
-The coefficient $c_1$ of $1/(h - z_j)$ is related to $z_1 - z_2$; specifically $|z_1 - z_2| \le 4$.
+The coefficient $c_1$ of $1/(h - z_j)$ is related to $z_1 - z_2$; specifically $\abs{z_1 - z_2} \le 4$.
 
 ::: pf-proof
-the second coefficient of $1/(h - z_j)$ is $z_j$ (up to sign), and comparing the two expansions gives $|z_1 - z_2| \le 2 + 2 = 4$ (the standard argument: $|c_1^{(1)} - c_1^{(2)}| = |z_1 - z_2| \le |c_1^{(1)}| + |c_1^{(2)}| \le 2$, refined to $4$ via the precise coefficient).
+the second coefficient of $1/(h - z_j)$ is $z_j$ (up to sign), and comparing the two expansions gives $\abs{z_1 - z_2} \le 2 + 2 = 4$ (the standard argument: $\abs{c_1^{(1)} - c_1^{(2)}} = \abs{z_1 - z_2} \le \abs{c_1^{(1)}} + \abs{c_1^{(2)}} \le 2$, refined to $4$ via the precise coefficient).
 :::
 
 :::
@@ -345,7 +345,7 @@ the second coefficient of $1/(h - z_j)$ is $z_j$ (up to sign), and comparing the
 Suppose $f$ avoids $w$.
 
 ::: pf-proof
-assume for contradiction that some $w$ with $|w| < 1/4$ is not in $f(\DD)$.
+assume for contradiction that some $w$ with $\abs{w} < 1/4$ is not in $f(\DD)$.
 :::
 
 :::
@@ -360,7 +360,7 @@ $f$ avoids $w$ and $0$ (since $f(0) = 0$ and $f$ is injective, $f$ avoids $0$ on
 :::
 
 ::: {.pf-step #s7-3}
-$1/f$ is injective with a simple pole at $0$, so by (f), $|0 - 1/w| \le 4$, i.e. $1/|w| \le 4$, i.e. $|w| \ge 1/4$.
+$1/f$ is injective with a simple pole at $0$, so by (f), $\abs{0 - 1/w} \le 4$, i.e. $1/\abs{w} \le 4$, i.e. $\abs{w} \ge 1/4$.
 
 ::: pf-proof
 apply (f) to $h = 1/f$ avoiding $0$ and $1/w$.
@@ -369,10 +369,10 @@ apply (f) to $h = 1/f$ avoiding $0$ and $1/w$.
 :::
 
 ::: {.pf-step #s7-4}
-Contradiction with $|w| < 1/4$.
+Contradiction with $\abs{w} < 1/4$.
 
 ::: pf-proof
-step [](#s7-3){.pf-ref} forces $|w| \ge 1/4$.
+step [](#s7-3){.pf-ref} forces $\abs{w} \ge 1/4$.
 :::
 
 :::
@@ -381,7 +381,7 @@ step [](#s7-3){.pf-ref} forces $|w| \ge 1/4$.
 Hence $D_{1/4}(0) \subseteq f(\DD)$, and $1/4$ is best possible (attained by the Koebe function $z/(1-z)^2$).
 
 ::: pf-proof
-step [](#s7-4){.pf-ref} shows no $w$ with $|w| < 1/4$ is omitted; the Koebe function omits $-1/4$.
+step [](#s7-4){.pf-ref} shows no $w$ with $\abs{w} < 1/4$ is omitted; the Koebe function omits $-1/4$.
 :::
 
 :::

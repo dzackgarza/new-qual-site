@@ -97,7 +97,7 @@ be projection. The subgroup $\psi(\ZZ^n)$ is torsion-free, so its
 intersection with the finite torsion subgroup $T$ is trivial. Therefore
 the restriction
 $$
-\pi|_{\psi(\ZZ^n)}:\psi(\ZZ^n)\to\ZZ^r
+\pi\restrict_{\psi(\ZZ^n)}:\psi(\ZZ^n)\to\ZZ^r
 $$
 is injective. Thus $\ZZ^n$ embeds into $\ZZ^r$. Every subgroup of
 $\ZZ^r$ is free abelian of rank at most $r$, so $n\le r$.

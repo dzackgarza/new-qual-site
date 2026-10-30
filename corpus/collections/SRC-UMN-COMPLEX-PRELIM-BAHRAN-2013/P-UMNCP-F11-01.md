@@ -21,7 +21,7 @@ Show that
 $$
 z^5+3z^3+7
 $$
-has all of its zeros in the disk $|z|<2$.
+has all of its zeros in the disk $\abs{z}<2$.
 :::
 
 ::: {.solution}
@@ -37,11 +37,11 @@ $$
 
 On the circle
 $$
-|z|=2,
+\abs{z}=2,
 $$
 one has
 $$
-|3z^3+7|<|z^5|.
+\abs{3z^3+7}<\abs{z^5}.
 $$
 
 
@@ -49,28 +49,28 @@ $$
 
 If
 $$
-|z|=2,
+\abs{z}=2,
 $$
 then
 $$
-|z^5|=2^5=32.
+\abs{z^5}=2^5=32.
 $$
 By the triangle inequality,
 $$
-|3z^3+7|
+\abs{3z^3+7}
 \le
-3|z|^3+7
+3\abs{z}^3+7
 =
 3\cdot8+7
 =31.
 $$
 Hence
 $$
-|3z^3+7|
+\abs{3z^3+7}
 \le31
 <32
 =
-|z^5|.
+\abs{z^5}.
 $$
 
 :::
@@ -81,7 +81,7 @@ $$
 
 The polynomial $p$ and the monomial $z^5$ have the same number of zeros in
 $$
-|z|<2,
+\abs{z}<2,
 $$
 counted with multiplicity.
 
@@ -94,7 +94,7 @@ p(z)=z^5+(3z^3+7).
 $$
 The strict inequality from step [](#s1-1){.pf-ref} holds on the boundary circle
 $$
-|z|=2.
+\abs{z}=2.
 $$
 Rouché's theorem therefore gives the same number of zeros inside the circle for $p$ and $z^5$.
 
@@ -106,7 +106,7 @@ Rouché's theorem therefore gives the same number of zeros inside the circle for
 
 The polynomial $p$ has exactly five zeros in
 $$
-|z|<2,
+\abs{z}<2,
 $$
 counted with multiplicity.
 
@@ -127,13 +127,13 @@ has a zero of multiplicity $5$ at the origin and no other zeros. By step [](#s1-
 
 Therefore every zero of $p$ lies in
 $$
-\boxed{|z|<2}.
+\boxed{\abs{z}<2}.
 $$
 
 
 ::: pf-proof
 
-The polynomial $p$ has degree $5$, so by the fundamental theorem of algebra it has exactly five zeros in $\CC$, counted with multiplicity. Step [](#s1-3){.pf-ref} places all five of them in $|z|<2$.
+The polynomial $p$ has degree $5$, so by the fundamental theorem of algebra it has exactly five zeros in $\CC$, counted with multiplicity. Step [](#s1-3){.pf-ref} places all five of them in $\abs{z}<2$.
 
 :::
 

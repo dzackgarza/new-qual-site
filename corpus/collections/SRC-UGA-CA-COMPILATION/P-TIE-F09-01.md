@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-(1) Assume $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ converges in $| z | < R .$ . Show that for $r < R ,$
+(1) Assume $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ converges in $\abs{ z } < R .$ . Show that for $r < R ,$
 
 $$
-\frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } | f ( r e ^ { i \theta } ) | ^ { 2 } d \theta = \sum _ { n = 0 } ^ { \infty } | c _ { n } | ^ { 2 } r ^ { 2 n } .
+\frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } \abs{ f ( r e ^ { i \theta } ) } ^ { 2 } d \theta = \sum _ { n = 0 } ^ { \infty } \abs{ c _ { n } } ^ { 2 } r ^ { 2 n } .
 $$
 
 (2) Deduce Liouville’s theorem from (1).
@@ -34,7 +34,7 @@ Fix $0<r<R$.
 
 ::: {.pf-step #s1-1}
 
-On $|z|=r$, the series
+On $\abs{z}=r$, the series
 $$
 f(re^{i\theta})
 =
@@ -51,15 +51,15 @@ r<\rho<R.
 $$
 Since the power series converges absolutely at $z=\rho$,
 $$
-\sum_{n=0}^{\infty}|c_n|\rho^n<\infty.
+\sum_{n=0}^{\infty}\abs{c_n}\rho^n<\infty.
 $$
 For every $\theta$,
 $$
-|c_nr^ne^{in\theta}|
+\abs{c_nr^ne^{in\theta}}
 =
-|c_n|r^n
+\abs{c_n}r^n
 \le
-|c_n|\rho^n.
+\abs{c_n}\rho^n.
 $$
 The Weierstrass $M$-test therefore gives absolute uniform convergence.
 
@@ -71,7 +71,7 @@ The Weierstrass $M$-test therefore gives absolute uniform convergence.
 
 One has
 $$
-|f(re^{i\theta})|^2
+\abs{f(re^{i\theta})}^2
 =
 \sum_{n,m\ge0}
 c_n\overline{c_m}\,
@@ -84,14 +84,14 @@ and the double series may be integrated term by term on $[0,2\pi]$.
 
 By step [](#s1-1){.pf-ref},
 $$
-\sum_{n=0}^{\infty}|c_n|r^n<\infty.
+\sum_{n=0}^{\infty}\abs{c_n}r^n<\infty.
 $$
 Hence
 $$
 \sum_{n,m\ge0}
-|c_n|\,|c_m|\,r^{n+m}
+\abs{c_n}\,\abs{c_m}\,r^{n+m}
 =
-\left(\sum_{n\ge0}|c_n|r^n\right)^2
+\left(\sum_{n\ge0}\abs{c_n}r^n\right)^2
 <\infty.
 $$
 Thus the product of the two uniformly absolutely convergent series for
@@ -136,9 +136,9 @@ $$
 Parseval's identity in the problem holds:
 $$
 \boxed{
-\frac1{2\pi}\int_0^{2\pi}|f(re^{i\theta})|^2\,d\theta
+\frac1{2\pi}\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta
 =
-\sum_{n=0}^{\infty}|c_n|^2r^{2n}
+\sum_{n=0}^{\infty}\abs{c_n}^2r^{2n}
 }.
 $$
 
@@ -147,7 +147,7 @@ $$
 
 Integrate the expansion from step [](#s1-2){.pf-ref} term by term. By step [](#s1-3){.pf-ref}, every term with
 $n\ne m$ integrates to zero, while the term with $n=m$ contributes
-$|c_n|^2r^{2n}$.
+$\abs{c_n}^2r^{2n}$.
 
 :::
 
@@ -162,27 +162,27 @@ If $f$ is entire and bounded, then every coefficient $c_n$ with $n\ge1$ vanishes
 
 Suppose
 $$
-|f(z)|\le M
+\abs{f(z)}\le M
 \qquad
 \text{for all }z\in\CC.
 $$
 Since an entire function has radius of convergence $R=\infty$, step [](#s1-4){.pf-ref} applies for every
 $r>0$ and gives
 $$
-\sum_{k=0}^{\infty}|c_k|^2r^{2k}
+\sum_{k=0}^{\infty}\abs{c_k}^2r^{2k}
 =
-\frac1{2\pi}\int_0^{2\pi}|f(re^{i\theta})|^2\,d\theta
+\frac1{2\pi}\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta
 \le M^2.
 $$
 For each fixed $n\ge1$,
 $$
-|c_n|^2r^{2n}\le M^2
+\abs{c_n}^2r^{2n}\le M^2
 \qquad
 \text{for every }r>0.
 $$
 Therefore
 $$
-|c_n|\le \frac{M}{r^n}.
+\abs{c_n}\le \frac{M}{r^n}.
 $$
 Letting $r\to\infty$ yields $c_n=0$.
 

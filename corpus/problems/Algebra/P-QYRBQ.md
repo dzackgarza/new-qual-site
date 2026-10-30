@@ -25,7 +25,7 @@ Prove that no group of order 36 is simple.
 :::
 
 ::: {.solution}
-Let $|G|=36=2^2\cdot3^2$.
+Let $\cardinality{G}=36=2^2\cdot3^2$.
 
 ::: pf
 

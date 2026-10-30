@@ -111,7 +111,7 @@ Taking absolute values and applying step [](#s1){.pf-ref} proves the bound.
 Given $\varepsilon>0$, set $\delta\coloneqq c\varepsilon/M>0$.
 For any $z,w\in H_c$ with $\abs{w-z}<\delta$, step [](#s2){.pf-ref} gives
 $\abs{f(w)-f(z)}<\varepsilon$. The number $\delta$ is independent
-of $z$ and $w$, so $f|_{H_c}$ is
+of $z$ and $w$, so $f\restrict_{H_c}$ is
 [[D-WGYSB|uniformly continuous]]. Since $c>0$ was arbitrary,
 the conclusion holds for every half-plane in the statement.
 

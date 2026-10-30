@@ -21,35 +21,35 @@ audit:
     Prove that if
 
 $$
-| f (z) | = 1 \quad \text { whenever } | z | = 1,
+\abs{ f (z) } = 1 \quad \text { whenever } \abs{ z } = 1,
 $$
 
 then $f$ is constant.
 
-[Hint: Extend $f$ to all of $\CC$ by $f ( z ) = 1 / \overline { f ( 1 / \overline { { z } } ) }$ whenever $|z| > 1$, and argue as in the Schwarz reflection principle.]
+[Hint: Extend $f$ to all of $\CC$ by $f ( z ) = 1 / \overline { f ( 1 / \overline { { z } } ) }$ whenever $\abs{z} > 1$, and argue as in the Schwarz reflection principle.]
 :::
 
 ::: {.solution}
-Because $f$ is continuous on $\overline{\DD}$, holomorphic on $\DD$, and satisfies $|f|=1$ on $\partial\DD$, the maximum-modulus principle gives
+Because $f$ is continuous on $\overline{\DD}$, holomorphic on $\DD$, and satisfies $\abs{f}=1$ on $\partial\DD$, the maximum-modulus principle gives
 $$
-|f(z)|\le1\qquad(z\in\DD).
+\abs{f(z)}\le1\qquad(z\in\DD).
 \tag{1}
 $$
 
 Since $f$ is non-vanishing on $\overline{\DD}$, the function $1/f$ is continuous on $\overline{\DD}$ and holomorphic on $\DD$. On the boundary,
 $$
-\left|\frac1{f(z)}\right|=1.
+\abs{\frac1{f(z)}}=1.
 $$
 Applying the maximum-modulus principle to $1/f$ yields
 $$
-\frac1{|f(z)|}\le1,
+\frac1{\abs{f(z)}}\le1,
 $$
 so
 $$
-|f(z)|\ge1\qquad(z\in\DD).
+\abs{f(z)}\ge1\qquad(z\in\DD).
 \tag{2}
 $$
-Combining (1) and (2) gives $|f(z)|=1$ throughout $\DD$.
+Combining (1) and (2) gives $\abs{f(z)}=1$ throughout $\DD$.
 
 If $f$ were nonconstant, the open mapping theorem would imply that $f(\DD)$ is open in $\CC$, but it is contained in the unit circle, which has empty interior. This is impossible. Hence $f$ is constant.
 :::

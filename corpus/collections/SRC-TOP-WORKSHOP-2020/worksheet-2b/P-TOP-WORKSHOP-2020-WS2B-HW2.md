@@ -32,15 +32,15 @@ H:(\RR^n\setminus\{0\})\times[0,1]\to\RR^n\setminus\{0\}
 $$
 by
 $$
-H(x,t)=\left((1-t)+\frac{t}{\|x\|}\right)x.
+H(x,t)=\left((1-t)+\frac{t}{\norm{x}}\right)x.
 $$
 The scalar factor is positive for every $x\ne0$ and $0\le t\le1$, so $H(x,t)\ne0$. Also
 $$
 H(x,0)=x,
 \qquad
-H(x,1)=\frac{x}{\|x\|}\in S^{n-1}.
+H(x,1)=\frac{x}{\norm{x}}\in S^{n-1}.
 $$
-If $x\in S^{n-1}$, then $\|x\|=1$, hence
+If $x\in S^{n-1}$, then $\norm{x}=1$, hence
 $$
 H(x,t)=x
 $$

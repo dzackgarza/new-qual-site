@@ -31,7 +31,7 @@ audit:
 
 ::: {.solution}
 Put $u_n=1-f_n$. Each $u_n$ is positive and harmonic on
-$D=\{|z|<1\}$, and $u_n(0)\to0$.
+$D=\{\abs{z}<1\}$, and $u_n(0)\to0$.
 
 ::: pf
 
@@ -41,16 +41,16 @@ Values of a positive harmonic function on an interior disk are bounded by its ce
 ::: pf-proof
 Let $u>0$ be harmonic on $D$, and fix $0\leq r<R<1$.
 The Poisson representation on the radius-$R$ disk gives,
-for $|z|\leq r$,
+for $\abs{z}\leq r$,
 $$
 u(z)=\frac1{2\pi}\int_0^{2\pi}
-\frac{R^2-|z|^2}{|Re^{it}-z|^2}u(Re^{it})\,dt
+\frac{R^2-\abs{z}^2}{\abs{Re^{it}-z}^2}u(Re^{it})\,dt
 $$
 [@SS03]. It applies since $u$ is harmonic on a neighborhood
 of this closed disk. The kernel satisfies
 $$
-0<\frac{R^2-|z|^2}{|Re^{it}-z|^2}
-\leq\frac{R+|z|}{R-|z|}\leq\frac{R+r}{R-r}.
+0<\frac{R^2-\abs{z}^2}{\abs{Re^{it}-z}^2}
+\leq\frac{R+\abs{z}}{R-\abs{z}}\leq\frac{R+r}{R-r}.
 $$
 Using positivity of the boundary values and the mean-value
 identity at zero therefore gives
@@ -70,8 +70,8 @@ Apply the common bound to the sequence.
 For fixed $r<1$, choose any $R$ with $r<R<1$. Step
 [](#interior-disk-bound){.pf-ref} applied separately to $u_n$ yields
 $$
-\sup_{|z|\leq r}|1-f_n(z)|
-=\sup_{|z|\leq r}u_n(z)
+\sup_{\abs{z}\leq r}\abs{1-f_n(z)}
+=\sup_{\abs{z}\leq r}u_n(z)
 \leq\frac{R+r}{R-r}u_n(0)\longrightarrow0.
 $$
 Every point of $D$ lies in such a disk. Hence

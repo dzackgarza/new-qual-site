@@ -86,17 +86,17 @@ Hence $z^n\to0$.
 
 The conclusion of step [](#s1){.pf-ref} implies
 $$
-|z|<1.
+\abs{z}<1.
 $$
 
 ::: pf-proof
 
-If $|z|\ge1$, then
+If $\abs{z}\ge1$, then
 $$
-|z^n|=|z|^n\ge1
+\abs{z^n}=\abs{z}^n\ge1
 $$
 for every $n$, so $z^n$ cannot tend to $0$. Thus convergence of the
-product requires $|z|<1$.
+product requires $\abs{z}<1$.
 
 :::
 
@@ -104,39 +104,39 @@ product requires $|z|<1$.
 
 ::: {.pf-step #s3}
 
-Now suppose $|z|<1$. There is $N$ such that for every $k\ge N$,
+Now suppose $\abs{z}<1$. There is $N$ such that for every $k\ge N$,
 $$
-|z|^k\le\frac12
+\abs{z}^k\le\frac12
 $$
 and
 $$
-\left|\log(1-z^k)\right|
+\abs{\log(1-z^k)}
 \le
-2|z|^k,
+2\abs{z}^k,
 $$
 where $\log$ denotes the principal logarithm.
 
 ::: pf-proof
 
-Since $|z|^k\to0$, choose $N$ so that $|z|^k\le1/2$ for $k\ge N$.
-For $|w|<1$,
+Since $\abs{z}^k\to0$, choose $N$ so that $\abs{z}^k\le1/2$ for $k\ge N$.
+For $\abs{w}<1$,
 $$
 \log(1-w)
 =
 -\sum_{m=1}^{\infty}\frac{w^m}{m}.
 $$
-Consequently, for $|w|\le1/2$,
+Consequently, for $\abs{w}\le1/2$,
 $$
 \begin{aligned}
-|\log(1-w)|
+\abs{\log(1-w)}
 &\le
-\sum_{m=1}^{\infty}\frac{|w|^m}{m}\\
+\sum_{m=1}^{\infty}\frac{\abs{w}^m}{m}\\
 &\le
-\sum_{m=1}^{\infty}|w|^m\\
+\sum_{m=1}^{\infty}\abs{w}^m\\
 &=
-\frac{|w|}{1-|w|}\\
+\frac{\abs{w}}{1-\abs{w}}\\
 &\le
-2|w|.
+2\abs{w}.
 \end{aligned}
 $$
 Apply this with $w=z^k$.
@@ -147,7 +147,7 @@ Apply this with $w=z^k$.
 
 ::: {.pf-step #s4}
 
-If $|z|<1$, then
+If $\abs{z}<1$, then
 $$
 \sum_{k=N}^{\infty}\log(1-z^k)
 $$
@@ -158,11 +158,11 @@ converges absolutely.
 By step [](#s3){.pf-ref},
 $$
 \sum_{k=N}^{\infty}
-|\log(1-z^k)|
+\abs{\log(1-z^k)}
 \le
-2\sum_{k=N}^{\infty}|z|^k.
+2\sum_{k=N}^{\infty}\abs{z}^k.
 $$
-The series on the right is geometric and converges because $|z|<1$.
+The series on the right is geometric and converges because $\abs{z}<1$.
 
 :::
 
@@ -170,12 +170,12 @@ The series on the right is geometric and converges because $|z|<1$.
 
 ::: {.pf-step #s5}
 
-If $|z|<1$, the partial products $P_n(z)$ converge to a nonzero
+If $\abs{z}<1$, the partial products $P_n(z)$ converge to a nonzero
 limit.
 
 ::: pf-proof
 
-No factor $1-z^k$ vanishes, since $|z^k|<1$. Put
+No factor $1-z^k$ vanishes, since $\abs{z^k}<1$. Put
 $$
 L
 \coloneqq
@@ -212,7 +212,7 @@ $P_n(z)$.
 
 Therefore the product converges exactly for
 $$
-\boxed{\{z\in\CC:|z|<1\}}.
+\boxed{\{z\in\CC:\abs{z}<1\}}.
 $$
 
 ::: pf-proof

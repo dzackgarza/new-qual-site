@@ -22,13 +22,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite abelian group, and let $p$ be a prime that divides $|G|$.
+Let $G$ be a finite abelian group, and let $p$ be a prime that divides $\cardinality{G}$.
 Prove that $G$ has a subgroup of order $p$.
 :::
 
 ::: {.solution}
 We prove the stronger Cauchy conclusion for finite abelian groups by induction on
-$|G|$.
+$\cardinality{G}$.
 
 ::: pf
 
@@ -39,7 +39,7 @@ of order $p$.
 
 ::: pf-proof
 
-Write $|g|=pm$. Then $g^m$ has order $p$, so $\langle g^m\rangle$ has order
+Write $\elementorder{g}=pm$. Then $g^m$ has order $p$, so $\langle g^m\rangle$ has order
 $p$.
 
 :::
@@ -49,15 +49,15 @@ $p$.
 ::: pf-step
 
 Otherwise choose a nonidentity element $g\in G$. Then
-$p\mid |G/\langle g\rangle|$.
+$p\mid \cardinality{G/\langle g\rangle}$.
 
 ::: pf-proof
 
-By assumption $p\nmid |g|$. Since
+By assumption $p\nmid \elementorder{g}$. Since
 $$
-|G|=|\langle g\rangle|\,|G/\langle g\rangle|
+\cardinality{G}=\cardinality{\langle g\rangle}\,\cardinality{G/\langle g\rangle}
 $$
-and $p\mid |G|$, it follows that $p$ divides the quotient order.
+and $p\mid \cardinality{G}$, it follows that $p$ divides the quotient order.
 Because $G$ is abelian, $\langle g\rangle$ is normal and the quotient is an
 abelian group of strictly smaller order.
 
@@ -73,7 +73,7 @@ The quotient contains an element of order $p$, and hence so does $G$.
 
 By induction, choose $x\langle g\rangle\in G/\langle g\rangle$ of order $p$.
 The order of a homomorphic image divides the order of the original element, so
-$p\mid |x|$. Applying step [](#s1){.pf-ref} to $x$ produces an element of order $p$ in $G$.
+$p\mid \elementorder{x}$. Applying step [](#s1){.pf-ref} to $x$ produces an element of order $p$ in $G$.
 
 :::
 

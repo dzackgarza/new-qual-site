@@ -41,7 +41,7 @@ Let $p: \widetilde{X} \to X$ be the universal covering projection.
 :::
 
 ::: pf-step
-The number of sheets of the covering is $d = |\pi_1(X)|$. Since $\pi_1(X)$ is non-trivial and finite, $d \in \ZZ$ and $d \ge 2$.
+The number of sheets of the covering is $d = \cardinality{\pi_1(X)}$. Since $\pi_1(X)$ is non-trivial and finite, $d \in \ZZ$ and $d \ge 2$.
 :::
 
 ::: pf-step
@@ -126,7 +126,7 @@ Since $X$ is a finite CW complex, $\chi(X) = \sum (-1)^n c_n(X) \in \ZZ$ is an i
 :::
 
 ::: pf-step
-Since $d = |\pi_1(X)| \ge 2$, the only rational solution is $\chi(X) = 1/d \notin \ZZ$, a contradiction.
+Since $d = \cardinality{\pi_1(X)} \ge 2$, the only rational solution is $\chi(X) = 1/d \notin \ZZ$, a contradiction.
 :::
 
 :::

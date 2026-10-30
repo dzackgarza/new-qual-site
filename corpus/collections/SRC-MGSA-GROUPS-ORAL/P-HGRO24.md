@@ -29,7 +29,7 @@ $G$ has a nontrivial center $Z(G) \neq 1$.
 
 ::: pf-proof
 
-the class equation $|G| = |Z(G)| + \sum [G : C_G(g_i)]$; each $[G : C_G(g_i)]$ is divisible by $p$, and $|G| = p^r$ is divisible by $p$, so $p \mid |Z(G)|$, hence $Z(G) \neq 1$.
+the class equation $\cardinality{G} = \cardinality{Z(G)} + \sum [G : C_G(g_i)]$; each $[G : C_G(g_i)]$ is divisible by $p$, and $\cardinality{G} = p^r$ is divisible by $p$, so $p \mid \cardinality{Z(G)}$, hence $Z(G) \neq 1$.
 
 :::
 
@@ -53,7 +53,7 @@ $G/Z(G)$ has order $p^{r'}$ with $r' < r$.
 
 ::: pf-proof
 
-$|Z(G)| > 1$ divides $p^r$, so $|G/Z(G)| = p^{r'}$ with $r' < r$.
+$\cardinality{Z(G)} > 1$ divides $p^r$, so $\cardinality{G/Z(G)} = p^{r'}$ with $r' < r$.
 
 :::
 

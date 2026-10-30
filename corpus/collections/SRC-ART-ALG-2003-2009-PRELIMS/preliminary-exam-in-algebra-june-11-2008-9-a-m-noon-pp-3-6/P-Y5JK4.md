@@ -126,9 +126,9 @@ S=\{a+bi\in\ZZ[i]:a^2+b^2<n\}.
 $$
 If $a+bi\in S$, then
 $$
-|a|<\sqrt n,
+\abs{a}<\sqrt n,
 \qquad
-|b|<\sqrt n.
+\abs{b}<\sqrt n.
 $$
 Thus only finitely many pairs $(a,b)\in\ZZ^2$ occur, so $S$ is finite.
 The quotient map $S\to R/I$ is surjective by step [](#s3){.pf-ref}. Therefore

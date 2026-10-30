@@ -121,7 +121,7 @@ Therefore
 $$
 [\FF_2(\alpha):\FF_2]=2,
 \qquad
-|\FF_2(\alpha)|=2^2=4.
+\cardinality{\FF_2(\alpha)}=2^2=4.
 $$
 
 ::: pf-proof

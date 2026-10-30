@@ -40,7 +40,7 @@ let
 $$
 D_R
 \coloneqq
-\{z\in\CC:\operatorname{Re}z>0,\ |z|<R\}.
+\{z\in\CC:\operatorname{Re}z>0,\ \abs{z}<R\}.
 $$
 
 ::: pf
@@ -53,7 +53,7 @@ $$
 $$
 one has
 $$
-|e^{-z}|<|z-\lambda|.
+\abs{e^{-z}}<\abs{z-\lambda}.
 $$
 
 
@@ -61,7 +61,7 @@ $$
 
 If
 $$
-|z|=R
+\abs{z}=R
 $$
 and
 $$
@@ -69,7 +69,7 @@ $$
 $$
 then
 $$
-|e^{-z}|
+\abs{e^{-z}}
 =
 e^{-\operatorname{Re}z}
 \le
@@ -77,7 +77,7 @@ e^{-\operatorname{Re}z}
 $$
 Also, by the reverse triangle inequality,
 $$
-|z-\lambda|
+\abs{z-\lambda}
 \ge
 R-\lambda
 >
@@ -85,7 +85,7 @@ R-\lambda
 $$
 Thus
 $$
-|e^{-z}|<|z-\lambda|.
+\abs{e^{-z}}<\abs{z-\lambda}.
 $$
 
 :::
@@ -100,7 +100,7 @@ $$
 $$
 one also has
 $$
-|e^{-z}|<|z-\lambda|.
+\abs{e^{-z}}<\abs{z-\lambda}.
 $$
 
 
@@ -112,18 +112,18 @@ z=iy
 $$
 with
 $$
-|y|\le R.
+\abs{y}\le R.
 $$
 Then
 $$
-|e^{-z}|
+\abs{e^{-z}}
 =
-|e^{-iy}|
+\abs{e^{-iy}}
 =1.
 $$
 On the other hand,
 $$
-|iy-\lambda|
+\abs{iy-\lambda}
 =
 \sqrt{y^2+\lambda^2}
 \ge
@@ -155,7 +155,7 @@ have the same number of zeros in $D_R$, counted with multiplicity.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
-|e^{-z}|<|z-\lambda|
+\abs{e^{-z}}<\abs{z-\lambda}
 $$
 on every point of the positively oriented boundary
 $$

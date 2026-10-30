@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH7-14
 kind: problem
-title: Laurent series of $1/(z-3)$ on $|z-4|>1$
+title: Laurent series of $1/(z-3)$ on $\abs{z-4}>1$
 classification:
   areas: [complex-analysis]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the Laurent series expansions of the function $f(z) = \frac{1}{z - 3}$ that is valid in the annulus $|z - 4| > 1$.
+Find the Laurent series expansions of the function $f(z) = \frac{1}{z - 3}$ that is valid in the annulus $\abs{z - 4} > 1$.
 
 (A) $\sum_{n=1}^{\infty} (4 - z)^{-n-1}$
 (B) $\sum_{n=0}^{\infty} (-1)^n (z - 4)^{-n}$
@@ -31,7 +31,7 @@ Find the Laurent series expansions of the function $f(z) = \frac{1}{z - 3}$ that
 
 ::: {.pf-step #s1-1}
 
-For $|z-4|>1$,
+For $\abs{z-4}>1$,
 $$
 \frac1{z-3}
 =\frac1{z-4}\frac1{1+\frac1{z-4}}.
@@ -61,9 +61,9 @@ $$
 
 ::: pf-proof
 
-The hypothesis $|z-4|>1$ gives
+The hypothesis $\abs{z-4}>1$ gives
 $$
-\left|\frac{-1}{z-4}\right|<1.
+\abs{\frac{-1}{z-4}}<1.
 $$
 Hence, using $1/(1-w)=\sum_{n=0}^{\infty}w^n$ with $w=-1/(z-4)$ in step [](#s1-1){.pf-ref},
 $$
@@ -73,7 +73,7 @@ $$
 &=\sum_{n=0}^{\infty}(-1)^n(z-4)^{-n-1}.
 \end{aligned}
 $$
-The convergence condition is exactly $|z-4|>1$.
+The convergence condition is exactly $\abs{z-4}>1$.
 
 :::
 

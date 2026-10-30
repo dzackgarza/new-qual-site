@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-K3OJW
 kind: problem
-title: Normal Sylow $p$-subgroup when $|G|=p^{e}v$ with $p>v$
+title: Normal Sylow $p$-subgroup when $\cardinality{G}=p^{e}v$ with $p>v$
 classification:
   areas:
   - algebra
@@ -42,7 +42,7 @@ $$
 ::: pf-proof
 Since
 $$
-|G|=p^e v
+\cardinality{G}=p^e v
 $$
 with $p\nmid v$, a Sylow $p$-subgroup has order $p^e$. The third Sylow theorem says that the number of such subgroups divides the complementary factor $v$ and is congruent to $1$ modulo $p$.
 :::

@@ -37,7 +37,7 @@ Let $\mu^*$ be an outer measure on $X$ and let $\mathcal M(\mu^*)$ be its Carath
 
 ::: {.pf-step #cara-measure}
 
-$\mu \coloneqq \mu^*|_{\mathcal M(\mu^*)}$ is a countably additive measure on the $\sigma$-algebra $\mathcal M(\mu^*)$.
+$\mu \coloneqq \mu^*\restrict_{\mathcal M(\mu^*)}$ is a countably additive measure on the $\sigma$-algebra $\mathcal M(\mu^*)$.
 
 ::: pf-proof
 

@@ -78,7 +78,7 @@ Define
 $$
 D
 =
-|1-re^{i\phi}|^2
+\abs{1-re^{i\phi}}^2
 =
 1-2r\cos\phi+r^2.
 $$

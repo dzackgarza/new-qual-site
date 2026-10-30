@@ -19,16 +19,16 @@ Let $\Omega \neq \CC$ be a simply connected region with $a \in \Omega$ and $f$ a
 Assume $f(a) = 0$ and $f'(a) > 0$.
 Prove that
 $$
-\inf_{z \in \partial \Omega} |z - a| \leq \frac{1}{f'(a)} \leq \sup_{z \in \partial \Omega} |z - a|.
+\inf_{z \in \partial \Omega} \abs{z - a} \leq \frac{1}{f'(a)} \leq \sup_{z \in \partial \Omega} \abs{z - a}.
 $$
 :::
 
 ::: {.solution}
 Set
 $$
-r=\inf_{z\in\partial\Omega}|z-a|,
+r=\inf_{z\in\partial\Omega}\abs{z-a},
 \qquad
-R=\sup_{z\in\partial\Omega}|z-a|.
+R=\sup_{z\in\partial\Omega}\abs{z-a}.
 $$
 The disk $D(a,r)$ is contained in $\Omega$. Therefore
 $$
@@ -67,7 +67,7 @@ G(\zeta)=\frac{g(\zeta)-a}{R}
 $$
 maps $\DD$ into itself and satisfies $G(0)=0$. Schwarz's lemma yields
 $$
-\frac1{R f'(a)}=|G'(0)|\le1.
+\frac1{R f'(a)}=\abs{G'(0)}\le1.
 $$
 Thus
 $$

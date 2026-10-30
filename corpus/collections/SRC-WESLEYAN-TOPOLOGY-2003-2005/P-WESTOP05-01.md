@@ -34,7 +34,7 @@ Let
 $$
 \mathfrak c
 =
-|\RR|
+\cardinality{\RR}
 =
 2^{\aleph_0}
 $$
@@ -47,7 +47,7 @@ denote the cardinality of the continuum.
 One has
 $$
 \boxed{
-|\mathcal P(\NN)|
+\cardinality{\mathcal P(\NN)}
 =
 2^{\aleph_0}
 =
@@ -85,7 +85,7 @@ is in bijection with $\{0,1\}^{\NN}$.
 One has
 $$
 \boxed{
-|\{0,1\}|=2}.
+\cardinality{\{0,1\}}=2}.
 $$
 
 
@@ -102,7 +102,7 @@ The set has exactly two elements.
 One has
 $$
 \boxed{
-|[0,1]|=\mathfrak c}.
+\cardinality{[0,1]}=\mathfrak c}.
 $$
 
 
@@ -124,7 +124,7 @@ $$
 $$
 the Cantor--Bernstein theorem gives
 $$
-|[0,1]|=|\RR|=\mathfrak c.
+\cardinality{[0,1]}=\cardinality{\RR}=\mathfrak c.
 $$
 
 :::
@@ -136,7 +136,7 @@ $$
 One has
 $$
 \boxed{
-|(0,1)|=\mathfrak c}.
+\cardinality{(0,1)}=\mathfrak c}.
 $$
 
 
@@ -169,7 +169,7 @@ S
 $$
 Then
 $$
-\boxed{|S|\ge\mathfrak c}.
+\boxed{\cardinality{S}\ge\mathfrak c}.
 $$
 
 
@@ -185,7 +185,7 @@ x\longmapsto f_x
 $$
 is injective. By step [](#s1-3){.pf-ref},
 $$
-|[0,1]|=\mathfrak c.
+\cardinality{[0,1]}=\mathfrak c.
 $$
 
 :::
@@ -196,11 +196,11 @@ $$
 
 Since
 $$
-|[0,1]|=\mathfrak c=2^{\aleph_0},
+\cardinality{[0,1]}=\mathfrak c=2^{\aleph_0},
 $$
 one has
 $$
-|S|
+\cardinality{S}
 =
 \mathfrak c^{\aleph_0}.
 $$
@@ -257,9 +257,9 @@ $$
 Therefore
 $$
 \boxed{
-\left|
+\cardinality{
 \{f:\NN\to[0,1]\}
-\right|
+}
 =
 \mathfrak c}.
 $$
@@ -278,22 +278,22 @@ Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 Collecting the results,
 $$
 \boxed{
-|\mathcal P(\NN)|
+\cardinality{\mathcal P(\NN)}
 =
-|[0,1]|
+\cardinality{[0,1]}
 =
-|(0,1)|
+\cardinality{(0,1)}
 =
-\left|
+\cardinality{
 \{f:\NN\to[0,1]\}
-\right|
+}
 =
 \mathfrak c}
 $$
 and
 $$
 \boxed{
-|\{0,1\}|=2}.
+\cardinality{\{0,1\}}=2}.
 $$
 
 

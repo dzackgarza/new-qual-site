@@ -49,7 +49,7 @@ $$
 \frac1R
 =
 \limsup_{n\to\infty}
-|a_n|^{1/n}
+\abs{a_n}^{1/n}
 =
 \lim_{n\to\infty}
 n^{-1/n}
@@ -62,7 +62,7 @@ R=1.
 $$
 Therefore the series converges absolutely for
 $$
-|x-3|<1,
+\abs{x-3}<1,
 $$
 that is,
 $$
@@ -70,7 +70,7 @@ $$
 $$
 and diverges for
 $$
-|x-3|>1.
+\abs{x-3}>1.
 $$
 
 :::
@@ -142,17 +142,17 @@ the series diverges.
 
 By step [](#s1-1){.pf-ref},
 $$
-|x-3|>1.
+\abs{x-3}>1.
 $$
 Then
 $$
-\left|
+\abs{
 \frac{(x-3)^n}{n}
-\right|
+}
 $$
 does not tend to $0$; indeed the exponential factor
 $$
-|x-3|^n
+\abs{x-3}^n
 $$
 dominates the linear denominator $n$.
 Therefore the necessary term test fails.

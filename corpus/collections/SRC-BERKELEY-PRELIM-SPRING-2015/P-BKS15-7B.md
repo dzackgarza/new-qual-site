@@ -35,7 +35,7 @@ B_{ij}=\sum_{n=0}^{m-1}\frac{(t_is_j)^n}{n!}
 $$
 satisfies
 $$
-|A_{ij}-B_{ij}|\le\frac2{m!}
+\abs{A_{ij}-B_{ij}}\le\frac2{m!}
 $$
 for all $i,j$, and has rank at most $m$.
 :::
@@ -80,10 +80,10 @@ $$
 
 If $\abs{z}\leq1$, then
 $$
-\left|
+\abs{
 e^z-
 \sum_{n=0}^{m-1}\frac{z^n}{n!}
-\right|
+}
 \leq
 \frac2{m!}.
 $$
@@ -99,10 +99,10 @@ e^z-
 $$
 Therefore, by the triangle inequality and $\abs{z}\leq1$,
 $$
-\left|
+\abs{
 e^z-
 \sum_{n=0}^{m-1}\frac{z^n}{n!}
-\right|
+}
 \leq
 \sum_{n=m}^{\infty}\frac{\abs{z}^n}{n!}
 \leq

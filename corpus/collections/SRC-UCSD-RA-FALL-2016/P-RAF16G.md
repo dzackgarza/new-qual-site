@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Recall that $c_0 = \{(a_1, a_2, \ldots) : \text{all } a_k \in \RR \text{ and } \lim_{k \to \infty} a_k = 0\}$ is a Banach space with respect to the usual component-wise addition and scalar multiplication, and the norm $\|(a_1, a_2, \ldots)\| = \sup_{k \geq 1} |a_k|$.
+Recall that $c_0 = \{(a_1, a_2, \ldots) : \text{all } a_k \in \RR \text{ and } \lim_{k \to \infty} a_k = 0\}$ is a Banach space with respect to the usual component-wise addition and scalar multiplication, and the norm $\norm{(a_1, a_2, \ldots)} = \sup_{k \geq 1} \abs{a_k}$.
 Let $\xi_k \in \RR$ ($k = 1, 2, \ldots$). Assume that $\sum_{k=1}^{\infty} a_k \xi_k$ converges for any $(a_1, a_2, \ldots) \in c_0$.
-Use the Principle of Uniform Boundedness to prove that $\sum_{k=1}^{\infty} |\xi_k| < \infty$.
+Use the Principle of Uniform Boundedness to prove that $\sum_{k=1}^{\infty} \abs{\xi_k} < \infty$.
 :::
 
 ::: {.solution}
@@ -47,12 +47,12 @@ T_n(a)=\sum_{k=1}^n a_k\xi_k.
 $$
 Then $T_n$ is a bounded linear functional and
 $$
-|T_n(a)|
-\le \|a\|_\infty\sum_{k=1}^n|\xi_k|.
+\abs{T_n(a)}
+\le \norm{a}_\infty\sum_{k=1}^n\abs{\xi_k}.
 $$
 Hence
 $$
-\|T_n\|\le\sum_{k=1}^n|\xi_k|.
+\norm{T_n}\le\sum_{k=1}^n\abs{\xi_k}.
 $$
 
 :::
@@ -75,15 +75,15 @@ a_k^{(n)}=
 $$
 with $\operatorname{sgn}(0)=0$. Then
 $$
-\|a^{(n)}\|_\infty\le1
+\norm{a^{(n)}}_\infty\le1
 $$
 and
 $$
-T_n(a^{(n)})=\sum_{k=1}^n|\xi_k|.
+T_n(a^{(n)})=\sum_{k=1}^n\abs{\xi_k}.
 $$
 Therefore
 $$
-\boxed{\|T_n\|=\sum_{k=1}^n|\xi_k|.}
+\boxed{\norm{T_n}=\sum_{k=1}^n\abs{\xi_k}.}
 $$
 
 :::
@@ -102,21 +102,21 @@ T_n(a)=\sum_{k=1}^n a_k\xi_k
 $$
 converges. Hence
 $$
-\sup_n|T_n(a)|<\infty
+\sup_n\abs{T_n(a)}<\infty
 $$
 for every $a\in c_0$.
 
 Since $c_0$ is Banach, the Principle of Uniform Boundedness gives
 $$
-\sup_n\|T_n\|<\infty.
+\sup_n\norm{T_n}<\infty.
 $$
 Using Step 2,
 $$
-\sup_n\sum_{k=1}^n|\xi_k|<\infty.
+\sup_n\sum_{k=1}^n\abs{\xi_k}<\infty.
 $$
 The partial sums are increasing, so they converge to a finite limit. Thus
 $$
-\boxed{\sum_{k=1}^\infty|\xi_k|<\infty.}
+\boxed{\sum_{k=1}^\infty\abs{\xi_k}<\infty.}
 $$
 
 :::

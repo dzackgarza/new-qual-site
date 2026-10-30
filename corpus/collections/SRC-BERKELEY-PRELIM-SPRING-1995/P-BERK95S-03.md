@@ -21,11 +21,11 @@ audit:
 ::: {.problem}
 Let $n$ be a positive integer and $0<\theta<\pi$. Prove that
 $$
-\frac1{2\pi i}\int_{|z|=2}
+\frac1{2\pi i}\int_{\abs{z}=2}
 \frac{z^n}{1-2z\cos\theta+z^2}\,dz
 =\frac{\sin(n\theta)}{\sin\theta},
 $$
-where the circle $|z|=2$ is positively oriented.
+where the circle $\abs{z}=2$ is positively oriented.
 :::
 
 ::: {.solution}

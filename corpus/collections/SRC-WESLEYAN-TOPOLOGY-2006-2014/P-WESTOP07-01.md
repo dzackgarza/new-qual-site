@@ -190,7 +190,7 @@ $$
 H(x,t)
 =
 \left(
-(1-t)+\frac{t}{\|x\|}
+(1-t)+\frac{t}{\norm{x}}
 \right)x.
 $$
 At
@@ -207,7 +207,7 @@ t=1
 $$
 it is
 $$
-x/\|x\|
+x/\norm{x}
 \in
 S^{m-1}.
 $$

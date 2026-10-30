@@ -46,7 +46,7 @@ On any interval on which $a/x>0$,
 $$
 \log\frac{a}{x}
 =
-\log|a|-\log|x|.
+\log\abs{a}-\log\abs{x}.
 $$
 Therefore
 $$
@@ -67,7 +67,7 @@ one has
 $$
 \boxed{f'(x)=-\frac{x}{\sqrt{1-x^2}}}
 $$
-for $|x|<1$.
+for $\abs{x}<1$.
 
 
 ::: pf-proof

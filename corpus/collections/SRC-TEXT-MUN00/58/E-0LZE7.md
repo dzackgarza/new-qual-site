@@ -67,19 +67,19 @@ Homotopy $g \circ f \simeq \operatorname{id}_X$:
 
 ::: pf-step
 
-The composition $(g \circ f)|_{C_1}$ traverses $g(U) = C_1$ followed by the constant path $g(I_0) = c_p$.
+The composition $(g \circ f)\restrict_{C_1}$ traverses $g(U) = C_1$ followed by the constant path $g(I_0) = c_p$.
 
 :::
 
 ::: pf-step
 
-Since concatenation with the constant path is homotopic to the original loop ($C_1 \ast c_p \simeq C_1$), $(g \circ f)|_{C_1} \simeq \operatorname{id}_{C_1}$.
+Since concatenation with the constant path is homotopic to the original loop ($C_1 \ast c_p \simeq C_1$), $(g \circ f)\restrict_{C_1} \simeq \operatorname{id}_{C_1}$.
 
 :::
 
 ::: pf-step
 
-Similarly, $(g \circ f)|_{C_2}$ traverses $g(L) \ast g(I_0) = C_2 \ast c_p \simeq C_2$, so $(g \circ f)|_{C_2} \simeq \operatorname{id}_{C_2}$.
+Similarly, $(g \circ f)\restrict_{C_2}$ traverses $g(L) \ast g(I_0) = C_2 \ast c_p \simeq C_2$, so $(g \circ f)\restrict_{C_2} \simeq \operatorname{id}_{C_2}$.
 
 :::
 

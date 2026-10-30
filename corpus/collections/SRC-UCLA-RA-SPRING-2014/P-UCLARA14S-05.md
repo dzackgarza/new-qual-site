@@ -44,9 +44,9 @@ x^{(m)}
 $$
 For each fixed $k$,
 $$
-|x^{(m)}_k-x^{(n)}_k|
+\abs{x^{(m)}_k-x^{(n)}_k}
 \le
-\|x^{(m)}-x^{(n)}\|_p,
+\norm{x^{(m)}-x^{(n)}}_p,
 $$
 so $(x^{(m)}_k)_m$ is Cauchy in the scalar field. Define
 $$
@@ -58,19 +58,19 @@ $$
 Fix $m$. By Fatou's lemma for counting measure,
 $$
 \sum_{k=1}^\infty
-|x^{(m)}_k-x_k|^p
+\abs{x^{(m)}_k-x_k}^p
 \le
 \liminf_{n\to\infty}
 \sum_{k=1}^\infty
-|x^{(m)}_k-x^{(n)}_k|^p.
+\abs{x^{(m)}_k-x^{(n)}_k}^p.
 $$
 Since $(x^{(m)})$ is Cauchy, for every $\varepsilon>0$ there is $M$ such that for $m,n\ge M$,
 $$
-\|x^{(m)}-x^{(n)}\|_p<\varepsilon.
+\norm{x^{(m)}-x^{(n)}}_p<\varepsilon.
 $$
 Thus for every $m\ge M$,
 $$
-\|x^{(m)}-x\|_p
+\norm{x^{(m)}-x}_p
 \le
 \varepsilon.
 $$
@@ -99,13 +99,13 @@ The set $D$ is countable.
 
 Fix $x\in\ell^p$ and $\varepsilon>0$, with $p=1$ or $2$. Choose $N$ so that
 $$
-\sum_{k>N}|x_k|^p
+\sum_{k>N}\abs{x_k}^p
 <
 \frac{\varepsilon^p}{2}.
 $$
 For each $1\le k\le N$, choose $q_k\in\FF_0$ so close to $x_k$ that
 $$
-\sum_{k=1}^N|x_k-q_k|^p
+\sum_{k=1}^N\abs{x_k-q_k}^p
 <
 \frac{\varepsilon^p}{2}.
 $$
@@ -115,7 +115,7 @@ q=(q_1,\dots,q_N,0,0,\dots)\in D.
 $$
 Then
 $$
-\|x-q\|_p^p
+\norm{x-q}_p^p
 <
 \varepsilon^p.
 $$
@@ -143,7 +143,7 @@ $$
 $$
 Then $\chi_A\in\ell^\infty$. If $A\ne B$, there is $k$ in their symmetric difference, so
 $$
-\|\chi_A-\chi_B\|_\infty=1.
+\norm{\chi_A-\chi_B}_\infty=1.
 $$
 Thus
 $$
@@ -171,7 +171,7 @@ is bounded and surjective. Then there is a constant $C>0$ such that for every $y
 $$
 Tx=y
 \qquad\text{and}\qquad
-\|x\|_2\le C\|y\|_1.
+\norm{x}_2\le C\norm{y}_1.
 $$
 
 
@@ -193,9 +193,9 @@ T^*:(\ell^1)^*=\ell^\infty
 $$
 is bounded below:
 $$
-\|\phi\|_\infty
+\norm{\phi}_\infty
 \le
-C\|T^*\phi\|_2
+C\norm{T^*\phi}_2
 \qquad
 (\phi\in\ell^\infty).
 $$
@@ -203,21 +203,21 @@ $$
 
 ::: pf-proof
 
-Fix $\phi\in\ell^\infty$. For every $y\in\ell^1$ with $\|y\|_1\le1$, step [](#s1-4){.pf-ref} gives $x\in\ell^2$ with
+Fix $\phi\in\ell^\infty$. For every $y\in\ell^1$ with $\norm{y}_1\le1$, step [](#s1-4){.pf-ref} gives $x\in\ell^2$ with
 $$
 Tx=y,
 \qquad
-\|x\|_2\le C.
+\norm{x}_2\le C.
 $$
 Therefore
 $$
-|\phi(y)|
+\abs{\phi(y)}
 =
-|\phi(Tx)|
+\abs{\phi(Tx)}
 =
-|(T^*\phi)(x)|
+\abs{(T^*\phi)(x)}
 \le
-C\|T^*\phi\|_2.
+C\norm{T^*\phi}_2.
 $$
 Taking the supremum over the unit ball of $\ell^1$ gives the claim.
 
@@ -240,9 +240,9 @@ T^*\phi_n\to y
 $$
 in $\ell^2$. By step [](#s1-5){.pf-ref},
 $$
-\|\phi_n-\phi_m\|_\infty
+\norm{\phi_n-\phi_m}_\infty
 \le
-C\|T^*\phi_n-T^*\phi_m\|_2,
+C\norm{T^*\phi_n-T^*\phi_m}_2,
 $$
 so $(\phi_n)$ is Cauchy in the Banach space $\ell^\infty$. Let $\phi_n\to\phi$. Continuity of $T^*$ then gives
 $$

@@ -27,12 +27,12 @@ audit:
 ::: {.problem}
 Let $f_j\in L^2(\RR^n)$ with $f_j\to f$ in $L^2$. Suppose there exists $M<\infty$ such that
 $$
-\|f_j\|_{H^\sigma}\le M
+\norm{f_j}_{H^\sigma}\le M
 \qquad(j\ge1),
 $$
 where
 $$
-\|g\|_{H^\sigma}^2=\int_{\RR^n}(1+|\xi|^2)^\sigma|\widehat g(\xi)|^2\,d\xi.
+\norm{g}_{H^\sigma}^2=\int_{\RR^n}(1+\norm{\xi}^2)^\sigma\abs{\widehat g(\xi)}^2\,d\xi.
 $$
 Must $f\in H^\sigma$? Prove your answer.
 :::
@@ -64,28 +64,28 @@ for almost every $\xi$.
 
 ::: {.pf-step #s2}
 
-The limit belongs to $H^\sigma$ and satisfies $\|f\|_{H^\sigma}\le M$.
+The limit belongs to $H^\sigma$ and satisfies $\norm{f}_{H^\sigma}\le M$.
 
 ::: pf-proof
 
 Set
 $$
-w(\xi)=(1+|\xi|^2)^\sigma
+w(\xi)=(1+\norm{\xi}^2)^\sigma
 $$
 which is positive and measurable for every real $\sigma$. By step [](#s1){.pf-ref} and [[T-LDJNS|Fatou's lemma]],
 $$
 \begin{aligned}
-\|f\|_{H^\sigma}^2
-&=\int w(\xi)|\widehat f(\xi)|^2\,d\xi\\
-&\le\liminf_{k\to\infty}\int w(\xi)|\widehat f_{j_k}(\xi)|^2\,d\xi\\
-&=\liminf_{k\to\infty}\|f_{j_k}\|_{H^\sigma}^2\le M^2.
+\norm{f}_{H^\sigma}^2
+&=\int w(\xi)\abs{\widehat f(\xi)}^2\,d\xi\\
+&\le\liminf_{k\to\infty}\int w(\xi)\abs{\widehat f_{j_k}(\xi)}^2\,d\xi\\
+&=\liminf_{k\to\infty}\norm{f_{j_k}}_{H^\sigma}^2\le M^2.
 \end{aligned}
 $$
 The weighted integral is therefore finite, so
 $$
 f\in H^\sigma(\RR^n),
 \qquad
-\|f\|_{H^\sigma}\le M.
+\norm{f}_{H^\sigma}\le M.
 $$
 
 :::

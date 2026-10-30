@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $V$ be a finite-dimensional vector space over a field $k$, let $T:V\to V$ be linear, and let $W\subseteq V$ be a $T$-invariant subspace.
-Show that the characteristic polynomial of $T|_W$ divides the characteristic polynomial of $T$.
+Show that the characteristic polynomial of $T\restrict_W$ divides the characteristic polynomial of $T$.
 :::
 
 ::: {.solution}
@@ -62,7 +62,7 @@ A&C\\
 0&D
 \end{pmatrix},
 $$
-where $A$ is the matrix of $T|_W$ in the basis
+where $A$ is the matrix of $T\restrict_W$ in the basis
 $v_1,\ldots,v_m$.
 
 ::: pf-proof
@@ -73,7 +73,7 @@ $$
 for $1\leq j\leq m$. Therefore the last $n-m$ coordinates of each of the
 first $m$ columns of $[T]$ vanish, giving the zero lower-left block. The
 upper-left block records exactly the coordinates of the restricted map
-$T|_W$ in the chosen basis of $W$.
+$T\restrict_W$ in the chosen basis of $W$.
 :::
 
 :::
@@ -83,7 +83,7 @@ The characteristic polynomial of $T$ factors as
 $$
 \chi_T(t)
 =
-\chi_{T|_W}(t)\det(tI_{n-m}-D).
+\chi_{T\restrict_W}(t)\det(tI_{n-m}-D).
 $$
 
 ::: pf-proof
@@ -107,19 +107,19 @@ $$
 \det(tI_m-A)\det(tI_{n-m}-D).
 \end{aligned}
 $$
-Since $A$ represents $T|_W$,
+Since $A$ represents $T\restrict_W$,
 $$
-\det(tI_m-A)=\chi_{T|_W}(t).
+\det(tI_m-A)=\chi_{T\restrict_W}(t).
 $$
 :::
 
 :::
 
 ::: {.pf-step #divisibility}
-The polynomial $\chi_{T|_W}$ divides $\chi_T$ in $k[t]$.
+The polynomial $\chi_{T\restrict_W}$ divides $\chi_T$ in $k[t]$.
 
 ::: pf-proof
-Step [](#characteristic-factorization){.pf-ref} expresses $\chi_T$ as $\chi_{T|_W}$ times a polynomial in
+Step [](#characteristic-factorization){.pf-ref} expresses $\chi_T$ as $\chi_{T\restrict_W}$ times a polynomial in
 $k[t]$.
 :::
 

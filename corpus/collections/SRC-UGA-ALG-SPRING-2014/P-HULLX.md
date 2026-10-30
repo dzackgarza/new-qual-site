@@ -65,7 +65,7 @@ No group of order $p^m n$ with $m\geq k(p,n)$ is simple.
 
 ::: pf-proof
 
-If such a group were simple, step [](#s1-2){.pf-ref} would give an embedding $G\hookrightarrow S_r$ with $r\leq n$, hence $p^mn=|G|\leq r!\leq n!$. This contradicts the strict inequality $p^mn>n!$ from step [](#s1-1){.pf-ref}.
+If such a group were simple, step [](#s1-2){.pf-ref} would give an embedding $G\hookrightarrow S_r$ with $r\leq n$, hence $p^mn=\cardinality{G}\leq r!\leq n!$. This contradicts the strict inequality $p^mn>n!$ from step [](#s1-1){.pf-ref}.
 
 :::
 

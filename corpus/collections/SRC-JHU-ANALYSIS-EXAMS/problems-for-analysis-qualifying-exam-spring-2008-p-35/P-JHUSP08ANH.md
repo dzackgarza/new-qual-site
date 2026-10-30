@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $U\subset\CC$ be open and $P\in U$. Let
 $\mathcal F$ be the family of **all** holomorphic maps
-$f:U\to D=\{z:|z|<1\}$ such that $f(P)=0$.
+$f:U\to D=\{z:\abs{z}<1\}$ such that $f(P)=0$.
 
-(a) Prove that $S=\sup_{f\in\mathcal F}|f'(P)|$ is finite.
+(a) Prove that $S=\sup_{f\in\mathcal F}\abs{f'(P)}$ is finite.
 
 (b) Prove that there are $f_n\in\mathcal F$ converging
 uniformly on compact subsets of $U$ to a holomorphic
@@ -64,9 +64,9 @@ The derivative supremum is a finite nonnegative real number.
 
 The zero function belongs to $\mathcal F$. Choose $r>0$
 with $\overline{D(P,r)}\subset U$. Cauchy's derivative
-formula and $|f|\leq1$ on that circle give
+formula and $\abs{f}\leq1$ on that circle give
 $$
-|f'(P)|\leq\frac1r\qquad(f\in\mathcal F)
+\abs{f'(P)}\leq\frac1r\qquad(f\in\mathcal F)
 $$
 [@SS03]. Thus $0\leq S\leq1/r<\infty$. This bound
 also applies to every nonempty subfamily, proving (a).
@@ -84,15 +84,15 @@ A maximizing sequence can have real nonnegative derivatives and vanish off the c
 Let $V$ be the connected component of $U$ containing $P$.
 It is open, and $U\setminus V$ is open as a union of
 the other components. For each $n\geq1$, choose
-$g_n\in\mathcal F$ with $|g_n'(P)|>S-1/n$, using the
+$g_n\in\mathcal F$ with $\abs{g_n'(P)}>S-1/n$, using the
 definition of supremum. Multiply $g_n$ on $V$ by
-$\lambda_n=\overline{g_n'(P)}/|g_n'(P)|$ when its
+$\lambda_n=\overline{g_n'(P)}/\abs{g_n'(P)}$ when its
 derivative is nonzero, and use $\lambda_n=1$ otherwise.
 Define $h_n=\lambda_ng_n$ on $V$ and $h_n=0$ on
 $U\setminus V$. These are holomorphic maps into $D$
 with $h_n(P)=0$, so belong to the full family, and
 $$
-h_n'(P)=|g_n'(P)|\longrightarrow S.
+h_n'(P)=\abs{g_n'(P)}\longrightarrow S.
 $$
 This construction also covers $S=0$.
 
@@ -106,10 +106,10 @@ A subsequence has the required limit on all of $U$.
 
 ::: pf-proof
 
-The restrictions $h_n|_V$ are uniformly bounded by one.
+The restrictions $h_n\restrict_V$ are uniformly bounded by one.
 Montel's theorem gives a subsequence $h_{n_j}$ converging
 uniformly on compact subsets of $V$ to a holomorphic $h$
-with $|h|\leq1$ and $h(P)=0$ [@SS03]. If $|h|=1$ at
+with $\abs{h}\leq1$ and $h(P)=0$ [@SS03]. If $\abs{h}=1$ at
 any point of $V$, the maximum modulus principle would
 make $h$ a constant of modulus one, contradicting $h(P)=0$.
 Therefore $h(V)\subset D$.
@@ -123,8 +123,8 @@ zero. Thus convergence to $f_0$ is uniform on every such $K$.
 Finally, on a fixed small circle centered at $P$ inside $V$,
 Cauchy's derivative formula gives
 $$
-|h_{n_j}'(P)-f_0'(P)|
-\leq\frac1r\sup_{|z-P|=r}|h_{n_j}(z)-f_0(z)|\longrightarrow0.
+\abs{h_{n_j}'(P)-f_0'(P)}
+\leq\frac1r\sup_{\abs{z-P}=r}\abs{h_{n_j}(z)-f_0(z)}\longrightarrow0.
 $$
 Step [](#s2){.pf-ref} now yields $f_0'(P)=S$. Relabeling this
 subsequence as $(f_j)$ proves (b).

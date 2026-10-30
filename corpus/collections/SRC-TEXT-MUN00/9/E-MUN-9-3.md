@@ -40,7 +40,7 @@ For each $n$, the injection
 $$
 f_n:\{1,\ldots,n\}\to A
 $$
-has an image containing exactly $n$ distinct elements. If $A$ were finite, say $|A|=N$, then $f_{N+1}$ would inject an $(N+1)$-element set into an $N$-element set, impossible. Thus $A$ is infinite.
+has an image containing exactly $n$ distinct elements. If $A$ were finite, say $\cardinality{A}=N$, then $f_{N+1}$ would inject an $(N+1)$-element set into an $N$-element set, impossible. Thus $A$ is infinite.
 
 Moreover, an injection $\ZZ_+\to A$ can be defined without the choice axiom because the entire indexed family $\{f_n\}$ is already given.
 

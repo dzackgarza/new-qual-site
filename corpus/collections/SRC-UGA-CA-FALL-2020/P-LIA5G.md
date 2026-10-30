@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LIA5G
 kind: problem
-title: Maximum modulus principle and zeros when $|f|$ is constant on $\partial U$
+title: Maximum modulus principle and zeros when $\abs{f}$ is constant on $\partial U$
 classification:
   areas:
   - complex-analysis
@@ -20,14 +20,14 @@ Suppose that $U$ is a bounded, open and simply connected domain in $\CC$ and tha
 - Prove the maximum modulus principle by showing that if $z_{0} \in U$, then
 
 $$
-\left|f\left(z_{0}\right)\right|<\sup \{|f(z)|: z \in \partial U\} .
+\abs{f\left(z_{0}\right)}<\sup \{\abs{f(z)}: z \in \partial U\} .
 $$
 
-- Show furthermore that if $|f(z)|$ is constant on $\partial U$, then $f(z)$ has a zero in $U$ (i.e., there exists $z_{0} \in U$ for which $f\left(z_{0}\right)=0$ ).
+- Show furthermore that if $\abs{f(z)}$ is constant on $\partial U$, then $f(z)$ has a zero in $U$ (i.e., there exists $z_{0} \in U$ for which $f\left(z_{0}\right)=0$ ).
 :::
 
 ::: {.solution}
-Let $M\definedas \sup_{z\in \bd U}\abs{f(z)}$.
+Let $M\coloneqq \sup_{z\in \bd U}\abs{f(z)}$.
 If $M=0$, then $f$ must be the constant zero function, so assume $M>0$.
 
 Suppose toward a contradiction that there exists a $z_0 \in U$ with $\abs{f(z_0)} = M$.
@@ -39,7 +39,7 @@ Now if $f$ is nonconstant, $\abs{f(D_\eps(z_0))} \containing (M-\eps, M+\eps)$ c
 > See notes for a proof using the mean value theorem.
 
 Suppose toward a contradiction that $f$ has no zeros in $U$.
-Then $g(z) \definedas 1/f(z)$ is holomorphic in $U$.
+Then $g(z) \coloneqq 1/f(z)$ is holomorphic in $U$.
 Now if $\abs{f(z)} = C$ on $\bd U$, we have $\abs{g(z)} = \abs{1\over f(z)} = {1\over C}$ on $\bd U$, so $\max_{z\in U} \abs{f(z)} = C$ and $\min_{\abs{f(z)}} = {1\over C}$.
 Since $\abs{f(z)}$ is constant on the boundary, we must have $\max \abs{f(z)} = \min \abs{f(z)} = C$, so $f$ is constant on $\bd U$.
 By the identity principle, $f$ is constant on $U$, a contradiction.

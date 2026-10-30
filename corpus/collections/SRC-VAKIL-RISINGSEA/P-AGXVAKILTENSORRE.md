@@ -36,7 +36,7 @@ $$
 A\xrightarrow{f} B \xrightarrow{g} C \to 0
 $$
 be an exact sequence in $\mods{R}$, so $\ker g = \im f$ and $g$ is surjective.
-Write $I \definedas \im(f\tensor \id_N) \subseteq B\tensor_R N$ and $Q\definedas (B\tensor_R N)/I$, and write $[x]$ for the class of $x\in B\tensor_R N$ in $Q$.
+Write $I \coloneqq \im(f\tensor \id_N) \subseteq B\tensor_R N$ and $Q\coloneqq (B\tensor_R N)/I$, and write $[x]$ for the class of $x\in B\tensor_R N$ in $Q$.
 Every element of a tensor product is a finite sum of elementary tensors, so two $R$-linear maps out of a tensor product that agree on elementary tensors are equal.
 
 ::: pf
@@ -78,7 +78,7 @@ There is an $R$-linear map $\beta : C\tensor_R N\to Q$ with $\beta(g(b)\tensor n
 ::: pf-proof
 
 ::: {.pf-step #beta-well-defined}
-The rule $\beta_0(c, n) \definedas [b\tensor n]$, for any $b\in B$ with $g(b) = c$, is a well-defined map $C\cross N\to Q$.
+The rule $\beta_0(c, n) \coloneqq [b\tensor n]$, for any $b\in B$ with $g(b) = c$, is a well-defined map $C\cross N\to Q$.
 
 ::: pf-proof
 Such a $b$ exists because $g$ is surjective.

@@ -60,11 +60,11 @@ one has
 $$
 v^TAv
 =
-\lambda\|v\|_2^2.
+\lambda\norm{v}_2^2.
 $$
 Because
 $$
-\|v\|_2^2>0,
+\norm{v}_2^2>0,
 $$
 it follows that
 $$
@@ -308,7 +308,7 @@ in an orthonormal eigenbasis,
 $$
 \langle Tv,v\rangle
 =
-\sum_j\lambda_j|c_j|^2.
+\sum_j\lambda_j\abs{c_j}^2.
 $$
 Every $\lambda_j$ is positive and at least one $c_j$ is nonzero.
 Therefore

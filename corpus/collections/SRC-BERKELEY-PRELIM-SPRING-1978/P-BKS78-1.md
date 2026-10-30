@@ -46,19 +46,19 @@ For every $k\geq0$, the convergence $f_n\to0$ is uniform on every bounded subset
 ::: pf-proof
 Let $S\subseteq\RR$ be bounded. Choose $M\geq1$ such that
 $$
-|x|\leq M
+\abs{x}\leq M
 $$
 for every $x\in S$. Then
 $$
-|f_n(x)|
+\abs{f_n(x)}
 =
-\frac{|x|^k}{x^2+n}
+\frac{\abs{x}^k}{x^2+n}
 \leq
 \frac{M^k}{n}
 $$
 for every $x\in S$. Therefore
 $$
-\sup_{x\in S}|f_n(x)|
+\sup_{x\in S}\abs{f_n(x)}
 \leq
 \frac{M^k}{n}
 \longrightarrow0.
@@ -81,7 +81,7 @@ $$
 $$
 for every $x\in\RR$. Hence
 $$
-\sup_{x\in\RR}|f_n(x)|
+\sup_{x\in\RR}\abs{f_n(x)}
 =
 \frac1n
 \longrightarrow0.
@@ -93,14 +93,14 @@ $$
 ::: {.pf-step #case-one}
 For $k=1$,
 $$
-\sup_{x\in\RR}|f_n(x)|
+\sup_{x\in\RR}\abs{f_n(x)}
 =
 \frac1{2\sqrt n},
 $$
 so the convergence is uniform on $\RR$.
 
 ::: pf-proof
-Because the expression is even after taking absolute values, set $t=|x|\geq0$ and consider
+Because the expression is even after taking absolute values, set $t=\abs{x}\geq0$ and consider
 $$
 \phi_n(t)=\frac{t}{t^2+n}.
 $$
@@ -133,11 +133,11 @@ f_n(x)=\frac{x^2}{x^2+n}.
 $$
 For every fixed $n$,
 $$
-\lim_{|x|\to\infty}f_n(x)=1.
+\lim_{\abs{x}\to\infty}f_n(x)=1.
 $$
 Hence
 $$
-\sup_{x\in\RR}|f_n(x)|=1
+\sup_{x\in\RR}\abs{f_n(x)}=1
 $$
 for every $n$, so the suprema do not tend to $0$.
 :::
@@ -150,19 +150,19 @@ For every $k>2$, the convergence is not uniform on $\RR$.
 ::: pf-proof
 For fixed $n$,
 $$
-|f_n(x)|
+\abs{f_n(x)}
 =
-\frac{|x|^k}{x^2+n}
+\frac{\abs{x}^k}{x^2+n}
 \sim
-|x|^{k-2}
+\abs{x}^{k-2}
 $$
-as $|x|\to\infty$. Since $k-2>0$,
+as $\abs{x}\to\infty$. Since $k-2>0$,
 $$
-|f_n(x)|\longrightarrow\infty.
+\abs{f_n(x)}\longrightarrow\infty.
 $$
 Thus $f_n$ is unbounded on $\RR$ for every $n$, and in particular
 $$
-\sup_{x\in\RR}|f_n(x)|\neq\longrightarrow0.
+\sup_{x\in\RR}\abs{f_n(x)}\neq\longrightarrow0.
 $$
 :::
 

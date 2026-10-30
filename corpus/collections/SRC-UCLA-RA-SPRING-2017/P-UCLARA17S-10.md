@@ -116,7 +116,7 @@ The integral of $du$ around a closed curve is $0$, so the integral of $g_u\,dz$ 
 
 For each $j$, the function
 $$
-\ell_j(z)\coloneqq\log|z-a_j|
+\ell_j(z)\coloneqq\log\abs{z-a_j}
 $$
 belongs to $H(\Omega)$ and satisfies
 $$
@@ -126,7 +126,7 @@ $$
 
 ::: pf-proof
 
-The function $\log|z-a_j|$ is harmonic away from $a_j$. A direct differentiation gives
+The function $\log\abs{z-a_j}$ is harmonic away from $a_j$. A direct differentiation gives
 $$
 (\ell_j)_x-i(\ell_j)_y
 =\frac1{z-a_j}.
@@ -225,7 +225,7 @@ $$
 $$
 with basis
 $$
-\boxed{[\log|z-a_1|],\ldots,[\log|z-a_n|]}.
+\boxed{[\log\abs{z-a_1}],\ldots,[\log\abs{z-a_n}]}.
 $$
 
 

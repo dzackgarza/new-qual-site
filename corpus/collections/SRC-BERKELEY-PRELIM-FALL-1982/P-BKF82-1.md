@@ -140,9 +140,9 @@ Express the global-existence condition directly in terms of $f$.
 Since $f$ has constant sign, the condition in step [](#s3){.pf-ref} is equivalent to
 $$
 \boxed{
-\int_0^{\infty}\frac{ds}{|f(s)|}=\infty
+\int_0^{\infty}\frac{ds}{\abs{f(s)}}=\infty
 \quad\text{and}\quad
-\int_{-\infty}^{0}\frac{ds}{|f(s)|}=\infty.}
+\int_{-\infty}^{0}\frac{ds}{\abs{f(s)}}=\infty.}
 $$
 Indeed, changing the base point from $0$ to any finite $c$ alters either
 improper integral only by a finite constant, so this criterion is independent

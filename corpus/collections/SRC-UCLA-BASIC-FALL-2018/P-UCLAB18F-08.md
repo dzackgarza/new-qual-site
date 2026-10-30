@@ -24,7 +24,7 @@ G=(X-zI)^{-1}.
 $$
 Show that for each $i$,
 $$
-\sum_{j=1}^n|G_{ij}|^2=\frac{\operatorname{Im}G_{ii}}{\operatorname{Im}z}.
+\sum_{j=1}^n\abs{G_{ij}}^2=\frac{\operatorname{Im}G_{ii}}{\operatorname{Im}z}.
 $$
 :::
 
@@ -197,7 +197,7 @@ One has
 $$
 (GG^*)_{ii}
 =
-\sum_{j=1}^n|G_{ij}|^2.
+\sum_{j=1}^n\abs{G_{ij}}^2.
 $$
 
 
@@ -221,7 +221,7 @@ $$
 \sum_{j=1}^n
 G_{ij}\overline{G_{ij}}
 =
-\sum_{j=1}^n|G_{ij}|^2.
+\sum_{j=1}^n\abs{G_{ij}}^2.
 $$
 
 :::
@@ -233,7 +233,7 @@ $$
 Therefore, for every $i$,
 $$
 \boxed{
-\sum_{j=1}^n|G_{ij}|^2
+\sum_{j=1}^n\abs{G_{ij}}^2
 =
 \frac{\operatorname{Im}G_{ii}}
 {\operatorname{Im}z}

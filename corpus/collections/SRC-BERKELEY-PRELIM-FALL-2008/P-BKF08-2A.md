@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is analytic on the entire complex plane and $f(z)/z$ is bounded in the region $|z|>1$.
+Suppose $f$ is analytic on the entire complex plane and $f(z)/z$ is bounded in the region $\abs{z}>1$.
 Prove that
 $$
 f(z)=az+b
@@ -68,14 +68,14 @@ The entire extension of $g$ is bounded on the region $\abs{z}>1$.
 
 By hypothesis, there is $M>0$ such that
 $$
-\left|\frac{f(z)}{z}\right|\le M
+\abs{\frac{f(z)}{z}}\le M
 $$
 whenever $\abs{z}>1$.
 Hence on that region,
 $$
 \abs{g(z)}
 \le
-\left|\frac{f(z)}{z}\right|
+\abs{\frac{f(z)}{z}}
 +\frac{\abs{f(0)}}{\abs{z}}
 \le M+\abs{f(0)}.
 $$

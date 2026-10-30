@@ -56,7 +56,7 @@ $$
 The theorem identifies a sharp and useful sufficient condition:
 if
 $$
-|f_n|
+\abs{f_n}
 \le
 g
 $$
@@ -105,7 +105,7 @@ $$
 $$
 is bounded, then the theorem concludes that
 $$
-\sup_{T\in\mathcal F}\|T\|
+\sup_{T\in\mathcal F}\norm{T}
 <
 \infty.
 $$

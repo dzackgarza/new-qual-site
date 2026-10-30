@@ -60,7 +60,7 @@ Each factor $[0,1]$ is regular. A product of regular Hausdorff spaces is regular
 
 Thus Urysohn's theorem gives a metric inducing the product topology. One explicit such metric is
 $$
-d(x,y)=\sum_{n=1}^{\infty}2^{-n}|x_n-y_n|.
+d(x,y)=\sum_{n=1}^{\infty}2^{-n}\abs{x_n-y_n}.
 $$
 
 :::
@@ -90,7 +90,7 @@ x\in C_x\subseteq\{x\}.
 $$
 Thus $C_x=\{x\}$. Hence every singleton belongs to every basis, so
 $$
-|\mathcal C|\ge |X|.
+\cardinality{\mathcal C}\ge \cardinality{X}.
 $$
 Because $X$ is uncountable, no basis can be countable. Therefore $X$ is not second countable.
 

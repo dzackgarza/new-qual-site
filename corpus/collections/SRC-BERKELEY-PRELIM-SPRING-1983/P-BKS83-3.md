@@ -28,14 +28,14 @@ audit:
 ::: {.problem}
 A fractional linear transformation maps the annulus
 $$
-r<|z|<1,
+r<\abs{z}<1,
 \qquad r>0,
 $$
 onto the domain bounded by the circles
 $$
-\left|z-\frac14\right|=\frac14
+\abs{z-\frac14}=\frac14
 \qquad\text{and}\qquad
-|z|=1.
+\abs{z}=1.
 $$
 Find $r$.
 :::
@@ -46,7 +46,7 @@ write
 $$
 \mathcal I
 \coloneqq
-\frac{\left|d^2-R_1^2-R_2^2\right|}{2R_1R_2}
+\frac{\abs{d^2-R_1^2-R_2^2}}{2R_1R_2}
 $$
 for their absolute inversive distance.
 
@@ -69,7 +69,7 @@ distances are equal.
 ::: {.pf-step #source-inversive-distance}
 The two boundary circles of the source annulus
 $$
-r<|z|<1
+r<\abs{z}<1
 $$
 have inversive distance
 $$
@@ -84,7 +84,7 @@ radii are $1$ and $r$. Hence
 $$
 \mathcal I_{\mathrm{src}}
 =
-\frac{|0-1-r^2|}{2r}
+\frac{\abs{0-1-r^2}}{2r}
 =
 \frac{1+r^2}{2r}.
 $$
@@ -102,9 +102,9 @@ $$
 ::: pf-proof
 The circles
 $$
-|z|=1
+\abs{z}=1
 \qquad\text{and}\qquad
-\left|z-\frac14\right|=\frac14
+\abs{z-\frac14}=\frac14
 $$
 have center distance $d=1/4$ and radii $1$ and $1/4$. Therefore
 $$
@@ -112,9 +112,9 @@ $$
 \mathcal I_{\mathrm{tgt}}
 &=
 \frac{
-\left|
+\abs{
 \frac1{16}-1-\frac1{16}
-\right|
+}
 }{
 2\cdot1\cdot\frac14
 }\\
@@ -165,7 +165,7 @@ The roots of the quadratic in step [](#quadratic-for-r){.pf-ref} are
 $$
 r=2\pm\sqrt3.
 $$
-For the annulus $r<|z|<1$ to be nonempty one must have
+For the annulus $r<\abs{z}<1$ to be nonempty one must have
 $$
 0<r<1.
 $$

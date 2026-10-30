@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z ) = \sum _ { n = - \infty } ^ { \infty } c _ { n } z ^ { n }$ be analytic and one-to-one in $r _ { 0 } < | z | < R _ { 0 }$ . For $r _ { 0 } < r < R < R _ { 0 }$ , let $D ( r , R )$ be the annulus $r < | z | < R$ . Show that the area of $f ( D ( r , R ) )$ is finite and is given by
+Let $f ( z ) = \sum _ { n = - \infty } ^ { \infty } c _ { n } z ^ { n }$ be analytic and one-to-one in $r _ { 0 } < \abs{ z } < R _ { 0 }$ . For $r _ { 0 } < r < R < R _ { 0 }$ , let $D ( r , R )$ be the annulus $r < \abs{ z } < R$ . Show that the area of $f ( D ( r , R ) )$ is finite and is given by
 
 $$
-S = \pi \sum _ { n = - \infty } ^ { \infty } n | c _ { n } | ^ { 2 } ( R ^ { 2 n } - r ^ { 2 n } ) .
+S = \pi \sum _ { n = - \infty } ^ { \infty } n \abs{ c _ { n } } ^ { 2 } ( R ^ { 2 n } - r ^ { 2 n } ) .
 $$
 :::
 
@@ -107,10 +107,10 @@ converge uniformly on the compact annulus $r\le\abs{z}\le R$. For finite Laurent
 $$
 \frac1{2\pi}
 \int_0^{2\pi}
-\left|
+\abs{
 \sum_{n=-N}^{N}
 n c_n\rho^{n-1}e^{i(n-1)\theta}
-\right|^2d\theta
+}^2d\theta
 =
 \sum_{n=-N}^{N}
 n^2\abs{c_n}^2\rho^{2n-2}.

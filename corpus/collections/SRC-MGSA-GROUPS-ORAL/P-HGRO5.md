@@ -49,7 +49,7 @@ The group $G$ has order $27$.
 ::: pf-proof
 
 The entries $a,b,c$ can be chosen independently from the three-element field
-$\mathbf F_3$, so $|G|=3^3=27$.
+$\mathbf F_3$, so $\cardinality{G}=3^3=27$.
 
 :::
 

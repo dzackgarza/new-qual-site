@@ -106,7 +106,7 @@ x^{p^m}-x.
 $$
 Hence
 $$
-|F|=p^m.
+\cardinality{F}=p^m.
 $$
 There is, up to isomorphism, a unique field with $p^m$ elements, so
 $$

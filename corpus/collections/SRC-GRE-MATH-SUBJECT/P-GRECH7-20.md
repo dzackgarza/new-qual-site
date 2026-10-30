@@ -38,7 +38,7 @@ The modulus of $-e^3$ is $e^3$, and its principal argument is $\pi$.
 
 The complex number $-e^3$ lies on the negative real axis at distance $e^3$ from the origin. Hence
 $$
-|-e^3|=e^3.
+\abs{-e^3}=e^3.
 $$
 With the principal argument chosen in $(-\pi,\pi]$, the argument of a negative real number is $\pi$.
 
@@ -59,7 +59,7 @@ so the answer is (C).
 
 By definition of the principal logarithm,
 $$
-\operatorname{Log}z=\log|z|+i\operatorname{Arg}z.
+\operatorname{Log}z=\log\abs{z}+i\operatorname{Arg}z.
 $$
 Using step [](#s1-1){.pf-ref},
 $$

@@ -93,7 +93,7 @@ the formulas of step [](#s1-1){.pf-ref}.
 
 Therefore
 $$
-\left.\frac{\partial f}{\partial t}\right|_{(1,-1)}=\boxed{8},
+\evaluated{\frac{\partial f}{\partial t}}_{(1,-1)}=\boxed{8},
 $$
 so the answer is (E).
 

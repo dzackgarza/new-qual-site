@@ -69,7 +69,7 @@ Adjunction for a nonsingular plane curve of degree $d$ gives
 $$
 \omega_X
 \cong
-\bigl(\omega_{\PP^2}\tensor\OO_{\PP^2}(d)\bigr)|_X.
+\bigl(\omega_{\PP^2}\tensor\OO_{\PP^2}(d)\bigr)\restrict_X.
 $$
 Here
 $$
@@ -199,7 +199,7 @@ $D$.
 
 Every effective divisor $D$ of degree $2$ satisfies
 $$
-\boxed{\dim|D|=0}.
+\boxed{\dim\linearsystem{D}=0}.
 $$
 
 ::: pf-proof
@@ -212,7 +212,7 @@ By step [](#s4){.pf-ref}, the same is true of $\ell(K-D)$, so there exists at le
 effective canonical divisor containing $D$.
 
 If $\ell(K-D)\geq2$, two linearly independent sections of
-$\mcl(K-D)$ would give two distinct effective divisors in $|K-D|$, and after
+$\mcl(K-D)$ would give two distinct effective divisors in $\linearsystem{K-D}$, and after
 adding $D$ they would give two distinct effective canonical divisors containing
 $D$.  This contradicts step [](#s5){.pf-ref}.
 Hence
@@ -221,7 +221,7 @@ $$
 $$
 Step [](#s4){.pf-ref} gives $\ell(D)=1$, and therefore
 $$
-\dim|D|=\ell(D)-1=0.
+\dim\linearsystem{D}=\ell(D)-1=0.
 $$
 This proves part (b).
 
@@ -244,7 +244,7 @@ of degree $2$.  Pulling back the degree-$1$ complete linear system on
 $\PP^1$ would give a base-point-free linear system of degree $2$ and dimension
 $1$ on $X$.  In particular, some effective degree-$2$ divisor $D$ would satisfy
 $$
-\dim|D|\geq1,
+\dim\linearsystem{D}\geq1,
 $$
 contradicting step [](#s6){.pf-ref}.  Thus $X$ is not hyperelliptic, proving part (c).
 

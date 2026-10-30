@@ -167,7 +167,7 @@ for $n\ge2$.
 
 One has
 $$
-\left|\frac{\psi}{\phi}\right|<1.
+\abs{\frac{\psi}{\phi}}<1.
 $$
 
 
@@ -179,7 +179,7 @@ $$
 $$
 and
 $$
-|\psi|
+\abs{\psi}
 =
 \frac{\sqrt5-1}{2}
 <
@@ -187,7 +187,7 @@ $$
 $$
 Therefore
 $$
-\left|\frac{\psi}{\phi}\right|
+\abs{\frac{\psi}{\phi}}
 <
 1.
 $$

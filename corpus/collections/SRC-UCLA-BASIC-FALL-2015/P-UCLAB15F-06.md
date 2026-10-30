@@ -24,7 +24,7 @@ Find a metric $\rho$ on $X$ such that:
 
 2. for every sequence $\{x_n\}\subset X$ and every $x\in X$,
 $$
-\lim_{n\to\infty}|x_n-x|=0
+\lim_{n\to\infty}\abs{x_n-x}=0
 \quad\Longleftrightarrow\quad
 x_n\to x\text{ in }(X,\rho).
 $$
@@ -39,9 +39,9 @@ $$
 \boxed{
 \rho(x,y)
 =
-|x-y|
+\abs{x-y}
 +
-\left|\frac1x-\frac1y\right|
+\abs{\frac1x-\frac1y}
 },
 \qquad
 x,y\in X.
@@ -64,7 +64,7 @@ $$
 $$
 then in particular
 $$
-|x-y|=0,
+\abs{x-y}=0,
 $$
 so $x=y$.
 Conversely,
@@ -74,17 +74,17 @@ $$
 
 For the triangle inequality, if $x,y,z\in X$, then
 $$
-|x-z|
+\abs{x-z}
 \le
-|x-y|+|y-z|
+\abs{x-y}+\abs{y-z}
 $$
 and
 $$
-\left|\frac1x-\frac1z\right|
+\abs{\frac1x-\frac1z}
 \le
-\left|\frac1x-\frac1y\right|
+\abs{\frac1x-\frac1y}
 +
-\left|\frac1y-\frac1z\right|.
+\abs{\frac1y-\frac1z}.
 $$
 Adding the two inequalities gives
 $$
@@ -106,7 +106,7 @@ x_n\to x
 $$
 in the metric $\rho$, then
 $$
-|x_n-x|\to0.
+\abs{x_n-x}\to0.
 $$
 
 
@@ -114,7 +114,7 @@ $$
 
 By definition,
 $$
-|x_n-x|
+\abs{x_n-x}
 \le
 \rho(x_n,x).
 $$
@@ -128,11 +128,11 @@ Hence convergence in $\rho$ implies ordinary convergence.
 
 If
 $$
-|x_n-x|\to0
+\abs{x_n-x}\to0
 $$
 for some $x\in X$, then
 $$
-\left|\frac1{x_n}-\frac1x\right|\to0.
+\abs{\frac1{x_n}-\frac1x}\to0.
 $$
 
 
@@ -140,25 +140,25 @@ $$
 
 Since $x\ne0$, choose $N$ such that for $n\ge N$,
 $$
-|x_n-x|<\frac{|x|}{2}.
+\abs{x_n-x}<\frac{\abs{x}}{2}.
 $$
 Then
 $$
-|x_n|
+\abs{x_n}
 \ge
-|x|-|x_n-x|
+\abs{x}-\abs{x_n-x}
 >
-\frac{|x|}{2}.
+\frac{\abs{x}}{2}.
 $$
 Therefore, for $n\ge N$,
 $$
-\left|
+\abs{
 \frac1{x_n}-\frac1x
-\right|
+}
 =
-\frac{|x_n-x|}{|x_nx|}
+\frac{\abs{x_n-x}}{\abs{x_nx}}
 \le
-\frac{2}{|x|^2}|x_n-x|.
+\frac{2}{\abs{x}^2}\abs{x_n-x}.
 $$
 The right side tends to $0$.
 
@@ -171,7 +171,7 @@ The right side tends to $0$.
 Ordinary convergence to a point of $X$ is equivalent to convergence in $\rho$:
 $$
 \boxed{
-|x_n-x|\to0
+\abs{x_n-x}\to0
 \iff
 \rho(x_n,x)\to0
 }.
@@ -184,11 +184,11 @@ The forward implication follows from step [](#s1-3){.pf-ref}:
 $$
 \rho(x_n,x)
 =
-|x_n-x|
+\abs{x_n-x}
 +
-\left|
+\abs{
 \frac1{x_n}-\frac1x
-\right|
+}
 \longrightarrow0.
 $$
 The reverse implication is step [](#s1-2){.pf-ref}.
@@ -213,15 +213,15 @@ are Cauchy in $\RR$.
 
 For all $m,n$,
 $$
-|x_n-x_m|
+\abs{x_n-x_m}
 \le
 \rho(x_n,x_m)
 $$
 and
 $$
-\left|
+\abs{
 \frac1{x_n}-\frac1{x_m}
-\right|
+}
 \le
 \rho(x_n,x_m).
 $$
@@ -313,24 +313,24 @@ The sequence $(x_n)$ converges to $a$ in the metric $\rho$.
 
 By steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref},
 $$
-|x_n-a|\to0
+\abs{x_n-a}\to0
 $$
 and
 $$
-\left|
+\abs{
 \frac1{x_n}-\frac1a
-\right|
+}
 \to0.
 $$
 Therefore
 $$
 \rho(x_n,a)
 =
-|x_n-a|
+\abs{x_n-a}
 +
-\left|
+\abs{
 \frac1{x_n}-\frac1a
-\right|
+}
 \longrightarrow0.
 $$
 

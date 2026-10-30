@@ -115,7 +115,7 @@ Via step [](#s4){.pf-ref}, suppose $\ZZ[1/2]$ were a free $\ZZ$-module with basi
 $$
 \QQ\otimes_{\ZZ}\ZZ[1/2]\cong\QQ,
 $$
-while a free module on $B$ would tensor to the $\QQ$-vector space with basis $B$. Hence $|B|=1$, so $\ZZ[1/2]$ would be free of rank one, isomorphic to $\ZZ$.
+while a free module on $B$ would tensor to the $\QQ$-vector space with basis $B$. Hence $\cardinality{B}=1$, so $\ZZ[1/2]$ would be free of rank one, isomorphic to $\ZZ$.
 
 But multiplication by $2$ is surjective on $\ZZ[1/2]$, since $a/2^k=2(a/2^{k+1})$, whereas multiplication by $2$ is not surjective on any nonzero rank-one free $\ZZ$-module. This contradiction shows $R$ is not free over $\ZZ$.
 

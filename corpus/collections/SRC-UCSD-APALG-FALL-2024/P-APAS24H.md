@@ -99,7 +99,7 @@ Using steps [](#character-formula){.pf-ref}, [](#sum-of-fixed-points){.pf-ref} a
 $$
 \begin{aligned}
 \langle\chi_V,\chi_V\rangle
-&=\frac1{n!}\sum_{\sigma\in S_n}|\operatorname{fix}(\sigma)-1|^2\\
+&=\frac1{n!}\sum_{\sigma\in S_n}\abs{\operatorname{fix}(\sigma)-1}^2\\
 &=\frac1{n!}\left(
 \sum_\sigma\operatorname{fix}(\sigma)^2
 -2\sum_\sigma\operatorname{fix}(\sigma)

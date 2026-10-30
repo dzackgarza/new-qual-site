@@ -32,7 +32,7 @@ $$
 \coloneqq
 \left\{
 \varphi\in C([0,b]):
-\|\varphi-1\|_\infty\leq\frac12
+\norm{\varphi-1}_\infty\leq\frac12
 \right\}.
 $$
 
@@ -86,7 +86,7 @@ $$
 $$
 Hence
 $$
-\|T\varphi-1\|_\infty<\frac12,
+\norm{T\varphi-1}_\infty<\frac12,
 $$
 so $T\varphi\in\mathcal X$.
 :::
@@ -99,23 +99,23 @@ The map $T:\mathcal X\to\mathcal X$ is a contraction with contraction constant $
 ::: pf-proof
 If $\varphi,\psi\in\mathcal X$, then
 $$
-|\varphi(s)|,|\psi(s)|\leq\frac32.
+\abs{\varphi(s)},\abs{\psi(s)}\leq\frac32.
 $$
 Thus
 $$
 \begin{aligned}
-|(T\varphi)(t)-(T\psi)(t)|
+\abs{(T\varphi)(t)-(T\psi)(t)}
 &\leq
 \int_0^t
-|\varphi(s)^2-\psi(s)^2|\,ds\\
+\abs{\varphi(s)^2-\psi(s)^2}\,ds\\
 &\leq
 \int_0^t
-|\varphi(s)+\psi(s)|
-|\varphi(s)-\psi(s)|\,ds\\
+\abs{\varphi(s)+\psi(s)}
+\abs{\varphi(s)-\psi(s)}\,ds\\
 &\leq
-3t\,\|\varphi-\psi\|_\infty\\
+3t\,\norm{\varphi-\psi}_\infty\\
 &\leq
-\frac35\|\varphi-\psi\|_\infty.
+\frac35\norm{\varphi-\psi}_\infty.
 \end{aligned}
 $$
 Taking the supremum over $t\in[0,b]$ gives the claim.

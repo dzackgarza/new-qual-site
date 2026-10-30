@@ -122,7 +122,7 @@ Then $B$ is countably infinite.
 ::: pf-proof
 
 Each $B_n$ is finite, so their countable union is countable.
-The genus of $M_n$ tends to infinity, and each additional handle contributes two new independent graph loops, so the cardinalities $|B_n|$ are unbounded.
+The genus of $M_n$ tends to infinity, and each additional handle contributes two new independent graph loops, so the cardinalities $\cardinality{B_n}$ are unbounded.
 Thus $B$ is infinite.
 
 :::

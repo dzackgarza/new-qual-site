@@ -40,8 +40,8 @@ $$
 :::
 
 ::: {.solution}
-For sheaves of modules $\mathcal A,\mathcal B$ on $X$, the sections of $\sheafhom_{\OO_X}(\mathcal A,\mathcal B)$ on an open set $U$ are the $\OO_U$-linear sheaf morphisms $\mathcal A|_U\to\mathcal B|_U$.
-Here $\OO_U=\OO_X|_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har10a, Chapter II, §5].
+For sheaves of modules $\mathcal A,\mathcal B$ on $X$, the sections of $\sheafhom_{\OO_X}(\mathcal A,\mathcal B)$ on an open set $U$ are the $\OO_U$-linear sheaf morphisms $\mathcal A\restrict_U\to\mathcal B\restrict_U$.
+Here $\OO_U=\OO_X\restrict_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har10a, Chapter II, §5].
 Tensor products in parts (a)-(c) are over $\OO_X$.
 
 ::: pf
@@ -55,16 +55,16 @@ For part (a), the evaluation morphism $\delta:\mce\dualof{\to(\dualof{\mce})}$ i
 For an open set $U$ and $e\in\mce(U)$, define $\delta_U(e)$ by the compatible maps
 $$
 \dualof{\mce}(V)\longrightarrow\OO_X(V),
-\qquad\lambda\longmapsto\lambda_V(e|_V),
+\qquad\lambda\longmapsto\lambda_V(e\restrict_V),
 \qquad V\subseteq U.
 $$
 These maps are linear and compatible with restriction, so they define the morphism $\delta$.
 
-On a trivializing open set $U$, choose a frame $e_1,\ldots,e_r$ for $\mce|_U$ and its coordinate functionals $\dualof{e_1},\ldots,\dualof{e_r}$.
-These functionals form a frame for $\dualof{\mce}|_U$: a sheaf morphism $\mce|_V\to\OO_V$ is determined uniquely by its values on the restricted $e_j$ for every $V\subseteq U$.
+On a trivializing open set $U$, choose a frame $e_1,\ldots,e_r$ for $\mce\restrict_U$ and its coordinate functionals $\dualof{e_1},\ldots,\dualof{e_r}$.
+These functionals form a frame for $\dualof{\mce}\restrict_U$: a sheaf morphism $\mce\restrict_V\to\OO_V$ is determined uniquely by its values on the restricted $e_j$ for every $V\subseteq U$.
 For $h\dualof{\in(\dualof{\mce})}(V)$, the formula
 $$
-h\longmapsto\sum_{j=1}^r h_V(\dualof{e_j}|_V)e_j|_V
+h\longmapsto\sum_{j=1}^r h_V(\dualof{e_j}\restrict_V)e_j\restrict_V
 $$
 is inverse to $\delta_V$.
 Thus $\delta$ is locally, and hence globally, an isomorphism.
@@ -82,15 +82,15 @@ For part (b), the morphism $\beta:\dualof{\mce}\otimes\mcf\to\sheafhom_{\OO_X}(\
 
 For $\lambda\in\dualof{\mce}(U)$ and $s\in\mcf(U)$, define $\beta_U(\lambda\otimes s)$ on each $V\subseteq U$ by
 $$
-e\longmapsto\lambda_V(e)s|_V,
+e\longmapsto\lambda_V(e)s\restrict_V,
 \qquad e\in\mce(V).
 $$
 This construction is balanced over $\OO_X(U)$ and compatible with restrictions.
 It therefore induces $\beta$ by the universal property of the sheaf tensor product.
 
-On an open set $U$ with frame $e_1,\ldots,e_r$ and dual frame $\dualof{e_1},\ldots,\dualof{e_r}$, the inverse sends a sheaf morphism $\theta:\mce|_V\to\mcf|_V$, for $V\subseteq U$, to
+On an open set $U$ with frame $e_1,\ldots,e_r$ and dual frame $\dualof{e_1},\ldots,\dualof{e_r}$, the inverse sends a sheaf morphism $\theta:\mce\restrict_V\to\mcf\restrict_V$, for $V\subseteq U$, to
 $$
-\sum_{j=1}^r \dualof{e_j}|_V\otimes\theta_V(e_j|_V).
+\sum_{j=1}^r \dualof{e_j}\restrict_V\otimes\theta_V(e_j\restrict_V).
 $$
 Evaluation on the frame proves that applying $\beta$ to this section recovers $\theta$.
 Conversely, the identity $\lambda=\sum_j\lambda(e_j)\dualof{e_j}$ proves that the reverse composite fixes every local elementary tensor, and these tensors locally generate the tensor product sheaf.
@@ -112,7 +112,7 @@ $$
 C(\varphi):\mcf\longrightarrow\sheafhom_{\OO_X}(\mce,\mcg)
 $$
 as follows.
-For $s\in\mcf(U)$, its image is the sheaf morphism whose component on $V\subseteq U$ sends $e\in\mce(V)$ to $\varphi_V(e\otimes s|_V)$.
+For $s\in\mcf(U)$, its image is the sheaf morphism whose component on $V\subseteq U$ sends $e\in\mce(V)$ to $\varphi_V(e\otimes s\restrict_V)$.
 Linearity and compatibility with restrictions follow from the corresponding properties of $\varphi$.
 
 Conversely, for an $\OO_X$-linear morphism $\psi:\mcf\to\sheafhom_{\OO_X}(\mce,\mcg)$, the maps
@@ -151,11 +151,11 @@ For an open set $U\subseteq Y$, a section $s\in\mcf(f^{-1}U)$, and a section $e\
 The rule $s\otimes e\mapsto s\otimes f^*e$ is balanced over $\OO_Y(U)$ and compatible with restriction.
 Sheafification therefore gives $\pi$.
 
-Take an open cover of $Y$ by sets $U$ on which $\mce|_U\cong\OO_U^{\oplus r}$.
-Then $(f^*\mce)|_{f^{-1}U}\cong\OO_{f^{-1}U}^{\oplus r}$.
+Take an open cover of $Y$ by sets $U$ on which $\mce\restrict_U\cong\OO_U^{\oplus r}$.
+Then $(f^*\mce)\restrict_{f^{-1}U}\cong\OO_{f^{-1}U}^{\oplus r}$.
 Tensoring with either finite free sheaf takes the corresponding finite direct sum, and direct image commutes with finite direct sums because its sections are computed on inverse images of open sets.
-Thus both the source and target of $\pi|_U$ identify with $(f_*\mcf|_U)^{\oplus r}$.
-On these identifications $\pi|_U$ is the identity, since each frame section pulls back to the corresponding frame section.
+Thus both the source and target of $\pi\restrict_U$ identify with $(f_*\mcf\restrict_U)^{\oplus r}$.
+On these identifications $\pi\restrict_U$ is the identity, since each frame section pulls back to the corresponding frame section.
 It follows that $\pi$ is an isomorphism on $Y$, and its inverse gives the displayed direction in part (d). The defining formula commutes with morphisms of $\mcf$ and $\mce$, so the isomorphism is natural.
 
 :::

@@ -50,7 +50,7 @@ The finitely generated elementary abelian $2$-group $G$ is a finite-dimensional 
 
 Then
 $$
-|G|=2^s.
+\cardinality{G}=2^s.
 $$
 
 
@@ -188,13 +188,13 @@ by step [](#s1-6){.pf-ref}.
 
 Therefore
 $$
-\boxed{[E:F]=|G|.}
+\boxed{[E:F]=\cardinality{G}.}
 $$
 
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} gives $|G|=2^s$, while step [](#s1-7){.pf-ref} gives $[E:F]=2^s$.
+Step [](#s1-2){.pf-ref} gives $\cardinality{G}=2^s$, while step [](#s1-7){.pf-ref} gives $[E:F]=2^s$.
 
 :::
 

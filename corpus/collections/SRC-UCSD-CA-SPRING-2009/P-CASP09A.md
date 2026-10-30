@@ -18,27 +18,27 @@ audit:
 
 ::: {.problem}
 Suppose $f(z) = \sum_{n=0}^{N} a_n z^n$ where $a_n \in \CC$ and $N > 0$.
-Let $M$ be the maximum of $|f(z)|$ on the unit circle about the origin.
+Let $M$ be the maximum of $\abs{f(z)}$ on the unit circle about the origin.
 
-(a) Show that $|a_0| \leq M$.
+(a) Show that $\abs{a_0} \leq M$.
 
-(b) Show that $|a_N| \leq M$.
+(b) Show that $\abs{a_N} \leq M$.
 :::
 
 ::: {.solution}
-**Goal.** For $f(z) = \sum_{n=0}^N a_n z^n$ with $M = \max_{|z|=1} |f(z)|$, show $|a_0| \le M$ and $|a_N| \le M$.
+**Goal.** For $f(z) = \sum_{n=0}^N a_n z^n$ with $M = \max_{\abs{z}=1} \abs{f(z)}$, show $\abs{a_0} \le M$ and $\abs{a_N} \le M$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-(a) $|a_0| \le M$.
+(a) $\abs{a_0} \le M$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$a_0 = \frac{1}{2\pi i}\oint_{|z|=1} \frac{f(z)}{z}\,dz$.
+$a_0 = \frac{1}{2\pi i}\oint_{\abs{z}=1} \frac{f(z)}{z}\,dz$.
 
 ::: pf-proof
 
@@ -50,11 +50,11 @@ Cauchy's integral formula for the coefficient $a_0 = f(0)$.
 
 ::: pf-step
 
-$|a_0| \le \frac{1}{2\pi}\int_0^{2\pi} |f(e^{i\theta})|\,d\theta \le M$.
+$\abs{a_0} \le \frac{1}{2\pi}\int_0^{2\pi} \abs{f(e^{i\theta})}\,d\theta \le M$.
 
 ::: pf-proof
 
-parametrize $z = e^{i\theta}$; $|f(e^{i\theta})| \le M$ on the unit circle, so the average is $\le M$.
+parametrize $z = e^{i\theta}$; $\abs{f(e^{i\theta})} \le M$ on the unit circle, so the average is $\le M$.
 
 :::
 
@@ -66,13 +66,13 @@ parametrize $z = e^{i\theta}$; $|f(e^{i\theta})| \le M$ on the unit circle, so t
 
 ::: {.pf-step #s2}
 
-(b) $|a_N| \le M$.
+(b) $\abs{a_N} \le M$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$a_N = \frac{1}{2\pi i}\oint_{|z|=1} \frac{f(z)}{z^{N+1}}\,dz$.
+$a_N = \frac{1}{2\pi i}\oint_{\abs{z}=1} \frac{f(z)}{z^{N+1}}\,dz$.
 
 ::: pf-proof
 
@@ -84,11 +84,11 @@ Cauchy's integral formula for the coefficient $a_N$.
 
 ::: pf-step
 
-$|a_N| \le \frac{1}{2\pi}\int_0^{2\pi} |f(e^{i\theta})|\,d\theta \le M$.
+$\abs{a_N} \le \frac{1}{2\pi}\int_0^{2\pi} \abs{f(e^{i\theta})}\,d\theta \le M$.
 
 ::: pf-proof
 
-parametrize $z = e^{i\theta}$; $|z^{N+1}| = 1$ on the unit circle, so the integrand has modulus $|f(e^{i\theta})| \le M$.
+parametrize $z = e^{i\theta}$; $\abs{z^{N+1}} = 1$ on the unit circle, so the integrand has modulus $\abs{f(e^{i\theta})} \le M$.
 
 :::
 

@@ -79,7 +79,7 @@ uniformly for $t\in[0,1]$.
 
 Since
 $$
-|st|\le s<1,
+\abs{st}\le s<1,
 $$
 the geometric series
 $$
@@ -153,9 +153,9 @@ F(s)
 $$
 has radius of convergence at least $1$, since
 $$
-|a_k|
+\abs{a_k}
 \le
-|\mu|([0,1]).
+\totalvariation{\mu}([0,1]).
 $$
 By step [](#s1-3){.pf-ref}, $F(s)=0$ for every $s\in(0,1)$. The identity theorem for
 power series therefore implies that every coefficient is zero:
@@ -210,16 +210,16 @@ $$
 By the Weierstrass approximation theorem, there are polynomials $p_n$
 such that
 $$
-\|p_n-f\|_\infty\to0.
+\norm{p_n-f}_\infty\to0.
 $$
 Since $\mu$ has finite total variation,
 $$
-\left|
+\abs{
 \int_0^1(f-p_n)\,d\mu
-\right|
+}
 \le
-\|f-p_n\|_\infty
-|\mu|([0,1])
+\norm{f-p_n}_\infty
+\totalvariation{\mu}([0,1])
 \longrightarrow0.
 $$
 Step [](#s1-5){.pf-ref} gives

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $f\in C^\infty([0,\infty)\times[0,1])$ satisfy
 $$
-\int_0^\infty\int_0^1 |\partial_t f(t,x)|^2(1+t^2)\,dx\,dt<\infty.
+\int_0^\infty\int_0^1 \abs{\partial_t f(t,x)}^2(1+t^2)\,dx\,dt<\infty.
 $$
 Prove that there exists $g\in L^2([0,1])$ such that $f(t,\cdot)\to g$ in $L^2([0,1])$ as $t\to\infty$.
 :::
@@ -57,10 +57,10 @@ Apply the fundamental theorem of calculus in the $t$-variable, using smoothness 
 Hence
 $$
 \boxed{
-\|F(t)-F(s)\|_{L^2}
+\norm{F(t)-F(s)}_{L^2}
 \le
 \int_s^t
-\|\partial_\tau f(\tau,\cdot)\|_{L^2}\,d\tau}.
+\norm{\partial_\tau f(\tau,\cdot)}_{L^2}\,d\tau}.
 $$
 
 
@@ -76,10 +76,10 @@ Take the $L^2$-norm in $x$ of the integral in step [](#s1-1){.pf-ref} and apply 
 
 Rewrite the integrand as
 $$
-\|\partial_\tau f(\tau,\cdot)\|_2
+\norm{\partial_\tau f(\tau,\cdot)}_2
 =
 \sqrt{1+\tau^2}\,
-\|\partial_\tau f(\tau,\cdot)\|_2
+\norm{\partial_\tau f(\tau,\cdot)}_2
 \cdot
 \frac1{\sqrt{1+\tau^2}}.
 $$
@@ -99,12 +99,12 @@ Cauchy--Schwarz in $\tau$ gives
 $$
 \boxed{
 \int_s^t
-\|\partial_\tau f(\tau,\cdot)\|_2\,d\tau
+\norm{\partial_\tau f(\tau,\cdot)}_2\,d\tau
 \le
 \left(
 \int_s^t
 (1+\tau^2)
-\|\partial_\tau f(\tau,\cdot)\|_2^2\,d\tau
+\norm{\partial_\tau f(\tau,\cdot)}_2^2\,d\tau
 \right)^{1/2}
 \left(
 \int_s^t
@@ -127,10 +127,10 @@ By Fubini,
 $$
 \int_0^\infty
 (1+\tau^2)
-\|\partial_\tau f(\tau,\cdot)\|_2^2\,d\tau
+\norm{\partial_\tau f(\tau,\cdot)}_2^2\,d\tau
 =
 \int_0^\infty\int_0^1
-|\partial_t f(\tau,x)|^2
+\abs{\partial_t f(\tau,x)}^2
 (1+\tau^2)\,dx\,d\tau.
 $$
 
@@ -139,10 +139,10 @@ $$
 
 By definition,
 $$
-\|\partial_\tau f(\tau,\cdot)\|_2^2
+\norm{\partial_\tau f(\tau,\cdot)}_2^2
 =
 \int_0^1
-|\partial_t f(\tau,x)|^2\,dx.
+\abs{\partial_t f(\tau,x)}^2\,dx.
 $$
 The integrand is nonnegative, so Tonelli's theorem applies.
 
@@ -158,7 +158,7 @@ $$
 A:=
 \int_0^\infty
 (1+\tau^2)
-\|\partial_\tau f(\tau,\cdot)\|_2^2\,d\tau
+\norm{\partial_\tau f(\tau,\cdot)}_2^2\,d\tau
 <\infty}.
 $$
 
@@ -221,7 +221,7 @@ $$
 Combining steps [](#s1-2){.pf-ref}, [](#s1-4){.pf-ref}, and [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref},
 $$
 \boxed{
-\|F(t)-F(s)\|_2
+\norm{F(t)-F(s)}_2
 \le
 A^{1/2}
 \left(
@@ -262,7 +262,7 @@ Hence $(F(t))_{t\ge0}$ is Cauchy in $L^2([0,1])$ as $t\to\infty$.
 
 Given $\varepsilon>0$, choose $S$ so large that the right-hand side in step [](#s1-9){.pf-ref} is $<\varepsilon$ whenever $s\ge S$. Then for any $t\ge s\ge S$,
 $$
-\|F(t)-F(s)\|_2<\varepsilon.
+\norm{F(t)-F(s)}_2<\varepsilon.
 $$
 Interchanging $s,t$ handles the opposite order.
 

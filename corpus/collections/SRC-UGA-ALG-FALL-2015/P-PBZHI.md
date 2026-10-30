@@ -42,7 +42,7 @@ Every finite group $G$ occurs as a Galois group of a field extension.
 
 ::: pf-proof
 
-Let $n=|G|$. Cayley's theorem embeds $G$ into $S_n$ by its left regular action. By the stated assumption choose a finite Galois extension $M/F$ with $\operatorname{Gal}(M/F)\cong S_n$ and identify $G$ with the corresponding subgroup. Set $E=M^G$. The fundamental theorem of Galois theory gives $M/E$ finite Galois with
+Let $n=\cardinality{G}$. Cayley's theorem embeds $G$ into $S_n$ by its left regular action. By the stated assumption choose a finite Galois extension $M/F$ with $\operatorname{Gal}(M/F)\cong S_n$ and identify $G$ with the corresponding subgroup. Set $E=M^G$. The fundamental theorem of Galois theory gives $M/E$ finite Galois with
 $$
 \boxed{\operatorname{Gal}(M/E)\cong G}.
 $$

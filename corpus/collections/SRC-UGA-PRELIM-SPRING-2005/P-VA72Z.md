@@ -76,13 +76,13 @@ If $\sum a_n$ converges absolutely, then $\sum a_n^2$ converges.
 
 Absolute convergence means
 $$
-\sum_{n=1}^\infty |a_n|<\infty.
+\sum_{n=1}^\infty \abs{a_n}<\infty.
 $$
-Therefore $a_n\to0$, so there exists $N$ such that $|a_n|\le1$ for all $n\ge N$. For such $n$,
+Therefore $a_n\to0$, so there exists $N$ such that $\abs{a_n}\le1$ for all $n\ge N$. For such $n$,
 $$
-0\le a_n^2=|a_n|^2\le |a_n|.
+0\le a_n^2=\abs{a_n}^2\le \abs{a_n}.
 $$
-Thus $\sum_{n=N}^\infty a_n^2$ converges by comparison with $\sum_{n=N}^\infty |a_n|$. Adding the finitely many initial terms gives convergence of $\sum_{n=1}^\infty a_n^2$.
+Thus $\sum_{n=N}^\infty a_n^2$ converges by comparison with $\sum_{n=N}^\infty \abs{a_n}$. Adding the finitely many initial terms gives convergence of $\sum_{n=1}^\infty a_n^2$.
 
 :::
 

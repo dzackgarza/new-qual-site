@@ -65,12 +65,12 @@ For the double pole at $ia$,
 $$
 \Res(F;ia)
 =
-\left.
+\evaluated{
 \frac{d}{dz}
 \left(
 \frac{e^{iz}}{(z+ia)^2}
 \right)
-\right|_{z=ia}.
+}_{z=ia}.
 $$
 Differentiating gives
 $$

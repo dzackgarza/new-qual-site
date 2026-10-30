@@ -36,7 +36,7 @@ then f is a constant multiple of $e ^ { - \pi x ^ { 2 } }$ . As a result, if $f 
 Moreover, if $g ( z ) = \hat { f } ( z ^ { 1 / 2 } )$ , then $g$ satisfies
 
 $$
-| g (x) | \leq c e ^ {- \pi x} \quad \text { and } \quad | g (z) | \leq c e ^ {\pi R \sin^ {2} (\theta / 2)} \leq c e ^ {\pi | z |}
+\abs{ g (x) } \leq c e ^ {- \pi x} \quad \text { and } \quad \abs{ g (z) } \leq c e ^ {\pi R \sin^ {2} (\theta / 2)} \leq c e ^ {\pi \abs{ z }}
 $$
 
 when $x \in \RR$ and $z = R e ^ { i \theta }$ with $R \geq 0$ and $\theta \in \RR$
@@ -58,14 +58,14 @@ We use the Fourier-transform convention
 $$
 \widehat f(\zeta)=\int_{\RR}f(x)e^{-2\pi i x\zeta}\,dx.
 $$
-The hypothesis $|f(x)|\le Ce^{-\pi x^2}$ implies that this integral converges for every $\zeta\in\CC$, locally uniformly in $\zeta$, because for $\zeta=\xi+i\eta$,
+The hypothesis $\abs{f(x)}\le Ce^{-\pi x^2}$ implies that this integral converges for every $\zeta\in\CC$, locally uniformly in $\zeta$, because for $\zeta=\xi+i\eta$,
 $$
-|f(x)e^{-2\pi i x\zeta}|
-\le C e^{-\pi x^2+2\pi |\eta||x|}.
+\abs{f(x)e^{-2\pi i x\zeta}}
+\le C e^{-\pi x^2+2\pi \abs{\eta}\abs{x}}.
 $$
 Hence $\widehat f$ extends to an entire function. Completing the square gives the global estimate
 $$
-|\widehat f(\xi+i\eta)|
+\abs{\widehat f(\xi+i\eta)}
 \le C\int_{\RR}e^{-\pi x^2+2\pi\eta x}\,dx
 =C' e^{\pi\eta^2}.
 \tag{1}
@@ -77,17 +77,17 @@ g(z)=\widehat f(\sqrt z);
 $$
 this notation is independent of the choice of square root. If $x\ge0$, the assumed real-axis decay of $\widehat f$ gives
 $$
-|g(x)|\le C e^{-\pi x}.
+\abs{g(x)}\le C e^{-\pi x}.
 \tag{2}
 $$
-If $x<0$, choose $\sqrt x=i\sqrt{|x|}$ and use (1):
+If $x<0$, choose $\sqrt x=i\sqrt{\abs{x}}$ and use (1):
 $$
-|g(x)|\le C'e^{\pi|x|}=C'e^{-\pi x}.
+\abs{g(x)}\le C'e^{\pi\abs{x}}=C'e^{-\pi x}.
 \tag{3}
 $$
 More generally, for $z=Re^{i\theta}$ choose $\sqrt z=\sqrt R e^{i\theta/2}$. Then (1) yields
 $$
-|g(z)|\le C'e^{\pi R\sin^2(\theta/2)}\le C'e^{\pi|z|}.
+\abs{g(z)}\le C'e^{\pi R\sin^2(\theta/2)}\le C'e^{\pi\abs{z}}.
 \tag{4}
 $$
 
@@ -106,11 +106,11 @@ and
 $$
 F_\beta(z)=g(z)e^{\gamma z}.
 $$
-By (4), $F_\beta$ has exponential growth $O(e^{C_\beta|z|})$. Since the sector has opening $\pi/\beta$ and $1<\beta$, the Phragmén--Lindelöf principle applies.
+By (4), $F_\beta$ has exponential growth $O(e^{C_\beta\abs{z}})$. Since the sector has opening $\pi/\beta$ and $1<\beta$, the Phragmén--Lindelöf principle applies.
 
 On the ray $z=r\ge0$, $\Re\gamma=\pi$, so by (2)
 $$
-|F_\beta(r)|\le C.
+\abs{F_\beta(r)}\le C.
 \tag{5}
 $$
 On the other boundary ray $z=re^{2i\alpha}$, a direct calculation gives
@@ -119,7 +119,7 @@ $$
 $$
 Together with (4), whose exponent there is $\pi r\sin^2\alpha$, this gives
 $$
-|F_\beta(re^{2i\alpha})|
+\abs{F_\beta(re^{2i\alpha})}
 \le C' e^{-\pi r+\pi r\sin^2\alpha}
 =C'e^{-\pi r\cos^2\alpha}\le C'.
 \tag{6}
@@ -132,7 +132,7 @@ $$
 $$
 For each fixed $z$ in the upper half-plane, the preceding bound may be taken with the same boundary constant $\max(C,C')$; hence
 $$
-|e^{\pi z}g(z)|\le C''
+\abs{e^{\pi z}g(z)}\le C''
 $$
 in the closed upper half-plane. Applying the reflected argument in the lower half-plane gives the same bound there. Consequently the entire function $e^{\pi z}g(z)$ is bounded on $\CC$, so Liouville's theorem gives
 $$
@@ -154,9 +154,9 @@ h(z)=\frac{\widehat f(z)}{z}
 $$
 extends to an even entire function. From (1) and the real-axis Gaussian bound, after increasing the constant on a neighborhood of $0$, $h$ satisfies the same type of estimates as the even function treated above:
 $$
-|h(x)|\le C e^{-\pi x^2},
+\abs{h(x)}\le C e^{-\pi x^2},
 \qquad
-|h(\xi+i\eta)|\le C'e^{\pi\eta^2}.
+\abs{h(\xi+i\eta)}\le C'e^{\pi\eta^2}.
 $$
 Therefore
 $$
@@ -164,7 +164,7 @@ h(z)=c e^{-\pi z^2},
 \qquad
 \widehat f(z)=cz e^{-\pi z^2}.
 $$
-But the assumed bound $|\widehat f(x)|\le C e^{-\pi x^2}$ on the real axis forces $c=0$, since otherwise division by $e^{-\pi x^2}$ would give the unbounded function $|c||x|$. Thus $\widehat f=0$ and $f=0$.
+But the assumed bound $\abs{\widehat f(x)}\le C e^{-\pi x^2}$ on the real axis forces $c=0$, since otherwise division by $e^{-\pi x^2}$ would give the unbounded function $\abs{c}\abs{x}$. Thus $\widehat f=0$ and $f=0$.
 
 For a general $f$, write
 $$
@@ -184,14 +184,14 @@ so their Fourier transforms do also. The even case gives $f_e=ce^{-\pi x^2}$ and
 
 Finally suppose
 $$
-|f(x)|\le Ce^{-\pi A x^2},
+\abs{f(x)}\le Ce^{-\pi A x^2},
 \qquad
-|\widehat f(\xi)|\le Ce^{-\pi B\xi^2},
+\abs{\widehat f(\xi)}\le Ce^{-\pi B\xi^2},
 \qquad AB>1.
 $$
 Define $q(x)=f(x/\sqrt A)$. Then
 $$
-|q(x)|\le Ce^{-\pi x^2},
+\abs{q(x)}\le Ce^{-\pi x^2},
 $$
 and the scaling rule gives
 $$
@@ -199,12 +199,12 @@ $$
 $$
 so
 $$
-|\widehat q(\xi)|\le C\sqrt A\,e^{-\pi AB\xi^2}
+\abs{\widehat q(\xi)}\le C\sqrt A\,e^{-\pi AB\xi^2}
 \le C\sqrt A\,e^{-\pi\xi^2}.
 $$
 Hardy's theorem gives $q(x)=ce^{-\pi x^2}$, hence
 $$
 \widehat q(\xi)=ce^{-\pi\xi^2}.
 $$
-The stronger estimate with $AB>1$ is incompatible with $c\ne0$ as $|\xi|\to\infty$. Hence $c=0$, so $q=0$ and therefore $f=0$.
+The stronger estimate with $AB>1$ is incompatible with $c\ne0$ as $\abs{\xi}\to\infty$. Hence $c=0$, so $q=0$ and therefore $f=0$.
 :::

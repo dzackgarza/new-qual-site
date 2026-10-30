@@ -72,7 +72,7 @@ $$
 For $0\leq k<r$, the coefficient of $T^jv$ in $\pi(T^kv)$ is
 $\ell(T^{r-1-j+k}v)$. It is $1$ when $j=k$, $0$ when $k<j$ by
 the definition of $\ell$, and $0$ when $k>j$ because then the
-exponent is at least $r$. Thus $\pi|_U$ is the identity.
+exponent is at least $r$. Thus $\pi\restrict_U$ is the identity.
 
 Moreover, $T^r=0$ gives
 $$
@@ -99,8 +99,8 @@ Combining bases of $U$ and $W$ produces the asserted blocks.
 ::: pf-proof
 
 On the ordered basis $v,Tv,\ldots,T^{r-1}v$ of $U$, the matrix of
-$T|_U$ has ones immediately below the diagonal and all other entries
-zero. The restriction $T|_W$ is nilpotent and $\dim W=n-r<n$.
+$T\restrict_U$ has ones immediately below the diagonal and all other entries
+zero. The restriction $T\restrict_W$ is nilpotent and $\dim W=n-r<n$.
 By induction it has a basis with the required block diagonal matrix.
 Concatenating these two bases gives a basis of $V$ in which $T$ has
 the stated form. If $S$ has these basis vectors as columns in the

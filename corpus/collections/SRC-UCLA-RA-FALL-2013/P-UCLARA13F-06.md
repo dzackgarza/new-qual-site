@@ -20,7 +20,7 @@ audit:
 Let $U\subset\CC$ be bounded and open with $0\in U$, and let $f:U\to\CC$ be holomorphic with $f(U)\subset U$ and $f(0)=0$.
 Show that
 $$
-|f'(0)|\le1.
+\abs{f'(0)}\le1.
 $$
 Hint: consider the iterates $f^n=f\circ\cdots\circ f$.
 :::
@@ -49,7 +49,7 @@ Openness of $U$ at $0$ gives some disk $D(0,R)\subset U$. Choose any $0<r<R$.
 
 Since $U$ is bounded, choose $M>0$ such that
 $$
-|z|\leq M
+\abs{z}\leq M
 \qquad(z\in U).
 $$
 
@@ -85,9 +85,9 @@ because $f(0)=0$.
 
 ::: {.pf-step #s1-4}
 
-Cauchy's estimate applied on the circle $|z|=r$ gives
+Cauchy's estimate applied on the circle $\abs{z}=r$ gives
 $$
-|(f^n)'(0)|\leq\frac Mr
+\abs{(f^n)'(0)}\leq\frac Mr
 \qquad(n\geq1).
 $$
 
@@ -96,15 +96,15 @@ $$
 
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
-|f^n(z)|\leq M
+\abs{f^n(z)}\leq M
 $$
-for every $z\in U$, hence in particular on $|z|=r$. Cauchy's derivative formula gives
+for every $z\in U$, hence in particular on $\abs{z}=r$. Cauchy's derivative formula gives
 $$
-(f^n)'(0)=\frac1{2\pi i}\int_{|z|=r}\frac{f^n(z)}{z^2}\,dz,
+(f^n)'(0)=\frac1{2\pi i}\int_{\abs{z}=r}\frac{f^n(z)}{z^2}\,dz,
 $$
 so
 $$
-|(f^n)'(0)|\leq\frac Mr.
+\abs{(f^n)'(0)}\leq\frac Mr.
 $$
 
 :::
@@ -131,7 +131,7 @@ Every intermediate point in the derivative of the composition is $0$ because eve
 
 Hence for every $n\geq1$,
 $$
-|f'(0)|^n\leq\frac Mr.
+\abs{f'(0)}^n\leq\frac Mr.
 $$
 
 
@@ -147,13 +147,13 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} and take absolute values
 
 Therefore
 $$
-\boxed{|f'(0)|\leq1.}
+\boxed{\abs{f'(0)}\leq1.}
 $$
 
 
 ::: pf-proof
 
-If $|f'(0)|>1$, then $|f'(0)|^n\to\infty$ as $n\to\infty$, contradicting the uniform upper bound $M/r$ in step [](#s1-6){.pf-ref}.
+If $\abs{f'(0)}>1$, then $\abs{f'(0)}^n\to\infty$ as $n\to\infty$, contradicting the uniform upper bound $M/r$ in step [](#s1-6){.pf-ref}.
 
 :::
 

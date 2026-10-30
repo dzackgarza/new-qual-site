@@ -115,7 +115,7 @@ $$
 H(z,t)=F(r_t(z)),
 \qquad z\in S^1,
 $$
-is a homotopy from $f=F|_{S^1}$ to the constant map with value $F(0)$.
+is a homotopy from $f=F\restrict_{S^1}$ to the constant map with value $F(0)$.
 Thus (a) holds.
 
 :::

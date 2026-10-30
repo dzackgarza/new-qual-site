@@ -73,7 +73,7 @@ Solving the quadratic in step [](#s1-1){.pf-ref} gives
 $$
 e^y=x\pm\sqrt{x^2+1}.
 $$
-Since $\sqrt{x^2+1}>|x|$, the quantity $x-\sqrt{x^2+1}$ is negative, while $x+\sqrt{x^2+1}$ is positive. Because $e^y>0$, only the positive sign is possible.
+Since $\sqrt{x^2+1}>\abs{x}$, the quantity $x-\sqrt{x^2+1}$ is negative, while $x+\sqrt{x^2+1}$ is positive. Because $e^y>0$, only the positive sign is possible.
 
 :::
 

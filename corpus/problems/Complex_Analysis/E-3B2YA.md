@@ -73,7 +73,7 @@ The point $1$ lies inside $\abs z=2$, so the integral is $2\pi i\cdot 1^2=2\pi i
 (d) $\displaystyle\int_{S^1} \frac{e^z}{z^2} \dz=\boxed{2\pi i}$.
 
 ::: pf-proof
-By Cauchy's integral formula for the first derivative, the integral is $2\pi i\,\frac{d}{dz}e^z\big|_{z=0}=2\pi i$.
+By Cauchy's integral formula for the first derivative, the integral is $2\pi i\,\frac{d}{dz}e^z\evalfrom_{z=0}=2\pi i$.
 :::
 
 :::

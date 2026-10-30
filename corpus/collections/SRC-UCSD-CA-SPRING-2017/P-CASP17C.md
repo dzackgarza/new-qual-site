@@ -18,7 +18,7 @@ review: draft
 Let $n \geq 0$ be an integer.
 Assume $f : \CC \to \CC$ is an entire function such that
 $$
-|f(z)| \leq 1 + (\log(1 + |z|))^n.
+\abs{f(z)} \leq 1 + (\log(1 + \abs{z}))^n.
 $$
 Prove that $f$ is constant.
 :::
@@ -26,8 +26,8 @@ Prove that $f$ is constant.
 ::: {.solution}
 For every $R>0$, Cauchy's estimate at $0$ gives, for $k\ge1$,
 $$
-|f^{(k)}(0)|
-\le \frac{k!}{R^k}\max_{|z|=R}|f(z)|
+\abs{f^{(k)}(0)}
+\le \frac{k!}{R^k}\max_{\abs{z}=R}\abs{f(z)}
 \le \frac{k!}{R^k}\Bigl(1+\log(1+R)^n\Bigr).
 $$
 The right-hand side tends to $0$ as $R\to\infty$. Hence

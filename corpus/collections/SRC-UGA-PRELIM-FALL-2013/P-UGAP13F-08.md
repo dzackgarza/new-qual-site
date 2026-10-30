@@ -34,7 +34,7 @@ z=1+\sqrt3,i
 $$
 are
 $$
-|z|=2
+\abs{z}=2
 $$
 and
 $$
@@ -52,7 +52,7 @@ $$
 
 The modulus is
 $$
-|z|
+\abs{z}
 =
 \sqrt{1^2+(\sqrt3)^2}
 =
@@ -126,7 +126,7 @@ w^3=z,
 $$
 then
 $$
-|w|
+\abs{w}
 =
 2^{1/3}
 $$
@@ -143,11 +143,11 @@ $$
 
 Taking moduli gives
 $$
-|w|^3=|z|=2,
+\abs{w}^3=\abs{z}=2,
 $$
 so
 $$
-|w|=2^{1/3}.
+\abs{w}=2^{1/3}.
 $$
 
 Taking arguments gives

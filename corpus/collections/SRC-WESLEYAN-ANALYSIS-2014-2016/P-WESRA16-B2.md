@@ -55,7 +55,7 @@ and similarly for $g$.
 
 For every $n$,
 $$
-\left|\int_{\RR^d}f_n-\int_{\RR^d}g\right|
+\abs{\int_{\RR^d}f_n-\int_{\RR^d}g}
 \leq
 \lambda(X)\norm{f_n-g}_{L^\infty}.
 $$
@@ -66,8 +66,8 @@ $$
 The function $f_n-g$ vanishes almost everywhere outside $X$. Therefore
 $$
 \begin{aligned}
-\left|\int_{\RR^d}f_n-\int_{\RR^d}g\right|
-&=\left|\int_X(f_n-g)\right|\\
+\abs{\int_{\RR^d}f_n-\int_{\RR^d}g}
+&=\abs{\int_X(f_n-g)}\\
 &\leq\int_X\abs{f_n-g}\\
 &\leq\lambda(X)\norm{f_n-g}_{L^\infty}.
 \end{aligned}

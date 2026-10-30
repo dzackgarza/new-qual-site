@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Let $f:\CC\to\CC$ be holomorphic and suppose
 $$
-\sup_{x\in\RR}\bigl(|f(x)|^2+|f(ix)|^2\bigr)<\infty
+\sup_{x\in\RR}\bigl(\abs{f(x)}^2+\abs{f(ix)}^2\bigr)<\infty
 $$
 and
 $$
-|f(z)|\le e^{|z|}\qquad\text{for all }z\in\CC.
+\abs{f(z)}\le e^{\abs{z}}\qquad\text{for all }z\in\CC.
 $$
 Deduce that $f(z)$ is constant.
 :::
@@ -32,9 +32,9 @@ Deduce that $f(z)$ is constant.
 
 Choose $M\ge0$ such that
 $$
-|f(x)|\le M,
+\abs{f(x)}\le M,
 \qquad
-|f(ix)|\le M
+\abs{f(ix)}\le M
 \qquad
 (x\in\RR).
 $$
@@ -64,7 +64,7 @@ Q
 $$
 one has
 $$
-|f(z)|\le M.
+\abs{f(z)}\le M.
 $$
 
 
@@ -108,7 +108,7 @@ $$
 $$
 such that, for $z=Re^{i\theta}\in\overline Q$,
 $$
-|g_\varepsilon(z)|
+\abs{g_\varepsilon(z)}
 \le
 \exp\!\left(
 R-\varepsilon\delta R^{3/2}
@@ -120,7 +120,7 @@ $$
 
 The growth hypothesis gives
 $$
-|f(z)|\le e^R.
+\abs{f(z)}\le e^R.
 $$
 Also,
 $$
@@ -154,16 +154,16 @@ Taking absolute values in the definition of $g_\varepsilon$ gives the estimate.
 
 There exists $R_\varepsilon>0$ such that
 $$
-|g_\varepsilon(z)|\le M
+\abs{g_\varepsilon(z)}\le M
 $$
-whenever $z\in\overline Q$ and $|z|\ge R_\varepsilon$.
+whenever $z\in\overline Q$ and $\abs{z}\ge R_\varepsilon$.
 
 
 ::: pf-proof
 
 By step [](#s2-2){.pf-ref},
 $$
-|g_\varepsilon(z)|
+\abs{g_\varepsilon(z)}
 \le
 \exp\!\left(
 R-\varepsilon\delta R^{3/2}
@@ -179,13 +179,13 @@ The exponent tends to $-\infty$ as $R\to\infty$, so the right-hand side tends to
 
 On the two boundary rays of $Q$,
 $$
-|g_\varepsilon(z)|\le M.
+\abs{g_\varepsilon(z)}\le M.
 $$
 
 
 ::: pf-proof
 
-On either boundary ray, $|f(z)|\le M$ by the definition of $M$. Moreover,
+On either boundary ray, $\abs{f(z)}\le M$ by the definition of $M$. Moreover,
 $$
 \operatorname{Re}
 (e^{-i\pi/4}z)^{3/2}
@@ -201,7 +201,7 @@ so the exponential multiplier in $g_\varepsilon$ has modulus at most $1$.
 
 One has
 $$
-|g_\varepsilon(z)|\le M
+\abs{g_\varepsilon(z)}\le M
 \qquad
 (z\in Q).
 $$
@@ -211,9 +211,9 @@ $$
 
 Choose $R\ge R_\varepsilon$ and apply the maximum-modulus principle to the bounded quarter-disk
 $$
-Q\cap\{|z|<R\}.
+Q\cap\{\abs{z}<R\}.
 $$
-Step [](#s2-4){.pf-ref} bounds $|g_\varepsilon|$ by $M$ on the two radial sides, and step [](#s2-3){.pf-ref} bounds it by $M$ on the circular side. Hence the same bound holds throughout that quarter-disk. Letting $R\to\infty$ proves the claim on all of $Q$.
+Step [](#s2-4){.pf-ref} bounds $\abs{g_\varepsilon}$ by $M$ on the two radial sides, and step [](#s2-3){.pf-ref} bounds it by $M$ on the circular side. Hence the same bound holds throughout that quarter-disk. Letting $R\to\infty$ proves the claim on all of $Q$.
 
 :::
 
@@ -223,7 +223,7 @@ Step [](#s2-4){.pf-ref} bounds $|g_\varepsilon|$ by $M$ on the two radial sides,
 
 For every $z\in Q$,
 $$
-|f(z)|\le M.
+\abs{f(z)}\le M.
 $$
 
 
@@ -231,7 +231,7 @@ $$
 
 Step [](#s2-5){.pf-ref} gives
 $$
-|f(z)|
+\abs{f(z)}
 \le
 M
 \exp\!\left(
@@ -242,7 +242,7 @@ M
 $$
 For fixed $z$, the real number in the exponent is finite. Letting $\varepsilon\downarrow0$ yields
 $$
-|f(z)|\le M.
+\abs{f(z)}\le M.
 $$
 
 :::
@@ -263,14 +263,14 @@ Step [](#s2-6){.pf-ref} proves the claim of step [](#s2){.pf-ref}.
 
 The bound
 $$
-|f(z)|\le M
+\abs{f(z)}\le M
 $$
 holds for every $z\in\CC$.
 
 
 ::: pf-proof
 
-The argument of step [](#s2){.pf-ref} depends only on a quadrant being bounded by two rays on which $|f|\le M$. Rotate the construction by $\pi/2$, $\pi$, and $3\pi/2$ to treat the other three quadrants. The real and imaginary axes themselves already satisfy the bound by definition of $M$.
+The argument of step [](#s2){.pf-ref} depends only on a quadrant being bounded by two rays on which $\abs{f}\le M$. Rotate the construction by $\pi/2$, $\pi$, and $3\pi/2$ to treat the other three quadrants. The real and imaginary axes themselves already satisfy the bound by definition of $M$.
 
 :::
 

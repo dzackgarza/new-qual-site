@@ -97,7 +97,7 @@ A diagonalizable $N$ is therefore similar to the zero matrix, hence $N=0$.
 
 ::: pf-proof
 For $v\in E_\lambda(A)=\ker(A-\lambda I)$, $A(Bv)=B(Av)=\lambda Bv$, so each eigenspace $E_\lambda(A)$ is $B$-invariant.
-The minimal polynomial of $B|_{E_\lambda(A)}$ divides that of $B$, which has distinct linear factors, so $B|_{E_\lambda(A)}$ is diagonalizable.
+The minimal polynomial of $B\restrict_{E_\lambda(A)}$ divides that of $B$, which has distinct linear factors, so $B\restrict_{E_\lambda(A)}$ is diagonalizable.
 The union over $\lambda$ of eigenbases of the restrictions is a basis of $V=\bigoplus_\lambda E_\lambda(A)$ of common eigenvectors.
 :::
 

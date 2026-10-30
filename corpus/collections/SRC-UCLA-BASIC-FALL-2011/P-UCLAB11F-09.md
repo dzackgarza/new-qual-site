@@ -21,11 +21,11 @@ Problem 9. Let $V$ be a finite-dimensional inner-product space and let $L:V\to V
 Let $\mu\in\RR$ and $\varepsilon>0$.
 Suppose there is a unit vector $x\in V$ such that
 $$
-\|Lx-\mu x\|\le\varepsilon.
+\norm{Lx-\mu x}\le\varepsilon.
 $$
 Prove that $L$ has an eigenvalue $\lambda$ such that
 $$
-|\lambda-\mu|\le\varepsilon.
+\abs{\lambda-\mu}\le\varepsilon.
 $$
 :::
 
@@ -63,7 +63,7 @@ x=\sum_{j=1}^n c_jv_j.
 $$
 Then
 $$
-\sum_{j=1}^n|c_j|^2=1.
+\sum_{j=1}^n\abs{c_j}^2=1.
 $$
 
 
@@ -71,11 +71,11 @@ $$
 
 The expansion exists because the $v_j$ form a basis. Since they are orthonormal,
 $$
-\|x\|^2
+\norm{x}^2
 =
-\sum_{j=1}^n|c_j|^2.
+\sum_{j=1}^n\abs{c_j}^2.
 $$
-The hypothesis $\|x\|=1$ gives the displayed identity.
+The hypothesis $\norm{x}=1$ gives the displayed identity.
 
 :::
 
@@ -85,10 +85,10 @@ The hypothesis $\|x\|=1$ gives the displayed identity.
 
 One has
 $$
-\|Lx-\mu x\|^2
+\norm{Lx-\mu x}^2
 =
 \sum_{j=1}^n
-|\lambda_j-\mu|^2|c_j|^2.
+\abs{\lambda_j-\mu}^2\abs{c_j}^2.
 $$
 
 
@@ -111,7 +111,7 @@ Taking the squared norm in the orthonormal basis gives the stated sum.
 
 At least one eigenvalue $\lambda_j$ satisfies
 $$
-|\lambda_j-\mu|\le\varepsilon.
+\abs{\lambda_j-\mu}\le\varepsilon.
 $$
 
 
@@ -119,23 +119,23 @@ $$
 
 Suppose instead that
 $$
-|\lambda_j-\mu|>\varepsilon
+\abs{\lambda_j-\mu}>\varepsilon
 $$
 for every $j$. Then by step [](#s1-3){.pf-ref} and step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
-\|Lx-\mu x\|^2
+\norm{Lx-\mu x}^2
 &=
-\sum_j|\lambda_j-\mu|^2|c_j|^2\\
+\sum_j\abs{\lambda_j-\mu}^2\abs{c_j}^2\\
 &>
-\varepsilon^2\sum_j|c_j|^2\\
+\varepsilon^2\sum_j\abs{c_j}^2\\
 &=
 \varepsilon^2,
 \end{aligned}
 $$
 so
 $$
-\|Lx-\mu x\|>\varepsilon,
+\norm{Lx-\mu x}>\varepsilon,
 $$
 contradicting the hypothesis.
 
@@ -147,7 +147,7 @@ contradicting the hypothesis.
 
 Therefore $L$ has an eigenvalue $\lambda$ with
 $$
-\boxed{|\lambda-\mu|\le\varepsilon}.
+\boxed{\abs{\lambda-\mu}\le\varepsilon}.
 $$
 
 

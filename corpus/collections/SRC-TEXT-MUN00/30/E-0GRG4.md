@@ -29,7 +29,7 @@ Which of our four countability axioms does $\RR^\omega$ in the uniform topology 
 ::: pf-step
 Metric characterization of the uniform topology:
 The uniform topology on $\RR^\omega$ is induced by the uniform metric:
-$$\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n \in \ZZ_+} \bar{d}(x_n, y_n), \quad \text{where } \bar{d}(a, b) = \min\{|a - b|, 1\}.$$
+$$\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n \in \ZZ_+} \bar{d}(x_n, y_n), \quad \text{where } \bar{d}(a, b) = \min\{\abs{a - b}, 1\}.$$
 :::
 
 ::: pf-step
@@ -48,7 +48,7 @@ Let $S = \{0, 1\}^\omega \subset \RR^\omega$ be the set of all binary sequences 
 ::: pf-proof
 
 ::: pf-step
-The set $S$ has cardinality $|S| = 2^{\aleph_0} > \aleph_0$, so $S$ is uncountable.
+The set $S$ has cardinality $\cardinality{S} = 2^{\aleph_0} > \aleph_0$, so $S$ is uncountable.
 :::
 
 ::: pf-step
@@ -56,7 +56,7 @@ For any two distinct sequences $\mathbf{x}, \mathbf{y} \in S$, there exists an i
 :::
 
 ::: pf-step
-Then $\bar{d}(x_m, y_m) = |x_m - y_m| = 1$, so $\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n} \bar{d}(x_n, y_n) = 1$.
+Then $\bar{d}(x_m, y_m) = \abs{x_m - y_m} = 1$, so $\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n} \bar{d}(x_n, y_n) = 1$.
 :::
 
 ::: pf-step
@@ -71,7 +71,7 @@ The open balls $\{B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2}) : \mathbf{x} \in S\}$ 
 $\RR^\omega$ is not second-countable:
 
 ::: pf-proof
-Let $\mathcal{B}$ be any basis for the uniform topology on $\RR^\omega$. For each $\mathbf{x} \in S$, the open set $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$ must contain a basis element $U_\mathbf{x} \in \mathcal{B}$ with $\mathbf{x} \in U_\mathbf{x} \subseteq B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$. Since the balls are pairwise disjoint (step [](#uncountable-discrete-subspace){.pf-ref}), the assignment $\mathbf{x} \mapsto U_\mathbf{x}$ is injective. Hence $|\mathcal{B}| \ge |S| = 2^{\aleph_0}$, so no countable basis exists.
+Let $\mathcal{B}$ be any basis for the uniform topology on $\RR^\omega$. For each $\mathbf{x} \in S$, the open set $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$ must contain a basis element $U_\mathbf{x} \in \mathcal{B}$ with $\mathbf{x} \in U_\mathbf{x} \subseteq B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$. Since the balls are pairwise disjoint (step [](#uncountable-discrete-subspace){.pf-ref}), the assignment $\mathbf{x} \mapsto U_\mathbf{x}$ is injective. Hence $\cardinality{\mathcal{B}} \ge \cardinality{S} = 2^{\aleph_0}$, so no countable basis exists.
 :::
 
 :::
@@ -80,7 +80,7 @@ Let $\mathcal{B}$ be any basis for the uniform topology on $\RR^\omega$. For eac
 $\RR^\omega$ is not separable:
 
 ::: pf-proof
-Let $D \subset \RR^\omega$ be any dense subset. For each $\mathbf{x} \in S$, the non-empty open ball $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$ must contain a point $d_\mathbf{x} \in D$. By pairwise disjointness, all $d_\mathbf{x}$ are distinct, so $|D| \ge |S| = 2^{\aleph_0}$. Thus no countable dense subset exists.
+Let $D \subset \RR^\omega$ be any dense subset. For each $\mathbf{x} \in S$, the non-empty open ball $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$ must contain a point $d_\mathbf{x} \in D$. By pairwise disjointness, all $d_\mathbf{x}$ are distinct, so $\cardinality{D} \ge \cardinality{S} = 2^{\aleph_0}$. Thus no countable dense subset exists.
 :::
 
 :::

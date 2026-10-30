@@ -44,7 +44,7 @@ e^{2z}=i
 $$
 gives
 $$
-e^{2x}=|i|=1.
+e^{2x}=\abs{i}=1.
 $$
 Since the real exponential is injective, $2x=0$, hence $x=0$.
 

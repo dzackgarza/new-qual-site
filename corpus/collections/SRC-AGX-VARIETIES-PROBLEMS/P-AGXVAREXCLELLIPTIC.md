@@ -149,7 +149,7 @@ g\in k(X)^\times=k(\overline X)^\times
 $$
 one has
 $$
-D|_X=\div_X(g).
+D\restrict_X=\div_X(g).
 $$
 Consequently,
 $$

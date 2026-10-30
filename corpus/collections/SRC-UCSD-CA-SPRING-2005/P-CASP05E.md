@@ -16,9 +16,9 @@ review: draft
 Let $n$ be a positive integer and $\lambda > 1$ a real number.
 Consider the equation $$(**)\quad z^n - e^{z - \lambda} = 0.$$
 
-(a) Find all the roots of (**) with $|z| = 1$.
+(a) Find all the roots of (**) with $\abs{z} = 1$.
 
-(b) Show that there are exactly $n$ distinct simple roots of (**) with $|z| < 1$.
+(b) Show that there are exactly $n$ distinct simple roots of (**) with $\abs{z} < 1$.
 :::
 
 ::: {.solution}
@@ -26,13 +26,13 @@ Put
 $$
 F(z)=z^n-e^{z-\lambda}.
 $$
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|e^{z-\lambda}|=e^{\operatorname{Re}z-\lambda}
-\le e^{1-\lambda}<1=|z^n|.
+\abs{e^{z-\lambda}}=e^{\operatorname{Re}z-\lambda}
+\le e^{1-\lambda}<1=\abs{z^n}.
 $$
 Hence $F$ has no zeros on the unit circle, answering (a), and Rouché's theorem
-shows that $F$ has exactly $n$ zeros in $|z|<1$, counted with multiplicity.
+shows that $F$ has exactly $n$ zeros in $\abs{z}<1$, counted with multiplicity.
 
 They are all simple. If $z$ were a multiple zero, then
 $$

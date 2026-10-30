@@ -126,7 +126,7 @@ $$
 ::: pf-proof
 
 $$
-|V_4/H|
+\cardinality{V_4/H}
 =
 \frac4{2}
 =
@@ -150,7 +150,7 @@ $$
 ::: pf-proof
 
 $$
-|A_4/V_4|
+\cardinality{A_4/V_4}
 =
 \frac{12}{4}
 =

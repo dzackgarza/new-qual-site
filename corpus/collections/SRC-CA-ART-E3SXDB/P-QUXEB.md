@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove the following statements concerning the convergence of power series on the unit circle $S^1 = \{z \in \CC : |z| = 1\}$:
+Prove the following statements concerning the convergence of power series on the unit circle $S^1 = \{z \in \CC : \abs{z} = 1\}$:
 
 (a) $\sum_{n=1}^\infty n z^n$ does not converge at any point of $S^1$.
 
@@ -101,12 +101,12 @@ This is summation by parts, using $z^n = B_n - B_{n-1}$.
 ::: {.pf-step #s4-3}
 
 For $N > M \ge 1$,
-$$\left| \sum_{n=M}^N \frac{z^n}{n} \right| \le \frac{2 M_z}{M}.$$
+$$\abs{ \sum_{n=M}^N \frac{z^n}{n} } \le \frac{2 M_z}{M}.$$
 
 ::: pf-proof
 
 The sequence $a_n=1/n$ is positive and decreasing, so $a_n - a_{n+1}\ge0$. Steps [](#s4-1){.pf-ref} and [](#s4-2){.pf-ref} give
-$$\left| \sum_{n=M}^N a_n z^n \right| \le M_z a_N + M_z a_M + M_z \sum_{n=M}^{N-1} (a_n - a_{n+1}) = 2 M_z a_M.$$
+$$\abs{ \sum_{n=M}^N a_n z^n } \le M_z a_N + M_z a_M + M_z \sum_{n=M}^{N-1} (a_n - a_{n+1}) = 2 M_z a_M.$$
 
 :::
 

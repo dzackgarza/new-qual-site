@@ -32,7 +32,7 @@ audit:
 ::: {.solution}
 Yes. One example is
 $$
-\boxed{f(z)=\frac{2z(1+z)}{(1-z)^2},\qquad |z|<1.}
+\boxed{f(z)=\frac{2z(1+z)}{(1-z)^2},\qquad \abs{z}<1.}
 $$
 
 ::: pf
@@ -46,12 +46,12 @@ The disk is biholomorphic to the right half-plane.
 The map $T(z)=(1+z)/(1-z)$ is holomorphic on the unit
 disk and satisfies
 $$
-\operatorname{Re}T(z)=\frac{1-|z|^2}{|1-z|^2}>0.
+\operatorname{Re}T(z)=\frac{1-\abs{z}^2}{\abs{1-z}^2}>0.
 $$
 For any $t$ with $\operatorname{Re}t>0$, its inverse
 $z=(t-1)/(t+1)$ is well defined and satisfies
 $$
-1-|z|^2=\frac{4\operatorname{Re}t}{|t+1|^2}>0.
+1-\abs{z}^2=\frac{4\operatorname{Re}t}{\abs{t+1}^2}>0.
 $$
 Direct substitution verifies the inverse identities.
 Thus $T$ maps the disk onto $H=\{t:\operatorname{Re}t>0\}$.

@@ -29,19 +29,19 @@ $$
 $$
 For $z\in\DD$, the point $z+1$ lies in $B(0,2)$, so $g$ is analytic on $\DD$.
 
-Let $K\Subset\DD$, and choose $r<1$ with $|z|\le r$ on $K$. Fix $\rho$ with
+Let $K\Subset\DD$, and choose $r<1$ with $\abs{z}\le r$ on $K$. Fix $\rho$ with
 $1<\rho<2-r$. For every $z\in K$, the closed disk of radius $\rho$ centered at
 $z$ lies in the compact disk $\overline{B(0,r+\rho)}\subset B(0,2)$. Let
 $$
-M=\max_{|w|\le r+\rho}|f(w)|.
+M=\max_{\abs{w}\le r+\rho}\abs{f(w)}.
 $$
-Cauchy's estimates on the circle $|w-z|=\rho$ give
+Cauchy's estimates on the circle $\abs{w-z}=\rho$ give
 $$
-\left|{f^{(n)}(z)\over n!}\right|\le M\rho^{-n}
+\abs{{f^{(n)}(z)\over n!}}\le M\rho^{-n}
 \qquad(z\in K,\ n\ge0).
 $$
 Since $\rho>1$, the Weierstrass M-test shows that the series converges
-uniformly on $K$. Since $|1|<\rho$, Taylor's theorem at $z$, evaluated at
+uniformly on $K$. Since $\abs{1}<\rho$, Taylor's theorem at $z$, evaluated at
 $z+1$, gives
 $$
 f(z+1)=\sum_{n=0}^\infty {f^{(n)}(z)\over n!},

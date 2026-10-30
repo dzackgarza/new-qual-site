@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a>0$, $a\ne2$, and let $C_a$ be the positively oriented circle $|z|=a$.
+Let $a>0$, $a\ne2$, and let $C_a$ be the positively oriented circle $\abs{z}=a$.
 Evaluate
 $$
 \int_{C_a}\frac{z^2+e^z}{z^2(z-2)}\,dz.
@@ -52,10 +52,10 @@ the double-pole residue formula gives
 $$
 \Res_{z=0}F
 =
-\left.
+\evaluated{
 \frac{d}{dz}
 \left(\frac{z^2+e^z}{z-2}\right)
-\right|_{z=0}.
+}_{z=0}.
 $$
 The derivative is
 $$
@@ -85,9 +85,9 @@ By the simple-pole formula,
 $$
 \Res_{z=2}F
 =
-\left.
+\evaluated{
 \frac{z^2+e^z}{z^2}
-\right|_{z=2}
+}_{z=2}
 =
 \frac{4+e^2}{4}
 =

@@ -52,7 +52,7 @@ Generate the action and part (a):
 ::: pf-step
 $G=\langle A\rangle$ with
 $$A=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix},\qquad A^4=I,$$
-so $|G|=4$ and
+so $\cardinality{G}=4$ and
 $$A(x,y)=(-y,x).$$
 :::
 

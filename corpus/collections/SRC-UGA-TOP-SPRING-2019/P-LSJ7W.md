@@ -147,12 +147,12 @@ For $X = T^2$:
 
 ::: pf-step
 The exact sequence reduces to:
-$$0 \to \operatorname{coker}(I - A_*) \to H_1(T_A^3) \to \ker(I - A_*|_{H_0}) \to 0.$$
+$$0 \to \operatorname{coker}(I - A_*) \to H_1(T_A^3) \to \ker(I - A_*\restrict_{H_0}) \to 0.$$
 
 :::
 
 ::: pf-step
-Since $\ker(I - A_*|_{H_0}) = H_0(T^2) \cong \ZZ$ is a free abelian group, the short exact sequence splits:
+Since $\ker(I - A_*\restrict_{H_0}) = H_0(T^2) \cong \ZZ$ is a free abelian group, the short exact sequence splits:
 $$H_1(T_A^3) \cong \operatorname{coker}(I - A_*) \oplus \ZZ.$$
 
 :::
@@ -179,7 +179,7 @@ $$I - A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} - \begin{pmatrix} 1 & 1 \
 
 ::: pf-step
 The image of $I - A: \ZZ^2 \to \ZZ^2$ is:
-$$\operatorname{Im}(I - A) = \left\{ \begin{pmatrix} 0 & -1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} u \\ v \end{pmatrix} \;\middle|\; u, v \in \ZZ \right\} = \left\{ \begin{pmatrix} -v \\ 0 \end{pmatrix} \;\middle|\; v \in \ZZ \right\} = \ZZ \begin{pmatrix} 1 \\ 0 \end{pmatrix} \oplus \{0\}.$$
+$$\operatorname{Im}(I - A) = \left\{ \begin{pmatrix} 0 & -1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} u \\ v \end{pmatrix} \;\st\; u, v \in \ZZ \right\} = \left\{ \begin{pmatrix} -v \\ 0 \end{pmatrix} \;\st\; v \in \ZZ \right\} = \ZZ \begin{pmatrix} 1 \\ 0 \end{pmatrix} \oplus \{0\}.$$
 
 :::
 

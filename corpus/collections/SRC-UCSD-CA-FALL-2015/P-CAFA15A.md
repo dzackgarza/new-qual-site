@@ -46,7 +46,7 @@ We choose the following four results.
 
 **Cauchy's integral formula.** If $f$ is holomorphic on a neighborhood of the closed disk $\overline{B(a,R)}$, then for every $z\in B(a,R)$,
 $$
-f(z)=\frac{1}{2\pi i}\int_{|\zeta-a|=R}\frac{f(\zeta)}{\zeta-z}\,d\zeta.
+f(z)=\frac{1}{2\pi i}\int_{\abs{\zeta-a}=R}\frac{f(\zeta)}{\zeta-z}\,d\zeta.
 $$
 
 **Morera's theorem.** If $f$ is continuous on a domain $\Omega$ and
@@ -61,9 +61,9 @@ for every triangle $T$ whose closure lies in $\Omega$, then $f$ is holomorphic o
 
 We sketch proofs of Liouville and the open mapping theorem.
 
-For Liouville, if $|f|\le M$ on $\CC$, then Cauchy's estimate on the circle $|z-a|=R$ gives
+For Liouville, if $\abs{f}\le M$ on $\CC$, then Cauchy's estimate on the circle $\abs{z-a}=R$ gives
 $$
-|f'(a)|\le \frac{M}{R}.
+\abs{f'(a)}\le \frac{M}{R}.
 $$
 Letting $R\to\infty$ gives $f'(a)=0$ for every $a$, hence $f$ is constant.
 
@@ -71,13 +71,13 @@ For the open mapping theorem, let $a\in\Omega$ and write
 $$
 f(z)-f(a)=(z-a)^m g(z),
 $$
-where $m\ge1$ and $g$ is holomorphic with $g(a)\ne0$. Shrink to a disk $\overline{B(a,r)}\subset\Omega$ on which $g$ has no zero. On $|z-a|=r$, let
+where $m\ge1$ and $g$ is holomorphic with $g(a)\ne0$. Shrink to a disk $\overline{B(a,r)}\subset\Omega$ on which $g$ has no zero. On $\abs{z-a}=r$, let
 $$
-\eta=\min |f(z)-f(a)|>0.
+\eta=\min \abs{f(z)-f(a)}>0.
 $$
-If $|w-f(a)|<\eta$, then on the boundary
+If $\abs{w-f(a)}<\eta$, then on the boundary
 $$
-|(f(z)-f(a))-(f(z)-w)|=|w-f(a)|<|f(z)-f(a)|.
+\abs{(f(z)-f(a))-(f(z)-w)}=\abs{w-f(a)}<\abs{f(z)-f(a)}.
 $$
 Rouché's theorem implies that $f(z)-w$ and $f(z)-f(a)$ have the same number of zeros in $B(a,r)$, namely $m$. Thus every such $w$ lies in $f(B(a,r))$, so $f(a)$ is an interior point of the image.
 :::

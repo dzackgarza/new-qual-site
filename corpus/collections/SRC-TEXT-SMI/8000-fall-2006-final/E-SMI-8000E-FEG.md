@@ -58,7 +58,7 @@ $$
 be an intermediate field, and put
 $$
 H=\operatorname{Gal}(E/L)
-=\{\sigma\in\operatorname{Gal}_k(E):\sigma|_L=\operatorname{id}_L\}.
+=\{\sigma\in\operatorname{Gal}_k(E):\sigma\restrict_L=\operatorname{id}_L\}.
 $$
 Let
 $$
@@ -76,7 +76,7 @@ $$
 
 ::: {.pf-step #s2}
 
-The extension $E/L$ is finite Galois, so $|H|=[E:L]$.
+The extension $E/L$ is finite Galois, so $\cardinality{H}=[E:L]$.
 
 ::: pf-proof
 
@@ -94,7 +94,7 @@ $$
 Thus $E/L$ is finite Galois. Therefore its number of $L$-automorphisms equals
 its degree:
 $$
-\boxed{|H|=[E:L].}
+\boxed{\cardinality{H}=[E:L].}
 $$
 
 :::
@@ -119,14 +119,14 @@ $$
 For any finite field extension, the number of automorphisms over the base is
 at most the degree. Hence
 $$
-|H|
-\le |\operatorname{Aut}_F(E)|
+\cardinality{H}
+\le \cardinality{\operatorname{Aut}_F(E)}
 \le [E:F].
 $$
 Combining this with step [](#s2){.pf-ref} gives
 $$
 [E:L]
-=|H|
+=\cardinality{H}
 \le [E:F]
 \le [E:L].
 $$

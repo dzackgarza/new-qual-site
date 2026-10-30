@@ -39,36 +39,36 @@ $$
 
 ::: {.pf-step #s1-1}
 
-There exists $R>0$ such that on $|z|=R$,
+There exists $R>0$ such that on $\abs{z}=R$,
 $$
-|Q(z)|<|a_nz^n|.
+\abs{Q(z)}<\abs{a_nz^n}.
 $$
 
 
 ::: pf-proof
 
-For $|z|=R\ge1$,
+For $\abs{z}=R\ge1$,
 $$
-|Q(z)|
+\abs{Q(z)}
 \le
-\sum_{j=0}^{n-1}|a_j|R^j
+\sum_{j=0}^{n-1}\abs{a_j}R^j
 \le
-\left(\sum_{j=0}^{n-1}|a_j|\right)R^{n-1}.
+\left(\sum_{j=0}^{n-1}\abs{a_j}\right)R^{n-1}.
 $$
 Choose $R$ so large that
 $$
 R>
-\frac{\sum_{j=0}^{n-1}|a_j|}{|a_n|}.
+\frac{\sum_{j=0}^{n-1}\abs{a_j}}{\abs{a_n}}.
 $$
 Then
 $$
-|Q(z)|
+\abs{Q(z)}
 <
-|a_n|R^n
+\abs{a_n}R^n
 =
-|a_nz^n|
+\abs{a_nz^n}
 $$
-on the circle $|z|=R$.
+on the circle $\abs{z}=R$.
 
 :::
 
@@ -77,18 +77,18 @@ on the circle $|z|=R$.
 ::: {.pf-step #s1-2}
 
 The polynomials $P_n(z)$ and $a_nz^n$ have the same number of zeros in
-$|z|<R$, counted with multiplicity.
+$\abs{z}<R$, counted with multiplicity.
 
 
 ::: pf-proof
 
-On $|z|=R$, step [](#s1-1){.pf-ref} gives
+On $\abs{z}=R$, step [](#s1-1){.pf-ref} gives
 $$
-|P_n(z)-a_nz^n|
+\abs{P_n(z)-a_nz^n}
 =
-|Q(z)|
+\abs{Q(z)}
 <
-|a_nz^n|.
+\abs{a_nz^n}.
 $$
 Rouché's theorem therefore gives the asserted equality of zero counts.
 
@@ -108,7 +108,7 @@ zeros in $\CC$, counted with multiplicity.
 ::: pf-proof
 
 The polynomial $a_nz^n$ has exactly one zero, namely $0$, with multiplicity $n$.
-Hence step [](#s1-2){.pf-ref} shows that $P_n$ has exactly $n$ zeros in $|z|<R$, counted with
+Hence step [](#s1-2){.pf-ref} shows that $P_n$ has exactly $n$ zeros in $\abs{z}<R$, counted with
 multiplicity.
 
 A nonzero polynomial of degree $n$ cannot have more than $n$ zeros counted with

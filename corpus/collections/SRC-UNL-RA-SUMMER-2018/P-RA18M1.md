@@ -74,10 +74,10 @@ step [](#s1-2){.pf-ref} shows $x_n \to 0$.
 ::: pf-proof
 
 ::: {.pf-step #s2-1}
-$\left|\frac{\cos(k!)}{k(k+1)}\right| \le \frac{1}{k(k+1)}$.
+$\abs{\frac{\cos(k!)}{k(k+1)}} \le \frac{1}{k(k+1)}$.
 
 ::: pf-proof
-$|\cos| \le 1$.
+$\abs{\cos} \le 1$.
 :::
 
 :::

@@ -20,9 +20,9 @@ audit:
 Problem 6. Let $f:[0,1]\to\RR$ be a $C^1$ function. Prove that
 $$
 \lim_{n\to\infty}\sum_{k=0}^{n-1}
-\left|f\!\left(\frac{k+1}{n}\right)-f\!\left(\frac{k}{n}\right)\right|
+\abs{f\!\left(\frac{k+1}{n}\right)-f\!\left(\frac{k}{n}\right)}
 =
-\int_0^1 |f'(t)|\,dt.
+\int_0^1 \abs{f'(t)}\,dt.
 $$
 :::
 
@@ -67,13 +67,13 @@ The hypotheses hold because $f$ is $C^1$, hence continuous on the closed interva
 
 Therefore
 $$
-\left|
+\abs{
 f\!\left(\frac{k+1}{n}\right)
 -
 f\!\left(\frac{k}{n}\right)
-\right|
+}
 =
-\frac1n|f'(\xi_{k,n})|.
+\frac1n\abs{f'(\xi_{k,n})}.
 $$
 
 
@@ -91,11 +91,11 @@ The sum in the problem equals the tagged Riemann sum
 $$
 \frac1n
 \sum_{k=0}^{n-1}
-|f'(\xi_{k,n})|
+\abs{f'(\xi_{k,n})}
 $$
 for the function
 $$
-g(t)=|f'(t)|
+g(t)=\abs{f'(t)}
 $$
 on the uniform partition of $[0,1]$.
 
@@ -116,7 +116,7 @@ The point $\xi_{k,n}$ is a tag in the $k$th interval of the uniform partition, w
 
 The function
 $$
-g(t)=|f'(t)|
+g(t)=\abs{f'(t)}
 $$
 is continuous on $[0,1]$.
 
@@ -134,7 +134,7 @@ Therefore their composition is continuous.
 
 The tagged Riemann sums in step [](#s1-3){.pf-ref} converge to
 $$
-\int_0^1|f'(t)|\,dt.
+\int_0^1\abs{f'(t)}\,dt.
 $$
 
 
@@ -146,7 +146,7 @@ $$
 $$
 which tends to $0$.
 For a continuous function on a compact interval, every sequence of tagged Riemann sums whose mesh tends to $0$ converges to the Riemann integral.
-Applying this theorem to the continuous function $g=|f'|$ from step [](#s1-4){.pf-ref} gives the claim.
+Applying this theorem to the continuous function $g=\abs{f'}$ from step [](#s1-4){.pf-ref} gives the claim.
 
 :::
 
@@ -159,13 +159,13 @@ $$
 \boxed{
 \lim_{n\to\infty}
 \sum_{k=0}^{n-1}
-\left|
+\abs{
 f\!\left(\frac{k+1}{n}\right)
 -
 f\!\left(\frac{k}{n}\right)
-\right|
+}
 =
-\int_0^1|f'(t)|\,dt
+\int_0^1\abs{f'(t)}\,dt
 }.
 $$
 

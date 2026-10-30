@@ -121,7 +121,7 @@ $$
 \cong
 \left\langle
 a,b,c_1,c_2,c_3
-\ \middle|\
+\ \presentationbar\
 [a,b]c_1c_2c_3=1
 \right\rangle}.
 $$

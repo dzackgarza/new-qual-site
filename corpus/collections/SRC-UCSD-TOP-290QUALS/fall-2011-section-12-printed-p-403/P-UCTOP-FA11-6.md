@@ -25,7 +25,7 @@ Compute $\pi_3$ of the one-point union $P \vee S^3$.
 The universal cover of $P\vee S^3$ is obtained from the universal cover $S^3\to P$ by attaching one copy of $S^3$ at each lift of the wedge point.
 
 ::: pf-proof
-The $S^3$ summand is simply connected. The fiber over the wedge point in the universal cover of $P$ has cardinality $|\pi_1(P)|=120$, so the lifted wedge summand contributes $120$ attached copies of $S^3$.
+The $S^3$ summand is simply connected. The fiber over the wedge point in the universal cover of $P$ has cardinality $\cardinality{\pi_1(P)}=120$, so the lifted wedge summand contributes $120$ attached copies of $S^3$.
 :::
 
 :::

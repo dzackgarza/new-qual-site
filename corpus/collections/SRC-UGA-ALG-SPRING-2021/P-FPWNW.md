@@ -38,7 +38,7 @@ Every group of order $p^2$ is abelian.
 
 ::: pf-proof
 
-The class equation for a finite $p$-group implies that its center is nontrivial. Thus, if $|G|=p^2$, then $|Z(G)|$ is $p$ or $p^2$. In the latter case $G=Z(G)$. In the former, $G/Z(G)$ has prime order and is cyclic. A group with cyclic central quotient is abelian: if $G/Z(G)=\langle gZ(G)\rangle$, every pair of elements has the form $g^az,g^bw$ with $z,w$ central, so they commute. Thus $G$ is abelian in either case.
+The class equation for a finite $p$-group implies that its center is nontrivial. Thus, if $\cardinality{G}=p^2$, then $\cardinality{Z(G)}$ is $p$ or $p^2$. In the latter case $G=Z(G)$. In the former, $G/Z(G)$ has prime order and is cyclic. A group with cyclic central quotient is abelian: if $G/Z(G)=\langle gZ(G)\rangle$, every pair of elements has the form $g^az,g^bw$ with $z,w$ central, so they commute. Thus $G$ is abelian in either case.
 
 :::
 
@@ -50,7 +50,7 @@ The three Sylow theorems assert existence, conjugacy and containment, and a rest
 
 ::: pf-proof
 
-If $|G|=p^am$ with $p\nmid m$, then (i) there exists a subgroup of order $p^a$; (ii) every $p$-subgroup lies in a Sylow $p$-subgroup, and all Sylow $p$-subgroups are conjugate; (iii) their number $n_p$ divides $m$ and satisfies $n_p\equiv1\pmod p$. These are the three Sylow theorems.
+If $\cardinality{G}=p^am$ with $p\nmid m$, then (i) there exists a subgroup of order $p^a$; (ii) every $p$-subgroup lies in a Sylow $p$-subgroup, and all Sylow $p$-subgroups are conjugate; (iii) their number $n_p$ divides $m$ and satisfies $n_p\equiv1\pmod p$. These are the three Sylow theorems.
 
 :::
 

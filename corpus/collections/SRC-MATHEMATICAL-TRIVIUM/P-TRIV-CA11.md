@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-What is the image of $\{ z | \mathrm { R e } ( z ) > \mathrm { I m } ( z ) > 0 \}$ under the mapping $e ^ { z ^ { 2 } } ?$
+What is the image of $\{ z \st \mathrm { R e } ( z ) > \mathrm { I m } ( z ) > 0 \}$ under the mapping $e ^ { z ^ { 2 } } ?$
 :::
 
 ::: {.solution}
@@ -105,7 +105,7 @@ square root has argument differing by $\pi$ and does not lie in $S$.
 
 If $w=u+iv\in Q$, then
 $$
-|e^w|>1.
+\abs{e^w}>1.
 $$
 
 
@@ -117,7 +117,7 @@ e^w=e^u e^{iv},
 $$
 so
 $$
-|e^w|=e^u.
+\abs{e^w}=e^u.
 $$
 Since $u>0$, one has $e^u>1$.
 
@@ -129,7 +129,7 @@ Since $u>0$, one has $e^u>1$.
 
 Every complex number $\zeta$ with
 $$
-|\zeta|>1
+\abs{\zeta}>1
 $$
 equals $e^w$ for some $w\in Q$.
 
@@ -174,7 +174,7 @@ $$
 Therefore the image of $S$ under $z\mapsto e^{z^2}$ is
 $$
 \boxed{
-\{\zeta\in\CC:|\zeta|>1\}.
+\{\zeta\in\CC:\abs{\zeta}>1\}.
 }
 $$
 

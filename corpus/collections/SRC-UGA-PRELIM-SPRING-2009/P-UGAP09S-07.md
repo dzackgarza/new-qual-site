@@ -103,7 +103,7 @@ so $g$ is again a quotient of polynomial functions with nonzero denominator.
 
 For every $(x,y)\ne(0,0)$,
 $$
-|g(x,y)|
+\abs{g(x,y)}
 \le
 \sqrt{x^2+y^2}.
 $$
@@ -117,13 +117,13 @@ r=\sqrt{x^2+y^2}.
 $$
 Then
 $$
-|x|\le r,
+\abs{x}\le r,
 \qquad
-|y|\le r.
+\abs{y}\le r.
 $$
 Therefore
 $$
-|x^3y^2|
+\abs{x^3y^2}
 \le r^5,
 $$
 while
@@ -132,8 +132,8 @@ $$
 $$
 Hence
 $$
-|g(x,y)|
-=\frac{|x^3y^2|}{(x^2+y^2)^2}
+\abs{g(x,y)}
+=\frac{\abs{x^3y^2}}{(x^2+y^2)^2}
 \le r.
 $$
 
@@ -150,8 +150,8 @@ The function $g$ is continuous at $(0,0)$.
 
 By step [](#s1-4){.pf-ref},
 $$
-|g(x,y)-g(0,0)|
-=|g(x,y)|
+\abs{g(x,y)-g(0,0)}
+=\abs{g(x,y)}
 \le
 \sqrt{x^2+y^2}.
 $$

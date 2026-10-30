@@ -26,7 +26,7 @@ b. Show that either $G$ has a normal subgroup of order 32, or a normal subgroup 
 ::: {.solution}
 Since
 $$
-|G|=96=2^5\cdot3,
+\cardinality{G}=96=2^5\cdot3,
 $$
 the number $n_2$ of Sylow $2$-subgroups satisfies
 $$
@@ -49,15 +49,15 @@ $$
 \varphi:G\longrightarrow S_3.
 $$
 The action is transitive, because all Sylow $2$-subgroups are conjugate.
-Therefore $|\operatorname{im}\varphi|$ is divisible by $3$. Since it also
-divides $|S_3|=6$, we have
+Therefore $\cardinality{\operatorname{im}\varphi}$ is divisible by $3$. Since it also
+divides $\cardinality{S_3}=6$, we have
 $$
-|\operatorname{im}\varphi|\in\{3,6\}.
+\cardinality{\operatorname{im}\varphi}\in\{3,6\}.
 $$
 Thus
 $$
-|\ker\varphi|
-=\frac{96}{|\operatorname{im}\varphi|}
+\cardinality{\ker\varphi}
+=\frac{96}{\cardinality{\operatorname{im}\varphi}}
 \in\{32,16\}.
 $$
 The kernel is normal in $G$, so $G$ has a normal subgroup of order $32$ or

@@ -39,7 +39,7 @@ The uniform limit $f$ is Riemann integrable on $[a,b]$.
 
 Let $\varepsilon>0$. Choose $N$ such that
 $$
-\|f-f_N\|_\infty
+\norm{f-f_N}_\infty
 <
 \frac{\varepsilon}{4(b-a)}.
 $$
@@ -50,7 +50,7 @@ $$
 
 Set
 $$
-\delta=\|f-f_N\|_\infty.
+\delta=\norm{f-f_N}_\infty.
 $$
 On every subinterval $I$ of $P$,
 $$
@@ -78,13 +78,13 @@ By the Darboux criterion, $f$ is Riemann integrable.
 
 For every $n$,
 $$
-\left|
+\abs{
 \int_a^b f_n(x)\,dx
 -
 \int_a^b f(x)\,dx
-\right|
+}
 \le
-(b-a)\|f_n-f\|_\infty.
+(b-a)\norm{f_n-f}_\infty.
 $$
 
 
@@ -92,19 +92,19 @@ $$
 
 The function $f_n-f$ is Riemann integrable by step [](#s1-1){.pf-ref} and linearity of the Riemann integral. Since
 $$
--\|f_n-f\|_\infty
+-\norm{f_n-f}_\infty
 \le
 f_n(x)-f(x)
 \le
-\|f_n-f\|_\infty
+\norm{f_n-f}_\infty
 $$
 for every $x\in[a,b]$, monotonicity of the integral gives
 $$
--(b-a)\|f_n-f\|_\infty
+-(b-a)\norm{f_n-f}_\infty
 \le
 \int_a^b(f_n-f)
 \le
-(b-a)\|f_n-f\|_\infty.
+(b-a)\norm{f_n-f}_\infty.
 $$
 Taking absolute values yields the claim.
 
@@ -128,7 +128,7 @@ $$
 
 Uniform convergence means
 $$
-\|f_n-f\|_\infty\to0.
+\norm{f_n-f}_\infty\to0.
 $$
 Therefore the right side of the estimate in step [](#s1-2){.pf-ref} tends to $0$, forcing the difference of the integrals to tend to $0$.
 

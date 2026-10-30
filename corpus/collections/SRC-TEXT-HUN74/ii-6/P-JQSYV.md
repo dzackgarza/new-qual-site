@@ -41,7 +41,7 @@ Up to isomorphism there are exactly five groups of order $18$.
 
 ::: pf-proof
 
-Let $|G|=18=2\cdot3^2$. By Sylow,
+Let $\cardinality{G}=18=2\cdot3^2$. By Sylow,
 $$
 n_3\mid2,\qquad n_3\equiv1\pmod3,
 $$
@@ -95,7 +95,7 @@ Up to isomorphism there are exactly five groups of order $20$.
 
 ::: pf-proof
 
-Let $|G|=20=2^2\cdot5$. Sylow gives
+Let $\cardinality{G}=20=2^2\cdot5$. Sylow gives
 $$
 n_5\mid4,\qquad n_5\equiv1\pmod5,
 $$
@@ -103,7 +103,7 @@ so $n_5=1$. Thus the Sylow $5$-subgroup
 $$
 N\cong\ZZ_5
 $$
-is normal. If $P$ is a Sylow $2$-subgroup, then $|P|=4$,
+is normal. If $P$ is a Sylow $2$-subgroup, then $\cardinality{P}=4$,
 $N\cap P=1$, and $NP=G$. Hence
 $$
 G\cong\ZZ_5\rtimes P,
@@ -151,7 +151,7 @@ Every group of order $30$ has a normal cyclic subgroup of order $15$.
 
 ::: pf-proof
 
-Let $|G|=30=2\cdot3\cdot5$. Sylow gives
+Let $\cardinality{G}=30=2\cdot3\cdot5$. Sylow gives
 $$
 n_5\in\{1,6\},\qquad n_3\in\{1,10\}.
 $$
@@ -167,7 +167,7 @@ homomorphism
 $$
 P_5\to\operatorname{Aut}(P_3)\cong\ZZ_2,
 $$
-which is trivial because $|P_5|=5$; hence $P_5$ normalizes and centralizes
+which is trivial because $\cardinality{P_5}=5$; hence $P_5$ normalizes and centralizes
 $P_3$, so again $P_3P_5$ is a subgroup of order $15$. Similarly, if only $P_5$
 is normal, conjugation by $P_3$ on $P_5$ maps a group of order $3$ into
 $\operatorname{Aut}(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a

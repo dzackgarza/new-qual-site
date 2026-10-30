@@ -30,7 +30,7 @@ audit:
 
 (a) (5 points) Show that P has no multiple zeros.
 
-(b) (15 points) Determine the number of zeros of P that lie in the closed disc $| z | \leq { \frac { 1 } { 2 } }$
+(b) (15 points) Determine the number of zeros of P that lie in the closed disc $\abs{ z } \leq { \frac { 1 } { 2 } }$
 :::
 
 ::: {.solution}
@@ -85,32 +85,32 @@ Part (b): Rouché's theorem gives exactly three zeros in the closed disk.
 
 ::: pf-proof
 
-On $|z|=1/2$,
+On $\abs{z}=1/2$,
 $$
-|z^7|=\frac1{128},
+\abs{z^7}=\frac1{128},
 $$
 whereas
 $$
-\left|z^3+\frac1{16}\right|
-\ge |z|^3-\frac1{16}
+\abs{z^3+\frac1{16}}
+\ge \abs{z}^3-\frac1{16}
 =\frac18-\frac1{16}
 =\frac1{16}.
 $$
 Hence
 $$
-|z^7|<\left|z^3+\frac1{16}\right|
+\abs{z^7}<\abs{z^3+\frac1{16}}
 $$
 on the entire boundary circle. Rouché's theorem shows that $P$ and
-$z^3+1/16$ have the same number of zeros in $|z|<1/2$, counted with
+$z^3+1/16$ have the same number of zeros in $\abs{z}<1/2$, counted with
 multiplicity.
 
 The three zeros of $z^3+1/16$ satisfy
 $$
-|z|=\left(\frac1{16}\right)^{1/3}=2^{-4/3}<\frac12,
+\abs{z}=\left(\frac1{16}\right)^{1/3}=2^{-4/3}<\frac12,
 $$
 so all three lie inside the circle. Therefore $P$ has exactly three zeros in
-$|z|<1/2$. The strict Rouché inequality also implies that $P$ has no zero on
-$|z|=1/2$. Thus the closed disk $|z|\le1/2$ contains exactly
+$\abs{z}<1/2$. The strict Rouché inequality also implies that $P$ has no zero on
+$\abs{z}=1/2$. Thus the closed disk $\abs{z}\le1/2$ contains exactly
 $$
 \boxed{3}
 $$

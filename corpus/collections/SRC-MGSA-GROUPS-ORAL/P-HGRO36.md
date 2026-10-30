@@ -48,7 +48,7 @@ acting independently on $a_i$ disjoint blocks of size $3^i$.
 
 The group $W_i$ is a $3$-subgroup of $S_{3^i}$ of order
 $$
-|W_i|=3^{(3^i-1)/2}.
+\cardinality{W_i}=3^{(3^i-1)/2}.
 $$
 
 ::: pf-proof
@@ -58,7 +58,7 @@ $$
 W_i=W_{i-1}^3\rtimes C_3,
 $$
 where the final $C_3$ cyclically permutes three blocks of size $3^{i-1}$.
-If $|W_{i-1}|=3^{e_{i-1}}$, then
+If $\cardinality{W_{i-1}}=3^{e_{i-1}}$, then
 $$
 e_i=3e_{i-1}+1,
 \qquad e_1=1.
@@ -119,7 +119,7 @@ Hence $P$ is a Sylow $3$-subgroup of $S_n$.
 
 ::: pf-proof
 
-By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $P$ has order equal to the full $3$-part of $|S_n|=n!$.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $P$ has order equal to the full $3$-part of $\cardinality{S_n}=n!$.
 Thus it is Sylow. Every Sylow $3$-subgroup is conjugate to such a block-wreath
 product.
 

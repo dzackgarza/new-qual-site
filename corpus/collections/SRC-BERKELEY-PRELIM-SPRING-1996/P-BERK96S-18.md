@@ -88,7 +88,7 @@ $$
 \qquad
 \beta:G\to H
 $$
-obtained by composing $\varphi|_{G_0}$ with the two projections are
+obtained by composing $\varphi\restrict_{G_0}$ with the two projections are
 homomorphisms. By step [](#s1){.pf-ref}, $\beta$ is trivial, so
 $$
 \varphi(g,1)=(\alpha(g),1)\in G_0.

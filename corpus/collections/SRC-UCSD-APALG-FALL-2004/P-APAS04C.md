@@ -28,7 +28,7 @@ Use the Singular Value Decomposition to show that $\tilde{x}=A^\dagger b$ is the
 
 (a) $\tilde{x}$ is a least squares solution,
 
-(b) if $\hat{x}$ is a least square solution then $\|\hat{x}\|_2\ge\|\tilde{x}\|_2$, and
+(b) if $\hat{x}$ is a least square solution then $\norm{\hat{x}}_2\ge\norm{\tilde{x}}_2$, and
 
 (c) $\tilde{x}$ is unique.
 
@@ -55,9 +55,9 @@ c=U^*b,
 \qquad
 y=V^*x.
 $$
-Then $\|x\|_2=\|y\|_2$ and
+Then $\norm{x}_2=\norm{y}_2$ and
 $$
-\|Ax-b\|_2=\|\Sigma y-c\|_2.
+\norm{Ax-b}_2=\norm{\Sigma y-c}_2.
 $$
 
 ::: pf
@@ -74,10 +74,10 @@ with $y_{r+1},\ldots,y_n$ arbitrary.
 
 Since $U$ is unitary,
 $$
-\|Ax-b\|_2^2
-=\|\Sigma y-c\|_2^2
-=\sum_{i=1}^r|\sigma_i y_i-c_i|^2
-+\sum_{i=r+1}^m|c_i|^2.
+\norm{Ax-b}_2^2
+=\norm{\Sigma y-c}_2^2
+=\sum_{i=1}^r\abs{\sigma_i y_i-c_i}^2
++\sum_{i=r+1}^m\abs{c_i}^2.
 $$
 The second sum is independent of $y$. Each term in the first sum is nonnegative and can be made zero uniquely by taking
 $$
@@ -129,15 +129,15 @@ Its first $r$ coordinates are exactly $c_i/\sigma_i$, so step [](#s1){.pf-ref} s
 
 If $\widehat x$ is any least-squares solution, then
 $$
-\|\widehat x\|_2^2
-=\|\widetilde x\|_2^2
-+\sum_{i=r+1}^n |\widehat y_i|^2,
+\norm{\widehat x}_2^2
+=\norm{\widetilde x}_2^2
++\sum_{i=r+1}^n \abs{\widehat y_i}^2,
 \qquad
 \widehat y=V^*\widehat x.
 $$
 In particular,
 $$
-\|\widehat x\|_2\ge \|\widetilde x\|_2.
+\norm{\widehat x}_2\ge \norm{\widetilde x}_2.
 $$
 
 ::: pf-proof
@@ -148,15 +148,15 @@ $$
 $$
 By step [](#s2){.pf-ref}, the SVD coordinates of $\widetilde x$ have these same first $r$ entries and zero entries afterward. Since $V$ is unitary,
 $$
-\|\widehat x\|_2^2
-=\|\widehat y\|_2^2
-=\sum_{i=1}^r\left|\frac{c_i}{\sigma_i}\right|^2
- +\sum_{i=r+1}^n|\widehat y_i|^2,
+\norm{\widehat x}_2^2
+=\norm{\widehat y}_2^2
+=\sum_{i=1}^r\abs{\frac{c_i}{\sigma_i}}^2
+ +\sum_{i=r+1}^n\abs{\widehat y_i}^2,
 $$
 whereas
 $$
-\|\widetilde x\|_2^2
-=\sum_{i=1}^r\left|\frac{c_i}{\sigma_i}\right|^2.
+\norm{\widetilde x}_2^2
+=\sum_{i=1}^r\abs{\frac{c_i}{\sigma_i}}^2.
 $$
 This proves part (b).
 

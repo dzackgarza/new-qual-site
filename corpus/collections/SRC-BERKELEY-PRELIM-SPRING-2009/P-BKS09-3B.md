@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-How many roots of the equation $z^4 - 5z^3 + z - 2 = 0$ lie in the disk $|z| < 1$?
+How many roots of the equation $z^4 - 5z^3 + z - 2 = 0$ lie in the disk $\abs{z} < 1$?
 :::
 
 ::: {.solution}

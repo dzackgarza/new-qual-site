@@ -127,7 +127,7 @@ $$
 $$
 such that
 $$
-H|_W:W\longrightarrow Z
+H\restrict_W:W\longrightarrow Z
 $$
 is a $C^r$ diffeomorphism.
 
@@ -221,7 +221,7 @@ Conversely, if $(x,y)\in A\times B$ and $F(x,y)=c$, then
 $$
 H(x,y)=(x,c).
 $$
-Since $H|_W$ is injective and
+Since $H\restrict_W$ is injective and
 $$
 H(x,\phi(x))=(x,c),
 $$

@@ -24,7 +24,7 @@ audit:
 ::: {.exercise}
 Consider the Vandermonde matrix:
 $$
-A \definedas 
+A \coloneqq 
 \left(\begin{array}{ccc}
 1 & \cdots & 1 \\
 \lambda_{1} & \cdots & \lambda_{k} \\

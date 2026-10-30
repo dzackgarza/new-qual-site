@@ -250,7 +250,7 @@ meets the cubic $F_3$ in a divisor of degree $3$ on $C$, and the
 one-parameter family of ruling lines gives a base-point-free pencil of such
 divisors.
 
-Conversely, let $|D|$ be a $g^1_3$ on $C$.  Thus
+Conversely, let $\linearsystem{D}$ be a $g^1_3$ on $C$.  Thus
 $$
 \deg D=3,
 \qquad
@@ -279,7 +279,7 @@ $$
 \ell_D\subset Q.
 $$
 As $D$ varies in its pencil, these lines vary in a ruling of $Q$.
-The ruling recovers $|D|$ by intersection with $C$, proving the bijection.
+The ruling recovers $\linearsystem{D}$ by intersection with $C$, proving the bijection.
 
 :::
 

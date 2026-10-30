@@ -46,7 +46,7 @@ For $j=0,1$, let $C_j$ be the connected component of $\widetilde X$ containing $
 ::: pf
 
 ::: {.pf-step #covering-restriction}
-Each $C_j$ and $X_0$ is open and path-connected, and $p_j\coloneqq p|_{C_j}\colon C_j\to X_0$ is a covering map.
+Each $C_j$ and $X_0$ is open and path-connected, and $p_j\coloneqq p\restrict_{C_j}\colon C_j\to X_0$ is a covering map.
 
 ::: pf-proof
 In a locally path-connected space, connected components are open and path-connected.

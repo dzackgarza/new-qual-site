@@ -120,7 +120,7 @@ The function $f$ is constant on all of $\Omega$.
 
 Let
 $$
-f|_D\equiv c.
+f\restrict_D\equiv c.
 $$
 Then the holomorphic function
 $$

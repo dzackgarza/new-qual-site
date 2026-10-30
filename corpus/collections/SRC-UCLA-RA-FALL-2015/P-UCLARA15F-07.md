@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume that $f(z)$ is analytic in $\{z : |z| < 1\}$ and continuous on $\{z : |z| \leq 1\}$. If $f(z) = f(1/z)$ when $|z| = 1$, prove that $f(z)$ is constant.
+Assume that $f(z)$ is analytic in $\{z : \abs{z} < 1\}$ and continuous on $\{z : \abs{z} \leq 1\}$. If $f(z) = f(1/z)$ when $\abs{z} = 1$, prove that $f(z)$ is constant.
 :::
 
 ::: {.solution}
@@ -36,8 +36,8 @@ $$
 F(z)
 =
 \begin{cases}
-f(z),&|z|\le1,\\[4pt]
-f(1/z),&|z|\ge1.
+f(z),&\abs{z}\le1,\\[4pt]
+f(1/z),&\abs{z}\ge1.
 \end{cases}}
 $$
 
@@ -50,7 +50,7 @@ The two formulas agree on the unit circle.
 
 ::: pf-proof
 
-If $|z|=1$, the hypothesis gives
+If $\abs{z}=1$, the hypothesis gives
 $$
 f(z)=f(1/z).
 $$
@@ -67,7 +67,7 @@ Therefore $F$ is well defined.
 
 ::: pf-proof
 
-The only overlap of the two regions in the definition is $|z|=1$, and step [](#s1-1){.pf-ref} shows equality there.
+The only overlap of the two regions in the definition is $\abs{z}=1$, and step [](#s1-1){.pf-ref} shows equality there.
 
 :::
 
@@ -80,13 +80,13 @@ The function $F$ is continuous on $\CC$.
 
 ::: pf-proof
 
-On $|z|\le1$, continuity follows from the assumed continuity of $f$ on the closed disk.
+On $\abs{z}\le1$, continuity follows from the assumed continuity of $f$ on the closed disk.
 
-On $|z|\ge1$, the map
+On $\abs{z}\ge1$, the map
 $$
 z\mapsto \frac1z
 $$
-is continuous and maps this region into $|w|\le1$, so
+is continuous and maps this region into $\abs{w}\le1$, so
 $$
 z\mapsto f(1/z)
 $$
@@ -102,7 +102,7 @@ The two continuous pieces agree on their common boundary by step [](#s1-1){.pf-r
 
 The function $F$ is analytic on
 $$
-\{z:|z|<1\}.
+\{z:\abs{z}<1\}.
 $$
 
 
@@ -122,7 +122,7 @@ and $f$ is analytic by hypothesis.
 
 The function $F$ is analytic on
 $$
-\{z:|z|>1\}.
+\{z:\abs{z}>1\}.
 $$
 
 
@@ -132,7 +132,7 @@ There
 $$
 F(z)=f(1/z).
 $$
-The map $z\mapsto1/z$ is analytic on $\CC\setminus\{0\}$, and for $|z|>1$, one has $|1/z|<1$, where $f$ is analytic. Hence the composition is analytic.
+The map $z\mapsto1/z$ is analytic on $\CC\setminus\{0\}$, and for $\abs{z}>1$, one has $\abs{1/z}<1$, where $f$ is analytic. Hence the composition is analytic.
 
 :::
 
@@ -177,9 +177,9 @@ Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} cover all points of $\CC$.
 
 Since $f$ is continuous on the compact closed unit disk, there exists $M>0$ such that
 $$
-\boxed{|f(w)|\le M}
+\boxed{\abs{f(w)}\le M}
 $$
-for every $|w|\le1$.
+for every $\abs{w}\le1$.
 
 
 ::: pf-proof
@@ -192,9 +192,9 @@ A continuous function on a compact set is bounded.
 
 ::: {.pf-step #s1-9}
 
-For every $|z|\le1$,
+For every $\abs{z}\le1$,
 $$
-|F(z)|\le M.
+\abs{F(z)}\le M.
 $$
 
 
@@ -212,9 +212,9 @@ and apply step [](#s1-8){.pf-ref}.
 
 ::: {.pf-step #s1-10}
 
-For every $|z|\ge1$,
+For every $\abs{z}\ge1$,
 $$
-|F(z)|\le M.
+\abs{F(z)}\le M.
 $$
 
 
@@ -226,7 +226,7 @@ F(z)=f(1/z),
 $$
 and
 $$
-|1/z|\le1.
+\abs{1/z}\le1.
 $$
 Apply step [](#s1-8){.pf-ref}.
 
@@ -238,7 +238,7 @@ Apply step [](#s1-8){.pf-ref}.
 
 Hence
 $$
-\boxed{|F(z)|\le M}
+\boxed{\abs{F(z)}\le M}
 $$
 for every $z\in\CC$.
 
@@ -274,7 +274,7 @@ Therefore $f$ is constant on the unit disk.
 
 ::: pf-proof
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 f(z)=F(z),
 $$

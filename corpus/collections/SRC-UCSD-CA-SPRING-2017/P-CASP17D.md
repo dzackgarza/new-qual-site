@@ -28,7 +28,7 @@ a_n=\sqrt n+\frac1{\sqrt n}.
 $$
 Then $a_n\to\infty$ and $a_n\asymp\sqrt n$. Since
 $$
-\sum_n |a_n|^{-3}<\infty,
+\sum_n \abs{a_n}^{-3}<\infty,
 $$
 the canonical product
 $$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-17
 kind: problem
-title: Entire functions satisfying $|f|\le|g|$ are constant multiples
+title: Entire functions satisfying $\abs{f}\le\abs{g}$ are constant multiples
 classification:
   areas: [prelim]
   topics: []
@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Suppose $f$ and $g$ are entire functions such that
 $$
-|f(z)|\le |g(z)|
+\abs{f(z)}\le \abs{g(z)}
 $$
 for every $z\in\CC$.
 Show that

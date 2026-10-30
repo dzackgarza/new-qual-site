@@ -87,7 +87,7 @@ Part (b): Continuity criterion for coherent topology:
 
 ::: pf-step
 Let $f: X \to Y$ be a map and $V \subseteq Y$ an open set.
-Then $f^{-1}(V) \cap X_i = (f|_{X_i})^{-1}(V)$ for all $i \ge 1$.
+Then $f^{-1}(V) \cap X_i = (f\restrict_{X_i})^{-1}(V)$ for all $i \ge 1$.
 
 ::: pf-proof
 definition of preimage.
@@ -98,9 +98,9 @@ definition of preimage.
 ::: pf-step
 By the definition of the coherent topology:
 $$
-f^{-1}(V) \text{ is open in } X \iff \forall i \ge 1, \, (f|_{X_i})^{-1}(V) \text{ is open in } X_i.
+f^{-1}(V) \text{ is open in } X \iff \forall i \ge 1, \, (f\restrict_{X_i})^{-1}(V) \text{ is open in } X_i.
 $$
-Thus $f$ is continuous on $X$ if and only if $f|_{X_i}: X_i \to Y$ is continuous for all $i \ge 1$.
+Thus $f$ is continuous on $X$ if and only if $f\restrict_{X_i}: X_i \to Y$ is continuous for all $i \ge 1$.
 
 ::: pf-proof
 characterization of continuity via preimages of open sets.
@@ -128,7 +128,7 @@ $T_1$ property from normality of $X_i$.
 
 ::: pf-step
 Let $A, B \subset X$ be disjoint closed subsets of $X$ ($A \cap B = \emptyset$).
-Construct a sequence of continuous functions $f_n: X_n \to [0, 1]$ satisfying $f_n|_{A \cap X_n} = 0$, $f_n|_{B \cap X_n} = 1$, and $f_{n+1}|_{X_n} = f_n$ by induction:
+Construct a sequence of continuous functions $f_n: X_n \to [0, 1]$ satisfying $f_n\restrict_{A \cap X_n} = 0$, $f_n\restrict_{B \cap X_n} = 1$, and $f_{n+1}\restrict_{X_n} = f_n$ by induction:
 - **Base step ($n = 1$):** $A \cap X_1$ and $B \cap X_1$ are disjoint closed sets in the normal space $X_1$. By Urysohn’s Lemma, there exists a continuous $f_1: X_1 \to [0, 1]$ with $f_1(A \cap X_1) = 0$ and $f_1(B \cap X_1) = 1$.
 - **Inductive step:** Given $f_n: X_n \to [0, 1]$, let $C = X_n \cup (A \cap X_{n+1}) \cup (B \cap X_{n+1})$.
   Define $g: C \to [0, 1]$ by $g = f_n$ on $X_n$, $g = 0$ on $A \cap X_{n+1}$, and $g = 1$ on $B \cap X_{n+1}$.
@@ -143,7 +143,7 @@ Tietze Extension Theorem on normal spaces.
 
 ::: pf-step
 Define $f: X \to [0, 1]$ by $f(x) = f_n(x)$ for $x \in X_n$.
-$f$ is well-defined since $f_{n+1}|_{X_n} = f_n$, and by Part (b), $f$ is continuous on $X$.
+$f$ is well-defined since $f_{n+1}\restrict_{X_n} = f_n$, and by Part (b), $f$ is continuous on $X$.
 Moreover, $f(A) = 0$ and $f(B) = 1$.
 
 ::: pf-proof
@@ -168,7 +168,7 @@ continuous separation of disjoint closed sets.
 
 ::: pf-step
 Conclusion:
-$(X, \mathcal{T})$ is a topological space, $f: X \to Y$ is continuous iff $f|_{X_i}$ is continuous for all $i$, and $X$ is normal. Q.E.D.
+$(X, \mathcal{T})$ is a topological space, $f: X \to Y$ is continuous iff $f\restrict_{X_i}$ is continuous for all $i$, and $X$ is normal. Q.E.D.
 
 ::: pf-proof
 Steps [](#part-a){.pf-ref} through [](#part-c){.pf-ref}.

@@ -118,7 +118,7 @@ so it has no repeated roots.
 Its splitting field contains all of its $q^n$ distinct roots, and those roots are precisely the elements of $K_n$.
 Therefore
 $$
-|K_n|=q^n.
+\cardinality{K_n}=q^n.
 $$
 :::
 
@@ -145,7 +145,7 @@ By step [](#fixed-field-has-qn-elements){.pf-ref},
 $$
 [K_n:F]=n,
 $$
-since $|K_n|=q^n$ and $|F|=q$.
+since $\cardinality{K_n}=q^n$ and $\cardinality{F}=q$.
 The tower law gives
 $$
 n=[K_n:F]=[K_n:F(a)]\,[F(a):F].

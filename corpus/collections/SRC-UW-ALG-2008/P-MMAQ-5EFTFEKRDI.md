@@ -53,7 +53,7 @@ The group $G$ contains a $5$-cycle.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, the action of $G$ on five roots is transitive. Orbit-stabilizer therefore implies that $5$ divides $|G|$. By Cauchy's theorem, $G$ contains an element of order $5$. Viewed inside $S_5$, any element of order $5$ is a $5$-cycle.
+By step [](#s1){.pf-ref}, the action of $G$ on five roots is transitive. Orbit-stabilizer therefore implies that $5$ divides $\cardinality{G}$. By Cauchy's theorem, $G$ contains an element of order $5$. Viewed inside $S_5$, any element of order $5$ is a $5$-cycle.
 
 :::
 

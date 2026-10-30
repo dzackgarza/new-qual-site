@@ -38,9 +38,9 @@ x^\alpha\prec x^\beta
 $$
 when either
 $$
-|\alpha|<|\beta|,
+\multiindexsize{\alpha}<\multiindexsize{\beta},
 $$
-or $|\alpha|=|\beta|$ and $\alpha$ precedes $\beta$ lexicographically.
+or $\multiindexsize{\alpha}=\multiindexsize{\beta}$ and $\alpha$ precedes $\beta$ lexicographically.
 
 ::: pf
 
@@ -61,7 +61,7 @@ preserves the order.
 It refines total degree.
 
 ::: pf-proof
-If $|\alpha|<|\beta|$, the first clause forces
+If $\multiindexsize{\alpha}<\multiindexsize{\beta}$, the first clause forces
 $x^\alpha\prec x^\beta$, independently of the lexicographic tie-breaker.
 :::
 

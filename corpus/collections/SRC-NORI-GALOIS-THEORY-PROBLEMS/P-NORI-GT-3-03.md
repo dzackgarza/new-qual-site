@@ -180,7 +180,7 @@ Hence $u_n$ is not a square in $E_n$.
 
 By step [](#p1-s1-6){.pf-ref},
 $$
-u_n^{(|E_n|-1)/2}=-1.
+u_n^{(\cardinality{E_n}-1)/2}=-1.
 $$
 The square criterion in step [](#p1-s1-3){.pf-ref} therefore says that $u_n$ is a nonsquare.
 
@@ -310,7 +310,7 @@ $$
 
 The polynomial $X^2-u_n$ has no root in $E_n$ by the nonsquare hypothesis, hence is irreducible. Thus adjoining $u_{n+1}$ gives degree two. The resulting field has
 $$
-|E_n|^2=p^{2^{n+1}}
+\cardinality{E_n}^2=p^{2^{n+1}}
 $$
 elements, so it is the finite field $\FF_{p^{2^{n+1}}}$.
 
@@ -358,7 +358,7 @@ Apply step [](#p2-s1-5){.pf-ref} with $Q=p$. The value has square $1$ by Fermat'
 
 Let
 $$
-Q_{n+1}=p^{2^{n+1}}=|E_{n+1}|.
+Q_{n+1}=p^{2^{n+1}}=\cardinality{E_{n+1}}.
 $$
 Then
 $$

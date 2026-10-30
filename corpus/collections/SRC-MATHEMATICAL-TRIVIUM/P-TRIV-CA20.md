@@ -110,21 +110,21 @@ The outer-circle contribution tends to zero as $R\to\infty$.
 
 ::: pf-proof
 
-On $|z|=R>1$,
+On $\abs{z}=R>1$,
 $$
-|z+i|
+\abs{z+i}
 \geq
 R-1
 $$
 and
 $$
-|\sqrt z|=\sqrt R.
+\abs{\sqrt z}=\sqrt R.
 $$
 The outer circle has length $2\pi R$, so the $ML$ estimate gives
 $$
-\left|
+\abs{
 \int_{C_R}F(z)\,dz
-\right|
+}
 \leq
 \frac{2\pi R}{(R-1)\sqrt R}
 \longrightarrow0.
@@ -142,21 +142,21 @@ $\varepsilon\to0^+$.
 
 ::: pf-proof
 
-On $|z|=\varepsilon<1$,
+On $\abs{z}=\varepsilon<1$,
 $$
-|z+i|
+\abs{z+i}
 \geq
 1-\varepsilon
 $$
 and
 $$
-|\sqrt z|=\sqrt\varepsilon.
+\abs{\sqrt z}=\sqrt\varepsilon.
 $$
 The inner circle has length $2\pi\varepsilon$. Hence
 $$
-\left|
+\abs{
 \int_{\gamma_\varepsilon}F(z)\,dz
-\right|
+}
 \leq
 \frac{2\pi\varepsilon}
 {(1-\varepsilon)\sqrt\varepsilon}

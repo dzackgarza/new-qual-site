@@ -27,7 +27,7 @@ audit:
 Let $\varphi ( s )$ be $a C ^ { 2 }$ function on [1, 2] with $\varphi$ and $\varphi ^ { \prime }$ vanishing at $s = 1 , 2$ . Prove that there is a constant $C > 0$ such that for any $\lambda > 1$ ,
 
 $$
-\left| \int _ { 1 } ^ { 2 } e ^ { i \lambda x } \varphi ( x ) d x \right| \leqslant { \frac { C } { \lambda ^ { 2 } } } \cdotp
+\abs{ \int _ { 1 } ^ { 2 } e ^ { i \lambda x } \varphi ( x ) d x } \leqslant { \frac { C } { \lambda ^ { 2 } } } \cdotp
 $$
 :::
 
@@ -93,19 +93,19 @@ The desired estimate follows with a constant independent of $\lambda$.
 
 ::: pf-proof
 
-Taking absolute values and using $|e^{i\lambda x}|=1$ gives
+Taking absolute values and using $\abs{e^{i\lambda x}}=1$ gives
 $$
-|I_\lambda|
-\le \frac1{\lambda^2}\int_1^2|\varphi''(x)|\,dx.
+\abs{I_\lambda}
+\le \frac1{\lambda^2}\int_1^2\abs{\varphi''(x)}\,dx.
 $$
 Thus, with
 $$
-C=\int_1^2|\varphi''(x)|\,dx,
+C=\int_1^2\abs{\varphi''(x)}\,dx,
 $$
 we obtain for every $\lambda>1$
 $$
 \boxed{
-\left|\int_1^2 e^{i\lambda x}\varphi(x)\,dx\right|
+\abs{\int_1^2 e^{i\lambda x}\varphi(x)\,dx}
 \le \frac{C}{\lambda^2}.
 }
 $$

@@ -44,7 +44,7 @@ $gPg^{-1}=kPk^{-1}$.
 
 Normality gives $gKg^{-1}=K$. Hence $gPg^{-1}$ is a
 subgroup of $K$. Conjugation preserves order, so it has
-order $|P|$, the largest power of $p$ dividing $|K|$.
+order $\cardinality{P}$, the largest power of $p$ dividing $\cardinality{K}$.
 It is therefore a Sylow $p$-subgroup of $K$.
 Sylow conjugacy, applied inside the finite group $K$,
 gives an element $k\in K$ with the asserted equality

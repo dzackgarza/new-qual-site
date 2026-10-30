@@ -135,7 +135,7 @@ $$
 $$
 hence $\mu=\sqrt\lambda$. Thus
 $$
-C|_{E_\lambda}=\sqrt{\lambda} I.
+C\restrict_{E_\lambda}=\sqrt{\lambda} I.
 $$
 Step [](#s2){.pf-ref} shows that $B$ acts in exactly the same way on every
 eigenspace of $S$. Since those eigenspaces span $\RR^n$, one has

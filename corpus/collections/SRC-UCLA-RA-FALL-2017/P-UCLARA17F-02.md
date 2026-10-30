@@ -28,7 +28,7 @@ f_n(x)\to f(x)
 $$
 for almost every $x\in[0,1]$, and assume
 $$
-\sup_n\|f_n\|_2\le M.
+\sup_n\norm{f_n}_2\le M.
 $$
 
 ::: pf
@@ -37,7 +37,7 @@ $$
 
 The limit $f$ belongs to $L^2([0,1])$ and satisfies
 $$
-\boxed{\|f\|_2\le M}.
+\boxed{\norm{f}_2\le M}.
 $$
 
 
@@ -45,10 +45,10 @@ $$
 
 By Fatou's lemma,
 $$
-\int_0^1|f|^2
+\int_0^1\abs{f}^2
 \le
 \liminf_{n\to\infty}
-\int_0^1|f_n|^2
+\int_0^1\abs{f_n}^2
 \le
 M^2.
 $$
@@ -80,7 +80,7 @@ This is immediate from the assumed a.e. convergence $f_n\to f$.
 The sequence $(h_n)$ is uniformly bounded in $L^2$:
 $$
 \boxed{
-\|h_n\|_2\le2M}.
+\norm{h_n}_2\le2M}.
 $$
 
 
@@ -88,9 +88,9 @@ $$
 
 By the triangle inequality and step [](#s1-1){.pf-ref},
 $$
-\|h_n\|_2
+\norm{h_n}_2
 \le
-\|f_n\|_2+\|f\|_2
+\norm{f_n}_2+\norm{f}_2
 \le
 M+M
 =
@@ -126,7 +126,7 @@ E\subset[0,1]
 $$
 with
 $$
-|E|<\delta
+\setmeasure{E}<\delta
 $$
 such that $h_n\to0$ uniformly on
 $$
@@ -147,7 +147,7 @@ The underlying measure space has finite measure, and $h_n\to0$ almost everywhere
 For sufficiently large $n$,
 $$
 \boxed{
-\sup_{x\in[0,1]\setminus E}|h_n(x)|
+\sup_{x\in[0,1]\setminus E}\abs{h_n(x)}
 <
 \frac{\varepsilon}{2}}.
 $$
@@ -166,7 +166,7 @@ Use the uniform convergence from step [](#s1-5){.pf-ref}.
 Hence for all sufficiently large $n$,
 $$
 \int_{[0,1]\setminus E}
-|h_n(x)|\,dx
+\abs{h_n(x)}\,dx
 <
 \frac{\varepsilon}{2}.
 $$
@@ -176,11 +176,11 @@ $$
 
 The complement has measure at most $1$, so
 $$
-\int_{[0,1]\setminus E}|h_n|
+\int_{[0,1]\setminus E}\abs{h_n}
 \le
-\sup_{[0,1]\setminus E}|h_n|
+\sup_{[0,1]\setminus E}\abs{h_n}
 \cdot
-|[0,1]\setminus E|
+\setmeasure{[0,1]\setminus E}
 <
 \frac{\varepsilon}{2}.
 $$
@@ -193,9 +193,9 @@ $$
 
 On $E$,
 $$
-\int_E|h_n|
+\int_E\abs{h_n}
 \le
-\|h_n\|_2\,|E|^{1/2}.
+\norm{h_n}_2\,\setmeasure{E}^{1/2}.
 $$
 
 
@@ -203,14 +203,14 @@ $$
 
 Apply Cauchy--Schwarz:
 $$
-\int_E|h_n|
+\int_E\abs{h_n}
 =
-\int_E|h_n|\cdot1
+\int_E\abs{h_n}\cdot1
 \le
 \left(
-\int_E|h_n|^2
+\int_E\abs{h_n}^2
 \right)^{1/2}
-|E|^{1/2}.
+\setmeasure{E}^{1/2}.
 $$
 
 :::
@@ -221,7 +221,7 @@ $$
 
 Therefore
 $$
-\int_E|h_n|
+\int_E\abs{h_n}
 <
 \frac{\varepsilon}{2}
 $$
@@ -230,11 +230,11 @@ for every $n$.
 
 ::: pf-proof
 
-Use step [](#s1-3){.pf-ref}, the bound $|E|<\delta$, and step [](#s1-4){.pf-ref}:
+Use step [](#s1-3){.pf-ref}, the bound $\setmeasure{E}<\delta$, and step [](#s1-4){.pf-ref}:
 $$
-\int_E|h_n|
+\int_E\abs{h_n}
 \le
-2M\sqrt{|E|}
+2M\sqrt{\setmeasure{E}}
 <
 2M\sqrt\delta
 <
@@ -250,7 +250,7 @@ $$
 Hence
 $$
 \boxed{
-\|h_n\|_1\to0}.
+\norm{h_n}_1\to0}.
 $$
 
 
@@ -258,11 +258,11 @@ $$
 
 For all sufficiently large $n$,
 $$
-\|h_n\|_1
+\norm{h_n}_1
 =
-\int_{[0,1]\setminus E}|h_n|
+\int_{[0,1]\setminus E}\abs{h_n}
 +
-\int_E|h_n|
+\int_E\abs{h_n}
 <
 \varepsilon
 $$
@@ -278,7 +278,7 @@ For $R>0$, define the truncation
 $$
 g_R
 =
-g\,\mathbf 1_{\{|g|\le R\}}.
+g\,\mathbf 1_{\{\abs{g}\le R\}}.
 $$
 
 
@@ -300,7 +300,7 @@ $$
 and
 $$
 \boxed{
-\|g-g_R\|_2\to0}
+\norm{g-g_R}_2\to0}
 $$
 as $R\to\infty$.
 
@@ -311,12 +311,12 @@ The function $g_R$ is bounded by $R$, hence lies in $L^\infty$, and clearly lies
 
 Moreover,
 $$
-|g-g_R|^2
+\abs{g-g_R}^2
 =
-|g|^2\mathbf 1_{\{|g|>R\}}
+\abs{g}^2\mathbf 1_{\{\abs{g}>R\}}
 \to0
 $$
-pointwise and is dominated by $|g|^2\in L^1$. Dominated convergence gives the $L^2$-convergence.
+pointwise and is dominated by $\abs{g}^2\in L^1$. Dominated convergence gives the $L^2$-convergence.
 
 :::
 
@@ -335,12 +335,12 @@ $$
 
 Since $g_R\in L^\infty$,
 $$
-\left|
+\abs{
 \int h_n g_R
-\right|
+}
 \le
-\|g_R\|_\infty
-\|h_n\|_1.
+\norm{g_R}_\infty
+\norm{h_n}_1.
 $$
 Apply step [](#s1-10){.pf-ref}.
 
@@ -352,12 +352,12 @@ Apply step [](#s1-10){.pf-ref}.
 
 For every $n$,
 $$
-\left|
+\abs{
 \int_0^1
 h_n(g-g_R)
-\right|
+}
 \le
-2M\,\|g-g_R\|_2.
+2M\,\norm{g-g_R}_2.
 $$
 
 
@@ -365,14 +365,14 @@ $$
 
 By Cauchy--Schwarz and step [](#s1-3){.pf-ref},
 $$
-\left|
+\abs{
 \int h_n(g-g_R)
-\right|
+}
 \le
-\|h_n\|_2
-\|g-g_R\|_2
+\norm{h_n}_2
+\norm{g-g_R}_2
 \le
-2M\|g-g_R\|_2.
+2M\norm{g-g_R}_2.
 $$
 
 :::
@@ -383,7 +383,7 @@ $$
 
 Given $\varepsilon>0$, choose $R$ so large that
 $$
-2M\|g-g_R\|_2
+2M\norm{g-g_R}_2
 <
 \frac{\varepsilon}{2}.
 $$
@@ -401,9 +401,9 @@ Use the convergence in step [](#s1-12){.pf-ref}.
 
 For this fixed $R$, choose $N$ so large that for $n\ge N$,
 $$
-\left|
+\abs{
 \int h_n g_R
-\right|
+}
 <
 \frac{\varepsilon}{2}.
 $$
@@ -421,9 +421,9 @@ Use step [](#s1-13){.pf-ref}.
 
 Then for $n\ge N$,
 $$
-\left|
+\abs{
 \int_0^1h_n g
-\right|
+}
 <
 \varepsilon.
 $$

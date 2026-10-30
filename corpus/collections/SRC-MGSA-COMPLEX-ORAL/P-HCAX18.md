@@ -32,7 +32,7 @@ A keyhole contour converts the contour integral into twice the real integral.
 
 Use the branch
 $$
-z^{1/2}=e^{\frac12(\log|z|+i\arg z)},
+z^{1/2}=e^{\frac12(\log\abs{z}+i\arg z)},
 \qquad 0<\arg z<2\pi,
 $$
 whose branch cut is the positive real axis, and set
@@ -41,7 +41,7 @@ F(z)=\frac{z^{1/2}}{1+z^2}.
 $$
 Integrate $F$ around the positively oriented keyhole contour with inner radius $\varepsilon$ and outer radius $R$.
 
-On the upper side of the cut, $z^{1/2}=x^{1/2}$. On the lower side, $\arg z\to2\pi$, so $z^{1/2}=-x^{1/2}$; the lower segment is traversed from $R$ to $\varepsilon$, so its contribution has the same sign as the upper segment. Near $0$, $F(z)=O(|z|^{1/2})$, while at infinity $F(z)=O(|z|^{-3/2})$. Hence the inner and outer circular contributions are respectively $O(\varepsilon^{3/2})$ and $O(R^{-1/2})$, and therefore vanish in the limits. Thus
+On the upper side of the cut, $z^{1/2}=x^{1/2}$. On the lower side, $\arg z\to2\pi$, so $z^{1/2}=-x^{1/2}$; the lower segment is traversed from $R$ to $\varepsilon$, so its contribution has the same sign as the upper segment. Near $0$, $F(z)=O(\abs{z}^{1/2})$, while at infinity $F(z)=O(\abs{z}^{-3/2})$. Hence the inner and outer circular contributions are respectively $O(\varepsilon^{3/2})$ and $O(R^{-1/2})$, and therefore vanish in the limits. Thus
 $$
 \oint F(z)\,dz
 \longrightarrow

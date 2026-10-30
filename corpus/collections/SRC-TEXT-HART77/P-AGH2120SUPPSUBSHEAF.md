@@ -42,7 +42,7 @@ For every open $V\subseteq X$, put
 $$
 \mathcal H(V)
 =
-\Gamma_{Z\cap V}(V,\mathcal F|_V)
+\Gamma_{Z\cap V}(V,\mathcal F\restrict_V)
 =
 \{s\in\mathcal F(V):\operatorname{supp}s\subseteq Z\cap V\}.
 $$
@@ -63,13 +63,13 @@ For every $P\in W\setminus Z$, the germ $s_P$ is zero because
 $$
 \operatorname{supp}s\subseteq Z\cap V.
 $$
-The germ of the restriction $s|_W$ at $P$ is the same germ $s_P$, hence is zero.  Therefore
+The germ of the restriction $s\restrict_W$ at $P$ is the same germ $s_P$, hence is zero.  Therefore
 $$
-\operatorname{supp}(s|_W)\subseteq Z\cap W,
+\operatorname{supp}(s\restrict_W)\subseteq Z\cap W,
 $$
 so
 $$
-s|_W\in\mathcal H(W).
+s\restrict_W\in\mathcal H(W).
 $$
 Thus the restriction maps of $\mathcal F$ restrict to maps for $\mathcal H$.
 
@@ -137,7 +137,7 @@ $$
 $$
 But
 $$
-s|_{V_i}=s_i,
+s\restrict_{V_i}=s_i,
 $$
 so
 $$
@@ -174,7 +174,7 @@ j:U\hookrightarrow X.
 $$
 There is a natural restriction morphism
 $$
-\rho:\mathcal F\longrightarrow j_*(\mathcal F|_U).
+\rho:\mathcal F\longrightarrow j_*(\mathcal F\restrict_U).
 $$
 On an open set $V\subseteq X$, it is
 $$
@@ -182,15 +182,15 @@ $$
 \longrightarrow
 \mathcal F(V\cap U),
 \qquad
-s\longmapsto s|_{V\cap U}.
+s\longmapsto s\restrict_{V\cap U}.
 $$
 
 ::: pf-proof
 
 Since $U$ is open,
 $$
-(j_*(\mathcal F|_U))(V)
-=(\mathcal F|_U)(V\cap U)
+(j_*(\mathcal F\restrict_U))(V)
+=(\mathcal F\restrict_U)(V\cap U)
 =\mathcal F(V\cap U).
 $$
 The ordinary restriction maps of $\mathcal F$ therefore define the displayed morphism, and compatibility with further restrictions is automatic.
@@ -214,7 +214,7 @@ s\in\ker\rho_V.
 $$
 Then
 $$
-s|_{V\cap U}=0.
+s\restrict_{V\cap U}=0.
 $$
 Hence
 $$
@@ -235,11 +235,11 @@ s\in\mathcal H_Z^0(\mathcal F)(V).
 $$
 Then every germ of
 $$
-s|_{V\cap U}
+s\restrict_{V\cap U}
 $$
 is zero.  A section of a sheaf whose germs are all zero is itself zero: each point has a neighborhood on which the section vanishes, and the sheaf uniqueness axiom glues these local zeroes.  Thus
 $$
-s|_{V\cap U}=0,
+s\restrict_{V\cap U}=0,
 $$
 so $s\in\ker\rho_V$.
 
@@ -258,7 +258,7 @@ $$
 \longrightarrow
 \mathcal F
 \xrightarrow{\rho}
-j_*(\mathcal F|_U).
+j_*(\mathcal F\restrict_U).
 }
 $$
 
@@ -274,7 +274,7 @@ The first map is the inclusion of the subsheaf from step [](#s4){.pf-ref}.  Step
 
 If $\mathcal F$ is flasque, then
 $$
-\rho:\mathcal F\longrightarrow j_*(\mathcal F|_U)
+\rho:\mathcal F\longrightarrow j_*(\mathcal F\restrict_U)
 $$
 is surjective.
 
@@ -309,7 +309,7 @@ $$
 \longrightarrow
 \mathcal F
 \longrightarrow
-j_*(\mathcal F|_U)
+j_*(\mathcal F\restrict_U)
 \longrightarrow0.
 }
 $$

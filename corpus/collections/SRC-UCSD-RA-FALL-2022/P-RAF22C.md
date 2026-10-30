@@ -40,7 +40,7 @@ $$
 
 ::: pf-step
 
-The primitive $F_n(x)\coloneqq\int_0^xS_n(t)\,dt$ satisfies $\|F_n\|_\infty\le10^{-n}$.
+The primitive $F_n(x)\coloneqq\int_0^xS_n(t)\,dt$ satisfies $\norm{F_n}_\infty\le10^{-n}$.
 
 ::: pf-proof
 
@@ -56,7 +56,7 @@ F_n(x):=\int_0^x S_n(t)\,dt.
 $$
 Because the integral over every full period is zero, $F_n$ is periodic with the same period. On each half-period, $S_n$ is constant equal to $1$ or $-1$, so the oscillation of $F_n$ is at most $10^{-n}$. Therefore
 $$
-\|F_n\|_\infty\le 10^{-n}.
+\norm{F_n}_\infty\le 10^{-n}.
 $$
 
 :::
@@ -76,9 +76,9 @@ $$
 $$
 Hence
 $$
-\left|\int S_n\varphi\right|
-\le \|F_n\|_\infty\,\|\varphi'\|_1
-\le 10^{-n}\|\varphi'\|_1
+\abs{\int S_n\varphi}
+\le \norm{F_n}_\infty\,\norm{\varphi'}_1
+\le 10^{-n}\norm{\varphi'}_1
 \longrightarrow0.
 $$
 
@@ -94,20 +94,20 @@ $\int_{\RR}S_nf\to0$ for every $f\in L^1(\RR)$.
 
 Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Choose $\varphi\in C_c^1(\RR)$ such that
 $$
-\|f-\varphi\|_1<\varepsilon.
+\norm{f-\varphi}_1<\varepsilon.
 $$
-Since $|S_n|=1$ almost everywhere,
+Since $\abs{S_n}=1$ almost everywhere,
 $$
-\left|\int S_n(f-\varphi)\right|
-\le \|f-\varphi\|_1<\varepsilon.
+\abs{\int S_n(f-\varphi)}
+\le \norm{f-\varphi}_1<\varepsilon.
 $$
 By step [](#s2){.pf-ref}, for all sufficiently large $n$,
 $$
-\left|\int S_n\varphi\right|<\varepsilon.
+\abs{\int S_n\varphi}<\varepsilon.
 $$
 Therefore
 $$
-\left|\int S_nf\right|<2\varepsilon
+\abs{\int S_nf}<2\varepsilon
 $$
 for all sufficiently large $n$. Since $\varepsilon$ is arbitrary,
 $$

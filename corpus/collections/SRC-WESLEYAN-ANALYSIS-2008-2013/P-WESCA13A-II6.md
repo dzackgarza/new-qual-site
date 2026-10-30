@@ -43,7 +43,7 @@ a_m w^m
 $$
 for
 $$
-|w|<r.
+\abs{w}<r.
 $$
 
 
@@ -128,7 +128,7 @@ z\in B(0,r^2),
 $$
 then every square root $w$ of $z$ satisfies
 $$
-|w|<r.
+\abs{w}<r.
 $$
 
 
@@ -140,15 +140,15 @@ w^2=z,
 $$
 then
 $$
-|w|^2
+\abs{w}^2
 =
-|z|
+\abs{z}
 <
 r^2.
 $$
 Therefore
 $$
-|w|<r.
+\abs{w}<r.
 $$
 
 :::
@@ -247,7 +247,7 @@ $$
 
 The series in step [](#s1-6){.pf-ref} converges for every
 $$
-|z|<r^2.
+\abs{z}<r^2.
 $$
 
 
@@ -255,7 +255,7 @@ $$
 
 If
 $$
-|z|<r^2,
+\abs{z}<r^2,
 $$
 choose
 $$
@@ -267,7 +267,7 @@ w^2=z.
 $$
 Then
 $$
-|w|<r
+\abs{w}<r
 $$
 by step [](#s1-4){.pf-ref}.
 The series

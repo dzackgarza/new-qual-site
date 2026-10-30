@@ -24,10 +24,10 @@ $$
 P ( \xi \geqslant x ) \leqslant e ^ { - \lambda x } \mathbf { E } e ^ { \lambda \xi } , \quad \lambda > 0 .\tag{45}
 $$
 
-(b) Prove that if $\mathbf { E } | \boldsymbol { \xi } | ^ { m }$ is finite then
+(b) Prove that if $\mathbf { E } \abs{ \boldsymbol { \xi } } ^ { m }$ is finite then
 
 $$
-P ( | \xi | \geqslant x ) \leqslant x ^ { - m } \mathbf { E } | \xi | ^ { m } , x > 0 , m > 0 .\tag{46}
+P ( \abs{ \xi } \geqslant x ) \leqslant x ^ { - m } \mathbf { E } \abs{ \xi } ^ { m } , x > 0 , m > 0 .\tag{46}
 $$
 :::
 
@@ -76,9 +76,9 @@ so $P(Y\geq a)\leq\mathbf EY/a$. Take $Y=e^{\lambda\xi}$ and $a=e^{\lambda x}$, 
 
 ::: {.pf-step #s1-3}
 
-For $m>0$ and $x>0$, the event $\{|\xi|\geq x\}$ equals
+For $m>0$ and $x>0$, the event $\{\abs{\xi}\geq x\}$ equals
 $$
-\{|\xi|^m\geq x^m\}.
+\{\abs{\xi}^m\geq x^m\}.
 $$
 
 
@@ -92,17 +92,17 @@ The function $u\mapsto u^m$ is increasing on $[0,\infty)$ for every $m>0$.
 
 ::: {.pf-step #s1-4}
 
-Markov's inequality applied to $|\xi|^m$ gives
+Markov's inequality applied to $\abs{\xi}^m$ gives
 $$
 \boxed{
-P(|\xi|\geq x)
-\leq x^{-m}\mathbf E|\xi|^m}.
+P(\abs{\xi}\geq x)
+\leq x^{-m}\mathbf E\abs{\xi}^m}.
 $$
 
 
 ::: pf-proof
 
-Apply the Markov inequality proved in step [](#s1-2){.pf-ref} to the nonnegative random variable $Y=|\xi|^m$ with threshold $a=x^m$, and use step [](#s1-3){.pf-ref}.
+Apply the Markov inequality proved in step [](#s1-2){.pf-ref} to the nonnegative random variable $Y=\abs{\xi}^m$ with threshold $a=x^m$, and use step [](#s1-3){.pf-ref}.
 
 :::
 

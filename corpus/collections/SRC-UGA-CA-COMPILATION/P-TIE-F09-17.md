@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume f is continuous in the region: $0 < | z - a | \leq R , \ 0 \leq \arg ( z - a ) \leq \beta _ { 0 } \ ( 0 < \beta _ { 0 } \leq 2 \pi )$and the limit$\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A$ exists.
+Assume f is continuous in the region: $0 < \abs{ z - a } \leq R , \ 0 \leq \arg ( z - a ) \leq \beta _ { 0 } \ ( 0 < \beta _ { 0 } \leq 2 \pi )$and the limit$\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A$ exists.
 Show that
 
 $$
@@ -75,9 +75,9 @@ $$
 
 For every $\varepsilon>0$, there is $\delta>0$ such that
 $$
-\left|
+\abs{
 (\gamma_r(t)-a)f(\gamma_r(t))-A
-\right|
+}
 <\varepsilon
 $$
 whenever $0<r<\delta$ and $0\le t\le\beta_0$.
@@ -91,11 +91,11 @@ $$
 $$
 means that for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
-|(z-a)f(z)-A|<\varepsilon
+\abs{(z-a)f(z)-A}<\varepsilon
 $$
-throughout the sector whenever $0<|z-a|<\delta$. Since
+throughout the sector whenever $0<\abs{z-a}<\delta$. Since
 $$
-|\gamma_r(t)-a|=r,
+\abs{\gamma_r(t)-a}=r,
 $$
 the estimate holds simultaneously for every $t\in[0,\beta_0]$ once $r<\delta$.
 
@@ -107,9 +107,9 @@ the estimate holds simultaneously for every $t\in[0,\beta_0]$ once $r<\delta$.
 
 For $0<r<\delta$,
 $$
-\left|
+\abs{
 \int_{\gamma_r}f(z)\,dz-iA\beta_0
-\right|
+}
 \le
 \beta_0\varepsilon.
 $$
@@ -128,9 +128,9 @@ i\int_0^{\beta_0}
 $$
 Taking absolute values and applying step [](#s1-2){.pf-ref} gives
 $$
-\left|
+\abs{
 \int_{\gamma_r}f(z)\,dz-iA\beta_0
-\right|
+}
 \le
 \int_0^{\beta_0}\varepsilon\,dt
 =

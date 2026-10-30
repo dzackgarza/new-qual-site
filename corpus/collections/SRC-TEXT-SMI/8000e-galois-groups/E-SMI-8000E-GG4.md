@@ -56,7 +56,7 @@ p_1,\ldots,p_r.
 $$
 Choose a positive integer $t$ large enough that
 $$
-|\Phi_m(t m p_1\cdots p_r)|>1,
+\abs{\Phi_m(t m p_1\cdots p_r)}>1,
 $$
 which is possible because $\Phi_m$ is a nonconstant monic polynomial, and set
 $$
@@ -67,7 +67,7 @@ $$
 \Phi_m(0)=1.
 $$
 Thus every prime dividing $a$ is coprime to $\Phi_m(a)$. Since
-$|\Phi_m(a)|>1$, choose a prime
+$\abs{\Phi_m(a)}>1$, choose a prime
 $$
 q\mid\Phi_m(a).
 $$

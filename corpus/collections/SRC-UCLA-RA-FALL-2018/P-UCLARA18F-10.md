@@ -56,7 +56,7 @@ F(z)=\frac{z^\beta}{1+z^2},
 \qquad
 z^\beta=\exp\!\bigl(\beta\Log z\bigr),
 $$
-where $\Log z=\log|z|+i\arg z$ with $-\pi/2<\arg z<3\pi/2$. If $0<\varepsilon<1<R$, then integration around the positively oriented boundary $C_{\varepsilon,R}$ of the upper half-annulus $\{z:\varepsilon<|z|<R,\ \operatorname{Im}z>0\}$ gives
+where $\Log z=\log\abs{z}+i\arg z$ with $-\pi/2<\arg z<3\pi/2$. If $0<\varepsilon<1<R$, then integration around the positively oriented boundary $C_{\varepsilon,R}$ of the upper half-annulus $\{z:\varepsilon<\abs{z}<R,\ \operatorname{Im}z>0\}$ gives
 $$
 \int_{C_{\varepsilon,R}}F(z)\,dz
 =\pi e^{i\pi\beta/2}.
@@ -89,15 +89,15 @@ The contributions from the outer and inner semicircles tend to $0$ as $R\to\inft
 
 ::: pf-proof
 
-On the outer semicircle $|z|=R$, one has $|z^\beta|=R^\beta$ and $|1+z^2|\ge R^2-1$. Hence
+On the outer semicircle $\abs{z}=R$, one has $\abs{z^\beta}=R^\beta$ and $\abs{1+z^2}\ge R^2-1$. Hence
 $$
-\left|\int_{|z|=R,\ \operatorname{Im}z\ge0}F(z)\,dz\right|
+\abs{\int_{\abs{z}=R,\ \operatorname{Im}z\ge0}F(z)\,dz}
 \le \frac{\pi R^{\beta+1}}{R^2-1}
 \longrightarrow0
 $$
-because $\beta<1$. On the inner semicircle $|z|=\varepsilon$,
+because $\beta<1$. On the inner semicircle $\abs{z}=\varepsilon$,
 $$
-\left|\int_{|z|=\varepsilon,\ \operatorname{Im}z\ge0}F(z)\,dz\right|
+\abs{\int_{\abs{z}=\varepsilon,\ \operatorname{Im}z\ge0}F(z)\,dz}
 \le \frac{\pi\varepsilon^{\beta+1}}{1-\varepsilon^2}
 \longrightarrow0
 $$

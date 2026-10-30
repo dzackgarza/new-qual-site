@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-11
 kind: problem
-title: The order of a homomorphic image of a subgroup divides $|G_1|$
+title: The order of a homomorphic image of a subgroup divides $\cardinality{G_1}$
 classification:
   areas:
   - algebra
@@ -23,7 +23,7 @@ $$
 H_2=\{\varphi(x)\mid x\in H_1\}
 $$
 is a subgroup of $G_2$, called the image of $H_1$ under $\varphi$, sometimes notated $\varphi(H_1)$.
-If $G_1$ is finite, prove that $|H_2|\mid |G_1|$.
+If $G_1$ is finite, prove that $\cardinality{H_2}\mid \cardinality{G_1}$.
 That is, prove that the order of $H_2$ divides the order of $G_1$.
 :::
 
@@ -32,7 +32,7 @@ That is, prove that the order of $H_2$ divides the order of $G_1$.
 ::: pf
 
 ::: {.pf-step #s1-1}
-The order of $\varphi(G_1)$ divides $|G_1|$.
+The order of $\varphi(G_1)$ divides $\cardinality{G_1}$.
 
 ::: pf-proof
 Let
@@ -45,20 +45,20 @@ $$
 $$
 Since $G_1$ is finite,
 $$
-|\varphi(G_1)|
-=|G_1/K|
-=\frac{|G_1|}{|K|}.
+\cardinality{\varphi(G_1)}
+=\cardinality{G_1/K}
+=\frac{\cardinality{G_1}}{\cardinality{K}}.
 $$
 Hence
 $$
-|\varphi(G_1)|\mid |G_1|.
+\cardinality{\varphi(G_1)}\mid \cardinality{G_1}.
 $$
 :::
 
 :::
 
 ::: {.pf-step #s1-2}
-The order of $H_2$ divides $|\varphi(G_1)|$.
+The order of $H_2$ divides $\cardinality{\varphi(G_1)}$.
 
 ::: pf-proof
 By definition,
@@ -71,7 +71,7 @@ H_2\le \varphi(G_1).
 $$
 The group $\varphi(G_1)$ is finite, so Lagrange's theorem gives
 $$
-|H_2|\mid |\varphi(G_1)|.
+\cardinality{H_2}\mid \cardinality{\varphi(G_1)}.
 $$
 :::
 
@@ -80,17 +80,17 @@ $$
 ::: pf-step
 Therefore
 $$
-\boxed{|H_2|\mid |G_1|}.
+\boxed{\cardinality{H_2}\mid \cardinality{G_1}}.
 $$
 
 ::: pf-proof
 By step [](#s1-2){.pf-ref},
 $$
-|H_2|\mid |\varphi(G_1)|,
+\cardinality{H_2}\mid \cardinality{\varphi(G_1)},
 $$
 and by step [](#s1-1){.pf-ref},
 $$
-|\varphi(G_1)|\mid |G_1|.
+\cardinality{\varphi(G_1)}\mid \cardinality{G_1}.
 $$
 Divisibility is transitive.
 :::

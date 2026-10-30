@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Let S be the ring of all bounded, continuous functions $f : \RR \to \RR$ , where R is the set of real numbers.
-Let I be the set of functions f in S such that $f ( t ) \to 0 { \mathrm { ~ a s ~ } } | t | \to \infty$
+Let I be the set of functions f in S such that $f ( t ) \to 0 { \mathrm { ~ a s ~ } } \abs{ t } \to \infty$
 
 (a) Show that I is an ideal of S.
 

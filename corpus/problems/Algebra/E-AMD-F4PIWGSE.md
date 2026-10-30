@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $|G| = 240 = 2^4 \cdot 3 \cdot 5$.
+Suppose $\cardinality{G} = 240 = 2^4 \cdot 3 \cdot 5$.
 
 (a) How many Sylow-$p$ subgroups does $G$ have for $p\in \{2, 3, 5\}$?
 

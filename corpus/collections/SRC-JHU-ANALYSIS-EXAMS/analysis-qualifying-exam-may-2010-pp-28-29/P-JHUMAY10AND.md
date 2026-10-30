@@ -28,10 +28,10 @@ audit:
 4. Let h be a harmonic function on the domain
 
 $$
-U : = \left\{ z \in \CC : | z | > 1 \right\} .
+U : = \left\{ z \in \CC : \abs{ z } > 1 \right\} .
 $$
 
-Show that there exists a constant $c \in \RR$ and a holomorphic function $f$ on $U$ such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
+Show that there exists a constant $c \in \RR$ and a holomorphic function $f$ on $U$ such that $\mathrm { R e } f ( z ) = h ( z ) + c \log \abs{ z }$ for all $z \in U$
 :::
 
 ::: {.solution}
@@ -49,11 +49,11 @@ Cauchy–Riemann equations for $q$ are precisely
 $h_{xx}=-h_{yy}$ and $h_{xy}=h_{yx}$, so harmonicity
 makes $q$ holomorphic on $U$. Its Laurent expansion is
 $$
-q(z)=\sum_{n\in\ZZ}a_nz^n\qquad(1<|z|<\infty)
+q(z)=\sum_{n\in\ZZ}a_nz^n\qquad(1<\abs{z}<\infty)
 $$
 [@SS03]. For any $r>1$, its residue coefficient is
 $$
-a_{-1}=\frac1{2\pi i}\int_{|z|=r}q(z)\,dz.
+a_{-1}=\frac1{2\pi i}\int_{\abs{z}=r}q(z)\,dz.
 $$
 Along a curve one has
 $$
@@ -80,11 +80,11 @@ $$
 F(z)=\sum_{\substack{n\in\ZZ\\n\ne-1}}
 \frac{a_n}{n+1}z^{n+1}.
 $$
-To justify this definition, fix $1<r\leq|z|\leq R<\infty$
-and choose $1<s<r\leq R<T$. If $M_t=\max_{|z|=t}|q(z)|$,
+To justify this definition, fix $1<r\leq\abs{z}\leq R<\infty$
+and choose $1<s<r\leq R<T$. If $M_t=\max_{\abs{z}=t}\abs{q(z)}$,
 the Laurent coefficient formula gives
-$|a_n|\leq M_T T^{-n}$ for $n\geq0$, and
-$|a_{-k}|\leq M_s s^k$ for $k\geq1$ [@SS03].
+$\abs{a_n}\leq M_T T^{-n}$ for $n\geq0$, and
+$\abs{a_{-k}}\leq M_s s^k$ for $k\geq1$ [@SS03].
 The positive-power part of the proposed primitive is
 therefore bounded termwise by $M_T R(R/T)^n$.
 For $k\geq2$, its negative-power terms have modulus at most
@@ -109,9 +109,9 @@ An additive real constant makes the real part equal to the required function.
 
 ::: pf-proof
 
-Put $H(z)=h(z)+c\log|z|$. On $U$,
+Put $H(z)=h(z)+c\log\abs{z}$. On $U$,
 $$
-(\log|z|)_x-i(\log|z|)_y
+(\log\abs{z})_x-i(\log\abs{z})_y
 =\frac{x-iy}{x^2+y^2}=\frac1z.
 $$
 Hence $H_x-iH_y=q+c/z=F'$. For holomorphic $F$,
@@ -120,9 +120,9 @@ same real gradient. Their difference is locally constant,
 and $U$ is connected, so it equals one real constant $d$.
 Then $f=F-d$ is holomorphic on $U$ and satisfies
 $$
-\operatorname{Re}f=h+c\log|z|,
+\operatorname{Re}f=h+c\log\abs{z},
 \qquad
-c=-\frac1{2\pi i}\int_{|z|=r}(h_x-ih_y)\,dz\in\RR.
+c=-\frac1{2\pi i}\int_{\abs{z}=r}(h_x-ih_y)\,dz\in\RR.
 $$
 This is the asserted representation.
 

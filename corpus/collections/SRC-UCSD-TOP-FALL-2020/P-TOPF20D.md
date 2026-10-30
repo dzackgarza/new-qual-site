@@ -37,7 +37,7 @@ $H^*(\CP^n;\ZZ)\cong\ZZ[u]/(u^{n+1})$.
 
 ::: pf-step
 
-If $U_i\subset\CP^n$ is contractible, then $u|_{U_i}=0$.
+If $U_i\subset\CP^n$ is contractible, then $u\restrict_{U_i}=0$.
 
 ::: pf-proof
 

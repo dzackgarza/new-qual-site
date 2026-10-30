@@ -56,16 +56,16 @@ $$
 $$
 Since $L/K$ and $M/L$ are Galois,
 $$
-|\operatorname{Gal}(L/K)|=[L:K]
+\cardinality{\operatorname{Gal}(L/K)}=[L:K]
 $$
 and
 $$
-|\operatorname{Gal}(M/L)|=[M:L].
+\cardinality{\operatorname{Gal}(M/L)}=[M:L].
 $$
 Therefore the finite-group exact sequence gives
 $$
-|A|
-=|\operatorname{Gal}(M/L)|\,|\operatorname{Gal}(L/K)|
+\cardinality{A}
+=\cardinality{\operatorname{Gal}(M/L)}\,\cardinality{\operatorname{Gal}(L/K)}
 =[M:L][L:K]
 =[M:K].
 $$
@@ -81,12 +81,12 @@ The extension $M/K$ is Galois.
 The tower is finite because both $L/K$ and $M/L$ are finite Galois extensions.
 For every finite extension,
 $$
-|\operatorname{Aut}_K(M)|\le[M:K].
+\cardinality{\operatorname{Aut}_K(M)}\le[M:K].
 $$
 By step [](#at-least-mk-automorphisms){.pf-ref}, the subgroup $A\subseteq\operatorname{Aut}_K(M)$ already has exactly $[M:K]$ elements.
 Hence
 $$
-|\operatorname{Aut}_K(M)|=[M:K].
+\cardinality{\operatorname{Aut}_K(M)}=[M:K].
 $$
 A finite extension has as many base-field automorphisms as its degree if and only if it is Galois.
 Therefore $M/K$ is Galois.

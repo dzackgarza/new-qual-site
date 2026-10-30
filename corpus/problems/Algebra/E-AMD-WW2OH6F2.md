@@ -59,32 +59,32 @@ Because $q>p$, one cannot have $q\mid p-1$, so $q\mid p+1$. Since $0<p+1<2q$, th
 :::
 
 ::: {.pf-step #sylow-q-normal-unless-36}
-Unless $|G|=36$, $G$ has a normal Sylow $q$-subgroup.
+Unless $\cardinality{G}=36$, $G$ has a normal Sylow $q$-subgroup.
 
 ::: pf-proof
-If $n_q=1$, the Sylow $q$-subgroup is normal. By step [](#nq-p2-implies-2-3){.pf-ref}, the only way $n_q\neq1$ can occur is $p=2$, $q=3$, which gives $|G|=36$.
+If $n_q=1$, the Sylow $q$-subgroup is normal. By step [](#nq-p2-implies-2-3){.pf-ref}, the only way $n_q\neq1$ can occur is $p=2$, $q=3$, which gives $\cardinality{G}=36$.
 :::
 
 :::
 
 ::: {.pf-step #kernel-order-3-or-9}
-Now suppose $|G|=36$. If the Sylow $3$-subgroup is not normal, then $n_3=4$ and conjugation on the four Sylow $3$-subgroups gives a homomorphism
+Now suppose $\cardinality{G}=36$. If the Sylow $3$-subgroup is not normal, then $n_3=4$ and conjugation on the four Sylow $3$-subgroups gives a homomorphism
 $$
 \varphi:G\longrightarrow S_4
 $$
 whose kernel $K$ has order $3$ or $9$.
 
 ::: pf-proof
-Sylow gives $n_3=1$ or $4$. Assume $n_3=4$. The action is transitive, and the stabilizer of a Sylow $3$-subgroup $Q$ is $N_G(Q)$, of order $36/4=9$. Thus $K\subseteq N_G(Q)$, so $|K|\mid9$. Since $G/K$ embeds in $S_4$, $K$ cannot be trivial because $36\nmid24$. Hence $|K|=3$ or $9$.
+Sylow gives $n_3=1$ or $4$. Assume $n_3=4$. The action is transitive, and the stabilizer of a Sylow $3$-subgroup $Q$ is $N_G(Q)$, of order $36/4=9$. Thus $K\subseteq N_G(Q)$, so $\cardinality{K}\mid9$. Since $G/K$ embeds in $S_4$, $K$ cannot be trivial because $36\nmid24$. Hence $\cardinality{K}=3$ or $9$.
 :::
 
 :::
 
 ::: {.pf-step #k-order-9-or-a4-quotient}
-If $|K|=9$, then $K$ is a normal Sylow $3$-subgroup. Hence, when no Sylow $3$-subgroup is normal, $|K|=3$ and $G/K\cong A_4$.
+If $\cardinality{K}=9$, then $K$ is a normal Sylow $3$-subgroup. Hence, when no Sylow $3$-subgroup is normal, $\cardinality{K}=3$ and $G/K\cong A_4$.
 
 ::: pf-proof
-The first assertion is immediate from $K\trianglelefteq G$. In the remaining case $|K|=3$, the image has order $36/3=12$. A subgroup of order $12$ in $S_4$ has index $2$ and is therefore the unique index-$2$ subgroup $A_4$.
+The first assertion is immediate from $K\trianglelefteq G$. In the remaining case $\cardinality{K}=3$, the image has order $36/3=12$. A subgroup of order $12$ in $S_4$ has index $2$ and is therefore the unique index-$2$ subgroup $A_4$.
 :::
 
 :::
@@ -116,9 +116,9 @@ Let $V_4\trianglelefteq A_4$ be its unique Sylow $2$-subgroup and put
 $$
 N=\varphi^{-1}(V_4).
 $$
-Then $N\trianglelefteq G$ and $|N|=|K||V_4|=12$. Let $P$ be a Sylow $2$-subgroup of $N$; then $|P|=4$, so $P$ is also a Sylow $2$-subgroup of $G$. Since $K\cap P=1$ and $K\subseteq Z(G)$ by step [](#k-in-center-of-g){.pf-ref},
+Then $N\trianglelefteq G$ and $\cardinality{N}=\cardinality{K}\cardinality{V_4}=12$. Let $P$ be a Sylow $2$-subgroup of $N$; then $\cardinality{P}=4$, so $P$ is also a Sylow $2$-subgroup of $G$. Since $K\cap P=1$ and $K\subseteq Z(G)$ by step [](#k-in-center-of-g){.pf-ref},
 $$
-|KP|=|K||P|=12=|N|,
+\cardinality{KP}=\cardinality{K}\cardinality{P}=12=\cardinality{N},
 $$
 so $N=KP$. Every element of $N$ is $kp'$ with $k\in K$, $p'\in P$, and centrality of $K$ gives
 $$

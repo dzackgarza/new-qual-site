@@ -129,7 +129,7 @@ For sufficiently large $n\ge0$, the sheaf $\overline{\mathcal F}(nH)$ is generat
 Restricting the resulting surjection gives
 $$
 \mathcal E_0=\mathcal M^{\oplus N}\longrightarrow\mathcal F,
-\qquad\mathcal M=\OO_{\overline X}(-nH)|_X.
+\qquad\mathcal M=\OO_{\overline X}(-nH)\restrict_X.
 $$
 Let $\mathcal E_1$ be its kernel.
 It is coherent and torsion-free as a subsheaf of $\mathcal E_0$.
@@ -225,7 +225,7 @@ For $r>0$, use the surjection $\mathcal M^{\oplus N}\to\mathcal F$ from step [](
 Choose $r$ summands whose images are a basis there.
 The resulting morphism $\mathcal M^{\oplus r}\to\mathcal F$ is generically an isomorphism.
 Its kernel is a coherent torsion subsheaf of a locally free sheaf, hence zero; its cokernel $\mathcal T$ has zero generic stalk, hence is torsion.
-Writing $\mathcal M=\OO_X(D)$, with $D=-nH|_X$, gives
+Writing $\mathcal M=\OO_X(D)$, with $D=-nH\restrict_X$, gives
 $$
 0\to\OO_X(D)^{\oplus r}\to\mathcal F\to\mathcal T\to0.
 $$

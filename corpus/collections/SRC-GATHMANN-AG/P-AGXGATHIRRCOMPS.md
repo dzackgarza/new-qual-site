@@ -22,7 +22,7 @@ X = V(x - yz, xz - y^2) \subset \AA^3/\CC
 :::
 
 ::: {.solution}
-Let $R \definedas \CC[x,y,z]$, $X_1 \definedas V(x-yz,\, y)$ and $X_2 \definedas V(x-yz,\, z^2-y)$.
+Let $R \coloneqq \CC[x,y,z]$, $X_1 \coloneqq V(x-yz,\, y)$ and $X_2 \coloneqq V(x-yz,\, z^2-y)$.
 
 ::: pf
 

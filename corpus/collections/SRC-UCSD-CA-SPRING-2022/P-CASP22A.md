@@ -34,8 +34,8 @@ rule
 $$
 F'(0)=f'(a)=1.
 $$
-Schwarz's lemma gives $|F(z)|\le|z|$, and equality in the derivative bound
-$|F'(0)|\le1$ forces
+Schwarz's lemma gives $\abs{F(z)}\le\abs{z}$, and equality in the derivative bound
+$\abs{F'(0)}\le1$ forces
 $$
 F(z)=e^{i\theta}z.
 $$

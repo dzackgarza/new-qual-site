@@ -26,11 +26,11 @@ audit:
 ::: {.problem}
 Let $AC([0,1])$ denote the absolutely continuous functions on $[0,1]$ with values in $\RR$ and for $1 \leq p < \infty$, let
 $$
-\mathcal{C}_p := \{f \in AC([0,1]) : f(0) = 0 \text{ and } \int_{[0,1]} |f'(x)|^p\,dx \leq 1\}
+\mathcal{C}_p := \{f \in AC([0,1]) : f(0) = 0 \text{ and } \int_{[0,1]} \abs{f'(x)}^p\,dx \leq 1\}
 $$
-thought of as a subset of the Banach space $(C([0,1]), \|\cdot\|_u)$ where
+thought of as a subset of the Banach space $(C([0,1]), \norm{\cdot}_u)$ where
 $$
-\|f\|_u := \max_{x \in [0,1]} |f(x)| \quad \forall f \in C([0,1]).
+\norm{f}_u := \max_{x \in [0,1]} \abs{f(x)} \quad \forall f \in C([0,1]).
 $$
 
 1. Show $\mathcal{C}_p$ is precompact in $C([0,1])$ for all $p \in (1, \infty)$.
@@ -55,19 +55,19 @@ f(y)-f(x)=\int_x^y f'(t)\,dt.
 $$
 By Hölder's inequality,
 $$
-|f(y)-f(x)|
+\abs{f(y)-f(x)}
 \le
-\left(\int_x^y|f'(t)|^p\,dt\right)^{1/p}
-|y-x|^{1/q}
-\le |y-x|^{1-1/p}.
+\left(\int_x^y\abs{f'(t)}^p\,dt\right)^{1/p}
+\abs{y-x}^{1/q}
+\le \abs{y-x}^{1-1/p}.
 $$
 Thus the whole family has the common Hölder modulus
 $$
-|f(y)-f(x)|\le |y-x|^{1-1/p}.
+\abs{f(y)-f(x)}\le \abs{y-x}^{1-1/p}.
 $$
 Also, since $f(0)=0$,
 $$
-|f(x)|\le x^{1-1/p}\le1,
+\abs{f(x)}\le x^{1-1/p}\le1,
 $$
 so $\mathcal C_p$ is uniformly bounded.
 
@@ -111,7 +111,7 @@ n,&0<x<1/n,\\
 $$
 almost everywhere. Therefore
 $$
-\int_0^1|f_n'(x)|\,dx=1,
+\int_0^1\abs{f_n'(x)}\,dx=1,
 $$
 so $f_n\in\mathcal C_1$.
 

@@ -103,9 +103,9 @@ Subtract $A(x)=\sin x/x$ from step [](#s1-1){.pf-ref}.
 
 For $x>0$,
 $$
-\left|
+\abs{
 \int_x^\infty\frac{\sin t}{t^2}\,dt
-\right|
+}
 \leq
 \frac{2}{x^2}.
 $$
@@ -119,7 +119,7 @@ F(T)=\int_x^T\sin t\,dt
 =
 \cos x-\cos T.
 $$
-Then $|F(T)|\leq2$. Integration by parts in the Dirichlet form gives
+Then $\abs{F(T)}\leq2$. Integration by parts in the Dirichlet form gives
 $$
 \int_x^R\frac{\sin t}{t^2}\,dt
 =
@@ -127,11 +127,11 @@ $$
 +
 2\int_x^R\frac{F(t)}{t^3}\,dt.
 $$
-Letting $R\to\infty$ and using $|F|\leq2$ gives
+Letting $R\to\infty$ and using $\abs{F}\leq2$ gives
 $$
-\left|
+\abs{
 \int_x^\infty\frac{\sin t}{t^2}\,dt
-\right|
+}
 \leq
 4\int_x^\infty t^{-3}\,dt
 =
@@ -146,9 +146,9 @@ $$
 
 Hence, whenever $\sin x\neq0$,
 $$
-\frac{|\operatorname{Ci}(x)-A(x)|}{|A(x)|}
+\frac{\abs{\operatorname{Ci}(x)-A(x)}}{\abs{A(x)}}
 \leq
-\frac{2}{x|\sin x|}.
+\frac{2}{x\abs{\sin x}}.
 $$
 
 
@@ -156,9 +156,9 @@ $$
 
 Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} and divide by
 $$
-|A(x)|
+\abs{A(x)}
 =
-\frac{|\sin x|}{x}.
+\frac{\abs{\sin x}}{x}.
 $$
 
 :::
@@ -169,11 +169,11 @@ $$
 
 Put
 $$
-q(x)=\frac{2}{x|\sin x|}.
+q(x)=\frac{2}{x\abs{\sin x}}.
 $$
 If $q(x)<1$, then
 $$
-\frac{|\operatorname{Ci}(x)-A(x)|}{|\operatorname{Ci}(x)|}
+\frac{\abs{\operatorname{Ci}(x)-A(x)}}{\abs{\operatorname{Ci}(x)}}
 \leq
 \frac{q(x)}{1-q(x)}.
 $$
@@ -183,17 +183,17 @@ $$
 
 Step [](#s1-4){.pf-ref} gives
 $$
-|\operatorname{Ci}(x)-A(x)|
+\abs{\operatorname{Ci}(x)-A(x)}
 \leq
-q(x)|A(x)|.
+q(x)\abs{A(x)}.
 $$
 The reverse triangle inequality then gives
 $$
-|\operatorname{Ci}(x)|
+\abs{\operatorname{Ci}(x)}
 \geq
-|A(x)|-|\operatorname{Ci}(x)-A(x)|
+\abs{A(x)}-\abs{\operatorname{Ci}(x)-A(x)}
 \geq
-(1-q(x))|A(x)|.
+(1-q(x))\abs{A(x)}.
 $$
 Divide the two estimates.
 
@@ -205,7 +205,7 @@ Divide the two estimates.
 
 A sufficient condition for true relative error below $10^{-4}$ is
 $$
-\boxed{x|\sin x|>20002}.
+\boxed{x\abs{\sin x}>20002}.
 $$
 
 
@@ -225,11 +225,11 @@ q<\frac{\varepsilon}{1+\varepsilon}.
 $$
 Since
 $$
-q=\frac{2}{x|\sin x|},
+q=\frac{2}{x\abs{\sin x}},
 $$
 it suffices that
 $$
-x|\sin x|
+x\abs{\sin x}
 >
 \frac{2(1+\varepsilon)}{\varepsilon}
 =
@@ -277,9 +277,9 @@ Away from zeros of $\sin x$, the pointwise relative error therefore has
 the asymptotic form
 $$
 \boxed{
-\frac{|\operatorname{Ci}(x)-\sin x/x|}{|\sin x/x|}
+\frac{\abs{\operatorname{Ci}(x)-\sin x/x}}{\abs{\sin x/x}}
 =
-\frac{|\cot x|}{x}
+\frac{\abs{\cot x}}{x}
 +
 O(x^{-2}).
 }
@@ -289,7 +289,7 @@ $$
 ::: pf-proof
 
 Subtract the leading approximation from step [](#s1-7){.pf-ref} and divide by
-$|\sin x|/x$.
+$\abs{\sin x}/x$.
 
 :::
 

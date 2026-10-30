@@ -50,7 +50,7 @@ If $p=q$, then $G$ has a nontrivial normal subgroup.
 
 ::: pf-proof
 
-In this case $|G|=p^3$, so $G$ is a finite $p$-group. The center of every nontrivial finite $p$-group is nontrivial. Hence
+In this case $\cardinality{G}=p^3$, so $G$ is a finite $p$-group. The center of every nontrivial finite $p$-group is nontrivial. Hence
 $$
 1\ne Z(G)\trianglelefteq G.
 $$

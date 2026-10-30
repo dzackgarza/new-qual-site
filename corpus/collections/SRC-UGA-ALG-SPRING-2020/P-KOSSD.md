@@ -15,9 +15,9 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $N$ be a normal subgroup of a finite group $G$ such that the order of $N$ and the index of $N$ in $G$ are relatively prime ($\gcd(|N|, [G : N]) = 1$).
+Let $N$ be a normal subgroup of a finite group $G$ such that the order of $N$ and the index of $N$ in $G$ are relatively prime ($\gcd(\cardinality{N}, [G : N]) = 1$).
 
-Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
+Prove that $N$ is the unique subgroup of $G$ of order $\cardinality{N}$.
 :::
 
 ::: {.solution}
@@ -26,19 +26,19 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 
 ::: pf-step
 
-There exist integers $s,t$ such that $|N|s+[G:N]t=1$.
+There exist integers $s,t$ such that $\cardinality{N}s+[G:N]t=1$.
 
 ::: pf-proof
 
 ::: pf-step
 
-Let $n = |N|$ and $m = [G : N] = |G/N|$.
+Let $n = \cardinality{N}$ and $m = [G : N] = \cardinality{G/N}$.
 
 :::
 
 ::: pf-step
 
-Since $N \trianglelefteq G$, the quotient group $G/N$ is well-defined and has order $|G/N| = m$.
+Since $N \trianglelefteq G$, the quotient group $G/N$ is well-defined and has order $\cardinality{G/N} = m$.
 
 :::
 
@@ -62,13 +62,13 @@ $$n s + m t = 1.$$
 
 ::: pf-step
 
-Every subgroup $K\leq G$ with $|K|=|N|$ is contained in $N$.
+Every subgroup $K\leq G$ with $\cardinality{K}=\cardinality{N}$ is contained in $N$.
 
 ::: pf-proof
 
 ::: pf-step
 
-Let $K \le G$ be a subgroup with $|K| = n$.
+Let $K \le G$ be a subgroup with $\cardinality{K} = n$.
 
 :::
 
@@ -80,13 +80,13 @@ Let $x \in K$ be an arbitrary element.
 
 ::: pf-step
 
-By Lagrange's Theorem in $K$, the element order $\operatorname{ord}(x)$ divides $|K| = n$, so $x^n = e$.
+By Lagrange's Theorem in $K$, the element order $\operatorname{ord}(x)$ divides $\cardinality{K} = n$, so $x^n = e$.
 
 :::
 
 ::: pf-step
 
-In the quotient group $G/N$, Lagrange's Theorem implies that the order of any coset divides $|G/N| = m$, so $(x N)^m = x^m N = e N = N$.
+In the quotient group $G/N$, Lagrange's Theorem implies that the order of any coset divides $\cardinality{G/N} = m$, so $(x N)^m = x^m N = e N = N$.
 
 :::
 
@@ -122,13 +122,13 @@ Since $x \in K$ was arbitrary, $K \subseteq N$.
 
 ::: {.pf-step #s3}
 
-Every subgroup $K$ of order $|N|$ equals $N$.
+Every subgroup $K$ of order $\cardinality{N}$ equals $N$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$K \subseteq N$ and $|K| = |N| = n < \infty$.
+$K \subseteq N$ and $\cardinality{K} = \cardinality{N} = n < \infty$.
 
 :::
 

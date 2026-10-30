@@ -36,7 +36,7 @@ For every $R>0$ and every $n\ge0$,
 $$
 \boxed{
 a_n=\frac{1}{2\pi i}
-\int_{|\zeta|=R}
+\int_{\abs{\zeta}=R}
 \frac{f(\zeta)}{\zeta^{n+1}}\,d\zeta}.
 $$
 
@@ -44,11 +44,11 @@ $$
 ::: pf-proof
 
 Because $f$ is entire, it is holomorphic on a neighborhood of the closed
-disk $|z|\le R$. Cauchy's formula for derivatives gives
+disk $\abs{z}\le R$. Cauchy's formula for derivatives gives
 $$
 f^{(n)}(0)
 =\frac{n!}{2\pi i}
-\int_{|\zeta|=R}
+\int_{\abs{\zeta}=R}
 \frac{f(\zeta)}{\zeta^{n+1}}\,d\zeta.
 $$
 Since $a_n=f^{(n)}(0)/n!$, the displayed coefficient formula follows.
@@ -61,9 +61,9 @@ Since $a_n=f^{(n)}(0)/n!$, the displayed coefficient formula follows.
 
 For every $R>0$,
 $$
-|a_n|\le \frac{M_R}{R^n},
+\abs{a_n}\le \frac{M_R}{R^n},
 \qquad
-M_R=\max_{|\zeta|=R}|f(\zeta)|.
+M_R=\max_{\abs{\zeta}=R}\abs{f(\zeta)}.
 $$
 
 
@@ -71,7 +71,7 @@ $$
 
 Apply the ML estimate to the integral in step [](#s1-1){.pf-ref}:
 $$
-|a_n|
+\abs{a_n}
 \le
 \frac1{2\pi}
 (2\pi R)
@@ -93,11 +93,11 @@ subset of $\CC$.
 
 Let $E\subset\CC$ be bounded. Choose $r>0$ with
 $$
-E\subseteq\{z:|z|\le r\},
+E\subseteq\{z:\abs{z}\le r\},
 $$
 and then choose $R>r$. For $z\in E$, step [](#s1-2){.pf-ref} gives
 $$
-|a_nz^n|
+\abs{a_nz^n}
 \le M_R\left(\frac rR\right)^n.
 $$
 The geometric series
@@ -123,12 +123,12 @@ $f$ is a polynomial.
 Uniform convergence of the series implies that its terms converge
 uniformly to zero. Therefore there is $N$ such that, for every $n\ge N$,
 $$
-\sup_{z\in\CC}|a_nz^n|<1.
+\sup_{z\in\CC}\abs{a_nz^n}<1.
 $$
 If $n\ge N$ and $a_n\ne0$, then
 $$
-|a_nz^n|\longrightarrow\infty
-\qquad(|z|\to\infty),
+\abs{a_nz^n}\longrightarrow\infty
+\qquad(\abs{z}\to\infty),
 $$
 contradicting the displayed uniform bound. Hence $a_n=0$ for all
 $n\ge N$, so the Taylor series is finite and $f$ is a polynomial.

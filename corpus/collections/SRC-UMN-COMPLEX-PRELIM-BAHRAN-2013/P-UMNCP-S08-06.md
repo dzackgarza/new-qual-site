@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Find an explicit conformal equivalence from
 $$
-R_1=\{z\in\CC:\operatorname{Re}z>0,\ \operatorname{Im}z>0,\ |z|<1\}
+R_1=\{z\in\CC:\operatorname{Re}z>0,\ \operatorname{Im}z>0,\ \abs{z}<1\}
 $$
 to
 $$
@@ -49,7 +49,7 @@ is a biholomorphism from $R_1$ onto the upper half-disk
 $$
 D_+
 \coloneqq
-\{w\in\CC:|w|<1,\ \operatorname{Im}w>0\}.
+\{w\in\CC:\abs{w}<1,\ \operatorname{Im}w>0\}.
 $$
 
 
@@ -71,7 +71,7 @@ z^2=r^2e^{2i\theta},
 $$
 so
 $$
-|z^2|<1
+\abs{z^2}<1
 $$
 and
 $$
@@ -124,7 +124,7 @@ w=u+iv\in D_+.
 $$
 Then
 $$
-|w|<1
+\abs{w}<1
 $$
 and
 $$
@@ -139,14 +139,14 @@ $$
 T(w)
 =
 \frac{(1+w)(1-\overline w)}
-{|1-w|^2}.
+{\abs{1-w}^2}.
 $$
 Its real part is
 $$
 \operatorname{Re}T(w)
 =
-\frac{1-|w|^2}
-{|1-w|^2}
+\frac{1-\abs{w}^2}
+{\abs{1-w}^2}
 >0,
 $$
 and its imaginary part is
@@ -154,7 +154,7 @@ $$
 \operatorname{Im}T(w)
 =
 \frac{2\operatorname{Im}w}
-{|1-w|^2}
+{\abs{1-w}^2}
 >0.
 $$
 Thus
@@ -189,28 +189,28 @@ w=T^{-1}(\zeta).
 $$
 Then
 $$
-|w|^2
+\abs{w}^2
 =
-\frac{|\zeta-1|^2}
-{|\zeta+1|^2}.
+\frac{\abs{\zeta-1}^2}
+{\abs{\zeta+1}^2}.
 $$
 Because
 $$
-|\zeta+1|^2-|\zeta-1|^2
+\abs{\zeta+1}^2-\abs{\zeta-1}^2
 =
 4x
 >0,
 $$
 one has
 $$
-|w|<1.
+\abs{w}<1.
 $$
 Also
 $$
 \operatorname{Im}w
 =
 \frac{2y}
-{|\zeta+1|^2}
+{\abs{\zeta+1}^2}
 >0.
 $$
 Hence

@@ -33,7 +33,7 @@ As $v$ ranges over the set satisfying
 $$
 v^TAv=1,
 $$
-show that $\|v\|$ is bounded and determine its least upper bound.
+show that $\norm{v}$ is bounded and determine its least upper bound.
 :::
 
 ::: {.solution}

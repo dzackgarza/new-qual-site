@@ -44,7 +44,7 @@ be the left edge.
 
 We first prove a compact local-injectivity lemma.
 Let $f:E\to M$ be continuous, where $M$ is metric.
-Suppose $K\subseteq E$ is compact, $f|_K$ is injective, and every $k\in K$ has a neighborhood on which $f$ is injective.
+Suppose $K\subseteq E$ is compact, $f\restrict_K$ is injective, and every $k\in K$ has a neighborhood on which $f$ is injective.
 Then there is an open neighborhood $N$ of $K$ on which $f$ is injective.
 
 ::: pf-proof
@@ -79,7 +79,7 @@ We claim
 $$
 K\times K\subseteq O.
 $$
-Indeed, if $k\ne k'$ lie in $K$, injectivity of $f|_K$ gives
+Indeed, if $k\ne k'$ lie in $K$, injectivity of $f\restrict_K$ gives
 $$
 f(k)\ne f(k'),
 $$
@@ -101,7 +101,7 @@ $$
 (e,e')\in (N\times N)\cap Z\subseteq O\cap Z\subseteq V.
 $$
 Hence $e,e'$ lie together in some $V_k$, where $f$ is injective, so $e=e'$.
-Thus $f|_N$ is injective.
+Thus $f\restrict_N$ is injective.
 
 :::
 
@@ -118,7 +118,7 @@ Choose a point $\widetilde \ell_0$ above the lower-left corner of $L$.
 The inclusion path of $L$ has a unique lift beginning at $\widetilde \ell_0$; denote its image by $\widetilde L$.
 Then
 $$
-p|_{\widetilde L}:\widetilde L\to L
+p\restrict_{\widetilde L}:\widetilde L\to L
 $$
 is a homeomorphism.
 
@@ -138,7 +138,7 @@ Equivalently, its inverse is simply the restriction of $p$ followed by the inver
 
 There is an open neighborhood $N$ of $\widetilde L$ such that
 $$
-p|_N:N\longrightarrow p(N)
+p\restrict_N:N\longrightarrow p(N)
 $$
 is a homeomorphism, and $p(N)$ is an open neighborhood of $L$ in $X$.
 
@@ -162,7 +162,7 @@ Every covering map is open: on each covering sheet it is a homeomorphism onto an
 Therefore $p(N)$ is open.
 The continuous bijection
 $$
-p|_N:N\to p(N)
+p\restrict_N:N\to p(N)
 $$
 is open, hence is a homeomorphism.
 Since $p(\widetilde L)=L$, the set $p(N)$ contains $L$.
@@ -254,7 +254,7 @@ $$
 
 The loop $R_n$ therefore has the closed lift
 $$
-\widetilde R_n=(p|_N)^{-1}\circ R_n
+\widetilde R_n=(p\restrict_N)^{-1}\circ R_n
 $$
 in $\widetilde X$.
 Since $\widetilde X$ is simply connected, $\widetilde R_n$ is nullhomotopic.

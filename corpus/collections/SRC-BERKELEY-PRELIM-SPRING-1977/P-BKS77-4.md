@@ -29,9 +29,9 @@ $$
 ::: {.pf-step #growth-at-infinity}
 One has
 $$
-|p(z)|\longrightarrow\infty
+\abs{p(z)}\longrightarrow\infty
 \qquad
-\text{as }|z|\longrightarrow\infty.
+\text{as }\abs{z}\longrightarrow\infty.
 $$
 
 ::: pf-proof
@@ -46,11 +46,11 @@ a_nz^n
 \frac{a_0}{a_nz^n}
 \right).
 $$
-The parenthesized factor tends to $1$ as $|z|\to\infty$. Hence there is $R>0$ such that for $|z|\geq R$ its modulus is at least $1/2$. Therefore
+The parenthesized factor tends to $1$ as $\abs{z}\to\infty$. Hence there is $R>0$ such that for $\abs{z}\geq R$ its modulus is at least $1/2$. Therefore
 $$
-|p(z)|
+\abs{p(z)}
 \geq
-\frac{|a_n|}{2}|z|^n
+\frac{\abs{a_n}}{2}\abs{z}^n
 \longrightarrow\infty.
 $$
 :::
@@ -76,21 +76,21 @@ Under the assumption of [](#entire-reciprocal){.pf-ref}, the entire function $f=
 ::: pf-proof
 By [](#growth-at-infinity){.pf-ref} there is $R>0$ such that
 $$
-|p(z)|\geq1
+\abs{p(z)}\geq1
 $$
-whenever $|z|\geq R$. Hence
+whenever $\abs{z}\geq R$. Hence
 $$
-|f(z)|\leq1
+\abs{f(z)}\leq1
 $$
-outside the closed disk $\{|z|\leq R\}$.
+outside the closed disk $\{\abs{z}\leq R\}$.
 
 On that closed disk, $f$ is continuous, so compactness gives a finite maximum
 $$
-M\coloneqq\max_{|z|\leq R}|f(z)|.
+M\coloneqq\max_{\abs{z}\leq R}\abs{f(z)}.
 $$
 Thus
 $$
-|f(z)|\leq\max\{1,M\}
+\abs{f(z)}\leq\max\{1,M\}
 $$
 for all $z\in\CC$.
 :::

@@ -20,7 +20,7 @@ Expand
 $$
 f(z)=e^{1/z^2}
 $$
-in a Laurent series on the annulus $0<|z|<\infty$.
+in a Laurent series on the annulus $0<\abs{z}<\infty$.
 :::
 
 ::: {.solution}
@@ -68,7 +68,7 @@ If $z\ne0$, then $w=1/z^2$ is a well-defined complex number. Since the series in
 
 ::: {.pf-step #s1-3}
 
-Hence the Laurent expansion on $0<|z|<\infty$ is
+Hence the Laurent expansion on $0<\abs{z}<\infty$ is
 $$
 \boxed{
 e^{1/z^2}

@@ -123,7 +123,7 @@ $$
 Order the hyperplanes by their indices.
 The differential is alternating restriction: for $J=\{j_0<\cdots<j_p\}$, its component is
 $$
-(dc)_J=\sum_{a=0}^p(-1)^a c_{J\setminus\{j_a\}}|_{H_J}.
+(dc)_J=\sum_{a=0}^p(-1)^a c_{J\setminus\{j_a\}}\restrict_{H_J}.
 $$
 In degree zero, the empty-index component is the constant sheaf on $X$.
 Every pair of omitted indices occurs with opposite signs in the next differential, so $d^2=0$.

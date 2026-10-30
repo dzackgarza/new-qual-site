@@ -45,7 +45,7 @@ How many distinct bracelets are there?
 Let $\mathcal C$ be the set of all colorings of the $r$ bead positions.
 Then
 $$
-|\mathcal C|=n^r.
+\cardinality{\mathcal C}=n^r.
 $$
 Let $D_r$ denote the dihedral group of order $2r$ acting on the bead positions, and hence on $\mathcal C$.
 The desired bracelets are exactly the $D_r$-orbits.
@@ -70,7 +70,7 @@ cycles.
 A coloring is fixed precisely when it is constant on each cycle.
 There are $n$ independent choices of color for each cycle, hence
 $$
-|\operatorname{Fix}(\rho^k)|=n^{\gcd(r,k)}.
+\cardinality{\operatorname{Fix}(\rho^k)}=n^{\gcd(r,k)}.
 $$
 
 :::
@@ -227,7 +227,7 @@ $$
 ::: pf-proof
 
 Again apply Burnside's lemma.
-Use step [](#s2){.pf-ref} for the rotations and step [](#s4){.pf-ref} for the two families of $r/2$ reflections, then divide their total fixed-point count by $|D_r|=2r$.
+Use step [](#s2){.pf-ref} for the rotations and step [](#s4){.pf-ref} for the two families of $r/2$ reflections, then divide their total fixed-point count by $\cardinality{D_r}=2r$.
 
 :::
 

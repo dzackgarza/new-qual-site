@@ -47,7 +47,7 @@ The Cauchy integral formula for the first derivative of $f$ gives $\int_\gamma \
 For any region $\Omega$, the two integrals are equal.
 
 ::: pf-proof
-$G(z) \definedas \frac{f(z)}{z-a}$ is holomorphic on $\Omega\setminus\theset{a}$, which contains $\gamma$, and by the quotient rule
+$G(z) \coloneqq \frac{f(z)}{z-a}$ is holomorphic on $\Omega\setminus\theset{a}$, which contains $\gamma$, and by the quotient rule
 $$
 G'(z) = {f'(z)\over z-a} - {f(z) \over (z-a)^2}.
 $$

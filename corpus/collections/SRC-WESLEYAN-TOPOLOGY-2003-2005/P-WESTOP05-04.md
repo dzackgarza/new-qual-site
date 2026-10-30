@@ -270,9 +270,9 @@ functions agree on the dense set $Q$, they agree everywhere.
 
 Thus
 $$
-|C(X,[0,1])|
+\cardinality{C(X,[0,1])}
 \le
-|[0,1]^Q|
+\cardinality{[0,1]^Q}
 =
 \mathfrak c^{\aleph_0}
 =
@@ -308,13 +308,13 @@ f_A:\sorgenfrey^2\to[0,1]
 $$
 such that
 $$
-f_A|_A=0,
+f_A\restrict_A=0,
 \qquad
-f_A|_{D-A}=1.
+f_A\restrict_{D-A}=1.
 $$
 Distinct subsets $A$ give distinct functions. Since
 $$
-|\mathcal P(D)|=2^{\mathfrak c},
+\cardinality{\mathcal P(D)}=2^{\mathfrak c},
 $$
 there would be at least $2^{\mathfrak c}$ such functions.
 
@@ -609,7 +609,7 @@ $$
 B_x=\{x\}.
 $$
 Thus every singleton belongs to every basis, so every basis has cardinality
-at least $|D|$, which is uncountable.
+at least $\cardinality{D}$, which is uncountable.
 
 :::
 

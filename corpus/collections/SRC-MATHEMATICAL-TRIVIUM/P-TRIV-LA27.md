@@ -44,7 +44,7 @@ $$
 
 The two vectors have the same norm:
 $$
-\|a\|^2=\|b\|^2=6.
+\norm{a}^2=\norm{b}^2=6.
 $$
 
 
@@ -52,11 +52,11 @@ $$
 
 Directly,
 $$
-\|a\|^2=1+2+3=6,
+\norm{a}^2=1+2+3=6,
 $$
 and
 $$
-\|b\|^2=0+2+4=6.
+\norm{b}^2=0+2+4=6.
 $$
 
 :::
@@ -116,20 +116,20 @@ The Householder transformation sends $a$ to $b$.
 
 ::: pf-proof
 
-Because $\|a\|=\|b\|$,
+Because $\norm{a}=\norm{b}$,
 $$
 u^Ta
 =(a-b)^Ta
 =
-\|a\|^2-a^Tb,
+\norm{a}^2-a^Tb,
 $$
 while
 $$
 u^Tu
 =
-\|a-b\|^2
+\norm{a-b}^2
 =
-2(\|a\|^2-a^Tb).
+2(\norm{a}^2-a^Tb).
 $$
 Thus
 $$

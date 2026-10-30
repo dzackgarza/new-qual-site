@@ -34,23 +34,23 @@ for all $i \geq 0$.
 ::: {.proof}
 The statement is local on $Y$. Let $U\subseteq Y$ be an open set on which
 $$
-\mathcal E|_U\cong\OO_U^{\oplus r}.
+\mathcal E\restrict_U\cong\OO_U^{\oplus r}.
 $$
-Write $f_U\colon f^{-1}(U)\to U$ and $\mathcal F_U=\mathcal F|_{f^{-1}(U)}$. Then
+Write $f_U\colon f^{-1}(U)\to U$ and $\mathcal F_U=\mathcal F\restrict_{f^{-1}(U)}$. Then
 $$
-\mathcal F_U\otimes_{\OO_{f^{-1}(U)}}f_U^*(\mathcal E|_U)
+\mathcal F_U\otimes_{\OO_{f^{-1}(U)}}f_U^*(\mathcal E\restrict_U)
 \cong
 \mathcal F_U^{\oplus r}.
 $$
 Since the right derived functors of the additive functor $f_*$ commute with finite direct sums,
 $$
-\bigl(R^if_*(\mathcal F\otimes f^*\mathcal E)\bigr)|_U
+\bigl(R^if_*(\mathcal F\otimes f^*\mathcal E)\bigr)\restrict_U
 \cong
 R^i(f_U)_*(\mathcal F_U^{\oplus r})
 \cong
 \bigl(R^i(f_U)_*\mathcal F_U\bigr)^{\oplus r}
 \cong
-\bigl(R^if_*\mathcal F\otimes_{\OO_Y}\mathcal E\bigr)|_U.
+\bigl(R^if_*\mathcal F\otimes_{\OO_Y}\mathcal E\bigr)\restrict_U.
 $$
 These local isomorphisms are the restrictions of the natural projection-formula morphism, so they glue to the stated global isomorphism.
 :::

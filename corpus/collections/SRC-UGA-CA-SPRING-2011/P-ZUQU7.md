@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-ZUQU7
 kind: problem
-title: Injective conformal maps of $\{\operatorname{Re} z>0,\ |z-1|>1\}$ onto the
-  disc
+title: Injective conformal maps of $\{\operatorname{Re} z>0,\ \abs{z-1}>1\}$ onto the disc
 classification:
   areas:
   - complex-analysis
@@ -19,7 +18,7 @@ review: draft
 ::: {.problem}
 Define
 $$  
-G \definedas \theset{z\in \CC\suchthat \Re(z) > 0, \, \abs{z-1} > 1}
+G \coloneqq \theset{z\in \CC\suchthat \Re(z) > 0, \, \abs{z-1} > 1}
 .$$
 
 Find all injective conformal maps of $G$ onto $\DD$.
@@ -47,15 +46,15 @@ $$
 Because $\Re z>0$, the point $z=0$ does not lie in $G$, so $T$ is
 holomorphic there. Also
 $$
-\Re\frac1z=\frac{\Re z}{|z|^2}>0.
+\Re\frac1z=\frac{\Re z}{\abs{z}^2}>0.
 $$
 The second defining inequality for $G$ is
 $$
-|z-1|>1
+\abs{z-1}>1
 \iff
-|z|^2-2\Re z>0
+\abs{z}^2-2\Re z>0
 \iff
-\frac{\Re z}{|z|^2}<\frac12
+\frac{\Re z}{\abs{z}^2}<\frac12
 \iff
 \Re\frac1z<\frac12.
 $$
@@ -118,12 +117,12 @@ maps $\HH$ biholomorphically onto $\DD$.
 
 This is the standard Cayley transform. Directly, if $\Im\zeta>0$, then
 $$
-|\zeta-i|^2
-=|\zeta|^2+1-2\Im\zeta
-<|\zeta|^2+1+2\Im\zeta
-=|\zeta+i|^2,
+\abs{\zeta-i}^2
+=\abs{\zeta}^2+1-2\Im\zeta
+<\abs{\zeta}^2+1+2\Im\zeta
+=\abs{\zeta+i}^2,
 $$
-so $|C(\zeta)|<1$. Its inverse is
+so $\abs{C(\zeta)}<1$. Its inverse is
 $$
 C^{-1}(w)=i\frac{1+w}{1-w},
 $$

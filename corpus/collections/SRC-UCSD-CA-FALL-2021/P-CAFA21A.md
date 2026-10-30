@@ -96,11 +96,11 @@ Contour estimates:
 ::: pf-step
 
 **Large semicircle estimate on $C_R$:**
-For $z = R e^{i\theta}$ with $\theta \in [0, \pi]$, we have $\operatorname{Im}(z) = R \sin \theta \ge 0$, so $|e^{iz}| = e^{-R \sin \theta} \le 1$.
-Thus $|1 - e^{iz}| \le 1 + |e^{iz}| \le 2$.
+For $z = R e^{i\theta}$ with $\theta \in [0, \pi]$, we have $\operatorname{Im}(z) = R \sin \theta \ge 0$, so $\abs{e^{iz}} = e^{-R \sin \theta} \le 1$.
+Thus $\abs{1 - e^{iz}} \le 1 + \abs{e^{iz}} \le 2$.
 The integral along $C_R$ is bounded by:
 $$
-\left| \int_{C_R} f(z) \, dz \right| \le \frac{2}{R^2} \cdot \pi R = \frac{2\pi}{R} \xrightarrow{R \to \infty} 0.
+\abs{ \int_{C_R} f(z) \, dz } \le \frac{2}{R^2} \cdot \pi R = \frac{2\pi}{R} \xrightarrow{R \to \infty} 0.
 $$
 
 ::: pf-proof

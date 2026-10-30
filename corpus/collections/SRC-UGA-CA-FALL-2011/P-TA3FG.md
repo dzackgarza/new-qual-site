@@ -18,7 +18,7 @@ review: draft
 ::: {.problem}
 Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of convergence exactly 1.
 
-(a) Give an example of such a series that converges at every point of the unit circle $S^1 = \{|z| = 1\}$.
+(a) Give an example of such a series that converges at every point of the unit circle $S^1 = \{\abs{z} = 1\}$.
 
 (b) Give an example of such a function $f$ that is analytic at $z = 1$, but whose series $\sum_{n=0}^\infty a_n$ diverges.
 
@@ -42,15 +42,15 @@ $$f(z) = \sum_{n=1}^\infty \frac{z^n}{n^2}.$$
 
 ::: pf-step
 Radius of convergence:
-$$R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = \lim_{n \to \infty} \frac{(n+1)^2}{n^2} = 1.$$
+$$R = \lim_{n \to \infty} \abs{ \frac{a_n}{a_{n+1}} } = \lim_{n \to \infty} \frac{(n+1)^2}{n^2} = 1.$$
 :::
 
 ::: pf-step
 Convergence on $S^1$:
 
-- For any $z \in S^1$, $|z| = 1$, so $\left| \frac{z^n}{n^2} \right| = \frac{1}{n^2}$.
+- For any $z \in S^1$, $\abs{z} = 1$, so $\abs{ \frac{z^n}{n^2} } = \frac{1}{n^2}$.
 - The series $\sum_{n=1}^\infty \frac{1}{n^2} < \infty$ converges ($p$-series with $p = 2 > 1$).
-- By the Weierstrass $M$-test, the series converges absolutely (and uniformly) on the entire closed disk $\overline{\DD} = \{|z| \le 1\}$.
+- By the Weierstrass $M$-test, the series converges absolutely (and uniformly) on the entire closed disk $\overline{\DD} = \{\abs{z} \le 1\}$.
 :::
 
 ::: pf-step
@@ -68,11 +68,11 @@ Part (b): Example analytic at $z = 1$ with divergent series $\sum a_n$.
 
 ::: pf-step
 Define the function
-$$f(z) = \frac{1}{1 + z} = \sum_{n=0}^\infty (-1)^n z^n \quad \text{for } |z| < 1.$$
+$$f(z) = \frac{1}{1 + z} = \sum_{n=0}^\infty (-1)^n z^n \quad \text{for } \abs{z} < 1.$$
 :::
 
 ::: pf-step
-Radius of convergence: $R = 1$ because the sequence of coefficients is $a_n = (-1)^n$, so $\limsup_{n \to \infty} |a_n|^{1/n} = 1$.
+Radius of convergence: $R = 1$ because the sequence of coefficients is $a_n = (-1)^n$, so $\limsup_{n \to \infty} \abs{a_n}^{1/n} = 1$.
 :::
 
 ::: pf-step
@@ -124,7 +124,7 @@ Global extension:
 ::: pf-step
 Enlarged disk:
 
-- The domain $U$ is an open set containing the compact set $\overline{\DD} = \{|z| \le 1\}$.
+- The domain $U$ is an open set containing the compact set $\overline{\DD} = \{\abs{z} \le 1\}$.
 - By the Lebesgue Covering Lemma (or distance from a compact set to the complement), there exists $\varepsilon > 0$ such that the disk $D(0, 1 + \varepsilon) \subseteq U$.
 :::
 

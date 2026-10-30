@@ -38,7 +38,7 @@ The repeated $P$ and $Q$ glyphs have the same orientation on their paired parall
 
 First quotient by the two translation pairings. A cross-section perpendicular to the $R$-direction becomes a torus $T^2$, and the remaining $R$-pairing makes $X$ the mapping torus of the half-turn
 $$
-f:T^2\to T^2,\qquad f_*|_{H_1(T^2)}=-I.
+f:T^2\to T^2,\qquad f_*\restrict_{H_1(T^2)}=-I.
 $$
 
 ::: pf-proof

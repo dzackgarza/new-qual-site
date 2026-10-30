@@ -29,6 +29,6 @@ Give the definition of convergence in measure for a sequence of functions.
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be measurable functions on $X$.
 We say that $f_n$ converges to $f$ in measure if for every $\varepsilon>0$,
 $$
-\boxed{\mu\bigl(\{x\in X:|f_n(x)-f(x)|>\varepsilon\}\bigr)\longrightarrow0.}
+\boxed{\mu\bigl(\{x\in X:\abs{f_n(x)-f(x)}>\varepsilon\}\bigr)\longrightarrow0.}
 $$
 :::

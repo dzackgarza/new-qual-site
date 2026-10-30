@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X, \|\cdot\|)$ be a complex Banach space satisfying: $\|x + y\|^2 + \|x - y\|^2 = 2\|x\|^2 + 2\|y\|^2$.
+Let $(X, \norm{\cdot})$ be a complex Banach space satisfying: $\norm{x + y}^2 + \norm{x - y}^2 = 2\norm{x}^2 + 2\norm{y}^2$.
 Prove that the space is a Hilbert space and the norm is induced by the inner product.
-Namely you need to construct an inner product $(\cdot, \cdot)$ on $X$ such that its induced norm is the same as $\|\cdot\|$.
+Namely you need to construct an inner product $(\cdot, \cdot)$ on $X$ such that its induced norm is the same as $\norm{\cdot}$.
 :::
 
 ::: {.solution}
@@ -41,7 +41,7 @@ Construct the underlying real bilinear form.
 
 Write
 $$
-q(x):=\|x\|^2
+q(x):=\norm{x}^2
 $$
 and define, viewing $X$ first as a real vector space,
 $$
@@ -49,7 +49,7 @@ B(x,y):=\frac14\bigl(q(x+y)-q(x-y)\bigr).
 $$
 Clearly $B(x,y)=B(y,x)$ and
 $$
-B(x,x)=q(x)=\|x\|^2.
+B(x,x)=q(x)=\norm{x}^2.
 $$
 
 We prove additivity in the first variable. Applying the parallelogram identity to $(x+y,z)$ and to $(x-y,z)$ gives
@@ -83,13 +83,13 @@ Thus $B$ is additive in its first variable. Symmetry gives additivity in the sec
 
 Integer and rational homogeneity follow from additivity. Since $B$ is continuous—indeed
 $$
-|B(x,y)|
-\le \frac14\bigl(\|x+y\|^2+\|x-y\|^2\bigr)
-=\frac12(\|x\|^2+\|y\|^2)
+\abs{B(x,y)}
+\le \frac14\bigl(\norm{x+y}^2+\norm{x-y}^2\bigr)
+=\frac12(\norm{x}^2+\norm{y}^2)
 $$
 and the defining expression is continuous—rational homogeneity extends to real homogeneity. Hence $B$ is a symmetric real-bilinear form satisfying
 $$
-B(x,x)=\|x\|^2.
+B(x,x)=\norm{x}^2.
 $$
 In particular $B$ is a real inner product on the underlying real vector space.
 
@@ -105,7 +105,7 @@ Record how multiplication by $i$ interacts with $B$.
 
 Because the norm is a complex norm,
 $$
-q(ix)=\|ix\|^2=\|x\|^2=q(x).
+q(ix)=\norm{ix}^2=\norm{x}^2=q(x).
 $$
 Therefore, using the real polarization formula,
 $$
@@ -173,7 +173,7 @@ B(ix,x)=-B(x,ix)=-B(ix,x),
 $$
 so $B(ix,x)=0$. Hence
 $$
-\langle x,x\rangle=B(x,x)=\|x\|^2.
+\langle x,x\rangle=B(x,x)=\norm{x}^2.
 $$
 Therefore $\langle\cdot,\cdot\rangle$ is an inner product whose induced norm is exactly the given norm.
 

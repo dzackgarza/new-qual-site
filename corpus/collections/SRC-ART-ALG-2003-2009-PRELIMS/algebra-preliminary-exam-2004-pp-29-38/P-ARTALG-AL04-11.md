@@ -57,7 +57,7 @@ $d=[K:\FF_5]$, the tower law gives
 $$
 20=[F:\FF_5]=[F:K]d.
 $$
-Consequently $d\mid20$ and $|K|=5^d$. The positive divisors
+Consequently $d\mid20$ and $\cardinality{K}=5^d$. The positive divisors
 of $20=2^2\cdot5$ are exactly $1,2,4,5,10,20$.
 
 :::

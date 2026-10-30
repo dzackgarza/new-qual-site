@@ -29,7 +29,7 @@ Without using either Picard theorem, show that there exist complex numbers $z$ o
 
 Suppose, toward a contradiction, that there is $R_0>0$ such that
 $$
-|z|>R_0
+\abs{z}>R_0
 \quad\Longrightarrow\quad
 f(z)\notin(0,\infty).
 $$
@@ -48,7 +48,7 @@ This is exactly the negation of the assertion that points of arbitrarily large m
 Choose a positive real number $M$ such that
 $$
 M>
-\max_{|z|\le R_0}|f(z)|
+\max_{\abs{z}\le R_0}\abs{f(z)}
 $$
 and define
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-First suppose $|z|\le R_0$. If
+First suppose $\abs{z}\le R_0$. If
 $$
 g(z)\in[0,\infty),
 $$
@@ -74,7 +74,7 @@ f(z)=M+g(z)
 $$
 is a positive real number of modulus at least $M$, contradicting the choice of $M$.
 
-Now suppose $|z|>R_0$. If $g(z)\in[0,\infty)$, then
+Now suppose $\abs{z}>R_0$. If $g(z)\in[0,\infty)$, then
 $$
 f(z)=M+g(z)>0
 $$
@@ -105,7 +105,7 @@ choose the branch of the argument in $(0,2\pi)$ and define
 $$
 S(w)=\sqrt w
 =
-\exp\left(\frac12(\log|w|+i\operatorname{Arg}w)\right).
+\exp\left(\frac12(\log\abs{w}+i\operatorname{Arg}w)\right).
 $$
 Then
 $$
@@ -184,7 +184,7 @@ Step [](#s1-5){.pf-ref} contradicts the hypothesis that $f$ is nonconstant.
 
 Therefore, for every $R>0$, there exists $z\in\CC$ with
 $$
-|z|>R
+\abs{z}>R
 $$
 such that
 $$

@@ -83,7 +83,7 @@ The field $S$ has exactly $p^n$ elements and contains $\FF_p$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, $S$ is exactly the set of the $p^n$ distinct roots of $f$, so $|S|=p^n$. For $c\in\FF_p$, one has $c^p=c$, and iterating Frobenius gives $c^{p^n}=c$. Thus $\FF_p\subseteq S$.
+By step [](#s1){.pf-ref}, $S$ is exactly the set of the $p^n$ distinct roots of $f$, so $\cardinality{S}=p^n$. For $c\in\FF_p$, one has $c^p=c$, and iterating Frobenius gives $c^{p^n}=c$. Thus $\FF_p\subseteq S$.
 
 :::
 

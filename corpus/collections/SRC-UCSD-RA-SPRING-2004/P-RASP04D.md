@@ -35,7 +35,7 @@ $$
 
 (c) Explain why there exists $f_n \in C_c^\infty(\RR)$ such that
 $$
-\lim_{n \to \infty} \|f_n - f\|_{L^\infty(\RR, m)} = 0 = \lim_{n \to \infty} \|f' - f_n'\|_{L^1(\RR, m)}.
+\lim_{n \to \infty} \norm{f_n - f}_{L^\infty(\RR, m)} = 0 = \lim_{n \to \infty} \norm{f' - f_n'}_{L^1(\RR, m)}.
 $$
 :::
 
@@ -108,14 +108,14 @@ Then $f_\varepsilon\in C_c^\infty(\RR)$.
 Because $f$ is continuous with compact support, it is uniformly continuous on $\RR$. Therefore
 $$
 \begin{aligned}
-|f_\varepsilon(x)-f(x)|
-&\le \int \rho_\varepsilon(y)|f(x-y)-f(x)|\,dy\\
-&\le \sup_{|y|\le C\varepsilon}|f(x-y)-f(x)|,
+\abs{f_\varepsilon(x)-f(x)}
+&\le \int \rho_\varepsilon(y)\abs{f(x-y)-f(x)}\,dy\\
+&\le \sup_{\abs{y}\le C\varepsilon}\abs{f(x-y)-f(x)},
 \end{aligned}
 $$
 where $C$ bounds the support of $\rho$. Hence
 $$
-\|f_\varepsilon-f\|_\infty\longrightarrow0.
+\norm{f_\varepsilon-f}_\infty\longrightarrow0.
 $$
 
 Since $f$ is absolutely continuous with compact support, $f'\in L^1(\RR)$. By Step 2,
@@ -124,16 +124,16 @@ f_\varepsilon'=\rho_\varepsilon*f'.
 $$
 The family $(\rho_\varepsilon)$ is an approximate identity in $L^1$, so
 $$
-\|f_\varepsilon'-f'\|_1
-=\|\rho_\varepsilon*f'-f'\|_1
+\norm{f_\varepsilon'-f'}_1
+=\norm{\rho_\varepsilon*f'-f'}_1
 \longrightarrow0.
 $$
 Choosing any sequence $\varepsilon_n\downarrow0$ and setting $f_n=f_{\varepsilon_n}$ gives
 $$
 \boxed{
-\|f_n-f\|_\infty\to0,
+\norm{f_n-f}_\infty\to0,
 \qquad
-\|f_n'-f'\|_1\to0.}
+\norm{f_n'-f'}_1\to0.}
 $$
 
 :::

@@ -73,7 +73,7 @@ The identity, the elements of order 5, and the elements of order 7 give at least
 
 ::: pf-step
 
-This contradicts $|G| = 105$.
+This contradicts $\cardinality{G} = 105$.
 
 :::
 
@@ -107,14 +107,14 @@ If one of two subgroups is normal, their set product is a subgroup. Thus $H = Q 
 
 ::: pf-step
 
-By Lagrange's Theorem, $|Q \cap R|$ divides $\gcd(|Q|, |R|) = \gcd(5, 7) = 1$, so $Q \cap R = \{e\}$.
+By Lagrange's Theorem, $\cardinality{Q \cap R}$ divides $\gcd(\cardinality{Q}, \cardinality{R}) = \gcd(5, 7) = 1$, so $Q \cap R = \{e\}$.
 
 :::
 
 ::: pf-step
 
 The order of $H$ is
-    $$|H| = \frac{|Q| |R|}{|Q \cap R|} = \frac{5 \cdot 7}{1} = 35.$$
+    $$\cardinality{H} = \frac{\cardinality{Q} \cardinality{R}}{\cardinality{Q \cap R}} = \frac{5 \cdot 7}{1} = 35.$$
 
 :::
 
@@ -158,7 +158,7 @@ The index of $H$ in $G$ is $[G : H] = \frac{105}{35} = 3$.
 
 ::: pf-step
 
-Since 3 is the smallest prime dividing $|G| = 105$, any subgroup of index 3 is normal in $G$. Thus $H \trianglelefteq G$.
+Since 3 is the smallest prime dividing $\cardinality{G} = 105$, any subgroup of index 3 is normal in $G$. Thus $H \trianglelefteq G$.
 
 :::
 
@@ -220,7 +220,7 @@ The orders $\abs{P} = 3$, $\abs{Q} = 5$, $\abs{R} = 7$ are pairwise coprime. An 
 
 ::: pf-step
 
-The product $P Q R$ is a subgroup of $G$ with order $|P Q R| = |P| |Q| |R| = 3 \cdot 5 \cdot 7 = 105 = |G|$, so $G = P Q R$.
+The product $P Q R$ is a subgroup of $G$ with order $\cardinality{P Q R} = \cardinality{P} \cardinality{Q} \cardinality{R} = 3 \cdot 5 \cdot 7 = 105 = \cardinality{G}$, so $G = P Q R$.
 
 :::
 

@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Compute the area of the image of the unit disk
 $$
-\{z\in\CC:|z|<1\}
+\{z\in\CC:\abs{z}<1\}
 $$
 under
 $$

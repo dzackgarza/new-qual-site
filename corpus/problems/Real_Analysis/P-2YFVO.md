@@ -48,7 +48,7 @@ If $f, g$ are continuous and compactly supported, then $f \ast g$ is continuous 
 
 ::: pf-proof
 
-$|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)|$, which tends to $0$ because $f$ is uniformly continuous. $f\ast g$ vanishes off the compact set $\supp f + \supp g$, the image of $\supp f \times \supp g$ under addition. See [[E-Y4GZM]].
+$\abs{f\ast g(x + h) - f\ast g(x)} \le \norm{g}_1 \sup_z\abs{f(z + h) - f(z)}$, which tends to $0$ because $f$ is uniformly continuous. $f\ast g$ vanishes off the compact set $\supp f + \supp g$, the image of $\supp f \times \supp g$ under addition. See [[E-Y4GZM]].
 
 :::
 
@@ -56,11 +56,11 @@ $|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)|$, which tends
 
 ::: {.pf-step #s2}
 
-If $f \in L^1$ and $|g| \leq M$, then $|f \ast g| \le M\|f\|_1$ and $f\ast g$ is uniformly continuous.
+If $f \in L^1$ and $\abs{g} \leq M$, then $\abs{f \ast g} \le M\norm{f}_1$ and $f\ast g$ is uniformly continuous.
 
 ::: pf-proof
 
-$|f\ast g(x)| \le \int |f(x-y)||g(y)|\,dy \le M\|f\|_1$. Substituting $u = x - y$ gives $|f \ast g(x + h) - f \ast g(x)| \le M\int|f(u + h) - f(u)|\,du$, which does not depend on $x$ and tends to $0$ as $h \to 0$ by continuity of translation in $L^1$. See [[E-E4H2J]].
+$\abs{f\ast g(x)} \le \int \abs{f(x-y)}\abs{g(y)}\,dy \le M\norm{f}_1$. Substituting $u = x - y$ gives $\abs{f \ast g(x + h) - f \ast g(x)} \le M\int\abs{f(u + h) - f(u)}\,du$, which does not depend on $x$ and tends to $0$ as $h \to 0$ by continuity of translation in $L^1$. See [[E-E4H2J]].
 
 :::
 
@@ -90,7 +90,7 @@ The cases $f, g \in L^1$ both bounded, $f, g \in L^1$ with $g$ bounded, and $f, 
 
 ::: pf-proof
 
-In the first case split $\int f(x-y)g(y)\,dy$ at $|y| = |x|/2$ and bound each piece by an $L^1$ tail; in the second, truncate $f$ at height $M$ and use the first case; in the third, $f\ast g$ has compact support by step [](#s3){.pf-ref}. See [[E-LYXHE]].
+In the first case split $\int f(x-y)g(y)\,dy$ at $\norm{y} = \norm{x}/2$ and bound each piece by an $L^1$ tail; in the second, truncate $f$ at height $M$ and use the first case; in the third, $f\ast g$ has compact support by step [](#s3){.pf-ref}. See [[E-LYXHE]].
 
 :::
 
@@ -102,11 +102,11 @@ If $f \in L^1$ and $g$ is smooth with compact support, then $f\ast g$ is smooth 
 
 ::: pf-proof
 
-Every $D^\alpha g$ is bounded, so step [](#s5){.pf-ref} applied repeatedly gives $D^\alpha(f\ast g) = f\ast D^\alpha g$, which is continuous by step [](#s2){.pf-ref}. Choose $R$ with $\supp g \subseteq \theset{|y| \le R}$. For $|x| \ge 2R$ and $|y| \le R$, $|x - y| \ge |x|/2$, so
+Every $D^\alpha g$ is bounded, so step [](#s5){.pf-ref} applied repeatedly gives $D^\alpha(f\ast g) = f\ast D^\alpha g$, which is continuous by step [](#s2){.pf-ref}. Choose $R$ with $\supp g \subseteq \theset{\norm{y} \le R}$. For $\norm{x} \ge 2R$ and $\norm{y} \le R$, $\norm{x - y} \ge \norm{x}/2$, so
 $$
-|f\ast g(x)| \le \|g\|_\infty\int_{|y| \le R}|f(x-y)|\,dy \le \|g\|_\infty\int_{|u| \ge |x|/2}|f(u)|\,du,
+\abs{f\ast g(x)} \le \norm{g}_\infty\int_{\norm{y} \le R}\abs{f(x-y)}\,dy \le \norm{g}_\infty\int_{\norm{u} \ge \norm{x}/2}\abs{f(u)}\,du,
 $$
-which tends to $0$ as $|x| \to \infty$ because $f \in L^1$.
+which tends to $0$ as $\norm{x} \to \infty$ because $f \in L^1$.
 
 :::
 
@@ -122,7 +122,7 @@ If $f \in L^1$ and $g$ is differentiable with $\dd{g}{x_i}$ bounded, then $\dd{}
 
 ::: pf-proof
 
-The difference quotient of $f\ast g$ in the direction $e_i$ is $\int f(x-y)\,\frac{g(y + h e_i) - g(y)}{h}\,dy$. By the mean value theorem the quotient of $g$ is bounded by $\sup|\dd{g}{x_i}|$, and it converges pointwise to $\dd{g}{x_i}$, so dominated convergence with dominating function $\sup|\dd{g}{x_i}|\,|f(x-\cdot)|$ applies. See [[E-GQEMZ]].
+The difference quotient of $f\ast g$ in the direction $e_i$ is $\int f(x-y)\,\frac{g(y + h e_i) - g(y)}{h}\,dy$. By the mean value theorem the quotient of $g$ is bounded by $\sup\abs{\dd{g}{x_i}}$, and it converges pointwise to $\dd{g}{x_i}$, so dominated convergence with dominating function $\sup\abs{\dd{g}{x_i}}\,\abs{f(x-\cdot)}$ applies. See [[E-GQEMZ]].
 
 :::
 

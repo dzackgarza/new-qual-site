@@ -24,7 +24,7 @@ Show that any homotopy equivalence from $\CP^{2n}$ to itself is orientation-pres
 Let $x\in H^2(\CP^m;\ZZ)$ be the standard generator, so
 $$
 H^*(\CP^m;\ZZ)\cong\ZZ[x]/(x^{m+1}),
-\qquad |x|=2.
+\qquad \gradeddegree{x}=2.
 $$
 
 ::: pf-proof

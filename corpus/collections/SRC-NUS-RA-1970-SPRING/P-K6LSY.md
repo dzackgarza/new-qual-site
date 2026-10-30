@@ -22,7 +22,7 @@ Prove or disprove each of the following statements.
 
 (f) If $E \subset \RR$ and
 
-    $\mu(E) = \inf\{\sum_{I_i \in S} |I_i| : S = \{I_i\}_{i=1}^n \text{ such that } E \subset \union_{i=1}^n I_i \text{ for some } n \in \NN\}$
+    $\mu(E) = \inf\{\sum_{I_i \in S} \setmeasure{I_i} : S = \{I_i\}_{i=1}^n \text{ such that } E \subset \union_{i=1}^n I_i \text{ for some } n \in \NN\}$
 
     then $\mu$ coincides with the outer measure of $E$.
 
@@ -42,11 +42,11 @@ Statement (f) is false.
 Definition of $\mu(E)$ and Lebesgue outer measure $m^*(E)$:
 For $E \subseteq \RR$,
 $$
-\mu(E) = \inf \left\{ \sum_{i=1}^n |I_i| : n \in \NN, E \subseteq \bigcup_{i=1}^n I_i, I_i \text{ open/closed/any bounded intervals} \right\},
+\mu(E) = \inf \left\{ \sum_{i=1}^n \setmeasure{I_i} : n \in \NN, E \subseteq \bigcup_{i=1}^n I_i, I_i \text{ open/closed/any bounded intervals} \right\},
 $$
 while the Lebesgue outer measure is:
 $$
-m^*(E) = \inf \left\{ \sum_{i=1}^\infty |I_i| : E \subseteq \bigcup_{i=1}^\infty I_i, I_i \text{ intervals} \right\}.
+m^*(E) = \inf \left\{ \sum_{i=1}^\infty \setmeasure{I_i} : E \subseteq \bigcup_{i=1}^\infty I_i, I_i \text{ intervals} \right\}.
 $$
 :::
 
@@ -86,7 +86,7 @@ $$
 ::: pf-step
 By subadditivity of the Lebesgue measure of intervals,
 $$
-1 = m([0, 1]) \leq m\left(\bigcup_{i=1}^n \overline{I_i}\right) \leq \sum_{i=1}^n m(\overline{I_i}) = \sum_{i=1}^n |I_i|.
+1 = m([0, 1]) \leq m\left(\bigcup_{i=1}^n \overline{I_i}\right) \leq \sum_{i=1}^n m(\overline{I_i}) = \sum_{i=1}^n \setmeasure{I_i}.
 $$
 :::
 
@@ -95,7 +95,7 @@ Taking the infimum over all finite covers gives $\mu(E) \geq 1$.
 :::
 
 ::: pf-step
-Since the single interval $I_1 = [0, 1]$ covers $E$ with length $|I_1| = 1$, we have $\mu(E) \leq 1$.
+Since the single interval $I_1 = [0, 1]$ covers $E$ with length $\setmeasure{I_1} = 1$, we have $\mu(E) \leq 1$.
 :::
 
 ::: pf-step
@@ -133,7 +133,7 @@ This is the definition of Lebesgue measurability of a real-valued function; it i
 :::
 
 ::: pf-step
-Define the family of sets $\mathcal S \definedas \{A \subseteq \RR : f^{-1}(A) \in \mathcal L\}$.
+Define the family of sets $\mathcal S \coloneqq \{A \subseteq \RR : f^{-1}(A) \in \mathcal L\}$.
 :::
 
 ::: pf-step

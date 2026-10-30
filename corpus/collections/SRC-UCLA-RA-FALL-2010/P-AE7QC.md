@@ -34,7 +34,7 @@ By viewing this as the dual pairing with the constant function 1, we see that if
 It remains to show that $\int_0^1 f_n g \to C\int_0^1 g$ for every $g\in L^1$.
 We use a density argument.
 Suppose the convergence holds for all $\phi$ in some family $\mathcal{F}$ dense in $L^1$.
-Then for any $g\in L^1$, let $\phi_k$ be a sequence in $\mathcal{F}$ converging to $g$, then we have $$\left|\int f_n g - C\int g\right| \le \left|\int f_n g - \int f_n \phi_k\right| + \left|\int f_n \phi_k - C\int\phi_k\right| + C\left|\int\phi_k-\int g\right| \le 2e\cdot||g-\phi_k||_{L^1} + \left|\int f_n\phi_k - C\int\phi_k\right|$$ because each $f_n$ is bounded uniformly by $e$ and $C\le e$.
+Then for any $g\in L^1$, let $\phi_k$ be a sequence in $\mathcal{F}$ converging to $g$, then we have $$\abs{\int f_n g - C\int g} \le \abs{\int f_n g - \int f_n \phi_k} + \abs{\int f_n \phi_k - C\int\phi_k} + C\abs{\int\phi_k-\int g} \le 2e\cdot\norm{g-\phi_k}_{L^1} + \abs{\int f_n\phi_k - C\int\phi_k}$$ because each $f_n$ is bounded uniformly by $e$ and $C\le e$.
 For a fixed $k$, take $n\to\infty$ and the second term on the right goes to zero by assumption on the $\phi_k$.
 Then take $k\to\infty$ and the first term also goes to zero by construction, so $\int f_n g\to C\int g$.
 It remains to prove the convergence for a dense family $\mathcal{F}$.

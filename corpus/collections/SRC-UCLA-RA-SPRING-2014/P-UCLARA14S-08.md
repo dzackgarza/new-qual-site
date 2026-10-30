@@ -45,18 +45,18 @@ $$
 
 There are constants $\delta>0$ and $C>0$ such that
 $$
-|\Log(1-w)+w|
+\abs{\Log(1-w)+w}
 \le
-C|w|^2
+C\abs{w}^2
 \qquad
-(|w|<\delta),
+(\abs{w}<\delta),
 $$
 where $\Log$ is the principal logarithm near $1$.
 
 
 ::: pf-proof
 
-For $|w|<1$,
+For $\abs{w}<1$,
 $$
 \Log(1-w)
 =
@@ -68,13 +68,13 @@ $$
 =
 -\sum_{k=2}^{\infty}\frac{w^k}{k}.
 $$
-For $|w|\le1/2$,
+For $\abs{w}\le1/2$,
 $$
-|\Log(1-w)+w|
+\abs{\Log(1-w)+w}
 \le
-\sum_{k=2}^{\infty}|w|^k
+\sum_{k=2}^{\infty}\abs{w}^k
 \le
-2|w|^2.
+2\abs{w}^2.
 $$
 Thus one may take $\delta=1/2$ and $C=2$.
 
@@ -91,24 +91,24 @@ $$
 \Log\left(1-\frac zn\right)+\frac zn
 \right]
 $$
-converges uniformly on $|z|\le R$ after deleting finitely many initial terms.
+converges uniformly on $\abs{z}\le R$ after deleting finitely many initial terms.
 
 
 ::: pf-proof
 
-Choose $N>2R$. Then for $n\ge N$ and $|z|\le R$,
+Choose $N>2R$. Then for $n\ge N$ and $\abs{z}\le R$,
 $$
-\left|\frac zn\right|
+\abs{\frac zn}
 \le
 \frac12.
 $$
 By step [](#s1-1){.pf-ref},
 $$
-\left|
+\abs{
 \Log\left(1-\frac zn\right)+\frac zn
-\right|
+}
 \le
-2\frac{|z|^2}{n^2}
+2\frac{\abs{z}^2}{n^2}
 \le
 2\frac{R^2}{n^2}.
 $$
@@ -129,7 +129,7 @@ The product defining $f$ converges uniformly on compact subsets of $\CC$ to an e
 
 ::: pf-proof
 
-Fix $R>0$ and choose $N>2R$ as in step [](#s1-2){.pf-ref}. For $n\ge N$ and $|z|\le R$,
+Fix $R>0$ and choose $N>2R$ as in step [](#s1-2){.pf-ref}. For $n\ge N$ and $\abs{z}\le R$,
 $$
 E_1\!\left(\frac zn\right)
 =
@@ -137,7 +137,7 @@ E_1\!\left(\frac zn\right)
 \Log\left(1-\frac zn\right)+\frac zn
 \right).
 $$
-By step [](#s1-2){.pf-ref}, the sum of the exponents converges uniformly on $|z|\le R$. Therefore the tail product
+By step [](#s1-2){.pf-ref}, the sum of the exponents converges uniformly on $\abs{z}\le R$. Therefore the tail product
 $$
 \prod_{n=N}^{\infty}
 E_1\!\left(\frac zn\right)
@@ -149,7 +149,7 @@ $$
 \prod_{n=1}^{N-1}
 E_1\!\left(\frac zn\right)
 $$
-shows that the full product converges uniformly on $|z|\le R$ to a holomorphic function. Since $R$ was arbitrary, $f$ is entire.
+shows that the full product converges uniformly on $\abs{z}\le R$ to a holomorphic function. Since $R$ was arbitrary, $f$ is entire.
 
 :::
 
@@ -165,7 +165,7 @@ $$
 
 ::: pf-proof
 
-Fix such a $z$. Choose $N>|z|+1$. The tail product from step [](#s1-3){.pf-ref} is nonzero because it is the exponential of a convergent series. Every factor in the finite product
+Fix such a $z$. Choose $N>\abs{z}+1$. The tail product from step [](#s1-3){.pf-ref} is nonzero because it is the exponential of a convergent series. Every factor in the finite product
 $$
 \prod_{n=1}^{N-1}
 \left(1-\frac zn\right)e^{z/n}

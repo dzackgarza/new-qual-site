@@ -20,18 +20,18 @@ audit:
 ::: {.problem}
 Let $\bar{B}(a, r)$ denote the closed disk of radius $r > 0$ centered at $a \in \CC$. Let $f$ be holomorphic on an open neighborhood containing $\bar{B}(a, r)$, and define
 $$
-M = \sup_{z \in \bar{B}(a, r)} |f(z)|.
+M = \sup_{z \in \bar{B}(a, r)} \abs{f(z)}.
 $$
 Prove that for all $z \in \bar{B}(a, r/2)$ with $z \ne a$:
 $$
-\frac{|f(z) - f(a)|}{|z - a|} \le \frac{2M}{r}.
+\frac{\abs{f(z) - f(a)}}{\abs{z - a}} \le \frac{2M}{r}.
 $$
 :::
 
 ::: {.solution}
 Fix $z\in\bar B(a,r/2)$ with $z\ne a$, and let
 $$
-C=\{\zeta:|\zeta-a|=r\}
+C=\{\zeta:\abs{\zeta-a}=r\}
 $$
 with positive orientation.
 
@@ -80,9 +80,9 @@ division by $z-a\ne0$ gives the formula.
 
 For every $\zeta\in C$,
 $$
-|\zeta-a|=r,
+\abs{\zeta-a}=r,
 \qquad
-|\zeta-z|\ge\frac r2.
+\abs{\zeta-z}\ge\frac r2.
 $$
 
 ::: pf-proof
@@ -90,8 +90,8 @@ $$
 The first identity is the definition of $C$. For the second, the reverse
 triangle inequality gives
 $$
-|\zeta-z|
-\ge |\zeta-a|-|z-a|
+\abs{\zeta-z}
+\ge \abs{\zeta-a}-\abs{z-a}
 \ge r-\frac r2
 =\frac r2.
 $$
@@ -105,7 +105,7 @@ $$
 The desired estimate holds:
 $$
 \boxed{
-\frac{|f(z)-f(a)|}{|z-a|}
+\frac{\abs{f(z)-f(a)}}{\abs{z-a}}
 \le\frac{2M}{r}}.
 $$
 
@@ -114,12 +114,12 @@ $$
 By step [](#s1){.pf-ref} and the ML estimate,
 $$
 \begin{aligned}
-\frac{|f(z)-f(a)|}{|z-a|}
+\frac{\abs{f(z)-f(a)}}{\abs{z-a}}
 &\le
 \frac1{2\pi}
 \int_C
-\frac{|f(\zeta)|}{|\zeta-z|\,|\zeta-a|}
-\,|d\zeta|\\
+\frac{\abs{f(\zeta)}}{\abs{\zeta-z}\,\abs{\zeta-a}}
+\,\abs{d\zeta}\\
 &\le
 \frac1{2\pi}
 (2\pi r)

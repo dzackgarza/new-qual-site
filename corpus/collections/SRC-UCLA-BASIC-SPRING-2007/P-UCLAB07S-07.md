@@ -24,7 +24,7 @@ x_n=F(x_{n-1}),\qquad F(x)=x-\frac{f(x)}{f'(x)},
 $$
 prove that if $x_0$ is sufficiently close to $x^*$, then there is a constant $C$ such that
 $$
-|x_n-x^*|\le C|x_{n-1}-x^*|^2
+\abs{x_n-x^*}\le C\abs{x_{n-1}-x^*}^2
 $$
 for all $n$.
 :::
@@ -33,7 +33,7 @@ for all $n$.
 
 Let
 $$
-M=\sup_{x\in\RR}|f''(x)|<\infty.
+M=\sup_{x\in\RR}\abs{f''(x)}<\infty.
 $$
 
 ::: pf
@@ -42,11 +42,11 @@ $$
 
 There exists $\delta>0$ such that
 $$
-|f'(x)|\ge \frac{|f'(x^*)|}{2}
+\abs{f'(x)}\ge \frac{\abs{f'(x^*)}}{2}
 $$
 whenever
 $$
-|x-x^*|\le\delta.
+\abs{x-x^*}\le\delta.
 $$
 
 
@@ -58,23 +58,23 @@ f'(x^*)\ne0,
 $$
 there exists $\delta>0$ such that
 $$
-|f'(x)-f'(x^*)|
+\abs{f'(x)-f'(x^*)}
 <
-\frac{|f'(x^*)|}{2}
+\frac{\abs{f'(x^*)}}{2}
 $$
 whenever
 $$
-|x-x^*|\le\delta.
+\abs{x-x^*}\le\delta.
 $$
 Then
 $$
-|f'(x)|
+\abs{f'(x)}
 \ge
-|f'(x^*)|
+\abs{f'(x^*)}
 -
-|f'(x)-f'(x^*)|
+\abs{f'(x)-f'(x^*)}
 >
-\frac{|f'(x^*)|}{2}.
+\frac{\abs{f'(x^*)}}{2}.
 $$
 
 :::
@@ -85,7 +85,7 @@ $$
 
 For every $x$ with
 $$
-|x-x^*|\le\delta,
+\abs{x-x^*}\le\delta,
 $$
 Taylor's theorem gives
 $$
@@ -176,19 +176,19 @@ $$
 
 For all $x$ with
 $$
-|x-x^*|\le\delta,
+\abs{x-x^*}\le\delta,
 $$
 one has
 $$
 \boxed{
-|F(x)-x^*|
+\abs{F(x)-x^*}
 \le
-C|x-x^*|^2
+C\abs{x-x^*}^2
 }
 $$
 with
 $$
-C=\frac{M}{|f'(x^*)|}.
+C=\frac{M}{\abs{f'(x^*)}}.
 $$
 
 
@@ -196,26 +196,26 @@ $$
 
 By step [](#s1-3){.pf-ref},
 $$
-|F(x)-x^*|
+\abs{F(x)-x^*}
 \le
-\frac{|f''(\xi)|}{2|f'(x)|}
-|x-x^*|^2.
+\frac{\abs{f''(\xi)}}{2\abs{f'(x)}}
+\abs{x-x^*}^2.
 $$
 The bound on $f''$ gives
 $$
-|f''(\xi)|\le M,
+\abs{f''(\xi)}\le M,
 $$
 while step [](#s1-1){.pf-ref} gives
 $$
-2|f'(x)|
+2\abs{f'(x)}
 \ge
-|f'(x^*)|.
+\abs{f'(x^*)}.
 $$
 Hence
 $$
-\frac{|f''(\xi)|}{2|f'(x)|}
+\frac{\abs{f''(\xi)}}{2\abs{f'(x)}}
 \le
-\frac{M}{|f'(x^*)|}
+\frac{M}{\abs{f'(x^*)}}
 =C.
 $$
 
@@ -231,11 +231,11 @@ C\delta\le1.
 $$
 Then
 $$
-|x-x^*|\le\delta
+\abs{x-x^*}\le\delta
 $$
 implies
 $$
-|F(x)-x^*|\le\delta.
+\abs{F(x)-x^*}\le\delta.
 $$
 
 
@@ -243,13 +243,13 @@ $$
 
 By step [](#s1-4){.pf-ref},
 $$
-|F(x)-x^*|
+\abs{F(x)-x^*}
 \le
-C|x-x^*|^2
+C\abs{x-x^*}^2
 \le
-C\delta|x-x^*|
+C\delta\abs{x-x^*}
 \le
-|x-x^*|
+\abs{x-x^*}
 \le
 \delta.
 $$
@@ -262,11 +262,11 @@ $$
 
 If
 $$
-|x_0-x^*|\le\delta,
+\abs{x_0-x^*}\le\delta,
 $$
 then every Newton iterate $x_n$ is defined and satisfies
 $$
-|x_n-x^*|\le\delta.
+\abs{x_n-x^*}\le\delta.
 $$
 
 
@@ -276,7 +276,7 @@ Proceed by induction.
 The assertion holds for $n=0$ by hypothesis.
 Suppose
 $$
-|x_{n-1}-x^*|\le\delta.
+\abs{x_{n-1}-x^*}\le\delta.
 $$
 Then step [](#s1-1){.pf-ref} gives
 $$
@@ -285,9 +285,9 @@ $$
 so the Newton step is defined.
 Step [](#s1-5){.pf-ref} then gives
 $$
-|x_n-x^*|
+\abs{x_n-x^*}
 =
-|F(x_{n-1})-x^*|
+\abs{F(x_{n-1})-x^*}
 \le
 \delta.
 $$
@@ -301,9 +301,9 @@ $$
 For every $n\ge1$,
 $$
 \boxed{
-|x_n-x^*|
+\abs{x_n-x^*}
 \le
-C|x_{n-1}-x^*|^2
+C\abs{x_{n-1}-x^*}^2
 }.
 $$
 
@@ -321,11 +321,11 @@ x=x_{n-1},
 $$
 giving
 $$
-|x_n-x^*|
+\abs{x_n-x^*}
 =
-|F(x_{n-1})-x^*|
+\abs{F(x_{n-1})-x^*}
 \le
-C|x_{n-1}-x^*|^2.
+C\abs{x_{n-1}-x^*}^2.
 $$
 
 :::

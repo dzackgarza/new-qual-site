@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Say that measurable $f_n$ converge *in measure* to $f$ if for every $\varepsilon>0$ there are $N$ and a measurable $B$ with $\mu(B)<\varepsilon$ such that
 $$
-|f_n(x)-f(x)|<\varepsilon
+\abs{f_n(x)-f(x)}<\varepsilon
 $$
 for every $n\ge N$ and every $x\notin B$.
 

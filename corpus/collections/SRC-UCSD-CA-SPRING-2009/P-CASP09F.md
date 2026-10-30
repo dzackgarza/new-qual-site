@@ -44,21 +44,21 @@ f(z)=z^m e^{g(z)}
 $$
 for some entire function $g$ and suitable $p_n$.
 
-To prove convergence, note that for $|w|\le1/2$,
+To prove convergence, note that for $\abs{w}\le1/2$,
 $$
 \log E_p(w)
 =-\sum_{k=p+1}^\infty\frac{w^k}{k},
 $$
 so
 $$
-|\log E_p(w)|\le C|w|^{p+1}
+\abs{\log E_p(w)}\le C\abs{w}^{p+1}
 $$
-with an absolute constant $C$. Since $|a_n|\to\infty$, choose $p_n$ so large
+with an absolute constant $C$. Since $\abs{a_n}\to\infty$, choose $p_n$ so large
 that for every integer $R\ge1$ the tail satisfies
 $$
-\sum_{|a_n|>2R}\left(\frac{R}{|a_n|}\right)^{p_n+1}<\infty.
+\sum_{\abs{a_n}>2R}\left(\frac{R}{\abs{a_n}}\right)^{p_n+1}<\infty.
 $$
-Then on $|z|\le R$ the corresponding series of logarithms converges uniformly,
+Then on $\abs{z}\le R$ the corresponding series of logarithms converges uniformly,
 hence the product converges uniformly there. As $R$ is arbitrary, the product
 converges locally uniformly on $\CC$ and is entire.
 

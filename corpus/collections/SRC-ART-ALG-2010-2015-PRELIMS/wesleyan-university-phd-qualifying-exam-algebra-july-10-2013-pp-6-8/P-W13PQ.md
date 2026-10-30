@@ -39,7 +39,7 @@ b. Show that if $0 < p < q$ are primes and $p \nmid q - 1$, then any group of or
 Sylow's theorems have the following form.
 
 Let $H$ be a finite group and let $\ell$ be prime. Write
-$|H|=\ell^am$ with $\ell\nmid m$. A Sylow $\ell$-subgroup
+$\cardinality{H}=\ell^am$ with $\ell\nmid m$. A Sylow $\ell$-subgroup
 is a subgroup of order $\ell^a$. Such subgroups exist.
 Every $\ell$-subgroup is contained in a Sylow $\ell$-subgroup,
 and any two Sylow $\ell$-subgroups are conjugate in $H$.

@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 a. State the class equation.
 
-b. Suppose $|G| = p^k$ and $H$ is a normal subgroup of $G$ with $|H| > 1$.
+b. Suppose $\cardinality{G} = p^k$ and $H$ is a normal subgroup of $G$ with $\cardinality{H} > 1$.
 Show that $H$ contains a non-identity element of the center $Z(G)$ of $G$.
 :::
 
@@ -36,7 +36,7 @@ Show that $H$ contains a non-identity element of the center $Z(G)$ of $G$.
 
 If $x_1,\dots,x_r$ represent the noncentral conjugacy classes of a finite group $G$, then the class equation is
 $$
-|G|=|Z(G)|+\sum_{i=1}^r [G:C_G(x_i)].
+\cardinality{G}=\cardinality{Z(G)}+\sum_{i=1}^r [G:C_G(x_i)].
 $$
 
 ::: pf-proof
@@ -70,9 +70,9 @@ Every nontrivial orbit of the conjugation action of $G$ on $H$ has cardinality d
 
 For $h\in H$, orbit-stabilizer gives
 $$
-|G\cdot h|=[G:C_G(h)].
+\cardinality{G\cdot h}=[G:C_G(h)].
 $$
-Since $|G|=p^k$, every subgroup index is a power of $p$. If the orbit is not a singleton, its size is therefore a positive power of $p$, hence divisible by $p$.
+Since $\cardinality{G}=p^k$, every subgroup index is a power of $p$. If the orbit is not a singleton, its size is therefore a positive power of $p$, hence divisible by $p$.
 
 :::
 
@@ -80,15 +80,15 @@ Since $|G|=p^k$, every subgroup index is a power of $p$. If the orbit is not a s
 
 ::: {.pf-step #s4}
 
-The cardinality $|H\cap Z(G)|$ is divisible by $p$.
+The cardinality $\cardinality{H\cap Z(G)}$ is divisible by $p$.
 
 ::: pf-proof
 
 Partitioning $H$ into conjugation orbits gives
 $$
-|H|=|H\cap Z(G)|+\sum_j |\mathcal O_j|,
+\cardinality{H}=\cardinality{H\cap Z(G)}+\sum_j \cardinality{\mathcal O_j},
 $$
-where the $\mathcal O_j$ are the nontrivial orbits. Because $H$ is a nontrivial subgroup of the finite $p$-group $G$, its order is a positive power of $p$, hence divisible by $p$. By step [](#s3){.pf-ref} every term in the sum is divisible by $p$. Therefore $|H\cap Z(G)|\equiv0\pmod p$.
+where the $\mathcal O_j$ are the nontrivial orbits. Because $H$ is a nontrivial subgroup of the finite $p$-group $G$, its order is a positive power of $p$, hence divisible by $p$. By step [](#s3){.pf-ref} every term in the sum is divisible by $p$. Therefore $\cardinality{H\cap Z(G)}\equiv0\pmod p$.
 
 :::
 

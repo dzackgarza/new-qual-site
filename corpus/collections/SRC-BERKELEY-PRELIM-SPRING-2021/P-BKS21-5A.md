@@ -132,15 +132,15 @@ $$
 $$
 For $z\in\Gamma_R$,
 $$
-|z^4+1|
+\abs{z^4+1}
 \geq
-|z|^4-1
+\abs{z}^4-1
 =
 R^4-1.
 $$
 Since $\Gamma_R$ has length $\pi R$,
 $$
-\left|\int_{\Gamma_R}h(z)\,dz\right|
+\abs{\int_{\Gamma_R}h(z)\,dz}
 \leq
 \frac{\pi R}{R^4-1}
 \longrightarrow0.

@@ -105,7 +105,7 @@ $$
 Both vectors lie in $P$ because their fourth coordinates vanish and the sums of their first three coordinates are zero.
 Also
 $$
-\|u_1\|=\|u_2\|=1
+\norm{u_1}=\norm{u_2}=1
 $$
 and
 $$

@@ -70,7 +70,7 @@ On $H_2$, the induced map is multiplication by the degree of $f$, which is also 
 Hence the Lefschetz number is
 $$
 L(f)
-=\sum_i(-1)^i\operatorname{tr}(f_*|H_i(S^2;\QQ))
+=\sum_i(-1)^i\operatorname{tr}(f_*\restrict H_i(S^2;\QQ))
 =1+1
 =2.
 $$

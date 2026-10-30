@@ -16,7 +16,7 @@ audit:
 
 ::: {.problem}
 Let $H\leq G$, where $G$ is finite.
-Suppose $[G:H]$ is the smallest prime that divides $|G|$.
+Suppose $[G:H]$ is the smallest prime that divides $\cardinality{G}$.
 Prove that $H$ is normal in $G$.
 :::
 

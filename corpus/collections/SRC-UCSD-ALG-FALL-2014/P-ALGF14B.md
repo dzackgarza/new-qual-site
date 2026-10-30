@@ -74,16 +74,16 @@ The subgroup $\varphi(P)$ is a Sylow $p$-subgroup of $K$.
 ::: pf-proof
 Because $N\triangleleft G$, the intersection $P\cap N$ is a Sylow $p$-subgroup of $N$.
 Indeed, a Sylow $p$-subgroup of a normal subgroup is the intersection of that normal subgroup with some Sylow $p$-subgroup of the whole group, and here we may choose $P$ itself.
-Hence the $p$-part of $|N|$ is $|P\cap N|$.
+Hence the $p$-part of $\cardinality{N}$ is $\cardinality{P\cap N}$.
 Therefore the $p$-part of
 $$
-|G/N|=|K|
+\cardinality{G/N}=\cardinality{K}
 $$
 is
 $$
-\frac{|P|}{|P\cap N|}
-=|PN/N|
-=|\varphi(P)|.
+\frac{\cardinality{P}}{\cardinality{P\cap N}}
+=\cardinality{PN/N}
+=\cardinality{\varphi(P)}.
 $$
 Thus $\varphi(P)$ is a Sylow $p$-subgroup of $K$.
 :::

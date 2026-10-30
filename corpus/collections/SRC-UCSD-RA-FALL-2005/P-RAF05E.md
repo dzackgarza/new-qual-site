@@ -29,7 +29,7 @@ audit:
 Let $H$ be a Hilbert space.
 Suppose that there is a sequence $\{x_j\}$ in $H$ such that the finite linear combinations of the $x_j$ are dense in $H$ and
 $$
-|\langle x_j, x_k \rangle| \leq 1/2^{|j-k|} \quad \forall j, k \in \NN.
+\abs{\langle x_j, x_k \rangle} \leq 1/2^{\abs{j-k}} \quad \forall j, k \in \NN.
 $$
 Prove that $x_j \to 0$ weakly.
 :::
@@ -46,11 +46,11 @@ Obtain a uniform norm bound.
 
 Taking $j=k$ in the assumed estimate gives
 $$
-\|x_j\|^2=|\langle x_j,x_j\rangle|\le1.
+\norm{x_j}^2=\abs{\langle x_j,x_j\rangle}\le1.
 $$
 Hence
 $$
-\sup_j\|x_j\|\le1.
+\sup_j\norm{x_j}\le1.
 $$
 
 :::
@@ -70,12 +70,12 @@ $$
 Then
 $$
 \begin{aligned}
-|\langle x_j,y\rangle|
-&\le \sum_{k=1}^N |a_k|\,|\langle x_j,x_k\rangle|\\
-&\le \sum_{k=1}^N |a_k|\,2^{-|j-k|}.
+\abs{\langle x_j,y\rangle}
+&\le \sum_{k=1}^N \abs{a_k}\,\abs{\langle x_j,x_k\rangle}\\
+&\le \sum_{k=1}^N \abs{a_k}\,2^{-\abs{j-k}}.
 \end{aligned}
 $$
-For each fixed $k$, $2^{-|j-k|}\to0$ as $j\to\infty$, and the sum has only finitely many terms. Therefore
+For each fixed $k$, $2^{-\abs{j-k}}\to0$ as $j\to\infty$, and the sum has only finitely many terms. Therefore
 $$
 \langle x_j,y\rangle\longrightarrow0
 $$
@@ -93,17 +93,17 @@ Extend the convergence to every vector in $H$.
 
 Fix $y\in H$ and $\varepsilon>0$. By density of the finite linear span, choose a finite linear combination $z$ of the $x_k$ such that
 $$
-\|y-z\|<\varepsilon.
+\norm{y-z}<\varepsilon.
 $$
 Then
 $$
-|\langle x_j,y\rangle|
-\le |\langle x_j,z\rangle|+|\langle x_j,y-z\rangle|
-\le |\langle x_j,z\rangle|+\varepsilon,
+\abs{\langle x_j,y\rangle}
+\le \abs{\langle x_j,z\rangle}+\abs{\langle x_j,y-z\rangle}
+\le \abs{\langle x_j,z\rangle}+\varepsilon,
 $$
 using Step 1. Taking $j\to\infty$ and applying Step 2 gives
 $$
-\limsup_{j\to\infty}|\langle x_j,y\rangle|\le\varepsilon.
+\limsup_{j\to\infty}\abs{\langle x_j,y\rangle}\le\varepsilon.
 $$
 Since $\varepsilon$ is arbitrary,
 $$

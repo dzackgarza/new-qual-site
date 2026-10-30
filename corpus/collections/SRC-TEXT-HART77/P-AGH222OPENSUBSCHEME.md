@@ -35,14 +35,14 @@ We call this the **induced scheme structure** on the open set $U$, and we refer 
 ::: {.pf-step #restricted-space-locally-ringed}
 The restricted ringed space
 $$
-(U,\mathcal O_X|_U)
+(U,\mathcal O_X\restrict_U)
 $$
 is a locally ringed space.
 
 ::: pf-proof
 For a point $P\in U$, the stalk of the restricted sheaf is naturally
 $$
-(\mathcal O_X|_U)_P\cong\mathcal O_{X,P}.
+(\mathcal O_X\restrict_U)_P\cong\mathcal O_{X,P}.
 $$
 Since $X$ is a scheme, $\mathcal O_{X,P}$ is a local ring.  Hence every stalk of the restricted sheaf is local.
 :::
@@ -101,7 +101,7 @@ $$
 is an affine scheme:
 $$
 \boxed{
-\left(D_V(f),\mathcal O_X|_{D_V(f)}\right)
+\left(D_V(f),\mathcal O_X\restrict_{D_V(f)}\right)
 \cong
 \operatorname{Spec}A_f.
 }
@@ -110,13 +110,13 @@ $$
 ::: pf-proof
 On the affine open $V$, the restricted structure sheaf is its usual affine structure sheaf.  Hartshorne II.2.1 identifies every distinguished open of an affine scheme with the spectrum of the corresponding localization:
 $$
-\left(D_V(f),\mathcal O_V|_{D_V(f)}\right)
+\left(D_V(f),\mathcal O_V\restrict_{D_V(f)}\right)
 \cong
 \operatorname{Spec}A_f.
 $$
 Since
 $$
-\mathcal O_V=\mathcal O_X|_V,
+\mathcal O_V=\mathcal O_X\restrict_V,
 $$
 this is the displayed isomorphism.
 :::
@@ -139,7 +139,7 @@ Taking all such neighborhoods gives an open affine cover of $U$.
 ::: {.pf-step #u-is-scheme}
 Therefore
 $$
-\boxed{(U,\mathcal O_X|_U)\text{ is a scheme}.}
+\boxed{(U,\mathcal O_X\restrict_U)\text{ is a scheme}.}
 $$
 
 ::: pf-proof

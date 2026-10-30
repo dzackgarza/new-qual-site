@@ -33,7 +33,7 @@ Hint: Begin by showing that any norm bounded set in $X$ is nowhere dense in the 
 Suppose that there exists countably many linear functionals $L_n \in X^*$ with the following property: any sequence $x_j, x \in X$ converges weakly $x_j \to x$ iff $L_n(x_j) \to L_n(x)$ for all $n$.
 Show that $X$ must be finite dimensional.
 
-Hint: Consider the function $d(x,y) = \sum_n 2^{-n} \frac{|L_n(x-y)|}{1 + |L_n(x-y)|}$.
+Hint: Consider the function $d(x,y) = \sum_n 2^{-n} \frac{\abs{L_n(x-y)}}{1 + \abs{L_n(x-y)}}$.
 :::
 
 ::: {.solution}
@@ -48,7 +48,7 @@ Norm-bounded sets have empty weak interior in infinite dimension.
 
 Let $B\subset X$ be norm bounded. Suppose a weakly open neighborhood of some $x_0\in B$ were contained in $B$. Then there would exist $f_1,\dots,f_N\in X^*$ and $\varepsilon>0$ such that
 $$
-U:=\{x\in X:|f_j(x-x_0)|<\varepsilon\text{ for }1\le j\le N\}
+U:=\{x\in X:\abs{f_j(x-x_0)}<\varepsilon\text{ for }1\le j\le N\}
 \subset B.
 $$
 Because $X$ is infinite dimensional,
@@ -61,9 +61,9 @@ x_0+tv\in U,
 $$
 while
 $$
-\|x_0+tv\|\to\infty
+\norm{x_0+tv}\to\infty
 $$
-as $|t|\to\infty$. This contradicts norm boundedness of $B$. Hence every norm-bounded set has empty weak interior.
+as $\abs{t}\to\infty$. This contradicts norm boundedness of $B$. Hence every norm-bounded set has empty weak interior.
 
 :::
 
@@ -77,11 +77,11 @@ Prove part (a) by Baire category.
 
 For each integer $n\ge1$, the closed norm ball
 $$
-B_n:=\{x\in X:\|x\|\le n\}
+B_n:=\{x\in X:\norm{x}\le n\}
 $$
 is weakly closed. Indeed, by Hahn--Banach,
 $$
-\|x\|=\sup_{\|f\|\le1}|f(x)|,
+\norm{x}=\sup_{\norm{f}\le1}\abs{f(x)},
 $$
 so $B_n$ is an intersection of weakly closed sets.
 
@@ -104,7 +104,7 @@ The function in the hint is a metric whose convergent sequences are exactly the 
 Define
 $$
 d(x,y)=\sum_{n=1}^\infty2^{-n}
-\frac{|L_n(x-y)|}{1+|L_n(x-y)|}.
+\frac{\abs{L_n(x-y)}}{1+\abs{L_n(x-y)}}.
 $$
 The series converges uniformly because each summand is at most $2^{-n}$. If $d(x,y)=0$, then
 $$
@@ -126,7 +126,7 @@ q(a+b)\le q(a)+q(b),
 $$
 and
 $$
-|L_n(x-z)|\le |L_n(x-y)|+|L_n(y-z)|.
+\abs{L_n(x-z)}\le \abs{L_n(x-y)}+\abs{L_n(y-z)}.
 $$
 Applying $q$ and summing with weights $2^{-n}$ gives
 $$
@@ -180,20 +180,20 @@ A normed space with metrizable weak topology is finite dimensional.
 Since the weak topology is metrizable, it has a countable neighborhood base $(U_m)$ at $0$. For each $m$, choose a basic weak neighborhood
 $$
 V_m
-=\{x:|f_{m,j}(x)|<\varepsilon_m,\ 1\le j\le N_m\}
+=\{x:\abs{f_{m,j}(x)}<\varepsilon_m,\ 1\le j\le N_m\}
 \subset U_m.
 $$
 Let $\mathcal F$ be the countable collection of all functionals $f_{m,j}$.
 
 Fix any $f\in X^*$. The set
 $$
-W_f:=\{x:|f(x)|<1\}
+W_f:=\{x:\abs{f(x)}<1\}
 $$
 is a weak neighborhood of $0$, so some $U_m\subset W_f$. Hence $V_m\subset W_f$. If
 $$
 x\in\bigcap_{j=1}^{N_m}\ker f_{m,j},
 $$
-then $tx\in V_m$ for every scalar $t$, so $|t f(x)|<1$ for every $t$. Thus $f(x)=0$. Therefore
+then $tx\in V_m$ for every scalar $t$, so $\abs{t f(x)}<1$ for every $t$. Thus $f(x)=0$. Therefore
 $$
 \bigcap_{j=1}^{N_m}\ker f_{m,j}\subseteq\ker f.
 $$

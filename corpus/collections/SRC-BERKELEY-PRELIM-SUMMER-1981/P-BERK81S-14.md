@@ -35,7 +35,7 @@ f(t)\to0,
 f'(t)\to C\ne0
 \qquad(t\to0^+).
 $$
-Show that $g(t)=|f(t)|$ is $C^1$ for all sufficiently small $t>0$, and that
+Show that $g(t)=\abs{f(t)}$ is $C^1$ for all sufficiently small $t>0$, and that
 $$
 \lim_{t\to0^+}g'(t)
 $$

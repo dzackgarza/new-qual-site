@@ -54,8 +54,8 @@ Therefore
 $$
 \begin{aligned}
 \langle \chi_{A\times B},\chi_{A\times B}\rangle_{G\times H}
-&=\frac1{|G||H|}
-\sum_{g\in G}\sum_{h\in H}|\chi_A(g)|^2|\chi_B(h)|^2\\
+&=\frac1{\cardinality{G}\cardinality{H}}
+\sum_{g\in G}\sum_{h\in H}\abs{\chi_A(g)}^2\abs{\chi_B(h)}^2\\
 &=\langle\chi_A,\chi_A\rangle_G\,
   \langle\chi_B,\chi_B\rangle_H.
 \end{aligned}
@@ -83,7 +83,7 @@ $$
 \sum_{i,j}(d_ie_j)^2
 =\left(\sum_i d_i^2\right)
  \left(\sum_j e_j^2\right)
-=|G||H|=|G\times H|.
+=\cardinality{G}\cardinality{H}=\cardinality{G\times H}.
 $$
 For a finite group, the sum of the squares of the dimensions of all inequivalent irreducible representations equals the group order. Thus the already constructed irreducibles $A_i\times B_j$ exhaust all irreducible representations of $G\times H$.
 

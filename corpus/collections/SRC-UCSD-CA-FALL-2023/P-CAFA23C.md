@@ -23,7 +23,7 @@ D(a,r)
 $$
 would be disjoint from $E(\CC)$. In particular
 $$
-|E(z)-a|\ge r
+\abs{E(z)-a}\ge r
 \qquad(z\in\CC).
 $$
 Thus

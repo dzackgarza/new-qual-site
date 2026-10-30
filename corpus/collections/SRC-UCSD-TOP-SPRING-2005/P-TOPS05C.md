@@ -89,7 +89,7 @@ Use $0\to\operatorname{Ext}(H_{k-1},\ZZ)\to H^k\to\operatorname{Hom}(H_k,\ZZ)\to
 
 With $\FF_2$ coefficients,
 $$H^*(\RP^2\times\RP^3;\FF_2)
-\cong \FF_2[x,y]/(x^3,y^4),\qquad |x|=|y|=1,$$
+\cong \FF_2[x,y]/(x^3,y^4),\qquad \gradeddegree{x}=\gradeddegree{y}=1,$$
 and the mod-$2$ homology dimensions in degrees $0,\dots,5$ are
 $$\boxed{1,2,3,3,2,1}.$$
 

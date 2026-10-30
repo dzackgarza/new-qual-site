@@ -41,7 +41,7 @@ Choose a point $y\in U$. Then $f^{-1}(y)$ consists of exactly one point in each 
 
 ::: pf-proof
 
-Each restriction $f|_{U_i}:U_i\to U$ is a homeomorphism, hence has exactly one preimage of $y$.
+Each restriction $f\restrict_{U_i}:U_i\to U$ is a homeomorphism, hence has exactly one preimage of $y$.
 
 :::
 
@@ -53,7 +53,7 @@ The local degree of $f$ at every point of $f^{-1}(y)$ is $+1$.
 
 ::: pf-proof
 
-Each restriction $f|_{U_i}$ is an orientation-preserving homeomorphism. The induced map on the local orientation group is therefore multiplication by $+1$.
+Each restriction $f\restrict_{U_i}$ is an orientation-preserving homeomorphism. The induced map on the local orientation group is therefore multiplication by $+1$.
 
 :::
 

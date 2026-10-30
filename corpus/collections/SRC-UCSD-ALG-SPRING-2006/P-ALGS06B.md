@@ -44,7 +44,7 @@ Put $H=(A^*A)^{1/2}$ and $K=\ker H$. Then $K=\ker A$ and $\operatorname{im}H=K^\
 
 For every $x$,
 $$
-\|Ax\|^2=\langle A^*Ax,x\rangle=\langle H^2x,x\rangle=\|Hx\|^2,
+\norm{Ax}^2=\langle A^*Ax,x\rangle=\langle H^2x,x\rangle=\norm{Hx}^2,
 $$
 so $Ax=0$ iff $Hx=0$. Since $H$ is Hermitian, $\operatorname{im}H=(\ker H)^\perp$.
 
@@ -58,7 +58,7 @@ Define $U_0:K^\perp\to\CC^m$ by $U_0(Hx)=Ax$. This is well-defined and isometric
 
 ::: pf-proof
 
-If $Hx=Hy$, then $x-y\in K=\ker A$, so $Ax=Ay$. Also $\|U_0(Hx)\|=\|Ax\|=\|Hx\|$.
+If $Hx=Hy$, then $x-y\in K=\ker A$, so $Ax=Ay$. Also $\norm{U_0(Hx)}=\norm{Ax}=\norm{Hx}$.
 
 :::
 

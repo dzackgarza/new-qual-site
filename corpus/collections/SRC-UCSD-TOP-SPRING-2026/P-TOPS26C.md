@@ -53,7 +53,7 @@ This is the Schreier rewriting argument: for a word $s_1\cdots s_k\in H$, insert
 Thus every finite-index subgroup of a finitely generated group is finitely generated.
 
 ::: pf-proof
-There are only $|T|\cdot2|S|$ possible Schreier generators in step [](#schreier-generators-definition){.pf-ref}.
+There are only $\cardinality{T}\cdot2\cardinality{S}$ possible Schreier generators in step [](#schreier-generators-definition){.pf-ref}.
 :::
 
 :::

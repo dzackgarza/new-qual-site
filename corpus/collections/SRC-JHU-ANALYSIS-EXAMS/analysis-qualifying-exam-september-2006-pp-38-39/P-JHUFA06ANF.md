@@ -30,7 +30,7 @@ f(0)=f'(0)=f(2)=f'(2)=0.
 $$
 Prove that for every $\varepsilon>0$ there exists $T_\varepsilon$ such that for all $t>T_\varepsilon$,
 $$
-\left|\int_0^2 f(x)e^{itx}\,dx\right|\le \frac{\varepsilon}{t}.
+\abs{\int_0^2 f(x)e^{itx}\,dx}\le \frac{\varepsilon}{t}.
 $$
 :::
 
@@ -47,13 +47,13 @@ $$
 $$
 Hence for the given $\varepsilon>0$ there exists $T_\varepsilon$ such that
 $$
-\left|\int_0^2 f'(x)e^{itx}\,dx\right|<\varepsilon
+\abs{\int_0^2 f'(x)e^{itx}\,dx}<\varepsilon
 \qquad(t>T_\varepsilon).
 $$
 Therefore, for $t>T_\varepsilon$,
 $$
-\left|\int_0^2 f(x)e^{itx}\,dx\right|
-=\frac1t\left|\int_0^2 f'(x)e^{itx}\,dx\right|
+\abs{\int_0^2 f(x)e^{itx}\,dx}
+=\frac1t\abs{\int_0^2 f'(x)e^{itx}\,dx}
 <\frac{\varepsilon}{t}.
 $$
 This proves the claim.

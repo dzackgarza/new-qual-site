@@ -57,7 +57,7 @@ f(x,y)=a+bx+cy+E(x,y)
 $$
 and
 $$
-|E(x,y)|\leq C(x^2+y^2)
+\abs{E(x,y)}\leq C(x^2+y^2)
 $$
 whenever $x^2+y^2<\rho^2$.
 
@@ -125,10 +125,10 @@ $0<\delta<\varepsilon$, so both annular integrals vanish.
 The remainder contribution over a small annulus tends uniformly
 to zero:
 $$
-\left|
+\abs{
 \iint_{\delta^2<x^2+y^2<\varepsilon^2}
 \frac{E(x,y)}{(x+iy)^3}\,dx\,dy
-\right|
+}
 \leq
 2\pi C(\varepsilon-\delta).
 $$
@@ -136,7 +136,7 @@ $$
 ::: pf-proof
 On the annulus, step [](#taylor-decomposition){.pf-ref} gives
 $$
-\frac{|E(x,y)|}{|x+iy|^3}
+\frac{\abs{E(x,y)}}{\abs{x+iy}^3}
 \leq
 \frac{Cr^2}{r^3}
 =
@@ -145,10 +145,10 @@ $$
 Therefore polar coordinates give
 $$
 \begin{aligned}
-\left|
+\abs{
 \iint
 \frac{E(x,y)}{(x+iy)^3}\,dx\,dy
-\right|
+}
 &\leq
 \int_0^{2\pi}\int_\delta^\varepsilon
 \frac Cr\,r\,dr\,d\theta\\
@@ -175,7 +175,7 @@ $$
 Insert the decomposition from step [](#taylor-decomposition){.pf-ref}. Steps [](#constant-term-vanishes){.pf-ref} and [](#linear-terms-vanish){.pf-ref} show that
 the constant and linear terms contribute zero, while step [](#remainder-bound){.pf-ref} gives
 $$
-|I(\delta)-I(\varepsilon)|
+\abs{I(\delta)-I(\varepsilon)}
 \leq2\pi C\varepsilon.
 $$
 The right-hand side tends to zero with $\varepsilon$, which is the

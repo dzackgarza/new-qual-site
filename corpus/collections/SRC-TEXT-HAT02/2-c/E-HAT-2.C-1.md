@@ -51,7 +51,7 @@ A simplicial complex cannot have a loop edge or two distinct edges with the same
 
 If a simplicial map $f:K\to L$ has degree $n\ne0$, then
 $$
-e(K)\ge |n|e(L).
+e(K)\ge \abs{n}e(L).
 $$
 
 ::: pf-proof
@@ -66,7 +66,7 @@ be their fundamental simplicial $1$-cycles. Each edge of $K$ is sent either to a
 $$
 f_*(z_K)=n z_L,
 $$
-each target edge must receive total signed coefficient $n$. Thus at least $|n|$ domain edges must map nondegenerately to each of the $e(L)$ target edges, giving the inequality.
+each target edge must receive total signed coefficient $n$. Thus at least $\abs{n}$ domain edges must map nondegenerately to each of the $e(L)$ target edges, giving the inequality.
 
 :::
 
@@ -74,7 +74,7 @@ each target edge must receive total signed coefficient $n$. Thus at least $|n|$ 
 
 ::: pf-step
 
-The bound is sharp: for $n\ne0$ take $L$ to be a triangle and $K$ a polygon with $3|n|$ edges, mapping its edges successively around the three edges of $L$ exactly $|n|$ times, preserving orientation if $n>0$ and reversing it if $n<0$.
+The bound is sharp: for $n\ne0$ take $L$ to be a triangle and $K$ a polygon with $3\abs{n}$ edges, mapping its edges successively around the three edges of $L$ exactly $\abs{n}$ times, preserving orientation if $n>0$ and reversing it if $n<0$.
 
 ::: pf-proof
 
@@ -100,6 +100,6 @@ A constant map sends all $1$-chains to zero, hence has degree zero.
 
 Therefore the minimum numbers are
 $$
-\boxed{e(L)=3,\qquad e(K)=3\max\{1,|n|\}.}
+\boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
 $$
 :::

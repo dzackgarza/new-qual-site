@@ -33,7 +33,7 @@ $$
 :::
 
 ::: {.solution}
-Let the pole of $f$ at $z_0$ have order $m\ge1$. Since $|z_0|=1$, write the principal part at $z_0$ as
+Let the pole of $f$ at $z_0$ have order $m\ge1$. Since $\abs{z_0}=1$, write the principal part at $z_0$ as
 $$
 \sum_{k=1}^m \frac{c_{-k}}{(z-z_0)^k},
 \qquad c_{-m}\ne0.
@@ -42,13 +42,13 @@ Subtracting this principal part from $f$ removes the only singularity on the clo
 $$
 h(z)=f(z)-\sum_{k=1}^m \frac{c_{-k}}{(z-z_0)^k}
 $$
-is holomorphic on a neighborhood of the closed unit disc. Hence there is some $\rho>1$ such that $h$ is holomorphic on $|z|<\rho$, and if
+is holomorphic on a neighborhood of the closed unit disc. Hence there is some $\rho>1$ such that $h$ is holomorphic on $\abs{z}<\rho$, and if
 $$
 h(z)=\sum_{n\ge0}b_nz^n,
 $$
 then Cauchy's estimates give $b_n=O(\rho^{-n})$.
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 \frac1{(z-z_0)^k}
 =(-1)^kz_0^{-k}\left(1-\frac z{z_0}\right)^{-k}
@@ -71,7 +71,7 @@ $$
 =z_0\,
 \frac{P(n)+z_0^n b_n}{P(n+1)+z_0^{n+1}b_{n+1}}.
 $$
-Since $|z_0|=1$, the error terms are exponentially small compared with $P(n)$, and
+Since $\abs{z_0}=1$, the error terms are exponentially small compared with $P(n)$, and
 $$
 \frac{P(n)}{P(n+1)}\longrightarrow1.
 $$

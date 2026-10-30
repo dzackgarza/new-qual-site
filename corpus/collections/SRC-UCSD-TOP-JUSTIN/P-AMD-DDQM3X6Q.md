@@ -81,7 +81,7 @@ Prove $\Sigma S^n \cong S^{n+1}$.
 ::: pf-proof
 
 ::: pf-step
-Realize $S^n \subset \RR^{n+1}$ as $\{x \in \RR^{n+1} \mid \|x\| = 1\}$, and $S^{n+1} \subset \RR^{n+2} = \RR^{n+1} \times \RR$ as $\{(x, t) \in \RR^{n+1} \times \RR \mid \|x\|^2 + t^2 = 1\}$.
+Realize $S^n \subset \RR^{n+1}$ as $\{x \in \RR^{n+1} \mid \norm{x} = 1\}$, and $S^{n+1} \subset \RR^{n+2} = \RR^{n+1} \times \RR$ as $\{(x, t) \in \RR^{n+1} \times \RR \mid \norm{x}^2 + t^2 = 1\}$.
 :::
 
 ::: pf-step
@@ -91,7 +91,7 @@ Define a map $f \colon S^n \times [-1, 1] \to S^{n+1}$ by: $$f(u, t) = \left( \s
 ::: pf-step
 Verify the image and continuity of $f$:
 
-- For any $u \in S^n$ and $t \in [-1, 1]$, $\|\sqrt{1-t^2} u\|^2 + t^2 = (1-t^2)\|u\|^2 + t^2 = (1-t^2)(1) + t^2 = 1$.
+- For any $u \in S^n$ and $t \in [-1, 1]$, $\norm{\sqrt{1-t^2} u}^2 + t^2 = (1-t^2)\norm{u}^2 + t^2 = (1-t^2)(1) + t^2 = 1$.
 
 - Thus $f(u, t) \in S^{n+1}$, and $f$ is continuous as a composition of elementary continuous functions.
 :::
@@ -107,8 +107,8 @@ Check the fibers of $f$:
 :::
 
 ::: pf-step
-$f$ is surjective: For any $(x, t) \in S^{n+1}$, $|t| \le 1$.
-If $|t| < 1$, set $u = x / \sqrt{1-t^2} \in S^n$, then $f(u, t) = (x, t)$.
+$f$ is surjective: For any $(x, t) \in S^{n+1}$, $\abs{t} \le 1$.
+If $\abs{t} < 1$, set $u = x / \sqrt{1-t^2} \in S^n$, then $f(u, t) = (x, t)$.
 If $t = \pm 1$, $(x, t) = (0, \pm 1) = f(u, \pm 1)$.
 :::
 

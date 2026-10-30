@@ -27,7 +27,7 @@ is holomorphic on $\CC$.
 
 (b) Suppose that there exists $n\in\NN$ such that
 $$
-\limsup_{|z|\to\infty}\frac{|f(z)|}{|z|^n}<\infty.
+\limsup_{\abs{z}\to\infty}\frac{\abs{f(z)}}{\abs{z}^n}<\infty.
 $$
 Show that then $\mu$ is equal to the Dirac measure $\delta_0$ at $0$.
 :::
@@ -84,18 +84,18 @@ uniformly for $t\in[0,1]$.
 
 For $t\in[0,1]$,
 $$
-\left|
+\abs{
 \frac{(izt)^k}{k!}
-\right|
+}
 \le
-\frac{|z|^k}{k!},
+\frac{\abs{z}^k}{k!},
 $$
 and
 $$
 \sum_{k=0}^{\infty}
-\frac{|z|^k}{k!}
+\frac{\abs{z}^k}{k!}
 =
-e^{|z|}<\infty.
+e^{\abs{z}}<\infty.
 $$
 Apply the Weierstrass $M$-test.
 
@@ -145,11 +145,11 @@ The series in step [](#s1-3){.pf-ref} has infinite radius of convergence.
 
 By step [](#s1-1){.pf-ref},
 $$
-\left|
+\abs{
 \frac{i^k m_k}{k!}z^k
-\right|
+}
 \le
-\frac{|z|^k}{k!},
+\frac{\abs{z}^k}{k!},
 $$
 and the exponential series converges for every $z\in\CC$.
 
@@ -179,11 +179,11 @@ Step [](#s1-3){.pf-ref} represents $f$ by a power series with infinite radius of
 There exist constants $C>0$ and $R_0>0$ such that
 $$
 \boxed{
-|f(z)|
+\abs{f(z)}
 \le
-C|z|^n}
+C\abs{z}^n}
 $$
-whenever $|z|\ge R_0$.
+whenever $\abs{z}\ge R_0$.
 
 
 ::: pf-proof
@@ -199,7 +199,7 @@ This is the definition of finiteness of the stated limsup.
 There is a constant $C_1>0$ such that for every $R\ge1$,
 $$
 \boxed{
-\max_{|z|=R}|f(z)|
+\max_{\abs{z}=R}\abs{f(z)}
 \le
 C_1R^n}.
 $$
@@ -207,7 +207,7 @@ $$
 
 ::: pf-proof
 
-For $R\ge R_0$, use step [](#s1-6){.pf-ref}. For $1\le R\le R_0$, continuity of $f$ on the compact disk $|z|\le R_0$ gives a finite maximum; enlarge $C_1$ to absorb this bounded range.
+For $R\ge R_0$, use step [](#s1-6){.pf-ref}. For $1\le R\le R_0$, continuity of $f$ on the compact disk $\abs{z}\le R_0$ gives a finite maximum; enlarge $C_1$ to absorb this bounded range.
 
 :::
 
@@ -217,16 +217,16 @@ For $R\ge R_0$, use step [](#s1-6){.pf-ref}. For $1\le R\le R_0$, continuity of 
 
 For every integer $m>n$, Cauchy's estimate gives
 $$
-|f^{(m)}(0)|
+\abs{f^{(m)}(0)}
 \le
 \frac{m!}{R^m}
-\max_{|z|=R}|f(z)|.
+\max_{\abs{z}=R}\abs{f(z)}.
 $$
 
 
 ::: pf-proof
 
-Apply Cauchy's estimate to the entire function $f$ on the circle $|z|=R$.
+Apply Cauchy's estimate to the entire function $f$ on the circle $\abs{z}=R$.
 
 :::
 
@@ -236,7 +236,7 @@ Apply Cauchy's estimate to the entire function $f$ on the circle $|z|=R$.
 
 Therefore
 $$
-|f^{(m)}(0)|
+\abs{f^{(m)}(0)}
 \le
 m!C_1R^{n-m}
 $$
@@ -290,22 +290,22 @@ All Taylor coefficients of degree $>n$ vanish by step [](#s1-10){.pf-ref}, and $
 
 For every real $x$,
 $$
-\boxed{|f(x)|\le1}.
+\boxed{\abs{f(x)}\le1}.
 $$
 
 
 ::: pf-proof
 
-Since $|e^{ixt}|=1$,
+Since $\abs{e^{ixt}}=1$,
 $$
 \begin{aligned}
-|f(x)|
+\abs{f(x)}
 &=
-\left|
+\abs{
 \int e^{ixt}\,d\mu(t)
-\right|\\
+}\\
 &\le
-\int |e^{ixt}|\,d\mu(t)\\
+\int \abs{e^{ixt}}\,d\mu(t)\\
 &=
 \mu([0,1])\\
 &=
@@ -324,7 +324,7 @@ Therefore $f$ is constant.
 
 ::: pf-proof
 
-A nonconstant polynomial is unbounded on the real axis as $|x|\to\infty$. Step [](#s1-12){.pf-ref} says $f$ is bounded on $\RR$.
+A nonconstant polynomial is unbounded on the real axis as $\abs{x}\to\infty$. Step [](#s1-12){.pf-ref} says $f$ is bounded on $\RR$.
 
 :::
 

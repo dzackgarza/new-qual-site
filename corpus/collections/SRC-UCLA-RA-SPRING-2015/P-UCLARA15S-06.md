@@ -27,7 +27,7 @@ For each integer $N\ge1$, let
 $$
 A_N
 \coloneqq
-\{x\in B_1:\|x\|_{B_1}\le N\}.
+\{x\in B_1:\norm{x}_{B_1}\le N\}.
 $$
 
 ::: pf
@@ -88,13 +88,13 @@ Let $F_{N,m}$ be the finite set of chosen points.
 
 If $y\in T(A_N)$, choose $j$ with
 $$
-\|y-z_j\|<1/m.
+\norm{y-z_j}<1/m.
 $$
 Then
 $$
-\|y-y_j\|
+\norm{y-y_j}
 \le
-\|y-z_j\|+\|z_j-y_j\|
+\norm{y-z_j}+\norm{z_j-y_j}
 <
 \frac2m.
 $$
@@ -125,7 +125,7 @@ $$
 $$
 By step [](#s1-2){.pf-ref}, some point $d\in F_{N,m}\subset D_N$ satisfies
 $$
-\|y-d\|<\frac2m<\varepsilon.
+\norm{y-d}<\frac2m<\varepsilon.
 $$
 Hence $D_N$ is dense in $T(A_N)$.
 

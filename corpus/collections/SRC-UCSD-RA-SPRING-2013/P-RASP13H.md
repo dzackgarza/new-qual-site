@@ -96,14 +96,14 @@ on a neighborhood of $K$.
 
 If $\varphi\in C_c^\infty$ is supported in $K$, then pointwise
 $$
--\|\varphi\|_\infty\chi
+-\norm{\varphi}_\infty\chi
 \le \varphi
-\le \|\varphi\|_\infty\chi.
+\le \norm{\varphi}_\infty\chi.
 $$
 Since $T$ is positive,
 $$
-|T(\varphi)|
-\le T(\chi)\|\varphi\|_\infty.
+\abs{T(\varphi)}
+\le T(\chi)\norm{\varphi}_\infty.
 $$
 Hence $T$ is continuous in the sup norm on test functions supported in each fixed compact set.
 

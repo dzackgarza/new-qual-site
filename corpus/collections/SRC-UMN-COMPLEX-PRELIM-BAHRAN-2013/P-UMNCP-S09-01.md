@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Suppose $f$ is entire and
 $$
-\frac{f(z)}{1+|z|^{1/2}}
+\frac{f(z)}{1+\abs{z}^{1/2}}
 $$
-is bounded as $|z|\to\infty$. Prove that $f$ is constant.
+is bounded as $\abs{z}\to\infty$. Prove that $f$ is constant.
 :::
 
 ::: {.solution}
@@ -36,15 +36,15 @@ R_0>0
 $$
 such that
 $$
-|f(z)|
+\abs{f(z)}
 \le
 C\left(
-1+|z|^{1/2}
+1+\abs{z}^{1/2}
 \right)
 $$
 whenever
 $$
-|z|\ge R_0.
+\abs{z}\ge R_0.
 $$
 
 ::: pf
@@ -57,7 +57,7 @@ R\ge R_0,
 $$
 one has
 $$
-\max_{|z|=R}|f(z)|
+\max_{\abs{z}=R}\abs{f(z)}
 \le
 C(1+R^{1/2}).
 $$
@@ -67,7 +67,7 @@ $$
 
 This is the growth hypothesis restricted to the circle
 $$
-|z|=R.
+\abs{z}=R.
 $$
 
 :::
@@ -94,18 +94,18 @@ m\ge1.
 $$
 Cauchy's estimate on the circle
 $$
-|z|=R
+\abs{z}=R
 $$
 gives
 $$
-|f^{(m)}(0)|
+\abs{f^{(m)}(0)}
 \le
 \frac{m!}{R^m}
-\max_{|z|=R}|f(z)|.
+\max_{\abs{z}=R}\abs{f(z)}.
 $$
 Using step [](#s1-1){.pf-ref},
 $$
-|f^{(m)}(0)|
+\abs{f^{(m)}(0)}
 \le
 Cm!
 \left(

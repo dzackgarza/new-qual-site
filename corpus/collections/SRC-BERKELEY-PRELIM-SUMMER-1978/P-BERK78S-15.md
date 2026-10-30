@@ -251,7 +251,7 @@ provides a $T$-invariant complement $W$.
 
 The restriction
 $$
-T|_W:W\to W
+T\restrict_W:W\to W
 $$
 is completely reducible.
 
@@ -261,7 +261,7 @@ Let
 $$
 L\subseteq W
 $$
-be invariant under $T|_W$. Then $L$ is also $T$-invariant as a subspace
+be invariant under $T\restrict_W$. Then $L$ is also $T$-invariant as a subspace
 of $V$. Since $T$ is completely reducible, there is a $T$-invariant
 subspace $C\subseteq V$ such that
 $$
@@ -308,12 +308,12 @@ $$
 V=\operatorname{span}\{v\}\oplus W
 $$
 with $v$ an eigenvector and $W$ invariant. By step [](#s8){.pf-ref}, the restriction
-$T|_W$ is completely reducible. Since
+$T\restrict_W$ is completely reducible. Since
 $$
 \dim W=\dim V-1,
 $$
 the induction hypothesis gives a basis of $W$ consisting of eigenvectors
-of $T|_W$, hence of $T$. Adjoining $v$ gives an eigenbasis of $V$.
+of $T\restrict_W$, hence of $T$. Adjoining $v$ gives an eigenbasis of $V$.
 
 :::
 

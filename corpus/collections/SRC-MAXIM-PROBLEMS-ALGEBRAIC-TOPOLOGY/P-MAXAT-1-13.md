@@ -114,7 +114,7 @@ The cohomology ring is
 $$
 H^*(\CP^{2n};\ZZ)
 \cong\ZZ[u]/(u^{2n+1}),
-\qquad |u|=2.
+\qquad \gradeddegree{u}=2.
 $$
 Thus $u^k$ generates $H^{2k}$ and
 $$

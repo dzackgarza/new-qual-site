@@ -30,9 +30,9 @@ is continuous at $a=2$.
 
 A function $f:I\to\RR$ is continuous at $a\in I$ if for every $\varepsilon>0$ there exists $\delta>0$ such that, for every $x\in I$,
 $$
-|x-a|<\delta
+\abs{x-a}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(a)|<\varepsilon.
+\abs{f(x)-f(a)}<\varepsilon.
 $$
 
 
@@ -46,15 +46,15 @@ This is the $\varepsilon$--$\delta$ definition of continuity at a point.
 
 ::: {.pf-step #s1-2}
 
-If $|x-2|<1$, then
+If $\abs{x-2}<1$, then
 $$
-|x+2|<5.
+\abs{x+2}<5.
 $$
 
 
 ::: pf-proof
 
-The inequality $|x-2|<1$ implies
+The inequality $\abs{x-2}<1$ implies
 $$
 1<x<3.
 $$
@@ -62,7 +62,7 @@ Hence
 $$
 3<x+2<5,
 $$
-so $|x+2|<5$.
+so $\abs{x+2}<5$.
 
 :::
 
@@ -74,25 +74,25 @@ Given $\varepsilon>0$, set
 $$
 \delta=\min\left\{1,\frac{\varepsilon}{5}\right\}.
 $$
-If $|x-2|<\delta$, then
+If $\abs{x-2}<\delta$, then
 $$
-|x^2-4|<\varepsilon.
+\abs{x^2-4}<\varepsilon.
 $$
 
 
 ::: pf-proof
 
-Since $\delta\le1$, the hypothesis $|x-2|<\delta$ implies $|x-2|<1$. By step [](#s1-2){.pf-ref},
+Since $\delta\le1$, the hypothesis $\abs{x-2}<\delta$ implies $\abs{x-2}<1$. By step [](#s1-2){.pf-ref},
 $$
-|x+2|<5.
+\abs{x+2}<5.
 $$
 Therefore
 $$
-|x^2-4|
+\abs{x^2-4}
 =
-|x-2|\,|x+2|
+\abs{x-2}\,\abs{x+2}
 <
-5|x-2|
+5\abs{x-2}
 <
 5\delta
 \le

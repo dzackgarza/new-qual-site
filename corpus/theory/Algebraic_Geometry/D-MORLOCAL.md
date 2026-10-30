@@ -39,7 +39,7 @@ Let $P$ be a class of morphisms of schemes.
 
 - $P$ is \dfn{local on the target} if for every morphism $f \colon X \to Y$ and every open cover $Y = \bigcup_i V_i$: $f \in P$ if and only if every restriction $f^{-1}(V_i) \to V_i$ is in $P$.
 
-- $P$ is \dfn{local on the source} if for every morphism $f \colon X \to Y$ and every open cover $X = \bigcup_i U_i$: $f \in P$ if and only if every restriction $f|_{U_i} \colon U_i \to Y$ is in $P$.
+- $P$ is \dfn{local on the source} if for every morphism $f \colon X \to Y$ and every open cover $X = \bigcup_i U_i$: $f \in P$ if and only if every restriction $f\restrict_{U_i} \colon U_i \to Y$ is in $P$.
 
 - $P$ is \dfn{affine-local on the target} if for every morphism $f \colon X \to Y$ and every cover of $Y$ by affine opens $V_i$: $f \in P$ if and only if every $f^{-1}(V_i) \to V_i$ is in $P$; so a single affine cover of $Y$ decides membership. \dfn{Affine-local on the source} is defined in the same way with affine covers of $X$.
 :::

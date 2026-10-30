@@ -32,7 +32,7 @@ is a homeomorphism for the box topology, sends $x$ to $0$, and sends $U$ to $(-1
 
 Thus it suffices to separate $0$ from the complement of $(-1,1)^J$. Define
 $$
-g(y)=\sup_{\alpha\in J}\min\{|y_\alpha|,1\}.
+g(y)=\sup_{\alpha\in J}\min\{\abs{y_\alpha},1\}.
 $$
 This is the distance from $y$ to $0$ in the uniform metric on $\RR^J$, hence is continuous in the uniform topology. The box topology is finer than the uniform topology, so $g$ is also box-continuous. We have $g(0)=0$, while $g(y)=1$ whenever $y\notin(-1,1)^J$. Therefore
 $$

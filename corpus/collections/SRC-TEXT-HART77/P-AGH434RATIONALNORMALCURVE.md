@@ -252,7 +252,7 @@ $$
 \longrightarrow
 \mcl
 \longrightarrow
-\mcl|_P
+\mcl\restrict_P
 \longrightarrow0
 $$
 shows
@@ -351,13 +351,13 @@ $$
 h^0(\mce)=2.
 $$
 
-The complete linear system $|\mce|$ has no base point. Indeed, a base point
+The complete linear system $\linearsystem{\mce}$ has no base point. Indeed, a base point
 $P$ would give
 $$
 h^0(\mce(-P))=2
 $$
 for a degree-$0$ line bundle, contradicting step [](#s5){.pf-ref}.
-Thus $|\mce|$ defines a nonconstant morphism
+Thus $\linearsystem{\mce}$ defines a nonconstant morphism
 $$
 X\longrightarrow\PP^1
 $$
@@ -392,7 +392,7 @@ The restriction map on hyperplane sections is injective between vector
 spaces of the same dimension $d+1$, hence is an isomorphism.
 Thus the given embedding is defined by the complete linear system
 $$
-|\mco_{\PP^1}(d)|.
+\linearsystem{\mco_{\PP^1}(d)}.
 $$
 Choosing a different basis of this $(d+1)$-dimensional space changes the
 map only by an automorphism of $\PP^d$. Therefore the given curve differs

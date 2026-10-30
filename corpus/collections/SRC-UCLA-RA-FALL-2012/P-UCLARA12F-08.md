@@ -130,9 +130,9 @@ f(z)=(z-a)^{2m}h(z),
 $$
 where $h$ is holomorphic and nonvanishing. By step [](#s1-3){.pf-ref}, on the punctured disk,
 $$
-|g(z)|^2
-=|f(z)|
-=|z-a|^{2m}|h(z)|.
+\abs{g(z)}^2
+=\abs{f(z)}
+=\abs{z-a}^{2m}\abs{h(z)}.
 $$
 Since $h$ is bounded near $a$, the function $g$ is bounded near $a$ and in fact tends to $0$ there. By Riemann's removable singularity theorem, $g$ extends holomorphically across $a$. This applies to every zero.
 

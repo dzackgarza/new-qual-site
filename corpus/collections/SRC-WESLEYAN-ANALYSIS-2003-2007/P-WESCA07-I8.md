@@ -32,7 +32,7 @@ L(\gamma)
 \coloneqq
 \sup_P
 \sum_{j=1}^m
-|\gamma(t_j)-\gamma(t_{j-1})|,}
+\abs{\gamma(t_j)-\gamma(t_{j-1})},}
 $$
 where the supremum is taken over all partitions
 $$
@@ -52,7 +52,7 @@ This is the definition of the length, or total variation, of the path. If the su
 
 If $\gamma$ is piecewise $C^1$, then
 $$
-\boxed{L(\gamma)=\int_a^b|\gamma'(t)|\,dt.}
+\boxed{L(\gamma)=\int_a^b\abs{\gamma'(t)}\,dt.}
 $$
 
 

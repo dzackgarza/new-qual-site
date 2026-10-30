@@ -89,7 +89,7 @@ g_n(m)>2m,
 $$
 and, whenever
 $$
-D_{n,m}\coloneqq\{|p-s_n|:p\in P_{n,m},\ p\neq s_n\}
+D_{n,m}\coloneqq\{\abs{p-s_n}:p\in P_{n,m},\ p\neq s_n\}
 $$
 is nonempty,
 $$
@@ -198,7 +198,7 @@ $$
 <
 \min D_{n,m}
 \leq
-|p_n-s_n|.
+\abs{p_n-s_n}.
 $$
 If $p_n>s_n$, then $A=p_n+T_n>s_n$. If $p_n<s_n$, then
 $$

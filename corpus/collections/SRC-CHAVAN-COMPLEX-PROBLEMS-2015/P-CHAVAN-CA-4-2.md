@@ -20,7 +20,7 @@ $$
 $$
 Show that at least one partial sum has a zero in the disk
 $$
-|z|<\frac{\pi}{2}.
+\abs{z}<\frac{\pi}{2}.
 $$
 :::
 
@@ -71,7 +71,7 @@ hence to $z^2=2$. Thus its two zeros are $\sqrt2$ and $-\sqrt2$.
 
 ::: {.pf-step #s1-3}
 
-Both zeros from step [](#s1-2){.pf-ref} lie in the disk $|z|<\pi/2$.
+Both zeros from step [](#s1-2){.pf-ref} lie in the disk $\abs{z}<\pi/2$.
 
 
 ::: pf-proof
@@ -90,7 +90,7 @@ unit circle is strictly larger than the perimeter $6$ of its inscribed
 regular hexagon.
 Therefore
 $$
-|\pm\sqrt2|=\sqrt2<\frac{\pi}{2}.
+\abs{\pm\sqrt2}=\sqrt2<\frac{\pi}{2}.
 $$
 
 :::
@@ -99,7 +99,7 @@ $$
 
 ::: {.pf-step #s1-4}
 
-At least one partial sum of the cosine series has a zero in $|z|<\pi/2$.
+At least one partial sum of the cosine series has a zero in $\abs{z}<\pi/2$.
 
 
 ::: pf-proof

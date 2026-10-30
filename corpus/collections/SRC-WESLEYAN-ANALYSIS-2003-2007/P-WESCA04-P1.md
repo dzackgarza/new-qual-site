@@ -56,7 +56,7 @@ is entire.
 
 The function $g$ is bounded:
 $$
-|g(z)|
+\abs{g(z)}
 \le
 e^{10}
 \qquad
@@ -68,15 +68,15 @@ $$
 
 For every complex number $w$,
 $$
-|e^w|
+\abs{e^w}
 =
 e^{\operatorname{Re}w}.
 $$
 Hence
 $$
-|g(z)|
+\abs{g(z)}
 =
-|e^{f(z)}|
+\abs{e^{f(z)}}
 =
 e^{\operatorname{Re}f(z)}
 \le

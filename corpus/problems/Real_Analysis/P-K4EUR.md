@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Let $X$ be a measure space and let $\Lambda\in \dualof{L^2(X)}$.
 
-(a) Show that $M\definedas \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
+(a) Show that $M\coloneqq \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
 
 (b) Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X f \bar g$ for all $f \in L^2(X)$.
 :::
@@ -55,11 +55,11 @@ In a Hilbert space every closed subspace $M$ satisfies $H = M \oplus M^\perp$ by
 
 ::: {.pf-step #s2}
 
-If $\Lambda \neq 0$, then $M^\perp = \operatorname{span}\theset{g_0}$ for some $g_0$ with $\|g_0\| = 1$.
+If $\Lambda \neq 0$, then $M^\perp = \operatorname{span}\theset{g_0}$ for some $g_0$ with $\norm{g_0} = 1$.
 
 ::: pf-proof
 
-$M \neq L^2(X)$, so $M^\perp \neq \theset0$ by step [](#s1){.pf-ref}; choose $g_0 \in M^\perp$ with $\|g_0\| = 1$, so $\Lambda(g_0) \neq 0$.
+$M \neq L^2(X)$, so $M^\perp \neq \theset0$ by step [](#s1){.pf-ref}; choose $g_0 \in M^\perp$ with $\norm{g_0} = 1$, so $\Lambda(g_0) \neq 0$.
 For $h \in M^\perp$, the vector $\Lambda(h)g_0 - \Lambda(g_0)h$ lies in $M^\perp$ and in $M$, hence is $0$, so $h$ is a multiple of $g_0$.
 
 :::
@@ -86,7 +86,7 @@ $g$ is unique in $L^2(X)$.
 
 ::: pf-proof
 
-If $\langle f, g\rangle = \langle f, g'\rangle$ for all $f$, take $f = g - g'$ to get $\|g - g'\|^2 = 0$.
+If $\langle f, g\rangle = \langle f, g'\rangle$ for all $f$, take $f = g - g'$ to get $\norm{g - g'}^2 = 0$.
 
 :::
 

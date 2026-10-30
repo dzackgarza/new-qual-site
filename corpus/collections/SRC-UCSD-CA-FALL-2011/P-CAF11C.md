@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $f \in H(\DD)$ be nonconstant such that $f(\DD) \subset \{z \in \CC : \operatorname{Re} z < 0\}$ and $f(0) = -1$.
-Prove that for any $z \in \DD$, $$\frac{1 - |z|}{1 + |z|} \leq |f(z)| \leq \frac{1 + |z|}{1 - |z|}.$$
+Prove that for any $z \in \DD$, $$\frac{1 - \abs{z}}{1 + \abs{z}} \leq \abs{f(z)} \leq \frac{1 + \abs{z}}{1 - \abs{z}}.$$
 :::
 
 ::: {.solution}
@@ -29,22 +29,22 @@ g=\Phi\circ f:\DD\to\DD
 $$
 is holomorphic and satisfies $g(0)=0$. Schwarz's lemma gives
 $$
-|g(z)|\le |z|.
+\abs{g(z)}\le \abs{z}.
 $$
 Solving for $f$ yields
 $$
 f(z)=\frac{g(z)+1}{g(z)-1}.
 $$
-Therefore, writing $r=|z|$,
+Therefore, writing $r=\abs{z}$,
 $$
-|f(z)|=\frac{|1+g(z)|}{|1-g(z)|}
-\le \frac{1+|g(z)|}{1-|g(z)|}
+\abs{f(z)}=\frac{\abs{1+g(z)}}{\abs{1-g(z)}}
+\le \frac{1+\abs{g(z)}}{1-\abs{g(z)}}
 \le \frac{1+r}{1-r}.
 $$
 Likewise,
 $$
-|f(z)|
-\ge \frac{1-|g(z)|}{1+|g(z)|}
+\abs{f(z)}
+\ge \frac{1-\abs{g(z)}}{1+\abs{g(z)}}
 \ge \frac{1-r}{1+r}.
 $$
 This is the required pair of inequalities.

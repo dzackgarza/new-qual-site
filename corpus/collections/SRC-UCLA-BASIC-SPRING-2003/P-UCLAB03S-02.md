@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $a_1,a_2,a_3,\ldots$ be real numbers satisfying
 $$
-\sum_{j=1}^{\infty}|a_j|<\infty.
+\sum_{j=1}^{\infty}\abs{a_j}<\infty.
 $$
 Prove that
 $$
@@ -40,7 +40,7 @@ $$
 
 The sequence of partial sums
 $$
-t_N=\sum_{j=1}^N|a_j|
+t_N=\sum_{j=1}^N\abs{a_j}
 $$
 is Cauchy.
 
@@ -49,7 +49,7 @@ is Cauchy.
 
 The hypothesis
 $$
-\sum_{j=1}^{\infty}|a_j|<\infty
+\sum_{j=1}^{\infty}\abs{a_j}<\infty
 $$
 means precisely that the sequence $(t_N)$ converges in $\RR$. Every convergent real sequence is Cauchy.
 
@@ -66,18 +66,18 @@ The sequence $(s_N)$ is Cauchy.
 
 Let $\varepsilon>0$. By step [](#s1-1){.pf-ref}, there is $N_0$ such that whenever $m>n\ge N_0$,
 $$
-\sum_{j=n+1}^{m}|a_j|
+\sum_{j=n+1}^{m}\abs{a_j}
 =
-|t_m-t_n|
+\abs{t_m-t_n}
 <\varepsilon.
 $$
 For such $m,n$, the triangle inequality gives
 $$
-|s_m-s_n|
+\abs{s_m-s_n}
 =
-\left|\sum_{j=n+1}^{m}a_j\right|
+\abs{\sum_{j=n+1}^{m}a_j}
 \le
-\sum_{j=n+1}^{m}|a_j|
+\sum_{j=n+1}^{m}\abs{a_j}
 <\varepsilon.
 $$
 Hence $(s_N)$ is Cauchy.

@@ -21,18 +21,18 @@ Prove that $\lim _ { t \to b ^ { - } } \varphi ( t )$ exists, where $t \to b ^ {
 :::
 
 ::: {.solution}
-Let $M = \operatorname* { s u p } _ { y \in K } \| f ( y ) \|$ . For any two points $t _ { 1 } , t _ { 2 } \in [ 0 , b )$
+Let $M = \operatorname* { s u p } _ { y \in K } \norm{ f ( y ) }$ . For any two points $t _ { 1 } , t _ { 2 } \in [ 0 , b )$
 
 $$
-\| \varphi ( t _ { 2 } ) - \varphi ( t _ { 1 } ) \| = \Big \| \int _ { t _ { 1 } } ^ { t _ { 2 } } f ( \varphi ( t ) ) d t \Big \| \leq M | t _ { 2 } - t _ { 1 } |
+\norm{ \varphi ( t _ { 2 } ) - \varphi ( t _ { 1 } ) } = \norm{ \int _ { t _ { 1 } } ^ { t _ { 2 } } f ( \varphi ( t ) ) d t } \leq M \abs{ t _ { 2 } - t _ { 1 } }
 $$
 
 so $\varphi$ is Lipschitz continuous on [0, b) and hence preserves Cauchy sequences.
 Let $t _ { k } \to b$ from the left.
-Then $\varphi ( t _ { k } )$ is Cauchy and hence converges to some $y _ { 0 } ~ \in ~ \RR ^ { d }$ . We claim that $\lim _ { t \to b ^ { - } } \varphi ( t ) = y _ { 0 }$. Let $\varepsilon > 0$ and choose k large enough that $| t _ { k } - b | < \frac { \varepsilon } { 4 ( M + 1 ) }$ and $\| \varphi ( t _ { k } ) - y _ { 0 } \| < \frac { \varepsilon } { 2 }$ . Then for $0 < b - t < \delta = \frac { \varepsilon } { 4 ( M + 1 ) }$ we have $| t - t _ { k } | < \frac { \varepsilon } { 2 ( M + 1 ) }$, so
+Then $\varphi ( t _ { k } )$ is Cauchy and hence converges to some $y _ { 0 } ~ \in ~ \RR ^ { d }$ . We claim that $\lim _ { t \to b ^ { - } } \varphi ( t ) = y _ { 0 }$. Let $\varepsilon > 0$ and choose k large enough that $\abs{ t _ { k } - b } < \frac { \varepsilon } { 4 ( M + 1 ) }$ and $\norm{ \varphi ( t _ { k } ) - y _ { 0 } } < \frac { \varepsilon } { 2 }$ . Then for $0 < b - t < \delta = \frac { \varepsilon } { 4 ( M + 1 ) }$ we have $\abs{ t - t _ { k } } < \frac { \varepsilon } { 2 ( M + 1 ) }$, so
 
 $$
-\begin{aligned} \| \varphi ( t ) - y _ { 0 } \| &\le \| \varphi ( t ) - \varphi ( t _ { k } ) \| + \| \varphi ( t _ { k } ) - y _ { 0 } \| \\ &\le M | t - t _ { k } | + \frac { \varepsilon } { 2 } < \frac { \varepsilon } { 2 } + \frac { \varepsilon } { 2 } = \varepsilon \end{aligned}
+\begin{aligned} \norm{ \varphi ( t ) - y _ { 0 } } &\le \norm{ \varphi ( t ) - \varphi ( t _ { k } ) } + \norm{ \varphi ( t _ { k } ) - y _ { 0 } } \\ &\le M \abs{ t - t _ { k } } + \frac { \varepsilon } { 2 } < \frac { \varepsilon } { 2 } + \frac { \varepsilon } { 2 } = \varepsilon \end{aligned}
 $$
 
 as required.

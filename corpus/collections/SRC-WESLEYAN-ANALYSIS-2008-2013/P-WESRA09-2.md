@@ -50,9 +50,9 @@ then $\boxed{\mu=\nu\text{ on }\sigma(\mathcal R)}$.
 
 ::: pf-step
 
-The Dominated Convergence Theorem is the following: let $(\Omega,\mathcal A,\mu)$ be a measure space, let $f_n:\Omega\to\RR$ or $\CC$ be measurable, and suppose $f_n\to f$ almost everywhere. If there is $g\in L^1(\mu)$ such that $|f_n|\le g$ almost everywhere for every $n$, then $f\in L^1(\mu)$,
+The Dominated Convergence Theorem is the following: let $(\Omega,\mathcal A,\mu)$ be a measure space, let $f_n:\Omega\to\RR$ or $\CC$ be measurable, and suppose $f_n\to f$ almost everywhere. If there is $g\in L^1(\mu)$ such that $\abs{f_n}\le g$ almost everywhere for every $n$, then $f\in L^1(\mu)$,
 $$
-\boxed{\int_\Omega |f_n-f|\,d\mu\longrightarrow0},
+\boxed{\int_\Omega \abs{f_n-f}\,d\mu\longrightarrow0},
 $$
 and in particular
 $$
@@ -65,9 +65,9 @@ $$
 
 The Hahn--Banach Theorem in normed-space form is the following: let $X$ be a normed vector space over $\RR$ or $\CC$, let $M\subseteq X$ be a linear subspace, and let $f:M\to\RR$ or $\CC$ be a bounded linear functional. Then there is a bounded linear functional $F:X\to\RR$ or $\CC$ such that
 $$
-\boxed{F|_M=f,
+\boxed{F\restrict_M=f,
 \qquad
-\|F\|=\|f\|}.
+\norm{F}=\norm{f}}.
 $$
 
 :::
@@ -76,12 +76,12 @@ $$
 
 The Uniform Boundedness Theorem is the following: let $X$ be a Banach space, let $Y$ be a normed vector space, and let $\mathcal F$ be a family of bounded linear maps $T:X\to Y$. If
 $$
-\sup_{T\in\mathcal F}\|Tx\|_Y<\infty
+\sup_{T\in\mathcal F}\norm{Tx}_Y<\infty
 \qquad\text{for every }x\in X,
 $$
 then
 $$
-\boxed{\sup_{T\in\mathcal F}\|T\|<\infty}.
+\boxed{\sup_{T\in\mathcal F}\norm{T}<\infty}.
 $$
 
 :::

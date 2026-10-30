@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Assume the representation formula $$u(z) = \operatorname{Re}\left[\frac{1}{2\pi i}\int_{|\eta|=R} \frac{\eta - z}{\eta + z} u(\eta)\frac{d\eta}{\eta}\right]$$ for any harmonic function $u$ defined on $|z| < R$ and continuous up to $|z| \leq R$.
+Assume the representation formula $$u(z) = \operatorname{Re}\left[\frac{1}{2\pi i}\int_{\abs{\eta}=R} \frac{\eta - z}{\eta + z} u(\eta)\frac{d\eta}{\eta}\right]$$ for any harmonic function $u$ defined on $\abs{z} < R$ and continuous up to $\abs{z} \leq R$.
 
-(a) If $u(z)$ is a harmonic function defined on $\CC$ such that $\lim_{z \to \infty} \frac{|u(z)|}{|z|} = 0$, show that $u$ must be a constant.
+(a) If $u(z)$ is a harmonic function defined on $\CC$ such that $\lim_{z \to \infty} \frac{\abs{u(z)}}{\abs{z}} = 0$, show that $u$ must be a constant.
 
-(b) Show that $$u(a) = \frac{1}{2\pi}\int_0^{2\pi} \frac{R^2 - |a|^2}{|Re^{i\theta} - a|^2} u(Re^{i\theta})\,d\theta.$$
+(b) Show that $$u(a) = \frac{1}{2\pi}\int_0^{2\pi} \frac{R^2 - \abs{a}^2}{\abs{Re^{i\theta} - a}^2} u(Re^{i\theta})\,d\theta.$$
 
 Hint: The solution of (b) does not require (a).
 :::
@@ -32,7 +32,7 @@ Hint: The solution of (b) does not require (a).
 
 ::: {.pf-step #s1}
 
-From the representation, $u(a) = \operatorname{Re}\frac{1}{2\pi i}\int_{|\eta|=R} \frac{\eta-a}{\eta+a}u(\eta)\frac{d\eta}{\eta}$.
+From the representation, $u(a) = \operatorname{Re}\frac{1}{2\pi i}\int_{\abs{\eta}=R} \frac{\eta-a}{\eta+a}u(\eta)\frac{d\eta}{\eta}$.
 
 ::: pf-proof
 
@@ -44,7 +44,7 @@ hypothesis.
 
 ::: {.pf-step #s2}
 
-Bound $|u(z)|=o(|z|)$, let $R\to\infty$, then $\frac{\eta-a}{\eta+a}=1+O(R^{-1})$, so $u(a)=\operatorname{Re}\frac{1}{2\pi i}\int_{|\eta|=R} u(\eta)\frac{d\eta}{\eta}+o(1)$.
+Bound $\abs{u(z)}=o(\abs{z})$, let $R\to\infty$, then $\frac{\eta-a}{\eta+a}=1+O(R^{-1})$, so $u(a)=\operatorname{Re}\frac{1}{2\pi i}\int_{\abs{\eta}=R} u(\eta)\frac{d\eta}{\eta}+o(1)$.
 
 ::: pf-proof
 
@@ -56,7 +56,7 @@ Step [](#s1){.pf-ref} and growth.
 
 ::: {.pf-step #s3}
 
-The integral $\frac{1}{2\pi i}\int_{|\eta|=R} u(\eta)\frac{d\eta}{\eta}$ is bounded independent of $R$, so $u$ is constant by letting $R\to\infty$ for $u(a)-u(0)$.
+The integral $\frac{1}{2\pi i}\int_{\abs{\eta}=R} u(\eta)\frac{d\eta}{\eta}$ is bounded independent of $R$, so $u$ is constant by letting $R\to\infty$ for $u(a)-u(0)$.
 
 ::: pf-proof
 
@@ -68,7 +68,7 @@ Step [](#s2){.pf-ref} (difference tends to $0$).
 
 ::: {.pf-step #s4}
 
-Part (b) follows by writing $\frac{\eta-a}{\eta+a}\frac{d\eta}{\eta}= \frac{R^2-|a|^2}{|Re^{i\theta}-a|^2}d\theta + i(\dots)$ and taking real part.
+Part (b) follows by writing $\frac{\eta-a}{\eta+a}\frac{d\eta}{\eta}= \frac{R^2-\abs{a}^2}{\abs{Re^{i\theta}-a}^2}d\theta + i(\dots)$ and taking real part.
 
 ::: pf-proof
 

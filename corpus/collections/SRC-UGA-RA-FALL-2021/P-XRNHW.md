@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-XRNHW
 kind: problem
-title: The bound $\int_F|x-y|^{-2}\,dx\leq 2/\delta_F(y)$, with $I(x)=\int\delta_F(y)/|x-y|^2\,dy$
-  infinite off $F$ and finite a.e. on $F$
+title: The bound $\int_F\abs{x-y}^{-2}\,dx\leq 2/\delta_F(y)$, with $I(x)=\int\delta_F(y)/\abs{x-y}^2\,dy$ infinite off $F$ and finite a.e. on $F$
 classification:
   areas:
   - real-analysis
@@ -28,17 +27,17 @@ audit:
 a.
 Let $F \subset \RR$ be closed, and define
 $$
-\delta_{F}(y):=\inf _{x \in F}|x-y| .
+\delta_{F}(y):=\inf _{x \in F}\abs{x-y} .
 $$
 For $y \notin F$, show that
 $$
-\int_{F}|x-y|^{-2} d x \leq \frac{2}{\delta_F(y)},
+\int_{F}\abs{x-y}^{-2} d x \leq \frac{2}{\delta_F(y)},
 $$
 b.
 Let $F \subset \RR$ be a closed set whose complement has finite measure, i.e. $m(\RR \sm F)< \infty$. 
 Define the function
 $$
-I(x):=\int_{\RR} \frac{\delta_{F}(y)}{|x-y|^{2}} d y
+I(x):=\int_{\RR} \frac{\delta_{F}(y)}{\abs{x-y}^{2}} d y
 $$
 Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost every $x \in F$. 
 
@@ -67,9 +66,9 @@ $$
 Hence, after the substitution $u=x-y$,
 $$
 \begin{aligned}
-\int_F\frac{dx}{|x-y|^2}
-&\le \int_{|x-y|\ge d}\frac{dx}{|x-y|^2}\\
-&=\int_{|u|\ge d}\frac{du}{u^2}\\
+\int_F\frac{dx}{\abs{x-y}^2}
+&\le \int_{\abs{x-y}\ge d}\frac{dx}{\abs{x-y}^2}\\
+&=\int_{\abs{u}\ge d}\frac{du}{u^2}\\
 &=2\int_d^\infty u^{-2}\,du\\
 &=\frac2d.
 \end{aligned}
@@ -77,7 +76,7 @@ $$
 Therefore
 $$
 \boxed{
-\int_F|x-y|^{-2}\,dx\le\frac{2}{\delta_F(y)}.}
+\int_F\abs{x-y}^{-2}\,dx\le\frac{2}{\delta_F(y)}.}
 $$
 
 :::
@@ -95,16 +94,16 @@ $$
 d:=\delta_F(x)>0,
 \qquad r:=d/2.
 $$
-The distance function is $1$-Lipschitz, so if $|y-x|<r$, then
+The distance function is $1$-Lipschitz, so if $\abs{y-x}<r$, then
 $$
-\delta_F(y)\ge \delta_F(x)-|x-y|>d-r=r.
+\delta_F(y)\ge \delta_F(x)-\abs{x-y}>d-r=r.
 $$
 Therefore
 $$
 \begin{aligned}
 I(x)
-&\ge \int_{|y-x|<r}\frac{\delta_F(y)}{|x-y|^2}\,dy\\
-&\ge r\int_{|y-x|<r}\frac{dy}{|x-y|^2}\\
+&\ge \int_{\abs{y-x}<r}\frac{\delta_F(y)}{\abs{x-y}^2}\,dy\\
+&\ge r\int_{\abs{y-x}<r}\frac{dy}{\abs{x-y}^2}\\
 &=\infty,
 \end{aligned}
 $$
@@ -128,15 +127,15 @@ $$
 \begin{aligned}
 \int_F I(x)\,dx
 &=\int_F\int_{\RR}
-\frac{\delta_F(y)}{|x-y|^2}\,dy\,dx\\
+\frac{\delta_F(y)}{\abs{x-y}^2}\,dy\,dx\\
 &=\int_{\RR}\delta_F(y)
-\left(\int_F\frac{dx}{|x-y|^2}\right)dy.
+\left(\int_F\frac{dx}{\abs{x-y}^2}\right)dy.
 \end{aligned}
 $$
 For $y\in F$, the factor $\delta_F(y)$ is $0$. For $y\notin F$, Step 1 gives
 $$
 \delta_F(y)
-\int_F\frac{dx}{|x-y|^2}
+\int_F\frac{dx}{\abs{x-y}^2}
 \le2.
 $$
 Hence

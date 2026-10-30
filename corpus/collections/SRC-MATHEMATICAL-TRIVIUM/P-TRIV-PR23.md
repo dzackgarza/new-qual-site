@@ -26,7 +26,7 @@ Assume that the round-off errors $\delta_k = a_k - \tilde{a}_k$ are distributed 
 Compose the sum $\tilde{a} = \sum_{k=1}^{10^N} \tilde{a}_k$ and let $\delta = a - \tilde{a}$ be the total error of the approximation.
 For the given values of $N$ and $m$ find $\epsilon$ such that
 $$
-P(|\delta| < \epsilon) > 0.99.
+P(\abs{\delta} < \epsilon) > 0.99.
 \tag{52}
 $$
 :::
@@ -116,7 +116,7 @@ The variables $\delta_k$ are independent, identically distributed, bounded, and 
 
 If $z_{0.995}=\Phi^{-1}(0.995)$, then
 $$
-P(|Z|<z_{0.995})=0.99,
+P(\abs{Z}<z_{0.995})=0.99,
 \qquad
 z_{0.995}\approx2.57583.
 $$
@@ -126,7 +126,7 @@ $$
 
 By symmetry of the standard normal law,
 $$
-P(|Z|<z)=2\Phi(z)-1.
+P(\abs{Z}<z)=2\Phi(z)-1.
 $$
 Setting this equal to $0.99$ gives $\Phi(z)=0.995$.
 
@@ -149,8 +149,8 @@ $$
 
 By step [](#s1-3){.pf-ref},
 $$
-P(|\delta|<\epsilon)
-\approx P\left(|Z|<\frac{\epsilon}{\sigma_\delta}\right).
+P(\abs{\delta}<\epsilon)
+\approx P\left(\abs{Z}<\frac{\epsilon}{\sigma_\delta}\right).
 $$
 Choose $\epsilon=z_{0.995}\sigma_\delta$ and substitute step [](#s1-2){.pf-ref}. To obtain a strict numerical inequality $>0.99$ within the normal approximation, take any value slightly larger than this threshold.
 

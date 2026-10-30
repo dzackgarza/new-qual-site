@@ -72,7 +72,7 @@ $$
 \omega_{\PP^n}
 \tensor
 \OO_{\PP^n}\!\left(\sum_i d_i\right)
-\right)|_X.
+\right)\restrict_X.
 $$
 Since
 $$

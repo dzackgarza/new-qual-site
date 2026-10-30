@@ -40,8 +40,8 @@ I(f):=\int_X f\varphi\,d\mu.
 $$
 Because $\varphi\ge0$, the functional $I$ is positive. It is also well defined: if $f\in C_c(X)$ and $K=\operatorname{supp}f$, then $\varphi$ is bounded on $K$ and $\mu(K)<\infty$, so
 $$
-\int_X|f|\varphi\,d\mu
-\le \|f\|_\infty\sup_K\varphi\,\mu(K)<\infty.
+\int_X\abs{f}\varphi\,d\mu
+\le \norm{f}_\infty\sup_K\varphi\,\mu(K)<\infty.
 $$
 
 By the Riesz--Markov representation theorem, there is a unique Radon measure $\lambda$ on $X$ such that

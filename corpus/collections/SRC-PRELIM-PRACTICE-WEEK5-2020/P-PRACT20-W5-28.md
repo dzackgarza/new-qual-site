@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-28
 kind: problem
-title: Contour integral of $\sin z-\frac{\cos z}{z-\pi/4}$ around $|z|=\pi$
+title: Contour integral of $\sin z-\frac{\cos z}{z-\pi/4}$ around $\abs{z}=\pi$
 classification:
   areas:
   - complex-analysis
@@ -58,7 +58,7 @@ $$
 
 Since
 $$
-\left|\frac{\pi}{4}\right|<\pi,
+\abs{\frac{\pi}{4}}<\pi,
 $$
 the point $a$ is inside the positively oriented circle. Cauchy's integral
 formula applied to the entire function $\cos z$ gives

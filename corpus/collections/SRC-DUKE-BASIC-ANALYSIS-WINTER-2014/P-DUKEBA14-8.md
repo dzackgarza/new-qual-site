@@ -43,9 +43,9 @@ Prove uniform convergence of the derivative series.
 ::: pf-proof
 For $k\ge1$,
 $$
-\left|
+\abs{
 \frac{k\sin(kx)}{k^3+k^2+1}
-\right|
+}
 \le
 \frac{k}{k^3}
 =\frac1{k^2}.

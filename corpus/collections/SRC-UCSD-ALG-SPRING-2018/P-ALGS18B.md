@@ -49,7 +49,7 @@ The subgroup $gPg^{-1}$ is a Sylow $p$-subgroup of $N$.
 
 ::: pf-proof
 
-Conjugation preserves order, so $|gPg^{-1}|=|P|$. Since $P$ has the largest possible $p$-power order among subgroups of $N$, the same is true of $gPg^{-1}$.
+Conjugation preserves order, so $\cardinality{gPg^{-1}}=\cardinality{P}$. Since $P$ has the largest possible $p$-power order among subgroups of $N$, the same is true of $gPg^{-1}$.
 
 :::
 

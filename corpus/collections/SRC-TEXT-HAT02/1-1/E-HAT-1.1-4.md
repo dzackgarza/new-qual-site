@@ -98,7 +98,7 @@ The path $\gamma$ is homotopic relative to its endpoints to a piecewise linear p
 
 For each $i$, reparametrize the restricted path
 $$
-\gamma|_{[t_{i-1},t_i]}
+\gamma\restrict_{[t_{i-1},t_i]}
 $$
 to $I$.
 By step [](#s1){.pf-ref} its image lies in the star-shaped set $V_i$, so step [](#s2){.pf-ref} gives a homotopy rel endpoints to a broken line $p_i\subseteq V_i$.

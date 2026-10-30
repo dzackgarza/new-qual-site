@@ -54,7 +54,7 @@ $p$ is not a covering map.
 
 ::: pf-proof
 
-If $U\subseteq\QQ$ were an evenly covered neighbourhood of $x$, then because $p$ is bijective there could be only one sheet, namely $p^{-1}(U)=U$ with the discrete topology, and $p|_U$ would have to be a homeomorphism onto $U$ with its usual topology.
+If $U\subseteq\QQ$ were an evenly covered neighbourhood of $x$, then because $p$ is bijective there could be only one sheet, namely $p^{-1}(U)=U$ with the discrete topology, and $p\restrict_U$ would have to be a homeomorphism onto $U$ with its usual topology.
 Hence $U$ would be discrete.
 But no nonempty open subset of $\QQ$ is discrete.
 Therefore no point has an evenly covered neighbourhood.

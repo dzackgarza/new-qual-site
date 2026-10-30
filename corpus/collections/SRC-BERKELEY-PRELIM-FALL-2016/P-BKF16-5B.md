@@ -33,7 +33,7 @@ audit:
 Let $f _ { t } ( z )$ be a family of entire functions depending analytically on $t \in \Delta$ , where $\Delta$ is the open unit disk in C. Suppose that for all $t , f _ { t } ( z )$ is non-vanishing on the unit circle $S ^ { 1 }$ in $\CC .$ Prove that for each $k \geq 0$ ,
 
 $$
-N _ { k } ( t ) = \sum _ { | z | < 1 : f _ { t } ( z ) = 0 } z ^ { k }
+N _ { k } ( t ) = \sum _ { \abs{ z } < 1 : f _ { t } ( z ) = 0 } z ^ { k }
 $$
 
 is an analytic function of t (the zeroes of $f _ { t } ( z )$ are taken with multiplicity in the sum).
@@ -55,14 +55,14 @@ $$
 N_k(t)
 =
 \frac{1}{2\pi i}
-\int_{|z|=1}
+\int_{\abs{z}=1}
 z^k\frac{\partial_zF(t,z)}{F(t,z)}\,dz.
 $$
 
 ::: pf-proof
 
 The function $f_t$ is not identically zero because it is nonvanishing on
-$|z|=1$. Hence its zeros are isolated. Since it has no zero on the unit
+$\abs{z}=1$. Hence its zeros are isolated. Since it has no zero on the unit
 circle, its zeros in the closed unit disk form a finite set.
 
 If $a$ is a zero of multiplicity $m$, then locally
@@ -88,13 +88,13 @@ z^k\frac{f_t'(z)}{f_t(z)}
 =
 m a^k.
 $$
-The integrand has no pole on $|z|=1$, so the residue theorem gives
+The integrand has no pole on $\abs{z}=1$, so the residue theorem gives
 $$
 \frac{1}{2\pi i}
-\int_{|z|=1}
+\int_{\abs{z}=1}
 z^k\frac{f_t'(z)}{f_t(z)}\,dz
 =
-\sum_{|a|<1}m_a a^k
+\sum_{\abs{a}<1}m_a a^k
 =
 N_k(t).
 $$
@@ -108,9 +108,9 @@ $$
 Fix $t_0\in\Delta$. There is an open disk $U$ about $t_0$ and
 a number $c>0$ such that
 $$
-|F(t,z)|\ge c
+\abs{F(t,z)}\ge c
 $$
-for every $t\in U$ and every $|z|=1$.
+for every $t\in U$ and every $\abs{z}=1$.
 
 ::: pf-proof
 
@@ -122,7 +122,7 @@ on the compact unit circle. Hence
 $$
 m
 \coloneqq
-\min_{|z|=1}|F(t_0,z)|
+\min_{\abs{z}=1}\abs{F(t_0,z)}
 >
 0.
 $$
@@ -130,13 +130,13 @@ The analytic dependence of the family on $t$ gives continuity of $F$ in
 $(t,z)$. Compactness of the unit circle therefore gives a neighborhood
 $U$ of $t_0$ such that
 $$
-|F(t,z)-F(t_0,z)|<\frac m2
+\abs{F(t,z)-F(t_0,z)}<\frac m2
 $$
-for $t\in U$ and $|z|=1$. Consequently
+for $t\in U$ and $\abs{z}=1$. Consequently
 $$
-|F(t,z)|
+\abs{F(t,z)}
 \ge
-|F(t_0,z)|-|F(t,z)-F(t_0,z)|
+\abs{F(t_0,z)}-\abs{F(t,z)-F(t_0,z)}
 >
 \frac m2.
 $$
@@ -153,7 +153,7 @@ $$
 H(t)
 \coloneqq
 \frac{1}{2\pi i}
-\int_{|z|=1}
+\int_{\abs{z}=1}
 z^k\frac{\partial_zF(t,z)}{F(t,z)}\,dz
 $$
 is holomorphic.
@@ -162,7 +162,7 @@ is holomorphic.
 
 By step [](#s2){.pf-ref}, the denominator does not vanish on
 $$
-U\times\{|z|=1\}.
+U\times\{\abs{z}=1\}.
 $$
 Hence
 $$
@@ -177,7 +177,7 @@ Continuity of $G$ on compact parameter-circle products shows that $H$ is
 continuous. Let $T$ be any triangle whose closure is contained in $U$.
 Since $G$ is continuous on
 $$
-\partial T\times\{|z|=1\},
+\partial T\times\{\abs{z}=1\},
 $$
 the order of integration may be interchanged, giving
 $$
@@ -185,7 +185,7 @@ $$
 \int_{\partial T}H(t)\,dt
 &=
 \frac{1}{2\pi i}
-\int_{|z|=1}
+\int_{\abs{z}=1}
 \left(
 \int_{\partial T}G(t,z)\,dt
 \right)dz\\

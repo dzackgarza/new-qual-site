@@ -165,7 +165,7 @@ $$
 
 Suppose $(m,n)\ne(0,0)$ and set
 $$
-d=\gcd(|m|,|n|)\ge1.
+d=\gcd(\abs{m},\abs{n})\ge1.
 $$
 Then
 $$
@@ -270,7 +270,7 @@ $$
 &H_0(X)&H_1(X)&H_2(X)&H_k(X),\ k\ge3\\ \hline
 (m,n)=(0,0)&\ZZ&\ZZ^2&\ZZ^2&0\\[2mm]
 (m,n)\ne(0,0)&\ZZ&\ZZ\oplus\ZZ/d\ZZ&\ZZ&0,
-\quad d=\gcd(|m|,|n|).
+\quad d=\gcd(\abs{m},\abs{n}).
 \end{array}}
 $$
 :::

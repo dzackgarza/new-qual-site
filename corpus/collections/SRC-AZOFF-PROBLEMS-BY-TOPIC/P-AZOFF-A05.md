@@ -32,9 +32,9 @@ audit:
 Let $f$ be differentiable on $[a,b]$.
 Say that $f$ is *uniformly differentiable* if for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-\left|\frac{f(x)-f(y)}{x-y}-f'(y)\right|<\varepsilon
+\abs{\frac{f(x)-f(y)}{x-y}-f'(y)}<\varepsilon
 $$
-whenever $x,y\in[a,b]$, $x\ne y$, and $|x-y|<\delta$.
+whenever $x,y\in[a,b]$, $x\ne y$, and $\abs{x-y}<\delta$.
 
 Prove that $f$ is uniformly differentiable on $[a,b]$ if and only if $f'$ is continuous on $[a,b]$.
 :::

@@ -27,7 +27,7 @@ $$
 (b) Identify $H_E^\perp$.
 
 (c) Let $P(f)=f\chi_E$.
-Calculate $\|P\|$.
+Calculate $\norm{P}$.
 :::
 
 ::: {.solution}
@@ -70,10 +70,10 @@ f_n\chi_{E^c}=0,
 $$
 one has
 $$
-\|f\chi_{E^c}\|_2
-=\|(f-f_n)\chi_{E^c}\|_2
+\norm{f\chi_{E^c}}_2
+=\norm{(f-f_n)\chi_{E^c}}_2
 \le
-\|f-f_n\|_2
+\norm{f-f_n}_2
 \longrightarrow0.
 $$
 Thus
@@ -123,7 +123,7 @@ $$
 0
 =\langle g,h\rangle
 =\int_0^1 g\,\overline{g\chi_E}\,dm
-=\int_E |g|^2\,dm.
+=\int_E \abs{g}^2\,dm.
 $$
 Thus $g=0$ almost everywhere on $E$, which means
 $$
@@ -143,7 +143,7 @@ P(f)=f\chi_E
 $$
 satisfies
 $$
-\|P\|\le1.
+\norm{P}\le1.
 $$
 
 
@@ -151,13 +151,13 @@ $$
 
 For every $f\in L^2([0,1])$,
 $$
-\|Pf\|_2^2
-=\int_E |f|^2\,dm
+\norm{Pf}_2^2
+=\int_E \abs{f}^2\,dm
 \le
-\int_{[0,1]}|f|^2\,dm
-=\|f\|_2^2.
+\int_{[0,1]}\abs{f}^2\,dm
+=\norm{f}_2^2.
 $$
-Hence $\|Pf\|_2\le\|f\|_2$, so $\|P\|\le1$.
+Hence $\norm{Pf}_2\le\norm{f}_2$, so $\norm{P}\le1$.
 
 :::
 
@@ -167,7 +167,7 @@ Hence $\|Pf\|_2\le\|f\|_2$, so $\|P\|\le1$.
 
 If $m(E)>0$, then
 $$
-\boxed{\|P\|=1}.
+\boxed{\norm{P}=1}.
 $$
 
 
@@ -183,12 +183,12 @@ P\chi_E=\chi_E.
 $$
 Therefore
 $$
-\|P\|
+\norm{P}
 \ge
-\frac{\|P\chi_E\|_2}{\|\chi_E\|_2}
+\frac{\norm{P\chi_E}_2}{\norm{\chi_E}_2}
 =1.
 $$
-Together with step [](#s1-4){.pf-ref}, this gives $\|P\|=1$.
+Together with step [](#s1-4){.pf-ref}, this gives $\norm{P}=1$.
 
 :::
 
@@ -198,7 +198,7 @@ Together with step [](#s1-4){.pf-ref}, this gives $\|P\|=1$.
 
 If $m(E)=0$, then
 $$
-\boxed{\|P\|=0}.
+\boxed{\norm{P}=0}.
 $$
 
 

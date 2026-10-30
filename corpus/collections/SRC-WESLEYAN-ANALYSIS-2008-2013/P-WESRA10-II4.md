@@ -19,7 +19,7 @@ audit:
 Let $f\in L^1(\RR)$ and define $f_t(x)=f(x-t)$.
 Prove
 $$
-\lim_{t\to0}\int_{\RR}|f-f_t|\,dm=0.
+\lim_{t\to0}\int_{\RR}\abs{f-f_t}\,dm=0.
 $$
 If $A\subset\RR$ has finite Lebesgue measure, explain what this says about the translates $A+t$.
 :::
@@ -32,7 +32,7 @@ If $A\subset\RR$ has finite Lebesgue measure, explain what this says about the t
 
 If $g\in C_c(\RR)$, then
 $$
-\|g-g_t\|_1\longrightarrow0
+\norm{g-g_t}_1\longrightarrow0
 \qquad(t\to0).
 $$
 
@@ -43,19 +43,19 @@ Choose $R>0$ such that
 $$
 \operatorname{supp}(g)\subseteq[-R,R].
 $$
-For $|t|\le1$, both $g$ and $g_t$ vanish outside
+For $\abs{t}\le1$, both $g$ and $g_t$ vanish outside
 $$
 [-R-1,R+1].
 $$
 Since $g$ is uniformly continuous on $\RR$,
 $$
-\sup_{x\in\RR}|g(x)-g(x-t)|\longrightarrow0
+\sup_{x\in\RR}\abs{g(x)-g(x-t)}\longrightarrow0
 $$
-as $t\to0$. Hence, for $|t|\le1$,
+as $t\to0$. Hence, for $\abs{t}\le1$,
 $$
-\|g-g_t\|_1
+\norm{g-g_t}_1
 \le
-2(R+1)\sup_{x\in\RR}|g(x)-g(x-t)|,
+2(R+1)\sup_{x\in\RR}\abs{g(x)-g(x-t)},
 $$
 and the right-hand side tends to $0$.
 
@@ -67,7 +67,7 @@ and the right-hand side tends to $0$.
 
 Translation preserves the $L^1$ norm:
 $$
-\|h_t\|_1=\|h\|_1
+\norm{h_t}_1=\norm{h}_1
 $$
 for every $h\in L^1(\RR)$ and every $t\in\RR$.
 
@@ -76,10 +76,10 @@ for every $h\in L^1(\RR)$ and every $t\in\RR$.
 
 By the translation invariance of Lebesgue measure,
 $$
-\|h_t\|_1
-=\int_{\RR}|h(x-t)|\,dx
-=\int_{\RR}|h(u)|\,du
-=\|h\|_1.
+\norm{h_t}_1
+=\int_{\RR}\abs{h(x-t)}\,dx
+=\int_{\RR}\abs{h(u)}\,du
+=\norm{h}_1.
 $$
 
 :::
@@ -90,7 +90,7 @@ $$
 
 For every $f\in L^1(\RR)$,
 $$
-\boxed{\|f-f_t\|_1\longrightarrow0}
+\boxed{\norm{f-f_t}_1\longrightarrow0}
 \qquad(t\to0).
 $$
 
@@ -100,24 +100,24 @@ $$
 Fix $\varepsilon>0$. Since $C_c(\RR)$ is dense in $L^1(\RR)$,
 choose $g\in C_c(\RR)$ such that
 $$
-\|f-g\|_1<\frac{\varepsilon}{3}.
+\norm{f-g}_1<\frac{\varepsilon}{3}.
 $$
-By step [](#s1-1){.pf-ref}, for all sufficiently small $|t|$,
+By step [](#s1-1){.pf-ref}, for all sufficiently small $\abs{t}$,
 $$
-\|g-g_t\|_1<\frac{\varepsilon}{3}.
+\norm{g-g_t}_1<\frac{\varepsilon}{3}.
 $$
 Using step [](#s1-2){.pf-ref},
 $$
-\|f_t-g_t\|_1
-=\|(f-g)_t\|_1
-=\|f-g\|_1
+\norm{f_t-g_t}_1
+=\norm{(f-g)_t}_1
+=\norm{f-g}_1
 <\frac{\varepsilon}{3}.
 $$
 Therefore
 $$
-\|f-f_t\|_1
+\norm{f-f_t}_1
 \le
-\|f-g\|_1+\|g-g_t\|_1+\|g_t-f_t\|_1
+\norm{f-g}_1+\norm{g-g_t}_1+\norm{g_t-f_t}_1
 <\varepsilon.
 $$
 This proves the limit.
@@ -147,13 +147,13 @@ f_t(x)=\chi_A(x-t)=\chi_{A+t}(x).
 $$
 Moreover,
 $$
-|\chi_A-\chi_{A+t}|
+\abs{\chi_A-\chi_{A+t}}
 =\chi_{A\triangle(A+t)}.
 $$
 Hence step [](#s1-3){.pf-ref} gives
 $$
 m(A\triangle(A+t))
-=\|\chi_A-\chi_{A+t}\|_1
+=\norm{\chi_A-\chi_{A+t}}_1
 \longrightarrow0.
 $$
 

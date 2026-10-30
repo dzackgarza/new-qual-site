@@ -43,14 +43,14 @@ and it is a simple zero of $z+e^{-z}-(2+i)$.
 
 ::: {.pf-step #s1}
 
-Every right-half-plane solution lies in $B=\{z:|z-(2+i)|<1\}$.
+Every right-half-plane solution lies in $B=\{z:\abs{z-(2+i)}<1\}$.
 
 ::: pf-proof
 
 If $z$ satisfies the equation and $\operatorname{Re}z>0$,
 then
 $$
-|z-(2+i)|=|e^{-z}|=e^{-\operatorname{Re}z}<1.
+\abs{z-(2+i)}=\abs{e^{-z}}=e^{-\operatorname{Re}z}<1.
 $$
 Thus $z\in B$. Conversely every point of $B$ has real
 part greater than one, so all zeros in $B$ lie in the
@@ -66,10 +66,10 @@ There is precisely one zero in $B$, counted with multiplicity.
 
 ::: pf-proof
 
-For $|z-(2+i)|=1$ one has $\operatorname{Re}z\geq1$.
+For $\abs{z-(2+i)}=1$ one has $\operatorname{Re}z\geq1$.
 Consequently
 $$
-|e^{-z}|=e^{-\operatorname{Re}z}\leq e^{-1}<1=|z-(2+i)|.
+\abs{e^{-z}}=e^{-\operatorname{Re}z}\leq e^{-1}<1=\abs{z-(2+i)}.
 $$
 Both $z-(2+i)$ and $e^{-z}$ are entire, so Rouché's
 theorem on this circle gives the same number of zeros

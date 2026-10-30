@@ -52,7 +52,7 @@ $$
 $$
 is nonempty, so density of $D$ gives $d\in D$ with $d_\alpha\in U$ and $d_\beta\notin U$. Hence $d\in F(\alpha)\setminus F(\beta)$. Thus
 $$
-|J|\le |\mathcal P(D)|=|\mathcal P(\ZZ_+)|.
+\cardinality{J}\le \cardinality{\mathcal P(D)}=\cardinality{\mathcal P(\ZZ_+)}.
 $$
 Therefore if $J$ has larger cardinality than $\mathcal P(\ZZ_+)$, $\RR^J$ cannot be separable.
 :::

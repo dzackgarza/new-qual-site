@@ -148,7 +148,7 @@ $$
 By the fundamental theorem of Galois theory,
 $$
 [K^{\langle\sigma\rangle}:\QQ]
-=\frac{|G|}{|\langle\sigma\rangle|}
+=\frac{\cardinality{G}}{\cardinality{\langle\sigma\rangle}}
 =2.
 $$
 Also $[\QQ(\zeta):\QQ]=2$, so equality holds.

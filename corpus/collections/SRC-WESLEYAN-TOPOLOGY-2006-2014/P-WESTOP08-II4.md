@@ -57,7 +57,7 @@ V_\lambda,
 $$
 and for each $\lambda$ the restriction
 $$
-p|_{V_\lambda}:V_\lambda\to U
+p\restrict_{V_\lambda}:V_\lambda\to U
 $$
 is a homeomorphism.
 
@@ -159,7 +159,7 @@ $$
 be the sheet over $U$ containing $\widetilde x$.
 Thus
 $$
-p|_V:V\xrightarrow{\cong}U.
+p\restrict_V:V\xrightarrow{\cong}U.
 $$
 
 By continuity of
@@ -197,7 +197,7 @@ p(\widetilde f_2(y)).
 $$
 Both points lie in the same sheet $V$, and
 $$
-p|_V
+p\restrict_V
 $$
 is injective.
 Therefore
@@ -260,7 +260,7 @@ V_2
 $$
 over $U$, because each restriction
 $$
-p|_{V_j}:V_j\to U
+p\restrict_{V_j}:V_j\to U
 $$
 is injective.
 

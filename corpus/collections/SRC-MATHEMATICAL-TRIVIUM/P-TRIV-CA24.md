@@ -34,7 +34,7 @@ Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_
 
 Use the branch
 $$
-\Log z=\log|z|+i\arg z,
+\Log z=\log\abs{z}+i\arg z,
 \qquad
 0<\arg z<2\pi,
 $$
@@ -135,7 +135,7 @@ $$
 $$
 and the inner circular arc tends to zero because
 $$
-\varepsilon(|\log\varepsilon|+2\pi)^3
+\varepsilon(\abs{\log\varepsilon}+2\pi)^3
 \longrightarrow0.
 $$
 

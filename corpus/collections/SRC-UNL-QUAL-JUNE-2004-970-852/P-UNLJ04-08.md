@@ -208,19 +208,19 @@ Likewise,
 $$
 \sum_v s(v)
 =
-2|E_{\mathrm{same}}|.
+2\cardinality{E_{\mathrm{same}}}.
 $$
 Therefore
 $$
 e(X,Y)
 \ge
-|E_{\mathrm{same}}|.
+\cardinality{E_{\mathrm{same}}}.
 $$
 Since
 $$
 e(G)
 =
-e(X,Y)+|E_{\mathrm{same}}|,
+e(X,Y)+\cardinality{E_{\mathrm{same}}},
 $$
 we get
 $$

@@ -150,7 +150,7 @@ $$
 $$
 is continuous and takes values in $I$, so
 $$
-H|_A
+H\restrict_A
 =
 f\circ
 \bigl(
@@ -165,7 +165,7 @@ $$
 \longmapsto
 2(1-t)(1-s)
 $$
-is continuous and takes values in $I$, so $H|_B$ is continuous.
+is continuous and takes values in $I$, so $H\restrict_B$ is continuous.
 
 By step [](#s1-2){.pf-ref}, these two continuous maps agree on
 $$

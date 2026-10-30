@@ -94,7 +94,7 @@ $$
 As $x\to0$,
 $$
 0\leq
-e^{-x^{-4}-x^4}|\sin^5x|
+e^{-x^{-4}-x^4}\abs{\sin^5x}
 \leq
 e^{-x^{-4}}.
 $$
@@ -116,9 +116,9 @@ The improper integral is absolutely convergent.
 ::: pf-proof
 
 Near $0$, step [](#s1-4){.pf-ref} gives boundedness of the continuous extension.
-For $|x|\geq1$,
+For $\abs{x}\geq1$,
 $$
-|F(x)|
+\abs{F(x)}
 \leq
 e^{-x^4},
 $$

@@ -74,7 +74,7 @@ and therefore they are simple poles of $\tan z$.
 
 The nearest poles to the origin are at $\pm\pi/2$. Hence $\tan z$ is holomorphic on
 $$
-|z|<\frac\pi2,
+\abs{z}<\frac\pi2,
 $$
 so its Taylor series at $0$ has radius at least $\pi/2$. It cannot have larger radius, because a larger Taylor disk would give a holomorphic continuation across $z=\pi/2$, where $\tan z$ has a genuine pole. Thus the radius of convergence is
 $$

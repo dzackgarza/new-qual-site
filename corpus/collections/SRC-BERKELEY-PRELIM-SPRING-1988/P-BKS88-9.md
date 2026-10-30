@@ -32,7 +32,7 @@ converge.
 ::: {.pf-step #tail-bound}
 For $0<A<B$,
 $$
-\left|\int_A^B e^{ix^2}\,dx\right|
+\abs{\int_A^B e^{ix^2}\,dx}
 \leq \frac1A+\frac1{2B}.
 $$
 
@@ -47,9 +47,9 @@ $$
 =\left[\frac{e^{ix^2}}{2ix}\right]_A^B
 +\frac1{2i}\int_A^B\frac{e^{ix^2}}{x^2}\,dx.
 $$
-Taking absolute values and using $|e^{ix^2}|=1$ yields
+Taking absolute values and using $\abs{e^{ix^2}}=1$ yields
 $$
-\left|\int_A^B e^{ix^2}\,dx\right|
+\abs{\int_A^B e^{ix^2}\,dx}
 \leq \frac1{2A}+\frac1{2B}
 +\frac12\int_A^B\frac{dx}{x^2}
 \leq \frac1A+\frac1{2B}.
@@ -64,7 +64,7 @@ The improper integral $\int_0^\infty e^{ix^2}\,dx$ converges.
 ::: pf-proof
 The integral over every finite interval exists because $e^{ix^2}$ is continuous. By [](#tail-bound){.pf-ref}, for $B>A>0$,
 $$
-\left|\int_A^B e^{ix^2}\,dx\right|
+\abs{\int_A^B e^{ix^2}\,dx}
 \leq \frac1A+\frac1{2B}
 \leq \frac{3}{2A}.
 $$

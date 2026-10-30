@@ -14,12 +14,12 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(z)$ be an analytic function on $|z|<1$.
+Let $f(z)$ be an analytic function on $\abs{z}<1$.
 Prove that $f(z)$ is necessarily a constant if $f(\bar{z})$ is also analytic.
 :::
 
 ::: {.solution}
-Let $\tilde f(z) \definedas f(\bar z)$.
+Let $\tilde f(z) \coloneqq f(\bar z)$.
 Using that $f$ is analytic iff its components solve Cauchy-Riemann, using that $f, \tilde f$ are analytic,
 $$
 u_x = v_y && u_y = -v_x \\

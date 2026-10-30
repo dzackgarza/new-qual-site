@@ -33,9 +33,9 @@ Fix $z\in Z$. Since $r:Y\to Z$ is a covering map, choose an evenly covered neigh
 $$
 r^{-1}(U)=\bigsqcup_{i=1}^m V_i,
 $$
-where $m=|r^{-1}(z)|<\infty$ and each $r|_{V_i}:V_i\to U$ is a homeomorphism.
+where $m=\cardinality{r^{-1}(z)}<\infty$ and each $r\restrict_{V_i}:V_i\to U$ is a homeomorphism.
 
-Let $y_i\in V_i$ be the unique point over $z$. Since $q:X\to Y$ is a covering map, for each $i$ choose an evenly covered neighborhood $W_i\subset V_i$ of $y_i$. Because $r|_{V_i}$ is a homeomorphism, $r(W_i)$ is an open neighborhood of $z$ in $U$. Set
+Let $y_i\in V_i$ be the unique point over $z$. Since $q:X\to Y$ is a covering map, for each $i$ choose an evenly covered neighborhood $W_i\subset V_i$ of $y_i$. Because $r\restrict_{V_i}$ is a homeomorphism, $r(W_i)$ is an open neighborhood of $z$ in $U$. Set
 $$
 U'=\bigcap_{i=1}^m r(W_i).
 $$
@@ -43,7 +43,7 @@ This is open because the intersection is finite. Replace each $W_i$ by
 $$
 W_i'=W_i\cap r^{-1}(U').
 $$
-Then $q^{-1}(W_i')$ is a disjoint union of open slices, each mapped homeomorphically by $q$ onto $W_i'$; composing with $r|_{W_i'}$ maps each such slice homeomorphically onto $U'$.
+Then $q^{-1}(W_i')$ is a disjoint union of open slices, each mapped homeomorphically by $q$ onto $W_i'$; composing with $r\restrict_{W_i'}$ maps each such slice homeomorphically onto $U'$.
 
 Moreover
 $$

@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Suppose that $f(z)$ is an entire function satisfying $f(z) = f(z + 1)$ for all $z$.
-If there exists a real number $c$, with $c \neq 2\pi k$, $k \in \ZZ$, such that $|f(z)| \leq e^{c\,\operatorname{Im} z}$ for all $z \in \CC$, prove that $f \equiv 0$.
+If there exists a real number $c$, with $c \neq 2\pi k$, $k \in \ZZ$, such that $\abs{f(z)} \leq e^{c\,\operatorname{Im} z}$ for all $z \in \CC$, prove that $f \equiv 0$.
 
 Hint: Prove it first for the case $G = B(0; 1)$.
 :::
@@ -39,7 +39,7 @@ $$
 
 Let $z=x+iy$. The growth hypothesis gives
 $$
-|f(x+iy)|\le e^{cy}.
+\abs{f(x+iy)}\le e^{cy}.
 $$
 For every integer $n$, Fourier inversion on one period gives
 $$
@@ -48,7 +48,7 @@ a_n e^{-2\pi n y}
 $$
 so
 $$
-|a_n|\le e^{(c+2\pi n)y}
+\abs{a_n}\le e^{(c+2\pi n)y}
 \qquad (y\in\RR).
 $$
 If $c+2\pi n>0$, let $y\to-\infty$; if $c+2\pi n<0$, let

@@ -29,7 +29,7 @@ audit:
 Let $(X, \mathcal{M}, \mu)$ be a measure space.
 Assume that $f : X \to \RR$ and $f_n : X \to \RR$ ($n = 1, 2, \ldots$) are all $\mu$-measurable and that $f_n \to f$ in measure.
 Let $p$ be a real number such that $1 \leq p < \infty$.
-Assume there exists $g \in L^p(\mu)$ such that $|f_n| \leq g$ on $X$ for all $n \geq 1$.
+Assume there exists $g \in L^p(\mu)$ such that $\abs{f_n} \leq g$ on $X$ for all $n \geq 1$.
 Prove that all $f$ and $f_n$ ($n = 1, 2, \ldots$) are in $L^p(\mu)$ and that $f_n \to f$ in the $L^p(\mu)$-norm.
 :::
 
@@ -43,19 +43,19 @@ Each $f_n$ belongs to $L^p$, and $f$ is dominated by $g$ almost everywhere.
 
 ::: pf-proof
 
-Since $|f_n|\le g$ and $g\in L^p$,
+Since $\abs{f_n}\le g$ and $g\in L^p$,
 $$
-\|f_n\|_p^p\le\|g\|_p^p<\infty,
+\norm{f_n}_p^p\le\norm{g}_p^p<\infty,
 $$
 so every $f_n\in L^p$.
 
 Because $f_n\to f$ in measure, there exists a subsequence $(f_{n_k})$ converging to $f$ almost everywhere. Passing to the pointwise limit in
 $$
-|f_{n_k}|\le g
+\abs{f_{n_k}}\le g
 $$
 gives
 $$
-|f|\le g
+\abs{f}\le g
 $$
 almost everywhere. Hence $f\in L^p$ as well.
 
@@ -77,14 +77,14 @@ for almost every $x$.
 
 Moreover,
 $$
-|f_{n_{k_j}}-f|^p
-\le (|f_{n_{k_j}}|+|f|)^p
+\abs{f_{n_{k_j}}-f}^p
+\le (\abs{f_{n_{k_j}}}+\abs{f})^p
 \le (2g)^p,
 $$
 and $(2g)^p\in L^1$. Dominated convergence therefore gives
 $$
-\|f_{n_{k_j}}-f\|_p^p
-=\int_X|f_{n_{k_j}}-f|^p\,d\mu
+\norm{f_{n_{k_j}}-f}_p^p
+=\int_X\abs{f_{n_{k_j}}-f}^p\,d\mu
 \longrightarrow0.
 $$
 Thus every subsequence has a further subsequence converging to $f$ in $L^p$.
@@ -101,17 +101,17 @@ Conclude convergence of the full sequence.
 
 Suppose, toward a contradiction, that
 $$
-\|f_n-f\|_p\not\to0.
+\norm{f_n-f}_p\not\to0.
 $$
 Then there are $\varepsilon>0$ and a subsequence $(f_{n_k})$ such that
 $$
-\|f_{n_k}-f\|_p\ge\varepsilon
+\norm{f_{n_k}-f}_p\ge\varepsilon
 $$
 for every $k$. By Step 2, this subsequence has a further subsequence converging to $f$ in $L^p$, contradicting the uniform lower bound $\varepsilon$.
 
 Hence
 $$
-\boxed{\|f_n-f\|_p\to0.}
+\boxed{\norm{f_n-f}_p\to0.}
 $$
 
 :::

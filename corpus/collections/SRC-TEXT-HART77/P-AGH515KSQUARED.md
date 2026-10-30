@@ -62,7 +62,7 @@ $$
 
 Hypersurface adjunction gives
 $$
-K_X=(K_{\PP^3}+X)|_X=(-4H+dH)|_X=(d-4)H.
+K_X=(K_{\PP^3}+X)\restrict_X=(-4H+dH)\restrict_X=(d-4)H.
 $$
 The number $H^2$ is the intersection of $X$ with two general hyperplanes in
 $\PP^3$, hence equals the degree of $X$, namely $d$.

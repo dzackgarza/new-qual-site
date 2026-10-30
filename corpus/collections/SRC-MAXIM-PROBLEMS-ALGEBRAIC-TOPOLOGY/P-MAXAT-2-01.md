@@ -71,7 +71,7 @@ Homotopy equivalence preserves the integral cohomology ring. For $\CP^2$,
 $$
 H^*(\CP^2;\ZZ)
 \cong\ZZ[u]/(u^3),
-\qquad |u|=2,
+\qquad \gradeddegree{u}=2,
 $$
 and $u^2\ne0$ in $H^4$. In $S^2\vee S^4$, the generator $v\in H^2$ comes from the $S^2$ summand and satisfies $v^2=0$, since $H^4(S^2)=0$ and positive-degree cup products between distinct wedge summands vanish. Thus the cohomology rings are not isomorphic.
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF21C
 kind: problem
-title: Square root and modulus; singular values; PSD characterization; similarity of $|A|$ and $|A^H|$
+title: Square root and modulus; singular values; PSD characterization; similarity of $\operatorabs{A}$ and $\operatorabs{A^H}$
 classification:
   areas:
   - applied-algebra
@@ -23,10 +23,10 @@ audit:
 
 ::: {.problem}
 (a) Define $A^{1/2}$ for a positive semidefinite matrix $A \in M_n(\CC)$.
-(b) Define $|A|$ for any matrix $A \in M_{m,n}(\CC)$.
-(c) Prove that the eigenvalues of $|A|$ are the singular values of $A$.
-(d) Prove that a square matrix $A \in M_n(\CC)$ is positive semidefinite if and only if $|A| = A$.
-(e) Prove that $|A|$ and $|A^H|$ have the same non-zero eigenvalues and are similar up to embedding/direct sum with zero blocks.
+(b) Define $\operatorabs{A}$ for any matrix $A \in M_{m,n}(\CC)$.
+(c) Prove that the eigenvalues of $\operatorabs{A}$ are the singular values of $A$.
+(d) Prove that a square matrix $A \in M_n(\CC)$ is positive semidefinite if and only if $\operatorabs{A} = A$.
+(e) Prove that $\operatorabs{A}$ and $\operatorabs{A^H}$ have the same non-zero eigenvalues and are similar up to embedding/direct sum with zero blocks.
 :::
 
 ::: {.solution}
@@ -54,13 +54,13 @@ Then $A^{1/2}$ is positive semidefinite and $(A^{1/2})^2=A$. Uniqueness follows 
 ::: pf-step
 For $A\in M_{m,n}(\CC)$, define
 $$
-|A|=(A^HA)^{1/2}\in M_n(\CC).
+\operatorabs{A}=(A^HA)^{1/2}\in M_n(\CC).
 $$
 
 ::: pf-proof
 The matrix $A^HA$ is Hermitian positive semidefinite because
 $$
-x^HA^HAx=\|Ax\|^2\ge0.
+x^HA^HAx=\norm{Ax}^2\ge0.
 $$
 Hence step [](#psd-square-root-definition){.pf-ref} applies.
 :::
@@ -68,10 +68,10 @@ Hence step [](#psd-square-root-definition){.pf-ref} applies.
 :::
 
 ::: pf-step
-The eigenvalues of $|A|$ are exactly the singular values of $A$, with multiplicity.
+The eigenvalues of $\operatorabs{A}$ are exactly the singular values of $A$, with multiplicity.
 
 ::: pf-proof
-If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition the singular values are $\sqrt{\mu_i}$. Spectral calculus in step [](#psd-square-root-definition){.pf-ref} shows that these are precisely the eigenvalues of $(A^HA)^{1/2}=|A|$.
+If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition the singular values are $\sqrt{\mu_i}$. Spectral calculus in step [](#psd-square-root-definition){.pf-ref} shows that these are precisely the eigenvalues of $(A^HA)^{1/2}=\operatorabs{A}$.
 :::
 
 :::
@@ -79,15 +79,15 @@ If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition th
 ::: pf-step
 For square $A$, one has
 $$
-A\ge0\iff |A|=A.
+A\ge0\iff \operatorabs{A}=A.
 $$
 
 ::: pf-proof
 If $A\ge0$, then $A=A^H$ and $A^HA=A^2$. Since $A$ itself is the positive semidefinite square root of $A^2$, uniqueness gives
 $$
-|A|=(A^2)^{1/2}=A.
+\operatorabs{A}=(A^2)^{1/2}=A.
 $$
-Conversely, $|A|$ is positive semidefinite by definition, so if $A=|A|$, then $A\ge0$.
+Conversely, $\operatorabs{A}$ is positive semidefinite by definition, so if $A=\operatorabs{A}$, then $A\ge0$.
 :::
 
 :::
@@ -99,11 +99,11 @@ A=U\Sigma V^H
 $$
 be an SVD, with positive singular values $\sigma_1,\ldots,\sigma_r$. Then
 $$
-|A|=V\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{n-r})V^H
+\operatorabs{A}=V\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{n-r})V^H
 $$
 and
 $$
-|A^H|=U\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{m-r})U^H.
+\operatorabs{A^H}=U\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{m-r})U^H.
 $$
 
 ::: pf-proof
@@ -119,7 +119,7 @@ The matrices $\Sigma^H\Sigma$ and $\Sigma\Sigma^H$ are diagonal, with diagonal e
 :::
 
 ::: pf-step
-Therefore $|A|$ and $|A^H|$ have the same nonzero eigenvalues with the same multiplicities, and they are unitarily similar after adjoining zero blocks to equalize sizes.
+Therefore $\operatorabs{A}$ and $\operatorabs{A^H}$ have the same nonzero eigenvalues with the same multiplicities, and they are unitarily similar after adjoining zero blocks to equalize sizes.
 
 ::: pf-proof
 The formulas in step [](#modulus-formulas-from-svd){.pf-ref} show that both nonzero spectra are exactly
@@ -128,7 +128,7 @@ $$
 $$
 If $m\ge n$, then
 $$
-|A^H|\sim_u |A|\oplus 0_{m-n},
+\operatorabs{A^H}\sim_u \operatorabs{A}\oplus 0_{m-n},
 $$
 because both are unitarily similar to
 $$
@@ -136,7 +136,7 @@ $$
 $$
 If $n\ge m$, similarly
 $$
-|A|\sim_u |A^H|\oplus0_{n-m}.
+\operatorabs{A}\sim_u \operatorabs{A^H}\oplus0_{n-m}.
 $$
 In particular, when $m=n$, the two matrices are unitarily similar without adding any zero block.
 :::

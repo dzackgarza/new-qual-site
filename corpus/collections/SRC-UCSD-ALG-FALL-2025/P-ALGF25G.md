@@ -191,7 +191,7 @@ $$
 Part (c) identifies the Galois group with $\langle\ell+n\ZZ\rangle$, so the element $\ell+n\ZZ$ would have order $\varphi(n)$.
 Since
 $$
-\bigl|(\ZZ/n\ZZ)^\times\bigr|=\varphi(n),
+\cardinality{(\ZZ/n\ZZ)^\times}=\varphi(n),
 $$
 this would make $(\ZZ/n\ZZ)^\times$ cyclic, contradicting the preceding paragraph.
 Therefore $\Phi_n$ is reducible whenever $\ell\nmid n$.

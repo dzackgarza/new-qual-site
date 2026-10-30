@@ -103,7 +103,7 @@ For Chebyshev's equation, one may take
 $$
 \boxed{f(x)=\frac1{\sqrt{1-x^2}}}
 $$
-on $|x|<1$.
+on $\abs{x}<1$.
 
 
 ::: pf-proof

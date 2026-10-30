@@ -65,7 +65,7 @@ such that each subpath
 $$
 \gamma_i
 \coloneqq
-\gamma|_{[t_{i-1},t_i]}
+\gamma\restrict_{[t_{i-1},t_i]}
 $$
 lies entirely in $U$ or entirely in $V$.
 

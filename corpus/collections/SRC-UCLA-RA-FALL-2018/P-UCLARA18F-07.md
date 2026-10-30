@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-07
 kind: problem
-title: Entire functions with integrable $\log|f|$ are constant
+title: Entire functions with integrable $\log\abs{f}$ are constant
 classification:
   areas:
   - real-analysis
@@ -19,18 +19,18 @@ audit:
 ::: {.problem}
 Problem 7. Let $f(z)$ be an analytic function on the entire complex plane $\CC$ such that
 $$
-U(z)=\log|f(z)|
+U(z)=\log\abs{f(z)}
 $$
 is Lebesgue-area integrable:
 $$
-\int_{\CC}|U(z)|\,dx\,dy<\infty.
+\int_{\CC}\abs{U(z)}\,dx\,dy<\infty.
 $$
 Prove that $f$ is constant.
 :::
 
 ::: {.solution}
 
-Put $u(z)=\log|f(z)|$.
+Put $u(z)=\log\abs{f(z)}$.
 
 ::: pf
 
@@ -44,7 +44,7 @@ $$
 
 ::: pf-proof
 
-If $|f(z)|\le e$ for every $z\in\CC$, then Liouville's theorem would make $f$ constant. Hence a nonconstant entire $f$ has some $z_0$ with $|f(z_0)|>e$, which is equivalent to the displayed inequality.
+If $\abs{f(z)}\le e$ for every $z\in\CC$, then Liouville's theorem would make $f$ constant. Hence a nonconstant entire $f$ has some $z_0$ with $\abs{f(z_0)}>e$, which is equivalent to the displayed inequality.
 
 :::
 
@@ -60,7 +60,7 @@ $$
 
 ::: pf-proof
 
-For an entire function, $\log|f|$ is subharmonic, with the value $-\infty$ allowed at zeros. Its submean inequality at $z_0$ gives
+For an entire function, $\log\abs{f}$ is subharmonic, with the value $-\infty$ allowed at zeros. Its submean inequality at $z_0$ gives
 $$
 u(z_0)
 \le\frac1{2\pi}\int_0^{2\pi}u(z_0+re^{i\theta})\,d\theta.
@@ -75,7 +75,7 @@ Step [](#s1-1){.pf-ref} now yields the asserted strict lower bound.
 
 If $f$ were nonconstant, then
 $$
-\int_{\CC}|u(z)|\,dx\,dy=\infty.
+\int_{\CC}\abs{u(z)}\,dx\,dy=\infty.
 $$
 
 
@@ -83,16 +83,16 @@ $$
 
 By step [](#s1-2){.pf-ref} and the triangle inequality,
 $$
-\int_0^{2\pi}|u(z_0+re^{i\theta})|\,d\theta
+\int_0^{2\pi}\abs{u(z_0+re^{i\theta})}\,d\theta
 \ge
-\left|\int_0^{2\pi}u(z_0+re^{i\theta})\,d\theta\right|
+\abs{\int_0^{2\pi}u(z_0+re^{i\theta})\,d\theta}
 >2\pi
 $$
 for every $r>0$. Tonelli's theorem in polar coordinates centered at $z_0$ therefore gives
 $$
 \begin{aligned}
-\int_{\CC}|u(z)|\,dx\,dy
-&=\int_0^\infty\int_0^{2\pi}|u(z_0+re^{i\theta})|\,r\,d\theta\,dr\\
+\int_{\CC}\abs{u(z)}\,dx\,dy
+&=\int_0^\infty\int_0^{2\pi}\abs{u(z_0+re^{i\theta})}\,r\,d\theta\,dr\\
 &\ge2\pi\int_0^\infty r\,dr
 =\infty.
 \end{aligned}

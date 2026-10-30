@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-AAI47BSF
 kind: problem
-title: If $N\normal G$ and $(|H|,[G:N])=1$, then $H\leq N$
+title: If $N\normal G$ and $(\cardinality{H},[G:N])=1$, then $H\leq N$
 classification:
   areas:
   - algebra
@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Given: $|G| < \infty, \quad H \leq G, \quad N \normal G, (|H|, [G:N]) = 1$
+Given: $\cardinality{G} < \infty, \quad H \leq G, \quad N \normal G, (\cardinality{H}, [G:N]) = 1$
 
 Show: $H \leq N$
 :::
@@ -47,17 +47,17 @@ be the quotient homomorphism, and restrict it to $H$.
 
 ::: {.pf-step #s1}
 
-The integer $|\pi(H)|$ divides $|H|$.
+The integer $\cardinality{\pi(H)}$ divides $\cardinality{H}$.
 
 ::: pf-proof
 
 The restriction
 $$
-\pi|_H:H\longrightarrow G/N
+\pi\restrict_H:H\longrightarrow G/N
 $$
 has kernel
 $$
-\ker(\pi|_H)=H\cap N.
+\ker(\pi\restrict_H)=H\cap N.
 $$
 By the first isomorphism theorem,
 $$
@@ -65,9 +65,9 @@ $$
 $$
 Since $H$ is finite,
 $$
-|\pi(H)|=[H:H\cap N],
+\cardinality{\pi(H)}=[H:H\cap N],
 $$
-which divides $|H|$ by Lagrange's theorem.
+which divides $\cardinality{H}$ by Lagrange's theorem.
 
 :::
 
@@ -75,14 +75,14 @@ which divides $|H|$ by Lagrange's theorem.
 
 ::: {.pf-step #s2}
 
-The integer $|\pi(H)|$ divides $[G:N]$.
+The integer $\cardinality{\pi(H)}$ divides $[G:N]$.
 
 ::: pf-proof
 
 The image $\pi(H)$ is a subgroup of the finite quotient group $G/N$.
 Therefore Lagrange's theorem gives
 $$
-|\pi(H)|\mid|G/N|=[G:N].
+\cardinality{\pi(H)}\mid\cardinality{G/N}=[G:N].
 $$
 
 :::
@@ -95,14 +95,14 @@ The image $\pi(H)$ is trivial.
 
 ::: pf-proof
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\pi(H)|$ divides both $|H|$ and $[G:N]$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\cardinality{\pi(H)}$ divides both $\cardinality{H}$ and $[G:N]$.
 The hypothesis says
 $$
-\gcd(|H|,[G:N])=1.
+\gcd(\cardinality{H},[G:N])=1.
 $$
 Hence
 $$
-|\pi(H)|=1.
+\cardinality{\pi(H)}=1.
 $$
 Thus
 $$

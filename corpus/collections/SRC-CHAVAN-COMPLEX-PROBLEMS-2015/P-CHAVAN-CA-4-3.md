@@ -48,15 +48,15 @@ There is an open disk $D$ centered at $z_2$ whose closure is contained in $\Omeg
 
 Since $\Omega$ is open, choose $\varepsilon>0$ such that
 $$
-\{z:|z-z_2|<\varepsilon\}\subseteq\Omega.
+\{z:\abs{z-z_2}<\varepsilon\}\subseteq\Omega.
 $$
 Since $z_1\ne z_2$, choose
 $$
-0<r<\min\{\varepsilon/2,|z_2-z_1|\}.
+0<r<\min\{\varepsilon/2,\abs{z_2-z_1}\}.
 $$
 Then
 $$
-D=\{z:|z-z_2|<r\}
+D=\{z:\abs{z-z_2}<r\}
 $$
 has the required properties.
 
@@ -98,10 +98,10 @@ $$
 
 For every compact $K\subset D$,
 $$
-\sup_{z\in K}|g_n(z)-g(z)|
+\sup_{z\in K}\abs{g_n(z)-g(z)}
 \le
-\sup_{z\in K}|f_n(z)-f(z)|
-+|f_n(z_1)-f(z_1)|.
+\sup_{z\in K}\abs{f_n(z)-f(z)}
++\abs{f_n(z_1)-f(z_1)}.
 $$
 The first term tends to $0$ by compact convergence on $K$, and the
 second tends to $0$ by pointwise convergence at $z_1$.

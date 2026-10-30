@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-For a surface $F$ in a $3$-manifold with a plane field $\xi = \ker(\alpha)$, the characteristic foliation $\mathcal{F}$ of $F$ is cut out by a vector field $v$ with $\iota_v \omega = \alpha|_F$ for a positive area form $\omega$ on $F$, where $\operatorname{div}_\omega v$ is defined by $\mathcal{L}_v \omega = (\operatorname{div}_\omega v)\,\omega$, and $\operatorname{sign}(\xi) = \operatorname{sign}(\alpha \wedge d\alpha)$.
+For a surface $F$ in a $3$-manifold with a plane field $\xi = \ker(\alpha)$, the characteristic foliation $\mathcal{F}$ of $F$ is cut out by a vector field $v$ with $\iota_v \omega = \alpha\restrict_F$ for a positive area form $\omega$ on $F$, where $\operatorname{div}_\omega v$ is defined by $\mathcal{L}_v \omega = (\operatorname{div}_\omega v)\,\omega$, and $\operatorname{sign}(\xi) = \operatorname{sign}(\alpha \wedge d\alpha)$.
 
 Let $M = \RR^3$ and let $\alpha = dz + b y\,dx + a x\,dy$ for real numbers $a \neq b$.
 Determine $\operatorname{sign}(\xi)$ and $\operatorname{div}_\omega v$ for $\mathcal{F}$ on the $x$-$y$ plane.
-Check that on each open quadrant the characteristic foliation is given by $|x|^b |y|^a = c$.
+Check that on each open quadrant the characteristic foliation is given by $\abs{x}^b \abs{y}^a = c$.
 Draw a picture and observe how these vary with $a$ and $b$.
 How is $\operatorname{sign}(\operatorname{div}_\omega \mathcal{F})$ visible?
 :::
@@ -56,14 +56,14 @@ $$
 =
 dz+b y\,dx+a x\,dy
 $$
-on the $xy$-plane are the curves $|x|^b|y|^a=c$.
+on the $xy$-plane are the curves $\abs{x}^b\abs{y}^a=c$.
 
 
 ::: pf-proof
 
 Restricting to the $xy$-plane gives
 $$
-\alpha|_F
+\alpha\restrict_F
 =
 b y\,dx+a x\,dy.
 $$
@@ -71,7 +71,7 @@ The level curves of
 $$
 \Phi(x,y)
 =
-|x|^b |y|^a
+\abs{x}^b \abs{y}^a
 $$
 on an open quadrant, where $\Phi$ is smooth and positive, satisfy
 $$
@@ -85,7 +85,7 @@ Multiplying by $xy$ gives the proportional $1$-form
 $$
 b y\,dx+a x\,dy.
 $$
-Thus its kernel is exactly tangent to the level curves $|x|^b|y|^a=c$, and these are the leaves.
+Thus its kernel is exactly tangent to the level curves $\abs{x}^b\abs{y}^a=c$, and these are the leaves.
 
 :::
 

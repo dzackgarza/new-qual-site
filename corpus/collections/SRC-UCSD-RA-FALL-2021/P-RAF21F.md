@@ -78,7 +78,7 @@ Since each $c_j$ is finite and $\sum_{j:\,x_j\in B(x,1/m)}c_j=\infty$ by step []
 
 ::: pf-qed
 
-Listing the indices of $I_1,I_2,\ldots$ in increasing order gives a subsequence $\{x_{j_k}\}$ that converges to $x$, because every index in $I_m$ has $|x_j-x|<1/m$.
+Listing the indices of $I_1,I_2,\ldots$ in increasing order gives a subsequence $\{x_{j_k}\}$ that converges to $x$, because every index in $I_m$ has $\norm{x_j-x}<1/m$.
 Its weights satisfy
 $$
 \sum_{k=1}^\infty c_{j_k}=\sum_{m=1}^\infty\sum_{j\in I_m}c_j=\infty,

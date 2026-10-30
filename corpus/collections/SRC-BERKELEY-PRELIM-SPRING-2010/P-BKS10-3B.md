@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 How many complex numbers $z$ satisfy
 $$
-|z|<2,\qquad \operatorname{Im}(z)>0,\qquad z^7+e^z=0?
+\abs{z}<2,\qquad \operatorname{Im}(z)>0,\qquad z^7+e^z=0?
 $$
 :::
 

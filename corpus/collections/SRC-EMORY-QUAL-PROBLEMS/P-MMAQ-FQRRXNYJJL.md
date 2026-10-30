@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FQRRXNYJJL
 kind: problem
-title: An entire function with $|f(z)|\leq A|z|^2$ is a polynomial of degree at most
-  $2$
+title: An entire function with $\abs{f(z)}\leq A\abs{z}^2$ is a polynomial of degree at most $2$
 classification:
   areas:
   - complex-analysis
@@ -22,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be an entire function and suppose that $|f(z)| \leq A|z|^2$ for all $z$ and some constant $A$.
+Let $f$ be an entire function and suppose that $\abs{f(z)} \leq A\abs{z}^2$ for all $z$ and some constant $A$.
 Show that $f$ is a polynomial of degree $\leq 2$.
 :::
 
@@ -53,7 +52,7 @@ The Taylor series of a holomorphic function at $0$ converges to it on every open
 
 ::: {.pf-step #s1-2}
 
-For any $R > 0$ and any $n \geq 0$, Cauchy's coefficient formula gives: $$c_n = \frac{1}{2\pi i} \oint_{|z|=R} \frac{f(z)}{z^{n+1}} \, dz.$$
+For any $R > 0$ and any $n \geq 0$, Cauchy's coefficient formula gives: $$c_n = \frac{1}{2\pi i} \oint_{\abs{z}=R} \frac{f(z)}{z^{n+1}} \, dz.$$
 
 ::: pf-proof
 
@@ -75,11 +74,11 @@ Cauchy integral formula for derivatives.
 
 ::: {.pf-step #s2-1}
 
-By the $ML$-inequality on the circle $|z| = R$: $$|c_n| \leq \frac{1}{2\pi} \cdot \left( \sup_{|z|=R} \frac{|f(z)|}{|z|^{n+1}} \right) \cdot (2\pi R) = \frac{\sup_{|z|=R} |f(z)|}{R^n}.$$
+By the $ML$-inequality on the circle $\abs{z} = R$: $$\abs{c_n} \leq \frac{1}{2\pi} \cdot \left( \sup_{\abs{z}=R} \frac{\abs{f(z)}}{\abs{z}^{n+1}} \right) \cdot (2\pi R) = \frac{\sup_{\abs{z}=R} \abs{f(z)}}{R^n}.$$
 
 ::: pf-proof
 
-On $|z|=R$ the integrand of step [](#s1-2){.pf-ref} has modulus at most $\sup_{|z|=R}|f(z)|/R^{n+1}$, and the circle has length $2\pi R$.
+On $\abs{z}=R$ the integrand of step [](#s1-2){.pf-ref} has modulus at most $\sup_{\abs{z}=R}\abs{f(z)}/R^{n+1}$, and the circle has length $2\pi R$.
 
 :::
 
@@ -87,11 +86,11 @@ On $|z|=R$ the integrand of step [](#s1-2){.pf-ref} has modulus at most $\sup_{|
 
 ::: {.pf-step #s2-2}
 
-By the growth hypothesis, on $|z| = R$, $|f(z)| \leq A R^2$.
+By the growth hypothesis, on $\abs{z} = R$, $\abs{f(z)} \leq A R^2$.
 
 ::: pf-proof
 
-Given assumption $|f(z)| \leq A|z|^2$.
+Given assumption $\abs{f(z)} \leq A\abs{z}^2$.
 
 :::
 
@@ -99,7 +98,7 @@ Given assumption $|f(z)| \leq A|z|^2$.
 
 ::: {.pf-step #s2-3}
 
-Substituting step [](#s2-2){.pf-ref} into step [](#s2-1){.pf-ref} yields the bound: $$|c_n| \leq \frac{A R^2}{R^n} = A R^{2-n} \quad \text{for all } R > 0.$$
+Substituting step [](#s2-2){.pf-ref} into step [](#s2-1){.pf-ref} yields the bound: $$\abs{c_n} \leq \frac{A R^2}{R^n} = A R^{2-n} \quad \text{for all } R > 0.$$
 
 ::: pf-proof
 
@@ -141,7 +140,7 @@ $n \geq 3 \implies 2 - n \leq -1$.
 
 ::: pf-step
 
-Since the bound $|c_n| \leq A R^{2-n}$ holds for all $R > 0$, taking the limit as $R \to \infty$: $$|c_n| \leq \lim_{R \to \infty} A R^{2-n} = 0.$$
+Since the bound $\abs{c_n} \leq A R^{2-n}$ holds for all $R > 0$, taking the limit as $R \to \infty$: $$\abs{c_n} \leq \lim_{R \to \infty} A R^{2-n} = 0.$$
 
 ::: pf-proof
 
@@ -153,7 +152,7 @@ $\lim_{R\to\infty} R^{-k} = 0$ for $k \geq 1$.
 
 ::: pf-step
 
-Therefore, $|c_n| = 0 \implies c_n = 0$ for all $n \geq 3$.
+Therefore, $\abs{c_n} = 0 \implies c_n = 0$ for all $n \geq 3$.
 
 ::: pf-proof
 
@@ -183,7 +182,7 @@ Absolute value is non-negative.
 
 ::: pf-step
 
-Evaluating the growth condition at $z = 0$: $|f(0)| \leq A |0|^2 = 0 \implies f(0) = 0$, so $c_0 = 0$.
+Evaluating the growth condition at $z = 0$: $\abs{f(0)} \leq A \abs{0}^2 = 0 \implies f(0) = 0$, so $c_0 = 0$.
 
 ::: pf-proof
 
@@ -195,7 +194,7 @@ Evaluation at $z=0$.
 
 ::: pf-step
 
-For $c_1$, apply the bound from step [](#s2-3){.pf-ref} with $n = 1$: $|c_1| \leq A R^{2-1} = A R$ for all $R > 0$.
+For $c_1$, apply the bound from step [](#s2-3){.pf-ref} with $n = 1$: $\abs{c_1} \leq A R^{2-1} = A R$ for all $R > 0$.
 
 ::: pf-proof
 
@@ -207,7 +206,7 @@ Setting $n=1$ in step [](#s2-3){.pf-ref}.
 
 ::: pf-step
 
-Taking the limit as $R \to 0^+$: $$|c_1| \leq \lim_{R \to 0^+} A R = 0 \implies c_1 = 0.$$
+Taking the limit as $R \to 0^+$: $$\abs{c_1} \leq \lim_{R \to 0^+} A R = 0 \implies c_1 = 0.$$
 
 ::: pf-proof
 
@@ -249,7 +248,7 @@ Combining $c_0 = c_1 = 0$ and $c_n = 0$ for $n \geq 3$.
 
 ::: pf-step
 
-Thus $f(z) = c_2 z^2$, which is a polynomial of degree $\leq 2$ (with $|c_2| \leq A$).
+Thus $f(z) = c_2 z^2$, which is a polynomial of degree $\leq 2$ (with $\abs{c_2} \leq A$).
 
 ::: pf-proof
 

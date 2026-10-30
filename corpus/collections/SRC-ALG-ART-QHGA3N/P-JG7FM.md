@@ -93,8 +93,8 @@ $$
 
 The Galois group has order $\varphi(n)$. By orbit-stabilizer and step [](#s2){.pf-ref},
 $$
-|\operatorname{Orb}(\alpha)|
-=\frac{|\operatorname{Gal}(K/\QQ)|}{|\operatorname{Stab}(\alpha)|}
+\cardinality{\operatorname{Orb}(\alpha)}
+=\frac{\cardinality{\operatorname{Gal}(K/\QQ)}}{\cardinality{\operatorname{Stab}(\alpha)}}
 =\frac{\varphi(n)}2.
 $$
 

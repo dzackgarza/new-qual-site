@@ -105,7 +105,7 @@ character theory of finite groups over $\CC$.
 :::
 
 ::: pf-step
-Since $G$ is finite, for each $\sigma \in G$, $\sigma^{|G|} = e$, so $\lambda(\sigma)^{|G|} = \lambda(e) = 1$.
+Since $G$ is finite, for each $\sigma \in G$, $\sigma^{\cardinality{G}} = e$, so $\lambda(\sigma)^{\cardinality{G}} = \lambda(e) = 1$.
 
 ::: pf-proof
 group homomorphism from a finite group.
@@ -114,7 +114,7 @@ group homomorphism from a finite group.
 :::
 
 ::: {.pf-step #p1-s2-3}
-Thus $\lambda(\sigma)$ is a root of unity in $\CC$, so $|\lambda(\sigma)| = 1$ and $|\lambda(\sigma)|^2 = \lambda(\sigma)\overline{\lambda(\sigma)} = 1$.
+Thus $\lambda(\sigma)$ is a root of unity in $\CC$, so $\abs{\lambda(\sigma)} = 1$ and $\abs{\lambda(\sigma)}^2 = \lambda(\sigma)\overline{\lambda(\sigma)} = 1$.
 
 ::: pf-proof
 roots of unity have absolute value $1$.
@@ -125,7 +125,7 @@ roots of unity have absolute value $1$.
 ::: {.pf-step #p1-s2-4}
 Compute the inner product:
 $$
-\langle \chi^*, \chi^* \rangle = \frac{1}{|G|} \sum_{\sigma \in G} \chi^*(\sigma)\overline{\chi^*(\sigma)} = \frac{1}{|G|} \sum_{\sigma \in G} \lambda(\sigma)\chi(\sigma)\overline{\lambda(\sigma)\chi(\sigma)} = \frac{1}{|G|} \sum_{\sigma \in G} |\lambda(\sigma)|^2 |\chi(\sigma)|^2.
+\langle \chi^*, \chi^* \rangle = \frac{1}{\cardinality{G}} \sum_{\sigma \in G} \chi^*(\sigma)\overline{\chi^*(\sigma)} = \frac{1}{\cardinality{G}} \sum_{\sigma \in G} \lambda(\sigma)\chi(\sigma)\overline{\lambda(\sigma)\chi(\sigma)} = \frac{1}{\cardinality{G}} \sum_{\sigma \in G} \abs{\lambda(\sigma)}^2 \abs{\chi(\sigma)}^2.
 $$
 
 ::: pf-proof
@@ -135,9 +135,9 @@ definition of the inner product of class functions.
 :::
 
 ::: {.pf-step #p1-s2-5}
-Substituting $|\lambda(\sigma)|^2 = 1$ gives:
+Substituting $\abs{\lambda(\sigma)}^2 = 1$ gives:
 $$
-\langle \chi^*, \chi^* \rangle = \frac{1}{|G|} \sum_{\sigma \in G} |\chi(\sigma)|^2 = \langle \chi, \chi \rangle.
+\langle \chi^*, \chi^* \rangle = \frac{1}{\cardinality{G}} \sum_{\sigma \in G} \abs{\chi(\sigma)}^2 = \langle \chi, \chi \rangle.
 $$
 
 ::: pf-proof

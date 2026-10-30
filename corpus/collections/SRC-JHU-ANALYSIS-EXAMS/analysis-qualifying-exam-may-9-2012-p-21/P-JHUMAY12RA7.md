@@ -55,7 +55,7 @@ for almost every $x$.
 
 For part (b),
 $$
-|h(x)|\le\int_x^{x+1}|f(t)|\,dt\le\int_x^\infty|f(t)|\,dt.
+\abs{h(x)}\le\int_x^{x+1}\abs{f(t)}\,dt\le\int_x^\infty\abs{f(t)}\,dt.
 $$
 Because $f\in L^1(\RR)$, the tail integral tends to zero as $x\to\infty$. Hence
 $$

@@ -94,20 +94,20 @@ where $X\to X\times_YX$ is the diagonal.  Separatedness makes that diagonal a cl
 :::
 
 ::: {.pf-step #dense-open-forces-equality}
-If $g$ and $h$ agree on a dense open subset $U\subseteq Z$, then the underlying closed subset $|E|$ is all of $|Z|$.
+If $g$ and $h$ agree on a dense open subset $U\subseteq Z$, then the underlying closed subset $\underlyingspace{E}$ is all of $\underlyingspace{Z}$.
 
 ::: pf-proof
 The equality
 $$
-g|_U=h|_U
+g\restrict_U=h\restrict_U
 $$
 means precisely that $U\to Z$ factors through the equalizer $E$.  Thus
 $$
-U\subseteq |E|.
+U\subseteq \underlyingspace{E}.
 $$
-By step [](#equalizer-closed-immersion){.pf-ref}, $|E|$ is closed in $|Z|$.  Since $U$ is dense,
+By step [](#equalizer-closed-immersion){.pf-ref}, $\underlyingspace{E}$ is closed in $\underlyingspace{Z}$.  Since $U$ is dense,
 $$
-|E|=|Z|.
+\underlyingspace{E}=\underlyingspace{Z}.
 $$
 :::
 
@@ -171,7 +171,7 @@ $$
 $$
 Thus
 $$
-g|_{D(x)}=h|_{D(x)}.
+g\restrict_{D(x)}=h\restrict_{D(x)}.
 $$
 The open $D(x)$ is dense because the underlying topological space of $Z$ is the same as that of
 $$
@@ -229,7 +229,7 @@ $$
 \boxed{
 f\text{ separated and }Z\text{ reduced}
 \quad\Longrightarrow\quad
-g|_U=h|_U\text{ on dense open }U
+g\restrict_U=h\restrict_U\text{ on dense open }U
 \Longrightarrow g=h,
 }
 $$

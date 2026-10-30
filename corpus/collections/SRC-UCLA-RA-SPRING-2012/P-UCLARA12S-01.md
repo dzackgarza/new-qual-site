@@ -52,7 +52,7 @@ for almost every $x\in[0,1]$.
 
 However,
 $$
-\|f_n\|_3^3
+\norm{f_n}_3^3
 =
 \int_0^{1/n}n^3\,dx
 =
@@ -60,7 +60,7 @@ n^2.
 $$
 Thus
 $$
-\|f_n\|_3=n^{2/3},
+\norm{f_n}_3=n^{2/3},
 $$
 which does not tend to $0$ along any subsequence. Hence no subsequence converges to the almost-everywhere limit $0$ in $L^3$.
 
@@ -81,17 +81,17 @@ f_n\longrightarrow f
 $$
 in $L^3([0,1])$. Choose inductively a subsequence $(f_{n_k})$ such that
 $$
-\|f_{n_k}-f\|_3^3<2^{-k}.
+\norm{f_{n_k}-f}_3^3<2^{-k}.
 $$
 Then Tonelli's theorem gives
 $$
 \begin{aligned}
 \int_0^1
 \sum_{k=1}^{\infty}
-|f_{n_k}(x)-f(x)|^3\,dx
+\abs{f_{n_k}(x)-f(x)}^3\,dx
 &=
 \sum_{k=1}^{\infty}
-\|f_{n_k}-f\|_3^3\\
+\norm{f_{n_k}-f}_3^3\\
 &<
 \sum_{k=1}^{\infty}2^{-k}
 <\infty.
@@ -100,7 +100,7 @@ $$
 Therefore
 $$
 \sum_{k=1}^{\infty}
-|f_{n_k}(x)-f(x)|^3
+\abs{f_{n_k}(x)-f(x)}^3
 <
 \infty
 $$
@@ -127,7 +127,7 @@ f_n=n\mathbf 1_{[0,1/n]}.
 $$
 For any $\varepsilon>0$ and all $n>\varepsilon$,
 $$
-\{x:|f_n(x)|>\varepsilon\}
+\{x:\abs{f_n(x)}>\varepsilon\}
 =
 [0,1/n],
 $$
@@ -139,7 +139,7 @@ in measure.
 
 But step [](#s1-1){.pf-ref} gives
 $$
-\|f_n\|_3=n^{2/3}\not\to0.
+\norm{f_n}_3=n^{2/3}\not\to0.
 $$
 Thus convergence in measure does not imply convergence in $L^3$.
 
@@ -156,25 +156,25 @@ Statement (d) is true.
 
 Assume
 $$
-\|f_n-f\|_3\longrightarrow0.
+\norm{f_n-f}_3\longrightarrow0.
 $$
 Fix $\varepsilon>0$. On the set
 $$
 E_{n,\varepsilon}
 \coloneqq
-\{x:|f_n(x)-f(x)|>\varepsilon\},
+\{x:\abs{f_n(x)-f(x)}>\varepsilon\},
 $$
 one has
 $$
-|f_n-f|^3>\varepsilon^3.
+\abs{f_n-f}^3>\varepsilon^3.
 $$
 Therefore
 $$
 \begin{aligned}
-\|f_n-f\|_3^3
+\norm{f_n-f}_3^3
 &\ge
 \int_{E_{n,\varepsilon}}
-|f_n-f|^3\,dx\\
+\abs{f_n-f}^3\,dx\\
 &\ge
 \varepsilon^3
 m(E_{n,\varepsilon}).
@@ -185,7 +185,7 @@ $$
 m(E_{n,\varepsilon})
 \le
 \varepsilon^{-3}
-\|f_n-f\|_3^3
+\norm{f_n-f}_3^3
 \longrightarrow0.
 $$
 This is convergence in measure.

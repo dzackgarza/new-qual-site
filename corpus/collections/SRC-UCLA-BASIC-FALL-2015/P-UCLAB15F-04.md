@@ -85,7 +85,7 @@ Thus the formula follows by induction.
 Fix $R>0$.
 For every integer $j\ge0$ and every $x\in[0,R]$,
 $$
-|K^jg(x)|
+\abs{K^jg(x)}
 \le
 \frac{x^j}{j!}
 \le
@@ -98,11 +98,11 @@ $$
 Proceed by induction on $j$.
 For $j=0$,
 $$
-|g(x)|=e^{-2x}\le1.
+\abs{g(x)}=e^{-2x}\le1.
 $$
 Assume
 $$
-|K^jg(t)|
+\abs{K^jg(t)}
 \le
 \frac{t^j}{j!}
 $$
@@ -110,11 +110,11 @@ for $0\le t\le R$.
 Then
 $$
 \begin{aligned}
-|K^{j+1}g(x)|
+\abs{K^{j+1}g(x)}
 &=
-\left|
+\abs{
 \int_0^x K^jg(t)e^{-2t}\,dt
-\right|\\
+}\\
 &\le
 \int_0^x\frac{t^j}{j!}\,dt\\
 &=
@@ -140,7 +140,7 @@ converges uniformly on every compact interval $[0,R]$.
 
 By step [](#s1-2){.pf-ref},
 $$
-|K^jg(x)|
+\abs{K^jg(x)}
 \le
 \frac{R^j}{j!}
 $$

@@ -66,7 +66,7 @@ $$
 $$
 and if $\det A$ is invertible, the adjugate gives the inverse:
 $$
-\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \definedas (-1)^{i+j} \det \minor_A(j, i).
+\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \coloneqq (-1)^{i+j} \det \minor_A(j, i).
 $$
 :::
 
@@ -107,7 +107,7 @@ The determinant, characteristic polynomial, and minimal polynomial are also simi
 
 ::: {.fact title="Powers of a triangular matrix"}
 $$
-A\definedas\left(\begin{array}{ccc}
+A\coloneqq\left(\begin{array}{ccc}
 a_1 & & * \\
 & \ddots & \\
 0 & & a_n

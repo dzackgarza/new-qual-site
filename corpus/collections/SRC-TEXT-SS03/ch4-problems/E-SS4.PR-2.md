@@ -40,10 +40,10 @@ $$
 Observe that $\hat { f }$ is an entire function, and using integration by parts show that
 
 $$
-| \hat {f} (x + i y) | \leq \frac {A}{1 + x ^ {2}}
+\abs{ \hat {f} (x + i y) } \leq \frac {A}{1 + x ^ {2}}
 $$
 
-if $| y | \le a$ for any fixed $a \geq 0$
+if $\abs{ y } \le a$ for any fixed $a \geq 0$
 
 (b) Write
 
@@ -94,24 +94,24 @@ $$
 \int_{-R}^{R}f''(t)e^{-2\pi izt}\,dt.
 \tag{1}
 $$
-If $z=x+iy$ and $|y|\le a$, then
+If $z=x+iy$ and $\abs{y}\le a$, then
 $$
-|e^{-2\pi izt}|=e^{2\pi yt}\le e^{2\pi aR}.
+\abs{e^{-2\pi izt}}=e^{2\pi yt}\le e^{2\pi aR}.
 $$
-Hence for $|x|\ge1$,
+Hence for $\abs{x}\ge1$,
 $$
-|\widehat f(x+iy)|
-\le \frac{e^{2\pi aR}\|f''\|_1}{4\pi^2|x+iy|^2}
+\abs{\widehat f(x+iy)}
+\le \frac{e^{2\pi aR}\norm{f''}_1}{4\pi^2\abs{x+iy}^2}
 \le \frac{C_a}{x^2}.
 $$
-For $|x|\le1$, the original integral gives the uniform bound
+For $\abs{x}\le1$, the original integral gives the uniform bound
 $$
-|\widehat f(x+iy)|\le e^{2\pi aR}\|f\|_1.
+\abs{\widehat f(x+iy)}\le e^{2\pi aR}\norm{f}_1.
 $$
 Combining the two estimates yields
 $$
-|\widehat f(x+iy)|\le \frac{A_a}{1+x^2}
-\qquad(|y|\le a).
+\abs{\widehat f(x+iy)}\le \frac{A_a}{1+x^2}
+\qquad(\abs{y}\le a).
 \tag{2}
 $$
 

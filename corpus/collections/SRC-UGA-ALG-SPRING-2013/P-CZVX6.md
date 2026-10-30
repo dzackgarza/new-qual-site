@@ -32,7 +32,7 @@ If $f$ is irreducible, then $V$ has no nonzero proper $T$-invariant subspace.
 
 ::: pf-proof
 
-If $0\neq W\subsetneq V$ were invariant, extend a basis of $W$ to a basis of $V$. The matrix of $T$ would be block upper triangular with diagonal blocks representing $T|_W$ and the induced operator on $V/W$. Its characteristic polynomial would therefore be the product of their characteristic polynomials, both of positive degree, contradicting irreducibility of $f$.
+If $0\neq W\subsetneq V$ were invariant, extend a basis of $W$ to a basis of $V$. The matrix of $T$ would be block upper triangular with diagonal blocks representing $T\restrict_W$ and the induced operator on $V/W$. Its characteristic polynomial would therefore be the product of their characteristic polynomials, both of positive degree, contradicting irreducibility of $f$.
 
 :::
 

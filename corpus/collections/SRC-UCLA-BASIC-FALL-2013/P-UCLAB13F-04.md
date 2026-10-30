@@ -49,13 +49,13 @@ $$
 
 By continuity of $f$ at $p$, choose $\delta>0$ such that
 $$
-|f(x,y)-f(p)|
+\abs{f(x,y)-f(p)}
 <
 \frac12f(p)
 $$
 whenever
 $$
-\|(x,y)-p\|<\delta.
+\norm{(x,y)-p}<\delta.
 $$
 Then on the open ball $B(p,\delta)$,
 $$

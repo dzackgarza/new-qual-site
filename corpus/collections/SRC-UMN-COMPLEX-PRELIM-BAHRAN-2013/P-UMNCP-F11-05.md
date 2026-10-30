@@ -24,7 +24,7 @@ f(z+1)=f(z)
 $$
 for every $z\in\CC$, and
 $$
-|f(z)|\le e^{|z|}
+\abs{f(z)}\le e^{\abs{z}}
 $$
 for every $z\in\CC$. Prove that $f$ is constant.
 :::
@@ -124,9 +124,9 @@ $$
 $$
 one has
 $$
-|f(x+iy)|
+\abs{f(x+iy)}
 \le
-e^{1+|y|}.
+e^{1+\abs{y}}.
 $$
 
 
@@ -134,19 +134,19 @@ $$
 
 By the triangle inequality,
 $$
-|x+iy|
+\abs{x+iy}
 \le
-|x|+|y|
+\abs{x}+\abs{y}
 \le
-1+|y|.
+1+\abs{y}.
 $$
 The assumed growth bound therefore gives
 $$
-|f(x+iy)|
+\abs{f(x+iy)}
 \le
-e^{|x+iy|}
+e^{\abs{x+iy}}
 \le
-e^{1+|y|}.
+e^{1+\abs{y}}.
 $$
 
 :::
@@ -178,13 +178,13 @@ $$
 steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
 \begin{aligned}
-|c_n|
+\abs{c_n}
 &\le
 \int_0^1
-|f(x+iy)|
-\left|
+\abs{f(x+iy)}
+\abs{
 e^{-2\pi in(x+iy)}
-\right|
+}
 dx\\
 &\le
 e^{1-y}
@@ -193,7 +193,7 @@ e^{2\pi ny}.
 $$
 Thus
 $$
-|c_n|
+\abs{c_n}
 \le
 e^{1+(2\pi n-1)y}.
 $$
@@ -235,7 +235,7 @@ $$
 steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
 \begin{aligned}
-|c_n|
+\abs{c_n}
 &\le
 e^{1+y}
 e^{2\pi ny}\\

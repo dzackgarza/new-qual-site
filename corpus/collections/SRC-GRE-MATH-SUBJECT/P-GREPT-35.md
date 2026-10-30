@@ -65,7 +65,7 @@ $100-10=90$.
 
 If $n$ is the number enrolled in all three courses, then
 $$
-|R\cup D\cup L|=89+n.
+\cardinality{R\cup D\cup L}=89+n.
 $$
 
 
@@ -74,10 +74,10 @@ $$
 By inclusion--exclusion,
 $$
 \begin{aligned}
-|R\cup D\cup L|
-&=|R|+|D|+|L|\\
-&\quad-|R\cap D|-|R\cap L|-|D\cap L|\\
-&\quad+|R\cap D\cap L|.
+\cardinality{R\cup D\cup L}
+&=\cardinality{R}+\cardinality{D}+\cardinality{L}\\
+&\quad-\cardinality{R\cap D}-\cardinality{R\cap L}-\cardinality{D\cap L}\\
+&\quad+\cardinality{R\cap D\cap L}.
 \end{aligned}
 $$
 Substituting the given values gives

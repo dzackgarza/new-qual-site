@@ -153,7 +153,7 @@ $$
 (u+a,v+a).
 $$
 Their symmetric difference is contained in the union of two intervals whose
-lengths are at most $|r_n-a|$, one near $u+a$ and one near $v+a$.
+lengths are at most $\abs{r_n-a}$, one near $u+a$ and one near $v+a$.
 By step [](#s1-3){.pf-ref}, the measures of those two endpoint intervals tend to $0$.
 Therefore
 $$
@@ -161,7 +161,7 @@ $$
 $$
 Since
 $$
-|\mu(I+r_n)-\mu(I+a)|
+\abs{\mu(I+r_n)-\mu(I+a)}
 \le
 \mu\bigl((I+r_n)\triangle(I+a)\bigr),
 $$

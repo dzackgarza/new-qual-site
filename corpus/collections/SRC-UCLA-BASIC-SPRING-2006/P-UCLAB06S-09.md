@@ -173,7 +173,7 @@ $$
 
 The restriction
 $$
-S|_{v^\perp}:v^\perp\to v^\perp
+S\restrict_{v^\perp}:v^\perp\to v^\perp
 $$
 is symmetric.
 
@@ -222,7 +222,7 @@ $$
 and let $S$ be an $n\times n$ real symmetric matrix.
 By step [](#s1-2){.pf-ref}, choose a nonzero real eigenvector $v_1$ and normalize it so that
 $$
-\|v_1\|=1.
+\norm{v_1}=1.
 $$
 Then
 $$

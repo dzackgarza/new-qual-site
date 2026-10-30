@@ -74,9 +74,9 @@ A regular function on $U_i\cup U_j$ is constant.
 Let $f$ be regular on $U_i\cup U_j$.
 By step [](#s1){.pf-ref}, choose homogeneous polynomials $F,G$ with
 $$
-f|_{U_i}=\frac{F}{x_i^a},
+f\restrict_{U_i}=\frac{F}{x_i^a},
 \qquad
-f|_{U_j}=\frac{G}{x_j^b},
+f\restrict_{U_j}=\frac{G}{x_j^b},
 $$
 where $\deg F=a$ and $\deg G=b$.
 On the nonempty overlap $U_i\cap U_j$, these rational functions agree, hence in the polynomial ring

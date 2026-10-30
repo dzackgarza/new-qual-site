@@ -20,7 +20,7 @@ Show that if $f$ is entire and $f(1/z)$ has a pole at $z=0$, then $f$ is a polyn
 :::
 
 ::: {.solution}
-Write $f(z) = \sum_{k\geq 0}c_k z^k$, which converges on all of $\CC$, and let $m$ be the order of the pole of $g(z) \definedas f(1/z)$ at $0$.
+Write $f(z) = \sum_{k\geq 0}c_k z^k$, which converges on all of $\CC$, and let $m$ be the order of the pole of $g(z) \coloneqq f(1/z)$ at $0$.
 
 ::: pf
 

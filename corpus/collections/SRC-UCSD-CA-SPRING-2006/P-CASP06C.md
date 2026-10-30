@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 $f$ is an entire function.
-Assume that $f(z + 1) = f(z)$ and $|f(z)| \leq e^{C|z|}$ for some $C < 2\pi$.
+Assume that $f(z + 1) = f(z)$ and $\abs{f(z)} \leq e^{C\abs{z}}$ for some $C < 2\pi$.
 Show that $f$ is a constant.
 :::
 
@@ -28,19 +28,19 @@ $f(z)e^{-2\pi i nz}$ around a period rectangle.
 
 The growth hypothesis gives, uniformly for $0\le x\le1$,
 $$
-|f(x+iy)|\le e^{C(|y|+1)}.
+\abs{f(x+iy)}\le e^{C(\abs{y}+1)}.
 $$
 If $n\ge1$, let $y\to-\infty$. Then
 $$
-|a_n|
-\le e^{C(|y|+1)}e^{2\pi n y}
+\abs{a_n}
+\le e^{C(\abs{y}+1)}e^{2\pi n y}
 \longrightarrow0,
 $$
 because $2\pi n>C$. Hence $a_n=0$ for all $n\ge1$.
 
 If $n\le-1$, let $y\to+\infty$; the same estimate gives
 $$
-|a_n|
+\abs{a_n}
 \le e^{C(y+1)}e^{2\pi n y}
 \longrightarrow0,
 $$

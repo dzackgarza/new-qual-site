@@ -48,7 +48,7 @@ Thus $f_n\to0$ everywhere.
 
 However,
 $$
-\|f_n\|_1
+\norm{f_n}_1
 =n\,m((0,1/n))
 =1
 $$
@@ -76,7 +76,7 @@ and set $h_n(1)=0$.
 
 If $2^m\le n<2^{m+1}$, then
 $$
-\|h_n\|_1=2^{-m}\longrightarrow0.
+\norm{h_n}_1=2^{-m}\longrightarrow0.
 $$
 Thus $h_n\to0$ in $L^1([0,1])$.
 

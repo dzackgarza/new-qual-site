@@ -47,8 +47,8 @@ h_N=h\,\mathbf1_{[1/N,1]}.
 $$
 Then $h_N\in\mathcal S$ and
 $$
-\|h-h_N\|_2^2
-=\int_0^{1/N}|h(x)|^2\,dx\to0
+\norm{h-h_N}_2^2
+=\int_0^{1/N}\abs{h(x)}^2\,dx\to0
 $$
 by absolute continuity of the Lebesgue integral.
 
@@ -68,8 +68,8 @@ $$
 
 Choose $\varepsilon>0$ such that $g=0$ on $[0,\varepsilon]$. On $[\varepsilon,1]$, one has $x^{-1/2}\leq\varepsilon^{-1/2}$. Since the interval has finite measure, $L^2\subset L^1$, so
 $$
-\int_0^1x^{-1/2}|g(x)|\,dx
-\leq\varepsilon^{-1/2}\|g\|_1<\infty.
+\int_0^1x^{-1/2}\abs{g(x)}\,dx
+\leq\varepsilon^{-1/2}\norm{g}_1<\infty.
 $$
 
 :::
@@ -88,7 +88,7 @@ $$
 $$
 and
 $$
-\|\phi_N\|_2^2=\frac1{\log N}.
+\norm{\phi_N}_2^2=\frac1{\log N}.
 $$
 
 
@@ -101,7 +101,7 @@ $$
 $$
 Similarly,
 $$
-\|\phi_N\|_2^2
+\norm{\phi_N}_2^2
 =\frac1{(\log N)^2}\int_{1/N}^1\frac{dx}{x}
 =\frac1{\log N}.
 $$
@@ -115,7 +115,7 @@ Also $x^{-1/2}\phi_N\in L^1$ by the same computation.
 
 Thus
 $$
-\|\phi_N\|_2\longrightarrow0
+\norm{\phi_N}_2\longrightarrow0
 $$
 while every $\phi_N$ has weighted integral $1$.
 
@@ -158,7 +158,7 @@ Thus $g_N$ satisfies both defining conditions of $\mathcal D$.
 
 One has
 $$
-\|g_N-g\|_2=|c|\,\|\phi_N\|_2\longrightarrow0.
+\norm{g_N-g}_2=\abs{c}\,\norm{\phi_N}_2\longrightarrow0.
 $$
 
 

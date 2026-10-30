@@ -33,7 +33,7 @@ Show that the tensor product of two Hopf algebras is a Hopf algebra.
 Let $A$ and $B$ be graded Hopf algebras over the same commutative coefficient ring. Give $A\otimes B$ the usual graded tensor-product algebra structure
 $$
 (a\otimes b)(a'\otimes b')
-=(-1)^{|b||a'|}aa'\otimes bb'.
+=(-1)^{\gradeddegree{b}\gradeddegree{a'}}aa'\otimes bb'.
 $$
 
 Write the coproducts in Sweedler notation as
@@ -46,7 +46,7 @@ Define
 $$
 \Delta_{A\otimes B}(a\otimes b)
 =
-\sum (-1)^{|a_{(2)}||b_{(1)}|}
+\sum (-1)^{\gradeddegree{a_{(2)}}\gradeddegree{b_{(1)}}}
 (a_{(1)}\otimes b_{(1)})
 \otimes
 (a_{(2)}\otimes b_{(2)}).

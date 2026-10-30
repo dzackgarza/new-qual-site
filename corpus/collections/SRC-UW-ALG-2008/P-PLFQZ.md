@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-PLFQZ
 kind: problem
-title: Irreducible $\CC G$-modules have dimension at most $\sqrt{|G|}$, with an example
-  of dimension $\lfloor\sqrt{|G|}\rfloor$
+title: Irreducible $\CC G$-modules have dimension at most $\sqrt{\cardinality{G}}$, with an example of dimension $\lfloor\sqrt{\cardinality{G}}\rfloor$
 classification:
   areas:
   - algebra
@@ -51,11 +50,11 @@ $$
 By Maschke's theorem, the regular representation is completely reducible. The multiplicity of an irreducible character $\chi_i$ in the regular character $\chi_{\mathrm{reg}}$ is
 $$
 \langle\chi_{\mathrm{reg}},\chi_i\rangle
-=\frac1{|G|}\sum_{g\in G}\chi_{\mathrm{reg}}(g)\overline{\chi_i(g)}.
+=\frac1{\cardinality{G}}\sum_{g\in G}\chi_{\mathrm{reg}}(g)\overline{\chi_i(g)}.
 $$
 The regular character satisfies
 $$
-\chi_{\mathrm{reg}}(1)=|G|=n,
+\chi_{\mathrm{reg}}(1)=\cardinality{G}=n,
 \qquad
 \chi_{\mathrm{reg}}(g)=0\quad(g\ne1).
 $$
@@ -79,7 +78,7 @@ $$
 
 ::: pf-proof
 
-Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\CC G$ has dimension $|G|=n$, while the summand $V_i^{\oplus d_i}$ has dimension $d_i^2$.
+Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\CC G$ has dimension $\cardinality{G}=n$, while the summand $V_i^{\oplus d_i}$ has dimension $d_i^2$.
 
 :::
 
@@ -108,7 +107,7 @@ Taking nonnegative square roots yields the claim.
 
 Let $G=S_3$, so
 $$
-n=|S_3|=6
+n=\cardinality{S_3}=6
 \qquad\text{and}\qquad
 \lfloor\sqrt n\rfloor=2.
 $$

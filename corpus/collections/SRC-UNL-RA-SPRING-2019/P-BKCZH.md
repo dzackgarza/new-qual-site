@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKCZH
 kind: problem
-title: $|f'|\le k|f|$ and $f(0)=0$ imply $f\equiv 0$ on $[0,1]$
+title: $\abs{f'}\le k\abs{f}$ and $f(0)=0$ imply $f\equiv 0$ on $[0,1]$
 classification:
   areas:
   - real-analysis
@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Suppose that $f:[0,1]\to\RR$ is differentiable, $f(0)=0$, and there is $k>0$ such that
 $$
-|f'(x)|\le k|f(x)|
+\abs{f'(x)}\le k\abs{f(x)}
 \qquad(x\in[0,1]).
 $$
 Prove that $f(x)=0$ for all $x\in[0,1]$.

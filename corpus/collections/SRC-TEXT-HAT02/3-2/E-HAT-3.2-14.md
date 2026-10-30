@@ -22,7 +22,7 @@ Let $q: \RP^\infty \to \CP^\infty$ be the natural quotient map obtained by regar
 Show that the induced map $q^*: H^*(\CP^\infty; \ZZ) \to H^*(\RP^\infty; \ZZ)$ is surjective in even dimensions by showing first by a geometric argument that the restriction $q: \RP^2 \to \CP^1$ induces a surjection on $H^2$ and then appealing to cup product structures.
 
 Next, form a quotient space $X$ of $\RP^\infty \amalg \CP^n$ by identifying each point $x \in \RP^{2n}$ with $q(x) \in \CP^n$.
-Show there are ring isomorphisms $H^*(X; \ZZ) \approx \ZZ[\alpha]/(2\alpha^{n+1})$ and $H^*(X; \ZZ_2) \approx \ZZ_2[\alpha, \beta]/(\beta^2 - \alpha^{2n+1})$, where $|\alpha| = 2$ and $|\beta| = 2n+1$.
+Show there are ring isomorphisms $H^*(X; \ZZ) \approx \ZZ[\alpha]/(2\alpha^{n+1})$ and $H^*(X; \ZZ_2) \approx \ZZ_2[\alpha, \beta]/(\beta^2 - \alpha^{2n+1})$, where $\gradeddegree{\alpha} = 2$ and $\gradeddegree{\beta} = 2n+1$.
 Make a similar construction and analysis for the quotient map $q: \CP^\infty \to \quatprojective^\infty$.
 :::
 
@@ -38,8 +38,8 @@ Let $x \in H^2(\CP^\infty;\ZZ)$ and $u \in H^4(\quatprojective^\infty;\ZZ)$ be t
 For each $k \ge 1$, $q$ maps $\RP^{2k} \setminus \RP^{2k-1}$ homeomorphically onto $\CP^k \setminus \CP^{k-1}$, and so induces a homeomorphism $\RP^{2k}/\RP^{2k-1} \to \CP^k/\CP^{k-1}$; likewise $q$ induces a homeomorphism $\CP^{2k}/\CP^{2k-1} \to \quatprojective^k/\quatprojective^{k-1}$.
 
 ::: pf-proof
-A point of $\RP^{2k} \setminus \RP^{2k-1}$ is $\pm(v, t)$ with $v \in \CC^k$, $t \in \RR \setminus 0$, $|v|^2 + t^2 = 1$; it has a unique representative with $t > 0$, so these points correspond bijectively to the open disk $\{|v| < 1\}$.
-A point of $\CP^k \setminus \CP^{k-1}$ is a complex line spanned by $(v, s)$ with $s \in \CC \setminus 0$; multiplying by a unit complex scalar gives a unique representative with $s > 0$ real and $|v|^2 + s^2 = 1$, again a point of the open disk $\{|v| < 1\}$.
+A point of $\RP^{2k} \setminus \RP^{2k-1}$ is $\pm(v, t)$ with $v \in \CC^k$, $t \in \RR \setminus 0$, $\norm{v}^2 + t^2 = 1$; it has a unique representative with $t > 0$, so these points correspond bijectively to the open disk $\{\norm{v} < 1\}$.
+A point of $\CP^k \setminus \CP^{k-1}$ is a complex line spanned by $(v, s)$ with $s \in \CC \setminus 0$; multiplying by a unit complex scalar gives a unique representative with $s > 0$ real and $\norm{v}^2 + s^2 = 1$, again a point of the open disk $\{\norm{v} < 1\}$.
 In these coordinates $q$ is the identity of the disk.
 Hence the induced map $\RP^{2k}/\RP^{2k-1} \to \CP^k/\CP^{k-1}$ is a continuous bijection from a compact space to a Hausdorff space, hence a homeomorphism.
 The quaternionic case is the same argument with $(v, z) \in \HH^k \oplus \CC$, normalising $z$ by a unit complex scalar and $s \in \HH$ by a unit quaternion to a positive real.
@@ -112,7 +112,7 @@ With $\ZZ_2$ coefficients all coboundaries of $X$ and $\RP^\infty$ vanish, so $H
 :::
 
 ::: pf-step
-$H^*(X;\ZZ) \cong \boxed{\ZZ[\alpha]/(2\alpha^{n+1})}$ with $|\alpha| = 2$.
+$H^*(X;\ZZ) \cong \boxed{\ZZ[\alpha]/(2\alpha^{n+1})}$ with $\gradeddegree{\alpha} = 2$.
 
 ::: pf-proof
 The map $p \colon X \to \CP^\infty$ equal to $q$ on $\RP^\infty$ and to the inclusion on $\CP^n$ is well defined; let $\alpha = p^* x$.
@@ -125,7 +125,7 @@ So $\ZZ[\alpha] \to H^*(X;\ZZ)$ is surjective, with kernel $0$ in degrees $2k \l
 :::
 
 ::: pf-step
-$H^*(X;\ZZ_2) \cong \boxed{\ZZ_2[\alpha, \beta]/(\beta^2 - \alpha^{2n+1})}$ with $|\alpha| = 2$, $|\beta| = 2n+1$.
+$H^*(X;\ZZ_2) \cong \boxed{\ZZ_2[\alpha, \beta]/(\beta^2 - \alpha^{2n+1})}$ with $\gradeddegree{\alpha} = 2$, $\gradeddegree{\beta} = 2n+1$.
 
 ::: pf-proof
 By step [](#x-cells){.pf-ref} all coboundaries vanish mod $2$, so $H^m(X;\ZZ_2) \cong \ZZ_2$ for $m \in \{0, 2, \dots, 2n\}$ and every $m \ge 2n+1$, and is $0$ otherwise.
@@ -151,7 +151,7 @@ The groups $H^{4k+2}(\CP^\infty) = \ZZ x^{2k+1}$ are not hit, as $H^{4k+2}(\quat
 
 ::: pf-step
 Let $Y$ be the quotient of $\CP^\infty \amalg \quatprojective^n$ identifying each $y \in \CP^{2n}$ with $q(y) \in \quatprojective^n$.
-Then $H^*(Y;\ZZ) \cong \boxed{\ZZ[\mu, \nu]/(\nu^2 - \mu^{2n+1})}$ with $|\mu| = 4$, $|\nu| = 4n+2$, and $H^*(Y;\ZZ_2) \cong \ZZ_2[\mu,\nu]/(\nu^2 - \mu^{2n+1})$.
+Then $H^*(Y;\ZZ) \cong \boxed{\ZZ[\mu, \nu]/(\nu^2 - \mu^{2n+1})}$ with $\gradeddegree{\mu} = 4$, $\gradeddegree{\nu} = 4n+2$, and $H^*(Y;\ZZ_2) \cong \ZZ_2[\mu,\nu]/(\nu^2 - \mu^{2n+1})$.
 
 ::: pf-proof
 As in step [](#x-cells){.pf-ref}, $Y$ is $\quatprojective^n$ with the cells of $\CP^\infty$ of dimension at least $4n+2$ attached; all cells have even dimension, so all cellular coboundaries vanish and $H^m(Y;R) \cong R$ for $m \in \{0, 4, \dots, 4n\}$ and every even $m \ge 4n+2$, and $0$ otherwise, for $R = \ZZ$ or $\ZZ_2$.

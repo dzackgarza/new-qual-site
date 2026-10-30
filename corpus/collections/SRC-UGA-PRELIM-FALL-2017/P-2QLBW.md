@@ -100,7 +100,7 @@ By the multivariable Chain Rule, $g'(0) = \nabla f(\gamma(0)) \cdot \gamma'(0) =
 ::: pf-proof
 
 Since $f$ is continuously differentiable and $\gamma$ is differentiable at $t=0$, the chain rule applies:
-$$g'(0) = \left.\frac{d}{dt} f(x(t), y(t))\right|_{t=0} = \frac{\partial f}{\partial x}(\mathbf{p}) x'(0) + \frac{\partial f}{\partial y}(\mathbf{p}) y'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0).$$
+$$g'(0) = \evaluated{\frac{d}{dt} f(x(t), y(t))}_{t=0} = \frac{\partial f}{\partial x}(\mathbf{p}) x'(0) + \frac{\partial f}{\partial y}(\mathbf{p}) y'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0).$$
 
 :::
 

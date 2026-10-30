@@ -69,17 +69,17 @@ converges absolutely in any operator norm, and likewise for $G$ and $F+G$.
 In finite dimension, fix a submultiplicative operator norm.
 Then
 $$
-\left\|
+\norm{
 \frac{F^n}{n!}
-\right\|
+}
 \le
-\frac{\|F\|^n}{n!}.
+\frac{\norm{F}^n}{n!}.
 $$
 The scalar series
 $$
-\sum_{n=0}^{\infty}\frac{\|F\|^n}{n!}
+\sum_{n=0}^{\infty}\frac{\norm{F}^n}{n!}
 =
-e^{\|F\|}
+e^{\norm{F}}
 $$
 converges.
 Thus the operator series converges absolutely.

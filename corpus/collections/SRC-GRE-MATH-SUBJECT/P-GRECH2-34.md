@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH2-34
 kind: problem
-title: Volume of revolution of the region between $y=x^2$ and $y=6-|x|$
+title: Volume of revolution of the region between $y=x^2$ and $y=6-\abs{x}$
 classification:
   areas: [prelim]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-The region bounded by the graphs of $y = x^2$ and $y = 6 - |x|$ is revolved around the $y$-axis. What is the volume of the generated solid?
+The region bounded by the graphs of $y = x^2$ and $y = 6 - \abs{x}$ is revolved around the $y$-axis. What is the volume of the generated solid?
 
 (A) $\frac{32}{3}\pi$
 (B) $9\pi$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-The parabola gives $|x|=\sqrt y$, while the graph $y=6-|x|$ gives $|x|=6-y$. The bounded region uses the smaller of these two radii. They are equal at $y=4$ by step [](#s1-1){.pf-ref}; below $4$ one has $\sqrt y\le6-y$, and above $4$ one has $6-y\le\sqrt y$.
+The parabola gives $\abs{x}=\sqrt y$, while the graph $y=6-\abs{x}$ gives $\abs{x}=6-y$. The bounded region uses the smaller of these two radii. They are equal at $y=4$ by step [](#s1-1){.pf-ref}; below $4$ one has $\sqrt y\le6-y$, and above $4$ one has $6-y\le\sqrt y$.
 
 :::
 

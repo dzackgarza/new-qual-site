@@ -101,7 +101,7 @@ One has
 $$
 \pi_1(X)
 \cong
-\left\langle a,t\mathrel{\Big|}t^{-1}at=a^2\right\rangle,
+\left\langle a,t\mathrel{\presentationbar}t^{-1}at=a^2\right\rangle,
 $$
 which is isomorphic to the Baumslag--Solitar group $BS(1,2)$.
 
@@ -187,7 +187,7 @@ There are no cells in dimensions greater than $2$, so the cellular chain groups 
 ::: pf-step
 Therefore the requested invariants are
 $$
-\boxed{\pi_1(X)\cong\left\langle a,t\mathrel{\Big|}t^{-1}at=a^2\right\rangle}
+\boxed{\pi_1(X)\cong\left\langle a,t\mathrel{\presentationbar}t^{-1}at=a^2\right\rangle}
 $$
 and
 $$

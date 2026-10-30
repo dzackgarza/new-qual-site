@@ -46,7 +46,7 @@ Also $H$ has order $6$, $\langle z\rangle$ has order $2$, and $H\cap\langle z\ra
 $$
 H\langle z\rangle\cong H\times\langle z\rangle.
 $$
-Its order is $6\cdot2=12=|D_6|$, so it is all of $D_6$. Therefore
+Its order is $6\cdot2=12=\cardinality{D_6}$, so it is all of $D_6$. Therefore
 $$
 \boxed{D_6\cong S_3\times C_2.}
 $$
@@ -82,7 +82,7 @@ $$
 $$
 The degree squares are
 $$
-1+1+1+1+4+4=12=|D_6|,
+1+1+1+1+4+4=12=\cardinality{D_6},
 $$
 so this is the complete character table.
 :::

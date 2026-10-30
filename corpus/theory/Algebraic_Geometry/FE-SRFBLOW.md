@@ -47,7 +47,7 @@ Let $k = \CC$.
 
 (b) For every smooth projective variety $X$ and proper closed subvariety $Y \subsetneq X$ there exist a smooth projective variety $W$ and a birational morphism $\varphi \colon W \to X$ such that $\varphi^{-1}(Y)$ is a divisor with simple normal crossings in $W$.
 
-(c) If $Y \subset X$ as in (b) is an irreducible hypersurface, there is a unique irreducible component $Y'$ of $\varphi^{-1}(Y)$ dominating $Y$, and $\varphi\vert_{Y'} \colon Y' \to Y$ is a desingularization as in (a); it is called an embedded desingularization of $Y$.
+(c) If $Y \subset X$ as in (b) is an irreducible hypersurface, there is a unique irreducible component $Y'$ of $\varphi^{-1}(Y)$ dominating $Y$, and $\varphi\restrict_{Y'} \colon Y' \to Y$ is a desingularization as in (a); it is called an embedded desingularization of $Y$.
 
 (d) In (a) and (b) the morphism $\varphi$ can be chosen as a composition of blowups with smooth centres.
 

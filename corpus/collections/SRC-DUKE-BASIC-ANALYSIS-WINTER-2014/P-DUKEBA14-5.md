@@ -38,9 +38,9 @@ Prove that $(x_n)_{n\ge1}$ has a convergent subsequence.
 Prove that the sequence is bounded.
 
 ::: pf-proof
-Since $|\sin(n^3)|\le1$ and $0\le2\sin^2n\le2$,
+Since $\abs{\sin(n^3)}\le1$ and $0\le2\sin^2n\le2$,
 $$
-|x_n|
+\abs{x_n}
 \le \frac{n^2+36}{n^2+n+5}.
 $$
 For $n\ge1$ this is bounded, for example by $37$. Hence $(x_n)$ is a bounded sequence of real numbers.

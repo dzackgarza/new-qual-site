@@ -9,11 +9,11 @@ topics:
 
 # Intersection theory on surfaces
 
-For a divisor $D$ and an integral curve $C$ on a smooth projective surface $X$, $D\cdot C=\deg_C\OO_X(D)|_C$.
+For a divisor $D$ and an integral curve $C$ on a smooth projective surface $X$, $D\cdot C=\deg_C\OO_X(D)\restrict_C$.
 
 [[D-SRFINT]]
 
-For a smooth curve $C\subset X$, $C^2=\deg N_{C/X}=\deg\OO_X(C)|_C$.
+For a smooth curve $C\subset X$, $C^2=\deg N_{C/X}=\deg\OO_X(C)\restrict_C$.
 It can be negative: the exceptional curve $E$ of a blowup at a point has $E^2=-1$.
 
 [[T-SRFADJ]]

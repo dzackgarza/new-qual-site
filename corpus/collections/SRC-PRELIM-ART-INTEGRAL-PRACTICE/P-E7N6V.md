@@ -114,8 +114,8 @@ $$
 $$
 Plancherel's theorem in this normalization gives
 $$
-\int_{\RR}|\widehat f(\xi)|^2\,d\xi
-=2\pi\int_{\RR}|f(t)|^2\,dt=4\pi.
+\int_{\RR}\abs{\widehat f(\xi)}^2\,d\xi
+=2\pi\int_{\RR}\abs{f(t)}^2\,dt=4\pi.
 $$
 Therefore
 $$

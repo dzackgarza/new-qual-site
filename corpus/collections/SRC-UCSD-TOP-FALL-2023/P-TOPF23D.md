@@ -27,7 +27,7 @@ Use this to deduce that a non-trivial finite group acting freely on $S^{2n}$ mus
 ::: pf-step
 
 If $f:S^n\to S^n$ has no fixed point, then
-$$H(x,t)=\frac{(1-t)f(x)-tx}{\|(1-t)f(x)-tx\|}$$
+$$H(x,t)=\frac{(1-t)f(x)-tx}{\norm{(1-t)f(x)-tx}}$$
 defines a homotopy from $f$ to the antipodal map $x\mapsto-x$.
 
 ::: pf-proof

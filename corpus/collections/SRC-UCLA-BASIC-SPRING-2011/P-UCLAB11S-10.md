@@ -52,9 +52,9 @@ $$
 \boxed{
 \lim_{h\to0}
 \frac{
-|f(p_0+h)-f(p_0)-L(h)|
+\abs{f(p_0+h)-f(p_0)-L(h)}
 }{
-\|h\|_2
+\norm{h}_2
 }
 =0.
 }
@@ -84,15 +84,15 @@ $$
 $$
 By continuity of $f_x$ and $f_y$ at $(x_0,y_0)$, there exists $\delta>0$ such that whenever
 $$
-\|(x,y)-(x_0,y_0)\|_2<\delta,
+\norm{(x,y)-(x_0,y_0)}_2<\delta,
 $$
 one has
 $$
-|f_x(x,y)-f_x(x_0,y_0)|<\varepsilon
+\abs{f_x(x,y)-f_x(x_0,y_0)}<\varepsilon
 $$
 and
 $$
-|f_y(x,y)-f_y(x_0,y_0)|<\varepsilon.
+\abs{f_y(x,y)-f_y(x_0,y_0)}<\varepsilon.
 $$
 
 ::: pf-proof
@@ -228,9 +228,9 @@ $$
 $$
 then
 $$
-|R(h,k)|
+\abs{R(h,k)}
 \le
-\varepsilon(|h|+|k|).
+\varepsilon(\abs{h}+\abs{k}).
 $$
 
 ::: pf-proof
@@ -245,11 +245,11 @@ $$
 $$
 Hence step [](#p2-s2){.pf-ref} gives
 $$
-|f_x(\xi,y_0+k)-f_x(x_0,y_0)|<\varepsilon
+\abs{f_x(\xi,y_0+k)-f_x(x_0,y_0)}<\varepsilon
 $$
 and
 $$
-|f_y(x_0,\eta)-f_y(x_0,y_0)|<\varepsilon.
+\abs{f_y(x_0,\eta)-f_y(x_0,y_0)}<\varepsilon.
 $$
 Apply the triangle inequality to step [](#p2-s6){.pf-ref}.
 
@@ -261,7 +261,7 @@ Apply the triangle inequality to step [](#p2-s6){.pf-ref}.
 
 One has
 $$
-\frac{|R(h,k)|}{\sqrt{h^2+k^2}}
+\frac{\abs{R(h,k)}}{\sqrt{h^2+k^2}}
 \le
 \sqrt2\,\varepsilon
 $$
@@ -271,7 +271,7 @@ for all sufficiently small nonzero $(h,k)$.
 
 By Cauchy--Schwarz,
 $$
-|h|+|k|
+\abs{h}+\abs{k}
 \le
 \sqrt2\,\sqrt{h^2+k^2}.
 $$
@@ -287,7 +287,7 @@ Therefore
 $$
 \lim_{(h,k)\to(0,0)}
 \frac{
-|f(x_0+h,y_0+k)-f(x_0,y_0)-L(h,k)|
+\abs{f(x_0+h,y_0+k)-f(x_0,y_0)-L(h,k)}
 }{
 \sqrt{h^2+k^2}
 }

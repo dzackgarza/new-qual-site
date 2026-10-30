@@ -105,29 +105,29 @@ The number of distinct conjugates of $H$ is
 $$
 r=[G:N].
 $$
-Every conjugate has $|H|$ elements, and all conjugates contain the identity. Therefore, even if we ignore every other possible overlap,
+Every conjugate has $\cardinality{H}$ elements, and all conjugates contain the identity. Therefore, even if we ignore every other possible overlap,
 $$
-\left|\bigcup_{x\in G}x^{-1}Hx\right|
-\le 1+r(|H|-1).
+\cardinality{\bigcup_{x\in G}x^{-1}Hx}
+\le 1+r(\cardinality{H}-1).
 $$
-Since $H\le N$, we have $|N|\ge|H|$, hence
+Since $H\le N$, we have $\cardinality{N}\ge\cardinality{H}$, hence
 $$
-r=[G:N]\le [G:H]=\frac{|G|}{|H|}.
+r=[G:N]\le [G:H]=\frac{\cardinality{G}}{\cardinality{H}}.
 $$
 Thus
 $$
-\left|\bigcup_{x\in G}x^{-1}Hx\right|
+\cardinality{\bigcup_{x\in G}x^{-1}Hx}
 \le
-1+\frac{|G|}{|H|}(|H|-1)
-=1+|G|-\frac{|G|}{|H|}.
+1+\frac{\cardinality{G}}{\cardinality{H}}(\cardinality{H}-1)
+=1+\cardinality{G}-\frac{\cardinality{G}}{\cardinality{H}}.
 $$
 Because $H$ is proper,
 $$
-[G:H]=\frac{|G|}{|H|}\ge2.
+[G:H]=\frac{\cardinality{G}}{\cardinality{H}}\ge2.
 $$
 Therefore
 $$
-1+|G|-\frac{|G|}{|H|}\le |G|-1<|G|.
+1+\cardinality{G}-\frac{\cardinality{G}}{\cardinality{H}}\le \cardinality{G}-1<\cardinality{G}.
 $$
 Consequently
 $$

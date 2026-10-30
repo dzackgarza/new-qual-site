@@ -23,9 +23,9 @@ audit:
 ::: {.problem}
 Let $\mathcal{H}$ be a separable infinite-dimensional Hilbert space and assume that $(e_n)$ is an orthonormal system in $\mathcal{H}$. Let $(f_n)$ be another orthonormal system which is complete, i.e. the closure of the span of the $(f_n)$ is all of $\mathcal{H}$.
 
-(a) Show that if $\sum_{n=1}^{\infty} \|f_n - e_n\|^2 < 1$ then the orthonormal system $(e_n)$ is also complete.
+(a) Show that if $\sum_{n=1}^{\infty} \norm{f_n - e_n}^2 < 1$ then the orthonormal system $(e_n)$ is also complete.
 
-(b) Assume that we only have $\sum_{n=1}^{\infty} \|f_n - e_n\|^2 < \infty$. Prove that it is still true that $(e_n)$ is complete.
+(b) Assume that we only have $\sum_{n=1}^{\infty} \norm{f_n - e_n}^2 < \infty$. Prove that it is still true that $(e_n)$ is complete.
 :::
 
 ::: {.solution}
@@ -57,7 +57,7 @@ $$
 
 Assume
 $$
-\sum_{n=1}^\infty \|f_n-e_n\|^2<1.
+\sum_{n=1}^\infty \norm{f_n-e_n}^2<1.
 $$
 
 ::: pf
@@ -105,10 +105,10 @@ and normalize it.
 Since $(f_n)$ is a complete orthonormal system, Parseval's identity gives
 $$
 \boxed{
-1=\|x\|^2
+1=\norm{x}^2
 =
 \sum_{n=1}^\infty
-|\langle x,f_n\rangle|^2}.
+\abs{\langle x,f_n\rangle}^2}.
 $$
 
 
@@ -145,18 +145,18 @@ $$
 
 Hence
 $$
-|\langle x,f_n\rangle|
+\abs{\langle x,f_n\rangle}
 \le
-\|x\|\,
-\|f_n-e_n\|
+\norm{x}\,
+\norm{f_n-e_n}
 =
-\|f_n-e_n\|.
+\norm{f_n-e_n}.
 $$
 
 
 ::: pf-proof
 
-Use step [](#s1-4){.pf-ref}, Cauchy--Schwarz, and $\|x\|=1$.
+Use step [](#s1-4){.pf-ref}, Cauchy--Schwarz, and $\norm{x}=1$.
 
 :::
 
@@ -169,10 +169,10 @@ $$
 1
 =
 \sum_{n=1}^\infty
-|\langle x,f_n\rangle|^2
+\abs{\langle x,f_n\rangle}^2
 \le
 \sum_{n=1}^\infty
-\|f_n-e_n\|^2
+\norm{f_n-e_n}^2
 <1.
 $$
 
@@ -221,10 +221,10 @@ $$
 Therefore
 $$
 \sum_{n=1}^\infty
-\|K\delta_n\|^2
+\norm{K\delta_n}^2
 =
 \sum_{n=1}^\infty
-\|e_n-f_n\|^2
+\norm{e_n-f_n}^2
 <
 \infty.
 $$
@@ -286,13 +286,13 @@ The operator $A$ is an isometry.
 
 For $u\in\ell^2$,
 $$
-\|Au\|
+\norm{Au}
 =
-\|F^{-1}Eu\|
+\norm{F^{-1}Eu}
 =
-\|Eu\|
+\norm{Eu}
 =
-\|u\|,
+\norm{u},
 $$
 because $F^{-1}$ is unitary and $E$ is an isometry.
 
@@ -316,9 +316,9 @@ $$
 
 An isometry is injective. Also, if $Au_j$ converges, then
 $$
-\|u_j-u_k\|
+\norm{u_j-u_k}
 =
-\|Au_j-Au_k\|,
+\norm{Au_j-Au_k},
 $$
 so $(u_j)$ is Cauchy and converges to some $u$, giving
 $$

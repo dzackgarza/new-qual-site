@@ -27,9 +27,9 @@ audit:
 Let $(\Omega, \mathcal{M}, \mu)$ be a measure space.
 A sequence $(f_n)_n \subset L^1(\Omega, \mu)$ is equi-integrable if:
 
-(a) for every $\epsilon > 0$ there is a $\delta > 0$ such that $\sup_n \int_E |f_n|\,d\mu < \epsilon$ for all $E \in \mathcal{M}$ with $\mu(E) < \delta$;
+(a) for every $\epsilon > 0$ there is a $\delta > 0$ such that $\sup_n \int_E \abs{f_n}\,d\mu < \epsilon$ for all $E \in \mathcal{M}$ with $\mu(E) < \delta$;
 
-(b) for every $\epsilon > 0$ there is $A_\epsilon \in \mathcal{M}$ with $\mu(A_\epsilon) < +\infty$ and $\sup_n \int_{\Omega \setminus A_\epsilon} |f_n|\,d\mu < \epsilon$.
+(b) for every $\epsilon > 0$ there is $A_\epsilon \in \mathcal{M}$ with $\mu(A_\epsilon) < +\infty$ and $\sup_n \int_{\Omega \setminus A_\epsilon} \abs{f_n}\,d\mu < \epsilon$.
 
 (1) Show that if $(f_n)_n$ is equi-integrable and $f_n \to f$ $\mu$-a.e., then $f \in L^1(\Omega, \mu)$ and $f_n \to f$ strongly in $L^1$.
 
@@ -52,12 +52,12 @@ Fix $\varepsilon>0$. By condition (a), choose $\delta>0$ such that
 $$
 \mu(E)<\delta
 \quad\Longrightarrow\quad
-\sup_n\int_E|f_n|\,d\mu<\varepsilon.
+\sup_n\int_E\abs{f_n}\,d\mu<\varepsilon.
 $$
 For such an $E$, Fatou's lemma gives
 $$
-\int_E|f|\,d\mu
-\le\liminf_{n\to\infty}\int_E|f_n|\,d\mu
+\int_E\abs{f}\,d\mu
+\le\liminf_{n\to\infty}\int_E\abs{f_n}\,d\mu
 \le\varepsilon.
 $$
 
@@ -65,11 +65,11 @@ Likewise, by condition (b), choose $A\in\mathcal M$ with
 $$
 \mu(A)<\infty
 \qquad\text{and}\qquad
-\sup_n\int_{\Omega\setminus A}|f_n|\,d\mu<\varepsilon.
+\sup_n\int_{\Omega\setminus A}\abs{f_n}\,d\mu<\varepsilon.
 $$
 Fatou again gives
 $$
-\int_{\Omega\setminus A}|f|\,d\mu\le\varepsilon.
+\int_{\Omega\setminus A}\abs{f}\,d\mu\le\varepsilon.
 $$
 Thus the same small-set and tail estimates hold for $f$.
 
@@ -91,17 +91,17 @@ such that $f_n\to f$ uniformly on $A\setminus E$.
 
 Choose one index $N$. Uniform convergence implies that $f-f_N$ is bounded on $A\setminus E$, so
 $$
-\int_{A\setminus E}|f|\,d\mu
+\int_{A\setminus E}\abs{f}\,d\mu
 \le
-\int_{A\setminus E}|f_N|\,d\mu
-+\mu(A)\|f-f_N\|_{L^\infty(A\setminus E)}
+\int_{A\setminus E}\abs{f_N}\,d\mu
++\mu(A)\norm{f-f_N}_{L^\infty(A\setminus E)}
 <\infty.
 $$
 Also Step 1 gives
 $$
-\int_E|f|\,d\mu\le\varepsilon,
+\int_E\abs{f}\,d\mu\le\varepsilon,
 \qquad
-\int_{\Omega\setminus A}|f|\,d\mu\le\varepsilon.
+\int_{\Omega\setminus A}\abs{f}\,d\mu\le\varepsilon.
 $$
 Hence $f\in L^1(\Omega,\mu)$.
 
@@ -119,28 +119,28 @@ Fix $\varepsilon>0$. Apply conditions (a) and (b) with bounds small enough that 
 
 By Step 1,
 $$
-\int_E|f_n-f|\,d\mu
-\le\int_E|f_n|\,d\mu+\int_E|f|\,d\mu
+\int_E\abs{f_n-f}\,d\mu
+\le\int_E\abs{f_n}\,d\mu+\int_E\abs{f}\,d\mu
 \le2\varepsilon.
 $$
 Similarly,
 $$
-\int_{\Omega\setminus A}|f_n-f|\,d\mu
+\int_{\Omega\setminus A}\abs{f_n-f}\,d\mu
 \le2\varepsilon.
 $$
 On $A\setminus E$, uniform convergence gives
 $$
-\int_{A\setminus E}|f_n-f|\,d\mu
-\le\mu(A)\|f_n-f\|_{L^\infty(A\setminus E)}
+\int_{A\setminus E}\abs{f_n-f}\,d\mu
+\le\mu(A)\norm{f_n-f}_{L^\infty(A\setminus E)}
 \longrightarrow0.
 $$
 Therefore
 $$
-\limsup_{n\to\infty}\|f_n-f\|_1\le4\varepsilon.
+\limsup_{n\to\infty}\norm{f_n-f}_1\le4\varepsilon.
 $$
 Since $\varepsilon$ is arbitrary,
 $$
-\boxed{\|f_n-f\|_1\to0.}
+\boxed{\norm{f_n-f}_1\to0.}
 $$
 
 :::
@@ -155,27 +155,27 @@ Strong $L^1$ convergence implies condition (a).
 
 Suppose $f_n\to f$ in $L^1$. Fix $\varepsilon>0$. Choose $N$ such that
 $$
-\|f_n-f\|_1<\frac\varepsilon2
+\norm{f_n-f}_1<\frac\varepsilon2
 \qquad(n\ge N).
 $$
 Since $f,f_1,\ldots,f_{N-1}\in L^1$, absolute continuity of the Lebesgue integral gives $\delta>0$ such that whenever $\mu(E)<\delta$,
 $$
-\int_E|f|\,d\mu<\frac\varepsilon2
+\int_E\abs{f}\,d\mu<\frac\varepsilon2
 $$
 and
 $$
-\int_E|f_j|\,d\mu<\varepsilon
+\int_E\abs{f_j}\,d\mu<\varepsilon
 \qquad(1\le j<N).
 $$
 For $n\ge N$,
 $$
-\int_E|f_n|\,d\mu
-\le\|f_n-f\|_1+\int_E|f|\,d\mu
+\int_E\abs{f_n}\,d\mu
+\le\norm{f_n-f}_1+\int_E\abs{f}\,d\mu
 <\varepsilon.
 $$
 Thus for every measurable $E$ with $\mu(E)<\delta$,
 $$
-\sup_n\int_E|f_n|\,d\mu<\varepsilon.
+\sup_n\int_E\abs{f_n}\,d\mu<\varepsilon.
 $$
 This is condition (a).
 

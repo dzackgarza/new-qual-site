@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OFICU
 kind: problem
-title: $\lim_{p\to\infty}\|f\|_p=\|f\|_\infty$ on $[0,1]$
+title: $\lim_{p\to\infty}\norm{f}_p=\norm{f}_\infty$ on $[0,1]$
 classification:
   areas:
   - real-analysis
@@ -34,14 +34,14 @@ Let $f$ be a nonnegative measurable function on $[0,1]$. Show that
 $$
 \lim_{p\to\infty}
 \left(\int_0^1 f(x)^p\,dx\right)^{1/p}
-=\|f\|_\infty.
+=\norm{f}_\infty.
 $$
 :::
 
 ::: {.solution}
 Write
 $$
-M:=\|f\|_\infty\in[0,\infty].
+M:=\norm{f}_\infty\in[0,\infty].
 $$
 
 ::: pf
@@ -54,15 +54,15 @@ Suppose first that $M<\infty$.
 
 Since $f\le M$ almost everywhere and $m([0,1])=1$,
 $$
-\|f\|_p^p=\int_0^1 f^p\le M^p,
+\norm{f}_p^p=\int_0^1 f^p\le M^p,
 $$
 so
 $$
-\|f\|_p\le M.
+\norm{f}_p\le M.
 $$
 Thus
 $$
-\limsup_{p\to\infty}\|f\|_p\le M.
+\limsup_{p\to\infty}\norm{f}_p\le M.
 $$
 
 Fix $0<a<M$. By the definition of essential supremum,
@@ -71,25 +71,25 @@ E_a:=\{x\in[0,1]:f(x)>a\}
 $$
 has positive measure. Hence
 $$
-\|f\|_p^p
+\norm{f}_p^p
 \ge \int_{E_a}f^p
 \ge a^p m(E_a),
 $$
 so
 $$
-\|f\|_p\ge a\,m(E_a)^{1/p}.
+\norm{f}_p\ge a\,m(E_a)^{1/p}.
 $$
 Letting $p\to\infty$ gives
 $$
-\liminf_{p\to\infty}\|f\|_p\ge a.
+\liminf_{p\to\infty}\norm{f}_p\ge a.
 $$
 Since this holds for every $a<M$,
 $$
-\liminf_{p\to\infty}\|f\|_p\ge M.
+\liminf_{p\to\infty}\norm{f}_p\ge M.
 $$
 Therefore
 $$
-\lim_{p\to\infty}\|f\|_p=M.
+\lim_{p\to\infty}\norm{f}_p=M.
 $$
 
 :::
@@ -108,19 +108,19 @@ E_A:=\{x:f(x)>A\}
 $$
 has positive measure. Exactly as above,
 $$
-\|f\|_p\ge A\,m(E_A)^{1/p}.
+\norm{f}_p\ge A\,m(E_A)^{1/p}.
 $$
 Hence
 $$
-\liminf_{p\to\infty}\|f\|_p\ge A.
+\liminf_{p\to\infty}\norm{f}_p\ge A.
 $$
 Because $A>0$ is arbitrary,
 $$
-\|f\|_p\longrightarrow\infty=M.
+\norm{f}_p\longrightarrow\infty=M.
 $$
 Thus in all cases,
 $$
-\boxed{\lim_{p\to\infty}\|f\|_p=\|f\|_\infty.}
+\boxed{\lim_{p\to\infty}\norm{f}_p=\norm{f}_\infty.}
 $$
 
 :::

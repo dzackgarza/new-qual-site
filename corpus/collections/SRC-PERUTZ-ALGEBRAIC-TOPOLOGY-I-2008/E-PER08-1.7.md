@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Prove directly that the 2-sphere
 $$
-S^2=\{x\in\RR^3:|x|=1\}
+S^2=\{x\in\RR^3:\norm{x}=1\}
 $$
 is simply connected.
 :::
@@ -41,7 +41,7 @@ The sphere $S^2$ is path-connected.
 ::: pf-proof
 If $x,y\in S^2$ are not antipodal, the normalized straight-line path
 $$
-\gamma(t)=\frac{(1-t)x+ty}{\lVert(1-t)x+ty\rVert}
+\gamma(t)=\frac{(1-t)x+ty}{\norm{(1-t)x+ty}}
 $$
 joins $x$ to $y$. If $y=-x$, choose $z\in S^2$ with $z\neq\pm x$ and concatenate a path from $x$ to $z$ with one from $z$ to $-x$.
 :::
@@ -68,7 +68,7 @@ f([t_{j-1},t_j])
 $$
 lies in one geodesically convex cap $U_j$.
 
-Inside $U_j$, replace the path $f|_{[t_{j-1},t_j]}$ by the unique short geodesic segment joining the same two endpoints. To see that this replacement is a homotopy rel endpoints, use central projection from the cap to a convex disk in the tangent plane: there the original path and the straight segment are joined by the ordinary linear homotopy, which fixes the endpoints; projecting back gives the desired homotopy in $U_j$.
+Inside $U_j$, replace the path $f\restrict_{[t_{j-1},t_j]}$ by the unique short geodesic segment joining the same two endpoints. To see that this replacement is a homotopy rel endpoints, use central projection from the cap to a convex disk in the tangent plane: there the original path and the straight segment are joined by the ordinary linear homotopy, which fixes the endpoints; projecting back gives the desired homotopy in $U_j$.
 
 The endpoint-fixing homotopies on adjacent subintervals agree at the subdivision points, so they glue to a based homotopy of $f$ to a loop $g$ which is a finite concatenation of great-circle arcs.
 :::
@@ -91,7 +91,7 @@ v\notin P_1\cup\cdots\cup P_m
 $$
 and set
 $$
-q=\frac{v}{\lVert v\rVert}\in S^2.
+q=\frac{v}{\norm{ v}}\in S^2.
 $$
 Then $q\notin g(I)$.
 :::

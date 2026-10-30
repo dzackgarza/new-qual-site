@@ -110,11 +110,11 @@ $$
 $$
 then
 $$
-|\kappa(x_f)|=p^d.
+\cardinality{\kappa(x_f)}=p^d.
 $$
 But step [](#residue-field-of-xf){.pf-ref} gives
 $$
-|\kappa(x_f)|=p^{\deg f},
+\cardinality{\kappa(x_f)}=p^{\deg f},
 $$
 so
 $$

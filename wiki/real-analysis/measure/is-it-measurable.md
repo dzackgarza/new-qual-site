@@ -18,7 +18,7 @@ In addition, for a measurable space $(X,\mathcal M)$ and [[D-DHFN4|measurable fu
 
 - $fg$, and $f/g$ where $g$ does not vanish;
 
-- a function $h$ such that $h|_{E_k}$ is measurable for each set $E_k$ in a countable measurable cover $\theset{E_k}$ of $X$.
+- a function $h$ such that $h\restrict_{E_k}$ is measurable for each set $E_k$ in a countable measurable cover $\theset{E_k}$ of $X$.
 
 Continuous functions and monotone functions $\RR\to\RR$ are Borel measurable, and a function equal almost everywhere to a Lebesgue measurable function is Lebesgue measurable.
 

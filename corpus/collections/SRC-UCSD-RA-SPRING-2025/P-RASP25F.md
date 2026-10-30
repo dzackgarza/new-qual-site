@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $(\xi_m)_{m \geq 1}$ be a sequence of vectors in a Hilbert space $H$.
-Assume that $\|\xi_m\| \leq 1$ and $\lim_{n \to \infty} \langle \xi_n, \xi_m \rangle = 0$ for every $m \geq 1$.
+Assume that $\norm{\xi_m} \leq 1$ and $\lim_{n \to \infty} \langle \xi_n, \xi_m \rangle = 0$ for every $m \geq 1$.
 Prove that $\lim_{n \to \infty} \langle \xi_n, \xi \rangle = 0$ for every $\xi \in H$.
 :::
 
@@ -54,17 +54,17 @@ $$
 
 Now fix $\xi\in M$ and $\varepsilon>0$. Choose such a finite linear combination $\eta$ with
 $$
-\|\xi-\eta\|<\varepsilon.
+\norm{\xi-\eta}<\varepsilon.
 $$
-Using $\|\xi_n\|\le1$,
+Using $\norm{\xi_n}\le1$,
 $$
-|\langle \xi_n,\xi\rangle|
-\le |\langle \xi_n,\eta\rangle|+\|\xi_n\|\,\|\xi-\eta\|
-\le |\langle \xi_n,\eta\rangle|+\varepsilon.
+\abs{\langle \xi_n,\xi\rangle}
+\le \abs{\langle \xi_n,\eta\rangle}+\norm{\xi_n}\,\norm{\xi-\eta}
+\le \abs{\langle \xi_n,\eta\rangle}+\varepsilon.
 $$
 Taking $n\to\infty$ gives
 $$
-\limsup_{n\to\infty}|\langle \xi_n,\xi\rangle|\le\varepsilon.
+\limsup_{n\to\infty}\abs{\langle \xi_n,\xi\rangle}\le\varepsilon.
 $$
 Since $\varepsilon$ is arbitrary,
 $$

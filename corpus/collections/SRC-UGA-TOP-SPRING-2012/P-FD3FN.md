@@ -56,7 +56,7 @@ $$
 H_+(x,t)
 =
 \frac{(1-t)f(x)+tx}
-{\left\|(1-t)f(x)+tx\right\|},
+{\norm{(1-t)f(x)+tx}},
 \qquad 0\le t\le1.
 $$
 It remains to check that the denominator never vanishes.
@@ -68,7 +68,7 @@ then $t\ne0,1$, and
 $$
 (1-t)f(x)=-tx.
 $$
-Taking norms and using $\|f(x)\|=\|x\|=1$ gives
+Taking norms and using $\norm{f(x)}=\norm{x}=1$ gives
 $$
 1-t=t,
 $$
@@ -109,7 +109,7 @@ $$
 H_-(x,t)
 =
 \frac{(1-t)f(x)-tx}
-{\left\|(1-t)f(x)-tx\right\|}.
+{\norm{(1-t)f(x)-tx}}.
 $$
 If its numerator vanished, then
 $$
@@ -200,7 +200,7 @@ $$
 S^3
 =
 \left\{(z_1,z_2)\in\CC^2:
-|z_1|^2+|z_2|^2=1\right\}
+\abs{z_1}^2+\abs{z_2}^2=1\right\}
 $$
 and define
 $$
@@ -213,9 +213,9 @@ $$
 
 Multiplication by $i$ preserves complex absolute value, so
 $$
-|iz_1|^2+|iz_2|^2
+\abs{iz_1}^2+\abs{iz_2}^2
 =
-|z_1|^2+|z_2|^2
+\abs{z_1}^2+\abs{z_2}^2
 =1.
 $$
 Thus the formula maps $S^3$ to itself.

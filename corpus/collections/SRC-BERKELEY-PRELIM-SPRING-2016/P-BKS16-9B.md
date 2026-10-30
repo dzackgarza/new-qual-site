@@ -39,7 +39,7 @@ Let $p$ be a prime number. Prove that every group $G$ of order $p^2$ is commutat
 
 The center $Z(G)$ has order divisible by $p$, and therefore
 $$
-|Z(G)|\in\{p,p^2\}.
+\cardinality{Z(G)}\in\{p,p^2\}.
 $$
 
 
@@ -47,9 +47,9 @@ $$
 
 Let $G$ act on itself by conjugation. The class equation is
 $$
-|G|
+\cardinality{G}
 =
-|Z(G)|
+\cardinality{Z(G)}
 +
 \sum_i [G:C_G(x_i)],
 $$
@@ -57,9 +57,9 @@ where the $x_i$ represent the noncentral conjugacy classes. For each noncentral 
 $$
 [G:C_G(x_i)]=p.
 $$
-Thus every term in the sum is divisible by $p$. Since $|G|=p^2$, the class equation gives
+Thus every term in the sum is divisible by $p$. Since $\cardinality{G}=p^2$, the class equation gives
 $$
-|Z(G)|\equiv0\pmod p.
+\cardinality{Z(G)}\equiv0\pmod p.
 $$
 The center contains the identity, so it is nonempty; its order divides $p^2$. Hence its order is $p$ or $p^2$.
 
@@ -69,16 +69,16 @@ The center contains the identity, so it is nonempty; its order divides $p^2$. He
 
 ::: {.pf-step #s1-2}
 
-If $|Z(G)|=p^2$, then $G$ is abelian. If $|Z(G)|=p$, then $G/Z(G)$ is cyclic.
+If $\cardinality{Z(G)}=p^2$, then $G$ is abelian. If $\cardinality{Z(G)}=p$, then $G/Z(G)$ is cyclic.
 
 
 ::: pf-proof
 
-If $|Z(G)|=p^2=|G|$, then $Z(G)=G$, which is precisely the assertion that $G$ is abelian.
+If $\cardinality{Z(G)}=p^2=\cardinality{G}$, then $Z(G)=G$, which is precisely the assertion that $G$ is abelian.
 
-If $|Z(G)|=p$, then
+If $\cardinality{Z(G)}=p$, then
 $$
-|G/Z(G)|=p.
+\cardinality{G/Z(G)}=p.
 $$
 Every group of prime order is cyclic, so $G/Z(G)$ is cyclic.
 

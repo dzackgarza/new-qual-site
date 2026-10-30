@@ -39,7 +39,7 @@ every finite Abelian group $G$ of order $72$ is uniquely a direct product
 $$
 G\cong G_{(2)}\times G_{(3)},
 $$
-where $|G_{(2)}|=2^3$ and $|G_{(3)}|=3^2$.
+where $\cardinality{G_{(2)}}=2^3$ and $\cardinality{G_{(3)}}=3^2$.
 
 
 ::: pf-proof

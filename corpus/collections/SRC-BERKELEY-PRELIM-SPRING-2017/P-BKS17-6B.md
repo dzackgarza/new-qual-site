@@ -31,13 +31,13 @@ audit:
 Let $D$ be the unit disk in the complex plane $\CC$, $f : D \to \CC$ an analytic function with
 
 $$
-|f^{(k)}(0)| \leq M
+\abs{f^{(k)}(0)} \leq M
 $$
 
 for all $k \geq 0$, and let $t_p \in D$, $s_p \in D$ for $1 \leq p \leq n$. For each $n \geq 1$ define $A_{ij} = f(t_i s_j)$ for $1 \leq i, j \leq n$. For each $r \geq 1$ find an $n \times n$ matrix $B$ with rank $\leq r$ and
 
 $$
-|A_{ij} - B_{ij}| \leq \frac{2M}{r!}
+\abs{A_{ij} - B_{ij}} \leq \frac{2M}{r!}
 $$
 
 for $1 \leq i, j \leq n$.
@@ -103,7 +103,7 @@ $$
 
 For every $1\leq i,j\leq n$,
 $$
-|A_{ij}-B_{ij}|
+\abs{A_{ij}-B_{ij}}
 \leq
 M\sum_{k=r}^{\infty}\frac1{k!}.
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-Since $|t_i|<1$ and $|s_j|<1$, one has $|t_is_j|<1$. The Taylor series of $f$ at $0$ therefore converges to $f(t_is_j)$:
+Since $\abs{t_i}<1$ and $\abs{s_j}<1$, one has $\abs{t_is_j}<1$. The Taylor series of $f$ at $0$ therefore converges to $f(t_is_j)$:
 $$
 A_{ij}
 =
@@ -119,12 +119,12 @@ f(t_is_j)
 =
 \sum_{k=0}^{\infty}a_k(t_is_j)^k.
 $$
-Subtracting the truncation from step [](#s1-1){.pf-ref} and using $|f^{(k)}(0)|\leq M$ gives
+Subtracting the truncation from step [](#s1-1){.pf-ref} and using $\abs{f^{(k)}(0)}\leq M$ gives
 $$
 \begin{aligned}
-|A_{ij}-B_{ij}|
+\abs{A_{ij}-B_{ij}}
 &\leq
-\sum_{k=r}^{\infty}\frac{|f^{(k)}(0)|}{k!}|t_is_j|^k\\
+\sum_{k=r}^{\infty}\frac{\abs{f^{(k)}(0)}}{k!}\abs{t_is_j}^k\\
 &\leq
 M\sum_{k=r}^{\infty}\frac1{k!}.
 \end{aligned}
@@ -175,7 +175,7 @@ $$
 \boxed{
 \operatorname{rank}(B)\leq r,
 \qquad
-|A_{ij}-B_{ij}|\leq\frac{2M}{r!}
+\abs{A_{ij}-B_{ij}}\leq\frac{2M}{r!}
 }.
 $$
 

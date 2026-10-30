@@ -126,8 +126,8 @@ Define
 $$
 \delta
 \coloneqq
-\min_{|z-z_0|=r}
-|f(z)-w_0|.
+\min_{\abs{z-z_0}=r}
+\abs{f(z)-w_0}.
 $$
 Then
 $$
@@ -139,11 +139,11 @@ $$
 
 By step [](#s1-3){.pf-ref}, the continuous function
 $$
-|f(z)-w_0|
+\abs{f(z)-w_0}
 $$
 is strictly positive on the compact circle
 $$
-|z-z_0|=r.
+\abs{z-z_0}=r.
 $$
 It therefore attains a positive minimum there.
 
@@ -155,7 +155,7 @@ It therefore attains a positive minimum there.
 
 If
 $$
-|w-w_0|<\delta,
+\abs{w-w_0}<\delta,
 $$
 then $f(z)=w$ has at least one solution in
 $$
@@ -167,17 +167,17 @@ $$
 
 On the circle
 $$
-|z-z_0|=r,
+\abs{z-z_0}=r,
 $$
 one has
 $$
-|(f(z)-w)-(f(z)-w_0)|
+\abs{(f(z)-w)-(f(z)-w_0)}
 =
-|w-w_0|
+\abs{w-w_0}
 <
 \delta
 \le
-|f(z)-w_0|.
+\abs{f(z)-w_0}.
 $$
 
 Rouché's theorem therefore says that
@@ -280,7 +280,7 @@ $\Omega$.
 
 If $f$ is nonconstant on $V_\alpha$, step [](#s1-7){.pf-ref} applied to the restriction
 $$
-f|_{V_\alpha}
+f\restrict_{V_\alpha}
 $$
 shows that
 $$

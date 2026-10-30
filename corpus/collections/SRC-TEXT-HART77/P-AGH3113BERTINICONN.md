@@ -74,10 +74,10 @@ H\subset\PP_k^n,
 $$
 and scheme-theoretically
 $$
-D=f^{-1}(H)=f^*(H|_Z).
+D=f^{-1}(H)=f^*(H\restrict_Z).
 $$
 Since the corresponding section is nonzero, $Z$ is not contained in $H$.
-Thus $H|_Z$ is an effective Cartier divisor on the integral variety $Z$.
+Thus $H\restrict_Z$ is an effective Cartier divisor on the integral variety $Z$.
 
 :::
 
@@ -162,23 +162,23 @@ $$
 For the hyperplane $H$ associated to a member $D\in\mathcal D$, the
 divisor
 $$
-E=g^*(H|_Z)
+E=g^*(H\restrict_Z)
 $$
 is an effective ample Cartier divisor on $Y$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, $H|_Z$ is an effective Cartier divisor and
+By step [](#s1){.pf-ref}, $H\restrict_Z$ is an effective Cartier divisor and
 $$
-\mco_Z(H|_Z)=\mco_{\PP^n}(1)|_Z
+\mco_Z(H\restrict_Z)=\mco_{\PP^n}(1)\restrict_Z
 $$
 is ample.
 Because $g:Y\to Z$ is finite surjective, pullback preserves ampleness by
 [@Har10a, Exercise III.5.7(d)]. Therefore
 $$
-\mco_Y(E)=g^*\mco_Z(H|_Z)
+\mco_Y(E)=g^*\mco_Z(H\restrict_Z)
 $$
-is ample. Pullback of the defining nonzerodivisor of $H|_Z$ remains nonzero
+is ample. Pullback of the defining nonzerodivisor of $H\restrict_Z$ remains nonzero
 on the integral scheme $Y$, so $E$ is an effective Cartier divisor.
 
 :::
@@ -187,16 +187,16 @@ on the integral scheme $Y$, so $E$ is an effective Cartier divisor.
 
 ::: {.pf-step #s5}
 
-The support $|E|$ is connected.
+The support $\divisorsupport{E}$ is connected.
 
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, $Y$ is a normal projective variety of dimension at least $2$.
-By step [](#s4){.pf-ref}, $|E|$ is the support of an effective ample divisor.
+By step [](#s4){.pf-ref}, $\divisorsupport{E}$ is the support of an effective ample divisor.
 The Enriques--Severi--Zariski connectedness theorem
 [@Har10a, Corollary III.7.9] therefore gives
 $$
-\boxed{|E|\text{ is connected}.}
+\boxed{\divisorsupport{E}\text{ is connected}.}
 $$
 
 :::
@@ -253,18 +253,18 @@ Every divisor $D\in\mathcal D$ is connected.
 
 For the hyperplane $H$ corresponding to $D$, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
-D=f^*(H|_Z)
+D=f^*(H\restrict_Z)
 =
-h^*g^*(H|_Z)
+h^*g^*(H\restrict_Z)
 =
 h^*E.
 $$
 Consequently
 $$
-|D|=h^{-1}(|E|).
+\divisorsupport{D}=h^{-1}(\divisorsupport{E}).
 $$
-Step [](#s5){.pf-ref} says that $|E|$ is connected, and step [](#s6){.pf-ref} says its inverse image
-under $h$ is connected. Therefore $|D|$ is connected, which is exactly to say
+Step [](#s5){.pf-ref} says that $\divisorsupport{E}$ is connected, and step [](#s6){.pf-ref} says its inverse image
+under $h$ is connected. Therefore $\divisorsupport{D}$ is connected, which is exactly to say
 that the divisor scheme $D$ is connected.
 
 :::

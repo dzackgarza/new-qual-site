@@ -31,7 +31,7 @@ Show that a group of order 30 has a normal subgroup.
 ::: {.solution}
 Let
 $$
-|G|=30=2\cdot3\cdot5.
+\cardinality{G}=30=2\cdot3\cdot5.
 $$
 We will show that $G$ has a nontrivial proper normal Sylow subgroup.
 

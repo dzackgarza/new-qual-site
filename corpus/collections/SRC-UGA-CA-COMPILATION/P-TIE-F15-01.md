@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-01
 kind: problem
-title: If $\lim_{n\to\infty}|a_{n+1}|/|a_n|=L$ then $\lim_{n\to\infty}|a_n|^{1/n}=L$
+title: If $\lim_{n\to\infty}\abs{a_{n+1}}/\abs{a_n}=L$ then $\lim_{n\to\infty}\abs{a_n}^{1/n}=L$
 classification:
   areas:
   - complex-analysis

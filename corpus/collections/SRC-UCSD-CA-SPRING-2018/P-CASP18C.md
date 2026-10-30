@@ -36,7 +36,7 @@ $$
 H=T\circ F\circ T^{-1}.
 $$
 Then $H(0)=0$ and $H(T(b))=T(b)\ne0$. Schwarz's lemma gives
-$|H(z)|\le|z|$, and equality at a nonzero point forces
+$\abs{H(z)}\le\abs{z}$, and equality at a nonzero point forces
 $$
 H(z)=e^{i\theta}z.
 $$

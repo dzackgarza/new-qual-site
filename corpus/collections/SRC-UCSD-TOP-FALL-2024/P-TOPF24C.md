@@ -54,7 +54,7 @@ The square traced by a loop representing $a$ as it moves through $K\times I$ has
 ::: pf-step
 
 Hence
-$$\boxed{\pi_1(T_f)\cong\left\langle S,t\ \middle|\ R,\ t^{-1}at=f_*(a)\text{ for }a\in S\right\rangle.}$$
+$$\boxed{\pi_1(T_f)\cong\left\langle S,t\ \presentationbar\ R,\ t^{-1}at=f_*(a)\text{ for }a\in S\right\rangle.}$$
 
 ::: pf-proof
 

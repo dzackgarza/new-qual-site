@@ -75,7 +75,7 @@ $$
 x^TA^{2k}x
 =
 \sum_{j=1}^{\ell}
-\|x_j\|_2^2\,\lambda_j^{2k}
+\norm{x_j}_2^2\,\lambda_j^{2k}
 }.
 $$
 
@@ -111,7 +111,7 @@ x^TA^{2k}x
 \right\rangle\\
 &=
 \sum_{j=1}^{\ell}
-\lambda_j^{2k}\|x_j\|_2^2.
+\lambda_j^{2k}\norm{x_j}_2^2.
 \end{aligned}
 $$
 
@@ -130,7 +130,7 @@ $$
 M(x)
 =
 \max\left\{
-|\lambda_j|^2:
+\abs{\lambda_j}^2:
 x_j\ne0
 \right\}.
 $$
@@ -152,9 +152,9 @@ $$
 x^TA^{2k}x
 =
 \sum_{j:x_j\ne0}
-\|x_j\|_2^2
+\norm{x_j}_2^2
 \left(
-|\lambda_j|^2
+\abs{\lambda_j}^2
 \right)^k.
 $$
 Let
@@ -165,11 +165,11 @@ Choose an index $j_0$ with
 $$
 x_{j_0}\ne0
 \qquad\text{and}\qquad
-|\lambda_{j_0}|^2=M.
+\abs{\lambda_{j_0}}^2=M.
 $$
 Then
 $$
-\|x_{j_0}\|_2^2 M^k
+\norm{x_{j_0}}_2^2 M^k
 \le
 x^TA^{2k}x.
 $$
@@ -178,21 +178,21 @@ $$
 x^TA^{2k}x
 \le
 \left(
-\sum_j\|x_j\|_2^2
+\sum_j\norm{x_j}_2^2
 \right)
 M^k
 =
-\|x\|_2^2M^k.
+\norm{x}_2^2M^k.
 $$
 Taking $k$th roots gives
 $$
-\|x_{j_0}\|_2^{2/k}M
+\norm{x_{j_0}}_2^{2/k}M
 \le
 \left(
 x^TA^{2k}x
 \right)^{1/k}
 \le
-\|x\|_2^{2/k}M.
+\norm{x}_2^{2/k}M.
 $$
 Both scalar factors tend to $1$ as $k\to\infty$.
 Hence the squeeze theorem gives the stated limit.
@@ -258,12 +258,12 @@ $$
 For $x\ne0$, step [](#s1-3){.pf-ref} says that the limit equals
 $$
 \max\left\{
-|\lambda_j|^2:x_j\ne0
+\abs{\lambda_j}^2:x_j\ne0
 \right\}.
 $$
 Since the eigenvalues are real,
 $$
-|\lambda_j|^2=\lambda_j^2.
+\abs{\lambda_j}^2=\lambda_j^2.
 $$
 The maximum of a finite nonempty subset of the numbers $\lambda_j^2$ is one of those numbers.
 
@@ -300,10 +300,10 @@ v^TA^{2k}v
 \right)^{1/k}
 &=
 \left(
-\|v\|_2^2\lambda_j^{2k}
+\norm{v}_2^2\lambda_j^{2k}
 \right)^{1/k}\\
 &=
-\|v\|_2^{2/k}\lambda_j^2
+\norm{v}_2^{2/k}\lambda_j^2
 \longrightarrow
 \lambda_j^2.
 \end{aligned}

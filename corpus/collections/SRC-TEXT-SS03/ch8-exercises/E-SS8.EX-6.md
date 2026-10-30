@@ -46,13 +46,13 @@ Hence
 $$
 p_xq_x+p_yq_y=0,
 \qquad
-p_x^2+p_y^2=q_x^2+q_y^2=|F'|^2.
+p_x^2+p_y^2=q_x^2+q_y^2=\abs{F'}^2.
 $$
 Moreover the real and imaginary parts $p,q$ of a holomorphic function are harmonic, so $\Delta p=\Delta q=0$. Therefore
 $$
 \Delta(u\circ F)
-=|F'|^2(u_{pp}+u_{qq})\circ F
-=|F'|^2(\Delta u)\circ F=0.
+=\abs{F'}^2(u_{pp}+u_{qq})\circ F
+=\abs{F'}^2(\Delta u)\circ F=0.
 $$
 Thus $u\circ F$ is harmonic.
 :::

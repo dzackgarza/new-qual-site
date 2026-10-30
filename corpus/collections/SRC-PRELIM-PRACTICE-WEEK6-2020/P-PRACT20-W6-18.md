@@ -19,7 +19,7 @@ If X is drawn uniformly from [0, 3] and Y is drawn uniformly from [0, 4], what i
 We can split this up into the cases that $Y \in [ 0 , 3 ]$ or $Y \in ( 3 , 4 ]$ . Since these cases are disjoint and cover all possibilities, the law of total probability says that
 
 $$
-\operatorname* { P r o b } \{ X < Y \} = \operatorname* { P r o b } \{ X < Y | Y \leq 3 \} \operatorname* { P r o b } \{ Y \leq 3 \} + \operatorname* { P r o b } \{ X < Y | Y > 3 \} \operatorname* { P r o b } \{ Y > 3 \} .
+\operatorname* { P r o b } \{ X < Y \} = \operatorname* { P r o b } \{ X < Y \given Y \leq 3 \} \operatorname* { P r o b } \{ Y \leq 3 \} + \operatorname* { P r o b } \{ X < Y \given Y > 3 \} \operatorname* { P r o b } \{ Y > 3 \} .
 $$
 
 Given that $Y \le 3 , Y$ is distributed uniformly in $[ 0 , 3 ]$ and so by symmetry, the probability that $X < Y$ is $1 / 2$ . If $Y > 3$ , then probability that $X < Y$ is 1. Thus we have

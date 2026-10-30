@@ -50,6 +50,6 @@ Because every $a_i\ge1$, this sequence contains infinitely many separator zeros,
 
 By Schroeder--Bernstein,
 $$
-\boxed{|D|=|E|}.
+\boxed{\cardinality{D}=\cardinality{E}}.
 $$
 :::

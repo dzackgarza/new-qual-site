@@ -73,13 +73,13 @@ $$
 \begin{aligned}
 \Res(F;-1)
 &=
-\left.
+\evaluated{
 \frac{d}{dz}z^{1/2}
-\right|_{z=-1}\\
+}_{z=-1}\\
 &=
-\left.
+\evaluated{
 \frac1{2z^{1/2}}
-\right|_{z=-1}\\
+}_{z=-1}\\
 &=
 \frac1{2i}
 =

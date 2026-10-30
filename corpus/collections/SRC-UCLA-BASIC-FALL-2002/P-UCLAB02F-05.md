@@ -20,7 +20,7 @@ Suppose $f:\RR^2\to\RR$ has partial derivatives at every point and both partial 
 
 (a) Show that there is an $M>0$ such that
 $$
-|f(x,y)-f(x_1,y_1)|
+\abs{f(x,y)-f(x_1,y_1)}
 \le M\sqrt{(x-x_1)^2+(y-y_1)^2}
 $$
 for all $(x,y),(x_1,y_1)\in\RR^2$.
@@ -38,9 +38,9 @@ for all $(x,y),(x_1,y_1)\in\RR^2$.
 
 For all $(x,y),(x_1,y_1)\in\RR^2$,
 $$
-|f(x,y)-f(x_1,y_1)|
+\abs{f(x,y)-f(x_1,y_1)}
 \le
-A|x-x_1|+A|y-y_1|.
+A\abs{x-x_1}+A\abs{y-y_1}.
 $$
 
 
@@ -48,23 +48,23 @@ $$
 
 Insert the intermediate point $(x_1,y)$ and use the triangle inequality:
 $$
-|f(x,y)-f(x_1,y_1)|
+\abs{f(x,y)-f(x_1,y_1)}
 \le
-|f(x,y)-f(x_1,y)|
+\abs{f(x,y)-f(x_1,y)}
 +
-|f(x_1,y)-f(x_1,y_1)|.
+\abs{f(x_1,y)-f(x_1,y_1)}.
 $$
 For the one-variable function $u\mapsto f(u,y)$, the derivative is the first partial derivative of $f$, whose absolute value is at most $A$. The mean value theorem therefore gives
 $$
-|f(x,y)-f(x_1,y)|
+\abs{f(x,y)-f(x_1,y)}
 \le
-A|x-x_1|.
+A\abs{x-x_1}.
 $$
 Likewise, applying the mean value theorem to $v\mapsto f(x_1,v)$ gives
 $$
-|f(x_1,y)-f(x_1,y_1)|
+\abs{f(x_1,y)-f(x_1,y_1)}
 \le
-A|y-y_1|.
+A\abs{y-y_1}.
 $$
 Combining these inequalities proves the claim.
 
@@ -85,9 +85,9 @@ $$
 By step [](#s1-1){.pf-ref} and the Cauchy--Schwarz inequality,
 $$
 \begin{aligned}
-|f(x,y)-f(x_1,y_1)|
+\abs{f(x,y)-f(x_1,y_1)}
 &\le
-A\bigl(|x-x_1|+|y-y_1|\bigr)\\
+A\bigl(\abs{x-x_1}+\abs{y-y_1}\bigr)\\
 &\le
 A\sqrt2\sqrt{(x-x_1)^2+(y-y_1)^2}.
 \end{aligned}
@@ -115,7 +115,7 @@ f_x=f_y=A,
 $$
 so the hypotheses are satisfied. Taking $(x_1,y_1)=(0,0)$ and $(x,y)=(1,1)$ gives
 $$
-|f(1,1)-f(0,0)|=2A
+\abs{f(1,1)-f(0,0)}=2A
 $$
 and
 $$
@@ -152,9 +152,9 @@ $$
 $$
 Then
 $$
-|f(x,y)-f(x_1,y_1)|
+\abs{f(x,y)-f(x_1,y_1)}
 =
-2A|t|,
+2A\abs{t},
 $$
 while
 $$
@@ -162,7 +162,7 @@ A\sqrt2\sqrt{(x-x_1)^2+(y-y_1)^2}
 =
 A\sqrt2\sqrt{2t^2}
 =
-2A|t|.
+2A\abs{t}.
 $$
 Thus equality holds.
 

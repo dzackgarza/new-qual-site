@@ -113,9 +113,9 @@ This is the Darboux definition of Riemann integrability.
 
 For every $\varepsilon>0$, there exists $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(y)|<\varepsilon
+\abs{f(x)-f(y)}<\varepsilon
 $$
 for all $x,y\in[0,1]$.
 
@@ -146,9 +146,9 @@ whose mesh satisfies
 $$
 \max_i(x_i-x_{i-1})<\delta.
 $$
-If $x,y$ lie in the same subinterval $[x_{i-1},x_i]$, then $|x-y|<\delta$, so
+If $x,y$ lie in the same subinterval $[x_{i-1},x_i]$, then $\abs{x-y}<\delta$, so
 $$
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 Hence
 $$

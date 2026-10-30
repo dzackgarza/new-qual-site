@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W13SP
 kind: problem
-title: A subgroup of index equal to the smallest prime dividing $|G|$ is normal
+title: A subgroup of index equal to the smallest prime dividing $\cardinality{G}$ is normal
 classification:
   areas:
   - algebra
@@ -51,7 +51,7 @@ homomorphism $\rho:G\to\operatorname{Sym}(X)$.
 
 Its kernel $K$ is normal. Every $k\in K$ fixes $H\in X$,
 so $kH=H$ and $k\in H$. The first isomorphism theorem
-identifies $G/K$ with $\rho(G)$ [@DF04]. Since $|X|=p$,
+identifies $G/K$ with $\rho(G)$ [@DF04]. Since $\cardinality{X}=p$,
 the group $\operatorname{Sym}(X)$ has order $p!$.
 Lagrange's theorem therefore gives $[G:K]\mid p!$.
 
@@ -71,10 +71,10 @@ $$
 $$
 Since $pm\mid p!=p(p-1)!$, cancellation of the positive
 integer $p$ gives $m\mid(p-1)!$. Also $m$ divides
-$|H|$, which divides $|G|$.
+$\cardinality{H}$, which divides $\cardinality{G}$.
 
 If $m>1$, it has a prime divisor $q$. Divisibility by
-$(p-1)!$ implies $q\leq p-1$, whereas $q\mid|G|$
+$(p-1)!$ implies $q\leq p-1$, whereas $q\mid\cardinality{G}$
 and the definition of $p$ imply $q\geq p$. This is a
 contradiction. Hence $m=1$ and $H=K$. By step [](#s1){.pf-ref},
 $H$ is normal in $G$.

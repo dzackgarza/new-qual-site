@@ -63,7 +63,7 @@ $$
 ::: {.pf-step #equals-norm-squared}
 One has
 $$
-x^*A^*Ax=\|Ax\|^2.
+x^*A^*Ax=\norm{Ax}^2.
 $$
 
 ::: pf-proof
@@ -74,7 +74,7 @@ x^*A^*Ax
 =
 \langle Ax,Ax\rangle
 =
-\|Ax\|^2.
+\norm{Ax}^2.
 $$
 :::
 
@@ -89,7 +89,7 @@ $$
 ::: pf-proof
 Steps [](#x-star-A-star-A-x-zero){.pf-ref} and [](#equals-norm-squared){.pf-ref} give
 $$
-\|Ax\|^2=0.
+\norm{Ax}^2=0.
 $$
 Positive definiteness of the norm implies $Ax=0$.
 :::

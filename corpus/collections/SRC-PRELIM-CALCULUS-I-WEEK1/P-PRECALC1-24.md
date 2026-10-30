@@ -268,7 +268,7 @@ $$
 
 The point $c_x$ lies between $0$ and $x$, so
 $$
-|c_x|\le|x|.
+\abs{c_x}\le\abs{x}.
 $$
 
 :::

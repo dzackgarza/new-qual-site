@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $A$ be a set and $1 < p < \infty$.
-Prove that a sequence $f_n \in \ell^p(A)$ converges weakly to $f \in \ell^p(A)$ if and only if $(f_n)$ converges to $f$ pointwise and $\sup_n \|f_n\|_p < \infty$.
+Prove that a sequence $f_n \in \ell^p(A)$ converges weakly to $f \in \ell^p(A)$ if and only if $(f_n)$ converges to $f$ pointwise and $\sup_n \norm{f_n}_p < \infty$.
 :::
 
 ::: {.solution}
@@ -45,7 +45,7 @@ $$
 $$
 Then
 $$
-|\delta_a(h)|\le \|h\|_p,
+\abs{\delta_a(h)}\le \norm{h}_p,
 $$
 so $\delta_a\in(\ell^p(A))^*$. If $f_n\rightharpoonup f$, then
 $$
@@ -71,15 +71,15 @@ T_n(\varphi)=\varphi(f_n).
 $$
 For each fixed $\varphi$, weak convergence of $f_n$ makes the scalar sequence $T_n(\varphi)$ convergent, hence bounded. Since $(\ell^p(A))^*$ is Banach, the Uniform Boundedness Principle gives
 $$
-\sup_n\|T_n\|<\infty.
+\sup_n\norm{T_n}<\infty.
 $$
 Under the canonical embedding of a normed space into its bidual,
 $$
-\|T_n\|=\|f_n\|_p.
+\norm{T_n}=\norm{f_n}_p.
 $$
 Therefore
 $$
-\sup_n\|f_n\|_p<\infty.
+\sup_n\norm{f_n}_p<\infty.
 $$
 
 :::
@@ -97,7 +97,7 @@ $$
 f_n(a)\to f(a)
 \quad\text{for every }a\in A,
 \qquad
-\sup_n\|f_n\|_p\le M.
+\sup_n\norm{f_n}_p\le M.
 $$
 Let $g\in\ell^q(A)$. Since $q<\infty$, finitely supported functions are dense in $\ell^q(A)$. Thus for every $\varepsilon>0$ there is a finite set $F\subset A$ such that, with
 $$
@@ -105,7 +105,7 @@ g_F:=g\mathbf1_F,
 $$
 we have
 $$
-\|g-g_F\|_q<\varepsilon.
+\norm{g-g_F}_q<\varepsilon.
 $$
 
 For the finite-support part,
@@ -119,20 +119,20 @@ by pointwise convergence.
 For the tail, Hölder's inequality gives
 $$
 \begin{aligned}
-\left|
+\abs{
 \sum_{a\in A}(f_n(a)-f(a))(g(a)-g_F(a))
-\right|
-&\le \|f_n-f\|_p\,\|g-g_F\|_q\\
-&\le (M+\|f\|_p)\varepsilon.
+}
+&\le \norm{f_n-f}_p\,\norm{g-g_F}_q\\
+&\le (M+\norm{f}_p)\varepsilon.
 \end{aligned}
 $$
 Hence
 $$
 \limsup_{n\to\infty}
-\left|
+\abs{
 \sum_{a\in A}(f_n(a)-f(a))g(a)
-\right|
-\le (M+\|f\|_p)\varepsilon.
+}
+\le (M+\norm{f}_p)\varepsilon.
 $$
 Since $\varepsilon$ is arbitrary,
 $$

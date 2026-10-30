@@ -102,7 +102,7 @@ W=\Spec C.
 $$
 Both restrictions
 $$
-f_i|_W,\quad f_j|_W
+f_i\restrict_W,\quad f_j\restrict_W
 $$
 correspond to the same ring homomorphism
 $$
@@ -115,7 +115,7 @@ $$
 because both maps are obtained by restricting the same global sections.
 Thus
 $$
-f_i|_W=f_j|_W.
+f_i\restrict_W=f_j\restrict_W.
 $$
 Since the affine opens $W$ cover $U_i\cap U_j$, the morphisms $f_i$ and
 $f_j$ agree on the whole overlap.
@@ -174,7 +174,7 @@ A\longrightarrow B_i.
 $$
 The affine correspondence therefore gives
 $$
-f|_{U_i}=g|_{U_i}
+f\restrict_{U_i}=g\restrict_{U_i}
 $$
 for every $i$, so
 $$

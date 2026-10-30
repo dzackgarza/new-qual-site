@@ -101,7 +101,7 @@ Fix $\varepsilon>0$. By step [](#s1-2){.pf-ref}, choose
 $$
 h=e^{2\pi i\theta}\in H\setminus\{1\}
 $$
-with $0<|\theta|<\varepsilon$, after choosing the representative $\theta\in(-1/2,1/2]$. Replacing $h$ by $h^{-1}$ if necessary, assume $0<\theta<\varepsilon$.
+with $0<\abs{\theta}<\varepsilon$, after choosing the representative $\theta\in(-1/2,1/2]$. Replacing $h$ by $h^{-1}$ if necessary, assume $0<\theta<\varepsilon$.
 
 Let $N=\lfloor1/\theta\rfloor$. The points
 $$

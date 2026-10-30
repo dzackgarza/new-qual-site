@@ -66,7 +66,7 @@ For $0\le s<t\le1$,
 $$
 g'(t)-g'(s)
 \ge
-c(t-s)\|v\|^2
+c(t-s)\norm{v}^2
 \ge0.
 $$
 
@@ -95,7 +95,7 @@ the hypothesis gives
 $$
 \bigl(\nabla f(x_t)-\nabla f(x_s)\bigr)\cdot((t-s)v)
 \ge
-c(t-s)^2\|v\|^2.
+c(t-s)^2\norm{v}^2.
 $$
 Divide by the positive number $t-s$ to obtain the displayed inequality.
 

@@ -38,7 +38,7 @@ Slices over an evenly covered set:
 
 By the definition of an evenly covered open set, there exists a partition of $p^{-1}(U)$ into a collection of pairwise disjoint open sets $\{V_\alpha\}_{\alpha \in A}$ in $E$:
     $$p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,$$
-    such that for each $\alpha \in A$, the restriction $p|_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
+    such that for each $\alpha \in A$, the restriction $p\restrict_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
 
 :::
 
@@ -61,7 +61,7 @@ Connectedness and clopen property of slices:
 
 ::: pf-step
 
-Because $U$ is connected and $p|_{V_\alpha}: V_\alpha \to U$ is a homeomorphism, the topological property of connectedness is preserved: each slice $V_\alpha$ is a connected subspace of $E$.
+Because $U$ is connected and $p\restrict_{V_\alpha}: V_\alpha \to U$ is a homeomorphism, the topological property of connectedness is preserved: each slice $V_\alpha$ is a connected subspace of $E$.
 
 :::
 

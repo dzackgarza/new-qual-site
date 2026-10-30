@@ -148,9 +148,9 @@ $$
 $$
 whenever
 $$
-|s|<\varepsilon,
+\abs{s}<\varepsilon,
 \qquad
-|t|<\varepsilon.
+\abs{t}<\varepsilon.
 $$
 
 
@@ -181,7 +181,7 @@ z(s,t)
 $$
 for
 $$
-|s|,|t|<\varepsilon.
+\abs{s},\abs{t}<\varepsilon.
 $$
 
 

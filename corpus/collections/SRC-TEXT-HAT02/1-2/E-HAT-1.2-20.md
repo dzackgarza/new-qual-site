@@ -67,7 +67,7 @@ g:X\to W
 $$
 such that each restriction
 $$
-g|_{C_n}:C_n\to S^1_n
+g\restrict_{C_n}:C_n\to S^1_n
 $$
 has degree one.
 
@@ -90,7 +90,7 @@ is exactly the wedge point.
 Hence $g$ is continuous at $o$, regardless of how small the prescribed neighborhoods of the wedge point are on the individual circles of $W$.
 
 If $x\in X\setminus\{o\}$, then $x$ lies on a unique circle $C_n$ and has a sufficiently small Euclidean neighborhood in $X$ meeting no other $C_m$.
-Thus continuity at such $x$ reduces to continuity of $g|_{C_n}$.
+Thus continuity at such $x$ reduces to continuity of $g\restrict_{C_n}$.
 
 :::
 
@@ -106,7 +106,7 @@ is homotopic to the identity on $W$.
 
 ::: pf-proof
 
-On each circle $S^1_n$, the restriction $gf|_{S^1_n}$ is a based map of degree one.
+On each circle $S^1_n$, the restriction $gf\restrict_{S^1_n}$ is a based map of degree one.
 Every based degree-one self-map of $S^1$ is based-homotopic to the identity.
 Choose such a homotopy on each $S^1_n$, fixing the wedge point throughout.
 Because $W$ has the CW weak topology, these circlewise homotopies assemble to a continuous homotopy on $W$.

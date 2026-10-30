@@ -138,11 +138,11 @@ $$
 $$
 If
 $$
-|\phi'(0)|<1
+\abs{\phi'(0)}<1
 $$
 the orbit is attractive; if
 $$
-|\phi'(0)|>1
+\abs{\phi'(0)}>1
 $$
 it is repellant. In the oriented surface convention of the source, the
 monodromy preserves transverse orientation, so

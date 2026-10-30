@@ -131,7 +131,7 @@ $$
 
 Since
 $$
-|F(x)|<1,
+\abs{F(x)}<1,
 $$
 one may divide the differential equation in step [](#s1-2){.pf-ref} by
 $$

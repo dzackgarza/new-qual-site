@@ -24,7 +24,7 @@ For each part, determine if it is always true or sometimes false.
 If true give a brief proof.
 If false give a counterexample.
 
-(a) If $f \in H(B(1; 1) \setminus \{1\})$ with $|f(z)| \leq \frac{1}{|z - 1|}$ for all $z \in B(1; 1) \setminus \{1\}$, then $f$ extends to a meromorphic (or possibly analytic) function on $B(1; 1)$.
+(a) If $f \in H(B(1; 1) \setminus \{1\})$ with $\abs{f(z)} \leq \frac{1}{\abs{z - 1}}$ for all $z \in B(1; 1) \setminus \{1\}$, then $f$ extends to a meromorphic (or possibly analytic) function on $B(1; 1)$.
 
 (b) Suppose that $f \in H(\{z \in B(0; 1) : \operatorname{Re} z > 0\})$ and extends continuously to the line segment $I = \{it : -1 < t < 1\}$.
 If $f(I) \subset i\RR$, then $f$ extends to an analytic function in $B(0; 1)$.
@@ -32,11 +32,11 @@ If $f(I) \subset i\RR$, then $f$ extends to an analytic function in $B(0; 1)$.
 (c) If $G \subset \CC$ is open, connected, and simply connected, and $f \in H(G)$ with $f'(z) \neq 0$ for all $z \in G$, then $f(G)$ is also open, connected, and simply connected.
 
 (d) Let $G \subset \CC$ be connected and open and $f \in H(G)$ nonconstant.
-If $f(z) \neq 0$ for all $z \in G$, then $|f|$ does not reach a minimum at any point in $G$.
+If $f(z) \neq 0$ for all $z \in G$, then $\abs{f}$ does not reach a minimum at any point in $G$.
 
 (e) Let $f$ be an analytic function element defined in $B(1/2; 1/4)$.
 Suppose that $f$ continues analytically along any path $\gamma$ from $\gamma(0) \in B(1/2; 1/4)$ to $\gamma(1) \in B(0; 1) \setminus \{0\}$.
-Then there is a function $F \in H(B(0; 1) \setminus \{0\})$ such that $F|_{B(1/2; 1/4)} = f$.
+Then there is a function $F \in H(B(0; 1) \setminus \{0\})$ such that $F\restrict_{B(1/2; 1/4)} = f$.
 :::
 
 ::: {.solution}
@@ -45,7 +45,7 @@ Then there is a function $F \in H(B(0; 1) \setminus \{0\})$ such that $F|_{B(1/2
 
 ::: pf-step
 
-(a) **True.** Put $g(z)=(z-1)f(z)$. Then $|g(z)|\le1$ on the punctured disk, so $g$ has a removable singularity at $1$. Hence $f(z)=\widetilde g(z)/(z-1)$ has at worst a simple pole at $1$ and extends meromorphically.
+(a) **True.** Put $g(z)=(z-1)f(z)$. Then $\abs{g(z)}\le1$ on the punctured disk, so $g$ has a removable singularity at $1$. Hence $f(z)=\widetilde g(z)/(z-1)$ has at worst a simple pole at $1$ and extends meromorphically.
 
 :::
 
@@ -67,7 +67,7 @@ For $z=it\in I$, one has $-\bar z=z$, and $f(it)\in i\RR$ implies $-\overline{f(
 
 ::: pf-step
 
-(d) **True.** Since $f$ has no zero, $1/f$ is holomorphic. An interior minimum of $|f|$ would give an interior maximum of $|1/f|$, forcing $f$ to be constant by the maximum-modulus principle.
+(d) **True.** Since $f$ has no zero, $1/f$ is holomorphic. An interior minimum of $\abs{f}$ would give an interior maximum of $\abs{1/f}$, forcing $f$ to be constant by the maximum-modulus principle.
 
 :::
 

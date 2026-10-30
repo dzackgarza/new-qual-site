@@ -22,11 +22,11 @@ audit:
 Let $G$ be a finite group.
 For any $x \in G$ $$Z_G(x) = \{g \in G : gxg^{-1} = x\}$$ is the centralizer of $x$ in $G$ and $$x^G = \{gxg^{-1} : g \in G\}$$ is the conjugacy class of $x$ in $G$.
 
-a. Show that $|x^G| = [G : Z_G(x)]$.
+a. Show that $\cardinality{x^G} = [G : Z_G(x)]$.
 
 b. If $H \le G$ and $x \in H$, prove that $Z_H(x) = H \cap Z_G(x)$.
 
-c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $|x^H| = |x^G|$ or $|x^H| = \frac{1}{2}|x^G|$.
+c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $\cardinality{x^H} = \cardinality{x^G}$ or $\cardinality{x^H} = \frac{1}{2}\cardinality{x^G}$.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $|x^H
 
 For part (a),
 $$
-\boxed{\lvert x^G\rvert=[G:Z_G(x)]}.
+\boxed{\cardinality{ x^G}=[G:Z_G(x)]}.
 $$
 
 ::: pf-proof
@@ -49,7 +49,7 @@ $$
 The orbit of $x$ is exactly $x^G$, and its stabilizer is exactly
 $Z_G(x)$. The orbit-stabilizer theorem therefore gives
 $$
-\lvert x^G\rvert=[G:Z_G(x)].
+\cardinality{ x^G}=[G:Z_G(x)].
 $$
 Equivalently, the map
 $$
@@ -89,29 +89,29 @@ also lie in $Z_G(x)$.
 
 Under the hypotheses of part (c),
 $$
-2\lvert x^H\rvert
-=\lvert x^G\rvert[Z_G(x):Z_H(x)].
+2\cardinality{ x^H}
+=\cardinality{ x^G}[Z_G(x):Z_H(x)].
 $$
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, applied in $G$ and in $H$,
 $$
-\lvert x^G\rvert=[G:Z_G(x)],
+\cardinality{ x^G}=[G:Z_G(x)],
 \qquad
-\lvert x^H\rvert=[H:Z_H(x)].
+\cardinality{ x^H}=[H:Z_H(x)].
 $$
 Because $Z_H(x)\le H\le G$ and $[G:H]=2$,
 $$
 [G:Z_H(x)]
 =2[H:Z_H(x)]
-=2\lvert x^H\rvert.
+=2\cardinality{ x^H}.
 $$
 By step [](#s2){.pf-ref}, $Z_H(x)\le Z_G(x)\le G$, so also
 $$
 [G:Z_H(x)]
 =[G:Z_G(x)][Z_G(x):Z_H(x)]
-=\lvert x^G\rvert[Z_G(x):Z_H(x)].
+=\cardinality{ x^G}[Z_G(x):Z_H(x)].
 $$
 Equating the two expressions proves the claim.
 
@@ -149,19 +149,19 @@ so the index is either $1$ or $2$.
 
 Therefore either
 $$
-\boxed{\lvert x^H\rvert=\lvert x^G\rvert}
+\boxed{\cardinality{ x^H}=\cardinality{ x^G}}
 $$
 or
 $$
-\boxed{\lvert x^H\rvert=\frac12\lvert x^G\rvert}.
+\boxed{\cardinality{ x^H}=\frac12\cardinality{ x^G}}.
 $$
 
 ::: pf-proof
 
 Insert the two possibilities from step [](#s4){.pf-ref} into the identity of step
 step [](#s3){.pf-ref}. If the centralizer index is $2$, then
-$2\lvert x^H\rvert=2\lvert x^G\rvert$. If it is $1$, then
-$2\lvert x^H\rvert=\lvert x^G\rvert$.
+$2\cardinality{ x^H}=2\cardinality{ x^G}$. If it is $1$, then
+$2\cardinality{ x^H}=\cardinality{ x^G}$.
 
 :::
 

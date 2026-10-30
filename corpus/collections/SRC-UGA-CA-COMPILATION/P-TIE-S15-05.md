@@ -22,12 +22,12 @@ audit:
 
 ::: {.problem}
 (1) Let $p(z)$ be a nonzero polynomial, $R > 0$ any positive number, and $m \geq 1$ an integer.
-Let $M_{R} = \sup\{ |z^{m} p(z) - 1| : |z| = R \}$. Show that $M_{R} > 1$.
+Let $M_{R} = \sup\{ \abs{z^{m} p(z) - 1} : \abs{z} = R \}$. Show that $M_{R} > 1$.
 
-(2) Let $m \geq 1$ be an integer and $K = \{ z \in \CC : r \leq |z| \leq R \}$ where $0 < r < R$. Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon_{0} > 0$ such that for each polynomial $p(z)$,
+(2) Let $m \geq 1$ be an integer and $K = \{ z \in \CC : r \leq \abs{z} \leq R \}$ where $0 < r < R$. Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon_{0} > 0$ such that for each polynomial $p(z)$,
 
 $$
-\sup\{ |p(z) - z^{-m}| : z \in K \} \geq \varepsilon_{0}.
+\sup\{ \abs{p(z) - z^{-m}} : z \in K \} \geq \varepsilon_{0}.
 $$
 :::
 

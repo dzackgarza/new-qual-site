@@ -21,7 +21,7 @@ Use the Cauchy inequalities or the maximum modulus principle to solve the follow
 
 (a) Prove that if $f$ is an entire function that satisfies
 $$
-\sup _{|z|=R}|f(z)| \leq A R^{k}+B
+\sup _{\abs{z}=R}\abs{f(z)} \leq A R^{k}+B
 $$
 for all $R>0$, some integer $k\geq 0$, and some constants $A, B > 0$, then $f$ is a polynomial of degree $\leq k$.
 

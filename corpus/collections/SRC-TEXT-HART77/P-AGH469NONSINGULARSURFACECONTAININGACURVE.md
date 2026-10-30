@@ -66,7 +66,7 @@ E_P=\pi^{-1}(P)
 $$
 is a projective line and
 $$
-\OO_{\widetilde{\PP^3}}(-E)|_{E_P}\cong\OO_{\PP^1}(1).
+\OO_{\widetilde{\PP^3}}(-E)\restrict_{E_P}\cong\OO_{\PP^1}(1).
 $$
 
 ::: pf-proof
@@ -80,7 +80,7 @@ E\cong\PP_X(\mci_X/\mci_X^2),
 $$
 and
 $$
-\OO_{\widetilde{\PP^3}}(-E)|_E\cong\OO_E(1).
+\OO_{\widetilde{\PP^3}}(-E)\restrict_E\cong\OO_E(1).
 $$
 Since the conormal bundle $\mci_X/\mci_X^2$ has rank $2$, every fibre of $E\to X$ is $\PP^1$, and restriction of the last identity gives the claimed $\OO_{\PP^1}(1)$.
 
@@ -143,17 +143,17 @@ Each exceptional fibre $E_P$ is mapped isomorphically to a line in $\PP^N$.
 
 On the fibre $E_P$, the pullback
 $$
-\pi^*\OO_{\PP^3}(m)|_{E_P}
+\pi^*\OO_{\PP^3}(m)\restrict_{E_P}
 $$
 is trivial.
 Step [](#s1){.pf-ref} therefore gives
 $$
-L_m|_{E_P}\cong\OO_{\PP^1}(1).
+L_m\restrict_{E_P}\cong\OO_{\PP^1}(1).
 $$
 The restriction of a projective embedding remains a closed immersion.
 Its image therefore has degree
 $$
-\deg L_m|_{E_P}=1,
+\deg L_m\restrict_{E_P}=1,
 $$
 so it is a line in $\PP^N$.
 

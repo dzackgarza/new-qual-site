@@ -93,9 +93,9 @@ $$
 Integration gives
 $$
 \frac1{b-a}
-\log\left|
+\log\abs{
 \frac{b-C}{a-C}
-\right|
+}
 =
 \alpha t
 +
@@ -109,7 +109,7 @@ Use
 $$
 \int\frac{dC}{a-C}
 =
--\log|a-C|
+-\log\abs{a-C}
 $$
 and the analogous formula with $b$.
 
@@ -124,7 +124,7 @@ $$
 K
 =
 \frac1{b-a}
-\log\left|\frac ba\right|
+\log\abs{\frac ba}
 $$
 when $ab\neq0$.
 

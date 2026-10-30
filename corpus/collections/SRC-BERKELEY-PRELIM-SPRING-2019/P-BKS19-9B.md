@@ -107,7 +107,7 @@ No $\tau\in S_6$ can satisfy $\tau^2=\sigma$.
 
 Suppose such a $\tau$ existed. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, its restriction to $\{5,6\}$ would be a permutation of that two-element set and would satisfy
 $$
-\left(\tau|_{\{5,6\}}\right)^2=(5\ 6).
+\left(\tau\restrict_{\{5,6\}}\right)^2=(5\ 6).
 $$
 But the only permutations of a two-element set are the identity and the transposition, and both have square equal to the identity. This is impossible.
 

@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $u: \CC \to \RR$ be a harmonic function such that $\iint |u(x+iy)|^2 \, dx\,dy < \infty$.
+Let $u: \CC \to \RR$ be a harmonic function such that $\iint \abs{u(x+iy)}^2 \, dx\,dy < \infty$.
 
 (a) Prove that $u(a) = \frac{1}{\pi r^2} \iint_{B_r(a)} u(x+iy)\,dx\,dy$ for every $a \in \CC$ and $r > 0$.
-Here $B_r(a) = \{z \in \CC : |z - a| < r\}$.
+Here $B_r(a) = \{z \in \CC : \abs{z - a} < r\}$.
 
 (b) Prove that $u(z) = 0$ for every $z \in \CC$.
 :::
@@ -38,11 +38,11 @@ $$
 
 For (b), Cauchy--Schwarz gives
 $$
-|u(a)|
+\abs{u(a)}
 \le \frac1{\pi r^2}
 \left(\pi r^2\right)^{1/2}
-\left(\iint_{B_r(a)}|u|^2\right)^{1/2}
-\le \frac{\|u\|_{L^2(\CC)}}{\sqrt\pi\,r}.
+\left(\iint_{B_r(a)}\abs{u}^2\right)^{1/2}
+\le \frac{\norm{u}_{L^2(\CC)}}{\sqrt\pi\,r}.
 $$
 Letting $r\to\infty$ yields $u(a)=0$. Since $a$ was arbitrary, $u\equiv0$.
 :::

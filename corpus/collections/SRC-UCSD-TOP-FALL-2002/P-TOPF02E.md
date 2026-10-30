@@ -46,7 +46,7 @@ $$
 ::: pf-proof
 By step [](#rational-homology){.pf-ref}, the only nonzero rational homology group is $H_0$, and any self-map of a connected space induces the identity on $H_0$. Therefore
 $$
-L(f)=\sum_k(-1)^k\operatorname{tr}(f_*|H_k(-;\QQ))=1.
+L(f)=\sum_k(-1)^k\operatorname{tr}(f_*\restrict H_k(-;\QQ))=1.
 $$
 :::
 

@@ -32,7 +32,7 @@ G(x)
 \coloneqq
 \sum_{n=1}^{\infty}
 \frac1{\sqrt n}
-|f(x-\sqrt n)|.
+\abs{f(x-\sqrt n)}.
 $$
 
 ::: pf
@@ -57,7 +57,7 @@ $$
 \sum_{n=1}^{\infty}
 \frac1{\sqrt n}
 \int_{M-\sqrt n}^{M+1-\sqrt n}
-|f(y)|\,dy.
+\abs{f(y)}\,dy.
 $$
 
 
@@ -70,7 +70,7 @@ $$
 &=
 \sum_{n=1}^{\infty}
 \frac1{\sqrt n}
-\int_M^{M+1}|f(x-\sqrt n)|\,dx.
+\int_M^{M+1}\abs{f(x-\sqrt n)}\,dx.
 \end{aligned}
 $$
 The change of variables
@@ -129,7 +129,7 @@ $$
 to the sum in step [](#s1-1){.pf-ref} is at most
 $$
 3
-\int_{M-k-1}^{M+1-k}|f(y)|\,dy.
+\int_{M-k-1}^{M+1-k}\abs{f(y)}\,dy.
 $$
 
 
@@ -142,7 +142,7 @@ $$
 Therefore the group is bounded by
 $$
 \frac{2k+1}{k}
-\int_{M-k-1}^{M+1-k}|f(y)|\,dy.
+\int_{M-k-1}^{M+1-k}\abs{f(y)}\,dy.
 $$
 Since
 $$
@@ -162,9 +162,9 @@ the claim follows.
 One has
 $$
 \sum_{k=1}^{\infty}
-\int_{M-k-1}^{M+1-k}|f(y)|\,dy
+\int_{M-k-1}^{M+1-k}\abs{f(y)}\,dy
 \le
-2\|f\|_{L^1}.
+2\norm{f}_{L^1}.
 $$
 
 
@@ -181,16 +181,16 @@ $$
 As $k$ varies, the intervals in each of the two families have disjoint interiors. Hence
 $$
 \sum_{k=1}^{\infty}
-\int_{M-k-1}^{M-k}|f(y)|\,dy
+\int_{M-k-1}^{M-k}\abs{f(y)}\,dy
 \le
-\|f\|_1
+\norm{f}_1
 $$
 and
 $$
 \sum_{k=1}^{\infty}
-\int_{M-k}^{M+1-k}|f(y)|\,dy
+\int_{M-k}^{M+1-k}\abs{f(y)}\,dy
 \le
-\|f\|_1.
+\norm{f}_1.
 $$
 Adding the two estimates gives the result.
 
@@ -204,7 +204,7 @@ Combining steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 \int_M^{M+1}G(x)\,dx
 \le
-6\|f\|_1
+6\norm{f}_1
 <\infty.
 $$
 This proves step [](#s1){.pf-ref}.
@@ -274,10 +274,10 @@ $$
 G(x)
 =
 \sum_{n=1}^{\infty}
-\left|
+\abs{
 \frac1{\sqrt n}
 f(x-\sqrt n)
-\right|.
+}.
 $$
 Step [](#s3){.pf-ref} says this sum is finite for almost every $x$, which is exactly absolute convergence of the original series.
 

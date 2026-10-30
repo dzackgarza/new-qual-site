@@ -43,11 +43,11 @@ The quotient $f(z)/z$ is strictly bounded by one on each compact subdisk.
 
 Because $f(0)=0$, the quotient extends holomorphically
 to $h$ on $D$, with $h(0)=f'(0)$. Schwarz's lemma and
-continuity give $|h|\leq1$ on all of $D$ [@SS03].
+continuity give $\abs{h}\leq1$ on all of $D$ [@SS03].
 If equality held at any point, the maximum modulus
 principle would make $h$ a constant of modulus one,
-so $f$ would be a rotation. Therefore $|h(z)|<1$
-at every point. On $|z|\leq r<1$, continuity and
+so $f$ would be a rotation. Therefore $\abs{h(z)}<1$
+at every point. On $\abs{z}\leq r<1$, continuity and
 compactness give a maximum $M_r<1$.
 
 :::
@@ -60,14 +60,14 @@ The iterates decay geometrically to zero.
 
 ::: pf-proof
 
-If $w=0$, all iterates are zero. Otherwise let $r=|w|<1$
+If $w=0$, all iterates are zero. Otherwise let $r=\abs{w}<1$
 and choose $q=(1+M_r)/2$, so $0<q<1$. Schwarz's lemma
-gives $|w_{n+1}|\leq|w_n|$, so the whole orbit stays in
-$|z|\leq r$. On this disk step [](#s1){.pf-ref} implies
+gives $\abs{w_{n+1}}\leq\abs{w_n}$, so the whole orbit stays in
+$\abs{z}\leq r$. On this disk step [](#s1){.pf-ref} implies
 $$
-|w_{n+1}|=|w_n|\,|h(w_n)|\leq q|w_n|.
+\abs{w_{n+1}}=\abs{w_n}\,\abs{h(w_n)}\leq q\abs{w_n}.
 $$
-Induction yields $|w_n|\leq q^n|w|$ for all $n\geq0$.
+Induction yields $\abs{w_n}\leq q^n\abs{w}$ for all $n\geq0$.
 Since $q^n\to0$, the required limit follows.
 
 :::

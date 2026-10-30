@@ -21,7 +21,7 @@ Solve $\left( - \frac { d ^ { 2 } } { d x ^ { 2 } } + m ^ { 2 } \right) G ( x ) 
 
 ::: {.solution}
 
-Assume $m>0$ and seek the Green function on $\RR$ that decays as $|x|\to\infty$.
+Assume $m>0$ and seek the Green function on $\RR$ that decays as $\abs{x}\to\infty$.
 
 ::: pf
 
@@ -111,7 +111,7 @@ Using $A=B$ from step [](#s1-2){.pf-ref} in the jump condition of step [](#s1-3)
 
 Therefore
 $$
-\boxed{G(x)=\frac{e^{-m|x|}}{2m}}.
+\boxed{G(x)=\frac{e^{-m\abs{x}}}{2m}}.
 $$
 
 

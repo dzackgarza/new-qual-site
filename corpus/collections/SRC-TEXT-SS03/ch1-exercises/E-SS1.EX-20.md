@@ -40,7 +40,7 @@ $$
 
 ::: {.pf-step #s1}
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 \frac1{1-z}=\sum_{k=0}^{\infty}z^k.
 $$
@@ -78,7 +78,7 @@ for $k\ge m-1$; lower-degree terms differentiate to zero.
 
 ::: {.pf-step #s3}
 
-Hence, for $|z|<1$,
+Hence, for $\abs{z}<1$,
 $$
 (1-z)^{-m}
 =

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $H$ be a Hilbert space and $(a_n)$ a sequence with $\|a_n\|=1$ for every $n$.
+Let $H$ be a Hilbert space and $(a_n)$ a sequence with $\norm{a_n}=1$ for every $n$.
 
 (a) Show that if $(a_n)$ spans $H$ linearly, then $H$ is finite-dimensional.
 
@@ -107,7 +107,7 @@ $$
 $$
 and
 $$
-|\langle a_{n_i},a_{n_j}\rangle|
+\abs{\langle a_{n_i},a_{n_j}\rangle}
 <
 \frac{\varepsilon^2}{2}
 \qquad
@@ -131,7 +131,7 @@ $$
 $$
 Since there are only finitely many previous vectors, choose $n_{k+1}>n_k$ sufficiently large that
 $$
-|\langle a_{n_{k+1}},a_{n_j}\rangle|
+\abs{\langle a_{n_{k+1}},a_{n_j}\rangle}
 <
 \frac{\varepsilon^2}{2}
 $$
@@ -152,21 +152,21 @@ c
 $$
 satisfies
 $$
-\|c\|<\varepsilon.
+\norm{c}<\varepsilon.
 $$
 
 
 ::: pf-proof
 
-Using $\|a_{n_j}\|=1$,
+Using $\norm{a_{n_j}}=1$,
 $$
 \begin{aligned}
-\|c\|^2
+\norm{c}^2
 &=
 \frac1{r^2}
-\left\|
+\norm{
 \sum_{j=1}^r a_{n_j}
-\right\|^2\\
+}^2\\
 &=
 \frac1{r^2}
 \left(
@@ -190,7 +190,7 @@ r
 \varepsilon^2.
 \end{aligned}
 $$
-Hence $\|c\|<\varepsilon$.
+Hence $\norm{c}<\varepsilon$.
 
 :::
 

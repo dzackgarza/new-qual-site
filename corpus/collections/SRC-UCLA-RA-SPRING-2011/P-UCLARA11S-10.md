@@ -9,7 +9,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\DD=\{z:|z|<1\}$ and
+Let $\DD=\{z:\abs{z}<1\}$ and
 $$
 \Omega=\{z\in\DD:\operatorname{Im}z>0\}.
 $$
@@ -48,7 +48,7 @@ $$
 
 The standard Cayley transform $M$ maps the unit disk biholomorphically onto the right half-plane, so
 $$
-|z|<1
+\abs{z}<1
 \quad\Longrightarrow\quad
 \operatorname{Re}M(z)>0.
 $$
@@ -56,7 +56,7 @@ Because $M$ has real coefficients and positive determinant,
 $$
 \operatorname{Im}M(z)
 =
-\frac{2\operatorname{Im}z}{|1-z|^2}.
+\frac{2\operatorname{Im}z}{\abs{1-z}^2}.
 $$
 Thus
 $$
@@ -177,7 +177,7 @@ $$
 
 The derivative of $\Phi$ at $z_0$ satisfies
 $$
-|\Phi'(z_0)|
+\abs{\Phi'(z_0)}
 =
 \frac{16}{5}.
 $$
@@ -201,11 +201,11 @@ $$
 $$
 At $z_0=i/2$,
 $$
-|M(z_0)|=1
+\abs{M(z_0)}=1
 $$
 and
 $$
-|1-z_0|^2
+\abs{1-z_0}^2
 =
 1+\frac14
 =
@@ -213,9 +213,9 @@ $$
 $$
 Therefore
 $$
-|\Phi'(z_0)|
+\abs{\Phi'(z_0)}
 =
-\frac4{|1-z_0|^2}
+\frac4{\abs{1-z_0}^2}
 =
 \frac4{5/4}
 =
@@ -234,9 +234,9 @@ G:\halfplane\to\DD
 $$
 be holomorphic. Then
 $$
-|G'(q_0)|
+\abs{G'(q_0)}
 \le
-\frac{1-|G(q_0)|^2}{2\operatorname{Im}q_0}
+\frac{1-\abs{G(q_0)}^2}{2\operatorname{Im}q_0}
 \le
 \frac1{2\operatorname{Im}q_0}.
 $$
@@ -270,34 +270,34 @@ H
 $$
 maps $\DD$ holomorphically to itself and satisfies $H(0)=0$. Schwarz's lemma gives
 $$
-|H'(0)|\le1.
+\abs{H'(0)}\le1.
 $$
 Now
 $$
-|\psi_a'(a)|
+\abs{\psi_a'(a)}
 =
-\frac1{1-|a|^2},
+\frac1{1-\abs{a}^2},
 $$
 while
 $$
-|\chi'(q_0)|
+\abs{\chi'(q_0)}
 =
 \frac1{2\operatorname{Im}q_0},
 $$
 so
 $$
-|(\chi^{-1})'(0)|
+\abs{(\chi^{-1})'(0)}
 =
 2\operatorname{Im}q_0.
 $$
 The chain rule therefore gives
 $$
-\frac{|G'(q_0)|}{1-|a|^2}
+\frac{\abs{G'(q_0)}}{1-\abs{a}^2}
 \cdot
 2\operatorname{Im}q_0
 \le1,
 $$
-which is the first inequality. The second follows from $1-|a|^2\le1$.
+which is the first inequality. The second follows from $1-\abs{a}^2\le1$.
 
 :::
 
@@ -311,7 +311,7 @@ f:\Omega\to\DD
 $$
 is holomorphic, then
 $$
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
 \frac53.
 $$
@@ -331,13 +331,13 @@ f=G\circ\Phi,
 $$
 so
 $$
-|f'(z_0)|
+\abs{f'(z_0)}
 =
-|G'(q_0)|\,|\Phi'(z_0)|.
+\abs{G'(q_0)}\,\abs{\Phi'(z_0)}.
 $$
 By step [](#s1-6){.pf-ref},
 $$
-|G'(q_0)|
+\abs{G'(q_0)}
 \le
 \frac1{2\operatorname{Im}q_0}.
 $$
@@ -347,13 +347,13 @@ $$
 =
 \frac{24}{25},
 \qquad
-|\Phi'(z_0)|
+\abs{\Phi'(z_0)}
 =
 \frac{16}{5}.
 $$
 Therefore
 $$
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
 \frac{16/5}{2(24/25)}
 =
@@ -379,7 +379,7 @@ for every admissible $f$.
 
 For every complex number $w$,
 $$
-\operatorname{Re}w\le|w|.
+\operatorname{Re}w\le\abs{w}.
 $$
 Apply step [](#s1-7){.pf-ref} to $w=f'(z_0)$.
 
@@ -414,15 +414,15 @@ is positive real.
 
 The function $f_0$ maps $\Omega$ holomorphically into $\DD$. Since
 $$
-|\chi'(q_0)|
+\abs{\chi'(q_0)}
 =
 \frac1{2\operatorname{Im}q_0},
 $$
 steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give
 $$
-|f_0'(z_0)|
+\abs{f_0'(z_0)}
 =
-\frac{|\Phi'(z_0)|}{2\operatorname{Im}q_0}
+\frac{\abs{\Phi'(z_0)}}{2\operatorname{Im}q_0}
 =
 \frac53.
 $$

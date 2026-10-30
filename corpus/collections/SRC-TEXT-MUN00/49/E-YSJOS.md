@@ -34,7 +34,7 @@ $$
 \frac{f(x-h)-f(x)}{-h}=4\alpha(1-2x+h)
 =\alpha(5-8x).
 $$
-Whenever both are defined, their difference is $2\alpha$, so at least one has absolute value at least $\alpha$.  Near an endpoint only one quotient may be defined; if $0\le x<1/4$, then $|3-8x|\ge1$, and if $3/4<x\le1$, then $|5-8x|\ge1$.  Hence
+Whenever both are defined, their difference is $2\alpha$, so at least one has absolute value at least $\alpha$.  Near an endpoint only one quotient may be defined; if $0\le x<1/4$, then $\abs{3-8x}\ge1$, and if $3/4<x\le1$, then $\abs{5-8x}\ge1$.  Hence
 $$
 \Delta f(x,1/4)\ge\alpha\qquad(x\in I).
 $$

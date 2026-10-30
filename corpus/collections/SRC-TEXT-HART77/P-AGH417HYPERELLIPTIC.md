@@ -178,11 +178,11 @@ p:Q\longrightarrow\PP^1
 $$
 whose fibre class meets a divisor of type $(g+1,2)$ in degree $2$. The restriction
 $$
-p|_X:X\longrightarrow\PP^1
+p\restrict_X:X\longrightarrow\PP^1
 $$
 is nonconstant, hence finite. For any point $a\in\PP^1$, the fibre divisor is
 $$
-(p|_X)^*(a)=X\cap p^{-1}(a),
+(p\restrict_X)^*(a)=X\cap p^{-1}(a),
 $$
 and its degree is the intersection number
 $$
@@ -190,7 +190,7 @@ X\cdot p^{-1}(a)=2.
 $$
 Therefore
 $$
-\deg(p|_X)=2.
+\deg(p\restrict_X)=2.
 $$
 Hence every curve in the construction is hyperelliptic.
 

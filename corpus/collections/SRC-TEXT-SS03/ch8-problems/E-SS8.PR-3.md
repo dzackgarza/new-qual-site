@@ -22,14 +22,14 @@ audit:
 For complex numbers $w \in \CC$ and $z \in \DD$ we define the hyperbolic length of $w$ at $z$ by
 
 $$
-\| w \| _ {z} = \frac{| w |}{1 - | z | ^ {2}},
+\norm{ w } _ {z} = \frac{\abs{ w }}{1 - \abs{ z } ^ {2}},
 $$
 
-where $|w|$ and $|z|$ denote the usual absolute values.
+where $\abs{w}$ and $\abs{z}$ denote the usual absolute values.
 This length is sometimes referred to as the Poincaré metric, and as a Riemann metric it is written as
 
 $$
-d s ^ {2} = \frac{| d z | ^ {2}}{(1 - | z | ^ {2}) ^ {2}}.
+d s ^ {2} = \frac{\abs{ d z } ^ {2}}{(1 - \abs{ z } ^ {2}) ^ {2}}.
 $$
 
 The idea is to think of $w$ as a vector lying in the tangent space at $z$.
@@ -39,7 +39,7 @@ We pass from the infinitesimal hyperbolic length of tangent vectors to the globa
 (a) Given two complex numbers $z_1$ and $z_2$ in the disc, we define the hyperbolic distance between them by
 
 $$
-d (z_1, z_2) = \inf_ {\gamma} \int_ {0} ^ {1} \| \gamma' (t) \| _ {\gamma (t)} d t,
+d (z_1, z_2) = \inf_ {\gamma} \int_ {0} ^ {1} \norm{ \gamma' (t) } _ {\gamma (t)} d t,
 $$
 
 where the infimum is taken over all smooth curves $\gamma : [0, 1] \to \DD$ joining $z_1$ and $z_2$.
@@ -74,14 +74,14 @@ $$
 ::: {.solution}
 The Schwarz--Pick lemma says
 $$
-\frac{|f'(z)|}{1-|f(z)|^2}\le \frac1{1-|z|^2}.
+\frac{\abs{f'(z)}}{1-\abs{f(z)}^2}\le \frac1{1-\abs{z}^2}.
 \tag{1}
 $$
 Hence for every smooth curve $\gamma$ in $\DD$,
 $$
-\frac{|(f\circ\gamma)'(t)|}{1-|f(\gamma(t))|^2}
+\frac{\abs{(f\circ\gamma)'(t)}}{1-\abs{f(\gamma(t))}^2}
 \le
-\frac{|\gamma'(t)|}{1-|\gamma(t)|^2}.
+\frac{\abs{\gamma'(t)}}{1-\abs{\gamma(t)}^2}.
 $$
 Integrating and taking the infimum over all curves joining $z_1$ to $z_2$ gives
 $$
@@ -103,15 +103,15 @@ which sends $z_1$ to $0$. If $\phi_{z_1}(z_2)=re^{i\theta}$, compose with the ro
 
 For (d), let $\gamma(t)=r(t)e^{i\theta(t)}$ join $0$ to $s$. Then
 $$
-|\gamma'(t)|\ge |r'(t)|,
+\abs{\gamma'(t)}\ge \abs{r'(t)},
 $$
 so
 $$
-\int_0^1\frac{|\gamma'(t)|}{1-|\gamma(t)|^2}\,dt
+\int_0^1\frac{\abs{\gamma'(t)}}{1-\abs{\gamma(t)}^2}\,dt
 \ge
-\int_0^1\frac{|r'(t)|}{1-r(t)^2}\,dt
+\int_0^1\frac{\abs{r'(t)}}{1-r(t)^2}\,dt
 \ge
-\left|\int_0^1\frac{r'(t)}{1-r(t)^2}\,dt\right|.
+\abs{\int_0^1\frac{r'(t)}{1-r(t)^2}\,dt}.
 $$
 Since $r(0)=0$ and $r(1)=s$, the last term is
 $$
@@ -126,11 +126,11 @@ $$
 
 For arbitrary $z,w$, by (2) and (c),
 $$
-d(z,w)=d\left(0,\left|\frac{z-w}{1-\overline w z}\right|\right).
+d(z,w)=d\left(0,\abs{\frac{z-w}{1-\overline w z}}\right).
 $$
 Therefore, writing
 $$
-\delta(z,w)=\left|\frac{z-w}{1-\overline w z}\right|,
+\delta(z,w)=\abs{\frac{z-w}{1-\overline w z}},
 $$
 we obtain
 $$
@@ -141,11 +141,11 @@ This proves (e).
 
 It remains to prove the converse in (b). Let $T:\DD\to\DD$ preserve hyperbolic distance. Formula (4) shows that it also preserves $\delta$. Choose a disk automorphism $A$ with $A(T(0))=0$ and set $S=A\circ T$. Then $S$ preserves $\delta$ and fixes $0$. Since
 $$
-\delta(0,z)=|z|,
+\delta(0,z)=\abs{z},
 $$
-we have $|S(z)|=|z|$.
+we have $\abs{S(z)}=\abs{z}$.
 
-For $z,w$ with $|z|=r$, $|w|=s$, write $c=\cos(\arg z-\arg w)$. Then
+For $z,w$ with $\abs{z}=r$, $\abs{w}=s$, write $c=\cos(\arg z-\arg w)$. Then
 $$
 \delta(z,w)^2=\frac{r^2+s^2-2rsc}{1+r^2s^2-2rsc}.
 \tag{5}

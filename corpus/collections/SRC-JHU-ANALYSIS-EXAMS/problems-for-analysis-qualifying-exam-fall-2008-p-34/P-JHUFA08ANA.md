@@ -22,7 +22,7 @@ audit:
 
 Let $F ^ { - j } ( A )$ be the inverse image of j iterates of F applied to a measurable subset $A \subset [ 0 , 1 ]$ . That is, if $F = F ^ { 1 }$ and $F ^ { j } , j = 2 , 3 , . .$ . is defined inductively as $F ^ { j } = F ^ { j - 1 } \circ F$ ， then $F ^ { - j } ( A ) = \{ x : F ^ { j } x = y$ , some $y \in A \}$
 
-a) Given $N = 1 , 2 , \dots$ show that $\begin{array} { r } { \mu _ { N } ( A ) = N ^ { - 1 } \sum _ { j < N } | F ^ { - j } ( A ) | } \end{array}$ is a measure which is absolutely continuous with respect to Lebesgue measure. Here |B| denotes the Lebesgue measure of a measurable set.
+a) Given $N = 1 , 2 , \dots$ show that $\begin{array} { r } { \mu _ { N } ( A ) = N ^ { - 1 } \sum _ { j < N } \setmeasure{ F ^ { - j } ( A ) } } \end{array}$ is a measure which is absolutely continuous with respect to Lebesgue measure. Here |B| denotes the Lebesgue measure of a measurable set.
 
 b) Show that $\mu _ { N } ( [ a , b ] ) \to 0 { \mathrm { ~ i f ~ } } 0 < a < b \leq 1$
 
@@ -36,17 +36,17 @@ tend to a limit? If so, what is the limit?
 ::: {.solution}
 For each $j \ge 0$, let
 $$
-\nu_j(A):=|F^{-j}(A)| = |\{s\in[0,1]:F^j(s)\in A\}|.
+\nu_j(A):=\setmeasure{F^{-j}(A)} = \setmeasure{\{s\in[0,1]:F^j(s)\in A\}}.
 $$
 
 *a)*  For any measurable sets $(A_n)$ that are pairwise disjoint,
-$(\nu_j(\bigsqcup A_n))=|F^{-j}(\bigsqcup A_n)|=\sum |F^{-j}(A_n)|=\sum\nu_j(A_n)$.
+$(\nu_j(\bigsqcup A_n))=\setmeasure{F^{-j}(\bigsqcup A_n)}=\sum \setmeasure{F^{-j}(A_n)}=\sum\nu_j(A_n)$.
 So $\nu_j$ is a measure on Borel sets.
 Here $F^j(s)=s^{2^j}$ and so $F^{-j}(A)=\{t^{2^{-j}}:t\in A\}$, the image of $A$ under the map $g_j(t)=t^{2^{-j}}$.
 Since
 $$g_j'(t)=2^{-j}t^{2^{-j}-1}\in L^1[0,1],$$
-$g_j$ is absolutely continuous and has Luzin’s property (N), hence $|A|=0\Rightarrow |\{t^{2^{-j}}:t\in A\}|=0$.
-Therefore $\nu_j\ll |\cdot|$.
+$g_j$ is absolutely continuous and has Luzin’s property (N), hence $\setmeasure{A}=0\Rightarrow \setmeasure{\{t^{2^{-j}}:t\in A\}}=0$.
+Therefore $\nu_j\ll \setmeasure{\cdot}$.
 
 Now $\mu_N=\frac1N\sum_{j=0}^{N-1}\nu_j$, so $\mu_N$ is a measure and
 $\mu_N\ll$ Lebesgue.

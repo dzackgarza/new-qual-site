@@ -29,7 +29,7 @@ Every group $G$ of order $45$ has unique (hence normal) Sylow $3$- and $5$-subgr
 
 ::: pf-step
 
-The prime factorization of the group order is $|G| = 45 = 3^2 \cdot 5$.
+The prime factorization of the group order is $\cardinality{G} = 45 = 3^2 \cdot 5$.
 
 :::
 
@@ -63,14 +63,14 @@ Every such group decomposes as $G\cong P\times Q$.
 
 ::: pf-step
 
-Coprime intersection: By Lagrange's Theorem, $|P \cap Q|$ divides both $|P| = 9$ and $|Q| = 5$. Since $\gcd(9, 5) = 1$, $P \cap Q = \{e\}$.
+Coprime intersection: By Lagrange's Theorem, $\cardinality{P \cap Q}$ divides both $\cardinality{P} = 9$ and $\cardinality{Q} = 5$. Since $\gcd(9, 5) = 1$, $P \cap Q = \{e\}$.
 
 :::
 
 ::: pf-step
 
 Group order: Since both $P$ and $Q$ are normal in $G$, the set product $P Q$ is a subgroup of $G$ with cardinality
-    $$|P Q| = \frac{|P| |Q|}{|P \cap Q|} = \frac{9 \cdot 5}{1} = 45 = |G|.$$
+    $$\cardinality{P Q} = \frac{\cardinality{P} \cardinality{Q}}{\cardinality{P \cap Q}} = \frac{9 \cdot 5}{1} = 45 = \cardinality{G}.$$
     Thus $G = P Q$.
 
 :::
@@ -93,13 +93,13 @@ The subgroup $Q$ is cyclic of order five, and $P$ is either cyclic of order nine
 
 ::: pf-step
 
-The group $Q$ has prime order $|Q| = 5$, so $Q \cong \ZZ/5\ZZ$.
+The group $Q$ has prime order $\cardinality{Q} = 5$, so $Q \cong \ZZ/5\ZZ$.
 
 :::
 
 ::: pf-step
 
-The group $P$ has order $|P| = 3^2 = 9$. Every group of order $p^2$ for a prime $p$ is abelian.
+The group $P$ has order $\cardinality{P} = 3^2 = 9$. Every group of order $p^2$ for a prime $p$ is abelian.
 
 :::
 

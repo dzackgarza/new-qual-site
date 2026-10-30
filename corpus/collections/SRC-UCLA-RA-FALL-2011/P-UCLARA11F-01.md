@@ -36,7 +36,7 @@ A_{m,N}
 \bigcup_{n\ge N}
 \left\{
 x\in[0,1]:
-|f_n(x)-f(x)|\ge\frac1m
+\abs{f_n(x)-f(x)}\ge\frac1m
 \right\}.}
 $$
 
@@ -51,11 +51,11 @@ Each set $A_{m,N}$ is measurable.
 
 The functions $f_n$ and $f$ are measurable, so
 $$
-|f_n-f|
+\abs{f_n-f}
 $$
 is measurable. Hence each set
 $$
-\left\{|f_n-f|\ge\frac1m\right\}
+\left\{\abs{f_n-f}\ge\frac1m\right\}
 $$
 is measurable, and a countable union of measurable sets is measurable.
 
@@ -100,7 +100,7 @@ x\in\bigcap_N A_{m,N},
 $$
 then for every $N$ there exists $n\ge N$ such that
 $$
-|f_n(x)-f(x)|\ge\frac1m.
+\abs{f_n(x)-f(x)}\ge\frac1m.
 $$
 Thus the difference does not eventually stay below $1/m$, so $f_n(x)\not\to f(x)$.
 
@@ -238,7 +238,7 @@ $$
 For every $m\ge1$, every $x\in F$, and every $n\ge N_m$,
 $$
 \boxed{
-|f_n(x)-f(x)|<\frac1m}.
+\abs{f_n(x)-f(x)}<\frac1m}.
 $$
 
 
@@ -254,7 +254,7 @@ x\notin A_{m,N_m}.
 $$
 By definition of $A_{m,N_m}$, this means there is no $n\ge N_m$ for which
 $$
-|f_n(x)-f(x)|\ge\frac1m.
+\abs{f_n(x)-f(x)}\ge\frac1m.
 $$
 
 :::
@@ -293,7 +293,7 @@ x\in F,
 $$
 $$
 \boxed{
-|f_n(x)-f(x)|<\delta}.
+\abs{f_n(x)-f(x)}<\delta}.
 $$
 
 
@@ -301,7 +301,7 @@ $$
 
 By step [](#s1-10){.pf-ref},
 $$
-|f_n(x)-f(x)|<\frac1m<\delta.
+\abs{f_n(x)-f(x)}<\frac1m<\delta.
 $$
 
 :::

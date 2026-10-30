@@ -53,17 +53,17 @@ Show that the sign of the permutation of $G$ given by left multiplication $y\map
 ::: pf-proof
 For $g\in G$, let $X^g$ be its fixed-point set. Burnside's orbit-counting lemma gives
 $$
-1=|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|,
+1=\cardinality{X/G}=\frac1{\cardinality{G}}\sum_{g\in G}\cardinality{X^g},
 $$
 so
 $$
-\sum_{g\in G}|X^g|=|G|.
+\sum_{g\in G}\cardinality{X^g}=\cardinality{G}.
 $$
-The identity fixes all of $X$, and $|X|\ge2$. If every $g\in G$ fixed at least one point, then
+The identity fixes all of $X$, and $\cardinality{X}\ge2$. If every $g\in G$ fixed at least one point, then
 $$
-\sum_{g\in G}|X^g|
-\ge |X|+(|G|-1)
-\ge |G|+1,
+\sum_{g\in G}\cardinality{X^g}
+\ge \cardinality{X}+(\cardinality{G}-1)
+\ge \cardinality{G}+1,
 $$
 a contradiction. Hence some $g$ has $X^g=\varnothing$.
 :::
@@ -102,7 +102,7 @@ p^6-p^3
 $$
 surjections. Two surjections have the same kernel exactly when they differ by an automorphism of $\ZZ/p^2\ZZ$, and
 $$
-|\Aut(\ZZ/p^2\ZZ)|=\varphi(p^2)=p(p-1).
+\cardinality{\Aut(\ZZ/p^2\ZZ)}=\varphi(p^2)=p(p-1).
 $$
 Therefore the number of kernels is
 $$
@@ -132,26 +132,26 @@ n_p\mid q,
 \qquad
 n_p\equiv1\pmod p.
 $$
-Hence $n_p=1$ or $q$, and the congruence hypothesis excludes $q$, so the Sylow $p$-subgroup $P$ is also normal. Since $P\cap Q=1$ and $|P||Q|=|G|$, we have $G=PQ$. For $a\in P$ and $b\in Q$, the commutator $aba^{-1}b^{-1}$ lies in both $P$ and $Q$ because both are normal, hence is trivial. Thus $P$ and $Q$ commute elementwise and $G\cong P\times Q$ is abelian.
+Hence $n_p=1$ or $q$, and the congruence hypothesis excludes $q$, so the Sylow $p$-subgroup $P$ is also normal. Since $P\cap Q=1$ and $\cardinality{P}\cardinality{Q}=\cardinality{G}$, we have $G=PQ$. For $a\in P$ and $b\in Q$, the commutator $aba^{-1}b^{-1}$ lies in both $P$ and $Q$ because both are normal, hence is trivial. Thus $P$ and $Q$ commute elementwise and $G\cong P\times Q$ is abelian.
 :::
 
 :::
 
 ::: pf-step
-(d) If $p$ is the smallest prime divisor of $|G|$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
+(d) If $p$ is the smallest prime divisor of $\cardinality{G}$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
 
 ::: pf-proof
-Since $|H|=p$, $H\cong C_p$, so
+Since $\cardinality{H}=p$, $H\cong C_p$, so
 $$
-|\Aut(H)|=p-1.
+\cardinality{\Aut(H)}=p-1.
 $$
 Normality of $H$ gives the conjugation homomorphism
 $$
 \theta:G\longrightarrow\Aut(H).
 $$
-The order of $\im\theta$ divides both $|G|$ and $p-1$. Every prime divisor of $p-1$ is smaller than $p$, while $p$ is the smallest prime divisor of $|G|$. Hence
+The order of $\im\theta$ divides both $\cardinality{G}$ and $p-1$. Every prime divisor of $p-1$ is smaller than $p$, while $p$ is the smallest prime divisor of $\cardinality{G}$. Hence
 $$
-\gcd(|G|,p-1)=1,
+\gcd(\cardinality{G},p-1)=1,
 $$
 so $\im\theta=1$. Thus every $g\in G$ centralizes every $h\in H$, proving $H\subseteq Z(G)$.
 :::
@@ -164,9 +164,9 @@ so $\im\theta=1$. Thus every $g\in G$ centralizes every $h\in H$, proving $H\sub
 ::: pf-proof
 Write
 $$
-|P|=2^r\quad(r\ge1),
+\cardinality{P}=2^r\quad(r\ge1),
 \qquad
-|G|=2^r m
+\cardinality{G}=2^r m
 $$
 with $m$ odd. In the left regular action of $G$ on itself, the permutation
 $$
@@ -175,7 +175,7 @@ $$
 $$
 has orbits equal to the left action of $\langle x\rangle$ on $G$. Since $x$ has order $2^r$, every orbit is a cycle of length $2^r$. There are
 $$
-|G|/2^r=m
+\cardinality{G}/2^r=m
 $$
 such cycles. Each $2^r$-cycle has sign
 $$

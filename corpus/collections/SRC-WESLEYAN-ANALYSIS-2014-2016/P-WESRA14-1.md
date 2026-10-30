@@ -125,7 +125,7 @@ such that
 $$
 \forall\eta>0+\exists N+\forall n\ge N+\forall x\in X\setminus E,
 \quad
-|f_n(x)-f(x)|<\eta.
+\abs{f_n(x)-f(x)}<\eta.
 $$
 
 

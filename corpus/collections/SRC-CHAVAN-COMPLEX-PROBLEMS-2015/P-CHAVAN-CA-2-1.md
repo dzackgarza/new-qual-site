@@ -16,25 +16,25 @@ audit:
 Let $f:\CC\to\CC$ be entire and nowhere zero.
 For $r>0$:
 
-1. Show that, with the circle $|z|=r$ traversed counterclockwise,
+1. Show that, with the circle $\abs{z}=r$ traversed counterclockwise,
    $$
-   \int_{|z|=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
+   \int_{\abs{z}=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
    $$
 
 2. Show that
    $$
-   \left|\int_{|z|=r}\frac{dz}{zf(z)}\right|
-   \le \frac{2\pi}{\min_{|z|=r}|f(z)|},
+   \abs{\int_{\abs{z}=r}\frac{dz}{zf(z)}}
+   \le \frac{2\pi}{\min_{\abs{z}=r}\abs{f(z)}},
    $$
    and hence
    $$
-   \min_{|z|=r}|f(z)|\le |f(0)|.
+   \min_{\abs{z}=r}\abs{f(z)}\le \abs{f(0)}.
    $$
 
 Deduce the fundamental theorem of algebra by applying this to a monic polynomial and verifying
 $$
-|a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n|
-\ge |z|^n\left(1-\frac{|a_{n-1}|}{|z|}-\cdots-\frac{|a_0|}{|z|^n}\right).
+\abs{a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n}
+\ge \abs{z}^n\left(1-\frac{\abs{a_{n-1}}}{\abs{z}}-\cdots-\frac{\abs{a_0}}{\abs{z}^n}\right).
 $$
 :::
 
@@ -46,7 +46,7 @@ $$
 
 For every $r>0$,
 $$
-\int_{|z|=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
+\int_{\abs{z}=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
 $$
 
 
@@ -57,9 +57,9 @@ $$
 g(z)=\frac1{f(z)}
 $$
 is entire. Applying the Cauchy integral formula to $g$ at the origin on
-the positively oriented circle $|z|=r$ gives
+the positively oriented circle $\abs{z}=r$ gives
 $$
-\int_{|z|=r}\frac{g(z)}{z}\,dz=2\pi i\,g(0)=\frac{2\pi i}{f(0)}.
+\int_{\abs{z}=r}\frac{g(z)}{z}\,dz=2\pi i\,g(0)=\frac{2\pi i}{f(0)}.
 $$
 This is the required identity.
 
@@ -71,26 +71,26 @@ This is the required identity.
 
 For every $r>0$,
 $$
-\left|\int_{|z|=r}\frac{dz}{zf(z)}\right|
-\le \frac{2\pi}{\min_{|z|=r}|f(z)|}.
+\abs{\int_{\abs{z}=r}\frac{dz}{zf(z)}}
+\le \frac{2\pi}{\min_{\abs{z}=r}\abs{f(z)}}.
 $$
 
 
 ::: pf-proof
 
-Because $f$ has no zeros and the circle $|z|=r$ is compact, the
-positive continuous function $|f|$ has a positive minimum there. On
+Because $f$ has no zeros and the circle $\abs{z}=r$ is compact, the
+positive continuous function $\abs{f}$ has a positive minimum there. On
 the circle,
 $$
-\left|\frac1{zf(z)}\right|
-=\frac1{r|f(z)|}
-\le\frac1{r\min_{|w|=r}|f(w)|}.
+\abs{\frac1{zf(z)}}
+=\frac1{r\abs{f(z)}}
+\le\frac1{r\min_{\abs{w}=r}\abs{f(w)}}.
 $$
 The circle has length $2\pi r$, so the $ML$ inequality gives
 $$
-\left|\int_{|z|=r}\frac{dz}{zf(z)}\right|
-\le 2\pi r\cdot\frac1{r\min_{|w|=r}|f(w)|}
-=\frac{2\pi}{\min_{|w|=r}|f(w)|}.
+\abs{\int_{\abs{z}=r}\frac{dz}{zf(z)}}
+\le 2\pi r\cdot\frac1{r\min_{\abs{w}=r}\abs{f(w)}}
+=\frac{2\pi}{\min_{\abs{w}=r}\abs{f(w)}}.
 $$
 
 :::
@@ -101,7 +101,7 @@ $$
 
 For every $r>0$,
 $$
-\min_{|z|=r}|f(z)|\le |f(0)|.
+\min_{\abs{z}=r}\abs{f(z)}\le \abs{f(0)}.
 $$
 
 
@@ -109,13 +109,13 @@ $$
 
 Taking absolute values in step [](#s1-1){.pf-ref} and combining with step [](#s1-2){.pf-ref} gives
 $$
-\frac{2\pi}{|f(0)|}
+\frac{2\pi}{\abs{f(0)}}
 \le
-\frac{2\pi}{\min_{|z|=r}|f(z)|}.
+\frac{2\pi}{\min_{\abs{z}=r}\abs{f(z)}}.
 $$
 Both denominators are positive, so this inequality is equivalent to
 $$
-\min_{|z|=r}|f(z)|\le |f(0)|.
+\min_{\abs{z}=r}\abs{f(z)}\le \abs{f(0)}.
 $$
 
 :::
@@ -130,8 +130,8 @@ p(z)=a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n
 $$
 is monic of degree $n\ge1$, then for every $z\ne0$,
 $$
-|p(z)|
-\ge |z|^n\left(1-\frac{|a_{n-1}|}{|z|}-\cdots-\frac{|a_0|}{|z|^n}\right).
+\abs{p(z)}
+\ge \abs{z}^n\left(1-\frac{\abs{a_{n-1}}}{\abs{z}}-\cdots-\frac{\abs{a_0}}{\abs{z}^n}\right).
 $$
 
 
@@ -140,13 +140,13 @@ $$
 By the reverse triangle inequality and then the triangle inequality,
 $$
 \begin{aligned}
-|p(z)|
-&=\left|z^n+\sum_{k=0}^{n-1}a_kz^k\right|\\
-&\ge |z|^n-\left|\sum_{k=0}^{n-1}a_kz^k\right|\\
-&\ge |z|^n-\sum_{k=0}^{n-1}|a_k||z|^k.
+\abs{p(z)}
+&=\abs{z^n+\sum_{k=0}^{n-1}a_kz^k}\\
+&\ge \abs{z}^n-\abs{\sum_{k=0}^{n-1}a_kz^k}\\
+&\ge \abs{z}^n-\sum_{k=0}^{n-1}\abs{a_k}\abs{z}^k.
 \end{aligned}
 $$
-Factoring $|z|^n$ gives exactly the displayed estimate.
+Factoring $\abs{z}^n$ gives exactly the displayed estimate.
 
 :::
 
@@ -164,21 +164,21 @@ polynomial by its leading coefficient does not change its zeros. Let
 $p$ be monic of degree $n\ge1$ and suppose for contradiction that $p$
 has no zero in $\CC$. Then step [](#s1-3){.pf-ref}, applied to $f=p$, gives
 $$
-\min_{|z|=r}|p(z)|\le |p(0)|=|a_0|
+\min_{\abs{z}=r}\abs{p(z)}\le \abs{p(0)}=\abs{a_0}
 $$
 for every $r>0$.
 
-On the other hand, step [](#s1-4){.pf-ref} implies for $|z|=r$ that
+On the other hand, step [](#s1-4){.pf-ref} implies for $\abs{z}=r$ that
 $$
-|p(z)|
-\ge r^n\left(1-\frac{|a_{n-1}|}{r}-\cdots-\frac{|a_0|}{r^n}\right).
+\abs{p(z)}
+\ge r^n\left(1-\frac{\abs{a_{n-1}}}{r}-\cdots-\frac{\abs{a_0}}{r^n}\right).
 $$
 The expression in parentheses tends to $1$ as $r\to\infty$. Hence for
 all sufficiently large $r$ it is at least $1/2$, and then
 $$
-\min_{|z|=r}|p(z)|\ge\frac{r^n}{2}.
+\min_{\abs{z}=r}\abs{p(z)}\ge\frac{r^n}{2}.
 $$
-For sufficiently large $r$, this lower bound is greater than $|a_0|$,
+For sufficiently large $r$, this lower bound is greater than $\abs{a_0}$,
 contradicting the preceding upper bound. Therefore $p$ has a zero.
 This is the fundamental theorem of algebra.
 

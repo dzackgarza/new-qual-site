@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-"Monte-Carlo method" Consider the function $f(x_1, \ldots, x_n)$ defined in $V = \{-1 \leqslant x_i \leqslant 1,\ i = 1, \ldots, n\}$ and bounded from below and above, $|f(x_1, \ldots, x_n)| \leqslant C$.
+"Monte-Carlo method" Consider the function $f(x_1, \ldots, x_n)$ defined in $V = \{-1 \leqslant x_i \leqslant 1,\ i = 1, \ldots, n\}$ and bounded from below and above, $\abs{f(x_1, \ldots, x_n)} \leqslant C$.
 Define a random variable $\eta = f(\xi_1, \ldots, \xi_n)$, where $\xi_i$ are distributed uniformly between $-1$ and $1$.
 
 (a) Show that $\mathbf{E}\eta = I$, where $I = \int_V f(x_1, \ldots, x_n)\, d^n x$.
@@ -30,7 +30,7 @@ Hence the random variables can be used to compute the high-dimensional integrals
 Then the quantity $\tilde{I} = \frac{1}{N}(\eta_1 + \ldots + \eta_N)$ for large $N$ approaches $I$ with high enough probability.
 Estimate how large $N$ should be to ensure that
 $$
-P(|\tilde{I} - I| < \Delta) \geqslant 1 - \alpha,
+P(\abs{\tilde{I} - I} < \Delta) \geqslant 1 - \alpha,
 \tag{53}
 $$
 where $\Delta$ and $\alpha$ are given small numbers.
@@ -102,7 +102,7 @@ $$
 
 ::: {.pf-step #s1-4}
 
-Since $|\eta_i|\leq C$, one has
+Since $\abs{\eta_i}\leq C$, one has
 $$
 \mathbf D\eta_i\leq C^2
 $$
@@ -137,7 +137,7 @@ $$
 
 Chebyshev's inequality gives
 $$
-P(|\widehat I-I|\geq\Delta)
+P(\abs{\widehat I-I}\geq\Delta)
 \leq\frac{4^nC^2}{N\Delta^2}.
 $$
 
@@ -158,7 +158,7 @@ $$
 $$
 ensures
 $$
-P(|\widehat I-I|<\Delta)\geq1-\alpha.
+P(\abs{\widehat I-I}<\Delta)\geq1-\alpha.
 $$
 
 

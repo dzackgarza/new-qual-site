@@ -114,7 +114,7 @@ $$
 \sigma(c)=\sigma\left(b^{p^{n-1}}\right)
 =\zeta^{k p^{n-1}}c.
 $$
-Because $\sigma|_{F(c)}=\tau$ is nonidentity, the factor $\zeta^{k p^{n-1}}$ is not $1$. Since $\zeta$ has order $p^n$, this is equivalent to $p\nmid k$.
+Because $\sigma\restrict_{F(c)}=\tau$ is nonidentity, the factor $\zeta^{k p^{n-1}}$ is not $1$. Since $\zeta$ has order $p^n$, this is equivalent to $p\nmid k$.
 
 :::
 

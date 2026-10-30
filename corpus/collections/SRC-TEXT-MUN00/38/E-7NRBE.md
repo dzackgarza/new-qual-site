@@ -36,8 +36,8 @@ By Tychonoff's Theorem, $I^I = [0, 1]^{[0, 1]}$ is a compact Hausdorff space.
 :::
 
 ::: pf-step
-The cardinality of the index set and factor space is $|I| = \mathfrak{c} = 2^{\aleph_0}$, so:
-$$|I^I| = \mathfrak{c}^\mathfrak{c} = (2^{\aleph_0})^\mathfrak{c} = 2^{\aleph_0 \cdot \mathfrak{c}} = 2^\mathfrak{c}.$$
+The cardinality of the index set and factor space is $\cardinality{I} = \mathfrak{c} = 2^{\aleph_0}$, so:
+$$\cardinality{I^I} = \mathfrak{c}^\mathfrak{c} = (2^{\aleph_0})^\mathfrak{c} = 2^{\aleph_0 \cdot \mathfrak{c}} = 2^\mathfrak{c}.$$
 :::
 
 ::: pf-step
@@ -72,7 +72,7 @@ Because $\ZZ_+$ has the discrete topology, $f$ is continuous.
 ::: pf-step
 By the universal extension property of the Stone-Čech compactification $\beta(\ZZ_+)$, since $I^I$ is compact Hausdorff, there exists a unique continuous extension:
 $$\beta f: \beta(\ZZ_+) \to I^I$$
-such that $\beta f|_{\ZZ_+} = f$.
+such that $\beta f\restrict_{\ZZ_+} = f$.
 :::
 
 ::: pf-step
@@ -99,11 +99,11 @@ Cardinality comparison:
 
 ::: pf-step
 Since $\beta f: \beta(\ZZ_+) \to I^I$ is surjective by step [](#beta-surjects-onto-ii){.pf-ref},
-$$|\beta(\ZZ_+)| \ge |I^I| = 2^\mathfrak{c}.$$
+$$\cardinality{\beta(\ZZ_+)} \ge \cardinality{I^I} = 2^\mathfrak{c}.$$
 :::
 
 ::: pf-step
-Furthermore, since $\beta(\ZZ_+)$ embeds into $[0, 1]^{C(\ZZ_+, [0, 1])}$ and $|C(\ZZ_+, [0, 1])| = \mathfrak{c}^{\aleph_0} = \mathfrak{c}$, we have $|\beta(\ZZ_+)| \le \mathfrak{c}^\mathfrak{c} = 2^\mathfrak{c}$, so $|\beta(\ZZ_+)| = |I^I| = 2^\mathfrak{c}$.
+Furthermore, since $\beta(\ZZ_+)$ embeds into $[0, 1]^{C(\ZZ_+, [0, 1])}$ and $\cardinality{C(\ZZ_+, [0, 1])} = \mathfrak{c}^{\aleph_0} = \mathfrak{c}$, we have $\cardinality{\beta(\ZZ_+)} \le \mathfrak{c}^\mathfrak{c} = 2^\mathfrak{c}$, so $\cardinality{\beta(\ZZ_+)} = \cardinality{I^I} = 2^\mathfrak{c}$.
 :::
 
 :::
@@ -111,7 +111,7 @@ Furthermore, since $\beta(\ZZ_+)$ embeds into $[0, 1]^{C(\ZZ_+, [0, 1])}$ and $|
 :::
 
 ::: pf-qed
-Step [](#cardinality-comparison){.pf-ref} gives $|\beta(\ZZ_+)| \ge |I^I|$.
+Step [](#cardinality-comparison){.pf-ref} gives $\cardinality{\beta(\ZZ_+)} \ge \cardinality{I^I}$.
 :::
 
 :::

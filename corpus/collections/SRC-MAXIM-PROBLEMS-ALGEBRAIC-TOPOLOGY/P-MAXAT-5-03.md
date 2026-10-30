@@ -33,7 +33,7 @@ be an oriented real vector bundle of rank $r$, and suppose it has a nowhere-zero
 
 Choose a bundle metric on $\xi$ and normalize $s$ to a unit section
 $$
-\widehat s(x)=\frac{s(x)}{\|s(x)\|}.
+\widehat s(x)=\frac{s(x)}{\norm{s(x)}}.
 $$
 
 

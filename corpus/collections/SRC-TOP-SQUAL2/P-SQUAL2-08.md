@@ -141,7 +141,7 @@ $$
 H(x,t)
 =
 \left(
-(1-t)+\frac{t}{\|x\|}
+(1-t)+\frac{t}{\norm{x}}
 \right)x
 $$
 for $x\ne0$. The scalar factor is positive, so the homotopy stays in
@@ -150,7 +150,7 @@ $$
 $$
 At $t=0$, it is the identity, and at $t=1$, it sends $x$ to
 $$
-x/\|x\|\in S^{k-1}.
+x/\norm{x}\in S^{k-1}.
 $$
 Points already on $S^{k-1}$ remain fixed. Thus this is a deformation retraction.
 

@@ -408,7 +408,7 @@ $$
 
 For each nonzero $(X,Y)$ there is a unique $r=r(X,Y)>0$ satisfying
 $$
-r^6|X|^2+r^4|Y|^2=1,
+r^6\abs{X}^2+r^4\abs{Y}^2=1,
 $$
 because the left side is a strictly increasing continuous function of $r$ from $0$ to $\infty$. The implicit inverse is continuous in $(X,Y)$.
 
@@ -422,7 +422,7 @@ H_u(X,Y)=(r_u^3X,r_u^2Y).
 $$
 Weighted scaling preserves both $C$ and its complement, so $H_u$ stays in $\CC^2\setminus C$ whenever it starts there. At $u=1$,
 $$
-|r^3X|^2+|r^2Y|^2=1,
+\abs{r^3X}^2+\abs{r^2Y}^2=1,
 $$
 so the endpoint lies on $S^3$. If $(X,Y)\in S^3$, uniqueness gives $r=1$, hence $H_u(X,Y)=(X,Y)$ for all $u$.
 
@@ -449,9 +449,9 @@ $$
 $$
 On $S^3$ one has
 $$
-|u|^6+|u|^4=1,
+\abs{u}^6+\abs{u}^4=1,
 $$
-so $|u|=r_0$ is a fixed positive number. Writing $u=r_0e^{i\theta}$ gives
+so $\abs{u}=r_0$ is a fixed positive number. Writing $u=r_0e^{i\theta}$ gives
 $$
 C\cap S^3
 =
@@ -466,9 +466,9 @@ $$
 $$
 Vary the two positive radii continuously along the family of Clifford tori
 $$
-|z|=R_1,
+\abs{z}=R_1,
 \qquad
-|w|=R_2,
+\abs{w}=R_2,
 \qquad
 R_1^2+R_2^2=1,
 $$

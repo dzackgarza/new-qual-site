@@ -34,7 +34,7 @@ $$
 $$
 one has
 $$
-\sum_j|g(b_j)-g(a_j)|<\varepsilon.
+\sum_j\abs{g(b_j)-g(a_j)}<\varepsilon.
 $$
 
 Since $m(E)=0$, choose an open set $U\subset\RR$ with

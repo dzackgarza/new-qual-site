@@ -16,7 +16,7 @@ review: draft
 
 ::: {.proposition}
 Let $F/k$ be a finite [[D-5JYEI|Galois extension]] and $L/k$ an arbitrary extension, with $F$ and $L$ subfields of a common field.
-Then $FL/L$ is Galois, and restriction $\sigma \mapsto \sigma|_F$ is an isomorphism
+Then $FL/L$ is Galois, and restriction $\sigma \mapsto \sigma\restrict_F$ is an isomorphism
 $$
 \Gal(FL/L) \cong \Gal(F / F\intersect L) \leq \Gal(F/k).
 $$

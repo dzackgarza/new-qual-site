@@ -99,7 +99,7 @@ $$
 G=\operatorname{Aut}(L/K)\cong \mu_m,
 $$
 acting by $\alpha\mapsto\zeta\alpha$ for $\zeta^m=1$.
-In particular $|G|=m$.
+In particular $\cardinality{G}=m$.
 
 ::: pf-proof
 
@@ -161,7 +161,7 @@ $$
 $$
 Since $G$ has $m$ elements and fixes $K(\beta)$, Artin's theorem on fixed fields gives
 $$
-[L:F]=|G|=m.
+[L:F]=\cardinality{G}=m.
 $$
 Thus $F$ and $K(\beta)$ are intermediate fields of the same degree over $K$, with $K(\beta)\subseteq F$, so they are equal.
 

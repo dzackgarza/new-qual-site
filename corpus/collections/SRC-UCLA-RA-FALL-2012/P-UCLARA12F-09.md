@@ -64,7 +64,7 @@ for every real $x\in[0,\delta)$.
 
 Choose $\theta$ so that
 $$
-e^{-i\theta}h(0)=|h(0)|>0.
+e^{-i\theta}h(0)=\abs{h(0)}>0.
 $$
 By continuity of $h$, for all sufficiently small real $x\ge0$ the complex number $e^{-i\theta}h(x)$ remains in the open right half-plane. This gives the required $\delta$.
 

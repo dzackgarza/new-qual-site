@@ -36,7 +36,7 @@ Write
 $$
 f(z)=\sum_{n=0}^{\infty}a_nz^n
 $$
-with radius of convergence $R$, and fix $z_0$ with $|z_0|<R$.
+with radius of convergence $R$, and fix $z_0$ with $\abs{z_0}<R$.
 
 ::: pf-proof
 
@@ -48,14 +48,14 @@ This is the hypothesis, with an arbitrary point chosen in the open disc of conve
 
 ::: {.pf-step #s2}
 
-If $w$ satisfies $|w|<R-|z_0|$, then
+If $w$ satisfies $\abs{w}<R-\abs{z_0}$, then
 $$
-\sum_{n=0}^{\infty}|a_n|(|z_0|+|w|)^n<\infty.
+\sum_{n=0}^{\infty}\abs{a_n}(\abs{z_0}+\abs{w})^n<\infty.
 $$
 
 ::: pf-proof
 
-The inequality $|z_0|+|w|<R$ places the positive real number $|z_0|+|w|$ strictly inside the radius of convergence. A power series converges absolutely at every point strictly inside its radius.
+The inequality $\abs{z_0}+\abs{w}<R$ places the positive real number $\abs{z_0}+\abs{w}$ strictly inside the radius of convergence. A power series converges absolutely at every point strictly inside its radius.
 
 :::
 
@@ -66,7 +66,7 @@ The inequality $|z_0|+|w|<R$ places the positive real number $|z_0|+|w|$ strictl
 For such $w$, the double series
 $$
 \sum_{n=0}^{\infty}\sum_{k=0}^n
-|a_n|\binom nk|z_0|^{n-k}|w|^k
+\abs{a_n}\binom nk\abs{z_0}^{n-k}\abs{w}^k
 $$
 converges.
 
@@ -74,7 +74,7 @@ converges.
 
 By the binomial theorem, the inner sum equals
 $$
-|a_n|(|z_0|+|w|)^n.
+\abs{a_n}(\abs{z_0}+\abs{w})^n.
 $$
 Hence the double series is exactly the convergent series in step [](#s2){.pf-ref}.
 
@@ -92,12 +92,12 @@ Then this series converges absolutely for every $k$.
 
 ::: pf-proof
 
-Choose any real $\rho$ with $|z_0|<\rho<R$. Since $\sum |a_n|\rho^n<\infty$ and
+Choose any real $\rho$ with $\abs{z_0}<\rho<R$. Since $\sum \abs{a_n}\rho^n<\infty$ and
 $$
-\binom nk |z_0|^{n-k}
-=\rho^{-k}\binom nk\left(\frac{|z_0|}{\rho}\right)^{n-k}\rho^n,
+\binom nk \abs{z_0}^{n-k}
+=\rho^{-k}\binom nk\left(\frac{\abs{z_0}}{\rho}\right)^{n-k}\rho^n,
 $$
-the factor $\binom nk(|z_0|/\rho)^{n-k}$ is bounded in $n$ for fixed $k$: polynomial growth in $n$ is dominated by the geometric factor $(|z_0|/\rho)^{n-k}$. Thus the defining series for $c_k$ is dominated by a constant multiple of $\sum |a_n|\rho^n$.
+the factor $\binom nk(\abs{z_0}/\rho)^{n-k}$ is bounded in $n$ for fixed $k$: polynomial growth in $n$ is dominated by the geometric factor $(\abs{z_0}/\rho)^{n-k}$. Thus the defining series for $c_k$ is dominated by a constant multiple of $\sum \abs{a_n}\rho^n$.
 
 :::
 
@@ -105,7 +105,7 @@ the factor $\binom nk(|z_0|/\rho)^{n-k}$ is bounded in $n$ for fixed $k$: polyno
 
 ::: {.pf-step #s5}
 
-For every $|w|<R-|z_0|$,
+For every $\abs{w}<R-\abs{z_0}$,
 $$
 f(z_0+w)=\sum_{k=0}^{\infty}c_kw^k.
 $$
@@ -134,11 +134,11 @@ $$
 
 ::: pf-step
 
-Therefore $f$ has a power-series expansion centered at $z_0$, valid at least on the disc $|z-z_0|<R-|z_0|$.
+Therefore $f$ has a power-series expansion centered at $z_0$, valid at least on the disc $\abs{z-z_0}<R-\abs{z_0}$.
 
 ::: pf-proof
 
-Set $w=z-z_0$ in step [](#s5){.pf-ref}. Since $z_0$ was arbitrary with $|z_0|<R$, the conclusion holds around every point of the original disc of convergence.
+Set $w=z-z_0$ in step [](#s5){.pf-ref}. Since $z_0$ was arbitrary with $\abs{z_0}<R$, the conclusion holds around every point of the original disc of convergence.
 
 :::
 

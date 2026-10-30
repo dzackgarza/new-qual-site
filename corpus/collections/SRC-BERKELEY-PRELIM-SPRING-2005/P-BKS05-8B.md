@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-8B
 kind: problem
-title: A differentiable function with $|f'|\le|f|$ and $f(0)=0$ vanishes
+title: A differentiable function with $\abs{f'}\le\abs{f}$ and $f(0)=0$ vanishes
 classification:
   areas:
   - prelim

@@ -19,17 +19,17 @@ audit:
 ::: {.problem}
 Let $f(z)$ be entire and assume $f(0)\ne0$. Let $\{a_n\}$ be the zeros of $f$, repeated according to multiplicity.
 
-(a) Let $R>0$ be such that $|f(z)|>0$ on $|z|=R$. Prove
+(a) Let $R>0$ be such that $\abs{f(z)}>0$ on $\abs{z}=R$. Prove
 $$
-\frac1{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\,d\theta
-=\log|f(0)|+\sum_{|a_n|<R}\log\frac{R}{|a_n|}.
+\frac1{2\pi}\int_0^{2\pi}\log\abs{f(Re^{i\theta})}\,d\theta
+=\log\abs{f(0)}+\sum_{\abs{a_n}<R}\log\frac{R}{\abs{a_n}}.
 $$
 
-(b) Prove that if there are constants $C$ and $\lambda$ such that $|f(z)|\le Ce^{|z|^\lambda}$ for all $z$, then
+(b) Prove that if there are constants $C$ and $\lambda$ such that $\abs{f(z)}\le Ce^{\abs{z}^\lambda}$ for all $z$, then
 $$
-\sum_n\left(\frac1{|a_n|}\right)^{\lambda+\varepsilon}<\infty
+\sum_n\left(\frac1{\abs{a_n}}\right)^{\lambda+\varepsilon}<\infty
 $$
-for all $\varepsilon>0$. Hint: estimate $\#\{n:|a_n|<R\}$ using (a) on $|z|\sim2R$.
+for all $\varepsilon>0$. Hint: estimate $\#\{n:\abs{a_n}<R\}$ using (a) on $\abs{z}\sim2R$.
 :::
 
 ::: {.solution}
@@ -38,12 +38,12 @@ for all $\varepsilon>0$. Hint: estimate $\#\{n:|a_n|<R\}$ using (a) on $|z|\sim2
 
 ::: pf-step
 
-For fixed $R>0$ with no zeros of $f$ on $|z|=R$, there are only finitely many zeros of $f$ in $|z|<R$, counted with multiplicity.
+For fixed $R>0$ with no zeros of $f$ on $\abs{z}=R$, there are only finitely many zeros of $f$ in $\abs{z}<R$, counted with multiplicity.
 
 
 ::: pf-proof
 
-The zeros of a nonzero holomorphic function are discrete. Since the closed disk $\{|z|\le R\}$ is compact and contains no boundary zeros, it contains only finitely many zeros of $f$.
+The zeros of a nonzero holomorphic function are discrete. Since the closed disk $\{\abs{z}\le R\}$ is compact and contains no boundary zeros, it contains only finitely many zeros of $f$.
 
 :::
 
@@ -51,7 +51,7 @@ The zeros of a nonzero holomorphic function are discrete. Since the closed disk 
 
 ::: {.pf-step #s1-2}
 
-If $b_1,\ldots,b_N$ are the zeros of $f$ in $|z|<R$, repeated according to multiplicity, then
+If $b_1,\ldots,b_N$ are the zeros of $f$ in $\abs{z}<R$, repeated according to multiplicity, then
 $$
 f(z)=g(z)\prod_{j=1}^N(z-b_j)
 $$
@@ -70,14 +70,14 @@ Divide $f$ successively by the corresponding linear factors, with repetitions ma
 
 One has
 $$
-\frac1{2\pi}\int_0^{2\pi}\log|g(Re^{i\theta})|\,d\theta
-=\log|g(0)|.
+\frac1{2\pi}\int_0^{2\pi}\log\abs{g(Re^{i\theta})}\,d\theta
+=\log\abs{g(0)}.
 $$
 
 
 ::: pf-proof
 
-Because $g$ is holomorphic and nonvanishing on a simply connected neighborhood of the closed disk, it has a holomorphic logarithm there. Hence $\log|g|$ is harmonic. The mean-value property for harmonic functions gives the identity.
+Because $g$ is holomorphic and nonvanishing on a simply connected neighborhood of the closed disk, it has a holomorphic logarithm there. Hence $\log\abs{g}$ is harmonic. The mean-value property for harmonic functions gives the identity.
 
 :::
 
@@ -85,9 +85,9 @@ Because $g$ is holomorphic and nonvanishing on a simply connected neighborhood o
 
 ::: {.pf-step #s1-4}
 
-For every $b$ with $|b|<R$,
+For every $b$ with $\abs{b}<R$,
 $$
-\frac1{2\pi}\int_0^{2\pi}\log|Re^{i\theta}-b|\,d\theta
+\frac1{2\pi}\int_0^{2\pi}\log\abs{Re^{i\theta}-b}\,d\theta
 =\log R.
 $$
 
@@ -103,10 +103,10 @@ The function
 $$
 z\longmapsto 1-\frac bR z
 $$
-is holomorphic and nonvanishing on the closed unit disk because $|b|/R<1$. Thus the mean-value property applied to its logarithmic modulus gives
+is holomorphic and nonvanishing on the closed unit disk because $\abs{b}/R<1$. Thus the mean-value property applied to its logarithmic modulus gives
 $$
 \frac1{2\pi}\int_0^{2\pi}
-\log\left|1-\frac bR e^{-i\theta}\right|\,d\theta=0.
+\log\abs{1-\frac bR e^{-i\theta}}\,d\theta=0.
 $$
 Adding the constant $\log R$ proves the claim.
 
@@ -119,8 +119,8 @@ Adding the constant $\log R$ proves the claim.
 Jensen's formula holds:
 $$
 \boxed{
-\frac1{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\,d\theta
-=\log|f(0)|+\sum_{|a_n|<R}\log\frac R{|a_n|}.}
+\frac1{2\pi}\int_0^{2\pi}\log\abs{f(Re^{i\theta})}\,d\theta
+=\log\abs{f(0)}+\sum_{\abs{a_n}<R}\log\frac R{\abs{a_n}}.}
 $$
 
 
@@ -129,18 +129,18 @@ $$
 Using the factorization from step [](#s1-2){.pf-ref} and then steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
-\frac1{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\,d\theta
-&=\log|g(0)|+N\log R.
+\frac1{2\pi}\int_0^{2\pi}\log\abs{f(Re^{i\theta})}\,d\theta
+&=\log\abs{g(0)}+N\log R.
 \end{aligned}
 $$
 Since $f(0)\ne0$, none of the $b_j$ is zero, and
 $$
-|f(0)|=|g(0)|\prod_{j=1}^N|b_j|.
+\abs{f(0)}=\abs{g(0)}\prod_{j=1}^N\abs{b_j}.
 $$
 Therefore
 $$
-\log|g(0)|
-=\log|f(0)|-\sum_{j=1}^N\log|b_j|,
+\log\abs{g(0)}
+=\log\abs{f(0)}-\sum_{j=1}^N\log\abs{b_j},
 $$
 which gives the displayed formula.
 
@@ -152,7 +152,7 @@ which gives the displayed formula.
 
 Let
 $$
-N(R)\coloneqq\#\{n:|a_n|<R\},
+N(R)\coloneqq\#\{n:\abs{a_n}<R\},
 $$
 counting multiplicities. If $\lambda>0$, then under the growth hypothesis in part (b) there is a constant $C_1$ such that
 $$
@@ -167,14 +167,14 @@ Fix $R\ge1$. The set of moduli of zeros is discrete in every compact interval, s
 $$
 \rho\in[2R,3R]
 $$
-such that $f$ has no zero on $|z|=\rho$. Every zero with $|a_n|<R$ contributes at least $\log2$ to the Jensen sum at radius $\rho$. Hence step [](#s1-5){.pf-ref} and the growth hypothesis give
+such that $f$ has no zero on $\abs{z}=\rho$. Every zero with $\abs{a_n}<R$ contributes at least $\log2$ to the Jensen sum at radius $\rho$. Hence step [](#s1-5){.pf-ref} and the growth hypothesis give
 $$
 \begin{aligned}
 N(R)\log2
-&\le\sum_{|a_n|<\rho}\log\frac\rho{|a_n|}\\
-&=\frac1{2\pi}\int_0^{2\pi}\log|f(\rho e^{i\theta})|\,d\theta-\log|f(0)|\\
-&\le \log C+\rho^\lambda-\log|f(0)|\\
-&\le \log C+3^\lambda R^\lambda-\log|f(0)|.
+&\le\sum_{\abs{a_n}<\rho}\log\frac\rho{\abs{a_n}}\\
+&=\frac1{2\pi}\int_0^{2\pi}\log\abs{f(\rho e^{i\theta})}\,d\theta-\log\abs{f(0)}\\
+&\le \log C+\rho^\lambda-\log\abs{f(0)}\\
+&\le \log C+3^\lambda R^\lambda-\log\abs{f(0)}.
 \end{aligned}
 $$
 Absorbing the fixed constants into $C_1$ yields the claim.
@@ -188,18 +188,18 @@ Absorbing the fixed constants into $C_1$ yields the claim.
 For every $\varepsilon>0$,
 $$
 \boxed{
-\sum_n |a_n|^{-(\lambda+\varepsilon)}<\infty.}
+\sum_n \abs{a_n}^{-(\lambda+\varepsilon)}<\infty.}
 $$
 
 
 ::: pf-proof
 
-If $\lambda\le0$, then $|f(z)|\le Ce$ for every $|z|\ge1$; continuity bounds $f$ on the closed unit disk as well. Thus $f$ is bounded entire, hence constant by Liouville's theorem. Since $f(0)\ne0$, it has no zeros, and the sum is empty.
+If $\lambda\le0$, then $\abs{f(z)}\le Ce$ for every $\abs{z}\ge1$; continuity bounds $f$ on the closed unit disk as well. Thus $f$ is bounded entire, hence constant by Liouville's theorem. Since $f(0)\ne0$, it has no zeros, and the sum is empty.
 
 Assume now that $\lambda>0$.
-There are only finitely many zeros with $|a_n|<1$, and none is zero because $f(0)\ne0$, so their contribution is finite. For $k\ge0$, let
+There are only finitely many zeros with $\abs{a_n}<1$, and none is zero because $f(0)\ne0$, so their contribution is finite. For $k\ge0$, let
 $$
-E_k=\{n:2^k\le|a_n|<2^{k+1}\}.
+E_k=\{n:2^k\le\abs{a_n}<2^{k+1}\}.
 $$
 By step [](#s1-6){.pf-ref},
 $$
@@ -208,7 +208,7 @@ $$
 for a fixed constant $C_2$. Therefore
 $$
 \begin{aligned}
-\sum_{n\in E_k}|a_n|^{-(\lambda+\varepsilon)}
+\sum_{n\in E_k}\abs{a_n}^{-(\lambda+\varepsilon)}
 &\le \#E_k\,2^{-k(\lambda+\varepsilon)}\\
 &\le C_2\,2^\lambda\,2^{-k\varepsilon}.
 \end{aligned}

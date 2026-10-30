@@ -99,7 +99,7 @@ $$
 ::: pf-proof
 Let $S_4$ act on the three partitions of $\{1,2,3,4\}$ into two unordered pairs:
 $$
-12|34,\qquad13|24,\qquad14|23.
+12\blockseparator34,\qquad13\blockseparator24,\qquad14\blockseparator23.
 $$
 The resulting permutation character counts fixed pairings. The numbers of fixed pairings on the five conjugacy classes are
 $$
@@ -138,7 +138,7 @@ $$
 ::: pf-proof
 The five displayed characters are irreducible: the one-dimensional rows are irreducible, the standard representation is irreducible, its sign twist is irreducible, and step [](#two-dimensional-irreducible-character){.pf-ref} proves irreducibility of the $2$-dimensional row. Their degree squares sum to
 $$
-1^2+3^2+2^2+3^2+1^2=24=|S_4|,
+1^2+3^2+2^2+3^2+1^2=24=\cardinality{S_4},
 $$
 so they form the complete set of irreducible characters.
 :::

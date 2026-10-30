@@ -19,7 +19,7 @@ Let $G = \CC \setminus \{0\}$, and let $h : G \to \RR$ be harmonic.
 
 (ii) Show that there exist a constant $c$ and a holomorphic function $f : G \to \CC$ such that
 $$
-h(z) = c\log|z| + \operatorname{Re} f(z) \quad \forall z \in G.
+h(z) = c\log\abs{z} + \operatorname{Re} f(z) \quad \forall z \in G.
 $$
 :::
 
@@ -28,16 +28,16 @@ Since $h$ is harmonic,
 $$
 g=h_x-ih_y=2\frac{\partial h}{\partial z}
 $$
-is holomorphic on $G$. For a positively oriented circle $|z|=r$,
+is holomorphic on $G$. For a positively oriented circle $\abs{z}=r$,
 parametrized by $z=re^{it}$,
 $$
-\int_{|z|=r}g(z)\,dz
+\int_{\abs{z}=r}g(z)\,dz
 =\int_0^{2\pi}(h_x-ih_y)(-r\sin t+ir\cos t)\,dt.
 $$
 Its real part is the integral of the tangential derivative of $h$ around the
 circle, hence is $0$. Therefore the integral is purely imaginary, and
 $$
-\operatorname{Res}_0 g=\frac1{2\pi i}\int_{|z|=r}g(z)\,dz
+\operatorname{Res}_0 g=\frac1{2\pi i}\int_{\abs{z}=r}g(z)\,dz
 $$
 is real. Write this residue as $c\in\RR$.
 
@@ -45,11 +45,11 @@ Then $g(z)-c/z$ has zero period around a generator of
 $\CC\setminus\{0\}$, hence all its periods vanish. It therefore has a
 holomorphic primitive $F$ on $G$. Since
 $$
-2\frac{\partial}{\partial z}\bigl(h-c\log|z|-\operatorname{Re}F\bigr)=0,
+2\frac{\partial}{\partial z}\bigl(h-c\log\abs{z}-\operatorname{Re}F\bigr)=0,
 $$
 the real-valued function in parentheses is constant. Absorb that real
 constant into $F$. We obtain
 $$
-\boxed{h(z)=c\log|z|+\operatorname{Re}F(z)}.
+\boxed{h(z)=c\log\abs{z}+\operatorname{Re}F(z)}.
 $$
 :::

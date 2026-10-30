@@ -75,11 +75,11 @@ Maschke's theorem applies because $\operatorname{char}\CC=0$ does not divide $\a
 
 Their restrictions to $H\cong C_2$ are
 $$
-\mathbf1|_H\cong\mathbf1_H,
+\mathbf1\restrict_H\cong\mathbf1_H,
 \qquad
-\sgn|_H\cong\sgn_H,
+\sgn\restrict_H\cong\sgn_H,
 \qquad
-V|_H\cong\mathbf1_H\oplus\sgn_H.
+V\restrict_H\cong\mathbf1_H\oplus\sgn_H.
 $$
 
 ::: pf-proof

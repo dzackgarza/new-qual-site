@@ -103,7 +103,7 @@ where $V_1,\ldots,V_h$ are representatives of the irreducible $G$-modules.
 
 Maschke's theorem makes the regular representation completely reducible. Let $\chi_{\mathrm{reg}}$ be its character. Then
 $$
-\chi_{\mathrm{reg}}(e)=|G|,
+\chi_{\mathrm{reg}}(e)=\cardinality{G},
 \qquad
 \chi_{\mathrm{reg}}(g)=0\quad(g\ne e),
 $$
@@ -112,7 +112,7 @@ because left multiplication by $g\ne e$ permutes the basis $\{e_h:h\in G\}$ with
 If $\chi_\nu$ is the irreducible character of $V_\nu$, its multiplicity in the regular representation is
 $$
 \langle\chi_{\mathrm{reg}},\chi_\nu\rangle
-=\frac1{|G|}\sum_{g\in G}\chi_{\mathrm{reg}}(g)\overline{\chi_\nu(g)}
+=\frac1{\cardinality{G}}\sum_{g\in G}\chi_{\mathrm{reg}}(g)\overline{\chi_\nu(g)}
 =\overline{\chi_\nu(e)}
 =\dim V_\nu=n_\nu.
 $$

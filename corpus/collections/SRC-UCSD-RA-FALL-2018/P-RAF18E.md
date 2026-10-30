@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $1 < p < \infty$, and $\{f_n\}_n \subset L^p([0,1], m)$ be a sequence such that $M := \sup_n \|f_n\|_p < \infty$ and $\lim_{n \to \infty} \|f_n\|_1 = 0$.
+Let $1 < p < \infty$, and $\{f_n\}_n \subset L^p([0,1], m)$ be a sequence such that $M := \sup_n \norm{f_n}_p < \infty$ and $\lim_{n \to \infty} \norm{f_n}_1 = 0$.
 
-1. Prove that $\lim_{n \to \infty} \|f_n\|_r = 0$ for every $r \in [1, p)$.
+1. Prove that $\lim_{n \to \infty} \norm{f_n}_r = 0$ for every $r \in [1, p)$.
 
 2. Let $1 < q < \infty$ such that $1/p + 1/q = 1$.
    Prove that $\lim_{n \to \infty} \int_0^1 f_n g\,dm = 0$ for every $g \in L^q([0,1], m)$.
@@ -48,19 +48,19 @@ $$
 $$
 For $r>1$, Hölder's inequality gives the interpolation estimate
 $$
-\|f_n\|_r\le \|f_n\|_1^\theta\|f_n\|_p^{1-\theta}.
+\norm{f_n}_r\le \norm{f_n}_1^\theta\norm{f_n}_p^{1-\theta}.
 $$
 For $r=1$ this is exactly the given hypothesis. Since
 $$
-\sup_n\|f_n\|_p=M<\infty
+\sup_n\norm{f_n}_p=M<\infty
 $$
-and $\|f_n\|_1\to0$, we obtain
+and $\norm{f_n}_1\to0$, we obtain
 $$
-\|f_n\|_r\le M^{1-\theta}\|f_n\|_1^\theta\longrightarrow0.
+\norm{f_n}_r\le M^{1-\theta}\norm{f_n}_1^\theta\longrightarrow0.
 $$
 Thus
 $$
-\boxed{\|f_n\|_r\to0\quad\text{for every }1\le r<p.}
+\boxed{\norm{f_n}_r\to0\quad\text{for every }1\le r<p.}
 $$
 
 :::
@@ -75,24 +75,24 @@ Prove weak convergence in $L^p$.
 
 Let $g\in L^q([0,1])$ and fix $\varepsilon>0$. Since bounded functions are dense in $L^q([0,1])$, choose $h\in L^\infty([0,1])$ with
 $$
-\|g-h\|_q<\frac{\varepsilon}{2M}
+\norm{g-h}_q<\frac{\varepsilon}{2M}
 $$
 when $M>0$; if $M=0$, the conclusion is immediate.
 
 Then Hölder's inequality gives
 $$
-\left|\int_0^1 f_n(g-h)\,dm\right|
-\le \|f_n\|_p\|g-h\|_q
+\abs{\int_0^1 f_n(g-h)\,dm}
+\le \norm{f_n}_p\norm{g-h}_q
 <\frac\varepsilon2.
 $$
 On the other hand,
 $$
-\left|\int_0^1 f_n h\,dm\right|
-\le \|h\|_\infty\|f_n\|_1\longrightarrow0.
+\abs{\int_0^1 f_n h\,dm}
+\le \norm{h}_\infty\norm{f_n}_1\longrightarrow0.
 $$
 Hence for all sufficiently large $n$,
 $$
-\left|\int_0^1 f_ng\,dm\right|<\varepsilon.
+\abs{\int_0^1 f_ng\,dm}<\varepsilon.
 $$
 Therefore
 $$

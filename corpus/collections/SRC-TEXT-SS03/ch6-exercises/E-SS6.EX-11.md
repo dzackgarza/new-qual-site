@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-11. Let $f ( z ) = e ^ { a z } e ^ { - e ^ { z } }$ where $a > 0$ . Observe that in the strip $\{ x + i y : ~ | y | < \pi / 2 \}$ the function $f ( x + i y )$ is exponentially decreasing as $| x |$ tends to infinity.
+11. Let $f ( z ) = e ^ { a z } e ^ { - e ^ { z } }$ where $a > 0$ . Observe that in the strip $\{ x + i y : ~ \abs{ y } < \pi / 2 \}$ the function $f ( x + i y )$ is exponentially decreasing as $\abs{ x }$ tends to infinity.
     Prove that
 
 $$
@@ -48,9 +48,9 @@ $$
 $$
 since $\Re(a-2\pi i\xi)=a>0$.
 
-The asserted decay of $f$ on every closed substrip $|y|\le \pi/2-\delta$ follows directly from
+The asserted decay of $f$ on every closed substrip $\abs{y}\le \pi/2-\delta$ follows directly from
 $$
-|f(x+iy)|=e^{ax}e^{-e^x\cos y}.
+\abs{f(x+iy)}=e^{ax}e^{-e^x\cos y}.
 $$
-As $x\to-\infty$ this is $O(e^{ax})$. On $|y|\le\pi/2-\delta$ we have $\cos y\ge\sin\delta>0$, so as $x\to+\infty$ the factor $e^{-e^x\cos y}$ gives superexponential decay. Thus the stated strip decay holds.
+As $x\to-\infty$ this is $O(e^{ax})$. On $\abs{y}\le\pi/2-\delta$ we have $\cos y\ge\sin\delta>0$, so as $x\to+\infty$ the factor $e^{-e^x\cos y}$ gives superexponential decay. Thus the stated strip decay holds.
 :::

@@ -16,13 +16,13 @@ review: draft
 ::: {.problem}
 The three-sphere
 $$
-S^3=\{(z,w)\in\CC^2\mid |z|^2+|w|^2=1\}
+S^3=\{(z,w)\in\CC^2\mid \abs{z}^2+\abs{w}^2=1\}
 $$
 is the union of
 $$
-H_1=\{(z,w)\in S^3\mid |z|^2\leq \tfrac12\}
+H_1=\{(z,w)\in S^3\mid \abs{z}^2\leq \tfrac12\}
 \quad\text{and}\quad
-H_2=\{(z,w)\in S^3\mid |w|^2\leq \tfrac12\}.
+H_2=\{(z,w)\in S^3\mid \abs{w}^2\leq \tfrac12\}.
 $$
 Check that each piece is a solid torus, homeomorphic to $B^2\times S^1$, and that their intersection is a torus $T$.
 
@@ -39,16 +39,16 @@ By partitioning $S^3-K$ with $H_1-K$ and $H_2-K$, calculate a presentation for $
 
 Each $H_i$ is a solid torus, and $H_1\cap H_2$ is the torus
 $$
-T=\{(z,w)\in S^3:|z|=|w|=1/\sqrt2\}.
+T=\{(z,w)\in S^3:\abs{z}=\abs{w}=1/\sqrt2\}.
 $$
 
 ::: pf-proof
 
 For $H_1$, write $z\in D^2_{1/\sqrt2}$ freely and write
 $$
-w=\sqrt{1-|z|^2}\,u,\qquad u\in S^1.
+w=\sqrt{1-\abs{z}^2}\,u,\qquad u\in S^1.
 $$
-This gives $H_1\cong D^2\times S^1$. The analogous parametrization gives $H_2\cong S^1\times D^2$. Their intersection is characterized by equality in both inequalities, hence $|z|=|w|=1/\sqrt2$, a product of two circles.
+This gives $H_1\cong D^2\times S^1$. The analogous parametrization gives $H_2\cong S^1\times D^2$. Their intersection is characterized by equality in both inequalities, hence $\abs{z}=\abs{w}=1/\sqrt2$, a product of two circles.
 
 :::
 

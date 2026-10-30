@@ -157,7 +157,7 @@ U
 $$
 of $(0,0,0)$ such that
 $$
-\Phi|_U
+\Phi\restrict_U
 $$
 is one-to-one.
 
@@ -183,7 +183,7 @@ V
 $$
 such that
 $$
-\Phi|_U:U\to V
+\Phi\restrict_U:U\to V
 $$
 is a $C^1$ diffeomorphism.
 In particular, it is one-to-one.

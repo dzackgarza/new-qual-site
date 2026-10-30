@@ -34,9 +34,9 @@ for every $x\in(0,1)$.
 
 The function $f:(0,1)\to\RR$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $x,y\in(0,1)$,
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 
 
@@ -61,20 +61,20 @@ is Cauchy in $\RR$.
 
 Let $\varepsilon>0$. By uniform continuity, choose $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \Longrightarrow
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 Choose $N$ with $1/N<\delta/2$. If $m,n\ge N$, then
 $$
-\left|\frac1m-\frac1n\right|
+\abs{\frac1m-\frac1n}
 \le\frac1m+\frac1n
 \le\frac2N
 <\delta.
 $$
 Hence
 $$
-\left|f\left(\frac1m\right)-f\left(\frac1n\right)\right|<\varepsilon.
+\abs{f\left(\frac1m\right)-f\left(\frac1n\right)}<\varepsilon.
 $$
 Thus the sequence is Cauchy.
 
@@ -100,25 +100,25 @@ Let $\varepsilon>0$. Choose $\delta>0$ from uniform continuity for $\varepsilon/
 $$
 \frac1N<\frac\delta2
 \qquad\text{and}\qquad
-\left|f\left(\frac1N\right)-L_0\right|<\frac\varepsilon2.
+\abs{f\left(\frac1N\right)-L_0}<\frac\varepsilon2.
 $$
 If $0<x<\delta/2$, then
 $$
-\left|x-\frac1N\right|
+\abs{x-\frac1N}
 <
 \delta,
 $$
 so
 $$
-\left|f(x)-f\left(\frac1N\right)\right|<\frac\varepsilon2.
+\abs{f(x)-f\left(\frac1N\right)}<\frac\varepsilon2.
 $$
 Therefore
 $$
-|f(x)-L_0|
+\abs{f(x)-L_0}
 \le
-\left|f(x)-f\left(\frac1N\right)\right|
+\abs{f(x)-f\left(\frac1N\right)}
 +
-\left|f\left(\frac1N\right)-L_0\right|
+\abs{f\left(\frac1N\right)-L_0}
 <\varepsilon.
 $$
 Thus $f(x)\to L_0$ as $x\to0^+$.

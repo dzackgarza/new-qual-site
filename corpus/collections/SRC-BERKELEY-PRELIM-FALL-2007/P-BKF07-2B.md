@@ -74,7 +74,7 @@ Thus the restriction of $A^{m+1}$ to $E_0$ is the zero operator.
 
 ::: {.pf-step #B-diagonalizable-nonzero}
 If $\lambda\ne0$, then the restriction
-$B\coloneqq A|_{E_\lambda}$ is diagonalizable.
+$B\coloneqq A\restrict_{E_\lambda}$ is diagonalizable.
 
 ::: pf-proof
 For every $v\in E_\lambda$,
@@ -100,9 +100,9 @@ $A^{m+1}$ to $E_\lambda$ is diagonalizable.
 
 ::: pf-proof
 For $\lambda=0$, this is step [](#E0-diagonalizable){.pf-ref}. If $\lambda\ne0$, step [](#B-diagonalizable-nonzero){.pf-ref}
-shows that $B=A|_{E_\lambda}$ is diagonalizable. Therefore its power
+shows that $B=A\restrict_{E_\lambda}$ is diagonalizable. Therefore its power
 $$
-B^{m+1}=A^{m+1}|_{E_\lambda}
+B^{m+1}=A^{m+1}\restrict_{E_\lambda}
 $$
 is diagonalizable as well.
 :::

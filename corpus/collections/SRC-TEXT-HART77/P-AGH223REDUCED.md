@@ -71,12 +71,12 @@ P\in V\subseteq U
 $$
 one has
 $$
-(s|_V)^n=0
+(s\restrict_V)^n=0
 $$
 in $\mathcal O_X(V)$.
 This ring is reduced by hypothesis, so
 $$
-s|_V=0.
+s\restrict_V=0.
 $$
 Hence
 $$
@@ -308,7 +308,7 @@ $$
 $$
 Together with the identity continuous map
 $$
-|X|\to|X|,
+\underlyingspace{X}\to\underlyingspace{X},
 $$
 this has the correct contravariant direction for a morphism
 $$
@@ -432,7 +432,7 @@ $$
 $$
 is the identity on the underlying topological space by step [](#iota-morphism-homeomorphism){.pf-ref}, so any factorization of $f$ through it must use the same continuous map
 $$
-|X|\to|Y|=|Y_{\mathrm{red}}|.
+\underlyingspace{X}\to\underlyingspace{Y}=\underlyingspace{Y_{\mathrm{red}}}.
 $$
 
 It remains to check that the induced maps on stalks are local.
@@ -479,7 +479,7 @@ The factorization $g$ is unique.
 ::: pf-proof
 Any such factorization must have the same underlying continuous map, because
 $$
-|Y_{\mathrm{red}}|\to|Y|
+\underlyingspace{Y_{\mathrm{red}}}\to\underlyingspace{Y}
 $$
 is the identity.
 On sheaves, its map

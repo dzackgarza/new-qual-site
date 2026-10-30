@@ -57,7 +57,7 @@ $$
 Therefore
 $$
 \begin{aligned}
-\|H((x,y),t)\|^2
+\norm{H((x,y),t)}^2
 &=x^2+y^2\cos^2(\pi t)+y^2\sin^2(\pi t)\\
 &=x^2+y^2\bigl(\cos^2(\pi t)+\sin^2(\pi t)\bigr)\\
 &=x^2+y^2\\

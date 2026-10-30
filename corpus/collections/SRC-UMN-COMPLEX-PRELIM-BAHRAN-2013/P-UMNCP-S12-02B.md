@@ -23,7 +23,7 @@ z^4+5z+3
 $$
 in the annulus
 $$
-1<|z|<2.
+1<\abs{z}<2.
 $$
 :::
 
@@ -40,7 +40,7 @@ $$
 
 The polynomial $p$ has exactly four zeros in
 $$
-|z|<2,
+\abs{z}<2,
 $$
 counted with multiplicity.
 
@@ -49,25 +49,25 @@ counted with multiplicity.
 
 On the circle
 $$
-|z|=2,
+\abs{z}=2,
 $$
 one has
 $$
-|z^4|=16,
+\abs{z^4}=16,
 $$
 while
 $$
-|5z+3|
+\abs{5z+3}
 \le
-5|z|+3
+5\abs{z}+3
 =
 13.
 $$
 Thus
 $$
-|5z+3|<|z^4|
+\abs{5z+3}<\abs{z^4}
 $$
-on $|z|=2$. By Rouché's theorem,
+on $\abs{z}=2$. By Rouché's theorem,
 $$
 p(z)=z^4+(5z+3)
 $$
@@ -75,7 +75,7 @@ and
 $$
 z^4
 $$
-have the same number of zeros in $|z|<2$. The function $z^4$ has four zeros there, counted with multiplicity.
+have the same number of zeros in $\abs{z}<2$. The function $z^4$ has four zeros there, counted with multiplicity.
 
 :::
 
@@ -85,7 +85,7 @@ have the same number of zeros in $|z|<2$. The function $z^4$ has four zeros ther
 
 The polynomial $p$ has exactly one zero in
 $$
-|z|<1,
+\abs{z}<1,
 $$
 counted with multiplicity.
 
@@ -94,25 +94,25 @@ counted with multiplicity.
 
 On the circle
 $$
-|z|=1,
+\abs{z}=1,
 $$
 one has
 $$
-|5z|=5,
+\abs{5z}=5,
 $$
 while
 $$
-|z^4+3|
+\abs{z^4+3}
 \le
-|z|^4+3
+\abs{z}^4+3
 =
 4.
 $$
 Thus
 $$
-|z^4+3|<|5z|
+\abs{z^4+3}<\abs{5z}
 $$
-on $|z|=1$. By Rouché's theorem,
+on $\abs{z}=1$. By Rouché's theorem,
 $$
 p(z)=5z+(z^4+3)
 $$
@@ -120,7 +120,7 @@ and
 $$
 5z
 $$
-have the same number of zeros in $|z|<1$. The function $5z$ has exactly one zero there.
+have the same number of zeros in $\abs{z}<1$. The function $5z$ has exactly one zero there.
 
 :::
 
@@ -130,9 +130,9 @@ have the same number of zeros in $|z|<1$. The function $5z$ has exactly one zero
 
 The polynomial $p$ has no zeros on either boundary circle
 $$
-|z|=1
+\abs{z}=1
 \quad\text{or}\quad
-|z|=2.
+\abs{z}=2.
 $$
 
 
@@ -148,7 +148,7 @@ The strict Rouché inequalities in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-re
 
 Hence the number of zeros in
 $$
-1<|z|<2
+1<\abs{z}<2
 $$
 is
 $$
@@ -158,7 +158,7 @@ $$
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref} there are four zeros in $|z|<2$, while by step [](#s1-2){.pf-ref} there is one zero in $|z|<1$. Step [](#s1-3){.pf-ref} ensures that no zero lies on either boundary. Therefore the annulus contains
+By step [](#s1-1){.pf-ref} there are four zeros in $\abs{z}<2$, while by step [](#s1-2){.pf-ref} there is one zero in $\abs{z}<1$. Step [](#s1-3){.pf-ref} ensures that no zero lies on either boundary. Therefore the annulus contains
 $$
 4-1=3
 $$

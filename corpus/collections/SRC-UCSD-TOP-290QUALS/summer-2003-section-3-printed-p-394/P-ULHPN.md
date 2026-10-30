@@ -37,7 +37,7 @@ $$
 
 $$
 \Ext(\ZZ/n, \ZZ/m) = (\ZZ/m) / (n \cdot \ZZ/m) \cong (\ZZ/m) / (d \cdot \ZZ/m) && 
-\\ \text{where } d \definedas \gcd(m, n)
+\\ \text{where } d \coloneqq \gcd(m, n)
 .$$
   General principle: $\Ext(\ZZ/n, G) = G/nG$ 
 
@@ -83,14 +83,14 @@ $$
 
 Write 
 $$
-A_\wait &\definedas A_1 \oplus A_2 \oplus A_3 \definedas \ZZ \oplus  \ZZ/2 \oplus  \ZZ/3 \\
-B_\wait &\definedas B_1 \oplus B_2 \oplus B_3 \definedas \ZZ \oplus \ZZ/4 \oplus  \ZZ/5
+A_\wait &\coloneqq A_1 \oplus A_2 \oplus A_3 \coloneqq \ZZ \oplus  \ZZ/2 \oplus  \ZZ/3 \\
+B_\wait &\coloneqq B_1 \oplus B_2 \oplus B_3 \coloneqq \ZZ \oplus \ZZ/4 \oplus  \ZZ/5
 .$$
 
 We can then define the bicomplex $$
-C_{\wait, \wait} \definedas \Ext(A_\wait, B_\wait) = \bigoplus_{0 \leq i, k \leq 3} \Ext(A_i, B_k)
+C_{\wait, \wait} \coloneqq \Ext(A_\wait, B_\wait) = \bigoplus_{0 \leq i, k \leq 3} \Ext(A_i, B_k)
 ,$$
-i.e. $C_{i, k} \definedas \Ext(A_i, B_k)$, which can be organized into the following diagram where we take the Ext at each position and sum them all together:
+i.e. $C_{i, k} \coloneqq \Ext(A_i, B_k)$, which can be organized into the following diagram where we take the Ext at each position and sum them all together:
 
 \begin{tikzcd}
 	{\Ext(A_1, B_1)} && {\Ext(A_1, B_2)} && {\Ext(A_1, B_3)} \\

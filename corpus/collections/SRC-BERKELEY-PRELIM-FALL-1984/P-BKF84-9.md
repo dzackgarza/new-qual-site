@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ and $g$ be analytic in the open unit disk, and let $C_r$ be the positively oriented circle $|w|=r$.
+Let $f$ and $g$ be analytic in the open unit disk, and let $C_r$ be the positively oriented circle $\abs{w}=r$.
 
 1. Prove that
 $$
 h(z)=\frac1{2\pi i}\int_{C_r}\frac1w f(w)g\!\left(\frac zw\right)\,dw
 $$
-is independent of $r$ whenever $|z|<r<1$, and that it defines an analytic function $h$ on $|z|<1$.
+is independent of $r$ whenever $\abs{z}<r<1$, and that it defines an analytic function $h$ on $\abs{z}<1$.
 
 2. Prove or give a counterexample: if $f\not\equiv0$ and $g\not\equiv0$, then $h\not\equiv0$.
 :::

@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: P-YVNUD
 kind: problem
-title: 'Schwarz lemma for holomorphic maps of the disk into the right half-plane:
-  $\bigl|\frac{f(z)-a}{f(z)+a}\bigr|\le|z|$ and $|f''(0)|\le 2a$, also when $\operatorname{Re}f\ge
-  0$'
+title: 'Schwarz lemma for holomorphic maps of the disk into the right half-plane: $\abs{\frac{f(z)-a}{f(z)+a}}\le\abs{z}$ and $\abs{f''(0)}\le 2a$, also when $\operatorname{Re}f\ge 0$'
 classification:
   areas:
   - complex-analysis
@@ -24,7 +22,7 @@ audit:
 Let $f(z) \in H({\DD})$, $\text{Re}(f(z)) >0$ and $f(0)= a>0$.
 Show that
 $$
-\abs{ \frac{f(z)-a}{f(z)+a}} \leq |z|, \; \; \; |f'(0)| \leq 2a
+\abs{ \frac{f(z)-a}{f(z)+a}} \leq \abs{z}, \; \; \; \abs{f'(0)} \leq 2a
 .$$
 
 Show that the above is still true if $\text{Re}(f(z)) >0$ is replaced with $\text{Re}(f(z)) \geq 0$.

@@ -114,7 +114,7 @@ If $H$ denotes the pullback of the class of a line and $E_1,E_2$ the two
 exceptional curves, then the strict transforms of the conics through the
 base points form the complete linear system
 $$
-|2H-E_1-E_2|.
+\linearsystem{2H-E_1-E_2}.
 $$
 Blowing up the two simple base points removes the base locus, so this linear
 system is base-point free and defines the asserted morphism.

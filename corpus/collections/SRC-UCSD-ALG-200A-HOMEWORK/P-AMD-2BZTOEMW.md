@@ -38,7 +38,7 @@ audit:
 ::: {.problem}
 Let $p$ be a prime and let $G$ be a finite group with
 $$
-|G|=p(p+1).
+\cardinality{G}=p(p+1).
 $$
 Prove that $G$ has either a normal subgroup of order $p$ or a normal subgroup of order $p+1$.
 :::
@@ -57,7 +57,7 @@ $$
 
 ::: pf-proof
 
-Since $p$ occurs to the first power in $|G|=p(p+1)$, a Sylow $p$-subgroup has order $p$.
+Since $p$ occurs to the first power in $\cardinality{G}=p(p+1)$, a Sylow $p$-subgroup has order $p$.
 Sylow's theorem gives
 $$
 n_p\equiv1\pmod p
@@ -126,7 +126,7 @@ Exactly $p$ nonidentity elements of $G$ have order different from $p$.
 
 The group has
 $$
-|G|=p^2+p
+\cardinality{G}=p^2+p
 $$
 elements.
 By step [](#s3){.pf-ref}, exactly $p^2-1$ of them are nonidentity elements of order $p$.
@@ -155,9 +155,9 @@ $$
 $$
 Therefore
 $$
-|N_G(P)|=\frac{|G|}{p+1}=p.
+\cardinality{N_G(P)}=\frac{\cardinality{G}}{p+1}=p.
 $$
-Since $P\le N_G(P)$ and $|P|=p$, it follows that
+Since $P\le N_G(P)$ and $\cardinality{P}=p$, it follows that
 $$
 N_G(P)=P.
 $$
@@ -200,17 +200,17 @@ The order of $C_G(x)$ is not divisible by $p$ and hence divides $p+1$.
 
 ::: pf-proof
 
-If $p$ divided $|C_G(x)|$, Cauchy's theorem would give an element of order $p$ in $C_G(x)$, contradicting step [](#s6){.pf-ref}. Thus
+If $p$ divided $\cardinality{C_G(x)}$, Cauchy's theorem would give an element of order $p$ in $C_G(x)$, contradicting step [](#s6){.pf-ref}. Thus
 $$
-p\nmid |C_G(x)|.
+p\nmid \cardinality{C_G(x)}.
 $$
 Since $C_G(x)\le G$, Lagrange's theorem gives
 $$
-|C_G(x)|\mid p(p+1).
+\cardinality{C_G(x)}\mid p(p+1).
 $$
-Because $p$ is coprime to $p+1$ and does not divide $|C_G(x)|$, it follows that
+Because $p$ is coprime to $p+1$ and does not divide $\cardinality{C_G(x)}$, it follows that
 $$
-|C_G(x)|\mid p+1.
+\cardinality{C_G(x)}\mid p+1.
 $$
 
 :::
@@ -221,29 +221,29 @@ $$
 
 The conjugacy class of $x$ has exactly $p$ elements, and
 $$
-|C_G(x)|=p+1.
+\cardinality{C_G(x)}=p+1.
 $$
 
 ::: pf-proof
 
 The conjugacy-class formula gives
 $$
-|x^G|=[G:C_G(x)]=\frac{p(p+1)}{|C_G(x)|}.
+\cardinality{x^G}=[G:C_G(x)]=\frac{p(p+1)}{\cardinality{C_G(x)}}.
 $$
-By step [](#s7){.pf-ref}, $|C_G(x)|$ divides $p+1$, so $|x^G|$ is divisible by $p$.
+By step [](#s7){.pf-ref}, $\cardinality{C_G(x)}$ divides $p+1$, so $\cardinality{x^G}$ is divisible by $p$.
 Conjugation preserves element order, so every element of $x^G$ is nonidentity and has order different from $p$.
 By step [](#s4){.pf-ref} there are exactly $p$ such elements in all of $G$.
 Therefore
 $$
-|x^G|\le p.
+\cardinality{x^G}\le p.
 $$
-Since $|x^G|$ is a positive multiple of $p$, one must have
+Since $\cardinality{x^G}$ is a positive multiple of $p$, one must have
 $$
-|x^G|=p.
+\cardinality{x^G}=p.
 $$
 Consequently
 $$
-|C_G(x)|=\frac{|G|}{|x^G|}
+\cardinality{C_G(x)}=\frac{\cardinality{G}}{\cardinality{x^G}}
 =\frac{p(p+1)}p
 =p+1.
 $$
@@ -261,7 +261,7 @@ The subgroup $C_G(x)$ consists exactly of the identity together with all element
 By step [](#s6){.pf-ref}, every nonidentity element of $C_G(x)$ has order different from $p$.
 By step [](#s8){.pf-ref},
 $$
-|C_G(x)|=p+1,
+\cardinality{C_G(x)}=p+1,
 $$
 so $C_G(x)$ contains exactly $p$ nonidentity elements.
 By step [](#s4){.pf-ref}, the whole group $G$ has exactly $p$ nonidentity elements whose order is not $p$.

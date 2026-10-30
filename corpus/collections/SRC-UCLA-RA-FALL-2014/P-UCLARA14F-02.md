@@ -62,7 +62,7 @@ $$
 
 Because $K\subset[0,1]$,
 $$
-\int_{\RR}|f(x)|\,dx
+\int_{\RR}\abs{f(x)}\,dx
 =
 \int_{\RR}\chi_K(x)\,dx
 =
@@ -129,7 +129,7 @@ y_j=u_j-x.
 $$
 Then
 $$
-|y_j|<\frac1j,
+\abs{y_j}<\frac1j,
 $$
 so $y_j\to0$, while $x+y_j=u_j\notin K$.
 

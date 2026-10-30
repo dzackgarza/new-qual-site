@@ -35,7 +35,7 @@ audit:
 ::: {.solution}
 Let
 $$
-|G|=p^a m,
+\cardinality{G}=p^a m,
 \qquad p\nmid m.
 $$
 
@@ -102,7 +102,7 @@ group $G$ acts on $X$ by left translation.
 
 First,
 $$
-|X|=\binom{p^a m}{p^a}.
+\cardinality{X}=\binom{p^a m}{p^a}.
 $$
 Modulo $p$,
 $$
@@ -127,20 +127,20 @@ H=\operatorname{Stab}_G(A).
 $$
 By orbit--stabilizer,
 $$
-[G:H]=|G\cdot A|
+[G:H]=\cardinality{G\cdot A}
 $$
-is not divisible by $p$. Hence the full factor $p^a$ in $|G|$ divides
-$|H|$.
+is not divisible by $p$. Hence the full factor $p^a$ in $\cardinality{G}$ divides
+$\cardinality{H}$.
 
 On the other hand, $H$ acts freely on $A$ by left multiplication: if
 $ha=a$ for some $a\in A$, then $h=1$. Therefore every $H$-orbit in $A$ has
-size $|H|$, so
+size $\cardinality{H}$, so
 $$
-|H|\mid|A|=p^a.
+\cardinality{H}\mid\cardinality{A}=p^a.
 $$
 Combining the two divisibilities gives
 $$
-|H|=p^a.
+\cardinality{H}=p^a.
 $$
 Thus $H$ is a Sylow $p$-subgroup.
 
@@ -221,7 +221,7 @@ n_p=[G:N_G(P)].
 $$
 Since $P\le N_G(P)$, write
 $$
-|N_G(P)|=p^a d
+\cardinality{N_G(P)}=p^a d
 $$
 with $d\mid m$. Then
 $$

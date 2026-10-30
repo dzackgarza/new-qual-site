@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and satisfy
 $$
-|f(x)|\le\frac{C}{1+x^2}
+\abs{f(x)}\le\frac{C}{1+x^2}
 $$
 for some $C>0$. Define
 $$

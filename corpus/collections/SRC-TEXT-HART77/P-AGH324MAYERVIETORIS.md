@@ -71,7 +71,7 @@ If $A$ is flasque, the last map in step [](#s1){.pf-ref} is surjective.
 
 Let $s\in\Gamma_{Y_1\cup Y_2}(A)$.
 Its restriction to $U_1\cap U_2=X\setminus(Y_1\cup Y_2)$ is zero.
-Consequently the section $0$ on $U_1$ and the section $s|_{U_2}$ agree on their overlap.
+Consequently the section $0$ on $U_1$ and the section $s\restrict_{U_2}$ agree on their overlap.
 They glue to a section $t$ on
 $$
 U_1\cup U_2=X\setminus(Y_1\cap Y_2).

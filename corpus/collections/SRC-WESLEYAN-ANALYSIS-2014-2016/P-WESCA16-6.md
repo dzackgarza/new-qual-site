@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Determine the conformal automorphism group of
 $$
-\DD^*=\{z:0<|z|<1\},
+\DD^*=\{z:0<\abs{z}<1\},
 $$
 and prove your claim.
 :::
@@ -40,9 +40,9 @@ $$
 
 The function $f$ is bounded by $1$ on a punctured neighborhood of $0$, so
 the removable singularity theorem gives a holomorphic extension $F$ to
-$\DD$. The extension satisfies $|F(0)|\le1$. If $|F(0)|=1$, then the
+$\DD$. The extension satisfies $\abs{F(0)}\le1$. If $\abs{F(0)}=1$, then the
 maximum modulus principle would force $F$ to be constant, contradicting that
-$f$ is bijective. Hence $|F(0)|<1$, so $F(\DD)\subseteq\DD$.
+$f$ is bijective. Hence $\abs{F(0)}<1$, so $F(\DD)\subseteq\DD$.
 
 :::
 
@@ -108,7 +108,7 @@ $$
 
 ::: {.pf-step #s1-4}
 
-There is $\lambda\in\CC$ with $|\lambda|=1$ such that
+There is $\lambda\in\CC$ with $\abs{\lambda}=1$ such that
 $$
 F(z)=\lambda z
 \qquad(z\in\DD).
@@ -120,26 +120,26 @@ $$
 By step [](#s1-3){.pf-ref}, $F:\DD\to\DD$ is holomorphic and fixes $0$.
 Schwarz's lemma gives
 $$
-|F(z)|\le|z|.
+\abs{F(z)}\le\abs{z}.
 $$
 Its inverse $G$ also fixes $0$, so Schwarz's lemma applied to $G$ gives
 $$
-|G(w)|\le|w|.
+\abs{G(w)}\le\abs{w}.
 $$
 Taking $w=F(z)$ yields
 $$
-|z|=|G(F(z))|\le|F(z)|.
+\abs{z}=\abs{G(F(z))}\le\abs{F(z)}.
 $$
 Hence
 $$
-|F(z)|=|z|
+\abs{F(z)}=\abs{z}
 $$
 for every $z$. Equality in Schwarz's lemma at any nonzero point implies that
 $F$ is a rotation:
 $$
 F(z)=\lambda z,
 \qquad
-|\lambda|=1.
+\abs{\lambda}=1.
 $$
 
 :::
@@ -152,7 +152,7 @@ Consequently
 $$
 \boxed{
 \operatorname{Aut}(\DD^*)
-=\{z\mapsto\lambda z:|\lambda|=1\}
+=\{z\mapsto\lambda z:\abs{\lambda}=1\}
 \cong S^1 }.
 $$
 
@@ -160,7 +160,7 @@ $$
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} shows that every conformal automorphism has this form. Conversely,
-for every $|\lambda|=1$, the map
+for every $\abs{\lambda}=1$, the map
 $$
 z\longmapsto\lambda z
 $$

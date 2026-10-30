@@ -38,7 +38,7 @@ By the Whitney Approximation Theorem, $\gamma$ is homotopic in $S^4 \setminus K$
 :::
 
 ::: pf-step
-Since $S^4$ is simply connected ($\pi_1(S^4) = 0$), there exists a continuous null-homotopy of $\widetilde{\gamma}$ in $S^4$, which can be smoothed relative to the boundary to yield a smooth map $F: D^2 \to S^4$ with $F|_{\partial D^2} = \widetilde{\gamma}$.
+Since $S^4$ is simply connected ($\pi_1(S^4) = 0$), there exists a continuous null-homotopy of $\widetilde{\gamma}$ in $S^4$, which can be smoothed relative to the boundary to yield a smooth map $F: D^2 \to S^4$ with $F\restrict_{\partial D^2} = \widetilde{\gamma}$.
 :::
 
 :::
@@ -82,7 +82,7 @@ Null-homotopy in the complement:
 ::: pf-proof
 
 ::: pf-step
-The map $G: D^2 \to S^4 \setminus K$ satisfies $G|_{\partial D^2} = \widetilde{\gamma}$, providing an explicit null-homotopy of $\widetilde{\gamma}$ inside $S^4 \setminus K$.
+The map $G: D^2 \to S^4 \setminus K$ satisfies $G\restrict_{\partial D^2} = \widetilde{\gamma}$, providing an explicit null-homotopy of $\widetilde{\gamma}$ inside $S^4 \setminus K$.
 Thus every loop in $S^4 \setminus K$ is null-homotopic.
 :::
 

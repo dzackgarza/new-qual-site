@@ -27,7 +27,7 @@ Let $D$ be a group of order $2n$, where $n$ is odd, with a subgroup $H$ of order
 $H$ is a normal subgroup of $D$ of index $2$.
 
 ::: pf-proof
-Since $|D|=2n$ and $|H|=n$, the index $[D:H]$ is $2$. Every subgroup of index $2$ is normal, so $H\triangleleft D$.
+Since $\cardinality{D}=2n$ and $\cardinality{H}=n$, the index $[D:H]$ is $2$. Every subgroup of index $2$ is normal, so $H\triangleleft D$.
 :::
 
 :::
@@ -69,7 +69,7 @@ By [](#normal-index-two){.pf-ref}, the quotient $D/H$ has order $2$. Thus the no
 $$
 x x^2 x^{-1}=(x^2)^{-1}.
 $$
-The left-hand side is $x^2$, hence $(x^2)^2=e$. Therefore the order of $x^2$ divides $2$. But $x^2\in H$ and $|H|=n$ is odd, so Lagrange's theorem forces $x^2=e$.
+The left-hand side is $x^2$, hence $(x^2)^2=e$. Therefore the order of $x^2$ divides $2$. But $x^2\in H$ and $\cardinality{H}=n$ is odd, so Lagrange's theorem forces $x^2=e$.
 :::
 
 :::

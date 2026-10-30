@@ -37,7 +37,7 @@ r(x,y)=\rho\bigl(\cos(\log\rho),\sin(\log\rho)\bigr),
 $$
 and set $r(0,0)=(0,0)$. The image lies in the logarithmic spiral $C$: if $t=\log\rho$, then $ho=e^t$. The map is continuous away from the origin, and at the origin
 $$
-\|r(x,y)\|=\rho\to0,
+\norm{r(x,y)}=\rho\to0,
 $$
 so it is continuous there as well. If $(x,y)=e^t(\cos t,\sin t)\in C\setminus\{0\}$, then $ho=e^t$ and $\log\rho=t$, hence $r(x,y)=(x,y)$. Thus $r$ is a retraction of $\RR^2$ onto $C$.
 

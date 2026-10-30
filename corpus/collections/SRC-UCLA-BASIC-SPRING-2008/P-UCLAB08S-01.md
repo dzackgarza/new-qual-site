@@ -35,7 +35,7 @@ Suppose there is $\gamma<1$ such that
 :::
 
 $$
-|g(x)-g(y)|\le \gamma|x-y|
+\abs{g(x)-g(y)}\le \gamma\abs{x-y}
 $$
 for all $x,y\in[a,b]$.
 Prove that the fixed point is unique and that, for every $x_0\in[a,b]$, the iteration $x_{n+1}=g(x_n)$ converges to $p$.
@@ -136,9 +136,9 @@ This proves part step [](#p2-s1){.pf-ref}.
 
 Assume now that
 $$
-|g(x)-g(y)|
+\abs{g(x)-g(y)}
 \le
-\gamma|x-y|
+\gamma\abs{x-y}
 $$
 for all $x,y\in[a,b]$, where
 $$
@@ -156,16 +156,16 @@ are both fixed points.
 Then
 $$
 \begin{aligned}
-|p-q|
+\abs{p-q}
 &=
-|g(p)-g(q)|\\
+\abs{g(p)-g(q)}\\
 &\le
-\gamma|p-q|.
+\gamma\abs{p-q}.
 \end{aligned}
 $$
 Hence
 $$
-(1-\gamma)|p-q|\le0.
+(1-\gamma)\abs{p-q}\le0.
 $$
 Since
 $$
@@ -173,7 +173,7 @@ $$
 $$
 one gets
 $$
-|p-q|=0,
+\abs{p-q}=0,
 $$
 so
 $$
@@ -219,9 +219,9 @@ The claim follows by induction.
 For every $n\ge0$,
 $$
 \boxed{
-|x_n-p|
+\abs{x_n-p}
 \le
-\gamma^n|x_0-p|
+\gamma^n\abs{x_0-p}
 }.
 $$
 
@@ -236,13 +236,13 @@ $$
 the contraction estimate gives
 $$
 \begin{aligned}
-|x_{n+1}-p|
+\abs{x_{n+1}-p}
 &=
-|g(x_n)-g(p)|\\
+\abs{g(x_n)-g(p)}\\
 &\le
-\gamma|x_n-p|\\
+\gamma\abs{x_n-p}\\
 &\le
-\gamma^{n+1}|x_0-p|.
+\gamma^{n+1}\abs{x_0-p}.
 \end{aligned}
 $$
 Thus the estimate holds for all $n$ by induction.
@@ -272,14 +272,14 @@ Step [](#p2-s5){.pf-ref} gives
 $$
 0
 \le
-|x_n-p|
+\abs{x_n-p}
 \le
-\gamma^n|x_0-p|
+\gamma^n\abs{x_0-p}
 \longrightarrow0.
 $$
 By the squeeze theorem,
 $$
-|x_n-p|\to0,
+\abs{x_n-p}\to0,
 $$
 which is exactly
 $$

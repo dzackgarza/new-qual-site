@@ -72,7 +72,7 @@ A=\{(x,0):x\in\RR\},
 $$
 which is closed but not compact, and
 $$
-U=\{(x,y):|y|<1/(1+|x|)\}.
+U=\{(x,y):\abs{y}<1/(1+\abs{x})\}.
 $$
-Then $U$ is open and contains $A$, but no $\varepsilon$-neighborhood of $A$ lies in $U$, since for sufficiently large $|x|$ the vertical width $1/(1+|x|)$ is smaller than $\varepsilon$.
+Then $U$ is open and contains $A$, but no $\varepsilon$-neighborhood of $A$ lies in $U$, since for sufficiently large $\abs{x}$ the vertical width $1/(1+\abs{x})$ is smaller than $\varepsilon$.
 :::

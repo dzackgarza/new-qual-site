@@ -33,7 +33,7 @@ integral is $0$.
 
 On the large semicircle $z=Re^{i\theta}$,
 $$
-\left|\int \frac{e^{iz}}z\,dz\right|
+\abs{\int \frac{e^{iz}}z\,dz}
 \le \int_0^\pi e^{-R\sin\theta}\,d\theta.
 $$
 Using $\sin\theta\ge 2\theta/\pi$ on $[0,\pi/2]$ and symmetry, the right-hand

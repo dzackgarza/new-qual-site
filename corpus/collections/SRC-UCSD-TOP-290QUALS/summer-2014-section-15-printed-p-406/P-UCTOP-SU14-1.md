@@ -29,7 +29,7 @@ $$
 ::: pf-proof
 Every removed coordinate axis is invariant under positive radial scaling. Hence the homotopy
 $$
-H(x,t)=\left((1-t)+\frac{t}{\|x\|}\right)x
+H(x,t)=\left((1-t)+\frac{t}{\norm{x}}\right)x
 $$
 stays in the complement and retracts it onto the unit sphere. The six points where the coordinate axes meet the sphere are precisely $\pm e_1,\pm e_2,\pm e_3$.
 :::

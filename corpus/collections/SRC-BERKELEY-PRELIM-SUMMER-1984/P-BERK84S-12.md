@@ -50,7 +50,7 @@ v=a_1e_1+\cdots+a_ne_n,
 $$
 There are $q$ choices for each of the $n$ coefficients, hence
 $$
-\boxed{|V|=q^n}.
+\boxed{\cardinality{V}=q^n}.
 $$
 
 :::
@@ -62,7 +62,7 @@ $$
 The order of $\mathrm{GL}_n(\mathbf F_q)$ is
 $$
 \boxed{
-|\mathrm{GL}_n(\mathbf F_q)|
+\cardinality{\mathrm{GL}_n(\mathbf F_q)}
 =\prod_{j=0}^{n-1}(q^n-q^j).
 }
 $$
@@ -81,7 +81,7 @@ q^n-q^j
 $$
 vectors outside that span. Therefore
 $$
-|\mathrm{GL}_n(\mathbf F_q)|
+\cardinality{\mathrm{GL}_n(\mathbf F_q)}
 =(q^n-1)(q^n-q)(q^n-q^2)\cdots(q^n-q^{n-1}).
 $$
 
@@ -94,7 +94,7 @@ $$
 The order of $\mathrm{SL}_n(\mathbf F_q)$ is
 $$
 \boxed{
-|\mathrm{SL}_n(\mathbf F_q)|
+\cardinality{\mathrm{SL}_n(\mathbf F_q)}
 =\frac1{q-1}\prod_{j=0}^{n-1}(q^n-q^j).
 }
 $$
@@ -111,7 +111,7 @@ $$
 $$
 Its kernel is exactly $\mathrm{SL}_n(\mathbf F_q)$. Since
 $$
-|\mathbf F_q^\times|=q-1,
+\cardinality{\mathbf F_q^\times}=q-1,
 $$
 the first isomorphism theorem gives
 $$

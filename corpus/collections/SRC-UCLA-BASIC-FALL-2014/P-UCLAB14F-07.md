@@ -128,7 +128,7 @@ $$
 
 The squared Euclidean norm of $x(s,t)$ is
 $$
-\|x(s,t)\|^2
+\norm{x(s,t)}^2
 =
 2\bigl(
 7s^2+23st-11s+21t^2-19t+5
@@ -141,7 +141,7 @@ $$
 Substitute the coordinates from step [](#s1-2){.pf-ref}:
 $$
 \begin{aligned}
-\|x(s,t)\|^2
+\norm{x(s,t)}^2
 &=
 (2s+4t-1)^2
 +
@@ -172,12 +172,12 @@ $$
 
 Differentiate the quadratic polynomial from step [](#s1-3){.pf-ref}:
 $$
-\frac{\partial}{\partial s}\|x(s,t)\|^2
+\frac{\partial}{\partial s}\norm{x(s,t)}^2
 =
 2(14s+23t-11),
 $$
 $$
-\frac{\partial}{\partial t}\|x(s,t)\|^2
+\frac{\partial}{\partial t}\norm{x(s,t)}^2
 =
 2(23s+42t-19).
 $$
@@ -242,7 +242,7 @@ The critical point in step [](#s1-5){.pf-ref} is the unique global minimum of th
 
 The Hessian of
 $$
-\frac12\|x(s,t)\|^2
+\frac12\norm{x(s,t)}^2
 $$
 is
 $$

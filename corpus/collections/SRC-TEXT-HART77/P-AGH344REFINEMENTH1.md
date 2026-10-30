@@ -69,7 +69,7 @@ Extend a cochain from increasing tuples to all tuples by the alternating rule, g
 Its differential is
 $$
 (dc)_{i_0\cdots i_{p+1}}
-=\sum_{a=0}^{p+1}(-1)^a c_{i_0\cdots\widehat{i_a}\cdots i_{p+1}}|_{U_{i_0\cdots i_{p+1}}}.
+=\sum_{a=0}^{p+1}(-1)^a c_{i_0\cdots\widehat{i_a}\cdots i_{p+1}}\restrict_{U_{i_0\cdots i_{p+1}}}.
 $$
 All degrees considered are nonnegative.
 
@@ -82,7 +82,7 @@ A refinement map $\lambda:J\to I$ induces a natural map of cochain complexes.
 For $c\in C^p(\mathfrak U,\mcf)$, set
 $$
 (\lambda^*c)_{j_0\cdots j_p}
-=c_{\lambda(j_0)\cdots\lambda(j_p)}|_{V_{j_0\cdots j_p}}
+=c_{\lambda(j_0)\cdots\lambda(j_p)}\restrict_{V_{j_0\cdots j_p}}
 \qquad(j_0<\cdots<j_p).
 $$
 The restriction is defined because each $V_j$ lies in $U_{\lambda(j)}$.
@@ -107,7 +107,7 @@ $$
 (hc)_{j_0\cdots j_{p-1}}
 =\sum_{a=0}^{p-1}(-1)^a
 c_{\lambda(j_0)\cdots\lambda(j_a)\mu(j_a)\cdots\mu(j_{p-1})}
-|_{V_{j_0\cdots j_{p-1}}},
+\restrict_{V_{j_0\cdots j_{p-1}}},
 $$
 and set $h=0$ on degree zero.
 Every term is defined because the relevant intersection of the $V_j$ is contained in both possible cover members for each index.

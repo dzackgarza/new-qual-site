@@ -66,7 +66,7 @@ At the double pole $i$, the derivative formula gives
 $$
 \begin{aligned}
 \operatorname{Res}_{i}F
-&=\left.\frac{d}{dz}\frac{e^{\pi z}}{z-1}\right|_{z=i}\\
+&=\evaluated{\frac{d}{dz}\frac{e^{\pi z}}{z-1}}_{z=i}\\
 &=-\frac{\pi}{i-1}+\frac1{(i-1)^2}
 =\frac\pi2+\frac{i(\pi+1)}2,
 \end{aligned}
@@ -110,10 +110,10 @@ Every listed value is attained.
 
 ::: pf-proof
 
-The circle $|z|=1/4$ encloses neither pole. The circles
-$|z-1|=1/4$ and $|z-i|=1/4$ enclose exactly $1$ and
+The circle $\abs{z}=1/4$ encloses neither pole. The circles
+$\abs{z-1}=1/4$ and $\abs{z-i}=1/4$ enclose exactly $1$ and
 $i$, respectively, because their distance is $\sqrt2$.
-The circle $|z|=2$ encloses both. None passes through
+The circle $\abs{z}=2$ encloses both. None passes through
 a pole, and all are smooth and simple. Counterclockwise
 orientation gives $0,A,B,A+B$; reversing the last three
 orientations gives their negatives. This proves both

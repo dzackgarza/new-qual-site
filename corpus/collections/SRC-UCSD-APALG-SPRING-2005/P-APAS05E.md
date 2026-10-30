@@ -21,7 +21,7 @@ Prove that a group of order $120$ is not simple.
 
 Suppose, for contradiction, that $G$ is simple and
 $$
-|G|=120=2^3\cdot3\cdot5.
+\cardinality{G}=120=2^3\cdot3\cdot5.
 $$
 
 ::: pf
@@ -73,7 +73,7 @@ Compose $\rho$ with the sign homomorphism:
 $$
 G\xrightarrow{\rho}S_6\xrightarrow{\operatorname{sgn}}\{\pm1\}.
 $$
-Its kernel is normal in $G$. If this homomorphism were nontrivial, its kernel would have index $2$, hence would be a nontrivial proper normal subgroup because $|G|=120>2$. This contradicts simplicity.
+Its kernel is normal in $G$. If this homomorphism were nontrivial, its kernel would have index $2$, hence would be a nontrivial proper normal subgroup because $\cardinality{G}=120>2$. This contradicts simplicity.
 Therefore the sign is trivial on $\rho(G)$, so
 $$
 \rho(G)\subseteq A_6.
@@ -88,11 +88,11 @@ The subgroup $\rho(G)$ has index $3$ in $A_6$.
 ::: pf-proof
 Since $\rho$ is injective,
 $$
-|\rho(G)|=120.
+\cardinality{\rho(G)}=120.
 $$
 Also
 $$
-|A_6|=\frac{6!}{2}=360.
+\cardinality{A_6}=\frac{6!}{2}=360.
 $$
 Hence
 $$
@@ -118,7 +118,7 @@ $$
 $$
 Thus $\psi$ would be injective. But this is impossible because
 $$
-|A_6|=360>6=|S_3|.
+\cardinality{A_6}=360>6=\cardinality{S_3}.
 $$
 The contradiction shows that the original assumption that $G$ is simple was false. Therefore every group of order $120$ is nonsimple.
 :::

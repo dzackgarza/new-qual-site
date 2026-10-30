@@ -23,7 +23,7 @@ $$
 F (\alpha , \beta , \gamma ; z) = \frac {\Gamma (\gamma)}{\Gamma (\beta) \Gamma (\gamma - \beta)} \int_ {0} ^ {1} t ^ {\beta - 1} (1 - t) ^ {\gamma - \beta - 1} (1 - z t) ^ {- \alpha} d t.
 $$
 
-Here $\alpha > 0 , \beta > 0 , \gamma > \beta$ , and $| z | < 1$
+Here $\alpha > 0 , \beta > 0 , \gamma > \beta$ , and $\abs{ z } < 1$
 
 Show as a result that the hypergeometric function, initially defined by a power series convergent in the unit disc, can be continued analytically to the complex plane slit along the half-line $\lbrack 1 , \infty )$
 
@@ -51,7 +51,7 @@ F(\alpha,\beta,\gamma;z)
 =\sum_{n=0}^\infty
 \frac{(\alpha)_n(\beta)_n}{(\gamma)_n\,n!}z^n.
 $$
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 (1-zt)^{-\alpha}
 =\sum_{n=0}^\infty\frac{(\alpha)_n}{n!}(zt)^n,
@@ -79,5 +79,5 @@ For $z\in\Omega$ and $0\le t\le1$, the number $1-zt$ never lies on the nonpositi
 $$
 t^{\beta-1}(1-t)^{\gamma-\beta-1}
 $$
-is integrable, differentiation under the integral is valid locally uniformly on $\Omega$. Thus the integral defines a holomorphic function on $\Omega$ agreeing with the original power series on $|z|<1$. It is therefore the desired analytic continuation to the slit plane.
+is integrable, differentiation under the integral is valid locally uniformly on $\Omega$. Thus the integral defines a holomorphic function on $\Omega$ agreeing with the original power series on $\abs{z}<1$. It is therefore the desired analytic continuation to the slit plane.
 :::

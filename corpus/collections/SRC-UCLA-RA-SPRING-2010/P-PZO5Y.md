@@ -32,7 +32,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite, positive, regular Borel measure supported on a compact subset of $\CC$ and define the Newtonian potential $$U_\mu(z) = \int_\CC \left|\frac{1}{z-w}\right| d\mu(w).$$
+Let $\mu$ be a finite, positive, regular Borel measure supported on a compact subset of $\CC$ and define the Newtonian potential $$U_\mu(z) = \int_\CC \abs{\frac{1}{z-w}} d\mu(w).$$
 
 a. Prove that $U_\mu$ exists at Lebesgue almost all $z\in\CC$ and that $$\iint_K U_\mu(z)\,dx\,dy < \infty$$ for every compact $K\subseteq\CC$.
 
@@ -61,7 +61,7 @@ K\cup\operatorname{supp}\mu\subseteq B(0,R).
 $$
 For every $w\in\operatorname{supp}\mu$ and every $z\in K$,
 $$
-|z-w|\le |z|+|w|<2R,
+\abs{z-w}\le \abs{z}+\abs{w}<2R,
 $$
 so
 $$
@@ -70,22 +70,22 @@ $$
 Consequently, using polar coordinates centered at $w$,
 $$
 \begin{aligned}
-\int_K\frac{dA(z)}{|z-w|}
+\int_K\frac{dA(z)}{\abs{z-w}}
 &\le
-\int_{B(w,2R)}\frac{dA(z)}{|z-w|}\\
+\int_{B(w,2R)}\frac{dA(z)}{\abs{z-w}}\\
 &=\int_0^{2R}\int_0^{2\pi}\frac1r\,r\,d\theta\,dr\\
 &=4\pi R.
 \end{aligned}
 $$
-The integrand $(z,w)\mapsto |z-w|^{-1}$ is nonnegative and measurable, so Tonelli's theorem gives
+The integrand $(z,w)\mapsto \abs{z-w}^{-1}$ is nonnegative and measurable, so Tonelli's theorem gives
 $$
 \begin{aligned}
 \int_K U_\mu(z)\,dA(z)
 &=
-\int_K\int_{\CC}\frac1{|z-w|}\,d\mu(w)\,dA(z)\\
+\int_K\int_{\CC}\frac1{\abs{z-w}}\,d\mu(w)\,dA(z)\\
 &=
 \int_{\operatorname{supp}\mu}
-\left(\int_K\frac{dA(z)}{|z-w|}\right)d\mu(w)\\
+\left(\int_K\frac{dA(z)}{\abs{z-w}}\right)d\mu(w)\\
 &\le 4\pi R\,\mu(\CC)<\infty.
 \end{aligned}
 $$
@@ -191,7 +191,7 @@ $$
 By step [](#s3){.pf-ref}, $E^h$ has Lebesgue measure zero.
 
 Take $y\notin E^h$ and a compact set $K\subseteq L_y^h$.
-For sufficiently large $N$, one has $|y|\le N$ and
+For sufficiently large $N$, one has $\abs{y}\le N$ and
 $$
 K\subseteq [-N,N]+iy.
 $$
@@ -271,12 +271,12 @@ $$
 \begin{aligned}
 \int_{\CC}
 \left(
-\int_{\partial R}\frac{ds(z)}{|z-w|}
+\int_{\partial R}\frac{ds(z)}{\abs{z-w}}
 \right)d\mu(w)
 &=
 \int_{\partial R}
 \left(
-\int_{\CC}\frac{d\mu(w)}{|z-w|}
+\int_{\CC}\frac{d\mu(w)}{\abs{z-w}}
 \right)ds(z)\\
 &=
 \int_{\partial R}U_\mu(z)\,ds(z)\\
@@ -287,7 +287,7 @@ Thus the kernel $(z,w)\mapsto(z-w)^{-1}$ is absolutely integrable on the product
 Fubini's theorem therefore permits exchanging the two integrals.
 It also shows that $S_\mu(z)$ exists for arclength-almost every $z\in\partial R$ and
 $$
-|S_\mu(z)|\le U_\mu(z),
+\abs{S_\mu(z)}\le U_\mu(z),
 $$
 so its contour integral is absolutely convergent.
 

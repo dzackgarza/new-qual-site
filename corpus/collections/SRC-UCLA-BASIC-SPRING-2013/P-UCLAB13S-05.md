@@ -232,7 +232,7 @@ Therefore
 $$
 \sqrt{1-\cos^2\theta}
 =
-|\sin\theta|
+\abs{\sin\theta}
 =
 \sin\theta.
 $$

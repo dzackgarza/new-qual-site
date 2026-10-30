@@ -70,7 +70,7 @@ F(z)=\frac{\exp(-\operatorname{Log}z/3)}{1+z}.
 $$
 For fixed $0<\varepsilon<1<R$, first integrate over the
 positive boundary of
-$\{\varepsilon<|z|<R,\ \delta<\arg z<2\pi-\delta\}$,
+$\{\varepsilon<\abs{z}<R,\ \delta<\arg z<2\pi-\delta\}$,
 where $0<\delta<\pi/2$. The branch is holomorphic near
 this contour. Its only enclosed pole is $-1$, simple,
 with residue $e^{-i\pi/3}$. The residue theorem gives
@@ -108,8 +108,8 @@ $$
 \qquad
 \frac{2\pi\varepsilon^{2/3}}{1-\varepsilon}\longrightarrow0.
 $$
-These follow from $|z^{-1/3}|=|z|^{-1/3}$, the arc
-lengths, and $|1+z|\geq\bigl||z|-1\bigr|$.
+These follow from $\abs{z^{-1/3}}=\abs{z}^{-1/3}$, the arc
+lengths, and $\abs{1+z}\geq\abs{\abs{z}-1}$.
 Letting $R\to\infty$ and $\varepsilon\downarrow0$ in
 step [](#s2){.pf-ref} therefore yields
 $$

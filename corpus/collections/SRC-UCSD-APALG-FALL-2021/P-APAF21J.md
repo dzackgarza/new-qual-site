@@ -39,7 +39,7 @@ z_\alpha=\prod_{j\ge1}j^{m_j}m_j!.
 $$
 Then the conjugacy class of cycle type $\alpha$ has size
 $$
-|C_\alpha|=\frac{d!}{z_\alpha}.
+\cardinality{C_\alpha}=\frac{d!}{z_\alpha}.
 $$
 
 ::: pf
@@ -79,7 +79,7 @@ The scalar is
 $$
 \boxed{
 \omega_\alpha^\lambda
-=\frac{|C_\alpha|\chi^\lambda(\alpha)}{\chi^\lambda(1)}
+=\frac{\cardinality{C_\alpha}\chi^\lambda(\alpha)}{\chi^\lambda(1)}
 =\frac{d!}{z_\alpha}\frac{\chi^\lambda(\alpha)}{f^\lambda},}
 $$
 where $f^\lambda=\dim V^\lambda=\chi^\lambda(1)$.
@@ -89,7 +89,7 @@ Take traces in the identity from step [](#class-sum-acts-by-scalar){.pf-ref}. On
 $$
 \operatorname{tr}(\rho_\lambda(C_\alpha))
 =\sum_{g\in C_\alpha}\chi^\lambda(g)
-=|C_\alpha|\chi^\lambda(\alpha),
+=\cardinality{C_\alpha}\chi^\lambda(\alpha),
 $$
 because the character is constant on conjugacy classes. On the other hand,
 $$
@@ -104,7 +104,7 @@ Equating the two traces gives the formula.
 ::: {.pf-step #d-cycle-class-size}
 Suppose now that $\alpha=(d)$, so $C_{(d)}$ is the class of $d$-cycles. Then
 $$
-|C_{(d)}|=(d-1)!.
+\cardinality{C_{(d)}}=(d-1)!.
 $$
 
 ::: pf-proof
@@ -114,7 +114,7 @@ z_{(d)}=d.
 $$
 Hence
 $$
-|C_{(d)}|=\frac{d!}{d}=(d-1)!.
+\cardinality{C_{(d)}}=\frac{d!}{d}=(d-1)!.
 $$
 :::
 

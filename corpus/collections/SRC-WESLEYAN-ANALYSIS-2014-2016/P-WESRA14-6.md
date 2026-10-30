@@ -164,11 +164,11 @@ L^2(\mu).
 $$
 Thus
 $$
-\left|
+\abs{
 \int_\Omega
 \sqrt f\sqrt g
 \,d\mu
-\right|^2
+}^2
 \le
 \left(
 \int_\Omega f\,d\mu

@@ -91,13 +91,13 @@ $$
 +
 \int_{E\cap\{f_n>R\}}f_n\\
 &\le
-R|E|
+R\setmeasure{E}
 +
 \frac1{\log(2+R)}
 \int_{\{f_n>R\}}
 f_n\log(2+f_n)\\
 &\le
-R|E|
+R\setmeasure{E}
 +
 \frac{M}{\log(2+R)}.
 \end{aligned}
@@ -108,7 +108,7 @@ $$
 =
 \frac{\varepsilon}{2R}.
 $$
-Then $|E|<\delta$ implies
+Then $\setmeasure{E}<\delta$ implies
 $$
 \int_E f_n<\varepsilon
 $$
@@ -122,7 +122,7 @@ for every $n$.
 
 The limit function $f$ satisfies the same small-set estimate: for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
-|E|<\delta
+\setmeasure{E}<\delta
 \quad\Longrightarrow\quad
 \int_E f<\varepsilon.
 $$
@@ -149,7 +149,7 @@ If desired, start step [](#s1-2){.pf-ref} with $\varepsilon/2$ to obtain the str
 
 For every $\varepsilon>0$, there is a measurable set $E\subset[0,1]$ such that
 $$
-|E|<\delta
+\setmeasure{E}<\delta
 $$
 and
 $$
@@ -170,7 +170,7 @@ This is Egorov's theorem, since $[0,1]$ has finite measure and $f_n\to f$ almost
 
 One has
 $$
-\|f_n-f\|_1\longrightarrow0.
+\norm{f_n-f}_1\longrightarrow0.
 $$
 
 
@@ -186,16 +186,16 @@ $$
 $$
 On $E^c$, convergence is uniform, so for all sufficiently large $n$,
 $$
-\sup_{x\in E^c}|f_n(x)-f(x)|
+\sup_{x\in E^c}\abs{f_n(x)-f(x)}
 <
 \frac\varepsilon2.
 $$
-Since $|E^c|\le1$,
+Since $\setmeasure{E^c}\le1$,
 $$
 \begin{aligned}
-\|f_n-f\|_1
+\norm{f_n-f}_1
 &\le
-\int_{E^c}|f_n-f|
+\int_{E^c}\abs{f_n-f}
 +
 \int_Ef_n
 +

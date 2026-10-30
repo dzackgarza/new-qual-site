@@ -35,7 +35,7 @@ For each $c \in U$ that is not a pole of $f ,$ let $R ( c )$ be the radius of co
 ::: {.solution}
 Let $P\subseteq U$ be the set of poles of $f$, and write
 $$
-D(c,s)\coloneqq\{z\in\CC:|z-c|<s\}.
+D(c,s)\coloneqq\{z\in\CC:\abs{z-c}<s\}.
 $$
 For $c\in U\setminus P$, let $g_c$ denote the holomorphic function
 defined on $D(c,R(c))$ by the Taylor series of $f$ at $c$.
@@ -57,7 +57,7 @@ neighborhood of $c$. The meromorphic function $f-g_c$ on the connected
 set $U$ then vanishes on a nonempty open set, so the identity theorem
 for meromorphic functions gives
 $$
-f=g_c|_U.
+f=g_c\restrict_U.
 $$
 This would make every pole of $f$ removable, contradicting the
 hypothesis that $f$ has at least one pole. Hence $R(c)<\infty$.
@@ -81,24 +81,24 @@ Since
 $$
 D(c',\varepsilon/2)\subseteq D(c,\varepsilon)\subseteq U\setminus P,
 $$
-one also has $R(c')\geq\varepsilon/2>|c-c'|$.
+one also has $R(c')\geq\varepsilon/2>\abs{c-c'}$.
 
 The functions $g_c$ and $f$ agree near $c'$. Hence the Taylor series of
 $f$ at $c'$ is the Taylor series of $g_c$ at $c'$. The disk
 $$
-D\bigl(c',R(c)-|c-c'|\bigr)
+D\bigl(c',R(c)-\abs{c-c'}\bigr)
 $$
 is contained in $D(c,R(c))$, so
 $$
-R(c')\geq R(c)-|c-c'|.
+R(c')\geq R(c)-\abs{c-c'}.
 $$
 Interchanging $c$ and $c'$ gives
 $$
-R(c)\geq R(c')-|c-c'|.
+R(c)\geq R(c')-\abs{c-c'}.
 $$
 Therefore
 $$
-|R(c)-R(c')|\leq|c-c'|
+\abs{R(c)-R(c')}\leq\abs{c-c'}
 $$
 for every $c'$ sufficiently close to $c$.
 :::
@@ -109,7 +109,7 @@ for every $c'$ sufficiently close to $c$.
 If $p\in P$, then for all nonpoles $c$ sufficiently close to
 $p$,
 $$
-R(c)=|c-p|.
+R(c)=\abs{c-p}.
 $$
 
 ::: pf-proof
@@ -120,9 +120,9 @@ D(p,\varepsilon)\subseteq U
 $$
 and $p$ is the only pole of $f$ in this disk. Let
 $$
-0<|c-p|<\frac{\varepsilon}{2}
+0<\abs{c-p}<\frac{\varepsilon}{2}
 $$
-and set $d\coloneqq|c-p|$.
+and set $d\coloneqq\abs{c-p}$.
 
 The disk $D(c,d)$ lies in $D(p,\varepsilon)\setminus\{p\}$, so
 $f$ is holomorphic on $D(c,d)$. Therefore its Taylor series at $c$
@@ -150,7 +150,7 @@ is a pole. Hence
 $$
 R(c)\leq d.
 $$
-Together with the opposite inequality, this gives $R(c)=|c-p|$.
+Together with the opposite inequality, this gives $R(c)=\abs{c-p}$.
 :::
 
 :::
@@ -171,7 +171,7 @@ Then $\widetilde R$ is continuous at every pole.
 Fix $p\in P$. By step [](#radius-equals-distance-to-pole){.pf-ref}, for all $c\in U\setminus P$ sufficiently
 close to $p$,
 $$
-\widetilde R(c)=R(c)=|c-p|\longrightarrow0=\widetilde R(p).
+\widetilde R(c)=R(c)=\abs{c-p}\longrightarrow0=\widetilde R(p).
 $$
 The poles are isolated, so this also controls every approach to $p$
 inside $U$.

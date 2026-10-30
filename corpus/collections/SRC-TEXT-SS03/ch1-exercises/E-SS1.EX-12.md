@@ -25,7 +25,7 @@ audit:
 ::: {.exercise}
 Consider the function
 $$
-f(x+iy)=\sqrt{|x||y|},
+f(x+iy)=\sqrt{\abs{x}\abs{y}},
 \qquad x,y\in\RR.
 $$
 Show that $f$ satisfies the Cauchy-Riemann equations at the origin, yet $f$ is not holomorphic at $0$.
@@ -39,7 +39,7 @@ Show that $f$ satisfies the Cauchy-Riemann equations at the origin, yet $f$ is n
 
 Write $f=u+iv$, where
 $$
-u(x,y)=\sqrt{|x||y|},
+u(x,y)=\sqrt{\abs{x}\abs{y}},
 \qquad
 v(x,y)=0.
 $$
@@ -110,7 +110,7 @@ Along the line $z=t(1+i)$ with $t>0$, the difference quotient is $1/(1+i)$.
 
 For $t>0$,
 $$
-f(t+it)=\sqrt{|t||t|}=t,
+f(t+it)=\sqrt{\abs{t}\abs{t}}=t,
 $$
 so
 $$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X7AK4
 kind: problem
-title: A finite separable splitting field $L/K$ has $[L:K]=|\gal(L/K)|$
+title: A finite separable splitting field $L/K$ has $[L:K]=\cardinality{\gal(L/K)}$
 classification:
   areas:
   - algebra
@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $L/K$ be a finite separable extension which is the splitting field of a polynomial in $K[x]$. Prove
 $$
-[L:K]=|\Gal(L/K)|.
+[L:K]=\cardinality{\Gal(L/K)}.
 $$
 :::
 
@@ -41,6 +41,6 @@ Because $L/K$ is a splitting field, it is normal. Therefore every $K$-embedding 
 
 Thus
 $$
-|\Gal(L/K)|=[L:K].
+\cardinality{\Gal(L/K)}=[L:K].
 $$
 :::

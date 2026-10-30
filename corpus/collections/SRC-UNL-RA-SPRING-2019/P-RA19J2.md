@@ -52,7 +52,7 @@ diameter?
 ::: {.pf-step #s1-1}
 
 $\rho_\infty(f,g) \le 1$ for all $f, g \in A$.
-Proof: $f(x), g(x) \in [0,1]$ for all $x$, so $|f(x) - g(x)| \le 1$.
+Proof: $f(x), g(x) \in [0,1]$ for all $x$, so $\abs{f(x) - g(x)} \le 1$.
 
 :::
 

@@ -51,7 +51,7 @@ This is the definition of weak convergence in the Hilbert space $L^2([0,1])$, id
 
 There is a constant $M<\infty$ such that
 $$
-\|f_n\|_2\le M
+\norm{f_n}_2\le M
 \qquad
 (n\ge1).
 $$
@@ -75,18 +75,18 @@ The functions $F_n$ and $F$ are continuous on $[0,1]$, and $(F_n)$ is equicontin
 For $0\le x<y\le1$, Cauchy--Schwarz gives
 $$
 \begin{aligned}
-|F_n(y)-F_n(x)|
+\abs{F_n(y)-F_n(x)}
 &=
-\left|
+\abs{
 \int_x^y f_n(t)\,dt
-\right|\\
+}\\
 &\le
 \left(
-\int_x^y|f_n(t)|^2\,dt
+\int_x^y\abs{f_n(t)}^2\,dt
 \right)^{1/2}
-|y-x|^{1/2}\\
+\abs{y-x}^{1/2}\\
 &\le
-M|y-x|^{1/2}.
+M\abs{y-x}^{1/2}.
 \end{aligned}
 $$
 The bound is independent of $n$, so $(F_n)$ is equicontinuous. The same estimate with $f$ in place of $f_n$ gives continuity of $F$.
@@ -104,11 +104,11 @@ The family $(F_n)$ is uniformly bounded on $[0,1]$.
 
 For every $x\in[0,1]$,
 $$
-|F_n(x)|
+\abs{F_n(x)}
 \le
-\int_0^x|f_n(t)|\,dt
+\int_0^x\abs{f_n(t)}\,dt
 \le
-\|f_n\|_2 x^{1/2}
+\norm{f_n}_2 x^{1/2}
 \le
 M.
 $$
@@ -165,7 +165,7 @@ $$
 
 Suppose uniform convergence failed. Then there would exist $\varepsilon>0$ and a subsequence $(F_{n_k})$ such that
 $$
-\|F_{n_k}-F\|_\infty\ge\varepsilon
+\norm{F_{n_k}-F}_\infty\ge\varepsilon
 \qquad
 (k\ge1).
 $$
@@ -178,7 +178,7 @@ G=F.
 $$
 Thus the further subsequence converges uniformly to $F$, contradicting
 $$
-\|F_{n_k}-F\|_\infty\ge\varepsilon.
+\norm{F_{n_k}-F}_\infty\ge\varepsilon.
 $$
 Therefore the full sequence converges uniformly.
 

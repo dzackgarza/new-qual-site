@@ -204,7 +204,7 @@ For $1\le i\le r-1$, the mixed intersection
 $$
 (\beta^*H)^{r-i}E^i
 $$
-vanishes, because $\beta^*\OO_Y(H)|_E$ is trivial: the map $E\to Y$ is constant with image $P$.
+vanishes, because $\beta^*\OO_Y(H)\restrict_E$ is trivial: the map $E\to Y$ is constant with image $P$.
 Expanding gives
 $$
 (\beta^*H-E)^r

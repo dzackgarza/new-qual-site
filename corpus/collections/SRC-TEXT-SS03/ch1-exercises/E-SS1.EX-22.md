@@ -35,7 +35,7 @@ $$
 \qquad
 S_j=\{a_j+k d_j:k\ge0\},
 $$
-where the positive steps $d_1,\ldots,d_r$ are distinct. For $|z|<1$, disjointness of the partition gives
+where the positive steps $d_1,\ldots,d_r$ are distinct. For $\abs{z}<1$, disjointness of the partition gives
 $$
 \frac{z}{1-z}
 =\sum_{n\ge1}z^n
@@ -49,7 +49,7 @@ Let $D=\max_j d_j$. If $D>1$, choose a primitive $D$th root of unity $\zeta$. Th
 
 On the right, a denominator $1-z^{d_j}$ vanishes at $\zeta$ exactly when $D\mid d_j$. Since $1\le d_j\le D$, this happens exactly for the unique index $j$ with $d_j=D$. For that term, $z^{a_j}$ is nonzero at $\zeta$, while $1-z^D$ has a simple zero there because
 $$
-\frac{d}{dz}(1-z^D)\bigg|_{z=\zeta}=-D\zeta^{D-1}\ne0.
+\frac{d}{dz}(1-z^D)\evalfrom_{z=\zeta}=-D\zeta^{D-1}\ne0.
 $$
 The other terms are regular at $\zeta$, so the right side has a pole at $\zeta$, contradicting regularity of the left side.
 

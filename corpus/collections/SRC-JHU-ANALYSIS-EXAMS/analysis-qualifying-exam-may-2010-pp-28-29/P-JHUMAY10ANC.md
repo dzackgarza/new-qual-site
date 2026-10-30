@@ -29,13 +29,13 @@ audit:
 3. Let $\mathcal { O } ( D )$ denote the space of holomorphic functions on the unit disk D and let
 
 $$
-{ \mathcal H } = { \mathcal O } ( D ) \cap L ^ { 2 } ( D ) = \left\{ f \in { \mathcal O } ( D ) : \int _ { D } | f | ^ { 2 } d x d y < + \infty \right\} .
+{ \mathcal H } = { \mathcal O } ( D ) \cap L ^ { 2 } ( D ) = \left\{ f \in { \mathcal O } ( D ) : \int _ { D } \abs{ f } ^ { 2 } d x d y < + \infty \right\} .
 $$
 
 a) Show that for all compact sets $K \subset D$ , there is a constant $C _ { K } \in \RR ^ { + }$ such that
 
 $$
-\operatorname* { s u p } _ { z \in K } | f ( z ) | \leq C _ { K } \| f \| _ { L ^ { 2 } ( D ) } .
+\operatorname* { s u p } _ { z \in K } \abs{ f ( z ) } \leq C _ { K } \norm{ f } _ { L ^ { 2 } ( D ) } .
 $$
 
 b) Show that H is a closed subspace of $L ^ { 2 } ( D )$ and hence is a Hilbert space.
@@ -59,19 +59,19 @@ A disk contained in $D$ gives an $L^2$ point-evaluation estimate.
 For $\overline{D(a,r)}\subset D$ and $0<\rho<r$,
 Cauchy's formula at the center and Cauchy–Schwarz give
 $$
-|f(a)|^2\leq\frac1{2\pi}\int_0^{2\pi}
-|f(a+\rho e^{it})|^2\,dt
+\abs{f(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}
+\abs{f(a+\rho e^{it})}^2\,dt
 $$
 [@SS03; @Fol13]. Multiply by $2\pi\rho$ and integrate
 from zero to $r$. Polar coordinates yield
 $$
-\pi r^2|f(a)|^2\leq\int_{D(a,r)}|f(z)|^2\,dA(z).
+\pi r^2\abs{f(a)}^2\leq\int_{D(a,r)}\abs{f(z)}^2\,dA(z).
 $$
 For nonempty compact $K\subset D$, set
-$r=(1-\max_{a\in K}|a|)/2>0$. The closed radius-$r$
+$r=(1-\max_{a\in K}\abs{a})/2>0$. The closed radius-$r$
 disk about every $a\in K$ is contained in $D$. Therefore
 $$
-\sup_{a\in K}|f(a)|\leq C_K\|f\|_{L^2(D)},
+\sup_{a\in K}\abs{f(a)}\leq C_K\norm{f}_{L^2(D)},
 \qquad C_K=\frac1{\sqrt\pi r}.
 $$
 For the empty compact set the bound has no points to
@@ -98,8 +98,8 @@ holomorphic on $D$ [@SS03].
 
 Pointwise convergence and Fatou's lemma give
 $$
-\int_D|f-F|^2\,dA
-\leq\liminf_{n\to\infty}\int_D|f_n-F|^2\,dA=0
+\int_D\abs{f-F}^2\,dA
+\leq\liminf_{n\to\infty}\int_D\abs{f_n-F}^2\,dA=0
 $$
 [@Fol13]. Thus $f=F$ almost everywhere, so $f$ belongs
 to $\mathcal H$ and represents the given $L^2$ limit.

@@ -15,26 +15,26 @@ review: draft
 ::: {.problem}
 Let $G$ be an open connected and bounded subset of $\CC$, and $f: G \to \CC$ an analytic function with $f(G) \subset G$.
 Let $f^n$ denote the $n$th iterate of $f$.
-Suppose that $a \in G$ is a fixed point of $f$ (i.e.\ $f(a) = a$) and $|f'(a)| < 1$.
+Suppose that $a \in G$ is a fixed point of $f$ (i.e.\ $f(a) = a$) and $\abs{f'(a)} < 1$.
 Define the basin of attraction of $z = a$ to be the set $$\Omega := \{z \in G : \lim_{n \to \infty} f^n(z) = a\}.$$
 
-(a) Show that there is a $\delta > 0$ such that $\{z : |z - a| < \delta\} \subset \Omega$.
+(a) Show that there is a $\delta > 0$ such that $\{z : \abs{z - a} < \delta\} \subset \Omega$.
 
 (b) Show, using part (a), that in fact $\Omega = G$.
 :::
 
 ::: {.solution}
-(a) Choose $q$ with $|f'(a)|<q<1$. By continuity of
+(a) Choose $q$ with $\abs{f'(a)}<q<1$. By continuity of
 $$
 \frac{f(z)-f(a)}{z-a}
 $$
 at $a$, there is $\delta>0$ such that
 $$
-|f(z)-a|\le q|z-a|
+\abs{f(z)-a}\le q\abs{z-a}
 $$
-whenever $|z-a|<\delta$, with the disk contained in $G$. Therefore
+whenever $\abs{z-a}<\delta$, with the disk contained in $G$. Therefore
 $$
-|f^n(z)-a|\le q^n|z-a|\to0
+\abs{f^n(z)-a}\le q^n\abs{z-a}\to0
 $$
 for every point of that disk. Hence $B(a,\delta)\subset\Omega$.
 

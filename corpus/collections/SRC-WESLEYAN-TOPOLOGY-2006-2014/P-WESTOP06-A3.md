@@ -17,13 +17,13 @@ $$
 $$
 For each property $P$ determine, with explanation:
 
-1. exactly for which cardinalities $|A|$ it is always true that
+1. exactly for which cardinalities $\cardinality{A}$ it is always true that
    $$
    X_a\in P\text{ for all }a\in A
    \quad\Longrightarrow\quad
    \prod_{a\in A}X_a\in P;
    $$
-2. exactly for which cardinalities $|A|$ it is always true that
+2. exactly for which cardinalities $\cardinality{A}$ it is always true that
    $$
    X_a\in P\text{ for all }a\in A
    \quad\Longrightarrow\quad
@@ -33,7 +33,7 @@ For each property $P$ determine, with explanation:
 
 ::: {.solution}
 
-Write $\kappa=|A|$, and interpret “countable” as “at most countable.”
+Write $\kappa=\cardinality{A}$, and interpret “countable” as “at most countable.”
 
 ::: pf
 
@@ -145,7 +145,7 @@ is a closed discrete subspace of cardinality $2^{\aleph_0}$. Indeed, a sufficien
 
 If $\sorgenfrey^2$ were normal, then for every subset $E\subseteq D$, Urysohn's lemma would give a continuous $f_E:\sorgenfrey^2\to[0,1]$ with $f_E=0$ on $E$ and $f_E=1$ on $D\setminus E$. Distinct subsets give distinct functions. But a continuous real-valued function is determined by its values on the dense countable set $\QQ^2$, so there are at most
 $$
-|\RR|^{\aleph_0}=2^{\aleph_0}
+\cardinality{\RR}^{\aleph_0}=2^{\aleph_0}
 $$
 such functions, whereas $D$ has $2^{2^{\aleph_0}}$ subsets. This contradicts Cantor's theorem. Hence $\sorgenfrey^2$ is not normal. Taking two factors equal to $\sorgenfrey$ and every remaining factor to be a singleton gives a product homeomorphic to $\sorgenfrey^2$, so normality is not always preserved.
 

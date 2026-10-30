@@ -29,7 +29,7 @@ If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniforml
 
 Since
 $$
-f_n|_{\partial D}
+f_n\restrict_{\partial D}
 $$
 converges uniformly, the sequence is uniformly Cauchy on
 $$
@@ -54,7 +54,7 @@ m,n\ge N,
 $$
 $$
 \sup_{z\in\partial D}
-|f_n(z)-f_m(z)|
+\abs{f_n(z)-f_m(z)}
 <
 \varepsilon.
 $$
@@ -92,10 +92,10 @@ For every $m,n$,
 $$
 \boxed{
 \sup_{z\in\overline D}
-|h_{m,n}(z)|
+\abs{h_{m,n}(z)}
 \le
 \sup_{z\in\partial D}
-|h_{m,n}(z)|.
+\abs{h_{m,n}(z)}.
 }
 $$
 
@@ -109,7 +109,7 @@ $$
 is compact.
 Since $h_{m,n}$ is continuous on $\overline D$,
 $$
-|h_{m,n}|
+\abs{h_{m,n}}
 $$
 attains its maximum there.
 
@@ -156,13 +156,13 @@ step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
 \sup_{z\in\overline D}
-|f_n(z)-f_m(z)|
+\abs{f_n(z)-f_m(z)}
 &=
 \sup_{z\in\overline D}
-|h_{m,n}(z)|\\
+\abs{h_{m,n}(z)}\\
 &\le
 \sup_{z\in\partial D}
-|h_{m,n}(z)|\\
+\abs{h_{m,n}(z)}\\
 &<
 \varepsilon.
 \end{aligned}
@@ -246,7 +246,7 @@ implies locally uniform convergence on $D$.
 By the Weierstrass theorem on locally uniform limits of holomorphic
 functions,
 $$
-f|_D
+f\restrict_D
 $$
 is holomorphic.
 This extra conclusion is not required for the uniform-convergence claim.

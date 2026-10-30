@@ -20,7 +20,7 @@ Show that for each $\varepsilon>0$ there exists a sequence of intervals $(I_n)$ 
 $$
 \bigcup_{n=1}^{\infty} I_n\supset\QQ
 \qquad\text{and}\qquad
-\sum_{n=1}^{\infty}|I_n|<\varepsilon.
+\sum_{n=1}^{\infty}\setmeasure{I_n}<\varepsilon.
 $$
 :::
 
@@ -58,7 +58,7 @@ q_n+\frac{\varepsilon}{2^{n+3}}
 $$
 Then
 $$
-|I_n|=\frac{\varepsilon}{2^{n+2}}.
+\setmeasure{I_n}=\frac{\varepsilon}{2^{n+2}}.
 $$
 
 
@@ -90,7 +90,7 @@ For every $n$, the center $q_n$ belongs to $I_n$. Hence every rational number be
 
 Their total length satisfies
 $$
-\sum_{n=1}^{\infty}|I_n|<\varepsilon.
+\sum_{n=1}^{\infty}\setmeasure{I_n}<\varepsilon.
 $$
 
 
@@ -98,7 +98,7 @@ $$
 
 By step [](#s1-2){.pf-ref},
 $$
-\sum_{n=1}^{\infty}|I_n|
+\sum_{n=1}^{\infty}\setmeasure{I_n}
 =
 \varepsilon\sum_{n=1}^{\infty}2^{-(n+2)}
 =

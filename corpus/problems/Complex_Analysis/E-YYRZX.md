@@ -52,7 +52,7 @@ The only pole of $f$ inside $\Gamma_R$ is $i\pi$, with $\operatorname{Res}_{z=i\
 
 ::: pf-proof
 $1+e^z = 0$ exactly when $z = (2k+1)\pi i$ with $k\in\ZZ$, and only $k=0$ lies in $0<\Im z<2\pi$.
-The zero is simple, so the residue is $\dfrac{e^{z/2}}{e^z}\Big|_{z=i\pi} = \dfrac{i}{-1}$.
+The zero is simple, so the residue is $\dfrac{e^{z/2}}{e^z}\evalfrom_{z=i\pi} = \dfrac{i}{-1}$.
 :::
 
 :::

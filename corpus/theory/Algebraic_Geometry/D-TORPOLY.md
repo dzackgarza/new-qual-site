@@ -38,7 +38,7 @@ For a face $F \leq P$ set
 $$
 \sigma_F = \Cone\big( u_F' \st F \leq F',\ F' \text{ a facet} \big) \subseteq N_\RR .
 $$
-These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \definedas X_{\Sigma_P}$.
+These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \coloneqq X_{\Sigma_P}$.
 Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the whole poset is reversed.
 The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \dualof{\Cone(P \cap M - m_i)}$.
 :::

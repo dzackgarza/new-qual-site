@@ -68,7 +68,7 @@ Then $p(W)$ lies in a single sheet $V$ of $q^{-1}(U)$.
 
 The restriction
 $$
-r|_W:W\to U
+r\restrict_W:W\to U
 $$
 is a homeomorphism, and $U$ is path connected, so $W$ is path connected.
 The image $p(W)$ is therefore connected.
@@ -92,7 +92,7 @@ A connected subset of this disjoint union lies in one sheet, say $V$.
 
 The restriction
 $$
-p|_W:W\to V
+p\restrict_W:W\to V
 $$
 is a homeomorphism.
 
@@ -100,18 +100,18 @@ is a homeomorphism.
 
 On $W$ one has
 $$
-q|_V\circ p|_W=r|_W.
+q\restrict_V\circ p\restrict_W=r\restrict_W.
 $$
 Both
 $$
-q|_V:V\to U
+q\restrict_V:V\to U
 \quad\text{and}\quad
-r|_W:W\to U
+r\restrict_W:W\to U
 $$
 are homeomorphisms.
 Hence
 $$
-p|_W=(q|_V)^{-1}\circ r|_W,
+p\restrict_W=(q\restrict_V)^{-1}\circ r\restrict_W,
 $$
 which is a homeomorphism from $W$ onto $V$.
 

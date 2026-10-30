@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $\mathcal{F}$ denote the family of holomorphic functions $f : \Delta \to \CC$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$.
-Find the maximum value of $|f'(0)|$ as $f \in \mathcal{F}$.
+Find the maximum value of $\abs{f'(0)}$ as $f \in \mathcal{F}$.
 :::
 
 ::: {.solution}
@@ -31,13 +31,13 @@ $$
 g(z)=\frac{s(f(z))-1}{s(f(z))+1}
 $$
 maps $\DD$ holomorphically into itself and satisfies $g(0)=0$.
-Schwarz's lemma gives $|g'(0)|\le1$. Since
+Schwarz's lemma gives $\abs{g'(0)}\le1$. Since
 $$
 g'(0)=\frac{f'(0)}4,
 $$
 we obtain
 $$
-|f'(0)|\le4.
+\abs{f'(0)}\le4.
 $$
 
 The bound is attained: for any $\theta\in\RR$,
@@ -46,8 +46,8 @@ f_\theta(z)=
 \left(\frac{1+e^{i\theta}z}{1-e^{i\theta}z}\right)^2
 $$
 belongs to $\mathcal F$, satisfies $f_\theta(0)=1$, and has
-$|f_\theta'(0)|=4$. Hence
+$\abs{f_\theta'(0)}=4$. Hence
 $$
-\boxed{\max_{f\in\mathcal F}|f'(0)|=4.}
+\boxed{\max_{f\in\mathcal F}\abs{f'(0)}=4.}
 $$
 :::

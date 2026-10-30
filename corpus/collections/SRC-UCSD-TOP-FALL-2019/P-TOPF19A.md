@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $f : \RR^n \to \RR^n$ be a continuous map.
-Suppose that there exists a uniform constant $C$ such that $\|f(\vec{x}) - \vec{x}\| \leq C$ for any $\vec{x} \in \RR^n$.
+Suppose that there exists a uniform constant $C$ such that $\norm{f(\vec{x}) - \vec{x}} \leq C$ for any $\vec{x} \in \RR^n$.
 Prove that $f$ is surjective.
 :::
 
@@ -25,7 +25,7 @@ Prove that $f$ is surjective.
 
 ::: pf-step
 
-Fix $y\in\RR^n$ and choose $R>C+\|y\|$.
+Fix $y\in\RR^n$ and choose $R>C+\norm{y}$.
 
 ::: pf-proof
 
@@ -43,8 +43,8 @@ On the sphere $S_R^{n-1}$, the maps $x\mapsto f(x)-y$ and $x\mapsto x-y$ are hom
 
 Use the straight-line homotopy
 $$H_t(x)=(1-t)(x-y)+t(f(x)-y).$$
-For $\|x\|=R$,
-$$\|H_t(x)-x\|\le \|y\|+t\|f(x)-x\|<R,$$
+For $\norm{x}=R$,
+$$\norm{H_t(x)-x}\le \norm{y}+t\norm{f(x)-x}<R,$$
 so $H_t(x)\ne0$.
 
 :::
@@ -54,12 +54,12 @@ so $H_t(x)\ne0$.
 ::: {.pf-step #s3}
 
 The normalized boundary map
-$$x\longmapsto \frac{f(x)-y}{\|f(x)-y\|}$$
+$$x\longmapsto \frac{f(x)-y}{\norm{f(x)-y}}$$
 has degree $1$.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref} it is homotopic to the normalized map $x\mapsto(x-y)/\|x-y\|$. Since $y\in B_R$, the latter has degree $1$.
+By step [](#s2){.pf-ref} it is homotopic to the normalized map $x\mapsto(x-y)/\norm{x-y}$. Since $y\in B_R$, the latter has degree $1$.
 
 :::
 
@@ -71,7 +71,7 @@ Therefore $f(x)=y$ for some $x\in B_R$.
 
 ::: pf-proof
 
-If $f(x)\ne y$ on all of $B_R$, then the normalized map $(f-y)/\|f-y\|$ would extend from $S_R^{n-1}$ to $B_R$, forcing its boundary degree to be $0$, contradicting step [](#s3){.pf-ref}.
+If $f(x)\ne y$ on all of $B_R$, then the normalized map $(f-y)/\norm{f-y}$ would extend from $S_R^{n-1}$ to $B_R$, forcing its boundary degree to be $0$, contradicting step [](#s3){.pf-ref}.
 
 :::
 

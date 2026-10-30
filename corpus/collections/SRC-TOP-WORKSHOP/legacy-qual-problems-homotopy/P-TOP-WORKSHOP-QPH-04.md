@@ -61,7 +61,7 @@ x\in U\subset\mathring D^2.
 $$
 The restriction
 $$
-f|_U:
+f\restrict_U:
 U\longrightarrow\RR^2
 $$
 is continuous and injective. By invariance of domain,

@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-If $z^3=i$, then $|z|^3=1$, so $|z|=1$. Writing $z=e^{i\theta}$, step [](#s1-1){.pf-ref} gives
+If $z^3=i$, then $\abs{z}^3=1$, so $\abs{z}=1$. Writing $z=e^{i\theta}$, step [](#s1-1){.pf-ref} gives
 $$
 3\theta=\frac{\pi}{2}+2\pi m.
 $$

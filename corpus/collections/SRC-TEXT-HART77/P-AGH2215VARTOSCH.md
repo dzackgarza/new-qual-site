@@ -293,7 +293,7 @@ W_0=\operatorname{Spec}_{\mathrm{var}}B
 $$
 for their affine coordinate rings.  The restriction
 $$
-F|_{t(V_0)}:
+F\restrict_{t(V_0)}:
 t(V_0)=\operatorname{Spec}A
 \longrightarrow
 t(W_0)=\operatorname{Spec}B
@@ -320,7 +320,7 @@ f_0:V_0\longrightarrow W_0,
 $$
 and on closed points
 $$
-f_0=f|_{V_0}.
+f_0=f\restrict_{V_0}.
 $$
 
 ::: pf-proof
@@ -337,11 +337,11 @@ $$
 
 The associated scheme morphism is exactly the affine scheme morphism induced by the same ring map, namely
 $$
-F|_{t(V_0)}.
+F\restrict_{t(V_0)}.
 $$
 Hence their maps on closed points agree.  By definition of $f$ in step [](#f-sends-closed-points-set-map){.pf-ref}, this says
 $$
-f_0=f|_{V_0}.
+f_0=f\restrict_{V_0}.
 $$
 :::
 
@@ -366,9 +366,9 @@ is the original morphism $F$.
 ::: pf-proof
 On each affine neighborhood $V_0$ from step [](#affine-neighborhoods-exist){.pf-ref}, both
 $$
-t(f)|_{t(V_0)}
+t(f)\restrict_{t(V_0)}
 \quad\text{and}\quad
-F|_{t(V_0)}
+F\restrict_{t(V_0)}
 $$
 are the affine scheme morphism induced by the same ring homomorphism
 $$

@@ -64,9 +64,9 @@ Except possibly for the two components meeting the endpoints of $I$, each such c
 The path $\alpha$ is uniformly continuous.
 Choose $\delta>0$ such that
 $$
-|s-t|<\delta
+\abs{s-t}<\delta
 \quad\Longrightarrow\quad
-\|\alpha(s)-\alpha(t)\|<x_b/2.
+\norm{\alpha(s)-\alpha(t)}<x_b/2.
 $$
 Any graph excursion that reaches a point with $x<x_b/2$ has Euclidean distance at least $x_b/2$ from $b$ in the horizontal coordinate alone.
 Hence its parameter interval has length at least $\delta$.
@@ -168,7 +168,7 @@ $$
 $$
 The fiber $p^{-1}(z_0)$ is a discrete subset of $\RR$, while $L$ is connected.
 The continuous image of a connected space in a discrete space is a single point.
-Hence $\widetilde f|_L$ is constant.
+Hence $\widetilde f\restrict_L$ is constant.
 
 :::
 

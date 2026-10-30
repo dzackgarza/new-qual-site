@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH2-14
 kind: problem
-title: Derivative at $0$ of $2|x-1|+(x-1)^2$
+title: Derivative at $0$ of $2\abs{x-1}+(x-1)^2$
 classification:
   areas: [prelim]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-If $f(x) = 2|x - 1| + (x - 1)^2$, what is the value of $f'(0)$?
+If $f(x) = 2\abs{x - 1} + (x - 1)^2$, what is the value of $f'(0)$?
 
 (A) $4$
 (B) $2$
@@ -41,7 +41,7 @@ $$
 
 For every $x<1$,
 $$
-|x-1|=1-x.
+\abs{x-1}=1-x.
 $$
 In particular this identity holds throughout a neighborhood of $0$, so substituting it into the definition of $f$ gives the displayed formula.
 

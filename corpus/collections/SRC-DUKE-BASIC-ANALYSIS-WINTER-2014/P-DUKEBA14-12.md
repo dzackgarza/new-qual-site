@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 Let $L:V_1\to V_2$ be a linear map between normed vector spaces. Prove that $L$ is continuous if and only if there exists $c>0$ such that
 $$
-\|L(v)\|_{V_2}\le c\|v\|_{V_1}
+\norm{L(v)}_{V_2}\le c\norm{v}_{V_1}
 \qquad\text{for every }v\in V_1.
 $$
 :::
@@ -39,13 +39,13 @@ A global linear bound implies continuity.
 ::: pf-proof
 If
 $$
-\|L(v)\|\le c\|v\|
+\norm{L(v)}\le c\norm{v}
 $$
 for all $v$, then for $u,v\in V_1$,
 $$
-\|L(u)-L(v)\|
-=\|L(u-v)\|
-\le c\|u-v\|.
+\norm{L(u)-L(v)}
+=\norm{L(u-v)}
+\le c\norm{u-v}.
 $$
 Thus $L$ is Lipschitz, hence continuous.
 :::
@@ -58,23 +58,23 @@ Continuity at the origin implies a global bound.
 ::: pf-proof
 Assume $L$ is continuous. By continuity at $0$, there exists $\delta>0$ such that
 $$
-\|w\|<\delta
+\norm{w}<\delta
 \quad\Longrightarrow\quad
-\|L(w)\|<1.
+\norm{L(w)}<1.
 $$
 Let $v\ne0$ and set
 $$
-w=\frac{\delta}{2\|v\|}v.
+w=\frac{\delta}{2\norm{v}}v.
 $$
-Then $\|w\|=\delta/2<\delta$, so $\|L(w)\|<1$. By linearity,
+Then $\norm{w}=\delta/2<\delta$, so $\norm{L(w)}<1$. By linearity,
 $$
-\frac{\delta}{2\|v\|}\|L(v)\|<1,
+\frac{\delta}{2\norm{v}}\norm{L(v)}<1,
 $$
 and therefore
 $$
-\|L(v)\|<\frac2\delta\|v\|.
+\norm{L(v)}<\frac2\delta\norm{v}.
 $$
-For $v=0$ both sides of $\|L(v)\|\le\frac2\delta\|v\|$ are $0$. Hence $\|L(v)\|\le c\|v\|$ for every $v\in V_1$, with $c=2/\delta$.
+For $v=0$ both sides of $\norm{L(v)}\le\frac2\delta\norm{v}$ are $0$. Hence $\norm{L(v)}\le c\norm{v}$ for every $v\in V_1$, with $c=2/\delta$.
 :::
 
 :::

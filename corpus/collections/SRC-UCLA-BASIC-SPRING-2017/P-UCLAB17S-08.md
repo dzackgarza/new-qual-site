@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Show that there is a constant $C$ such that every $C^2$ function $f:\RR\to\RR$ satisfies
 $$
-\left|\frac{f(0)+f(1)}2-\int_0^1f(x)\,dx\right|\le C\int_0^1|f''(x)|\,dx.
+\abs{\frac{f(0)+f(1)}2-\int_0^1f(x)\,dx}\le C\int_0^1\abs{f''(x)}\,dx.
 $$
 :::
 
@@ -193,12 +193,12 @@ $$
 
 Hence
 $$
-\left|
+\abs{
 \int_0^1K(x)f''(x)\,dx
-\right|
+}
 \le
 \frac18
-\int_0^1|f''(x)|\,dx.
+\int_0^1\abs{f''(x)}\,dx.
 $$
 
 
@@ -207,16 +207,16 @@ $$
 By the triangle inequality and step [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_0^1Kf''
-\right|
+}
 &\le
 \int_0^1
-|K(x)|\,|f''(x)|
+\abs{K(x)}\,\abs{f''(x)}
 \,dx\\
 &\le
 \frac18
-\int_0^1|f''(x)|\,dx.
+\int_0^1\abs{f''(x)}\,dx.
 \end{aligned}
 $$
 
@@ -229,14 +229,14 @@ $$
 Therefore
 $$
 \boxed{
-\left|
+\abs{
 \frac{f(0)+f(1)}2
 -
 \int_0^1f(x)\,dx
-\right|
+}
 \le
 \frac18
-\int_0^1|f''(x)|\,dx.
+\int_0^1\abs{f''(x)}\,dx.
 }
 $$
 

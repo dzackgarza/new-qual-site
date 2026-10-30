@@ -123,7 +123,7 @@ $$
 $$
 so
 $$
-\boxed{|\ker\iota|=2.}
+\boxed{\cardinality{\ker\iota}=2.}
 $$
 
 
@@ -151,7 +151,7 @@ $$
 $$
 be the natural map. Then
 $$
-|\ker\phi_i|=2
+\cardinality{\ker\phi_i}=2
 $$
 for every $i$.
 
@@ -172,9 +172,9 @@ $$
 $$
 then
 $$
-|\ker\Phi_j|
+\cardinality{\ker\Phi_j}
 \mid
-|\ker\Phi_{j-1}|\,|\ker\phi_j|.
+\cardinality{\ker\Phi_{j-1}}\,\cardinality{\ker\phi_j}.
 $$
 
 
@@ -184,7 +184,7 @@ Restrict $\Phi_{j-1}$ to $\ker\Phi_j$. Its image lies in $\ker\phi_j$, and its k
 $$
 \ker\Phi_j/\ker\Phi_{j-1}\hookrightarrow\ker\phi_j.
 $$
-Thus the quotient order divides $|\ker\phi_j|$, proving the displayed divisibility.
+Thus the quotient order divides $\cardinality{\ker\phi_j}$, proving the displayed divisibility.
 
 :::
 
@@ -194,13 +194,13 @@ Thus the quotient order divides $|\ker\phi_j|$, proving the displayed divisibili
 
 Induction gives
 $$
-|\ker\Phi_n|\mid2^n.
+\cardinality{\ker\Phi_n}\mid2^n.
 $$
 
 
 ::: pf-proof
 
-For $j=1$, step [](#s1-7){.pf-ref} gives $|\ker\Phi_1|=2$. If $|\ker\Phi_{j-1}|$ divides $2^{j-1}$, then steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $|\ker\Phi_j|$ divides $2^{j-1}\cdot2=2^j$.
+For $j=1$, step [](#s1-7){.pf-ref} gives $\cardinality{\ker\Phi_1}=2$. If $\cardinality{\ker\Phi_{j-1}}$ divides $2^{j-1}$, then steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $\cardinality{\ker\Phi_j}$ divides $2^{j-1}\cdot2=2^j$.
 
 :::
 

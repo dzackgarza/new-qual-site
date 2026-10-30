@@ -32,7 +32,7 @@ Then $\int_{\gamma_+} e^{1/z^2}\,dz = \int_{\gamma_-} e^{1/z^2}\,dz$.
 
 (d) There is an analytic bijection (biholomorphism) from $\DD \setminus \{0\}$ onto $\CC \setminus \{0\}$.
 
-(e) The function $u(z) := \ln|z^2 + 1|$ is harmonic in $\CC \setminus \{-i, i\}$.
+(e) The function $u(z) := \ln\abs{z^2 + 1}$ is harmonic in $\CC \setminus \{-i, i\}$.
 :::
 
 ::: {.solution}
@@ -49,7 +49,7 @@ around the positively oriented unit circle:
 $$
 \int_{\gamma_+}e^{1/z^2}\,dz-
 \int_{\gamma_-}e^{1/z^2}\,dz
-=\int_{|z|=1}e^{1/z^2}\,dz.
+=\int_{\abs{z}=1}e^{1/z^2}\,dz.
 $$
 The Laurent expansion
 $$
@@ -60,7 +60,7 @@ integral is $0$, and the two path integrals are equal.
 
 **(c) True.** The hypothesis implies
 $$
-|f(z)-\alpha|\ge r\qquad(z\in\CC).
+\abs{f(z)-\alpha}\ge r\qquad(z\in\CC).
 $$
 Hence $1/(f-\alpha)$ is bounded and entire, so it is constant by Liouville's
 theorem. Thus $f$ is constant.
@@ -77,7 +77,7 @@ constant, contradicting bijectivity.
 **(e) True.** On $\CC\setminus\{-i,i\}$ the holomorphic function
 $z^2+1$ has no zeros. Locally it admits a holomorphic logarithm $L$, and
 $$
-u(z)=\log|z^2+1|=\operatorname{Re}L(z).
+u(z)=\log\abs{z^2+1}=\operatorname{Re}L(z).
 $$
 The real part of a holomorphic function is harmonic, so $u$ is harmonic on the
 stated domain.

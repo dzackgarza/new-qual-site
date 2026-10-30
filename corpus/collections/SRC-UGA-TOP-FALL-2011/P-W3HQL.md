@@ -125,7 +125,7 @@ $$
 =
 \left\langle
  a_1,b_1,\dots,a_g,b_g
-\ \middle|\
+\ \presentationbar\
  [a_1,b_1]\cdots[a_g,b_g]=1
 \right\rangle.
 $$

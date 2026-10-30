@@ -264,7 +264,7 @@ Because every successive quotient is locally free, restriction preserves the
 short exact sequences in the filtration. It would therefore give a filtration
 of
 $$
-\mathcal G|_{\PP^2\times\{y\}}
+\mathcal G\restrict_{\PP^2\times\{y\}}
 \cong
 \Omega^1_{\PP^2}
 $$

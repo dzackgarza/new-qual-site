@@ -189,7 +189,7 @@ L=V(X,Y).
 $$
 Thus
 $$
-\boxed{|\operatorname{Bs}\Lambda|=C\cup L}.
+\boxed{\underlyingspace{\operatorname{Bs}\Lambda}=C\cup L}.
 $$
 Every nonzero-vertex cone contains both: it contains $C$ by construction, and
 it contains $L$ because $O=(0,0,0)\in C$ and the line joining $O$ to

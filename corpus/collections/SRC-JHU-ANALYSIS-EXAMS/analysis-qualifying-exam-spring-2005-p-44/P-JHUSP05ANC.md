@@ -52,11 +52,11 @@ f(x)=\frac{\mathbf 1_{[1,\infty)}(x)}{x}.
 $$
 Then
 $$
-\int_1^\infty |f(x)|^2\,dx=\int_1^\infty x^{-2}\,dx<\infty,
+\int_1^\infty \abs{f(x)}^2\,dx=\int_1^\infty x^{-2}\,dx<\infty,
 $$
 so $f\in L^2(\RR)$, whereas
 $$
-\int_1^\infty |f(x)|\,dx=\int_1^\infty x^{-1}\,dx=\infty.
+\int_1^\infty \abs{f(x)}\,dx=\int_1^\infty x^{-1}\,dx=\infty.
 $$
 Thus $f\notin L^1(\RR)$.
 
@@ -76,11 +76,11 @@ g(x)=x^{-2/3}\mathbf 1_{(0,1)}(x).
 $$
 Then
 $$
-\int_0^1 |g(x)|\,dx=\int_0^1x^{-2/3}\,dx<\infty,
+\int_0^1 \abs{g(x)}\,dx=\int_0^1x^{-2/3}\,dx<\infty,
 $$
 so $g\in L^1(\RR)$, but
 $$
-\int_0^1 |g(x)|^2\,dx=\int_0^1x^{-4/3}\,dx=\infty.
+\int_0^1 \abs{g(x)}^2\,dx=\int_0^1x^{-4/3}\,dx=\infty.
 $$
 Hence $g\notin L^2(\RR)$.
 
@@ -96,10 +96,10 @@ Statement (c) is true.
 
 By Cauchy--Schwarz,
 $$
-\|f\|_{L^1([0,1])}
-=\int_0^1|f(x)|\cdot1\,dx
-\le \|f\|_{L^2([0,1])}\|1\|_{L^2([0,1])}
-=\|f\|_2.
+\norm{f}_{L^1([0,1])}
+=\int_0^1\abs{f(x)}\cdot1\,dx
+\le \norm{f}_{L^2([0,1])}\norm{1}_{L^2([0,1])}
+=\norm{f}_2.
 $$
 Thus every $L^2([0,1])$ function belongs to $L^1([0,1])$.
 

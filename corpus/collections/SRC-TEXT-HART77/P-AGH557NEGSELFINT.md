@@ -53,7 +53,7 @@ audit:
 Let $Y$ be an irreducible curve on a surface $X$, and suppose there is a surjective morphism $f: X \rightarrow X_0$ to a projective variety $X_0$ of dimension 2, such that $f(Y)$ is a point $P$ and $f^{-1}(P)=Y$.
 Then show that $Y^2<0$.
 
-Hint: Let $|H|$ be a very ample (Cartier) divisor class on $X_0$, let $H_0 \in|H|$ be a divisor containing $P$, and let $H_1 \in|H|$ be a divisor not containing $P$.
+Hint: Let $\linearsystem{H}$ be a very ample (Cartier) divisor class on $X_0$, let $H_0 \in\linearsystem{H}$ be a divisor containing $P$, and let $H_1 \in\linearsystem{H}$ be a divisor not containing $P$.
 Then consider $f^* H_0, f^* H_1$ and $\tilde{H}_0=f^*\left(H_0-P\right)^{-}$.
 :::
 
@@ -111,7 +111,7 @@ $$
 ::: pf-proof
 Choose
 $$
-H_1\in|H|
+H_1\in\linearsystem{H}
 $$
 with
 $$
@@ -231,7 +231,7 @@ same calculation.
 ::: pf-proof
 Choose
 $$
-H_0\in|H|,
+H_0\in\linearsystem{H},
 \qquad
 P\in H_0,
 $$

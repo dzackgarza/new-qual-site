@@ -51,8 +51,8 @@ For the stronger assertion, apply the second part of the theorem to the cofibrat
 $$
 \nabla:X\vee X\to X,
 \qquad
-\nabla|_{X\times\{e\}}=\operatorname{id}
-=\nabla|_{\{e\}\times X}.
+\nabla\restrict_{X\times\{e\}}=\operatorname{id}
+=\nabla\restrict_{\{e\}\times X}.
 $$
 The homotopy extension property extends this homotopy from the wedge to all of $X\times X$. At the end we obtain a multiplication $\mu'$ homotopic to $\mu$ such that
 $$

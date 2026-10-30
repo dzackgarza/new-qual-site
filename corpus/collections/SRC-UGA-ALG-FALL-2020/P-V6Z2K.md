@@ -46,7 +46,7 @@ $$
 Hence $A$ is invertible and is annihilated by $x^m-1$.
 Over $\CC$, the polynomial $x^m-1$ has distinct roots, so $A$ is diagonalizable.
 Let its eigenvalues be $\lambda_1,\ldots,\lambda_n$.
-Each satisfies $\lambda_i^m=1$, hence $|\lambda_i|=1$ and therefore
+Each satisfies $\lambda_i^m=1$, hence $\abs{\lambda_i}=1$ and therefore
 $$
 \lambda_i^{-1}=\overline{\lambda_i}.
 $$

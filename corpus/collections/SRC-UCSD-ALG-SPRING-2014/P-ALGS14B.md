@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group.
 Suppose for any $p$-subgroup $Q$ of $G$, there is a unique Sylow $p$-subgroup $P$ which contains $Q$.
-Moreover, assume $G$ has a normal subgroup $N$ such that $p \mid |N|$.
+Moreover, assume $G$ has a normal subgroup $N$ such that $p \mid \cardinality{N}$.
 
 (a) Show that if $P_1$ and $P_2$ are two Sylow $p$-subgroups, then $nP_1 n^{-1} = P_2$ for some $n \in N$.
 (Hint: Consider a Sylow $p$-subgroup of $N$.)
@@ -47,7 +47,7 @@ Let $R$ be a Sylow $p$-subgroup of $N$. Since $R$ is a $p$-subgroup of $G$, it i
 $$
 R\le S\cap N=g(P\cap N)g^{-1}.
 $$
-Thus $|R|\le |P\cap N|$. The reverse inequality holds because $P\cap N$ is itself a $p$-subgroup of $N$. Hence equality holds and $P\cap N$ is Sylow in $N$.
+Thus $\cardinality{R}\le \cardinality{P\cap N}$. The reverse inequality holds because $P\cap N$ is itself a $p$-subgroup of $N$. Hence equality holds and $P\cap N$ is Sylow in $N$.
 
 :::
 
@@ -91,12 +91,12 @@ If $P$ is a Sylow $p$-subgroup of $G$, then $PN/N$ is a Sylow $p$-subgroup of $G
 
 ::: pf-proof
 
-Write $|G|_p$ and $|N|_p$ for the $p$-parts of the two orders.
-By step [](#s1){.pf-ref}, $|P\cap N|=|N|_p$, while $|P|=|G|_p$. Hence
+Write $\cardinality{G}_p$ and $\cardinality{N}_p$ for the $p$-parts of the two orders.
+By step [](#s1){.pf-ref}, $\cardinality{P\cap N}=\cardinality{N}_p$, while $\cardinality{P}=\cardinality{G}_p$. Hence
 $$
-|PN/N|=|P/(P\cap N)|=\frac{|G|_p}{|N|_p}=|G/N|_p,
+\cardinality{PN/N}=\cardinality{P/(P\cap N)}=\frac{\cardinality{G}_p}{\cardinality{N}_p}=\cardinality{G/N}_p,
 $$
-so $PN/N$ has the full $p$-part of $|G/N|$.
+so $PN/N$ has the full $p$-part of $\cardinality{G/N}$.
 
 :::
 
@@ -110,9 +110,9 @@ Every Sylow $p$-subgroup of $G/N$ is of the form $PN/N$ for some Sylow $p$-subgr
 
 Let $\overline Q$ be a Sylow $p$-subgroup of $G/N$, and let $H$ be its full inverse image in $G$. Choose a Sylow $p$-subgroup $P$ of $H$. Since
 $$
-|H|=|N|\,|\overline Q|,
+\cardinality{H}=\cardinality{N}\,\cardinality{\overline Q},
 $$
-the $p$-part of $|H|$ is $|N|_p|G/N|_p=|G|_p$. Thus $P$ is also a Sylow $p$-subgroup of $G$. The image $PN/N$ is a Sylow $p$-subgroup of $G/N$ by step [](#s4){.pf-ref} and lies in $\overline Q$; equality follows.
+the $p$-part of $\cardinality{H}$ is $\cardinality{N}_p\cardinality{G/N}_p=\cardinality{G}_p$. Thus $P$ is also a Sylow $p$-subgroup of $G$. The image $PN/N$ is a Sylow $p$-subgroup of $G/N$ by step [](#s4){.pf-ref} and lies in $\overline Q$; equality follows.
 
 :::
 

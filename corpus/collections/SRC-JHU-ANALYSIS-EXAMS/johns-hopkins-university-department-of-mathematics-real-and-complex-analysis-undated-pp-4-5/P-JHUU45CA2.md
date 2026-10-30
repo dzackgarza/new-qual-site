@@ -95,7 +95,7 @@ since the integrand tends uniformly to one.
 For the large arc, the same parametrization with $R$
 gives
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\int_0^\pi e^{-R\sin t}\,dt
 \leq2\int_0^{\pi/2}e^{-2Rt/\pi}\,dt
 \leq\frac\pi R\longrightarrow0.

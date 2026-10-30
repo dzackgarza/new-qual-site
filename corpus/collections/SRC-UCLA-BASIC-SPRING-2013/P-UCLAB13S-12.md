@@ -114,7 +114,7 @@ The final term is exactly the stated remainder.
 The remainder satisfies
 $$
 \boxed{
-|R_N|
+\abs{R_N}
 \le
 \frac1{2N+3}.
 }
@@ -142,7 +142,7 @@ $$
 Therefore
 $$
 \begin{aligned}
-|R_N|
+\abs{R_N}
 &\le
 \int_0^1x^{2N+2}\,dx\\
 &=
@@ -166,7 +166,7 @@ $$
 
 By step [](#s1-3){.pf-ref},
 $$
-0\le|R_N|\le\frac1{2N+3},
+0\le\abs{R_N}\le\frac1{2N+3},
 $$
 and the upper bound tends to zero.
 Apply the squeeze theorem.

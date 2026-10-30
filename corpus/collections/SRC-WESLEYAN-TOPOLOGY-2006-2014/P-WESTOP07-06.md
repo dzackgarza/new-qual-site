@@ -356,13 +356,13 @@ The restrictions
 $$
 f_C
 \coloneqq
-f|_C:C\to D
+f\restrict_C:C\to D
 $$
 and
 $$
 g_D
 \coloneqq
-g|_D:D\to C
+g\restrict_D:D\to C
 $$
 are well defined.
 
@@ -413,7 +413,7 @@ C.
 $$
 Hence
 $$
-H|_{C\times I}
+H\restrict_{C\times I}
 $$
 has image in
 $$
@@ -459,7 +459,7 @@ D.
 $$
 Thus
 $$
-K|_{D\times I}
+K\restrict_{D\times I}
 $$
 is the required homotopy.
 

@@ -165,7 +165,7 @@ $$
 be the unique nonzero class. Then
 $$
 \boxed{H^*(\RP^{\infty};\ZZ)
-\cong\ZZ[u]/(2u),\qquad |u|=2.}
+\cong\ZZ[u]/(2u),\qquad \gradeddegree{u}=2.}
 $$
 
 
@@ -182,7 +182,7 @@ The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\RP^{\infty};\
 For finite even-dimensional projective space,
 $$
 \boxed{H^*(\RP^{2n};\ZZ)
-\cong\ZZ[u]/(2u,u^{n+1}),\qquad |u|=2.}
+\cong\ZZ[u]/(2u,u^{n+1}),\qquad \gradeddegree{u}=2.}
 $$
 
 

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a sequence of holomorphic functions on $\DD$ satisfying $|f_n(z)|\le1$ for every $z\in\DD$ and every $n$.
+Let $(f_n)$ be a sequence of holomorphic functions on $\DD$ satisfying $\abs{f_n(z)}\le1$ for every $z\in\DD$ and every $n$.
 Let
 $$
 A=\{z\in\DD:\lim_{n\to\infty}f_n(z)\text{ exists}\}.
@@ -38,7 +38,7 @@ The family $\{f_n:n\ge1\}$ is normal on $\DD$.
 
 The functions satisfy
 $$
-|f_n(z)|\le1
+\abs{f_n(z)}\le1
 $$
 for every $z\in\DD$ and every $n$. Thus the family is locally uniformly bounded. By Montel's theorem, every sequence in this family has a subsequence that converges locally uniformly on $\DD$ to a holomorphic function.
 
@@ -94,13 +94,13 @@ The full sequence $(f_n)$ converges locally uniformly to the function $f$ from s
 
 Suppose not. Then there exist a compact set $K\subset\DD$, a number $\varepsilon>0$, and a subsequence $(f_{m_j})$ such that
 $$
-\sup_{z\in K}|f_{m_j}(z)-f(z)|\ge\varepsilon
+\sup_{z\in K}\abs{f_{m_j}(z)-f(z)}\ge\varepsilon
 $$
 for every $j$.
 
 By step [](#s1-1){.pf-ref}, the subsequence $(f_{m_j})$ has a further subsequence $(f_{m_{j_\ell}})$ converging locally uniformly to some holomorphic function $g$. By step [](#s1-2){.pf-ref}, every locally uniform subsequential limit equals $f$, so $g=f$. Therefore
 $$
-\sup_{z\in K}|f_{m_{j_\ell}}(z)-f(z)|\longrightarrow0,
+\sup_{z\in K}\abs{f_{m_{j_\ell}}(z)-f(z)}\longrightarrow0,
 $$
 contradicting the displayed lower bound by $\varepsilon$.
 

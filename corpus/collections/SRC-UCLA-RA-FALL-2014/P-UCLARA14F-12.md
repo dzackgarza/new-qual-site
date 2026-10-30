@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega = \{ z \in \CC ; |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \RR$ is bounded and continuous on $\overline{\Omega}$ and that it is subharmonic on $\Omega$. Prove the following: If $u(z) \leq 0$ for all $|z| = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
+Let $\Omega = \{ z \in \CC ; \abs{z} > 1 \}$. Suppose $u : \overline{\Omega} \to \RR$ is bounded and continuous on $\overline{\Omega}$ and that it is subharmonic on $\Omega$. Prove the following: If $u(z) \leq 0$ for all $\abs{z} = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ Let $\Omega = \{ z \in \CC ; |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \RR
 
 Since $u$ is bounded on $\overline\Omega$, there is $M>0$ such that
 $$
-|u(z)|\le M
+\abs{u(z)}\le M
 \qquad(z\in\overline\Omega).
 $$
 
@@ -51,7 +51,7 @@ Fix $\varepsilon>0$ and define
 $$
 v_\varepsilon(z)
 =
-u(z)-\varepsilon\log|z|.
+u(z)-\varepsilon\log\abs{z}.
 $$
 Then $v_\varepsilon$ is subharmonic on $\Omega$ and continuous on
 $\overline\Omega$.
@@ -61,7 +61,7 @@ $\overline\Omega$.
 
 The function
 $$
-z\longmapsto\log|z|
+z\longmapsto\log\abs{z}
 $$
 is harmonic on $\Omega$, since $0\notin\Omega$. The difference of a
 subharmonic function and a harmonic function is subharmonic. Continuity is
@@ -76,15 +76,15 @@ immediate from the continuity of the two summands.
 On the inner boundary,
 $$
 v_\varepsilon(z)\le0
-\qquad(|z|=1).
+\qquad(\abs{z}=1).
 $$
 
 
 ::: pf-proof
 
-If $|z|=1$, then
+If $\abs{z}=1$, then
 $$
-\log|z|=0.
+\log\abs{z}=0.
 $$
 Hence
 $$
@@ -105,17 +105,17 @@ $$
 Then
 $$
 v_\varepsilon(z)<0
-\qquad(|z|\ge R).
+\qquad(\abs{z}\ge R).
 $$
 
 
 ::: pf-proof
 
-For $|z|\ge R$, step [](#s1-1){.pf-ref} gives
+For $\abs{z}\ge R$, step [](#s1-1){.pf-ref} gives
 $$
 v_\varepsilon(z)
 \le
-M-\varepsilon\log|z|
+M-\varepsilon\log\abs{z}
 \le
 M-\varepsilon\log R
 <0.
@@ -129,7 +129,7 @@ $$
 
 On the closed annulus
 $$
-A_R=\{z:1\le|z|\le R\},
+A_R=\{z:1\le\abs{z}\le R\},
 $$
 one has
 $$
@@ -142,9 +142,9 @@ $$
 The function $v_\varepsilon$ is continuous on $A_R$ and subharmonic in its
 interior. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, it is nonpositive on both boundary circles
 $$
-|z|=1
+\abs{z}=1
 \qquad\text{and}\qquad
-|z|=R.
+\abs{z}=R.
 $$
 The maximum principle for subharmonic functions therefore gives
 $$
@@ -169,11 +169,11 @@ $$
 
 Step [](#s1-5){.pf-ref} covers the region
 $$
-1\le|z|\le R.
+1\le\abs{z}\le R.
 $$
 Step [](#s1-4){.pf-ref} covers
 $$
-|z|\ge R.
+\abs{z}\ge R.
 $$
 Together they cover $\overline\Omega$.
 
@@ -185,7 +185,7 @@ Together they cover $\overline\Omega$.
 
 For every $z\in\Omega$ and every $\varepsilon>0$,
 $$
-u(z)\le\varepsilon\log|z|.
+u(z)\le\varepsilon\log\abs{z}.
 $$
 
 
@@ -193,7 +193,7 @@ $$
 
 Step [](#s1-6){.pf-ref} says
 $$
-u(z)-\varepsilon\log|z|\le0.
+u(z)-\varepsilon\log\abs{z}\le0.
 $$
 Rearrange.
 
@@ -213,7 +213,7 @@ $$
 
 Fix $z\in\Omega$. Since
 $$
-\log|z|>0
+\log\abs{z}>0
 $$
 is finite, step [](#s1-7){.pf-ref} holds for every $\varepsilon>0$. Letting
 $$

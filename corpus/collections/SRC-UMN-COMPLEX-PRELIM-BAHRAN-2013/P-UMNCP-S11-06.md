@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Suppose $f$ is entire and there is $M>0$ such that
 $$
-|\operatorname{Re}f(z)|\ge |\operatorname{Im}f(z)|
+\abs{\operatorname{Re}f(z)}\ge \abs{\operatorname{Im}f(z)}
 $$
-whenever $|z|\ge M$. Prove that $f$ is constant.
+whenever $\abs{z}\ge M$. Prove that $f$ is constant.
 :::
 
 ::: {.solution}
@@ -45,7 +45,7 @@ $$
 
 For every
 $$
-|z|\ge M,
+\abs{z}\ge M,
 $$
 one has
 $$
@@ -70,7 +70,7 @@ u(z)^2-v(z)^2.
 $$
 The hypothesis
 $$
-|u(z)|\ge|v(z)|
+\abs{u(z)}\ge\abs{v(z)}
 $$
 implies
 $$
@@ -91,11 +91,11 @@ e^{-f(z)^2}
 $$
 satisfies
 $$
-|g(z)|\le1
+\abs{g(z)}\le1
 $$
 whenever
 $$
-|z|\ge M.
+\abs{z}\ge M.
 $$
 
 
@@ -103,17 +103,17 @@ $$
 
 The function $g$ is entire because $f$ and the exponential are entire. Moreover,
 $$
-|g(z)|
+\abs{g(z)}
 =
 e^{-\operatorname{Re}(f(z)^2)}.
 $$
 By step [](#s1-1){.pf-ref}, the exponent is nonpositive when
 $$
-|z|\ge M,
+\abs{z}\ge M,
 $$
 so
 $$
-|g(z)|\le1.
+\abs{g(z)}\le1.
 $$
 
 :::
@@ -129,11 +129,11 @@ The function $g$ is bounded on all of $\CC$.
 
 Step [](#s1-2){.pf-ref} gives a bound outside the closed disk
 $$
-|z|\le M.
+\abs{z}\le M.
 $$
 Inside that disk, $g$ is continuous on a compact set, so
 $$
-\max_{|z|\le M}|g(z)|
+\max_{\abs{z}\le M}\abs{g(z)}
 $$
 is finite. Combining the two bounds gives a global bound.
 

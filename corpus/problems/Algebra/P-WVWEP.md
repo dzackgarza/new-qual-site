@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WVWEP
 kind: problem
-title: $|\GL_2(\FF_q)|$ and its representations
+title: $\cardinality{\GL_2(\FF_q)}$ and its representations
 classification:
   areas:
   - algebra
@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $G=\GL_2(\FF_q)$.
 
-(a) Compute $|G|$.
+(a) Compute $\cardinality{G}$.
 
 (b) Describe standard ways to construct finite-dimensional complex representations of $G$.
 
@@ -32,7 +32,7 @@ Let $G=\GL_2(\FF_q)$.
 
 ::: pf-step
 
-(a) $|\GL_2(\FF_q)|=\boxed{(q^2-1)(q^2-q)=q(q-1)^2(q+1)}$.
+(a) $\cardinality{\GL_2(\FF_q)}=\boxed{(q^2-1)(q^2-q)=q(q-1)^2(q+1)}$.
 
 ::: pf-proof
 

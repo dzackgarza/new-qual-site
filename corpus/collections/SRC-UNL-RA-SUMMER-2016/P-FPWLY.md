@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FPWLY
 kind: problem
-title: $f(0)=f(2)=0$ and $f(c)=1$ imply $|f'|>1$ somewhere on $(0,2)$
+title: $f(0)=f(2)=0$ and $f(c)=1$ imply $\abs{f'}>1$ somewhere on $(0,2)$
 classification:
   areas:
   - real-analysis
@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Suppose that $f \colon [0,2] \to \RR$ is continuous on $[0,2]$ , differentiable on $(0,2)$, and such that $f(0) = f(2) = 0$, $f(c) = 1$ for some $c \in (0,2)$.
-Prove that there exists $x \in (0,2)$ such that $|f'(x)| >1.$
+Prove that there exists $x \in (0,2)$ such that $\abs{f'(x)} >1.$
 :::
 
 ::: {.solution}

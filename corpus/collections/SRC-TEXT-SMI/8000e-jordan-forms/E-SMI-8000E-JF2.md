@@ -123,10 +123,10 @@ Let
 $$
 d_c=\dim M_c.
 $$
-Since $T|_{M_c}=cI+N_c$ with $N_c$ nilpotent, the only characteristic root of
+Since $T\restrict_{M_c}=cI+N_c$ with $N_c$ nilpotent, the only characteristic root of
 the restriction is $c$, and therefore
 $$
-\operatorname{ch}_{T|M_c}(X)=(X-c)^{d_c}.
+\operatorname{ch}_{T\restrict M_c}(X)=(X-c)^{d_c}.
 $$
 The matrix of $T$ in a basis adapted to the direct sum of the $M_c$ is block
 diagonal, so its characteristic polynomial is the product of the

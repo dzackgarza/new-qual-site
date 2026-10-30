@@ -146,7 +146,7 @@ Every normal upper-triangular complex matrix is diagonal.
 Let $T=(t_{ij})$ be upper triangular and normal.
 Comparing the $(1,1)$ entries of $TT^H$ and $T^HT$ gives
 $$
-\sum_{j=1}^n|t_{1j}|^2=|t_{11}|^2,
+\sum_{j=1}^n\abs{t_{1j}}^2=\abs{t_{11}}^2,
 $$
 because the first column of an upper-triangular matrix has only the entry $t_{11}$.
 Hence

@@ -46,7 +46,7 @@ Let $X$ be a topological space. A covering space of $X$ consists of a topologica
 
 An open set $U \subseteq X$ is evenly covered if the preimage $p^{-1}(U)$ can be expressed as a disjoint union of open subsets in $\widetilde{X}$:
 $$p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,$$
-such that for each index $\alpha \in A$, the restriction $p|_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
+such that for each index $\alpha \in A$, the restriction $p\restrict_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
 
 :::
 
@@ -215,7 +215,7 @@ Thus $p^{-1}(x_0) = \{\widetilde{x}_0\}$ is a singleton.
 
 ::: pf-step
 
-Since $X$ is path-connected and the cardinality of the fiber $p^{-1}(x)$ is locally constant, $|p^{-1}(x)| = 1$ for all $x \in X$. Thus $p$ is a bijection.
+Since $X$ is path-connected and the cardinality of the fiber $p^{-1}(x)$ is locally constant, $\cardinality{p^{-1}(x)} = 1$ for all $x \in X$. Thus $p$ is a bijection.
 
 :::
 
@@ -249,7 +249,7 @@ Let $W \subseteq \widetilde{X}$ be an open set, and let $x \in p(W)$. Choose $\w
 
 ::: pf-step
 
-Let $U$ be an evenly covered open neighborhood of $x$ in $X$. Since $|p^{-1}(x)| = 1$, $p^{-1}(U) = V$ consists of a single open sheet $V \subseteq \widetilde{X}$, and $p|_V: V \to U$ is a homeomorphism.
+Let $U$ be an evenly covered open neighborhood of $x$ in $X$. Since $\cardinality{p^{-1}(x)} = 1$, $p^{-1}(U) = V$ consists of a single open sheet $V \subseteq \widetilde{X}$, and $p\restrict_V: V \to U$ is a homeomorphism.
 
 :::
 
@@ -261,7 +261,7 @@ The set $W \cap V$ is an open neighborhood of $\widetilde{w}$ in $V$.
 
 ::: pf-step
 
-Since $p|_V$ is a homeomorphism, $p(W \cap V)$ is open in $U$, and hence open in $X$.
+Since $p\restrict_V$ is a homeomorphism, $p(W \cap V)$ is open in $U$, and hence open in $X$.
 
 :::
 

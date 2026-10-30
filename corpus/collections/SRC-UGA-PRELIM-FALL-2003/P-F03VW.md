@@ -218,7 +218,7 @@ Step [](#s4-2){.pf-ref} and transpose properties.
 
 ::: pf-step
 Choose $y = Mx \in \RR^m$.
-Then $(Mx) \cdot (Mx) = \|Mx\|^2 = 0$.
+Then $(Mx) \cdot (Mx) = \norm{Mx}^2 = 0$.
 
 ::: pf-proof
 setting $y = Mx$ in step [](#s4-3){.pf-ref}.
@@ -227,7 +227,7 @@ setting $y = Mx$ in step [](#s4-3){.pf-ref}.
 :::
 
 ::: pf-step
-By positive definiteness of the Euclidean norm, $\|Mx\|^2 = 0 \implies Mx = 0$.
+By positive definiteness of the Euclidean norm, $\norm{Mx}^2 = 0 \implies Mx = 0$.
 
 ::: pf-proof
 standard property of inner products.

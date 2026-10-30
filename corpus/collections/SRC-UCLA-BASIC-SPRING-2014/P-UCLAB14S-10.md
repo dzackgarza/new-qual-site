@@ -20,11 +20,11 @@ audit:
 Problem 10. Let $F$ be a set of continuous real-valued functions on $[0,1]$.
 Assume that
 
-(i) $F$ is uniformly bounded: there is $M<\infty$ such that $|f(x)|\leq M$ for all $f\in F$ and all $x\in[0,1]$; and
+(i) $F$ is uniformly bounded: there is $M<\infty$ such that $\abs{f(x)}\leq M$ for all $f\in F$ and all $x\in[0,1]$; and
 
 (ii) $F$ is equicontinuous: for every $\varepsilon>0$ there is $\delta>0$ such that for all $f\in F$ and $x,y\in[0,1]$,
 $$
-|x-y|<\delta\implies |f(x)-f(y)|<\varepsilon.
+\abs{x-y}<\delta\implies \abs{f(x)-f(y)}<\varepsilon.
 $$
 
 Prove that every sequence from $F$ has a subsequence that converges uniformly on $[0,1]$.
@@ -65,7 +65,7 @@ converges as $j\to\infty$.
 
 Uniform boundedness gives
 $$
-|f_n(q_1)|\leq M
+\abs{f_n(q_1)}\leq M
 $$
 for all $n$, so Bolzano--Weierstrass gives a subsequence converging at $q_1$. From that subsequence choose a further subsequence converging at $q_2$, and continue inductively. Let $(f_{n_j})$ be the diagonal subsequence, whose $j$th term is the $j$th term of the $j$th nested subsequence. For fixed $m$, all sufficiently late diagonal terms belong to the subsequence chosen at stage $m$, so their values at $q_m$ converge.
 
@@ -77,9 +77,9 @@ for all $n$, so Bolzano--Weierstrass gives a subsequence converging at $q_1$. Fr
 
 Fix $\varepsilon>0$. By equicontinuity, choose $\delta>0$ such that for every $f\in F$,
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(y)|<\varepsilon/3.
+\abs{f(x)-f(y)}<\varepsilon/3.
 $$
 
 
@@ -117,7 +117,7 @@ form an open cover of the compact interval $[0,1]$. Compactness gives a finite s
 
 There exists $J$ such that whenever $j,k\geq J$,
 $$
-|f_{n_j}(q_{m_i})-f_{n_k}(q_{m_i})|<\varepsilon/3
+\abs{f_{n_j}(q_{m_i})-f_{n_k}(q_{m_i})}<\varepsilon/3
 \qquad(i=1,\ldots,N).
 $$
 
@@ -137,19 +137,19 @@ $$
 
 For every $j,k\geq J$ and every $x\in[0,1]$,
 $$
-|f_{n_j}(x)-f_{n_k}(x)|<\varepsilon.
+\abs{f_{n_j}(x)-f_{n_k}(x)}<\varepsilon.
 $$
 
 
 ::: pf-proof
 
-Choose $q_{m_i}$ with $|x-q_{m_i}|<\delta$ using step [](#s1-4){.pf-ref}. Then
+Choose $q_{m_i}$ with $\abs{x-q_{m_i}}<\delta$ using step [](#s1-4){.pf-ref}. Then
 $$
 \begin{aligned}
-|f_{n_j}(x)-f_{n_k}(x)|
-&\leq |f_{n_j}(x)-f_{n_j}(q_{m_i})|\\
-&\quad+|f_{n_j}(q_{m_i})-f_{n_k}(q_{m_i})|\\
-&\quad+|f_{n_k}(q_{m_i})-f_{n_k}(x)|.
+\abs{f_{n_j}(x)-f_{n_k}(x)}
+&\leq \abs{f_{n_j}(x)-f_{n_j}(q_{m_i})}\\
+&\quad+\abs{f_{n_j}(q_{m_i})-f_{n_k}(q_{m_i})}\\
+&\quad+\abs{f_{n_k}(q_{m_i})-f_{n_k}(x)}.
 \end{aligned}
 $$
 The first and third terms are $<\varepsilon/3$ by step [](#s1-3){.pf-ref}, and the middle term is $<\varepsilon/3$ by step [](#s1-5){.pf-ref}. Their sum is $<\varepsilon$.
@@ -167,7 +167,7 @@ Thus $(f_{n_j})$ is Cauchy in the supremum norm on $C([0,1])$.
 
 Step [](#s1-6){.pf-ref} says precisely that for every $\varepsilon>0$ there is $J$ such that
 $$
-\|f_{n_j}-f_{n_k}\|_\infty<\varepsilon
+\norm{f_{n_j}-f_{n_k}}_\infty<\varepsilon
 $$
 whenever $j,k\geq J$.
 
@@ -179,7 +179,7 @@ whenever $j,k\geq J$.
 
 Since $C([0,1])$ is complete in the supremum norm, there is a continuous function $f$ such that
 $$
-\|f_{n_j}-f\|_\infty\longrightarrow0.
+\norm{f_{n_j}-f}_\infty\longrightarrow0.
 $$
 
 

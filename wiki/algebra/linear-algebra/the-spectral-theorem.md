@@ -72,9 +72,9 @@ Suppose $A_1,\ldots,A_n$ are pairwise commuting diagonalizable operators on $V$;
 
 - If $A_jA_n = A_nA_j$ and $\vector v\in E_i$, then $A_n(A_j\vector v) = A_jA_n\vector v = \mu_iA_j\vector v$, so each $E_i$ is $A_j$-invariant.
 
-- The minimal polynomial of the restriction $A_j|_{E_i}$ divides that of $A_j$, so $A_j|_{E_i}$ is diagonalizable.
+- The minimal polynomial of the restriction $A_j\restrict_{E_i}$ divides that of $A_j$, so $A_j\restrict_{E_i}$ is diagonalizable.
 
-- By induction, $A_1|_{E_i},\ldots,A_{n-1}|_{E_i}$ are simultaneously diagonalizable, and every vector of $E_i$ is an eigenvector of $A_n$.
+- By induction, $A_1\restrict_{E_i},\ldots,A_{n-1}\restrict_{E_i}$ are simultaneously diagonalizable, and every vector of $E_i$ is an eigenvector of $A_n$.
 
 - The union over $i$ of these bases of $E_i$ is a basis of $V$ in which every $A_j$ is diagonal.
 

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Suppose $f$ is holomorphic on the punctured unit disc $\DD^*=\DD\setminus\{0\}$ and
 $$
-\int_{\DD^*}|f(z)|^2\,dA(z)<\infty,
+\int_{\DD^*}\abs{f(z)}^2\,dA(z)<\infty,
 $$
 where $dA$ is two-dimensional Lebesgue measure.
 Show that $f$ extends holomorphically to the unit disc $\DD$.
@@ -34,7 +34,7 @@ f(z)=\sum_{k=-\infty}^{\infty}a_k z^k}
 $$
 converging on
 $$
-0<|z|<1.
+0<\abs{z}<1.
 $$
 
 ::: pf
@@ -45,7 +45,7 @@ Fix
 $$
 0<r<1.
 $$
-On the circle $|z|=r$,
+On the circle $\abs{z}=r$,
 $$
 f(re^{i\theta})
 =
@@ -68,14 +68,14 @@ into the Laurent series.
 
 ::: pf-step
 
-The Laurent series converges uniformly on the circle $|z|=r$.
+The Laurent series converges uniformly on the circle $\abs{z}=r$.
 
 
 ::: pf-proof
 
 Every compact subset of the annulus
 $$
-0<|z|<1
+0<\abs{z}<1
 $$
 lies in a smaller closed annulus on which the Laurent series converges uniformly. A fixed circle is compact.
 
@@ -90,10 +90,10 @@ $$
 \boxed{
 \frac1{2\pi}
 \int_0^{2\pi}
-|f(re^{i\theta})|^2\,d\theta
+\abs{f(re^{i\theta})}^2\,d\theta
 =
 \sum_{k\in\ZZ}
-|a_k|^2r^{2k}}.
+\abs{a_k}^2r^{2k}}.
 $$
 
 
@@ -117,11 +117,11 @@ Uniform convergence permits the usual Fourier/Parseval identity.
 
 In polar coordinates,
 $$
-\int_{\DD^*}|f(z)|^2\,dA(z)
+\int_{\DD^*}\abs{f(z)}^2\,dA(z)
 =
 \int_0^1
 \int_0^{2\pi}
-|f(re^{i\theta})|^2
+\abs{f(re^{i\theta})}^2
 \,r\,d\theta\,dr.
 $$
 
@@ -141,12 +141,12 @@ $$
 
 Using step [](#s1-3){.pf-ref},
 $$
-\int_{\DD^*}|f|^2\,dA
+\int_{\DD^*}\abs{f}^2\,dA
 =
 2\pi
 \int_0^1
 \left(
-\sum_{k\in\ZZ}|a_k|^2r^{2k}
+\sum_{k\in\ZZ}\abs{a_k}^2r^{2k}
 \right)
 r\,dr.
 $$
@@ -165,11 +165,11 @@ Substitute the Parseval identity into step [](#s1-4){.pf-ref}.
 Since all summands are nonnegative, Tonelli's theorem gives
 $$
 \boxed{
-\int_{\DD^*}|f|^2\,dA
+\int_{\DD^*}\abs{f}^2\,dA
 =
 2\pi
 \sum_{k\in\ZZ}
-|a_k|^2
+\abs{a_k}^2
 \int_0^1
 r^{2k+1}\,dr},
 $$
@@ -252,7 +252,7 @@ $$
 
 If some $a_k\ne0$ with $k<0$, then the corresponding nonnegative term in the sum in step [](#s1-6){.pf-ref} would be
 $$
-2\pi|a_k|^2\cdot\infty=\infty,
+2\pi\abs{a_k}^2\cdot\infty=\infty,
 $$
 forcing the whole $L^2$-integral to diverge.
 
@@ -269,7 +269,7 @@ f(z)=\sum_{k=0}^{\infty}a_k z^k}
 $$
 for
 $$
-0<|z|<1.
+0<\abs{z}<1.
 $$
 
 
@@ -292,7 +292,7 @@ converges on the whole unit disk.
 
 ::: pf-proof
 
-It is the nonnegative part of the Laurent series whose outer radius of convergence is at least $1$. Thus it converges for every $|z|<1$, including $z=0$.
+It is the nonnegative part of the Laurent series whose outer radius of convergence is at least $1$. Thus it converges for every $\abs{z}<1$, including $z=0$.
 
 :::
 
@@ -309,7 +309,7 @@ $$
 $$
 for
 $$
-|z|<1.
+\abs{z}<1.
 $$
 
 
@@ -347,7 +347,7 @@ $$
 
 For
 $$
-0<|z|<1,
+0<\abs{z}<1,
 $$
 the defining power series for $\widetilde f$ is exactly the Laurent series for $f$ after the negative coefficients were shown to vanish in step [](#s1-10){.pf-ref}.
 

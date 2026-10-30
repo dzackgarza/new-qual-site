@@ -44,9 +44,9 @@ First take $F=\QQ$. Hopf's theorem says that the connected graded Hopf algebra $
 $$
 H^*(X;\QQ)\cong\Lambda_{\QQ}(x_1,\dots,x_r)
 $$
-with all $|x_i|$ odd. If $r>0$, then
+with all $\gradeddegree{x_i}$ odd. If $r>0$, then
 $$
-P_{\QQ}(-1)=\prod_{i=1}^r(1+(-1)^{|x_i|})=0,
+P_{\QQ}(-1)=\prod_{i=1}^r(1+(-1)^{\gradeddegree{x_i}})=0,
 $$
 so $\chi(X)=0$.
 
@@ -56,7 +56,7 @@ Borel's theorem expresses the finite-dimensional Hopf algebra $H^*(X;\FF_p)$ as 
 $$
 \FF_p[y]/(y^{p^k})
 $$
-with $|y|$ even when $p$ is odd. If an exterior factor occurs, its Poincare polynomial vanishes at $-1$, giving $\chi(X)=0$, contradicting $\chi(X)=1$. If there are no exterior factors, every nontrivial truncated factor contributes
+with $\gradeddegree{y}$ even when $p$ is odd. If an exterior factor occurs, its Poincare polynomial vanishes at $-1$, giving $\chi(X)=0$, contradicting $\chi(X)=1$. If there are no exterior factors, every nontrivial truncated factor contributes
 $$
 1+1+\cdots+1=p^k
 $$

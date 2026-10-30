@@ -21,8 +21,8 @@ Show that the converse is false for $[0,1]$ with Lebesgue measure.
 :::
 
 ::: {.solution}
-Fix $\epsilon>0,\delta>0$ and define $A_n=\{x:|f_n(x)|\ge\epsilon\}$.
-For the $\delta$, By Egoroff's theorem, there is a measurable set $E$ with $\mu(E)<\delta$ and $f_n\to 0$ on $E^c$ uniformly, say, there is a $N$, whenever $n>N$, $x\in E^c$, $|f_n(x)|<\epsilon$.
+Fix $\epsilon>0,\delta>0$ and define $A_n=\{x:\abs{f_n(x)}\ge\epsilon\}$.
+For the $\delta$, By Egoroff's theorem, there is a measurable set $E$ with $\mu(E)<\delta$ and $f_n\to 0$ on $E^c$ uniformly, say, there is a $N$, whenever $n>N$, $x\in E^c$, $\abs{f_n(x)}<\epsilon$.
 It implies that $A_n\subset E$ and thus $\mu(A_n)<\delta$.
 It shows that $\mu(A_n)\to 0$, which means $f_n\to 0$ in measure.
 

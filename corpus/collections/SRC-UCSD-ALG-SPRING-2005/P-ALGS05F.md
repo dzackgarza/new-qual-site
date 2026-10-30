@@ -39,7 +39,7 @@ setup.
 
 ::: {.pf-step #s2}
 
-The size of the conjugacy class is $|C(g)| = [G : C_G(g)]$, where $C_G(g)$ is the centralizer of $g$.
+The size of the conjugacy class is $\cardinality{C(g)} = [G : C_G(g)]$, where $C_G(g)$ is the centralizer of $g$.
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ $C_G(g) \supseteq Z(G)$, so the index of $C_G(g)$ is at most the index of $Z(G)$
 
 ::: {.pf-step #s5}
 
-Therefore $|C(g)| \le n$.
+Therefore $\cardinality{C(g)} \le n$.
 
 ::: pf-proof
 

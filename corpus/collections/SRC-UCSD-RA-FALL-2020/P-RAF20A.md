@@ -64,7 +64,7 @@ A:=\{e_n:n\ge1\},
 $$
 where $(e_n)$ is the standard orthonormal basis. Since
 $$
-\|e_n-e_m\|_2=\sqrt2
+\norm{e_n-e_m}_2=\sqrt2
 \qquad(n\ne m),
 $$
 the set $A$ is norm closed.

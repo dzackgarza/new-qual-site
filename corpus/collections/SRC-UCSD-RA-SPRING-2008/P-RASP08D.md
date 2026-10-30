@@ -33,7 +33,7 @@ Let $M \subset \ell^\infty$ be the subspace of all $x$ such that $\lim_{n \to \i
 (a) Let $\tau : \ell^\infty \to \ell^\infty$ denote the shift operator given by $(\tau x)(n) = x(n+1)$ for $n = 1, 2, \ldots$.
 Show that $\tau$ sends $M$ to $M$ and $f(\tau x) = f(x)$ for all $x \in M$.
 
-(b) Show that there is a linear functional $F : \ell^\infty \to \RR$ such that $F|_M = f$ and
+(b) Show that there is a linear functional $F : \ell^\infty \to \RR$ such that $F\restrict_M = f$ and
 $$
 \liminf_{n \to \infty} x(n) \leq F(x) \leq \limsup_{n \to \infty} x(n).
 $$
@@ -122,7 +122,7 @@ F:\ell^\infty\to\RR
 $$
 such that
 $$
-F|_M=f
+F\restrict_M=f
 \qquad\text{and}\qquad
 F(x)\le p(x)=\limsup_{n\to\infty}x(n)
 $$
@@ -141,7 +141,7 @@ $$
 Hence
 $$
 \boxed{
-F|_M=f,
+F\restrict_M=f,
 \qquad
 \liminf x(n)\le F(x)\le\limsup x(n)
 }

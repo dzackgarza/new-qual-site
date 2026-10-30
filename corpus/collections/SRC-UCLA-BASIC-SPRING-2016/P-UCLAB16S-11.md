@@ -155,7 +155,7 @@ r_+>0,
 \qquad
 r_-<0,
 \qquad
-|r_-|<r_+.
+\abs{r_-}<r_+.
 $$
 
 
@@ -181,7 +181,7 @@ r_+
 >
 \frac{\sqrt{a^2+4b^2}-a}{2}
 =
-|r_-|.
+\abs{r_-}.
 $$
 
 :::
@@ -254,7 +254,7 @@ q=\frac{r_-}{r_+},
 $$
 one has
 $$
-|q|<1
+\abs{q}<1
 $$
 and
 $$
@@ -277,7 +277,7 @@ $$
 
 The inequality
 $$
-|q|<1
+\abs{q}<1
 $$
 is step [](#s1-3){.pf-ref}.
 Factor
@@ -321,7 +321,7 @@ $$
 $$
 because
 $$
-|q|<1.
+\abs{q}<1.
 $$
 Taking logarithms gives the identity.
 
@@ -436,7 +436,7 @@ D_n
 $$
 Because step [](#s1-3){.pf-ref} gives
 $$
-|r_-|=b^2<1,
+\abs{r_-}=b^2<1,
 $$
 the numerator tends to $1$.
 Thus

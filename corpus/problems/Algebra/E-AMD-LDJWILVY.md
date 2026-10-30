@@ -65,7 +65,7 @@ In $G=S_3$, the subgroups $H=\langle(1\,2)\rangle$ and $K=\langle(1\,3)\rangle$ 
 
 ::: pf-proof
 $(1\,2)(1\,3)(1\,2)=(2\,3)\notin K$, so $(1\,2)\notin N_G(K)$.
-Since $H\cap K=1$, $|HK|=|H||K|/|H\cap K|=4$, and $4\nmid 6=|S_3|$, so by Lagrange's theorem $HK$ is not a subgroup.
+Since $H\cap K=1$, $\cardinality{HK}=\cardinality{H}\cardinality{K}/\cardinality{H\cap K}=4$, and $4\nmid 6=\cardinality{S_3}$, so by Lagrange's theorem $HK$ is not a subgroup.
 :::
 
 :::

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 For $v=(v_1,\ldots,v_n)\in\RR^n$, let
 $$
-\|v\|=\left(\sum_{j=1}^n|v_j|^2\right)^{1/2}.
+\norm{v}=\left(\sum_{j=1}^n\abs{v_j}^2\right)^{1/2}.
 $$
 If $f=(f_1,\ldots,f_n)\colon[a,b]\to\RR^n$ is continuous, define
 $$
@@ -28,7 +28,7 @@ $$
 $$
 Prove that
 $$
-\left\|\int_a^b f(t)\,dt\right\|\le \int_a^b\|f(t)\|\,dt.
+\norm{\int_a^b f(t)\,dt}\le \int_a^b\norm{f(t)}\,dt.
 $$
 :::
 
@@ -48,7 +48,7 @@ If $I=0$, then the desired inequality holds.
 
 ::: pf-proof
 
-The left side is $0$, while the right side is nonnegative because $\|f(t)\|\ge0$.
+The left side is $0$, while the right side is nonnegative because $\norm{f(t)}\ge0$.
 
 :::
 
@@ -58,15 +58,15 @@ The left side is $0$, while the right side is nonnegative because $\|f(t)\|\ge0$
 
 Suppose $I\ne0$ and define
 $$
-u=\frac{I}{\|I\|}.
+u=\frac{I}{\norm{I}}.
 $$
 Then
 $$
-\|u\|=1
+\norm{u}=1
 $$
 and
 $$
-\|I\|=u\mathbin{\cdot} I.
+\norm{I}=u\mathbin{\cdot} I.
 $$
 
 
@@ -74,17 +74,17 @@ $$
 
 By construction,
 $$
-\|u\|=\frac{\|I\|}{\|I\|}=1.
+\norm{u}=\frac{\norm{I}}{\norm{I}}=1.
 $$
 Also
 $$
 u\mathbin{\cdot}I
 =
-\frac{I\mathbin{\cdot}I}{\|I\|}
+\frac{I\mathbin{\cdot}I}{\norm{I}}
 =
-\frac{\|I\|^2}{\|I\|}
+\frac{\norm{I}^2}{\norm{I}}
 =
-\|I\|.
+\norm{I}.
 $$
 
 :::
@@ -132,7 +132,7 @@ $$
 
 For every $t\in[a,b]$,
 $$
-u\mathbin{\cdot}f(t)\le\|f(t)\|.
+u\mathbin{\cdot}f(t)\le\norm{f(t)}.
 $$
 
 
@@ -142,11 +142,11 @@ By the Cauchy--Schwarz inequality,
 $$
 u\mathbin{\cdot}f(t)
 \le
-|u\mathbin{\cdot}f(t)|
+\abs{u\mathbin{\cdot}f(t)}
 \le
-\|u\|\,\|f(t)\|
+\norm{u}\,\norm{f(t)}
 =
-\|f(t)\|,
+\norm{f(t)},
 $$
 using step [](#s1-2){.pf-ref}.
 
@@ -159,9 +159,9 @@ using step [](#s1-2){.pf-ref}.
 One has
 $$
 \boxed{
-\left\|\int_a^b f(t)\,dt\right\|
+\norm{\int_a^b f(t)\,dt}
 \le
-\int_a^b\|f(t)\|\,dt
+\int_a^b\norm{f(t)}\,dt
 }.
 $$
 
@@ -171,13 +171,13 @@ $$
 If $I=0$, apply step [](#s1-1){.pf-ref}. If $I\ne0$, steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give
 $$
 \begin{aligned}
-\|I\|
+\norm{I}
 &=
 u\mathbin{\cdot}I\\
 &=
 \int_a^b u\mathbin{\cdot}f(t)\,dt\\
 &\le
-\int_a^b\|f(t)\|\,dt.
+\int_a^b\norm{f(t)}\,dt.
 \end{aligned}
 $$
 

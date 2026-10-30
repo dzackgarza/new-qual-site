@@ -62,11 +62,11 @@ differentiate $e^{-2\pi i x\xi}$ with respect to $\xi$.
 
 ::: pf-step
 
-The derivative is dominated by $2\pi |x f(x)| \in L^1$.
+The derivative is dominated by $2\pi \abs{x f(x)} \in L^1$.
 
 ::: pf-proof
 
-$|{-2\pi i x f(x) e^{-2\pi i x\xi}}| = 2\pi |x f(x)|$, and $xf \in L^1$ by hypothesis.
+$\abs{{-2\pi i x f(x) e^{-2\pi i x\xi}}} = 2\pi \abs{x f(x)}$, and $xf \in L^1$ by hypothesis.
 
 :::
 
@@ -78,7 +78,7 @@ Hence $\hat f$ is differentiable and $\hat f'(\xi) = \int (-2\pi i x) f(x) e^{-2
 
 ::: pf-proof
 
-differentiation under the integral sign, justified by the dominated convergence theorem (the difference quotients are dominated by $2\pi |xf| \in L^1$).
+differentiation under the integral sign, justified by the dominated convergence theorem (the difference quotients are dominated by $2\pi \abs{xf} \in L^1$).
 
 :::
 

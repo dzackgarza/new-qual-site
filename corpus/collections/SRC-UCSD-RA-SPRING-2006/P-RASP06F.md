@@ -24,20 +24,20 @@ audit:
 ---
 
 ::: {.problem}
-For each $N \in \RR$ define in $\RR^n$ the measures $d\mu_N := (1 + |x|)^N\,dx$ and, for each $1 \leq p < \infty$, the norms
+For each $N \in \RR$ define in $\RR^n$ the measures $d\mu_N := (1 + \norm{x})^N\,dx$ and, for each $1 \leq p < \infty$, the norms
 $$
-\|f\|_{p,N} := \|f\|_{L^p(\RR^n, d\mu_N)} = \left(\int_{\RR^n} |f(x)|^p (1 + |x|)^N\,dx\right)^{1/p}.
+\norm{f}_{p,N} := \norm{f}_{L^p(\RR^n, d\mu_N)} = \left(\int_{\RR^n} \abs{f(x)}^p (1 + \norm{x})^N\,dx\right)^{1/p}.
 $$
 
 (a) Fix $1 \leq r < p < \infty$. Show that for every $t > 0$ there is a constant $C_{t,r,p}$ such that, with
 $$
 N_t := \frac{Np + n(p-r) + t(p-r)}{r}
 $$
-the estimate $\|f\|_{r,N} \leq C_{t,r,p} \|f\|_{p,N_t}$ holds.
+the estimate $\norm{f}_{r,N} \leq C_{t,r,p} \norm{f}_{p,N_t}$ holds.
 
 (b) For fixed $r<p$, show that the constants can be chosen so that $C_{t,r,p} \to 0$ as $t \to \infty$.
 
-Hint: For part (a), observe that $1 = (1 + |x|)^M / (1 + |x|)^M$.
+Hint: For part (a), observe that $1 = (1 + \norm{x})^M / (1 + \norm{x})^M$.
 :::
 
 ::: {.solution}
@@ -59,21 +59,21 @@ $$
 Then
 $$
 \begin{aligned}
-\|f\|_{r,N}^r
-&=\int_{\RR^n}|f(x)|^r(1+|x|)^N\,dx\\
+\norm{f}_{r,N}^r
+&=\int_{\RR^n}\abs{f(x)}^r(1+\norm{x})^N\,dx\\
 &=\int_{\RR^n}
-\Bigl(|f(x)|^r(1+|x|)^{rN_t/p}\Bigr)
-(1+|x|)^{N-rN_t/p}\,dx.
+\Bigl(\abs{f(x)}^r(1+\norm{x})^{rN_t/p}\Bigr)
+(1+\norm{x})^{N-rN_t/p}\,dx.
 \end{aligned}
 $$
 Hölder's inequality with exponents $q$ and $q'$ gives
 $$
 \begin{aligned}
-\|f\|_{r,N}^r
+\norm{f}_{r,N}^r
 &\le
-\left(\int |f|^p(1+|x|)^{N_t}\,dx\right)^{r/p}\\
+\left(\int \abs{f}^p(1+\norm{x})^{N_t}\,dx\right)^{r/p}\\
 &\qquad\cdot
-\left(\int (1+|x|)^{(N-rN_t/p)p/(p-r)}\,dx\right)^{(p-r)/p}.
+\left(\int (1+\norm{x})^{(N-rN_t/p)p/(p-r)}\,dx\right)^{(p-r)/p}.
 \end{aligned}
 $$
 By the definition of $N_t$,
@@ -82,19 +82,19 @@ $$
 $$
 Hence, with
 $$
-I_t:=\int_{\RR^n}(1+|x|)^{-n-t}\,dx<\infty,
+I_t:=\int_{\RR^n}(1+\norm{x})^{-n-t}\,dx<\infty,
 $$
 we obtain
 $$
-\|f\|_{r,N}^r
+\norm{f}_{r,N}^r
 \le
-\|f\|_{p,N_t}^r I_t^{(p-r)/p}.
+\norm{f}_{p,N_t}^r I_t^{(p-r)/p}.
 $$
 Taking $r$th roots gives
 $$
 \boxed{
-\|f\|_{r,N}
-\le C_{t,r,p}\|f\|_{p,N_t},
+\norm{f}_{r,N}
+\le C_{t,r,p}\norm{f}_{p,N_t},
 \qquad
 C_{t,r,p}:=I_t^{1/r-1/p}.}
 $$
@@ -111,11 +111,11 @@ Show that the constant tends to zero for fixed $r<p$.
 
 For $t\ge1$,
 $$
-0\le(1+|x|)^{-n-t}\le(1+|x|)^{-n-1},
+0\le(1+\norm{x})^{-n-t}\le(1+\norm{x})^{-n-1},
 $$
 and the right-hand side is integrable on $\RR^n$. Also
 $$
-(1+|x|)^{-n-t}\longrightarrow0
+(1+\norm{x})^{-n-t}\longrightarrow0
 $$
 for every $x\ne0$. By dominated convergence,
 $$
@@ -148,7 +148,7 @@ N_t\longrightarrow N,
 $$
 and therefore, for $f=\mathbf1_E$,
 $$
-\frac{\|f\|_{r,N}}{\|f\|_{p,N_t}}\longrightarrow1.
+\frac{\norm{f}_{r,N}}{\norm{f}_{p,N_t}}\longrightarrow1.
 $$
 Thus any constant valid uniformly for all $r<p$ must satisfy $C_t\ge1$. Such constants cannot converge to $0$ as $t\to\infty$. The fixed-$(r,p)$ formulation proved above is therefore the valid statement.
 

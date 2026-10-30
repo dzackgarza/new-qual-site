@@ -24,7 +24,7 @@ Compute the second homotopy group of the one-point union $\pi_2(L \vee S^2)$.
 ::: {.pf-step #universal-cover-order-p}
 Since $S^3$ is simply connected, the given $p$-fold covering $S^3\to L$ is the universal cover and
 $$
-|\pi_1(L)|=p.
+\cardinality{\pi_1(L)}=p.
 $$
 
 ::: pf-proof

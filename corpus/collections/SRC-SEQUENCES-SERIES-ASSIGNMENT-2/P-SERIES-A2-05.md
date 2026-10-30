@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-05
 kind: problem
-title: Sequences with $|a_{n+1}-a_n|\le\frac12|a_n-a_{n-1}|$ converge
+title: Sequences with $\abs{a_{n+1}-a_n}\le\frac12\abs{a_n-a_{n-1}}$ converge
 classification:
   areas:
   - real-analysis
@@ -14,7 +14,7 @@ review: draft
 ::: {.problem}
 Let $\{a_n\}_{n=0}^\infty$ be a sequence of real numbers satisfying
 $$
-|a_{n+1}-a_n|\le \frac12|a_n-a_{n-1}|.
+\abs{a_{n+1}-a_n}\le \frac12\abs{a_n-a_{n-1}}.
 $$
 Show that the sequence converges. Hint: show that the sequence is Cauchy.
 :::
@@ -23,7 +23,7 @@ Show that the sequence converges. Hint: show that the sequence is Cauchy.
 
 For $n\ge1$, define
 $$
-d_n=|a_n-a_{n-1}|.
+d_n=\abs{a_n-a_{n-1}}.
 $$
 
 ::: pf
@@ -106,7 +106,7 @@ $$
 
 Hence
 $$
-|a_m-a_n|
+\abs{a_m-a_n}
 \le
 \sum_{k=n+1}^{m}d_k.
 $$
@@ -124,7 +124,7 @@ Apply the triangle inequality to step [](#s1-3){.pf-ref}.
 
 Using step [](#s1-2){.pf-ref},
 $$
-|a_m-a_n|
+\abs{a_m-a_n}
 \le
 d_1
 \sum_{k=n+1}^{m}
@@ -144,7 +144,7 @@ Bound each $d_k$ in step [](#s1-4){.pf-ref} by the geometric estimate from step 
 
 Extending the finite sum to an infinite geometric tail,
 $$
-|a_m-a_n|
+\abs{a_m-a_n}
 \le
 d_1
 \sum_{k=n+1}^{\infty}
@@ -192,7 +192,7 @@ $$
 Therefore, for every $m>n$,
 $$
 \boxed{
-|a_m-a_n|
+\abs{a_m-a_n}
 \le
 d_1\,2^{1-n}}.
 $$
@@ -239,7 +239,7 @@ $$
 one has
 $$
 \boxed{
-|a_m-a_n|<\varepsilon}.
+\abs{a_m-a_n}<\varepsilon}.
 $$
 
 
@@ -247,7 +247,7 @@ $$
 
 By step [](#s1-8){.pf-ref},
 $$
-|a_m-a_n|
+\abs{a_m-a_n}
 \le
 d_1\,2^{1-n}
 \le

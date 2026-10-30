@@ -49,11 +49,11 @@ has exactly one zero in $\abs{z}<1$, counted with multiplicity.
 
 On $\abs{z}=1$,
 $$
-|g(z)|<1=|z|.
+\abs{g(z)}<1=\abs{z}.
 $$
 Thus
 $$
-|h(z)-z|=|g(z)|<|z|.
+\abs{h(z)-z}=\abs{g(z)}<\abs{z}.
 $$
 By Rouché's theorem, $h$ and $z$ have the same number of zeros in the unit disk, counted with
 multiplicity. The function $z$ has exactly one zero there, with multiplicity one. Hence so does
@@ -84,9 +84,9 @@ Step [](#s1-1){.pf-ref} gives exactly one such zero in the disk.
 
 The conclusion of part (a) is false if the boundary hypothesis is weakened to
 $$
-|g(z)|\le1
+\abs{g(z)}\le1
 \qquad
-\text{for }|z|=1.
+\text{for }\abs{z}=1.
 $$
 
 
@@ -98,7 +98,7 @@ g(z)=z.
 $$
 Then $g$ is analytic on the closed disk and satisfies
 $$
-|g(z)|=1
+\abs{g(z)}=1
 $$
 on the unit circle, but every point of the unit disk is a fixed point. Thus uniqueness fails.
 
@@ -130,12 +130,12 @@ $$
 $$
 Moreover,
 $$
-1-|\psi_\alpha(z)|^2
+1-\abs{\psi_\alpha(z)}^2
 =
-\frac{(1-|\alpha|^2)(1-|z|^2)}
-{|1-\bar\alpha z|^2}.
+\frac{(1-\abs{\alpha}^2)(1-\abs{z}^2)}
+{\abs{1-\bar\alpha z}^2}.
 $$
-Hence $|z|<1$ if and only if $|\psi_\alpha(z)|<1$, so $\psi_\alpha$ is a biholomorphic
+Hence $\abs{z}<1$ if and only if $\abs{\psi_\alpha(z)}<1$, so $\psi_\alpha$ is a biholomorphic
 self-map of the disk.
 
 :::
@@ -183,17 +183,17 @@ for all $z\in\DD$.
 
 Schwarz's lemma gives
 $$
-|H(z)|\le|z|
+\abs{H(z)}\le\abs{z}
 $$
 for every $z\in\DD$. At the nonzero fixed point $\gamma$,
 $$
-|H(\gamma)|=|\gamma|,
+\abs{H(\gamma)}=\abs{\gamma},
 $$
 so equality occurs at a nonzero point. The equality case of Schwarz's lemma therefore gives
 $$
 H(z)=\lambda z
 $$
-for some $|\lambda|=1$. Since $H(\gamma)=\gamma$ and $\gamma\ne0$, one has $\lambda=1$.
+for some $\abs{\lambda}=1$. Since $H(\gamma)=\gamma$ and $\gamma\ne0$, one has $\lambda=1$.
 
 :::
 

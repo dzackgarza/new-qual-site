@@ -103,9 +103,9 @@ $$
 $$
 Thus the natural map of point sets
 $$
-|\AA^2_k|
+\underlyingspace{\AA^2_k}
 \longrightarrow
-|\AA^1_k|\times|\AA^1_k|
+\underlyingspace{\AA^1_k}\times\underlyingspace{\AA^1_k}
 $$
 is not injective.  Hence the point set of the scheme product is not the set-theoretic product, regardless of algebraic closedness of $k$.
 

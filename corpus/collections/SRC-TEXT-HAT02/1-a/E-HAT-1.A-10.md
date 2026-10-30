@@ -67,11 +67,11 @@ The complements $V\setminus D_i$ and $V\setminus R_i$ have the same finite cardi
 
 Since $\sigma_i:D_i\to R_i$ is a bijection,
 $$
-|D_i|=|R_i|.
+\cardinality{D_i}=\cardinality{R_i}.
 $$
-Subtracting from the finite number $|V|$ gives
+Subtracting from the finite number $\cardinality{V}$ gives
 $$
-|V\setminus D_i|=|V\setminus R_i|.
+\cardinality{V\setminus D_i}=\cardinality{V\setminus R_i}.
 $$
 
 :::
@@ -128,7 +128,7 @@ Since $\bar\sigma_i$ is a permutation, there is also exactly one incoming $a_i$-
 This is precisely the local covering condition at the unique vertex of the rose.
 On edge interiors the map is a homeomorphism to the corresponding open edge of $X$.
 Hence $Z\to X$ is a covering.
-Its number of sheets is $|V|<\infty$.
+Its number of sheets is $\cardinality{V}<\infty$.
 
 :::
 

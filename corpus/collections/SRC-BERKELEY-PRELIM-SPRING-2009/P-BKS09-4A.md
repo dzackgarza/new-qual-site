@@ -36,7 +36,7 @@ $$
 h \cdot ( g _ { 1 } , \ldots , g _ { n } ) = ( h g _ { 1 } h ^ { - 1 } , \ldots , h g _ { n } h ^ { - 1 } ) ,
 $$
 
-defines an action of $G$ on $X _ { n }$ , and that $| X _ { n + 1 } | = | G | \cdot | X _ { n } / G |$ for all n, where $X _ { n } / G$ denotes the set of G-orbits in $X _ { n }$
+defines an action of $G$ on $X _ { n }$ , and that $\cardinality{ X _ { n + 1 } } = \cardinality{ G } \cdot \cardinality{ X _ { n } / G }$ for all n, where $X _ { n } / G$ denotes the set of G-orbits in $X _ { n }$
 :::
 
 ::: {.solution}

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 1. Suppose that $f , g$ are entire holomorphic functions with $| f ( z ) | \leq | g ( z ) |$ for all $z \in \CC$ . Prove that there is a constant $c \in \CC$ so that $f = c g$ ·
+Question 1. Suppose that $f , g$ are entire holomorphic functions with $\abs{ f ( z ) } \leq \abs{ g ( z ) }$ for all $z \in \CC$ . Prove that there is a constant $c \in \CC$ so that $f = c g$ ·
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ If $g\equiv0$, the conclusion is immediate.
 
 ::: pf-proof
 
-The inequality gives $|f(z)|\le0$ for every $z$, so $f\equiv0$. Then
+The inequality gives $\abs{f(z)}\le0$ for every $z$, so $f\equiv0$. Then
 $f=cg$ for any constant $c$, for example $c=0$.
 
 :::
@@ -62,10 +62,10 @@ $f(z)=(z-a)^k v(z)$ with $v(a)\ne0$; if $f\equiv0$ locally, then by the
 identity theorem $f\equiv0$ globally and the conclusion is again immediate.
 For nearby $z\ne a$, the hypothesis gives
 $$
-|z-a|^k|v(z)|\le |z-a|^m|u(z)|.
+\abs{z-a}^k\abs{v(z)}\le \abs{z-a}^m\abs{u(z)}.
 $$
-If $k<m$, division by $|z-a|^k$ and passage to $z\to a$ would give
-$|v(a)|\le0$, a contradiction. Hence $k\ge m$.
+If $k<m$, division by $\abs{z-a}^k$ and passage to $z\to a$ would give
+$\abs{v(a)}\le0$, a contradiction. Hence $k\ge m$.
 
 Therefore the quotient $h=f/g$, initially holomorphic away from the discrete
 zero set of $g$, has a removable singularity at every zero of $g$. Filling in
@@ -83,7 +83,7 @@ The extended quotient is bounded and hence constant.
 
 Where $g(z)\ne0$, the original inequality gives
 $$
-|h(z)|=\left|\frac{f(z)}{g(z)}\right|\le1.
+\abs{h(z)}=\abs{\frac{f(z)}{g(z)}}\le1.
 $$
 By continuity the same bound holds at the removable points. Thus $h$ is a
 bounded entire function. Liouville's theorem implies that $h\equiv c$ for some

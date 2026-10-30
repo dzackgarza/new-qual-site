@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Let $(f_n)$ and $(g_n)$ converge uniformly on a set $A$.
-Suppose both sequences are uniformly bounded: there is $M$ such that $|f_n(z)|,|g_n(z)|\le M$ for every $z\in A$ and $n$.
+Suppose both sequences are uniformly bounded: there is $M$ such that $\abs{f_n(z)},\abs{g_n(z)}\le M$ for every $z\in A$ and $n$.
 Prove that $(f_ng_n)$ converges uniformly on $A$.
 :::
 
@@ -41,9 +41,9 @@ $$
 The limits satisfy
 $$
 \boxed{
-|f(z)|\le M,
+\abs{f(z)}\le M,
 \qquad
-|g(z)|\le M
+\abs{g(z)}\le M
 }
 $$
 for every
@@ -64,7 +64,7 @@ f_n(z)\to f(z)
 $$
 and
 $$
-|f_n(z)|\le M
+\abs{f_n(z)}\le M
 $$
 for every
 $$
@@ -72,14 +72,14 @@ n,
 $$
 continuity of the absolute value gives
 $$
-|f(z)|
+\abs{f(z)}
 =
-\lim_{n\to\infty}|f_n(z)|
+\lim_{n\to\infty}\abs{f_n(z)}
 \le M.
 $$
 The same argument gives
 $$
-|g(z)|\le M.
+\abs{g(z)}\le M.
 $$
 
 :::
@@ -98,11 +98,11 @@ n,
 $$
 one has
 $$
-|f_n(z)g_n(z)-f(z)g(z)|
+\abs{f_n(z)g_n(z)-f(z)g(z)}
 \le
-M|g_n(z)-g(z)|
+M\abs{g_n(z)-g(z)}
 +
-M|f_n(z)-f(z)|.
+M\abs{f_n(z)-f(z)}.
 $$
 
 
@@ -122,18 +122,18 @@ f_n(g_n-g)
 $$
 Taking absolute values and using
 $$
-|f_n(z)|\le M
+\abs{f_n(z)}\le M
 $$
 together with step [](#s1-1){.pf-ref} gives
 $$
 \begin{aligned}
-|f_n g_n-fg|
+\abs{f_n g_n-fg}
 &\le
-|f_n||g_n-g|
-+|g||f_n-f|\\
+\abs{f_n}\abs{g_n-g}
++\abs{g}\abs{f_n-f}\\
 &\le
-M|g_n-g|
-+M|f_n-f|.
+M\abs{g_n-g}
++M\abs{f_n-f}.
 \end{aligned}
 $$
 
@@ -149,11 +149,11 @@ A
 $$
 gives
 $$
-\|f_ng_n-fg\|_{\infty}
+\norm{f_ng_n-fg}_{\infty}
 \le
-M\|g_n-g\|_{\infty}
+M\norm{g_n-g}_{\infty}
 +
-M\|f_n-f\|_{\infty}.
+M\norm{f_n-f}_{\infty}.
 $$
 
 
@@ -181,11 +181,11 @@ $$
 
 Uniform convergence means precisely that
 $$
-\|f_n-f\|_{\infty}\to0
+\norm{f_n-f}_{\infty}\to0
 $$
 and
 $$
-\|g_n-g\|_{\infty}\to0.
+\norm{g_n-g}_{\infty}\to0.
 $$
 Multiplication by the fixed constant
 $$
@@ -211,7 +211,7 @@ $$
 
 By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
-\|f_ng_n-fg\|_{\infty}
+\norm{f_ng_n-fg}_{\infty}
 \longrightarrow0,
 $$
 which is the definition of uniform convergence.

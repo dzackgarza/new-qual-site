@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-19
 kind: problem
-title: The region $|z-a|<|z-b|$ in $\CC$
+title: The region $\abs{z-a}<\abs{z-b}$ in $\CC$
 classification:
   areas:
   - complex-analysis
@@ -28,15 +28,15 @@ For $a, b \in \CC$, sketch the set of points $z \in \CC$ such that $\abs{\frac{z
 
 Suppose $a\ne b$. For every $z\ne b$,
 $$
-\left|\frac{z-a}{z-b}\right|<1
+\abs{\frac{z-a}{z-b}}<1
 \quad\Longleftrightarrow\quad
-|z-a|<|z-b|.
+\abs{z-a}<\abs{z-b}.
 $$
 
 
 ::: pf-proof
 
-Since $z\ne b$, the positive number $|z-b|$ may be multiplied across the
+Since $z\ne b$, the positive number $\abs{z-b}$ may be multiplied across the
 inequality.
 
 :::
@@ -47,7 +47,7 @@ inequality.
 
 The boundary
 $$
-|z-a|=|z-b|
+\abs{z-a}=\abs{z-b}
 $$
 is the perpendicular bisector of the line segment joining $a$ and $b$.
 
@@ -67,7 +67,7 @@ distinct points is their perpendicular bisector.
 For $a\ne b$, the desired region is the open half-plane bounded by
 that perpendicular bisector and containing $a$:
 $$
-\boxed{\{z\in\CC:|z-a|<|z-b|\}}.
+\boxed{\{z\in\CC:\abs{z-a}<\abs{z-b}\}}.
 $$
 
 
@@ -77,7 +77,7 @@ The perpendicular bisector divides the plane into two open half-planes. On
 one side points are closer to $a$, and on the other they are closer to $b$.
 The point $a$ itself satisfies
 $$
-|a-a|=0<|a-b|,
+\abs{a-a}=0<\abs{a-b},
 $$
 so the desired side is the one containing $a$.
 
@@ -85,7 +85,7 @@ Equivalently, squaring and expanding gives the linear inequality
 $$
 \operatorname{Re}\!\bigl((\overline b-\overline a)z\bigr)
 <
-\frac{|b|^2-|a|^2}{2}.
+\frac{\abs{b}^2-\abs{a}^2}{2}.
 $$
 
 :::
@@ -101,7 +101,7 @@ If $a=b$, the solution set is empty.
 
 For $z\ne a=b$,
 $$
-\left|\frac{z-a}{z-b}\right|=1,
+\abs{\frac{z-a}{z-b}}=1,
 $$
 so the strict inequality fails. At $z=b$ the quotient is undefined.
 

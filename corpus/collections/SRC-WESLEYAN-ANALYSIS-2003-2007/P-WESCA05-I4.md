@@ -28,9 +28,9 @@ Define what it means for a function $f:U\to\CC$ to be uniformly continuous on $U
 
 The function $f:U\to\CC$ is **uniformly continuous on $U$** if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $z,w\in U$,
 $$
-|z-w|<\delta
+\abs{z-w}<\delta
 \quad\Longrightarrow\quad
-|f(z)-f(w)|<\varepsilon.
+\abs{f(z)-f(w)}<\varepsilon.
 $$
 
 

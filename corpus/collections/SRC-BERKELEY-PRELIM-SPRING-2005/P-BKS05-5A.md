@@ -50,7 +50,7 @@ there is $\delta>0$ such that
 $$
 \frac{f(x)-f(a)}{x-a}>0
 $$
-whenever $0<|x-a|<\delta$. Shrinking $\delta$ if necessary, assume
+whenever $0<\abs{x-a}<\delta$. Shrinking $\delta$ if necessary, assume
 $(a-\delta,a+\delta)\subseteq I$. Thus $f(x)<f(a)$ for
 $a-\delta<x<a$, while $f(x)>f(a)$ for
 $a<x<a+\delta$. Hence $a$ is neither a local maximum nor a local
@@ -62,7 +62,7 @@ minimum.
 ::: {.pf-step #derivative-sign-matches}
 Assume $n\geq2$. Then there is $\delta>0$ such that
 $f^{(n-1)}(x)$ has the same sign as $x-a$ whenever
-$0<|x-a|<\delta$.
+$0<\abs{x-a}<\delta$.
 
 ::: pf-proof
 The hypothesis $f^{(n-1)}(a)=0$ and the existence of $f^{(n)}(a)$ give
@@ -82,7 +82,7 @@ $(a-\delta,a+\delta)\subseteq I$.
 :::
 
 ::: {.pf-step #taylor-remainder}
-Assume $n\geq2$ and $0<|x-a|<\delta$. There is a point $c$
+Assume $n\geq2$ and $0<\abs{x-a}<\delta$. There is a point $c$
 strictly between $a$ and $x$ such that
 $$
 f(x)-f(a)
@@ -107,7 +107,7 @@ $x$.
 If $n$ is even, then $f$ has a strict local minimum at $a$.
 
 ::: pf-proof
-Take $0<|x-a|<\delta$ and let $c$ be as in step [](#taylor-remainder){.pf-ref}. If $x>a$, then
+Take $0<\abs{x-a}<\delta$ and let $c$ be as in step [](#taylor-remainder){.pf-ref}. If $x>a$, then
 $c>a$, so step [](#derivative-sign-matches){.pf-ref} gives
 $$
 f^{(n-1)}(c)>0.

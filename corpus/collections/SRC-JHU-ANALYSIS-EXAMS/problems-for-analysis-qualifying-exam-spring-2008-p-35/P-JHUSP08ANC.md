@@ -50,31 +50,31 @@ since $f(2\pi)=f(0)$.
 
 Now $f'\in L^2([0,2\pi])$. By Bessel's inequality,
 $$
-\sum_{n\in\ZZ}|\widehat{f'}(n)|^2<\infty.
+\sum_{n\in\ZZ}\abs{\widehat{f'}(n)}^2<\infty.
 $$
 Hence
 $$
-\sum_{n\ne0}n^2|\widehat f(n)|^2<\infty.
+\sum_{n\ne0}n^2\abs{\widehat f(n)}^2<\infty.
 $$
 Therefore Cauchy--Schwarz yields
 $$
 \begin{aligned}
-\sum_{n\ne0}|\widehat f(n)|
-&=\sum_{n\ne0}\frac1{|n|}\,|n\widehat f(n)|\\
+\sum_{n\ne0}\abs{\widehat f(n)}
+&=\sum_{n\ne0}\frac1{\abs{n}}\,\abs{n\widehat f(n)}\\
 &\le
 \left(\sum_{n\ne0}\frac1{n^2}\right)^{1/2}
-\left(\sum_{n\ne0}n^2|\widehat f(n)|^2\right)^{1/2}
+\left(\sum_{n\ne0}n^2\abs{\widehat f(n)}^2\right)^{1/2}
 <\infty.
 \end{aligned}
 $$
-Adding the single term $|\widehat f(0)|$ gives
+Adding the single term $\abs{\widehat f(0)}$ gives
 $$
-\sum_{n\in\ZZ}|\widehat f(n)|<\infty.
+\sum_{n\in\ZZ}\abs{\widehat f(n)}<\infty.
 $$
-Since $|e^{int}|=1$, for every $t$,
+Since $\abs{e^{int}}=1$, for every $t$,
 $$
-\sum_{n\in\ZZ}|\widehat f(n)e^{int}|
-=\sum_{n\in\ZZ}|\widehat f(n)|<\infty.
+\sum_{n\in\ZZ}\abs{\widehat f(n)e^{int}}
+=\sum_{n\in\ZZ}\abs{\widehat f(n)}<\infty.
 $$
 Thus the Fourier series converges absolutely for every $t$.
 :::

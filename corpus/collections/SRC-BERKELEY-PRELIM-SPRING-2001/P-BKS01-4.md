@@ -73,7 +73,7 @@ the pole is simple,
 $$
 \operatorname{Res}_{z=\zeta}f(z)
 =
-\frac{1}{(z^5+1)'|_{z=\zeta}}
+\frac{1}{(z^5+1)'\evalfrom_{z=\zeta}}
 =
 \frac{1}{5\zeta^4}.
 $$
@@ -135,9 +135,9 @@ R^5-1.
 $$
 Its length is $2\pi R/5$, so the estimation lemma gives
 $$
-\left|
+\abs{
 \int_{\text{arc}}f(z)\,dz
-\right|
+}
 \leq
 \frac{2\pi R/5}{R^5-1}
 \longrightarrow0.

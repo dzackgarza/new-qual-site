@@ -50,7 +50,7 @@ $$
 $$
 such that for every $N$, there is some $n\ge N$ with
 $$
-\boxed{|a_n-a|\ge\varepsilon}.
+\boxed{\abs{a_n-a}\ge\varepsilon}.
 $$
 
 
@@ -72,7 +72,7 @@ $$
 such that
 $$
 \boxed{
-|a_{n_k}-a|\ge\varepsilon}
+\abs{a_{n_k}-a}\ge\varepsilon}
 $$
 for every $k$.
 
@@ -140,7 +140,7 @@ sequence, and every such subsequence is assumed to converge to $a$.
 
 On the other hand,
 $$
-\boxed{|b-a|\ge\varepsilon}.
+\boxed{\abs{b-a}\ge\varepsilon}.
 $$
 
 
@@ -148,12 +148,12 @@ $$
 
 Every term of the convergent subsubsequence satisfies
 $$
-|a_{n_{k_j}}-a|\ge\varepsilon
+\abs{a_{n_{k_j}}-a}\ge\varepsilon
 $$
 by step [](#s1-3){.pf-ref}. Passing to the limit and using continuity of
-$x\mapsto|x-a|$ gives
+$x\mapsto\abs{x-a}$ gives
 $$
-|b-a|\ge\varepsilon.
+\abs{b-a}\ge\varepsilon.
 $$
 
 :::
@@ -169,11 +169,11 @@ Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} contradict one another.
 
 If $b=a$, then
 $$
-|b-a|=0,
+\abs{b-a}=0,
 $$
 but step [](#s1-7){.pf-ref} gives
 $$
-|b-a|\ge\varepsilon>0.
+\abs{b-a}\ge\varepsilon>0.
 $$
 
 :::
@@ -221,7 +221,7 @@ $$
 and a subsequence $(a_{n_k})$ such that
 $$
 \boxed{
-|a_{n_k}-a|\ge\varepsilon}
+\abs{a_{n_k}-a}\ge\varepsilon}
 $$
 for every $k$.
 
@@ -260,7 +260,7 @@ a_{n_{k_j}}\to a,
 $$
 there exists $J$ such that for all $j\ge J$,
 $$
-|a_{n_{k_j}}-a|<\varepsilon.
+\abs{a_{n_{k_j}}-a}<\varepsilon.
 $$
 
 
@@ -277,7 +277,7 @@ $\varepsilon$ from step [](#s1-11){.pf-ref}.
 
 This contradicts
 $$
-|a_{n_{k_j}}-a|\ge\varepsilon
+\abs{a_{n_{k_j}}-a}\ge\varepsilon
 $$
 from step [](#s1-11){.pf-ref}.
 

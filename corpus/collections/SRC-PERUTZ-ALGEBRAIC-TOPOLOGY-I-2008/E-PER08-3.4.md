@@ -37,7 +37,7 @@ in $\operatorname{SL}_2(\ZZ)$.
    $$
    AT^n=\begin{pmatrix}a&b\\c&d\end{pmatrix},
    $$
-   then either $c=0$ or $|d|\le |c|/2$.
+   then either $c=0$ or $\abs{d}\le \abs{c}/2$.
 
 3. Explain how to find $\ell\ge0$ and integers $n_1,\dots,n_\ell$ such that either
    $$
@@ -54,14 +54,14 @@ in $\operatorname{SL}_2(\ZZ)$.
    by $\theta(a)=\pm S$ and $\theta(b)=\pm U$.
    Using the Möbius action on the upper half-plane $\halfplane$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
    $$
-   D=\{z\in\halfplane:0<\operatorname{Re}z<1/2,\ |z-1|>1\}.
+   D=\{z\in\halfplane:0<\operatorname{Re}z<1/2,\ \abs{z-1}>1\}.
    $$
    Deduce that $\theta$ is an isomorphism.
 
 For the last part, the source suggests considering
 $$
 A=\{z\in\halfplane:\operatorname{Re}z>0\},\qquad
-B=\{z\in\halfplane:|z-1|>\max(1,|z|)\}.
+B=\{z\in\halfplane:\abs{z-1}>\max(1,\abs{z})\}.
 $$
 :::
 
@@ -131,13 +131,13 @@ d=\delta-n\gamma.
 $$
 If $\gamma=0$, there is nothing to prove. If $\gamma\neq0$, choose $n\in\ZZ$ nearest to $\delta/\gamma$. Then
 $$
-\left|\frac{\delta}{\gamma}-n\right|\le\frac12,
+\abs{\frac{\delta}{\gamma}-n}\le\frac12,
 $$
 so
 $$
-|d|=|\delta-n\gamma|
-\le\frac{|\gamma|}{2}
-=\frac{|c|}{2}.
+\abs{d}=\abs{\delta-n\gamma}
+\le\frac{\abs{\gamma}}{2}
+=\frac{\abs{c}}{2}.
 $$
 
 :::
@@ -154,7 +154,7 @@ Suppose after some stage the current matrix has lower row $(c,d)$ with $c\neq0$.
 $$
 (c,d')
 \qquad\text{with}\qquad
-|d'|\le\frac{|c|}{2}.
+\abs{d'}\le\frac{\abs{c}}{2}.
 $$
 Now right multiply by $S$. Since
 $$
@@ -162,7 +162,7 @@ $$
 $$
 the new lower-left entry is $-d'$. If it is nonzero, then
 $$
-0<|d'|\le\frac{|c|}{2}<|c|.
+0<\abs{d'}\le\frac{\abs{c}}{2}<\abs{c}.
 $$
 Thus each nonterminal $T^nS$ step strictly decreases the positive integer given by the absolute value of the lower-left entry.
 
@@ -261,11 +261,11 @@ $$
 \mathcal A=\{z\in\halfplane:\operatorname{Re}z>0\},
 $$
 $$
-\mathcal B=\{z\in\halfplane:|z-1|>\max(1,|z|)\}.
+\mathcal B=\{z\in\halfplane:\abs{z-1}>\max(1,\abs{z})\}.
 $$
 Since
 $$
-|z-1|>|z|
+\abs{z-1}>\abs{z}
 \iff
 \operatorname{Re}z<\frac12,
 $$
@@ -286,9 +286,9 @@ The generators satisfy the required ping-pong inclusions.
 
 First suppose $z\notin\mathcal B$. If $\operatorname{Re}z<0$, then
 $$
-|z-1|^2-|z|^2=1-2\operatorname{Re}z>1
+\abs{z-1}^2-\abs{z}^2=1-2\operatorname{Re}z>1
 $$
-and also $|z-1|>1$, which would put $z$ in $\mathcal B$, a contradiction. Hence
+and also $\abs{z-1}>1$, which would put $z$ in $\mathcal B$, a contradiction. Hence
 $$
 \operatorname{Re}z\ge0.
 $$
@@ -296,7 +296,7 @@ Therefore
 $$
 \operatorname{Re}s(z)
 =\operatorname{Re}\left(-\frac1z\right)
-=-\frac{\operatorname{Re}z}{|z|^2}
+=-\frac{\operatorname{Re}z}{\abs{z}^2}
 \le0,
 $$
 so
@@ -309,23 +309,23 @@ $$
 
 Now suppose $z\notin\mathcal A$, so $\operatorname{Re}z\le0$. For $u(z)=1/(1-z)$,
 $$
-|u(z)-1|=\frac{|z|}{|1-z|}.
+\abs{u(z)-1}=\frac{\abs{z}}{\abs{1-z}}.
 $$
 But
 $$
-|1-z|^2-|z|^2=1-2\operatorname{Re}z\ge1,
+\abs{1-z}^2-\abs{z}^2=1-2\operatorname{Re}z\ge1,
 $$
-so $|u(z)-1|<1$. Hence $u(z)\notin\mathcal B$.
+so $\abs{u(z)-1}<1$. Hence $u(z)\notin\mathcal B$.
 
 For $u^2(z)=(z-1)/z$,
 $$
-|u^2(z)-1|=\frac1{|z|},
+\abs{u^2(z)-1}=\frac1{\abs{z}},
 \qquad
-|u^2(z)|=\frac{|z-1|}{|z|}.
+\abs{u^2(z)}=\frac{\abs{z-1}}{\abs{z}}.
 $$
-Since $\operatorname{Im}z>0$ and $\operatorname{Re}z\le0$, we have $|z-1|>1$, so
+Since $\operatorname{Im}z>0$ and $\operatorname{Re}z\le0$, we have $\abs{z-1}>1$, so
 $$
-|u^2(z)-1|<|u^2(z)|.
+\abs{u^2(z)-1}<\abs{u^2(z)}.
 $$
 Thus $u^2(z)\notin\mathcal B$. Consequently
 $$
@@ -343,18 +343,18 @@ s(z)\notin\mathcal A.
 $$
 For $u(z)$, the inequality $\operatorname{Re}z<1/2$ gives
 $$
-|z|<|1-z|,
+\abs{z}<\abs{1-z},
 $$
 so
 $$
-|u(z)-1|=\frac{|z|}{|1-z|}<1;
+\abs{u(z)-1}=\frac{\abs{z}}{\abs{1-z}}<1;
 $$
-hence $u(z)\notin\mathcal B$. Finally, because $|z-1|>1$,
+hence $u(z)\notin\mathcal B$. Finally, because $\abs{z-1}>1$,
 $$
-|u^2(z)-1|=\frac1{|z|}
+\abs{u^2(z)-1}=\frac1{\abs{z}}
 <
-\frac{|z-1|}{|z|}
-=|u^2(z)|,
+\frac{\abs{z-1}}{\abs{z}}
+=\abs{u^2(z)},
 $$
 so $u^2(z)\notin\mathcal B$. Therefore
 $$

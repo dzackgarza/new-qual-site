@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $L/k$ be an algebraic field extension, let $\bar{k}$ be an algebraic closure of $k$, and fix an embedding $\sigma\colon k\embeds \bar{k}$.
-The \dfn{separable degree} $[L:k]_s$ is the cardinality of the set of field embeddings $\sigma'\colon L\to \bar{k}$ that extend $\sigma$, that is, with $\sigma'|_k=\sigma$:
+The \dfn{separable degree} $[L:k]_s$ is the cardinality of the set of field embeddings $\sigma'\colon L\to \bar{k}$ that extend $\sigma$, that is, with $\sigma'\restrict_k=\sigma$:
 
 \begin{tikzcd}
 	L && {\bar{k}} \\

@@ -21,7 +21,7 @@ Show that $A$ is diagonalizable.
 
 Fix any matrix norm on $M_n(\CC)$. By hypothesis there is $C>0$ such that
 $$
-\|A^k\|\le C
+\norm{A^k}\le C
 $$
 for every $k\in\ZZ$.
 
@@ -31,7 +31,7 @@ for every $k\in\ZZ$.
 
 Every eigenvalue $\lambda$ of $A$ satisfies
 $$
-|\lambda|=1.
+\abs{\lambda}=1.
 $$
 
 
@@ -48,21 +48,21 @@ A^kv=\lambda^kv.
 $$
 Hence
 $$
-|\lambda|^k\|v\|
+\abs{\lambda}^k\norm{v}
 =
-\|A^kv\|
+\norm{A^kv}
 \le
-\|A^k\|\,\|v\|
+\norm{A^k}\,\norm{v}
 \le
-C\|v\|.
+C\norm{v}.
 $$
 Thus
 $$
-|\lambda|^k\le C
+\abs{\lambda}^k\le C
 $$
 for all $k\ge1$, which forces
 $$
-|\lambda|\le1.
+\abs{\lambda}\le1.
 $$
 
 Since $A$ is invertible,
@@ -71,9 +71,9 @@ A^{-1}v=\lambda^{-1}v.
 $$
 Applying the same argument to the bounded positive powers of $A^{-1}$ gives
 $$
-|\lambda^{-1}|\le1,
+\abs{\lambda^{-1}}\le1,
 $$
-so $|\lambda|\ge1$. Therefore $|\lambda|=1$.
+so $\abs{\lambda}\ge1$. Therefore $\abs{\lambda}=1$.
 
 :::
 
@@ -188,26 +188,26 @@ The formula in step [](#s1-3){.pf-ref} contradicts boundedness of the powers of 
 
 By step [](#s1-1){.pf-ref},
 $$
-|\lambda|=1.
+\abs{\lambda}=1.
 $$
 Therefore step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
-\|A^kv\|
+\norm{A^kv}
 &=
-\|\lambda^kv+k\lambda^{k-1}w\|\\
+\norm{\lambda^kv+k\lambda^{k-1}w}\\
 &\ge
-k\|w\|-\|v\|.
+k\norm{w}-\norm{v}.
 \end{aligned}
 $$
 Since $w\ne0$, the right side tends to $+\infty$ as $k\to\infty$.
 On the other hand,
 $$
-\|A^kv\|
+\norm{A^kv}
 \le
-\|A^k\|\,\|v\|
+\norm{A^k}\,\norm{v}
 \le
-C\|v\|,
+C\norm{v},
 $$
 which is bounded independently of $k$. This is a contradiction.
 

@@ -84,7 +84,7 @@ $$
 such that for every $i$ there is a ring $A_i$ and an isomorphism of locally ringed spaces
 $$
 \boxed{
-(U_i,\mathcal O_X|_{U_i})\cong
+(U_i,\mathcal O_X\restrict_{U_i})\cong
 (\operatorname{Spec}A_i,\mathcal O_{\operatorname{Spec}A_i}).
 }
 $$

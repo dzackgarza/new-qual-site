@@ -85,13 +85,13 @@ The upper semicircle gives the real-line integral.
 ::: pf-proof
 
 Integrate $F$ over the contour formed by $[-R,R]$ and the counterclockwise
-upper semicircle $\Gamma_R$, with $R>1$. On $|z|=R$,
+upper semicircle $\Gamma_R$, with $R>1$. On $\abs{z}=R$,
 $$
-|F(z)|\le \frac{R^2}{R^6-1},
+\abs{F(z)}\le \frac{R^2}{R^6-1},
 $$
 so
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \le \frac{\pi R^3}{R^6-1}\longrightarrow0.
 $$
 The residue theorem therefore yields, after letting $R\to\infty$,

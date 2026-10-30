@@ -30,7 +30,7 @@ audit:
 ::: {.problem}
 Let $E$ be the set of continuous functions $u:[0,1]\to\RR$ such that
 $$
-|u(x)-u(y)|\le |x-y|
+\abs{u(x)-u(y)}\le \abs{x-y}
 \qquad(0\le x,y\le1),
 $$
 and $u(0)=0$.

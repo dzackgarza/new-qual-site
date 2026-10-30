@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\varphi : \RR \to \RR$ be a $C^1$-function such that $M := \sup_{x \in \RR} [|\varphi(x)| + |\varphi'(x)|] < \infty$.
+Let $\varphi : \RR \to \RR$ be a $C^1$-function such that $M := \sup_{x \in \RR} [\abs{\varphi(x)} + \abs{\varphi'(x)}] < \infty$.
 
 1. If $f \in C_c^1(\RR)$, show
 $$
-\left|\int_{\RR} f(x) \varphi'(\lambda x)\,dx\right| \leq M \cdot \|f'\|_{L^1(\RR, m)} |\lambda|^{-1} \quad \text{for all } \lambda > 0.
+\abs{\int_{\RR} f(x) \varphi'(\lambda x)\,dx} \leq M \cdot \norm{f'}_{L^1(\RR, m)} \abs{\lambda}^{-1} \quad \text{for all } \lambda > 0.
 $$
 
 2. If $f \in L^1(\RR, m)$, show
@@ -63,9 +63,9 @@ $$
 :::
 
 ::: pf-step
-Taking absolute values and using $|\varphi(y)| \le M$:
+Taking absolute values and using $\abs{\varphi(y)} \le M$:
 $$
-\left| \int_{-\infty}^\infty f(x) \varphi'(\lambda x) \, dx \right| \le \frac{1}{\lambda} \int_{-\infty}^\infty |f'(x)| |\varphi(\lambda x)| \, dx \le \frac{M}{\lambda} \int_{-\infty}^\infty |f'(x)| \, dx = M \|f'\|_{L^1(\RR)} \lambda^{-1}.
+\abs{ \int_{-\infty}^\infty f(x) \varphi'(\lambda x) \, dx } \le \frac{1}{\lambda} \int_{-\infty}^\infty \abs{f'(x)} \abs{\varphi(\lambda x)} \, dx \le \frac{M}{\lambda} \int_{-\infty}^\infty \abs{f'(x)} \, dx = M \norm{f'}_{L^1(\RR)} \lambda^{-1}.
 $$
 :::
 
@@ -82,7 +82,7 @@ Part 2: Limit for $f \in L^1(\RR)$ via density of $C_c^1(\RR)$:
 Let $\varepsilon > 0$ be given.
 By the density of $C_c^1(\RR)$ in $L^1(\RR)$, there exists a function $g \in C_c^1(\RR)$ such that:
 $$
-\|f - g\|_{L^1(\RR)} < \frac{\varepsilon}{2M}.
+\norm{f - g}_{L^1(\RR)} < \frac{\varepsilon}{2M}.
 $$
 :::
 
@@ -96,25 +96,25 @@ $$
 ::: pf-step
 Bound the approximation error:
 $$
-\left| \int_\RR (f(x) - g(x)) \varphi'(\lambda x) \, dx \right| \le \sup_{y \in \RR} |\varphi'(y)| \|f - g\|_{L^1} \le M \cdot \frac{\varepsilon}{2M} = \frac{\varepsilon}{2}.
+\abs{ \int_\RR (f(x) - g(x)) \varphi'(\lambda x) \, dx } \le \sup_{y \in \RR} \abs{\varphi'(y)} \norm{f - g}_{L^1} \le M \cdot \frac{\varepsilon}{2M} = \frac{\varepsilon}{2}.
 $$
 :::
 
 ::: pf-step
 By Part 1, for the $C_c^1$ function $g$:
 $$
-\left| \int_\RR g(x) \varphi'(\lambda x) \, dx \right| \le \frac{M \|g'\|_{L^1}}{\lambda}.
+\abs{ \int_\RR g(x) \varphi'(\lambda x) \, dx } \le \frac{M \norm{g'}_{L^1}}{\lambda}.
 $$
-Choosing $\Lambda = \frac{2 M \|g'\|_{L^1}}{\varepsilon}$, for all $\lambda > \Lambda$ we have:
+Choosing $\Lambda = \frac{2 M \norm{g'}_{L^1}}{\varepsilon}$, for all $\lambda > \Lambda$ we have:
 $$
-\left| \int_\RR g(x) \varphi'(\lambda x) \, dx \right| < \frac{\varepsilon}{2}.
+\abs{ \int_\RR g(x) \varphi'(\lambda x) \, dx } < \frac{\varepsilon}{2}.
 $$
 :::
 
 ::: pf-step
 Combining bounds for all $\lambda > \Lambda$:
 $$
-\left| \int_\RR f(x) \varphi'(\lambda x) \, dx \right| \le \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
+\abs{ \int_\RR f(x) \varphi'(\lambda x) \, dx } \le \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
 $$
 Since $\varepsilon > 0$ was arbitrary, $\lim_{\lambda \to \infty} \int_\RR f(x) \varphi'(\lambda x) \, dx = 0$.
 :::

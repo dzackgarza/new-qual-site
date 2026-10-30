@@ -46,12 +46,12 @@ Because $E/F$ is finite separable, its normal closure $N/F$ is finite Galois.
 
 ::: pf-step
 
-The hypothesis implies that $p\mid |G|$.
+The hypothesis implies that $p\mid \cardinality{G}$.
 
 ::: pf-proof
 
 Take the finite extension $N/F$.
-Since $N\ne F$ unless the claim is trivial, the hypothesis gives $p\mid [N:F]=|G|$.
+Since $N\ne F$ unless the claim is trivial, the hypothesis gives $p\mid [N:F]=\cardinality{G}$.
 
 :::
 

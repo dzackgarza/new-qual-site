@@ -44,7 +44,7 @@ There is a homeomorphism $S^3\cong\operatorname{SU}(2)$.
 
 Regard
 $$
-S^3=\{(\alpha,\beta)\in\CC^2:|\alpha|^2+|\beta|^2=1\}.
+S^3=\{(\alpha,\beta)\in\CC^2:\abs{\alpha}^2+\abs{\beta}^2=1\}.
 $$
 Define
 $$
@@ -56,7 +56,7 @@ $$
 $$
 The columns are orthonormal and
 $$
-\det\Theta(\alpha,\beta)=|\alpha|^2+|\beta|^2=1,
+\det\Theta(\alpha,\beta)=\abs{\alpha}^2+\abs{\beta}^2=1,
 $$
 so $\Theta(\alpha,\beta)\in\operatorname{SU}(2)$.
 
@@ -70,7 +70,7 @@ $$
 $$
 Thus $U=\Theta(u_{11},u_{12})$, with
 $$
-|u_{11}|^2+|u_{12}|^2=1.
+\abs{u_{11}}^2+\abs{u_{12}}^2=1.
 $$
 Hence $\Theta$ is bijective. Both $\Theta$ and its inverse, obtained by taking the first row, are continuous, so $\Theta$ is a homeomorphism.
 
@@ -91,18 +91,18 @@ P=\begin{pmatrix}r&z\\\overline z&s\end{pmatrix},
 $$
 If $P$ is positive definite, then $r>0$. The condition $\det P=1$ gives
 $$
-rs-|z|^2=1,
+rs-\abs{z}^2=1,
 $$
 so necessarily
 $$
-s=\frac{1+|z|^2}{r}.
+s=\frac{1+\abs{z}^2}{r}.
 $$
 Therefore every such $P$ is uniquely of the form
 $$
 P(r,z)=
 \begin{pmatrix}
 r&z\\[1mm]
-\overline z&\dfrac{1+|z|^2}{r}
+\overline z&\dfrac{1+\abs{z}^2}{r}
 \end{pmatrix},
 \qquad r>0,\ z\in\CC.
 $$
@@ -147,7 +147,7 @@ H=A^*A.
 $$
 Then $H$ is positive-definite Hermitian and
 $$
-\det H=|\det A|^2=1.
+\det H=\abs{\det A}^2=1.
 $$
 By Cayley--Hamilton,
 $$

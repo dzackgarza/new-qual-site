@@ -72,9 +72,9 @@ h\mapsto\widehat h(n_0)
 $$
 is continuous because
 $$
-|\widehat h(n_0)|
+\abs{\widehat h(n_0)}
 \le
-\frac1{2\pi}\|h\|_1.
+\frac1{2\pi}\norm{h}_1.
 $$
 Therefore the $L^1$-closure of $\mathcal T_f$ is contained in the proper closed subspace
 $$

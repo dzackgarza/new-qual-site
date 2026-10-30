@@ -79,9 +79,9 @@ $$
 
 For every $\varepsilon>0$, there exists $R_\varepsilon>R$ such that
 $$
-\left|
+\abs{
 \gamma_{R'}(t)f(\gamma_{R'}(t))-k
-\right|
+}
 <\varepsilon
 $$
 for every $R'>R_\varepsilon$ and every $t\in[0,\theta]$.
@@ -95,15 +95,15 @@ $$
 $$
 means that for every $\varepsilon>0$ there is $R_\varepsilon$ such that
 $$
-|zf(z)-k|<\varepsilon
+\abs{zf(z)-k}<\varepsilon
 $$
-whenever $z\in D$ and $|z|>R_\varepsilon$.
+whenever $z\in D$ and $\abs{z}>R_\varepsilon$.
 
 For $R'>R_\varepsilon$ and $t\in[0,\theta]$, one has
 $$
 \gamma_{R'}(t)\in D,
 \qquad
-|\gamma_{R'}(t)|=R'>R_\varepsilon,
+\abs{\gamma_{R'}(t)}=R'>R_\varepsilon,
 $$
 so the asserted estimate follows.
 
@@ -115,9 +115,9 @@ so the asserted estimate follows.
 
 For $R'>R_\varepsilon$,
 $$
-\left|
+\abs{
 \int_L f(z)\,dz-i\theta k
-\right|
+}
 \le
 \theta\varepsilon.
 $$
@@ -139,14 +139,14 @@ $$
 Therefore step [](#s1-2){.pf-ref} gives
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_L f(z)\,dz-i\theta k
-\right|
+}
 &\le
 \int_0^\theta
-\left|
+\abs{
 \gamma_{R'}(t)f(\gamma_{R'}(t))-k
-\right|dt\\
+}dt\\
 &\le
 \theta\varepsilon.
 \end{aligned}
@@ -174,9 +174,9 @@ $$
 $$
 Then for all sufficiently large $R'$,
 $$
-\left|
+\abs{
 \int_L f(z)\,dz-i\theta k
-\right|
+}
 <\delta.
 $$
 This is exactly the asserted limit.

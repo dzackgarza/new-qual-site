@@ -27,7 +27,7 @@ audit:
 Suppose $f : X \to [-1,1]$ is a measurable function and $\varphi : [-1,1] \to \RR$ is a bounded Borel measurable function.
 Show:
 
-(a) $\|M_{\varphi \circ f}\|_{B(L^2(\mu))} \leq \|\varphi\|_u := \sup_{|x| \leq 1} |\varphi(x)|$.
+(a) $\norm{M_{\varphi \circ f}}_{B(L^2(\mu))} \leq \norm{\varphi}_u := \sup_{\abs{x} \leq 1} \abs{\varphi(x)}$.
 
 (b) Suppose $\varphi_n : [-1,1] \to \RR$ are bounded Borel measurable functions converging boundedly to $\varphi$.
 Then for all $h \in L^2(\mu)$,
@@ -35,7 +35,7 @@ $$
 L^2(\mu)\text{-}\lim_{n \to \infty} M_{\varphi_n \circ f}\,h = M_{\varphi \circ f}\,h.
 $$
 
-(c) Show by example that it is possible that $\lim_{n \to \infty} \|M_{\varphi_n \circ f}\|_{B(L^2(\mu))} \neq 0$ even though $\varphi_n \to 0$ boundedly.
+(c) Show by example that it is possible that $\lim_{n \to \infty} \norm{M_{\varphi_n \circ f}}_{B(L^2(\mu))} \neq 0$ even though $\varphi_n \to 0$ boundedly.
 :::
 
 ::: {.solution}
@@ -51,14 +51,14 @@ Bound the multiplication operator.
 For $h\in L^2(\mu)$,
 $$
 \begin{aligned}
-\|M_{\varphi\circ f}h\|_2^2
-&=\int_X |\varphi(f(x))|^2|h(x)|^2\,d\mu(x)\\
-&\le \|\varphi\|_u^2\|h\|_2^2.
+\norm{M_{\varphi\circ f}h}_2^2
+&=\int_X \abs{\varphi(f(x))}^2\abs{h(x)}^2\,d\mu(x)\\
+&\le \norm{\varphi}_u^2\norm{h}_2^2.
 \end{aligned}
 $$
 Therefore
 $$
-\boxed{\|M_{\varphi\circ f}\|\le \|\varphi\|_u.}
+\boxed{\norm{M_{\varphi\circ f}}\le \norm{\varphi}_u.}
 $$
 
 :::
@@ -73,18 +73,18 @@ Prove strong convergence under bounded pointwise convergence.
 
 Assume $\varphi_n(t)\to\varphi(t)$ for every $t\in[-1,1]$ and that
 $$
-\sup_n\|\varphi_n\|_u\le C<\infty.
+\sup_n\norm{\varphi_n}_u\le C<\infty.
 $$
-Then $|\varphi|\le C$ as well. For fixed $h\in L^2(\mu)$,
+Then $\abs{\varphi}\le C$ as well. For fixed $h\in L^2(\mu)$,
 $$
 \begin{aligned}
-\|M_{\varphi_n\circ f}h-M_{\varphi\circ f}h\|_2^2
-&=\int_X |\varphi_n(f(x))-\varphi(f(x))|^2|h(x)|^2\,d\mu(x).
+\norm{M_{\varphi_n\circ f}h-M_{\varphi\circ f}h}_2^2
+&=\int_X \abs{\varphi_n(f(x))-\varphi(f(x))}^2\abs{h(x)}^2\,d\mu(x).
 \end{aligned}
 $$
 The integrand converges pointwise to $0$ and is bounded by
 $$
-4C^2|h(x)|^2,
+4C^2\abs{h(x)}^2,
 $$
 which is integrable. By the Dominated Convergence Theorem,
 $$
@@ -110,7 +110,7 @@ $$
 \varphi_n(t)=\mathbf1_{(0,1/n)}(t),
 \qquad -1\le t\le1.
 $$
-Then $|\varphi_n|\le1$ and $\varphi_n(t)\to0$ for every $t$, so $\varphi_n\to0$ boundedly.
+Then $\abs{\varphi_n}\le1$ and $\varphi_n(t)\to0$ for every $t$, so $\varphi_n\to0$ boundedly.
 
 However,
 $$
@@ -120,13 +120,13 @@ Its operator norm is $1$: Step 1 gives the upper bound, while for
 $$
 h_n=\frac{\mathbf1_{(0,1/n)}}{\sqrt{m((0,1/n))}}
 $$
-we have $\|h_n\|_2=1$ and
+we have $\norm{h_n}_2=1$ and
 $$
 M_{\varphi_n\circ f}h_n=h_n.
 $$
 Thus
 $$
-\boxed{\|M_{\varphi_n\circ f}\|=1\quad\text{for every }n,}
+\boxed{\norm{M_{\varphi_n\circ f}}=1\quad\text{for every }n,}
 $$
 even though $\varphi_n\to0$ boundedly.
 

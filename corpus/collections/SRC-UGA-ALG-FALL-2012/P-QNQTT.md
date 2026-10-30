@@ -32,7 +32,7 @@ The subgroup $G\leq S_5$ contains a $5$-cycle.
 
 ::: pf-proof
 
-Because $f$ is irreducible in characteristic zero, its five roots are distinct and its Galois group acts transitively on them. The action is faithful since the roots generate $K$. By orbit–stabilizer, $5$ divides $|G|$, and Cauchy's theorem gives an element of order five. Every such element of $S_5$ is a $5$-cycle.
+Because $f$ is irreducible in characteristic zero, its five roots are distinct and its Galois group acts transitively on them. The action is faithful since the roots generate $K$. By orbit–stabilizer, $5$ divides $\cardinality{G}$, and Cauchy's theorem gives an element of order five. Every such element of $S_5$ is a $5$-cycle.
 
 :::
 

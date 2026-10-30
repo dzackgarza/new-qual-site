@@ -67,7 +67,7 @@ Put $U=X\setminus Y$.
 For a section $s$ of an abelian sheaf, its [[D-UDIVH|support]] is the set of points where its germ is nonzero.
 Consequently
 $$
-\Gamma_Y(X,\mcf)=\ker\bigl(\Gamma(X,\mcf)\longrightarrow\Gamma(U,\mcf|_U)\bigr).
+\Gamma_Y(X,\mcf)=\ker\bigl(\Gamma(X,\mcf)\longrightarrow\Gamma(U,\mcf\restrict_U)\bigr).
 $$
 We use the ordinary cohomological facts that injective abelian sheaves are flasque, flasque sheaves are acyclic for global sections on every open, and acyclic resolutions compute right derived functors [@Har10a, Chapter III, §1, Lemma III.2.4 and Proposition III.2.5].
 Restriction of a flasque sheaf to an open subset is flasque by its definition.
@@ -104,7 +104,7 @@ If the kernel $A$ of a short exact sequence $0\to A\to B\to C\to0$ is flasque, t
 Let $c\in\Gamma_Y(X,C)$.
 Ordinary global sections of the given sequence are exact on the right, because $H^1(X,A)=0$ for the flasque sheaf $A$.
 Choose a global lift $b\in\Gamma(X,B)$ of $c$.
-Its restriction to $U$ maps to zero in $C|_U$ and therefore comes from a section $a_U\in\Gamma(U,A|_U)$.
+Its restriction to $U$ maps to zero in $C\restrict_U$ and therefore comes from a section $a_U\in\Gamma(U,A\restrict_U)$.
 Flasqueness of $A$ extends $a_U$ to $a\in\Gamma(X,A)$.
 Subtract its image from $b$.
 The resulting section still maps to $c$ and restricts to zero on $U$, so it belongs to $\Gamma_Y(X,B)$.
@@ -121,7 +121,7 @@ Every flasque sheaf is acyclic for $\Gamma_Y(X,-)$, proving (c).
 ::: pf-proof
 
 First, the quotient $Q$ in a short exact sequence $0\to A\to B\to Q\to0$ with $A$ and $B$ flasque is flasque.
-For opens $W\subseteq V$, a section of $Q$ on $W$ lifts to $B(W)$, because $A|_W$ is acyclic for ordinary global sections.
+For opens $W\subseteq V$, a section of $Q$ on $W$ lifts to $B(W)$, because $A\restrict_W$ is acyclic for ordinary global sections.
 Extend the lift to $B(V)$ by flasqueness and take its image in $Q(V)$.
 This extends the original section, proving the assertion.
 
@@ -152,7 +152,7 @@ The sequence in (d) is exact for every flasque $\mcf$.
 ::: pf-proof
 
 The kernel of restriction to $U$ is exactly $\Gamma_Y(X,\mcf)$ by the support description preceding step [](#s1){.pf-ref}.
-The restriction map $\Gamma(X,\mcf)\to\Gamma(U,\mcf|_U)$ is surjective by flasqueness.
+The restriction map $\Gamma(X,\mcf)\to\Gamma(U,\mcf\restrict_U)$ is surjective by flasqueness.
 This proves all terms of the short exact sequence in (d).
 
 :::
@@ -169,11 +169,11 @@ Choose an injective resolution $\mcf\to I^\bullet$ on $X$.
 Its terms are flasque, so step [](#s4){.pf-ref} gives a degreewise short exact sequence
 $$
 0\to\Gamma_Y(X,I^\bullet)\to\Gamma(X,I^\bullet)
-\to\Gamma(U,I^\bullet|_U)\to0.
+\to\Gamma(U,I^\bullet\restrict_U)\to0.
 $$
 The first two complexes compute $H_Y^i(X,\mcf)$ and $H^i(X,\mcf)$ by definition.
-Restriction is exact, and $I^\bullet|_U$ has flasque terms.
-It is therefore an acyclic resolution of $\mcf|_U$ for ordinary cohomology, so the third complex computes $H^i(U,\mcf|_U)$.
+Restriction is exact, and $I^\bullet\restrict_U$ has flasque terms.
+It is therefore an acyclic resolution of $\mcf\restrict_U$ for ordinary cohomology, so the third complex computes $H^i(U,\mcf\restrict_U)$.
 The long exact cohomology sequence of these complexes is exactly the sequence in (e), with the zeroth supported term identified by step [](#s1){.pf-ref}.
 The maps arise from inclusion of supported sections, restriction and the connecting maps of the short exact sequence.
 Comparison of resolutions gives their naturality in $\mcf$ [@Har10a, Chapter III, §1].
@@ -190,7 +190,7 @@ Restriction gives the natural excision isomorphisms in (f).
 
 For every sheaf $A$ on $X$, restriction induces an isomorphism
 $$
-\Gamma_Y(X,A)\xrightarrow{\cong}\Gamma_Y(V,A|_V).
+\Gamma_Y(X,A)\xrightarrow{\cong}\Gamma_Y(V,A\restrict_V).
 $$
 Indeed, a section on $V$ supported in $Y$ is zero on $V\setminus Y$.
 It therefore glues with the zero section on $X\setminus Y$ to a unique section on $X$, since $V\cup(X\setminus Y)=X$.
@@ -198,9 +198,9 @@ The glued section has support in $Y$.
 This construction is inverse to restriction and commutes with morphisms of sheaves.
 
 Apply these degree-zero isomorphisms to the injective resolution $I^\bullet$ from step [](#s5){.pf-ref}.
-They identify the complexes $\Gamma_Y(X,I^\bullet)$ and $\Gamma_Y(V,I^\bullet|_V)$.
-The restricted complex resolves $\mcf|_V$ and consists of flasque sheaves.
-By step [](#s3){.pf-ref}, these terms are acyclic for $\Gamma_Y(V,-)$, so its cohomology is $H_Y^i(V,\mcf|_V)$.
+They identify the complexes $\Gamma_Y(X,I^\bullet)$ and $\Gamma_Y(V,I^\bullet\restrict_V)$.
+The restricted complex resolves $\mcf\restrict_V$ and consists of flasque sheaves.
+By step [](#s3){.pf-ref}, these terms are acyclic for $\Gamma_Y(V,-)$, so its cohomology is $H_Y^i(V,\mcf\restrict_V)$.
 The first complex computes $H_Y^i(X,\mcf)$.
 Taking cohomology of the natural isomorphism of complexes proves (f) in every degree, including degree zero.
 

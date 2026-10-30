@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-13. $\displaystyle \int_{0}^{1} \frac {1}{\sqrt {x(1-x)}} ~dx = 2 \sin ^{-1} (\sqrt {x}) |_{0}^{1} = \color {blue} {\pi}$
+13. $\displaystyle \int_{0}^{1} \frac {1}{\sqrt {x(1-x)}} ~dx = 2 \sin ^{-1} (\sqrt {x}) \evalfrom_{0}^{1} = \color {blue} {\pi}$
 
 - **Solution:** $u = \sqrt {x}$, $du = \frac {1}{2 \sqrt {x}} ~dx$
 
@@ -29,7 +29,7 @@ audit:
 
   - **Solution:** $u = \ln (x)$, $du = \frac {1}{x} ~dx$
 
-  - **Solution:** $\int_{e^{\frac {1}{2}}}^{e^{\frac {3}{4}}} \frac {1}{x\sqrt {\ln(x)(1-\ln(x))}} ~dx = \int_{\frac {1}{2}}^{\frac {3}{4}} \frac {1}{\sqrt {x(1-x)}} ~dx = 2 \sin ^{-1} (\sqrt {x}) |_{\frac {1}{2}}^{\frac {3}{4}} = 2(\frac {\pi}{3} - \frac {\pi}{4})$
+  - **Solution:** $\int_{e^{\frac {1}{2}}}^{e^{\frac {3}{4}}} \frac {1}{x\sqrt {\ln(x)(1-\ln(x))}} ~dx = \int_{\frac {1}{2}}^{\frac {3}{4}} \frac {1}{\sqrt {x(1-x)}} ~dx = 2 \sin ^{-1} (\sqrt {x}) \evalfrom_{\frac {1}{2}}^{\frac {3}{4}} = 2(\frac {\pi}{3} - \frac {\pi}{4})$
 
   - **Used 2019**, *Unsolved*
 
@@ -39,7 +39,7 @@ audit:
 
 - **Solution:** $\frac {x}{1-x^2 + \sqrt {1- x^2}} ~dx = \frac {1}{1-x^2 + \sqrt {1- x^2}} \cdot x ~dx = \frac {1}{u^2 + u} \cdot (-u) ~du = - \frac {1}{u + 1} ~du$
 
-15. $\displaystyle \int_{1}^{\infty} \frac {1}{x(x^2+1)} ~dx = \frac {1}{2} \ln (\frac {1}{x^2} + 1) |_{1}^{\infty} = \color {blue} {\frac {1}{2} \ln (2)}$
+15. $\displaystyle \int_{1}^{\infty} \frac {1}{x(x^2+1)} ~dx = \frac {1}{2} \ln (\frac {1}{x^2} + 1) \evalfrom_{1}^{\infty} = \color {blue} {\frac {1}{2} \ln (2)}$
 
 - **Solution:** $u = \frac {1}{x^2} + 1​$, $du = -2 \frac {1}{x^3} ~dx​$
 
@@ -82,7 +82,7 @@ Substitute $u = \sqrt{1-x^2} \implies u^2 = 1-x^2, u \, du = -x \, dx$.
 :::
 
 ::: pf-step
-Transforming the integrand: $$\int \frac{1}{u^2 + u} (-u \, du) = -\int \frac{u}{u(u+1)} \, du = -\int \frac{1}{u+1} \, du = -\ln|u+1| + C.$$
+Transforming the integrand: $$\int \frac{1}{u^2 + u} (-u \, du) = -\int \frac{u}{u(u+1)} \, du = -\int \frac{1}{u+1} \, du = -\ln\abs{u+1} + C.$$
 :::
 
 ::: pf-step
@@ -103,7 +103,7 @@ Partial fractions: $\frac{1}{x(x^2+1)} = \frac{1}{x} - \frac{x}{x^2+1}$.
 :::
 
 ::: pf-step
-Antiderivative: $\ln|x| - \frac{1}{2}\ln(x^2+1) = \frac{1}{2}\ln\left(\frac{x^2}{x^2+1}\right) = -\frac{1}{2}\ln\left(1 + \frac{1}{x^2}\right)$.
+Antiderivative: $\ln\abs{x} - \frac{1}{2}\ln(x^2+1) = \frac{1}{2}\ln\left(\frac{x^2}{x^2+1}\right) = -\frac{1}{2}\ln\left(1 + \frac{1}{x^2}\right)$.
 :::
 
 ::: pf-step

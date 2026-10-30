@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $f$ be a holomorphic function in a neighborhood of the closed unit disc $\overline{\DD}$, and suppose that
 $$
-|f(0)| + |f'(0)| < \inf\{|f(z)| : |z| = 1\}.
+\abs{f(0)} + \abs{f'(0)} < \inf\{\abs{f(z)} : \abs{z} = 1\}.
 $$
 Show that $f$ has at least two zeros (counting multiplicity) in $\DD$.
 
@@ -29,11 +29,11 @@ Set
 $$
 g(z)=f(0)+f'(0)z-f(z).
 $$
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|f(0)+f'(0)z|
-\le |f(0)|+|f'(0)|
-<|f(z)|.
+\abs{f(0)+f'(0)z}
+\le \abs{f(0)}+\abs{f'(0)}
+<\abs{f(z)}.
 $$
 Therefore Rouché's theorem shows that
 $$

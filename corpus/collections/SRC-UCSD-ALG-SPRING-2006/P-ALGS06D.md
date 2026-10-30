@@ -28,7 +28,7 @@ Let $r \geq 2$ be an integer.
 Assume that $G$ contains a non-trivial subgroup $H$ of index $[G:H] = r$.
 Prove the following.
 
-(a) If $G$ is simple, then $G$ is finite and $|G|$ divides $r!$.
+(a) If $G$ is simple, then $G$ is finite and $\cardinality{G}$ divides $r!$.
 
 (b) If $r \in \{2, 3, 4\}$, then $G$ cannot be simple.
 
@@ -59,14 +59,14 @@ If $G$ is simple, the kernel must therefore be trivial.
 
 ::: pf-step
 
-If $G$ is simple, then $G$ is finite and $|G|\mid r!$.
+If $G$ is simple, then $G$ is finite and $\cardinality{G}\mid r!$.
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, $G$ embeds in the finite group $S_r$.
 Hence $G$ is finite, and Lagrange's theorem gives
 $$
-|G|\mid |S_r|=r!.
+\cardinality{G}\mid \cardinality{S_r}=r!.
 $$
 
 :::

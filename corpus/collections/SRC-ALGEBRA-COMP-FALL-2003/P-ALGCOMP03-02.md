@@ -34,7 +34,7 @@ Determine the Sylow subgroups for the nonabelian groups of orders $21$ and $39$.
 
 ::: pf-proof
 
-First let $|G|=21=3\cdot7$. If $n_7$ is the number of Sylow $7$-subgroups, Sylow's theorems give
+First let $\cardinality{G}=21=3\cdot7$. If $n_7$ is the number of Sylow $7$-subgroups, Sylow's theorems give
 $$
 n_7\equiv1\pmod7,
 \qquad
@@ -62,7 +62,7 @@ $$
 $$
 Every Sylow $3$-subgroup is cyclic of order $3$, and the unique Sylow $7$-subgroup is cyclic of order $7$.
 
-Now let $|G|=39=3\cdot13$. Sylow's theorems give
+Now let $\cardinality{G}=39=3\cdot13$. Sylow's theorems give
 $$
 n_{13}\equiv1\pmod{13},
 \qquad
@@ -97,7 +97,7 @@ No group of order $56$ is simple.
 
 ::: pf-proof
 
-Let $|G|=56=2^3\cdot7$. Suppose for contradiction that $G$ is simple.
+Let $\cardinality{G}=56=2^3\cdot7$. Suppose for contradiction that $G$ is simple.
 
 The number $n_7$ of Sylow $7$-subgroups satisfies
 $$
@@ -121,7 +121,7 @@ $$
 $$
 elements of $G$ lie outside this union.
 
-Let $P$ be any Sylow $2$-subgroup. Then $|P|=8$, and every nonidentity element of $P$ has order a power of $2$; in particular, no such element lies in a subgroup of order $7$. Thus the seven nonidentity elements of $P$ must be precisely the seven elements outside the union of the Sylow $7$-subgroups.
+Let $P$ be any Sylow $2$-subgroup. Then $\cardinality{P}=8$, and every nonidentity element of $P$ has order a power of $2$; in particular, no such element lies in a subgroup of order $7$. Thus the seven nonidentity elements of $P$ must be precisely the seven elements outside the union of the Sylow $7$-subgroups.
 
 Consequently every Sylow $2$-subgroup has the same underlying set
 $$

@@ -180,9 +180,9 @@ Let
 $$
 P=
 \begin{pmatrix}
-\vert&\vert\\
+\arrayrule&\arrayrule\\
 v&Bv\\
-\vert&\vert
+\arrayrule&\arrayrule
 \end{pmatrix}.
 $$
 Step [](#s4){.pf-ref} makes $P$ invertible. Step [](#s5){.pf-ref} says

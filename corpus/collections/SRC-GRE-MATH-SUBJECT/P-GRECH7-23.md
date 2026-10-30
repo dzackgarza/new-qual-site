@@ -33,19 +33,19 @@ Given set $A = \{a, b\}$, set $B = \{c, d, e, f\}$, and set $C = \{g, h, i\}$. I
 
 The set $D=P(C)\times B$ has cardinality
 $$
-|D|=32.
+\cardinality{D}=32.
 $$
 
 
 ::: pf-proof
 
-Since $|C|=3$, its power set has
+Since $\cardinality{C}=3$, its power set has
 $$
-|P(C)|=2^3=8
+\cardinality{P(C)}=2^3=8
 $$
-elements. Since $|B|=4$,
+elements. Since $\cardinality{B}=4$,
 $$
-|D|=|P(C)|\,|B|=8\cdot4=32.
+\cardinality{D}=\cardinality{P(C)}\,\cardinality{B}=8\cdot4=32.
 $$
 
 :::
@@ -56,7 +56,7 @@ $$
 
 Therefore
 $$
-|P(D)|=2^{32}.
+\cardinality{P(D)}=2^{32}.
 $$
 
 
@@ -75,19 +75,19 @@ Choice (A) also has cardinality $2^{32}$.
 
 ::: pf-proof
 
-Because $|A|=2$ and $|C|=3$,
+Because $\cardinality{A}=2$ and $\cardinality{C}=3$,
 $$
-|P(A)|=4,
+\cardinality{P(A)}=4,
 \qquad
-|P(C)|=8.
+\cardinality{P(C)}=8.
 $$
 Hence
 $$
-|P(A)\times P(C)|=4\cdot8=32,
+\cardinality{P(A)\times P(C)}=4\cdot8=32,
 $$
 and therefore
 $$
-\bigl|P[P(A)\times P(C)]\bigr|=2^{32}.
+\cardinality{P[P(A)\times P(C)]}=2^{32}.
 $$
 
 :::
@@ -103,17 +103,17 @@ None of choices (B)--(E) has cardinality $2^{32}$.
 
 Their cardinalities are respectively
 $$
-2^{|A\times C|}=2^6,
+2^{\cardinality{A\times C}}=2^6,
 $$
 $$
-|P(A)\times P(C)|=32,
+\cardinality{P(A)\times P(C)}=32,
 $$
 $$
-|P(B)\times P(C)|=16\cdot8=128,
+\cardinality{P(B)\times P(C)}=16\cdot8=128,
 $$
 and
 $$
-2^{|P(A)\times P(B)|}=2^{4\cdot16}=2^{64}.
+2^{\cardinality{P(A)\times P(B)}}=2^{4\cdot16}=2^{64}.
 $$
 
 :::

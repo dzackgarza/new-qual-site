@@ -23,7 +23,7 @@ Show that:
 
 (a) $f*g$ is continuous on $\RR^3$;
 
-(b) $(f*g)(x)\to0$ as $|x|\to\infty$.
+(b) $(f*g)(x)\to0$ as $\norm{x}\to\infty$.
 :::
 
 ::: {.solution}
@@ -43,9 +43,9 @@ $$
 By Hölder's inequality,
 $$
 \boxed{
-|(f*g)(x)|
+\abs{(f*g)(x)}
 \le
-\|f\|_{L^p}\|g\|_{L^q}}
+\norm{f}_{L^p}\norm{g}_{L^q}}
 $$
 for every $x$.
 
@@ -56,11 +56,11 @@ y\mapsto g(x-y)
 $$
 has the same $L^q$-norm as $g$. Thus
 $$
-\int |f(y)g(x-y)|\,dy
+\int \abs{f(y)g(x-y)}\,dy
 \le
-\|f\|_p\|g(x-\cdot)\|_q
+\norm{f}_p\norm{g(x-\cdot)}_q
 =
-\|f\|_p\|g\|_q.
+\norm{f}_p\norm{g}_q.
 $$
 :::
 
@@ -78,7 +78,7 @@ $$
 If $\varphi\in C_c(\RR^3)$, then
 $$
 \boxed{
-\|\tau_h\varphi-\varphi\|_{L^q}\to0
+\norm{\tau_h\varphi-\varphi}_{L^q}\to0
 \qquad(h\to0)}.
 $$
 
@@ -93,14 +93,14 @@ for all sufficiently small $h$.
 
 Because $\varphi$ is uniformly continuous,
 $$
-\|\tau_h\varphi-\varphi\|_\infty\to0.
+\norm{\tau_h\varphi-\varphi}_\infty\to0.
 $$
 Therefore
 $$
-\|\tau_h\varphi-\varphi\|_q^q
+\norm{\tau_h\varphi-\varphi}_q^q
 \le
-|K'|\,
-\|\tau_h\varphi-\varphi\|_\infty^q
+\setmeasure{K'}\,
+\norm{\tau_h\varphi-\varphi}_\infty^q
 \to0.
 $$
 
@@ -113,7 +113,7 @@ $$
 For every $u\in L^q(\RR^3)$,
 $$
 \boxed{
-\|\tau_hu-u\|_{L^q}\to0
+\norm{\tau_hu-u}_{L^q}\to0
 \qquad(h\to0)}.
 $$
 
@@ -126,24 +126,24 @@ $$
 $$
 with
 $$
-\|u-\varphi\|_q<\varepsilon
+\norm{u-\varphi}_q<\varepsilon
 $$
 using density of $C_c$ in $L^q$.
 
 Translations preserve the $L^q$-norm, so
 $$
 \begin{aligned}
-\|\tau_hu-u\|_q
+\norm{\tau_hu-u}_q
 &\le
-\|\tau_h(u-\varphi)\|_q
+\norm{\tau_h(u-\varphi)}_q
 +
-\|\tau_h\varphi-\varphi\|_q
+\norm{\tau_h\varphi-\varphi}_q
 +
-\|\varphi-u\|_q\\
+\norm{\varphi-u}_q\\
 &<
 2\varepsilon
 +
-\|\tau_h\varphi-\varphi\|_q.
+\norm{\tau_h\varphi-\varphi}_q.
 \end{aligned}
 $$
 By step [](#s1-1){.pf-ref}, the final term is $<\varepsilon$ for sufficiently small $h$. Since $\varepsilon$ is arbitrary, the result follows.
@@ -196,11 +196,11 @@ The $T_x$-translations satisfy the same norm-continuity as $\tau_h$.
 
 For $x,h\in\RR^3$,
 $$
-|(f*g)(x+h)-(f*g)(x)|
+\abs{(f*g)(x+h)-(f*g)(x)}
 \le
-\|f\|_p
+\norm{f}_p
 \,
-\|T_{x+h}\widetilde g-T_x\widetilde g\|_q.
+\norm{T_{x+h}\widetilde g-T_x\widetilde g}_q.
 $$
 
 
@@ -217,9 +217,9 @@ Subtract the two integral expressions from step [](#s1-3){.pf-ref} and apply Hö
 The norm on the right satisfies
 $$
 \boxed{
-\|T_{x+h}\widetilde g-T_x\widetilde g\|_q
+\norm{T_{x+h}\widetilde g-T_x\widetilde g}_q
 =
-\|T_h\widetilde g-\widetilde g\|_q}.
+\norm{T_h\widetilde g-\widetilde g}_q}.
 $$
 
 
@@ -227,7 +227,7 @@ $$
 
 Translation invariance of Lebesgue measure gives
 $$
-\|T_xv\|_q=\|v\|_q.
+\norm{T_xv}_q=\norm{v}_q.
 $$
 Also
 $$
@@ -252,11 +252,11 @@ as $h\to0$.
 
 By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
-|(f*g)(x+h)-(f*g)(x)|
+\abs{(f*g)(x+h)-(f*g)(x)}
 \le
-\|f\|_p
+\norm{f}_p
 \,
-\|T_h\widetilde g-\widetilde g\|_q.
+\norm{T_h\widetilde g-\widetilde g}_q.
 $$
 The final norm tends to $0$ by step [](#s1-2){.pf-ref}.
 
@@ -296,16 +296,16 @@ $$
 such that
 $$
 \boxed{
-\|f-f_0\|_p
+\norm{f-f_0}_p
 <
-\frac{\varepsilon}{2(\|g\|_q+1)}}
+\frac{\varepsilon}{2(\norm{g}_q+1)}}
 $$
 and
 $$
 \boxed{
-\|g-g_0\|_q
+\norm{g-g_0}_q
 <
-\frac{\varepsilon}{2(\|f_0\|_p+1)}}.
+\frac{\varepsilon}{2(\norm{f_0}_p+1)}}.
 $$
 
 
@@ -349,7 +349,7 @@ $$
 Therefore
 $$
 \boxed{
-\|f*g-f_0*g_0\|_\infty
+\norm{f*g-f_0*g_0}_\infty
 <
 \varepsilon}.
 $$
@@ -360,11 +360,11 @@ $$
 Using the Hölder convolution bound at the start,
 $$
 \begin{aligned}
-\|f*g-f_0*g_0\|_\infty
+\norm{f*g-f_0*g_0}_\infty
 &\le
-\|f-f_0\|_p\|g\|_q
+\norm{f-f_0}_p\norm{g}_q
 +
-\|f_0\|_p\|g-g_0\|_q\\
+\norm{f_0}_p\norm{g-g_0}_q\\
 &<
 \frac{\varepsilon}{2}
 +
@@ -417,7 +417,7 @@ Hence there exists $R>0$ such that
 $$
 \boxed{
 (f_0*g_0)(x)=0
-\qquad\text{whenever }|x|>R}.
+\qquad\text{whenever }\norm{x}>R}.
 $$
 
 
@@ -431,10 +431,10 @@ A compact subset of $\RR^3$ is bounded. Choose $R$ containing the compact suppor
 
 ::: {.pf-step #s1-13}
 
-For $|x|>R$,
+For $\norm{x}>R$,
 $$
 \boxed{
-|(f*g)(x)|<\varepsilon}.
+\abs{(f*g)(x)}<\varepsilon}.
 $$
 
 
@@ -446,11 +446,11 @@ $$
 $$
 Hence
 $$
-|(f*g)(x)|
+\abs{(f*g)(x)}
 =
-|(f*g)(x)-(f_0*g_0)(x)|
+\abs{(f*g)(x)-(f_0*g_0)(x)}
 \le
-\|f*g-f_0*g_0\|_\infty
+\norm{f*g-f_0*g_0}_\infty
 <
 \varepsilon
 $$
@@ -466,7 +466,7 @@ Therefore
 $$
 \boxed{
 (f*g)(x)\to0
-\qquad(|x|\to\infty)}.
+\qquad(\norm{x}\to\infty)}.
 $$
 
 

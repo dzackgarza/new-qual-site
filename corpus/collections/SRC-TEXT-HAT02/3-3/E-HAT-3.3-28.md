@@ -40,7 +40,7 @@ choose basis.
 
 ::: {.pf-step #s2}
 
-Suppose $V\subset F^n$ is $k$-dimensional and $B|_{V\times V}=0$.
+Suppose $V\subset F^n$ is $k$-dimensional and $B\restrict_{V\times V}=0$.
 
 ::: pf-proof
 
@@ -52,7 +52,7 @@ assume for contradiction $k>n/2$.
 
 ::: {.pf-step #s3}
 
-The map $F^n\to V^*$ given by $x\mapsto B(x,\cdot)|_V$ has kernel $V^\perp$.
+The map $F^n\to V^*$ given by $x\mapsto B(x,\cdot)\restrict_V$ has kernel $V^\perp$.
 
 ::: pf-proof
 
@@ -76,7 +76,7 @@ Step [](#s3){.pf-ref}.
 
 ::: pf-step
 
-$V\cap V^\perp=0$ would imply $B|_{V\times V}$ nondegenerate, but $B|_{V\times V}=0$.
+$V\cap V^\perp=0$ would imply $B\restrict_{V\times V}$ nondegenerate, but $B\restrict_{V\times V}=0$.
 
 ::: pf-proof
 
@@ -100,7 +100,7 @@ dimension formula.
 
 ::: {.pf-step #s7}
 
-$B|_{V\times V}=0$ forces $V\subset V^\perp$, so $k\le n-k$, i.e. $k\le n/2$.
+$B\restrict_{V\times V}=0$ forces $V\subset V^\perp$, so $k\le n-k$, i.e. $k\le n/2$.
 
 ::: pf-proof
 

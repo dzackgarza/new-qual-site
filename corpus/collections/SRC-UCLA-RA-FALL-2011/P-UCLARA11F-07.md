@@ -81,12 +81,12 @@ The residue at $z=i$ is
 $$
 \operatorname{Res}_{z=i}F
 =
-\left.
+\evaluated{
 \frac{d}{dz}
 \left(
 \frac{e^{iz}}{(z+i)^2}
 \right)
-\right|_{z=i}.
+}_{z=i}.
 $$
 
 
@@ -206,7 +206,7 @@ $$
 
 On the upper semicircle,
 $$
-|e^{iz}|
+\abs{e^{iz}}
 =
 e^{-\operatorname{Im}z}
 \le1.
@@ -221,9 +221,9 @@ z=x+iy
 $$
 with $y\ge0$, then
 $$
-|e^{iz}|
+\abs{e^{iz}}
 =
-|e^{ix-y}|
+\abs{e^{ix-y}}
 =
 e^{-y}
 \le1.
@@ -237,7 +237,7 @@ $$
 
 For $R>2$ and $z\in\Gamma_R$,
 $$
-|1+z^2|
+\abs{1+z^2}
 \ge
 R^2-1.
 $$
@@ -247,9 +247,9 @@ $$
 
 By the reverse triangle inequality,
 $$
-|1+z^2|
+\abs{1+z^2}
 \ge
-\bigl||z|^2-1\bigr|
+\abs{\abs{z}^2-1}
 =
 R^2-1.
 $$
@@ -262,9 +262,9 @@ $$
 
 Therefore
 $$
-\left|
+\abs{
 \int_{\Gamma_R}F(z)\,dz
-\right|
+}
 \le
 \frac{\pi R}{(R^2-1)^2}
 \longrightarrow0.

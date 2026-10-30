@@ -21,7 +21,7 @@ Negate each of the following statements in the most informative way possible (i.
 
 a. There is an integer $x$ so that $x + y$ is odd for each integer $y$.
 b. If $x$ is an odd integer, then $xy$ is odd for every integer $y$.
-c. Given $\varepsilon > 0$, there is $N \in \NN$ so that whenever $n > N$, we have $\left| \dfrac{2+n}{1+n} - 1 \right| < \varepsilon$.
+c. Given $\varepsilon > 0$, there is $N \in \NN$ so that whenever $n > N$, we have $\abs{ \dfrac{2+n}{1+n} - 1 } < \varepsilon$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ $$
 $$
 \text{There exists }\varepsilon>0\text{ such that for every }N\in\NN
 \text{ there is }n>N\text{ with }
-\left|\frac{n+2}{n+1}-1\right|\ge\varepsilon.
+\abs{\frac{n+2}{n+1}-1}\ge\varepsilon.
 $$
 These follow by replacing each quantifier by its opposite and negating the final predicate.
 :::

@@ -35,7 +35,7 @@ By the Sylow theorems, $n_5\equiv1\pmod5$ and $n_5\mid18$, so $n_5\in\{1,6\}$. I
 $G$ is isomorphic to a subgroup of $A_6$, of index $4$.
 
 ::: pf-proof
-Conjugation on the six Sylow $5$-subgroups of step [](#n5){.pf-ref} gives a homomorphism $\rho:G\to S_6$. It is nontrivial because the action is transitive on six points, so its kernel is a proper normal subgroup and hence trivial. Identify $G$ with $\rho(G)\le S_6$. The kernel of $\operatorname{sgn}|_G$ is normal of index at most $2$; since $\abs{G}=90$ is not prime, $G$ is not cyclic of order $2$, so simplicity forces the kernel to be $G$. Hence $G\le A_6$, and $[A_6:G]=360/90=4$.
+Conjugation on the six Sylow $5$-subgroups of step [](#n5){.pf-ref} gives a homomorphism $\rho:G\to S_6$. It is nontrivial because the action is transitive on six points, so its kernel is a proper normal subgroup and hence trivial. Identify $G$ with $\rho(G)\le S_6$. The kernel of $\operatorname{sgn}\restrict_G$ is normal of index at most $2$; since $\abs{G}=90$ is not prime, $G$ is not cyclic of order $2$, so simplicity forces the kernel to be $G$. Hence $G\le A_6$, and $[A_6:G]=360/90=4$.
 :::
 
 :::

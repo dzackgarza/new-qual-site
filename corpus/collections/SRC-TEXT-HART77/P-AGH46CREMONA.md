@@ -77,7 +77,7 @@ $$
 $$
 after cancelling the common nonzero scalar $a_0a_1a_2$.
 The same hypothesis shows that $\varphi(T)\subseteq T$.
-Thus $\varphi|_T$ is its own set-theoretic inverse.
+Thus $\varphi\restrict_T$ is its own set-theoretic inverse.
 
 :::
 
@@ -87,7 +87,7 @@ Thus $\varphi|_T$ is its own set-theoretic inverse.
 
 The restriction
 $$
-\varphi|_T:T\xrightarrow{\sim}T
+\varphi\restrict_T:T\xrightarrow{\sim}T
 $$
 is an isomorphism; hence $\varphi$ is birational and is its own inverse as a rational map.
 

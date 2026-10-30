@@ -42,7 +42,7 @@ Then cover $X$ with open affines.
 ::: {.solution}
 The category $\QCoh(X)$ is a full abelian subcategory of $\OO_X$-modules, with kernels and cokernels computed as sheaves [@Har10a, Proposition II.5.7].
 Choose a finite affine open cover $X=\bigcup_{a=1}^r U_a$, where $U_a=\Spec A_a$, and let $j_a:U_a\hookrightarrow X$ be the inclusions.
-For a quasi-coherent $F$, write $F|_{U_a}=\widetilde{M_a}$ and choose an embedding $M_a\hookrightarrow J_a$ into an injective $A_a$-module.
+For a quasi-coherent $F$, write $F\restrict_{U_a}=\widetilde{M_a}$ and choose an embedding $M_a\hookrightarrow J_a$ into an injective $A_a$-module.
 The sheaf used in the affine-cover construction of [@Har10a, Corollary III.3.6] is
 $$
 G=\bigoplus_{a=1}^r j_{a*}\widetilde{J_a}.
@@ -64,10 +64,10 @@ The affine equivalence $\operatorname{Mod}(A_a)\simeq\QCoh(U_a)$ is exact, so th
 For $E\in\QCoh(X)$, restriction and direct image give the adjunction
 $$
 \Hom_X(E,j_{a*}\widetilde{J_a})
-\cong\Hom_{U_a}(E|_{U_a},\widetilde{J_a}).
+\cong\Hom_{U_a}(E\restrict_{U_a},\widetilde{J_a}).
 $$
 Given a monomorphism $E\hookrightarrow E'$ in $\QCoh(X)$, restriction is exact and gives a monomorphism on $U_a$.
-A morphism from $E|_{U_a}$ to $\widetilde{J_a}$ therefore extends to $E'|_{U_a}$ by injectivity on that affine open.
+A morphism from $E\restrict_{U_a}$ to $\widetilde{J_a}$ therefore extends to $E'\restrict_{U_a}$ by injectivity on that affine open.
 Adjunction turns this extension into an extension from $E'$ to $j_{a*}\widetilde{J_a}$.
 This is injectivity in $\QCoh(X)$.
 
@@ -85,7 +85,7 @@ A finite direct sum is also a finite product.
 To extend a map into $G$ across a monomorphism, extend each of its finitely many components using step [](#s1){.pf-ref} and assemble them.
 Hence $G$ is injective.
 
-The local embeddings $F|_{U_a}\hookrightarrow\widetilde{J_a}$ induce maps $F\to j_{a*}\widetilde{J_a}$ by adjunction.
+The local embeddings $F\restrict_{U_a}\hookrightarrow\widetilde{J_a}$ induce maps $F\to j_{a*}\widetilde{J_a}$ by adjunction.
 Combining them gives a morphism $F\to G$.
 At any point $x\in X$, choose $a$ with $x\in U_a$.
 The $a$th component on that stalk is the injective map $F_x\to(\widetilde{J_a})_x$, because restriction of $j_{a*}$ back to $U_a$ is the identity.
@@ -125,7 +125,7 @@ Hence every restriction map on $I$ is surjective, proving (b).
 
 For every $F\in\QCoh(X)$ and $i\ge0$, the derived functor computed in $\QCoh(X)$ agrees naturally with sheaf cohomology:
 $$
-R^i\bigl(\Gamma(X,-)|_{\QCoh(X)}\bigr)(F)\cong H^i(X,F).
+R^i\bigl(\Gamma(X,-)\restrict_{\QCoh(X)}\bigr)(F)\cong H^i(X,F).
 $$
 
 ::: pf-proof

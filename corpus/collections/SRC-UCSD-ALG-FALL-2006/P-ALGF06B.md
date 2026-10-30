@@ -91,10 +91,10 @@ K:=\ker H.
 $$
 Since $H^2=A^*A$,
 $$
-\|Hv\|^2
+\norm{Hv}^2
 =\langle H^2v,v\rangle
 =\langle A^*Av,v\rangle
-=\|Av\|^2,
+=\norm{Av}^2,
 $$
 so
 $$
@@ -105,13 +105,13 @@ On $K^\perp$, define a map first on vectors of the form $Hv$ by
 $$
 U_0(Hv):=Av.
 $$
-The restriction $H\vert_{K^\perp}$ is injective and maps $K^\perp$ onto $K^\perp$, so this defines a linear map
+The restriction $H\restrict_{K^\perp}$ is injective and maps $K^\perp$ onto $K^\perp$, so this defines a linear map
 $$
 U_0:K^\perp\longrightarrow \operatorname{Ran}A.
 $$
 Moreover, for $v\in K^\perp$,
 $$
-\|U_0(Hv)\|=\|Av\|=\|Hv\|,
+\norm{U_0(Hv)}=\norm{Av}=\norm{Hv},
 $$
 so $U_0$ is an isometry.
 

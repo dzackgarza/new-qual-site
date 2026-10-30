@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\CC:|z|<1\}$ and $H=\{w\in\CC:\operatorname{Im}w>0\}$. Let $f:D\to H$ be holomorphic.
+Let $D=\{z\in\CC:\abs{z}<1\}$ and $H=\{w\in\CC:\operatorname{Im}w>0\}$. Let $f:D\to H$ be holomorphic.
 
-Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\left| f ^ { \prime } ( 0 ) \right|$
+Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\abs{ f ^ { \prime } ( 0 ) }$
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ The maximum is $\boxed{6}$.
 
 ::: {.pf-step #s1}
 
-Schwarz's lemma gives $|f'(0)|\leq6$.
+Schwarz's lemma gives $\abs{f'(0)}\leq6$.
 
 ::: pf-proof
 
@@ -49,7 +49,7 @@ $$
 The denominator is nonzero since $f(z)\in H$. For every
 $w\in H$, the identity
 $$
-|w+3i|^2-|w-3i|^2=12\operatorname{Im}w>0
+\abs{w+3i}^2-\abs{w-3i}^2=12\operatorname{Im}w>0
 $$
 shows that the same fractional transformation has modulus
 less than one. Thus $g:D\to D$ is holomorphic and $g(0)=0$.
@@ -57,7 +57,7 @@ Differentiation at zero yields
 $$
 g'(0)=\frac{6i}{(f(0)+3i)^2}f'(0)=\frac{f'(0)}{6i}.
 $$
-Schwarz's lemma gives $|g'(0)|\leq1$, hence the asserted
+Schwarz's lemma gives $\abs{g'(0)}\leq1$, hence the asserted
 bound [@SS03].
 
 :::
@@ -70,14 +70,14 @@ Explicit maps attain the bound.
 
 ::: pf-proof
 
-For $|\lambda|=1$, set
+For $\abs{\lambda}=1$, set
 $$
 f_\lambda(z)=3i\frac{1+\lambda z}{1-\lambda z}.
 $$
 Its denominator has no zero in $D$, and direct computation gives
 $$
 \operatorname{Im}f_\lambda(z)
-=3\frac{1-|z|^2}{|1-\lambda z|^2}>0.
+=3\frac{1-\abs{z}^2}{\abs{1-\lambda z}^2}>0.
 $$
 Hence $f_\lambda:D\to H$ is holomorphic, with
 $f_\lambda(0)=3i$ and $f_\lambda'(0)=6i\lambda$.

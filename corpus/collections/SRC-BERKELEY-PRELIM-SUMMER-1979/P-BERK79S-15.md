@@ -33,7 +33,7 @@ $$
 $$
 converges for every complex number $z$ exterior to the lemniscate
 $$
-|1+z^2|=1.
+\abs{1+z^2}=1.
 $$
 :::
 

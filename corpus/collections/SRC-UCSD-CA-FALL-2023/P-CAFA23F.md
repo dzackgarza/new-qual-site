@@ -24,7 +24,7 @@ For each $N \in \NN$, let $P_N(z) = \sum_{n=0}^{N} \frac{z^n}{n!}$.
 
 (a) Show that the set $Z = \{z \in \CC \mid P_N(z) = 0 \text{ for some } N \in \NN\}$ is **discrete** (has no accumulation points in $\CC$).
 
-(b) Find a constant $c > 0$ such that $P_N(z)$ has no zeros in $\{z \in \CC \mid |z| < cN\}$.
+(b) Find a constant $c > 0$ such that $P_N(z)$ has no zeros in $\{z \in \CC \mid \abs{z} < cN\}$.
 *(You may use the inequality $n! > e^{-n} n^n$.)*
 :::
 
@@ -37,23 +37,23 @@ Choose
 $$
 c=\frac1{4e}.
 $$
-Suppose $|z|\le cN$. Since $|z|/(N+j)\le c$ for every $j\ge1$,
+Suppose $\abs{z}\le cN$. Since $\abs{z}/(N+j)\le c$ for every $j\ge1$,
 $$
-|R_N(z)|
-\le \frac{|z|^{N+1}}{(N+1)!}\frac1{1-c}.
+\abs{R_N(z)}
+\le \frac{\abs{z}^{N+1}}{(N+1)!}\frac1{1-c}.
 $$
 Using $(N+1)!>e^{-(N+1)}(N+1)^{N+1}$ and $N/(N+1)<1$,
 $$
-|R_N(z)|
+\abs{R_N(z)}
 <\frac{(ce)^{N+1}}{1-c}.
 $$
 On the other hand,
 $$
-|e^z|=e^{\Re z}\ge e^{-|z|}\ge e^{-cN}.
+\abs{e^z}=e^{\Re z}\ge e^{-\abs{z}}\ge e^{-cN}.
 $$
 Therefore
 $$
-\frac{|R_N(z)|}{|e^z|}
+\frac{\abs{R_N(z)}}{\abs{e^z}}
 <\frac{ce}{1-c}\bigl(ce^{1+c}\bigr)^N.
 $$
 For $c=1/(4e)$,
@@ -64,10 +64,10 @@ ce^{1+c}=\frac14e^{1/(4e)}<\frac13,
 $$
 so for every $N\ge1$,
 $$
-\frac{|R_N(z)|}{|e^z|}
+\frac{\abs{R_N(z)}}{\abs{e^z}}
 <\frac{1/4}{1-1/(4e)}\cdot\frac13<1.
 $$
-Hence $|R_N(z)|<|e^z|$. If $P_N(z)=0$, then $e^z=R_N(z)$, a contradiction. Thus $P_N$ has no zero in $|z|<cN$.
+Hence $\abs{R_N(z)}<\abs{e^z}$. If $P_N(z)=0$, then $e^z=R_N(z)$, a contradiction. Thus $P_N$ has no zero in $\abs{z}<cN$.
 
 ::: pf
 

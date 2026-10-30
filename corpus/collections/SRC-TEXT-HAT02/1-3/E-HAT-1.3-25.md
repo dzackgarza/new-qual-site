@@ -65,7 +65,7 @@ The action is a covering space action.
 Fix $z=(x,y)\in X$.
 If $x\ne0$, then the first coordinates of $\varphi^n(z)$ are $2^nx$, so only finitely many orbit points lie in any compact horizontal annulus
 $$
-c\le |u|\le C.
+c\le \abs{u}\le C.
 $$
 Choose a small rectangle $U$ about $z$ contained in such an annulus and disjoint from the finitely many distinct points $\varphi^n(z)$ that remain in a slightly larger rectangle.
 Shrinking $U$ if necessary gives
@@ -152,11 +152,11 @@ Suppose their orbit classes had disjoint neighborhoods in the quotient.
 Their inverse images would be disjoint saturated open neighborhoods $U$ of the orbit of $p$ and $V$ of the orbit of $q$.
 Choose $\epsilon>0$ such that
 $$
-(1,s)\in U\quad\text{for }|s|<\epsilon,
+(1,s)\in U\quad\text{for }\abs{s}<\epsilon,
 $$
 and choose $\delta>0$ such that
 $$
-(r,1)\in V\quad\text{for }|r|<\delta.
+(r,1)\in V\quad\text{for }\abs{r}<\delta.
 $$
 For $n$ large enough, set
 $$
@@ -181,7 +181,7 @@ Each open quadrant is invariant under the action, and its quotient is homeomorph
 
 On any quadrant introduce logarithmic coordinates
 $$
-u=\log|x|,\qquad v=\log|y|.
+u=\log\abs{x},\qquad v=\log\abs{y}.
 $$
 Then $\varphi$ becomes translation by
 $$

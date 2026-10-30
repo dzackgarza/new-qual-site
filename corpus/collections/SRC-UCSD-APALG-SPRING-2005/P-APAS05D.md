@@ -24,7 +24,7 @@ Prove that $G$ is cyclic.
 ::: pf
 
 ::: {.pf-step #p-primary-component-cyclic}
-For every prime $p\mid |G|$, the $p$-primary component $G_p$ is cyclic.
+For every prime $p\mid \cardinality{G}$, the $p$-primary component $G_p$ is cyclic.
 
 ::: pf-proof
 By the fundamental theorem of finite abelian groups,
@@ -56,7 +56,7 @@ The group $G$ is cyclic.
 ::: pf-proof
 Again by the primary decomposition theorem,
 $$
-G\cong\prod_{p\mid |G|}G_p.
+G\cong\prod_{p\mid \cardinality{G}}G_p.
 $$
 By step [](#p-primary-component-cyclic){.pf-ref}, each $G_p$ is cyclic of order $p^{a_p}$. The orders of distinct primary components are pairwise coprime.
 If $g_p$ generates $G_p$, then the element
@@ -65,7 +65,7 @@ g=(g_p)_p\in\prod_pG_p
 $$
 has order
 $$
-\operatorname{lcm}_p(p^{a_p})=\prod_p p^{a_p}=|G|.
+\operatorname{lcm}_p(p^{a_p})=\prod_p p^{a_p}=\cardinality{G}.
 $$
 Thus $g$ generates $G$, so $G$ is cyclic.
 :::

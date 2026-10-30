@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\ell^\infty$ denote the vector space of sequences of complex numbers $x = (x_1, x_2, \ldots)$ with $\|x\|_\infty := \sup_n |x_n| < \infty$.
+Let $\ell^\infty$ denote the vector space of sequences of complex numbers $x = (x_1, x_2, \ldots)$ with $\norm{x}_\infty := \sup_n \abs{x_n} < \infty$.
 Define $\phi_n(x) := \frac{1}{n} \sum_{k=1}^{n} x_k$.
 
 Prove that
@@ -46,18 +46,18 @@ Show that the Cesàro functionals lie in the dual unit ball.
 
 For $x\in\ell^\infty$,
 $$
-|\phi_n(x)|
-=\left|\frac1n\sum_{k=1}^nx_k\right|
-\le\frac1n\sum_{k=1}^n|x_k|
-\le\|x\|_\infty.
+\abs{\phi_n(x)}
+=\abs{\frac1n\sum_{k=1}^nx_k}
+\le\frac1n\sum_{k=1}^n\abs{x_k}
+\le\norm{x}_\infty.
 $$
-Thus $\phi_n\in(\ell^\infty)^*$ and $\|\phi_n\|\le1$. On the constant sequence
+Thus $\phi_n\in(\ell^\infty)^*$ and $\norm{\phi_n}\le1$. On the constant sequence
 $$
 \mathbf1=(1,1,\dots),
 $$
 we have $\phi_n(\mathbf1)=1$, so in fact
 $$
-\|\phi_n\|=1.
+\norm{\phi_n}=1.
 $$
 
 :::
@@ -78,7 +78,7 @@ Hence the sequence has a weak* cluster point $\phi$; equivalently, there is a su
 $$
 \phi\in(\ell^\infty)^*,
 \qquad
-\|\phi\|\le1.
+\norm{\phi}\le1.
 $$
 Moreover,
 $$
@@ -86,7 +86,7 @@ $$
 =\lim_\alpha\phi_{n_\alpha}(\mathbf1)
 =1,
 $$
-so $\|\phi\|=1$.
+so $\norm{\phi}=1$.
 
 :::
 

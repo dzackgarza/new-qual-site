@@ -230,7 +230,7 @@ u_3^2
 =
 \frac16.
 $$
-Their sum is $1$, consistent with $\|u\|=1$.
+Their sum is $1$, consistent with $\norm{u}=1$.
 
 :::
 

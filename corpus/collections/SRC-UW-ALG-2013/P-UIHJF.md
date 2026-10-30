@@ -61,7 +61,7 @@ the action is a homomorphism $G \to S_n$, and the stabilizer of a point determin
 There are finitely many homomorphisms $G \to S_n$.
 
 ::: pf-proof
-$G$ is finitely generated, say by $g_1, \dots, g_m$; a homomorphism $G \to S_n$ is determined by the images of the generators, and there are $|S_n|^m = (n!)^m$ choices.
+$G$ is finitely generated, say by $g_1, \dots, g_m$; a homomorphism $G \to S_n$ is determined by the images of the generators, and there are $\cardinality{S_n}^m = (n!)^m$ choices.
 :::
 
 :::

@@ -42,7 +42,7 @@ The only pole inside the contour is the double pole at $z=-1$. Since on our
 branch $(-1)^{1/2}=i$,
 $$
 \operatorname{Res}_{z=-1}F
-=\left.\frac{d}{dz}z^{1/2}\right|_{z=-1}
+=\evaluated{\frac{d}{dz}z^{1/2}}_{z=-1}
 =\frac1{2i}=-\frac i2.
 $$
 Hence the residue theorem gives

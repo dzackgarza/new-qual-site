@@ -39,7 +39,7 @@ Every nontrivial finite $p$-group has a central subgroup of order $p$.
 
 In the class equation, each noncentral conjugacy class has size
 $[G:C_G(x)]$, a power of $p$ greater than $1$ [@DF04]. It follows
-that $p\mid |Z(G)|$. Since the center contains the identity, it
+that $p\mid \cardinality{Z(G)}$. Since the center contains the identity, it
 contains some $z\ne1$.
 By Lagrange's theorem, the order of $z$ is $p^a$ with $a\geq1$.
 Then $c=z^{p^{a-1}}$ is nonidentity and satisfies $c^p=1$, so it
@@ -72,7 +72,7 @@ $$
 $$
 so $N$ is normal in $G$. The map $N\to M$ is surjective with
 kernel $C$. Its fibers are cosets of $C$, each of size $p$;
-hence $|N|=p|M|=p^i$. This constructs the required subgroup for
+hence $\cardinality{N}=p\cardinality{M}=p^i$. This constructs the required subgroup for
 every $i$ and completes the induction.
 
 :::

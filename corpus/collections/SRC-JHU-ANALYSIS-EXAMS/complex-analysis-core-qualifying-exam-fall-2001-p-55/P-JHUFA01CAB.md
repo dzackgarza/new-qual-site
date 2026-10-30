@@ -34,7 +34,7 @@ Problem 2. Fix a real number $\alpha > 1$ . Show that the equation $z - \alpha =
 
 ::: {.pf-step #s1}
 
-Every right-half-plane solution lies in the disk $|z-\alpha|<1$.
+Every right-half-plane solution lies in the disk $\abs{z-\alpha}<1$.
 
 ::: pf-proof
 
@@ -44,14 +44,14 @@ z-\alpha=e^{-z}
 $$
 and $\operatorname{Re}z>0$, then
 $$
-|z-\alpha|=|e^{-z}|=e^{-\operatorname{Re}z}<1.
+\abs{z-\alpha}=\abs{e^{-z}}=e^{-\operatorname{Re}z}<1.
 $$
 Thus every required solution lies in
 $$
-B=\{z:|z-\alpha|<1\}.
+B=\{z:\abs{z-\alpha}<1\}.
 $$
 Conversely, because $\alpha>1$, every point of the closed disk
-$|z-\alpha|\le1$ has
+$\abs{z-\alpha}\le1$ has
 $$
 \operatorname{Re}z\ge\alpha-1>0.
 $$
@@ -71,11 +71,11 @@ Let
 $$
 F(z)=z-\alpha-e^{-z}.
 $$
-On the boundary $|z-\alpha|=1$, one has
+On the boundary $\abs{z-\alpha}=1$, one has
 $\operatorname{Re}z\ge\alpha-1$, and therefore
 $$
-|e^{-z}|=e^{-\operatorname{Re}z}
-\le e^{-(\alpha-1)}<1=|z-\alpha|.
+\abs{e^{-z}}=e^{-\operatorname{Re}z}
+\le e^{-(\alpha-1)}<1=\abs{z-\alpha}.
 $$
 Thus Rouché's theorem shows that $F$ and $z-\alpha$ have the same number of
 zeros in $B$, counted with multiplicity. The latter has exactly one simple

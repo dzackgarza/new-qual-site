@@ -43,7 +43,7 @@ $$
 ::: {.pf-step #restriction-is-covering}
 The restriction
 $$
-q=p|_{p^{-1}(A)}:p^{-1}(A)\longrightarrow A
+q=p\restrict_{p^{-1}(A)}:p^{-1}(A)\longrightarrow A
 $$
 is a covering map, with $q(\tilde a)=a$.
 
@@ -55,7 +55,7 @@ p^{-1}(U)=\bigsqcup_{\lambda}V_\lambda
 $$
 and each restriction
 $$
-p|_{V_\lambda}:V_\lambda\longrightarrow U
+p\restrict_{V_\lambda}:V_\lambda\longrightarrow U
 $$
 is a homeomorphism.
 Then $U\cap A$ is open in the subspace $A$, and

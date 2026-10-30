@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Characterize all entire functions $f$ such that $|f(z)|>0$ for all sufficiently large $|z|$ and
+Characterize all entire functions $f$ such that $\abs{f(z)}>0$ for all sufficiently large $\abs{z}$ and
 $$
-\limsup_{|z|\to\infty}\frac{|\log|f(z)||}{|z|}<\infty.
+\limsup_{\abs{z}\to\infty}\frac{\abs{\log\abs{f(z)}}}{\abs{z}}<\infty.
 $$
 :::
 
@@ -38,9 +38,9 @@ By hypothesis, there is $R_0>0$ such that
 $$
 f(z)\ne0
 \qquad
-(|z|\ge R_0).
+(\abs{z}\ge R_0).
 $$
-Thus every zero lies in the compact disk $|z|\le R_0$. Since $f$ is not identically zero and zeros of a nonzero entire function are isolated, there can be only finitely many zeros in that compact disk.
+Thus every zero lies in the compact disk $\abs{z}\le R_0$. Since $f$ is not identically zero and zeros of a nonzero entire function are isolated, there can be only finitely many zeros in that compact disk.
 
 :::
 
@@ -97,11 +97,11 @@ for an entire function $h$.
 
 There are constants $A>0$ and $R_1>0$ such that
 $$
-|\operatorname{Re}h(z)|
+\abs{\operatorname{Re}h(z)}
 \le
-A|z|
+A\abs{z}
 \qquad
-(|z|\ge R_1).
+(\abs{z}\ge R_1).
 $$
 
 
@@ -109,9 +109,9 @@ $$
 
 The limsup hypothesis gives constants $C>0$ and $R_1$ such that
 $$
-|\log|f(z)||\le C|z|
+\abs{\log\abs{f(z)}}\le C\abs{z}
 \qquad
-(|z|\ge R_1).
+(\abs{z}\ge R_1).
 $$
 Increase $R_1$ if necessary so that $p(z)\ne0$ there. Since
 $$
@@ -119,24 +119,24 @@ f=pe^h,
 $$
 one has
 $$
-\log|f(z)|
+\log\abs{f(z)}
 =
-\log|p(z)|
+\log\abs{p(z)}
 +
 \operatorname{Re}h(z).
 $$
-If $d=\deg p$, then for sufficiently large $|z|$,
+If $d=\deg p$, then for sufficiently large $\abs{z}$,
 $$
-|\log|p(z)||\le C_p+d\log|z|
-\le C_p'|z|
+\abs{\log\abs{p(z)}}\le C_p+d\log\abs{z}
+\le C_p'\abs{z}
 $$
 for suitable constants $C_p,C_p'$. Hence
 $$
-|\operatorname{Re}h(z)|
+\abs{\operatorname{Re}h(z)}
 \le
-|\log|f(z)||+|\log|p(z)||
+\abs{\log\abs{f(z)}}+\abs{\log\abs{p(z)}}
 \le
-(C+C_p')|z|.
+(C+C_p')\abs{z}.
 $$
 Take $A=C+C_p'$.
 
@@ -161,7 +161,7 @@ $$
 
 ::: pf-proof
 
-For fixed $R$, the power series for $h$ converges uniformly on the circle $|z|=R$. Thus
+For fixed $R$, the power series for $h$ converges uniformly on the circle $\abs{z}=R$. Thus
 $$
 \operatorname{Re}h(Re^{i\theta})
 =
@@ -199,17 +199,17 @@ $$
 By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, for sufficiently large $R$,
 $$
 \begin{aligned}
-\pi|c_k|R^k
+\pi\abs{c_k}R^k
 &\le
 \int_0^{2\pi}
-|\operatorname{Re}h(Re^{i\theta})|\,d\theta\\
+\abs{\operatorname{Re}h(Re^{i\theta})}\,d\theta\\
 &\le
 2\pi AR.
 \end{aligned}
 $$
 Therefore
 $$
-|c_k|
+\abs{c_k}
 \le
 2A R^{1-k}.
 $$
@@ -259,26 +259,26 @@ with $p$ a nonzero polynomial and $a,b\in\CC$, satisfies the two hypotheses.
 
 Such a function is entire. Its zeros are exactly the finitely many zeros of $p$, so
 $$
-|f(z)|>0
+\abs{f(z)}>0
 $$
-for all sufficiently large $|z|$.
+for all sufficiently large $\abs{z}$.
 
-For large $|z|$ beyond all zeros of $p$,
+For large $\abs{z}$ beyond all zeros of $p$,
 $$
-\log|f(z)|
+\log\abs{f(z)}
 =
-\log|p(z)|
+\log\abs{p(z)}
 +
 \operatorname{Re}(az+b).
 $$
 Hence
 $$
-|\log|f(z)||\le C_1\log|z|+|a||z|+C_2
+\abs{\log\abs{f(z)}}\le C_1\log\abs{z}+\abs{a}\abs{z}+C_2
 $$
-for suitable constants $C_1,C_2$. Dividing by $|z|$ shows that
+for suitable constants $C_1,C_2$. Dividing by $\abs{z}$ shows that
 $$
-\limsup_{|z|\to\infty}
-\frac{|\log|f(z)||}{|z|}
+\limsup_{\abs{z}\to\infty}
+\frac{\abs{\log\abs{f(z)}}}{\abs{z}}
 <
 \infty.
 $$

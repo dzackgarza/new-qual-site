@@ -28,7 +28,7 @@ r:B^n\to S^{n-1}.
 $$
 
 ::: pf-proof
-Thus $r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}$.
+Thus $r\restrict_{S^{n-1}}=\operatorname{id}_{S^{n-1}}$.
 :::
 
 :::
@@ -37,7 +37,7 @@ Thus $r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}$.
 Choose a regular value $y\in S^{n-1}$ for $r$.
 
 ::: pf-proof
-By Sard's theorem, regular values are dense. Along the boundary, $r$ is the identity, so $r|_{\partial B^n}$ is transverse to every point; after choosing a regular value of the interior map as well, $r$ is transverse to $\{y\}$ as a map of a manifold with boundary.
+By Sard's theorem, regular values are dense. Along the boundary, $r$ is the identity, so $r\restrict_{\partial B^n}$ is transverse to every point; after choosing a regular value of the interior map as well, $r$ is transverse to $\{y\}$ as a map of a manifold with boundary.
 :::
 
 :::
@@ -82,7 +82,7 @@ Let $f:B^n\to B^n$ be a smooth self-map with no fixed point. Then one obtains a 
 ::: pf-proof
 For each $x\in B^n$, the vector $x-f(x)$ is nonzero. Starting at $f(x)$ and following the ray through $x$, there is a unique first point where the ray meets $S^{n-1}$; define this point to be $r_f(x)$. Solving the quadratic equation
 $$
-\bigl|f(x)+t(x-f(x))\bigr|^2=1
+\norm{f(x)+t(x-f(x))}^2=1
 $$
 for the positive root $t\ge1$ shows that $t$ depends smoothly on $x$ because $x-f(x)\ne0$. If $x\in S^{n-1}$, the first boundary point on this ray is $x$ itself, so $r_f(x)=x$. Thus $r_f$ is a smooth retraction.
 :::

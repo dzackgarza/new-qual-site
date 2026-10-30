@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-9A
 kind: problem
-title: $(f(x)-f(y)).(x-y)\le L|x-y|^2$ for all $x,y$ iff $Df(x)v.v\le L|v|^2$ for all $x,v$
+title: $(f(x)-f(y)).(x-y)\le L\norm{x-y}^2$ for all $x,y$ iff $Df(x)v.v\le L\norm{v}^2$ for all $x,v$
 classification:
   areas: [prelim]
   topics: []

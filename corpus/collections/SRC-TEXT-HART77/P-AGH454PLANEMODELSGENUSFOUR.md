@@ -61,7 +61,7 @@ $g^1_3$'s when $Q$ is smooth and one when $Q$ is a rank-$3$ quadric cone.
 For a general point $P\in C$, projection from $P$ is the morphism
 defined by
 $$
-\boxed{|K-P|:X\longrightarrow\PP^2,}
+\boxed{\linearsystem{K-P}:X\longrightarrow\PP^2,}
 $$
 and it is birational onto a plane quintic.
 
@@ -69,7 +69,7 @@ and it is birational onto a plane quintic.
 
 Hyperplanes in $\PP^3$ through $P$ restrict on the canonical curve to
 canonical divisors containing $P$.  Removing that fixed point gives the
-complete linear system $|K-P|$.  Since
+complete linear system $\linearsystem{K-P}$.  Since
 $$
 \deg(K-P)=2g-3=5
 $$
@@ -108,7 +108,7 @@ vanishing sequence at $P$ is
 $$
 0,1,2,3.
 $$
-After subtracting the base point $P$, the system $|K-P|$ has vanishing
+After subtracting the base point $P$, the system $\linearsystem{K-P}$ has vanishing
 sequence
 $$
 0,1,2,
@@ -253,7 +253,7 @@ $$
 The pencil of lines through $N_i$ pulls back, after removing the two fixed
 branches above the node, to a base-point-free pencil
 $$
-|H-A_i|
+\linearsystem{H-A_i}
 $$
 of degree
 $$

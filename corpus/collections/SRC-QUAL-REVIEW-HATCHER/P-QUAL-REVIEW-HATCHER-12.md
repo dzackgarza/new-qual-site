@@ -158,7 +158,7 @@ $$
 
 Use radial projection
 $$
-v\longmapsto\frac{v}{\|v\|}.
+v\longmapsto\frac{v}{\norm{v}}.
 $$
 
 :::

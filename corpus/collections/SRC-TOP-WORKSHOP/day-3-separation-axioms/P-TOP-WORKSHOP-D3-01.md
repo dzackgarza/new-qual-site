@@ -30,9 +30,9 @@ Show that $Y$ is Hausdorff but does not have a countable basis for its topology.
 ::: {.solution}
 Let $q:\RR^2\to Y$ be the quotient map and let $p=q(\{0\}\times\RR)$.
 
-First $Y$ is Hausdorff. If two quotient points are represented by points $x,y\notin\{0\}\times\RR$, choose disjoint Euclidean balls about $x$ and $y$ small enough to avoid the $y$-axis; these balls are saturated, so their images under $q$ are disjoint open neighborhoods. If one point is $p$ and the other is represented by $x=(x_1,x_2)$ with $x_1\ne0$, choose $0<\delta<|x_1|/3$. The saturated strip
+First $Y$ is Hausdorff. If two quotient points are represented by points $x,y\notin\{0\}\times\RR$, choose disjoint Euclidean balls about $x$ and $y$ small enough to avoid the $y$-axis; these balls are saturated, so their images under $q$ are disjoint open neighborhoods. If one point is $p$ and the other is represented by $x=(x_1,x_2)$ with $x_1\ne0$, choose $0<\delta<\abs{x_1}/3$. The saturated strip
 $$
-S=\{(u,v):|u|<\delta\}
+S=\{(u,v):\abs{u}<\delta\}
 $$
 contains the collapsed axis, while a sufficiently small ball about $x$ is disjoint from $S$ and from the axis. Their quotient images separate the two points. Thus $Y$ is Hausdorff.
 

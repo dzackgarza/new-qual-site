@@ -75,7 +75,7 @@ of $a_0,a_1,a_2$.
 
 An automorphism permutes the roots; that action is faithful
 because they generate $K$. Since the Galois group has order
-$[K:\QQ]=6=|S_3|$, its image is all of $S_3$.
+$[K:\QQ]=6=\cardinality{S_3}$, its image is all of $S_3$.
 Explicit generators are
 $$
 r(a)=\zeta a,\quad r(\zeta)=\zeta,

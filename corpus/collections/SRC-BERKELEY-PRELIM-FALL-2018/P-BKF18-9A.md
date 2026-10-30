@@ -31,7 +31,7 @@ $$
 A fixed point of this action is a constant p-tuple $( g , \ldots , g )$ such that $g ^ { p } = e$ . The number of fixed points is not zero, since $( e , \ldots , e )$ is a fixed point, and is congruent modulo $p$ to
 
 $$
-| X | = | G | ^ { p - 1 } ,
+\cardinality{ X } = \cardinality{ G } ^ { p - 1 } ,
 $$
 
 i.e., it is divisible by $p ,$ since $p > 1$ . It follows that there is an element $g \neq e$ with $g ^ { p } = e$

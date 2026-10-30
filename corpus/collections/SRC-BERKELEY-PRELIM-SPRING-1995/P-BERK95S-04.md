@@ -26,7 +26,7 @@ $$
 
 1. Prove that
    $$
-   |G|=(p^{2n}-1)(p^{2n}-p^n).
+   \cardinality{G}=(p^{2n}-1)(p^{2n}-p^n).
    $$
 2. Show that every Sylow-$p$ subgroup of $G$ is isomorphic to the additive group of $F$.
 :::

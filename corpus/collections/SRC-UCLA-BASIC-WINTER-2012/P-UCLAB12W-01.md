@@ -17,8 +17,8 @@ audit:
 Let $\Omega$ be the set of all nonempty closed subsets of $[0,1]$ and define
 $$
 \rho(A,B)=\max\left\{
-\sup_{x\in A}\inf_{y\in B}|x-y|,
-\sup_{y\in B}\inf_{x\in A}|x-y|
+\sup_{x\in A}\inf_{y\in B}\abs{x-y},
+\sup_{y\in B}\inf_{x\in A}\abs{x-y}
 \right\}.
 $$
 Show that $(\Omega,\rho)$ is a metric space.

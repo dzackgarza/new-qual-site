@@ -34,7 +34,7 @@ Show that if for every $z^* \in Z^*$, $z^*(\Phi(x, \cdot)) \in Y^*$ and $z^*(\Ph
 
 (2) there exists $M$ such that
 $$
-\|\Phi(x, y)\| \leq M \|x\| \|y\|.
+\norm{\Phi(x, y)} \leq M \norm{x} \norm{y}.
 $$
 :::
 
@@ -104,29 +104,29 @@ Apply Uniform Boundedness to obtain a joint estimate.
 
 Consider the family
 $$
-\mathcal F:=\{\Phi_x:\|x\|_X\le1\}\subset\mathcal B(Y,Z).
+\mathcal F:=\{\Phi_x:\norm{x}_X\le1\}\subset\mathcal B(Y,Z).
 $$
 Fix $y\in Y$. Since $\Phi_y:X\to Z$ is bounded,
 $$
-\sup_{\|x\|\le1}\|\Phi_x(y)\|_Z
-=\sup_{\|x\|\le1}\|\Phi_y(x)\|_Z
-\le\|\Phi_y\|<\infty.
+\sup_{\norm{x}\le1}\norm{\Phi_x(y)}_Z
+=\sup_{\norm{x}\le1}\norm{\Phi_y(x)}_Z
+\le\norm{\Phi_y}<\infty.
 $$
 Thus the family $\mathcal F$ is pointwise bounded on the Banach space $Y$. By the Uniform Boundedness Principle,
 $$
-M:=\sup_{\|x\|\le1}\|\Phi_x\|_{Y\to Z}<\infty.
+M:=\sup_{\norm{x}\le1}\norm{\Phi_x}_{Y\to Z}<\infty.
 $$
 Therefore, if $x\ne0$,
 $$
 \begin{aligned}
-\|\Phi(x,y)\|_Z
-&=\|x\|_X\left\|\Phi\!\left(\frac{x}{\|x\|_X},y\right)\right\|_Z\\
-&\le M\|x\|_X\|y\|_Y.
+\norm{\Phi(x,y)}_Z
+&=\norm{x}_X\norm{\Phi\!\left(\frac{x}{\norm{x}_X},y\right)}_Z\\
+&\le M\norm{x}_X\norm{y}_Y.
 \end{aligned}
 $$
 The same inequality is trivial when $x=0$. Hence
 $$
-\boxed{\|\Phi(x,y)\|_Z\le M\|x\|_X\|y\|_Y.}
+\boxed{\norm{\Phi(x,y)}_Z\le M\norm{x}_X\norm{y}_Y.}
 $$
 
 :::

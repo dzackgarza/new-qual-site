@@ -42,11 +42,11 @@ For every closed $C\subseteq Y$, the sets $A\cap f^{-1}(C)$ and $B\cap f^{-1}(C)
 
 Since the restrictions are continuous,
 $$
-(f|_A)^{-1}(C)=A\cap f^{-1}(C)
+(f\restrict_A)^{-1}(C)=A\cap f^{-1}(C)
 $$
 is closed in the subspace $A$, and
 $$
-(f|_B)^{-1}(C)=B\cap f^{-1}(C)
+(f\restrict_B)^{-1}(C)=B\cap f^{-1}(C)
 $$
 is closed in the subspace $B$.
 

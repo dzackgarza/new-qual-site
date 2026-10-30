@@ -49,10 +49,10 @@ $$
 is surjective at $x$.
 
 Its cokernel $Q_x$ is locally of finite type because it is a quotient of the locally finite-type sheaf $\mcf$.
-Choose an open neighborhood $V$ of $x$ and finitely many sections generating $Q_x|_V$.
+Choose an open neighborhood $V$ of $x$ and finitely many sections generating $Q_x\restrict_V$.
 Their germs at $x$ are all zero, since $(Q_x)_x=0$.
 Each section therefore vanishes on a neighborhood of $x$; intersect these finitely many neighborhoods to obtain an open $U_x\subseteq V$ on which all the generators vanish.
-It follows that $Q_x|_{U_x}=0$.
+It follows that $Q_x\restrict_{U_x}=0$.
 The sections indexed by $\Lambda_x$ thus generate $\mcf$ throughout $U_x$.
 
 :::

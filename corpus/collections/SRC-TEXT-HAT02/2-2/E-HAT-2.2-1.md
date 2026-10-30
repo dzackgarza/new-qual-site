@@ -78,7 +78,7 @@ Any fixed-point-free map $G:S^n\to S^n$ is homotopic to the antipodal map.
 
 For $x\in S^n$, the vectors $G(x)$ and $x$ are never equal. Hence
 $$
-H_t(x)=\frac{(1-t)G(x)-t x}{\|(1-t)G(x)-t x\|}
+H_t(x)=\frac{(1-t)G(x)-t x}{\norm{(1-t)G(x)-t x}}
 $$
 is defined for all $t\in[0,1]$: the numerator could vanish only if $G(x)$ were a positive scalar multiple of $x$, which for unit vectors would force $G(x)=x$. At $t=0$ this is $G$, and at $t=1$ it is the antipodal map $x\mapsto -x$.
 

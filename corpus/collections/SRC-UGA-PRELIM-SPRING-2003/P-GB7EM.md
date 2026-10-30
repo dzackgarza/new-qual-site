@@ -39,9 +39,9 @@ Part (a): Definition of differentiability:
 
 A function $f: \RR^n \to \RR$ is differentiable at a point $p \in \RR^n$ if there exists a linear transformation $L: \RR^n \to \RR$ (or equivalently a gradient vector $\nabla f(p) \in \RR^n$ such that $L(h) = \langle \nabla f(p), h \rangle$) satisfying:
 $$
-\lim_{h \to 0} \frac{|f(p + h) - f(p) - L(h)|}{\|h\|} = 0.
+\lim_{h \to 0} \frac{\abs{f(p + h) - f(p) - L(h)}}{\norm{h}} = 0.
 $$
-Equivalently, $f(p + h) = f(p) + L(h) + o(\|h\|)$ as $\|h\| \to 0$.
+Equivalently, $f(p + h) = f(p) + L(h) + o(\norm{h})$ as $\norm{h} \to 0$.
 
 ::: pf-proof
 
@@ -67,7 +67,7 @@ If a function $f$ is differentiable at $p$, then $f$ is continuous at $p$.
 
 ::: pf-proof
 
-$|f(p+h) - f(p)| \le |L(h)| + o(\|h\|) \le \|L\| \|h\| + o(\|h\|) \to 0$ as $h \to 0$.
+$\abs{f(p+h) - f(p)} \le \abs{L(h)} + o(\norm{h}) \le \norm{L} \norm{h} + o(\norm{h}) \to 0$ as $h \to 0$.
 
 :::
 
@@ -123,7 +123,7 @@ contrapositive of differentiability implies continuity.
 ::: pf-step
 
 Conclusion:
-$f$ is defined to be differentiable if its linear approximation error is $o(\|h\|)$, and $f(x, y) = \frac{xy}{x^2+y^2}$ is not differentiable at $(0, 0)$ due to discontinuity. Q.E.D.
+$f$ is defined to be differentiable if its linear approximation error is $o(\norm{h})$, and $f(x, y) = \frac{xy}{x^2+y^2}$ is not differentiable at $(0, 0)$ due to discontinuity. Q.E.D.
 
 ::: pf-proof
 

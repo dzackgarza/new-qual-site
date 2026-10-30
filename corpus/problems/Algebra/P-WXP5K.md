@@ -31,7 +31,7 @@ for some $0\le r\le n$.
 
 One can see this inductively without invoking the full structure theorem. Project $H$ to the first coordinate. Its image is $d\ZZ$ for some $d\ge0$. The kernel lies in $\ZZ^{n-1}$ and is free by induction. If $d>0$, choose $h\in H$ projecting to $d$; then
 $$
-H=\ker(\pi|_H)\oplus\ZZ h.
+H=\ker(\pi\restrict_H)\oplus\ZZ h.
 $$
 Thus every subgroup of a finitely generated free abelian group is again finitely generated free abelian.
 

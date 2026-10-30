@@ -28,9 +28,9 @@ $$
 (b) Let $K\subset\RR^d$ be compact.
 For $\mu\in P(K)$ define
 $$
-E(\mu)=\int_K\int_K\frac{1}{|x-y|}\,d\mu(x)\,d\mu(y).
+E(\mu)=\int_K\int_K\frac{1}{\norm{x-y}}\,d\mu(x)\,d\mu(y).
 $$
-Here $|z|$ denotes the Euclidean norm of $z\in\RR^d$.
+Here $\norm{z}$ denotes the Euclidean norm of $z\in\RR^d$.
 Show that $E:P(K)\to[0,\infty]$ attains its minimum on $P(K)$ (which could possibly be $\infty$).
 :::
 
@@ -139,7 +139,7 @@ m d(x,x')+g_m(x').
 $$
 Interchanging $x,x'$ yields
 $$
-|g_m(x)-g_m(x')|
+\abs{g_m(x)-g_m(x')}
 \le
 m d(x,x').
 $$
@@ -453,7 +453,7 @@ $$
 $$
 on the diagonal, then
 $$
-|x_n-y_n|\to0,
+\norm{x_n-y_n}\to0,
 $$
 so
 $$

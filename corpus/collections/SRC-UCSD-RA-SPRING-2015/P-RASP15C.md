@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $X$ be a locally compact Hausdorff space.
 Let $Y$ be a closed subspace and $\mu$ be a Radon measure on $Y$.
-Define a linear functional on $C_c(X)$ by $I(f) = \int_Y (f|_Y)\,d\mu$.
+Define a linear functional on $C_c(X)$ by $I(f) = \int_Y (f\restrict_Y)\,d\mu$.
 
 Prove that: (i) $I(f)$ is a positive linear functional; (ii) The functional $I(f) = \int_X f\,d\nu$ induces a Radon measure $\nu$ (via the Riesz-Markov theorem) which satisfies $\nu(E) = \mu(E \cap Y)$.
 
@@ -43,15 +43,15 @@ The functional $I$ is well defined, linear, and positive.
 
 ::: pf-proof
 
-If $f\in C_c(X)$, then $f|_Y\in C_c(Y)$ because
+If $f\in C_c(X)$, then $f\restrict_Y\in C_c(Y)$ because
 $$
-\operatorname{supp}(f|_Y)\subseteq \operatorname{supp}(f)\cap Y,
+\operatorname{supp}(f\restrict_Y)\subseteq \operatorname{supp}(f)\cap Y,
 $$
 and the latter is compact: $Y$ is closed and $\operatorname{supp}(f)$ is compact. Thus
 $$
-I(f)=\int_Y f|_Y\,d\mu
+I(f)=\int_Y f\restrict_Y\,d\mu
 $$
-is well defined. Linearity is immediate from linearity of the integral. If $f\ge0$ on $X$, then $f|_Y\ge0$, hence
+is well defined. Linearity is immediate from linearity of the integral. If $f\ge0$ on $X$, then $f\restrict_Y\ge0$, hence
 $$
 I(f)\ge0.
 $$
@@ -123,14 +123,14 @@ Show that $I$ is integration against $\nu$.
 
 For every nonnegative Borel measurable function $h$ on $X$, the definition of $\nu$ gives
 $$
-\int_X h\,d\nu=\int_Y h|_Y\,d\mu;
+\int_X h\,d\nu=\int_Y h\restrict_Y\,d\mu;
 $$
 this follows first for indicators, then for simple functions, and finally by monotone convergence.
 
 Applying this identity to the positive and negative parts of $f\in C_c(X)$ yields
 $$
 \int_X f\,d\nu
-=\int_Y f|_Y\,d\mu
+=\int_Y f\restrict_Y\,d\mu
 =I(f).
 $$
 

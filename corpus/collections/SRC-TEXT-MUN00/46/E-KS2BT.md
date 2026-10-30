@@ -34,13 +34,13 @@ $$
 $$
 Define
 $$
-\rho(f,g)=\sum_{i=1}^\infty2^{-i}\rho_i(f|_{A_i},g|_{A_i}).
+\rho(f,g)=\sum_{i=1}^\infty2^{-i}\rho_i(f\restrict_{A_i},g\restrict_{A_i}).
 $$
 This induces exactly compact convergence: every compact $C\subset X$ is covered by finitely many $\operatorname{Int}A_i$, hence lies in some $A_N$, while each $A_i$ itself is compact.
 
 The restriction map
 $$
-R:Y^X\to\prod_iY_i,\qquad f\mapsto(f|_{A_i})
+R:Y^X\to\prod_iY_i,\qquad f\mapsto(f\restrict_{A_i})
 $$
-identifies $Y^X$ with the closed compatibility subspace $u_{i+1}|_{A_i}=u_i$. If $Y$ is complete, each uniform function space $Y_i$ is complete (pointwise limits of uniform Cauchy families exist and convergence is uniform), so the metric $\sum_i 2^{-i}\rho_i$ on $\prod_iY_i$ is complete, and $R$ is an isometry from $(Y^X,\rho)$ onto the compatibility subspace. A closed subspace is complete, so $(Y^X,\rho)$ is complete.
+identifies $Y^X$ with the closed compatibility subspace $u_{i+1}\restrict_{A_i}=u_i$. If $Y$ is complete, each uniform function space $Y_i$ is complete (pointwise limits of uniform Cauchy families exist and convergence is uniform), so the metric $\sum_i 2^{-i}\rho_i$ on $\prod_iY_i$ is complete, and $R$ is an isometry from $(Y^X,\rho)$ onto the compatibility subspace. A closed subspace is complete, so $(Y^X,\rho)$ is complete.
 :::

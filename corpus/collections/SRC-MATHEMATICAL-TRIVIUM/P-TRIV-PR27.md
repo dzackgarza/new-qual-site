@@ -30,7 +30,7 @@ Check if it should be dropped with 5% significance level.
 
 Assume the eight field yields are an independent sample from a normal population and test the single suspected high observation $35.9$ using Grubbs' statistic
 $$
-G=\frac{|x_{\mathrm{sus}}-\bar x|}{s},
+G=\frac{\abs{x_{\mathrm{sus}}-\bar x}}{s},
 $$
 where $s$ is the sample standard deviation.
 

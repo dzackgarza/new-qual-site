@@ -18,13 +18,13 @@ Prove that $$u(i) \leq 1 + \frac{2}{3}\sqrt{2}.$$
 :::
 
 ::: {.solution}
-Apply Harnack's inequality in the disk $B(1,2)$. If $|z-1|=r<2$, then
+Apply Harnack's inequality in the disk $B(1,2)$. If $\abs{z-1}=r<2$, then
 $$
 u(z)\le \frac{2+r}{2-r}\,u(1).
 $$
 For $z=i$,
 $$
-r=|i-1|=\sqrt2.
+r=\abs{i-1}=\sqrt2.
 $$
 Hence
 $$

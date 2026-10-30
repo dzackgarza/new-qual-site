@@ -49,11 +49,11 @@ The contribution from the large semicircle tends to zero.
 
 On the upper half-plane,
 $$
-|e^{i\pi z}|=e^{-\pi\operatorname{Im}z}\le1.
+\abs{e^{i\pi z}}=e^{-\pi\operatorname{Im}z}\le1.
 $$
-On $|z|=R$ with $R$ large,
+On $\abs{z}=R$ with $R$ large,
 $$
-|4z^2-1|\ge4R^2-1,
+\abs{4z^2-1}\ge4R^2-1,
 $$
 so the large-arc integral has absolute value at most
 $$

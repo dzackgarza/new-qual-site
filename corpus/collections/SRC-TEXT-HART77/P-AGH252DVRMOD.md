@@ -104,7 +104,7 @@ The sheaf $\widetilde M$ associated to $M$ has sections $M$ on $X$ and $M\otimes
 It corresponds to $(M,M\otimes_R K,\operatorname{id}_{M\otimes_R K})$.
 If $\rho$ is an isomorphism, the pair $(\operatorname{id}_M,\rho)$ therefore gives an isomorphism $\widetilde M\to\mcf$, proving that $\mcf$ is quasi-coherent.
 
-Conversely, if $\mcf$ is quasi-coherent, its defining affine-local description supplies an affine neighborhood $U$ of $x$ and a module $N$ with $\mcf|_U\cong\widetilde N$ [@Har10a, Chapter II, §5].
+Conversely, if $\mcf$ is quasi-coherent, its defining affine-local description supplies an affine neighborhood $U$ of $x$ and a module $N$ with $\mcf\restrict_U\cong\widetilde N$ [@Har10a, Chapter II, §5].
 Step [](#s1){.pf-ref} forces $U=X$.
 The resulting isomorphism gives an $R$-linear isomorphism $u:N\to M$ and a $K$-linear isomorphism $v:N\otimes_R K\to L$.
 By step [](#s2){.pf-ref} they satisfy $v=\rho\circ(u\otimes\operatorname{id}_K)$.

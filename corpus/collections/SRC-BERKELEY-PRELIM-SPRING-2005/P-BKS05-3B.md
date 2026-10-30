@@ -47,14 +47,14 @@ F^n=\ker\phi\oplus V
 $$
 and the restriction
 $$
-\phi|_V:V\longrightarrow\im\phi
+\phi\restrict_V:V\longrightarrow\im\phi
 $$
 is an isomorphism.
 
 ::: pf-proof
 
 Choose any vector-space complement $V$ of $\ker\phi$. The restriction
-$\phi|_V$ is injective because
+$\phi\restrict_V$ is injective because
 $$
 V\cap\ker\phi=\{0\}.
 $$

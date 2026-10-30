@@ -36,7 +36,7 @@ c. If $E$ and $F$ are finite fields and $F\subset E$ then $E/F$ is Galois.
 
 d. If $E/F$ and $K/F$ are both Galois extensions then $EK/F$ is a Galois extension.
 
-e. If $E$ and $F$ are finite fields and $|F|$ divides $|E|$ then $E$ has a subfield isomorphic to $F$.
+e. If $E$ and $F$ are finite fields and $\cardinality{F}$ divides $\cardinality{E}$ then $E$ has a subfield isomorphic to $F$.
 :::
 
 ::: {.solution}
@@ -191,8 +191,8 @@ Part (c) is true.
 
 ::: pf-proof
 
-Let $\lvert F\rvert=q$ and $[E:F]=d$, so
-$\lvert E\rvert=q^d$. Every element of $E$ is a root of
+Let $\cardinality{ F}=q$ and $[E:F]=d$, so
+$\cardinality{ E}=q^d$. Every element of $E$ is a root of
 $$
 X^{q^d}-X.
 $$
@@ -238,9 +238,9 @@ Thus $EK/F$ is normal as well as separable, so it is Galois.
 
 Part (e) is false. For
 $$
-\lvert F\rvert=p^a,
+\cardinality{ F}=p^a,
 \qquad
-\lvert E\rvert=p^b,
+\cardinality{ E}=p^b,
 $$
 the correct condition for $E$ to contain a subfield isomorphic to $F$ is
 $$

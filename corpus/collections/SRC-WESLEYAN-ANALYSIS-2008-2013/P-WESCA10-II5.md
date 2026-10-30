@@ -48,9 +48,9 @@ If $f$ has a removable singularity at infinity, then $f$ is constant.
 ::: pf-proof
 
 By definition, $g$ extends holomorphically across $w=0$. Hence $g$ is bounded
-on some disk $|w|<\delta$. Therefore $f(z)=g(1/z)$ is bounded for
-$|z|>1/\delta$. Since $f$ is continuous on the compact disk
-$|z|\le1/\delta$, it is bounded there as well. Thus $f$ is bounded on all of
+on some disk $\abs{w}<\delta$. Therefore $f(z)=g(1/z)$ is bounded for
+$\abs{z}>1/\delta$. Since $f$ is continuous on the compact disk
+$\abs{z}\le1/\delta$, it is bounded there as well. Thus $f$ is bounded on all of
 $\CC$, so Liouville's theorem implies that $f$ is constant.
 
 :::
@@ -94,8 +94,8 @@ degree $m$.
 
 There are constants $C>0$ and $R>0$ such that
 $$
-|f(z)|\le C|z|^m
-\qquad(|z|\ge R).
+\abs{f(z)}\le C\abs{z}^m
+\qquad(\abs{z}\ge R).
 $$
 
 
@@ -106,13 +106,13 @@ $$
 h(w)=w^m g(w)
 $$
 extends holomorphically across $0$ with $h(0)\ne0$. In particular, $h$ is
-bounded on some disk $|w|<\delta$: say $|h(w)|\le C$. For
-$|z|>1/\delta$, put $w=1/z$. Then
+bounded on some disk $\abs{w}<\delta$: say $\abs{h(w)}\le C$. For
+$\abs{z}>1/\delta$, put $w=1/z$. Then
 $$
-|f(z)|
-=|g(1/z)|
-=|z|^m|h(1/z)|
-\le C|z|^m.
+\abs{f(z)}
+=\abs{g(1/z)}
+=\abs{z}^m\abs{h(1/z)}
+\le C\abs{z}^m.
 $$
 Taking $R=1/\delta$ gives the claim.
 
@@ -130,11 +130,11 @@ $$
 
 ::: pf-proof
 
-Fix $n>m$. For every $r\ge R$, Cauchy's estimate on the circle $|z|=r$
+Fix $n>m$. For every $r\ge R$, Cauchy's estimate on the circle $\abs{z}=r$
 and step [](#s2-1){.pf-ref} give
 $$
-|f^{(n)}(0)|
-\le \frac{n!}{r^n}\max_{|z|=r}|f(z)|
+\abs{f^{(n)}(0)}
+\le \frac{n!}{r^n}\max_{\abs{z}=r}\abs{f(z)}
 \le n!C r^{m-n}.
 $$
 Because $m-n<0$, letting $r\to\infty$ yields $f^{(n)}(0)=0$.

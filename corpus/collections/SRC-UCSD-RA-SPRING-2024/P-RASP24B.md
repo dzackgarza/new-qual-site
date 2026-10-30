@@ -55,12 +55,12 @@ $$
 $$
 For nonnegative functions,
 $$
-|f_n-f|=f_n+f-2\min(f_n,f).
+\abs{f_n-f}=f_n+f-2\min(f_n,f).
 $$
 Therefore
 $$
 \begin{aligned}
-\|f_n-f\|_1
+\norm{f_n-f}_1
 &=\int_Xf_n\,d\mu+\int_Xf\,d\mu
 -2\int_X\min(f_n,f)\,d\mu\\
 &\longrightarrow
@@ -100,8 +100,8 @@ $$
 $$
 for every $n$. However,
 $$
-\|f_n-f\|_1
-=\int_0^1|f_n(x)|\,dx
+\norm{f_n-f}_1
+=\int_0^1\abs{f_n(x)}\,dx
 =n\frac1n+n\frac1n=2.
 $$
 Hence $f_n$ does not converge to $f$ in $L^1$. Therefore the conclusion in part (a) is false without the nonnegativity hypothesis.

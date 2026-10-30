@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK87S-06
 kind: problem
-title: Derivative bound from $|f(z)|\le C/(1-|z|)$ on the unit disk
+title: Derivative bound from $\abs{f(z)}\le C/(1-\abs{z})$ on the unit disk
 classification:
   areas: [prelim]
   topics: []
@@ -27,11 +27,11 @@ audit:
 ::: {.problem}
 Let $f$ be analytic in the open unit disk and suppose
 $$
-|f(z)|\le\frac{C}{1-|z|}
+\abs{f(z)}\le\frac{C}{1-\abs{z}}
 $$
 for all $z$ in the disk, where $C>0$. Prove that
 $$
-|f'(z)|\le\frac{4C}{(1-|z|)^2}.
+\abs{f'(z)}\le\frac{4C}{(1-\abs{z})^2}.
 $$
 :::
 

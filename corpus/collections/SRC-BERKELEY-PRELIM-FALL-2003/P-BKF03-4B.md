@@ -84,7 +84,7 @@ Then $e^{g}$ is a bounded entire function.
 If the image lies in the right half-plane, replace $g$ by $-g$; this does not affect whether $g$ is constant.
 Under the displayed assumption,
 $$
-|e^{g(z)}|=e^{\operatorname{Re}g(z)}<1
+\abs{e^{g(z)}}=e^{\operatorname{Re}g(z)}<1
 $$
 for every $z$.
 Thus $e^g$ is entire and bounded.

@@ -39,7 +39,7 @@ Let
 $$
 \delta(x,x')=\begin{cases}0,&x=x',\\1,&x\ne x',\end{cases}
 \qquad
-\rho(y,y')=\min\{|y-y'|,1\}.
+\rho(y,y')=\min\{\abs{y-y'},1\}.
 $$
 Both are metrics inducing the discrete and usual topologies respectively. Then
 $$

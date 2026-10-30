@@ -31,7 +31,7 @@ What is $\left(\ZZ/(q-1)\ZZ\right)^\times$?
 :::
 
 ::: {.solution}
-Put $N=|q-1|$. Write $C_d$ for a cyclic group of order $d$,
+Put $N=\abs{q-1}$. Write $C_d$ for a cyclic group of order $d$,
 with $C_1$ the trivial group. For $N\geq2$, factor
 $N=\prod_{\ell\mid N}\ell^{e_\ell}$ into prime powers.
 Then
@@ -168,9 +168,9 @@ For $N=0$ the unit group is $\{1,-1\}\cong C_2$, and for $N=1$ it is
 trivial.
 
 ::: pf-proof
-The ideals $(q-1)$ and $(|q-1|)$ in $\ZZ$ coincide.
+The ideals $(q-1)$ and $(\abs{q-1})$ in $\ZZ$ coincide.
 When $q=1$, the quotient by $(0)$ is $\ZZ$;
-its only integer units are $1,-1$. When $|q-1|=1$,
+its only integer units are $1,-1$. When $\abs{q-1}=1$,
 the quotient is the zero ring. Its sole element is its
 identity and is its own multiplicative inverse, so its
 unit group has one element. All other integers $q$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-2B
 kind: problem
-title: Decay of the Newtonian potential $\int f(y)/|x-y|\,dy$ of a compactly supported $f$ on $\RR^3$
+title: Decay of the Newtonian potential $\int f(y)/\norm{x-y}\,dy$ of a compactly supported $f$ on $\RR^3$
 classification:
   areas: [prelim]
   topics: []
@@ -16,12 +16,12 @@ Let $f \colon  { \RR } ^ { 3 } \to  { \RR }$ be a continuous function of compact
 (a) Show that
 
 $$
-u ( x ) : = \int { \frac { f ( y ) } { | x - y | } } d y
+u ( x ) : = \int { \frac { f ( y ) } { \norm{ x - y } } } d y
 $$
 
 converges, where the integral is over all $\boldsymbol { y } \in \RR ^ { 3 }$
 
-(b) Show that $\lim_{|x|\to\infty}u(x)|x|$ exists.
+(b) Show that $\lim_{\norm{x}\to\infty}u(x)\norm{x}$ exists.
 :::
 
 ::: {.solution}

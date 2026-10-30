@@ -60,7 +60,7 @@ $$\frac{1}{\xi - z} = \frac{1}{\xi - z_0} \cdot \frac{1}{1 - \frac{z - z_0}{\xi 
 \qquad\text{and}\qquad
 \abs{\xi - z_0} \ge \abs{\xi} - \abs{z_0} = \rho - \abs{z_0}.$$
 Hence
-$$\left| \frac{z - z_0}{\xi - z_0} \right| \le c \coloneqq \frac{r}{\rho - \abs{z_0}} < 1,$$
+$$\abs{ \frac{z - z_0}{\xi - z_0} } \le c \coloneqq \frac{r}{\rho - \abs{z_0}} < 1,$$
 and the Weierstrass $M$-test with $M_k=c^k$ shows that the geometric series $\sum_k \bigl(\frac{z - z_0}{\xi - z_0}\bigr)^k$ converges uniformly on $\Gamma$. Multiplying by $f(\xi)/(\xi - z_0)$, which is bounded on $\Gamma$, preserves uniform convergence.
 
 :::

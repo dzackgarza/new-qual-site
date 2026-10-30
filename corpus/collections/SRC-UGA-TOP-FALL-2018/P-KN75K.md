@@ -158,7 +158,7 @@ $$
 H(x,t)
 =
 \frac{(1-t)f(x)-tx}
-{\lVert(1-t)f(x)-tx\rVert}.
+{\norm{(1-t)f(x)-tx}}.
 $$
 The denominator never vanishes.
 Indeed, if

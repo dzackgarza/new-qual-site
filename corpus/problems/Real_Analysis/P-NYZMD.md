@@ -51,7 +51,7 @@ $\theset{e_0, e_1}$ is orthonormal in $L^2([0,1])$.
 
 ::: pf-proof
 
-$\|e_0\|_2^2 = \int_0^1 1\,dx = 1$. $\|e_1\|_2^2 = 3\int_0^1(4x^2 - 4x + 1)\,dx = 3\left(\frac43 - 2 + 1\right) = 1$. $\inner{e_0}{e_1} = \sqrt 3\int_0^1 (2x-1)\,dx = \sqrt3(1 - 1) = 0$.
+$\norm{e_0}_2^2 = \int_0^1 1\,dx = 1$. $\norm{e_1}_2^2 = 3\int_0^1(4x^2 - 4x + 1)\,dx = 3\left(\frac43 - 2 + 1\right) = 1$. $\inner{e_0}{e_1} = \sqrt 3\int_0^1 (2x-1)\,dx = \sqrt3(1 - 1) = 0$.
 
 :::
 
@@ -71,11 +71,11 @@ The polynomials of degree at most $1$ form the span of $e_0$ and $e_1$, and the 
 
 ::: pf-step
 
-$\|f - h\|_2 = \boxed{\frac{1}{6\sqrt 5}}$.
+$\norm{f - h}_2 = \boxed{\frac{1}{6\sqrt 5}}$.
 
 ::: pf-proof
 
-$f - h$ is orthogonal to $h$, so $\|f - h\|_2^2 = \|f\|_2^2 - \|h\|_2^2$. Here $\|f\|_2^2 = \int_0^1 x^4\,dx = \frac15$ and $\|h\|_2^2 = \frac19 + \frac{3}{36} = \frac{7}{36}$, so $\|f - h\|_2^2 = \frac15 - \frac7{36} = \frac1{180}$ and $\sqrt{180} = 6\sqrt5$.
+$f - h$ is orthogonal to $h$, so $\norm{f - h}_2^2 = \norm{f}_2^2 - \norm{h}_2^2$. Here $\norm{f}_2^2 = \int_0^1 x^4\,dx = \frac15$ and $\norm{h}_2^2 = \frac19 + \frac{3}{36} = \frac{7}{36}$, so $\norm{f - h}_2^2 = \frac15 - \frac7{36} = \frac1{180}$ and $\sqrt{180} = 6\sqrt5$.
 
 :::
 

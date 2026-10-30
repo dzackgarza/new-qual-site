@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP08ANB
 kind: problem
-title: '$\|f\|_p\to\|f\|_\infty$ on $[0,1]$, with a counterexample on $\RR$'
+title: '$\norm{f}_p\to\norm{f}_\infty$ on $[0,1]$, with a counterexample on $\RR$'
 classification:
   areas:
   - real-analysis
@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 (a) Let $f\in L^\infty([0,1])$. Prove that
 $$
-\lim_{p\to\infty}\left(\int_0^1|f|^p\,dx\right)^{1/p}=\|f\|_\infty.
+\lim_{p\to\infty}\left(\int_0^1\abs{f}^p\,dx\right)^{1/p}=\norm{f}_\infty.
 $$
 
 (b) Give an example showing that the corresponding statement fails if $[0,1]$ is replaced by $\RR$.
@@ -44,43 +44,43 @@ The limit on $[0,1]$ equals the essential supremum.
 
 Let
 $$
-M=\|f\|_\infty.
+M=\norm{f}_\infty.
 $$
 Since $[0,1]$ has measure $1$,
 $$
-\|f\|_p\le M
+\norm{f}_p\le M
 \qquad(1\le p<\infty).
 $$
 Thus
 $$
-\limsup_{p\to\infty}\|f\|_p\le M.
+\limsup_{p\to\infty}\norm{f}_p\le M.
 $$
 
 Fix $\varepsilon>0$. By the definition of essential supremum, the set
 $$
-E_\varepsilon=\{x\in[0,1]:|f(x)|>M-\varepsilon\}
+E_\varepsilon=\{x\in[0,1]:\abs{f(x)}>M-\varepsilon\}
 $$
 has positive measure. Therefore
 $$
-\|f\|_p^p
-\ge \int_{E_\varepsilon}|f|^p
+\norm{f}_p^p
+\ge \int_{E_\varepsilon}\abs{f}^p
 \ge (M-\varepsilon)^p m(E_\varepsilon),
 $$
 so
 $$
-\|f\|_p\ge (M-\varepsilon)m(E_\varepsilon)^{1/p}.
+\norm{f}_p\ge (M-\varepsilon)m(E_\varepsilon)^{1/p}.
 $$
 Letting $p\to\infty$ gives
 $$
-\liminf_{p\to\infty}\|f\|_p\ge M-\varepsilon.
+\liminf_{p\to\infty}\norm{f}_p\ge M-\varepsilon.
 $$
 Since $\varepsilon>0$ is arbitrary,
 $$
-\liminf_{p\to\infty}\|f\|_p\ge M.
+\liminf_{p\to\infty}\norm{f}_p\ge M.
 $$
 Combining the two bounds yields
 $$
-\lim_{p\to\infty}\|f\|_p=M=\|f\|_\infty.
+\lim_{p\to\infty}\norm{f}_p=M=\norm{f}_\infty.
 $$
 
 :::
@@ -99,13 +99,13 @@ f(x)\equiv1.
 $$
 Then $f\in L^\infty(\RR)$ and
 $$
-\|f\|_\infty=1,
+\norm{f}_\infty=1,
 $$
 but for every finite $p$,
 $$
-\int_{\RR}|f(x)|^p\,dx=\infty.
+\int_{\RR}\abs{f(x)}^p\,dx=\infty.
 $$
-Thus the finite-$p$ norms are infinite, so they do not converge to $\|f\|_\infty=1$.
+Thus the finite-$p$ norms are infinite, so they do not converge to $\norm{f}_\infty=1$.
 
 :::
 

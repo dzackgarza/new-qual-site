@@ -30,7 +30,7 @@ Show that there is a sequence of polynomials, each vanishing at $1$, that conver
 
 By the Weierstrass approximation theorem, there is a sequence of polynomials $(q_n)$ such that
 $$
-\|q_n-f\|_\infty\longrightarrow0.
+\norm{q_n-f}_\infty\longrightarrow0.
 $$
 
 
@@ -69,7 +69,7 @@ $$
 
 If $f(1)=0$, then
 $$
-\|p_n-f\|_\infty\longrightarrow0.
+\norm{p_n-f}_\infty\longrightarrow0.
 $$
 
 
@@ -78,24 +78,24 @@ $$
 For every $x\in[0,1]$,
 $$
 \begin{aligned}
-|p_n(x)-f(x)|
+\abs{p_n(x)-f(x)}
 &=
-|q_n(x)-q_n(1)-f(x)|\\
+\abs{q_n(x)-q_n(1)-f(x)}\\
 &\le
-|q_n(x)-f(x)|+|q_n(1)-f(1)|.
+\abs{q_n(x)-f(x)}+\abs{q_n(1)-f(1)}.
 \end{aligned}
 $$
 Since $f(1)=0$,
 $$
-|q_n(1)-f(1)|
+\abs{q_n(1)-f(1)}
 \le
-\|q_n-f\|_\infty.
+\norm{q_n-f}_\infty.
 $$
 Therefore
 $$
-\|p_n-f\|_\infty
+\norm{p_n-f}_\infty
 \le
-2\|q_n-f\|_\infty
+2\norm{q_n-f}_\infty
 \longrightarrow0.
 $$
 This proves part (a).
@@ -173,7 +173,7 @@ p_n(1)=0
 $$
 and
 $$
-\|p_n-g\|_\infty\to0.
+\norm{p_n-g}_\infty\to0.
 $$
 By step [](#s1-5){.pf-ref},
 $$
@@ -181,13 +181,13 @@ $$
 $$
 for every $n$. Since $f$ is continuous on $[0,1]$, it is bounded, and therefore
 $$
-\left|
+\abs{
 \int_0^1 f(x)g(x)\,dx
 -
 \int_0^1 f(x)p_n(x)\,dx
-\right|
+}
 \le
-\|f\|_\infty\|g-p_n\|_\infty
+\norm{f}_\infty\norm{g-p_n}_\infty
 \longrightarrow0.
 $$
 Thus

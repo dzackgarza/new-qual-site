@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BQVDL
 kind: problem
-title: A subgroup of index equal to the smallest prime dividing $|G|$ is normal
+title: A subgroup of index equal to the smallest prime dividing $\cardinality{G}$ is normal
 classification:
   areas:
   - algebra
@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group, and let $H \le G$ be a subgroup of index $[G : H] = p$, where $p$ is the smallest prime dividing $|G|$.
+Let $G$ be a finite group, and let $H \le G$ be a subgroup of index $[G : H] = p$, where $p$ is the smallest prime dividing $\cardinality{G}$.
 Prove that $H$ is a **normal** subgroup of $G$ ($H \trianglelefteq G$).
 :::
 

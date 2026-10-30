@@ -16,21 +16,21 @@ audit:
 ---
 
 ::: {.problem}
-Let $\|\cdot\|$ be any norm on $\RR^n$, and let $\|\cdot\|_2$ be the Euclidean norm.
+Let $\norm{\cdot}$ be any norm on $\RR^n$, and let $\norm{\cdot}_2$ be the Euclidean norm.
 
 (a) Prove that there exists $d>0$ such that
 $$
-\|x\|\leq d\|x\|_2
+\norm{x}\leq d\norm{x}_2
 $$
-for every $x\in\RR^n$, and use this to show that $N(x)=\|x\|$ is continuous in the usual topology on $\RR^n$.
+for every $x\in\RR^n$, and use this to show that $N(x)=\norm{x}$ is continuous in the usual topology on $\RR^n$.
 
 (b) Prove that there exists $c>0$ such that
 $$
-\|x\|\geq c\|x\|_2
+\norm{x}\geq c\norm{x}_2
 $$
 for every $x\in\RR^n$.
 
-Hint: use continuity of $N$ on the sphere $\{x:\|x\|_2=1\}$.
+Hint: use continuity of $N$ on the sphere $\{x:\norm{x}_2=1\}$.
 
 (c) Show that if $L$ is an $n$-dimensional subspace of an arbitrary normed vector space $V$, then $L$ is closed.
 :::
@@ -53,9 +53,9 @@ x=(x_1,\ldots,x_n)\in\RR^n,
 $$
 one has
 $$
-\|x\|
+\norm{x}
 \le
-\sum_{j=1}^n|x_j|\,\|e_j\|.
+\sum_{j=1}^n\abs{x_j}\,\norm{e_j}.
 $$
 
 
@@ -67,15 +67,15 @@ x=\sum_{j=1}^n x_je_j.
 $$
 Repeated use of the triangle inequality and absolute homogeneity gives
 $$
-\left\|
+\norm{
 \sum_{j=1}^n x_je_j
-\right\|
+}
 \le
 \sum_{j=1}^n
-\|x_je_j\|
+\norm{x_je_j}
 =
 \sum_{j=1}^n
-|x_j|\,\|e_j\|.
+\abs{x_j}\,\norm{e_j}.
 $$
 
 :::
@@ -91,7 +91,7 @@ $$
 such that
 $$
 \boxed{
-\|x\|\le d\|x\|_2
+\norm{x}\le d\norm{x}_2
 }
 $$
 for every $x\in\RR^n$.
@@ -102,13 +102,13 @@ for every $x\in\RR^n$.
 By Cauchy--Schwarz,
 $$
 \sum_{j=1}^n
-|x_j|\,\|e_j\|
+\abs{x_j}\,\norm{e_j}
 \le
 \left(
 \sum_{j=1}^n x_j^2
 \right)^{1/2}
 \left(
-\sum_{j=1}^n\|e_j\|^2
+\sum_{j=1}^n\norm{e_j}^2
 \right)^{1/2}.
 $$
 Set
@@ -116,14 +116,14 @@ $$
 d
 =
 \left(
-\sum_{j=1}^n\|e_j\|^2
+\sum_{j=1}^n\norm{e_j}^2
 \right)^{1/2}.
 $$
 Then step [](#s1-1){.pf-ref} gives
 $$
-\|x\|
+\norm{x}
 \le
-d\|x\|_2.
+d\norm{x}_2.
 $$
 Because every basis vector is nonzero, $d>0$.
 
@@ -135,7 +135,7 @@ Because every basis vector is nonzero, $d>0$.
 
 The norm function
 $$
-N(x)=\|x\|
+N(x)=\norm{x}
 $$
 is continuous in the Euclidean topology.
 
@@ -144,21 +144,21 @@ is continuous in the Euclidean topology.
 
 The reverse triangle inequality gives
 $$
-\bigl|\|x\|-\|y\|\bigr|
+\abs{\norm{x}-\norm{y}}
 \le
-\|x-y\|.
+\norm{x-y}.
 $$
 By step [](#s1-2){.pf-ref},
 $$
-\|x-y\|
+\norm{x-y}
 \le
-d\|x-y\|_2.
+d\norm{x-y}_2.
 $$
 Hence
 $$
-|N(x)-N(y)|
+\abs{N(x)-N(y)}
 \le
-d\|x-y\|_2.
+d\norm{x-y}_2.
 $$
 Thus $N$ is Lipschitz with respect to the Euclidean norm, hence continuous.
 
@@ -172,7 +172,7 @@ Let
 $$
 S^{n-1}
 =
-\{x\in\RR^n:\|x\|_2=1\}.
+\{x\in\RR^n:\norm{x}_2=1\}.
 $$
 Then there exists
 $$
@@ -180,7 +180,7 @@ c>0
 $$
 such that
 $$
-\|u\|\ge c
+\norm{u}\ge c
 $$
 for every $u\in S^{n-1}$.
 
@@ -190,11 +190,11 @@ for every $u\in S^{n-1}$.
 The Euclidean unit sphere is compact.
 By step [](#s1-3){.pf-ref}, $N$ is continuous, so it attains a minimum
 $$
-c=\min_{u\in S^{n-1}}\|u\|.
+c=\min_{u\in S^{n-1}}\norm{u}.
 $$
 Since every $u\in S^{n-1}$ is nonzero and a norm is positive on nonzero vectors,
 $$
-\|u\|>0
+\norm{u}>0
 $$
 for every $u$ on the sphere.
 Therefore the attained minimum satisfies
@@ -211,7 +211,7 @@ $$
 For every $x\in\RR^n$,
 $$
 \boxed{
-\|x\|\ge c\|x\|_2
+\norm{x}\ge c\norm{x}_2
 }.
 $$
 
@@ -221,23 +221,23 @@ $$
 If $x=0$, the inequality is equality.
 If $x\ne0$, set
 $$
-u=\frac{x}{\|x\|_2}.
+u=\frac{x}{\norm{x}_2}.
 $$
 Then
 $$
-\|u\|_2=1,
+\norm{u}_2=1,
 $$
 so step [](#s1-4){.pf-ref} gives
 $$
-\|u\|\ge c.
+\norm{u}\ge c.
 $$
 By homogeneity,
 $$
-\|x\|
+\norm{x}
 =
-\|x\|_2\|u\|
+\norm{x}_2\norm{u}
 \ge
-c\|x\|_2.
+c\norm{x}_2.
 $$
 
 :::
@@ -248,7 +248,7 @@ $$
 
 Let $L$ be an $n$-dimensional subspace of an arbitrary normed vector space
 $$
-(V,\|\cdot\|_V),
+(V,\norm{\cdot}_V),
 $$
 and choose a basis
 $$
@@ -271,9 +271,9 @@ c_L>0
 $$
 such that
 $$
-\|\Phi(a)\|_V
+\norm{\Phi(a)}_V
 \ge
-c_L\|a\|_2
+c_L\norm{a}_2
 $$
 for every $a\in\RR^n$.
 
@@ -282,16 +282,16 @@ for every $a\in\RR^n$.
 
 Define a norm on $\RR^n$ by
 $$
-\|a\|_L
+\norm{a}_L
 =
-\|\Phi(a)\|_V.
+\norm{\Phi(a)}_V.
 $$
 Because $v_1,\ldots,v_n$ is a basis, $\Phi$ is injective, so
 $$
-\|a\|_L=0
+\norm{a}_L=0
 $$
 only when $a=0$.
-Thus $\|\cdot\|_L$ is a norm.
+Thus $\norm{\cdot}_L$ is a norm.
 Apply part (b), proved in step [](#s1-5){.pf-ref}, to this norm.
 
 :::
@@ -326,11 +326,11 @@ By step [](#s1-6){.pf-ref},
 $$
 \begin{aligned}
 c_L
-\|a^{(k)}-a^{(\ell)}\|_2
+\norm{a^{(k)}-a^{(\ell)}}_2
 &\le
-\|\Phi(a^{(k)}-a^{(\ell)})\|_V\\
+\norm{\Phi(a^{(k)}-a^{(\ell)})}_V\\
 &=
-\|x_k-x_\ell\|_V.
+\norm{x_k-x_\ell}_V.
 \end{aligned}
 $$
 The right side tends to zero as $k,\ell\to\infty$.
@@ -366,11 +366,11 @@ for some $a\in\RR^n$.
 
 The map $\Phi$ is continuous because
 $$
-\|\Phi(b)\|_V
+\norm{\Phi(b)}_V
 \le
-\sum_{j=1}^n|b_j|\|v_j\|_V
+\sum_{j=1}^n\abs{b_j}\norm{v_j}_V
 \le
-C\|b\|_2
+C\norm{b}_2
 $$
 for some constant $C$.
 Therefore

@@ -23,7 +23,7 @@ $$
 \bigcup_{g \in G} g H g^{-1} \subsetneq G.
 $$
 
-(c) Suppose a finite group $G$ acts transitively on a set $S$ with $|S| \ge 2$. Show that there exists an element $g \in G$ having no fixed points in $S$ (i.e. $g \cdot s \ne s$ for all $s \in S$).
+(c) Suppose a finite group $G$ acts transitively on a set $S$ with $\cardinality{S} \ge 2$. Show that there exists an element $g \in G$ having no fixed points in $S$ (i.e. $g \cdot s \ne s$ for all $s \in S$).
 :::
 
 ::: {.solution}
@@ -104,21 +104,21 @@ Every conjugate $g H g^{-1}$ contains the identity element $e$.
 
 ::: pf-step
 
-Each of the $k$ distinct conjugates contains $|H| - 1$ non-identity elements.
+Each of the $k$ distinct conjugates contains $\cardinality{H} - 1$ non-identity elements.
 
 :::
 
 ::: pf-step
 
 Bound the size of the union of all conjugates:
-    $$\left| \bigcup_{g \in G} g H g^{-1} \right| = \left| \{e\} \cup \bigcup_{i=1}^k (H_i \setminus \{e\}) \right| \le 1 + \sum_{i=1}^k (|H_i| - 1) = 1 + k (|H| - 1).$$
+    $$\cardinality{ \bigcup_{g \in G} g H g^{-1} } = \cardinality{ \{e\} \cup \bigcup_{i=1}^k (H_i \setminus \{e\}) } \le 1 + \sum_{i=1}^k (\cardinality{H_i} - 1) = 1 + k (\cardinality{H} - 1).$$
 
 :::
 
 ::: pf-step
 
 Since $k \le [G : H]$, we have
-    $$\left| \bigcup_{g \in G} g H g^{-1} \right| \le 1 + [G : H](|H| - 1) = 1 + [G : H]|H| - [G : H] = |G| + 1 - [G : H].$$
+    $$\cardinality{ \bigcup_{g \in G} g H g^{-1} } \le 1 + [G : H](\cardinality{H} - 1) = 1 + [G : H]\cardinality{H} - [G : H] = \cardinality{G} + 1 - [G : H].$$
 
 :::
 
@@ -131,7 +131,7 @@ Since $H$ is a proper subgroup ($H \ne G$), the index $[G : H] \ge 2$.
 ::: pf-step
 
 Thus:
-    $$\left| \bigcup_{g \in G} g H g^{-1} \right| \le |G| + 1 - [G : H] \le |G| - 1 < |G|.$$
+    $$\cardinality{ \bigcup_{g \in G} g H g^{-1} } \le \cardinality{G} + 1 - [G : H] \le \cardinality{G} - 1 < \cardinality{G}.$$
 
 :::
 
@@ -165,7 +165,7 @@ Choose an arbitrary point $s_0 \in S$, and let $H = G_{s_0} \le G$ be its stabil
 
 ::: pf-step
 
-By the Orbit-Stabilizer Theorem, since the action is transitive, $[G : H] = |G \cdot s_0| = |S| \ge 2$.
+By the Orbit-Stabilizer Theorem, since the action is transitive, $[G : H] = \cardinality{G \cdot s_0} = \cardinality{S} \ge 2$.
 
 :::
 
@@ -224,27 +224,27 @@ Let $X^g = \{s \in S : g \cdot s = s\}$ denote the fixed point set of $g \in G$.
 ::: pf-step
 
 By Burnside's Lemma, the number of orbits is the average number of fixed points:
-        $$1 = \frac{1}{|G|} \sum_{g \in G} |X^g| \implies |G| = \sum_{g \in G} |X^g| = |X^e| + \sum_{g \ne e} |X^g|.$$
+        $$1 = \frac{1}{\cardinality{G}} \sum_{g \in G} \cardinality{X^g} \implies \cardinality{G} = \sum_{g \in G} \cardinality{X^g} = \cardinality{X^e} + \sum_{g \ne e} \cardinality{X^g}.$$
 
 :::
 
 ::: pf-step
 
-Since the identity fixes all of $S$, $|X^e| = |S| \ge 2$.
+Since the identity fixes all of $S$, $\cardinality{X^e} = \cardinality{S} \ge 2$.
 
 :::
 
 ::: pf-step
 
-If every $g \ne e$ had at least one fixed point ($|X^g| \ge 1$), then
-        $$\sum_{g \in G} |X^g| = |X^e| + \sum_{g \ne e} |X^g| \ge 2 + (|G| - 1) = |G| + 1,$$
+If every $g \ne e$ had at least one fixed point ($\cardinality{X^g} \ge 1$), then
+        $$\sum_{g \in G} \cardinality{X^g} = \cardinality{X^e} + \sum_{g \ne e} \cardinality{X^g} \ge 2 + (\cardinality{G} - 1) = \cardinality{G} + 1,$$
         a contradiction.
 
 :::
 
 ::: pf-step
 
-Thus there exists at least one $g \in G$ with $|X^g| = 0$.
+Thus there exists at least one $g \in G$ with $\cardinality{X^g} = 0$.
 
 :::
 

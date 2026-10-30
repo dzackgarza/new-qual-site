@@ -146,13 +146,13 @@ G(p)>0,
 $$
 there exists $r>0$ such that
 $$
-|G(q)-G(p)|
+\abs{G(q)-G(p)}
 <
 \frac12G(p)
 $$
 whenever
 $$
-\|q-p\|<r.
+\norm{q-p}<r.
 $$
 Hence on the ball
 $$

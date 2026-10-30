@@ -20,7 +20,7 @@ review: draft
 Let $Y \subseteq \AA^n$ be an affine variety, and identify $\AA^n$ with the open set $U_0 \subseteq \PP^n$ by the homeomorphism $\phi_0$.
 The closure $\bar{Y}$ of $Y$ in $\PP^n$ is called the **projective closure** of $Y$.
 
-Write $S \definedas k[x_0,\ldots,x_n]$, and let
+Write $S \coloneqq k[x_0,\ldots,x_n]$, and let
 $$
 \alpha: S^h \to k[y_1,\ldots,y_n], \quad f \mapsto f(1, y_1, \ldots, y_n),
 \qquad
@@ -35,11 +35,11 @@ $$
 
 ::: {.solution}
 **Part 1.** We want $I(\bar{Y}) = \generators{\beta(I(Y))}$.
-Write $H_i = Z(x_i) \subseteq \PP^n$ and embed $\AA^n \injects \PP^n$ along $U_0 \definedas \PP^n \sm H_0 = \theset{x_0 = 1}$, so that $(x_1,\ldots,x_n) \mapsto \thevector{1 : x_1 : \cdots : x_n}$.
+Write $H_i = Z(x_i) \subseteq \PP^n$ and embed $\AA^n \injects \PP^n$ along $U_0 \coloneqq \PP^n \sm H_0 = \theset{x_0 = 1}$, so that $(x_1,\ldots,x_n) \mapsto \thevector{1 : x_1 : \cdots : x_n}$.
 
 *The inclusion $I(\bar{Y}) \subseteq \generators{\beta(I(Y))}$.* Let $g \in I(\bar{Y})$, which we may take homogeneous, so $g(a_0,\ldots,a_n) = 0$ whenever $\thevector{a_0 : \cdots : a_n} \in \bar{Y}$.
 In particular $g$ vanishes on $\bar{Y} \intersect U_0 = Y$, where $x_0 \neq 0$, so writing a point as $\thevector{1 : b_1 : \cdots : b_n}$ with $b_i = a_i/a_0$ we get $g(1, b_1, \ldots, b_n) = 0$, and $(b_1,\ldots,b_n)$ is a point of $Y$.
-So set $f(y_1,\ldots,y_n) \definedas g(1, y_1, \ldots, y_n)$, which vanishes on $Y$ and hence lies in $I(Y)$.
+So set $f(y_1,\ldots,y_n) \coloneqq g(1, y_1, \ldots, y_n)$, which vanishes on $Y$ and hence lies in $I(Y)$.
 Then
 $$
 \beta(f)(x_0,\ldots,x_n) = x_0^{\deg f} f\qty{\frac{x_1}{x_0}, \ldots, \frac{x_n}{x_0}}
@@ -66,7 +66,7 @@ $$
 \qquad
 \beta(f_2) = w^3\qty{ \qty{\frac{x}{w}}^3 - \frac{z}{w} } = x^3 - w^2 z .
 $$
-So $J \definedas \generators{\beta(f_1), \beta(f_2)} = \generators{ wy - x^2,\ x^3 - w^2 z }$.
+So $J \coloneqq \generators{\beta(f_1), \beta(f_2)} = \generators{ wy - x^2,\ x^3 - w^2 z }$.
 
 On the other hand, $\bar{Y}$ is the image of $\thevector{s : t} \mapsto \thevector{s^3 : s^2 t : s t^2 : t^3}$, and homogenizing a Gröbner basis for $I(Y)$ gives
 $$

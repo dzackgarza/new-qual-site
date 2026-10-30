@@ -60,7 +60,7 @@ $\mathcal P$ by extension:
 $$
 (L,\varphi)\le (L',\varphi')
 $$
-if $L\subseteq L'$ and $\varphi'|_L=\varphi$.
+if $L\subseteq L'$ and $\varphi'\restrict_L=\varphi$.
 
 :::
 

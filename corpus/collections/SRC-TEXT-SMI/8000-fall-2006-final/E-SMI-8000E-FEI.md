@@ -190,8 +190,8 @@ We have
 $$
 g'(x)=5x^4-20=5(x^4-4).
 $$
-Thus $g'$ is positive for $|x|>\sqrt2$ and negative for
-$|x|<\sqrt2$. The two critical values are
+Thus $g'$ is positive for $\abs{x}>\sqrt2$ and negative for
+$\abs{x}<\sqrt2$. The two critical values are
 $$
 g(-\sqrt2)=4+16\sqrt2>0
 $$
@@ -223,7 +223,7 @@ G\le S_5
 $$
 transitive on the five roots. Therefore
 $$
-5\mid |G|,
+5\mid \cardinality{G},
 $$
 so Cauchy's theorem gives an element of order $5$, necessarily a $5$-cycle.
 
@@ -240,7 +240,7 @@ $$
 $$
 Consequently
 $$
-\boxed{[E:\QQ]=|S_5|=120.}
+\boxed{[E:\QQ]=\cardinality{S_5}=120.}
 $$
 :::
 
@@ -470,7 +470,7 @@ If $K\trianglelefteq G$, then
 $$
 K\cap N\trianglelefteq N.
 $$
-Since $|N|=7$ is prime,
+Since $\cardinality{N}=7$ is prime,
 $$
 K\cap N=1
 \quad\text{or}\quad

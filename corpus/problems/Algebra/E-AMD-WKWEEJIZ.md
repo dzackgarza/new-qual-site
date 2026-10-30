@@ -81,7 +81,7 @@ Restriction defines an injective homomorphism
 $$
 \rho:\Gal(EF/k)\longrightarrow\Gal(E/k)\times\Gal(F/k),
 \qquad
-\rho(\gamma)=(\gamma|_E,\gamma|_F).
+\rho(\gamma)=(\gamma\restrict_E,\gamma\restrict_F).
 $$
 
 ::: pf-proof
@@ -106,9 +106,9 @@ x\otimes y\longmapsto\sigma(x)\otimes\tau(y),
 $$
 is a $k$-algebra automorphism. By step [](#linearly-disjoint){.pf-ref}, $E\otimes_kF$ embeds in $EF$ by multiplication. Its image is a domain whose fraction field is $EF$, because it contains the images of both $E$ and $F$. Therefore $\sigma\otimes\tau$ extends uniquely to a $k$-automorphism $\gamma$ of $EF$. By construction,
 $$
-\gamma|_E=\sigma,
+\gamma\restrict_E=\sigma,
 \qquad
-\gamma|_F=\tau.
+\gamma\restrict_F=\tau.
 $$
 Thus $\rho(\gamma)=(\sigma,\tau)$.
 :::

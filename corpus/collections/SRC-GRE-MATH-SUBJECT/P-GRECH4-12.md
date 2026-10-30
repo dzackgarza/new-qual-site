@@ -72,7 +72,7 @@ Equating these expressions and cancelling $v$ gives the displayed equation.
 
 Therefore
 $$
-\frac{y}{x}=\log|x|+C.
+\frac{y}{x}=\log\abs{x}+C.
 $$
 
 
@@ -84,7 +84,7 @@ $$
 $$
 Integrating on an interval not containing $0$ yields
 $$
-v=\log|x|+C.
+v=\log\abs{x}+C.
 $$
 Substitute $v=y/x$.
 
@@ -105,7 +105,7 @@ so the answer is (A).
 
 Exponentiating step [](#s1-2){.pf-ref} gives
 $$
-e^{y/x}=e^C|x|.
+e^{y/x}=e^C\abs{x}.
 $$
 On any connected solution interval, the sign of $x$ is fixed. Absorbing that fixed sign together with $e^C$ into a nonzero constant $c$ gives $e^{y/x}=cx$; necessarily $cx>0$ on that interval.
 

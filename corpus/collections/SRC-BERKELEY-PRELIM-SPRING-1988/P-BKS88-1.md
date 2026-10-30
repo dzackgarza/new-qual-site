@@ -51,7 +51,7 @@ The difference quotient of $f$ at $0$ tends to $L$ as $h\to 0$.
 ::: pf-proof
 By [](#mean-value-theorem){.pf-ref}, for each $h\neq 0$ choose $c_h$ strictly between $0$ and $h$. Then
 $$
-0<|c_h|<|h|,
+0<\abs{c_h}<\abs{h},
 $$
 so $c_h\to 0$ as $h\to 0$. Since $c_h\neq 0$ and $f'(x)\to L$ as $x\to 0$, it follows that
 $$

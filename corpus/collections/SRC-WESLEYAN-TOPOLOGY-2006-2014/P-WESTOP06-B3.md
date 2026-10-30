@@ -39,7 +39,7 @@ for every $a\in A$ and $t\in I$.
 
 ::: pf-proof
 
-The condition $r|_A=\operatorname{id}_A$ says that $r$ is a retraction. The additional condition on $H$ says that the homotopy from $X$ onto $A$ fixes $A$ pointwise throughout.
+The condition $r\restrict_A=\operatorname{id}_A$ says that $r$ is a retraction. The additional condition on $H$ says that the homotopy from $X$ onto $A$ fixes $A$ pointwise throughout.
 
 :::
 
@@ -50,18 +50,18 @@ The condition $r|_A=\operatorname{id}_A$ says that $r$ is a retraction. The addi
 The map
 $$
 \boxed{r:\RR^n\setminus\{0\}\to S^{n-1},\qquad
-r(x)=\frac{x}{\|x\|}}
+r(x)=\frac{x}{\norm{x}}}
 $$
 is a retraction.
 
 
 ::: pf-proof
 
-For $x\ne0$, one has $\|x/\|x\|\|=1$, so $r(x)\in S^{n-1}$. The map is continuous because the norm is continuous and $\|x\|>0$ on the domain. If $x\in S^{n-1}$, then $\|x\|=1$, hence
+For $x\ne0$, one has $\norm{x/\norm{x}}=1$, so $r(x)\in S^{n-1}$. The map is continuous because the norm is continuous and $\norm{x}>0$ on the domain. If $x\in S^{n-1}$, then $\norm{x}=1$, hence
 $$
 r(x)=x.
 $$
-Thus $r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}$.
+Thus $r\restrict_{S^{n-1}}=\operatorname{id}_{S^{n-1}}$.
 
 :::
 
@@ -75,7 +75,7 @@ H:(\RR^n\setminus\{0\})\times I\to\RR^n\setminus\{0\}
 $$
 by
 $$
-\boxed{H(x,t)=\left((1-t)+\frac{t}{\|x\|}\right)x.}
+\boxed{H(x,t)=\left((1-t)+\frac{t}{\norm{x}}\right)x.}
 $$
 Then $H$ is a homotopy from $\operatorname{id}$ to $i\circ r$.
 
@@ -84,7 +84,7 @@ Then $H$ is a homotopy from $\operatorname{id}$ to $i\circ r$.
 
 The scalar
 $$
-(1-t)+\frac{t}{\|x\|}
+(1-t)+\frac{t}{\norm{x}}
 $$
 is strictly positive for every $x\ne0$ and $t\in I$. Hence $H(x,t)\ne0$, so the formula takes values in $\RR^n\setminus\{0\}$. It is continuous because it is assembled from continuous operations on this domain.
 
@@ -94,7 +94,7 @@ H(x,0)=x,
 $$
 while at $t=1$,
 $$
-H(x,1)=\frac{x}{\|x\|}=r(x)=i(r(x)).
+H(x,1)=\frac{x}{\norm{x}}=r(x)=i(r(x)).
 $$
 Therefore $H$ is a homotopy from $\operatorname{id}$ to $i\circ r$.
 
@@ -109,7 +109,7 @@ The homotopy $H$ fixes $S^{n-1}$ pointwise.
 
 ::: pf-proof
 
-If $x\in S^{n-1}$, then $\|x\|=1$, so for every $t\in I$,
+If $x\in S^{n-1}$, then $\norm{x}=1$, so for every $t\in I$,
 $$
 H(x,t)=((1-t)+t)x=x.
 $$

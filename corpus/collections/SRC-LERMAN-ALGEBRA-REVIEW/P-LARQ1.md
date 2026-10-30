@@ -52,7 +52,7 @@ $A_n\triangleleft S_n$ and has index two. Let
 $$
 \tau=(12),\qquad H=\langle\tau\rangle=\{1,\tau\}.
 $$
-Then $|H|=2$. Since the transposition $(12)$ is odd while every element of $A_n$ is even,
+Then $\cardinality{H}=2$. Since the transposition $(12)$ is odd while every element of $A_n$ is even,
 $$
 A_n\cap H=\{1\}.
 $$
@@ -88,7 +88,7 @@ $$
 R=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
 $$
 belongs to $O(2)$ and has determinant $-1$. Hence $SO(2)\triangleleft O(2)$
-and has index two. Let $K=\langle R\rangle=\{I,R\}$. Then $|K|=2$, and
+and has index two. Let $K=\langle R\rangle=\{I,R\}$. Then $\cardinality{K}=2$, and
 $SO(2)\cap K=\{I\}$ because $R$ has determinant $-1$.
 
 If $A\in O(2)$ has determinant $1$, then $A\in SO(2)$. If $\det A=-1$, then

@@ -39,7 +39,7 @@ $$
 for every pair of points $p,q\in C$, allowing $p=q$.
 
 ::: pf-proof
-For $p\ne q$, this condition says that the complete linear system $|L|$ separates the two points.  For $p=q$, it says that $|L|$ separates tangent directions at $p$.  A base-point-free linear system defines a closed immersion exactly when it separates points and tangent vectors, which is the stated length-two criterion.
+For $p\ne q$, this condition says that the complete linear system $\linearsystem{L}$ separates the two points.  For $p=q$, it says that $\linearsystem{L}$ separates tangent directions at $p$.  A base-point-free linear system defines a closed immersion exactly when it separates points and tangent vectors, which is the stated length-two criterion.
 :::
 
 :::
@@ -205,7 +205,7 @@ Thus $h^0(K_C\otimes L^{-1})\ge1$.  The line bundle $K_C\otimes L^{-1}$ has degr
 Therefore the canonical map factors as
 $$
 C\xrightarrow{\pi}\PP^1
-\xrightarrow{|\mathcal O(g-1)|}\PP^{g-1},
+\xrightarrow{\linearsystem{\mathcal O(g-1)}}\PP^{g-1},
 $$
 where the second map is the rational normal curve embedding.  The first map has degree $2$, so the composition cannot be an embedding.
 :::

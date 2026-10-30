@@ -95,7 +95,7 @@ A^T(\operatorname{im}B).
 $$
 The kernel of the restricted map
 $$
-A^T|_{\operatorname{im}B}
+A^T\restrict_{\operatorname{im}B}
 $$
 is exactly
 $$

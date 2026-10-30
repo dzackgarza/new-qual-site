@@ -35,7 +35,7 @@ p^{-1}(U)=U\times Y=\bigsqcup_{y\in Y}(U\times\{y\}).
 $$
 Each $U\times\{y\}$ is open in $X\times Y$, and the restriction
 $$
-p|_{U\times\{y\}}:U\times\{y\}\longrightarrow U
+p\restrict_{U\times\{y\}}:U\times\{y\}\longrightarrow U
 $$
 is a homeomorphism with inverse $u\mapsto(u,y)$. Thus every open $U$ is evenly covered; in particular $p:X\times Y\to X$ is a covering map.
 :::

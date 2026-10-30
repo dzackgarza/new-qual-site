@@ -41,7 +41,7 @@ f(z)
 \frac1{w^2(w+2i)^2}}.
 $$
 
-## The annulus $0<|w|<2$
+## The annulus $0<\abs{w}<2$
 
 ::: pf
 
@@ -66,7 +66,7 @@ Factor $2i$ out of $w+2i$.
 
 ::: {.pf-step #s1-2}
 
-For $|u|<1$,
+For $\abs{u}<1$,
 $$
 \boxed{
 \frac1{(1+u)^2}
@@ -101,7 +101,7 @@ Reindex.
 
 Therefore, when
 $$
-\left|\frac{w}{2i}\right|<1,
+\abs{\frac{w}{2i}}<1,
 $$
 one has
 $$
@@ -183,7 +183,7 @@ Expand the first few terms of the series in step [](#s1-4){.pf-ref}.
 This Laurent series converges exactly on
 $$
 \boxed{
-0<|z-i|<2}.
+0<\abs{z-i}<2}.
 $$
 
 
@@ -191,15 +191,15 @@ $$
 
 The geometric-series condition is
 $$
-\left|\frac{w}{2i}\right|<1,
+\abs{\frac{w}{2i}}<1,
 $$
 equivalently
 $$
-|w|<2.
+\abs{w}<2.
 $$
 The center $w=0$ is a pole, so it is excluded. The boundary circle
 $$
-|w|=2
+\abs{w}=2
 $$
 contains the other pole $w=-2i$, corresponding to $z=-i$, so the
 maximal annulus cannot extend across it.
@@ -231,7 +231,7 @@ Factor $w$ out of $w+2i$.
 
 If
 $$
-\left|\frac{2i}{w}\right|<1,
+\abs{\frac{2i}{w}}<1,
 $$
 then
 $$
@@ -310,7 +310,7 @@ in step [](#s1-9){.pf-ref}.
 
 The exterior Laurent series converges exactly on
 $$
-\boxed{|z-i|>2}.
+\boxed{\abs{z-i}>2}.
 $$
 
 
@@ -318,13 +318,13 @@ $$
 
 The condition
 $$
-\left|\frac{2i}{w}\right|<1
+\abs{\frac{2i}{w}}<1
 $$
 is equivalent to
 $$
-|w|>2.
+\abs{w}>2.
 $$
-Again the circle $|w|=2$ contains the singularity $w=-2i$, so this is
+Again the circle $\abs{w}=2$ contains the singularity $w=-2i$, so this is
 the maximal exterior annulus.
 
 :::
@@ -336,7 +336,7 @@ the maximal exterior annulus.
 Thus the complete Laurent expansions centered at $i$ are the series
 in steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} on the two maximal annuli separated by
 $$
-|z-i|=2.
+\abs{z-i}=2.
 $$
 
 

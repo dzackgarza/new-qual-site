@@ -35,7 +35,7 @@ The proof is by induction on $n$.
 
 If $B$ is a normal complex matrix, then
 $$
-\|Bx\|=\|B^*x\|
+\norm{Bx}=\norm{B^*x}
 $$
 for every vector $x$.
 
@@ -44,11 +44,11 @@ for every vector $x$.
 
 Using the standard Hermitian norm,
 $$
-\|Bx\|^2=x^*B^*Bx
+\norm{Bx}^2=x^*B^*Bx
 $$
 and
 $$
-\|B^*x\|^2=x^*BB^*x.
+\norm{B^*x}^2=x^*BB^*x.
 $$
 If $B$ is normal, then $B^*B=BB^*$, so the squared norms are equal.
 
@@ -79,7 +79,7 @@ $$
 \begin{aligned}
 B^*B
 &=(A^*-\overline{\lambda}I)(A-\lambda I)\\
-&=A^*A-\lambda A^*-\overline{\lambda}A+|\lambda|^2I
+&=A^*A-\lambda A^*-\overline{\lambda}A+\abs{\lambda}^2I
 \end{aligned}
 $$
 and
@@ -87,12 +87,12 @@ $$
 \begin{aligned}
 BB^*
 &=(A-\lambda I)(A^*-\overline{\lambda}I)\\
-&=AA^*-\overline{\lambda}A-\lambda A^*+|\lambda|^2I,
+&=AA^*-\overline{\lambda}A-\lambda A^*+\abs{\lambda}^2I,
 \end{aligned}
 $$
 so $B$ is normal. Since $Bv=0$, step [](#s1-1){.pf-ref} gives
 $$
-\|B^*v\|=\|Bv\|=0.
+\norm{B^*v}=\norm{Bv}=0.
 $$
 Thus
 $$
@@ -161,7 +161,7 @@ so $A^*w\in v^\perp$.
 
 The restriction
 $$
-A|_{v^\perp}:v^\perp\to v^\perp
+A\restrict_{v^\perp}:v^\perp\to v^\perp
 $$
 is normal.
 
@@ -170,7 +170,7 @@ is normal.
 
 By step [](#s1-4){.pf-ref}, both $A$ and $A^*$ preserve $v^\perp$. Hence the adjoint of the restriction of $A$ is the restriction of $A^*$:
 $$
-(A|_{v^\perp})^*=A^*|_{v^\perp}.
+(A\restrict_{v^\perp})^*=A^*\restrict_{v^\perp}.
 $$
 Because
 $$
@@ -178,8 +178,8 @@ A^*A=AA^*
 $$
 on all of $V$, restricting this equality to $v^\perp$ gives
 $$
-(A|_{v^\perp})^*(A|_{v^\perp})
-=(A|_{v^\perp})(A|_{v^\perp})^*.
+(A\restrict_{v^\perp})^*(A\restrict_{v^\perp})
+=(A\restrict_{v^\perp})(A\restrict_{v^\perp})^*.
 $$
 Thus the restriction is normal.
 
@@ -198,7 +198,7 @@ For $n=1$, every nonzero vector, after normalization, is an orthonormal eigenbas
 
 Assume the assertion holds in dimension $n-1$, and let $A$ be normal on $\CC^n$. By step [](#s1-3){.pf-ref}, choose a nonzero eigenvector $v_1$ and normalize it so that
 $$
-\|v_1\|=1.
+\norm{v_1}=1.
 $$
 Then
 $$

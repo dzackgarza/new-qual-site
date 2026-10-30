@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $1\le p<\infty$ and let $U(z)$ be harmonic on $\CC$ such that
 $$
-\iint_{\RR\times\RR}|U(x+iy)|^p\,dx\,dy<\infty.
+\iint_{\RR\times\RR}\abs{U(x+iy)}^p\,dx\,dy<\infty.
 $$
 Prove that $U(z)=0$ for all $z=x+iy\in\CC$.
 :::
@@ -28,7 +28,7 @@ Prove that $U(z)=0$ for all $z=x+iy\in\CC$.
 
 Let
 $$
-M\coloneqq\left(\iint_{\RR^2}|U|^p\,dA\right)^{1/p}<\infty.
+M\coloneqq\left(\iint_{\RR^2}\abs{U}^p\,dA\right)^{1/p}<\infty.
 $$
 
 ::: pf
@@ -53,7 +53,7 @@ This is the mean-value property for harmonic functions, applied to the disk $B(z
 
 For every $z_0\in\CC$ and $R>0$,
 $$
-|U(z_0)|\le \frac{M}{(\pi R^2)^{1/p}}.
+\abs{U(z_0)}\le \frac{M}{(\pi R^2)^{1/p}}.
 $$
 
 
@@ -61,23 +61,23 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|U(z_0)|
+\abs{U(z_0)}
 \le\frac1{\pi R^2}
-\int_{B(z_0,R)}|U(z)|\,dA(z).
+\int_{B(z_0,R)}\abs{U(z)}\,dA(z).
 $$
 If $p>1$, Hölder's inequality with conjugate exponent $q=p/(p-1)$ gives
 $$
 \begin{aligned}
-\int_{B(z_0,R)}|U|
+\int_{B(z_0,R)}\abs{U}
 &\le
-\left(\int_{B(z_0,R)}|U|^p\right)^{1/p}
+\left(\int_{B(z_0,R)}\abs{U}^p\right)^{1/p}
 \left(\pi R^2\right)^{1/q}\\
 &\le M(\pi R^2)^{1-1/p}.
 \end{aligned}
 $$
 Dividing by $\pi R^2$ yields the displayed estimate. For $p=1$, the same estimate follows directly from
 $$
-\int_{B(z_0,R)}|U|\le M.
+\int_{B(z_0,R)}\abs{U}\le M.
 $$
 
 :::
@@ -96,9 +96,9 @@ $$
 
 Fix $z_0\in\CC$. Step [](#s1-2){.pf-ref} gives, for every $R>0$,
 $$
-|U(z_0)|\le \frac{M}{(\pi R^2)^{1/p}}.
+\abs{U(z_0)}\le \frac{M}{(\pi R^2)^{1/p}}.
 $$
-Since $p<\infty$, the right-hand side tends to $0$ as $R\to\infty$. Hence $|U(z_0)|=0$. Because $z_0$ was arbitrary, $U$ vanishes identically.
+Since $p<\infty$, the right-hand side tends to $0$ as $R\to\infty$. Hence $\abs{U(z_0)}=0$. Because $z_0$ was arbitrary, $U$ vanishes identically.
 
 :::
 

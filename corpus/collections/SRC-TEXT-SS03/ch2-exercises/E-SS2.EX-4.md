@@ -28,7 +28,7 @@ F(\xi)=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
 $$
 For $\xi$ in any compact subset of $\CC$, the integrand and all its $\xi$-derivatives are dominated by a function of the form
 $$
-C_N(1+|x|)^N e^{-\pi x^2+C|x|},
+C_N(1+\abs{x})^N e^{-\pi x^2+C\abs{x}},
 $$
 which is integrable. Hence $F$ is entire and differentiation under the integral sign is valid.
 

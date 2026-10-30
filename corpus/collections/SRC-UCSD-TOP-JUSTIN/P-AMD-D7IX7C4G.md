@@ -31,7 +31,7 @@ Restrict $f$ to the equatorial circle $S^1 \subset S^2$.
 ::: pf-proof
 
 ::: pf-step
-Let $i \colon S^1 \hookrightarrow S^2$ be the equatorial inclusion $x \mapsto (x_1, x_2, 0)$, and let $g = f|_{S^1} = f \circ i \colon S^1 \to S^1$.
+Let $i \colon S^1 \hookrightarrow S^2$ be the equatorial inclusion $x \mapsto (x_1, x_2, 0)$, and let $g = f\restrict_{S^1} = f \circ i \colon S^1 \to S^1$.
 :::
 
 ::: pf-step
@@ -81,7 +81,7 @@ The upper hemisphere $D_+^2 = \{(x_1, x_2, x_3) \in S^2 \mid x_3 \ge 0\}$ is hom
 :::
 
 ::: pf-step
-The map $F = f|_{D_+^2} \colon D_+^2 \to S^1$ is a continuous map extending $g$ to the entire disk $D_+^2$.
+The map $F = f\restrict_{D_+^2} \colon D_+^2 \to S^1$ is a continuous map extending $g$ to the entire disk $D_+^2$.
 :::
 
 ::: pf-step

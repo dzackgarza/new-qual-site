@@ -45,8 +45,8 @@ $$
 F(a,b)
 =
 \frac1{(2\pi i)^2}
-\int_{|\zeta-z_0|=R}
-\int_{|\xi-z_0|=R}
+\int_{\abs{\zeta-z_0}=R}
+\int_{\abs{\xi-z_0}=R}
 \frac{F(\zeta,\xi)}
 {(\zeta-a)(\xi-b)}
 \,d\xi\,d\zeta}.
@@ -64,7 +64,7 @@ $$
 F(a,b)
 =
 \frac1{2\pi i}
-\int_{|\zeta-z_0|=R}
+\int_{\abs{\zeta-z_0}=R}
 \frac{F(\zeta,b)}{\zeta-a}\,d\zeta.
 $$
 
@@ -77,7 +77,7 @@ $$
 F(\zeta,b)
 =
 \frac1{2\pi i}
-\int_{|\xi-z_0|=R}
+\int_{\abs{\xi-z_0}=R}
 \frac{F(\zeta,\xi)}{\xi-b}\,d\xi.
 $$
 Substituting this identity into the first formula gives the displayed
@@ -97,8 +97,8 @@ $$
 f(z)
 =
 \frac1{(2\pi i)^2}
-\int_{|\zeta-z_0|=R}
-\int_{|\xi-z_0|=R}
+\int_{\abs{\zeta-z_0}=R}
+\int_{\abs{\xi-z_0}=R}
 \frac{F(\zeta,\xi)}
 {(\zeta-z)(\xi-z)}
 \,d\xi\,d\zeta}.
@@ -121,11 +121,11 @@ $$
 For every $0<r<R$, the integrand in step [](#s1-2){.pf-ref} and its derivative
 with respect to $z$ are uniformly bounded for
 $$
-|z-z_0|\le r
+\abs{z-z_0}\le r
 $$
 and
 $$
-|\zeta-z_0|=|\xi-z_0|=R.
+\abs{\zeta-z_0}=\abs{\xi-z_0}=R.
 $$
 
 
@@ -136,25 +136,25 @@ $$
 M_R
 =
 \max
-|F(\zeta,\xi)|
+\abs{F(\zeta,\xi)}
 <\infty
 $$
-by joint continuity. If $|z-z_0|\le r$, then
+by joint continuity. If $\abs{z-z_0}\le r$, then
 $$
-|\zeta-z|
+\abs{\zeta-z}
 \ge
 R-r,
 \qquad
-|\xi-z|
+\abs{\xi-z}
 \ge
 R-r.
 $$
 Thus
 $$
-\left|
+\abs{
 \frac{F(\zeta,\xi)}
 {(\zeta-z)(\xi-z)}
-\right|
+}
 \le
 \frac{M_R}{(R-r)^2}.
 $$
@@ -197,8 +197,8 @@ $$
 f'(z)
 =
 \frac1{(2\pi i)^2}
-\int_{|\zeta-z_0|=R}
-\int_{|\xi-z_0|=R}
+\int_{\abs{\zeta-z_0}=R}
+\int_{\abs{\xi-z_0}=R}
 F(\zeta,\xi)
 \left[
 \frac1{(\zeta-z)^2(\xi-z)}

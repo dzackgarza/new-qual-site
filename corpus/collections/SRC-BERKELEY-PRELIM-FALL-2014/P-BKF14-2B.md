@@ -34,7 +34,7 @@ Either prove or describe a counterexample to the following statement: If a conti
 ::: {.solution}
 Define
 $$
-\phi(t)\coloneqq\max\{0,1-|t|\}
+\phi(t)\coloneqq\max\{0,1-\abs{t}\}
 $$
 and
 $$
@@ -85,11 +85,11 @@ The restriction of $f$ to every vertical line is bounded.
 
 On the line $x=c$,
 $$
-|f(c,y)|
+\abs{f(c,y)}
 =
-|c|\,|\phi(y-c^2)|
+\abs{c}\,\abs{\phi(y-c^2)}
 \le
-|c|,
+\abs{c},
 $$
 because $0\le\phi\le1$.
 
@@ -109,29 +109,29 @@ y=mx+b.
 $$
 If $f(x,mx+b)\ne0$, then
 $$
-|mx+b-x^2|<1.
+\abs{mx+b-x^2}<1.
 $$
 Consequently
 $$
 x^2
 \le
-|m|\,|x|+|b|+1.
+\abs{m}\,\abs{x}+\abs{b}+1.
 $$
-Writing $r=|x|$, this implies
+Writing $r=\abs{x}$, this implies
 $$
-r^2-|m|r-(|b|+1)\le0,
+r^2-\abs{m}r-(\abs{b}+1)\le0,
 $$
 and hence
 $$
-|x|
+\abs{x}
 \le
-\frac{|m|+\sqrt{m^2+4(|b|+1)}}2.
+\frac{\abs{m}+\sqrt{m^2+4(\abs{b}+1)}}2.
 $$
-Since $|\phi|\le1$, every point of the line therefore satisfies
+Since $\abs{\phi}\le1$, every point of the line therefore satisfies
 $$
-|f(x,mx+b)|
+\abs{f(x,mx+b)}
 \le
-\frac{|m|+\sqrt{m^2+4(|b|+1)}}2.
+\frac{\abs{m}+\sqrt{m^2+4(\abs{b}+1)}}2.
 $$
 Thus the restriction to the line is bounded.
 

@@ -176,7 +176,7 @@ The map $\Phi$ is closed.
 
 Let $F\subseteq E$ be closed, and define
 $$
-I(F)=\{f\in A:f|_F=0\}.
+I(F)=\{f\in A:f\restrict_F=0\}.
 $$
 For $x\in F$, every function in $I(F)$ vanishes at $x$, so
 $$
@@ -189,7 +189,7 @@ $$
 
 Conversely, let $x\notin F$. Since $F$ and $\{x\}$ are disjoint closed subsets, the separation lemma gives $f\in A$ such that
 $$
-f|_F=0,
+f\restrict_F=0,
 \qquad
 f(x)=1.
 $$

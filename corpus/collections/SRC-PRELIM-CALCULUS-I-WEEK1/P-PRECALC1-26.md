@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-26
 kind: problem
-title: Integral of $|x+1|$ over $[-3,3]$
+title: Integral of $\abs{x+1}$ over $[-3,3]$
 classification:
   areas:
   - prelim
@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Calculate $\int _ { - 3 } ^ { 3 } | x + 1 | d x .$
+Calculate $\int _ { - 3 } ^ { 3 } \abs{ x + 1 } d x .$
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ $$
 $$
 one has
 $$
-\boxed{|x+1|=-(x+1)}.
+\boxed{\abs{x+1}=-(x+1)}.
 $$
 
 
@@ -69,7 +69,7 @@ $$
 $$
 one has
 $$
-\boxed{|x+1|=x+1}.
+\boxed{\abs{x+1}=x+1}.
 $$
 
 
@@ -88,7 +88,7 @@ $$
 
 Therefore
 $$
-\int_{-3}^{3}|x+1|\,dx
+\int_{-3}^{3}\abs{x+1}\,dx
 =
 \int_{-3}^{-1}-(x+1)\,dx
 +
@@ -181,7 +181,7 @@ $$
 Hence
 $$
 \boxed{
-\int_{-3}^{3}|x+1|\,dx=10}.
+\int_{-3}^{3}\abs{x+1}\,dx=10}.
 $$
 
 

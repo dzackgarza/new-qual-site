@@ -660,7 +660,7 @@ d_1d_2=\gcd(2\times2\text{ minors}),
 $$
 and
 $$
-d_1d_2d_3=|\det N|.
+d_1d_2d_3=\abs{\det N}.
 $$
 By steps [](#s1-24){.pf-ref} through [](#s1-25){.pf-ref},
 $$

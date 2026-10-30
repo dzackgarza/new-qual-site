@@ -171,7 +171,7 @@ Since $E\cap U_x$ is $x=0$, this cokernel is
 $$
 \OO_{E\cap U_x}\,dt
 =
-\Omega_E|_{E\cap U_x}.
+\Omega_E\restrict_{E\cap U_x}.
 $$
 
 On the other chart

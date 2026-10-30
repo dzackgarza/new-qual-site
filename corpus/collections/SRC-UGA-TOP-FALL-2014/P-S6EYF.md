@@ -32,7 +32,7 @@ Y = \{ (x, y, z) \in \RR^3 \mid x^2 + y^2 + z^2 = 1 \}
 $$
 and $Z$ is the ellipsoid
 $$
-Z = \left\{ (x, y, z) \in \RR^3 \;\middle|\; x^2 + y^2 + \frac{z^2}{4} = 1 \right\}.
+Z = \left\{ (x, y, z) \in \RR^3 \;\st\; x^2 + y^2 + \frac{z^2}{4} = 1 \right\}.
 $$
 :::
 

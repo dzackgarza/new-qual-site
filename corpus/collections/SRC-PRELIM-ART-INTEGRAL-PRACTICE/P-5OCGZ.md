@@ -30,7 +30,7 @@ audit:
 :::
 
 ::: {.solution}
-Take $|x| < 2$.
+Take $\abs{x} < 2$.
 
 ::: pf
 

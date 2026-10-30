@@ -41,7 +41,7 @@ write
 $$
 I(S)
 =
-\{f\in C(X):f|_S=0\}.
+\{f\in C(X):f\restrict_S=0\}.
 $$
 
 ::: pf

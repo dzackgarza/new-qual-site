@@ -88,7 +88,7 @@ $$f(x) = \sum_{n=1}^\infty \frac{1}{2^n} f_n(x).$$
 :::
 
 ::: pf-step
-Uniform convergence and continuity: For all $x \in X$, $|\frac{1}{2^n} f_n(x)| \le \frac{1}{2^n}$. Since $\sum_{n=1}^\infty \frac{1}{2^n} = 1 < \infty$, the Weierstrass $M$-test proves that the series converges uniformly on $X$. Because each partial sum is continuous, the limit function $f$ is continuous.
+Uniform convergence and continuity: For all $x \in X$, $\abs{\frac{1}{2^n} f_n(x)} \le \frac{1}{2^n}$. Since $\sum_{n=1}^\infty \frac{1}{2^n} = 1 < \infty$, the Weierstrass $M$-test proves that the series converges uniformly on $X$. Because each partial sum is continuous, the limit function $f$ is continuous.
 :::
 
 ::: pf-step

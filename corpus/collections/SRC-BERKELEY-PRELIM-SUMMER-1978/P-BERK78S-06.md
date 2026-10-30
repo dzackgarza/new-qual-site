@@ -32,12 +32,12 @@ Let $f:\CC\to\CC$ be entire, and let $a,b>0$.
 
 1. If
    $$
-   |f(z)|\le a\sqrt{|z|}+b
+   \abs{f(z)}\le a\sqrt{\abs{z}}+b
    $$
    for all $z$, prove that $f$ is constant.
 2. What can one prove about $f$ if
    $$
-   |f(z)|\le a|z|^{5/2}+b
+   \abs{f(z)}\le a\abs{z}^{5/2}+b
    $$
    for all $z$?
 :::

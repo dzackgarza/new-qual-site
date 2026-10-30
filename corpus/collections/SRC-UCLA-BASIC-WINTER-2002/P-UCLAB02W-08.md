@@ -65,7 +65,7 @@ Taking dimensions gives the equality.
 
 The restriction
 $$
-S|_R:R\to X
+S\restrict_R:R\to X
 $$
 satisfies
 $$
@@ -76,11 +76,11 @@ $$
 
 ::: pf-proof
 
-The image of $S|_R$ is $S(R)$, and its kernel is
+The image of $S\restrict_R$ is $S(R)$, and its kernel is
 $$
-\ker(S|_R)=R\cap\ker S.
+\ker(S\restrict_R)=R\cap\ker S.
 $$
-Applying the rank-nullity theorem to $S|_R$ gives the formula.
+Applying the rank-nullity theorem to $S\restrict_R$ gives the formula.
 
 :::
 

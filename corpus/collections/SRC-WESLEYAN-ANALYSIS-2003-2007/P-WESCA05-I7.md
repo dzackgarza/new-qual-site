@@ -35,7 +35,7 @@ $$
 
 Equivalently, if $f$ is analytic on all of $\CC$ and there is $M<\infty$ such that
 $$
-|f(z)|\le M
+\abs{f(z)}\le M
 \qquad
 \text{for every }z\in\CC,
 $$

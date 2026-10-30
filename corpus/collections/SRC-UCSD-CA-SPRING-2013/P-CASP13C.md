@@ -22,7 +22,7 @@ $$
 \frac1{z(z-2)(z+2)}=-\frac1{4z}+\frac1{8(z-2)}+\frac1{8(z+2)}.
 $$
 
-For $0<|z|<2$,
+For $0<\abs{z}<2$,
 $$
 \frac1{z-2}=-\frac12\frac1{1-z/2}
 =-\frac12\sum_{n=0}^\infty \left(\frac z2\right)^n,
@@ -37,10 +37,10 @@ $$
 \boxed{
 f(z)=-\frac1{4z}
 +\frac1{16}\sum_{n=0}^\infty\bigl((-1)^n-1\bigr)
-\left(\frac z2\right)^n,\qquad 0<|z|<2.}
+\left(\frac z2\right)^n,\qquad 0<\abs{z}<2.}
 $$
 
-For $|z|>2$, factor instead in negative powers:
+For $\abs{z}>2$, factor instead in negative powers:
 $$
 \frac1{z-2}=\frac1z\frac1{1-2/z}
 =\frac1z\sum_{n=0}^\infty \left(\frac2z\right)^n,
@@ -54,6 +54,6 @@ $$
 \boxed{
 f(z)=-\frac1{4z}
 +\frac1{8z}\sum_{n=0}^\infty\bigl(1+(-1)^n\bigr)
-\left(\frac2z\right)^n,\qquad |z|>2.}
+\left(\frac2z\right)^n,\qquad \abs{z}>2.}
 $$
 :::

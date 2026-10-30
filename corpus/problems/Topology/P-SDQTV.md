@@ -37,7 +37,7 @@ audit:
 ::: pf
 
 ::: pf-step
-(a) A covering map is a surjective continuous map $p\colon\widetilde X\to X$ such that every $x\in X$ has an open neighborhood $U$ for which $p^{-1}(U)=\bigsqcup_{\alpha}U_\alpha$ is a disjoint union of open sets, each restriction $p|_{U_\alpha}\colon U_\alpha\to U$ being a homeomorphism; $\widetilde X$ is then a covering space of $X$.
+(a) A covering map is a surjective continuous map $p\colon\widetilde X\to X$ such that every $x\in X$ has an open neighborhood $U$ for which $p^{-1}(U)=\bigsqcup_{\alpha}U_\alpha$ is a disjoint union of open sets, each restriction $p\restrict_{U_\alpha}\colon U_\alpha\to U$ being a homeomorphism; $\widetilde X$ is then a covering space of $X$.
 A deck transformation of $p$ is a homeomorphism $h\colon\widetilde X\to\widetilde X$ satisfying $p\circ h=p$.
 :::
 

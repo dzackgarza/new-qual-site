@@ -101,7 +101,7 @@ $$
 of two quadrics in $\PP^3$.
 
 If a line $\ell$ met $X$ in length at least $3$, then each quadratic
-equation $Q_i|_\ell$ would be a section of $\OO_\ell(2)$ vanishing on a
+equation $Q_i\restrict_\ell$ would be a section of $\OO_\ell(2)$ vanishing on a
 subscheme of length at least $3$.  Hence both restrictions would vanish
 identically.  Thus
 $$

@@ -25,7 +25,7 @@ Let
 $$
 \vec A(x)
 =
-q\frac{x}{\|x\|^3}
+q\frac{x}{\norm{x}^3}
 $$
 on
 $$
@@ -72,7 +72,7 @@ $\varepsilon>0$ small enough that the centered sphere
 $$
 S_\varepsilon
 =
-\{x:\|x\|=\varepsilon\}
+\{x:\norm{x}=\varepsilon\}
 $$
 lies entirely inside $S$.
 
@@ -153,7 +153,7 @@ The outward unit normal is
 $$
 n=\frac{x}{\varepsilon}.
 $$
-Since $\|x\|=\varepsilon$,
+Since $\norm{x}=\varepsilon$,
 $$
 \vec A
 =

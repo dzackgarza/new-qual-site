@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA61
 kind: problem
-title: $\int_0^\pi\log(1-2a\cos x+a^2)\,dx=0$ for $\lvert a\rvert<1$
+title: $\int_0^\pi\log(1-2a\cos x+a^2)\,dx=0$ for $\abs{ a}<1$
 classification:
   areas: [real-analysis]
   topics: []
@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\int _ { 0 } ^ { \pi } \log ( 1 - 2 a \cos x + a ^ { 2 } ) d x = 0 { \mathrm { ~ f o r ~ } } | a | < 1$
+Show that $\int _ { 0 } ^ { \pi } \log ( 1 - 2 a \cos x + a ^ { 2 } ) d x = 0 { \mathrm { ~ f o r ~ } } \abs{ a } < 1$
 :::
 
 ::: {.solution}
 
-Assume $a\in\RR$ and $|a|<1$.
+Assume $a\in\RR$ and $\abs{a}<1$.
 
 ::: pf
 
@@ -50,7 +50,7 @@ $$
 
 ::: {.pf-step #s1-2}
 
-Since $|a|<1$, one has
+Since $\abs{a}<1$, one has
 $$
 \log(1-ae^{ix})
 =
@@ -74,7 +74,7 @@ $$
 =
 -\sum_{n=1}^{\infty}\frac{z^n}{n}
 $$
-converges absolutely for $|z|<1$. Substitute $z=ae^{\pm ix}$.
+converges absolutely for $\abs{z}<1$. Substitute $z=ae^{\pm ix}$.
 
 :::
 
@@ -99,7 +99,7 @@ By step [](#s1-1){.pf-ref}, the positive real number
 $$
 1-2a\cos x+a^2
 =
-|1-ae^{ix}|^2
+\abs{1-ae^{ix}}^2
 $$
 is the product of the two conjugate factors. Adding the conjugate logarithm
 series from step [](#s1-2){.pf-ref} gives
@@ -123,15 +123,15 @@ The series in step [](#s1-3){.pf-ref} converges uniformly in $x\in[0,\pi]$.
 
 For every $x$,
 $$
-\left|
+\abs{
 \frac{a^n}{n}\cos(nx)
-\right|
+}
 \leq
-\frac{|a|^n}{n}.
+\frac{\abs{a}^n}{n}.
 $$
 The numerical series
 $$
-\sum_{n=1}^{\infty}\frac{|a|^n}{n}
+\sum_{n=1}^{\infty}\frac{\abs{a}^n}{n}
 $$
 converges, so the Weierstrass $M$-test applies.
 

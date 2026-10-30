@@ -69,7 +69,7 @@ $$
 $$
 is contained in
 $$
-[y-(r+|x-y|),y+(r+|x-y|)],
+[y-(r+\abs{x-y}),y+(r+\abs{x-y})],
 $$
 and the strict inequality persists after the arbitrarily small increase of the denominator.
 Hence $M\nu(y)>t$ for all $y$ near $x$.
@@ -82,14 +82,14 @@ $$
 $$
 Enlarging $r_x$ slightly if necessary, choose an open interval $I_x$ centered at $x$ such that
 $$
-\nu(I_x)>t|I_x|.
+\nu(I_x)>t\setmeasure{I_x}.
 $$
 The intervals $(I_x)_{x\in F}$ form an open cover of $F$, so compactness gives a finite subcover.
 
 From this finite family choose a disjoint subfamily $I_1,\ldots,I_N$ by repeatedly taking an interval of maximal length and discarding all intervals that meet it.
 Every discarded interval $J$ meets some selected $I_j$ with
 $$
-|J|\le|I_j|.
+\setmeasure{J}\le\setmeasure{I_j}.
 $$
 Hence $J$ is contained in the concentric interval $3I_j$ of three times the length.
 Therefore
@@ -100,7 +100,7 @@ It follows that
 $$
 \begin{aligned}
 m(F)
-&\le3\sum_{j=1}^N|I_j|\\
+&\le3\sum_{j=1}^N\setmeasure{I_j}\\
 &<\frac3t\sum_{j=1}^N\nu(I_j)\\
 &\le\frac{3\nu(\RR)}t,
 \end{aligned}

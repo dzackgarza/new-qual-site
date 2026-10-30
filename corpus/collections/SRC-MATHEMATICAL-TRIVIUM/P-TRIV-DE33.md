@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\delta ( \alpha x ) = \frac { 1 } { \alpha } \delta ( x )$ , and more generally, $\delta ( f ( x ) ) = \sum _ { i } { \frac { \delta ( x - x _ { i } ) } { | f ^ { \prime } ( x _ { i } ) | } }$ where $x _ { i }$ are the root of f , i.e. $f ( x _ { i } ) = 0$
+Show that $\delta ( \alpha x ) = \frac { 1 } { \alpha } \delta ( x )$ , and more generally, $\delta ( f ( x ) ) = \sum _ { i } { \frac { \delta ( x - x _ { i } ) } { \abs{ f ^ { \prime } ( x _ { i } ) } } }$ where $x _ { i }$ are the root of f , i.e. $f ( x _ { i } ) = 0$
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ Assume throughout that the zeros $x_i$ of $f$ are simple, so $f'(x_i)\ne0$. The 
 For every test function $\phi$,
 $$
 \langle\delta(\alpha x),\phi\rangle
-=\frac1{|\alpha|}\phi(0).
+=\frac1{\abs{\alpha}}\phi(0).
 $$
 
 
@@ -39,9 +39,9 @@ $$
 Using $u=\alpha x$ and reversing the integration limits when $\alpha<0$ gives
 $$
 \int_{-\infty}^{\infty}\delta(\alpha x)\phi(x)\,dx
-=\frac1{|\alpha|}
+=\frac1{\abs{\alpha}}
 \int_{-\infty}^{\infty}\delta(u)\phi(u/\alpha)\,du
-=\frac1{|\alpha|}\phi(0).
+=\frac1{\abs{\alpha}}\phi(0).
 $$
 
 :::
@@ -52,13 +52,13 @@ $$
 
 Therefore the correct scaling identity is
 $$
-\boxed{\delta(\alpha x)=\frac1{|\alpha|}\delta(x)}.
+\boxed{\delta(\alpha x)=\frac1{\abs{\alpha}}\delta(x)}.
 $$
 
 
 ::: pf-proof
 
-Step [](#s1-1){.pf-ref} agrees with the action of $|\alpha|^{-1}\delta$ on every test function. If the source implicitly assumes $\alpha>0$, this reduces to its stated formula $\delta(\alpha x)=\alpha^{-1}\delta(x)$.
+Step [](#s1-1){.pf-ref} agrees with the action of $\abs{\alpha}^{-1}\delta$ on every test function. If the source implicitly assumes $\alpha>0$, this reduces to its stated formula $\delta(\alpha x)=\alpha^{-1}\delta(x)$.
 
 :::
 
@@ -82,7 +82,7 @@ Since $f'(x_i)\ne0$, the inverse function theorem supplies such an interval. The
 For every test function $\phi$ supported in the union of these intervals,
 $$
 \int\delta(f(x))\phi(x)\,dx
-=\sum_i\frac{\phi(x_i)}{|f'(x_i)|}.
+=\sum_i\frac{\phi(x_i)}{\abs{f'(x_i)}}.
 $$
 
 
@@ -92,8 +92,8 @@ On $U_i$, set $u=f(x)$. The change-of-variables formula gives
 $$
 \int_{U_i}\delta(f(x))\phi(x)\,dx
 =\int_{f(U_i)}\delta(u)
-\frac{\phi(f_i^{-1}(u))}{|f'(f_i^{-1}(u))|}\,du
-=\frac{\phi(x_i)}{|f'(x_i)|}.
+\frac{\phi(f_i^{-1}(u))}{\abs{f'(f_i^{-1}(u))}}\,du
+=\frac{\phi(x_i)}{\abs{f'(x_i)}}.
 $$
 Summing over the disjoint neighborhoods gives the identity. Regions containing no zero contribute nothing because the pullback of $\delta_0$ is supported on $f^{-1}(0)$.
 
@@ -106,7 +106,7 @@ Summing over the disjoint neighborhoods gives the identity. Regions containing n
 Hence, distributionally,
 $$
 \boxed{
-\delta(f(x))=\sum_i\frac{\delta(x-x_i)}{|f'(x_i)|}}.
+\delta(f(x))=\sum_i\frac{\delta(x-x_i)}{\abs{f'(x_i)}}}.
 $$
 
 

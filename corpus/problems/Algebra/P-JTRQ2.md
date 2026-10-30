@@ -26,7 +26,7 @@ State Baer's Criterion and the characterization of injective modules over PIDs (
 :::
 
 ::: {.solution}
-A left $R$-module $Q$ is injective if for every injective $R$-linear map $A\hookrightarrow B$ and every $R$-linear $f:A\to Q$ there is an $R$-linear $g:B\to Q$ with $g|_A=f$. Equivalently, the contravariant functor $\Hom_R(-,Q)$ is exact.
+A left $R$-module $Q$ is injective if for every injective $R$-linear map $A\hookrightarrow B$ and every $R$-linear $f:A\to Q$ there is an $R$-linear $g:B\to Q$ with $g\restrict_A=f$. Equivalently, the contravariant functor $\Hom_R(-,Q)$ is exact.
 
 Baer's criterion: a left $R$-module $Q$ is injective if and only if every $R$-linear map $f:I\to Q$ from a left ideal $I\subseteq R$ extends to an $R$-linear map $R\to Q$.
 

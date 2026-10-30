@@ -23,12 +23,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ act sharply $2$-transitively on a set $X$ with $|X|\geq2$.
+Let $G$ act sharply $2$-transitively on a set $X$ with $\cardinality{X}\geq2$.
 Put
 $$
 K=\{1\}\cup\{g\in G:g\text{ fixes no point of }X\}.
 $$
-Prove that $|K|=|X|$. When $X$ is finite, also prove that
+Prove that $\cardinality{K}=\cardinality{X}$. When $X$ is finite, also prove that
 $K$ is a normal subgroup, the Frobenius kernel of the action.
 :::
 
@@ -44,7 +44,7 @@ derangement. We use the axiom of choice for infinite cardinalities.
 
 ::: {.pf-step #s1}
 
-If $X$ is finite of size $n\geq2$, then $|K|=n$.
+If $X$ is finite of size $n\geq2$, then $\cardinality{K}=n$.
 
 ::: pf-proof
 
@@ -53,10 +53,10 @@ $$
 G\longrightarrow\{(a,b)\in X^2:a\ne b\},
 \qquad g\longmapsto(gx,gy)
 $$
-a bijection. Thus $|G|=n(n-1)$. For each $a\in X$,
+a bijection. Thus $\cardinality{G}=n(n-1)$. For each $a\in X$,
 its stabilizer $G_a$ acts regularly on $X\setminus\{a\}$:
 there is exactly one element taking any chosen point
-of that complement to any other. Hence $|G_a|=n-1$.
+of that complement to any other. Hence $\cardinality{G_a}=n-1$.
 
 No nonidentity element belongs to two different point
 stabilizers, since it would fix two points. Therefore
@@ -64,7 +64,7 @@ the number of nonidentity elements having a fixed point
 is exactly $n(n-2)$. Their complement in $G$ is $K$,
 including the identity. Consequently
 $$
-|K|=n(n-1)-n(n-2)=n.
+\cardinality{K}=n(n-1)-n(n-2)=n.
 $$
 This includes $n=2$, when every point stabilizer is trivial.
 
@@ -117,7 +117,7 @@ set of involutions and $i\in J$, then $iJ\subseteq K$.
 
 ::: {.pf-step #s4}
 
-If $X$ is infinite, then $|K|=|X|$ as well.
+If $X$ is infinite, then $\cardinality{K}=\cardinality{X}$ as well.
 
 ::: pf-proof
 
@@ -125,7 +125,7 @@ Deleting one point from an infinite set does not change
 its cardinality: choose a sequence of distinct points
 starting at that point, shift along the sequence, and
 fix every point outside it. By Hessenberg's theorem, an
-infinite set $X$ satisfies $|X\times X|=|X|$.
+infinite set $X$ satisfies $\cardinality{X\times X}=\cardinality{X}$.
 
 Now fix $x\in X$ and an involution $i$, which exists by
 step [](#s2){.pf-ref}. The swaps of $x$ with each $y\ne x$ give an
@@ -134,10 +134,10 @@ is injective on $J$ and takes it into $K$ by step [](#s3){.pf-ref}.
 The ordered-pair map in step [](#s1){.pf-ref} is a bijection even
 when $X$ is infinite. We therefore have
 $$
-|X|=|X\setminus\{x\}|\leq |J|=|iJ|
-\leq |K|\leq |G|\leq |X^2|=|X|.
+\cardinality{X}=\cardinality{X\setminus\{x\}}\leq \cardinality{J}=\cardinality{iJ}
+\leq \cardinality{K}\leq \cardinality{G}\leq \cardinality{X^2}=\cardinality{X}.
 $$
-Hence $|K|=|X|$.
+Hence $\cardinality{K}=\cardinality{X}$.
 
 :::
 
@@ -155,13 +155,13 @@ preserved by conjugation, because conjugation carries
 fixed points to fixed points. It remains to prove
 closure under multiplication.
 
-Suppose first that $n=|X|$ is even. An involution is a
+Suppose first that $n=\cardinality{X}$ is even. An involution is a
 product of disjoint transpositions and fixed points.
 Its number of fixed points has the same parity as $n$
 and is at most one, so it has none. For any $x$, the
 map $J\to X\setminus\{x\}$, $j\mapsto jx$, is bijective:
 its inverse sends $y$ to the unique swap of $x,y$.
-Hence $|J|=n-1$. Step [](#s1){.pf-ref} says that there are exactly
+Hence $\cardinality{J}=n-1$. Step [](#s1){.pf-ref} says that there are exactly
 $n-1$ derangements, so $K=\{1\}\cup J$. A product
 of distinct involutions belongs to $K$ by step [](#s3){.pf-ref},
 and a square of an involution is one. Thus $K$ is closed.
@@ -171,7 +171,7 @@ exactly one fixed point by the same parity argument.
 There is an involution fixing each point: conjugate
 any involution by an element taking its fixed point
 to the desired point. Step [](#s2){.pf-ref} gives uniqueness.
-Consequently $|J|=n$. For a fixed $i\in J$, the subset
+Consequently $\cardinality{J}=n$. For a fixed $i\in J$, the subset
 $iJ\subseteq K$ has $n$ elements and hence equals $K$
 by step [](#s1){.pf-ref}. If $a=ij$ and $b=ik$ belong to $K$,
 with $j,k\in J$, then
@@ -197,7 +197,7 @@ Whenever $K$ is a subgroup, it acts regularly on $X$.
 
 The set $K$ is conjugation invariant as above, so such
 a subgroup is normal. Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} imply
-$|K|=|X|\geq2$, hence $K$ contains a nonidentity element.
+$\cardinality{K}=\cardinality{X}\geq2$, hence $K$ contains a nonidentity element.
 For fixed $x$, the orbit $Kx$ contains a point other
 than $x$, since every nonidentity element of $K$ is
 fixed-point-free. Normality makes this orbit invariant

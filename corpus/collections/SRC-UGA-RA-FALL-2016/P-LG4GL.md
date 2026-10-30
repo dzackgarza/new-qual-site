@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LG4GL
 kind: problem
-title: $\left(\int\frac{|\phi|^n}{1+x^2}\,dx\right)^{1/n}\to\|\phi\|_\infty$
+title: $\left(\int\frac{\abs{\phi}^n}{1+x^2}\,dx\right)^{1/n}\to\norm{\phi}_\infty$
 classification:
   areas:
   - real-analysis
@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies the equality
 $$
-\lim _{n \to \infty} \left(\int _{\RR} \frac{|\phi(x)|^{n}}{1+x^{2}} \, dx \right) ^ {\frac{1}{n}} 
+\lim _{n \to \infty} \left(\int _{\RR} \frac{\abs{\phi(x)}^{n}}{1+x^{2}} \, dx \right) ^ {\frac{1}{n}} 
 = \norm{\phi}_\infty.
 $$
 :::
@@ -34,13 +34,13 @@ $$
 
 Put
 $$
-M:=\|\phi\|_\infty,
+M:=\norm{\phi}_\infty,
 \qquad
-A_n:=\left(\int_{\RR}\frac{|\phi(x)|^n}{1+x^2}\,dx\right)^{1/n}.
+A_n:=\left(\int_{\RR}\frac{\abs{\phi(x)}^n}{1+x^2}\,dx\right)^{1/n}.
 $$
 If $M=0$, then $\phi=0$ a.e. and $A_n=0$ for every $n$. Assume $M>0$.
 
-Since $|\phi|\le M$ a.e.,
+Since $\abs{\phi}\le M$ a.e.,
 $$
 A_n^n\le M^n\int_{\RR}\frac{dx}{1+x^2}=\pi M^n,
 $$
@@ -51,7 +51,7 @@ $$
 
 Now fix $0<\varepsilon<M$ and let
 $$
-E_\varepsilon:=\{x:|\phi(x)|>M-\varepsilon\}.
+E_\varepsilon:=\{x:\abs{\phi(x)}>M-\varepsilon\}.
 $$
 By the definition of essential supremum, $m(E_\varepsilon)>0$. Since $(1+x^2)^{-1}>0$ everywhere,
 $$
@@ -75,6 +75,6 @@ $$
 $$
 Together with the upper bound,
 $$
-\boxed{\lim_{n\to\infty}A_n=\|\phi\|_\infty.}
+\boxed{\lim_{n\to\infty}A_n=\norm{\phi}_\infty.}
 $$
 :::

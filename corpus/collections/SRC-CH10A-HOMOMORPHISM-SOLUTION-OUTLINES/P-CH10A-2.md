@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the mapping given in Example 3, the map $\phi : \RR^* \to \RR^*$ defined by $x \mapsto |x|$, is a homomorphism.
+Prove that the mapping given in Example 3, the map $\phi : \RR^* \to \RR^*$ defined by $x \mapsto \abs{x}$, is a homomorphism.
 :::
 
 ::: {.solution}
-Let $\phi : \RR ^ { * } \to \RR ^ { * }$ be defined by $x \mapsto | x |$ . Then $\phi ( x y ) = | x y | = | x | | y | = \phi ( x ) \phi ( y )$ so $\phi$ is a homomorphism.
+Let $\phi : \RR ^ { * } \to \RR ^ { * }$ be defined by $x \mapsto \abs{ x }$ . Then $\phi ( x y ) = \abs{ x y } = \abs{ x } \abs{ y } = \phi ( x ) \phi ( y )$ so $\phi$ is a homomorphism.
 :::

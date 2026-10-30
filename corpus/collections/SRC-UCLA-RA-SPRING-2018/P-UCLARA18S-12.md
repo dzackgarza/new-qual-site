@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 12. Let $f(z)$ be bounded and holomorphic on the unit disc
 $$
-\DD=\{z:|z|<1\}.
+\DD=\{z:\abs{z}<1\}.
 $$
 Prove that for every $w\in\DD$,
 $$
@@ -69,7 +69,7 @@ r\,d\theta\,dr.
 \end{aligned}
 $$
 For fixed $0<r<1$, the Taylor series of $f$ converges uniformly on the
-circle $|z|=r$, so
+circle $\abs{z}=r$, so
 $$
 \begin{aligned}
 \int_0^{2\pi}
@@ -123,28 +123,28 @@ $$
 \frac1{(1-\xi)^2}
 =
 \sum_{n=0}^{\infty}(n+1)\xi^n
-\qquad(|\xi|<1).
+\qquad(\abs{\xi}<1).
 $$
 Take
 $$
 \xi=\overline zw.
 $$
-Since $|z|<1$,
+Since $\abs{z}<1$,
 $$
-|\xi|
+\abs{\xi}
 \le
-|w|
+\abs{w}
 <1.
 $$
 Moreover,
 $$
-|(n+1)\overline z^{\,n}w^n|
+\abs{(n+1)\overline z^{\,n}w^n}
 \le
-(n+1)|w|^n,
+(n+1)\abs{w}^n,
 $$
 and
 $$
-\sum_{n=0}^{\infty}(n+1)|w|^n
+\sum_{n=0}^{\infty}(n+1)\abs{w}^n
 <\infty.
 $$
 The Weierstrass $M$-test therefore gives uniform convergence in $z$.
@@ -163,17 +163,17 @@ $f(z)\,dA(z)$.
 
 Let
 $$
-\|f\|_\infty
+\norm{f}_\infty
 =
-\sup_{z\in\DD}|f(z)|
+\sup_{z\in\DD}\abs{f(z)}
 <\infty.
 $$
 The terms satisfy
 $$
-|f(z)(n+1)\overline z^{\,n}w^n|
+\abs{f(z)(n+1)\overline z^{\,n}w^n}
 \le
-\|f\|_\infty
-(n+1)|w|^n.
+\norm{f}_\infty
+(n+1)\abs{w}^n.
 $$
 The right-hand side is summable in $n$ and independent of $z$, while
 $\DD$ has finite area. Equivalently, the kernel series converges

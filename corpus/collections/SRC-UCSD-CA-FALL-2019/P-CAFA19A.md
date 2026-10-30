@@ -25,7 +25,7 @@ For
 $$
 F(z)=\frac{z^2}{(z^2+1)(z^2+4)},
 $$
-integrate over the upper semicircle. Since $F(z)=O(|z|^{-2})$, the arc
+integrate over the upper semicircle. Since $F(z)=O(\abs{z}^{-2})$, the arc
 integral tends to $0$. The poles in the upper half-plane are $i$ and $2i$,
 with residues
 $$

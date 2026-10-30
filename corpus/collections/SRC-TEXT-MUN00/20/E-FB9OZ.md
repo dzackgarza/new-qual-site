@@ -38,7 +38,7 @@ $$
 
 First take $x=(x_i)\in c_0$. Given $0<\varepsilon<1$, choose $N$ such that
 $$
-|x_i|<\varepsilon\qquad(i>N).
+\abs{x_i}<\varepsilon\qquad(i>N).
 $$
 Let
 $$
@@ -46,13 +46,13 @@ y=(x_1,\dots,x_N,0,0,\dots)\in\RR^\infty.
 $$
 Then
 $$
-\bar\rho(x,y)=\sup_{i>N}|x_i|<\varepsilon,
+\bar\rho(x,y)=\sup_{i>N}\abs{x_i}<\varepsilon,
 $$
 so every uniform neighborhood of $x$ meets $\RR^\infty$.
 
-Conversely, suppose $x$ does not converge to $0$. Then there is $\varepsilon\in(0,1)$ such that $|x_i|\ge\varepsilon$ for infinitely many $i$. For any eventually-zero $y$, choose such an $i$ beyond the last nonzero coordinate of $y$. Then
+Conversely, suppose $x$ does not converge to $0$. Then there is $\varepsilon\in(0,1)$ such that $\abs{x_i}\ge\varepsilon$ for infinitely many $i$. For any eventually-zero $y$, choose such an $i$ beyond the last nonzero coordinate of $y$. Then
 $$
-\bar\rho(x,y)\ge\min\{|x_i|,1\}\ge\varepsilon.
+\bar\rho(x,y)\ge\min\{\abs{x_i},1\}\ge\varepsilon.
 $$
 Hence the uniform ball $B_{\bar\rho}(x,\varepsilon)$ contains no eventually-zero sequence. Thus $x$ is not in the closure.
 :::

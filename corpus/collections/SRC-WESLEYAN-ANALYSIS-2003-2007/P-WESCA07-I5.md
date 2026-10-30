@@ -22,7 +22,7 @@ $$
 $$
 Show that
 $$
-\left|\int_\gamma z\,dz\right|
+\abs{\int_\gamma z\,dz}
 \le \frac{\pi^2}{2}+\frac{\pi^3}{3}.
 $$
 :::
@@ -55,21 +55,21 @@ using the product rule.
 
 For $0\le t\le\pi$,
 $$
-|\gamma(t)|=t
+\abs{\gamma(t)}=t
 \qquad\text{and}\qquad
-|\gamma'(t)|\le1+t.
+\abs{\gamma'(t)}\le1+t.
 $$
 
 
 ::: pf-proof
 
-Since $|e^{it}|=1$,
+Since $\abs{e^{it}}=1$,
 $$
-|\gamma(t)|=t.
+\abs{\gamma(t)}=t.
 $$
 Also
 $$
-|\gamma'(t)|=|1+it|=\sqrt{1+t^2}\le1+t.
+\abs{\gamma'(t)}=\abs{1+it}=\sqrt{1+t^2}\le1+t.
 $$
 
 :::
@@ -80,7 +80,7 @@ $$
 
 One has
 $$
-\left|\int_\gamma z\,dz\right|
+\abs{\int_\gamma z\,dz}
 \le
 \int_0^\pi t(1+t)\,dt.
 $$
@@ -95,9 +95,9 @@ $$
 $$
 Therefore, by the triangle inequality and step [](#s1-2){.pf-ref},
 $$
-\left|\int_\gamma z\,dz\right|
+\abs{\int_\gamma z\,dz}
 \le
-\int_0^\pi |\gamma(t)|\,|\gamma'(t)|\,dt
+\int_0^\pi \abs{\gamma(t)}\,\abs{\gamma'(t)}\,dt
 \le
 \int_0^\pi t(1+t)\,dt.
 $$
@@ -111,7 +111,7 @@ $$
 Hence
 $$
 \boxed{
-\left|\int_\gamma z\,dz\right|
+\abs{\int_\gamma z\,dz}
 \le \frac{\pi^2}{2}+\frac{\pi^3}{3}.}
 $$
 

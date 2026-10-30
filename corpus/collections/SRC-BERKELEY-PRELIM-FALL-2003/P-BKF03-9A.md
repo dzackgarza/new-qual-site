@@ -37,7 +37,7 @@ $$
 whenever the $a_j$ are $0$ or $2$. Prove that there is a constant $C_0$ such that
 
 $$
-|f(x) - f(y)| \leq C_0 |x - y|^{(\log 2)/(\log 3)}
+\abs{f(x) - f(y)} \leq C_0 \abs{x - y}^{(\log 2)/(\log 3)}
 $$
 
 for all $x, y \in [0, 1]$.

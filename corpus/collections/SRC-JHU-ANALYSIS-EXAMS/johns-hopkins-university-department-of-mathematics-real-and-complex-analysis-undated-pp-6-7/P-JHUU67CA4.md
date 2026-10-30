@@ -28,17 +28,17 @@ audit:
 Let $U$ be an open subset of $\CC$.
 We use the notation
 
-$$\|f\|_{L^2(U)} = \left(\int_U |f|^2 \, dx \, dy\right)^{1/2}.$$
+$$\norm{f}_{L^2(U)} = \left(\int_U \abs{f}^2 \, dx \, dy\right)^{1/2}.$$
 
 - Let $f : U \to \CC$ be a holomorphic function.
   Show that for any compact set $K \subset U$, there is a constant $C_K$ such that
 
-$$\sup_{z \in K} |f(z)| \leq C_K \|f\|_{L^2(U)}.$$
+$$\sup_{z \in K} \abs{f(z)} \leq C_K \norm{f}_{L^2(U)}.$$
 
-- Prove that $\{f \text{ is holomorphic on } U : \|f\|_{L^2(U)} \leq 1\}$ is a normal family.
+- Prove that $\{f \text{ is holomorphic on } U : \norm{f}_{L^2(U)} \leq 1\}$ is a normal family.
 
 - Suppose $U$ is the punctured disc $D(0,1) \setminus \{0\}$.
-  If $f$ is holomorphic on $U$ and $\|f\|_{L^2(U)} < \infty$, prove that $z = 0$ is a removable singularity of $f$.
+  If $f$ is holomorphic on $U$ and $\norm{f}_{L^2(U)} < \infty$, prove that $z = 0$ is a removable singularity of $f$.
 :::
 
 ::: {.solution}
@@ -59,12 +59,12 @@ Cauchy's formula at the center and Cauchy–Schwarz give
 $$
 f(a)=\frac1{2\pi}\int_0^{2\pi}f(a+\rho e^{it})\,dt,
 \qquad
-|f(a)|^2\leq\frac1{2\pi}\int_0^{2\pi}|f(a+\rho e^{it})|^2\,dt
+\abs{f(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}\abs{f(a+\rho e^{it})}^2\,dt
 $$
 [@SS03; @Fol13]. Multiplying by $2\pi\rho$ and integrating
 over $0<\rho<r$ yields, by polar coordinates,
 $$
-\pi r^2|f(a)|^2\leq\int_{D(a,r)}|f|^2\,dA.
+\pi r^2\abs{f(a)}^2\leq\int_{D(a,r)}\abs{f}^2\,dA.
 $$
 
 :::
@@ -84,7 +84,7 @@ the closed set $\CC\setminus U$; this distance is
 positive by compactness and openness. For $U=\CC$,
 take $r=1$. Step [](#s1){.pf-ref} gives
 $$
-\sup_{a\in K}|f(a)|\leq\frac1{\sqrt\pi r}\|f\|_{L^2(U)}.
+\sup_{a\in K}\abs{f(a)}\leq\frac1{\sqrt\pi r}\norm{f}_{L^2(U)}.
 $$
 Thus $C_K=1/(\sqrt\pi r)$ works. If the norm is infinite,
 the inequality holds in the extended sense. For empty
@@ -115,7 +115,7 @@ holomorphic limit. When $U$ is empty the assertion is immediate.
 
 In fact the limit remains in the family: pointwise
 convergence and Fatou's lemma give
-$\int_U|f|^2\,dA\leq\liminf_j\int_U|f_{n_j}|^2\,dA\leq1$
+$\int_U\abs{f}^2\,dA\leq\liminf_j\int_U\abs{f_{n_j}}^2\,dA\leq1$
 [@Fol13].
 
 :::
@@ -128,18 +128,18 @@ Square integrability makes the isolated singularity removable.
 
 ::: pf-proof
 
-Now let $U=\{0<|z|<1\}$ and $\int_U|f|^2\,dA<\infty$.
-For $0<|a|<1/2$, the closed disk of radius $r=|a|/2$
+Now let $U=\{0<\abs{z}<1\}$ and $\int_U\abs{f}^2\,dA<\infty$.
+For $0<\abs{a}<1/2$, the closed disk of radius $r=\abs{a}/2$
 centered at $a$ lies in $U$. Step [](#s1){.pf-ref} implies
 $$
-|a|^2|f(a)|^2
-\leq\frac4\pi\int_{D(a,|a|/2)}|f|^2\,dA
-\leq\frac4\pi\int_{0<|z|<3|a|/2}|f(z)|^2\,dA.
+\abs{a}^2\abs{f(a)}^2
+\leq\frac4\pi\int_{D(a,\abs{a}/2)}\abs{f}^2\,dA
+\leq\frac4\pi\int_{0<\abs{z}<3\abs{a}/2}\abs{f(z)}^2\,dA.
 $$
 The last integral tends to zero as $a\to0$. To see this,
 the indicators of shrinking punctured disks tend pointwise
 to zero on $U$ and are dominated by one; dominated
-convergence applies to the integrable function $|f|^2$
+convergence applies to the integrable function $\abs{f}^2$
 [@Fol13]. Hence $af(a)\to0$.
 
 The function $h(z)=zf(z)$ is holomorphic on the punctured

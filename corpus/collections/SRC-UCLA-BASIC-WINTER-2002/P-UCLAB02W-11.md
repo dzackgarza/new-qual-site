@@ -38,8 +38,8 @@ For the standard upper-triangular form, use induction on $n=\dim V$.
 Over $\CC$, the adjoint $T^*$ has an eigenvector $0\ne w\in V$.
 Let $W=\CC w$.
 Then $W$ is $T^*$-invariant, so by the orthogonal-complement criterion of the hint, $W^\perp$ is $T$-invariant.
-By induction, $T|_{W^\perp}$ has an orthonormal basis in which its matrix is upper triangular.
-Appending the unit vector $w/\|w\|$ gives an orthonormal basis of $V$ in which the matrix of $T$ is upper triangular, i.e. its entries vanish for $i>j$.
+By induction, $T\restrict_{W^\perp}$ has an orthonormal basis in which its matrix is upper triangular.
+Appending the unit vector $w/\norm{w}$ gives an orthonormal basis of $V$ in which the matrix of $T$ is upper triangular, i.e. its entries vanish for $i>j$.
 
 Finally, reverse the order of this orthonormal basis.
 Conjugation by the reversal permutation matrix converts an upper-triangular matrix to a lower-triangular one, so in the reversed basis the entries satisfy

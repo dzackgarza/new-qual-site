@@ -36,7 +36,7 @@ Prove that
 $$
 a_0z^n+a_1z^{n-1}+\cdots+a_n=0
 $$
-has no roots in the disk $|z|<1$.
+has no roots in the disk $\abs{z}<1$.
 :::
 
 ::: {.solution}

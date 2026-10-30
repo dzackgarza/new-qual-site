@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAS24A
 kind: problem
-title: $|f|^2+|f|$ harmonic implies $f$ constant
+title: $\abs{f}^2+\abs{f}$ harmonic implies $f$ constant
 classification:
   areas:
   - complex-analysis
@@ -14,22 +14,22 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be a holomorphic function on a region $G$ such that $|f|^2 + |f|$ is harmonic on $G$.
+Let $f$ be a holomorphic function on a region $G$ such that $\abs{f}^2 + \abs{f}$ is harmonic on $G$.
 Prove $f$ is constant.
 :::
 
 ::: {.solution}
-On the open set where $f\ne0$, the function $|f|$ is smooth and the standard
+On the open set where $f\ne0$, the function $\abs{f}$ is smooth and the standard
 Laplacian identities for a holomorphic function give
 $$
-\Delta |f|^2=4|f'|^2,
+\Delta \abs{f}^2=4\abs{f'}^2,
 \qquad
-\Delta |f|=\frac{|f'|^2}{|f|}.
+\Delta \abs{f}=\frac{\abs{f'}^2}{\abs{f}}.
 $$
 Hence on $\{f\ne0\}$,
 $$
-0=\Delta(|f|^2+|f|)
-=|f'|^2\left(4+\frac1{|f|}\right).
+0=\Delta(\abs{f}^2+\abs{f})
+=\abs{f'}^2\left(4+\frac1{\abs{f}}\right).
 $$
 Thus $f'=0$ at every point where $f\ne0$.
 

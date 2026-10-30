@@ -28,54 +28,54 @@ Let $C ^ { 1 / 3 }$ be the set of real valued functions f on the closed interval
 
 1. $f ( 0 ) = 0 ;$
 
-2. $\| f \|$ is finite, where $b y$ definition
+2. $\norm{ f }$ is finite, where $b y$ definition
 
 $$
-\| f \| = \operatorname* { s u p } \left\{ { \frac { | f ( x ) - f ( y ) | } { | x - y | ^ { 1 / 3 } } } | x \neq y \right\} .
+\norm{ f } = \operatorname* { s u p } \left\{ { \frac { \abs{ f ( x ) - f ( y ) } } { \abs{ x - y } ^ { 1 / 3 } } } \st x \neq y \right\} .
 $$
 
-Verify that $\| \cdot \|$ is a norm for the space $C ^ { 1 / 3 }$ , and prove that $C ^ { 1 / 3 }$ is complete with respect to this norm.
+Verify that $\norm{ \cdot }$ is a norm for the space $C ^ { 1 / 3 }$ , and prove that $C ^ { 1 / 3 }$ is complete with respect to this norm.
 :::
 
 ::: {.solution}
 For $f\in C^{1/3}$, write
 $$
-\|f\|_{1/3}
+\norm{f}_{1/3}
 :=\sup_{x\ne y}
-\frac{|f(x)-f(y)|}{|x-y|^{1/3}}.
+\frac{\abs{f(x)-f(y)}}{\abs{x-y}^{1/3}}.
 $$
 
 ::: pf
 
 ::: pf-step
 
-The functional $\|\cdot\|_{1/3}$ is a norm on $C^{1/3}$.
+The functional $\norm{\cdot}_{1/3}$ is a norm on $C^{1/3}$.
 
 ::: pf-proof
 
-Nonnegativity is immediate. If $\|f\|_{1/3}=0$, then
+Nonnegativity is immediate. If $\norm{f}_{1/3}=0$, then
 $$
-|f(x)-f(y)|=0
+\abs{f(x)-f(y)}=0
 $$
 for all $x,y$, so $f$ is constant. Since $f(0)=0$, this constant is $0$, hence $f=0$.
-Conversely $\|0\|_{1/3}=0$.
+Conversely $\norm{0}_{1/3}=0$.
 
 For $a\in\RR$,
 $$
-\|af\|_{1/3}
-=|a|\,\|f\|_{1/3}.
+\norm{af}_{1/3}
+=\abs{a}\,\norm{f}_{1/3}.
 $$
 Finally, for $x\ne y$,
 $$
-\frac{|(f+g)(x)-(f+g)(y)|}{|x-y|^{1/3}}
+\frac{\abs{(f+g)(x)-(f+g)(y)}}{\abs{x-y}^{1/3}}
 \le
-\frac{|f(x)-f(y)|}{|x-y|^{1/3}}
+\frac{\abs{f(x)-f(y)}}{\abs{x-y}^{1/3}}
 +
-\frac{|g(x)-g(y)|}{|x-y|^{1/3}}.
+\frac{\abs{g(x)-g(y)}}{\abs{x-y}^{1/3}}.
 $$
 Taking the supremum gives
 $$
-\|f+g\|_{1/3}\le \|f\|_{1/3}+\|g\|_{1/3}.
+\norm{f+g}_{1/3}\le \norm{f}_{1/3}+\norm{g}_{1/3}.
 $$
 Thus all norm axioms hold.
 
@@ -91,13 +91,13 @@ The Hölder norm controls the uniform norm.
 
 Since $f(0)=0$, for every $x\in[0,1]$,
 $$
-|f(x)|=|f(x)-f(0)|
-\le \|f\|_{1/3}|x|^{1/3}
-\le \|f\|_{1/3}.
+\abs{f(x)}=\abs{f(x)-f(0)}
+\le \norm{f}_{1/3}\abs{x}^{1/3}
+\le \norm{f}_{1/3}.
 $$
 Hence
 $$
-\|f\|_\infty\le \|f\|_{1/3}.
+\norm{f}_\infty\le \norm{f}_{1/3}.
 $$
 
 :::
@@ -106,14 +106,14 @@ $$
 
 ::: pf-step
 
-Every Cauchy sequence in $\|\cdot\|_{1/3}$ converges uniformly to a function $f$ with $f(0)=0$.
+Every Cauchy sequence in $\norm{\cdot}_{1/3}$ converges uniformly to a function $f$ with $f(0)=0$.
 
 ::: pf-proof
 
-Let $(f_n)$ be Cauchy in $\|\cdot\|_{1/3}$. By step [](#s2){.pf-ref},
+Let $(f_n)$ be Cauchy in $\norm{\cdot}_{1/3}$. By step [](#s2){.pf-ref},
 $$
-\|f_n-f_m\|_\infty
-\le \|f_n-f_m\|_{1/3},
+\norm{f_n-f_m}_\infty
+\le \norm{f_n-f_m}_{1/3},
 $$
 so $(f_n)$ is uniformly Cauchy. Since $\RR$ is complete, there is a function $f:[0,1]\to\RR$ such that $f_n\to f$ uniformly. Because each $f_n(0)=0$,
 $$
@@ -132,28 +132,28 @@ In fact $f_n\to f$ in the Hölder norm.
 
 Fix $\varepsilon>0$. Since $(f_n)$ is Cauchy, choose $N$ so that
 $$
-\|f_n-f_m\|_{1/3}<\varepsilon
+\norm{f_n-f_m}_{1/3}<\varepsilon
 \qquad(m,n\ge N).
 $$
 Fix $n\ge N$ and $x\ne y$. Then for every $m\ge N$,
 $$
-|(f_n-f_m)(x)-(f_n-f_m)(y)|
-\le \varepsilon |x-y|^{1/3}.
+\abs{(f_n-f_m)(x)-(f_n-f_m)(y)}
+\le \varepsilon \abs{x-y}^{1/3}.
 $$
 Letting $m\to\infty$ and using pointwise convergence $f_m\to f$ gives
 $$
-|(f_n-f)(x)-(f_n-f)(y)|
-\le \varepsilon |x-y|^{1/3}.
+\abs{(f_n-f)(x)-(f_n-f)(y)}
+\le \varepsilon \abs{x-y}^{1/3}.
 $$
 Therefore
 $$
-\|f_n-f\|_{1/3}\le\varepsilon
+\norm{f_n-f}_{1/3}\le\varepsilon
 \qquad(n\ge N).
 $$
 Thus $f_n\to f$ in the given norm. In particular,
 $$
-\|f\|_{1/3}
-\le \|f-f_N\|_{1/3}+\|f_N\|_{1/3}<\infty,
+\norm{f}_{1/3}
+\le \norm{f-f_N}_{1/3}+\norm{f_N}_{1/3}<\infty,
 $$
 so $f\in C^{1/3}$.
 

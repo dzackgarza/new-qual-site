@@ -113,7 +113,7 @@ ab=cba,
 $$
 one may move all $a$'s to the left of all $b$'s at the cost of powers of $c$.
 The exponent-three relations reduce the exponents modulo $3$.
-Thus $|G|\le27$.
+Thus $\cardinality{G}\le27$.
 
 :::
 
@@ -152,10 +152,10 @@ induces a surjection
 $$
 G\twoheadrightarrow U.
 $$
-Hence $|G|\ge27$.
+Hence $\cardinality{G}\ge27$.
 Together with step [](#s3){.pf-ref},
 $$
-|G|=27
+\cardinality{G}=27
 $$
 and $G\cong U$.
 

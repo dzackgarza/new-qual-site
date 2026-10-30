@@ -70,7 +70,7 @@ for every $A\subseteq\Omega$.
 
 A real- or complex-valued function $f$ on $(\Omega,\mathcal A,\mu)$ is integrable when it is $\mathcal A$-measurable and
 $$
-\int_\Omega |f|\,d\mu<\infty.
+\int_\Omega \abs{f}\,d\mu<\infty.
 $$
 
 :::
@@ -87,13 +87,13 @@ for every measurable set $E$.
 
 ::: {.pf-step #s1-6}
 
-A normed vector space is a vector space $V$ over $\RR$ or $\CC$ together with a function $\|\cdot\|:V\to[0,\infty)$ such that, for all $x,y\in V$ and scalars $\lambda$,
+A normed vector space is a vector space $V$ over $\RR$ or $\CC$ together with a function $\norm{\cdot}:V\to[0,\infty)$ such that, for all $x,y\in V$ and scalars $\lambda$,
 $$
-\|x\|=0\Longleftrightarrow x=0,
+\norm{x}=0\Longleftrightarrow x=0,
 \qquad
-\|\lambda x\|=|\lambda|\,\|x\|,
+\norm{\lambda x}=\abs{\lambda}\,\norm{x},
 \qquad
-\|x+y\|\le\|x\|+\|y\|.
+\norm{x+y}\le\norm{x}+\norm{y}.
 $$
 
 :::

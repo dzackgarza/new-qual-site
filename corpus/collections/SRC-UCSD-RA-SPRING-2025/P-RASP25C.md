@@ -27,7 +27,7 @@ audit:
 Let $E$ be the Banach space $C([0,1])$ endowed with the uniform norm.
 Let $(f_h)_{h \in \NN} \subset E$ be a sequence and $f \in E$.
 
-(1) Prove that if $f_h$ converges weakly to $f$ then there is $M > 0$ such that $|f_h(x)| \leq M$ for every $x \in [0,1]$ and $h \in \NN$.
+(1) Prove that if $f_h$ converges weakly to $f$ then there is $M > 0$ such that $\abs{f_h(x)} \leq M$ for every $x \in [0,1]$ and $h \in \NN$.
 
 (2) Prove that if $f_h$ converges weakly to $f$ then $f_h(x) \to f(x)$ for every $x \in [0,1]$.
 
@@ -54,19 +54,19 @@ T_h(\varphi)=\varphi(f_h).
 $$
 For every fixed $\varphi\in E^*$, the scalar sequence $T_h(\varphi)$ converges, hence is bounded. By the Uniform Boundedness Principle,
 $$
-\sup_h\|T_h\|<\infty.
+\sup_h\norm{T_h}<\infty.
 $$
 Under the canonical embedding $E\hookrightarrow E^{**}$,
 $$
-\|T_h\|=\|f_h\|_\infty.
+\norm{T_h}=\norm{f_h}_\infty.
 $$
 Hence there is $M>0$ such that
 $$
-\|f_h\|_\infty\le M
+\norm{f_h}_\infty\le M
 $$
 for every $h$. Therefore
 $$
-\boxed{|f_h(x)|\le M}
+\boxed{\abs{f_h(x)}\le M}
 $$
 for every $x\in[0,1]$ and every $h$.
 
@@ -88,7 +88,7 @@ $$
 $$
 is bounded because
 $$
-|\delta_x(g)|\le\|g\|_\infty.
+\abs{\delta_x(g)}\le\norm{g}_\infty.
 $$
 Thus $\delta_x\in E^*$. Weak convergence gives
 $$
@@ -146,7 +146,7 @@ The sequence
 $$
 f_h(x)=x^h
 $$
-lies in the closed unit ball of $E$ because $\|f_h\|_\infty=1$.
+lies in the closed unit ball of $E$ because $\norm{f_h}_\infty=1$.
 
 Suppose $E$ were reflexive. Then its closed unit ball would be weakly compact. By the Eberlein--Smulian theorem, weak compactness in a Banach space implies weak sequential compactness. Therefore $(f_h)$ would have a weakly convergent subsequence.
 

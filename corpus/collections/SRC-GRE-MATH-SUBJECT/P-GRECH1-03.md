@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve for $x: |x+1| - |x| + 2|x-1| = 2x-1$
+Solve for $x: \abs{x+1} - \abs{x} + 2\abs{x-1} = 2x-1$
 
 (A) $x = -\frac{1}{2}, 1$
 (B) $x = -\frac{1}{2}, 2$
@@ -41,7 +41,7 @@ There is no solution with $x\leq-1$.
 
 On this interval,
 $$
-|x+1|=-(x+1),\qquad |x|=-x,\qquad |x-1|=1-x.
+\abs{x+1}=-(x+1),\qquad \abs{x}=-x,\qquad \abs{x-1}=1-x.
 $$
 The equation becomes
 $$
@@ -62,7 +62,7 @@ There is no solution with $-1<x\leq0$.
 
 Here
 $$
-|x+1|=x+1,\qquad |x|=-x,\qquad |x-1|=1-x,
+\abs{x+1}=x+1,\qquad \abs{x}=-x,\qquad \abs{x-1}=1-x,
 $$
 so the equation becomes
 $$
@@ -83,7 +83,7 @@ There is no solution with $0<x<1$.
 
 Here
 $$
-|x+1|=x+1,\qquad |x|=x,\qquad |x-1|=1-x,
+\abs{x+1}=x+1,\qquad \abs{x}=x,\qquad \abs{x-1}=1-x,
 $$
 so
 $$
@@ -104,7 +104,7 @@ Every $x\geq1$ is a solution.
 
 For $x\geq1$,
 $$
-|x+1|=x+1,\qquad |x|=x,\qquad |x-1|=x-1.
+\abs{x+1}=x+1,\qquad \abs{x}=x,\qquad \abs{x-1}=x-1.
 $$
 Hence the left-hand side is
 $$

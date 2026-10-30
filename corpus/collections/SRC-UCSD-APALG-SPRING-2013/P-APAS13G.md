@@ -107,7 +107,7 @@ $$
 
 There are five conjugacy classes, so there are five irreducible complex characters. Four have already been found and have degree $1$. If $d$ is the degree of the remaining irreducible character, the degree-sum formula gives
 $$
-8=|Q|=4\cdot1^2+d^2,
+8=\cardinality{Q}=4\cdot1^2+d^2,
 $$
 so $d=2$.
 

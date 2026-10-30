@@ -35,9 +35,9 @@ If $X$ is compact, then $\operatorname{gr}: \mathcal{C}(X, Y) \to \mathcal{H}$ i
 ::: {.solution}
 Write $d_\square((x,y),(x',y'))=\max\{d_X(x,x'),d_Y(y,y')\}$ and $d_H$ for the Hausdorff metric.
 
-(a) Distinct functions have distinct graphs, so $\operatorname{gr}$ is injective. If $\|f-h\|_\infty<\varepsilon$, then for every $x$, $(x,f(x))$ lies within $\varepsilon$ of $(x,h(x))$, and conversely. Thus
+(a) Distinct functions have distinct graphs, so $\operatorname{gr}$ is injective. If $\norm{f-h}_\infty<\varepsilon$, then for every $x$, $(x,f(x))$ lies within $\varepsilon$ of $(x,h(x))$, and conversely. Thus
 $$
-d_H(G_f,G_h)\le \|f-h\|_\infty,
+d_H(G_f,G_h)\le \norm{f-h}_\infty,
 $$
 so the graph map is $1$-Lipschitz.
 
@@ -49,7 +49,7 @@ Hence
 $$
 d_Y(h(x),f(x))<\delta+\varepsilon/2<\varepsilon.
 $$
-Taking the supremum gives $\|h-f\|_\infty<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
+Taking the supremum gives $\norm{h-f}_\infty<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
 
 (c) Take $X=\{1/k: k\in\ZZ_+\}\subset\RR$ and $Y=\RR$, with the usual metrics. Every function on the discrete space $X$ is continuous. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. The graphs lie in $(0,1]\times[-1,1]$, so they are bounded, and they are closed because the functions are continuous.
 
@@ -57,7 +57,7 @@ For $k>n$, the point $(1/k,h_n(1/k))=(1/k,f(1/(k+1)))$ of $G_{h_n}$ lies within 
 $$
 d_H(G_f,G_{h_n})\le 1/n^2\longrightarrow0.
 $$
-But $|h_n(1/(n+1))-f(1/(n+1))|=2$, so $\|h_n-f\|_\infty=2$ for every $n$. Thus $g^{-1}$ is not continuous at $G_f$. Here $f$ is not uniformly continuous, since $|f(1/k)-f(1/(k+1))|=2$ while $1/k-1/(k+1)\to0$.
+But $\abs{h_n(1/(n+1))-f(1/(n+1))}=2$, so $\norm{h_n-f}_\infty=2$ for every $n$. Thus $g^{-1}$ is not continuous at $G_f$. Here $f$ is not uniformly continuous, since $\abs{f(1/k)-f(1/(k+1))}=2$ while $1/k-1/(k+1)\to0$.
 
 (d) If $X$ is compact, every continuous $f:X\to Y$ is uniformly continuous. By (b), the inverse from the image $\mathcal H_0$ to $C(X,Y)$ is continuous at every graph. Together with (a), $\operatorname{gr}$ is a homeomorphism onto its image, hence an embedding.
 :::

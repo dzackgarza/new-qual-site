@@ -36,7 +36,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-On the disk $|z-2|<3$, the Laurent series centered at $2$ is the Taylor series
+On the disk $\abs{z-2}<3$, the Laurent series centered at $2$ is the Taylor series
 $$
 f(z)=-\sum_{n=0}^{\infty}\frac{(z-2)^n}{3^{n+1}},
 $$
@@ -45,7 +45,7 @@ and its $(z-2)^{-1}$ coefficient is $0$.
 
 ::: pf-proof
 
-If $|w|<3$, then $|w/3|<1$, so the geometric-series identity gives
+If $\abs{w}<3$, then $\abs{w/3}<1$, so the geometric-series identity gives
 $$
 \frac1{w-3}
 =-\frac13\frac1{1-w/3}
@@ -59,7 +59,7 @@ Only nonnegative powers of $w=z-2$ occur, so the coefficient of $(z-2)^{-1}$ is 
 
 ::: {.pf-step #s1-2}
 
-On the exterior annulus $|z-2|>3$, the Laurent series centered at $2$ is
+On the exterior annulus $\abs{z-2}>3$, the Laurent series centered at $2$ is
 $$
 f(z)=\sum_{n=0}^{\infty}3^n(z-2)^{-n-1},
 $$
@@ -71,7 +71,7 @@ $$
 
 ::: pf-proof
 
-If $|w|>3$, then $|3/w|<1$, and hence
+If $\abs{w}>3$, then $\abs{3/w}<1$, and hence
 $$
 \frac1{w-3}
 =\frac1w\frac1{1-3/w}

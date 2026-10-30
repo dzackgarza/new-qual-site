@@ -33,7 +33,7 @@ f(z)=z^5+5z^3+z^2+z+1.
 $$
 How many zeros, counted with multiplicity, does $f$ have in the annulus
 $$
-1\le |z|\le2?
+1\le \abs{z}\le2?
 $$
 :::
 

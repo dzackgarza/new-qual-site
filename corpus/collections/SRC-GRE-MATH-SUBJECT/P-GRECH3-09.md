@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 If the curve $z=f(x)$ in the $xz$-plane is revolved around the $x$-axis, which of the following is an equation that describes the resulting surface?
 
-(A) $y^2+z^2=|f(x)|$
+(A) $y^2+z^2=\abs{f(x)}$
 (B) $z^2=f(x^2+y^2)$
 (C) $y^2=f(x^2+z^2)$
 (D) $x^2+z^2=[f(x)]^2$

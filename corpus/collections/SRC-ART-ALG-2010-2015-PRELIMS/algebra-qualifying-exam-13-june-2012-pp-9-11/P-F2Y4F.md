@@ -60,7 +60,7 @@ Thus no irreducible quadratic divides $h$, proving its
 irreducibility. The quotient by an irreducible polynomial
 over a field is a field [@DF04]. Polynomial division gives
 the basis $1,\bar y,\bar y^2,\bar y^3$ of $K$ over
-$\FF_2$, so $[K:\FF_2]=4$ and $|K|=2^4=16$.
+$\FF_2$, so $[K:\FF_2]=4$ and $\cardinality{K}=2^4=16$.
 
 :::
 

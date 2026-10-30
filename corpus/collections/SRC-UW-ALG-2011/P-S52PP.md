@@ -64,7 +64,7 @@ for some submodule $C$.
 
 The restriction
 $$
-\pi|_C:C\longrightarrow M
+\pi\restrict_C:C\longrightarrow M
 $$
 is an isomorphism: it is injective because $C\cap\ker\pi=0$, and it is surjective because every $f\in F$ can be written $f=k+c$ with $k\in\ker\pi$, so $\pi(f)=\pi(c)$. Thus the surjection $F\twoheadrightarrow M$ splits. Since every surjection from a free module onto $M$ splits, $M$ is projective.
 

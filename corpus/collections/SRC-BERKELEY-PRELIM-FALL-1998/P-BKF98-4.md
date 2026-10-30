@@ -29,11 +29,11 @@ f(-\log2)=0,
 $$
 and assume
 $$
-|f(z)|\le |e^z|
+\abs{f(z)}\le \abs{e^z}
 $$
-for every $|z|=1$. How large can
+for every $\abs{z}=1$. How large can
 $$
-|f(\log2)|
+\abs{f(\log2)}
 $$
 be?
 :::

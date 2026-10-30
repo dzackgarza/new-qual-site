@@ -66,11 +66,11 @@ $$
 $$
 Equivalently,
 $$
-\tan\frac x2+2\log\left|\cos\frac x2\right|+C
+\tan\frac x2+2\log\abs{\cos\frac x2}+C
 $$
 or, after absorbing the constant $\log2$,
 $$
-\tan\frac x2+\log|1+\cos x|+C.
+\tan\frac x2+\log\abs{1+\cos x}+C.
 $$
 
 :::
@@ -96,8 +96,8 @@ $$
 $$
 Equivalently,
 $$
-\tan\frac x2-2\log\left|\cos\frac x2\right|+C
-=\tan\frac x2-\log|1+\cos x|+C.
+\tan\frac x2-2\log\abs{\cos\frac x2}+C
+=\tan\frac x2-\log\abs{1+\cos x}+C.
 $$
 
 :::
@@ -119,7 +119,7 @@ Therefore
 $$
 \boxed{
 \int\frac{dx}{1+\sin x+\cos x}
-=\log\left|1+\tan\frac x2\right|+C.}
+=\log\abs{1+\tan\frac x2}+C.}
 $$
 
 :::

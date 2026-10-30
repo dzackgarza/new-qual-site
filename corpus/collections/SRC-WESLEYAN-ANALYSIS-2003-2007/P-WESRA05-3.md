@@ -43,13 +43,13 @@ Define a norm.
 
 ::: pf-proof
 
-A norm is a map $\|\cdot\|:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\in\RR$,
+A norm is a map $\norm{\cdot}:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\in\RR$,
 $$
-\|x\|=0\iff x=0,
+\norm{x}=0\iff x=0,
 \qquad
-\|ax\|=|a|\,\|x\|,
+\norm{ax}=\abs{a}\,\norm{x},
 \qquad
-\|x+y\|\le\|x\|+\|y\|.
+\norm{x+y}\le\norm{x}+\norm{y}.
 $$
 
 :::
@@ -64,7 +64,7 @@ Construct the induced metric.
 
 Define
 $$
-d(x,y)=\|x-y\|.
+d(x,y)=\norm{x-y}.
 $$
 Then $d(x,y)\ge0$, and
 $$
@@ -72,12 +72,12 @@ d(x,y)=0\iff x-y=0\iff x=y.
 $$
 Also
 $$
-d(x,y)=\|x-y\|=\|-(y-x)\|=d(y,x),
+d(x,y)=\norm{x-y}=\norm{-(y-x)}=d(y,x),
 $$
 and the norm triangle inequality gives
 $$
-d(x,z)=\|x-z\|
-\le\|x-y\|+\|y-z\|
+d(x,z)=\norm{x-z}
+\le\norm{x-y}+\norm{y-z}
 =d(x,y)+d(y,z).
 $$
 Thus $d$ is a metric.
@@ -107,11 +107,11 @@ State Uniform Boundedness.
 Let $B$ be Banach, let $N$ be normed, and let $\mathcal T$ be a family of bounded linear operators $T:B\to N$.
 If for every $x\in B$,
 $$
-\sup_{T\in\mathcal T}\|Tx\|<\infty,
+\sup_{T\in\mathcal T}\norm{Tx}<\infty,
 $$
 then
 $$
-\boxed{\sup_{T\in\mathcal T}\|T\|<\infty.}
+\boxed{\sup_{T\in\mathcal T}\norm{T}<\infty.}
 $$
 This is the Uniform Boundedness Principle, or Banach--Steinhaus theorem.
 
@@ -127,9 +127,9 @@ Explain the Baire-category argument.
 
 For $m\in\NN$, set
 $$
-E_m=\left\{x\in B:\sup_{T\in\mathcal T}\|Tx\|\le m\right\}.
+E_m=\left\{x\in B:\sup_{T\in\mathcal T}\norm{Tx}\le m\right\}.
 $$
-Each $E_m$ is closed, because it is the intersection over $T\in\mathcal T$ of the closed sets $\{x:\|Tx\|\le m\}$.
+Each $E_m$ is closed, because it is the intersection over $T\in\mathcal T$ of the closed sets $\{x:\norm{Tx}\le m\}$.
 Pointwise boundedness says
 $$
 B=\bigcup_{m=1}^\infty E_m.
@@ -138,19 +138,19 @@ Since $B$ is complete, Baire's theorem implies that some $E_m$ contains a ball
 $$
 B(x_0,r)\subseteq E_m.
 $$
-If $\|h\|<r$, then $x_0$ and $x_0+h$ lie in $E_m$, so for every $T\in\mathcal T$,
+If $\norm{h}<r$, then $x_0$ and $x_0+h$ lie in $E_m$, so for every $T\in\mathcal T$,
 $$
-\|Th\|
-\le\|T(x_0+h)\|+\|Tx_0\|
+\norm{Th}
+\le\norm{T(x_0+h)}+\norm{Tx_0}
 \le2m.
 $$
 By scaling, for arbitrary $x\ne0$,
 $$
-\|Tx\|\le \frac{2m}{r}\|x\|.
+\norm{Tx}\le \frac{2m}{r}\norm{x}.
 $$
 Hence
 $$
-\sup_{T\in\mathcal T}\|T\|\le\frac{2m}{r}<\infty.
+\sup_{T\in\mathcal T}\norm{T}\le\frac{2m}{r}<\infty.
 $$
 
 :::

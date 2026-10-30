@@ -19,7 +19,7 @@ Find all functions $f(z)$ that satisfy the two requirements:
 
 (i) $f(z)$ is meromorphic in the plane $\CC$.
 
-(ii) There exists a constant $C > 0$ such that $|f(z) - \tan z| \leq C|f(z)|$ for all $z$ outside the poles of $f(z)$ and $\tan z$.
+(ii) There exists a constant $C > 0$ such that $\abs{f(z) - \tan z} \leq C\abs{f(z)}$ for all $z$ outside the poles of $f(z)$ and $\tan z$.
 :::
 
 ::: {.solution}
@@ -30,8 +30,8 @@ f(z)=c\tan z,
 $$
 satisfies the condition, since
 $$
-|f(z)-\tan z|=|c-1|\,|\tan z|
-=\frac{|c-1|}{|c|}|f(z)|.
+\abs{f(z)-\tan z}=\abs{c-1}\,\abs{\tan z}
+=\frac{\abs{c-1}}{\abs{c}}\abs{f(z)}.
 $$
 
 Conversely, suppose $f$ satisfies the two requirements. On the set where the
@@ -42,7 +42,7 @@ g(z)=1-\frac{\tan z}{f(z)}
 $$
 The hypothesis gives
 $$
-|g(z)|\le C.
+\abs{g(z)}\le C.
 $$
 As a quotient of meromorphic functions, $g$ is meromorphic on $\CC$.
 Every possible singularity is removable, because $g$ is bounded on a punctured

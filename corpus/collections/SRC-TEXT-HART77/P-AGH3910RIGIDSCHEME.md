@@ -293,13 +293,13 @@ $\bar f$ is a smooth relative curve. Put
 $$
 \mcl=\OO_{\overline X}(D).
 $$
-On every fibre $C$ the divisor $D|_C$ is one rational point, so
+On every fibre $C$ the divisor $D\restrict_C$ is one rational point, so
 $$
-\mcl|_C\cong\OO_{\PP^1}(1).
+\mcl\restrict_C\cong\OO_{\PP^1}(1).
 $$
 Consequently
 $$
-h^0(C,\mcl|_C)=2,\qquad h^1(C,\mcl|_C)=0.
+h^0(C,\mcl\restrict_C)=2,\qquad h^1(C,\mcl\restrict_C)=0.
 $$
 By [[T-COHBC|cohomology and base change]], the sheaf
 $$
@@ -308,7 +308,7 @@ $$
 is locally free of rank two near $\bar t$ and commutes with base change there.
 Choose an open neighborhood $T'\subseteq\overline T$ of $\bar t$ on which
 $$
-\mce|_{T'}\cong\OO_{T'}^{\oplus2},
+\mce\restrict_{T'}\cong\OO_{T'}^{\oplus2},
 $$
 and put
 $$
@@ -320,29 +320,29 @@ $$
 \bar f^*\mce\longrightarrow\mcl
 $$
 is surjective on the fibre over $\bar t$, because it is the evaluation map of
-the complete linear system $|\OO_{\PP^1}(1)|$. Its cokernel is coherent; its
+the complete linear system $\linearsystem{\OO_{\PP^1}(1)}$. Its cokernel is coherent; its
 support is closed, and properness of $\bar f$ makes the image of that support
 closed in $\overline T$. Shrinking $T'$ once more if necessary therefore
 makes the evaluation map surjective over all of $X'$.
 
 After base change to $X'$, this quotient defines a $T'$-morphism
 $$
-h:X'\longrightarrow\PP(\mce|_{T'})
+h:X'\longrightarrow\PP(\mce\restrict_{T'})
 $$
 by the projective-bundle quotient construction of
 [[P-AGH278SECTIONSPE]]. On each fibre this is the morphism defined by the
-complete linear system $|\OO_{\PP^1}(1)|$, hence an isomorphism.
+complete linear system $\linearsystem{\OO_{\PP^1}(1)}$, hence an isomorphism.
 
 The morphism $h$ is proper because $X'$ is proper over $T'$ and
-$\PP(\mce|_{T'})$ is separated over $T'$. Since its fibre maps are
+$\PP(\mce\restrict_{T'})$ is separated over $T'$. Since its fibre maps are
 isomorphisms, $h$ is quasi-finite and therefore finite. The scheme $X'$ is
 integral: it is smooth over the integral curve $T'$ with geometrically
 integral fibres. The generic fibre map is an isomorphism, so $h$ is birational.
-Finally $\PP(\mce|_{T'})$ is regular, hence normal, because it is a projective
+Finally $\PP(\mce\restrict_{T'})$ is regular, hence normal, because it is a projective
 line bundle over the nonsingular curve $T'$. A finite birational morphism to a
 normal scheme is an isomorphism. Therefore
 $$
-X'\cong\PP(\mce|_{T'})\cong\PP^1_{T'}.
+X'\cong\PP(\mce\restrict_{T'})\cong\PP^1_{T'}.
 $$
 
 :::

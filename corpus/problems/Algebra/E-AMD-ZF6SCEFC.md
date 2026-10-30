@@ -27,7 +27,7 @@ Let $p$ and $q$ be distinct primes. Show that a group of order $p^2 q^2$ where $
 :::
 
 ::: {.solution}
-Let $|G|=p^2q^2$, and let $n_p$, $n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
+Let $\cardinality{G}=p^2q^2$, and let $n_p$, $n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
 
 ::: pf
 
@@ -55,7 +55,7 @@ Exchange $p$ and $q$ in step [](#p-normal){.pf-ref}, using $q\nmid p^2-1$.
 $G\cong P\times Q$.
 
 ::: pf-proof
-$P\cap Q=1$ since $\gcd(p^2,q^2)=1$, and $|PQ|=|P||Q|=|G|$, so $G=PQ$.
+$P\cap Q=1$ since $\gcd(p^2,q^2)=1$, and $\cardinality{PQ}=\cardinality{P}\cardinality{Q}=\cardinality{G}$, so $G=PQ$.
 For $x\in P$ and $y\in Q$, normality of $Q$ gives $xyx^{-1}y^{-1}\in Q$ and normality of $P$ gives $x(yx^{-1}y^{-1})\in P$, so $xyx^{-1}y^{-1}\in P\cap Q=1$.
 Thus $P$ and $Q$ commute elementwise and $(x,y)\mapsto xy$ is an isomorphism $P\times Q\to G$.
 :::

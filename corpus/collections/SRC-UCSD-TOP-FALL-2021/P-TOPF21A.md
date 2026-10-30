@@ -118,7 +118,7 @@ Reduced homology of a wedge is the direct sum of the reduced homologies of the s
 With $\FF_2$ coefficients,
 $$\boxed{H^*(A;\FF_2)\cong
 \FF_2[x,y,z,u]/(xy,xz,yz,\ x^2-u,y^2-u,z^2-u,\text{terms of degree}>2),}$$
-where $|x|=|y|=|z|=1$ and $|u|=2$.
+where $\gradeddegree{x}=\gradeddegree{y}=\gradeddegree{z}=1$ and $\gradeddegree{u}=2$.
 
 ::: pf-proof
 

@@ -20,7 +20,7 @@ Show that every sequence in $\mathcal{H}$ admits a subsequence that converges un
 :::
 
 ::: {.solution}
-Harnack's inequality gives, for $h\in\mathcal H$ and $|z|\le r<1$,
+Harnack's inequality gives, for $h\in\mathcal H$ and $\abs{z}\le r<1$,
 $$
 \frac{1-r}{1+r}
 \le h(z)\le

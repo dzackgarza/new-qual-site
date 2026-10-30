@@ -19,7 +19,7 @@ audit:
 Give an example of the $C ^ { \infty } ( \RR )$ function f (x) with the following properties:
 
 $$
-\begin{array} { r l } & { \mathrm { 1 ) } \quad f ^ { ( n ) } ( 0 ) = 1 \mathrm { f o r ~ s o m e } n \geqslant 0 , } \\ & { \mathrm { 2 ) } \quad f ^ { ( i ) } ( 0 ) = 0 , i \geqslant 0 , i \neq n , } \\ & { \mathrm { 3 ) } \quad \displaystyle \int _ { 0 } ^ { \infty } | f ( x ) | d x < \infty . } \end{array}\tag{13}
+\begin{array} { r l } & { \mathrm { 1 ) } \quad f ^ { ( n ) } ( 0 ) = 1 \mathrm { f o r ~ s o m e } n \geqslant 0 , } \\ & { \mathrm { 2 ) } \quad f ^ { ( i ) } ( 0 ) = 0 , i \geqslant 0 , i \neq n , } \\ & { \mathrm { 3 ) } \quad \displaystyle \int _ { 0 } ^ { \infty } \abs{ f ( x ) } d x < \infty . } \end{array}\tag{13}
 $$
 :::
 
@@ -44,7 +44,7 @@ $$
 $$
 for
 $$
-|x|\leq1.
+\abs{x}\leq1.
 $$
 
 
@@ -83,7 +83,7 @@ Because $\chi$ has compact support, so does $f$.
 
 On the interval
 $$
-|x|\leq1,
+\abs{x}\leq1,
 $$
 one has
 $$
@@ -145,7 +145,7 @@ derivative of the degree-$n$ polynomial is identically zero.
 The function is absolutely integrable on $[0,\infty)$:
 $$
 \boxed{
-\int_0^\infty |f(x)|\,dx<\infty.
+\int_0^\infty \abs{f(x)}\,dx<\infty.
 }
 $$
 

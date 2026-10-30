@@ -33,7 +33,7 @@ $$
 For $0<\varepsilon<1$ and $R>3$, let
 $$
 D_{R,\varepsilon}
-=\{z\in\CC:\operatorname{Re}z>\varepsilon,\ |z|<R\}.
+=\{z\in\CC:\operatorname{Re}z>\varepsilon,\ \abs{z}<R\}.
 $$
 
 ::: pf
@@ -42,7 +42,7 @@ $$
 
 On $\partial D_{R,\varepsilon}$,
 $$
-|f(z)-g(z)|<|g(z)|.
+\abs{f(z)-g(z)}<\abs{g(z)}.
 $$
 
 
@@ -50,17 +50,17 @@ $$
 
 Since $f-g=e^{-z}$ and every point of $\partial D_{R,\varepsilon}$ has $\operatorname{Re}z\ge\varepsilon$,
 $$
-|f(z)-g(z)|=e^{-\operatorname{Re}z}\le e^{-\varepsilon}<1.
+\abs{f(z)-g(z)}=e^{-\operatorname{Re}z}\le e^{-\varepsilon}<1.
 $$
 On the vertical part of the boundary, $\operatorname{Re}z=\varepsilon$, so
 $$
-|z-2|\ge 2-\varepsilon>1.
+\abs{z-2}\ge 2-\varepsilon>1.
 $$
-On the circular part, $|z|=R$, so the reverse triangle inequality gives
+On the circular part, $\abs{z}=R$, so the reverse triangle inequality gives
 $$
-|z-2|\ge R-2>1.
+\abs{z-2}\ge R-2>1.
 $$
-Thus $|f-g|<1<|g|$ everywhere on the boundary.
+Thus $\abs{f-g}<1<\abs{g}$ everywhere on the boundary.
 
 :::
 
@@ -105,7 +105,7 @@ $$
 $$
 and
 $$
-R>\max\{3,|z_1|,|z_2|\}.
+R>\max\{3,\abs{z_1},\abs{z_2}\}.
 $$
 Then both zeros lie in $D_{R,\varepsilon}$, contradicting step [](#s1-2){.pf-ref}, which says that this domain contains only one zero even when multiplicity is counted.
 

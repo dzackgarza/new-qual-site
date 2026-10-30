@@ -80,7 +80,7 @@ The assertion in part (b) is true.
 
 ::: pf-proof
 
-Write $q=|\FF|$, choose a root $a$ of $f$ in an
+Write $q=\cardinality{\FF}$, choose a root $a$ of $f$ in an
 algebraic closure, and put $E=\FF(a)$. Irreducibility
 gives $[E:\FF]=n$, so $E$ has $q^n$ elements.
 Its multiplicative group has order $q^n-1$, hence every
@@ -110,7 +110,7 @@ The assertion in part (c) is false.
 
 For any homomorphism $\varphi:S_4\to A_3$, the image of
 a transposition has order dividing two and also dividing
-$|A_3|=3$. Its order is therefore one. Every permutation is
+$\cardinality{A_3}=3$. Its order is therefore one. Every permutation is
 a product of transpositions: each cycle
 $(a_1\,a_2\,\ldots\,a_k)$ equals
 $(a_1\,a_k)\cdots(a_1\,a_2)$, and disjoint cycles give

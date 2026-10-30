@@ -102,14 +102,14 @@ Hence $a_i\ge2$.
 By step [](#pairwise-intersections-equal-k){.pf-ref} and inclusion-exclusion,
 $$
 \begin{aligned}
-|G|
- &=|H_1|+|H_2|+|H_3|
-   -|H_1\cap H_2|-|H_1\cap H_3|-|H_2\cap H_3|
-   +|K|\\
- &=|K|(a_1+a_2+a_3-2).
+\cardinality{G}
+ &=\cardinality{H_1}+\cardinality{H_2}+\cardinality{H_3}
+   -\cardinality{H_1\cap H_2}-\cardinality{H_1\cap H_3}-\cardinality{H_2\cap H_3}
+   +\cardinality{K}\\
+ &=\cardinality{K}(a_1+a_2+a_3-2).
 \end{aligned}
 $$
-Dividing by $|K|$ gives the asserted formula.
+Dividing by $\cardinality{K}$ gives the asserted formula.
 :::
 
 :::
@@ -127,20 +127,20 @@ A\times B\longrightarrow AB,
 \qquad
 (a,b)\longmapsto ab,
 $$
-has every fiber of cardinality $|A\cap B|$: if $ab=a'b'$, then $a'^{-1}a=b'b^{-1}\in A\cap B$, and every element of $A\cap B$ gives one such representation.
+has every fiber of cardinality $\cardinality{A\cap B}$: if $ab=a'b'$, then $a'^{-1}a=b'b^{-1}\in A\cap B$, and every element of $A\cap B$ gives one such representation.
 Consequently
 $$
-|AB|=\frac{|A||B|}{|A\cap B|}.
+\cardinality{AB}=\frac{\cardinality{A}\cardinality{B}}{\cardinality{A\cap B}}.
 $$
 Applying this with $A=H_i$ and $B=H_j$ and using step [](#pairwise-intersections-equal-k){.pf-ref} gives
 $$
-|H_iH_j|=|K|a_i a_j.
+\cardinality{H_iH_j}=\cardinality{K}a_i a_j.
 $$
 Since $H_iH_j\subseteq G$,
 $$
-|K|a_i a_j\le |G|,
+\cardinality{K}a_i a_j\le \cardinality{G},
 $$
-and division by $|K|$ proves the claim.
+and division by $\cardinality{K}$ proves the claim.
 :::
 
 :::

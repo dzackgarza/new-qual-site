@@ -54,11 +54,11 @@ $$
 Now $\chi_S(\tau_i)=-1$ for $i\in S$ and $1$ otherwise, so
 $$
 \sum_{i=1}^n\chi_S(\tau_i)
-=(n-|S|)-|S|=n-2|S|.
+=(n-\cardinality{S})-\cardinality{S}=n-2\cardinality{S}.
 $$
 Therefore
 $$
-\boxed{A\chi_S=(n-2|S|)\chi_S}.
+\boxed{A\chi_S=(n-2\cardinality{S})\chi_S}.
 $$
 Thus an eigenbasis is $\{\chi_S:S\subseteq\{1,\ldots,n\}\}$, and the eigenvalues are
 $$

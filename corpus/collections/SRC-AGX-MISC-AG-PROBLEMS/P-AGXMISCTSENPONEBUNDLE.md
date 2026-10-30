@@ -47,7 +47,7 @@ $\PP^1$-bundle means a projective bundle $\PP_Y(\mce)$ for a rank-two
 locally free sheaf $\mce$. A relative degree-one line bundle is an
 invertible sheaf $\mcl$ on $X$ such that
 $$
-\deg(\mcl|_{X_y})=1
+\deg(\mcl\restrict_{X_y})=1
 $$
 for every $y\in Y$.
 Since a projective morphism is of finite presentation, flatness together

@@ -55,7 +55,7 @@ It remains to compute its perimeter. On the boundary arc from $1$ to $e^{2\pi i/
 $$
 \begin{aligned}
 L
-&=\int_0^{2\pi/n}|1-e^{in\theta}|^{-2/n}\,d\theta\\
+&=\int_0^{2\pi/n}\abs{1-e^{in\theta}}^{-2/n}\,d\theta\\
 &=2^{-2/n}\int_0^{2\pi/n}\sin(n\theta/2)^{-2/n}\,d\theta\\
 &=\frac{2^{1-2/n}}{n}\int_0^\pi(\sin u)^{-2/n}\,du.
 \end{aligned}

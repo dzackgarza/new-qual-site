@@ -30,7 +30,7 @@ audit:
 Suppose $G$ is a finite group with only one automorphism.
 Show that
 $$
-|G|\le2.
+\cardinality{G}\le2.
 $$
 :::
 

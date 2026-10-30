@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4X7XU
 kind: problem
-title: A conformal map from $\{\Re z>0,\ |z-1/2|>1/2\}$ onto $\HH$
+title: A conformal map from $\{\Re z>0,\ \abs{z-1/2}>1/2\}$ onto $\HH$
 classification:
   areas:
   - complex-analysis
@@ -43,10 +43,10 @@ The individual maps:
 - Apply $z\mapsto e^z$ to map to $\HH$.
 
 That steps 1 and 2 work requires a bit of analysis.
-Use that $f(z) \definedas 1/z$ satisfies $f(\RR) = \RR$ and $f(i\RR) = i \RR$.
+Use that $f(z) \coloneqq 1/z$ satisfies $f(\RR) = \RR$ and $f(i\RR) = i \RR$.
 To see where the circle $C_1$ gets mapped to, parameterize it as
 $$
-\gamma(t) \definedas \theset{{1\over 2}\qty{1+e^{it}} \st t\in [-\pi, \pi]}
+\gamma(t) \coloneqq \theset{{1\over 2}\qty{1+e^{it}} \st t\in [-\pi, \pi]}
 .$$
 
 Now computing its image:

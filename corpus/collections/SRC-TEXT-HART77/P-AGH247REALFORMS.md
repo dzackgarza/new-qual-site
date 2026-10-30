@@ -634,7 +634,7 @@ For completeness, if $P\in X_0(\RR)$, Riemann--Roch gives
 $$
 \ell(P)=2.
 $$
-The complete linear system $|P|$ therefore defines a nonconstant morphism
+The complete linear system $\linearsystem{P}$ therefore defines a nonconstant morphism
 $$
 X_0\longrightarrow\PP^1_{\RR}
 $$

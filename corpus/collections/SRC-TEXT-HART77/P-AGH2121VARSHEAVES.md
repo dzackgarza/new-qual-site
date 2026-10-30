@@ -66,7 +66,7 @@ For a closed subset $Y\subseteq X$, the assignment
 $$
 \mathcal I_Y(U)
 =
-\{f\in\mathcal O_X(U):f|_{Y\cap U}=0\text{ pointwise}\}
+\{f\in\mathcal O_X(U):f\restrict_{Y\cap U}=0\text{ pointwise}\}
 $$
 is a subpresheaf of rings of $\mathcal O_X$.
 
@@ -84,11 +84,11 @@ Y\cap U
 $$
 one has
 $$
-(f|_V)(P)=f(P)=0.
+(f\restrict_V)(P)=f(P)=0.
 $$
 Thus
 $$
-f|_V\in\mathcal I_Y(V).
+f\restrict_V\in\mathcal I_Y(V).
 $$
 The set $\mathcal I_Y(U)$ is clearly an ideal of $\mathcal O_X(U)$, since sums of functions vanishing on $Y\cap U$ vanish there and multiplying by an arbitrary regular function preserves vanishing.
 

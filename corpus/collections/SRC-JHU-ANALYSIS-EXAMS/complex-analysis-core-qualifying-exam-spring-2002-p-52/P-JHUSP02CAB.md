@@ -80,7 +80,7 @@ Put $z=e^{it}$. Then $dt=dz/(iz)$ and
 $\cos t=(z+z^{-1})/2$, so
 $$
 \int_0^{2\pi}\frac{dt}{c+\cos t}
-=\frac{2}{i}\int_{|z|=1}\frac{dz}{z^2+2cz+1}.
+=\frac{2}{i}\int_{\abs{z}=1}\frac{dz}{z^2+2cz+1}.
 $$
 The two roots of the denominator are
 $$
@@ -88,7 +88,7 @@ z_\pm=-c\pm\sqrt{c^2-1}.
 $$
 Since $c>1$, $z_-<-1$. Moreover
 $$
-|z_+|=c-\sqrt{c^2-1}
+\abs{z_+}=c-\sqrt{c^2-1}
 =\frac1{c+\sqrt{c^2-1}}<1,
 $$
 so exactly $z_+$ lies inside the unit circle. It is simple, and the residue of

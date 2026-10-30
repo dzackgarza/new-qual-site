@@ -56,7 +56,7 @@ Thus $Bv\in V_\lambda$.
 
 For every eigenvalue $\lambda$ of $A$, the restriction
 $$
-B|_{V_\lambda}:V_\lambda\longrightarrow V_\lambda
+B\restrict_{V_\lambda}:V_\lambda\longrightarrow V_\lambda
 $$
 is diagonalizable over $\RR$.
 
@@ -65,7 +65,7 @@ is diagonalizable over $\RR$.
 Because $B$ is diagonalizable over $\RR$, its minimal polynomial
 $m_B(t)$ is a product of distinct linear factors over $\RR$.
 By step [](#s1){.pf-ref}, $V_\lambda$ is $B$-invariant, and therefore the minimal
-polynomial of $B|_{V_\lambda}$ divides $m_B(t)$. It is consequently
+polynomial of $B\restrict_{V_\lambda}$ divides $m_B(t)$. It is consequently
 also a product of distinct linear factors over $\RR$, so the
 restriction is diagonalizable.
 
@@ -86,7 +86,7 @@ $$
 $$
 where the sum runs over the distinct eigenvalues of $A$. By step
 [](#s2){.pf-ref}, each $V_\lambda$ has a basis of eigenvectors of the restricted
-operator $B|_{V_\lambda}$. Every vector in such a basis is already an
+operator $B\restrict_{V_\lambda}$. Every vector in such a basis is already an
 eigenvector of $A$ because it lies in $V_\lambda$. The union of these
 bases is therefore a basis of $\RR^n$ consisting of common
 eigenvectors.

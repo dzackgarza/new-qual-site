@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-6B
 kind: problem
-title: Averages of $f$ over the circle $|z|=1/n$ for $f$ with a pole at $0$
+title: Averages of $f$ over the circle $\abs{z}=1/n$ for $f$ with a pole at $0$
 classification:
   areas: [prelim]
   topics: []

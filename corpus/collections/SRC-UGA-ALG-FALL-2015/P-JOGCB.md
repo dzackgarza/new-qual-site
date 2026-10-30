@@ -167,7 +167,7 @@ $\Gal(E/\QQ)$ has order $4$.
 
 ::: pf-proof
 
-$|\Gal(E/\QQ)| = [E:\QQ] = 4$.
+$\cardinality{\Gal(E/\QQ)} = [E:\QQ] = 4$.
 
 :::
 

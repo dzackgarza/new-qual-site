@@ -26,15 +26,15 @@ audit:
 ::: {.problem}
 Let
 $$
-f(x)=e^{-|x|},\qquad x\in\RR.
+f(x)=e^{-\abs{x}},\qquad x\in\RR.
 $$
 
 (a) Is $\widehat f\in C^\infty(\RR)$? Prove your answer.
 
 (b) Prove that
 $$
-|\widehat f(\xi)|\longrightarrow0
-\qquad(|\xi|\to\infty).
+\abs{\widehat f(\xi)}\longrightarrow0
+\qquad(\abs{\xi}\to\infty).
 $$
 :::
 
@@ -50,7 +50,7 @@ The Fourier transform is smooth.
 
 For every integer $k\ge0$,
 $$
-\int_{\RR}|x|^k e^{-|x|}\,dx<\infty.
+\int_{\RR}\abs{x}^k e^{-\abs{x}}\,dx<\infty.
 $$
 Thus $x^k f(x)\in L^1(\RR)$ for every $k$.
 
@@ -65,7 +65,7 @@ $$
 $$
 For each fixed $k$, the absolute value of the integrand is bounded by
 $$
-(2\pi)^k|x|^k e^{-|x|}\in L^1(\RR).
+(2\pi)^k\abs{x}^k e^{-\abs{x}}\in L^1(\RR).
 $$
 Dominated convergence therefore justifies differentiation under the integral sign, and the resulting derivative is continuous by another application of dominated convergence. Hence
 $$
@@ -83,21 +83,21 @@ The Fourier transform vanishes at infinity.
 
 ::: pf-proof
 
-Since $f=e^{-|x|}\in L^1(\RR)$, the Riemann--Lebesgue lemma gives
+Since $f=e^{-\abs{x}}\in L^1(\RR)$, the Riemann--Lebesgue lemma gives
 $$
 \widehat f(\xi)\longrightarrow0
-\qquad(|\xi|\to\infty).
+\qquad(\abs{\xi}\to\infty).
 $$
 The lemma follows by approximating $f$ in $L^1$ by a function $g\in C_c^1(\RR)$. For such $g$, integration by parts gives
 $$
-|\widehat g(\xi)|\le \frac{\|g'\|_1}{2\pi|\xi|}
+\abs{\widehat g(\xi)}\le \frac{\norm{g'}_1}{2\pi\abs{\xi}}
 \qquad(\xi\ne0),
 $$
 while
 $$
-|\widehat f(\xi)-\widehat g(\xi)|\le\|f-g\|_1.
+\abs{\widehat f(\xi)-\widehat g(\xi)}\le\norm{f-g}_1.
 $$
-First choose $g$ so that the latter bound is small, then let $|\xi|\to\infty$. This proves the claimed decay.
+First choose $g$ so that the latter bound is small, then let $\abs{\xi}\to\infty$. This proves the claimed decay.
 
 :::
 

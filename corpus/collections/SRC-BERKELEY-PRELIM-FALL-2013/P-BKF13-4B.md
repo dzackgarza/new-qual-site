@@ -108,10 +108,10 @@ $$
 ::: pf-proof
 
 Parametrize $C_N$ by $z=Ne^{i\theta}$ for $0\le\theta\le\pi$. Since
-$|e^{iz}|=e^{-N\sin\theta}$ and
-$|z^2+1|\ge N^2-1$, we obtain
+$\abs{e^{iz}}=e^{-N\sin\theta}$ and
+$\abs{z^2+1}\ge N^2-1$, we obtain
 $$
-\left|\int_{C_N}F(z)\,dz\right|
+\abs{\int_{C_N}F(z)\,dz}
 \le
 \frac{N^2}{N^2-1}
 \int_0^\pi e^{-N\sin\theta}\,d\theta.
@@ -133,7 +133,7 @@ $$
 $$
 Therefore
 $$
-\left|\int_{C_N}F(z)\,dz\right|
+\abs{\int_{C_N}F(z)\,dz}
 \le
 \frac{\pi N}{N^2-1}\longrightarrow0.
 $$

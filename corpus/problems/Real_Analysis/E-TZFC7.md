@@ -40,7 +40,7 @@ If each $f_n$ is bounded, then $f$ is bounded.
 
 ::: pf-proof
 
-Uniform convergence with $\eps = 1$ gives $N$ with $\|f - f_N\|_\infty \le 1$. By the triangle inequality, $|f(x)| \le |f_N(x)| + 1 \le \|f_N\|_\infty + 1$ for every $x \in E$.
+Uniform convergence with $\eps = 1$ gives $N$ with $\norm{f - f_N}_\infty \le 1$. By the triangle inequality, $\abs{f(x)} \le \abs{f_N(x)} + 1 \le \norm{f_N}_\infty + 1$ for every $x \in E$.
 
 :::
 
@@ -54,7 +54,7 @@ If each $f_n$ is continuous, then $f$ is continuous.
 
 ::: {.pf-step #s2-1}
 
-Fix $x_0 \in E$ and $\eps > 0$. There are $n$ with $\|f - f_n\|_\infty < \eps/3$ and $\delta > 0$ with $|f_n(x) - f_n(x_0)| < \eps/3$ whenever $x \in E$ and $|x - x_0| < \delta$.
+Fix $x_0 \in E$ and $\eps > 0$. There are $n$ with $\norm{f - f_n}_\infty < \eps/3$ and $\delta > 0$ with $\abs{f_n(x) - f_n(x_0)} < \eps/3$ whenever $x \in E$ and $\abs{x - x_0} < \delta$.
 
 ::: pf-proof
 
@@ -66,7 +66,7 @@ The first is uniform convergence and the second is continuity of $f_n$ at $x_0$.
 
 ::: pf-qed
 
-For $x \in E$ with $|x - x_0| < \delta$, the triangle inequality and step [](#s2-1){.pf-ref} give $|f(x) - f(x_0)| \le |f(x) - f_n(x)| + |f_n(x) - f_n(x_0)| + |f_n(x_0) - f(x_0)| < \eps$. So $f$ is continuous at the arbitrary point $x_0$.
+For $x \in E$ with $\abs{x - x_0} < \delta$, the triangle inequality and step [](#s2-1){.pf-ref} give $\abs{f(x) - f(x_0)} \le \abs{f(x) - f_n(x)} + \abs{f_n(x) - f_n(x_0)} + \abs{f_n(x_0) - f(x_0)} < \eps$. So $f$ is continuous at the arbitrary point $x_0$.
 
 :::
 

@@ -44,7 +44,7 @@ $$
 =
 \sup_{r>0}
 \frac1{2r}
-\int_{-r}^{r}|g(x+h)|\,dh.
+\int_{-r}^{r}\abs{g(x+h)}\,dh.
 $$
 
 ::: pf
@@ -53,9 +53,9 @@ $$
 
 For every locally integrable $f$,
 $$
-|Mf(x,y)|
+\abs{Mf(x,y)}
 \le
-M_1^x\!\left(M_1^y|f|\right)(x,y),
+M_1^x\!\left(M_1^y\abs{f}\right)(x,y),
 $$
 where $M_1^x$ and $M_1^y$ apply the one-dimensional maximal operator in
 the indicated variable.
@@ -66,25 +66,25 @@ the indicated variable.
 For fixed $r,\rho>0$,
 $$
 \begin{aligned}
-\left|
+\abs{
 \frac1{4r\rho}
 \int_{-r}^{r}\int_{-\rho}^{\rho}
 f(x+h,y+\ell)\,d\ell\,dh
-\right|
+}
 &\le
 \frac1{2r}
 \int_{-r}^{r}
 \left[
 \frac1{2\rho}
 \int_{-\rho}^{\rho}
-|f(x+h,y+\ell)|\,d\ell
+\abs{f(x+h,y+\ell)}\,d\ell
 \right]dh\\
 &\le
 \frac1{2r}
 \int_{-r}^{r}
-M_1^y|f|(x+h,y)\,dh\\
+M_1^y\abs{f}(x+h,y)\,dh\\
 &\le
-M_1^x(M_1^y|f|)(x,y).
+M_1^x(M_1^y\abs{f})(x,y).
 \end{aligned}
 $$
 Taking the supremum over $r,\rho$ gives the claim.
@@ -97,9 +97,9 @@ Taking the supremum over $r,\rho$ gives the claim.
 
 For $1<p<\infty$,
 $$
-\|M_1^y|f|\|_{L^p(\RR^2)}
+\norm{M_1^y\abs{f}}_{L^p(\RR^2)}
 \le
-C_p\|f\|_{L^p(\RR^2)}.
+C_p\norm{f}_{L^p(\RR^2)}.
 $$
 
 
@@ -113,10 +113,10 @@ belongs to $L^p(\RR)$ by Fubini--Tonelli. The one-dimensional
 Hardy--Littlewood maximal theorem gives
 $$
 \int_{\RR}
-|M_1^y|f|(x,y)|^p\,dy
+\abs{M_1^y\abs{f}(x,y)}^p\,dy
 \le
 C_p^p
-\int_{\RR}|f(x,y)|^p\,dy.
+\int_{\RR}\abs{f(x,y)}^p\,dy.
 $$
 Integrating in $x$ yields the stated estimate.
 
@@ -128,9 +128,9 @@ Integrating in $x$ yields the stated estimate.
 
 One also has
 $$
-\|M_1^x(M_1^y|f|)\|_{L^p(\RR^2)}
+\norm{M_1^x(M_1^y\abs{f})}_{L^p(\RR^2)}
 \le
-C_p^2\|f\|_{L^p(\RR^2)}.
+C_p^2\norm{f}_{L^p(\RR^2)}.
 $$
 
 
@@ -139,15 +139,15 @@ $$
 Apply the same one-dimensional maximal theorem in the $x$-variable to the
 function
 $$
-g(x,y)=M_1^y|f|(x,y).
+g(x,y)=M_1^y\abs{f}(x,y).
 $$
 Step [](#s1-2){.pf-ref} guarantees $g\in L^p(\RR^2)$. Thus
 $$
-\|M_1^x g\|_p
+\norm{M_1^x g}_p
 \le
-C_p\|g\|_p
+C_p\norm{g}_p
 \le
-C_p^2\|f\|_p.
+C_p^2\norm{f}_p.
 $$
 
 :::
@@ -160,9 +160,9 @@ Therefore the strong maximal operator in part (a) is bounded on
 $L^p(\RR^2)$:
 $$
 \boxed{
-\|Mf\|_{L^p(\RR^2)}
+\norm{Mf}_{L^p(\RR^2)}
 \le
-C_p^2\|f\|_{L^p(\RR^2)}}.
+C_p^2\norm{f}_{L^p(\RR^2)}}.
 $$
 
 
@@ -182,7 +182,7 @@ T_rf(x,y)
 =
 \frac1{4r^3}
 \int_{-r}^{r}\int_{-r^2}^{r^2}
-|f(x+h,y+\ell)-f(x,y)|\,d\ell\,dh
+\abs{f(x+h,y+\ell)-f(x,y)}\,d\ell\,dh
 $$
 and
 $$
@@ -190,7 +190,7 @@ Tf(x,y)=\limsup_{r\to0}T_rf(x,y).
 $$
 Then
 $$
-|A_rf(x,y)-f(x,y)|
+\abs{A_rf(x,y)-f(x,y)}
 \le
 T_rf(x,y).
 $$
@@ -218,7 +218,7 @@ $$
 Every compactly supported continuous function on $\RR^2$ is uniformly
 continuous. Given $\varepsilon>0$, choose $\delta>0$ such that
 $$
-|g(x+h,y+\ell)-g(x,y)|<\varepsilon
+\abs{g(x+h,y+\ell)-g(x,y)}<\varepsilon
 $$
 whenever
 $$
@@ -245,7 +245,7 @@ $$
 \boxed{
 Tu(x,y)
 \le
-|u(x,y)|+M|u|(x,y)}
+\abs{u(x,y)}+M\abs{u}(x,y)}
 $$
 almost everywhere.
 
@@ -260,18 +260,18 @@ T_ru(x,y)
 \frac1{4r^3}
 \int_{-r}^{r}\int_{-r^2}^{r^2}
 \bigl(
-|u(x+h,y+\ell)|
+\abs{u(x+h,y+\ell)}
 +
-|u(x,y)|
+\abs{u(x,y)}
 \bigr)\,d\ell\,dh\\
 &=
-|u(x,y)|
+\abs{u(x,y)}
 +
 \frac1{4r\cdot r^2}
 \int_{-r}^{r}\int_{-r^2}^{r^2}
-|u(x+h,y+\ell)|\,d\ell\,dh\\
+\abs{u(x+h,y+\ell)}\,d\ell\,dh\\
 &\le
-|u(x,y)|+M|u|(x,y).
+\abs{u(x,y)}+M\abs{u}(x,y).
 \end{aligned}
 $$
 Take $\limsup_{r\to0}$.
@@ -284,11 +284,11 @@ Take $\limsup_{r\to0}$.
 
 Fix $\alpha>0$. For every $u\in L^p(\RR^2)$,
 $$
-\left|\{Tu\ge\alpha\}\right|
+\setmeasure{\{Tu\ge\alpha\}}
 \le
 \frac{2^p}{\alpha^p}
 \left(
-\|u\|_p^p+\|M|u|\|_p^p
+\norm{u}_p^p+\norm{M\abs{u}}_p^p
 \right).
 $$
 
@@ -299,9 +299,9 @@ By step [](#s1-7){.pf-ref},
 $$
 \{Tu\ge\alpha\}
 \subseteq
-\{|u|\ge\alpha/2\}
+\{\abs{u}\ge\alpha/2\}
 \cup
-\{M|u|\ge\alpha/2\}.
+\{M\abs{u}\ge\alpha/2\}.
 $$
 Apply Chebyshev's inequality to each set and add the resulting bounds.
 
@@ -314,9 +314,9 @@ Apply Chebyshev's inequality to each set and add the resulting bounds.
 There is a constant $C_{p,\alpha}$ such that
 $$
 \boxed{
-\left|\{Tu\ge\alpha\}\right|
+\setmeasure{\{Tu\ge\alpha\}}
 \le
-C_{p,\alpha}\|u\|_p^p}.
+C_{p,\alpha}\norm{u}_p^p}.
 $$
 
 
@@ -324,18 +324,18 @@ $$
 
 By part (a),
 $$
-\|M|u|\|_p
+\norm{M\abs{u}}_p
 \le
-C_p^2\|u\|_p.
+C_p^2\norm{u}_p.
 $$
 Insert this into step [](#s1-8){.pf-ref}:
 $$
-\left|\{Tu\ge\alpha\}\right|
+\setmeasure{\{Tu\ge\alpha\}}
 \le
 \frac{2^p}{\alpha^p}
 \left(
 1+C_p^{2p}
-\right)\|u\|_p^p.
+\right)\norm{u}_p^p.
 $$
 
 :::
@@ -350,7 +350,7 @@ g\in C_c(\RR^2)
 $$
 such that
 $$
-\|f-g\|_p<\varepsilon,
+\norm{f-g}_p<\varepsilon,
 $$
 and set
 $$
@@ -385,7 +385,7 @@ Step [](#s1-6){.pf-ref} gives $Tg=0$.
 
 For every $\alpha>0$,
 $$
-\left|\{Tf\ge\alpha\}\right|
+\setmeasure{\{Tf\ge\alpha\}}
 =0.
 $$
 
@@ -400,9 +400,9 @@ $$
 $$
 Hence step [](#s1-9){.pf-ref} gives
 $$
-\left|\{Tf\ge\alpha\}\right|
+\setmeasure{\{Tf\ge\alpha\}}
 \le
-C_{p,\alpha}\|u\|_p^p
+C_{p,\alpha}\norm{u}_p^p
 <
 C_{p,\alpha}\varepsilon^p.
 $$
@@ -462,7 +462,7 @@ as $r\to0$.
 By step [](#s1-5){.pf-ref},
 $$
 \limsup_{r\to0}
-|A_rf(x,y)-f(x,y)|
+\abs{A_rf(x,y)-f(x,y)}
 \le
 Tf(x,y).
 $$

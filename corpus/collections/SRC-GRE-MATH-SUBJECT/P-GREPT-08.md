@@ -45,7 +45,7 @@ $$
 $$
 the substitution $u=\cos x$, $du=-\sin x\,dx$, gives
 $$
-\int\tan x\,dx=-\log|\cos x|+C.
+\int\tan x\,dx=-\log\abs{\cos x}+C.
 $$
 If the definite integral from $0$ to $b$ is proper, the interval between
 $0$ and $b$ contains no zero of $\cos x$, so it lies in

@@ -101,14 +101,14 @@ $$
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $B$ is a basis. The two subsets defining $B$ are disjoint and
 are in bijection with $X$ and $Y$, respectively, so
 $$
-|B|=|X|+|Y|.
+\cardinality{B}=\cardinality{X}+\cardinality{Y}.
 $$
 Because the ring has the invariant dimension property, the rank of a free module
 is the cardinality of any basis. Hence
 $$
 \operatorname{rank}(F_1\oplus F_2)
-=|B|
-=|X|+|Y|
+=\cardinality{B}
+=\cardinality{X}+\cardinality{Y}
 =\operatorname{rank}F_1+\operatorname{rank}F_2.
 $$
 

@@ -47,7 +47,7 @@ $$
 Q(f,h)
 =
 \frac1{h^2}
-\int_{\RR}|f(x+h)-f(x)|^2\,dx}.
+\int_{\RR}\abs{f(x+h)-f(x)}^2\,dx}.
 $$
 
 
@@ -72,24 +72,24 @@ $$
 \begin{aligned}
 h^2Q(f,h)
 &=
-2\|f\|_2^2
+2\norm{f}_2^2
 -A_h
 -\overline{A_h}\\
 &=
-2\|f\|_2^2
+2\norm{f}_2^2
 -2\operatorname{Re}A_h.
 \end{aligned}
 $$
 Translation preserves the $L^2$ norm, so
 $$
 \begin{aligned}
-\|f(\cdot+h)-f\|_2^2
+\norm{f(\cdot+h)-f}_2^2
 &=
-\|f(\cdot+h)\|_2^2
-+\|f\|_2^2
+\norm{f(\cdot+h)}_2^2
++\norm{f}_2^2
 -2\operatorname{Re}A_h\\
 &=
-2\|f\|_2^2
+2\norm{f}_2^2
 -2\operatorname{Re}A_h.
 \end{aligned}
 $$
@@ -125,7 +125,7 @@ Q(f,h)
 =
 \int_{\RR}
 \frac{4\sin^2(h\xi/2)}{h^2}
-|\widehat f(\xi)|^2\,d\xi}.
+\abs{\widehat f(\xi)}^2\,d\xi}.
 $$
 
 
@@ -144,16 +144,16 @@ Q(f,h)
 &=
 \frac1{h^2}
 \int_{\RR}
-|e^{ih\xi}-1|^2
-|\widehat f(\xi)|^2\,d\xi\\
+\abs{e^{ih\xi}-1}^2
+\abs{\widehat f(\xi)}^2\,d\xi\\
 &=
 \int_{\RR}
 \frac{2-2\cos(h\xi)}{h^2}
-|\widehat f(\xi)|^2\,d\xi\\
+\abs{\widehat f(\xi)}^2\,d\xi\\
 &=
 \int_{\RR}
 \frac{4\sin^2(h\xi/2)}{h^2}
-|\widehat f(\xi)|^2\,d\xi.
+\abs{\widehat f(\xi)}^2\,d\xi.
 \end{aligned}
 $$
 
@@ -188,7 +188,7 @@ $$
 $$
 The bound follows from
 $$
-|\sin t|\le|t|.
+\abs{\sin t}\le\abs{t}.
 $$
 
 :::
@@ -203,7 +203,7 @@ $$
 \lim_{h\to0}Q(f,h)
 =
 \int_{\RR}
-\xi^2|\widehat f(\xi)|^2\,d\xi}
+\xi^2\abs{\widehat f(\xi)}^2\,d\xi}
 $$
 as an equality in $[0,\infty]$.
 
@@ -212,7 +212,7 @@ as an equality in $[0,\infty]$.
 
 If
 $$
-\int_{\RR}\xi^2|\widehat f(\xi)|^2\,d\xi<\infty,
+\int_{\RR}\xi^2\abs{\widehat f(\xi)}^2\,d\xi<\infty,
 $$
 then steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} allow the dominated convergence theorem, yielding
 the equality.
@@ -226,10 +226,10 @@ $$
 \int_{\RR}
 \liminf_{h\to0}
 \frac{4\sin^2(h\xi/2)}{h^2}
-|\widehat f(\xi)|^2\,d\xi\\
+\abs{\widehat f(\xi)}^2\,d\xi\\
 &=
 \int_{\RR}
-\xi^2|\widehat f(\xi)|^2\,d\xi
+\xi^2\abs{\widehat f(\xi)}^2\,d\xi
 =\infty.
 \end{aligned}
 $$
@@ -249,7 +249,7 @@ E
 \left\{
 f\in L^2(\RR):
 \int_{\RR}
-\xi^2|\widehat f(\xi)|^2\,d\xi
+\xi^2\abs{\widehat f(\xi)}^2\,d\xi
 \le1
 \right\}}.
 $$
@@ -315,7 +315,7 @@ everywhere. Apply this to the convergence in step [](#s1-7){.pf-ref}.
 One has
 $$
 \int_{\RR}
-\xi^2|\widehat f(\xi)|^2\,d\xi
+\xi^2\abs{\widehat f(\xi)}^2\,d\xi
 \le1.
 $$
 
@@ -326,17 +326,17 @@ By step [](#s1-8){.pf-ref} and Fatou's lemma,
 $$
 \begin{aligned}
 \int_{\RR}
-\xi^2|\widehat f(\xi)|^2\,d\xi
+\xi^2\abs{\widehat f(\xi)}^2\,d\xi
 &\le
 \liminf_{j\to\infty}
 \int_{\RR}
-\xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi.
+\xi^2\abs{\widehat f_{n_j}(\xi)}^2\,d\xi.
 \end{aligned}
 $$
 Since every $f_{n_j}\in E$, step [](#s1-6){.pf-ref} gives
 $$
 \int_{\RR}
-\xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi
+\xi^2\abs{\widehat f_{n_j}(\xi)}^2\,d\xi
 \le1.
 $$
 Hence the liminf is at most $1$.

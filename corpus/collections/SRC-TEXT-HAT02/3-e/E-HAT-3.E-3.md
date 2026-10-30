@@ -67,7 +67,7 @@ $$
 \beta(u_1\otimes\cdots\otimes u_k)
 =
 \sum_{j=1}^k
-(-1)^{|u_1|+\cdots+|u_{j-1}|}
+(-1)^{\gradeddegree{u_1}+\cdots+\gradeddegree{u_{j-1}}}
  u_1\otimes\cdots\otimes\beta(u_j)\otimes\cdots\otimes u_k.
 $$
 Thus the Bockstein complex is the $k$-fold tensor product of the two-term acyclic complex

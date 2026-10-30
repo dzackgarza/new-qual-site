@@ -66,17 +66,17 @@ Thus $G$ is abelian, so every element lies in its center and $G=Z(G)$. This prov
 
 ::: {.pf-step #s2}
 
-If $G$ is a finite group of order $p^3$, then $|Z(G)|$ is divisible by $p$.
+If $G$ is a finite group of order $p^3$, then $\cardinality{Z(G)}$ is divisible by $p$.
 
 ::: pf-proof
 
 Let $G$ act on itself by conjugation. The class equation is
 $$
-|G|=|Z(G)|+\sum_i [G:C_G(x_i)],
+\cardinality{G}=\cardinality{Z(G)}+\sum_i [G:C_G(x_i)],
 $$
 where the sum runs over representatives of the noncentral conjugacy classes. Since $G$ is a $p$-group, each index $[G:C_G(x_i)]$ is a power of $p$; for a noncentral element it is greater than $1$, hence divisible by $p$. Therefore
 $$
-|Z(G)|\equiv |G|\equiv0\pmod p.
+\cardinality{Z(G)}\equiv \cardinality{G}\equiv0\pmod p.
 $$
 In particular the center is nontrivial.
 
@@ -86,21 +86,21 @@ In particular the center is nontrivial.
 
 ::: pf-step
 
-If $|G|=p^3$ and $G$ is nonabelian, then
+If $\cardinality{G}=p^3$ and $G$ is nonabelian, then
 $$
-|Z(G)|=p.
+\cardinality{Z(G)}=p.
 $$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, the center has order $p$, $p^2$, or $p^3$.
-If $|Z(G)|=p^3$, then $Z(G)=G$, so $G$ is abelian, contradiction.
-If $|Z(G)|=p^2$, then
+If $\cardinality{Z(G)}=p^3$, then $Z(G)=G$, so $G$ is abelian, contradiction.
+If $\cardinality{Z(G)}=p^2$, then
 $$
-|G/Z(G)|=p,
+\cardinality{G/Z(G)}=p,
 $$
 so $G/Z(G)$ is cyclic. By step [](#s1){.pf-ref} this again forces $G=Z(G)$, contradiction.
-Thus the only possibility is $|Z(G)|=p$. This proves part (b).
+Thus the only possibility is $\cardinality{Z(G)}=p$. This proves part (b).
 
 :::
 
@@ -150,7 +150,7 @@ is nonabelian of order $16$ and has noncyclic center.
 
 Its order is
 $$
-|G|=|D_8|\,|C_2|=8\cdot2=16.
+\cardinality{G}=\cardinality{D_8}\,\cardinality{C_2}=8\cdot2=16.
 $$
 It is nonabelian because $D_8$ is nonabelian.
 For arbitrary groups $H,K$,

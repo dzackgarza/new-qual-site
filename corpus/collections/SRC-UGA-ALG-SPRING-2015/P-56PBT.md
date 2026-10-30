@@ -90,8 +90,8 @@ Fundamental Theorem of Finite Abelian Groups.
 :::
 
 ::: pf-step
-For every element $g = (g_1, \dots, g_k) \in G$, $|g_i| \mid d_i \mid d_k$, so $g^{d_k} = e$.
-Thus the exponent $e = \exp(G) = \operatorname{lcm}_{g \in G} |g| = d_k$.
+For every element $g = (g_1, \dots, g_k) \in G$, $\elementorder{g_i} \mid d_i \mid d_k$, so $g^{d_k} = e$.
+Thus the exponent $e = \exp(G) = \operatorname{lcm}_{g \in G} \elementorder{g} = d_k$.
 
 ::: pf-proof
 definition of group exponent.
@@ -119,7 +119,7 @@ Part (c): Cyclicity of the multiplicative group $(\FF^\times, \cdot)$:
 ::: pf-proof
 
 ::: pf-step
-The multiplicative group $\FF^\times$ is a finite abelian group of order $N = |\FF| - 1 = p^n - 1$.
+The multiplicative group $\FF^\times$ is a finite abelian group of order $N = \cardinality{\FF} - 1 = p^n - 1$.
 
 ::: pf-proof
 non-zero elements of a finite field form an abelian group under multiplication.
@@ -128,7 +128,7 @@ non-zero elements of a finite field form an abelian group under multiplication.
 :::
 
 ::: {.pf-step #e-leq-n}
-Let $e = \exp(\FF^\times)$. By Part (b), there exists an element $g \in \FF^\times$ of order $|g| = e$.
+Let $e = \exp(\FF^\times)$. By Part (b), there exists an element $g \in \FF^\times$ of order $\elementorder{g} = e$.
 By Lagrange’s Theorem, $e \mid N$, so $e \le N$.
 
 ::: pf-proof
@@ -151,7 +151,7 @@ $x^e = 1$ for all $x \in \FF^\times$.
 Since $\FF$ is a field, the non-zero polynomial $P(T)$ of degree $e$ has at most $e$ roots in $\FF$.
 Therefore:
 $$
-N = |\FF^\times| \le e.
+N = \cardinality{\FF^\times} \le e.
 $$
 
 ::: pf-proof
@@ -161,8 +161,8 @@ a degree $e$ polynomial over a field has at most $e$ roots.
 :::
 
 ::: pf-step
-Combining $e \le N$ (step [](#e-leq-n){.pf-ref}) and $N \le e$ (step [](#n-leq-e){.pf-ref}) gives $e = N = |\FF^\times|$.
-Since $g \in \FF^\times$ has order $e = |\FF^\times|$, $\FF^\times = \langle g \rangle$ is cyclic.
+Combining $e \le N$ (step [](#e-leq-n){.pf-ref}) and $N \le e$ (step [](#n-leq-e){.pf-ref}) gives $e = N = \cardinality{\FF^\times}$.
+Since $g \in \FF^\times$ has order $e = \cardinality{\FF^\times}$, $\FF^\times = \langle g \rangle$ is cyclic.
 
 ::: pf-proof
 a finite group containing an element of order equal to the group order is cyclic.

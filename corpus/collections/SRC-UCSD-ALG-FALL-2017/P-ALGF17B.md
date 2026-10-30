@@ -135,7 +135,7 @@ $$
 then reduces the exponent of $b$ modulo $2$, while $a^4=e$ reduces the exponent of $a$ modulo $4$.
 Thus every element has one of the eight asserted forms, and therefore
 $$
-|K|\le8.
+\cardinality{K}\le8.
 $$
 :::
 
@@ -158,10 +158,10 @@ $$
 By step [](#generated-group-is-g){.pf-ref}, $A$ and $B$ generate $G$, so $\varphi$ is surjective.
 Since $G$ consists of the eight distinct displayed matrices,
 $$
-|G|=8.
+\cardinality{G}=8.
 $$
-Surjectivity therefore gives $|K|\ge8$, while step [](#k-order-bound){.pf-ref} gives $|K|\le8$.
-Hence $|K|=8$ and the surjective map $\varphi$ is injective as well.
+Surjectivity therefore gives $\cardinality{K}\ge8$, while step [](#k-order-bound){.pf-ref} gives $\cardinality{K}\le8$.
+Hence $\cardinality{K}=8$ and the surjective map $\varphi$ is injective as well.
 Thus
 $$
 G\cong K

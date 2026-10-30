@@ -57,9 +57,9 @@ The polynomial $f$ is entire. Under the stated assumption it has no zeros, so it
 
 There is $R>0$ such that
 $$
-|f(z)|\ge \frac{|a_n|}{2}|z|^n
+\abs{f(z)}\ge \frac{\abs{a_n}}{2}\abs{z}^n
 \qquad
-\text{whenever }|z|\ge R.
+\text{whenever }\abs{z}\ge R.
 $$
 
 
@@ -71,14 +71,14 @@ f(z)=z^n\left(
 a_n+\frac{a_{n-1}}z+\cdots+\frac{a_0}{z^n}
 \right).
 $$
-As $|z|\to\infty$, the expression in parentheses tends to $a_n$. Hence there is $R>0$ such that, for $|z|\ge R$,
+As $\abs{z}\to\infty$, the expression in parentheses tends to $a_n$. Hence there is $R>0$ such that, for $\abs{z}\ge R$,
 $$
-\left|
+\abs{
 a_n+\frac{a_{n-1}}z+\cdots+\frac{a_0}{z^n}
-\right|
-\ge\frac{|a_n|}{2}.
+}
+\ge\frac{\abs{a_n}}{2}.
 $$
-Multiplying by $|z|^n$ gives the claimed estimate.
+Multiplying by $\abs{z}^n$ gives the claimed estimate.
 
 :::
 
@@ -86,20 +86,20 @@ Multiplying by $|z|^n$ gives the claimed estimate.
 
 ::: {.pf-step #s1-3}
 
-The entire function $g=1/f$ is bounded outside the disk $|z|<R$.
+The entire function $g=1/f$ is bounded outside the disk $\abs{z}<R$.
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, for $|z|\ge R$,
+By step [](#s1-2){.pf-ref}, for $\abs{z}\ge R$,
 $$
-|g(z)|
+\abs{g(z)}
 =
-\frac1{|f(z)|}
+\frac1{\abs{f(z)}}
 \le
-\frac{2}{|a_n||z|^n}
+\frac{2}{\abs{a_n}\abs{z}^n}
 \le
-\frac{2}{|a_n|R^n}.
+\frac{2}{\abs{a_n}R^n}.
 $$
 
 :::
@@ -110,13 +110,13 @@ $$
 
 The function $g$ is bounded on the closed disk
 $$
-\{z:|z|\le R\}.
+\{z:\abs{z}\le R\}.
 $$
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, $g$ is continuous on $\CC$. The closed disk is compact, so the continuous real-valued function $|g|$ attains a finite maximum there.
+By step [](#s1-1){.pf-ref}, $g$ is continuous on $\CC$. The closed disk is compact, so the continuous real-valued function $\abs{g}$ attains a finite maximum there.
 
 :::
 

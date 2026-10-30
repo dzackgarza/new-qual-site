@@ -180,9 +180,9 @@ Then $S$ is orthogonal and $B=S^{-1}AS$.
 
 One computes
 $$
-\|u_+\|^2=1+\alpha^2=\frac{5-\sqrt5}{2}=n_+^2,
+\norm{u_+}^2=1+\alpha^2=\frac{5-\sqrt5}{2}=n_+^2,
 \qquad
-\|u_-\|^2=1+\beta^2=\frac{5+\sqrt5}{2}=n_-^2.
+\norm{u_-}^2=1+\beta^2=\frac{5+\sqrt5}{2}=n_-^2.
 $$
 By step [](#s1-4){.pf-ref}, the columns of $S$ form an orthonormal basis, so
 $S^{-1}=S^T$. Step [](#s1-2){.pf-ref} says that these columns are eigenvectors with

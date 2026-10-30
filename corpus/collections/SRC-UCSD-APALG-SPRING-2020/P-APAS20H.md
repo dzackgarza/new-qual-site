@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS20H
 kind: problem
-title: Haar integrals of $\operatorname{Tr} U$ and $|u_{11}|^2$ over $U(2)$
+title: Haar integrals of $\operatorname{Tr} U$ and $\abs{u_{11}}^2$ over $U(2)$
 classification:
   areas:
   - applied-algebra
@@ -17,7 +17,7 @@ Compute the integrals
 $$
 \int_{U(2)}\operatorname{Tr} U\,dU
 \qquad\text{and}\qquad
-\int_{U(2)}|u_{11}|^2\,dU,
+\int_{U(2)}\abs{u_{11}}^2\,dU,
 $$
 where the integration is over the group of $2\times 2$ unitary matrices
 $$
@@ -36,12 +36,12 @@ $$
 
 For the second integral, each unitary matrix satisfies
 $$
-|u_{11}|^2+|u_{12}|^2=1.
+\abs{u_{11}}^2+\abs{u_{12}}^2=1.
 $$
 Integrating gives
 $$
-\int_{U(2)}|u_{11}|^2\,dU+
-\int_{U(2)}|u_{12}|^2\,dU=1.
+\int_{U(2)}\abs{u_{11}}^2\,dU+
+\int_{U(2)}\abs{u_{12}}^2\,dU=1.
 $$
 Let
 $$
@@ -49,12 +49,12 @@ P=\begin{pmatrix}0&1\\1&0\end{pmatrix}\in U(2).
 $$
 Right multiplication by $P$ interchanges the two columns. By right invariance of Haar measure,
 $$
-\int_{U(2)}|u_{11}|^2\,dU
+\int_{U(2)}\abs{u_{11}}^2\,dU
 =
-\int_{U(2)}|u_{12}|^2\,dU.
+\int_{U(2)}\abs{u_{12}}^2\,dU.
 $$
 Thus the two integrals are equal and sum to $1$, so each is $1/2$. Hence
 $$
-\boxed{\int_{U(2)}|u_{11}|^2\,dU=\frac12.}
+\boxed{\int_{U(2)}\abs{u_{11}}^2\,dU=\frac12.}
 $$
 :::

@@ -103,12 +103,12 @@ Direct substitution of $z=1$ into $P(z)$.
 :::
 
 ::: pf-step
-**Compute $|1 - e^{i 2\pi k/n}|$.**
+**Compute $\abs{1 - e^{i 2\pi k/n}}$.**
 
 ::: pf-proof
 
 ::: {.pf-step #s2-2}
-For any real $\phi$, $|1 - e^{i\phi}|^2 = (1 - \cos\phi)^2 + (\sin\phi)^2 = 1 - 2\cos\phi + \cos^2\phi + \sin^2\phi = 2 - 2\cos\phi = 2(1 - \cos\phi)$.
+For any real $\phi$, $\abs{1 - e^{i\phi}}^2 = (1 - \cos\phi)^2 + (\sin\phi)^2 = 1 - 2\cos\phi + \cos^2\phi + \sin^2\phi = 2 - 2\cos\phi = 2(1 - \cos\phi)$.
 
 ::: pf-proof
 Expansion of complex modulus squared.
@@ -117,7 +117,7 @@ Expansion of complex modulus squared.
 :::
 
 ::: {.pf-step #s2-3}
-Using the half-angle identity $1 - \cos\phi = 2\sin^2(\phi/2)$, $|1 - e^{i\phi}|^2 = 4\sin^2(\phi/2)$, so $|1 - e^{i\phi}| = 2\left|\sin\left(\frac{\phi}{2}\right)\right|$.
+Using the half-angle identity $1 - \cos\phi = 2\sin^2(\phi/2)$, $\abs{1 - e^{i\phi}}^2 = 4\sin^2(\phi/2)$, so $\abs{1 - e^{i\phi}} = 2\abs{\sin\left(\frac{\phi}{2}\right)}$.
 
 ::: pf-proof
 Taking the principal square root.
@@ -135,7 +135,7 @@ The sine function is strictly positive on $(0, \pi)$.
 :::
 
 ::: {.pf-step #s2-4}
-Thus, $|1 - e^{i 2\pi k/n}| = 2\sin\left(\frac{\pi k}{n}\right)$ for every $1 \leq k \leq n-1$.
+Thus, $\abs{1 - e^{i 2\pi k/n}} = 2\sin\left(\frac{\pi k}{n}\right)$ for every $1 \leq k \leq n-1$.
 
 ::: pf-proof
 Follows from steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}.
@@ -154,7 +154,7 @@ Follows from steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}.
 
 ::: pf-step
 Taking the absolute value of both sides of step [](#s1-4){.pf-ref}:
-$$\left|\prod_{k=1}^{n-1} (1 - e^{i 2\pi k/n})\right| = |n| = n \implies \prod_{k=1}^{n-1} |1 - e^{i 2\pi k/n}| = n.$$
+$$\abs{\prod_{k=1}^{n-1} (1 - e^{i 2\pi k/n})} = \abs{n} = n \implies \prod_{k=1}^{n-1} \abs{1 - e^{i 2\pi k/n}} = n.$$
 
 ::: pf-proof
 Multiplicativity of the complex modulus.

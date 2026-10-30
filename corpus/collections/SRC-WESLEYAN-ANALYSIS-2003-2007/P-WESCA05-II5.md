@@ -16,14 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is analytic in the open unit disk $D$ and $|f(z)|<1$ for all $z\in D$.
+Suppose $f$ is analytic in the open unit disk $D$ and $\abs{f(z)}<1$ for all $z\in D$.
 Let $a=f(0)$ and define
 $$
 g(z)=\frac{f(z)-a}{1-\overline a\,f(z)}.
 $$
 Using $g$ and the fact that $g$ maps $D$ to $D$, prove that
 $$
-|f(z)|\le\frac{|f(0)|+|z|}{1-|f(0)||z|}
+\abs{f(z)}\le\frac{\abs{f(0)}+\abs{z}}{1-\abs{f(0)}\abs{z}}
 \qquad(z\in D).
 $$
 :::
@@ -55,7 +55,7 @@ g(0)
 \frac{a-a}{1-\overline a\,a}
 =0.
 $$
-The denominator is nonzero because $|a|<1$.
+The denominator is nonzero because $\abs{a}<1$.
 
 :::
 
@@ -65,7 +65,7 @@ The denominator is nonzero because $|a|<1$.
 
 For every $z\in D$,
 $$
-|g(z)|\le|z|.
+\abs{g(z)}\le\abs{z}.
 $$
 
 
@@ -73,7 +73,7 @@ $$
 
 By hypothesis, $g$ is an analytic self-map of the unit disk. Step [](#s1-1){.pf-ref} gives $g(0)=0$. Schwarz's lemma therefore yields
 $$
-|g(z)|\le|z|
+\abs{g(z)}\le\abs{z}
 $$
 for every $z\in D$.
 
@@ -100,9 +100,9 @@ $$
 a+g=f+\overline a\,gf
 =f(1+\overline a\,g).
 $$
-Since $|a|<1$ and $|g(z)|<1$, one has
+Since $\abs{a}<1$ and $\abs{g(z)}<1$, one has
 $$
-|\overline a\,g(z)|<1,
+\abs{\overline a\,g(z)}<1,
 $$
 so $1+\overline a\,g(z)\ne0$. Division gives the displayed formula.
 
@@ -114,9 +114,9 @@ so $1+\overline a\,g(z)\ne0$. Division gives the displayed formula.
 
 For every $z\in D$,
 $$
-|f(z)|
+\abs{f(z)}
 \le
-\frac{|a|+|g(z)|}{1-|a||g(z)|}.
+\frac{\abs{a}+\abs{g(z)}}{1-\abs{a}\abs{g(z)}}.
 $$
 
 
@@ -124,15 +124,15 @@ $$
 
 By step [](#s1-3){.pf-ref} and the triangle inequalities,
 $$
-|a+g(z)|\le|a|+|g(z)|
+\abs{a+g(z)}\le\abs{a}+\abs{g(z)}
 $$
 and
 $$
-|1+\overline a\,g(z)|
+\abs{1+\overline a\,g(z)}
 \ge
-1-|a||g(z)|.
+1-\abs{a}\abs{g(z)}.
 $$
-The latter denominator is positive because $|a|,|g(z)|<1$. Dividing gives the claim.
+The latter denominator is positive because $\abs{a},\abs{g(z)}<1$. Dividing gives the claim.
 
 :::
 
@@ -143,9 +143,9 @@ The latter denominator is positive because $|a|,|g(z)|<1$. Dividing gives the cl
 For every $z\in D$,
 $$
 \boxed{
-|f(z)|
+\abs{f(z)}
 \le
-\frac{|f(0)|+|z|}{1-|f(0)||z|}.}
+\frac{\abs{f(0)}+\abs{z}}{1-\abs{f(0)}\abs{z}}.}
 $$
 
 
@@ -153,29 +153,29 @@ $$
 
 Set
 $$
-r=|z|.
+r=\abs{z}.
 $$
 By step [](#s1-2){.pf-ref},
 $$
-|g(z)|\le r.
+\abs{g(z)}\le r.
 $$
 Hence the numerator in step [](#s1-4){.pf-ref} satisfies
 $$
-|a|+|g(z)|\le|a|+r,
+\abs{a}+\abs{g(z)}\le\abs{a}+r,
 $$
 while
 $$
-1-|a||g(z)|
+1-\abs{a}\abs{g(z)}
 \ge
-1-|a|r>0.
+1-\abs{a}r>0.
 $$
 Therefore
 $$
-|f(z)|
+\abs{f(z)}
 \le
-\frac{|a|+|g(z)|}{1-|a||g(z)|}
+\frac{\abs{a}+\abs{g(z)}}{1-\abs{a}\abs{g(z)}}
 \le
-\frac{|a|+r}{1-|a|r}.
+\frac{\abs{a}+r}{1-\abs{a}r}.
 $$
 Since $a=f(0)$, this is exactly the stated inequality.
 

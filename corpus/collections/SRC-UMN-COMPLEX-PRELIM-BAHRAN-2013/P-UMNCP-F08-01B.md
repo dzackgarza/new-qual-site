@@ -21,7 +21,7 @@ Determine the number of zeros of
 $$
 P(z)=z^7+z^3+\frac1{16}
 $$
-in the closed disk $|z|\le\frac12$.
+in the closed disk $\abs{z}\le\frac12$.
 :::
 
 ::: {.solution}
@@ -32,15 +32,15 @@ in the closed disk $|z|\le\frac12$.
 
 On the circle
 $$
-|z|=\frac12,
+\abs{z}=\frac12,
 $$
 one has
 $$
-\left|
+\abs{
 z^7+\frac1{16}
-\right|
+}
 <
-|z^3|.
+\abs{z^3}.
 $$
 
 
@@ -48,21 +48,21 @@ $$
 
 If
 $$
-|z|=\frac12,
+\abs{z}=\frac12,
 $$
 then
 $$
-|z^3|
+\abs{z^3}
 =
 \frac18.
 $$
 Also,
 $$
-\left|
+\abs{
 z^7+\frac1{16}
-\right|
+}
 \le
-|z|^7+\frac1{16}
+\abs{z}^7+\frac1{16}
 =
 \frac1{128}
 +\frac8{128}
@@ -91,7 +91,7 @@ z^3
 $$
 have the same number of zeros in
 $$
-|z|<\frac12,
+\abs{z}<\frac12,
 $$
 counted with multiplicity.
 
@@ -118,7 +118,7 @@ Step [](#s1-1){.pf-ref} gives the strict Rouché inequality on the boundary circ
 
 The polynomial $P$ has exactly three zeros in
 $$
-|z|<\frac12,
+\abs{z}<\frac12,
 $$
 counted with multiplicity.
 
@@ -139,7 +139,7 @@ has a zero of multiplicity $3$ at the origin and no other zeros. Step [](#s1-2){
 
 The polynomial $P$ has no zeros on
 $$
-|z|=\frac12.
+\abs{z}=\frac12.
 $$
 
 
@@ -167,7 +167,7 @@ so the two sides would have equal modulus. This contradicts the strict inequalit
 
 Therefore the number of zeros in the closed disk
 $$
-|z|\le\frac12
+\abs{z}\le\frac12
 $$
 is
 $$

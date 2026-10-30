@@ -16,11 +16,11 @@ audit:
 ::: {.problem}
 Show that if $X$ is connected, normal, and $T_1$, then either
 $$
-|X|\le1
+\cardinality{X}\le1
 $$
 or
 $$
-|X|\ge2^{\aleph_0}.
+\cardinality{X}\ge2^{\aleph_0}.
 $$
 :::
 
@@ -30,7 +30,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-Assume $|X|>1$, and choose distinct points
+Assume $\cardinality{X}>1$, and choose distinct points
 $$
 a,b\in X.
 $$
@@ -38,7 +38,7 @@ $$
 
 ::: pf-proof
 
-This is the only case not already covered by the alternative $|X|\leq1$.
+This is the only case not already covered by the alternative $\cardinality{X}\leq1$.
 
 :::
 
@@ -116,13 +116,13 @@ Connected subsets of $\RR$ are intervals. Any interval contained in $[0,1]$ and 
 
 Thus $f$ is a surjection from $X$ onto $[0,1]$, so
 $$
-|X|\geq|[0,1]|.
+\cardinality{X}\geq\cardinality{[0,1]}.
 $$
 
 
 ::: pf-proof
 
-Step [](#s1-5){.pf-ref} gives surjectivity. A surjection $X\to Y$ implies $|Y|\leq|X|$: choosing one preimage for each element of $Y$ gives an injection $Y\to X$ (equivalently, this is the standard cardinal comparison associated to a surjection).
+Step [](#s1-5){.pf-ref} gives surjectivity. A surjection $X\to Y$ implies $\cardinality{Y}\leq\cardinality{X}$: choosing one preimage for each element of $Y$ gives an injection $Y\to X$ (equivalently, this is the standard cardinal comparison associated to a surjection).
 
 :::
 
@@ -132,11 +132,11 @@ Step [](#s1-5){.pf-ref} gives surjectivity. A surjection $X\to Y$ implies $|Y|\l
 
 Since
 $$
-|[0,1]|=2^{\aleph_0},
+\cardinality{[0,1]}=2^{\aleph_0},
 $$
 it follows that
 $$
-\boxed{|X|\geq2^{\aleph_0}.}
+\boxed{\cardinality{X}\geq2^{\aleph_0}.}
 $$
 
 
@@ -152,13 +152,13 @@ The interval $[0,1]$ has the cardinality of the continuum, namely $2^{\aleph_0}$
 
 Therefore every connected normal $T_1$ space satisfies
 $$
-\boxed{|X|\leq1\quad\text{or}\quad |X|\geq2^{\aleph_0}.}
+\boxed{\cardinality{X}\leq1\quad\text{or}\quad \cardinality{X}\geq2^{\aleph_0}.}
 $$
 
 
 ::: pf-proof
 
-If $|X|\leq1$, the first alternative holds. If $|X|>1$, steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the second.
+If $\cardinality{X}\leq1$, the first alternative holds. If $\cardinality{X}>1$, steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the second.
 
 :::
 

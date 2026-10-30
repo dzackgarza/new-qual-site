@@ -101,7 +101,7 @@ $$
 such that $\rho(\ell)=\ell$ for every $\ell\in L$. Restricting $\rho$
 to $K$ gives a homomorphism
 $$
-\rho|_K:K\longrightarrow L
+\rho\restrict_K:K\longrightarrow L
 $$
 which is still the identity on $L$. Hence every subgroup of $K$ is a
 retract of $K$.
@@ -138,7 +138,7 @@ hypothesis. Both components of $\alpha$ are homomorphisms, so
 $\alpha$ is a homomorphism.
 
 If $g\in\ker\alpha$, then $\phi(g)=1$, so $g\in K$. But
-$\sigma|_K=\operatorname{id}_K$, while $\sigma(g)=1$. Hence $g=1$.
+$\sigma\restrict_K=\operatorname{id}_K$, while $\sigma(g)=1$. Hence $g=1$.
 Thus $\ker\alpha=\{1\}$ and $\alpha$ is injective.
 :::
 

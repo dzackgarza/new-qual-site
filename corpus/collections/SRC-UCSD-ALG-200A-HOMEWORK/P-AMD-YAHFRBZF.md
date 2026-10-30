@@ -60,7 +60,7 @@ $$
 maps $K$ onto itself.
 Therefore its restriction
 $$
-c_g|_K:K\longrightarrow K
+c_g\restrict_K:K\longrightarrow K
 $$
 is an automorphism of $K$.
 :::
@@ -72,7 +72,7 @@ Every conjugation by an element of $G$ preserves $H$.
 
 ::: pf-proof
 Because $H$ is characteristic in $K$, every automorphism of $K$ maps $H$ to itself.
-Applying this to the automorphism $c_g|_K$ from step [](#conjugation-restricts-to-automorphism-of-k){.pf-ref} gives
+Applying this to the automorphism $c_g\restrict_K$ from step [](#conjugation-restricts-to-automorphism-of-k){.pf-ref} gives
 $$
 gHg^{-1}
 =c_g(H)

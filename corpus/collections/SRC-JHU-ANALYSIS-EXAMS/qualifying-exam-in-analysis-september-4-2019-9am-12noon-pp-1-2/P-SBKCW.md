@@ -59,20 +59,20 @@ a subsequence $f_{n_j}\to f$ locally uniformly on $D$,
 where $f$ is holomorphic. Let $K\subset D$ be a nonempty
 compact set. Choose $\delta>0$ such that the compact set
 $$
-L=\{z+w:z\in K,\ |w|\leq\delta\}
+L=\{z+w:z\in K,\ \abs{w}\leq\delta\}
 $$
 is contained in $D$. For instance, take
-$\delta=(1-\max_{z\in K}|z|)/2$.
+$\delta=(1-\max_{z\in K}\abs{z})/2$.
 For $z\in K$, the differentiated Cauchy formula gives
 $$
 g_{n_j}(z)-f'(z)=\frac{1}{2\pi i}
-\int_{|\zeta-z|=\delta}
+\int_{\abs{\zeta-z}=\delta}
 \frac{f_{n_j}(\zeta)-f(\zeta)}{(\zeta-z)^2}\,d\zeta.
 $$
 Consequently
 $$
-\sup_{z\in K}|g_{n_j}(z)-f'(z)|
-\leq\delta^{-1}\sup_{\zeta\in L}|f_{n_j}(\zeta)-f(\zeta)|
+\sup_{z\in K}\abs{g_{n_j}(z)-f'(z)}
+\leq\delta^{-1}\sup_{\zeta\in L}\abs{f_{n_j}(\zeta)-f(\zeta)}
 \longrightarrow0.
 $$
 Thus the same

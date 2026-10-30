@@ -80,7 +80,7 @@ G=\langle\sigma\rangle
 $$
 has order $p$ by step [](#s1-1){.pf-ref} and acts faithfully on $L$. Artin's theorem gives
 $$
-[L:L^G]=|G|=p
+[L:L^G]=\cardinality{G}=p
 $$
 and identifies the full Galois group with $G$. Since $L^G=L^\sigma$, the claim follows.
 

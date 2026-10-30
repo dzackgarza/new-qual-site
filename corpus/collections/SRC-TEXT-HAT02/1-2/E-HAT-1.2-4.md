@@ -55,12 +55,12 @@ $$
 Since every line $L_i$ passes through the origin, membership in $X$ is invariant under multiplication by a positive scalar.
 For $y\in Y$, define
 $$
-H(y,t)=\left((1-t)+\frac{t}{\|y\|}\right)y.
+H(y,t)=\left((1-t)+\frac{t}{\norm{y}}\right)y.
 $$
 The scalar factor is positive for all $t\in I$, so $H(y,t)$ lies on the same ray as $y$ and therefore never enters $X$.
 At $t=0$ one has $H(y,0)=y$, and at $t=1$ one has
 $$
-H(y,1)=\frac{y}{\|y\|}\in S^2.
+H(y,1)=\frac{y}{\norm{y}}\in S^2.
 $$
 Points already on $S^2$ are fixed.
 Thus $H$ is a deformation retraction onto

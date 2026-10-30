@@ -17,24 +17,24 @@ audit:
 ---
 
 ::: {.problem}
-(a) Define the $p$-norm $\|A\|_p$ and Frobenius norm $\|A\|_F$ of a matrix $A\in M_{m,n}$.
+(a) Define the $p$-norm $\norm{A}_p$ and Frobenius norm $\norm{A}_F$ of a matrix $A\in M_{m,n}$.
 
 (b) For every $A\in M_{m,n}$, establish the following identities:
 
-(i) $\|A^H\|_2=\|A\|_2$.
+(i) $\norm{A^H}_2=\norm{A}_2$.
 
-(ii) $\|A^HA\|_2=\|A^H\|_2\|A\|_2$.
+(ii) $\norm{A^HA}_2=\norm{A^H}_2\norm{A}_2$.
 
 (c) Given two $n$-vectors $x$ and $y$ and the matrix $Z=xy^H$, show that
 $$
-\|Z\|_2=\|Z\|_F=\|x\|_2\|y\|_2.
+\norm{Z}_2=\norm{Z}_F=\norm{x}_2\norm{y}_2.
 $$
 
 (d) Prove that the Frobenius norm and the matrix two-norm are invariant under unitary transformations, i.e., show that if $P$ and $Q$ are unitary matrices of suitable dimension, then
 $$
-\|A\|_2=\|PAQ\|_2
+\norm{A}_2=\norm{PAQ}_2
 \quad\text{and}\quad
-\|A\|_F=\|PAQ\|_F.
+\norm{A}_F=\norm{PAQ}_F.
 $$
 :::
 
@@ -44,7 +44,7 @@ $$
 ::: pf
 
 ::: pf-step
-The $p$-norm of $A$ is $\|A\|_p = \sup_{x \neq 0} \frac{\|Ax\|_p}{\|x\|_p}$ (the operator norm induced by the vector $p$-norm).
+The $p$-norm of $A$ is $\norm{A}_p = \sup_{x \neq 0} \frac{\norm{Ax}_p}{\norm{x}_p}$ (the operator norm induced by the vector $p$-norm).
 
 ::: pf-proof
 definition.
@@ -53,7 +53,7 @@ definition.
 :::
 
 ::: {.pf-step #frobenius-def}
-The Frobenius norm is $\|A\|_F = \left(\sum_{i,j} |a_{ij}|^2\right)^{1/2} = \sqrt{\operatorname{tr}(A^H A)}$.
+The Frobenius norm is $\norm{A}_F = \left(\sum_{i,j} \abs{a_{ij}}^2\right)^{1/2} = \sqrt{\operatorname{tr}(A^H A)}$.
 
 ::: pf-proof
 definition.
@@ -68,19 +68,19 @@ definition.
 ::: pf
 
 ::: {.pf-step #norm-AH-eq-A}
-(i) $\|A^H\|_2 = \|A\|_2$.
+(i) $\norm{A^H}_2 = \norm{A}_2$.
 
 ::: pf-proof
-$\|A\|_2 = \sigma_{\max}(A)$ (the largest singular value), and $A^H$ has the same singular values as $A$, so $\|A^H\|_2 = \sigma_{\max}(A^H) = \sigma_{\max}(A) = \|A\|_2$.
+$\norm{A}_2 = \sigma_{\max}(A)$ (the largest singular value), and $A^H$ has the same singular values as $A$, so $\norm{A^H}_2 = \sigma_{\max}(A^H) = \sigma_{\max}(A) = \norm{A}_2$.
 :::
 
 :::
 
 ::: {.pf-step #norm-AHA}
-(ii) $\|A^H A\|_2 = \|A^H\|_2 \|A\|_2$.
+(ii) $\norm{A^H A}_2 = \norm{A^H}_2 \norm{A}_2$.
 
 ::: pf-proof
-$\|A^H A\|_2 = \sigma_{\max}(A^H A) = \sigma_{\max}(A)^2 = \|A\|_2^2 = \|A^H\|_2 \|A\|_2$ (using step [](#norm-AH-eq-A){.pf-ref} and the fact that the singular values of $A^H A$ are the squares of the singular values of $A$).
+$\norm{A^H A}_2 = \sigma_{\max}(A^H A) = \sigma_{\max}(A)^2 = \norm{A}_2^2 = \norm{A^H}_2 \norm{A}_2$ (using step [](#norm-AH-eq-A){.pf-ref} and the fact that the singular values of $A^H A$ are the squares of the singular values of $A$).
 :::
 
 :::
@@ -92,25 +92,25 @@ $\|A^H A\|_2 = \sigma_{\max}(A^H A) = \sigma_{\max}(A)^2 = \|A\|_2^2 = \|A^H\|_2
 ::: pf
 
 ::: {.pf-step #Z-two-norm}
-$\|Z\|_2 = \|x\|_2 \|y\|_2$.
+$\norm{Z}_2 = \norm{x}_2 \norm{y}_2$.
 
 ::: pf-proof
-$Z = xy^H$ has rank $1$, and its single nonzero singular value is $\|x\|_2 \|y\|_2$ (since $Z^H Z = y x^H x y^H = \|x\|_2^2 y y^H$, whose nonzero eigenvalue is $\|x\|_2^2 \|y\|_2^2$), so $\|Z\|_2 = \|x\|_2 \|y\|_2$.
+$Z = xy^H$ has rank $1$, and its single nonzero singular value is $\norm{x}_2 \norm{y}_2$ (since $Z^H Z = y x^H x y^H = \norm{x}_2^2 y y^H$, whose nonzero eigenvalue is $\norm{x}_2^2 \norm{y}_2^2$), so $\norm{Z}_2 = \norm{x}_2 \norm{y}_2$.
 :::
 
 :::
 
 ::: {.pf-step #Z-frobenius-norm}
-$\|Z\|_F = \|x\|_2 \|y\|_2$.
+$\norm{Z}_F = \norm{x}_2 \norm{y}_2$.
 
 ::: pf-proof
-$\|Z\|_F^2 = \sum_{i,j} |x_i \bar y_j|^2 = \left(\sum_i |x_i|^2\right)\left(\sum_j |y_j|^2\right) = \|x\|_2^2 \|y\|_2^2$.
+$\norm{Z}_F^2 = \sum_{i,j} \abs{x_i \bar y_j}^2 = \left(\sum_i \abs{x_i}^2\right)\left(\sum_j \abs{y_j}^2\right) = \norm{x}_2^2 \norm{y}_2^2$.
 :::
 
 :::
 
 ::: {.pf-step #Z-norms-equal}
-Hence $\|Z\|_2 = \|Z\|_F = \|x\|_2 \|y\|_2$.
+Hence $\norm{Z}_2 = \norm{Z}_F = \norm{x}_2 \norm{y}_2$.
 
 ::: pf-proof
 Steps [](#Z-two-norm){.pf-ref} and [](#Z-frobenius-norm){.pf-ref}.
@@ -125,19 +125,19 @@ Steps [](#Z-two-norm){.pf-ref} and [](#Z-frobenius-norm){.pf-ref}.
 ::: pf
 
 ::: {.pf-step #unitary-two-norm}
-$\|A\|_2 = \|PAQ\|_2$.
+$\norm{A}_2 = \norm{PAQ}_2$.
 
 ::: pf-proof
-$\|PAQ\|_2 = \sigma_{\max}(PAQ) = \sigma_{\max}(A) = \|A\|_2$, since multiplication by unitary matrices does not change the singular values.
+$\norm{PAQ}_2 = \sigma_{\max}(PAQ) = \sigma_{\max}(A) = \norm{A}_2$, since multiplication by unitary matrices does not change the singular values.
 :::
 
 :::
 
 ::: {.pf-step #unitary-frobenius-norm}
-$\|A\|_F = \|PAQ\|_F$.
+$\norm{A}_F = \norm{PAQ}_F$.
 
 ::: pf-proof
-$\|PAQ\|_F^2 = \operatorname{tr}((PAQ)^H (PAQ)) = \operatorname{tr}(Q^H A^H P^H P A Q) = \operatorname{tr}(Q^H A^H A Q) = \operatorname{tr}(A^H A) = \|A\|_F^2$ (using $P^H P = I$ and the cyclicity of the trace).
+$\norm{PAQ}_F^2 = \operatorname{tr}((PAQ)^H (PAQ)) = \operatorname{tr}(Q^H A^H P^H P A Q) = \operatorname{tr}(Q^H A^H A Q) = \operatorname{tr}(A^H A) = \norm{A}_F^2$ (using $P^H P = I$ and the cyclicity of the trace).
 :::
 
 :::

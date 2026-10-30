@@ -31,7 +31,7 @@ of $2\times2$ matrices over $F$ with determinant $1$ simple?
 For every field $F$, finite or infinite,
 $$
 \boxed{\operatorname{SL}_2(F)\text{ is simple}
-\iff \operatorname{char}F=2\text{ and }|F|>2.}
+\iff \operatorname{char}F=2\text{ and }\cardinality{F}>2.}
 $$
 
 ::: pf
@@ -59,7 +59,7 @@ identifies the group with $S_3$. The subgroup $A_3$ is
 nontrivial, proper, and normal, as the kernel of sign [@DF04].
 
 For the rest of the proof assume $\operatorname{char}F=2$
-and $|F|>2$, and write $G=\operatorname{SL}_2(F)$.
+and $\cardinality{F}>2$, and write $G=\operatorname{SL}_2(F)$.
 Set
 $$
 u(t)=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad
@@ -206,5 +206,5 @@ simple. Together with step [](#s1){.pf-ref}, this proves the criterion.
 The center of $\operatorname{SL}_2(F)$ is $\{I,-I\}$, which is nontrivial
 exactly when $\operatorname{char}F\ne2$. The quotient
 $\operatorname{PSL}_2(F)=\operatorname{SL}_2(F)/\{\pm I\}$ is simple for every
-field with $|F|>3$.
+field with $\cardinality{F}>3$.
 :::

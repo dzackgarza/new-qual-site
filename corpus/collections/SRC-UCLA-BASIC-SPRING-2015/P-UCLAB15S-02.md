@@ -20,10 +20,10 @@ audit:
 Let $f:[0,1]\to\RR$.
 We say that $f$ is Hölder continuous of order $\alpha\in(0,1)$ and write $f\in C^\alpha([0,1])$ if
 $$
-\|f\|_{C^\alpha}
-:=\sup_{x\in[0,1]}|f(x)|
+\norm{f}_{C^\alpha}
+:=\sup_{x\in[0,1]}\abs{f(x)}
 +\sup_{\substack{x,y\in[0,1]\\x\ne y}}
-\frac{|f(x)-f(y)|}{|x-y|^\alpha}<\infty.
+\frac{\abs{f(x)-f(y)}}{\abs{x-y}^\alpha}<\infty.
 $$
 This defines a norm on $C^\alpha([0,1])$.
 Prove that any bounded sequence in $C^{1/2}([0,1])$ admits a convergent subsequence in $C^{1/3}([0,1])$.
@@ -45,7 +45,7 @@ M>0
 $$
 such that
 $$
-\|f_n\|_{C^{1/2}}\le M
+\norm{f_n}_{C^{1/2}}\le M
 $$
 for every $n$.
 
@@ -60,14 +60,14 @@ The family $(f_n)$ is uniformly bounded and equicontinuous on $[0,1]$.
 
 The norm bound gives
 $$
-\|f_n\|_\infty\le M
+\norm{f_n}_\infty\le M
 $$
 for every $n$.
 It also gives
 $$
-|f_n(x)-f_n(y)|
+\abs{f_n(x)-f_n(y)}
 \le
-M|x-y|^{1/2}
+M\abs{x-y}^{1/2}
 $$
 for all $x,y$.
 Thus the family has a common Hölder modulus of continuity.
@@ -108,7 +108,7 @@ $$
 [g]_{1/2}
 =
 \sup_{x\ne y}
-\frac{|g(x)-g(y)|}{|x-y|^{1/2}}.
+\frac{\abs{g(x)-g(y)}}{\abs{x-y}^{1/2}}.
 $$
 
 
@@ -118,12 +118,12 @@ Fix $x,y\in[0,1]$.
 Uniform convergence implies pointwise convergence, so
 $$
 \begin{aligned}
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 &=
 \lim_{j\to\infty}
-|f_{n_j}(x)-f_{n_j}(y)|\\
+\abs{f_{n_j}(x)-f_{n_j}(y)}\\
 &\le
-M|x-y|^{1/2}.
+M\abs{x-y}^{1/2}.
 \end{aligned}
 $$
 Taking the supremum gives the stated bound.
@@ -140,7 +140,7 @@ g_j=f_{n_j}-f,
 $$
 one has
 $$
-\|g_j\|_\infty\to0
+\norm{g_j}_\infty\to0
 $$
 and
 $$
@@ -152,7 +152,7 @@ $$
 
 The uniform convergence in step [](#s1-2){.pf-ref} gives
 $$
-\|g_j\|_\infty\to0.
+\norm{g_j}_\infty\to0.
 $$
 Also,
 $$
@@ -176,7 +176,7 @@ by the triangle inequality for the Hölder seminorm and step [](#s1-3){.pf-ref}.
 
 If a function $g$ satisfies
 $$
-\|g\|_\infty\le \eta
+\norm{g}_\infty\le \eta
 $$
 and
 $$
@@ -200,23 +200,23 @@ x\ne y
 $$
 and set
 $$
-r=|x-y|.
+r=\abs{x-y}.
 $$
 Two estimates hold:
 $$
-|g(x)-g(y)|
+\abs{g(x)-g(y)}
 \le
 2\eta
 $$
 and
 $$
-|g(x)-g(y)|
+\abs{g(x)-g(y)}
 \le
 Hr^{1/2}.
 $$
 Therefore
 $$
-\frac{|g(x)-g(y)|}{r^{1/3}}
+\frac{\abs{g(x)-g(y)}}{r^{1/3}}
 \le
 \min
 \left\{
@@ -253,7 +253,7 @@ $$
 
 Apply step [](#s1-5){.pf-ref} with
 $$
-\eta=\|g_j\|_\infty
+\eta=\norm{g_j}_\infty
 $$
 and
 $$
@@ -267,7 +267,7 @@ Hence
 $$
 [g_j]_{1/3}
 \le
-\bigl(2\|g_j\|_\infty\bigr)^{1/3}
+\bigl(2\norm{g_j}_\infty\bigr)^{1/3}
 (2M)^{2/3}
 \longrightarrow0.
 $$
@@ -280,7 +280,7 @@ $$
 
 Therefore
 $$
-\|f_{n_j}-f\|_{C^{1/3}}
+\norm{f_{n_j}-f}_{C^{1/3}}
 \to0.
 $$
 
@@ -289,9 +289,9 @@ $$
 
 By definition,
 $$
-\|f_{n_j}-f\|_{C^{1/3}}
+\norm{f_{n_j}-f}_{C^{1/3}}
 =
-\|g_j\|_\infty
+\norm{g_j}_\infty
 +
 [g_j]_{1/3}.
 $$

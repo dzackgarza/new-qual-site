@@ -114,21 +114,21 @@ $$
 $$
 Fix $\varepsilon>0$. Choose $N$ so large that
 $$
-|A_j-S|<\varepsilon
+\abs{A_j-S}<\varepsilon
 \qquad(j\ge N).
 $$
 Then
 $$
 \begin{aligned}
-\left|\sum_{k=0}^\infty a_kx^k-S\right|
-&\le (1-x)\sum_{j=0}^{N-1}|A_j-S|x^j\\
+\abs{\sum_{k=0}^\infty a_kx^k-S}
+&\le (1-x)\sum_{j=0}^{N-1}\abs{A_j-S}x^j\\
 &\qquad +(1-x)\sum_{j=N}^\infty \varepsilon x^j.
 \end{aligned}
 $$
 The second term is at most $\varepsilon$. The first is a finite sum multiplied by $1-x$, so it tends to $0$ as $x\uparrow1$. Therefore
 $$
 \limsup_{x\to1^-}
-\left|\sum_{k=0}^\infty a_kx^k-S\right|
+\abs{\sum_{k=0}^\infty a_kx^k-S}
 \le\varepsilon.
 $$
 Since $\varepsilon$ is arbitrary,

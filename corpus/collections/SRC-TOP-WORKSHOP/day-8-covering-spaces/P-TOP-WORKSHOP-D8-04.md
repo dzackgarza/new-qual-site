@@ -29,11 +29,11 @@ Prove that, for every $b\in B$, $p^{-1}(b)$ has the same number of elements as $
 
 ::: {.pf-step #s1}
 
-Every $x \in B$ has an open neighborhood $U$ on which $y \mapsto |p^{-1}(y)|$ is constant.
+Every $x \in B$ has an open neighborhood $U$ on which $y \mapsto \cardinality{p^{-1}(y)}$ is constant.
 
 ::: pf-proof
 
-Let $U$ be an evenly covered open neighborhood of $x$, with $p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha$ and each $p|_{V_\alpha}\colon V_\alpha \to U$ a homeomorphism. For $y \in U$, each $V_\alpha$ contains exactly one point of $p^{-1}(y)$, namely $(p|_{V_\alpha})^{-1}(y)$, and $p^{-1}(y) \subseteq p^{-1}(U)$. Hence $|p^{-1}(y)| = |A|$ for all $y \in U$.
+Let $U$ be an evenly covered open neighborhood of $x$, with $p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha$ and each $p\restrict_{V_\alpha}\colon V_\alpha \to U$ a homeomorphism. For $y \in U$, each $V_\alpha$ contains exactly one point of $p^{-1}(y)$, namely $(p\restrict_{V_\alpha})^{-1}(y)$, and $p^{-1}(y) \subseteq p^{-1}(U)$. Hence $\cardinality{p^{-1}(y)} = \cardinality{A}$ for all $y \in U$.
 
 :::
 
@@ -41,7 +41,7 @@ Let $U$ be an evenly covered open neighborhood of $x$, with $p^{-1}(U) = \bigsqc
 
 ::: {.pf-step #s2}
 
-With $k = |p^{-1}(b_0)|$, the set $S = \{b \in B : |p^{-1}(b)| = k\}$ is nonempty, open, and closed.
+With $k = \cardinality{p^{-1}(b_0)}$, the set $S = \{b \in B : \cardinality{p^{-1}(b)} = k\}$ is nonempty, open, and closed.
 
 ::: pf-proof
 
@@ -53,7 +53,7 @@ $b_0 \in S$. If $b \in S$, the neighborhood $U$ of $b$ from step [](#s1){.pf-ref
 
 ::: pf-qed
 
-$B$ is connected and $S$ is a nonempty clopen subset by step [](#s2){.pf-ref}, so $S = B$: every fiber has $k = |p^{-1}(b_0)|$ elements.
+$B$ is connected and $S$ is a nonempty clopen subset by step [](#s2){.pf-ref}, so $S = B$: every fiber has $k = \cardinality{p^{-1}(b_0)}$ elements.
 
 :::
 

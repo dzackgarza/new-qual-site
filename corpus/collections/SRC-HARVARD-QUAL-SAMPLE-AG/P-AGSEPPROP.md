@@ -85,13 +85,13 @@ $$
 $$
 
 ::: pf-proof
-Since $g|_U=h|_U$, the inclusion
+Since $g\restrict_U=h\restrict_U$, the inclusion
 $$
 U\hookrightarrow Z
 $$
-factors through the equalizer $E$.  Thus the underlying closed subset $|E|\subseteq|Z|$ contains the dense subset $U$.  By step [](#separated-gives-closed-equalizer){.pf-ref}, $|E|$ is closed, so
+factors through the equalizer $E$.  Thus the underlying closed subset $\underlyingspace{E}\subseteq\underlyingspace{Z}$ contains the dense subset $U$.  By step [](#separated-gives-closed-equalizer){.pf-ref}, $\underlyingspace{E}$ is closed, so
 $$
-|E|=|Z|.
+\underlyingspace{E}=\underlyingspace{Z}.
 $$
 
 Let $\mathcal I\subseteq\mathcal O_Z$ be the ideal sheaf defining the closed immersion $E\hookrightarrow Z$.  The equality of underlying spaces says
@@ -176,7 +176,7 @@ $$
 \boxed{
 \begin{gathered}
 f\text{ separated},\ Z\text{ reduced},\
-g|_U=h|_U\text{ on a dense open }U
+g\restrict_U=h\restrict_U\text{ on a dense open }U
 \\
 \Longrightarrow g=h,
 \end{gathered}

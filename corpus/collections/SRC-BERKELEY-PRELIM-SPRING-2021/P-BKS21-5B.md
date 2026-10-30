@@ -36,24 +36,24 @@ For every $c$ in the open unit disk, $\phi_c$ maps the open unit disk into itsel
 
 ::: pf-proof
 
-If $|z|<1$ and $|c|<1$, then
+If $\abs{z}<1$ and $\abs{c}<1$, then
 $$
-|\overline c\,z|<1,
+\abs{\overline c\,z}<1,
 $$
 so the denominator does not vanish. Moreover,
 $$
 \begin{aligned}
-|1-\overline c\,z|^2-|z-c|^2
+\abs{1-\overline c\,z}^2-\abs{z-c}^2
 &=
-(1-|c|^2)(1-|z|^2)
+(1-\abs{c}^2)(1-\abs{z}^2)
 >0.
 \end{aligned}
 $$
 Therefore
 $$
-|\phi_c(z)|^2
+\abs{\phi_c(z)}^2
 =
-\frac{|z-c|^2}{|1-\overline c\,z|^2}
+\frac{\abs{z-c}^2}{\abs{1-\overline c\,z}^2}
 <1.
 $$
 
@@ -80,7 +80,7 @@ for $z$ gives
 $$
 z=\frac{w+c}{1+\overline c\,w}.
 $$
-The denominator is nonzero for $|w|<1$ because $|\overline c\,w|<1$. Direct substitution shows that this formula is both a left and right inverse of $\phi_c$. By step [](#s1-1){.pf-ref}, $\phi_c$ maps the disk into itself, and the same calculation from step [](#s1-1){.pf-ref} with $-c$ in place of $c$ shows that the displayed inverse maps the disk into itself as well.
+The denominator is nonzero for $\abs{w}<1$ because $\abs{\overline c\,w}<1$. Direct substitution shows that this formula is both a left and right inverse of $\phi_c$. By step [](#s1-1){.pf-ref}, $\phi_c$ maps the disk into itself, and the same calculation from step [](#s1-1){.pf-ref} with $-c$ in place of $c$ shows that the displayed inverse maps the disk into itself as well.
 
 :::
 

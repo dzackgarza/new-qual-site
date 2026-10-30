@@ -40,7 +40,7 @@ definition of barycentric subdivision.
 
 ::: pf-step
 
-The vertex corresponding to $S$ is the barycenter of the face spanned by $\{e_i : i \in S\}$, whose barycentric coordinates are $t_i = 1/|S|$ for $i \in S$ and $t_i = 0$ for $i \notin S$.
+The vertex corresponding to $S$ is the barycenter of the face spanned by $\{e_i : i \in S\}$, whose barycentric coordinates are $t_i = 1/\cardinality{S}$ for $i \in S$ and $t_i = 0$ for $i \notin S$.
 
 ::: pf-proof
 
@@ -52,7 +52,7 @@ the barycenter of a face.
 
 ::: {.pf-step #s3}
 
-An $n$-simplex of the subdivision is spanned by a chain of faces $S_0 \subsetneq S_1 \subsetneq \cdots \subsetneq S_n$ with $|S_k| = k + 1$.
+An $n$-simplex of the subdivision is spanned by a chain of faces $S_0 \subsetneq S_1 \subsetneq \cdots \subsetneq S_n$ with $\cardinality{S_k} = k + 1$.
 
 ::: pf-proof
 

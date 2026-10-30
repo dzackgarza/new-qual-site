@@ -35,9 +35,9 @@ audit:
 ::: {.problem}
 Let $f(z)=1/(z(1+z^2))$.
 
-(a) Find a Laurent series representing $f$ for $|z|<1$.
+(a) Find a Laurent series representing $f$ for $\abs{z}<1$.
 
-(b) Find another Laurent series representing $f$ for $|z|>1$.
+(b) Find another Laurent series representing $f$ for $\abs{z}>1$.
 :::
 
 ::: {.solution}
@@ -48,7 +48,7 @@ Let $f(z)=1/(z(1+z^2))$.
 
 On
 $$
-0<|z|<1,
+0<\abs{z}<1,
 $$
 one has
 $$
@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-For $|z|<1$, one has $|z^2|<1$, so the geometric-series identity
+For $\abs{z}<1$, one has $\abs{z^2}<1$, so the geometric-series identity
 $$
 \frac1{1-w}
 =
@@ -83,7 +83,7 @@ The puncture at $z=0$ is required because $f$ itself has a pole there.
 
 Therefore, for
 $$
-0<|z|<1,
+0<\abs{z}<1,
 $$
 the Laurent series of $f$ is
 $$
@@ -120,7 +120,7 @@ $$
 
 On
 $$
-|z|>1,
+\abs{z}>1,
 $$
 one has
 $$
@@ -131,9 +131,9 @@ $$
 
 ::: pf-proof
 
-If $|z|>1$, then
+If $\abs{z}>1$, then
 $$
-|z^{-2}|<1.
+\abs{z^{-2}}<1.
 $$
 Applying the geometric series to $w=-z^{-2}$ gives the displayed
 identity.
@@ -146,7 +146,7 @@ identity.
 
 Therefore, for
 $$
-|z|>1,
+\abs{z}>1,
 $$
 the Laurent series of $f$ is
 $$

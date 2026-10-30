@@ -29,7 +29,7 @@ Every finite-dimensional complex representation of the finite group $S_n$ admits
 Start with any positive-definite Hermitian inner product $\langle\cdot,\cdot\rangle_0$ on $V$ and define
 $$
 \langle v,w\rangle
-:=\frac1{|S_n|}\sum_{h\in S_n}
+:=\frac1{\cardinality{S_n}}\sum_{h\in S_n}
 \langle\varphi(h)v,\varphi(h)w\rangle_0.
 $$
 This is again positive definite and Hermitian. For $g\in S_n$, left multiplication permutes the summation index, so

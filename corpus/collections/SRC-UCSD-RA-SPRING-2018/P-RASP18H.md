@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\ell^\infty(\NN)$ be the Banach space of bounded complex sequences $x = (x_1, x_2, x_3, \ldots)$ such that $\|x\|_\infty = \sup_n |x_n| < \infty$ and let $V$ be the subspace defined as:
+Let $\ell^\infty(\NN)$ be the Banach space of bounded complex sequences $x = (x_1, x_2, x_3, \ldots)$ such that $\norm{x}_\infty = \sup_n \abs{x_n} < \infty$ and let $V$ be the subspace defined as:
 $$
 V = \left\{x \in \ell^\infty(\NN) : \lim_{n \to \infty} \frac{1}{n}(x_1 + x_2 + \cdots + x_n) \text{ exists in } \CC\right\}.
 $$
@@ -56,11 +56,11 @@ L(x)=\lim_{n\to\infty}\frac1n\sum_{j=1}^n x_j.
 $$
 This is linear. Moreover,
 $$
-|L(x)|
-\le \limsup_{n\to\infty}\frac1n\sum_{j=1}^n|x_j|
-\le \|x\|_\infty.
+\abs{L(x)}
+\le \limsup_{n\to\infty}\frac1n\sum_{j=1}^n\abs{x_j}
+\le \norm{x}_\infty.
 $$
-Thus $L$ is bounded and $\|L\|\le1$. Since the constant sequence $\mathbf1=(1,1,\ldots)$ lies in $V$ and $L(\mathbf1)=1=\|\mathbf1\|_\infty$, in fact $\|L\|=1$.
+Thus $L$ is bounded and $\norm{L}\le1$. Since the constant sequence $\mathbf1=(1,1,\ldots)$ lies in $V$ and $L(\mathbf1)=1=\norm{\mathbf1}_\infty$, in fact $\norm{L}=1$.
 
 By the Hahn--Banach theorem, $L$ extends to a bounded linear functional
 $$

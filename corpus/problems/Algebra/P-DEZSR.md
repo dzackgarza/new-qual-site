@@ -42,7 +42,7 @@ $$
 $$
 then
 $$
-|K|=p^n.
+\cardinality{K}=p^n.
 $$
 
 :::
@@ -88,7 +88,7 @@ p^d-1\mid p^n-1,
 $$
 so every root of $x^{p^d}-x$ is also a root of $x^{p^n}-x$. Hence the unique field of $p^d$ elements sits inside $\FF_{p^n}$.
 
-Conversely, let $K\subseteq\FF_{p^n}$ be a subfield. Then $|K|=p^d$ for some $d$, and
+Conversely, let $K\subseteq\FF_{p^n}$ be a subfield. Then $\cardinality{K}=p^d$ for some $d$, and
 $$
 [\FF_{p^n}:\FF_p]
 =
@@ -114,7 +114,7 @@ $$
 $$
 so
 $$
-|L|=p^{md}=q^m.
+\cardinality{L}=p^{md}=q^m.
 $$
 By step [](#s2){.pf-ref}, there is only one field of that cardinality up to isomorphism.
 

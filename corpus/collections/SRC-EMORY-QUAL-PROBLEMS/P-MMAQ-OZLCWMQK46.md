@@ -54,23 +54,23 @@ for all $0\le x<y\le1$.
 
 Fix $\varepsilon>0$. By absolute continuity of the Lebesgue integral, choose $\eta>0$ such that
 $$
-m(U)<\eta\quad\Longrightarrow\quad \int_U|f'|<\varepsilon
+m(U)<\eta\quad\Longrightarrow\quad \int_U\abs{f'}<\varepsilon
 $$
 for every measurable $U\subseteq[0,1]$. Put $\delta=\eta/2$.
 
 Let $E\subseteq[0,1]$ with $m^*(E)<\delta$. Choose an open set $U\supseteq E$ with $m(U)<\eta$. Write the relative open set $U\cap[0,1]$ as a countable disjoint union of intervals $I_j$. For each $j$,
 $$
 \operatorname{diam} f(I_j)
-\le \int_{I_j}|f'(t)|\,dt,
+\le \int_{I_j}\abs{f'(t)}\,dt,
 $$
-because every difference $|f(y)-f(x)|$ with $x,y\in I_j$ is bounded by that integral. Hence
+because every difference $\abs{f(y)-f(x)}$ with $x,y\in I_j$ is bounded by that integral. Hence
 $$
 \begin{aligned}
 m^*(f(E))
 &\le \sum_j m^*(f(E\cap I_j))\\
 &\le \sum_j \operatorname{diam} f(I_j)\\
-&\le \sum_j\int_{I_j}|f'|\\
-&=\int_U|f'|<\varepsilon.
+&\le \sum_j\int_{I_j}\abs{f'}\\
+&=\int_U\abs{f'}<\varepsilon.
 \end{aligned}
 $$
 Thus (1) implies (2).
@@ -111,7 +111,7 @@ First we prove that it satisfies (3). Let $E\subseteq[0,1]$ have measure zero an
 $$
 m^*(f(E\cap[a,1]))=0.
 $$
-On the other hand, $|f(x)|\le x$, so
+On the other hand, $\abs{f(x)}\le x$, so
 $$
 f(E\cap[0,a])\subseteq[-a,a]
 $$
@@ -135,7 +135,7 @@ f(t_k)=(-1)^k t_k.
 $$
 For the partition containing $0,t_N,t_{N-1},\ldots,t_0$ in increasing order, the variation is at least
 $$
-\sum_{k=0}^{N-1}|f(t_k)-f(t_{k+1})|
+\sum_{k=0}^{N-1}\abs{f(t_k)-f(t_{k+1})}
 =\sum_{k=0}^{N-1}(t_k+t_{k+1}).
 $$
 Since $t_k\asymp k^{-1/2}$, this tends to $\infty$. Hence $f$ has unbounded variation on $[0,1]$.

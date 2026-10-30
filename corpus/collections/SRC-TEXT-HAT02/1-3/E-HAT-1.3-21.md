@@ -49,9 +49,9 @@ For the torus space $X$,
 $$
 \pi_1(X)
 \cong
-\left\langle a,b,c\ \middle|\ [a,b]=1,\ a=c^2\right\rangle
+\left\langle a,b,c\ \presentationbar\ [a,b]=1,\ a=c^2\right\rangle
 \cong
-\left\langle b,c\ \middle|\ [b,c^2]=1\right\rangle.
+\left\langle b,c\ \presentationbar\ [b,c^2]=1\right\rangle.
 $$
 
 ::: pf-proof

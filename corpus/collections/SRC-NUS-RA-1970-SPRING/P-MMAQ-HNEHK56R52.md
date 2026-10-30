@@ -102,7 +102,7 @@ The map $f \mapsto \int_0^1 f(x) \sin(n\pi x) ~dx$ is bounded linear on $L^1[0,1
 For an indicator $f = \chi_{[a,b]}$, $\int_0^1 f(x) \sin(n\pi x) ~dx = \frac{\cos(n\pi a) - \cos(n\pi b)}{n\pi} \to 0$.
 
 ::: pf-proof
-Direct antiderivative computation: $\int_a^b \sin(n\pi x) ~dx = \frac{-\cos(n\pi x)}{n\pi}\big|_a^b$.
+Direct antiderivative computation: $\int_a^b \sin(n\pi x) ~dx = \frac{-\cos(n\pi x)}{n\pi}\evalfrom_a^b$.
 :::
 
 :::
@@ -139,7 +139,7 @@ Combine steps [](#dense-subspace-suffices){.pf-ref}, [](#step-function-case){.pf
 ::: pf-proof
 
 ::: {.pf-step #f-defined}
-Let $f(x) \definedas x \sin(1/x)$ for $x \in (0,1]$, with $f(0) \definedas 0$.
+Let $f(x) \coloneqq x \sin(1/x)$ for $x \in (0,1]$, with $f(0) \coloneqq 0$.
 
 ::: pf-proof
 This defines a function on $[0,1]$; continuity at $0$ follows from $\abs{x\sin(1/x)} \leq x \to 0$.

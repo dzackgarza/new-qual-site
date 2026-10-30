@@ -39,7 +39,7 @@ audit:
 
 The Sylow theorems have the following form.
 
-Let $G$ be finite, let $p$ be prime, and write $|G|=p^am$ with
+Let $G$ be finite, let $p$ be prime, and write $\cardinality{G}=p^am$ with
 $p\nmid m$. A Sylow $p$-subgroup is a subgroup of order $p^a$.
 Such subgroups exist. Every $p$-subgroup of $G$ is contained in a
 Sylow $p$-subgroup, and all Sylow $p$-subgroups are conjugate.

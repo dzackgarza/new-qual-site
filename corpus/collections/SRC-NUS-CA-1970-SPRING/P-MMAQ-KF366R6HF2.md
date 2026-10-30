@@ -253,7 +253,7 @@ Step [](#cauchy-contour-integral-decomposition){.pf-ref}.
 For each zero $a_j$, using step [](#zero-log-derivative-formula){.pf-ref} and Cauchy's Theorem on the holomorphic term $\frac{g_j'}{g_j}$: $$\oint_{C(a_j, \varepsilon)} \frac{f'(z)}{f(z)} \, dz = \oint_{C(a_j, \varepsilon)} \left( \frac{m_j}{z - a_j} + \frac{g_j'(z)}{g_j(z)} \right) dz = m_j (2\pi i) + 0 = 2\pi i m_j.$$
 
 ::: pf-proof
-*Proof:* $\oint_{|z-a_j|=\varepsilon} \frac{dz}{z-a_j} = 2\pi i$ and $\oint \frac{g_j'}{g_j}\,dz = 0$ by Cauchy's theorem for holomorphic functions.
+*Proof:* $\oint_{\abs{z-a_j}=\varepsilon} \frac{dz}{z-a_j} = 2\pi i$ and $\oint \frac{g_j'}{g_j}\,dz = 0$ by Cauchy's theorem for holomorphic functions.
 :::
 
 :::
@@ -262,7 +262,7 @@ For each zero $a_j$, using step [](#zero-log-derivative-formula){.pf-ref} and Ca
 For each pole $b_l$, using step [](#pole-log-derivative-formula){.pf-ref} and Cauchy's Theorem on the holomorphic term $\frac{h_l'}{h_l}$: $$\oint_{C(b_l, \varepsilon)} \frac{f'(z)}{f(z)} \, dz = \oint_{C(b_l, \varepsilon)} \left( \frac{-k_l}{z - b_l} + \frac{h_l'(z)}{h_l(z)} \right) dz = -k_l (2\pi i) + 0 = -2\pi i k_l.$$
 
 ::: pf-proof
-*Proof:* $\oint_{|z-b_l|=\varepsilon} \frac{dz}{z-b_l} = 2\pi i$ and $\oint \frac{h_l'}{h_l}\,dz = 0$ by Cauchy's theorem for holomorphic functions.
+*Proof:* $\oint_{\abs{z-b_l}=\varepsilon} \frac{dz}{z-b_l} = 2\pi i$ and $\oint \frac{h_l'}{h_l}\,dz = 0$ by Cauchy's theorem for holomorphic functions.
 :::
 
 :::

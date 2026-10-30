@@ -120,7 +120,7 @@ Every coherent sheaf $F$ is a quotient of a finite direct sum of invertible shea
 
 ::: pf-proof
 
-For each $x$, choose an affine neighborhood $U_x$ and a finite family of sections generating $F|_{U_x}$.
+For each $x$, choose an affine neighborhood $U_x$ and a finite family of sections generating $F\restrict_{U_x}$.
 By step [](#s3){.pf-ref}, choose $W_x=X_{s_x}\subseteq U_x$ containing $x$, with $s_x\in\Gamma(X,L_x)$ and $L_x$ invertible.
 Quasi-compactness of $X$ gives a finite cover by such opens, which we label $W_i=X_{s_i}$ for $1\le i\le t$.
 Let $a_{ij}\in\Gamma(W_i,F)$ be the restrictions of the finite generating families just chosen.
@@ -129,7 +129,7 @@ By the section-extension lemma [@Har10a, Lemma II.5.14], for each pair $(i,j)$ t
 $$
 b_{ij}\in\Gamma(X,F\otimes L_i^{\otimes m_{ij}})
 \quad\text{with}\quad
-b_{ij}|_{W_i}=a_{ij}\otimes s_i^{\otimes m_{ij}}.
+b_{ij}\restrict_{W_i}=a_{ij}\otimes s_i^{\otimes m_{ij}}.
 $$
 The lemma applies because $X$ is noetherian and $F$ is quasi-coherent; it does not require $W_i$ to be affine.
 Each $b_{ij}$ defines a morphism $L_i^{\otimes(-m_{ij})}\to F$.

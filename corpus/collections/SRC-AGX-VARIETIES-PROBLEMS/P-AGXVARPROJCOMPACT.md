@@ -133,18 +133,18 @@ F_\alpha(z)=0
 $$
 Each restriction
 $$
-F_\alpha|_{S^{2n+1}}:S^{2n+1}\longrightarrow\CC
+F_\alpha\restrict_{S^{2n+1}}:S^{2n+1}\longrightarrow\CC
 $$
 is continuous, so
 $$
-(F_\alpha|_{S^{2n+1}})^{-1}(\{0\})
+(F_\alpha\restrict_{S^{2n+1}})^{-1}(\{0\})
 $$
 is closed. Therefore
 $$
 q^{-1}(X)
 =
 \bigcap_{\alpha\in A}
-(F_\alpha|_{S^{2n+1}})^{-1}(\{0\})
+(F_\alpha\restrict_{S^{2n+1}})^{-1}(\{0\})
 $$
 is closed as an arbitrary intersection of closed subsets.
 :::

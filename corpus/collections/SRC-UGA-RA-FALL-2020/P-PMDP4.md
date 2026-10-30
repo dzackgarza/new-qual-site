@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Prove that if $f,\,xf(x) \in L^1(\RR)$, then
 $$
-F(y) \definedas \int f(x)\cos(yx)\,dx
+F(y) \coloneqq \int f(x)\cos(yx)\,dx
 $$
 defines a $C^1$ function.
 :::
@@ -49,9 +49,9 @@ $$
 $$
 By the mean value theorem,
 $$
-\left|\frac{\cos((y+h)x)-\cos(yx)}{h}\right|\le |x|,
+\abs{\frac{\cos((y+h)x)-\cos(yx)}{h}}\le \abs{x},
 $$
-so the absolute value of the integrand is bounded by $|xf(x)|\in L^1$. Dominated convergence therefore gives
+so the absolute value of the integrand is bounded by $\abs{xf(x)}\in L^1$. Dominated convergence therefore gives
 $$
 F'(y)=-\int_{\RR}xf(x)\sin(yx)\,dx.
 $$
@@ -60,7 +60,7 @@ Now let $y_j\to y$. Then
 $$
 -xf(x)\sin(y_jx)\to -xf(x)\sin(yx)
 $$
-pointwise and is dominated by $|xf(x)|$. Another application of dominated convergence yields
+pointwise and is dominated by $\abs{xf(x)}$. Another application of dominated convergence yields
 $$
 F'(y_j)\to F'(y).
 $$

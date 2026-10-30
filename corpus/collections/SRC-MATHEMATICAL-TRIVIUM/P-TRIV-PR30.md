@@ -20,7 +20,7 @@ An electron can occupy one of a countable number of energy levels in atom.
 The transition probabilities from i’s to j’s level per second are given by
 
 $$
-P _ { i j } ( t = 1 ) = c _ { i } e ^ { - \alpha | i - j | } ,\tag{54}
+P _ { i j } ( t = 1 ) = c _ { i } e ^ { - \alpha \abs{ i - j } } ,\tag{54}
 $$
 
 where $\alpha > 0$ and $c _ { i }$ are some constants.
@@ -37,7 +37,7 @@ Assume the energy levels are indexed by the nonnegative integers $0,1,2,\ldots$,
 $$
 r=e^{-\alpha}\in(0,1).
 $$
-Then the one-step transition probabilities are $P_{ij}=c_i r^{|i-j|}$.
+Then the one-step transition probabilities are $P_{ij}=c_i r^{\abs{i-j}}$.
 
 ::: pf
 
@@ -45,7 +45,7 @@ Then the one-step transition probabilities are $P_{ij}=c_i r^{|i-j|}$.
 
 Row normalization requires
 $$
-c_i^{-1}=\sum_{j=0}^{\infty}r^{|i-j|}.
+c_i^{-1}=\sum_{j=0}^{\infty}r^{\abs{i-j}}.
 $$
 
 
@@ -54,7 +54,7 @@ $$
 For fixed $i$, transition probabilities must sum to one:
 $$
 1=\sum_{j=0}^{\infty}P_{ij}
-=c_i\sum_{j=0}^{\infty}r^{|i-j|}.
+=c_i\sum_{j=0}^{\infty}r^{\abs{i-j}}.
 $$
 Solve for $c_i$.
 
@@ -66,7 +66,7 @@ Solve for $c_i$.
 
 The normalizing sum is
 $$
-\sum_{j=0}^{\infty}r^{|i-j|}
+\sum_{j=0}^{\infty}r^{\abs{i-j}}
 =\frac{1+r-r^{i+1}}{1-r}.
 $$
 
@@ -131,14 +131,13 @@ $$
 \boxed{
 P_{ij}(2)
 =c_i\sum_{k=0}^{\infty}c_k
-e^{-\alpha(|i-k|+|k-j|)}}.
-}
+e^{-\alpha(\abs{i-k}+\abs{k-j})}}.
 $$
 
 
 ::: pf-proof
 
-Substitute $P_{ik}(1)=c_i e^{-\alpha|i-k|}$ and $P_{kj}(1)=c_k e^{-\alpha|k-j|}$ into step [](#s1-4){.pf-ref} and factor out $c_i$.
+Substitute $P_{ik}(1)=c_i e^{-\alpha\abs{i-k}}$ and $P_{kj}(1)=c_k e^{-\alpha\abs{k-j}}$ into step [](#s1-4){.pf-ref} and factor out $c_i$.
 
 :::
 
@@ -152,7 +151,7 @@ $$
 P_{ij}(2)
 =\frac{(1-r)^2}{1+r-r^{i+1}}
 \sum_{k=0}^{\infty}
-\frac{r^{|i-k|+|k-j|}}
+\frac{r^{\abs{i-k}+\abs{k-j}}}
 {1+r-r^{k+1}},
 \qquad r=e^{-\alpha}.}
 $$
@@ -160,7 +159,7 @@ $$
 
 ::: pf-proof
 
-Replace $c_i$ and $c_k$ in step [](#s1-5){.pf-ref} by step [](#s1-3){.pf-ref}. Since $0<r<1$, the summand is bounded by a constant multiple of $r^{|i-k|+|k-j|}$, so the series converges absolutely.
+Replace $c_i$ and $c_k$ in step [](#s1-5){.pf-ref} by step [](#s1-3){.pf-ref}. Since $0<r<1$, the summand is bounded by a constant multiple of $r^{\abs{i-k}+\abs{k-j}}$, so the series converges absolutely.
 
 :::
 

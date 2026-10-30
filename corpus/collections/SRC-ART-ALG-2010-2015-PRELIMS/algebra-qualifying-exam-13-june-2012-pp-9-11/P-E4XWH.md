@@ -96,11 +96,11 @@ $p^2$ is abelian.
 For a noncentral element, the size of its conjugacy class
 is $[G:C_G(g)]$, a power of $p$ greater than $1$, so it
 is divisible by $p$. Splitting $G$ into conjugacy classes
-therefore gives $|G|\equiv|Z(G)|\pmod p$.
+therefore gives $\cardinality{G}\equiv\cardinality{Z(G)}\pmod p$.
 The center contains the identity, and its order divides
-$p^2$. Consequently $|Z(G)|$ is $p$ or $p^2$.
+$p^2$. Consequently $\cardinality{Z(G)}$ is $p$ or $p^2$.
 
-If $|Z(G)|=p^2$, then $G=Z(G)$ is abelian. Otherwise
+If $\cardinality{Z(G)}=p^2$, then $G=Z(G)$ is abelian. Otherwise
 $G/Z(G)$ has prime order and is cyclic. Choose $g\in G$
 whose coset generates this quotient. Every element of $G$
 is $g^a z$ for some integer $a$ and $z\in Z(G)$.
@@ -118,16 +118,16 @@ No example exists in part (d).
 
 ::: pf-proof
 
-We prove by induction on $|G|$ that every finite abelian
-group has a subgroup of each positive order dividing $|G|$.
+We prove by induction on $\cardinality{G}$ that every finite abelian
+group has a subgroup of each positive order dividing $\cardinality{G}$.
 For $d=1$, the identity subgroup works; this includes the
-base case $|G|=1$.
+base case $\cardinality{G}=1$.
 
 Suppose $d>1$ and choose a prime $p\mid d$. Since
-$p\mid|G|$, Cauchy's theorem supplies an element of order
+$p\mid\cardinality{G}$, Cauchy's theorem supplies an element of order
 $p$, generating a subgroup $N$ of order $p$ [@DF04].
 It is normal because $G$ is abelian. The quotient $G/N$
-is abelian of order $|G|/p<|G|$, and $d/p$ divides its
+is abelian of order $\cardinality{G}/p<\cardinality{G}$, and $d/p$ divides its
 order. By induction it has a subgroup $\overline H$ of
 order $d/p$. The inverse image of $\overline H$ in $G$
 is a subgroup consisting of $d/p$ cosets of $N$, each

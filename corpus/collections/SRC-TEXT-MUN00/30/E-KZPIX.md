@@ -157,7 +157,7 @@ $W$ is an open neighborhood of $\mathbf{0}$ in $\QQ^\infty$.
 :::
 
 ::: pf-step
-For each $k \ge 1$, choose $q_k \in \QQ$ such that $\delta_k < |q_k| < \varepsilon_{k,k}$.
+For each $k \ge 1$, choose $q_k \in \QQ$ such that $\delta_k < \abs{q_k} < \varepsilon_{k,k}$.
 
 ::: pf-proof
 $\delta_k = \frac{1}{2}\varepsilon_{k,k} < \varepsilon_{k,k}$ and $\QQ$ is dense in $\RR$.
@@ -169,13 +169,13 @@ $\delta_k = \frac{1}{2}\varepsilon_{k,k} < \varepsilon_{k,k}$ and $\QQ$ is dense
 The point $y^{(k)} = (0, \dots, 0, q_k, 0, \dots)$ (with $q_k$ in the $k$-th coordinate) lies in $\QQ^\infty$ and satisfies $y^{(k)} \in V_k \subseteq B_k$.
 
 ::: pf-proof
-$|y^{(k)}_n| = 0 < \varepsilon_{k,n}$ for $n \neq k$ and $|y^{(k)}_k| = |q_k| < \varepsilon_{k,k}$.
+$\abs{y^{(k)}_n} = 0 < \varepsilon_{k,n}$ for $n \neq k$ and $\abs{y^{(k)}_k} = \abs{q_k} < \varepsilon_{k,k}$.
 :::
 
 :::
 
 ::: {.pf-step #s4-7}
-But $|y^{(k)}_k| = |q_k| > \delta_k$, so $y^{(k)} \notin W$.
+But $\abs{y^{(k)}_k} = \abs{q_k} > \delta_k$, so $y^{(k)} \notin W$.
 
 ::: pf-proof
 definition of $W$.

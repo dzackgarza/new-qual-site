@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $(f_n)$ be holomorphic functions on $\DD$ satisfying
 $$
-\int_{\DD}|f_n(z)|\,d\lambda(z)\le1
+\int_{\DD}\abs{f_n(z)}\,d\lambda(z)\le1
 $$
 for every $n$.
 Show that some subsequence converges uniformly on every compact subset of $\DD$.
@@ -31,7 +31,7 @@ Show that some subsequence converges uniformly on every compact subset of $\DD$.
 
 ::: {.pf-step #s1-1}
 
-Fix $0<r<R<1$. For every $z$ with $|z|\leq r$, the disk
+Fix $0<r<R<1$. For every $z$ with $\abs{z}\leq r$, the disk
 $$
 D(z,R-r)
 $$
@@ -40,9 +40,9 @@ is contained in $\DD$.
 
 ::: pf-proof
 
-If $|w-z|<R-r$, then
+If $\abs{w-z}<R-r$, then
 $$
-|w|\leq|z|+|w-z|<r+(R-r)=R<1.
+\abs{w}\leq\abs{z}+\abs{w-z}<r+(R-r)=R<1.
 $$
 
 :::
@@ -51,11 +51,11 @@ $$
 
 ::: {.pf-step #s1-2}
 
-Since $|f_n|$ is subharmonic, the sub-mean inequality gives
+Since $\abs{f_n}$ is subharmonic, the sub-mean inequality gives
 $$
-|f_n(z)|
+\abs{f_n(z)}
 \leq\frac1{\pi(R-r)^2}
-\int_{D(z,R-r)}|f_n(w)|\,d\lambda(w).
+\int_{D(z,R-r)}\abs{f_n(w)}\,d\lambda(w).
 $$
 
 
@@ -71,7 +71,7 @@ The modulus of a holomorphic function is subharmonic. Apply its mean-value inequ
 
 Therefore, uniformly in $n$,
 $$
-\sup_{|z|\leq r}|f_n(z)|
+\sup_{\abs{z}\leq r}\abs{f_n(z)}
 \leq\frac1{\pi(R-r)^2}.
 $$
 
@@ -80,7 +80,7 @@ $$
 
 The integral over the smaller disk in step [](#s1-2){.pf-ref} is at most
 $$
-\int_{\DD}|f_n(w)|\,d\lambda(w)\leq1
+\int_{\DD}\abs{f_n(w)}\,d\lambda(w)\leq1
 $$
 by hypothesis.
 
@@ -95,7 +95,7 @@ Thus the family $\{f_n\}$ is locally uniformly bounded on $\DD$.
 
 ::: pf-proof
 
-Every compact $K\subset\DD$ is contained in some closed disk $\{|z|\leq r\}$ with $r<1$. Choose $R$ with $r<R<1$ and apply step [](#s1-3){.pf-ref}.
+Every compact $K\subset\DD$ is contained in some closed disk $\{\abs{z}\leq r\}$ with $r<1$. Choose $R$ with $r<R<1$ and apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -105,15 +105,15 @@ Every compact $K\subset\DD$ is contained in some closed disk $\{|z|\leq r\}$ wit
 
 Fix $0<r<R<1$. Cauchy's estimate gives a constant $C_{r,R}$ independent of $n$ such that
 $$
-\sup_{|z|\leq r}|f_n'(z)|\leq C_{r,R}.
+\sup_{\abs{z}\leq r}\abs{f_n'(z)}\leq C_{r,R}.
 $$
 
 
 ::: pf-proof
 
-Choose $r<R_1<R<1$. Step [](#s1-3){.pf-ref} gives a uniform bound $M$ for $|f_n|$ on $|z|\leq R_1$. For $|z|\leq r$, the circle of radius $R_1-r$ about $z$ lies in $|w|<R_1$. Cauchy's derivative estimate gives
+Choose $r<R_1<R<1$. Step [](#s1-3){.pf-ref} gives a uniform bound $M$ for $\abs{f_n}$ on $\abs{z}\leq R_1$. For $\abs{z}\leq r$, the circle of radius $R_1-r$ about $z$ lies in $\abs{w}<R_1$. Cauchy's derivative estimate gives
 $$
-|f_n'(z)|\leq \frac{M}{R_1-r},
+\abs{f_n'(z)}\leq \frac{M}{R_1-r},
 $$
 which is independent of $n$.
 
@@ -123,14 +123,14 @@ which is independent of $n$.
 
 ::: {.pf-step #s1-6}
 
-On every closed disk $\{|z|\leq r\}$, the sequence $(f_n)$ is uniformly bounded and equicontinuous.
+On every closed disk $\{\abs{z}\leq r\}$, the sequence $(f_n)$ is uniformly bounded and equicontinuous.
 
 
 ::: pf-proof
 
 Uniform boundedness is step [](#s1-3){.pf-ref}. The derivative bound in step [](#s1-5){.pf-ref} and the line-segment integral formula give
 $$
-|f_n(z)-f_n(w)|\leq C_{r,R}|z-w|
+\abs{f_n(z)-f_n(w)}\leq C_{r,R}\abs{z-w}
 $$
 for points in a slightly smaller convex disk, yielding equicontinuity.
 
@@ -142,7 +142,7 @@ for points in a slightly smaller convex disk, yielding equicontinuity.
 
 For each integer $k\geq2$, let
 $$
-K_k=\{z:|z|\leq1-1/k\}.
+K_k=\{z:\abs{z}\leq1-1/k\}.
 $$
 By Arzela--Ascoli, every subsequence of $(f_n)$ has a further subsequence converging uniformly on $K_k$.
 

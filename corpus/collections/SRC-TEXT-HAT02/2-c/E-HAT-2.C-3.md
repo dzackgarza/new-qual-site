@@ -91,9 +91,9 @@ F(z)=\lambda z.
 $$
 Applying $F$ and using conjugate-linearity gives
 $$
--z=F^2(z)=F(\lambda z)=\bar\lambda F(z)=|\lambda|^2z.
+-z=F^2(z)=F(\lambda z)=\bar\lambda F(z)=\abs{\lambda}^2z.
 $$
-Since $z\ne0$, this would imply $|\lambda|^2=-1$, impossible.
+Since $z\ne0$, this would imply $\abs{\lambda}^2=-1$, impossible.
 
 :::
 

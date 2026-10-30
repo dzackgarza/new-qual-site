@@ -102,13 +102,13 @@ f(z)\ne a
 $$
 for every $z$, so $g$ is entire. Moreover,
 $$
-|f(z)-a|
+\abs{f(z)-a}
 \ge
 r
 $$
 for every $z$, because the open disk of radius $r$ about $a$ is disjoint from the image. Hence
 $$
-|g(z)|
+\abs{g(z)}
 \le
 \frac1r.
 $$

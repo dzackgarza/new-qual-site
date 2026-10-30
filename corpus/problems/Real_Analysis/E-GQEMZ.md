@@ -48,7 +48,7 @@ $(f\ast g)(x+he_i) = \int f(x+he_i-y)g(y)\,dy$; the change of variables $y \maps
 
 ::: {.pf-step #s2}
 
-As $h \to 0$, the integrands in step [](#s1){.pf-ref} converge pointwise to $f(x-y)\,\dd{g}{y_i}(y)$ and are bounded by $|f(x-y)| \sup_z |\dd{g}{z_i}(z)|$, which is integrable in $y$.
+As $h \to 0$, the integrands in step [](#s1){.pf-ref} converge pointwise to $f(x-y)\,\dd{g}{y_i}(y)$ and are bounded by $\abs{f(x-y)} \sup_z \abs{\dd{g}{z_i}(z)}$, which is integrable in $y$.
 
 ::: pf-proof
 

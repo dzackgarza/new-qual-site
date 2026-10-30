@@ -39,7 +39,7 @@ Part (a): Normal core and index bounds:
 ::: pf-step
 
 Let $H \le G$ be a subgroup of index $[G : H] = n$.
-Let $X = G/H = \{x_1 H, \dots, x_n H\}$ be the set of left cosets of $H$ in $G$, with $|X| = n$.
+Let $X = G/H = \{x_1 H, \dots, x_n H\}$ be the set of left cosets of $H$ in $G$, with $\cardinality{X} = n$.
 
 ::: pf-proof
 
@@ -81,7 +81,7 @@ kernel of a group homomorphism is normal.
 ::: pf-step
 
 By the First Isomorphism Theorem, $G/N \cong \operatorname{im}(\rho) \le S_n$.
-Thus $[G : N] = |G/N| = |\operatorname{im}(\rho)|$ divides $|S_n| = n!$, so $[G : N] \le n!$.
+Thus $[G : N] = \cardinality{G/N} = \cardinality{\operatorname{im}(\rho)}$ divides $\cardinality{S_n} = n!$, so $[G : N] \le n!$.
 
 ::: pf-proof
 
@@ -120,7 +120,7 @@ Part (b): No simple group of order 36:
 
 ::: pf-step
 
-Suppose for contradiction that there exists a simple group $G$ of order $|G| = 36 = 2^2 \cdot 3^2$.
+Suppose for contradiction that there exists a simple group $G$ of order $\cardinality{G} = 36 = 2^2 \cdot 3^2$.
 
 ::: pf-proof
 
@@ -147,7 +147,7 @@ Sylow's Theorem.
 
 ::: pf-step
 
-If $n_3 = 1$, the unique Sylow 3-subgroup $P$ is normal in $G$ with $|P| = 9$.
+If $n_3 = 1$, the unique Sylow 3-subgroup $P$ is normal in $G$ with $\cardinality{P} = 9$.
 Since $1 < 9 < 36$, $P$ is a non-trivial proper normal subgroup, contradicting simplicity.
 
 ::: pf-proof
@@ -187,8 +187,8 @@ Part (a).
 ::: pf-step
 
 Since $G$ is assumed simple, its only normal subgroups are $N = \{e\}$ and $N = G$:
-- If $N = G$, then $N \subseteq P \implies G \subseteq P$, which is impossible since $|P| = 9 < 36$.
-- If $N = \{e\}$, then $[G : N] = |G| = 36$. But by step [](#s2-5){.pf-ref}, $[G : N]$ must divide 24, and 36 does not divide 24.
+- If $N = G$, then $N \subseteq P \implies G \subseteq P$, which is impossible since $\cardinality{P} = 9 < 36$.
+- If $N = \{e\}$, then $[G : N] = \cardinality{G} = 36$. But by step [](#s2-5){.pf-ref}, $[G : N]$ must divide 24, and 36 does not divide 24.
 Both cases yield a contradiction.
 
 ::: pf-proof

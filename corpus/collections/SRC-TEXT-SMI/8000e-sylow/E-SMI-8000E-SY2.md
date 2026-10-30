@@ -33,7 +33,7 @@ Prove every group $G$ of order $45$ is abelian.
 ::: {.solution}
 Write
 $$
-|G|=45=3^2\cdot5.
+\cardinality{G}=45=3^2\cdot5.
 $$
 
 ::: pf
@@ -55,7 +55,7 @@ $5$. Hence
 $$
 n_5=1.
 $$
-Thus the Sylow $5$-subgroup $K$ is unique, hence normal. Since $|K|=5$,
+Thus the Sylow $5$-subgroup $K$ is unique, hence normal. Since $\cardinality{K}=5$,
 $$
 K\cong C_5.
 $$
@@ -83,7 +83,7 @@ n_3=1.
 $$
 Thus the Sylow $3$-subgroup $H$ is unique and normal, with
 $$
-|H|=9.
+\cardinality{H}=9.
 $$
 
 :::
@@ -96,13 +96,13 @@ The group is the internal direct product of its two Sylow subgroups.
 
 ::: pf-proof
 
-Because $|H|=9$ and $|K|=5$ are coprime,
+Because $\cardinality{H}=9$ and $\cardinality{K}=5$ are coprime,
 $$
 H\cap K=1.
 $$
 Both $H$ and $K$ are normal, so $HK$ is a subgroup. Its order is
 $$
-|HK|=\frac{|H||K|}{|H\cap K|}=9\cdot5=45=|G|.
+\cardinality{HK}=\frac{\cardinality{H}\cardinality{K}}{\cardinality{H\cap K}}=9\cdot5=45=\cardinality{G}.
 $$
 Hence
 $$

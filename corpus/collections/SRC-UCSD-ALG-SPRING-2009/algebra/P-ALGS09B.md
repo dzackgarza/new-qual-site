@@ -130,7 +130,7 @@ G/N\cong C_7.
 $$
 But
 $$
-|\operatorname{Aut}(C_{15})|=\varphi(15)=8.
+\cardinality{\operatorname{Aut}(C_{15})}=\varphi(15)=8.
 $$
 The image of a group of order $7$ in a group of order $8$ must be trivial.
 Therefore every element of $G$ centralizes $N$.

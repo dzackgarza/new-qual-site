@@ -27,7 +27,7 @@ audit:
 Let $Y$ be a closed subspace of $L^2([0,1])$ each of whose elements may be represented by a continuous function on $[0,1]$.
 Prove that there exists $C > 0$ so that
 $$
-\|f\|_{L^\infty([0,1])} \leq C \|f\|_{L^2([0,1])}
+\norm{f}_{L^\infty([0,1])} \leq C \norm{f}_{L^2([0,1])}
 $$
 for all $f \in Y$.
 :::
@@ -98,14 +98,14 @@ T:Y\to C([0,1])
 $$
 has closed graph. Hence the Closed Graph Theorem gives a constant $C>0$ such that
 $$
-\|T(f)\|_\infty\le C\|f\|_2
+\norm{T(f)}_\infty\le C\norm{f}_2
 \qquad(f\in Y).
 $$
 Since $T(f)$ is the continuous representative of $f$,
 $$
 \boxed{
-\|f\|_{L^\infty([0,1])}
-\le C\|f\|_{L^2([0,1])}.}
+\norm{f}_{L^\infty([0,1])}
+\le C\norm{f}_{L^2([0,1])}.}
 $$
 
 :::

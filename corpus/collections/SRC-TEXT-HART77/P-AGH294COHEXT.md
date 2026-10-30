@@ -80,7 +80,7 @@ $$
 \beta(u,v)=a(u)+\widetilde q(v).
 $$
 Here the second component of $\gamma$ uses $R\subseteq\OO_{\mathfrak U}^{\oplus s}$.
-The equality $a\lambda=\widetilde q|_R$ makes $\beta\gamma=0$, and the second component makes $\gamma$ injective.
+The equality $a\lambda=\widetilde q\restrict_R$ makes $\beta\gamma=0$, and the second component makes $\gamma$ injective.
 
 Exactness of the remaining terms can be checked at a stalk.
 For an element of $\mcf$, its image in $\mcf''$ lifts through $q$; subtracting the corresponding image under $\widetilde q$ leaves an element of $a(\mcf')$.
@@ -96,7 +96,7 @@ Both $R$ and $\mcf'\oplus\OO_{\mathfrak U}^{\oplus s}$ are coherent, as required
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} identifies $\mcf|_{\mathfrak U}$ with the cokernel of a morphism between coherent formal sheaves.
+Step [](#s2){.pf-ref} identifies $\mcf\restrict_{\mathfrak U}$ with the cokernel of a morphism between coherent formal sheaves.
 It is therefore coherent by [@Har10a, Corollary II.9.9].
 The construction applies on every affine formal open, and these opens cover $\mathfrak X$.
 Locality of coherence proves that $\mcf$ is coherent on $\mathfrak X$.

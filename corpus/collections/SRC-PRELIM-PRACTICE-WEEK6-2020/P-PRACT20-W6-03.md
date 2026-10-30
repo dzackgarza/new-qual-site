@@ -15,7 +15,7 @@ review: draft
 Which of the following does not define a metric on R?
 
 $$
-\begin{array} { r l } & { \mathrm { ( A ) } \ \delta ( x , y ) = \left\{ \begin{array} { l l } { 0 , x = y , } \\ { 2 , x \neq y . } \end{array} \right. \quad \mathrm { ( B ) } \ \rho ( x , y ) = \operatorname* { m i n } \{ | x - y | , 1 \} \quad \mathrm { ( C ) } \ \sigma ( x , y ) = \frac { | x - y | } { 3 } } \\ & { \mathrm { ( D ) } \ \tau ( x , y ) = \frac { | x - y | } { | x - y | + 1 } \quad \mathrm { ( E ) } \ \omega ( x , y ) = ( x - y ) ^ { 2 } } \end{array}
+\begin{array} { r l } & { \mathrm { ( A ) } \ \delta ( x , y ) = \left\{ \begin{array} { l l } { 0 , x = y , } \\ { 2 , x \neq y . } \end{array} \right. \quad \mathrm { ( B ) } \ \rho ( x , y ) = \operatorname* { m i n } \{ \abs{ x - y } , 1 \} \quad \mathrm { ( C ) } \ \sigma ( x , y ) = \frac { \abs{ x - y } } { 3 } } \\ & { \mathrm { ( D ) } \ \tau ( x , y ) = \frac { \abs{ x - y } } { \abs{ x - y } + 1 } \quad \mathrm { ( E ) } \ \omega ( x , y ) = ( x - y ) ^ { 2 } } \end{array}
 $$
 :::
 

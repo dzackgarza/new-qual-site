@@ -34,11 +34,11 @@ The sequence $(a_n)$ is bounded.
 
 Choose $N$ such that
 $$
-|a_m-a_n|<1
+\abs{a_m-a_n}<1
 $$
 whenever $m,n\ge N$. Then for every $n\ge N$,
 $$
-|a_n|\le |a_N|+1.
+\abs{a_n}\le \abs{a_N}+1.
 $$
 Together with the finitely many terms $a_1,\ldots,a_{N-1}$, this gives a global bound for the sequence.
 
@@ -123,7 +123,7 @@ $$
 
 Fix $\varepsilon>0$. Since $(a_n)$ is Cauchy, choose $N$ such that
 $$
-|a_k-a_n|<\varepsilon
+\abs{a_k-a_n}<\varepsilon
 $$
 whenever $k,n\ge N$.
 
@@ -135,7 +135,7 @@ Hence
 $$
 s_m=\sup A_m\le a_n+\varepsilon.
 $$
-Also $a_m\in A_m$ and $|a_m-a_n|<\varepsilon$, so
+Also $a_m\in A_m$ and $\abs{a_m-a_n}<\varepsilon$, so
 $$
 s_m\ge a_m>a_n-\varepsilon.
 $$
@@ -170,7 +170,7 @@ a_n-\frac{\varepsilon}{2}<L\le a_n+\frac{\varepsilon}{2}.
 $$
 Hence
 $$
-|a_n-L|\le\frac{\varepsilon}{2}<\varepsilon.
+\abs{a_n-L}\le\frac{\varepsilon}{2}<\varepsilon.
 $$
 Therefore
 $$

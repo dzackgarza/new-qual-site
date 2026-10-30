@@ -29,10 +29,10 @@ so
 $$
 G_N(z)-G(z)=-\frac{z^{N+1}}{1-z}.
 $$
-If $K\Subset\DD$, choose $r<1$ with $|z|\le r$ on $K$. Also
-$\delta=\min_{z\in K}|1-z|>0$. Hence
+If $K\Subset\DD$, choose $r<1$ with $\abs{z}\le r$ on $K$. Also
+$\delta=\min_{z\in K}\abs{1-z}>0$. Hence
 $$
-\sup_{z\in K}|G_N(z)-G(z)|
+\sup_{z\in K}\abs{G_N(z)-G(z)}
 \le \frac{r^{N+1}}{\delta}\longrightarrow0.
 $$
 Thus $G_N\to G$ uniformly on compact subsets of $\DD$.
@@ -50,7 +50,7 @@ G(z)=\sum_{n=0}^\infty
 \frac{(-1)^{n+1}}{2022^{n+1}}(z-2023)^n
 }
 $$
-for $|z-2023|<2022$. The radius is
+for $\abs{z-2023}<2022$. The radius is
 $$
 \boxed{2022},
 $$

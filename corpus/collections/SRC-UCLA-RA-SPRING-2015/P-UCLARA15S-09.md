@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-09
 kind: problem
-title: Bounded harmonic function in $\{|z|>1,\ \operatorname{Re}z>-2\}$ with constant boundary values
+title: Bounded harmonic function in $\{\abs{z}>1,\ \operatorname{Re}z>-2\}$ with constant boundary values
 classification:
   areas:
   - real-analysis
@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let
 $$
-\Omega=\{z\in\CC:|z|>1\text{ and }\operatorname{Re}z>-2\}.
+\Omega=\{z\in\CC:\abs{z}>1\text{ and }\operatorname{Re}z>-2\}.
 $$
-Suppose $u:\Omega\to\RR$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $|z|=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
+Suppose $u:\Omega\to\RR$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $\abs{z}=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
 Determine $u(2)$.
 :::
 
@@ -50,14 +50,14 @@ $$
 =
 \left\{
 w\in\DD:
-\left|w+\frac14\right|>\frac14
+\abs{w+\frac14}>\frac14
 \right\}.
 $$
 
 
 ::: pf-proof
 
-The condition $|z|>1$ is equivalent under $w=1/z$ to $|w|<1$. Also
+The condition $\abs{z}>1$ is equivalent under $w=1/z$ to $\abs{w}<1$. Also
 $$
 \operatorname{Re}z>-2
 $$
@@ -69,21 +69,21 @@ Since
 $$
 \operatorname{Re}\frac1w
 =
-\frac{\operatorname{Re}w}{|w|^2},
+\frac{\operatorname{Re}w}{\abs{w}^2},
 $$
 the boundary line $\operatorname{Re}z=-2$ becomes
 $$
-\operatorname{Re}w=-2|w|^2.
+\operatorname{Re}w=-2\abs{w}^2.
 $$
 Completing the square,
 $$
-|w|^2+\frac12\operatorname{Re}w=0
+\abs{w}^2+\frac12\operatorname{Re}w=0
 \quad\Longleftrightarrow\quad
-\left|w+\frac14\right|^2=\frac1{16}.
+\abs{w+\frac14}^2=\frac1{16}.
 $$
 The point $w=1/2$, corresponding to $z=2\in\Omega$, lies outside this small circle. Hence the inequality selects the component
 $$
-\left|w+\frac14\right|>\frac14.
+\abs{w+\frac14}>\frac14.
 $$
 Inversion is holomorphic with nonzero derivative on $\Omega$, so it is conformal there.
 
@@ -99,11 +99,11 @@ $$
 \coloneqq
 \frac{w+r}{1+rw}
 $$
-maps the outer boundary $|w|=1$ to $|\zeta|=1$ and the inner boundary
+maps the outer boundary $\abs{w}=1$ to $\abs{\zeta}=1$ and the inner boundary
 $$
-\left|w+\frac14\right|=\frac14
+\abs{w+\frac14}=\frac14
 $$
-to $|\zeta|=r$.
+to $\abs{\zeta}=r$.
 
 
 ::: pf-proof
@@ -112,16 +112,16 @@ Since $r\in(0,1)$, $\phi$ is an automorphism of $\DD$, so it maps the unit circl
 
 On the inner circle, step [](#s1-1){.pf-ref} gives
 $$
-\operatorname{Re}w=-2|w|^2.
+\operatorname{Re}w=-2\abs{w}^2.
 $$
 Therefore
 $$
 \begin{aligned}
-|w+r|^2
+\abs{w+r}^2
 &=
-|w|^2+2r\operatorname{Re}w+r^2\\
+\abs{w}^2+2r\operatorname{Re}w+r^2\\
 &=
-(1-4r)|w|^2+r^2.
+(1-4r)\abs{w}^2+r^2.
 \end{aligned}
 $$
 Since $r^2-4r+1=0$,
@@ -130,27 +130,27 @@ $$
 $$
 and hence
 $$
-|w+r|^2
+\abs{w+r}^2
 =
-r^2(1-|w|^2).
+r^2(1-\abs{w}^2).
 $$
 Similarly,
 $$
 \begin{aligned}
-|1+rw|^2
+\abs{1+rw}^2
 &=
-1+2r\operatorname{Re}w+r^2|w|^2\\
+1+2r\operatorname{Re}w+r^2\abs{w}^2\\
 &=
-1+(r^2-4r)|w|^2\\
+1+(r^2-4r)\abs{w}^2\\
 &=
-1-|w|^2.
+1-\abs{w}^2.
 \end{aligned}
 $$
 Thus
 $$
-|\phi(w)|^2
+\abs{\phi(w)}^2
 =
-\frac{|w+r|^2}{|1+rw|^2}
+\frac{\abs{w+r}^2}{\abs{1+rw}^2}
 =r^2
 $$
 on the inner boundary.
@@ -171,13 +171,13 @@ is a conformal map from $\Omega$ onto the annulus
 $$
 A_r
 \coloneqq
-\{\zeta\in\CC:r<|\zeta|<1\}.
+\{\zeta\in\CC:r<\abs{\zeta}<1\}.
 $$
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, inversion maps $\Omega$ conformally onto the doubly connected region $\Omega'$. By step [](#s1-2){.pf-ref}, $\phi$ is a homeomorphism of the closed unit disk and carries the two boundary components of $\Omega'$ onto the circles $|\zeta|=1$ and $|\zeta|=r$.
+By step [](#s1-1){.pf-ref}, inversion maps $\Omega$ conformally onto the doubly connected region $\Omega'$. By step [](#s1-2){.pf-ref}, $\phi$ is a homeomorphism of the closed unit disk and carries the two boundary components of $\Omega'$ onto the circles $\abs{\zeta}=1$ and $\abs{\zeta}=r$.
 
 The image $\phi(\Omega')$ is connected and lies between those two boundary circles. It contains
 $$
@@ -195,23 +195,23 @@ The function
 $$
 V(\zeta)
 \coloneqq
-\frac{\log(|\zeta|/r)}
+\frac{\log(\abs{\zeta}/r)}
 {\log(1/r)}
 $$
-is harmonic on $A_r$, equals $0$ on $|\zeta|=r$, and equals $1$ on $|\zeta|=1$.
+is harmonic on $A_r$, equals $0$ on $\abs{\zeta}=r$, and equals $1$ on $\abs{\zeta}=1$.
 
 
 ::: pf-proof
 
-The function $\log|\zeta|$ is harmonic away from $0$, hence on $A_r$. The displayed affine rescaling is therefore harmonic. Its boundary values are
+The function $\log\abs{\zeta}$ is harmonic away from $0$, hence on $A_r$. The displayed affine rescaling is therefore harmonic. Its boundary values are
 $$
 V(\zeta)=0
-\quad\text{when }|\zeta|=r
+\quad\text{when }\abs{\zeta}=r
 $$
 and
 $$
 V(\zeta)=1
-\quad\text{when }|\zeta|=1.
+\quad\text{when }\abs{\zeta}=1.
 $$
 
 :::
@@ -230,7 +230,7 @@ $$
 
 ::: pf-proof
 
-By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the function $V\circ F$ is bounded and harmonic on $\Omega$, with boundary value $1$ on $|z|=1$ and boundary value $0$ on $\operatorname{Re}z=-2$.
+By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the function $V\circ F$ is bounded and harmonic on $\Omega$, with boundary value $1$ on $\abs{z}=1$ and boundary value $0$ on $\operatorname{Re}z=-2$.
 
 To prove uniqueness, compose the difference
 $$
@@ -280,7 +280,7 @@ F(2)
 $$
 This number is positive, so
 $$
-\frac{|F(2)|}{r}
+\frac{\abs{F(2)}}{r}
 =
 \frac{1+2r}{r(2+r)}
 =

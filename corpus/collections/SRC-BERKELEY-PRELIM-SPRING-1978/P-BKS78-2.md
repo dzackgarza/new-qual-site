@@ -104,7 +104,7 @@ Thus $y=h(x)$.
 
 If $x=0$, then convergence of the second coordinates forces the sequence $h(x_m)$ to be bounded. There cannot be infinitely many indices with $x_m\neq0$ and $x_m\to0$, because along such indices
 $$
-|h(x_m)|=\frac1{|x_m|}\longrightarrow\infty.
+\abs{h(x_m)}=\frac1{\abs{x_m}}\longrightarrow\infty.
 $$
 Hence $x_m=0$ eventually, so
 $$

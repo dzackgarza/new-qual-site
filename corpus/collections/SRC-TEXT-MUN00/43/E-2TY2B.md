@@ -74,11 +74,11 @@ Part (a): Equivalence relation and well-defined metric $D$.
 :::
 
 ::: pf-step
-**Limit existence in $\RR$:** For Cauchy sequences $\mathbf{x}, \mathbf{y}$, the triangle inequality gives $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m) \to 0$. Thus $(d(x_n, y_n))_{n=1}^\infty$ is a Cauchy sequence in $\RR$, hence converges to a unique real limit.
+**Limit existence in $\RR$:** For Cauchy sequences $\mathbf{x}, \mathbf{y}$, the triangle inequality gives $\abs{d(x_n, y_n) - d(x_m, y_m)} \le d(x_n, x_m) + d(y_n, y_m) \to 0$. Thus $(d(x_n, y_n))_{n=1}^\infty$ is a Cauchy sequence in $\RR$, hence converges to a unique real limit.
 :::
 
 ::: pf-step
-**Independence of representatives:** If $\mathbf{x} \sim \mathbf{x}'$ and $\mathbf{y} \sim \mathbf{y}'$, then $|d(x_n, y_n) - d(x'_n, y'_n)| \le d(x_n, x'_n) + d(y_n, y'_n) \to 0$, so $\lim d(x_n, y_n) = \lim d(x'_n, y'_n)$.
+**Independence of representatives:** If $\mathbf{x} \sim \mathbf{x}'$ and $\mathbf{y} \sim \mathbf{y}'$, then $\abs{d(x_n, y_n) - d(x'_n, y'_n)} \le d(x_n, x'_n) + d(y_n, y'_n) \to 0$, so $\lim d(x_n, y_n) = \lim d(x'_n, y'_n)$.
 :::
 
 ::: pf-step

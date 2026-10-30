@@ -76,7 +76,7 @@ $$
 $$
 extends $f$, because on $N$
 $$
-\pi_PF|_N=\pi_P\iota_Pf=f.
+\pi_PF\restrict_N=\pi_P\iota_Pf=f.
 $$
 Thus $P$ satisfies the extension property and is injective.
 :::

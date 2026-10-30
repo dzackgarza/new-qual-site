@@ -36,7 +36,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and let $p$ be a prime dividing $|G|$.
+Let $G$ be a finite group and let $p$ be a prime dividing $\cardinality{G}$.
 Define
 $$
 X=\{(a_1,\ldots,a_p)\in G^p:a_1a_2\cdots a_p=e\}.
@@ -57,7 +57,7 @@ Prove Cauchy's theorem by establishing the following.
    $$
    with $a^p=e$.
 
-4. We have $|X|=|G|^{p-1}$.
+4. We have $\cardinality{X}=\cardinality{G}^{p-1}$.
 
 5. There is more than one orbit of size $1$.
    Deduce that $G$ has a nonidentity element of order $p$.
@@ -151,7 +151,7 @@ Thus these and only these tuples have one-element orbits.
 
 We have
 $$
-|X|=|G|^{p-1}.
+\cardinality{X}=\cardinality{G}^{p-1}.
 $$
 
 ::: pf-proof
@@ -165,7 +165,7 @@ Thus the map sending the first $p-1$ coordinates to the completed tuple is a bij
 $$
 G^{p-1}\longrightarrow X.
 $$
-Therefore $|X|=|G|^{p-1}$.
+Therefore $\cardinality{X}=\cardinality{G}^{p-1}$.
 
 :::
 
@@ -183,17 +183,17 @@ Since $p$ is prime, every orbit therefore has size either $1$ or $p$.
 Let $f$ be the number of size-one orbits.
 Partitioning $X$ into its $K$-orbits gives
 $$
-|X|=f+pm
+\cardinality{X}=f+pm
 $$
 for some integer $m\ge0$.
 Hence
 $$
-f\equiv |X|\pmod p.
+f\equiv \cardinality{X}\pmod p.
 $$
 
-Because $p\mid |G|$ and $p-1\ge1$, step [](#s4){.pf-ref} gives
+Because $p\mid \cardinality{G}$ and $p-1\ge1$, step [](#s4){.pf-ref} gives
 $$
-p\mid |G|^{p-1}=|X|.
+p\mid \cardinality{G}^{p-1}=\cardinality{X}.
 $$
 Therefore
 $$

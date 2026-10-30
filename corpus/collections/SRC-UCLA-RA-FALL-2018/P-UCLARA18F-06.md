@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 6. Let $f\in L^2(\RR)$ and assume its Fourier transform satisfies
 $$
-|\widehat f(\xi)|>0
+\abs{\widehat f(\xi)}>0
 $$
 for Lebesgue almost every $\xi\in\RR$. Prove that the set of finite linear combinations of the translates
 $$
@@ -81,9 +81,9 @@ belongs to $L^1(\RR)$, and $\widehat h(y)=0$ for every $y\in\RR$.
 
 By Cauchy--Schwarz and Plancherel,
 $$
-\int_{\RR}|h(\xi)|\,d\xi
-\le\|\widehat f\|_{L^2}\|\widehat g\|_{L^2}
-=\|f\|_{L^2}\|g\|_{L^2}<\infty.
+\int_{\RR}\abs{h(\xi)}\,d\xi
+\le\norm{\widehat f}_{L^2}\norm{\widehat g}_{L^2}
+=\norm{f}_{L^2}\norm{g}_{L^2}<\infty.
 $$
 Thus $h\in L^1$. By the chosen Fourier convention,
 $$
@@ -107,9 +107,9 @@ Step [](#s1-2){.pf-ref} and [[PR-47TTS|injectivity of the Fourier transform on $
 $$
 h(\xi)=\widehat f(\xi)\overline{\widehat g(\xi)}=0
 $$
-for almost every $\xi$. By hypothesis, $|\widehat f(\xi)|>0$ almost everywhere, so $\widehat g(\xi)=0$ almost everywhere. Plancherel then gives
+for almost every $\xi$. By hypothesis, $\abs{\widehat f(\xi)}>0$ almost everywhere, so $\widehat g(\xi)=0$ almost everywhere. Plancherel then gives
 $$
-\|g\|_{L^2}=\|\widehat g\|_{L^2}=0,
+\norm{g}_{L^2}=\norm{\widehat g}_{L^2}=0,
 $$
 hence $g=0$ in $L^2$.
 
@@ -121,7 +121,7 @@ hence $g=0$ in $L^2$.
 
 Therefore
 $$
-\boxed{\overline{M}^{\|\cdot\|_{L^2}}=L^2(\RR)}.
+\boxed{\overline{M}^{\norm{\cdot}_{L^2}}=L^2(\RR)}.
 $$
 
 

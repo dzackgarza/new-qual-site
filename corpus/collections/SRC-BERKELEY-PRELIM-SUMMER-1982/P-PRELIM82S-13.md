@@ -225,13 +225,13 @@ $$
 for every $k$. Hence
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_{-1}^1g(t)^2\,dt
-\right|
+}
 &=
-\left|
+\abs{
 \int_{-1}^1g(t)(g(t)-P_k(t))\,dt
-\right|\\
+}\\
 &\leq
 2\norm{g}_{\infty}\norm{g-P_k}_{\infty}.
 \end{aligned}

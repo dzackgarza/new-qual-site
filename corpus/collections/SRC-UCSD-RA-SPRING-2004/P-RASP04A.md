@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-In this problem $(X, \|\cdot\|)$ is an infinite dimensional normed space.
+In this problem $(X, \norm{\cdot})$ is an infinite dimensional normed space.
 Determine which of the following statements are true.
 For the true statements give a brief reason and for the false statements give a counterexample.
 
@@ -116,7 +116,7 @@ B(0,r)\subset E.
 $$
 Now fix any $x\in X$. Choose $t>0$ so small that
 $$
-\|tx\|<r.
+\norm{tx}<r.
 $$
 Then $tx\in E$, and since $E$ is a subspace,
 $$

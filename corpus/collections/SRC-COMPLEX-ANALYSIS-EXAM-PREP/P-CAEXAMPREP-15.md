@@ -16,7 +16,7 @@ audit:
 ::: {.problem}
 Let
 $$
-A=\{z:\operatorname{Im}z>0,\ |z|>1\}.
+A=\{z:\operatorname{Im}z>0,\ \abs{z}>1\}.
 $$
 Find the flow around the upper half of the unit circle when the velocity is parallel to the $x$-axis and is $\alpha$ at infinity.
 :::
@@ -46,13 +46,13 @@ so $J(A)\subseteq\halfplane$. If $J(z_1)=J(z_2)$, then
 $$
 (z_1-z_2)\left(1-\frac1{z_1z_2}\right)=0.
 $$
-Since $|z_1z_2|>1$, the second factor cannot vanish; hence $z_1=z_2$.
+Since $\abs{z_1z_2}>1$, the second factor cannot vanish; hence $z_1=z_2$.
 
 Conversely, let $w\in\halfplane$. The roots of
 $$
 z^2-wz+1=0
 $$
-have product $1$. No root has modulus $1$, because for $|z|=1$ one has $z+z^{-1}=2\operatorname{Re}z\in\RR$, whereas $w\notin\RR$. Thus exactly one root has modulus greater than $1$. For that root,
+have product $1$. No root has modulus $1$, because for $\abs{z}=1$ one has $z+z^{-1}=2\operatorname{Re}z\in\RR$, whereas $w\notin\RR$. Thus exactly one root has modulus greater than $1$. For that root,
 $$
 \operatorname{Im}w
 =\operatorname{Im}\left(z+\frac1z\right)
@@ -102,7 +102,7 @@ The velocity tends to the prescribed horizontal velocity $\alpha$ at infinity.
 With the standard convention that the complex velocity is $F'(z)=u-iv$,
 $$
 F'(z)=\alpha\left(1-\frac1{z^2}\right)\longrightarrow\alpha
-\qquad (|z|\to\infty).
+\qquad (\abs{z}\to\infty).
 $$
 Thus $u\to\alpha$ and $v\to0$, so the limiting velocity is parallel to the $x$-axis with the prescribed $x$-component $\alpha$.
 

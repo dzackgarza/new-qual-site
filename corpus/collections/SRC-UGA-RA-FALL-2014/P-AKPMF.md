@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AKPMF
 kind: problem
-title: $\|f\|_p=\sup_{\|g\|_q=1}|\int fg|$ for $f\in L^p(\RR^n)$ and conjugate exponents
+title: $\norm{f}_p=\sup_{\norm{g}_q=1}\abs{\int fg}$ for $f\in L^p(\RR^n)$ and conjugate exponents
 classification:
   areas:
   - real-analysis
@@ -31,7 +31,7 @@ audit:
 ::: {.problem}
 Let $1 \leq p,q \leq \infty$ be conjugate exponents, and show that
 $$
-f \in L^p(\RR^n) \implies \|f\|_{p} = \sup _{\|g\|_{q}=1}\left|\int f(x) g(x) d x\right|
+f \in L^p(\RR^n) \implies \norm{f}_{p} = \sup _{\norm{g}_{q}=1}\abs{\int f(x) g(x) d x}
 $$
 :::
 ::: {.solution}
@@ -44,15 +44,15 @@ Hölder gives the upper bound.
 
 ::: pf-proof
 
-For every $g\in L^q(\RR^n)$ with $\|g\|_q=1$, Hölder's inequality gives
+For every $g\in L^q(\RR^n)$ with $\norm{g}_q=1$, Hölder's inequality gives
 $$
-\left|\int_{\RR^n}f(x)g(x)\,dx\right|
-\le \|f\|_p\|g\|_q
-=\|f\|_p.
+\abs{\int_{\RR^n}f(x)g(x)\,dx}
+\le \norm{f}_p\norm{g}_q
+=\norm{f}_p.
 $$
 Hence
 $$
-\sup_{\|g\|_q=1}\left|\int fg\right|\le\|f\|_p.
+\sup_{\norm{g}_q=1}\abs{\int fg}\le\norm{f}_p.
 $$
 
 :::
@@ -67,21 +67,21 @@ Prove equality when $1<p<\infty$.
 
 If $f=0$, the result is immediate. Otherwise define
 $$
-g(x)=\frac{\overline{f(x)}|f(x)|^{p-2}}{\|f\|_p^{p-1}},
+g(x)=\frac{\overline{f(x)}\abs{f(x)}^{p-2}}{\norm{f}_p^{p-1}},
 $$
 with $g=0$ where $f=0$. Since $q=p/(p-1)$,
 $$
-\|g\|_q^q
-=\frac{\int |f|^{(p-1)q}}{\|f\|_p^{(p-1)q}}
-=\frac{\int |f|^p}{\|f\|_p^p}=1.
+\norm{g}_q^q
+=\frac{\int \abs{f}^{(p-1)q}}{\norm{f}_p^{(p-1)q}}
+=\frac{\int \abs{f}^p}{\norm{f}_p^p}=1.
 $$
 Moreover,
 $$
 \int fg
-=\frac{\int |f|^p}{\|f\|_p^{p-1}}
-=\|f\|_p.
+=\frac{\int \abs{f}^p}{\norm{f}_p^{p-1}}
+=\norm{f}_p.
 $$
-Thus the supremum is at least $\|f\|_p$, and Step 1 gives equality.
+Thus the supremum is at least $\norm{f}_p$, and Step 1 gives equality.
 
 :::
 
@@ -97,15 +97,15 @@ If $f=0$, there is nothing to prove. Define the phase
 $$
 \theta(x)=
 \begin{cases}
-\overline{f(x)}/|f(x)|,&f(x)\ne0,\\
+\overline{f(x)}/\abs{f(x)},&f(x)\ne0,\\
 0,&f(x)=0.
 \end{cases}
 $$
-Then $\|\theta\|_\infty=1$ and
+Then $\norm{\theta}_\infty=1$ and
 $$
-\int f\theta=\int |f|=\|f\|_1.
+\int f\theta=\int \abs{f}=\norm{f}_1.
 $$
-Hence the supremum equals $\|f\|_1$.
+Hence the supremum equals $\norm{f}_1$.
 
 :::
 
@@ -117,9 +117,9 @@ Prove equality when $p=\infty$ and $q=1$.
 
 ::: pf-proof
 
-Let $M=\|f\|_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M)$. By the definition of essential supremum,
+Let $M=\norm{f}_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M)$. By the definition of essential supremum,
 $$
-A_\varepsilon:=\{x:|f(x)|>M-\varepsilon\}
+A_\varepsilon:=\{x:\abs{f(x)}>M-\varepsilon\}
 $$
 has positive measure. Since Lebesgue measure on $\RR^n$ is sigma-finite, there is a measurable set
 $$
@@ -133,14 +133,14 @@ g(x)=\frac{\theta(x)\mathbf1_E(x)}{m(E)},
 \qquad
 \theta(x)=
 \begin{cases}
-\overline{f(x)}/|f(x)|,&f(x)\ne0,\\
+\overline{f(x)}/\abs{f(x)},&f(x)\ne0,\\
 0,&f(x)=0.
 \end{cases}
 $$
-Then $\|g\|_1=1$ and
+Then $\norm{g}_1=1$ and
 $$
-\left|\int fg\right|
-=\frac1{m(E)}\int_E|f(x)|\,dx
+\abs{\int fg}
+=\frac1{m(E)}\int_E\abs{f(x)}\,dx
 \ge M-\varepsilon.
 $$
 Letting $\varepsilon\downarrow0$ shows that the supremum is at least $M$. Step 1 gives the reverse inequality, hence equality.
@@ -158,9 +158,9 @@ Conclude.
 All conjugate pairs $1\le p,q\le\infty$ have been covered, so
 $$
 \boxed{
-\|f\|_p
-=\sup_{\|g\|_q=1}
-\left|\int_{\RR^n}f(x)g(x)\,dx\right|.}
+\norm{f}_p
+=\sup_{\norm{g}_q=1}
+\abs{\int_{\RR^n}f(x)g(x)\,dx}.}
 $$
 
 :::

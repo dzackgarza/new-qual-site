@@ -44,7 +44,7 @@ $$
 :::
 
 ::: {.remark}
-The sets $\bar s(U)$, for $U$ open and $s \in \mcf(U)$, form a basis of the topology, and each $\bar s$ is a homeomorphism of $U$ onto the open set $\bar s(U)$, with inverse $\pi|_{\bar s(U)}$.
+The sets $\bar s(U)$, for $U$ open and $s \in \mcf(U)$, form a basis of the topology, and each $\bar s$ is a homeomorphism of $U$ onto the open set $\bar s(U)$, with inverse $\pi\restrict_{\bar s(U)}$.
 Hence $\pi$ is a local homeomorphism.
 :::
 

@@ -57,7 +57,7 @@ Case $n \ge 1$ with $a_n \neq 0$. Then $\deg(p) = n$.
 ::: pf-proof
 
 ::: pf-step
-The extension to $\widehat{\CC}$ is continuous: Since $a_n \neq 0$ and $n \ge 1$, $\lim_{|z| \to \infty} |p(z)| = \lim_{|z| \to \infty} |a_n z^n| \left|1 + \sum_{j=0}^{n-1} \frac{a_j}{a_n z^{n-j}}\right| = \infty$, so setting $p(\infty) = \infty$ makes $p \colon \widehat{\CC} \to \widehat{\CC}$ continuous.
+The extension to $\widehat{\CC}$ is continuous: Since $a_n \neq 0$ and $n \ge 1$, $\lim_{\abs{z} \to \infty} \abs{p(z)} = \lim_{\abs{z} \to \infty} \abs{a_n z^n} \abs{1 + \sum_{j=0}^{n-1} \frac{a_j}{a_n z^{n-j}}} = \infty$, so setting $p(\infty) = \infty$ makes $p \colon \widehat{\CC} \to \widehat{\CC}$ continuous.
 :::
 
 ::: pf-step
@@ -65,7 +65,7 @@ Construct a homotopy to $q(z) = a_n z^n$: Define $H \colon \widehat{\CC} \times 
 :::
 
 ::: pf-step
-For each $t \in [0, 1]$, $H(z, t)$ is a polynomial of degree $n$ with leading coefficient $a_n \neq 0$, so $\lim_{|z| \to \infty} |H(z, t)| = \infty$ uniformly for $t$. Thus $H$ is a continuous homotopy of maps $\widehat{\CC} \to \widehat{\CC}$.
+For each $t \in [0, 1]$, $H(z, t)$ is a polynomial of degree $n$ with leading coefficient $a_n \neq 0$, so $\lim_{\abs{z} \to \infty} \abs{H(z, t)} = \infty$ uniformly for $t$. Thus $H$ is a continuous homotopy of maps $\widehat{\CC} \to \widehat{\CC}$.
 :::
 
 ::: pf-step
@@ -115,7 +115,7 @@ Method 1 (Local degree / Regular values): Choose the regular value $w_0 = 1 \in 
 :::
 
 ::: {.pf-step #s4-2}
-At each preimage $\zeta_k$, $f_n'(\zeta_k) = n \zeta_k^{n-1} \neq 0$. Since $f_n$ is complex holomorphic, its Jacobian determinant as a real map $\RR^2 \to \RR^2$ is $|f_n'(z)|^2 > 0$, so each local degree is $\deg_{\zeta_k}(f_n) = +1$.
+At each preimage $\zeta_k$, $f_n'(\zeta_k) = n \zeta_k^{n-1} \neq 0$. Since $f_n$ is complex holomorphic, its Jacobian determinant as a real map $\RR^2 \to \RR^2$ is $\abs{f_n'(z)}^2 > 0$, so each local degree is $\deg_{\zeta_k}(f_n) = +1$.
 :::
 
 ::: {.pf-step #s4-3}

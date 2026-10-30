@@ -154,7 +154,7 @@ The paired series converges locally uniformly off $\ZZ$ because its terms are $O
 
 ::: {.pf-step #s1-5}
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 f(z)
 =
@@ -190,7 +190,7 @@ $$
 
 ::: {.pf-step #s1-6}
 
-Fix $0<r<1$. On $|z|\le r$, the double series
+Fix $0<r<1$. On $\abs{z}\le r$, the double series
 $$
 \sum_{k=1}^{\infty}
 \sum_{n=1}^{\infty}
@@ -201,12 +201,12 @@ converges absolutely and uniformly.
 
 ::: pf-proof
 
-For $|z|\le r$,
+For $\abs{z}\le r$,
 $$
 \begin{aligned}
 \sum_{k=1}^{\infty}
 \sum_{n=1}^{\infty}
-\frac{2|z|^{2n}}{k^{2n}}
+\frac{2\abs{z}^{2n}}{k^{2n}}
 &\le
 \sum_{k=1}^{\infty}
 \frac{2r^2}{k^2-r^2}.
@@ -235,7 +235,7 @@ The Weierstrass M-test gives absolute uniform convergence.
 
 ::: {.pf-step #s1-7}
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 f(z)
 =
@@ -251,7 +251,7 @@ $$
 
 ::: pf-proof
 
-For each fixed $k$ and $|z|<1$,
+For each fixed $k$ and $\abs{z}<1$,
 $$
 \frac{2z^2}{k^2-z^2}
 =
@@ -279,7 +279,7 @@ $$
 
 ::: pf-proof
 
-The power series in step [](#s1-7){.pf-ref} converges on $|z|<1$ and is the Taylor expansion of $f$ there. Reading off the coefficient of $z^{2n}$ gives the stated value.
+The power series in step [](#s1-7){.pf-ref} converges on $\abs{z}<1$ and is the Taylor expansion of $f$ there. Reading off the coefficient of $z^{2n}$ gives the stated value.
 
 :::
 

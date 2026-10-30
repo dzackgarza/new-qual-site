@@ -63,7 +63,7 @@ so $h^{-1}g\in G_x$ and therefore $gG_x=hG_x$. Hence it is injective.
 
 Therefore
 $$
-|G\cdot x|=[G:G_x]
+\cardinality{G\cdot x}=[G:G_x]
 $$
 whenever these cardinalities are finite.
 
@@ -79,14 +79,14 @@ By step [](#s1){.pf-ref}, the orbit is in bijection with the left coset space $G
 
 If $G$ is finite, then
 $$
-|G|=|G\cdot x|\,|G_x|.
+\cardinality{G}=\cardinality{G\cdot x}\,\cardinality{G_x}.
 $$
 
 ::: pf-proof
 
 By Lagrange's theorem,
 $$
-|G|=[G:G_x]|G_x|.
+\cardinality{G}=[G:G_x]\cardinality{G_x}.
 $$
 Substitute step [](#s2){.pf-ref}. This is the orbit--stabilizer theorem.
 

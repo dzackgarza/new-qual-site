@@ -61,9 +61,9 @@ Define
 $$
 g:X\to\{0,1\},
 \qquad
-g|_U=0,
+g\restrict_U=0,
 \quad
-g|_V=1.
+g\restrict_V=1.
 $$
 Since $\{0,1\}$ is discrete, the inverse images of its open subsets are unions of $U$ and $V$, so $g$ is continuous.
 It is nonconstant.

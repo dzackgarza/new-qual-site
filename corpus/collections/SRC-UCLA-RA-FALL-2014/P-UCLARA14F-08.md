@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let $f : \CC \to \CC$ be an entire function. Show that
 $$
-|f(z)| \leq C e^{a|z|}, \quad z \in \CC,
+\abs{f(z)} \leq C e^{a\abs{z}}, \quad z \in \CC,
 $$
 for some constants $C$ and $a$ if and only if we have
 $$
-|f^{(n)}(0)| \leq M^{n+1}, \quad n = 0, 1, \ldots,
+\abs{f^{(n)}(0)} \leq M^{n+1}, \quad n = 0, 1, \ldots,
 $$
 for some constant $M$.
 :::
@@ -40,12 +40,12 @@ for some constant $M$.
 
 Assume first that there are constants $C>0$ and $a\ge0$ such that
 $$
-|f(z)|\le Ce^{a|z|}
+\abs{f(z)}\le Ce^{a\abs{z}}
 \qquad(z\in\CC).
 $$
 Then for every $R>0$ and every $n\ge0$,
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 \frac{n!}{R^n}Ce^{aR}.
 $$
@@ -53,18 +53,18 @@ $$
 
 ::: pf-proof
 
-On the circle $|z|=R$,
+On the circle $\abs{z}=R$,
 $$
-\max_{|z|=R}|f(z)|
+\max_{\abs{z}=R}\abs{f(z)}
 \le
 Ce^{aR}.
 $$
 Cauchy's derivative estimate therefore gives
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 \frac{n!}{R^n}
-\max_{|z|=R}|f(z)|
+\max_{\abs{z}=R}\abs{f(z)}
 \le
 \frac{n!}{R^n}Ce^{aR}.
 $$
@@ -82,7 +82,7 @@ If $a=0$, then $f$ is constant.
 
 The growth assumption becomes
 $$
-|f(z)|\le C
+\abs{f(z)}\le C
 $$
 on all of $\CC$. Liouville's theorem implies that $f$ is constant.
 Hence
@@ -99,7 +99,7 @@ for every $n\ge1$.
 
 Suppose $a>0$. For every $n\ge1$,
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 C(ae)^n.
 $$
@@ -113,7 +113,7 @@ R=\frac na.
 $$
 Then
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 C\,n!\,
 \frac{e^n a^n}{n^n}.
@@ -124,7 +124,7 @@ n!\le n^n,
 $$
 this yields
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 C(ae)^n.
 $$
@@ -138,7 +138,7 @@ $$
 Under the exponential-growth hypothesis, there exists $M>0$ such that
 $$
 \boxed{
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 M^{n+1}
 \qquad(n\ge0)}.
@@ -153,7 +153,7 @@ M\ge\max\{1,C\}.
 $$
 Then
 $$
-|f(0)|\le C\le M
+\abs{f(0)}\le C\le M
 $$
 and every higher derivative is zero.
 
@@ -163,11 +163,11 @@ M\ge\max\{1,C,ae\}.
 $$
 For $n=0$,
 $$
-|f(0)|\le C\le M.
+\abs{f(0)}\le C\le M.
 $$
 For $n\ge1$, step [](#s1-3){.pf-ref} gives
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 C(ae)^n
 \le
@@ -182,7 +182,7 @@ $$
 
 Conversely, assume there is $M>0$ such that
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 M^{n+1}
 \qquad(n\ge0).
@@ -190,9 +190,9 @@ $$
 Then
 $$
 \boxed{
-|f(z)|
+\abs{f(z)}
 \le
-M e^{M|z|}
+M e^{M\abs{z}}
 \qquad(z\in\CC)}.
 $$
 
@@ -209,19 +209,19 @@ $$
 Therefore
 $$
 \begin{aligned}
-|f(z)|
+\abs{f(z)}
 &\le
 \sum_{n=0}^{\infty}
-\frac{|f^{(n)}(0)|}{n!}|z|^n\\
+\frac{\abs{f^{(n)}(0)}}{n!}\abs{z}^n\\
 &\le
 \sum_{n=0}^{\infty}
-\frac{M^{n+1}|z|^n}{n!}\\
+\frac{M^{n+1}\abs{z}^n}{n!}\\
 &=
 M
 \sum_{n=0}^{\infty}
-\frac{(M|z|)^n}{n!}\\
+\frac{(M\abs{z})^n}{n!}\\
 &=
-Me^{M|z|}.
+Me^{M\abs{z}}.
 \end{aligned}
 $$
 Thus the required exponential-growth estimate holds with

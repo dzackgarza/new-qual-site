@@ -27,7 +27,7 @@ audit:
 5. For each natural number n, let $f _ { n } : [ 0 , 1 ] \to \RR$ be a sequence of absolutely integrable functions, and let $f : [ 0 , 1 ] \to \RR$ be another absolutely integrable function such that
 
 $$
-\int _ { 0 } ^ { 1 } { \big | } f _ { n } ( x ) - f ( x ) { \big | } d x \to 0 , \qquad { \mathrm { a s } } \quad n \to \infty .
+\int _ { 0 } ^ { 1 } \abs{ f _ { n } ( x ) - f ( x ) } d x \to 0 , \qquad { \mathrm { a s } } \quad n \to \infty .
 $$
 
 (a) Show that there exists a subsequence $f _ { n _ { j } }$ of $f _ { n }$ which converges to $f$ pointwise almost everywhere.
@@ -45,7 +45,7 @@ Choose a subsequence with summable $L^1$ errors.
 ::: pf-proof
 Since
 $$
-\|f_n-f\|_1\longrightarrow0,
+\norm{f_n-f}_1\longrightarrow0,
 $$
 we may choose indices
 $$
@@ -53,7 +53,7 @@ n_1<n_2<\cdots
 $$
 such that
 $$
-\|f_{n_j}-f\|_1<2^{-j}
+\norm{f_{n_j}-f}_1<2^{-j}
 $$
 for every $j$.
 :::
@@ -68,18 +68,18 @@ By Tonelli's theorem,
 $$
 \begin{aligned}
 \int_0^1\sum_{j=1}^\infty
-|f_{n_j}(x)-f(x)|\,dx
-&=\sum_{j=1}^\infty\|f_{n_j}-f\|_1\\
+\abs{f_{n_j}(x)-f(x)}\,dx
+&=\sum_{j=1}^\infty\norm{f_{n_j}-f}_1\\
 &<\sum_{j=1}^\infty2^{-j}<\infty.
 \end{aligned}
 $$
 Hence
 $$
-\sum_{j=1}^\infty|f_{n_j}(x)-f(x)|<\infty
+\sum_{j=1}^\infty\abs{f_{n_j}(x)-f(x)}<\infty
 $$
 for almost every $x$. Therefore
 $$
-|f_{n_j}(x)-f(x)|\longrightarrow0
+\abs{f_{n_j}(x)-f(x)}\longrightarrow0
 $$
 for almost every $x$, proving part (a).
 :::
@@ -98,11 +98,11 @@ f=0.
 $$
 Then
 $$
-\|f_n-f\|_1=\frac1n\longrightarrow0.
+\norm{f_n-f}_1=\frac1n\longrightarrow0.
 $$
 However,
 $$
-\|f_n-f\|_\infty=1
+\norm{f_n-f}_\infty=1
 $$
 for every $n$. The same is true for every subsequence, so no subsequence can converge uniformly to $f$.
 

@@ -37,7 +37,7 @@ $$
 A(Bv)=B(Av)=B(\lambda v)=\lambda Bv.
 $$
 
-Because $B$ is diagonalizable, its minimal polynomial is a product of distinct linear factors. The minimal polynomial of the restriction $B|_{E_\lambda(A)}$ divides the minimal polynomial of $B$, so it too is a product of distinct linear factors. Hence each restriction $B|_{E_\lambda(A)}$ is diagonalizable.
+Because $B$ is diagonalizable, its minimal polynomial is a product of distinct linear factors. The minimal polynomial of the restriction $B\restrict_{E_\lambda(A)}$ divides the minimal polynomial of $B$, so it too is a product of distinct linear factors. Hence each restriction $B\restrict_{E_\lambda(A)}$ is diagonalizable.
 
 For every $\lambda$, choose a basis of $E_\lambda(A)$ consisting of eigenvectors of $B$. The union of these bases is a basis of $V$ because the eigenspaces of $A$ form a direct sum. Every vector in this union is simultaneously an eigenvector of $A$ and $B$. Therefore, with respect to this basis, both $A$ and $B$ are diagonal.
 :::

@@ -43,12 +43,12 @@ I_n:=\int_{\RR} f(x)g(x+n)\,dx.
 $$
 Fix $\varepsilon>0$. Choose $h\in L^2(\RR)$ with compact support such that
 $$
-\|g-h\|_2<\frac{\varepsilon}{2(1+\|f\|_2)}.
+\norm{g-h}_2<\frac{\varepsilon}{2(1+\norm{f}_2)}.
 $$
 Then, by Cauchy--Schwarz and translation invariance,
 $$
-\left|\int f(x)(g-h)(x+n)\,dx\right|
-\le \|f\|_2\|g-h\|_2<\frac\varepsilon2.
+\abs{\int f(x)(g-h)(x+n)\,dx}
+\le \norm{f}_2\norm{g-h}_2<\frac\varepsilon2.
 $$
 
 Choose $R>0$ so that $h=0$ a.e. outside $[-R,R]$. Then
@@ -58,11 +58,11 @@ $$
 $$
 so
 $$
-\left|\int f(x)h(x+n)\,dx\right|
-\le \|h\|_2
-\left(\int_{-n-R}^{-n+R}|f(x)|^2\,dx\right)^{1/2}.
+\abs{\int f(x)h(x+n)\,dx}
+\le \norm{h}_2
+\left(\int_{-n-R}^{-n+R}\abs{f(x)}^2\,dx\right)^{1/2}.
 $$
-Since $f\in L^2(\RR)$, its $L^2$ tails tend to zero, and therefore the last expression tends to $0$ as $n\to\infty$. For all sufficiently large $n$ it is below $\varepsilon/2$. Hence $|I_n|<\varepsilon$ eventually, proving
+Since $f\in L^2(\RR)$, its $L^2$ tails tend to zero, and therefore the last expression tends to $0$ as $n\to\infty$. For all sufficiently large $n$ it is below $\varepsilon/2$. Hence $\abs{I_n}<\varepsilon$ eventually, proving
 $$
 \boxed{\lim_{n\to\infty}\int_{\RR}f(x)g(x+n)\,dx=0.}
 $$

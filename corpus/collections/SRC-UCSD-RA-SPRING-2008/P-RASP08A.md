@@ -41,7 +41,7 @@ Then the set $\{x \in X : f_n(x) \neq 0, \forall n = 1, 2, \ldots\}$ is dense in
 Let $\nu$ be a complex measure on $X$ and $\mu$ a $\sigma$-finite positive measure on $X$.
 Suppose that there is a constant $C$ such that for every $f \in L^1(X, d\mu)$,
 $$
-\left|\int_X f\,d\nu\right| \leq C \left|\int_X f\,d\mu\right|.
+\abs{\int_X f\,d\nu} \leq C \abs{\int_X f\,d\mu}.
 $$
 Then $d\nu = h\,d\mu$ for some $h \in L^1(X, d\mu)$.
 :::
@@ -168,7 +168,7 @@ whenever $\mu(A)<\infty$; if $\mu(X)<\infty$, this already proves $\nu=c\mu$ and
 
 If $\mu(X)=\infty$, then $c$ must be $0$. Indeed, otherwise along finite-measure sets $X_k$ with $\mu(X_k)\to\infty$ we would have
 $$
-|\nu(X_k)|=|c|\mu(X_k)\to\infty,
+\abs{\nu(X_k)}=\abs{c}\mu(X_k)\to\infty,
 $$
 contradicting continuity from below for the finite complex measure $\nu$. Hence $\nu=0$, and we may take $h=0$.
 

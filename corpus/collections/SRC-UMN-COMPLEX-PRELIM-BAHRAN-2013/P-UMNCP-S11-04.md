@@ -21,7 +21,7 @@ Let $f:\DD\to\DD$ be holomorphic and suppose
 $$
 f(0)=f'(0)=0.
 $$
-Prove that $|f''(0)|\le2$, and describe all such $f$ for which $|f''(0)|=2$.
+Prove that $\abs{f''(0)}\le2$, and describe all such $f$ for which $\abs{f''(0)}=2$.
 
 The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis $f(\DD)\subseteq\DD$; it is included here because without it the assertion is false.
 :::
@@ -34,7 +34,7 @@ The retained solution notes explicitly record that the printed exam omitted the 
 
 Schwarz's lemma gives
 $$
-|f(z)|\le |z|
+\abs{f(z)}\le \abs{z}
 $$
 for every $z\in\DD$.
 
@@ -64,7 +64,7 @@ is holomorphic on $\DD$, maps $\DD$ into the closed unit disk, and satisfies $g(
 
 Since $f(0)=0$, the quotient $f(z)/z$ has a removable singularity at $0$ with value $f'(0)$. Thus $g$ is holomorphic. Step [](#s1-1){.pf-ref} gives
 $$
-|g(z)|\le1
+\abs{g(z)}\le1
 $$
 for $z\ne0$, and continuity gives the same bound at $0$. The hypothesis $f'(0)=0$ gives $g(0)=0$.
 
@@ -76,14 +76,14 @@ for $z\ne0$, and continuity gives the same bound at $0$. The hypothesis $f'(0)=0
 
 A second application of Schwarz's lemma gives
 $$
-|g(z)|\le |z|
+\abs{g(z)}\le \abs{z}
 $$
 for every $z\in\DD$.
 
 
 ::: pf-proof
 
-If $g$ were a unimodular constant then $g(0)$ would have modulus $1$, contrary to $g(0)=0$. Hence in fact $|g(z)|<1$ throughout the disk, and Schwarz's lemma applies to $g$.
+If $g$ were a unimodular constant then $g(0)$ would have modulus $1$, contrary to $g(0)=0$. Hence in fact $\abs{g(z)}<1$ throughout the disk, and Schwarz's lemma applies to $g$.
 
 :::
 
@@ -109,7 +109,7 @@ g'(0),&z=0
 $$
 has a removable singularity at $0$ and is holomorphic there. Moreover,
 $$
-|h(z)|\le1.
+\abs{h(z)}\le1.
 $$
 Since $g(z)=zh(z)$ and $f(z)=zg(z)$, one gets $f(z)=z^2h(z)$.
 
@@ -145,7 +145,7 @@ Evaluating at $z=0$ gives the formula.
 
 Therefore
 $$
-\boxed{|f''(0)|\le2}.
+\boxed{\abs{f''(0)}\le2}.
 $$
 
 
@@ -153,7 +153,7 @@ $$
 
 By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
-|f''(0)|=2|h(0)|\le2.
+\abs{f''(0)}=2\abs{h(0)}\le2.
 $$
 
 :::
@@ -164,7 +164,7 @@ $$
 
 Equality
 $$
-|f''(0)|=2
+\abs{f''(0)}=2
 $$
 holds if and only if
 $$
@@ -177,9 +177,9 @@ for some $\theta\in\RR$.
 
 If equality holds, then step [](#s1-5){.pf-ref} gives
 $$
-|h(0)|=1.
+\abs{h(0)}=1.
 $$
-Since $|h|\le1$ on the disk, the maximum-modulus principle forces $h$ to be constant:
+Since $\abs{h}\le1$ on the disk, the maximum-modulus principle forces $h$ to be constant:
 $$
 h(z)=e^{i\theta}
 $$

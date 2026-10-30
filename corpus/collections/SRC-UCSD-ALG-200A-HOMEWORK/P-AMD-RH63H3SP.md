@@ -46,7 +46,7 @@ $$
 
 2. If $G$ is simple, prove that
    $$
-   |G|\mid n!,
+   \cardinality{G}\mid n!,
    $$
    and in particular that $G$ is finite.
 :::
@@ -118,12 +118,12 @@ $$
 $$
 Therefore Lagrange's theorem gives
 $$
-|\rho(G)|\mid|S_n|=n!.
+\cardinality{\rho(G)}\mid\cardinality{S_n}=n!.
 $$
 Since
 $$
-|\rho(G)|
-=|G/\operatorname{core}(H)|
+\cardinality{\rho(G)}
+=\cardinality{G/\operatorname{core}(H)}
 =[G:\operatorname{core}(H)],
 $$
 the desired divisibility follows.
@@ -154,7 +154,7 @@ $$
 
 ::: pf-step
 
-If $G$ is simple, then $|G|\mid n!$ and $G$ is finite.
+If $G$ is simple, then $\cardinality{G}\mid n!$ and $G$ is finite.
 
 ::: pf-proof
 
@@ -162,13 +162,13 @@ By step [](#s4){.pf-ref},
 $$
 [G:\operatorname{core}(H)]
 =[G:\{e\}]
-=|G|.
+=\cardinality{G}.
 $$
 Applying step [](#s3){.pf-ref} gives
 $$
-|G|\mid n!.
+\cardinality{G}\mid n!.
 $$
-In particular, $|G|\le n!<\infty$, so $G$ is finite.
+In particular, $\cardinality{G}\le n!<\infty$, so $G$ is finite.
 
 :::
 

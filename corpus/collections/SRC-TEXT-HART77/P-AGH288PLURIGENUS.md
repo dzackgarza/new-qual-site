@@ -87,7 +87,7 @@ This is the codimension-one extension step in the method of [@Har10a, Theorem II
 
 If $W$ is a normal integral noetherian scheme, $V\subseteq W$ is open with complement of codimension at least two, and $\mathcal E$ is locally free of finite rank, then restriction is an isomorphism
 $$
-\Gamma(W,\mathcal E)\xrightarrow{\cong}\Gamma(V,\mathcal E|_V).
+\Gamma(W,\mathcal E)\xrightarrow{\cong}\Gamma(V,\mathcal E\restrict_V).
 $$
 
 ::: pf-proof
@@ -95,7 +95,7 @@ $$
 Sections of a locally free sheaf on an integral scheme inject into its generic stalk, as is seen by expressing them in a local frame.
 Thus restriction is injective.
 Take a section on $V$ and regard it as an element of that generic stalk.
-On any affine open $W_0=\Spec A$ with $\mathcal E|_{W_0}\cong\OO_{W_0}^{\oplus r}$, write its generic value as a vector in $\operatorname{Frac}(A)^r$.
+On any affine open $W_0=\Spec A$ with $\mathcal E\restrict_{W_0}\cong\OO_{W_0}^{\oplus r}$, write its generic value as a vector in $\operatorname{Frac}(A)^r$.
 Every height-one point of $W_0$ belongs to $V$, so all coordinates belong to $A_{\mathfrak p}$ for every height-one prime $\mathfrak p$ of $A$.
 The [codimension-one intersection property for a normal domain](https://stacks.math.columbia.edu/tag/0AVB), applied to the rank-one free module, says
 $$

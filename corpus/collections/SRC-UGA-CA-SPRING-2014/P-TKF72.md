@@ -22,7 +22,7 @@ Show that
 $$
 \lim_{z\to \infty} \int_{\gamma_R} f(z) \dz = iA\alpha
 ,$$
-where $\gamma_R \definedas \theset{ \abs{z} = R, \Arg(z) \in [0, \alpha]}$ is an arc.
+where $\gamma_R \coloneqq \theset{ \abs{z} = R, \Arg(z) \in [0, \alpha]}$ is an arc.
 :::
 
 ::: {.solution}

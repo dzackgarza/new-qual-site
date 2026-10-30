@@ -75,7 +75,7 @@ $$
 \boxed{
 \pi_1(Y)
 \cong
-\left\langle a,b,c\ \middle|\
+\left\langle a,b,c\ \presentationbar\
 aba^{-1}b^{-1}cb^{-1}c^{-1}=1
 \right\rangle .
 }
@@ -101,7 +101,7 @@ With the opposite orientation convention on the indicated boundary identificatio
 $$
 \pi_1(Y)
 \cong
-\left\langle a,b,c\ \middle|\
+\left\langle a,b,c\ \presentationbar\
 aba^{-1}b^{-1}cb c^{-1}=1
 \right\rangle .
 $$
@@ -112,7 +112,7 @@ Only the orientation in which that copy of the $b$-edge is traversed changes.
 Since this is merely a change of orientation in the same CW decomposition of the same space $Y$, the two presentations present isomorphic groups.
 Thus the answer can be written uniformly as
 $$
-\left\langle a,b,c\ \middle|\
+\left\langle a,b,c\ \presentationbar\
 aba^{-1}b^{-1}cb^{\varepsilon}c^{-1}=1
 \right\rangle,
 \qquad \varepsilon=\pm1.

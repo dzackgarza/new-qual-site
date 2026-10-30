@@ -32,7 +32,7 @@ Let $\alpha\in F$ be a root of $g$, let $\overline F$ be an algebraic closure of
 ::: pf
 
 ::: {.pf-step #extend}
-There is an isomorphism $\sigma\colon F\to F(\beta)$ with $\sigma(\alpha)=\beta$ and $\sigma|_K=\operatorname{id}$.
+There is an isomorphism $\sigma\colon F\to F(\beta)$ with $\sigma(\alpha)=\beta$ and $\sigma\restrict_K=\operatorname{id}$.
 
 ::: pf-proof
 Since $g$ is irreducible, there is a $K$-isomorphism $K(\alpha)\to K(\beta)$ with $\alpha\mapsto\beta$. The field $F=K(\alpha)(r_1,\ldots,r_n)$ is a splitting field of $f$ over $K(\alpha)$, and $F(\beta)=K(\beta)(r_1,\ldots,r_n)$ is a splitting field of $f$ over $K(\beta)$. The isomorphism extension theorem for splitting fields extends $K(\alpha)\to K(\beta)$ to $\sigma$.

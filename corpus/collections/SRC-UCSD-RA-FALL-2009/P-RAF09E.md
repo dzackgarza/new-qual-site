@@ -49,10 +49,10 @@ Prove part (a) by the Riesz representation theorem.
 
 Since $\nu\le\lambda$ and $\lambda(X)<\infty$, for $f\in L^2(\lambda)$,
 $$
-\left|\int_X f\,d\nu\right|
+\abs{\int_X f\,d\nu}
 \le \nu(X)^{1/2}
-\left(\int_X|f|^2\,d\nu\right)^{1/2}
-\le \nu(X)^{1/2}\|f\|_{L^2(\lambda)}.
+\left(\int_X\abs{f}^2\,d\nu\right)^{1/2}
+\le \nu(X)^{1/2}\norm{f}_{L^2(\lambda)}.
 $$
 Thus
 $$

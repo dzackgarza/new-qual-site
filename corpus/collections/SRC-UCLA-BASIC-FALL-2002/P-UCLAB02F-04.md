@@ -98,7 +98,7 @@ the displayed formula follows.
 
 For $0\le x\le1$,
 $$
-|R_N(x)|
+\abs{R_N(x)}
 \le
 \frac{x^{2N+3}}{2N+3}.
 $$
@@ -108,7 +108,7 @@ $$
 
 Because $1+t^2\ge1$ on $[0,1]$,
 $$
-|R_N(x)|
+\abs{R_N(x)}
 \le
 \int_0^x t^{2N+2}\,dt
 =
@@ -133,7 +133,7 @@ $$
 
 Fix $x<1$. By step [](#s1-3){.pf-ref},
 $$
-|R_N(x)|
+\abs{R_N(x)}
 \le
 \frac{x^{2N+3}}{2N+3}
 \longrightarrow0.
@@ -148,11 +148,11 @@ Letting $N\to\infty$ in the finite identity of step [](#s1-2){.pf-ref} gives the
 
 For every $N\ge0$,
 $$
-\left|
+\abs{
 \frac\pi4
 -
 \sum_{k=0}^{N}(-1)^k\frac1{2k+1}
-\right|
+}
 \le
 \frac1{2N+3}.
 $$
@@ -171,7 +171,7 @@ $$
 $$
 Also, by step [](#s1-3){.pf-ref},
 $$
-|R_N(x)|\le\frac{x^{2N+3}}{2N+3}\le\frac1{2N+3}.
+\abs{R_N(x)}\le\frac{x^{2N+3}}{2N+3}\le\frac1{2N+3}.
 $$
 Therefore the limiting difference between $\pi/4$ and the $N$th partial sum has absolute value at most $1/(2N+3)$.
 
@@ -199,7 +199,7 @@ S_N=\sum_{k=0}^{N}(-1)^k\frac1{2k+1}.
 $$
 By step [](#s1-5){.pf-ref},
 $$
-\left|\frac\pi4-S_N\right|
+\abs{\frac\pi4-S_N}
 \le
 \frac1{2N+3}
 \longrightarrow0.

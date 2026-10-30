@@ -21,7 +21,7 @@ audit:
 Write the negations of these sentences in as "smooth" a way as possible.
 (In particular, you may not simply append "It is not the case that ...". Also, you should make explicit any "hidden" quantifiers.)
 
-a. There is a real number $x$ such that for every real number $y$, $|x-y|>1$.
+a. There is a real number $x$ such that for every real number $y$, $\abs{x-y}>1$.
 b. A real-valued function that is continuous on a closed interval attains a minimum value on that interval.
 c. $3n+1$ is even if and only if $n^2+4$ is prime.
 :::
@@ -29,7 +29,7 @@ c. $3n+1$ is even if and only if $n^2+4$ is prime.
 ::: {.solution}
 (a) The negation is:
 $$
-\text{For every real }x\text{ there exists a real }y\text{ such that }|x-y|\le1.
+\text{For every real }x\text{ there exists a real }y\text{ such that }\abs{x-y}\le1.
 $$
 
 (b) Making the hidden quantifiers explicit, the original assertion says that for every closed interval $[a,b]$ and every continuous $f:[a,b]\to\RR$, there exists $x\in[a,b]$ such that $f(x)\le f(y)$ for every $y\in[a,b]$. Its negation is therefore:

@@ -144,7 +144,7 @@ V_\lambda,
 $$
 where each
 $$
-p|_{V_\lambda}:V_\lambda\to U
+p\restrict_{V_\lambda}:V_\lambda\to U
 $$
 is a homeomorphism.
 
@@ -346,7 +346,7 @@ W_j\subseteq U
 $$
 of $x$ such that
 $$
-(p|_{V_j})^{-1}(W_j)
+(p\restrict_{V_j})^{-1}(W_j)
 \subseteq
 O_j.
 $$
@@ -364,7 +364,7 @@ $$
 $$
 Since
 $$
-p|_{V_j}:V_j\xrightarrow{\cong}U
+p\restrict_{V_j}:V_j\xrightarrow{\cong}U
 $$
 is a homeomorphism, its image
 $$
@@ -378,7 +378,7 @@ x.
 $$
 By construction,
 $$
-(p|_{V_j})^{-1}(W_j)
+(p\restrict_{V_j})^{-1}(W_j)
 =
 O_j\cap V_j
 \subseteq
@@ -417,9 +417,9 @@ The intersection is finite, so $W_x$ is open and contains $x$.
 
 For every sheet $V_j$,
 $$
-(p|_{V_j})^{-1}(W_x)
+(p\restrict_{V_j})^{-1}(W_x)
 \subseteq
-(p|_{V_j})^{-1}(W_j)
+(p\restrict_{V_j})^{-1}(W_j)
 \subseteq
 O_j.
 $$

@@ -42,7 +42,7 @@ $$
 \boxed{\CC[X]\cong
 S^{(7)}\oplus S^{(6,1)}\oplus S^{(5,2)}\oplus S^{(4,3)}.}
 $$
-The dimensions $1+6+14+14=35$ agree with $|X|=\binom74=35$.
+The dimensions $1+6+14+14=35$ agree with $\cardinality{X}=\binom74=35$.
 
 For (b), fixing a $4$-set and an ordering of its $3$-element complement leaves only the permutations of the $4$-set. Thus the stabilizer of a point of $Y$ is $S_4\times S_1\times S_1\times S_1$, and
 $$
@@ -67,7 +67,7 @@ $$
 &\oplus S^{(4,3)}\oplus2S^{(4,2,1)}\oplus S^{(4,1,1,1)}.
 \end{aligned}}
 $$
-The total dimension is $210=35\cdot3!=|Y|$.
+The total dimension is $210=35\cdot3!=\cardinality{Y}$.
 
 For (c), multiplication of Frobenius characteristics records tensor products of homogeneous polynomial functors. Thus the decomposition in (a), namely the Schur expansion of $h_4h_3$, gives the decomposition
 $$

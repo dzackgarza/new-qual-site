@@ -42,7 +42,7 @@ $$
 C_p := \int_0^\infty e^{-z} z^{(1-p)/p} \, dz.
 $$
 
-(b) Show that the operator $T$ is bounded on $L^2((0, \infty))$ and $\|Tf\|_2 \leq C_2 \|f\|_2$, where $C_2$ is the constant in (a) with $p = 2$.
+(b) Show that the operator $T$ is bounded on $L^2((0, \infty))$ and $\norm{Tf}_2 \leq C_2 \norm{f}_2$, where $C_2$ is the constant in (a) with $p = 2$.
 :::
 
 ::: {.solution}
@@ -62,7 +62,7 @@ $$
 $$
 Hence Hölder's inequality will prove part (a) once we show
 $$
-\|Tf\|_{L^p(dy)}
+\norm{Tf}_{L^p(dy)}
 \le C_p\left(\int_0^\infty f(x)^p x^{p-2}\,dx\right)^{1/p}.
 $$
 
@@ -84,7 +84,7 @@ $$
 $$
 Minkowski's integral inequality therefore yields
 $$
-\|Tf\|_p
+\norm{Tf}_p
 \le
 \int_0^\infty e^{-z}
 \left(\int_0^\infty y^{-p}f(z/y)^p\,dy\right)^{1/p}dz.
@@ -116,7 +116,7 @@ $$
 $$
 Substitution into Step 2 gives
 $$
-\|Tf\|_p
+\norm{Tf}_p
 \le
 \left(\int_0^\infty e^{-z}z^{(1-p)/p}\,dz\right)
 \left(\int_0^\infty f(x)^p x^{p-2}\,dx\right)^{1/p}.
@@ -124,7 +124,7 @@ $$
 The first factor is exactly $C_p$ (equivalently $C_p=\Gamma(1/p)$). Therefore
 $$
 \boxed{
-\|Tf\|_p
+\norm{Tf}_p
 \le C_p
 \left(\int_0^\infty f(x)^p x^{p-2}\,dx\right)^{1/p}.}
 $$
@@ -144,7 +144,7 @@ $$
 \begin{aligned}
 \int_0^\infty\int_0^\infty e^{-xy}f(x)g(y)\,dx\,dy
 &=\int_0^\infty (Tf)(y)g(y)\,dy\\
-&\le \|Tf\|_p\|g\|_q\\
+&\le \norm{Tf}_p\norm{g}_q\\
 &\le C_p
 \left(\int_0^\infty f(x)^p x^{p-2}\,dx\right)^{1/p}
 \left(\int_0^\infty g(y)^q\,dy\right)^{1/q}.
@@ -164,17 +164,17 @@ Deduce the $L^2$ estimate in part (b).
 
 For $p=2$, the weight is $x^{p-2}=1$. Step 3 gives, initially for nonnegative $f$,
 $$
-\|Tf\|_2\le C_2\|f\|_2,
+\norm{Tf}_2\le C_2\norm{f}_2,
 \qquad
 C_2=\int_0^\infty e^{-z}z^{-1/2}\,dz=\sqrt\pi.
 $$
 For an arbitrary complex-valued $f$,
 $$
-|Tf(y)|\le T(|f|)(y),
+\abs{Tf(y)}\le T(\abs{f})(y),
 $$
 so the same estimate follows:
 $$
-\boxed{\|Tf\|_2\le C_2\|f\|_2.}
+\boxed{\norm{Tf}_2\le C_2\norm{f}_2.}
 $$
 Thus $T$ extends to a bounded operator on $L^2((0,\infty))$ with operator norm at most $C_2$.
 

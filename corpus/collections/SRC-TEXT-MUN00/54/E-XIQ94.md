@@ -32,7 +32,7 @@ When $\overline{F}$ is already defined on a connected subset $C$ of $R$, it exte
 
 ::: pf-proof
 
-$p^{-1}(U)$ is a disjoint union of open slices $V_\alpha$. The connected set $\overline{F}(C)$ lies in $p^{-1}(U)$, so it lies in a single slice $V_0$. Define $\overline{F} = (p|_{V_0})^{-1} \circ F$ on $R$. This is continuous and agrees with the given values on $C$, since $p \circ \overline{F} = F$ there and $p|_{V_0}$ is injective.
+$p^{-1}(U)$ is a disjoint union of open slices $V_\alpha$. The connected set $\overline{F}(C)$ lies in $p^{-1}(U)$, so it lies in a single slice $V_0$. Define $\overline{F} = (p\restrict_{V_0})^{-1} \circ F$ on $R$. This is continuous and agrees with the given values on $C$, since $p \circ \overline{F} = F$ there and $p\restrict_{V_0}$ is injective.
 
 :::
 

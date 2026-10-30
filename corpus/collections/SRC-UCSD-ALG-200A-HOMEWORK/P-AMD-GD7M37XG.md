@@ -64,7 +64,7 @@ Let $Q\le H$ be any $p$-subgroup.
 Then $Q$ is also a $p$-subgroup of $G$.
 Since $P$ is Sylow in $G$,
 $$
-|Q|\le|P|.
+\cardinality{Q}\le\cardinality{P}.
 $$
 Thus no $p$-subgroup of $H$ has order larger than $P$, so
 $$

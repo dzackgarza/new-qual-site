@@ -53,8 +53,8 @@ $$
 For $h\in\RR$,
 $$
 \begin{aligned}
-| (\chi_E*\chi_F)(x+h)-(\chi_E*\chi_F)(x) |
-&\le \|\chi_E\|_2\,\|\chi_F(\cdot+h)-\chi_F\|_2.
+\abs{ (\chi_E*\chi_F)(x+h)-(\chi_E*\chi_F)(x) }
+&\le \norm{\chi_E}_2\,\norm{\chi_F(\cdot+h)-\chi_F}_2.
 \end{aligned}
 $$
 The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by continuity of translations in $L^2$. Hence $\chi_E*\chi_F$ is uniformly continuous, in particular continuous.

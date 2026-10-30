@@ -33,7 +33,7 @@ as oriented manifolds, where $W^{4m+1}$ is compact and oriented.
 
 Along the boundary there is a stable tangent-bundle isomorphism
 $$
-TW|_M\cong TM\oplus\varepsilon^1.
+TW\restrict_M\cong TM\oplus\varepsilon^1.
 $$
 
 
@@ -63,7 +63,7 @@ $$
 Pontryagin classes are natural and stable. By step [](#s1-1){.pf-ref},
 $$
 p(TM)=p(TM\oplus\varepsilon^1)
-=p(TW|_M)
+=p(TW\restrict_M)
 =i^*p(TW).
 $$
 Comparing homogeneous components gives the formula.

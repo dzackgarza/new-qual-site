@@ -49,7 +49,7 @@ Think of $\AA^{n+1}$ as a vector space over $k$ and work with its subspaces.
 Put $V=k^{n+1}$ and $S=\operatorname{Sym}(V^*)=k[x_0,\ldots,x_n]$.
 For a vector subspace $W\subseteq V$, let $\PP(W)$ be its set of one-dimensional subspaces, with $\PP(0)=\varnothing$, and let
 $$
-W^\perp=\{\ell\in V^*: \ell|_W=0\}
+W^\perp=\{\ell\in V^*: \ell\restrict_W=0\}
 $$
 be its annihilator.
 The intersection of an empty family of hyperplanes is understood to be $\PP^n$.

@@ -45,15 +45,15 @@ x^A=(x^A_n)_{n\ge1},
 \qquad
 x^A_n=\mathbf1_A(n).
 $$
-Then $x^A\in\ell^\infty$ and $\|x^A\|_\infty\le1$.
+Then $x^A\in\ell^\infty$ and $\norm{x^A}_\infty\le1$.
 
 If $A\ne B$, choose $n\in A\triangle B$. Then
 $$
-|x^A_n-x^B_n|=1,
+\abs{x^A_n-x^B_n}=1,
 $$
 so
 $$
-\|x^A-x^B\|_\infty=1.
+\norm{x^A-x^B}_\infty=1.
 $$
 Thus
 $$

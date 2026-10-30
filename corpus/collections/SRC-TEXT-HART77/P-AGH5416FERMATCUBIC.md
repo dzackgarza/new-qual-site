@@ -368,7 +368,7 @@ Adjunction for the cubic hypersurface gives
 $$
 K_S
 =
-(K_{\PP^3}+S)|_S
+(K_{\PP^3}+S)\restrict_S
 =
 \OO_S(-1).
 $$
@@ -463,7 +463,7 @@ $$
 $$
 and hence
 $$
-\boxed{|\Aut(S)|=27\cdot24=648.}
+\boxed{\cardinality{\Aut(S)}=27\cdot24=648.}
 $$
 
 ::: pf-proof
@@ -593,7 +593,7 @@ U_4(2)
 $$
 Moreover
 $$
-\boxed{|\Aut(S)|=25920.}
+\boxed{\cardinality{\Aut(S)}=25920.}
 $$
 
 ::: pf-proof
@@ -632,7 +632,7 @@ $$
 Hermitian Gram--Schmidt shows that $U_n(2)$ acts transitively on unit
 vectors, with stabilizer $U_{n-1}(2)$ on the orthogonal complement. Hence
 $$
-|U_4(2)|
+\cardinality{U_4(2)}
 =
 N_4N_3N_2N_1
 =
@@ -642,7 +642,7 @@ N_4N_3N_2N_1
 $$
 Dividing by the central subgroup of order $3$ gives
 $$
-|\Aut(S)|
+\cardinality{\Aut(S)}
 =
 \frac{77760}{3}
 =

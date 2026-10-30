@@ -27,7 +27,7 @@ Justify your answer.
 :::
 
 ::: {.solution}
-No. The group $A_4$ gives a counterexample: $6$ divides $|A_4|=12$, but
+No. The group $A_4$ gives a counterexample: $6$ divides $\cardinality{A_4}=12$, but
 $A_4$ has no subgroup of order $6$.
 
 ::: pf
@@ -57,7 +57,7 @@ in $H$.
 
 But $A_4$ has four Sylow $3$-subgroups: its eight $3$-cycles split into four
 subgroups, each containing two nonidentity elements. Thus $H$ would contain all
-eight $3$-cycles, impossible because $|H|=6$.
+eight $3$-cycles, impossible because $\cardinality{H}=6$.
 
 :::
 

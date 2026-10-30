@@ -27,39 +27,39 @@ audit:
 Let $f \in L^2(\RR^n)$ be such that $f(x) = 0$ for a.e. $x \in \RR^n \setminus A$, where $m(A) < \infty$.
 Show that, for any measurable $E \subset \RR^n$,
 $$
-\int_E |\hat{f}(\xi)|^2\,d\xi \leq m(A)\,m(E)\,\|f\|_{L^2}^2.
+\int_E \abs{\hat{f}(\xi)}^2\,d\xi \leq m(A)\,m(E)\,\norm{f}_{L^2}^2.
 $$
 :::
 
 ::: {.solution}
 Since $f=0$ almost everywhere outside $A$ and $m(A)<\infty$, Cauchy--Schwarz gives
 $$
-\|f\|_1
-=\int_A|f(x)|\,dx
-\le m(A)^{1/2}\|f\|_2.
+\norm{f}_1
+=\int_A\abs{f(x)}\,dx
+\le m(A)^{1/2}\norm{f}_2.
 $$
 Thus $f\in L^1(\RR^n)$, so its Fourier transform is defined pointwise by the Fourier integral. For every $\xi\in\RR^n$,
 $$
-|\widehat f(\xi)|
-\le \int_{\RR^n}|f(x)|\,dx
-=\|f\|_1
-\le m(A)^{1/2}\|f\|_2.
+\abs{\widehat f(\xi)}
+\le \int_{\RR^n}\abs{f(x)}\,dx
+=\norm{f}_1
+\le m(A)^{1/2}\norm{f}_2.
 $$
 Therefore
 $$
-|\widehat f(\xi)|^2
-\le m(A)\|f\|_2^2
+\abs{\widehat f(\xi)}^2
+\le m(A)\norm{f}_2^2
 $$
 for every $\xi$. Integrating over the measurable set $E$ gives
 $$
-\int_E|\widehat f(\xi)|^2\,d\xi
-\le m(E)m(A)\|f\|_2^2.
+\int_E\abs{\widehat f(\xi)}^2\,d\xi
+\le m(E)m(A)\norm{f}_2^2.
 $$
 Hence
 $$
 \boxed{
-\int_E|\widehat f(\xi)|^2\,d\xi
-\le m(A)m(E)\|f\|_{L^2}^2.}
+\int_E\abs{\widehat f(\xi)}^2\,d\xi
+\le m(A)m(E)\norm{f}_{L^2}^2.}
 $$
 If $m(E)=\infty$, the same inequality is understood in the extended-real sense and is immediate from the pointwise bound.
 :::

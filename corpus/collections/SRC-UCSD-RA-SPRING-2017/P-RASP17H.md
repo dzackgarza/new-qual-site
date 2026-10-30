@@ -26,14 +26,14 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f \in L^2(\RR, m)$ is a function such that $f(x) = 0$ if $|x| \geq 1$.
+Suppose that $f \in L^2(\RR, m)$ is a function such that $f(x) = 0$ if $\abs{x} \geq 1$.
 
 1. Show $\hat{f} \in C^\infty(\RR, \CC)$ and
 $$
-\sup_{k \in \RR} |\hat{f}^{(\ell)}(k)| \leq \frac{1}{\sqrt{2\pi}} \sqrt{\frac{2}{2\ell + 1}} \|f\|_2 \quad \forall \ell = 0, 1, 2, \ldots
+\sup_{k \in \RR} \abs{\hat{f}^{(\ell)}(k)} \leq \frac{1}{\sqrt{2\pi}} \sqrt{\frac{2}{2\ell + 1}} \norm{f}_2 \quad \forall \ell = 0, 1, 2, \ldots
 $$
 
-2. Let $\{f_n\}_{n=1}^\infty \subset L^2(\RR, m)$ satisfy $\|f_n\|_2 \leq 1$ and $f_n(x) = 0$ for $|x| \geq 1$.
+2. Let $\{f_n\}_{n=1}^\infty \subset L^2(\RR, m)$ satisfy $\norm{f_n}_2 \leq 1$ and $f_n(x) = 0$ for $\abs{x} \geq 1$.
    Show that for each $0 < M < \infty$ there exists $1 \leq n_1 < n_2 < n_3 < \ldots$ in $\NN$ such that $\{\hat{f}_{n_k}\}_{k=1}^\infty$ is uniformly convergent on $[-M, M]$ to some $g \in C([-M, M], \CC)$.
 :::
 
@@ -76,20 +76,20 @@ Prove the stated uniform derivative bound.
 By Cauchy--Schwarz,
 $$
 \begin{aligned}
-|\widehat f^{(\ell)}(k)|
+\abs{\widehat f^{(\ell)}(k)}
 &\le \frac1{\sqrt{2\pi}}
-\left(\int_{-1}^1|x|^{2\ell}\,dx\right)^{1/2}\|f\|_2\\
+\left(\int_{-1}^1\abs{x}^{2\ell}\,dx\right)^{1/2}\norm{f}_2\\
 &=\frac1{\sqrt{2\pi}}
-\sqrt{\frac{2}{2\ell+1}}\,\|f\|_2.
+\sqrt{\frac{2}{2\ell+1}}\,\norm{f}_2.
 \end{aligned}
 $$
 The bound is independent of $k$, so
 $$
 \boxed{
-\sup_{k\in\RR}|\widehat f^{(\ell)}(k)|
+\sup_{k\in\RR}\abs{\widehat f^{(\ell)}(k)}
 \le
 \frac1{\sqrt{2\pi}}
-\sqrt{\frac{2}{2\ell+1}}\,\|f\|_2.}
+\sqrt{\frac{2}{2\ell+1}}\,\norm{f}_2.}
 $$
 
 :::
@@ -102,20 +102,20 @@ Apply Arzelà--Ascoli to the sequence $(\widehat f_n)$.
 
 ::: pf-proof
 
-Assume $\|f_n\|_2\le1$. Step 2 with $\ell=0$ gives
+Assume $\norm{f_n}_2\le1$. Step 2 with $\ell=0$ gives
 $$
-\sup_n\sup_{k\in\RR}|\widehat f_n(k)|
+\sup_n\sup_{k\in\RR}\abs{\widehat f_n(k)}
 \le \frac1{\sqrt\pi}.
 $$
 With $\ell=1$,
 $$
-\sup_n\sup_{k\in\RR}|\widehat f_n'(k)|
+\sup_n\sup_{k\in\RR}\abs{\widehat f_n'(k)}
 \le \frac1{\sqrt{3\pi}}.
 $$
 Thus for $s,t\in[-M,M]$, the Mean Value Theorem gives
 $$
-|\widehat f_n(t)-\widehat f_n(s)|
-\le \frac1{\sqrt{3\pi}}|t-s|.
+\abs{\widehat f_n(t)-\widehat f_n(s)}
+\le \frac1{\sqrt{3\pi}}\abs{t-s}.
 $$
 So $(\widehat f_n)$ is uniformly bounded and equicontinuous on the compact interval $[-M,M]$. By the Arzelà--Ascoli theorem there is a subsequence $(\widehat f_{n_k})$ converging uniformly on $[-M,M]$ to some continuous function
 $$

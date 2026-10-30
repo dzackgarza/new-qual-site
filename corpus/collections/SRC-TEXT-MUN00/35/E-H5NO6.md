@@ -43,7 +43,7 @@ Since $Z$ is Hausdorff, the equalizer of $R$ and the identity map is closed. Hen
 $$
 r:\RR^2\setminus\{0\}\to S^1,
 \qquad
-r(x)=\frac{x}{\|x\|},
+r(x)=\frac{x}{\norm{x}},
 $$
 is continuous and restricts to the identity on $S^1$, so $S^1$ is a retract of the punctured plane.
 

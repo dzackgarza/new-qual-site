@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $Y$ be a simply-connected region contained inside the disk $D = \{z : |z| < 1\}$.
+Let $Y$ be a simply-connected region contained inside the disk $D = \{z : \abs{z} < 1\}$.
 Assume $0 \in Y \neq D$.
-Without appealing to the Riemann mapping theorem itself, prove that there exists an $r$ with $1 > r > 0$ and a univalent conformal map $f: Y \to D(r) = \{z : |z| < r\}$ with $f(0) = 0$ and $f'(0) = 1$.
+Without appealing to the Riemann mapping theorem itself, prove that there exists an $r$ with $1 > r > 0$ and a univalent conformal map $f: Y \to D(r) = \{z : \abs{z} < r\}$ with $f(0) = 0$ and $f'(0) = 1$.
 
 Hint: You may use part of the proof of the Riemann mapping theorem.
 :::
@@ -31,7 +31,7 @@ holomorphic square root there: choose $q$ with
 $$
 q(z)^2=\phi_a(z).
 $$
-Because $\phi_a$ is injective, so is $q$. Also $|q(z)|<1$ on $Y$.
+Because $\phi_a$ is injective, so is $q$. Also $\abs{q(z)}<1$ on $Y$.
 
 Put $b=q(0)$ and let
 $$
@@ -42,21 +42,21 @@ $$
 F=\psi_b\circ q:Y\to\DD
 $$
 is univalent and satisfies $F(0)=0$. Since $b^2=\phi_a(0)=-a$,
-$|b|^2=|a|$. Furthermore
+$\abs{b}^2=\abs{a}$. Furthermore
 $$
-|q'(0)|=\frac{|\phi_a'(0)|}{2|b|}
-=\frac{1-|a|^2}{2\sqrt{|a|}},
+\abs{q'(0)}=\frac{\abs{\phi_a'(0)}}{2\abs{b}}
+=\frac{1-\abs{a}^2}{2\sqrt{\abs{a}}},
 $$
 and
 $$
-|\psi_b'(b)|=\frac1{1-|b|^2}=\frac1{1-|a|}.
+\abs{\psi_b'(b)}=\frac1{1-\abs{b}^2}=\frac1{1-\abs{a}}.
 $$
 Thus
 $$
-|F'(0)|
-=\frac{1+|a|}{2\sqrt{|a|}}>1,
+\abs{F'(0)}
+=\frac{1+\abs{a}}{2\sqrt{\abs{a}}}>1,
 $$
-the strict inequality following from $(1-|a|)^2>0$.
+the strict inequality following from $(1-\abs{a})^2>0$.
 
 Multiply $F$ by a unimodular constant so that $F'(0)=\lambda>1$ is positive
 real, and define

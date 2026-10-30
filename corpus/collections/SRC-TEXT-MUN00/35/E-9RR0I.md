@@ -46,7 +46,7 @@ The coordinate map $f_\alpha = \pi_\alpha \circ f: A \to \RR$ is continuous.
 :::
 
 ::: pf-step
-By the Tietze Extension Theorem (Theorem 35.1), because $X$ is normal and $A$ is closed, there exists a continuous map $g_\alpha: X \to \RR$ extending $f_\alpha$, so $g_\alpha|_A = f_\alpha$.
+By the Tietze Extension Theorem (Theorem 35.1), because $X$ is normal and $A$ is closed, there exists a continuous map $g_\alpha: X \to \RR$ extending $f_\alpha$, so $g_\alpha\restrict_A = f_\alpha$.
 :::
 
 ::: pf-step
@@ -91,7 +91,7 @@ The composite map $i \circ f: A \to \RR^J$ is continuous.
 :::
 
 ::: pf-step
-By Part (a), $i \circ f$ extends to a continuous map $G: X \to \RR^J$ such that $G|_A = i \circ f$.
+By Part (a), $i \circ f$ extends to a continuous map $G: X \to \RR^J$ such that $G\restrict_A = i \circ f$.
 :::
 
 ::: pf-step

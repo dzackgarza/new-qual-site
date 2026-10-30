@@ -121,7 +121,7 @@ For each $P\in S$, choose $g_P$ by step [](#s2){.pf-ref} with the coefficients o
 The divisor $\operatorname{div}(g_P)-E$ has finite support disjoint from $\pi^{-1}(P)$.
 Remove its image and the other points of $S$ to obtain an open neighborhood $U_P$ of $P$ on which
 $$
-\operatorname{div}(g_P)|_{\pi^{-1}(U_P)}=E|_{\pi^{-1}(U_P)}.
+\operatorname{div}(g_P)\restrict_{\pi^{-1}(U_P)}=E\restrict_{\pi^{-1}(U_P)}.
 $$
 On $U_0=X\setminus S$, the normalization is an isomorphism, so $E$ gives a Cartier divisor $D_0$ there.
 On $U_P$, use the single rational local equation $g_P$.

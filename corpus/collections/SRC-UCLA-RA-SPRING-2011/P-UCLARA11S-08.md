@@ -22,9 +22,9 @@ review: draft
 (d) Let $A(z)$ be a $2\times2$ matrix-valued holomorphic function, meaning that its entries are holomorphic.
 Show that
 $$
-z\longmapsto \log\|A(z)\|
+z\longmapsto \log\norm{A(z)}
 $$
-is subharmonic, where $\|A(z)\|$ is the operator norm on $\CC^2$.
+is subharmonic, where $\norm{A(z)}$ is the operator norm on $\CC^2$.
 :::
 
 ::: {.solution}
@@ -97,7 +97,7 @@ For $n\ge1$, define
 $$
 u_n(z)
 \coloneqq
-\frac1n\log|z|,
+\frac1n\log\abs{z},
 $$
 with
 $$
@@ -105,7 +105,7 @@ u_n(0)=-\infty.
 $$
 Each $u_n$ is subharmonic on $\CC$. The family is locally uniformly bounded above: on
 $$
-|z|\le R,
+\abs{z}\le R,
 $$
 one has
 $$
@@ -122,15 +122,15 @@ u(z)
 =
 \begin{cases}
 -\infty,&z=0,\\
-0,&0<|z|\le1,\\
-\log|z|,&|z|>1.
+0,&0<\abs{z}\le1,\\
+\log\abs{z},&\abs{z}>1.
 \end{cases}
 $$
-Indeed, when $0<|z|<1$, the negative numbers
+Indeed, when $0<\abs{z}<1$, the negative numbers
 $$
-\frac1n\log|z|
+\frac1n\log\abs{z}
 $$
-increase to $0$, while for $|z|>1$ their supremum occurs at $n=1$.
+increase to $0$, while for $\abs{z}>1$ their supremum occurs at $n=1$.
 
 But
 $$
@@ -163,17 +163,17 @@ u(z)
 =
 \min\{\operatorname{Re}z,-\operatorname{Re}z\}
 =
--|\operatorname{Re}z|.
+-\abs{\operatorname{Re}z}.
 $$
 At $z=0$,
 $$
 u(0)=0.
 $$
-On the circle $|z|=r$,
+On the circle $\abs{z}=r$,
 $$
 u(re^{i\theta})
 =
--r|\cos\theta|.
+-r\abs{\cos\theta}.
 $$
 Hence
 $$
@@ -210,7 +210,7 @@ Let
 $$
 v(z)
 \coloneqq
-\log\|A(z)\|,
+\log\norm{A(z)},
 $$
 with the convention
 $$
@@ -223,19 +223,19 @@ when $A(z)=0$. Then $v$ is upper-semicontinuous.
 
 The matrix entries of $A$ are holomorphic, hence continuous, and the operator norm is a continuous function of the matrix entries. Thus
 $$
-z\longmapsto\|A(z)\|
+z\longmapsto\norm{A(z)}
 $$
 is continuous.
 
-At points where $\|A(z_0)\|>0$, composition with the continuous logarithm gives continuity of $v$. If $A(z_0)=0$, then
+At points where $\norm{A(z_0)}>0$, composition with the continuous logarithm gives continuity of $v$. If $A(z_0)=0$, then
 $$
-\|A(z)\|\to0
+\norm{A(z)}\to0
 \qquad
 (z\to z_0),
 $$
 so
 $$
-\log\|A(z)\|\to-\infty=v(z_0).
+\log\norm{A(z)}\to-\infty=v(z_0).
 $$
 Hence $v$ is upper-semicontinuous everywhere.
 
@@ -247,9 +247,9 @@ Hence $v$ is upper-semicontinuous everywhere.
 
 Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\CC^2$ such that
 $$
-|\langle A(z_0)x,y\rangle|
+\abs{\langle A(z_0)x,y\rangle}
 =
-\|A(z_0)\|.
+\norm{A(z_0)}.
 $$
 
 
@@ -257,23 +257,23 @@ $$
 
 Because the unit sphere of $\CC^2$ is compact, there is a unit vector $x$ with
 $$
-\|A(z_0)x\|
+\norm{A(z_0)x}
 =
-\|A(z_0)\|.
+\norm{A(z_0)}.
 $$
 Set
 $$
 y
 \coloneqq
-\frac{A(z_0)x}{\|A(z_0)x\|}.
+\frac{A(z_0)x}{\norm{A(z_0)x}}.
 $$
-Then $\|y\|=1$ and
+Then $\norm{y}=1$ and
 $$
-|\langle A(z_0)x,y\rangle|
+\abs{\langle A(z_0)x,y\rangle}
 =
-\|A(z_0)x\|
+\norm{A(z_0)x}
 =
-\|A(z_0)\|.
+\norm{A(z_0)}.
 $$
 
 :::
@@ -290,7 +290,7 @@ h(z)
 $$
 is holomorphic, and
 $$
-\log|h(z)|
+\log\abs{h(z)}
 $$
 is subharmonic.
 
@@ -328,30 +328,30 @@ $$
 \begin{aligned}
 v(z_0)
 &=
-\log\|A(z_0)\|\\
+\log\norm{A(z_0)}\\
 &=
-\log|\langle A(z_0)x,y\rangle|\\
+\log\abs{\langle A(z_0)x,y\rangle}\\
 &\le
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|
+\log\abs{
 \langle A(z_0+re^{i\theta})x,y\rangle
-|\,d\theta.
+}\,d\theta.
 \end{aligned}
 $$
 For every $z$,
 $$
-|\langle A(z)x,y\rangle|
+\abs{\langle A(z)x,y\rangle}
 \le
-\|A(z)x\|\|y\|
+\norm{A(z)x}\norm{y}
 \le
-\|A(z)\|.
+\norm{A(z)}.
 $$
 Therefore the last integral is at most
 $$
 \frac1{2\pi}
 \int_0^{2\pi}
-\log\|A(z_0+re^{i\theta})\|\,d\theta.
+\log\norm{A(z_0+re^{i\theta})}\,d\theta.
 $$
 This is the required inequality.
 
@@ -364,7 +364,7 @@ This is the required inequality.
 The function
 $$
 \boxed{
-z\longmapsto\log\|A(z)\|
+z\longmapsto\log\norm{A(z)}
 }
 $$
 is subharmonic.

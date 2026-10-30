@@ -35,7 +35,7 @@ the admissible positive integers with exactly $m$ decimal digits.
 
 The number of elements of $S_m$ is
 $$
-\boxed{|S_m|=9^m}.
+\boxed{\cardinality{S_m}=9^m}.
 $$
 
 
@@ -93,13 +93,13 @@ Hence the total contribution of the $m$-digit block satisfies
 $$
 \sum_{n\in S_m}\frac1n
 \le
-\frac{|S_m|}{10^{m-1}}.
+\frac{\cardinality{S_m}}{10^{m-1}}.
 $$
 
 
 ::: pf-proof
 
-There are $|S_m|$ terms, each bounded above by the quantity in step [](#s1-3){.pf-ref}.
+There are $\cardinality{S_m}$ terms, each bounded above by the quantity in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -122,7 +122,7 @@ $$
 
 Substitute
 $$
-|S_m|=9^m
+\cardinality{S_m}=9^m
 $$
 into step [](#s1-4){.pf-ref} and factor:
 $$

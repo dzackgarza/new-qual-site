@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5IX5L
 kind: problem
-title: Unique normal subgroup of index $q$ when $|G|=p^n q$ with $p>q$
+title: Unique normal subgroup of index $q$ when $\cardinality{G}=p^n q$ with $p>q$
 classification:
   areas:
   - algebra
@@ -25,12 +25,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\left| G \right| = p^n q$ for some primes $p > q$.
+Let $\cardinality{ G } = p^n q$ for some primes $p > q$.
 Show that $G$ contains a unique normal subgroup of index $q$.
 :::
 
 ::: {.solution}
-Let $P$ be a Sylow $p$-subgroup of $G$. Then $|P|=p^n$, so $[G:P]=q$.
+Let $P$ be a Sylow $p$-subgroup of $G$. Then $\cardinality{P}=p^n$, so $[G:P]=q$.
 
 ::: pf
 
@@ -77,7 +77,7 @@ Any subgroup $H\le G$ of index $q$ equals $P$.
 
 If $[G:H]=q$, then
 $$
-|H|=\frac{|G|}{q}=p^n.
+\cardinality{H}=\frac{\cardinality{G}}{q}=p^n.
 $$
 Thus $H$ is a Sylow $p$-subgroup. By step [](#s1){.pf-ref} the Sylow $p$-subgroup is unique, so
 $H=P$.

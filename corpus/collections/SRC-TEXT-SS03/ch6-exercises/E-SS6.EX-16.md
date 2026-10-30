@@ -38,7 +38,7 @@ $$
 {\frac {x}{e ^ {x} - 1}} = \sum_ {m = 0} ^ {\infty} {\frac {B _ {m}}{m !}} x ^ {m}.
 $$
 
-Then $B _ { 0 } = 1$ , and since $z / ( e ^ { z } - 1 )$ is holomorphic for $| z | < 2 \pi$ , we must have lim s $\begin{array} { r } { \limsup _ { m \to \infty } | B _ { m } / m ! | ^ { 1 / m } = 1 / 2 \pi . ] } \end{array}$
+Then $B _ { 0 } = 1$ , and since $z / ( e ^ { z } - 1 )$ is holomorphic for $\abs{ z } < 2 \pi$ , we must have lim s $\begin{array} { r } { \limsup _ { m \to \infty } \abs{ B _ { m } / m ! } ^ { 1 / m } = 1 / 2 \pi . ] } \end{array}$
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ The second integral defines an entire function of $s$, because on every compact 
 Write
 $$
 h(x)=\frac{x}{e^x-1}=\sum_{m=0}^\infty \frac{B_m}{m!}x^m,
-\qquad |x|<2\pi.
+\qquad \abs{x}<2\pi.
 $$
 Fix $N\ge0$. Then near $0$,
 $$

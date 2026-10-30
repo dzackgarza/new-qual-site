@@ -115,13 +115,13 @@ With finitely many degree-one generators $x_0,\ldots,x_r$, the resulting project
 
 ::: pf-proof
 
-For a multiindex $\alpha=(\alpha_0,\ldots,\alpha_r)\in\NN^{r+1}$, put $|\alpha|=\sum_i\alpha_i$ and $x^\alpha=x_0^{\alpha_0}\cdots x_r^{\alpha_r}$.
+For a multiindex $\alpha=(\alpha_0,\ldots,\alpha_r)\in\NN^{r+1}$, put $\multiindexsize{\alpha}=\sum_i\alpha_i$ and $x^\alpha=x_0^{\alpha_0}\cdots x_r^{\alpha_r}$.
 Let $e_i$ be the multiindex whose $i$th entry is one and whose other entries are zero.
-The monomials $x^\alpha$ with $|\alpha|=d$ span $S_d$ over $A$.
+The monomials $x^\alpha$ with $\multiindexsize{\alpha}=d$ span $S_d$ over $A$.
 By step [](#s1){.pf-ref}, they generate $R$ as an $A$-algebra.
 Hence, with one degree-one variable $z_\alpha$ for each such monomial, there is a graded surjection
 $$
-A[z_\alpha:|\alpha|=d]\longrightarrow R,\qquad z_\alpha\longmapsto x^\alpha.
+A[z_\alpha:\multiindexsize{\alpha}=d]\longrightarrow R,\qquad z_\alpha\longmapsto x^\alpha.
 $$
 It induces a closed immersion $Y\hookrightarrow\PP_A^N$, where $N=\binom{r+d}{d}-1$ [@Har10a, Exercise II.3.12].
 Under step [](#s3){.pf-ref} its coordinate sections pull back to the monomials $x^\alpha$ in $\Gamma(X,\OO_X(d))$.

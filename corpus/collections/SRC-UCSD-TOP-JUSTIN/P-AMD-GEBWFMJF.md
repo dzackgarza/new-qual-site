@@ -71,7 +71,7 @@ For each $i \in \{1, \dots, n\}$, define the $i$-th coordinate function $f_i \co
 ::: pf-step
 $f_i$ is continuous: Let $u_k \to u$ in $S^n$.
 The characteristic functions $\chi_{A_i \cap H^+(u_k)}$ converge almost everywhere to $\chi_{A_i \cap H^+(u)}$ (except possibly on the hyperplane $H(u)$, which is a null set).
-Since $|\chi_{A_i \cap H^+(u_k)}| \le \chi_{A_i}$ and $\mu(A_i) < \infty$, the Dominated Convergence Theorem implies: $$\lim_{k \to \infty} f_i(u_k) = \lim_{k \to \infty} \int_{\RR^n} \chi_{A_i \cap H^+(u_k)} \, d\mu = \int_{\RR^n} \chi_{A_i \cap H^+(u)} \, d\mu = f_i(u).$$
+Since $\abs{\chi_{A_i \cap H^+(u_k)}} \le \chi_{A_i}$ and $\mu(A_i) < \infty$, the Dominated Convergence Theorem implies: $$\lim_{k \to \infty} f_i(u_k) = \lim_{k \to \infty} \int_{\RR^n} \chi_{A_i \cap H^+(u_k)} \, d\mu = \int_{\RR^n} \chi_{A_i \cap H^+(u)} \, d\mu = f_i(u).$$
 :::
 
 ::: pf-step

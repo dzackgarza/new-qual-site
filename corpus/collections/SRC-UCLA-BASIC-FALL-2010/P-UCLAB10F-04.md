@@ -20,7 +20,7 @@ audit:
 (a) Let $f$ be a real-valued continuous function on $[0,1]\times[0,1]$ and let $\varepsilon>0$.
 Show that there exist real-valued continuous functions $g_1,\ldots,g_n$ and $h_1,\ldots,h_n$ on $[0,1]$, for some finite $n\ge1$, such that
 $$
-\left|f(x,y)-\sum_{i=1}^n g_i(x)h_i(y)\right|\le\varepsilon,
+\abs{f(x,y)-\sum_{i=1}^n g_i(x)h_i(y)}\le\varepsilon,
 \qquad 0\le x,y\le1.
 $$
 
@@ -66,7 +66,7 @@ P(x,y)=\sum_{(r,s)\in F}c_{rs}x^ry^s
 $$
 with $F\subseteq\NN^2$ finite such that
 $$
-\|f-P\|_\infty\le\varepsilon.
+\norm{f-P}_\infty\le\varepsilon.
 $$
 
 
@@ -117,9 +117,9 @@ $$
 Therefore for every continuous $f$ and every $\varepsilon>0$ there are finitely many continuous $g_i,h_i$ such that
 $$
 \boxed{
-\left|
+\abs{
 f(x,y)-\sum_{i=1}^n g_i(x)h_i(y)
-\right|
+}
 \le\varepsilon
 }
 $$
@@ -151,16 +151,16 @@ f(x,y)=-1.
 $$
 Suppose an approximation of the required special form existed with error less than $1$, say
 $$
-\left|
+\abs{
 -1-\sum_{i=1}^n g_i(x)g_i(y)
-\right|<1
+}<1
 $$
 for all $x,y\in[0,1]$.
 Setting $y=x$ gives
 $$
-\left|
+\abs{
 -1-\sum_{i=1}^n g_i(x)^2
-\right|<1.
+}<1.
 $$
 But
 $$
@@ -172,9 +172,9 @@ $$
 $$
 and therefore
 $$
-\left|
+\abs{
 -1-\sum_{i=1}^n g_i(x)^2
-\right|\ge1,
+}\ge1,
 $$
 a contradiction.
 Thus for $\varepsilon<1$, the symmetric function $f\equiv-1$ cannot be approximated in the requested form.

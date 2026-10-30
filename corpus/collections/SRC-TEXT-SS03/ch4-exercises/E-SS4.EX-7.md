@@ -61,7 +61,7 @@ $$
 For $\xi>0$, close in the lower half-plane. The contour is clockwise, and the pole at $-\tau$ has order $k$. Its residue is
 $$
 \frac1{(k-1)!}
-\left.\frac{d^{k-1}}{dz^{k-1}}e^{-2\pi iz\xi}\right|_{z=-\tau}
+\evaluated{\frac{d^{k-1}}{dz^{k-1}}e^{-2\pi iz\xi}}_{z=-\tau}
 =\frac{(-2\pi i\xi)^{k-1}}{(k-1)!}e^{2\pi i\tau\xi}.
 $$
 Thus
@@ -82,7 +82,7 @@ $$
 $$
 This proves (a).
 
-For $k=2$, let $q=e^{2\pi i\tau}$; since $\Im\tau>0$, $|q|<1$. Then
+For $k=2$, let $q=e^{2\pi i\tau}$; since $\Im\tau>0$, $\abs{q}<1$. Then
 $$
 \sum_{m=1}^{\infty}m q^m=\frac{q}{(1-q)^2},
 $$

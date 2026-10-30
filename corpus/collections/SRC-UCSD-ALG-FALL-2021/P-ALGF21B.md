@@ -99,12 +99,12 @@ Every group of order $2^n\cdot11$ with $n<10$ is solvable.
 Let $Q\trianglelefteq G$ be the unique Sylow $11$-subgroup from step [](#s2){.pf-ref}.
 Then
 $$
-|Q|=11,
+\cardinality{Q}=11,
 $$
 so $Q$ is cyclic and hence solvable.
 Also
 $$
-|G/Q|=2^n,
+\cardinality{G/Q}=2^n,
 $$
 so $G/Q$ is a finite $2$-group and therefore solvable.
 An extension of a solvable group by a solvable group is solvable; hence $G$ is solvable.
@@ -165,14 +165,14 @@ for some $0\le r\le8$.
 
 ::: pf-proof
 
-By step [](#s5){.pf-ref}, $K$ is a $2$-group, so $|K|$ is a power of $2$.
+By step [](#s5){.pf-ref}, $K$ is a $2$-group, so $\cardinality{K}$ is a power of $2$.
 The first isomorphism theorem gives
 $$
-|\varphi(G)|=[G:K]=\frac{2^n\cdot11}{|K|}.
+\cardinality{\varphi(G)}=[G:K]=\frac{2^n\cdot11}{\cardinality{K}}.
 $$
 Thus the factor $11$ remains, and
 $$
-|\varphi(G)|=2^r\cdot11
+\cardinality{\varphi(G)}=2^r\cdot11
 $$
 for some $r\ge0$.
 
@@ -199,7 +199,7 @@ The image $\varphi(G)$ is solvable.
 
 By step [](#s6){.pf-ref},
 $$
-|\varphi(G)|=2^r\cdot11
+\cardinality{\varphi(G)}=2^r\cdot11
 $$
 with $r\le8<10$.
 Therefore step [](#s3){.pf-ref} applies to $\varphi(G)$, proving that it is solvable.

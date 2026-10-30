@@ -94,7 +94,7 @@ universal property of presentations.
 
 ::: pf-step
 Every element $(u, v) \in G$ satisfies $(u, v) = (u, 0)(0, v) = \bar{x}^u \bar{y}^v = \Phi(x^u y^v)$, so $\Phi$ is surjective.
-Thus $|\Gamma| \ge |G| = mn$.
+Thus $\cardinality{\Gamma} \ge \cardinality{G} = mn$.
 
 ::: pf-proof
 generation of $G$ by $\bar{x}$ and $\bar{y}$.
@@ -135,7 +135,7 @@ moving all powers of $x$ to the left of powers of $y$.
 :::
 
 ::: pf-step
-Therefore $|\Gamma| \le mn$.
+Therefore $\cardinality{\Gamma} \le mn$.
 
 ::: pf-proof
 at most $mn$ distinct normal form words.
@@ -148,7 +148,7 @@ at most $mn$ distinct normal form words.
 :::
 
 ::: pf-qed
-Bijectivity and Conclusion: Since $|\Gamma| \le mn = |G|$ and $\Phi: \Gamma \to G$ is surjective, $\Phi$ is an isomorphism.
+Bijectivity and Conclusion: Since $\cardinality{\Gamma} \le mn = \cardinality{G}$ and $\Phi: \Gamma \to G$ is surjective, $\Phi$ is an isomorphism.
 Thus $G \cong \langle x, y \mid x^n = 1, \, y^m = 1, \, y x y^{-1} = x^k \rangle$.
 
 Steps [](#surjective-hom){.pf-ref} and [](#upper-bound){.pf-ref}.

@@ -53,7 +53,7 @@ $$
 ::: pf-proof
 At $z=n\pi$, the function $\sin z$ has a simple zero and
 $$
-(\sin z)'\big|_{z=n\pi}
+(\sin z)'\evalfrom_{z=n\pi}
 =
 \cos(n\pi)
 \neq

@@ -26,7 +26,7 @@ Classify all groups of order 10.
 :::
 
 ::: {.solution}
-Let $|G|=10=2\cdot5$. Sylow gives
+Let $\cardinality{G}=10=2\cdot5$. Sylow gives
 $$
 n_5\mid2,\qquad n_5\equiv1\pmod5,
 $$

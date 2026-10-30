@@ -41,7 +41,7 @@ n_q\equiv1\pmod q
 n_q\mid p.
 $$
 Since $p<q$, the only divisor of $p$ congruent to $1$ modulo $q$ is $1$. Hence $n_q=1$.
-Thus the Sylow $q$-subgroup $Q$ is normal, and because $|Q|=q$, we have $Q\cong C_q$.
+Thus the Sylow $q$-subgroup $Q$ is normal, and because $\cardinality{Q}=q$, we have $Q\cong C_q$.
 :::
 
 :::
@@ -59,7 +59,7 @@ $$
 ::: pf-proof
 A Sylow $p$-subgroup $P$ has order $p$, so $P\cong C_p$. Since $Q\trianglelefteq G$, $Q\cap P=1$, and
 $$
-|QP|=\frac{|Q||P|}{|Q\cap P|}=pq=|G|,
+\cardinality{QP}=\frac{\cardinality{Q}\cardinality{P}}{\cardinality{Q\cap P}}=pq=\cardinality{G},
 $$
 we have $G=QP$. Thus $G$ is the semidirect product of $Q$ by $P$, with action given by conjugation.
 :::

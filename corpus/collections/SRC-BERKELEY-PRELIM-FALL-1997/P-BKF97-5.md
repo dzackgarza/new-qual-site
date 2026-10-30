@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let
 $$
-\DD=\{z\in\CC:|z|<1\}.
+\DD=\{z\in\CC:\abs{z}<1\}.
 $$
 Suppose $f:\DD\to\DD$ is analytic and there exist distinct $a,b\in\DD$ with
 $$

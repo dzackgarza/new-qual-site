@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let f and g be non-zero analytic functions on a region Ω. Assume $| f ( z ) | = | g ( z ) |$ for all z in Ω. Show that $f ( z ) = e ^ { i \theta } g ( z )$ in Ω for some $0 \leq \theta < 2 \pi$ .
+Let f and g be non-zero analytic functions on a region Ω. Assume $\abs{ f ( z ) } = \abs{ g ( z ) }$ for all z in Ω. Show that $f ( z ) = e ^ { i \theta } g ( z )$ in Ω for some $0 \leq \theta < 2 \pi$ .
 :::
 
 ::: {.solution}

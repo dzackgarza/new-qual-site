@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let $u \in L^2(\RR^d)$ and let us say that $u \in H^{1/2}(\RR^d)$ (a Sobolev space) if
 $$
-\left( 1 + |\xi|^{1/2} \right) \hat{u}(\xi) \in L^2(\RR^d).
+\left( 1 + \norm{\xi}^{1/2} \right) \hat{u}(\xi) \in L^2(\RR^d).
 $$
 Here $\hat{u}$ is the Fourier transform of $u$. Show that $u \in H^{1/2}(\RR^d)$ if and only if
 $$
-\iint \frac{|u(x+y) - u(x)|^2}{|y|^{d+1}}\,dx\,dy < \infty.
+\iint \frac{\abs{u(x+y) - u(x)}^2}{\norm{y}^{d+1}}\,dx\,dy < \infty.
 $$
 :::
 
@@ -38,7 +38,7 @@ $$
 [u]_{1/2}^2
 =
 \iint_{\RR^d\times\RR^d}
-\frac{|u(x+y)-u(x)|^2}{|y|^{d+1}}
+\frac{\abs{u(x+y)-u(x)}^2}{\norm{y}^{d+1}}
 \,dx\,dy.
 $$
 
@@ -80,11 +80,11 @@ Hence, by Plancherel,
 $$
 \boxed{
 \int_{\RR^d}
-|u(x+y)-u(x)|^2\,dx
+\abs{u(x+y)-u(x)}^2\,dx
 =
 \int_{\RR^d}
-|e^{i\xi\cdot y}-1|^2
-|\widehat u(\xi)|^2\,d\xi}.
+\abs{e^{i\xi\cdot y}-1}^2
+\abs{\widehat u(\xi)}^2\,d\xi}.
 $$
 
 
@@ -105,11 +105,11 @@ $$
 \int_{\RR^d}
 \int_{\RR^d}
 \frac{
-|e^{i\xi\cdot y}-1|^2
+\abs{e^{i\xi\cdot y}-1}^2
 }{
-|y|^{d+1}
+\norm{y}^{d+1}
 }
-|\widehat u(\xi)|^2
+\abs{\widehat u(\xi)}^2
 \,d\xi\,dy.
 $$
 
@@ -130,13 +130,13 @@ $$
 [u]_{1/2}^2
 =
 \int_{\RR^d}
-|\widehat u(\xi)|^2
+\abs{\widehat u(\xi)}^2
 \left[
 \int_{\RR^d}
 \frac{
-|e^{i\xi\cdot y}-1|^2
+\abs{e^{i\xi\cdot y}-1}^2
 }{
-|y|^{d+1}
+\norm{y}^{d+1}
 }
 \,dy
 \right]
@@ -178,7 +178,7 @@ By rotational invariance,
 $$
 I(\xi)
 =
-I(|\xi|e_1),
+I(\norm{\xi}e_1),
 $$
 where $e_1=(1,0,\dots,0)$.
 
@@ -187,7 +187,7 @@ where $e_1=(1,0,\dots,0)$.
 
 Choose an orthogonal map $R$ with
 $$
-R\xi=|\xi|e_1.
+R\xi=\norm{\xi}e_1.
 $$
 In the integral defining $I(\xi)$, make the change of variables
 $$
@@ -199,7 +199,7 @@ $$
 =
 (R\xi)\cdot z
 =
-|\xi|z_1.
+\norm{\xi}z_1.
 $$
 
 :::
@@ -210,19 +210,19 @@ $$
 
 Make the scaling change of variables
 $$
-z=\frac{w}{|\xi|}.
+z=\frac{w}{\norm{\xi}}.
 $$
 Then
 $$
 \boxed{
 I(\xi)
 =
-|\xi|
+\norm{\xi}
 \int_{\RR^d}
 \frac{
-|e^{iw_1}-1|^2
+\abs{e^{iw_1}-1}^2
 }{
-|w|^{d+1}
+\norm{w}^{d+1}
 }
 \,dw}.
 $$
@@ -232,24 +232,24 @@ $$
 
 Under
 $$
-z=w/|\xi|,
+z=w/\norm{\xi},
 $$
 one has
 $$
-dz=|\xi|^{-d}dw,
+dz=\norm{\xi}^{-d}dw,
 $$
 $$
-|z|^{-(d+1)}
+\norm{z}^{-(d+1)}
 =
-|\xi|^{d+1}|w|^{-(d+1)},
+\norm{\xi}^{d+1}\norm{w}^{-(d+1)},
 $$
 and
 $$
-e^{i|\xi|z_1}
+e^{i\norm{\xi}z_1}
 =
 e^{iw_1}.
 $$
-Multiplying the scaling factors gives one remaining factor $|\xi|$.
+Multiplying the scaling factors gives one remaining factor $\norm{\xi}$.
 
 :::
 
@@ -264,9 +264,9 @@ C_d
 =
 \int_{\RR^d}
 \frac{
-|e^{iw_1}-1|^2
+\abs{e^{iw_1}-1}^2
 }{
-|w|^{d+1}
+\norm{w}^{d+1}
 }
 \,dw}.
 $$
@@ -289,28 +289,28 @@ The constant $C_d$ is finite.
 
 Split the integral into
 $$
-|w|\le1
+\norm{w}\le1
 \qquad\text{and}\qquad
-|w|>1.
+\norm{w}>1.
 $$
 
-For $|w|\le1$,
+For $\norm{w}\le1$,
 $$
-|e^{iw_1}-1|
+\abs{e^{iw_1}-1}
 \le
-|w_1|
+\abs{w_1}
 \le
-|w|,
+\norm{w},
 $$
 so
 $$
-\frac{|e^{iw_1}-1|^2}{|w|^{d+1}}
+\frac{\abs{e^{iw_1}-1}^2}{\norm{w}^{d+1}}
 \le
-|w|^{1-d}.
+\norm{w}^{1-d}.
 $$
 In polar coordinates,
 $$
-\int_{|w|\le1}|w|^{1-d}\,dw
+\int_{\norm{w}\le1}\norm{w}^{1-d}\,dw
 =
 C
 \int_0^1 r^{1-d}r^{d-1}\,dr
@@ -321,19 +321,19 @@ C
 \infty.
 $$
 
-For $|w|>1$,
+For $\norm{w}>1$,
 $$
-|e^{iw_1}-1|\le2,
+\abs{e^{iw_1}-1}\le2,
 $$
 so
 $$
-\frac{|e^{iw_1}-1|^2}{|w|^{d+1}}
+\frac{\abs{e^{iw_1}-1}^2}{\norm{w}^{d+1}}
 \le
-4|w|^{-d-1}.
+4\norm{w}^{-d-1}.
 $$
 Again in polar coordinates,
 $$
-\int_{|w|>1}|w|^{-d-1}\,dw
+\int_{\norm{w}>1}\norm{w}^{-d-1}\,dw
 =
 C
 \int_1^\infty r^{-2}\,dr
@@ -367,7 +367,7 @@ Such a set has positive Lebesgue measure.
 Therefore, for every $\xi\in\RR^d$,
 $$
 \boxed{
-I(\xi)=C_d|\xi|}.
+I(\xi)=C_d\norm{\xi}}.
 $$
 
 
@@ -388,15 +388,15 @@ $$
 =
 C_d
 \int_{\RR^d}
-|\xi|
-\,|\widehat u(\xi)|^2
+\norm{\xi}
+\,\abs{\widehat u(\xi)}^2
 \,d\xi}.
 $$
 
 
 ::: pf-proof
 
-Replace the inner $y$-integral in step [](#s1-4){.pf-ref} by $C_d|\xi|$.
+Replace the inner $y$-integral in step [](#s1-4){.pf-ref} by $C_d\norm{\xi}$.
 
 :::
 
@@ -410,8 +410,8 @@ $$
 [u]_{1/2}<\infty
 \iff
 \int_{\RR^d}
-|\xi|
-\,|\widehat u(\xi)|^2
+\norm{\xi}
+\,\abs{\widehat u(\xi)}^2
 \,d\xi
 <
 \infty}.
@@ -448,9 +448,9 @@ Apply Plancherel's theorem.
 One has the pointwise comparability
 $$
 \boxed{
-(1+|\xi|^{1/2})^2
+(1+\norm{\xi}^{1/2})^2
 \asymp
-1+|\xi|}.
+1+\norm{\xi}}.
 $$
 
 
@@ -480,7 +480,7 @@ $$
 \le
 2(1+t).
 $$
-Set $t=|\xi|$.
+Set $t=\norm{\xi}$.
 
 :::
 
@@ -490,13 +490,13 @@ Set $t=|\xi|$.
 
 Therefore
 $$
-(1+|\xi|^{1/2})\widehat u(\xi)\in L^2
+(1+\norm{\xi}^{1/2})\widehat u(\xi)\in L^2
 $$
 if and only if
 $$
 \int_{\RR^d}
-(1+|\xi|)
-|\widehat u(\xi)|^2\,d\xi
+(1+\norm{\xi})
+\abs{\widehat u(\xi)}^2\,d\xi
 <
 \infty.
 $$
@@ -516,8 +516,8 @@ By step [](#s1-14){.pf-ref}, the condition in step [](#s1-16){.pf-ref} is equiva
 $$
 \boxed{
 \int_{\RR^d}
-|\xi|
-|\widehat u(\xi)|^2\,d\xi
+\norm{\xi}
+\abs{\widehat u(\xi)}^2\,d\xi
 <
 \infty}.
 $$
@@ -527,7 +527,7 @@ $$
 
 The term
 $$
-\int|\widehat u(\xi)|^2\,d\xi
+\int\abs{\widehat u(\xi)}^2\,d\xi
 $$
 is already finite because $u\in L^2$.
 
@@ -543,7 +543,7 @@ $$
 u\in H^{1/2}(\RR^d)
 \iff
 \iint_{\RR^d\times\RR^d}
-\frac{|u(x+y)-u(x)|^2}{|y|^{d+1}}
+\frac{\abs{u(x+y)-u(x)}^2}{\norm{y}^{d+1}}
 \,dx\,dy
 <
 \infty}.
@@ -554,7 +554,7 @@ $$
 
 Both conditions are equivalent to finiteness of
 $$
-\int|\xi||\widehat u(\xi)|^2\,d\xi.
+\int\norm{\xi}\abs{\widehat u(\xi)}^2\,d\xi.
 $$
 
 :::

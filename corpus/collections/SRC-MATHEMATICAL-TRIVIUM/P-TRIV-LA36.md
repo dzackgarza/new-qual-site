@@ -33,7 +33,7 @@ is therefore taken along $N\in\NN$.
 
 ::: {.solution}
 
-Fix any submultiplicative matrix norm $\|\cdot\|$.
+Fix any submultiplicative matrix norm $\norm{\cdot}$.
 
 ::: pf
 
@@ -66,14 +66,14 @@ I+\frac AN
 $$
 Using submultiplicativity,
 $$
-\left\|
+\norm{
 \sum_{k=2}^{\infty}
 \frac{A^k}{k!N^k}
-\right\|
+}
 \leq
 \frac1{N^2}
 \sum_{k=2}^{\infty}
-\frac{\|A\|^k}{k!},
+\frac{\norm{A}^k}{k!},
 $$
 which is $O(N^{-2})$. The argument for $B$ is identical.
 
@@ -127,7 +127,7 @@ O(N^{-2})
 $$
 and
 $$
-\|X_N\|\longrightarrow0.
+\norm{X_N}\longrightarrow0.
 $$
 
 
@@ -147,13 +147,13 @@ $$
 =
 X_N
 +
-O(\|X_N\|^2).
+O(\norm{X_N}^2).
 $$
 
 
 ::: pf-proof
 
-When $\|X_N\|<1$, define
+When $\norm{X_N}<1$, define
 $$
 \log(I+X_N)
 =
@@ -161,7 +161,7 @@ $$
 \frac{(-1)^{k+1}}{k}X_N^k.
 $$
 The terms from $k\geq2$ have norm bounded by a constant multiple of
-$\|X_N\|^2$ for $N$ large enough.
+$\norm{X_N}^2$ for $N$ large enough.
 
 :::
 
@@ -184,7 +184,7 @@ $$
 \begin{aligned}
 \log\left(e^{A/N}e^{B/N}\right)
 &=
-X_N+O(\|X_N\|^2)\\
+X_N+O(\norm{X_N}^2)\\
 &=
 \frac{A+B}{N}+O(N^{-2}).
 \end{aligned}

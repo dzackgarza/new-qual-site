@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-3B
 kind: problem
-title: The bound $\lvert\det(A+B)\rvert\le2^n$ for unitary matrices
+title: The bound $\abs{\det(A+B)}\le2^n$ for unitary matrices
 classification:
   areas:
   - prelim
@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let A and B be $n \times n$ complex unitary matrices.
-Prove that $| \operatorname* { d e t } ( A + B ) | \leq 2 ^ { n }$
+Prove that $\abs{ \operatorname* { d e t } ( A + B ) } \leq 2 ^ { n }$
 :::
 
 
@@ -59,28 +59,28 @@ The factorization $A+B=A(I+A^{-1}B)=A(I+C)$ is immediate.
 :::
 
 ::: {.pf-step #det-A-modulus-one}
-One has $|\det A|=1$.
+One has $\abs{\det A}=1$.
 
 ::: pf-proof
 From $A^*A=I$, taking determinants gives
 $$
 \overline{\det A}\,\det A=1.
 $$
-Hence $|\det A|^2=1$, so $|\det A|=1$.
+Hence $\abs{\det A}^2=1$, so $\abs{\det A}=1$.
 :::
 
 :::
 
 ::: {.pf-step #eigenvalues-modulus-one}
-If $\lambda_1,\dots,\lambda_n$ are the eigenvalues of $C$, counted with algebraic multiplicity, then $|\lambda_j|=1$ for every $j$.
+If $\lambda_1,\dots,\lambda_n$ are the eigenvalues of $C$, counted with algebraic multiplicity, then $\abs{\lambda_j}=1$ for every $j$.
 
 ::: pf-proof
 A unitary matrix is normal, hence unitarily diagonalizable.
 Equivalently, if $Cv=\lambda v$ with $v\ne0$, then
 $$
-\|v\|=\|Cv\|=\|\lambda v\|=|\lambda|\,\|v\|,
+\norm{v}=\norm{Cv}=\norm{\lambda v}=\abs{\lambda}\,\norm{v},
 $$
-so $|\lambda|=1$.
+so $\abs{\lambda}=1$.
 :::
 
 :::
@@ -88,25 +88,25 @@ so $|\lambda|=1$.
 ::: {.pf-step #final-bound}
 Therefore
 $$
-|\det(A+B)|\le2^n.
+\abs{\det(A+B)}\le2^n.
 $$
 
 ::: pf-proof
 By steps [](#C-unitary-factorization){.pf-ref} and [](#det-A-modulus-one){.pf-ref},
 $$
-|\det(A+B)|=|\det A|\,|\det(I+C)|=|\det(I+C)|.
+\abs{\det(A+B)}=\abs{\det A}\,\abs{\det(I+C)}=\abs{\det(I+C)}.
 $$
 The eigenvalues of $I+C$ are $1+\lambda_1,\dots,1+\lambda_n$, so
 $$
-|\det(I+C)|=\prod_{j=1}^n|1+\lambda_j|.
+\abs{\det(I+C)}=\prod_{j=1}^n\abs{1+\lambda_j}.
 $$
 By step [](#eigenvalues-modulus-one){.pf-ref} and the triangle inequality,
 $$
-|1+\lambda_j|\le1+|\lambda_j|=2.
+\abs{1+\lambda_j}\le1+\abs{\lambda_j}=2.
 $$
 Thus
 $$
-\boxed{|\det(A+B)|\le2^n}.
+\boxed{\abs{\det(A+B)}\le2^n}.
 $$
 :::
 

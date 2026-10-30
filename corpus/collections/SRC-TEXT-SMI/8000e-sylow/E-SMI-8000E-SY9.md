@@ -60,7 +60,7 @@ second may be any vector outside the span of the first, giving $8-2=6$
 choices. The third may be any vector outside the plane spanned by the first
 two, giving $8-4=4$ choices. Thus
 $$
-\boxed{|G|=(8-1)(8-2)(8-4)=7\cdot6\cdot4=168=2^3\cdot3\cdot7.}
+\boxed{\cardinality{G}=(8-1)(8-2)(8-4)=7\cdot6\cdot4=168=2^3\cdot3\cdot7.}
 $$
 
 :::
@@ -262,9 +262,9 @@ X=
 $$
 Hence
 $$
-|C_G(A_2)|=8,
+\cardinality{C_G(A_2)}=8,
 \qquad
-|A_2^G|=\frac{168}{8}=21.
+\cardinality{A_2^G}=\frac{168}{8}=21.
 $$
 
 The matrices $A_3,A_4,A_{7,1},A_{7,2}$ are cyclic: their minimal polynomial
@@ -310,7 +310,7 @@ Consequently the conjugacy-class data are
 $$
 \boxed{
 \begin{array}{c|c|c|c}
-\text{order}&\text{characteristic polynomial}&|C_G(A)|&|A^G|\\ \hline
+\text{order}&\text{characteristic polynomial}&\cardinality{C_G(A)}&\cardinality{A^G}\\ \hline
 1&(x+1)^3&168&1\\
 2&(x+1)^3&8&21\\
 3&x^3+1&3&56\\
@@ -390,7 +390,7 @@ U=
 \end{pmatrix}:a,b,c\in\mathbf F_2
 \right\}.
 $$
-It has order $8$, which is the full $2$-part of $|G|$, so $U$ is Sylow.
+It has order $8$, which is the full $2$-part of $\cardinality{G}$, so $U$ is Sylow.
 For an element $I+N$ of $U$,
 $$
 (I+N)^2=I+N^2,
@@ -436,7 +436,7 @@ and must contain the identity. The nonidentity class sizes are
 $$
 21,42,56,24,24.
 $$
-If $N$ is nontrivial and proper, then $|N|$ is a proper divisor of $168$ and
+If $N$ is nontrivial and proper, then $\cardinality{N}$ is a proper divisor of $168$ and
 is at least $1+21=22$. The only proper divisors of $168$ which are at least
 $22$ are
 $$

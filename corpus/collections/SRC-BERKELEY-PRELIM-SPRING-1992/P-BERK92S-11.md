@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-11
 kind: problem
-title: Laurent series for a logarithm branch on $1<|z|<2$
+title: Laurent series for a logarithm branch on $1<\abs{z}<2$
 classification:
   areas:
   - prelim
@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Find a Laurent series converging in the annulus
 $$
-1<|z|<2
+1<\abs{z}<2
 $$
 to a branch of
 $$

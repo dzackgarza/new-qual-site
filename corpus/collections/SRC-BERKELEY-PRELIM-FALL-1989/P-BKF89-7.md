@@ -13,7 +13,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ and $B$ be diagonalizable linear transformations of $\RR^n$ satisfying $AB=BA$. Let $E$ be an eigenspace of $A$. Prove that the restriction $B|_E$ is diagonalizable.
+Let $A$ and $B$ be diagonalizable linear transformations of $\RR^n$ satisfying $AB=BA$. Let $E$ be an eigenspace of $A$. Prove that the restriction $B\restrict_E$ is diagonalizable.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ Thus $Bv\in E$, so $B(E)\subseteq E$.
 
 ::: {.pf-step #s2}
 
-The minimal polynomial of $B|_E$ divides the minimal polynomial of $B$.
+The minimal polynomial of $B\restrict_E$ divides the minimal polynomial of $B$.
 
 ::: pf-proof
 
@@ -56,11 +56,11 @@ m_B(B)=0
 $$
 on $\RR^n$, its restriction to the $B$-invariant subspace $E$ from step [](#s1){.pf-ref} is also zero:
 $$
-m_B(B|_E)=0.
+m_B(B\restrict_E)=0.
 $$
 By the defining divisibility property of the minimal polynomial,
 $$
-m_{B|_E}(t)\mid m_B(t).
+m_{B\restrict_E}(t)\mid m_B(t).
 $$
 
 :::
@@ -69,7 +69,7 @@ $$
 
 ::: {.pf-step #s3}
 
-The polynomial $m_{B|_E}$ splits over $\RR$ into distinct linear factors.
+The polynomial $m_{B\restrict_E}$ splits over $\RR$ into distinct linear factors.
 
 ::: pf-proof
 
@@ -79,7 +79,7 @@ m_B(t)
 =
 \prod_{j=1}^s(t-\mu_j)
 $$
-with the $\mu_j$ distinct. By step [](#s2){.pf-ref}, $m_{B|_E}$ divides this polynomial, so it too is a product of distinct linear factors over $\RR$.
+with the $\mu_j$ distinct. By step [](#s2){.pf-ref}, $m_{B\restrict_E}$ divides this polynomial, so it too is a product of distinct linear factors over $\RR$.
 
 :::
 
@@ -89,12 +89,12 @@ with the $\mu_j$ distinct. By step [](#s2){.pf-ref}, $m_{B|_E}$ divides this pol
 
 Therefore
 $$
-\boxed{B|_E\text{ is diagonalizable}}.
+\boxed{B\restrict_E\text{ is diagonalizable}}.
 $$
 
 ::: pf-proof
 
-A linear transformation over $\RR$ is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Step [](#s3){.pf-ref} verifies this criterion for $B|_E$.
+A linear transformation over $\RR$ is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Step [](#s3){.pf-ref} verifies this criterion for $B\restrict_E$.
 
 :::
 

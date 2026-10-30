@@ -18,12 +18,12 @@ audit:
 
 ::: {.problem}
 Let $\mathfrak{h}^+ = \{z : \operatorname{Im} z > 0\}$ denote the upper-half plane.
-Let $\mathcal{F}$ be the family of holomorphic functions $f: \mathfrak{h}^+ \to \CC$ such that $f(i) = 0$ and $|f(z)| < 1$ for all $z \in \mathfrak{h}^+$.
-Find the maximum value of $|f(2i)|$ for $f \in \mathcal{F}$.
+Let $\mathcal{F}$ be the family of holomorphic functions $f: \mathfrak{h}^+ \to \CC$ such that $f(i) = 0$ and $\abs{f(z)} < 1$ for all $z \in \mathfrak{h}^+$.
+Find the maximum value of $\abs{f(2i)}$ for $f \in \mathcal{F}$.
 :::
 
 ::: {.solution}
-**Goal.** Find $\max_{f \in \mathcal F} |f(2i)|$.
+**Goal.** Find $\max_{f \in \mathcal F} \abs{f(2i)}$.
 
 ::: pf
 
@@ -65,7 +65,7 @@ $g$ is a holomorphic self-map of the disk with $g(0) = 0$.
 
 ::: {.pf-step #s4}
 
-By the Schwarz lemma, $|g(w)| \le |w|$ for all $w \in \DD$.
+By the Schwarz lemma, $\abs{g(w)} \le \abs{w}$ for all $w \in \DD$.
 
 ::: pf-proof
 
@@ -77,7 +77,7 @@ Schwarz lemma applied to $g$.
 
 ::: pf-step
 
-Hence $|f(2i)| = |g(\phi(2i))| = |g(1/3)| \le 1/3$.
+Hence $\abs{f(2i)} = \abs{g(\phi(2i))} = \abs{g(1/3)} \le 1/3$.
 
 ::: pf-proof
 
@@ -89,11 +89,11 @@ Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
 
 ::: pf-step
 
-The bound is attained by $g(w) = w$ (i.e. $f = \phi$), giving $|f(2i)| = 1/3$.
+The bound is attained by $g(w) = w$ (i.e. $f = \phi$), giving $\abs{f(2i)} = 1/3$.
 
 ::: pf-proof
 
-$g(w) = w$ satisfies $g(0) = 0$ and $|g(w)| < 1$, and $|g(1/3)| = 1/3$.
+$g(w) = w$ satisfies $g(0) = 0$ and $\abs{g(w)} < 1$, and $\abs{g(1/3)} = 1/3$.
 
 :::
 

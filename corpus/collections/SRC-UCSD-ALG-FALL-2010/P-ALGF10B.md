@@ -76,7 +76,7 @@ $G/P$ has order $30 = 2 \cdot 3 \cdot 5$.
 ::: pf-proof
 
 ::: pf-step
-$|G/P| = 2010/67 = 30$.
+$\cardinality{G/P} = 2010/67 = 30$.
 
 ::: pf-proof
 quotient order.

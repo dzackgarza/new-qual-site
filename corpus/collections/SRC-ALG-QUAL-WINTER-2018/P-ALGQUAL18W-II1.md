@@ -96,7 +96,7 @@ on $m$ points is not trivial. Hence $\rho$ is nontrivial.
 
 Assume $n\geq5$. Then the restriction
 $$
-\rho|_{A_n}:A_n\longrightarrow S_m
+\rho\restrict_{A_n}:A_n\longrightarrow S_m
 $$
 is trivial.
 
@@ -129,7 +129,7 @@ m!
 $$
 where the strict middle inequality uses $n\geq5$. Contradiction.
 
-Thus $\rho|_{A_n}$ is trivial.
+Thus $\rho\restrict_{A_n}$ is trivial.
 
 :::
 

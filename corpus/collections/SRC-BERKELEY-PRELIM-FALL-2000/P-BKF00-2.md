@@ -28,7 +28,7 @@ Let $A$ be a subset of a compact metric space $(X,d)$. Assume that for every con
 $$
 f:X\to\RR,
 $$
-the restriction $f|_A$ attains a maximum on $A$. Prove that $A$ is compact.
+the restriction $f\restrict_A$ attains a maximum on $A$. Prove that $A$ is compact.
 :::
 
 ::: {.solution}
@@ -73,7 +73,7 @@ continuous, so $g$ is continuous.
 :::
 
 ::: {.pf-step #g-sup-not-attained}
-The restriction $g|_A$ has supremum $0$ on $A$ but does not attain
+The restriction $g\restrict_A$ has supremum $0$ on $A$ but does not attain
 that value.
 
 ::: pf-proof
@@ -96,7 +96,7 @@ No negative number can therefore be an upper bound for $g(A)$, so
 $$
 \sup g(A)=0.
 $$
-Consequently $g|_A$ has no maximum.
+Consequently $g\restrict_A$ has no maximum.
 :::
 
 :::

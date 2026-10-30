@@ -166,10 +166,10 @@ $$
 
 Every point of the two middle line segments $[a,b]$ and $[b,c]$ has modulus at least $\sqrt3>1$.
 Indeed, the line through $a=(1,\sqrt3)$ and $b=(2,0)$ has distance $\sqrt3$ from the origin, and the lower segment is its reflection.
-For $|z|>1$, step [](#s3){.pf-ref} gives
+For $\abs{z}>1$, step [](#s3){.pf-ref} gives
 $$
 \operatorname{Re}F'(z)
-\ge1-\frac1{|z|^2}>0.
+\ge1-\frac1{\abs{z}^2}>0.
 $$
 Hence the real part of the derivative is positive on every segment of $\Gamma$.
 

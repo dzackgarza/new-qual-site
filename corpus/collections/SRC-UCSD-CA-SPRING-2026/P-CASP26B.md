@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \DD \to \CC$ be holomorphic such that (i) $f(0) = 0$, (ii) $|f(z)| < 2000$ for all $z \in \DD$, (iii) $f(z) = f(-z)$ for all $z \in \DD$.
+Let $f : \DD \to \CC$ be holomorphic such that (i) $f(0) = 0$, (ii) $\abs{f(z)} < 2000$ for all $z \in \DD$, (iii) $f(z) = f(-z)$ for all $z \in \DD$.
 
-Show that $|f(z)| \leq 2000|z|^2$ for all $z \in \DD$, and determine when equality holds.
+Show that $\abs{f(z)} \leq 2000\abs{z}^2$ for all $z \in \DD$, and determine when equality holds.
 :::
 
 ::: {.solution}
@@ -80,20 +80,20 @@ dividing by $z^2$.
 
 ::: {.pf-step #s2}
 
-Proof of the bound $|f(z)| \le 2000 |z|^2$:
+Proof of the bound $\abs{f(z)} \le 2000 \abs{z}^2$:
 
 ::: pf-proof
 
 ::: pf-step
 
-For any $0 < r < 1$ and any $z$ with $|z| = r$:
+For any $0 < r < 1$ and any $z$ with $\abs{z} = r$:
 $$
-|g(z)| = \frac{|f(z)|}{|z|^2} = \frac{|f(z)|}{r^2} < \frac{2000}{r^2}.
+\abs{g(z)} = \frac{\abs{f(z)}}{\abs{z}^2} = \frac{\abs{f(z)}}{r^2} < \frac{2000}{r^2}.
 $$
 
 ::: pf-proof
 
-condition (ii) $|f(z)| < 2000$.
+condition (ii) $\abs{f(z)} < 2000$.
 
 :::
 
@@ -103,7 +103,7 @@ condition (ii) $|f(z)| < 2000$.
 
 By the Maximum Modulus Principle applied to $g$ on the closed disk $\overline{D}(0, r)$, for all $z \in D(0, r)$:
 $$
-|g(z)| \le \max_{|w| = r} |g(w)| \le \frac{2000}{r^2}.
+\abs{g(z)} \le \max_{\abs{w} = r} \abs{g(w)} \le \frac{2000}{r^2}.
 $$
 
 ::: pf-proof
@@ -118,7 +118,7 @@ Maximum Modulus Principle.
 
 Taking the limit as $r \to 1^-$ yields:
 $$
-|g(z)| \le 2000 \quad \text{for all } z \in \DD.
+\abs{g(z)} \le 2000 \quad \text{for all } z \in \DD.
 $$
 
 ::: pf-proof
@@ -131,9 +131,9 @@ limit of upper bounds as $r \to 1^-$.
 
 ::: pf-step
 
-Multiplying by $|z|^2$:
+Multiplying by $\abs{z}^2$:
 $$
-|f(z)| = |z^2 g(z)| = |z|^2 |g(z)| \le 2000 |z|^2 \quad \text{for all } z \in \DD.
+\abs{f(z)} = \abs{z^2 g(z)} = \abs{z}^2 \abs{g(z)} \le 2000 \abs{z}^2 \quad \text{for all } z \in \DD.
 $$
 
 ::: pf-proof
@@ -156,12 +156,12 @@ Characterization of equality:
 
 ::: pf-step
 
-Suppose equality $|f(z_0)| = 2000 |z_0|^2$ holds for some non-zero $z_0 \in \DD \setminus \{0\}$.
-Then $|g(z_0)| = 2000$.
+Suppose equality $\abs{f(z_0)} = 2000 \abs{z_0}^2$ holds for some non-zero $z_0 \in \DD \setminus \{0\}$.
+Then $\abs{g(z_0)} = 2000$.
 
 ::: pf-proof
 
-$|f(z_0)| = |z_0|^2 |g(z_0)|$.
+$\abs{f(z_0)} = \abs{z_0}^2 \abs{g(z_0)}$.
 
 :::
 
@@ -169,7 +169,7 @@ $|f(z_0)| = |z_0|^2 |g(z_0)|$.
 
 ::: pf-step
 
-Since $|g(z)| \le 2000$ throughout $\DD$, the modulus $|g|$ attains its global maximum at the interior point $z_0 \in \DD$.
+Since $\abs{g(z)} \le 2000$ throughout $\DD$, the modulus $\abs{g}$ attains its global maximum at the interior point $z_0 \in \DD$.
 By the Maximum Modulus Principle, $g(z)$ must be constant:
 $$
 g(z) = 2000 e^{i\theta} \quad \text{for some constant } \theta \in \RR.
@@ -186,11 +186,11 @@ Maximum Modulus Principle forces constant functions.
 ::: pf-step
 
 Consequently, $f(z) = 2000 e^{i\theta} z^2$.
-Notice that for this function, $|f(z)| = 2000 |z|^2 < 2000$ holds strictly for all $z \in \DD$, and $f(z) = f(-z)$ and $f(0) = 0$ are satisfied.
+Notice that for this function, $\abs{f(z)} = 2000 \abs{z}^2 < 2000$ holds strictly for all $z \in \DD$, and $f(z) = f(-z)$ and $f(0) = 0$ are satisfied.
 
 ::: pf-proof
 
-$|z| < 1 \implies 2000|z|^2 < 2000$.
+$\abs{z} < 1 \implies 2000\abs{z}^2 < 2000$.
 
 :::
 
@@ -203,7 +203,7 @@ $|z| < 1 \implies 2000|z|^2 < 2000$.
 ::: pf-step
 
 Conclusion:
-$|f(z)| \le 2000 |z|^2$ for all $z \in \DD$, with equality at any non-zero point if and only if $f(z) = 2000 e^{i\theta} z^2$ for some $\theta \in [0, 2\pi)$. Q.E.D.
+$\abs{f(z)} \le 2000 \abs{z}^2$ for all $z \in \DD$, with equality at any non-zero point if and only if $f(z) = 2000 e^{i\theta} z^2$ for some $\theta \in [0, 2\pi)$. Q.E.D.
 
 ::: pf-proof
 

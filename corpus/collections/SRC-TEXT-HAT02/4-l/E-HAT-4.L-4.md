@@ -44,7 +44,7 @@ $$
 H^*(C_p;\ZZ)
 \cong
 \ZZ\{1,x,x^2,x^3\},
-\qquad |x|=8,
+\qquad \gradeddegree{x}=8,
 $$
 with
 $$

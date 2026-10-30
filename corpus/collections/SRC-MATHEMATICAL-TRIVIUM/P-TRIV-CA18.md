@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA18
 kind: problem
-title: $\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}$ for $|a|<1$
+title: $\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}$ for $\abs{a}<1$
 classification:
   areas: [complex-analysis]
   topics: []
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with $|a| < 1$.
+Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with $\abs{a} < 1$.
 :::
 
 ::: {.solution}
@@ -53,7 +53,7 @@ For $a=0$ the integrand is identically $1$.
 
 Assume
 $$
-0<|a|<1
+0<\abs{a}<1
 $$
 and set
 $$
@@ -89,7 +89,7 @@ The integral becomes
 $$
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
 =
-\oint_{|z|=1}
+\oint_{\abs{z}=1}
 \frac{2}{i(az^2+2z+a)}\,dz.
 $$
 
@@ -150,9 +150,9 @@ $$
 
 Rationalizing the first expression gives the second. Hence
 $$
-|z_+|
+\abs{z_+}
 =
-\frac{|a|}
+\frac{\abs{a}}
 {1+\sqrt{1-a^2}}
 <1.
 $$
@@ -162,7 +162,7 @@ z_+z_-=1,
 $$
 so
 $$
-|z_-|>1.
+\abs{z_-}>1.
 $$
 
 :::
@@ -206,7 +206,7 @@ $$
 
 ::: {.pf-step #s1-7}
 
-Therefore, for $0<|a|<1$,
+Therefore, for $0<\abs{a}<1$,
 $$
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
 =
@@ -219,7 +219,7 @@ $$
 The unit circle encloses only the pole $z_+$. By the residue theorem and
 step [](#s1-6){.pf-ref},
 $$
-\oint_{|z|=1}
+\oint_{\abs{z}=1}
 \frac{2}{i(az^2+2z+a)}\,dz
 =
 2\pi i
@@ -234,7 +234,7 @@ $$
 
 ::: {.pf-step #s1-8}
 
-For every real $a$ with $|a|<1$,
+For every real $a$ with $\abs{a}<1$,
 $$
 \boxed{
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
@@ -246,7 +246,7 @@ $$
 
 ::: pf-proof
 
-Step [](#s1-1){.pf-ref} handles $a=0$, and step [](#s1-7){.pf-ref} handles $0<|a|<1$. The same formula
+Step [](#s1-1){.pf-ref} handles $a=0$, and step [](#s1-7){.pf-ref} handles $0<\abs{a}<1$. The same formula
 gives $2\pi$ at $a=0$.
 
 :::

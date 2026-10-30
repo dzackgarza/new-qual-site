@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU51RA5
 kind: problem
-title: "$\\|f\\|_p\\to\\|f\\|_\\infty$ as $p\\to\\infty$ for $f\\in L^1\\cap L^\\infty$"
+title: "$\\norm{f}_p\\to\\norm{f}_\\infty$ as $p\\to\\infty$ for $f\\in L^1\\cap L^\\infty$"
 classification:
   areas:
   - real-analysis
@@ -28,7 +28,7 @@ audit:
 Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $f \in L^{1}(\mu) \cap L^{\infty}(\mu)$.
 Prove that:
 $$
-\lim_{p \to \infty} \|f\|_p = \|f\|_{\infty}.
+\lim_{p \to \infty} \norm{f}_p = \norm{f}_{\infty}.
 $$
 :::
 

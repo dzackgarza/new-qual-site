@@ -60,7 +60,7 @@ This action has a fixed point.
 
 By Sylow's theorem,
 $$
-|\mathcal S|\equiv1\pmod p.
+\cardinality{\mathcal S}\equiv1\pmod p.
 $$
 Every $Q$-orbit has size
 $$
@@ -70,11 +70,11 @@ hence a power of $p$. Therefore every nontrivial orbit has cardinality
 divisible by $p$. If $\mathcal S^Q$ denotes the set of fixed points, the orbit
 decomposition gives
 $$
-|\mathcal S|\equiv |\mathcal S^Q|\pmod p.
+\cardinality{\mathcal S}\equiv \cardinality{\mathcal S^Q}\pmod p.
 $$
-Since $|\mathcal S|\equiv1\pmod p$, we have
+Since $\cardinality{\mathcal S}\equiv1\pmod p$, we have
 $$
-|\mathcal S^Q|\equiv1\pmod p,
+\cardinality{\mathcal S^Q}\equiv1\pmod p,
 $$
 so $\mathcal S^Q$ is nonempty. Choose
 $$
@@ -103,7 +103,7 @@ is a subgroup of $G$.
 
 Both $P$ and $Q$ are $p$-groups. Therefore
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}
 $$
 is a power of $p$, so $PQ$ is a $p$-subgroup of $G$. But $P$ is Sylow and has
 the largest possible $p$-power order, namely $p^r$. Since $P\le PQ$, maximality

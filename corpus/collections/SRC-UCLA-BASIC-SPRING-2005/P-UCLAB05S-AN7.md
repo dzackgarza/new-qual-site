@@ -19,7 +19,7 @@ audit:
 Equip $M_n(\CC)$ with the metric
 $$
 \operatorname{dist}(A,B)
-=\left(\sum_{i,j}|A_{ij}-B_{ij}|^2\right)^{1/2}.
+=\left(\sum_{i,j}\abs{A_{ij}-B_{ij}}^2\right)^{1/2}.
 $$
 
 (a) Suppose $F:\RR\to M_n(\CC)$ is continuous.

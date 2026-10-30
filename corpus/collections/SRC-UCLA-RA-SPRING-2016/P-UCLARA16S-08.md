@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\CC_+=\{z\in\CC:\operatorname{Im}z>0\}$ and let $f_n:\CC_+\to\CC_+$ be a sequence of holomorphic functions. Show that unless $|f_n|\to\infty$ uniformly on compact subsets of $\CC_+$, there exists a subsequence converging uniformly on compact subsets of $\CC_+$.
+Let $\CC_+=\{z\in\CC:\operatorname{Im}z>0\}$ and let $f_n:\CC_+\to\CC_+$ be a sequence of holomorphic functions. Show that unless $\abs{f_n}\to\infty$ uniformly on compact subsets of $\CC_+$, there exists a subsequence converging uniformly on compact subsets of $\CC_+$.
 :::
 
 ::: {.solution}
@@ -38,9 +38,9 @@ Then $\Phi$ is a biholomorphism from $\CC_+$ onto the unit disk $\DD$.
 
 ::: {.pf-step #s1-1}
 
-Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\CC_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
+Since $\abs{f_n}$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\CC_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
 $$
-|f_{n_j}(z_j)|\le M
+\abs{f_{n_j}(z_j)}\le M
 \qquad
 (j\ge1).
 $$
@@ -50,7 +50,7 @@ $$
 
 Failure of uniform divergence on compact subsets means that for some compact $K\subset\CC_+$ there is a number $M>0$ such that, for infinitely many indices $n$, the inequality
 $$
-|f_n(z)|>M
+\abs{f_n(z)}>M
 \qquad
 (z\in K)
 $$
@@ -94,15 +94,15 @@ $$
 $$
 so
 $$
-|1-\Phi(w)|
+\abs{1-\Phi(w)}
 =
-\frac{2}{|w+i|}.
+\frac{2}{\abs{w+i}}.
 $$
 By step [](#s1-1){.pf-ref},
 $$
-|1-g_j(z_j)|
+\abs{1-g_j(z_j)}
 =
-\frac{2}{|f_{n_j}(z_j)+i|}
+\frac{2}{\abs{f_{n_j}(z_j)+i}}
 \ge
 \frac{2}{M+1}.
 $$
@@ -112,7 +112,7 @@ g_j(z_j)\longrightarrow g(z_\infty).
 $$
 Hence
 $$
-|1-g(z_\infty)|
+\abs{1-g(z_\infty)}
 \ge
 \frac{2}{M+1}>0.
 $$
@@ -129,7 +129,7 @@ The function $g$ never takes the value $1$ on $\CC_+$.
 
 ::: pf-proof
 
-The limit satisfies $|g|\le1$. If $g(z_0)=1$ at some interior point, then $|g|$ attains its maximum value $1$ at $z_0$. The maximum-modulus principle would force $g\equiv1$, contradicting step [](#s1-3){.pf-ref}.
+The limit satisfies $\abs{g}\le1$. If $g(z_0)=1$ at some interior point, then $\abs{g}$ attains its maximum value $1$ at $z_0$. The maximum-modulus principle would force $g\equiv1$, contradicting step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -146,11 +146,11 @@ Let $L\subset\CC_+$ be compact. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-re
 $$
 \delta
 \coloneqq
-\min_{z\in L}|1-g(z)|>0.
+\min_{z\in L}\abs{1-g(z)}>0.
 $$
 For all sufficiently large $j$, local uniform convergence gives
 $$
-|1-g_j(z)|
+\abs{1-g_j(z)}
 \ge
 \frac{\delta}{2}
 \qquad

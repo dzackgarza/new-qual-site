@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF83-6
 kind: problem
-title: Zeros of $z^5+z^3+5z^2+2$ in $1<|z|<2$
+title: Zeros of $z^5+z^3+5z^2+2$ in $1<\abs{z}<2$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -26,7 +26,7 @@ p(z)=z^5+z^3+5z^2+2
 $$
 have in the annulus
 $$
-1<|z|<2?
+1<\abs{z}<2?
 $$
 :::
 

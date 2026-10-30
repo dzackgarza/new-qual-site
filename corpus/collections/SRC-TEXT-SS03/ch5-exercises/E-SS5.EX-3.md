@@ -25,12 +25,12 @@ audit:
 3. Show that if $\tau$ is fixed with Im $( \tau ) > 0$ , then the Jacobi theta function
 
 $$
-\Theta (z | \tau) = \sum_ {n = - \infty} ^ {\infty} e ^ {\pi i n ^ {2} \tau} e ^ {2 \pi i n z}
+\Theta (z \thetaseparator \tau) = \sum_ {n = - \infty} ^ {\infty} e ^ {\pi i n ^ {2} \tau} e ^ {2 \pi i n z}
 $$
 
 is of order 2 as a function of $z .$ . Further properties of $\Theta$ will be studied in Chapter 10.
 
-[Hint: $- n ^ { 2 } t + 2 n | z | \leq - n ^ { 2 } t / 2$ when $t > 0$ and $n \geq 4 | z | / t . ]$
+[Hint: $- n ^ { 2 } t + 2 n \abs{ z } \leq - n ^ { 2 } t / 2$ when $t > 0$ and $n \geq 4 \abs{ z } / t . ]$
 :::
 
 ::: {.solution}
@@ -41,25 +41,25 @@ $$
 $$
 For $z=x+iy$, the $n$th summand satisfies
 $$
-\left|e^{\pi i n^2\tau}e^{2\pi inz}\right|
+\abs{e^{\pi i n^2\tau}e^{2\pi inz}}
 =e^{-\pi t n^2-2\pi ny}
-\le e^{-\pi t n^2+2\pi|n||y|}.
+\le e^{-\pi t n^2+2\pi\abs{n}\abs{y}}.
 $$
 Using
 $$
-2|n||y|\le \frac t2 n^2+\frac{2}{t}y^2,
+2\abs{n}\abs{y}\le \frac t2 n^2+\frac{2}{t}y^2,
 $$
 we obtain
 $$
--\pi t n^2+2\pi|n||y|
+-\pi t n^2+2\pi\abs{n}\abs{y}
 \le -\frac{\pi t}{2}n^2+\frac{2\pi}{t}y^2.
 $$
 Hence
 $$
-|\Theta(z\mid\tau)|
+\abs{\Theta(z\mid\tau)}
 \le e^{2\pi y^2/t}
 \sum_{n\in\ZZ}e^{-\pi t n^2/2}
-\le C_t e^{(2\pi/t)|z|^2}.
+\le C_t e^{(2\pi/t)\abs{z}^2}.
 $$
 Thus the order is at most $2$.
 
@@ -82,17 +82,17 @@ since all Fourier modes except $n=0$ integrate to zero. Choose $z_0$ with $\Thet
 
 Taking absolute values in (1),
 $$
-|\Theta(z_0+m\tau\mid\tau)|
-=|\Theta(z_0\mid\tau)|
+\abs{\Theta(z_0+m\tau\mid\tau)}
+=\abs{\Theta(z_0\mid\tau)}
 \exp\!\left(\pi t m^2+2\pi m\Im z_0\right).
 $$
 Meanwhile
 $$
-|z_0+m\tau|=O(m).
+\abs{z_0+m\tau}=O(m).
 $$
 Thus along this sequence
 $$
-\log|\Theta(z_0+m\tau\mid\tau)|
+\log\abs{\Theta(z_0+m\tau\mid\tau)}
 =\pi t m^2+O(m),
 $$
 which cannot be bounded by $O(m^\rho)$ for any $\rho<2$. Therefore the order is at least $2$.

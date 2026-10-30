@@ -39,7 +39,7 @@ audit:
 Prove the following without using Egoroff's theorem. Let
 $(f_k)$ be measurable functions on a Lebesgue-measurable set
 $E\subset\RR^d$, with $f_k\to f$ almost everywhere
-on $E$. Suppose $g\in L^1(E)$ and $|f_k|\leq g$ for every
+on $E$. Suppose $g\in L^1(E)$ and $\abs{f_k}\leq g$ for every
 $k$. For each $\varepsilon>0$, prove that there is a closed
 set $A_\varepsilon\subseteq E$ with
 $m(E\setminus A_\varepsilon)<\varepsilon$ such that
@@ -58,12 +58,12 @@ Control the tail suprema in $L^1$.
 
 Choose a measurable null set $Z\subset E$ outside which
 the given convergence holds and $g$ is finite. On
-$E_0=E\setminus Z$, passage to the limit gives $|f|\leq g$.
+$E_0=E\setminus Z$, passage to the limit gives $\abs{f}\leq g$.
 
 For $N\ge1$, define
 $$
 h_N(x):=\begin{cases}
-\sup_{k\ge N}|f_k(x)-f(x)|,&x\in E_0,\\
+\sup_{k\ge N}\abs{f_k(x)-f(x)},&x\in E_0,\\
 0,&x\in Z.
 \end{cases}
 $$
@@ -112,7 +112,7 @@ m(B)<\frac\varepsilon2.
 $$
 On $E\setminus B$, for every $j$ and every $k\ge N_j$,
 $$
-|f_k(x)-f(x)|\le h_{N_j}(x)\le\frac1j.
+\abs{f_k(x)-f(x)}\le h_{N_j}(x)\le\frac1j.
 $$
 Thus $f_k\to f$ uniformly on $E\setminus B$.
 
@@ -174,19 +174,19 @@ At each accuracy level, the bad tail sets have finite measure decreasing to zero
 
 Choose a measurable null set $Z\subset E$ outside which
 $f_k(x)\to f(x)$ and $g$ is finite. Put $E_0=E\setminus Z$.
-On $E_0$, the bound on $f_k$ implies $|f|\leq g$.
+On $E_0$, the bound on $f_k$ implies $\abs{f}\leq g$.
 
 For positive integers $j,N$, define
 $$
 B_{N,j}
 :=\bigcup_{k\ge N}
-\left\{x\in E_0:|f_k(x)-f(x)|\ge \frac1j\right\}.
+\left\{x\in E_0:\abs{f_k(x)-f(x)}\ge \frac1j\right\}.
 $$
 For fixed $j$, the sets $B_{N,j}$ decrease as $N\to\infty$. Pointwise convergence gives
 $$
 \bigcap_{N=1}^\infty B_{N,j}=\varnothing.
 $$
-Also, because $|f_k|,|f|\le g$,
+Also, because $\abs{f_k},\abs{f}\le g$,
 $$
 B_{1,j}\subseteq\left\{x\in E:g(x)\ge\frac1{2j}\right\}.
 $$
@@ -226,7 +226,7 @@ $$
 
 On $E\setminus B$, convergence is uniform. Indeed, given $\eta>0$, choose $j$ with $1/j<\eta$. If $k\ge N_j$ and $x\in E\setminus B$, then $x\notin B_{N_j,j}$, so
 $$
-|f_k(x)-f(x)|<\frac1j<\eta.
+\abs{f_k(x)-f(x)}<\frac1j<\eta.
 $$
 
 :::

@@ -29,7 +29,7 @@ If True, give a brief proof.
 If False, give a counterexample (or prove your assertion in another way, if you prefer).
 
 (a) Let $(X, \mathcal{M}, \mu)$ be a complete measure space.
-If $f_n, g_n, g, f \in L^1$, $f_n \to f$ and $g_n \to g$ a.e., $|f_n| \leq g_n$ and $\int g_n\,d\mu = A < \infty$ for some $A > 0$, then $\int f_n\,d\mu \to \int f\,d\mu$.
+If $f_n, g_n, g, f \in L^1$, $f_n \to f$ and $g_n \to g$ a.e., $\abs{f_n} \leq g_n$ and $\int g_n\,d\mu = A < \infty$ for some $A > 0$, then $\int f_n\,d\mu \to \int f\,d\mu$.
 
 (b) The iterated integrals
 $$
@@ -59,7 +59,7 @@ Take $X=\RR$ with Lebesgue measure and let
 $$
 g_n=f_n=\mathbf1_{[n,n+1]}.
 $$
-Then $f_n,g_n\in L^1$, $|f_n|\le g_n$, and
+Then $f_n,g_n\in L^1$, $\abs{f_n}\le g_n$, and
 $$
 \int_{\RR}g_n\,dx=1
 $$
@@ -95,12 +95,12 @@ The same holds with $x$ and $y$ interchanged. Hence both iterated integrals exis
 
 Nevertheless $F$ is not integrable on the square. In polar coordinates near the origin,
 $$
-|F(r\cos\theta,r\sin\theta)|
-=\frac{|\cos\theta\sin\theta|}{r^2}.
+\abs{F(r\cos\theta,r\sin\theta)}
+=\frac{\abs{\cos\theta\sin\theta}}{r^2}.
 $$
-Thus on any angular sector on which $|\cos\theta\sin\theta|$ is bounded below by a positive constant,
+Thus on any angular sector on which $\abs{\cos\theta\sin\theta}$ is bounded below by a positive constant,
 $$
-\iint |F|\,dx\,dy
+\iint \abs{F}\,dx\,dy
 \gtrsim \int_0^\varepsilon \frac1{r^2}r\,dr
 =\int_0^\varepsilon\frac{dr}{r}
 =\infty.
@@ -136,7 +136,7 @@ Part (d) is true.
 
 Let $U\subset X^*$ be a nonempty weak*-open set and choose $\phi_0\in U$. There exist $x_1,\dots,x_N\in X$ and $\varepsilon>0$ such that
 $$
-V:=\{\phi\in X^*:|\phi(x_j)-\phi_0(x_j)|<\varepsilon\text{ for }1\le j\le N\}
+V:=\{\phi\in X^*:\abs{\phi(x_j)-\phi_0(x_j)}<\varepsilon\text{ for }1\le j\le N\}
 \subset U.
 $$
 Put
@@ -145,7 +145,7 @@ M=\operatorname{span}\{x_1,\dots,x_N\}.
 $$
 Since $X$ is infinite dimensional, $M\ne X$. By Hahn--Banach there is a nonzero functional $\psi\in X^*$ such that
 $$
-\psi|_M=0.
+\psi\restrict_M=0.
 $$
 Hence for every scalar $t$,
 $$
@@ -153,9 +153,9 @@ $$
 $$
 so $\phi_0+t\psi\in V\subset U$. But
 $$
-\|\phi_0+t\psi\|\ge |t|\,\|\psi\|-\|\phi_0\|\longrightarrow\infty
+\norm{\phi_0+t\psi}\ge \abs{t}\,\norm{\psi}-\norm{\phi_0}\longrightarrow\infty
 $$
-as $|t|\to\infty$. Thus every nonempty weak*-open subset of $X^*$ is norm-unbounded.
+as $\abs{t}\to\infty$. Thus every nonempty weak*-open subset of $X^*$ is norm-unbounded.
 
 :::
 

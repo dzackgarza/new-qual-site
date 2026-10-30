@@ -32,13 +32,13 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f : (0, 1) \to \RR$ is a continuous function with $\int_0^1 |f(t)| \, dt < \infty$. Define $g : (0, 1) \to \RR$ by
+Suppose that $f : (0, 1) \to \RR$ is a continuous function with $\int_0^1 \abs{f(t)} \, dt < \infty$. Define $g : (0, 1) \to \RR$ by
 
 $$
 g(x) = \int_x^1 \frac{f(t)}{t} \, dt.
 $$
 
-Show that $\int_0^1 |g(x)| \, dx < \infty$.
+Show that $\int_0^1 \abs{g(x)} \, dx < \infty$.
 :::
 
 ::: {.solution}
@@ -54,11 +54,11 @@ absolutely convergent.
 
 On the interval $[x,1]$ one has $1/t\le1/x$. Therefore
 $$
-\int_x^1\left|\frac{f(t)}t\right|\,dt
+\int_x^1\abs{\frac{f(t)}t}\,dt
 \le
-\frac1x\int_x^1|f(t)|\,dt
+\frac1x\int_x^1\abs{f(t)}\,dt
 \le
-\frac1x\int_0^1|f(t)|\,dt
+\frac1x\int_0^1\abs{f(t)}\,dt
 <\infty.
 $$
 Thus $g(x)$ is well-defined.
@@ -71,9 +71,9 @@ Thus $g(x)$ is well-defined.
 
 For every $x\in(0,1)$,
 $$
-|g(x)|
+\abs{g(x)}
 \le
-\int_x^1\frac{|f(t)|}{t}\,dt.
+\int_x^1\frac{\abs{f(t)}}{t}\,dt.
 $$
 
 ::: pf-proof
@@ -89,9 +89,9 @@ from step [](#s1){.pf-ref}.
 
 One has the estimate
 $$
-\int_0^1 |g(x)|\,dx
+\int_0^1 \abs{g(x)}\,dx
 \le
-\int_0^1 |f(t)|\,dt.
+\int_0^1 \abs{f(t)}\,dt.
 $$
 
 ::: pf-proof
@@ -99,16 +99,16 @@ $$
 By step [](#s2){.pf-ref} and Tonelli's theorem for the nonnegative integrand,
 $$
 \begin{aligned}
-\int_0^1|g(x)|\,dx
+\int_0^1\abs{g(x)}\,dx
 &\le
-\int_0^1\int_x^1\frac{|f(t)|}{t}\,dt\,dx\\
+\int_0^1\int_x^1\frac{\abs{f(t)}}{t}\,dt\,dx\\
 &=
-\int_0^1\int_0^t\frac{|f(t)|}{t}\,dx\,dt\\
+\int_0^1\int_0^t\frac{\abs{f(t)}}{t}\,dx\,dt\\
 &=
 \int_0^1
-\frac{|f(t)|}{t}\,t\,dt\\
+\frac{\abs{f(t)}}{t}\,t\,dt\\
 &=
-\int_0^1|f(t)|\,dt.
+\int_0^1\abs{f(t)}\,dt.
 \end{aligned}
 $$
 The right-hand side is finite by hypothesis.
@@ -122,7 +122,7 @@ The right-hand side is finite by hypothesis.
 Consequently,
 $$
 \boxed{
-\int_0^1|g(x)|\,dx<\infty.
+\int_0^1\abs{g(x)}\,dx<\infty.
 }
 $$
 

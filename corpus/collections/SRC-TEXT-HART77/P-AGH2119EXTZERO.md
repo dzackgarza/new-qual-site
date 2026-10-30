@@ -212,7 +212,7 @@ $$
 $$
 with the same restriction maps.  Therefore sheafification does nothing after restricting to $U$, and
 $$
-(j_!\mathcal F)|_U\cong\mathcal F.
+(j_!\mathcal F)\restrict_U\cong\mathcal F.
 $$
 
 :::
@@ -223,7 +223,7 @@ $$
 
 The sheaf $j_!\mathcal F$ is unique, up to unique isomorphism compatible with the given identification on $U$, among sheaves $\mathcal G$ on $X$ such that
 $$
-\mathcal G|_U\cong\mathcal F
+\mathcal G\restrict_U\cong\mathcal F
 \qquad\text{and}\qquad
 \mathcal G_P=0\quad(P\notin U).
 $$
@@ -232,7 +232,7 @@ $$
 
 Fix an identification
 $$
-\theta_U:\mathcal F\xrightarrow{\sim}\mathcal G|_U.
+\theta_U:\mathcal F\xrightarrow{\sim}\mathcal G\restrict_U.
 $$
 Define a morphism of presheaves
 $$
@@ -280,7 +280,7 @@ Any isomorphism compatible with the fixed identification on $U$ must induce the 
 Let $\mathcal F$ now be a sheaf on all of $X$.  There is a natural morphism
 $$
 \alpha:
-j_!(\mathcal F|_U)
+j_!(\mathcal F\restrict_U)
 \longrightarrow
 \mathcal F
 $$
@@ -290,7 +290,7 @@ which is the identity on stalks over $U$ and the zero map on stalks over $Z$.
 
 Let $\mathcal P$ be the presheaf defining
 $$
-j_!(\mathcal F|_U).
+j_!(\mathcal F\restrict_U).
 $$
 If $V\subseteq U$, define
 $$
@@ -316,7 +316,7 @@ $$
 \beta:
 \mathcal F
 \longrightarrow
-i_*(\mathcal F|_Z)
+i_*(\mathcal F\restrict_Z)
 $$
 which is the identity on stalks over $Z$ and has zero target on stalks over $U$.
 
@@ -333,7 +333,7 @@ $$
 gives
 $$
 \beta:\mathcal F\longrightarrow i_*i^{-1}\mathcal F
-=i_*(\mathcal F|_Z).
+=i_*(\mathcal F\restrict_Z).
 $$
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the target stalk is $\mathcal F_P$ at $P\in Z$ and zero at $P\in U$.  At a point of $Z$, the adjunction unit is induced by restricting a local section to smaller neighborhoods in the subspace $Z$, so the induced map on the stalk is the identity under the natural identification
@@ -352,11 +352,11 @@ $$
 \boxed{
 0
 \longrightarrow
-j_!(\mathcal F|_U)
+j_!(\mathcal F\restrict_U)
 \xrightarrow{\alpha}
 \mathcal F
 \xrightarrow{\beta}
-i_*(\mathcal F|_Z)
+i_*(\mathcal F\restrict_Z)
 \longrightarrow0
 }
 $$

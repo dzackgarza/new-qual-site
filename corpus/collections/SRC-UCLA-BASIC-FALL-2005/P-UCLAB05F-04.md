@@ -31,7 +31,7 @@ is less than $3$.
 
 Suggestion: in the arc-length formula, use
 $$
-\sqrt{a^2+b^2}<|a|+|b|.
+\sqrt{a^2+b^2}<\abs{a}+\abs{b}.
 $$
 :::
 
@@ -100,7 +100,7 @@ Continuity of $F'$ gives a point $c\in(0,1)$ with $F'(c)=0$. Strict decrease mak
 
 One has
 $$
-\int_0^1|F'(x)|\,dx=2F(c).
+\int_0^1\abs{F'(x)}\,dx=2F(c).
 $$
 
 
@@ -109,7 +109,7 @@ $$
 Using the sign information from step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
-\int_0^1|F'(x)|\,dx
+\int_0^1\abs{F'(x)}\,dx
 &=
 \int_0^cF'(x)\,dx
 -
@@ -132,7 +132,7 @@ because $F(0)=F(1)=0$.
 
 One has
 $$
-\int_0^1|F'(x)|\,dx\le2.
+\int_0^1\abs{F'(x)}\,dx\le2.
 $$
 
 
@@ -156,7 +156,7 @@ Apply step [](#s1-3){.pf-ref}.
 
 The arc length satisfies
 $$
-L<1+\int_0^1|F'(x)|\,dx.
+L<1+\int_0^1\abs{F'(x)}\,dx.
 $$
 
 
@@ -168,15 +168,15 @@ L=\int_0^1\sqrt{1+F'(x)^2}\,dx.
 $$
 For every real $u$,
 $$
-\sqrt{1+u^2}\le1+|u|,
+\sqrt{1+u^2}\le1+\abs{u},
 $$
 with strict inequality whenever $u\ne0$. By step [](#s1-2){.pf-ref}, $F'(x)\ne0$ except at the single point $c$. Hence the inequality is strict on two intervals of positive length, so
 $$
 \int_0^1\sqrt{1+F'(x)^2}\,dx
 <
-\int_0^1\bigl(1+|F'(x)|\bigr)\,dx
+\int_0^1\bigl(1+\abs{F'(x)}\bigr)\,dx
 =
-1+\int_0^1|F'(x)|\,dx.
+1+\int_0^1\abs{F'(x)}\,dx.
 $$
 
 :::
@@ -197,7 +197,7 @@ By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
 L
 <
-1+\int_0^1|F'(x)|\,dx
+1+\int_0^1\abs{F'(x)}\,dx
 \le
 1+2
 =3.

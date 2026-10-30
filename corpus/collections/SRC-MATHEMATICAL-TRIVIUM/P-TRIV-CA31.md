@@ -46,7 +46,7 @@ $$
 $$
 then
 $$
-|t e^{-zt}|
+\abs{t e^{-zt}}
 =
 t e^{-at}.
 $$

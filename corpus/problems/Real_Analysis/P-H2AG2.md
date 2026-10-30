@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the set $\theset{ u_k(j) \definedas \delta_{kj} } \subseteq \ell^2(\ZZ)$ forms an orthonormal system.
+Show that the set $\theset{ u_k(j) \coloneqq \delta_{kj} } \subseteq \ell^2(\ZZ)$ forms an orthonormal system.
 :::
 
 ::: {.solution}
@@ -65,5 +65,5 @@ $\inner{u_k}{u_m} = \sum_j \delta_{kj}\delta_{mj}$, and each term vanishes becau
 :::
 
 ::: {.remark}
-$\theset{u_k}$ is an orthonormal basis of $\ell^2(\ZZ)$: its span is the space of finitely supported sequences, which is dense, since the truncations of $a \in \ell^2(\ZZ)$ to $|j| \le N$ converge to $a$.
+$\theset{u_k}$ is an orthonormal basis of $\ell^2(\ZZ)$: its span is the space of finitely supported sequences, which is dense, since the truncations of $a \in \ell^2(\ZZ)$ to $\abs{j} \le N$ converge to $a$.
 :::

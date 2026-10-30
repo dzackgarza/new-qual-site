@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x) = x^2$ and $E \subset [0, \infty) \definedas \RR^+$.
+Let $f(x) = x^2$ and $E \subset [0, \infty) \coloneqq \RR^+$.
 
 1. Show that
 $$
@@ -52,7 +52,7 @@ For every $M>0$, the map
 $$
 f(x)=x^2
 $$
-is Lipschitz on $[0,M]$, since $|f'(x)|=2x\le2M$ there. Hence if $A\subset[0,M]$ has outer measure zero, then $f(A)$ has outer measure zero.
+is Lipschitz on $[0,M]$, since $\abs{f'(x)}=2x\le2M$ there. Hence if $A\subset[0,M]$ has outer measure zero, then $f(A)$ has outer measure zero.
 
 Now let $E\subset[0,\infty)$ with $m^*(E)=0$ and put
 $$

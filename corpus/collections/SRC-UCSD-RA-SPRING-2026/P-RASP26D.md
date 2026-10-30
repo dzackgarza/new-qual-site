@@ -27,7 +27,7 @@ audit:
 Let $\mathcal{M}([0,1])$ denote the space of all complex Radon measures on $[0,1]$, and $\mathcal{P}([0,1])$ the subset of probability measures.
 Let $f : [0,1] \times [0,1] \to \RR$ be a continuous function, and let $U$ be the set of all $\mu \in \mathcal{P}([0,1])$ satisfying
 $$
-\forall y \in [0,1] \qquad \left|\int_0^1 f(x, y)\,d\mu(x)\right| < 1.
+\forall y \in [0,1] \qquad \abs{\int_0^1 f(x, y)\,d\mu(x)} < 1.
 $$
 Prove that $U$ is a relatively open subset of $\mathcal{P}([0,1])$ with respect to the weak* topology.
 :::
@@ -53,12 +53,12 @@ from $[0,1]$ into $C([0,1])$ is continuous in the uniform norm.
 
 Since $\mu_0$ is a probability measure,
 $$
-|F_{\mu_0}(y)-F_{\mu_0}(z)|
-\le \|f_y-f_z\|_\infty,
+\abs{F_{\mu_0}(y)-F_{\mu_0}(z)}
+\le \norm{f_y-f_z}_\infty,
 $$
 so $F_{\mu_0}$ is continuous. Because $\mu_0\in U$ and $[0,1]$ is compact,
 $$
-c:=\max_{y\in[0,1]}|F_{\mu_0}(y)|<1.
+c:=\max_{y\in[0,1]}\abs{F_{\mu_0}(y)}<1.
 $$
 Put
 $$
@@ -78,14 +78,14 @@ K:=\{f_y:y\in[0,1]\}\subset C([0,1])
 $$
 is compact. Hence there exist $y_1,\ldots,y_N\in[0,1]$ such that for every $y\in[0,1]$ there is a $j$ with
 $$
-\|f_y-f_{y_j}\|_\infty<\eta.
+\norm{f_y-f_{y_j}}_\infty<\eta.
 $$
 
 Consider the relative weak* neighborhood of $\mu_0$ in $\mathcal P([0,1])$ given by
 $$
 V:=\left\{
 \mu\in\mathcal P([0,1]):
-\left|\int f_{y_j}\,d\mu-\int f_{y_j}\,d\mu_0\right|<\eta
+\abs{\int f_{y_j}\,d\mu-\int f_{y_j}\,d\mu_0}<\eta
 \text{ for }j=1,\ldots,N
 \right\}.
 $$
@@ -100,24 +100,24 @@ Show that $V\subset U$.
 ::: pf-proof
 Fix $\mu\in V$ and $y\in[0,1]$. Choose $j$ with
 $$
-\|f_y-f_{y_j}\|_\infty<\eta.
+\norm{f_y-f_{y_j}}_\infty<\eta.
 $$
 Since both $\mu$ and $\mu_0$ are probability measures,
 $$
-\left|\int(f_y-f_{y_j})\,d\mu\right|<\eta,
+\abs{\int(f_y-f_{y_j})\,d\mu}<\eta,
 \qquad
-\left|\int(f_y-f_{y_j})\,d\mu_0\right|<\eta.
+\abs{\int(f_y-f_{y_j})\,d\mu_0}<\eta.
 $$
 Therefore
 $$
 \begin{aligned}
-\left|\int f_y\,d\mu\right|
+\abs{\int f_y\,d\mu}
 &\le
-\left|\int(f_y-f_{y_j})\,d\mu\right|
-+\left|\int f_{y_j}\,d\mu-\int f_{y_j}\,d\mu_0\right|\\
+\abs{\int(f_y-f_{y_j})\,d\mu}
++\abs{\int f_{y_j}\,d\mu-\int f_{y_j}\,d\mu_0}\\
 &\qquad+
-\left|\int(f_{y_j}-f_y)\,d\mu_0\right|
-+\left|\int f_y\,d\mu_0\right|\\
+\abs{\int(f_{y_j}-f_y)\,d\mu_0}
++\abs{\int f_y\,d\mu_0}\\
 &<3\eta+c.
 \end{aligned}
 $$
@@ -129,7 +129,7 @@ $$
 $$
 we obtain
 $$
-\left|\int_0^1f(x,y)\,d\mu(x)\right|<1
+\abs{\int_0^1f(x,y)\,d\mu(x)}<1
 $$
 for every $y\in[0,1]$. Thus $\mu\in U$.
 

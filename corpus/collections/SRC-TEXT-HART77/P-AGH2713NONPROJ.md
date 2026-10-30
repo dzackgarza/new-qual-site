@@ -116,7 +116,7 @@ Thus $X$ is an integral variety proper over $k$, which is completeness.
 ::: {.pf-step #s3}
 For $R=k[u]$ or $k[u,u^{-1}]$, an invertible sheaf on $C_R$ is equivalent to an invertible sheaf $L$ on $\PP_R^1$ together with an isomorphism
 $$
-\theta:L|_{0_R}\xrightarrow{\cong}L|_{\infty_R}.
+\theta:L\restrict_{0_R}\xrightarrow{\cong}L\restrict_{\infty_R}.
 $$
 
 ::: pf-proof

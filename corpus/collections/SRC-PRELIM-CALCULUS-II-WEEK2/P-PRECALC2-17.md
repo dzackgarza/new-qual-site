@@ -265,7 +265,7 @@ Use step [](#s1-9){.pf-ref} and divergence of the harmonic series.
 
 Suppose
 $$
-\sum_{n=1}^{\infty}|b_n|
+\sum_{n=1}^{\infty}\abs{b_n}
 $$
 converges. Then
 $$
@@ -276,7 +276,7 @@ $$
 ::: pf-proof
 
 A necessary condition for convergence of any series is that its terms tend
-to zero. Apply this to the nonnegative series $\sum|b_n|$.
+to zero. Apply this to the nonnegative series $\sum\abs{b_n}$.
 
 :::
 
@@ -286,7 +286,7 @@ to zero. Apply this to the nonnegative series $\sum|b_n|$.
 
 Hence there exists $N$ such that
 $$
-\boxed{|b_n|\le1}
+\boxed{\abs{b_n}\le1}
 \qquad(n\ge N).
 $$
 
@@ -295,7 +295,7 @@ $$
 
 Since $b_n\to0$, eventually
 $$
-|b_n|<1.
+\abs{b_n}<1.
 $$
 
 :::
@@ -309,9 +309,9 @@ $$
 \boxed{
 b_n^2
 =
-|b_n|^2
+\abs{b_n}^2
 \le
-|b_n|}.
+\abs{b_n}}.
 $$
 
 
@@ -321,7 +321,7 @@ If $0\le x\le1$, then
 $$
 x^2\le x.
 $$
-Apply this with $x=|b_n|$.
+Apply this with $x=\abs{b_n}$.
 
 :::
 
@@ -341,7 +341,7 @@ converges.
 By step [](#s1-13){.pf-ref}, the nonnegative series is termwise bounded by the convergent
 tail
 $$
-\sum_{n=N}^{\infty}|b_n|.
+\sum_{n=N}^{\infty}\abs{b_n}.
 $$
 Apply the comparison test.
 
@@ -354,7 +354,7 @@ Apply the comparison test.
 Thus
 $$
 \boxed{
-\sum |b_n|<\infty
+\sum \abs{b_n}<\infty
 \quad\Longrightarrow\quad
 \sum b_n^2<\infty}.
 $$

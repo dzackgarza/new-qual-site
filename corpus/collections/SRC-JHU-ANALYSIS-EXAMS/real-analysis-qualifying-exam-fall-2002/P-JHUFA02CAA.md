@@ -43,7 +43,7 @@ where $h = \pm 8 ^ { - k }$ and the sign is chosen so that x and $x + h$ lie on 
 
 a. $\begin{array} { r } { \Delta _ { h } f ( x ) = \sum _ { n = 0 } ^ { k - 1 } 2 ^ { - n } \Delta _ { h } \psi ( 8 ^ { n } x ) } \end{array}$
 
-b. $\begin{array} { r } { | \Delta _ { h } f ( x ) | \geq 4 ^ { k - 1 } - \sum _ { n = 0 } ^ { k - 2 } 4 ^ { n } } \end{array}$
+b. $\begin{array} { r } { \abs{ \Delta _ { h } f ( x ) } \geq 4 ^ { k - 1 } - \sum _ { n = 0 } ^ { k - 2 } 4 ^ { n } } \end{array}$
 :::
 
 ::: {.solution}
@@ -62,7 +62,7 @@ $$
 $$
 for every $x$. Hence
 $$
-\left|2^{-n}\psi(8^n x)\right|\le 2^{-n-1}
+\abs{2^{-n}\psi(8^n x)}\le 2^{-n-1}
 $$
 uniformly in $x$. Since
 $$
@@ -106,18 +106,18 @@ $$
 
 Because $\psi$ is $1$-Lipschitz,
 $$
-\left|\Delta_{h_k}\bigl(\psi(8^n x)\bigr)\right|
+\abs{\Delta_{h_k}\bigl(\psi(8^n x)\bigr)}
 \le 8^n
 $$
 for $n<k-1$. On the other hand, by the choice of sign, the $n=k-1$ term lies entirely in one linear piece of slope $\pm1$, so
 $$
-\left|2^{-(k-1)}\Delta_{h_k}\bigl(\psi(8^{k-1}x)\bigr)\right|
+\abs{2^{-(k-1)}\Delta_{h_k}\bigl(\psi(8^{k-1}x)\bigr)}
 =2^{-(k-1)}8^{k-1}=4^{k-1}.
 $$
 Therefore
 $$
 \begin{aligned}
-|\Delta_{h_k}f(x)|
+\abs{\Delta_{h_k}f(x)}
 &\ge 4^{k-1}-\sum_{n=0}^{k-2}2^{-n}8^n\\
 &=4^{k-1}-\sum_{n=0}^{k-2}4^n\\
 &=4^{k-1}-\frac{4^{k-1}-1}{3}\\
@@ -136,9 +136,9 @@ Conclude nowhere differentiability.
 
 ::: pf-proof
 
-Since $|h_k|=8^{-k}\to0$ while
+Since $\abs{h_k}=8^{-k}\to0$ while
 $$
-|\Delta_{h_k}f(x)|\to\infty,
+\abs{\Delta_{h_k}f(x)}\to\infty,
 $$
 the difference quotients at $x$ cannot converge to a finite limit. Thus $f$ is not differentiable at $x$.
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find ${ \frac { d } { d x } } \ f ( g ( x ) ) | _ { x = 0 }$ , where $f ( u ) = \cosh u , g ( u ) = \sqrt { 1 - u ^ { 2 } } .$
+Find ${ \frac { d } { d x } } \ f ( g ( x ) ) \evalfrom _ { x = 0 }$ , where $f ( u ) = \cosh u , g ( u ) = \sqrt { 1 - u ^ { 2 } } .$
 :::
 
 ::: {.solution}
@@ -41,7 +41,7 @@ This is the derivative of the hyperbolic cosine.
 
 ::: pf-step
 
-For $|x|<1$,
+For $\abs{x}<1$,
 $$
 g'(x)
 =
@@ -92,9 +92,9 @@ Direct substitution gives both values.
 
 Therefore
 $$
-\left.
+\evaluated{
 \frac{d}{dx}f(g(x))
-\right|_{x=0}
+}_{x=0}
 =
 \boxed{0}.
 $$

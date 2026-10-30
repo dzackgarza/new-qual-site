@@ -87,14 +87,14 @@ $$
 $$
 generate a subgroup of $S_6$ isomorphic to $C_2^3$, so $\mu(E)\le6$.
 
-Now suppose $E$ acts faithfully on a set $X$ with $|X|\le5$. Since $E$ is a $2$-group, every orbit has size $1$, $2$, or $4$. Because $E$ is abelian, for a transitive orbit $E/H$ the kernel of the action on that orbit is exactly $H$.
+Now suppose $E$ acts faithfully on a set $X$ with $\cardinality{X}\le5$. Since $E$ is a $2$-group, every orbit has size $1$, $2$, or $4$. Because $E$ is abelian, for a transitive orbit $E/H$ the kernel of the action on that orbit is exactly $H$.
 
 If there is an orbit of size $4$, its stabilizer has order $2$. Since at most one point remains, every other orbit is fixed, whose action kernel is all of $E$. Hence the kernel of the full action contains that order-$2$ stabilizer and is nontrivial.
 
 If there is no orbit of size $4$, then there are at most two orbits of size $2$. Their stabilizers $H_1,H_2$ each have order $4$. Their intersection satisfies
 $$
-|H_1\cap H_2|
-=\frac{|H_1||H_2|}{|H_1H_2|}
+\cardinality{H_1\cap H_2}
+=\frac{\cardinality{H_1}\cardinality{H_2}}{\cardinality{H_1H_2}}
 \ge \frac{4\cdot4}{8}=2.
 $$
 Fixed points do not shrink the kernel. Thus again the full action has nontrivial kernel. Therefore no faithful action has degree at most $5$, so $\mu(E)=6$.
@@ -118,7 +118,7 @@ D_8\hookrightarrow S_4.
 $$
 Thus $\mu(D_8)\le4$. An embedding into $S_n$ with $n\le3$ is impossible because an injective homomorphism would identify $D_8$ with a subgroup of $S_n$, forcing
 $$
-8=|D_8|\mid |S_n|\le6,
+8=\cardinality{D_8}\mid \cardinality{S_n}\le6,
 $$
 which is impossible. Hence $\mu(D_8)=4$.
 

@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let $G=\text{GL}_2(\FF_p)$.
 
-- Compute the order of $G$, $|G|$.
+- Compute the order of $G$, $\cardinality{G}$.
 
 - Write down an explicit isomorphism from $\ZZ/p\ZZ$ to `\begin{align*} U=\left\{
   \begin{pmatrix}
@@ -43,7 +43,7 @@ Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let
 
 The order of $G=\operatorname{GL}_2(\FF_p)$ is
 $$
-|G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
+\cardinality{G}=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
 $$
 
 ::: pf-proof
@@ -87,11 +87,11 @@ The subgroup $U$ is a Sylow $p$-subgroup of $G$.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref}, $|U|=p$. From step [](#s1){.pf-ref},
+By step [](#s2){.pf-ref}, $\cardinality{U}=p$. From step [](#s1){.pf-ref},
 $$
-|G|=p(p-1)^2(p+1),
+\cardinality{G}=p(p-1)^2(p+1),
 $$
-and neither $p-1$ nor $p+1$ is divisible by $p$. Hence the highest power of $p$ dividing $|G|$ is $p$ itself.
+and neither $p-1$ nor $p+1$ is divisible by $p$. Hence the highest power of $p$ dividing $\cardinality{G}$ is $p$ itself.
 
 :::
 
@@ -150,7 +150,7 @@ $$
 $$
 By step [](#s4){.pf-ref},
 $$
-|N_G(U)|=p(p-1)^2,
+\cardinality{N_G(U)}=p(p-1)^2,
 $$
 so
 $$

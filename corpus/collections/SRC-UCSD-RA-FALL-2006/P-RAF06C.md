@@ -104,7 +104,7 @@ well-defined because if $Tx_1=Tx_2$ then $x_1-x_2\in N(T)\perp y$.
 :::
 
 ::: {.pf-step #p2-s3}
-$\Lambda$ is bounded: $|\Lambda(Tx)|\le \|y\|\|P_{N(T)^\perp}x\|\le C\|Tx\|$ (closed range gives $c\|P_{N(T)^\perp}x\|\le\|Tx\|$).
+$\Lambda$ is bounded: $\abs{\Lambda(Tx)}\le \norm{y}\norm{P_{N(T)^\perp}x}\le C\norm{Tx}$ (closed range gives $c\norm{P_{N(T)^\perp}x}\le\norm{Tx}$).
 
 ::: pf-proof
 closed range estimate.

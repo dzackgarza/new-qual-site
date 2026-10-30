@@ -48,12 +48,12 @@ $$
 Then
 $$
 \sum_{k=0}^{\infty}
-|a_k|r^k
+\abs{a_k}r^k
 $$
 and
 $$
 \sum_{k=0}^{\infty}
-|b_k|s^k
+\abs{b_k}s^k
 $$
 converge.
 
@@ -71,7 +71,7 @@ of convergence.
 
 The sequence
 $$
-|b_k|s^k
+\abs{b_k}s^k
 $$
 is bounded.
 
@@ -80,7 +80,7 @@ is bounded.
 
 Every convergent series has terms tending to zero. Therefore
 $$
-|b_k|s^k\to0.
+\abs{b_k}s^k\to0.
 $$
 In particular, the sequence is bounded: there exists
 $$
@@ -88,7 +88,7 @@ M<\infty
 $$
 such that
 $$
-|b_k|s^k\le M
+\abs{b_k}s^k\le M
 \qquad
 (k\ge0).
 $$
@@ -102,7 +102,7 @@ $$
 The series
 $$
 \sum_{k=0}^{\infty}
-|a_kb_k|(rs)^k
+\abs{a_kb_k}(rs)^k
 $$
 converges.
 
@@ -112,17 +112,17 @@ converges.
 Using step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
-|a_kb_k|(rs)^k
+\abs{a_kb_k}(rs)^k
 &=
-\bigl(|a_k|r^k\bigr)
-\bigl(|b_k|s^k\bigr)\\
+\bigl(\abs{a_k}r^k\bigr)
+\bigl(\abs{b_k}s^k\bigr)\\
 &\le
-M|a_k|r^k.
+M\abs{a_k}r^k.
 \end{aligned}
 $$
 The comparison series
 $$
-\sum M|a_k|r^k
+\sum M\abs{a_k}r^k
 $$
 converges by step [](#s1-1){.pf-ref}.
 
@@ -147,7 +147,7 @@ z
 $$
 with
 $$
-|z|=rs.
+\abs{z}=rs.
 $$
 Therefore its radius of convergence is at least $rs$.
 
@@ -250,7 +250,7 @@ $$
 $$
 for
 $$
-|z|<1,
+\abs{z}<1,
 $$
 so its radius is
 $$

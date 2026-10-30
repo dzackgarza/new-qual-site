@@ -35,14 +35,14 @@ $$
 z ^ { 7 } - 4 z ^ { 3 } + z - { \textstyle { \frac { 1 } { 2 } } }
 $$
 
-have in the unit disk $\{|z|<1\}$? How many zeros does it
-have in the disk $\{|z|<2\}$ of radius two? Justify your answers.
+have in the unit disk $\{\abs{z}<1\}$? How many zeros does it
+have in the disk $\{\abs{z}<2\}$ of radius two? Justify your answers.
 :::
 
 ::: {.solution}
 Write $p(z)=z^7-4z^3+z-1/2$. The requested zero counts,
-with multiplicities, are $\boxed{3}$ in $|z|<1$ and
-$\boxed{7}$ in $|z|<2$.
+with multiplicities, are $\boxed{3}$ in $\abs{z}<1$ and
+$\boxed{7}$ in $\abs{z}<2$.
 
 ::: pf
 
@@ -50,17 +50,17 @@ $\boxed{7}$ in $|z|<2$.
 The cubic term determines the unit-disk count.
 
 ::: pf-proof
-For $|z|=1$,
+For $\abs{z}=1$,
 $$
-|p(z)-(-4z^3)|=|z^7+z-1/2|
-\leq1+1+\frac12=\frac52<4=|-4z^3|.
+\abs{p(z)-(-4z^3)}=\abs{z^7+z-1/2}
+\leq1+1+\frac12=\frac52<4=\abs{-4z^3}.
 $$
 Rouché's theorem applies because both polynomials are
 holomorphic on a neighborhood of the closed disk [@SS03].
 It gives the same number of zeros for $p$ and $-4z^3$
 in that disk. The latter has a zero of multiplicity three
 at zero and no other zero. The strict inequality also
-gives $|p|\geq4-5/2>0$ on the boundary.
+gives $\abs{p}\geq4-5/2>0$ on the boundary.
 :::
 
 :::
@@ -69,15 +69,15 @@ gives $|p|\geq4-5/2>0$ on the boundary.
 The leading term determines the radius-two count.
 
 ::: pf-proof
-For $|z|=2$,
+For $\abs{z}=2$,
 $$
-|p(z)-z^7|=|-4z^3+z-1/2|
-\leq32+2+\frac12=\frac{69}{2}<128=|z^7|.
+\abs{p(z)-z^7}=\abs{-4z^3+z-1/2}
+\leq32+2+\frac12=\frac{69}{2}<128=\abs{z^7}.
 $$
 Another application of Rouché's theorem gives seven
-zeros in $|z|<2$, counted with multiplicity, the same
+zeros in $\abs{z}<2$, counted with multiplicity, the same
 count as for $z^7$ [@SS03]. The strict comparison excludes
-zeros on $|z|=2$. Thus the two counts refer to the open
+zeros on $\abs{z}=2$. Thus the two counts refer to the open
 disks specified in the question, with no boundary ambiguity.
 :::
 

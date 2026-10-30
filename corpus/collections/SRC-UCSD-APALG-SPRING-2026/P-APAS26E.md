@@ -112,18 +112,18 @@ cyclicity of the matrix trace on $M_{n_k}(\CC)$.
 ::: pf-step
 **Positivity and Faithfulness:** For any $a \in \mathcal{A}$, $(a^* a)_k = a_k^* a_k$.
 $$
-\tau(a^* a) = \frac{1}{\sum n_k} \sum_{k=1}^m \operatorname{Tr}(a_k^* a_k) = \frac{1}{\sum n_k} \sum_{k=1}^m \|a_k\|_{HS}^2 \ge 0,
+\tau(a^* a) = \frac{1}{\sum n_k} \sum_{k=1}^m \operatorname{Tr}(a_k^* a_k) = \frac{1}{\sum n_k} \sum_{k=1}^m \norm{a_k}_{HS}^2 \ge 0,
 $$
-where $\|a_k\|_{HS}^2 = \sum_{i,j} |(a_k)_{ij}|^2$ is the Frobenius / Hilbert–Schmidt norm.
+where $\norm{a_k}_{HS}^2 = \sum_{i,j} \abs{(a_k)_{ij}}^2$ is the Frobenius / Hilbert–Schmidt norm.
 
 ::: pf-proof
-$\operatorname{Tr}(M^* M) = \sum |M_{ij}|^2 \ge 0$.
+$\operatorname{Tr}(M^* M) = \sum \abs{M_{ij}}^2 \ge 0$.
 :::
 
 :::
 
 ::: pf-step
-Furthermore, $\tau(a^* a) = 0 \iff \|a_k\|_{HS}^2 = 0$ for all $k=1, \dots, m \iff a_k = 0$ for all $k \iff a = 0$.
+Furthermore, $\tau(a^* a) = 0 \iff \norm{a_k}_{HS}^2 = 0$ for all $k=1, \dots, m \iff a_k = 0$ for all $k \iff a = 0$.
 
 ::: pf-proof
 sum of non-negative terms vanishes if and only if each term vanishes.

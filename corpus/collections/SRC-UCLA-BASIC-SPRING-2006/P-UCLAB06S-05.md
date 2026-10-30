@@ -37,7 +37,7 @@ $$
 $$
 implies
 $$
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 
 
@@ -137,9 +137,9 @@ The case $t=0$ is immediate.
 For all $x,y\ge0$,
 $$
 \boxed{
-|x^\alpha-y^\alpha|
+\abs{x^\alpha-y^\alpha}
 \le
-|x-y|^\alpha
+\abs{x-y}^\alpha
 }.
 $$
 
@@ -186,11 +186,11 @@ $$
 $$
 Then
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|x^\alpha-y^\alpha|<\varepsilon.
+\abs{x^\alpha-y^\alpha}<\varepsilon.
 $$
 
 
@@ -198,9 +198,9 @@ $$
 
 By step [](#s1-3){.pf-ref},
 $$
-|x^\alpha-y^\alpha|
+\abs{x^\alpha-y^\alpha}
 \le
-|x-y|^\alpha
+\abs{x-y}^\alpha
 <
 \delta^\alpha
 =

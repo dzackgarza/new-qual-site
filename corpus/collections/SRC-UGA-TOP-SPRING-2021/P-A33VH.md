@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 For nonempty subsets $A, B$ of a metric space $(X, d)$, define the **setwise distance** as 
 $$
-d(A, B) \definedas \inf \theset{ d(a, b) \st a\in A,\, b\in B } 
+d(A, B) \coloneqq \inf \theset{ d(a, b) \st a\in A,\, b\in B } 
 .$$
 
 a. 
@@ -61,7 +61,7 @@ If $A$ and $B$ are compact, then the setwise distance $d(A,B)$ is attained.
 The product $A\times B$ is compact.
 By the allowed continuity of the metric map,
 $$
-d|_{A\times B}:A\times B\longrightarrow\RR,
+d\restrict_{A\times B}:A\times B\longrightarrow\RR,
 \qquad
 (a,b)\longmapsto d(a,b),
 $$

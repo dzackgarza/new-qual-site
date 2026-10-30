@@ -75,7 +75,7 @@ Hence
 $$
 N\normal G,
 \qquad
-|N|=25.
+\cardinality{N}=25.
 $$
 
 :::
@@ -124,7 +124,7 @@ N\cap P=\{1\}.
 $$
 Since $N\normal G$, the product $NP$ is a subgroup and
 $$
-|NP|=|N||P|=25\cdot3=75=|G|.
+\cardinality{NP}=\cardinality{N}\cardinality{P}=25\cdot3=75=\cardinality{G}.
 $$
 Thus $G=NP$.
 Conjugation by $P$ on $N$ gives a homomorphism
@@ -154,7 +154,7 @@ $$
 generators of $C_{25}$.
 Hence
 $$
-|\operatorname{Aut}(C_{25})|=20.
+\cardinality{\operatorname{Aut}(C_{25})}=20.
 $$
 For a homomorphism
 $$
@@ -163,7 +163,7 @@ $$
 the image has order dividing both $3$ and $20$.
 Therefore
 $$
-|\operatorname{im}\psi|=1,
+\cardinality{\operatorname{im}\psi}=1,
 $$
 so $\psi$ is trivial.
 
@@ -207,7 +207,7 @@ $$
 $$
 and
 $$
-|\operatorname{Aut}(N)|=480.
+\cardinality{\operatorname{Aut}(N)}=480.
 $$
 
 ::: pf-proof
@@ -228,7 +228,7 @@ $$
 choices.
 Thus
 $$
-|\operatorname{GL}_2(\FF_5)|
+\cardinality{\operatorname{GL}_2(\FF_5)}
 =(25-1)(25-5)
 =24\cdot20
 =480
@@ -247,7 +247,7 @@ Every subgroup of order $3$ in $\operatorname{Aut}(N)$ is a Sylow $3$-subgroup, 
 
 By step [](#s6){.pf-ref}, the highest power of $3$ dividing
 $$
-|\operatorname{Aut}(N)|=480
+\cardinality{\operatorname{Aut}(N)}=480
 $$
 is $3$ itself.
 Thus every subgroup of order $3$ is a Sylow $3$-subgroup.

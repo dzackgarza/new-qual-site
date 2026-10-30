@@ -15,7 +15,7 @@ review: draft
 ::: {.problem}
 Let $f = \frac{1}{(z-1)(z-5)}$.
 
-(a) Prove that there is a sequence of rational functions $R_n(z)$ whose poles can only occur at 2 and 6 such that $$\lim_{n \to \infty} \sup_{3 \leq |z| \leq 4} |f(z) - R_n(z)| = 0.$$
+(a) Prove that there is a sequence of rational functions $R_n(z)$ whose poles can only occur at 2 and 6 such that $$\lim_{n \to \infty} \sup_{3 \leq \abs{z} \leq 4} \abs{f(z) - R_n(z)} = 0.$$
 
 (b) Does there exist a sequence of rational functions $R_n(z)$ whose poles can only occur at 6 such that the above holds?
 Justify your answer.
@@ -24,10 +24,10 @@ Justify your answer.
 ::: {.solution}
 Let
 $$
-K=\{z:3\le |z|\le4\}.
+K=\{z:3\le \abs{z}\le4\}.
 $$
 The complement $\CC\setminus K$ has two components: the bounded
-component $|z|<3$ and the unbounded component $|z|>4$. The points $2$ and $6$
+component $\abs{z}<3$ and the unbounded component $\abs{z}>4$. The points $2$ and $6$
 lie in these two components respectively. Since $f$ is holomorphic on a
 neighborhood of $K$, Runge's theorem with prescribed pole set therefore gives
 rational functions $R_n$ whose poles lie only at $2$ and $6$ and such that

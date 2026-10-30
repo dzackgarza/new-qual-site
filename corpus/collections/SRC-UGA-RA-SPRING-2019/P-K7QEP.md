@@ -39,7 +39,7 @@ audit:
 
    (b) Prove that $g\in L^\infty([0,1])$, that the same formula holds for every $f\in L^1([0,1])$, and that
    $$
-   \|g\|_\infty=\|\Lambda\|_{(L^1)^*}.
+   \norm{g}_\infty=\norm{\Lambda}_{(L^1)^*}.
    $$
 :::
 
@@ -53,10 +53,10 @@ Inclusion and density.
 ::: pf-proof
 By Cauchy--Schwarz,
 $$
-\|f\|_1
-=\int_0^1|f|\cdot1
-\le \|f\|_2\|1\|_2
-=\|f\|_2.
+\norm{f}_1
+=\int_0^1\abs{f}\cdot1
+\le \norm{f}_2\norm{1}_2
+=\norm{f}_2.
 $$
 Hence $L^2\subseteq L^1$ continuously.
 
@@ -71,10 +71,10 @@ Restrict $\Lambda$ to $L^2$ and apply Riesz.
 ::: pf-proof
 For $f\in L^2$,
 $$
-|\Lambda(f)|\le \|\Lambda\|\,\|f\|_1
-\le \|\Lambda\|\,\|f\|_2.
+\abs{\Lambda(f)}\le \norm{\Lambda}\,\norm{f}_1
+\le \norm{\Lambda}\,\norm{f}_2.
 $$
-Thus $\Lambda|_{L^2}$ is a bounded linear functional on the Hilbert space $L^2([0,1])$. By the Riesz representation theorem, there is a unique $g\in L^2([0,1])$ such that
+Thus $\Lambda\restrict_{L^2}$ is a bounded linear functional on the Hilbert space $L^2([0,1])$. By the Riesz representation theorem, there is a unique $g\in L^2([0,1])$ such that
 $$
 \Lambda(f)=\int_0^1 f\overline g
 \qquad(f\in L^2).
@@ -84,34 +84,34 @@ $$
 :::
 
 ::: {.pf-step #g-in-linfty}
-Prove that $g\in L^\infty$ and $\|g\|_\infty\le\|\Lambda\|$.
+Prove that $g\in L^\infty$ and $\norm{g}_\infty\le\norm{\Lambda}$.
 
 ::: pf-proof
-Let $M:=\|\Lambda\|$. Suppose for contradiction that
+Let $M:=\norm{\Lambda}$. Suppose for contradiction that
 $$
 m(E)>0,
 \qquad
-E:=\{x:|g(x)|>M+\varepsilon\}
+E:=\{x:\abs{g(x)}>M+\varepsilon\}
 $$
 for some $\varepsilon>0$. Since $E\subset[0,1]$, the function
 $$
-h(x):=\frac{1}{m(E)}\frac{g(x)}{|g(x)|}\mathbf1_E(x)
+h(x):=\frac{1}{m(E)}\frac{g(x)}{\abs{g(x)}}\mathbf1_E(x)
 $$
-belongs to both $L^1$ and $L^2$, and $\|h\|_1=1$. Using the $L^2$ representation,
+belongs to both $L^1$ and $L^2$, and $\norm{h}_1=1$. Using the $L^2$ representation,
 $$
 \begin{aligned}
-|\Lambda(h)|
-&=\left|\frac1{m(E)}\int_E |g(x)|\,dx\right|\\
+\abs{\Lambda(h)}
+&=\abs{\frac1{m(E)}\int_E \abs{g(x)}\,dx}\\
 &>M+\varepsilon,
 \end{aligned}
 $$
-contradicting $|\Lambda(h)|\le M\|h\|_1=M$. Hence
+contradicting $\abs{\Lambda(h)}\le M\norm{h}_1=M$. Hence
 $$
-|g|\le M\quad\text{a.e.},
+\abs{g}\le M\quad\text{a.e.},
 $$
 so $g\in L^\infty$ and
 $$
-\|g\|_\infty\le\|\Lambda\|.
+\norm{g}_\infty\le\norm{\Lambda}.
 $$
 :::
 
@@ -123,7 +123,7 @@ Extend the representation to every $L^1$ function.
 ::: pf-proof
 Let $f\in L^1$. Choose $f_n\in L^2$ with
 $$
-\|f_n-f\|_1\to0.
+\norm{f_n-f}_1\to0.
 $$
 Continuity of $\Lambda$ gives
 $$
@@ -131,8 +131,8 @@ $$
 $$
 Since $g\in L^\infty$,
 $$
-\left|\int (f_n-f)\overline g\right|
-\le \|f_n-f\|_1\|g\|_\infty\to0.
+\abs{\int (f_n-f)\overline g}
+\le \norm{f_n-f}_1\norm{g}_\infty\to0.
 $$
 Therefore
 $$
@@ -149,19 +149,19 @@ Prove equality of the norms.
 ::: pf-proof
 The representation and Hölder's inequality give
 $$
-|\Lambda(f)|\le\|f\|_1\|g\|_\infty,
+\abs{\Lambda(f)}\le\norm{f}_1\norm{g}_\infty,
 $$
 so
 $$
-\|\Lambda\|\le\|g\|_\infty.
+\norm{\Lambda}\le\norm{g}_\infty.
 $$
 Combined with Step [](#g-in-linfty){.pf-ref},
 $$
-\|g\|_\infty\le\|\Lambda\|,
+\norm{g}_\infty\le\norm{\Lambda},
 $$
 we obtain
 $$
-\boxed{\|g\|_\infty=\|\Lambda\|.}
+\boxed{\norm{g}_\infty=\norm{\Lambda}.}
 $$
 :::
 

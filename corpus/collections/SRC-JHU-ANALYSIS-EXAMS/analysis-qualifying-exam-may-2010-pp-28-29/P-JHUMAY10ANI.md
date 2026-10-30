@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $f:[0,1]\times[0,1]\to\RR$ be continuous. Assume that for each $x$, the map $t\mapsto f(x,t)$ is differentiable and that
 $$
-\left|\frac{\partial f}{\partial t}(x,t)\right|\le g(x)
+\abs{\frac{\partial f}{\partial t}(x,t)}\le g(x)
 $$
 for some measurable $g\in L^1([0,1])$. Define
 $$
@@ -54,7 +54,7 @@ q_h(x)=\frac{\partial f}{\partial t}(x,\theta).
 $$
 Hence
 $$
-|q_h(x)|\le g(x).
+\abs{q_h(x)}\le g(x).
 $$
 Since $g\in L^1$, dominated convergence yields
 $$

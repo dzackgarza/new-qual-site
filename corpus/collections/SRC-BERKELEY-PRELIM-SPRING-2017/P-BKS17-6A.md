@@ -46,17 +46,17 @@ converges absolutely in any submultiplicative matrix norm.
 
 ::: pf-proof
 
-Let $\lVert\cdot\rVert$ be such a norm. Then
+Let $\norm{\cdot}$ be such a norm. Then
 $$
-\left\lVert\frac{A^m}{m!}\right\rVert
+\norm{\frac{A^m}{m!}}
 \leq
-\frac{\lVert A\rVert^m}{m!}.
+\frac{\norm{ A}^m}{m!}.
 $$
 The scalar series
 $$
-\sum_{m=0}^{\infty}\frac{\lVert A\rVert^m}{m!}
+\sum_{m=0}^{\infty}\frac{\norm{ A}^m}{m!}
 =
-e^{\lVert A\rVert}
+e^{\norm{ A}}
 $$
 converges, so comparison proves absolute convergence of the matrix series.
 

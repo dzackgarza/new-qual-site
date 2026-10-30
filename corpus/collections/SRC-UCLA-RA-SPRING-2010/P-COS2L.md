@@ -93,7 +93,7 @@ $\omega$ is surjective.
 
 ::: pf-proof
 
-for $u_k(z) = \log|z - p_k| \in A$, the conjugate is $\arg(z - p_k)$ locally, so $\oint_{\gamma_j} *du_k = 2\pi \delta_{jk}$: the images of $u_1, \dots, u_n$ form the basis $\{2\pi e_k\}$ of $\RR^n$.
+for $u_k(z) = \log\abs{z - p_k} \in A$, the conjugate is $\arg(z - p_k)$ locally, so $\oint_{\gamma_j} *du_k = 2\pi \delta_{jk}$: the images of $u_1, \dots, u_n$ form the basis $\{2\pi e_k\}$ of $\RR^n$.
 
 :::
 
@@ -101,7 +101,7 @@ for $u_k(z) = \log|z - p_k| \in A$, the conjugate is $\arg(z - p_k)$ locally, so
 
 ::: {.pf-step #s5}
 
-$A/B \cong \RR^n$, so $\dim(A/B) = n$ with basis $\qty{[\log|z - p_1|], \dots, [\log|z - p_n|]}$.
+$A/B \cong \RR^n$, so $\dim(A/B) = n$ with basis $\qty{[\log\abs{z - p_1}], \dots, [\log\abs{z - p_n}]}$.
 
 ::: pf-proof
 

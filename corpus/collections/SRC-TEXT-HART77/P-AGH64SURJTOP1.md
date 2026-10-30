@@ -43,7 +43,7 @@ $$
 \qquad
 Q\longmapsto[f(Q):1].
 $$
-This is a morphism because its image lies in the standard affine chart $\AA^1\subseteq\PP^1$ and is represented there by the regular function $f|_U$.
+This is a morphism because its image lies in the standard affine chart $\AA^1\subseteq\PP^1$ and is represented there by the regular function $f\restrict_U$.
 :::
 
 :::

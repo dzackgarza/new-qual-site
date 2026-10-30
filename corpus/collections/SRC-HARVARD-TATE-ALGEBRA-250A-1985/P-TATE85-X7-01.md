@@ -81,15 +81,15 @@ A minimal nontrivial normal subgroup $N\trianglelefteq G$ cannot be abelian.
 
 ::: pf-proof
 
-Choose $N$ minimal among the nontrivial normal subgroups of $G$. By step [](#s1-2){.pf-ref}, $N$ is transitive, so $7\mid |N|$.
+Choose $N$ minimal among the nontrivial normal subgroups of $G$. By step [](#s1-2){.pf-ref}, $N$ is transitive, so $7\mid \cardinality{N}$.
 
-If $N$ were abelian, minimal normality would make it an elementary abelian $q$-group for some prime $q$. Since $7\mid |N|$, one would have $q=7$. But
+If $N$ were abelian, minimal normality would make it an elementary abelian $q$-group for some prime $q$. Since $7\mid \cardinality{N}$, one would have $q=7$. But
 $$
 N\le G\le A_7,
 \qquad
-|A_7|=2520=2^3\cdot3^2\cdot5\cdot7,
+\cardinality{A_7}=2520=2^3\cdot3^2\cdot5\cdot7,
 $$
-so the $7$-part of $|N|$ is at most $7$. Hence
+so the $7$-part of $\cardinality{N}$ is at most $7$. Hence
 $$
 N\cong C_7.
 $$
@@ -105,7 +105,7 @@ N_{S_7}(N)\cong \FF_7\rtimes\FF_7^\times
 $$
 of order $42$: the centralizer of a $7$-cycle is $N$ itself, conjugation identifies the quotient of the normalizer by $N$ with a subgroup of $\operatorname{Aut}(C_7)\cong C_6$, and the six affine multipliers $x\mapsto ax$ realize all six automorphisms. This normalizer contains an odd permutation: the affine map $x\mapsto-x$ fixes $0$ and acts on the other six points as three transpositions. Consequently
 $$
-|N_{S_7}(N)\cap A_7|=21.
+\cardinality{N_{S_7}(N)\cap A_7}=21.
 $$
 Since $G\le A_7$, it follows that $G$ is contained in a group of odd order $21$. This contradicts step [](#s1-1){.pf-ref}, which gives an element of order $2$ in $G$. Therefore $N$ is nonabelian.
 
@@ -128,21 +128,21 @@ of isomorphic simple groups. By step [](#s1-3){.pf-ref}, $S$ is nonabelian.
 
 If $N=A_7$, there is nothing to prove in this step. Suppose instead that $N$ is a proper subgroup of $A_7$. A proper subgroup of $A_7$ has index at least $7$: if $H<A_7$ had index $j<7$, the action of the simple group $A_7$ on the $j$ cosets of $H$ would have trivial kernel and would embed $A_7$ into $S_j$, impossible because
 $$
-|A_7|=2520>|S_j|
+\cardinality{A_7}=2520>\cardinality{S_j}
 \qquad(j\le6).
 $$
 Hence
 $$
-|N|\le \frac{2520}{7}=360.
+\cardinality{N}\le \frac{2520}{7}=360.
 $$
 
 The smallest nonabelian simple group has order $60$. Therefore $k\ge2$ would give
 $$
-|N|\ge60^2=3600,
+\cardinality{N}\ge60^2=3600,
 $$
-contrary to $|N|\le360$. Thus $k=1$, so $N$ itself is nonabelian simple.
+contrary to $\cardinality{N}\le360$. Thus $k=1$, so $N$ itself is nonabelian simple.
 
-By step [](#s1-2){.pf-ref}, $N$ is transitive, and therefore $7\mid |N|$. From the list of nonabelian simple groups of order below $1000$ supplied in the problem, the only group of order at most $360$ whose order is divisible by $7$ is
+By step [](#s1-2){.pf-ref}, $N$ is transitive, and therefore $7\mid \cardinality{N}$. From the list of nonabelian simple groups of order below $1000$ supplied in the problem, the only group of order at most $360$ whose order is divisible by $7$ is
 $$
 G_{168}\cong\operatorname{GL}_3(\FF_2)
 \cong\operatorname{PSL}_2(\FF_7).

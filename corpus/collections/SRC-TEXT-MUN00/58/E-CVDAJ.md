@@ -59,7 +59,7 @@ a contradiction.
 
 (b) Suppose $h$ has no fixed point. Define
 $$
-H(x,t)=\frac{(1-t)h(x)-tx}{\|(1-t)h(x)-tx\|}.
+H(x,t)=\frac{(1-t)h(x)-tx}{\norm{(1-t)h(x)-tx}}.
 $$
 The denominator never vanishes: if it did, then $h(x)=\frac{t}{1-t}x$; since both are unit vectors, this forces $h(x)=x$, contrary to hypothesis. Thus $H$ is a homotopy from $h$ to the antipodal map. Hence a fixed-point-free map must satisfy
 $$
@@ -69,11 +69,11 @@ The contrapositive proves (b).
 
 (c) Suppose $h(x)\ne -x$ for every $x$. Then
 $$
-K(x,t)=\frac{(1-t)h(x)+tx}{\|(1-t)h(x)+tx\|}
+K(x,t)=\frac{(1-t)h(x)+tx}{\norm{(1-t)h(x)+tx}}
 $$
 is well defined: a zero would force $h(x)=-x$. Thus $h\simeq\operatorname{id}$, so $\deg h=1$. Contrapositively, if $\deg h\ne1$, some $x$ satisfies $h(x)=-x$.
 
-(d) If $v$ is a nonvanishing tangent vector field, normalize it so $\|v(x)\|=1$. Since $v(x)\perp x$,
+(d) If $v$ is a nonvanishing tangent vector field, normalize it so $\norm{v(x)}=1$. Since $v(x)\perp x$,
 $$
 F(x,t)=\cos(\pi t)x+\sin(\pi t)v(x)
 $$

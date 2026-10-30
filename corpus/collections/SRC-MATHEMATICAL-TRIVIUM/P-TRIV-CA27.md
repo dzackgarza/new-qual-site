@@ -106,7 +106,7 @@ The phase $\cosh t$ has a unique minimum at $t=0$, with
 $$
 \cosh0=1,
 \qquad
-(\cosh t)''\big|_{t=0}=1.
+(\cosh t)''\evalfrom_{t=0}=1.
 $$
 
 

@@ -29,7 +29,7 @@ Suppose that $f : \CC \to \CC$ is non-constant and entire. Prove that the image 
 Suppose, toward a contradiction, that the image of $f$ is not dense in
 $\CC$. Then there exist $z_0\in\CC$ and $\varepsilon>0$ such that
 $$
-|f(z)-z_0|\ge\varepsilon
+\abs{f(z)-z_0}\ge\varepsilon
 \qquad(z\in\CC).
 $$
 
@@ -68,9 +68,9 @@ f(z)-z_0\ne0
 $$
 for every $z$, so $g$ is entire. The same inequality gives
 $$
-|g(z)|
+\abs{g(z)}
 =
-\frac1{|f(z)-z_0|}
+\frac1{\abs{f(z)-z_0}}
 \le
 \frac1{\varepsilon}.
 $$
@@ -130,7 +130,7 @@ Step [](#s1-4){.pf-ref} contradicts the hypothesis that $f$ is nonconstant. Thus
 assumption in step [](#s1-1){.pf-ref} is false. Equivalently, for every $z_0\in\CC$
 and every $\varepsilon>0$, there exists $z\in\CC$ such that
 $$
-\boxed{|f(z)-z_0|<\varepsilon}.
+\boxed{\abs{f(z)-z_0}<\varepsilon}.
 $$
 
 :::

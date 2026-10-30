@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a Banach space with open unit ball $B = \{x \in X : \|x\| < 1\}$.
+Let $X$ be a Banach space with open unit ball $B = \{x \in X : \norm{x} < 1\}$.
 Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such that $X = \{\lambda u + y : \lambda \in \CC,\; y \in \mathcal{M}\}$.
 
 (1) Prove that $B + \mathcal{M} = X$ if and only if $\mathcal{M}$ is not closed.
@@ -58,7 +58,7 @@ Thus $\mathcal M$ is dense.
 
 Fix $x\in X$. By density, choose $m\in\mathcal M$ such that
 $$
-\|x-m\|<1.
+\norm{x-m}<1.
 $$
 Then $x-m\in B$, so
 $$
@@ -82,20 +82,20 @@ d:=\operatorname{dist}(u,\mathcal M)>0.
 $$
 For every scalar $\lambda$,
 $$
-\operatorname{dist}(\lambda u,\mathcal M)=|\lambda|d.
+\operatorname{dist}(\lambda u,\mathcal M)=\abs{\lambda}d.
 $$
-Choose $|\lambda|>1/d$. If $\lambda u\in B+\mathcal M$, then
+Choose $\abs{\lambda}>1/d$. If $\lambda u\in B+\mathcal M$, then
 $$
 \lambda u=b+m
 $$
 for some $b\in B$ and $m\in\mathcal M$. Hence
 $$
 \operatorname{dist}(\lambda u,\mathcal M)
-\le\|b\|<1,
+\le\norm{b}<1,
 $$
 contradicting
 $$
-\operatorname{dist}(\lambda u,\mathcal M)=|\lambda|d>1.
+\operatorname{dist}(\lambda u,\mathcal M)=\abs{\lambda}d>1.
 $$
 Thus $B+\mathcal M\ne X$.
 

@@ -40,8 +40,8 @@ Prove that $a_2=0$. (Hint: consider the functions $g_n(z)=f\circ\cdots\circ f(z)
 
 ::: {.solution}
 For $n\ge1$, let $g_n=f^{\circ n}$. Choose $R>0$ such that
-$|w|\le R$ for every $w\in U$, and choose $r>0$ such that
-$\{z:|z|\le r\}\subset U$.
+$\abs{w}\le R$ for every $w\in U$, and choose $r>0$ such that
+$\{z:\abs{z}\le r\}\subset U$.
 
 ::: pf
 
@@ -86,15 +86,15 @@ The claim follows by induction.
 
 ::: {.pf-step #s2}
 
-For every $n\ge1$ and every $z$ with $|z|=r$,
+For every $n\ge1$ and every $z$ with $\abs{z}=r$,
 $$
-|g_n(z)|\le R.
+\abs{g_n(z)}\le R.
 $$
 
 ::: pf-proof
 
 Each iterate $g_n$ maps $U$ into $U$ because $f(U)\subset U$. Since the
-circle $|z|=r$ lies in $U$, one has $g_n(z)\in U$, and the choice of $R$
+circle $\abs{z}=r$ lies in $U$, one has $g_n(z)\in U$, and the choice of $R$
 gives the estimate.
 
 :::
@@ -105,7 +105,7 @@ gives the estimate.
 
 For every $n\ge1$,
 $$
-n|a_2|\le\frac{R}{r^2}.
+n\abs{a_2}\le\frac{R}{r^2}.
 $$
 
 ::: pf-proof
@@ -116,12 +116,12 @@ $$
 na_2
 =
 \frac{1}{2\pi i}
-\int_{|z|=r}\frac{g_n(z)}{z^3}\,dz.
+\int_{\abs{z}=r}\frac{g_n(z)}{z^3}\,dz.
 $$
 Using step [](#s2){.pf-ref} and the fact that the circle has length $2\pi r$,
 $$
 \begin{aligned}
-n|a_2|
+n\abs{a_2}
 &\le
 \frac{1}{2\pi}(2\pi r)\frac{R}{r^3}\\
 &=
@@ -144,9 +144,9 @@ $$
 
 Step [](#s3){.pf-ref} yields
 $$
-|a_2|\le\frac{R}{nr^2}
+\abs{a_2}\le\frac{R}{nr^2}
 $$
-for every $n\ge1$. Letting $n\to\infty$ gives $|a_2|=0$.
+for every $n\ge1$. Letting $n\to\infty$ gives $\abs{a_2}=0$.
 
 :::
 

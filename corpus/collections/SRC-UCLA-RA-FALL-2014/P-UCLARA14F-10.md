@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let us introduce a vector space $\mathcal{B}$ defined as follows,
 $$
-\mathcal{B} = \left\{ u : \CC \to \CC, \ u \text{ is holomorphic and } \iint_{\CC} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy < \infty \right\}.
+\mathcal{B} = \left\{ u : \CC \to \CC, \ u \text{ is holomorphic and } \iint_{\CC} \abs{u(x+iy)}^2 e^{-(x^2+y^2)}\,dx\,dy < \infty \right\}.
 $$
 Show that $\mathcal{B}$ becomes a *complete* space when equipped with the norm
 $$
-\|u\|^2 = \iint_{\CC} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy.
+\norm{u}^2 = \iint_{\CC} \abs{u(x+iy)}^2 e^{-(x^2+y^2)}\,dx\,dy.
 $$
 :::
 
@@ -35,7 +35,7 @@ $$
 
 Let
 $$
-d\mu(z)=e^{-|z|^2}\,dA(z),
+d\mu(z)=e^{-\abs{z}^2}\,dA(z),
 $$
 where $dA=dx\,dy$ is planar Lebesgue measure.
 
@@ -60,7 +60,7 @@ The measure $\mu$ is positive and $\sigma$-finite; in fact
 $$
 \mu(\CC)
 =
-\int_{\CC}e^{-|z|^2}\,dA(z)
+\int_{\CC}e^{-\abs{z}^2}\,dA(z)
 =\pi<\infty.
 $$
 Thus the usual $L^2$ completeness theorem applies. Sums and scalar
@@ -80,7 +80,7 @@ K_1
 $$
 Then there exists a constant $c_K>0$ such that
 $$
-e^{-|w|^2}\ge c_K
+e^{-\abs{w}^2}\ge c_K
 \qquad(w\in K_1).
 $$
 
@@ -89,7 +89,7 @@ $$
 
 The set $K_1$ is compact. The positive continuous function
 $$
-w\longmapsto e^{-|w|^2}
+w\longmapsto e^{-\abs{w}^2}
 $$
 therefore attains a positive minimum on $K_1$.
 
@@ -102,10 +102,10 @@ therefore attains a positive minimum on $K_1$.
 If $h$ is entire, then
 $$
 \boxed{
-\sup_{z\in K}|h(z)|
+\sup_{z\in K}\abs{h(z)}
 \le
 \frac1{\sqrt{\pi c_K}}
-\|h\|_{L^2(\mu)}}.
+\norm{h}_{L^2(\mu)}}.
 $$
 
 
@@ -122,26 +122,26 @@ $$
 Hence
 $$
 \begin{aligned}
-|h(z)|
+\abs{h(z)}
 &\le
 \frac1\pi
-\int_{D(z,1)}|h(w)|\,dA(w)\\
+\int_{D(z,1)}\abs{h(w)}\,dA(w)\\
 &\le
 \frac1\pi
 \bigl(\pi\bigr)^{1/2}
 \left(
-\int_{D(z,1)}|h(w)|^2\,dA(w)
+\int_{D(z,1)}\abs{h(w)}^2\,dA(w)
 \right)^{1/2}\\
 &\le
 \frac1{\sqrt\pi}
 \left(
 \frac1{c_K}
 \int_{D(z,1)}
-|h(w)|^2e^{-|w|^2}\,dA(w)
+\abs{h(w)}^2e^{-\abs{w}^2}\,dA(w)
 \right)^{1/2}\\
 &\le
 \frac1{\sqrt{\pi c_K}}
-\|h\|_{L^2(\mu)}.
+\norm{h}_{L^2(\mu)}.
 \end{aligned}
 $$
 The bound is independent of $z\in K$, so taking the supremum gives the
@@ -165,9 +165,9 @@ h=f_n-f_m
 $$
 gives
 $$
-\sup_K|f_n-f_m|
+\sup_K\abs{f_n-f_m}
 \le
-C_K\|f_n-f_m\|_{L^2(\mu)}.
+C_K\norm{f_n-f_m}_{L^2(\mu)}.
 $$
 Since $(f_n)$ is Cauchy in the given norm, the right-hand side tends to zero
 as $n,m\to\infty$. Thus $(f_n)$ is uniformly Cauchy on every compact set.
@@ -255,16 +255,16 @@ The $L^2(\mu)$ limit belongs to $\mathcal B$.
 By step [](#s1-7){.pf-ref}, the equivalence class $f$ has the entire representative $g$.
 Also
 $$
-\|g\|_{L^2(\mu)}
+\norm{g}_{L^2(\mu)}
 =
-\|f\|_{L^2(\mu)}
+\norm{f}_{L^2(\mu)}
 <\infty.
 $$
 Thus $g\in\mathcal B$, and
 $$
-\|f_n-g\|_{L^2(\mu)}
+\norm{f_n-g}_{L^2(\mu)}
 =
-\|f_n-f\|_{L^2(\mu)}
+\norm{f_n-f}_{L^2(\mu)}
 \longrightarrow0.
 $$
 

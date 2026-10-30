@@ -62,7 +62,7 @@ that the disk $B(a,r)$ is contained in $\Omega$.
 
 For every $z\in\CC$,
 $$
-|f(z)-a|\ge r.
+\abs{f(z)-a}\ge r.
 $$
 
 
@@ -92,7 +92,7 @@ is entire and bounded.
 
 Step [](#s1-2){.pf-ref} shows that $f(z)-a$ never vanishes, so $g$ is entire. The same estimate gives
 $$
-|g(z)|
+\abs{g(z)}
 \le
 \frac1r
 $$

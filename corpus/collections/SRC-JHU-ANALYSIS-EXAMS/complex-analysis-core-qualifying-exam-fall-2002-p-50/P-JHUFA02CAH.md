@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine all entire functions $f: \CC \to \CC$ for which $|f(z)| \le |z|^2$ for all $z \in \CC$.
+Determine all entire functions $f: \CC \to \CC$ for which $\abs{f(z)} \le \abs{z}^2$ for all $z \in \CC$.
 :::
 
 ::: {.solution}

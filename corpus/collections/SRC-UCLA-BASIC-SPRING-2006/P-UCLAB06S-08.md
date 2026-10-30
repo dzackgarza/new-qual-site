@@ -78,7 +78,7 @@ $$
 
 The orthogonality relation implies
 $$
-\|Tx\|_2=\|x\|_2
+\norm{Tx}_2=\norm{x}_2
 $$
 for every $x\in\RR^{2n+1}$.
 
@@ -95,14 +95,14 @@ T^tT=I.
 $$
 Hence
 $$
-\|Tx\|_2^2
+\norm{Tx}_2^2
 =(Tx)^t(Tx)
 =
 x^tT^tTx
 =
 x^tx
 =
-\|x\|_2^2.
+\norm{x}_2^2.
 $$
 Taking square roots gives the claim.
 
@@ -114,7 +114,7 @@ Taking square roots gives the claim.
 
 The real eigenvalue $\lambda_0$ satisfies
 $$
-|\lambda_0|=1.
+\abs{\lambda_0}=1.
 $$
 
 
@@ -127,15 +127,15 @@ $$
 for some nonzero $v$.
 Using step [](#s1-3){.pf-ref},
 $$
-\|v\|_2
+\norm{v}_2
 =
-\|Tv\|_2
+\norm{Tv}_2
 =
-\|\lambda_0v\|_2
+\norm{\lambda_0v}_2
 =
-|\lambda_0|\|v\|_2.
+\abs{\lambda_0}\norm{v}_2.
 $$
-Since $\|v\|_2>0$, division gives $|\lambda_0|=1$.
+Since $\norm{v}_2>0$, division gives $\abs{\lambda_0}=1$.
 
 :::
 

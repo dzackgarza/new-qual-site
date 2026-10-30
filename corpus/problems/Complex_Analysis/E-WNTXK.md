@@ -26,7 +26,7 @@ Let $T(w)=\frac{w-i}{w+i}$, the Cayley map, which maps $\HH$ bijectively onto $\
 ::: pf
 
 ::: {.pf-step #bounded}
-$F\definedas T\circ f$ is entire and bounded.
+$F\coloneqq T\circ f$ is entire and bounded.
 
 ::: pf-proof
 $f(\CC)\subseteq\HH$ avoids the pole $-i$ of $T$, so $F$ is entire, and $F(\CC)\subseteq\DD$.

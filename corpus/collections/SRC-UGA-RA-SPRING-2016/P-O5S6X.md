@@ -40,7 +40,7 @@ Show that
 
 2. $f$ is uniformly continuous.
 
-3. $\lim _{|x| \to \infty} f(x) = 0$.
+3. $\lim _{\abs{x} \to \infty} f(x) = 0$.
 
 > Hint:
 $$
@@ -86,10 +86,10 @@ Prove uniform continuity.
 For $h\in\RR$,
 $$
 \begin{aligned}
-|f(x+h)-f(x)|
+\abs{f(x+h)-f(x)}
 &\le \int_{\RR}\chi_E(y)
-|\widetilde\chi_E(x+h-y)-\widetilde\chi_E(x-y)|\,dy\\
-&\le \|\tau_h\widetilde\chi_E-\widetilde\chi_E\|_1.
+\abs{\widetilde\chi_E(x+h-y)-\widetilde\chi_E(x-y)}\,dy\\
+&\le \norm{\tau_h\widetilde\chi_E-\widetilde\chi_E}_1.
 \end{aligned}
 $$
 Translations are continuous in $L^1$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Hence $f$ is uniformly continuous.
@@ -100,7 +100,7 @@ Translations are continuous in $L^1$, so the right-hand side tends to $0$ as $h\
 
 ::: pf-step
 
-Prove that $f(x)\to0$ as $|x|\to\infty$.
+Prove that $f(x)\to0$ as $\abs{x}\to\infty$.
 
 ::: pf-proof
 
@@ -108,9 +108,9 @@ Let $\varepsilon>0$. Choose $R>0$ such that
 $$
 m(E\setminus[-R,R])<\varepsilon.
 $$
-If $|x|>2R$ and $y\in E\cap(E+x)$, then $y\in E$ and $y-x\in E$. The two numbers $y$ and $y-x$ cannot both lie in $[-R,R]$, because then
+If $\abs{x}>2R$ and $y\in E\cap(E+x)$, then $y\in E$ and $y-x\in E$. The two numbers $y$ and $y-x$ cannot both lie in $[-R,R]$, because then
 $$
-|x|=|y-(y-x)|\le2R.
+\abs{x}=\abs{y-(y-x)}\le2R.
 $$
 Therefore
 $$
@@ -127,7 +127,7 @@ f(x)=m(E\cap(E+x))
 $$
 Hence
 $$
-\boxed{\lim_{|x|\to\infty}f(x)=0.}
+\boxed{\lim_{\abs{x}\to\infty}f(x)=0.}
 $$
 
 :::

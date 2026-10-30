@@ -34,7 +34,7 @@ differ from one equation to another.
 
 The general solution of $f'(t)=1/(t+1)$ is
 $$
-f(t)=\log|t+1|+C
+f(t)=\log\abs{t+1}+C
 $$
 on any interval not containing $t=-1$.
 
@@ -43,7 +43,7 @@ on any interval not containing $t=-1$.
 
 On such an interval,
 $$
-\frac{d}{dt}\log|t+1|=\frac1{t+1}.
+\frac{d}{dt}\log\abs{t+1}=\frac1{t+1}.
 $$
 All antiderivatives differ by an additive constant.
 
@@ -170,7 +170,7 @@ Collecting the six answers,
 $$
 \boxed{
 \begin{aligned}
-1.\;&\log|t+1|+C,\\
+1.\;&\log\abs{t+1}+C,\\
 2.\;&e^t+\frac{t^3}{6}+C_1t+C_2,\\
 3.\;&C_1\cos t+C_2\sin t+t+2,\\
 4.\;&e^t\left(C_1+C_2t+\frac{t^2}{2}\right),\\

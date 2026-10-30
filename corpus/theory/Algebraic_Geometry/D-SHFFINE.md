@@ -23,13 +23,13 @@ prompts:
 ::: {.definition title="Soft and fine sheaves"}
 Let $X$ be a locally compact paracompact Hausdorff space and $\mathcal{F}$ a sheaf of abelian groups on $X$.
 
-- $\mathcal{F}$ is \dfn{soft} if for every closed $Z \subseteq X$ the restriction $\Gamma(X, \mathcal{F}) \to \Gamma(Z, \mathcal{F}|_Z)$ is surjective.
+- $\mathcal{F}$ is \dfn{soft} if for every closed $Z \subseteq X$ the restriction $\Gamma(X, \mathcal{F}) \to \Gamma(Z, \mathcal{F}\restrict_Z)$ is surjective.
 
 - $\mathcal{F}$ is \dfn{c-soft} if for every compact $K \subseteq X$ the restriction
   $$
   \Gamma_c(X,\mathcal F)
   \longrightarrow
-  \Gamma(K,\mathcal F|_K)
+  \Gamma(K,\mathcal F\restrict_K)
   $$
   is surjective, where $\Gamma_c(X,\mathcal F)$ denotes the global sections with compact support.
 

@@ -28,7 +28,7 @@ Show that $c_0$ is complete.
 
 ::: pf-step
 
-Is the closed unit ball $\{x\in c_0:\|x\|\le1\}$ compact?
+Is the closed unit ball $\{x\in c_0:\norm{x}\le1\}$ compact?
 Prove your answer.
 
 :::
@@ -42,7 +42,7 @@ Is
 :::
 
 $$
-\left\{x\in c_0:\sum_k k|x_k|\le1\right\}
+\left\{x\in c_0:\sum_k k\abs{x_k}\le1\right\}
 $$
 compact?
 Prove your answer.
@@ -74,11 +74,11 @@ is Cauchy.
 
 For all $m,\ell$,
 $$
-\left|
+\abs{
 x_k^{(m)}-x_k^{(\ell)}
-\right|
+}
 \le
-\|x^{(m)}-x^{(\ell)}\|_\infty.
+\norm{x^{(m)}-x^{(\ell)}}_\infty.
 $$
 Since the right side tends to $0$ as $m,\ell\to\infty$, the coordinate sequence is Cauchy in $\RR$.
 
@@ -105,25 +105,25 @@ uniformly in the supremum norm.
 Let $\varepsilon>0$.
 Choose $M$ such that
 $$
-\|x^{(m)}-x^{(\ell)}\|_\infty<\varepsilon
+\norm{x^{(m)}-x^{(\ell)}}_\infty<\varepsilon
 $$
 for all $m,\ell\ge M$.
 Fix $m\ge M$ and $k$.
 Letting $\ell\to\infty$ in
 $$
-\left|
+\abs{
 x_k^{(m)}-x_k^{(\ell)}
-\right|
+}
 <\varepsilon
 $$
 gives
 $$
-|x_k^{(m)}-x_k|
+\abs{x_k^{(m)}-x_k}
 \le\varepsilon.
 $$
 Since this holds for every $k$,
 $$
-\|x^{(m)}-x\|_\infty
+\norm{x^{(m)}-x}_\infty
 \le
 \varepsilon.
 $$
@@ -146,7 +146,7 @@ The limit sequence $x$ belongs to $c_0$.
 Fix $\varepsilon>0$.
 By step [](#p2-s2){.pf-ref}, choose $m$ such that
 $$
-\|x-x^{(m)}\|_\infty<\frac{\varepsilon}{2}.
+\norm{x-x^{(m)}}_\infty<\frac{\varepsilon}{2}.
 $$
 Since
 $$
@@ -154,16 +154,16 @@ x^{(m)}\in c_0,
 $$
 there exists $K$ such that
 $$
-|x_k^{(m)}|<\frac{\varepsilon}{2}
+\abs{x_k^{(m)}}<\frac{\varepsilon}{2}
 $$
 for all $k\ge K$.
 Then
 $$
-|x_k|
+\abs{x_k}
 \le
-|x_k-x_k^{(m)}|
+\abs{x_k-x_k^{(m)}}
 +
-|x_k^{(m)}|
+\abs{x_k^{(m)}}
 <
 \varepsilon
 $$
@@ -206,7 +206,7 @@ $$
 be the sequence with a $1$ in the $m$th coordinate and zeros elsewhere.
 Then
 $$
-\|e_m\|_\infty=1.
+\norm{e_m}_\infty=1.
 $$
 
 ::: pf-proof
@@ -226,7 +226,7 @@ m\ne\ell,
 $$
 then
 $$
-\|e_m-e_\ell\|_\infty=1.
+\norm{e_m-e_\ell}_\infty=1.
 $$
 
 ::: pf-proof
@@ -259,7 +259,7 @@ In a compact metric space every sequence has a convergent subsequence.
 Thus
 $$
 \boxed{
-\{x\in c_0:\|x\|_\infty\le1\}
+\{x\in c_0:\norm{x}_\infty\le1\}
 \text{ is not compact}.
 }
 $$
@@ -277,13 +277,13 @@ K
 \left\{
 x\in c_0:
 \sum_{k=1}^{\infty}
-k|x_k|
+k\abs{x_k}
 \le1
 \right\}.
 $$
 Then for every $x\in K$ and every $k$,
 $$
-|x_k|
+\abs{x_k}
 \le
 \frac1k.
 $$
@@ -293,9 +293,9 @@ $$
 Every term in the defining series is nonnegative.
 Hence
 $$
-k|x_k|
+k\abs{x_k}
 \le
-\sum_{j=1}^{\infty}j|x_j|
+\sum_{j=1}^{\infty}j\abs{x_j}
 \le1.
 $$
 Divide by $k$.
@@ -328,7 +328,7 @@ $$
 
 By step [](#p2-s8){.pf-ref},
 $$
-|x_1^{(m)}|\le1
+\abs{x_1^{(m)}}\le1
 $$
 for all $m$.
 Bolzano--Weierstrass gives a subsequence along which the first coordinate converges.
@@ -380,7 +380,7 @@ $$
 $$
 one has
 $$
-|x_k^{(m_j)}-x_k|
+\abs{x_k^{(m_j)}-x_k}
 <
 \varepsilon.
 $$
@@ -391,7 +391,7 @@ k>N,
 $$
 step [](#p2-s8){.pf-ref} gives
 $$
-|x_k^{(m_j)}|
+\abs{x_k^{(m_j)}}
 \le
 \frac1k
 \le
@@ -399,7 +399,7 @@ $$
 $$
 Passing to the coordinatewise limit gives
 $$
-|x_k|
+\abs{x_k}
 \le
 \frac1k
 \le
@@ -407,7 +407,7 @@ $$
 $$
 Hence
 $$
-|x_k^{(m_j)}-x_k|
+\abs{x_k^{(m_j)}-x_k}
 \le
 \frac{2}{N+1}
 <
@@ -417,7 +417,7 @@ $$
 Thus for all sufficiently large $j$,
 $$
 \sup_k
-|x_k^{(m_j)}-x_k|
+\abs{x_k^{(m_j)}-x_k}
 <
 \varepsilon.
 $$
@@ -439,7 +439,7 @@ The limit sequence $x$ belongs to $K$.
 
 First, step [](#p2-s8){.pf-ref} passes to the coordinatewise limit:
 $$
-|x_k|
+\abs{x_k}
 \le
 \frac1k.
 $$
@@ -455,17 +455,17 @@ $$
 For every positive integer $N$,
 $$
 \sum_{k=1}^N
-k|x_k|
+k\abs{x_k}
 =
 \lim_{j\to\infty}
 \sum_{k=1}^N
-k|x_k^{(m_j)}|
+k\abs{x_k^{(m_j)}}
 \le1.
 $$
 The partial sums on the left are nondecreasing in $N$ and bounded above by $1$.
 Therefore
 $$
-\sum_{k=1}^{\infty}k|x_k|
+\sum_{k=1}^{\infty}k\abs{x_k}
 \le1.
 $$
 Hence

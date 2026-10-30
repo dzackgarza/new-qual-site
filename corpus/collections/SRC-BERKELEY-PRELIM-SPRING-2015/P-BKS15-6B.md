@@ -127,7 +127,7 @@ Then $\dim W=3$ and, for every nonzero vector in $W$,
 $$
 q=y_1^2+y_2^2+y_4^2>0.
 $$
-Thus $q|_W$ is positive definite.
+Thus $q\restrict_W$ is positive definite.
 
 :::
 

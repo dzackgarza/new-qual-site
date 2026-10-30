@@ -32,7 +32,7 @@ for every $z\in V$, then $h$ is constant on $V$. Find all possible values of suc
 
 For every $z\in V$,
 $$
-|h(z)|\in\{0,1\}.
+\abs{h(z)}\in\{0,1\}.
 $$
 
 
@@ -44,13 +44,13 @@ h(z)^2=\overline{h(z)}
 $$
 gives
 $$
-|h(z)|^2
+\abs{h(z)}^2
 =
-|h(z)|.
+\abs{h(z)}.
 $$
 If
 $$
-r=|h(z)|\ge0,
+r=\abs{h(z)}\ge0,
 $$
 then
 $$
@@ -130,7 +130,7 @@ If $c=0$, this holds.
 
 If $c\ne0$, step [](#s1-1){.pf-ref} gives
 $$
-|c|=1,
+\abs{c}=1,
 $$
 so
 $$

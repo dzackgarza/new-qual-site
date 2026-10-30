@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF18B
 kind: problem
-title: Entrywise $\ell^3$ decay of powers when all eigenvalues satisfy $|\lambda|<1$
+title: Entrywise $\ell^3$ decay of powers when all eigenvalues satisfy $\abs{\lambda}<1$
 classification:
   areas:
   - applied-algebra
@@ -21,11 +21,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in\CC^{n\times n}$ be a matrix such that $|\lambda_i|<1$ for all its eigenvalues $\lambda_i$.
+Let $A\in\CC^{n\times n}$ be a matrix such that $\abs{\lambda_i}<1$ for all its eigenvalues $\lambda_i$.
 Let $B_k=A^k$.
 Do we necessarily have
 $$
-\lim_{k\to\infty}\Biggl(\sum_{i,j=1}^{n}\bigl|(B_k)_{ij}\bigr|^3\Biggr)=0?
+\lim_{k\to\infty}\Biggl(\sum_{i,j=1}^{n}\abs{(B_k)_{ij}}^3\Biggr)=0?
 $$
 If yes, give a proof; if no, give a counterexample.
 :::
@@ -43,11 +43,11 @@ It is enough to prove that $A^k\to0$ entrywise.
 
 If $(A^k)_{ij}\to0$ for every pair $(i,j)$, then for each fixed $(i,j)$,
 $$
-|(A^k)_{ij}|^3\to0.
+\abs{(A^k)_{ij}}^3\to0.
 $$
 There are only $n^2$ terms, so
 $$
-\sum_{i,j=1}^n |(A^k)_{ij}|^3\longrightarrow0.
+\sum_{i,j=1}^n \abs{(A^k)_{ij}}^3\longrightarrow0.
 $$
 
 :::
@@ -97,7 +97,7 @@ Since $N^r=0$ for $r\ge m$, all terms with $r\ge m$ vanish.
 
 ::: {.pf-step #s4}
 
-If $|\lambda|<1$, then
+If $\abs{\lambda}<1$, then
 $$
 J_m(\lambda)^k\longrightarrow0
 $$
@@ -107,11 +107,11 @@ entrywise as $k\to\infty$.
 
 If $\lambda=0$, then $J_m(0)=N$ and $J_m(0)^k=0$ for every $k\ge m$.
 
-Assume $0<|\lambda|<1$. For every fixed $r<m$,
+Assume $0<\abs{\lambda}<1$. For every fixed $r<m$,
 $$
-\left|\binom{k}{r}\lambda^{k-r}\right|
-\le \frac{k^r}{r!}|\lambda|^{k-r}
-=\frac{|\lambda|^{-r}}{r!}k^r|\lambda|^k.
+\abs{\binom{k}{r}\lambda^{k-r}}
+\le \frac{k^r}{r!}\abs{\lambda}^{k-r}
+=\frac{\abs{\lambda}^{-r}}{r!}k^r\abs{\lambda}^k.
 $$
 For every $0<q<1$ and every fixed nonnegative integer $r$,
 $$
@@ -123,7 +123,7 @@ $$
 =q\left(1+\frac1k\right)^r\longrightarrow q<1,
 $$
 so the sequence eventually decreases geometrically to $0$.
-Taking $q=|\lambda|$ shows that every scalar coefficient in step [](#s3){.pf-ref} tends to $0$. Since the sum in step [](#s3){.pf-ref} has only finitely many fixed matrices $N^r$, every entry of $J_m(\lambda)^k$ tends to $0$.
+Taking $q=\abs{\lambda}$ shows that every scalar coefficient in step [](#s3){.pf-ref} tends to $0$. Since the sum in step [](#s3){.pf-ref} has only finitely many fixed matrices $N^r$, every entry of $J_m(\lambda)^k$ tends to $0$.
 
 :::
 
@@ -133,12 +133,12 @@ Taking $q=|\lambda|$ shows that every scalar coefficient in step [](#s3){.pf-ref
 
 Therefore $A^k\to0$ entrywise, and hence
 $$
-\boxed{\lim_{k\to\infty}\sum_{i,j=1}^{n}|(A^k)_{ij}|^3=0}.
+\boxed{\lim_{k\to\infty}\sum_{i,j=1}^{n}\abs{(A^k)_{ij}}^3=0}.
 $$
 
 ::: pf-proof
 
-Every Jordan block of $J$ has eigenvalue $\lambda$ satisfying $|\lambda|<1$ by hypothesis. Thus step [](#s4){.pf-ref} applies to every block, so $J^k\to0$ entrywise. By step [](#s2){.pf-ref}, $A^k\to0$ entrywise, and step [](#s1){.pf-ref} gives the stated limit.
+Every Jordan block of $J$ has eigenvalue $\lambda$ satisfying $\abs{\lambda}<1$ by hypothesis. Thus step [](#s4){.pf-ref} applies to every block, so $J^k\to0$ entrywise. By step [](#s2){.pf-ref}, $A^k\to0$ entrywise, and step [](#s1){.pf-ref} gives the stated limit.
 
 :::
 

@@ -45,11 +45,11 @@ The semicircular contribution tends to zero.
 ::: pf-proof
 On the upper half-plane,
 $$
-|e^{iz}|=e^{-\operatorname{Im}z}\le1.
+\abs{e^{iz}}=e^{-\operatorname{Im}z}\le1.
 $$
-On $|z|=R$,
+On $\abs{z}=R$,
 $$
-|1+z^4|\ge R^4-1.
+\abs{1+z^4}\ge R^4-1.
 $$
 Since the semicircle has length $\pi R$, its integral has absolute value at
 most

@@ -122,7 +122,7 @@ has degree two, giving $[K:\QQ]=6$.
 As a splitting field in characteristic zero, $K$ is
 Galois. Its automorphisms permute the three roots
 faithfully because the roots generate $K$. Its order
-six equals $|S_3|$, so it acts as every permutation.
+six equals $\cardinality{S_3}$, so it acts as every permutation.
 More explicitly, a three-cycle is
 $r(c)=\zeta c$, $r(\zeta)=\zeta$; it exists because
 $[K:\QQ(\zeta)]=3$ makes $x^3-5$ still minimal

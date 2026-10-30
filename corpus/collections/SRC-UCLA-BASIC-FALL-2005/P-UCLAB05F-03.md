@@ -47,17 +47,17 @@ The sequence $(f_j)$ is uniformly bounded for all sufficiently large $j$.
 
 Since $F$ is continuous on the compact interval $[0,1]$, there is
 $$
-K=\|F\|_\infty<\infty.
+K=\norm{F}_\infty<\infty.
 $$
 Uniform convergence gives $J$ such that
 $$
-\|f_j-F\|_\infty<1
+\norm{f_j-F}_\infty<1
 $$
 for $j\ge J$. Hence
 $$
-\|f_j\|_\infty
+\norm{f_j}_\infty
 \le
-\|F\|_\infty+\|f_j-F\|_\infty
+\norm{F}_\infty+\norm{f_j-F}_\infty
 <
 K+1
 $$
@@ -71,7 +71,7 @@ for all $j\ge J$.
 
 One has
 $$
-\|f_j^2-F^2\|_\infty\longrightarrow0.
+\norm{f_j^2-F^2}_\infty\longrightarrow0.
 $$
 
 
@@ -80,21 +80,21 @@ $$
 For $j\ge J$ and every $x\in[0,1]$,
 $$
 \begin{aligned}
-|f_j(x)^2-F(x)^2|
+\abs{f_j(x)^2-F(x)^2}
 &=
-|f_j(x)-F(x)|\,|f_j(x)+F(x)|\\
+\abs{f_j(x)-F(x)}\,\abs{f_j(x)+F(x)}\\
 &\le
-\|f_j-F\|_\infty
-\bigl(\|f_j\|_\infty+\|F\|_\infty\bigr)\\
+\norm{f_j-F}_\infty
+\bigl(\norm{f_j}_\infty+\norm{F}_\infty\bigr)\\
 &\le
-(2K+1)\|f_j-F\|_\infty.
+(2K+1)\norm{f_j-F}_\infty.
 \end{aligned}
 $$
 Taking the supremum over $x$ gives
 $$
-\|f_j^2-F^2\|_\infty
+\norm{f_j^2-F^2}_\infty
 \le
-(2K+1)\|f_j-F\|_\infty\to0.
+(2K+1)\norm{f_j-F}_\infty\to0.
 $$
 
 :::
@@ -118,15 +118,15 @@ $$
 By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_0^1f_j(x)^2\,dx
 -
 \int_0^1F(x)^2\,dx
-\right|
+}
 &\le
-\int_0^1|f_j(x)^2-F(x)^2|\,dx\\
+\int_0^1\abs{f_j(x)^2-F(x)^2}\,dx\\
 &\le
-\|f_j^2-F^2\|_\infty
+\norm{f_j^2-F^2}_\infty
 \longrightarrow0.
 \end{aligned}
 $$

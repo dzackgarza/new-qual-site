@@ -128,7 +128,7 @@ Set
 $$
 U=\operatorname{span}\{v,w\}.
 $$
-In the basis $(v,w)$, the matrix of $\beta|_U$ is
+In the basis $(v,w)$, the matrix of $\beta\restrict_U$ is
 $$
 \begin{pmatrix}
 0&c\\
@@ -137,7 +137,7 @@ $$
 \qquad
 c=\beta(v,w)\neq0,
 $$
-so $\beta|_U$ is nondegenerate.
+so $\beta\restrict_U$ is nondegenerate.
 
 Let
 $$
@@ -145,7 +145,7 @@ U^\perp
 \coloneqq
 \{x\in W:\beta(x,u)=0\text{ for every }u\in U\}.
 $$
-Because $\beta|_U$ is nondegenerate, every $x\in W$ has a unique
+Because $\beta\restrict_U$ is nondegenerate, every $x\in W$ has a unique
 decomposition
 $$
 x=u+y,
@@ -158,12 +158,12 @@ Indeed, the map
 $$
 U\longrightarrow U^*,
 \qquad
-u\longmapsto\beta(u,-)|_U,
+u\longmapsto\beta(u,-)\restrict_U,
 $$
 is an isomorphism. Hence for each $x\in W$ there is a unique $u\in U$
 such that
 $$
-\beta(u,-)|_U=\beta(x,-)|_U.
+\beta(u,-)\restrict_U=\beta(x,-)\restrict_U.
 $$
 Then $y=x-u$ lies in $U^\perp$. Uniqueness also shows
 $U\cap U^\perp=\{0\}$.

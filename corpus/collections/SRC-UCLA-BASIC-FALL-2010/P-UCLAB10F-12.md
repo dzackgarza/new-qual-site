@@ -36,11 +36,11 @@ You may use standard calculus theorems without proof.
 
 Fix a time $t$ with $r(t)\ne0$, and write
 $$
-R(t)=|r(t)|.
+R(t)=\abs{r(t)}.
 $$
 Then
 $$
-D(t)=\{x\in\RR^2:\|x\|\le R(t)\}.
+D(t)=\{x\in\RR^2:\norm{x}\le R(t)\}.
 $$
 
 ::: pf
@@ -128,7 +128,7 @@ $$
 $$
 Then
 $$
-\|\gamma'(\theta)\|=R(t),
+\norm{\gamma'(\theta)}=R(t),
 $$
 so the line element is $dS=R(t)\,d\theta$.
 
@@ -190,7 +190,7 @@ $$
 
 For $r(t)\ne0$,
 $$
-\frac d{dt}|r(t)|
+\frac d{dt}\abs{r(t)}
 =
 \operatorname{sgn}(r(t))\,r'(t).
 $$

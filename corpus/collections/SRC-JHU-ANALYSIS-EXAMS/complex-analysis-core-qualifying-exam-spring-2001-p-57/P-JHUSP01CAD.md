@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < | z |$ Show that u must be constant.
+Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < \abs{ z }$ Show that u must be constant.
 :::
 
 ::: {.solution}
@@ -47,7 +47,7 @@ Since the exponential map is holomorphic and never vanishes, $v$ is defined on
 all of $\CC$. Composition of a harmonic function with a holomorphic map is
 harmonic; explicitly, writing $w=s+it$ and using the chain rule gives
 $$
-\Delta v(w)=|e^w|^2(\Delta u)(e^w)=0.
+\Delta v(w)=\abs{e^w}^2(\Delta u)(e^w)=0.
 $$
 Moreover $v(w)>0$ everywhere because $u>0$ on the punctured plane.
 
@@ -69,7 +69,7 @@ E(w)=e^{-H(w)}
 $$
 is entire and
 $$
-|E(w)|=e^{-v(w)}<1.
+\abs{E(w)}=e^{-v(w)}<1.
 $$
 Liouville's theorem makes $E$ constant. Since an exponential never vanishes,
 $0=E'=-H'e^{-H}$ implies $H'=0$, hence $H$ and therefore $v$ are constant.

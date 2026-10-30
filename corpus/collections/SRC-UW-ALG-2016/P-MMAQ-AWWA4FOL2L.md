@@ -61,15 +61,15 @@ to $V(u)$. This element is conjugate in $H$ to $u^r\in P$, so trivial fusion mak
 $$
 V(u)=u^m.
 $$
-Since $m$ is prime to $p$, the map $u\mapsto u^m$ is an automorphism of the finite abelian $p$-group $P$. Therefore $V|_P$ is surjective, hence $V$ is surjective. Put $K=\ker V$. Then $K\trianglelefteq H$ and
+Since $m$ is prime to $p$, the map $u\mapsto u^m$ is an automorphism of the finite abelian $p$-group $P$. Therefore $V\restrict_P$ is surjective, hence $V$ is surjective. Put $K=\ker V$. Then $K\trianglelefteq H$ and
 $$
-[H:K]=|P|,
+[H:K]=\cardinality{P},
 $$
 so
 $$
-|K|=\frac{|H|}{|P|}
+\cardinality{K}=\frac{\cardinality{H}}{\cardinality{P}}
 $$
-is prime to $p$. Hence $K\cap P=1$, and $|KP|=|H|$, so $H=KP$. This proves the lemma.
+is prime to $p$. Hence $K\cap P=1$, and $\cardinality{KP}=\cardinality{H}$, so $H=KP$. This proves the lemma.
 :::
 
 :::
@@ -84,7 +84,7 @@ A nontrivial finite $p$-group has nontrivial center. If $G$ were a $p$-group, it
 :::
 
 ::: {.pf-step #s3}
-Let $p\mid |G|$ and let $P\in\operatorname{Syl}_p(G)$. Then $N_G(P)$ is a proper subgroup of $G$, hence abelian, and therefore
+Let $p\mid \cardinality{G}$ and let $P\in\operatorname{Syl}_p(G)$. Then $N_G(P)$ is a proper subgroup of $G$, hence abelian, and therefore
 $$
 P\subseteq Z(N_G(P)).
 $$
@@ -101,9 +101,9 @@ The assumption that $G$ is nonabelian simple is impossible.
 ::: pf-proof
 Apply step [](#s1){.pf-ref} to the Sylow subgroup $P$ from step [](#s3){.pf-ref}. We obtain a normal $p$-complement $K\trianglelefteq G$ with
 $$
-|K|=\frac{|G|}{|P|}.
+\cardinality{K}=\frac{\cardinality{G}}{\cardinality{P}}.
 $$
-Because $P\ne G$, this order is greater than $1$; because $P\ne1$, it is strictly less than $|G|$. Hence
+Because $P\ne G$, this order is greater than $1$; because $P\ne1$, it is strictly less than $\cardinality{G}$. Hence
 $$
 1<K<G,
 $$
@@ -121,7 +121,7 @@ Therefore $G$ is abelian.
 A finite abelian simple group is cyclic of prime order.
 
 ::: pf-proof
-Let $1\ne g\in G$. The cyclic subgroup $\langle g\rangle$ is normal because $G$ is abelian. Simplicity forces $\langle g\rangle=G$, so $G$ is cyclic. If its order were composite, a cyclic group would have a proper nontrivial subgroup, again normal, contradicting simplicity. Hence $|G|$ is prime.
+Let $1\ne g\in G$. The cyclic subgroup $\langle g\rangle$ is normal because $G$ is abelian. Simplicity forces $\langle g\rangle=G$, so $G$ is cyclic. If its order were composite, a cyclic group would have a proper nontrivial subgroup, again normal, contradicting simplicity. Hence $\cardinality{G}$ is prime.
 :::
 
 :::

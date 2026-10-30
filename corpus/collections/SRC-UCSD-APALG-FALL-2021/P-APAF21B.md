@@ -68,15 +68,15 @@ x=\sum_{j=1}^n c_j u_j.
 $$
 Then
 $$
-x^HAx=\sum_{j=1}^n \lambda_j|c_j|^2,
+x^HAx=\sum_{j=1}^n \lambda_j\abs{c_j}^2,
 \qquad
-x^Hx=\sum_{j=1}^n|c_j|^2.
+x^Hx=\sum_{j=1}^n\abs{c_j}^2.
 $$
 Hence the Rayleigh quotient is
 $$
 \frac{x^HAx}{x^Hx}
 =\sum_{j=1}^n
-\lambda_j\frac{|c_j|^2}{\sum_k|c_k|^2},
+\lambda_j\frac{\abs{c_j}^2}{\sum_k\abs{c_k}^2},
 $$
 a convex combination of the eigenvalues. It therefore lies between the smallest and largest eigenvalues.
 :::

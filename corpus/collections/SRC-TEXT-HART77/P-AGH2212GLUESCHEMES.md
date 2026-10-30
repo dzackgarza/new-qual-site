@@ -59,7 +59,7 @@ $$
 ::: {.pf-step #sim-is-equivalence-relation}
 On the disjoint union of underlying sets
 $$
-S=\coprod_i|X_i|
+S=\coprod_i\underlyingspace{X_i}
 $$
 define a relation by declaring, for $x\in X_i$ and $y\in X_j$,
 $$
@@ -137,15 +137,15 @@ Thus $x\sim z$.
 ::: {.pf-step #psi-i-injective}
 Let
 $$
-|X|=S/\!\sim
+\underlyingspace{X}=S/\!\sim
 $$
 and give it the quotient topology.  Let
 $$
-q:S\longrightarrow|X|
+q:S\longrightarrow\underlyingspace{X}
 $$
 be the quotient map, and put
 $$
-\psi_i=q|_{X_i}:|X_i|\longrightarrow|X|.
+\psi_i=q\restrict_{X_i}:\underlyingspace{X_i}\longrightarrow\underlyingspace{X}.
 $$
 Each $\psi_i$ is injective.
 
@@ -172,7 +172,7 @@ The image
 $$
 V_i:=\psi_i(X_i)
 $$
-is open in $|X|$.
+is open in $\underlyingspace{X}$.
 
 ::: pf-proof
 By definition of the quotient topology, it is enough to show that
@@ -237,7 +237,7 @@ Thus
 $$
 q^{-1}(\psi_i(W))
 $$
-is open in $S$, so $\psi_i(W)$ is open in $|X|$.
+is open in $S$, so $\psi_i(W)$ is open in $\underlyingspace{X}$.
 
 Hence $\psi_i$ is an open continuous bijection and therefore a homeomorphism onto $V_i$.
 :::
@@ -245,7 +245,7 @@ Hence $\psi_i$ is an open continuous bijection and therefore a homeomorphism ont
 :::
 
 ::: {.pf-step #vi-cover-and-overlap-formula}
-The opens $V_i$ cover $|X|$, and
+The opens $V_i$ cover $\underlyingspace{X}$, and
 $$
 \boxed{
 V_i\cap V_j
@@ -293,9 +293,9 @@ $$
 to obtain a sheaf $\mathcal G_i$ of rings on $V_i$.
 The scheme isomorphisms $\phi_{ij}$ induce compatible sheaf isomorphisms
 $$
-\mathcal G_i|_{V_i\cap V_j}
+\mathcal G_i\restrict_{V_i\cap V_j}
 \xrightarrow{\sim}
-\mathcal G_j|_{V_i\cap V_j}.
+\mathcal G_j\restrict_{V_i\cap V_j}.
 $$
 
 ::: pf-proof
@@ -330,9 +330,9 @@ The local sheaves $\mathcal G_i$ glue to a sheaf of rings
 $$
 \mathcal O_X
 $$
-on $|X|$, together with isomorphisms
+on $\underlyingspace{X}$, together with isomorphisms
 $$
-\mathcal O_X|_{V_i}
+\mathcal O_X\restrict_{V_i}
 \xrightarrow{\sim}
 \mathcal G_i.
 $$
@@ -340,7 +340,7 @@ $$
 ::: pf-proof
 Apply the sheaf-gluing theorem of Hartshorne II.1.22 to the open cover
 $$
-|X|=\bigcup_iV_i
+\underlyingspace{X}=\bigcup_iV_i
 $$
 and the compatible sheaf isomorphisms from step [](#gi-sheaves-and-overlap-isos){.pf-ref}.
 :::
@@ -350,7 +350,7 @@ and the compatible sheaf isomorphisms from step [](#gi-sheaves-and-overlap-isos)
 ::: {.pf-step #x-is-scheme-psi-i-iso}
 The locally ringed space
 $$
-X=(|X|,\mathcal O_X)
+X=(\underlyingspace{X},\mathcal O_X)
 $$
 is a scheme, and each
 $$
@@ -361,7 +361,7 @@ is an isomorphism of schemes onto the open subscheme $V_i$.
 ::: pf-proof
 By construction,
 $$
-(V_i,\mathcal O_X|_{V_i})
+(V_i,\mathcal O_X\restrict_{V_i})
 \cong
 (X_i,\mathcal O_{X_i})
 $$

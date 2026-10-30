@@ -48,7 +48,7 @@ Proof: $f_n(0) = 1$ for all $n$; for $x > 0$, $n^2x^2 \to \infty$, so $f_n(x) \t
 
 $f_n$ does not converge uniformly on $[0,1]$.
 Proof: the pointwise limit $f$ is discontinuous at $0$, while each $f_n$ is continuous; a uniform limit of continuous functions is continuous.
-Equivalently $\|f_n - f\|_\infty = 1$ for all $n$ (as $x \to 0^+$, $f_n(x) \to 1$ while $f(0) = 1$ and $f_n(0) = 1$: the sup of $|f_n - f|$ is approached, e.g. $\|f_n - f\|_\infty \ge \lim_{x \to 0^+}|f_n(x) - f(x)|$).
+Equivalently $\norm{f_n - f}_\infty = 1$ for all $n$ (as $x \to 0^+$, $f_n(x) \to 1$ while $f(0) = 1$ and $f_n(0) = 1$: the sup of $\abs{f_n - f}$ is approached, e.g. $\norm{f_n - f}_\infty \ge \lim_{x \to 0^+}\abs{f_n(x) - f(x)}$).
 
 :::
 
@@ -74,7 +74,7 @@ Proof: $\frac{d}{dx}nx(1-x)^n = n(1-x)^{n-1}(1 - (n+1)x)$, zero at $x = 1/(n+1)$
 
 ::: pf-qed
 
-Proof: step [](#s4-1){.pf-ref} gives $\|g_n\|_\infty \to e^{-1} > 0$, so $g_n \not\to 0$ uniformly.
+Proof: step [](#s4-1){.pf-ref} gives $\norm{g_n}_\infty \to e^{-1} > 0$, so $g_n \not\to 0$ uniformly.
 
 :::
 
@@ -90,15 +90,15 @@ Proof: step [](#s4-1){.pf-ref} gives $\|g_n\|_\infty \to e^{-1} > 0$, so $g_n \n
 
 ::: {.pf-step #s5-1}
 
-$\{f_n\}$ fails equicontinuity at $0$: $f_n(1/n) = \frac{1}{1 + n^2/n^2} = \frac12$ while $f_n(0) = 1$, so $|f_n(1/n) - f_n(0)| = 1/2$ even though $1/n \to 0$.
-Proof: no $\delta > 0$ can force $|f_n(x) - f_n(0)| < 1/4$ for all $n$ simultaneously, since $x = 1/n < \delta$ eventually but the difference stays $1/2$.
+$\{f_n\}$ fails equicontinuity at $0$: $f_n(1/n) = \frac{1}{1 + n^2/n^2} = \frac12$ while $f_n(0) = 1$, so $\abs{f_n(1/n) - f_n(0)} = 1/2$ even though $1/n \to 0$.
+Proof: no $\delta > 0$ can force $\abs{f_n(x) - f_n(0)} < 1/4$ for all $n$ simultaneously, since $x = 1/n < \delta$ eventually but the difference stays $1/2$.
 
 :::
 
 ::: {.pf-step #s5-2}
 
 $\{g_n\}$ fails equicontinuity at $0$: $g_n(x_n) \to e^{-1} \neq 0$ at $x_n = 1/(n+1) \to 0$ while $g_n(0) = 0$.
-Proof: by step [](#s4){.pf-ref}step [](#s5-1){.pf-ref}, $|g_n(x_n) - g_n(0)| \to e^{-1} > 0$ with $x_n \to 0$; again no $\delta$ works for all $n$.
+Proof: by step [](#s4){.pf-ref}step [](#s5-1){.pf-ref}, $\abs{g_n(x_n) - g_n(0)} \to e^{-1} > 0$ with $x_n \to 0$; again no $\delta$ works for all $n$.
 
 :::
 

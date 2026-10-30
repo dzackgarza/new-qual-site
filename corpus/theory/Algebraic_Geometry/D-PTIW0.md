@@ -34,7 +34,7 @@ For any open cover $\mcu$ of $X$ and sheaf of abelian groups $\mcf$ there is a n
 $$
 \check{H}^p(\mcu, \mcf) \to H^p(X, \mcf),
 $$
-the \dfn{Leray map}, induced by comparing the Čech resolution of $\mcf$ by the sheaves $\prod j_* \mcf|_{U_{i_0 \cdots i_p}}$ with an injective resolution.
+the \dfn{Leray map}, induced by comparing the Čech resolution of $\mcf$ by the sheaves $\prod j_* \mcf\restrict_{U_{i_0 \cdots i_p}}$ with an injective resolution.
 It is always an isomorphism in degree $0$ and injective in degree $1$, and it is an isomorphism in all degrees when $H^q(U_{i_0} \cap \cdots \cap U_{i_p}, \mcf) = 0$ for all $q > 0$ and all finite intersections.
 The degree-one comparison and its independence of refinement are proved explicitly in [[P-AGH344REFINEMENTH1]].
 :::

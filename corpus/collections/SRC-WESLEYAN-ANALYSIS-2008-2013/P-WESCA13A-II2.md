@@ -20,12 +20,12 @@ Evaluate:
 
 (a)
 $$
-\int_{|z|=1}\frac{\Log(z+e)}{z^2}\,dz;
+\int_{\abs{z}=1}\frac{\Log(z+e)}{z^2}\,dz;
 $$
 
 (b)
 $$
-\int_{|z|=4}\left(\frac{\sin z}{z}\right)^{100}\,dz;
+\int_{\abs{z}=4}\left(\frac{\sin z}{z}\right)^{100}\,dz;
 $$
 
 (c) if $\beta(t)=te^{it}$ for $0\le t\le4\pi$ and $\gamma$ is $\beta$ followed by the segment from $4\pi$ to $0$, evaluate
@@ -49,7 +49,7 @@ Then $h$ is holomorphic on a neighborhood of the closed unit disk.
 
 ::: pf-proof
 
-If $|z|\le1$, then
+If $\abs{z}\le1$, then
 $$
 \operatorname{Re}(z+e)\ge e-1>0.
 $$
@@ -64,7 +64,7 @@ holomorphic.
 
 Cauchy's integral formula for derivatives gives
 $$
-\int_{|z|=1}\frac{\Log(z+e)}{z^2}\,dz
+\int_{\abs{z}=1}\frac{\Log(z+e)}{z^2}\,dz
 =2\pi i\,h'(0).
 $$
 
@@ -73,7 +73,7 @@ $$
 
 Apply
 $$
-h'(0)=\frac1{2\pi i}\int_{|z|=1}\frac{h(z)}{z^2}\,dz.
+h'(0)=\frac1{2\pi i}\int_{\abs{z}=1}\frac{h(z)}{z^2}\,dz.
 $$
 
 :::
@@ -88,7 +88,7 @@ h'(z)=\frac1{z+e},
 $$
 $$
 \boxed{
-\int_{|z|=1}\frac{\Log(z+e)}{z^2}\,dz
+\int_{\abs{z}=1}\frac{\Log(z+e)}{z^2}\,dz
 =\frac{2\pi i}{e}.
 }
 $$
@@ -137,7 +137,7 @@ shows that the singularity at $0$ is removable.
 Therefore
 $$
 \boxed{
-\int_{|z|=4}
+\int_{\abs{z}=4}
 \left(\frac{\sin z}{z}\right)^{100}\,dz
 =0.
 }
@@ -178,9 +178,9 @@ Both poles are simple:
 $$
 \operatorname{Res}_{z=-1}F
 =
-\left.
+\evaluated{
 \frac{z^2+1}{z+4}
-\right|_{z=-1}
+}_{z=-1}
 =
 \frac23,
 $$
@@ -188,9 +188,9 @@ and
 $$
 \operatorname{Res}_{z=-4}F
 =
-\left.
+\evaluated{
 \frac{z^2+1}{z+1}
-\right|_{z=-4}
+}_{z=-4}
 =
 -\frac{17}{3}.
 $$

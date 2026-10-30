@@ -47,7 +47,7 @@ $f:G\to\CC$ is nonconstant and holomorphic, then $f(G)$ is open.
 contour whose interior and boundary lie in a domain on which $f$ and $g$ are
 holomorphic. If
 $$
-|g(z)|<|f(z)|\qquad(z\in\gamma),
+\abs{g(z)}<\abs{f(z)}\qquad(z\in\gamma),
 $$
 then $f$ and $f+g$ have the same number of zeros inside $\gamma$, counted with
 multiplicity.
@@ -76,13 +76,13 @@ $$
 f(z)-f(z_0)=(z-z_0)^m h(z),\qquad h(z_0)\ne0,
 $$
 where $m\ge1$. Choose $r>0$ so that the closed disk about $z_0$ of radius $r$
-lies in $G$ and $f(z)\ne f(z_0)$ on $|z-z_0|=r$. Let
+lies in $G$ and $f(z)\ne f(z_0)$ on $\abs{z-z_0}=r$. Let
 $$
-\delta=\min_{|z-z_0|=r}|f(z)-f(z_0)|>0.
+\delta=\min_{\abs{z-z_0}=r}\abs{f(z)-f(z_0)}>0.
 $$
-If $|w-f(z_0)|<\delta$, then on that circle
+If $\abs{w-f(z_0)}<\delta$, then on that circle
 $$
-|(f(z)-w)-(f(z)-f(z_0))|=|w-f(z_0)|<|f(z)-f(z_0)|.
+\abs{(f(z)-w)-(f(z)-f(z_0))}=\abs{w-f(z_0)}<\abs{f(z)-f(z_0)}.
 $$
 Rouché's theorem shows that $f-w$ has the same number of zeros in the disk as
 $f-f(z_0)$, in particular at least one. Thus every sufficiently small

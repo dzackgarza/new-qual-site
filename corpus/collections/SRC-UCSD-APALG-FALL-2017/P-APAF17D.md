@@ -32,7 +32,7 @@ A=\begin{pmatrix}
 $$
 and let
 $$
-B=\frac{1}{|G|}\sum_{g\in G}X(g)A X(g)^{-1}.
+B=\frac{1}{\cardinality{G}}\sum_{g\in G}X(g)A X(g)^{-1}.
 $$
 
 (a) Determine the trace of the matrix $B$.
@@ -60,7 +60,7 @@ $$
 Hence
 $$
 \operatorname{tr}(B)
-=\frac1{|G|}\sum_{g\in G}\operatorname{tr}(A)
+=\frac1{\cardinality{G}}\sum_{g\in G}\operatorname{tr}(A)
 =\operatorname{tr}(A).
 $$
 Since
@@ -83,7 +83,7 @@ For fixed $h\in G$,
 $$
 \begin{aligned}
 X(h)BX(h)^{-1}
-&=\frac1{|G|}\sum_{g\in G}X(hg)AX(hg)^{-1}.
+&=\frac1{\cardinality{G}}\sum_{g\in G}X(hg)AX(hg)^{-1}.
 \end{aligned}
 $$
 As $g$ runs through $G$, so does $hg$. Reindexing the sum therefore gives

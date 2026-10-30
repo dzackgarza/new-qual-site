@@ -27,45 +27,45 @@ audit:
 ::: {.problem}
 Let $f\in L^1(\RR)$. Prove that
 $$
-\lim_{h\to0}\int_{\RR}|f(x+h)-f(x)|\,dx=0.
+\lim_{h\to0}\int_{\RR}\abs{f(x+h)-f(x)}\,dx=0.
 $$
 :::
 
 ::: {.solution}
 Fix $\varepsilon>0$. Choose $g\in C_c(\RR)$ such that
 $$
-\|f-g\|_1<\frac{\varepsilon}{3},
+\norm{f-g}_1<\frac{\varepsilon}{3},
 $$
 using density of $C_c(\RR)$ in $L^1(\RR)$.
 
 Because $g$ is continuous with compact support, it is uniformly continuous. If $K$ is a compact interval containing the support of $g$ and all its sufficiently small translates, then for small $h$ one has
 $$
-\|g(\cdot+h)-g\|_1
-\le m(K)\,\sup_{x\in K}|g(x+h)-g(x)|
+\norm{g(\cdot+h)-g}_1
+\le m(K)\,\sup_{x\in K}\abs{g(x+h)-g(x)}
 \longrightarrow0.
 $$
-Hence there exists $\delta>0$ such that $|h|<\delta$ implies
+Hence there exists $\delta>0$ such that $\abs{h}<\delta$ implies
 $$
-\|g(\cdot+h)-g\|_1<\frac{\varepsilon}{3}.
+\norm{g(\cdot+h)-g}_1<\frac{\varepsilon}{3}.
 $$
 
 Translations preserve Lebesgue measure, so
 $$
-\|f(\cdot+h)-g(\cdot+h)\|_1=\|f-g\|_1.
+\norm{f(\cdot+h)-g(\cdot+h)}_1=\norm{f-g}_1.
 $$
-Therefore, for $|h|<\delta$,
+Therefore, for $\abs{h}<\delta$,
 $$
 \begin{aligned}
-\|f(\cdot+h)-f\|_1
-&\le \|f(\cdot+h)-g(\cdot+h)\|_1
- +\|g(\cdot+h)-g\|_1
- +\|g-f\|_1\\
+\norm{f(\cdot+h)-f}_1
+&\le \norm{f(\cdot+h)-g(\cdot+h)}_1
+ +\norm{g(\cdot+h)-g}_1
+ +\norm{g-f}_1\\
 &<\varepsilon.
 \end{aligned}
 $$
 Thus
 $$
-\|f(\cdot+h)-f\|_1\longrightarrow0
+\norm{f(\cdot+h)-f}_1\longrightarrow0
 \qquad(h\to0).
 $$
 :::

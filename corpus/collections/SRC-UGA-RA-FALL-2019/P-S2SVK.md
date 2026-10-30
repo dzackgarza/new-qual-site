@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-S2SVK
 kind: problem
-title: $\bigl|\frac{d^n}{dx^n}\frac{\sin x}{x}\bigr|\le\frac1n$ for $x\neq 0$ and
-  $n\ge 1$
+title: $\abs{\frac{d^n}{dx^n}\frac{\sin x}{x}}\le\frac1n$ for $x\neq 0$ and $n\ge 1$
 classification:
   areas:
   - real-analysis
@@ -26,7 +25,7 @@ audit:
 ::: {.problem}
 Prove that for all $x \ne 0$ and all positive integers $n \ge 1$:
 $$
-\left| \frac{d^{n}}{d x^{n}} \left(\frac{\sin x}{x}\right) \right| \le \frac{1}{n}.
+\abs{ \frac{d^{n}}{d x^{n}} \left(\frac{\sin x}{x}\right) } \le \frac{1}{n}.
 $$
 :::
 
@@ -92,7 +91,7 @@ The function $g(x, t)$ and all its partial derivatives $\frac{\partial^k g}{\par
 
 ::: pf-step
 On any compact interval $x \in [a, b]$, the derivative is dominated by
-$$\left| \frac{\partial^n g}{\partial x^n}(x, t) \right| = t^n \left| \cos\left(tx + \frac{n\pi}{2}\right) \right| \le t^n \le 1 \in L^1([0, 1]).$$
+$$\abs{ \frac{\partial^n g}{\partial x^n}(x, t) } = t^n \abs{ \cos\left(tx + \frac{n\pi}{2}\right) } \le t^n \le 1 \in L^1([0, 1]).$$
 
 :::
 
@@ -113,13 +112,13 @@ Bounding the derivative:
 
 ::: pf-step
 Apply the triangle inequality for integrals:
-$$\left| \frac{d^n}{dx^n} \left(\frac{\sin x}{x}\right) \right| = \left| \int_0^1 t^n \cos\left(tx + \frac{n\pi}{2}\right) \, dt \right| \le \int_0^1 t^n \left| \cos\left(tx + \frac{n\pi}{2}\right) \right| \, dt.$$
+$$\abs{ \frac{d^n}{dx^n} \left(\frac{\sin x}{x}\right) } = \abs{ \int_0^1 t^n \cos\left(tx + \frac{n\pi}{2}\right) \, dt } \le \int_0^1 t^n \abs{ \cos\left(tx + \frac{n\pi}{2}\right) } \, dt.$$
 
 :::
 
 ::: pf-step
-Since $|\cos(\theta)| \le 1$ for all $\theta \in \RR$ and $t \ge 0$:
-$$\int_0^1 t^n \left| \cos\left(tx + \frac{n\pi}{2}\right) \right| \, dt \le \int_0^1 t^n \, dt = \left[ \frac{t^{n+1}}{n+1} \right]_0^1 = \frac{1}{n+1}.$$
+Since $\abs{\cos(\theta)} \le 1$ for all $\theta \in \RR$ and $t \ge 0$:
+$$\int_0^1 t^n \abs{ \cos\left(tx + \frac{n\pi}{2}\right) } \, dt \le \int_0^1 t^n \, dt = \left[ \frac{t^{n+1}}{n+1} \right]_0^1 = \frac{1}{n+1}.$$
 
 :::
 
@@ -136,7 +135,7 @@ Since $n \ge 1$, $\frac{1}{n+1} < \frac{1}{n} \le \frac{1}{n}$.
 Conclusion:
 
 ::: pf-proof
-For all $x \ne 0$ and $n \ge 1$, $\left| \frac{d^n}{dx^n} \left(\frac{\sin x}{x}\right) \right| \le \frac{1}{n+1} \le \frac{1}{n}$.
+For all $x \ne 0$ and $n \ge 1$, $\abs{ \frac{d^n}{dx^n} \left(\frac{\sin x}{x}\right) } \le \frac{1}{n+1} \le \frac{1}{n}$.
 :::
 
 :::

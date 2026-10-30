@@ -21,9 +21,9 @@ audit:
 ---
 
 ::: {.exercise}
-Prove Burnside's Orbit-Counting Lemma: If a finite group $G$ acts on a finite set $X$, then the number of orbits $|X/G|$ is given by:
+Prove Burnside's Orbit-Counting Lemma: If a finite group $G$ acts on a finite set $X$, then the number of orbits $\cardinality{X/G}$ is given by:
 $$
-|X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|,
+\cardinality{X/G} = \frac{1}{\cardinality{G}} \sum_{g \in G} \cardinality{X^g},
 $$
 where $X^g = \{x \in X \mid g \cdot x = x\}$ is the fixed point set of $g$.
 :::

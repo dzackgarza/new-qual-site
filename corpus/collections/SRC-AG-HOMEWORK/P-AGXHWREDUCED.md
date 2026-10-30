@@ -15,12 +15,12 @@ review: draft
 ---
 
 ::: {.problem}
-Call $(X, \OO_X)\in \Sch$ **reduced** iff $\OO_X(U)$ has no nilpotents for every open $U$, and for $A\in \Ring$ define $A^{\red}\definedas A/\sqrt{0}$ to be $A$ modulo its ideal of nilpotents.
+Call $(X, \OO_X)\in \Sch$ **reduced** iff $\OO_X(U)$ has no nilpotents for every open $U$, and for $A\in \Ring$ define $A^{\red}\coloneqq A/\sqrt{0}$ to be $A$ modulo its ideal of nilpotents.
 
 (a) Show that $X$ is reduced iff for every $p\in X$, the local ring $\OO_{X, p}$ has no nilpotents.
 
 (b) Let $\OO_X^{\red}$ be the sheafification of $U \mapsto \OO_X(U)^{\red}$.
-Show that $X_{\red}\definedas (X, \OO_X^{\red})$ is a scheme, and that there is a morphism of schemes $X_{\red}\xrightarrow{\red} X$ inducing a homeomorphism $\abs{X_{\red}}\to \abs{X}$ on underlying topological spaces.
+Show that $X_{\red}\coloneqq (X, \OO_X^{\red})$ is a scheme, and that there is a morphism of schemes $X_{\red}\xrightarrow{\red} X$ inducing a homeomorphism $\abs{X_{\red}}\to \abs{X}$ on underlying topological spaces.
 
 (c) Let $X \xrightarrow{f} Y\in \Sch$ with $X$ reduced.
 Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ is the composition
@@ -44,7 +44,7 @@ Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ 
 
 - $\sqrt{0_{R}} \leq \mfp$ for every $\mfp\in \Spec R$.
 
-- $R_{\red}\definedas R/\sqrt{0_{R}}$ is a quotient, and localization commutes with quotients.
+- $R_{\red}\coloneqq R/\sqrt{0_{R}}$ is a quotient, and localization commutes with quotients.
 
 - Maps $R\to S$ with $S$ reduced factor through $R_{\red}$.
 

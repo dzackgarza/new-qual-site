@@ -104,7 +104,7 @@ Solution Space:
 
 ::: pf-step
 The complete solution set is the 1-dimensional complex subspace:
-$$\operatorname{Sol} = \left\{ t \begin{bmatrix} 1 \\ -(1 + i) \end{bmatrix} \;\middle|\; t \in \CC \right\} = \operatorname{span}_\CC \left\{ \begin{bmatrix} 1 \\ -1 - i \end{bmatrix} \right\}.$$
+$$\operatorname{Sol} = \left\{ t \begin{bmatrix} 1 \\ -(1 + i) \end{bmatrix} \;\st\; t \in \CC \right\} = \operatorname{span}_\CC \left\{ \begin{bmatrix} 1 \\ -1 - i \end{bmatrix} \right\}.$$
 :::
 
 :::

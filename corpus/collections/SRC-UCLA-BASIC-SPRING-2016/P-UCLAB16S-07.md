@@ -156,9 +156,9 @@ Then $u$ is a unit vector.
 
 Since $M$ is orthogonal,
 $$
-\|Me_n\|
+\norm{Me_n}
 =
-\|e_n\|
+\norm{e_n}
 =1.
 $$
 
@@ -248,7 +248,7 @@ $$
 
 The restriction
 $$
-F|_H:H\to H
+F\restrict_H:H\to H
 $$
 is an orthogonal transformation of the $(n-1)$-dimensional space $H$.
 
@@ -266,7 +266,7 @@ Since $F$ preserves the Euclidean inner product on all of $\RR^n$, its restricti
 
 By the induction hypothesis,
 $$
-F|_H
+F\restrict_H
 $$
 is a product of at most
 $$

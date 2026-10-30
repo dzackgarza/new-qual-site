@@ -31,7 +31,7 @@ $$
 Q = \{ x + iy \in \CC : x > 0, \ y > 0 \}
 $$
 
-onto the unit disk $D = \{ z \in \CC : |z| < 1 \}$ with $f(1+i) = 0$.
+onto the unit disk $D = \{ z \in \CC : \abs{z} < 1 \}$ with $f(1+i) = 0$.
 :::
 
 ::: {.solution}
@@ -76,11 +76,11 @@ S(w)=2i\frac{1+w}{1-w}.
 $$
 For $v\in H$, the denominator is nonzero and
 $$
-1-|T(v)|^2=\frac{8\operatorname{Im}v}{|v+2i|^2}>0.
+1-\abs{T(v)}^2=\frac{8\operatorname{Im}v}{\abs{v+2i}^2}>0.
 $$
 For $w\in D$, $1-w\ne0$ and
 $$
-\operatorname{Im}S(w)=2\frac{1-|w|^2}{|1-w|^2}>0.
+\operatorname{Im}S(w)=2\frac{1-\abs{w}^2}{\abs{1-w}^2}>0.
 $$
 Substitution gives $T\circ S=\operatorname{id}_D$ and
 $S\circ T=\operatorname{id}_H$. Hence $T:H\to D$ is

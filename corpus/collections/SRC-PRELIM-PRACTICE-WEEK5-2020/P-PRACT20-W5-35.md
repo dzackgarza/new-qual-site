@@ -28,7 +28,7 @@ Suppose that $f : \CC \to \CC$ is an entire function such that $\abs{f(z)} \leq 
 
 There is $R_0>0$ such that for every $R\ge R_0$,
 $$
-\max_{|z|=R}|f(z)|\le CR.
+\max_{\abs{z}=R}\abs{f(z)}\le CR.
 $$
 
 
@@ -36,10 +36,10 @@ $$
 
 The hypothesis says that
 $$
-|f(z)|\le C|z|
+\abs{f(z)}\le C\abs{z}
 $$
-whenever $|z|$ is sufficiently large. Choose $R_0$ beyond that threshold.
-On the circle $|z|=R\ge R_0$, the bound is therefore $CR$.
+whenever $\abs{z}$ is sufficiently large. Choose $R_0$ beyond that threshold.
+On the circle $\abs{z}=R\ge R_0$, the bound is therefore $CR$.
 
 :::
 
@@ -49,7 +49,7 @@ On the circle $|z|=R\ge R_0$, the bound is therefore $CR$.
 
 For every integer $n\ge0$ and every $R\ge R_0$,
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 n!C R^{1-n}.
 $$
@@ -57,16 +57,16 @@ $$
 
 ::: pf-proof
 
-Cauchy's derivative estimate on the circle $|z|=R$ gives
+Cauchy's derivative estimate on the circle $\abs{z}=R$ gives
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 \frac{n!}{R^n}
-\max_{|z|=R}|f(z)|.
+\max_{\abs{z}=R}\abs{f(z)}.
 $$
 Apply step [](#s1-1){.pf-ref} to obtain
 $$
-|f^{(n)}(0)|
+\abs{f^{(n)}(0)}
 \le
 \frac{n!}{R^n}(CR)
 =
@@ -94,7 +94,7 @@ n!C R^{1-n}\longrightarrow0
 $$
 Hence
 $$
-|f^{(n)}(0)|=0.
+\abs{f^{(n)}(0)}=0.
 $$
 
 :::

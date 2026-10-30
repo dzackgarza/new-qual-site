@@ -33,13 +33,13 @@ Let $X$ be a noetherian scheme, and let $\mcf, \mcg \in \Mod(X)$.
 ::: {.solution}
 Sheaf Ext restricts to open subsets:
 $$
-\mathcal{E}xt_X^i(\mcf,\mcg)|_U
-\cong\mathcal{E}xt_U^i(\mcf|_U,\mcg|_U)
+\mathcal{E}xt_X^i(\mcf,\mcg)\restrict_U
+\cong\mathcal{E}xt_U^i(\mcf\restrict_U,\mcg\restrict_U)
 $$
 [@Har10a, Proposition III.6.2].
 Both [[D-QNTZY|coherence and quasi-coherence]] are local properties.
 It therefore suffices to work on an arbitrary affine open $U=\Spec A\subseteq X$, where $A$ is noetherian.
-Write $\mcf|_U=\widetilde M$ and $\mcg|_U=\widetilde N$; the module $M$ is finite, and $N$ is finite in (a) and arbitrary in (b).
+Write $\mcf\restrict_U=\widetilde M$ and $\mcg\restrict_U=\widetilde N$; the module $M$ is finite, and $N$ is finite in (a) and arbitrary in (b).
 
 ::: pf
 

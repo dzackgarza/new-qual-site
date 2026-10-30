@@ -33,10 +33,10 @@ be the uniform partition of $[a,b]$, so that $x_{i+1}-x_i=(b-a)/n$ for $0\leq i<
 
 Show that there exists $M$ such that for all $n\geq1$,
 $$
-\left|
+\abs{
 \frac{b-a}n\left(\frac12f(x_0)+f(x_1)+\cdots+f(x_{n-1})+\frac12f(x_n)\right)
 -\int_a^b f(x)\,dx
-\right|
+}
 \leq \frac{M}{n^2}.
 $$
 
@@ -50,16 +50,16 @@ The interpolation remainder gives, for each $t$, a point $\xi_t\in(x_i,x_{i+1})$
 $$
 f(x_i+t)-L_i(x_i+t)=\frac{f''(\xi_t)}2\,t(t-h).
 $$
-Hence, with $K=\max_{[a,b]}|f''|$,
+Hence, with $K=\max_{[a,b]}\abs{f''}$,
 $$
-\left|\int_{x_i}^{x_{i+1}}f(x)\,dx-
-\frac h2\bigl(f(x_i)+f(x_{i+1})\bigr)\right|
+\abs{\int_{x_i}^{x_{i+1}}f(x)\,dx-
+\frac h2\bigl(f(x_i)+f(x_{i+1})\bigr)}
 \leq \frac K2\int_0^h t(h-t)\,dt
 =\frac{Kh^3}{12}.
 $$
 Summing over the $n$ subintervals yields
 $$
-\left|T_n-\int_a^b f(x)\,dx\right|
+\abs{T_n-\int_a^b f(x)\,dx}
 \leq \frac{nKh^3}{12}
 =\frac{K(b-a)^3}{12n^2}.
 $$

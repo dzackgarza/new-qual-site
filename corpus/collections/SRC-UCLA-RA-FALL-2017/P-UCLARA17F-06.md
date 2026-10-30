@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-06
 kind: problem
-title: $L^2$ boundedness of the truncated Riesz potential $\int_{|w-z|\le1}\frac{|f(w)|}{|w-z|}\,dA(w)$
+title: $L^2$ boundedness of the truncated Riesz potential $\int_{\abs{w-z}\le1}\frac{\abs{f(w)}}{\abs{w-z}}\,dA(w)$
 classification:
   areas:
   - real-analysis
@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Problem 6. Let $f\in L^2(\CC)$. For $z\in\CC$ define
 $$
-g(z)=\int_{\{w\in\CC:|w-z|\le1\}}\frac{|f(w)|}{|w-z|}\,dA(w),
+g(z)=\int_{\{w\in\CC:\abs{w-z}\le1\}}\frac{\abs{f(w)}}{\abs{w-z}}\,dA(w),
 $$
-where $dA$ denotes integration with respect to Lebesgue measure on $\CC\cong\RR^2$. Show that $|g(z)|<\infty$ for almost every $z\in\CC$ and that $g\in L^2(\CC)$.
+where $dA$ denotes integration with respect to Lebesgue measure on $\CC\cong\RR^2$. Show that $\abs{g(z)}<\infty$ for almost every $z\in\CC$ and that $g\in L^2(\CC)$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ Define
 $$
 k(u)
 =
-\frac{\mathbf 1_{\{|u|\le1\}}}{|u|}
+\frac{\mathbf 1_{\{\abs{u}\le1\}}}{\abs{u}}
 $$
 on $\CC\cong\RR^2$.
 
@@ -47,7 +47,7 @@ Using polar coordinates,
 $$
 \int_{\CC}k(u)\,dA(u)
 =
-\int_{|u|\le1}\frac{1}{|u|}\,dA(u)
+\int_{\abs{u}\le1}\frac{1}{\abs{u}}\,dA(u)
 =
 \int_0^{2\pi}\int_0^1\frac1r\,r\,dr\,d\theta
 =
@@ -64,7 +64,7 @@ Thus the integral is finite.
 More precisely,
 $$
 \boxed{
-\|k\|_1=2\pi}.
+\norm{k}_1=2\pi}.
 $$
 
 
@@ -88,7 +88,7 @@ $$
 g(z)
 =
 \int_{\CC}
-|f(z+u)|\,k(u)\,dA(u)}.
+\abs{f(z+u)}\,k(u)\,dA(u)}.
 $$
 
 
@@ -96,11 +96,11 @@ $$
 
 The condition
 $$
-|w-z|\le1
+\abs{w-z}\le1
 $$
 becomes
 $$
-|u|\le1,
+\abs{u}\le1,
 $$
 and
 $$
@@ -108,9 +108,9 @@ dA(w)=dA(u).
 $$
 Thus
 $$
-\frac{|f(w)|}{|w-z|}
+\frac{\abs{f(w)}}{\abs{w-z}}
 =
-|f(z+u)|\,k(u).
+\abs{f(z+u)}\,k(u).
 $$
 
 :::
@@ -121,7 +121,7 @@ $$
 
 The function
 $$
-(z,u)\longmapsto |f(z+u)|k(u)
+(z,u)\longmapsto \abs{f(z+u)}k(u)
 $$
 is measurable on $\CC\times\CC$.
 
@@ -155,13 +155,13 @@ By step [](#s1-4){.pf-ref}, Tonelli's theorem implies that the integral in $u$ d
 
 One has
 $$
-\|g\|_2
+\norm{g}_2
 \le
 \int_{\CC}
 k(u)
 \left(
 \int_{\CC}
-|f(z+u)|^2\,dA(z)
+\abs{f(z+u)}^2\,dA(z)
 \right)^{1/2}
 dA(u).
 $$
@@ -171,24 +171,24 @@ $$
 
 Apply Minkowski's integral inequality to the nonnegative function
 $$
-H(z,u)=|f(z+u)|k(u):
+H(z,u)=\abs{f(z+u)}k(u):
 $$
 $$
-\left\|
+\norm{
 \int H(\cdot,u)\,dA(u)
-\right\|_{L^2_z}
+}_{L^2_z}
 \le
 \int
-\|H(\cdot,u)\|_{L^2_z}
+\norm{H(\cdot,u)}_{L^2_z}
 \,dA(u).
 $$
 Since $k(u)$ is independent of $z$,
 $$
-\|H(\cdot,u)\|_2
+\norm{H(\cdot,u)}_2
 =
 k(u)
 \left(
-\int |f(z+u)|^2\,dA(z)
+\int \abs{f(z+u)}^2\,dA(z)
 \right)^{1/2}.
 $$
 
@@ -203,10 +203,10 @@ $$
 \boxed{
 \left(
 \int_{\CC}
-|f(z+u)|^2\,dA(z)
+\abs{f(z+u)}^2\,dA(z)
 \right)^{1/2}
 =
-\|f\|_2}.
+\norm{f}_2}.
 $$
 
 
@@ -217,9 +217,9 @@ $$
 w=z+u,
 $$
 $$
-\int_{\CC}|f(z+u)|^2\,dA(z)
+\int_{\CC}\abs{f(z+u)}^2\,dA(z)
 =
-\int_{\CC}|f(w)|^2\,dA(w).
+\int_{\CC}\abs{f(w)}^2\,dA(w).
 $$
 
 :::
@@ -230,9 +230,9 @@ $$
 
 Hence
 $$
-\|g\|_2
+\norm{g}_2
 \le
-\|f\|_2
+\norm{f}_2
 \int_{\CC}k(u)\,dA(u).
 $$
 
@@ -250,9 +250,9 @@ Substitute the constant value from step [](#s1-7){.pf-ref} into step [](#s1-6){.
 Using step [](#s1-2){.pf-ref},
 $$
 \boxed{
-\|g\|_2
+\norm{g}_2
 \le
-2\pi\|f\|_2}.
+2\pi\norm{f}_2}.
 $$
 
 
@@ -283,7 +283,7 @@ The right-hand side of step [](#s1-9){.pf-ref} is finite because
 $$
 f\in L^2(\CC).
 $$
-Thus $\|g\|_2<\infty$.
+Thus $\norm{g}_2<\infty$.
 
 :::
 
@@ -294,7 +294,7 @@ Thus $\|g\|_2<\infty$.
 In particular,
 $$
 \boxed{
-|g(z)|<\infty}
+\abs{g(z)}<\infty}
 $$
 for almost every $z\in\CC$.
 

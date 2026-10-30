@@ -59,9 +59,9 @@ I_n(1)\le M
 $$
 for every $n$. Since $\varphi_n\ge0$, for every continuous $g$,
 $$
-|I_n(g)|
-\le \|g\|_\infty I_n(1)
-\le M\|g\|_\infty.
+\abs{I_n(g)}
+\le \norm{g}_\infty I_n(1)
+\le M\norm{g}_\infty.
 $$
 
 :::
@@ -98,19 +98,19 @@ For every continuous $f$, the sequence $I_n(f)$ is Cauchy.
 Let $\varepsilon>0$. By the Weierstrass approximation theorem, choose a
 polynomial $p$ such that
 $$
-\|f-p\|_\infty<\frac{\varepsilon}{3M}.
+\norm{f-p}_\infty<\frac{\varepsilon}{3M}.
 $$
 By step [](#s2){.pf-ref}, $I_n(p)$ converges, so there is $N$ such that for
 $m,n\ge N$,
 $$
-|I_n(p)-I_m(p)|<\frac\varepsilon3.
+\abs{I_n(p)-I_m(p)}<\frac\varepsilon3.
 $$
 Then step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
-|I_n(f)-I_m(f)|
-&\le |I_n(f-p)|+|I_n(p)-I_m(p)|+|I_m(p-f)|\\
-&\le M\|f-p\|_\infty+\frac\varepsilon3+M\|f-p\|_\infty\\
+\abs{I_n(f)-I_m(f)}
+&\le \abs{I_n(f-p)}+\abs{I_n(p)-I_m(p)}+\abs{I_m(p-f)}\\
+&\le M\norm{f-p}_\infty+\frac\varepsilon3+M\norm{f-p}_\infty\\
 &<\varepsilon.
 \end{aligned}
 $$

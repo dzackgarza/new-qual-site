@@ -56,7 +56,7 @@ Then for all $x \in S^1$ and $t \in [0, 1]$, the convex combination $(1-t)h(x) +
 ::: pf-step
 
 Define the straight-line homotopy $H: S^1 \times [0, 1] \to S^1$ by:
-        $$H(x, t) = \frac{(1-t)h(x) - tx}{\|(1-t)h(x) - tx\|}.$$
+        $$H(x, t) = \frac{(1-t)h(x) - tx}{\norm{(1-t)h(x) - tx}}.$$
 
 :::
 
@@ -112,7 +112,7 @@ Then for all $x \in S^1$ and $t \in [0, 1]$, $(1-t)h(x) + tx \neq 0$.
 ::: pf-step
 
 Define the straight-line homotopy $K: S^1 \times [0, 1] \to S^1$ by:
-        $$K(x, t) = \frac{(1-t)h(x) + tx}{\|(1-t)h(x) + tx\|}.$$
+        $$K(x, t) = \frac{(1-t)h(x) + tx}{\norm{(1-t)h(x) + tx}}.$$
 
 :::
 

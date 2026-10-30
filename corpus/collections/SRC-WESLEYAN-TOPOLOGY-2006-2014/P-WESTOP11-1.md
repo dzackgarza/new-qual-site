@@ -206,9 +206,9 @@ f:X\to[0,1]
 $$
 such that
 $$
-f|_A=0,
+f\restrict_A=0,
 \qquad
-f|_B=1.
+f\restrict_B=1.
 $$
 
 
@@ -260,16 +260,16 @@ F:X\to\RR
 $$
 such that
 $$
-F|_A=f.
+F\restrict_A=f.
 $$
 
 If $f$ is bounded, say
 $$
-|f|\le M,
+\abs{f}\le M,
 $$
 the extension may be chosen with
 $$
-|F|\le M.
+\abs{F}\le M.
 $$
 
 

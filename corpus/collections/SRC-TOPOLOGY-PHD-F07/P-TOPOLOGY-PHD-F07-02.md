@@ -60,7 +60,7 @@ These are respectively positive definiteness, symmetry, and the triangle inequal
 ::: {.pf-step #triangle-inequality-estimate}
 For all $x,x',y,y'\in X$,
 $$
-\bigl|d(x,y)-d(x',y')\bigr|
+\abs{d(x,y)-d(x',y')}
 \le d(x,x')+d(y,y').
 $$
 
@@ -104,7 +104,7 @@ Then $U\times V$ is an open neighborhood of $(x,y)$ in the product topology.
 For every $(x',y')\in U\times V$, step [](#triangle-inequality-estimate){.pf-ref} gives
 $$
 \begin{aligned}
-\bigl|d(x',y')-d(x,y)\bigr|
+\abs{d(x',y')-d(x,y)}
 &\le d(x',x)+d(y',y)\\
 &<\frac\epsilon2+\frac\epsilon2\\
 &=\epsilon.

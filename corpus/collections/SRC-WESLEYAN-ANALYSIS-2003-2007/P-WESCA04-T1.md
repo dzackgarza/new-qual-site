@@ -29,7 +29,7 @@ State the Casorati–Weierstrass theorem.
 
 Let $f$ be holomorphic on a punctured neighborhood
 $$
-0<|z-z_0|<r
+0<\abs{z-z_0}<r
 $$
 and suppose $z_0$ is an essential singularity of $f$.
 Then for every
@@ -39,7 +39,7 @@ $$
 the image
 $$
 f\bigl(
-\{z:0<|z-z_0|<\rho\}
+\{z:0<\abs{z-z_0}<\rho\}
 \bigr)
 $$
 is dense in
@@ -64,11 +64,11 @@ z
 $$
 with
 $$
-0<|z-z_0|<\rho
+0<\abs{z-z_0}<\rho
 $$
 such that
 $$
-|f(z)-w|<\varepsilon.
+\abs{f(z)-w}<\varepsilon.
 $$
 
 Equivalently again, every complex number is a limit of values

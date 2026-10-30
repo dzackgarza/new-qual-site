@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z4CIU
 kind: problem
-title: All roots of $z^7-5z^3+12$ lie between $|z|=1$ and $|z|=2$
+title: All roots of $z^7-5z^3+12$ lie between $\abs{z}=1$ and $\abs{z}=2$
 classification:
   areas:
   - complex-analysis
@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Prove that all the roots of the complex polynomial
-$$f(z) = z^7 - 5 z^3 +12 =0$$ lie between the circles $|z|=1$ and $|z|=2$.
+$$f(z) = z^7 - 5 z^3 +12 =0$$ lie between the circles $\abs{z}=1$ and $\abs{z}=2$.
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ On $\abs{z} \leq 1$:
 
 For $\abs{z} = 1$,
 $$
-\abs{m(z)} \definedas \abs{z^7-5z^3}\leq \abs{z}^7 + 5\abs{z}^3 = 6 < 12 \definedas \abs{M(z)}
+\abs{m(z)} \coloneqq \abs{z^7-5z^3}\leq \abs{z}^7 + 5\abs{z}^3 = 6 < 12 \coloneqq \abs{M(z)}
 ,$$
 so $0 = Z_M = Z_{f}$.
 
@@ -38,7 +38,7 @@ On $\abs{z} \leq 2$,
 
 On $\abs{z} = 2$,
 $$
-\abs{m(z)} \definedas \abs{-5z^3 + 12} \leq 5\abs{z}^2 + 12 = 32 < 128 = 2^7 \definedas \abs{M(z)}
+\abs{m(z)} \coloneqq \abs{-5z^3 + 12} \leq 5\abs{z}^2 + 12 = 32 < 128 = 2^7 \coloneqq \abs{M(z)}
 ,$$
 so $7 = Z_M = Z_{f}$.
 

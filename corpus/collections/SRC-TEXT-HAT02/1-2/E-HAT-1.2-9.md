@@ -117,7 +117,7 @@ r:M_g\to C
 $$
 were a retraction, then restricting $r$ to either subsurface $M'_h\subset M_g$ would give a retraction
 $$
-r|_{M'_h}:M'_h\to C,
+r\restrict_{M'_h}:M'_h\to C,
 $$
 because $C\subset M'_h$ and $r$ is the identity on $C$.
 This contradicts step [](#s2){.pf-ref}.

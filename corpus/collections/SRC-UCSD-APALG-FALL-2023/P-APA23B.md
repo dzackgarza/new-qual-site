@@ -119,7 +119,7 @@ $$
 Then
 $$
 \frac{v^HCv}{v^Hv}
-=\frac{\sum_j\mu_j|c_j|^2}{\sum_j|c_j|^2},
+=\frac{\sum_j\mu_j\abs{c_j}^2}{\sum_j\abs{c_j}^2},
 $$
 which is a convex combination of the real eigenvalues $\mu_j$. Hence it lies between the smallest and largest eigenvalues.
 :::

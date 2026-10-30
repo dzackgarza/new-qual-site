@@ -29,25 +29,25 @@ Justify your answer.
 ::: {.solution}
 No. If $F$ is infinite and $\overline F$ is an algebraic closure, then
 $$
-|\overline F|=|F|.
+\cardinality{\overline F}=\cardinality{F}.
 $$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The polynomial ring $F[x]$ has cardinality $|F|$.
+The polynomial ring $F[x]$ has cardinality $\cardinality{F}$.
 
 ::: pf-proof
 
 For each fixed degree $n$, the set of polynomials of degree at most $n$ is in
-bijection with a subset of $F^{n+1}$, which has cardinality $|F|$ because $F$
+bijection with a subset of $F^{n+1}$, which has cardinality $\cardinality{F}$ because $F$
 is infinite. Since
 $$
 F[x]=\bigcup_{n\ge0}\{f:\deg f\le n\}
 $$
-is a countable union of sets of cardinality $|F|$, it also has cardinality
-$|F|$.
+is a countable union of sets of cardinality $\cardinality{F}$, it also has cardinality
+$\cardinality{F}$.
 
 :::
 
@@ -55,16 +55,16 @@ $|F|$.
 
 ::: {.pf-step #s2}
 
-There are at most $|F|$ elements algebraic over $F$ in any extension.
+There are at most $\cardinality{F}$ elements algebraic over $F$ in any extension.
 
 ::: pf-proof
 
 Every algebraic element is a root of some nonzero polynomial in $F[x]$.
 Each polynomial has finitely many roots in a field extension, and by step [](#s1){.pf-ref} there
-are only $|F|$ polynomials. Hence the union of all root sets has cardinality at
+are only $\cardinality{F}$ polynomials. Hence the union of all root sets has cardinality at
 most
 $$
-|F|\cdot\aleph_0=|F|.
+\cardinality{F}\cdot\aleph_0=\cardinality{F}.
 $$
 
 :::
@@ -73,17 +73,17 @@ $$
 
 ::: pf-step
 
-Therefore $|\overline F|=|F|$.
+Therefore $\cardinality{\overline F}=\cardinality{F}$.
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
 $$
-|\overline F|\le|F|.
+\cardinality{\overline F}\le\cardinality{F}.
 $$
 Since $F\subseteq\overline F$,
 $$
-|F|\le|\overline F|.
+\cardinality{F}\le\cardinality{\overline F}.
 $$
 The two inequalities give equality.
 

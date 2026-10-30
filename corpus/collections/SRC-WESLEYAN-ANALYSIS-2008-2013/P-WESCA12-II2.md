@@ -145,7 +145,7 @@ occurs.
 
 Choose a small positively oriented circle around $i$ that does not enclose
 $-i$.
-Traversing it $m$ times if $m>0$, or $|m|$ times with reverse orientation if
+Traversing it $m$ times if $m>0$, or $\abs{m}$ times with reverse orientation if
 $m<0$, gives a closed smooth curve with
 $$
 \operatorname{Ind}(\gamma,i)=m,
@@ -201,7 +201,7 @@ integer. Step [](#s1-3){.pf-ref} shows every integer difference is realized.
 
 Now let $\gamma$ be a positively oriented circle
 $$
-|z-c|=R
+\abs{z-c}=R
 $$
 that does not pass through either pole.
 Then
@@ -209,8 +209,8 @@ $$
 \operatorname{Ind}(\gamma,a)
 =
 \begin{cases}
-1,&|a-c|<R,\\
-0,&|a-c|>R.
+1,&\abs{a-c}<R,\\
+0,&\abs{a-c}>R.
 \end{cases}
 $$
 
@@ -221,7 +221,7 @@ A positively oriented simple circle winds once around every point in its
 interior and zero times around every exterior point.
 The equalities
 $$
-|a-c|=R
+\abs{a-c}=R
 $$
 are excluded because the curve must avoid
 $$
@@ -249,7 +249,7 @@ $$
 
 The condition is
 $$
-|c-i|<R<|c+i|.
+\abs{c-i}<R<\abs{c+i}.
 $$
 Hence
 $$
@@ -280,7 +280,7 @@ $$
 
 The condition is
 $$
-|c+i|<R<|c-i|.
+\abs{c+i}<R<\abs{c-i}.
 $$
 Thus
 $$
@@ -323,12 +323,12 @@ In either case their difference vanishes.
 In center-radius language, the two cases are
 $$
 R>
-\max\{|c-i|,|c+i|\}
+\max\{\abs{c-i},\abs{c+i}\}
 $$
 and
 $$
 R<
-\min\{|c-i|,|c+i|\}.
+\min\{\abs{c-i},\abs{c+i}\}.
 $$
 
 :::

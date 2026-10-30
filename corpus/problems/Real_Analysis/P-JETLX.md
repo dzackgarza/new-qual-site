@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-JETLX
 kind: problem
-title: $L^1((0,2\pi))$ functions as $g+h$ with $g\in L^2$ and $\|h\|_1$ arbitrarily
-  small
+title: $L^1((0,2\pi))$ functions as $g+h$ with $g\in L^2$ and $\norm{h}_1$ arbitrarily small
 classification:
   areas:
   - real-analysis
@@ -39,7 +38,7 @@ It suffices to treat real $f \ge 0$.
 
 ::: pf-proof
 
-Write $f = u^+ - u^- + i(v^+ - v^-)$ with $u = \operatorname{Re} f$, $v = \operatorname{Im} f$. If each of the four nonnegative parts is $g_j + h_j$ with $g_j \in L^2$ and $\|h_j\|_1 < \eps/4$, the corresponding combinations give $f = g + h$ with $g \in L^2$ and $\|h\|_1 < \eps$.
+Write $f = u^+ - u^- + i(v^+ - v^-)$ with $u = \operatorname{Re} f$, $v = \operatorname{Im} f$. If each of the four nonnegative parts is $g_j + h_j$ with $g_j \in L^2$ and $\norm{h_j}_1 < \eps/4$, the corresponding combinations give $f = g + h$ with $g \in L^2$ and $\norm{h}_1 < \eps$.
 
 :::
 
@@ -51,7 +50,7 @@ For $f \ge 0$ and $M > 0$, put $g_M = \min(f, M)$ and $h_M = f - g_M = (f - M)^+
 
 ::: pf-proof
 
-$0 \le g_M \le M$ and $g_M \le f$, so $\int g_M^2 \le M\int g_M \le M\|f\|_1$.
+$0 \le g_M \le M$ and $g_M \le f$, so $\int g_M^2 \le M\int g_M \le M\norm{f}_1$.
 
 :::
 
@@ -59,7 +58,7 @@ $0 \le g_M \le M$ and $g_M \le f$, so $\int g_M^2 \le M\int g_M \le M\|f\|_1$.
 
 ::: {.pf-step #s3}
 
-$\|h_M\|_1 \to 0$ as $M \to \infty$.
+$\norm{h_M}_1 \to 0$ as $M \to \infty$.
 
 ::: pf-proof
 
@@ -71,7 +70,7 @@ $h_M \to 0$ at every point where $f < \infty$, hence a.e., and $0 \le h_M \le f 
 
 ::: pf-qed
 
-By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, choosing $M$ with $\|h_M\|_1 < \eps$ gives $f = g_M + h_M$ with $g_M \in L^2$.
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, choosing $M$ with $\norm{h_M}_1 < \eps$ gives $f = g_M + h_M$ with $g_M \in L^2$.
 
 :::
 

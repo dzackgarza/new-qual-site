@@ -66,18 +66,18 @@ is equicontinuous.
 Fix $\varepsilon>0$.
 Choose $N$ such that
 $$
-\|f_n-f\|_\infty<\frac{\varepsilon}{3}
+\norm{f_n-f}_\infty<\frac{\varepsilon}{3}
 $$
 for every $n\ge N$.
 
 By step [](#s1-1){.pf-ref}, $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
 Choose $\delta_0>0$ such that
 $$
-|x-y|<\delta_0
+\abs{x-y}<\delta_0
 $$
 implies
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{3}.
+\abs{f(x)-f(y)}<\frac{\varepsilon}{3}.
 $$
 
 For each of the finitely many functions
@@ -86,11 +86,11 @@ f_1,\ldots,f_{N-1},
 $$
 uniform continuity on $[0,1]$ gives a number $\delta_j>0$ such that
 $$
-|x-y|<\delta_j
+\abs{x-y}<\delta_j
 $$
 implies
 $$
-|f_j(x)-f_j(y)|<\varepsilon.
+\abs{f_j(x)-f_j(y)}<\varepsilon.
 $$
 Set
 $$
@@ -103,13 +103,13 @@ If $n<N$, the desired estimate follows from the choice of $\delta_n$.
 If $n\ge N$, then
 $$
 \begin{aligned}
-|f_n(x)-f_n(y)|
+\abs{f_n(x)-f_n(y)}
 &\le
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 +
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 +
-|f(y)-f_n(y)|\\
+\abs{f(y)-f_n(y)}\\
 &<
 \frac{\varepsilon}{3}
 +
@@ -137,25 +137,25 @@ Then the pointwise limit $f$ is continuous.
 Fix $\varepsilon>0$.
 By equicontinuity, choose $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|f_n(x)-f_n(y)|<\frac{\varepsilon}{3}
+\abs{f_n(x)-f_n(y)}<\frac{\varepsilon}{3}
 $$
 for every $n$.
 
 Fix $x,y$ with
 $$
-|x-y|<\delta.
+\abs{x-y}<\delta.
 $$
 Taking $n\to\infty$ in
 $$
-|f_n(x)-f_n(y)|<\frac{\varepsilon}{3}
+\abs{f_n(x)-f_n(y)}<\frac{\varepsilon}{3}
 $$
 gives
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
 \frac{\varepsilon}{3}
 <
@@ -172,15 +172,15 @@ Thus $f$ is uniformly continuous, in particular continuous.
 Fix $\varepsilon>0$.
 There exists $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies both
 $$
-|f_n(x)-f_n(y)|<\frac{\varepsilon}{3}
+\abs{f_n(x)-f_n(y)}<\frac{\varepsilon}{3}
 $$
 for every $n$ and
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{3}.
+\abs{f(x)-f(y)}<\frac{\varepsilon}{3}.
 $$
 
 
@@ -201,7 +201,7 @@ x_1,\ldots,x_m\in[0,1]
 $$
 such that every $x\in[0,1]$ satisfies
 $$
-|x-x_j|<\delta
+\abs{x-x_j}<\delta
 $$
 for some $j$.
 
@@ -229,7 +229,7 @@ j=1,\ldots,m,
 $$
 one has
 $$
-|f_n(x_j)-f(x_j)|<\frac{\varepsilon}{3}.
+\abs{f_n(x_j)-f(x_j)}<\frac{\varepsilon}{3}.
 $$
 
 
@@ -249,7 +249,7 @@ $$
 
 For every $n\ge N$ and every $x\in[0,1]$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 
@@ -257,19 +257,19 @@ $$
 
 Choose $x_j$ with
 $$
-|x-x_j|<\delta
+\abs{x-x_j}<\delta
 $$
 as in step [](#s1-5){.pf-ref}.
 Then steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} give
 $$
 \begin{aligned}
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 &\le
-|f_n(x)-f_n(x_j)|
+\abs{f_n(x)-f_n(x_j)}
 +
-|f_n(x_j)-f(x_j)|
+\abs{f_n(x_j)-f(x_j)}
 +
-|f(x_j)-f(x)|\\
+\abs{f(x_j)-f(x)}\\
 &<
 \frac{\varepsilon}{3}
 +

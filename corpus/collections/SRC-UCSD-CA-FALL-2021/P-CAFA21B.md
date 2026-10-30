@@ -13,14 +13,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let $K = \{ z \in \CC : |z| \leq 3,\, |z-1| \geq 1,\, |z+1| \geq 1 \}$.
+Let $K = \{ z \in \CC : \abs{z} \leq 3,\, \abs{z-1} \geq 1,\, \abs{z+1} \geq 1 \}$.
 
 (i) True/false: every holomorphic function in a neighborhood of $K$ is the local uniform limit on $K$ of a sequence of polynomials.
 Please justify your answer.
 
 (ii) Determine, with justification, the set
 $$
-\widehat{K} = \{ z \in \CC : |p(z)| \leq \sup_{w \in K} |p(w)| \text{ for all polynomials } p \}.
+\widehat{K} = \{ z \in \CC : \abs{p(z)} \leq \sup_{w \in K} \abs{p(w)} \text{ for all polynomials } p \}.
 $$
 :::
 
@@ -40,7 +40,7 @@ $$
 converges uniformly to $0$ on $K$. But $1$ lies in the polynomial hull of $K$,
 so
 $$
-|q_n(1)|\le \sup_K|q_n|.
+\abs{q_n(1)}\le \sup_K\abs{q_n}.
 $$
 The left side is $1$, a contradiction.
 
@@ -48,6 +48,6 @@ The left side is $1$, a contradiction.
 by filling in all bounded components of its complement. Here filling the two
 holes gives the whole closed disk of radius $3$. Thus
 $$
-\boxed{\widehat K=\{z:|z|\le3\}.}
+\boxed{\widehat K=\{z:\abs{z}\le3\}.}
 $$
 :::

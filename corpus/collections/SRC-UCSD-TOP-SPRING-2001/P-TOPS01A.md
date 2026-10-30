@@ -36,14 +36,14 @@ Then $p$ defines a continuous map $\CC\to\CC^*$.
 
 ::: {.pf-step #s2}
 
-Choose $R>0$ so large that on $|z|=R$,
+Choose $R>0$ so large that on $\abs{z}=R$,
 $$
-|a_{n-1}z^{n-1}+\cdots+a_0|<|a_nz^n|.
+\abs{a_{n-1}z^{n-1}+\cdots+a_0}<\abs{a_nz^n}.
 $$
 
 ::: pf-proof
 
-After dividing by $R^n$, the lower-degree terms tend uniformly to zero on the circle as $R\to\infty$, while $|a_nz^n|=|a_n|R^n$.
+After dividing by $R^n$, the lower-degree terms tend uniformly to zero on the circle as $R\to\infty$, while $\abs{a_nz^n}=\abs{a_n}R^n$.
 
 :::
 
@@ -51,7 +51,7 @@ After dividing by $R^n$, the lower-degree terms tend uniformly to zero on the ci
 
 ::: pf-step
 
-The loop $p|_{|z|=R}:S^1\to\CC^*$ is homotopic in $\CC^*$ to the loop $z\mapsto a_nz^n$.
+The loop $p\restrict_{\abs{z}=R}:S^1\to\CC^*$ is homotopic in $\CC^*$ to the loop $z\mapsto a_nz^n$.
 
 ::: pf-proof
 
@@ -61,9 +61,9 @@ H_t(z)=a_nz^n+t(a_{n-1}z^{n-1}+\cdots+a_0).
 $$
 By step [](#s2){.pf-ref},
 $$
-|H_t(z)-a_nz^n|<|a_nz^n|,
+\abs{H_t(z)-a_nz^n}<\abs{a_nz^n},
 $$
-so $H_t(z)\ne0$ for every $t\in[0,1]$ and $|z|=R$.
+so $H_t(z)\ne0$ for every $t\in[0,1]$ and $\abs{z}=R$.
 
 :::
 
@@ -71,7 +71,7 @@ so $H_t(z)\ne0$ for every $t\in[0,1]$ and $|z|=R$.
 
 ::: {.pf-step #s4}
 
-Hence the winding number of $p|_{|z|=R}$ about $0$ is $n$.
+Hence the winding number of $p\restrict_{\abs{z}=R}$ about $0$ is $n$.
 
 ::: pf-proof
 
@@ -83,7 +83,7 @@ The loop $z\mapsto a_nz^n$ winds exactly $n$ times around the origin, and windin
 
 ::: {.pf-step #s5}
 
-But $p|_{|z|=R}$ extends over the disk $|z|\le R$ as a map into $\CC^*$, so it must be null-homotopic and have winding number $0$.
+But $p\restrict_{\abs{z}=R}$ extends over the disk $\abs{z}\le R$ as a map into $\CC^*$, so it must be null-homotopic and have winding number $0$.
 
 ::: pf-proof
 

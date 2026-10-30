@@ -68,10 +68,10 @@ $$
 by continuity. Thus $F'=f$ on $D$, so $f$ is holomorphic. Since $D$ was
 arbitrary, $f\in H(G)$.
 
-For Liouville, suppose $|f|\le M$ on $\CC$. Cauchy's estimate on the
-circle $|z-a|=R$ gives
+For Liouville, suppose $\abs{f}\le M$ on $\CC$. Cauchy's estimate on the
+circle $\abs{z-a}=R$ gives
 $$
-|f'(a)|\le \frac{M}{R}.
+\abs{f'(a)}\le \frac{M}{R}.
 $$
 Letting $R\to\infty$ yields $f'(a)=0$. Since $a$ was arbitrary, $f$ is
 constant.

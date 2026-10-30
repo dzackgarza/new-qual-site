@@ -34,7 +34,7 @@ $$
 be a complex polynomial of degree $n>0$.
 Prove that
 $$
-\frac1{2\pi i}\int_{|z|=R} z^{n-1}|f(z)|^2\,dz
+\frac1{2\pi i}\int_{\abs{z}=R} z^{n-1}\abs{f(z)}^2\,dz
 =a_0\overline{a_n}R^{2n}.
 $$
 :::
@@ -44,7 +44,7 @@ $$
 ::: pf
 
 ::: {.pf-step #conjugate-on-circle}
-On the circle $|z|=R$,
+On the circle $\abs{z}=R$,
 $$
 \overline{f(z)}
 =
@@ -52,7 +52,7 @@ $$
 $$
 
 ::: pf-proof
-If $|z|=R$, then
+If $\abs{z}=R$, then
 $$
 z\overline z=R^2,
 $$
@@ -74,7 +74,7 @@ $$
 
 ::: {.pf-step #laurent-coefficient}
 The coefficient of $z^{-1}$ in the Laurent polynomial
-$z^{n-1}|f(z)|^2$ is
+$z^{n-1}\abs{f(z)}^2$ is
 $$
 a_0\overline{a_n}R^{2n}.
 $$
@@ -82,7 +82,7 @@ $$
 ::: pf-proof
 By step [](#conjugate-on-circle){.pf-ref},
 $$
-z^{n-1}|f(z)|^2
+z^{n-1}\abs{f(z)}^2
 =
 \sum_{j=0}^n\sum_{k=0}^n
 a_j\overline{a_k}R^{2k}z^{n-1+j-k}.
@@ -108,7 +108,7 @@ $$
 The required integral is
 $$
 \boxed{
-\frac1{2\pi i}\int_{|z|=R} z^{n-1}|f(z)|^2\,dz
+\frac1{2\pi i}\int_{\abs{z}=R} z^{n-1}\abs{f(z)}^2\,dz
 =
 a_0\overline{a_n}R^{2n}
 }.
@@ -117,7 +117,7 @@ $$
 ::: pf-proof
 For every integer $m$,
 $$
-\frac1{2\pi i}\int_{|z|=R} z^m\,dz
+\frac1{2\pi i}\int_{\abs{z}=R} z^m\,dz
 =
 \begin{cases}
 1,&m=-1,\\

@@ -35,7 +35,7 @@ p(U)\cap p(A)=p(U)
 $$
 is open in the subspace $p(A)$. Hence the restriction
 $$
-q=p|_A:A\to p(A)
+q=p\restrict_A:A\to p(A)
 $$
 is open.
 :::

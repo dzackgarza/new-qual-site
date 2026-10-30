@@ -20,8 +20,8 @@ If $W\subseteq V$ is a nonzero subspace with $A(W)\subseteq W$, then $W$ contain
 :::
 
 ::: {.proof}
-The restriction $A|_W\colon W\to W$ is a linear operator on a nonzero finite-dimensional space, so its characteristic polynomial has positive degree and has a root $\lambda\in k$.
-Then $A|_W-\lambda\id_W$ is not injective, and a nonzero $w\in W$ with $Aw=\lambda w$ is an eigenvector of $A$.
+The restriction $A\restrict_W\colon W\to W$ is a linear operator on a nonzero finite-dimensional space, so its characteristic polynomial has positive degree and has a root $\lambda\in k$.
+Then $A\restrict_W-\lambda\id_W$ is not injective, and a nonzero $w\in W$ with $Aw=\lambda w$ is an eigenvector of $A$.
 :::
 
 ::: {.example}

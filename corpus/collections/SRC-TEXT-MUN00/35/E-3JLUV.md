@@ -50,7 +50,7 @@ Let $d_0$ be an arbitrary compatible metric on $X$.
 
 ::: pf-step
 Define a new function $d: X \times X \to [0, \infty)$ by:
-$$d(x, y) = d_0(x, y) + |\phi(x) - \phi(y)|.$$
+$$d(x, y) = d_0(x, y) + \abs{\phi(x) - \phi(y)}.$$
 :::
 
 ::: pf-step
@@ -58,11 +58,11 @@ $d$ is a metric on $X$: positivity, non-degeneracy, symmetry, and the triangle i
 :::
 
 ::: pf-step
-$d$ generates the original topology of $X$: the map $F(x) = (x, \phi(x))$ is a topological embedding of $X$ into $(X, d_0) \times \RR$ with the $\ell_1$ product metric $d((x_1, t_1), (x_2, t_2)) = d_0(x_1, x_2) + |t_1 - t_2|$.
+$d$ generates the original topology of $X$: the map $F(x) = (x, \phi(x))$ is a topological embedding of $X$ into $(X, d_0) \times \RR$ with the $\ell_1$ product metric $d((x_1, t_1), (x_2, t_2)) = d_0(x_1, x_2) + \abs{t_1 - t_2}$.
 :::
 
 ::: pf-step
-Since $\phi(X)$ is unbounded in $\RR$, $\operatorname{diam}_d(X) \ge \sup_{x, y \in X} |\phi(x) - \phi(y)| = \infty$.
+Since $\phi(X)$ is unbounded in $\RR$, $\operatorname{diam}_d(X) \ge \sup_{x, y \in X} \abs{\phi(x) - \phi(y)} = \infty$.
 :::
 
 ::: pf-step

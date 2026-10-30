@@ -69,13 +69,13 @@ For $R>2$, integrate along $[-R,R]$ and the
 counterclockwise upper semicircle $\Gamma_R$. The residue
 theorem gives the contour integral
 $2\pi i(-i/8)=\pi/4$ [@SS03]. On $\Gamma_R$,
-$|z^4+4|\geq R^4-4$, hence
+$\abs{z^4+4}\geq R^4-4$, hence
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\frac{\pi R}{R^4-4}\longrightarrow0.
 $$
 The real integrand is bounded near zero and bounded
-by $|x|^{-4}$ for $|x|\geq1$, so the full-line integral
+by $\abs{x}^{-4}$ for $\abs{x}\geq1$, so the full-line integral
 converges absolutely. Passing to the limit gives
 $$
 \int_{-\infty}^{\infty}\frac{dx}{x^4+4}=\frac\pi4.

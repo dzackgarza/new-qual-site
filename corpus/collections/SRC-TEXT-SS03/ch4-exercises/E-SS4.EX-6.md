@@ -21,7 +21,7 @@ audit:
 6. Prove that
 
 $$
-\frac {1}{\pi} \sum_ {n = - \infty} ^ {\infty} \frac {a}{a ^ {2} + n ^ {2}} = \sum_ {n = - \infty} ^ {\infty} e ^ {- 2 \pi a | n |}
+\frac {1}{\pi} \sum_ {n = - \infty} ^ {\infty} \frac {a}{a ^ {2} + n ^ {2}} = \sum_ {n = - \infty} ^ {\infty} e ^ {- 2 \pi a \abs{ n }}
 $$
 
 whenever $a > 0$ . Hence show that the sum equals coth $\pi a$
@@ -34,7 +34,7 @@ f(x)=\frac1\pi\frac{a}{a^2+x^2},\qquad a>0,
 $$
 we have
 $$
-\widehat f(\xi)=e^{-2\pi a|\xi|}.
+\widehat f(\xi)=e^{-2\pi a\abs{\xi}}.
 $$
 Both $f$ and $\widehat f$ are of moderate decrease, so the Poisson summation formula applies:
 $$
@@ -43,11 +43,11 @@ $$
 Therefore
 $$
 \frac1\pi\sum_{n=-\infty}^{\infty}\frac{a}{a^2+n^2}
-=\sum_{n=-\infty}^{\infty}e^{-2\pi a|n|}.
+=\sum_{n=-\infty}^{\infty}e^{-2\pi a\abs{n}}.
 $$
 The latter sum is geometric:
 $$
-\sum_{n\in\ZZ}e^{-2\pi a|n|}
+\sum_{n\in\ZZ}e^{-2\pi a\abs{n}}
 =1+2\sum_{n=1}^{\infty}e^{-2\pi an}
 =1+\frac{2e^{-2\pi a}}{1-e^{-2\pi a}}
 =\frac{e^{\pi a}+e^{-\pi a}}{e^{\pi a}-e^{-\pi a}}

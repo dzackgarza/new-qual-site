@@ -69,7 +69,7 @@ For $n=1$ the relation says $xyx^{-1}=y$, so $x$ and $y$ commute. The presentati
 
 Assume henceforth that $n\ne1$ and put
 $$
-m=|n^3-1|>0.
+m=\abs{n^3-1}>0.
 $$
 Then step [](#s1){.pf-ref} gives $y^m=1$.
 
@@ -92,7 +92,7 @@ $$
 xy=y^n x
 $$
 moves each occurrence of $x$ to the right across a power of $y$. Repeating this rewrites every word as $y^j x^i$. Finally reduce $j$ modulo $m$ using $y^m=1$.
-Thus $|G_n|\le3m$.
+Thus $\cardinality{G_n}\le3m$.
 
 :::
 
@@ -148,7 +148,7 @@ $$
 \rho(y^j x^i)(0,0)=Y^jX^i(0,0)=(i,j).
 $$
 The points $(i,j)$ are all distinct in $\Omega$. Hence the permutations $\rho(y^j x^i)$ are pairwise distinct, and therefore the corresponding elements $y^j x^i$ of $G_n$ are pairwise distinct.
-Thus $|G_n|\ge3m$.
+Thus $\cardinality{G_n}\ge3m$.
 
 :::
 
@@ -162,12 +162,12 @@ G_n\text{ is finite}\iff n\ne1,
 $$
 and in the finite cases
 $$
-\boxed{|G_n|=3|n^3-1|}.
+\boxed{\cardinality{G_n}=3\abs{n^3-1}}.
 $$
 
 ::: pf-proof
 
-The case $n=1$ is infinite by step [](#s2){.pf-ref}. If $n\ne1$, step [](#s3){.pf-ref} gives $|G_n|\le3m$ and step [](#s5){.pf-ref} gives $|G_n|\ge3m$, hence equality.
+The case $n=1$ is infinite by step [](#s2){.pf-ref}. If $n\ne1$, step [](#s3){.pf-ref} gives $\cardinality{G_n}\le3m$ and step [](#s5){.pf-ref} gives $\cardinality{G_n}\ge3m$, hence equality.
 
 :::
 

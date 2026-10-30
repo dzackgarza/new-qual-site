@@ -20,7 +20,7 @@ audit:
 Let $A$ be a real $m\times n$ matrix with $m>n$ and linearly independent columns, and let $b\in\RR^m$.
 Show that the vector $x^*\in\RR^n$ minimizing
 $$
-g(x)=\|Ax-b\|_2^2
+g(x)=\norm{Ax-b}_2^2
 $$
 is the solution of the normal equations
 $$
@@ -57,7 +57,7 @@ $$
 v^TA^TAv
 =(Av)^T(Av)
 =
-\|Av\|_2^2
+\norm{Av}_2^2
 >
 0.
 $$
@@ -88,7 +88,7 @@ $$
 =
 v^TA^TAv
 =
-\|Av\|_2^2,
+\norm{Av}_2^2,
 $$
 so
 $$
@@ -274,9 +274,9 @@ $$
 \boxed{
 g(x)
 =
-\|A(x-x^*)\|_2^2
+\norm{A(x-x^*)}_2^2
 +
-\|r\|_2^2
+\norm{r}_2^2
 }.
 $$
 
@@ -292,15 +292,15 @@ $$
 By step [](#s1-7){.pf-ref}, the summands are orthogonal.
 The Pythagorean theorem therefore gives
 $$
-\|Ax-b\|_2^2
+\norm{Ax-b}_2^2
 =
-\|A(x-x^*)\|_2^2
+\norm{A(x-x^*)}_2^2
 +
-\|r\|_2^2.
+\norm{r}_2^2.
 $$
 Since
 $$
-g(x)=\|Ax-b\|_2^2,
+g(x)=\norm{Ax-b}_2^2,
 $$
 the formula follows.
 
@@ -319,7 +319,7 @@ Step [](#s1-8){.pf-ref} shows
 $$
 g(x)
 \ge
-\|r\|_2^2
+\norm{r}_2^2
 =
 g(x^*)
 $$
@@ -346,7 +346,7 @@ Hence $x^*$ is the unique minimizer.
 
 Therefore the vector minimizing
 $$
-\|Ax-b\|_2^2
+\norm{Ax-b}_2^2
 $$
 is exactly the unique solution of
 $$

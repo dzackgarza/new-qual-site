@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find an analytic map that sends the unit disk $( | z | < 1 )$ onto the left half plane $( \mathrm { R e } ( z ) < 0 )$
+Find an analytic map that sends the unit disk $( \abs{ z } < 1 )$ onto the left half plane $( \mathrm { R e } ( z ) < 0 )$
 :::
 
 ::: {.solution}
@@ -46,11 +46,11 @@ not inside it.
 
 ::: {.pf-step #s1-2}
 
-For every $|z|<1$,
+For every $\abs{z}<1$,
 $$
 \operatorname{Re}\Phi(z)
 =
--\frac{1-|z|^2}{|1-z|^2}.
+-\frac{1-\abs{z}^2}{\abs{1-z}^2}.
 $$
 
 
@@ -62,12 +62,12 @@ $$
 \Phi(z)
 &=
 -\frac{(1+z)(1-\overline z)}
-{|1-z|^2}\\
+{\abs{1-z}^2}\\
 &=
 -\frac{
-1-|z|^2+z-\overline z
+1-\abs{z}^2+z-\overline z
 }{
-|1-z|^2}.
+\abs{1-z}^2}.
 \end{aligned}
 $$
 The term $z-\overline z$ is purely imaginary, so taking real parts gives the
@@ -84,9 +84,9 @@ The image of the unit disk under $\Phi$ lies in the left half-plane.
 
 ::: pf-proof
 
-If $|z|<1$, then
+If $\abs{z}<1$, then
 $$
-1-|z|^2>0.
+1-\abs{z}^2>0.
 $$
 By step [](#s1-2){.pf-ref},
 $$
@@ -137,9 +137,9 @@ $$
 $$
 then
 $$
-\left|
+\abs{
 \frac{1+w}{w-1}
-\right|<1.
+}<1.
 $$
 
 
@@ -147,13 +147,13 @@ $$
 
 The inequality is equivalent to
 $$
-|1+w|<|1-w|.
+\abs{1+w}<\abs{1-w}.
 $$
 Squaring both sides gives
 $$
-1+2\operatorname{Re}w+|w|^2
+1+2\operatorname{Re}w+\abs{w}^2
 <
-1-2\operatorname{Re}w+|w|^2,
+1-2\operatorname{Re}w+\abs{w}^2,
 $$
 which is exactly
 $$
@@ -179,7 +179,7 @@ Define
 $$
 z=\frac{1+w}{w-1}.
 $$
-By step [](#s1-5){.pf-ref}, $|z|<1$. Step [](#s1-4){.pf-ref} shows that
+By step [](#s1-5){.pf-ref}, $\abs{z}<1$. Step [](#s1-4){.pf-ref} shows that
 $$
 \Phi(z)=w.
 $$

@@ -20,7 +20,7 @@ Prove that maximum principle for harmonic functions, i.e.
 a. If $u$ is a non-constant real-valued harmonic function in a region $\Omega$, then $u$ can not attain a maximum or a minimum in $\Omega$.
 
 b. Suppose $\Omega$ is a region with compact closure $\bar \Omega$.
-If $u$ is harmonic in $\Omega$ and continuous in $\bar \Omega$, then $$ \sup _{z \in \Omega}|u(z)| \leq \sup _{z \in \bar \Omega -\Omega}|u(z)| .$$
+If $u$ is harmonic in $\Omega$ and continuous in $\bar \Omega$, then $$ \sup _{z \in \Omega}\abs{u(z)} \leq \sup _{z \in \bar \Omega -\Omega}\abs{u(z)} .$$
 
 > Hint: to prove (a), assume $u$ attains a local maximum at $z_0$.
 > Let $f$ be holomorphic near $z_0$ with $\Re(f) = u$, and show that $f$ is not an open map.
@@ -47,15 +47,15 @@ For (b), continuity on the compact set $\overline\Omega$ implies that $u$
 attains its maximum and minimum there. By (a), unless $u$ is constant, both
 extrema occur on $\partial\Omega=\overline\Omega\setminus\Omega$. Thus
 $$
-\sup_{z\in\Omega}|u(z)|
+\sup_{z\in\Omega}\abs{u(z)}
 \le
-\sup_{z\in\partial\Omega}|u(z)|.
+\sup_{z\in\partial\Omega}\abs{u(z)}.
 $$
 The same inequality is immediate when $u$ is constant. Hence
 $$
 \boxed{
-\sup_{z\in\Omega}|u(z)|
+\sup_{z\in\Omega}\abs{u(z)}
 \le
-\sup_{z\in\overline\Omega-\Omega}|u(z)|.}
+\sup_{z\in\overline\Omega-\Omega}\abs{u(z)}.}
 $$
 :::

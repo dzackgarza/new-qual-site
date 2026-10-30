@@ -64,7 +64,7 @@ $$
 and the right sides tend to $0$ as $(u,v)\to(a,b)$.
 For $b\ne0$ and $\abs{v-b}<\abs b/2$,
 $$
-\Bigl\lvert\frac uv-\frac ab\Bigr\rvert=\frac{\abs{bu-av}}{\abs{vb}}\le\frac{2\bigl(\abs b\abs{u-a}+\abs a\abs{v-b}\bigr)}{b^2},
+\abs{\frac uv-\frac ab}=\frac{\abs{bu-av}}{\abs{vb}}\le\frac{2\bigl(\abs b\abs{u-a}+\abs a\abs{v-b}\bigr)}{b^2},
 $$
 which also tends to $0$.
 :::

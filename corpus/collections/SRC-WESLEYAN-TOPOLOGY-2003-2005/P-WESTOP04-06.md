@@ -11,7 +11,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Carefully define any three standard cardinal invariants associated with every topological space, excluding the cardinality $|X|$ itself.
+1. Carefully define any three standard cardinal invariants associated with every topological space, excluding the cardinality $\cardinality{X}$ itself.
 2. For each invariant $c$ you chose, prove or disprove:
    $$
    F\subseteq X\text{ closed}\quad\Longrightarrow\quad c(F)\le c(X).
@@ -32,7 +32,7 @@ $$
 w(X)
 \coloneqq
 \min\{
-|\mathcal B|:
+\cardinality{\mathcal B}:
 \mathcal B\text{ is a base for }X
 \},
 $$
@@ -40,7 +40,7 @@ $$
 d(X)
 \coloneqq
 \min\{
-|D|:
+\cardinality{D}:
 D\subseteq X,\ \overline D=X
 \},
 $$
@@ -49,7 +49,7 @@ $$
 c(X)
 \coloneqq
 \sup\{
-|\mathcal U|:
+\cardinality{\mathcal U}:
 \mathcal U
 \text{ is a pairwise-disjoint family of nonempty open subsets of }X
 \}.
@@ -96,9 +96,9 @@ is a base for the subspace topology on $F$. Hence
 $$
 w(F)
 \le
-|\mathcal B_F|
+\cardinality{\mathcal B_F}
 \le
-|\mathcal B|.
+\cardinality{\mathcal B}.
 $$
 Taking $\mathcal B$ of minimum size gives
 $$
@@ -201,7 +201,7 @@ Hence every dense subset of $F$ must equal $F$, so
 $$
 d(F)
 =
-|F|
+\cardinality{F}
 =
 2^{\aleph_0}
 >
@@ -290,7 +290,7 @@ D\subseteq X
 $$
 be dense with
 $$
-|D|=d(X).
+\cardinality{D}=d(X).
 $$
 Fix a metric $d_X$ inducing the topology.
 
@@ -322,9 +322,9 @@ x_{p,n}
 $$
 Then
 $$
-|E|
+\cardinality{E}
 \le
-|D|\cdot\aleph_0.
+\cardinality{D}\cdot\aleph_0.
 $$
 If $d(X)$ is infinite, this equals
 $$
@@ -468,14 +468,14 @@ U\in\mathcal U_n,
 $$
 are pairwise disjoint nonempty open subsets of $X$. Hence
 $$
-|\mathcal U_n|
+\cardinality{\mathcal U_n}
 \le
 c(X).
 $$
 
 Thus
 $$
-|\mathcal U|
+\cardinality{\mathcal U}
 \le
 c(X)\cdot\aleph_0.
 $$

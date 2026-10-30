@@ -66,7 +66,7 @@ Therefore $m\ge3$.
 
 There is $r>0$ such that $f$ has no zeros on
 $$
-0<|z|\le r.
+0<\abs{z}\le r.
 $$
 
 
@@ -89,15 +89,15 @@ $\overline{B_r(0)}$ lies in this neighborhood.
 
 Define
 $$
-\varepsilon=\min_{|z|=r}|f(z)|.
+\varepsilon=\min_{\abs{z}=r}\abs{f(z)}.
 $$
 Then $\varepsilon>0$.
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $f$ has no zeros on the compact circle $|z|=r$. The continuous
-function $|f|$ therefore has a positive minimum on that circle.
+By step [](#s1-2){.pf-ref}, $f$ has no zeros on the compact circle $\abs{z}=r$. The continuous
+function $\abs{f}$ therefore has a positive minimum on that circle.
 
 :::
 
@@ -105,19 +105,19 @@ function $|f|$ therefore has a positive minimum on that circle.
 
 ::: {.pf-step #s1-4}
 
-If $|w|<\varepsilon$, then $f(z)-w$ has exactly $m$ zeros in
+If $\abs{w}<\varepsilon$, then $f(z)-w$ has exactly $m$ zeros in
 $B_r(0)$, counted with multiplicity.
 
 
 ::: pf-proof
 
-On $|z|=r$, step [](#s1-3){.pf-ref} gives
+On $\abs{z}=r$, step [](#s1-3){.pf-ref} gives
 $$
-|w|<\varepsilon\le |f(z)|.
+\abs{w}<\varepsilon\le \abs{f(z)}.
 $$
 Thus
 $$
-|(f(z)-w)-f(z)|=|w|<|f(z)|
+\abs{(f(z)-w)-f(z)}=\abs{w}<\abs{f(z)}
 $$
 on the boundary circle. Rouché's theorem implies that $f-w$ and $f$ have
 the same number of zeros in $B_r(0)$, counted with multiplicity. By step
@@ -131,7 +131,7 @@ Hence $f-w$ has exactly $m$ zeros in $B_r(0)$, counted with multiplicity.
 ::: {.pf-step #s1-5}
 
 There is
-$\varepsilon>0$ such that every $|w|<\varepsilon$ has at least three
+$\varepsilon>0$ such that every $\abs{w}<\varepsilon$ has at least three
 preimages under $f$, counted with multiplicity.
 
 
@@ -141,7 +141,7 @@ By step [](#s1-1){.pf-ref}, $m\ge3$. Step [](#s1-4){.pf-ref} gives exactly $m$ z
 $$
 f(z)-w
 $$
-in $B_r(0)$ for every $|w|<\varepsilon$. Therefore there are at least three
+in $B_r(0)$ for every $\abs{w}<\varepsilon$. Therefore there are at least three
 zeros counted with multiplicity.
 
 :::

@@ -30,7 +30,7 @@ $$
 ::: {.solution}
 Using $1+\cos(2u)=2\cos^2u$,
 $$
-\sqrt{1+\cos(2ax)}=\sqrt2\,|\cos(ax)|.
+\sqrt{1+\cos(2ax)}=\sqrt2\,\abs{\cos(ax)}.
 $$
 This equals $\sqrt2\cos(ax)$ only on intervals where $\cos(ax)\ge0$.
 
@@ -52,5 +52,5 @@ k=\left\lfloor\frac{u+\pi/2}{\pi}\right\rfloor,
 \qquad
 H(u)=2k+\sin(u-k\pi).
 $$
-Then $H'(u)=|\cos u|$ wherever differentiated, including across the joining points by continuity of the derivative. If $a=0$, the integrand is the constant $\sqrt2$ and the primitive is $\sqrt2 x+C$.
+Then $H'(u)=\abs{\cos u}$ wherever differentiated, including across the joining points by continuity of the derivative. If $a=0$, the integrand is the constant $\sqrt2$ and the primitive is $\sqrt2 x+C$.
 :::

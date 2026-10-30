@@ -96,7 +96,7 @@ so it normalizes their product $H$. Also $t\notin H$, because
 every element of $H$ preserves each four-point block, whereas
 $t$ interchanges them. Consequently
 $$
-P=H\sqcup Ht,\qquad |P|=2|H|=128,
+P=H\sqcup Ht,\qquad \cardinality{P}=2\cardinality{H}=128,
 $$
 and $H$ is normal in $P$: it is normalized by $H$ and by $t$,
 which together generate $P$.
@@ -104,7 +104,7 @@ which together generate $P$.
 The exponent of $2$ in $8!$ is $4+2+1=7$, counting one factor
 from every even integer, another from $4$ and $8$, and another
 from $8$. Hence $128=2^7$ is the full power of $2$ dividing
-$|S_8|=8!$, so $P$ is a Sylow $2$-subgroup.
+$\cardinality{S_8}=8!$, so $P$ is a Sylow $2$-subgroup.
 
 :::
 

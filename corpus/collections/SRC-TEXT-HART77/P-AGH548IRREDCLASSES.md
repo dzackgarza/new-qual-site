@@ -283,7 +283,7 @@ Under the hypotheses of step [](#linear-system-globally-generated-induction){.pf
 $$
 M^2>0,
 $$
-then a general member of $|M|$ is a nonsingular irreducible curve.
+then a general member of $\linearsystem{M}$ is a nonsingular irreducible curve.
 
 ::: pf-proof
 We refine the induction in step [](#linear-system-globally-generated-induction){.pf-ref}.
@@ -294,11 +294,11 @@ M=ch+b_1(h-e_1)+b_2(h-e_2)
 $$
 with $c,b_1,b_2\ge0$.
 
-If $c>0$, the complete system $|M|$ contains, after multiplying by a section
+If $c>0$, the complete system $\linearsystem{M}$ contains, after multiplying by a section
 of the remaining globally generated factor which is nonzero on a dense
-open, the ratios of the system $|ch|$. The latter is the blowdown
+open, the ratios of the system $\linearsystem{ch}$. The latter is the blowdown
 $X_2\to\PP^2$ followed by the $c$-uple Veronese embedding. Hence the
-morphism defined by $|M|$ is generically one-to-one, in particular
+morphism defined by $\linearsystem{M}$ is generically one-to-one, in particular
 separable, and has two-dimensional image.
 
 If $c=0$, then
@@ -309,7 +309,7 @@ forces
 $$
 b_1,b_2>0.
 $$
-The two pencils $|h-e_1|$ and $|h-e_2|$ define a birational morphism
+The two pencils $\linearsystem{h-e_1}$ and $\linearsystem{h-e_2}$ define a birational morphism
 $$
 X_2\longrightarrow\PP^1\times\PP^1.
 $$
@@ -327,7 +327,7 @@ $$
 $$
 which recovers $x/z$ and $y/z$. The positive tensor powers
 $b_1,b_2$ followed by the Segre--Veronese embedding remain generically
-one-to-one. Thus in this case too the morphism of $|M|$ is separable with
+one-to-one. Thus in this case too the morphism of $\linearsystem{M}$ is separable with
 two-dimensional image.
 
 Bertini's theorem for a base-point-free separable system gives a nonsingular
@@ -342,11 +342,11 @@ on the contraction $\sigma:X_r\to X_{r-1}$, with
 $$
 (M')^2=M^2>0.
 $$
-By induction a general member of $|M'|$ is nonsingular and irreducible.
+By induction a general member of $\linearsystem{M'}$ is nonsingular and irreducible.
 Since $M'$ is globally generated, the members passing through the contraction
-point form a proper hyperplane in $|M'|$; choose the general smooth member
+point form a proper hyperplane in $\linearsystem{M'}$; choose the general smooth member
 outside that hyperplane. Its pullback is isomorphic to it and is a
-nonsingular irreducible member of $|M|$.
+nonsingular irreducible member of $\linearsystem{M}$.
 
 If $M\cdot E>0$ for every $(-1)$-curve, step [](#linear-system-globally-generated-induction){.pf-ref} proves that $M$ is very
 ample. A general hyperplane section of the corresponding embedding is
@@ -563,7 +563,7 @@ $$
 
 The planes through $L$ cut divisors
 $$
-L+Q_\Pi\in|H|,
+L+Q_\Pi\in\linearsystem{H},
 $$
 where the residual curves $Q_\Pi$ have class $H-L=D$. As proved directly in
 [[P-AGH547GENUSBOUND]], a general residual conic in this pencil is
@@ -587,7 +587,7 @@ $$
 D^2>0.
 $$
 Step [](#positive-square-irreducible-member){.pf-ref}, applied with $r=6$ and $M=D$, therefore gives a nonsingular
-irreducible member of $|D|$.
+irreducible member of $\linearsystem{D}$.
 :::
 
 :::

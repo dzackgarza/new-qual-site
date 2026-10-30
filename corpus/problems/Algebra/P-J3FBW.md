@@ -47,7 +47,7 @@ Q\cong C_4
 \quad\text{or}\quad
 Q\cong C_2\times C_2.
 $$
-Since $P\cap Q=1$ and $|P||Q|=28$, we have $G=PQ$, so
+Since $P\cap Q=1$ and $\cardinality{P}\cardinality{Q}=28$, we have $G=PQ$, so
 $$
 G\cong C_7\rtimes_\theta Q
 $$

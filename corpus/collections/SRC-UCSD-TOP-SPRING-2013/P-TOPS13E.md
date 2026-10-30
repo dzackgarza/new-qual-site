@@ -22,7 +22,7 @@ Prove by contradiction that there does not exist a continuous map $f : \RR^3 \se
 
 Hint: Define $g : \RR^3 \setminus \{0\} \to S^1$ by
 $$
-g(x) = \frac{f(x) - f(-x)}{|f(x) - f(-x)|},
+g(x) = \frac{f(x) - f(-x)}{\norm{f(x) - f(-x)}},
 $$
 which satisfies $g(-x) = -g(x)$.
 Define the loop $\eta : I \to \RR^3 \setminus \{0\}$ by $\eta(s) = (\cos(2\pi s), \sin(2\pi s), 0)$ and consider the loop $h = g \circ \eta$ in $S^1$.
@@ -42,10 +42,10 @@ assume the contrary.
 :::
 
 ::: {.pf-step #define-g}
-Define $g(x) = \frac{f(x) - f(-x)}{|f(x) - f(-x)|} \in S^1$, which is continuous and satisfies $g(-x) = -g(x)$.
+Define $g(x) = \frac{f(x) - f(-x)}{\norm{f(x) - f(-x)}} \in S^1$, which is continuous and satisfies $g(-x) = -g(x)$.
 
 ::: pf-proof
-$f(x) \neq f(-x)$ so the denominator is nonzero; and $g(-x) = \frac{f(-x) - f(x)}{|f(-x)-f(x)|} = -g(x)$.
+$f(x) \neq f(-x)$ so the denominator is nonzero; and $g(-x) = \frac{f(-x) - f(x)}{\norm{f(-x)-f(x)}} = -g(x)$.
 :::
 
 :::
@@ -69,7 +69,7 @@ H(s,t)=(1-t)\eta(s)+t(0,0,1).
 $$
 Indeed
 $$
-\|H(s,t)\|^2=(1-t)^2+t^2>0
+\norm{H(s,t)}^2=(1-t)^2+t^2>0
 $$
 for every $t\in[0,1]$, so this homotopy never meets the origin. Therefore $\eta$ is nullhomotopic, and so is $h=g\circ\eta$.
 :::

@@ -40,11 +40,11 @@ h_k=2^{-k}.
 $$
 Assume
 $$
-|f(x)|\le M
+\abs{f(x)}\le M
 $$
 for all $x\in\RR$, and let $L$ be a Lipschitz constant:
 $$
-|f(x)-f(y)|\le L|x-y|.
+\abs{f(x)-f(y)}\le L\abs{x-y}.
 $$
 
 ::: pf
@@ -66,11 +66,11 @@ f(x_k(nh_k)).
 $$
 Its absolute value is at most $M$. Thus on each mesh interval,
 $$
-|x_k(t)-x_k(s)|\le M|t-s|.
+\abs{x_k(t)-x_k(s)}\le M\abs{t-s}.
 $$
 For arbitrary $s<t$, partition $[s,t]$ at the mesh points it crosses and add these estimates. The result is
 $$
-|x_k(t)-x_k(s)|\le M|t-s|.
+\abs{x_k(t)-x_k(s)}\le M\abs{t-s}.
 $$
 
 :::
@@ -81,7 +81,7 @@ $$
 
 The family $(x_k)$ is uniformly bounded on $[0,1]$:
 $$
-|x_k(t)|\le M
+\abs{x_k(t)}\le M
 $$
 for every $k$ and $t\in[0,1]$.
 
@@ -94,9 +94,9 @@ x_k(0)=0,
 $$
 step [](#s1-1){.pf-ref} gives
 $$
-|x_k(t)|
+\abs{x_k(t)}
 =
-|x_k(t)-x_k(0)|
+\abs{x_k(t)-x_k(0)}
 \le
 Mt
 \le
@@ -174,7 +174,7 @@ Thus the displayed equality follows by integrating the piecewise constant deriva
 One has
 $$
 \sup_{0\le s\le1}
-|x_k(\tau_k(s))-x_k(s)|
+\abs{x_k(\tau_k(s))-x_k(s)}
 \le
 Mh_k.
 $$
@@ -184,9 +184,9 @@ $$
 
 By step [](#s1-1){.pf-ref} and step [](#s1-4){.pf-ref},
 $$
-|x_k(\tau_k(s))-x_k(s)|
+\abs{x_k(\tau_k(s))-x_k(s)}
 \le
-M|\tau_k(s)-s|
+M\abs{\tau_k(s)-s}
 \le
 Mh_k.
 $$
@@ -212,13 +212,13 @@ uniformly in $s\in[0,1]$.
 By the Lipschitz property of $f$,
 $$
 \begin{aligned}
-|f(x_{k_j}(\tau_{k_j}(s)))-f(x(s))|
+\abs{f(x_{k_j}(\tau_{k_j}(s)))-f(x(s))}
 &\le
-L|x_{k_j}(\tau_{k_j}(s))-x(s)|\\
+L\abs{x_{k_j}(\tau_{k_j}(s))-x(s)}\\
 &\le
-L|x_{k_j}(\tau_{k_j}(s))-x_{k_j}(s)|
+L\abs{x_{k_j}(\tau_{k_j}(s))-x_{k_j}(s)}
 +
-L|x_{k_j}(s)-x(s)|.
+L\abs{x_{k_j}(s)-x(s)}.
 \end{aligned}
 $$
 The first term is at most
@@ -305,13 +305,13 @@ x(t)-y(t)
 $$
 Hence
 $$
-|x(t)-y(t)|
+\abs{x(t)-y(t)}
 \le
-L\int_0^t|x(s)-y(s)|\,ds.
+L\int_0^t\abs{x(s)-y(s)}\,ds.
 $$
 By Grönwall's inequality,
 $$
-|x(t)-y(t)|=0
+\abs{x(t)-y(t)}=0
 $$
 for all $t\in[0,1]$. Thus $x=y$.
 
@@ -328,7 +328,7 @@ The full sequence $(x_k)$ converges uniformly to the solution $x$ from step [](#
 
 Suppose not. Then there would exist $\varepsilon>0$ and a subsequence $(x_{k_j})$ such that
 $$
-\|x_{k_j}-x\|_\infty\ge\varepsilon
+\norm{x_{k_j}-x}_\infty\ge\varepsilon
 $$
 for every $j$.
 

@@ -41,7 +41,7 @@ R\coloneqq 2\pi N,
 $$
 and let $Q_N$ be the square
 $$
-\{z\in\CC:\lvert\Re z\rvert\le R,\ \lvert\Im z\rvert\le R\},
+\{z\in\CC:\abs{\Re z}\le R,\ \abs{\Im z}\le R\},
 $$
 whose boundary is oriented counterclockwise.
 
@@ -120,7 +120,7 @@ argument of $f$ is
 $$
 4\pi N+E_N,
 \qquad
-\lvert E_N\rvert<\pi.
+\abs{ E_N}<\pi.
 $$
 
 ::: pf-proof
@@ -135,13 +135,13 @@ h_N(y)\coloneqq
 $$
 For $N\ge1$,
 $$
-\lvert (R+iy)e^{-R-iy}\rvert
+\abs{ (R+iy)e^{-R-iy}}
 \le \sqrt2\,R e^{-R}
 <1.
 $$
 Hence $\Re h_N(y)>0$ for all $y$, so $h_N$ has a continuous argument
 with values in $(-\pi/2,\pi/2)$. Its argument changes by some $E_N$
-with $\lvert E_N\rvert<\pi$.
+with $\abs{ E_N}<\pi$.
 
 The factor $e^{R+iy}$ contributes argument change
 $$
@@ -180,14 +180,14 @@ and in particular tends to $+\infty$.
 ::: pf-proof
 
 By step [](#s4){.pf-ref}, the right side contributes $4\pi N+E_N$ with
-$\lvert E_N\rvert<\pi$. By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the combined
+$\abs{ E_N}<\pi$. By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the combined
 contribution of the other three sides has absolute value less than
 $3\pi$. Hence
 $$
 \Delta_{\partial Q_N}\arg f
 =4\pi N+F_N,
 \qquad
-\lvert F_N\rvert<4\pi.
+\abs{ F_N}<4\pi.
 $$
 
 :::

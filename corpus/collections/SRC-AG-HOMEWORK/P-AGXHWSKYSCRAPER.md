@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $X\in \Top$, $A\in \mathsf{Ab}\mathsf{Grp}$, $p\in X$, and define the skyscraper sheaf by
 $$
-\iota_p(A)(U) \definedas
+\iota_p(A)(U) \coloneqq
 \begin{cases}
 A & p\in U  \\
 0 & \text{else}.
@@ -27,7 +27,7 @@ Show that the stalk $\iota_p(A)_q = A$ when $q\in \cl_X(\theset{p})$ and $0$ oth
 :::
 
 ::: {.solution}
-Write $Z \definedas \cl_X(\theset{p})$ with the subspace topology.
+Write $Z \coloneqq \cl_X(\theset{p})$ with the subspace topology.
 The restriction maps of $\iota_p(A)$ are the identity of $A$ between opens that contain $p$, and zero otherwise.
 
 ::: pf

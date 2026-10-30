@@ -188,7 +188,7 @@ Write $\frac{1}{\sin(z)} = \inverseof{z}\qty{\frac{z}{\sin(z)}}$ and divide $z$ 
 $$
   \begin{array}{rl}
     \underline{\hspace{8em} 1 + {1\over 3!}z^2 + \left({1\over 3!3!} - {1\over 5!} \right)z^4 + \cdots } &  \\[-5pt]
-     z-{1\over 3!}z^3 + {1\over 5!}z^5 + \cdots\hspace{3em} |z\hspace{9em}  \\
+     z-{1\over 3!}z^3 + {1\over 5!}z^5 + \cdots\hspace{3em} \arrayrule z\hspace{9em}  \\
       \underline{-(z-{1\over 3!}z^3 + {1\over 5!}z^5 + \cdots)} & \\
       {1\over 3!}z^3 - {1\over 5!}z^5 + {1\over 7!}z^7 - \cdots \hspace{0em}& \\
      \underline{-{1\over 3!}z^2(z-{1\over 3!}z^3 + {1\over 5!}z^5 + \cdots)} & \\

@@ -37,7 +37,7 @@ Given two vectors $x$ and $y$ in $\RR^n$ with $\norm{x}_2 = \norm{y}_2$, constru
 
 ::: {.pf-step #s1-1}
 
-If $\|x\|_2=\|y\|_2$ and $x=y$, then the choice
+If $\norm{x}_2=\norm{y}_2$ and $x=y$, then the choice
 $$
 \boxed{Q=I}
 $$
@@ -54,9 +54,9 @@ The identity matrix satisfies $I^TI=I$, and $Ix=x=y$.
 
 ::: {.pf-step #s1-2}
 
-Suppose $\|x\|_2=\|y\|_2$ and $x\neq y$, and define
+Suppose $\norm{x}_2=\norm{y}_2$ and $x\neq y$, and define
 $$
-u\coloneqq\frac{x-y}{\|x-y\|_2},
+u\coloneqq\frac{x-y}{\norm{x-y}_2},
 \qquad
 \boxed{Q=I-2uu^T}.
 $$
@@ -69,7 +69,7 @@ Since $x\neq y$, the denominator is nonzero. Hence
 $$
 u^Tu
 =
-\frac{(x-y)^T(x-y)}{\|x-y\|_2^2}
+\frac{(x-y)^T(x-y)}{\norm{x-y}_2^2}
 =1.
 $$
 
@@ -109,29 +109,29 @@ $$
 
 ::: pf-proof
 
-Because $\|x\|_2=\|y\|_2$,
+Because $\norm{x}_2=\norm{y}_2$,
 $$
 \begin{aligned}
-\|x-y\|_2^2
+\norm{x-y}_2^2
 &=(x-y)^T(x-y)\\
-&=\|x\|_2^2+\|y\|_2^2-2x^Ty\\
-&=2(\|x\|_2^2-x^Ty).
+&=\norm{x}_2^2+\norm{y}_2^2-2x^Ty\\
+&=2(\norm{x}_2^2-x^Ty).
 \end{aligned}
 $$
 Also
 $$
-(x-y)^Tx=\|x\|_2^2-y^Tx=\|x\|_2^2-x^Ty.
+(x-y)^Tx=\norm{x}_2^2-y^Tx=\norm{x}_2^2-x^Ty.
 $$
 Therefore
 $$
 \begin{aligned}
 2uu^Tx
-&=2\frac{(x-y)(x-y)^Tx}{\|x-y\|_2^2}\\
-&=2\frac{(x-y)(\|x\|_2^2-x^Ty)}{2(\|x\|_2^2-x^Ty)}\\
+&=2\frac{(x-y)(x-y)^Tx}{\norm{x-y}_2^2}\\
+&=2\frac{(x-y)(\norm{x}_2^2-x^Ty)}{2(\norm{x}_2^2-x^Ty)}\\
 &=x-y.
 \end{aligned}
 $$
-The cancelled scalar is nonzero because, by the displayed norm identity, it equals $\|x-y\|_2^2/2>0$.
+The cancelled scalar is nonzero because, by the displayed norm identity, it equals $\norm{x-y}_2^2/2>0$.
 
 :::
 
@@ -155,22 +155,22 @@ $$
 
 ::: {.pf-step #s1-6}
 
-If $\|x\|_2\neq\|y\|_2$, there is no orthogonal matrix $Q$ satisfying $Qx=y$.
+If $\norm{x}_2\neq\norm{y}_2$, there is no orthogonal matrix $Q$ satisfying $Qx=y$.
 
 
 ::: pf-proof
 
 If $Q$ were orthogonal and $Qx=y$, then
 $$
-\|y\|_2^2
+\norm{y}_2^2
 =
-\|Qx\|_2^2
+\norm{Qx}_2^2
 =
 x^TQ^TQx
 =
 x^Tx
 =
-\|x\|_2^2,
+\norm{x}_2^2,
 $$
 contrary to the hypothesis.
 

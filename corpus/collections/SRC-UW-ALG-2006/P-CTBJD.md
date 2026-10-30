@@ -94,7 +94,7 @@ There is a simple group of order $2^2\cdot3\cdot5=60$.
 
 The alternating group $A_5$ has order
 $$
-|A_5|=\frac{5!}{2}=60,
+\cardinality{A_5}=\frac{5!}{2}=60,
 $$
 and $A_5$ is simple.
 
@@ -165,7 +165,7 @@ Conjugation gives an action of $G$ on the set of its four Sylow $3$-subgroups, h
 $$
 \varphi:G\longrightarrow S_4.
 $$
-The action is transitive by Sylow conjugacy and has more than one point, so $\varphi$ is nontrivial. Its kernel is normal in $G$. Since $G$ is assumed simple, a nontrivial homomorphism must have trivial kernel, so $\varphi$ would be injective. Then $|G|$ would divide $|S_4|=24$, contradicting $|G|=132$. Therefore no group of order $132$ is simple.
+The action is transitive by Sylow conjugacy and has more than one point, so $\varphi$ is nontrivial. Its kernel is normal in $G$. Since $G$ is assumed simple, a nontrivial homomorphism must have trivial kernel, so $\varphi$ would be injective. Then $\cardinality{G}$ would divide $\cardinality{S_4}=24$, contradicting $\cardinality{G}=132$. Therefore no group of order $132$ is simple.
 
 :::
 

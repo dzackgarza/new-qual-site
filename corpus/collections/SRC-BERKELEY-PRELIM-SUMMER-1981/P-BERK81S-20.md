@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-20
 kind: problem
-title: Evenness and zeros of the solution of $y''=-|y|$
+title: Evenness and zeros of the solution of $y''=-\abs{y}$
 classification:
   areas: [prelim]
   topics: []
@@ -30,7 +30,7 @@ audit:
 ::: {.problem}
 Let $y:\RR\to\RR$ solve
 $$
-y''=-|y|,
+y''=-\abs{y},
 \qquad
 y(0)=1,
 \qquad

@@ -30,7 +30,7 @@ Show that there are fields $E \supseteq F$ such that the Galois group of $E$ ove
 :::
 
 ::: {.solution}
-Let $m=|G|$, let $\{x_g:g\in G\}$ be algebraically independent
+Let $m=\cardinality{G}$, let $\{x_g:g\in G\}$ be algebraically independent
 indeterminates over $\QQ$, and set
 $$
 E=\QQ(x_g:g\in G).
@@ -118,7 +118,7 @@ value on $u$, which must be a root of $\mu_u$. A degree-$\deg\mu_u$
 polynomial has at most $\deg\mu_u$ roots in a field. Together with
 the embedding in step [](#s1){.pf-ref} this gives
 $$
-m\leq |\operatorname{Aut}_F(E)|\leq\deg\mu_u\leq m.
+m\leq \cardinality{\operatorname{Aut}_F(E)}\leq\deg\mu_u\leq m.
 $$
 All inequalities are equalities. Thus every $F$-automorphism is one of
 the $\sigma_h$, and the faithful homomorphism in step [](#s1){.pf-ref} is an

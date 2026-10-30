@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Find an analytic isomorphism from the open region between $x = 1$ and $x = 3$ to the upper half unit disk $\{|z| < 1,\Im z > 0\}$.
+Find an analytic isomorphism from the open region between $x = 1$ and $x = 3$ to the upper half unit disk $\{\abs{z} < 1,\Im z > 0\}$.
 (You may leave your result as a composition of functions)
 :::
 
 ::: {.solution}
-Let $\Omega = \{z = x+iy \in \CC : 1 < x < 3\}$ be the vertical strip and $\DD^+ = \{w \in \CC : |w| < 1 \text{ and } \text{Im}(w) > 0\}$ the upper half unit disk.
+Let $\Omega = \{z = x+iy \in \CC : 1 < x < 3\}$ be the vertical strip and $\DD^+ = \{w \in \CC : \abs{w} < 1 \text{ and } \text{Im}(w) > 0\}$ the upper half unit disk.
 
 * * *
 
@@ -163,7 +163,7 @@ Solving $J(w) = u \iff -\frac{1}{2}(w + 1/w) = u \iff w^2 + 2u w + 1 = 0$ yields
 The function $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ is the biholomorphic inverse $J^{-1}: \halfplane \to \DD^+$.
 
 ::: pf-proof
-*Proof:* For $u \in \halfplane$, both $u - 1$ and $u + 1$ lie in $\halfplane$, so the principal square roots are holomorphic there and $s(u) = \sqrt{u - 1}\,\sqrt{u + 1}$ is a holomorphic function with $s(u)^2 = u^2 - 1$. Hence $\phi_3(u)$ is a root of $w^2 + 2uw + 1 = 0$. The product of the two roots is $1$, and neither root lies on $|w| = 1$ because $J$ is real there; so exactly one root lies in the open unit disk, and it lies in $\DD^+$ because $J$ maps the lower half-disk into the lower half-plane. At $u = it$ with $t > 0$ the arguments of $\sqrt{u-1}$ and $\sqrt{u+1}$ sum to $\pi/2$, so $\phi_3(it) = i\big(\sqrt{t^2+1} - t\big) \in \DD^+$. The set of $u \in \halfplane$ with $\phi_3(u) \in \DD^+$ is open and closed in the connected set $\halfplane$ and nonempty, so it is all of $\halfplane$. The single-valued principal branch of $\sqrt{u^2-1}$ is not usable here: it is discontinuous on the imaginary axis, where $u^2 - 1 < -1$.
+*Proof:* For $u \in \halfplane$, both $u - 1$ and $u + 1$ lie in $\halfplane$, so the principal square roots are holomorphic there and $s(u) = \sqrt{u - 1}\,\sqrt{u + 1}$ is a holomorphic function with $s(u)^2 = u^2 - 1$. Hence $\phi_3(u)$ is a root of $w^2 + 2uw + 1 = 0$. The product of the two roots is $1$, and neither root lies on $\abs{w} = 1$ because $J$ is real there; so exactly one root lies in the open unit disk, and it lies in $\DD^+$ because $J$ maps the lower half-disk into the lower half-plane. At $u = it$ with $t > 0$ the arguments of $\sqrt{u-1}$ and $\sqrt{u+1}$ sum to $\pi/2$, so $\phi_3(it) = i\big(\sqrt{t^2+1} - t\big) \in \DD^+$. The set of $u \in \halfplane$ with $\phi_3(u) \in \DD^+$ is open and closed in the connected set $\halfplane$ and nonempty, so it is all of $\halfplane$. The single-valued principal branch of $\sqrt{u^2-1}$ is not usable here: it is discontinuous on the imaginary axis, where $u^2 - 1 < -1$.
 :::
 
 :::

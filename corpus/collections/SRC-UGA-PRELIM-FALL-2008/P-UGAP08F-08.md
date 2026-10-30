@@ -49,8 +49,8 @@ $$
 
 At $x=5$ every term except the constant term is $0$, so the series converges. If $x\ne5$, then
 $$
-\left|\frac{(n+1)!(x-5)^{n+1}}{n!(x-5)^n}\right|
-=(n+1)|x-5|\to\infty,
+\abs{\frac{(n+1)!(x-5)^{n+1}}{n!(x-5)^n}}
+=(n+1)\abs{x-5}\to\infty,
 $$
 so the terms do not tend to $0$. Hence the series diverges for every $x\ne5$.
 
@@ -62,7 +62,7 @@ so the terms do not tend to $0$. Hence the series diverges for every $x\ne5$.
 
 For part (b), take
 $$
-\boxed{f(t)=|t-1|,
+\boxed{f(t)=\abs{t-1},
 \qquad
 g(t)=1+t.}
 $$
@@ -72,7 +72,7 @@ $$
 
 The function $f$ is differentiable at $0$ because near $0$ one has $f(t)=1-t$, and $g$ is differentiable everywhere. But
 $$
-(f\circ g)(t)=|t|,
+(f\circ g)(t)=\abs{t},
 $$
 which is not differentiable at $0$.
 

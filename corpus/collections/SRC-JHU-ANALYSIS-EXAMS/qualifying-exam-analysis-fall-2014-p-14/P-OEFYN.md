@@ -38,7 +38,7 @@ audit:
 
 (a) The image $L ( \mathbf { B } )$ of the unit ball in X has compact closure in $Y .$
 
-(b) There is a sequence of bounded linear operators $L_n:X\to Y$ with finite-dimensional range such that $\|L_n-L\|\to0$, where $\|\cdot\|$ is the operator norm.
+(b) There is a sequence of bounded linear operators $L_n:X\to Y$ with finite-dimensional range such that $\norm{L_n-L}\to0$, where $\norm{\cdot}$ is the operator norm.
 :::
 
 ::: {.solution}
@@ -85,22 +85,22 @@ Prove $L_n\to L$ in operator norm.
 
 ::: pf-proof
 
-If $\|x\|\le1$, then $Lx\in K$, so there is some $j$ with
+If $\norm{x}\le1$, then $Lx\in K$, so there is some $j$ with
 $$
-\|Lx-y_j\|<1/n.
+\norm{Lx-y_j}<1/n.
 $$
 Because $P_nLx$ is the best approximation to $Lx$ from the subspace $Y_n$,
 $$
-\|Lx-P_nLx\|
-\le \|Lx-y_j\|<1/n.
+\norm{Lx-P_nLx}
+\le \norm{Lx-y_j}<1/n.
 $$
 Hence
 $$
-\|L-L_n\|
-=\sup_{\|x\|\le1}\|(I-P_n)Lx\|
+\norm{L-L_n}
+=\sup_{\norm{x}\le1}\norm{(I-P_n)Lx}
 \le\frac1n.
 $$
-Thus $\|L-L_n\|\to0$, proving (b).
+Thus $\norm{L-L_n}\to0$, proving (b).
 
 :::
 
@@ -114,11 +114,11 @@ Assume (b) and prove that $L(B)$ is relatively compact.
 
 Suppose $L_n$ has finite-dimensional range and
 $$
-\|L_n-L\|\longrightarrow0.
+\norm{L_n-L}\longrightarrow0.
 $$
 Fix $\varepsilon>0$ and choose $n$ so that
 $$
-\|L-L_n\|<\varepsilon/3.
+\norm{L-L_n}<\varepsilon/3.
 $$
 The set $L_n(B)$ is bounded in the finite-dimensional space $L_n(X)$, so its closure is compact and therefore totally bounded. Hence there are points
 $$
@@ -131,12 +131,12 @@ $$
 
 For every $x\in B$, choose $j$ with
 $$
-\|L_nx-z_j\|<\varepsilon/3.
+\norm{L_nx-z_j}<\varepsilon/3.
 $$
 Then
 $$
-\|Lx-z_j\|
-\le\|(L-L_n)x\|+\|L_nx-z_j\|
+\norm{Lx-z_j}
+\le\norm{(L-L_n)x}+\norm{L_nx-z_j}
 <\frac{2\varepsilon}{3}<\varepsilon.
 $$
 Thus $L(B)$ is totally bounded. Its closure is also totally bounded; since $Y$ is complete, the closure of a totally bounded set is compact. Therefore

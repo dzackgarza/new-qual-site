@@ -69,7 +69,7 @@ Any subfield has one of the four displayed orders.
 Every subfield $K$ contains $\FF_2$. Put
 $d=[K:\FF_2]$ and $e=[F:K]$. These are finite positive
 integers, and the tower law gives $de=10$. Thus
-$d\in\{1,2,5,10\}$, and $|K|=2^d$ belongs to the displayed list.
+$d\in\{1,2,5,10\}$, and $\cardinality{K}=2^d$ belongs to the displayed list.
 
 :::
 
@@ -104,7 +104,7 @@ Thus $K_d$ is closed under addition; additive inverses coincide
 with the original elements. It is closed under multiplication
 because $(ab)^q=a^qb^q$, and under nonzero inversion because
 $(a^{-1})^q=(a^q)^{-1}$. It contains $0,1$, so it is a subfield,
-and the root count gives $|K_d|=q=2^d$.
+and the root count gives $\cardinality{K_d}=q=2^d$.
 
 :::
 

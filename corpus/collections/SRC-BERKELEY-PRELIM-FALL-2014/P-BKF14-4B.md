@@ -80,7 +80,7 @@ f_1(1)=\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}n
 $$
 converges by the alternating-series test.
 
-For $|z|<1$, differentiating the power series gives
+For $\abs{z}<1$, differentiating the power series gives
 $$
 f_1'(z)
 =
@@ -92,10 +92,10 @@ and $f_1(0)=0$. Thus
 $$
 f_1(z)=\log(1+z)
 $$
-for the branch of the logarithm with $\log(1)=0$: on $|z|<1$ one has
+for the branch of the logarithm with $\log(1)=0$: on $\abs{z}<1$ one has
 $\Re(1+z)>0$, so this branch is well-defined and the derivative and
 value at $0$ agree with those of $f_1$. The same expression
-$\log(1+z)$ is holomorphic, for example, on the disk $|z-1|<1$.
+$\log(1+z)$ is holomorphic, for example, on the disk $\abs{z-1}<1$.
 Hence $f_1$ extends holomorphically across $1$.
 
 :::
@@ -132,7 +132,7 @@ $$
 If $f_2$ admitted a holomorphic extension to a neighborhood of $1$,
 its derivative would be continuous, hence bounded on a sufficiently
 small closed disk about $1$. On the portion of that disk inside
-$|z|<1$, the derivative would agree with $f_2'$, contradicting the
+$\abs{z}<1$, the derivative would agree with $f_2'$, contradicting the
 displayed blow-up.
 
 :::
@@ -149,7 +149,7 @@ function extends holomorphically to a neighborhood of $1$.
 At $z=1$, the terms of the series are $(-1)^n$, which do not tend to
 $0$, so the series diverges.
 
-For $|z|<1$, the geometric-series identity gives
+For $\abs{z}<1$, the geometric-series identity gives
 $$
 f_3(z)=\frac1{1+z}.
 $$

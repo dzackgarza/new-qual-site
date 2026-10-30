@@ -318,7 +318,7 @@ Now
 $$
 g^2=\iota,
 $$
-so $g$ has order $4$.  Corollary IV.4.7 gives $|G|=4$, hence
+so $g$ has order $4$.  Corollary IV.4.7 gives $\cardinality{G}=4$, hence
 $$
 G=\langle g\rangle\cong\ZZ/4.
 $$
@@ -391,7 +391,7 @@ $$
 \cong
 \ZZ/6.
 $$
-Corollary IV.4.7 gives $|G|=6$, so this subgroup is all of $G$.
+Corollary IV.4.7 gives $\cardinality{G}=6$, so this subgroup is all of $G$.
 
 :::
 
@@ -485,7 +485,7 @@ r^a s^b,
 \quad
 0\le b<4.
 $$
-Corollary IV.4.7 gives $|G|=12$, so this is the full automorphism group.
+Corollary IV.4.7 gives $\cardinality{G}=12$, so this is the full automorphism group.
 
 :::
 

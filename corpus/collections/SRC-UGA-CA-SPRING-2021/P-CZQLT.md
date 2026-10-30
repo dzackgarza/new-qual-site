@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-CZQLT
 kind: problem
-title: Compact convergence of holomorphic functions on $\DD$ iff $\int_{|z|=r}|f_n-f|\,|dz|\to
-  0$
+title: Compact convergence of holomorphic functions on $\DD$ iff $\int_{\abs{z}=r}\abs{f_n-f}\,\abs{dz}\to 0$
 classification:
   areas:
   - complex-analysis

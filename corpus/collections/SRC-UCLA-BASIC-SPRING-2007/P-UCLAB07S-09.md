@@ -157,11 +157,11 @@ $$
 $$
 such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\varepsilon
+\abs{f(x)-f(y)}<\varepsilon
 $$
 for all
 $$
@@ -199,7 +199,7 @@ x,y\in I_i
 $$
 satisfy
 $$
-|x-y|
+\abs{x-y}
 \le
 x_i-x_{i-1}
 <
@@ -207,7 +207,7 @@ x_i-x_{i-1}
 $$
 Hence
 $$
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 Therefore the oscillation of $f$ on $I_i$ is at most $\varepsilon$:
 $$

@@ -221,7 +221,7 @@ $$
 =
 \frac d{dx}
 g(x,\phi(x))
-\Big|_{x=x_0}
+\evalfrom_{x=x_0}
 =
 g_x(p_0)
 +

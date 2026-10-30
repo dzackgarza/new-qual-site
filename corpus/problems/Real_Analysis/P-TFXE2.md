@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TFXE2
 kind: problem
-title: $Hf(x)\ge\frac{c}{(1+|x|)^n}$ for $0\neq f\in L^1(\RR^n)$
+title: $Hf(x)\ge\frac{c}{(1+\norm{x})^n}$ for $0\neq f\in L^1(\RR^n)$
 classification:
   areas:
   - real-analysis
@@ -32,17 +32,17 @@ $$
 
 ::: {.solution}
 
-Here $Hf(x) = \sup_{s > 0}\frac{1}{m(B(x,s))}\int_{B(x,s)}|f|$ is the Hardy--Littlewood maximal function, and $m(B(x,s)) = \omega_n s^n$ with $\omega_n$ the volume of the unit ball.
+Here $Hf(x) = \sup_{s > 0}\frac{1}{m(B(x,s))}\int_{B(x,s)}\abs{f}$ is the Hardy--Littlewood maximal function, and $m(B(x,s)) = \omega_n s^n$ with $\omega_n$ the volume of the unit ball.
 
 ::: pf
 
 ::: pf-step
 
-There is $r > 0$ with $\alpha \coloneqq \int_{B(0,r)}|f| > 0$.
+There is $r > 0$ with $\alpha \coloneqq \int_{B(0,r)}\abs{f} > 0$.
 
 ::: pf-proof
 
-$\int_{B(0,k)}|f| \to \int_{\RR^n}|f| > 0$ as $k \to \infty$ by monotone convergence, and $\int |f| > 0$ because $f \neq 0$ in $L^1$.
+$\int_{B(0,k)}\abs{f} \to \int_{\RR^n}\abs{f} > 0$ as $k \to \infty$ by monotone convergence, and $\int \abs{f} > 0$ because $f \neq 0$ in $L^1$.
 
 :::
 
@@ -50,11 +50,11 @@ $\int_{B(0,k)}|f| \to \int_{\RR^n}|f| > 0$ as $k \to \infty$ by monotone converg
 
 ::: {.pf-step #s2}
 
-$Hf(x) \ge \frac{\alpha}{\omega_n(|x| + r)^n}$ for every $x$.
+$Hf(x) \ge \frac{\alpha}{\omega_n(\norm{x} + r)^n}$ for every $x$.
 
 ::: pf-proof
 
-For $z \in B(0,r)$, $|z - x| \le |z| + |x| < r + |x|$, so $B(0,r) \subseteq B(x, |x| + r)$. Taking $s = |x| + r$ in the definition of $Hf$ gives $Hf(x) \ge \frac{1}{\omega_n(|x| + r)^n}\int_{B(0,r)}|f|$.
+For $z \in B(0,r)$, $\norm{z - x} \le \norm{z} + \norm{x} < r + \norm{x}$, so $B(0,r) \subseteq B(x, \norm{x} + r)$. Taking $s = \norm{x} + r$ in the definition of $Hf$ gives $Hf(x) \ge \frac{1}{\omega_n(\norm{x} + r)^n}\int_{B(0,r)}\abs{f}$.
 
 :::
 
@@ -62,7 +62,7 @@ For $z \in B(0,r)$, $|z - x| \le |z| + |x| < r + |x|$, so $B(0,r) \subseteq B(x,
 
 ::: pf-qed
 
-$|x| + r \le (1 + r)(1 + |x|)$, so step [](#s2){.pf-ref} gives $Hf(x) \ge \frac{c}{(1+|x|)^n}$ with $c = \frac{\alpha}{\omega_n(1 + r)^n} > 0$.
+$\norm{x} + r \le (1 + r)(1 + \norm{x})$, so step [](#s2){.pf-ref} gives $Hf(x) \ge \frac{c}{(1+\norm{x})^n}$ with $c = \frac{\alpha}{\omega_n(1 + r)^n} > 0$.
 
 :::
 

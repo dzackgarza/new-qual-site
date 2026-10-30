@@ -35,7 +35,7 @@ where $N^*$ is the adjoint of $N$.
 
 If $N$ is normal, then for every $v\in V$,
 $$
-\|Nv\|=\|N^*v\|.
+\norm{Nv}=\norm{N^*v}.
 $$
 
 
@@ -44,7 +44,7 @@ $$
 Using the adjoint relation and normality,
 $$
 \begin{aligned}
-\|Nv\|^2
+\norm{Nv}^2
 &=
 \langle Nv,Nv\rangle\\
 &=
@@ -54,7 +54,7 @@ $$
 &=
 \langle N^*v,N^*v\rangle\\
 &=
-\|N^*v\|^2.
+\norm{N^*v}^2.
 \end{aligned}
 $$
 Taking nonnegative square roots gives the claim.
@@ -101,7 +101,7 @@ Tv=0.
 $$
 Applying step [](#s1-1){.pf-ref} to the normal operator $T$ gives
 $$
-\|T^*v\|=\|Tv\|=0.
+\norm{T^*v}=\norm{Tv}=0.
 $$
 Hence
 $$
@@ -171,7 +171,7 @@ $$
 
 The restriction
 $$
-N|_{v^\perp}:v^\perp\to v^\perp
+N\restrict_{v^\perp}:v^\perp\to v^\perp
 $$
 is normal.
 
@@ -181,9 +181,9 @@ is normal.
 By step [](#s1-3){.pf-ref}, both $N$ and $N^*$ preserve $v^\perp$.
 Thus
 $$
-\left(N|_{v^\perp}\right)^*
+\left(N\restrict_{v^\perp}\right)^*
 =
-N^*|_{v^\perp}.
+N^*\restrict_{v^\perp}.
 $$
 Restricting the identity
 $$
@@ -191,11 +191,11 @@ NN^*=N^*N
 $$
 to $v^\perp$ gives
 $$
-\left(N|_{v^\perp}\right)
-\left(N|_{v^\perp}\right)^*
+\left(N\restrict_{v^\perp}\right)
+\left(N\restrict_{v^\perp}\right)^*
 =
-\left(N|_{v^\perp}\right)^*
-\left(N|_{v^\perp}\right).
+\left(N\restrict_{v^\perp}\right)^*
+\left(N\restrict_{v^\perp}\right).
 $$
 Hence the restriction is normal.
 
@@ -249,7 +249,7 @@ For $n=0$ the assertion is vacuous.
 Assume $n>0$.
 By step [](#s1-5){.pf-ref}, choose a nonzero eigenvector $v_1$ and normalize it so that
 $$
-\|v_1\|=1.
+\norm{v_1}=1.
 $$
 Then
 $$

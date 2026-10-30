@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Show that, for measurable functions $f, g : [1, \infty) \to [0, \infty)$, the following inequality holds:
 $$
-\left|\int_{[1,\infty)^2} e^{-xy} f(x) g(y)\,dx\,dy\right| \leq \frac{1}{2e} \left(\int_1^\infty |f(x)|^2\,dx\right)^{1/2} \left(\int_1^\infty |g(x)|^2\,dx\right)^{1/2},
+\abs{\int_{[1,\infty)^2} e^{-xy} f(x) g(y)\,dx\,dy} \leq \frac{1}{2e} \left(\int_1^\infty \abs{f(x)}^2\,dx\right)^{1/2} \left(\int_1^\infty \abs{g(x)}^2\,dx\right)^{1/2},
 $$
 where $dx$ denotes the Lebesgue measure on $[1, \infty)$ and $dx\,dy$ denotes the Lebesgue measure on $[1, \infty)^2 = [1, \infty) \times [1, \infty)$.
 :::
@@ -77,20 +77,20 @@ Cauchy--Schwarz gives
 $$
 \int_1^\infty e^{-x}f(x)\,dx
 \le
-\left(\int_1^\infty e^{-2x}\,dx\right)^{1/2}\|f\|_2
-=\frac{e^{-1}}{\sqrt2}\|f\|_2.
+\left(\int_1^\infty e^{-2x}\,dx\right)^{1/2}\norm{f}_2
+=\frac{e^{-1}}{\sqrt2}\norm{f}_2.
 $$
 Similarly,
 $$
 \int_1^\infty e^{-y}g(y)\,dy
-\le \frac{e^{-1}}{\sqrt2}\|g\|_2.
+\le \frac{e^{-1}}{\sqrt2}\norm{g}_2.
 $$
 Combining these estimates yields
 $$
 \begin{aligned}
-\left|\int_{[1,\infty)^2}e^{-xy}f(x)g(y)\,dx\,dy\right|
-&\le e\left(\frac{e^{-1}}{\sqrt2}\right)^2\|f\|_2\|g\|_2\\
-&=\boxed{\frac1{2e}\|f\|_2\|g\|_2}.
+\abs{\int_{[1,\infty)^2}e^{-xy}f(x)g(y)\,dx\,dy}
+&\le e\left(\frac{e^{-1}}{\sqrt2}\right)^2\norm{f}_2\norm{g}_2\\
+&=\boxed{\frac1{2e}\norm{f}_2\norm{g}_2}.
 \end{aligned}
 $$
 This is the required inequality.

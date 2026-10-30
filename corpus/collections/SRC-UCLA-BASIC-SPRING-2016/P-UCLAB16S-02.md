@@ -175,7 +175,7 @@ $$
 $$
 Then
 $$
-\sum_{j=1}^{N-1}|I_j|
+\sum_{j=1}^{N-1}\setmeasure{I_j}
 <
 (N-1)\frac{\varepsilon}{2N}
 <

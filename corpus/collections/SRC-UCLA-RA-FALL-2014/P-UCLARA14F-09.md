@@ -88,11 +88,11 @@ f_n(a)\to f(a).
 $$
 Hence on every compact set $K\subset\Omega$,
 $$
-\sup_{z\in K}|g_n(z)-g(z)|
+\sup_{z\in K}\abs{g_n(z)-g(z)}
 \le
-\sup_{z\in K}|f_n(z)-f(z)|
+\sup_{z\in K}\abs{f_n(z)-f(z)}
 +
-|f_n(a)-f(a)|
+\abs{f_n(a)-f(a)}
 \longrightarrow0.
 $$
 
@@ -155,7 +155,7 @@ a\notin\overline{D(b,r)},
 $$
 and $g$ has no zeros on
 $$
-|z-b|=r.
+\abs{z-b}=r.
 $$
 
 
@@ -179,13 +179,13 @@ zero in $D(b,r)$.
 
 Since $g$ has no zeros on the compact circle
 $$
-|z-b|=r,
+\abs{z-b}=r,
 $$
 there is
 $$
 m
 =
-\min_{|z-b|=r}|g(z)|
+\min_{\abs{z-b}=r}\abs{g(z)}
 >0.
 $$
 By step [](#s1-3){.pf-ref},
@@ -194,8 +194,8 @@ g_n\to g
 $$
 uniformly on that circle. Thus for all sufficiently large $n$,
 $$
-|g_n(z)-g(z)|<m\le|g(z)|
-\qquad(|z-b|=r).
+\abs{g_n(z)-g(z)}<m\le\abs{g(z)}
+\qquad(\abs{z-b}=r).
 $$
 Rouché's theorem implies that $g_n$ and $g$ have the same number of zeros in
 $D(b,r)$, counted with multiplicity. Since $g$ has the zero $b$ there,

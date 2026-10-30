@@ -53,7 +53,7 @@ we get
 $$
 \boxed{
 \int\frac{x}{x^4-16}\,dx
-=\frac1{16}\log\left|\frac{x^2-4}{x^2+4}\right|+C.}
+=\frac1{16}\log\abs{\frac{x^2-4}{x^2+4}}+C.}
 $$
 
 :::

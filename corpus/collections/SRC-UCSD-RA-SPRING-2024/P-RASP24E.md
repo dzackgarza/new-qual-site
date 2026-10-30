@@ -123,7 +123,7 @@ For any finite subset $\{x_1, \dots, x_k\} \subseteq S_n$, pairwise disjointness
 
 ::: pf-step
 
-Therefore $k \le n \mu(X^*)$, which proves that each $S_n$ is finite with $|S_n| \le n \mu(X^*) < \infty$.
+Therefore $k \le n \mu(X^*)$, which proves that each $S_n$ is finite with $\cardinality{S_n} \le n \mu(X^*) < \infty$.
 
 :::
 

@@ -32,9 +32,9 @@ $$
 
 If $\mu(X)<\infty$ and $f\in L^4(X)$, then
 $$
-\int_X |f|^3\,d\mu
+\int_X \abs{f}^3\,d\mu
 \le
-\left(\int_X|f|^4\,d\mu\right)^{3/4}
+\left(\int_X\abs{f}^4\,d\mu\right)^{3/4}
 \mu(X)^{1/4}.
 $$
 
@@ -47,11 +47,11 @@ $$
 \qquad\text{and}\qquad
 4
 $$
-to the functions $|f|^3$ and $1$:
+to the functions $\abs{f}^3$ and $1$:
 $$
-\int_X |f|^3\,d\mu
+\int_X \abs{f}^3\,d\mu
 \le
-\left(\int_X(|f|^3)^{4/3}\,d\mu\right)^{3/4}
+\left(\int_X(\abs{f}^3)^{4/3}\,d\mu\right)^{3/4}
 \left(\int_X1^4\,d\mu\right)^{1/4}.
 $$
 This is exactly the displayed inequality.
@@ -73,7 +73,7 @@ $$
 If $f\in L^4$, the first factor in step [](#s1-1){.pf-ref} is finite, and the second is
 finite because $\mu(X)<\infty$. Hence
 $$
-\int_X|f|^3\,d\mu<\infty,
+\int_X\abs{f}^3\,d\mu<\infty,
 $$
 so $f\in L^3$.
 
@@ -101,13 +101,13 @@ $$
 
 For the fourth power,
 $$
-\int_1^\infty |f(x)|^4\,dx
+\int_1^\infty \abs{f(x)}^4\,dx
 =\int_1^\infty x^{-4/3}\,dx
 <\infty.
 $$
 For the third power,
 $$
-\int_1^\infty |f(x)|^3\,dx
+\int_1^\infty \abs{f(x)}^3\,dx
 =\int_1^\infty x^{-1}\,dx
 =\infty.
 $$

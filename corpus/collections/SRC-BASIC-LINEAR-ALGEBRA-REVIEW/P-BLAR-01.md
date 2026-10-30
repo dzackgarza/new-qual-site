@@ -50,13 +50,13 @@ $$
 ::: pf-step
 The length of $u$ is
 $$
-\boxed{\|u\|=\sqrt{26}}.
+\boxed{\norm{u}=\sqrt{26}}.
 $$
 
 ::: pf-proof
-Using $\|u\|=\sqrt{u\cdot u}$,
+Using $\norm{u}=\sqrt{u\cdot u}$,
 $$
-\|u\|
+\norm{u}
 =\sqrt{4^2+1^2+3^2}
 =\sqrt{16+1+9}
 =\sqrt{26}.
@@ -68,13 +68,13 @@ $$
 ::: pf-step
 The length of $v$ is
 $$
-\boxed{\|v\|=\sqrt5}.
+\boxed{\norm{v}=\sqrt5}.
 $$
 
 ::: pf-proof
 Similarly,
 $$
-\|v\|
+\norm{v}
 =\sqrt{(-2)^2+0^2+1^2}
 =\sqrt{4+1}
 =\sqrt5.

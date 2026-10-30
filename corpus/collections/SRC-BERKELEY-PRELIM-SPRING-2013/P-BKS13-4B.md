@@ -28,14 +28,14 @@ Let $U$ be an open subset of $\CC$.
 Let $K$ be a closed bounded subset of $\CC$ that is contained in $U$.
 Put
 $$
-D=\min_{p\in K,\ q\notin U}|p-q|.
+D=\min_{p\in K,\ q\notin U}\abs{p-q}.
 $$
 That is, $D$ is the closest distance between $K$ and $\CC\setminus U$.
 (If $U=\CC$, then we put $D=\infty$.)
 
-Suppose that $f$ is an analytic function on $U$ so that for all $z\in U$, we have $|f(z)|\le M$.
+Suppose that $f$ is an analytic function on $U$ so that for all $z\in U$, we have $\abs{f(z)}\le M$.
 Here $M$ is a fixed positive number.
-Find an explicit number $C<\infty$, depending on $M$ and $D$, so that for all $z_0\in K$ we have $|f'(z_0)|\le C$.
+Find an explicit number $C<\infty$, depending on $M$ and $D$, so that for all $z_0\in K$ we have $\abs{f'(z_0)}\le C$.
 Justify your answer.
 :::
 

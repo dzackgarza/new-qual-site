@@ -41,23 +41,23 @@ Count the zeros in the unit disk.
 
 ::: pf-proof
 
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|3z^{100}|=3,
+\abs{3z^{100}}=3,
 $$
 while
 $$
-|e^z|=e^{\operatorname{Re}z}\le e<3.
+\abs{e^z}=e^{\operatorname{Re}z}\le e<3.
 $$
 Thus
 $$
-|-e^z|<|3z^{100}|
+\abs{-e^z}<\abs{3z^{100}}
 $$
 on the unit circle. By Rouché's theorem,
 $$
 f(z)=3z^{100}-e^z
 $$
-and $3z^{100}$ have the same number of zeros in $|z|<1$, counted with
+and $3z^{100}$ have the same number of zeros in $\abs{z}<1$, counted with
 multiplicity. The latter has a zero of multiplicity $100$ at $0$. Hence
 $$
 \boxed{f\text{ has }100\text{ zeros in the unit disk, counted with multiplicity}.}
@@ -96,7 +96,7 @@ f'(z)
 =3z^{99}(100-z).
 $$
 Thus a multiple zero would have to satisfy $z=100$, because $z\ne0$. But
-$100$ is not in the unit disk. Therefore every zero in $|z|<1$ is simple.
+$100$ is not in the unit disk. Therefore every zero in $\abs{z}<1$ is simple.
 
 Consequently the $100$ zeros counted in step [](#s1){.pf-ref} are
 $$

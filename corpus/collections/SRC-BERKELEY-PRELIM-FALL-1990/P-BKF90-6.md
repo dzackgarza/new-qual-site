@@ -26,7 +26,7 @@ audit:
 Let $f$ be entire and suppose
 $$
 \frac{f(z)}{z}\longrightarrow0
-\qquad\text{as }|z|\to\infty.
+\qquad\text{as }\abs{z}\to\infty.
 $$
 Prove that $f$ is constant.
 :::

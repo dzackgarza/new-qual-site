@@ -35,12 +35,12 @@ By the Seifert–van Kampen Theorem:
 $$
 \pi_1(X) = \pi_1(P \vee S^3) \cong \pi_1(P) * \pi_1(S^3) \cong G * 0 \cong G,
 $$
-where $G = I^*$ is the binary icosahedral group of order $|G| = 120$.
+where $G = I^*$ is the binary icosahedral group of order $\cardinality{G} = 120$.
 :::
 
 ::: pf-step
 The universal cover $\widetilde{X}$ of $X = P \vee S^3$ is obtained by unwrapping the universal cover $p_P: S^3 \to P$ (which is a $120$-sheeted covering):
-The preimage of the basepoint $x_0 = P \cap S^3$ in the $S^3$ covering $P$ consists of $|G| = 120$ distinct points.
+The preimage of the basepoint $x_0 = P \cap S^3$ in the $S^3$ covering $P$ consists of $\cardinality{G} = 120$ distinct points.
 At each of these $120$ points, a lift of the simply-connected wedge summand $S^3$ is attached.
 Thus $\widetilde{X}$ is homeomorphic to a wedge sum of $1 + 120 = 121$ copies of $S^3$:
 $$

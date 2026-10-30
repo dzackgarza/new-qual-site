@@ -100,7 +100,7 @@ has the stated properties.
 
 ::: pf-proof
 
-For a regular value with every coordinate nonzero, the $j$th angular coordinate has $|k_j|$ inverse choices, and each local sign contributes $\operatorname{sgn}(k_j)$. Hence the sum of local degrees is
+For a regular value with every coordinate nonzero, the $j$th angular coordinate has $\abs{k_j}$ inverse choices, and each local sign contributes $\operatorname{sgn}(k_j)$. Hence the sum of local degrees is
 $$
 \deg\widetilde f=k_1\cdots k_n.
 $$

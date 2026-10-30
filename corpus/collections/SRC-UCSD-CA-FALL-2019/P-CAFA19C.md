@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A_1 = \{z \in \CC : 0 < |z| < 1\}$ and $A_2 = \{z \in \CC : 1 < |z| < 2\}$.
+Let $A_1 = \{z \in \CC : 0 < \abs{z} < 1\}$ and $A_2 = \{z \in \CC : 1 < \abs{z} < 2\}$.
 Prove $A_1$ and $A_2$ are not conformally equivalent.
 :::
 
@@ -30,7 +30,7 @@ Prove $A_1$ and $A_2$ are not conformally equivalent.
 $A_1$ is conformally equivalent to the punctured disk $\DD \sm \theset{0}$, which is not an annulus of positive modulus.
 
 ::: pf-proof
-$A_1 = \theset{0 < |z| < 1}$ is the punctured unit disk.
+$A_1 = \theset{0 < \abs{z} < 1}$ is the punctured unit disk.
 :::
 
 :::
@@ -77,7 +77,7 @@ if $\tilde f(0) \in A_2$, then $f$ extends to a homeomorphism of $\DD$ onto a su
 :::
 
 ::: pf-step
-Hence $\tilde f(0) \in \partial A_2 = \theset{|z| = 1} \cup \theset{|z| = 2}$.
+Hence $\tilde f(0) \in \partial A_2 = \theset{\abs{z} = 1} \cup \theset{\abs{z} = 2}$.
 
 ::: pf-proof
 the boundary of $A_2$.

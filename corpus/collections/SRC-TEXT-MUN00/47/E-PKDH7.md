@@ -27,19 +27,19 @@ Which are equicontinuous?
 :::
 
 ::: {.solution}
-(a) For fixed $x$, $|x+\sin nx|\le |x|+1$, so the family is pointwise bounded. It is not equicontinuous: at $0$, for any $\delta>0$ choose $n$ large and $x=\pi/(2n)<\delta$; then $|f_n(x)-f_n(0)|=x+1>1$.
+(a) For fixed $x$, $\abs{x+\sin nx}\le \abs{x}+1$, so the family is pointwise bounded. It is not equicontinuous: at $0$, for any $\delta>0$ choose $n$ large and $x=\pi/(2n)<\delta$; then $\abs{f_n(x)-f_n(0)}=x+1>1$.
 
 (b) $g_n(x)=n+\sin x$ is not pointwise bounded at any $x$. It is equicontinuous since
 $$
-|g_n(x)-g_n(y)|=|\sin x-\sin y|\le|x-y|
+\abs{g_n(x)-g_n(y)}=\abs{\sin x-\sin y}\le\abs{x-y}
 $$
 for all $n$.
 
-(c) The family $h_n(x)=|x|^{1/n}$ is pointwise bounded: for fixed $x$, it lies between $0$ and $\max\{1,|x|\}$. It is not equicontinuous at $0$: given $\delta>0$, choose $0<x<\min\{\delta,1\}$ and then $n$ so large that $x^{1/n}>1/2$, whereas $h_n(0)=0$.
+(c) The family $h_n(x)=\abs{x}^{1/n}$ is pointwise bounded: for fixed $x$, it lies between $0$ and $\max\{1,\abs{x}\}$. It is not equicontinuous at $0$: given $\delta>0$, choose $0<x<\min\{\delta,1\}$ and then $n$ so large that $x^{1/n}>1/2$, whereas $h_n(0)=0$.
 
-(d) Since $|n\sin(x/n)|\le |x|$, the family is pointwise bounded. Also
+(d) Since $\abs{n\sin(x/n)}\le \abs{x}$, the family is pointwise bounded. Also
 $$
-|k_n(x)-k_n(y)|\le n|x/n-y/n|=|x-y|,
+\abs{k_n(x)-k_n(y)}\le n\abs{x/n-y/n}=\abs{x-y},
 $$
 so it is equicontinuous.
 

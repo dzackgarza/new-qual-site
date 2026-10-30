@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Prove Chebyshev's Inequality: If $f \in L^p(X, \mu)$, with $0 < p < \infty$, then for any positive number $r$,
 $$
-\mu(\{x : |f(x)| > r\}) \leq \left[\frac{\|f\|_p}{r}\right]^p.
+\mu(\{x : \abs{f(x)} > r\}) \leq \left[\frac{\norm{f}_p}{r}\right]^p.
 $$
 :::
 
@@ -42,25 +42,25 @@ Integrate the pointwise lower bound on the superlevel set.
 
 Let
 $$
-E_r:=\{x\in X:|f(x)|>r\}.
+E_r:=\{x\in X:\abs{f(x)}>r\}.
 $$
 On $E_r$,
 $$
-|f(x)|^p\ge r^p.
+\abs{f(x)}^p\ge r^p.
 $$
 Therefore
 $$
-\|f\|_p^p
-=\int_X|f|^p\,d\mu
-\ge\int_{E_r}|f|^p\,d\mu
+\norm{f}_p^p
+=\int_X\abs{f}^p\,d\mu
+\ge\int_{E_r}\abs{f}^p\,d\mu
 \ge r^p\mu(E_r).
 $$
 Dividing by $r^p$ gives
 $$
 \boxed{
-\mu(\{|f|>r\})
-\le \frac{\|f\|_p^p}{r^p}
-=\left(\frac{\|f\|_p}{r}\right)^p.}
+\mu(\{\abs{f}>r\})
+\le \frac{\norm{f}_p^p}{r^p}
+=\left(\frac{\norm{f}_p}{r}\right)^p.}
 $$
 
 :::

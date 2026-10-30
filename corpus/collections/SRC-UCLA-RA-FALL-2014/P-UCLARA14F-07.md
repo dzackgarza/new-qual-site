@@ -25,7 +25,7 @@ Find an explicit conformal mapping from the upper half-plane slit along the vert
 $$
 \{ z \in \CC ; \operatorname{Im} z > 0 \} \setminus (0, 0 + ih], \quad h > 0,
 $$
-to the unit disc $\{ z \in \CC ; |z| < 1 \}$.
+to the unit disc $\{ z \in \CC ; \abs{z} < 1 \}$.
 :::
 
 ::: {.solution}
@@ -62,9 +62,9 @@ Write $z=x+iy$ with $y>0$. Then
 $$
 \frac{ih}{z}
 =
-\frac{hy}{|z|^2}
+\frac{hy}{\abs{z}^2}
 +
-i\frac{hx}{|z|^2},
+i\frac{hx}{\abs{z}^2},
 $$
 so
 $$
@@ -199,7 +199,7 @@ Then
 $$
 T_4(u)
 =
-\sqrt{|u|}\,e^{i\arg(u)/2}
+\sqrt{\abs{u}}\,e^{i\arg(u)/2}
 $$
 has argument in
 $$
@@ -226,17 +226,17 @@ is a conformal bijection from $H_R$ onto the unit disk $\DD$.
 
 For $\operatorname{Re}s>0$,
 $$
-|s-1|^2
+\abs{s-1}^2
 =
-|s|^2-2\operatorname{Re}s+1
+\abs{s}^2-2\operatorname{Re}s+1
 <
-|s|^2+2\operatorname{Re}s+1
+\abs{s}^2+2\operatorname{Re}s+1
 =
-|s+1|^2.
+\abs{s+1}^2.
 $$
 Hence
 $$
-\left|\frac{s-1}{s+1}\right|<1.
+\abs{\frac{s-1}{s+1}}<1.
 $$
 The inverse is
 $$

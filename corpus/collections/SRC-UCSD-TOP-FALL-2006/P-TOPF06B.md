@@ -30,9 +30,9 @@ $$
 ::: pf-proof
 We use the standard integral cohomology rings
 $$
-H^*(S^1;\ZZ)=\Lambda_{\ZZ}(u),\quad |u|=1,
+H^*(S^1;\ZZ)=\Lambda_{\ZZ}(u),\quad \gradeddegree{u}=1,
 \qquad
-H^*(\CP^{\infty};\ZZ)=\ZZ[c],\quad |c|=2.
+H^*(\CP^{\infty};\ZZ)=\ZZ[c],\quad \gradeddegree{c}=2.
 $$
 :::
 

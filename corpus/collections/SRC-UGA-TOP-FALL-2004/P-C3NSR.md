@@ -91,7 +91,7 @@ $$
 H(x,t)
 =
 \frac{(1-t)f(x)-tx}
-{\|(1-t)f(x)-tx\|}.
+{\norm{(1-t)f(x)-tx}}.
 $$
 We must check that the denominator never vanishes.
 If
@@ -102,7 +102,7 @@ then for $0<t<1$,
 $$
 (1-t)f(x)=tx.
 $$
-Taking norms and using $\|f(x)\|=\|x\|=1$ gives
+Taking norms and using $\norm{f(x)}=\norm{x}=1$ gives
 $$
 1-t=t,
 $$
@@ -152,7 +152,7 @@ $$
 K(x,t)
 =
 \frac{(1-t)f(x)+tx}
-{\|(1-t)f(x)+tx\|}.
+{\norm{(1-t)f(x)+tx}}.
 $$
 If the numerator vanished for some $0<t<1$, then
 $$

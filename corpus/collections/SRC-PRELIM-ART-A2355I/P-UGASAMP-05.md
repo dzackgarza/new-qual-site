@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGASAMP-05
 kind: problem
-title: $\int_0^{10\pi}|\sin x|\,dx$
+title: $\int_0^{10\pi}\abs{\sin x}\,dx$
 classification:
   areas: [prelim]
   topics: []
@@ -17,7 +17,7 @@ audit:
 ::: {.problem}
 Evaluate
 $$
-\int_0^{10\pi}|\sin x|\,dx.
+\int_0^{10\pi}\abs{\sin x}\,dx.
 $$
 :::
 
@@ -27,18 +27,18 @@ $$
 
 ::: {.pf-step #s1-1}
 
-The function $|\sin x|$ is $\pi$-periodic.
+The function $\abs{\sin x}$ is $\pi$-periodic.
 
 
 ::: pf-proof
 
 For every $x\in\RR$,
 $$
-|\sin(x+\pi)|
+\abs{\sin(x+\pi)}
 =
-|-\sin x|
+\abs{-\sin x}
 =
-|\sin x|.
+\abs{\sin x}.
 $$
 
 :::
@@ -49,7 +49,7 @@ $$
 
 One period has integral
 $$
-\int_0^\pi|\sin x|\,dx=2.
+\int_0^\pi\abs{\sin x}\,dx=2.
 $$
 
 
@@ -57,7 +57,7 @@ $$
 
 On $[0,\pi]$, one has $\sin x\ge0$, so
 $$
-\int_0^\pi|\sin x|\,dx
+\int_0^\pi\abs{\sin x}\,dx
 =
 \int_0^\pi\sin x\,dx
 =
@@ -72,16 +72,16 @@ $$
 
 ::: {.pf-step #s1-3}
 
-The interval $[0,10\pi]$ consists of ten consecutive periods of $|\sin x|$.
+The interval $[0,10\pi]$ consists of ten consecutive periods of $\abs{\sin x}$.
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, for each integer $k=0,\ldots,9$,
 $$
-\int_{k\pi}^{(k+1)\pi}|\sin x|\,dx
+\int_{k\pi}^{(k+1)\pi}\abs{\sin x}\,dx
 =
-\int_0^\pi|\sin x|\,dx
+\int_0^\pi\abs{\sin x}\,dx
 =2
 $$
 by step [](#s1-2){.pf-ref}.
@@ -94,7 +94,7 @@ by step [](#s1-2){.pf-ref}.
 
 Therefore
 $$
-\boxed{\displaystyle \int_0^{10\pi}|\sin x|\,dx=20.}
+\boxed{\displaystyle \int_0^{10\pi}\abs{\sin x}\,dx=20.}
 $$
 
 
@@ -102,9 +102,9 @@ $$
 
 Add the ten integrals from step [](#s1-3){.pf-ref}:
 $$
-\int_0^{10\pi}|\sin x|\,dx
+\int_0^{10\pi}\abs{\sin x}\,dx
 =
-\sum_{k=0}^{9}\int_{k\pi}^{(k+1)\pi}|\sin x|\,dx
+\sum_{k=0}^{9}\int_{k\pi}^{(k+1)\pi}\abs{\sin x}\,dx
 =
 \sum_{k=0}^{9}2
 =20.

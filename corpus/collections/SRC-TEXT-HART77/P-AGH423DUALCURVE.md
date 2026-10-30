@@ -612,7 +612,7 @@ $$
 For a plane cubic, $g=1$ and $\deg H=3$, so Riemann--Roch gives
 $\ell(H)=3$.  The three-dimensional space of ambient linear forms restricts
 injectively to $H^0(X,\OO_X(H))$, hence it is the complete linear system
-$|H|$.  Thus the effective divisor $3R\in|H|$ is cut out by a line, and that
+$\linearsystem{H}$.  Thus the effective divisor $3R\in\linearsystem{H}$ is cut out by a line, and that
 line has contact order $3$ at $R$.  Hence $R$ is also an inflection point.
 :::
 

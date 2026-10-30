@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF92-4
 kind: problem
-title: The solution of $y''=-|y|$ with $y(0)=1,y'(0)=0$ has exactly one positive zero
+title: The solution of $y''=-\abs{y}$ with $y(0)=1,y'(0)=0$ has exactly one positive zero
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 Let $y:[0,\infty)\to\RR$ solve
 $$
-y''=-|y|,
+y''=-\abs{y},
 \qquad
 y(0)=1,
 \qquad

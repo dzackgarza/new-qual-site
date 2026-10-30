@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Calculate the Fourier image $\tilde { f } ( \boldsymbol { k } )$ of the function f (x), if f (x) is given by
 
-(a) $f ( x ) = { \left\{ \begin{array} { l l } { f _ { 0 } , | x | \leqslant x _ { 0 } , } \\ { 0 , | x | > x _ { 0 } } \end{array} \right. }$
+(a) $f ( x ) = { \left\{ \begin{array} { l l } { f _ { 0 } , \abs{ x } \leqslant x _ { 0 } , } \\ { 0 , \abs{ x } > x _ { 0 } } \end{array} \right. }$
 
 (b) $f ( x ) = \left\{ { \begin{array} { l } { e ^ { - a x } , x \geqslant 0 , a > 0 , } \\ { 0 , x < 0 } \end{array} } \right.$
 :::

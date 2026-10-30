@@ -27,7 +27,7 @@ You may assume all four quantities are finite.
 $$
 a_n=\frac1{2^{n+(-1)^n}}.
 $$
-Compute $\limsup\sqrt[n]{|a_n|}$ and $\limsup|a_{n+1}/a_n|$. Show that the series converges by the root test. Does the ratio test decide convergence?
+Compute $\limsup\sqrt[n]{\abs{a_n}}$ and $\limsup\abs{a_{n+1}/a_n}$. Show that the series converges by the root test. Does the ratio test decide convergence?
 
 (d) Let $b_n=n^n/n!$. Show that
 $$
@@ -366,9 +366,9 @@ Suppose $\sum a_n$ converges by the ratio test. Then
 $$
 \boxed{
 \limsup_{n\to\infty}
-\left|
+\abs{
 \frac{a_{n+1}}{a_n}
-\right|
+}
 <1}.
 $$
 
@@ -385,20 +385,20 @@ for that limit.
 
 ::: {.pf-step #s1-17}
 
-Applying part (a) to the positive sequence $(|a_n|)$,
+Applying part (a) to the positive sequence $(\abs{a_n})$,
 $$
-\limsup_{n\to\infty}\sqrt[n]{|a_n|}
+\limsup_{n\to\infty}\sqrt[n]{\abs{a_n}}
 \le
 \limsup_{n\to\infty}
-\left|
+\abs{
 \frac{a_{n+1}}{a_n}
-\right|.
+}.
 $$
 
 
 ::: pf-proof
 
-Use step [](#s1-15){.pf-ref} with $a_n$ replaced by $|a_n|$.
+Use step [](#s1-15){.pf-ref} with $a_n$ replaced by $\abs{a_n}$.
 
 :::
 
@@ -409,7 +409,7 @@ Use step [](#s1-15){.pf-ref} with $a_n$ replaced by $|a_n|$.
 Hence
 $$
 \boxed{
-\limsup_{n\to\infty}\sqrt[n]{|a_n|}<1}.
+\limsup_{n\to\infty}\sqrt[n]{\abs{a_n}}<1}.
 $$
 
 
@@ -443,7 +443,7 @@ step [](#s1-18){.pf-ref}.
 The $n$th root is
 $$
 \boxed{
-|a_n|^{1/n}
+\abs{a_n}^{1/n}
 =
 2^{-1-(-1)^n/n}}.
 $$
@@ -468,7 +468,7 @@ $$
 Therefore
 $$
 \boxed{
-\lim_{n\to\infty}|a_n|^{1/n}
+\lim_{n\to\infty}\abs{a_n}^{1/n}
 =
 \frac12}.
 $$
@@ -491,7 +491,7 @@ the exponent in step [](#s1-20){.pf-ref} tends to $-1$.
 In particular,
 $$
 \boxed{
-\limsup_{n\to\infty}|a_n|^{1/n}
+\limsup_{n\to\infty}\abs{a_n}^{1/n}
 =
 \frac12}.
 $$
@@ -581,9 +581,9 @@ Hence
 $$
 \boxed{
 \limsup_{n\to\infty}
-\left|
+\abs{
 \frac{a_{n+1}}{a_n}
-\right|
+}
 =
 2}
 $$
@@ -591,9 +591,9 @@ and
 $$
 \boxed{
 \liminf_{n\to\infty}
-\left|
+\abs{
 \frac{a_{n+1}}{a_n}
-\right|
+}
 =
 \frac18}.
 $$
@@ -636,11 +636,11 @@ The ratio test does not decide convergence.
 
 The sufficient convergence condition
 $$
-\limsup |a_{n+1}/a_n|<1
+\limsup \abs{a_{n+1}/a_n}<1
 $$
 fails because the limsup is $2$, while the sufficient divergence condition
 $$
-\liminf |a_{n+1}/a_n|>1
+\liminf \abs{a_{n+1}/a_n}>1
 $$
 also fails because the liminf is $1/8$. Thus the generalized ratio test is
 inconclusive.

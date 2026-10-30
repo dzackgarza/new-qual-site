@@ -27,7 +27,7 @@ Let
 $$
 \rho:\RR^2\to[0,\infty),
 \qquad
-\rho(x)=\|x\|.
+\rho(x)=\norm{x}.
 $$
 
 ::: pf

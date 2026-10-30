@@ -44,7 +44,7 @@ Find a presentation of $G = H \rtimes_\phi \ZZ_2$ with a brief justification.
 
 Let $x,y$ generate the two factors of $H=C_3\times C_3$. Then
 $$
-G\cong\left\langle x,y,a\;\middle|\;x^3=y^3=a^2=1,\ [x,y]=1,\ axa=x^{-1},\ aya=y^{-1}\right\rangle.
+G\cong\left\langle x,y,a\;\presentationbar\;x^3=y^3=a^2=1,\ [x,y]=1,\ axa=x^{-1},\ aya=y^{-1}\right\rangle.
 $$
 
 ::: pf-proof

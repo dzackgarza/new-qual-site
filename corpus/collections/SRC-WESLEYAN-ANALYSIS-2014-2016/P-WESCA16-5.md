@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let
 $$
-\Omega_1=\{z:|z|<1,\ 0<\arg z<\alpha<2\pi\},
+\Omega_1=\{z:\abs{z}<1,\ 0<\arg z<\alpha<2\pi\},
 \qquad
 \Omega_2=\{x+iy:x,y>0\}.
 $$
@@ -32,7 +32,7 @@ Prove your answer.
 
 On $\Omega_1$, use the branch
 $$
-\Log z=\log|z|+i\arg z,
+\Log z=\log\abs{z}+i\arg z,
 \qquad
 0<\arg z<\alpha,
 $$
@@ -52,7 +52,7 @@ P(z)=z^{\pi/\alpha}
 $$
 is a conformal bijection from $\Omega_1$ onto the upper half-disk
 $$
-H_1=\{w:|w|<1,\ \operatorname{Im}w>0\}.
+H_1=\{w:\abs{w}<1,\ \operatorname{Im}w>0\}.
 $$
 
 
@@ -70,7 +70,7 @@ P(z)=r^{\pi/\alpha}e^{i\pi\theta/\alpha}.
 $$
 Thus
 $$
-0<|P(z)|<1,
+0<\abs{P(z)}<1,
 \qquad
 0<\arg P(z)<\pi,
 $$
@@ -116,20 +116,20 @@ w=C^{-1}(\zeta).
 $$
 Then
 $$
-|w|<1
+\abs{w}<1
 \quad\Longleftrightarrow\quad
-|\zeta-1|<|\zeta+1|
+\abs{\zeta-1}<\abs{\zeta+1}
 \quad\Longleftrightarrow\quad
 \operatorname{Re}\zeta>0.
 $$
 Moreover,
 $$
 \operatorname{Im}w
-=\frac{2\operatorname{Im}\zeta}{|\zeta+1|^2}.
+=\frac{2\operatorname{Im}\zeta}{\abs{\zeta+1}^2}.
 $$
 Hence
 $$
-|w|<1,\ \operatorname{Im}w>0
+\abs{w}<1,\ \operatorname{Im}w>0
 \quad\Longleftrightarrow\quad
 \operatorname{Re}\zeta>0,\ \operatorname{Im}\zeta>0.
 $$
@@ -186,7 +186,7 @@ $$
 is a conformal bijection $\Omega_1\to\Omega_2$. Distinct positive values of
 $t$ give distinct maps, and
 $$
-|(0,\infty)|=\mathfrak c.
+\cardinality{(0,\infty)}=\mathfrak c.
 $$
 
 :::
@@ -210,13 +210,13 @@ $$
 $$
 Since
 $$
-|\Omega_2|=\mathfrak c
+\cardinality{\Omega_2}=\mathfrak c
 \qquad\text{and}\qquad
-|Q|=\aleph_0,
+\cardinality{Q}=\aleph_0,
 $$
 one has
 $$
-|\Omega_2^Q|
+\cardinality{\Omega_2^Q}
 =\mathfrak c^{\aleph_0}
 =(2^{\aleph_0})^{\aleph_0}
 =\mathfrak c.

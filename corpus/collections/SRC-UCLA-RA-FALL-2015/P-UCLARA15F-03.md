@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Let $f \in L^1_{\mathrm{loc}}(\RR^d)$ be such that for some $0 < p < 1$, we have
 $$
-\left| \int f(x) g(x)\,dx \right| \leq \left( \int |g(x)|^p\,dx \right)^{\frac{1}{p}},
+\abs{ \int f(x) g(x)\,dx } \leq \left( \int \abs{g(x)}^p\,dx \right)^{\frac{1}{p}},
 $$
 for all $g \in C_0(\RR^d)$. Show that $f(x) = 0$ a.e. Here $C_0(\RR^d)$ is the space of continuous functions with compact support on $\RR^d$.
 :::
@@ -54,18 +54,18 @@ $$
 such that both
 $$
 \boxed{
-\int_{U\setminus K}|f(x)|\,dx<\varepsilon}
+\int_{U\setminus K}\abs{f(x)}\,dx<\varepsilon}
 $$
 and
 $$
 \boxed{
-|U\setminus K|<\varepsilon}.
+\setmeasure{U\setminus K}<\varepsilon}.
 $$
 
 
 ::: pf-proof
 
-Since $f\in L^1_{\mathrm{loc}}$, it is integrable on some bounded neighborhood of $K$, and its integral is absolutely continuous with respect to Lebesgue measure there. By outer regularity of Lebesgue measure, choose bounded open $U\supset K$ with $|U\setminus K|$ as small as desired; then absolute continuity of the integral makes $\int_{U\setminus K}|f|$ small as well.
+Since $f\in L^1_{\mathrm{loc}}$, it is integrable on some bounded neighborhood of $K$, and its integral is absolutely continuous with respect to Lebesgue measure there. By outer regularity of Lebesgue measure, choose bounded open $U\supset K$ with $\setmeasure{U\setminus K}$ as small as desired; then absolute continuity of the integral makes $\int_{U\setminus K}\abs{f}$ small as well.
 
 :::
 
@@ -99,11 +99,11 @@ Euclidean space is normal, and $K$ is closed while $U$ is open with $K\subset U$
 
 One has
 $$
-\left|
+\abs{
 \int_{\RR^d}f(x)g(x)\,dx
 -
 \int_K f(x)\,dx
-\right|
+}
 <
 \varepsilon.
 $$
@@ -114,16 +114,16 @@ $$
 Since $g=1$ on $K$ and $g=0$ outside $U$,
 $$
 \begin{aligned}
-\left|
+\abs{
 \int fg-\int_K f
-\right|
+}
 &=
-\left|
+\abs{
 \int_{U\setminus K}
 f(x)g(x)\,dx
-\right|\\
+}\\
 &\le
-\int_{U\setminus K}|f(x)|\,dx
+\int_{U\setminus K}\abs{f(x)}\,dx
 <
 \varepsilon
 \end{aligned}
@@ -138,12 +138,12 @@ by step [](#s1-1){.pf-ref}.
 
 By the hypothesis,
 $$
-\left|
+\abs{
 \int fg
-\right|
+}
 \le
 \left(
-\int |g|^p
+\int \abs{g}^p
 \right)^{1/p}.
 $$
 
@@ -168,7 +168,7 @@ $$
 $$
 $$
 \boxed{
-\int |g|^p\le |U|}.
+\int \abs{g}^p\le \setmeasure{U}}.
 $$
 
 
@@ -176,7 +176,7 @@ $$
 
 On $U$,
 $$
-|g|^p\le1,
+\abs{g}^p\le1,
 $$
 and outside $U$, $g=0$.
 
@@ -188,11 +188,11 @@ and outside $U$, $g=0$.
 
 Therefore
 $$
-\left|
+\abs{
 \int_K f
-\right|
+}
 \le
-\varepsilon+|U|^{1/p}.
+\varepsilon+\setmeasure{U}^{1/p}.
 $$
 
 
@@ -208,16 +208,16 @@ Use the triangle inequality with steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-
 
 Since
 $$
-|U|
+\setmeasure{U}
 \le
-|K|+\varepsilon,
+\setmeasure{K}+\varepsilon,
 $$
 $$
-\left|
+\abs{
 \int_K f
-\right|
+}
 \le
-\varepsilon+(|K|+\varepsilon)^{1/p}.
+\varepsilon+(\setmeasure{K}+\varepsilon)^{1/p}.
 $$
 
 
@@ -225,9 +225,9 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|U|=|K|+|U\setminus K|
+\setmeasure{U}=\setmeasure{K}+\setmeasure{U\setminus K}
 <
-|K|+\varepsilon.
+\setmeasure{K}+\varepsilon.
 $$
 
 :::
@@ -239,17 +239,17 @@ $$
 Letting $\varepsilon\downarrow0$,
 $$
 \boxed{
-\left|
+\abs{
 \int_K f(x)\,dx
-\right|
+}
 \le
-|K|^{1/p}}.
+\setmeasure{K}^{1/p}}.
 $$
 
 
 ::: pf-proof
 
-The bound in step [](#s1-7){.pf-ref} holds for every positive $\varepsilon$, and the right-hand side converges to $|K|^{1/p}$.
+The bound in step [](#s1-7){.pf-ref} holds for every positive $\varepsilon$, and the right-hand side converges to $\setmeasure{K}^{1/p}$.
 
 :::
 
@@ -302,14 +302,14 @@ The interiors are disjoint and cover $Q$ up to the union of finitely many lower-
 
 Hence
 $$
-\left|
+\abs{
 \int_Q f
-\right|
+}
 \le
 \sum_{j=1}^{N^d}
-\left|
+\abs{
 \int_{Q_j}f
-\right|.
+}.
 $$
 
 
@@ -325,11 +325,11 @@ Apply the triangle inequality to step [](#s1-10){.pf-ref}.
 
 By step [](#s1-8){.pf-ref},
 $$
-\left|
+\abs{
 \int_{Q_j}f
-\right|
+}
 \le
-|Q_j|^{1/p}
+\setmeasure{Q_j}^{1/p}
 =
 \left(
 \frac{s^d}{N^d}
@@ -353,9 +353,9 @@ $$
 Therefore
 $$
 \boxed{
-\left|
+\abs{
 \int_Q f
-\right|
+}
 \le
 s^{d/p}
 N^{d-d/p}}.
@@ -438,7 +438,7 @@ $$
 f(x)
 =
 \lim_{r\downarrow0}
-\frac1{|Q_r(x)|}
+\frac1{\setmeasure{Q_r(x)}}
 \int_{Q_r(x)}f(y)\,dy},
 $$
 where $Q_r(x)$ is any family of cubes centered at $x$ with side length tending to zero.

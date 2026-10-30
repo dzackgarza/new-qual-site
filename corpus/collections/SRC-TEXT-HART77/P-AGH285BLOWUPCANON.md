@@ -35,7 +35,7 @@ $$
 ::: {.hint}
 By (a), write $\omega_{\tilde X}\cong\pi^*\mcm\tensor\mcl(qY')$.
 Restrict to $\tilde X\setminus Y'\cong X\setminus Y$ to show that $\mcm\cong\omega_X$.
-Adjunction should give $\omega_{Y'}\cong(\pi|_{Y'})^*\omega_X\tensor\OO_{Y'}(-q-1)$.
+Adjunction should give $\omega_{Y'}\cong(\pi\restrict_{Y'})^*\omega_X\tensor\OO_{Y'}(-q-1)$.
 For a closed point $y\in Y$ and its fibre $Z\subseteq Y'$, show that $\omega_Z\cong\OO_Z(-q-1)$.
 Since $Z\cong\PP^{r-1}$ and $\omega_Z\cong\OO_Z(-r)$, this determines $q$.
 :::
@@ -52,20 +52,20 @@ All divisor classes are identified with invertible sheaf classes by $D\mapsto\OO
 The varieties $\widetilde X$ and $E$ are nonsingular and integral, and
 $$
 E\cong\PP_Y(\mathcal I_Y/\mathcal I_Y^2),\qquad
-\OO_{\widetilde X}(E)|_E\cong\OO_E(-1),\qquad
+\OO_{\widetilde X}(E)\restrict_E\cong\OO_E(-1),\qquad
 \widetilde U\cong U.
 $$
 
 ::: pf-proof
 
-The [blowup theorem for a smooth center](https://stacks.math.columbia.edu/tag/0FUT) gives smoothness, the displayed exceptional projective bundle in the quotient convention, and $\OO_{\widetilde X}(-E)|_E\cong\OO_E(1)$ [@Har10a, Proposition II.8.24].
-Dualizing gives the asserted sign for $\OO(E)|_E$.
+The [blowup theorem for a smooth center](https://stacks.math.columbia.edu/tag/0FUT) gives smoothness, the displayed exceptional projective bundle in the quotient convention, and $\OO_{\widetilde X}(-E)\restrict_E\cong\OO_E(1)$ [@Har10a, Proposition II.8.24].
+Dualizing gives the asserted sign for $\OO(E)\restrict_E$.
 The conormal bundle $\mathcal I_Y/\mathcal I_Y^2$ has rank $r$.
 Since $Y$ is integral, its projective bundle is integral: local trivializations are projective spaces over integral opens and overlap over the generic point of $Y$.
 Thus $E$ is an irreducible prime divisor.
 The blowup of the integral $X$ along the proper center is integral, and is an isomorphism off that center, by the [[D-SCHBLOWUP|blowup construction]]. For every closed point $y\in Y$, its fibre $Z=p^{-1}(y)$ is $\PP_k^{r-1}$ and
 $$
-\OO_{\widetilde X}(E)|_Z\cong\OO_{\PP^{r-1}}(-1).
+\OO_{\widetilde X}(E)\restrict_Z\cong\OO_{\PP^{r-1}}(-1).
 $$
 
 :::
@@ -106,7 +106,7 @@ $$
 ::: pf-proof
 
 It is a homomorphism by compatibility of pullback and tensor products.
-Given an invertible sheaf $L$ on $\widetilde X$, use step [](#s2){.pf-ref} and $\widetilde U\cong U$ to choose $M$ on $X$ with $\pi^*M|_{\widetilde U}\cong L|_{\widetilde U}$.
+Given an invertible sheaf $L$ on $\widetilde X$, use step [](#s2){.pf-ref} and $\widetilde U\cong U$ to choose $M$ on $X$ with $\pi^*M\restrict_{\widetilde U}\cong L\restrict_{\widetilde U}$.
 Then $L\otimes(\pi^*M)^{-1}$ has trivial restriction and is $\OO(qE)$ for some $q$, again by step [](#s2){.pf-ref}. This proves surjectivity.
 
 If $\pi^*M\otimes\OO(qE)$ is trivial, restriction to $\widetilde U$ and injectivity of $\Pic(X)\to\Pic(U)$ give $M\cong\OO_X$.
@@ -131,14 +131,14 @@ $$
 
 Step [](#s3){.pf-ref} first writes $\omega_{\widetilde X}=\pi^*M\otimes\OO(qE)$.
 On $\widetilde U\cong U$, the differential sheaves and their top exterior powers agree under the isomorphism.
-Thus $M|_U\cong\omega_X|_U$.
+Thus $M\restrict_U\cong\omega_X\restrict_U$.
 Injectivity in step [](#s2){.pf-ref} implies $M\cong\omega_X$ on $X$.
 
 Apply [[D-MODCONORM|adjunction]] to the nonsingular divisor $E\subseteq\widetilde X$:
 $$
-\omega_E\cong(\omega_{\widetilde X}\otimes\OO_{\widetilde X}(E))|_E.
+\omega_E\cong(\omega_{\widetilde X}\otimes\OO_{\widetilde X}(E))\restrict_E.
 $$
-Substitute the first formula and use $\OO(E)|_E=\OO_E(-1)$ from step [](#s1){.pf-ref}. This gives the second formula, including the exponent $-q-1$.
+Substitute the first formula and use $\OO(E)\restrict_E=\OO_E(-1)$ from step [](#s1){.pf-ref}. This gives the second formula, including the exponent $-q-1$.
 
 :::
 
@@ -161,7 +161,7 @@ $$
 This follows directly by pulling back the ideal of $y$ through the flat product projection; the residue cotangent space has dimension $m$ because $Y$ is nonsingular.
 The exact conormal sequence for the nonsingular closed immersion $Z\hookrightarrow E$, followed by determinants, therefore gives
 $$
-\omega_E|_Z\cong\omega_Z,
+\omega_E\restrict_Z\cong\omega_Z,
 $$
 up to tensoring with the constant one-dimensional vector space $\det(\mathfrak m_y/\mathfrak m_y^2)$, whose associated invertible sheaf is trivial.
 

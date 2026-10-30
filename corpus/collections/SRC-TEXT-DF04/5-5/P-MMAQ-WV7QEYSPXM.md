@@ -71,8 +71,8 @@ If $K$ is infinite, the injectivity of $\varphi_1$ and $\varphi_2$ makes both
 images infinite cyclic. Since $\varphi_2(k)^a$ generates $\varphi_2(K)$, we
 must have $a=\pm1$. Take $b=a$.
 
-Now suppose $|K|=n<\infty$, and let $m=|\varphi_2(K)|$. Conjugacy of the two
-images gives $|\varphi_1(K)|=m$. Since a cyclic group has a unique subgroup of
+Now suppose $\cardinality{K}=n<\infty$, and let $m=\cardinality{\varphi_2(K)}$. Conjugacy of the two
+images gives $\cardinality{\varphi_1(K)}=m$. Since a cyclic group has a unique subgroup of
 each order, the kernels $\ker\varphi_1$ and $\ker\varphi_2$ are equal, of order
 $n/m$. Thus $\varphi_2(k)^a$ generates $\varphi_2(K)$, so $\gcd(a,m)=1$.
 

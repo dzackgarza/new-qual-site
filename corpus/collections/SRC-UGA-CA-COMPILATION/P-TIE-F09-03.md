@@ -21,7 +21,7 @@ Suppose that $f$ is an analytic function in the region D which contains the poin
 
 $F ( z ) = z - a - q f ( z )$ where q is a complex parameter.
 
-(1) Let $K \subset D$ be a circle with the center at point a and also we assume that $f ( z ) \neq 0$ for $z \in K$ . Prove that the function F has one and only one zero $z = w$ on the closed disc K whose boundary is the circle K if $| q | < \operatorname* { m i n } _ { z \in K } { \frac { | z - a | } { | f ( z ) | } }$
+(1) Let $K \subset D$ be a circle with the center at point a and also we assume that $f ( z ) \neq 0$ for $z \in K$ . Prove that the function F has one and only one zero $z = w$ on the closed disc K whose boundary is the circle K if $\abs{ q } < \operatorname* { m i n } _ { z \in K } { \frac { \abs{ z - a } } { \abs{ f ( z ) } } }$
 
 (2) Let G(z) be an analytic function on the disk K. Apply the residue theorem to prove that $\frac { G ( w ) } { F ^ { \prime } ( w ) } = \frac { 1 } { 2 \pi i } \int _ { K } \frac { G ( z ) } { F ( z ) } d z$ , where w is the zero from (1).
 
@@ -39,7 +39,7 @@ $\overline\Delta$ be the closed disk bounded by $C$.
 
 On $C$,
 $$
-|qf(z)|<|z-a|.
+\abs{qf(z)}<\abs{z-a}.
 $$
 
 
@@ -47,12 +47,12 @@ $$
 
 The hypothesis is
 $$
-|q|
+\abs{q}
 <
 \min_{z\in C}
-\frac{|z-a|}{|f(z)|}.
+\frac{\abs{z-a}}{\abs{f(z)}}.
 $$
-Since $f(z)\ne0$ on $C$, multiplying by $|f(z)|$ gives the asserted strict inequality for every
+Since $f(z)\ne0$ on $C$, multiplying by $\abs{f(z)}$ gives the asserted strict inequality for every
 $z\in C$.
 
 :::
@@ -72,11 +72,11 @@ has exactly one zero in $\Delta$, counted with multiplicity.
 
 On $C$, step [](#s1-1){.pf-ref} gives
 $$
-|F(z)-(z-a)|
+\abs{F(z)-(z-a)}
 =
-|qf(z)|
+\abs{qf(z)}
 <
-|z-a|.
+\abs{z-a}.
 $$
 By Rouché's theorem, $F$ and $z-a$ have the same number of zeros in $\Delta$, counted with
 multiplicity. The function $z-a$ has exactly one zero there, namely $a$, with multiplicity one.
@@ -95,9 +95,9 @@ The unique zero $w$ of $F$ in $\overline\Delta$ lies in $\Delta$ and is simple.
 
 Step [](#s1-1){.pf-ref} implies
 $$
-|F(z)|
+\abs{F(z)}
 \ge
-|z-a|-|qf(z)|
+\abs{z-a}-\abs{qf(z)}
 >0
 $$
 on $C$, so $F$ has no zero on the boundary. By step [](#s1-2){.pf-ref} there is exactly one zero in the
@@ -149,9 +149,9 @@ $$
 
 There exists a constant $\lambda<1$ such that
 $$
-\left|
+\abs{
 \frac{qf(z)}{z-a}
-\right|
+}
 \le\lambda
 $$
 for every $z\in C$.
@@ -162,7 +162,7 @@ for every $z\in C$.
 The function
 $$
 z\longmapsto
-\left|\frac{qf(z)}{z-a}\right|
+\abs{\frac{qf(z)}{z-a}}
 $$
 is continuous on the compact circle $C$. By step [](#s1-1){.pf-ref} it is strictly less than $1$ at every
 point. Its maximum $\lambda$ is therefore strictly less than $1$.

@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Problem 4. Consider the Banach space $V=C([-1,1])$ of all real-valued continuous functions on $[-1,1]$, equipped with the supremum norm
 $$
-\|f\|=\sup\{|f(x)|:x\in[-1,1]\},\qquad f\in V.
+\norm{f}=\sup\{\abs{f(x)}:x\in[-1,1]\},\qquad f\in V.
 $$
 Let
 $$
-B=\{f\in V:\|f\|\le1\}
+B=\{f\in V:\norm{f}\le1\}
 $$
 be the closed unit ball in $V$. Show that there exists a bounded linear functional $\Lambda:V\to\RR$ such that $\Lambda(B)$ is an open subset of $\RR$.
 :::
@@ -64,9 +64,9 @@ Both integrals are linear in $f$, so their difference is linear.
 For every $f\in V$,
 $$
 \boxed{
-|\Lambda(f)|
+\abs{\Lambda(f)}
 \le
-2\|f\|_\infty}.
+2\norm{f}_\infty}.
 $$
 
 
@@ -75,15 +75,15 @@ $$
 By the triangle inequality,
 $$
 \begin{aligned}
-|\Lambda(f)|
+\abs{\Lambda(f)}
 &\le
-\int_0^1|f(x)|\,dx
+\int_0^1\abs{f(x)}\,dx
 +
-\int_{-1}^0|f(x)|\,dx\\
+\int_{-1}^0\abs{f(x)}\,dx\\
 &\le
-\|f\|_\infty+\|f\|_\infty\\
+\norm{f}_\infty+\norm{f}_\infty\\
 &=
-2\|f\|_\infty.
+2\norm{f}_\infty.
 \end{aligned}
 $$
 
@@ -96,7 +96,7 @@ $$
 Hence $\Lambda$ is bounded and
 $$
 \boxed{
-\|\Lambda\|\le2}.
+\norm{\Lambda}\le2}.
 $$
 
 
@@ -121,11 +121,11 @@ $$
 
 The function is continuous at $\pm\varepsilon$, and
 $$
-|f_\varepsilon(x)|\le1
+\abs{f_\varepsilon(x)}\le1
 $$
 for all $x$. Hence
 $$
-\|f_\varepsilon\|_\infty\le1.
+\norm{f_\varepsilon}_\infty\le1.
 $$
 
 :::
@@ -187,19 +187,19 @@ $$
 Hence
 $$
 \boxed{
-\|\Lambda\|=2}.
+\norm{\Lambda}=2}.
 $$
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} gives $\|\Lambda\|\le2$. Step [](#s1-5){.pf-ref} gives values
+Step [](#s1-3){.pf-ref} gives $\norm{\Lambda}\le2$. Step [](#s1-5){.pf-ref} gives values
 $$
 \Lambda(f_\varepsilon)=2-\varepsilon
 $$
-with $\|f_\varepsilon\|_\infty\le1$, so
+with $\norm{f_\varepsilon}_\infty\le1$, so
 $$
-\|\Lambda\|
+\norm{\Lambda}
 \ge
 2-\varepsilon
 $$
@@ -225,7 +225,7 @@ $$
 
 ::: pf-proof
 
-Since $\|f\|_\infty\le1$,
+Since $\norm{f}_\infty\le1$,
 $$
 \int_0^1 f(x)\,dx\le1
 $$
@@ -378,7 +378,7 @@ $$
 
 Step [](#s1-2){.pf-ref} gives
 $$
-|\Lambda(f)|\le2
+\abs{\Lambda(f)}\le2
 $$
 on $B$, and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} exclude the endpoints.
 
@@ -391,7 +391,7 @@ on $B$, and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} exclude the en
 There exists $g\in B$ such that
 $$
 \boxed{
-\Lambda(g)>|t|}.
+\Lambda(g)>\abs{t}}.
 $$
 
 
@@ -399,7 +399,7 @@ $$
 
 Choose $\varepsilon>0$ so small that
 $$
-2-\varepsilon>|t|.
+2-\varepsilon>\abs{t}.
 $$
 Then take
 $$
@@ -425,7 +425,7 @@ $$
 
 Since
 $$
-\Lambda(g)>|t|\ge0,
+\Lambda(g)>\abs{t}\ge0,
 $$
 the denominator is nonzero.
 
@@ -446,18 +446,18 @@ $$
 
 Since $g\in B$,
 $$
-\|g\|_\infty\le1.
+\norm{g}_\infty\le1.
 $$
 Also
 $$
-\left|
+\abs{
 \frac{t}{\Lambda(g)}
-\right|
+}
 <1
 $$
 by step [](#s1-14){.pf-ref}. Therefore
 $$
-\|h\|_\infty
+\norm{h}_\infty
 <
 1.
 $$

@@ -50,12 +50,12 @@ Now we can solve for $Y ( t )$ by guessing $Y ( t ) = e ^ { r t }$ and we’ll f
 Thus
 
 $$
-Y ( t ) = C _ { 1 } e ^ { \frac { 5 } { 2 } t } + C _ { 2 } e ^ { - 3 t } \implies \Big \lvert \ y ( x ) = Y ( \log ( x ) ) = C _ { 1 } x ^ { 5 / 2 } + C _ { 2 } x ^ { - 3 } . \Big \rvert
+Y ( t ) = C _ { 1 } e ^ { \frac { 5 } { 2 } t } + C _ { 2 } e ^ { - 3 t } \implies \boxed{ y ( x ) = Y ( \log ( x ) ) = C _ { 1 } x ^ { 5 / 2 } + C _ { 2 } x ^ { - 3 } } .
 $$
 
 This latter method was a bit more complicated, but it helps answer the last question: what if we had a repeated root for $\lambda ?$ In this case, we would transform the equation and find that the differential equation for $Y ( t )$ has a characteristic polynomial $( r - r _ { 1 } ) ^ { 2 } = 0$ and the solution would be
 
 $$
-Y ( t ) = C _ { 1 } e ^ { r _ { 1 } t } + C _ { 2 } t e ^ { r _ { 1 } t } \quad \Longrightarrow \quad \left| y ( x ) = Y ( \log ( x ) ) = C _ { 1 } x ^ { r _ { 1 } } + C _ { 2 } x ^ { r _ { 1 } } \log ( x ) . \right|
+Y ( t ) = C _ { 1 } e ^ { r _ { 1 } t } + C _ { 2 } t e ^ { r _ { 1 } t } \quad \Longrightarrow \quad \boxed{ y ( x ) = Y ( \log ( x ) ) = C _ { 1 } x ^ { r _ { 1 } } + C _ { 2 } x ^ { r _ { 1 } } \log ( x ) } .
 $$
 :::

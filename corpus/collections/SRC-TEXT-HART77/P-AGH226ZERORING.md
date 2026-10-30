@@ -84,7 +84,7 @@ $$
 ::: {.pf-step #unique-continuous-map-from-empty}
 For every scheme $X$, there is exactly one continuous map
 $$
-\varnothing\longrightarrow |X|.
+\varnothing\longrightarrow \underlyingspace{X}.
 $$
 
 ::: pf-proof

@@ -34,7 +34,7 @@ $$
 one has
 $$
 \boxed{
-\sup_{z\in K}|f_n(z)-f(z)|
+\sup_{z\in K}\abs{f_n(z)-f(z)}
 \longrightarrow0}.
 $$
 
@@ -61,7 +61,7 @@ $$
 such that
 $$
 \boxed{
-|f_n(z)-f(z)|<\varepsilon}
+\abs{f_n(z)-f(z)}<\varepsilon}
 $$
 for every $z\in K$ and every $n\ge N$.
 
@@ -70,7 +70,7 @@ for every $z\in K$ and every $n\ge N$.
 
 The statement
 $$
-\sup_{z\in K}|f_n(z)-f(z)|\to0
+\sup_{z\in K}\abs{f_n(z)-f(z)}\to0
 $$
 means exactly that eventually the supremum is $<\varepsilon$, which is
 equivalent to the displayed pointwise inequality holding simultaneously for

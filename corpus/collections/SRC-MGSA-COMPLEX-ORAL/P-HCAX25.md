@@ -15,7 +15,7 @@ review: draft
 ::: {.problem}
 Let $f$ be holomorphic on the punctured unit disk and suppose
 $$
-|f(z)|\leq \frac1{\sqrt{|z|}}.
+\abs{f(z)}\leq \frac1{\sqrt{\abs{z}}}.
 $$
 Show that the singularity at the origin is removable.
 :::
@@ -25,15 +25,15 @@ Write the Laurent expansion
 $$
 f(z)=\sum_{n=-\infty}^{\infty}a_nz^n
 $$
-on $0<|z|<1$. For $m\ge1$, Cauchy's formula on the circle $|z|=r$ gives
+on $0<\abs{z}<1$. For $m\ge1$, Cauchy's formula on the circle $\abs{z}=r$ gives
 $$
 a_{-m}
-=\frac1{2\pi i}\int_{|z|=r}f(z)z^{m-1}\,dz.
+=\frac1{2\pi i}\int_{\abs{z}=r}f(z)z^{m-1}\,dz.
 $$
 Hence
 $$
-|a_{-m}|
-\le r^m\max_{|z|=r}|f(z)|
+\abs{a_{-m}}
+\le r^m\max_{\abs{z}=r}\abs{f(z)}
 \le r^{m-1/2}.
 $$
 Since $m-1/2>0$, letting $r\downarrow0$ yields

@@ -131,7 +131,7 @@ so $P\in C(M)$.
 
 On the other hand, every polynomial $p(M)$ acts on $\ker M$ as
 $$
-p(M)|_{\ker M}=p(0)I_{\ker M},
+p(M)\restrict_{\ker M}=p(0)I_{\ker M},
 $$
 because $M$ vanishes on $\ker M$. The restriction of $P$ to
 $\ker M$ is not scalar: it is the identity on the kernel line from

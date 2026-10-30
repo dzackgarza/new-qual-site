@@ -80,7 +80,7 @@ If $C$ is Hermitian with eigenvalues
 $\lambda_1(C)\ge\cdots\ge\lambda_n(C)$, the spectral theorem gives an orthonormal eigenbasis. Writing $v=\sum_j c_j u_j$,
 $$
 \frac{v^HCv}{v^Hv}
- =\frac{\sum_j |c_j|^2\lambda_j(C)}{\sum_j |c_j|^2},
+ =\frac{\sum_j \abs{c_j}^2\lambda_j(C)}{\sum_j \abs{c_j}^2},
 $$
 which is a convex combination of the eigenvalues. Hence
 $$

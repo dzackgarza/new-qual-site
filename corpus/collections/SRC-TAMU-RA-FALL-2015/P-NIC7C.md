@@ -41,7 +41,7 @@ $$
 $$
 Then $\lambda$ is linear and continuous, with
 $$
-|\lambda(y)|\le \|\phi\|\,\|T^{-1}\|\,\|y\|.
+\abs{\lambda(y)}\le \norm{\phi}\,\norm{T^{-1}}\,\norm{y}.
 $$
 By the Hahn--Banach theorem, $\lambda$ extends to some $\psi\in Y^*$. For every $x\in X$,
 $$

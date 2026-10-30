@@ -102,9 +102,9 @@ coset $H$ to the different coset $gH$. Simplicity
 therefore makes the kernel trivial.
 
 Thus $G$ embeds in $S_n$, so it is finite and
-$|G|\leq n!\leq24$. The permitted fact that $A_5$
+$\cardinality{G}\leq n!\leq24$. The permitted fact that $A_5$
 is the smallest nonabelian simple group gives instead
-$|G|\geq|A_5|=5!/2=60$, a contradiction. The argument
+$\cardinality{G}\geq\cardinality{A_5}=5!/2=60$, a contradiction. The argument
 does not assume beforehand that the simple group is
 finite; finiteness follows from the faithful action.
 

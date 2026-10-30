@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-04
 kind: problem
-title: Cosine series with $\sum(1+n^2)|c_n|^2<\infty$ form an algebra
+title: Cosine series with $\sum(1+n^2)\abs{c_n}^2<\infty$ form an algebra
 classification:
   areas:
   - real-analysis
@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Given $f \in L^2([0,\pi])$, we say that $f \in \mathcal{G}$ if $f$ admits a representation of the form
 $$
-f(x) = \sum_{n=0}^{\infty} c_n \cos(nx) \quad \text{with} \quad \sum_{n=0}^{\infty} (1+n^2)|c_n|^2 < \infty.
+f(x) = \sum_{n=0}^{\infty} c_n \cos(nx) \quad \text{with} \quad \sum_{n=0}^{\infty} (1+n^2)\abs{c_n}^2 < \infty.
 $$
 Show that if $f \in \mathcal{G}$ and $g \in \mathcal{G}$ then $fg \in \mathcal{G}$.
 :::
@@ -38,9 +38,9 @@ g(x)=\sum_{n=0}^\infty d_n\cos(nx),
 $$
 with
 $$
-\sum_{n\ge0}(1+n^2)|c_n|^2<\infty,
+\sum_{n\ge0}(1+n^2)\abs{c_n}^2<\infty,
 \qquad
-\sum_{n\ge0}(1+n^2)|d_n|^2<\infty.
+\sum_{n\ge0}(1+n^2)\abs{d_n}^2<\infty.
 $$
 
 ::: pf
@@ -54,10 +54,10 @@ The coefficient sequences $(c_n)$ and $(d_n)$ belong to $\ell^1$.
 
 By Cauchy--Schwarz,
 $$
-\sum_{n=0}^\infty |c_n|
+\sum_{n=0}^\infty \abs{c_n}
 \le
 \left(
-\sum_{n=0}^\infty(1+n^2)|c_n|^2
+\sum_{n=0}^\infty(1+n^2)\abs{c_n}^2
 \right)^{1/2}
 \left(
 \sum_{n=0}^\infty\frac1{1+n^2}
@@ -80,7 +80,7 @@ on $\RR$.
 
 Since
 $$
-|\cos(nx)|\le1,
+\abs{\cos(nx)}\le1,
 $$
 step [](#s1-1){.pf-ref} and the Weierstrass $M$-test give absolute and uniform convergence.
 Thus the series define continuous even $2\pi$-periodic representatives of
@@ -131,9 +131,9 @@ $a,b\in\ell^1(\ZZ)$.
 
 The weighted sequences
 $$
-A_k=(1+k^2)^{1/2}|a_k|,
+A_k=(1+k^2)^{1/2}\abs{a_k},
 \qquad
-B_k=(1+k^2)^{1/2}|b_k|
+B_k=(1+k^2)^{1/2}\abs{b_k}
 $$
 belong to $\ell^2(\ZZ)$.
 
@@ -142,11 +142,11 @@ belong to $\ell^2(\ZZ)$.
 
 By the definitions in step [](#s1-3){.pf-ref},
 $$
-\sum_{k\in\ZZ}(1+k^2)|a_k|^2
+\sum_{k\in\ZZ}(1+k^2)\abs{a_k}^2
 =
-|c_0|^2
+\abs{c_0}^2
 +
-\frac12\sum_{k=1}^\infty(1+k^2)|c_k|^2
+\frac12\sum_{k=1}^\infty(1+k^2)\abs{c_k}^2
 <\infty.
 $$
 The same calculation applies to $b$.
@@ -197,21 +197,21 @@ $$
 
 Since
 $$
-|n|
+\abs{n}
 \le
-|k|+|n-k|,
+\abs{k}+\abs{n-k},
 $$
 one has
 $$
 (1+n^2)^{1/2}
 \le
-1+|n|
+1+\abs{n}
 \le
-(1+|k|)+(1+|n-k|).
+(1+\abs{k})+(1+\abs{n-k}).
 $$
 Also
 $$
-1+|j|
+1+\abs{j}
 \le
 \sqrt2\,(1+j^2)^{1/2}.
 $$
@@ -225,9 +225,9 @@ Thus the inequality holds, for example with $C=\sqrt2$.
 
 The weighted product coefficients satisfy
 $$
-\left\|
+\norm{
 \bigl((1+n^2)^{1/2}e_n\bigr)_{n\in\ZZ}
-\right\|_{\ell^2}
+}_{\ell^2}
 <\infty.
 $$
 
@@ -237,23 +237,23 @@ $$
 By steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref},
 $$
 \begin{aligned}
-(1+n^2)^{1/2}|e_n|
+(1+n^2)^{1/2}\abs{e_n}
 &\le
 C\sum_k
 \left(
-(1+k^2)^{1/2}|a_k||b_{n-k}|
+(1+k^2)^{1/2}\abs{a_k}\abs{b_{n-k}}
 \right.\\
 &\hspace{4em}\left.
 +
-|a_k|(1+(n-k)^2)^{1/2}|b_{n-k}|
+\abs{a_k}(1+(n-k)^2)^{1/2}\abs{b_{n-k}}
 \right).
 \end{aligned}
 $$
 Hence, pointwise in $n$,
 $$
-(1+n^2)^{1/2}|e_n|
+(1+n^2)^{1/2}\abs{e_n}
 \le
-C\bigl((A*|b|)_n+(|a|*B)_n\bigr).
+C\bigl((A*\abs{b})_n+(\abs{a}*B)_n\bigr).
 $$
 Young's convolution inequality
 $$
@@ -262,12 +262,12 @@ $$
 therefore gives
 $$
 \begin{aligned}
-\left\|(1+n^2)^{1/2}e_n\right\|_{\ell^2}
+\norm{(1+n^2)^{1/2}e_n}_{\ell^2}
 &\le
 C\left(
-\|A\|_2\|b\|_1
+\norm{A}_2\norm{b}_1
 +
-\|a\|_1\|B\|_2
+\norm{a}_1\norm{B}_2
 \right)
 <\infty,
 \end{aligned}
@@ -317,7 +317,7 @@ fg(x)
 $$
 with
 $$
-\sum_{n=0}^\infty(1+n^2)|r_n|^2<\infty.
+\sum_{n=0}^\infty(1+n^2)\abs{r_n}^2<\infty.
 $$
 
 
@@ -344,7 +344,7 @@ r_n=2e_n\quad(n\ge1).
 $$
 Step [](#s1-7){.pf-ref} gives
 $$
-\sum_{n\ge0}(1+n^2)|r_n|^2<\infty
+\sum_{n\ge0}(1+n^2)\abs{r_n}^2<\infty
 $$
 up to the harmless factor $4$ for $n\ge1$.
 

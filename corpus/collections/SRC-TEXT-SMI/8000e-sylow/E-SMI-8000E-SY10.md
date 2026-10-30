@@ -33,10 +33,10 @@ Prove that if $G$ is a finite group such that $p^s$ divides $\#G$, then $G$ has 
 ::: {.solution}
 Write
 $$
-|G|=p^r m,
+\cardinality{G}=p^r m,
 \qquad p\nmid m,
 $$
-so the hypothesis $p^s\mid |G|$ says $s\le r$.
+so the hypothesis $p^s\mid \cardinality{G}$ says $s\le r$.
 
 By the Sylow existence theorem, $G$ has a Sylow $p$-subgroup $P$ of order
 $p^r$. It is therefore enough to prove the following lemma.
@@ -65,7 +65,7 @@ $$
 has order $p$. Hence $P$ has a central subgroup
 $$
 C\le Z(P),
-\qquad |C|=p.
+\qquad \cardinality{C}=p.
 $$
 
 The quotient $P/C$ is a $p$-group of order $p^{r-1}$. Fix
@@ -88,7 +88,7 @@ H/C\cong\overline H.
 $$
 Therefore
 $$
-|H|=|C|\,|H/C|
+\cardinality{H}=\cardinality{C}\,\cardinality{H/C}
 =p\cdot p^{s-1}
 =p^s.
 $$
@@ -113,11 +113,11 @@ H\le P
 $$
 with
 $$
-|H|=p^s.
+\cardinality{H}=p^s.
 $$
 Because $P\le G$, the same $H$ is a subgroup of $G$. Hence
 $$
-\boxed{p^s\mid |G|\quad\Longrightarrow\quad
+\boxed{p^s\mid \cardinality{G}\quad\Longrightarrow\quad
 \text{$G$ has a subgroup of order $p^s$.}}
 $$
 

@@ -27,13 +27,13 @@ $$
 and as a result
 
 $$
-\limsup _ {n \to \infty} (n! | a _ {n} |) ^ {1 / n} \leq 2 \pi M.
+\limsup _ {n \to \infty} (n! \abs{ a _ {n} }) ^ {1 / n} \leq 2 \pi M.
 $$
 
-In the converse direction, let f be any power series $\textstyle f ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n }$ with lim $\begin{array} { r } { \operatorname* { s u p } _ { n \to \infty } ( n ! | a _ { n } | ) ^ { 1 / n } \leq 2 \pi M } \end{array}$ . Then, f is holomorphic in the complex plane, and for every $\epsilon > 0$ there exists $A _ { \epsilon } > 0$ such that
+In the converse direction, let f be any power series $\textstyle f ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n }$ with lim $\begin{array} { r } { \operatorname* { s u p } _ { n \to \infty } ( n ! \abs{ a _ { n } } ) ^ { 1 / n } \leq 2 \pi M } \end{array}$ . Then, f is holomorphic in the complex plane, and for every $\epsilon > 0$ there exists $A _ { \epsilon } > 0$ such that
 
 $$
-| f (z) | \leq A _ {\epsilon} e ^ {2 \pi (M + \epsilon) | z |}.
+\abs{ f (z) } \leq A _ {\epsilon} e ^ {2 \pi (M + \epsilon) \abs{ z }}.
 $$
 :::
 
@@ -53,17 +53,17 @@ a_n=\frac{(2\pi i)^n}{n!}
 $$
 Hence
 $$
-n!|a_n|
-\le (2\pi M)^n\|\widehat f\|_{L^1([-M,M])},
+n!\abs{a_n}
+\le (2\pi M)^n\norm{\widehat f}_{L^1([-M,M])},
 $$
 and therefore
 $$
-\limsup_{n\to\infty}(n!|a_n|)^{1/n}\le2\pi M.
+\limsup_{n\to\infty}(n!\abs{a_n})^{1/n}\le2\pi M.
 $$
 
 Conversely, suppose
 $$
-L:=\limsup_{n\to\infty}(n!|a_n|)^{1/n}\le2\pi M.
+L:=\limsup_{n\to\infty}(n!\abs{a_n})^{1/n}\le2\pi M.
 $$
 Fix $\varepsilon>0$ and put
 $$
@@ -71,18 +71,18 @@ R=2\pi(M+\varepsilon).
 $$
 Since $R>L$, there is $N$ such that for $n\ge N$,
 $$
-n!|a_n|\le R^n.
+n!\abs{a_n}\le R^n.
 $$
 After enlarging a constant $C_\varepsilon$ to absorb the finitely many indices $n<N$, we have for every $n\ge0$
 $$
-|a_n|\le C_\varepsilon\frac{R^n}{n!}.
+\abs{a_n}\le C_\varepsilon\frac{R^n}{n!}.
 $$
 Thus the power series converges absolutely for every $z\in\CC$ and
 $$
-|f(z)|
-\le C_\varepsilon\sum_{n=0}^{\infty}\frac{(R|z|)^n}{n!}
-=C_\varepsilon e^{R|z|}
-=C_\varepsilon e^{2\pi(M+\varepsilon)|z|}.
+\abs{f(z)}
+\le C_\varepsilon\sum_{n=0}^{\infty}\frac{(R\abs{z})^n}{n!}
+=C_\varepsilon e^{R\abs{z}}
+=C_\varepsilon e^{2\pi(M+\varepsilon)\abs{z}}.
 $$
 So $f$ is entire and has the stated exponential-type bound.
 :::

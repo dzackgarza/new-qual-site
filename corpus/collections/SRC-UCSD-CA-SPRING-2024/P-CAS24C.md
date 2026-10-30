@@ -17,7 +17,7 @@ Let $f : \DD \to \CC$ be holomorphic.
 Assume $\operatorname{Re} f(z) > 0$ for all $z \in \DD$.
 Show that
 $$
-|f'(0)| \le 2\operatorname{Re} f(0).
+\abs{f'(0)} \le 2\operatorname{Re} f(0).
 $$
 :::
 
@@ -30,7 +30,7 @@ maps the right half-plane to the unit disk and sends $a$ to $0$. Hence
 $$
 g=\Phi\circ f:\DD\to\DD
 $$
-is holomorphic and $g(0)=0$. Schwarz's lemma yields $|g'(0)|\le1$.
+is holomorphic and $g(0)=0$. Schwarz's lemma yields $\abs{g'(0)}\le1$.
 Since
 $$
 \Phi'(a)=\frac1{a+\overline a}
@@ -38,11 +38,11 @@ $$
 $$
 we get
 $$
-\frac{|f'(0)|}{2\operatorname{Re}f(0)}
-=|g'(0)|\le1.
+\frac{\abs{f'(0)}}{2\operatorname{Re}f(0)}
+=\abs{g'(0)}\le1.
 $$
 Therefore
 $$
-\boxed{|f'(0)|\le2\operatorname{Re}f(0).}
+\boxed{\abs{f'(0)}\le2\operatorname{Re}f(0).}
 $$
 :::

@@ -99,7 +99,7 @@ $$
 $$
 Also
 $$
-\left|\frac1{c_n}\sin(c_nx)\right|\le\frac1{c_n}\to0
+\abs{\frac1{c_n}\sin(c_nx)}\le\frac1{c_n}\to0
 $$
 uniformly in $x$. Hence
 $$

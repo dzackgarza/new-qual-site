@@ -34,7 +34,7 @@ $$
 I ( s ) - I ( 0 ) = \int _ { 0 } ^ { s } I ^ { \prime } ( r ) d r = - \int _ { 0 } ^ { s } { \frac { d r } { 1 + r ^ { 2 } } } = - \arctan ( s ) .
 $$
 
-Since $|I(s)| \le \int_0^\infty e^{-st}\,dt = 1/s$ for $s > 0$, $\lim_{s \to \infty} I(s) = 0$, so
+Since $\abs{I(s)} \le \int_0^\infty e^{-st}\,dt = 1/s$ for $s > 0$, $\lim_{s \to \infty} I(s) = 0$, so
 
 $$
 \int _ { 0 } ^ { \infty } { \frac { \sin ( t ) } { t } } d t = I ( 0 ) = \operatorname* { l i m } _ { s \to \infty } ( I ( s ) + \arctan ( s ) ) = { \frac { \pi } { 2 } } .

@@ -58,13 +58,13 @@ e_n\rightharpoonup0
 $$
 weakly: for every $x\in H$, Bessel's inequality implies
 $$
-\sum_n|\langle x,e_n\rangle|^2<\infty,
+\sum_n\abs{\langle x,e_n\rangle}^2<\infty,
 $$
 so $\langle x,e_n\rangle\to0$.
 
 However, for $m\ne n$,
 $$
-\|e_n-e_m\|^2=2.
+\norm{e_n-e_m}^2=2.
 $$
 Thus no subsequence is even norm-Cauchy, hence no subsequence converges in norm.
 
@@ -161,10 +161,10 @@ Part (d) is true.
 
 ::: pf-proof
 
-Using $|\sin t|\le t$ for $t\ge0$, for $n>2$ we obtain
+Using $\abs{\sin t}\le t$ for $t\ge0$, for $n>2$ we obtain
 $$
 \begin{aligned}
-\left|\int_0^\infty\frac{\sin(x/n)}{(1+x/n)^n}\,dx\right|
+\abs{\int_0^\infty\frac{\sin(x/n)}{(1+x/n)^n}\,dx}
 &\le \frac1n\int_0^\infty\frac{x}{(1+x/n)^n}\,dx\\
 &=n\int_0^\infty\frac{t}{(1+t)^n}\,dt.
 \end{aligned}
@@ -176,7 +176,7 @@ $$
 $$
 Therefore
 $$
-\left|\int_0^\infty\frac{\sin(x/n)}{(1+x/n)^n}\,dx\right|
+\abs{\int_0^\infty\frac{\sin(x/n)}{(1+x/n)^n}\,dx}
 \le\frac{n}{(n-1)(n-2)}\longrightarrow0.
 $$
 Hence the stated limit is $0$.

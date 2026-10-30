@@ -62,7 +62,7 @@ p^{-1}(U)=\coprod_{\alpha}V_\alpha
 $$
 is a disjoint union of open sets and every restriction
 $$
-p|_{V_\alpha}:V_\alpha\longrightarrow U
+p\restrict_{V_\alpha}:V_\alpha\longrightarrow U
 $$
 is a homeomorphism.
 

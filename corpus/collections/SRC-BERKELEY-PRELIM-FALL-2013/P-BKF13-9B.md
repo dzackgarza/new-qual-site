@@ -63,7 +63,7 @@ and $3$. Thus the number of elements lying in a proper subfield is
 $$
 3^2+3^3-3=9+27-3=33.
 $$
-Subtracting from $|\FF_{3^6}|=3^6=729$ gives
+Subtracting from $\cardinality{\FF_{3^6}}=3^6=729$ gives
 $$
 729-33=696.
 $$

@@ -120,7 +120,7 @@ $$
 $$
 Both ideals have norm $6$:
 $$
-|N(1+\sqrt{-5})|=1^2+5\cdot1^2=6,
+\abs{N(1+\sqrt{-5})}=1^2+5\cdot1^2=6,
 \qquad
 N(\mathfrak p_2\mathfrak p_3)=2\cdot3=6.
 $$

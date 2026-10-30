@@ -134,7 +134,7 @@ Since both are normal,
 $$
 [P,Q]\le P\cap Q.
 $$
-But $|P|$ and $|Q|$ are relatively prime, so
+But $\cardinality{P}$ and $\cardinality{Q}$ are relatively prime, so
 $$
 P\cap Q=1.
 $$
@@ -155,7 +155,7 @@ A finite nilpotent group is the internal direct product of its Sylow subgroups.
 
 Let
 $$
-|G|=\prod_{i=1}^r p_i^{e_i}
+\cardinality{G}=\prod_{i=1}^r p_i^{e_i}
 $$
 and choose $P_i\in\operatorname{Syl}_{p_i}(G)$.
 By step [](#s2){.pf-ref} every $P_i$ is normal, and by step [](#s3){.pf-ref} the $P_i$ commute pairwise.
@@ -167,9 +167,9 @@ $$
 is an internal direct product.
 Its order is
 $$
-\prod_{i=1}^r |P_i|
+\prod_{i=1}^r \cardinality{P_i}
   =\prod_{i=1}^r p_i^{e_i}
-  =|G|.
+  =\cardinality{G}.
 $$
 Hence
 $$
@@ -198,10 +198,10 @@ b=b_1\cdots b_r,
 \qquad
 a_i,b_i\in P_i.
 $$
-If $a_i\ne1$, then $p_i$ divides $|a|$; if $b_i\ne1$, then $p_i$ divides $|b|$.
+If $a_i\ne1$, then $p_i$ divides $\elementorder{a}$; if $b_i\ne1$, then $p_i$ divides $\elementorder{b}$.
 Since
 $$
-\gcd(|a|,|b|)=1,
+\gcd(\elementorder{a},\elementorder{b})=1,
 $$
 for each $i$ at least one of $a_i,b_i$ is trivial.
 Components in distinct Sylow factors commute by step [](#s3){.pf-ref}. Hence every component of $a$ commutes with every component of $b$, and therefore
@@ -230,7 +230,7 @@ $$
 the order of $x$ is a power of $p$ and the order of $y$ is a power of $q$.
 Thus
 $$
-\gcd(|x|,|y|)=1.
+\gcd(\elementorder{x},\elementorder{y})=1.
 $$
 By hypothesis, $xy=yx$.
 Therefore
@@ -244,13 +244,13 @@ $$
 
 ::: {.pf-step #s7}
 
-Under the hypothesis of step [](#s6){.pf-ref}, $G$ is the internal direct product of one Sylow subgroup for each prime divisor of $|G|$.
+Under the hypothesis of step [](#s6){.pf-ref}, $G$ is the internal direct product of one Sylow subgroup for each prime divisor of $\cardinality{G}$.
 
 ::: pf-proof
 
 Write
 $$
-|G|=\prod_{i=1}^r p_i^{e_i}
+\cardinality{G}=\prod_{i=1}^r p_i^{e_i}
 $$
 and choose $P_i\in\operatorname{Syl}_{p_i}(G)$.
 By step [](#s6){.pf-ref} the $P_i$ commute pairwise, so their product
@@ -273,7 +273,7 @@ Thus the kernel is trivial.
 
 Its image therefore has order
 $$
-\prod_{i=1}^r |P_i|=|G|,
+\prod_{i=1}^r \cardinality{P_i}=\cardinality{G},
 $$
 so the image is all of $G$.
 Hence

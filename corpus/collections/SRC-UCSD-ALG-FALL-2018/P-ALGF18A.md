@@ -31,7 +31,7 @@ audit:
 ::: {.problem}
 Suppose $p < q$ are two odd primes.
 Suppose $G$ is a group of order $2pq$.
-Prove that $G$ has normal subgroups $N_1$ and $N_2$ such that $|N_1| = pq$, $|N_2| = q$, and $N_2 \subseteq N_1$.
+Prove that $G$ has normal subgroups $N_1$ and $N_2$ such that $\cardinality{N_1} = pq$, $\cardinality{N_2} = q$, and $N_2 \subseteq N_1$.
 :::
 
 ::: {.solution}
@@ -70,7 +70,7 @@ If $n_q=1$, there are normal subgroups
 $$
 N_2\triangleleft N_1\triangleleft G
 $$
-with $|N_2|=q$ and $|N_1|=pq$.
+with $\cardinality{N_2}=q$ and $\cardinality{N_1}=pq$.
 
 ::: pf-proof
 Let $N_2$ be the unique Sylow $q$-subgroup. Then
@@ -88,7 +88,7 @@ N_1\triangleleft G,
 \qquad
 N_2\subseteq N_1,
 \qquad
-|N_1|=pq.
+\cardinality{N_1}=pq.
 $$
 :::
 
@@ -142,13 +142,13 @@ In the case $n_q=2p$, there are again normal subgroups
 $$
 N_2\triangleleft N_1\triangleleft G
 $$
-with $|N_2|=q$ and $|N_1|=pq$.
+with $\cardinality{N_2}=q$ and $\cardinality{N_1}=pq$.
 
 ::: pf-proof
 By step [](#case-nq-2p-p-normal){.pf-ref}, let $P\triangleleft G$ be the Sylow $p$-subgroup.
 Then
 $$
-|G/P|=2q.
+\cardinality{G/P}=2q.
 $$
 The number of Sylow $q$-subgroups of $G/P$ divides $2$ and is congruent to $1$ modulo $q$, hence equals $1$.
 Let $\overline N_1$ be this unique subgroup of order $q$, and let $N_1$ be its inverse image in $G$.
@@ -156,7 +156,7 @@ Then
 $$
 N_1\triangleleft G,
 \qquad
-|N_1|=pq.
+\cardinality{N_1}=pq.
 $$
 
 Inside the group $N_1$ of order $pq$, the number of Sylow $q$-subgroups divides $p$ and is congruent to $1$ modulo $q$.
@@ -169,7 +169,7 @@ N_2\triangleleft G.
 $$
 Finally,
 $$
-|N_2|=q,
+\cardinality{N_2}=q,
 \qquad
 N_2\subseteq N_1.
 $$

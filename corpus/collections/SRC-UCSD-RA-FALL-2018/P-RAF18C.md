@@ -40,23 +40,23 @@ Estimate the exceptional sets at a fixed threshold.
 
 Fix $\varepsilon>0$ and define
 $$
-E_n(\varepsilon):=\{x\in\RR:|f(n^2x)|>\varepsilon\}.
+E_n(\varepsilon):=\{x\in\RR:\abs{f(n^2x)}>\varepsilon\}.
 $$
 With the change of variables $u=n^2x$,
 $$
 m(E_n(\varepsilon))
-=\frac1{n^2}m\bigl(\{|f|>\varepsilon\}\bigr).
+=\frac1{n^2}m\bigl(\{\abs{f}>\varepsilon\}\bigr).
 $$
 Since $f\in L^1$, Chebyshev's inequality gives
 $$
-m\bigl(\{|f|>\varepsilon\}\bigr)
-\le\frac{\|f\|_1}{\varepsilon}<\infty.
+m\bigl(\{\abs{f}>\varepsilon\}\bigr)
+\le\frac{\norm{f}_1}{\varepsilon}<\infty.
 $$
 Therefore
 $$
 \sum_{n=1}^\infty m(E_n(\varepsilon))
 \le
-m\bigl(\{|f|>\varepsilon\}\bigr)
+m\bigl(\{\abs{f}>\varepsilon\}\bigr)
 \sum_{n=1}^\infty\frac1{n^2}
 <\infty.
 $$
@@ -77,7 +77,7 @@ E_n(1/j).
 $$
 Intersecting these full-measure sets over $j\ge1$, we obtain a full-measure set of points $x$ such that for every $j$ there is $N_j(x)$ with
 $$
-|f(n^2x)|\le\frac1j
+\abs{f(n^2x)}\le\frac1j
 $$
 for all $n\ge N_j(x)$.
 

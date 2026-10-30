@@ -39,7 +39,7 @@ If $e^z=2i$, then $e^x=2$.
 ::: pf-proof
 Taking absolute values gives
 $$
-e^x=|e^z|=|2i|=2.
+e^x=\abs{e^z}=\abs{2i}=2.
 $$
 Hence $x=\ln2$.
 :::

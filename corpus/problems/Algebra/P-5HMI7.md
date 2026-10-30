@@ -51,11 +51,11 @@ $$
 
 ::: pf-proof
 
-If $H\le S_4$ is transitive, orbit-stabilizer implies $4\mid |H|$. Hence
+If $H\le S_4$ is transitive, orbit-stabilizer implies $4\mid \cardinality{H}$. Hence
 $$
-|H|\in\{4,8,12,24\}.
+\cardinality{H}\in\{4,8,12,24\}.
 $$
-If $|H|=24$, then $H=S_4$. If $|H|=12$, then $H$ has index $2$, so $H=A_4$. If $|H|=8$, then $H$ is a Sylow $2$-subgroup of $S_4$, hence isomorphic to the dihedral group $D_4$ of order $8$. Finally, a transitive subgroup of order $4$ is either cyclic $C_4$ or the transitive Klein four group $V_4$.
+If $\cardinality{H}=24$, then $H=S_4$. If $\cardinality{H}=12$, then $H$ has index $2$, so $H=A_4$. If $\cardinality{H}=8$, then $H$ is a Sylow $2$-subgroup of $S_4$, hence isomorphic to the dihedral group $D_4$ of order $8$. Finally, a transitive subgroup of order $4$ is either cyclic $C_4$ or the transitive Klein four group $V_4$.
 
 :::
 

@@ -43,7 +43,7 @@ Since $F/\FF_{p^n}$ is finite, $F$ is a finite field. Write
 $$
 [F:\FF_{p^n}]=d.
 $$
-Then $|F|=p^{nd}$.
+Then $\cardinality{F}=p^{nd}$.
 
 ::: pf-proof
 
@@ -76,7 +76,7 @@ $$
 
 The element $\sigma^n$ has order $d$ inside the cyclic group $\langle\sigma\rangle$ of order $nd$. Thus $\langle\sigma^n\rangle$ has $d$ elements and, by step [](#s2){.pf-ref}, is contained in $\operatorname{Gal}(F/\FF_{p^n})$. But
 $$
-|\operatorname{Gal}(F/\FF_{p^n})|=[F:\FF_{p^n}]=d,
+\cardinality{\operatorname{Gal}(F/\FF_{p^n})}=[F:\FF_{p^n}]=d,
 $$
 since finite-field extensions are Galois. Hence the two groups are equal.
 

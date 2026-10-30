@@ -22,7 +22,7 @@ Assume
 $$
 \lim_{y\to\infty} y f(iy)=i,
 \qquad
-|f(z)|\le \frac{1}{\operatorname{Im}z}
+\abs{f(z)}\le \frac{1}{\operatorname{Im}z}
 \quad(z\in\halfplane).
 $$
 For $\varepsilon>0$, define
@@ -72,7 +72,7 @@ Because $f$ is holomorphic and maps $\halfplane$ into itself, its imaginary part
 
 The hypothesis
 $$
-|f(w)|
+\abs{f(w)}
 \le
 \frac1{\operatorname{Im}w}
 $$
@@ -81,7 +81,7 @@ $$
 0<
 u_\varepsilon(z)
 \le
-|f(z+i\varepsilon)|
+\abs{f(z+i\varepsilon)}
 \le
 \frac1{\operatorname{Im}z+\varepsilon}
 \le
@@ -192,14 +192,14 @@ Then $F_\varepsilon$ is holomorphic on $\halfplane$.
 
 By step [](#s1-3){.pf-ref}, $g_\varepsilon\in L^1(\RR)$. If $z=x+iy\in\halfplane$, then
 $$
-|t-z|\ge y,
+\abs{t-z}\ge y,
 $$
 so
 $$
 \int_{\RR}
-\left|
+\abs{
 \frac{g_\varepsilon(t)}{t-z}
-\right|dt
+}dt
 \le
 \frac1y
 \int_{\RR}g_\varepsilon(t)\,dt
@@ -290,10 +290,10 @@ f(i(y+\varepsilon))\longrightarrow0
 $$
 By step [](#s1-3){.pf-ref},
 $$
-|F_\varepsilon(iy)|
+\abs{F_\varepsilon(iy)}
 \le
 \int_{\RR}
-\frac{g_\varepsilon(t)}{|t-iy|}\,dt
+\frac{g_\varepsilon(t)}{\abs{t-iy}}\,dt
 \le
 \frac1y
 \int_{\RR}g_\varepsilon(t)\,dt
@@ -383,7 +383,7 @@ For fixed $z\in\halfplane$, the function
 $$
 t\longmapsto\frac1{t-z}
 $$
-is continuous on $\RR$ and tends to $0$ as $|t|\to\infty$, so it belongs to $C_0(\RR)$. Step [](#s1-9){.pf-ref} therefore gives
+is continuous on $\RR$ and tends to $0$ as $\abs{t}\to\infty$, so it belongs to $C_0(\RR)$. Step [](#s1-9){.pf-ref} therefore gives
 $$
 \int_{\RR}
 \frac{d\mu_n(t)}{t-z}
@@ -428,9 +428,9 @@ i
 $$
 and
 $$
-\left|
+\abs{
 \frac{y}{t-iy}
-\right|
+}
 \le1.
 $$
 Since $\mu$ is finite, dominated convergence gives

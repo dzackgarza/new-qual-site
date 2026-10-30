@@ -13,7 +13,7 @@ audit:
 ::: {.problem}
 1. Prove that every second-countable topological space is separable.
 2. Prove that the Sorgenfrey line $\RR_\ell$ is separable but not second countable.
-3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\RR$, where $\mathfrak c=|\RR|$.
+3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\RR$, where $\mathfrak c=\cardinality{\RR}$.
 :::
 
 ::: {.solution}
@@ -287,7 +287,7 @@ X.
 $$
 If
 $$
-f|_D=g|_D,
+f\restrict_D=g\restrict_D,
 $$
 then
 $$
@@ -340,7 +340,7 @@ C(X,\RR)
 $$
 by
 $$
-R(f)=f|_D.
+R(f)=f\restrict_D.
 $$
 Step [](#s1-4){.pf-ref} says that
 $$
@@ -364,7 +364,7 @@ is injective.
 
 One has
 $$
-|\RR^D|
+\cardinality{\RR^D}
 \le
 \mathfrak c.
 $$
@@ -378,7 +378,7 @@ D
 $$
 is finite, then
 $$
-|\RR^D|
+\cardinality{\RR^D}
 =
 \mathfrak c.
 $$
@@ -388,7 +388,7 @@ D
 $$
 is countably infinite, then
 $$
-|\RR^D|
+\cardinality{\RR^D}
 =
 \mathfrak c^{\aleph_0}.
 $$
@@ -420,7 +420,7 @@ $$
 Therefore
 $$
 \boxed{
-|C(X,\RR)|
+\cardinality{C(X,\RR)}
 \le
 \mathfrak c}
 $$

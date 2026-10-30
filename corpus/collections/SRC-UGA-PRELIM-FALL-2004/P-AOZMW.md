@@ -28,16 +28,16 @@ Consider
 $$
 \sum_{n=1}^\infty \frac{x^n}{\sqrt{n^2+1}}.
 $$
-If $|x|<1$, then
+If $\abs{x}<1$, then
 $$
-0\le \frac{|x|^n}{\sqrt{n^2+1}}\le |x|^n,
+0\le \frac{\abs{x}^n}{\sqrt{n^2+1}}\le \abs{x}^n,
 $$
 so the series converges absolutely by comparison with a geometric series.
 
-If $|x|>1$, then
+If $\abs{x}>1$, then
 $$
-\frac{|x|^n}{\sqrt{n^2+1}}
-\sim \frac{|x|^n}{n},
+\frac{\abs{x}^n}{\sqrt{n^2+1}}
+\sim \frac{\abs{x}^n}{n},
 $$
 which does not tend to $0$; hence the series diverges.
 

@@ -26,11 +26,11 @@ $$
 Because $\operatorname{Re}f>0$, this maps $\DD$ holomorphically into
 $\DD$, and $\phi_f(0)=0$. Schwarz's lemma gives
 $$
-|\phi_f(z)|\le |z|.
+\abs{\phi_f(z)}\le \abs{z}.
 $$
-Hence, for $|z|\le r<1$,
+Hence, for $\abs{z}\le r<1$,
 $$
-|f(z)|=\left|\frac{1+\phi_f(z)}{1-\phi_f(z)}\right|
+\abs{f(z)}=\abs{\frac{1+\phi_f(z)}{1-\phi_f(z)}}
 \le \frac{1+r}{1-r}.
 $$
 Thus $\mathcal F$ is locally uniformly bounded. Montel's theorem implies that

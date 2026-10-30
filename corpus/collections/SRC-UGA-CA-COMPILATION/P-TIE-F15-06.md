@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-06
 kind: problem
-title: Liouville's theorem via $\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz$
+title: Liouville's theorem via $\int_{\abs{z}=R}\frac{f(z)}{(z-a)(z-b)}\,dz$
 classification:
   areas:
   - complex-analysis
@@ -21,7 +21,7 @@ Let $f ( z )$ be bounded and analytic in C. Let $a \neq b$ be any fixed complex 
 Show that the following limit exists
 
 $$
-\operatorname* { l i m } _ { R \to \infty } \int _ { | z | = R } { \frac { f ( z ) } { ( z - a ) ( z - b ) } } d z .
+\operatorname* { l i m } _ { R \to \infty } \int _ { \abs{ z } = R } { \frac { f ( z ) } { ( z - a ) ( z - b ) } } d z .
 $$
 
 Use this to show that $f ( z )$ must be a constant (Liouville’s theorem).

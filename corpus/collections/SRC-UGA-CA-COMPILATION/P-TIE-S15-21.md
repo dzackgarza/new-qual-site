@@ -19,15 +19,15 @@ audit:
 ::: {.problem}
 Find a conformal map
 
-1. from $\{ z : | z - 1 / 2 | > 1 / 2 , { \mathrm { R e } } ( z ) > 0 \}$ to H
+1. from $\{ z : \abs{ z - 1 / 2 } > 1 / 2 , { \mathrm { R e } } ( z ) > 0 \}$ to H
 
-2. from $\left\{ z : | z - 1 / 2 | > 1 / 2 , | z | < 1 \right\}$ to D
+2. from $\left\{ z : \abs{ z - 1 / 2 } > 1 / 2 , \abs{ z } < 1 \right\}$ to D
 
-3. from the intersection of the disk $| z + i | < { \sqrt { 2 } }$ with H to D.
+3. from the intersection of the disk $\abs{ z + i } < { \sqrt { 2 } }$ with H to D.
 
 4. from $\DD \backslash [ a , 1 )$ to ${ \DD } \backslash [ 0 , 1 ) ~ ( 0 < a < 1 )$ . Short solution possible using Blaschke factor
 
-5. from $\{ z : | z | < 1 , \mathrm { R e } ( z ) > 0 \} \backslash ( 0 , 1 / 2 ]$ to H.
+5. from $\{ z : \abs{ z } < 1 , \mathrm { R e } ( z ) > 0 \} \backslash ( 0 , 1 / 2 ]$ to H.
 :::
 
 ::: {.solution}

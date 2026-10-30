@@ -41,13 +41,13 @@ Then $z_0 \in L_f$.
 
 (3) Let $H$ be a real Hilbert space.
 Let $z_k \in H$ ($k = 1, 2, \ldots$) and $z \in H$.
-If $z_k \to z$ weakly in $H$ and $\|z_k\| = \|z\|$, then $\|z_k - z\| \to 0$.
+If $z_k \to z$ weakly in $H$ and $\norm{z_k} = \norm{z}$, then $\norm{z_k - z} \to 0$.
 
 (4) Let $\mathcal{S}$ denote the Schwartz space on $\RR^n$.
 Let $f, g \in \mathcal{S}$.
 If $f * g = 0$ in $\RR^n$ then either $f = 0$ in $\RR^n$ or $g = 0$ in $\RR^n$.
 
-(5) Let $f(x) = |x|$ ($x \in \RR$) and identify $f$ as a distribution on $\RR$.
+(5) Let $f(x) = \abs{x}$ ($x \in \RR$) and identify $f$ as a distribution on $\RR$.
 Then the second-order distributional derivative $f''$ is the zero distribution on $\mathcal{D}(\RR)$.
 :::
 
@@ -87,11 +87,11 @@ Statement (2) is true.
 
 Continuity of $f$ at $z_0$ means that for every $\varepsilon>0$ there is $r_0>0$ such that
 $$
-|f(y)-f(z_0)|<\varepsilon
+\abs{f(y)-f(z_0)}<\varepsilon
 $$
-whenever $|y-z_0|<r_0$. Hence for $0<r<r_0$,
+whenever $\norm{y-z_0}<r_0$. Hence for $0<r<r_0$,
 $$
-\frac1{|B_r|}\int_{B_r(z_0)}|f(y)-f(z_0)|\,dy
+\frac1{\setmeasure{B_r}}\int_{B_r(z_0)}\norm{f(y)-f(z_0)}\,dy
 \le\varepsilon.
 $$
 Letting $r\downarrow0$ gives the Lebesgue-point condition. Thus
@@ -111,14 +111,14 @@ Statement (3) is true.
 
 Weak convergence gives
 $$
-\langle z_k,z\rangle\to\|z\|^2.
+\langle z_k,z\rangle\to\norm{z}^2.
 $$
-Since $\|z_k\|=\|z\|$ for every $k$,
+Since $\norm{z_k}=\norm{z}$ for every $k$,
 $$
 \begin{aligned}
-\|z_k-z\|^2
-&=\|z_k\|^2+\|z\|^2-2\langle z_k,z\rangle\\
-&\longrightarrow2\|z\|^2-2\|z\|^2=0.
+\norm{z_k-z}^2
+&=\norm{z_k}^2+\norm{z}^2-2\langle z_k,z\rangle\\
+&\longrightarrow2\norm{z}^2-2\norm{z}^2=0.
 \end{aligned}
 $$
 Hence $z_k\to z$ in norm.
@@ -165,7 +165,7 @@ Statement (5) is false.
 
 ::: pf-proof
 
-For $f(x)=|x|$, the first distributional derivative is
+For $f(x)=\abs{x}$, the first distributional derivative is
 $$
 Df=\operatorname{sgn}(x).
 $$
@@ -181,7 +181,7 @@ $$
 $$
 Thus
 $$
-\boxed{D^2|x|=2\delta_0,}
+\boxed{D^2\abs{x}=2\delta_0,}
 $$
 not the zero distribution.
 

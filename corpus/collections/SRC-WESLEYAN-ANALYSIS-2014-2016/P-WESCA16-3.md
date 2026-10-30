@@ -20,7 +20,7 @@ Compute:
 
 (a) $\displaystyle\int_\gamma e^{2z^2}\,dz$, where $\gamma$ is the counterclockwise square of side length $2$ centered at $0$;
 
-(b) $\displaystyle\int_{|z|=5}\left(\frac1z-\frac1{z^2}\right)^3\,dz$;
+(b) $\displaystyle\int_{\abs{z}=5}\left(\frac1z-\frac1{z^2}\right)^3\,dz$;
 
 (c) $\displaystyle\int_{-\infty}^{\infty}\frac{x+1}{(x^2+1)^2}\,dx$.
 :::
@@ -78,7 +78,7 @@ $$
 The integral in part (b) is
 $$
 \boxed{
-\int_{|z|=5}
+\int_{\abs{z}=5}
 \left(\frac1z-\frac1{z^2}\right)^3\,dz=0}.
 $$
 

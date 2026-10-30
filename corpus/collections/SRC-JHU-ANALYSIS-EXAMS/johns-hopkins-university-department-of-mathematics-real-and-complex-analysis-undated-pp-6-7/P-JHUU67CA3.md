@@ -25,12 +25,12 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is holomorphic in an annulus $r < |z| < R$, and there exists a sequence of holomorphic polynomials $p_n$ converging to $f$ uniformly on compact subsets of the annulus.
-Show that $f$ can be extended to the disc $\{|z| < R\}$ as a holomorphic function.
+Suppose $f$ is holomorphic in an annulus $r < \abs{z} < R$, and there exists a sequence of holomorphic polynomials $p_n$ converging to $f$ uniformly on compact subsets of the annulus.
+Show that $f$ can be extended to the disc $\{\abs{z} < R\}$ as a holomorphic function.
 :::
 
 ::: {.solution}
-Let $D_R=\{z:|z|<R\}$ and $A=\{z:r<|z|<R\}$.
+Let $D_R=\{z:\abs{z}<R\}$ and $A=\{z:r<\abs{z}<R\}$.
 
 ::: pf
 
@@ -43,17 +43,17 @@ The sequence $(p_n)$ is uniformly Cauchy on each compact subset of $D_R$.
 Fix a nonempty compact set $K\subset D_R$. Choose a radius
 $\rho$ satisfying
 $$
-\max\{r,\max_{z\in K}|z|\}<\rho<R.
+\max\{r,\max_{z\in K}\abs{z}\}<\rho<R.
 $$
-The circle $|z|=\rho$ is a compact subset of $A$.
+The circle $\abs{z}=\rho$ is a compact subset of $A$.
 Uniform convergence to $f$ there implies that $(p_n)$
 is uniformly Cauchy on that circle. Each difference
 $p_n-p_m$ is holomorphic on a neighborhood of the closed
-disk $|z|\leq\rho$. The maximum modulus principle gives
+disk $\abs{z}\leq\rho$. The maximum modulus principle gives
 $$
-\sup_{z\in K}|p_n(z)-p_m(z)|
-\leq\max_{|z|\leq\rho}|p_n(z)-p_m(z)|
-=\max_{|z|=\rho}|p_n(z)-p_m(z)|\longrightarrow0
+\sup_{z\in K}\abs{p_n(z)-p_m(z)}
+\leq\max_{\abs{z}\leq\rho}\abs{p_n(z)-p_m(z)}
+=\max_{\abs{z}=\rho}\abs{p_n(z)-p_m(z)}\longrightarrow0
 $$
 as $n,m\to\infty$ [@SS03]. The assertion for the empty
 compact set requires no estimate.

@@ -167,14 +167,14 @@ subtract the two averages.
 
 Therefore
 $$
-\left|
+\abs{
 \frac{F(x+h)-F(x)}{h}
 -
 f(x)
-\right|
+}
 \le
 \sup_{t\text{ between }x\text{ and }x+h}
-|f(t)-f(x)|.
+\abs{f(t)-f(x)}.
 $$
 
 
@@ -183,20 +183,20 @@ $$
 Using step [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
-\left|
+\abs{
 \frac1h
 \int_x^{x+h}
 \bigl(f(t)-f(x)\bigr)
 \,dt
-\right|
+}
 &\le
-\frac1{|h|}
+\frac1{\abs{h}}
 \int_{\min(x,x+h)}^{\max(x,x+h)}
-|f(t)-f(x)|
+\abs{f(t)-f(x)}
 \,dt\\
 &\le
 \sup_{t\text{ between }x\text{ and }x+h}
-|f(t)-f(x)|.
+\abs{f(t)-f(x)}.
 \end{aligned}
 $$
 
@@ -220,7 +220,7 @@ $$
 
 Continuity of $f$ at $x$ implies
 $$
-|f(t)-f(x)|
+\abs{f(t)-f(x)}
 \to
 0
 $$

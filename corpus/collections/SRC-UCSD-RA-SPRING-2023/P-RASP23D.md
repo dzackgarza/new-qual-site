@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Define the distance function between $(x_1, y_1)$ and $(x_2, y_2)$ in the plane to be
 $$
-d = \begin{cases} |y_1 - y_2| & \text{if } x_1 = x_2, \\ 1 + |y_1 - y_2| & \text{if } x_1 \neq x_2. \end{cases}
+d = \begin{cases} \abs{y_1 - y_2} & \text{if } x_1 = x_2, \\ 1 + \abs{y_1 - y_2} & \text{if } x_1 \neq x_2. \end{cases}
 $$
 
 (i) Prove that this is indeed a metric.
@@ -56,7 +56,7 @@ Verify the metric axioms.
 Write a point as $(x,y)$. Then the proposed distance is
 $$
 d((x_1,y_1),(x_2,y_2))
-=d_{\mathrm{disc}}(x_1,x_2)+|y_1-y_2|,
+=d_{\mathrm{disc}}(x_1,x_2)+\abs{y_1-y_2},
 $$
 where
 $$

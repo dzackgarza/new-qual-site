@@ -24,7 +24,7 @@ No. For infinite groups, equality of characters need not imply that two finite-d
 
 Take $d=2$. Since
 $$
-\ell(g)=\log|\det g|
+\ell(g)=\log\abs{\det g}
 $$
 is a homomorphism from $\mathrm{GL}_2(\RR)$ to the additive group $(\RR,+)$, define
 $$

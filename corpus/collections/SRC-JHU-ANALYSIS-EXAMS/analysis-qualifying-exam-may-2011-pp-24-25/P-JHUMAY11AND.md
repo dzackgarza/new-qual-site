@@ -29,7 +29,7 @@ audit:
 4. Suppose that $u : \CC \to \RR$ is a harmonic function such that
 
 $$
-u ( z ) \leq 1 0 \log ( | z | + 2 ) ,
+u ( z ) \leq 1 0 \log ( \abs{ z } + 2 ) ,
 $$
 
 for all $z \in \CC$ . Prove that u is constant.
@@ -72,12 +72,12 @@ The exponential of $H$ is a polynomial.
 
 The entire function $F=e^H$ satisfies
 $$
-|F(z)|=e^{u(z)}\leq e^{10\log(|z|+2)}=(|z|+2)^{10}.
+\abs{F(z)}=e^{u(z)}\leq e^{10\log(\abs{z}+2)}=(\abs{z}+2)^{10}.
 $$
 Write its entire Taylor expansion as $F(z)=\sum_{k\geq0}a_kz^k$.
-Cauchy's coefficient estimate on $|z|=R$ gives
+Cauchy's coefficient estimate on $\abs{z}=R$ gives
 $$
-|a_k|\leq\frac{(R+2)^{10}}{R^k}
+\abs{a_k}\leq\frac{(R+2)^{10}}{R^k}
 $$
 [@SS03]. For every integer $k>10$, the right-hand side
 tends to zero as $R\to\infty$. Hence $a_k=0$ for all

@@ -25,7 +25,7 @@ b. Define *maximal ideal*, give an example of a nontrivial maximal ideal in $\ZZ
 
 - $\mfp$ is **prime** iff $xy\in \mfp \implies x\in \mfp$ or $y\in \mfp$.
 
-  - An ideal $I\normal \ZZ$ that is not prime: $I \definedas 8\ZZ$.
+  - An ideal $I\normal \ZZ$ that is not prime: $I \coloneqq 8\ZZ$.
 
   - For example, $2\cdot 4\in 8\ZZ$ but neither 2 nor 4 is a multiple of 8.
 

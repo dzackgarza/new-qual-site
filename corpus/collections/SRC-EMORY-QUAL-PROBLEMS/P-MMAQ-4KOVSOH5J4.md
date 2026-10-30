@@ -27,7 +27,7 @@ Let $G$ be a finite group.
 
 1. Prove that if $H < G$ is a proper subgroup, then $G$ is not the union of conjugates of $H$.
 
-2. Suppose that $G$ acts transitively on a set $X$ with $|X| > 1$.
+2. Suppose that $G$ acts transitively on a set $X$ with $\cardinality{X} > 1$.
    Prove that there exists an element of $G$ with no fixed points in $X$.
 :::
 
@@ -50,19 +50,19 @@ The conjugates of $H$ are indexed by $G/N_G(H)$, and $N_G(H) \supseteq H$, so $[
 :::
 
 ::: pf-step
-Each conjugate has $|H|$ elements, and all contain the identity.
+Each conjugate has $\cardinality{H}$ elements, and all contain the identity.
 
 ::: pf-proof
-$|gHg^{-1}| = |H|$, and $1 \in gHg^{-1}$ for all $g$.
+$\cardinality{gHg^{-1}} = \cardinality{H}$, and $1 \in gHg^{-1}$ for all $g$.
 :::
 
 :::
 
 ::: pf-step
-Hence $\abs{\bigcup_g gHg^{-1}} \le 1 + [G:H](|H| - 1) = 1 + |G| - [G:H] < |G|$.
+Hence $\abs{\bigcup_g gHg^{-1}} \le 1 + [G:H](\cardinality{H} - 1) = 1 + \cardinality{G} - [G:H] < \cardinality{G}$.
 
 ::: pf-proof
-The union has at most $1 + (\text{number of conjugates})(|H| - 1)$ elements (counting the identity once), and $[G:H] > 1$ since $H$ is proper.
+The union has at most $1 + (\text{number of conjugates})(\cardinality{H} - 1)$ elements (counting the identity once), and $[G:H] > 1$ since $H$ is proper.
 :::
 
 :::
@@ -71,7 +71,7 @@ The union has at most $1 + (\text{number of conjugates})(|H| - 1)$ elements (cou
 Hence the union is a proper subset of $G$.
 
 ::: pf-proof
-It has fewer than $|G|$ elements.
+It has fewer than $\cardinality{G}$ elements.
 :::
 
 :::
@@ -81,7 +81,7 @@ It has fewer than $|G|$ elements.
 :::
 
 ::: {.pf-step #fixed-point-free-element-exists}
-(2) A transitive action on $|X| > 1$ has a fixed-point-free element.
+(2) A transitive action on $\cardinality{X} > 1$ has a fixed-point-free element.
 
 ::: pf-proof
 
@@ -113,10 +113,10 @@ $G_{gx} = g G_x g^{-1}$.
 :::
 
 ::: pf-step
-Hence $G$ is a union of conjugates of the proper subgroup $G_x$ (proper since $|X| > 1$ and the action is transitive).
+Hence $G$ is a union of conjugates of the proper subgroup $G_x$ (proper since $\cardinality{X} > 1$ and the action is transitive).
 
 ::: pf-proof
-$G_x$ is proper because the orbit of $x$ is all of $X$ with $|X| > 1$, so $G_x \neq G$.
+$G_x$ is proper because the orbit of $x$ is all of $X$ with $\cardinality{X} > 1$, so $G_x \neq G$.
 :::
 
 :::

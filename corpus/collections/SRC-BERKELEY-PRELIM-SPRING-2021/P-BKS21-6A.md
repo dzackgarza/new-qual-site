@@ -41,7 +41,7 @@ Write $A=(a_{ij})$.
 
 For every row index $i$,
 $$
-|a_{ii}|>\sum_{j\neq i}|a_{ij}|.
+\abs{a_{ii}}>\sum_{j\neq i}\abs{a_{ij}}.
 $$
 
 
@@ -61,10 +61,10 @@ a_{ii}<-\sum_{j\neq i}a_{ij}<0.
 $$
 Therefore
 $$
-|a_{ii}|=-a_{ii}>
+\abs{a_{ii}}=-a_{ii}>
 \sum_{j\neq i}a_{ij}
 =
-\sum_{j\neq i}|a_{ij}|.
+\sum_{j\neq i}\abs{a_{ij}}.
 $$
 
 :::
@@ -84,27 +84,27 @@ x=(x_1,\ldots,x_n)^T.
 $$
 Choose $k$ such that
 $$
-|x_k|=\max_{1\leq j\leq n}|x_j|.
+\abs{x_k}=\max_{1\leq j\leq n}\abs{x_j}.
 $$
-Then $|x_k|>0$. The $k$-th row of $Ax=0$ gives
+Then $\abs{x_k}>0$. The $k$-th row of $Ax=0$ gives
 $$
 a_{kk}x_k=-\sum_{j\neq k}a_{kj}x_j.
 $$
-Taking absolute values and using maximality of $|x_k|$,
+Taking absolute values and using maximality of $\abs{x_k}$,
 $$
 \begin{aligned}
-|a_{kk}|\,|x_k|
+\abs{a_{kk}}\,\abs{x_k}
 &\leq
-\sum_{j\neq k}|a_{kj}|\,|x_j|\\
+\sum_{j\neq k}\abs{a_{kj}}\,\abs{x_j}\\
 &\leq
-\left(\sum_{j\neq k}|a_{kj}|\right)|x_k|.
+\left(\sum_{j\neq k}\abs{a_{kj}}\right)\abs{x_k}.
 \end{aligned}
 $$
-Since $|x_k|>0$, cancellation gives
+Since $\abs{x_k}>0$, cancellation gives
 $$
-|a_{kk}|
+\abs{a_{kk}}
 \leq
-\sum_{j\neq k}|a_{kj}|,
+\sum_{j\neq k}\abs{a_{kj}},
 $$
 contradicting step [](#s1-1){.pf-ref}.
 

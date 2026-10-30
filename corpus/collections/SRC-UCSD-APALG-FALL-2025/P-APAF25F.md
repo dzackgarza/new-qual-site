@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF25F
 kind: problem
-title: Character bound $|\chi(g)|\leq\dim V$ is sharp
+title: Character bound $\abs{\chi(g)}\leq\dim V$ is sharp
 classification:
   areas:
   - applied-algebra
@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $(V,\varphi)$ be a finite-dimensional complex representation of a finite group $G$, and let $\chi(g)=\operatorname{Tr}\varphi(g)$ be its character.
-Prove that $|\chi(g)|\leq\dim V$ for all $g\in G$, and that the bound is sharp.
+Prove that $\abs{\chi(g)}\leq\dim V$ for all $g\in G$, and that the bound is sharp.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ Because $G$ is finite, $g$ has finite order, say $g^m=e$. Hence
 $$
 \varphi(g)^m=\varphi(g^m)=I.
 $$
-If $\lambda$ is an eigenvalue of $\varphi(g)$, then $\lambda^m=1$, so $|\lambda|=1$.
+If $\lambda$ is an eigenvalue of $\varphi(g)$, then $\lambda^m=1$, so $\abs{\lambda}=1$.
 :::
 
 :::
@@ -40,7 +40,7 @@ If $\lambda$ is an eigenvalue of $\varphi(g)$, then $\lambda^m=1$, so $|\lambda|
 ::: pf-step
 For every $g\in G$,
 $$
-|\chi(g)|\le d.
+\abs{\chi(g)}\le d.
 $$
 
 ::: pf-proof
@@ -48,10 +48,10 @@ Over $\CC$, the characteristic polynomial of $\varphi(g)$ splits. Let its eigenv
 $$
 \chi(g)=\operatorname{Tr}\varphi(g)=\sum_{j=1}^d\lambda_j.
 $$
-By step [](#eigenvalues-modulus-one){.pf-ref}, $|\lambda_j|=1$ for every $j$. Therefore the triangle inequality gives
+By step [](#eigenvalues-modulus-one){.pf-ref}, $\abs{\lambda_j}=1$ for every $j$. Therefore the triangle inequality gives
 $$
-|\chi(g)|
-\le \sum_{j=1}^d|\lambda_j|
+\abs{\chi(g)}
+\le \sum_{j=1}^d\abs{\lambda_j}
 =d.
 $$
 :::
@@ -72,7 +72,7 @@ $$
 $$
 Hence
 $$
-|\chi(e)|=d=\dim V,
+\abs{\chi(e)}=d=\dim V,
 $$
 showing that equality can occur.
 :::

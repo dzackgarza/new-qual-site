@@ -120,20 +120,20 @@ The number of distinct conjugate subgroups of $K$ in $G$ is $[G : N_G(K)] \le [G
 
 ::: pf-step
 
-Each conjugate $g K g^{-1}$ contains $|K|$ elements and shares the identity element $e$ with all other conjugates.
+Each conjugate $g K g^{-1}$ contains $\cardinality{K}$ elements and shares the identity element $e$ with all other conjugates.
 
 :::
 
 ::: pf-step
 
 The union of all conjugates contains at most
-    $$\left| \bigcup_{g \in G} g K g^{-1} \right| \le 1 + [G : N_G(K)] (|K| - 1) \le 1 + [G : K] (|K| - 1) = 1 + |G| - [G : K].$$
+    $$\cardinality{ \bigcup_{g \in G} g K g^{-1} } \le 1 + [G : N_G(K)] (\cardinality{K} - 1) \le 1 + [G : K] (\cardinality{K} - 1) = 1 + \cardinality{G} - [G : K].$$
 
 :::
 
 ::: pf-step
 
-Since $[G : K] \ge 2$, $1 + |G| - [G : K] \le |G| - 1 < |G|$.
+Since $[G : K] \ge 2$, $1 + \cardinality{G} - [G : K] \le \cardinality{G} - 1 < \cardinality{G}$.
 
 :::
 

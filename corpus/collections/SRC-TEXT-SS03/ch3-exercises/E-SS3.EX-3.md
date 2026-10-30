@@ -28,7 +28,7 @@ Consider
 $$
 F(z)=\frac{e^{iz}}{z^2+a^2},\qquad a>0,
 $$
-and integrate over the upper semicircle of radius $R>a$. Since $|e^{iz}|=e^{-\Im z}\le1$ there and $|z^2+a^2|\ge R^2-a^2$, the arc integral tends to $0$ as $R\to\infty$.
+and integrate over the upper semicircle of radius $R>a$. Since $\abs{e^{iz}}=e^{-\Im z}\le1$ there and $\abs{z^2+a^2}\ge R^2-a^2$, the arc integral tends to $0$ as $R\to\infty$.
 
 The only pole in the upper half-plane is the simple pole $z=ia$, with residue
 $$

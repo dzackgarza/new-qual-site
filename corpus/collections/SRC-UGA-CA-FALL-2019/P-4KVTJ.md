@@ -26,7 +26,7 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Compute $F(z)$ for $z \in \Omega_1$ and $z \in \Omega_2$ by applying Cauchy's theorem on the annular domain between $\gamma$ and a large circle $C_R = \{|\xi| = R\}$, and taking the limit as $R \to \infty$.
+**Goal:** Compute $F(z)$ for $z \in \Omega_1$ and $z \in \Omega_2$ by applying Cauchy's theorem on the annular domain between $\gamma$ and a large circle $C_R = \{\abs{\xi} = R\}$, and taking the limit as $R \to \infty$.
 
 ::: pf
 
@@ -36,7 +36,7 @@ Asymptotic limit of the integral along a large circle $C_R$:
 ::: pf-proof
 
 ::: pf-step
-Let $C_R$ denote the circle $\{|\xi| = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \DD_R$ and (if $z \in \Omega_2$) $|z| < R$.
+Let $C_R$ denote the circle $\{\abs{\xi} = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \DD_R$ and (if $z \in \Omega_2$) $\abs{z} < R$.
 :::
 
 ::: pf-step
@@ -45,16 +45,16 @@ $$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = \frac{A}{2\pi i} 
 :::
 
 ::: pf-step
-Since $|z| < R$, the winding number of $C_R$ around $z$ is 1:
+Since $\abs{z} < R$, the winding number of $C_R$ around $z$ is 1:
 $$\frac{1}{2\pi i} \int_{C_R} \frac{d\xi}{\xi - z} = 1.$$
 :::
 
 ::: pf-step
 Bound the error term:
 
-- Let $\varepsilon > 0$. Since $\lim_{\xi \to \infty} f(\xi) = A$, there exists $R_0 > 0$ such that $|f(\xi) - A| < \varepsilon$ for all $|\xi| \ge R_0$.
-- For $R \ge R_0$ with $R > |z|$:
-$$\left| \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi \right| \le \frac{1}{2\pi} \cdot \frac{\varepsilon}{R - |z|} \cdot 2\pi R = \varepsilon \frac{R}{R - |z|}.$$
+- Let $\varepsilon > 0$. Since $\lim_{\xi \to \infty} f(\xi) = A$, there exists $R_0 > 0$ such that $\abs{f(\xi) - A} < \varepsilon$ for all $\abs{\xi} \ge R_0$.
+- For $R \ge R_0$ with $R > \abs{z}$:
+$$\abs{ \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi } \le \frac{1}{2\pi} \cdot \frac{\varepsilon}{R - \abs{z}} \cdot 2\pi R = \varepsilon \frac{R}{R - \abs{z}}.$$
 - Taking $R \to \infty$, the upper bound approaches $\varepsilon$. Since $\varepsilon > 0$ was arbitrary:
 $$\lim_{R \to \infty} \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi = 0.$$
 :::
@@ -122,7 +122,7 @@ Let $z \in \Omega_2$.
 :::
 
 ::: pf-step
-Choose $R > |z|$ large enough that $\gamma \subset \DD_R$.
+Choose $R > \abs{z}$ large enough that $\gamma \subset \DD_R$.
 :::
 
 ::: pf-step

@@ -29,7 +29,7 @@ If false, disprove it.
 
 (a) If $f$ is a linear functional of a normed vector space $X$, $f^{-1}(0)$ is closed.
 
-(b) In a Hilbert space, if $\{x_n\}$ converges to $x$ weakly and $\|x_n\| \to \|x\|$, then $\{x_n\}$ converges to $x$ strongly, namely $\|x_n - x\| \to 0$.
+(b) In a Hilbert space, if $\{x_n\}$ converges to $x$ weakly and $\norm{x_n} \to \norm{x}$, then $\{x_n\}$ converges to $x$ strongly, namely $\norm{x_n - x} \to 0$.
 
 (c) Let $E \subset \RR$ be a Lebesgue measurable set and assume that there exists $0 < \alpha < 1$ such that $m(E \cap I) \leq \alpha \, m(I)$ for all open intervals $I$.
 Then $m(E) = 0$.
@@ -65,7 +65,7 @@ F(x^{(n)})=1-1=0,
 $$
 so $x^{(n)}\in\ker F$. But
 $$
-\|x^{(n)}-e_1\|_2=\frac1n\longrightarrow0,
+\norm{x^{(n)}-e_1}_2=\frac1n\longrightarrow0,
 $$
 while
 $$
@@ -85,14 +85,14 @@ Part (b) is true.
 
 Weak convergence gives
 $$
-\langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
+\langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\norm{x}^2.
 $$
 Hence
 $$
 \begin{aligned}
-\|x_n-x\|^2
-&=\|x_n\|^2-2\operatorname{Re}\langle x_n,x\rangle+\|x\|^2\\
-&\longrightarrow \|x\|^2-2\|x\|^2+\|x\|^2=0.
+\norm{x_n-x}^2
+&=\norm{x_n}^2-2\operatorname{Re}\langle x_n,x\rangle+\norm{x}^2\\
+&\longrightarrow \norm{x}^2-2\norm{x}^2+\norm{x}^2=0.
 \end{aligned}
 $$
 Therefore $x_n\to x$ strongly.

@@ -19,12 +19,12 @@ audit:
 ::: {.problem}
 For $f\in C_0^\infty(\RR^2)$ define $u(x,t)$ by
 $$
-u(x,t)=\int_{\RR^2}e^{ix\cdot\xi}\frac{\sin(t|\xi|)}{|\xi|}f(\xi)\,d\xi,
+u(x,t)=\int_{\RR^2}e^{ix\cdot\xi}\frac{\sin(t\norm{\xi})}{\norm{\xi}}f(\xi)\,d\xi,
 \qquad x\in\RR^2,\ t>0.
 $$
 Show that
 $$
-\lim_{t\to\infty}\lVert u(\cdot,t)\rVert_{L^2}=\infty
+\lim_{t\to\infty}\norm{ u(\cdot,t)}_{L^2}=\infty
 $$
 for a set of $f$ that is dense in $L^2(\RR^2)$.
 :::
@@ -44,9 +44,9 @@ $$
 
 For every $f\in\mathcal D$, there are constants $c>0$ and $r_0>0$ such that
 $$
-|f(\xi)|\ge c
+\abs{f(\xi)}\ge c
 \qquad
-(|\xi|\le r_0).
+(\norm{\xi}\le r_0).
 $$
 
 
@@ -54,19 +54,19 @@ $$
 
 Since $f$ is continuous and $f(0)\ne0$, choose $r_0>0$ so that
 $$
-|f(\xi)-f(0)|<\frac{|f(0)|}{2}
+\abs{f(\xi)-f(0)}<\frac{\abs{f(0)}}{2}
 \qquad
-(|\xi|\le r_0).
+(\norm{\xi}\le r_0).
 $$
 Then
 $$
-|f(\xi)|
+\abs{f(\xi)}
 \ge
-|f(0)|-|f(\xi)-f(0)|
+\abs{f(0)}-\abs{f(\xi)-f(0)}
 >
-\frac{|f(0)|}{2}.
+\frac{\abs{f(0)}}{2}.
 $$
-Take $c=|f(0)|/2$.
+Take $c=\abs{f(0)}/2$.
 
 :::
 
@@ -76,7 +76,7 @@ Take $c=|f(0)|/2$.
 
 For every $f\in\mathcal D$ there is a constant $C_f>0$, independent of $t$, such that
 $$
-\|u(\cdot,t)\|_{L^2}^2
+\norm{u(\cdot,t)}_{L^2}^2
 \ge
 C_f
 \int_0^{t r_0}\frac{\sin^2 s}{s}\,ds.
@@ -89,11 +89,11 @@ For fixed $t>0$, set
 $$
 g_t(\xi)
 \coloneqq
-\frac{\sin(t|\xi|)}{|\xi|}f(\xi).
+\frac{\sin(t\norm{\xi})}{\norm{\xi}}f(\xi).
 $$
 The apparent singularity at $\xi=0$ is removable because
 $$
-\frac{\sin(t|\xi|)}{|\xi|}
+\frac{\sin(t\norm{\xi})}{\norm{\xi}}
 \longrightarrow t
 \qquad
 (\xi\to0),
@@ -102,21 +102,21 @@ and $g_t$ has compact support. Hence $g_t\in L^2(\RR^2)$.
 
 The function $u(\cdot,t)$ is the Fourier transform of $g_t$ up to the fixed Fourier-normalization convention, so Plancherel gives a constant $C_{\mathrm P}>0$, independent of $f$ and $t$, such that
 $$
-\|u(\cdot,t)\|_{L^2}^2
+\norm{u(\cdot,t)}_{L^2}^2
 =
 C_{\mathrm P}
 \int_{\RR^2}
-\frac{\sin^2(t|\xi|)}{|\xi|^2}
-|f(\xi)|^2\,d\xi.
+\frac{\sin^2(t\norm{\xi})}{\norm{\xi}^2}
+\abs{f(\xi)}^2\,d\xi.
 $$
 Using step [](#s1-1){.pf-ref} and polar coordinates,
 $$
 \begin{aligned}
-\|u(\cdot,t)\|_{L^2}^2
+\norm{u(\cdot,t)}_{L^2}^2
 &\ge
 C_{\mathrm P}c^2
-\int_{|\xi|\le r_0}
-\frac{\sin^2(t|\xi|)}{|\xi|^2}\,d\xi\\
+\int_{\norm{\xi}\le r_0}
+\frac{\sin^2(t\norm{\xi})}{\norm{\xi}^2}\,d\xi\\
 &=
 2\pi C_{\mathrm P}c^2
 \int_0^{r_0}
@@ -179,7 +179,7 @@ For every $f\in\mathcal D$,
 $$
 \boxed{
 \lim_{t\to\infty}
-\|u(\cdot,t)\|_{L^2}
+\norm{u(\cdot,t)}_{L^2}
 =\infty}.
 $$
 
@@ -188,7 +188,7 @@ $$
 
 By step [](#s1-2){.pf-ref},
 $$
-\|u(\cdot,t)\|_{L^2}^2
+\norm{u(\cdot,t)}_{L^2}^2
 \ge
 C_f
 \int_0^{t r_0}\frac{\sin^2 s}{s}\,ds.
@@ -212,11 +212,11 @@ $$
 $$
 with
 $$
-\|F-\varphi\|_2<\frac{\varepsilon}{2}.
+\norm{F-\varphi}_2<\frac{\varepsilon}{2}.
 $$
 Choose $\psi\in C_0^\infty(\RR^2)$ with $\psi(0)=1$. Pick a nonzero scalar $\delta$ such that
 $$
-|\delta|\,\|\psi\|_2<\frac{\varepsilon}{2}
+\abs{\delta}\,\norm{\psi}_2<\frac{\varepsilon}{2}
 \qquad\text{and}\qquad
 \varphi(0)+\delta\ne0.
 $$
@@ -226,11 +226,11 @@ h\coloneqq\varphi+\delta\psi
 $$
 belongs to $\mathcal D$, and
 $$
-\|F-h\|_2
+\norm{F-h}_2
 \le
-\|F-\varphi\|_2
+\norm{F-\varphi}_2
 +
-|\delta|\,\|\psi\|_2
+\abs{\delta}\,\norm{\psi}_2
 <
 \varepsilon.
 $$

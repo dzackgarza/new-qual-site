@@ -24,17 +24,17 @@ The official Fall 2016 exam starts the sum at $n=0$. Since $z^0=1$ and $f$ is on
 ::: {.solution}
 By Schwarz's lemma,
 $$
-|f(w)|\le |w|\qquad (w\in\DD).
+\abs{f(w)}\le \abs{w}\qquad (w\in\DD).
 $$
-Fix $0<r<1$. For $|z|\le r$,
+Fix $0<r<1$. For $\abs{z}\le r$,
 $$
-|f(z^n)|\le |z|^n\le r^n.
+\abs{f(z^n)}\le \abs{z}^n\le r^n.
 $$
 Since $\sum_{n\ge1}r^n$ converges, the Weierstrass $M$-test shows that
 $$
 \sum_{n=1}^\infty f(z^n)
 $$
-converges uniformly on $|z|\le r$.
+converges uniformly on $\abs{z}\le r$.
 
 Each summand is holomorphic on $\DD$, so the locally uniform limit is holomorphic. As $r<1$ was arbitrary, $g$ is analytic on all of $\DD$.
 :::

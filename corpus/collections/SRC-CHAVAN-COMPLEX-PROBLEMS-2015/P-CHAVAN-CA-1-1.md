@@ -18,8 +18,8 @@ Let
 $$
 p(z)=a_0+a_1z+\cdots+a_nz^n,
 \qquad
-s=\sqrt{1-|z|^2},
-\qquad |z|\le1,
+s=\sqrt{1-\abs{z}^2},
+\qquad \abs{z}\le1,
 $$
 and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\CC^{n+1}$.
 
@@ -31,26 +31,26 @@ and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\CC^{n+1}$.
 
 2. For $0\le k\le n$, show that $z^k=e_1^TU^ke_1$, and hence $p(z)=e_1^Tp(U)e_1$.
 
-3. Choose $z$ so that $|p(z)|=\max_{|w|\le1}|p(w)|$, and let $U$ be the matrix from part 1 for this $z$. Deduce
+3. Choose $z$ so that $\abs{p(z)}=\max_{\abs{w}\le1}\abs{p(w)}$, and let $U$ be the matrix from part 1 for this $z$. Deduce
    $$
-   \max_{|w|\le1}|p(w)|\le\|p(U)\|.
+   \max_{\abs{w}\le1}\abs{p(w)}\le\norm{p(U)}.
    $$
 
 4. If $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, show
    $$
-   \|p(U)\|=\|p(D)\|=\max_i|p(\lambda_i)|.
+   \norm{p(U)}=\norm{p(D)}=\max_i\abs{p(\lambda_i)}.
    $$
 
 Conclude that
 $$
-\max_{|z|\le1}|p(z)|=\max_{|z|=1}|p(z)|.
+\max_{\abs{z}\le1}\abs{p(z)}=\max_{\abs{z}=1}\abs{p(z)}.
 $$
 :::
 
 ::: {.solution}
 
-For $|z|\le1$, write $s=\sqrt{1-|z|^2}$ and denote the matrix in part 1 by $U_z$.
-Let $\|\cdot\|$ denote the operator norm induced by the Euclidean norm on $\CC^{n+1}$.
+For $\abs{z}\le1$, write $s=\sqrt{1-\abs{z}^2}$ and denote the matrix in part 1 by $U_z$.
+Let $\norm{\cdot}$ denote the operator norm induced by the Euclidean norm on $\CC^{n+1}$.
 
 ::: pf
 
@@ -67,11 +67,11 @@ c_1=ze_1+se_2,
 \qquad
 c_{n+1}=se_1-\overline z e_2.
 $$
-Since $s$ is real and $s^2=1-|z|^2$,
+Since $s$ is real and $s^2=1-\abs{z}^2$,
 $$
-\|c_1\|^2=|z|^2+s^2=1,
+\norm{c_1}^2=\abs{z}^2+s^2=1,
 \qquad
-\|c_{n+1}\|^2=s^2+|z|^2=1,
+\norm{c_{n+1}}^2=s^2+\abs{z}^2=1,
 $$
 and
 $$
@@ -86,9 +86,9 @@ $U_z$ is unitary.
 
 If $U_zv=\lambda v$ with $v\ne0$, then unitarity gives
 $$
-\|v\|=\|U_zv\|=|\lambda|\,\|v\|,
+\norm{v}=\norm{U_zv}=\abs{\lambda}\,\norm{v},
 $$
-and hence $|\lambda|=1$.
+and hence $\abs{\lambda}=1$.
 
 :::
 
@@ -130,7 +130,7 @@ gives $e_1^TU_z^ke_1=z^k$.
 
 ::: {.pf-step #s1-3}
 
-For every $|z|\le1$,
+For every $\abs{z}\le1$,
 $$
 p(z)=e_1^Tp(U_z)e_1.
 $$
@@ -156,11 +156,11 @@ $$
 
 Let $z_0$ satisfy
 $$
-|p(z_0)|=\max_{|z|\le1}|p(z)|,
+\abs{p(z_0)}=\max_{\abs{z}\le1}\abs{p(z)},
 $$
 and put $U=U_{z_0}$. Then
 $$
-\max_{|z|\le1}|p(z)|\le\|p(U)\|.
+\max_{\abs{z}\le1}\abs{p(z)}\le\norm{p(U)}.
 $$
 
 
@@ -171,11 +171,11 @@ closed unit disk. Since the standard basis vector $e_1$ has real
 coordinates, $e_1^T=e_1^*$, and step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
-\max_{|z|\le1}|p(z)|
-&=|p(z_0)|\\
-&=|e_1^*p(U)e_1|\\
-&\le \|e_1\|\,\|p(U)e_1\|\\
-&\le \|p(U)\|.
+\max_{\abs{z}\le1}\abs{p(z)}
+&=\abs{p(z_0)}\\
+&=\abs{e_1^*p(U)e_1}\\
+&\le \norm{e_1}\,\norm{p(U)e_1}\\
+&\le \norm{p(U)}.
 \end{aligned}
 $$
 
@@ -188,7 +188,7 @@ $$
 If $\lambda_1,\ldots,\lambda_{n+1}$ are the eigenvalues of $U$ and
 $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, then
 $$
-\|p(U)\|=\|p(D)\|=\max_{1\le i\le n+1}|p(\lambda_i)|.
+\norm{p(U)}=\norm{p(D)}=\max_{1\le i\le n+1}\abs{p(\lambda_i)}.
 $$
 
 
@@ -204,22 +204,22 @@ $$
 p(U)=Vp(D)V^*.
 $$
 The operator norm is invariant under multiplication by unitary
-matrices, so $\|p(U)\|=\|p(D)\|$. Moreover,
+matrices, so $\norm{p(U)}=\norm{p(D)}$. Moreover,
 $$
 p(D)=\operatorname{diag}\bigl(p(\lambda_1),\ldots,p(\lambda_{n+1})\bigr).
 $$
 For a diagonal matrix, the Euclidean operator norm is the largest
 absolute value of a diagonal entry: indeed, if
-$M=\max_i|p(\lambda_i)|$, then
+$M=\max_i\abs{p(\lambda_i)}$, then
 $$
-\|p(D)x\|^2
-=\sum_i|p(\lambda_i)|^2|x_i|^2
-\le M^2\|x\|^2,
+\norm{p(D)x}^2
+=\sum_i\abs{p(\lambda_i)}^2\abs{x_i}^2
+\le M^2\norm{x}^2,
 $$
 with equality for a standard basis vector corresponding to an index
 where the maximum is attained. Hence
 $$
-\|p(D)\|=\max_i|p(\lambda_i)|.
+\norm{p(D)}=\max_i\abs{p(\lambda_i)}.
 $$
 
 :::
@@ -230,18 +230,18 @@ $$
 
 The maximum modulus of $p$ on the closed unit disk is attained on the unit circle:
 $$
-\boxed{\max_{|z|\le1}|p(z)|=\max_{|z|=1}|p(z)|}.
+\boxed{\max_{\abs{z}\le1}\abs{p(z)}=\max_{\abs{z}=1}\abs{p(z)}}.
 $$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, every eigenvalue $\lambda_i$ of $U$ satisfies
-$|\lambda_i|=1$. Hence steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give
+$\abs{\lambda_i}=1$. Hence steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give
 $$
-\max_{|z|\le1}|p(z)|
-\le \max_i|p(\lambda_i)|
-\le \max_{|z|=1}|p(z)|.
+\max_{\abs{z}\le1}\abs{p(z)}
+\le \max_i\abs{p(\lambda_i)}
+\le \max_{\abs{z}=1}\abs{p(z)}.
 $$
 The reverse inequality is immediate because the unit circle is a
 subset of the closed unit disk. Therefore the two maxima are equal.

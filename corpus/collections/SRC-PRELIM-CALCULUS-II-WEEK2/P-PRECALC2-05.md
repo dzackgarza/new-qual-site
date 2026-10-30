@@ -220,7 +220,7 @@ Integrating term by term,
 $$
 \int\frac{dx}{x-1}
 =
-\log|x-1|.
+\log\abs{x-1}.
 $$
 
 
@@ -230,7 +230,7 @@ Use the standard antiderivative
 $$
 \int\frac{du}{u}
 =
-\log|u|.
+\log\abs{u}.
 $$
 
 :::
@@ -281,7 +281,7 @@ $$
 \int
 \frac{x+2}{x^3-x^2+2x-2}\,dx
 =
-\log|x-1|
+\log\abs{x-1}
 -
 \frac12\log(x^2+2)
 +

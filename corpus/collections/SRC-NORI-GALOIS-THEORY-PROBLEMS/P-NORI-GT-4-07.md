@@ -99,7 +99,7 @@ $$
 
 Artin's fixed-field theorem states that if a finite group $G$ acts faithfully by automorphisms on a field $L$, then for the fixed field $K=L^G$ one has
 $$
-[L:K]=|G|
+[L:K]=\cardinality{G}
 $$
 and
 $$

@@ -48,7 +48,7 @@ Every bounded sequence in $X$ has a weakly convergent subsequence.
 ::: pf-proof
 Let $\{x_n\}$ be bounded, say
 $$
-\|x_n\|\le M
+\norm{x_n}\le M
 \qquad(n\ge1).
 $$
 If $M=0$, the sequence is identically zero, so assume $M>0$.
@@ -80,7 +80,7 @@ On $M B_X$, define
 $$
 d(x,y)=
 \sum_{k=1}^{\infty}
-2^{-k}\min\{1,|f_k(x-y)|\}.
+2^{-k}\min\{1,\abs{f_k(x-y)}\}.
 $$
 This metric induces the weak topology on $M B_X$.
 Indeed, weak convergence implies convergence of every $f_k$, and the uniformly summable weights $2^{-k}$ then imply convergence in $d$.
@@ -91,17 +91,17 @@ $$
 for every $k$.
 Given any $f\in X^*$ and $\varepsilon>0$, choose $f_k$ with
 $$
-\|f-f_k\|<\frac{\varepsilon}{4M}.
+\norm{f-f_k}<\frac{\varepsilon}{4M}.
 $$
 Since $x_n,x\in M B_X$,
 $$
 \begin{aligned}
-|f(x_n-x)|
+\abs{f(x_n-x)}
 &\le
-|f_k(x_n-x)|+
-\|f-f_k\|\,\|x_n-x\|\\
+\abs{f_k(x_n-x)}+
+\norm{f-f_k}\,\norm{x_n-x}\\
 &\le
-|f_k(x_n-x)|+2M\|f-f_k\|.
+\abs{f_k(x_n-x)}+2M\norm{f-f_k}.
 \end{aligned}
 $$
 The first term tends to zero and the second is less than $\varepsilon/2$.

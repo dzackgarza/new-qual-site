@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $G$ is a finite group that has a normal subgroup $N$ with the following properties: the order of $N$ is $n$, $G/N$ is a cyclic group of order $m$, and $\gcd(m, \varphi(n)) = 1$ where $\varphi(n) := |\{ k \mid 1 \leq k \leq n,\; (k,n) = 1 \}|$.
+Suppose that $G$ is a finite group that has a normal subgroup $N$ with the following properties: the order of $N$ is $n$, $G/N$ is a cyclic group of order $m$, and $\gcd(m, \varphi(n)) = 1$ where $\varphi(n) := \cardinality{\{ k \mid 1 \leq k \leq n,\; (k,n) = 1 \}}$.
 
 (1) Prove that if $N$ is cyclic, then $G$ is abelian.
 
@@ -57,17 +57,17 @@ $$
 $$
 Therefore the order of $\operatorname{im}\bar c$ divides both
 $$
-|G/N|=m
+\cardinality{G/N}=m
 $$
 and
 $$
-|\operatorname{Aut}(N)|=\varphi(n),
+\cardinality{\operatorname{Aut}(N)}=\varphi(n),
 $$
 since a cyclic group of order $n$ has exactly $\varphi(n)$ automorphisms. The hypothesis
 $$
 \gcd(m,\varphi(n))=1
 $$
-forces $|\operatorname{im}\bar c|=1$. Thus every element of $G$ centralizes $N$, i.e.
+forces $\cardinality{\operatorname{im}\bar c}=1$. Thus every element of $G$ centralizes $N$, i.e.
 $$
 N\subseteq Z(G).
 $$
@@ -118,7 +118,7 @@ n=4.
 $$
 Conjugation in $A_4$ permutes the three double transpositions, hence preserves $N$; therefore $N\trianglelefteq A_4$. Since
 $$
-|A_4/N|=3,
+\cardinality{A_4/N}=3,
 $$
 the quotient is cyclic of order
 $$

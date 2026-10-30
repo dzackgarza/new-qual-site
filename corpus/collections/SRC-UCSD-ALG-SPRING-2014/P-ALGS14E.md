@@ -64,7 +64,7 @@ Consider pairs $(D,g)$ with
 $$
 B\subseteq D\subseteq C,
 \qquad g:D\to A,
-\qquad g|_B=f,
+\qquad g\restrict_B=f,
 $$
 ordered by extension.
 Every chain has an upper bound obtained by taking the union of the domains and the compatible maps, so by Zorn's lemma there is a maximal pair $(D,g)$.

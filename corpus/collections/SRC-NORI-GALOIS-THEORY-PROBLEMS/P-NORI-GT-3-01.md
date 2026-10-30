@@ -118,7 +118,7 @@ is $\FF_q$-linear. Its kernel is $V$. It is not the zero map because for $x\in\F
 $$
 T(x)=2x,
 $$
-and $2\ne0$ since $p$ is odd. The domain is two-dimensional over $\FF_q$, so a nonzero linear map has kernel of dimension at most one. On the other hand $f=X^q+X$ has degree $q$, and by step [](#s1-1){.pf-ref} its $q$ roots in a splitting field are distinct; step [](#s1-4){.pf-ref} places all of them in $\FF_{q^2}$. Thus $|V|=q$, equivalently $\dim_{\FF_q}V=1$.
+and $2\ne0$ since $p$ is odd. The domain is two-dimensional over $\FF_q$, so a nonzero linear map has kernel of dimension at most one. On the other hand $f=X^q+X$ has degree $q$, and by step [](#s1-1){.pf-ref} its $q$ roots in a splitting field are distinct; step [](#s1-4){.pf-ref} places all of them in $\FF_{q^2}$. Thus $\cardinality{V}=q$, equivalently $\dim_{\FF_q}V=1$.
 
 :::
 
@@ -201,7 +201,7 @@ E=\FF_{q^2}
 $$
 and
 $$
-\boxed{|E|=q^2=p^{2k}.}
+\boxed{\cardinality{E}=q^2=p^{2k}.}
 $$
 
 

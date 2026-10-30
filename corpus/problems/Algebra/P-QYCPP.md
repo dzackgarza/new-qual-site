@@ -39,10 +39,10 @@ Let $e_1,e_2,e_3$ be the standard basis of $V\coloneqq\FF_p^3$.
 ::: pf
 
 ::: pf-step
-(a) $|G|=\boxed{p^3(p-1)^3(p+1)(p^2+p+1)}$, and a Sylow $p$-subgroup has order $\boxed{p^3}$.
+(a) $\cardinality{G}=\boxed{p^3(p-1)^3(p+1)(p^2+p+1)}$, and a Sylow $p$-subgroup has order $\boxed{p^3}$.
 
 ::: pf-proof
-An invertible matrix is a choice of a nonzero first column, a second column outside its span, and a third outside the span of the first two, so $|G|=(p^3-1)(p^3-p)(p^3-p^2)$, which factors as stated. The factor $(p-1)^3(p+1)(p^2+p+1)$ is prime to $p$.
+An invertible matrix is a choice of a nonzero first column, a second column outside its span, and a third outside the span of the first two, so $\cardinality{G}=(p^3-1)(p^3-p)(p^3-p^2)$, which factors as stated. The factor $(p-1)^3(p+1)(p^2+p+1)$ is prime to $p$.
 :::
 
 :::
@@ -77,7 +77,7 @@ $$
 and $n_p=[G:B]=\boxed{(p+1)(p^2+p+1)}$.
 
 ::: pf-proof
-$P$ is the kernel of the homomorphism $B\to(\FF_p^\times)^3$ that takes the diagonal, so $B\le N_G(P)$. Conversely, if $hPh^{-1}=P$, then $h$ maps each subspace that step [](#flag){.pf-ref} defines from $P$ to itself, so $h$ stabilizes $\langle e_1\rangle$ and $\langle e_1,e_2\rangle$ and is upper triangular. Then $n_p=[G:N_G(P)]=|G|/(p^3(p-1)^3)$.
+$P$ is the kernel of the homomorphism $B\to(\FF_p^\times)^3$ that takes the diagonal, so $B\le N_G(P)$. Conversely, if $hPh^{-1}=P$, then $h$ maps each subspace that step [](#flag){.pf-ref} defines from $P$ to itself, so $h$ stabilizes $\langle e_1\rangle$ and $\langle e_1,e_2\rangle$ and is upper triangular. Then $n_p=[G:N_G(P)]=\cardinality{G}/(p^3(p-1)^3)$.
 :::
 
 :::

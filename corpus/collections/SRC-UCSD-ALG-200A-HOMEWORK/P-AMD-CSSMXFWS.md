@@ -36,7 +36,7 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group with
 $$
-|G|=595=5\cdot7\cdot17.
+\cardinality{G}=595=5\cdot7\cdot17.
 $$
 Prove that every Sylow subgroup of $G$ is normal.
 :::
@@ -93,7 +93,7 @@ has order $119=7\cdot17$, and both of its Sylow subgroups are unique.
 
 By step [](#s1){.pf-ref},
 $$
-|\overline G|=|G|/|P_5|=595/5=119.
+\cardinality{\overline G}=\cardinality{G}/\cardinality{P_5}=595/5=119.
 $$
 Let $\overline n_{17}$ be the number of Sylow $17$-subgroups of $\overline G$.
 Then
@@ -151,7 +151,7 @@ K/P_5\cong\overline R,
 $$
 so
 $$
-|K|=|P_5|\,|\overline R|=5\cdot17=85.
+\cardinality{K}=\cardinality{P_5}\,\cardinality{\overline R}=5\cdot17=85.
 $$
 
 :::
@@ -165,7 +165,7 @@ The Sylow $17$-subgroup of $K$ is unique and characteristic in $K$.
 ::: pf-proof
 
 Let $m_{17}$ be the number of Sylow $17$-subgroups of $K$.
-Since $|K|=5\cdot17$, Sylow's theorem gives
+Since $\cardinality{K}=5\cdot17$, Sylow's theorem gives
 $$
 m_{17}\equiv1\pmod{17}
 \qquad\text{and}\qquad
@@ -204,7 +204,7 @@ Hence
 $$
 P_{17}\normal G.
 $$
-Since $|P_{17}|=17$, it is a Sylow $17$-subgroup of $G$.
+Since $\cardinality{P_{17}}=17$, it is a Sylow $17$-subgroup of $G$.
 
 :::
 
@@ -235,7 +235,7 @@ L/P_5\cong\overline Q.
 $$
 Therefore
 $$
-|L|=|P_5|\,|\overline Q|=5\cdot7=35.
+\cardinality{L}=\cardinality{P_5}\,\cardinality{\overline Q}=5\cdot7=35.
 $$
 
 :::
@@ -249,7 +249,7 @@ The Sylow $7$-subgroup of $L$ is unique and characteristic in $L$.
 ::: pf-proof
 
 Let $m_7$ be the number of Sylow $7$-subgroups of $L$.
-Since $|L|=5\cdot7$, Sylow's theorem gives
+Since $\cardinality{L}=5\cdot7$, Sylow's theorem gives
 $$
 m_7\equiv1\pmod7
 \qquad\text{and}\qquad
@@ -287,7 +287,7 @@ Therefore
 $$
 P_7\normal G.
 $$
-Since $|P_7|=7$, it is a Sylow $7$-subgroup of $G$.
+Since $\cardinality{P_7}=7$, it is a Sylow $7$-subgroup of $G$.
 
 :::
 

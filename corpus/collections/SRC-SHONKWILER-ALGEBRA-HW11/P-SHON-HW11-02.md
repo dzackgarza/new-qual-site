@@ -91,11 +91,11 @@ This is an arbitrary odd-degree polynomial.
 
 There exists $M>0$ in $R$ such that for every $x>M$,
 $$
-\left|
+\abs{
 \sum_{j=0}^{2m}a_jx^j
-\right|
+}
 <
-|a_{2m+1}|x^{2m+1}.
+\abs{a_{2m+1}}x^{2m+1}.
 $$
 
 
@@ -106,22 +106,22 @@ $$
 M>
 1+
 \sum_{j=0}^{2m}
-\left|
+\abs{
 \frac{a_j}{a_{2m+1}}
-\right|.
+}.
 $$
 For $x>M>1$,
 $$
 x^{2m+1-j}>M>
-\left|
+\abs{
 \frac{a_j}{a_{2m+1}}
-\right|
+}
 $$
 for each $j\le2m$. Hence
 $$
-|a_j|x^j
+\abs{a_j}x^j
 <
-|a_{2m+1}|x^{2m+1}.
+\abs{a_{2m+1}}x^{2m+1}.
 $$
 Using the stronger choice with the sum of the coefficient ratios gives the stated bound after summing.
 
@@ -310,7 +310,7 @@ $$
 
 Assume $b\ne0$. Then
 $$
-r>|a|.
+r>\abs{a}.
 $$
 
 
@@ -318,9 +318,9 @@ $$
 
 Since
 $$
-r^2=a^2+b^2>a^2=|a|^2
+r^2=a^2+b^2>a^2=\abs{a}^2
 $$
-and $r,|a|\ge0$, one has $r>|a|$.
+and $r,\abs{a}\ge0$, one has $r>\abs{a}$.
 
 :::
 
@@ -343,7 +343,7 @@ $$
 
 By step [](#s1-13){.pf-ref},
 $$
-r+a\ge r-|a|>0.
+r+a\ge r-\abs{a}>0.
 $$
 Again use the hypothesis that every nonnegative element is a square.
 
@@ -500,7 +500,7 @@ Since $E$ is a field, $\beta=\pm\gamma\in C$, hence $\alpha\in C$, contradiction
 
 Write
 $$
-|G|=2^rm
+\cardinality{G}=2^rm
 $$
 with $m$ odd.
 
@@ -517,7 +517,7 @@ Every positive integer has a unique factorization into a power of $2$ times an o
 
 Let $P\le G$ be a Sylow $2$-subgroup, so
 $$
-|P|=2^r.
+\cardinality{P}=2^r.
 $$
 
 
@@ -546,11 +546,11 @@ $$
 
 By the fundamental theorem of Galois theory,
 $$
-[L:K]=|P|=2^r.
+[L:K]=\cardinality{P}=2^r.
 $$
 Since
 $$
-[L:R]=|G|=2^rm,
+[L:R]=\cardinality{G}=2^rm,
 $$
 the tower law gives
 $$
@@ -623,7 +623,7 @@ $$
 $$
 and
 $$
-[L:R]=|G|=2^r,
+[L:R]=\cardinality{G}=2^r,
 $$
 one has
 $$

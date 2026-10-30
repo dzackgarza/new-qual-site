@@ -41,11 +41,11 @@ Hence an extension of prime degree has no intermediate fields other than its end
 ::: {.remark title="Methods"}
 \envlist
 
-- For $x\definedas \sqrt a + \sqrt b$ with $a,b\in\QQ$, isolate a radical and square: $(x-\sqrt a)^2 = b$ gives $x^2+a-b = 2x\sqrt a$, and squaring again gives $(x^2+a-b)^2 = 4ax^2$, a monic polynomial of degree $4$ with root $x$.
+- For $x\coloneqq \sqrt a + \sqrt b$ with $a,b\in\QQ$, isolate a radical and square: $(x-\sqrt a)^2 = b$ gives $x^2+a-b = 2x\sqrt a$, and squaring again gives $(x^2+a-b)^2 = 4ax^2$, a monic polynomial of degree $4$ with root $x$.
 
-- If $n \definedas [\QQ(\alpha):\QQ]$ is known, then $1, \alpha, \ldots, \alpha^n$ are $\QQ$-linearly dependent, and a dependence with $\alpha^n$ having coefficient $1$ gives the minimal polynomial.
+- If $n \coloneqq [\QQ(\alpha):\QQ]$ is known, then $1, \alpha, \ldots, \alpha^n$ are $\QQ$-linearly dependent, and a dependence with $\alpha^n$ having coefficient $1$ gives the minimal polynomial.
 
-- For $x\definedas \sqrt a + \sqrt b$, write $1, x, x^2, x^3, x^4$ as vectors in the $\QQ$-spanning set $1, \sqrt a, \sqrt b, \sqrt{ab}$ of $\QQ(\sqrt a,\sqrt b)$.
+- For $x\coloneqq \sqrt a + \sqrt b$, write $1, x, x^2, x^3, x^4$ as vectors in the $\QQ$-spanning set $1, \sqrt a, \sqrt b, \sqrt{ab}$ of $\QQ(\sqrt a,\sqrt b)$.
   These are five vectors in a space of dimension at most $4$, and a $\QQ$-linear dependence among them is a polynomial of degree at most $4$ with root $x$.
 
 - If $\alpha,\beta\neq0$ and $\alpha\beta \in \QQ$, then $\alpha = (\alpha\beta)/\beta \in \QQ(\beta)$ and $\beta\in\QQ(\alpha)$, so $\QQ(\alpha)=\QQ(\beta)$.

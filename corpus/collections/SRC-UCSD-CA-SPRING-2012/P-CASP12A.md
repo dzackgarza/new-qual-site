@@ -21,11 +21,11 @@ If true, give a brief proof.
 
 2. If $f$ is an entire function satisfying $f(0) = 1$ and $f'(n) = f(n)$ for all integers $n \geq 1$, then $f(z) = e^z$ for all $z \in \CC$.
 
-3. If $f$ and $g$ are analytic functions defined on a neighborhood of $|z| \leq 1$, $g \neq 0$ on $|z| \leq 1$, and $|f| \leq |g|$ on $|z| = 1$, then $|f| \leq |g|$ on $|z| \leq 1$.
+3. If $f$ and $g$ are analytic functions defined on a neighborhood of $\abs{z} \leq 1$, $g \neq 0$ on $\abs{z} \leq 1$, and $\abs{f} \leq \abs{g}$ on $\abs{z} = 1$, then $\abs{f} \leq \abs{g}$ on $\abs{z} \leq 1$.
 
 4. There exists a nonconstant analytic function $f$ on $\CC$ such that $\operatorname{ran} f \cap \DD = \emptyset$.
 
-5. If $f$ is analytic on a neighborhood of $|z| \leq 1$ and $|f(z)| < 1$ for $|z| \leq 1$, then $f$ when viewed as a mapping of $\overline{\DD}$ into $\overline{\DD}$ has a unique fixed point.
+5. If $f$ is analytic on a neighborhood of $\abs{z} \leq 1$ and $\abs{f(z)} < 1$ for $\abs{z} \leq 1$, then $f$ when viewed as a mapping of $\overline{\DD}$ into $\overline{\DD}$ has a unique fixed point.
 
 6. There is no complex structure on $\RR^2$ such that the function $f: \RR^2 \to \CC$ defined by $f(x, y) = x - iy$ is analytic.
 :::
@@ -59,7 +59,7 @@ has $f(0)=1$ and $f'(n)=f(n)$ for every $n$, but $f\ne e^z$.
 
 3. **True.** Since $g$ has no zeros on the closed disk, $f/g$ is analytic on
 a neighborhood of it. The maximum modulus principle applied to $f/g$ gives
-$|f/g|\le1$ throughout the disk.
+$\abs{f/g}\le1$ throughout the disk.
 
 4. **False.** If an entire nonconstant $f$ omits the unit disk, then $1/f$ is
 an entire bounded function, hence constant by Liouville's theorem. Thus $f$

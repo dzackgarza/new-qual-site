@@ -76,7 +76,7 @@ $$
 ::: pf-proof
 
 The derivative of $e^{-ipx}$ with respect to $p$ is $-ix e^{-ipx}$. The
-integrand is dominated by $|x|e^{-x^2/2}$, which is integrable, so dominated
+integrand is dominated by $\abs{x}e^{-x^2/2}$, which is integrable, so dominated
 convergence justifies differentiation under the integral sign.
 
 :::

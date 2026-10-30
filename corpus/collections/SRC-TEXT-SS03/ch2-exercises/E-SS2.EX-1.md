@@ -33,7 +33,7 @@ Here, $\int _ { 0 } ^ { \infty }$ is interpreted as $\lim_{R \to \infty} \int _ 
 ::: {.solution}
 For $R>0$, integrate the entire function $e^{-z^2}$ around the positively oriented boundary of the sector
 $$
-0\le |z|\le R,
+0\le \abs{z}\le R,
 \qquad
 0\le \arg z\le \frac{\pi}{4}.
 $$
@@ -48,11 +48,11 @@ where $\Gamma_R$ is the circular arc $z=Re^{i\theta}$, $0\le\theta\le\pi/4$.
 
 We first show that the arc integral tends to $0$. Since
 $$
-|e^{-z^2}|=e^{-R^2\cos(2\theta)},
+\abs{e^{-z^2}}=e^{-R^2\cos(2\theta)},
 $$
 we have, after putting $u=\pi/4-\theta$,
 $$
-\left|\int_{\Gamma_R}e^{-z^2}\,dz\right|
+\abs{\int_{\Gamma_R}e^{-z^2}\,dz}
 \le R\int_0^{\pi/4}e^{-R^2\sin(2u)}\,du.
 $$
 For $0\le u\le\pi/4$, concavity of $\sin$ on $[0,\pi/2]$ gives
@@ -61,7 +61,7 @@ $$
 $$
 Therefore
 $$
-\left|\int_{\Gamma_R}e^{-z^2}\,dz\right|
+\abs{\int_{\Gamma_R}e^{-z^2}\,dz}
 \le R\int_0^{\pi/4}e^{-4R^2u/\pi}\,du
 \le \frac{\pi}{4R}\longrightarrow0.
 \tag{2}

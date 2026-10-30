@@ -70,11 +70,11 @@ a\Lambda=\Lambda.
 $$
 Conversely, every affine map with this property descends to a holomorphic automorphism of $T$.
 
-The subgroup $U(\Lambda)$ is finite. Indeed, multiplication by $a$ scales Euclidean covolume by $|a|^2$, while $a\Lambda=\Lambda$ preserves the covolume, so $|a|=1$. Fix a nonzero $\lambda\in\Lambda$. Then
+The subgroup $U(\Lambda)$ is finite. Indeed, multiplication by $a$ scales Euclidean covolume by $\abs{a}^2$, while $a\Lambda=\Lambda$ preserves the covolume, so $\abs{a}=1$. Fix a nonzero $\lambda\in\Lambda$. Then
 $$
 a\lambda\in\Lambda
 \qquad\text{and}\qquad
-|a\lambda|=|\lambda|.
+\abs{a\lambda}=\abs{\lambda}.
 $$
 A lattice has only finitely many points in a bounded set, so there are only finitely many possibilities for $a\lambda$, hence only finitely many possibilities for $a$.
 

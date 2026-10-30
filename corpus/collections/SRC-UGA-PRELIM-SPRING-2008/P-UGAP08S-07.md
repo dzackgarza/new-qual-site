@@ -143,11 +143,11 @@ $$
 (x,y)\ne(0,0),
 $$
 $$
-|g(x,y)|
+\abs{g(x,y)}
 =
-\frac{x^2|y|}{x^2+y^2}
+\frac{x^2\abs{y}}{x^2+y^2}
 \le
-|y|.
+\abs{y}.
 $$
 
 
@@ -163,7 +163,7 @@ $$
 $$
 multiply by
 $$
-|y|.
+\abs{y}.
 $$
 
 :::
@@ -174,7 +174,7 @@ $$
 
 Also
 $$
-|y|
+\abs{y}
 \le
 \sqrt{x^2+y^2}.
 $$
@@ -210,7 +210,7 @@ $$
 
 By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
-|g(x,y)|
+\abs{g(x,y)}
 \le
 \sqrt{x^2+y^2}.
 $$

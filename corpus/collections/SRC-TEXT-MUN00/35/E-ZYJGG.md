@@ -33,7 +33,7 @@ be a homeomorphism. By the universal extension property, $h$ extends to a contin
 $$
 r=h^{-1}\circ H:Z\to Y_0
 $$
-is continuous and satisfies $r|_{Y_0}=\operatorname{id}_{Y_0}$. Thus $Y_0$ is a retract of $Z$, so $Y$ is an absolute retract.
+is continuous and satisfies $r\restrict_{Y_0}=\operatorname{id}_{Y_0}$. Thus $Y_0$ is a retract of $Z$, so $Y$ is an absolute retract.
 
 (b) Assume $Y$ is compact and an absolute retract. Since $Y$ is normal, it is completely regular, so it embeds in a cube
 $$

@@ -26,8 +26,8 @@ audit:
 ::: {.problem}
 Compute the difference
 $$
-\int_{|z|=3}\frac{e^{\pi/z}}{z^2+4}\,dz-
-\int_{|z|=1}\frac{e^{\pi/z}}{z^2+4}\,dz,
+\int_{\abs{z}=3}\frac{e^{\pi/z}}{z^2+4}\,dz-
+\int_{\abs{z}=1}\frac{e^{\pi/z}}{z^2+4}\,dz,
 $$
 where both integrals are taken counterclockwise.
 :::

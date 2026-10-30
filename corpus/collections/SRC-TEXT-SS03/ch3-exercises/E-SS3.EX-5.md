@@ -19,7 +19,7 @@ audit:
 5. Use contour integration to show that
 
 $$
-\int_ {- \infty} ^ {\infty} \frac {e ^ {- 2 \pi i x \xi}}{(1 + x ^ {2}) ^ {2}} d x = \frac {\pi}{2} (1 + 2 \pi | \xi |) e ^ {- 2 \pi | \xi |}
+\int_ {- \infty} ^ {\infty} \frac {e ^ {- 2 \pi i x \xi}}{(1 + x ^ {2}) ^ {2}} d x = \frac {\pi}{2} (1 + 2 \pi \abs{ \xi }) e ^ {- 2 \pi \abs{ \xi }}
 $$
 
 for all ξ real.
@@ -32,7 +32,7 @@ I(\xi)=\int_{-\infty}^{\infty}\frac{e^{-2\pi i x\xi}}{(1+x^2)^2}\,dx.
 $$
 First assume $\xi>0$. Close the contour in the lower half-plane, where
 $$
-|e^{-2\pi i z\xi}|=e^{2\pi\xi\operatorname{Im}z}
+\abs{e^{-2\pi i z\xi}}=e^{2\pi\xi\operatorname{Im}z}
 $$
 decays. The only enclosed pole is the double pole at $z=-i$. Since the contour is clockwise,
 $$
@@ -41,7 +41,7 @@ I(\xi)=-2\pi i\operatorname{Res}_{z=-i}
 $$
 The residue is
 $$
-\left.\frac{d}{dz}\frac{e^{-2\pi i z\xi}}{(z-i)^2}\right|_{z=-i}
+\evaluated{\frac{d}{dz}\frac{e^{-2\pi i z\xi}}{(z-i)^2}}_{z=-i}
 =e^{-2\pi\xi}
 \left(\frac{-2\pi i\xi}{(-2i)^2}-\frac{2}{(-2i)^3}\right)
 =\frac{i}{4}(1+2\pi\xi)e^{-2\pi\xi}.
@@ -55,10 +55,10 @@ $$
 For $\xi<0$, close in the upper half-plane; the analogous residue at $z=i$ gives
 $$
 I(\xi)=\frac\pi2(1-2\pi\xi)e^{2\pi\xi}
-=\frac\pi2(1+2\pi|\xi|)e^{-2\pi|\xi|}.
+=\frac\pi2(1+2\pi\abs{\xi})e^{-2\pi\abs{\xi}}.
 $$
 At $\xi=0$, either evaluate directly or let $\xi\to0$; in both cases $I(0)=\pi/2$. Thus for every real $\xi$,
 $$
-\boxed{I(\xi)=\frac\pi2(1+2\pi|\xi|)e^{-2\pi|\xi|}}.
+\boxed{I(\xi)=\frac\pi2(1+2\pi\abs{\xi})e^{-2\pi\abs{\xi}}}.
 $$
 :::

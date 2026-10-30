@@ -48,7 +48,7 @@ The function $F_t$ attains a global minimum on $\RR$.
 
 As
 $$
-|y|\to\infty,
+\abs{y}\to\infty,
 $$
 the quartic term dominates:
 $$
@@ -64,7 +64,7 @@ F_t(y)>F_t(0)
 $$
 whenever
 $$
-|y|>R.
+\abs{y}>R.
 $$
 Therefore every global minimizer lies in the compact interval $[-R,R]$.
 Since $F_t$ is continuous, it attains a minimum there.

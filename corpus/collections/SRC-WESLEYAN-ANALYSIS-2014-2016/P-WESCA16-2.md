@@ -38,7 +38,7 @@ $$
 $$
 Take
 $$
-\Gamma=\{\zeta:|\zeta-z_0|=R\}
+\Gamma=\{\zeta:\abs{\zeta-z_0}=R\}
 $$
 with positive orientation.
 
@@ -48,7 +48,7 @@ with positive orientation.
 
 ::: {.pf-step #s1-2}
 
-For every $z$ with $|z-z_0|<R$,
+For every $z$ with $\abs{z-z_0}<R$,
 $$
 f(z)=\frac1{2\pi i}\int_\Gamma\frac{f(\zeta)}{\zeta-z}\,d\zeta.
 $$
@@ -65,7 +65,7 @@ of the closed disk bounded by $\Gamma$.
 
 ::: {.pf-step #s1-3}
 
-For every integer $n\ge0$ and every $z$ with $|z-z_0|<R$,
+For every integer $n\ge0$ and every $z$ with $\abs{z-z_0}<R$,
 $$
 \boxed{
 f^{(n)}(z)
@@ -78,7 +78,7 @@ $$
 
 For $z$ in any smaller closed disk
 $$
-|z-z_0|\le r<R,
+\abs{z-z_0}\le r<R,
 $$
 the distance from $z$ to $\Gamma$ is at least $R-r>0$. Hence, as a function
 of $z$, the integrand

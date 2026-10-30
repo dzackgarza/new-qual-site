@@ -26,9 +26,9 @@ State and prove **Schwarz's Lemma** for holomorphic functions on the unit disk.
 ::: {.solution}
 Let $f:\DD\to\DD$ be holomorphic with $f(0)=0$. Schwarz's lemma states
 $$
-|f(z)|\le |z|,\qquad |f'(0)|\le1.
+\abs{f(z)}\le \abs{z},\qquad \abs{f'(0)}\le1.
 $$
-Moreover, equality at one nonzero point, or $|f'(0)|=1$, holds if and only if $f(z)=e^{i\theta}z$ for some $\theta\in\RR$.
+Moreover, equality at one nonzero point, or $\abs{f'(0)}=1$, holds if and only if $f(z)=e^{i\theta}z$ for some $\theta\in\RR$.
 
 ::: pf
 
@@ -44,13 +44,13 @@ is holomorphic on $\DD$.
 
 ::: pf-step
 
-Fix $0<r<1$. On $|z|=r$, $|g(z)|\le1/r$. By the maximum-modulus principle, $|g(z)|\le1/r$ for $|z|\le r$. For fixed $z$, let $r\uparrow1$ through values larger than $|z|$; then $|g(z)|\le1$. Hence $|f(z)|\le|z|$ and $|f'(0)|\le1$.
+Fix $0<r<1$. On $\abs{z}=r$, $\abs{g(z)}\le1/r$. By the maximum-modulus principle, $\abs{g(z)}\le1/r$ for $\abs{z}\le r$. For fixed $z$, let $r\uparrow1$ through values larger than $\abs{z}$; then $\abs{g(z)}\le1$. Hence $\abs{f(z)}\le\abs{z}$ and $\abs{f'(0)}\le1$.
 
 :::
 
 ::: pf-step
 
-If $|f(z_0)|=|z_0|$ for some $z_0\ne0$, then $|g(z_0)|=1$. If $|f'(0)|=1$, then $|g(0)|=1$. In either case $g$ attains its maximum modulus at an interior point, so $g$ is constant. Its constant value has modulus $1$, hence $g=e^{i\theta}$ and $f(z)=e^{i\theta}z$. Conversely every rotation has equality.
+If $\abs{f(z_0)}=\abs{z_0}$ for some $z_0\ne0$, then $\abs{g(z_0)}=1$. If $\abs{f'(0)}=1$, then $\abs{g(0)}=1$. In either case $g$ attains its maximum modulus at an interior point, so $g$ is constant. Its constant value has modulus $1$, hence $g=e^{i\theta}$ and $f(z)=e^{i\theta}z$. Conversely every rotation has equality.
 
 :::
 

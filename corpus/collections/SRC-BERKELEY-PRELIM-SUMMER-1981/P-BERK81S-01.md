@@ -36,7 +36,7 @@ f(y)=\frac{2}{1+\sqrt{1-y}}.
 $$
 Justify the asymptotic formula
 $$
-f(y(h))=2-4\sqrt2\,\pi |h|+O(h^2)
+f(y(h))=2-4\sqrt2\,\pi \abs{h}+O(h^2)
 \qquad(h\to0),
 $$
 with a remainder bounded in absolute value by a constant multiple of $h^2$ near $0$.

@@ -164,7 +164,7 @@ n\phi(y)
 -
 \frac{u^2}{2}
 +
-O\left(\frac{|u|^3}{\sqrt n}\right).
+O\left(\frac{\abs{u}^3}{\sqrt n}\right).
 $$
 Thus the mass of the integral is concentrated in a neighborhood of width
 $O(n^{-1/2})$ around $1$, and Laplace's method gives

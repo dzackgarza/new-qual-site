@@ -97,7 +97,7 @@ so the answer is (C).
 
 Substituting $x=2$ into the derivative from step [](#s1-2){.pf-ref} gives
 $$
-\left.\frac{dz}{dx}\right|_{x=2}
+\evaluated{\frac{dz}{dx}}_{x=2}
 =\frac{1}{1+2^2}
 =\frac15.
 $$

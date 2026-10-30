@@ -67,14 +67,14 @@ Thus $Bv\in E_\lambda$.
 
 The restriction
 $$
-B\vert_{E_\lambda}:E_\lambda\longrightarrow E_\lambda
+B\restrict_{E_\lambda}:E_\lambda\longrightarrow E_\lambda
 $$
 has a nonzero eigenvector $v$.
 
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $E_\lambda$ is a nonzero finite-dimensional
-complex vector space and $B\vert_{E_\lambda}$ is an endomorphism of it.
+complex vector space and $B\restrict_{E_\lambda}$ is an endomorphism of it.
 Its characteristic polynomial therefore has a root $\mu\in\CC$, so there
 is a nonzero $v\in E_\lambda$ satisfying
 $$

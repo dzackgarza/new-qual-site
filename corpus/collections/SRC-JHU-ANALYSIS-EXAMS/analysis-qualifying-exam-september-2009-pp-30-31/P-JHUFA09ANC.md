@@ -43,7 +43,7 @@ Prove that $E_nf(x)\to f(x)$ for almost every $x\in[0,1]$.
 ::: {.solution}
 Except at dyadic endpoints, for each $n$ there is a unique interval $I_n(x)$ of length $2^{-n}$ containing $x$, and
 $$
-E_nf(x)=\frac1{|I_n(x)|}\int_{I_n(x)}f(t)\,dt.
+E_nf(x)=\frac1{\setmeasure{I_n(x)}}\int_{I_n(x)}f(t)\,dt.
 $$
 The intervals $I_n(x)$ shrink to $x$ and satisfy
 $$
@@ -52,9 +52,9 @@ $$
 If $x$ is a Lebesgue point of $f$, then
 $$
 \begin{aligned}
-|E_nf(x)-f(x)|
-&\le \frac1{|I_n(x)|}\int_{I_n(x)}|f(t)-f(x)|\,dt\\
-&\le 2\cdot\frac1{2^{1-n}}\int_{x-2^{-n}}^{x+2^{-n}}|f(t)-f(x)|\,dt.
+\abs{E_nf(x)-f(x)}
+&\le \frac1{\setmeasure{I_n(x)}}\int_{I_n(x)}\abs{f(t)-f(x)}\,dt\\
+&\le 2\cdot\frac1{2^{1-n}}\int_{x-2^{-n}}^{x+2^{-n}}\abs{f(t)-f(x)}\,dt.
 \end{aligned}
 $$
 The last expression tends to $0$ by the Lebesgue differentiation theorem. Since almost every point of $[0,1]$ is a Lebesgue point of $f$, and the dyadic endpoints form a countable set, we obtain

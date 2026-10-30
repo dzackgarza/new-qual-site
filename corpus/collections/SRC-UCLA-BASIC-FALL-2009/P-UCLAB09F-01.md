@@ -21,7 +21,7 @@ audit:
 
 ::: {.pf-step #p1-s1}
 
-For each $n\in\NN$, let $f_n\colon\NN\to\RR$ satisfy $|f_n(m)|\le 1$ for all $m,n\in\NN$.
+For each $n\in\NN$, let $f_n\colon\NN\to\RR$ satisfy $\abs{f_n(m)}\le 1$ for all $m,n\in\NN$.
 Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\NN$, the sequence $f_{n_i}(m)$ converges.
 
 :::
@@ -183,7 +183,7 @@ f_n(m)=
 $$
 Then
 $$
-|f_n(m)|\le1
+\abs{f_n(m)}\le1
 $$
 for all $m,n$. Take
 $$

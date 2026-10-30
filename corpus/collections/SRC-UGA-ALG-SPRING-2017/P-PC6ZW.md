@@ -58,7 +58,7 @@ But now if $M\cong R\sumpower{n}$, we can conclude by a direct calculation:
 $$
 M/IM &\cong (R/I)\tensor_R M \\
 &\cong (R/I)\tensor_R (R\sumpower n) \\
-&\definedas (R/I)\tensor_R \qty{R\oplus R \oplus\cdots\oplus R} \\
+&\coloneqq (R/I)\tensor_R \qty{R\oplus R \oplus\cdots\oplus R} \\
 &\cong \qty{(R/I)\tensor_R R} \oplus \qty{(R/I)\tensor_R R}\oplus \cdots \oplus \qty{(R/I) \tensor_R R} \\
 &\cong (R/I) \oplus (R/I) \oplus \cdots \oplus (R/I) \\
 &= (R/I)\sumpower{n}

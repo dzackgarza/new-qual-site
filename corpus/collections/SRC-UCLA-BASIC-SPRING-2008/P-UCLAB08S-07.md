@@ -57,7 +57,7 @@ F\subseteq E_n
 $$
 with
 $$
-|F|=N.
+\cardinality{F}=N.
 $$
 For such an $F$,
 $$

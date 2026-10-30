@@ -81,7 +81,7 @@ g(x)-g(y)
 $$
 Interchanging $x$ and $y$ yields
 $$
-|g(x)-g(y)|\le(1+C)d(x,y).
+\abs{g(x)-g(y)}\le(1+C)d(x,y).
 $$
 Thus $g$ is Lipschitz, hence continuous.
 

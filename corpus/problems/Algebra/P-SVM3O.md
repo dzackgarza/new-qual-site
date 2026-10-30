@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and let $g \in G$. Prove that the order of $g$, denoted $\operatorname{ord}(g)$, divides the order of the group $|G|$.
+Let $G$ be a finite group and let $g \in G$. Prove that the order of $g$, denoted $\operatorname{ord}(g)$, divides the order of the group $\cardinality{G}$.
 :::
 
 ::: {.solution}

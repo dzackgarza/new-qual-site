@@ -37,7 +37,7 @@ It is called the **sheaf of local morphisms of $\mcf$ into $\mcg$**, or "sheaf h
 For an open set $U\subseteq X$, write
 $$
 \mathcal H(U)
-=\operatorname{Hom}(\mathcal F|_U,\mathcal G|_U).
+=\operatorname{Hom}(\mathcal F\restrict_U,\mathcal G\restrict_U).
 $$
 
 ::: pf
@@ -50,7 +50,7 @@ The set $\mathcal H(U)$ is naturally an abelian group.
 
 Let
 $$
-\phi,\psi:\mathcal F|_U\longrightarrow\mathcal G|_U
+\phi,\psi:\mathcal F\restrict_U\longrightarrow\mathcal G\restrict_U
 $$
 be morphisms of sheaves of abelian groups.  Define
 $$
@@ -79,7 +79,7 @@ If $V\subseteq U$, restriction of sheaf morphisms defines a homomorphism
 $$
 \rho_{UV}:\mathcal H(U)\longrightarrow\mathcal H(V),
 \qquad
-\phi\longmapsto\phi|_V.
+\phi\longmapsto\phi\restrict_V.
 $$
 These maps make $\mathcal H$ a presheaf of abelian groups.
 
@@ -87,17 +87,17 @@ These maps make $\mathcal H$ a presheaf of abelian groups.
 
 Restricting
 $$
-\phi:\mathcal F|_U\to\mathcal G|_U
+\phi:\mathcal F\restrict_U\to\mathcal G\restrict_U
 $$
 to the open subspace $V$ gives
 $$
-\phi|_V:\mathcal F|_V\to\mathcal G|_V.
+\phi\restrict_V:\mathcal F\restrict_V\to\mathcal G\restrict_V.
 $$
 Restriction respects sums by the sectionwise definition in step [](#s1){.pf-ref}.  Also
 $$
-\phi|_U=\phi,
+\phi\restrict_U=\phi,
 \qquad
-(\phi|_V)|_W=\phi|_W
+(\phi\restrict_V)\restrict_W=\phi\restrict_W
 $$
 for $W\subseteq V\subseteq U$.  These are exactly the presheaf identities.
 
@@ -113,19 +113,19 @@ U=\bigcup_iU_i
 $$
 and suppose morphisms
 $$
-\phi_i:\mathcal F|_{U_i}\longrightarrow\mathcal G|_{U_i}
+\phi_i:\mathcal F\restrict_{U_i}\longrightarrow\mathcal G\restrict_{U_i}
 $$
 agree on every overlap:
 $$
-\phi_i|_{U_i\cap U_j}
+\phi_i\restrict_{U_i\cap U_j}
 =
-\phi_j|_{U_i\cap U_j}.
+\phi_j\restrict_{U_i\cap U_j}.
 $$
 For every open $V\subseteq U$ and every section $s\in\mathcal F(V)$, the local sections
 $$
 t_i
 :=
-(\phi_i)_{V\cap U_i}(s|_{V\cap U_i})
+(\phi_i)_{V\cap U_i}(s\restrict_{V\cap U_i})
 \in
 \mathcal G(V\cap U_i)
 $$
@@ -139,13 +139,13 @@ V\cap U_i\cap U_j,
 $$
 the restrictions of $\phi_i$ and $\phi_j$ are the same morphism.  Therefore
 $$
-t_i|_{V\cap U_i\cap U_j}
+t_i\restrict_{V\cap U_i\cap U_j}
 =
-(\phi_i)(s|_{V\cap U_i\cap U_j})
+(\phi_i)(s\restrict_{V\cap U_i\cap U_j})
 =
-(\phi_j)(s|_{V\cap U_i\cap U_j})
+(\phi_j)(s\restrict_{V\cap U_i\cap U_j})
 =
-t_j|_{V\cap U_i\cap U_j}.
+t_j\restrict_{V\cap U_i\cap U_j}.
 $$
 
 :::
@@ -200,16 +200,16 @@ Similarly $\phi_V(0)=0$, so $\phi_V$ is a group homomorphism.
 
 The homomorphisms $\phi_V$ commute with restrictions, so they define a sheaf morphism
 $$
-\phi:\mathcal F|_U\longrightarrow\mathcal G|_U.
+\phi:\mathcal F\restrict_U\longrightarrow\mathcal G\restrict_U.
 $$
 
 ::: pf-proof
 
 Let $W\subseteq V\subseteq U$ and $s\in\mathcal F(V)$.  Compare
 $$
-\phi_V(s)|_W
+\phi_V(s)\restrict_W
 \qquad\text{and}\qquad
-\phi_W(s|_W).
+\phi_W(s\restrict_W).
 $$
 On each open
 $$
@@ -217,11 +217,11 @@ W\cap U_i,
 $$
 both restrict to
 $$
-(\phi_i)_{W\cap U_i}(s|_{W\cap U_i}),
+(\phi_i)_{W\cap U_i}(s\restrict_{W\cap U_i}),
 $$
 because each local morphism $\phi_i$ commutes with restrictions.  Since the $W\cap U_i$ cover $W$, uniqueness for the sheaf $\mathcal G$ gives
 $$
-\phi_V(s)|_W=\phi_W(s|_W).
+\phi_V(s)\restrict_W=\phi_W(s\restrict_W).
 $$
 Thus the family $(\phi_V)$ is a morphism of sheaves.
 
@@ -245,7 +245,7 @@ $$
 $$
 Therefore
 $$
-\phi|_{U_i}=\phi_i.
+\phi\restrict_{U_i}=\phi_i.
 $$
 
 :::
@@ -260,7 +260,7 @@ The morphism $\phi$ is the unique morphism on $U$ restricting to all the $\phi_i
 
 If
 $$
-\psi:\mathcal F|_U\to\mathcal G|_U
+\psi:\mathcal F\restrict_U\to\mathcal G\restrict_U
 $$
 has the same restrictions, then for every open $V\subseteq U$ and $s\in\mathcal F(V)$ the two sections
 $$
@@ -282,7 +282,7 @@ Consequently
 $$
 \boxed{
 U\longmapsto
-\operatorname{Hom}(\mathcal F|_U,\mathcal G|_U)
+\operatorname{Hom}(\mathcal F\restrict_U,\mathcal G\restrict_U)
 }
 $$
 is a sheaf of abelian groups, denoted

@@ -47,7 +47,7 @@ n=[F:\FF_p]\ge1.
 $$
 An $n$-dimensional vector space over the $p$-element field has exactly $p^n$ elements. Therefore
 $$
-\boxed{|F|=p^n}.
+\boxed{\cardinality{F}=p^n}.
 $$
 
 :::
@@ -74,7 +74,7 @@ $$
 $$
 Hence $d\mid12$, and step [](#s1){.pf-ref} gives
 $$
-|K|=3^d.
+\cardinality{K}=3^d.
 $$
 The positive divisors of $12$ are
 $$
@@ -103,7 +103,7 @@ divides
 $$
 X^{3^{12}}-X.
 $$
-The latter has every element of $F$ as a root, and has derivative $-1$, so it splits into distinct linear factors over $F$. Hence $X^{3^d}-X$ also splits into $3^d$ distinct linear factors in $F[X]$. Thus $|F_d|=3^d$.
+The latter has every element of $F$ as a root, and has derivative $-1$, so it splits into distinct linear factors over $F$. Hence $X^{3^d}-X$ also splits into $3^d$ distinct linear factors in $F[X]$. Thus $\cardinality{F_d}=3^d$.
 
 The Frobenius power map
 $$

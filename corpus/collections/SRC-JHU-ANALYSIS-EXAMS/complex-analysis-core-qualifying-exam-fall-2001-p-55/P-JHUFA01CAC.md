@@ -48,7 +48,7 @@ F(z)=\frac1{1+z^3}
 $$
 and use the positively oriented boundary of the sector
 $$
-0\le\arg z\le\frac{2\pi}{3},\qquad |z|\le R,
+0\le\arg z\le\frac{2\pi}{3},\qquad \abs{z}\le R,
 $$
 with $R>2$. Along the positive real ray the contribution is
 $$
@@ -76,9 +76,9 @@ The arc vanishes and exactly one pole lies in the sector.
 
 ::: pf-proof
 
-On the circular arc $|z|=R$,
+On the circular arc $\abs{z}=R$,
 $$
-|F(z)|\le\frac1{R^3-1},
+\abs{F(z)}\le\frac1{R^3-1},
 $$
 so its integral has modulus at most
 $$

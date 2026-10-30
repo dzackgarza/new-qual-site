@@ -21,7 +21,7 @@ Show that the following are equivalent:
 
 (a) $(Tx,Ty)=(x,y)$ for all $x,y\in V$;
 
-(b) $\|T(x)\|=\|x\|$ for all $x\in V$;
+(b) $\norm{T(x)}=\norm{x}$ for all $x\in V$;
 
 (c) $T^*T=\operatorname{Id}_V$, where $T^*$ is the adjoint of $T$;
 
@@ -46,14 +46,14 @@ $$
 for all $x,y\in V$.
 Taking $y=x$ gives
 $$
-\|Tx\|^2
+\norm{Tx}^2
 =(Tx,Tx)
 =(x,x)
-=\|x\|^2.
+=\norm{x}^2.
 $$
 Both norms are nonnegative, so
 $$
-\|Tx\|=\|x\|.
+\norm{Tx}=\norm{x}.
 $$
 
 :::
@@ -69,7 +69,7 @@ Condition (b) implies condition (a).
 
 Assume
 $$
-\|Tx\|=\|x\|
+\norm{Tx}=\norm{x}
 $$
 for every $x\in V$.
 Using the real polarization identity,
@@ -78,7 +78,7 @@ $$
 =
 \frac12
 \left(
-\|u+v\|^2-\|u\|^2-\|v\|^2
+\norm{u+v}^2-\norm{u}^2-\norm{v}^2
 \right).
 $$
 Therefore
@@ -88,12 +88,12 @@ $$
 &=
 \frac12
 \left(
-\|T(x+y)\|^2-\|Tx\|^2-\|Ty\|^2
+\norm{T(x+y)}^2-\norm{Tx}^2-\norm{Ty}^2
 \right)\\
 &=
 \frac12
 \left(
-\|x+y\|^2-\|x\|^2-\|y\|^2
+\norm{x+y}^2-\norm{x}^2-\norm{y}^2
 \right)\\
 &=
 (x,y).
@@ -130,7 +130,7 @@ y=(T^*T-I)x
 $$
 gives
 $$
-\|(T^*T-I)x\|^2=0.
+\norm{(T^*T-I)x}^2=0.
 $$
 Thus
 $$
@@ -159,7 +159,7 @@ $$
 Then for every $x$,
 $$
 \begin{aligned}
-\|Tx\|^2
+\norm{Tx}^2
 &=
 (Tx,Tx)\\
 &=
@@ -167,12 +167,12 @@ $$
 &=
 (x,x)\\
 &=
-\|x\|^2.
+\norm{x}^2.
 \end{aligned}
 $$
 Taking square roots gives
 $$
-\|Tx\|=\|x\|.
+\norm{Tx}=\norm{x}.
 $$
 
 :::

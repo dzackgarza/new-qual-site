@@ -167,7 +167,7 @@ in $H\times K$, so their images satisfy $hk=kh$ in $G$. Hence elementwise commut
 :::
 
 ::: {.remark}
-In the finite coprime-order case, trivial intersection is automatic: if $H$ and $K$ are finite and $\gcd(|H|,|K|)=1$, then $|H\cap K|$ divides both $|H|$ and $|K|$ by Lagrange's theorem, so $H\cap K=\{e\}$.
+In the finite coprime-order case, trivial intersection is automatic: if $H$ and $K$ are finite and $\gcd(\cardinality{H},\cardinality{K})=1$, then $\cardinality{H\cap K}$ divides both $\cardinality{H}$ and $\cardinality{K}$ by Lagrange's theorem, so $H\cap K=\{e\}$.
 :::
 
 ::: {.remark}

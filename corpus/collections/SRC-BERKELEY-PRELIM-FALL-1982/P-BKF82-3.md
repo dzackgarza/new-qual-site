@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF82-3
 kind: problem
-title: Negative Laurent coefficients of $\cot(\pi z)$ on $1<|z|<2$
+title: Negative Laurent coefficients of $\cot(\pi z)$ on $1<\abs{z}<2$
 classification:
   areas:
   - prelim
@@ -28,7 +28,7 @@ Let
 $$
 \cot(\pi z)=\sum_{n=-\infty}^{\infty}a_nz^n
 $$
-be the Laurent expansion on $1<|z|<2$. Compute $a_n$ for $n<0$.
+be the Laurent expansion on $1<\abs{z}<2$. Compute $a_n$ for $n<0$.
 :::
 
 ::: {.solution}
@@ -48,7 +48,7 @@ Express $a_{-m}$ as a contour integral.
 The Laurent coefficient formula gives
 $$
 a_{-m}
-=\frac{1}{2\pi i}\int_{|z|=\rho}
+=\frac{1}{2\pi i}\int_{\abs{z}=\rho}
 \cot(\pi z)z^{m-1}\,dz.
 $$
 Inside this circle, $\cot(\pi z)$ has simple poles precisely at

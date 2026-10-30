@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $h$ be a bounded harmonic function on the unit disc $\DD = \{z : |z| < 1\}$.
+Let $h$ be a bounded harmonic function on the unit disc $\DD = \{z : \abs{z} < 1\}$.
 Assume that
 $$
 \limsup_{z \to a} h(z) \leq 0
@@ -25,7 +25,7 @@ Show that $h \leq 0$ in $\DD$.
 :::
 
 ::: {.solution}
-Let $|h|\le M$. Fix $z\in\DD$ and $\varepsilon>0$. Choose a small open
+Let $\abs{h}\le M$. Fix $z\in\DD$ and $\varepsilon>0$. Choose a small open
 arc $I\subset\partial\DD$ centered at $1$. By compactness of
 $\partial\DD\setminus I$ and the boundary limsup hypothesis, there is
 $r_0<1$ such that
@@ -34,17 +34,17 @@ h(re^{it})\le\varepsilon
 $$
 whenever $r_0<r<1$ and $e^{it}\notin I$.
 
-For $r>|z|$ sufficiently close to $1$, the Poisson formula in the disk
-$|w|<r$ gives
+For $r>\abs{z}$ sufficiently close to $1$, the Poisson formula in the disk
+$\abs{w}<r$ gives
 $$
 h(z)=\frac1{2\pi}\int_{-\pi}^{\pi}
-P_{|z|/r}(\arg z-t)h(re^{it})\,dt.
+P_{\abs{z}/r}(\arg z-t)h(re^{it})\,dt.
 $$
 Split the integral over $I$ and its complement. Since the Poisson kernel is
 positive and has total mass $2\pi$,
 $$
 h(z)\le \varepsilon
-+M\frac1{2\pi}\int_I P_{|z|/r}(\arg z-t)\,dt.
++M\frac1{2\pi}\int_I P_{\abs{z}/r}(\arg z-t)\,dt.
 $$
 Let $r\uparrow1$. For fixed $z$, the Poisson kernel is bounded as a function
 of $t$, so the second term can be made arbitrarily small by shrinking the arc

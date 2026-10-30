@@ -36,7 +36,7 @@ $$
 First, every such transformation preserves $\halfplane$, because for $z\in\halfplane$,
 $$
 \operatorname{Im}\frac{az+b}{cz+d}
-=\frac{(ad-bc)\operatorname{Im}z}{|cz+d|^2}>0.
+=\frac{(ad-bc)\operatorname{Im}z}{\abs{cz+d}^2}>0.
 $$
 Its inverse is again a real Möbius transformation with positive determinant, so it is an automorphism of $\halfplane$.
 

@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-O84SY
 kind: problem
-title: A group of order $84$ with $28$ Sylow $3$-subgroups has a normal Sylow $7$-subgroup
-  $K$ with $|Z_G(K)|=28$
+title: A group of order $84$ with $28$ Sylow $3$-subgroups has a normal Sylow $7$-subgroup $K$ with $\cardinality{Z_G(K)}=28$
 classification:
   areas:
   - algebra
@@ -40,7 +39,7 @@ b. Show that $Z_G(K)$ is a normal subgroup of $G$, and that $G/Z_G(K)$ is cyclic
 c. Let $Q$ be a Sylow $3$-subgroup of $G$.
 Show that $N_G(Q) = Z_G(Q) = Q$.
 
-d. Show that $|Z_G(K)|$ is not divisible by $3$.
+d. Show that $\cardinality{Z_G(K)}$ is not divisible by $3$.
 
 e. Prove that $Z_G(K)$ must have order $28$.
 :::
@@ -104,8 +103,8 @@ $N_G(Q)=Z_G(Q)=Q$.
 
 Conjugation is transitive on the Sylow $3$-subgroups, and the
 stabilizer of $Q$ is $N_G(Q)$. Thus
-$[G:N_G(Q)]=n_3=28$, giving $|N_G(Q)|=84/28=3$.
-Since $Q\subseteq N_G(Q)$ and $|Q|=3$, the normalizer is $Q$.
+$[G:N_G(Q)]=n_3=28$, giving $\cardinality{N_G(Q)}=84/28=3$.
+Since $Q\subseteq N_G(Q)$ and $\cardinality{Q}=3$, the normalizer is $Q$.
 The cyclic group $Q$ centralizes itself, while any element
 centralizing $Q$ normalizes it. Therefore
 $Q\subseteq Z_G(Q)\subseteq N_G(Q)=Q$.
@@ -116,7 +115,7 @@ $Q\subseteq Z_G(Q)\subseteq N_G(Q)=Q$.
 
 ::: {.pf-step #s4}
 
-The integer $|C|$ is not divisible by $3$.
+The integer $\cardinality{C}$ is not divisible by $3$.
 
 ::: pf-proof
 
@@ -138,10 +137,10 @@ The centralizer $C$ has order $28$.
 ::: pf-proof
 
 Put $d=[G:C]$. Step [](#s2){.pf-ref} gives $d\mid6$, and
-$84=d|C|$. Step [](#s4){.pf-ref} forces $3\mid d$, so $d=3$ or $6$.
-Consequently $|C|=28$ or $14$.
+$84=d\cardinality{C}$. Step [](#s4){.pf-ref} forces $3\mid d$, so $d=3$ or $6$.
+Consequently $\cardinality{C}=28$ or $14$.
 
-Suppose $|C|=14$. The abelian subgroup $K$ lies in $C$, and
+Suppose $\cardinality{C}=14$. The abelian subgroup $K$ lies in $C$, and
 the definition of $C$ gives $K\subseteq Z(C)$. The quotient
 $C/K$ has order $2$ and is cyclic. Choose $z\in C$ whose
 coset generates it. Every element of $C$ is $kz^j$ for some
@@ -158,7 +157,7 @@ It must therefore fix $t$. Thus $t\in Z(G)$.
 For a Sylow $3$-subgroup $Q$, this implies
 $t\in Z_G(Q)=Q$ by step [](#s3){.pf-ref}. An element of order $2$ cannot
 belong to a group of order $3$. This contradiction excludes
-$|C|=14$, leaving $|C|=28$ as required.
+$\cardinality{C}=14$, leaving $\cardinality{C}=28$ as required.
 
 :::
 

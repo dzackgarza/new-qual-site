@@ -70,7 +70,7 @@ g'(x)=p^\ell x^{p^\ell-1}-1=-1.
 $$
 Thus $g$ has no repeated roots. Since $g$ splits in the algebraic closure and has degree $p^\ell$, it has exactly $p^\ell$ distinct roots. Therefore
 $$
-|K|=p^\ell,
+\cardinality{K}=p^\ell,
 \qquad
 [K:\FF_p]=\ell.
 $$
@@ -125,7 +125,7 @@ L=\FF_p[x]/(f).
 $$
 Then $L$ is a field with
 $$
-|L|=p^\ell.
+\cardinality{L}=p^\ell.
 $$
 If $u\in L$ is nonzero, Lagrange's theorem in the multiplicative group $L^\times$ gives
 $$

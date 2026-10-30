@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 Let $f$ be holomorphic on a neighborhood of the closed unit disk $\overline{\DD}$.
-Suppose $\sup_{z \in \partial\DD} |f(z)| \leq 1$, and that $f$ has no fixed points on the boundary $\partial\DD$ ($f(z) \ne z$ for all $|z| = 1$).
+Suppose $\sup_{z \in \partial\DD} \abs{f(z)} \leq 1$, and that $f$ has no fixed points on the boundary $\partial\DD$ ($f(z) \ne z$ for all $\abs{z} = 1$).
 Prove that $f$ has **exactly one fixed point** in the open unit disk $\DD$.
 :::
 
@@ -30,9 +30,9 @@ Set
 $$
 h_t(z)=t f(z)-z,\qquad 0\le t\le1.
 $$
-For $|z|=1$ and $t<1$,
+For $\abs{z}=1$ and $t<1$,
 $$
-|t f(z)|\le t<1=|z|,
+\abs{t f(z)}\le t<1=\abs{z},
 $$
 so $h_t(z)\ne0$. For $t=1$, the hypothesis says $h_1(z)=f(z)-z\ne0$ on $\partial\DD$.
 

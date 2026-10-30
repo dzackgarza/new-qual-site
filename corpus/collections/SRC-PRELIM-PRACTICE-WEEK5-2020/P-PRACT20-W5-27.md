@@ -54,7 +54,7 @@ $$
 \int_0^{2\pi} e^{e^{it}}\,dt
 =
 \frac1i
-\oint_{|z|=1}\frac{e^z}{z}\,dz.
+\oint_{\abs{z}=1}\frac{e^z}{z}\,dz.
 $$
 
 
@@ -70,7 +70,7 @@ Substitute $z=e^{it}$ and the differential relation from step [](#s1-1){.pf-ref}
 
 The contour integral satisfies
 $$
-\oint_{|z|=1}\frac{e^z}{z}\,dz=2\pi i.
+\oint_{\abs{z}=1}\frac{e^z}{z}\,dz=2\pi i.
 $$
 
 
@@ -83,7 +83,7 @@ $$
 $$
 The residue theorem gives
 $$
-\oint_{|z|=1}\frac{e^z}{z}\,dz
+\oint_{\abs{z}=1}\frac{e^z}{z}\,dz
 =2\pi i.
 $$
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-4A
 kind: problem
-title: Holomorphic antiderivatives of $z^n/(1+z^2)$ on $\lvert z\rvert>1$
+title: Holomorphic antiderivatives of $z^n/(1+z^2)$ on $\abs{ z}>1$
 classification:
   areas: [prelim]
   topics: []

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let a finite group $G$ act transitively on a set $X$ with $|X|\ge2$. Prove that some element $g\in G$ acts on $X$ without fixed points.
+Let a finite group $G$ act transitively on a set $X$ with $\cardinality{X}\ge2$. Prove that some element $g\in G$ acts on $X$ without fixed points.
 :::
 
 ::: {.solution}

@@ -202,15 +202,15 @@ The product $S\times S$ is not normal.
 
 Suppose it were normal. It is separable by step [](#s1-7){.pf-ref}. In any separable normal space, every closed discrete subspace has cardinality at most continuum, which alone is insufficient here; use instead the standard Jones lemma: in a separable normal space, every closed discrete subspace $D$ satisfies
 $$
-2^{|D|}\leq2^{\aleph_0}.
+2^{\cardinality{D}}\leq2^{\aleph_0}.
 $$
 Indeed, for each subset $A\subseteq D$, normality separates the disjoint closed sets $A$ and $D\setminus A$ and Urysohn's lemma gives a continuous $f_A:X\to[0,1]$ with values $0$ and $1$ on them. Distinct $A$ give distinct continuous functions. A continuous real-valued function on a separable space is determined by its values on a countable dense set, so there are at most
 $$
-|\RR|^{\aleph_0}=2^{\aleph_0}
+\cardinality{\RR}^{\aleph_0}=2^{\aleph_0}
 $$
-such functions. For the anti-diagonal $D$ of step [](#s1-8){.pf-ref}, $|D|=2^{\aleph_0}$, so Cantor's theorem gives
+such functions. For the anti-diagonal $D$ of step [](#s1-8){.pf-ref}, $\cardinality{D}=2^{\aleph_0}$, so Cantor's theorem gives
 $$
-2^{|D|}=2^{2^{\aleph_0}}>2^{\aleph_0},
+2^{\cardinality{D}}=2^{2^{\aleph_0}}>2^{\aleph_0},
 $$
 a contradiction. Thus $S\times S$ is not normal.
 

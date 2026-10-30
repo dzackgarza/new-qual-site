@@ -25,7 +25,7 @@ A continuous function $f:X\to Y$ is called *proper* if $f^{-1}(K)$ is compact fo
 
 (c) Suppose $f:\RR\to\RR$ is $C^1$ and
 $$
-|f'(x)|\geq1
+\abs{f'(x)}\geq1
 \qquad\text{for every }x\in\RR.
 $$
 Show that $f$ is proper.
@@ -46,7 +46,7 @@ is proper but is not a homeomorphism.
 
 ::: pf-proof
 
-The map is not injective because $f(x)=f(-x)$. Let $K\subseteq\RR$ be compact. Then $K$ is closed and bounded, so $K\subseteq[-M,M]$ for some $M\ge0$. The inverse image $f^{-1}(K)$ is closed by continuity of $f$, and if $x\in f^{-1}(K)$ then $x^2\le M$, hence $|x|\le\sqrt M$. Thus $f^{-1}(K)$ is closed and bounded in $\RR$, hence compact by the Heine--Borel theorem.
+The map is not injective because $f(x)=f(-x)$. Let $K\subseteq\RR$ be compact. Then $K$ is closed and bounded, so $K\subseteq[-M,M]$ for some $M\ge0$. The inverse image $f^{-1}(K)$ is closed by continuity of $f$, and if $x\in f^{-1}(K)$ then $x^2\le M$, hence $\abs{x}\le\sqrt M$. Thus $f^{-1}(K)$ is closed and bounded in $\RR$, hence compact by the Heine--Borel theorem.
 
 :::
 
@@ -87,7 +87,7 @@ $$
 
 ::: pf-proof
 
-Since $f$ is $C^1$, the derivative $f'$ is continuous. The inequality $|f'(x)|\ge1$ implies that $f'$ never vanishes. If $f'$ took both a positive and a negative value, the intermediate value theorem would force it to vanish somewhere. Hence $f'$ has constant sign. Combining this with $|f'|\ge1$ gives the stated alternatives.
+Since $f$ is $C^1$, the derivative $f'$ is continuous. The inequality $\abs{f'(x)}\ge1$ implies that $f'$ never vanishes. If $f'$ took both a positive and a negative value, the intermediate value theorem would force it to vanish somewhere. Hence $f'$ has constant sign. Combining this with $\abs{f'}\ge1$ gives the stated alternatives.
 
 :::
 
@@ -97,7 +97,7 @@ Since $f$ is $C^1$, the derivative $f'$ is continuous. The inequality $|f'(x)|\g
 
 For every $x\in\RR$,
 $$
-|f(x)-f(0)|\ge|x|.
+\abs{f(x)-f(0)}\ge\abs{x}.
 $$
 
 
@@ -124,9 +124,9 @@ The function $f$ is proper.
 
 ::: pf-proof
 
-Let $K\subseteq\RR$ be compact. Choose $M\ge0$ such that $K\subseteq[-M,M]$. If $x\in f^{-1}(K)$, then $|f(x)|\le M$. By step [](#s1-4){.pf-ref},
+Let $K\subseteq\RR$ be compact. Choose $M\ge0$ such that $K\subseteq[-M,M]$. If $x\in f^{-1}(K)$, then $\abs{f(x)}\le M$. By step [](#s1-4){.pf-ref},
 $$
-|x|\le|f(x)-f(0)|\le |f(x)|+|f(0)|\le M+|f(0)|.
+\abs{x}\le\abs{f(x)-f(0)}\le \abs{f(x)}+\abs{f(0)}\le M+\abs{f(0)}.
 $$
 Hence $f^{-1}(K)$ is bounded. It is also closed because $K$ is closed and $f$ is continuous. By Heine--Borel, $f^{-1}(K)$ is compact. Therefore $f$ is proper.
 

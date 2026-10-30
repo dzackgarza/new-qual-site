@@ -105,7 +105,7 @@ Restriction from an ample sheaf gives the forward implication by step [](#s1){.p
 For the converse, induct on the finite number of irreducible components, all with their reduced structures.
 The one-component case is the hypothesis itself; the empty case is immediate.
 Let $Z$ be one component and $W$ the reduced union of the others.
-Induction makes $L|_W$ ample, and $L|_Z$ is ample by assumption.
+Induction makes $L\restrict_W$ ample, and $L\restrict_Z$ is ample by assumption.
 
 Let $I,J$ be the ideal sheaves of $Z,W$ in $X$.
 Since $X$ is reduced and $Z\cup W=X$, their intersection is zero and hence $IJ=0$, as proved in [[P-AGH332COMPONENTAFFINE]], step [](#s2){.pf-ref}.
@@ -192,7 +192,7 @@ A finite surjective morphism detects ampleness, completing (d).
 
 ::: pf-proof
 
-Assume $f^*L$ is ample and apply noetherian induction to closed subsets $T\subseteq Y$ to prove ampleness of $L|_{T_{\mathrm{red}}}$.
+Assume $f^*L$ is ample and apply noetherian induction to closed subsets $T\subseteq Y$ to prove ampleness of $L\restrict_{T_{\mathrm{red}}}$.
 Suppose this is known for all proper closed subsets of a nonempty $T$.
 If $T$ is reducible, its irreducible components are proper closed subsets, so the claim follows from the induction hypothesis and step [](#s3){.pf-ref}.
 Suppose instead that $T$ is irreducible, so $T_{\mathrm{red}}$ is integral.
@@ -201,7 +201,7 @@ The base change $X_T=X\times_Y T_{\mathrm{red}}$ is a closed subscheme of $X$ fi
 Its restriction of $f^*L$ is ample by step [](#s1){.pf-ref}, and the same holds on its reduction and each irreducible component.
 The finitely many components have closed images covering $T$; irreducibility forces one such image to be all of $T$.
 Choose a component with its reduced structure and call it $Z$.
-Then $Z\to T_{\mathrm{red}}$ is finite surjective between integral proper schemes, and the pullback of $L|_{T_{\mathrm{red}}}$ is ample on $Z$.
+Then $Z\to T_{\mathrm{red}}$ is finite surjective between integral proper schemes, and the pullback of $L\restrict_{T_{\mathrm{red}}}$ is ample on $Z$.
 Every proper reduced closed subscheme of the target has ample restricted $L$ by the induction hypothesis.
 Step [](#s5){.pf-ref} now proves ampleness on $T_{\mathrm{red}}$.
 

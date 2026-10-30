@@ -30,7 +30,7 @@ audit:
 Let $n$ be a positive integer and $0 < \theta < \pi$ . Prove that
 
 $$
-{ \frac { 1 } { 2 \pi i } } \int _ { | z | = 2 } { \frac { z ^ { n } } { 1 - 2 z \cos \theta + z ^ { 2 } } } d z = { \frac { \sin n \theta } { \sin \theta } } .
+{ \frac { 1 } { 2 \pi i } } \int _ { \abs{ z } = 2 } { \frac { z ^ { n } } { 1 - 2 z \cos \theta + z ^ { 2 } } } d z = { \frac { \sin n \theta } { \sin \theta } } .
 $$
 :::
 

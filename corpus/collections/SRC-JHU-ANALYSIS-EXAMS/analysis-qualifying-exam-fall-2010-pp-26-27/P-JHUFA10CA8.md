@@ -30,14 +30,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{w\in\CC:|w|<1\}$, and let $g:D\to D$
+Let $D=\{w\in\CC:\abs{w}<1\}$, and let $g:D\to D$
 be a surjective holomorphic map with $g(0)=0$. Suppose
 that $g$ is a two-sheeted branched covering, with its
 only ramification point at $w=0$. An example is $g(w)=w^2$.
 
 (a) Express the given conditions explicitly in terms of $g$ and its derivatives.
 
-(b) Show that $|g(w)|\leq|w|^2$ for all $|w|<1$.
+(b) Show that $\abs{g(w)}\leq\abs{w}^2$ for all $\abs{w}<1$.
 
 (c) Suppose that $g(1/2)=i/4$. What is the strongest statement about $g(w)$ that follows from (b)? Explain.
 :::
@@ -53,7 +53,7 @@ Part (a): derivatives determine local multiplicity, while fiber cardinalities sp
 For a holomorphic map $g:D\to D$, the explicit conditions are
 $$
 g(0)=0,\qquad g'(0)=0,\qquad g''(0)\ne0,\qquad
-g'(w)\ne0\quad(0<|w|<1),
+g'(w)\ne0\quad(0<\abs{w}<1),
 $$
 together with
 $$
@@ -103,14 +103,14 @@ Part (b): division by the double zero gives the bound.
 Since $g(0)=g'(0)=0$, the function
 $H(w)=g(w)/w^2$ for $w\ne0$ extends holomorphically
 across zero by the Taylor series, with $H(0)=g''(0)/2$.
-For $0<r<1$, on $|w|=r$ one has
-$|H(w)|=|g(w)|/r^2\leq r^{-2}$, because $g(D)\subset D$.
+For $0<r<1$, on $\abs{w}=r$ one has
+$\abs{H(w)}=\abs{g(w)}/r^2\leq r^{-2}$, because $g(D)\subset D$.
 The maximum modulus principle therefore gives
-$|H(w)|\leq r^{-2}$ throughout $|w|\leq r$ [@SS03].
-For a fixed $w\in D$, let $r\uparrow1$ with $r>|w|$.
-It follows that $|H(w)|\leq1$, and hence
+$\abs{H(w)}\leq r^{-2}$ throughout $\abs{w}\leq r$ [@SS03].
+For a fixed $w\in D$, let $r\uparrow1$ with $r>\abs{w}$.
+It follows that $\abs{H(w)}\leq1$, and hence
 $$
-|g(w)|=|w|^2|H(w)|\leq|w|^2.
+\abs{g(w)}=\abs{w}^2\abs{H(w)}\leq\abs{w}^2.
 $$
 This argument uses only the disk bound and the double
 zero, not the stronger global covering hypotheses.

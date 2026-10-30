@@ -34,13 +34,13 @@ audit:
 ---
 
 ::: {.problem}
-Given: $|G| < \infty, N \normal G, (|N|, [G:N]) =1$
+Given: $\cardinality{G} < \infty, N \normal G, (\cardinality{N}, [G:N]) =1$
 
-Show: $N$ is the unique subgroup of order $|N|$
+Show: $N$ is the unique subgroup of order $\cardinality{N}$
 :::
 
 ::: {.solution}
-Let $H\le G$ be any subgroup with $|H|=|N|$, and let
+Let $H\le G$ be any subgroup with $\cardinality{H}=\cardinality{N}$, and let
 $$
 \pi:G\longrightarrow G/N
 $$
@@ -50,13 +50,13 @@ be the quotient homomorphism.
 
 ::: {.pf-step #s1}
 
-The integer $|\pi(H)|$ divides $|N|$.
+The integer $\cardinality{\pi(H)}$ divides $\cardinality{N}$.
 
 ::: pf-proof
 
 The restriction
 $$
-\pi|_H:H\longrightarrow G/N
+\pi\restrict_H:H\longrightarrow G/N
 $$
 has kernel $H\cap N$.
 Hence the first isomorphism theorem gives
@@ -65,7 +65,7 @@ $$
 $$
 Therefore
 $$
-|\pi(H)|=[H:H\cap N]\mid |H|=|N|.
+\cardinality{\pi(H)}=[H:H\cap N]\mid \cardinality{H}=\cardinality{N}.
 $$
 
 :::
@@ -74,14 +74,14 @@ $$
 
 ::: {.pf-step #s2}
 
-The integer $|\pi(H)|$ divides $[G:N]$.
+The integer $\cardinality{\pi(H)}$ divides $[G:N]$.
 
 ::: pf-proof
 
 The image $\pi(H)$ is a subgroup of the finite group $G/N$.
 By Lagrange's theorem,
 $$
-|\pi(H)|\mid |G/N|=[G:N].
+\cardinality{\pi(H)}\mid \cardinality{G/N}=[G:N].
 $$
 
 :::
@@ -94,12 +94,12 @@ The subgroup $H$ is contained in $N$.
 
 ::: pf-proof
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\pi(H)|$ divides both $|N|$ and $[G:N]$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\cardinality{\pi(H)}$ divides both $\cardinality{N}$ and $[G:N]$.
 Since
 $$
-\gcd(|N|,[G:N])=1,
+\gcd(\cardinality{N},[G:N])=1,
 $$
-we have $|\pi(H)|=1$.
+we have $\cardinality{\pi(H)}=1$.
 Thus $\pi(H)=\{N\}$, so every $h\in H$ lies in
 $$
 \ker\pi=N.
@@ -118,11 +118,11 @@ Therefore $H=N$.
 
 By step [](#s3){.pf-ref}, $H\le N$, while by assumption
 $$
-|H|=|N|<\infty.
+\cardinality{H}=\cardinality{N}<\infty.
 $$
 A subgroup of a finite group having the same order as the whole group is the whole group.
 Hence $H=N$.
-Since $H$ was arbitrary among subgroups of order $|N|$, $N$ is the unique subgroup of $G$ of that order.
+Since $H$ was arbitrary among subgroups of order $\cardinality{N}$, $N$ is the unique subgroup of $G$ of that order.
 
 :::
 

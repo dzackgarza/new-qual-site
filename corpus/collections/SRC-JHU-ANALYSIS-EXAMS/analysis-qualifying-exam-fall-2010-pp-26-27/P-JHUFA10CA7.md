@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA10CA7
 kind: problem
-title: Entire functions dominated by $|\operatorname{Re}z|^2+|z|^{3/2}$
+title: Entire functions dominated by $\abs{\operatorname{Re}z}^2+\abs{z}^{3/2}$
 classification:
   areas:
   - complex-analysis
@@ -33,7 +33,7 @@ audit:
 Determine all entire functions $f$ that satisfy
 
 $$
-|f(z)|\leq |\operatorname{Re}z|^2+|z|^{3/2}\qquad\text{whenever }|z|>1.
+\abs{f(z)}\leq \abs{\operatorname{Re}z}^2+\abs{z}^{3/2}\qquad\text{whenever }\abs{z}>1.
 $$
 :::
 
@@ -41,7 +41,7 @@ $$
 The solutions are precisely the affine functions $f(z)=az+b$
 whose coefficients satisfy
 $$
-|aw+b|\leq1+(\operatorname{Re}w)^2\qquad(|w|=1).
+\abs{aw+b}\leq1+(\operatorname{Re}w)^2\qquad(\abs{w}=1).
 \tag{1}
 $$
 This compact-circle condition has the following finite
@@ -49,14 +49,14 @@ algebraic form. For $a,b\in\CC$, define the real
 polynomial in the real variable $t$
 $$
 Q_{a,b}(t)=4(1+t^4)^2-(1+t^2)^2
-\left|(a+b)+(b-a)t^2+2iat\right|^2.
+\abs{(a+b)+(b-a)t^2+2iat}^2.
 \tag{2}
 $$
 Here the squared modulus means multiplication by the
 coefficientwise conjugate polynomial, since $t$ is real.
 The exact coefficient test is
 $$
-|a|^2+|b|^2\leq1,
+\abs{a}^2+\abs{b}^2\leq1,
 \qquad Q_{a,b}(t)\geq0\text{ at every real root of }Q_{a,b}'(t).
 \tag{3}
 $$
@@ -71,15 +71,15 @@ coefficients $a,b$.
 Every solution is affine.
 
 ::: pf-proof
-On $|z|=R>1$ the hypothesis gives
-$|f(z)|\leq R^2+R^{3/2}$. If $c_k$ is the $k$th
+On $\abs{z}=R>1$ the hypothesis gives
+$\abs{f(z)}\leq R^2+R^{3/2}$. If $c_k$ is the $k$th
 Taylor coefficient of $f$ at zero, Cauchy's estimate gives
 $$
-|c_k|\leq R^{2-k}+R^{3/2-k}
+\abs{c_k}\leq R^{2-k}+R^{3/2-k}
 $$
 [@SS03]. For $k\geq3$, let $R\to\infty$ to obtain
 $c_k=0$. Hence $f(z)=cz^2+az+b$.
-On the imaginary ray the given bound is $|f(iR)|\leq R^{3/2}$.
+On the imaginary ray the given bound is $\abs{f(iR)}\leq R^{3/2}$.
 Divide by $R^2$ and let $R\to\infty$. The expression
 $f(iR)/R^2=-c+ia/R+b/R^2$ tends to $-c$, whereas
 its modulus is at most $R^{-1/2}$. Therefore $c=0$.
@@ -91,27 +91,27 @@ its modulus is at most $R^{-1/2}$. Therefore $c=0$.
 For affine functions, (1) is equivalent to the original inequality.
 
 ::: pf-proof
-Necessity follows by setting $z=rw$, $|w|=1$, and letting
+Necessity follows by setting $z=rw$, $\abs{w}=1$, and letting
 $r\downarrow1$ in the original inequality.
 Conversely assume (1). At $w=i$ and $w=-i$ it gives
-$|ai+b|\leq1$ and $|-ai+b|\leq1$. Adding the squares yields
+$\abs{ai+b}\leq1$ and $\abs{-ai+b}\leq1$. Adding the squares yields
 $$
-2(|a|^2+|b|^2)=|ai+b|^2+|-ai+b|^2\leq2,
+2(\abs{a}^2+\abs{b}^2)=\abs{ai+b}^2+\abs{-ai+b}^2\leq2,
 $$
-so in particular $|a|\leq1$.
-For any $r>1$ and $|w|=1$, put $x=\operatorname{Re}w$.
+so in particular $\abs{a}\leq1$.
+For any $r>1$ and $\abs{w}=1$, put $x=\operatorname{Re}w$.
 Using a convex combination and then (1),
 $$
 \begin{aligned}
-|arw+b|/r
-&=\left|(1-r^{-1})aw+r^{-1}(aw+b)\right|\\
-&\leq (1-r^{-1})|a|+r^{-1}|aw+b|\\
+\abs{arw+b}/r
+&=\abs{(1-r^{-1})aw+r^{-1}(aw+b)}\\
+&\leq (1-r^{-1})\abs{a}+r^{-1}\abs{aw+b}\\
 &\leq1+r^{-1}x^2.
 \end{aligned}
 $$
-Thus $|arw+b|\leq r+x^2\leq r^{3/2}+r^2x^2$
+Thus $\abs{arw+b}\leq r+x^2\leq r^{3/2}+r^2x^2$
 since $r>1$. This last expression is precisely
-$|rw|^{3/2}+|\operatorname{Re}(rw)|^2$, proving sufficiency.
+$\abs{rw}^{3/2}+\abs{\operatorname{Re}(rw)}^2$, proving sufficiency.
 :::
 
 :::
@@ -134,13 +134,13 @@ Squaring (1) and multiplying by the strictly positive
 $(1+t^2)^4$ gives exactly $Q_{a,b}(t)\geq0$. These
 operations are reversible because both sides of (1)
 are nonnegative. Continuity supplies (1) also at $w=-1$
-by letting $|t|\to\infty$.
+by letting $\abs{t}\to\infty$.
 
 Step [](#affine-equiv-condition-1){.pf-ref} already shows that (1) implies
-$|a|^2+|b|^2\leq1$. Under this inequality the leading
+$\abs{a}^2+\abs{b}^2\leq1$. Under this inequality the leading
 coefficient of $Q_{a,b}$ is
 $$
-4-|b-a|^2\geq4-2(|a|^2+|b|^2)\geq2.
+4-\abs{b-a}^2\geq4-2(\abs{a}^2+\abs{b}^2)\geq2.
 $$
 Hence $Q_{a,b}$ has degree eight and tends to positive
 infinity as $t\to\pm\infty$. It attains a global minimum

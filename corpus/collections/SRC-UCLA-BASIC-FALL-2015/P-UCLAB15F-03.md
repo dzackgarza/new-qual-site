@@ -107,7 +107,7 @@ $$
 for every $n\ge N$ and every $x\in[-1,1]$.
 Therefore
 $$
-\|f_n\|_\infty\to0.
+\norm{f_n}_\infty\to0.
 $$
 
 :::
@@ -118,7 +118,7 @@ $$
 
 For every $n$ and every $x\in[-1,1]$,
 $$
-|g(x)-g_n(x)|
+\abs{g(x)-g_n(x)}
 \le
 f_{n+1}(x).
 $$
@@ -133,15 +133,15 @@ $$
 decrease to zero.
 The alternating-series remainder estimate therefore gives
 $$
-\left|
+\abs{
 \sum_{m=n+1}^{\infty}(-1)^mf_m(x)
-\right|
+}
 \le
 f_{n+1}(x).
 $$
 The left side is exactly
 $$
-|g(x)-g_n(x)|.
+\abs{g(x)-g_n(x)}.
 $$
 
 :::
@@ -161,14 +161,14 @@ is uniform on $[-1,1]$.
 
 By step [](#s1-3){.pf-ref},
 $$
-\|g-g_n\|_\infty
+\norm{g-g_n}_\infty
 \le
-\|f_{n+1}\|_\infty.
+\norm{f_{n+1}}_\infty.
 $$
 The right side tends to zero by step [](#s1-2){.pf-ref}.
 Therefore
 $$
-\|g-g_n\|_\infty\to0.
+\norm{g-g_n}_\infty\to0.
 $$
 
 :::

@@ -46,7 +46,7 @@ $\abs{f}=1$ on the circle, so $f\not\equiv0$ and $f$ has no zero there. The zero
 :::
 
 ::: {.pf-step #blaschke}
-$B(z)\definedas\prod_{k=1}^n\frac{z-z_k}{1-\bar z_kz}$ is holomorphic on a neighbourhood of $\overline\DD$, has $\abs{B}=1$ on $\abs{z}=1$, and has exactly the zeros $z_1,\ldots,z_n$ in $\overline\DD$, with multiplicity.
+$B(z)\coloneqq\prod_{k=1}^n\frac{z-z_k}{1-\bar z_kz}$ is holomorphic on a neighbourhood of $\overline\DD$, has $\abs{B}=1$ on $\abs{z}=1$, and has exactly the zeros $z_1,\ldots,z_n$ in $\overline\DD$, with multiplicity.
 
 ::: pf-proof
 The pole of the $k$th factor is $1/\bar z_k$, outside $\overline\DD$. For $\abs{z}=1$, $\abs{1-\bar z_kz}=\abs{\bar z-\bar z_k}=\abs{z-z_k}$, so each factor has modulus $1$.
@@ -55,7 +55,7 @@ The pole of the $k$th factor is $1/\bar z_k$, outside $\overline\DD$. For $\abs{
 :::
 
 ::: {.pf-step #quotient}
-$g\definedas f/B$ extends to a holomorphic function on a neighbourhood of $\overline\DD$ with no zero in $\overline\DD$ and $\abs{g}=1$ on $\abs{z}=1$.
+$g\coloneqq f/B$ extends to a holomorphic function on a neighbourhood of $\overline\DD$ with no zero in $\overline\DD$ and $\abs{g}=1$ on $\abs{z}=1$.
 
 ::: pf-proof
 By steps [](#finite-zeros){.pf-ref} and [](#blaschke){.pf-ref}, $f$ and $B$ vanish to the same order at each $z_k$, so the singularities of $g$ at the $z_k$ are removable and the extended $g$ is nonzero there. On the circle $\abs{g}=\abs{f}/\abs{B}=1$.

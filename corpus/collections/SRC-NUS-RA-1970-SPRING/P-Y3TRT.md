@@ -28,7 +28,7 @@ $f(x) = \int_0^x g(t, f(t))dt$
 
 for all $x \in [0, 1]$.
 
-> Hint: first show that $|f_n(x_1) - f_n(x_2)| \leq |x_1 - x_2|$.
+> Hint: first show that $\abs{f_n(x_1) - f_n(x_2)} \leq \abs{x_1 - x_2}$.
 :::
 
 ::: {.solution}
@@ -68,24 +68,24 @@ Steps [](#fn-well-defined-continuous){.pf-ref} and [](#fn-bounded-by-x-minus-1n)
 :::
 
 ::: {.pf-step #fn-lipschitz}
-Each $f_n$ is $1$-Lipschitz: $|f_n(x_1) - f_n(x_2)| \leq |x_1 - x_2|$.
+Each $f_n$ is $1$-Lipschitz: $\abs{f_n(x_1) - f_n(x_2)} \leq \abs{x_1 - x_2}$.
 
 ::: pf-proof
 
 ::: {.pf-step #lipschitz-case-both-above}
-For $1/n \leq x_1 \leq x_2$: $|f_n(x_2) - f_n(x_1)| = \left|\int_{x_1 - 1/n}^{x_2 - 1/n} g(t, f_n(t)) \, dt\right| \leq x_2 - x_1$.
+For $1/n \leq x_1 \leq x_2$: $\abs{f_n(x_2) - f_n(x_1)} = \abs{\int_{x_1 - 1/n}^{x_2 - 1/n} g(t, f_n(t)) \, dt} \leq x_2 - x_1$.
 
 ::: pf-proof
-$|g| \leq 1$, and the interval of integration has length $x_2 - x_1$.
+$\abs{g} \leq 1$, and the interval of integration has length $x_2 - x_1$.
 :::
 
 :::
 
 ::: {.pf-step #lipschitz-case-straddle}
-For $x_1 < 1/n \leq x_2$: $|f_n(x_2) - f_n(x_1)| = |f_n(x_2)| \leq x_2 - \frac1n \leq x_2 - x_1$.
+For $x_1 < 1/n \leq x_2$: $\abs{f_n(x_2) - f_n(x_1)} = \abs{f_n(x_2)} \leq x_2 - \frac1n \leq x_2 - x_1$.
 
 ::: pf-proof
-$f_n(x_1) = 0$ by definition on $[0, 1/n]$, and $|f_n(x_2)| \leq x_2 - 1/n$ by step [](#fn-well-defined-bounded){.pf-ref}.
+$f_n(x_1) = 0$ by definition on $[0, 1/n]$, and $\abs{f_n(x_2)} \leq x_2 - 1/n$ by step [](#fn-well-defined-bounded){.pf-ref}.
 :::
 
 :::
@@ -130,7 +130,7 @@ $g$ is uniformly continuous on the compact square $[0,1]^2$, and $f_{n_k} \to f$
 For each fixed $x \in (0,1]$: $\int_0^{x - 1/n_k} g(t, f_{n_k}(t)) \, dt \to \int_0^x g(t, f(t)) \, dt$.
 
 ::: pf-proof
-For $k$ large, $1/n_k \leq x$, and then $\left|\int_0^{x - 1/n_k} g(t, f_{n_k}(t))\,dt - \int_0^x g(t, f(t))\,dt\right| \leq \int_0^{x - 1/n_k} |g(t, f_{n_k}(t)) - g(t, f(t))|\,dt + \int_{x - 1/n_k}^x |g(t, f(t))|\,dt \leq \sup_t |g(t, f_{n_k}(t)) - g(t, f(t))| + \frac1{n_k}$, which tends to $0$ by step [](#g-converges-uniformly){.pf-ref} and the width $\frac1{n_k} \to 0$.
+For $k$ large, $1/n_k \leq x$, and then $\abs{\int_0^{x - 1/n_k} g(t, f_{n_k}(t))\,dt - \int_0^x g(t, f(t))\,dt} \leq \int_0^{x - 1/n_k} \abs{g(t, f_{n_k}(t)) - g(t, f(t))}\,dt + \int_{x - 1/n_k}^x \abs{g(t, f(t))}\,dt \leq \sup_t \abs{g(t, f_{n_k}(t)) - g(t, f(t))} + \frac1{n_k}$, which tends to $0$ by step [](#g-converges-uniformly){.pf-ref} and the width $\frac1{n_k} \to 0$.
 :::
 
 :::

@@ -23,7 +23,7 @@ audit:
 Given $F \subset E \subset E'$ and $F \subset K \subset E'$, where $F, E, K$ are subfields of $E'$.
 It is not assumed that $E$ is an algebraic extension of $F$.
 Assume that $K$ is a finite Galois extension of $F$, so that $EK$ is a finite Galois extension of $E$ (Problem 5.3).
-Show that $\sigma \mapsto \sigma|_K$ gives an isomorphism $\operatorname{Gal}(EK/E) \to \operatorname{Gal}(K/K \cap E)$.
+Show that $\sigma \mapsto \sigma\restrict_K$ gives an isomorphism $\operatorname{Gal}(EK/E) \to \operatorname{Gal}(K/K \cap E)$.
 
 *Warning* If your proof never relies on the Fundamental Thm of Galois theory, it is likely to be wrong.
 So, state precisely where you appeal to this thm.
@@ -35,7 +35,7 @@ Define
 $$
 \rho:\operatorname{Gal}(EK/E)\to\operatorname{Gal}(K/K\cap E),
 \qquad
-\rho(\sigma)=\sigma|_K.
+\rho(\sigma)=\sigma\restrict_K.
 $$
 
 ::: pf
@@ -67,13 +67,13 @@ The map $\rho$ is well defined and is a group homomorphism.
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, $\sigma|_K$ is an automorphism of $K$. It fixes $F$ because $F\subseteq E$, and it fixes every element of
+By step [](#s1-1){.pf-ref}, $\sigma\restrict_K$ is an automorphism of $K$. It fixes $F$ because $F\subseteq E$, and it fixes every element of
 $$
 K\cap E
 $$
 pointwise because $\sigma$ fixes all of $E$. Thus
 $$
-\sigma|_K\in\operatorname{Gal}(K/K\cap E).
+\sigma\restrict_K\in\operatorname{Gal}(K/K\cap E).
 $$
 Restriction clearly respects composition, so $\rho$ is a homomorphism.
 
@@ -216,7 +216,7 @@ $$
 \xrightarrow{\ \sim\ }
 \operatorname{Gal}(K/K\cap E),
 \qquad
-\sigma\longmapsto\sigma|_K.
+\sigma\longmapsto\sigma\restrict_K.
 }
 $$
 

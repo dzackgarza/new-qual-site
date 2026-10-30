@@ -56,11 +56,11 @@ e^{i\xi_0x}f(x),
 $$
 while
 $$
-|e^{i\xi x}f(x)|
+\abs{e^{i\xi x}f(x)}
 =
-|f(x)|.
+\abs{f(x)}.
 $$
-Since $|f|\in L^1$, dominated convergence gives
+Since $\abs{f}\in L^1$, dominated convergence gives
 $$
 \mathcal Ff(\xi)
 \longrightarrow
@@ -77,7 +77,7 @@ For every $f\in L^1(\RR)$,
 $$
 \mathcal Ff(\xi)\longrightarrow0
 \qquad
-(|\xi|\to\infty).
+(\abs{\xi}\to\infty).
 $$
 
 
@@ -89,7 +89,7 @@ $$
 $$
 such that
 $$
-\|f-\phi\|_1<\frac{\varepsilon}{2};
+\norm{f-\phi}_1<\frac{\varepsilon}{2};
 $$
 the space $C_c^1(\RR)$ is dense in $L^1(\RR)$.
 
@@ -103,22 +103,22 @@ e^{i\xi x}\phi'(x)\,dx,
 $$
 because $\phi$ has compact support. Hence
 $$
-|\mathcal F\phi(\xi)|
+\abs{\mathcal F\phi(\xi)}
 \le
-\frac{\|\phi'\|_1}{|\xi|}
+\frac{\norm{\phi'}_1}{\abs{\xi}}
 \longrightarrow0.
 $$
 Also,
 $$
-|\mathcal F(f-\phi)(\xi)|
+\abs{\mathcal F(f-\phi)(\xi)}
 \le
-\|f-\phi\|_1
+\norm{f-\phi}_1
 <
 \frac\varepsilon2.
 $$
-For sufficiently large $|\xi|$, the first term is also less than $\varepsilon/2$, so
+For sufficiently large $\abs{\xi}$, the first term is also less than $\varepsilon/2$, so
 $$
-|\mathcal Ff(\xi)|<\varepsilon.
+\abs{\mathcal Ff(\xi)}<\varepsilon.
 $$
 
 :::
@@ -177,9 +177,9 @@ The Schwartz space is dense in $C_0(\RR)$ in the supremum norm.
 
 Fix $h\in C_0(\RR)$ and $\varepsilon>0$. Choose $R>0$ so that
 $$
-|h(x)|<\varepsilon
+\abs{h(x)}<\varepsilon
 \qquad
-(|x|>R).
+(\abs{x}>R).
 $$
 Choose a smooth cutoff $\chi\in C_c^\infty(\RR)$ with
 $$
@@ -189,12 +189,12 @@ $$
 $$
 Then
 $$
-\|h-\chi h\|_\infty<\varepsilon.
+\norm{h-\chi h}_\infty<\varepsilon.
 $$
 
 The continuous compactly supported function $\chi h$ is uniformly continuous. Let $(\rho_\delta)$ be a standard smooth approximate identity. For sufficiently small $\delta>0$,
 $$
-\|\rho_\delta*(\chi h)-\chi h\|_\infty<\varepsilon.
+\norm{\rho_\delta*(\chi h)-\chi h}_\infty<\varepsilon.
 $$
 The convolution
 $$
@@ -232,9 +232,9 @@ is bounded and injective.
 
 For every $f\in L^1$,
 $$
-\|\mathcal Ff\|_\infty
+\norm{\mathcal Ff}_\infty
 \le
-\|f\|_1,
+\norm{f}_1,
 $$
 so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for the Fourier transform on $L^1(\RR)$.
 
@@ -250,9 +250,9 @@ X=C_0(\RR).
 $$
 Then there is a constant $C>0$ such that
 $$
-\|f\|_1
+\norm{f}_1
 \le
-C\|\mathcal Ff\|_\infty
+C\norm{\mathcal Ff}_\infty
 \qquad
 (f\in L^1(\RR)).
 $$
@@ -274,7 +274,7 @@ a bounded linear bijection between Banach spaces. By the open mapping theorem, i
 
 There exists a sequence $(h_j)\subset C_c^\infty(\RR)$ such that
 $$
-\sup_j\|h_j\|_\infty<\infty
+\sup_j\norm{h_j}_\infty<\infty
 $$
 and
 $$
@@ -347,7 +347,7 @@ No continuous function can agree almost everywhere with this indicator. Indeed, 
 
 One has
 $$
-\liminf_{j\to\infty}\|g_j\|_1
+\liminf_{j\to\infty}\norm{g_j}_1
 =
 \infty.
 $$
@@ -357,10 +357,10 @@ $$
 
 Along the almost-everywhere convergent subsequence from step [](#s1-10){.pf-ref}, Fatou's lemma gives
 $$
-\int_{\RR}|g(x)|\,dx
+\int_{\RR}\abs{g(x)}\,dx
 \le
 \liminf_{j\to\infty}
-\int_{\RR}|g_j(x)|\,dx.
+\int_{\RR}\abs{g_j(x)}\,dx.
 $$
 The left-hand side is infinite by step [](#s1-11){.pf-ref}, so the liminf is infinite.
 
@@ -377,11 +377,11 @@ The surjectivity assumption in step [](#s1-8){.pf-ref} is impossible.
 
 By step [](#s1-8){.pf-ref},
 $$
-\|g_j\|_1
+\norm{g_j}_1
 \le
-C\|\mathcal Fg_j\|_\infty
+C\norm{\mathcal Fg_j}_\infty
 =
-C\|h_j\|_\infty.
+C\norm{h_j}_\infty.
 $$
 The right-hand side is uniformly bounded by step [](#s1-9){.pf-ref}, contradicting step [](#s1-12){.pf-ref}.
 

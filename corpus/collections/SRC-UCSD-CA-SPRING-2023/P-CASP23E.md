@@ -23,7 +23,7 @@ Let $f(z) = \frac{\cos z}{z(z-5)}$.
 
 (a) Prove that there is a sequence of rational functions $R_n(z)$ whose poles can only occur at $2$ and $6$ such that
 $$
-\lim_{n \to \infty} \sup_{3 \leq |z| \leq 4} |f(z) - R_n(z)| = 0.
+\lim_{n \to \infty} \sup_{3 \leq \abs{z} \leq 4} \abs{f(z) - R_n(z)} = 0.
 $$
 
 (b) Does there exist a sequence of rational functions $R_n(z)$ whose poles can only occur at $6$ such that the above limit holds?
@@ -42,7 +42,7 @@ Part (a): Rational approximation via Runge's Theorem:
 
 ::: pf-step
 
-Let $K = \{z \in \CC \mid 3 \le |z| \le 4\}$ be the closed annulus. $K$ is a compact subset of $\CC$.
+Let $K = \{z \in \CC \mid 3 \le \abs{z} \le 4\}$ be the closed annulus. $K$ is a compact subset of $\CC$.
 
 ::: pf-proof
 
@@ -55,8 +55,8 @@ closed and bounded subset of $\CC$.
 ::: pf-step
 
 The complement $\CC \setminus K$ consists of exactly two connected components:
-- The bounded component $U_1 = \{z \in \CC \mid |z| < 3\}$, which contains the point $2 \in U_1$.
-- The unbounded component $U_2 = \{z \in \CC \mid |z| > 4\}$, which contains the point $6 \in U_2$.
+- The bounded component $U_1 = \{z \in \CC \mid \abs{z} < 3\}$, which contains the point $2 \in U_1$.
+- The unbounded component $U_2 = \{z \in \CC \mid \abs{z} > 4\}$, which contains the point $6 \in U_2$.
 
 ::: pf-proof
 
@@ -96,7 +96,7 @@ poles $0, 5 \notin K$.
 By **Runge’s Theorem** (with prescribed poles), every function holomorphic in a neighborhood of a compact set $K$ can be uniformly approximated on $K$ by rational functions whose poles lie in $S$.
 Thus there exists a sequence of rational functions $R_n(z)$ with poles only in $\{2, 6\}$ such that:
 $$
-\lim_{n \to \infty} \sup_{z \in K} |f(z) - R_n(z)| = 0.
+\lim_{n \to \infty} \sup_{z \in K} \abs{f(z) - R_n(z)} = 0.
 $$
 
 ::: pf-proof
@@ -157,7 +157,7 @@ $3 \le 3.5 \le 4$.
 ::: pf-step
 
 For each $n$, the only pole of $R_n(z)$ is at $z = 6$.
-Since $|6| = 6 > 3.5$, the closed disk $\overline{D}(0, 3.5)$ contains no poles of $R_n(z)$.
+Since $\abs{6} = 6 > 3.5$, the closed disk $\overline{D}(0, 3.5)$ contains no poles of $R_n(z)$.
 Thus $R_n$ is holomorphic on a simply connected neighborhood of $\overline{D}(0, 3.5)$, so by Cauchy’s Integral Theorem:
 $$
 \int_\gamma R_n(z) \, dz = 0 \quad \text{for all } n \ge 1.
@@ -189,7 +189,7 @@ uniform convergence on compact contours preserves integrals.
 ::: pf-step
 
 On the other hand, compute $\int_\gamma f(z) \, dz$ directly using the Residue Theorem:
-Inside $\gamma$, the function $f(z) = \frac{\cos z}{z(z-5)}$ has a single singularity at $z = 0$ (a simple pole), since $|0| < 3.5 < 5 = |5|$.
+Inside $\gamma$, the function $f(z) = \frac{\cos z}{z(z-5)}$ has a single singularity at $z = 0$ (a simple pole), since $\abs{0} < 3.5 < 5 = \abs{5}$.
 Compute the residue:
 $$
 \operatorname{Res}(f, 0) = \lim_{z \to 0} z f(z) = \lim_{z \to 0} \frac{\cos z}{z - 5} = \frac{\cos 0}{-5} = -\frac{1}{5}.

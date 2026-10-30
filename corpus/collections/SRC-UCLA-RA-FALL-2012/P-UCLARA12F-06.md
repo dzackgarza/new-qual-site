@@ -19,16 +19,16 @@ audit:
 ::: {.problem}
 Let $f\in L^1(\RR)$ and let $Mf$ denote its maximal function,
 $$
-(Mf)(x)=\sup_{0<r<\infty}\frac1{2r}\int_{-r}^{r}|f(x-y)|\,dy.
+(Mf)(x)=\sup_{0<r<\infty}\frac1{2r}\int_{-r}^{r}\abs{f(x-y)}\,dy.
 $$
 By the Hardy--Littlewood maximal function theorem,
 $$
-|\{x\in\RR:(Mf)(x)>\lambda\}|\le 3\lambda^{-1}\|f\|_{L^1}
+\setmeasure{\{x\in\RR:(Mf)(x)>\lambda\}}\le 3\lambda^{-1}\norm{f}_{L^1}
 \qquad(\lambda>0).
 $$
 Using this, show that
 $$
-\limsup_{r\to0}\frac1{2r}\int_{-r}^{r}|f(y)-f(x)|\,dy=0
+\limsup_{r\to0}\frac1{2r}\int_{-r}^{r}\abs{f(y)-f(x)}\,dy=0
 $$
 for almost every $x\in\RR$.
 :::
@@ -41,7 +41,7 @@ D f(x)
 \coloneqq
 \limsup_{r\to0}
 \frac1{2r}
-\int_{-r}^r|f(x-y)-f(x)|\,dy.
+\int_{-r}^r\abs{f(x-y)-f(x)}\,dy.
 $$
 
 ::: pf
@@ -59,11 +59,11 @@ for every $x\in\RR$.
 
 Fix $x$. By continuity of $g$ at $x$, for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
-|g(x-y)-g(x)|<\varepsilon
+\abs{g(x-y)-g(x)}<\varepsilon
 $$
-whenever $|y|<\delta$. Hence for $0<r<\delta$,
+whenever $\abs{y}<\delta$. Hence for $0<r<\delta$,
 $$
-\frac1{2r}\int_{-r}^r|g(x-y)-g(x)|\,dy<\varepsilon.
+\frac1{2r}\int_{-r}^r\abs{g(x-y)-g(x)}\,dy<\varepsilon.
 $$
 Thus the limsup is $0$.
 
@@ -77,7 +77,7 @@ For every $g\in C_c(\RR)$ and almost every $x$,
 $$
 Df(x)
 \le
-M(f-g)(x)+|f(x)-g(x)|.
+M(f-g)(x)+\abs{f(x)-g(x)}.
 $$
 
 
@@ -85,19 +85,19 @@ $$
 
 Write $h=f-g$. Then
 $$
-|f(x-y)-f(x)|
+\abs{f(x-y)-f(x)}
 \le
-|g(x-y)-g(x)|+|h(x-y)|+|h(x)|.
+\abs{g(x-y)-g(x)}+\abs{h(x-y)}+\abs{h(x)}.
 $$
 Averaging over $[-r,r]$ gives
 $$
 \begin{aligned}
-\frac1{2r}\int_{-r}^r|f(x-y)-f(x)|\,dy
+\frac1{2r}\int_{-r}^r\abs{f(x-y)-f(x)}\,dy
 &\le
-\frac1{2r}\int_{-r}^r|g(x-y)-g(x)|\,dy\\
+\frac1{2r}\int_{-r}^r\abs{g(x-y)-g(x)}\,dy\\
 &\quad+
-\frac1{2r}\int_{-r}^r|h(x-y)|\,dy
-+|h(x)|.
+\frac1{2r}\int_{-r}^r\abs{h(x-y)}\,dy
++\abs{h(x)}.
 \end{aligned}
 $$
 Taking the limsup as $r\to0$, using step [](#s1-1){.pf-ref} and the definition of the maximal function, yields the inequality.
@@ -110,9 +110,9 @@ Taking the limsup as $r\to0$, using step [](#s1-1){.pf-ref} and the definition o
 
 For every $\lambda>0$ and every $g\in C_c(\RR)$,
 $$
-\bigl|\{x:Df(x)>2\lambda\}\bigr|
+\setmeasure{\{x:Df(x)>2\lambda\}}
 \le
-\frac4\lambda\|f-g\|_{L^1}.
+\frac4\lambda\norm{f-g}_{L^1}.
 $$
 
 
@@ -122,17 +122,17 @@ Set $h=f-g$. By step [](#s1-2){.pf-ref},
 $$
 \{Df>2\lambda\}
 \subseteq
-\{Mh>\lambda\}\cup\{|h|>\lambda\}.
+\{Mh>\lambda\}\cup\{\abs{h}>\lambda\}.
 $$
 The given Hardy--Littlewood maximal inequality gives
 $$
-|\{Mh>\lambda\}|
-\le\frac3\lambda\|h\|_1.
+\setmeasure{\{Mh>\lambda\}}
+\le\frac3\lambda\norm{h}_1.
 $$
 Chebyshev's inequality gives
 $$
-|\{|h|>\lambda\}|
-\le\frac1\lambda\|h\|_1.
+\setmeasure{\{\abs{h}>\lambda\}}
+\le\frac1\lambda\norm{h}_1.
 $$
 Adding the bounds proves the claim.
 
@@ -144,7 +144,7 @@ Adding the bounds proves the claim.
 
 For every $\lambda>0$,
 $$
-\bigl|\{x:Df(x)>2\lambda\}\bigr|=0.
+\setmeasure{\{x:Df(x)>2\lambda\}}=0.
 $$
 
 
@@ -152,11 +152,11 @@ $$
 
 The space $C_c(\RR)$ is dense in $L^1(\RR)$. Given $\varepsilon>0$, choose $g\in C_c(\RR)$ such that
 $$
-\|f-g\|_1<\frac{\varepsilon\lambda}{4}.
+\norm{f-g}_1<\frac{\varepsilon\lambda}{4}.
 $$
 Step [](#s1-3){.pf-ref} then gives
 $$
-|\{Df>2\lambda\}|<\varepsilon.
+\setmeasure{\{Df>2\lambda\}}<\varepsilon.
 $$
 Since $\varepsilon>0$ is arbitrary, the set has measure zero.
 

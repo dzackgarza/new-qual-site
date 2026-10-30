@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Suppose that $G$ is a finite group and $P$ is a $p$-subgroup of $G$ for some prime $p$.
-Prove that $$|\{Q \in \operatorname{Syl}_p(G) \mid P \subseteq Q\}| \equiv 1 \pmod{p},$$ where $\operatorname{Syl}_p(G)$ is the set of Sylow $p$-subgroups of $G$.
+Prove that $$\cardinality{\{Q \in \operatorname{Syl}_p(G) \mid P \subseteq Q\}} \equiv 1 \pmod{p},$$ where $\operatorname{Syl}_p(G)$ is the set of Sylow $p$-subgroups of $G$.
 :::
 
 ::: {.solution}
@@ -56,7 +56,7 @@ If $P\le Q$, then every element of $P$ lies in $Q$, so it normalizes $Q$; thus $
 
 Conversely, suppose $Q\in X$ is fixed by $P$. Then $P\le N_G(Q)$, so $Q\trianglelefteq PQ$. Therefore $PQ$ is a subgroup of $G$. Since both $P$ and $Q$ are $p$-groups and $Q\trianglelefteq PQ$, the order formula
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}
 $$
 shows that $PQ$ is a $p$-group. But $Q$ is Sylow in $G$, so no larger $p$-subgroup can contain it. Hence $PQ=Q$, and therefore $P\le Q$.
 
@@ -68,7 +68,7 @@ shows that $PQ$ is a $p$-group. But $Q$ is Sylow in $G$, so no larger $p$-subgro
 
 For any action of a finite $p$-group on a finite set,
 $$
-|X|\equiv |X^P|\pmod p.
+\cardinality{X}\equiv \cardinality{X^P}\pmod p.
 $$
 
 ::: pf-proof
@@ -83,7 +83,7 @@ Every orbit has cardinality a power of $p$. The orbits of size $1$ are exactly t
 
 By Sylow's theorem,
 $$
-|X|=|\operatorname{Syl}_p(G)|\equiv1\pmod p.
+\cardinality{X}=\cardinality{\operatorname{Syl}_p(G)}\equiv1\pmod p.
 $$
 
 ::: pf-proof
@@ -98,8 +98,8 @@ The number of Sylow $p$-subgroups of a finite group is congruent to $1$ modulo $
 
 Therefore
 $$
-\left|\{Q\in\operatorname{Syl}_p(G)\mid P\subseteq Q\}\right|
-=|X^P|\equiv1\pmod p.
+\cardinality{\{Q\in\operatorname{Syl}_p(G)\mid P\subseteq Q\}}
+=\cardinality{X^P}\equiv1\pmod p.
 $$
 
 ::: pf-proof

@@ -15,11 +15,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $K$ be a proper closed arc of the unit circle $|z| = 1$.
+Let $K$ be a proper closed arc of the unit circle $\abs{z} = 1$.
 
 (i) Is there a sequence of polynomials $P_n(z)$ such that $P_n(z) \to \bar{z}$ uniformly in $K$?
 
-(ii) Is there a sequence of polynomials $P_n(z)$ such that $P_n(z) \to \bar{z}$ uniformly on the circle $|z| = 1$?
+(ii) Is there a sequence of polynomials $P_n(z)$ such that $P_n(z) \to \bar{z}$ uniformly on the circle $\abs{z} = 1$?
 
 Please justify your answers.
 :::
@@ -35,12 +35,12 @@ P_n\to\bar z
 $$
 uniformly on $K$.
 
-(ii) No. On $|z|=1$ one has $\bar z=1/z$. If polynomials $P_n$ converged
+(ii) No. On $\abs{z}=1$ one has $\bar z=1/z$. If polynomials $P_n$ converged
 uniformly to $1/z$ on the unit circle, then
 $$
-0=\int_{|z|=1}P_n(z)\,dz
+0=\int_{\abs{z}=1}P_n(z)\,dz
 \longrightarrow
-\int_{|z|=1}\frac{dz}{z}=2\pi i,
+\int_{\abs{z}=1}\frac{dz}{z}=2\pi i,
 $$
 a contradiction.
 :::

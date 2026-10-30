@@ -75,12 +75,12 @@ A point outside $K$ admits a direction in which every vector from a root to that
 ::: pf-proof
 
 Suppose $w\notin K$. The set $K$ is compact and convex, so there is a point
-$q\in K$ minimizing $|w-q|$. Put $v=w-q\ne0$.
+$q\in K$ minimizing $\abs{w-q}$. Put $v=w-q\ne0$.
 
 For any $\zeta\in K$ and $0\le t\le1$, convexity gives
 $q+t(\zeta-q)\in K$. Minimality of $q$ implies
 $$
-|w-q|^2\le |w-q-t(\zeta-q)|^2.
+\abs{w-q}^2\le \abs{w-q-t(\zeta-q)}^2.
 $$
 Expanding and dividing by $t>0$, then letting $t\downarrow0$, gives
 $$
@@ -89,8 +89,8 @@ $$
 Therefore
 $$
 \operatorname{Re}\bigl(v\,\overline{(w-\zeta)}\bigr)
-=|v|^2-\operatorname{Re}\bigl(\overline v(\zeta-q)\bigr)
-\ge |v|^2>0.
+=\abs{v}^2-\operatorname{Re}\bigl(\overline v(\zeta-q)\bigr)
+\ge \abs{v}^2>0.
 $$
 In particular this holds for every zero $\zeta$ of $P$.
 
@@ -116,7 +116,7 @@ $$
 If in addition $w\notin K$, step [](#s2){.pf-ref} gives for every $j$
 $$
 \operatorname{Re}\left(\frac{v}{w-\zeta_j}\right)
-=\frac{\operatorname{Re}\bigl(v\overline{(w-\zeta_j)}\bigr)}{|w-\zeta_j|^2}>0.
+=\frac{\operatorname{Re}\bigl(v\overline{(w-\zeta_j)}\bigr)}{\abs{w-\zeta_j}^2}>0.
 $$
 Hence
 $$

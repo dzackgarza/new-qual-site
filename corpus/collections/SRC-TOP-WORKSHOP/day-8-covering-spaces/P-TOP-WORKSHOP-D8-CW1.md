@@ -21,7 +21,7 @@ Explicitly prove that $\RR$ is that universal cover of $S^1$.
 :::
 
 ::: {.solution}
-View $S^1$ as $\{z \in \CC : |z| = 1\}$ and let $p\colon \RR \to S^1$, $p(t) = e^{2\pi i t}$. The map $p$ is continuous and surjective, and $p(t) = p(s)$ if and only if $t - s \in \ZZ$.
+View $S^1$ as $\{z \in \CC : \abs{z} = 1\}$ and let $p\colon \RR \to S^1$, $p(t) = e^{2\pi i t}$. The map $p$ is continuous and surjective, and $p(t) = p(s)$ if and only if $t - s \in \ZZ$.
 
 ::: pf
 
@@ -41,7 +41,7 @@ because $p(t) = -z_0$ exactly when $t \in t_0 + \tfrac12 + \ZZ$; the $V_k$ are p
 $$
 \sigma_k(z) = t_0 + k + \frac{1}{2\pi} \operatorname{Arg}\left(z e^{-2\pi i t_0}\right)
 $$
-is a continuous map $U \to V_k$ with $p \circ \sigma_k = \operatorname{id}_U$ and $\sigma_k \circ p|_{V_k} = \operatorname{id}_{V_k}$. Hence each $p|_{V_k}\colon V_k \to U$ is a homeomorphism.
+is a continuous map $U \to V_k$ with $p \circ \sigma_k = \operatorname{id}_U$ and $\sigma_k \circ p\restrict_{V_k} = \operatorname{id}_{V_k}$. Hence each $p\restrict_{V_k}\colon V_k \to U$ is a homeomorphism.
 
 :::
 

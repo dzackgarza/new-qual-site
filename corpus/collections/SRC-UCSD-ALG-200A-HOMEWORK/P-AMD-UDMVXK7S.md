@@ -94,15 +94,15 @@ $$
 Let $Q$ be the unique Sylow $q$-subgroup from step [](#s1){.pf-ref} and let $P$ be any Sylow $p$-subgroup.
 Then
 $$
-|Q|=q,
+\cardinality{Q}=q,
 \qquad
-|P|=p,
+\cardinality{P}=p,
 \qquad
 Q\cap P=\{1\}.
 $$
 Since $Q\normal G$, the product $QP$ is a subgroup, and
 $$
-|QP|=\frac{|Q||P|}{|Q\cap P|}=pq=|G|.
+\cardinality{QP}=\frac{\cardinality{Q}\cardinality{P}}{\cardinality{Q\cap P}}=pq=\cardinality{G}.
 $$
 Hence $G=QP$.
 Conjugation by $P$ preserves $Q$ and defines a homomorphism
@@ -245,7 +245,7 @@ Therefore all nontrivial actions yield isomorphic semidirect products.
 Fix an integer $r$ whose residue class modulo $q$ has order $p$ in $(\ZZ/q\ZZ)^\times$.
 Then the nontrivial semidirect product has presentation
 $$
-\left\langle a,b\ \middle|\ a^q=1,\ b^p=1,\ bab^{-1}=a^r\right\rangle.
+\left\langle a,b\ \presentationbar\ a^q=1,\ b^p=1,\ bab^{-1}=a^r\right\rangle.
 $$
 
 ::: pf-proof
@@ -269,7 +269,7 @@ $$
 has order $pq$ and satisfies the three displayed relations.
 Consequently the presented group
 $$
-\Gamma=\left\langle a,b\ \middle|\ a^q=1,\ b^p=1,\ bab^{-1}=a^r\right\rangle
+\Gamma=\left\langle a,b\ \presentationbar\ a^q=1,\ b^p=1,\ bab^{-1}=a^r\right\rangle
 $$
 surjects onto $S$.
 
@@ -288,13 +288,13 @@ a^i b^j,
 $$
 Hence
 $$
-|\Gamma|\le pq.
+\cardinality{\Gamma}\le pq.
 $$
 Since $\Gamma$ surjects onto the group $S$ of order $pq$,
 $$
-|\Gamma|\ge pq.
+\cardinality{\Gamma}\ge pq.
 $$
-Thus $|\Gamma|=pq$, and the surjection $\Gamma\to S$ is an isomorphism.
+Thus $\cardinality{\Gamma}=pq$, and the surjection $\Gamma\to S$ is an isomorphism.
 This proves that the presentation is correct.
 
 :::

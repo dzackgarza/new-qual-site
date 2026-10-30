@@ -184,14 +184,14 @@ The boundary term at infinity vanishes for $k>1$, and the value at $0$ is $1/(k-
 
 For $k>2$,
 $$
-\left|\int_0^\infty(1+t)^{1-k}\sin t\,dt\right|
+\abs{\int_0^\infty(1+t)^{1-k}\sin t\,dt}
 \leq\frac1{k-2}.
 $$
 
 
 ::: pf-proof
 
-Use $|\sin t|\leq1$ and compute
+Use $\abs{\sin t}\leq1$ and compute
 $$
 \int_0^\infty(1+t)^{1-k}\,dt=\frac1{k-2}.
 $$

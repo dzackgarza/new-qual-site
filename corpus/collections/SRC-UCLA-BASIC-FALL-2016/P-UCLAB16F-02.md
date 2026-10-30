@@ -102,7 +102,7 @@ M=
 $$
 Then the optimal constant is
 $$
-C=e^2\|M\|_{\mathrm{op}}.
+C=e^2\norm{M}_{\mathrm{op}}.
 $$
 
 
@@ -110,13 +110,13 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-\|e^Ax\|
+\norm{e^Ax}
 =
-e^2\|Mx\|.
+e^2\norm{Mx}.
 $$
 The least constant $C$ satisfying
 $$
-\|e^Ax\|\le C\|x\|
+\norm{e^Ax}\le C\norm{x}
 $$
 for every $x$ is therefore $e^2$ times the Euclidean operator norm of $M$.
 
@@ -198,7 +198,7 @@ $$
 The Euclidean operator norm of $M$ is
 $$
 \boxed{
-\|M\|_{\mathrm{op}}
+\norm{M}_{\mathrm{op}}
 =
 \sqrt{\frac{3+\sqrt5}{2}}
 =
@@ -211,7 +211,7 @@ $$
 
 For any real matrix $M$,
 $$
-\|M\|_{\mathrm{op}}^2
+\norm{M}_{\mathrm{op}}^2
 $$
 is the largest eigenvalue of the symmetric positive-semidefinite matrix
 $$
@@ -223,7 +223,7 @@ $$
 $$
 Thus
 $$
-\|M\|_{\mathrm{op}}
+\norm{M}_{\mathrm{op}}
 =
 \sqrt{\frac{3+\sqrt5}{2}}.
 $$

@@ -105,7 +105,7 @@ $\pi_2(A) \cong \ZZ$ and $\pi_1(A) \cong \ZZ$.
 ::: pf-proof
 
 ::: pf-step
-$A = S^1 \times S^2_\alpha$ is the mapping torus of $f|_{S^2_\alpha} = \id$.
+$A = S^1 \times S^2_\alpha$ is the mapping torus of $f\restrict_{S^2_\alpha} = \id$.
 
 ::: pf-proof
 the restriction of $f$ to $S^2_\alpha$ is the identity, so its mapping torus is $S^1 \times S^2_\alpha$.

@@ -173,7 +173,7 @@ Evaluation defines a natural morphism, and it is an isomorphism for finite sums 
 ::: pf-proof
 On a standard affine open $D_+(f)$ with $f\in S_1$, define the evaluation map by
 $$
-s/f^n\longmapsto s|_{D_+(f)}\otimes f^{-n},
+s/f^n\longmapsto s\restrict_{D_+(f)}\otimes f^{-n},
 \qquad s\in\Gamma(X,\mcf(n)).
 $$
 The factor $f^{-n}$ trivializes $\OO_X(-n)$ on this open set.

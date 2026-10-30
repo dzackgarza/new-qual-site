@@ -21,7 +21,7 @@ Find the eigenvalues and eigenvectors of $M = { \left( \begin{array} { l } { 0 \
 We see
 
 $$
-\operatorname* { d e t } ( M - \lambda I ) = { \left| \begin{array} { l l l } { - \lambda } & { 1 } & { 1 } \\ { 1 } & { - \lambda } & { 1 } \\ { 1 } & { 1 } & { - \lambda } \end{array} \right| } = - \lambda ( \lambda ^ { 2 } - 1 ) - ( - \lambda - 1 ) + ( 1 + \lambda )
+\operatorname* { d e t } ( M - \lambda I ) = { \determinant{ \begin{array} { l l l } { - \lambda } & { 1 } & { 1 } \\ { 1 } & { - \lambda } & { 1 } \\ { 1 } & { 1 } & { - \lambda } \end{array} } } = - \lambda ( \lambda ^ { 2 } - 1 ) - ( - \lambda - 1 ) + ( 1 + \lambda )
 $$
 
 where we used co-factor expansion across the top row.

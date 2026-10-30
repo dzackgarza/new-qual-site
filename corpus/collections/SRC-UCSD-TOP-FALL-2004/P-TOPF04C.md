@@ -37,7 +37,7 @@ We argue by contradiction.
 ::: pf-step
 With $\FF_2$ coefficients,
 $$
-H^*(\RP^m;\FF_2)\cong\FF_2[x]/(x^{m+1}),\qquad |x|=1.
+H^*(\RP^m;\FF_2)\cong\FF_2[x]/(x^{m+1}),\qquad \gradeddegree{x}=1.
 $$
 
 ::: pf-proof

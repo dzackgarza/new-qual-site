@@ -40,20 +40,20 @@ $$
 
 For a finite chain complex of finite-dimensional $F$-vector spaces and a chain endomorphism $T$, one has
 $$
-\sum_n(-1)^n\operatorname{tr}(T|C_n)
+\sum_n(-1)^n\operatorname{tr}(T\restrict C_n)
 =
-\sum_n(-1)^n\operatorname{tr}(T_*|H_n).
+\sum_n(-1)^n\operatorname{tr}(T_*\restrict H_n).
 $$
 
 ::: pf-proof
 
 Use the invariant subspaces $B_n\subset Z_n\subset C_n$. Additivity of trace in short exact sequences gives
 $$
-\operatorname{tr}(T|C_n)=\operatorname{tr}(T|Z_n)+\operatorname{tr}(T|B_{n-1})
+\operatorname{tr}(T\restrict C_n)=\operatorname{tr}(T\restrict Z_n)+\operatorname{tr}(T\restrict B_{n-1})
 $$
 and
 $$
-\operatorname{tr}(T|Z_n)=\operatorname{tr}(T|B_n)+\operatorname{tr}(T_*|H_n).
+\operatorname{tr}(T\restrict Z_n)=\operatorname{tr}(T\restrict B_n)+\operatorname{tr}(T_*\restrict H_n).
 $$
 Summing with alternating signs cancels the boundary terms.
 

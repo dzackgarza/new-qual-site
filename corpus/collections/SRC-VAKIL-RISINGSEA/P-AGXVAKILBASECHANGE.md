@@ -66,7 +66,7 @@ $$
 so it induces an additive endomorphism $R_{b',c'}$ of $B\tensor_A C$.
 The map $(b',c')\mapsto R_{b',c'}$ into $\operatorname{End}_{\ZZ}(B\tensor_A C)$ is biadditive, and $R_{\phi(a)b',c'}=R_{b',\psi(a)c'}$ because both send $b\tensor c$ to $\phi(a)bb'\tensor cc'=bb'\tensor\psi(a)cc'$.
 So it induces an additive map $y\mapsto R_y$ on $B\tensor_A C$.
-Define $xy\definedas R_y(x)$.
+Define $xy\coloneqq R_y(x)$.
 This is additive in $x$ because each $R_y$ is additive, and additive in $y$ because $y\mapsto R_y$ is additive.
 On elementary tensors it is the displayed formula.
 :::

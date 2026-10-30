@@ -149,7 +149,7 @@ Hence $m$ can be reduced to $0$ or $1$, while $n$ is taken modulo $4$.
 This gives at most the eight displayed normal forms.
 Therefore
 $$
-|P|\le8.
+\cardinality{P}\le8.
 $$
 
 :::
@@ -205,9 +205,9 @@ The homomorphism $\Phi$ is an isomorphism.
 
 By step [](#s3){.pf-ref}, the group $P$ has at most eight elements.
 By step [](#s4){.pf-ref}, it surjects onto $Q_8$, which has exactly eight elements.
-Therefore $|P|\ge8$, so in fact
+Therefore $\cardinality{P}\ge8$, so in fact
 $$
-|P|=8.
+\cardinality{P}=8.
 $$
 A surjection between two finite sets of the same cardinality is bijective.
 Thus $\Phi$ is an isomorphism, proving the stated presentation of $Q_8$.

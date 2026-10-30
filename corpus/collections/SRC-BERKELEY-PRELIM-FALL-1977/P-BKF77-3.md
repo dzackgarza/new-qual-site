@@ -59,11 +59,11 @@ $$
 $$
 Because $v\ne0$, this forces
 $$
-|\lambda|^k\to0,
+\abs{\lambda}^k\to0,
 $$
 which is possible only when
 $$
-\boxed{|\lambda|<1.}
+\boxed{\abs{\lambda}<1.}
 $$
 
 :::
@@ -94,7 +94,7 @@ powers tending to zero.
 
 ::: {.pf-step #s3}
 
-Powers of a Jordan block with $|\lambda|<1$ tend to zero.
+Powers of a Jordan block with $\abs{\lambda}<1$ tend to zero.
 
 ::: pf-proof
 
@@ -120,17 +120,17 @@ for all $k\ge r$.
 
 Now suppose
 $$
-0<|\lambda|<1.
+0<\abs{\lambda}<1.
 $$
 For each fixed $j<r$,
 $$
-\binom{k}{j}|\lambda|^{k-j}
-\le \frac{k^j}{j!}|\lambda|^{k-j}.
+\binom{k}{j}\abs{\lambda}^{k-j}
+\le \frac{k^j}{j!}\abs{\lambda}^{k-j}.
 $$
 An exponential with ratio strictly less than $1$ dominates every fixed
 polynomial, so
 $$
-k^j|\lambda|^k\longrightarrow0.
+k^j\abs{\lambda}^k\longrightarrow0.
 $$
 Hence
 $$
@@ -165,7 +165,7 @@ $$
 \boxed{
 T^k\to0
 \iff
-\text{every eigenvalue $\lambda$ of $T$ satisfies $|\lambda|<1$.}}
+\text{every eigenvalue $\lambda$ of $T$ satisfies $\abs{\lambda}<1$.}}
 $$
 
 :::

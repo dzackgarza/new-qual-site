@@ -92,7 +92,7 @@ $$
 where only finitely many multiplicities are nonzero, $S$ contains one representative from each conjugate pair of nonreal complex numbers, and
 $$
 q_z(x):=(x-z)(x-\bar z)
-=x^2-2\operatorname{Re}(z)x+|z|^2
+=x^2-2\operatorname{Re}(z)x+\abs{z}^2
 \in\RR[x].
 $$
 These are exactly the monic irreducible polynomials over $\RR$: the linear factors and the quadratics $q_z$.

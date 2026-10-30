@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and let $p$ be the smallest prime dividing $|G|$.
+Let $G$ be a finite group and let $p$ be the smallest prime dividing $\cardinality{G}$.
 Assume that $G$ has a unique subgroup $H$ of order $p$.
 Show that $H$ is contained in the center of $G$.
 
@@ -82,15 +82,15 @@ For every $g\in G$, the automorphism $\theta(g)$ is trivial.
 
 ::: pf-proof
 
-Since $|H|=p$, the group $H$ is cyclic, so
+Since $\cardinality{H}=p$, the group $H$ is cyclic, so
 $$
-|\operatorname{Aut}(H)|=p-1.
+\cardinality{\operatorname{Aut}(H)}=p-1.
 $$
 Let $r=\operatorname{ord}(\theta(g))$.
-Because $\theta$ is a homomorphism, $r$ divides $\operatorname{ord}(g)$, hence $r$ divides $|G|$ by Lagrange's theorem.
+Because $\theta$ is a homomorphism, $r$ divides $\operatorname{ord}(g)$, hence $r$ divides $\cardinality{G}$ by Lagrange's theorem.
 Also $r$ divides $p-1$ because $\theta(g)\in\operatorname{Aut}(H)$.
 
-If a prime $q$ divided $r$, then $q\mid |G|$ and therefore $q\ge p$, since $p$ is the smallest prime dividing $|G|$.
+If a prime $q$ divided $r$, then $q\mid \cardinality{G}$ and therefore $q\ge p$, since $p$ is the smallest prime dividing $\cardinality{G}$.
 But $q\mid p-1$ also gives $q\le p-1<p$, a contradiction.
 Hence $r$ has no prime divisor, so $r=1$.
 Therefore $\theta(g)=\operatorname{id}_H$.

@@ -47,7 +47,7 @@ f(x)e^{-2\pi i x\xi_n}\longrightarrow f(x)e^{-2\pi i x\xi},
 $$
 and
 $$
-|f(x)e^{-2\pi i x\xi_n}|=|f(x)|\in L^1(\RR).
+\abs{f(x)e^{-2\pi i x\xi_n}}=\abs{f(x)}\in L^1(\RR).
 $$
 Dominated convergence gives
 $$
@@ -72,8 +72,8 @@ $$
 $$
 because the boundary term vanishes. Hence
 $$
-|\widehat g(\xi)|\le\frac{\|g'\|_1}{2\pi|\xi|}\longrightarrow0
-\qquad(|\xi|\to\infty).
+\abs{\widehat g(\xi)}\le\frac{\norm{g'}_1}{2\pi\abs{\xi}}\longrightarrow0
+\qquad(\abs{\xi}\to\infty).
 $$
 
 :::
@@ -88,20 +88,20 @@ Approximate an arbitrary $L^1$ function.
 
 Fix $\varepsilon>0$. Choose $g\in C_c^1(\RR)$ such that
 $$
-\|f-g\|_1<\frac{\varepsilon}{2},
+\norm{f-g}_1<\frac{\varepsilon}{2},
 $$
 using density of $C_c^1(\RR)$ in $L^1(\RR)$. For every $\xi$,
 $$
-|\widehat f(\xi)-\widehat g(\xi)|
-\le\|f-g\|_1<\frac{\varepsilon}{2}.
+\abs{\widehat f(\xi)-\widehat g(\xi)}
+\le\norm{f-g}_1<\frac{\varepsilon}{2}.
 $$
-By step [](#s2){.pf-ref}, there exists $R$ such that $|\widehat g(\xi)|<\varepsilon/2$ whenever $|\xi|>R$. Therefore, for $|\xi|>R$,
+By step [](#s2){.pf-ref}, there exists $R$ such that $\abs{\widehat g(\xi)}<\varepsilon/2$ whenever $\abs{\xi}>R$. Therefore, for $\abs{\xi}>R$,
 $$
-|\widehat f(\xi)|
-\le|\widehat f(\xi)-\widehat g(\xi)|+|\widehat g(\xi)|
+\abs{\widehat f(\xi)}
+\le\abs{\widehat f(\xi)-\widehat g(\xi)}+\abs{\widehat g(\xi)}
 <\varepsilon.
 $$
-Thus $\widehat f(\xi)\to0$ as $|\xi|\to\infty$. Together with continuity, this proves
+Thus $\widehat f(\xi)\to0$ as $\abs{\xi}\to\infty$. Together with continuity, this proves
 $$
 \widehat f\in C_0(\RR).
 $$

@@ -26,10 +26,10 @@ audit:
 ::: {.problem}
 Let $\mu$ be a finite positive measure on $(\RR, \mathcal{B})$, $f : \RR \to \CC$ be a Borel measurable function, and for $x \in \RR$, let
 $$
-(\mu * f)(x) := \begin{cases} \int_{\RR} f(x - y)\,d\mu(y) & \text{if } \int_{\RR} |f(x - y)|\,d\mu(y) < \infty, \\ 0 & \text{otherwise.} \end{cases}
+(\mu * f)(x) := \begin{cases} \int_{\RR} f(x - y)\,d\mu(y) & \text{if } \int_{\RR} \abs{f(x - y)}\,d\mu(y) < \infty, \\ 0 & \text{otherwise.} \end{cases}
 $$
 
-1. For $1 \leq p < \infty$ and $f \in L^p(m)$, show $\|\mu * f\|_{L^p(m)} \leq \mu(\RR) \cdot \|f\|_{L^p(m)}$.
+1. For $1 \leq p < \infty$ and $f \in L^p(m)$, show $\norm{\mu * f}_{L^p(m)} \leq \mu(\RR) \cdot \norm{f}_{L^p(m)}$.
 
 2. If $f \in L^1(\RR, m)$, show $\widehat{\mu * f}(k) = \sqrt{2\pi}\,\hat{\mu}(k)\hat{f}(k)$ for all $k \in \RR$.
 
@@ -51,20 +51,20 @@ Prove the $L^p$ convolution bound.
 
 For $y\in\RR$, let $\tau_y f(x)=f(x-y)$. Translation invariance of Lebesgue measure gives
 $$
-\|\tau_y f\|_p=\|f\|_p.
+\norm{\tau_y f}_p=\norm{f}_p.
 $$
 Minkowski's integral inequality therefore yields
 $$
 \begin{aligned}
-\|\mu*f\|_p
-&=\left\|\int_{\RR}\tau_y f\,d\mu(y)\right\|_p\\
-&\le \int_{\RR}\|\tau_y f\|_p\,d\mu(y)\\
-&=\mu(\RR)\|f\|_p.
+\norm{\mu*f}_p
+&=\norm{\int_{\RR}\tau_y f\,d\mu(y)}_p\\
+&\le \int_{\RR}\norm{\tau_y f}_p\,d\mu(y)\\
+&=\mu(\RR)\norm{f}_p.
 \end{aligned}
 $$
 In particular the defining integral is finite for almost every $x$, and
 $$
-\boxed{\|\mu*f\|_p\le\mu(\RR)\|f\|_p.}
+\boxed{\norm{\mu*f}_p\le\mu(\RR)\norm{f}_p.}
 $$
 
 :::
@@ -79,8 +79,8 @@ Compute the Fourier transform.
 
 Assume $f\in L^1(\RR)$. Part 1 gives $\mu*f\in L^1$, and Tonelli--Fubini applies because
 $$
-\int_{\RR}\int_{\RR}|f(x-y)|\,d\mu(y)\,dx
-=\mu(\RR)\|f\|_1<\infty.
+\int_{\RR}\int_{\RR}\abs{f(x-y)}\,d\mu(y)\,dx
+=\mu(\RR)\norm{f}_1<\infty.
 $$
 Using
 $$
@@ -115,7 +115,7 @@ Apply Fourier inversion.
 
 Assume now that $f,\widehat f\in L^1(\RR)$. Since $\mu$ is finite,
 $$
-|\widehat\mu(k)|
+\abs{\widehat\mu(k)}
 \le \frac{\mu(\RR)}{\sqrt{2\pi}},
 $$
 so

@@ -104,7 +104,7 @@ By the Künneth theorem, $\alpha$ and $\beta$ are pulled back from the two facto
 
 Thus
 $$
-\boxed{H^*(X;\ZZ)\cong \Lambda_{\ZZ}(\alpha,\beta),\qquad |\alpha|=|\beta|=1.}
+\boxed{H^*(X;\ZZ)\cong \Lambda_{\ZZ}(\alpha,\beta),\qquad \gradeddegree{\alpha}=\gradeddegree{\beta}=1.}
 $$
 
 ::: pf-proof

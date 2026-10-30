@@ -79,7 +79,7 @@ $\RR^n$ has an orthonormal basis $u_1,\ldots,u_n$ of eigenvectors of $A$, and wi
 
 ::: pf-proof
 
-We argue by induction on $n$; the case $n=1$ is immediate. For $n>1$, take $u_1$ from step [](#eigenvector){.pf-ref}. By step [](#invariant){.pf-ref} and induction applied to the symmetric operator $A|_W$ on the $(n-1)$-dimensional inner product space $W$, $W$ has an orthonormal basis $u_2,\ldots,u_n$ of eigenvectors of $A$. Together with $u_1$ this is an orthonormal eigenbasis of $\RR^n$. Orthonormality gives $Q^TQ=I$, and $AQ=Q\diag(\lambda_1,\ldots,\lambda_n)$ gives the diagonalization.
+We argue by induction on $n$; the case $n=1$ is immediate. For $n>1$, take $u_1$ from step [](#eigenvector){.pf-ref}. By step [](#invariant){.pf-ref} and induction applied to the symmetric operator $A\restrict_W$ on the $(n-1)$-dimensional inner product space $W$, $W$ has an orthonormal basis $u_2,\ldots,u_n$ of eigenvectors of $A$. Together with $u_1$ this is an orthonormal eigenbasis of $\RR^n$. Orthonormality gives $Q^TQ=I$, and $AQ=Q\diag(\lambda_1,\ldots,\lambda_n)$ gives the diagonalization.
 
 :::
 

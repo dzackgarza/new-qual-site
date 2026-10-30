@@ -26,7 +26,7 @@ contains the point $a$. Let
 $$F(z)= z-a-qf(z),\quad \text{where}~ q \ \text{is a complex parameter}.$$
 
 (a) Let $K$ be a circle with the center at point $a$ such that the closed disc $\bar{K}$ whose boundary is $K$ lies in $D$, and also we assume that $f(z)\not =0$ for $z\in K$.
-Prove that the function $F$ has one and only one zero $z=w$ on $\bar{K}$ if $\displaystyle{|q|<\min_{z\in K} \frac{|z-a|}{|f(z)|}.}$
+Prove that the function $F$ has one and only one zero $z=w$ on $\bar{K}$ if $\displaystyle{\abs{q}<\min_{z\in K} \frac{\abs{z-a}}{\abs{f(z)}}.}$
 
 (b) Let $G(z)$ be an analytic function on the disk $\bar{K}$. Apply
 the residue theorem to prove that

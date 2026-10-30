@@ -78,7 +78,7 @@ converges almost surely.
 
 Let $S_N=\sum_{n=1}^NX_n$. For integers $m>N$, Kolmogorov's maximal inequality gives
 $$
-P\left(\max_{N<k\leq m}|S_k-S_N|>\epsilon\right)
+P\left(\max_{N<k\leq m}\abs{S_k-S_N}>\epsilon\right)
 \leq\frac1{\epsilon^2}\sum_{n=N+1}^{m}\mathbf EX_n^2.
 $$
 Choose an increasing sequence $N_j$ such that

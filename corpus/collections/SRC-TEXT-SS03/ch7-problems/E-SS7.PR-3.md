@@ -105,25 +105,25 @@ On the other hand, the difference quotient of the right side is
 $$
 x-\sum_\rho\frac{(x+h)^{\rho+1}-(x-h)^{\rho+1}}{2h\rho(\rho+1)}+O(x/h).
 $$
-For each nontrivial zero $\rho$, Taylor's formula gives, uniformly for $|\rho|\le T$,
+For each nontrivial zero $\rho$, Taylor's formula gives, uniformly for $\abs{\rho}\le T$,
 $$
 \frac{(x+h)^{\rho+1}-(x-h)^{\rho+1}}{2h\rho(\rho+1)}
-=\frac{x^\rho}{\rho}+O\left(h^2|\rho|x^{\Re\rho-2}\right).
+=\frac{x^\rho}{\rho}+O\left(h^2\abs{\rho}x^{\Re\rho-2}\right).
 $$
-Let $T=x/h$. The zeros with $|\Im\rho|\le T$ contribute
+Let $T=x/h$. The zeros with $\abs{\Im\rho}\le T$ contribute
 $$
-O\left(x^\alpha\sum_{|\Im\rho|\le T}\frac{1}{|\rho|}\right)
+O\left(x^\alpha\sum_{\abs{\Im\rho}\le T}\frac{1}{\abs{\rho}}\right)
 =O(x^\alpha\log^2T)
 $$
 by the standard zero-counting estimate $N(T)=O(T\log T)$ and partial summation. The Taylor errors contribute
 $$
-O\left(h^2x^{\alpha-2}\sum_{|\Im\rho|\le T}|\rho|\right)
+O\left(h^2x^{\alpha-2}\sum_{\abs{\Im\rho}\le T}\abs{\rho}\right)
 =O(h^2x^{\alpha-2}T^2\log T)
 =O(x^\alpha\log T).
 $$
-The zeros with $|\Im\rho|>T$ contribute
+The zeros with $\abs{\Im\rho}>T$ contribute
 $$
-O\left(\frac{x^{\alpha+1}}{h}\sum_{|\Im\rho|>T}\frac{1}{|\rho|^2}\right)
+O\left(\frac{x^{\alpha+1}}{h}\sum_{\abs{\Im\rho}>T}\frac{1}{\abs{\rho}^2}\right)
 =O\left(\frac{x^{\alpha+1}}{hT}\right)
 =O(x^\alpha).
 $$

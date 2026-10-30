@@ -24,6 +24,6 @@ x ^ { H } B x = 0\tag{∗}
 $$
 
 for all $x \in \CC ^ { n }$ and $B ^ { H } = A ^ { H } - A = - B$ , so B is skew-Hermitian (hence normal).
-Let x be an eigenvector of B with the eigenvalue λ, so $B x = \lambda x$. Then $0 = x ^ { H } B x$ (by (∗)) $= \lambda x ^ { H } x = \lambda \| x \| ^ { 2 }$. This gives $\lambda = 0$. Thus all eigenvalues of B are zero.
+Let x be an eigenvector of B with the eigenvalue λ, so $B x = \lambda x$. Then $0 = x ^ { H } B x$ (by (∗)) $= \lambda x ^ { H } x = \lambda \norm{ x } ^ { 2 }$. This gives $\lambda = 0$. Thus all eigenvalues of B are zero.
 Being normal, B is diagonalizable, so $B = 0$ . By definition of B, we get $A = A ^ { H }$ . Thus A is Hermitian.
 :::

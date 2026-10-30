@@ -41,7 +41,7 @@ The solution uses this intended definition.
 For every integer $m\geq0$,
 $$
 \lim_{x\to0}
-|x|^{-m}e^{-1/x^2}
+\abs{x}^{-m}e^{-1/x^2}
 =0.
 $$
 
@@ -54,7 +54,7 @@ t=\frac1{x^2}.
 $$
 Then as $x\to0$, one has $t\to\infty$, and
 $$
-|x|^{-m}e^{-1/x^2}
+\abs{x}^{-m}e^{-1/x^2}
 =
 t^{m/2}e^{-t}.
 $$

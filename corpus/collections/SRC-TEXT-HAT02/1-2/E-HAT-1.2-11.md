@@ -101,7 +101,7 @@ $$
 \boxed{
 \pi_1(T_f)
 \cong
-\left\langle a,b,t\ \middle|\ t a t^{-1}=f_*(a),\ t b t^{-1}=f_*(b)\right\rangle .
+\left\langle a,b,t\ \presentationbar\ t a t^{-1}=f_*(a),\ t b t^{-1}=f_*(b)\right\rangle .
 }
 $$
 
@@ -130,7 +130,7 @@ $$
 \boxed{
 \pi_1(T_f)
 \cong
-\left\langle a,b,t\ \middle|\
+\left\langle a,b,t\ \presentationbar\
 [a,b]=1,\
 t a t^{-1}=f_*(a),\
 t b t^{-1}=f_*(b)

@@ -35,13 +35,13 @@ S_+(f,P)=\sum_{j=1}^N\left(\inf_{x\in[t_{j-1},t_j)}f(x)\right)(t_j-t_{j-1}).
 $$
 Let the mesh be
 $$
-|P|=\max_j(t_j-t_{j-1}).
+\partitionmesh{P}=\max_j(t_j-t_{j-1}).
 $$
 Prove that
 $$
 S_+(f,P)\longrightarrow\int_0^1 f(x)\,dx
 $$
-as $|P|\to0$, where the integral is the Lebesgue integral.
+as $\partitionmesh{P}\to0$, where the integral is the Lebesgue integral.
 :::
 
 ::: {.solution}
@@ -60,9 +60,9 @@ $$
 $$
 for $x<1$.
 
-Now let $(P_k)$ be any sequence of partitions with $|P_k|\to0$. Fix $x\in[0,1)$. Since $f$ is lower semicontinuous, for every $\varepsilon>0$ there exists $\delta>0$ such that
+Now let $(P_k)$ be any sequence of partitions with $\partitionmesh{P_k}\to0$. Fix $x\in[0,1)$. Since $f$ is lower semicontinuous, for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-|y-x|<\delta\implies f(y)>f(x)-\varepsilon.
+\abs{y-x}<\delta\implies f(y)>f(x)-\varepsilon.
 $$
 For all sufficiently large $k$, the subinterval of $P_k$ containing $x$ has length less than $\delta$, hence is contained in $(x-\delta,x+\delta)$. Therefore
 $$

@@ -41,13 +41,13 @@ Every complex polynomial is entire.
 
 Therefore
 $$
-\boxed{\oint_{|z|=r}P(z)\,dz=0}.
+\boxed{\oint_{\abs{z}=r}P(z)\,dz=0}.
 $$
 
 
 ::: pf-proof
 
-The circle $|z|=r$ is a closed contour whose interior lies in the domain
+The circle $\abs{z}=r$ is a closed contour whose interior lies in the domain
 $\CC$ on which $P$ is holomorphic. Cauchy's integral theorem therefore
 gives zero.
 

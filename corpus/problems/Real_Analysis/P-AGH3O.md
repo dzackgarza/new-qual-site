@@ -60,13 +60,13 @@ $f$ is even, and the substitution $u = \log(1/t)$, $du = -dt/t$, gives $\int_0^{
 
 ::: {.pf-step #s2}
 
-For $0 < |x| \le 1/2$, $Hf(x) \ge \frac{1}{2|x|\log(1/|x|)}$.
+For $0 < \abs{x} \le 1/2$, $Hf(x) \ge \frac{1}{2\abs{x}\log(1/\abs{x})}$.
 
 ::: pf-proof
 
-Take $r = 2|x|$. The interval $(x - r, x + r)$ contains $(-|x|, |x|)$ and $f \ge 0$, so by step [](#s1){.pf-ref}
+Take $r = 2\abs{x}$. The interval $(x - r, x + r)$ contains $(-\abs{x}, \abs{x})$ and $f \ge 0$, so by step [](#s1){.pf-ref}
 $$
-Hf(x) \ge \frac{1}{4|x|}\int_{-|x|}^{|x|} f = \frac{1}{4|x|}\cdot\frac{2}{\log(1/|x|)}.
+Hf(x) \ge \frac{1}{4\abs{x}}\int_{-\abs{x}}^{\abs{x}} f = \frac{1}{4\abs{x}}\cdot\frac{2}{\log(1/\abs{x})}.
 $$
 So part (b) holds with $c = 1/2$.
 

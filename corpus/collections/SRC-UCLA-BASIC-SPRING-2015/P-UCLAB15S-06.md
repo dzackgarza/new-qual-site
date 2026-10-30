@@ -157,7 +157,7 @@ is nonzero.
 
 Since
 $$
-|\sin1|\le1,
+\abs{\sin1}\le1,
 $$
 one has
 $$

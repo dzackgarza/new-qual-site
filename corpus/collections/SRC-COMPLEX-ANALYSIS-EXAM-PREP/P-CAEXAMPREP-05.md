@@ -29,7 +29,7 @@ $$
 
 The integrals
 $$
-\int_0^\infty\frac{|\log t|}{1+t^2}\,dt
+\int_0^\infty\frac{\abs{\log t}}{1+t^2}\,dt
 \qquad\text{and}\qquad
 \int_0^\infty\frac{dt}{1+t^2}
 $$
@@ -43,7 +43,7 @@ $$
 
 On $(0,1]$, one has $(1+t^2)^{-1}\le1$, and
 $$
-\int_0^1|\log t|\,dt=1.
+\int_0^1\abs{\log t}\,dt=1.
 $$
 On $[1,\infty)$, $(1+t^2)^{-1}\le t^{-2}$, and $\int_1^\infty (\log t)t^{-2}\,dt<\infty$ by integration by parts. Hence the logarithmic integral is absolutely convergent. The second integral is
 $$

@@ -104,7 +104,7 @@ $$
 Suppose not. Then there is an $\varepsilon>0$ and a subsequence
 $(x_{n_j})$ such that
 $$
-|g(x_{n_j})-g(x)|\ge\varepsilon
+\abs{g(x_{n_j})-g(x)}\ge\varepsilon
 $$
 for every $j$. The sequence $(g(x_{n_j}))$ lies in the compact interval
 $[0,1]$, so it has a convergent subsequence
@@ -113,7 +113,7 @@ g(x_{n_{j_k}})\longrightarrow b.
 $$
 The inequality above passes to the limit and gives
 $$
-|b-g(x)|\ge\varepsilon,
+\abs{b-g(x)}\ge\varepsilon,
 $$
 so $b\ne g(x)$. This contradicts step [](#s2){.pf-ref}.
 

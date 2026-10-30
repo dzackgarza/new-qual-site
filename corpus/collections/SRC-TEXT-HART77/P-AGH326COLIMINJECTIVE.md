@@ -58,7 +58,7 @@ Zorn's lemma gives a maximal pair.
 
 If $C\ne B$, some local section $b\in B(U)$ has a germ not in $C$.
 It defines $t:\ZZ_U\to B$ by the displayed adjunction.
-Let $R=t^{-1}(C)$ and extend the map $f_C\circ t|_R$ to a map $h:\ZZ_U\to I$ by the assumed property.
+Let $R=t^{-1}(C)$ and extend the map $f_C\circ t\restrict_R$ to a map $h:\ZZ_U\to I$ by the assumed property.
 The map
 $$
 C\oplus\ZZ_U\longrightarrow I,\qquad(c,z)\longmapsto f_C(c)+h(z)

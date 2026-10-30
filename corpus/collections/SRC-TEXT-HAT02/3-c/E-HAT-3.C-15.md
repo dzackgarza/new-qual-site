@@ -39,7 +39,7 @@ By hypothesis each graded piece of $A$ is free of finite rank, and
 $$
 A\otimes\QQ\cong\QQ[\alpha].
 $$
-Since the rational cohomology ring is graded-commutative and $\alpha^2\ne0$, the degree $d=|\alpha|$ is even. Moreover, $A^{nd}$ has rank one for every $n\ge0$, and all other positive-degree groups vanish.
+Since the rational cohomology ring is graded-commutative and $\alpha^2\ne0$, the degree $d=\gradeddegree{\alpha}$ is even. Moreover, $A^{nd}$ has rank one for every $n\ge0$, and all other positive-degree groups vanish.
 
 Choose a generator $a_n$ of each $A^{nd}$, with $a_0=1$. After tensoring with $\QQ$, write
 $$

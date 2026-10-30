@@ -251,7 +251,7 @@ u^2
 $$
 The nonzero homoclinic orbit reaches the turning point
 $$
-|u|=\sqrt{\frac2\lambda}
+\abs{u}=\sqrt{\frac2\lambda}
 $$
 where $u'=0$. Separating variables, or direct substitution, gives
 $$

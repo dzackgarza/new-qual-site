@@ -60,7 +60,7 @@ $$
 
 ::: pf-proof
 
-This is the standard geometric-series formula for $|q|<1$.
+This is the standard geometric-series formula for $\abs{q}<1$.
 
 :::
 
@@ -78,7 +78,7 @@ $$
 
 ::: pf-proof
 
-The geometric series converges uniformly on every closed disk $|q|\leq r<1$, so termwise differentiation is valid there.
+The geometric series converges uniformly on every closed disk $\abs{q}\leq r<1$, so termwise differentiation is valid there.
 
 :::
 

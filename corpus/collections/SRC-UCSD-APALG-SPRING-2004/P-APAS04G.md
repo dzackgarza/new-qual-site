@@ -68,7 +68,7 @@ ba^3=ba^2a=bb^2a=b^3a,
 $$
 so $ab=b^3a$.
 
-Using this relation, every word in $a,b$ can be moved into the form $b^ka^\varepsilon$ with $\varepsilon\in\{0,1\}$: replace every occurrence of $a^2$ by $b^2$ and move the remaining $a$ to the right. Since $b^4=(b^2)^2=(a^2)^2=a^4=1$, we may take $0\le k<4$. The problem states that $|G|=8$, so these eight normal forms are precisely all elements of $G$.
+Using this relation, every word in $a,b$ can be moved into the form $b^ka^\varepsilon$ with $\varepsilon\in\{0,1\}$: replace every occurrence of $a^2$ by $b^2$ and move the remaining $a$ to the right. Since $b^4=(b^2)^2=(a^2)^2=a^4=1$, we may take $0\le k<4$. The problem states that $\cardinality{G}=8$, so these eight normal forms are precisely all elements of $G$.
 :::
 
 :::
@@ -187,7 +187,7 @@ $$
 so $\rho$ is irreducible.
 The four linear characters are irreducible automatically. Their degree squares sum to
 $$
-1+1+1+1+4=8=|G|,
+1+1+1+1+4=8=\cardinality{G},
 $$
 so these five irreducibles exhaust all irreducible representations of $G$.
 :::

@@ -48,7 +48,7 @@ An index-$2$ subgroup is normal, and the quotient is $\ZZ/2$. Since $G_{\mathrm{
 :::
 
 ::: pf-step
-Write $G=A*B$ with $A\cong\ZZ$ and $B\cong\ZZ^2$. If $\phi|_A\ne0$ and $\phi|_B=0$, then
+Write $G=A*B$ with $A\cong\ZZ$ and $B\cong\ZZ^2$. If $\phi\restrict_A\ne0$ and $\phi\restrict_B=0$, then
 $$\boxed{K\cong\ZZ*\ZZ^2*\ZZ^2.}$$
 
 ::: pf-proof
@@ -58,11 +58,11 @@ Use the Bass--Serre tree of $A*B$. In the quotient by $K$, there is one $A$-vert
 :::
 
 ::: pf-step
-If $\phi|_B\ne0$ (whether or not $\phi|_A$ is zero), then
+If $\phi\restrict_B\ne0$ (whether or not $\phi\restrict_A$ is zero), then
 $$\boxed{K\cong F_2*\ZZ^2.}$$
 
 ::: pf-proof
-If $\phi|_A=0$, the quotient graph has two $A$-vertices, one $B$-vertex, and two edges, hence is a tree. Its vertex groups are two copies of $\ZZ$ and $\ker(\phi|_B)\cong\ZZ^2$, giving $\ZZ*\ZZ*\ZZ^2\cong F_2*\ZZ^2$. If both restrictions are nonzero, the quotient graph has one vertex of each type and two edges, so its graph rank is $1$; the vertex groups are $\ZZ$ and $\ZZ^2$, giving $\ZZ*\ZZ^2*\ZZ\cong F_2*\ZZ^2$.
+If $\phi\restrict_A=0$, the quotient graph has two $A$-vertices, one $B$-vertex, and two edges, hence is a tree. Its vertex groups are two copies of $\ZZ$ and $\ker(\phi\restrict_B)\cong\ZZ^2$, giving $\ZZ*\ZZ*\ZZ^2\cong F_2*\ZZ^2$. If both restrictions are nonzero, the quotient graph has one vertex of each type and two edges, so its graph rank is $1$; the vertex groups are $\ZZ$ and $\ZZ^2$, giving $\ZZ*\ZZ^2*\ZZ\cong F_2*\ZZ^2$.
 :::
 
 :::

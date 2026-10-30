@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LQEAV
 kind: problem
-title: $\|a\|_{\ell^q}\le\|a\|_{\ell^p}$ for $0<p<q\le\infty$
+title: $\norm{a}_{\ell^q}\le\norm{a}_{\ell^p}$ for $0<p<q\le\infty$
 classification:
   areas:
   - real-analysis
@@ -21,9 +21,9 @@ audit:
 ::: {.problem}
 Show that for $0 < p < q \le \infty$,
 $$
-\|a\|_{\ell^q} \le \|a\|_{\ell^p}
+\norm{a}_{\ell^q} \le \norm{a}_{\ell^p}
 $$
-for any sequence $a = (a_j)_{j=1}^\infty \in \CC^\NN$, where $\|a\|_{\ell^\infty} \coloneqq \sup_j |a_j|$ and $\|a\|_{\ell^r} \coloneqq \left(\sum_{j=1}^\infty |a_j|^r\right)^{1/r}$ for $r < \infty$.
+for any sequence $a = (a_j)_{j=1}^\infty \in \CC^\NN$, where $\norm{a}_{\ell^\infty} \coloneqq \sup_j \abs{a_j}$ and $\norm{a}_{\ell^r} \coloneqq \left(\sum_{j=1}^\infty \abs{a_j}^r\right)^{1/r}$ for $r < \infty$.
 :::
 
 ::: {.solution}
@@ -31,30 +31,30 @@ for any sequence $a = (a_j)_{j=1}^\infty \in \CC^\NN$, where $\|a\|_{\ell^\infty
 ::: pf
 
 ::: {.pf-step #s1}
-If $q = \infty$, then $\|a\|_{\ell^\infty} \le \|a\|_{\ell^p}$.
+If $q = \infty$, then $\norm{a}_{\ell^\infty} \le \norm{a}_{\ell^p}$.
 
 ::: pf-proof
 
 ::: pf-step
-If $\|a\|_{\ell^p} = \infty$, then the right-hand side of $\|a\|_{\ell^\infty} \le \|a\|_{\ell^p}$ is $\infty$, and every extended real number is $\le \infty$, so the inequality holds.
+If $\norm{a}_{\ell^p} = \infty$, then the right-hand side of $\norm{a}_{\ell^\infty} \le \norm{a}_{\ell^p}$ is $\infty$, and every extended real number is $\le \infty$, so the inequality holds.
 
 :::
 
 ::: pf-step
-Assume $\|a\|_{\ell^p} < \infty$. For every fixed index $k \ge 1$:
-$$|a_k|^p \le \sum_{j=1}^\infty |a_j|^p = \|a\|_{\ell^p}^p.$$
+Assume $\norm{a}_{\ell^p} < \infty$. For every fixed index $k \ge 1$:
+$$\abs{a_k}^p \le \sum_{j=1}^\infty \abs{a_j}^p = \norm{a}_{\ell^p}^p.$$
 
 :::
 
 ::: pf-step
 Taking the $(1/p)$-th power of both sides (since $t \mapsto t^{1/p}$ is strictly increasing on $[0, \infty)$):
-$$|a_k| \le \|a\|_{\ell^p} \quad \text{for all } k \ge 1.$$
+$$\abs{a_k} \le \norm{a}_{\ell^p} \quad \text{for all } k \ge 1.$$
 
 :::
 
 ::: pf-step
 Taking the supremum over all $k \ge 1$:
-$$\|a\|_{\ell^\infty} = \sup_{k \ge 1} |a_k| \le \|a\|_{\ell^p}.$$
+$$\norm{a}_{\ell^\infty} = \sup_{k \ge 1} \abs{a_k} \le \norm{a}_{\ell^p}.$$
 
 :::
 
@@ -63,56 +63,56 @@ $$\|a\|_{\ell^\infty} = \sup_{k \ge 1} |a_k| \le \|a\|_{\ell^p}.$$
 :::
 
 ::: {.pf-step #s2}
-If $q < \infty$, then $\|a\|_{\ell^q} \le \|a\|_{\ell^p}$.
+If $q < \infty$, then $\norm{a}_{\ell^q} \le \norm{a}_{\ell^p}$.
 
 ::: pf-proof
 
 ::: pf-step
-If $\|a\|_{\ell^p} = 0$, then $a_j = 0$ for all $j$, so $\|a\|_{\ell^q} = 0 = \|a\|_{\ell^p}$.
+If $\norm{a}_{\ell^p} = 0$, then $a_j = 0$ for all $j$, so $\norm{a}_{\ell^q} = 0 = \norm{a}_{\ell^p}$.
 
 :::
 
 ::: pf-step
-If $\|a\|_{\ell^p} = \infty$, the inequality holds.
+If $\norm{a}_{\ell^p} = \infty$, the inequality holds.
 
 :::
 
 ::: pf-step
-Assume $0 < \|a\|_{\ell^p} < \infty$. Define the normalized sequence $b = (b_j)_{j=1}^\infty$ by $b_j = \frac{a_j}{\|a\|_{\ell^p}}$.
+Assume $0 < \norm{a}_{\ell^p} < \infty$. Define the normalized sequence $b = (b_j)_{j=1}^\infty$ by $b_j = \frac{a_j}{\norm{a}_{\ell^p}}$.
 
 :::
 
 ::: pf-step
 The normalized sequence satisfies
-$$\|b\|_{\ell^p}^p = \sum_{j=1}^\infty |b_j|^p = \sum_{j=1}^\infty \frac{|a_j|^p}{\|a\|_{\ell^p}^p} = 1.$$
+$$\norm{b}_{\ell^p}^p = \sum_{j=1}^\infty \abs{b_j}^p = \sum_{j=1}^\infty \frac{\abs{a_j}^p}{\norm{a}_{\ell^p}^p} = 1.$$
 
 :::
 
 ::: pf-step
-In particular, for every index $j \ge 1$, $|b_j|^p \le \sum_{k=1}^\infty |b_k|^p = 1$, which implies $|b_j| \le 1$.
+In particular, for every index $j \ge 1$, $\abs{b_j}^p \le \sum_{k=1}^\infty \abs{b_k}^p = 1$, which implies $\abs{b_j} \le 1$.
 
 :::
 
 ::: pf-step
-Since $q > p > 0$ and $|b_j| \le 1$, the exponent comparison gives
-$$|b_j|^q = |b_j|^{q-p} |b_j|^p \le 1^{q-p} |b_j|^p = |b_j|^p \quad \text{for every } j \ge 1.$$
+Since $q > p > 0$ and $\abs{b_j} \le 1$, the exponent comparison gives
+$$\abs{b_j}^q = \abs{b_j}^{q-p} \abs{b_j}^p \le 1^{q-p} \abs{b_j}^p = \abs{b_j}^p \quad \text{for every } j \ge 1.$$
 
 :::
 
 ::: pf-step
 Summing over all $j \ge 1$:
-$$\|b\|_{\ell^q}^q = \sum_{j=1}^\infty |b_j|^q \le \sum_{j=1}^\infty |b_j|^p = \|b\|_{\ell^p}^p = 1.$$
+$$\norm{b}_{\ell^q}^q = \sum_{j=1}^\infty \abs{b_j}^q \le \sum_{j=1}^\infty \abs{b_j}^p = \norm{b}_{\ell^p}^p = 1.$$
 
 :::
 
 ::: pf-step
-Taking the $(1/q)$-th power gives $\|b\|_{\ell^q} \le 1^{1/q} = 1$.
+Taking the $(1/q)$-th power gives $\norm{b}_{\ell^q} \le 1^{1/q} = 1$.
 
 :::
 
 ::: pf-step
-Multiplying both sides by the positive scalar $\|a\|_{\ell^p}$:
-$$\|a\|_{\ell^q} = \|a\|_{\ell^p} \|b\|_{\ell^q} \le \|a\|_{\ell^p} \cdot 1 = \|a\|_{\ell^p}.$$
+Multiplying both sides by the positive scalar $\norm{a}_{\ell^p}$:
+$$\norm{a}_{\ell^q} = \norm{a}_{\ell^p} \norm{b}_{\ell^q} \le \norm{a}_{\ell^p} \cdot 1 = \norm{a}_{\ell^p}.$$
 
 :::
 

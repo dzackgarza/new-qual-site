@@ -20,7 +20,7 @@ audit:
 Problem 5. Suppose that $V$ is a finite-dimensional real inner-product space with inner product $(\cdot,\cdot)$, that $L\in\operatorname{Hom}(V,V)$, and that $b\in V$ is fixed.
 Suppose that $u,v\in V$ both minimize
 $$
-D(x)=\lVert L(x)-b\rVert.
+D(x)=\norm{ L(x)-b}.
 $$
 Show that $u-v\in\ker L$.
 :::
@@ -39,13 +39,13 @@ z=L(v)-b.
 $$
 Since $u$ and $v$ are both minimizers, there is a number $m\geq0$ such that
 $$
-\|y\|=\|z\|=m.
+\norm{y}=\norm{z}=m.
 $$
 
 
 ::: pf-proof
 
-By definition, $D(u)=\|L(u)-b\|=\|y\|$ and $D(v)=\|L(v)-b\|=\|z\|$. Both equal the minimum value of $D$.
+By definition, $D(u)=\norm{L(u)-b}=\norm{y}$ and $D(v)=\norm{L(v)-b}=\norm{z}$. Both equal the minimum value of $D$.
 
 :::
 
@@ -81,7 +81,7 @@ $$
 
 Since $u$ is a minimizer,
 $$
-m\leq D(w)=\left\|\frac{y+z}{2}\right\|.
+m\leq D(w)=\norm{\frac{y+z}{2}}.
 $$
 
 
@@ -97,14 +97,14 @@ The minimum value of $D$ is $m$ by step [](#s1-1){.pf-ref}, so $D(x)\geq m$ for 
 
 The triangle inequality gives the reverse bound
 $$
-\left\|\frac{y+z}{2}\right\|
-\leq\frac{\|y\|+\|z\|}{2}=m.
+\norm{\frac{y+z}{2}}
+\leq\frac{\norm{y}+\norm{z}}{2}=m.
 $$
 
 
 ::: pf-proof
 
-Apply homogeneity and the triangle inequality, then use $\|y\|=\|z\|=m$ from step [](#s1-1){.pf-ref}.
+Apply homogeneity and the triangle inequality, then use $\norm{y}=\norm{z}=m$ from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -114,7 +114,7 @@ Apply homogeneity and the triangle inequality, then use $\|y\|=\|z\|=m$ from ste
 
 Hence
 $$
-\left\|\frac{y+z}{2}\right\|=m.
+\norm{\frac{y+z}{2}}=m.
 $$
 
 
@@ -130,7 +130,7 @@ Combine the lower bound in step [](#s1-3){.pf-ref} with the upper bound in step 
 
 The parallelogram identity implies
 $$
-\|y-z\|^2=0.
+\norm{y-z}^2=0.
 $$
 
 
@@ -138,14 +138,14 @@ $$
 
 The parallelogram identity is
 $$
-\|y+z\|^2+\|y-z\|^2
-=2\|y\|^2+2\|z\|^2.
+\norm{y+z}^2+\norm{y-z}^2
+=2\norm{y}^2+2\norm{z}^2.
 $$
-By step [](#s1-5){.pf-ref}, $\|y+z\|=2m$, while step [](#s1-1){.pf-ref} gives $\|y\|=\|z\|=m$. Therefore
+By step [](#s1-5){.pf-ref}, $\norm{y+z}=2m$, while step [](#s1-1){.pf-ref} gives $\norm{y}=\norm{z}=m$. Therefore
 $$
-4m^2+\|y-z\|^2=4m^2,
+4m^2+\norm{y-z}^2=4m^2,
 $$
-so $\|y-z\|^2=0$.
+so $\norm{y-z}^2=0$.
 
 :::
 

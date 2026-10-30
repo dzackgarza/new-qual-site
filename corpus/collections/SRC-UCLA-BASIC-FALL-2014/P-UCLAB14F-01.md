@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 1. Show that the function
 $$
-H(x,y)=x^2+y^2+|x-y|^{-1}
+H(x,y)=x^2+y^2+\abs{x-y}^{-1}
 $$
 achieves its global minimum somewhere on the set
 $$
@@ -51,7 +51,7 @@ Direct substitution gives
 $$
 H(0,1)
 =
-0^2+1^2+|0-1|^{-1}
+0^2+1^2+\abs{0-1}^{-1}
 =
 1+1
 =2.
@@ -107,7 +107,7 @@ $$
 
 Every $(x,y)\in K$ satisfies
 $$
-|x-y|\ge\frac12.
+\abs{x-y}\ge\frac12.
 $$
 
 
@@ -115,14 +115,14 @@ $$
 
 Again,
 $$
-|x-y|^{-1}
+\abs{x-y}^{-1}
 \le
 H(x,y)
 \le2.
 $$
-Since $|x-y|>0$ on $D$, taking reciprocals gives
+Since $\abs{x-y}>0$ on $D$, taking reciprocals gives
 $$
-|x-y|\ge\frac12.
+\abs{x-y}\ge\frac12.
 $$
 
 :::
@@ -142,7 +142,7 @@ By step [](#s1-4){.pf-ref},
 $$
 K
 \subseteq
-\left\{(x,y):|x-y|\ge\frac12\right\}.
+\left\{(x,y):\abs{x-y}\ge\frac12\right\}.
 $$
 On this closed set, the formula defining $H$ is continuous. Therefore
 $$
@@ -150,7 +150,7 @@ K
 =
 \left\{
 (x,y):
-|x-y|\ge\frac12,
+\abs{x-y}\ge\frac12,
 H(x,y)\le2
 \right\}
 $$
@@ -165,7 +165,7 @@ Thus $K$ is closed and bounded, hence compact by Heine--Borel.
 
 The restriction
 $$
-H|_K
+H\restrict_K
 $$
 attains a minimum at some
 $$

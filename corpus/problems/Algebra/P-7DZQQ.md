@@ -32,7 +32,7 @@ $$
 Let
 $$
 G=\Gal(K/F)=\langle\sigma\rangle,
-\qquad |G|=n.
+\qquad \cardinality{G}=n.
 $$
 
 ::: pf

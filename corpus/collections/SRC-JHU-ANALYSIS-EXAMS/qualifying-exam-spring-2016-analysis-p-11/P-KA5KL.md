@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Let $U \subset \CC$ be an open set and
 
-$$A^2(U) = \{ f \text{ holomorphic on } U : \int_U |f(z)|^2 \, dx \, dy < \infty \}.$$
+$$A^2(U) = \{ f \text{ holomorphic on } U : \int_U \abs{f(z)}^2 \, dx \, dy < \infty \}.$$
 
 Define
 
@@ -37,7 +37,7 @@ Prove that $A^2(U)$ is a Hilbert space when equipped with this inner product.
 :::
 
 ::: {.solution}
-Write $dA=dx\,dy$ and $\|f\|_2^2=\int_U|f|^2\,dA$.
+Write $dA=dx\,dy$ and $\norm{f}_2^2=\int_U\abs{f}^2\,dA$.
 
 ::: pf
 
@@ -49,16 +49,16 @@ The formula defines an inner product on the vector space $A^2(U)$.
 
 Linear combinations of holomorphic functions are holomorphic,
 and
-$|af+bg|^2\leq2|a|^2|f|^2+2|b|^2|g|^2$
+$\abs{af+bg}^2\leq2\abs{a}^2\abs{f}^2+2\abs{b}^2\abs{g}^2$
 shows that they remain square integrable. Cauchy–Schwarz
-gives $\int_U|f\overline g|\,dA\leq\|f\|_2\|g\|_2$,
+gives $\int_U\abs{f\overline g}\,dA\leq\norm{f}_2\norm{g}_2$,
 so the inner product is well defined [@Fol13]. Linearity
 in the first variable and conjugate symmetry follow from
 the integral.
 
 If a holomorphic $f$ is nonzero at $a\in U$, continuity
-gives a disk of positive area on which $|f|\geq|f(a)|/2$.
-Then $\|f\|_2>0$. Hence $\|f\|_2=0$ implies $f(a)=0$ at
+gives a disk of positive area on which $\abs{f}\geq\abs{f(a)}/2$.
+Then $\norm{f}_2>0$. Hence $\norm{f}_2=0$ implies $f(a)=0$ at
 every $a\in U$, which is positive definiteness.
 
 :::
@@ -74,16 +74,16 @@ Every compact subset has an $L^2$ point-evaluation bound.
 For $\overline{D(a,r)}\subset U$, Cauchy's circle formula
 and Cauchy–Schwarz imply, for $0<\rho<r$,
 $$
-|f(a)|^2\leq\frac1{2\pi}\int_0^{2\pi}|f(a+\rho e^{it})|^2\,dt
+\abs{f(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}\abs{f(a+\rho e^{it})}^2\,dt
 $$
 [@SS03; @Fol13]. Integrating this inequality against
 $2\pi\rho\,d\rho$ yields
-$\pi r^2|f(a)|^2\leq\int_{D(a,r)}|f|^2\,dA$.
+$\pi r^2\abs{f(a)}^2\leq\int_{D(a,r)}\abs{f}^2\,dA$.
 For a nonempty compact $K\subset U$, compactness and
 openness give a single $r>0$ with these closed disks
 contained in $U$ for every $a\in K$. Thus
 $$
-\sup_{a\in K}|f(a)|\leq\frac1{\sqrt\pi r}\|f\|_2.
+\sup_{a\in K}\abs{f(a)}\leq\frac1{\sqrt\pi r}\norm{f}_2.
 $$
 The same estimate holds for differences of functions in $A^2(U)$.
 
@@ -109,11 +109,11 @@ theorem [@SS03].
 At almost every point where $F$ is finite, $f_n\to f$.
 Fatou's lemma therefore gives
 $$
-\int_U|f-F|^2\,dA
-\leq\liminf_{n\to\infty}\int_U|f_n-F|^2\,dA=0
+\int_U\abs{f-F}^2\,dA
+\leq\liminf_{n\to\infty}\int_U\abs{f_n-F}^2\,dA=0
 $$
 [@Fol13]. Hence $f=F$ almost everywhere. It follows that
-$f\in A^2(U)$ and $\|f_n-f\|_2=\|f_n-F\|_2\to0$.
+$f\in A^2(U)$ and $\norm{f_n-f}_2=\norm{f_n-F}_2\to0$.
 Thus every Cauchy sequence converges in $A^2(U)$, proving
 that it is a Hilbert space.
 

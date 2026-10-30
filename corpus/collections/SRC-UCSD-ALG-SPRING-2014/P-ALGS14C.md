@@ -62,7 +62,7 @@ $$
 ::: pf-proof
 
 Write $\alpha/\beta=x+iy$.
-Choose $m,n\in\ZZ$ with $|x-m|\le \frac12$ and $|y-n|\le \frac12$, and set $q=m+ni$.
+Choose $m,n\in\ZZ$ with $\abs{x-m}\le \frac12$ and $\abs{y-n}\le \frac12$, and set $q=m+ni$.
 Then
 $$
 N\!\left(\frac r\beta\right)=N\!\left(\frac\alpha\beta-q\right)

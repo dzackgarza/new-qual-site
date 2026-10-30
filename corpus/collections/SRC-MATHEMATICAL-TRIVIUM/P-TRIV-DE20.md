@@ -43,7 +43,7 @@ r^2-\frac{m^2}{4}=0,
 $$
 so its largest root is
 $$
-r=\frac{|m|}{2}.
+r=\frac{\abs{m}}{2}.
 $$
 
 
@@ -58,7 +58,7 @@ The only other contribution to the lowest power $\xi^{r-1}$ is
 $$
 -\frac{m^2}{4\xi}u,
 $$
-whose coefficient is $-m^2a_0/4$. Since $a_0\ne0$, the coefficient of $\xi^{r-1}$ vanishes exactly when $r^2-m^2/4=0$. The larger of the two roots $\pm |m|/2$ is $|m|/2$.
+whose coefficient is $-m^2a_0/4$. Since $a_0\ne0$, the coefficient of $\xi^{r-1}$ vanishes exactly when $r^2-m^2/4=0$. The larger of the two roots $\pm \abs{m}/2$ is $\abs{m}/2$.
 
 :::
 
@@ -127,7 +127,7 @@ Substituting $a_1$ from step [](#s1-3){.pf-ref} and solving for $a_2$ gives the 
 
 ::: {.pf-step #s1-5}
 
-Therefore, with $r=|m|/2$, the first three terms are
+Therefore, with $r=\abs{m}/2$, the first three terms are
 $$
 \boxed{
 u(\xi)=a_0\xi^r

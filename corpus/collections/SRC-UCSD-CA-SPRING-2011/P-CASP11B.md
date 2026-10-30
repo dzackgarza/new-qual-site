@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a bounded region and $$\mathcal{F} = \{f \in C(\overline{G}, \CC) : f \text{ is analytic in } G\},$$ and put $\|f\| = \sup_{z \in \partial G} |f(z)|$.
-Show that $\mathcal{F}$ is a complete metric space with $d(f, g) = \|f - g\|$.
+Let $G$ be a bounded region and $$\mathcal{F} = \{f \in C(\overline{G}, \CC) : f \text{ is analytic in } G\},$$ and put $\norm{f} = \sup_{z \in \partial G} \abs{f(z)}$.
+Show that $\mathcal{F}$ is a complete metric space with $d(f, g) = \norm{f - g}$.
 :::
 
 ::: {.solution}
@@ -27,17 +27,17 @@ Show that $\mathcal{F}$ is a complete metric space with $d(f, g) = \|f - g\|$.
 
 ::: pf-step
 
-$\|\cdot\|$ is a norm on $\mathcal F$.
+$\norm{\cdot}$ is a norm on $\mathcal F$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$\|f\| \ge 0$ and $\|f\| = 0$ iff $f = 0$.
+$\norm{f} \ge 0$ and $\norm{f} = 0$ iff $f = 0$.
 
 ::: pf-proof
 
-if $\|f\| = 0$, then $f = 0$ on $\partial G$; by the maximum modulus principle, $f = 0$ on all of $\overline G$.
+if $\norm{f} = 0$, then $f = 0$ on $\partial G$; by the maximum modulus principle, $f = 0$ on all of $\overline G$.
 
 :::
 
@@ -45,7 +45,7 @@ if $\|f\| = 0$, then $f = 0$ on $\partial G$; by the maximum modulus principle, 
 
 ::: pf-step
 
-$\|cf\| = |c|\|f\|$ and $\|f + g\| \le \|f\| + \|g\|$.
+$\norm{cf} = \abs{c}\norm{f}$ and $\norm{f + g} \le \norm{f} + \norm{g}$.
 
 ::: pf-proof
 
@@ -119,7 +119,7 @@ Step [](#s4-1){.pf-ref}.
 
 ::: {.pf-step #s5}
 
-$\|f_n - f\| \to 0$.
+$\norm{f_n - f} \to 0$.
 
 ::: pf-proof
 

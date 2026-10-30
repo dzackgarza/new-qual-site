@@ -44,7 +44,7 @@ Thus the inner automorphism
 $$
 c_g:G\to G,\qquad x\mapsto gxg^{-1}
 $$
-restricts to an automorphism $c_g|_K\in\operatorname{Aut}(K)$.
+restricts to an automorphism $c_g\restrict_K\in\operatorname{Aut}(K)$.
 
 :::
 
@@ -56,7 +56,7 @@ Every such conjugation preserves $H$.
 
 ::: pf-proof
 
-Since $H$ is characteristic in $K$, every automorphism of $K$ maps $H$ to itself. Applying this to $c_g|_K$ from step [](#s1){.pf-ref} gives
+Since $H$ is characteristic in $K$, every automorphism of $K$ maps $H$ to itself. Applying this to $c_g\restrict_K$ from step [](#s1){.pf-ref} gives
 $$
 gHg^{-1}=H
 $$

@@ -33,7 +33,7 @@ Show that $G$ contains a subgroup isomorphic to $\ZZ_p \oplus \ZZ_p$ for some pr
 ::: {.solution}
 Write $G$ as the direct sum of its Sylow subgroups,
 $$
-G=\bigoplus_{p\mid |G|}G_p.
+G=\bigoplus_{p\mid \cardinality{G}}G_p.
 $$
 
 ::: pf

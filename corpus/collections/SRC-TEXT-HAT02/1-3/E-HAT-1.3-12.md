@@ -168,7 +168,7 @@ Both $N$ and $K$ have index $8$ in $F$.
 
 By step [](#s1){.pf-ref},
 $$
-[F:N]=|F/N|=8.
+[F:N]=\cardinality{F/N}=8.
 $$
 By step [](#s2){.pf-ref}, the covering has eight sheets, so the covering-subgroup index theorem gives
 $$

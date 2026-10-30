@@ -21,9 +21,9 @@ There is a non-constant function $f(z)$ such that $u^2 \leq v^2 + 2015$.
 
 (ii) If $f(z)$ is an entire function such that $g(z) = f(1/z)$ has a pole at zero, then $f$ is surjective.
 
-(iii) There is a conformal map from the region $U = \{z = x + iy : 0 < x < 1\}$ to the region $\Delta = \{z : |z| < 1\}$.
+(iii) There is a conformal map from the region $U = \{z = x + iy : 0 < x < 1\}$ to the region $\Delta = \{z : \abs{z} < 1\}$.
 
-(iv) There are polynomials $p_1, p_2, \ldots$ such that $\left|\frac{1}{z(z-4)} - p_n(z)\right|$ converges uniformly to zero on the annulus $U = \{z \in \CC : 2 < |z| < 3\}$, as $n$ tends to infinity.
+(iv) There are polynomials $p_1, p_2, \ldots$ such that $\abs{\frac{1}{z(z-4)} - p_n(z)}$ converges uniformly to zero on the annulus $U = \{z \in \CC : 2 < \abs{z} < 3\}$, as $n$ tends to infinity.
 :::
 
 ::: {.solution}
@@ -49,9 +49,9 @@ sends the upper half-plane conformally onto the unit disk.
 $$
 h(z)=\frac1{z(z-4)}
 $$
-on the annulus. Fix $r$ with $2<r<3$. Then uniform convergence on the circle $|z|=r$ would give
+on the annulus. Fix $r$ with $2<r<3$. Then uniform convergence on the circle $\abs{z}=r$ would give
 $$
-\int_{|z|=r}p_n(z)\,dz\longrightarrow \int_{|z|=r}h(z)\,dz.
+\int_{\abs{z}=r}p_n(z)\,dz\longrightarrow \int_{\abs{z}=r}h(z)\,dz.
 $$
 The left-hand side is always $0$, while the right-hand side is
 $$

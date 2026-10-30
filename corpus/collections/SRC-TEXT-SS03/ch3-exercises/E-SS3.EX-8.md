@@ -22,7 +22,7 @@ $$
 \int_ {0} ^ {2 \pi} \frac {d \theta}{a + b \cos \theta} = \frac {2 \pi}{\sqrt {a ^ {2} - b ^ {2}}}
 $$
 
-if $a > | b |$ and $a , b \in \RR$
+if $a > \abs{ b }$ and $a , b \in \RR$
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ The integrand is the constant $1/a$.
 
 ::: {.pf-step #s2}
 
-If $b\ne0$, then $\displaystyle\int_0^{2\pi} \frac{d\theta}{a + b\cos\theta} = \frac{2}{i} \oint_{|z|=1} \frac{dz}{b z^2 + 2az + b}$.
+If $b\ne0$, then $\displaystyle\int_0^{2\pi} \frac{d\theta}{a + b\cos\theta} = \frac{2}{i} \oint_{\abs{z}=1} \frac{dz}{b z^2 + 2az + b}$.
 
 ::: pf-proof
 
@@ -59,7 +59,7 @@ For $b\ne0$, $bz^2+2az+b=b(z-z_1)(z-z_2)$ with $z_1 = \frac{-a + \sqrt{a^2 - b^2
 
 ::: pf-proof
 
-The roots satisfy $z_1 z_2 = 1$, and $|z_2| = \frac{a + \sqrt{a^2 - b^2}}{|b|} > \frac{a}{|b|} > 1$, so $|z_1| < 1$. The pole at $z_1$ is simple with residue $\frac{1}{b(z_1 - z_2)} = \frac{1}{2\sqrt{a^2 - b^2}}$.
+The roots satisfy $z_1 z_2 = 1$, and $\abs{z_2} = \frac{a + \sqrt{a^2 - b^2}}{\abs{b}} > \frac{a}{\abs{b}} > 1$, so $\abs{z_1} < 1$. The pole at $z_1$ is simple with residue $\frac{1}{b(z_1 - z_2)} = \frac{1}{2\sqrt{a^2 - b^2}}$.
 
 :::
 

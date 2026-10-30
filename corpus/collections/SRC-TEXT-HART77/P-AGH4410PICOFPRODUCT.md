@@ -110,7 +110,7 @@ $$
 \phi_{\mcl}:X\longrightarrow\Pic^0(X),
 \qquad
 x\longmapsto
-\left[\mcl^0|_{\{x\}\times X}\right].
+\left[\mcl^0\restrict_{\{x\}\times X}\right].
 $$
 It sends $O$ to the identity.
 Under
@@ -176,7 +176,7 @@ $$
 
 Let $q(\mcl)=0$, and use the notation $\mcm$ and $\mcl^0$ from step [](#s2){.pf-ref}. Then
 $$
-\left[\mcl^0|_{\{x\}\times X}\right]=0
+\left[\mcl^0\restrict_{\{x\}\times X}\right]=0
 \qquad
 \text{in }\Pic^0(X)
 $$

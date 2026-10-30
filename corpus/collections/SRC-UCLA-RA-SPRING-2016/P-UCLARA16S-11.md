@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Assume that $f(z)$ is holomorphic on $|z|<2$. Show that
+Assume that $f(z)$ is holomorphic on $\abs{z}<2$. Show that
 $$
-\max_{|z|=1}\left|f(z)-\frac1z\right|\ge1.
+\max_{\abs{z}=1}\abs{f(z)-\frac1z}\ge1.
 $$
 :::
 
@@ -29,8 +29,8 @@ Let
 $$
 M
 \coloneqq
-\max_{|z|=1}
-\left|f(z)-\frac1z\right|.
+\max_{\abs{z}=1}
+\abs{f(z)-\frac1z}.
 $$
 
 ::: pf
@@ -48,7 +48,7 @@ $$
 
 ::: pf-proof
 
-Since $f$ is holomorphic on the disk $|z|<2$, Cauchy's theorem gives
+Since $f$ is holomorphic on the disk $\abs{z}<2$, Cauchy's theorem gives
 $$
 \int_\gamma f(z)\,dz=0.
 $$
@@ -79,14 +79,14 @@ $$
 \begin{aligned}
 2\pi
 &=
-\left|
+\abs{
 \int_\gamma
 \left(f(z)-\frac1z\right)\,dz
-\right|\\
+}\\
 &\le
 \operatorname{length}(\gamma)
-\max_{|z|=1}
-\left|f(z)-\frac1z\right|\\
+\max_{\abs{z}=1}
+\abs{f(z)-\frac1z}\\
 &=
 2\pi M.
 \end{aligned}
@@ -101,8 +101,8 @@ $$
 Therefore
 $$
 \boxed{
-\max_{|z|=1}
-\left|f(z)-\frac1z\right|
+\max_{\abs{z}=1}
+\abs{f(z)-\frac1z}
 \ge1}.
 $$
 

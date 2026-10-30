@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANA
 kind: problem
-title: Meromorphic functions with a logarithmic bound divided by $|z|$
+title: Meromorphic functions with a logarithmic bound divided by $\abs{z}$
 classification:
   areas:
   - complex-analysis
@@ -29,7 +29,7 @@ audit:
 1. Find all meromorphic functions f on C such that
 
 $$
-| f ( z ) | \leq { \frac { \log ( 2 + | z | ^ { 2 } ) } { | z | } } \qquad { \mathrm { f o r ~ a l l ~ } } z \neq 0 .
+\abs{ f ( z ) } \leq { \frac { \log ( 2 + \abs{ z } ^ { 2 } ) } { \abs{ z } } } \qquad { \mathrm { f o r ~ a l l ~ } } z \neq 0 .
 $$
 
 Give explicit formulas for the functions and give a proof for your answer.
@@ -38,7 +38,7 @@ Give explicit formulas for the functions and give a proof for your answer.
 ::: {.solution}
 The functions are exactly
 $$
-\boxed{f(z)=\frac{a}{z},\qquad a\in\CC,\quad |a|\leq\log2,}
+\boxed{f(z)=\frac{a}{z},\qquad a\in\CC,\quad \abs{a}\leq\log2,}
 $$
 viewed as meromorphic functions; $a=0$ gives the identically
 zero function.
@@ -52,11 +52,11 @@ The function $g(z)=zf(z)$ extends to an entire function.
 ::: pf-proof
 
 At any nonzero point the given upper bound is locally
-finite. A pole there would make $|f|$ unbounded in every
+finite. A pole there would make $\abs{f}$ unbounded in every
 punctured neighborhood, contradicting the bound. Thus $f$
 is holomorphic on $\CC\setminus\{0\}$. On that set,
 $$
-|g(z)|\leq\log(2+|z|^2).
+\abs{g(z)}\leq\log(2+\abs{z}^2).
 $$
 This bounds $g$ near zero, so the removable-singularity
 theorem gives an entire extension, still denoted $g$
@@ -75,7 +75,7 @@ The entire extension is constant.
 Write $g(z)=\sum_{n\geq0}b_nz^n$. For every $R>0$,
 Cauchy's coefficient estimate gives
 $$
-|b_n|\leq \frac{\log(2+R^2)}{R^n}
+\abs{b_n}\leq \frac{\log(2+R^2)}{R^n}
 $$
 [@SS03]. For any integer $n\geq1$, the right-hand side
 tends to zero as $R\to\infty$: for $R\geq1$ its numerator
@@ -95,11 +95,11 @@ The coefficient restriction is necessary and sufficient.
 ::: pf-proof
 
 The original inequality for $f=a/z$ is equivalent, after
-multiplication by $|z|>0$, to
+multiplication by $\abs{z}>0$, to
 $$
-|a|\leq\log(2+|z|^2)\qquad(z\ne0).
+\abs{a}\leq\log(2+\abs{z}^2)\qquad(z\ne0).
 $$
-Letting $|z|\downarrow0$ gives $|a|\leq\log2$.
+Letting $\abs{z}\downarrow0$ gives $\abs{a}\leq\log2$.
 Conversely, this last bound implies the displayed inequality
 for every nonzero $z$, since the logarithm is increasing.
 Every such $a/z$ is meromorphic on the plane, with at

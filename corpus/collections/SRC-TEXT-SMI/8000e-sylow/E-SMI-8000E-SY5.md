@@ -59,7 +59,7 @@ congruent to $1$ modulo $q$. Hence
 $$
 n_q=1.
 $$
-So the Sylow $q$-subgroup $Q$ is normal. Because $|Q|=q$, it is cyclic, and
+So the Sylow $q$-subgroup $Q$ is normal. Because $\cardinality{Q}=q$, it is cyclic, and
 the quotient $G/Q$ has order $p$, hence is cyclic. Therefore
 $$
 G\trianglerighteq Q\trianglerighteq1
@@ -72,7 +72,7 @@ is an abelian normal tower, and $G$ is solvable.
 
 ::: pf-step
 
-If $|G|=p^2q$ and $q<p$, then $G$ is solvable.
+If $\cardinality{G}=p^2q$ and $q<p$, then $G$ is solvable.
 
 ::: pf-proof
 
@@ -100,7 +100,7 @@ is an abelian normal tower.
 
 ::: pf-step
 
-If $|G|=p^2q$ and $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
+If $\cardinality{G}=p^2q$ and $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
 
 ::: pf-proof
 
@@ -146,7 +146,7 @@ Every group of order $12$ is solvable.
 
 ::: pf-proof
 
-Let $|G|=12$. If the Sylow $3$-subgroup is normal, then it is cyclic of order
+Let $\cardinality{G}=12$. If the Sylow $3$-subgroup is normal, then it is cyclic of order
 $3$, and the quotient has order $4$, hence is abelian; so $G$ is solvable.
 
 It remains to treat the case of four Sylow $3$-subgroups. Distinct subgroups

@@ -146,7 +146,7 @@ Since $X_i$ has exactly two such vertices and the number of sheets is constant o
 If the degree were $2$, then $W$ would have exactly one valence-$3$ vertex.
 But a finite graph has an even number of odd-valence vertices, since
 $$
-\sum_v \deg(v)=2|E|.
+\sum_v \deg(v)=2\cardinality{E}.
 $$
 All other points of $W$ have valence $2$, so this is impossible.
 Therefore the degree is $1$, and $p$ is an isomorphism of covering spaces.

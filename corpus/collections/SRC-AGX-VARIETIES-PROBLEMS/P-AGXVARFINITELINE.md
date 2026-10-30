@@ -157,7 +157,7 @@ for some $c\in k^\times$ and $n\in\ZZ$.
 
 The morphism is constant exactly when $n=0$, so non-constancy gives
 $$
-r:=|n|\geq1.
+r:=\abs{n}\geq1.
 $$
 The image of the target coordinate ring is
 $$

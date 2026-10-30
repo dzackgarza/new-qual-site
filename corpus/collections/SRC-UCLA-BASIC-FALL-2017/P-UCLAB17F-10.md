@@ -61,7 +61,7 @@ Every moment on the right is zero by hypothesis.
 
 There exists a sequence of polynomials $(p_m)$ such that
 $$
-\|p_m-f\|_\infty\to0
+\norm{p_m-f}_\infty\to0
 $$
 on $[a,b]$.
 
@@ -109,17 +109,17 @@ Since $f$ is continuous on $[a,b]$, it is bounded.
 Hence
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_a^b f(x)^2\,dx
 -
 \int_a^b f(x)p_m(x)\,dx
-\right|
+}
 &=
-\left|
+\abs{
 \int_a^b f(x)(f(x)-p_m(x))\,dx
-\right|\\
+}\\
 &\le
-(b-a)\|f\|_\infty\|f-p_m\|_\infty.
+(b-a)\norm{f}_\infty\norm{f-p_m}_\infty.
 \end{aligned}
 $$
 The right side tends to $0$ by step [](#s1-2){.pf-ref}.

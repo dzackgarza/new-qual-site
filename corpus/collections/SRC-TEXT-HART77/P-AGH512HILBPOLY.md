@@ -225,13 +225,13 @@ The hyperplane bundle of the given embedding restricts to
 $$
 \OO_C(1)
 \cong
-\OO_X(H)|_C.
+\OO_X(H)\restrict_C.
 $$
 The degree of the embedded curve $C\subseteq\PP^N$ is the degree of this
 hyperplane line bundle.  By the definition of the surface intersection
 pairing [[D-SRFINT]],
 $$
-\deg_C\bigl(\OO_X(H)|_C\bigr)=C\cdot H.
+\deg_C\bigl(\OO_X(H)\restrict_C\bigr)=C\cdot H.
 $$
 Hence
 $$

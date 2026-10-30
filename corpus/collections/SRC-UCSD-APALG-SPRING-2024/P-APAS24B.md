@@ -15,7 +15,7 @@ review: draft
 ::: {.problem}
 Let $A=(a_{ij})\in M_n(\CC)=\CC^{n\times n}$ and define the sets
 $$
-D_i=\Biggl\{\beta\in\CC\ \Biggm|\ |\beta-a_{ii}|\le\sum_{\substack{j=1\\ j\neq i}}^{n}|a_{ij}|\Biggr\}\subseteq\CC,
+D_i=\Biggl\{\beta\in\CC\ \st\ \abs{\beta-a_{ii}}\le\sum_{\substack{j=1\\ j\neq i}}^{n}\abs{a_{ij}}\Biggr\}\subseteq\CC,
 $$
 for $1\le i\le n$.
 Given any eigenvalue $\lambda$ of $A$, prove
@@ -27,7 +27,7 @@ $$
 ::: {.solution}
 Let $Ax=\lambda x$ with $x\ne0$. Choose an index $i$ such that
 $$
-|x_i|=\max_{1\le k\le n}|x_k|.
+\abs{x_i}=\max_{1\le k\le n}\abs{x_k}.
 $$
 Then $x_i\ne0$. Looking at the $i$th coordinate of the eigenvalue equation gives
 $$
@@ -39,15 +39,15 @@ $$
 $$
 Therefore
 $$
-|\lambda-a_{ii}|\,|x_i|
+\abs{\lambda-a_{ii}}\,\abs{x_i}
 \le
-\sum_{j\ne i}|a_{ij}|\,|x_j|
+\sum_{j\ne i}\abs{a_{ij}}\,\abs{x_j}
 \le
-|x_i|\sum_{j\ne i}|a_{ij}|.
+\abs{x_i}\sum_{j\ne i}\abs{a_{ij}}.
 $$
-Dividing by $|x_i|>0$ yields
+Dividing by $\abs{x_i}>0$ yields
 $$
-|\lambda-a_{ii}|\le\sum_{j\ne i}|a_{ij}|.
+\abs{\lambda-a_{ii}}\le\sum_{j\ne i}\abs{a_{ij}}.
 $$
 Thus $\lambda\in D_i$, and hence
 $$

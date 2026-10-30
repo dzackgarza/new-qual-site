@@ -100,7 +100,7 @@ $$
 H(x,t)
 =
 \frac{(1-t)f(x)-tx}
-{\lVert(1-t)f(x)-tx\rVert},
+{\norm{(1-t)f(x)-tx}},
 \qquad
 0\le t\le1.
 $$

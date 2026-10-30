@@ -78,7 +78,7 @@ Property (E) is not required of a metric and can fail.
 
 ::: pf-proof
 
-Take $X=\RR$ with the usual metric $\delta(s,t)=|s-t|$, and choose
+Take $X=\RR$ with the usual metric $\delta(s,t)=\abs{s-t}$, and choose
 $$
 x=0,\qquad y=1,\qquad z=0.
 $$

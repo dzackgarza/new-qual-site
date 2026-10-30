@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-7UIYI
 kind: problem
-title: $\lim|a_{n+1}/a_n|=L$ implies $\lim|a_n|^{1/n}=L$, and the ratio test for the
-  radius of convergence
+title: $\lim\abs{a_{n+1}/a_n}=L$ implies $\lim\abs{a_n}^{1/n}=L$, and the ratio test for the radius of convergence
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-14
 kind: problem
-title: Entire functions with $|f(z)|\le M|z|^2$ are quadratic polynomials
+title: Entire functions with $\abs{f(z)}\le M\abs{z}^2$ are quadratic polynomials
 classification:
   areas:
   - complex-analysis
@@ -32,9 +32,9 @@ Let $f(z)$ be entire and assume that $\abs{f(z)} \le M\abs{z}^2$ outside some di
 
 By hypothesis there exists $R_0>0$ such that
 $$
-|f(z)|\le M|z|^2
+\abs{f(z)}\le M\abs{z}^2
 \qquad
-\text{whenever }|z|\ge R_0.
+\text{whenever }\abs{z}\ge R_0.
 $$
 Write the entire power series
 $$
@@ -47,7 +47,7 @@ $$
 
 For every $r\ge R_0$ and every $n\ge0$,
 $$
-|a_n|
+\abs{a_n}
 \le
 Mr^{2-n}.
 $$
@@ -55,20 +55,20 @@ $$
 
 ::: pf-proof
 
-On the circle $|z|=r$ the hypothesis gives
+On the circle $\abs{z}=r$ the hypothesis gives
 $$
-\max_{|z|=r}|f(z)|\le Mr^2.
+\max_{\abs{z}=r}\abs{f(z)}\le Mr^2.
 $$
 Cauchy's coefficient formula gives
 $$
 a_n
 =
 \frac1{2\pi i}
-\int_{|z|=r}\frac{f(z)}{z^{n+1}}\,dz.
+\int_{\abs{z}=r}\frac{f(z)}{z^{n+1}}\,dz.
 $$
 Therefore
 $$
-|a_n|
+\abs{a_n}
 \le
 \frac1{2\pi}(2\pi r)\frac{Mr^2}{r^{n+1}}
 =
@@ -91,7 +91,7 @@ $$
 
 Fix $n\ge3$. Step [](#s1-1){.pf-ref} holds for every arbitrarily large $r$, so
 $$
-|a_n|
+\abs{a_n}
 \le
 Mr^{2-n}.
 $$

@@ -34,11 +34,11 @@ Let $A$ be a nonempty finite simply ordered set.
 :::
 
 ::: {.solution}
-(a) We induct on $|A|$. If $|A|=1$, the unique element is the largest element.
+(a) We induct on $\cardinality{A}$. If $\cardinality{A}=1$, the unique element is the largest element.
 
-Assume every nonempty simply ordered set of cardinality $n$ has a largest element, and let $|A|=n+1$. Choose $a\in A$. Then $A-\{a\}$ has cardinality $n$, so by induction it has a largest element $m$. Since the order is simple, either $a<m$ or $m<a$. In the first case $m$ is largest in all of $A$; in the second case $a$ is largest. Thus every nonempty finite simply ordered set has a largest element.
+Assume every nonempty simply ordered set of cardinality $n$ has a largest element, and let $\cardinality{A}=n+1$. Choose $a\in A$. Then $A-\{a\}$ has cardinality $n$, so by induction it has a largest element $m$. Since the order is simple, either $a<m$ or $m<a$. In the first case $m$ is largest in all of $A$; in the second case $a$ is largest. Thus every nonempty finite simply ordered set has a largest element.
 
-(b) We again induct on $|A|$. A one-point ordered set is order-isomorphic to $\{1\}$. Suppose the assertion holds for cardinality $n$, and let $|A|=n+1$. By part (a), $A$ has a largest element $M$. The subset
+(b) We again induct on $\cardinality{A}$. A one-point ordered set is order-isomorphic to $\{1\}$. Suppose the assertion holds for cardinality $n$, and let $\cardinality{A}=n+1$. By part (a), $A$ has a largest element $M$. The subset
 $$
 A'=A-\{M\}
 $$

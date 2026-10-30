@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20D
 kind: problem
-title: "$\\int f^\\alpha\\,d\\mu\\to\\mu\\{f>0\\}$ as $\\alpha\\to0^+$ and $\\int|g|^{p+1}/\\int|g|^p\\to\\|g\\|_\\infty$ as $p\\to\\infty$"
+title: "$\\int f^\\alpha\\,d\\mu\\to\\mu\\{f>0\\}$ as $\\alpha\\to0^+$ and $\\int\\abs{g}^{p+1}/\\int\\abs{g}^p\\to\\norm{g}_\\infty$ as $p\\to\\infty$"
 classification:
   areas:
   - real-analysis
@@ -35,9 +35,9 @@ $$
 \lim_{\alpha \to 0^+} \int_X f^\alpha \, d\mu = \mu(\{x \in X : f(x) > 0\}).
 $$
 
-(2) If $g \in L^\infty(\mu)$ with $\|g\|_\infty > 0$, then $g \in L^p(\mu)$ for any $p \in [1, \infty)$ and
+(2) If $g \in L^\infty(\mu)$ with $\norm{g}_\infty > 0$, then $g \in L^p(\mu)$ for any $p \in [1, \infty)$ and
 $$
-\lim_{p \to +\infty} \int_X \frac{|g|^{p+1} \, d\mu}{\int_X |g|^p \, d\mu} = \|g\|_\infty.
+\lim_{p \to +\infty} \int_X \frac{\abs{g}^{p+1} \, d\mu}{\int_X \abs{g}^p \, d\mu} = \norm{g}_\infty.
 $$
 :::
 
@@ -93,7 +93,7 @@ Apply the dominated convergence theorem to the pointwise limit of step [](#s1-2)
 
 ::: {.pf-step #s2}
 
-(2) $g \in L^p$ for $p \in [1,\infty)$ and $\lim_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} = \|g\|_\infty$.
+(2) $g \in L^p$ for $p \in [1,\infty)$ and $\lim_{p\to\infty} \frac{\int \abs{g}^{p+1}}{\int \abs{g}^p} = \norm{g}_\infty$.
 
 ::: pf-proof
 
@@ -103,7 +103,7 @@ $g \in L^p$ for all $p \in [1,\infty)$.
 
 ::: pf-proof
 
-Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^p \le \|g\|_\infty^p \mu(X) < \infty$.
+Since $\abs{g} \le \norm{g}_\infty$ a.e., $\int \abs{g}^p \le \norm{g}_\infty^p \mu(X) < \infty$.
 
 :::
 
@@ -111,11 +111,11 @@ Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^p \le \|g\|_\infty^p \mu(X) < \inft
 
 ::: {.pf-step #s2-2}
 
-$\frac{\int |g|^{p+1}}{\int |g|^p} \le \|g\|_\infty$.
+$\frac{\int \abs{g}^{p+1}}{\int \abs{g}^p} \le \norm{g}_\infty$.
 
 ::: pf-proof
 
-Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^{p+1} = \int |g| \cdot |g|^p \le \|g\|_\infty \int |g|^p$, and $\int|g|^p>0$ because $\|g\|_\infty>0$.
+Since $\abs{g} \le \norm{g}_\infty$ a.e., $\int \abs{g}^{p+1} = \int \abs{g} \cdot \abs{g}^p \le \norm{g}_\infty \int \abs{g}^p$, and $\int\abs{g}^p>0$ because $\norm{g}_\infty>0$.
 
 :::
 
@@ -123,19 +123,19 @@ Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^{p+1} = \int |g| \cdot |g|^p \le \|
 
 ::: {.pf-step #s2-3}
 
-$\liminf_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} \ge \|g\|_\infty$.
+$\liminf_{p\to\infty} \frac{\int \abs{g}^{p+1}}{\int \abs{g}^p} \ge \norm{g}_\infty$.
 
 ::: pf-proof
 
-Write $M=\|g\|_\infty>0$ and fix $\varepsilon\in(0,M)$. Let
+Write $M=\norm{g}_\infty>0$ and fix $\varepsilon\in(0,M)$. Let
 $$
-A=\{|g|>M-\varepsilon/2\},
+A=\{\abs{g}>M-\varepsilon/2\},
 \qquad
-B=\{|g|\le M-\varepsilon\}.
+B=\{\abs{g}\le M-\varepsilon\}.
 $$
 By the definition of essential supremum, $\mu(A)>0$. If
 $$
-Z_p=\int_X|g|^p\,d\mu,
+Z_p=\int_X\abs{g}^p\,d\mu,
 $$
 then
 $$
@@ -143,11 +143,11 @@ Z_p\ge (M-\varepsilon/2)^p\mu(A),
 $$
 whereas
 $$
-\int_B|g|^p\,d\mu\le (M-\varepsilon)^p\mu(X).
+\int_B\abs{g}^p\,d\mu\le (M-\varepsilon)^p\mu(X).
 $$
 Therefore
 $$
-\frac{\int_B|g|^p\,d\mu}{Z_p}
+\frac{\int_B\abs{g}^p\,d\mu}{Z_p}
 \le
 \frac{\mu(X)}{\mu(A)}
 \left(\frac{M-\varepsilon}{M-\varepsilon/2}\right)^p
@@ -155,14 +155,14 @@ $$
 $$
 Now
 $$
-\frac{\int|g|^{p+1}}{Z_p}
-=\frac{\int |g|\,|g|^p}{Z_p}
+\frac{\int\abs{g}^{p+1}}{Z_p}
+=\frac{\int \abs{g}\,\abs{g}^p}{Z_p}
 \ge (M-\varepsilon)
-\frac{\int_{X\setminus B}|g|^p}{Z_p}.
+\frac{\int_{X\setminus B}\abs{g}^p}{Z_p}.
 $$
 The last factor tends to $1$, so
 $$
-\liminf_{p\to\infty}\frac{\int|g|^{p+1}}{\int|g|^p}
+\liminf_{p\to\infty}\frac{\int\abs{g}^{p+1}}{\int\abs{g}^p}
 \ge M-\varepsilon.
 $$
 Letting $\varepsilon\downarrow0$ proves the desired lower bound.
@@ -173,7 +173,7 @@ Letting $\varepsilon\downarrow0$ proves the desired lower bound.
 
 ::: pf-step
 
-Hence the limit is $\|g\|_\infty$.
+Hence the limit is $\norm{g}_\infty$.
 
 ::: pf-proof
 

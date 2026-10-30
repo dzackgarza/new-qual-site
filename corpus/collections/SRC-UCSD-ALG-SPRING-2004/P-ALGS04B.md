@@ -24,8 +24,8 @@ audit:
 
 ::: {.problem}
 Let $G$ be the group of $2 \times 2$ invertible matrices with entries in the finite
-field $\ZZ_p$. Then $|G| = (p-1)^2 p(p+1)$. Assume that $p = 17$, so
-$|G| = 2^9 \cdot 3^2 \cdot 17$.
+field $\ZZ_p$. Then $\cardinality{G} = (p-1)^2 p(p+1)$. Assume that $p = 17$, so
+$\cardinality{G} = 2^9 \cdot 3^2 \cdot 17$.
 
 (a) Let $x$ be an element of $G$ of order 17. Prove that $x$ is conjugate to an element
 of the form $\begin{pmatrix} 1 & b \\ 0 & 1 \end{pmatrix}$.
@@ -48,13 +48,13 @@ Let
 $$
 U=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\FF_{17}\right\}.
 $$
-Then $U\cong (\FF_{17},+)$, so $|U|=17$ and $U$ is a Sylow $17$-subgroup
+Then $U\cong (\FF_{17},+)$, so $\cardinality{U}=17$ and $U$ is a Sylow $17$-subgroup
 of $G=\operatorname{GL}(2,\FF_{17})$.
 
 ::: pf-proof
 
 The displayed matrices multiply by adding their upper-right entries. Since $17$ occurs
-to the first power in $|G|=16^2\cdot17\cdot18$, every subgroup of order $17$ is
+to the first power in $\cardinality{G}=16^2\cdot17\cdot18$, every subgroup of order $17$ is
 Sylow.
 
 :::
@@ -127,7 +127,7 @@ The group $G$ has exactly $18$ Sylow $17$-subgroups.
 There are $16$ choices for each nonzero diagonal entry and $17$ choices for the
 upper-right entry, so
 $$
-|B|=16^2\cdot17.
+\cardinality{B}=16^2\cdot17.
 $$
 Sylow subgroups conjugate transitively, and the stabilizer of $U$ under conjugation is
 $N_G(U)=B$. Hence

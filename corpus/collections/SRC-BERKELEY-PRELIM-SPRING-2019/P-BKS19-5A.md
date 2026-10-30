@@ -32,7 +32,7 @@ Find the number of complex roots of
 $$
 e^z=3z^6
 $$
-with $|z|<1$ that have positive imaginary part.
+with $\abs{z}<1$ that have positive imaginary part.
 :::
 
 ::: {.solution}
@@ -46,14 +46,14 @@ $$
 
 ::: {.pf-step #s1-1}
 
-The function $F$ has six zeros in $|z|<1$, counted with multiplicity.
+The function $F$ has six zeros in $\abs{z}<1$, counted with multiplicity.
 
 
 ::: pf-proof
 
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|e^z|=e^{\operatorname{Re}z}\leq e<3=|3z^6|.
+\abs{e^z}=e^{\operatorname{Re}z}\leq e<3=\abs{3z^6}.
 $$
 Hence Rouché's theorem applied to $3z^6$ and $-e^z$ shows that
 $$
@@ -74,7 +74,7 @@ Exactly one real zero of $F$ lies in $(-1,0)$ and exactly one lies in $(0,1)$.
 
 For real $x\neq0$, the equation $F(x)=0$ is equivalent to
 $$
-\Phi(x)\coloneqq x-\log3-6\log|x|=0.
+\Phi(x)\coloneqq x-\log3-6\log\abs{x}=0.
 $$
 On $(-1,0)$,
 $$

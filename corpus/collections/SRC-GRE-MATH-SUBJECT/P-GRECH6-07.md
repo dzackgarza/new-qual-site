@@ -41,7 +41,7 @@ The order of an element $(\overline a,\overline b)$ is
 $$
 \operatorname{lcm}\bigl(\operatorname{ord}(\overline a),\operatorname{ord}(\overline b)\bigr),
 $$
-which divides $\operatorname{lcm}(m,n)$. If $\gcd(m,n)>1$, then $\operatorname{lcm}(m,n)<mn=|\ZZ_m\times\ZZ_n|$, so no element can generate the product. If $\gcd(m,n)=1$, then $(\overline1,\overline1)$ has order $\operatorname{lcm}(m,n)=mn$, so it generates the product.
+which divides $\operatorname{lcm}(m,n)$. If $\gcd(m,n)>1$, then $\operatorname{lcm}(m,n)<mn=\cardinality{\ZZ_m\times\ZZ_n}$, so no element can generate the product. If $\gcd(m,n)=1$, then $(\overline1,\overline1)$ has order $\operatorname{lcm}(m,n)=mn$, so it generates the product.
 
 :::
 

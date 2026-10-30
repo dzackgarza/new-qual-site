@@ -54,7 +54,7 @@ $$
 Every element of $M$ has only finitely many nonzero coordinates, so it is killed by the least common multiple of the corresponding finitely many integers $n$.
 Thus $M$ is a torsion $\ZZ$-module.
 
-However, if $0\ne a\in\ZZ$, choose $n>|a|$ with $n\nmid a$.
+However, if $0\ne a\in\ZZ$, choose $n>\abs{a}$ with $n\nmid a$.
 The element whose only nonzero coordinate is $1\in\ZZ/n\ZZ$ is not killed by $a$.
 Hence no nonzero integer annihilates all of $M$, so
 $$

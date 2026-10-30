@@ -123,7 +123,7 @@ Hence the residue is $-\zeta/\alpha$.
 Let $C_{\varepsilon,R}$ be the positively oriented boundary of the
 annular sector
 $$
-\varepsilon\leq|z|\leq R,
+\varepsilon\leq\abs{z}\leq R,
 \qquad
 0\leq\arg z\leq\theta,
 $$
@@ -157,9 +157,9 @@ $R\to\infty$ and $\varepsilon\to0^+$.
 
 ::: pf-proof
 
-On $|z|=R$,
+On $\abs{z}=R$,
 $$
-|1+z^\alpha|
+\abs{1+z^\alpha}
 \geq
 R^\alpha-1.
 $$
@@ -171,9 +171,9 @@ $$
 $$
 because $\alpha>1$.
 
-On $|z|=\varepsilon$,
+On $\abs{z}=\varepsilon$,
 $$
-|1+z^\alpha|
+\abs{1+z^\alpha}
 \geq
 1-\varepsilon^\alpha.
 $$
@@ -286,7 +286,7 @@ $$
 $$
 use the branch
 $$
-\Log z=\log|z|+i\arg z.
+\Log z=\log\abs{z}+i\arg z.
 $$
 Then
 $$
@@ -368,16 +368,16 @@ $R\to\infty$ and $\varepsilon\to0^+$.
 
 On the outer arc,
 $$
-|\Log z|
+\abs{\Log z}
 \leq
 \log R+\theta.
 $$
 Using the same denominator bound as in step [](#s1-4){.pf-ref}, the $ML$ estimate gives
 $$
-\left|
-\int_{|z|=R}
+\abs{
+\int_{\abs{z}=R}
 \frac{\Log z}{1+z^\alpha}\,dz
-\right|
+}
 \leq
 \frac{\theta R(\log R+\theta)}
 {R^\alpha-1}
@@ -387,27 +387,27 @@ because $\alpha>1$.
 
 On the inner arc,
 $$
-|\Log z|
+\abs{\Log z}
 \leq
-|\log\varepsilon|+\theta.
+\abs{\log\varepsilon}+\theta.
 $$
 Hence
 $$
-\left|
-\int_{|z|=\varepsilon}
+\abs{
+\int_{\abs{z}=\varepsilon}
 \frac{\Log z}{1+z^\alpha}\,dz
-\right|
+}
 \leq
 \frac{
 \theta\varepsilon
-(|\log\varepsilon|+\theta)
+(\abs{\log\varepsilon}+\theta)
 }{
 1-\varepsilon^\alpha
 }.
 $$
 Since
 $$
-\varepsilon|\log\varepsilon|
+\varepsilon\abs{\log\varepsilon}
 \longrightarrow0,
 $$
 this bound tends to $0$.

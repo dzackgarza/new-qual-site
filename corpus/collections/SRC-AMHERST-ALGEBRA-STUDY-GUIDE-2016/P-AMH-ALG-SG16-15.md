@@ -45,9 +45,9 @@ $$
 $$
 Hence the order of $\varphi(\tau)$ divides $2$.
 
-On the other hand, $\varphi(\tau)\in G$, so by Lagrange's theorem its order divides $|G|$. Since $|G|$ is odd,
+On the other hand, $\varphi(\tau)\in G$, so by Lagrange's theorem its order divides $\cardinality{G}$. Since $\cardinality{G}$ is odd,
 $$
-\gcd(2,|G|)=1.
+\gcd(2,\cardinality{G})=1.
 $$
 Therefore
 $$

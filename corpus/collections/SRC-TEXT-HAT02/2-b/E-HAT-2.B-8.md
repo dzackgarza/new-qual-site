@@ -61,7 +61,7 @@ with $\gamma(0)=a$ and $\gamma(1)=-a$.
 
 ::: pf-proof
 
-The punctured Euclidean space $\RR^{2n+1}-\{0\}$ is path-connected when $2n+1>1$; for instance join antipodal points by a semicircle on the sphere of radius $\|a\|$.
+The punctured Euclidean space $\RR^{2n+1}-\{0\}$ is path-connected when $2n+1>1$; for instance join antipodal points by a semicircle on the sphere of radius $\norm{a}$.
 
 :::
 

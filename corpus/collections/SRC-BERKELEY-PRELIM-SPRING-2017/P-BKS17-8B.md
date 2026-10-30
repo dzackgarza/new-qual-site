@@ -97,7 +97,7 @@ $$
 $$
 The product $\langle-1\rangle\langle5\rangle$ therefore has $2\cdot16=32$ elements. Since
 $$
-\left|(\ZZ/64\ZZ)^\times\right|=\varphi(64)=32,
+\cardinality{(\ZZ/64\ZZ)^\times}=\varphi(64)=32,
 $$
 it is the whole unit group, and the asserted direct-product decomposition follows.
 
@@ -131,7 +131,7 @@ $$
 $$
 But
 $$
-\left|(\ZZ/5^6\ZZ)^\times\right|
+\cardinality{(\ZZ/5^6\ZZ)^\times}
 =
 \varphi(5^6)
 =4\cdot5^5,

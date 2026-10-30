@@ -64,12 +64,12 @@ The family $(T_n)$ is uniformly bounded in operator norm.
 
 For every fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
 $$
-\sup_n\|T_nx\|_Y<\infty
+\sup_n\norm{T_nx}_Y<\infty
 \qquad\text{for every }x\in X.
 $$
 Since $X$ is Banach, the Uniform Boundedness Principle applies and gives a constant $C<\infty$ such that
 $$
-\sup_n\|T_n\|_{X\to Y}\le C.
+\sup_n\norm{T_n}_{X\to Y}\le C.
 $$
 
 :::
@@ -84,14 +84,14 @@ The pointwise limit is bounded.
 
 For every $x\in X$,
 $$
-\|Tx\|_Y
-=\left\|\lim_{n\to\infty}T_nx\right\|_Y
-=\lim_{n\to\infty}\|T_nx\|_Y
-\le C\|x\|_X.
+\norm{Tx}_Y
+=\norm{\lim_{n\to\infty}T_nx}_Y
+=\lim_{n\to\infty}\norm{T_nx}_Y
+\le C\norm{x}_X.
 $$
 Hence $T$ is bounded and
 $$
-\|T\|_{X\to Y}\le C.
+\norm{T}_{X\to Y}\le C.
 $$
 Thus $T$ is a bounded linear operator from $X$ to $Y$.
 

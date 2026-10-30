@@ -25,7 +25,7 @@ Prove or disprove the following claims.
 
 Here the distance between $A=(a_{ij})$ and $B=(b_{ij})$ is
 $$
-d(A,B)=\left(\sum_{1\le i,j\le3}|a_{ij}-b_{ij}|^2\right)^{1/2}.
+d(A,B)=\left(\sum_{1\le i,j\le3}\abs{a_{ij}-b_{ij}}^2\right)^{1/2}.
 $$
 :::
 
@@ -84,7 +84,7 @@ d(A,0)<\delta
 $$
 implies
 $$
-|\det A|<\frac12.
+\abs{\det A}<\frac12.
 $$
 No such matrix can satisfy
 $$
@@ -136,7 +136,7 @@ $$
 $$
 such that
 $$
-|\mu_i-\lambda_i|<\varepsilon.
+\abs{\mu_i-\lambda_i}<\varepsilon.
 $$
 
 

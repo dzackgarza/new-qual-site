@@ -33,7 +33,7 @@ Show that the collection $\mathcal{B} = \bigcup \mathcal{B}_n$ is countably loca
 ::: {.solution}
 Give $\RR^\omega$ the uniform metric
 $$
-\bar\rho(x,y)=\sup_i\min\{|x_i-y_i|,1\}.
+\bar\rho(x,y)=\sup_i\min\{\abs{x_i-y_i},1\}.
 $$
 Fix $n$. A member of $\mathcal B_n$ is determined by a binary tail
 $$
@@ -46,9 +46,9 @@ $$
 
 We first show that $\mathcal B_n$ is locally finite. Fix $x\in\RR^\omega$ and use the ball $B_{\bar\rho}(x,1/3)$. If two members $B_\epsilon,B_\eta\in\mathcal B_n$ both met this ball, choose $y\in B_\epsilon$ and $z\in B_\eta$ in the ball. For every $i>n$,
 $$
-|\epsilon_i-x_i|<1/3,
+\abs{\epsilon_i-x_i}<1/3,
 \qquad
-|\eta_i-x_i|<1/3.
+\abs{\eta_i-x_i}<1/3.
 $$
 Since $\epsilon_i,\eta_i\in\{0,1\}$, the intervals of radius $1/3$ around $0$ and $1$ are disjoint, so $\epsilon_i=\eta_i$ for every $i>n$. Thus $B_\epsilon=B_\eta$. Hence this ball meets at most one member of $\mathcal B_n$, so $\mathcal B_n$ is locally finite. Therefore
 $$

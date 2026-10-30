@@ -37,22 +37,22 @@ $$
 ::: {.solution}
 Consider first the nonnegative integrand
 $$
-H(x,t)=\mathbf 1_{\{0\le x\le t\le1\}}\frac{|f(t)|}{t}.
+H(x,t)=\mathbf 1_{\{0\le x\le t\le1\}}\frac{\abs{f(t)}}{t}.
 $$
 Tonelli's theorem gives
 $$
 \begin{aligned}
-\int_0^1\int_x^1\frac{|f(t)|}{t}\,dt\,dx
-&=\int_0^1\int_0^t\frac{|f(t)|}{t}\,dx\,dt\\
-&=\int_0^1 |f(t)|\,dt<\infty.
+\int_0^1\int_x^1\frac{\abs{f(t)}}{t}\,dt\,dx
+&=\int_0^1\int_0^t\frac{\abs{f(t)}}{t}\,dx\,dt\\
+&=\int_0^1 \abs{f(t)}\,dt<\infty.
 \end{aligned}
 $$
 Hence for almost every $x$ the defining integral for $g(x)$ is absolutely convergent, and moreover
 $$
-\int_0^1|g(x)|\,dx
+\int_0^1\abs{g(x)}\,dx
 \le
-\int_0^1\int_x^1\frac{|f(t)|}{t}\,dt\,dx
-\le \|f\|_1.
+\int_0^1\int_x^1\frac{\abs{f(t)}}{t}\,dt\,dx
+\le \norm{f}_1.
 $$
 Thus $g\in L^1([0,1])$.
 

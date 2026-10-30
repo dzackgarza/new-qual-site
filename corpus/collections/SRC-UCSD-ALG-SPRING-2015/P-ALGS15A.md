@@ -27,10 +27,10 @@ audit:
 ::: {.problem}
 Let $G$ be a group of order $p^2 q^2$, where $p$ and $q$ are primes with $p > q$.
 
-(a) Prove that either $|G| = 36$ or else $G$ has a normal Sylow $p$-subgroup.
+(a) Prove that either $\cardinality{G} = 36$ or else $G$ has a normal Sylow $p$-subgroup.
 
 (b) Prove that $G$ is solvable.
-(Hint: when $|G| = 36$, consider the action of $G$ on the left cosets of a Sylow $3$-subgroup).
+(Hint: when $\cardinality{G} = 36$, consider the action of $G$ on the left cosets of a Sylow $3$-subgroup).
 :::
 
 ::: {.solution}
@@ -50,7 +50,7 @@ Thus $n_p\in\{1,q,q^2\}$.
 
 ::: pf-proof
 
-The number of Sylow $p$-subgroups divides the $p$-free part $q^2$ of $|G|$ and is congruent to $1$ modulo $p$.
+The number of Sylow $p$-subgroups divides the $p$-free part $q^2$ of $\cardinality{G}$ and is congruent to $1$ modulo $p$.
 
 :::
 
@@ -80,7 +80,7 @@ Two consecutive integers larger than $2$ cannot both be prime, so $q=2$ and $p=3
 
 Therefore either $n_p=1$, in which case the Sylow $p$-subgroup is normal, or $(p,q)=(3,2)$ and
 $$
-|G|=3^2 2^2=36.
+\cardinality{G}=3^2 2^2=36.
 $$
 
 ::: pf-proof
@@ -108,7 +108,7 @@ Since $1\triangleleft P\triangleleft G$ has abelian factors $P$ and $G/P$, it is
 
 ::: {.pf-step #s5}
 
-It remains to treat $|G|=36$.
+It remains to treat $\cardinality{G}=36$.
 Let $P$ be a Sylow $3$-subgroup.
 Since $[G:P]=4$, the left action of $G$ on $G/P$ gives a homomorphism
 $$

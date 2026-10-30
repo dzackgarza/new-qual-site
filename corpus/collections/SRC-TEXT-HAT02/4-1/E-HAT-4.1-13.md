@@ -38,7 +38,7 @@ For any CW pair $(X, A)$, the pair has the homotopy extension property with resp
 :::
 
 ::: pf-step
-Specifically: Given a continuous map $f: X \to Y$ and a homotopy $h: A \times I \to Y$ starting at $f|_A$ (i.e. $h(a, 0) = f(a)$ for all $a \in A$), there exists a continuous homotopy $H: X \times I \to Y$ such that:
+Specifically: Given a continuous map $f: X \to Y$ and a homotopy $h: A \times I \to Y$ starting at $f\restrict_A$ (i.e. $h(a, 0) = f(a)$ for all $a \in A$), there exists a continuous homotopy $H: X \times I \to Y$ such that:
 - $H(x, 0) = f(x)$ for all $x \in X$, and
 - $H(a, t) = h(a, t)$ for all $(a, t) \in A \times I$.
 :::
@@ -92,7 +92,7 @@ $$f_0(x) = a_0 \quad \text{for all } x \in X.$$
 
 ::: pf-step
 Notice that the restriction of $f_0$ to $A$ matches the start of the homotopy $\bar{h}$:
-$$f_0|_A(a) = a_0 = \bar{h}(a, 0) \quad \text{for all } a \in A.$$
+$$f_0\restrict_A(a) = a_0 = \bar{h}(a, 0) \quad \text{for all } a \in A.$$
 :::
 
 ::: pf-step
@@ -127,7 +127,7 @@ $$r(a) = H(a, 1) = \bar{h}(a, 1) = \operatorname{id}_A(a) = a.$$
 :::
 
 ::: pf-step
-Thus $r|_A = \operatorname{id}_A$, which proves that $r: X \to A$ is a **retraction**.
+Thus $r\restrict_A = \operatorname{id}_A$, which proves that $r: X \to A$ is a **retraction**.
 :::
 
 :::

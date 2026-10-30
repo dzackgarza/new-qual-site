@@ -63,7 +63,7 @@ I_n:=\{i\in I:a(i)\ge 1/n\}.
 $$
 If $J\subset I_n$ is finite, then
 $$
-\frac{|J|}{n}
+\frac{\cardinality{J}}{n}
 \le \sum_{i\in J}a(i)
 \le S.
 $$
@@ -111,9 +111,9 @@ Because $x\notin F$ and $F$ is finite, choose $\delta>0$ such that
 $$
 (x-\delta,x+\delta)\cap F=\varnothing.
 $$
-If $|y-x|<\delta$, then the rational numbers whose terms contribute to the difference between $f(y)$ and $f(x)$ all lie in $\QQ\setminus F$. Therefore
+If $\abs{y-x}<\delta$, then the rational numbers whose terms contribute to the difference between $f(y)$ and $f(x)$ all lie in $\QQ\setminus F$. Therefore
 $$
-|f(y)-f(x)|
+\abs{f(y)-f(x)}
 \le\sum_{q\in\QQ\setminus F}a(q)
 <\varepsilon.
 $$

@@ -121,7 +121,7 @@ $$
 
 Schwarz's lemma gives
 $$
-|g(z)|\le|z|
+\abs{g(z)}\le\abs{z}
 $$
 for every
 $$
@@ -141,7 +141,7 @@ Step [](#p1-s1-1){.pf-ref} gives a holomorphic self-map of the unit disk fixing 
 
 Equality holds in Schwarz's lemma at the nonzero point $a$:
 $$
-|g(a)|=|a|.
+\abs{g(a)}=\abs{a}.
 $$
 
 
@@ -170,7 +170,7 @@ for every $z\in\DD$.
 
 The equality case of Schwarz's lemma states that if a holomorphic self-map of the disk fixing $0$ satisfies
 $$
-|g(a)|=|a|
+\abs{g(a)}=\abs{a}
 $$
 at some
 $$
@@ -345,7 +345,7 @@ $$
 
 Schwarz's lemma gives
 $$
-|g(w)|\le|w|
+\abs{g(w)}\le\abs{w}
 $$
 for every
 $$
@@ -365,7 +365,7 @@ Step [](#p2-s1-1){.pf-ref} gives a holomorphic self-map of the disk fixing the o
 
 Equality holds in Schwarz's estimate at the nonzero point $w_0$:
 $$
-|g(w_0)|=|w_0|.
+\abs{g(w_0)}=\abs{w_0}.
 $$
 
 
@@ -394,7 +394,7 @@ for some $\theta\in\RR$.
 
 The equality case in Schwarz's lemma says that if equality
 $$
-|g(w)|=|w|
+\abs{g(w)}=\abs{w}
 $$
 occurs at some nonzero point of the disk, then $g$ is a rotation.
 

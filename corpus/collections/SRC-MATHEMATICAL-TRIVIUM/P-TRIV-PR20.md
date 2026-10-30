@@ -26,11 +26,11 @@ Show that
 
 (a) $\mathbf{E} S_\tau = \mathbf{E}\tau \cdot \mathbf{E}\xi_1$,
 
-(b) $\mathbf{E}(S_\tau | \tau) = \tau \mathbf{E}\xi_1$,
+(b) $\mathbf{E}(S_\tau \given \tau) = \tau \mathbf{E}\xi_1$,
 
 (c) $\mathbf{D} S_\tau = \mathbf{E}\tau \cdot \mathbf{D}\xi_1 + \mathbf{D}\tau \cdot (\mathbf{E}\xi_1)^2$,
 
-(d) $\mathbf{D}(S_\tau | \tau) = \tau \mathbf{D}\xi_1$.
+(d) $\mathbf{D}(S_\tau \given \tau) = \tau \mathbf{D}\xi_1$.
 :::
 
 ::: {.solution}

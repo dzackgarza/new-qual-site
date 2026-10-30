@@ -36,7 +36,7 @@ $$
 Since $G=\{\sigma_1,\ldots,\sigma_n\}$ is the Galois group of the finite
 Galois extension $L/K$,
 $$
-[L:K]=\lvert G\rvert=n
+[L:K]=\cardinality{ G}=n
 $$
 [@DF04].
 

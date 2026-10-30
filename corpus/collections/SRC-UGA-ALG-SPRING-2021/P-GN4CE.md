@@ -44,9 +44,9 @@ c. Show that $R$ is not Noetherian.
 
 - That $R$ is not Noetherian: it suffices to show that $R$ contains an ideal that is not finitely generated.
 
-- The claim is that setting $S \definedas \theset{2x^k}_{k\in \ZZ_{\geq 1}}$ and taking
+- The claim is that setting $S \coloneqq \theset{2x^k}_{k\in \ZZ_{\geq 1}}$ and taking
 $$
-I \definedas \generators{S} = \sum_{k\in \ZZ_{\geq 1}} R\cdot 2x^k \definedas \theset{ \sum_{i=1}^m r_k(x) 2x^k \st r_k(x) \in 2\ZZ[x], m\in \ZZ_{\geq 0}}
+I \coloneqq \generators{S} = \sum_{k\in \ZZ_{\geq 1}} R\cdot 2x^k \coloneqq \theset{ \sum_{i=1}^m r_k(x) 2x^k \st r_k(x) \in 2\ZZ[x], m\in \ZZ_{\geq 0}}
 $$
 yields an ideal that is not finitely generated.
 

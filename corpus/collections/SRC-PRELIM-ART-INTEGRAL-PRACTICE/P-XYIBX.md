@@ -54,7 +54,7 @@ $$
 $$
 so polynomial division gives
 $$
-\boxed{2\sqrt x-6\sqrt[3]x+24\sqrt[6]x-48\ln|\sqrt[6]x+2|+C.}
+\boxed{2\sqrt x-6\sqrt[3]x+24\sqrt[6]x-48\ln\abs{\sqrt[6]x+2}+C.}
 $$
 
 For (3), with the same $t=x^{1/6}$,
@@ -63,7 +63,7 @@ $$
 $$
 thus
 $$
-\boxed{2\sqrt x+3\sqrt[3]x+6\sqrt[6]x+6\ln|\sqrt[6]x-1|+C.}
+\boxed{2\sqrt x+3\sqrt[3]x+6\sqrt[6]x+6\ln\abs{\sqrt[6]x-1}+C.}
 $$
 
 For (4), let $t=x^{1/4}$. Then
@@ -72,7 +72,7 @@ $$
 $$
 so
 $$
-\boxed{2\sqrt x-4\sqrt[4]x+4\ln|\sqrt[4]x+1|+C.}
+\boxed{2\sqrt x-4\sqrt[4]x+4\ln\abs{\sqrt[4]x+1}+C.}
 $$
 
 For (5), let $t=\sqrt[3]x$. Since $dx=3t^2dt$,
@@ -81,7 +81,7 @@ $$
 $$
 whence
 $$
-\boxed{x+3x^{2/3}+6x^{1/3}+6\ln|x^{1/3}-1|+C.}
+\boxed{x+3x^{2/3}+6x^{1/3}+6\ln\abs{x^{1/3}-1}+C.}
 $$
 
 For the first integral in (6), let $t=\sqrt x$:

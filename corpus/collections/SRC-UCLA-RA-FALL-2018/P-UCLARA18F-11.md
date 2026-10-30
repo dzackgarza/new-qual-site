@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Problem 11. An analytic Jordan curve is a set of the form
 $$
-\Gamma=f(\{|z|=1\}),
+\Gamma=f(\{\abs{z}=1\}),
 $$
 where $f$ is analytic and one-to-one on an annulus
 $$
-\{r<|z|<1/r\},\qquad 0<r<1.
+\{r<\abs{z}<1/r\},\qquad 0<r<1.
 $$
 Let $\CC^*=\CC\cup\{\infty\}$ be the Riemann sphere, let $N<\infty$, and let $\Omega\subset\CC^*$ be a domain for which $\partial\Omega$ has $N$ connected components, none of which are single points. Prove there is a conformal (i.e. one-to-one analytic) mapping from $\Omega$ onto a domain bounded by $N$ pairwise disjoint analytic Jordan curves.
 :::
@@ -86,9 +86,9 @@ with $R>0$. The affine map
 $$
 f(z)=c+Rz
 $$
-is entire and one-to-one on $\CC$, hence in particular analytic and one-to-one on every annulus $\{r<|z|<1/r\}$ with $0<r<1$. Moreover,
+is entire and one-to-one on $\CC$, hence in particular analytic and one-to-one on every annulus $\{r<\abs{z}<1/r\}$ with $0<r<1$. Moreover,
 $$
-f(\{|z|=1\})=C.
+f(\{\abs{z}=1\})=C.
 $$
 Thus $C$ is an analytic Jordan curve by the definition in the statement.
 

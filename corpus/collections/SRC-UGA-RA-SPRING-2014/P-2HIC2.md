@@ -47,18 +47,18 @@ $$\chi_T(x, y) = \begin{cases} 1 & \text{if } 0 \le y \le x \le 1, \\ 0 & \text{
 :::
 
 ::: pf-step
-The function $(x, y) \mapsto |f(y)| |g(x)| \chi_T(x, y)$ is non-negative and Lebesgue measurable on $[0, 1]^2$.
+The function $(x, y) \mapsto \abs{f(y)} \abs{g(x)} \chi_T(x, y)$ is non-negative and Lebesgue measurable on $[0, 1]^2$.
 
 :::
 
 ::: pf-step
 By Tonelli's Theorem:
-$$\int_0^1 \int_0^1 |f(y)| |g(x)| \chi_T(x, y) \, dy \, dx = \int_0^1 |g(x)| \left( \int_0^x |f(y)| \, dy \right) dx \le \int_0^1 |g(x)| \|f\|_{L^1} \, dx = \|f\|_{L^1} \|g\|_{L^1}.$$
+$$\int_0^1 \int_0^1 \abs{f(y)} \abs{g(x)} \chi_T(x, y) \, dy \, dx = \int_0^1 \abs{g(x)} \left( \int_0^x \abs{f(y)} \, dy \right) dx \le \int_0^1 \abs{g(x)} \norm{f}_{L^1} \, dx = \norm{f}_{L^1} \norm{g}_{L^1}.$$
 
 :::
 
 ::: pf-step
-Since $f, g \in L^1([0, 1])$, $\|f\|_{L^1} \|g\|_{L^1} < \infty$.
+Since $f, g \in L^1([0, 1])$, $\norm{f}_{L^1} \norm{g}_{L^1} < \infty$.
 
 :::
 

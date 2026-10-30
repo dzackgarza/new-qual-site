@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a real Banach space and $x_k \in X$ ($k = 1, 2, \ldots$). Assume that $\sum_{k=1}^\infty |f(x_k)| < \infty$ for any $f \in X^*$.
-Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty |f(x_k)| \leq \gamma \|f\|$ for any $f \in X^*$.
+Let $X$ be a real Banach space and $x_k \in X$ ($k = 1, 2, \ldots$). Assume that $\sum_{k=1}^\infty \abs{f(x_k)} < \infty$ for any $f \in X^*$.
+Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty \abs{f(x_k)} \leq \gamma \norm{f}$ for any $f \in X^*$.
 :::
 
 ::: {.solution}
@@ -36,7 +36,7 @@ Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty 
 
 ::: pf-step
 
-For each $N\ge1$, the map $T_N\colon X^*\to(\RR^N,\|\cdot\|_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
+For each $N\ge1$, the map $T_N\colon X^*\to(\RR^N,\norm{\cdot}_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
 
 ::: pf-proof
 
@@ -48,9 +48,9 @@ T_N(f)=(f(x_1),\ldots,f(x_N)),
 $$
 where $\RR^N$ is equipped with the $\ell^1$ norm. Then
 $$
-\|T_N(f)\|_1
-=\sum_{k=1}^N|f(x_k)|
-\le \left(\sum_{k=1}^N\|x_k\|\right)\|f\|,
+\norm{T_N(f)}_1
+=\sum_{k=1}^N\abs{f(x_k)}
+\le \left(\sum_{k=1}^N\norm{x_k}\right)\norm{f},
 $$
 so each $T_N$ is a bounded linear operator.
 
@@ -60,30 +60,30 @@ so each $T_N$ is a bounded linear operator.
 
 ::: pf-step
 
-$\gamma\coloneqq\sup_N\|T_N\|$ is finite, and $\sum_{k=1}^\infty|f(x_k)|\le\gamma\|f\|$ for every $f\in X^*$.
+$\gamma\coloneqq\sup_N\norm{T_N}$ is finite, and $\sum_{k=1}^\infty\abs{f(x_k)}\le\gamma\norm{f}$ for every $f\in X^*$.
 
 ::: pf-proof
 
 For every fixed $f\in X^*$, the hypothesis gives
 $$
-\sup_N\|T_N(f)\|_1
-=\sup_N\sum_{k=1}^N|f(x_k)|
-=\sum_{k=1}^\infty|f(x_k)|
+\sup_N\norm{T_N(f)}_1
+=\sup_N\sum_{k=1}^N\abs{f(x_k)}
+=\sum_{k=1}^\infty\abs{f(x_k)}
 <\infty.
 $$
 The dual space $X^*$ is Banach. Hence the Uniform Boundedness Principle yields
 $$
-\gamma:=\sup_N\|T_N\|<\infty.
+\gamma:=\sup_N\norm{T_N}<\infty.
 $$
 Therefore, for every $f\in X^*$ and every $N$,
 $$
-\sum_{k=1}^N|f(x_k)|
-=\|T_N(f)\|_1
-\le\gamma\|f\|.
+\sum_{k=1}^N\abs{f(x_k)}
+=\norm{T_N(f)}_1
+\le\gamma\norm{f}.
 $$
 Letting $N\to\infty$ gives
 $$
-\boxed{\sum_{k=1}^\infty|f(x_k)|\le\gamma\|f\|}
+\boxed{\sum_{k=1}^\infty\abs{f(x_k)}\le\gamma\norm{f}}
 $$
 for every $f\in X^*$.
 

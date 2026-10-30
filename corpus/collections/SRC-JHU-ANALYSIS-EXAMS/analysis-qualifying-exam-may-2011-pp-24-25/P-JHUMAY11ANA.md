@@ -26,14 +26,14 @@ audit:
 ---
 
 ::: {.problem}
-1. Find all entire functions f such that $| f ( z ) | = 1$ whenever $| z | = 1$ . Give explicit formulas for the functions and give a proof for your answer.
+1. Find all entire functions f such that $\abs{ f ( z ) } = 1$ whenever $\abs{ z } = 1$ . Give explicit formulas for the functions and give a proof for your answer.
    (An entire function is a holomorphic function on C.)
 :::
 
 ::: {.solution}
 The functions are exactly
 $$
-\boxed{f(z)=\alpha z^n,\qquad |\alpha|=1,\quad n=0,1,2,\ldots.}
+\boxed{f(z)=\alpha z^n,\qquad \abs{\alpha}=1,\quad n=0,1,2,\ldots.}
 $$
 
 ::: pf
@@ -55,7 +55,7 @@ $$
 P(z)=\prod_{j=1}^n(z-a_j),\qquad
 Q(z)=\prod_{j=1}^n(1-\overline{a_j}z),
 $$
-with empty products equal to one. Since $|a_j|<1$, the
+with empty products equal to one. Since $\abs{a_j}<1$, the
 polynomial $Q$ has no zero in the closed unit disk.
 The quotient
 $$
@@ -66,12 +66,12 @@ has exactly the same multiplicity there as $f$.
 The extended values are nonzero. Thus $H$ is holomorphic
 and nonzero on a neighborhood of the closed unit disk.
 
-For $|z|=1$, direct expansion gives
-$|z-a_j|=|1-\overline{a_j}z|$. Hence $|P(z)|=|Q(z)|$
-there, and $|H(z)|=1$. Apply the maximum modulus principle
-to both $H$ and $1/H$: throughout the disk, $|H|\leq1$
-and $|1/H|\leq1$, so $|H|=1$ [@SS03]. The same principle
-makes $H$ a constant $\alpha$ with $|\alpha|=1$.
+For $\abs{z}=1$, direct expansion gives
+$\abs{z-a_j}=\abs{1-\overline{a_j}z}$. Hence $\abs{P(z)}=\abs{Q(z)}$
+there, and $\abs{H(z)}=1$. Apply the maximum modulus principle
+to both $H$ and $1/H$: throughout the disk, $\abs{H}\leq1$
+and $\abs{1/H}\leq1$, so $\abs{H}=1$ [@SS03]. The same principle
+makes $H$ a constant $\alpha$ with $\abs{\alpha}=1$.
 Consequently $fQ=\alpha P$ on the disk, and then on all
 of $\CC$ by the identity theorem.
 
@@ -86,7 +86,7 @@ The entire-plane hypothesis forces every $a_j$ to be zero.
 ::: pf-proof
 
 If some $a_j\ne0$, the point $b=1/\overline{a_j}$
-is a zero of $Q$ with $|b|>1$. But every zero of $P$
+is a zero of $Q$ with $\abs{b}>1$. But every zero of $P$
 has modulus less than one, so $P(b)\ne0$. Evaluating
 the entire identity $fQ=\alpha P$ at $b$ would give
 $0=\alpha P(b)\ne0$, a contradiction.

@@ -28,15 +28,15 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is no holomorphic bijection from the punctured disk $0 < | z | < 1$ in $\CC$ onto the annulus $r < | z | < R$ , where $0 < r < R < \infty$
+Prove that there is no holomorphic bijection from the punctured disk $0 < \abs{ z } < 1$ in $\CC$ onto the annulus $r < \abs{ z } < R$ , where $0 < r < R < \infty$
 :::
 
 ::: {.solution}
 Let
 $$
-D\coloneqq\{z\in\CC:|z|<1\},
+D\coloneqq\{z\in\CC:\abs{z}<1\},
 \qquad
-A\coloneqq\{w\in\CC:r<|w|<R\}.
+A\coloneqq\{w\in\CC:r<\abs{w}<R\}.
 $$
 Suppose for contradiction that
 $$
@@ -57,9 +57,9 @@ $$
 
 Since $f(D\setminus\{0\})\subseteq A$, one has
 $$
-|f(z)|<R
+\abs{f(z)}<R
 $$
-for every $0<|z|<1$. Thus $f$ is bounded near $0$, so the removable
+for every $0<\abs{z}<1$. Thus $f$ is bounded near $0$, so the removable
 singularity theorem gives a holomorphic extension $F$ across $0$.
 
 :::
@@ -70,31 +70,31 @@ singularity theorem gives a holomorphic extension $F$ across $0$.
 
 The extended value satisfies
 $$
-r<|F(0)|<R.
+r<\abs{F(0)}<R.
 $$
 
 ::: pf-proof
 
 Continuity at $0$ and
 $$
-r<|F(z)|<R
+r<\abs{F(z)}<R
 $$
 for $z\neq0$ give
 $$
-r\leq|F(0)|\leq R.
+r\leq\abs{F(0)}\leq R.
 $$
 The function $F$ is nonconstant because its restriction $f$ is
 surjective onto the nontrivial annulus $A$.
 
-If $|F(0)|=R$, then $|F|$ attains its maximum at the interior point
+If $\abs{F(0)}=R$, then $\abs{F}$ attains its maximum at the interior point
 $0$, so the maximum-modulus principle makes $F$ constant, a
 contradiction.
 
 Also $F$ has no zero on $D$: it has none on $D\setminus\{0\}$ because
-$|f|>r>0$, and $|F(0)|\geq r>0$. Hence $1/F$ is holomorphic on $D$.
-If $|F(0)|=r$, then
+$\abs{f}>r>0$, and $\abs{F(0)}\geq r>0$. Hence $1/F$ is holomorphic on $D$.
+If $\abs{F(0)}=r$, then
 $$
-\left|\frac1{F(z)}\right|\leq\frac1r
+\abs{\frac1{F(z)}}\leq\frac1r
 $$
 on $D$, with equality at $0$. The maximum-modulus principle would make
 $1/F$, and therefore $F$, constant. Thus both inequalities are strict.

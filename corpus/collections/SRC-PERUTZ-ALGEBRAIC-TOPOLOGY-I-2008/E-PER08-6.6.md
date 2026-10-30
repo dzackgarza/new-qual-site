@@ -100,7 +100,7 @@ Similarly, the space $P$ of regular icosahedra is
 $$
 P\cong SO(3)/A_5.
 $$
-Its universal-cover deck group is the inverse image $2I$ of $A_5$ in $SU(2)$, hence has order $2|A_5|=120$.
+Its universal-cover deck group is the inverse image $2I$ of $A_5$ in $SU(2)$, hence has order $2\cardinality{A_5}=120$.
 There is a central extension
 $$
 1\to C_2\to2I\to A_5\to1.

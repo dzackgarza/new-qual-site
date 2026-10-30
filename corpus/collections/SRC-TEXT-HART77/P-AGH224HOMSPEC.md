@@ -107,7 +107,7 @@ $$
 
 The restriction
 $$
-f_i|_W:W\to\operatorname{Spec}A
+f_i\restrict_W:W\to\operatorname{Spec}A
 $$
 corresponds, in the affine anti-equivalence, to the composite
 $$
@@ -119,15 +119,15 @@ A
 \longrightarrow
 \Gamma(W,\mathcal O_X)=C.
 $$
-The restriction $f_j|_W$ corresponds to the same composite, because both restriction chains are the restriction of the same global section to $W$.
+The restriction $f_j\restrict_W$ corresponds to the same composite, because both restriction chains are the restriction of the same global section to $W$.
 
 Hence
 $$
-f_i|_W=f_j|_W
+f_i\restrict_W=f_j\restrict_W
 $$
 for every affine $W$ in a cover of $U_i\cap U_j$.  Morphisms of schemes are local on the source, so
 $$
-f_i|_{U_i\cap U_j}=f_j|_{U_i\cap U_j}.
+f_i\restrict_{U_i\cap U_j}=f_j\restrict_{U_i\cap U_j}.
 $$
 :::
 
@@ -171,12 +171,12 @@ be the pullback on global sections.
 
 For every $i$, restricting $\alpha(f_\varphi)(a)$ to $U_i$ gives the global-section pullback of
 $$
-f_\varphi|_{U_i}=f_i.
+f_\varphi\restrict_{U_i}=f_i.
 $$
 By construction of $f_i$, this is
 $$
 \varphi_i(a)
-=\varphi(a)|_{U_i}.
+=\varphi(a)\restrict_{U_i}.
 $$
 Thus the two global sections
 $$
@@ -214,7 +214,7 @@ U_i=\operatorname{Spec}B_i.
 $$
 The restrictions
 $$
-f|_{U_i},g|_{U_i}:U_i\to\operatorname{Spec}A
+f\restrict_{U_i},g\restrict_{U_i}:U_i\to\operatorname{Spec}A
 $$
 induce the same ring homomorphism
 $$
@@ -228,7 +228,7 @@ because pullback on global sections commutes with restriction to an open subset 
 
 By the affine anti-equivalence,
 $$
-f|_{U_i}=g|_{U_i}
+f\restrict_{U_i}=g\restrict_{U_i}
 $$
 for every $i$.  Since the $U_i$ cover $X$, the two morphisms are equal globally:
 $$

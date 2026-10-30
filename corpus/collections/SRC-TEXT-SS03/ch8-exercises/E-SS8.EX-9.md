@@ -39,7 +39,7 @@ u(z)=\Re F(z)
 $$
 is harmonic in $\DD$.
 
-If $|z|=1$ and $z\ne i$, then $\bar z=1/z$. A direct computation gives
+If $\abs{z}=1$ and $z\ne i$, then $\bar z=1/z$. A direct computation gives
 $$
 \overline{F(z)}
 =\frac{-i+\bar z}{-i-\bar z}

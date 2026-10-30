@@ -57,7 +57,7 @@ $$
 
 Adjunction gives
 $$
-K_C=(K_{\PP^2}+C)|_C=\OO_C(2).
+K_C=(K_{\PP^2}+C)\restrict_C=\OO_C(2).
 $$
 The restriction map
 $$
@@ -161,7 +161,7 @@ $$
 But $S$ contains no lines.  Indeed, if $B=v_2^{-1}(\ell)$ were such a
 curve, then
 $$
-\OO_S(1)|_\ell\cong\OO_{\PP^1}(1),
+\OO_S(1)\restrict_\ell\cong\OO_{\PP^1}(1),
 $$
 whereas
 $$
@@ -189,7 +189,7 @@ There exist nonhyperelliptic genus-$6$ curves with a $g^1_3$.
 
 Take a smooth member
 $$
-X\in\left|\OO_{\PP^1\times\PP^1}(3,4)\right|.
+X\in\linearsystem{\OO_{\PP^1\times\PP^1}(3,4)}.
 $$
 Such members exist because this complete linear system is base-point-free
 and a general member is smooth.  If $F_1,F_2$ are the two fibre classes,

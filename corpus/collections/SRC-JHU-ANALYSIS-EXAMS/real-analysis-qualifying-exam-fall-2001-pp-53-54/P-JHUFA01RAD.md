@@ -51,15 +51,15 @@ A_k f=k\int_{I_{j,k}}f.
 $$
 Therefore
 $$
-\int_{I_{j,k}}|A_k f(x)|\,dx
+\int_{I_{j,k}}\abs{A_k f(x)}\,dx
 =
-\left|\int_{I_{j,k}}f(t)\,dt\right|
+\abs{\int_{I_{j,k}}f(t)\,dt}
 \le
-\int_{I_{j,k}}|f(t)|\,dt.
+\int_{I_{j,k}}\abs{f(t)}\,dt.
 $$
 Summing over $j$ gives
 $$
-\|A_k f\|_1\le\|f\|_1.
+\norm{A_k f}_1\le\norm{f}_1.
 $$
 :::
 
@@ -71,22 +71,22 @@ $A_k g\to g$ uniformly for every continuous $g$.
 ::: pf-proof
 Let $g\in C([0,1])$. Since $g$ is uniformly continuous, its modulus of continuity
 $$
-\omega_g(\delta)=\sup_{|x-y|\le\delta}|g(x)-g(y)|
+\omega_g(\delta)=\sup_{\abs{x-y}\le\delta}\abs{g(x)-g(y)}
 $$
 satisfies $\omega_g(\delta)\to0$ as $\delta\downarrow0$. If $x\in I_{j,k}$, then
 $$
 \begin{aligned}
-|A_k g(x)-g(x)|
-&=\left|k\int_{I_{j,k}}(g(t)-g(x))\,dt\right|\\
-&\le k\int_{I_{j,k}}|g(t)-g(x)|\,dt\\
+\abs{A_k g(x)-g(x)}
+&=\abs{k\int_{I_{j,k}}(g(t)-g(x))\,dt}\\
+&\le k\int_{I_{j,k}}\abs{g(t)-g(x)}\,dt\\
 &\le \omega_g(1/k).
 \end{aligned}
 $$
 Hence
 $$
-\|A_k g-g\|_\infty\le\omega_g(1/k)\longrightarrow0,
+\norm{A_k g-g}_\infty\le\omega_g(1/k)\longrightarrow0,
 $$
-and therefore also $\|A_k g-g\|_1\to0$.
+and therefore also $\norm{A_k g-g}_1\to0$.
 :::
 
 :::
@@ -97,18 +97,18 @@ Approximate an arbitrary $L^1$ function by continuous functions.
 ::: pf-proof
 Fix $\varepsilon>0$. Choose $g\in C([0,1])$ with
 $$
-\|f-g\|_1<\frac\varepsilon3,
+\norm{f-g}_1<\frac\varepsilon3,
 $$
 using density of $C([0,1])$ in $L^1([0,1])$. By step [](#s2){.pf-ref}, for all sufficiently large $k$,
 $$
-\|A_k g-g\|_1<\frac\varepsilon3.
+\norm{A_k g-g}_1<\frac\varepsilon3.
 $$
 Then the contraction estimate from step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
-\|A_k f-f\|_1
-&\le\|A_k(f-g)\|_1+\|A_k g-g\|_1+\|g-f\|_1\\
-&\le2\|f-g\|_1+\|A_k g-g\|_1\\
+\norm{A_k f-f}_1
+&\le\norm{A_k(f-g)}_1+\norm{A_k g-g}_1+\norm{g-f}_1\\
+&\le2\norm{f-g}_1+\norm{A_k g-g}_1\\
 &<\varepsilon.
 \end{aligned}
 $$

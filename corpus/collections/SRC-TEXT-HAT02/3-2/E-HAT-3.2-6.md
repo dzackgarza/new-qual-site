@@ -52,7 +52,7 @@ Step [](#s1){.pf-ref} (the induced map on top cohomology is multiplication by th
 
 ::: pf-step
 
-For general $n$, $H^*(\CP^n) = \ZZ[x]/(x^{n+1})$ with $|x| = 2$.
+For general $n$, $H^*(\CP^n) = \ZZ[x]/(x^{n+1})$ with $\gradeddegree{x} = 2$.
 
 ::: pf-proof
 

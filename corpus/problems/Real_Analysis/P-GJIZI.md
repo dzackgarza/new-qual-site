@@ -36,11 +36,11 @@ $$
 
 ::: {.pf-step #s1}
 
-If $f \in L^1(\RR^n)$, then $|f(x)| < \infty$ for a.e. $x$.
+If $f \in L^1(\RR^n)$, then $\abs{f(x)} < \infty$ for a.e. $x$.
 
 ::: pf-proof
 
-For every $M > 0$, $\theset{|f| = \infty} \subseteq \theset{|f| \ge M}$, and Markov's inequality gives $m\theset{|f| \ge M} \le \|f\|_1/M$. Letting $M \to \infty$ shows $m\theset{|f| = \infty} = 0$.
+For every $M > 0$, $\theset{\abs{f} = \infty} \subseteq \theset{\abs{f} \ge M}$, and Markov's inequality gives $m\theset{\abs{f} \ge M} \le \norm{f}_1/M$. Letting $M \to \infty$ shows $m\theset{\abs{f} = \infty} = 0$.
 
 :::
 
@@ -48,17 +48,17 @@ For every $M > 0$, $\theset{|f| = \infty} \subseteq \theset{|f| \ge M}$, and Mar
 
 ::: pf-step
 
-If $f_k \in L^1(\RR^n)$ and $\sum_k \|f_k\|_1 < \infty$, then $\sum_k f_k$ converges a.e. and in $L^1$.
+If $f_k \in L^1(\RR^n)$ and $\sum_k \norm{f_k}_1 < \infty$, then $\sum_k f_k$ converges a.e. and in $L^1$.
 
 ::: pf-proof
 
 ::: pf-step
 
-$g = \sum_k |f_k|$ is in $L^1$, and $g < \infty$ a.e.
+$g = \sum_k \abs{f_k}$ is in $L^1$, and $g < \infty$ a.e.
 
 ::: pf-proof
 
-By the monotone convergence theorem applied to the partial sums, $\int g = \sum_k \|f_k\|_1 < \infty$. Step [](#s1){.pf-ref} applied to $g$ gives $g < \infty$ a.e.
+By the monotone convergence theorem applied to the partial sums, $\int g = \sum_k \norm{f_k}_1 < \infty$. Step [](#s1){.pf-ref} applied to $g$ gives $g < \infty$ a.e.
 
 :::
 
@@ -66,7 +66,7 @@ By the monotone convergence theorem applied to the partial sums, $\int g = \sum_
 
 ::: pf-qed
 
-Where $g(x) < \infty$, the series $\sum_k f_k(x)$ converges absolutely; call its sum $F(x)$, and put $F = 0$ elsewhere. Then $|F| \le g$, so $F \in L^1$, and $\left\|F - \sum_{k=1}^N f_k\right\|_1 \le \int \sum_{k > N}|f_k| = \sum_{k>N}\|f_k\|_1 \to 0$.
+Where $g(x) < \infty$, the series $\sum_k f_k(x)$ converges absolutely; call its sum $F(x)$, and put $F = 0$ elsewhere. Then $\abs{F} \le g$, so $F \in L^1$, and $\norm{F - \sum_{k=1}^N f_k}_1 \le \int \sum_{k > N}\abs{f_k} = \sum_{k>N}\norm{f_k}_1 \to 0$.
 
 :::
 
@@ -82,11 +82,11 @@ $\lim_{t \to 0}\int_0^1 \frac{e^{tx^2} - 1}{t}\,dx = \boxed{\tfrac{1}{3}}$.
 
 ::: {.pf-step #s3-1}
 
-For $0 < |t| \le 1$ and $x \in [0,1]$, $\left|\frac{e^{tx^2} - 1}{t}\right| \le e$.
+For $0 < \abs{t} \le 1$ and $x \in [0,1]$, $\abs{\frac{e^{tx^2} - 1}{t}} \le e$.
 
 ::: pf-proof
 
-By the mean value theorem, $e^u - 1 = e^\xi u$ for some $\xi$ between $0$ and $u$, so $|e^u - 1| \le e|u|$ for $|u| \le 1$. Take $u = tx^2$.
+By the mean value theorem, $e^u - 1 = e^\xi u$ for some $\xi$ between $0$ and $u$, so $\abs{e^u - 1} \le e\abs{u}$ for $\abs{u} \le 1$. Take $u = tx^2$.
 
 :::
 

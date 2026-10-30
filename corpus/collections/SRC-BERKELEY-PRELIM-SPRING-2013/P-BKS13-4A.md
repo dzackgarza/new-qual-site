@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-4A
 kind: problem
-title: Contour integral of $\cosh(\pi z)/(z(z^2+1))$ over $|z|=2$
+title: Contour integral of $\cosh(\pi z)/(z(z^2+1))$ over $\abs{z}=2$
 classification:
   areas:
   - prelim

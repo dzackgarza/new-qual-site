@@ -37,7 +37,7 @@ $$2(15-4)-3(9-10)+5(6-25)=22+3-95=-70.$$
 The Smith normal form of $A$ has invariant factors $1,1,70$.
 
 ::: pf-proof
-The gcd of all entries is $1$, so the first invariant factor is $1$. The $2\times2$ minor from the first two rows and columns is $2\cdot5-3\cdot3=1$, so the product of the first two invariant factors is $1$. Their total product has absolute value $|\det A|=70$.
+The gcd of all entries is $1$, so the first invariant factor is $1$. The $2\times2$ minor from the first two rows and columns is $2\cdot5-3\cdot3=1$, so the product of the first two invariant factors is $1$. Their total product has absolute value $\abs{\det A}=70$.
 :::
 
 :::

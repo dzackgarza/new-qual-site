@@ -76,7 +76,7 @@ $$
 ::: pf-proof
 The logarithmic identity $d\log(ab)=d\log a+d\log b$ gives $\xi_{ij}+\xi_{jh}=\xi_{ih}$ on every triple intersection.
 Thus the corresponding derivations satisfy the same cocycle identity by step [](#s1){.pf-ref}.
-On each $U_i$, take $\OO_{U_i}\oplus\omega|_{U_i}$ with multiplication $(a,z)(b,w)=(ab,aw+bz)$.
+On each $U_i$, take $\OO_{U_i}\oplus\omega\restrict_{U_i}$ with multiplication $(a,z)(b,w)=(ab,aw+bz)$.
 By [[P-AGH3410INFEXT]], the map $G_{ij}$ from chart $j$ to chart $i$ is an automorphism of identified square-zero extensions, its inverse is $G_{ji}$, and the cocycle identity makes these maps valid gluing data.
 The glued scheme is the extension $X'$ associated to $\xi$.
 In particular the kernel and the quotient glue by their identity maps.
@@ -204,7 +204,7 @@ The specified cocycle for $\PP^2$ in the problem is the negative of this logarit
 Let $Z$ be proper over a field of characteristic $p>0$.
 Then $Z$ is projective if and only if $Z_{\mathrm{red}}$ is projective.
 One direction follows by taking the closed subscheme $Z_{\mathrm{red}}$ of a projective scheme.
-For the converse, let $N$ be the nilradical, choose $e$ with $N^e=0$, and write $Z_j=(|Z|,\OO_Z/N^j)$.
+For the converse, let $N$ be the nilradical, choose $e$ with $N^e=0$, and write $Z_j=(\underlyingspace{Z},\OO_Z/N^j)$.
 The ideals $N^j/N^{j+1}$ have square zero, and their cohomology groups are killed by $p$.
 The Picard sequence in [[P-AGH346SQUAREZEROPIC]] consequently shows that the $p$th tensor power of every invertible sheaf on $Z_j$ lifts to $Z_{j+1}$: its obstruction is $p$ times a class in $H^2(N^j/N^{j+1})$ and is zero.
 Starting with an ample invertible sheaf on $Z_1=Z_{\mathrm{red}}$ and iterating gives a lift to $Z_e=Z$ of its $p^{e-1}$st power.

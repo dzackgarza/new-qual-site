@@ -61,7 +61,7 @@ Extension into $\RR^n$ via Tietze Extension Theorem:
 
 ::: pf-step
 Since $X \times I$ is normal, $T$ is closed in $X \times I$, and each coordinate map of $F$ maps into $\RR$, by the Tietze Extension Theorem there exists a continuous extension:
-$$\widetilde{F}: X \times I \to \RR^n \quad \text{such that } \widetilde{F}|_T = F.$$
+$$\widetilde{F}: X \times I \to \RR^n \quad \text{such that } \widetilde{F}\restrict_T = F.$$
 :::
 
 :::
@@ -126,7 +126,7 @@ Define $g: X \to Y$ by $g(x) = K(x, 0)$.
 :::
 
 ::: pf-step
-Then $g$ is continuous, $g|_A = f$, and $K$ is a homotopy from $g$ to $h$ in $Y$.
+Then $g$ is continuous, $g\restrict_A = f$, and $K$ is a homotopy from $g$ to $h$ in $Y$.
 :::
 
 :::

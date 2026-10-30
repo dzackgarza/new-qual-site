@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Given: $|G|<\infty, |G| = 0\mod 2$
+Given: $\cardinality{G}<\infty, \cardinality{G} = 0\mod 2$
 
 Show: $\exists g\in G \ni o(g)  = 2$
 :::
@@ -64,7 +64,7 @@ partitions $S$ into disjoint two-element sets
 $$
 \{g,g^{-1}\}.
 $$
-Hence $|S|$ is even.
+Hence $\cardinality{S}$ is even.
 
 :::
 
@@ -81,10 +81,10 @@ $$
 e=e^{-1},
 $$
 so $e\notin S$.
-By step [](#s1){.pf-ref}, $|S|$ is even, while $|G|$ is even by hypothesis.
+By step [](#s1){.pf-ref}, $\cardinality{S}$ is even, while $\cardinality{G}$ is even by hypothesis.
 Therefore
 $$
-|G\setminus S|=|G|-|S|
+\cardinality{G\setminus S}=\cardinality{G}-\cardinality{S}
 $$
 is even.
 Since $G\setminus S$ already contains $e$, it cannot consist of the single element $e$.

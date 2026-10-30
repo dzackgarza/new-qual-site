@@ -45,7 +45,7 @@ $$
 $$
 Right-continuity at $a$ gives $\delta>0$ such that
 $$
-a\le x<a+\delta\implies |f(x)-f(a)|<\varepsilon.
+a\le x<a+\delta\implies \abs{f(x)-f(a)}<\varepsilon.
 $$
 Therefore
 $$

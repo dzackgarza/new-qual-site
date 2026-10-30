@@ -32,9 +32,9 @@ $$
 $$
 For $z\in\halfplane$,
 $$
-|z-\beta|<|z-\overline\beta|,
+\abs{z-\beta}<\abs{z-\overline\beta},
 $$
-so $|\phi_\beta(z)|<1$. The map $\phi_\beta$ is Möbius, sends $\beta$ to $0$, and maps the real axis to the unit circle; hence it is a conformal bijection $\halfplane\to\DD$.
+so $\abs{\phi_\beta(z)}<1$. The map $\phi_\beta$ is Möbius, sends $\beta$ to $0$, and maps the real axis to the unit circle; hence it is a conformal bijection $\halfplane\to\DD$.
 
 Now let $F:\halfplane\to\DD$ be any conformal bijection and let
 $$

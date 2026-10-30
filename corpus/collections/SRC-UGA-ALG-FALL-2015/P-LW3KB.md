@@ -56,7 +56,7 @@ defines an injective $F$-linear map.
 
 ::: pf-proof
 
-For $v\in Y^\perp$, the functional $(v,-)|_X$ annihilates $Y$ and thus factors uniquely through $X/Y$. If $v$ is replaced by $v+w$ with $w\in X^\perp$, its restriction to $X$ is unchanged. The displayed assignment is therefore well defined on both quotients and linear by bilinearity. If $\psi(v+X^\perp)=0$, then $(v,x)=0$ for every $x\in X$, so $v\in X^\perp$ and its quotient class is zero. Thus $\psi$ is injective.
+For $v\in Y^\perp$, the functional $(v,-)\restrict_X$ annihilates $Y$ and thus factors uniquely through $X/Y$. If $v$ is replaced by $v+w$ with $w\in X^\perp$, its restriction to $X$ is unchanged. The displayed assignment is therefore well defined on both quotients and linear by bilinearity. If $\psi(v+X^\perp)=0$, then $(v,x)=0$ for every $x\in X$, so $v\in X^\perp$ and its quotient class is zero. Thus $\psi$ is injective.
 
 :::
 

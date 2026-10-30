@@ -13,7 +13,7 @@ Let $f\in L^3(\RR)$ and
 $$
 \phi(x)=
 \begin{cases}
-\sin(\pi x),& |x|\le1,\\
+\sin(\pi x),& \abs{x}\le1,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
@@ -101,26 +101,26 @@ $$
 Since $h_n$ is supported in $[0,1/n]$,
 $$
 \begin{aligned}
-\left|
+\abs{
 (f*h_n)(x)
 -
 \frac2\pi f(x)
-\right|
+}
 &=
-\left|
+\abs{
 \int_0^{1/n}
 [f(x-y)-f(x)]
 n\sin(\pi ny)\,dy
-\right|\\
+}\\
 &\le
 n\int_0^{1/n}
-|f(x-y)-f(x)|\,dy.
+\abs{f(x-y)-f(x)}\,dy.
 \end{aligned}
 $$
 At every Lebesgue point $x$ of $f$, the one-sided differentiation theorem gives
 $$
 n\int_0^{1/n}
-|f(x-y)-f(x)|\,dy
+\abs{f(x-y)-f(x)}\,dy
 \longrightarrow0.
 $$
 Hence the claimed limit follows.
@@ -143,14 +143,14 @@ $$
 
 Now $g_n$ is supported in $[-1/n,0]$. Exactly as in step [](#s1-2){.pf-ref},
 $$
-\left|
+\abs{
 (f*g_n)(x)
 -
 \frac2\pi f(x)
-\right|
+}
 \le
 n\int_0^{1/n}
-|f(x+y)-f(x)|\,dy,
+\abs{f(x+y)-f(x)}\,dy,
 $$
 which tends to $0$ at every Lebesgue point.
 
@@ -167,9 +167,9 @@ The function $f\in L^1_{\mathrm{loc}}(\RR)$, so almost every point is a Lebesgue
 
 Since $f\in L^3(\RR)$, Hölder's inequality gives
 $$
-\int_E|f|
+\int_E\abs{f}
 \le
-|E|^{2/3}\|f\|_3
+\setmeasure{E}^{2/3}\norm{f}_3
 $$
 for every bounded measurable set $E$. Thus $f\in L^1_{\mathrm{loc}}$, and the Lebesgue differentiation theorem applies.
 

@@ -98,7 +98,7 @@ Thus $U \cap V = U \setminus \{N\} \cong \RR^n \setminus \{0\}$.
 :::
 
 ::: {.pf-step #s3-3}
-$\RR^n \setminus \{0\}$ deformation retracts to $S^{n-1}$ via $x \mapsto \frac{x}{\|x\|}$.
+$\RR^n \setminus \{0\}$ deformation retracts to $S^{n-1}$ via $x \mapsto \frac{x}{\norm{x}}$.
 :::
 
 ::: {.pf-step #s3-4}

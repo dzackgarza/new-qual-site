@@ -26,7 +26,7 @@ $$
 F(z)=
 \begin{cases}
 f(z),&z\in U,\\
-0,&z\text{ in the reflected cap across the circle }|z+i|=2.
+0,&z\text{ in the reflected cap across the circle }\abs{z+i}=2.
 \end{cases}
 $$
 Across $S_0$, the two definitions match continuously.

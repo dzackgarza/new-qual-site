@@ -32,7 +32,7 @@ Use the branch
 $$
 \Log z
 =
-\log|z|+i\arg z,
+\log\abs{z}+i\arg z,
 \qquad
 0<\arg z<2\pi,
 $$
@@ -229,15 +229,15 @@ $R\to\infty$ and $\varepsilon\to0^+$.
 
 ::: pf-proof
 
-On the outer circle $|z|=R$,
+On the outer circle $\abs{z}=R$,
 $$
-|\Log z|
+\abs{\Log z}
 \leq
 \log R+2\pi,
 $$
 and
 $$
-|1+z^\alpha|
+\abs{1+z^\alpha}
 \geq
 R^\alpha-1.
 $$
@@ -252,15 +252,15 @@ R^\alpha-1
 $$
 because $\alpha>1$.
 
-On the inner circle $|z|=\varepsilon$,
+On the inner circle $\abs{z}=\varepsilon$,
 $$
-|\Log z|
+\abs{\Log z}
 \leq
-|\log\varepsilon|+2\pi,
+\abs{\log\varepsilon}+2\pi,
 $$
 and
 $$
-|1+z^\alpha|
+\abs{1+z^\alpha}
 \geq
 1-\varepsilon^\alpha.
 $$
@@ -268,14 +268,14 @@ The arc length is $2\pi\varepsilon$, so the integral is bounded by
 $$
 \frac{
 2\pi\varepsilon
-(|\log\varepsilon|+2\pi)
+(\abs{\log\varepsilon}+2\pi)
 }{
 1-\varepsilon^\alpha
 },
 $$
 which tends to $0$ because
 $$
-\varepsilon|\log\varepsilon|
+\varepsilon\abs{\log\varepsilon}
 \longrightarrow0.
 $$
 

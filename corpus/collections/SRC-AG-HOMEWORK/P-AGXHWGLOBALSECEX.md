@@ -60,7 +60,7 @@ $\ker g_U \subseteq \im f_U$.
 ::: pf-proof
 Let $s \in \mcf_2(U)$ with $g_U(s) = 0$.
 For each $p \in U$, the germ $s_p$ lies in $\ker g_p = \im f_p$.
-So there are an open neighborhood $W_p \subseteq U$ of $p$ and $t_p \in \mcf_1(W_p)$ with $f_{W_p}(t_p) = s|_{W_p}$, after shrinking $W_p$ so that the germ equality holds on all of $W_p$.
+So there are an open neighborhood $W_p \subseteq U$ of $p$ and $t_p \in \mcf_1(W_p)$ with $f_{W_p}(t_p) = s\restrict_{W_p}$, after shrinking $W_p$ so that the germ equality holds on all of $W_p$.
 On $W_p \cap W_q$, the section $t_p - t_q$ has image $s - s = 0$ under $f_{W_p \cap W_q}$, which is injective by step [](#injective){.pf-ref}.
 So the $t_p$ agree on overlaps and glue to $t \in \mcf_1(U)$.
 The section $f_U(t) - s$ restricts to $0$ on every $W_p$, so $f_U(t) = s$ by the identity axiom for $\mcf_2$.

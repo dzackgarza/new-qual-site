@@ -24,7 +24,7 @@ with two distinct fixed points $\alpha,\beta\in\DD$.
 
 Let $T$ be a disk automorphism with $T(\alpha)=0$. Then
 $H=T\circ F\circ T^{-1}$ fixes $0$ and the nonzero point $T(\beta)$.
-Schwarz's lemma gives $|H(z)|\le |z|$. Since equality holds at the nonzero
+Schwarz's lemma gives $\abs{H(z)}\le \abs{z}$. Since equality holds at the nonzero
 fixed point, the equality case gives $H(z)=e^{i\theta}z$. That same fixed point
 forces $e^{i\theta}=1$. Hence $H$, then $F$, then $f$, is the identity.
 :::

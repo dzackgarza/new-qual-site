@@ -31,7 +31,7 @@ Prove that the following are equivalent:
 
 (2) There exists $g$ absolutely continuous on $[0,1]$ such that for every $x, y \in [0,1]$ it holds
 $$
-\left|\int_x^y f(t)\,dt\right|^2 \leq (g(y) - g(x))(y - x).
+\abs{\int_x^y f(t)\,dt}^2 \leq (g(y) - g(x))(y - x).
 $$
 :::
 
@@ -47,13 +47,13 @@ Prove $(1)\Rightarrow(2)$.
 
 Assume $f\in L^2([0,1])$ and define
 $$
-g(x):=\int_0^x|f(t)|^2\,dt.
+g(x):=\int_0^x\abs{f(t)}^2\,dt.
 $$
 Then $g$ is absolutely continuous. If $x<y$, Cauchy--Schwarz gives
 $$
 \begin{aligned}
-\left|\int_x^y f(t)\,dt\right|^2
-&\le (y-x)\int_x^y|f(t)|^2\,dt\\
+\abs{\int_x^y f(t)\,dt}^2
+&\le (y-x)\int_x^y\abs{f(t)}^2\,dt\\
 &=(y-x)(g(y)-g(x)).
 \end{aligned}
 $$
@@ -72,7 +72,7 @@ Show that the function $g$ in (2) is nondecreasing.
 Assume (2). If $x<y$, then
 $$
 0\le
-\left|\int_x^y f(t)\,dt\right|^2
+\abs{\int_x^y f(t)\,dt}^2
 \le (g(y)-g(x))(y-x).
 $$
 Since $y-x>0$, it follows that
@@ -100,9 +100,9 @@ Differentiate the interval inequality almost everywhere.
 
 For $x<y$, divide the assumed inequality by $(y-x)^2$ to obtain
 $$
-\left|
+\abs{
 \frac1{y-x}\int_x^y f(t)\,dt
-\right|^2
+}^2
 \le
 \frac1{y-x}\int_x^y g'(t)\,dt.
 $$
@@ -116,7 +116,7 @@ $$
 $$
 Hence
 $$
-|f(x)|^2\le g'(x)
+\abs{f(x)}^2\le g'(x)
 $$
 for almost every $x$.
 
@@ -132,7 +132,7 @@ Conclude that $f\in L^2$.
 
 Integrating the a.e. inequality from Step 3 gives
 $$
-\int_0^1|f(x)|^2\,dx
+\int_0^1\abs{f(x)}^2\,dx
 \le \int_0^1g'(x)\,dx
 =g(1)-g(0)<\infty.
 $$

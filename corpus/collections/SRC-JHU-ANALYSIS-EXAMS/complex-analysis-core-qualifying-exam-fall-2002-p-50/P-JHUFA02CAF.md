@@ -31,9 +31,9 @@ audit:
 ---
 
 ::: {.problem}
-1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < | z | < 3 \}$ , then f extends holomorphically to the disc $\{ z : | z | < 3 \}$
+1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < \abs{ z } < 3 \}$ , then f extends holomorphically to the disc $\{ z : \abs{ z } < 3 \}$
 
-(b) (15 points) Determine whether the following is true: If f is holomorphic on the annulus $\{ z : 1 < | z | < 3 \}$ , then f extends meromorphically to the disc $\{ z : | z | < 3 \}$
+(b) (15 points) Determine whether the following is true: If f is holomorphic on the annulus $\{ z : 1 < \abs{ z } < 3 \}$ , then f extends meromorphically to the disc $\{ z : \abs{ z } < 3 \}$
 :::
 
 ::: {.solution}
@@ -51,13 +51,13 @@ The function
 $$
 f(z)=\frac1z
 $$
-is holomorphic on the annulus $1<|z|<3$. Suppose it had a holomorphic extension
-$F$ to the disk $|z|<3$. On the annulus one would have $zF(z)=1$. Since both
+is holomorphic on the annulus $1<\abs{z}<3$. Suppose it had a holomorphic extension
+$F$ to the disk $\abs{z}<3$. On the annulus one would have $zF(z)=1$. Since both
 sides are holomorphic on the whole disk, the identity theorem [@SS03] would imply
 $$
 zF(z)=1
 $$
-for every $|z|<3$. Evaluating at $z=0$ gives $0=1$, a contradiction. Thus no
+for every $\abs{z}<3$. Evaluating at $z=0$ gives $0=1$, a contradiction. Thus no
 holomorphic extension exists.
 
 :::
@@ -74,13 +74,13 @@ The function
 $$
 f(z)=e^{1/z}
 $$
-is holomorphic on $1<|z|<3$. Suppose there were a meromorphic function $F$ on
-$|z|<3$ agreeing with $f$ on that annulus. On the punctured disk
-$0<|z|<3$, both $F$ and $e^{1/z}$ are meromorphic, and they agree on the
-nonempty open subset $1<|z|<3$. The identity theorem for meromorphic functions [@SS03]
+is holomorphic on $1<\abs{z}<3$. Suppose there were a meromorphic function $F$ on
+$\abs{z}<3$ agreeing with $f$ on that annulus. On the punctured disk
+$0<\abs{z}<3$, both $F$ and $e^{1/z}$ are meromorphic, and they agree on the
+nonempty open subset $1<\abs{z}<3$. The identity theorem for meromorphic functions [@SS03]
 therefore gives
 $$
-F(z)=e^{1/z}\qquad(0<|z|<3).
+F(z)=e^{1/z}\qquad(0<\abs{z}<3).
 $$
 But
 $$

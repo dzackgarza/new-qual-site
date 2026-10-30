@@ -38,7 +38,7 @@ audit:
 If $x_1,\ldots,x_r$ represent the noncentral conjugacy classes
 of a finite group $G$, then its class equation is
 $$
-|G|=|Z(G)|+\sum_{j=1}^r [G:C_G(x_j)],
+\cardinality{G}=\cardinality{Z(G)}+\sum_{j=1}^r [G:C_G(x_j)],
 $$
 where $C_G(x)=\{g\in G:gx=xg\}$.
 
@@ -64,7 +64,7 @@ Adding the class sizes gives the formula.
 
 ::: {.pf-step #s2}
 
-If $|G|=p^k$ with $k\geq1$, then $|Z(G)|\geq p$.
+If $\cardinality{G}=p^k$ with $k\geq1$, then $\cardinality{Z(G)}\geq p$.
 
 ::: pf-proof
 
@@ -72,7 +72,7 @@ Each centralizer has order dividing $p^k$ by Lagrange's theorem [@DF04],
 so each index $[G:C_G(x_j)]$ is a power of $p$. Since $x_j$ is
 noncentral, its centralizer is proper, and that power is greater
 than $1$. Hence every term in the sum in step [](#s1){.pf-ref} is divisible
-by $p$. The same equation implies $p\mid |Z(G)|$.
+by $p$. The same equation implies $p\mid \cardinality{Z(G)}$.
 The center contains the identity, so its size is a positive multiple
 of $p$ and therefore at least $p>1$. In particular it is nontrivial.
 

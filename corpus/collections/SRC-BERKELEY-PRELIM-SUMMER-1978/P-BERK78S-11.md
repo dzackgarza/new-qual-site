@@ -32,16 +32,16 @@ Suppose
 $$
 \sum_{n=0}^\infty a_nz^n
 $$
-converges for $|z|<R$, where $z,a_n\in\CC$. Let $b_n\in\CC$ satisfy
+converges for $\abs{z}<R$, where $z,a_n\in\CC$. Let $b_n\in\CC$ satisfy
 $$
-|b_n|<n^2|a_n|
+\abs{b_n}<n^2\abs{a_n}
 \qquad(n\ge1).
 $$
 Prove that
 $$
 \sum_{n=0}^\infty b_nz^n
 $$
-also converges for $|z|<R$.
+also converges for $\abs{z}<R$.
 :::
 
 ::: {.solution}

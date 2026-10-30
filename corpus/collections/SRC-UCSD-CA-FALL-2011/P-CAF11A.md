@@ -20,22 +20,22 @@ If false, give a counterexample.
 (a) The infinite product $\prod_{n=1}^{\infty}\left(1 + \frac{i}{n}\right)$ converges absolutely.
 
 (b) Let $G = \CC \setminus (\RR \cap \ZZ)$.
-Suppose $f \in H(G)$ such that $|f(z)| \leq 1$ for all $z \in G$.
+Suppose $f \in H(G)$ such that $\abs{f(z)} \leq 1$ for all $z \in G$.
 Then $f$ is constant.
 
 (c) There exists a function $f$ analytic in $B(1; 2) \setminus \{1\}$ such that $$\lim_{z \to 1} (z-1)^k f(z) = \infty, \quad \forall k \in \ZZ,\; k \geq 1.$$
 
-(d) There exists an entire function $f$ for which $\lim_{|z| \to \infty} \left|\frac{f(z)}{z^k}\right|$ does not exist for any positive $k \in \ZZ$.
+(d) There exists an entire function $f$ for which $\lim_{\abs{z} \to \infty} \abs{\frac{f(z)}{z^k}}$ does not exist for any positive $k \in \ZZ$.
 
 (e) Let $f$ be an analytic function defined in a simply connected bounded domain $G \subset \CC$ with $i \in G$.
-If $f(G) \subset G$ and $f(i) = i$, then $|f'(i)| \leq 1$.
+If $f(G) \subset G$ and $f(i) = i$, then $\abs{f'(i)} \leq 1$.
 :::
 
 ::: {.solution}
 **(a) False.** Absolute convergence of an infinite product
-$\prod(1+a_n)$ requires $\sum |a_n|<\infty$. Here
+$\prod(1+a_n)$ requires $\sum \abs{a_n}<\infty$. Here
 $$
-\sum_{n=1}^\infty\left|\frac{i}{n}\right|
+\sum_{n=1}^\infty\abs{\frac{i}{n}}
 =\sum_{n=1}^\infty\frac1n
 $$
 diverges, so the product is not absolutely convergent.
@@ -58,24 +58,24 @@ $1$, impossible because $g=1/f$ there.
 
 **(d) True.** Take $f(z)=e^z$. For every positive integer $k$,
 $$
-\left|\frac{e^x}{x^k}\right|\to\infty
+\abs{\frac{e^x}{x^k}}\to\infty
 \qquad (x\to+\infty),
 $$
 whereas
 $$
-\left|\frac{e^{-x}}{(-x)^k}\right|\to0
+\abs{\frac{e^{-x}}{(-x)^k}}\to0
 \qquad (x\to+\infty).
 $$
-Thus no limit exists as $|z|\to\infty$.
+Thus no limit exists as $\abs{z}\to\infty$.
 
 **(e) True.** Since $G$ is bounded, it is a proper simply connected domain.
 Choose a conformal map $\phi:G\to\DD$ with $\phi(i)=0$. Then
 $$
 F=\phi\circ f\circ\phi^{-1}:\DD\to\DD
 $$
-fixes $0$. Schwarz's lemma gives $|F'(0)|\le1$. By the chain rule,
+fixes $0$. Schwarz's lemma gives $\abs{F'(0)}\le1$. By the chain rule,
 $$
 F'(0)=\phi'(i)f'(i)(\phi^{-1})'(0)=f'(i),
 $$
-so $|f'(i)|\le1$.
+so $\abs{f'(i)}\le1$.
 :::

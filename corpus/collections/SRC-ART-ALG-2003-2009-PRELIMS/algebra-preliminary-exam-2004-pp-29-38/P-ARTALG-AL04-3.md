@@ -311,7 +311,7 @@ types of $T$, the respective automorphism-group orders are
 $$
 \begin{array}{c|ccccc}
 T&C_8&C_4\times C_2&C_2^3&D_8&Q_8\\\hline
-|\operatorname{Aut}(T)|&4&8&168&8&24.
+\cardinality{\operatorname{Aut}(T)}&4&8&168&8&24.
 \end{array}
 $$
 The cyclic case counts odd generator powers; the generator formulas
@@ -373,10 +373,10 @@ $1$ modulo $3$. Let $K$ be the kernel of conjugation on these
 four subgroups. The image is transitive in $S_4$, so its order
 is a multiple of $4$ dividing $24$ and $72$: it is $4,8,12$, or $24$.
 
-In the first two cases $|K|=18$ or $9$, and the image is a
+In the first two cases $\cardinality{K}=18$ or $9$, and the image is a
 $2$-group. Every Sylow $3$-subgroup of $G$ would then lie in $K$.
 But either of these orders gives a unique Sylow $3$-subgroup in
-$K$, a contradiction. Therefore $|K|=6$ or $3$. In the first
+$K$, a contradiction. Therefore $\cardinality{K}=6$ or $3$. In the first
 case the image is the unique index-two subgroup $A_4$ of $S_4$;
 in the second the image is $S_4$.
 
@@ -393,7 +393,7 @@ is sign, and there is no nontrivial map $A_4\to C_2$.
 
 ::: {.pf-step #s4-2}
 
-Consider $|K|=6$. A group of order $6$ is $C_6$ or $S_3$:
+Consider $\cardinality{K}=6$. A group of order $6$ is $C_6$ or $S_3$:
 its normal Sylow $3$-subgroup has an order-two complement, which
 acts either trivially or by inversion.
 
@@ -427,7 +427,7 @@ choosing a Sylow $2$-subgroup $V$ gives $U=N\times V$, just as
 in step [](#s4-2){.pf-ref}. Thus $V\cong V_4$ is characteristic in $U$, hence
 normal in $G$.
 
-Set $H=G/V$. Then $|H|=18$ and the induced map $q_H:H\to S_3$
+Set $H=G/V$. Then $\cardinality{H}=18$ and the induced map $q_H:H\to S_3$
 has kernel the image of $N$, of order $3$. The map
 $$
 G\longrightarrow H\times S_4,\qquad

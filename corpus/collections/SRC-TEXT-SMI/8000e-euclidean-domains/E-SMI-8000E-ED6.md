@@ -55,7 +55,7 @@ $$
 $$
 Since $g$ is an automorphism of $M$, its restriction
 $$
-g|_{\ker F}:\ker F\longrightarrow\ker f
+g\restrict_{\ker F}:\ker F\longrightarrow\ker f
 $$
 is injective. It is also surjective: if $y\in\ker f$, then
 $x=g^{-1}(y)$ satisfies

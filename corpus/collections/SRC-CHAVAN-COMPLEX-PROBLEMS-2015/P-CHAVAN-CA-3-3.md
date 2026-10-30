@@ -21,7 +21,7 @@ f(z)=z^2-1,
 $$
 and define
 $$
-g(z)=|f(z)|^{1/2}
+g(z)=\abs{f(z)}^{1/2}
 \exp\!\left(\frac{i}{2}\bigl(\arg(z-1)+\arg(z+1)\bigr)\right),
 $$
 where $\arg$ is the principal argument.
@@ -51,17 +51,17 @@ for every $z\in\Omega$.
 For $z\in\Omega$, neither $z-1$ nor $z+1$ is zero, so both principal
 arguments in the definition of $g$ are defined. Moreover,
 $$
-z-1=|z-1|e^{i\arg(z-1)},
+z-1=\abs{z-1}e^{i\arg(z-1)},
 \qquad
-z+1=|z+1|e^{i\arg(z+1)}.
+z+1=\abs{z+1}e^{i\arg(z+1)}.
 $$
 Therefore
 $$
 \begin{aligned}
 g(z)^2
-&=|f(z)|
+&=\abs{f(z)}
 e^{i(\arg(z-1)+\arg(z+1))}\\
-&=|z-1||z+1|
+&=\abs{z-1}\abs{z+1}
 e^{i\arg(z-1)}e^{i\arg(z+1)}\\
 &=(z-1)(z+1)\\
 &=f(z).
@@ -92,7 +92,7 @@ $z\in(-1,\infty)$. Intersecting with
 $\Omega=\CC\setminus[-1,1]$, both possible discontinuity sets
 reduce to $(1,\infty)$. Thus away from that ray both argument terms
 are continuous. Since $f$ is continuous and nonzero on $\Omega$, so
-is $|f|^{1/2}$, and the defining product for $g$ is continuous there.
+is $\abs{f}^{1/2}$, and the defining product for $g$ is continuous there.
 
 :::
 
@@ -128,8 +128,8 @@ e^{i(2\pi+2\pi)/2}=e^{2\pi i}=1.
 $$
 Along the positive real axis itself the two arguments are both $0$.
 Thus for every approach to $x$ the exponential factor tends to $1$.
-Also $|f(z)|^{1/2}\to|f(x)|^{1/2}$, and the defining formula gives
-$g(x)=|f(x)|^{1/2}$. Hence $g(z)\to g(x)$.
+Also $\abs{f(z)}^{1/2}\to\abs{f(x)}^{1/2}$, and the defining formula gives
+$g(x)=\abs{f(x)}^{1/2}$. Hence $g(z)\to g(x)$.
 
 :::
 

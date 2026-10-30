@@ -61,7 +61,7 @@ $$
 f(z_0)
 =
 \frac1{2\pi i}
-\int_{|\zeta-z_0|=r}
+\int_{\abs{\zeta-z_0}=r}
 \frac{f(\zeta)}
 {\zeta-z_0}
 \,d\zeta.

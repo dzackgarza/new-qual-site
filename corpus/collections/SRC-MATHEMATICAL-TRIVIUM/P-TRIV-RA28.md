@@ -23,7 +23,7 @@ For what values of α and $\beta$ the following integrals are convergent?
 ::: {.remark}
 For arbitrary real $\beta$, the expression $(\log x)^\beta$ is generally not
 real-valued on $0<x<1$. The intended real convergence problem is interpreted
-as using $|\log x|^\beta=(-\log x)^\beta$ in part (a). This interpretation
+as using $\abs{\log x}^\beta=(-\log x)^\beta$ in part (a). This interpretation
 also makes the endpoint singularity at $x=1$ explicit.
 :::
 
@@ -45,7 +45,7 @@ dx=-e^{-t}\,dt,
 $$
 and
 $$
-|\log x|=t.
+\abs{\log x}=t.
 $$
 
 

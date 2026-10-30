@@ -25,7 +25,7 @@ Compute the series $\sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { 
 
 ::: {.pf-step #s1-1}
 
-For $|x|<1$,
+For $\abs{x}<1$,
 $$
 \frac1{1+x}
 =

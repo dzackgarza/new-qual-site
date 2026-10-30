@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $G$ is a non-trivial finite solvable group, $|G| = mn$, and $\gcd(m,n) = 1$.
+Suppose $G$ is a non-trivial finite solvable group, $\cardinality{G} = mn$, and $\gcd(m,n) = 1$.
 
 (a) Suppose $Q$ is a minimal normal subgroup of $G$; that means $Q$ is a normal subgroup, $Q \neq \{1\}$, and no proper non-trivial subgroup of $Q$ is normal in $G$.
 Prove that $Q$ is an abelian $p$-group for some prime $p$.
@@ -54,7 +54,7 @@ The group $Q$ is solvable, because its derived series is termwise contained in t
 Therefore $Q'\ne Q$: otherwise every term of the derived series of the nontrivial group $Q$ would equal $Q$.
 Minimal normality now forces $Q'=1$, so $Q$ is abelian.
 
-Choose a prime $p$ dividing $|Q|$.
+Choose a prime $p$ dividing $\cardinality{Q}$.
 In an abelian group, conjugation is trivial, so the Sylow conjugacy theorem implies that its Sylow $p$-subgroup $P$ is unique.
 Every automorphism of $Q$ sends $P$ to a Sylow $p$-subgroup, hence to itself.
 Thus $P$ is characteristic in $Q$ and normal in $G$.
@@ -67,7 +67,7 @@ This proves part (a).
 
 ::: {.pf-step #s2}
 
-For part (b), induction on $|G|$ reduces the problem to the case in which a minimal normal subgroup $Q$ has order $n=p^a$, with $p\nmid m$.
+For part (b), induction on $\cardinality{G}$ reduces the problem to the case in which a minimal normal subgroup $Q$ has order $n=p^a$, with $p\nmid m$.
 
 ::: pf-proof
 
@@ -75,12 +75,12 @@ We prove the assertion for all finite solvable groups, including the trivial gro
 The cases $m=1$ and $n=1$ are solved by the subgroups $1$ and $G$, respectively.
 Assume $m,n>1$ and the assertion for every smaller finite solvable group.
 Choose a minimal nontrivial normal subgroup $Q$; this exists because $G$ is finite.
-By step [](#s1){.pf-ref}, $|Q|=p^a$ for a prime $p$ and $a\ge1$.
+By step [](#s1){.pf-ref}, $\cardinality{Q}=p^a$ for a prime $p$ and $a\ge1$.
 Subgroups and quotients of solvable groups are solvable, as follows by taking the images or restrictions of their derived series.
 
 If $p\mid m$, coprimality gives $p^a\mid m$ and
 $$
-|G/Q|=(m/p^a)n,\qquad \gcd(m/p^a,n)=1.
+\cardinality{G/Q}=(m/p^a)n,\qquad \gcd(m/p^a,n)=1.
 $$
 Induction gives a subgroup of $G/Q$ of order $m/p^a$.
 Its inverse image in $G$ has order $m$, as required.
@@ -88,7 +88,7 @@ Its inverse image in $G$ has order $m$, as required.
 If $p\mid n$, induction gives a subgroup $\overline H\le G/Q$ of order $m$.
 Its inverse image $H$ has order $mp^a$.
 When $H<G$, induction applied to $H$, with the coprime factors $m$ and $p^a$, produces a subgroup of order $m$.
-The only remaining case is $H=G$, in which $n=p^a=|Q|$.
+The only remaining case is $H=G$, in which $n=p^a=\cardinality{Q}$.
 
 :::
 
@@ -105,9 +105,9 @@ $$
 
 The nontrivial solvable group $G/Q$ has a minimal nontrivial normal subgroup $\overline B$.
 By step [](#s1){.pf-ref} applied to $G/Q$, it has order $r^b$ for some prime $r$ and $b\ge1$.
-Since $|G/Q|=m$, we have $r\ne p$.
+Since $\cardinality{G/Q}=m$, we have $r\ne p$.
 Let $B$ be the inverse image of $\overline B$ in $G$.
-Then $B\trianglelefteq G$ and $|B|=p^a r^b$.
+Then $B\trianglelefteq G$ and $\cardinality{B}=p^a r^b$.
 Choose a Sylow $r$-subgroup $R$ of $B$.
 It has order $r^b$, intersects $Q$ trivially, and satisfies $B=QR$ by counting orders.
 
@@ -134,7 +134,7 @@ Minimal normality of $Q$ therefore gives $K=1$ or $K=Q$.
 
 If $K=1$, the product formula gives
 $$
-|N|=\frac{|G|}{|Q|}=m,
+\cardinality{N}=\frac{\cardinality{G}}{\cardinality{Q}}=m,
 $$
 so $N$ is the desired subgroup.
 If $K=Q$, then $Q\le N$, whence $G=QN=N$.
@@ -150,9 +150,9 @@ The case $R\trianglelefteq G$ also yields a subgroup of order $m$.
 
 ::: pf-proof
 
-Here $|R|=r^b>1$ divides $m$ and
+Here $\cardinality{R}=r^b>1$ divides $m$ and
 $$
-|G/R|=(m/r^b)n,\qquad \gcd(m/r^b,n)=1.
+\cardinality{G/R}=(m/r^b)n,\qquad \gcd(m/r^b,n)=1.
 $$
 Induction applies to the smaller solvable group $G/R$ and gives a subgroup of order $m/r^b$.
 Its inverse image in $G$ has order $m$.

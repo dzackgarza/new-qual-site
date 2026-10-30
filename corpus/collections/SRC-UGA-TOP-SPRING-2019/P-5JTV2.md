@@ -72,10 +72,10 @@ V_z\subseteq p^{-1}(U)
 $$
 containing $z$ such that
 $$
-p|_{V_z}:V_z\longrightarrow U
+p\restrict_{V_z}:V_z\longrightarrow U
 $$
 is a homeomorphism.
-In particular, $p|_{V_z}$ is injective.
+In particular, $p\restrict_{V_z}$ is injective.
 All points of $F$ have the same image $y_0$, so $V_z$ can contain at most one point of $F$.
 
 :::
@@ -96,7 +96,7 @@ $$
 Each $V_{z_i}$ contains at most one point of $F$.
 Therefore
 $$
-|F|\le m,
+\cardinality{F}\le m,
 $$
 so $F$ is finite.
 
@@ -209,7 +209,7 @@ Thus the stabilizer is precisely $H$.
 
 The fiber cardinality is the subgroup index:
 $$
-\bigl|p^{-1}(\{p(x_0)\})\bigr|
+\cardinality{p^{-1}(\{p(x_0)\})}
 =
 \left[
 \pi_1(Y,p(x_0)):

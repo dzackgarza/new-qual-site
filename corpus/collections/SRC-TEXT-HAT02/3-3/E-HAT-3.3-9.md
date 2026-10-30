@@ -36,7 +36,7 @@ p^{-1}(B)=B_1\amalg\cdots\amalg B_p,
 $$
 each mapped homeomorphically to $B$.
 
-For each $i$, let $\varepsilon_i=\pm1$ be the local orientation sign of $p|_{B_i}$. Since $M$ and $N$ are connected and a covering map is locally a homeomorphism, the local sign is locally constant on $M$ and therefore constant. Thus all $\varepsilon_i$ equal a common sign $\varepsilon$.
+For each $i$, let $\varepsilon_i=\pm1$ be the local orientation sign of $p\restrict_{B_i}$. Since $M$ and $N$ are connected and a covering map is locally a homeomorphism, the local sign is locally constant on $M$ and therefore constant. Thus all $\varepsilon_i$ equal a common sign $\varepsilon$.
 
 By Exercise 8's local-degree formula,
 $$

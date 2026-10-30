@@ -43,7 +43,7 @@ Definition of the candidate family $\mathcal{F}$:
 ::: pf-step
 Let $\mathcal{F}$ denote the collection of all arbitrary unions of members of the partition:
 $$
-\mathcal{F} = \left\{ \bigcup_{j \in J} A_j \;\middle|\; J \subseteq \NN \right\},
+\mathcal{F} = \left\{ \bigcup_{j \in J} A_j \;\st\; J \subseteq \NN \right\},
 $$
 with the conventions $\bigcup_{j \in \emptyset} A_j = \emptyset$ and $\bigcup_{j \in \NN} A_j = X$.
 :::

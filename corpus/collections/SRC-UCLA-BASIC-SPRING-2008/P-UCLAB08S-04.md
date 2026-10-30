@@ -218,7 +218,7 @@ $$
 
 Step [](#s1-5){.pf-ref} shows that for every $\varepsilon>0$ there is $N$ such that
 $$
-|f_n(x)|<\varepsilon
+\abs{f_n(x)}<\varepsilon
 $$
 for every $n\ge N$ and every $x\in X$.
 This is exactly uniform convergence to $0$.

@@ -39,16 +39,16 @@ $$
 
 ::: pf-proof
 
-Fix $z_0\in U$ and let $d=\operatorname{dist}(z_0,K)>0$. For $0<|h|<d/2$, subtraction of the two integrals yields
+Fix $z_0\in U$ and let $d=\operatorname{dist}(z_0,K)>0$. For $0<\abs{h}<d/2$, subtraction of the two integrals yields
 $$
 \frac{f(z_0+h)-f(z_0)}{h}
 =\int_\gamma\frac{F(w)}{(w-z_0-h)(w-z_0)}\,dw.
 $$
 For every $w\in K$, the difference between the integrand on the right and $F(w)/(w-z_0)^2$ is bounded in absolute value by
 $$
-\frac{2\|F\|_{\infty,K}|h|}{d^3}.
+\frac{2\norm{F}_{\infty,K}\abs{h}}{d^3}.
 $$
-The integral of that difference therefore has absolute value at most $2L\|F\|_{\infty,K}|h|/d^3$, which tends to zero with $h$. This proves the asserted derivative formula.
+The integral of that difference therefore has absolute value at most $2L\norm{F}_{\infty,K}\abs{h}/d^3$, which tends to zero with $h$. This proves the asserted derivative formula.
 
 :::
 

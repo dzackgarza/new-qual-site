@@ -90,7 +90,7 @@ One has $d\geq n$.
 
 ::: pf-proof
 
-Injectivity gives $|A_n|=n!/2\leq |S_d|=d!$.
+Injectivity gives $\cardinality{A_n}=n!/2\leq \cardinality{S_d}=d!$.
 If $d<n$, then $d\leq n-1$, so
 $$
 d!\leq(n-1)!<\frac n2(n-1)!=\frac{n!}{2},

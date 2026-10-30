@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-QSYKP
 kind: problem
-title: $\|v\|_{L^\infty([0,1]^2)}\le C\|v-\Delta v\|_{L^2([0,1]^2)}$ for trigonometric
-  polynomials $v$
+title: $\norm{v}_{L^\infty([0,1]^2)}\le C\norm{v-\Delta v}_{L^2([0,1]^2)}$ for trigonometric polynomials $v$
 classification:
   areas:
   - real-analysis
@@ -30,7 +29,7 @@ audit:
 
 ::: {.problem}
 Let $v$ be a trigonometric polynomial in two variables, i.e. $$v(x,y) = \sum_{n,m\in\ZZ} a_{n,m} e^{2\pi i(nx+my)}$$ with only finitely many nonzero $a_{n,m}$.
-If $u=v-\Delta v$ where $\Delta = \partial_x^2 + \partial_y^2$ is the Laplacian, prove that $$||v||_{L^\infty([0,1]^2)} \le C||u||_{L^2([0,1]^2)}$$ for some constant $C$ independent of $v$.
+If $u=v-\Delta v$ where $\Delta = \partial_x^2 + \partial_y^2$ is the Laplacian, prove that $$\norm{v}_{L^\infty([0,1]^2)} \le C\norm{u}_{L^2([0,1]^2)}$$ for some constant $C$ independent of $v$.
 :::
 
 ::: {.solution}
@@ -74,8 +73,8 @@ $$
 
 One has
 $$
-\|u\|_{L^2([0,1]^2)}^2
-=\sum_{n,m\in\ZZ}\lambda_{n,m}^2|a_{n,m}|^2.
+\norm{u}_{L^2([0,1]^2)}^2
+=\sum_{n,m\in\ZZ}\lambda_{n,m}^2\abs{a_{n,m}}^2.
 $$
 
 ::: pf-proof
@@ -135,30 +134,30 @@ since the one-dimensional series is dominated in its tails by a constant multipl
 
 For every $(x,y)\in[0,1]^2$,
 $$
-|v(x,y)|
-\le \sqrt S\,\|u\|_{L^2([0,1]^2)}.
+\abs{v(x,y)}
+\le \sqrt S\,\norm{u}_{L^2([0,1]^2)}.
 $$
 
 ::: pf-proof
 
 Since the Fourier sum for $v$ is finite,
 $$
-|v(x,y)|
-\le\sum_{n,m}|a_{n,m}|.
+\abs{v(x,y)}
+\le\sum_{n,m}\abs{a_{n,m}}.
 $$
 Insert the weights $\lambda_{n,m}$ and apply Cauchy--Schwarz:
 $$
 \begin{aligned}
-\sum_{n,m}|a_{n,m}|
-&=\sum_{n,m}\lambda_{n,m}|a_{n,m}|\frac1{\lambda_{n,m}}\\
+\sum_{n,m}\abs{a_{n,m}}
+&=\sum_{n,m}\lambda_{n,m}\abs{a_{n,m}}\frac1{\lambda_{n,m}}\\
 &\le
-\left(\sum_{n,m}\lambda_{n,m}^2|a_{n,m}|^2\right)^{1/2}
+\left(\sum_{n,m}\lambda_{n,m}^2\abs{a_{n,m}}^2\right)^{1/2}
 \left(\sum_{n,m}\frac1{\lambda_{n,m}^2}\right)^{1/2}.
 \end{aligned}
 $$
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, this is
 $$
-\sqrt S\,\|u\|_2.
+\sqrt S\,\norm{u}_2.
 $$
 
 :::
@@ -170,8 +169,8 @@ $$
 Consequently
 $$
 \boxed{
-\|v\|_{L^\infty([0,1]^2)}
-\le C\|u\|_{L^2([0,1]^2)}
+\norm{v}_{L^\infty([0,1]^2)}
+\le C\norm{u}_{L^2([0,1]^2)}
 }
 $$
 with the constant

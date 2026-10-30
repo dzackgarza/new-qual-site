@@ -26,13 +26,13 @@ audit:
 ::: {.problem}
 Let $f \in L^1([0,1], m)$, $m^2$ be Lebesgue measure on $\RR^2$, and
 $$
-A_\varepsilon = \{(x,y) \in [0,1] \times [0,1] : |x - y| \leq \varepsilon\} \quad \text{for all } \varepsilon > 0.
+A_\varepsilon = \{(x,y) \in [0,1] \times [0,1] : \abs{x - y} \leq \varepsilon\} \quad \text{for all } \varepsilon > 0.
 $$
 Prove that
 
-1) $\displaystyle\int_{A_\varepsilon} |f(x) - f(y)|\,dm^2(x,y) \leq 4\varepsilon \cdot \|f\|_{L^1([0,1], m)}$ and
+1) $\displaystyle\int_{A_\varepsilon} \abs{f(x) - f(y)}\,dm^2(x,y) \leq 4\varepsilon \cdot \norm{f}_{L^1([0,1], m)}$ and
 
-2) $\displaystyle\lim_{\varepsilon \downarrow 0} \varepsilon^{-1} \int_{A_\varepsilon} |f(x) - f(y)|\,dm^2(x,y) = 0.$
+2) $\displaystyle\lim_{\varepsilon \downarrow 0} \varepsilon^{-1} \int_{A_\varepsilon} \abs{f(x) - f(y)}\,dm^2(x,y) = 0.$
 :::
 
 ::: {.solution}
@@ -41,37 +41,37 @@ Prove that
 
 ::: pf-step
 
-Prove the $4\varepsilon\|f\|_1$ estimate.
+Prove the $4\varepsilon\norm{f}_1$ estimate.
 
 ::: pf-proof
 
 Using
 $$
-|f(x)-f(y)|\le |f(x)|+|f(y)|,
+\abs{f(x)-f(y)}\le \abs{f(x)}+\abs{f(y)},
 $$
 we obtain
 $$
 \begin{aligned}
-\int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy
+\int_{A_\varepsilon}\abs{f(x)-f(y)}\,dx\,dy
 &\le
-\int_{A_\varepsilon}|f(x)|\,dx\,dy
-+\int_{A_\varepsilon}|f(y)|\,dx\,dy.
+\int_{A_\varepsilon}\abs{f(x)}\,dx\,dy
++\int_{A_\varepsilon}\abs{f(y)}\,dx\,dy.
 \end{aligned}
 $$
 For each fixed $x\in[0,1]$, the section
 $$
-\{y\in[0,1]:|x-y|\le\varepsilon\}
+\{y\in[0,1]:\abs{x-y}\le\varepsilon\}
 $$
 has length at most $2\varepsilon$. Hence, by Tonelli,
 $$
-\int_{A_\varepsilon}|f(x)|\,dx\,dy
-\le2\varepsilon\|f\|_1.
+\int_{A_\varepsilon}\abs{f(x)}\,dx\,dy
+\le2\varepsilon\norm{f}_1.
 $$
 The same estimate holds for the second term by symmetry. Therefore
 $$
 \boxed{
-\int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy
-\le4\varepsilon\|f\|_1.}
+\int_{A_\varepsilon}\abs{f(x)-f(y)}\,dx\,dy
+\le4\varepsilon\norm{f}_1.}
 $$
 
 :::
@@ -84,16 +84,16 @@ Rewrite the thin-strip integral using translations.
 
 ::: pf-proof
 
-Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f\in L^1(\RR)$. With $h=y-x$, the original domain is contained in the set $|h|\le\varepsilon$, so
+Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f\in L^1(\RR)$. With $h=y-x$, the original domain is contained in the set $\abs{h}\le\varepsilon$, so
 $$
 \begin{aligned}
-\int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy
+\int_{A_\varepsilon}\abs{f(x)-f(y)}\,dx\,dy
 &\le
 \int_{-\varepsilon}^{\varepsilon}
-\int_{\RR}|f(x)-f(x+h)|\,dx\,dh\\
+\int_{\RR}\abs{f(x)-f(x+h)}\,dx\,dh\\
 &=
 \int_{-\varepsilon}^{\varepsilon}
-\|\tau_hf-f\|_1\,dh,
+\norm{\tau_hf-f}_1\,dh,
 \end{aligned}
 $$
 where $(\tau_hf)(x)=f(x+h)$.
@@ -110,19 +110,19 @@ Use continuity of translations in $L^1$.
 
 By [[T-BFOJT|continuity of translation in $L^1$]],
 $$
-\|\tau_hf-f\|_1\longrightarrow0
+\norm{\tau_hf-f}_1\longrightarrow0
 \qquad(h\to0).
 $$
 Given $\eta>0$, choose $\delta>0$ such that
 $$
-|h|<\delta
+\abs{h}<\delta
 \quad\Longrightarrow\quad
-\|\tau_hf-f\|_1<\eta.
+\norm{\tau_hf-f}_1<\eta.
 $$
 Then for $0<\varepsilon<\delta$, Step 2 gives
 $$
 \frac1\varepsilon
-\int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy
+\int_{A_\varepsilon}\abs{f(x)-f(y)}\,dx\,dy
 \le
 \frac1\varepsilon
 \int_{-\varepsilon}^{\varepsilon}\eta\,dh
@@ -133,7 +133,7 @@ $$
 \boxed{
 \lim_{\varepsilon\downarrow0}
 \frac1\varepsilon
-\int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy=0.}
+\int_{A_\varepsilon}\abs{f(x)-f(y)}\,dx\,dy=0.}
 $$
 
 :::

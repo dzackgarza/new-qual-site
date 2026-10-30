@@ -70,13 +70,13 @@ $$
 
 By continuity of $F$ at $p$, choose $\delta>0$ such that
 $$
-|F(x,y)-F(p)|
+\abs{F(x,y)-F(p)}
 <
 \frac12F(p)
 $$
 whenever
 $$
-\|(x,y)-p\|_2<\delta.
+\norm{(x,y)-p}_2<\delta.
 $$
 Then
 $$

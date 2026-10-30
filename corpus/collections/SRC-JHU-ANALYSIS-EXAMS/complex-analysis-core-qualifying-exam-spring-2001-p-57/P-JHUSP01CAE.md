@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on $A=\{1<|z|<2\}$ and continuous on its closure.
-Assume that $f$ is nonconstant and $|f|=5$ on both boundary circles.
+Let $f$ be holomorphic on $A=\{1<\abs{z}<2\}$ and continuous on its closure.
+Assume that $f$ is nonconstant and $\abs{f}=5$ on both boundary circles.
 Show that $f$ has at least two zeros in $A$, counted with multiplicity.
 :::
 
@@ -43,17 +43,17 @@ The normalized map sends the annulus properly into the unit disk.
 ::: pf-proof
 
 The function $F$ is holomorphic on $A$, continuous on $\overline A$, and has
-$|F|=1$ on both boundary circles. By the maximum modulus principle,
-$|F|\le1$ on $A$. Since $F$ is nonconstant, it cannot attain modulus one at an
+$\abs{F}=1$ on both boundary circles. By the maximum modulus principle,
+$\abs{F}\le1$ on $A$. Since $F$ is nonconstant, it cannot attain modulus one at an
 interior point, so
 $$
-|F(z)|<1\qquad(z\in A).
+\abs{F(z)}<1\qquad(z\in A).
 $$
 Thus $F:A\to\Delta$.
 
 Continuity and the boundary condition imply that for every $0<\rho<1$ there is
-a collar of each boundary circle on which $|F|>\rho$. Hence the inverse image
-under $F$ of the compact disk $\{|w|\le\rho\}$ lies in a compact subannulus.
+a collar of each boundary circle on which $\abs{F}>\rho$. Hence the inverse image
+under $F$ of the compact disk $\{\abs{w}\le\rho\}$ lies in a compact subannulus.
 It is closed there, so it is compact. Therefore $F:A\to\Delta$ is proper.
 In particular its zeros form a finite set; let $N$ be their total multiplicity.
 
@@ -67,13 +67,13 @@ Every value $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
 
 ::: pf-proof
 
-Fix $w\in\Delta$. Choose $\rho$ with $|w|<\rho<1$. By the boundary continuity
+Fix $w\in\Delta$. Choose $\rho$ with $\abs{w}<\rho<1$. By the boundary continuity
 from step [](#s1){.pf-ref}, choose radii $1<r_1<r_2<2$ so that every zero of $F$ lies in
-$r_1<|z|<r_2$ and
+$r_1<\abs{z}<r_2$ and
 $$
-|F(z)|>\rho>|w|
+\abs{F(z)}>\rho>\abs{w}
 $$
-on both circles $|z|=r_1,r_2$.
+on both circles $\abs{z}=r_1,r_2$.
 
 For $0\le t\le1$, the function $F-tw$ has no zero on these two circles.
 The argument-principle count of its zeros in the subannulus is therefore
@@ -84,7 +84,7 @@ $$
 $$
 depends continuously on $t$ and takes integer values. At $t=0$ it equals $N$;
 at $t=1$ it counts the solutions of $F(z)=w$, with multiplicity. No solution
-lies in the omitted boundary collars because there $|F|>\rho>|w|$. Hence every
+lies in the omitted boundary collars because there $\abs{F}>\rho>\abs{w}$. Hence every
 $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
 
 :::

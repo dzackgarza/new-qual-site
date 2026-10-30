@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESCA06-II3
 kind: problem
-title: "The maximum of $|f|+|g|$ occurs on the boundary"
+title: "The maximum of $\\abs{f}+\\abs{g}$ occurs on the boundary"
 classification:
   areas: [complex-analysis]
   topics: []
@@ -23,7 +23,7 @@ audit:
 Let $D$ be a domain whose closure is compact in $\CC$, and let $f$ and $g$ be continuous on $\overline D$ and analytic on $D$.
 Show that
 $$
-|f(z)|+|g(z)|
+\abs{f(z)}+\abs{g(z)}
 $$
 takes its maximum on the boundary $\partial D$.
 
@@ -40,7 +40,7 @@ The function
 $$
 h(z)
 \coloneqq
-|f(z)|+|g(z)|
+\abs{f(z)}+\abs{g(z)}
 $$
 attains a maximum on $\overline D$.
 
@@ -103,13 +103,13 @@ such that
 $$
 e^{i\alpha}f(z_0)
 =
-|f(z_0)|
+\abs{f(z_0)}
 $$
 and
 $$
 e^{i\beta}g(z_0)
 =
-|g(z_0)|.
+\abs{g(z_0)}.
 $$
 
 
@@ -123,7 +123,7 @@ take
 $$
 e^{i\alpha}
 =
-\frac{\overline{f(z_0)}}{|f(z_0)|}.
+\frac{\overline{f(z_0)}}{\abs{f(z_0)}}.
 $$
 If
 $$
@@ -164,15 +164,15 @@ $$
 z\in\overline D,
 $$
 $$
-|F(z)|
+\abs{F(z)}
 \le
-|f(z)|+|g(z)|
+\abs{f(z)}+\abs{g(z)}
 \le
 M.
 $$
 At $z_0$,
 $$
-|F(z_0)|=M.
+\abs{F(z_0)}=M.
 $$
 
 
@@ -185,14 +185,14 @@ By the phase choice in step [](#s1-3){.pf-ref},
 $$
 F(z_0)
 =
-|f(z_0)|+|g(z_0)|
+\abs{f(z_0)}+\abs{g(z_0)}
 =
 M,
 $$
 which is a nonnegative real number.
 Hence
 $$
-|F(z_0)|=M.
+\abs{F(z_0)}=M.
 $$
 
 :::
@@ -201,7 +201,7 @@ $$
 
 ::: {.pf-step #s1-6}
 
-Since $z_0$ is an interior point where $|F|$ attains its global
+Since $z_0$ is an interior point where $\abs{F}$ attains its global
 maximum, the maximum modulus principle implies that $F$ is constant on $D$.
 
 
@@ -210,7 +210,7 @@ maximum, the maximum modulus principle implies that $F$ is constant on $D$.
 The domain $D$ is connected and $F$ is holomorphic.
 By step [](#s1-5){.pf-ref},
 $$
-|F(z)|
+\abs{F(z)}
 \le
 M
 $$
@@ -229,7 +229,7 @@ $$
 $$
 one has
 $$
-|F(\zeta)|=M.
+\abs{F(\zeta)}=M.
 $$
 
 
@@ -247,9 +247,9 @@ $$
 extends the same constant value to the boundary.
 Therefore
 $$
-|F(\zeta)|
+\abs{F(\zeta)}
 =
-|F(z_0)|
+\abs{F(z_0)}
 =
 M.
 $$
@@ -273,9 +273,9 @@ $$
 
 By the triangle inequality,
 $$
-|F(\zeta)|
+\abs{F(\zeta)}
 \le
-|f(\zeta)|+|g(\zeta)|
+\abs{f(\zeta)}+\abs{g(\zeta)}
 =
 h(\zeta).
 $$
@@ -305,7 +305,7 @@ $$
 Consequently,
 $$
 \boxed{
-|f(z)|+|g(z)|
+\abs{f(z)}+\abs{g(z)}
 \text{ attains its maximum on }\partial D.
 }
 $$

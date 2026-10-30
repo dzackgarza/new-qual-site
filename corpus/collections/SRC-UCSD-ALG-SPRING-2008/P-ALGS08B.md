@@ -51,7 +51,7 @@ $$
 n_{11}=1.
 $$
 Write $Q$ for this unique Sylow $11$-subgroup.
-Then $Q\trianglelefteq G$, and since $|Q|=11$,
+Then $Q\trianglelefteq G$, and since $\cardinality{Q}=11$,
 $$
 Q\cong C_{11}.
 $$
@@ -79,7 +79,7 @@ $$
 n_3=1.
 $$
 Write $P$ for the unique Sylow $3$-subgroup.
-Then $P\trianglelefteq G$ and $|P|=9$.
+Then $P\trianglelefteq G$ and $\cardinality{P}=9$.
 
 :::
 
@@ -91,7 +91,7 @@ The group $G$ is the internal direct product $P\times Q$.
 
 ::: pf-proof
 
-Since $|P|=9$ and $|Q|=11$ are coprime,
+Since $\cardinality{P}=9$ and $\cardinality{Q}=11$ are coprime,
 $$
 P\cap Q=1.
 $$
@@ -102,7 +102,7 @@ $$
 Hence $P$ and $Q$ commute elementwise.
 Moreover,
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}=9\cdot11=99=|G|,
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}=9\cdot11=99=\cardinality{G},
 $$
 so $PQ=G$.
 Therefore

@@ -53,7 +53,7 @@ $z_0$ is the only zero of $f$ in that closed disk, and
 $$
 \delta
 \coloneqq
-\min_{|z-z_0|=r}|f(z)|
+\min_{\abs{z-z_0}=r}\abs{f(z)}
 >
 0.
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, the zero $z_0$ is isolated. Choose $r>0$ small enough that the closed disk is contained in $\Omega$ and contains no zero of $f$ other than $z_0$. Then $f$ is nonzero on the boundary circle. Since the circle is compact and $|f|$ is continuous, its positive minimum there exists and is strictly positive.
+By step [](#s1-1){.pf-ref}, the zero $z_0$ is isolated. Choose $r>0$ small enough that the closed disk is contained in $\Omega$ and contains no zero of $f$ other than $z_0$. Then $f$ is nonzero on the boundary circle. Since the circle is compact and $\abs{f}$ is continuous, its positive minimum there exists and is strictly positive.
 
 :::
 
@@ -71,11 +71,11 @@ By step [](#s1-1){.pf-ref}, the zero $z_0$ is isolated. Choose $r>0$ small enoug
 
 For all sufficiently large $n$,
 $$
-|f_n(z)-f(z)|
+\abs{f_n(z)-f(z)}
 <
-|f(z)|
+\abs{f(z)}
 \qquad
-(|z-z_0|=r).
+(\abs{z-z_0}=r).
 $$
 
 
@@ -83,16 +83,16 @@ $$
 
 The boundary circle
 $$
-\{z:|z-z_0|=r\}
+\{z:\abs{z-z_0}=r\}
 $$
 is compact. By local uniform convergence,
 $$
-\sup_{|z-z_0|=r}|f_n(z)-f(z)|
+\sup_{\abs{z-z_0}=r}\abs{f_n(z)-f(z)}
 \longrightarrow0.
 $$
 Choose $n$ large enough that this supremum is less than the number $\delta$ from step [](#s1-2){.pf-ref}. Since
 $$
-|f(z)|\ge\delta
+\abs{f(z)}\ge\delta
 $$
 on the circle, the required strict inequality follows.
 
@@ -107,7 +107,7 @@ For all sufficiently large $n$, the function $f_n$ has at least one zero in $B(z
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, Rouché's theorem applied on the circle $|z-z_0|=r$ shows that $f_n$ and $f$ have the same number of zeros inside the circle, counted with multiplicity. The function $f$ has at least the zero $z_0$ there, so that number is positive. Hence $f_n$ must also have a zero in the disk.
+By step [](#s1-3){.pf-ref}, Rouché's theorem applied on the circle $\abs{z-z_0}=r$ shows that $f_n$ and $f$ have the same number of zeros inside the circle, counted with multiplicity. The function $f$ has at least the zero $z_0$ there, so that number is positive. Hence $f_n$ must also have a zero in the disk.
 
 :::
 

@@ -97,7 +97,7 @@ $$
 For a positive measure, its dual norm is its total mass.
 Hence step [](#s1){.pf-ref} gives the uniform bound
 $$
-\|\mu_j\|=h(0).
+\norm{\mu_j}=h(0).
 $$
 
 Banach--Alaoglu makes this bounded set weak-* compact.
@@ -204,13 +204,13 @@ $$
 Write
 $$
 \begin{aligned}
-\left|\int\varphi_j\,d\mu_j-\int\varphi\,d\mu\right|
+\abs{\int\varphi_j\,d\mu_j-\int\varphi\,d\mu}
 &\le
-\left|\int(\varphi_j-\varphi)\,d\mu_j\right|
-+\left|\int\varphi\,d\mu_j-\int\varphi\,d\mu\right|\\
+\abs{\int(\varphi_j-\varphi)\,d\mu_j}
++\abs{\int\varphi\,d\mu_j-\int\varphi\,d\mu}\\
 &\le
-\|\varphi_j-\varphi\|_\infty\mu_j([0,2\pi])
-+\left|\int\varphi\,d\mu_j-\int\varphi\,d\mu\right|.
+\norm{\varphi_j-\varphi}_\infty\mu_j([0,2\pi])
++\abs{\int\varphi\,d\mu_j-\int\varphi\,d\mu}.
 \end{aligned}
 $$
 By step [](#s1){.pf-ref}, the masses in the first term equal the fixed number $h(0)$, and by step [](#s4){.pf-ref} the uniform norm tends to $0$.

@@ -42,9 +42,9 @@ converges if the operator norm of $A$ is less than one.
 The operator norm of a real $n\times n$ matrix $A$ is
 $$
 \boxed{
-\|A\|_{\mathrm{op}}
+\norm{A}_{\mathrm{op}}
 =
-\sup_{\|x\|_2=1}\|Ax\|_2.
+\sup_{\norm{x}_2=1}\norm{Ax}_2.
 }
 $$
 
@@ -54,10 +54,10 @@ $$
 This is the norm induced by the Euclidean norm on $\RR^n$.
 Equivalently,
 $$
-\|A\|_{\mathrm{op}}
+\norm{A}_{\mathrm{op}}
 =
 \sup_{x\ne0}
-\frac{\|Ax\|_2}{\|x\|_2}.
+\frac{\norm{Ax}_2}{\norm{x}_2}.
 $$
 This answers part (a).
 
@@ -69,10 +69,10 @@ This answers part (a).
 
 The operator norm is submultiplicative:
 $$
-\|AB\|_{\mathrm{op}}
+\norm{AB}_{\mathrm{op}}
 \le
-\|A\|_{\mathrm{op}}
-\|B\|_{\mathrm{op}}.
+\norm{A}_{\mathrm{op}}
+\norm{B}_{\mathrm{op}}.
 $$
 
 
@@ -80,13 +80,13 @@ $$
 
 For every vector $x$,
 $$
-\|ABx\|_2
+\norm{ABx}_2
 \le
-\|A\|_{\mathrm{op}}\|Bx\|_2
+\norm{A}_{\mathrm{op}}\norm{Bx}_2
 \le
-\|A\|_{\mathrm{op}}
-\|B\|_{\mathrm{op}}
-\|x\|_2.
+\norm{A}_{\mathrm{op}}
+\norm{B}_{\mathrm{op}}
+\norm{x}_2.
 $$
 Take the supremum over unit vectors $x$.
 
@@ -98,9 +98,9 @@ Take the supremum over unit vectors $x$.
 
 For every positive integer $m$,
 $$
-\|A^m\|_{\mathrm{op}}
+\norm{A^m}_{\mathrm{op}}
 \le
-\|A\|_{\mathrm{op}}^m.
+\norm{A}_{\mathrm{op}}^m.
 $$
 
 
@@ -125,18 +125,18 @@ converges absolutely in operator norm.
 
 By step [](#s1-3){.pf-ref},
 $$
-\left\|
+\norm{
 \frac{A^m}{m!}
-\right\|_{\mathrm{op}}
+}_{\mathrm{op}}
 \le
-\frac{\|A\|_{\mathrm{op}}^m}{m!}.
+\frac{\norm{A}_{\mathrm{op}}^m}{m!}.
 $$
 The scalar series
 $$
 \sum_{m=0}^{\infty}
-\frac{\|A\|_{\mathrm{op}}^m}{m!}
+\frac{\norm{A}_{\mathrm{op}}^m}{m!}
 =
-e^{\|A\|_{\mathrm{op}}}
+e^{\norm{A}_{\mathrm{op}}}
 $$
 converges.
 Therefore the matrix series converges absolutely in the finite-dimensional normed space
@@ -162,17 +162,17 @@ $$
 be the $j$th standard basis vector.
 For any matrix $B=(b_{ij})$,
 $$
-|b_{ij}|
+\abs{b_{ij}}
 =
-|E_i^TBE_j|
+\abs{E_i^TBE_j}
 \le
-\|BE_j\|_2
+\norm{BE_j}_2
 \le
-\|B\|_{\mathrm{op}}.
+\norm{B}_{\mathrm{op}}.
 $$
 Thus if
 $$
-\|B_m-B\|_{\mathrm{op}}\to0,
+\norm{B_m-B}_{\mathrm{op}}\to0,
 $$
 then every entry of $B_m-B$ tends to zero.
 
@@ -206,7 +206,7 @@ This proves part (b).
 
 Suppose
 $$
-\|A\|_{\mathrm{op}}<1.
+\norm{A}_{\mathrm{op}}<1.
 $$
 Then the logarithm series
 $$
@@ -220,13 +220,13 @@ converges absolutely in operator norm.
 
 Let
 $$
-q=\|A\|_{\mathrm{op}}<1.
+q=\norm{A}_{\mathrm{op}}<1.
 $$
 By step [](#s1-3){.pf-ref},
 $$
-\left\|
+\norm{
 \frac{A^m}{m}
-\right\|_{\mathrm{op}}
+}_{\mathrm{op}}
 \le
 \frac{q^m}{m}.
 $$
@@ -257,7 +257,7 @@ $$
 $$
 is well-defined whenever
 $$
-\|A\|_{\mathrm{op}}<1.
+\norm{A}_{\mathrm{op}}<1.
 $$
 
 
@@ -290,7 +290,7 @@ converge absolutely.
 Submultiplicativity gives
 $$
 \sum_{m,n}
-|p_mq_n|\|A\|^{m+n}
+\abs{p_mq_n}\norm{A}^{m+n}
 <
 \infty.
 $$
@@ -314,7 +314,7 @@ Repeated application gives the same conclusion for absolutely convergent composi
 
 For scalar $z$ with
 $$
-|z|<1,
+\abs{z}<1,
 $$
 one has the analytic identity
 $$
@@ -335,7 +335,7 @@ $$
 
 This is the ordinary scalar power-series identity for the exponential and logarithm in the disk
 $$
-|z|<1.
+\abs{z}<1.
 $$
 Both series converge absolutely there, and their composition represents the analytic function $1+z$.
 
@@ -347,7 +347,7 @@ Both series converge absolutely there, and their composition represents the anal
 
 If
 $$
-\|A\|_{\mathrm{op}}<1,
+\norm{A}_{\mathrm{op}}<1,
 $$
 then substituting $A$ into the scalar identity in step [](#s1-10){.pf-ref} gives
 $$

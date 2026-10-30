@@ -32,7 +32,7 @@ audit:
 ::: {.solution}
 They differ by precomposition with a unique rotation:
 $$
-\boxed{f_2(z)=f_1(\lambda z)\quad(z\in D),\qquad |\lambda|=1.}
+\boxed{f_2(z)=f_1(\lambda z)\quad(z\in D),\qquad \abs{\lambda}=1.}
 $$
 Moreover $\lambda=f_2'(0)/f_1'(0)$.
 
@@ -52,9 +52,9 @@ $D\to D$, its inverse is $f_2^{-1}\circ f_1$, and
 $H(0)=0=H^{-1}(0)$ by the common-value assumption.
 Schwarz's lemma applied to both maps gives
 $$
-|H(z)|\leq|z|=|H^{-1}(H(z))|\leq|H(z)|.
+\abs{H(z)}\leq\abs{z}=\abs{H^{-1}(H(z))}\leq\abs{H(z)}.
 $$
-Hence $|H(z)|=|z|$ throughout $D$ [@SS03].
+Hence $\abs{H(z)}=\abs{z}$ throughout $D$ [@SS03].
 
 :::
 
@@ -71,13 +71,13 @@ zero with value $H'(0)$, by the Taylor expansion of $H$.
 It has modulus one at each nonzero point and modulus
 at most one everywhere by continuity. The maximum
 modulus principle therefore makes $Q$ a constant
-$\lambda$ with $|\lambda|=1$ [@SS03]. This gives
+$\lambda$ with $\abs{\lambda}=1$ [@SS03]. This gives
 $H(z)=\lambda z$ and $f_2(z)=f_1(\lambda z)$.
 Differentiating at zero gives
 $f_2'(0)=\lambda f_1'(0)$. Since $f_1'(0)\ne0$,
 this also proves uniqueness of $\lambda$.
 
-Conversely, for every $|\lambda|=1$, precomposition of
+Conversely, for every $\abs{\lambda}=1$, precomposition of
 $f_1$ with $z\mapsto\lambda z$ is a holomorphic bijection
 onto the same domain and has the same value at zero.
 Thus every stated rotation is possible, and there is

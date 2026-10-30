@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $(V,\|\cdot\|)$ is a real normed vector space in which every absolutely convergent series converges.
+Suppose that $(V,\norm{\cdot})$ is a real normed vector space in which every absolutely convergent series converges.
 Prove that $V$ is complete.
 :::
 
@@ -36,7 +36,7 @@ n_1<n_2<n_3<\cdots
 $$
 such that
 $$
-\|x_{n_{k+1}}-x_{n_k}\|<2^{-k}
+\norm{x_{n_{k+1}}-x_{n_k}}<2^{-k}
 $$
 for every $k\ge1$.
 This is possible because $(x_n)$ is Cauchy.
@@ -44,7 +44,7 @@ This is possible because $(x_n)$ is Cauchy.
 Then
 $$
 \sum_{k=1}^\infty
-\|x_{n_{k+1}}-x_{n_k}\|
+\norm{x_{n_{k+1}}-x_{n_k}}
 \le \sum_{k=1}^\infty2^{-k}<\infty.
 $$
 Hence the series
@@ -68,16 +68,16 @@ So the Cauchy sequence has a convergent subsequence.
 Finally, a Cauchy sequence with a subsequence converging to $x$ must itself converge to $x$.
 Indeed, given $\varepsilon>0$, choose $N_0$ so that
 $$
-\|x_m-x_n\|<\varepsilon/2
+\norm{x_m-x_n}<\varepsilon/2
 $$
 for $m,n\ge N_0$, and then choose $k$ with $n_k\ge N_0$ and
 $$
-\|x_{n_k}-x\|<\varepsilon/2.
+\norm{x_{n_k}-x}<\varepsilon/2.
 $$
 For every $n\ge N_0$,
 $$
-\|x_n-x\|
-\le \|x_n-x_{n_k}\|+\|x_{n_k}-x\|
+\norm{x_n-x}
+\le \norm{x_n-x_{n_k}}+\norm{x_{n_k}-x}
 <\varepsilon.
 $$
 Thus $x_n\to x$, and $V$ is complete.

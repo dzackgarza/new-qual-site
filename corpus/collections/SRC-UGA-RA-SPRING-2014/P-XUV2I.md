@@ -58,7 +58,7 @@ $$
 $$
 Hence
 $$
-\|T_N\|=\left(\sum_{n=1}^N a_n^2\right)^{1/2}.
+\norm{T_N}=\left(\sum_{n=1}^N a_n^2\right)^{1/2}.
 $$
 
 :::
@@ -71,19 +71,19 @@ Prove pointwise boundedness.
 
 ::: pf-proof
 
-Fix $b\in\ell^2(\NN)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
+Fix $b\in\ell^2(\NN)$. By replacing $b$ with $\abs{b}$, it is enough to consider nonnegative sequences. The hypothesis says
 $$
-\sum_{n=1}^\infty a_n|b_n|<\infty.
+\sum_{n=1}^\infty a_n\abs{b_n}<\infty.
 $$
 Therefore
 $$
-|T_N(b)|
-\le \sum_{n=1}^N a_n|b_n|
-\le \sum_{n=1}^\infty a_n|b_n|,
+\abs{T_N(b)}
+\le \sum_{n=1}^N a_n\abs{b_n}
+\le \sum_{n=1}^\infty a_n\abs{b_n},
 $$
 so
 $$
-\sup_N|T_N(b)|<\infty
+\sup_N\abs{T_N(b)}<\infty
 $$
 for every $b\in\ell^2$.
 
@@ -99,7 +99,7 @@ Apply the Uniform Boundedness Principle.
 
 Since $\ell^2$ is Banach and the family $(T_N)$ is pointwise bounded, the Uniform Boundedness Principle gives
 $$
-\sup_N\|T_N\|<\infty.
+\sup_N\norm{T_N}<\infty.
 $$
 Using Step 1,
 $$

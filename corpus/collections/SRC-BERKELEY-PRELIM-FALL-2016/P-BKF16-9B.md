@@ -69,23 +69,23 @@ $H$ is any Sylow $2$-subgroup, then
 $$
 P\cong C_3,
 \qquad
-|H|=4,
+\cardinality{H}=4,
 \qquad
 G\cong P\rtimes H.
 $$
 
 ::: pf-proof
 
-The unique Sylow $3$-subgroup $P$ is normal. Since $|P|=3$ and
-$|H|=4$,
+The unique Sylow $3$-subgroup $P$ is normal. Since $\cardinality{P}=3$ and
+$\cardinality{H}=4$,
 $$
 P\cap H=1.
 $$
 Because $P$ is normal, $PH$ is a subgroup, and
 $$
-|PH|
+\cardinality{PH}
 =
-\frac{|P||H|}{|P\cap H|}
+\frac{\cardinality{P}\cardinality{H}}{\cardinality{P\cap H}}
 =
 12.
 $$

@@ -54,31 +54,31 @@ Let $\varepsilon > 0$ be given.
 
 ::: pf-step
 Since $\lim_{n \to \infty} a_n = 0$, there exists an integer $N_0 \in \NN$ such that
-$$|a_k| < \frac{\varepsilon}{2} \quad \text{for all } k > N_0.$$
+$$\abs{a_k} < \frac{\varepsilon}{2} \quad \text{for all } k > N_0.$$
 
 :::
 
 ::: pf-step
 For any $n > N_0$, split the sum into the initial segment and the tail:
-$$\left| \frac{1}{n} \sum_{k=1}^n a_k \right| \le \frac{1}{n} \sum_{k=1}^{N_0} |a_k| + \frac{1}{n} \sum_{k=N_0+1}^n |a_k|.$$
+$$\abs{ \frac{1}{n} \sum_{k=1}^n a_k } \le \frac{1}{n} \sum_{k=1}^{N_0} \abs{a_k} + \frac{1}{n} \sum_{k=N_0+1}^n \abs{a_k}.$$
 
 :::
 
 ::: pf-step
 Bound the second term:
-$$\frac{1}{n} \sum_{k=N_0+1}^n |a_k| < \frac{1}{n} \sum_{k=N_0+1}^n \frac{\varepsilon}{2} = \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2}.$$
+$$\frac{1}{n} \sum_{k=N_0+1}^n \abs{a_k} < \frac{1}{n} \sum_{k=N_0+1}^n \frac{\varepsilon}{2} = \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2}.$$
 
 :::
 
 ::: pf-step
-For the first term, the sum $C = \sum_{k=1}^{N_0} |a_k|$ is a fixed constant independent of $n$. Choose $N_1 > N_0$ such that for all $n > N_1$:
-$$\frac{C}{n} = \frac{1}{n} \sum_{k=1}^{N_0} |a_k| < \frac{\varepsilon}{2}.$$
+For the first term, the sum $C = \sum_{k=1}^{N_0} \abs{a_k}$ is a fixed constant independent of $n$. Choose $N_1 > N_0$ such that for all $n > N_1$:
+$$\frac{C}{n} = \frac{1}{n} \sum_{k=1}^{N_0} \abs{a_k} < \frac{\varepsilon}{2}.$$
 
 :::
 
 ::: pf-step
 For all $n > N_1$:
-$$\left| \frac{1}{n} \sum_{k=1}^n a_k \right| \le \frac{C}{n} + \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
+$$\abs{ \frac{1}{n} \sum_{k=1}^n a_k } \le \frac{C}{n} + \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
 
 :::
 

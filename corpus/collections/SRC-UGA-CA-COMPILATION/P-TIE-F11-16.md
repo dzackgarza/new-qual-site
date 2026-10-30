@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-16
 kind: problem
-title: Entire functions with $|f(z)|\le M|z|^2$ are quadratic polynomials
+title: Entire functions with $\abs{f(z)}\le M\abs{z}^2$ are quadratic polynomials
 classification:
   areas:
   - complex-analysis

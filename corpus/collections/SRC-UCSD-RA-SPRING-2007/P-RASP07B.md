@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if $f_n, g_n, f, g \in L^1(X, \mu)$ with $f_n \to f$ a.e., $g_n \to g$ a.e., $|f_n| \leq g_n$ and $\int g_n \to \int g$, then $\int f_n \to \int f$.
+Prove that if $f_n, g_n, f, g \in L^1(X, \mu)$ with $f_n \to f$ a.e., $g_n \to g$ a.e., $\abs{f_n} \leq g_n$ and $\int g_n \to \int g$, then $\int f_n \to \int f$.
 
 Hint: The proof is similar to that of the Dominated Convergence Theorem.
 Be sure to justify all your steps.
@@ -46,11 +46,11 @@ f_n(x)\to f(x),
 \qquad
 g_n(x)\to g(x),
 \qquad
-|f_n(x)|\le g_n(x).
+\abs{f_n(x)}\le g_n(x).
 $$
 Hence
 $$
-|f(x)|\le g(x)
+\abs{f(x)}\le g(x)
 $$
 almost everywhere. In particular, $g_n\ge0$ and $g\ge0$ almost everywhere.
 
@@ -66,12 +66,12 @@ Apply Fatou to a nonnegative remainder.
 
 Define
 $$
-h_n:=g_n+g-|f_n-f|.
+h_n:=g_n+g-\abs{f_n-f}.
 $$
 By the triangle inequality and Step 1,
 $$
-|f_n-f|
-\le |f_n|+|f|
+\abs{f_n-f}
+\le \abs{f_n}+\abs{f}
 \le g_n+g,
 $$
 so $h_n\ge0$. Moreover,
@@ -88,7 +88,7 @@ $$
 \left(
 \int_X g_n\,d\mu+
 \int_X g\,d\mu-
-\int_X|f_n-f|\,d\mu
+\int_X\abs{f_n-f}\,d\mu
 \right).
 $$
 Using the hypothesis
@@ -97,11 +97,11 @@ $$
 $$
 we obtain
 $$
-\limsup_n\|f_n-f\|_1\le0.
+\limsup_n\norm{f_n-f}_1\le0.
 $$
 Therefore
 $$
-\|f_n-f\|_1\to0.
+\norm{f_n-f}_1\to0.
 $$
 
 :::
@@ -116,8 +116,8 @@ Conclude convergence of the integrals.
 
 Finally,
 $$
-\left|\int_Xf_n\,d\mu-\int_Xf\,d\mu\right|
-\le\|f_n-f\|_1\longrightarrow0.
+\abs{\int_Xf_n\,d\mu-\int_Xf\,d\mu}
+\le\norm{f_n-f}_1\longrightarrow0.
 $$
 Thus
 $$

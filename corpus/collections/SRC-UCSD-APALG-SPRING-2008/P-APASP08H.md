@@ -45,7 +45,7 @@ The Frobenius characteristic map $\operatorname{ch}: \bigoplus_{n \ge 0} R(S_n) 
 :::
 
 ::: pf-step
-The regular representation $\CC[S_n]$ has character $\chi_{\text{reg}}(w) = |S_n| \mathbf{1}_{\{w = e\}}$.
+The regular representation $\CC[S_n]$ has character $\chi_{\text{reg}}(w) = \cardinality{S_n} \mathbf{1}_{\{w = e\}}$.
 :::
 
 ::: pf-step

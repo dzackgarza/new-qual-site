@@ -33,7 +33,7 @@ $$
 \boxed{
 H^*(\RP^{m};\FF_2)
 \cong\FF_2[x]/(x^{m+1}),
-\qquad |x|=1.}
+\qquad \gradeddegree{x}=1.}
 $$
 
 
@@ -57,7 +57,7 @@ In particular,
 $$
 H^*(\RP^{\infty};\FF_2)
 \cong\FF_2[x],
-\qquad |x|=1.
+\qquad \gradeddegree{x}=1.
 $$
 
 
@@ -77,7 +77,7 @@ $$
 \boxed{
 H^*(\CP^{m};\ZZ)
 \cong\ZZ[u]/(u^{m+1}),
-\qquad |u|=2.}
+\qquad \gradeddegree{u}=2.}
 $$
 
 
@@ -98,7 +98,7 @@ Thus
 $$
 H^*(\CP^{\infty};\ZZ)
 \cong\ZZ[u],
-\qquad |u|=2.
+\qquad \gradeddegree{u}=2.
 $$
 
 
@@ -124,7 +124,7 @@ H^*(L^{2n-1};\FF_p)
 \cong
 \Lambda_{\FF_p}(a)\otimes
 \FF_p[b]/(b^n),
-\qquad |a|=1,\ |b|=2,}
+\qquad \gradeddegree{a}=1,\ \gradeddegree{b}=2,}
 $$
 where
 $$
@@ -145,7 +145,7 @@ H^*(BC_p;\FF_p)
 \cong\Lambda(a)\otimes\FF_p[b],
 \qquad b=\beta(a),
 $$
-with $|a|=1$ and $|b|=2$.
+with $\gradeddegree{a}=1$ and $\gradeddegree{b}=2$.
 Restriction to the $(2n-1)$-skeleton preserves all classes through degree $2n-1$, while $b^n$ has degree $2n$ and therefore vanishes.
 This gives exactly the displayed truncation.
 In particular $a^2=0$ because $a$ has odd degree and $p$ is odd.

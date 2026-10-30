@@ -45,25 +45,25 @@ $$
 $$
 By Minkowski's integral inequality,
 $$
-\|f*\phi_\varepsilon-f\|_p
-\le\int |\phi(z)|\,\|f(\cdot-\varepsilon z)-f\|_p\,dz.
+\norm{f*\phi_\varepsilon-f}_p
+\le\int \abs{\phi(z)}\,\norm{f(\cdot-\varepsilon z)-f}_p\,dz.
 $$
 For each fixed $z$, translation continuity in $L^p$ gives
 $$
-\|f(\cdot-\varepsilon z)-f\|_p\to0.
+\norm{f(\cdot-\varepsilon z)-f}_p\to0.
 $$
-The integrand is bounded by $2\|f\|_p|\phi(z)|$, which is integrable in $z$. Dominated convergence therefore yields
+The integrand is bounded by $2\norm{f}_p\abs{\phi(z)}$, which is integrable in $z$. Dominated convergence therefore yields
 $$
-\|f*\phi_\varepsilon-f\|_p\longrightarrow0.
+\norm{f*\phi_\varepsilon-f}_p\longrightarrow0.
 $$
 
 For $p=\infty$, take $f=\mathbf1_{[0,\infty)}$ in one dimension. Every $f*\phi_\varepsilon$ is continuous. But no continuous function $g$ can satisfy
 $$
-\|g-f\|_\infty<\frac12.
+\norm{g-f}_\infty<\frac12.
 $$
 Indeed, such an essential-supremum bound and continuity would force $g(x)<1/2$ for every $x<0$ and $g(x)>1/2$ for every $x>0$, contradicting continuity at $0$. Hence
 $$
-\|f*\phi_\varepsilon-f\|_\infty\ge\frac12
+\norm{f*\phi_\varepsilon-f}_\infty\ge\frac12
 $$
 for every $\varepsilon$, so convergence in $L^\infty$ fails.
 :::

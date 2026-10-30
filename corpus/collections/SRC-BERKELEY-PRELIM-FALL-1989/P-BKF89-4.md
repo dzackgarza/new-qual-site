@@ -13,13 +13,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be analytic in $|z|<1$ and suppose
+Let $f$ be analytic in $\abs{z}<1$ and suppose
 $$
-|f(z)|\le\frac1{1-|z|}.
+\abs{f(z)}\le\frac1{1-\abs{z}}.
 $$
 Show that
 $$
-|f'(0)|\le4.
+\abs{f'(0)}\le4.
 $$
 :::
 
@@ -31,24 +31,24 @@ $$
 
 For every $0<r<1$,
 $$
-|f'(0)|
+\abs{f'(0)}
 \leq
 \frac{1}{r(1-r)}.
 $$
 
 ::: pf-proof
 
-On the circle $|z|=r$, the hypothesis gives
+On the circle $\abs{z}=r$, the hypothesis gives
 $$
-|f(z)|
+\abs{f(z)}
 \leq
 \frac1{1-r}.
 $$
 By Cauchy's estimate for the first derivative at the center,
 $$
-|f'(0)|
+\abs{f'(0)}
 \leq
-\frac{1}{r}\max_{|z|=r}|f(z)|
+\frac{1}{r}\max_{\abs{z}=r}\abs{f(z)}
 \leq
 \frac{1}{r(1-r)}.
 $$
@@ -85,14 +85,14 @@ Equality holds at $r=1/2$.
 
 Therefore
 $$
-\boxed{|f'(0)|\leq4}.
+\boxed{\abs{f'(0)}\leq4}.
 $$
 
 ::: pf-proof
 
 Substitute $r=1/2$ into step [](#s1){.pf-ref}:
 $$
-|f'(0)|
+\abs{f'(0)}
 \leq
 \frac{1}{(1/2)(1/2)}
 =

@@ -38,7 +38,7 @@ Work on the Riemann sphere, so a straight line is regarded as a circle through $
 Every straight line or circle in $\CC$ is the zero set of an equation
 $$
 \boxed{
-A|z|^2+Bz+\overline B\,\overline z+C=0}
+A\abs{z}^2+Bz+\overline B\,\overline z+C=0}
 $$
 with
 $$
@@ -53,14 +53,14 @@ not all coefficients zero.
 
 A circle with center $z_0$ and radius $r>0$ has equation
 $$
-|z-z_0|^2=r^2.
+\abs{z-z_0}^2=r^2.
 $$
 Expanding gives
 $$
-|z|^2
+\abs{z}^2
 -\overline{z_0}z
 -z_0\overline z
-+|z_0|^2-r^2
++\abs{z_0}^2-r^2
 =0,
 $$
 which has the stated form with $A=1$.
@@ -100,7 +100,7 @@ For a nonempty proper zero set one has $B\ne0$, and this is a real affine-linear
 
 If $A\ne0$, divide by $A$ and complete the square:
 $$
-|z|^2
+\abs{z}^2
 +\frac BA z
 +\frac{\overline B}{A}\overline z
 +\frac CA
@@ -108,11 +108,11 @@ $$
 $$
 Thus
 $$
-\left|
+\abs{
 z+\frac{\overline B}{A}
-\right|^2
+}^2
 =
-\frac{|B|^2}{A^2}
+\frac{\abs{B}^2}{A^2}
 -\frac CA.
 $$
 Whenever the zero set is nonempty and not a single degenerate point, this is a circle.
@@ -155,11 +155,11 @@ the inverse Möbius transformation exists and is given by the displayed formula.
 
 Substituting $z=T^{-1}(w)$ into a generalized-circle equation and multiplying by
 $$
-|-cw+a|^2
+\abs{-cw+a}^2
 $$
 produces another equation of the form
 $$
-A'|w|^2+B'w+\overline{B'}\,\overline w+C'=0
+A'\abs{w}^2+B'w+\overline{B'}\,\overline w+C'=0
 $$
 with
 $$
@@ -171,7 +171,7 @@ $$
 
 Start from
 $$
-A|z|^2+Bz+\overline B\,\overline z+C=0.
+A\abs{z}^2+Bz+\overline B\,\overline z+C=0.
 $$
 By step [](#s1-3){.pf-ref},
 $$
@@ -184,7 +184,7 @@ z=\frac{dw-b}{-cw+a},
 $$
 Multiplying by
 $$
-|-cw+a|^2
+\abs{-cw+a}^2
 =
 (-cw+a)(-\overline c\,\overline w+\overline a)
 $$
@@ -193,18 +193,18 @@ $$
 \begin{aligned}
 0
 &=
-A|dw-b|^2\\
+A\abs{dw-b}^2\\
 &\quad
 +B(dw-b)(-\overline c\,\overline w+\overline a)\\
 &\quad
 +\overline B(\overline d\,\overline w-\overline b)(-cw+a)\\
 &\quad
-+C|-cw+a|^2.
++C\abs{-cw+a}^2.
 \end{aligned}
 $$
 This expression is real-valued and contains only the monomials
 $$
-|w|^2,
+\abs{w}^2,
 \quad
 w,
 \quad
@@ -212,7 +212,7 @@ w,
 \quad
 1.
 $$
-Hence it has the stated form, with the coefficients of $w$ and $\overline w$ conjugate and the coefficients of $|w|^2$ and $1$ real.
+Hence it has the stated form, with the coefficients of $w$ and $\overline w$ conjugate and the coefficients of $\abs{w}^2$ and $1$ real.
 
 :::
 
@@ -244,5 +244,5 @@ For $c\ne0$,
 $$
 T(z)=\frac ac+\frac{bc-ad}{c^2}\cdot\frac1{z+d/c},
 $$
-so every Möbius transformation is a composition of translations, nonzero complex dilations and the inversion $z\mapsto1/z$. Translations and dilations preserve lines and circles. For the inversion, substituting $z=1/w$ into $A|z|^2+Bz+\overline B\,\overline z+C=0$ and multiplying by $|w|^2$ gives $C|w|^2+\overline B w+B\overline w+A=0$, an equation of the same form with $|B|^2-AC$ unchanged.
+so every Möbius transformation is a composition of translations, nonzero complex dilations and the inversion $z\mapsto1/z$. Translations and dilations preserve lines and circles. For the inversion, substituting $z=1/w$ into $A\abs{z}^2+Bz+\overline B\,\overline z+C=0$ and multiplying by $\abs{w}^2$ gives $C\abs{w}^2+\overline B w+B\overline w+A=0$, an equation of the same form with $\abs{B}^2-AC$ unchanged.
 :::

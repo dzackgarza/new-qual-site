@@ -30,7 +30,7 @@ $$
 
 Define
 $$
-G \definedas \theset{x\in X \suchthat x\in E_n \text{ for only finitely many  } n}.
+G \coloneqq \theset{x\in X \suchthat x\in E_n \text{ for only finitely many  } n}.
 $$
 
 Show that $G \in \mathcal M$ and $\mu(G) = 0$.

@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-3WZXM
 kind: problem
-title: An entire function with $|f(z)|\ge A|z|^N$ at infinity is a polynomial of degree
-  at least $N$
+title: An entire function with $\abs{f(z)}\ge A\abs{z}^N$ at infinity is a polynomial of degree at least $N$
 classification:
   areas:
   - complex-analysis
@@ -20,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such that $$|f(z)| \geq A |z|^N\ \text{for}\ |z| \geq R.$$ Show that (i) $f$ is a polynomial and (ii) the degree of $f$ is at least $N$.
+Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such that $$\abs{f(z)} \geq A \abs{z}^N\ \text{for}\ \abs{z} \geq R.$$ Show that (i) $f$ is a polynomial and (ii) the degree of $f$ is at least $N$.
 :::
 
 ::: {.solution}

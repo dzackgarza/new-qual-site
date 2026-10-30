@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ be analytic and one-to-one in $| z | < 1$ . For $0 < r < 1$ , let $D _ { r }$ be the disk
+Let $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ be analytic and one-to-one in $\abs{ z } < 1$ . For $0 < r < 1$ , let $D _ { r }$ be the disk
 
-$| z | < r$ . Show that the area of $f ( D _ { r } )$ is finite and is given by
+$\abs{ z } < r$ . Show that the area of $f ( D _ { r } )$ is finite and is given by
 
 $$
-S = \pi \sum _ { n = 1 } ^ { \infty } n | c _ { n } | ^ { 2 } r ^ { 2 n } .
+S = \pi \sum _ { n = 1 } ^ { \infty } n \abs{ c _ { n } } ^ { 2 } r ^ { 2 n } .
 $$
 
 (Note that in general the area of $f ( D _ { 1 } )$ is infinite.)

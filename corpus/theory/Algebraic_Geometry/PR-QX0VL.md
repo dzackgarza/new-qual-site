@@ -36,7 +36,7 @@ E\coloneqq Z\times_{X\times_YX,\,(g,h)}X,
 $$
 where $X\to X\times_YX$ is the diagonal of $f$. Since $f$ is separated, this diagonal is a closed immersion, so $E\hookrightarrow Z$ is a closed immersion. It is the equalizer of $g$ and $h$.
 
-Because $g|_U=h|_U$, the closed subset $\abs E$ contains the dense open subset $U$. Hence $\abs E=\abs Z$. If $\mathcal I\subseteq\OO_Z$ is the ideal sheaf defining $E$, then $V(\mathcal I)=Z$, so $\sqrt{\mathcal I}$ is the nilradical of $\OO_Z$. Since $Z$ is reduced, $\sqrt{\mathcal I}=0$, and therefore $\mathcal I=0$. Thus $E=Z$, so $g=h$.
+Because $g\restrict_U=h\restrict_U$, the closed subset $\abs E$ contains the dense open subset $U$. Hence $\abs E=\abs Z$. If $\mathcal I\subseteq\OO_Z$ is the ideal sheaf defining $E$, then $V(\mathcal I)=Z$, so $\sqrt{\mathcal I}$ is the nilradical of $\OO_Z$. Since $Z$ is reduced, $\sqrt{\mathcal I}=0$, and therefore $\mathcal I=0$. Thus $E=Z$, so $g=h$.
 :::
 
 ::: {.remark}

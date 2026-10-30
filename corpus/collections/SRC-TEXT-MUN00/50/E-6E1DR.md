@@ -66,20 +66,20 @@ Since $X$ is locally compact Hausdorff and second-countable, $X^*$ is a compact 
 ::: pf-step
 **Construction of closed embedding into $\RR^{2m+2}$:** Let $p_0 = g(\infty) \in \RR^{2m+1}$.
 For $x \in X$, $g(x) \neq p_0$.
-Define $F: X \to \RR^{2m+1} \times \RR = \RR^{2m+2}$ by: $$F(x) = \left( g(x), \frac{1}{\|g(x) - p_0\|} \right).$$
+Define $F: X \to \RR^{2m+1} \times \RR = \RR^{2m+2}$ by: $$F(x) = \left( g(x), \frac{1}{\norm{g(x) - p_0}} \right).$$
 :::
 
 ::: pf-step
 **Embedding and properness:**
-- Since $g$ and $\|\cdot - p_0\|^{-1}$ are continuous, $F$ is continuous.
+- Since $g$ and $\norm{\cdot - p_0}^{-1}$ are continuous, $F$ is continuous.
 
-- Since $g|_X$ is injective, $F$ is injective.
+- Since $g\restrict_X$ is injective, $F$ is injective.
 
 - If a sequence $(x_k)$ in $X$ leaves every compact set of $X$, then $x_k \to \infty$ in $X^*$.
 
-- Then $g(x_k) \to g(\infty) = p_0$, so $\|g(x_k) - p_0\| \to 0$, which forces the last coordinate $\frac{1}{\|g(x_k) - p_0\|} \to \infty$.
+- Then $g(x_k) \to g(\infty) = p_0$, so $\norm{g(x_k) - p_0} \to 0$, which forces the last coordinate $\frac{1}{\norm{g(x_k) - p_0}} \to \infty$.
 
-- Hence $\|F(x_k)\| \to \infty$, showing that $F$ is a proper map.
+- Hence $\norm{F(x_k)} \to \infty$, showing that $F$ is a proper map.
 :::
 
 ::: pf-step

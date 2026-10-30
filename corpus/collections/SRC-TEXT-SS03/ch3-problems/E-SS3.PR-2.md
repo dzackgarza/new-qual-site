@@ -22,14 +22,14 @@ audit:
    Deduce Poisson’s integral formula
 
 $$
-u (z _ {0}) = \frac {1}{2 \pi} \int_ {0} ^ {2 \pi} \frac {1 - | z _ {0} | ^ {2}}{| e ^ {i \theta} - z _ {0} | ^ {2}} u (e ^ {i \theta}) d \theta \quad \mathrm{for} | z _ {0} | <   1
+u (z _ {0}) = \frac {1}{2 \pi} \int_ {0} ^ {2 \pi} \frac {1 - \abs{ z _ {0} } ^ {2}}{\abs{ e ^ {i \theta} - z _ {0} } ^ {2}} u (e ^ {i \theta}) d \theta \quad \mathrm{for} \abs{ z _ {0} } <   1
 $$
 
 from the special case $z _ { 0 } = 0$ (the mean value theorem).
 Show that if $z _ { 0 } = r e ^ { i \varphi }$ ， then
 
 $$
-\frac {1 - | z _ {0} | ^ {2}}{| e ^ {i \theta} - z _ {0} | ^ {2}} = \frac {1 - r ^ {2}}{1 - 2 r \cos (\theta - \varphi) + r ^ {2}} = P _ {r} (\theta - \varphi),
+\frac {1 - \abs{ z _ {0} } ^ {2}}{\abs{ e ^ {i \theta} - z _ {0} } ^ {2}} = \frac {1 - r ^ {2}}{1 - 2 r \cos (\theta - \varphi) + r ^ {2}} = P _ {r} (\theta - \varphi),
 $$
 
 and we recover the expression for the Poisson kernel derived in the exercises of the previous chapter.
@@ -122,11 +122,11 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
 
 ::: {.pf-step #s7}
 
-Make the change of variables $e^{i\varphi} = T(e^{i\theta})$; then $d\theta = \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}\,d\varphi$ (the Jacobian of the Blaschke factor on the circle).
+Make the change of variables $e^{i\varphi} = T(e^{i\theta})$; then $d\theta = \frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2}\,d\varphi$ (the Jacobian of the Blaschke factor on the circle).
 
 ::: pf-proof
 
-the derivative of $T$ on the unit circle has modulus $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}$.
+the derivative of $T$ on the unit circle has modulus $\frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2}$.
 
 :::
 
@@ -135,7 +135,7 @@ the derivative of $T$ on the unit circle has modulus $\frac{1 - |z_0|^2}{|e^{i\t
 ::: {.pf-step #s8}
 
 Hence
-$$u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} u(e^{i\theta})\,d\theta.$$
+$$u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} \frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2} u(e^{i\theta})\,d\theta.$$
 
 ::: pf-proof
 
@@ -147,11 +147,11 @@ Steps [](#s6){.pf-ref} and [](#s7){.pf-ref}.
 
 ::: {.pf-step #s9}
 
-For $z_0 = re^{i\varphi}$, $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
+For $z_0 = re^{i\varphi}$, $\frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
 
 ::: pf-proof
 
-$|e^{i\theta} - re^{i\varphi}|^2 = 1 - 2r\cos(\theta - \varphi) + r^2$.
+$\abs{e^{i\theta} - re^{i\varphi}}^2 = 1 - 2r\cos(\theta - \varphi) + r^2$.
 
 :::
 

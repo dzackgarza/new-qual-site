@@ -28,7 +28,7 @@ Let $f_n\in C^1([0,1])$ satisfy
 $$
 f_n(t)\le5,
 \qquad
-|f_n'(t)|\le1
+\abs{f_n'(t)}\le1
 $$
 for all $n,t$. Define
 $$
@@ -40,7 +40,7 @@ Prove that $(g_n)$ converges uniformly on $[0,1]$.
 ::: {.solution}
 Each $f_n$ is $1$-Lipschitz. The maximum of finitely many $1$-Lipschitz functions is again $1$-Lipschitz, so every $g_n$ is continuous and
 $$
-|g_n(s)-g_n(t)|\le|s-t|.
+\abs{g_n(s)-g_n(t)}\le\abs{s-t}.
 $$
 Also
 $$
@@ -52,7 +52,7 @@ g(t)=\sup_n g_n(t)=\sup_n f_n(t)
 $$
 exists and is finite. Moreover, taking suprema in the Lipschitz estimate gives
 $$
-|g(s)-g(t)|\le|s-t|,
+\abs{g(s)-g(t)}\le\abs{s-t},
 $$
 so $g$ is continuous.
 

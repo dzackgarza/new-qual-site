@@ -21,21 +21,21 @@ audit:
 9. Here are further results similar to the Phragmén–Lindelöf theorem.
 
 (a) Let $F$ be a holomorphic function in the right half-plane that extends continuously to the boundary, that is, the imaginary axis.
-Suppose that $| F ( i y ) | \le 1$ for all $y \in \RR$ , and
+Suppose that $\abs{ F ( i y ) } \le 1$ for all $y \in \RR$ , and
 
 $$
-| F (z) | \leq C e ^ {c | z | ^ {\gamma}}
+\abs{ F (z) } \leq C e ^ {c \abs{ z } ^ {\gamma}}
 $$
 
-for some $c , C > 0$ and $\gamma < 1$ . Prove that $| F ( z ) | \le 1$ for all z in the right half-plane.
+for some $c , C > 0$ and $\gamma < 1$ . Prove that $\abs{ F ( z ) } \le 1$ for all z in the right half-plane.
 
-(b) More generally, let S be a sector whose vertex is the origin, and forming an angle of $\pi / \beta$ . Let $F$ be a holomorphic function in S that is continuous on the closure of $S ,$ , so that $| F ( z ) | \le 1$ on the boundary of S and
+(b) More generally, let S be a sector whose vertex is the origin, and forming an angle of $\pi / \beta$ . Let $F$ be a holomorphic function in S that is continuous on the closure of $S ,$ , so that $\abs{ F ( z ) } \le 1$ on the boundary of S and
 
 $$
-| F (z) | \leq C e ^ {c | z | ^ {\alpha}} \text {   for   all   } z \in S
+\abs{ F (z) } \leq C e ^ {c \abs{ z } ^ {\alpha}} \text {   for   all   } z \in S
 $$
 
-for some $c , C > 0$ and $0 < \alpha < \beta$ . Prove that $| F ( z ) | \le 1$ for all $z \in S$
+for some $c , C > 0$ and $0 < \alpha < \beta$ . Prove that $\abs{ F ( z ) } \le 1$ for all $z \in S$
 :::
 
 ::: {.solution}
@@ -58,23 +58,23 @@ $$
 $$
 Hence on the imaginary axis
 $$
-|F_\varepsilon(iy)|\le|F(iy)|\le1.
+\abs{F_\varepsilon(iy)}\le\abs{F(iy)}\le1.
 $$
-On the large semicircle $|z|=R$ in the right half-plane,
+On the large semicircle $\abs{z}=R$ in the right half-plane,
 $$
-|F_\varepsilon(z)|
+\abs{F_\varepsilon(z)}
 \le C\exp\!\left(cR^\gamma
 -\varepsilon R^\delta\cos\frac{\delta\pi}{2}\right),
 $$
-which tends to $0$ as $R\to\infty$ because $\delta>\gamma$. Thus, for sufficiently large $R$, the maximum principle on the right half-disc gives $|F_\varepsilon|\le1$. Letting $R\to\infty$ and then $\varepsilon\downarrow0$ yields
+which tends to $0$ as $R\to\infty$ because $\delta>\gamma$. Thus, for sufficiently large $R$, the maximum principle on the right half-disc gives $\abs{F_\varepsilon}\le1$. Letting $R\to\infty$ and then $\varepsilon\downarrow0$ yields
 $$
-|F(z)|\le1
+\abs{F(z)}\le1
 $$
 throughout the right half-plane.
 
 For (b), rotate the sector so that it is symmetric about the positive real axis:
 $$
-S=\left\{z:\left|\arg z\right|\le\frac{\pi}{2\beta}\right\}.
+S=\left\{z:\abs{\arg z}\le\frac{\pi}{2\beta}\right\}.
 $$
 Choose
 $$
@@ -90,16 +90,16 @@ For
 $$
 F_\varepsilon(z)=F(z)e^{-\varepsilon z^\delta},
 $$
-the boundary-ray bound remains at most $1$, while on the circular arc $|z|=R$,
+the boundary-ray bound remains at most $1$, while on the circular arc $\abs{z}=R$,
 $$
-|F_\varepsilon(z)|
+\abs{F_\varepsilon(z)}
 \le C\exp\!\left(cR^\alpha
 -\varepsilon R^\delta\cos\frac{\delta\pi}{2\beta}\right)
 \longrightarrow0.
 $$
-The maximum principle on truncated sectors therefore gives $|F_\varepsilon|\le1$. Letting $\varepsilon\downarrow0$ proves
+The maximum principle on truncated sectors therefore gives $\abs{F_\varepsilon}\le1$. Letting $\varepsilon\downarrow0$ proves
 $$
-|F(z)|\le1
+\abs{F(z)}\le1
 $$
 for all $z\in S$.
 :::

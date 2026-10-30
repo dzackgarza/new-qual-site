@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Suppose $f_n\in C^2([0,1])$, $f_n(x)\to f(x)$ pointwise, and
 $$
-|f_n'(x)|\le1,\qquad |f_n''(x)|\le1
+\abs{f_n'(x)}\le1,\qquad \abs{f_n''(x)}\le1
 $$
 for every $x\in[0,1]$ and $n\ge1$.
 Prove that $f$ is continuously differentiable on $[0,1]$.
@@ -42,7 +42,7 @@ is uniformly bounded on $[0,1]$.
 
 This is exactly the hypothesis
 $$
-|f_n'(x)|\le1
+\abs{f_n'(x)}\le1
 $$
 for every
 $$
@@ -71,19 +71,19 @@ x,y\in[0,1].
 $$
 By the mean value theorem applied to $f_n'$,
 $$
-|f_n'(x)-f_n'(y)|
+\abs{f_n'(x)-f_n'(y)}
 \le
-\sup_{t\in[0,1]}|f_n''(t)|\,|x-y|.
+\sup_{t\in[0,1]}\abs{f_n''(t)}\,\abs{x-y}.
 $$
 The hypothesis gives
 $$
-|f_n''(t)|\le1,
+\abs{f_n''(t)}\le1,
 $$
 so
 $$
-|f_n'(x)-f_n'(y)|
+\abs{f_n'(x)-f_n'(y)}
 \le
-|x-y|
+\abs{x-y}
 $$
 for every $n$.
 Thus every derivative is $1$-Lipschitz, with a common Lipschitz constant.
@@ -194,25 +194,25 @@ $$
 
 Uniform convergence from step [](#s1-3){.pf-ref} gives
 $$
-\|f_{n_j}'-g\|_\infty\to0.
+\norm{f_{n_j}'-g}_\infty\to0.
 $$
 Therefore
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_0^x f_{n_j}'(t)\,dt
 -
 \int_0^x g(t)\,dt
-\right|
+}
 &\le
 \int_0^x
-|f_{n_j}'(t)-g(t)|
+\abs{f_{n_j}'(t)-g(t)}
 \,dt\\
 &\le
 x\,
-\|f_{n_j}'-g\|_\infty\\
+\norm{f_{n_j}'-g}_\infty\\
 &\le
-\|f_{n_j}'-g\|_\infty
+\norm{f_{n_j}'-g}_\infty
 \longrightarrow0.
 \end{aligned}
 $$

@@ -19,11 +19,11 @@ audit:
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be integrable real-valued functions.
 Prove that if $f_n\to f$ almost everywhere and
 $$
-\int_X|f_n|\,d\mu\to\int_X|f|\,d\mu,
+\int_X\abs{f_n}\,d\mu\to\int_X\abs{f}\,d\mu,
 $$
 then
 $$
-\int_X|f_n-f|\,d\mu\to0.
+\int_X\abs{f_n-f}\,d\mu\to0.
 $$
 :::
 
@@ -31,7 +31,7 @@ $$
 
 Define
 $$
-g_n=|f_n|+|f|-|f_n-f|.
+g_n=\abs{f_n}+\abs{f}-\abs{f_n-f}.
 $$
 
 ::: pf
@@ -45,11 +45,11 @@ Each $g_n$ is measurable, integrable, and nonnegative.
 
 Measurability follows from measurability of $f_n$ and $f$. By the triangle inequality,
 $$
-|f_n-f|\le |f_n|+|f|,
+\abs{f_n-f}\le \abs{f_n}+\abs{f},
 $$
 so $g_n\ge0$. Also
 $$
-0\le g_n\le |f_n|+|f|,
+0\le g_n\le \abs{f_n}+\abs{f},
 $$
 and the right-hand side is integrable because both $f_n$ and $f$ are integrable. Hence $g_n$ is integrable.
 
@@ -61,7 +61,7 @@ and the right-hand side is integrable because both $f_n$ and $f$ are integrable.
 
 One has
 $$
-g_n\longrightarrow 2|f|
+g_n\longrightarrow 2\abs{f}
 $$
 almost everywhere.
 
@@ -70,15 +70,15 @@ almost everywhere.
 
 At every point where $f_n\to f$,
 $$
-|f_n|\to|f|
+\abs{f_n}\to\abs{f}
 $$
 and
 $$
-|f_n-f|\to0.
+\abs{f_n-f}\to0.
 $$
 Therefore
 $$
-g_n=|f_n|+|f|-|f_n-f|\to2|f|.
+g_n=\abs{f_n}+\abs{f}-\abs{f_n-f}\to2\abs{f}.
 $$
 The assumed convergence holds almost everywhere.
 
@@ -90,7 +90,7 @@ The assumed convergence holds almost everywhere.
 
 Fatou's lemma gives
 $$
-2\int_X|f|\,d\mu
+2\int_X\abs{f}\,d\mu
 \le
 \liminf_{n\to\infty}\int_X g_n\,d\mu.
 $$
@@ -100,11 +100,11 @@ $$
 
 By step [](#s1-1){.pf-ref}, the functions $g_n$ are nonnegative. By step [](#s1-2){.pf-ref},
 $$
-\liminf_{n\to\infty}g_n=2|f|
+\liminf_{n\to\infty}g_n=2\abs{f}
 $$
 almost everywhere. Fatou's lemma therefore yields
 $$
-\int_X2|f|\,d\mu
+\int_X2\abs{f}\,d\mu
 \le
 \liminf_{n\to\infty}\int_Xg_n\,d\mu.
 $$
@@ -117,11 +117,11 @@ $$
 
 Suppose, for contradiction, that
 $$
-\int_X|f_n-f|\,d\mu
+\int_X\abs{f_n-f}\,d\mu
 $$
 does not tend to $0$. Then there are $\varepsilon>0$ and a subsequence $(n_k)$ such that
 $$
-\int_X|f_{n_k}-f|\,d\mu\ge\varepsilon
+\int_X\abs{f_{n_k}-f}\,d\mu\ge\varepsilon
 $$
 for every $k$.
 
@@ -140,7 +140,7 @@ Along the subsequence from step [](#s1-4){.pf-ref},
 $$
 \limsup_{k\to\infty}\int_Xg_{n_k}\,d\mu
 \le
-2\int_X|f|\,d\mu-\varepsilon.
+2\int_X\abs{f}\,d\mu-\varepsilon.
 $$
 
 
@@ -150,24 +150,24 @@ By the definition of $g_n$,
 $$
 \int_Xg_{n_k}\,d\mu
 =
-\int_X|f_{n_k}|\,d\mu
+\int_X\abs{f_{n_k}}\,d\mu
 +
-\int_X|f|\,d\mu
+\int_X\abs{f}\,d\mu
 -
-\int_X|f_{n_k}-f|\,d\mu.
+\int_X\abs{f_{n_k}-f}\,d\mu.
 $$
 Using step [](#s1-4){.pf-ref},
 $$
 \int_Xg_{n_k}\,d\mu
 \le
-\int_X|f_{n_k}|\,d\mu
+\int_X\abs{f_{n_k}}\,d\mu
 +
-\int_X|f|\,d\mu
+\int_X\abs{f}\,d\mu
 -\varepsilon.
 $$
 The hypothesis
 $$
-\int_X|f_n|\,d\mu\to\int_X|f|\,d\mu
+\int_X\abs{f_n}\,d\mu\to\int_X\abs{f}\,d\mu
 $$
 then gives the asserted limit-superior bound.
 
@@ -184,11 +184,11 @@ Step [](#s1-5){.pf-ref} contradicts Fatou's lemma applied to the subsequence $(g
 
 The subsequence still satisfies
 $$
-g_{n_k}\to2|f|
+g_{n_k}\to2\abs{f}
 $$
 almost everywhere and remains nonnegative. Therefore Fatou's lemma gives
 $$
-2\int_X|f|\,d\mu
+2\int_X\abs{f}\,d\mu
 \le
 \liminf_{k\to\infty}\int_Xg_{n_k}\,d\mu.
 $$
@@ -198,7 +198,7 @@ $$
 \le
 \limsup_{k\to\infty}\int_Xg_{n_k}\,d\mu
 \le
-2\int_X|f|\,d\mu-\varepsilon,
+2\int_X\abs{f}\,d\mu-\varepsilon,
 $$
 a contradiction.
 
@@ -211,7 +211,7 @@ a contradiction.
 Therefore
 $$
 \boxed{
-\int_X|f_n-f|\,d\mu\longrightarrow0
+\int_X\abs{f_n-f}\,d\mu\longrightarrow0
 }.
 $$
 

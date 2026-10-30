@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-3A
 kind: problem
-title: Contour integral of $1/\cos z$ over $\lvert z\rvert=2$
+title: Contour integral of $1/\cos z$ over $\abs{ z}=2$
 classification:
   areas:
   - prelim

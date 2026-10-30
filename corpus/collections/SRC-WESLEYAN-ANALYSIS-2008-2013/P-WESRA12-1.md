@@ -384,7 +384,7 @@ k
 $$
 atoms, then
 $$
-|\mathcal A|
+\cardinality{\mathcal A}
 =
 2^k.
 $$
@@ -409,7 +409,7 @@ such choices.
 
 If
 $$
-|X|=4,
+\cardinality{X}=4,
 $$
 the possible numbers of atoms are
 $$
@@ -558,7 +558,7 @@ The complete table is
 $$
 \boxed{
 \begin{array}{c|cccc}
-|\mathcal A|
+\cardinality{\mathcal A}
 &2&4&8&16\\
 \hline
 \text{number of }\sigma\text{-algebras}

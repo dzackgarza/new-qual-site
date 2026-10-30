@@ -71,7 +71,7 @@ bijection from its left cosets to the Sylow $3$-subgroups:
 two conjugates coincide exactly when the representatives differ
 by an element of $N_G(Q)$. Hence
 $$
-[G:N_G(Q)]=28,\qquad |N_G(Q)|=84/28=3.
+[G:N_G(Q)]=28,\qquad \cardinality{N_G(Q)}=84/28=3.
 $$
 Every subgroup normalizes itself, so $Q\subseteq N_G(Q)$.
 As a Sylow $3$-subgroup, $Q$ also has order $3$. The containment

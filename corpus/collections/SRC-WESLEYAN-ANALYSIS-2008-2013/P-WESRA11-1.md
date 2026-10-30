@@ -64,7 +64,7 @@ $$
 
 The function $g_{k,j}$ vanishes whenever $\operatorname{dist}(x,I_{k,j})\ge2^{-k}$. Thus its support in $[0,1]$ has length at most
 $$
-|I_{k,j}|+2\cdot2^{-k}=3\cdot2^{-k}.
+\setmeasure{I_{k,j}}+2\cdot2^{-k}=3\cdot2^{-k}.
 $$
 Since $0\le g_{k,j}\le1$, its integral is at most the measure of its support.
 

@@ -94,11 +94,11 @@ for one index $i$.
 
 For each $a$, equality
 $$
-s|_{U_a}=t|_{U_a}
+s\restrict_{U_a}=t\restrict_{U_a}
 $$
 in the direct limit means that there is some index $j_a\ge i$ at which the images of
 $$
-s_i|_{U_a},\quad t_i|_{U_a}
+s_i\restrict_{U_a},\quad t_i\restrict_{U_a}
 $$
 become equal.  Since there are only finitely many $a$, directedness supplies one index $j$ dominating all $j_a$.
 
@@ -137,9 +137,9 @@ for every $a$.
 
 For every pair $(a,b)$, compatibility in the direct limit means that at some later index $j_{ab}\ge i$ the two restrictions
 $$
-s_{a,i}|_{U_a\cap U_b},
+s_{a,i}\restrict_{U_a\cap U_b},
 \qquad
-s_{b,i}|_{U_a\cap U_b}
+s_{b,i}\restrict_{U_a\cap U_b}
 $$
 become equal.  There are only finitely many pairs, so choose one index $j$ dominating all $j_{ab}$.
 
@@ -185,7 +185,7 @@ s\in\mcp(U).
 $$
 For any other $\alpha$, both
 $$
-s|_{U_\alpha}
+s\restrict_{U_\alpha}
 \quad\text{and}\quad
 s_\alpha
 $$
@@ -196,7 +196,7 @@ U_\alpha\cap U_{\alpha_a},
 $$
 because the original family was compatible.  These finitely many intersections cover $U_\alpha$, so step [](#s2){.pf-ref} gives
 $$
-s|_{U_\alpha}=s_\alpha.
+s\restrict_{U_\alpha}=s_\alpha.
 $$
 Thus $s$ glues the entire family.
 

@@ -69,7 +69,7 @@ $$
 
 Suppose a lift $\widetilde f$ has been constructed on $[0,t_{i-1}]$, ending at $e_{i-1}\in E$. There is a unique lift of
 $$
-f|_{[t_{i-1},t_i]}
+f\restrict_{[t_{i-1},t_i]}
 $$
 that begins at $e_{i-1}$.
 
@@ -82,7 +82,7 @@ p^{-1}(U_i)=\coprod_{\lambda\in\Lambda_i}V_{i,\lambda},
 $$
 where each restriction
 $$
-p|_{V_{i,\lambda}}:V_{i,\lambda}\to U_i
+p\restrict_{V_{i,\lambda}}:V_{i,\lambda}\to U_i
 $$
 is a homeomorphism.
 
@@ -94,7 +94,7 @@ the point $e_{i-1}$ lies in a unique sheet $V_i$. Define
 $$
 \widetilde f(t)
 =
-\bigl(p|_{V_i}\bigr)^{-1}(f(t)),
+\bigl(p\restrict_{V_i}\bigr)^{-1}(f(t)),
 \qquad
 t\in[t_{i-1},t_i].
 $$
@@ -102,7 +102,7 @@ This is continuous, lifts $f$, and takes the value $e_{i-1}$ at $t_{i-1}$.
 
 For uniqueness, any lift of this subpath beginning at $e_{i-1}$ must remain in the same sheet $V_i$: its image is connected, it lies in the disjoint union of the sheets over $U_i$, and it contains $e_{i-1}\in V_i$. On $V_i$, the equation $p\circ\widetilde f=f$ forces
 $$
-\widetilde f=(p|_{V_i})^{-1}\circ f.
+\widetilde f=(p\restrict_{V_i})^{-1}\circ f.
 $$
 
 :::

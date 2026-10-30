@@ -70,7 +70,7 @@ on both nonzero homology groups.
 Its Lefschetz number is therefore
 $$
 L(g)
-=\operatorname{tr}(g_*|H_0)-\operatorname{tr}(g_*|H_1)
+=\operatorname{tr}(g_*\restrict H_0)-\operatorname{tr}(g_*\restrict H_1)
 =1-2
 =-1.
 $$

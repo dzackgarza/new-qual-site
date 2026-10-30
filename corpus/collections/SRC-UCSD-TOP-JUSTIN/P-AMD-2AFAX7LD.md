@@ -75,19 +75,19 @@ $\RR^3 \setminus \{0\}$ deformation retracts to the unit sphere $S^2$.
 ::: pf-proof
 
 ::: pf-step
-Let $r \colon \RR^3 \setminus \{0\} \to S^2$ be defined by $r(x) = \frac{x}{\|x\|}$ and let $\iota \colon S^2 \hookrightarrow \RR^3 \setminus \{0\}$ be the inclusion.
+Let $r \colon \RR^3 \setminus \{0\} \to S^2$ be defined by $r(x) = \frac{x}{\norm{x}}$ and let $\iota \colon S^2 \hookrightarrow \RR^3 \setminus \{0\}$ be the inclusion.
 :::
 
 ::: pf-step
-The map $r$ is continuous and restricts to the identity on $S^2$ because for any $x \in S^2$, $\|x\| = 1 \implies r(x) = x$.
+The map $r$ is continuous and restricts to the identity on $S^2$ because for any $x \in S^2$, $\norm{x} = 1 \implies r(x) = x$.
 :::
 
 ::: pf-step
-Define $H \colon (\RR^3 \setminus \{0\}) \times [0, 1] \to \RR^3 \setminus \{0\}$ by $H(x, t) = (1-t)x + t \frac{x}{\|x\|}$.
+Define $H \colon (\RR^3 \setminus \{0\}) \times [0, 1] \to \RR^3 \setminus \{0\}$ by $H(x, t) = (1-t)x + t \frac{x}{\norm{x}}$.
 :::
 
 ::: pf-step
-For all $x \in \RR^3 \setminus \{0\}$ and $t \in [0, 1]$, $(1-t) + \frac{t}{\|x\|} > 0$, so $H(x, t) \neq 0$.
+For all $x \in \RR^3 \setminus \{0\}$ and $t \in [0, 1]$, $(1-t) + \frac{t}{\norm{x}} > 0$, so $H(x, t) \neq 0$.
 Thus $H$ is a well-defined continuous map into $\RR^3 \setminus \{0\}$.
 :::
 
@@ -95,7 +95,7 @@ Thus $H$ is a well-defined continuous map into $\RR^3 \setminus \{0\}$.
 $H(x, 0) = x$, $H(x, 1) = \iota(r(x))$, and $H(s, t) = s$ for every $s \in S^2$ and $t \in [0, 1]$, so $H$ is a strong deformation retraction onto $S^2$.
 
 ::: pf-proof
-Substitute $t = 0$ and $t = 1$ into the formula for $H$. For $s \in S^2$, $\|s\| = 1$, so $H(s, t) = (1-t)s + ts = s$.
+Substitute $t = 0$ and $t = 1$ into the formula for $H$. For $s \in S^2$, $\norm{s} = 1$, so $H(s, t) = (1-t)s + ts = s$.
 :::
 
 :::

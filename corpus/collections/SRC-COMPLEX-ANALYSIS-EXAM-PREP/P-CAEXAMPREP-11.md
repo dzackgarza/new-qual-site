@@ -21,7 +21,7 @@ Find a bijective conformal map that takes a bounded region of $\CC$ to an unboun
 
 Let
 $$
-\DD=\{z:|z|<1\},
+\DD=\{z:\abs{z}<1\},
 \qquad
 H=\{w:\operatorname{Re}w>0\},
 $$
@@ -39,12 +39,12 @@ The map $F$ sends $\DD$ into $H$.
 
 ::: pf-proof
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 \begin{aligned}
 \operatorname{Re}F(z)
 &=\frac12\left(\frac{1+z}{1-z}+\frac{1+\overline z}{1-\overline z}\right)\\
-&=\frac{1-|z|^2}{|1-z|^2}>0.
+&=\frac{1-\abs{z}^2}{\abs{1-z}^2}>0.
 \end{aligned}
 $$
 Thus $F(z)\in H$.
@@ -66,11 +66,11 @@ maps $H$ into $\DD$.
 
 If $\operatorname{Re}w>0$, then
 $$
-|w+1|^2-|w-1|^2=4\operatorname{Re}w>0.
+\abs{w+1}^2-\abs{w-1}^2=4\operatorname{Re}w>0.
 $$
-Hence $|w-1|<|w+1|$, so
+Hence $\abs{w-1}<\abs{w+1}$, so
 $$
-\left|\frac{w-1}{w+1}\right|<1.
+\abs{\frac{w-1}{w+1}}<1.
 $$
 Also $w+1\ne0$ in $H$, so the formula is well defined there.
 

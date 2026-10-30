@@ -180,7 +180,7 @@ nef, so
 $$
 N^2\ge0.
 $$
-Indeed, if $N\not\sim0$, choose two general effective members of $|N|$ with
+Indeed, if $N\not\sim0$, choose two general effective members of $\linearsystem{N}$ with
 no common irreducible component; their intersection number is $N^2\ge0$.
 If $N\sim0$, the same inequality is immediate.
 
@@ -619,7 +619,7 @@ $S$ with the same degree and genus.
 
 ::: pf-proof
 The four exceptional curves are disjoint $(-1)$-curves, so they can be
-contracted successively. If a curve $C_2\in|M|$ avoids the four image points,
+contracted successively. If a curve $C_2\in\linearsystem{M}$ avoids the four image points,
 its inverse image is its strict transform and is isomorphic to $C_2$.
 
 If $D=\pi^*M$, then $D\cdot E_i=0$ for $i=3,\ldots,6$. Applying the
@@ -686,7 +686,7 @@ $$
 :::
 
 ::: {.pf-step #even-equality-realized}
-A general member of $|M_{\mathrm{ev}}|$ is nonsingular and
+A general member of $\linearsystem{M_{\mathrm{ev}}}$ is nonsingular and
 irreducible and can be chosen to avoid the four contraction points of
 step [](#contraction-pullback-preserves-invariants){.pf-ref}. Its pullback to $S$ attains the even minimum.
 
@@ -760,7 +760,7 @@ $$
 :::
 
 ::: {.pf-step #odd-equality-realized}
-A general member of $|M_{\mathrm{odd}}|$ is nonsingular and
+A general member of $\linearsystem{M_{\mathrm{odd}}}$ is nonsingular and
 irreducible and can be chosen away from the four contraction points. Its
 pullback to $S$ attains the odd minimum.
 

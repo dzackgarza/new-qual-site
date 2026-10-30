@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-12
 kind: problem
-title: Harmonic function between the tangent circles $|z|=2$ and $|z-1|=1$
+title: Harmonic function between the tangent circles $\abs{z}=2$ and $\abs{z-1}=1$
 classification:
   areas:
   - real-analysis
@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a function $u(x,y)$ harmonic in the region between the circles $|z| = 2$ and $|z - 1| = 1$ which equals 1 on the outer circle and 0 on the inner circle (except at the point where the circles are tangent to each other).
+Find a function $u(x,y)$ harmonic in the region between the circles $\abs{z} = 2$ and $\abs{z - 1} = 1$ which equals 1 on the outer circle and 0 on the inner circle (except at the point where the circles are tangent to each other).
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ Let
 $$
 \Omega
 =
-\{z:|z|<2,\ |z-1|>1\}
+\{z:\abs{z}<2,\ \abs{z-1}>1\}
 $$
 be the region between the two circles, excluding the tangency point $z=2$.
 
@@ -63,7 +63,7 @@ which lies on the boundary of the region and is excluded from $\Omega$.
 
 If
 $$
-|z|=2
+\abs{z}=2
 $$
 and $z\ne2$, then
 $$
@@ -83,13 +83,13 @@ This is the inverse relation to the definition of $w$.
 
 The equation
 $$
-|z|=2
+\abs{z}=2
 $$
 becomes
 $$
-\left|
+\abs{
 2+\frac1w
-\right|
+}
 =2.
 $$
 
@@ -104,10 +104,10 @@ Substitute step [](#s1-2){.pf-ref}.
 
 ::: pf-step
 
-Multiplying by $|w|$,
+Multiplying by $\abs{w}$,
 $$
 \boxed{
-|2w+1|=2|w|}.
+\abs{2w+1}=2\abs{w}}.
 $$
 
 
@@ -115,11 +115,11 @@ $$
 
 Since $w\ne0$,
 $$
-\left|
+\abs{
 2+\frac1w
-\right|
+}
 =
-\frac{|2w+1|}{|w|}.
+\frac{\abs{2w+1}}{\abs{w}}.
 $$
 
 :::
@@ -130,20 +130,20 @@ $$
 
 Squaring gives
 $$
-4|w|^2+4\operatorname{Re}w+1
+4\abs{w}^2+4\operatorname{Re}w+1
 =
-4|w|^2.
+4\abs{w}^2.
 $$
 
 
 ::: pf-proof
 
 $$
-|2w+1|^2
+\abs{2w+1}^2
 =
 (2w+1)(2\overline w+1)
 =
-4|w|^2+2w+2\overline w+1.
+4\abs{w}^2+2w+2\overline w+1.
 $$
 Since
 $$
@@ -168,7 +168,7 @@ $$
 
 ::: pf-proof
 
-Cancel $4|w|^2$ from step [](#s1-5){.pf-ref}:
+Cancel $4\abs{w}^2$ from step [](#s1-5){.pf-ref}:
 $$
 4\operatorname{Re}w+1=0.
 $$
@@ -181,13 +181,13 @@ $$
 
 If
 $$
-|z-1|=1,
+\abs{z-1}=1,
 $$
 then
 $$
-\left|
+\abs{
 1+\frac1w
-\right|
+}
 =1.
 $$
 
@@ -209,21 +209,21 @@ $$
 
 ::: pf-step
 
-Multiplying by $|w|$,
+Multiplying by $\abs{w}$,
 $$
 \boxed{
-|w+1|=|w|}.
+\abs{w+1}=\abs{w}}.
 $$
 
 
 ::: pf-proof
 
 $$
-\left|
+\abs{
 1+\frac1w
-\right|
+}
 =
-\frac{|w+1|}{|w|}.
+\frac{\abs{w+1}}{\abs{w}}.
 $$
 
 :::
@@ -234,20 +234,20 @@ $$
 
 Squaring gives
 $$
-|w|^2+2\operatorname{Re}w+1
+\abs{w}^2+2\operatorname{Re}w+1
 =
-|w|^2.
+\abs{w}^2.
 $$
 
 
 ::: pf-proof
 
 $$
-|w+1|^2
+\abs{w+1}^2
 =
-|w|^2+w+\overline w+1
+\abs{w}^2+w+\overline w+1
 =
-|w|^2+2\operatorname{Re}w+1.
+\abs{w}^2+2\operatorname{Re}w+1.
 $$
 
 :::
@@ -265,7 +265,7 @@ $$
 
 ::: pf-proof
 
-Cancel $|w|^2$ in step [](#s1-9){.pf-ref}.
+Cancel $\abs{w}^2$ in step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -292,11 +292,11 @@ z=-1
 $$
 satisfies
 $$
-|-1|<2
+\abs{-1}<2
 $$
 and
 $$
-|-2|>1,
+\abs{-2}>1,
 $$
 so $z=-1\in\Omega$. Its image is
 $$
@@ -445,7 +445,7 @@ is holomorphic on $\Omega$, so its real part is harmonic. Affine combinations of
 
 ::: {.pf-step #s1-18}
 
-On the outer circle $|z|=2$, away from $z=2$,
+On the outer circle $\abs{z}=2$, away from $z=2$,
 $$
 \boxed{u=1}.
 $$
@@ -467,7 +467,7 @@ Apply step [](#s1-14){.pf-ref}.
 
 ::: {.pf-step #s1-19}
 
-On the inner circle $|z-1|=1$, away from $z=2$,
+On the inner circle $\abs{z-1}=1$, away from $z=2$,
 $$
 \boxed{u=0}.
 $$

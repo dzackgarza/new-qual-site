@@ -33,9 +33,9 @@ $$
 
 A finite limit $\lim_{x\to x_0}f(x)$ exists if there is an $L\in\RR$ such that for every $\varepsilon>0$ there is a $\delta>0$ for which
 $$
-0<|x-x_0|<\delta
+0<\abs{x-x_0}<\delta
 \quad\Longrightarrow\quad
-|f(x)-L|<\varepsilon
+\abs{f(x)-L}<\varepsilon
 $$
 for every $x$ in the domain of $f$.
 
@@ -52,8 +52,8 @@ This is the $\varepsilon$-$\delta$ definition of the assertion that $f(x)$ tends
 
 For every $x\ge0$,
 $$
-\left|\sqrt{x}-\frac12\right|
-\le 2\left|x-\frac14\right|.
+\abs{\sqrt{x}-\frac12}
+\le 2\abs{x-\frac14}.
 $$
 
 
@@ -61,8 +61,8 @@ $$
 
 Rationalizing gives
 $$
-\left|\sqrt{x}-\frac12\right|
-=\frac{\left|x-\frac14\right|}{\sqrt{x}+\frac12}.
+\abs{\sqrt{x}-\frac12}
+=\frac{\abs{x-\frac14}}{\sqrt{x}+\frac12}.
 $$
 Since $x\ge0$, one has $\sqrt{x}+\frac12\ge\frac12$, and the claimed inequality follows.
 
@@ -84,10 +84,10 @@ Let $\varepsilon>0$ and choose
 $$
 \delta\coloneqq\frac{\varepsilon}{2}.
 $$
-If $x\ge0$ and $0<|x-1/4|<\delta$, then step [](#s1-2){.pf-ref} gives
+If $x\ge0$ and $0<\abs{x-1/4}<\delta$, then step [](#s1-2){.pf-ref} gives
 $$
-\left|\sqrt{x}-\frac12\right|
-\le2\left|x-\frac14\right|
+\abs{\sqrt{x}-\frac12}
+\le2\abs{x-\frac14}
 <2\delta
 =\varepsilon.
 $$

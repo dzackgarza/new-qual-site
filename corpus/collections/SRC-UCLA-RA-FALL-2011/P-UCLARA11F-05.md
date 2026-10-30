@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 For $f\in L^1(\RR)$, define
 $$
-Mf(x):=\sup_{h>0}\frac1{2h}\int_{x-h}^{x+h}|f(y)|\,dy.
+Mf(x):=\sup_{h>0}\frac1{2h}\int_{x-h}^{x+h}\abs{f(y)}\,dy.
 $$
 Prove that there is a constant $A$ such that for every $\alpha>0$,
 $$
-\lambda\{x\in\RR:Mf(x)>\alpha\}\le \frac{A}{\alpha}\|f\|_{L^1}.
+\lambda\{x\in\RR:Mf(x)>\alpha\}\le \frac{A}{\alpha}\norm{f}_{L^1}.
 $$
 If you use a covering lemma, prove it.
 :::
@@ -73,7 +73,7 @@ The selected intervals are pairwise disjoint by construction.
 
 Every original interval $I$ is either selected or was removed because it met some selected interval $J_k$ with
 $$
-|I|\le |J_k|,
+\setmeasure{I}\le \setmeasure{J_k},
 $$
 since $J_k$ had maximal length among the intervals remaining at that stage.
 
@@ -83,13 +83,13 @@ z\in I\cap J_k.
 $$
 If $c_k$ is the center of $J_k$, then for any $y\in I$,
 $$
-|y-c_k|
+\abs{y-c_k}
 \le
-|y-z|+|z-c_k|
+\abs{y-z}+\abs{z-c_k}
 \le
-|I|+\frac{|J_k|}{2}
+\setmeasure{I}+\frac{\setmeasure{J_k}}{2}
 \le
-\frac{3|J_k|}{2}.
+\frac{3\setmeasure{J_k}}{2}.
 $$
 Thus $y\in3J_k$, so
 $$
@@ -111,14 +111,14 @@ The set $E_\alpha$ is open.
 Take $x\in E_\alpha$. Then for some $h>0$,
 $$
 \frac1{2h}
-\int_{x-h}^{x+h}|f(y)|\,dy
+\int_{x-h}^{x+h}\abs{f(y)}\,dy
 >
 \alpha.
 $$
 Set
 $$
 A=
-\int_{x-h}^{x+h}|f(y)|\,dy.
+\int_{x-h}^{x+h}\abs{f(y)}\,dy.
 $$
 Then
 $$
@@ -129,7 +129,7 @@ $$
 \frac{A}{2(h+\delta)}>\alpha.
 $$
 
-If $|x'-x|<\delta$, then
+If $\abs{x'-x}<\delta$, then
 $$
 [x-h,x+h]
 \subseteq
@@ -139,7 +139,7 @@ Therefore
 $$
 \frac1{2(h+\delta)}
 \int_{x'-(h+\delta)}^{x'+(h+\delta)}
-|f(y)|\,dy
+\abs{f(y)}\,dy
 \ge
 \frac{A}{2(h+\delta)}
 >
@@ -157,7 +157,7 @@ For every $x\in K$, choose $h_x>0$ such that
 $$
 \boxed{
 \frac1{2h_x}
-\int_{x-h_x}^{x+h_x}|f(y)|\,dy
+\int_{x-h_x}^{x+h_x}\abs{f(y)}\,dy
 >
 \alpha}.
 $$
@@ -242,7 +242,7 @@ Therefore
 $$
 \lambda(K)
 \le
-3\sum_{k=1}^{m}|J_k|.
+3\sum_{k=1}^{m}\setmeasure{J_k}.
 $$
 
 
@@ -252,9 +252,9 @@ By subadditivity,
 $$
 \lambda(K)
 \le
-\sum_{k=1}^{m}|3J_k|
+\sum_{k=1}^{m}\setmeasure{3J_k}
 =
-3\sum_{k=1}^{m}|J_k|.
+3\sum_{k=1}^{m}\setmeasure{J_k}.
 $$
 
 :::
@@ -266,9 +266,9 @@ $$
 Every selected interval $J_k$ satisfies
 $$
 \boxed{
-\alpha|J_k|
+\alpha\setmeasure{J_k}
 <
-\int_{J_k}|f(y)|\,dy}.
+\int_{J_k}\abs{f(y)}\,dy}.
 $$
 
 
@@ -276,7 +276,7 @@ $$
 
 Each $J_k$ is one of the intervals chosen in step [](#s1-3){.pf-ref}. Since
 $$
-|J_k|=2h_x,
+\setmeasure{J_k}=2h_x,
 $$
 the average inequality from step [](#s1-3){.pf-ref} is exactly the displayed inequality.
 
@@ -288,11 +288,11 @@ the average inequality from step [](#s1-3){.pf-ref} is exactly the displayed ine
 
 Hence
 $$
-3\sum_{k=1}^{m}|J_k|
+3\sum_{k=1}^{m}\setmeasure{J_k}
 <
 \frac3\alpha
 \sum_{k=1}^{m}
-\int_{J_k}|f(y)|\,dy.
+\int_{J_k}\abs{f(y)}\,dy.
 $$
 
 
@@ -309,9 +309,9 @@ Divide the inequalities in step [](#s1-8){.pf-ref} by $\alpha$ and sum.
 Since the $J_k$ are pairwise disjoint,
 $$
 \sum_{k=1}^{m}
-\int_{J_k}|f(y)|\,dy
+\int_{J_k}\abs{f(y)}\,dy
 \le
-\|f\|_{L^1}.
+\norm{f}_{L^1}.
 $$
 
 
@@ -331,7 +331,7 @@ $$
 \lambda(K)
 \le
 \frac3\alpha
-\|f\|_{L^1}}.
+\norm{f}_{L^1}}.
 $$
 
 
@@ -369,7 +369,7 @@ $$
 \lambda(E_\alpha)
 \le
 \frac3\alpha
-\|f\|_{L^1}}.
+\norm{f}_{L^1}}.
 $$
 
 
@@ -395,7 +395,7 @@ Step [](#s1-13){.pf-ref} is precisely
 $$
 \lambda\{Mf>\alpha\}
 \le
-\frac{A}{\alpha}\|f\|_1
+\frac{A}{\alpha}\norm{f}_1
 $$
 with $A=3$.
 

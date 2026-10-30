@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on the unit disk $\DD$, with $f(0)=0$ and $|f(z)|\le1$. Prove that for every integer $m\ge1$,
+Let $f$ be holomorphic on the unit disk $\DD$, with $f(0)=0$ and $\abs{f(z)}\le1$. Prove that for every integer $m\ge1$,
 $$
 f(z)-2^m z^m
 $$
-has exactly $m$ zeros, counted with multiplicity, in $|z|<\frac12$.
+has exactly $m$ zeros, counted with multiplicity, in $\abs{z}<\frac12$.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ $$
 
 Schwarz's lemma gives
 $$
-\boxed{|f(z)|\le|z|}
+\boxed{\abs{f(z)}\le\abs{z}}
 $$
 for every
 $$
@@ -59,7 +59,7 @@ f(0)=0,
 $$
 and has
 $$
-|f(z)|\le1.
+\abs{f(z)}\le1.
 $$
 These are the hypotheses of Schwarz's lemma.
 
@@ -71,13 +71,13 @@ These are the hypotheses of Schwarz's lemma.
 
 On the circle
 $$
-|z|=\frac12,
+\abs{z}=\frac12,
 $$
 one has
 $$
-|f(z)|
+\abs{f(z)}
 <
-|2^mz^m|.
+\abs{2^mz^m}.
 $$
 
 
@@ -85,15 +85,15 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|f(z)|
+\abs{f(z)}
 \le
-|z|
+\abs{z}
 =
 \frac12.
 $$
 On the other hand,
 $$
-|2^mz^m|
+\abs{2^mz^m}
 =
 2^m
 \left(
@@ -103,12 +103,12 @@ $$
 $$
 Thus
 $$
-|f(z)|
+\abs{f(z)}
 \le
 \frac12
 <1
 =
-|2^mz^m|.
+\abs{2^mz^m}.
 $$
 
 :::
@@ -129,7 +129,7 @@ $$
 $$
 have the same number of zeros in
 $$
-|z|<\frac12,
+\abs{z}<\frac12,
 $$
 counted with multiplicity.
 
@@ -150,7 +150,7 @@ $$
 $$
 zeros in
 $$
-|z|<\frac12,
+\abs{z}<\frac12,
 $$
 counted with multiplicity.
 

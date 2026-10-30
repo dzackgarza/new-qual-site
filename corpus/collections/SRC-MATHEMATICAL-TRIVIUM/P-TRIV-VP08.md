@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partial f } { \partial x } } \right) ^ { 2 } + \left( { \frac { \partial f } { \partial y } } \right) ^ { 2 } + 2 f g \right]$ , where D is a domain in (xy)-plane with the boundary $\partial D$, and $g = g ( x , y )$ is a continuous function in $\bar { D }$ Write the equation on $f ,$ whose solution In a class of functions $f \in$ $C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
+Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partial f } { \partial x } } \right) ^ { 2 } + \left( { \frac { \partial f } { \partial y } } \right) ^ { 2 } + 2 f g \right]$ , where D is a domain in (xy)-plane with the boundary $\partial D$, and $g = g ( x , y )$ is a continuous function in $\bar { D }$ Write the equation on $f ,$ whose solution In a class of functions $f \in$ $C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) \restrict _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ f_\varepsilon=f+\varepsilon\eta,
 $$
 where
 $$
-\eta|_{\partial D}=0.
+\eta\restrict_{\partial D}=0.
 $$
 
 
@@ -48,10 +48,10 @@ variation must vanish on $\partial D$.
 
 The first variation is
 $$
-\left.
+\evaluated{
 \frac d{d\varepsilon}
 J[f_\varepsilon]
-\right|_{\varepsilon=0}
+}_{\varepsilon=0}
 =
 2
 \iint_D
@@ -179,7 +179,7 @@ $$
 \Delta f=g
 \quad\text{in }D,
 \qquad
-f|_{\partial D}=f_0.
+f\restrict_{\partial D}=f_0.
 }
 $$
 
@@ -201,14 +201,14 @@ f=f_*+\eta,
 $$
 with
 $$
-\eta|_{\partial D}=0.
+\eta\restrict_{\partial D}=0.
 $$
 Then
 $$
 J[f]-J[f_*]
 =
 \iint_D
-|\nabla\eta|^2
+\norm{\nabla\eta}^2
 \,dA.
 $$
 
@@ -217,7 +217,7 @@ $$
 
 Expand
 $$
-|\nabla(f_*+\eta)|^2
+\norm{\nabla(f_*+\eta)}^2
 +
 2(f_*+\eta)g.
 $$
@@ -240,7 +240,7 @@ $$
 =0
 $$
 because $\Delta f_*=g$. The remaining quadratic term is
-$\iint_D|\nabla\eta|^2dA$.
+$\iint_D\norm{\nabla\eta}^2dA$.
 
 :::
 
@@ -257,7 +257,7 @@ Step [](#s1-7){.pf-ref} gives
 $$
 J[f]-J[f_*]
 =
-\iint_D|\nabla\eta|^2,dA
+\iint_D\norm{\nabla\eta}^2,dA
 \geq0.
 $$
 

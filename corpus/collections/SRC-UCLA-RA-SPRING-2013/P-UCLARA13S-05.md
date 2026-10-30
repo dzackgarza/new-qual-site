@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $D$ be the unit disk and define
 $$
-H=\left\{u:D\to\RR:\ u\text{ is harmonic and }\int_D |u(x,y)|^2\,dx\,dy<\infty\right\},
+H=\left\{u:D\to\RR:\ u\text{ is harmonic and }\int_D \abs{u(x,y)}^2\,dx\,dy<\infty\right\},
 $$
 with inner product
 $$
@@ -119,7 +119,7 @@ $$
 
 For every $0<R<1$,
 $$
-\int_{|z|<R}u(z)^2\,dA(z)
+\int_{\abs{z}<R}u(z)^2\,dA(z)
 =
 \pi\alpha_0^2R^2
 +
@@ -132,7 +132,7 @@ $$
 
 ::: pf-proof
 
-For each fixed $R<1$, the power series from step [](#s1-2){.pf-ref} converges uniformly on $|z|\le R$, so it may be integrated term-by-term. Orthogonality on $[0,2\pi]$ gives
+For each fixed $R<1$, the power series from step [](#s1-2){.pf-ref} converges uniformly on $\abs{z}\le R$, so it may be integrated term-by-term. Orthogonality on $[0,2\pi]$ gives
 $$
 \int_0^{2\pi}\cos(n\theta)\cos(m\theta)\,d\theta
 =
@@ -163,9 +163,9 @@ Integrating this identity against $r\,dr$ from $0$ to $R$ gives the formula.
 
 For every $u\in H$,
 $$
-\|u\|_H^2
+\norm{u}_H^2
 \ge
-\frac\pi4\,|u_x(0,0)|^2.
+\frac\pi4\,\abs{u_x(0,0)}^2.
 $$
 
 
@@ -173,7 +173,7 @@ $$
 
 By step [](#s1-3){.pf-ref}, every term in the expansion of the integral is nonnegative. In particular, for every $R<1$,
 $$
-\int_{|z|<R}u(z)^2\,dA(z)
+\int_{\abs{z}<R}u(z)^2\,dA(z)
 \ge
 \pi
 \frac{\alpha_1^2}{4}
@@ -181,7 +181,7 @@ R^4.
 $$
 Letting $R\uparrow1$ and using monotone convergence on the left yields
 $$
-\|u\|_H^2
+\norm{u}_H^2
 \ge
 \frac\pi4\alpha_1^2.
 $$
@@ -195,7 +195,7 @@ By step [](#s1-2){.pf-ref}, $\alpha_1=u_x(0,0)$.
 
 The functional $T$ is bounded and
 $$
-\|T\|
+\norm{T}
 \le
 \frac2{\sqrt\pi}.
 $$
@@ -205,11 +205,11 @@ $$
 
 Step [](#s1-4){.pf-ref} gives
 $$
-|T(u)|
+\abs{T(u)}
 =
-|u_x(0,0)|
+\abs{u_x(0,0)}
 \le
-\frac2{\sqrt\pi}\|u\|_H
+\frac2{\sqrt\pi}\norm{u}_H
 \qquad
 (u\in H).
 $$
@@ -229,7 +229,7 @@ one has
 $$
 T(u_0)=1
 \qquad\text{and}\qquad
-\|u_0\|_H^2=\frac\pi4.
+\norm{u_0}_H^2=\frac\pi4.
 $$
 
 
@@ -242,7 +242,7 @@ $$
 Using polar coordinates,
 $$
 \begin{aligned}
-\|u_0\|_H^2
+\norm{u_0}_H^2
 &=
 \int_0^1\int_0^{2\pi}
 r^2\cos^2\theta\,r\,d\theta\,dr\\
@@ -263,7 +263,7 @@ $$
 Therefore
 $$
 \boxed{
-\|T\|
+\norm{T}
 =
 \frac2{\sqrt\pi}
 }.
@@ -274,7 +274,7 @@ $$
 
 Step [](#s1-5){.pf-ref} gives the upper bound. Step [](#s1-6){.pf-ref} gives
 $$
-\frac{|T(u_0)|}{\|u_0\|_H}
+\frac{\abs{T(u_0)}}{\norm{u_0}_H}
 =
 \frac1{\sqrt\pi/2}
 =

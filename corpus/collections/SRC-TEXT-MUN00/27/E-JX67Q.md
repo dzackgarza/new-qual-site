@@ -57,7 +57,7 @@ is closed in $[0,1]$. Therefore $C$ is compact.
 
 (d) Fix $x\in C$ and $\varepsilon>0$. Choose $n$ with $3^{-n}<\varepsilon$, and let $I_n$ be the component interval of $A_n$ containing $x$. One endpoint $e_n$ of $I_n$ is distinct from $x$ unless $x$ itself is that endpoint; in that case take the other endpoint. By (c), $e_n\in C$, and
 $$
-0<|e_n-x|\le 3^{-n}<\varepsilon.
+0<\abs{e_n-x}\le 3^{-n}<\varepsilon.
 $$
 Thus every neighborhood of $x$ contains another point of $C$, so $C$ has no isolated points.
 

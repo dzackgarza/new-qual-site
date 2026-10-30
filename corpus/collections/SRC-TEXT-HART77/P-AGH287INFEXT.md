@@ -54,7 +54,7 @@ The ringed space with structure sheaf $\OO_X\oplus\mcf$ and the given multiplica
 
 ::: pf-proof
 
-On an affine open $U=\Spec A\subseteq X$, write $\mcf|_U=\widetilde M$ for a finite $A$-module $M$.
+On an affine open $U=\Spec A\subseteq X$, write $\mcf\restrict_U=\widetilde M$ for a finite $A$-module $M$.
 Define the ring $A\oplus M$ with unit $(1,0)$ and multiplication
 $$
 (a,m)(b,n)=(ab,an+bm).
@@ -117,7 +117,7 @@ The resulting local inverses agree wherever both are defined, by uniqueness, and
 Consequently $s$ determines a ring map
 $$
 A_a\longrightarrow\Gamma(D(a),\OO_{X'}),\qquad
-b/a^q\longmapsto s(b)s(a)^{-q}|_{D(a)}.
+b/a^q\longmapsto s(b)s(a)^{-q}\restrict_{D(a)}.
 $$
 The universal property of localization gives well-definedness and compatibility with restrictions to smaller distinguished opens.
 Since these opens form a basis and $\OO_X(D(a))=A_a$, the maps glue to a sheaf homomorphism $\sigma$.

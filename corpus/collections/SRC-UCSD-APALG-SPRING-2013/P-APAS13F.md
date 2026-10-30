@@ -55,7 +55,7 @@ computed by the Murnaghan–Nakayama rule (or the hook-length formula for the de
 :::
 
 ::: pf-step
-Verification: $\sum_{\mu} |C_\mu|\, \chi^{(2,2,1)}(\mu)^2 = 25 + 10 + 15 + 20 + 20 + 30 + 0 = 120 = |S_5|$.
+Verification: $\sum_{\mu} \cardinality{C_\mu}\, \chi^{(2,2,1)}(\mu)^2 = 25 + 10 + 15 + 20 + 20 + 30 + 0 = 120 = \cardinality{S_5}$.
 
 ::: pf-proof
 first orthogonality relation, confirming step [](#chi-221-character-values){.pf-ref}.

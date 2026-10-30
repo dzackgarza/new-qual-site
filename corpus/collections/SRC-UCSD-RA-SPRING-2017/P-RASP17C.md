@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $(H, \langle \cdot | \cdot \rangle)$ be a Hilbert space, $\{e_n\}_{n=1}^\infty$ and $\{u_n\}_{n=1}^\infty$ be orthonormal bases for $H$, and $\{\lambda_n\}_{n=1}^\infty \subset \CC$ with $M := \sup_n |\lambda_n| < \infty$.
+Let $(H, \langle \cdot \diracbar \cdot \rangle)$ be a Hilbert space, $\{e_n\}_{n=1}^\infty$ and $\{u_n\}_{n=1}^\infty$ be orthonormal bases for $H$, and $\{\lambda_n\}_{n=1}^\infty \subset \CC$ with $M := \sup_n \abs{\lambda_n} < \infty$.
 
-1. Show $Th := \sum_{n=1}^\infty \lambda_n \langle h | e_n \rangle u_n$ exists in $H$ for all $h \in H$.
+1. Show $Th := \sum_{n=1}^\infty \lambda_n \langle h \diracbar e_n \rangle u_n$ exists in $H$ for all $h \in H$.
 
-2. Show $\|T\|_{op} \leq M < \infty$, where $\|T\|_{op}$ is the operator norm of $T$.
+2. Show $\norm{T}_{op} \leq M < \infty$, where $\norm{T}_{op}$ is the operator norm of $T$.
 
 3. Show $T$ is a compact operator if $\lim_{n \to \infty} \lambda_n = 0$.
 :::
@@ -42,7 +42,7 @@ Let $(H, \langle \cdot | \cdot \rangle)$ be a Hilbert space, $\{e_n\}_{n=1}^\inf
 ::: pf
 
 ::: {.pf-step #p1-s1}
-For $h \in H$, $\sum_n |\langle h | e_n \rangle|^2 = \|h\|^2 < \infty$ (Parseval).
+For $h \in H$, $\sum_n \abs{\langle h \diracbar e_n \rangle}^2 = \norm{h}^2 < \infty$ (Parseval).
 
 ::: pf-proof
 $\{e_n\}$ is an orthonormal basis.
@@ -51,7 +51,7 @@ $\{e_n\}$ is an orthonormal basis.
 :::
 
 ::: {.pf-step #p1-s2}
-The series $\sum_n \lambda_n \langle h | e_n \rangle u_n$ converges in $H$ iff $\sum_n |\lambda_n \langle h | e_n \rangle|^2 < \infty$.
+The series $\sum_n \lambda_n \langle h \diracbar e_n \rangle u_n$ converges in $H$ iff $\sum_n \abs{\lambda_n \langle h \diracbar e_n \rangle}^2 < \infty$.
 
 ::: pf-proof
 $\{u_n\}$ is orthonormal, so the series converges iff the sum of squares of coefficients converges.
@@ -60,16 +60,16 @@ $\{u_n\}$ is orthonormal, so the series converges iff the sum of squares of coef
 :::
 
 ::: {.pf-step #p1-s3}
-$\sum_n |\lambda_n \langle h | e_n \rangle|^2 \le M^2 \sum_n |\langle h | e_n \rangle|^2 = M^2 \|h\|^2 < \infty$.
+$\sum_n \abs{\lambda_n \langle h \diracbar e_n \rangle}^2 \le M^2 \sum_n \abs{\langle h \diracbar e_n \rangle}^2 = M^2 \norm{h}^2 < \infty$.
 
 ::: pf-proof
-step [](#p1-s1){.pf-ref} and $|\lambda_n| \le M$.
+step [](#p1-s1){.pf-ref} and $\abs{\lambda_n} \le M$.
 :::
 
 :::
 
 ::: {.pf-step #p1-s4}
-Hence $Th = \sum_n \lambda_n \langle h | e_n \rangle u_n$ exists in $H$ for all $h$.
+Hence $Th = \sum_n \lambda_n \langle h \diracbar e_n \rangle u_n$ exists in $H$ for all $h$.
 
 ::: pf-proof
 step [](#p1-s2){.pf-ref} and step [](#p1-s3){.pf-ref}.
@@ -84,7 +84,7 @@ step [](#p1-s2){.pf-ref} and step [](#p1-s3){.pf-ref}.
 ::: pf
 
 ::: {.pf-step #p2-s1}
-$\|Th\|^2 = \sum_n |\lambda_n \langle h | e_n \rangle|^2 \le M^2 \sum_n |\langle h | e_n \rangle|^2 = M^2 \|h\|^2$.
+$\norm{Th}^2 = \sum_n \abs{\lambda_n \langle h \diracbar e_n \rangle}^2 \le M^2 \sum_n \abs{\langle h \diracbar e_n \rangle}^2 = M^2 \norm{h}^2$.
 
 ::: pf-proof
 step [](#p1-s3){.pf-ref} (part 1) and Parseval.
@@ -93,7 +93,7 @@ step [](#p1-s3){.pf-ref} (part 1) and Parseval.
 :::
 
 ::: {.pf-step #p2-s2}
-Hence $\|T\|_{op} \le M < \infty$.
+Hence $\norm{T}_{op} \le M < \infty$.
 
 ::: pf-proof
 step [](#p2-s1){.pf-ref}.
@@ -108,7 +108,7 @@ step [](#p2-s1){.pf-ref}.
 ::: pf
 
 ::: {.pf-step #p3-s1}
-Define $T_N h = \sum_{n=1}^{N} \lambda_n \langle h | e_n \rangle u_n$.
+Define $T_N h = \sum_{n=1}^{N} \lambda_n \langle h \diracbar e_n \rangle u_n$.
 
 ::: pf-proof
 the finite-rank truncation.
@@ -126,16 +126,16 @@ step [](#p3-s1){.pf-ref}.
 :::
 
 ::: {.pf-step #p3-s3}
-$\|T - T_N\|_{op} \le \sup_{n > N} |\lambda_n|$.
+$\norm{T - T_N}_{op} \le \sup_{n > N} \abs{\lambda_n}$.
 
 ::: pf-proof
-$T - T_N$ is the diagonal operator with coefficients $\lambda_n$ for $n > N$ and $0$ for $n \le N$, so its operator norm is $\sup_{n > N} |\lambda_n|$ (by part 2).
+$T - T_N$ is the diagonal operator with coefficients $\lambda_n$ for $n > N$ and $0$ for $n \le N$, so its operator norm is $\sup_{n > N} \abs{\lambda_n}$ (by part 2).
 :::
 
 :::
 
 ::: {.pf-step #p3-s4}
-Since $\lambda_n \to 0$, $\sup_{n > N} |\lambda_n| \to 0$ as $N \to \infty$.
+Since $\lambda_n \to 0$, $\sup_{n > N} \abs{\lambda_n} \to 0$ as $N \to \infty$.
 
 ::: pf-proof
 hypothesis.
@@ -144,7 +144,7 @@ hypothesis.
 :::
 
 ::: {.pf-step #p3-s5}
-Hence $\|T - T_N\|_{op} \to 0$, so $T$ is the norm limit of finite-rank operators.
+Hence $\norm{T - T_N}_{op} \to 0$, so $T$ is the norm limit of finite-rank operators.
 
 ::: pf-proof
 step [](#p3-s3){.pf-ref} and step [](#p3-s4){.pf-ref}.

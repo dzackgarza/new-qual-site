@@ -30,7 +30,7 @@ Use the convention that the inner product is linear in its first argument and co
 
 The Cauchy--Schwarz inequality states that for all $x,y\in V$,
 $$
-\boxed{|\langle x,y\rangle|\le \|x\|\,\|y\|}.
+\boxed{\abs{\langle x,y\rangle}\le \norm{x}\,\norm{y}}.
 $$
 
 
@@ -55,7 +55,7 @@ $$
 $$
 and
 $$
-\|0\|=0,
+\norm{0}=0,
 $$
 so both sides of the inequality are zero.
 
@@ -94,11 +94,11 @@ $$
 
 If $y\ne0$, then
 $$
-\|x\|^2
+\norm{x}^2
 =
-\|x-\lambda y\|^2
+\norm{x-\lambda y}^2
 +
-\frac{|\langle x,y\rangle|^2}{\|y\|^2}.
+\frac{\abs{\langle x,y\rangle}^2}{\norm{y}^2}.
 $$
 
 
@@ -110,21 +110,21 @@ x=(x-\lambda y)+\lambda y
 $$
 is an orthogonal decomposition. Hence the Pythagorean identity gives
 $$
-\|x\|^2
+\norm{x}^2
 =
-\|x-\lambda y\|^2
+\norm{x-\lambda y}^2
 +
-\|\lambda y\|^2.
+\norm{\lambda y}^2.
 $$
 Also
 $$
-\|\lambda y\|^2
+\norm{\lambda y}^2
 =
-|\lambda|^2\|y\|^2
+\abs{\lambda}^2\norm{y}^2
 =
-\frac{|\langle x,y\rangle|^2}{\|y\|^4}\|y\|^2
+\frac{\abs{\langle x,y\rangle}^2}{\norm{y}^4}\norm{y}^2
 =
-\frac{|\langle x,y\rangle|^2}{\|y\|^2}.
+\frac{\abs{\langle x,y\rangle}^2}{\norm{y}^2}.
 $$
 
 :::
@@ -135,9 +135,9 @@ $$
 
 If $y\ne0$, then
 $$
-|\langle x,y\rangle|^2
+\abs{\langle x,y\rangle}^2
 \le
-\|x\|^2\|y\|^2.
+\norm{x}^2\norm{y}^2.
 $$
 
 
@@ -145,11 +145,11 @@ $$
 
 The first term on the right side of step [](#s1-4){.pf-ref} is nonnegative. Therefore
 $$
-\|x\|^2
+\norm{x}^2
 \ge
-\frac{|\langle x,y\rangle|^2}{\|y\|^2}.
+\frac{\abs{\langle x,y\rangle}^2}{\norm{y}^2}.
 $$
-Multiplying by $\|y\|^2>0$ gives the claim.
+Multiplying by $\norm{y}^2>0$ gives the claim.
 
 :::
 
@@ -159,9 +159,9 @@ Multiplying by $\|y\|^2>0$ gives the claim.
 
 For all $x,y\in V$,
 $$
-|\langle x,y\rangle|
+\abs{\langle x,y\rangle}
 \le
-\|x\|\,\|y\|.
+\norm{x}\,\norm{y}.
 $$
 
 
@@ -182,7 +182,7 @@ Equality holds if and only if $x$ and $y$ are linearly dependent.
 
 If $y=0$, the vectors are linearly dependent and equality holds by step [](#s1-2){.pf-ref}. Suppose $y\ne0$. By step [](#s1-4){.pf-ref}, equality in Cauchy--Schwarz holds exactly when
 $$
-\|x-\lambda y\|^2=0,
+\norm{x-\lambda y}^2=0,
 $$
 equivalently when
 $$

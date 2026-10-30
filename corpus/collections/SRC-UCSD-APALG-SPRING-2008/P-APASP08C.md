@@ -53,7 +53,7 @@ Part (a): Multiplicity of trivial representation equals number of orbits:
 ::: pf-step
 For any $g \in \Gamma$, the character value $\chi(g) = \operatorname{Tr}(\rho(g))$ of the permutation representation on $\CC[\mathcal{F}]$ equals the number of fixed points:
 $$
-\chi(g) = |\operatorname{Fix}(g)| = |\{f \in \mathcal{F} \mid g \cdot f = f\}|.
+\chi(g) = \cardinality{\operatorname{Fix}(g)} = \cardinality{\{f \in \mathcal{F} \mid g \cdot f = f\}}.
 $$
 
 ::: pf-proof
@@ -65,7 +65,7 @@ diagonal entries in the standard permutation basis are 1 for fixed points and 0 
 ::: pf-step
 The inner product with the trivial character $\mathbf{1}$ is:
 $$
-\langle \chi, \mathbf{1} \rangle = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} \chi(g) \cdot 1 = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} |\operatorname{Fix}(g)|.
+\langle \chi, \mathbf{1} \rangle = \frac{1}{\cardinality{\Gamma}} \sum_{g \in \Gamma} \chi(g) \cdot 1 = \frac{1}{\cardinality{\Gamma}} \sum_{g \in \Gamma} \cardinality{\operatorname{Fix}(g)}.
 $$
 
 ::: pf-proof
@@ -77,9 +77,9 @@ definition of character inner product.
 ::: pf-step
 By Burnside’s Lemma (Cauchy–Frobenius Lemma):
 $$
-\frac{1}{|\Gamma|} \sum_{g \in \Gamma} |\operatorname{Fix}(g)| = |\mathcal{F} / \Gamma| = \text{number of orbits of } \mathcal{F} \text{ under } \Gamma.
+\frac{1}{\cardinality{\Gamma}} \sum_{g \in \Gamma} \cardinality{\operatorname{Fix}(g)} = \cardinality{\mathcal{F} / \Gamma} = \text{number of orbits of } \mathcal{F} \text{ under } \Gamma.
 $$
-Thus the multiplicity of the trivial representation is $|\mathcal{F}/\Gamma|$.
+Thus the multiplicity of the trivial representation is $\cardinality{\mathcal{F}/\Gamma}$.
 
 ::: pf-proof
 Burnside's Lemma.
@@ -112,7 +112,7 @@ product of fixed point sets.
 ::: pf-step
 Thus the permutation character $\chi_{\mathcal{F} \times \mathcal{F}}$ satisfies:
 $$
-\chi_{\mathcal{F} \times \mathcal{F}}(g) = |\operatorname{Fix}_{\mathcal{F} \times \mathcal{F}}(g)| = |\operatorname{Fix}(g)|^2 = \chi(g)^2.
+\chi_{\mathcal{F} \times \mathcal{F}}(g) = \cardinality{\operatorname{Fix}_{\mathcal{F} \times \mathcal{F}}(g)} = \cardinality{\operatorname{Fix}(g)}^2 = \chi(g)^2.
 $$
 
 ::: pf-proof
@@ -125,7 +125,7 @@ cardinality of Cartesian product.
 Since $\chi(g)$ is integer-valued (hence real), $\overline{\chi(g)} = \chi(g)$.
 Applying step [](#part-a-multiplicity-equals-orbits){.pf-ref} to the action on $\mathcal{F} \times \mathcal{F}$:
 $$
-|(\mathcal{F} \times \mathcal{F}) / \Gamma| = \langle \chi_{\mathcal{F} \times \mathcal{F}}, \mathbf{1} \rangle = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} \chi(g)^2 = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} \chi(g) \overline{\chi(g)} = \langle \chi, \chi \rangle.
+\cardinality{(\mathcal{F} \times \mathcal{F}) / \Gamma} = \langle \chi_{\mathcal{F} \times \mathcal{F}}, \mathbf{1} \rangle = \frac{1}{\cardinality{\Gamma}} \sum_{g \in \Gamma} \chi(g)^2 = \frac{1}{\cardinality{\Gamma}} \sum_{g \in \Gamma} \chi(g) \overline{\chi(g)} = \langle \chi, \chi \rangle.
 $$
 
 ::: pf-proof
@@ -178,7 +178,7 @@ definition of double cosets $H \tau_i H$.
 
 ::: pf-step
 Since the double coset decomposition has $k$ distinct double cosets $\Gamma = \bigsqcup_{i=1}^k H \tau_i H$, there are exactly $k$ distinct $H$-orbits on $\mathcal{F}$.
-By step [](#double-coset-orbit-correspondence){.pf-ref} and part (b), $\langle \chi, \chi \rangle = |(\mathcal{F} \times \mathcal{F})/\Gamma| = k$.
+By step [](#double-coset-orbit-correspondence){.pf-ref} and part (b), $\langle \chi, \chi \rangle = \cardinality{(\mathcal{F} \times \mathcal{F})/\Gamma} = k$.
 
 ::: pf-proof
 Steps [](#double-coset-orbit-correspondence){.pf-ref} and [](#h-orbits-are-double-cosets){.pf-ref}.
@@ -192,7 +192,7 @@ Steps [](#double-coset-orbit-correspondence){.pf-ref} and [](#h-orbits-are-doubl
 
 ::: pf-qed
 Conclusion:
-$\langle \chi, \mathbf{1} \rangle = |\mathcal{F}/\Gamma|$, $\langle \chi, \chi \rangle = |(\mathcal{F}\times\mathcal{F})/\Gamma|$, and $\langle \chi, \chi \rangle = k$.
+$\langle \chi, \mathbf{1} \rangle = \cardinality{\mathcal{F}/\Gamma}$, $\langle \chi, \chi \rangle = \cardinality{(\mathcal{F}\times\mathcal{F})/\Gamma}$, and $\langle \chi, \chi \rangle = k$.
 
 Steps [](#part-a-multiplicity-equals-orbits){.pf-ref} through [](#part-c-inner-product-equals-k){.pf-ref}.
 :::

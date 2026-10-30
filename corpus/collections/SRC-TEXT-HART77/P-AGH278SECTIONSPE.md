@@ -50,7 +50,7 @@ $$
 ::: pf-proof
 
 On an affine open $V=\Spec A\subseteq X$ with a frame $e_0,\ldots,e_r$ for $\mce$, the symmetric algebra is $A[T_0,\ldots,T_r]$, with $T_i$ corresponding to $e_i$ in degree one.
-Thus $P|_V\cong\PP_V^r$.
+Thus $P\restrict_V\cong\PP_V^r$.
 Define the map there by $e_i\mapsto T_i$, where $T_i$ is the coordinate section of $\OO(1)$.
 On $D_+(T_i)$ this coordinate is a frame of $\OO(1)$, so the map is surjective.
 The maps on different frames agree: a change of frame in $\mce$ makes the identical linear change of degree-one elements in its symmetric algebra.
@@ -86,7 +86,7 @@ Every invertible quotient $q:\mce\twoheadrightarrow\mcl$ defines a unique sectio
 ::: pf-proof
 
 On a framed affine open $V$ as in step [](#s1){.pf-ref}, put $s_i=q(e_i)\in\Gamma(V,\mcl)$.
-These sections generate $\mcl|_V$.
+These sections generate $\mcl\restrict_V$.
 Let $V_i\subseteq V$ be the open subset where $s_i$ is a frame.
 On $V_i$, define the morphism to the chart $D_+(T_i)$ of $\PP_V^r$ by the coordinate ratios
 $$

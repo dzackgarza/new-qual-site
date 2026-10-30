@@ -24,7 +24,7 @@ audit:
 ::: {.exercise}
 12. Here we give another identity involving $\theta ^ { 4 }$ , which is equivalent to the four-squares theorem.
 
-(a) Show that for $| q | < 1$
+(a) Show that for $\abs{ q } < 1$
 
 $$
 \sum_ {n = 1} ^ {\infty} \frac {n q ^ {n}}{1 - q ^ {n}} = \sum_ {n = 1} ^ {\infty} \frac {q ^ {n}}{(1 - q ^ {n}) ^ {2}}.
@@ -48,7 +48,7 @@ $$
 :::
 
 ::: {.solution}
-For $|q|<1$, all series below converge absolutely. Using
+For $\abs{q}<1$, all series below converge absolutely. Using
 $$
 \frac{x}{(1-x)^2}=\sum_{k=1}^\infty kx^k,
 $$

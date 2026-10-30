@@ -117,12 +117,12 @@ One has
 $$
 \langle f,f\rangle
 =
-\int_{-1}^1|f(t)|^2\,dt
+\int_{-1}^1\abs{f(t)}^2\,dt
 \ge0.
 $$
 If the integral is zero, the continuous nonnegative function
 $$
-|f(t)|^2
+\abs{f(t)}^2
 $$
 must vanish identically on $[-1,1]$.
 Hence $f(t)=0$ for every $t$ in that interval.
@@ -216,14 +216,14 @@ Thus all distinct pairs are orthogonal.
 
 Their squared norms are
 $$
-\|p_0\|^2=2,
+\norm{p_0}^2=2,
 \qquad
-\|p_1\|^2=\frac23,
+\norm{p_1}^2=\frac23,
 $$
 $$
-\|p_2\|^2=\frac85,
+\norm{p_2}^2=\frac85,
 \qquad
-\|p_3\|^2=\frac87.
+\norm{p_3}^2=\frac87.
 $$
 
 
@@ -231,13 +231,13 @@ $$
 
 For $p_0$ and $p_1$,
 $$
-\|p_0\|^2
+\norm{p_0}^2
 =
 \int_{-1}^1 1\,dt
 =2,
 $$
 $$
-\|p_1\|^2
+\norm{p_1}^2
 =
 \int_{-1}^1t^2\,dt
 =
@@ -247,7 +247,7 @@ $$
 For $p_2$,
 $$
 \begin{aligned}
-\|p_2\|^2
+\norm{p_2}^2
 &=
 \int_{-1}^1(3t^2-1)^2\,dt\\
 &=
@@ -270,7 +270,7 @@ $$
 For $p_3$,
 $$
 \begin{aligned}
-\|p_3\|^2
+\norm{p_3}^2
 &=
 \int_{-1}^1(5t^3-3t)^2\,dt\\
 &=

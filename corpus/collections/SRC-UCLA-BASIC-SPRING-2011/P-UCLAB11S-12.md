@@ -15,7 +15,7 @@ audit:
 ::: {.problem}
 Let $0<c<1$ and let $M=C([0,c])$ with the uniform metric
 $$
-d(f,g)=\sup_{0\le t\le c}|f(t)-g(t)|.
+d(f,g)=\sup_{0\le t\le c}\abs{f(t)-g(t)}.
 $$
 Define
 $$
@@ -79,20 +79,20 @@ $$
 
 Given $\varepsilon>0$, choose $N$ such that
 $$
-\|f_n-f_m\|_\infty<\varepsilon
+\norm{f_n-f_m}_\infty<\varepsilon
 $$
 for all $m,n\ge N$.
 Fix $n\ge N$ and let $m\to\infty$ pointwise.
 Then
 $$
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 \le
 \varepsilon
 $$
 for every $x$.
 Hence
 $$
-\|f_n-f\|_\infty\le\varepsilon.
+\norm{f_n-f}_\infty\le\varepsilon.
 $$
 Thus $f_n\to f$ uniformly.
 The uniform limit of continuous functions is continuous, so
@@ -145,9 +145,9 @@ f,g\in M,
 $$
 one has
 $$
-\|Tf-Tg\|_\infty
+\norm{Tf-Tg}_\infty
 \le
-c\|f-g\|_\infty.
+c\norm{f-g}_\infty.
 $$
 
 ::: pf-proof
@@ -158,17 +158,17 @@ x\in[0,c],
 $$
 $$
 \begin{aligned}
-|(Tf)(x)-(Tg)(x)|
+\abs{(Tf)(x)-(Tg)(x)}
 &=
-\left|
+\abs{
 \int_0^x(f(t)-g(t))\,dt
-\right|\\
+}\\
 &\le
-\int_0^x|f(t)-g(t)|\,dt\\
+\int_0^x\abs{f(t)-g(t)}\,dt\\
 &\le
-x\|f-g\|_\infty\\
+x\norm{f-g}_\infty\\
 &\le
-c\|f-g\|_\infty.
+c\norm{f-g}_\infty.
 \end{aligned}
 $$
 Taking the supremum over $x$ gives the claim.

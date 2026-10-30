@@ -40,7 +40,7 @@ No credit if reason is missing or incorrect.
 
 (e) If $\alpha > 0$ and $\{f_n\}$ a sequence of functions on $[0,1]$ for which
 $$
-|f_n(x) - f_n(y)| \leq |x - y|^\alpha \quad \text{and} \quad f_n(0) = 0 \;\forall n,\; \forall x, y \in [0,1],
+\abs{f_n(x) - f_n(y)} \leq \abs{x - y}^\alpha \quad \text{and} \quad f_n(0) = 0 \;\forall n,\; \forall x, y \in [0,1],
 $$
 then there exists a subsequence $\{f_{n_j}\}$ that converges uniformly on $[0,1]$.
 :::
@@ -65,7 +65,7 @@ f:=\sum_{n=1}^\infty \phi_n.
 $$
 Then $f$ is continuous and
 $$
-\int_{\RR}|f(x)|\,dx
+\int_{\RR}\abs{f(x)}\,dx
 =\sum_{n=1}^\infty \int\phi_n
 =\sum_{n=1}^\infty 2^{-n-2}<\infty.
 $$
@@ -87,18 +87,18 @@ Part (b) is true.
 
 For $y>x$,
 $$
-|f(y)-f(x)|
-\le \int_x^y |f'(t)|\,dt.
+\abs{f(y)-f(x)}
+\le \int_x^y \abs{f'(t)}\,dt.
 $$
 Since $f'\in L^1(\RR)$, the right-hand side is uniformly small when $x,y$ are sufficiently large. Hence $f(x)$ has a finite limit $L$ as $x\to\infty$.
 
 If $L\ne0$, then for sufficiently large $x$,
 $$
-|f(x)|\ge \frac{|L|}{2},
+\abs{f(x)}\ge \frac{\abs{L}}{2},
 $$
 which would force
 $$
-\int_{\RR}|f|=\infty.
+\int_{\RR}\abs{f}=\infty.
 $$
 Since $f\in L^1$, necessarily
 $$
@@ -125,7 +125,7 @@ f_n:=\mathbf1_{I_n}.
 $$
 At level $k$, every such interval has length $2^{-k}$, so
 $$
-\|f_n\|_1\longrightarrow0.
+\norm{f_n}_1\longrightarrow0.
 $$
 Thus $f_n\to0$ in $L^1([0,1])$.
 
@@ -175,11 +175,11 @@ Part (e) is true.
 
 Taking $y=0$ gives
 $$
-|f_n(x)|=|f_n(x)-f_n(0)|\le |x|^\alpha\le1,
+\abs{f_n(x)}=\abs{f_n(x)-f_n(0)}\le \abs{x}^\alpha\le1,
 $$
 so the family is uniformly bounded. The common Hölder estimate
 $$
-|f_n(x)-f_n(y)|\le |x-y|^\alpha
+\abs{f_n(x)-f_n(y)}\le \abs{x-y}^\alpha
 $$
 makes it equicontinuous on the compact interval $[0,1]$.
 

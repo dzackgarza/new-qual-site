@@ -53,7 +53,7 @@ subgroup is normal if and only if it is the unique Sylow subgroup for
 its prime: conjugacy proves one implication, and conjugation
 preserves subgroup order for the other.
 
-For the remaining parts, let $|G|=105=3\cdot5\cdot7$.
+For the remaining parts, let $\cardinality{G}=105=3\cdot5\cdot7$.
 
 :::
 
@@ -93,7 +93,7 @@ There is a normal subgroup $N\lhd G$ of order $35$.
 ::: pf-proof
 
 Choose a normal Sylow subgroup $P$ supplied by step [](#s2){.pf-ref}, and write
-$|P|=p$ and $\{p,q\}=\{5,7\}$. Then $|G/P|=3q$. The number of
+$\cardinality{P}=p$ and $\{p,q\}=\{5,7\}$. Then $\cardinality{G/P}=3q$. The number of
 Sylow $q$-subgroups of $G/P$ divides $3$ and is $1$ modulo $q$.
 Since $q\geq5$, this number is $1$. Let $\overline Q$ be that unique,
 and therefore normal, subgroup of order $q$.
@@ -103,7 +103,7 @@ $N=\rho^{-1}(\overline Q)$. If $g\in G$ and $n\in N$, normality
 of $\overline Q$ gives
 $\rho(gng^{-1})\in\overline Q$, so $N\lhd G$.
 The restriction $N\to\overline Q$ is surjective with kernel $P$;
-its fibers are the cosets of $P$. Hence $|N|=pq=35$.
+its fibers are the cosets of $P$. Hence $\cardinality{N}=pq=35$.
 
 :::
 

@@ -129,7 +129,7 @@ Write out the first terms of the series in step [](#s1-3){.pf-ref}.
 The region of convergence is
 $$
 \boxed{
-0<|z-1|<\infty.
+0<\abs{z-1}<\infty.
 }
 $$
 

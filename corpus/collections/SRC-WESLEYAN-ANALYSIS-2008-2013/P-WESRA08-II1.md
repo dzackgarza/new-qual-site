@@ -33,20 +33,20 @@ is a countable union of sets of finite measure.
 ::: {.solution}
 For $n\ge1$, set
 $$
-E_n:=\{x\in X:|f(x)|\ge 1/n\}.
+E_n:=\{x\in X:\abs{f(x)}\ge 1/n\}.
 $$
 Then each $E_n$ is measurable and
 $$
 \frac1n\mu(E_n)
-\le \int_{E_n}|f|\,d\mu
-\le \|f\|_1<\infty.
+\le \int_{E_n}\abs{f}\,d\mu
+\le \norm{f}_1<\infty.
 $$
 Hence
 $$
-\mu(E_n)\le n\|f\|_1<\infty.
+\mu(E_n)\le n\norm{f}_1<\infty.
 $$
 
-If $f(x)\ne0$, then $|f(x)|>1/n$ for some sufficiently large $n$, so $x\in E_n$.
+If $f(x)\ne0$, then $\abs{f(x)}>1/n$ for some sufficiently large $n$, so $x\in E_n$.
 Conversely every $E_n$ is contained in the nonzero set.
 Therefore
 $$

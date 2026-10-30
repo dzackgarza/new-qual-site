@@ -28,7 +28,7 @@ If a map $f:S^n\to S^n$ has no fixed point, then it is homotopic to the antipoda
 
 ::: pf-proof
 The normalized straight-line homotopy
-$$H_t(x)=\frac{(1-t)f(x)-tx}{\|(1-t)f(x)-tx\|}$$
+$$H_t(x)=\frac{(1-t)f(x)-tx}{\norm{(1-t)f(x)-tx}}$$
 is well-defined: the denominator could vanish only when $f(x)=x$. At $t=0$ it is $f$ and at $t=1$ it is $-x$.
 :::
 
@@ -49,7 +49,7 @@ If also $f(x)\ne-x$ for every $x$, then $f$ is homotopic to the identity.
 
 ::: pf-proof
 Now use
-$$K_t(x)=\frac{(1-t)f(x)+tx}{\|(1-t)f(x)+tx\|}.$$
+$$K_t(x)=\frac{(1-t)f(x)+tx}{\norm{(1-t)f(x)+tx}}.$$
 Its denominator could vanish only if $f(x)=-x$. Thus it gives a homotopy from $f$ to $\operatorname{id}$.
 :::
 

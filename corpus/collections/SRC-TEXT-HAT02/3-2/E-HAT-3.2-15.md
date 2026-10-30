@@ -84,7 +84,7 @@ $$
 For Exercise 14, let $X$ be the pushout built from $\RP^\infty$ and $\CP^n$. If $\operatorname{char}F=2$, the ring description
 $$
 H^*(X;F)\cong F[\alpha,\beta]/(\beta^2-\alpha^{2n+1}),
-\qquad |\alpha|=2,\ |\beta|=2n+1,
+\qquad \gradeddegree{\alpha}=2,\ \gradeddegree{\beta}=2n+1,
 $$
 shows that it is free as an $F[\alpha]$-module on $1,\beta$. Hence
 $$

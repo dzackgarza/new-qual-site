@@ -29,7 +29,7 @@ Use Rouche's theorem to show that there exists a neighborhood $U$ of $0$ such th
 and suppose $f$ and $g$ are holomorphic on a neighborhood of $C$ and its
 interior. If
 $$
-|g(z)|<|f(z)|\qquad(z\in C),
+\abs{g(z)}<\abs{f(z)}\qquad(z\in C),
 $$
 then $f$ and $f+g$ have the same number of zeros inside $C$, counted with
 multiplicity.
@@ -43,12 +43,12 @@ f(z)=az+z\varepsilon(z),
 $$
 Choose $r>0$ so small that $f$ is holomorphic on $\overline{B(0,r)}$ and
 $$
-|\varepsilon(z)|<\frac{|a|}{2}
-\qquad (|z|\le r).
+\abs{\varepsilon(z)}<\frac{\abs{a}}{2}
+\qquad (\abs{z}\le r).
 $$
-Then on $|z|=r$,
+Then on $\abs{z}=r$,
 $$
-|f(z)-az|=|z\varepsilon(z)|<|az|.
+\abs{f(z)-az}=\abs{z\varepsilon(z)}<\abs{az}.
 $$
 Rouché's theorem shows that $f$ and $az$ have the same number of zeros in
 $B(0,r)$, namely one, counted with multiplicity. Thus $0$ is the unique zero of
@@ -56,8 +56,8 @@ $f$ in this disk.
 
 To prove injectivity, shrink $r$ if necessary so that
 $$
-|f'(z)-a|<\frac{|a|}{2}
-\qquad (|z|<r).
+\abs{f'(z)-a}<\frac{\abs{a}}{2}
+\qquad (\abs{z}<r).
 $$
 For distinct $z,w\in B(0,r)$, the line segment joining them lies in the disk,
 and
@@ -66,8 +66,8 @@ f(z)-f(w)=\int_0^1 f'(w+t(z-w))(z-w)\,dt.
 $$
 Hence
 $$
-\left|\frac{f(z)-f(w)}{z-w}-a\right|
-\le \frac{|a|}{2},
+\abs{\frac{f(z)-f(w)}{z-w}-a}
+\le \frac{\abs{a}}{2},
 $$
 so $(f(z)-f(w))/(z-w)\ne0$ and therefore $f(z)\ne f(w)$. Thus $f$ is injective
 on $U=B(0,r)$. Since a nonconstant holomorphic map is open, it is a bijection

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \alpha \frac { e ^ { - \mu r } } { r }$ , where $r = | \vec { r } |$ $\vec { r } \in \RR ^ { 3 }$ , and α and µ are constants.
+Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \alpha \frac { e ^ { - \mu r } } { r }$ , where $r = \norm{ \vec { r } }$ $\vec { r } \in \RR ^ { 3 }$ , and α and µ are constants.
 :::
 
 ::: {.remark}
@@ -37,7 +37,7 @@ For an ordinary absolutely convergent Fourier integral, assume $\mu>0$.
 
 Put
 $$
-k=|\vec k|.
+k=\norm{\vec k}.
 $$
 
 ::: pf

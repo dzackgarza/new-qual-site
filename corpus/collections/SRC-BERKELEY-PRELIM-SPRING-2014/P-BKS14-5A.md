@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g$ be meromorphic on $\CC$ and suppose $|f(z)|\le |g(z)|$ at every point where both are defined.
+Let $f,g$ be meromorphic on $\CC$ and suppose $\abs{f(z)}\le \abs{g(z)}$ at every point where both are defined.
 Show that there is $c\in\CC$ such that $f(z)=c\,g(z)$ wherever both are defined.
 :::
 

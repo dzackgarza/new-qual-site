@@ -27,7 +27,7 @@ audit:
 Suppose that $\{u_n\}_{n=1}^{\infty}$ is an orthonormal subset of a Hilbert space $H$, and $S$ is a dense subset of $H$.
 Show $\{u_n\}_{n=1}^{\infty}$ is an orthonormal basis for $H$ if
 $$
-\|f\|_H^2 = \sum_{n=1}^{\infty} |\langle f | u_n \rangle|^2 \quad \text{for all } f \in S.
+\norm{f}_H^2 = \sum_{n=1}^{\infty} \abs{\langle f \diracbar u_n \rangle}^2 \quad \text{for all } f \in S.
 $$
 :::
 
@@ -51,8 +51,8 @@ P_Mf=\sum_{n=1}^\infty \langle f,u_n\rangle u_n
 $$
 with convergence in $H$. Hence Parseval's identity inside the Hilbert space $M$ gives
 $$
-\|P_Mf\|_H^2
-=\sum_{n=1}^\infty |\langle f,u_n\rangle|^2.
+\norm{P_Mf}_H^2
+=\sum_{n=1}^\infty \abs{\langle f,u_n\rangle}^2.
 $$
 
 :::
@@ -67,7 +67,7 @@ Use the assumed identity on the dense set.
 
 For every $f\in S$, the hypothesis and Step 1 give
 $$
-\|f\|_H^2=\|P_Mf\|_H^2.
+\norm{f}_H^2=\norm{P_Mf}_H^2.
 $$
 Since
 $$
@@ -75,7 +75,7 @@ f=P_Mf+(f-P_Mf)
 $$
 is an orthogonal decomposition,
 $$
-\|f\|_H^2=\|P_Mf\|_H^2+\|f-P_Mf\|_H^2.
+\norm{f}_H^2=\norm{P_Mf}_H^2+\norm{f-P_Mf}_H^2.
 $$
 Therefore $f=P_Mf$, so every $f\in S$ belongs to $M$.
 

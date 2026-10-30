@@ -27,7 +27,7 @@ f(z)=\sum_{n=0}^{\infty}a_nz^n
 $$
 be analytic in the unit disk. Assume $a_1\ne0$ and
 $$
-\sum_{n=2}^{\infty}n|a_n|\le |a_1|.
+\sum_{n=2}^{\infty}n\abs{a_n}\le \abs{a_1}.
 $$
 Prove that $f$ is injective.
 :::
@@ -59,7 +59,7 @@ z^n-w^n
 $$
 The coefficient hypothesis implies
 $$
-\sum_{n=2}^{\infty}|a_n|<\infty.
+\sum_{n=2}^{\infty}\abs{a_n}<\infty.
 $$
 Thus, for fixed $z,w$ in the unit disk, the relevant power series are
 absolutely convergent and the identity may be applied term by term to
@@ -73,26 +73,26 @@ $f(z)-f(w)$. The $n=0$ terms cancel, giving the displayed formula.
 
 Put
 $$
-r\coloneqq\max\{|z|,|w|\}<1.
+r\coloneqq\max\{\abs{z},\abs{w}\}<1.
 $$
 Then the higher-order part in step [](#s1){.pf-ref} satisfies
 $$
-\left|
+\abs{
 \sum_{n=2}^{\infty}
 a_n
 \sum_{j=0}^{n-1}z^{n-1-j}w^j
-\right|
+}
 <
-|a_1|.
+\abs{a_1}.
 $$
 
 ::: pf-proof
 
 For $n\ge2$,
 $$
-\left|
+\abs{
 \sum_{j=0}^{n-1}z^{n-1-j}w^j
-\right|
+}
 \le
 nr^{n-1}
 \le
@@ -101,17 +101,17 @@ $$
 Hence
 $$
 \begin{aligned}
-\left|
+\abs{
 \sum_{n=2}^{\infty}
 a_n
 \sum_{j=0}^{n-1}z^{n-1-j}w^j
-\right|
+}
 &\le
-r\sum_{n=2}^{\infty}n|a_n|\\
+r\sum_{n=2}^{\infty}n\abs{a_n}\\
 &\le
-r|a_1|\\
+r\abs{a_1}\\
 &<
-|a_1|,
+\abs{a_1},
 \end{aligned}
 $$
 because $r<1$ and $a_1\ne0$.
@@ -131,17 +131,17 @@ $$
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} and the reverse triangle inequality,
 $$
-\left|
+\abs{
 \frac{f(z)-f(w)}{z-w}
-\right|
+}
 \ge
-|a_1|
+\abs{a_1}
 -
-\left|
+\abs{
 \sum_{n=2}^{\infty}
 a_n
 \sum_{j=0}^{n-1}z^{n-1-j}w^j
-\right|
+}
 >
 0.
 $$

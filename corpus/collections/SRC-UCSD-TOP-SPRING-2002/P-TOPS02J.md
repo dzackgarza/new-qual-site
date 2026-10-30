@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be connected and locally path-connected, let $p : E \to X$ be a covering space and let $C \subset E$ be a connected component of $E$.
-Prove $p|_C : C \to X$ is also a covering space.
+Prove $p\restrict_C : C \to X$ is also a covering space.
 :::
 
 ::: {.solution}
@@ -65,7 +65,7 @@ $X$ is connected and locally path-connected, hence path-connected. Fix $c_0 \in 
 
 ::: pf-qed
 
-$C$ is open in $E$: for $c \in C$, the sheet over a neighborhood $U$ of $p(c)$ as in step [](#good-nbhd){.pf-ref} that contains $c$ lies in $C$ by step [](#sheets-in-c){.pf-ref}. By step [](#sheets-in-c){.pf-ref}, $(p|_C)^{-1}(U)$ is a disjoint union of open subsets of $C$ each mapped homeomorphically onto $U$, for every such $U$, and by step [](#onto){.pf-ref} this union is nonempty. These $U$ cover $X$, so $p|_C$ is a covering map.
+$C$ is open in $E$: for $c \in C$, the sheet over a neighborhood $U$ of $p(c)$ as in step [](#good-nbhd){.pf-ref} that contains $c$ lies in $C$ by step [](#sheets-in-c){.pf-ref}. By step [](#sheets-in-c){.pf-ref}, $(p\restrict_C)^{-1}(U)$ is a disjoint union of open subsets of $C$ each mapped homeomorphically onto $U$, for every such $U$, and by step [](#onto){.pf-ref} this union is nonempty. These $U$ cover $X$, so $p\restrict_C$ is a covering map.
 
 :::
 

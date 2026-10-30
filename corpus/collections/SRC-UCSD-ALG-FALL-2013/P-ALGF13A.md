@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF13A
 kind: problem
-title: Centralizer meet $\Omega$ and $p$ dividing $|\Omega|$ for $g^p=1$
+title: Centralizer meet $\Omega$ and $p$ dividing $\cardinality{\Omega}$ for $g^p=1$
 classification:
   areas:
   - algebra
@@ -19,13 +19,13 @@ audit:
 
 ::: {.problem}
 Let $G$ be a finite group.
-Let $p$ be a prime factor of the order $|G|$ of $G$.
+Let $p$ be a prime factor of the order $\cardinality{G}$ of $G$.
 Let $\Omega = \{g \in G \mid g^p = 1\}$ and let $P$ be a Sylow $p$-subgroup of $G$.
 
 (a) Prove that $C_G(P) \cap \Omega$ is a nontrivial $p$-subgroup of $P$.
 (Hint: Consider $P\langle g\rangle$ for $g \in C_G(P) \cap \Omega$.)
 
-(b) Prove that $p$ divides $|\Omega|$.
+(b) Prove that $p$ divides $\cardinality{\Omega}$.
 (Hint: Use the fact that $P$ acts on $\Omega$ by conjugation.)
 :::
 
@@ -67,7 +67,7 @@ since $g \in C_G(P)$, $\langle g \rangle$ normalizes $P$ (in fact centralizes $P
 :::
 
 ::: {.pf-step #s1-4}
-The order of $H$ is $|H| = \frac{|P| |\langle g\rangle|}{|P \cap \langle g\rangle|}$.
+The order of $H$ is $\cardinality{H} = \frac{\cardinality{P} \cardinality{\langle g\rangle}}{\cardinality{P \cap \langle g\rangle}}$.
 
 ::: pf-proof
 product formula for subgroups.
@@ -76,7 +76,7 @@ product formula for subgroups.
 :::
 
 ::: pf-step
-Since $|P| = p^a$ and $|\langle g\rangle| \in \{1, p\}$, $|H|$ is a power of $p$, so $H$ is a $p$-subgroup of $G$.
+Since $\cardinality{P} = p^a$ and $\cardinality{\langle g\rangle} \in \{1, p\}$, $\cardinality{H}$ is a power of $p$, so $H$ is a $p$-subgroup of $G$.
 
 ::: pf-proof
 step [](#s1-4){.pf-ref}.
@@ -130,7 +130,7 @@ $Z(P)$ is an abelian group, so the map $z \mapsto z^p$ is a homomorphism whose k
 :::
 
 ::: pf-step
-Since $p \mid |G|$, $P$ is non-trivial ($|P| = p^a \ge p$), so the center $Z(P)$ is non-trivial ($|Z(P)| \ge p$).
+Since $p \mid \cardinality{G}$, $P$ is non-trivial ($\cardinality{P} = p^a \ge p$), so the center $Z(P)$ is non-trivial ($\cardinality{Z(P)} \ge p$).
 
 ::: pf-proof
 non-trivial $p$-groups have non-trivial centers.
@@ -142,7 +142,7 @@ non-trivial $p$-groups have non-trivial centers.
 By Cauchy's Theorem for abelian groups, $Z(P)$ contains an element of order $p$.
 
 ::: pf-proof
-$p$ divides $|Z(P)|$.
+$p$ divides $\cardinality{Z(P)}$.
 :::
 
 :::
@@ -214,13 +214,13 @@ definition of centralizer.
 Since $P$ is a $p$-group, the size of every non-trivial orbit is a multiple of $p$.
 
 ::: pf-proof
-Orbit–Stabilizer Theorem: $|\operatorname{Orb}(g)| = [P : \operatorname{Stab}_P(g)]$, which divides $|P| = p^a$.
+Orbit–Stabilizer Theorem: $\cardinality{\operatorname{Orb}(g)} = [P : \operatorname{Stab}_P(g)]$, which divides $\cardinality{P} = p^a$.
 :::
 
 :::
 
 ::: {.pf-step #s4-3}
-Thus $|\Omega| \equiv |\Omega^P| \pmod p$.
+Thus $\cardinality{\Omega} \equiv \cardinality{\Omega^P} \pmod p$.
 
 ::: pf-proof
 partition of $\Omega$ into orbits.
@@ -233,7 +233,7 @@ partition of $\Omega$ into orbits.
 :::
 
 ::: {.pf-step #s5}
-Determine $|\Omega^P| \pmod p$:
+Determine $\cardinality{\Omega^P} \pmod p$:
 
 ::: pf-proof
 
@@ -247,7 +247,7 @@ step [](#s2){.pf-ref}.
 :::
 
 ::: pf-step
-Thus $|\Omega^P| = p^k$ for some integer $k \ge 1$.
+Thus $\cardinality{\Omega^P} = p^k$ for some integer $k \ge 1$.
 
 ::: pf-proof
 order of an elementary abelian $p$-group is $p^k$.
@@ -256,7 +256,7 @@ order of an elementary abelian $p$-group is $p^k$.
 :::
 
 ::: pf-step
-In particular, $|\Omega^P| \equiv 0 \pmod p$.
+In particular, $\cardinality{\Omega^P} \equiv 0 \pmod p$.
 
 ::: pf-proof
 $k \ge 1 \implies p \mid p^k$.
@@ -269,7 +269,7 @@ $k \ge 1 \implies p \mid p^k$.
 :::
 
 ::: pf-step
-Conclusion: $|\Omega| \equiv |\Omega^P| \equiv 0 \pmod p$, so $p$ divides $|\Omega|$.
+Conclusion: $\cardinality{\Omega} \equiv \cardinality{\Omega^P} \equiv 0 \pmod p$, so $p$ divides $\cardinality{\Omega}$.
 
 ::: pf-proof
 step [](#s4-3){.pf-ref} and step [](#s5){.pf-ref}.

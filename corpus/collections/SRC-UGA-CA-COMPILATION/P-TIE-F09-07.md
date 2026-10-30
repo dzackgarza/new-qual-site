@@ -104,7 +104,7 @@ M=\max_{s\in K}\Re s.
 $$
 For $0<t\le1$ and $s\in K$,
 $$
-|e^{-t}t^{s-1}|
+\abs{e^{-t}t^{s-1}}
 \le
 t^{\delta-1},
 $$
@@ -114,7 +114,7 @@ $$
 $$
 For $t\ge1$ and $s\in K$,
 $$
-|e^{-t}t^{s-1}|
+\abs{e^{-t}t^{s-1}}
 \le
 e^{-t}t^{M-1},
 $$

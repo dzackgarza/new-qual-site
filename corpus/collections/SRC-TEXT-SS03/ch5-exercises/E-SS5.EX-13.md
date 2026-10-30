@@ -44,12 +44,12 @@ F(x)=e^x-x\sim -x\qquad(x\to-\infty),
 $$
 so
 $$
-\log|F(x)|=\log|x|+o(1).
+\log\abs{F(x)}=\log\abs{x}+o(1).
 \tag{1}
 $$
 If $m=\deg Q$, the factorization gives
 $$
-\log|F(x)|=(\Re a)x+m\log|x|+O(1).
+\log\abs{F(x)}=(\Re a)x+m\log\abs{x}+O(1).
 \tag{2}
 $$
 Comparing (1) and (2) forces
@@ -66,12 +66,12 @@ F(x)=e^x-x\sim e^x,
 $$
 so
 $$
-\log|F(x)|=x+o(1).
+\log\abs{F(x)}=x+o(1).
 \tag{4}
 $$
 But (2) and (3) give only
 $$
-\log|F(x)|=\log x+O(1),
+\log\abs{F(x)}=\log x+O(1),
 $$
 contradicting (4). Therefore $e^z-z$ has infinitely many zeros in $\CC$.
 :::

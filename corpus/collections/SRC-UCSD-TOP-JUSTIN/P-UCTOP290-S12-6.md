@@ -93,7 +93,7 @@ Consequently $\CP^n$ cannot be covered by fewer than $n+1$ contractible open set
 
 In
 $$
-H^*(\CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1}),\qquad |\alpha|=2,
+H^*(\CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1}),\qquad \gradeddegree{\alpha}=2,
 $$
 the $n$-fold product $\alpha^n$ is nonzero. If $\CP^n$ were covered by $n$ contractible open sets, step [](#s4){.pf-ref} would force $\alpha^n=0$.
 
@@ -109,7 +109,7 @@ Likewise $\RP^n$ cannot be covered by fewer than $n+1$ contractible open sets.
 
 Use mod-$2$ cohomology
 $$
-H^*(\RP^n;\FF_2)=\FF_2[\beta]/(\beta^{n+1}),\qquad |\beta|=1,
+H^*(\RP^n;\FF_2)=\FF_2[\beta]/(\beta^{n+1}),\qquad \gradeddegree{\beta}=1,
 $$
 for which $\beta^n\ne0$.
 

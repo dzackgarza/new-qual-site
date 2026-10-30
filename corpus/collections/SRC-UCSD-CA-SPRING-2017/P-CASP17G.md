@@ -35,7 +35,7 @@ $$
 all simple. Since $z_k\asymp k^2$, the exponent of convergence of the zeros
 is $1/2$, and
 $$
-\sum_k\frac1{|z_k|}<\infty.
+\sum_k\frac1{\abs{z_k}}<\infty.
 $$
 Thus the canonical product has rank $0$ and genus $0$:
 $$

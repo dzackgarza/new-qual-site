@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5R3FT
 kind: problem
-title: Unique fixed point of $ce^z$ on $\{\operatorname{Re} z<1\}$ when $|c|<1/3$
+title: Unique fixed point of $ce^z$ on $\{\operatorname{Re} z<1\}$ when $\abs{c}<1/3$
 classification:
   areas:
   - complex-analysis
@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $c \in \CC$ with $|c| < \frac{1}{3}$. Show that on the open half-plane
+Let $c \in \CC$ with $\abs{c} < \frac{1}{3}$. Show that on the open half-plane
 $$
 \Omega = \{z \in \CC \mid \operatorname{Re}(z) < 1\},
 $$
@@ -38,9 +38,9 @@ Every zero of $g$ in $\Omega$ lies in the open unit disk.
 
 If $g(z)=0$ and $\Re z<1$, then
 $$
-|z|=|ce^z|=|c|e^{\Re z}<\frac13e<1,
+\abs{z}=\abs{ce^z}=\abs{c}e^{\Re z}<\frac13e<1,
 $$
-because $e<3$. Hence every fixed point in $\Omega$ satisfies $|z|<1$.
+because $e<3$. Hence every fixed point in $\Omega$ satisfies $\abs{z}<1$.
 
 :::
 
@@ -50,18 +50,18 @@ because $e<3$. Hence every fixed point in $\Omega$ satisfies $|z|<1$.
 
 For every $R>1$, define
 $$
-\Omega_R=\{z:|z|<R,\ \Re z<1\}.
+\Omega_R=\{z:\abs{z}<R,\ \Re z<1\}.
 $$
 On $\partial\Omega_R$ one has
 $$
-|ce^z|<|z|.
+\abs{ce^z}<\abs{z}.
 $$
 
 ::: pf-proof
 
 The boundary consists of the vertical segment
 $$
-L_R=\{1+it:|t|\le\sqrt{R^2-1}\}
+L_R=\{1+it:\abs{t}\le\sqrt{R^2-1}\}
 $$
 and the circular arc
 $$
@@ -70,11 +70,11 @@ $$
 
 If $z\in L_R$, then
 $$
-|ce^z|=|c|e<\frac e3<1\le|z|.
+\abs{ce^z}=\abs{c}e<\frac e3<1\le\abs{z}.
 $$
-If $z\in C_R$, then $\Re z\le1$ and $|z|=R>1$, so
+If $z\in C_R$, then $\Re z\le1$ and $\abs{z}=R>1$, so
 $$
-|ce^z|=|c|e^{\Re z}\le|c|e<\frac e3<1<R=|z|.
+\abs{ce^z}=\abs{c}e^{\Re z}\le\abs{c}e<\frac e3<1<R=\abs{z}.
 $$
 Thus the strict inequality holds everywhere on the boundary.
 
@@ -91,7 +91,7 @@ multiplicity.
 
 On $\partial\Omega_R$, step [](#s2){.pf-ref} gives
 $$
-|ce^z|<|-z|.
+\abs{ce^z}<\abs{-z}.
 $$
 Rouché's theorem therefore implies that
 $$
@@ -113,7 +113,7 @@ $\Omega$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, every zero of $g$ in $\Omega$ lies in $|z|<1$. Therefore
+By step [](#s1){.pf-ref}, every zero of $g$ in $\Omega$ lies in $\abs{z}<1$. Therefore
 every such zero lies in $\Omega_R$ for every $R>1$. Step [](#s3){.pf-ref} shows that
 there is exactly one zero in each $\Omega_R$, counted with multiplicity.
 Hence there is exactly one zero in $\Omega$.

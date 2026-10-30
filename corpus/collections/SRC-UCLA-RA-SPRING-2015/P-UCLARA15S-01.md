@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-01
 kind: problem
-title: Partition sums $\sum_k\bigl|\int_{k/n}^{(k+1)/n}f\bigr|$ converge to $\|f\|_1$
+title: Partition sums $\sum_k\abs{\int_{k/n}^{(k+1)/n}f}$ converge to $\norm{f}_1$
 classification:
   areas:
   - real-analysis
@@ -20,7 +20,7 @@ audit:
 Let $f\in L^1(\RR)$.
 Show that
 $$
-\lim_{n\to\infty}\sum_{k=-n^2}^{n^2}\left|\int_{k/n}^{(k+1)/n}f(x)\,dx\right|=\int_{\RR}|f(x)|\,dx.
+\lim_{n\to\infty}\sum_{k=-n^2}^{n^2}\abs{\int_{k/n}^{(k+1)/n}f(x)\,dx}=\int_{\RR}\abs{f(x)}\,dx.
 $$
 :::
 
@@ -31,9 +31,9 @@ $$
 S_n(h)
 \coloneqq
 \sum_{k=-n^2}^{n^2}
-\left|
+\abs{
 \int_{k/n}^{(k+1)/n}h(x)\,dx
-\right|.
+}.
 $$
 
 ::: pf
@@ -42,9 +42,9 @@ $$
 
 For all $f,g\in L^1(\RR)$,
 $$
-|S_n(f)-S_n(g)|
+\abs{S_n(f)-S_n(g)}
 \le
-\|f-g\|_{L^1}.
+\norm{f-g}_{L^1}.
 $$
 
 
@@ -58,25 +58,25 @@ I_{k,n}
 $$
 the reverse triangle inequality gives
 $$
-\left|
-\left|\int_{I_{k,n}}f\right|
+\abs{
+\abs{\int_{I_{k,n}}f}
 -
-\left|\int_{I_{k,n}}g\right|
-\right|
+\abs{\int_{I_{k,n}}g}
+}
 \le
-\left|
+\abs{
 \int_{I_{k,n}}(f-g)
-\right|
+}
 \le
-\int_{I_{k,n}}|f-g|.
+\int_{I_{k,n}}\abs{f-g}.
 $$
 Summing over $-n^2\le k\le n^2$ yields
 $$
-|S_n(f)-S_n(g)|
+\abs{S_n(f)-S_n(g)}
 \le
-\int_{-n}^{n+1/n}|f-g|
+\int_{-n}^{n+1/n}\abs{f-g}
 \le
-\|f-g\|_1.
+\norm{f-g}_1.
 $$
 
 :::
@@ -89,7 +89,7 @@ If $g\in C_c(\RR)$, then
 $$
 S_n(g)
 \longrightarrow
-\|g\|_{L^1}.
+\norm{g}_{L^1}.
 $$
 
 
@@ -101,7 +101,7 @@ Let $\operatorname{supp}(g)\subset[-R,R]$ and let
 $$
 \omega_g(\delta)
 \coloneqq
-\sup\{|g(x)-g(y)|:|x-y|\le\delta\}.
+\sup\{\abs{g(x)-g(y)}:\abs{x-y}\le\delta\}.
 $$
 Then
 $$
@@ -125,9 +125,9 @@ For every mesh interval $I=I_{k,n}$,
 $$
 0
 \le
-\int_I|g(x)|\,dx
+\int_I\abs{g(x)}\,dx
 -
-\left|\int_I g(x)\,dx\right|
+\abs{\int_I g(x)\,dx}
 \le
 \frac{2}{n}\omega_g(1/n).
 $$
@@ -135,31 +135,31 @@ $$
 
 ::: pf-proof
 
-The left inequality is the triangle inequality. Fix any $x_I\in I$. Since $|I|=1/n$,
+The left inequality is the triangle inequality. Fix any $x_I\in I$. Since $\setmeasure{I}=1/n$,
 $$
-\left|
+\abs{
 \int_I g(x)\,dx
 -
 \frac1n g(x_I)
-\right|
+}
 \le
 \frac1n\omega_g(1/n),
 $$
 while
 $$
-\left|
-\int_I|g(x)|\,dx
+\abs{
+\int_I\abs{g(x)}\,dx
 -
-\frac1n|g(x_I)|
-\right|
+\frac1n\abs{g(x_I)}
+}
 \le
 \frac1n\omega_g(1/n).
 $$
 Using
 $$
-\left|\frac1n g(x_I)\right|
+\abs{\frac1n g(x_I)}
 =
-\frac1n|g(x_I)|
+\frac1n\abs{g(x_I)}
 $$
 and combining the two estimates gives the upper bound.
 
@@ -173,7 +173,7 @@ For all sufficiently large $n$,
 $$
 0
 \le
-\|g\|_1-S_n(g)
+\norm{g}_1-S_n(g)
 \le
 C_R\,\omega_g(1/n)
 $$
@@ -188,10 +188,10 @@ $$
 $$
 contains the support of $g$, so
 $$
-\|g\|_1
+\norm{g}_1
 =
 \sum_{k=-n^2}^{n^2}
-\int_{I_{k,n}}|g(x)|\,dx.
+\int_{I_{k,n}}\abs{g(x)}\,dx.
 $$
 Only mesh intervals meeting $[-R,R]$ contribute. Their number is at most
 $$
@@ -201,7 +201,7 @@ Applying step [](#s2-2){.pf-ref} on those intervals,
 $$
 0
 \le
-\|g\|_1-S_n(g)
+\norm{g}_1-S_n(g)
 \le
 (2Rn+3)\frac{2}{n}\omega_g(1/n).
 $$
@@ -215,7 +215,7 @@ For $n\ge1$ the coefficient is bounded by a constant $C_R$, giving the claim.
 
 Step [](#s2-3){.pf-ref} and step [](#s2-1){.pf-ref} give
 $$
-|S_n(g)-\|g\|_1|
+\abs{S_n(g)-\norm{g}_1}
 \longrightarrow0.
 $$
 This proves step [](#s2){.pf-ref}.
@@ -232,7 +232,7 @@ For every $f\in L^1(\RR)$,
 $$
 S_n(f)
 \longrightarrow
-\|f\|_{L^1}.
+\norm{f}_{L^1}.
 $$
 
 
@@ -240,30 +240,30 @@ $$
 
 Fix $\varepsilon>0$. Since $C_c(\RR)$ is dense in $L^1(\RR)$, choose $g\in C_c(\RR)$ such that
 $$
-\|f-g\|_1<\frac{\varepsilon}{3}.
+\norm{f-g}_1<\frac{\varepsilon}{3}.
 $$
 By step [](#s2){.pf-ref}, for all sufficiently large $n$,
 $$
-|S_n(g)-\|g\|_1|
+\abs{S_n(g)-\norm{g}_1}
 <
 \frac{\varepsilon}{3}.
 $$
 Using step [](#s1){.pf-ref} and
 $$
-|\|f\|_1-\|g\|_1|
+\abs{\norm{f}_1-\norm{g}_1}
 \le
-\|f-g\|_1,
+\norm{f-g}_1,
 $$
 one obtains
 $$
 \begin{aligned}
-|S_n(f)-\|f\|_1|
+\abs{S_n(f)-\norm{f}_1}
 &\le
-|S_n(f)-S_n(g)|
+\abs{S_n(f)-S_n(g)}
 +
-|S_n(g)-\|g\|_1|
+\abs{S_n(g)-\norm{g}_1}
 +
-|\|g\|_1-\|f\|_1|\\
+\abs{\norm{g}_1-\norm{f}_1}\\
 &<
 \varepsilon.
 \end{aligned}
@@ -280,11 +280,11 @@ $$
 \boxed{
 \lim_{n\to\infty}
 \sum_{k=-n^2}^{n^2}
-\left|
+\abs{
 \int_{k/n}^{(k+1)/n}f(x)\,dx
-\right|
+}
 =
-\int_{\RR}|f(x)|\,dx
+\int_{\RR}\abs{f(x)}\,dx
 }.
 $$
 

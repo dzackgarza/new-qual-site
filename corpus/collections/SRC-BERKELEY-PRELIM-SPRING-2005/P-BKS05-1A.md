@@ -52,22 +52,22 @@ Cauchy.
 
 Let $\varepsilon>0$. Since
 $$
-\sum_{k=1}^{\infty}|a_{k+1}-a_k|
+\sum_{k=1}^{\infty}\abs{a_{k+1}-a_k}
 $$
 converges, there is $N$ such that
 $$
-\sum_{k=N}^{\infty}|a_{k+1}-a_k|<\varepsilon.
+\sum_{k=N}^{\infty}\abs{a_{k+1}-a_k}<\varepsilon.
 $$
 If $n>m\geq N$, then
 $$
 \begin{aligned}
-|a_n-a_m|
+\abs{a_n-a_m}
 &=
-\left|\sum_{k=m}^{n-1}(a_{k+1}-a_k)\right|\\
+\abs{\sum_{k=m}^{n-1}(a_{k+1}-a_k)}\\
 &\leq
-\sum_{k=m}^{n-1}|a_{k+1}-a_k|\\
+\sum_{k=m}^{n-1}\abs{a_{k+1}-a_k}\\
 &\leq
-\sum_{k=N}^{\infty}|a_{k+1}-a_k|\\
+\sum_{k=N}^{\infty}\abs{a_{k+1}-a_k}\\
 &<
 \varepsilon.
 \end{aligned}
@@ -90,7 +90,7 @@ a_n\coloneqq\frac{(-1)^n}{n}.
 $$
 Then $a_n\to0$, so $(a_n)$ is Cauchy. However,
 $$
-|a_{n+1}-a_n|
+\abs{a_{n+1}-a_n}
 =
 \frac{2n+1}{n(n+1)}.
 $$
@@ -103,7 +103,7 @@ $$
 $$
 Hence the limit comparison test with the harmonic series gives
 $$
-\sum_{n=1}^{\infty}|a_{n+1}-a_n|
+\sum_{n=1}^{\infty}\abs{a_{n+1}-a_n}
 =
 \infty.
 $$

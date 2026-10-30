@@ -83,7 +83,7 @@ f(z)
 \sum_{n=0}^{\infty}
 a_n(z-z_0)^n
 \qquad
-(|z-z_0|<r).
+(\abs{z-z_0}<r).
 $$
 
 

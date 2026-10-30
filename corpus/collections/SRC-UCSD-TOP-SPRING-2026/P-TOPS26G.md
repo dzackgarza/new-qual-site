@@ -27,7 +27,7 @@ Show the following statements are equivalent:
 
 ::: pf-step
 The integral cohomology ring is
-$$\boxed{H^*(\CP^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),\qquad |x|=2.}$$
+$$\boxed{H^*(\CP^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),\qquad \gradeddegree{x}=2.}$$
 
 ::: pf-proof
 This is the standard projective-space computation; $x$ is the first Chern class of the dual tautological line bundle.

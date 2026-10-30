@@ -281,11 +281,11 @@ $$
 In particular,
 $$
 \boxed{
-|E(h)|
+\abs{E(h)}
 \le
 \frac{h^2}{12}
-\max_{t\in[x-|h|,x+|h|]}
-|f^{(4)}(t)|
+\max_{t\in[x-\abs{h},x+\abs{h}]}
+\abs{f^{(4)}(t)}
 },
 $$
 so the centered approximation has error

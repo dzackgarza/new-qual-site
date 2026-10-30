@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-YZ4WV
 kind: problem
-title: An isolated singularity at $0$ is essential if a nonconstant analytic $f$ on
-  $|z|>0$ has zeros accumulating at $0$
+title: An isolated singularity at $0$ is essential if a nonconstant analytic $f$ on $\abs{z}>0$ has zeros accumulating at $0$
 classification:
   areas:
   - complex-analysis
@@ -17,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(z)$ be a non-constant analytic function in $|z|>0$ such that $f(z_n) = 0$ for infinite many points $z_n$ with $\lim_{n \rightarrow \infty} z_n =0$.
+Let $f(z)$ be a non-constant analytic function in $\abs{z}>0$ such that $f(z_n) = 0$ for infinite many points $z_n$ with $\lim_{n \rightarrow \infty} z_n =0$.
 
 Show that $z=0$ is an essential singularity for $f(z)$.
 

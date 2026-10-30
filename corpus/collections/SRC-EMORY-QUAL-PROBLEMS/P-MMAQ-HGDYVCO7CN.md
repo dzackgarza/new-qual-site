@@ -35,9 +35,9 @@ Prove that $L$ is Galois over $K$ and that $\mathrm{Gal}(L/K)$ is cyclic.
 :::
 
 ::: {.solution}
-Write $q=|K|=p^r$, where $p$ is the characteristic,
+Write $q=\cardinality{K}=p^r$, where $p$ is the characteristic,
 and put $d=[L:K]$. Counting coordinates in a $K$-basis
-gives $|L|=q^d$.
+gives $\cardinality{L}=q^d$.
 
 ::: pf
 

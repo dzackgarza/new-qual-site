@@ -79,13 +79,13 @@ $$
 $$
 By continuity at $x_0$, there exists $\delta>0$ such that
 $$
-|f(x)-f(x_0)|
+\abs{f(x)-f(x_0)}
 <
 \frac12f(x_0)
 $$
 whenever
 $$
-|x-x_0|<\delta.
+\abs{x-x_0}<\delta.
 $$
 Then
 $$
@@ -150,11 +150,11 @@ Thus
 $$
 \int_I f(x)\,dx
 \ge
-\eta\,|I|
+\eta\,\setmeasure{I}
 >
 0,
 $$
-where $|I|$ denotes the positive length of the interval.
+where $\setmeasure{I}$ denotes the positive length of the interval.
 
 :::
 

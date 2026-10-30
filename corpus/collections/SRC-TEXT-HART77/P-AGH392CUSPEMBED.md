@@ -200,7 +200,7 @@ $$
 Indeed, $z^2\in J_0$ forces $z$ into the radical, and after quotienting by $z$ the remaining reduced equation is the irreducible cusp equation $x^2-y^3$.
 Therefore
 $$
-|X_0|=V(z,x^2-y^3),
+\underlyingspace{X_0}=V(z,x^2-y^3),
 $$
 which is exactly the projected cuspidal cubic of step [](#s1){.pf-ref}.
 

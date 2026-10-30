@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAS24F
 kind: problem
-title: 'Iterates of a holomorphic self-map with $f(0)=0$ and $|f''(0)|<1$ tend to $0$'
+title: 'Iterates of a holomorphic self-map with $f(0)=0$ and $\abs{f''(0)}<1$ tend to $0$'
 classification:
   areas:
   - complex-analysis
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \subset \CC$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$.
+Let $U \subset \CC$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $\abs{f'(0)} < 1$.
 Write
 $$
 f^{(n)} = \underbrace{f \circ f \circ \cdots \circ f}_{n\text{ times}}.
@@ -26,7 +26,7 @@ $$
 
 (i) Show that there is a neighborhood $V$ of $0$ such that the sequence $f^{(n)}$ converges to $0$ locally uniformly on $V$.
 
-Hint: $|f(z)| \le M|z|$ for a constant $M < 1$, for $|z|$ small.
+Hint: $\abs{f(z)} \le M\abs{z}$ for a constant $M < 1$, for $\abs{z}$ small.
 
 (ii) Show that the sequence $f^{(n)}$ converges locally uniformly to $0$ on $U$.
 :::
@@ -44,7 +44,7 @@ Part (i): Local uniform convergence on a neighborhood of $0$:
 ::: pf-step
 
 Since $f(0) = 0$, the function $h(z) = \frac{f(z)}{z}$ has a removable singularity at $z = 0$ with $h(0) = f'(0)$.
-Thus $\lim_{z \to 0} \left| \frac{f(z)}{z} \right| = |f'(0)| < 1$.
+Thus $\lim_{z \to 0} \abs{ \frac{f(z)}{z} } = \abs{f'(0)} < 1$.
 
 ::: pf-proof
 
@@ -56,10 +56,10 @@ Taylor expansion of $f$ around $0$.
 
 ::: pf-step
 
-Let $\lambda = |f'(0)| < 1$ and choose $M$ such that $\lambda < M < 1$.
+Let $\lambda = \abs{f'(0)} < 1$ and choose $M$ such that $\lambda < M < 1$.
 There exists $r > 0$ such that the disk $V = B(0, r) \subset U$ satisfies:
 $$
-|f(z)| \le M |z| \quad \text{for all } z \in V.
+\abs{f(z)} \le M \abs{z} \quad \text{for all } z \in V.
 $$
 
 ::: pf-proof
@@ -72,10 +72,10 @@ definition of limit.
 
 ::: pf-step
 
-Since $M < 1$, for any $z \in V$ we have $|f(z)| \le M |z| < |z| < r$, so $f(V) \subset V$.
+Since $M < 1$, for any $z \in V$ we have $\abs{f(z)} \le M \abs{z} < \abs{z} < r$, so $f(V) \subset V$.
 By induction, for every $n \ge 1$ and $z \in V$:
 $$
-|f^{(n)}(z)| \le M^n |z| \le M^n r.
+\abs{f^{(n)}(z)} \le M^n \abs{z} \le M^n r.
 $$
 
 ::: pf-proof
@@ -90,7 +90,7 @@ induction on $n$.
 
 As $n \to \infty$, $M^n \to 0$. Thus:
 $$
-\sup_{z \in V} |f^{(n)}(z)| \le M^n r \to 0.
+\sup_{z \in V} \abs{f^{(n)}(z)} \le M^n r \to 0.
 $$
 Hence $f^{(n)}$ converges uniformly to $0$ on $V$.
 
@@ -114,10 +114,10 @@ Part (ii): Global locally uniform convergence on $U$:
 
 ::: pf-step
 
-Since $U$ is bounded, there exists $R > 0$ such that $|z| \le R$ for all $z \in U$.
+Since $U$ is bounded, there exists $R > 0$ such that $\abs{z} \le R$ for all $z \in U$.
 Because $f(U) \subseteq U$, every iterate satisfies $f^{(n)}(U) \subseteq U$, so:
 $$
-|f^{(n)}(z)| \le R \quad \text{for all } z \in U \text{ and } n \ge 1.
+\abs{f^{(n)}(z)} \le R \quad \text{for all } z \in U \text{ and } n \ge 1.
 $$
 Thus the sequence of iterates $(f^{(n)})_{n=1}^\infty$ is uniformly bounded on $U$.
 

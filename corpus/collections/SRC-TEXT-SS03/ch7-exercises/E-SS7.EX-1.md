@@ -35,7 +35,7 @@ converges for $\operatorname { R e } ( s ) > 0$ and defines a holomorphic functi
 :::
 
 ::: {.solution}
-Let $A_n=\sum_{j=1}^n a_j$ and suppose $|A_n|\le M$. For $N\ge1$, summation by parts gives
+Let $A_n=\sum_{j=1}^n a_j$ and suppose $\abs{A_n}\le M$. For $N\ge1$, summation by parts gives
 $$
 \sum_{n=1}^N\frac{a_n}{n^s}
 =A_NN^{-s}+\sum_{n=1}^{N-1}A_n\bigl(n^{-s}-(n+1)^{-s}\bigr).
@@ -50,17 +50,17 @@ n^{-s}-(n+1)^{-s}
 $$
 so
 $$
-|n^{-s}-(n+1)^{-s}|\le |s|n^{-\sigma-1}.
+\abs{n^{-s}-(n+1)^{-s}}\le \abs{s}n^{-\sigma-1}.
 $$
 Thus the series on the right of (1) converges absolutely for every $\sigma>0$, proving convergence of the original Dirichlet series.
 
 To prove holomorphy, let $K$ be a compact subset of $\Re s>0$. Then for some $\delta>0$ and $C>0$,
 $$
-\Re s\ge\delta,\qquad |s|\le C\qquad(s\in K).
+\Re s\ge\delta,\qquad \abs{s}\le C\qquad(s\in K).
 $$
 Hence uniformly on $K$,
 $$
-|A_n(n^{-s}-(n+1)^{-s})|
+\abs{A_n(n^{-s}-(n+1)^{-s})}
 \le MCn^{-1-\delta}.
 $$
 The Weierstrass $M$-test gives uniform convergence on $K$ of the holomorphic series in (1); the boundary term tends to zero uniformly as well. Therefore the Dirichlet series defines a holomorphic function on $\Re s>0$.

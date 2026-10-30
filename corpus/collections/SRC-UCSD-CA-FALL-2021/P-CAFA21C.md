@@ -33,7 +33,7 @@ $$
 ::: pf
 
 ::: {.pf-step #s1}
-Establish a pointwise bound on $|f(z)|$ in terms of $|a(z)|$ and $|b(z)|$:
+Establish a pointwise bound on $\abs{f(z)}$ in terms of $\abs{a(z)}$ and $\abs{b(z)}$:
 
 ::: pf-proof
 
@@ -49,32 +49,32 @@ rearrange $f(z)^2 + a(z)f(z) + b(z) = 0$.
 ::: pf-step
 Applying the triangle inequality:
 $$
-|f(z)|^2 \le |a(z)| |f(z)| + |b(z)|.
+\abs{f(z)}^2 \le \abs{a(z)} \abs{f(z)} + \abs{b(z)}.
 $$
 
 ::: pf-proof
-$|-w| = |w|$ and triangle inequality.
+$\abs{-w} = \abs{w}$ and triangle inequality.
 :::
 
 :::
 
 ::: {.pf-step #s1-3}
-If $|f(z)| \le 1$, then $|f(z)| \le 1 + |a(z)| + |b(z)|$.
+If $\abs{f(z)} \le 1$, then $\abs{f(z)} \le 1 + \abs{a(z)} + \abs{b(z)}$.
 
 ::: pf-proof
-since $|a(z)| \ge 0$ and $|b(z)| \ge 0$, we have $1 \le 1 + |a(z)| + |b(z)|$, and the hypothesis $|f(z)| \le 1$ gives $|f(z)| \le 1 \le 1 + |a(z)| + |b(z)|$.
+since $\abs{a(z)} \ge 0$ and $\abs{b(z)} \ge 0$, we have $1 \le 1 + \abs{a(z)} + \abs{b(z)}$, and the hypothesis $\abs{f(z)} \le 1$ gives $\abs{f(z)} \le 1 \le 1 + \abs{a(z)} + \abs{b(z)}$.
 :::
 
 :::
 
 ::: {.pf-step #s1-4}
-If $|f(z)| > 1$, then $|b(z)| \le |b(z)| |f(z)|$, so:
+If $\abs{f(z)} > 1$, then $\abs{b(z)} \le \abs{b(z)} \abs{f(z)}$, so:
 $$
-|f(z)|^2 \le (|a(z)| + |b(z)|) |f(z)| \implies |f(z)| \le |a(z)| + |b(z)|.
+\abs{f(z)}^2 \le (\abs{a(z)} + \abs{b(z)}) \abs{f(z)} \implies \abs{f(z)} \le \abs{a(z)} + \abs{b(z)}.
 $$
 
 ::: pf-proof
-divide by $|f(z)| > 0$.
+divide by $\abs{f(z)} > 0$.
 :::
 
 :::
@@ -82,7 +82,7 @@ divide by $|f(z)| > 0$.
 ::: pf-step
 Therefore, for all $z \in \CC$:
 $$
-|f(z)| \le 1 + |a(z)| + |b(z)|.
+\abs{f(z)} \le 1 + \abs{a(z)} + \abs{b(z)}.
 $$
 
 ::: pf-proof
@@ -110,9 +110,9 @@ hypothesis that $a, b$ have finite order.
 :::
 
 ::: {.pf-step #s2-2}
-For any $\varepsilon > 0$, there exists $R > 0$ such that for all $|z| \ge R$:
+For any $\varepsilon > 0$, there exists $R > 0$ such that for all $\abs{z} \ge R$:
 $$
-|a(z)| \le \exp(|z|^{\rho + \varepsilon}) \quad \text{and} \quad |b(z)| \le \exp(|z|^{\rho + \varepsilon}).
+\abs{a(z)} \le \exp(\abs{z}^{\rho + \varepsilon}) \quad \text{and} \quad \abs{b(z)} \le \exp(\abs{z}^{\rho + \varepsilon}).
 $$
 
 ::: pf-proof
@@ -124,7 +124,7 @@ definition of the order of an entire function.
 ::: pf-step
 Combining with the bound from step [](#s1){.pf-ref}:
 $$
-|f(z)| \le 1 + 2\exp(|z|^{\rho + \varepsilon}) \le 3\exp(|z|^{\rho + \varepsilon}) \quad \text{for all } |z| \ge R.
+\abs{f(z)} \le 1 + 2\exp(\abs{z}^{\rho + \varepsilon}) \le 3\exp(\abs{z}^{\rho + \varepsilon}) \quad \text{for all } \abs{z} \ge R.
 $$
 
 ::: pf-proof
@@ -170,9 +170,9 @@ polynomials have finite non-negative degrees.
 :::
 
 ::: pf-step
-There exist constants $C > 0$ and $R > 0$ such that for all $|z| \ge R$:
+There exist constants $C > 0$ and $R > 0$ such that for all $\abs{z} \ge R$:
 $$
-|a(z)| \le C |z|^d \quad \text{and} \quad |b(z)| \le C |z|^d.
+\abs{a(z)} \le C \abs{z}^d \quad \text{and} \quad \abs{b(z)} \le C \abs{z}^d.
 $$
 
 ::: pf-proof
@@ -182,19 +182,19 @@ asymptotic growth of polynomials.
 :::
 
 ::: pf-step
-By step [](#s1){.pf-ref}, for all $|z| \ge R$:
+By step [](#s1){.pf-ref}, for all $\abs{z} \ge R$:
 $$
-|f(z)| \le 1 + 2C |z|^d \le (2C + 1) |z|^d.
+\abs{f(z)} \le 1 + 2C \abs{z}^d \le (2C + 1) \abs{z}^d.
 $$
 
 ::: pf-proof
-$|z| \ge R \ge 1 \implies 1 \le |z|^d$.
+$\abs{z} \ge R \ge 1 \implies 1 \le \abs{z}^d$.
 :::
 
 :::
 
 ::: {.pf-step #s3-4}
-By the generalized Liouville Theorem / Cauchy estimates, an entire function satisfying $|f(z)| \le M |z|^d$ for all $|z| \ge R$ is a polynomial of degree at most $d$.
+By the generalized Liouville Theorem / Cauchy estimates, an entire function satisfying $\abs{f(z)} \le M \abs{z}^d$ for all $\abs{z} \ge R$ is a polynomial of degree at most $d$.
 
 ::: pf-proof
 Cauchy's differentiation formula shows $f^{(k)}(0) = 0$ for all $k > d$.

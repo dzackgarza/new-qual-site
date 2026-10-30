@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I05
 kind: problem
-title: Sharp bound for $|f'(0)|$ for maps of the disk into the right half-plane
+title: Sharp bound for $\abs{f'(0)}$ for maps of the disk into the right half-plane
 classification:
   areas: [complex-analysis]
   topics: []
@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2010, Problem $\# 5 ]$ Let $H : = \{ z \in \CC : \operatorname { R e } ( z ) > 0 \}$ . Suppose $f$ is an analytic function which maps the open unit disk $D$ into $H$ and satisfies $f ( 0 ) = 2$ . Find a sharp upper bound for $\left| f ^ { \prime } ( 0 ) \right|$, justifying your bound by a proof and its sharpness by an example.
+[Fall 2010, Problem $\# 5 ]$ Let $H : = \{ z \in \CC : \operatorname { R e } ( z ) > 0 \}$ . Suppose $f$ is an analytic function which maps the open unit disk $D$ into $H$ and satisfies $f ( 0 ) = 2$ . Find a sharp upper bound for $\abs{ f ^ { \prime } ( 0 ) }$, justifying your bound by a proof and its sharpness by an example.
 :::
 
 ::: {.solution}

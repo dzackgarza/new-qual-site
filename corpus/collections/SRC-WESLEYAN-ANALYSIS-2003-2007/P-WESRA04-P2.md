@@ -32,7 +32,7 @@ P:a=x_0<x_1<\cdots<x_m=b.
 $$
 Its variation sum is
 $$
-V_P(h)=\sum_{j=1}^m|h(x_j)-h(x_{j-1})|.
+V_P(h)=\sum_{j=1}^m\abs{h(x_j)-h(x_{j-1})}.
 $$
 Pointwise convergence at the finitely many partition points gives
 $$

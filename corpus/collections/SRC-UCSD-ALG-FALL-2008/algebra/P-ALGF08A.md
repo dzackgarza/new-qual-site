@@ -46,10 +46,10 @@ for every $i$.
 Every nontrivial finite $p$-group has nontrivial center.
 
 ::: pf-proof
-Let $|G|=p^n$ with $n\ge1$, and let $G$ act on itself by conjugation.
+Let $\cardinality{G}=p^n$ with $n\ge1$, and let $G$ act on itself by conjugation.
 The class equation is
 $$
-|G|=|Z(G)|+\sum_j [G:C_G(x_j)],
+\cardinality{G}=\cardinality{Z(G)}+\sum_j [G:C_G(x_j)],
 $$
 where the $x_j$ represent the noncentral conjugacy classes.
 For noncentral $x_j$, the centralizer $C_G(x_j)$ is a proper subgroup of the $p$-group $G$, so
@@ -57,13 +57,13 @@ $$
 [G:C_G(x_j)]
 $$
 is a positive power of $p$ and hence is divisible by $p$.
-Since $|G|$ is divisible by $p$, the class equation implies
+Since $\cardinality{G}$ is divisible by $p$, the class equation implies
 $$
-p\mid |Z(G)|.
+p\mid \cardinality{Z(G)}.
 $$
 Thus
 $$
-|Z(G)|\ge p>1.
+\cardinality{Z(G)}\ge p>1.
 $$
 :::
 
@@ -73,7 +73,7 @@ $$
 Every finite $p$-group is nilpotent.
 
 ::: pf-proof
-We argue by induction on $|G|$.
+We argue by induction on $\cardinality{G}$.
 The trivial group is nilpotent.
 Suppose now that $G$ is nontrivial and that every smaller finite $p$-group is nilpotent.
 Set
@@ -82,7 +82,7 @@ Z:=Z(G).
 $$
 By step [](#nontrivial-p-group-has-center){.pf-ref}, $Z\neq1$, so
 $$
-|G/Z|<|G|.
+\cardinality{G/Z}<\cardinality{G}.
 $$
 The quotient $G/Z$ is again a finite $p$-group, hence is nilpotent by induction.
 Therefore it has a central series

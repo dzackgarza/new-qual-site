@@ -58,7 +58,7 @@ The subgroup $N$ is normal in $G$ and has finite index at most $n!$.
 
 ::: pf-proof
 
-It is a kernel, hence normal. By the first isomorphism theorem, $G/N\cong\operatorname{im}\rho\leq S_n$, so $[G:N]=|\operatorname{im}\rho|\leq n!<\infty$.
+It is a kernel, hence normal. By the first isomorphism theorem, $G/N\cong\operatorname{im}\rho\leq S_n$, so $[G:N]=\cardinality{\operatorname{im}\rho}\leq n!<\infty$.
 
 :::
 

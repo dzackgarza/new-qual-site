@@ -21,7 +21,7 @@ How many zeros does
 $$
 f(z)=z^6+4z^2e^{z+1}-3
 $$
-have in the unit disk $|z|<1$?
+have in the unit disk $\abs{z}<1$?
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ $$
 
 On the unit circle,
 $$
-|f(z)-g(z)|
+\abs{f(z)-g(z)}
 \le4.
 $$
 
@@ -46,7 +46,7 @@ $$
 
 If
 $$
-|z|=1,
+\abs{z}=1,
 $$
 then
 $$
@@ -54,11 +54,11 @@ f(z)-g(z)=z^6-3.
 $$
 Hence
 $$
-|f(z)-g(z)|
+\abs{f(z)-g(z)}
 =
-|z^6-3|
+\abs{z^6-3}
 \le
-|z|^6+3
+\abs{z}^6+3
 =4.
 $$
 
@@ -70,7 +70,7 @@ $$
 
 On the unit circle,
 $$
-|g(z)|\ge4.
+\abs{g(z)}\ge4.
 $$
 
 
@@ -78,14 +78,14 @@ $$
 
 For
 $$
-|z|=1,
+\abs{z}=1,
 $$
 one has
 $$
 \begin{aligned}
-|g(z)|
+\abs{g(z)}
 &=
-4|z|^2|e^{z+1}|\\
+4\abs{z}^2\abs{e^{z+1}}\\
 &=
 4e^{\operatorname{Re}z+1}.
 \end{aligned}
@@ -96,7 +96,7 @@ $$
 $$
 on the unit circle,
 $$
-|g(z)|
+\abs{g(z)}
 \ge
 4e^0
 =4.
@@ -111,13 +111,13 @@ $$
 In fact,
 $$
 \boxed{
-|f(z)-g(z)|
+\abs{f(z)-g(z)}
 <
-|g(z)|}
+\abs{g(z)}}
 $$
 for every
 $$
-|z|=1.
+\abs{z}=1.
 $$
 
 
@@ -125,11 +125,11 @@ $$
 
 By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, failure of strict inequality could occur only if
 $$
-|f(z)-g(z)|=4
+\abs{f(z)-g(z)}=4
 $$
 and
 $$
-|g(z)|=4.
+\abs{g(z)}=4.
 $$
 The second equality forces
 $$
@@ -137,7 +137,7 @@ $$
 $$
 Together with
 $$
-|z|=1,
+\abs{z}=1,
 $$
 this gives
 $$
@@ -145,14 +145,14 @@ z=-1.
 $$
 But at $z=-1$,
 $$
-|f(-1)-g(-1)|
+\abs{f(-1)-g(-1)}
 =
-|(-1)^6-3|
+\abs{(-1)^6-3}
 =
 2
 <4
 =
-|g(-1)|.
+\abs{g(-1)}.
 $$
 Thus equality never occurs.
 
@@ -164,7 +164,7 @@ Thus equality never occurs.
 
 The functions $f$ and $g$ have the same number of zeros in
 $$
-|z|<1,
+\abs{z}<1,
 $$
 counted with multiplicity.
 

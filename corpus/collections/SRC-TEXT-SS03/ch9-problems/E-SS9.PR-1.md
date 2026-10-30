@@ -54,7 +54,7 @@ $$
 \left(\frac1{(z+\omega)^2}-\frac1{\omega^2}\right).
 \tag{1}
 $$
-The series in parentheses converges absolutely and locally uniformly away from $\Lambda$, because its summand is $O_z(|\omega|^{-3})$. Hence any admissible summation convention for the raw series differs from $\wp(z)$ only by the same convention applied to $\sum_{\omega\ne0}\omega^{-2}$.
+The series in parentheses converges absolutely and locally uniformly away from $\Lambda$, because its summand is $O_z(\abs{\omega}^{-3})$. Hence any admissible summation convention for the raw series differs from $\wp(z)$ only by the same convention applied to $\sum_{\omega\ne0}\omega^{-2}$.
 
 For circular summation, put
 $$
@@ -62,11 +62,11 @@ C_R=\sum_{1\le n^2+m^2\le R^2}\frac1{(n+m\tau)^2}.
 $$
 We show $C_R$ converges. Since $\Im\tau\ne0$, there is $c>0$ such that
 $$
-|x+y\tau|\ge c\sqrt{x^2+y^2}.
+\abs{x+y\tau}\ge c\sqrt{x^2+y^2}.
 $$
 Set $\phi(x,y)=(x+y\tau)^{-2}$. On the unit square centered at $(n,m)$, with $n^2+m^2$ large, the mean-value theorem gives
 $$
-|\phi(x,y)-\phi(n,m)|\le C(n^2+m^2)^{-3/2}.
+\abs{\phi(x,y)-\phi(n,m)}\le C(n^2+m^2)^{-3/2}.
 $$
 The sum of these errors over $(n,m)\ne(0,0)$ converges, since the number of lattice points with radius comparable to $r$ is $O(r)$.
 
@@ -74,7 +74,7 @@ Thus $C_R$ differs by a convergent quantity from the integral of $\phi$ over the
 $$
 1\le x^2+y^2\le R^2
 $$
-changes the integral by $O(R^{-1})$, because only an $O(R)$-area boundary layer is changed and $|\phi|=O(R^{-2})$ there. But
+changes the integral by $O(R^{-1})$, because only an $O(R)$-area boundary layer is changed and $\abs{\phi}=O(R^{-2})$ there. But
 $$
 I(R)=\int_{1\le x^2+y^2\le R^2}\frac{dx\,dy}{(x+y\tau)^2}=0.
 $$
@@ -102,7 +102,7 @@ $$
 \sum_{n\in\ZZ}\frac1{(n+m\tau)^2}
 =\pi^2\csc^2(\pi m\tau).
 $$
-Because $|\csc(\pi m\tau)|=O(e^{-\pi|m|\,|\Im\tau|})$, the outer sum converges absolutely. Thus $F(\tau)$ exists, and absolute convergence of the corrected series in (1) gives
+Because $\abs{\csc(\pi m\tau)}=O(e^{-\pi\abs{m}\,\abs{\Im\tau}})$, the outer sum converges absolutely. Thus $F(\tau)$ exists, and absolute convergence of the corrected series in (1) gives
 $$
 S_2(z)=\wp(z)+F(\tau).
 $$
@@ -118,7 +118,7 @@ $$
 \sum_{m\in\ZZ}\frac1{(n+m\tau)^2}
 =\tau^{-2}\pi^2\csc^2\!\left(\frac{\pi n}{\tau}\right),
 $$
-while the $n=0$ term is $\tau^{-2}\pi^2/3$. Since $\Im(-1/\tau)>0$ when $\Im\tau>0$, these terms again decay exponentially in $|n|$. Hence $\widetilde F(\tau)$ converges and
+while the $n=0$ term is $\tau^{-2}\pi^2/3$. Since $\Im(-1/\tau)>0$ when $\Im\tau>0$, these terms again decay exponentially in $\abs{n}$. Hence $\widetilde F(\tau)$ converges and
 $$
 S_3(z)=\wp(z)+\widetilde F(\tau).
 $$

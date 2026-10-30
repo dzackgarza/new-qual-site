@@ -53,9 +53,9 @@ G=G_{(2)}\oplus G_{(3)},
 $$
 with
 $$
-|G_{(2)}|=2^3,
+\cardinality{G_{(2)}}=2^3,
 \qquad
-|G_{(3)}|=3^4.
+\cardinality{G_{(3)}}=3^4.
 $$
 
 The condition that $6G=0$ implies in particular that every element of

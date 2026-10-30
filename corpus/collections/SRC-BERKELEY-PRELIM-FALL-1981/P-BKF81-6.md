@@ -84,7 +84,7 @@ Because $f$ is continuous and $1$-periodic, it is uniformly continuous on
 $\RR$. Let
 $$
 \omega_f(\delta)
-=\sup\{|f(x)-f(y)|:|x-y|\le\delta\}.
+=\sup\{\abs{f(x)-f(y)}:\abs{x-y}\le\delta\}.
 $$
 Then
 $$
@@ -94,11 +94,11 @@ as $\delta\to0$.
 
 For $0\le t\le1$,
 $$
-\left|\frac{j+t}{n}-\frac jn\right|\le\frac1n,
+\abs{\frac{j+t}{n}-\frac jn}\le\frac1n,
 $$
 so
 $$
-\left|A_n(t)-\frac1n\sum_{j=0}^{n-1}f(j/n)\right|
+\abs{A_n(t)-\frac1n\sum_{j=0}^{n-1}f(j/n)}
 \le\omega_f(1/n).
 $$
 The ordinary left-endpoint Riemann sums satisfy

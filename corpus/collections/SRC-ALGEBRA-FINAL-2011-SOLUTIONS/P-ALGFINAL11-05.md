@@ -16,7 +16,7 @@ Let $f ( X ) = X ^ { 6 } + a X ^ { 3 } + 1 \in \ZZ [ X ]$ be irreducible, and le
 
 Let $F$ be a splitting field of $f \ ( \mathrm { o v e r } \ \QQ )$
 
-(a) Show that $\mathrm { i f } \ | a | \geq 2$ then $f$ has a real root $x ,$ and that with ω a primitive cube root of unity, the other roots are ωx, $\omega ^ { 2 } x , 1 / x , \omega / x$ , and $\omega ^ { 2 } / x$ [6]
+(a) Show that $\mathrm { i f } \ \abs{ a } \geq 2$ then $f$ has a real root $x ,$ and that with ω a primitive cube root of unity, the other roots are ωx, $\omega ^ { 2 } x , 1 / x , \omega / x$ , and $\omega ^ { 2 } / x$ [6]
 
 (b) Show that $\mathcal { G }$ is isomorphic to the order-12 dihedral group $D _ { 1 2 }$
 
@@ -37,7 +37,7 @@ Total points:[80]
 ::: pf
 
 ::: {.pf-step #s1-1}
-Since $f$ is irreducible, $a\ne\pm2$; thus the hypothesis $|a|\ge2$ actually gives $|a|>2$.
+Since $f$ is irreducible, $a\ne\pm2$; thus the hypothesis $\abs{a}\ge2$ actually gives $\abs{a}>2$.
 
 ::: pf-proof
 If $a=2$, then
@@ -68,7 +68,7 @@ Then $f(X)=0$ is equivalent to
 $$
 t^2+at+1=0.
 $$
-Since $|a|>2$ by step [](#s1-1){.pf-ref}, the discriminant $a^2-4$ is positive, so this quadratic has two distinct nonzero real roots
+Since $\abs{a}>2$ by step [](#s1-1){.pf-ref}, the discriminant $a^2-4$ is positive, so this quadratic has two distinct nonzero real roots
 $$
 t_\pm=\frac{-a\pm\sqrt{a^2-4}}2,
 $$
@@ -216,7 +216,7 @@ has the dihedral presentation
 $$
 \langle r,s:r^6=s^2=1,\ srs=r^{-1}\rangle.
 $$
-This subgroup has order $12$, equal to $|\Gal(F/\QQ)|$ by step [](#s1-3){.pf-ref}. Hence it is the whole Galois group.
+This subgroup has order $12$, equal to $\cardinality{\Gal(F/\QQ)}$ by step [](#s1-3){.pf-ref}. Hence it is the whole Galois group.
 :::
 
 :::
@@ -308,7 +308,7 @@ By step [](#s1-10){.pf-ref}, each displayed field has degree $3$. Their stabiliz
 $$
 [\Gal(F/\QQ):N_{\Gal(F/\QQ)}(H)]=3.
 $$
-Since $|\Gal(F/\QQ)|=12$, this gives $|N(H)|=4=|H|$, hence $N(H)=H$. Thus distinct points in the three-element Galois orbit have distinct stabilizers. Their stabilizers are therefore exactly the three Sylow $2$-subgroups from step [](#s1-8){.pf-ref}, and their fixed fields are precisely the three degree-$3$ fields from step [](#s1-9){.pf-ref}.
+Since $\cardinality{\Gal(F/\QQ)}=12$, this gives $\cardinality{N(H)}=4=\cardinality{H}$, hence $N(H)=H$. Thus distinct points in the three-element Galois orbit have distinct stabilizers. Their stabilizers are therefore exactly the three Sylow $2$-subgroups from step [](#s1-8){.pf-ref}, and their fixed fields are precisely the three degree-$3$ fields from step [](#s1-9){.pf-ref}.
 :::
 
 :::

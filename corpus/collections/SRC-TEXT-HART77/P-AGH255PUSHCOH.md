@@ -101,7 +101,7 @@ $$
 \end{aligned}
 $$
 The last isomorphism identifies the fraction $m/\varphi(a)^n$ with $m/a^n$.
-These identifications commute with restriction, so $(f_*\mcf)|_U\cong\widetilde N$.
+These identifications commute with restriction, so $(f_*\mcf)\restrict_U\cong\widetilde N$.
 
 Choose $A$-module generators $b_1,\ldots,b_r$ of $B$ and $B$-module generators $m_1,\ldots,m_s$ of $M$.
 Writing each coefficient in a sum $\sum_j c_jm_j$ as an $A$-linear combination of the $b_i$ shows that the finitely many products $b_im_j$ generate $N$ over $A$.

@@ -18,7 +18,7 @@ review: draft
 Let $n \ge 2$.
 Let $S_n = \operatorname{Aut}\{1, \ldots, n\}$ be the symmetric group, and consider the unitary representation $(V, \varphi)$ of $S_n$ in which
 $$
-V = \bigoplus_{i=1}^{n} \CC|i\rangle, \qquad \varphi(\pi)|i\rangle = |\pi(i)\rangle.
+V = \bigoplus_{i=1}^{n} \CC\diracbar i\rangle, \qquad \varphi(\pi)\diracbar i\rangle = \diracbar\pi(i)\rangle.
 $$
 Decompose $(V, \varphi)$ into irreducible unitary representations of $S_n$, with proof.
 Write out the character table of $S_3$.
@@ -27,7 +27,7 @@ Write out the character table of $S_3$.
 ::: {.solution}
 Let
 $$
-u=|1\rangle+\cdots+|n\rangle.
+u=\diracbar1\rangle+\cdots+\diracbar n\rangle.
 $$
 Then the line
 $$
@@ -37,7 +37,7 @@ is fixed pointwise by $S_n$, so it is the trivial representation.
 
 Let
 $$
-W=\left\{\sum_{i=1}^n c_i|i\rangle:\sum_{i=1}^n c_i=0\right\}.
+W=\left\{\sum_{i=1}^n c_i\diracbar i\rangle:\sum_{i=1}^n c_i=0\right\}.
 $$
 Then $W$ is $S_n$-stable and
 $$
@@ -45,13 +45,13 @@ V=U\oplus W.
 $$
 We show that $W$ is irreducible. Let $0\ne W'\subseteq W$ be an $S_n$-stable subspace and choose
 $$
-v=\sum_i c_i|i\rangle\in W',\qquad v\ne0.
+v=\sum_i c_i\diracbar i\rangle\in W',\qquad v\ne0.
 $$
 Since $\sum_i c_i=0$, not all $c_i$ are equal; choose $i,j$ with $c_i\ne c_j$. Then
 $$
-v-(ij)v=(c_i-c_j)(|i\rangle-|j\rangle)\in W'.
+v-(ij)v=(c_i-c_j)(\diracbar i\rangle-\diracbar j\rangle)\in W'.
 $$
-Hence $|i\rangle-|j\rangle\in W'$. Applying permutations shows that every difference $|p\rangle-|q\rangle$ lies in $W'$. These differences span $W$, so $W'=W$. Thus $W$ is irreducible.
+Hence $\diracbar i\rangle-\diracbar j\rangle\in W'$. Applying permutations shows that every difference $\diracbar p\rangle-\diracbar q\rangle$ lies in $W'$. These differences span $W$, so $W'=W$. Thus $W$ is irreducible.
 
 Therefore
 $$

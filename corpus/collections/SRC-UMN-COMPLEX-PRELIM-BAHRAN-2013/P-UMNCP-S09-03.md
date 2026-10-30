@@ -19,12 +19,12 @@ audit:
 ::: {.problem}
 Find an explicit conformal equivalence from the region bounded by the circles
 $$
-\left|z-\frac{i}{2}\right|=\frac12
+\abs{z-\frac{i}{2}}=\frac12
 \qquad\text{and}\qquad
-|z-i|=1
+\abs{z-i}=1
 $$
 onto the upper half-plane.
-The intended region is the part inside $|z-i|<1$ and outside $|z-i/2|\le 1/2$.
+The intended region is the part inside $\abs{z-i}<1$ and outside $\abs{z-i/2}\le 1/2$.
 :::
 
 ::: {.solution}
@@ -35,9 +35,9 @@ $$
 \coloneqq
 \left\{
 z:
-|z-i|<1,
+\abs{z-i}<1,
 \quad
-\left|z-\frac i2\right|>\frac12
+\abs{z-\frac i2}>\frac12
 \right\}.
 $$
 Both boundary circles pass through $0$, which is not contained in $\Omega$.
@@ -48,7 +48,7 @@ Both boundary circles pass through $0$, which is not contained in $\Omega$.
 
 For $a>0$, the circle
 $$
-|z-ia|=a
+\abs{z-ia}=a
 $$
 is mapped by
 $$
@@ -64,7 +64,7 @@ $$
 
 The circle equation expands to
 $$
-|z|^2
+\abs{z}^2
 -2a\operatorname{Im}z
 =0.
 $$
@@ -76,17 +76,17 @@ and
 $$
 z=\frac1w
 =
-\frac{u-iv}{|w|^2}.
+\frac{u-iv}{\abs{w}^2}.
 $$
 Then
 $$
-|z|^2=\frac1{|w|^2},
+\abs{z}^2=\frac1{\abs{w}^2},
 \qquad
 \operatorname{Im}z
 =
--\frac{v}{|w|^2}.
+-\frac{v}{\abs{w}^2}.
 $$
-Substituting and multiplying by $|w|^2$ gives
+Substituting and multiplying by $\abs{w}^2$ gives
 $$
 1+2av=0,
 $$
@@ -120,7 +120,7 @@ a=\frac12
 $$
 for the circle
 $$
-\left|z-\frac i2\right|=\frac12,
+\abs{z-\frac i2}=\frac12,
 $$
 and with
 $$
@@ -128,7 +128,7 @@ a=1
 $$
 for
 $$
-|z-i|=1.
+\abs{z-i}=1.
 $$
 
 :::
@@ -164,11 +164,11 @@ z=\frac{3i}{2}.
 $$
 Then
 $$
-|z-i|=\frac12<1
+\abs{z-i}=\frac12<1
 $$
 and
 $$
-\left|z-\frac i2\right|=1>\frac12,
+\abs{z-\frac i2}=1>\frac12,
 $$
 so $z\in\Omega$.
 Its reciprocal is
@@ -258,7 +258,7 @@ w_1-w_2=ik.
 $$
 But the imaginary parts of two points of $S$ differ by strictly less than $1/2$, whereas a nonzero integer $k$ has
 $$
-|k|\ge1.
+\abs{k}\ge1.
 $$
 Thus $k=0$ and $w_1=w_2$.
 

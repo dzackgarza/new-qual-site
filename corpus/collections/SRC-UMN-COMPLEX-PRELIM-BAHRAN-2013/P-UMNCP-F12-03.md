@@ -48,18 +48,18 @@ The integral defining $I(\alpha)$ converges absolutely.
 
 Near $0$,
 $$
-\frac{|\log x|}{x^2+\alpha^2}
+\frac{\abs{\log x}}{x^2+\alpha^2}
 \le
-\frac1{\alpha^2}|\log x|,
+\frac1{\alpha^2}\abs{\log x},
 $$
 and
 $$
-\int_0^1|\log x|\,dx<\infty.
+\int_0^1\abs{\log x}\,dx<\infty.
 $$
 
 For $x\ge1$,
 $$
-\frac{|\log x|}{x^2+\alpha^2}
+\frac{\abs{\log x}}{x^2+\alpha^2}
 \le
 \frac{\log x}{x^2},
 $$

@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-2) Find all entire analytic functions satisfying $| f ( z ) | \leq | e ^ { z } |$ for all $z \in \CC$
+2) Find all entire analytic functions satisfying $\abs{ f ( z ) } \leq \abs{ e ^ { z } }$ for all $z \in \CC$
 :::
 
 ::: {.solution}
-The functions are exactly $\boxed{f(z)=ce^z,\ |c|\leq1}$.
+The functions are exactly $\boxed{f(z)=ce^z,\ \abs{c}\leq1}$.
 
 ::: pf
 
@@ -41,10 +41,10 @@ The quotient by the exponential is a bounded entire function.
 Since $e^{-z}$ is entire, $h(z)=f(z)e^{-z}$ is entire.
 The given inequality implies
 $$
-|h(z)|=|f(z)|/|e^z|\leq1
+\abs{h(z)}=\abs{f(z)}/\abs{e^z}\leq1
 $$
 for every $z$, using $e^z\ne0$. Liouville's theorem
-therefore gives $h=c$ for a constant $c$ with $|c|\leq1$
+therefore gives $h=c$ for a constant $c$ with $\abs{c}\leq1$
 [@SS03]. Thus $f(z)=ce^z$.
 :::
 
@@ -54,8 +54,8 @@ therefore gives $h=c$ for a constant $c$ with $|c|\leq1$
 Every such constant gives an admissible function.
 
 ::: pf-proof
-For $|c|\leq1$, the function $ce^z$ is entire and
-$|ce^z|=|c||e^z|\leq|e^z|$ everywhere. Hence every
+For $\abs{c}\leq1$, the function $ce^z$ is entire and
+$\abs{ce^z}=\abs{c}\abs{e^z}\leq\abs{e^z}$ everywhere. Hence every
 listed function satisfies the hypothesis, completing
 both directions of the classification.
 :::

@@ -33,7 +33,7 @@ m([0,1]\setminus K)<\varepsilon
 $$
 and the restriction
 $$
-f|_K
+f\restrict_K
 $$
 is continuous.
 

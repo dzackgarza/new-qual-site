@@ -40,7 +40,7 @@ be the orthogonal (Szegő) projection.
 
 For $\varphi\in L^\infty(\circlegroup)$, multiplication by $\varphi$ is bounded on $L^2$, and the Toeplitz operator with symbol $\varphi$ is
 $$
-T_\varphi=P_+M_\varphi|_{H^2},
+T_\varphi=P_+M_\varphi\restrict_{H^2},
 \qquad
 T_\varphi f=P_+(\varphi f).
 $$

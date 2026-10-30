@@ -104,7 +104,7 @@ Right Singular Vectors (Orthonormal Basis):
 ::: pf-proof
 
 ::: pf-step
-For each row $i$ with $r_i > 0$, let $S_i = \{j \in \{1, \dots, n\} \mid A_{ij} = 1\}$ be the set of column indices having their non-zero entry in row $i$, so $|S_i| = r_i$.
+For each row $i$ with $r_i > 0$, let $S_i = \{j \in \{1, \dots, n\} \mid A_{ij} = 1\}$ be the set of column indices having their non-zero entry in row $i$, so $\cardinality{S_i} = r_i$.
 :::
 
 ::: pf-step
@@ -120,7 +120,7 @@ $$v_i = \frac{1}{\sqrt{r_i}} A^T e_i = \frac{1}{\sqrt{r_i}} \sum_{j \in S_i} \ha
 ::: pf-step
 **Orthonormality:**
 
-- $\|v_i\|_2^2 = \frac{1}{r_i} \sum_{j \in S_i} 1 = \frac{r_i}{r_i} = 1$.
+- $\norm{v_i}_2^2 = \frac{1}{r_i} \sum_{j \in S_i} 1 = \frac{r_i}{r_i} = 1$.
 
 - For $i \ne k$, the index sets $S_i \cap S_k = \varnothing$ are disjoint, so $v_i^T v_k = 0$.
 :::

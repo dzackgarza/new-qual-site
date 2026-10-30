@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose f is entire and there exist A, $R > 0$ and natural number N such that $| f ( z ) | \leq A | z | ^ { N }$ for $| z | \geq R .$ . Show that (i) f is a polynomial and (ii) the degree of f is at most N .
+Suppose f is entire and there exist A, $R > 0$ and natural number N such that $\abs{ f ( z ) } \leq A \abs{ z } ^ { N }$ for $\abs{ z } \geq R .$ . Show that (i) f is a polynomial and (ii) the degree of f is at most N .
 :::
 
 ::: {.solution}

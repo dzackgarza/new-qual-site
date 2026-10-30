@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $D$ be the bounded region inside
 $$
-\{z\in\CC:|\operatorname{Re}z|+|\operatorname{Im}z|=1\},
+\{z\in\CC:\abs{\operatorname{Re}z}+\abs{\operatorname{Im}z}=1\},
 $$
 and orient $\partial D$ positively.
 Calculate
@@ -49,10 +49,10 @@ z=0,
 z=\pm2\sqrt2\,i.
 $$
 The point $0$ lies in the interior of the diamond
-$|\operatorname{Re}z|+|\operatorname{Im}z|<1$. For
+$\abs{\operatorname{Re}z}+\abs{\operatorname{Im}z}<1$. For
 $z=\pm2\sqrt2\,i$ one has
 $$
-|\operatorname{Re}z|+|\operatorname{Im}z|
+\abs{\operatorname{Re}z}+\abs{\operatorname{Im}z}
 =2\sqrt2>1,
 $$
 so these two poles lie outside $D$.

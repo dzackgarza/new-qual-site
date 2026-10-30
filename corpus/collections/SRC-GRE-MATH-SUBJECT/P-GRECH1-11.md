@@ -73,7 +73,7 @@ so $a^2=1$.
 
 ::: {.pf-step #s1-3}
 
-Thus $|a|=1$, and the listed value is
+Thus $\abs{a}=1$, and the listed value is
 $$
 \boxed{a=1},
 $$

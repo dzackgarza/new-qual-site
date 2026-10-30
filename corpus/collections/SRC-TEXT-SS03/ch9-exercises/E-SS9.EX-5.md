@@ -44,9 +44,9 @@ $$
 :::
 
 ::: {.solution}
-Let $\Lambda=\{n+m\tau:n,m\in\ZZ\}$, with $\Im\tau>0$. The number of lattice points in $|\omega|\le R$ is $O(R^2)$. Hence
+Let $\Lambda=\{n+m\tau:n,m\in\ZZ\}$, with $\Im\tau>0$. The number of lattice points in $\abs{\omega}\le R$ is $O(R^2)$. Hence
 $$
-\sum_{\omega\in\Lambda\setminus\{0\}}|\omega|^{-3}<\infty,
+\sum_{\omega\in\Lambda\setminus\{0\}}\abs{\omega}^{-3}<\infty,
 $$
 so the canonical product
 $$
@@ -55,7 +55,7 @@ $$
 $$
 converges locally uniformly and defines an entire function. Its only zeros are $0$ and the nonzero lattice points, and each is simple, since each factor $E_2(z/\omega)$ has a simple zero at $z=\omega$ and all remaining factors are nonzero there.
 
-The exponent of convergence of the lattice is $2$: $\sum_{\omega\ne0}|\omega|^{-s}$ converges for $s>2$ and diverges for $s\le2$. Thus any entire function with these zeros has order at least $2$. On the other hand, the standard canonical-product estimate for a genus-two product with counting function $N(R)=O(R^2)$ gives, for every $\varepsilon>0$,
+The exponent of convergence of the lattice is $2$: $\sum_{\omega\ne0}\abs{\omega}^{-s}$ converges for $s>2$ and diverges for $s\le2$. Thus any entire function with these zeros has order at least $2$. On the other hand, the standard canonical-product estimate for a genus-two product with counting function $N(R)=O(R^2)$ gives, for every $\varepsilon>0$,
 $$
 \log M_\sigma(R)=O(R^{2+\varepsilon}).
 $$
@@ -71,11 +71,11 @@ $$
 =\frac1z+\sum_{\omega\ne0}
 \left(\frac1{z-\omega}+\frac1\omega+\frac z{\omega^2}\right).
 $$
-Indeed, on a compact set $|z|\le R$ avoiding $\Lambda$, the summand for $|\omega|>2R$ equals
+Indeed, on a compact set $\abs{z}\le R$ avoiding $\Lambda$, the summand for $\abs{\omega}>2R$ equals
 $$
 \frac{z^2}{\omega^2(z-\omega)},
 $$
-so it is $O_R(|\omega|^{-3})$, and the series converges normally.
+so it is $O_R(\abs{\omega}^{-3})$, and the series converges normally.
 
 Finally let $L=-\sigma'/\sigma$. Differentiating the normally convergent series gives
 $$

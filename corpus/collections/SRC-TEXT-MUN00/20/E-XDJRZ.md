@@ -51,12 +51,12 @@ $$
 
 (a) For each $n$, the finite-dimensional Cauchy--Schwarz inequality of [[E-UDRRC]](b) gives
 $$
-\sum_{i=1}^n|x_iy_i|
+\sum_{i=1}^n\abs{x_iy_i}
 \le\left(\sum_{i=1}^n x_i^2\right)^{1/2}
    \left(\sum_{i=1}^n y_i^2\right)^{1/2}
-\le \|\mathbf x\|_2\|\mathbf y\|_2.
+\le \norm{\mathbf x}_2\norm{\mathbf y}_2.
 $$
-The partial sums on the left are increasing and bounded, hence converge. Thus $\sum|x_iy_i|$ converges.
+The partial sums on the left are increasing and bounded, hence converge. Thus $\sum\abs{x_iy_i}$ converges.
 
 (b) For scalars $c$,
 $$
@@ -78,11 +78,11 @@ d(\mathbf x,\mathbf y)=\left(\sum_i(x_i-y_i)^2\right)^{1/2}
 $$
 is finite. Nonnegativity, symmetry, and definiteness are immediate. For the triangle inequality, part (a) gives the infinite Cauchy--Schwarz inequality, so for $u,v\in X$,
 $$
-\|u+v\|_2^2
-=\|u\|_2^2+2\sum_i u_iv_i+\|v\|_2^2
-\le(\|u\|_2+\|v\|_2)^2.
+\norm{u+v}_2^2
+=\norm{u}_2^2+2\sum_i u_iv_i+\norm{v}_2^2
+\le(\norm{u}_2+\norm{v}_2)^2.
 $$
-Thus $\|u+v\|_2\le\|u\|_2+\|v\|_2$. Applying this to
+Thus $\norm{u+v}_2\le\norm{u}_2+\norm{v}_2$. Applying this to
 $$
 u=\mathbf x-\mathbf y,\qquad v=\mathbf y-\mathbf z
 $$

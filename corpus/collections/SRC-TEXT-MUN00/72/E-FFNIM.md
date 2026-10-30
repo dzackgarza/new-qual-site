@@ -36,7 +36,7 @@ Cell attachment description:
 
 ::: pf-step
 
-The space $X$ is homeomorphic to the adjunction space $A \cup_\phi B^n$ formed by attaching an $n$-cell $B^n$ to $A$ along the attaching map $\phi = h|_{S^{n-1}}: S^{n-1} \to A$.
+The space $X$ is homeomorphic to the adjunction space $A \cup_\phi B^n$ formed by attaching an $n$-cell $B^n$ to $A$ along the attaching map $\phi = h\restrict_{S^{n-1}}: S^{n-1} \to A$.
 
 ::: pf-proof
 
@@ -61,7 +61,7 @@ Open cover for Seifert–van Kampen Theorem:
 Let $p = h(0) \in X \setminus A$ be the center of the attached cell.
 Define the open subsets:
 $$
-U = X \setminus \{p\}, \qquad V = h\big(\{x \in B^n \mid \|x\| < 3/4\}\big).
+U = X \setminus \{p\}, \qquad V = h\big(\{x \in B^n \mid \norm{x} < 3/4\}\big).
 $$
 
 ::: pf-proof
@@ -107,7 +107,7 @@ contractibility of open Euclidean balls.
 ::: pf-step
 
 **Simply-connectedness of $U \cap V$ for $n > 2$:**
-The intersection $U \cap V = h(\{x \in B^n \mid 0 < \|x\| < 3/4\})$ is homeomorphic to the punctured Euclidean ball $\RR^n \setminus \{0\}$, which deformation retracts onto the sphere $S^{n-1}$.
+The intersection $U \cap V = h(\{x \in B^n \mid 0 < \norm{x} < 3/4\})$ is homeomorphic to the punctured Euclidean ball $\RR^n \setminus \{0\}$, which deformation retracts onto the sphere $S^{n-1}$.
 Since $n > 2$, the dimension $n - 1 \ge 2$, so $S^{n-1}$ is simply connected:
 $$
 \pi_1(U \cap V) \cong \pi_1(S^{n-1}) = 0.

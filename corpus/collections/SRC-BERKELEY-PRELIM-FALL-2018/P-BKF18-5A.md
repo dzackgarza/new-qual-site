@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Describe a conformal map from
 $$
-\{z:|z-4i|<4\}\cap\{z:|z-i|>1\}
+\{z:\abs{z-4i}<4\}\cap\{z:\abs{z-i}>1\}
 $$
 onto the open unit disk.
 :::

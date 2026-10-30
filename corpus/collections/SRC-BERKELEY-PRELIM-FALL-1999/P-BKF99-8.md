@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF99-8
 kind: problem
-title: The contour integral $\frac1{2\pi i}\int_{|z|=1}\frac{(z+2)^2}{z^2(2z-1)}\,dz$
+title: The contour integral $\frac1{2\pi i}\int_{\abs{z}=1}\frac{(z+2)^2}{z^2(2z-1)}\,dz$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 Evaluate
 $$
-I=\frac1{2\pi i}\int_{|z|=1}\frac{(z+2)^2}{z^2(2z-1)}\,dz,
+I=\frac1{2\pi i}\int_{\abs{z}=1}\frac{(z+2)^2}{z^2(2z-1)}\,dz,
 $$
 where the circle is oriented counterclockwise.
 :::
@@ -60,10 +60,10 @@ For the double pole at $0$,
 $$
 \operatorname{Res}(F,0)
 =
-\left.
+\evaluated{
 \frac{d}{dz}
 \left(\frac{(z+2)^2}{2z-1}\right)
-\right|_{z=0}.
+}_{z=0}.
 $$
 Differentiating gives
 $$
@@ -89,9 +89,9 @@ Since $2z-1=2(z-1/2)$,
 $$
 \operatorname{Res}(F,1/2)
 =
-\left.
+\evaluated{
 \frac{(z+2)^2}{2z^2}
-\right|_{z=1/2}
+}_{z=1/2}
 =
 \frac{(5/2)^2}{2(1/2)^2}
 =25.

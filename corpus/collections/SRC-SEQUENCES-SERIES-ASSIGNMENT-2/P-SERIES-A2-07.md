@@ -29,7 +29,7 @@ $$
 
 (d) Hence show that, for $n\ge2$,
 $$
-|r_{n+1}-r_n|\le \frac1{(n-1)^2}.
+\abs{r_{n+1}-r_n}\le \frac1{(n-1)^2}.
 $$
 
 (e) Hence show that $\{r_n\}$ converges and compute its limit.
@@ -341,7 +341,7 @@ $$
 Therefore
 $$
 \boxed{
-|r_{n+1}-r_n|
+\abs{r_{n+1}-r_n}
 =
 \frac1{f_nf_{n+1}}}.
 $$
@@ -377,7 +377,7 @@ Apply step [](#s1-7){.pf-ref} at indices $n$ and $n+1$.
 
 Hence
 $$
-|r_{n+1}-r_n|
+\abs{r_{n+1}-r_n}
 \le
 \frac1{n(n+1)}.
 $$
@@ -426,7 +426,7 @@ which holds for $n\ge1$.
 Thus
 $$
 \boxed{
-|r_{n+1}-r_n|
+\abs{r_{n+1}-r_n}
 \le
 \frac1{(n-1)^2}}
 \qquad(n\ge2).
@@ -464,10 +464,10 @@ The sum telescopes.
 
 Hence
 $$
-|r_m-r_n|
+\abs{r_m-r_n}
 \le
 \sum_{k=n}^{m-1}
-|r_{k+1}-r_k|.
+\abs{r_{k+1}-r_k}.
 $$
 
 
@@ -483,7 +483,7 @@ Apply the triangle inequality to step [](#s1-18){.pf-ref}.
 
 By step [](#s1-17){.pf-ref},
 $$
-|r_m-r_n|
+\abs{r_m-r_n}
 \le
 \sum_{k=n}^{m-1}
 \frac1{(k-1)^2}.
@@ -502,7 +502,7 @@ Bound each summand in step [](#s1-19){.pf-ref}.
 
 Therefore
 $$
-|r_m-r_n|
+\abs{r_m-r_n}
 \le
 \sum_{j=n-1}^{\infty}
 \frac1{j^2}.
@@ -548,7 +548,7 @@ Hence $(r_n)$ is Cauchy.
 Given $\varepsilon>0$, choose $N$ so that the tail in step [](#s1-21){.pf-ref} is less
 than $\varepsilon$ for $n\ge N$. Then every $m>n\ge N$ satisfies
 $$
-|r_m-r_n|<\varepsilon.
+\abs{r_m-r_n}<\varepsilon.
 $$
 
 :::

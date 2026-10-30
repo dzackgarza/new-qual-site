@@ -42,7 +42,7 @@ $$
 $$
 Also
 $$
-\left|\int_{C_R}\frac{e^{iz}}{z}\,dz\right|
+\abs{\int_{C_R}\frac{e^{iz}}{z}\,dz}
 \le\int_0^\pi e^{-R\sin\theta}\,d\theta.
 $$
 Using $\sin\theta\ge2\theta/\pi$ on $[0,\pi/2]$ and symmetry,

@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partial f } { \partial x } } \right) ^ { 2 } + \left( { \frac { \partial f } { \partial y } } \right) ^ { 2 } \right]$ , where D is a domain in (xy)-plane with the boundary $\partial D$.
-Write the equation for f, whose solution in a class of functions $f \in C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
+Write the equation for f, whose solution in a class of functions $f \in C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) \restrict _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ f_\varepsilon=f+\varepsilon\eta,
 $$
 where
 $$
-\eta|_{\partial D}=0.
+\eta\restrict_{\partial D}=0.
 $$
 
 
@@ -49,10 +49,10 @@ variation must vanish on $\partial D$.
 
 The first variation is
 $$
-\left.
+\evaluated{
 \frac d{d\varepsilon}
 J[f_\varepsilon]
-\right|_{\varepsilon=0}
+}_{\varepsilon=0}
 =
 2
 \iint_D
@@ -159,7 +159,7 @@ $$
 \Delta f=0
 \quad\text{in }D,
 \qquad
-f|_{\partial D}=f_0.
+f\restrict_{\partial D}=f_0.
 }
 $$
 
@@ -179,14 +179,14 @@ Let $f_*$ be such a harmonic solution, and let
 $$
 f=f_*+\eta
 $$
-with $\eta|_{\partial D}=0$. Then
+with $\eta\restrict_{\partial D}=0$. Then
 $$
 J[f]
 =
 J[f_*]
 +
 \iint_D
-|\nabla\eta|^2
+\norm{\nabla\eta}^2
 \,dA.
 $$
 
@@ -195,13 +195,13 @@ $$
 
 Expand
 $$
-|\nabla(f_*+\eta)|^2
+\norm{\nabla(f_*+\eta)}^2
 =
-|\nabla f_*|^2
+\norm{\nabla f_*}^2
 +
 2\nabla f_*\cdot\nabla\eta
 +
-|\nabla\eta|^2.
+\norm{\nabla\eta}^2.
 $$
 The cross term integrates to zero by step [](#s1-3){.pf-ref} because
 $$
@@ -225,7 +225,7 @@ Step [](#s1-6){.pf-ref} gives
 $$
 J[f]-J[f_*]
 =
-\iint_D|\nabla\eta|^2\,dA
+\iint_D\norm{\nabla\eta}^2\,dA
 \geq0.
 $$
 Thus no admissible perturbation decreases the energy.

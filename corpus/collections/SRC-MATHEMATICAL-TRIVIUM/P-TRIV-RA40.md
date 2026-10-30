@@ -54,7 +54,7 @@ This is the standard Gaussian integral.
 Therefore, in $\RR^{n+1}$,
 $$
 \int_{\RR^{n+1}}
-e^{-\|x\|^2}
+e^{-\norm{x}^2}
 \,dx
 =
 \pi^{(n+1)/2}.

@@ -49,7 +49,7 @@ $$
 \cong
 \left\langle
  a_1,b_1,a_2,b_2
-\mathrel{\Big|}
+\mathrel{\presentationbar}
 [a_1,b_1][a_2,b_2]=1
 \right\rangle.
 $$

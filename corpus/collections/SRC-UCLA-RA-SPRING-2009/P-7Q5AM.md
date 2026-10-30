@@ -22,13 +22,13 @@ audit:
 ::: {.problem}
 Let $H$ be an infinite dimensional real Hilbert space.
 
-a. Prove that the unit sphere $S=\{x\in H: ||x||=1\}$ is weakly dense in the unit ball $B=\{x\in H: ||x||\le 1\}$.
+a. Prove that the unit sphere $S=\{x\in H: \norm{x}=1\}$ is weakly dense in the unit ball $B=\{x\in H: \norm{x}\le 1\}$.
 
-b. Prove there is a sequence $T_n$ of bounded linear operators from $H$ to $H$ such that $||T_n||=1$ for all $n$ but $\lim_{n\to\infty} T_n(x)=0$ for all $x\in H$.
+b. Prove there is a sequence $T_n$ of bounded linear operators from $H$ to $H$ such that $\norm{T_n}=1$ for all $n$ but $\lim_{n\to\infty} T_n(x)=0$ for all $x\in H$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the unit sphere $S$ of an infinite-dimensional real Hilbert space $H$ is weakly dense in the closed unit ball $B$ in (a), and construct operators $T_n$ with $\|T_n\| = 1$ converging strongly to 0 in (b).
+**Goal:** Prove that the unit sphere $S$ of an infinite-dimensional real Hilbert space $H$ is weakly dense in the closed unit ball $B$ in (a), and construct operators $T_n$ with $\norm{T_n} = 1$ converging strongly to 0 in (b).
 
 ::: pf
 
@@ -38,15 +38,15 @@ Part (a): Reduction to the open unit ball.
 ::: pf-proof
 
 ::: pf-step
-Let $x_0 \in B$, so $\|x_0\| \le 1$.
+Let $x_0 \in B$, so $\norm{x_0} \le 1$.
 :::
 
 ::: pf-step
-If $\|x_0\| = 1$, then $x_0 \in S$, so the constant sequence $x_n = x_0 \in S$ converges strongly (and hence weakly) to $x_0$.
+If $\norm{x_0} = 1$, then $x_0 \in S$, so the constant sequence $x_n = x_0 \in S$ converges strongly (and hence weakly) to $x_0$.
 :::
 
 ::: pf-step
-Thus we may assume $\|x_0\| < 1$, which implies $c = \sqrt{1 - \|x_0\|^2} > 0$.
+Thus we may assume $\norm{x_0} < 1$, which implies $c = \sqrt{1 - \norm{x_0}^2} > 0$.
 :::
 
 :::
@@ -80,16 +80,16 @@ Part (a): Construction of the sequence on the unit sphere $S$.
 ::: pf-proof
 
 ::: pf-step
-For each $n \ge 1$, define $x_n = x_0 + c e_n = x_0 + \sqrt{1 - \|x_0\|^2} \, e_n$.
+For each $n \ge 1$, define $x_n = x_0 + c e_n = x_0 + \sqrt{1 - \norm{x_0}^2} \, e_n$.
 :::
 
 ::: pf-step
 Compute the norm squared of $x_n$ using orthogonality $\langle x_0, e_n \rangle = 0$:
-$$\|x_n\|^2 = \|x_0 + c e_n\|^2 = \|x_0\|^2 + 2c \langle x_0, e_n \rangle + c^2 \|e_n\|^2 = \|x_0\|^2 + 0 + (1 - \|x_0\|^2)(1) = 1.$$
+$$\norm{x_n}^2 = \norm{x_0 + c e_n}^2 = \norm{x_0}^2 + 2c \langle x_0, e_n \rangle + c^2 \norm{e_n}^2 = \norm{x_0}^2 + 0 + (1 - \norm{x_0}^2)(1) = 1.$$
 :::
 
 ::: pf-step
-Therefore $\|x_n\| = 1$, so $x_n \in S$ for all $n \ge 1$.
+Therefore $\norm{x_n} = 1$, so $x_n \in S$ for all $n \ge 1$.
 :::
 
 :::
@@ -107,7 +107,7 @@ By the Riesz Representation Theorem, every continuous linear functional $\phi \i
 
 ::: pf-step
 For any fixed $v \in H$, Bessel's inequality for the orthonormal sequence $\{e_n\}$ gives
-$$\sum_{n=1}^\infty |\langle v, e_n \rangle|^2 \le \|v\|^2 < \infty.$$
+$$\sum_{n=1}^\infty \abs{\langle v, e_n \rangle}^2 \le \norm{v}^2 < \infty.$$
 :::
 
 ::: pf-step
@@ -137,7 +137,7 @@ Part (b): Construction of rank-1 operators $T_n$.
 ::: pf-proof
 
 ::: pf-step
-Choose an orthonormal sequence $\{e_n\}_{n=1}^\infty$ in $H$, and fix a unit vector $u \in H$ with $\|u\| = 1$ (e.g. $u = e_1$).
+Choose an orthonormal sequence $\{e_n\}_{n=1}^\infty$ in $H$, and fix a unit vector $u \in H$ with $\norm{u} = 1$ (e.g. $u = e_1$).
 :::
 
 ::: pf-step
@@ -154,26 +154,26 @@ $$T_n(a x + b y) = \langle ax + by, e_n \rangle u = (a\langle x, e_n \rangle + b
 :::
 
 ::: pf-step
-Part (b): Operator norm $\|T_n\| = 1$.
+Part (b): Operator norm $\norm{T_n} = 1$.
 
 ::: pf-proof
 
 ::: pf-step
 For any $x \in H$, by the Cauchy–Schwarz inequality:
-$$\|T_n(x)\| = |\langle x, e_n \rangle| \|u\| = |\langle x, e_n \rangle| \le \|x\| \|e_n\| = \|x\|.$$
+$$\norm{T_n(x)} = \abs{\langle x, e_n \rangle} \norm{u} = \abs{\langle x, e_n \rangle} \le \norm{x} \norm{e_n} = \norm{x}.$$
 :::
 
 ::: pf-step
-Thus $\|T_n\| \le 1$.
+Thus $\norm{T_n} \le 1$.
 :::
 
 ::: pf-step
 Evaluating at the unit vector $x = e_n$:
-$$\|T_n(e_n)\| = |\langle e_n, e_n \rangle| \|u\| = 1 \cdot 1 = 1 = \|e_n\|.$$
+$$\norm{T_n(e_n)} = \abs{\langle e_n, e_n \rangle} \norm{u} = 1 \cdot 1 = 1 = \norm{e_n}.$$
 :::
 
 ::: pf-step
-Therefore $\|T_n\| = 1$ for all $n \ge 1$.
+Therefore $\norm{T_n} = 1$ for all $n \ge 1$.
 :::
 
 :::
@@ -186,16 +186,16 @@ Part (b): Strong convergence $T_n(x) \to 0$ for all $x \in H$.
 ::: pf-proof
 
 ::: pf-step
-For any fixed $x \in H$, Bessel's inequality gives $\sum_{n=1}^\infty |\langle x, e_n \rangle|^2 \le \|x\|^2 < \infty$.
+For any fixed $x \in H$, Bessel's inequality gives $\sum_{n=1}^\infty \abs{\langle x, e_n \rangle}^2 \le \norm{x}^2 < \infty$.
 :::
 
 ::: pf-step
-Thus $\lim_{n \to \infty} |\langle x, e_n \rangle| = 0$.
+Thus $\lim_{n \to \infty} \abs{\langle x, e_n \rangle} = 0$.
 :::
 
 ::: pf-step
 Compute the norm of the operator value:
-$$\lim_{n \to \infty} \|T_n(x)\| = \lim_{n \to \infty} |\langle x, e_n \rangle| = 0.$$
+$$\lim_{n \to \infty} \norm{T_n(x)} = \lim_{n \to \infty} \abs{\langle x, e_n \rangle} = 0.$$
 :::
 
 ::: pf-step
@@ -210,7 +210,7 @@ Therefore $\lim_{n \to \infty} T_n(x) = 0$ in the norm topology of $H$ for every
 Conclusion:
 
 ::: pf-proof
-$S$ is weakly dense in $B$, and the operators $T_n(x) = \langle x, e_n \rangle u$ satisfy $\|T_n\| = 1$ for all $n$ while $T_n(x) \to 0$ for all $x \in H$.
+$S$ is weakly dense in $B$, and the operators $T_n(x) = \langle x, e_n \rangle u$ satisfy $\norm{T_n} = 1$ for all $n$ while $T_n(x) \to 0$ for all $x \in H$.
 :::
 
 :::

@@ -28,7 +28,7 @@ y^n(t)=y_0+\int_0^t f(s,y^{n-1}(s))\,ds,
 \qquad y^0(t)\equiv y_0,
 $$
 converge uniformly to a solution $y$.
-Show that if $Y$ is another solution satisfying $|Y(t)-y_0|\le C$ on $[0,T]$, then $Y(t)=y(t)$ for all $t\in[0,T]$.
+Show that if $Y$ is another solution satisfying $\abs{Y(t)-y_0}\le C$ on $[0,T]$, then $Y(t)=y(t)$ for all $t\in[0,T]$.
 :::
 
 ::: {.solution}
@@ -49,17 +49,17 @@ $$
 converge uniformly to $y$ by hypothesis.
 In particular, choose $N$ such that
 $$
-\|y-y^N\|_\infty<1.
+\norm{y-y^N}_\infty<1.
 $$
 The function $y^N$ is continuous on the compact interval $[0,T]$, hence bounded:
 $$
-|y^N(t)|\le M_N.
+\abs{y^N(t)}\le M_N.
 $$
 Therefore
 $$
-|y(t)|
+\abs{y(t)}
 \le
-|y(t)-y^N(t)|+|y^N(t)|
+\abs{y(t)-y^N(t)}+\abs{y^N(t)}
 <
 1+M_N
 $$
@@ -73,7 +73,7 @@ for every $t\in[0,T]$.
 
 There exists $M>0$ such that
 $$
-|Y(t)-y(t)|\le M
+\abs{Y(t)-y(t)}\le M
 $$
 for every $t\in[0,T]$.
 
@@ -82,20 +82,20 @@ for every $t\in[0,T]$.
 
 By hypothesis,
 $$
-|Y(t)-y_0|\le C.
+\abs{Y(t)-y_0}\le C.
 $$
 By step [](#s1-1){.pf-ref}, $y$ is bounded; hence
 $$
-|y(t)-y_0|
+\abs{y(t)-y_0}
 $$
 is bounded by some constant $C'$.
 Thus
 $$
-|Y(t)-y(t)|
+\abs{Y(t)-y(t)}
 \le
-|Y(t)-y_0|
+\abs{Y(t)-y_0}
 +
-|y(t)-y_0|
+\abs{y(t)-y_0}
 \le
 C+C'.
 $$
@@ -112,9 +112,9 @@ $$
 
 For every $t\in[0,T]$,
 $$
-|Y(t)-y(t)|
+\abs{Y(t)-y(t)}
 \le
-K\int_0^t|Y(s)-y(s)|\,ds.
+K\int_0^t\abs{Y(s)-y(s)}\,ds.
 $$
 
 
@@ -147,14 +147,14 @@ $$
 Taking absolute values and using the Lipschitz estimate in the second variable,
 $$
 \begin{aligned}
-|Y(t)-y(t)|
+\abs{Y(t)-y(t)}
 &\le
 \int_0^t
-|f(s,Y(s))-f(s,y(s))|
+\abs{f(s,Y(s))-f(s,y(s))}
 \,ds\\
 &\le
 K\int_0^t
-|Y(s)-y(s)|
+\abs{Y(s)-y(s)}
 \,ds.
 \end{aligned}
 $$
@@ -168,7 +168,7 @@ $$
 For every integer $n\ge0$ and every $t\in[0,T]$,
 $$
 \boxed{
-|Y(t)-y(t)|
+\abs{Y(t)-y(t)}
 \le
 M\frac{(Kt)^n}{n!}
 }.
@@ -181,7 +181,7 @@ Proceed by induction on $n$.
 
 For $n=0$, the claim is
 $$
-|Y(t)-y(t)|\le M,
+\abs{Y(t)-y(t)}\le M,
 $$
 which is step [](#s1-2){.pf-ref}.
 
@@ -189,10 +189,10 @@ Assume the estimate holds for some $n$.
 Then step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
-|Y(t)-y(t)|
+\abs{Y(t)-y(t)}
 &\le
 K\int_0^t
-|Y(s)-y(s)|
+\abs{Y(s)-y(s)}
 \,ds\\
 &\le
 K\int_0^t
@@ -248,7 +248,7 @@ By step [](#s1-4){.pf-ref},
 $$
 0
 \le
-|Y(t)-y(t)|
+\abs{Y(t)-y(t)}
 \le
 M\frac{(Kt)^n}{n!}
 $$
@@ -256,7 +256,7 @@ for every $n$.
 By step [](#s1-5){.pf-ref}, the right-hand side tends to $0$ as $n\to\infty$.
 Therefore
 $$
-|Y(t)-y(t)|=0.
+\abs{Y(t)-y(t)}=0.
 $$
 Thus
 $$

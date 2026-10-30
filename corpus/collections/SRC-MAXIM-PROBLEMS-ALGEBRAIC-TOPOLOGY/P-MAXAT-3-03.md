@@ -55,7 +55,7 @@ Define
 $$
 g:S^n\to S^{n-1},
 \qquad
-g(x)=\frac{f(x)-f(-x)}{\|f(x)-f(-x)\|}.
+g(x)=\frac{f(x)-f(-x)}{\norm{f(x)-f(-x)}}.
 $$
 Then $g$ is continuous and odd:
 $$
@@ -68,7 +68,7 @@ $$
 The denominator is nonzero by step [](#s1-1){.pf-ref}, so the normalization is defined and continuous. Moreover,
 $$
 g(-x)
-=\frac{f(-x)-f(x)}{\|f(-x)-f(x)\|}
+=\frac{f(-x)-f(x)}{\norm{f(-x)-f(x)}}
 =-g(x).
 $$
 

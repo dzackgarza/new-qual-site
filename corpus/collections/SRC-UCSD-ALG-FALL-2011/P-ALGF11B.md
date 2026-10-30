@@ -45,7 +45,7 @@ where $p(n)$ is the partition function, i.e. the number of partitions of $n$.
 ::: pf
 
 ::: {.pf-step #centralizer-sum}
-For a fixed $\sigma\in S_n$, the number of $\tau\in S_n$ commuting with $\sigma$ is $|C_{S_n}(\sigma)|$.
+For a fixed $\sigma\in S_n$, the number of $\tau\in S_n$ commuting with $\sigma$ is $\cardinality{C_{S_n}(\sigma)}$.
 
 ::: pf-proof
 By definition,
@@ -56,7 +56,7 @@ $$
 Hence the number of possible second coordinates $\tau$ for a fixed first coordinate $\sigma$ is exactly the size of this centralizer.
 Therefore
 $$
-N_n=\sum_{\sigma\in S_n}|C_{S_n}(\sigma)|.
+N_n=\sum_{\sigma\in S_n}\cardinality{C_{S_n}(\sigma)}.
 $$
 :::
 
@@ -69,14 +69,14 @@ Each conjugacy class of $S_n$ contributes exactly $n!$ to the sum in step [](#ce
 Let $\mathcal C$ be the conjugacy class of $\sigma$.
 The orbit-stabilizer theorem for the conjugation action gives
 $$
-|\mathcal C|=[S_n:C_{S_n}(\sigma)]
-=\frac{n!}{|C_{S_n}(\sigma)|}.
+\cardinality{\mathcal C}=[S_n:C_{S_n}(\sigma)]
+=\frac{n!}{\cardinality{C_{S_n}(\sigma)}}.
 $$
 Centralizer size is constant on a conjugacy class.
 Hence the contribution of all elements of $\mathcal C$ to the sum is
 $$
-|\mathcal C|\,|C_{S_n}(\sigma)|
-=\frac{n!}{|C_{S_n}(\sigma)|}|C_{S_n}(\sigma)|
+\cardinality{\mathcal C}\,\cardinality{C_{S_n}(\sigma)}
+=\frac{n!}{\cardinality{C_{S_n}(\sigma)}}\cardinality{C_{S_n}(\sigma)}
 =n!.
 $$
 :::

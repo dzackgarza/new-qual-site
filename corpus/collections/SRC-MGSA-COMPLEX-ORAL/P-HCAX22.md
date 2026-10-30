@@ -33,7 +33,7 @@ H=F\circ\phi_a^{-1}
 $$
 is an automorphism of $\DD$ fixing $0$. Schwarz's lemma applied to $H$ and $H^{-1}$ gives
 $$
-|H(z)|=|z|,
+\abs{H(z)}=\abs{z},
 $$
 so the rigidity case gives
 $$

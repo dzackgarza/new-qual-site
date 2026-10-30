@@ -45,7 +45,7 @@ enclosed pole is the double pole at $i$. Factoring
 $F(z)=(z-i)^{-2}(z+i)^{-2}$ gives
 $$
 \operatorname{Res}_{i}F
-=\left.\frac{d}{dz}(z+i)^{-2}\right|_{z=i}
+=\evaluated{\frac{d}{dz}(z+i)^{-2}}_{z=i}
 =-\frac{2}{(2i)^3}=\frac{1}{4i}.
 $$
 The [[T-HRPNO|residue theorem]] therefore gives

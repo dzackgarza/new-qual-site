@@ -37,10 +37,10 @@ $$
 (d) Show that
 
 $$
-\int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = O (e ^ {- a | \xi |}), \quad \xi \in \RR
+\int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = O (e ^ {- a \abs{ \xi }}), \quad \xi \in \RR
 $$
 
-as $| \xi | \to \infty$ for some $a > 0$ . Determine the best possible $a \mathrm { { s } }$ in terms of the roots of R.
+as $\abs{ \xi } \to \infty$ for some $a > 0$ . Determine the best possible $a \mathrm { { s } }$ in terms of the roots of R.
 
 [Hint: For part $\mathrm { ( a ) }$ , use residues. The powers of $\xi$ appear when one diferentiates the function $f ( z ) = R ( z ) e ^ { - 2 \pi i z \xi }$ (as in the formula of Theorem 1.4 in the previous chapter). For part (c) argue in the lower half-plane.]
 :::
@@ -77,17 +77,17 @@ For (d), let
 $$
 \delta_+=\min_{\Im\alpha_j>0}\Im\alpha_j,
 \qquad
-\delta_- =\min_{\Im\beta_j<0}|\Im\beta_j|,
+\delta_- =\min_{\Im\beta_j<0}\abs{\Im\beta_j},
 $$
 omitting a quantity when the corresponding half-plane contains no pole. From (1), as $\xi\to-\infty$, each term has magnitude bounded by a polynomial times
 $$
-e^{-2\pi(\Im\alpha_j)|\xi|},
+e^{-2\pi(\Im\alpha_j)\abs{\xi}},
 $$
-so for every $a<2\pi\delta_+$ the transform is $O(e^{-a|\xi|})$ on that side. Similarly, for every $a<2\pi\delta_-$ it is $O(e^{-a|\xi|})$ as $\xi\to+\infty$. If one half-plane contains no poles, the transform is identically zero on the corresponding side.
+so for every $a<2\pi\delta_+$ the transform is $O(e^{-a\abs{\xi}})$ on that side. Similarly, for every $a<2\pi\delta_-$ it is $O(e^{-a\abs{\xi}})$ as $\xi\to+\infty$. If one half-plane contains no poles, the transform is identically zero on the corresponding side.
 
 Consequently a two-sided estimate
 $$
-\int_{\RR}R(x)e^{-2\pi i x\xi}\,dx=O(e^{-a|\xi|})
+\int_{\RR}R(x)e^{-2\pi i x\xi}\,dx=O(e^{-a\abs{\xi}})
 $$
 holds for every
 $$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-7
 kind: problem
-title: Lower bound for $|1-\sum a_k e^{2\pi ikx}|$ on $[0,1]$
+title: Lower bound for $\abs{1-\sum a_k e^{2\pi ikx}}$ on $[0,1]$
 classification:
   areas:
   - prelim
@@ -29,7 +29,7 @@ audit:
 Let $a _ { 1 } , a _ { 2 } , \ldots , a _ { n }$ be complex numbers. Prove that there is a point x in [0, 1] such that
 
 $$
-\left| 1 - \sum _ { k = 1 } ^ { n } a _ { k } e ^ { 2 \pi i k x } \right| \geqslant 1 .
+\abs{ 1 - \sum _ { k = 1 } ^ { n } a _ { k } e ^ { 2 \pi i k x } } \geqslant 1 .
 $$
 :::
 

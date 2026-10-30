@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-Recall that $f_n \to f$ in measure if, for every $\varepsilon > 0$, $\mu(\{x : |f(x) - f_n(x)| \geq \varepsilon\}) \to 0$ as $n \to \infty$.
+Recall that $f_n \to f$ in measure if, for every $\varepsilon > 0$, $\mu(\{x : \abs{f(x) - f_n(x)} \geq \varepsilon\}) \to 0$ as $n \to \infty$.
 Let $1 \leq p < \infty$.
 
 (a) Suppose $f_n \to f$ in $L^p(X, \mu)$.
 Show that $f_n \to f$ in measure.
 
-(b) Suppose $f_n \to f$ in measure and $|f_n| \leq g$ a.e. with $g \in L^p(X, \mu)$.
+(b) Suppose $f_n \to f$ in measure and $\abs{f_n} \leq g$ a.e. with $g \in L^p(X, \mu)$.
 Show that $f \in L^p(X, \mu)$ and $f_n \to f$ in $L^p(X, \mu)$.
 :::
 
@@ -43,7 +43,7 @@ Show that $f \in L^p(X, \mu)$ and $f_n \to f$ in $L^p(X, \mu)$.
 ::: pf
 
 ::: pf-step
-Let $\varepsilon > 0$ and define $E_n = \{x : |f(x) - f_n(x)| \ge \varepsilon\}$.
+Let $\varepsilon > 0$ and define $E_n = \{x : \abs{f(x) - f_n(x)} \ge \varepsilon\}$.
 
 ::: pf-proof
 definition.
@@ -52,8 +52,8 @@ definition.
 :::
 
 ::: {.pf-step #p1-s2}
-On $E_n$, $|f - f_n|^p \ge \varepsilon^p$, so
-$$\varepsilon^p \mu(E_n) \le \int_{E_n} |f - f_n|^p\,d\mu \le \int_X |f - f_n|^p\,d\mu = \|f - f_n\|_p^p.$$
+On $E_n$, $\abs{f - f_n}^p \ge \varepsilon^p$, so
+$$\varepsilon^p \mu(E_n) \le \int_{E_n} \abs{f - f_n}^p\,d\mu \le \int_X \abs{f - f_n}^p\,d\mu = \norm{f - f_n}_p^p.$$
 
 ::: pf-proof
 Chebyshev's inequality.
@@ -62,7 +62,7 @@ Chebyshev's inequality.
 :::
 
 ::: {.pf-step #p1-s3}
-Hence $\mu(E_n) \le \varepsilon^{-p} \|f - f_n\|_p^p \to 0$ as $n \to \infty$.
+Hence $\mu(E_n) \le \varepsilon^{-p} \norm{f - f_n}_p^p \to 0$ as $n \to \infty$.
 
 ::: pf-proof
 step [](#p1-s2){.pf-ref} and $f_n \to f$ in $L^p$.
@@ -95,7 +95,7 @@ convergence in measure implies a subsequence converges a.e.
 :::
 
 ::: {.pf-step #p2-s2}
-$|f_{n_k}| \le g$ a.e., so $|f| \le g$ a.e.
+$\abs{f_{n_k}} \le g$ a.e., so $\abs{f} \le g$ a.e.
 
 ::: pf-proof
 step [](#p2-s1){.pf-ref} and taking the pointwise limit.
@@ -104,7 +104,7 @@ step [](#p2-s1){.pf-ref} and taking the pointwise limit.
 :::
 
 ::: {.pf-step #p2-s3}
-Hence $f \in L^p$ (since $g \in L^p$ and $|f| \le g$).
+Hence $f \in L^p$ (since $g \in L^p$ and $\abs{f} \le g$).
 
 ::: pf-proof
 step [](#p2-s2){.pf-ref}.
@@ -113,16 +113,16 @@ step [](#p2-s2){.pf-ref}.
 :::
 
 ::: {.pf-step #p2-s4}
-$|f_n - f|^p \le (|f_n| + |f|)^p \le (2g)^p = 2^p g^p \in L^1$.
+$\abs{f_n - f}^p \le (\abs{f_n} + \abs{f})^p \le (2g)^p = 2^p g^p \in L^1$.
 
 ::: pf-proof
-$|f_n| \le g$ and $|f| \le g$, so $|f_n - f| \le 2g$.
+$\abs{f_n} \le g$ and $\abs{f} \le g$, so $\abs{f_n - f} \le 2g$.
 :::
 
 :::
 
 ::: {.pf-step #p2-s5}
-Suppose for contradiction that $f_n \not\to f$ in $L^p$. Then there is $\varepsilon > 0$ and a subsequence $f_{n_k}$ with $\|f_{n_k} - f\|_p \ge \varepsilon$.
+Suppose for contradiction that $f_n \not\to f$ in $L^p$. Then there is $\varepsilon > 0$ and a subsequence $f_{n_k}$ with $\norm{f_{n_k} - f}_p \ge \varepsilon$.
 
 ::: pf-proof
 negate $L^p$ convergence.
@@ -140,7 +140,7 @@ convergence in measure implies a.e. convergence of a subsequence.
 :::
 
 ::: {.pf-step #p2-s7}
-$|f_{n_{k_j}} - f|^p \le 2^p g^p \in L^1$ and $|f_{n_{k_j}} - f|^p \to 0$ a.e.
+$\abs{f_{n_{k_j}} - f}^p \le 2^p g^p \in L^1$ and $\abs{f_{n_{k_j}} - f}^p \to 0$ a.e.
 
 ::: pf-proof
 step [](#p2-s4){.pf-ref} and step [](#p2-s6){.pf-ref}.
@@ -149,7 +149,7 @@ step [](#p2-s4){.pf-ref} and step [](#p2-s6){.pf-ref}.
 :::
 
 ::: {.pf-step #p2-s8}
-By the dominated convergence theorem, $\|f_{n_{k_j}} - f\|_p^p = \int |f_{n_{k_j}} - f|^p \to 0$.
+By the dominated convergence theorem, $\norm{f_{n_{k_j}} - f}_p^p = \int \abs{f_{n_{k_j}} - f}^p \to 0$.
 
 ::: pf-proof
 step [](#p2-s7){.pf-ref}.

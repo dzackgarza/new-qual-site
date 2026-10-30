@@ -87,7 +87,7 @@ $$
 The inverse $\phi^{-1}$ is continuous, so the preimage of the compact set
 $K$ is compact. Since $L$ is compact and contained in the open unit disk,
 $$
-\max_{z\in L}|z|<1.
+\max_{z\in L}\abs{z}<1.
 $$
 Choose $r$ strictly between this maximum and $1$.
 
@@ -97,7 +97,7 @@ Choose $r$ strictly between this maximum and $1$.
 
 ::: {.pf-step #s1-4}
 
-For every $z$ with $|z|\le r$, Harnack's inequality gives
+For every $z$ with $\abs{z}\le r$, Harnack's inequality gives
 $$
 \frac{1-r}{1+r}v(0)
 \le
@@ -112,13 +112,13 @@ $$
 For a nonnegative harmonic function on the unit disk, Harnack's inequality
 states that
 $$
-\frac{1-|z|}{1+|z|}v(0)
+\frac{1-\abs{z}}{1+\abs{z}}v(0)
 \le
 v(z)
 \le
-\frac{1+|z|}{1-|z|}v(0).
+\frac{1+\abs{z}}{1-\abs{z}}v(0).
 $$
-If $|z|\le r$, monotonicity of the two rational factors gives the displayed
+If $\abs{z}\le r$, monotonicity of the two rational factors gives the displayed
 uniform bounds.
 
 :::

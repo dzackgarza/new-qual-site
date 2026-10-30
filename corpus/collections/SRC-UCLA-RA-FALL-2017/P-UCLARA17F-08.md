@@ -33,7 +33,7 @@ P(z,\zeta)
 \coloneqq
 \operatorname{Re}\!\left(\frac{\zeta+z}{\zeta-z}\right)
 =
-\frac{1-|z|^2}{|\zeta-z|^2}.
+\frac{1-\abs{z}^2}{\abs{\zeta-z}^2}.
 $$
 
 ::: pf
@@ -47,15 +47,15 @@ If $u$ is uniformly continuous on $\DD$, then $u$ has a unique continuous extens
 
 Let $\zeta\in\partial\DD$ and choose any sequence $(z_n)$ in $\DD$ with $z_n\to\zeta$. Since $(z_n)$ is Cauchy and $u$ is uniformly continuous, $(u(z_n))$ is Cauchy in $\RR$, hence convergent.
 
-If $(w_n)$ is another sequence in $\DD$ with $w_n\to\zeta$, then $|z_n-w_n|\to0$, so uniform continuity gives $|u(z_n)-u(w_n)|\to0$. Thus the limit depends only on $\zeta$; define it to be $f(\zeta)$, and set $f=u$ on $\DD$.
+If $(w_n)$ is another sequence in $\DD$ with $w_n\to\zeta$, then $\abs{z_n-w_n}\to0$, so uniform continuity gives $\abs{u(z_n)-u(w_n)}\to0$. Thus the limit depends only on $\zeta$; define it to be $f(\zeta)$, and set $f=u$ on $\DD$.
 
-To prove continuity at a boundary point $\zeta$, fix $\varepsilon>0$ and choose $\delta>0$ from uniform continuity of $u$. If $x\in\overline{\DD}$ and $|x-\zeta|<\delta/2$, choose $x_n\in\DD$ with $x_n\to x$ and $\zeta_n\in\DD$ with $\zeta_n\to\zeta$. For all sufficiently large $n$,
+To prove continuity at a boundary point $\zeta$, fix $\varepsilon>0$ and choose $\delta>0$ from uniform continuity of $u$. If $x\in\overline{\DD}$ and $\abs{x-\zeta}<\delta/2$, choose $x_n\in\DD$ with $x_n\to x$ and $\zeta_n\in\DD$ with $\zeta_n\to\zeta$. For all sufficiently large $n$,
 $$
-|x_n-\zeta_n|
-\le |x_n-x|+|x-\zeta|+|\zeta-\zeta_n|
+\abs{x_n-\zeta_n}
+\le \abs{x_n-x}+\abs{x-\zeta}+\abs{\zeta-\zeta_n}
 <\delta.
 $$
-Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f(\zeta)|\le\varepsilon$. Therefore $f$ is continuous on $\overline{\DD}$. Uniqueness follows because $\DD$ is dense in $\overline{\DD}$.
+Hence $\abs{u(x_n)-u(\zeta_n)}<\varepsilon$, and passage to the limit gives $\abs{f(x)-f(\zeta)}\le\varepsilon$. Therefore $f$ is continuous on $\overline{\DD}$. Uniqueness follows because $\DD$ is dense in $\overline{\DD}$.
 
 :::
 
@@ -72,7 +72,7 @@ $$
 
 ::: pf-proof
 
-Fix $z=re^{i\varphi}\in\DD$ and choose $R$ with $r<R<1$. Since $u$ is harmonic on the closed disk $\{|w|\le R\}$, the Poisson formula on that disk gives
+Fix $z=re^{i\varphi}\in\DD$ and choose $R$ with $r<R<1$. Since $u$ is harmonic on the closed disk $\{\abs{w}\le R\}$, the Poisson formula on that disk gives
 $$
 u(z)
 =
@@ -82,7 +82,7 @@ u(Re^{i\theta})\,d\theta.
 $$
 As $R\uparrow1$, continuity of $f$ on the compact disk $\overline{\DD}$ implies
 $$
-\sup_{\theta}|u(Re^{i\theta})-f(e^{i\theta})|\longrightarrow0.
+\sup_{\theta}\abs{u(Re^{i\theta})-f(e^{i\theta})}\longrightarrow0.
 $$
 Also, because $r<1$ is fixed,
 $$
@@ -130,7 +130,7 @@ The Poisson kernel is the harmonic extension of the constant boundary function $
 
 Fix $\varepsilon>0$. There is an open arc $I\subset\partial\DD$ containing $\zeta_0$ such that
 $$
-|f(\zeta)-f(\zeta_0)|<\varepsilon
+\abs{f(\zeta)-f(\zeta_0)}<\varepsilon
 \qquad (\zeta\in I).
 $$
 
@@ -156,19 +156,19 @@ $$
 
 The compact set $J$ does not contain $\zeta_0$, so
 $$
-d\coloneqq\min_{\zeta\in J}|\zeta-\zeta_0|>0.
+d\coloneqq\min_{\zeta\in J}\abs{\zeta-\zeta_0}>0.
 $$
-For $|z-\zeta_0|<d/2$ and $\zeta\in J$,
+For $\abs{z-\zeta_0}<d/2$ and $\zeta\in J$,
 $$
-|\zeta-z|
-\ge |\zeta-\zeta_0|-|z-\zeta_0|
+\abs{\zeta-z}
+\ge \abs{\zeta-\zeta_0}-\abs{z-\zeta_0}
 \ge d/2.
 $$
 Therefore
 $$
 0\le P(z,\zeta)
-=\frac{1-|z|^2}{|\zeta-z|^2}
-\le \frac{4(1-|z|^2)}{d^2},
+=\frac{1-\abs{z}^2}{\abs{\zeta-z}^2}
+\le \frac{4(1-\abs{z}^2)}{d^2},
 $$
 and the right-hand side tends to $0$ as $z\to\zeta_0$.
 
@@ -185,18 +185,18 @@ $u(z)\to f(\zeta_0)$ as $z\to\zeta_0$ within $\DD$.
 
 Let
 $$
-M\coloneqq\max_{\zeta\in\partial\DD}|f(\zeta)-f(\zeta_0)|.
+M\coloneqq\max_{\zeta\in\partial\DD}\abs{f(\zeta)-f(\zeta_0)}.
 $$
 Using step [](#s3-1){.pf-ref} and splitting the boundary integral over $I$ and $J$,
 $$
 \begin{aligned}
-|u(z)-f(\zeta_0)|
+\abs{u(z)-f(\zeta_0)}
 &\le
 \frac1{2\pi}\int_I
-P(z,\zeta)|f(\zeta)-f(\zeta_0)|\,|d\zeta| \\
+P(z,\zeta)\abs{f(\zeta)-f(\zeta_0)}\,\abs{d\zeta} \\
 &\qquad+
 \frac1{2\pi}\int_J
-P(z,\zeta)|f(\zeta)-f(\zeta_0)|\,|d\zeta| \\
+P(z,\zeta)\abs{f(\zeta)-f(\zeta_0)}\,\abs{d\zeta} \\
 &\le
 \varepsilon+
 M\sup_{\zeta\in J}P(z,\zeta).
@@ -204,7 +204,7 @@ M\sup_{\zeta\in J}P(z,\zeta).
 $$
 By step [](#s3-3){.pf-ref} the second term tends to $0$. Hence
 $$
-\limsup_{z\to\zeta_0}|u(z)-f(\zeta_0)|\le\varepsilon.
+\limsup_{z\to\zeta_0}\abs{u(z)-f(\zeta_0)}\le\varepsilon.
 $$
 Since $\varepsilon>0$ was arbitrary, the limit is $0$.
 

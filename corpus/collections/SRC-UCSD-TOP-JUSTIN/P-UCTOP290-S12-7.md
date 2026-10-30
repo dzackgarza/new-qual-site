@@ -36,7 +36,7 @@ The dimension of $H^k$ is then $\binom{n}{k}$ with basis $\{\alpha_{i_1} \wedge 
 The integral cohomology ring of the circle is
 $$
 H^*(S^1;\ZZ)\cong\Lambda(\alpha),
-\qquad |\alpha|=1.
+\qquad \gradeddegree{\alpha}=1.
 $$
 
 ::: pf-proof
@@ -72,7 +72,7 @@ H^*(T^n;\ZZ)
 \cong\bigotimes_{i=1}^n\Lambda(\alpha_i)
 \cong\boxed{\Lambda^*(\alpha_1,\ldots,\alpha_n)},
 $$
-where $|\alpha_i|=1$.
+where $\gradeddegree{\alpha_i}=1$.
 
 ::: pf-proof
 

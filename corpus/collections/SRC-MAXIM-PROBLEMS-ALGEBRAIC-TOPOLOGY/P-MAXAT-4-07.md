@@ -114,7 +114,7 @@ H^*(K(\ZZ,n);\QQ)
 \Lambda_{\QQ}(x_n),&n\text{ odd},\\
 \QQ[x_n],&n\text{ even},
 \end{cases}
-\qquad |x_n|=n.}
+\qquad \gradeddegree{x_n}=n.}
 $$
 
 

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 2. Let $(X,\rho)$ be a compact metric space with at least two points, and let $C(X)$ be the space of continuous functions $X\to\RR$ with the uniform norm
 $$
-\|f\|=\sup_X|f(x)|.
+\norm{f}=\sup_X\abs{f(x)}.
 $$
 Let $D$ be a dense subset of $X$, and for each $y\in D$ define $f_y\in C(X)$ by
 $$
@@ -79,7 +79,7 @@ $$
 
 One has
 $$
-\boxed{\overline A^{\|\cdot\|_\infty}=C(X)}.
+\boxed{\overline A^{\norm{\cdot}_\infty}=C(X)}.
 $$
 
 
@@ -134,8 +134,8 @@ M_k=\prod_{j=1}^{r_k}f_{y_{k,j}}
 $$
 has finite uniform norm because it is continuous on compact $X$. Approximating the finitely many coefficients $a_k$ by rationals $q_k$ makes
 $$
-\left\|\sum_{k=1}^m(a_k-q_k)M_k\right\|_\infty
-\le\sum_{k=1}^m|a_k-q_k|\,\|M_k\|_\infty
+\norm{\sum_{k=1}^m(a_k-q_k)M_k}_\infty
+\le\sum_{k=1}^m\abs{a_k-q_k}\,\norm{M_k}_\infty
 $$
 arbitrarily small.
 Hence $A_{\QQ}$ is dense in $A_0$.

@@ -76,7 +76,7 @@ For $i=2,\ldots,n$,
 $$
 \lambda_i
 =
-|1-\zeta^{i-1}|.
+\abs{1-\zeta^{i-1}}.
 $$
 
 ::: pf-proof
@@ -90,11 +90,11 @@ The Euclidean distance between two complex numbers is the modulus of their diffe
 $$
 \lambda_i
 =
-|Q_i-Q_1|
+\abs{Q_i-Q_1}
 =
-|\zeta^{i-1}-1|
+\abs{\zeta^{i-1}-1}
 =
-|1-\zeta^{i-1}|.
+\abs{1-\zeta^{i-1}}.
 $$
 :::
 
@@ -134,11 +134,11 @@ By [](#chord-lengths){.pf-ref},
 $$
 \prod_{i=2}^n\lambda_i
 =
-\prod_{k=1}^{n-1}|1-\zeta^k|
+\prod_{k=1}^{n-1}\abs{1-\zeta^k}
 =
-\left|
+\abs{
 \prod_{k=1}^{n-1}(1-\zeta^k)
-\right|.
+}.
 $$
 By [](#root-factorization){.pf-ref}, the product inside the modulus equals $P_{n-1}(1)$. [](#polynomial-value){.pf-ref} gives
 $$
@@ -147,7 +147,7 @@ $$
 so
 $$
 \prod_{i=2}^n\lambda_i
-=|n|
+=\abs{n}
 =n.
 $$
 :::

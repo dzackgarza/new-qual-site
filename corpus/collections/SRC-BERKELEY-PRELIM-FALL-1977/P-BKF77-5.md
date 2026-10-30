@@ -129,7 +129,7 @@ pq-(p+q-1)
 $$
 Thus
 $$
-\boxed{|\ZZ_{pq}^\times|=(p-1)(q-1).}
+\boxed{\cardinality{\ZZ_{pq}^\times}=(p-1)(q-1).}
 $$
 
 :::

@@ -19,7 +19,7 @@ audit:
 Let $V$ be a complex inner-product space, let $W\subset V$ be a finite-dimensional subspace, and let $v\in V$.
 Prove that there exists a unique vector $v_W\in W$ such that
 $$
-\|v-v_W\|\leq\|v-w\|
+\norm{v-v_W}\leq\norm{v-w}
 $$
 for every $w\in W$.
 Deduce that equality holds if and only if $w=v_W$.
@@ -129,11 +129,11 @@ the two summands are orthogonal.
 
 For every $w\in W$,
 $$
-\|v-w\|^2
+\norm{v-w}^2
 =
-\|v-v_W\|^2
+\norm{v-v_W}^2
 +
-\|v_W-w\|^2.
+\norm{v_W-w}^2.
 $$
 
 
@@ -150,9 +150,9 @@ Apply the Pythagorean theorem to the orthogonal decomposition in step [](#s1-3){
 For every $w\in W$,
 $$
 \boxed{
-\|v-v_W\|
+\norm{v-v_W}
 \le
-\|v-w\|
+\norm{v-w}
 }.
 $$
 
@@ -161,13 +161,13 @@ $$
 
 By step [](#s1-4){.pf-ref},
 $$
-\|v-w\|^2
+\norm{v-w}^2
 =
-\|v-v_W\|^2
+\norm{v-v_W}^2
 +
-\|v_W-w\|^2
+\norm{v_W-w}^2
 \ge
-\|v-v_W\|^2.
+\norm{v-v_W}^2.
 $$
 Both sides are nonnegative, so taking square roots gives the inequality.
 
@@ -179,9 +179,9 @@ Both sides are nonnegative, so taking square roots gives the inequality.
 
 Equality
 $$
-\|v-v_W\|
+\norm{v-v_W}
 =
-\|v-w\|
+\norm{v-w}
 $$
 holds if and only if
 $$
@@ -193,7 +193,7 @@ $$
 
 By step [](#s1-4){.pf-ref}, equality of the norms is equivalent to
 $$
-\|v_W-w\|^2=0.
+\norm{v_W-w}^2=0.
 $$
 This holds exactly when
 $$
@@ -217,9 +217,9 @@ u\in W
 $$
 also satisfies
 $$
-\|v-u\|
+\norm{v-u}
 \le
-\|v-w\|
+\norm{v-w}
 $$
 for every $w\in W$.
 Taking
@@ -228,16 +228,16 @@ w=v_W
 $$
 gives
 $$
-\|v-u\|
+\norm{v-u}
 \le
-\|v-v_W\|.
+\norm{v-v_W}.
 $$
 But step [](#s1-5){.pf-ref}, applied to $w=u$, gives the reverse inequality.
 Thus
 $$
-\|v-u\|
+\norm{v-u}
 =
-\|v-v_W\|.
+\norm{v-v_W}.
 $$
 By step [](#s1-6){.pf-ref},
 $$

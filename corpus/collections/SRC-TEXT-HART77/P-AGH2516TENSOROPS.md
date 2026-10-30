@@ -112,7 +112,7 @@ $$
 u\longmapsto(v\longmapsto u\wedge v).
 $$
 On a framed open set, let $I\subseteq\{1,\ldots,n\}$ have size $r$ and let $I^c$ be its complementary ordered subset.
-The product $e_I\wedge e_J$ is zero for $|J|=n-r$ unless $J=I^c$.
+The product $e_I\wedge e_J$ is zero for $\cardinality{J}=n-r$ unless $J=I^c$.
 For $J=I^c$ it is $\varepsilon_I e_1\wedge\cdots\wedge e_n$, where $\varepsilon_I\in\{1,-1\}$ is the sign of the permutation listing $I$ before $I^c$.
 Consequently the displayed morphism has a signed permutation matrix in these frames and is an isomorphism over every coefficient ring.
 By [[P-AGH251DUALSHEAF]], $\sheafhom(\mathcal G,\mathcal L)\cong\dualof{\mathcal G}\otimes\mathcal L$, giving the required isomorphism.

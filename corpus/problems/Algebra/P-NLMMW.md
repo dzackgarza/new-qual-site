@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-If $|G| = pq$ (distinct primes), is $G$ necessarily nilpotent?
+If $\cardinality{G} = pq$ (distinct primes), is $G$ necessarily nilpotent?
 :::
 
 ::: {.solution}

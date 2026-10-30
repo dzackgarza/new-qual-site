@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Let $\mu$ be a finite positive Borel measure on $\CC$.
 
-a. Prove that $F(z) = \int_\CC \frac{1}{z-w}\,d\mu(w)$ exists for almost all $z\in\CC$ and that $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K\subseteq\CC$.
+a. Prove that $F(z) = \int_\CC \frac{1}{z-w}\,d\mu(w)$ exists for almost all $z\in\CC$ and that $\int_K \abs{F(z)}\,dx\,dy < \infty$ for every compact $K\subseteq\CC$.
 
-b. Prove that for almost every horizontal line $L$ and all compact $K\subseteq L$, $\int_K |F(x+iy)|\,dx < \infty$.
+b. Prove that for almost every horizontal line $L$ and all compact $K\subseteq L$, $\int_K \abs{F(x+iy)}\,dx < \infty$.
 
 c. Prove that for almost all open squares $S$ with sides parallel to the axes, $$\mu(S) = \frac{1}{2\pi i}\int_{\partial S} F(z)\,dz.$$
 :::
@@ -58,7 +58,7 @@ compact sets are bounded.
 For each fixed $w \in \CC$, the shift $z \mapsto z - w$ maps $K$ into the closed disk $\overline{B}(0, R)$.
 Using polar coordinates centered at $w$:
 $$
-\int_K \frac{1}{|z - w|}\,dx\,dy \le \int_{\overline{B}(w, R)} \frac{1}{|z - w|}\,dx\,dy = \int_0^R \int_0^{2\pi} \frac{1}{r} r\,dr\,d\theta = 2\pi R.
+\int_K \frac{1}{\abs{z - w}}\,dx\,dy \le \int_{\overline{B}(w, R)} \frac{1}{\abs{z - w}}\,dx\,dy = \int_0^R \int_0^{2\pi} \frac{1}{r} r\,dr\,d\theta = 2\pi R.
 $$
 
 ::: pf-proof
@@ -73,7 +73,7 @@ polar integration of $1/r$.
 
 By Tonelli’s Theorem, integrating over $K$ and $\CC$ gives:
 $$
-\int_K |F(z)|\,dx\,dy \le \int_K \left(\int_\CC \frac{1}{|z - w|}\,d\mu(w)\right) dx\,dy = \int_\CC \left(\int_K \frac{1}{|z - w|}\,dx\,dy\right) d\mu(w) \le 2\pi R \mu(\CC) < \infty.
+\int_K \abs{F(z)}\,dx\,dy \le \int_K \left(\int_\CC \frac{1}{\abs{z - w}}\,d\mu(w)\right) dx\,dy = \int_\CC \left(\int_K \frac{1}{\abs{z - w}}\,dx\,dy\right) d\mu(w) \le 2\pi R \mu(\CC) < \infty.
 $$
 
 ::: pf-proof
@@ -86,7 +86,7 @@ Tonelli's Theorem for non-negative measurable functions and finiteness of $\mu$.
 
 ::: pf-step
 
-Since $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K \subset \CC$, $F \in L^1_{\mathrm{loc}}(\CC)$, which implies $|F(z)| < \infty$ for almost every $z \in \CC$ with respect to Lebesgue measure.
+Since $\int_K \abs{F(z)}\,dx\,dy < \infty$ for every compact $K \subset \CC$, $F \in L^1_{\mathrm{loc}}(\CC)$, which implies $\abs{F(z)} < \infty$ for almost every $z \in \CC$ with respect to Lebesgue measure.
 
 ::: pf-proof
 
@@ -109,7 +109,7 @@ Part (b): Integrability along almost every horizontal line:
 ::: pf-step
 
 For any $n \ge 1$, let $Q_n = [-n, n] \times [-n, n] \subset \CC$.
-By Part (a), $\int_{Q_n} |F(x+iy)|\,dx\,dy < \infty$.
+By Part (a), $\int_{Q_n} \abs{F(x+iy)}\,dx\,dy < \infty$.
 
 ::: pf-proof
 
@@ -123,9 +123,9 @@ Step [](#s1){.pf-ref} applied to the compact set $Q_n$.
 
 By Fubini–Tonelli Theorem:
 $$
-\int_{-n}^n \left(\int_{-n}^n |F(x+iy)|\,dx\right) dy = \int_{Q_n} |F(x+iy)|\,dx\,dy < \infty.
+\int_{-n}^n \left(\int_{-n}^n \abs{F(x+iy)}\,dx\right) dy = \int_{Q_n} \abs{F(x+iy)}\,dx\,dy < \infty.
 $$
-Thus the function $y \mapsto \int_{-n}^n |F(x+iy)|\,dx$ is finite for almost every $y \in [-n, n]$.
+Thus the function $y \mapsto \int_{-n}^n \abs{F(x+iy)}\,dx$ is finite for almost every $y \in [-n, n]$.
 
 ::: pf-proof
 
@@ -137,8 +137,8 @@ Fubini–Tonelli Theorem on product measure spaces.
 
 ::: pf-step
 
-Taking the countable union of the exceptional null sets over all $n \ge 1$, for almost every $y \in \RR$, $\int_{-n}^n |F(x+iy)|\,dx < \infty$ for all $n$.
-Thus $\int_K |F(x+iy)|\,dx < \infty$ for every compact $K \subset L_y$.
+Taking the countable union of the exceptional null sets over all $n \ge 1$, for almost every $y \in \RR$, $\int_{-n}^n \abs{F(x+iy)}\,dx < \infty$ for all $n$.
+Thus $\int_K \abs{F(x+iy)}\,dx < \infty$ for every compact $K \subset L_y$.
 
 ::: pf-proof
 
@@ -173,7 +173,7 @@ the family of parallel lines carrying positive $\mu$-measure is at most countabl
 
 ::: pf-step
 
-By Part (b) and the analogous statement for vertical lines, the 1D integral $\int_{\partial S} |F(z)|\,|dz| < \infty$ for almost all squares $S$.
+By Part (b) and the analogous statement for vertical lines, the 1D integral $\int_{\partial S} \abs{F(z)}\,\abs{dz} < \infty$ for almost all squares $S$.
 
 ::: pf-proof
 

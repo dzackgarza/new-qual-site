@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-20
 kind: problem
-title: Harnack-type bounds for $|f(z)|$ for self-maps of the disk
+title: Harnack-type bounds for $\abs{f(z)}$ for self-maps of the disk
 classification:
   areas:
   - complex-analysis
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let f be a non-constant analytic function on D with $f ( \DD ) \subseteq \DD . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { | f ( 0 ) | - | z | } { 1 + | f ( 0 ) | | z | } } \leq | f ( z ) | \leq { \frac { | f ( 0 ) | + | z | } { 1 - | f ( 0 ) | | z | } } ,$
+Let f be a non-constant analytic function on D with $f ( \DD ) \subseteq \DD . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { \abs{ f ( 0 ) } - \abs{ z } } { 1 + \abs{ f ( 0 ) } \abs{ z } } } \leq \abs{ f ( z ) } \leq { \frac { \abs{ f ( 0 ) } + \abs{ z } } { 1 - \abs{ f ( 0 ) } \abs{ z } } } ,$
 :::
 
 ::: {.solution}

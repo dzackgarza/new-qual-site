@@ -144,7 +144,7 @@ $D$ is connected. Thus $D$ is connected.
 
 The restriction
 $$
-f|_D:D\longrightarrow H\cong\PP^{n-1}
+f\restrict_D:D\longrightarrow H\cong\PP^{n-1}
 $$
 is an isomorphism.
 
@@ -154,14 +154,14 @@ The square
 $$
 \begin{CD}
 D @>>> Y\\
-@V{f|_D}VV @VV{f}V\\
+@V{f\restrict_D}VV @VV{f}V\\
 H @>>> \PP^n
 \end{CD}
 $$
-is cartesian. Hence $f|_D$ is the base change of the finite étale
+is cartesian. Hence $f\restrict_D$ is the base change of the finite étale
 morphism $f$, so it is finite étale. Step [](#s4){.pf-ref} says that $D$ is
 connected. By the induction hypothesis, every connected finite étale
-cover of $\PP^{n-1}$ is an isomorphism. Therefore $f|_D$ is an
+cover of $\PP^{n-1}$ is an isomorphism. Therefore $f\restrict_D$ is an
 isomorphism.
 
 :::
@@ -180,7 +180,7 @@ base change. Hence
 $$
 \deg f
 =
-\deg(f|_D)
+\deg(f\restrict_D)
 =
 1
 $$

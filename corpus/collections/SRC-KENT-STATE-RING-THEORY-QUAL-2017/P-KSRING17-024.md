@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with identity and define $U _ { 2 } ( R ) \ = \ \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \ | \ a , b , c \in R \right\}$ Prove that every R-automorphism of $U _ { 2 } ( R )$ is inner.
+Let R be a commutative ring with identity and define $U _ { 2 } ( R ) \ = \ \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \ \st \ a , b , c \in R \right\}$ Prove that every R-automorphism of $U _ { 2 } ( R )$ is inner.
 :::
 
 ::: {.solution}
@@ -146,7 +146,7 @@ for some $u\in R$.
 
 Because $\varphi$ is an $R$-algebra automorphism, its restriction
 $$
-\varphi|_{Rn}:Rn\to Rn
+\varphi\restrict_{Rn}:Rn\to Rn
 $$
 is an $R$-module automorphism. Under the free rank-one identification
 $$

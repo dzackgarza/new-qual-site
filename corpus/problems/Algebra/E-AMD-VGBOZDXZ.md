@@ -63,7 +63,7 @@ Every nontrivial orbit has cardinality divisible by $p$.
 ::: pf-proof
 For $n\in N$, orbit-stabilizer gives
 $$
-|G\cdot n|=[G:C_G(n)].
+\cardinality{G\cdot n}=[G:C_G(n)].
 $$
 This index divides the order of the $p$-group $G$, so it is a power of $p$. If the orbit has more than one element, its cardinality is therefore divisible by $p$.
 :::
@@ -76,11 +76,11 @@ The intersection $N\cap Z(G)$ has cardinality divisible by $p$.
 ::: pf-proof
 The orbit decomposition of $N$ gives
 $$
-|N|=|N\cap Z(G)|+\sum_i |\mathcal O_i|,
+\cardinality{N}=\cardinality{N\cap Z(G)}+\sum_i \cardinality{\mathcal O_i},
 $$
-where the $\mathcal O_i$ are the nontrivial orbits. Since $N$ is a nontrivial subgroup of a finite $p$-group, $p\mid |N|$, and by step [](#nontrivial-orbit-div-by-p){.pf-ref} each summand in the sum is divisible by $p$. Hence
+where the $\mathcal O_i$ are the nontrivial orbits. Since $N$ is a nontrivial subgroup of a finite $p$-group, $p\mid \cardinality{N}$, and by step [](#nontrivial-orbit-div-by-p){.pf-ref} each summand in the sum is divisible by $p$. Hence
 $$
-|N\cap Z(G)|\equiv0\pmod p.
+\cardinality{N\cap Z(G)}\equiv0\pmod p.
 $$
 :::
 

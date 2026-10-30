@@ -351,7 +351,7 @@ $$
 \cong
 \left\langle
 a,b,d
-\ \middle|\
+\ \presentationbar\
 a\,b^{-1}dbd^{-1}a=1
 \right\rangle}.
 $$
@@ -375,7 +375,7 @@ $$
 \cong
 \left\langle
 a,b,d
-\ \middle|\
+\ \presentationbar\
 a^2[b^{-1},d]=1
 \right\rangle}.
 $$
@@ -407,7 +407,7 @@ $$
 \boxed{
 \left\langle
 x,y,z
-\ \middle|\
+\ \presentationbar\
 x^2y^2z^2=1
 \right\rangle}.
 $$

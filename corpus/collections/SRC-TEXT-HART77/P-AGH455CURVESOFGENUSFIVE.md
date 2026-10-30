@@ -86,8 +86,8 @@ For $C\in U$, adjunction gives
 $$
 K_C
 =
-\bigl(K_{\PP^4}+2H+2H+2H\bigr)|_C
-=H|_C.
+\bigl(K_{\PP^4}+2H+2H+2H\bigr)\restrict_C
+=H\restrict_C.
 $$
 Moreover $\deg C=2^3=8$, so
 $$
@@ -160,7 +160,7 @@ is birational onto an integral plane quintic whose only singularity has
 delta invariant $1$.
 
 ::: pf-proof
-Because $|L|$ is complete and has dimension $2$, its image is not contained
+Because $\linearsystem{L}$ is complete and has dimension $2$, its image is not contained
 in a line.  If $e$ is the generic degree of $\phi_L$ and $d$ is the degree
 of its image, then
 $$
@@ -240,9 +240,9 @@ Adjunction therefore gives
 $$
 K_X
 =
-\bigl(K_S+\widetilde C\bigr)|_{\widetilde C}
+\bigl(K_S+\widetilde C\bigr)\restrict_{\widetilde C}
 =
-(2H-E)|_{\widetilde C}.
+(2H-E)\restrict_{\widetilde C}.
 $$
 The divisor $2H-E$ is exactly the strict-transform system of conics through
 $p$.
@@ -257,7 +257,7 @@ isomorphism.  Thus the conics through $p$ cut out the complete canonical
 system.
 
 By [[P-AGH277VERONESESURF|Exercise II.7.7(c)]], the complete system
-$|2H-E|$ embeds $S$ in $\PP^4$ as a smooth cubic scroll $V$.  Its restriction
+$\linearsystem{2H-E}$ embeds $S$ in $\PP^4$ as a smooth cubic scroll $V$.  Its restriction
 to $X$ is the canonical embedding, so the canonical curve lies on $V$.
 This argument applies equally to the nodal and cuspidal cases.
 :::
@@ -383,7 +383,7 @@ Therefore the locus of quintics having exactly one delta-one singularity is
 irreducible of dimension $19$.
 
 Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} identify its normalizations with the trigonal genus-$5$
-curves.  By step [](#s7){.pf-ref} the $g^1_3$ is unique, so the residual $g^2_5=|K-A|$
+curves.  By step [](#s7){.pf-ref} the $g^1_3$ is unique, so the residual $g^2_5=\linearsystem{K-A}$
 is unique; choosing its three sections only changes coordinates in
 $\PP^2$.  Hence two such plane models represent the same curve exactly up
 to the action of $\PGL_3$.  Stabilizers are zero-dimensional because a

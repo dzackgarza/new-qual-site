@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E09
 kind: problem
-title: Entire functions with $|f(z)|\le\sqrt{|z|}$ for large $|z|$
+title: Entire functions with $\abs{f(z)}\le\sqrt{\abs{z}}$ for large $\abs{z}$
 classification:
   areas: [complex-analysis]
   topics: []
@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find, with proof, all entire functions satisfying $| f ( z ) | \leq \sqrt { | z | } \mathrm { ~ f o r ~ } | z | > 1 0$
+Find, with proof, all entire functions satisfying $\abs{ f ( z ) } \leq \sqrt { \abs{ z } } \mathrm { ~ f o r ~ } \abs{ z } > 1 0$
 :::
 
 ::: {.solution}

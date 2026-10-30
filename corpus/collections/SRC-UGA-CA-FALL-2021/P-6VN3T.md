@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Assume $f$ is an entire function such that $|f(z)|=1$ on $|z|=1$.
+Assume $f$ is an entire function such that $\abs{f(z)}=1$ on $\abs{z}=1$.
 Prove that $f(z)=e^{i \theta} z^{n}$, where $\theta$ is a real number and $n$ a non-negative integer.
 
 > Suggestion: First use the maximum and minimum modulus theorem to show
@@ -29,7 +29,7 @@ if $f$ has zeros.
 
 ::: {.solution}
 First show the hint: assume $f$ has nonzero zeros.
-Write $Z(f) \definedas \inverseof{f}(0)$ for the set of zeros in $\bar{\DD}$.
+Write $Z(f) \coloneqq \inverseof{f}(0)$ for the set of zeros in $\bar{\DD}$.
 
 ::: {.claim}
 If we assume $f$ is continuous on $\DD$, then $\size Z(f) < \infty$
@@ -37,16 +37,16 @@ If we assume $f$ is continuous on $\DD$, then $\size Z(f) < \infty$
 
 ::: {.proof}
 Suppose $\size Z(f) = \infty$, then by compactness of $\bar{\DD}$ there is a limit point $z_0$.
-If $z_0 \in \DD$, then there is a sequence $\theset{z_k}\to z_0$ with $f(z_k) = 0$ for every $k$, so $f$ is zero on a set $S\definedas \theset{z_k}_{k\geq 1} \union \theset{z_0}$ with an accumulation point and this forces $f\equiv 0$ on $\bar{\DD}$ by the identity principle, contradicting $\abs{f} = 1$ on $\bd \DD$>
+If $z_0 \in \DD$, then there is a sequence $\theset{z_k}\to z_0$ with $f(z_k) = 0$ for every $k$, so $f$ is zero on a set $S\coloneqq \theset{z_k}_{k\geq 1} \union \theset{z_0}$ with an accumulation point and this forces $f\equiv 0$ on $\bar{\DD}$ by the identity principle, contradicting $\abs{f} = 1$ on $\bd \DD$>
 
 Otherwise, if $z_0\in \bd \DD$, using continuity of $f$ we have $f(z_k) = 0$ for all $k$ and $z_k\to z_0$ so $f(z_0) = 0$, again contradiicting $\abs{f} = 1$ on $\bd \DD$.
 :::
 
 So write $Z(f) = \theset{z_1,\cdots, z_m}$ and define
 $$
-g(z) \definedas \prod_{1\leq k \leq m} {z-z_k \over 1 - \bar{z_k} z},
+g(z) \coloneqq \prod_{1\leq k \leq m} {z-z_k \over 1 - \bar{z_k} z},
 \quad
-h(z) \definedas {f(z) \over g(z)}
+h(z) \coloneqq {f(z) \over g(z)}
 .$$
 
 ::: {.claim}

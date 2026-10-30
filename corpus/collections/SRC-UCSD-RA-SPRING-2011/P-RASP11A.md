@@ -42,7 +42,7 @@ If $f_n, f \in L^1(d\mu)$ are measurable functions such that $f_n \to f$ $\mu$-a
 
 (e) If $\mu$ is a positive finite Borel measure on $\RR^n$ which is absolutely continuous with respect to Lebesgue measure, and
 $$
-\lim_{r \to 0} \frac{\mu(B_r(x))}{|B_r(x)|} = 0 \quad \text{for a.e. } x \in \RR^n,
+\lim_{r \to 0} \frac{\mu(B_r(x))}{\setmeasure{B_r(x)}} = 0 \quad \text{for a.e. } x \in \RR^n,
 $$
 then $\mu \equiv 0$.
 Here $B_r(x)$ is the ball of radius $r$ at $x$.
@@ -60,18 +60,18 @@ Part (a) is true.
 
 For each fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
 $$
-\sup_n\|T_nx\|_Y<\infty
+\sup_n\norm{T_nx}_Y<\infty
 \qquad\text{for every }x\in X.
 $$
 Since $X$ is Banach, the Uniform Boundedness Principle yields
 $$
-M:=\sup_n\|T_n\|<\infty.
+M:=\sup_n\norm{T_n}<\infty.
 $$
 The pointwise limit $T$ is linear, and for every $x\in X$,
 $$
-\|Tx\|_Y
-=\lim_{n\to\infty}\|T_nx\|_Y
-\le M\|x\|_X.
+\norm{Tx}_Y
+=\lim_{n\to\infty}\norm{T_nx}_Y
+\le M\norm{x}_X.
 $$
 Hence $T\in L(X,Y)$.
 
@@ -97,8 +97,8 @@ $$
 $$
 However,
 $$
-\|f_n-f\|_1
-=\int_0^1|f_n|\,dx
+\norm{f_n-f}_1
+=\int_0^1\abs{f_n}\,dx
 =2
 $$
 for every $n$. Hence $f_n$ does not converge to $f$ in $L^1$.
@@ -173,9 +173,9 @@ $$
 The Lebesgue differentiation theorem gives, for almost every $x$,
 $$
 h(x)
-=\lim_{r\downarrow0}\frac1{|B_r(x)|}
+=\lim_{r\downarrow0}\frac1{\setmeasure{B_r(x)}}
 \int_{B_r(x)}h(y)\,dy
-=\lim_{r\downarrow0}\frac{\mu(B_r(x))}{|B_r(x)|}.
+=\lim_{r\downarrow0}\frac{\mu(B_r(x))}{\setmeasure{B_r(x)}}.
 $$
 By hypothesis this limit is $0$ almost everywhere, so $h=0$ almost everywhere. Hence
 $$

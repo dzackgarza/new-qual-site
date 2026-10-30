@@ -66,7 +66,7 @@ Part (b): Continuous at $7$ but not differentiable at $7$:
 ::: pf-step
 Define $f: \RR \to \RR$ by:
 $$
-f(x) = |x - 7|.
+f(x) = \abs{x - 7}.
 $$
 $f$ is continuous on $\RR$ as the composition of continuous functions.
 :::
@@ -74,7 +74,7 @@ $f$ is continuous on $\RR$ as the composition of continuous functions.
 ::: pf-step
 Compute the one-sided derivative difference quotients at $x = 7$:
 $$
-\lim_{h \to 0^+} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^+} \frac{|h|}{h} = 1, \qquad \lim_{h \to 0^-} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1.
+\lim_{h \to 0^+} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^+} \frac{\abs{h}}{h} = 1, \qquad \lim_{h \to 0^-} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1.
 $$
 Because the left and right limits do not agree, $f'(7)$ does not exist.
 :::
@@ -120,12 +120,12 @@ Part (d): A bounded sequence that is not Cauchy:
 
 ::: pf-step
 Consider the sequence $(a_n)_{n=1}^\infty$ defined by $a_n = (-1)^n$.
-Then $|a_n| = 1 \le 1$ for all $n$, so the sequence is bounded.
+Then $\abs{a_n} = 1 \le 1$ for all $n$, so the sequence is bounded.
 :::
 
 ::: pf-step
-For any $n \in \NN$, $|a_{n+1} - a_n| = |(-1)^{n+1} - (-1)^n| = 2$.
-Taking $\varepsilon = 1$, there is no $N$ such that $|a_n - a_m| < 1$ for all $n, m \ge N$.
+For any $n \in \NN$, $\abs{a_{n+1} - a_n} = \abs{(-1)^{n+1} - (-1)^n} = 2$.
+Taking $\varepsilon = 1$, there is no $N$ such that $\abs{a_n - a_m} < 1$ for all $n, m \ge N$.
 Thus $(a_n)$ is not Cauchy.
 :::
 
@@ -148,9 +148,9 @@ $$
 ::: pf-step
 The radius of convergence $R$ satisfies:
 $$
-\frac{1}{R} = \lim_{n \to \infty} \left| \frac{1}{n^2} \right|^{1/n} = 1 \implies R = 1.
+\frac{1}{R} = \lim_{n \to \infty} \abs{ \frac{1}{n^2} }^{1/n} = 1 \implies R = 1.
 $$
-Thus the series converges absolutely for $|x - 1| < 1$ (i.e. $x \in (0, 2)$) and diverges for $|x - 1| > 1$.
+Thus the series converges absolutely for $\abs{x - 1} < 1$ (i.e. $x \in (0, 2)$) and diverges for $\abs{x - 1} > 1$.
 :::
 
 ::: pf-step

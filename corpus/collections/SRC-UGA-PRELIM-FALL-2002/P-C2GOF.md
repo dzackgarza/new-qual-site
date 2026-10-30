@@ -26,20 +26,20 @@ For functions $f$ and $g$ from $\RR$ to $\RR$, prove that if $f$ is continuous a
 ::: {.solution}
 A function $f:\RR\to\RR$ is continuous at $a$ if for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-|x-a|<\delta\quad\Longrightarrow\quad |f(x)-f(a)|<\varepsilon.
+\abs{x-a}<\delta\quad\Longrightarrow\quad \abs{f(x)-f(a)}<\varepsilon.
 $$
 
 Assume $f$ is continuous at $a$ and $g$ is continuous at $b=f(a)$. Let $\varepsilon>0$. By continuity of $g$ at $b$, choose $\eta>0$ such that
 $$
-|y-b|<\eta\quad\Longrightarrow\quad |g(y)-g(b)|<\varepsilon.
+\abs{y-b}<\eta\quad\Longrightarrow\quad \abs{g(y)-g(b)}<\varepsilon.
 $$
 By continuity of $f$ at $a$, choose $\delta>0$ such that
 $$
-|x-a|<\delta\quad\Longrightarrow\quad |f(x)-f(a)|<\eta.
+\abs{x-a}<\delta\quad\Longrightarrow\quad \abs{f(x)-f(a)}<\eta.
 $$
-Hence, if $|x-a|<\delta$, then
+Hence, if $\abs{x-a}<\delta$, then
 $$
-|g(f(x))-g(f(a))|<\varepsilon.
+\abs{g(f(x))-g(f(a))}<\varepsilon.
 $$
 Therefore $g\circ f$ is continuous at $a$.
 :::

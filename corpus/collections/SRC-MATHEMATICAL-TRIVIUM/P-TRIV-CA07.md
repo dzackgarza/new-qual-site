@@ -163,7 +163,7 @@ $w$ by $z-1$.
 The region of convergence is
 $$
 \boxed{
-0<|z-1|<\infty.
+0<\abs{z-1}<\infty.
 }
 $$
 

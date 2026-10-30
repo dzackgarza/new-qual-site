@@ -20,7 +20,7 @@ audit:
 Let $f$ be entire.
 Suppose there are positive real numbers $a,b,k$ such that
 $$
-|f(z)|\le a+b|z|^k
+\abs{f(z)}\le a+b\abs{z}^k
 $$
 for every $z\in\CC$. Prove that $f$ is a polynomial.
 :::
@@ -37,7 +37,7 @@ R>0,
 $$
 one has
 $$
-\max_{|z|=R}|f(z)|
+\max_{\abs{z}=R}\abs{f(z)}
 \le
 a+bR^k.
 $$
@@ -47,7 +47,7 @@ $$
 
 This is the assumed growth estimate restricted to the circle
 $$
-|z|=R.
+\abs{z}=R.
 $$
 
 :::
@@ -70,18 +70,18 @@ $$
 
 Cauchy's estimate for the $m$th derivative on the circle
 $$
-|z|=R
+\abs{z}=R
 $$
 gives
 $$
-|f^{(m)}(0)|
+\abs{f^{(m)}(0)}
 \le
 \frac{m!}{R^m}
-\max_{|z|=R}|f(z)|.
+\max_{\abs{z}=R}\abs{f(z)}.
 $$
 Using step [](#s1-1){.pf-ref},
 $$
-|f^{(m)}(0)|
+\abs{f^{(m)}(0)}
 \le
 m!
 \left(

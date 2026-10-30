@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Show the ring $H^*(\RP^\infty; \ZZ_{2k})$ is isomorphic to $\ZZ_{2k}[\alpha, \beta] / (2\alpha, 2\beta, \alpha^2 - k\beta)$ where $|\alpha| = 1$ and $|\beta| = 2$.
+Show the ring $H^*(\RP^\infty; \ZZ_{2k})$ is isomorphic to $\ZZ_{2k}[\alpha, \beta] / (2\alpha, 2\beta, \alpha^2 - k\beta)$ where $\gradeddegree{\alpha} = 1$ and $\gradeddegree{\beta} = 2$.
 :::
 
 ::: {.solution}
@@ -66,7 +66,7 @@ $$
 H^*(\RP^\infty;\ZZ_{2k})
 \cong
 \ZZ_{2k}[\alpha,\beta]/(2\alpha,2\beta,\alpha^2-k\beta),
-\quad |\alpha|=1,\ |\beta|=2.
+\quad \gradeddegree{\alpha}=1,\ \gradeddegree{\beta}=2.
 }
 $$
 :::

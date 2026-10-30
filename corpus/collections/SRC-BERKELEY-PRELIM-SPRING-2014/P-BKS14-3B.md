@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Prove that there exists a constant $C$ such that every polynomial $P$ of degree at most $2014$ satisfies
 $$
-P(0)\le C\int_0^1 |P(x)|\,dx.
+P(0)\le C\int_0^1 \abs{P(x)}\,dx.
 $$
 :::
 
@@ -111,7 +111,7 @@ $$
 \abs{N(P)-N(Q)}
 &\leq
 \int_0^1
-\bigl|\abs{P(x)}-\abs{Q(x)}\bigr|\,dx\\
+\abs{\abs{P(x)}-\abs{Q(x)}}\,dx\\
 &\leq
 \int_0^1\abs{P(x)-Q(x)}\,dx\\
 &\leq

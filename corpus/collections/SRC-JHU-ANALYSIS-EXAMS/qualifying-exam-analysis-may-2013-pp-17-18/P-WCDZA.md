@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 (a) Prove the Riemann-Lebesgue Lemma: if $f \in L^1(\RR^d)$, then the Fourier transform of $f$,
 
-$$\hat{f}(\xi) = \int_{\RR^d} f(x) e^{-2\pi i x \cdot \xi} \, dx \to 0, \quad \text{as } |\xi| \to \infty.$$
+$$\hat{f}(\xi) = \int_{\RR^d} f(x) e^{-2\pi i x \cdot \xi} \, dx \to 0, \quad \text{as } \norm{\xi} \to \infty.$$
 
 (b) Use part (a) to justify whether there exists a function $h \in L^1(\RR^d)$ such that
 
@@ -49,7 +49,7 @@ Prove the Riemann--Lebesgue lemma for $C_c^1$ functions.
 
 Let $\varphi\in C_c^1(\RR^d)$. For $\xi\ne0$, choose an index $j$ such that
 $$
-|\xi_j|\ge \frac{|\xi|}{\sqrt d}.
+\abs{\xi_j}\ge \frac{\norm{\xi}}{\sqrt d}.
 $$
 Integration by parts in the $x_j$ variable gives
 $$
@@ -59,15 +59,15 @@ $$
 $$
 Therefore
 $$
-|\widehat\varphi(\xi)|
-\le \frac{\sqrt d}{2\pi|\xi|}\,\|\partial_j\varphi\|_1
-\le \frac{\sqrt d}{2\pi|\xi|}
-\sum_{k=1}^d\|\partial_k\varphi\|_1.
+\abs{\widehat\varphi(\xi)}
+\le \frac{\sqrt d}{2\pi\norm{\xi}}\,\norm{\partial_j\varphi}_1
+\le \frac{\sqrt d}{2\pi\norm{\xi}}
+\sum_{k=1}^d\norm{\partial_k\varphi}_1.
 $$
 Hence
 $$
 \widehat\varphi(\xi)\to0
-\qquad(|\xi|\to\infty).
+\qquad(\norm{\xi}\to\infty).
 $$
 
 :::
@@ -82,20 +82,20 @@ Extend the result to every $f\in L^1(\RR^d)$.
 
 Fix $\varepsilon>0$. Since $C_c^1(\RR^d)$ is dense in $L^1(\RR^d)$, choose $\varphi\in C_c^1$ such that
 $$
-\|f-\varphi\|_1<\varepsilon.
+\norm{f-\varphi}_1<\varepsilon.
 $$
 For every $\xi$,
 $$
-|\widehat f(\xi)-\widehat\varphi(\xi)|
-\le \|f-\varphi\|_1<\varepsilon.
+\abs{\widehat f(\xi)-\widehat\varphi(\xi)}
+\le \norm{f-\varphi}_1<\varepsilon.
 $$
-By Step 1, $|\widehat\varphi(\xi)|<\varepsilon$ for all sufficiently large $|\xi|$. Thus
+By Step 1, $\abs{\widehat\varphi(\xi)}<\varepsilon$ for all sufficiently large $\norm{\xi}$. Thus
 $$
-|\widehat f(\xi)|<2\varepsilon
+\abs{\widehat f(\xi)}<2\varepsilon
 $$
-for all sufficiently large $|\xi|$. Since $\varepsilon$ is arbitrary,
+for all sufficiently large $\norm{\xi}$. Since $\varepsilon$ is arbitrary,
 $$
-\boxed{\widehat f(\xi)\to0\quad\text{as }|\xi|\to\infty.}
+\boxed{\widehat f(\xi)\to0\quad\text{as }\norm{\xi}\to\infty.}
 $$
 
 :::
@@ -121,7 +121,7 @@ for every $f$ and every $\xi$.
 
 Take the Gaussian
 $$
-f(x)=e^{-\pi|x|^2},
+f(x)=e^{-\pi\norm{x}^2},
 $$
 whose Fourier transform is itself and is strictly positive everywhere. Hence
 $$
@@ -131,7 +131,7 @@ $$
 But Step 2 applied to $h\in L^1$ gives
 $$
 \widehat h(\xi)\to0
-\qquad(|\xi|\to\infty),
+\qquad(\norm{\xi}\to\infty),
 $$
 a contradiction. Therefore no such $h\in L^1(\RR^d)$ exists.
 

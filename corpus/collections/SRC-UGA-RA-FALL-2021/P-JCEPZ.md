@@ -44,7 +44,7 @@ T'(x)=\frac1{(2+x)^2}\le\frac14.
 $$
 Hence by the mean value theorem,
 $$
-|T(x)-T(y)|\le\frac14|x-y|
+\abs{T(x)-T(y)}\le\frac14\abs{x-y}
 \qquad(x,y\ge0).
 $$
 Thus $T$ is a contraction of the complete metric space $[0,\infty)$ into itself. By the Banach fixed-point theorem, the iterates $x_{n+1}=T(x_n)$ converge to the unique fixed point $L\ge0$.

@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\CC:|z|<1\}$. What is the maximum
-possible value of $|f'(1/2)|$ for a holomorphic function
+Let $D=\{z\in\CC:\abs{z}<1\}$. What is the maximum
+possible value of $\abs{f'(1/2)}$ for a holomorphic function
 $f:D\to D$ satisfying $f(1/2)=3/4$? Find all such
 functions that attain this maximum.
 :::
@@ -39,7 +39,7 @@ $$
 \boxed{f_\lambda(z)=
 \frac{\frac34+\lambda\frac{z-1/2}{1-z/2}}
 {1+\frac34\lambda\frac{z-1/2}{1-z/2}},
-\qquad |\lambda|=1.}
+\qquad \abs{\lambda}=1.}
 $$
 
 ::: pf
@@ -56,8 +56,8 @@ $$
 Their denominators are nonzero on $D$, substitution shows
 they are inverses, and
 $$
-1-|\phi_c(z)|^2=
-\frac{(1-|c|^2)(1-|z|^2)}{|1-\overline c z|^2}>0.
+1-\abs{\phi_c(z)}^2=
+\frac{(1-\abs{c}^2)(1-\abs{z}^2)}{\abs{1-\overline c z}^2}>0.
 $$
 The inverse is $\phi_{-c}$, so it also maps $D$ into itself.
 Thus these are disk automorphisms.
@@ -73,8 +73,8 @@ and hence
 $$
 G'(0)=\frac{1-a^2}{1-b^2}f'(a)=\frac{12}{7}f'(1/2).
 $$
-Schwarz's lemma gives $|G'(0)|\leq1$ [@SS03]. Therefore
-$|f'(1/2)|\leq7/12$.
+Schwarz's lemma gives $\abs{G'(0)}\leq1$ [@SS03]. Therefore
+$\abs{f'(1/2)}\leq7/12$.
 :::
 
 :::
@@ -83,21 +83,21 @@ $|f'(1/2)|\leq7/12$.
 Equality holds exactly for the displayed functions.
 
 ::: pf-proof
-Schwarz's lemma also gives $|G(w)|\leq|w|$. Thus
+Schwarz's lemma also gives $\abs{G(w)}\leq\abs{w}$. Thus
 $H(w)=G(w)/w$ extends holomorphically across zero, with
-$H(0)=G'(0)$, and satisfies $|H|\leq1$ on $D$.
-If $|f'(1/2)|=7/12$, then $|H(0)|=1$. The maximum
+$H(0)=G'(0)$, and satisfies $\abs{H}\leq1$ on $D$.
+If $\abs{f'(1/2)}=7/12$, then $\abs{H(0)}=1$. The maximum
 modulus principle forces $H\equiv\lambda$ for some
-$|\lambda|=1$ [@SS03]. Thus $G(w)=\lambda w$, and
+$\abs{\lambda}=1$ [@SS03]. Thus $G(w)=\lambda w$, and
 undoing the two automorphisms gives exactly
 $f=\phi_b^{-1}\circ(\lambda\phi_a)$, the stated formula.
 
-Conversely, for every $|\lambda|=1$ this composition is
+Conversely, for every $\abs{\lambda}=1$ this composition is
 a holomorphic disk automorphism, sends $a$ to $b$, and
 has $G'(0)=\lambda$. The derivative calculation in
-step [](#disk-automorphism-reduction){.pf-ref} therefore gives $|f_\lambda'(1/2)|=7/12$.
+step [](#disk-automorphism-reduction){.pf-ref} therefore gives $\abs{f_\lambda'(1/2)}=7/12$.
 The explicit denominator cannot vanish since
-$|\frac34\lambda\phi_a(z)|<3/4$ on $D$.
+$\abs{\frac34\lambda\phi_a(z)}<3/4$ on $D$.
 This proves attainment and exhausts all equality cases.
 :::
 

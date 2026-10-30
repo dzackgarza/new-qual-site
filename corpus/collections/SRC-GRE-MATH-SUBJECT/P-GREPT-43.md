@@ -108,7 +108,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give $|y|\le\sqrt2/2$, and step [](#s1-3){.pf-ref} exhibits a point of
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give $\abs{y}\le\sqrt2/2$, and step [](#s1-3){.pf-ref} exhibits a point of
 $L$ whose $y$-coordinate equals this upper bound.
 
 :::

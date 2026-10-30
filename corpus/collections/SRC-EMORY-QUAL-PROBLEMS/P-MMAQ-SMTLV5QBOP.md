@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SMTLV5QBOP
 kind: problem
-title: $\lim_{p\to 0^+}\|f\|_p$ exists for $f\in L^1([0,1])$ and is zero if $m\{f=0\}>0$
+title: $\lim_{p\to 0^+}\norm{f}_p$ exists for $f\in L^1([0,1])$ and is zero if $m\{f=0\}>0$
 classification:
   areas:
   - real-analysis
@@ -31,7 +31,7 @@ audit:
 Let $f\in L^1([0,1])$.
 Show that
 
-1. The limit $\lim_{p\to 0^+} \| f \|_p$ exists.
+1. The limit $\lim_{p\to 0^+} \norm{ f }_p$ exists.
 2. If $m\{x:f(x)=0\}>0$, then this limit is zero.
 :::
 
@@ -40,7 +40,7 @@ Show that
 ::: pf
 
 ::: pf-step
-The quantities $\|f\|_p$ are finite for $0<p\le1$.
+The quantities $\norm{f}_p$ are finite for $0<p\le1$.
 
 ::: pf-proof
 For $t\ge0$ and $0<p\le1$,
@@ -49,9 +49,9 @@ t^p\le 1+t.
 $$
 Hence
 $$
-\int_0^1 |f|^p\le 1+\|f\|_1<\infty.
+\int_0^1 \abs{f}^p\le 1+\norm{f}_1<\infty.
 $$
-Thus $\|f\|_p=(\int|f|^p)^{1/p}$ is well defined and finite for every $0<p\le1$.
+Thus $\norm{f}_p=(\int\abs{f}^p)^{1/p}$ is well defined and finite for every $0<p\le1$.
 :::
 
 :::
@@ -62,7 +62,7 @@ The logarithm of the $p$th moment is convex.
 ::: pf-proof
 Assume first that $f$ is not zero almost everywhere and define
 $$
-A(p)=\int_0^1 |f(x)|^p\,dx,
+A(p)=\int_0^1 \abs{f(x)}^p\,dx,
 \qquad
 F(p)=\log A(p),
 \qquad 0<p\le1.
@@ -71,7 +71,7 @@ For $0<p,q\le1$ and $0<\theta<1$, Hölder's inequality gives
 $$
 \begin{aligned}
 A((1-\theta)p+\theta q)
-&=\int |f|^{(1-\theta)p}|f|^{\theta q}\\
+&=\int \abs{f}^{(1-\theta)p}\abs{f}^{\theta q}\\
 &\le A(p)^{1-\theta}A(q)^\theta.
 \end{aligned}
 $$
@@ -95,10 +95,10 @@ $$
 $$
 For almost every $x$,
 $$
-|f(x)|^p\longrightarrow \mathbf1_{\{f\ne0\}}(x)
+\abs{f(x)}^p\longrightarrow \mathbf1_{\{f\ne0\}}(x)
 \qquad(p\downarrow0).
 $$
-For $0<p\le1$ we have $|f|^p\le1+|f|$, and $1+|f|$ is integrable on $[0,1]$. Dominated convergence therefore gives
+For $0<p\le1$ we have $\abs{f}^p\le1+\abs{f}$, and $1+\abs{f}$ is integrable on $[0,1]$. Dominated convergence therefore gives
 $$
 A(p)\longrightarrow\alpha.
 $$
@@ -120,13 +120,13 @@ F(p)\longrightarrow\log\alpha<0.
 $$
 Therefore
 $$
-\log\|f\|_p=\frac{F(p)}p\longrightarrow-\infty,
+\log\norm{f}_p=\frac{F(p)}p\longrightarrow-\infty,
 $$
 and so
 $$
-\boxed{\|f\|_p\longrightarrow0.}
+\boxed{\norm{f}_p\longrightarrow0.}
 $$
-If $f=0$ almost everywhere, this conclusion is immediate because every $\|f\|_p=0$.
+If $f=0$ almost everywhere, this conclusion is immediate because every $\norm{f}_p=0$.
 :::
 
 :::
@@ -151,13 +151,13 @@ $$
 $$
 Consequently the function
 $$
-p\longmapsto \frac{F(p)}p=\log\|f\|_p
+p\longmapsto \frac{F(p)}p=\log\norm{f}_p
 $$
 is nondecreasing on $(0,1]$. Hence it has a limit as $p\downarrow0$, equal to its infimum, possibly $-\infty$ but never $+\infty$ because
 $$
-\frac{F(p)}p\le F(1)=\log\|f\|_1.
+\frac{F(p)}p\le F(1)=\log\norm{f}_1.
 $$
-Exponentiating, $\|f\|_p$ therefore has a limit in $[0,\infty)$.
+Exponentiating, $\norm{f}_p$ therefore has a limit in $[0,\infty)$.
 :::
 
 :::

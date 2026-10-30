@@ -26,15 +26,15 @@ audit:
 ::: {.problem}
 Let
 $$
-D=\{z\in\CC:|z|\le 1\}\setminus\{1,-1\}.
+D=\{z\in\CC:\abs{z}\le 1\}\setminus\{1,-1\}.
 $$
 Find an explicit continuous function $f:D\to\RR$ satisfying all the following conditions:
 
 - $f$ is harmonic on the interior of $D$ (the open unit disk),
 
-- $f(z)=1$ when $|z|=1$ and $\operatorname{Im}(z)>0$, and
+- $f(z)=1$ when $\abs{z}=1$ and $\operatorname{Im}(z)>0$, and
 
-- $f(z)=-1$ when $|z|=1$ and $\operatorname{Im}(z)<0$.
+- $f(z)=-1$ when $\abs{z}=1$ and $\operatorname{Im}(z)<0$.
 :::
 
 
@@ -56,12 +56,12 @@ $$
 The formula is well-defined and continuous on $D$.
 
 ::: pf-proof
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
-\operatorname{Re}w(z)=\frac{1-|z|^2}{|1-z|^2}>0,
+\operatorname{Re}w(z)=\frac{1-\abs{z}^2}{\abs{1-z}^2}>0,
 $$
 so $w(z)$ lies in the open right half-plane.
-For $|z|=1$ with $z\ne\pm1$, one has $\operatorname{Re}w(z)=0$, while $w(z)\ne0$ because $z\ne-1$.
+For $\abs{z}=1$ with $z\ne\pm1$, one has $\operatorname{Re}w(z)=0$, while $w(z)\ne0$ because $z\ne-1$.
 Thus
 $$
 w(D)\subset \{\operatorname{Re}w\ge0\}\setminus\{0\},
@@ -77,7 +77,7 @@ Therefore $\Log\circ w$ and hence $f$ are continuous on $D$.
 The function $f$ is harmonic on the open unit disk.
 
 ::: pf-proof
-On $|z|<1$, the map $w$ takes values in the open right half-plane, where the principal logarithm is holomorphic.
+On $\abs{z}<1$, the map $w$ takes values in the open right half-plane, where the principal logarithm is holomorphic.
 Thus
 $$
 F(z):=\Log w(z)

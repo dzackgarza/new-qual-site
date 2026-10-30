@@ -49,7 +49,7 @@ srs=r^{-1},
 $$
 so $\langle r,s\rangle\cong D_8$ has order $8$. Since
 $$
-|S_5|=120=2^3\cdot 3\cdot 5,
+\cardinality{S_5}=120=2^3\cdot 3\cdot 5,
 $$
 a subgroup of order $2^3$ is Sylow.
 
@@ -75,7 +75,7 @@ $$
 v_5(15!)=\left\lfloor\frac{15}{5}\right\rfloor+
 \left\lfloor\frac{15}{25}\right\rfloor=3.
 $$
-Thus the largest power of $5$ dividing $|S_{15}|$ is $5^3$, so $P_5$ is Sylow.
+Thus the largest power of $5$ dividing $\cardinality{S_{15}}$ is $5^3$, so $P_5$ is Sylow.
 
 :::
 
@@ -104,7 +104,7 @@ For $p=2$, this gives $0!=1$, as expected.
 
 If $P$ is a Sylow $p$-subgroup of $S_p$, then
 $$
-|N_{S_p}(P)|=p(p-1).
+\cardinality{N_{S_p}(P)}=p(p-1).
 $$
 
 ::: pf-proof
@@ -115,7 +115,7 @@ $$
 $$
 Therefore
 $$
-|N_{S_p}(P)|=
+\cardinality{N_{S_p}(P)}=
 \frac{p!}{(p-2)!}=p(p-1).
 $$
 

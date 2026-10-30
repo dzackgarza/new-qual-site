@@ -19,7 +19,7 @@ audit:
 ::: {.exercise}
 3. In this problem, consider the group $G$ of matrices $\left( \begin{array} { l l } { a } & { b } \\ { c } & { d } \end{array} \right)$ with integer entries, determinant 1, and such that a and d have the same parity, b and c have the same parity, and c and d have opposite parity.
    This group also acts on the upper half-plane by fractional linear transformations.
-   To the group $G$ corresponds the fundamental domain $\mathcal { F }$ defined by $| \tau | \geq 1 , | \mathrm { R e } ( \tau ) | \leq 1$ , and Im $. ( \tau ) \geq 0$ (see Figure 1). Also, let
+   To the group $G$ corresponds the fundamental domain $\mathcal { F }$ defined by $\abs{ \tau } \geq 1 , \abs{ \mathrm { R e } ( \tau ) } \leq 1$ , and Im $. ( \tau ) \geq 0$ (see Figure 1). Also, let
 
 $$
 S (\tau) = - 1 / \tau \leftrightarrow \left( \begin{array}{c c} 0 & - 1 \\ 1 & 0 \end{array} \right) \quad \text { and } \quad T _ {2} (\tau) = \tau + 2 \leftrightarrow \left( \begin{array}{c c} 1 & 2 \\ 0 & 1 \end{array} \right).
@@ -31,7 +31,7 @@ Prove that every fractional linear transformation corresponding to $g \in G$ is 
 ::: {.solution}
 Let $G_0 = \langle S, T_2 \rangle$, and recall that for $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}\in\operatorname{SL}_2(\ZZ)$ and $\tau\in\halfplane$,
 $$\Im(M\tau) = \frac{\Im\tau}{\abs{c\tau + d}^2}.$$
-Put $\mathcal{F} = \{\tau \in \halfplane : |\tau| \ge 1,\ |\Re\tau| \le 1\}$.
+Put $\mathcal{F} = \{\tau \in \halfplane : \abs{\tau} \ge 1,\ \abs{\Re\tau} \le 1\}$.
 
 ::: pf
 
@@ -53,7 +53,7 @@ Every $G_0$-orbit in $\halfplane$ meets $\mathcal F$.
 
 ::: pf-proof
 
-Fix $\tau\in\halfplane$. The numbers $c\tau+d$, for bottom rows $(c,d)$ of matrices in $G_0$, lie in the lattice $\ZZ\tau+\ZZ$ and are nonzero, so $\abs{c\tau+d}$ attains a positive minimum; hence some $\tau'$ in the orbit maximizes $\Im$ over the orbit. Choose $k\in\ZZ$ with $\tau'' = \tau' + 2k$ satisfying $|\Re\tau''| \le 1$; then $\Im\tau''=\Im\tau'$ is still maximal. If $|\tau''| < 1$, then $\Im(S\tau'') = \Im\tau''/|\tau''|^2 > \Im\tau''$, contradicting maximality. So $\tau''\in\mathcal F$.
+Fix $\tau\in\halfplane$. The numbers $c\tau+d$, for bottom rows $(c,d)$ of matrices in $G_0$, lie in the lattice $\ZZ\tau+\ZZ$ and are nonzero, so $\abs{c\tau+d}$ attains a positive minimum; hence some $\tau'$ in the orbit maximizes $\Im$ over the orbit. Choose $k\in\ZZ$ with $\tau'' = \tau' + 2k$ satisfying $\abs{\Re\tau''} \le 1$; then $\Im\tau''=\Im\tau'$ is still maximal. If $\abs{\tau''} < 1$, then $\Im(S\tau'') = \Im\tau''/\abs{\tau''}^2 > \Im\tau''$, contradicting maximality. So $\tau''\in\mathcal F$.
 
 :::
 

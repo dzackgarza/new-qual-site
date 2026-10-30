@@ -122,7 +122,7 @@ Every orientation-reversing self-map of $S^3$ has a fixed point.
 
 If $f:S^3\to S^3$ reverses orientation, then $\deg f=-1$. Its Lefschetz number is
 $$
-L(f)=\operatorname{tr}(f_*|H_0)-\operatorname{tr}(f_*|H_3)
+L(f)=\operatorname{tr}(f_*\restrict H_0)-\operatorname{tr}(f_*\restrict H_3)
 =1-(-1)=2\ne0.
 $$
 By the Lefschetz fixed-point theorem, $f$ has a fixed point.

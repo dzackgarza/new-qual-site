@@ -30,13 +30,13 @@ audit:
 ::: {.solution}
 ### Part 1: Statement of the Schwarz Lemma
 
-**Schwarz Lemma:** Let $\DD = \{z \in \CC : |z| < 1\}$.
+**Schwarz Lemma:** Let $\DD = \{z \in \CC : \abs{z} < 1\}$.
 If $g: \DD \to \DD$ is a holomorphic function satisfying $g(0) = 0$, then:
 
-1. $|g(z)| \leq |z|$ for all $z \in \DD$.
+1. $\abs{g(z)} \leq \abs{z}$ for all $z \in \DD$.
 
-2. $|g'(0)| \leq 1$.
-   Furthermore, if $|g(z)| = |z|$ for some non-zero $z \in \DD$, or if $|g'(0)| = 1$, then $g(z) = e^{i\theta} z$ for some constant $\theta \in \RR$ (i.e. $g$ is a rotation).
+2. $\abs{g'(0)} \leq 1$.
+   Furthermore, if $\abs{g(z)} = \abs{z}$ for some non-zero $z \in \DD$, or if $\abs{g'(0)} = 1$, then $g(z) = e^{i\theta} z$ for some constant $\theta \in \RR$ (i.e. $g$ is a rotation).
 
 * * *
 
@@ -56,7 +56,7 @@ For any $w \in \DD$, define the Möbius transformation $\phi_w(z) = \frac{w - z}
 
 ::: pf-proof
 
-This is a definition; the denominator does not vanish for $|z|<1$ because $|\bar w z|<1$.
+This is a definition; the denominator does not vanish for $\abs{z}<1$ because $\abs{\bar w z}<1$.
 
 :::
 
@@ -68,7 +68,7 @@ $\phi_w$ is a biholomorphic map from $\DD$ onto $\DD$ with $\phi_w(w) = 0$, $\ph
 
 ::: pf-proof
 
-Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z$. The identity $1-|\phi_w(z)|^2=\frac{(1-|w|^2)(1-|z|^2)}{|1-\bar wz|^2}$ shows that $\phi_w$ maps $\DD$ into $\DD$; being its own inverse, it is a biholomorphism of $\DD$.
+Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z$. The identity $1-\abs{\phi_w(z)}^2=\frac{(1-\abs{w}^2)(1-\abs{z}^2)}{\abs{1-\bar wz}^2}$ shows that $\phi_w$ maps $\DD$ into $\DD$; being its own inverse, it is a biholomorphism of $\DD$.
 
 :::
 
@@ -76,7 +76,7 @@ Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z
 
 ::: pf-step
 
-Compute the derivative of $\phi_w(z)$: $$\phi_w'(z) = \frac{-(1 - \bar{w}z) - (w - z)(-\bar{w})}{(1 - \bar{w}z)^2} = \frac{-1 + \bar{w}z + |w|^2 - \bar{w}z}{(1 - \bar{w}z)^2} = \frac{-(1 - |w|^2)}{(1 - \bar{w}z)^2}.$$
+Compute the derivative of $\phi_w(z)$: $$\phi_w'(z) = \frac{-(1 - \bar{w}z) - (w - z)(-\bar{w})}{(1 - \bar{w}z)^2} = \frac{-1 + \bar{w}z + \abs{w}^2 - \bar{w}z}{(1 - \bar{w}z)^2} = \frac{-(1 - \abs{w}^2)}{(1 - \bar{w}z)^2}.$$
 
 ::: pf-proof
 
@@ -88,7 +88,7 @@ Quotient rule.
 
 ::: {.pf-step #s1-4}
 
-Evaluating $\phi_w'$ at $z = 0$ and $z = w$: $$\phi_w'(0) = -(1 - |w|^2), \qquad \phi_w'(w) = \frac{-(1 - |w|^2)}{(1 - |w|^2)^2} = -\frac{1}{1 - |w|^2}.$$
+Evaluating $\phi_w'$ at $z = 0$ and $z = w$: $$\phi_w'(0) = -(1 - \abs{w}^2), \qquad \phi_w'(w) = \frac{-(1 - \abs{w}^2)}{(1 - \abs{w}^2)^2} = -\frac{1}{1 - \abs{w}^2}.$$
 
 ::: pf-proof
 
@@ -157,7 +157,7 @@ $\phi_a(0) = a$, $f(a) = b$, $\phi_b(b) = 0$.
 
 ::: {.pf-step #s3-1}
 
-By Part 1, since $g$ is holomorphic on $\DD$, $g(\DD) \subseteq \DD$, and $g(0) = 0$, we have: $$|g'(0)| \leq 1.$$
+By Part 1, since $g$ is holomorphic on $\DD$, $g(\DD) \subseteq \DD$, and $g(0) = 0$, we have: $$\abs{g'(0)} \leq 1.$$
 
 ::: pf-proof
 
@@ -203,7 +203,7 @@ $\phi_a(0) = a$ and $f(a) = b$.
 
 ::: pf-step
 
-Substitute $\phi_b'(b) = -\frac{1}{1 - |b|^2} = -\frac{1}{1 - |f(a)|^2}$ and $\phi_a'(0) = -(1 - |a|^2)$ from step [](#s1-4){.pf-ref}: $$g'(0) = \left(-\frac{1}{1 - |f(a)|^2}\right) \cdot f'(a) \cdot \big(-(1 - |a|^2)\big) = \frac{1 - |a|^2}{1 - |f(a)|^2} f'(a).$$
+Substitute $\phi_b'(b) = -\frac{1}{1 - \abs{b}^2} = -\frac{1}{1 - \abs{f(a)}^2}$ and $\phi_a'(0) = -(1 - \abs{a}^2)$ from step [](#s1-4){.pf-ref}: $$g'(0) = \left(-\frac{1}{1 - \abs{f(a)}^2}\right) \cdot f'(a) \cdot \big(-(1 - \abs{a}^2)\big) = \frac{1 - \abs{a}^2}{1 - \abs{f(a)}^2} f'(a).$$
 
 ::: pf-proof
 
@@ -215,11 +215,11 @@ Product of the derivative values.
 
 ::: {.pf-step #s4-4}
 
-Taking the absolute value: $$|g'(0)| = \frac{1 - |a|^2}{1 - |f(a)|^2} |f'(a)|.$$
+Taking the absolute value: $$\abs{g'(0)} = \frac{1 - \abs{a}^2}{1 - \abs{f(a)}^2} \abs{f'(a)}.$$
 
 ::: pf-proof
 
-$1 - |a|^2 > 0$ and $1 - |f(a)|^2 > 0$.
+$1 - \abs{a}^2 > 0$ and $1 - \abs{f(a)}^2 > 0$.
 
 :::
 
@@ -237,11 +237,11 @@ $1 - |a|^2 > 0$ and $1 - |f(a)|^2 > 0$.
 
 ::: pf-step
 
-From steps [](#s3-1){.pf-ref} and [](#s4-4){.pf-ref}: $$\frac{1 - |a|^2}{1 - |f(a)|^2} |f'(a)| \leq 1.$$
+From steps [](#s3-1){.pf-ref} and [](#s4-4){.pf-ref}: $$\frac{1 - \abs{a}^2}{1 - \abs{f(a)}^2} \abs{f'(a)} \leq 1.$$
 
 ::: pf-proof
 
-$|g'(0)| \leq 1$.
+$\abs{g'(0)} \leq 1$.
 
 :::
 
@@ -249,7 +249,7 @@ $|g'(0)| \leq 1$.
 
 ::: pf-step
 
-Dividing both sides by $1 - |a|^2 > 0$: $$\frac{|f'(a)|}{1 - |f(a)|^2} \leq \frac{1}{1 - |a|^2}.$$
+Dividing both sides by $1 - \abs{a}^2 > 0$: $$\frac{\abs{f'(a)}}{1 - \abs{f(a)}^2} \leq \frac{1}{1 - \abs{a}^2}.$$
 
 ::: pf-proof
 

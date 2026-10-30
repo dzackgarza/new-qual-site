@@ -20,7 +20,7 @@ Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex comp
 
 (b) For a given $A \in M_{m,n}$, prove that
 $$
-\sigma_1(A) = \max_{x,y \ne 0} \frac{|y^H A x|}{\|y\|_2 \|x\|_2},
+\sigma_1(A) = \max_{x,y \ne 0} \frac{\abs{y^H A x}}{\norm{y}_2 \norm{x}_2},
 $$
 where $\sigma_1(A)$ is the largest singular value of $A$.
 
@@ -41,8 +41,8 @@ These entries are the singular values of $A$.
 
 (b) For nonzero $x$ and $y$, Cauchy--Schwarz gives
 $$
-|y^HAx|\le \|y\|_2\,\|Ax\|_2
-\le \sigma_1(A)\|y\|_2\,\|x\|_2.
+\abs{y^HAx}\le \norm{y}_2\,\norm{Ax}_2
+\le \sigma_1(A)\norm{y}_2\,\norm{x}_2.
 $$
 Hence the displayed quotient is at most $\sigma_1(A)$.
 
@@ -52,30 +52,30 @@ Av_1=\sigma_1u_1.
 $$
 Taking $x=v_1$ and $y=u_1$ gives
 $$
-|u_1^HAv_1|=\sigma_1.
+\abs{u_1^HAv_1}=\sigma_1.
 $$
 Therefore
 $$
 \boxed{\sigma_1(A)=\max_{x,y\ne0}
-\frac{|y^HAx|}{\|y\|_2\|x\|_2}}.
+\frac{\abs{y^HAx}}{\norm{y}_2\norm{x}_2}}.
 $$
 
 (c) The field of values is
 $$
-F(A)=\{x^HAx:\ x\in\CC^n,\ \|x\|_2=1\}.
+F(A)=\{x^HAx:\ x\in\CC^n,\ \norm{x}_2=1\}.
 $$
 The spectral radius is
 $$
-\rho(A)=\max\{|\lambda|:\lambda\in\operatorname{eig}(A)\},
+\rho(A)=\max\{\abs{\lambda}:\lambda\in\operatorname{eig}(A)\},
 $$
 and the numerical radius is
 $$
-\omega(A)=\max\{|z|:z\in F(A)\}
+\omega(A)=\max\{\abs{z}:z\in F(A)\}
 =
-\max_{\|x\|_2=1}|x^HAx|.
+\max_{\norm{x}_2=1}\abs{x^HAx}.
 $$
 
-If $Ax=\lambda x$ with $\|x\|_2=1$, then
+If $Ax=\lambda x$ with $\norm{x}_2=1$, then
 $$
 x^HAx=\lambda,
 $$
@@ -86,7 +86,7 @@ $$
 
 For every unit vector $x$,
 $$
-|x^HAx|\le \|x\|_2\,\|Ax\|_2\le\sigma_1(A).
+\abs{x^HAx}\le \norm{x}_2\,\norm{Ax}_2\le\sigma_1(A).
 $$
 Taking the maximum over unit vectors gives
 $$

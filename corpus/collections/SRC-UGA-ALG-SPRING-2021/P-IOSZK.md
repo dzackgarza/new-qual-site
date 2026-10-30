@@ -18,7 +18,7 @@ review: draft
 ::: {.problem}
 Let m
 $$
-A \definedas
+A \coloneqq
 \begin{bmatrix}
 4 & 1 & -1 \\
 -6 & -1 & 2 \\
@@ -63,7 +63,7 @@ Write down the minimal polynomial of $A$.
 ::: {.proof title="parts a and b"}
 \envlist
 
-- Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \definedas \tr\qty{\Wedgepower^i A}$:
+- Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \coloneqq \tr\qty{\Wedgepower^i A}$:
 
   - $T_1 = \tr(A) = 4-1+1=4$.
 
@@ -81,9 +81,9 @@ Write down the minimal polynomial of $A$.
 
 - $\lambda = 2$:
 
-  - Set $U\definedas A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
+  - Set $U\coloneqq A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
   $$
-  U \definedas
+  U \coloneqq
   \begin{bmatrix}
   2 & 1 & -1
   \\
@@ -106,7 +106,7 @@ Write down the minimal polynomial of $A$.
 
   - Similarly,
   $$
-  U \definedas 
+  U \coloneqq 
   \begin{bmatrix}
   3 & 1 & -1 \\
   -6 & -2 & 2 \\

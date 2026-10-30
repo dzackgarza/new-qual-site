@@ -41,7 +41,7 @@ $$
 
 ::: {.proposition}
 The relative Spec exists and is unique up to unique isomorphism.
-For every affine open $V = \Spec B \subseteq X$ with $\mathcal{A}|_V \cong \widetilde{A}$ for a $B$-algebra $A$, $\pi^{-1}(V) \cong \Spec A$ over $V$.
+For every affine open $V = \Spec B \subseteq X$ with $\mathcal{A}\restrict_V \cong \widetilde{A}$ for a $B$-algebra $A$, $\pi^{-1}(V) \cong \Spec A$ over $V$.
 In particular $\pi$ is affine, $\pi_* \OO_{\operatorname{\mathbf{Spec}}_X \mathcal{A}} \cong \mathcal{A}$, and $\mathcal{A} \mapsto \operatorname{\mathbf{Spec}}_X \mathcal{A}$ is an anti-equivalence from quasicoherent $\OO_X$-algebras to affine morphisms with target $X$ ([[P-AGH2517AFFMOR]]).
 :::
 

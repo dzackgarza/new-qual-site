@@ -35,7 +35,7 @@ Then $2 \cdot (2,2) = (4,4) = (4,0) + (0,4) \in S$, but $(2,2) \notin S$, so $S$
 ::: {.remark title="Normalization of an affine toric variety"}
 Given a non-normal affine toric variety $X = \Spec k[S]$, set $M = \ZZ S$, take any finite generating set $S'$ of $S$, and put
 $$
-\sigma \definedas \dualof{\Cone(S')} \subseteq N_\RR .
+\sigma \coloneqq \dualof{\Cone(S')} \subseteq N_\RR .
 $$
 Then $\dualof{\sigma} \intersect M$ is the saturation of $S$, and
 $$

@@ -35,11 +35,11 @@ Be sure to name each theorem when you use it.
 Then $\lim_j \int f_j \, d\mu = \int \lim_j f_j \, d\mu$.
 
 (b) Let $f : [a, b] \times [c, d] \to \RR$ be continuous.
-Then for all $\varepsilon > 0$ there exists $N > 0$, continuous functions $g_j : [a, b] \to \RR$, and continuous functions $h_j : [c, d] \to \RR$ such that $\left|f(x, y) - \sum_{j=1}^N g_j(x) h_j(y)\right| < \varepsilon$ for all $(x, y) \in [a, b] \times [c, d]$.
+Then for all $\varepsilon > 0$ there exists $N > 0$, continuous functions $g_j : [a, b] \to \RR$, and continuous functions $h_j : [c, d] \to \RR$ such that $\abs{f(x, y) - \sum_{j=1}^N g_j(x) h_j(y)} < \varepsilon$ for all $(x, y) \in [a, b] \times [c, d]$.
 
 (c) Let $C([0, 1], \RR)$ be the space of all real-valued functions on $[0, 1]$ with the uniform norm topology.
 Suppose that $C([0, 1], \RR) = \bigcup_j F_j$ where each $F_j$ is closed.
-Then there exists $\varepsilon > 0$, $j_0 \in \NN$, and $f_0 \in F_{j_0}$ such that $\sup_{x \in [0,1]} |f(x) - f_0(x)| < \varepsilon \implies f \in F_{j_0}$.
+Then there exists $\varepsilon > 0$, $j_0 \in \NN$, and $f_0 \in F_{j_0}$ such that $\sup_{x \in [0,1]} \abs{f(x) - f_0(x)} < \varepsilon \implies f \in F_{j_0}$.
 :::
 
 ::: {.solution}
@@ -120,7 +120,7 @@ $$
 such that
 $$
 \sup_{(x,y)\in K}
-\left|f(x,y)-\sum_{j=1}^N g_j(x)h_j(y)\right|<\varepsilon.
+\abs{f(x,y)-\sum_{j=1}^N g_j(x)h_j(y)}<\varepsilon.
 $$
 This is the required approximation.
 
@@ -143,11 +143,11 @@ with every $F_j$ closed. The Baire Category Theorem therefore implies that at le
 Hence there exist $f_0\in F_{j_0}$ and $\varepsilon>0$ such that the open ball
 $$
 B_\infty(f_0,\varepsilon)
-=\left\{f:\sup_{x\in[0,1]}|f(x)-f_0(x)|<\varepsilon\right\}
+=\left\{f:\sup_{x\in[0,1]}\abs{f(x)-f_0(x)}<\varepsilon\right\}
 $$
 is contained in $F_{j_0}$. Therefore
 $$
-\sup_{x\in[0,1]}|f(x)-f_0(x)|<\varepsilon
+\sup_{x\in[0,1]}\abs{f(x)-f_0(x)}<\varepsilon
 \quad\Longrightarrow\quad
 f\in F_{j_0},
 $$

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\RR^n$, and let $y_1,\ldots,y_n\in\RR^n$ satisfy
 $$
-\sum_i\|y_i\|^2<1.
+\sum_i\norm{y_i}^2<1.
 $$
 Prove that $u_1+y_1,\ldots,u_n+y_n$ are linearly independent.
 :::
@@ -70,9 +70,9 @@ Move the perturbation sum to the right-hand side.
 
 Since $u_1,\ldots,u_n$ is orthonormal,
 $$
-\left\|
+\norm{
 \sum_{i=1}^n a_i u_i
-\right\|^2
+}^2
 =
 \sum_{i=1}^n a_i^2.
 $$
@@ -82,9 +82,9 @@ $$
 
 Expand the squared norm:
 $$
-\left\|
+\norm{
 \sum_i a_i u_i
-\right\|^2
+}^2
 =
 \sum_{i,j}a_ia_j\langle u_i,u_j\rangle.
 $$
@@ -102,15 +102,15 @@ so only the diagonal terms remain.
 
 By Cauchy--Schwarz,
 $$
-\left\|
+\norm{
 \sum_{i=1}^n a_i y_i
-\right\|
+}
 \le
 \left(
 \sum_{i=1}^n a_i^2
 \right)^{1/2}
 \left(
-\sum_{i=1}^n\|y_i\|^2
+\sum_{i=1}^n\norm{y_i}^2
 \right)^{1/2}.
 $$
 
@@ -119,17 +119,17 @@ $$
 
 Using the triangle inequality,
 $$
-\left\|
+\norm{
 \sum_i a_i y_i
-\right\|
+}
 \le
-\sum_i|a_i|\,\|y_i\|.
+\sum_i\abs{a_i}\,\norm{y_i}.
 $$
 Apply the scalar Cauchy--Schwarz inequality to the sequences
 $$
-(|a_i|)
+(\abs{a_i})
 \quad\text{and}\quad
-(\|y_i\|).
+(\norm{y_i}).
 $$
 
 :::
@@ -149,7 +149,7 @@ and
 $$
 \eta=
 \left(
-\sum_{i=1}^n\|y_i\|^2
+\sum_{i=1}^n\norm{y_i}^2
 \right)^{1/2}.
 $$
 Then
@@ -164,13 +164,13 @@ By steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 A
 =
-\left\|
+\norm{
 \sum_i a_i u_i
-\right\|
+}
 =
-\left\|
+\norm{
 \sum_i a_i y_i
-\right\|
+}
 \le
 A\eta.
 $$
@@ -191,7 +191,7 @@ $$
 
 The hypothesis gives
 $$
-\sum_i\|y_i\|^2<1.
+\sum_i\norm{y_i}^2<1.
 $$
 Taking square roots yields
 $$

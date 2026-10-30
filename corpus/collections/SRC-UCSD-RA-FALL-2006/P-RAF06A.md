@@ -37,7 +37,7 @@ Let $E$ be a Borel set and assume that $\mu(K) = 0$ for every compact set $K \su
 Then $\mu(E) = 0$.
 
 (b) Let $f : [-1, 1] \to \RR$ be continuous with $f(0) = 0$.
-For every $\varepsilon > 0$, there exists an integer $n \geq 1$ and continuous functions $u_j : [-1, 1] \to \RR$, $j = 1, \ldots, n$, such that $u_j(x) = 0$ only at $x = 0$ and $\sup_{x \in [-1,1]} \left|f(x) - \sum_{j=1}^n u_j(x)\right| < \varepsilon$.
+For every $\varepsilon > 0$, there exists an integer $n \geq 1$ and continuous functions $u_j : [-1, 1] \to \RR$, $j = 1, \ldots, n$, such that $u_j(x) = 0$ only at $x = 0$ and $\sup_{x \in [-1,1]} \abs{f(x) - \sum_{j=1}^n u_j(x)} < \varepsilon$.
 
 (c) Let $\nu$ be a complex measure and $\mu$ a (positive) measure on $(X, \mathcal{M})$.
 Suppose that $X = A \cup B$ with $A \cap B = \emptyset$ and $\nu(A) = 0$.
@@ -46,10 +46,10 @@ Then there is a measurable function $g : X \to \CC$ such that $\nu = g \, d\mu$.
 
 (d) Let $\{f_n\}$ be a sequence in $L^4(X, \mu)$.
 Suppose that $\lim_{n \to \infty} \int_X f_n g \, d\mu$ exists (as a complex number) for every $g \in L^{4/3}(X, \mu)$.
-Then there is $M > 0$ such that $\|f_n\|_4 \leq M$ for every $n$.
+Then there is $M > 0$ such that $\norm{f_n}_4 \leq M$ for every $n$.
 
 (e) Let $\{f_n\}$ be a sequence in $L^4(X, \mu)$.
-Suppose that there is $M > 0$ such that $\|f_n\|_4 \leq M$ for every $n$.
+Suppose that there is $M > 0$ such that $\norm{f_n}_4 \leq M$ for every $n$.
 Then there is a subsequence $\{f_{n_k}\}$ such that $\lim_{k \to \infty} \int_X f_{n_k} g \, d\mu$ exists (as a complex number) for every $g \in L^{4/3}(X, \mu)$.
 :::
 
@@ -84,7 +84,7 @@ Part (b) is true.
 
 Define
 $$
-\eta(x):=|f(x)|+|x|.
+\eta(x):=\abs{f(x)}+\abs{x}.
 $$
 Then $\eta$ is continuous, $\eta(0)=0$, and $\eta(x)>0$ for every $x\ne0$. Put
 $$
@@ -98,11 +98,11 @@ u_1+u_2=f.
 $$
 Moreover, $u_2$ vanishes only at $0$. For $x\ne0$,
 $$
-u_1(x)=f(x)+|f(x)|+|x|>0,
+u_1(x)=f(x)+\abs{f(x)}+\abs{x}>0,
 $$
 so $u_1$ also vanishes only at $0$. Thus the required approximation holds exactly with $n=2$:
 $$
-\sup_{[-1,1]}|f-u_1-u_2|=0<\varepsilon.
+\sup_{[-1,1]}\abs{f-u_1-u_2}=0<\varepsilon.
 $$
 
 :::
@@ -145,7 +145,7 @@ If there were a measurable $g:X\to\CC$ with $\nu=g\,d\mu$, then
 $$
 \nu(\{1\})=\int_{\{1\}}g\,d\mu=0,
 $$
-contradicting $\nu(\{1\})=1$. Hence the assertion is false. The missing condition is domination on all measurable subsets of $A$, equivalently $|\nu|(A)=0$, not merely $\nu(A)=0$.
+contradicting $\nu(\{1\})=1$. Hence the assertion is false. The missing condition is domination on all measurable subsets of $A$, equivalently $\totalvariation{\nu}(A)=0$, not merely $\nu(A)=0$.
 
 :::
 
@@ -165,28 +165,28 @@ T_n(g)=\int_X f_ng\,d\mu.
 $$
 By Hölder's inequality, $T_n$ is bounded and
 $$
-\|T_n\|\le\|f_n\|_4.
+\norm{T_n}\le\norm{f_n}_4.
 $$
 Conversely, if $f_n\ne0$, choose
 $$
-g_n=\frac{\overline{f_n}|f_n|^2}{\|f_n\|_4^3}.
+g_n=\frac{\overline{f_n}\abs{f_n}^2}{\norm{f_n}_4^3}.
 $$
-Then $\|g_n\|_{4/3}=1$ and
+Then $\norm{g_n}_{4/3}=1$ and
 $$
-T_n(g_n)=\|f_n\|_4,
+T_n(g_n)=\norm{f_n}_4,
 $$
 so
 $$
-\|T_n\|=\|f_n\|_4.
+\norm{T_n}=\norm{f_n}_4.
 $$
 
 For every fixed $g\in L^{4/3}$, the scalar sequence $T_n(g)$ converges by hypothesis, hence is bounded. Since $L^{4/3}$ is Banach, the Uniform Boundedness Principle gives
 $$
-\sup_n\|T_n\|<\infty.
+\sup_n\norm{T_n}<\infty.
 $$
 Therefore
 $$
-\boxed{\sup_n\|f_n\|_4<\infty.}
+\boxed{\sup_n\norm{f_n}_4<\infty.}
 $$
 
 :::
@@ -201,7 +201,7 @@ Part (e) is true.
 
 For $1<p<\infty$, the Banach space $L^p(X,\mu)$ is reflexive. Hence the closed ball
 $$
-\{f\in L^4:\|f\|_4\le M\}
+\{f\in L^4:\norm{f}_4\le M\}
 $$
 is weakly compact. By the Eberlein--Smulian theorem, weak compactness in a Banach space is equivalent to weak sequential compactness. Therefore the bounded sequence $(f_n)$ has a weakly convergent subsequence $(f_{n_k})$.
 

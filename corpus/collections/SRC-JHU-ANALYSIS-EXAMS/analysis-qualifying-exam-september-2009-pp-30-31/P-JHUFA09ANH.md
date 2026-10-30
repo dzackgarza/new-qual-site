@@ -29,10 +29,10 @@ audit:
 8. Let h be a harmonic function on the punctured disk
 
 $$
-U : = \left\{ z \in \CC : 0 < | z | < 1 \right\} .
+U : = \left\{ z \in \CC : 0 < \abs{ z } < 1 \right\} .
 $$
 
-Show that there exists a constant $c \in \RR$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
+Show that there exists a constant $c \in \RR$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log \abs{ z }$ for all $z \in U$
 :::
 
 ::: {.solution}
@@ -53,7 +53,7 @@ Define $\widetilde h(w)=h(e^w)$. Composition with the
 holomorphic map $w\mapsto e^w$ preserves harmonicity:
 the chain rule gives
 $$
-\Delta\widetilde h(w)=|e^w|^2(\Delta h)(e^w)=0.
+\Delta\widetilde h(w)=\abs{e^w}^2(\Delta h)(e^w)=0.
 $$
 On the simply connected half-plane $L$, the harmonic
 function $\widetilde h$ has a holomorphic conjugate,
@@ -102,14 +102,14 @@ so step [](#s2){.pf-ref} makes this definition independent of the choice.
 Near each $z\ne0$ there is a holomorphic logarithm branch
 $\ell$, obtained for example from the local inverse
 function theorem applied to the exponential [@SS03].
-Its real part is $\log|z|<0$, so it takes its values in
+Its real part is $\log\abs{z}<0$, so it takes its values in
 $L$. Locally $f=G\circ\ell$, which proves holomorphy of
 $f$ throughout $U$.
 For any such $w$,
 $$
 \operatorname{Re}f(z)
 =\operatorname{Re}H(w)+c\operatorname{Re}w
-=h(z)+c\log|z|.
+=h(z)+c\log\abs{z}.
 $$
 The constant $c$ is real by construction, which establishes
 the required representation.

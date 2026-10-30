@@ -37,7 +37,7 @@ Prove or disprove each of the following statements.
 ::: pf-proof
 
 ::: {.pf-step #fk-definition}
-Let $f_k \definedas \frac{1}{k} \chi_{[0,k]}$ on $\RR$.
+Let $f_k \coloneqq \frac{1}{k} \chi_{[0,k]}$ on $\RR$.
 
 ::: pf-proof
 Each $f_k$ is measurable (indicator of an interval), and $\int_\RR f_k = \frac{1}{k} \cdot k = 1$ for every $k$.

@@ -43,9 +43,9 @@ Any $D$ with $\deg D \geq 2g+1$ is very ample.
 ::: {.remark}
 The inequalities follow from
 $$
-0\to\OO_C(D-p)\to\OO_C(D)\to\OO_C(D)|_p\to0,
+0\to\OO_C(D-p)\to\OO_C(D)\to\OO_C(D)\restrict_p\to0,
 $$
-because $H^0(p,\OO_C(D)|_p)$ is one-dimensional over $k$.
+because $H^0(p,\OO_C(D)\restrict_p)$ is one-dimensional over $k$.
 The very-ampleness criterion is equivalent to separation of pairs of points and tangent vectors, with the case $p=q$ testing tangent vectors.
 Applied to $K$ and using Riemann--Roch,
 $$

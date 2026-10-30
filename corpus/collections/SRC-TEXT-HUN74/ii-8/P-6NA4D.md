@@ -29,7 +29,7 @@ Show that any group of order $p^2q$ (for primes $p,q$) is solvable.
 :::
 
 ::: {.solution}
-Let $|G|=p^2q$ with $p,q$ prime.
+Let $\cardinality{G}=p^2q$ with $p,q$ prime.
 
 ::: pf
 
@@ -39,7 +39,7 @@ If $p=q$, then $G$ is solvable.
 
 ::: pf-proof
 
-In this case $|G|=p^3$, so $G$ is a finite $p$-group. Every finite $p$-group
+In this case $\cardinality{G}=p^3$, so $G$ is a finite $p$-group. Every finite $p$-group
 is nilpotent, hence solvable.
 
 Assume henceforth that $p\ne q$.
@@ -77,7 +77,7 @@ Because $q>p$, the prime $q$ cannot divide $p-1$, so $q\mid p+1$. Thus
 $q=p+1$. One of $p$ and $p+1$ is even, so the only primes with $q=p+1$ are
 $p=2$, $q=3$.
 
-It remains to consider $|G|=12$. If $n_3=4$, then the four Sylow
+It remains to consider $\cardinality{G}=12$. If $n_3=4$, then the four Sylow
 $3$-subgroups have pairwise trivial intersection and contribute
 $$
 4(3-1)=8
@@ -102,8 +102,8 @@ The possible orders of $N$ are $p^2$ or $q$. A group of prime order is cyclic,
 and every group of order $p^2$ is abelian. Hence $N$ is abelian and therefore
 solvable.
 
-The quotient has the complementary order: if $|N|=p^2$, then $|G/N|=q$; if
-$|N|=q$, then $|G/N|=p^2$. Thus $G/N$ is likewise abelian and solvable.
+The quotient has the complementary order: if $\cardinality{N}=p^2$, then $\cardinality{G/N}=q$; if
+$\cardinality{N}=q$, then $\cardinality{G/N}=p^2$. Thus $G/N$ is likewise abelian and solvable.
 
 :::
 

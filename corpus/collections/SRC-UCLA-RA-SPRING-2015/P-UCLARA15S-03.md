@@ -19,20 +19,20 @@ audit:
 ::: {.problem}
 Let $f\in L^1_{\mathrm{loc}}(\RR^n)$ and let
 $$
-Mf(x)=\sup_{r>0}\frac1{m(B(r,x))}\int_{B(r,x)}|f(y)|\,dy
+Mf(x)=\sup_{r>0}\frac1{m(B(r,x))}\int_{B(r,x)}\abs{f(y)}\,dy
 $$
 be the Hardy--Littlewood maximal function.
 
 (a) Show that
 $$
-m(\{x:Mf(x)>s\})\le\frac{C_n}{s}\int_{|f(x)|>s/2}|f(x)|\,dx,\qquad s>0,
+m(\{x:Mf(x)>s\})\le\frac{C_n}{s}\int_{\abs{f(x)}>s/2}\abs{f(x)}\,dx,\qquad s>0,
 $$
 where $C_n$ depends only on $n$.
 The Hardy--Littlewood maximal theorem may be used.
 
 (b) Prove that if $\phi\in C^1(\RR)$, $\phi(0)=0$, and $\phi'>0$, then
 $$
-\int \phi(Mf(x))\,dx\le C_n\int |f(x)|\left(\int_{0<t<2|f(x)|}\frac{\phi'(t)}t\,dt\right)dx.
+\int \phi(Mf(x))\,dx\le C_n\int \abs{f(x)}\left(\int_{0<t<2\abs{f(x)}}\frac{\phi'(t)}t\,dt\right)dx.
 $$
 :::
 
@@ -46,7 +46,7 @@ Fix $s>0$ and define
 $$
 \widetilde f_s(x)
 \coloneqq
-f(x)\mathbf 1_{\{|f(x)|>s/2\}}.
+f(x)\mathbf 1_{\{\abs{f(x)}>s/2\}}.
 $$
 Then
 $$
@@ -61,27 +61,27 @@ $$
 Suppose $Mf(x)>s$. Then there is a ball $B$ centered at $x$ such that
 $$
 \frac1{m(B)}
-\int_B|f(y)|\,dy
+\int_B\abs{f(y)}\,dy
 >s.
 $$
-Split the integral according to whether $|f|\le s/2$ or $|f|>s/2$:
+Split the integral according to whether $\abs{f}\le s/2$ or $\abs{f}>s/2$:
 $$
 \begin{aligned}
 s\,m(B)
 &<
-\int_{B\cap\{|f|\le s/2\}}|f|
+\int_{B\cap\{\abs{f}\le s/2\}}\abs{f}
 +
-\int_{B\cap\{|f|>s/2\}}|f|\\
+\int_{B\cap\{\abs{f}>s/2\}}\abs{f}\\
 &\le
 \frac{s}{2}m(B)
 +
-\int_B|\widetilde f_s|.
+\int_B\abs{\widetilde f_s}.
 \end{aligned}
 $$
 Hence
 $$
 \frac1{m(B)}
-\int_B|\widetilde f_s|
+\int_B\abs{\widetilde f_s}
 >
 \frac{s}{2}.
 $$
@@ -102,7 +102,7 @@ $$
 m(\{x:Mf(x)>s\})
 \le
 \frac{C_n}{s}
-\int_{|f(x)|>s/2}|f(x)|\,dx
+\int_{\abs{f(x)}>s/2}\abs{f(x)}\,dx
 }.
 $$
 
@@ -111,7 +111,7 @@ $$
 
 If
 $$
-\int_{|f|>s/2}|f|=\infty,
+\int_{\abs{f}>s/2}\abs{f}=\infty,
 $$
 the asserted inequality is automatic. Otherwise
 $$
@@ -125,10 +125,10 @@ m(\{Mf>s\})
 m(\{M\widetilde f_s>s/2\})\\
 &\le
 \frac{C_n}{s}
-\|\widetilde f_s\|_1\\
+\norm{\widetilde f_s}_1\\
 &=
 \frac{C_n}{s}
-\int_{|f|>s/2}|f|.
+\int_{\abs{f}>s/2}\abs{f}.
 \end{aligned}
 $$
 Absorbing the harmless factor $2$ from the threshold $s/2$ into $C_n$ gives the displayed estimate.
@@ -194,7 +194,7 @@ C_n
 \int_0^\infty
 \frac{\phi'(t)}{t}
 \left(
-\int_{|f(x)|>t/2}|f(x)|\,dx
+\int_{\abs{f(x)}>t/2}\abs{f(x)}\,dx
 \right)dt.
 $$
 
@@ -220,9 +220,9 @@ The right-hand side in step [](#s1-4){.pf-ref} equals
 $$
 C_n
 \int_{\RR^n}
-|f(x)|
+\abs{f(x)}
 \left(
-\int_{0<t<2|f(x)|}
+\int_{0<t<2\abs{f(x)}}
 \frac{\phi'(t)}{t}\,dt
 \right)dx.
 $$
@@ -236,13 +236,13 @@ $$
 &\int_0^\infty
 \frac{\phi'(t)}{t}
 \left(
-\int_{|f(x)|>t/2}|f(x)|\,dx
+\int_{\abs{f(x)}>t/2}\abs{f(x)}\,dx
 \right)dt\\
 &\qquad=
 \int_{\RR^n}
-|f(x)|
+\abs{f(x)}
 \left(
-\int_{\{t>0:t<2|f(x)|\}}
+\int_{\{t>0:t<2\abs{f(x)}\}}
 \frac{\phi'(t)}{t}\,dt
 \right)dx.
 \end{aligned}
@@ -260,9 +260,9 @@ $$
 \boxed{
 \int \phi(Mf(x))\,dx
 \le
-C_n\int |f(x)|
+C_n\int \abs{f(x)}
 \left(
-\int_{0<t<2|f(x)|}
+\int_{0<t<2\abs{f(x)}}
 \frac{\phi'(t)}t\,dt
 \right)dx
 }.

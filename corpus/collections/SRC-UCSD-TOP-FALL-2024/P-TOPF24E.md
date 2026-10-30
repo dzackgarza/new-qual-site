@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 Let $\Sigma$ be a one-holed torus (delete an open disc from a standard torus) whose boundary is identified with the standard $S^1$.
 Let $(X, x_0)$ be a based path-connected space, $\alpha$ a loop based at $x_0$, and $[\alpha]$ the corresponding class in $\pi_1(X, x_0)$.
-Show that $[\alpha]$ may be expressed algebraically as a commutator $yzy^{-1}z^{-1}$ of two elements $y, z \in \pi_1(X, x_0)$ if and only if "$\alpha$ extends to a map of $\Sigma$", meaning that $\alpha$ may be expressed as $f|_{\partial\Sigma}$ for some map $f \colon \Sigma \to X$.
+Show that $[\alpha]$ may be expressed algebraically as a commutator $yzy^{-1}z^{-1}$ of two elements $y, z \in \pi_1(X, x_0)$ if and only if "$\alpha$ extends to a map of $\Sigma$", meaning that $\alpha$ may be expressed as $f\restrict_{\partial\Sigma}$ for some map $f \colon \Sigma \to X$.
 Is there an analogue of this result for one-holed higher-genus surfaces?
 :::
 
@@ -62,7 +62,7 @@ A map from a wedge of two based circles is specified by two based loops. By cons
 
 ::: {.pf-step #s3}
 
-If $r:\Sigma\to R$ is a deformation retraction, then $F_0=\varphi\circ r$ has boundary loop $\lambda=F_0|_{\partial\Sigma}$ satisfying
+If $r:\Sigma\to R$ is a deformation retraction, then $F_0=\varphi\circ r$ has boundary loop $\lambda=F_0\restrict_{\partial\Sigma}$ satisfying
 $$
 [\lambda]=[\alpha]\in\pi_1(X,x_0).
 $$
@@ -71,7 +71,7 @@ $$
 
 By step [](#s1){.pf-ref},
 $$
-[r|_{\partial\Sigma}]=[a,b].
+[r\restrict_{\partial\Sigma}]=[a,b].
 $$
 Hence
 $$
@@ -96,7 +96,7 @@ from $\lambda$ to $\alpha$. The inclusion $\partial\Sigma\hookrightarrow\Sigma$ 
 $$
 \widetilde H:\Sigma\times I\to X.
 $$
-Set $F=\widetilde H(-,1)$. Then $F|_{\partial\Sigma}=\alpha$ exactly.
+Set $F=\widetilde H(-,1)$. Then $F\restrict_{\partial\Sigma}=\alpha$ exactly.
 
 :::
 
@@ -104,7 +104,7 @@ Set $F=\widetilde H(-,1)$. Then $F|_{\partial\Sigma}=\alpha$ exactly.
 
 ::: {.pf-step #s5}
 
-Conversely, if $F:\Sigma\to X$ satisfies $F|_{\partial\Sigma}=\alpha$, then $[\alpha]$ is a commutator.
+Conversely, if $F:\Sigma\to X$ satisfies $F\restrict_{\partial\Sigma}=\alpha$, then $[\alpha]$ is a commutator.
 
 ::: pf-proof
 

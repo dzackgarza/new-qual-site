@@ -54,7 +54,7 @@ with $A=A\times\{0\}$. Restrict $r$ to the cone and define
 $$
 f_t(a)=r([a,t]).
 $$
-Since $r|_X=\operatorname{id}_X$, one has
+Since $r\restrict_X=\operatorname{id}_X$, one has
 $$
 f_0(a)=a.
 $$
@@ -74,7 +74,7 @@ f_t:A\to X,
 $$
 be such a homotopy. Define $r:Y\to X$ by
 $$
-r|_X=\operatorname{id}_X,
+r\restrict_X=\operatorname{id}_X,
 \qquad
 r([a,t])=f_t(a)
 $$

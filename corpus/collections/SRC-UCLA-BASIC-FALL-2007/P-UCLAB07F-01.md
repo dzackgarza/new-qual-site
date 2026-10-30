@@ -54,7 +54,7 @@ d(z,y)\le d(z,x)+d(x,y).
 $$
 Hence
 $$
-|d(x,y)-d(z,y)|\le d(x,z).
+\abs{d(x,y)-d(z,y)}\le d(x,z).
 $$
 Thus $\delta_y$ is $1$-Lipschitz, and therefore continuous.
 
@@ -109,13 +109,13 @@ Then
 $$
 E
 =
-\{x\in S:|x|\ge1\}
+\{x\in S:\abs{x}\ge1\}
 =
 \{1\}.
 $$
 But
 $$
-\{x\in S:|x|>1\}
+\{x\in S:\abs{x}>1\}
 =
 \varnothing,
 $$

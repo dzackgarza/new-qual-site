@@ -45,9 +45,9 @@ $$
 p:\widetilde X\to X
 $$
 defined by:
-- $p|_{S^2_0}=q$ onto $\RP^2$;
-- $p|_{S^2_+}$ is the identity homeomorphism onto the wedged $S^2$-summand of $X$;
-- $p|_{S^2_-}$ is another identity homeomorphism onto the same $S^2$-summand.
+- $p\restrict_{S^2_0}=q$ onto $\RP^2$;
+- $p\restrict_{S^2_+}$ is the identity homeomorphism onto the wedged $S^2$-summand of $X$;
+- $p\restrict_{S^2_-}$ is another identity homeomorphism onto the same $S^2$-summand.
 
 
 ::: pf-proof

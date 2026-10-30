@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $G$ is a finite group, $p$ is prime, $m$ is an integer, $\gcd(p, m) = 1$, and $|G| = pm$.
+Suppose $G$ is a finite group, $p$ is prime, $m$ is an integer, $\gcd(p, m) = 1$, and $\cardinality{G} = pm$.
 Suppose $P$ is a Sylow $p$-subgroup and $N_G(P) = P$.
 
 (a) Prove that if $G$ has a subgroup $H$ of order $m$, then $$H = \{x \in G \mid o(x) \neq p\}.$$ Deduce that in this case, $H$ is a characteristic subgroup.
@@ -36,7 +36,7 @@ Prove that $G$ has a normal subgroup $N$ such that $G/N \cong \ZZ/\ell\ZZ$ for s
 (c) Suppose $G$ is solvable.
 Prove that $G$ has a normal subgroup of order $m$.
 
-Hint: Use induction on $|G|$, the subgroup $N$ from the previous part, and a Sylow $\ell$-subgroup of $N$ if needed.
+Hint: Use induction on $\cardinality{G}$, the subgroup $N$ from the previous part, and a Sylow $\ell$-subgroup of $N$ if needed.
 :::
 
 ::: {.solution}
@@ -99,7 +99,7 @@ By step [](#s2){.pf-ref}, the set on the right has cardinality
 $$
 pm-m(p-1)=m.
 $$
-Since $|H|=m$, the inclusion is an equality.
+Since $\cardinality{H}=m$, the inclusion is an equality.
 
 :::
 
@@ -163,11 +163,11 @@ This proves part (b).
 
 ::: {.pf-step #s6}
 
-If $N\trianglelefteq G$ is a proper normal subgroup and $p$ divides $|N|$, then the hypothesis $N_G(P)=P$ leads to a contradiction.
+If $N\trianglelefteq G$ is a proper normal subgroup and $p$ divides $\cardinality{N}$, then the hypothesis $N_G(P)=P$ leads to a contradiction.
 
 ::: pf-proof
 
-If $p\mid|N|$, then a Sylow $p$-subgroup of $N$ has order $p$ and is also a Sylow $p$-subgroup of $G$.
+If $p\mid\cardinality{N}$, then a Sylow $p$-subgroup of $N$ has order $p$ and is also a Sylow $p$-subgroup of $G$.
 Because $N$ is normal, it contains every $G$-conjugate of that Sylow subgroup; in particular, after conjugating if necessary, we may take
 $$
 P\le N.
@@ -207,7 +207,7 @@ $$
 for a prime $\ell$.
 If $\ell\ne p$, then
 $$
-|N|=\frac{pm}{\ell}
+\cardinality{N}=\frac{pm}{\ell}
 $$
 is divisible by $p$, because $\ell$ divides $m$.
 This contradicts step [](#s6){.pf-ref}.
@@ -217,7 +217,7 @@ $$
 $$
 Consequently
 $$
-|N|=\frac{|G|}{p}=m.
+\cardinality{N}=\frac{\cardinality{G}}{p}=m.
 $$
 Since $N\trianglelefteq G$, this is the required normal subgroup.
 This proves part (c).

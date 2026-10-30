@@ -24,7 +24,7 @@ Show that if $f$ may be extended to a continuous function $g: \overline{A} \to Y
 :::
 
 ::: {.solution}
-Let $g_1,g_2\colon\overline A\to Y$ be continuous with $g_1|_A=g_2|_A=f$, and put $E=\{x\in\overline A:g_1(x)=g_2(x)\}$.
+Let $g_1,g_2\colon\overline A\to Y$ be continuous with $g_1\restrict_A=g_2\restrict_A=f$, and put $E=\{x\in\overline A:g_1(x)=g_2(x)\}$.
 
 ::: pf
 

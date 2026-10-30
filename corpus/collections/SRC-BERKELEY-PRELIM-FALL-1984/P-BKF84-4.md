@@ -159,9 +159,9 @@ g_a(x)=\frac{e^{-ax}}x
 $$
 and $S>R>0$, integration by parts gives the uniform tail bound
 $$
-\left|
+\abs{
 \int_R^Sg_a(x)\sin x\,dx
-\right|
+}
 \leq
 2g_a(R)
 \leq

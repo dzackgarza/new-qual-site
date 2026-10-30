@@ -50,7 +50,7 @@ Then $\nu \ll \mu$ if and only if $\nu^+ \ll \mu$ and $\nu^- \ll \mu$.
 Assume that $f_n \to f$ and $g_n \to g$ in measure; then $f_n g_n \to f g$ in measure.
 
 (e) Let $D$ be a bounded domain in $\RR^n$.
-If $f_n \in L^p(D)$ for $1 < p < \infty$ and converges weakly to $f \in L^p(D)$, then $\|f\|_p \leq \liminf_{n \to \infty} \|f_n\|_p$.
+If $f_n \in L^p(D)$ for $1 < p < \infty$ and converges weakly to $f \in L^p(D)$, then $\norm{f}_p \leq \liminf_{n \to \infty} \norm{f_n}_p$.
 :::
 
 ::: {.solution}
@@ -61,7 +61,7 @@ If $f_n \in L^p(D)$ for $1 < p < \infty$ and converges weakly to $f \in L^p(D)$,
 ::: pf-step
 Enumerate the rationals in $\RR$ as $\{q_n\}_{n \ge 1}$ and define
 $$
-f(x)=\sum_{n=1}^{\infty}2^{-n}|x-q_n|^{-1/2}\mathbf1_{\{|x-q_n|<1\}}.
+f(x)=\sum_{n=1}^{\infty}2^{-n}\abs{x-q_n}^{-1/2}\mathbf1_{\{\abs{x-q_n}<1\}}.
 $$
 
 ::: pf-proof
@@ -78,7 +78,7 @@ By Tonelli's theorem,
 $$
 \int_{\RR}f(x)\,dx
 =\sum_{n=1}^\infty2^{-n}
-\int_{|x-q_n|<1}|x-q_n|^{-1/2}\,dx.
+\int_{\abs{x-q_n}<1}\abs{x-q_n}^{-1/2}\,dx.
 $$
 The inner integral equals
 $$
@@ -113,9 +113,9 @@ $$
 \qquad
 2^{-n}\delta^{-1/2}>A.
 $$
-Then for every $x$ with $0<|x-q_n|<\delta$,
+Then for every $x$ with $0<\abs{x-q_n}<\delta$,
 $$
-f(x)\ge2^{-n}|x-q_n|^{-1/2}>A.
+f(x)\ge2^{-n}\abs{x-q_n}^{-1/2}>A.
 $$
 This punctured interval has positive measure.
 :::
@@ -261,7 +261,7 @@ construct a counterexample.
 $f_n \to f = x$ in measure.
 
 ::: pf-proof
-$f_n = x$ exactly, so $m(\{|f_n - x| > \varepsilon\}) = 0$ for all $n$.
+$f_n = x$ exactly, so $m(\{\abs{f_n - x} > \varepsilon\}) = 0$ for all $n$.
 :::
 
 :::
@@ -270,16 +270,16 @@ $f_n = x$ exactly, so $m(\{|f_n - x| > \varepsilon\}) = 0$ for all $n$.
 $g_n \to g = 0$ in measure.
 
 ::: pf-proof
-for $n > 1/\varepsilon$, $m(\{|1/n| > \varepsilon\}) = 0$.
+for $n > 1/\varepsilon$, $m(\{\abs{1/n} > \varepsilon\}) = 0$.
 :::
 
 :::
 
 ::: {.pf-step #p4-s4}
-$f_n g_n = x/n$, and $m(\{|x/n| > \varepsilon\}) = m(\{|x| > n\varepsilon\}) = \infty$ for every $n$.
+$f_n g_n = x/n$, and $m(\{\abs{x/n} > \varepsilon\}) = m(\{\abs{x} > n\varepsilon\}) = \infty$ for every $n$.
 
 ::: pf-proof
-the set $\{|x| > n\varepsilon\}$ has infinite Lebesgue measure.
+the set $\{\abs{x} > n\varepsilon\}$ has infinite Lebesgue measure.
 :::
 
 :::
@@ -309,7 +309,7 @@ standard duality theorem.
 :::
 
 ::: {.pf-step #p5-s2}
-Since $f_n \rightharpoonup f$ weakly, for every $g \in L^q(D)$ with $\|g\|_q = 1$, $\int f g = \lim_n \int f_n g$.
+Since $f_n \rightharpoonup f$ weakly, for every $g \in L^q(D)$ with $\norm{g}_q = 1$, $\int f g = \lim_n \int f_n g$.
 
 ::: pf-proof
 definition of weak convergence.
@@ -318,7 +318,7 @@ definition of weak convergence.
 :::
 
 ::: {.pf-step #p5-s3}
-Choose $g \in L^q(D)$ with $\|g\|_q = 1$ and $\int f g = \|f\|_p$.
+Choose $g \in L^q(D)$ with $\norm{g}_q = 1$ and $\int f g = \norm{f}_p$.
 
 ::: pf-proof
 the norm is attained on the unit sphere of the dual (Hahn–Banach / duality).
@@ -327,7 +327,7 @@ the norm is attained on the unit sphere of the dual (Hahn–Banach / duality).
 :::
 
 ::: {.pf-step #p5-s4}
-Then $\|f\|_p = \int f g = \lim_n \int f_n g \le \liminf_n \|f_n\|_p \|g\|_q = \liminf_n \|f_n\|_p$.
+Then $\norm{f}_p = \int f g = \lim_n \int f_n g \le \liminf_n \norm{f_n}_p \norm{g}_q = \liminf_n \norm{f_n}_p$.
 
 ::: pf-proof
 step [](#p5-s2){.pf-ref}, step [](#p5-s3){.pf-ref}, and Hölder's inequality.
@@ -336,7 +336,7 @@ step [](#p5-s2){.pf-ref}, step [](#p5-s3){.pf-ref}, and Hölder's inequality.
 :::
 
 ::: pf-step
-Hence $\|f\|_p \le \liminf_n \|f_n\|_p$; the statement is **true**.
+Hence $\norm{f}_p \le \liminf_n \norm{f_n}_p$; the statement is **true**.
 
 ::: pf-proof
 step [](#p5-s4){.pf-ref}.

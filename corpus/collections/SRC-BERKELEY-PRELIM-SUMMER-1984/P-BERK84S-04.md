@@ -64,7 +64,7 @@ One has $\lambda_+>a$.
 
 Since $bc>0$,
 $$
-\sqrt{(a-d)^2+4bc}>|a-d|\ge a-d.
+\sqrt{(a-d)^2+4bc}>\abs{a-d}\ge a-d.
 $$
 Therefore
 $$

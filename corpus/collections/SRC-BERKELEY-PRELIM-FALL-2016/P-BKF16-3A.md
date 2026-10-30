@@ -30,12 +30,12 @@ audit:
 ---
 
 ::: {.problem}
-Given $K \geq 0$ , let $\mathrm { L i p } _ { K }$ be the set of functions $f : \RR \to \RR$ which satisfy $| f ( x ) - f ( y ) | \leq$ $K | x - y |$ for all $x , y \in \RR$
+Given $K \geq 0$ , let $\mathrm { L i p } _ { K }$ be the set of functions $f : \RR \to \RR$ which satisfy $\abs{ f ( x ) - f ( y ) } \leq$ $K \abs{ x - y }$ for all $x , y \in \RR$
 
 (a) Show that the formula
 
 $$
-d ( f _ { 1 } , f _ { 2 } ) = \sum _ { j = 1 } ^ { \infty } 2 ^ { - j } \operatorname* { s u p } _ { z \in [ - j , j ] } | f _ { 1 } ( z ) - f _ { 2 } ( z ) |
+d ( f _ { 1 } , f _ { 2 } ) = \sum _ { j = 1 } ^ { \infty } 2 ^ { - j } \operatorname* { s u p } _ { z \in [ - j , j ] } \abs{ f _ { 1 } ( z ) - f _ { 2 } ( z ) }
 $$
 
 converges and defines a metric d on $\mathrm { L i p } _ { K }$
@@ -309,11 +309,11 @@ as $m\to\infty$.
 
 For any functions $u,v,w$ on a set,
 $$
-\left|
+\abs{
 \sup\abs{u-v}
 -
 \sup\abs{u-w}
-\right|
+}
 \le
 \sup\abs{v-w}.
 $$

@@ -28,7 +28,7 @@ For the box topology, perform the same construction coordinatewise, now shrinkin
 
 For the uniform topology, the uniform metric
 $$
-\bar\rho(x,y)=\sup_{j\in J}\min\{|x_j-y_j|,1\}
+\bar\rho(x,y)=\sup_{j\in J}\min\{\abs{x_j-y_j},1\}
 $$
 is complete: a Cauchy sequence is uniformly Cauchy in every coordinate, has coordinatewise limits, and the same uniform estimate gives convergence in $\bar\rho$. Hence the uniform topology is Baire by the complete-metric Baire theorem.
 

@@ -74,7 +74,7 @@ Hence a bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to whic
 ## Two Sylow subgroups meeting nontrivially
 
 Suppose the Sylow $p$-subgroups have order $p^2$ and two of them, $P \neq Q$, satisfy $\size{P\intersect Q} = p$.
-Groups of order $p^2$ are abelian, so $D \definedas P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
+Groups of order $p^2$ are abelian, so $D \coloneqq P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
 Hence $[G:N_G(D)]$ is a proper divisor of $m$. If $N_G(D) = G$, then $D$ is a proper nontrivial normal subgroup. If $N_G(D) < G$ and $k=[G:N_G(D)]$, then simplicity would force $\size G\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]], so any possible $k$ with $\size G\notdivides k!$ also rules out simplicity. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
 
 ## The action on the Sylow subgroups

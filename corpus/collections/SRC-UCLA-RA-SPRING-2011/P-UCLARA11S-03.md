@@ -141,7 +141,7 @@ For every $\delta>0$,
 $$
 x^2\ge\delta^2
 \qquad
-\text{on }\{|x|\ge\delta\}.
+\text{on }\{\abs{x}\ge\delta\}.
 $$
 Hence step [](#s1-3){.pf-ref} gives
 $$
@@ -150,11 +150,11 @@ $$
 \int x^2\,d\mu
 \ge
 \delta^2
-\mu(\{|x|\ge\delta\}),
+\mu(\{\abs{x}\ge\delta\}),
 $$
 so
 $$
-\mu(\{|x|\ge\delta\})=0.
+\mu(\{\abs{x}\ge\delta\})=0.
 $$
 Taking
 $$
@@ -165,7 +165,7 @@ $$
 \RR\setminus\{0\}
 =
 \bigcup_{m=1}^{\infty}
-\{|x|\ge1/m\},
+\{\abs{x}\ge1/m\},
 $$
 so
 $$

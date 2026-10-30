@@ -39,7 +39,7 @@ for each $i \geq 0$.
 
 ::: {.pf-step #s1}
 
-If $V\subseteq Y$ is affine open, then $f^{-1}(V)$ is a noetherian affine scheme and $\mcf|_{f^{-1}(V)}$ is quasi-coherent.
+If $V\subseteq Y$ is affine open, then $f^{-1}(V)$ is a noetherian affine scheme and $\mcf\restrict_{f^{-1}(V)}$ is quasi-coherent.
 
 ::: pf-proof
 
@@ -52,7 +52,7 @@ for some ring $B$.
 It is an open subscheme of the noetherian scheme $X$, hence is noetherian.
 Quasi-coherence is local and is preserved by restriction to an open subscheme, so
 $$
-\mcf|_{f^{-1}(V)}
+\mcf\restrict_{f^{-1}(V)}
 $$
 is quasi-coherent.
 
@@ -64,7 +64,7 @@ is quasi-coherent.
 
 For every affine open $V\subseteq Y$ and every $i>0$,
 $$
-H^i\bigl(f^{-1}(V),\mcf|_{f^{-1}(V)}\bigr)=0.
+H^i\bigl(f^{-1}(V),\mcf\restrict_{f^{-1}(V)}\bigr)=0.
 $$
 
 ::: pf-proof
@@ -72,7 +72,7 @@ $$
 By step [](#s1){.pf-ref}, $f^{-1}(V)$ is a noetherian affine scheme and the restricted sheaf is quasi-coherent.
 The affine vanishing theorem, Hartshorne III.3.5, therefore gives
 $$
-H^i\bigl(f^{-1}(V),\mcf|_{f^{-1}(V)}\bigr)=0
+H^i\bigl(f^{-1}(V),\mcf\restrict_{f^{-1}(V)}\bigr)=0
 $$
 for every $i>0$.
 
@@ -92,7 +92,7 @@ $$
 Proposition III.8.1 identifies $R^if_*\mcf$ with the sheaf associated to the presheaf
 $$
 V\longmapsto
-H^i\bigl(f^{-1}(V),\mcf|_{f^{-1}(V)}\bigr).
+H^i\bigl(f^{-1}(V),\mcf\restrict_{f^{-1}(V)}\bigr).
 $$
 Affine open subsets form a basis for the topology of the scheme $Y$.
 By step [](#s2){.pf-ref} this presheaf is zero on every member of that basis when $i>0$.

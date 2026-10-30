@@ -27,7 +27,7 @@ Show that $u$ is constant.
 For (i), since $\CC$ is simply connected, $u$ has a harmonic conjugate
 $v$, so $F=u+iv$ is entire. If $u$ is bounded above, then
 $$
-|e^{F(z)}|=e^{u(z)}
+\abs{e^{F(z)}}=e^{u(z)}
 $$
 is bounded. Liouville's theorem makes $e^F$ constant, hence $F'\equiv0$ and
 $u$ is constant.

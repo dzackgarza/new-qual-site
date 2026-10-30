@@ -133,7 +133,7 @@ the conormal sequence is
 $$
 0
 \longrightarrow
-\mathcal I_Q/\mathcal I_Q^2|_{C_n}
+\mathcal I_Q/\mathcal I_Q^2\restrict_{C_n}
 \longrightarrow
 \mathcal I_{C_n}/\mathcal I_{C_n}^2
 \longrightarrow
@@ -143,7 +143,7 @@ $$
 
 The quadric is a hypersurface of degree $2$, so
 $$
-\mathcal I_Q/\mathcal I_Q^2|_{C_n}
+\mathcal I_Q/\mathcal I_Q^2\restrict_{C_n}
 \cong
 \OO_{C_n}(-2).
 $$

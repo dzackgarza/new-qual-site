@@ -83,7 +83,7 @@ by
 $$
 H(x,y)=
 \begin{cases}
-(x,h_{|x|}(y)),&x\ne0,\\
+(x,h_{\abs{x}}(y)),&x\ne0,\\
 (0,y),&x=0.
 \end{cases}
 $$

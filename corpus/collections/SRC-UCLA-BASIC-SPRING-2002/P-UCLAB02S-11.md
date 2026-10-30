@@ -86,7 +86,7 @@ $$
 
 For each eigenvalue $\lambda$ of $T$, the restriction
 $$
-S_\lambda=S|_{E_\lambda}:E_\lambda\to E_\lambda
+S_\lambda=S\restrict_{E_\lambda}:E_\lambda\to E_\lambda
 $$
 is self-adjoint.
 

@@ -53,7 +53,7 @@ $$
 P\le N.
 $$
 Since $P$ is a Sylow $p$-subgroup of $G$, no $p$-subgroup of the subgroup
-$N\le G$ can have order larger than $|P|$. Thus $P$ is also a Sylow
+$N\le G$ can have order larger than $\cardinality{P}$. Thus $P$ is also a Sylow
 $p$-subgroup of $N$.
 
 By definition of $N=N_G(P)$, every element of $N$ conjugates $P$ to itself.

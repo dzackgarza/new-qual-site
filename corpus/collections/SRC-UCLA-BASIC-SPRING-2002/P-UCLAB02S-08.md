@@ -19,7 +19,7 @@ audit:
 Let $V$ be a finite-dimensional real vector space and let $W\subset V$ be a subspace.
 Define
 $$
-W^0=\{f:V\to\RR\text{ linear}:f|_W=0\}.
+W^0=\{f:V\to\RR\text{ linear}:f\restrict_W=0\}.
 $$
 Prove that
 $$

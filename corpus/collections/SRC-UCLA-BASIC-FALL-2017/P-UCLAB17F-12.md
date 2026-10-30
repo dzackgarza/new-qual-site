@@ -24,9 +24,9 @@ Let $X$ be compact metric and let $\mathcal F\subset C(X)$ be nonempty. Prove th
 
 Write
 $$
-\|f\|_\infty
+\norm{f}_\infty
 =
-\sup_{x\in X}|f(x)|
+\sup_{x\in X}\abs{f(x)}
 $$
 for the supremum norm on $C(X)$.
 Because $X$ is compact and $f$ is continuous, this supremum is finite.
@@ -36,7 +36,7 @@ The meanings of the terms are:
 - $\mathcal F$ is **closed** if every uniform limit in $C(X)$ of a sequence from $\mathcal F$ belongs to $\mathcal F$.
 - $\mathcal F$ is **bounded** if there is $M<\infty$ such that
   $$
-  \|f\|_\infty\le M
+  \norm{f}_\infty\le M
   $$
   for every $f\in\mathcal F$.
 - $\mathcal F$ is **equicontinuous** if for every $x\in X$ and every $\varepsilon>0$ there exists $\delta>0$ such that
@@ -45,12 +45,12 @@ The meanings of the terms are:
   $$
   implies
   $$
-  |f(x)-f(y)|<\varepsilon
+  \abs{f(x)-f(y)}<\varepsilon
   $$
   for every $f\in\mathcal F$.
 - $\mathcal F$ is **compact in the supremum norm** if it is compact as a metric space for
   $$
-  d_\infty(f,g)=\|f-g\|_\infty.
+  d_\infty(f,g)=\norm{f-g}_\infty.
   $$
 
 ::: pf
@@ -89,16 +89,16 @@ R<\infty
 $$
 such that
 $$
-\|f-f_0\|_\infty\le R
+\norm{f-f_0}_\infty\le R
 $$
 for all $f\in\mathcal F$.
 Then
 $$
-\|f\|_\infty
+\norm{f}_\infty
 \le
-\|f-f_0\|_\infty+\|f_0\|_\infty
+\norm{f-f_0}_\infty+\norm{f_0}_\infty
 \le
-R+\|f_0\|_\infty.
+R+\norm{f_0}_\infty.
 $$
 So $\mathcal F$ is bounded.
 
@@ -136,7 +136,7 @@ d(x_0,y_n)<\frac1n
 $$
 but
 $$
-|f_n(x_0)-f_n(y_n)|
+\abs{f_n(x_0)-f_n(y_n)}
 \ge
 \varepsilon_0.
 $$
@@ -160,13 +160,13 @@ $$
 Therefore
 $$
 \begin{aligned}
-|f_{n_k}(x_0)-f_{n_k}(y_{n_k})|
+\abs{f_{n_k}(x_0)-f_{n_k}(y_{n_k})}
 &\le
-|f_{n_k}(x_0)-f(x_0)|\\
+\abs{f_{n_k}(x_0)-f(x_0)}\\
 &\quad+
-|f(x_0)-f(y_{n_k})|\\
+\abs{f(x_0)-f(y_{n_k})}\\
 &\quad+
-|f(y_{n_k})-f_{n_k}(y_{n_k})|.
+\abs{f(y_{n_k})-f_{n_k}(y_{n_k})}.
 \end{aligned}
 $$
 The first and third terms tend to zero by uniform convergence, and the middle term tends to zero by continuity of $f$.
@@ -200,7 +200,7 @@ d(x,y)<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\varepsilon
+\abs{f(x)-f(y)}<\varepsilon
 $$
 for every
 $$
@@ -221,7 +221,7 @@ d(x,y)<\eta_x
 $$
 implies
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{2}
+\abs{f(x)-f(y)}<\frac{\varepsilon}{2}
 $$
 for every $f\in\mathcal F$.
 Set
@@ -272,15 +272,15 @@ r_{x_j}+\delta
 $$
 Thus for every $f\in\mathcal F$,
 $$
-|f(x)-f(x_j)|<\frac{\varepsilon}{2}
+\abs{f(x)-f(x_j)}<\frac{\varepsilon}{2}
 $$
 and
 $$
-|f(y)-f(x_j)|<\frac{\varepsilon}{2}.
+\abs{f(y)-f(x_j)}<\frac{\varepsilon}{2}.
 $$
 Hence
 $$
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 
 :::
@@ -334,7 +334,7 @@ there exists a subsequence that converges at every point $x_j\in D$.
 
 Because $\mathcal F$ is bounded, there exists $M$ such that
 $$
-|f(x)|\le M
+\abs{f(x)}\le M
 $$
 for all
 $$
@@ -380,7 +380,7 @@ d(x,y)<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{3}
+\abs{f(x)-f(y)}<\frac{\varepsilon}{3}
 $$
 for every $f\in\mathcal F$.
 
@@ -401,7 +401,7 @@ m,n\ge N
 $$
 and every $\ell$,
 $$
-|g_m(x_{j_\ell})-g_n(x_{j_\ell})|
+\abs{g_m(x_{j_\ell})-g_n(x_{j_\ell})}
 <
 \frac{\varepsilon}{3}.
 $$
@@ -413,13 +413,13 @@ $$
 Then
 $$
 \begin{aligned}
-|g_m(x)-g_n(x)|
+\abs{g_m(x)-g_n(x)}
 &\le
-|g_m(x)-g_m(x_{j_\ell})|\\
+\abs{g_m(x)-g_m(x_{j_\ell})}\\
 &\quad+
-|g_m(x_{j_\ell})-g_n(x_{j_\ell})|\\
+\abs{g_m(x_{j_\ell})-g_n(x_{j_\ell})}\\
 &\quad+
-|g_n(x_{j_\ell})-g_n(x)|\\
+\abs{g_n(x_{j_\ell})-g_n(x)}\\
 &<
 \frac{\varepsilon}{3}
 +
@@ -432,7 +432,7 @@ $$
 $$
 Thus
 $$
-\|g_m-g_n\|_\infty<\varepsilon
+\norm{g_m-g_n}_\infty<\varepsilon
 $$
 for all $m,n\ge N$.
 
@@ -464,19 +464,19 @@ $$
 
 Given $\varepsilon>0$, choose $N$ such that
 $$
-\|h_m-h_n\|_\infty<\varepsilon
+\norm{h_m-h_n}_\infty<\varepsilon
 $$
 for $m,n\ge N$.
 Fix $n\ge N$ and let $m\to\infty$ pointwise.
 Then
 $$
-|h(x)-h_n(x)|
+\abs{h(x)-h_n(x)}
 \le
 \varepsilon
 $$
 for every $x$, so
 $$
-\|h-h_n\|_\infty\le\varepsilon.
+\norm{h-h_n}_\infty\le\varepsilon.
 $$
 Thus $h_n\to h$ uniformly.
 A uniform limit of continuous functions is continuous, so
@@ -553,7 +553,7 @@ Therefore $\mathcal F$ is compact.
 Therefore
 $$
 \boxed{
-\mathcal F\text{ is compact in }\|\cdot\|_\infty
+\mathcal F\text{ is compact in }\norm{\cdot}_\infty
 \iff
 \mathcal F\text{ is closed, bounded, and equicontinuous}.
 }

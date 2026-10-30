@@ -20,7 +20,7 @@ Evaluate or prove the following.
 
 (a)
 $$
-\int_{|z|=2}\frac{e^z}{(1+z)^2}\,dz.
+\int_{\abs{z}=2}\frac{e^z}{(1+z)^2}\,dz.
 $$
 
 (b) For $\gamma(t)=2\cos t+i\sin t$, $0\le t\le2\pi$, evaluate
@@ -42,7 +42,7 @@ $$
 
 In part (a), the only singularity inside
 $$
-|z|=2
+\abs{z}=2
 $$
 is the double pole at
 $$
@@ -62,7 +62,7 @@ z=-1,
 $$
 which satisfies
 $$
-|-1|<2.
+\abs{-1}<2.
 $$
 
 :::
@@ -74,7 +74,7 @@ $$
 The integral in part (a) is
 $$
 \boxed{
-\int_{|z|=2}
+\int_{\abs{z}=2}
 \frac{e^z}{(1+z)^2}
 \,dz
 =
@@ -86,7 +86,7 @@ $$
 
 Cauchy's differentiation formula states
 $$
-\int_{|z|=2}
+\int_{\abs{z}=2}
 \frac{f(z)}{(z-a)^2}
 \,dz
 =
@@ -110,7 +110,7 @@ f'(-1)=e^{-1},
 $$
 so
 $$
-\int_{|z|=2}
+\int_{\abs{z}=2}
 \frac{e^z}{(z+1)^2}
 \,dz
 =

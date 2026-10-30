@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.exercise}
-1. Let $f$ be a complex-valued $C ^ { 1 }$ function defined in the neighborhood of a point $z _ { \mathrm { 0 } }$ . There are several notions closely related to conformality at $z _ { 0 }$ . We say that $f$ is isogonal at $z _ { 0 }$ if whenever $\gamma ( t )$ and $\eta ( t )$ are two smooth curves with $\gamma ( 0 ) =$ $\eta ( 0 ) = z _ { 0 }$ , that make an angle θ there $( | \theta | < \pi )$ , then $f ( \gamma ( t ) )$ and $f ( \eta ( t ) )$ make an angle of $\theta ^ { \prime }$ at $t = 0$ with $| \theta ^ { \prime } | = | \theta |$ for all θ. Also, $f$ is said to be isotropic if it magnifies lengths by some factor for all directions emanating from $z _ { 0 }$ , that is, if the limit
+1. Let $f$ be a complex-valued $C ^ { 1 }$ function defined in the neighborhood of a point $z _ { \mathrm { 0 } }$ . There are several notions closely related to conformality at $z _ { 0 }$ . We say that $f$ is isogonal at $z _ { 0 }$ if whenever $\gamma ( t )$ and $\eta ( t )$ are two smooth curves with $\gamma ( 0 ) =$ $\eta ( 0 ) = z _ { 0 }$ , that make an angle θ there $( \abs{ \theta } < \pi )$ , then $f ( \gamma ( t ) )$ and $f ( \eta ( t ) )$ make an angle of $\theta ^ { \prime }$ at $t = 0$ with $\abs{ \theta ^ { \prime } } = \abs{ \theta }$ for all θ. Also, $f$ is said to be isotropic if it magnifies lengths by some factor for all directions emanating from $z _ { 0 }$ , that is, if the limit
 
 $$
-\lim _ {r \to 0} \frac {| f (z _ {0} + r e ^ {i \theta}) - f (z _ {0}) |}{r}
+\lim _ {r \to 0} \frac {\abs{ f (z _ {0} + r e ^ {i \theta}) - f (z _ {0}) }}{r}
 $$
 
 exists, is non-zero, and independent of $\theta .$
@@ -35,11 +35,11 @@ f(z_0+rv)-f(z_0)=rAv+o(r),
 $$
 so
 $$
-\lim_{r\to0}\frac{|f(z_0+rv)-f(z_0)|}{r}=|Av|.
+\lim_{r\to0}\frac{\abs{f(z_0+rv)-f(z_0)}}{r}=\norm{Av}.
 $$
 Thus $f$ is isotropic at $z_0$ exactly when there is a number $\lambda>0$ such that
 $$
-|Av|=\lambda|v|\qquad(v\in\RR^2).
+\norm{Av}=\lambda\norm{v}\qquad(v\in\RR^2).
 \tag{1}
 $$
 By polarization, (1) is equivalent to
@@ -56,9 +56,9 @@ Hence $A=\lambda Q$ with $Q\in O(2)$. Such a map preserves the absolute value of
 Conversely, suppose $f$ is isogonal. Then $A$ cannot kill a nonzero direction, since otherwise the image tangent direction of a curve with that tangent would be undefined. Choose orthonormal vectors $e_1,e_2$. Isogonality gives $Ae_1\perp Ae_2$. Applying it also to the pair $e_1+e_2,e_1-e_2$, which are perpendicular, yields
 $$
 0=\langle A(e_1+e_2),A(e_1-e_2)\rangle
-=|Ae_1|^2-|Ae_2|^2.
+=\norm{Ae_1}^2-\norm{Ae_2}^2.
 $$
-Thus $|Ae_1|=|Ae_2|=\lambda>0$, and since their images are orthogonal, (2) follows. Therefore $f$ is isotropic.
+Thus $\norm{Ae_1}=\norm{Ae_2}=\lambda>0$, and since their images are orthogonal, (2) follows. Therefore $f$ is isotropic.
 
 It remains to identify the two possibilities for $A$. Every $Q\in O(2)$ has determinant $1$ or $-1$. If $\det Q=1$, then $Q$ is rotation by some angle and, after identifying $\RR^2$ with $\CC$,
 $$

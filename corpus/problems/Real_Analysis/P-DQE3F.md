@@ -38,7 +38,7 @@ $f \in L^1([0,1])$.
 
 ::: pf-proof
 
-Choose $k$ with $\|f - f_k\|_1 < 1$. Since $m([0,1]) = 1$, $\|f_k\|_1 \le \|f_k\|_2$ by the Cauchy--Schwarz inequality, so $\|f\|_1 \le \|f - f_k\|_1 + \|f_k\|_1 < \infty$.
+Choose $k$ with $\norm{f - f_k}_1 < 1$. Since $m([0,1]) = 1$, $\norm{f_k}_1 \le \norm{f_k}_2$ by the Cauchy--Schwarz inequality, so $\norm{f}_1 \le \norm{f - f_k}_1 + \norm{f_k}_1 < \infty$.
 
 :::
 
@@ -50,7 +50,7 @@ Let $E_k$ enumerate the dyadic intervals $[0,\frac12], [\frac12,1], [0,\frac14],
 
 ::: pf-proof
 
-$|f_k| \le 1$, so $f_k \in L^2$, and $\|f_k\|_1 = m(E_k) \to 0$. Each $x \in [0,1]$ lies in at least one dyadic interval of each level and misses at least one, so $f_k(x) = 1$ and $f_k(x) = 0$ for infinitely many $k$ each.
+$\abs{f_k} \le 1$, so $f_k \in L^2$, and $\norm{f_k}_1 = m(E_k) \to 0$. Each $x \in [0,1]$ lies in at least one dyadic interval of each level and misses at least one, so $f_k(x) = 1$ and $f_k(x) = 0$ for infinitely many $k$ each.
 
 :::
 
@@ -64,11 +64,11 @@ Some subsequence $f_{k_j} \to f$ a.e.
 
 ::: {.pf-step #s3-1}
 
-There are $k_1 < k_2 < \cdots$ with $\|f_{k_j} - f\|_1 < 2^{-j}$.
+There are $k_1 < k_2 < \cdots$ with $\norm{f_{k_j} - f}_1 < 2^{-j}$.
 
 ::: pf-proof
 
-$\|f_k - f\|_1 \to 0$.
+$\norm{f_k - f}_1 \to 0$.
 
 :::
 
@@ -76,11 +76,11 @@ $\|f_k - f\|_1 \to 0$.
 
 ::: {.pf-step #s3-2}
 
-For each $\varepsilon > 0$, $m\theset{x : |f_{k_j}(x) - f(x)| > \varepsilon \text{ for infinitely many } j} = 0$.
+For each $\varepsilon > 0$, $m\theset{x : \abs{f_{k_j}(x) - f(x)} > \varepsilon \text{ for infinitely many } j} = 0$.
 
 ::: pf-proof
 
-By Markov's inequality and step [](#s3-1){.pf-ref}, $\sum_j m\theset{|f_{k_j} - f| > \varepsilon} \le \frac1\varepsilon\sum_j 2^{-j} < \infty$, and the Borel--Cantelli lemma applies.
+By Markov's inequality and step [](#s3-1){.pf-ref}, $\sum_j m\theset{\abs{f_{k_j} - f} > \varepsilon} \le \frac1\varepsilon\sum_j 2^{-j} < \infty$, and the Borel--Cantelli lemma applies.
 
 :::
 

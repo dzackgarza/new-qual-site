@@ -93,10 +93,10 @@ Indeed, by Tonelli's theorem,
 $$
 \begin{aligned}
 &\int_0^\infty\int_0^\infty
-\left|x^2e^{-x^2}\sin(x^2)e^{-yx}\right|\,dx\,dy\\
-&=\int_0^\infty x^2e^{-x^2}|\sin(x^2)|
+\abs{x^2e^{-x^2}\sin(x^2)e^{-yx}}\,dx\,dy\\
+&=\int_0^\infty x^2e^{-x^2}\abs{\sin(x^2)}
 \left(\int_0^\infty e^{-yx}\,dy\right)dx\\
-&=\int_0^\infty xe^{-x^2}|\sin(x^2)|\,dx
+&=\int_0^\infty xe^{-x^2}\abs{\sin(x^2)}\,dx
 \le \int_0^\infty xe^{-x^2}\,dx
 =\frac12<\infty.
 \end{aligned}

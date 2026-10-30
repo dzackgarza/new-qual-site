@@ -29,7 +29,7 @@ b. Prove that the Sylow 5-subgroup is also normal.
 
 ::: {.solution}
 
-Let $P$ be the normal Sylow $3$-subgroup of $G$, so $|P|=3$.
+Let $P$ be the normal Sylow $3$-subgroup of $G$, so $\cardinality{P}=3$.
 
 ::: pf
 
@@ -63,7 +63,7 @@ Every Sylow $5$-subgroup of $G$ is normal.
 
 ::: pf-proof
 
-For (b), let $H/P$ be the unique Sylow $5$-subgroup of $G/P$. Then $H\triangleleft G$ and $|H|=15$. Inside $H$, the number of Sylow $5$-subgroups satisfies
+For (b), let $H/P$ be the unique Sylow $5$-subgroup of $G/P$. Then $H\triangleleft G$ and $\cardinality{H}=15$. Inside $H$, the number of Sylow $5$-subgroups satisfies
 $$
 n_5(H)\equiv1\pmod5,
 \qquad

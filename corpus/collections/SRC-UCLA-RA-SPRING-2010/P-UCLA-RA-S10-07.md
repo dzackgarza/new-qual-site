@@ -31,7 +31,7 @@ audit:
 Let $H$ be a Hilbert space and let $E$ be a closed convex subset of $H$.
 Prove that there exists a unique element $x\in E$ such that
 $$
-\|x\|=\inf_{y\in E}\|y\|.
+\norm{x}=\inf_{y\in E}\norm{y}.
 $$
 :::
 
@@ -41,7 +41,7 @@ We therefore prove the intended assertion for nonempty $E$.
 
 Set
 $$
-d=\inf_{y\in E}\|y\|.
+d=\inf_{y\in E}\norm{y}.
 $$
 Because $E$ is nonempty, $d<\infty$.
 
@@ -51,18 +51,18 @@ Because $E$ is nonempty, $d<\infty$.
 
 There is a sequence $\{x_n\}\subseteq E$ such that
 $$
-\|x_n\|^2\longrightarrow d^2.
+\norm{x_n}^2\longrightarrow d^2.
 $$
 
 ::: pf-proof
 
 For every $n\ge1$, by the definition of the infimum choose $x_n\in E$ with
 $$
-d\le \|x_n\|<d+\frac1n.
+d\le \norm{x_n}<d+\frac1n.
 $$
-Then $\|x_n\|\to d$, hence
+Then $\norm{x_n}\to d$, hence
 $$
-\|x_n\|^2\to d^2.
+\norm{x_n}^2\to d^2.
 $$
 
 :::
@@ -81,24 +81,24 @@ $$
 $$
 Therefore, by the definition of $d$,
 $$
-\left\|\frac{x_n+x_m}{2}\right\|\ge d.
+\norm{\frac{x_n+x_m}{2}}\ge d.
 $$
 The parallelogram identity gives
 $$
-\|x_n-x_m\|^2
-=2\|x_n\|^2+2\|x_m\|^2-\|x_n+x_m\|^2.
+\norm{x_n-x_m}^2
+=2\norm{x_n}^2+2\norm{x_m}^2-\norm{x_n+x_m}^2.
 $$
 Using
 $$
-\|x_n+x_m\|^2
-=4\left\|\frac{x_n+x_m}{2}\right\|^2
+\norm{x_n+x_m}^2
+=4\norm{\frac{x_n+x_m}{2}}^2
 \ge4d^2,
 $$
 we obtain
 $$
-0\le\|x_n-x_m\|^2
+0\le\norm{x_n-x_m}^2
 \le
-2\|x_n\|^2+2\|x_m\|^2-4d^2.
+2\norm{x_n}^2+2\norm{x_m}^2-4d^2.
 $$
 By step [](#s1){.pf-ref}, the right-hand side tends to $0$ as $m,n\to\infty$.
 Hence $\{x_n\}$ is Cauchy.
@@ -109,7 +109,7 @@ Hence $\{x_n\}$ is Cauchy.
 
 ::: pf-step
 
-There exists $x\in E$ with $\|x\|=d$.
+There exists $x\in E$ with $\norm{x}=d$.
 
 ::: pf-proof
 
@@ -121,7 +121,7 @@ in norm.
 The set $E$ is closed and every $x_n$ lies in $E$, so $x\in E$.
 Norm is continuous, hence by step [](#s1){.pf-ref},
 $$
-\|x\|=\lim_{n\to\infty}\|x_n\|=d.
+\norm{x}=\lim_{n\to\infty}\norm{x_n}=d.
 $$
 Thus the minimum norm is attained.
 
@@ -137,7 +137,7 @@ The minimum-norm element is unique.
 
 Suppose $x,y\in E$ both satisfy
 $$
-\|x\|=\|y\|=d.
+\norm{x}=\norm{y}=d.
 $$
 By convexity,
 $$
@@ -145,20 +145,20 @@ $$
 $$
 so
 $$
-\left\|\frac{x+y}{2}\right\|\ge d.
+\norm{\frac{x+y}{2}}\ge d.
 $$
 The parallelogram identity gives
 $$
 \begin{aligned}
-\|x-y\|^2
-&=2\|x\|^2+2\|y\|^2-\|x+y\|^2\\
-&=4d^2-4\left\|\frac{x+y}{2}\right\|^2\\
+\norm{x-y}^2
+&=2\norm{x}^2+2\norm{y}^2-\norm{x+y}^2\\
+&=4d^2-4\norm{\frac{x+y}{2}}^2\\
 &\le0.
 \end{aligned}
 $$
 Since a squared norm is nonnegative,
 $$
-\|x-y\|^2=0,
+\norm{x-y}^2=0,
 $$
 so $x=y$.
 

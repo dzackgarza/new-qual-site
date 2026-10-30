@@ -64,16 +64,16 @@ irreducible over $F$.
 
 ::: pf-step
 
-Hence $[K:F]=|G|$ divides $24$ and is divisible by $4$.
+Hence $[K:F]=\cardinality{G}$ divides $24$ and is divisible by $4$.
 
 ::: pf-proof
 
 Since $K/F$ is Galois,
 $$
-[K:F]=|G|.
+[K:F]=\cardinality{G}.
 $$
-By step [](#s1){.pf-ref}, $|G|$ divides $|S_4|=24$. Transitivity on four points implies by the
-orbit-stabilizer theorem that $4$ divides $|G|$.
+By step [](#s1){.pf-ref}, $\cardinality{G}$ divides $\cardinality{S_4}=24$. Transitivity on four points implies by the
+orbit-stabilizer theorem that $4$ divides $\cardinality{G}$.
 
 :::
 

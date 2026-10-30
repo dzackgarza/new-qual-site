@@ -52,7 +52,7 @@ $$
 In particular, the formula is independent of the chosen fraction.
 
 For an inclusion $D(g)\subseteq D(f)$, the restriction of $f$ is a unit on $D(g)$.
-Both composites from $M_f$ to $\mcf(D(g))$ obtained using $u_f$, $u_g$, and restriction send $m/1$ to $u(m)|_{D(g)}$ and respect multiplication by $f^{-1}$.
+Both composites from $M_f$ to $\mcf(D(g))$ obtained using $u_f$, $u_g$, and restriction send $m/1$ to $u(m)\restrict_{D(g)}$ and respect multiplication by $f^{-1}$.
 The uniqueness in localization makes these composites equal.
 Thus the maps $u_f$ commute with all restrictions between distinguished opens.
 Distinguished opens form a basis, so the sheaf gluing axiom extends them uniquely to a morphism $\Phi(u):\widetilde M\to\mcf$.
@@ -96,8 +96,8 @@ $$
 \qquad
 \Phi(\Gamma(X,b)\circ u)=b\circ\Phi(u).
 $$
-Indeed, on each $D(f)$ both sides of the first equality send $m'/f^n$ to $f^{-n}u(a(m'))|_{D(f)}$.
-Both sides of the second send $m/f^n$ to $f^{-n}b_{D(f)}(u(m)|_{D(f)})$.
+Indeed, on each $D(f)$ both sides of the first equality send $m'/f^n$ to $f^{-n}u(a(m'))\restrict_{D(f)}$.
+Both sides of the second send $m/f^n$ to $f^{-n}b_{D(f)}(u(m)\restrict_{D(f)})$.
 These are the naturality identities in the two variables.
 
 :::

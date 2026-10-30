@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $X$ be a Banach space and denote by $\mathcal{L}(X)$ the space of all linear and bounded operators from $X$ to $X$.
 Let $T \in \mathcal{L}(X)$ be a topological isomorphism, i.e., $T : X \to X$ is linear, bijective, and both $T$ and $T^{-1}$ are continuous.
-Let $S \in \mathcal{L}(X)$ be such that $\|(S - T)T^{-1}\| < 1$.
+Let $S \in \mathcal{L}(X)$ be such that $\norm{(S - T)T^{-1}} < 1$.
 Prove that $S : X \to X$ is also a topological isomorphism.
 :::
 
@@ -48,7 +48,7 @@ A:=(S-T)T^{-1}\in\mathcal L(X).
 $$
 By hypothesis,
 $$
-\|A\|<1.
+\norm{A}<1.
 $$
 Since
 $$
@@ -70,7 +70,7 @@ Invert $I+A$ by the Neumann series.
 
 ::: pf-proof
 
-Because $\|A\|<1$, the series
+Because $\norm{A}<1$, the series
 $$
 R:=\sum_{n=0}^\infty (-A)^n
 $$
@@ -81,7 +81,7 @@ $$
 $$
 and similarly on the other side. Since
 $$
-\|A^{N+1}\|\le\|A\|^{N+1}\to0,
+\norm{A^{N+1}}\le\norm{A}^{N+1}\to0,
 $$
 passing to the limit gives
 $$

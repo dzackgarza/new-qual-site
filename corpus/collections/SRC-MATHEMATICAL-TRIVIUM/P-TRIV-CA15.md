@@ -140,20 +140,20 @@ $$
 
 Close the real segment by an upper semicircle. On the upper half-plane,
 $$
-|e^{i\alpha z}|
+\abs{e^{i\alpha z}}
 =
 e^{-\alpha\operatorname{Im}z}
 \leq1.
 $$
-On the arc $|z|=R$,
+On the arc $\abs{z}=R$,
 $$
-|3-iz|
+\abs{3-iz}
 \geq
 R-3
 $$
 and
 $$
-|1+iz|
+\abs{1+iz}
 \geq
 R-1.
 $$
@@ -196,7 +196,7 @@ $$
 
 Close in the lower half-plane. There
 $$
-|e^{i\alpha z}|
+\abs{e^{i\alpha z}}
 \leq1
 $$
 because $\alpha<0$ and $\operatorname{Im}z\leq0$. The same denominator
@@ -236,7 +236,7 @@ $$
 
 ::: pf-proof
 
-Close in the upper half-plane. The rational integrand is $O(|z|^{-2})$, so
+Close in the upper half-plane. The rational integrand is $O(\abs{z}^{-2})$, so
 the semicircular arc tends to zero. The residue at $i$ is $1/(4i)$ by
 step [](#s1-2){.pf-ref} with $\alpha=0$. Thus the residue theorem gives $\pi/2$.
 

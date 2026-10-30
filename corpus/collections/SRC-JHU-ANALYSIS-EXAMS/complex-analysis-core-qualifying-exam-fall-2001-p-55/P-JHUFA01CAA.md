@@ -40,9 +40,9 @@ There are only finitely many finite poles.
 ::: pf-proof
 
 By hypothesis $g(w)=f(1/w)$ is meromorphic near $w=0$. Hence for some
-$R>0$, the function $f$ is holomorphic on $|z|>R$ except possibly for the
+$R>0$, the function $f$ is holomorphic on $\abs{z}>R$ except possibly for the
 behavior corresponding to $w=0$ itself. Thus every finite pole of $f$ lies in
-the compact disk $|z|\le R$.
+the compact disk $\abs{z}\le R$.
 
 Poles of a meromorphic function are isolated. If there were infinitely many
 finite poles in that compact disk, compactness would give an accumulation point
@@ -71,9 +71,9 @@ Every finite pole is removable for $h$, so $h$ extends to an entire function.
 Each $P_j(z)$ tends to zero as $z\to\infty$.
 
 Since $f(1/w)$ is meromorphic at $w=0$, it has either a removable singularity
-or a pole there. In the removable case, $f(z)$ is bounded for large $|z|$; in
-the pole case of order $N$, one has $|f(z)|\le C|z|^N$ for sufficiently large
-$|z|$. The same corresponding bound holds for $h$, because the subtracted
+or a pole there. In the removable case, $f(z)$ is bounded for large $\abs{z}$; in
+the pole case of order $N$, one has $\abs{f(z)}\le C\abs{z}^N$ for sufficiently large
+$\abs{z}$. The same corresponding bound holds for $h$, because the subtracted
 principal parts tend to zero at infinity. Thus $h$ has at most polynomial
 growth.
 
@@ -91,10 +91,10 @@ Write
 $$
 h(z)=\sum_{n=0}^\infty b_nz^n.
 $$
-If $|h(z)|\le C(1+|z|^N)$ for large $|z|$, Cauchy's coefficient estimate on
+If $\abs{h(z)}\le C(1+\abs{z}^N)$ for large $\abs{z}$, Cauchy's coefficient estimate on
 large circles gives, for every $n>N$,
 $$
-|b_n|\le \frac{C(1+R^N)}{R^n}\longrightarrow0
+\abs{b_n}\le \frac{C(1+R^N)}{R^n}\longrightarrow0
 \qquad(R\to\infty).
 $$
 Hence $b_n=0$ for all $n>N$, so $h$ is a polynomial. In the bounded case this

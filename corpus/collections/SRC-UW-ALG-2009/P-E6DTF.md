@@ -78,9 +78,9 @@ Choose $0\ne v\in V$. The $k$-span
 $$
 W=\operatorname{span}_k\{gv:g\in G\}
 $$
-is a nonzero $kG$-submodule of $V$. Since $V$ is irreducible, $W=V$. Because $G$ is finite, $W$ is spanned by at most $|G|$ vectors, hence
+is a nonzero $kG$-submodule of $V$. Since $V$ is irreducible, $W=V$. Because $G$ is finite, $W$ is spanned by at most $\cardinality{G}$ vectors, hence
 $$
-\dim_kV\le |G|<\infty.
+\dim_kV\le \cardinality{G}<\infty.
 $$
 
 :::

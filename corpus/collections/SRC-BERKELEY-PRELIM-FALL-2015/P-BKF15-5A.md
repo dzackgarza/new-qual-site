@@ -96,7 +96,7 @@ Since $\Re(c_i)>0$,
 $$
 \Re\!\left(\frac1{c_i}\right)
 =
-\frac{\Re(c_i)}{|c_i|^2}
+\frac{\Re(c_i)}{\abs{c_i}^2}
 >
 0.
 $$

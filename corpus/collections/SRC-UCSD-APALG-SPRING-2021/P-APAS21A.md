@@ -28,7 +28,7 @@ A
 \begin{pmatrix} \lambda & 0 \\ 0 & M \end{pmatrix}.
 $$
 
-(c) Hence prove that the angle $\theta$ between $x$ and $y$ satisfies $\sec \theta = \|y\|_2$.
+(c) Hence prove that the angle $\theta$ between $x$ and $y$ satisfies $\sec \theta = \norm{y}_2$.
 :::
 
 ::: {.solution}
@@ -65,14 +65,14 @@ $$
 
 (c) For complex vectors, define the acute angle by
 $$
-\cos\theta=\frac{|y^Hx|}{\|y\|_2\,\|x\|_2}.
+\cos\theta=\frac{\abs{y^Hx}}{\norm{y}_2\,\norm{x}_2}.
 $$
-Here $y^Hx=1$ and $\|x\|_2=1$, so
+Here $y^Hx=1$ and $\norm{x}_2=1$, so
 $$
-\cos\theta=\frac1{\|y\|_2}.
+\cos\theta=\frac1{\norm{y}_2}.
 $$
 Therefore
 $$
-\boxed{\sec\theta=\|y\|_2}.
+\boxed{\sec\theta=\norm{y}_2}.
 $$
 :::

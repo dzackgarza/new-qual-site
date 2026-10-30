@@ -20,16 +20,16 @@ audit:
 We consider the space $L^1(\mu)$ of integrable functions on a measure space $(X,\mathcal M,\mu)$.
 For $g\in L^1(\mu)$ let
 $$
-\lVert g\rVert_1=\int |g(x)|\,d\mu
+\norm{ g}_1=\int \abs{g(x)}\,d\mu
 $$
 be the corresponding $L^1$-norm.
 Suppose that $f$ and $f_n$, for $n\in\NN$, are functions in $L^1(\mu)$ such that
 
 (i) $f_n(x)\to f(x)$ for $\mu$-almost every $x\in X$, and
 
-(ii) $\lVert f_n\rVert_1\to\lVert f\rVert_1$.
+(ii) $\norm{ f_n}_1\to\norm{ f}_1$.
 
-Show that $\lVert f_n-f\rVert_1\to0$.
+Show that $\norm{ f_n-f}_1\to0$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ Define
 $$
 g_n(x)
 =
-|f_n(x)|-|f_n(x)-f(x)|.
+\abs{f_n(x)}-\abs{f_n(x)-f(x)}.
 $$
 
 ::: pf
@@ -48,7 +48,7 @@ $$
 For almost every $x\in X$,
 $$
 \boxed{
-g_n(x)\to |f(x)|}.
+g_n(x)\to \abs{f(x)}}.
 $$
 
 
@@ -60,11 +60,11 @@ f_n(x)\to f(x)
 $$
 for almost every $x$. Hence
 $$
-|f_n(x)|\to|f(x)|
+\abs{f_n(x)}\to\abs{f(x)}
 $$
 and
 $$
-|f_n(x)-f(x)|\to0.
+\abs{f_n(x)-f(x)}\to0.
 $$
 Subtract.
 
@@ -77,9 +77,9 @@ Subtract.
 For every $n$ and almost every $x$,
 $$
 \boxed{
-|g_n(x)|
+\abs{g_n(x)}
 \le
-|f(x)|}.
+\abs{f(x)}}.
 $$
 
 
@@ -92,15 +92,15 @@ f_n(x)
 f_n(x)-f(x):
 $$
 $$
-\left|
-|f_n(x)|
+\abs{
+\abs{f_n(x)}
 -
-|f_n(x)-f(x)|
-\right|
+\abs{f_n(x)-f(x)}
+}
 \le
-|f(x)|.
+\abs{f(x)}.
 $$
-The left-hand side is $|g_n(x)|$.
+The left-hand side is $\abs{g_n(x)}$.
 
 :::
 
@@ -112,7 +112,7 @@ Since
 $$
 f\in L^1(\mu),
 $$
-the function $|f|$ is integrable.
+the function $\abs{f}$ is integrable.
 
 
 ::: pf-proof
@@ -130,13 +130,13 @@ $$
 \boxed{
 \int g_n\,d\mu
 \longrightarrow
-\int |f|\,d\mu}.
+\int \abs{f}\,d\mu}.
 $$
 
 
 ::: pf-proof
 
-Use pointwise almost-everywhere convergence from step [](#s1-1){.pf-ref} and domination by the integrable function $|f|$ from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
+Use pointwise almost-everywhere convergence from step [](#s1-1){.pf-ref} and domination by the integrable function $\abs{f}$ from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -148,7 +148,7 @@ For every $n$,
 $$
 \int g_n\,d\mu
 =
-\|f_n\|_1-\|f_n-f\|_1.
+\norm{f_n}_1-\norm{f_n-f}_1.
 $$
 
 
@@ -158,7 +158,7 @@ By definition,
 $$
 g_n
 =
-|f_n|-|f_n-f|.
+\abs{f_n}-\abs{f_n-f}.
 $$
 Both terms are integrable because
 $$
@@ -179,9 +179,9 @@ Integrate term by term.
 Hence
 $$
 \boxed{
-\|f_n\|_1-\|f_n-f\|_1
+\norm{f_n}_1-\norm{f_n-f}_1
 \longrightarrow
-\|f\|_1}.
+\norm{f}_1}.
 $$
 
 
@@ -198,7 +198,7 @@ Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 By hypothesis,
 $$
 \boxed{
-\|f_n\|_1\to\|f\|_1}.
+\norm{f_n}_1\to\norm{f}_1}.
 $$
 
 
@@ -215,7 +215,7 @@ This is assumption (ii).
 Therefore
 $$
 \boxed{
-\|f_n-f\|_1\to0}.
+\norm{f_n-f}_1\to0}.
 $$
 
 
@@ -223,15 +223,15 @@ $$
 
 From step [](#s1-6){.pf-ref},
 $$
-\|f_n-f\|_1
+\norm{f_n-f}_1
 =
-\|f_n\|_1
+\norm{f_n}_1
 -
 \left(
-\|f_n\|_1-\|f_n-f\|_1
+\norm{f_n}_1-\norm{f_n-f}_1
 \right).
 $$
-The first term tends to $\|f\|_1$ by step [](#s1-7){.pf-ref}, and the parenthesized term tends to $\|f\|_1$ by step [](#s1-6){.pf-ref}. Their difference tends to $0$.
+The first term tends to $\norm{f}_1$ by step [](#s1-7){.pf-ref}, and the parenthesized term tends to $\norm{f}_1$ by step [](#s1-6){.pf-ref}. Their difference tends to $0$.
 
 :::
 

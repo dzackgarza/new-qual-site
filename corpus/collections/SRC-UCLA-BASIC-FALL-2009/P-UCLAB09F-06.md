@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Consider
 $$
-f(x,y)=\sin^3(xy)+y^2|x|
+f(x,y)=\sin^3(xy)+y^2\abs{x}
 $$
 on
 $$
@@ -41,11 +41,11 @@ p,q\in S,
 $$
 if
 $$
-\|p-q\|_2<\delta,
+\norm{p-q}_2<\delta,
 $$
 then
 $$
-|f(p)-f(q)|<\varepsilon.
+\abs{f(p)-f(q)}<\varepsilon.
 $$
 
 
@@ -98,9 +98,9 @@ y^{2010}\le1,
 $$
 because both terms are nonnegative. Hence
 $$
-|x|\le1
+\abs{x}\le1
 \qquad\text{and}\qquad
-|y|\le1.
+\abs{y}\le1.
 $$
 Thus
 $$
@@ -128,7 +128,7 @@ By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $S$ is closed and bounde
 
 The function
 $$
-f(x,y)=\sin^3(xy)+y^2|x|
+f(x,y)=\sin^3(xy)+y^2\abs{x}
 $$
 is continuous on $\RR^2$, hence on $S$.
 
@@ -143,7 +143,7 @@ t\mapsto\sin t,
 \qquad
 t\mapsto t^3,
 \qquad
-x\mapsto|x|,
+x\mapsto\abs{x},
 \qquad
 y\mapsto y^2
 $$

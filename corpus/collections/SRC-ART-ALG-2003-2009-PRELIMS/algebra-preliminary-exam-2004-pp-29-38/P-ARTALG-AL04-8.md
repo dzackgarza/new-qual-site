@@ -130,7 +130,7 @@ Every field in the table is the indicated fixed field.
 
 ::: pf-proof
 
-The Galois correspondence gives $[K^H:\QQ]=8/|H|$ [@DF04].
+The Galois correspondence gives $[K^H:\QQ]=8/\cardinality{H}$ [@DF04].
 It suffices to show that the proposed generators are fixed by $H$
 and generate a field of this degree.
 

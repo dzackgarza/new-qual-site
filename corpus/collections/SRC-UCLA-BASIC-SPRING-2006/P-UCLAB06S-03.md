@@ -52,7 +52,7 @@ converges uniformly on $\RR$.
 
 For every $x\in\RR$,
 $$
-|f_n(x)|
+\abs{f_n(x)}
 \le
 \frac1{n^{5/2}}.
 $$
@@ -139,7 +139,7 @@ converges uniformly on $\RR$.
 
 For every $x$,
 $$
-|f_n'(x)|
+\abs{f_n'(x)}
 \le
 \frac1{n^{3/2}}.
 $$

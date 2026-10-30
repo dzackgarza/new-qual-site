@@ -54,7 +54,7 @@ $$
 =
 \left\langle
 a_1,b_1,\dots,a_g,b_g
-\ \middle|\
+\ \presentationbar\
 [a_1,b_1]\cdots[a_g,b_g]=1
 \right\rangle,
 $$
@@ -140,7 +140,7 @@ is connected.
 
 The restriction
 $$
-\pi|_{\widetilde M_g}:\widetilde M_g\to M_g
+\pi\restrict_{\widetilde M_g}:\widetilde M_g\to M_g
 $$
 is the pullback of the universal cover of $T^3$.
 The components of this pullback correspond to cosets of the subgroup

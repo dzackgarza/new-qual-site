@@ -191,7 +191,7 @@ $$
 where $(\ZZ/15\ZZ)^\times$ acts on $C_{15}$ by multiplication.
 In particular,
 $$
-|\operatorname{Gal}(L_c/\QQ)|=120.
+\cardinality{\operatorname{Gal}(L_c/\QQ)}=120.
 $$
 
 ::: pf-proof

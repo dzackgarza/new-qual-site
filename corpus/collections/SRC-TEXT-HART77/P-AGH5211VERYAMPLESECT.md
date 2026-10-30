@@ -36,7 +36,7 @@ audit:
 ::: {.problem}
 Let $X$ be a ruled surface over the curve $C$, defined by a normalized bundle $\mathcal{E}$, and let $\mfe$ be the divisor on $C$ for which $\mathcal{L}(\mfe) \cong \bigwedge^2 \mathcal{E}$ (See 2.8.1). Let $\mfb$ be any divisor on $C$.
 
-a. If $|\mfb|$ and $|\mfb + \mfe|$ have no base points, and if $\mfb$ is nonspecial, then there is a section $D \sim C_0+\mfb f$, and $|D|$ has no base points.
+a. If $\linearsystem{\mfb}$ and $\linearsystem{\mfb + \mfe}$ have no base points, and if $\mfb$ is nonspecial, then there is a section $D \sim C_0+\mfb f$, and $\linearsystem{D}$ has no base points.
 
 b. If $\mfb$ and $\mfb + \mfe$ are very ample on $C$, and for every point $P \in C$, we have $\mfb-P$ and $\mfb+\mfe-P$ nonspecial, then $C_0+\mfb f$ is very ample.
 :::
@@ -112,7 +112,7 @@ $$
 
 ::: pf-proof
 
-Since $|\mfb|$ is base-point free,
+Since $\linearsystem{\mfb}$ is base-point free,
 $$
 h^0(\mfb-P)=h^0(\mfb)-1.
 $$
@@ -127,7 +127,7 @@ H^1(C,\OO_C(\mfb-P))=0.
 $$
 Thus step [](#s1){.pf-ref} applies both to $A=0$ and to $A=P$.
 
-Because $|\mfb+\mfe|$ is also base-point free,
+Because $\linearsystem{\mfb+\mfe}$ is also base-point free,
 $$
 h^0(\mfb+\mfe-P)=h^0(\mfb+\mfe)-1.
 $$
@@ -142,8 +142,8 @@ $$
 
 ::: {.pf-step #s3}
 
-The complete linear system $|L|$ restricts to the complete system
-$|\OO_{\PP^1}(1)|$ on every fibre of $\pi$. In particular, $|L|$ has no
+The complete linear system $\linearsystem{L}$ restricts to the complete system
+$\linearsystem{\OO_{\PP^1}(1)}$ on every fibre of $\pi$. In particular, $\linearsystem{L}$ has no
 base points.
 
 ::: pf-proof
@@ -154,11 +154,11 @@ F_P=\pi^{-1}(P)\cong\PP^1,
 $$
 one has
 $$
-L|_{F_P}\cong\OO_{\PP^1}(1).
+L\restrict_{F_P}\cong\OO_{\PP^1}(1).
 $$
 The exact sequence
 $$
-0\to L(-Pf)\to L\to L|_{F_P}\to0
+0\to L(-Pf)\to L\to L\restrict_{F_P}\to0
 $$
 shows that the kernel of the restriction map on global sections is
 $H^0(X,L(-Pf))$. By step [](#s2){.pf-ref} the image has dimension $2$, which equals
@@ -171,8 +171,8 @@ H^0(X,L)\twoheadrightarrow H^0(F_P,\OO_{F_P}(1))
 $$
 for every $P$.
 
-The system $|\OO_{F_P}(1)|$ has no base point. Since every point of $X$ lies
-on some fibre, $|L|$ has no base points on $X$.
+The system $\linearsystem{\OO_{F_P}(1)}$ has no base point. Since every point of $X$ lies
+on some fibre, $\linearsystem{L}$ has no base points on $X$.
 
 :::
 
@@ -182,7 +182,7 @@ on some fibre, $|L|$ has no base points on $X$.
 
 Under the hypotheses of part (a), there is a member
 $$
-D\in|C_0+\mfb f|
+D\in\linearsystem{C_0+\mfb f}
 $$
 which is a section of $\pi$.
 
@@ -198,7 +198,7 @@ V\longrightarrow H^0(F_P,\OO_{F_P}(1))
 $$
 has codimension $2$. Consider the incidence set
 $$
-I={(P,[s])\in C\times\PP(V):s|_{F_P}=0\}.
+I={(P,[s])\in C\times\PP(V):s\restrict_{F_P}=0\}.
 $$
 Its fibre over $P$ is the projectivization of that codimension-two kernel,
 so
@@ -220,7 +220,7 @@ components, counted with multiplicity, is $D\cdot f=1$.  Thus $D$ has one
 horizontal component, with multiplicity one; in particular $D$ is integral.
 The proper morphism
 $$
-\pi|_D:D\longrightarrow C
+\pi\restrict_D:D\longrightarrow C
 $$
 is therefore finite of degree one and birational. Since $C$ is nonsingular,
 hence normal, a finite birational map to $C$ is an isomorphism. Thus $D$ is
@@ -316,7 +316,7 @@ surjective:
 $$
 H^0(X,L)
 \twoheadrightarrow
-H^0\bigl(\pi^{-1}(A),L|_{\pi^{-1}(A)}\bigr).
+H^0\bigl(\pi^{-1}(A),L\restrict_{\pi^{-1}(A)}\bigr).
 $$
 
 ::: pf-proof
@@ -342,7 +342,7 @@ Now use
 $$
 0\to L(-Af)
 \to L
-\to L|_{\pi^{-1}(A)}
+\to L\restrict_{\pi^{-1}(A)}
 \to0.
 $$
 The vanishing just proved makes the restriction map on $H^0$ surjective.
@@ -365,7 +365,7 @@ $$
 H^0(X,L)\twoheadrightarrow H^0(F_P,\OO_{F_P}(1)).
 $$
 Since $\OO_{\PP^1}(1)$ separates every length-two subscheme of $\PP^1$,
-the composite map onto $H^0(Z,L|_Z)$ is surjective.
+the composite map onto $H^0(Z,L\restrict_Z)$ is surjective.
 
 Suppose $Z$ is not contained in a fibre. Its scheme-theoretic image on the
 nonsingular curve $C$ is then a degree-two effective divisor $A$; this is
@@ -373,7 +373,7 @@ either the sum of the two base points of two distinct fibres or the double
 point $2P$ when $Z$ is a tangent direction transverse to the fibre. Moreover
 the definition of scheme-theoretic image makes
 $$
-\OO_A\longrightarrow (\pi|_Z)_*\OO_Z
+\OO_A\longrightarrow (\pi\restrict_Z)_*\OO_Z
 $$
 injective. Both sides have length $2$, so this map is an isomorphism and
 $Z\cong A$.
@@ -381,14 +381,14 @@ $Z\cong A$.
 Step [](#s7){.pf-ref} gives
 $$
 H^0(X,L)\twoheadrightarrow
-H^0\bigl(\pi^{-1}(A),L|_{\pi^{-1}(A)}\bigr).
+H^0\bigl(\pi^{-1}(A),L\restrict_{\pi^{-1}(A)}\bigr).
 $$
 Over the Artinian scheme $A$, the surface $\pi^{-1}(A)$ is the projective
-bundle $\PP(\mathcal E|_A)$ and $L$ is its relative $\OO(1)$ tensored by a
+bundle $\PP(\mathcal E\restrict_A)$ and $L$ is its relative $\OO(1)$ tensored by a
 line bundle from $A$. The subscheme $Z\cong A$ is a section, hence corresponds
 to a quotient of the rank-two bundle on $A$ by an invertible sheaf. Since
 $A$ is affine, taking global sections of that quotient is surjective. Thus
-the restriction map from $H^0(\pi^{-1}(A),L)$ to $H^0(Z,L|_Z)$ is
+the restriction map from $H^0(\pi^{-1}(A),L)$ to $H^0(Z,L\restrict_Z)$ is
 surjective, and so is the composite from $H^0(X,L)$.
 
 :::

@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Prove or disprove the following statement.
 
-Let $U = \{z \in \CC : |z| > 3\}$.
+Let $U = \{z \in \CC : \abs{z} > 3\}$.
 There exists a holomorphic function $f$ in $U$ such that
 $$
 f'(z) = \frac{z^2 + 2}{z(z-1)(z-2)}.
@@ -30,9 +30,9 @@ zero integral around every closed curve in $U$. Let
 $$
 R(z)=\frac{z^2+2}{z(z-1)(z-2)}.
 $$
-For a large positively oriented circle $|z|=r>3$,
+For a large positively oriented circle $\abs{z}=r>3$,
 $$
-\int_{|z|=r}R(z)\,dz
+\int_{\abs{z}=r}R(z)\,dz
 =-2\pi i\operatorname{Res}_{\infty}R.
 $$
 Since
@@ -42,7 +42,7 @@ R(z)=\frac1z+O(z^{-2})
 $$
 we have $\operatorname{Res}_{\infty}R=-1$, and therefore
 $$
-\int_{|z|=r}R(z)\,dz=2\pi i\ne0.
+\int_{\abs{z}=r}R(z)\,dz=2\pi i\ne0.
 $$
 Hence $R$ has no single-valued holomorphic primitive on $U$, so no such $f$
 exists.

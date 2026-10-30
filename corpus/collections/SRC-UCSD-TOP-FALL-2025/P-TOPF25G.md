@@ -25,7 +25,7 @@ Now, by considering the attaching map of the 4-cell in the standard cell decompo
 ::: {.pf-step #s1}
 
 The integral cohomology ring of $\CP^2$ is
-$$H^*(\CP^2;\ZZ)\cong\ZZ[u]/(u^3),\qquad |u|=2,$$
+$$H^*(\CP^2;\ZZ)\cong\ZZ[u]/(u^3),\qquad \gradeddegree{u}=2,$$
 so $u^2\ne0$.
 
 ::: pf-proof

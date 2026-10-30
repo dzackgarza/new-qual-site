@@ -94,7 +94,7 @@ the fixed field of $gHg^{-1}$ is $g$ applied to the fixed field of $H$.
 :::
 
 ::: pf-step
-Hence $g|_K: K \to L$ is an $F$-isomorphism.
+Hence $g\restrict_K: K \to L$ is an $F$-isomorphism.
 
 ::: pf-proof
 $g$ fixes $F$ (it is in $\Gal(E/F)$) and maps $K$ onto $L$.

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $1<p<\infty$ and let $(f_n)$ be a sequence of functions $f_n:\RR^3\to\RR$ such that
 $$
-\limsup_{n\to\infty}\|f_n\|_{L^p}<\infty.
+\limsup_{n\to\infty}\norm{f_n}_{L^p}<\infty.
 $$
 Show that if $f_n$ converges almost everywhere, then $f_n$ converges weakly in $L^p$.
 :::
@@ -38,7 +38,7 @@ at points where the limit exists, and define $f$ arbitrarily on the null excepti
 
 After discarding finitely many terms, there is a constant $M<\infty$ such that
 $$
-\|f_n\|_{L^p}\le M
+\norm{f_n}_{L^p}\le M
 $$
 for every remaining $n$.
 
@@ -47,7 +47,7 @@ for every remaining $n$.
 
 The hypothesis
 $$
-\limsup_{n\to\infty}\|f_n\|_{L^p}<\infty
+\limsup_{n\to\infty}\norm{f_n}_{L^p}<\infty
 $$
 implies that the norms are uniformly bounded for all sufficiently large $n$. Removing finitely many initial terms does not affect weak convergence of the sequence.
 
@@ -59,7 +59,7 @@ implies that the norms are uniformly bounded for all sufficiently large $n$. Rem
 
 The pointwise limit $f$ belongs to $L^p(\RR^3)$ and
 $$
-\|f\|_{L^p}\le M.
+\norm{f}_{L^p}\le M.
 $$
 
 
@@ -67,10 +67,10 @@ $$
 
 By Fatou's lemma,
 $$
-\int_{\RR^3}|f|^p
+\int_{\RR^3}\abs{f}^p
 \le
 \liminf_{n\to\infty}
-\int_{\RR^3}|f_n|^p
+\int_{\RR^3}\abs{f_n}^p
 \le M^p.
 $$
 
@@ -91,14 +91,14 @@ is uniformly integrable.
 
 Let $E\subseteq\RR^3$ be measurable. Hölder's inequality gives
 $$
-\int_E|f_ng|
+\int_E\abs{f_ng}
 \le
-\|f_n\|_{L^p(E)}
-\|g\|_{L^q(E)}
+\norm{f_n}_{L^p(E)}
+\norm{g}_{L^q(E)}
 \le
-M\left(\int_E|g|^q\right)^{1/q}.
+M\left(\int_E\abs{g}^q\right)^{1/q}.
 $$
-Since $|g|^q\in L^1$, the absolute continuity of the Lebesgue integral implies that the right-hand side can be made uniformly small in $n$ by requiring $|E|$ to be sufficiently small. Hence the family is uniformly integrable.
+Since $\abs{g}^q\in L^1$, the absolute continuity of the Lebesgue integral implies that the right-hand side can be made uniformly small in $n$ by requiring $\setmeasure{E}$ to be sufficiently small. Hence the family is uniformly integrable.
 
 :::
 
@@ -113,15 +113,15 @@ The family $\{f_ng:n\ge1\}$ is tight in $L^1(\RR^3)$.
 
 Given $\varepsilon>0$, choose $R>0$ so large that
 $$
-\left(\int_{\RR^3\setminus B(0,R)}|g|^q\right)^{1/q}
+\left(\int_{\RR^3\setminus B(0,R)}\abs{g}^q\right)^{1/q}
 <\frac{\varepsilon}{M+1}.
 $$
 Then Hölder's inequality gives, uniformly in $n$,
 $$
-\int_{\RR^3\setminus B(0,R)}|f_ng|
+\int_{\RR^3\setminus B(0,R)}\abs{f_ng}
 \le
 M
-\left(\int_{\RR^3\setminus B(0,R)}|g|^q\right)^{1/q}
+\left(\int_{\RR^3\setminus B(0,R)}\abs{g}^q\right)^{1/q}
 <\varepsilon.
 $$
 
@@ -147,7 +147,7 @@ f_ng\to fg
 $$
 almost everywhere. Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give uniform integrability and tightness of the sequence $(f_ng)$. By the Vitali convergence theorem on $\RR^3$,
 $$
-\|f_ng-fg\|_{L^1}\to0.
+\norm{f_ng-fg}_{L^1}\to0.
 $$
 Therefore the integrals converge. The function $fg$ is integrable by Hölder's inequality and step [](#s1-2){.pf-ref}.
 

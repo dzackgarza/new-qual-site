@@ -124,7 +124,7 @@ and collect coefficients.
 
 As a consistency check, the dimensions of the three orbit modules are
 $$
-10+3(10\cdot9)+10\cdot9\cdot8=10+270+720=1000=|X|,
+10+3(10\cdot9)+10\cdot9\cdot8=10+270+720=1000=\cardinality{X},
 $$
 which is the dimension of the original permutation representation.
 :::

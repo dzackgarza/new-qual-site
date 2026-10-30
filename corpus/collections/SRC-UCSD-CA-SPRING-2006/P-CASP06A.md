@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $\Omega$ be an open subset of $\CC$.
-For a compact subset $K$ of $\Omega$, define the hull $$\hat{K} = \{z \in \Omega : |f(z)| \leq \sup_{w \in K} |f(w)|, \text{ for every } f \in \mathcal{O}(\Omega)\}.$$ Let $\hat{K}_c$ be the convex hull of $K$, namely the smallest convex subset of $\CC$ containing $K$.
+For a compact subset $K$ of $\Omega$, define the hull $$\hat{K} = \{z \in \Omega : \abs{f(z)} \leq \sup_{w \in K} \abs{f(w)}, \text{ for every } f \in \mathcal{O}(\Omega)\}.$$ Let $\hat{K}_c$ be the convex hull of $K$, namely the smallest convex subset of $\CC$ containing $K$.
 Show that
 
 (a) $d(K, \CC \setminus \Omega) = d(\hat{K}, \CC \setminus \Omega)$;
@@ -34,11 +34,11 @@ f_a(z)=\frac1{z-a}
 $$
 is holomorphic on $\Omega$. Hence for every $z\in\widehat K$,
 $$
-\frac1{|z-a|}
-\le \sup_{w\in K}\frac1{|w-a|}
+\frac1{\abs{z-a}}
+\le \sup_{w\in K}\frac1{\abs{w-a}}
 =\frac1{d(a,K)}.
 $$
-Thus $|z-a|\ge d(a,K)$. Taking the infimum first over
+Thus $\abs{z-a}\ge d(a,K)$. Taking the infimum first over
 $z\in\widehat K$ and then over $a\notin\Omega$ gives
 $$
 d(\widehat K,\CC\setminus\Omega)
@@ -58,8 +58,8 @@ F_n(z)=\exp(ne^{-i\theta}z).
 $$
 Then
 $$
-|F_n(z_0)|
->\sup_{w\in K}|F_n(w)|.
+\abs{F_n(z_0)}
+>\sup_{w\in K}\abs{F_n(w)}.
 $$
 Since $F_n\in\mathcal O(\Omega)$, this shows $z_0\notin\widehat K$. Therefore
 $$

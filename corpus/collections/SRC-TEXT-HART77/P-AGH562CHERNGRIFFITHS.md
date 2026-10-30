@@ -59,12 +59,12 @@ A=\OO_X(1).
 $$
 Choose a general hyperplane section
 $$
-C\in|A|.
+C\in\linearsystem{A}.
 $$
 By [[T-BERTINI|Bertini's theorem]], $C$ is a smooth irreducible curve.
 Write
 $$
-L=A|_C=\OO_C(1).
+L=A\restrict_C=\OO_C(1).
 $$
 Then
 $$
@@ -150,11 +150,11 @@ Adjunction gives
 $$
 \omega_C
 \cong
-(\omega_X\otimes A)|_C,
+(\omega_X\otimes A)\restrict_C,
 $$
 and therefore
 $$
-\omega_X|_C
+\omega_X\restrict_C
 \cong
 \omega_C\otimes L^{-1}.
 $$
@@ -281,13 +281,13 @@ $$
 ::: pf-proof
 Adjunction gives
 $$
-\omega_X|_C
+\omega_X\restrict_C
 \cong
 \omega_C\otimes L^{-1}.
 $$
 Step [](#clifford-equality-canonical){.pf-ref} identifies the right-hand side with $\OO_C$. Consequently
 $$
-\deg(\omega_X|_C)=0.
+\deg(\omega_X\restrict_C)=0.
 $$
 Since $C\sim A$, this degree is
 $$

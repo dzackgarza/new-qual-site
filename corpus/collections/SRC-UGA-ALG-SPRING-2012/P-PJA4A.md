@@ -30,7 +30,7 @@ Prove that $\gal(E/F)$ is nonabelian.
 
 ::: {.solution}
 
-Let $G=\operatorname{Gal}(E/F)$, with $|G|=14$.
+Let $G=\operatorname{Gal}(E/F)$, with $\cardinality{G}=14$.
 
 ::: pf
 

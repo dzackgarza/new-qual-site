@@ -424,7 +424,7 @@ $$
 $$
 Thus
 $$
-\mathfrak L|_Y\cong\mco_Y.
+\mathfrak L\restrict_Y\cong\mco_Y.
 $$
 Suppose that $\mathfrak L$ were algebraizable.
 Then there would be a coherent sheaf $\mcg$ on $X$ with
@@ -455,7 +455,7 @@ Restricting to $Y$ gives
 $$
 \mco_Y(m)
 \cong
-\mathfrak L|_Y
+\mathfrak L\restrict_Y
 \cong
 \mco_Y.
 $$

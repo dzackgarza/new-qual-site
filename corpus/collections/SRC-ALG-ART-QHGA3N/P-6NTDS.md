@@ -52,16 +52,16 @@ Theorems used in the proof:
 ::: {.solution}
 > Proof due to Paco Adajar.
 
-Since $Z(G)$ is a subgroup of $G$ and $|G| = p^3$, by Lagrange's theorem, $|Z(G)| \in \{1, p, p^2, p^3\}$.
+Since $Z(G)$ is a subgroup of $G$ and $\cardinality{G} = p^3$, by Lagrange's theorem, $\cardinality{Z(G)} \in \{1, p, p^2, p^3\}$.
 
-Since we stipulated that $G$ is nonabelian, $|Z(G)| \ne p^3$.
-Also, since $G$ is a $p$-group, it has nontrivial center, so $|Z(G)| \ne 1$.
-Finally, by the $G/Z(G)$ theorem, $|Z(G)| \ne p^2$: if $|Z(G)| = p^2$, then $|G/Z(G)| = p$ and so $G/Z(G)$ would be cyclic, meaning that $G$ is abelian.
-Hence, $|Z(G)| = p$.
+Since we stipulated that $G$ is nonabelian, $\cardinality{Z(G)} \ne p^3$.
+Also, since $G$ is a $p$-group, it has nontrivial center, so $\cardinality{Z(G)} \ne 1$.
+Finally, by the $G/Z(G)$ theorem, $\cardinality{Z(G)} \ne p^2$: if $\cardinality{Z(G)} = p^2$, then $\cardinality{G/Z(G)} = p$ and so $G/Z(G)$ would be cyclic, meaning that $G$ is abelian.
+Hence, $\cardinality{Z(G)} = p$.
 
-Then, since $|Z(G)| = p$, we have that $|G/Z(G)| = p^2$, and so $G/Z(G)$ is abelian.
+Then, since $\cardinality{Z(G)} = p$, we have that $\cardinality{G/Z(G)} = p^2$, and so $G/Z(G)$ is abelian.
 Thus, $[G, G] \subseteq Z(G)$.
-Since $|Z(G)| = p$, then $|[G,G]| \in \{ 1, p\}$ again by Lagrange's theorem.
-If $|[G,G]| = p$ then $[G,G] = Z(G)$ and we are done.
-And, indeed, we must have $|[G,G]| = p$, because $G$ is nonabelian and so $|[G,G]| \ne 1$.
+Since $\cardinality{Z(G)} = p$, then $\cardinality{[G,G]} \in \{ 1, p\}$ again by Lagrange's theorem.
+If $\cardinality{[G,G]} = p$ then $[G,G] = Z(G)$ and we are done.
+And, indeed, we must have $\cardinality{[G,G]} = p$, because $G$ is nonabelian and so $\cardinality{[G,G]} \ne 1$.
 :::

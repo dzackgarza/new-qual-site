@@ -57,7 +57,7 @@ On a measure space $(X,\mu)$ with $\mu(X) < \infty$, a bounded function is Lebes
 
 ::: pf-proof
 
-The Lebesgue integral is defined for measurable functions, so an integrable function is measurable. Conversely, if $f$ is measurable and $|f| \le M$, then $\int|f| \le M\mu(X) < \infty$.
+The Lebesgue integral is defined for measurable functions, so an integrable function is measurable. Conversely, if $f$ is measurable and $\abs{f} \le M$, then $\int\abs{f} \le M\mu(X) < \infty$.
 
 :::
 
@@ -73,7 +73,7 @@ For $f \geq 0$ in $L^1$, the dyadic simple functions
 $$
 s_k = \sum_{j=1}^{k 2^k}\frac{j-1}{2^k}\chi_{\theset{\frac{j-1}{2^k} \le f < \frac{j}{2^k}}} + k\chi_{\theset{f \ge k}}
 $$
-satisfy $0 \le s_k \nearrow f$ pointwise, so $|f - s_k| \le f$ and the dominated convergence theorem gives $\|f - s_k\|_1 \to 0$. For general $f$, approximate $f^+$ and $f^-$ separately.
+satisfy $0 \le s_k \nearrow f$ pointwise, so $\abs{f - s_k} \le f$ and the dominated convergence theorem gives $\norm{f - s_k}_1 \to 0$. For general $f$, approximate $f^+$ and $f^-$ separately.
 
 :::
 
@@ -87,11 +87,11 @@ Step functions, finite linear combinations of indicators of bounded intervals, a
 
 ::: {.pf-step #s4-1}
 
-For measurable $E \subseteq \RR$ with $m(E) < \infty$ and $\eps > 0$, there is a finite union $A$ of bounded open intervals with $\|\chi_E - \chi_A\|_1 < 2\eps$.
+For measurable $E \subseteq \RR$ with $m(E) < \infty$ and $\eps > 0$, there is a finite union $A$ of bounded open intervals with $\norm{\chi_E - \chi_A}_1 < 2\eps$.
 
 ::: pf-proof
 
-Outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, so $m(U) < \infty$. $U$ is a countable disjoint union of open intervals $I_i$, each bounded because $m(U) < \infty$, and $\sum_i m(I_i) = m(U)$. Choose $N$ with $\sum_{i > N} m(I_i) < \eps$ and put $A = \bigcup_{i \le N} I_i$. Then $\|\chi_E - \chi_A\|_1 \le m(U \setminus E) + m(U \setminus A) < 2\eps$.
+Outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, so $m(U) < \infty$. $U$ is a countable disjoint union of open intervals $I_i$, each bounded because $m(U) < \infty$, and $\sum_i m(I_i) = m(U)$. Choose $N$ with $\sum_{i > N} m(I_i) < \eps$ and put $A = \bigcup_{i \le N} I_i$. Then $\norm{\chi_E - \chi_A}_1 \le m(U \setminus E) + m(U \setminus A) < 2\eps$.
 
 :::
 
@@ -99,7 +99,7 @@ Outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, s
 
 ::: pf-qed
 
-Given $f \in L^1$ and $\eps > 0$, step [](#s3){.pf-ref} gives a simple $s = \sum_{i=1}^m a_i\chi_{E_i}$ with $m(E_i) < \infty$ and $\|f - s\|_1 < \eps$. Step [](#s4-1){.pf-ref} gives finite unions of intervals $A_i$ with $\|\chi_{E_i} - \chi_{A_i}\|_1 < \eps/(1 + \sum_i|a_i|)$, and $\sum_i a_i\chi_{A_i}$ is a step function within $2\eps$ of $f$.
+Given $f \in L^1$ and $\eps > 0$, step [](#s3){.pf-ref} gives a simple $s = \sum_{i=1}^m a_i\chi_{E_i}$ with $m(E_i) < \infty$ and $\norm{f - s}_1 < \eps$. Step [](#s4-1){.pf-ref} gives finite unions of intervals $A_i$ with $\norm{\chi_{E_i} - \chi_{A_i}}_1 < \eps/(1 + \sum_i\abs{a_i})$, and $\sum_i a_i\chi_{A_i}$ is a step function within $2\eps$ of $f$.
 
 :::
 
@@ -115,11 +115,11 @@ $C_c^\infty(\RR^n)$ is dense in $L^1(\RR^n)$.
 
 ::: {.pf-step #s5-1}
 
-For $f \in L^1$, $f_R = f\chi_{B(0,R)}$ satisfies $\|f - f_R\|_1 \to 0$ as $R \to \infty$.
+For $f \in L^1$, $f_R = f\chi_{B(0,R)}$ satisfies $\norm{f - f_R}_1 \to 0$ as $R \to \infty$.
 
 ::: pf-proof
 
-$|f - f_R| = |f|\chi_{\RR^n \setminus B(0,R)}$ tends to $0$ pointwise and is bounded by $|f| \in L^1$; apply dominated convergence.
+$\abs{f - f_R} = \abs{f}\chi_{\RR^n \setminus B(0,R)}$ tends to $0$ pointwise and is bounded by $\abs{f} \in L^1$; apply dominated convergence.
 
 :::
 
@@ -127,7 +127,7 @@ $|f - f_R| = |f|\chi_{\RR^n \setminus B(0,R)}$ tends to $0$ pointwise and is bou
 
 ::: {.pf-step #s5-2}
 
-Let $\phi \in C_c^\infty(\RR^n)$ with $\phi \ge 0$ and $\int\phi = 1$, and $\phi_\eps(x) = \eps^{-n}\phi(x/\eps)$. Then $f_R \ast \phi_\eps \in C_c^\infty(\RR^n)$ and $\|f_R \ast \phi_\eps - f_R\|_1 \to 0$ as $\eps \to 0$.
+Let $\phi \in C_c^\infty(\RR^n)$ with $\phi \ge 0$ and $\int\phi = 1$, and $\phi_\eps(x) = \eps^{-n}\phi(x/\eps)$. Then $f_R \ast \phi_\eps \in C_c^\infty(\RR^n)$ and $\norm{f_R \ast \phi_\eps - f_R}_1 \to 0$ as $\eps \to 0$.
 
 ::: pf-proof
 
@@ -139,7 +139,7 @@ Differentiation under the integral gives $D^\alpha(f_R \ast \phi_\eps) = f_R \as
 
 ::: pf-qed
 
-$\|f - f_R \ast \phi_\eps\|_1 \le \|f - f_R\|_1 + \|f_R - f_R \ast \phi_\eps\|_1$, and steps [](#s5-1){.pf-ref} and [](#s5-2){.pf-ref} make both terms small.
+$\norm{f - f_R \ast \phi_\eps}_1 \le \norm{f - f_R}_1 + \norm{f_R - f_R \ast \phi_\eps}_1$, and steps [](#s5-1){.pf-ref} and [](#s5-2){.pf-ref} make both terms small.
 
 :::
 

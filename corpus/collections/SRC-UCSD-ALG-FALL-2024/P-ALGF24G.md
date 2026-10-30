@@ -139,7 +139,7 @@ If in addition $\alpha\ne0$, then $r$ is a root of unity.
 First, $0\notin X$: otherwise $x$ divides the monic irreducible polynomial $f$, forcing $f=x$ and contradicting $\alpha\ne0$.
 Since $r\alpha\in X$, this also shows $r\ne0$.
 Multiplication by $r$ is injective, so step [](#s3){.pf-ref} makes $\ell_r$ a permutation of the finite set $X$.
-Some positive power $k$ of this permutation is the identity; for example one may take $k=|X|!$.
+Some positive power $k$ of this permutation is the identity; for example one may take $k=\cardinality{X}!$.
 Evaluating at $\alpha$ gives $r^k\alpha=\alpha$.
 Cancelling $\alpha\ne0$ yields $r^k=1$, proving the remaining conclusion of part (b).
 

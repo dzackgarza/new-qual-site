@@ -23,11 +23,11 @@ audit:
 ::: {.problem}
 Let $(f_j)$ be a sequence of entire functions such that, writing $z = x + iy$, we have
 $$
-\iint_{\CC} |f_j(z)|^2 e^{-|z|^2}\,dx\,dy \leq C, \quad j = 1, 2, \ldots,
+\iint_{\CC} \abs{f_j(z)}^2 e^{-\abs{z}^2}\,dx\,dy \leq C, \quad j = 1, 2, \ldots,
 $$
 for some constant $C > 0$. Show that there exists a subsequence $(f_{j_k})$ and an entire function $f$ such that we have
 $$
-\iint_{\CC} |f_{j_k}(z) - f(z)|^2 e^{-2|z|^2}\,dx\,dy \to 0, \quad k \to \infty.
+\iint_{\CC} \abs{f_{j_k}(z) - f(z)}^2 e^{-2\abs{z}^2}\,dx\,dy \to 0, \quad k \to \infty.
 $$
 :::
 
@@ -36,7 +36,7 @@ $$
 Assume
 $$
 \int_{\CC}
-|f_j(z)|^2e^{-|z|^2}\,dA(z)
+\abs{f_j(z)}^2e^{-\abs{z}^2}\,dA(z)
 \le C
 $$
 for every $j$, where $dA=dx\,dy$.
@@ -50,17 +50,17 @@ We first obtain compactness on bounded subsets of $\CC$.
 For every entire function $g$ and every $z_0\in\CC$,
 $$
 \boxed{
-|g(z_0)|^2
+\abs{g(z_0)}^2
 \le
 \frac1\pi
 \int_{D(z_0,1)}
-|g(z)|^2\,dA(z)}.
+\abs{g(z)}^2\,dA(z)}.
 $$
 
 
 ::: pf-proof
 
-The function $|g|^2$ is subharmonic. The subharmonic mean-value inequality on the unit disk gives the displayed estimate.
+The function $\abs{g}^2$ is subharmonic. The subharmonic mean-value inequality on the unit disk gives the displayed estimate.
 
 :::
 
@@ -70,7 +70,7 @@ The function $|g|^2$ is subharmonic. The subharmonic mean-value inequality on th
 
 Fix $R>0$. If
 $$
-|z_0|\le R
+\abs{z_0}\le R
 $$
 and
 $$
@@ -78,7 +78,7 @@ z\in D(z_0,1),
 $$
 then
 $$
-|z|\le R+1.
+\abs{z}\le R+1.
 $$
 
 
@@ -86,9 +86,9 @@ $$
 
 By the triangle inequality,
 $$
-|z|
+\abs{z}
 \le
-|z-z_0|+|z_0|
+\abs{z-z_0}+\abs{z_0}
 <
 1+R.
 $$
@@ -99,14 +99,14 @@ $$
 
 ::: {.pf-step #s1-3}
 
-Hence, for $|z_0|\le R$,
+Hence, for $\abs{z_0}\le R$,
 $$
 \int_{D(z_0,1)}
-|f_j(z)|^2\,dA(z)
+\abs{f_j(z)}^2\,dA(z)
 \le
 e^{(R+1)^2}
 \int_{D(z_0,1)}
-|f_j(z)|^2e^{-|z|^2}\,dA(z).
+\abs{f_j(z)}^2e^{-\abs{z}^2}\,dA(z).
 $$
 
 
@@ -114,17 +114,17 @@ $$
 
 On the disk from step [](#s1-2){.pf-ref},
 $$
-e^{|z|^2}
+e^{\abs{z}^2}
 \le
 e^{(R+1)^2}.
 $$
 Thus
 $$
-|f_j(z)|^2
+\abs{f_j(z)}^2
 =
-|f_j(z)|^2e^{-|z|^2}e^{|z|^2}
+\abs{f_j(z)}^2e^{-\abs{z}^2}e^{\abs{z}^2}
 \le
-e^{(R+1)^2}|f_j(z)|^2e^{-|z|^2}.
+e^{(R+1)^2}\abs{f_j(z)}^2e^{-\abs{z}^2}.
 $$
 Integrate over the disk.
 
@@ -137,18 +137,18 @@ Integrate over the disk.
 Therefore
 $$
 \boxed{
-|f_j(z_0)|^2
+\abs{f_j(z_0)}^2
 \le
 \frac{C}{\pi}e^{(R+1)^2}}
 $$
-for all $j$ and all $|z_0|\le R$.
+for all $j$ and all $\abs{z_0}\le R$.
 
 
 ::: pf-proof
 
 Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} and use the global hypothesis
 $$
-\int_{\CC}|f_j|^2e^{-|z|^2}\,dA\le C.
+\int_{\CC}\abs{f_j}^2e^{-\abs{z}^2}\,dA\le C.
 $$
 
 :::
@@ -162,7 +162,7 @@ Thus the family $\{f_j\}$ is locally uniformly bounded on $\CC$.
 
 ::: pf-proof
 
-For every closed disk $\{|z|\le R\}$, step [](#s1-4){.pf-ref} gives a bound independent of $j$.
+For every closed disk $\{\abs{z}\le R\}$, step [](#s1-4){.pf-ref} gives a bound independent of $j$.
 
 :::
 
@@ -209,7 +209,7 @@ Fatou's lemma gives
 $$
 \boxed{
 \int_{\CC}
-|f(z)|^2e^{-|z|^2}\,dA(z)
+\abs{f(z)}^2e^{-\abs{z}^2}\,dA(z)
 \le C}.
 $$
 
@@ -218,16 +218,16 @@ $$
 
 By step [](#s1-7){.pf-ref},
 $$
-|f_{j_k}(z)|^2e^{-|z|^2}
+\abs{f_{j_k}(z)}^2e^{-\abs{z}^2}
 \to
-|f(z)|^2e^{-|z|^2}
+\abs{f(z)}^2e^{-\abs{z}^2}
 $$
 pointwise. These functions are nonnegative, so Fatou yields
 $$
-\int |f|^2e^{-|z|^2}
+\int \abs{f}^2e^{-\abs{z}^2}
 \le
 \liminf_{k\to\infty}
-\int |f_{j_k}|^2e^{-|z|^2}
+\int \abs{f_{j_k}}^2e^{-\abs{z}^2}
 \le C.
 $$
 
@@ -237,30 +237,30 @@ $$
 
 ::: {.pf-step #s1-9}
 
-For every $R>0$ and every $|z|>R$,
+For every $R>0$ and every $\abs{z}>R$,
 $$
 \boxed{
-e^{-2|z|^2}
+e^{-2\abs{z}^2}
 \le
-e^{-R^2}e^{-|z|^2}}.
+e^{-R^2}e^{-\abs{z}^2}}.
 $$
 
 
 ::: pf-proof
 
-If $|z|>R$, then
+If $\abs{z}>R$, then
 $$
-e^{-|z|^2}
+e^{-\abs{z}^2}
 \le
 e^{-R^2}.
 $$
 Thus
 $$
-e^{-2|z|^2}
+e^{-2\abs{z}^2}
 =
-e^{-|z|^2}e^{-|z|^2}
+e^{-\abs{z}^2}e^{-\abs{z}^2}
 \le
-e^{-R^2}e^{-|z|^2}.
+e^{-R^2}e^{-\abs{z}^2}.
 $$
 
 :::
@@ -272,8 +272,8 @@ $$
 Hence
 $$
 \boxed{
-\int_{|z|>R}
-|f_{j_k}(z)|^2e^{-2|z|^2}\,dA(z)
+\int_{\abs{z}>R}
+\abs{f_{j_k}(z)}^2e^{-2\abs{z}^2}\,dA(z)
 \le
 Ce^{-R^2}}
 $$
@@ -293,8 +293,8 @@ Use step [](#s1-9){.pf-ref} and the original weighted $L^2$ bound.
 Likewise,
 $$
 \boxed{
-\int_{|z|>R}
-|f(z)|^2e^{-2|z|^2}\,dA(z)
+\int_{\abs{z}>R}
+\abs{f(z)}^2e^{-2\abs{z}^2}\,dA(z)
 \le
 Ce^{-R^2}}.
 $$
@@ -312,8 +312,8 @@ Use step [](#s1-9){.pf-ref} and the bound from step [](#s1-8){.pf-ref}.
 
 Therefore
 $$
-\int_{|z|>R}
-|f_{j_k}(z)-f(z)|^2e^{-2|z|^2}\,dA(z)
+\int_{\abs{z}>R}
+\abs{f_{j_k}(z)-f(z)}^2e^{-2\abs{z}^2}\,dA(z)
 \le
 4Ce^{-R^2}.
 $$
@@ -323,16 +323,16 @@ $$
 
 Use
 $$
-|a-b|^2\le2|a|^2+2|b|^2,
+\abs{a-b}^2\le2\abs{a}^2+2\abs{b}^2,
 $$
 then apply steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}:
 $$
 \begin{aligned}
-\int_{|z|>R}|f_{j_k}-f|^2e^{-2|z|^2}
+\int_{\abs{z}>R}\abs{f_{j_k}-f}^2e^{-2\abs{z}^2}
 &\le
-2\int_{|z|>R}|f_{j_k}|^2e^{-2|z|^2}\\
+2\int_{\abs{z}>R}\abs{f_{j_k}}^2e^{-2\abs{z}^2}\\
 &\quad+
-2\int_{|z|>R}|f|^2e^{-2|z|^2}\\
+2\int_{\abs{z}>R}\abs{f}^2e^{-2\abs{z}^2}\\
 &\le
 4Ce^{-R^2}.
 \end{aligned}
@@ -372,8 +372,8 @@ $$
 one has
 $$
 \boxed{
-\sup_{|z|\le R}
-|f_{j_k}(z)-f(z)|
+\sup_{\abs{z}\le R}
+\abs{f_{j_k}(z)-f(z)}
 \to0}.
 $$
 
@@ -390,9 +390,9 @@ This is local uniform convergence from step [](#s1-6){.pf-ref}.
 
 Therefore
 $$
-\int_{|z|\le R}
-|f_{j_k}(z)-f(z)|^2
-e^{-2|z|^2}
+\int_{\abs{z}\le R}
+\abs{f_{j_k}(z)-f(z)}^2
+e^{-2\abs{z}^2}
 \,dA(z)
 \to0.
 $$
@@ -402,16 +402,16 @@ $$
 
 Since
 $$
-e^{-2|z|^2}\le1,
+e^{-2\abs{z}^2}\le1,
 $$
 $$
 \begin{aligned}
-\int_{|z|\le R}
-|f_{j_k}-f|^2e^{-2|z|^2}\,dA
+\int_{\abs{z}\le R}
+\abs{f_{j_k}-f}^2e^{-2\abs{z}^2}\,dA
 &\le
 \pi R^2
 \left(
-\sup_{|z|\le R}|f_{j_k}-f|
+\sup_{\abs{z}\le R}\abs{f_{j_k}-f}
 \right)^2,
 \end{aligned}
 $$
@@ -426,8 +426,8 @@ and the right-hand side tends to zero by step [](#s1-14){.pf-ref}.
 Hence there exists $K$ such that for all $k\ge K$,
 $$
 \boxed{
-\int_{|z|\le R}
-|f_{j_k}-f|^2e^{-2|z|^2}\,dA
+\int_{\abs{z}\le R}
+\abs{f_{j_k}-f}^2e^{-2\abs{z}^2}\,dA
 <
 \frac{\varepsilon}{2}}.
 $$
@@ -446,7 +446,7 @@ Apply step [](#s1-15){.pf-ref}.
 For $k\ge K$,
 $$
 \int_{\CC}
-|f_{j_k}-f|^2e^{-2|z|^2}\,dA
+\abs{f_{j_k}-f}^2e^{-2\abs{z}^2}\,dA
 <
 \varepsilon.
 $$
@@ -454,7 +454,7 @@ $$
 
 ::: pf-proof
 
-Split the integral into $|z|\le R$ and $|z|>R$. The inside contribution is $<\varepsilon/2$ by step [](#s1-16){.pf-ref}, while the outside contribution is $<\varepsilon/2$ by steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref}.
+Split the integral into $\abs{z}\le R$ and $\abs{z}>R$. The inside contribution is $<\varepsilon/2$ by step [](#s1-16){.pf-ref}, while the outside contribution is $<\varepsilon/2$ by steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref}.
 
 :::
 
@@ -466,7 +466,7 @@ Therefore
 $$
 \boxed{
 \int_{\CC}
-|f_{j_k}(z)-f(z)|^2e^{-2|z|^2}\,dA(z)
+\abs{f_{j_k}(z)-f(z)}^2e^{-2\abs{z}^2}\,dA(z)
 \longrightarrow0}.
 $$
 

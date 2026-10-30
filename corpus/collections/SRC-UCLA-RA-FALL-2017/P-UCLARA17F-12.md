@@ -61,11 +61,11 @@ g'(h(z_0))\ne0.
 $$
 By the holomorphic inverse function theorem, there are neighborhoods $V$ of $h(z_0)$ and $U$ of $f(z_0)=g(h(z_0))$ such that
 $$
-g|_V:V\longrightarrow U
+g\restrict_V:V\longrightarrow U
 $$
 is biholomorphic. By continuity of $h$, after shrinking a neighborhood $W$ of $z_0$ one has $h(W)\subset V$. Hence on $W$,
 $$
-h=(g|_V)^{-1}\circ f.
+h=(g\restrict_V)^{-1}\circ f.
 $$
 The right-hand side is holomorphic, so $h$ is holomorphic at $z_0$.
 
@@ -104,7 +104,7 @@ for infinitely many distinct $z_n\to z_\infty$. The identity theorem then forces
 
 ::: {.pf-step #s1-4}
 
-Every point of $B$ is a removable singularity for the holomorphic function $h|_{\CC\setminus B}$.
+Every point of $B$ is a removable singularity for the holomorphic function $h\restrict_{\CC\setminus B}$.
 
 
 ::: pf-proof
@@ -113,7 +113,7 @@ Fix $b\in B$. By step [](#s1-3){.pf-ref}, choose $r>0$ such that
 $$
 B(b,r)\cap B=\{b\}.
 $$
-Step [](#s1-2){.pf-ref} shows that $h$ is holomorphic on the punctured disk $0<|z-b|<r$. Since $h$ is continuous at $b$, it is bounded on some smaller disk around $b$. Riemann's removable singularity theorem therefore extends the punctured-disk holomorphic function across $b$. The extension agrees with the given value $h(b)$ by continuity, so the original function $h$ is holomorphic at $b$.
+Step [](#s1-2){.pf-ref} shows that $h$ is holomorphic on the punctured disk $0<\abs{z-b}<r$. Since $h$ is continuous at $b$, it is bounded on some smaller disk around $b$. Riemann's removable singularity theorem therefore extends the punctured-disk holomorphic function across $b$. The extension agrees with the given value $h(b)$ by continuity, so the original function $h$ is holomorphic at $b$.
 
 :::
 

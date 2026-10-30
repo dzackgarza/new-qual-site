@@ -63,7 +63,7 @@ Moreover, Since $f$ is irreducible by Eisenstein with $p=2$, the Galois group is
 
 - $\ZZ/(4)$
 
-We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$, an extension of degree 2.
+We can note that $g$ splits over $L \coloneqq \QQ(\sqrt 2)$, an extension of degree 2.
 
 We can now note that $\min(\alpha, L)$ is given by $p(x) = x^2 - (2 + \sqrt 2)$, and so $[K: L] = 2$.
 
@@ -118,7 +118,7 @@ where $\generators{\sigma^2}$ has order $2$ (index $2$ in $G$). By the fundament
 $$
 K \supset K^{\generators{\sigma^2}} \supset \QQ,
 $$
-with $[K : K^{\generators{\sigma^2}}] = |\generators{\sigma^2}| = 2$ and $[K^{\generators{\sigma^2}} : \QQ] = 2$.
+with $[K : K^{\generators{\sigma^2}}] = \cardinality{\generators{\sigma^2}} = 2$ and $[K^{\generators{\sigma^2}} : \QQ] = 2$.
 
 We already know one intermediate field of degree $2$ over $\QQ$, namely $\QQ(\sqrt 2)$ (from part (a), $g(x) = x^2 - 4x + 2$ splits over $\QQ(\sqrt 2)$, and $[K : \QQ(\sqrt 2)] = 2$). Since the subgroup lattice is a chain, there is exactly one intermediate field of each degree, so $K^{\generators{\sigma^2}} = \QQ(\sqrt 2)$.
 

@@ -101,18 +101,18 @@ For $(x,y)\ne(0,0)$, set
 $$
 \rho=\sqrt{x^2+y^2}.
 $$
-Then $|x|\le\rho$ and $|y|\le\rho$, so
+Then $\abs{x}\le\rho$ and $\abs{y}\le\rho$, so
 $$
-|x|^3\le \rho x^2,
+\abs{x}^3\le \rho x^2,
 \qquad
-|y|^3\le \rho y^2.
+\abs{y}^3\le \rho y^2.
 $$
 Therefore
 $$
-\left|f_3(x,y)\right|
-=\frac{|x^3-y^3|}{x^2+y^2}
+\abs{f_3(x,y)}
+=\frac{\abs{x^3-y^3}}{x^2+y^2}
 \le
-\frac{|x|^3+|y|^3}{x^2+y^2}
+\frac{\abs{x}^3+\abs{y}^3}{x^2+y^2}
 \le
 \frac{\rho(x^2+y^2)}{x^2+y^2}
 =\rho.

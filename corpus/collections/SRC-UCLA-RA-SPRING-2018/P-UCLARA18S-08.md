@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-08
 kind: problem
-title: Sharp bound on $|\partial_xu(0)|$ for harmonic $u:\DD\to[0,1]$
+title: Sharp bound on $\abs{\partial_xu(0)}$ for harmonic $u:\DD\to[0,1]$
 classification:
   areas:
   - real-analysis
@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Problem 8. Determine the supremum of
 $$
-\left|\frac{\partial u}{\partial x}(0,0)\right|
+\abs{\frac{\partial u}{\partial x}(0,0)}
 $$
 among all harmonic functions $u:\DD\to[0,1]$, where
 $$
-\DD=\{z\in\CC:|z|<1\}.
+\DD=\{z\in\CC:\abs{z}<1\}.
 $$
 Prove that your answer is correct.
 :::
@@ -145,9 +145,9 @@ $$
 Then Schwarz--Pick gives
 $$
 \boxed{
-|F'(0)|
+\abs{F'(0)}
 \le
-\frac{1-|\alpha|^2}{|T'(t)|}}.
+\frac{1-\abs{\alpha}^2}{\abs{T'(t)}}}.
 $$
 
 
@@ -173,21 +173,21 @@ G(0)=0.
 $$
 Schwarz's lemma gives
 $$
-|G'(0)|\le1.
+\abs{G'(0)}\le1.
 $$
 By the chain rule,
 $$
-|G'(0)|
+\abs{G'(0)}
 =
-|\psi_\alpha'(\alpha)|
-|T'(t)|
-|F'(0)|.
+\abs{\psi_\alpha'(\alpha)}
+\abs{T'(t)}
+\abs{F'(0)}.
 $$
 Since
 $$
-|\psi_\alpha'(\alpha)|
+\abs{\psi_\alpha'(\alpha)}
 =
-\frac1{1-|\alpha|^2},
+\frac1{1-\abs{\alpha}^2},
 $$
 the displayed estimate follows.
 
@@ -200,7 +200,7 @@ the displayed estimate follows.
 For $t\in(0,1)$,
 $$
 \boxed{
-\frac{1-|T(t)|^2}{|T'(t)|}
+\frac{1-\abs{T(t)}^2}{\abs{T'(t)}}
 =
 \frac{2\sin(\pi t)}{\pi}
 \le
@@ -214,7 +214,7 @@ Set
 $$
 \zeta=e^{i\pi t},
 $$
-so $|\zeta|=1$ and
+so $\abs{\zeta}=1$ and
 $$
 \operatorname{Im}\zeta=\sin(\pi t)>0.
 $$
@@ -226,11 +226,11 @@ T(t)
 $$
 one gets
 $$
-1-|T(t)|^2
+1-\abs{T(t)}^2
 =
-\frac{|\zeta+i|^2-|\zeta-i|^2}{|\zeta+i|^2}
+\frac{\abs{\zeta+i}^2-\abs{\zeta-i}^2}{\abs{\zeta+i}^2}
 =
-\frac{4\sin(\pi t)}{|\zeta+i|^2}.
+\frac{4\sin(\pi t)}{\abs{\zeta+i}^2}.
 $$
 Also
 $$
@@ -241,13 +241,13 @@ $$
 $$
 so
 $$
-|T'(t)|
+\abs{T'(t)}
 =
-\frac{2\pi}{|\zeta+i|^2}.
+\frac{2\pi}{\abs{\zeta+i}^2}.
 $$
 Dividing gives
 $$
-\frac{1-|T(t)|^2}{|T'(t)|}
+\frac{1-\abs{T(t)}^2}{\abs{T'(t)}}
 =
 \frac{2\sin(\pi t)}{\pi}
 \le
@@ -263,7 +263,7 @@ $$
 Every admissible harmonic function satisfies
 $$
 \boxed{
-|u_x(0,0)|
+\abs{u_x(0,0)}
 \le
 \frac2\pi}.
 $$
@@ -279,9 +279,9 @@ u_x(0,0)-iu_y(0,0),
 $$
 so
 $$
-|u_x(0,0)|
+\abs{u_x(0,0)}
 \le
-|F'(0)|.
+\abs{F'(0)}.
 $$
 Combine steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}.
 

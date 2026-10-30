@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-P6D6X
 kind: problem
-title: $f_n\to f$ almost everywhere in $L^1$ with $\int|f_n|\to\int|f|$ implies $\int
-  f_n\to\int f$
+title: $f_n\to f$ almost everywhere in $L^1$ with $\int\abs{f_n}\to\int\abs{f}$ implies $\int f_n\to\int f$
 classification:
   areas:
   - real-analysis
@@ -32,7 +31,7 @@ Suppose that
 
 - $f_n,f\in L^1$,
 - $f_n\to f$ almost everywhere, and
-- $\int |f_n|\to\int |f|$.
+- $\int \abs{f_n}\to\int \abs{f}$.
 
 Show that $\int f_n\to\int f$.
 :::
@@ -40,7 +39,7 @@ Show that $\int f_n\to\int f$.
 ::: {.solution}
 Define
 $$
-g_n:=|f_n|+|f|-|f_n-f|.
+g_n:=\abs{f_n}+\abs{f}-\abs{f_n-f}.
 $$
 By the triangle inequality,
 $$
@@ -48,41 +47,41 @@ g_n\ge0.
 $$
 Since $f_n\to f$ almost everywhere,
 $$
-g_n\longrightarrow 2|f|
+g_n\longrightarrow 2\abs{f}
 \qquad\text{almost everywhere}.
 $$
 Fatou's lemma therefore gives
 $$
-2\int |f|
+2\int \abs{f}
 \le \liminf_{n\to\infty}\int g_n.
 $$
 But
 $$
 \int g_n
-=\int|f_n|+\int|f|-\int|f_n-f|.
+=\int\abs{f_n}+\int\abs{f}-\int\abs{f_n-f}.
 $$
 Using the hypothesis
 $$
-\int|f_n|\to\int|f|,
+\int\abs{f_n}\to\int\abs{f},
 $$
 we obtain
 $$
-2\int|f|
+2\int\abs{f}
 \le
-2\int|f|-\limsup_{n\to\infty}\int|f_n-f|.
+2\int\abs{f}-\limsup_{n\to\infty}\int\abs{f_n-f}.
 $$
 Hence
 $$
-\limsup_{n\to\infty}\int|f_n-f|\le0.
+\limsup_{n\to\infty}\int\abs{f_n-f}\le0.
 $$
 Since these integrals are nonnegative,
 $$
-\int|f_n-f|\longrightarrow0.
+\int\abs{f_n-f}\longrightarrow0.
 $$
 Thus $f_n\to f$ in $L^1$. Finally,
 $$
-\left|\int f_n-\int f\right|
-\le \int|f_n-f|\longrightarrow0,
+\abs{\int f_n-\int f}
+\le \int\abs{f_n-f}\longrightarrow0,
 $$
 so
 $$

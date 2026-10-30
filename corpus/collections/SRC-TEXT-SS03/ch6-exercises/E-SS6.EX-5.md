@@ -20,7 +20,7 @@ audit:
 5. Use the fact that $\Gamma ( s ) \Gamma ( 1 - s ) = \pi /$ sin πs to prove that
 
 $$
-| \Gamma (1 / 2 + i t) | = \sqrt {\frac {2 \pi}{e ^ {\pi t} + e ^ {- \pi t}}}, \quad \mathrm{whenever} t \in \RR.
+\abs{ \Gamma (1 / 2 + i t) } = \sqrt {\frac {2 \pi}{e ^ {\pi t} + e ^ {- \pi t}}}, \quad \mathrm{whenever} t \in \RR.
 $$
 :::
 
@@ -31,11 +31,11 @@ s=\frac12+it.
 $$
 Then $1-s=\frac12-it=\overline s$. Since $\Gamma(\overline s)=\overline{\Gamma(s)}$,
 $$
-\Gamma(s)\Gamma(1-s)=|\Gamma(s)|^2.
+\Gamma(s)\Gamma(1-s)=\abs{\Gamma(s)}^2.
 $$
 The reflection formula gives
 $$
-|\Gamma(1/2+it)|^2
+\abs{\Gamma(1/2+it)}^2
 =\frac{\pi}{\sin\pi(1/2+it)}.
 $$
 Now
@@ -45,12 +45,12 @@ $$
 $$
 Therefore
 $$
-|\Gamma(1/2+it)|^2
+\abs{\Gamma(1/2+it)}^2
 =\frac{2\pi}{e^{\pi t}+e^{-\pi t}},
 $$
 and taking the positive square root yields
 $$
-\boxed{|\Gamma(1/2+it)|
+\boxed{\abs{\Gamma(1/2+it)}
 =\sqrt{\frac{2\pi}{e^{\pi t}+e^{-\pi t}}}}.
 $$
 :::

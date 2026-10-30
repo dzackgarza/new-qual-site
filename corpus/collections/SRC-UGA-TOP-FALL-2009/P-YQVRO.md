@@ -110,7 +110,7 @@ Under the generator supplied by the oriented core circle, the induced map on $H_
 Therefore
 $$
 L(f)
-=\sum_{j\ge0}(-1)^j\operatorname{tr}(f_*|H_j(M;\QQ))
+=\sum_{j\ge0}(-1)^j\operatorname{tr}(f_*\restrict H_j(M;\QQ))
 =1-k.
 $$
 :::

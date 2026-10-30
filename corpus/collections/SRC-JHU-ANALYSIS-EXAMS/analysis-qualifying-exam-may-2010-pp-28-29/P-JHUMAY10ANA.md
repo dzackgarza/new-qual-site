@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANA
 kind: problem
-title: Removable singularity under the bound $|f(z)|\le|z|^{-1/2}$
+title: Removable singularity under the bound $\abs{f(z)}\le\abs{z}^{-1/2}$
 classification:
   areas:
   - complex-analysis
@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a holomorphic function on the punctured disk $U = \{z \in \CC : 0 < |z| < 1\}$.
-Suppose that $|f(z)| \le |z|^{-1/2}$ for all $z \in U$.
+Let $f$ be a holomorphic function on the punctured disk $U = \{z \in \CC : 0 < \abs{z} < 1\}$.
+Suppose that $\abs{f(z)} \le \abs{z}^{-1/2}$ for all $z \in U$.
 Prove that $f$ has a removable singularity at $0$.
 :::
 
@@ -36,9 +36,9 @@ The function $g(z)=zf(z)$ extends holomorphically across $0$ with value $0$.
 
 ::: pf-proof
 
-For $0<|z|<1$,
+For $0<\abs{z}<1$,
 $$
-|g(z)|=|z|\,|f(z)|\le |z|^{1/2}.
+\abs{g(z)}=\abs{z}\,\abs{f(z)}\le \abs{z}^{1/2}.
 $$
 Thus $g$ is bounded near $0$, so the [[T-ZZJDP|Riemann removable singularity theorem]] gives a holomorphic extension $G$ to the unit disk. The displayed estimate also gives
 $$

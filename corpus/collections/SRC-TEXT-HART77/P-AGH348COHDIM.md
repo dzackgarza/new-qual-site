@@ -151,7 +151,7 @@ A nonempty quasi-projective scheme of dimension $r$ has a cover by $r+1$ affine 
 
 ::: pf-proof
 Realize $X$ as an open subscheme of a closed projective subscheme $\overline X\subseteq\PP_k^N$ and let $Z=\overline X\setminus X$ with its reduced closed structure.
-Starting from $T_0=|X|$, apply step [](#s4){.pf-ref} successively to choose positive-degree homogeneous polynomials $g_j$ vanishing on $Z$ and not vanishing identically on any component of the nonempty closed subset $T_j\subseteq X$.
+Starting from $T_0=\underlyingspace{X}$, apply step [](#s4){.pf-ref} successively to choose positive-degree homogeneous polynomials $g_j$ vanishing on $Z$ and not vanishing identically on any component of the nonempty closed subset $T_j\subseteq X$.
 Set
 $$
 T_{j+1}=T_j\cap V_+(g_j).

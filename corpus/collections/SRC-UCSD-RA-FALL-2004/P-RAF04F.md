@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Let $f_n : \RR \to \RR$ be a sequence of absolutely continuous functions such that $f_n' \in L^1(\RR, m)$ and $c := \lim_{n \to \infty} f_n(0)$ exists in $\RR$.
-Further assume there exists $g \in L^1(\RR, m)$ such that $\lim_{n \to \infty} \int_\RR |g(x) - f_n'(x)| \, dx = 0$.
+Further assume there exists $g \in L^1(\RR, m)$ such that $\lim_{n \to \infty} \int_\RR \abs{g(x) - f_n'(x)} \, dx = 0$.
 
 (a) Show that $f(x) := \lim_{n \to \infty} f_n(x)$ exists for all $x \in \RR$.
 
@@ -54,19 +54,19 @@ F(x)=c+\int_0^x g(t)\,dt.
 $$
 Then
 $$
-|f_n(x)-F(x)|
-\le |f_n(0)-c|+
-\left|\int_0^x(f_n'(t)-g(t))\,dt\right|.
+\abs{f_n(x)-F(x)}
+\le \abs{f_n(0)-c}+
+\abs{\int_0^x(f_n'(t)-g(t))\,dt}.
 $$
 For every $x$,
 $$
-\left|\int_0^x(f_n'-g)\right|
-\le \int_{\RR}|f_n'(t)-g(t)|\,dt.
+\abs{\int_0^x(f_n'-g)}
+\le \int_{\RR}\abs{f_n'(t)-g(t)}\,dt.
 $$
 Hence
 $$
-\sup_{x\in\RR}|f_n(x)-F(x)|
-\le |f_n(0)-c|+\|f_n'-g\|_1\longrightarrow0.
+\sup_{x\in\RR}\abs{f_n(x)-F(x)}
+\le \abs{f_n(0)-c}+\norm{f_n'-g}_1\longrightarrow0.
 $$
 Therefore $f_n(x)\to F(x)$ for every $x$, so the pointwise limit exists and
 $$
@@ -85,7 +85,7 @@ Prove absolute continuity of the limit.
 
 Let $\varepsilon>0$. Since $g\in L^1(\RR)$, the Lebesgue integral is absolutely continuous: there exists $\delta>0$ such that
 $$
-m(E)<\delta\quad\Longrightarrow\quad\int_E|g|<\varepsilon.
+m(E)<\delta\quad\Longrightarrow\quad\int_E\abs{g}<\varepsilon.
 $$
 For finitely many pairwise disjoint intervals $(a_j,b_j)$ with
 $$
@@ -94,9 +94,9 @@ $$
 we have
 $$
 \begin{aligned}
-\sum_j|f(b_j)-f(a_j)|
-&=\sum_j\left|\int_{a_j}^{b_j}g(t)\,dt\right|\\
-&\le \int_{\bigcup_j(a_j,b_j)}|g(t)|\,dt
+\sum_j\abs{f(b_j)-f(a_j)}
+&=\sum_j\abs{\int_{a_j}^{b_j}g(t)\,dt}\\
+&\le \int_{\bigcup_j(a_j,b_j)}\abs{g(t)}\,dt
 <\varepsilon.
 \end{aligned}
 $$

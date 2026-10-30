@@ -44,7 +44,7 @@ do not tend to $0$.
 
 If $\alpha=0$, then $n^{-\alpha}=1$. If $\alpha<0$, then
 $$
-n^{-\alpha}=n^{|\alpha|}\to\infty.
+n^{-\alpha}=n^{\abs{\alpha}}\to\infty.
 $$
 
 :::

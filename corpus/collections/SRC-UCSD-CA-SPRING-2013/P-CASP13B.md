@@ -24,7 +24,7 @@ It is possible for $Z$ to have an accumulation point in $U$.
 (c) Let $\{u_n\}$ be a sequence of harmonic functions in $\DD$.
 If $u_n$ converges to $u$ uniformly on compact subsets, then $u$ is harmonic on $\DD$.
 
-(d) There is a sequence of holomorphic polynomials $p_n$ such that $$\lim_{n \to \infty} \sup_{2 \leq |z| \leq 3} \left|\frac{1}{z^2(z-5)^3} - p_n(z)\right| = 0.$$
+(d) There is a sequence of holomorphic polynomials $p_n$ such that $$\lim_{n \to \infty} \sup_{2 \leq \abs{z} \leq 3} \abs{\frac{1}{z^2(z-5)^3} - p_n(z)} = 0.$$
 :::
 
 ::: {.solution}
@@ -57,16 +57,16 @@ Hence $u$ has the mean-value property and is harmonic.
 
 **(d) False.** Let
 $$
-K=\{2\le |z|\le3\}.
+K=\{2\le \abs{z}\le3\}.
 $$
 If polynomials $p_n$ converged uniformly on $K$ to
 $$
 h(z)=\frac1{z^2(z-5)^3},
 $$
-then for the circle $|z|=5/2$ we would have
+then for the circle $\abs{z}=5/2$ we would have
 $$
-\int_{|z|=5/2}p_n(z)\,dz\to
-\int_{|z|=5/2}h(z)\,dz.
+\int_{\abs{z}=5/2}p_n(z)\,dz\to
+\int_{\abs{z}=5/2}h(z)\,dz.
 $$
 The left side is always $0$. But the right side is
 $2\pi i\operatorname{Res}_{z=0}h$, and that residue is nonzero. Contradiction.

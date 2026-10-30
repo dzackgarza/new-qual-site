@@ -132,7 +132,7 @@ $$\int_0^\infty g(x) \, dx = \int_0^1 1 \, dx + \int_1^\infty \frac{1}{x^2} \, d
 :::
 
 ::: pf-step
-For all $n \ge 3$ and all $x \ge 0$, $|f_n(x)| \le g(x)$.
+For all $n \ge 3$ and all $x \ge 0$, $\abs{f_n(x)} \le g(x)$.
 
 :::
 

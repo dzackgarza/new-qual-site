@@ -32,7 +32,7 @@ Suppose $\alpha \in \overline{\FF}_q$ is a zero of $x^q - x + 1$.
 
 (a) Prove that $\alpha^{q^i} = \alpha - i$ for any positive integer $i$.
 
-(b) Prove that $|\mathrm{Gal}(\FF_q[\alpha]/\FF_q)| = p$.
+(b) Prove that $\cardinality{\mathrm{Gal}(\FF_q[\alpha]/\FF_q)} = p$.
 
 (c) Prove that any irreducible factor of $x^q - x + 1 \in \FF_q[x]$ has degree $p$.
 :::
@@ -136,7 +136,7 @@ Therefore it is $p$.
 
 The extension $\FF_q[\alpha]/\FF_q$ is Galois of degree $p$, so
 $$
-\left|\operatorname{Gal}(\FF_q[\alpha]/\FF_q)\right|=p.
+\cardinality{\operatorname{Gal}(\FF_q[\alpha]/\FF_q)}=p.
 $$
 
 ::: pf-proof

@@ -68,11 +68,11 @@ $u$ has compact support.
 
 ::: pf-step
 
-For $|z|$ large, expand $\frac{1}{w-z} = -\frac{1}{z}\sum_{n=0}^{\infty} \left(\frac{w}{z}\right)^n$.
+For $\abs{z}$ large, expand $\frac{1}{w-z} = -\frac{1}{z}\sum_{n=0}^{\infty} \left(\frac{w}{z}\right)^n$.
 
 ::: pf-proof
 
-geometric series, valid for $|z| > |w|$.
+geometric series, valid for $\abs{z} > \abs{w}$.
 
 :::
 
@@ -80,7 +80,7 @@ geometric series, valid for $|z| > |w|$.
 
 ::: {.pf-step #s4-2}
 
-Then $u(z) = -\frac{1}{2\pi i}\sum_{n=0}^{\infty} z^{-(n+1)} \iint \psi(w) w^n\, dw \wedge d\bar w = 0$ for $|z|$ large.
+Then $u(z) = -\frac{1}{2\pi i}\sum_{n=0}^{\infty} z^{-(n+1)} \iint \psi(w) w^n\, dw \wedge d\bar w = 0$ for $\abs{z}$ large.
 
 ::: pf-proof
 

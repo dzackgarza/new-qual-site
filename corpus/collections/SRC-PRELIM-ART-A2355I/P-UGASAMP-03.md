@@ -32,7 +32,7 @@ A sequence $(a_n)_{n=1}^\infty$ of real numbers converges to $a\in\RR$ if for ev
 $$
 n\ge N
 \quad\Longrightarrow\quad
-|a_n-a|<\varepsilon.
+\abs{a_n-a}<\varepsilon.
 $$
 
 
@@ -48,7 +48,7 @@ This is the $\varepsilon$--$N$ definition of convergence of a real sequence.
 
 For every $n\ge1$,
 $$
-\left|\frac{n^2+2}{n^2+3n}-1\right|
+\abs{\frac{n^2+2}{n^2+3n}-1}
 =
 \frac{3n-2}{n^2+3n}
 <
@@ -66,7 +66,7 @@ $$
 $$
 For $n\ge1$, one has $3n-2>0$, so
 $$
-\left|\frac{2-3n}{n^2+3n}\right|
+\abs{\frac{2-3n}{n^2+3n}}
 =
 \frac{3n-2}{n^2+3n}.
 $$
@@ -91,7 +91,7 @@ N>\frac3\varepsilon.
 $$
 Then $n\ge N$ implies
 $$
-\left|a_n-1\right|<\varepsilon.
+\abs{a_n-1}<\varepsilon.
 $$
 
 
@@ -103,7 +103,7 @@ $$
 $$
 Combining this with step [](#s1-2){.pf-ref} gives
 $$
-|a_n-1|<\frac3n\le\frac3N<\varepsilon.
+\abs{a_n-1}<\frac3n\le\frac3N<\varepsilon.
 $$
 
 :::

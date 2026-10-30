@@ -20,13 +20,13 @@ audit:
 8. If f is a holomorphic function on the strip $- 1 < y < 1 , x \in \RR$ with
 
 $$
-| f (z) | \leq A (1 + | z |) ^ {\eta}, \quad \eta \text {   a   fixed   real   number }
+\abs{ f (z) } \leq A (1 + \abs{ z }) ^ {\eta}, \quad \eta \text {   a   fixed   real   number }
 $$
 
 for all z in that strip, show that for each integer $n \geq 0$ there exists $A _ { n } \geq 0$ so that
 
 $$
-| f ^ {(n)} (x) | \leq A _ {n} (1 + | x |) ^ {\eta}, \quad \text {   for   all   } x \in \RR.
+\abs{ f ^ {(n)} (x) } \leq A _ {n} (1 + \abs{ x }) ^ {\eta}, \quad \text {   for   all   } x \in \RR.
 $$
 
 [Hint: Use the Cauchy inequalities.]
@@ -35,22 +35,22 @@ $$
 ::: {.solution}
 Fix $x\in\RR$ and use the circle
 $$
-|z-x|=\frac12.
+\abs{z-x}=\frac12.
 $$
 It lies entirely in the strip $-1<\operatorname{Im}z<1$. Cauchy's inequalities give
 $$
-|f^{(n)}(x)|
-\le n!\,2^n\sup_{|z-x|=1/2}|f(z)|.
+\abs{f^{(n)}(x)}
+\le n!\,2^n\sup_{\abs{z-x}=1/2}\abs{f(z)}.
 \tag{1}
 $$
 
 On this circle,
 $$
-|x|-\frac12\le |z|\le |x|+\frac12,
+\abs{x}-\frac12\le \abs{z}\le \abs{x}+\frac12,
 $$
 so
 $$
-\frac12(1+|x|)\le 1+|z|\le \frac32(1+|x|).
+\frac12(1+\abs{x})\le 1+\abs{z}\le \frac32(1+\abs{x}).
 $$
 Hence, for the fixed real exponent $\eta$, there is a constant
 $$
@@ -58,14 +58,14 @@ C_\eta=\max\left\{\left(\frac32\right)^\eta,2^{-\eta}\right\}
 $$
 such that
 $$
-(1+|z|)^\eta\le C_\eta(1+|x|)^\eta
+(1+\abs{z})^\eta\le C_\eta(1+\abs{x})^\eta
 $$
-for all $|z-x|=1/2$; this covers both signs of $\eta$.
+for all $\abs{z-x}=1/2$; this covers both signs of $\eta$.
 
 Using the assumed growth bound in (1),
 $$
-|f^{(n)}(x)|
-\le n!2^n A C_\eta(1+|x|)^\eta.
+\abs{f^{(n)}(x)}
+\le n!2^n A C_\eta(1+\abs{x})^\eta.
 $$
 Thus the required estimate holds with
 $$

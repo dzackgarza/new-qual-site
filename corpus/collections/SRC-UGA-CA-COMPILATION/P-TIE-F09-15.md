@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } | a _ { n } ( z ) |$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ^ { \prime } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of $D .$
+Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } \abs{ a _ { n } ( z ) }$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \abs{ a _ { n } ^ { \prime } ( z ) }$ converges uniformly on bounded and closed sub-regions of $D .$
 :::
 
 ::: {.solution}
@@ -55,7 +55,7 @@ and $K_\rho$ is compact.
 For every $\varepsilon>0$, there is $N$ such that for all $M\ge N$ and all
 $w\in K_\rho$,
 $$
-\sum_{n=N}^{M}|a_n(w)|<\rho\varepsilon.
+\sum_{n=N}^{M}\abs{a_n(w)}<\rho\varepsilon.
 $$
 
 
@@ -64,7 +64,7 @@ $$
 The compact set $K_\rho$ is covered by finitely many closed disks whose slightly larger closed
 disks still lie in $D$. By hypothesis the series
 $$
-\sum_{n=0}^{\infty}|a_n(w)|
+\sum_{n=0}^{\infty}\abs{a_n(w)}
 $$
 converges uniformly on each of those bounded closed subregions. Taking the maximum of the
 finitely many resulting Cauchy thresholds gives one $N$ for which every finite tail beginning
@@ -77,13 +77,13 @@ at $N$ has the displayed bound throughout $K_\rho$.
 ::: {.pf-step #s1-3}
 
 Fix $z\in K$ and integers $M\ge N$. There exist complex numbers
-$\lambda_N,\ldots,\lambda_M$ with $|\lambda_n|=1$ such that
+$\lambda_N,\ldots,\lambda_M$ with $\abs{\lambda_n}=1$ such that
 $$
-\sum_{n=N}^{M}|a_n'(z)|
+\sum_{n=N}^{M}\abs{a_n'(z)}
 =
-\left|
+\abs{
 \sum_{n=N}^{M}\lambda_na_n'(z)
-\right|.
+}.
 $$
 
 
@@ -91,9 +91,9 @@ $$
 
 For each $n$, if $a_n'(z)\ne0$, choose
 $$
-\lambda_n=\frac{\overline{a_n'(z)}}{|a_n'(z)|},
+\lambda_n=\frac{\overline{a_n'(z)}}{\abs{a_n'(z)}},
 $$
-so that $\lambda_na_n'(z)=|a_n'(z)|$. If $a_n'(z)=0$, choose any $\lambda_n$ of modulus
+so that $\lambda_na_n'(z)=\abs{a_n'(z)}$. If $a_n'(z)=0$, choose any $\lambda_n$ of modulus
 $1$. Summing gives the equality.
 
 :::
@@ -104,7 +104,7 @@ $1$. Summing gives the equality.
 
 For every $z\in K$ and every $M\ge N$,
 $$
-\sum_{n=N}^{M}|a_n'(z)|<\varepsilon.
+\sum_{n=N}^{M}\abs{a_n'(z)}<\varepsilon.
 $$
 
 
@@ -118,19 +118,19 @@ This is analytic on $D$, and
 $$
 A'(z)=\sum_{n=N}^{M}\lambda_na_n'(z).
 $$
-The circle $|\zeta-z|=\rho$ lies in $K_\rho$. Cauchy's derivative formula and step [](#s1-3){.pf-ref} give
+The circle $\abs{\zeta-z}=\rho$ lies in $K_\rho$. Cauchy's derivative formula and step [](#s1-3){.pf-ref} give
 $$
 \begin{aligned}
-\sum_{n=N}^{M}|a_n'(z)|
+\sum_{n=N}^{M}\abs{a_n'(z)}
 &=
-|A'(z)|\\
+\abs{A'(z)}\\
 &\le
 \frac1\rho
-\max_{|\zeta-z|=\rho}|A(\zeta)|\\
+\max_{\abs{\zeta-z}=\rho}\abs{A(\zeta)}\\
 &\le
 \frac1\rho
-\max_{|\zeta-z|=\rho}
-\sum_{n=N}^{M}|a_n(\zeta)|.
+\max_{\abs{\zeta-z}=\rho}
+\sum_{n=N}^{M}\abs{a_n(\zeta)}.
 \end{aligned}
 $$
 Step [](#s1-2){.pf-ref} makes the last quantity strictly less than $\varepsilon$.
@@ -144,7 +144,7 @@ Step [](#s1-2){.pf-ref} makes the last quantity strictly less than $\varepsilon$
 The series
 $$
 \boxed{
-\sum_{n=0}^{\infty}|a_n'(z)|
+\sum_{n=0}^{\infty}\abs{a_n'(z)}
 }
 $$
 converges uniformly on $K$.
@@ -154,7 +154,7 @@ converges uniformly on $K$.
 
 Step [](#s1-4){.pf-ref} shows that for every $\varepsilon>0$ there exists $N$ such that every finite tail
 from $N$ onward is bounded by $\varepsilon$, uniformly for $z\in K$. This is the uniform
-Cauchy criterion for the series of nonnegative functions $|a_n'|$.
+Cauchy criterion for the series of nonnegative functions $\abs{a_n'}$.
 
 :::
 

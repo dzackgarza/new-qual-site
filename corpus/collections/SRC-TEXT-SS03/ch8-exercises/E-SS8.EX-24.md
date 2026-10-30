@@ -93,7 +93,7 @@ $$
 K(k)=\frac2{1+k'}K\left(\frac{1-k'}{1+k'}\right).
 $$
 
-For (c), Euler's beta-integral representation of the hypergeometric function gives, for $|u|<1$,
+For (c), Euler's beta-integral representation of the hypergeometric function gives, for $\abs{u}<1$,
 $$
 {}_2F_1\left(\frac12,\frac12;1;u\right)
 =\frac1\pi\int_0^1 t^{-1/2}(1-t)^{-1/2}(1-ut)^{-1/2}\,dt.

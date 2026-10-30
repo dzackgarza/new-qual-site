@@ -44,14 +44,14 @@ Prove boundedness.
 
 For every $y\in\RR$,
 $$
-|g(y)|
-\le \int_{\RR}|\sin(y^2x)|\,|f(x)|\,dx
-\le \int_{\RR}|f(x)|\,dx
-=\|f\|_1.
+\abs{g(y)}
+\le \int_{\RR}\abs{\sin(y^2x)}\,\abs{f(x)}\,dx
+\le \int_{\RR}\abs{f(x)}\,dx
+=\norm{f}_1.
 $$
 Hence
 $$
-\boxed{\|g\|_\infty\le\|f\|_1.}
+\boxed{\norm{g}_\infty\le\norm{f}_1.}
 $$
 
 :::
@@ -70,7 +70,7 @@ $$
 $$
 Moreover,
 $$
-|\sin(y_k^2x)f(x)|\le|f(x)|,
+\abs{\sin(y_k^2x)f(x)}\le\abs{f(x)},
 $$
 and $f\in L^1(\RR)$. By dominated convergence,
 $$

@@ -41,7 +41,7 @@ Take $w = x+iy$ with $e^{iw} = \zeta_1$ and $x\in(-\pi,\pi]$. Then $y = -\log\ab
 :::
 
 ::: pf-step
-$\boxed{z\mapsto\arcsin z}$, the inverse of $\sin|_S$, maps $\HH$ conformally onto $S$.
+$\boxed{z\mapsto\arcsin z}$, the inverse of $\sin\restrict_S$, maps $\HH$ conformally onto $S$.
 
 ::: pf-proof
 The inverse of the bijective holomorphic map of step [](#sine){.pf-ref} is holomorphic.

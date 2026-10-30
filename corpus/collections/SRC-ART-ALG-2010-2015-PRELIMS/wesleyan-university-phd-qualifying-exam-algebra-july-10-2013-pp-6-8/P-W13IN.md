@@ -87,7 +87,7 @@ $G/K\cong\rho(G)\leq\operatorname{Sym}(X)$ [@DF04].
 There are $n!$ permutations of a set of $n$ elements.
 Lagrange's theorem therefore implies
 $$
-[G:K]=|\rho(G)|\mid|\operatorname{Sym}(X)|=n!.
+[G:K]=\cardinality{\rho(G)}\mid\cardinality{\operatorname{Sym}(X)}=n!.
 $$
 If $n=1$, the action is trivial and the construction gives
 $K=H=G$, with index $1=1!$.

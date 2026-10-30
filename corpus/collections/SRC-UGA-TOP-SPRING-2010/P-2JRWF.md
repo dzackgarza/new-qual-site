@@ -77,7 +77,7 @@ $$
 Indeed, the $X$-summand is sent into $Y$ and the $Y$-summand is sent into $X$.
 Both diagonal blocks are zero, so
 $$
-\operatorname{tr}(F_*|H_n)=0.
+\operatorname{tr}(F_*\restrict H_n)=0.
 $$
 
 :::

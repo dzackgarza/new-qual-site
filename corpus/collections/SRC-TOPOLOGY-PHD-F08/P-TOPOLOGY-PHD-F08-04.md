@@ -80,7 +80,7 @@ $$
 ::: {.pf-step #lipschitz}
 The distance-to-$A$ function is $1$-Lipschitz:
 $$
-|d(x,A)-d(y,A)|\le d(x,y)
+\abs{d(x,A)-d(y,A)}\le d(x,y)
 $$
 for all $x,y\in X$.
 
@@ -95,7 +95,7 @@ d(y,A)-d(x,A)\le d(y,x)=d(x,y).
 $$
 Together these inequalities are equivalent to
 $$
-|d(x,A)-d(y,A)|\le d(x,y).
+\abs{d(x,A)-d(y,A)}\le d(x,y).
 $$
 :::
 
@@ -118,8 +118,8 @@ $$
 $$
 If $d(x,y)<\delta$, then by step [](#lipschitz){.pf-ref},
 $$
-|f(x)-f(y)|
-=|d(x,A)-d(y,A)|
+\abs{f(x)-f(y)}
+=\abs{d(x,A)-d(y,A)}
 \le d(x,y)
 <\delta
 =\varepsilon.

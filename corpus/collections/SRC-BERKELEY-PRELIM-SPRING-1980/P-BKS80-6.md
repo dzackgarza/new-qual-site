@@ -84,9 +84,9 @@ $$
 
 If $K$ is trivial, then $\varphi$ is injective, so
 $$
-n=|G|=|\varphi(G)|
+n=\cardinality{G}=\cardinality{\varphi(G)}
 $$
-divides $|S_k|=k!$. Therefore
+divides $\cardinality{S_k}=k!$. Therefore
 $$
 [S_k:\varphi(G)]
 =
@@ -110,7 +110,7 @@ proper nontrivial normal subgroup.
 
 ::: pf-proof
 
-Since $k!=|S_k|=n>2$, one has $k\ge3$. The alternating group
+Since $k!=\cardinality{S_k}=n>2$, one has $k\ge3$. The alternating group
 $$
 A_k
 $$

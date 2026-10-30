@@ -97,11 +97,11 @@ $$
 $$
 By step [](#s1-1){.pf-ref}, $r$ is bounded on $[0,1]$, say
 $$
-|r(x)|\le C.
+\abs{r(x)}\le C.
 $$
 For $s\in K$,
 $$
-|x^{s-1}r(x)|
+\abs{x^{s-1}r(x)}
 \le
 C x^{\sigma-1},
 $$
@@ -109,12 +109,12 @@ and the right-hand side is integrable on $(0,1)$.
 
 Likewise, for every integer $m\ge1$,
 $$
-\left|
+\abs{
 \frac{\partial^m}{\partial s^m}
 x^{s-1}r(x)
-\right|
+}
 \le
-C x^{\sigma-1}|\log x|^m,
+C x^{\sigma-1}\abs{\log x}^m,
 $$
 which is also integrable on $(0,1)$. Therefore differentiation under the integral sign is justified on compact subsets, and $H$ is holomorphic.
 
@@ -150,9 +150,9 @@ e^x-1
 $$
 so
 $$
-\left|
+\abs{
 \frac{x^{s-1}}{e^x-1}
-\right|
+}
 \le
 C_A x^{A-1}e^{-x}.
 $$

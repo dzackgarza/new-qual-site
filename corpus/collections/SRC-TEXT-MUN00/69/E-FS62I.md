@@ -27,7 +27,7 @@ with $\gcd(m,n)=1$. Then the element
 $$
 (\bar 1,\bar 1)\in C_m\oplus C_n
 $$
-has order $\operatorname{lcm}(m,n)=mn$. Since $|C_m\oplus C_n|=mn$, this element generates the whole group. Hence
+has order $\operatorname{lcm}(m,n)=mn$. Since $\cardinality{C_m\oplus C_n}=mn$, this element generates the whole group. Hence
 $$
 C_m\oplus C_n\cong C_{mn}.
 $$

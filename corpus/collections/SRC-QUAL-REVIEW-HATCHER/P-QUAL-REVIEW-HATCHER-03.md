@@ -48,7 +48,7 @@ $$
 For every $i$,
 $$
 \boxed{
-\alpha_i|_{A_i}=0
+\alpha_i\restrict_{A_i}=0
 \in H^{d_i}(A_i;R)}.
 $$
 
@@ -223,7 +223,7 @@ H^*(\RP^n;\FF_2)
 $$
 with
 $$
-|x|=1.
+\gradeddegree{x}=1.
 $$
 
 

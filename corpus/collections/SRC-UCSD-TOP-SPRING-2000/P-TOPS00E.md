@@ -30,7 +30,7 @@ $$
 
 ::: pf-proof
 
-The integral cohomology ring is $\ZZ[x]/(x^3)$ with $|x|=2$.
+The integral cohomology ring is $\ZZ[x]/(x^3)$ with $\gradeddegree{x}=2$.
 
 :::
 

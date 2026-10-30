@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-AK3OT
 kind: problem
-title: $L^2([0,1])$ convergence of $\sum f_n$ when $\|f_n\|_2\le n^{-51/100}$ and
-  $\operatorname{supp}\hat f_n\subseteq[2^n,2^{n+1}]$
+title: $L^2([0,1])$ convergence of $\sum f_n$ when $\norm{f_n}_2\le n^{-51/100}$ and $\operatorname{supp}\hat f_n\subseteq[2^n,2^{n+1}]$
 classification:
   areas:
   - real-analysis
@@ -35,7 +34,7 @@ Let $f_n \in L^2([0, 1])$ for $n\in \NN$, and assume that
 
 - the Fourier coefficients $\hat f_n(k)$ are supported in the integer frequencies in $[2^n,2^{n+1}]$, where
 $$
-\hat f_n(k)\definedas\int_0^1 f_n(x)e^{-2\pi ikx}\,dx=0
+\hat f_n(k)\coloneqq\int_0^1 f_n(x)e^{-2\pi ikx}\,dx=0
 \qquad\text{for }k\in\ZZ\setminus[2^n,2^{n+1}].
 $$
 
@@ -62,7 +61,7 @@ $$
 \langle f,g\rangle_{L^2([0,1])}
 =\sum_{k\in\ZZ}\hat f(k)\overline{\hat g(k)},
 \qquad
-\|f\|_2^2=\sum_{k\in\ZZ}|\hat f(k)|^2.
+\norm{f}_2^2=\sum_{k\in\ZZ}\abs{\hat f(k)}^2.
 $$
 
 ::: pf-proof
@@ -72,7 +71,7 @@ Parseval's identity for the orthonormal Fourier basis of $L^2([0,1])$.
 :::
 
 ::: {.pf-step #disjoint-supports}
-The coefficient supports of $f_n$ and $f_m$ are disjoint for $|n-m|\ge2$; for adjacent indices they can meet only at the single integer frequency $2^{n+1}$.
+The coefficient supports of $f_n$ and $f_m$ are disjoint for $\abs{n-m}\ge2$; for adjacent indices they can meet only at the single integer frequency $2^{n+1}$.
 
 ::: pf-proof
 The dyadic intervals $[2^n,2^{n+1}]$ and $[2^m,2^{m+1}]$ have exactly this intersection pattern.
@@ -81,9 +80,9 @@ The dyadic intervals $[2^n,2^{n+1}]$ and $[2^m,2^{m+1}]$ have exactly this inter
 :::
 
 ::: {.pf-step #inner-products-and-adjacent-bound}
-Thus $\langle f_n,f_m\rangle=0$ for $|n-m|\ge2$, while
+Thus $\langle f_n,f_m\rangle=0$ for $\abs{n-m}\ge2$, while
 $$
-|\langle f_n,f_{n+1}\rangle|\le\|f_n\|_2\|f_{n+1}\|_2.
+\abs{\langle f_n,f_{n+1}\rangle}\le\norm{f_n}_2\norm{f_{n+1}}_2.
 $$
 
 ::: pf-proof
@@ -95,9 +94,9 @@ Apply Parseval from step [](#parseval-identity){.pf-ref} and the support informa
 ::: {.pf-step #partial-sum-norm-bound}
 For $N<M$,
 $$
-\left\|\sum_{n=N}^{M}f_n\right\|_2^2
-\le\sum_{n=N}^{M}\|f_n\|_2^2
-+2\sum_{n=N}^{M-1}\|f_n\|_2\|f_{n+1}\|_2.
+\norm{\sum_{n=N}^{M}f_n}_2^2
+\le\sum_{n=N}^{M}\norm{f_n}_2^2
++2\sum_{n=N}^{M-1}\norm{f_n}_2\norm{f_{n+1}}_2.
 $$
 
 ::: pf-proof
@@ -112,16 +111,16 @@ The tails of both sums tend to $0$ as $N \to \infty$.
 ::: pf-proof
 
 ::: {.pf-step #square-tail-vanishes}
-$\sum_{n=N}^{\infty}\|f_n\|_2^2 \le \sum_{n=N}^{\infty} n^{-51/50} \to 0$.
+$\sum_{n=N}^{\infty}\norm{f_n}_2^2 \le \sum_{n=N}^{\infty} n^{-51/50} \to 0$.
 
 ::: pf-proof
-$\|f_n\|_2 \le n^{-51/100}$, and $\sum_n n^{-51/50} < \infty$ since $51/50 > 1$.
+$\norm{f_n}_2 \le n^{-51/100}$, and $\sum_n n^{-51/50} < \infty$ since $51/50 > 1$.
 :::
 
 :::
 
 ::: pf-step
-$\sum_{n=N}^{\infty}\|f_n\|_2\|f_{n+1}\|_2 \le \sum_{n=N}^{\infty} n^{-51/100}(n+1)^{-51/100} \le \sum_{n=N}^{\infty} n^{-51/50} \to 0$.
+$\sum_{n=N}^{\infty}\norm{f_n}_2\norm{f_{n+1}}_2 \le \sum_{n=N}^{\infty} n^{-51/100}(n+1)^{-51/100} \le \sum_{n=N}^{\infty} n^{-51/50} \to 0$.
 
 ::: pf-proof
 $(n+1)^{-51/100} \le n^{-51/100}$, and step [](#square-tail-vanishes){.pf-ref}.
@@ -134,7 +133,7 @@ $(n+1)^{-51/100} \le n^{-51/100}$, and step [](#square-tail-vanishes){.pf-ref}.
 :::
 
 ::: pf-qed
-Steps [](#partial-sum-norm-bound){.pf-ref} and [](#tails-vanish){.pf-ref} show $\left\|\sum_{n=N}^{M}f_n\right\|_2^2 \to 0$ as $N \to \infty$ uniformly in $M > N$, i.e. the partial sums are Cauchy in the complete space $L^2([0,1])$; hence $\sum_n f_n$ converges in $L^2$.
+Steps [](#partial-sum-norm-bound){.pf-ref} and [](#tails-vanish){.pf-ref} show $\norm{\sum_{n=N}^{M}f_n}_2^2 \to 0$ as $N \to \infty$ uniformly in $M > N$, i.e. the partial sums are Cauchy in the complete space $L^2([0,1])$; hence $\sum_n f_n$ converges in $L^2$.
 :::
 
 :::

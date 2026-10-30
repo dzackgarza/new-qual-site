@@ -67,7 +67,7 @@ For local sections $b,b'$ of $\mathcal B$, give sheaf Hom the action $(b\lambda)
 This is a unital associative $\mathcal B$-module action compatible with restriction.
 The sheaf $\mathcal B$ is coherent, so [[P-AGH363EXTCOHERENT]], in degree zero, makes $\sheafhom_Y(\mathcal B,\mcg)$ quasi-coherent.
 The affine-morphism equivalence in [[P-AGH2517AFFMOR]], part (e), therefore gives a corresponding quasi-coherent sheaf $f^!\mcg$ on $X$.
-On $V=\Spec A\subseteq Y$, write $f^{-1}(V)=\Spec B$ and $\mcg|_V=\widetilde N$.
+On $V=\Spec A\subseteq Y$, write $f^{-1}(V)=\Spec B$ and $\mcg\restrict_V=\widetilde N$.
 The corresponding $B$-module is $\Hom_A(B,N)$ with the displayed action.
 These descriptions commute with localization because $B$ is finite over the noetherian ring $A$ and hence finitely presented.
 Evaluation at $1$ is $\OO_Y$-linear and commutes with restrictions and morphisms of $\mcg$, giving $\varepsilon_\mcg$.
@@ -82,7 +82,7 @@ Evaluation at $1$ gives the natural isomorphism in (b); on global sections it is
 
 ::: pf-proof
 
-On the affine opens of step [](#s1){.pf-ref}, write $\mcf|_{f^{-1}(V)}=\widetilde M$ for a finite $B$-module $M$.
+On the affine opens of step [](#s1){.pf-ref}, write $\mcf\restrict_{f^{-1}(V)}=\widetilde M$ for a finite $B$-module $M$.
 The relevant module isomorphism is
 $$
 \Hom_B(M,\Hom_A(B,N))\longrightarrow\Hom_A(M,N),
@@ -110,7 +110,7 @@ The natural maps in (c) exist and commute with the long exact Ext sequences in t
 ::: pf-proof
 
 For any quasi-coherent sheaf $H$ on $X$, take an injective resolution $H\to I^\bullet$ in $\Mod(X)$.
-One has $R^qf_*H=0$ for $q>0$: over an affine open $V\subseteq Y$, the inverse image is affine, and affine vanishing applies to $H|_{f^{-1}(V)}$ [@Har10a, Theorem III.3.5].
+One has $R^qf_*H=0$ for $q>0$: over an affine open $V\subseteq Y$, the inverse image is affine, and affine vanishing applies to $H\restrict_{f^{-1}(V)}$ [@Har10a, Theorem III.3.5].
 Consequently $f_*I^\bullet$ is a resolution of $f_*H$, although its terms need not be injective.
 
 Choose an injective resolution $f_*H\to J^\bullet$ on $Y$.

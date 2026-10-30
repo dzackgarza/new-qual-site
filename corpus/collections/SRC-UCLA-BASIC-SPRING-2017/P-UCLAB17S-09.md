@@ -21,7 +21,7 @@ Let $(X,d)$ be a bounded metric space and suppose $C(X)$, with the supremum norm
 
 (a) Show that for every $\varepsilon>0$ there is a countable $Z_\varepsilon\subseteq X$ such that for every $x\in X$ some $z\in Z_\varepsilon$ satisfies
 $$
-|d(x,y)-d(z,y)|<\varepsilon\quad\text{for all }y\in X.
+\abs{d(x,y)-d(z,y)}<\varepsilon\quad\text{for all }y\in X.
 $$
 (b) Deduce that $X$ is separable.
 :::
@@ -50,9 +50,9 @@ Each $\phi_x$ belongs to $C(X)$.
 
 The reverse triangle inequality gives
 $$
-|\phi_x(y)-\phi_x(z)|
+\abs{\phi_x(y)-\phi_x(z)}
 =
-|d(x,y)-d(x,z)|
+\abs{d(x,y)-d(x,z)}
 \le
 d(y,z).
 $$
@@ -112,7 +112,7 @@ z_j\in X
 $$
 with
 $$
-\|\phi_{z_j}-g_j\|_\infty
+\norm{\phi_{z_j}-g_j}_\infty
 <
 \frac{\varepsilon}{2}.
 $$
@@ -169,7 +169,7 @@ z\in Z_\varepsilon
 $$
 such that
 $$
-\|\phi_x-\phi_z\|_\infty
+\norm{\phi_x-\phi_z}_\infty
 <
 \varepsilon.
 $$
@@ -179,7 +179,7 @@ $$
 
 Since $\mathcal D$ is dense in $C(X)$, choose $g_j$ with
 $$
-\|\phi_x-g_j\|_\infty
+\norm{\phi_x-g_j}_\infty
 <
 \frac{\varepsilon}{2}.
 $$
@@ -189,13 +189,13 @@ B_{\varepsilon/2}(g_j)
 $$
 meets $\Phi$, so a point $z_j\in Z_\varepsilon$ was selected in step [](#s1-3){.pf-ref} with
 $$
-\|\phi_{z_j}-g_j\|_\infty
+\norm{\phi_{z_j}-g_j}_\infty
 <
 \frac{\varepsilon}{2}.
 $$
 The triangle inequality gives
 $$
-\|\phi_x-\phi_{z_j}\|_\infty
+\norm{\phi_x-\phi_{z_j}}_\infty
 <
 \varepsilon.
 $$
@@ -217,7 +217,7 @@ $$
 satisfies
 $$
 \boxed{
-|d(x,y)-d(z,y)|<\varepsilon
+\abs{d(x,y)-d(z,y)}<\varepsilon
 \quad
 \text{for every }y\in X.
 }
@@ -229,7 +229,7 @@ $$
 The supremum-norm inequality in step [](#s1-5){.pf-ref} means precisely that
 $$
 \sup_{y\in X}
-|d(x,y)-d(z,y)|
+\abs{d(x,y)-d(z,y)}
 <
 \varepsilon.
 $$
@@ -297,7 +297,7 @@ z\in Z_{1/m}
 $$
 such that
 $$
-|d(x,y)-d(z,y)|
+\abs{d(x,y)-d(z,y)}
 <
 \frac1m
 $$
@@ -310,7 +310,7 @@ Then
 $$
 d(x,z)
 =
-|d(z,x)-d(x,x)|
+\abs{d(z,x)-d(x,x)}
 <
 \frac1m
 <

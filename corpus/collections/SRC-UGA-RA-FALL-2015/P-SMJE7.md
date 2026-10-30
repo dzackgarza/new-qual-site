@@ -45,14 +45,14 @@ f_n(x) := {ne^{-x} \over 1 + nx^2}\sin(x/n)\chi_{[1, n]}
 .$$
 Then
 $$
-|f_n(x)| \leq g(x) := {e^{-x}\over x^2}\in L^1(1, \infty)
+\abs{f_n(x)} \leq g(x) := {e^{-x}\over x^2}\in L^1(1, \infty)
 ,$$
 
 since
 $$
-\|g\|_{L^1(1,\infty)}
+\norm{g}_{L^1(1,\infty)}
 =
-\int_1^\infty \left|1/(x^2e^x)\right|\dx \leq \int_1^\infty 1/x^2\dx = 1 < \infty
+\int_1^\infty \abs{1/(x^2e^x)}\dx \leq \int_1^\infty 1/x^2\dx = 1 < \infty
 .$$
 
 

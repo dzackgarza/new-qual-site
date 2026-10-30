@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\RR$ with $|a|<1$.
+Let $a\in\RR$ with $\abs{a}<1$.
 Prove that
 $$
 \sum_{k=1}^{\infty}a^k\cos(k\theta)
@@ -35,6 +35,6 @@ $$
 Therefore
 
 $$
-\begin{array} { c } { { \displaystyle \sum _ { k = 1 } ^ { \infty } a ^ { k } \cos ( k \theta ) = \Re \left( \displaystyle \frac { 1 } { 1 - a z } - 1 \right) = \Re \left( \displaystyle \frac { a z } { 1 - a z } \right) = \Re \left( \displaystyle \frac { a z ( 1 - a \bar { z } ) } { | 1 - a z | ^ { 2 } } \right) } } \\ { { = \Re \left( \displaystyle \frac { a \bar { z } - a ^ { 2 } } { ( 1 - a \cos \theta ) ^ { 2 } + ( a \sin \theta ) ^ { 2 } } \right) = \displaystyle \frac { a \cos \theta - a ^ { 2 } } { 1 + a ^ { 2 } - 2 a \cos \theta } . } } \end{array}
+\begin{array} { c } { { \displaystyle \sum _ { k = 1 } ^ { \infty } a ^ { k } \cos ( k \theta ) = \Re \left( \displaystyle \frac { 1 } { 1 - a z } - 1 \right) = \Re \left( \displaystyle \frac { a z } { 1 - a z } \right) = \Re \left( \displaystyle \frac { a z ( 1 - a \bar { z } ) } { \abs{ 1 - a z } ^ { 2 } } \right) } } \\ { { = \Re \left( \displaystyle \frac { a \bar { z } - a ^ { 2 } } { ( 1 - a \cos \theta ) ^ { 2 } + ( a \sin \theta ) ^ { 2 } } \right) = \displaystyle \frac { a \cos \theta - a ^ { 2 } } { 1 + a ^ { 2 } - 2 a \cos \theta } . } } \end{array}
 $$
 :::

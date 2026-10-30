@@ -21,7 +21,7 @@ audit:
 2. The angle between two non-zero complex numbers z and $w$ (taken in that order) is simply the oriented angle, in $( - \pi , \pi ]$ , that is formed between the two vectors in $\RR ^ { 2 }$ corresponding to the points z and w. This oriented angle, say $\alpha ,$ is uniquely determined by the two quantities
 
 $$
-\frac {(z , w)}{| z | | w |} \quad \mathrm{and} \quad \frac {(z , - i w)}{| z | | w |}
+\frac {(z , w)}{\abs{ z } \abs{ w }} \quad \mathrm{and} \quad \frac {(z , - i w)}{\abs{ z } \abs{ w }}
 $$
 
 which are simply the cosine and sine of $\alpha ,$ respectively.
@@ -37,7 +37,7 @@ Figure 12. Preservation of angles at $z _ { \mathrm { 0 } }$
 (a) Prove that if $f : \Omega \to \CC$ is holomorphic, and $f ^ { \prime } ( z _ { 0 } ) \neq 0$ , then $f$ preserves angles at $z _ { \mathrm { 0 } }$ . [Hint: Observe that
 
 $$
-(f ^ {\prime} (z _ {0}) \gamma^ {\prime} (t _ {0}), f ^ {\prime} (z _ {0}) \eta^ {\prime} (t _ {0})) = | f ^ {\prime} (z _ {0}) | ^ {2} (\gamma^ {\prime} (t _ {0}), \eta^ {\prime} (t _ {0})). ]
+(f ^ {\prime} (z _ {0}) \gamma^ {\prime} (t _ {0}), f ^ {\prime} (z _ {0}) \eta^ {\prime} (t _ {0})) = \abs{ f ^ {\prime} (z _ {0}) } ^ {2} (\gamma^ {\prime} (t _ {0}), \eta^ {\prime} (t _ {0})). ]
 $$
 
 (b) Conversely, prove the following: suppose $f : \Omega \to \CC$ is a complex-valued function, that is real-diferentiable at $z _ { 0 } \in \Omega$ , and $J _ { f } ( z _ { 0 } ) \ne 0$ . If f preserves angles at $z _ { \mathrm { 0 } }$ , then $f$ is holomorphic at $z _ { \mathrm { 0 } }$ with $f ^ { \prime } ( z _ { 0 } ) \neq 0$
@@ -69,7 +69,7 @@ chain rule for complex differentiation.
 The Euclidean inner product on $\RR^2 \cong \CC$ is $(z_1, z_2) = \operatorname{Re}(z_1 \bar{z}_2)$.
 Compute the inner product of $\tilde{v}$ and $\tilde{w}$:
 $$
-(\tilde{v}, \tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(f'(z_0) w)}\big) = \operatorname{Re}\big(|f'(z_0)|^2 v \bar{w}\big) = |f'(z_0)|^2 \operatorname{Re}(v \bar{w}) = |f'(z_0)|^2 (v, w).
+(\tilde{v}, \tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(f'(z_0) w)}\big) = \operatorname{Re}\big(\abs{f'(z_0)}^2 v \bar{w}\big) = \abs{f'(z_0)}^2 \operatorname{Re}(v \bar{w}) = \abs{f'(z_0)}^2 (v, w).
 $$
 
 ::: pf-proof
@@ -79,10 +79,10 @@ algebraic properties of complex conjugation and modulus.
 :::
 
 ::: pf-step
-The norms are $|\tilde{v}| = |f'(z_0)| |v|$ and $|\tilde{w}| = |f'(z_0)| |w|$.
+The norms are $\abs{\tilde{v}} = \abs{f'(z_0)} \abs{v}$ and $\abs{\tilde{w}} = \abs{f'(z_0)} \abs{w}$.
 Thus the cosine of the angle $\tilde{\alpha}$ between $\tilde{v}$ and $\tilde{w}$ satisfies:
 $$
-\cos \tilde{\alpha} = \frac{(\tilde{v}, \tilde{w})}{|\tilde{v}| |\tilde{w}|} = \frac{|f'(z_0)|^2 (v, w)}{|f'(z_0)|^2 |v| |w|} = \frac{(v, w)}{|v| |w|} = \cos \alpha.
+\cos \tilde{\alpha} = \frac{(\tilde{v}, \tilde{w})}{\abs{\tilde{v}} \abs{\tilde{w}}} = \frac{\abs{f'(z_0)}^2 (v, w)}{\abs{f'(z_0)}^2 \abs{v} \abs{w}} = \frac{(v, w)}{\abs{v} \abs{w}} = \cos \alpha.
 $$
 
 ::: pf-proof
@@ -94,11 +94,11 @@ Step [](#scaled-inner-product){.pf-ref} and norm scaling.
 ::: pf-step
 Similarly, compute the sine of the angle $\tilde{\alpha}$:
 $$
-(\tilde{v}, -i\tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(-i f'(z_0) w)}\big) = |f'(z_0)|^2 \operatorname{Re}(v \cdot i \bar{w}) = |f'(z_0)|^2 (v, -iw).
+(\tilde{v}, -i\tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(-i f'(z_0) w)}\big) = \abs{f'(z_0)}^2 \operatorname{Re}(v \cdot i \bar{w}) = \abs{f'(z_0)}^2 (v, -iw).
 $$
-Dividing by $|\tilde{v}| |\tilde{w}|$ yields:
+Dividing by $\abs{\tilde{v}} \abs{\tilde{w}}$ yields:
 $$
-\sin \tilde{\alpha} = \frac{(\tilde{v}, -i\tilde{w})}{|\tilde{v}| |\tilde{w}|} = \frac{(v, -iw)}{|v| |w|} = \sin \alpha.
+\sin \tilde{\alpha} = \frac{(\tilde{v}, -i\tilde{w})}{\abs{\tilde{v}} \abs{\tilde{w}}} = \frac{(v, -iw)}{\abs{v} \abs{w}} = \sin \alpha.
 $$
 
 ::: pf-proof

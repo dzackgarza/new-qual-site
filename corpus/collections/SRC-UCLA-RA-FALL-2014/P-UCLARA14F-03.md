@@ -28,7 +28,7 @@ Let $(f_n)$ be a bounded sequence in $L^2(\RR)$ and suppose that $f_n \to 0$ Leb
 
 Let
 $$
-M=\sup_n\|f_n\|_2<\infty.
+M=\sup_n\norm{f_n}_2<\infty.
 $$
 
 ::: pf
@@ -74,7 +74,7 @@ E=\operatorname{supp}(h),
 $$
 so $m(E)<\infty$, and set
 $$
-H=\|h\|_\infty.
+H=\norm{h}_\infty.
 $$
 If $H=0$, the assertion is immediate, so assume $H>0$.
 
@@ -94,9 +94,9 @@ such that $f_n\to0$ uniformly on $E\setminus A$.
 For the exceptional set, Cauchy--Schwarz gives
 $$
 \begin{aligned}
-\int_A|f_nh|
+\int_A\abs{f_nh}
 &\le
-\|f_n\|_2\|h\chi_A\|_2\\
+\norm{f_n}_2\norm{h\chi_A}_2\\
 &\le
 M H\sqrt{m(A)}
 <
@@ -105,17 +105,17 @@ M H\sqrt{m(A)}
 $$
 On $E\setminus A$,
 $$
-\int_{E\setminus A}|f_nh|
+\int_{E\setminus A}\abs{f_nh}
 \le
 H\,m(E)\,
-\sup_{E\setminus A}|f_n|.
+\sup_{E\setminus A}\abs{f_n}.
 $$
 The supremum tends to $0$ by uniform convergence, so for all sufficiently
 large $n$ this term is less than $\varepsilon/2$. Therefore
 $$
-\left|\int_{\RR}f_nh\right|
+\abs{\int_{\RR}f_nh}
 \le
-\int_E|f_nh|
+\int_E\abs{f_nh}
 <\varepsilon
 $$
 for all sufficiently large $n$.
@@ -138,16 +138,16 @@ h_k
 =
 g\,
 \chi_{[-k,k]}
-\chi_{\{|g|\le k\}}.
+\chi_{\{\abs{g}\le k\}}.
 $$
 Then $h_k$ is bounded by $k$ and supported in $[-k,k]$. Moreover,
 $$
-|g-h_k|^2
+\abs{g-h_k}^2
 \longrightarrow0
 $$
-pointwise and is dominated by $|g|^2\in L^1$. By dominated convergence,
+pointwise and is dominated by $\abs{g}^2\in L^1$. By dominated convergence,
 $$
-\|g-h_k\|_2\longrightarrow0.
+\norm{g-h_k}_2\longrightarrow0.
 $$
 
 :::
@@ -169,24 +169,24 @@ nothing to prove. Assume $M>0$.
 
 By step [](#s1-3){.pf-ref}, choose bounded compactly supported $h$ such that
 $$
-\|g-h\|_2
+\norm{g-h}_2
 <
 \frac{\varepsilon}{2M}.
 $$
 Then
 $$
 \begin{aligned}
-\left|\int f_n g\right|
+\abs{\int f_n g}
 &\le
-\left|\int f_n h\right|
+\abs{\int f_n h}
 +
-\left|\int f_n(g-h)\right|\\
+\abs{\int f_n(g-h)}\\
 &\le
-\left|\int f_n h\right|
+\abs{\int f_n h}
 +
-\|f_n\|_2\|g-h\|_2\\
+\norm{f_n}_2\norm{g-h}_2\\
 &<
-\left|\int f_n h\right|
+\abs{\int f_n h}
 +
 \frac{\varepsilon}{2}.
 \end{aligned}
@@ -194,7 +194,7 @@ $$
 By step [](#s1-2){.pf-ref}, the first term is less than $\varepsilon/2$ for all sufficiently
 large $n$. Hence
 $$
-\left|\int f_n g\right|<\varepsilon
+\abs{\int f_n g}<\varepsilon
 $$
 eventually.
 

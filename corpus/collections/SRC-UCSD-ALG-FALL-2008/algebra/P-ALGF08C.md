@@ -31,7 +31,7 @@ Show that if $G$ is a group of order $p^2 q$, where $p$ and $q$ are distinct pri
 ::: {.solution}
 Let
 $$
-|G|=p^2q,
+\cardinality{G}=p^2q,
 $$
 where $p\neq q$ are primes.
 Write $n_p$ and $n_q$ for the numbers of Sylow $p$- and $q$-subgroups, respectively.
@@ -122,7 +122,7 @@ In a group of order $12$, four Sylow $3$-subgroups force the Sylow $2$-subgroup 
 ::: pf-proof
 Assume
 $$
-|G|=12
+\cardinality{G}=12
 $$
 and
 $$
@@ -139,7 +139,7 @@ Together with the identity, these account for $9$ elements of $G$, leaving exact
 Let $P$ be any Sylow $2$-subgroup.
 Then
 $$
-|P|=4.
+\cardinality{P}=4.
 $$
 Since $P$ has order a power of $2$, it meets every subgroup of order $3$ only in the identity.
 Therefore the three nonidentity elements of $P$ must be precisely the three elements not lying in the Sylow $3$-subgroups.

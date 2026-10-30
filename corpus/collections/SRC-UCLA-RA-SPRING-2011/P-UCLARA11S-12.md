@@ -174,7 +174,7 @@ a\cos b-b\sin b
 $$
 For
 $$
-0<|b|<\pi,
+0<\abs{b}<\pi,
 $$
 the numbers $b$ and $\sin b$ have the same sign, so
 $$

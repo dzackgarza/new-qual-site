@@ -58,7 +58,7 @@ w=e^{i\theta_0}\in S^1.
 $$
 Choose $0<\varepsilon<\pi$ and let
 $$
-U=\{e^{i\theta}:|\theta-\theta_0|<\varepsilon\},
+U=\{e^{i\theta}:\abs{\theta-\theta_0}<\varepsilon\},
 $$
 where the interval is understood through the chosen local argument around $w$.
 For $k=0,\ldots,n-1$, define
@@ -67,7 +67,7 @@ U_k
 =
 \left\{
 e^{i\phi}:
-\left|\phi-\frac{\theta_0+2\pi k}{n}\right|<\frac{\varepsilon}{n}
+\abs{\phi-\frac{\theta_0+2\pi k}{n}}<\frac{\varepsilon}{n}
 \right\}.
 $$
 These are pairwise disjoint open arcs, and
@@ -143,7 +143,7 @@ By step [](#n-sheeted-covering){.pf-ref}, every fiber of $p_n$ has cardinality $
 By step [](#index-n){.pf-ref}, the induced subgroup has index $n$.
 Thus the equality quoted in the problem reads
 $$
-|p_n^{-1}(1)|
+\cardinality{p_n^{-1}(1)}
 =n
 =[\pi_1(S^1):(p_n)_*\pi_1(S^1)].
 $$

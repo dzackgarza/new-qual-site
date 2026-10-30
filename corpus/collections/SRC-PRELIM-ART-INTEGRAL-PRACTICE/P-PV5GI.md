@@ -49,7 +49,7 @@ $$
 $$
 Hence
 $$
-\boxed{2\sqrt{1+\ln x}+\ln\left|\frac{\sqrt{1+\ln x}-1}{\sqrt{1+\ln x}+1}\right|+C.}
+\boxed{2\sqrt{1+\ln x}+\ln\abs{\frac{\sqrt{1+\ln x}-1}{\sqrt{1+\ln x}+1}}+C.}
 $$
 
 For the second,
@@ -58,12 +58,12 @@ $$
 $$
 so
 $$
-\boxed{-\ln x+10\ln|3+\ln x|+C.}
+\boxed{-\ln x+10\ln\abs{3+\ln x}+C.}
 $$
 
 For the third, $u=1+\tan x$ gives
 $$
-\boxed{\ln|1+\tan x|+C.}
+\boxed{\ln\abs{1+\tan x}+C.}
 $$
 
 For the fourth, $u=\cos x/2$ gives $du=-\tfrac12\sin x\,dx$ and

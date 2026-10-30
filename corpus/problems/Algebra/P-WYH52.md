@@ -71,12 +71,12 @@ which yields the $6$-dimensional row. Finally, tensoring $[3,2]$ by sign gives $
 The weighted inner products using the displayed class sizes are
 $$
 \langle\chi_\lambda,\chi_\mu\rangle
-=\frac1{120}\sum_C |C|\chi_\lambda(C)\chi_\mu(C)
+=\frac1{120}\sum_C \cardinality{C}\chi_\lambda(C)\chi_\mu(C)
 =\delta_{\lambda\mu},
 $$
 so these seven characters are pairwise distinct irreducibles. Their squared dimensions sum to
 $$
-1^2+4^2+5^2+6^2+5^2+4^2+1^2=120=|S_5|,
+1^2+4^2+5^2+6^2+5^2+4^2+1^2=120=\cardinality{S_5},
 $$
 so the table is complete.
 :::

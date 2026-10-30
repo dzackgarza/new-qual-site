@@ -63,13 +63,13 @@ Assume it for $R^{n-1}$ and let $M\subseteq R^n$ be a submodule.
 ::: {.pf-step #s2-1}
 
 Let $\pi:R^n\to R$ be projection to the last coordinate.
-Then $\ker(\pi|_M)$ is free.
+Then $\ker(\pi\restrict_M)$ is free.
 
 ::: pf-proof
 
 We have
 $$
-\ker(\pi|_M)=M\cap(R^{n-1}\times\{0\}),
+\ker(\pi\restrict_M)=M\cap(R^{n-1}\times\{0\}),
 $$
 which identifies with a submodule of $R^{n-1}$.
 It is free by the induction hypothesis.
@@ -95,7 +95,7 @@ Therefore $\pi(M)$ is either $0$ or isomorphic to $R$ as an $R$-module, so it is
 
 The short exact sequence
 $$
-0\longrightarrow \ker(\pi|_M)\longrightarrow M\xrightarrow{\pi}\pi(M)\longrightarrow0
+0\longrightarrow \ker(\pi\restrict_M)\longrightarrow M\xrightarrow{\pi}\pi(M)\longrightarrow0
 $$
 splits.
 
@@ -116,7 +116,7 @@ Hence $M$ is free.
 
 By step [](#s2-3){.pf-ref},
 $$
-M\cong \ker(\pi|_M)\oplus \pi(M).
+M\cong \ker(\pi\restrict_M)\oplus \pi(M).
 $$
 Both summands are free by steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref}, and their direct sum is free.
 This completes the induction.

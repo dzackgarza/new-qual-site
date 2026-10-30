@@ -64,7 +64,7 @@ The group $G$ has order $39$.
 
 ::: pf-proof
 
-As a set, a semidirect product $C_{13}\rtimes C_3$ is $C_{13}\times C_3$, so $|G|=13\cdot3=39$.
+As a set, a semidirect product $C_{13}\rtimes C_3$ is $C_{13}\times C_3$, so $\cardinality{G}=13\cdot3=39$.
 
 :::
 

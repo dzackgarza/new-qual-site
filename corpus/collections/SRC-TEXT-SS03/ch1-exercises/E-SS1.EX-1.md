@@ -25,7 +25,7 @@ audit:
 ::: {.exercise}
 Describe geometrically the sets of points $z$ in the complex plane defined by the following relations:
 
-(a) $|z-z_1|=|z-z_2|$, where $z_1,z_2\in\CC$.
+(a) $\abs{z-z_1}=\abs{z-z_2}$, where $z_1,z_2\in\CC$.
 
 (b) $1/z=\overline z$.
 
@@ -35,7 +35,7 @@ Describe geometrically the sets of points $z$ in the complex plane defined by th
 
 (e) $\operatorname{Re}(az+b)>0$, where $a,b\in\CC$.
 
-(f) $|z|=\operatorname{Re}(z)+1$.
+(f) $\abs{z}=\operatorname{Re}(z)+1$.
 
 (g) $\operatorname{Im}(z)=c$, where $c\in\RR$.
 :::
@@ -52,9 +52,9 @@ For (a), if $z_1\ne z_2$, the locus is the perpendicular bisector of the line se
 
 Squaring both sides gives
 $$
-|z-z_1|^2=|z-z_2|^2
+\abs{z-z_1}^2=\abs{z-z_2}^2
 \iff
-2\operatorname{Re}\!\bigl(z(\overline{z_2}-\overline{z_1})\bigr)=|z_2|^2-|z_1|^2.
+2\operatorname{Re}\!\bigl(z(\overline{z_2}-\overline{z_1})\bigr)=\abs{z_2}^2-\abs{z_1}^2.
 $$
 If $z_1\ne z_2$, this is the equation of a real affine line. It consists exactly of the points equidistant from $z_1$ and $z_2$, hence is their perpendicular bisector. If $z_1=z_2$, the original equality is tautological for every $z$.
 
@@ -64,15 +64,15 @@ If $z_1\ne z_2$, this is the equation of a real affine line. It consists exactly
 
 ::: pf-step
 
-For (b), the locus is the unit circle $\{z\in\CC:|z|=1\}$.
+For (b), the locus is the unit circle $\{z\in\CC:\abs{z}=1\}$.
 
 ::: pf-proof
 
 The equation is defined only for $z\ne0$. Multiplying by $z$ gives
 $$
-1=z\overline z=|z|^2,
+1=z\overline z=\abs{z}^2,
 $$
-which is equivalent to $|z|=1$. Conversely every point of the unit circle satisfies $1/z=\overline z$.
+which is equivalent to $\abs{z}=1$. Conversely every point of the unit circle satisfies $1/z=\overline z$.
 
 :::
 
@@ -132,7 +132,7 @@ which opens to the right and has vertex $(-1/2,0)$.
 
 ::: pf-proof
 
-Write $z=x+iy$. The equation $|z|=x+1$ implies
+Write $z=x+iy$. The equation $\abs{z}=x+1$ implies
 $$
 x^2+y^2=(x+1)^2,
 $$
@@ -140,7 +140,7 @@ hence $y^2=2x+1$. Conversely, on this parabola,
 $$
 x+1=\frac{y^2+1}{2}>0,
 $$
-so squaring introduced no extraneous points and $|z|=x+1$ indeed holds.
+so squaring introduced no extraneous points and $\abs{z}=x+1$ indeed holds.
 
 :::
 

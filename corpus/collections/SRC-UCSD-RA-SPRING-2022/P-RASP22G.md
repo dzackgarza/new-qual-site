@@ -24,20 +24,20 @@ audit:
 ---
 
 ::: {.problem}
-1. Compute the 2nd and 3rd distributional derivatives of $f(|x|)$, namely find the expressions of $\frac{d^2}{dx^2}f(|x|)$ and $\frac{d^3}{dx^3}f(|x|)$ in terms of locally integrable functions or measures and their derivatives, where $x \in \RR$ and $f \in C^n(\overline{\RR}_+)$ with $n \geq 3$.
+1. Compute the 2nd and 3rd distributional derivatives of $f(\abs{x})$, namely find the expressions of $\frac{d^2}{dx^2}f(\abs{x})$ and $\frac{d^3}{dx^3}f(\abs{x})$ in terms of locally integrable functions or measures and their derivatives, where $x \in \RR$ and $f \in C^n(\overline{\RR}_+)$ with $n \geq 3$.
    (Hint: You may express your answers in terms of $f$, its derivatives and the Delta measure.)
 
-2. Find a formula for the $n$-th distributional derivative of $f(|x|)$.
+2. Find a formula for the $n$-th distributional derivative of $f(\abs{x})$.
 :::
 
 ::: {.solution}
 Let
 $$
-F(x):=f(|x|).
+F(x):=f(\abs{x}).
 $$
 For $x\ne0$,
 $$
-F^{(k)}(x)=\operatorname{sgn}(x)^k f^{(k)}(|x|).
+F^{(k)}(x)=\operatorname{sgn}(x)^k f^{(k)}(\abs{x}).
 $$
 Thus the one-sided limits at the origin satisfy
 $$
@@ -63,7 +63,7 @@ Since $F$ itself is continuous, the term involving $[F]_0$ is zero. Substituting
 $$
 \boxed{
 D^nF
-=\operatorname{sgn}(x)^n f^{(n)}(|x|)
+=\operatorname{sgn}(x)^n f^{(n)}(\abs{x})
 +2\sum_{j=0}^{\lfloor (n-2)/2\rfloor}
  f^{(2j+1)}(0)\,
  \delta_0^{(n-2j-2)}.
@@ -74,13 +74,13 @@ Here the first term denotes the locally integrable function defined away from th
 In particular,
 $$
 \boxed{
-D^2F=f''(|x|)+2f'(0)\delta_0,
+D^2F=f''(\abs{x})+2f'(0)\delta_0,
 }
 $$
 and
 $$
 \boxed{
-D^3F=\operatorname{sgn}(x)f'''(|x|)+2f'(0)\delta_0'.
+D^3F=\operatorname{sgn}(x)f'''(\abs{x})+2f'(0)\delta_0'.
 }
 $$
 These are the requested second and third distributional derivatives, and the displayed formula gives the general $n$th derivative.

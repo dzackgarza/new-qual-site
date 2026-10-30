@@ -76,7 +76,7 @@ $$
 The latter has Sullivan model
 $$
 (\Lambda(x_1),0),
-\qquad |x_1|=3.
+\qquad \gradeddegree{x_1}=3.
 $$
 Since the generator has odd degree, the free graded-commutative algebra is
 exterior. Thus
@@ -100,11 +100,11 @@ y_{p,k}
 $$
 of degrees
 $$
-|x_{p,k}|
+\gradeddegree{x_{p,k}}
 =
 2p^{k+1}+1,
 \qquad
-|y_{p,k}|
+\gradeddegree{y_{p,k}}
 =
 2p^{k+1}+2.
 $$
@@ -203,7 +203,7 @@ with the Koszul sign $(-1)^{\mu_j}$ determined by moving the differential
 past the preceding factors. Then $y_{p,I}$ is a cocycle of order dividing
 $p$, of degree
 $$
-|y_{p,I}|
+\gradeddegree{y_{p,I}}
 =
 1+
 \sum_{j=1}^m
@@ -237,10 +237,10 @@ so its cohomology class is killed by $p$.
 
 The differential raises degree by one, hence
 $$
-|y_{p,I}|
+\gradeddegree{y_{p,I}}
 =
 1+
-\sum_j|x_{p,i_j}|,
+\sum_j\gradeddegree{x_{p,i_j}},
 $$
 which is the stated degree formula.
 
@@ -324,7 +324,7 @@ ring.
 
 The first prime-primary classes occur in degrees
 $$
-|y_{p,0}|=2p+2,
+\gradeddegree{y_{p,0}}=2p+2,
 $$
 and $y_{p,0}$ has order $p$. In particular,
 $$
@@ -341,7 +341,7 @@ has order $3$.
 
 Take $I=(0)$ in step [](#s1-4){.pf-ref}. Then
 $$
-|y_{p,0}|
+\gradeddegree{y_{p,0}}
 =
 1+(2p+1)
 =
@@ -366,7 +366,7 @@ $$
 H^*(K(\ZZ,3);\QQ)
 \cong
 \Lambda_{\QQ}(x_1),
-\qquad |x_1|=3.
+\qquad \gradeddegree{x_1}=3.
 }
 $$
 

@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $K$ be the splitting field of $(x^3-2)(x^2-3)$ over $\QQ$ and $G$ be the Galois group of $K/\QQ$.
 
-(a) For each prime divisor $p$ of $|G|$, decide whether $G$ has a normal Sylow $p$-subgroup.
+(a) For each prime divisor $p$ of $\cardinality{G}$, decide whether $G$ has a normal Sylow $p$-subgroup.
 
 (b) Show that there are subgroups $G_1$ and $G_2$ of $G$ such that $G = G_0 \triangleright G_1 \triangleright G_2 \triangleright G_3 = \{1\}$ with $G_i/G_{i+1}$ cyclic of prime order.
 Determine the corresponding subfields.
@@ -156,7 +156,7 @@ $P=\{1,s,t,st\}$ of order $4$, so $P$ is a Sylow $2$-subgroup.
 But $rsr^{-1}=r^2s\notin P$, as seen from the distinct normal
 forms in step [](#s3){.pf-ref}. Thus $P$ is not normal. Every Sylow
 $2$-subgroup is conjugate to $P$ by Sylow's theorem [@DF04],
-so none is normal. The only prime divisors of $|G|$ are $2,3$,
+so none is normal. The only prime divisors of $\cardinality{G}$ are $2,3$,
 and both have now been decided.
 
 :::
@@ -169,7 +169,7 @@ For part (b), take $G_1=\langle r,t\rangle$ and
 $G_2=\langle r\rangle$. The subgroup and fixed-field data are
 $$
 \begin{array}{c|c|c|c}
-i&G_i&|G_i|&K^{G_i}\\\hline
+i&G_i&\cardinality{G_i}&K^{G_i}\\\hline
 0&G&12&\QQ\\
 1&\langle r,t\rangle&6&\QQ(\zeta)\\
 2&\langle r\rangle&3&\QQ(\zeta,b)\\

@@ -43,9 +43,9 @@ $$
 so
 $$
 \int_0^1
-\frac{|\log t|}{1+t^2}\,dt
+\frac{\abs{\log t}}{1+t^2}\,dt
 \le
-\int_0^1|\log t|\,dt
+\int_0^1\abs{\log t}\,dt
 =
 1.
 $$

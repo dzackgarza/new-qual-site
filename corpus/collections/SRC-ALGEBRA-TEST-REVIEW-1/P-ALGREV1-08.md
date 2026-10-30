@@ -23,7 +23,7 @@ audit:
   note: "Classified the assertion as sometimes true, with trivial H as the positive case and H={0,2} in Z4 as a counterexample."
 ---
 ::: {.problem}
-Classify the following assertion as true, sometimes true, or false: in a factor group $G/H$, if $aH=bH$, then $|a|=|b|$.
+Classify the following assertion as true, sometimes true, or false: in a factor group $G/H$, if $aH=bH$, then $\elementorder{a}=\elementorder{b}$.
 :::
 
 ::: {.solution}
@@ -41,7 +41,7 @@ If $H=\{e\}$, then
 $$
 aH=bH
 $$
-implies $a=b$. Hence $|a|=|b|$.
+implies $a=b$. Hence $\elementorder{a}=\elementorder{b}$.
 
 :::
 

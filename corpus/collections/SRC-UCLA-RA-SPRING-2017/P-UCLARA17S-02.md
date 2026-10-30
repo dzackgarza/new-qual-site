@@ -24,7 +24,7 @@ Let $f_n:[0,1]\to[0,\infty)$ be a sequence of functions, each non-decreasing on 
 
 Choose $C\ge0$ such that
 $$
-\|f_n\|_{L^2([0,1])}\le C
+\norm{f_n}_{L^2([0,1])}\le C
 $$
 for every $n$.
 
@@ -108,7 +108,7 @@ The limit function satisfies
 $$
 f\in L^2([0,1])
 \qquad\text{and}\qquad
-\|f\|_2\le C.
+\norm{f}_2\le C.
 $$
 
 
@@ -129,7 +129,7 @@ $$
 
 For every $0<\delta<1$,
 $$
-\int_{1-\delta}^1|f_{n_k}(x)-f(x)|\,dx
+\int_{1-\delta}^1\abs{f_{n_k}(x)-f(x)}\,dx
 \le2C\sqrt\delta.
 $$
 
@@ -139,10 +139,10 @@ $$
 By the triangle inequality and Cauchy--Schwarz,
 $$
 \begin{aligned}
-\int_{1-\delta}^1|f_{n_k}-f|
+\int_{1-\delta}^1\abs{f_{n_k}-f}
 &\le\int_{1-\delta}^1 f_{n_k}+\int_{1-\delta}^1 f\\
-&\le\sqrt\delta\,\|f_{n_k}\|_2
-+\sqrt\delta\,\|f\|_2\\
+&\le\sqrt\delta\,\norm{f_{n_k}}_2
++\sqrt\delta\,\norm{f}_2\\
 &\le2C\sqrt\delta
 \end{aligned}
 $$
@@ -156,7 +156,7 @@ by the uniform bound and step [](#s1-3){.pf-ref}.
 
 For every fixed $0<\delta<1$,
 $$
-\int_0^{1-\delta}|f_{n_k}(x)-f(x)|\,dx\longrightarrow0.
+\int_0^{1-\delta}\abs{f_{n_k}(x)-f(x)}\,dx\longrightarrow0.
 $$
 
 
@@ -168,7 +168,7 @@ $$
 $$
 for $0\le x\le1-\delta$. The same bound holds for $f(x)$ at almost every point by step [](#s1-2){.pf-ref}. Hence
 $$
-|f_{n_k}(x)-f(x)|\le\frac{2C}{\sqrt\delta}
+\abs{f_{n_k}(x)-f(x)}\le\frac{2C}{\sqrt\delta}
 $$
 almost everywhere on this finite interval. Step [](#s1-2){.pf-ref} gives pointwise convergence almost everywhere, so the dominated convergence theorem gives the asserted $L^1$ convergence on $[0,1-\delta]$.
 
@@ -189,11 +189,11 @@ $$
 $$
 By step [](#s1-5){.pf-ref}, for all sufficiently large $k$,
 $$
-\int_0^{1-\delta}|f_{n_k}-f|<\frac\varepsilon2.
+\int_0^{1-\delta}\abs{f_{n_k}-f}<\frac\varepsilon2.
 $$
 Step [](#s1-4){.pf-ref} then gives
 $$
-\|f_{n_k}-f\|_1<\varepsilon.
+\norm{f_{n_k}-f}_1<\varepsilon.
 $$
 
 :::

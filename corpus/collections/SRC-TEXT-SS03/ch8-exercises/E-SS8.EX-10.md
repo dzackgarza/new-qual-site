@@ -21,7 +21,7 @@ audit:
 10. Let $F : \halfplane \to \CC$ be a holomorphic function that satisfies
 
 $$
-| F (z) | \leq 1 \quad \text { and } \quad F (i) = 0.
+\abs{ F (z) } \leq 1 \quad \text { and } \quad F (i) = 0.
 $$
 
 Figure 11. Successive conformal maps in Exercise 8
@@ -29,7 +29,7 @@ Figure 11. Successive conformal maps in Exercise 8
 Prove that
 
 $$
-| F (z) | \leq \left| \frac {z - i}{z + i} \right| \quad \text {   for   all   } z \in \halfplane.
+\abs{ F (z) } \leq \abs{ \frac {z - i}{z + i} } \quad \text {   for   all   } z \in \halfplane.
 $$
 :::
 
@@ -42,13 +42,13 @@ This maps the upper half-plane biholomorphically onto the unit disc and satisfie
 $$
 g(w)=F(\phi^{-1}(w)),\qquad w\in\DD.
 $$
-Then $g$ is holomorphic on $\DD$, $|g(w)|\le1$, and $g(0)=F(i)=0$. By Schwarz's lemma,
+Then $g$ is holomorphic on $\DD$, $\abs{g(w)}\le1$, and $g(0)=F(i)=0$. By Schwarz's lemma,
 $$
-|g(w)|\le|w|.
+\abs{g(w)}\le\abs{w}.
 $$
 Taking $w=\phi(z)$ gives
 $$
-|F(z)|\le\left|\frac{z-i}{z+i}\right|,
+\abs{F(z)}\le\abs{\frac{z-i}{z+i}},
 \qquad z\in\halfplane.
 $$
 :::

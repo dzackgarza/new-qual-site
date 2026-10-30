@@ -35,7 +35,7 @@ If $f_n \to f$ uniformly, then $f_n \to f$ pointwise.
 
 ::: pf-proof
 
-$|f_n(x) - f(x)| \leq \sup_y|f_n(y) - f(y)| \to 0$ for each fixed $x$.
+$\abs{f_n(x) - f(x)} \leq \sup_y\abs{f_n(y) - f(y)} \to 0$ for each fixed $x$.
 
 :::
 
@@ -59,7 +59,7 @@ $f_n(x) = x^n$ on $[0,1]$ converges pointwise but not uniformly.
 
 ::: pf-proof
 
-$x^n \to 0$ for $0 \le x < 1$ and $1^n = 1$, so $f_n \to f$ pointwise with $f = 0$ on $[0,1)$ and $f(1) = 1$. At $x = 1 - 1/n$, $|f_n(x) - f(x)| = (1 - 1/n)^n \to e^{-1}$, so $\sup_{[0,1]}|f_n - f| \not\to 0$.
+$x^n \to 0$ for $0 \le x < 1$ and $1^n = 1$, so $f_n \to f$ pointwise with $f = 0$ on $[0,1)$ and $f(1) = 1$. At $x = 1 - 1/n$, $\abs{f_n(x) - f(x)} = (1 - 1/n)^n \to e^{-1}$, so $\sup_{[0,1]}\abs{f_n - f} \not\to 0$.
 
 :::
 
@@ -83,7 +83,7 @@ $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on every compact $K \subs
 
 ::: pf-proof
 
-Choose $M$ with $K \subseteq [-M, M]$. On $K$, $\left|\frac{x^n}{n!}\right| \le \frac{M^n}{n!}$, and $\sum_n \frac{M^n}{n!}$ converges by the ratio test, since $\frac{M^{n+1}/(n+1)!}{M^n/n!} = \frac{M}{n+1} \to 0$. The Weierstrass M-test gives uniform convergence on $K$.
+Choose $M$ with $K \subseteq [-M, M]$. On $K$, $\abs{\frac{x^n}{n!}} \le \frac{M^n}{n!}$, and $\sum_n \frac{M^n}{n!}$ converges by the ratio test, since $\frac{M^{n+1}/(n+1)!}{M^n/n!} = \frac{M}{n+1} \to 0$. The Weierstrass M-test gives uniform convergence on $K$.
 
 :::
 

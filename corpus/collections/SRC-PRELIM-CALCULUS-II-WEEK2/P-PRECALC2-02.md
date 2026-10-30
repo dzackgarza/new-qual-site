@@ -121,7 +121,7 @@ Substitute steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} into the original
 
 An antiderivative of $1/u$ on the interval $[-3,-2]$ is
 $$
-\boxed{\log|u|}.
+\boxed{\log\abs{u}}.
 $$
 
 
@@ -129,7 +129,7 @@ $$
 
 Since the interval does not contain $0$,
 $$
-\frac{d}{du}\log|u|
+\frac{d}{du}\log\abs{u}
 =
 \frac1u.
 $$
@@ -145,7 +145,7 @@ $$
 \begin{aligned}
 \int_{-3}^{-2}\frac{du}{u}
 &=
-\log|-2|-\log|-3|\\
+\log\abs{-2}-\log\abs{-3}\\
 &=
 \log2-\log3.
 \end{aligned}

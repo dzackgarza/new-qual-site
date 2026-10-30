@@ -58,7 +58,7 @@ $$
 m=f(1)=n f(1/n).
 $$
 Thus the integer $m$ is divisible by every positive integer $n$. The only
-integer with this property is $0$: if $m\ne0$, take $n>|m|$, which cannot
+integer with this property is $0$: if $m\ne0$, take $n>\abs{m}$, which cannot
 divide $m$. Hence
 $$
 f(1)=0.

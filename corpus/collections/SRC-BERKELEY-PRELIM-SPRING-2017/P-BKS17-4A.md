@@ -131,7 +131,7 @@ Regard $\CC$ as the oriented real plane. The signed area determinant of the orde
 $$
 \det_{\RR}(\omega_1,\omega_2)
 =
-|\omega_1|^2\Im\!\left(\frac{\omega_2}{\omega_1}\right).
+\abs{\omega_1}^2\Im\!\left(\frac{\omega_2}{\omega_1}\right).
 $$
 Thus the traversal in step [](#s1-2){.pf-ref} is counterclockwise exactly when $s=1$ and clockwise exactly when $s=-1$. Since $0$ lies in the interior by step [](#s1-1){.pf-ref}, its winding number is therefore $s$.
 

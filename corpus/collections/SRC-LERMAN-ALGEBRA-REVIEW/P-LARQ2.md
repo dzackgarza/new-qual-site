@@ -47,9 +47,9 @@ Every group of order $20$ has elements of orders $2$ and $5$.
 
 Since
 $$
-|G|=20=2^2\cdot5,
+\cardinality{G}=20=2^2\cdot5,
 $$
-both primes $2$ and $5$ divide $|G|$. Cauchy's theorem for finite groups therefore gives an element of order $2$ and an element of order $5$.
+both primes $2$ and $5$ divide $\cardinality{G}$. Cauchy's theorem for finite groups therefore gives an element of order $2$ and an element of order $5$.
 
 :::
 

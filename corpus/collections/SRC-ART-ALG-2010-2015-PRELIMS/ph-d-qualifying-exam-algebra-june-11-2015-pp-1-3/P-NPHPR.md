@@ -48,11 +48,11 @@ $$
 haH=aH\quad\text{for every }h\in H,
 $$
 or equivalently $a^{-1}Ha\subseteq H$. Both finite subgroups
-have order $|H|$, so this containment is equality. That equality
+have order $\cardinality{H}$, so this containment is equality. That equality
 is equivalent to $a\in N_P(H)$. Consequently the fixed-point
 set $X^H$ is the coset set $N_P(H)/H$, and
 $$
-|X^H|=[N_P(H):H].
+\cardinality{X^H}=[N_P(H):H].
 $$
 
 :::
@@ -72,11 +72,11 @@ orbit has power-of-$p$ size. Orbits of size one are the fixed
 points; every other orbit has size divisible by $p$. The orbit
 partition therefore gives
 $$
-|X|\equiv |X^H|\pmod p.
+\cardinality{X}\equiv \cardinality{X^H}\pmod p.
 $$
-The proper-subgroup hypothesis makes $|X|=[P:H]$ a power of
-$p$ greater than one, hence divisible by $p$. Thus $p\mid|X^H|$.
-The coset $H$ itself is fixed, so $|X^H|>0$ and $|X^H|\geq p$.
+The proper-subgroup hypothesis makes $\cardinality{X}=[P:H]$ a power of
+$p$ greater than one, hence divisible by $p$. Thus $p\mid\cardinality{X^H}$.
+The coset $H$ itself is fixed, so $\cardinality{X^H}>0$ and $\cardinality{X^H}\geq p$.
 The argument also covers $H=1$: then every orbit is a singleton,
 and the same count applies.
 
@@ -91,7 +91,7 @@ The containment $H\subseteq N_P(H)$ is strict.
 ::: pf-proof
 
 Every subgroup normalizes itself. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
-$[N_P(H):H]=|X^H|\geq p>1$, so $H\ne N_P(H)$.
+$[N_P(H):H]=\cardinality{X^H}\geq p>1$, so $H\ne N_P(H)$.
 
 :::
 

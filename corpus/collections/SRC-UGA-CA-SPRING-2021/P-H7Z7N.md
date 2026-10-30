@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $R$ be the intersection of the right half-plane and the outside of the circle $\abs{z - {1\over 2}} = {1\over 2}$ with the line segment $[1, 2]$ removed, i.e. 
 $$
-R = \theset{z\in \CC\st \Re(z) > 0,\,\, \abs{z-{1\over 2}} > {1\over 2} } \sm \theset{z \definedas x+iy \st 1\leq x\leq 2,\,\, y=0}
+R = \theset{z\in \CC\st \Re(z) > 0,\,\, \abs{z-{1\over 2}} > {1\over 2} } \sm \theset{z \coloneqq x+iy \st 1\leq x\leq 2,\,\, y=0}
 .$$
 Find a conformal map from $R$ to $\HH$ the upper half-plane.
 :::

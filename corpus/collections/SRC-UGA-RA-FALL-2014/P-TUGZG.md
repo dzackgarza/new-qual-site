@@ -50,21 +50,21 @@ Each $F_N$ is continuous because it is a finite sum of continuous functions, and
 
 Fix $x_0$ and $\varepsilon>0$. Choose $N$ so large that
 $$
-\sup_x|F(x)-F_N(x)|<\frac{\varepsilon}{3}.
+\sup_x\abs{F(x)-F_N(x)}<\frac{\varepsilon}{3}.
 $$
 By continuity of $F_N$ at $x_0$, there is $\delta>0$ such that
 $$
-|x-x_0|<\delta
+\abs{x-x_0}<\delta
 \quad\Longrightarrow\quad
-|F_N(x)-F_N(x_0)|<\frac{\varepsilon}{3}.
+\abs{F_N(x)-F_N(x_0)}<\frac{\varepsilon}{3}.
 $$
-Hence, whenever $|x-x_0|<\delta$,
+Hence, whenever $\abs{x-x_0}<\delta$,
 $$
 \begin{aligned}
-|F(x)-F(x_0)|
-&\le |F(x)-F_N(x)|
- +|F_N(x)-F_N(x_0)|
- +|F_N(x_0)-F(x_0)|\\
+\abs{F(x)-F(x_0)}
+&\le \abs{F(x)-F_N(x)}
+ +\abs{F_N(x)-F_N(x_0)}
+ +\abs{F_N(x_0)-F(x_0)}\\
 &<\varepsilon.
 \end{aligned}
 $$

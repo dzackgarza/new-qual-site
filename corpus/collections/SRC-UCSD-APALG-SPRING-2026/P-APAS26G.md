@@ -47,7 +47,7 @@ so
 $$
 A\chi_J
 =\left(\sum_{i=1}^3(-1)^{\mathbf 1_{i\in J}}\right)\chi_J
-=(3-2|J|)\chi_J.
+=(3-2\cardinality{J})\chi_J.
 $$
 Thus the eigenvalues are
 $$
@@ -61,7 +61,7 @@ respectively.
 
 An orthonormal basis of the eigenspace with eigenvalue $3-2k$ is
 $$
-\boxed{\{2^{-3/2}\chi_J:|J|=k\}}.
+\boxed{\{2^{-3/2}\chi_J:\cardinality{J}=k\}}.
 $$
 Explicitly:
 $$

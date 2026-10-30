@@ -59,15 +59,15 @@ Part (a): Perturbation of proper maps.
 
 ::: pf-step
 Let $n \in \ZZ_+$.
-Since $f(x) \to \infty$, there exists a compact $C \subset X$ such that $\|f(x)\| > n + 1$ for all $x \in X \setminus C$.
+Since $f(x) \to \infty$, there exists a compact $C \subset X$ such that $\norm{f(x)} > n + 1$ for all $x \in X \setminus C$.
 :::
 
 ::: pf-step
-Since $\bar{\rho}(f, g) < 1$, $\|f(x) - g(x)\| \le 1$ for all $x \in X$.
+Since $\bar{\rho}(f, g) < 1$, $\norm{f(x) - g(x)} \le 1$ for all $x \in X$.
 :::
 
 ::: pf-step
-For any $x \in X \setminus C$: $$\|g(x)\| \ge \|f(x)\| - \|f(x) - g(x)\| > (n + 1) - 1 = n.$$
+For any $x \in X \setminus C$: $$\norm{g(x)} \ge \norm{f(x)} - \norm{f(x) - g(x)} > (n + 1) - 1 = n.$$
 :::
 
 ::: pf-step
@@ -119,7 +119,7 @@ Part (c): Openness of $U_\varepsilon(C)$.
 ::: pf-proof
 
 ::: pf-step
-The condition $\Delta(f|_C) < \varepsilon$ is equivalent to saying that if $x_1, x_2 \in C$ with $d(x_1, x_2) \ge \varepsilon$, then $f(x_1) \neq f(x_2)$.
+The condition $\Delta(f\restrict_C) < \varepsilon$ is equivalent to saying that if $x_1, x_2 \in C$ with $d(x_1, x_2) \ge \varepsilon$, then $f(x_1) \neq f(x_2)$.
 :::
 
 ::: pf-step
@@ -127,11 +127,11 @@ The set $S = \{(x_1, x_2) \in C \times C : d(x_1, x_2) \ge \varepsilon\}$ is com
 :::
 
 ::: pf-step
-If $f \in U_\varepsilon(C)$, the continuous function $(x_1, x_2) \mapsto \|f(x_1) - f(x_2)\|$ is strictly positive on $S$, so it achieves a minimum $\delta = \min_S \|f(x_1) - f(x_2)\| > 0$.
+If $f \in U_\varepsilon(C)$, the continuous function $(x_1, x_2) \mapsto \norm{f(x_1) - f(x_2)}$ is strictly positive on $S$, so it achieves a minimum $\delta = \min_S \norm{f(x_1) - f(x_2)} > 0$.
 :::
 
 ::: pf-step
-If $\bar{\rho}(f, g) < \frac{\delta}{3}$, then for all $(x_1, x_2) \in S$: $$\|g(x_1) - g(x_2)\| \ge \|f(x_1) - f(x_2)\| - 2\bar{\rho}(f, g) \ge \delta - \frac{2\delta}{3} = \frac{\delta}{3} > 0.$$
+If $\bar{\rho}(f, g) < \frac{\delta}{3}$, then for all $(x_1, x_2) \in S$: $$\norm{g(x_1) - g(x_2)} \ge \norm{f(x_1) - f(x_2)} - 2\bar{\rho}(f, g) \ge \delta - \frac{2\delta}{3} = \frac{\delta}{3} > 0.$$
 :::
 
 ::: pf-step
@@ -152,16 +152,16 @@ Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \va
 :::
 
 ::: pf-step
-Given $f \in \mathcal{C}(X, \RR^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C}(C, \RR^N)$ such that $\|f|_C - g_0\| < \delta$ and $\Delta(g_0) < \varepsilon$.
+Given $f \in \mathcal{C}(X, \RR^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C}(C, \RR^N)$ such that $\norm{f\restrict_C - g_0} < \delta$ and $\Delta(g_0) < \varepsilon$.
 :::
 
 ::: pf-step
-By the Tietze Extension Theorem, extend the coordinate functions of $g_0 - f|_C: C \to [-\delta, \delta]^N$ to a continuous map $h: X \to [-\delta, \delta]^N$.
+By the Tietze Extension Theorem, extend the coordinate functions of $g_0 - f\restrict_C: C \to [-\delta, \delta]^N$ to a continuous map $h: X \to [-\delta, \delta]^N$.
 :::
 
 ::: pf-step
 Define $g = f + h \in \mathcal{C}(X, \RR^N)$.
-Then $\bar{\rho}(f, g) \le \delta$ and $g|_C = g_0 \in U_\varepsilon(C)$, proving density.
+Then $\bar{\rho}(f, g) \le \delta$ and $g\restrict_C = g_0 \in U_\varepsilon(C)$, proving density.
 :::
 
 :::

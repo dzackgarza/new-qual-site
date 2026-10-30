@@ -19,7 +19,7 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 
 (a) Show that an $R$-submodule $N$ of $M$ is maximal if and only if the quotient module $M/N$ is a **simple** $R$-module (that is, $M/N \ne \{0\}$ and $M/N$ has no submodules other than $\{0\}$ and $M/N$).
 
-(b) Let $M$ be a $\ZZ$-module (an abelian group). Show that a submodule $N \subseteq M$ is maximal if and only if the quotient $|M/N| = p$ for some prime number $p$.
+(b) Let $M$ be a $\ZZ$-module (an abelian group). Show that a submodule $N \subseteq M$ is maximal if and only if the quotient $\cardinality{M/N} = p$ for some prime number $p$.
 
 (c) Let $M = \mu_\infty = \{z \in \CC^\times : z^n = 1 \text{ for some } n \in \ZZ^+\}$ be the multiplicative group of all complex roots of unity, viewed as a $\ZZ$-module. Show that $M$ has no maximal $\ZZ$-submodules.
 :::
@@ -83,7 +83,7 @@ By Part (a), $N$ is maximal if and only if $A = M/N$ is a simple abelian group.
 
 ::: pf-step
 
-($\impliedby$): If $|A| = p$ is prime, then by Lagrange's Theorem the only subgroups of $A$ are $\{0\}$ and $A$. Since $p \ge 2$, $A \ne \{0\}$, so $A$ is simple.
+($\impliedby$): If $\cardinality{A} = p$ is prime, then by Lagrange's Theorem the only subgroups of $A$ are $\{0\}$ and $A$. Since $p \ge 2$, $A \ne \{0\}$, so $A$ is simple.
 
 :::
 
@@ -119,7 +119,7 @@ If $n$ is composite, let $p$ be a prime divisor of $n$ with $1 < p < n$. The sub
 
 ::: pf-step
 
-Therefore $n = p$ must be prime, so $|M/N| = |A| = p$.
+Therefore $n = p$ must be prime, so $\cardinality{M/N} = \cardinality{A} = p$.
 
 :::
 
@@ -141,7 +141,7 @@ Suppose for contradiction that $N \subset M$ is a maximal $\ZZ$-submodule (subgr
 
 ::: pf-step
 
-By Part (b), the quotient group $M/N$ has prime order $|M/N| = p$.
+By Part (b), the quotient group $M/N$ has prime order $\cardinality{M/N} = p$.
 
 :::
 

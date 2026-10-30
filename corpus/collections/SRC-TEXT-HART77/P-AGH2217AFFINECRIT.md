@@ -50,7 +50,7 @@ $$
 ::: pf-proof
 For each $i$, the restriction
 $$
-f_i=f|_{f^{-1}(U_i)}:f^{-1}(U_i)\longrightarrow U_i
+f_i=f\restrict_{f^{-1}(U_i)}:f^{-1}(U_i)\longrightarrow U_i
 $$
 is an isomorphism, so let $g_i=f_i^{-1}$.
 
@@ -70,11 +70,11 @@ The morphism $g$ is inverse to $f$; therefore $f$ is an isomorphism.
 ::: pf-proof
 On every $U_i$,
 $$
-(f\circ g)|_{U_i}=f_i\circ g_i=\id_{U_i},
+(f\circ g)\restrict_{U_i}=f_i\circ g_i=\id_{U_i},
 $$
 so $f\circ g=\id_Y$.  Likewise the opens $f^{-1}(U_i)$ cover $X$, and
 $$
-(g\circ f)|_{f^{-1}(U_i)}=g_i\circ f_i=\id_{f^{-1}(U_i)}.
+(g\circ f)\restrict_{f^{-1}(U_i)}=g_i\circ f_i=\id_{f^{-1}(U_i)}.
 $$
 Thus $g\circ f=\id_X$.
 :::
@@ -119,7 +119,7 @@ For all $i,j$,
 $$
 X_{f_i}\cap X_{f_j}=X_{f_if_j}.
 $$
-Inside the affine scheme $X_{f_i}$ this is the distinguished open where $f_j|_{X_{f_i}}$ is invertible.  Hence it is affine, and in particular quasi-compact.
+Inside the affine scheme $X_{f_i}$ this is the distinguished open where $f_j\restrict_{X_{f_i}}$ is invertible.  Hence it is affine, and in particular quasi-compact.
 :::
 
 :::

@@ -24,7 +24,7 @@ audit:
 
 (b) Let $f:\RR^n\to [0, \infty]$ and define
 $$
-\mca \definedas \theset{(x, t) \in \RR^n\cross \RR \suchthat 0\leq t \leq f(x)}.
+\mca \coloneqq \theset{(x, t) \in \RR^n\cross \RR \suchthat 0\leq t \leq f(x)}.
 $$
 Prove the validity of the following two statements:
 

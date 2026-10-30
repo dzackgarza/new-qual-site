@@ -79,13 +79,13 @@ Spaces with fundamental group $\pi_1 \cong \ZZ$ (infinite cyclic):
 
 ::: pf-step
 
-**(f) $\{x \in \RR^2 : \|x\| > 1\}$:** Deformation retracts radially onto the circle of radius 2 (or any circle of radius $r > 1$), so $\pi_1 \cong \ZZ$.
+**(f) $\{x \in \RR^2 : \norm{x} > 1\}$:** Deformation retracts radially onto the circle of radius 2 (or any circle of radius $r > 1$), so $\pi_1 \cong \ZZ$.
 
 :::
 
 ::: pf-step
 
-**(g) $\{x \in \RR^2 : \|x\| \ge 1\}$:** Deformation retracts radially onto the unit circle $S^1$, so $\pi_1 \cong \ZZ$.
+**(g) $\{x \in \RR^2 : \norm{x} \ge 1\}$:** Deformation retracts radially onto the unit circle $S^1$, so $\pi_1 \cong \ZZ$.
 
 :::
 
@@ -143,7 +143,7 @@ Spaces with fundamental group $\pi_1 \cong \{1\}$ (trivial):
 
 ::: pf-step
 
-**(h) $\{x \in \RR^2 : \|x\| < 1\}$:** The open unit disk is convex, hence contractible to the origin $\{0\}$, so $\pi_1 \cong \{1\}$.
+**(h) $\{x \in \RR^2 : \norm{x} < 1\}$:** The open unit disk is convex, hence contractible to the origin $\{0\}$, so $\pi_1 \cong \{1\}$.
 
 :::
 

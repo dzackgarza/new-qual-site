@@ -88,7 +88,7 @@ such that
 $$
 \gamma(t)-z
 =
-|\gamma(t)-z|e^{i\theta(t)}.
+\abs{\gamma(t)-z}e^{i\theta(t)}.
 $$
 Then
 $$

@@ -15,7 +15,7 @@ audit:
 
 ::: {.problem}
 Let $f$ be a nonconstant holomorphic function on a bounded open set $\Omega$, continuous on $\overline\Omega$.
-Show that either $f$ has a zero in $\Omega$ or $|f|$ assumes its minimum on $\partial\Omega$.
+Show that either $f$ has a zero in $\Omega$ or $\abs{f}$ assumes its minimum on $\partial\Omega$.
 :::
 
 ::: {.solution}
@@ -24,14 +24,14 @@ Show that either $f$ has a zero in $\Omega$ or $|f|$ assumes its minimum on $\pa
 
 ::: {.pf-step #s1-1}
 
-The function $|f|$ attains a minimum at some point
+The function $\abs{f}$ attains a minimum at some point
 $a\in\overline\Omega$.
 
 
 ::: pf-proof
 
 Because $f$ is nonconstant, $\Omega$ is nonempty. Since $\Omega$ is bounded,
-$\overline\Omega$ is compact. The function $|f|$ is continuous on
+$\overline\Omega$ is compact. The function $\abs{f}$ is continuous on
 $\overline\Omega$, so the extreme value theorem gives
 $a\in\overline\Omega$ such that
 $$
@@ -59,7 +59,7 @@ This is immediate.
 ::: {.pf-step #s1-3}
 
 Suppose that $f$ has no zero in $\Omega$. If $a\in\partial\Omega$, then
-$|f|$ assumes its minimum on $\partial\Omega$.
+$\abs{f}$ assumes its minimum on $\partial\Omega$.
 
 
 ::: pf-proof
@@ -91,7 +91,7 @@ $$
 \frac1{\abs{f(a)}}
 =\abs{g(a)}.
 $$
-Thus $|g|$ has a local maximum at the interior point $a$. The maximum modulus
+Thus $\abs{g}$ has a local maximum at the interior point $a$. The maximum modulus
 principle makes $g$, and hence $f$, constant on the domain $U$.
 
 :::
@@ -101,7 +101,7 @@ principle makes $g$, and hence $f$, constant on the domain $U$.
 ::: {.pf-step #s1-5}
 
 Under the hypotheses of step [](#s1-4){.pf-ref}, there is a point
-$b\in\partial\Omega$ such that $|f(b)|=|f(a)|$.
+$b\in\partial\Omega$ such that $\abs{f(b)}=\abs{f(a)}$.
 
 
 ::: pf-proof
@@ -131,7 +131,7 @@ Hence $b\in\partial\Omega$ and $\abs{f(b)}=\abs{f(a)}$.
 
 ::: {.pf-step #s1-6}
 
-If $f$ has no zero in $\Omega$, then $|f|$ assumes its minimum on
+If $f$ has no zero in $\Omega$, then $\abs{f}$ assumes its minimum on
 $\partial\Omega$.
 
 

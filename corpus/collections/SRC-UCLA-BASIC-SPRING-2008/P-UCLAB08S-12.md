@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $A=(a_{ij})$ be a real symmetric $n\times n$ matrix and let
 $$
-S=\{x\in\RR^n:\|x\|=1\}.
+S=\{x\in\RR^n:\norm{x}=1\}.
 $$
 Choose $x\in S$ such that
 $$
@@ -84,7 +84,7 @@ $$
 u_\varepsilon
 =
 \frac{x+\varepsilon y}
-{\|x+\varepsilon y\|}.
+{\norm{x+\varepsilon y}}.
 $$
 Then
 $$
@@ -95,7 +95,7 @@ $$
 
 Since
 $$
-\|x\|=1
+\norm{x}=1
 $$
 and
 $$
@@ -103,9 +103,9 @@ $$
 $$
 one has
 $$
-\|x+\varepsilon y\|^2
+\norm{x+\varepsilon y}^2
 =
-1+\varepsilon^2\|y\|^2
+1+\varepsilon^2\norm{y}^2
 >
 0.
 $$
@@ -192,7 +192,7 @@ $$
 +
 \varepsilon^2
 \bigl(
-(Ay,y)-\lambda\|y\|^2
+(Ay,y)-\lambda\norm{y}^2
 \bigr)
 \le
 0.
@@ -205,16 +205,16 @@ $$
 \frac{
 (A(x+\varepsilon y),x+\varepsilon y)
 }{
-\|x+\varepsilon y\|^2
+\norm{x+\varepsilon y}^2
 }
 \le
 \lambda.
 $$
 By orthogonality,
 $$
-\|x+\varepsilon y\|^2
+\norm{x+\varepsilon y}^2
 =
-1+\varepsilon^2\|y\|^2.
+1+\varepsilon^2\norm{y}^2.
 $$
 Insert the expansion from step [](#p2-s3){.pf-ref} and multiply by the positive denominator:
 $$
@@ -226,7 +226,7 @@ $$
 \le
 \lambda
 +
-\lambda\varepsilon^2\|y\|^2.
+\lambda\varepsilon^2\norm{y}^2.
 $$
 Rearranging gives the claimed inequality.
 
@@ -259,7 +259,7 @@ a=(Ax,y)
 $$
 and
 $$
-b=(Ay,y)-\lambda\|y\|^2.
+b=(Ay,y)-\lambda\norm{y}^2.
 $$
 The inequality says
 $$
@@ -268,15 +268,15 @@ $$
 for every $\varepsilon$.
 Choose $\varepsilon$ with the same sign as $a$ and sufficiently small that
 $$
-|b\varepsilon|<|a|.
+\abs{b\varepsilon}<\abs{a}.
 $$
 Then
 $$
 2a\varepsilon+b\varepsilon^2
 \ge
-2|a||\varepsilon|-|b|\varepsilon^2
+2\abs{a}\abs{\varepsilon}-\abs{b}\varepsilon^2
 >
-|a||\varepsilon|
+\abs{a}\abs{\varepsilon}
 >
 0,
 $$
@@ -338,7 +338,7 @@ Ax=\mu x.
 $$
 Taking inner products with $x$ and using
 $$
-\|x\|=1,
+\norm{x}=1,
 $$
 gives
 $$
@@ -398,7 +398,7 @@ $$
 
 The restriction
 $$
-A|_{x^\perp}:x^\perp\to x^\perp
+A\restrict_{x^\perp}:x^\perp\to x^\perp
 $$
 is symmetric.
 

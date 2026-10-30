@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(March 2007) Let $p,q\ge 2$ be prime numbers, and let $G$ be a group of order $|G|=pq$.
+(March 2007) Let $p,q\ge 2$ be prime numbers, and let $G$ be a group of order $\cardinality{G}=pq$.
 Let $H\subsetneq G$ be a proper subgroup (i.e., $H$ is a subgroup but is not the full group $G$). Prove that $H$ is cyclic.
 :::
 
@@ -34,13 +34,13 @@ $$
 ::: pf-proof
 By Lagrange's theorem,
 $$
-|H|\mid |G|=pq.
+\cardinality{H}\mid \cardinality{G}=pq.
 $$
 Thus
 $$
-|H|\in\{1,p,q,pq\}.
+\cardinality{H}\in\{1,p,q,pq\}.
 $$
-Since $H\subsetneq G$, one has $|H|<pq$, so the case $|H|=pq$ is excluded.
+Since $H\subsetneq G$, one has $\cardinality{H}<pq$, so the case $\cardinality{H}=pq$ is excluded.
 :::
 
 :::
@@ -49,11 +49,11 @@ Since $H\subsetneq G$, one has $|H|<pq$, so the case $|H|=pq$ is excluded.
 In every remaining case, $H$ is cyclic.
 
 ::: pf-proof
-If $|H|=1$, then
+If $\cardinality{H}=1$, then
 $$
 H=\{e\}=\langle e\rangle.
 $$
-If $|H|=p$ or $|H|=q$, then $H$ has prime order. Any nonidentity element of a finite group of prime order has order equal to the whole group order by Lagrange's theorem, and hence generates the group. Therefore $H$ is cyclic.
+If $\cardinality{H}=p$ or $\cardinality{H}=q$, then $H$ has prime order. Any nonidentity element of a finite group of prime order has order equal to the whole group order by Lagrange's theorem, and hence generates the group. Therefore $H$ is cyclic.
 :::
 
 :::

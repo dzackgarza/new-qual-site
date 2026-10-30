@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-6QCZ5
 kind: problem
-title: Measurability of $f(x)$ and $f(x-y)g(y)$ on $\RR^n\times\RR^n$, and $\|f*g\|_p\le\|g\|_1\|f\|_p$
-  for $p=1,2,\infty$ when $f\in L^1\cap L^\infty$ and $g\in L^1$
+title: Measurability of $f(x)$ and $f(x-y)g(y)$ on $\RR^n\times\RR^n$, and $\norm{f*g}_p\le\norm{g}_1\norm{f}_p$ for $p=1,2,\infty$ when $f\in L^1\cap L^\infty$ and $g\in L^1$
 classification:
   areas:
   - real-analysis
@@ -67,11 +66,11 @@ Let $T(x,y) = (x - y, y)$, an invertible linear map of $\RR^{2n}$ with determina
 
 ::: {.pf-step #s3}
 
-For $f \in L^1 \cap L^\infty$ and $g \in L^1$, $f\ast g(x) = \int f(x-y)g(y)\,dy$ is defined for every $x$, and $\|f \ast g\|_\infty \le \|g\|_1\|f\|_\infty$.
+For $f \in L^1 \cap L^\infty$ and $g \in L^1$, $f\ast g(x) = \int f(x-y)g(y)\,dy$ is defined for every $x$, and $\norm{f \ast g}_\infty \le \norm{g}_1\norm{f}_\infty$.
 
 ::: pf-proof
 
-$\int|f(x-y)||g(y)|\,dy \le \|f\|_\infty\|g\|_1 < \infty$ for every $x$.
+$\int\abs{f(x-y)}\abs{g(y)}\,dy \le \norm{f}_\infty\norm{g}_1 < \infty$ for every $x$.
 
 :::
 
@@ -79,11 +78,11 @@ $\int|f(x-y)||g(y)|\,dy \le \|f\|_\infty\|g\|_1 < \infty$ for every $x$.
 
 ::: {.pf-step #s4}
 
-$\|f \ast g\|_1 \le \|g\|_1\|f\|_1$.
+$\norm{f \ast g}_1 \le \norm{g}_1\norm{f}_1$.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref} and Tonelli's theorem, $\int|f\ast g(x)|\,dx \le \iint |f(x-y)||g(y)|\,dy\,dx = \int|g(y)|\int|f(x-y)|\,dx\,dy = \|f\|_1\|g\|_1$, using translation invariance of the inner integral.
+By step [](#s2){.pf-ref} and Tonelli's theorem, $\int\abs{f\ast g(x)}\,dx \le \iint \abs{f(x-y)}\abs{g(y)}\,dy\,dx = \int\abs{g(y)}\int\abs{f(x-y)}\,dx\,dy = \norm{f}_1\norm{g}_1$, using translation invariance of the inner integral.
 
 :::
 
@@ -91,11 +90,11 @@ By step [](#s2){.pf-ref} and Tonelli's theorem, $\int|f\ast g(x)|\,dx \le \iint 
 
 ::: {.pf-step #s5}
 
-$|f \ast g(x)|^2 \le \|g\|_1\,(|f|^2 \ast |g|)(x)$.
+$\abs{f \ast g(x)}^2 \le \norm{g}_1\,(\abs{f}^2 \ast \abs{g})(x)$.
 
 ::: pf-proof
 
-Write $|f(x-y)g(y)| = |f(x-y)|\,|g(y)|^{1/2}\cdot|g(y)|^{1/2}$. The Cauchy--Schwarz inequality in $y$ gives $|f\ast g(x)|^2 \le \left(\int|f(x-y)|^2|g(y)|\,dy\right)\left(\int|g(y)|\,dy\right)$.
+Write $\abs{f(x-y)g(y)} = \abs{f(x-y)}\,\abs{g(y)}^{1/2}\cdot\abs{g(y)}^{1/2}$. The Cauchy--Schwarz inequality in $y$ gives $\abs{f\ast g(x)}^2 \le \left(\int\abs{f(x-y)}^2\abs{g(y)}\,dy\right)\left(\int\abs{g(y)}\,dy\right)$.
 
 :::
 
@@ -103,11 +102,11 @@ Write $|f(x-y)g(y)| = |f(x-y)|\,|g(y)|^{1/2}\cdot|g(y)|^{1/2}$. The Cauchy--Schw
 
 ::: {.pf-step #s6}
 
-$\|f \ast g\|_2 \le \|g\|_1\|f\|_2$.
+$\norm{f \ast g}_2 \le \norm{g}_1\norm{f}_2$.
 
 ::: pf-proof
 
-$|f|^2 \le \|f\|_\infty|f|$, so $|f|^2 \in L^1$ with $\||f|^2\|_1 = \|f\|_2^2$. Integrating step [](#s5){.pf-ref} and applying step [](#s4){.pf-ref} to $|f|^2$ and $|g|$ gives $\|f \ast g\|_2^2 \le \|g\|_1\,\||f|^2 \ast |g|\|_1 \le \|g\|_1^2\|f\|_2^2$.
+$\abs{f}^2 \le \norm{f}_\infty\abs{f}$, so $\abs{f}^2 \in L^1$ with $\norm{\abs{f}^2}_1 = \norm{f}_2^2$. Integrating step [](#s5){.pf-ref} and applying step [](#s4){.pf-ref} to $\abs{f}^2$ and $\abs{g}$ gives $\norm{f \ast g}_2^2 \le \norm{g}_1\,\norm{\abs{f}^2 \ast \abs{g}}_1 \le \norm{g}_1^2\norm{f}_2^2$.
 
 :::
 

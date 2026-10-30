@@ -51,15 +51,15 @@ whenever the series converges.
 
 ::: {.pf-step #s1}
 
-The series converges absolutely for every $z$ with $|z|<1$.
+The series converges absolutely for every $z$ with $\abs{z}<1$.
 
 ::: pf-proof
 
-Let $r=|z|<1$. Then
+Let $r=\abs{z}<1$. Then
 $$
-\left|
+\abs{
 \frac{z^{3^n}-z^{2\cdot3^n}}{n}
-\right|
+}
 \le
 \frac{r^{3^n}+r^{2\cdot3^n}}{n}
 \le
@@ -180,7 +180,7 @@ $D$.
 Let $\delta>0$ and $M>0$. Since
 $e^{i\theta_k}\to1$, choose $k$ so large that
 $$
-|e^{i\theta_k}-1|<\frac{\delta}{2}.
+\abs{e^{i\theta_k}-1}<\frac{\delta}{2}.
 $$
 By step [](#s4){.pf-ref}, choose $r<1$ sufficiently close to $1$ that
 $$
@@ -190,13 +190,13 @@ $$
 $$
 Then $z=re^{i\theta_k}$ lies in the open unit disk and
 $$
-|z-1|
+\abs{z-1}
 \le
-|z-e^{i\theta_k}|+|e^{i\theta_k}-1|
+\abs{z-e^{i\theta_k}}+\abs{e^{i\theta_k}-1}
 <
 \delta.
 $$
-Also $|F(z)|\ge|\Re F(z)|>M$. Thus values of $F$ are arbitrarily large
+Also $\abs{F(z)}\ge\abs{\Re F(z)}>M$. Thus values of $F$ are arbitrarily large
 in modulus in every neighborhood of $1$.
 
 :::

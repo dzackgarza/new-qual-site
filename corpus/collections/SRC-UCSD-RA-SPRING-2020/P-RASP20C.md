@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Consider the Lebesgue measure $m$ on $[0,1]$ and denote by $\|\cdot\|_p$ the $L^p([0,1])$-norm for any $p \in [1, \infty]$.
-Define $B = \{f \in L^2([0,1]) : \|f\|_2 \leq 1\}$.
+Consider the Lebesgue measure $m$ on $[0,1]$ and denote by $\norm{\cdot}_p$ the $L^p([0,1])$-norm for any $p \in [1, \infty]$.
+Define $B = \{f \in L^2([0,1]) : \norm{f}_2 \leq 1\}$.
 Prove that, with respect to the $L^1([0,1])$-norm, $B$ is closed and has an empty interior.
 :::
 
@@ -48,13 +48,13 @@ Passing to a subsequence, still denoted $(f_n)$, we may assume
 $$
 f_n(x)\to f(x)
 $$
-for almost every $x\in[0,1]$. Since $\|f_n\|_2\le1$, Fatou's lemma gives
+for almost every $x\in[0,1]$. Since $\norm{f_n}_2\le1$, Fatou's lemma gives
 $$
-\int_0^1|f|^2\,dx
-\le \liminf_{n\to\infty}\int_0^1|f_n|^2\,dx
+\int_0^1\abs{f}^2\,dx
+\le \liminf_{n\to\infty}\int_0^1\abs{f_n}^2\,dx
 \le1.
 $$
-Hence $f\in L^2([0,1])$ and $\|f\|_2\le1$, so $f\in B$. Therefore $B$ is $L^1$-closed.
+Hence $f\in L^2([0,1])$ and $\norm{f}_2\le1$, so $f\in B$. Therefore $B$ is $L^1$-closed.
 
 :::
 
@@ -72,18 +72,18 @@ h(x)=c\,x^{-1/2}\mathbf1_{(0,1)}(x),
 $$
 where $c>0$ is chosen so that $2c<\varepsilon$. Then
 $$
-\|h\|_1=2c<\varepsilon,
+\norm{h}_1=2c<\varepsilon,
 $$
 but
 $$
-\int_0^1|h(x)|^2\,dx
+\int_0^1\abs{h(x)}^2\,dx
 =c^2\int_0^1\frac{dx}{x}=\infty,
 $$
 so $h\notin L^2$.
 
 Now
 $$
-\|(f+h)-f\|_1=\|h\|_1<\varepsilon.
+\norm{(f+h)-f}_1=\norm{h}_1<\varepsilon.
 $$
 If $f+h\in L^2$, then
 $$

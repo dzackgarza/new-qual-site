@@ -98,7 +98,7 @@ K_X=\frac{K_X\cdot H}{H^2}H+z,
 $$
 and define the positive-definite norm on $H^\perp$ by
 $$
-\|v\|^2=-v^2.
+\norm{v}^2=-v^2.
 $$
 If $C$ is an irreducible curve and $h=C\cdot H$, writing
 $$
@@ -107,9 +107,9 @@ C=\frac h{H^2}H+y,
 $$
 gives
 $$
-\|y\|^2
+\norm{y}^2
 \leq
-2+\frac{h^2+h(K_X\cdot H)}{H^2}+\|z\|\,\|y\|.
+2+\frac{h^2+h(K_X\cdot H)}{H^2}+\norm{z}\,\norm{y}.
 $$
 
 ::: pf-proof
@@ -124,7 +124,7 @@ C^2+K_X\cdot C\geq-2.
 $$
 Using the orthogonal decompositions in step [](#s2){.pf-ref},
 $$
-C^2=\frac{h^2}{H^2}-\|y\|^2
+C^2=\frac{h^2}{H^2}-\norm{y}^2
 $$
 and
 $$
@@ -134,7 +134,7 @@ K_X\cdot C
 $$
 Therefore
 $$
-\|y\|^2
+\norm{y}^2
 \leq
 2+\frac{h^2+h(K_X\cdot H)}{H^2}+z\cdot y.
 $$
@@ -144,7 +144,7 @@ $$
 $$
 on $H^\perp$ satisfies Cauchy--Schwarz, so
 $$
-z\cdot y\leq|z\cdot y|\leq\|z\|\,\|y\|.
+z\cdot y\leq\abs{z\cdot y}\leq\norm{z}\,\norm{y}.
 $$
 Substitution proves the displayed estimate.
 
@@ -171,15 +171,15 @@ belongs to the finite set $\{1,\ldots,d\}$. In step [](#s2){.pf-ref} the quantit
 $$
 A_h=2+\frac{h^2+h(K_X\cdot H)}{H^2}
 $$
-therefore ranges over a finite set of real numbers. If $t=\|y\|$, the estimate
+therefore ranges over a finite set of real numbers. If $t=\norm{y}$, the estimate
 of step [](#s2){.pf-ref} is
 $$
-t^2-\|z\|t\leq A_h.
+t^2-\norm{z}t\leq A_h.
 $$
 The left side tends to $+\infty$ as $t\to+\infty$. Hence there is a constant
 $R_d$ such that every such curve has
 $$
-\|y\|\leq R_d.
+\norm{y}\leq R_d.
 $$
 Its coefficient $h/H^2$ in the $H$-direction is also bounded because
 $1\leq h\leq d$. Thus all these classes lie in a bounded subset of $N_\RR$.
@@ -367,7 +367,7 @@ displayed equality follows.
 
 The automorphism group of $C$ is finite:
 $$
-\boxed{|\Aut C|<\infty}.
+\boxed{\cardinality{\Aut C}<\infty}.
 $$
 
 ::: pf-proof

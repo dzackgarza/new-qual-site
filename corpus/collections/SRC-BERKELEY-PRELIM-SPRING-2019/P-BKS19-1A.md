@@ -89,7 +89,7 @@ c_0e^t
 y(t)-c_1e^{\omega t}-c_2e^{\overline\omega t}
 \longrightarrow0.
 $$
-If $c_0\neq0$, then $|c_0e^t|=|c_0|e^t\to\infty$, a contradiction. Thus $c_0=0$.
+If $c_0\neq0$, then $\abs{c_0e^t}=\abs{c_0}e^t\to\infty$, a contradiction. Thus $c_0=0$.
 
 :::
 

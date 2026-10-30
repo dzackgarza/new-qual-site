@@ -22,7 +22,7 @@ Given $n$ and $\epsilon$, define a continuous function $f: I \to \RR$ such that 
 :::
 
 ::: {.solution}
-Here $U_n = \{f \in \mathcal{C}(I, \RR) : \forall x \in I, \exists t \in I, 0 < |x - t| < \frac{1}{n} \text{ and } |\frac{f(x) - f(t)}{x - t}| > n\}$.
+Here $U_n = \{f \in \mathcal{C}(I, \RR) : \forall x \in I, \exists t \in I, 0 < \abs{x - t} < \frac{1}{n} \text{ and } \abs{\frac{f(x) - f(t)}{x - t}} > n\}$.
 
 ::: pf
 
@@ -48,7 +48,7 @@ Construction of the sawtooth function $f$:
 ::: pf-step
 
 Uniform bound on $f$:
-    For all $x \in [0, 1]$, $0 \le f(x) \le \varepsilon$, so $|f(x)| \le \varepsilon$.
+    For all $x \in [0, 1]$, $0 \le f(x) \le \varepsilon$, so $\abs{f(x)} \le \varepsilon$.
     *Proof:* On each subinterval $[t_{j-1}, t_j]$, $f$ is linear with endpoint values in $\{0, \varepsilon\}$. By convexity, $0 \le f(x) \le \varepsilon$.
 
 :::
@@ -56,7 +56,7 @@ Uniform bound on $f$:
 ::: pf-step
 
 Secant slope property ($f \in U_n$):
-    For every $x \in [0, 1]$, there exists $t \in [0, 1]$ such that $0 < |x - t| < \frac{1}{n}$ and $\left|\frac{f(x) - f(t)}{x - t}\right| > n$.
+    For every $x \in [0, 1]$, there exists $t \in [0, 1]$ such that $0 < \abs{x - t} < \frac{1}{n}$ and $\abs{\frac{f(x) - f(t)}{x - t}} > n$.
     *Proof:*
 
 ::: pf-proof
@@ -70,19 +70,19 @@ For any $x \in [0, 1]$, $x$ belongs to some subinterval $[t_{j-1}, t_j]$ of leng
 ::: pf-step
 
 The function $f$ is strictly linear on $[t_{j-1}, t_j]$ with constant slope magnitude:
-        $$\left|\frac{f(t_j) - f(t_{j-1})}{t_j - t_{j-1}}\right| = \frac{\varepsilon}{h} = 2k\varepsilon > 4n > n.$$
+        $$\abs{\frac{f(t_j) - f(t_{j-1})}{t_j - t_{j-1}}} = \frac{\varepsilon}{h} = 2k\varepsilon > 4n > n.$$
 
 :::
 
 ::: pf-step
 
-If $x \neq t_j$, choose $t = t_j$. Then $0 < |t - x| \le h < \frac{1}{n}$, and by linearity on $[t_{j-1}, t_j]$, $\left|\frac{f(x) - f(t)}{x - t}\right| = \frac{\varepsilon}{h} > n$.
+If $x \neq t_j$, choose $t = t_j$. Then $0 < \abs{t - x} \le h < \frac{1}{n}$, and by linearity on $[t_{j-1}, t_j]$, $\abs{\frac{f(x) - f(t)}{x - t}} = \frac{\varepsilon}{h} > n$.
 
 :::
 
 ::: pf-step
 
-If $x = t_j$, choose $t = t_{j-1}$ (or $t_{j+1}$ if $j = 0$). Then $0 < |t - x| = h < \frac{1}{n}$, and the secant slope is $\frac{\varepsilon}{h} > n$.
+If $x = t_j$, choose $t = t_{j-1}$ (or $t_{j+1}$ if $j = 0$). Then $0 < \abs{t - x} = h < \frac{1}{n}$, and the secant slope is $\frac{\varepsilon}{h} > n$.
 
 :::
 
@@ -98,5 +98,5 @@ Hence $f \in U_n$.
 
 :::
 
-    By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the continuous function $f$ satisfies $f \in U_n$ and $|f(x)| \le \varepsilon$ for all $x \in [0, 1]$.
+    By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the continuous function $f$ satisfies $f \in U_n$ and $\abs{f(x)} \le \varepsilon$ for all $x \in [0, 1]$.
 :::

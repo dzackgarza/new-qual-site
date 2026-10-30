@@ -34,7 +34,7 @@ Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \RR ) \to L ^ { 1
 :::
 
 ::: {.solution}
-Write $\tau_hg(y)\definedas g(y-h)$ and $\norm\cdot_p$ for the $L^p(\RR)$ norm.
+Write $\tau_hg(y)\coloneqq g(y-h)$ and $\norm\cdot_p$ for the $L^p(\RR)$ norm.
 
 ::: pf
 

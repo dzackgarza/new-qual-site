@@ -61,7 +61,7 @@ In particular, for a geometric point $\bar y\to Y$,
 $$
 (R^if_*\mathcal F)_{\bar y}
 \cong
-H^i_{\acute{e}tale}(X_{\bar y},\mathcal F|_{X_{\bar y}}).
+H^i_{\acute{e}tale}(X_{\bar y},\mathcal F\restrict_{X_{\bar y}}).
 $$
 :::
 

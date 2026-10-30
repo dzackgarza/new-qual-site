@@ -110,7 +110,7 @@ Replace the left side of the inequality in step [](#s1-3){.pf-ref} by the assume
 
 ::: {.pf-step #s1-5}
 
-The inequality in step [](#s1-4){.pf-ref} is false for sufficiently large $|y|$.
+The inequality in step [](#s1-4){.pf-ref} is false for sufficiently large $\abs{y}$.
 
 
 ::: pf-proof

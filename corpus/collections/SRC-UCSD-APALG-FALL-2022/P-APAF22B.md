@@ -36,9 +36,9 @@ $$
 is upper-triangular, i.e., a Schur decomposition.
 Finally let $\sigma_1 \geq \cdots \geq \sigma_n$ denote the singular values of $\phi$, with multiplicity.
 
-(a) By considering $\|\phi\|_{\mathrm{Frob}}$, or otherwise, prove that $\sum_{i=1}^{n} |\lambda_i|^2 \leq \sum_{i=1}^{n} \sigma_i^2$.
+(a) By considering $\norm{\phi}_{\mathrm{Frob}}$, or otherwise, prove that $\sum_{i=1}^{n} \abs{\lambda_i}^2 \leq \sum_{i=1}^{n} \sigma_i^2$.
 
-(b) Suppose now that $\sum_{i=1}^{n} |\lambda_i|^2 = \sum_{i=1}^{n} \sigma_i^2$.
+(b) Suppose now that $\sum_{i=1}^{n} \abs{\lambda_i}^2 = \sum_{i=1}^{n} \sigma_i^2$.
 By considering $A$, or otherwise, prove that $\phi$ is normal.
 :::
 
@@ -49,15 +49,15 @@ By considering $A$, or otherwise, prove that $\phi$ is normal.
 ::: {.pf-step #frobenius-norm-of-a-decomposition}
 The squared Frobenius norm of $A$ is
 $$
-\|A\|_{\mathrm{Frob}}^2
-=\sum_{i=1}^n|\lambda_i|^2+
-\sum_{1\le i<j\le n}|a_{ij}|^2.
+\norm{A}_{\mathrm{Frob}}^2
+=\sum_{i=1}^n\abs{\lambda_i}^2+
+\sum_{1\le i<j\le n}\abs{a_{ij}}^2.
 $$
 
 ::: pf-proof
 Because $A$ is upper triangular, its only possibly nonzero entries are the diagonal entries $\lambda_i$ and the entries $a_{ij}$ with $i<j$. By definition,
 $$
-\|A\|_{\mathrm{Frob}}^2=\sum_{i,j}|a_{ij}|^2,
+\norm{A}_{\mathrm{Frob}}^2=\sum_{i,j}\abs{a_{ij}}^2,
 $$
 which gives the displayed decomposition.
 :::
@@ -67,13 +67,13 @@ which gives the displayed decomposition.
 ::: {.pf-step #frobenius-norm-equals-sum-singular-squares}
 One also has
 $$
-\|A\|_{\mathrm{Frob}}^2=\sum_{i=1}^n\sigma_i^2.
+\norm{A}_{\mathrm{Frob}}^2=\sum_{i=1}^n\sigma_i^2.
 $$
 
 ::: pf-proof
 Since $B$ is orthonormal, $A$ is the matrix of $\phi$ in an orthonormal basis. The Frobenius norm is unitarily invariant, and
 $$
-\|A\|_{\mathrm{Frob}}^2
+\norm{A}_{\mathrm{Frob}}^2
 =\operatorname{tr}(A^*A).
 $$
 The eigenvalues of $A^*A$ are the squares $\sigma_1^2,\ldots,\sigma_n^2$ of the singular values, counted with multiplicity. Therefore
@@ -87,14 +87,14 @@ $$
 ::: {.pf-step #eigenvalue-singular-value-inequality}
 Hence
 $$
-\boxed{\sum_{i=1}^n|\lambda_i|^2\le\sum_{i=1}^n\sigma_i^2}.
+\boxed{\sum_{i=1}^n\abs{\lambda_i}^2\le\sum_{i=1}^n\sigma_i^2}.
 $$
 
 ::: pf-proof
 Combine steps [](#frobenius-norm-of-a-decomposition){.pf-ref} and [](#frobenius-norm-equals-sum-singular-squares){.pf-ref}:
 $$
 \sum_{i=1}^n\sigma_i^2
-=\sum_{i=1}^n|\lambda_i|^2+\sum_{i<j}|a_{ij}|^2.
+=\sum_{i=1}^n\abs{\lambda_i}^2+\sum_{i<j}\abs{a_{ij}}^2.
 $$
 The second sum on the right is nonnegative, which gives the inequality.
 :::
@@ -107,7 +107,7 @@ If equality holds in step [](#eigenvalue-singular-value-inequality){.pf-ref}, th
 ::: pf-proof
 Under the equality hypothesis,
 $$
-0=\sum_{i<j}|a_{ij}|^2.
+0=\sum_{i<j}\abs{a_{ij}}^2.
 $$
 Every summand is nonnegative, so each $a_{ij}=0$ for $i<j$. Since $A$ is already upper triangular, all off-diagonal entries vanish and
 $$

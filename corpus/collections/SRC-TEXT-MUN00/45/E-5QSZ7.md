@@ -142,7 +142,7 @@ Let $x_0 \in \RR$ and $\varepsilon > 0$.
 
 ::: pf-step
 
-By hypothesis, there exists an open neighborhood $U_0 \ni x_0$ and a constant $M > 0$ such that $|f'(t)| \le M$ for all $f \in \mathcal{F}$ and all $t \in U_0$.
+By hypothesis, there exists an open neighborhood $U_0 \ni x_0$ and a constant $M > 0$ such that $\abs{f'(t)} \le M$ for all $f \in \mathcal{F}$ and all $t \in U_0$.
 
 :::
 
@@ -155,19 +155,19 @@ Choose $\delta > 0$ such that the interval $U = (x_0 - \delta, x_0 + \delta) \su
 ::: pf-step
 
 For any $x \in U$ and any $f \in \mathcal{F}$, by the Mean Value Theorem, there exists a point $c$ strictly between $x$ and $x_0$ such that:
-        $$|f(x) - f(x_0)| = |f'(c)| |x - x_0|.$$
+        $$\abs{f(x) - f(x_0)} = \abs{f'(c)} \abs{x - x_0}.$$
 
 :::
 
 ::: pf-step
 
-Since $c \in U \subseteq U_0$, $|f'(c)| \le M$.
+Since $c \in U \subseteq U_0$, $\abs{f'(c)} \le M$.
 
 :::
 
 ::: pf-step
 
-Consequently, $|f(x) - f(x_0)| \le M |x - x_0| < M \delta < \varepsilon$.
+Consequently, $\abs{f(x) - f(x_0)} \le M \abs{x - x_0} < M \delta < \varepsilon$.
 
 :::
 

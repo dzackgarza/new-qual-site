@@ -40,7 +40,7 @@ Over $k = \FF_p(t)$, $\Spec k[x]/(x^p - t)$ is integral, and after base change t
 :::
 
 ::: {.remark}
-The fibre $X_y$ is a scheme over $\kappa(y)$; for $f$ proper and $\mcf$ coherent on $X$, the groups $H^i(X_y,\mcf|_{X_y})$ are finite-dimensional $\kappa(y)$-vector spaces.
+The fibre $X_y$ is a scheme over $\kappa(y)$; for $f$ proper and $\mcf$ coherent on $X$, the groups $H^i(X_y,\mcf\restrict_{X_y})$ are finite-dimensional $\kappa(y)$-vector spaces.
 Base change to $\Spec\OO_{Y,y}$ instead retains the part of the family over the generalisations of $y$.
 
 The underlying space of $X_y$ is homeomorphic to $f^{-1}(y)$, while the scheme structure records multiplicity and residue-field information.

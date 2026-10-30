@@ -36,9 +36,9 @@ audit:
 ::: {.problem}
 Let $X$ be a ruled surface with invariant $e$ over an elliptic curve $C$, and let $\mfb$ be a divisor on $C$.
 
-a. If $\deg \mfb \geqslant e+2$, then there is a section $D \sim C_0+\mfb f$ such that $|D|$ has no base points.
+a. If $\deg \mfb \geqslant e+2$, then there is a section $D \sim C_0+\mfb f$ such that $\linearsystem{D}$ has no base points.
 
-b. The linear system $\left|C_0+\mfb f\right|$ is very ample if and only if $\deg \mfb \geqslant e+3$.
+b. The linear system $\linearsystem{C_0+\mfb f}$ is very ample if and only if $\deg \mfb \geqslant e+3$.
 
 Note.
 The case $e=-1$ will require special attention.
@@ -113,7 +113,7 @@ is nonspecial. Hartshorne V.2.11, proved on
 $$
 D\sim C_0+\mfb f
 $$
-and says that $|L|$ has no base points.
+and says that $\linearsystem{L}$ has no base points.
 
 :::
 
@@ -200,7 +200,7 @@ Thus $H^0(C,F^\vee)=0$ and hence $H^1(C,F)=0$.
 
 ::: {.pf-step #s5}
 
-If $e=-1$ and $m\ge1$, then $|L|$ has no base points and contains a
+If $e=-1$ and $m\ge1$, then $\linearsystem{L}$ has no base points and contains a
 section of $\pi$.
 
 ::: pf-proof
@@ -231,29 +231,29 @@ H^1(C,F(-P))=0.
 $$
 The exact sequence
 $$
-0\to F(-P)\to F\to F|_P\to0
+0\to F(-P)\to F\to F\restrict_P\to0
 $$
 shows that
 $$
-H^0(C,F)\twoheadrightarrow F|_P
+H^0(C,F)\twoheadrightarrow F\restrict_P
 $$
 for every $P$.
 
 By step [](#s3){.pf-ref} and cohomology and base change,
 $$
-F|_P
+F\restrict_P
 \cong
-H^0\bigl(F_P,L|_{F_P}\bigr),
+H^0\bigl(F_P,L\restrict_{F_P}\bigr),
 \qquad
-L|_{F_P}\cong\OO_{\PP^1}(1).
+L\restrict_{F_P}\cong\OO_{\PP^1}(1).
 $$
-Thus the complete system $|L|$ restricts to the complete
-$|\OO_{\PP^1}(1)|$ on every ruling fibre. In particular $|L|$ has no base
+Thus the complete system $\linearsystem{L}$ restricts to the complete
+$\linearsystem{\OO_{\PP^1}(1)}$ on every ruling fibre. In particular $\linearsystem{L}$ has no base
 points.
 
 The incidence argument of [[P-AGH5211VERYAMPLESECT]], step [](#s4){.pf-ref}, now applies
 verbatim: the sections vanishing identically on a fixed fibre form a
-codimension-two subspace of $H^0(X,L)$, so a general divisor in $|L|$
+codimension-two subspace of $H^0(X,L)$, so a general divisor in $\linearsystem{L}$
 contains no fibre. Since
 $$
 L\cdot f=1,
@@ -372,21 +372,21 @@ H^1(C,F(-A))=0,
 $$
 so
 $$
-H^0(C,F)\twoheadrightarrow H^0(A,F|_A).
+H^0(C,F)\twoheadrightarrow H^0(A,F\restrict_A).
 $$
 
 Over the Artinian scheme $A$, the subscheme $Z\cong A$ is a section of
 $$
-\PP(\mathcal E|_A)\longrightarrow A.
+\PP(\mathcal E\restrict_A)\longrightarrow A.
 $$
 It therefore corresponds to an invertible quotient of
 $$
-F|_A=\mathcal E|_A\tensor\OO_A(\mfb).
+F\restrict_A=\mathcal E\restrict_A\tensor\OO_A(\mfb).
 $$
 Since $A$ is affine, taking global sections of that quotient is surjective.
 Consequently
 $$
-H^0(X,L)\longrightarrow H^0(Z,L|_Z)
+H^0(X,L)\longrightarrow H^0(Z,L\restrict_Z)
 $$
 is surjective. Thus every length-two subscheme is separated.
 
@@ -420,7 +420,7 @@ $$
 The restriction of a very ample line bundle to a closed subscheme is very
 ample. In particular,
 $$
-L|_{C_0}
+L\restrict_{C_0}
 \cong
 \OO_C(\mfb+\mfe)
 $$
@@ -451,7 +451,7 @@ $$
 Therefore
 $$
 \boxed{
-|C_0+\mfb f|\text{ is very ample}
+\linearsystem{C_0+\mfb f}\text{ is very ample}
 \iff
 \deg\mfb\ge e+3.}
 $$

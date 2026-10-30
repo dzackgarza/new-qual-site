@@ -90,15 +90,15 @@ Define $H \colon X \times [0, 1] \to S^n$ by $H(x, t) = H_0(f(x), t)$.
 :::
 
 ::: pf-step
-Equivalently, using normalized straight-line geodesics in $\RR^{n+1}$: Since $f(x) \neq -N$ for all $x \in X$, $(1-t)f(x) + t N \neq 0$ for all $t \in [0, 1]$, so $$H(x, t) = \frac{(1-t)f(x) + t N}{\|(1-t)f(x) + t N\|}$$ is well-defined, continuous, and lands in $S^n$.
+Equivalently, using normalized straight-line geodesics in $\RR^{n+1}$: Since $f(x) \neq -N$ for all $x \in X$, $(1-t)f(x) + t N \neq 0$ for all $t \in [0, 1]$, so $$H(x, t) = \frac{(1-t)f(x) + t N}{\norm{(1-t)f(x) + t N}}$$ is well-defined, continuous, and lands in $S^n$.
 :::
 
 ::: {.pf-step #s3-3}
 Check endpoints:
 
-- $H(x, 0) = \frac{f(x)}{\|f(x)\|} = f(x)$,
+- $H(x, 0) = \frac{f(x)}{\norm{f(x)}} = f(x)$,
 
-- $H(x, 1) = \frac{N}{\|N\|} = N = c_N(x)$.
+- $H(x, 1) = \frac{N}{\norm{N}} = N = c_N(x)$.
 
 :::
 

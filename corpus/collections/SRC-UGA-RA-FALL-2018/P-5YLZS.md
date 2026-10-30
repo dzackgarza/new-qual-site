@@ -90,12 +90,12 @@ $$\frac{\cos(x(t + h)) - \cos(xt)}{h} = -x \sin(x \xi_h).$$
 
 ::: pf-step
 Take absolute values:
-$$|g_h(x)| = |f(x)| \cdot |{-x \sin(x \xi_h)}| = |x f(x)| |\sin(x \xi_h)| \le |x f(x)| \cdot 1 = |x f(x)|.$$
+$$\abs{g_h(x)} = \abs{f(x)} \cdot \abs{{-x \sin(x \xi_h)}} = \abs{x f(x)} \abs{\sin(x \xi_h)} \le \abs{x f(x)} \cdot 1 = \abs{x f(x)}.$$
 
 :::
 
 ::: pf-step
-By hypothesis, $g(x) = |x f(x)| \in L^1(\RR)$ is an integrable function that dominates $|g_h(x)|$ for all $h \ne 0$.
+By hypothesis, $g(x) = \abs{x f(x)} \in L^1(\RR)$ is an integrable function that dominates $\abs{g_h(x)}$ for all $h \ne 0$.
 
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85S-13
 kind: problem
-title: $1+z+az^n$ always has a root in $|z|\le2$
+title: $1+z+az^n$ always has a root in $\abs{z}\le2$
 classification:
   areas: [prelim]
   topics: []
@@ -31,7 +31,7 @@ $$
 $$
 has at least one root in the closed disk
 $$
-|z|\le2.
+\abs{z}\le2.
 $$
 :::
 
@@ -97,7 +97,7 @@ g(z)\coloneqq b(1+z).
 $$
 The reverse triangle inequality gives
 $$
-\abs{1+z}\geq\bigl|\abs z-1\bigr|=1.
+\abs{1+z}\geq\abs{\abs z-1}=1.
 $$
 Hence
 $$

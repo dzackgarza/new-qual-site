@@ -50,7 +50,7 @@ with each $K_n$ compact. The coordinate projection $\pi_n(K_n)\subset\RR$ is com
 $$
 K_m=[-m,m]^m\times\{0\}\times\{0\}\times\cdots.
 $$
-The $K_m$'s exhaust $\RR^\infty$. For each $m$, choose a continuous surjection $q_m:I\to K_m$ with $q_m(0)=q_m(1)=0$, as in [[E-WVVWW]]. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Since adjacent pieces agree at the origin, the pasted map $[0,\infty)\to\RR^\infty$ is continuous and surjective; compose with $t\mapsto|t|$ to obtain a continuous surjection from $\RR$.
+The $K_m$'s exhaust $\RR^\infty$. For each $m$, choose a continuous surjection $q_m:I\to K_m$ with $q_m(0)=q_m(1)=0$, as in [[E-WVVWW]]. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Since adjacent pieces agree at the origin, the pasted map $[0,\infty)\to\RR^\infty$ is continuous and surjective; compose with $t\mapsto\abs{t}$ to obtain a continuous surjection from $\RR$.
 
 (c) In both the uniform and box topologies, $\RR^\omega$ is nonseparable. The subset
 $$

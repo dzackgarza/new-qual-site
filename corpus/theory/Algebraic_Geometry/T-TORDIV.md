@@ -137,7 +137,7 @@ Its torsion is nonzero exactly when the ray generators span a proper finite-inde
 If moreover $\Sigma$ is simplicial, every invariant Weil divisor is $\QQ$-Cartier, so $\Pic(X_\Sigma)$ has finite index in $\Cl(X_\Sigma)$ and the same rank.
 For $\FF_a$ this rank is $4-2=2$.
 
-Cartier divisors are cut out locally: $D = \sum a_\rho D_\rho$ is Cartier iff for every maximal cone $\sigma$ there is $m_\sigma \in M$ with $\inner{m_\sigma}{u_\rho} = -a_\rho$ for all $\rho \leq \sigma$, and then $D|_{U_\sigma} = \operatorname{div}(\chi^{-m_\sigma})$.
+Cartier divisors are cut out locally: $D = \sum a_\rho D_\rho$ is Cartier iff for every maximal cone $\sigma$ there is $m_\sigma \in M$ with $\inner{m_\sigma}{u_\rho} = -a_\rho$ for all $\rho \leq \sigma$, and then $D\restrict_{U_\sigma} = \operatorname{div}(\chi^{-m_\sigma})$.
 Equivalently $\CDiv_T(U_\sigma) \cong M/M(\sigma)$ where $M(\sigma) = \sigma^\perp \intersect M$.
 
 For $\PP^n$ the $n+1$ rays give $D_0, \ldots, D_n$, all linearly equivalent, so $K_{\PP^n} \sim -(n+1)H$ and $\omega_{\PP^n} = \OO(-n-1)$ falls out of counting rays.

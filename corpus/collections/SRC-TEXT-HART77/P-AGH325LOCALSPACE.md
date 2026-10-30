@@ -96,7 +96,7 @@ This proves surjectivity.
 
 For injectivity, let $a\in A(U\cap V)$ restrict to zero on $S\cap V$.
 Its zero-germ locus is an open subset of $U\cap V$ containing $S\cap V$, since $S\subseteq U$.
-Step [](#s1){.pf-ref}, applied inside $U\cap V$, gives a smaller neighborhood $U'$ of $P$ on which $a|_{U'\cap U\cap V}=0$.
+Step [](#s1){.pf-ref}, applied inside $U\cap V$, gives a smaller neighborhood $U'$ of $P$ on which $a\restrict_{U'\cap U\cap V}=0$.
 Thus $a$ is already zero in the indicated direct limit.
 All the constructions use the natural restriction map, so the isomorphism is natural in $A$ and compatible with restriction in $V$.
 
@@ -138,7 +138,7 @@ This proves injectivity.
 Conversely, represent a section on $S$ supported at $P$ by $a\in A(U)$ using step [](#s2){.pf-ref} with $V=X$.
 Its restriction to $S\setminus\{P\}$ is zero.
 Apply the injectivity in step [](#s2){.pf-ref} with the open set $V=X\setminus\{P\}$.
-After shrinking the neighborhood $U$ of $P$, it follows that $a|_{U\setminus\{P\}}=0$.
+After shrinking the neighborhood $U$ of $P$, it follows that $a\restrict_{U\setminus\{P\}}=0$.
 Glue $a$ on $U$ with zero on $X\setminus\{P\}$.
 These opens cover $X$, so this gives a global section supported at $P$ with the prescribed restriction.
 The construction is inverse to restriction and hence natural.

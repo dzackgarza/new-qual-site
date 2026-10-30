@@ -29,7 +29,7 @@ N(A)\subseteq N(A^tA).
 $$
 Conversely, if $A^tAx=0$, then
 $$
-0=x^tA^tAx=(Ax)^t(Ax)=\|Ax\|^2.
+0=x^tA^tAx=(Ax)^t(Ax)=\norm{Ax}^2.
 $$
 Therefore $Ax=0$, so $x\in N(A)$. Hence
 $$

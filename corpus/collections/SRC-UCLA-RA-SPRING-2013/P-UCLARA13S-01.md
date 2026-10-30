@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Suppose $f:\RR\to\RR$ is bounded and Lebesgue measurable, and
 $$
-\lim_{h\to0^+}\frac1h\int_0^1 |f(x+h)-f(x)|\,dx=0.
+\lim_{h\to0^+}\frac1h\int_0^1 \abs{f(x+h)-f(x)}\,dx=0.
 $$
 Show that $f$ is almost everywhere constant on $[0,1]$.
 :::
@@ -100,24 +100,24 @@ $$
 Hence
 $$
 \begin{aligned}
-&\left|
+&\abs{
 \frac{F(a+h)-F(a)}{h}
 -
 \frac{F(b+h)-F(b)}{h}
-\right|\\
+}\\
 &\qquad\le
 \frac1h
 \int_a^b
-|f(t+h)-f(t)|\,dt\\
+\abs{f(t+h)-f(t)}\,dt\\
 &\qquad\le
 \frac1h
 \int_0^1
-|f(t+h)-f(t)|\,dt.
+\abs{f(t+h)-f(t)}\,dt.
 \end{aligned}
 $$
 The last quantity tends to $0$ by hypothesis. By step [](#s1-1){.pf-ref}, the left-hand side tends to
 $$
-|f(a)-f(b)|.
+\abs{f(a)-f(b)}.
 $$
 Therefore $f(a)=f(b)$.
 

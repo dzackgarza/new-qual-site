@@ -42,7 +42,7 @@ Then $f$ is continuous on $[0,1]$ and absolutely continuous on every $[\varepsil
 
 ::: pf-proof
 
-Since $|x\sin(1/x)|\leq x$, one has $f(x)\to0=f(0)$ as $x\downarrow0$. On every $[\varepsilon,1]$, the function is continuously differentiable, hence absolutely continuous.
+Since $\abs{x\sin(1/x)}\leq x$, one has $f(x)\to0=f(0)$ as $x\downarrow0$. On every $[\varepsilon,1]$, the function is continuously differentiable, hence absolutely continuous.
 
 :::
 
@@ -68,7 +68,7 @@ Differentiate $x\sin(1/x)$ by the product and chain rules.
 
 The derivative is not integrable on $(0,1)$:
 $$
-\int_0^1|f'(x)|\,dx=\infty.
+\int_0^1\abs{f'(x)}\,dx=\infty.
 $$
 
 
@@ -76,13 +76,13 @@ $$
 
 The term $\sin(1/x)$ is bounded and hence integrable on $(0,1)$. It therefore suffices to show
 $$
-\int_0^1\frac{|\cos(1/x)|}{x}\,dx=\infty.
+\int_0^1\frac{\abs{\cos(1/x)}}{x}\,dx=\infty.
 $$
 With $t=1/x$, this becomes
 $$
-\int_1^\infty\frac{|\cos t|}{t}\,dt.
+\int_1^\infty\frac{\abs{\cos t}}{t}\,dt.
 $$
-On each interval $[k\pi,k\pi+\pi/3]$, one has $|\cos t|\geq1/2$ after choosing the corresponding half-period subinterval, so the integral dominates a positive constant times a harmonic series and diverges.
+On each interval $[k\pi,k\pi+\pi/3]$, one has $\abs{\cos t}\geq1/2$ after choosing the corresponding half-period subinterval, so the integral dominates a positive constant times a harmonic series and diverges.
 
 :::
 
@@ -122,9 +122,9 @@ $$
 
 Because $f$ has bounded variation, it is the difference of two bounded monotone functions, and its total-variation function $V$ is increasing and finite. Hence $L=\lim_{t\downarrow0}V(t)$ exists. For every $t>0$,
 $$
-V(t)\geq |f(t)-f(0)|,
+V(t)\geq \abs{f(t)-f(0)},
 $$
-but more is needed to exclude $L>0$. The variation measure associated to a BV function has an atom at $0$ of mass exactly the jump $|f(0+)-f(0)|$. On $(0,1]$, local absolute continuity implies that this variation measure is absolutely continuous with density $|f'|$. Thus its only possible singular mass is at $0$. Continuity of $f$ at $0$ makes that atom zero, so continuity from above of the finite variation measure gives $V(t)\to0$.
+but more is needed to exclude $L>0$. The variation measure associated to a BV function has an atom at $0$ of mass exactly the jump $\abs{f(0+)-f(0)}$. On $(0,1]$, local absolute continuity implies that this variation measure is absolutely continuous with density $\abs{f'}$. Thus its only possible singular mass is at $0$. Continuity of $f$ at $0$ makes that atom zero, so continuity from above of the finite variation measure gives $V(t)\to0$.
 
 :::
 
@@ -154,7 +154,7 @@ $$
 $$
 satisfies
 $$
-\sum_j|f(b_j)-f(a_j)|<\eta/2.
+\sum_j\abs{f(b_j)-f(a_j)}<\eta/2.
 $$
 
 
@@ -174,7 +174,7 @@ $$
 $$
 Then any finite pairwise-disjoint family $(a_j,b_j)\subset[0,1]$ with total length $<\delta$ satisfies
 $$
-\sum_j|f(b_j)-f(a_j)|<\eta.
+\sum_j\abs{f(b_j)-f(a_j)}<\eta.
 $$
 
 

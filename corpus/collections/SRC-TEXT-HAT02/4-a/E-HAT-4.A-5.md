@@ -137,7 +137,7 @@ then van Kampen applied to the two mapping tori gives
 $$
 H_n=
 \left\langle
-S,a,b\ \middle|\
+S,a,b\ \presentationbar\
 R,
 asa^{-1}=\tau_{n-1}(s),
 bsb^{-1}=\tau_{n-1}(s)\ (s\in S)
@@ -155,7 +155,7 @@ Applying (1) for $n=2$ gives
 $$
 H_2=
 \left\langle
-c_i,a,b\ \middle|\
+c_i,a,b\ \presentationbar\
 ac_i a^{-1}=c_{i+1},
 bc_i b^{-1}=c_{i+1}\ (i\in\ZZ)
 \right\rangle.

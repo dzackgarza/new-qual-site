@@ -54,7 +54,7 @@ Near $0$,
 $$
 \frac{\sin^2x}{x^2}\longrightarrow1,
 $$
-so the apparent singularity is removable and the integrand is bounded on a neighborhood of $0$. For $|x|\geq1$,
+so the apparent singularity is removable and the integrand is bounded on a neighborhood of $0$. For $\abs{x}\geq1$,
 $$
 0\leq\frac{\sin^2x}{x^2}\leq\frac1{x^2},
 $$
@@ -118,7 +118,7 @@ $$
 
 ::: pf-proof
 
-Let $L,R\to\infty$ independently in step [](#s1-2){.pf-ref}. Since $|\sin t|\leq1$,
+Let $L,R\to\infty$ independently in step [](#s1-2){.pf-ref}. Since $\abs{\sin t}\leq1$,
 $$
 \frac{\sin^2R}{R}\longrightarrow0,
 \qquad

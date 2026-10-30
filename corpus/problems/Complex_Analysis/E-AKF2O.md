@@ -51,7 +51,7 @@ The point $i$ is a pole of order $n+1$, so
 $$
 \begin{aligned}
 \Res_{z=i}f(z)
-&=\frac1{n!}\left.\frac{d^n}{dz^n}(z+i)^{-(n+1)}\right|_{z=i}
+&=\frac1{n!}\evaluated{\frac{d^n}{dz^n}(z+i)^{-(n+1)}}_{z=i}
 =\frac{(-1)^n(n+1)(n+2)\cdots(2n)}{n!}(2i)^{-(2n+1)}\\
 &=\frac{(2n)!}{(n!)^2}\cdot\frac{(-1)^n}{2^{2n+1}\,i\,(i^2)^n}
 =\frac{(2n)!}{(n!)^2}\cdot\frac{1}{2^{2n+1}i}.
@@ -86,5 +86,5 @@ $$
 
 ::: {.remark title="Variations"}
 For $n=1$ the formula gives $\int_\RR\frac{dx}{(1+x^2)^2}=\frac{\pi}{2}$.
-Directly, the only pole in the upper half-plane is the double pole at $i$, with residue $\frac{d}{dz}(z+i)^{-2}\big|_{z=i}=-2(2i)^{-3}=\frac{1}{4i}$, and the upper semicircle contributes at most $\pi R/(R^2-1)^2\to0$.
+Directly, the only pole in the upper half-plane is the double pole at $i$, with residue $\frac{d}{dz}(z+i)^{-2}\evalfrom_{z=i}=-2(2i)^{-3}=\frac{1}{4i}$, and the upper semicircle contributes at most $\pi R/(R^2-1)^2\to0$.
 :::

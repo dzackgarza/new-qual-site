@@ -65,7 +65,7 @@ Thus the defining inequality for $E$ becomes precisely the defining inequality f
 ::: {.pf-step #jacobian}
 The absolute value of the Jacobian determinant of the transformation in [](#linear-change){.pf-ref} is
 $$
-|abc|.
+\abs{abc}.
 $$
 
 ::: pf-proof
@@ -119,7 +119,7 @@ $$
 \boxed{
 \operatorname{Vol}(E)
 =
-\frac{4\pi}{3}|abc|
+\frac{4\pi}{3}\abs{abc}
 }.
 $$
 In the usual convention $a,b,c>0$, this is
@@ -132,9 +132,9 @@ By the change-of-variables formula, [](#linear-change){.pf-ref}, [](#jacobian){.
 $$
 \operatorname{Vol}(E)
 =
-|abc|\operatorname{Vol}(B)
+\abs{abc}\operatorname{Vol}(B)
 =
-|abc|\frac{4\pi}{3}.
+\abs{abc}\frac{4\pi}{3}.
 $$
 :::
 

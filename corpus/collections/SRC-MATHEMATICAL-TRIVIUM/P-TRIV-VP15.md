@@ -33,7 +33,7 @@ where the equality implies $\phi = 0$ , and $V ( \phi ) \geqslant 0 , V ( \phi )
 (a) Show that $E ( \lambda ) \equiv E [ \phi _ { \lambda } ]$ must satisfy
 
 $$
-\left. \frac { d { E } } { d { \lambda } } \right| _ { \lambda = 1 } = 0 .\tag{22}
+\evaluated{ \frac { d { E } } { d { \lambda } } } _ { \lambda = 1 } = 0 .\tag{22}
 $$
 
 (b) Using the notations
@@ -82,9 +82,9 @@ This is the definition of the one-parameter family in the problem.
 Since $\phi_0$ is an extremum of $E$, one has
 $$
 \boxed{
-\left.
+\evaluated{
 \frac{dE(\lambda)}{d\lambda}
-\right|_{\lambda=1}=0.
+}_{\lambda=1}=0.
 }
 $$
 

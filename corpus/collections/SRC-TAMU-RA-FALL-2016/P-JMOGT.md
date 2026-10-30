@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JMOGT
 kind: problem
-title: $\lim_{x\to 0}\int_{\RR}|f(y-x)-f(y)|\,dy=0$ for $f\in L^1(\RR)$
+title: $\lim_{x\to 0}\int_{\RR}\abs{f(y-x)-f(y)}\,dy=0$ for $f\in L^1(\RR)$
 classification:
   areas:
   - real-analysis
@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $f \in L^1(\RR)$. Show that
 $$
-\lim_{x \to 0} \int_{\RR} |f(y - x) - f(y)| \, dy = 0.
+\lim_{x \to 0} \int_{\RR} \abs{f(y - x) - f(y)} \, dy = 0.
 $$
 :::
 
@@ -46,7 +46,7 @@ Let $\varepsilon > 0$.
 
 ::: pf-step
 Since $C_c(\RR)$ (continuous functions with compact support) is dense in $L^1(\RR)$, there exists a function $g \in C_c(\RR)$ such that
-$$\|f - g\|_{L^1} = \int_{\RR} |f(y) - g(y)| \, dy < \frac{\varepsilon}{3}.$$
+$$\norm{f - g}_{L^1} = \int_{\RR} \abs{f(y) - g(y)} \, dy < \frac{\varepsilon}{3}.$$
 :::
 
 ::: pf-step
@@ -64,7 +64,7 @@ Translation invariance of the $L^1$ norm:
 
 ::: pf-step
 For any $x \in \RR$, by the translation invariance of the Lebesgue integral (substituting $u = y - x$):
-$$\int_{\RR} |f(y - x) - g(y - x)| \, dy = \int_{\RR} |f(u) - g(u)| \, du = \|f - g\|_{L^1} < \frac{\varepsilon}{3}.$$
+$$\int_{\RR} \abs{f(y - x) - g(y - x)} \, dy = \int_{\RR} \abs{f(u) - g(u)} \, du = \norm{f - g}_{L^1} < \frac{\varepsilon}{3}.$$
 :::
 
 :::
@@ -78,12 +78,12 @@ Splitting the integral via the triangle inequality:
 
 ::: pf-step
 For any $x \in \RR$:
-$$|f(y - x) - f(y)| \le |f(y - x) - g(y - x)| + |g(y - x) - g(y)| + |g(y) - f(y)|.$$
+$$\abs{f(y - x) - f(y)} \le \abs{f(y - x) - g(y - x)} + \abs{g(y - x) - g(y)} + \abs{g(y) - f(y)}.$$
 :::
 
 ::: pf-step
 Integrating over $\RR$ and applying step [](#s1){.pf-ref} and step [](#s2){.pf-ref}:
-$$\int_{\RR} |f(y - x) - f(y)| \, dy \le \frac{\varepsilon}{3} + \int_{\RR} |g(y - x) - g(y)| \, dy + \frac{\varepsilon}{3} = \frac{2\varepsilon}{3} + \int_{\RR} |g(y - x) - g(y)| \, dy.$$
+$$\int_{\RR} \abs{f(y - x) - f(y)} \, dy \le \frac{\varepsilon}{3} + \int_{\RR} \abs{g(y - x) - g(y)} \, dy + \frac{\varepsilon}{3} = \frac{2\varepsilon}{3} + \int_{\RR} \abs{g(y - x) - g(y)} \, dy.$$
 :::
 
 :::
@@ -100,21 +100,21 @@ Since $g$ is continuous with compact support on $\RR$, $g$ is uniformly continuo
 :::
 
 ::: pf-step
-For any $|x| \le 1$, if $y \notin [-M - 1, M + 1]$, then $y \notin [-M, M]$ and $y - x \notin [-M, M]$, so $g(y) = 0$ and $g(y - x) = 0$.
+For any $\abs{x} \le 1$, if $y \notin [-M - 1, M + 1]$, then $y \notin [-M, M]$ and $y - x \notin [-M, M]$, so $g(y) = 0$ and $g(y - x) = 0$.
 :::
 
 ::: pf-step
-Thus $\operatorname{supp}(g(\cdot - x) - g(\cdot)) \subseteq [-M - 1, M + 1]$ for all $|x| \le 1$.
+Thus $\operatorname{supp}(g(\cdot - x) - g(\cdot)) \subseteq [-M - 1, M + 1]$ for all $\abs{x} \le 1$.
 :::
 
 ::: pf-step
-By uniform continuity, there exists $\delta \in (0, 1)$ such that for all $|x| < \delta$ and all $y \in \RR$:
-$$|g(y - x) - g(y)| < \frac{\varepsilon}{3(2M + 2)}.$$
+By uniform continuity, there exists $\delta \in (0, 1)$ such that for all $\abs{x} < \delta$ and all $y \in \RR$:
+$$\abs{g(y - x) - g(y)} < \frac{\varepsilon}{3(2M + 2)}.$$
 :::
 
 ::: pf-step
 Integrating over $[-M - 1, M + 1]$:
-$$\int_{\RR} |g(y - x) - g(y)| \, dy = \int_{-M - 1}^{M + 1} |g(y - x) - g(y)| \, dy \le \frac{\varepsilon}{3(2M + 2)} \cdot (2M + 2) = \frac{\varepsilon}{3}.$$
+$$\int_{\RR} \abs{g(y - x) - g(y)} \, dy = \int_{-M - 1}^{M + 1} \abs{g(y - x) - g(y)} \, dy \le \frac{\varepsilon}{3(2M + 2)} \cdot (2M + 2) = \frac{\varepsilon}{3}.$$
 :::
 
 :::
@@ -127,12 +127,12 @@ Conclusion:
 ::: pf-proof
 
 ::: pf-step
-For all $|x| < \delta$, combining step [](#s3){.pf-ref} and step [](#s4){.pf-ref}:
-$$\int_{\RR} |f(y - x) - f(y)| \, dy < \frac{2\varepsilon}{3} + \frac{\varepsilon}{3} = \varepsilon.$$
+For all $\abs{x} < \delta$, combining step [](#s3){.pf-ref} and step [](#s4){.pf-ref}:
+$$\int_{\RR} \abs{f(y - x) - f(y)} \, dy < \frac{2\varepsilon}{3} + \frac{\varepsilon}{3} = \varepsilon.$$
 :::
 
 ::: pf-step
-Since $\varepsilon > 0$ was arbitrary, $\lim_{x \to 0} \int_{\RR} |f(y - x) - f(y)| \, dy = 0$.
+Since $\varepsilon > 0$ was arbitrary, $\lim_{x \to 0} \int_{\RR} \abs{f(y - x) - f(y)} \, dy = 0$.
 :::
 
 :::

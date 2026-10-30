@@ -80,13 +80,13 @@ $$
 
 For every connected component $C$ of $W$, the restriction
 $$
-g|_C
+g\restrict_C
 $$
 is nonconstant.
 
 ::: pf-proof
 
-If $g|_C$ were constant, its derivative would vanish everywhere on $C$.
+If $g\restrict_C$ were constant, its derivative would vanish everywhere on $C$.
 This contradicts the hypothesis
 $$
 g'(z)\neq0
@@ -104,7 +104,7 @@ The set $g(W)$ is open in $\CC$.
 ::: pf-proof
 
 Every connected component $C$ of the open set $W$ is itself open. By step
-[](#s3){.pf-ref}, the restriction $g|_C$ is nonconstant and analytic, so the open
+[](#s3){.pf-ref}, the restriction $g\restrict_C$ is nonconstant and analytic, so the open
 mapping theorem gives that $g(C)$ is open in $\CC$. Since
 $$
 g(W)

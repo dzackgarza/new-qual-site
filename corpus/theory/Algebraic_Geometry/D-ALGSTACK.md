@@ -29,11 +29,11 @@ Let $S$ be a scheme and $\Sch_{/S}$ the category of $S$-schemes with the étale 
 ::: {.definition title="Stack"}
 A \dfn{stack} over $S$ is a category $\mathcal{X}$ with a functor $p \colon \mathcal{X} \to \Sch_{/S}$ such that
 
-1. $\mathcal{X}$ is fibred in groupoids: for every morphism $T' \to T$ and object $\xi$ over $T$ there is a pullback $\xi|_{T'}$ over $T'$, unique up to unique isomorphism, and every morphism lying over an identity is an isomorphism;
+1. $\mathcal{X}$ is fibred in groupoids: for every morphism $T' \to T$ and object $\xi$ over $T$ there is a pullback $\xi\restrict_{T'}$ over $T'$, unique up to unique isomorphism, and every morphism lying over an identity is an isomorphism;
 
-2. for all objects $\xi, \eta$ over $T$, the presheaf $\operatorname{Isom}(\xi, \eta) \colon (T' \to T) \mapsto \{\text{isomorphisms } \xi|_{T'} \to \eta|_{T'} \text{ over } T'\}$ is a sheaf on $(\Sch_{/T})_{\mathrm{et}}$;
+2. for all objects $\xi, \eta$ over $T$, the presheaf $\operatorname{Isom}(\xi, \eta) \colon (T' \to T) \mapsto \{\text{isomorphisms } \xi\restrict_{T'} \to \eta\restrict_{T'} \text{ over } T'\}$ is a sheaf on $(\Sch_{/T})_{\mathrm{et}}$;
 
-3. every descent datum is effective: for an étale covering $\{T_i \to T\}$, objects $\xi_i$ over $T_i$ with isomorphisms $\varphi_{ij} \colon \xi_j|_{T_{ij}} \to \xi_i|_{T_{ij}}$ satisfying $\varphi_{ij} \circ \varphi_{jk} = \varphi_{ik}$ on $T_{ijk}$ come from an object $\xi$ over $T$.
+3. every descent datum is effective: for an étale covering $\{T_i \to T\}$, objects $\xi_i$ over $T_i$ with isomorphisms $\varphi_{ij} \colon \xi_j\restrict_{T_{ij}} \to \xi_i\restrict_{T_{ij}}$ satisfying $\varphi_{ij} \circ \varphi_{jk} = \varphi_{ik}$ on $T_{ijk}$ come from an object $\xi$ over $T$.
 
 A $1$-morphism $\mathcal{Y} \to \mathcal{X}$ of stacks is \dfn{representable} if for every $S$-scheme $T$ and $T \to \mathcal{X}$, the $2$-fibre product $\mathcal{Y} \times_{\mathcal{X}} T$ is an algebraic space ([[D-ALGSPACE]]).
 For a class $P$ of morphisms of algebraic spaces that is stable under base change and étale local on the target ([[D-MORLOCAL]]), a representable $\mathcal{Y} \to \mathcal{X}$ has $P$ if every such base change $\mathcal{Y} \times_{\mathcal{X}} T \to T$ has $P$.

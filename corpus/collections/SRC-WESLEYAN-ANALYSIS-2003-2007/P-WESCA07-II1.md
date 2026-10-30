@@ -24,7 +24,7 @@ Show that
 $$
 f(z)=az+b
 $$
-for constants $a,b\in\CC$ with $|a|=1$.
+for constants $a,b\in\CC$ with $\abs{a}=1$.
 :::
 
 ::: {.solution}
@@ -36,7 +36,7 @@ for constants $a,b\in\CC$ with $|a|=1$.
 For a holomorphic function $f=u+iv$,
 $$
 u_xv_y-u_yv_x
-=|f'(z)|^2.
+=\abs{f'(z)}^2.
 $$
 
 
@@ -59,7 +59,7 @@ f'(z)=u_x+i v_x=u_x-i u_y,
 $$
 so
 $$
-|f'(z)|^2=u_x^2+u_y^2.
+\abs{f'(z)}^2=u_x^2+u_y^2.
 $$
 
 :::
@@ -70,7 +70,7 @@ $$
 
 The hypothesis implies
 $$
-|f'(z)|=1
+\abs{f'(z)}=1
 $$
 for every $z\in\CC$.
 
@@ -94,7 +94,7 @@ The function $f'$ is entire because $f$ is entire. Step [](#s1-2){.pf-ref} shows
 $$
 f'(z)\equiv a
 $$
-for some constant $a\in\CC$. Moreover $|a|=1$.
+for some constant $a\in\CC$. Moreover $\abs{a}=1$.
 
 :::
 
@@ -105,7 +105,7 @@ for some constant $a\in\CC$. Moreover $|a|=1$.
 There is a constant $b\in\CC$ such that
 $$
 \boxed{f(z)=az+b,
-\qquad |a|=1.}
+\qquad \abs{a}=1.}
 $$
 
 

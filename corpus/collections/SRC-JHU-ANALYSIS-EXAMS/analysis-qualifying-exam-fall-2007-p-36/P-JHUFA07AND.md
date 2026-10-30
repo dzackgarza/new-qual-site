@@ -64,9 +64,9 @@ $z^n=\exp(n\operatorname{Log}z)$ there. This is possible
 since the sector can have angular width less than $2\pi$.
 For $0<\varepsilon<1<R$, integrate $F(z)=(1+z^n)^{-1}$
 over the positive boundary of
-$\{\varepsilon<|z|<R,\ 0<\arg z<\theta\}$.
+$\{\varepsilon<\abs{z}<R,\ 0<\arg z<\theta\}$.
 
-In this sector, $z^n=-1$ requires $|z|=1$ and
+In this sector, $z^n=-1$ requires $\abs{z}=1$ and
 $n\arg z=\pi$, so the only pole is
 $\zeta=e^{i\pi/n}$. It is simple, with residue
 $$
@@ -96,7 +96,7 @@ $$
 \qquad
 \frac{\theta\varepsilon}{1-\varepsilon^n}\longrightarrow0,
 $$
-respectively, using the arc lengths and $|z^n|=|z|^n$.
+respectively, using the arc lengths and $\abs{z^n}=\abs{z}^n$.
 Letting $R\to\infty$ and $\varepsilon\downarrow0$,
 step [](#convergence-range){.pf-ref} and the residue identity therefore give
 $$

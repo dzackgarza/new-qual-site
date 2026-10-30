@@ -153,7 +153,7 @@ X^r+c_{r-1}X^{r-1}+\cdots+c_1X+c_0
 $$
 annihilates $W$:
 $$
-p(A)|_W=0.
+p(A)\restrict_W=0.
 $$
 
 

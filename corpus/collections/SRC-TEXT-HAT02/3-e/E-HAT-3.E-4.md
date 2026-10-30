@@ -41,7 +41,7 @@ H^*(SO(5);\FF_2)
 \cong
 \FF_2[\beta_1,\beta_3]/(\beta_1^8,\beta_3^2),
 \qquad
-|\beta_1|=1,\ |\beta_3|=3.
+\gradeddegree{\beta_1}=1,\ \gradeddegree{\beta_3}=3.
 $$
 By the field-coefficient Künneth theorem,
 $$
@@ -100,7 +100,7 @@ But for a product, the images of the two projection maps on positive-degree coho
 $$
 p_X^*a=p_Y^*b
 $$
-with $|a|=|b|>0$, restricting to $X\times\{y_0\}$ gives $a=0$, while restricting to $\{x_0\}\times Y$ gives $b=0$. Hence their common class must be zero.
+with $\gradeddegree{a}=\gradeddegree{b}>0$, restricting to $X\times\{y_0\}$ gives $a=0$, while restricting to $\{x_0\}\times Y$ gives $b=0$. Hence their common class must be zero.
 
 This contradicts $x^2\ne0$. Therefore no such nontrivial product decomposition exists:
 $$

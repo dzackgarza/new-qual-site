@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : G \to \CC$ be a holomorphic function in $G = \{z : |z| < 2\}$ such that $|f(z)| < 1$ for $z \in G$.
+Let $f : G \to \CC$ be a holomorphic function in $G = \{z : \abs{z} < 2\}$ such that $\abs{f(z)} < 1$ for $z \in G$.
 Assume that $f(1) = f(-1) = f(i) = f(-i) = 0$.
-Show that $|f(0)| \leq \frac{1}{15}$.
+Show that $\abs{f(0)} \leq \frac{1}{15}$.
 :::
 
 ::: {.solution}
@@ -42,8 +42,8 @@ F(w)=H(w)
 $$
 Therefore
 $$
-|f(0)|=|F(0)|
-\le \prod_a|a|
+\abs{f(0)}=\abs{F(0)}
+\le \prod_a\abs{a}
 =\left(\frac12\right)^4
 =\frac1{16}
 <\frac1{15}.

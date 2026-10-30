@@ -35,9 +35,9 @@ Do the limits $\lim_{x \to 0}\left(\lim_{y \to 0} f(x,y)\right)$ and $\lim_{y \t
 
 For $x\neq0$,
 $$
-|f(x,y)|
+\abs{f(x,y)}
 \leq
-|x|+|y|.
+\abs{x}+\abs{y}.
 $$
 
 
@@ -47,11 +47,11 @@ Since
 $$
 f(x,y)=x+y\sin(1/x),
 $$
-the triangle inequality and $|\sin(1/x)|\leq1$ give
+the triangle inequality and $\abs{\sin(1/x)}\leq1$ give
 $$
-|f(x,y)|
+\abs{f(x,y)}
 \leq
-|x|+|y|.
+\abs{x}+\abs{y}.
 $$
 
 :::
@@ -88,9 +88,9 @@ $$
 
 For $x\neq0$, step [](#s1-1){.pf-ref} gives
 $$
-|f(x,y)|
+\abs{f(x,y)}
 \leq
-|x|+|y|
+\abs{x}+\abs{y}
 \longrightarrow0
 $$
 as $(x,y)\to(0,0)$. For $x=0$, step [](#s1-2){.pf-ref} gives the value $0$ exactly. Hence

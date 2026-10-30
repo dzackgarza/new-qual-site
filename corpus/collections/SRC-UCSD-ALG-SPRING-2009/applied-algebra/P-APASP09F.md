@@ -120,13 +120,13 @@ step [](#p2-s1){.pf-ref}, step [](#p2-s2){.pf-ref}, and step [](#p2-s3){.pf-ref}
 The trivial representation occurs in $V \otimes W$ iff $\langle \chi_V \chi_W, 1 \rangle \neq 0$.
 
 ::: pf-proof
-the multiplicity of the trivial character in a representation is $\langle \chi, 1 \rangle = \frac{1}{|G|}\sum_g \chi(g)$.
+the multiplicity of the trivial character in a representation is $\langle \chi, 1 \rangle = \frac{1}{\cardinality{G}}\sum_g \chi(g)$.
 :::
 
 :::
 
 ::: pf-step
-$\langle \chi_V \chi_W, 1 \rangle = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g) = \langle \chi_V, \overline{\chi_W} \rangle$.
+$\langle \chi_V \chi_W, 1 \rangle = \frac{1}{\cardinality{G}}\sum_g \chi_V(g)\chi_W(g) = \langle \chi_V, \overline{\chi_W} \rangle$.
 
 ::: pf-proof
 definition of the inner product, and $\overline{\chi_W(g)} = \chi_W(g^{-1})$.

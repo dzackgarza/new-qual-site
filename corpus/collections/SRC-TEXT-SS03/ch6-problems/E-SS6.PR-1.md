@@ -25,9 +25,9 @@ $$
 $$
 for every integer $N \geq 2$, whenever $\operatorname{Re}(s) > 0$, where $\delta_n(s) = n^{-s} - \int_n^{n+1} x^{-s}\,dx$.
 
-(b) Show that $|\zeta(1+it)| = O(\log |t|)$ as $|t| \to \infty$ by using the previous result with $N = \lfloor |t| \rfloor$.
+(b) Show that $\abs{\zeta(1+it)} = O(\log \abs{t})$ as $\abs{t} \to \infty$ by using the previous result with $N = \lfloor \abs{t} \rfloor$.
 
-(c) Show that $|\zeta'(1+it)| = O((\log |t|)^2)$ as $|t| \to \infty$.
+(c) Show that $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$ as $\abs{t} \to \infty$.
 
 (d) Show that if $t \neq 0$ and $t$ is fixed, then the partial sums of the series $\sum_{n=1}^\infty n^{-1-it}$ are bounded, but the series does not converge.
 :::
@@ -72,8 +72,8 @@ Thus for $\Re(s) > 1$,
 
 ::: pf-step
 
-By the Mean Value Theorem applied to $f(x) = x^{-s}$ on $[n, n+1]$, $|n^{-s} - x^{-s}| \le |s| n^{-\Re(s)-1}$, so
-    $$|\delta_n(s)| \le |s| n^{-\Re(s)-1}.$$
+By the Mean Value Theorem applied to $f(x) = x^{-s}$ on $[n, n+1]$, $\abs{n^{-s} - x^{-s}} \le \abs{s} n^{-\Re(s)-1}$, so
+    $$\abs{\delta_n(s)} \le \abs{s} n^{-\Re(s)-1}.$$
     The series $\sum_{n \ge N} \delta_n(s)$ converges locally uniformly for $\Re(s) > 0$, defining a holomorphic function on $\Re(s) > 0$.
 
 :::
@@ -90,40 +90,40 @@ By analytic continuation, the identity holds for all $\Re(s) > 0$ with $s \neq 1
 
 ::: {.pf-step #s2}
 
-Part 1(b): Bound $|\zeta(1+it)| = O(\log |t|)$ as $|t| \to \infty$.
+Part 1(b): Bound $\abs{\zeta(1+it)} = O(\log \abs{t})$ as $\abs{t} \to \infty$.
 
 ::: pf-proof
 
 ::: pf-step
 
-Set $s = 1+it$ with $|t| \ge 2$, and choose $N = \lfloor |t| \rfloor \ge 2$.
+Set $s = 1+it$ with $\abs{t} \ge 2$, and choose $N = \lfloor \abs{t} \rfloor \ge 2$.
 
 :::
 
 ::: pf-step
 
 In the expansion from step [](#s1){.pf-ref}:
-    $$\left| \sum_{1 \le n < N} n^{-1-it} \right| \le \sum_{n=1}^{N-1} \frac{1}{n} \le 1 + \int_1^N \frac{dx}{x} = 1 + \log N \le 1 + \log |t|.$$
+    $$\abs{ \sum_{1 \le n < N} n^{-1-it} } \le \sum_{n=1}^{N-1} \frac{1}{n} \le 1 + \int_1^N \frac{dx}{x} = 1 + \log N \le 1 + \log \abs{t}.$$
 
 :::
 
 ::: pf-step
 
 For the pole term:
-    $$\left| \frac{N^{1-s}}{s-1} \right| = \left| \frac{N^{-it}}{it} \right| = \frac{1}{|t|} \le \frac{1}{2} = O(1).$$
+    $$\abs{ \frac{N^{1-s}}{s-1} } = \abs{ \frac{N^{-it}}{it} } = \frac{1}{\abs{t}} \le \frac{1}{2} = O(1).$$
 
 :::
 
 ::: pf-step
 
-For the tail: using $|\delta_n(1+it)| \le |1+it| n^{-2} \le (1+|t|) n^{-2}$,
-    $$\left| \sum_{n=N}^\infty \delta_n(1+it) \right| \le (1+|t|) \sum_{n=N}^\infty \frac{1}{n^2} \le (1+|t|) \frac{1}{N-1} \le \frac{1+|t|}{|t|-1} \le 3 = O(1).$$
+For the tail: using $\abs{\delta_n(1+it)} \le \abs{1+it} n^{-2} \le (1+\abs{t}) n^{-2}$,
+    $$\abs{ \sum_{n=N}^\infty \delta_n(1+it) } \le (1+\abs{t}) \sum_{n=N}^\infty \frac{1}{n^2} \le (1+\abs{t}) \frac{1}{N-1} \le \frac{1+\abs{t}}{\abs{t}-1} \le 3 = O(1).$$
 
 :::
 
 ::: pf-step
 
-Summing the three bounds gives $|\zeta(1+it)| \le \log |t| + O(1) = O(\log |t|)$.
+Summing the three bounds gives $\abs{\zeta(1+it)} \le \log \abs{t} + O(1) = O(\log \abs{t})$.
 
 :::
 
@@ -133,7 +133,7 @@ Summing the three bounds gives $|\zeta(1+it)| \le \log |t| + O(1) = O(\log |t|)$
 
 ::: {.pf-step #s3}
 
-Part 1(c): Bound $|\zeta'(1+it)| = O((\log |t|)^2)$ as $|t| \to \infty$.
+Part 1(c): Bound $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$ as $\abs{t} \to \infty$.
 
 ::: pf-proof
 
@@ -146,28 +146,28 @@ Differentiating the identity from step [](#s1){.pf-ref} with respect to $s$:
 
 ::: pf-step
 
-At $s = 1+it$ with $N = \lfloor |t| \rfloor$:
-    $$\left| \sum_{1 \le n < N} n^{-1-it} \log n \right| \le \sum_{n=1}^{N-1} \frac{\log n}{n} \le \int_1^N \frac{\log x}{x}\,dx + O(1) = \frac{1}{2} (\log N)^2 + O(1) \le \frac{1}{2}(\log |t|)^2 + O(1).$$
+At $s = 1+it$ with $N = \lfloor \abs{t} \rfloor$:
+    $$\abs{ \sum_{1 \le n < N} n^{-1-it} \log n } \le \sum_{n=1}^{N-1} \frac{\log n}{n} \le \int_1^N \frac{\log x}{x}\,dx + O(1) = \frac{1}{2} (\log N)^2 + O(1) \le \frac{1}{2}(\log \abs{t})^2 + O(1).$$
 
 :::
 
 ::: pf-step
 
 The terms involving $N^{1-s}$ satisfy
-    $$\left| \frac{N^{-it} \log N}{it} \right| = \frac{\log N}{|t|} = O(1), \qquad \left| \frac{N^{-it}}{(it)^2} \right| = \frac{1}{|t|^2} = O(1).$$
+    $$\abs{ \frac{N^{-it} \log N}{it} } = \frac{\log N}{\abs{t}} = O(1), \qquad \abs{ \frac{N^{-it}}{(it)^2} } = \frac{1}{\abs{t}^2} = O(1).$$
 
 :::
 
 ::: pf-step
 
-Differentiating $\delta_n(s) = \int_n^{n+1} (n^{-s} - x^{-s})\,dx$ gives $|\delta_n'(1+it)| \le C |t| \frac{\log n}{n^2}$, so
-    $$\left| \sum_{n=N}^\infty \delta_n'(1+it) \right| \le C |t| \sum_{n=N}^\infty \frac{\log n}{n^2} = O\left(|t| \frac{\log N}{N}\right) = O(\log |t|).$$
+Differentiating $\delta_n(s) = \int_n^{n+1} (n^{-s} - x^{-s})\,dx$ gives $\abs{\delta_n'(1+it)} \le C \abs{t} \frac{\log n}{n^2}$, so
+    $$\abs{ \sum_{n=N}^\infty \delta_n'(1+it) } \le C \abs{t} \sum_{n=N}^\infty \frac{\log n}{n^2} = O\left(\abs{t} \frac{\log N}{N}\right) = O(\log \abs{t}).$$
 
 :::
 
 ::: pf-step
 
-Therefore $|\zeta'(1+it)| = O((\log |t|)^2)$.
+Therefore $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$.
 
 :::
 
@@ -190,13 +190,13 @@ Let $S_m(t) = \sum_{n=1}^m n^{-1-it}$. Applying step [](#s1){.pf-ref} with $s = 
 
 ::: pf-step
 
-The tail satisfies $\left| \sum_{n=m+1}^\infty \delta_n(1+it) \right| \le (1+|t|) \frac{1}{m} \le 1+|t|$ for all $m \ge 1$.
+The tail satisfies $\abs{ \sum_{n=m+1}^\infty \delta_n(1+it) } \le (1+\abs{t}) \frac{1}{m} \le 1+\abs{t}$ for all $m \ge 1$.
 
 :::
 
 ::: pf-step
 
-Since $|\zeta(1+it)|$ is a constant for fixed $t$, and $|(m+1)^{-it}/(it)| = 1/|t|$ is constant, $|S_m(t)| \le |\zeta(1+it)| + \frac{1}{|t|} + (1+|t|)$ is uniformly bounded in $m$.
+Since $\abs{\zeta(1+it)}$ is a constant for fixed $t$, and $\abs{(m+1)^{-it}/(it)} = 1/\abs{t}$ is constant, $\abs{S_m(t)} \le \abs{\zeta(1+it)} + \frac{1}{\abs{t}} + (1+\abs{t})$ is uniformly bounded in $m$.
 
 :::
 

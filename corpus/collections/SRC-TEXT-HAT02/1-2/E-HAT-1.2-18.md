@@ -64,9 +64,9 @@ $$
 For a loop $\gamma:I\to SX$, the composite $h\gamma:I\to I$ is uniformly continuous.
 Choose $\delta>0$ such that
 $$
-|s-t|<\delta
+\abs{s-t}<\delta
 \quad\Longrightarrow\quad
-|h\gamma(s)-h\gamma(t)|<\frac12.
+\abs{h\gamma(s)-h\gamma(t)}<\frac12.
 $$
 Any subinterval on which $\gamma$ goes from $S$ to $N$ or from $N$ to $S$ has endpoints whose $h\gamma$-values differ by $1$, hence must have length at least $\delta$.
 There can be only finitely many pairwise disjoint such subintervals in $I$.

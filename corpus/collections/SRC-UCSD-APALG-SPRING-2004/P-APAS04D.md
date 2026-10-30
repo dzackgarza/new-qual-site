@@ -84,8 +84,8 @@ Using step [](#character-of-a-times-b){.pf-ref},
 $$
 \begin{aligned}
 \langle\chi_{A\times B},\chi_{A\times B}\rangle_{G\times H}
-&=\frac1{|G||H|}\sum_{g\in G}\sum_{h\in H}
-  |\chi_A(g)|^2|\chi_B(h)|^2\\
+&=\frac1{\cardinality{G}\cardinality{H}}\sum_{g\in G}\sum_{h\in H}
+  \abs{\chi_A(g)}^2\abs{\chi_B(h)}^2\\
 &=\langle\chi_A,\chi_A\rangle_G
   \langle\chi_B,\chi_B\rangle_H\\
 &=1.
@@ -134,10 +134,10 @@ $$
 For every finite group over $\CC$, the number of irreducible representations equals the number of conjugacy classes.
 Therefore
 $$
-|\operatorname{Irr}(G\times H)|
+\cardinality{\operatorname{Irr}(G\times H)}
 =k(G\times H)
 =k(G)k(H)
-=|\operatorname{Irr}(G)|\,|\operatorname{Irr}(H)|.
+=\cardinality{\operatorname{Irr}(G)}\,\cardinality{\operatorname{Irr}(H)}.
 $$
 By step [](#external-products-pairwise-noniso){.pf-ref} we already have exactly this many pairwise nonisomorphic irreducible external products.
 Thus every irreducible representation of $G\times H$ is of the form $A\times B$.

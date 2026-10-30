@@ -35,7 +35,7 @@ If false, give a counterexample or prove your assertion.
 1. If $(X, \mathcal{M}, \mu)$ is a $\sigma$-finite measure space, then there exists a finite measure $\nu$ on $\mathcal{M}$ such that $\nu \ll \mu$ and $\mu \ll \nu$.
 
 2. Let $m$ denote Lebesgue measure on $\RR$.
-   If $f \in L^1(\RR, m)$ and $\int_a^{a+1} |f(x)|^2 \, dx < \infty$ for every $a \in \RR$, then $f \in L^2(\RR, m)$.
+   If $f \in L^1(\RR, m)$ and $\int_a^{a+1} \abs{f(x)}^2 \, dx < \infty$ for every $a \in \RR$, then $f \in L^2(\RR, m)$.
 
 3. Let $f$ be a tempered distribution on $\RR^n$, with Fourier transform defined by $\langle \hat{f}, \varphi \rangle = \langle f, \hat{\varphi} \rangle$ for $\varphi \in \mathcal{S}$.
    Recall that for a distribution, $\langle \tau_y^\vee f, \varphi \rangle = \langle f, \tau_{-y} \varphi \rangle$.
@@ -101,19 +101,19 @@ f(x):=\sum_{n=1}^\infty n\,\mathbf1_{I_n}(x).
 $$
 Then
 $$
-\|f\|_1
+\norm{f}_1
 =\sum_{n=1}^\infty n\,m(I_n)
 =\sum_{n=1}^\infty\frac1{n^2}<\infty.
 $$
 Every bounded interval meets only finitely many of the supports $I_n$, so in particular
 $$
-\int_a^{a+1}|f(x)|^2\,dx<\infty
+\int_a^{a+1}\abs{f(x)}^2\,dx<\infty
 $$
 for every $a\in\RR$.
 
 However,
 $$
-\|f\|_2^2
+\norm{f}_2^2
 =\sum_{n=1}^\infty n^2m(I_n)
 =\sum_{n=1}^\infty\frac1n
 =\infty.

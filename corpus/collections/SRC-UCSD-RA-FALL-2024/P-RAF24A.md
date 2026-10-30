@@ -72,8 +72,8 @@ h(t):=m((A+t)\cap B)
 $$
 Since translations are continuous in $L^1(\RR)$,
 $$
-|h(t)-h(s)|
-\le \|\mathbf1_A(\cdot-t)-\mathbf1_A(\cdot-s)\|_1,
+\abs{h(t)-h(s)}
+\le \norm{\mathbf1_A(\cdot-t)-\mathbf1_A(\cdot-s)}_1,
 $$
 so $h$ is continuous.
 

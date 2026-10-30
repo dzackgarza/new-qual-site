@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KWIEG
 kind: problem
-title: Number of roots of $4z^4-6z+3$ in $|z|<1$ and $1<|z|<2$
+title: Number of roots of $4z^4-6z+3$ in $\abs{z}<1$ and $1<\abs{z}<2$
 classification:
   areas:
   - complex-analysis

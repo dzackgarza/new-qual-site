@@ -25,7 +25,7 @@ The only such function is $\boxed{f(z) = e^z}$.
 
 ::: pf-proof
 $e^z$ is entire and equals $e^x$ on $\RR$.
-Conversely, $g(z) \definedas f(z) - e^z$ is entire and vanishes on $\RR$, a set with a limit point in $\CC$, so $g\equiv0$ by the identity theorem.
+Conversely, $g(z) \coloneqq f(z) - e^z$ is entire and vanishes on $\RR$, a set with a limit point in $\CC$, so $g\equiv0$ by the identity theorem.
 :::
 
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D07
 kind: problem
-title: An entire function with $|f(z)|\le|z|^{1/2}$ for large $|z|$ is constant
+title: An entire function with $\abs{f(z)}\le\abs{z}^{1/2}$ for large $\abs{z}$ is constant
 classification:
   areas: [complex-analysis]
   topics: []
@@ -40,7 +40,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f : \CC \to \CC$ is entire and $| f ( z ) | \leq | z | ^ { \frac { 1 } { 2 } }$ whenever $| z | > 1 0$ . Prove that $f$ is constant.
+Suppose $f : \CC \to \CC$ is entire and $\abs{ f ( z ) } \leq \abs{ z } ^ { \frac { 1 } { 2 } }$ whenever $\abs{ z } > 1 0$ . Prove that $f$ is constant.
 :::
 
 ::: {.remark title="Variations"}

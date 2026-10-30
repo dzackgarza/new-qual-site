@@ -39,7 +39,7 @@ Part (a): The discontinuity set is $F_\sigma$:
 
 For a function $f: [0, 1] \to \RR$, define the oscillation of $f$ at $x \in [0, 1]$ by:
 $$
-\omega_f(x) = \inf_{r > 0} \operatorname{diam} f(B_r(x) \cap [0, 1]) = \inf_{r > 0} \sup \big\{|f(y) - f(z)| : y, z \in B_r(x) \cap [0, 1]\big\}.
+\omega_f(x) = \inf_{r > 0} \operatorname{diam} f(B_r(x) \cap [0, 1]) = \inf_{r > 0} \sup \big\{\abs{f(y) - f(z)} : y, z \in B_r(x) \cap [0, 1]\big\}.
 $$
 
 ::: pf-proof
@@ -55,7 +55,7 @@ definition of oscillation.
 $f$ is continuous at $x$ if and only if $\omega_f(x) = 0$.
 Thus the set of discontinuity points $D$ is:
 $$
-D = \{x \in [0, 1] \mid \omega_f(x) > 0\} = \bigcup_{n=1}^\infty F_n, \quad \text{where } F_n = \left\{x \in [0, 1] \;\middle|\; \omega_f(x) \ge \frac{1}{n}\right\}.
+D = \{x \in [0, 1] \mid \omega_f(x) > 0\} = \bigcup_{n=1}^\infty F_n, \quad \text{where } F_n = \left\{x \in [0, 1] \;\st\; \omega_f(x) \ge \frac{1}{n}\right\}.
 $$
 
 ::: pf-proof

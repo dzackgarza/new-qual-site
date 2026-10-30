@@ -68,9 +68,9 @@ If $A$ is finite, then $A/A^p$ and $A[p]$ have equal orders.
 ::: pf-proof
 
 Each fiber of $u$ is a coset of $A[p]$, so counting fibers gives
-$|A|=|A[p]|\,|A^p|$. Therefore
+$\cardinality{A}=\cardinality{A[p]}\,\cardinality{A^p}$. Therefore
 $$
-|A/A^p|=\frac{|A|}{|A^p|}=|A[p]|.
+\cardinality{A/A^p}=\frac{\cardinality{A}}{\cardinality{A^p}}=\cardinality{A[p]}.
 $$
 
 :::

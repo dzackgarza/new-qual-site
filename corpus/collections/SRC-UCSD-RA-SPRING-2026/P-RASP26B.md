@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Consider the function
 $$
-d(f, g) := \sup_{0 \leq x \leq 1} \left|\int_0^x (f(t) - g(t))\,dt\right|, \qquad f, g \in L^1([0,1]).
+d(f, g) := \sup_{0 \leq x \leq 1} \abs{\int_0^x (f(t) - g(t))\,dt}, \qquad f, g \in L^1([0,1]).
 $$
-Let $C := \{f \in L^1([0,1]) : |f(t)| \leq 1 \text{ for a.e. } t \in [0,1]\}$.
+Let $C := \{f \in L^1([0,1]) : \abs{f(t)} \leq 1 \text{ for a.e. } t \in [0,1]\}$.
 
 (1) Prove that $d$ is a metric on $L^1([0,1])$.
 
@@ -47,11 +47,11 @@ Prove that $d$ is a metric.
 ::: pf-proof
 Nonnegativity and symmetry are immediate. For the triangle inequality, if $f,g,h\in L^1([0,1])$, then for every $x\in[0,1]$,
 $$
-\left|\int_0^x(f-h)\right|
+\abs{\int_0^x(f-h)}
 \le
-\left|\int_0^x(f-g)\right|
+\abs{\int_0^x(f-g)}
 +
-\left|\int_0^x(g-h)\right|.
+\abs{\int_0^x(g-h)}.
 $$
 Taking the supremum over $x$ gives
 $$
@@ -89,15 +89,15 @@ T(f)(x)=\int_0^x f(t)\,dt.
 $$
 If $f\in C$, then for $0\le x<y\le1$,
 $$
-|T(f)(y)-T(f)(x)|
-=\left|\int_x^y f(t)\,dt\right|
+\abs{T(f)(y)-T(f)(x)}
+=\abs{\int_x^y f(t)\,dt}
 \le y-x.
 $$
 Thus every $T(f)$ is $1$-Lipschitz and vanishes at $0$.
 
 Conversely, suppose $F\in C([0,1])$ is $1$-Lipschitz and $F(0)=0$. A Lipschitz function is absolutely continuous and differentiable almost everywhere, with
 $$
-|F'(t)|\le1
+\abs{F'(t)}\le1
 $$
 almost everywhere. Put $f=F'$. Then $f\in C$ and the Fundamental Theorem of Calculus gives
 $$
@@ -106,7 +106,7 @@ $$
 Hence
 $$
 T(C)
-=\{F\in C([0,1]):F(0)=0,\ |F(x)-F(y)|\le|x-y|\}.
+=\{F\in C([0,1]):F(0)=0,\ \abs{F(x)-F(y)}\le\abs{x-y}\}.
 $$
 :::
 
@@ -119,9 +119,9 @@ Observe that $T$ is an isometry.
 For $f,g\in C$,
 $$
 \begin{aligned}
-\|T(f)-T(g)\|_\infty
+\norm{T(f)-T(g)}_\infty
 &=\sup_{0\le x\le1}
-\left|\int_0^x(f(t)-g(t))\,dt\right|\\
+\abs{\int_0^x(f(t)-g(t))\,dt}\\
 &=d(f,g).
 \end{aligned}
 $$
@@ -136,7 +136,7 @@ Prove compactness by Arzelà--Ascoli.
 ::: pf-proof
 Every $F\in T(C)$ satisfies
 $$
-|F(x)|=|F(x)-F(0)|\le x\le1,
+\abs{F(x)}=\abs{F(x)-F(0)}\le x\le1,
 $$
 so $T(C)$ is uniformly bounded. It is also equicontinuous because every element is $1$-Lipschitz.
 
@@ -146,9 +146,9 @@ F(0)=0
 $$
 and, for every $x,y$,
 $$
-|F(x)-F(y)|
-=\lim_{n\to\infty}|F_n(x)-F_n(y)|
-\le|x-y|.
+\abs{F(x)-F(y)}
+=\lim_{n\to\infty}\abs{F_n(x)-F_n(y)}
+\le\abs{x-y}.
 $$
 Hence $F\in T(C)$ by step [](#image-of-c-under-t){.pf-ref}.
 

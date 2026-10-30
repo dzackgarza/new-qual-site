@@ -26,12 +26,12 @@ audit:
 ::: {.problem}
 Prove that the Hardy-Littlewood maximal function $f^*$ for an integrable function $f$ satisfies
 
-$$m(\{x \in \RR^d : f^*(x) > \alpha\}) \leq \frac{3^d}{\alpha} \|f\|_{L^1(\RR^d)}$$
+$$m(\{x \in \RR^d : f^*(x) > \alpha\}) \leq \frac{3^d}{\alpha} \norm{f}_{L^1(\RR^d)}$$
 
 where $\alpha > 0$.
 Recall that
 
-$$f^*(x) = \sup_{x \in B} \frac{1}{m(B)} \int_B |f(y)| \, dy, \quad x \in \RR^d$$
+$$f^*(x) = \sup_{x \in B} \frac{1}{m(B)} \int_B \abs{f(y)} \, dy, \quad x \in \RR^d$$
 
 where the supremum is taken over all balls containing the point $x$.
 You may assume the Vitali 3-times Covering Lemma.
@@ -66,7 +66,7 @@ The superlevel set is open and is a union of balls with large averages.
 
 Take the balls in the definition of $f^*$ to be open.
 A closed ball containing $x$ lies in a slightly larger
-concentric open ball, whose average of $|f|$ is arbitrarily
+concentric open ball, whose average of $\abs{f}$ is arbitrarily
 close, so this does not change $f^*$.
 
 Fix $\alpha>0$ and set
@@ -75,7 +75,7 @@ E_\alpha:=\{x\in\RR^d:f^*(x)>\alpha\}.
 $$
 For each $x\in E_\alpha$, choose an open ball $B_x\ni x$ such that
 $$
-\frac1{m(B_x)}\int_{B_x}|f(y)|\,dy>\alpha.
+\frac1{m(B_x)}\int_{B_x}\abs{f(y)}\,dy>\alpha.
 $$
 Every point of $B_x$ then lies in $E_\alpha$, so
 $E_\alpha=\bigcup_{x\in E_\alpha}B_x$ is open, hence measurable.
@@ -96,14 +96,14 @@ balls $B_1,\dots,B_N$ among them with
 $$
 K\subseteq\bigcup_{j=1}^N3B_j.
 $$
-Each $B_j$ satisfies $\alpha m(B_j)<\int_{B_j}|f|$, and the
+Each $B_j$ satisfies $\alpha m(B_j)<\int_{B_j}\abs{f}$, and the
 $B_j$ are pairwise disjoint. Therefore
 $$
 m(K)
 \le\sum_{j=1}^N m(3B_j)
 =3^d\sum_{j=1}^N m(B_j)
-<\frac{3^d}{\alpha}\sum_{j=1}^N\int_{B_j}|f|
-\le\frac{3^d}{\alpha}\|f\|_1.
+<\frac{3^d}{\alpha}\sum_{j=1}^N\int_{B_j}\abs{f}
+\le\frac{3^d}{\alpha}\norm{f}_1.
 $$
 
 :::
@@ -122,7 +122,7 @@ $m(E_\alpha)=\sup\{m(K):K\subset E_\alpha\text{ compact}\}$
 $$
 \boxed{
 m(\{x:f^*(x)>\alpha\})
-\le\frac{3^d}{\alpha}\|f\|_{L^1(\RR^d)}.}
+\le\frac{3^d}{\alpha}\norm{f}_{L^1(\RR^d)}.}
 $$
 
 :::

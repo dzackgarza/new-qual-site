@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 An entire function $f:\CC\to\CC$ is of exponential type if there are constants $c_1,c_2>0$ such that
 $$
-|f(z)|\le c_1e^{c_2|z|}
+\abs{f(z)}\le c_1e^{c_2\abs{z}}
 \qquad\text{for every }z\in\CC.
 $$
 Show that $f$ is of exponential type if and only if $f'$ is of exponential type.
@@ -35,9 +35,9 @@ c_1,c_2>0
 $$
 such that
 $$
-|f(z)|
+\abs{f(z)}
 \le
-c_1e^{c_2|z|}
+c_1e^{c_2\abs{z}}
 $$
 for all $z\in\CC$.
 
@@ -47,7 +47,7 @@ for all $z\in\CC$.
 
 Fix $z\in\CC$ and apply Cauchy's derivative formula on the circle
 $$
-|w-z|=1.
+\abs{w-z}=1.
 $$
 
 
@@ -66,7 +66,7 @@ $$
 f'(z)
 =
 \frac1{2\pi i}
-\int_{|w-z|=1}
+\int_{\abs{w-z}=1}
 \frac{f(w)}{(w-z)^2}\,dw.
 $$
 
@@ -83,9 +83,9 @@ This is the standard derivative form of Cauchy's integral formula.
 
 Therefore
 $$
-|f'(z)|
+\abs{f'(z)}
 \le
-\max_{|w-z|=1}|f(w)|.
+\max_{\abs{w-z}=1}\abs{f(w)}.
 $$
 
 
@@ -93,13 +93,13 @@ $$
 
 On the circle,
 $$
-|w-z|=1,
+\abs{w-z}=1,
 $$
 and its length is $2\pi$. Hence the $ML$-estimate gives
 $$
-|f'(z)|
+\abs{f'(z)}
 \le
-\frac1{2\pi}(2\pi)\max_{|w-z|=1}|f(w)|.
+\frac1{2\pi}(2\pi)\max_{\abs{w-z}=1}\abs{f(w)}.
 $$
 
 :::
@@ -110,11 +110,11 @@ $$
 
 If
 $$
-|w-z|=1,
+\abs{w-z}=1,
 $$
 then
 $$
-\boxed{|w|\le |z|+1}.
+\boxed{\abs{w}\le \abs{z}+1}.
 $$
 
 
@@ -122,11 +122,11 @@ $$
 
 By the triangle inequality,
 $$
-|w|
+\abs{w}
 \le
-|w-z|+|z|
+\abs{w-z}+\abs{z}
 =
-1+|z|.
+1+\abs{z}.
 $$
 
 :::
@@ -137,11 +137,11 @@ $$
 
 Hence
 $$
-|f'(z)|
+\abs{f'(z)}
 \le
-c_1e^{c_2(|z|+1)}
+c_1e^{c_2(\abs{z}+1)}
 =
-c_1e^{c_2}e^{c_2|z|}.
+c_1e^{c_2}e^{c_2\abs{z}}.
 $$
 
 
@@ -158,9 +158,9 @@ Apply the exponential-type bound for $f$ to step [](#s1-3){.pf-ref} and use step
 Therefore
 $$
 \boxed{
-|f'(z)|
+\abs{f'(z)}
 \le
-C_1e^{C_2|z|}}
+C_1e^{C_2\abs{z}}}
 $$
 for all $z$, with
 $$
@@ -224,13 +224,13 @@ Integrate from $0$ to $1$.
 
 Therefore
 $$
-|f(z)|
+\abs{f(z)}
 \le
-|f(0)|
+\abs{f(0)}
 +
-|z|
+\abs{z}
 \int_0^1
-|f'(tz)|\,dt.
+\abs{f'(tz)}\,dt.
 $$
 
 
@@ -246,13 +246,13 @@ Take absolute values in step [](#s1-8){.pf-ref} and use the triangle inequality.
 
 Using the exponential-type bound for $f'$,
 $$
-|f(z)|
+\abs{f(z)}
 \le
-|f(0)|
+\abs{f(0)}
 +
-a_1|z|
+a_1\abs{z}
 \int_0^1
-e^{a_2t|z|}\,dt.
+e^{a_2t\abs{z}}\,dt.
 $$
 
 
@@ -260,7 +260,7 @@ $$
 
 Since
 $$
-|tz|=t|z|
+\abs{tz}=t\abs{z}
 $$
 for $0\le t\le1$, substitute the assumed bound into step [](#s1-9){.pf-ref}.
 
@@ -272,11 +272,11 @@ for $0\le t\le1$, substitute the assumed bound into step [](#s1-9){.pf-ref}.
 
 If $z\ne0$,
 $$
-|z|
+\abs{z}
 \int_0^1
-e^{a_2t|z|}\,dt
+e^{a_2t\abs{z}}\,dt
 =
-\frac{e^{a_2|z|}-1}{a_2}.
+\frac{e^{a_2\abs{z}}-1}{a_2}.
 $$
 
 
@@ -285,11 +285,11 @@ $$
 Integrate explicitly:
 $$
 \int_0^1
-e^{a_2t|z|}\,dt
+e^{a_2t\abs{z}}\,dt
 =
-\frac{e^{a_2|z|}-1}{a_2|z|}.
+\frac{e^{a_2\abs{z}}-1}{a_2\abs{z}}.
 $$
-Multiply by $|z|$.
+Multiply by $\abs{z}$.
 
 :::
 
@@ -299,13 +299,13 @@ Multiply by $|z|$.
 
 Hence for $z\ne0$,
 $$
-|f(z)|
+\abs{f(z)}
 \le
-|f(0)|
+\abs{f(0)}
 +
 \frac{a_1}{a_2}
 \left(
-e^{a_2|z|}-1
+e^{a_2\abs{z}}-1
 \right).
 $$
 
@@ -322,17 +322,17 @@ Use steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}.
 
 Since
 $$
-e^{a_2|z|}\ge1,
+e^{a_2\abs{z}}\ge1,
 $$
 one obtains
 $$
 \boxed{
-|f(z)|
+\abs{f(z)}
 \le
 \left(
-|f(0)|+\frac{a_1}{a_2}
+\abs{f(0)}+\frac{a_1}{a_2}
 \right)
-e^{a_2|z|}}
+e^{a_2\abs{z}}}
 $$
 for every $z\in\CC$.
 
@@ -341,15 +341,15 @@ for every $z\in\CC$.
 
 For $z\ne0$,
 $$
-|f(0)|
+\abs{f(0)}
 \le
-|f(0)|e^{a_2|z|}
+\abs{f(0)}e^{a_2\abs{z}}
 $$
 and
 $$
-\frac{a_1}{a_2}(e^{a_2|z|}-1)
+\frac{a_1}{a_2}(e^{a_2\abs{z}}-1)
 \le
-\frac{a_1}{a_2}e^{a_2|z|}.
+\frac{a_1}{a_2}e^{a_2\abs{z}}.
 $$
 At $z=0$, the displayed inequality is immediate.
 

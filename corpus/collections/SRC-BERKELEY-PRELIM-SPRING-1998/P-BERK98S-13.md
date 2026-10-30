@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-13
 kind: problem
-title: Integral of $|dz|/|z-a|^2$ over the unit circle for $|a|<1$
+title: Integral of $\abs{dz}/\abs{z-a}^2$ over the unit circle for $\abs{a}<1$
 classification:
   areas:
   - prelim
@@ -19,9 +19,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $a\in\CC$ with $|a|<1$. Evaluate
+Let $a\in\CC$ with $\abs{a}<1$. Evaluate
 $$
-\int_{|z|=1}\frac{|dz|}{|z-a|^2}.
+\int_{\abs{z}=1}\frac{\abs{dz}}{\abs{z-a}^2}.
 $$
 :::
 

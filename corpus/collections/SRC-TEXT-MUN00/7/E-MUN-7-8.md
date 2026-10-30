@@ -59,7 +59,7 @@ $$
 $$
 because $\ZZ_+\times\ZZ_+$ is countably infinite. Hence there is an injection $\mathcal B\to X^\omega$. Schroeder--Bernstein gives
 $$
-\boxed{|\mathcal B|=|X^\omega|}.
+\boxed{\cardinality{\mathcal B}=\cardinality{X^\omega}}.
 $$
 
 The simultaneous choice of an enumeration $e_S$ for every countable $S$ is a genuine choice step; without an appropriate choice principle this cardinality statement is not provable in this form in ZF alone.

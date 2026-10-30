@@ -46,7 +46,7 @@ f^{-1}(q)=\{p_1,\dots,p_k\},
 $$
 and, in coordinate balls around each $p_i$ and around $q$, the map is given by an invertible linear map. Choose pairwise disjoint small balls $B_i$ about the $p_i$'s and a ball $B$ about $q$ so that
 $$
-f|_{B_i}:B_i\to B
+f\restrict_{B_i}:B_i\to B
 $$
 is linear and invertible in these coordinates.
 

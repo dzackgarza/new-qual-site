@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F16-03
 kind: problem
-title: Complex line integrals and the ML estimate for $\int_{|z|=R}\frac{\log z}{z^2}\,dz$
+title: Complex line integrals and the ML estimate for $\int_{\abs{z}=R}\frac{\log z}{z^2}\,dz$
 classification:
   areas:
   - complex-analysis
@@ -28,13 +28,13 @@ $$
 \int _ { \alpha } f .
 $$
 
-(b) Assume that there exists a constant M such that $| f ( \tau ) | \le M$ for all $\tau \in { \mathrm { I m a g e } } ( \alpha )$ . Prove that
+(b) Assume that there exists a constant M such that $\abs{ f ( \tau ) } \le M$ for all $\tau \in { \mathrm { I m a g e } } ( \alpha )$ . Prove that
 
 $$
-\big | \int _ { \alpha } f \big | \leq M \times \mathrm { l e n g t h } ( \alpha ) .
+\abs{ \int _ { \alpha } f } \leq M \times \mathrm { l e n g t h } ( \alpha ) .
 $$
 
-(c) Let $C_{R}$ be the circle $|z| = R$, parametrized counterclockwise by $z(t) = Re^{it}$, $0 \le t \le 2\pi$, where $R > 1$, and let $\Log_{C_R}$ be the continuous determination of the logarithm along $C_R$ given by $\Log_{C_R}(Re^{it}) = \log R + it$. Provide an upper bound for $\left| \int_{C_{R}} \frac{\Log_{C_R} z}{z^{2}}\,dz \right|$, which depends only on $R$ and other constants.
+(c) Let $C_{R}$ be the circle $\abs{z} = R$, parametrized counterclockwise by $z(t) = Re^{it}$, $0 \le t \le 2\pi$, where $R > 1$, and let $\Log_{C_R}$ be the continuous determination of the logarithm along $C_R$ given by $\Log_{C_R}(Re^{it}) = \log R + it$. Provide an upper bound for $\abs{ \int_{C_{R}} \frac{\Log_{C_R} z}{z^{2}}\,dz }$, which depends only on $R$ and other constants.
 :::
 
 ::: {.solution}

@@ -74,15 +74,15 @@ Sylow subgroup.
 
 Let $G$ be finite and let $p$ be a prime. If
 $$
-|G|=p^a m,
+\cardinality{G}=p^a m,
 \qquad p\nmid m,
 $$
 then a **Sylow $p$-subgroup** of $G$ is a subgroup $P\le G$ of order
 $$
-|P|=p^a.
+\cardinality{P}=p^a.
 $$
 Thus it is a $p$-subgroup whose order is the largest power of $p$ dividing
-$|G|$.
+$\cardinality{G}$.
 
 :::
 

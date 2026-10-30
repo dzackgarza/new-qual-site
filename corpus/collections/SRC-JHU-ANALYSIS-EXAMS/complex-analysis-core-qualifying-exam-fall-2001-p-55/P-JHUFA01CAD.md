@@ -26,7 +26,7 @@ Problem 4. Suppose that $f : D _ { 1 } ( 0 ) \to \CC$ is a one-to-one holomorphi
 
 ::: {.pf-step #s1}
 
-$h\definedas f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
+$h\coloneqq f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
 
 ::: pf-proof
 

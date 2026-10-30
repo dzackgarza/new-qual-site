@@ -22,13 +22,13 @@ $$
 F(z)=\frac{e^{iz}}{1+z^2}
 $$
 over the upper semicircle of radius $R>1$. On the arc,
-$|e^{iz}|=e^{-\operatorname{Im}z}\le1$, while
+$\abs{e^{iz}}=e^{-\operatorname{Im}z}\le1$, while
 $$
-|1+z^2|\ge R^2-1.
+\abs{1+z^2}\ge R^2-1.
 $$
 Since the arc has length $\pi R$,
 $$
-\left|\int_{\text{arc}}F(z)\,dz\right|
+\abs{\int_{\text{arc}}F(z)\,dz}
 \le \frac{\pi R}{R^2-1}\longrightarrow0.
 $$
 

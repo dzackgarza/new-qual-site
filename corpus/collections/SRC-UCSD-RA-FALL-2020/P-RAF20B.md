@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $X$ denote the set of all sequences $a = (a_1, a_2, \ldots)$ with all $a_k$ ($k \geq 1$) real numbers but only finitely many of them nonzero.
 $X$ is a real vector space with the usual component-wise addition and scalar multiplication.
-It is a normed vector space with the norm $\|a\| = \sup_{k \geq 1} |a_k|$.
+It is a normed vector space with the norm $\norm{a} = \sup_{k \geq 1} \abs{a_k}$.
 Define $T : X \to X$ by
 $$
 Ta = \left(a_1, \frac{a_2}{2}, \ldots, \frac{a_k}{k}, \ldots\right) \quad \text{if } a = (a_1, a_2, \ldots, a_k, \ldots) \in X.
@@ -43,22 +43,22 @@ Prove that $T : X \to X$ is a bijective, linear, and bounded operator, but its i
 
 ::: {.pf-step #s1}
 
-$T$ is linear and bounded, with $\|T\|=1$.
+$T$ is linear and bounded, with $\norm{T}=1$.
 
 ::: pf-proof
 
 The map $T$ acts coordinatewise by multiplication by the scalars $1/k$, so it is linear. Moreover, for $a=(a_k)\in X$,
 $$
-\|Ta\|
-=\sup_{k\ge1}\frac{|a_k|}{k}
-\le \sup_{k\ge1}|a_k|
-=\|a\|.
+\norm{Ta}
+=\sup_{k\ge1}\frac{\abs{a_k}}{k}
+\le \sup_{k\ge1}\abs{a_k}
+=\norm{a}.
 $$
 Hence $T$ is bounded and
 $$
-\|T\|\le1.
+\norm{T}\le1.
 $$
-Since $Te_1=e_1$, in fact $\|T\|=1$.
+Since $Te_1=e_1$, in fact $\norm{T}=1$.
 
 :::
 
@@ -99,7 +99,7 @@ $T^{-1}$ is unbounded.
 
 For the standard basis vector $e_n$,
 $$
-\|e_n\|=1,
+\norm{e_n}=1,
 $$
 whereas
 $$
@@ -107,11 +107,11 @@ T^{-1}e_n=ne_n
 $$
 and therefore
 $$
-\|T^{-1}e_n\|=n.
+\norm{T^{-1}e_n}=n.
 $$
 If $T^{-1}$ were bounded, there would be a constant $C$ with
 $$
-n=\|T^{-1}e_n\|\le C\|e_n\|=C
+n=\norm{T^{-1}e_n}\le C\norm{e_n}=C
 $$
 for every $n$, impossible. Hence
 $$

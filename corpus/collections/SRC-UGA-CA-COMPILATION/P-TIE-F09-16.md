@@ -30,11 +30,11 @@ Let $z_0$ be the possible exceptional point.
 
 There exist $r>0$ and $M>0$ such that
 $$
-|f(z)|\le M
+\abs{f(z)}\le M
 $$
 whenever
 $$
-0<|z-z_0|<r.
+0<\abs{z-z_0}<r.
 $$
 
 
@@ -68,9 +68,9 @@ $$
 $$
 By step [](#s1-1){.pf-ref},
 $$
-|(z-z_0)f(z)|
+\abs{(z-z_0)f(z)}
 \le
-M|z-z_0|
+M\abs{z-z_0}
 \longrightarrow0
 $$
 as $z\to z_0$. Hence $g$ is differentiable at $z_0$ and
@@ -115,7 +115,7 @@ The function $f$ has a removable singularity at $z_0$.
 
 ::: pf-proof
 
-For $0<|z-z_0|<r$, steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give
+For $0<\abs{z-z_0}<r$, steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give
 $$
 (z-z_0)^2f(z)
 =

@@ -117,7 +117,7 @@ Substitute steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} into the arc-leng
 
 An antiderivative of $\sec x$ is
 $$
-\log|\sec x+\tan x|.
+\log\abs{\sec x+\tan x}.
 $$
 
 

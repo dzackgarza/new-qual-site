@@ -49,9 +49,9 @@ $$
 One has
 $$
 \boxed{
-\left|
+\abs{
 a_n-\frac1n
-\right|
+}
 \le
 \frac1{2n^2}}.
 $$
@@ -98,12 +98,12 @@ $$
 
 Fix $R>0$. There is a constant $C_R$ such that for every
 $$
-|z|\le R
+\abs{z}\le R
 $$
 and all sufficiently large $n$,
 $$
 \boxed{
-|q_n(z)-1|
+\abs{q_n(z)-1}
 \le
 \frac{C_R}{n^2}}.
 $$
@@ -117,38 +117,38 @@ w=za_n.
 $$
 For $n$ sufficiently large,
 $$
-|w|
+\abs{w}
 \le
 \frac{2R}{n}.
 $$
 Using
 $$
-|e^w-1-w|
+\abs{e^w-1-w}
 \le
-\frac12|w|^2e^{|w|},
+\frac12\abs{w}^2e^{\abs{w}},
 $$
 step [](#s1-1){.pf-ref} gives
 $$
 \begin{aligned}
-\left|
+\abs{
 e^{za_n}-1-\frac zn
-\right|
+}
 &\le
-|e^{za_n}-1-za_n|
+\abs{e^{za_n}-1-za_n}
 +
-|z|
-\left|
+\abs{z}
+\abs{
 a_n-\frac1n
-\right|\\
+}\\
 &\le
 \frac{C_R'}{n^2}.
 \end{aligned}
 $$
 Also
 $$
-|e^{za_n}-1|
+\abs{e^{za_n}-1}
 \le
-|za_n|e^{|za_n|}
+\abs{za_n}e^{\abs{za_n}}
 \le
 \frac{C_R''}{n}.
 $$
@@ -183,7 +183,7 @@ For every compact set $K\subset\CC$,
 $$
 \boxed{
 \sum_{n=1}^{\infty}
-\sup_{z\in K}|q_n(z)-1|
+\sup_{z\in K}\abs{q_n(z)-1}
 <\infty}.
 $$
 
@@ -192,7 +192,7 @@ $$
 
 Choose $R$ with
 $$
-K\subseteq\{z:|z|\le R\}.
+K\subseteq\{z:\abs{z}\le R\}.
 $$
 Step [](#s1-2){.pf-ref} bounds the tail by a constant multiple of
 $$
@@ -223,7 +223,7 @@ u_n(z)=q_n(z)-1.
 $$
 By step [](#s1-3){.pf-ref},
 $$
-\sum_n\|u_n\|_{K,\infty}<\infty.
+\sum_n\norm{u_n}_{K,\infty}<\infty.
 $$
 For $M>N$,
 $$
@@ -232,7 +232,7 @@ $$
 has absolute value at most
 $$
 \exp\left(
-\sum_{n=N+1}^{M}|u_n(z)|
+\sum_{n=N+1}^{M}\abs{u_n(z)}
 \right)-1.
 $$
 The right-hand side tends uniformly to $0$ on $K$ as $N\to\infty$.
@@ -242,12 +242,12 @@ $$
 $$
 is uniformly bounded on $K$, since
 $$
-\prod_{n=1}^{N}|q_n(z)|
+\prod_{n=1}^{N}\abs{q_n(z)}
 \le
-\prod_{n=1}^{N}(1+|u_n(z)|)
+\prod_{n=1}^{N}(1+\abs{u_n(z)})
 \le
 \exp\left(
-\sum_{n=1}^{\infty}\|u_n\|_{K,\infty}
+\sum_{n=1}^{\infty}\norm{u_n}_{K,\infty}
 \right).
 $$
 Hence $(P_N)$ is uniformly Cauchy on $K$.
@@ -311,18 +311,18 @@ positive finite number.
 
 Step [](#s1-2){.pf-ref}, applied to the compact singleton $\{z\}$, gives
 $$
-\sum_{n=1}^{\infty}|q_n(z)-1|<\infty.
+\sum_{n=1}^{\infty}\abs{q_n(z)-1}<\infty.
 $$
 Hence $q_n(z)\to1$. For all sufficiently large $n$,
 $$
-|q_n(z)-1|\le\frac12.
+\abs{q_n(z)-1}\le\frac12.
 $$
 Since the factors are positive by step [](#s1-6){.pf-ref}, the real logarithm is defined,
 and
 $$
-|\log q_n(z)|
+\abs{\log q_n(z)}
 \le
-2|q_n(z)-1|.
+2\abs{q_n(z)-1}.
 $$
 Thus
 $$

@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_k \in L^2(\RR^n)$ and $\|f_k\|_2 \leq 1$ for each $k = 1, 2, \ldots$, and assume that
+Let $f_k \in L^2(\RR^n)$ and $\norm{f_k}_2 \leq 1$ for each $k = 1, 2, \ldots$, and assume that
 $$
-\lim_{R \to \infty} \sup_{k \geq 1} \int_{\RR^n \setminus B_R(0)} (|f_k(x)|^2 + |\hat{f}_k(x)|^2)\,dx = 0
+\lim_{R \to \infty} \sup_{k \geq 1} \int_{\RR^n \setminus B_R(0)} (\abs{f_k(x)}^2 + \abs{\hat{f}_k(x)}^2)\,dx = 0
 $$
 with $B_R(0)$ the ball of radius $R$ centered at the origin.
 Show that $\{f_k\}_{k \geq 1}$ has a convergent subsequence in $L^2(\RR^n)$.
@@ -53,33 +53,33 @@ Approximate the sequence uniformly by doubly truncated functions.
 For every $h\in L^2$,
 $$
 \begin{aligned}
-\|h-P_RQ_Rh\|_2
-&\le \|h-P_Rh\|_2
-+\|P_Rh-P_RQ_Rh\|_2\\
-&\le \|(1-P_R)h\|_2+\|h-Q_Rh\|_2.
+\norm{h-P_RQ_Rh}_2
+&\le \norm{h-P_Rh}_2
++\norm{P_Rh-P_RQ_Rh}_2\\
+&\le \norm{(1-P_R)h}_2+\norm{h-Q_Rh}_2.
 \end{aligned}
 $$
 By Plancherel,
 $$
-\|h-Q_Rh\|_2^2
-=\int_{\RR^n\setminus B_R}|\widehat h(\xi)|^2\,d\xi.
+\norm{h-Q_Rh}_2^2
+=\int_{\RR^n\setminus B_R}\abs{\widehat h(\xi)}^2\,d\xi.
 $$
 Hence for the sequence $(f_k)$,
 $$
-\sup_k\|f_k-P_RQ_Rf_k\|_2
+\sup_k\norm{f_k-P_RQ_Rf_k}_2
 \le
 \sup_k\left(
-\int_{\RR^n\setminus B_R}|f_k|^2
+\int_{\RR^n\setminus B_R}\abs{f_k}^2
 \right)^{1/2}
 +
 \sup_k\left(
-\int_{\RR^n\setminus B_R}|\widehat f_k|^2
+\int_{\RR^n\setminus B_R}\abs{\widehat f_k}^2
 \right)^{1/2}.
 $$
 The hypothesis therefore implies
 $$
 \boxed{
-\sup_k\|f_k-P_RQ_Rf_k\|_2\longrightarrow0
+\sup_k\norm{f_k-P_RQ_Rf_k}_2\longrightarrow0
 \quad(R\to\infty).}
 $$
 :::
@@ -106,7 +106,7 @@ K_R(x,\xi)
 $$
 up to the harmless normalization convention for the Fourier transform. Since
 $$
-\int_{\RR^n}\int_{\RR^n}|K_R(x,\xi)|^2\,dx\,d\xi
+\int_{\RR^n}\int_{\RR^n}\abs{K_R(x,\xi)}^2\,dx\,d\xi
 =m(B_R)^2<\infty,
 $$
 $A_R$ is Hilbert--Schmidt, hence compact.
@@ -126,9 +126,9 @@ Prove total boundedness of $\{f_k\}$.
 ::: pf-proof
 Fix $\varepsilon>0$. By step [](#approximate-by-doubly-truncated){.pf-ref}, choose $R$ so large that
 $$
-\sup_k\|f_k-P_RQ_Rf_k\|_2<\frac\varepsilon2.
+\sup_k\norm{f_k-P_RQ_Rf_k}_2<\frac\varepsilon2.
 $$
-Since $\|f_k\|_2\le1$ and $P_RQ_R$ is compact, the set
+Since $\norm{f_k}_2\le1$ and $P_RQ_R$ is compact, the set
 $$
 \{P_RQ_Rf_k:k\ge1\}
 $$

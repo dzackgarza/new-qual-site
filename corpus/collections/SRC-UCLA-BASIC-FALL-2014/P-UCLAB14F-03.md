@@ -69,11 +69,11 @@ for every $j$.
 The function $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
 Choose $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\frac{\varepsilon}{3}.
+\abs{f(x)-f(y)}<\frac{\varepsilon}{3}.
 $$
 Choose a partition whose mesh is smaller than $\delta$.
 Since $f$ is nondecreasing by step [](#s1-1){.pf-ref},
@@ -89,7 +89,7 @@ $$
 
 There exists $N$ such that for every $n\ge N$ and every partition point $x_j$,
 $$
-|f_n(x_j)-f(x_j)|
+\abs{f_n(x_j)-f(x_j)}
 <
 \frac{\varepsilon}{3}.
 $$
@@ -194,7 +194,7 @@ $$
 
 For every $n\ge N$ and every $x\in[0,1]$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 
@@ -211,7 +211,7 @@ f_n(x)-f(x)
 $$
 Thus
 $$
-|f_n(x)-f(x)|
+\abs{f_n(x)-f(x)}
 <
 \frac{2\varepsilon}{3}
 <

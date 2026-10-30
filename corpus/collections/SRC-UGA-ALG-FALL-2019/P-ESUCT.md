@@ -102,7 +102,7 @@ Injectivity: If $\Psi(\sigma) = [1]_n$, then $\sigma(\zeta_n) = \zeta_n^1 = \zet
 
 ::: pf-step
 
-Isomorphism: Since $|\operatorname{Gal}(\QQ(\zeta_n)/\QQ)| = [\QQ(\zeta_n) : \QQ] = \varphi(n) = |(\ZZ/n\ZZ)^\times|$, the injective homomorphism $\Psi$ is a bijection, and hence an isomorphism:
+Isomorphism: Since $\cardinality{\operatorname{Gal}(\QQ(\zeta_n)/\QQ)} = [\QQ(\zeta_n) : \QQ] = \varphi(n) = \cardinality{(\ZZ/n\ZZ)^\times}$, the injective homomorphism $\Psi$ is a bijection, and hence an isomorphism:
 
 :::
 

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4. (20 points) Let D denote the unit disc $\{ z : | z | < 1 \}$ . Determine a holomorphic mapping f of D onto itself for which $\begin{array} { r } { f ( \frac { 1 } { 2 } ) = - \frac { 1 } { \pi } } \end{array}$
+4. (20 points) Let D denote the unit disc $\{ z : \abs{ z } < 1 \}$ . Determine a holomorphic mapping f of D onto itself for which $\begin{array} { r } { f ( \frac { 1 } { 2 } ) = - \frac { 1 } { \pi } } \end{array}$
 :::
 
 ::: {.solution}
@@ -55,9 +55,9 @@ $$
 $$
 satisfies
 $$
-1-|\phi_a(z)|^2
-=\frac{(1-a^2)(1-|z|^2)}{|1-az|^2}>0
-\qquad(|z|<1),
+1-\abs{\phi_a(z)}^2
+=\frac{(1-a^2)(1-\abs{z}^2)}{\abs{1-az}^2}>0
+\qquad(\abs{z}<1),
 $$
 and has inverse
 $$
@@ -66,12 +66,12 @@ $$
 Thus $\phi=\phi_{1/2}$ is a biholomorphic map of the disk onto itself and
 $\phi(1/2)=0$.
 
-Since $|b|=1/\pi<1$, the map
+Since $\abs{b}=1/\pi<1$, the map
 $$
 \psi_b^{-1}(w)=\frac{w+b}{1+bw}
 $$
-is also a disk automorphism. Its denominator cannot vanish for $|w|<1$ because
-$|bw|<1$.
+is also a disk automorphism. Its denominator cannot vanish for $\abs{w}<1$ because
+$\abs{bw}<1$.
 
 :::
 

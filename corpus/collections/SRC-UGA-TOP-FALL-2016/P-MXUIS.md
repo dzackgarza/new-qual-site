@@ -47,7 +47,7 @@ $$
 \pi_1(S_k)
 \cong
 \left\langle c_1,\dots,c_k
-\mathrel{\Big|}
+\mathrel{\presentationbar}
 c_1c_2\cdots c_k=1
 \right\rangle.
 $$
@@ -105,7 +105,7 @@ $$
 \cong
 \left\langle
 c_1,\dots,c_k,x_1,\dots,x_k
-\mathrel{\Big|}
+\mathrel{\presentationbar}
 c_1\cdots c_k=1,\ c_i=x_i^2\ (1\le i\le k)
 \right\rangle.
 $$
@@ -130,7 +130,7 @@ $$
 \pi_1(X_k)
 \cong
 \left\langle x_1,\dots,x_k
-\mathrel{\Big|}
+\mathrel{\presentationbar}
 x_1^2x_2^2\cdots x_k^2=1
 \right\rangle.}
 $$

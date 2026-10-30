@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on the unit disk and suppose $|f(z)|\le M$ there.
+Let $f$ be holomorphic on the unit disk and suppose $\abs{f(z)}\le M$ there.
 Prove that
 $$
-|f'(z)|\le \frac{M}{1-|z|}
+\abs{f'(z)}\le \frac{M}{1-\abs{z}}
 $$
 for every $z$ in the unit disk.
 :::
@@ -38,7 +38,7 @@ $$
 
 If
 $$
-0<r<1-|z_0|,
+0<r<1-\abs{z_0},
 $$
 then the closed disk
 $$
@@ -51,15 +51,15 @@ lies inside the unit disk.
 
 If
 $$
-|\zeta-z_0|\le r,
+\abs{\zeta-z_0}\le r,
 $$
 then
 $$
-|\zeta|
+\abs{\zeta}
 \le
-|\zeta-z_0|+|z_0|
+\abs{\zeta-z_0}+\abs{z_0}
 \le
-r+|z_0|
+r+\abs{z_0}
 <
 1.
 $$
@@ -76,7 +76,7 @@ $$
 f'(z_0)
 =
 \frac1{2\pi i}
-\int_{|\zeta-z_0|=r}
+\int_{\abs{\zeta-z_0}=r}
 \frac{f(\zeta)}
 {(\zeta-z_0)^2}
 \,d\zeta.
@@ -95,12 +95,12 @@ By step [](#s1-1){.pf-ref}, $f$ is holomorphic on an open neighborhood of the cl
 
 For every
 $$
-0<r<1-|z_0|,
+0<r<1-\abs{z_0},
 $$
 one has
 $$
 \boxed{
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
 \frac Mr}.
 $$
@@ -111,7 +111,7 @@ $$
 Using step [](#s1-2){.pf-ref} and the ML estimate,
 $$
 \begin{aligned}
-|f'(z_0)|
+\abs{f'(z_0)}
 &\le
 \frac1{2\pi}
 \left(
@@ -124,11 +124,11 @@ $$
 $$
 Here
 $$
-|f(\zeta)|\le M
+\abs{f(\zeta)}\le M
 $$
 by hypothesis and
 $$
-|\zeta-z_0|=r
+\abs{\zeta-z_0}=r
 $$
 on the contour.
 
@@ -140,14 +140,14 @@ on the contour.
 
 Letting
 $$
-r\uparrow1-|z_0|
+r\uparrow1-\abs{z_0}
 $$
 gives
 $$
 \boxed{
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
-\frac{M}{1-|z_0|}}.
+\frac{M}{1-\abs{z_0}}}.
 $$
 
 
@@ -155,15 +155,15 @@ $$
 
 Step [](#s1-3){.pf-ref} holds for every
 $$
-r<1-|z_0|.
+r<1-\abs{z_0}.
 $$
 Choose any increasing sequence
 $$
-r_j\to1-|z_0|.
+r_j\to1-\abs{z_0}.
 $$
 Then
 $$
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
 \frac{M}{r_j}
 $$

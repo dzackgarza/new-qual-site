@@ -31,7 +31,7 @@ f
 $$
 be holomorphic on a punctured neighborhood
 $$
-0<|z-a|<r.
+0<\abs{z-a}<r.
 $$
 Then
 $$

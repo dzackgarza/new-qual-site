@@ -29,7 +29,7 @@ The iterated mapping cylinder $M(f_1, \dots, f_n)$ is a quotient of $\coprod_\si
 
 ::: {.pf-step #dual-cylinder}
 The dual of the iterated mapping cylinder is
-$$\nabla(f_1, \dots, f_n) = \Bigl\{ (\phi_\sigma)_{\sigma \subseteq \Delta^n} \in \prod_\sigma X_{\max\sigma}^{\,\sigma} \;:\; \phi_\sigma|_\tau = f_{\max\sigma, \max\tau} \circ \phi_\tau \text{ for every face } \tau \subseteq \sigma \Bigr\}.$$
+$$\nabla(f_1, \dots, f_n) = \Bigl\{ (\phi_\sigma)_{\sigma \subseteq \Delta^n} \in \prod_\sigma X_{\max\sigma}^{\,\sigma} \;:\; \phi_\sigma\restrict_\tau = f_{\max\sigma, \max\tau} \circ \phi_\tau \text{ for every face } \tau \subseteq \sigma \Bigr\}.$$
 Each condition is a closed condition, and the conditions are consistent: for $\rho \subseteq \tau \subseteq \sigma$, $f_{\max\sigma,\max\tau} \circ f_{\max\tau,\max\rho} = f_{\max\sigma,\max\rho}$.
 
 ::: pf-proof
@@ -49,7 +49,7 @@ The data are $\phi_{v_0} \in X_0$, $\phi_{v_1} \in X_1$, and $\gamma = \phi_{[v_
 
 ::: pf-step
 Let $X$ be a complex of spaces over a $\Delta$-complex $\Gamma$: a space $X_\sigma$ for each simplex $\sigma$ of $\Gamma$ and, for each face $\tau \subseteq \sigma$, a map between $X_\sigma$ and $X_\tau$, compatible with composition. In $\Delta X = \coprod_\sigma X_\sigma \times \sigma / {\sim}$ these maps run $X_\sigma \to X_\tau$, as for the iterated mapping cylinder with $X_\sigma = X_{\min\sigma}$. The dual uses the reversed maps $g_{\sigma\tau}: X_\tau \to X_\sigma$, as for the dual cylinder with $X_\sigma = X_{\max\sigma}$, and is
-$$\nabla X = \Bigl\{ (\phi_\sigma)_{\sigma \in \Gamma} \in \prod_{\sigma} X_\sigma^{\,\sigma} \;:\; \phi_\sigma|_\tau = g_{\sigma\tau} \circ \phi_\tau \text{ for every face } \tau \subseteq \sigma \Bigr\}.$$
+$$\nabla X = \Bigl\{ (\phi_\sigma)_{\sigma \in \Gamma} \in \prod_{\sigma} X_\sigma^{\,\sigma} \;:\; \phi_\sigma\restrict_\tau = g_{\sigma\tau} \circ \phi_\tau \text{ for every face } \tau \subseteq \sigma \Bigr\}.$$
 For $\Gamma = \Delta^n$ and $X_\sigma = X_{\max\sigma}$, $\nabla X$ is $\nabla(f_1, \dots, f_n)$.
 
 ::: pf-proof

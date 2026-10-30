@@ -102,7 +102,7 @@ $$
 
 ::: pf-proof
 
-Insert the coefficients from step [](#s1-2){.pf-ref} into the power series. The ratio of consecutive absolute terms is asymptotic to $|x|/n$, so the series converges for every finite $x$.
+Insert the coefficients from step [](#s1-2){.pf-ref} into the power series. The ratio of consecutive absolute terms is asymptotic to $\abs{x}/n$, so the series converges for every finite $x$.
 
 :::
 

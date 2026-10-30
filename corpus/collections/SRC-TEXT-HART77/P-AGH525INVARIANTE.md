@@ -44,8 +44,8 @@ b. Let $e<0$, let $D$ be any divisor of degree $d=-e$, and let $\xi \in H^1(\mat
 $$
 0 \rightarrow \mathcal{O}_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(D) \rightarrow 0 .
 $$
-Let $H \subseteq|D+K|$ be the sublinear system of codimension 1 defined by $\ker \xi$, where $\xi$ is considered as a linear functional on $H^0(\mathcal{L}(D+K))$.
-For any effective divisor $E$ of degree $d-1$, let $L_E \subseteq|D+K|$ be the sublinear system $|D+K-E|+E$.
+Let $H \subseteq\linearsystem{D+K}$ be the sublinear system of codimension 1 defined by $\ker \xi$, where $\xi$ is considered as a linear functional on $H^0(\mathcal{L}(D+K))$.
+For any effective divisor $E$ of degree $d-1$, let $L_E \subseteq\linearsystem{D+K}$ be the sublinear system $\linearsystem{D+K-E}+E$.
 Show that $\mathcal{E}$ is normalized if and only if for each $E$ as above, $L_E \nsubseteq H$.
 Cf.
 proof of $(2.15)$.
@@ -243,7 +243,7 @@ and
 $$
 \boxed{\beta_F(\xi)=0\iff L_F\subseteq H,}
 \qquad
-L_F=|K_C+D-F|+F.
+L_F=\linearsystem{K_C+D-F}+F.
 $$
 
 ::: pf-proof
@@ -484,7 +484,7 @@ $\xi$ satisfying the normalization criterion of part (b).
 
 If $d=1$, the only effective divisor of degree $d-1=0$ is $E=0$, and
 $$
-L_0=|K_C+D|
+L_0=\linearsystem{K_C+D}
 $$
 cannot be contained in the proper hyperplane $H_\xi$ defined by any nonzero
 $\xi$. Such classes exist because step [](#s10){.pf-ref} gives

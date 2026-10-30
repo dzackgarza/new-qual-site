@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Let $f$ be entire and suppose
 $$
-|f(z)|\le m e^{\alpha x},\qquad z=x+iy,
+\abs{f(z)}\le m e^{\alpha x},\qquad z=x+iy,
 $$
 where $m,\alpha>0$.
 Show that
@@ -46,12 +46,12 @@ is entire and bounded by $m$ on $\CC$.
 Both $f$ and $z\mapsto e^{-\alpha z}$ are entire, so $g$ is entire. If
 $z=x+iy$, then
 $$
-|e^{-\alpha z}|=e^{-\alpha x}.
+\abs{e^{-\alpha z}}=e^{-\alpha x}.
 $$
 Therefore the assumed estimate gives
 $$
-|g(z)|
-=|f(z)|e^{-\alpha x}
+\abs{g(z)}
+=\abs{f(z)}e^{-\alpha x}
 \le m e^{\alpha x}e^{-\alpha x}
 =m.
 $$

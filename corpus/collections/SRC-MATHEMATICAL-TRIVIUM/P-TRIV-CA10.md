@@ -26,7 +26,7 @@ Where is the origin mapped onto?
 
 ::: {.remark}
 The source does not state the center of the disk.
-The question about the image of the origin suggests the disk $\{z : |z| < R\}$ centered at $0$, with the cut along $(-R, 0]$; the source does not say so, and $\log z$ is not defined at the branch point $z = 0$.
+The question about the image of the origin suggests the disk $\{z : \abs{z} < R\}$ centered at $0$, with the cut along $(-R, 0]$; the source does not say so, and $\log z$ is not defined at the branch point $z = 0$.
 :::
 
 ::: {.solution}
@@ -35,13 +35,13 @@ Interpret the domain, as in the remark, as
 $$
 D_R
 =
-\{z\in\CC:0<|z|<R,\ -\pi<\arg z<\pi\},
+\{z\in\CC:0<\abs{z}<R,\ -\pi<\arg z<\pi\},
 $$
 with the principal branch
 $$
 \Log z
 =
-\log|z|+i\arg z.
+\log\abs{z}+i\arg z.
 $$
 
 ::: pf
@@ -64,7 +64,7 @@ $$
 
 By definition,
 $$
-u=\log|z|
+u=\log\abs{z}
 $$
 and
 $$
@@ -72,11 +72,11 @@ v=\arg z.
 $$
 Since
 $$
-0<|z|<R,
+0<\abs{z}<R,
 $$
 one has
 $$
--\infty<\log|z|<\log R.
+-\infty<\log\abs{z}<\log R.
 $$
 The principal-argument condition gives
 $$
@@ -117,7 +117,7 @@ e^w=e^u e^{iv},
 $$
 so
 $$
-|e^w|=e^u<R.
+\abs{e^w}=e^u<R.
 $$
 Also $e^u>0$, and because $v\in(-\pi,\pi)$, the principal argument of
 $e^w$ is exactly $v$. Thus
@@ -178,7 +178,7 @@ As $z\to0$ within the slit disk,
 $$
 \operatorname{Re}\Log z
 =
-\log|z|
+\log\abs{z}
 \longrightarrow-\infty.
 $$
 
@@ -189,7 +189,7 @@ This is the ordinary real limit
 $$
 \log r\to-\infty
 $$
-as $r\to0^+$, with $r=|z|$.
+as $r\to0^+$, with $r=\abs{z}$.
 
 :::
 

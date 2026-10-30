@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 Show that
 $$
-e^{t p_1} = \sum_\lambda t^{|\lambda|}\frac{s_\lambda}{h_\lambda},
+e^{t p_1} = \sum_\lambda t^{\multiindexsize{\lambda}}\frac{s_\lambda}{h_\lambda},
 $$
 where $h_\lambda$ denotes the product of the hook lengths of $\lambda$.
 :::
@@ -56,14 +56,14 @@ e^{tp_1}
 \sum_{\lambda\vdash n}\frac{n!}{h_\lambda}s_\lambda\\
 &=\sum_{n\ge0}\sum_{\lambda\vdash n}
  t^n\frac{s_\lambda}{h_\lambda}\\
-&=\sum_\lambda t^{|\lambda|}\frac{s_\lambda}{h_\lambda}.
+&=\sum_\lambda t^{\multiindexsize{\lambda}}\frac{s_\lambda}{h_\lambda}.
 \end{aligned}
 $$
 Hence
 $$
 \boxed{
 e^{tp_1}=
-\sum_\lambda t^{|\lambda|}\frac{s_\lambda}{h_\lambda}.
+\sum_\lambda t^{\multiindexsize{\lambda}}\frac{s_\lambda}{h_\lambda}.
 }
 $$
 :::

@@ -39,7 +39,7 @@ and two classes $C_3,C_3^{-1}$ of four $3$-cycles each.
 The three double transpositions are conjugate in $A_4$, so they form a class of size $3$.
 There are eight $3$-cycles in $A_4$. The centralizer in $A_4$ of a $3$-cycle is the cyclic subgroup it generates, of order $3$, so its conjugacy class has size
 $$
-|A_4|/3=4.
+\cardinality{A_4}/3=4.
 $$
 Hence the eight $3$-cycles split into exactly two classes of size $4$. Inversion interchanges those two classes; denote them by $C_3$ and $C_3^{-1}$.
 The class sizes $1+3+4+4=12$ exhaust $A_4$.
@@ -124,7 +124,7 @@ with $\omega=e^{2\pi i/3}$.
 ::: pf-proof
 The four rows are irreducible by steps [](#a4-linear-characters){.pf-ref} and [](#chi4-is-irreducible){.pf-ref}. Their degree squares sum to
 $$
-1^2+1^2+1^2+3^2=12=|A_4|,
+1^2+1^2+1^2+3^2=12=\cardinality{A_4},
 $$
 so they account for all irreducible representations.
 :::

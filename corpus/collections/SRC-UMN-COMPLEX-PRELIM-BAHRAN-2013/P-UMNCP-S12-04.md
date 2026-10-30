@@ -35,7 +35,7 @@ a_nz^n
 $$
 valid for
 $$
-0<|z|<1.
+0<\abs{z}<1.
 $$
 
 
@@ -62,7 +62,7 @@ $$
 
 Laurent series may be differentiated term by term on every compact subannulus
 $$
-r\le|z|\le R
+r\le\abs{z}\le R
 $$
 with
 $$

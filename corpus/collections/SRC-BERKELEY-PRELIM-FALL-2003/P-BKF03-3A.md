@@ -49,7 +49,7 @@ $$
 A^nv=\lambda^n v.
 $$
 Since $A^nv\to0$ and $v\ne0$, one must have $\lambda^n\to0$.
-This is equivalent to $|\lambda|<1$.
+This is equivalent to $\abs{\lambda}<1$.
 :::
 
 :::
@@ -77,7 +77,7 @@ For a $2\times2$ matrix, $J$ is either diagonal or a single Jordan block.
 :::
 
 ::: {.pf-step #diagonal-case}
-If $J=\operatorname{diag}(\lambda,\mu)$ with $|\lambda|,|\mu|<1$, then $\sum J^n$ converges.
+If $J=\operatorname{diag}(\lambda,\mu)$ with $\abs{\lambda},\abs{\mu}<1$, then $\sum J^n$ converges.
 
 ::: pf-proof
 One has
@@ -98,7 +98,7 @@ and both scalar geometric series converge.
 If
 $$
 J=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix},
-\qquad |\lambda|<1,
+\qquad \abs{\lambda}<1,
 $$
 then $\sum J^n$ also converges.
 
@@ -117,7 +117,7 @@ The geometric series $\sum\lambda^n$ converges, and
 $$
 \sum_{n=1}^\infty n\lambda^{n-1}=\frac1{(1-\lambda)^2}
 $$
-also converges absolutely for $|\lambda|<1$.
+also converges absolutely for $\abs{\lambda}<1$.
 Hence every entry of $\sum J^n$ converges.
 :::
 

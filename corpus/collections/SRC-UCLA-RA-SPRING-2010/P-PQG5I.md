@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-PQG5I
 kind: problem
-title: Compactness of $\{x\in\ell^2:\sum n|x_n|^2\le 1\}$ and attainment of $\int_0^{2\pi}\bigl|\sum
-  x_n e^{in\theta}\bigr|\frac{d\theta}{2\pi}$ on this set
+title: Compactness of $\{x\in\ell^2:\sum n\abs{x_n}^2\le 1\}$ and attainment of $\int_0^{2\pi}\abs{\sum x_n e^{in\theta}}\frac{d\theta}{2\pi}$ on this set
 classification:
   areas:
   - real-analysis
@@ -32,11 +31,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $$A = \left\{x\in\ell^2: \sum_{n\ge1} n|x_n|^2 \le 1\right\}.$$
+Let $$A = \left\{x\in\ell^2: \sum_{n\ge1} n\abs{x_n}^2 \le 1\right\}.$$
 
 a. Show that $A$ is compact in the $\ell^2$ topology.
 
-b. Show that the mapping from $A$ to $\RR$ defined by $$x \mapsto \int_0^{2\pi} \left|\sum_{n\ge1} x_n e^{in\theta}\right| \frac{d\theta}{2\pi}$$ achieves its maximum on $A$.
+b. Show that the mapping from $A$ to $\RR$ defined by $$x \mapsto \int_0^{2\pi} \abs{\sum_{n\ge1} x_n e^{in\theta}} \frac{d\theta}{2\pi}$$ achieves its maximum on $A$.
 :::
 
 ::: {.solution}
@@ -56,20 +55,20 @@ x^{(k)}\longrightarrow x
 $$
 For every fixed coordinate $n$,
 $$
-|x_n^{(k)}-x_n|\le\|x^{(k)}-x\|_{\ell^2},
+\abs{x_n^{(k)}-x_n}\le\norm{x^{(k)}-x}_{\ell^2},
 $$
 so $x_n^{(k)}\to x_n$.
 Hence for every $N$,
 $$
-\sum_{n=1}^N n|x_n|^2
+\sum_{n=1}^N n\abs{x_n}^2
 =
 \lim_{k\to\infty}
-\sum_{n=1}^N n|x_n^{(k)}|^2
+\sum_{n=1}^N n\abs{x_n^{(k)}}^2
 \le1.
 $$
 Letting $N\to\infty$ and using monotone convergence of the nonnegative partial sums gives
 $$
-\sum_{n=1}^{\infty}n|x_n|^2\le1.
+\sum_{n=1}^{\infty}n\abs{x_n}^2\le1.
 $$
 Thus $x\in A$.
 
@@ -82,7 +81,7 @@ Thus $x\in A$.
 The tails of elements of $A$ are uniformly small:
 $$
 \sup_{x\in A}
-\sum_{n>N}|x_n|^2
+\sum_{n>N}\abs{x_n}^2
 \le\frac1{N+1}.
 $$
 
@@ -91,10 +90,10 @@ $$
 For every $x\in A$,
 $$
 \begin{aligned}
-\sum_{n>N}|x_n|^2
+\sum_{n>N}\abs{x_n}^2
 &\le
 \frac1{N+1}
-\sum_{n>N}n|x_n|^2\\
+\sum_{n>N}n\abs{x_n}^2\\
 &\le\frac1{N+1}.
 \end{aligned}
 $$
@@ -116,14 +115,14 @@ $$
 $$
 By step [](#s2){.pf-ref}, every $x\in A$ has tail norm
 $$
-\left(\sum_{n>N}|x_n|^2\right)^{1/2}<\frac\varepsilon2.
+\left(\sum_{n>N}\abs{x_n}^2\right)^{1/2}<\frac\varepsilon2.
 $$
 
 The first $N$ coordinates of $x\in A$ lie in the finite-dimensional ellipsoid
 $$
 B_N=
 \left\{(z_1,\ldots,z_N)\in\CC^N:
-\sum_{n=1}^N n|z_n|^2\le1
+\sum_{n=1}^N n\abs{z_n}^2\le1
 \right\}.
 $$
 This set is closed and bounded in the finite-dimensional normed space $\CC^N$, hence compact.
@@ -136,11 +135,11 @@ For any $x\in A$, choose $j$ so that its first $N$ coordinates are within $\vare
 Then
 $$
 \begin{aligned}
-\|x-v^{(j)}\|_{\ell^2}^2
+\norm{x-v^{(j)}}_{\ell^2}^2
 &=
-\sum_{n=1}^N|x_n-v_n^{(j)}|^2
+\sum_{n=1}^N\abs{x_n-v_n^{(j)}}^2
 +
-\sum_{n>N}|x_n|^2\\
+\sum_{n>N}\abs{x_n}^2\\
 &<\frac{\varepsilon^2}{2}
 <\varepsilon^2.
 \end{aligned}
@@ -176,7 +175,7 @@ Equip the circle with normalized measure $d\theta/(2\pi)$.
 
 The sequence $g_{x,N}$ converges in $L^2(\circlegroup)$ to a function $g_x$, and
 $$
-\|g_x-g_y\|_{L^2}=\|x-y\|_{\ell^2}.
+\norm{g_x-g_y}_{L^2}=\norm{x-y}_{\ell^2}.
 $$
 
 ::: pf-proof
@@ -184,17 +183,17 @@ $$
 The functions $e^{in\theta}$, $n\ge1$, are orthonormal in $L^2(\circlegroup,d\theta/(2\pi))$.
 Hence for $M>N$,
 $$
-\|g_{x,M}-g_{x,N}\|_{L^2}^2
+\norm{g_{x,M}-g_{x,N}}_{L^2}^2
 =
-\sum_{n=N+1}^M|x_n|^2.
+\sum_{n=N+1}^M\abs{x_n}^2.
 $$
 Since $x\in\ell^2$, the right-hand side tends to zero as $M,N\to\infty$.
 Thus $g_{x,N}$ is Cauchy in the complete space $L^2(\circlegroup)$ and has a limit $g_x$.
 Applying the same orthogonality identity to the coefficient sequence $x-y$ and passing to the limit gives
 $$
-\|g_x-g_y\|_{L^2}^2
+\norm{g_x-g_y}_{L^2}^2
 =
-\sum_{n=1}^{\infty}|x_n-y_n|^2.
+\sum_{n=1}^{\infty}\abs{x_n-y_n}^2.
 $$
 
 :::
@@ -205,33 +204,33 @@ $$
 
 The functional in part (b), interpreted as
 $$
-\Phi(x)=\int_0^{2\pi}|g_x(\theta)|\,\frac{d\theta}{2\pi},
+\Phi(x)=\int_0^{2\pi}\abs{g_x(\theta)}\,\frac{d\theta}{2\pi},
 $$
 is well-defined and satisfies
 $$
-|\Phi(x)-\Phi(y)|\le\|x-y\|_{\ell^2}.
+\abs{\Phi(x)-\Phi(y)}\le\norm{x-y}_{\ell^2}.
 $$
 
 ::: pf-proof
 
 Because the circle has normalized measure $1$, Cauchy--Schwarz gives
 $$
-\|h\|_{L^1}\le\|h\|_{L^2}
+\norm{h}_{L^1}\le\norm{h}_{L^2}
 $$
 for every $h\in L^2(\circlegroup)$.
 In particular $g_x\in L^1$, so $\Phi(x)$ is finite.
 Moreover, the reverse triangle inequality gives
 $$
-\bigl||g_x|-|g_y|\bigr|\le|g_x-g_y|.
+\abs{\abs{g_x}-\abs{g_y}}\le\abs{g_x-g_y}.
 $$
 Therefore, using step [](#s5){.pf-ref},
 $$
 \begin{aligned}
-|\Phi(x)-\Phi(y)|
+\abs{\Phi(x)-\Phi(y)}
 &\le
-\int_0^{2\pi}|g_x-g_y|\,\frac{d\theta}{2\pi}\\
-&\le\|g_x-g_y\|_{L^2}\\
-&=\|x-y\|_{\ell^2}.
+\int_0^{2\pi}\abs{g_x-g_y}\,\frac{d\theta}{2\pi}\\
+&\le\norm{g_x-g_y}_{L^2}\\
+&=\norm{x-y}_{\ell^2}.
 \end{aligned}
 $$
 Thus $\Phi$ is $1$-Lipschitz, hence continuous.

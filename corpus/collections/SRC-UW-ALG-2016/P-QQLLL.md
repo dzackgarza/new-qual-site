@@ -55,7 +55,7 @@ x\mapsto acx+(ad+b),
 $$
 and inverses have the same form, so these permutations form a subgroup. There are $4$ choices for $a$ and $5$ choices for $b$, hence
 $$
-|H|=4\cdot5=20.
+\cardinality{H}=4\cdot5=20.
 $$
 :::
 
@@ -87,7 +87,7 @@ $$
 $$
 a normal subgroup of $S_5$ contained in $H$. We use the standard theorem that $A_n$ is simple for $n\ge5$, which implies that every nontrivial normal subgroup of $S_n$ contains $A_n$: indeed, if $N\trianglelefteq S_n$ is nontrivial, then either $N\cap A_n\ne1$, in which case simplicity gives $A_n\subseteq N$, or $N\cap A_n=1$, in which case $[N,A_n]\subseteq N\cap A_n=1$, so $N$ centralizes $A_n$; but the centralizer of $A_n$ in $S_n$ is trivial.
 
-Thus a nontrivial kernel would contain $A_5$, of order $60$. This is impossible because $\ker\rho\subseteq H$ and $|H|=20$. Hence $\ker\rho=1$.
+Thus a nontrivial kernel would contain $A_5$, of order $60$. This is impossible because $\ker\rho\subseteq H$ and $\cardinality{H}=20$. Hence $\ker\rho=1$.
 :::
 
 :::
@@ -113,7 +113,7 @@ The coset action has degree
 $$
 [S_6:J]=\frac{720}{120}=6.
 $$
-Its kernel is a normal subgroup of $S_6$ contained in $J$. By the same normal-subgroup consequence of the simplicity of $A_6$ used in step [](#s3){.pf-ref}, any nontrivial normal subgroup of $S_6$ contains $A_6$, which has order $360$. Since $|J|=120$, the kernel cannot be nontrivial. Thus $\Phi$ is injective. Because domain and codomain both have order $720$, $\Phi$ is an automorphism.
+Its kernel is a normal subgroup of $S_6$ contained in $J$. By the same normal-subgroup consequence of the simplicity of $A_6$ used in step [](#s3){.pf-ref}, any nontrivial normal subgroup of $S_6$ contains $A_6$, which has order $360$. Since $\cardinality{J}=120$, the kernel cannot be nontrivial. Thus $\Phi$ is injective. Because domain and codomain both have order $720$, $\Phi$ is an automorphism.
 :::
 
 :::

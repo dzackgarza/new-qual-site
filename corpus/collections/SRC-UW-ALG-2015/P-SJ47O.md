@@ -38,9 +38,9 @@ The center $Z=Z(G)$ has order $p$.
 
 ::: pf-proof
 
-Every nontrivial finite $p$-group has nontrivial center, so $|Z|\ge p$. Since $G$ is nonabelian, $Z\ne G$. If $|Z|=p^2$, then $G/Z$ has order $p$, hence is cyclic; but if $G/Z(G)$ is cyclic, then $G$ is abelian, a contradiction. Therefore
+Every nontrivial finite $p$-group has nontrivial center, so $\cardinality{Z}\ge p$. Since $G$ is nonabelian, $Z\ne G$. If $\cardinality{Z}=p^2$, then $G/Z$ has order $p$, hence is cyclic; but if $G/Z(G)$ is cyclic, then $G$ is abelian, a contradiction. Therefore
 $$
-|Z|=p.
+\cardinality{Z}=p.
 $$
 
 :::
@@ -66,7 +66,7 @@ In particular $G/Z$ is abelian, so
 $$
 [G,G]\subseteq Z.
 $$
-Because $G$ is nonabelian, $[G,G]\ne1$. Since $|Z|=p$, it follows that
+Because $G$ is nonabelian, $[G,G]\ne1$. Since $\cardinality{Z}=p$, it follows that
 $$
 [G,G]=Z.
 $$
@@ -87,9 +87,9 @@ G^{\mathrm{ab}}=G/[G,G].
 $$
 By step [](#s2){.pf-ref},
 $$
-|G^{\mathrm{ab}}|=|G/Z|=p^2.
+\cardinality{G^{\mathrm{ab}}}=\cardinality{G/Z}=p^2.
 $$
-A finite abelian group $A$ has exactly $|A|$ complex linear characters. Therefore $G$ has exactly
+A finite abelian group $A$ has exactly $\cardinality{A}$ complex linear characters. Therefore $G$ has exactly
 $$
 p^2
 $$
@@ -107,11 +107,11 @@ Every noncentral element of $G$ has centralizer of order $p^2$, and hence conjug
 
 Let $x\notin Z$. Its centralizer $C_G(x)$ contains both $x$ and $Z$, so it contains the subgroup $\langle x,Z\rangle$. Since $x\notin Z$, this subgroup has order at least $p^2$. On the other hand $C_G(x)\ne G$, because $x$ is not central. Thus
 $$
-|C_G(x)|=p^2.
+\cardinality{C_G(x)}=p^2.
 $$
 By the orbit-stabilizer formula for conjugation,
 $$
-|x^G|=[G:C_G(x)]=p.
+\cardinality{x^G}=[G:C_G(x)]=p.
 $$
 
 :::
@@ -167,12 +167,12 @@ Every irreducible complex representation of $G$ has dimension at most $p$.
 
 Let $\chi$ be an irreducible character of degree $d=\chi(1)$. By Schur's lemma, every $z\in Z$ acts by a scalar of absolute value $1$, so
 $$
-|\chi(z)|=d
+\abs{\chi(z)}=d
 \qquad(z\in Z).
 $$
 Character orthogonality gives
 $$
-\sum_{g\in G}|\chi(g)|^2=|G|=p^3.
+\sum_{g\in G}\abs{\chi(g)}^2=\cardinality{G}=p^3.
 $$
 Restricting the sum to the $p$ central elements yields
 $$
@@ -199,7 +199,7 @@ d_1,\dots,d_{p-1}.
 $$
 The sum-of-squares formula gives
 $$
-|G|=\sum_{\rho\in\operatorname{Irr}(G)}(\dim\rho)^2.
+\cardinality{G}=\sum_{\rho\in\operatorname{Irr}(G)}(\dim\rho)^2.
 $$
 The $p^2$ linear representations contribute $p^2$, so
 $$

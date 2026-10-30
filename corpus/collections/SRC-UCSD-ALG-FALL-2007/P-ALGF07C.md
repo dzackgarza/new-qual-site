@@ -75,7 +75,7 @@ $$
 $$
 Consequently the restriction
 $$
-\phi|_{\CC}:\CC\longrightarrow F
+\phi\restrict_{\CC}:\CC\longrightarrow F
 $$
 is a nonzero ring homomorphism from a field.
 Its kernel is therefore the zero ideal, so it is injective.

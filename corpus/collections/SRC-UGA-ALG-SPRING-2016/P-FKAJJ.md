@@ -37,7 +37,7 @@ $$
 $$
 If $gG_x=hG_x$, then $h^{-1}g\in G_x$, so $(h^{-1}g)\cdot x=x$ and therefore $g\cdot x=h\cdot x$. Thus $\Phi$ is well defined. It is surjective by the definition of the orbit. If $g\cdot x=h\cdot x$, then $h^{-1}g\in G_x$, so $gG_x=hG_x$; hence $\Phi$ is injective. Therefore it is a bijection, and in particular
 $$
-|G\cdot x|=[G:G_x].
+\cardinality{G\cdot x}=[G:G_x].
 $$
 
 For (b), let the finite $p$-group $G$ act on itself by conjugation. The fixed points are exactly the elements of $Z(G)$. For any $x\in G$, the stabilizer is the centralizer $C_G(x)$, so by part (a) the conjugacy class of $x$ has size
@@ -46,7 +46,7 @@ $$
 $$
 a power of $p$. Hence every non-singleton conjugacy class has size divisible by $p$. The class equation therefore gives
 $$
-|G|=|Z(G)|+\sum_i |\mathcal C_i|,
+\cardinality{G}=\cardinality{Z(G)}+\sum_i \cardinality{\mathcal C_i},
 $$
-where every term in the sum is divisible by $p$. Since $p\mid |G|$, it follows that $p\mid |Z(G)|$. The identity lies in $Z(G)$, so $|Z(G)|\ge p$, and in particular $Z(G)$ is nontrivial.
+where every term in the sum is divisible by $p$. Since $p\mid \cardinality{G}$, it follows that $p\mid \cardinality{Z(G)}$. The identity lies in $Z(G)$, so $\cardinality{Z(G)}\ge p$, and in particular $Z(G)$ is nontrivial.
 :::

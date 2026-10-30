@@ -29,9 +29,9 @@ Let
 $$
 V=
 \begin{pmatrix}
-|&&|\\
+\arrayrule&&\arrayrule\\
 v_1&\cdots&v_n\\
-|&&|
+\arrayrule&&\arrayrule
 \end{pmatrix}.
 $$
 Since the $v_j$ form a basis, $V$ is invertible.

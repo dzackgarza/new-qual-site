@@ -33,7 +33,7 @@ $$
 
 The sequence $(f_n)$ converges uniformly to $f$ on $[0,1]$ if for every $\varepsilon>0$ there is an integer $N$ such that for every $n\ge N$ and every $x\in[0,1]$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
 
@@ -49,12 +49,12 @@ This is the definition of uniform convergence on $[0,1]$: the same index $N$ wor
 
 For every $n$,
 $$
-\left|
+\abs{
 \int_0^1 f_n(x)\,dx-
 \int_0^1 f(x)\,dx
-\right|
+}
 \le
-\int_0^1 |f_n(x)-f(x)|\,dx.
+\int_0^1 \abs{f_n(x)-f(x)}\,dx.
 $$
 
 
@@ -63,14 +63,14 @@ $$
 By linearity of the integral and the triangle inequality for integrals,
 $$
 \begin{aligned}
-\left|
+\abs{
 \int_0^1 f_n(x)\,dx-
 \int_0^1 f(x)\,dx
-\right|
+}
 &=
-\left|\int_0^1 (f_n(x)-f(x))\,dx\right|\\
+\abs{\int_0^1 (f_n(x)-f(x))\,dx}\\
 &\le
-\int_0^1 |f_n(x)-f(x)|\,dx.
+\int_0^1 \abs{f_n(x)-f(x)}\,dx.
 \end{aligned}
 $$
 
@@ -94,16 +94,16 @@ $$
 
 Let $\varepsilon>0$. By uniform convergence, choose $N$ as in step [](#s1-1){.pf-ref}. For every $n\ge N$ and every $x\in[0,1]$,
 $$
-|f_n(x)-f(x)|<\varepsilon.
+\abs{f_n(x)-f(x)}<\varepsilon.
 $$
 Therefore step [](#s1-2){.pf-ref} gives
 $$
-\left|
+\abs{
 \int_0^1 f_n(x)\,dx-
 \int_0^1 f(x)\,dx
-\right|
+}
 \le
-\int_0^1 |f_n(x)-f(x)|\,dx
+\int_0^1 \abs{f_n(x)-f(x)}\,dx
 <
 \int_0^1\varepsilon\,dx
 =\varepsilon.

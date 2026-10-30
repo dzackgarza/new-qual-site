@@ -47,7 +47,7 @@ $$
 
 Choose complex numbers $\delta_1,\ldots,\delta_n$ such that
 $$
-|\delta_j|<\frac{\varepsilon}{\sqrt n}
+\abs{\delta_j}<\frac{\varepsilon}{\sqrt n}
 $$
 for every $j$, and such that the numbers
 $$
@@ -57,7 +57,7 @@ are pairwise distinct. This can be done inductively: after $\delta_1,\ldots,\del
 $$
 \lambda_j+\delta_j=\lambda_i+\delta_i\qquad(i<j),
 $$
-while the disk $|\delta_j|<\varepsilon/\sqrt n$ contains infinitely many choices.
+while the disk $\abs{\delta_j}<\varepsilon/\sqrt n$ contains infinitely many choices.
 
 Set
 $$
@@ -71,9 +71,9 @@ Then $T_\varepsilon$ is upper triangular with $n$ distinct diagonal entries, hen
 
 Finally, the Frobenius norm is unitarily invariant, so
 $$
-\|A_\varepsilon-A\|_F
-=\|T_\varepsilon-T\|_F
-=\left(\sum_{j=1}^n|\delta_j|^2\right)^{1/2}
+\norm{A_\varepsilon-A}_F
+=\norm{T_\varepsilon-T}_F
+=\left(\sum_{j=1}^n\abs{\delta_j}^2\right)^{1/2}
 <\varepsilon.
 $$
 Thus diagonalizable matrices are dense in $M_n(\CC)$. This proves part (a).
@@ -137,17 +137,17 @@ TT^*=T^*T
 $$
 gives
 $$
-\sum_{j=1}^n|t_{1j}|^2
+\sum_{j=1}^n\abs{t_{1j}}^2
 =
-\sum_{j=1}^n|t_{j1}|^2.
+\sum_{j=1}^n\abs{t_{j1}}^2.
 $$
 Because $T$ is upper triangular,
 $$
 t_{j1}=0\qquad(j>1),
 $$
-so the right-hand side is $|t_{11}|^2$. Therefore
+so the right-hand side is $\abs{t_{11}}^2$. Therefore
 $$
-\sum_{j=2}^n|t_{1j}|^2=0,
+\sum_{j=2}^n\abs{t_{1j}}^2=0,
 $$
 and hence
 $$

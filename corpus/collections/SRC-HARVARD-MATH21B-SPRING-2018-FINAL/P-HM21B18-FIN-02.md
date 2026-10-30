@@ -69,7 +69,7 @@ not a reflection. Finally,
 $$
 Ae_1=(0,1,1,1)^T
 $$
-has norm $\sqrt3\neq1=\|e_1\|$, so $A$ is not orthogonal.
+has norm $\sqrt3\neq1=\norm{e_1}$, so $A$ is not orthogonal.
 
 :::
 

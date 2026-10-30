@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA56
 kind: problem
-title: $\sum_{n\in\ZZ}\lvert 2n+1\rvert e^{-a\lvert 2n+1\rvert}$
+title: $\sum_{n\in\ZZ}\abs{ 2n+1} e^{-a\abs{ 2n+1}}$
 classification:
   areas: [real-analysis]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } | 2 n + 1 | e ^ { - a | 2 n + 1 | }$ for $a > 0$
+Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } \abs{ 2 n + 1 } e ^ { - a \abs{ 2 n + 1 } }$ for $a > 0$
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } | 2 n + 1 | e
 
 The absolute values
 $$
-|2n+1|,
+\abs{2n+1},
 \qquad
 n\in\ZZ,
 $$
@@ -42,7 +42,7 @@ $$
 $$
 For $n=-1,-2,-3,\ldots$, one obtains
 $$
-|-1|,|-3|,|-5|,\ldots
+\abs{-1},\abs{-3},\abs{-5},\ldots
 =
 1,3,5,\ldots.
 $$

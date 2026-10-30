@@ -18,7 +18,7 @@ review: draft
 Let $f$ be a holomorphic map of the open unit disc $\DD$ to itself.
 Show that for any $z, w\in \DD$,
 $$
-\left|\frac{f(w)-f(z)}{1-\overline{f(w)} f(z)}\right| \leq\left|\frac{w-z}{1-\bar{w} z}\right|
+\abs{\frac{f(w)-f(z)}{1-\overline{f(w)} f(z)}} \leq\abs{\frac{w-z}{1-\bar{w} z}}
 .$$
 Show that this inequality is strict for $z\neq w$ except when $f$ is a linear fractional transformation from $\DD$ to itself.
 :::
@@ -34,7 +34,7 @@ The choice $a=\psi_w(z)$ is forced, so $z= \inverseof{\psi_w}(a)$.
 This forces the choice for the LHS
 $$
 { f(w) - (f\circ \inverseof{\psi_w})(a) \over 1 - \bar{f(w)} (f\circ \inverseof{\psi_w})(a) }
-= (\psi_{f(w)} \circ f \circ \inverseof{\psi_w})(a) \definedas F(a)
+= (\psi_{f(w)} \circ f \circ \inverseof{\psi_w})(a) \coloneqq F(a)
 .$$
 
 :::
@@ -45,7 +45,7 @@ This is the **Schwarz–Pick lemma**.
 - Fix $z_1$ and let $w_1 = f(z_1)$.
   Define
   $$
-  \psi_{a}(z) \definedas {a-z \over 1-\bar{a}z} \in \Aut(\DD)
+  \psi_{a}(z) \coloneqq {a-z \over 1-\bar{a}z} \in \Aut(\DD)
   .$$
 
   - Note that inequality now reads
@@ -58,7 +58,7 @@ This is the **Schwarz–Pick lemma**.
 $$
 0 \mapsvia{\psi_{z_1}} z_1 \mapsvia{f} f(z) \mapsvia{\psi_{f(z_1)}} 0 
 ,$$
-  so $F\definedas \psi_{f(z_1)} \circ f \circ \psi_{z_1} \in \Aut(\DD)$ and $F(0) = 0$.
+  so $F\coloneqq \psi_{f(z_1)} \circ f \circ \psi_{z_1} \in \Aut(\DD)$ and $F(0) = 0$.
 
 - Apply Schwarz we get $\abs{F(z)} \leq \abs{z}$ for all $z$, so
 $$
@@ -70,7 +70,7 @@ f(z_1) - (f\circ \psi_{z_1})(z)
 } &\leq \abs{ z} \\
 \implies \abs{f(z_1) - f(w) \over 1 - \bar{f(z_1)}\cdot f(w) }
 &\leq \abs{\psi_{z_1}(z)}
-&& w\definedas \psi_{z_1}(z) \\
+&& w\coloneqq \psi_{z_1}(z) \\
 \implies \abs{f(z_1) - f(w) \over 1 - \bar{f(z_1)}\cdot f(w) }
 &\leq \abs{z_1 - z \over 1 - \bar{z_1} z }
 .$$
@@ -87,10 +87,10 @@ f(z_1) - (f\circ \psi_{z_1})(z)
   (f \circ \psi_{z_1}) (z) &= \inverseof{\psi_{f(z_1)}}(\lambda z ) \\
   \implies
   f(w) &= \inverseof{\psi_{f(z_1)}}(\lambda \inverseof{\psi_{z_1}}(w) ) 
-  && w\definedas \psi_{z_1}(z) \\
+  && w\coloneqq \psi_{z_1}(z) \\
   &= \psi_{f(z_1)} \qty{\lambda \psi_{z_1}(w)} \\
   &= \lambda \psi_{\bar \lambda f(z_1)} \qty{\psi_{z_1}(w)} \\
-  &\definedas \lambda \psi_a(\psi_b(w)) \\
+  &\coloneqq \lambda \psi_a(\psi_b(w)) \\
   &=\lambda\qty{ a- \psi_b(w) \over 1 - \bar a \psi_b(w) } \\
   &= \quad \vdots \\
   &= -\lambda \qty{ \frac{{\left(a \overline{b} - 1\right)} z - a + b}{{\left(\overline{a} - \overline{b}\right)}z - b \overline{a} + 1} } \\

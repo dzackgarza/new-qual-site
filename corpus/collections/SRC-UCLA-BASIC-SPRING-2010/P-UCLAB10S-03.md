@@ -128,7 +128,7 @@ The restriction
 $$
 T_\lambda
 =
-T|_{E_\lambda(S)}
+T\restrict_{E_\lambda(S)}
 $$
 is normal on the inner-product space $E_\lambda(S)$.
 
@@ -143,7 +143,7 @@ Thus
 $$
 T_\lambda^*
 =
-T^*|_{E_\lambda(S)}.
+T^*\restrict_{E_\lambda(S)}.
 $$
 Since
 $$

@@ -55,7 +55,7 @@ A Cayley transform of $g$ is a bounded entire function.
 
 ::: pf-proof
 
-The map $\phi(w)=(w-1)/(w+1)$ sends the open right half-plane biholomorphically onto the unit disk, since for $\operatorname{Re}w>0$ one has $|w+1|^2-|w-1|^2=4\operatorname{Re}w>0$. The denominator $g(z)+1$ never vanishes because $\operatorname{Re}g(z)>0$. Hence $\phi\circ g$ is an entire function with $|\phi(g(z))|<1$ for all $z$.
+The map $\phi(w)=(w-1)/(w+1)$ sends the open right half-plane biholomorphically onto the unit disk, since for $\operatorname{Re}w>0$ one has $\abs{w+1}^2-\abs{w-1}^2=4\operatorname{Re}w>0$. The denominator $g(z)+1$ never vanishes because $\operatorname{Re}g(z)>0$. Hence $\phi\circ g$ is an entire function with $\abs{\phi(g(z))}<1$ for all $z$.
 
 :::
 

@@ -140,12 +140,12 @@ y(x)=C_0\sum_{m=0}^{\infty}
 +C_1\sum_{m=0}^{\infty}
 \frac{(2m)!!}{(2m+1)!!}(x-1)^{2m+1}}
 $$
-for $|x-1|<1$.
+for $\abs{x-1}<1$.
 
 
 ::: pf-proof
 
-Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} determine all coefficients from the two independent initial coefficients $a_0=C_0$ and $a_1=C_1$. The nearest singular points of the differential equation to the expansion point $x=1$ occur at $x=0$ and $x=2$, both at distance $1$, so these power series converge for $|x-1|<1$.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} determine all coefficients from the two independent initial coefficients $a_0=C_0$ and $a_1=C_1$. The nearest singular points of the differential equation to the expansion point $x=1$ occur at $x=0$ and $x=2$, both at distance $1$, so these power series converge for $\abs{x-1}<1$.
 
 :::
 

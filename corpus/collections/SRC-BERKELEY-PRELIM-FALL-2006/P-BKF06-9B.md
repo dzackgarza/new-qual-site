@@ -199,7 +199,7 @@ $$
 $$
 and, since $\alpha\beta=-1$,
 $$
-\left|\frac{\beta}{\alpha}\right|
+\abs{\frac{\beta}{\alpha}}
 =
 \frac1{\alpha^2}
 <

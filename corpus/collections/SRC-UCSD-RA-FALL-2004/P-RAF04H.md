@@ -51,7 +51,7 @@ Prove that the recursion is well defined and produces continuous functions.
 
 Let
 $$
-M:=\sup_{x\in\RR}|G(x)|<\infty.
+M:=\sup_{x\in\RR}\abs{G(x)}<\infty.
 $$
 The function $f_0\equiv1$ is continuous. Suppose inductively that $f_n$ is continuous. Then $f_n$ is Borel measurable, so the composition $G\circ f_n$ is Borel measurable. It is also bounded by $M$, hence integrable on $[-1,1]$.
 
@@ -73,16 +73,16 @@ Establish uniform boundedness and equicontinuity.
 
 For $n\ge0$ and $t\in[-1,1]$,
 $$
-|f_{n+1}(t)|
-\le 1+\int_0^t|G(f_n(\tau))|\,|d\tau|
+\abs{f_{n+1}(t)}
+\le 1+\int_0^t\abs{G(f_n(\tau))}\,\abs{d\tau}
 \le 1+M.
 $$
 Also, for $s,t\in[-1,1]$,
 $$
 \begin{aligned}
-|f_{n+1}(t)-f_{n+1}(s)|
-&=\left|\int_s^t G(f_n(\tau))\,d\tau\right|\\
-&\le M|t-s|.
+\abs{f_{n+1}(t)-f_{n+1}(s)}
+&=\abs{\int_s^t G(f_n(\tau))\,d\tau}\\
+&\le M\abs{t-s}.
 \end{aligned}
 $$
 Thus $(f_n)_{n\ge1}$ is uniformly bounded and equi-Lipschitz, hence equicontinuous.

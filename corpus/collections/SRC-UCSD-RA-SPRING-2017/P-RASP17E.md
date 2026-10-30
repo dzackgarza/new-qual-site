@@ -29,11 +29,11 @@ audit:
 ::: {.problem}
 For $t > 0$, let $A_t = \begin{pmatrix} t & 0 \\ 0 & t^{-1} \end{pmatrix}$ and for $f : \RR^2 \to \CC$ let $T_t f(x) = f(A_t x)$ for $x \in \RR^2$.
 
-1. Show $\|T_t f\|_2 = \|f\|_2$ for all $f \in L^2(\RR^2, m)$.
+1. Show $\norm{T_t f}_2 = \norm{f}_2$ for all $f \in L^2(\RR^2, m)$.
 
-2. Explain why $\lim_{t \to 1} \|T_t f - f\|_2 = 0$ for all $f \in C_c(\RR^2)$.
+2. Explain why $\lim_{t \to 1} \norm{T_t f - f}_2 = 0$ for all $f \in C_c(\RR^2)$.
 
-3. Show $\lim_{t \to 1} \|T_t f - f\|_2 = 0$ for all $f \in L^2(\RR^2, m)$.
+3. Show $\lim_{t \to 1} \norm{T_t f - f}_2 = 0$ for all $f \in L^2(\RR^2, m)$.
 :::
 
 ::: {.solution}
@@ -51,16 +51,16 @@ compute the determinant.
 :::
 
 ::: {.pf-step #p1-s2}
-Hence $\|T_t f\|_2^2 = \int |f(A_t x)|^2\,dx = \int |f(y)|^2 |\det A_t^{-1}|\,dy = \int |f(y)|^2\,dy = \|f\|_2^2$.
+Hence $\norm{T_t f}_2^2 = \int \abs{f(A_t x)}^2\,dx = \int \abs{f(y)}^2 \abs{\det A_t^{-1}}\,dy = \int \abs{f(y)}^2\,dy = \norm{f}_2^2$.
 
 ::: pf-proof
-change of variables $y = A_t x$, with Jacobian $|\det A_t| = 1$.
+change of variables $y = A_t x$, with Jacobian $\abs{\det A_t} = 1$.
 :::
 
 :::
 
 ::: {.pf-step #p1-s3}
-Hence $\|T_t f\|_2 = \|f\|_2$.
+Hence $\norm{T_t f}_2 = \norm{f}_2$.
 
 ::: pf-proof
 step [](#p1-s2){.pf-ref}.
@@ -93,17 +93,17 @@ step [](#p2-s1){.pf-ref}.
 :::
 
 ::: {.pf-step #p2-s3}
-Hence $T_t f(x) = f(A_t x) \to f(x)$ uniformly, with all differences supported in one fixed compact set for $t$ near $1$; therefore $\|T_t f-f\|_2\to0$.
+Hence $T_t f(x) = f(A_t x) \to f(x)$ uniformly, with all differences supported in one fixed compact set for $t$ near $1$; therefore $\norm{T_t f-f}_2\to0$.
 
 ::: pf-proof
 Let $K=\operatorname{supp}f$. For $t\in[1/2,2]$, the support of $T_tf$ is $A_t^{-1}K$, and the union of these sets is contained in a fixed compact set $K'$. On $K'$, $A_tx\to x$ uniformly as $t\to1$, so uniform continuity of $f$ gives
 $$
-\sup_{x\in\RR^2}|f(A_tx)-f(x)|\to0.
+\sup_{x\in\RR^2}\abs{f(A_tx)-f(x)}\to0.
 $$
 Since $T_tf-f$ vanishes outside $K'\cup K$ for $t$ near $1$,
 $$
-\|T_tf-f\|_2
-\le m(K'\cup K)^{1/2}\|T_tf-f\|_\infty\to0.
+\norm{T_tf-f}_2
+\le m(K'\cup K)^{1/2}\norm{T_tf-f}_\infty\to0.
 $$
 :::
 
@@ -125,7 +125,7 @@ standard density result.
 :::
 
 ::: {.pf-step #p3-s2}
-For $f \in L^2$ and $\varepsilon > 0$, choose $g \in C_c$ with $\|f - g\|_2 < \varepsilon/3$.
+For $f \in L^2$ and $\varepsilon > 0$, choose $g \in C_c$ with $\norm{f - g}_2 < \varepsilon/3$.
 
 ::: pf-proof
 step [](#p3-s1){.pf-ref}.
@@ -134,7 +134,7 @@ step [](#p3-s1){.pf-ref}.
 :::
 
 ::: {.pf-step #p3-s3}
-$\|T_t f - f\|_2 \le \|T_t(f - g)\|_2 + \|T_t g - g\|_2 + \|g - f\|_2 = \|f - g\|_2 + \|T_t g - g\|_2 + \|g - f\|_2$.
+$\norm{T_t f - f}_2 \le \norm{T_t(f - g)}_2 + \norm{T_t g - g}_2 + \norm{g - f}_2 = \norm{f - g}_2 + \norm{T_t g - g}_2 + \norm{g - f}_2$.
 
 ::: pf-proof
 triangle inequality and part 1 (isometry).
@@ -143,7 +143,7 @@ triangle inequality and part 1 (isometry).
 :::
 
 ::: {.pf-step #p3-s4}
-For $t$ close to $1$, $\|T_t g - g\|_2 < \varepsilon/3$ (by part 2), so $\|T_t f - f\|_2 < \varepsilon$.
+For $t$ close to $1$, $\norm{T_t g - g}_2 < \varepsilon/3$ (by part 2), so $\norm{T_t f - f}_2 < \varepsilon$.
 
 ::: pf-proof
 step [](#p3-s2){.pf-ref} and step [](#p3-s3){.pf-ref}.
@@ -152,7 +152,7 @@ step [](#p3-s2){.pf-ref} and step [](#p3-s3){.pf-ref}.
 :::
 
 ::: {.pf-step #p3-s5}
-Hence $\lim_{t \to 1} \|T_t f - f\|_2 = 0$.
+Hence $\lim_{t \to 1} \norm{T_t f - f}_2 = 0$.
 
 ::: pf-proof
 step [](#p3-s4){.pf-ref}.

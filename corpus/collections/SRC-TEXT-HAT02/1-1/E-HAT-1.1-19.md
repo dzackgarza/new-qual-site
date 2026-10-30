@@ -95,7 +95,7 @@ Choose a Lebesgue number for this cover and take a subdivision with smaller mesh
 
 For each $i$, replace the restricted path
 $$
-f|_{[t_{i-1},t_i]}
+f\restrict_{[t_{i-1},t_i]}
 $$
 by a path $g_i$ in $U_i$ with the same endpoints that is piecewise monotone on edges.
 Then the concatenation
@@ -110,7 +110,7 @@ Such a $g_i$ exists by step [](#s2){.pf-ref}.
 Since $U_i$ is contractible, any two paths in $U_i$ with the same endpoints are homotopic relative to those endpoints.
 Thus
 $$
-f|_{[t_{i-1},t_i]}\simeq g_i
+f\restrict_{[t_{i-1},t_i]}\simeq g_i
 $$
 rel endpoints.
 The finitely many homotopies paste because adjacent pieces fix their common endpoint.

@@ -36,14 +36,14 @@ Any finite generated subgroup containing $H$ and $K$ has order divisible by $60$
 Let $L=\langle H,K\rangle$.
 If $L$ is finite, Lagrange's theorem gives
 $$
-12\mid |L|,
-\qquad 30\mid |L|.
+12\mid \cardinality{L},
+\qquad 30\mid \cardinality{L}.
 $$
 Hence
 $$
-\operatorname{lcm}(12,30)=60\mid |L|.
+\operatorname{lcm}(12,30)=60\mid \cardinality{L}.
 $$
-Thus $|L|=30$ is impossible.
+Thus $\cardinality{L}=30$ is impossible.
 
 :::
 

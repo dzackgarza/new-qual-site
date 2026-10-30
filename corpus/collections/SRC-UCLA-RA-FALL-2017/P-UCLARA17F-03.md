@@ -32,7 +32,7 @@ converge as $n\to\infty$.
 
 Let
 $$
-M=\|f\|_\infty.
+M=\norm{f}_\infty.
 $$
 
 If $M=0$, then $f\equiv0$ and the conclusion is immediate. Assume henceforth
@@ -63,7 +63,7 @@ Choose $N_0$ such that for every $n\ge N_0$,
 $$
 \boxed{
 \sup_{x\in\RR}
-|F_n(x)-F_{N_0}(x)|
+\abs{F_n(x)-F_{N_0}(x)}
 <
 \delta}
 $$
@@ -216,9 +216,9 @@ $$
 
 Uniform continuity gives $\rho>0$ such that
 $$
-|x-y|<\rho
+\abs{x-y}<\rho
 \Longrightarrow
-|f(x)-f(y)|<\varepsilon/8
+\abs{f(x)-f(y)}<\varepsilon/8
 $$
 for $x,y\in[-R,R]$. Choose a partition of mesh $<\rho$.
 
@@ -231,7 +231,7 @@ for $x,y\in[-R,R]$. Choose a partition of mesh $<\rho$.
 For every $x\in(-R,R]$,
 $$
 \boxed{
-|f(x)-s(x)|<\eta}.
+\abs{f(x)-s(x)}<\eta}.
 $$
 
 
@@ -252,11 +252,11 @@ then both $x$ and $\xi_j$ lie in the same partition interval, whose oscillation 
 For every $n\ge N_0$,
 $$
 \boxed{
-\left|
+\abs{
 \int f\,d\mu_n
 -
 \int s\,d\mu_n
-\right|
+}
 \le
 \eta+4M\delta}.
 $$
@@ -264,7 +264,7 @@ $$
 
 ::: pf-proof
 
-Split the integral of $|f-s|$ into
+Split the integral of $\abs{f-s}$ into
 $$
 (-R,R]
 $$
@@ -272,13 +272,13 @@ and its complement.
 
 On $(-R,R]$, step [](#s1-7){.pf-ref} gives
 $$
-|f-s|<\eta,
+\abs{f-s}<\eta,
 $$
 so the contribution is at most $\eta$.
 
 Outside $(-R,R]$, one has $s=0$ and
 $$
-|f|\le M.
+\abs{f}\le M.
 $$
 By step [](#s1-5){.pf-ref}, the outside mass is $<4\delta$, so the tail contribution is $<4M\delta$.
 
@@ -380,22 +380,22 @@ is Cauchy.
 Since $F_n$ converges uniformly, it is uniformly Cauchy. For $n,m$,
 $$
 \begin{aligned}
-\left|
+\abs{
 \int s\,d\mu_n
 -
 \int s\,d\mu_m
-\right|
+}
 &\le
 \sum_{j=1}^{J}
-|c_j|
+\abs{c_j}
 \Bigl(
-|F_n(x_j)-F_m(x_j)|\\
+\abs{F_n(x_j)-F_m(x_j)}\\
 &\qquad\qquad+
-|F_n(x_{j-1})-F_m(x_{j-1})|
+\abs{F_n(x_{j-1})-F_m(x_{j-1})}
 \Bigr)\\
 &\le
 2JM
-\sup_x|F_n(x)-F_m(x)|.
+\sup_x\abs{F_n(x)-F_m(x)}.
 \end{aligned}
 $$
 The final quantity tends to $0$ as $n,m\to\infty$.
@@ -409,11 +409,11 @@ The final quantity tends to $0$ as $n,m\to\infty$.
 Hence there exists $N_1\ge N_0$ such that for $n,m\ge N_1$,
 $$
 \boxed{
-\left|
+\abs{
 \int s\,d\mu_n
 -
 \int s\,d\mu_m
-\right|
+}
 <
 \frac{\varepsilon}{2}}.
 $$
@@ -431,11 +431,11 @@ Use step [](#s1-12){.pf-ref}.
 
 For $n,m\ge N_1$,
 $$
-\left|
+\abs{
 \int f\,d\mu_n
 -
 \int f\,d\mu_m
-\right|
+}
 <
 \varepsilon.
 $$
@@ -446,21 +446,21 @@ $$
 Insert the step-function integrals:
 $$
 \begin{aligned}
-\left|
+\abs{
 \int f\,d\mu_n-\int f\,d\mu_m
-\right|
+}
 &\le
-\left|
+\abs{
 \int f\,d\mu_n-\int s\,d\mu_n
-\right|\\
+}\\
 &\quad+
-\left|
+\abs{
 \int s\,d\mu_n-\int s\,d\mu_m
-\right|\\
+}\\
 &\quad+
-\left|
+\abs{
 \int s\,d\mu_m-\int f\,d\mu_m
-\right|.
+}.
 \end{aligned}
 $$
 The first and third terms are $<\varepsilon/4$ by steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}, and the middle term is $<\varepsilon/2$ by step [](#s1-13){.pf-ref}.

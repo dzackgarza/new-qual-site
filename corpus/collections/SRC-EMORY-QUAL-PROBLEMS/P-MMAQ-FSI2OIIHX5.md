@@ -63,7 +63,7 @@ There are $[N_P(H):H]$ such cosets.
 The index $[N_P(H):H]$ is at least $p$.
 
 ::: pf-proof
-Each orbit has order dividing $|H|=p^k$ by
+Each orbit has order dividing $\cardinality{H}=p^k$ by
 orbit-stabilizer [@DF04]. Hence every orbit with more
 than one member has size divisible by $p$.
 The total number of cosets is $[P:H]=p^{n-k}$, which

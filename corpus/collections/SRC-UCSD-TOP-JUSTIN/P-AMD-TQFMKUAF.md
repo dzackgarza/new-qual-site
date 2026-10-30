@@ -42,11 +42,11 @@ The polynomial $g$ has all five zeros in the open unit disk.
 
 ::: pf-proof
 
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|8z^5|=8>4+2+1\ge |4z^4+2z^3+1|.
+\abs{8z^5}=8>4+2+1\ge \abs{4z^4+2z^3+1}.
 $$
-By Rouché's theorem, $g(z)$ and $8z^5$ have the same number of zeros in $|z|<1$, counted with multiplicity, namely five. The strict inequality also shows that $g$ has no zero on $S^1$.
+By Rouché's theorem, $g(z)$ and $8z^5$ have the same number of zeros in $\abs{z}<1$, counted with multiplicity, namely five. The strict inequality also shows that $g$ has no zero on $S^1$.
 
 :::
 
@@ -54,7 +54,7 @@ By Rouché's theorem, $g(z)$ and $8z^5$ have the same number of zeros in $|z|<1$
 
 ::: {.pf-step #s3}
 
-The winding number of $g|_{S^1}$ about $0$ is $5$.
+The winding number of $g\restrict_{S^1}$ about $0$ is $5$.
 
 ::: pf-proof
 

@@ -84,7 +84,7 @@ $$
 $$
 Since $\Gamma_R$ has length $\pi R$,
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \le
 \frac{\pi R}{R^2-1}
 \longrightarrow0.

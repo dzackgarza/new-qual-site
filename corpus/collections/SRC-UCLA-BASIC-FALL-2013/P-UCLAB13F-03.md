@@ -16,7 +16,7 @@ audit:
 ::: {.problem}
 Let $\gamma:[0,1]\to\RR^2$ be continuous and one-to-one, and define
 $$
-L(\gamma)=\sup\left\{\sum_{j=1}^{n-1}|\gamma(t_{j+1})-\gamma(t_j)|:0\le t_1<\cdots<t_n\le1,\ n<\infty\right\}.
+L(\gamma)=\sup\left\{\sum_{j=1}^{n-1}\norm{\gamma(t_{j+1})-\gamma(t_j)}:0\le t_1<\cdots<t_n\le1,\ n<\infty\right\}.
 $$
 
 (a) If $f$ is continuous and nondecreasing on $[0,1]$ and $\gamma(t)=(t,f(t))$, prove
@@ -39,7 +39,7 @@ $$
 $$
 If $f$ is nondecreasing, then for every $j$,
 $$
-|\gamma(t_{j+1})-\gamma(t_j)|
+\norm{\gamma(t_{j+1})-\gamma(t_j)}
 \le
 (t_{j+1}-t_j)
 +
@@ -52,7 +52,7 @@ $$
 Since both coordinate increments are nonnegative,
 $$
 \begin{aligned}
-|\gamma(t_{j+1})-\gamma(t_j)|
+\norm{\gamma(t_{j+1})-\gamma(t_j)}
 &=
 \sqrt{
 (t_{j+1}-t_j)^2
@@ -80,7 +80,7 @@ for $a,b\ge0$.
 For every such partition,
 $$
 \sum_{j=1}^{n-1}
-|\gamma(t_{j+1})-\gamma(t_j)|
+\norm{\gamma(t_{j+1})-\gamma(t_j)}
 \le
 1+f(1)-f(0).
 $$
@@ -92,7 +92,7 @@ Sum the estimate from step [](#s1-1){.pf-ref}:
 $$
 \begin{aligned}
 \sum_{j=1}^{n-1}
-|\gamma(t_{j+1})-\gamma(t_j)|
+\norm{\gamma(t_{j+1})-\gamma(t_j)}
 &\le
 \sum_{j=1}^{n-1}(t_{j+1}-t_j)\\
 &\quad+

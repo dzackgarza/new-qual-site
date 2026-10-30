@@ -137,7 +137,7 @@ Define
 $$
 r(x)=\max\{a,x\}.
 $$
-Again $r$ is continuous, has image in $Z$, and satisfies $r|_Z=\operatorname{id}_Z$.
+Again $r$ is continuous, has image in $Z$, and satisfies $r\restrict_Z=\operatorname{id}_Z$.
 
 :::
 

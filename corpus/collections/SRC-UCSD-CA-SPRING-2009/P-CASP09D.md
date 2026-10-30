@@ -18,11 +18,11 @@ audit:
 
 ::: {.problem}
 Suppose $f(z)$ is analytic at $z = 0$.
-Prove that there is an integer $n > 0$ such that $|f^{(n)}(0)| \leq n^n \cdot n!$.
+Prove that there is an integer $n > 0$ such that $\abs{f^{(n)}(0)} \leq n^n \cdot n!$.
 :::
 
 ::: {.solution}
-**Goal.** Show there is $n > 0$ with $|f^{(n)}(0)| \le n^n n!$.
+**Goal.** Show there is $n > 0$ with $\abs{f^{(n)}(0)} \le n^n n!$.
 
 ::: pf
 
@@ -36,7 +36,7 @@ analyticity at $0$.
 :::
 
 ::: {.pf-step #s2}
-By Cauchy's estimate, $|a_k| = \frac{|f^{(k)}(0)|}{k!} \le \frac{M(r)}{r^k}$ for $0 < r < R$, where $M(r) = \max_{|z|=r} |f(z)|$.
+By Cauchy's estimate, $\abs{a_k} = \frac{\abs{f^{(k)}(0)}}{k!} \le \frac{M(r)}{r^k}$ for $0 < r < R$, where $M(r) = \max_{\abs{z}=r} \abs{f(z)}$.
 
 ::: pf-proof
 Cauchy's inequality for the Taylor coefficients.
@@ -59,7 +59,7 @@ pick $r$ with $r > 1/e$ (possible since $R > 0$); then $n^n r^n \to \infty$, so 
 :::
 
 ::: {.pf-step #s3-2}
-Hence $|f^{(n)}(0)| = n! |a_n| \le n! \frac{M(r)}{r^n} \le n! \frac{n^n r^n}{r^n} = n^n n!$.
+Hence $\abs{f^{(n)}(0)} = n! \abs{a_n} \le n! \frac{M(r)}{r^n} \le n! \frac{n^n r^n}{r^n} = n^n n!$.
 
 ::: pf-proof
 combine step [](#s2){.pf-ref} and step [](#s3-1){.pf-ref}.
@@ -72,7 +72,7 @@ combine step [](#s2){.pf-ref} and step [](#s3-1){.pf-ref}.
 :::
 
 ::: pf-qed
-step [](#s3-2){.pf-ref} gives $|f^{(n)}(0)| \le n^n n!$ for some $n > 0$.
+step [](#s3-2){.pf-ref} gives $\abs{f^{(n)}(0)} \le n^n n!$ for some $n > 0$.
 :::
 
 :::

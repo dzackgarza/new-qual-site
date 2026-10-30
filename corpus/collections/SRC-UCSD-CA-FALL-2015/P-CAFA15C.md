@@ -24,7 +24,7 @@ Let $a_0, a_1, \dots, a_n$ be a strictly positive, non-increasing sequence of re
 $$a_0 \ge a_1 \ge a_2 \ge \cdots \ge a_n > 0.$$
 Prove that the polynomial:
 $$P(z) = a_0 + a_1 z + a_2 z^2 + \cdots + a_n z^n$$
-has **no roots inside the open unit disk** $|z| < 1$ (Eneström–Kakeya Theorem).
+has **no roots inside the open unit disk** $\abs{z} < 1$ (Eneström–Kakeya Theorem).
 :::
 
 ::: {.solution}
@@ -32,11 +32,11 @@ Set $P(z)=\sum_{k=0}^na_kz^k$. Then
 $$
 (1-z)P(z)=a_0-\left(\sum_{k=1}^n(a_{k-1}-a_k)z^k+a_nz^{n+1}\right).
 $$
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
-\left|\sum_{k=1}^n(a_{k-1}-a_k)z^k+a_nz^{n+1}\right|
-\le \sum_{k=1}^n(a_{k-1}-a_k)|z|^k+a_n|z|^{n+1}
+\abs{\sum_{k=1}^n(a_{k-1}-a_k)z^k+a_nz^{n+1}}
+\le \sum_{k=1}^n(a_{k-1}-a_k)\abs{z}^k+a_n\abs{z}^{n+1}
 < \sum_{k=1}^n(a_{k-1}-a_k)+a_n=a_0.
 $$
-The inequality is strict because $a_n>0$ and $|z|^{n+1}<1$. Therefore $|(1-z)P(z)|>0$. Since $1-z\ne0$ for $|z|<1$, one gets $P(z)\ne0$ throughout the open unit disk.
+The inequality is strict because $a_n>0$ and $\abs{z}^{n+1}<1$. Therefore $\abs{(1-z)P(z)}>0$. Since $1-z\ne0$ for $\abs{z}<1$, one gets $P(z)\ne0$ throughout the open unit disk.
 :::

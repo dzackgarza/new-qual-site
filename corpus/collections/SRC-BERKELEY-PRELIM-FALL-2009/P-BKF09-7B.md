@@ -46,6 +46,6 @@ i\alpha^{-1}\int_C\frac{(z-\alpha)^{-1}\,dz}{z-\alpha^{-1}}=i\alpha^{-1}\frac{2\
 $$
 So we have for $\abs{\alpha}\neq1$
 $$
-\int_0^{2\pi}\frac{d\theta}{1-2\alpha\cos\theta+\alpha^2}=\frac{2\pi}{\alpha^2-1}\cdot\frac{\abs{\alpha}-1}{\bigl\lvert\abs{\alpha}-1\bigr\rvert}.
+\int_0^{2\pi}\frac{d\theta}{1-2\alpha\cos\theta+\alpha^2}=\frac{2\pi}{\alpha^2-1}\cdot\frac{\abs{\alpha}-1}{\abs{\abs{\alpha}-1}}.
 $$
 :::

@@ -21,10 +21,10 @@ audit:
 6) (10 points) Let $f : \CC \to \CC$ be an entire function. Prove that if there exists some real number C and some positive integer k so that
 
 $$
-| f ( z ) | \leq C | z | ^ { k }
+\abs{ f ( z ) } \leq C \abs{ z } ^ { k }
 $$
 
-for all z with $| z | > 1$ , then f is a polynomial in z of degree at most $k .$
+for all z with $\abs{ z } > 1$ , then f is a polynomial in z of degree at most $k .$
 :::
 
 ::: {.solution}

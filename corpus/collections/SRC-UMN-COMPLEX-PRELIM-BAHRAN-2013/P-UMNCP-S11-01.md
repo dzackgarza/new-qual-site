@@ -21,7 +21,7 @@ Prove that for every $a\in\CC$ and every integer $n\ge2$, the polynomial
 $$
 az^n+z+1
 $$
-has at least one root in $|z|\le2$.
+has at least one root in $\abs{z}\le2$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ If $a=0$, then $p$ has the root
 $$
 z=-1,
 $$
-which lies in $|z|\le2$.
+which lies in $\abs{z}\le2$.
 
 
 ::: pf-proof
@@ -62,11 +62,11 @@ r_1,\ldots,r_n
 $$
 of $p$ satisfies
 $$
-|r_j|>2.
+\abs{r_j}>2.
 $$
 Then
 $$
-\boxed{|a|<2^{-n}}.
+\boxed{\abs{a}<2^{-n}}.
 $$
 
 
@@ -80,15 +80,15 @@ r_1r_2\cdots r_n
 $$
 Taking absolute values gives
 $$
-\frac1{|a|}
+\frac1{\abs{a}}
 =
-\prod_{j=1}^n|r_j|
+\prod_{j=1}^n\abs{r_j}
 >
 2^n.
 $$
 Hence
 $$
-|a|<2^{-n}.
+\abs{a}<2^{-n}.
 $$
 
 :::
@@ -99,11 +99,11 @@ $$
 
 On the circle
 $$
-|z|=2,
+\abs{z}=2,
 $$
 one has
 $$
-|az^n|<|z+1|.
+\abs{az^n}<\abs{z+1}.
 $$
 
 
@@ -111,21 +111,21 @@ $$
 
 By step [](#s1-2){.pf-ref},
 $$
-|az^n|
+\abs{az^n}
 =
-|a|2^n
+\abs{a}2^n
 <1.
 $$
 On the other hand, the reverse triangle inequality gives
 $$
-|z+1|
+\abs{z+1}
 \ge
-||z|-1|
+\abs{\abs{z}-1}
 =1.
 $$
 Therefore
 $$
-|az^n|<|z+1|
+\abs{az^n}<\abs{z+1}
 $$
 on the whole circle.
 
@@ -137,7 +137,7 @@ on the whole circle.
 
 The polynomial $p$ has exactly one zero in
 $$
-|z|<2,
+\abs{z}<2,
 $$
 counted with multiplicity.
 
@@ -149,7 +149,7 @@ $$
 p(z)
 =(z+1)+az^n.
 $$
-By step [](#s1-3){.pf-ref}, Rouché's theorem shows that $p$ and $z+1$ have the same number of zeros in $|z|<2$. The function $z+1$ has exactly one such zero, namely $-1$.
+By step [](#s1-3){.pf-ref}, Rouché's theorem shows that $p$ and $z+1$ have the same number of zeros in $\abs{z}<2$. The function $z+1$ has exactly one such zero, namely $-1$.
 
 :::
 
@@ -164,9 +164,9 @@ The assumption in step [](#s1-2){.pf-ref} is impossible.
 
 Step [](#s1-2){.pf-ref} assumed that every root of $p$ satisfies
 $$
-|r_j|>2,
+\abs{r_j}>2,
 $$
-so $p$ would have no root in $|z|<2$. Step [](#s1-4){.pf-ref} gives one root there, a contradiction.
+so $p$ would have no root in $\abs{z}<2$. Step [](#s1-4){.pf-ref} gives one root there, a contradiction.
 
 :::
 
@@ -176,7 +176,7 @@ so $p$ would have no root in $|z|<2$. Step [](#s1-4){.pf-ref} gives one root the
 
 Therefore $p$ has at least one root in
 $$
-\boxed{|z|\le2}.
+\boxed{\abs{z}\le2}.
 $$
 
 

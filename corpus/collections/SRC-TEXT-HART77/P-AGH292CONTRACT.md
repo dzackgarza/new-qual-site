@@ -89,12 +89,12 @@ The morphism $f$ is constant with value $P$ on a dense open neighborhood of $Y$.
 Choose an affine open $V=\Spec B\subseteq Z$ containing $P$ and set $U=f^{-1}(V)$.
 The hypothesis $f(Y)=P$ implies $Y\subseteq U$.
 Thus $U$ is nonempty and dense in the integral scheme $X$.
-Step [](#s2){.pf-ref} identifies the global-functions map of $f|_U$ with a $k$-algebra homomorphism
+Step [](#s2){.pf-ref} identifies the global-functions map of $f\restrict_U$ with a $k$-algebra homomorphism
 $$
 B\longrightarrow\Gamma(U,\OO_U)=k.
 $$
-It defines a $k$-point $Q\in V$, and $f|_U$ is the composite $U\to\Spec k\xrightarrow{Q}V$.
-Indeed, this composite and $f|_U$ have identical maps on coordinate rings on every affine open of $U$, so they agree as morphisms.
+It defines a $k$-point $Q\in V$, and $f\restrict_U$ is the composite $U\to\Spec k\xrightarrow{Q}V$.
+Indeed, this composite and $f\restrict_U$ have identical maps on coordinate rings on every affine open of $U$, so they agree as morphisms.
 As $U$ contains $Y$ and $f(Y)=P$, the point $Q$ must be $P$.
 The closed point $P$ is $k$-rational because $k$ is algebraically closed.
 

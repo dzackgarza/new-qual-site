@@ -32,9 +32,9 @@ f(z)-f(z_0)=(z-z_0)g(z),
 $$
 where $g$ is holomorphic near $z_0$ and $g(z_0)=f'(z_0)\ne0$. Choose a small closed disc $\overline D$ centered at $z_0$ on which $g$ has no zeros and $f(z)\ne f(z_0)$ on $\partial D$. Let
 $$
-m=\min_{\partial D}|f(z)-f(z_0)|>0.
+m=\min_{\partial D}\abs{f(z)-f(z_0)}>0.
 $$
-For $w$ with $|w-f(z_0)|<m$, Rouché's theorem shows that
+For $w$ with $\abs{w-f(z_0)}<m$, Rouché's theorem shows that
 $$
 f(z)-w
 $$

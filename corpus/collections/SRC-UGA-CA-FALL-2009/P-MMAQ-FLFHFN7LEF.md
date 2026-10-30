@@ -191,7 +191,7 @@ $\sin\theta \geq 0$ for $\theta \in [0, \pi]$.
 :::
 
 ::: pf-step
-Thus $|e^{iz}| = e^{-\text{Im}(z)} = e^{-R\sin\theta} \leq 1$.
+Thus $\abs{e^{iz}} = e^{-\text{Im}(z)} = e^{-R\sin\theta} \leq 1$.
 
 ::: pf-proof
 Exponential of non-positive real number.
@@ -200,7 +200,7 @@ Exponential of non-positive real number.
 :::
 
 ::: pf-step
-By the reverse triangle inequality, $|z^2+1| \geq |z|^2 - 1 = R^2 - 1$, so $|(z^2+1)^2| \geq (R^2-1)^2$.
+By the reverse triangle inequality, $\abs{z^2+1} \geq \abs{z}^2 - 1 = R^2 - 1$, so $\abs{(z^2+1)^2} \geq (R^2-1)^2$.
 
 ::: pf-proof
 Reverse triangle inequality for $R > 1$.
@@ -209,7 +209,7 @@ Reverse triangle inequality for $R > 1$.
 :::
 
 ::: pf-step
-The integrand is bounded by $|f(z)| \leq \frac{1}{(R^2-1)^2}$ on $C_R$, and the length of $C_R$ is $\pi R$.
+The integrand is bounded by $\abs{f(z)} \leq \frac{1}{(R^2-1)^2}$ on $C_R$, and the length of $C_R$ is $\pi R$.
 
 ::: pf-proof
 Definition of arc length and supremum bound.
@@ -218,7 +218,7 @@ Definition of arc length and supremum bound.
 :::
 
 ::: {.pf-step #s4-5}
-By the $ML$-inequality: $$\left| \int_{C_R} f(z) \, dz \right| \leq \frac{\pi R}{(R^2-1)^2} \to 0 \quad \text{as } R \to \infty.$$
+By the $ML$-inequality: $$\abs{ \int_{C_R} f(z) \, dz } \leq \frac{\pi R}{(R^2-1)^2} \to 0 \quad \text{as } R \to \infty.$$
 
 ::: pf-proof
 The degree of the denominator ($R^4$) exceeds the numerator ($R$) by 3.

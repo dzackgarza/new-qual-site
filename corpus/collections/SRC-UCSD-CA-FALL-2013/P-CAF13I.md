@@ -80,7 +80,7 @@ assume for contradiction.
 :::
 
 ::: {.pf-step #s2-2}
-Then $\int_{|z|=1} f(z)\,dz = \int_0^{2\pi} f(e^{i\theta}) i e^{i\theta}\,d\theta = \int_0^{2\pi} e^{-i\theta} i e^{i\theta}\,d\theta = \int_0^{2\pi} i\,d\theta = 2\pi i$.
+Then $\int_{\abs{z}=1} f(z)\,dz = \int_0^{2\pi} f(e^{i\theta}) i e^{i\theta}\,d\theta = \int_0^{2\pi} e^{-i\theta} i e^{i\theta}\,d\theta = \int_0^{2\pi} i\,d\theta = 2\pi i$.
 
 ::: pf-proof
 parametrize the unit circle and use the boundary values.
@@ -89,7 +89,7 @@ parametrize the unit circle and use the boundary values.
 :::
 
 ::: {.pf-step #s2-3}
-But $\int_{|z|=1} f(z)\,dz = 0$ by Cauchy's theorem (since $f$ is holomorphic on $\DD$ and continuous on $\overline{\DD}$).
+But $\int_{\abs{z}=1} f(z)\,dz = 0$ by Cauchy's theorem (since $f$ is holomorphic on $\DD$ and continuous on $\overline{\DD}$).
 
 ::: pf-proof
 Cauchy's integral theorem.

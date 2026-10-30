@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK89S-12
 kind: problem
-title: The contour integral $\int_{|z|=2}(2z-1)e^{z/(z-1)}\,dz$
+title: The contour integral $\int_{\abs{z}=2}(2z-1)e^{z/(z-1)}\,dz$
 classification:
   areas: [prelim]
   topics: []
@@ -28,7 +28,7 @@ Evaluate
 $$
 \int_C(2z-1)e^{z/(z-1)}\,dz,
 $$
-where $C$ is the positively oriented circle $|z|=2$.
+where $C$ is the positively oriented circle $\abs{z}=2$.
 :::
 
 ::: {.solution}

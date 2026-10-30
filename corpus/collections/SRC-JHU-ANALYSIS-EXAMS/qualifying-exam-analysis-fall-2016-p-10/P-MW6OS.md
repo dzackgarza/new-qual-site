@@ -30,9 +30,9 @@ audit:
    If true, provide a proof.
    If false, provide a counter example.
 
-(a) A sequence $\left\{ f _ { n } \right\}$ in H with $\left| \left| f _ { n } \right| \right| = 1$ for all n has a subsequence that converges in H.
+(a) A sequence $\left\{ f _ { n } \right\}$ in H with $\norm{ f _ { n } } = 1$ for all n has a subsequence that converges in H.
 
-(b) A sequence $\left\{ f _ { n } \right\}$ in H with $| | f _ { n } | | = 1$ for all n has a subsequence that converges weakly in H.
+(b) A sequence $\left\{ f _ { n } \right\}$ in H with $\norm{  f _ { n } }  = 1$ for all n has a subsequence that converges weakly in H.
 :::
 
 ::: {.solution}
@@ -51,8 +51,8 @@ e_1,e_2,\dots.
 $$
 Each vector has norm $1$, but for $m\ne n$,
 $$
-\|e_n-e_m\|^2
-=\|e_n\|^2+\|e_m\|^2-2\operatorname{Re}\langle e_n,e_m\rangle
+\norm{e_n-e_m}^2
+=\norm{e_n}^2+\norm{e_m}^2-2\operatorname{Re}\langle e_n,e_m\rangle
 =2.
 $$
 Thus every two distinct terms are distance $\sqrt2$ apart. No subsequence is Cauchy, hence no subsequence converges in norm.
@@ -69,7 +69,7 @@ Reduce part (b) to a separable Hilbert space.
 
 ::: pf-proof
 
-Let $(f_n)$ be any sequence with $\|f_n\|=1$ for all $n$, and set
+Let $(f_n)$ be any sequence with $\norm{f_n}=1$ for all $n$, and set
 $$
 H_0:=\overline{\operatorname{span}}\{f_n:n\ge1\}.
 $$
@@ -101,16 +101,16 @@ Show that the limiting coordinates define a vector of $H_0$.
 
 For every $N$, Bessel's inequality gives
 $$
-\sum_{j=1}^N|\langle f_{n_k},e_j\rangle|^2
-\le \|f_{n_k}\|^2=1.
+\sum_{j=1}^N\abs{\langle f_{n_k},e_j\rangle}^2
+\le \norm{f_{n_k}}^2=1.
 $$
 Letting $k\to\infty$ yields
 $$
-\sum_{j=1}^N|a_j|^2\le1.
+\sum_{j=1}^N\abs{a_j}^2\le1.
 $$
 Since this holds for every $N$,
 $$
-\sum_{j=1}^\infty|a_j|^2\le1.
+\sum_{j=1}^\infty\abs{a_j}^2\le1.
 $$
 Hence the series
 $$
@@ -142,11 +142,11 @@ $$
 
 Now let $g\in H_0$ be arbitrary. Given $\varepsilon>0$, choose such a finite linear combination $g_N$ with
 $$
-\|g-g_N\|<\varepsilon.
+\norm{g-g_N}<\varepsilon.
 $$
-Since $\|f_{n_k}\|=1$ and $\|f\|\le1$,
+Since $\norm{f_{n_k}}=1$ and $\norm{f}\le1$,
 $$
-|\langle f_{n_k}-f,g-g_N\rangle|
+\abs{\langle f_{n_k}-f,g-g_N\rangle}
 \le2\varepsilon.
 $$
 Together with convergence against $g_N$, this gives

@@ -109,7 +109,7 @@ V=U_1\oplus U_1^\perp
 $$
 and $\dim W=2$. If a vector of $W$ is orthogonal to all of $W$, it is
 also orthogonal to $U_1$, hence to all of $V$; nondegeneracy of
-$\omega$ forces it to be zero. Thus $\omega|_W$ is nondegenerate.
+$\omega$ forces it to be zero. Thus $\omega\restrict_W$ is nondegenerate.
 
 :::
 
@@ -134,7 +134,7 @@ $$
 
 The first count is the number of nonzero vectors in the
 $2$-dimensional space $W$. For the second, nondegeneracy of
-$\omega|_W$ makes $w\mapsto\omega(e_2,w)$ a nonzero linear functional
+$\omega\restrict_W$ makes $w\mapsto\omega(e_2,w)$ a nonzero linear functional
 on $W$. Its fibers therefore have cardinality $3^{2-1}=3$.
 
 :::
@@ -146,7 +146,7 @@ on $W$. Its fibers therefore have cardinality $3^{2-1}=3$.
 The order of the group preserving $\omega$ is
 $$
 \boxed{
-|\operatorname{Sp}_4(\FF_3)|
+\cardinality{\operatorname{Sp}_4(\FF_3)}
 =(3^4-1)3^3(3^2-1)3
 =51\,840.
 }
@@ -203,14 +203,14 @@ $$
 
 The order of the general linear group is
 $$
-|\operatorname{GL}_4(\FF_3)|
+\cardinality{\operatorname{GL}_4(\FF_3)}
 =(3^4-1)(3^4-3)(3^4-3^2)(3^4-3^3).
 $$
 By orbit-stabilizer and steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, the number of forms is
 $$
 \begin{aligned}
-\frac{|\operatorname{GL}_4(\FF_3)|}
-{|\operatorname{Sp}_4(\FF_3)|}
+\frac{\cardinality{\operatorname{GL}_4(\FF_3)}}
+{\cardinality{\operatorname{Sp}_4(\FF_3)}}
 &=
 \frac{
 (3^4-1)(3^4-3)(3^4-3^2)(3^4-3^3)

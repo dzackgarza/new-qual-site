@@ -91,7 +91,7 @@ In every orientation chart, $s$ identifies $X_0$ locally with $U\times R$, and u
 
 ::: pf-proof
 
-On an orientable chart $U$, the local orientation section is constant in the standard trivialization of the orientation sheaf. Hence $\Phi|_{U\times R}$ and its inverse are continuous.
+On an orientable chart $U$, the local orientation section is constant in the standard trivialization of the orientation sheaf. Hence $\Phi\restrict_{U\times R}$ and its inverse are continuous.
 
 :::
 

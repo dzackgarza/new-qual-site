@@ -366,7 +366,7 @@ $\Pic_\sigma$ occurring in the hint.
 On the fibre $\{x\}\times X'$ the graph $\Gamma_h$ cuts out the point
 $h(x)$, while $X\times\{P_0'\}$ cuts out $P_0'$.  Therefore
 $$
-\mcm_h|_{\{x\}\times X'}
+\mcm_h\restrict_{\{x\}\times X'}
 \cong
 \OO_{X'}(h(x)-P_0').
 $$

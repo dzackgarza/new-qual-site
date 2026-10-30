@@ -37,7 +37,7 @@ r>0
 $$
 the function $f$ is holomorphic on
 $$
-0<|z-z_0|<r.
+0<\abs{z-z_0}<r.
 $$
 
 ::: pf
@@ -46,7 +46,7 @@ $$
 
 The point $z_0$ is a **pole** of $f$ if
 $$
-|f(z)|\longrightarrow\infty
+\abs{f(z)}\longrightarrow\infty
 \qquad
 (z\to z_0).
 $$

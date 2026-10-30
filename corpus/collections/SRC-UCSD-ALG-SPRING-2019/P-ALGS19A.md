@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Suppose $G$ is a non-cyclic finite group of order $pn$ where $p$ is prime and $n \in \ZZ^+$.
 Suppose $\gcd(p!, n) = 1$, and $G$ has an element of order $n$.
-Prove that $p \mid \phi(n)$, where $\phi(n) = |\{k \in \ZZ \mid 1 \leq k \leq n, \gcd(k, n) = 1\}|$ is the Euler $\phi$-function.
+Prove that $p \mid \phi(n)$, where $\phi(n) = \cardinality{\{k \in \ZZ \mid 1 \leq k \leq n, \gcd(k, n) = 1\}}$ is the Euler $\phi$-function.
 :::
 
 ::: {.solution}
@@ -34,11 +34,11 @@ Prove that $p \mid \phi(n)$, where $\phi(n) = |\{k \in \ZZ \mid 1 \leq k \leq n,
 
 ::: pf-step
 
-Let $x\in G$ have order $n$, and put $H=\langle x\rangle$. Then $|H|=n$ and $[G:H]=p$.
+Let $x\in G$ have order $n$, and put $H=\langle x\rangle$. Then $\cardinality{H}=n$ and $[G:H]=p$.
 
 ::: pf-proof
 
-By hypothesis $|G|=pn$ and $|x|=n$.
+By hypothesis $\cardinality{G}=pn$ and $\elementorder{x}=n$.
 
 :::
 
@@ -51,16 +51,16 @@ $$
 \rho:G\longrightarrow S_p
 $$
 be the corresponding homomorphism.
-Then $|\rho(G)|=p$.
+Then $\cardinality{\rho(G)}=p$.
 
 ::: pf-proof
 
-The action is transitive, so $p$ divides $|\rho(G)|$ by orbit-stabilizer.
-On the other hand, $|\rho(G)|$ divides both $|G|=pn$ and $|S_p|=p!$. Since $\gcd(n,p!)=1$, one has
+The action is transitive, so $p$ divides $\cardinality{\rho(G)}$ by orbit-stabilizer.
+On the other hand, $\cardinality{\rho(G)}$ divides both $\cardinality{G}=pn$ and $\cardinality{S_p}=p!$. Since $\gcd(n,p!)=1$, one has
 $$
 \gcd(pn,p!)=p,
 $$
-so $|\rho(G)|\mid p$. Hence $|\rho(G)|=p$.
+so $\cardinality{\rho(G)}\mid p$. Hence $\cardinality{\rho(G)}=p$.
 
 :::
 
@@ -72,9 +72,9 @@ The kernel of $\rho$ is $H$. In particular, $H\trianglelefteq G$ and $G/H\cong C
 
 ::: pf-proof
 
-Since $|\rho(G)|=p$, the first isomorphism theorem gives
+Since $\cardinality{\rho(G)}=p$, the first isomorphism theorem gives
 $$
-|\ker\rho|=\frac{|G|}{p}=n.
+\cardinality{\ker\rho}=\frac{\cardinality{G}}{p}=n.
 $$
 The kernel of the coset action is contained in the stabilizer of the coset $H$, namely $H$. Since both have order $n$, they are equal.
 
@@ -95,11 +95,11 @@ This homomorphism is nontrivial.
 Because $H\trianglelefteq G$, conjugation preserves $H$, and because $H$ is abelian, conjugation by elements of $H$ acts trivially on $H$; hence the action factors through $G/H$.
 
 If $\theta$ were trivial, then $H\subseteq Z(G)$. Thus $G$ would be abelian.
-Since $|G|=pn$ and $\gcd(p,n)=1$, its Sylow $p$-subgroup $P$ would have order $p$, and
+Since $\cardinality{G}=pn$ and $\gcd(p,n)=1$, its Sylow $p$-subgroup $P$ would have order $p$, and
 $$
 G=H\times P\cong C_n\times C_p\cong C_{pn},
 $$
-because $H\cap P=1$ and $np=|G|$. This contradicts the hypothesis that $G$ is non-cyclic.
+because $H\cap P=1$ and $np=\cardinality{G}$. This contradicts the hypothesis that $G$ is non-cyclic.
 
 :::
 
@@ -110,7 +110,7 @@ because $H\cap P=1$ and $np=|G|$. This contradicts the hypothesis that $G$ is no
 Since $G/H\cong C_p$ has prime order and $\theta$ is nontrivial, $\theta$ is injective.
 Therefore
 $$
-p\mid |\operatorname{Aut}(H)|.
+p\mid \cardinality{\operatorname{Aut}(H)}.
 $$
 
 ::: pf-proof
@@ -124,7 +124,7 @@ Hence $C_p\cong G/H$ embeds in $\operatorname{Aut}(H)$, so Lagrange's theorem gi
 
 ::: pf-step
 
-Since $H\cong C_n$, one has $|\operatorname{Aut}(H)|=\varphi(n)$. Hence
+Since $H\cong C_n$, one has $\cardinality{\operatorname{Aut}(H)}=\varphi(n)$. Hence
 $$
 p\mid\varphi(n).
 $$

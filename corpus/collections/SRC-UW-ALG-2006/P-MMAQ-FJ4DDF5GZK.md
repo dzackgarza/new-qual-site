@@ -299,7 +299,7 @@ Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 ::: pf-step
 
-By the Galois correspondence, $[K : F(a)] = |\operatorname{Stab}_G(a)| = 1$, so $K = F(a)$.
+By the Galois correspondence, $[K : F(a)] = \cardinality{\operatorname{Stab}_G(a)} = 1$, so $K = F(a)$.
 
 ::: pf-proof
 

@@ -28,12 +28,12 @@ Let $f\in L^\infty([0,1])$.
 
 (a) Prove that for $1<p<\infty$,
 $$
-\|f\|_p\le\|f\|_\infty.
+\norm{f}_p\le\norm{f}_\infty.
 $$
 
 (b) Prove that
 $$
-\lim_{p\to\infty}\|f\|_p=\|f\|_\infty.
+\lim_{p\to\infty}\norm{f}_p=\norm{f}_\infty.
 $$
 :::
 

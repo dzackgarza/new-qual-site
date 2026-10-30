@@ -101,14 +101,14 @@ Its inverse is multiplication by $1/4$.
 ::: {.pf-step #phi-bijection}
 There are neighborhoods $V$ and $U$ of $I$ such that
 $$
-\Phi|_V:V\longrightarrow U
+\Phi\restrict_V:V\longrightarrow U
 $$
 is a bijection.
 
 ::: pf-proof
 Steps [](#phi-smooth){.pf-ref} and [](#d-phi-invertible){.pf-ref} verify the hypotheses of the inverse function
 theorem at $I$. Therefore there are neighborhoods $V$ of $I$ and
-$U$ of $\Phi(I)=I$ such that $\Phi|_V$ is a diffeomorphism from
+$U$ of $\Phi(I)=I$ such that $\Phi\restrict_V$ is a diffeomorphism from
 $V$ onto $U$, in particular a bijection.
 :::
 

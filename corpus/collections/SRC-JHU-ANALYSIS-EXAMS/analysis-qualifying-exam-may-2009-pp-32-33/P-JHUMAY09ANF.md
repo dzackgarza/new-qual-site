@@ -31,7 +31,7 @@ $$
 $$
 and for every $0<\varepsilon<1/2$,
 $$
-\int_{\varepsilon\le |t|\le1/2}K_n(t)\,dt\longrightarrow0.
+\int_{\varepsilon\le \abs{t}\le1/2}K_n(t)\,dt\longrightarrow0.
 $$
 For continuous $f$ on $\RR/\ZZ$, prove that $f*K_n\to f$ uniformly.
 :::
@@ -42,18 +42,18 @@ For continuous $f$ on $\RR/\ZZ$, prove that $f*K_n\to f$ uniformly.
 
 ::: {.pf-step #s1}
 
-The contribution from $|t|<\delta$ can be made uniformly small.
+The contribution from $\abs{t}<\delta$ can be made uniformly small.
 
 ::: pf-proof
 
 Fix $\eta>0$. Since $f$ is continuous on the compact circle, it is uniformly continuous. Choose $0<\delta<1/2$ so that
 $$
-|f(x-t)-f(x)|<\frac{\eta}{2}
-\qquad(|t|<\delta)
+\abs{f(x-t)-f(x)}<\frac{\eta}{2}
+\qquad(\abs{t}<\delta)
 $$
 for every $x$. Since $K_n\ge0$ and $\int K_n=1$,
 $$
-\int_{|t|<\delta}|f(x-t)-f(x)|K_n(t)\,dt
+\int_{\abs{t}<\delta}\abs{f(x-t)-f(x)}K_n(t)\,dt
 \le\frac\eta2
 $$
 uniformly in $x$ and $n$.
@@ -64,20 +64,20 @@ uniformly in $x$ and $n$.
 
 ::: {.pf-step #s2}
 
-The contribution from $\delta\le|t|\le1/2$ tends uniformly to zero.
+The contribution from $\delta\le\abs{t}\le1/2$ tends uniformly to zero.
 
 ::: pf-proof
 
 For every $x$ and $t$,
 $$
-|f(x-t)-f(x)|\le2\|f\|_\infty.
+\abs{f(x-t)-f(x)}\le2\norm{f}_\infty.
 $$
 Therefore
 $$
-\int_{\delta\le|t|\le1/2}|f(x-t)-f(x)|K_n(t)\,dt
+\int_{\delta\le\abs{t}\le1/2}\abs{f(x-t)-f(x)}K_n(t)\,dt
 \le
-2\|f\|_\infty
-\int_{\delta\le|t|\le1/2}K_n(t)\,dt.
+2\norm{f}_\infty
+\int_{\delta\le\abs{t}\le1/2}K_n(t)\,dt.
 $$
 The last integral tends to $0$ by hypothesis, and the bound is independent of $x$.
 
@@ -98,7 +98,7 @@ $$
 $$
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, for all sufficiently large $n$ the absolute value of the right-hand side is $<\eta$ for every $x$. Hence
 $$
-\|f*K_n-f\|_\infty\longrightarrow0.
+\norm{f*K_n-f}_\infty\longrightarrow0.
 $$
 
 :::

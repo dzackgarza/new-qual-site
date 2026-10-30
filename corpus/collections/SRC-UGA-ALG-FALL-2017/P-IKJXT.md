@@ -66,7 +66,7 @@ Every Galois extension of $\QQ$ of degree four admits a proper nontrivial interm
 
 ::: pf-proof
 
-Let $L/\QQ$ be Galois with $|\operatorname{Gal}(L/\QQ)|=4$. By Cauchy's theorem, its Galois group contains a subgroup $J$ of order two. The fixed field $L^J$ has degree two over $\QQ$ and degree two below $L$ by the Galois correspondence, so $\QQ\subsetneq L^J\subsetneq L$.
+Let $L/\QQ$ be Galois with $\cardinality{\operatorname{Gal}(L/\QQ)}=4$. By Cauchy's theorem, its Galois group contains a subgroup $J$ of order two. The fixed field $L^J$ has degree two over $\QQ$ and degree two below $L$ by the Galois correspondence, so $\QQ\subsetneq L^J\subsetneq L$.
 
 :::
 

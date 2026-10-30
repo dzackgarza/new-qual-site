@@ -86,7 +86,7 @@ $$
 
 The radial map
 $$
-r(x)=\frac{x}{\|x\|}
+r(x)=\frac{x}{\norm{x}}
 $$
 is a deformation retraction of $\RR^2\setminus\{0\}$ onto the unit circle $S^1$.
 Homotopy invariance of singular homology therefore gives

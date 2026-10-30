@@ -33,14 +33,14 @@ x\ne\pm1,
 $$
 one has
 $$
-\left|
+\abs{
 \frac1{x^2-1}
 -
 \frac13
-\right|
+}
 =
-\frac{|x-2|,|x+2|}
-{3|x^2-1|}.
+\frac{\abs{x-2},\abs{x+2}}
+{3\abs{x^2-1}}.
 $$
 
 
@@ -73,15 +73,15 @@ Take absolute values.
 
 If
 $$
-|x-2|<\frac12,
+\abs{x-2}<\frac12,
 $$
 then
 $$
-|x+2|<\frac92
+\abs{x+2}<\frac92
 $$
 and
 $$
-|x^2-1|>\frac54.
+\abs{x^2-1}>\frac54.
 $$
 
 
@@ -89,7 +89,7 @@ $$
 
 The inequality
 $$
-|x-2|<\frac12
+\abs{x-2}<\frac12
 $$
 gives
 $$
@@ -101,7 +101,7 @@ x+2<\frac92,
 $$
 so
 $$
-|x+2|<\frac92.
+\abs{x+2}<\frac92.
 $$
 
 Also
@@ -118,7 +118,7 @@ x^2-1
 $$
 Since this quantity is positive,
 $$
-|x^2-1|
+\abs{x^2-1}
 >
 \frac54.
 $$
@@ -131,13 +131,13 @@ $$
 
 Under the same restriction,
 $$
-\left|
+\abs{
 \frac1{x^2-1}
 -
 \frac13
-\right|
+}
 <
-\frac65|x-2|.
+\frac65\abs{x-2}.
 $$
 
 
@@ -146,19 +146,19 @@ $$
 Insert the bounds from step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}:
 $$
 \begin{aligned}
-\left|
+\abs{
 \frac1{x^2-1}
 -
 \frac13
-\right|
+}
 &=
-\frac{|x-2|,|x+2|}
-{3|x^2-1|}\\
+\frac{\abs{x-2},\abs{x+2}}
+{3\abs{x^2-1}}\\
 &<
-\frac{|x-2|(9/2)}
+\frac{\abs{x-2}(9/2)}
 {3(5/4)}\\
 &=
-\frac65|x-2|.
+\frac65\abs{x-2}.
 \end{aligned}
 $$
 
@@ -193,11 +193,11 @@ This choice ensures both:
 
 1. the denominator-control hypothesis
    $$
-   |x-2|<\frac12;
+   \abs{x-2}<\frac12;
    $$
 2. the final error bound
    $$
-   \frac65|x-2|
+   \frac65\abs{x-2}
    <
    \varepsilon.
    $$
@@ -210,15 +210,15 @@ This choice ensures both:
 
 If
 $$
-0<|x-2|<\delta,
+0<\abs{x-2}<\delta,
 $$
 then
 $$
-\left|
+\abs{
 \frac1{x^2-1}
 -
 \frac13
-\right|
+}
 <
 \varepsilon.
 $$
@@ -232,17 +232,17 @@ $$
 $$
 step [](#s1-3){.pf-ref} applies:
 $$
-\left|
+\abs{
 \frac1{x^2-1}
 -
 \frac13
-\right|
+}
 <
-\frac65|x-2|.
+\frac65\abs{x-2}.
 $$
 Also
 $$
-|x-2|
+\abs{x-2}
 <
 \delta
 \le
@@ -250,7 +250,7 @@ $$
 $$
 so
 $$
-\frac65|x-2|
+\frac65\abs{x-2}
 <
 \varepsilon.
 $$

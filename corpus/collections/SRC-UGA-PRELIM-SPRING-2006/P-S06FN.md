@@ -64,9 +64,9 @@ The convergence is not uniform.
 
 Take $\varepsilon=1/4$. For every $n\ge1$, choose $x=n$. Then
 $$
-|f_n(n)-0|=\frac{n}{n+n}=\frac12>\frac14.
+\abs{f_n(n)-0}=\frac{n}{n+n}=\frac12>\frac14.
 $$
-Thus there is no $N$ such that for every $n\ge N$ and every $x\ge0$ one has $|f_n(x)|<1/4$. This is the negation of uniform convergence to $0$.
+Thus there is no $N$ such that for every $n\ge N$ and every $x\ge0$ one has $\abs{f_n(x)}<1/4$. This is the negation of uniform convergence to $0$.
 
 :::
 

@@ -39,7 +39,7 @@ $$
 
 On the unit circle,
 $$
-|e^{z^2}|<|-4z^2|.
+\abs{e^{z^2}}<\abs{-4z^2}.
 $$
 
 
@@ -47,22 +47,22 @@ $$
 
 If
 $$
-|z|=1,
+\abs{z}=1,
 $$
 then
 $$
-|-4z^2|
+\abs{-4z^2}
 =
-4|z|^2
+4\abs{z}^2
 =4.
 $$
 Also,
 $$
-|e^{z^2}|
+\abs{e^{z^2}}
 =
 e^{\operatorname{Re}(z^2)}
 \le
-e^{|z^2|}
+e^{\abs{z^2}}
 =
 e
 <4.
@@ -87,7 +87,7 @@ $$
 $$
 have the same number of zeros in
 $$
-|z|<1,
+\abs{z}<1,
 $$
 counted with multiplicity.
 

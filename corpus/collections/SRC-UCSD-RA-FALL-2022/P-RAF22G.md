@@ -31,12 +31,12 @@ Let $\alpha = (\alpha_1, \cdots, \alpha_n)$ with $\alpha_i$ nonnegative integers
 
 1. Prove that there exists a natural number $N$ and $C > 0$ such that
 $$
-|\langle F, \varphi \rangle| \leq C \sum_{|\alpha| \leq N} \sup_x |\partial^\alpha \varphi(x)|, \quad \forall \varphi \in C_c^\infty.
+\abs{\langle F, \varphi \rangle} \leq C \sum_{\multiindexsize{\alpha} \leq N} \sup_x \abs{\partial^\alpha \varphi(x)}, \quad \forall \varphi \in C_c^\infty.
 $$
 
-2. If $\varphi \in C_c^\infty$ and $\partial^\alpha \varphi(0) = 0$ for all $|\alpha| \leq N$, then $\langle F, \varphi \rangle = 0$.
+2. If $\varphi \in C_c^\infty$ and $\partial^\alpha \varphi(0) = 0$ for all $\multiindexsize{\alpha} \leq N$, then $\langle F, \varphi \rangle = 0$.
 
-3. There exist constants $c_\alpha$ ($|\alpha| \leq N$) such that $F = \sum_{|\alpha| \leq N} c_\alpha \partial^\alpha \delta$.
+3. There exist constants $c_\alpha$ ($\multiindexsize{\alpha} \leq N$) such that $F = \sum_{\multiindexsize{\alpha} \leq N} c_\alpha \partial^\alpha \delta$.
 :::
 
 ::: {.solution}
@@ -45,7 +45,7 @@ $$
 
 ::: {.pf-step #s1}
 
-(1) There are $N\in\NN$ and $C>0$ with $|\langle F,\varphi\rangle|\le C\sum_{|\alpha|\le N}\sup_x|\partial^\alpha\varphi(x)|$ for every $\varphi\in C_c^\infty$.
+(1) There are $N\in\NN$ and $C>0$ with $\abs{\langle F,\varphi\rangle}\le C\sum_{\multiindexsize{\alpha}\le N}\sup_x\abs{\partial^\alpha\varphi(x)}$ for every $\varphi\in C_c^\infty$.
 
 ::: pf-proof
 
@@ -66,17 +66,17 @@ $$
 $$
 is continuous. Hence there exist $N\in\NN$ and $C_0>0$ such that
 $$
-|\langle F,\psi\rangle|
-\le C_0\sum_{|\alpha|\le N}
-\sup_x|\partial^\alpha\psi(x)|
+\abs{\langle F,\psi\rangle}
+\le C_0\sum_{\multiindexsize{\alpha}\le N}
+\sup_x\abs{\partial^\alpha\psi(x)}
 \qquad(\psi\in\mathcal D_K).
 $$
 Applying this to $\psi=\chi\varphi$ and using Leibniz's rule gives, after absorbing the finitely many derivatives of $\chi$ into the constant,
 $$
 \boxed{
-|\langle F,\varphi\rangle|
-\le C\sum_{|\alpha|\le N}
-\sup_x|\partial^\alpha\varphi(x)|.}
+\abs{\langle F,\varphi\rangle}
+\le C\sum_{\multiindexsize{\alpha}\le N}
+\sup_x\abs{\partial^\alpha\varphi(x)}.}
 $$
 
 :::
@@ -85,14 +85,14 @@ $$
 
 ::: {.pf-step #s2}
 
-(2) If $\partial^\alpha\varphi(0)=0$ for all $|\alpha|\le N$, then $\langle F,\varphi\rangle=0$.
+(2) If $\partial^\alpha\varphi(0)=0$ for all $\multiindexsize{\alpha}\le N$, then $\langle F,\varphi\rangle=0$.
 
 ::: pf-proof
 
 Suppose
 $$
 \partial^\alpha\varphi(0)=0
-\qquad(|\alpha|\le N).
+\qquad(\multiindexsize{\alpha}\le N).
 $$
 Choose $\eta\in C_c^\infty(\RR^n)$ with $\eta=1$ near $0$, and put
 $$
@@ -105,26 +105,26 @@ $$
 $$
 for every $\varepsilon>0$.
 
-Taylor's theorem and the vanishing jet imply that for every multi-index $\gamma$ with $|\gamma|\le N$,
+Taylor's theorem and the vanishing jet imply that for every multi-index $\gamma$ with $\multiindexsize{\gamma}\le N$,
 $$
-|\partial^\gamma\varphi(x)|
-\le C_\varphi |x|^{N+1-|\gamma|}
+\abs{\partial^\gamma\varphi(x)}
+\le C_\varphi \norm{x}^{N+1-\multiindexsize{\gamma}}
 $$
-for $x$ near $0$. On the support of $\eta_\varepsilon$ we have $|x|=O(\varepsilon)$, while
+for $x$ near $0$. On the support of $\eta_\varepsilon$ we have $\norm{x}=O(\varepsilon)$, while
 $$
-|\partial^\beta\eta_\varepsilon(x)|
-\le C_\beta\varepsilon^{-|\beta|}.
+\abs{\partial^\beta\eta_\varepsilon(x)}
+\le C_\beta\varepsilon^{-\multiindexsize{\beta}}.
 $$
-Therefore Leibniz's rule gives, for every $|\alpha|\le N$,
+Therefore Leibniz's rule gives, for every $\multiindexsize{\alpha}\le N$,
 $$
-\sup_x|\partial^\alpha(\eta_\varepsilon\varphi)(x)|
-\le C_\alpha\varepsilon^{N+1-|\alpha|}
+\sup_x\abs{\partial^\alpha(\eta_\varepsilon\varphi)(x)}
+\le C_\alpha\varepsilon^{N+1-\multiindexsize{\alpha}}
 \le C_\alpha\varepsilon.
 $$
 Using the estimate of step [](#s1){.pf-ref},
 $$
-|\langle F,\varphi\rangle|
-=|\langle F,\eta_\varepsilon\varphi\rangle|
+\abs{\langle F,\varphi\rangle}
+=\abs{\langle F,\eta_\varepsilon\varphi\rangle}
 \le C'\varepsilon.
 $$
 Letting $\varepsilon\downarrow0$ yields
@@ -138,11 +138,11 @@ $$
 
 ::: pf-step
 
-(3) There are constants $c_\alpha$ with $F=\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta$.
+(3) There are constants $c_\alpha$ with $F=\sum_{\multiindexsize{\alpha}\le N}c_\alpha\partial^\alpha\delta$.
 
 ::: pf-proof
 
-Choose $\rho\in C_c^\infty(\RR^n)$ with $\rho=1$ near $0$. For $|\alpha|\le N$, set
+Choose $\rho\in C_c^\infty(\RR^n)$ with $\rho=1$ near $0$. For $\multiindexsize{\alpha}\le N$, set
 $$
 a_\alpha
 :=\left\langle F,\rho(x)\frac{x^\alpha}{\alpha!}\right\rangle.
@@ -150,7 +150,7 @@ $$
 For any test function $\varphi$, let
 $$
 P_N\varphi(x)
-=\sum_{|\alpha|\le N}
+=\sum_{\multiindexsize{\alpha}\le N}
 \frac{\partial^\alpha\varphi(0)}{\alpha!}x^\alpha
 $$
 be its Taylor polynomial of degree $N$ at $0$. The function
@@ -161,30 +161,30 @@ has all derivatives of order at most $N$ equal to zero at $0$. By step [](#s2){.
 $$
 \langle F,\varphi\rangle
 =\langle F,\rho P_N\varphi\rangle
-=\sum_{|\alpha|\le N}
+=\sum_{\multiindexsize{\alpha}\le N}
 a_\alpha\,\partial^\alpha\varphi(0).
 $$
 
 Since
 $$
 \langle \partial^\alpha\delta,\varphi\rangle
-=(-1)^{|\alpha|}\partial^\alpha\varphi(0),
+=(-1)^{\multiindexsize{\alpha}}\partial^\alpha\varphi(0),
 $$
 define
 $$
-c_\alpha:=(-1)^{|\alpha|}a_\alpha.
+c_\alpha:=(-1)^{\multiindexsize{\alpha}}a_\alpha.
 $$
 Then for every test function $\varphi$,
 $$
 \langle F,\varphi\rangle
 =\left\langle
-\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta,
+\sum_{\multiindexsize{\alpha}\le N}c_\alpha\partial^\alpha\delta,
 \varphi
 \right\rangle.
 $$
 Hence
 $$
-\boxed{F=\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta.}
+\boxed{F=\sum_{\multiindexsize{\alpha}\le N}c_\alpha\partial^\alpha\delta.}
 $$
 
 :::

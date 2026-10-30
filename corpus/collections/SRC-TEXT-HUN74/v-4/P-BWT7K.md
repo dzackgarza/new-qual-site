@@ -118,7 +118,7 @@ $$
 The complete subgroup list of $G=S_3\times C_2$ is
 $$
 \begin{array}{c|c|c}
-|H|&H&L^H\\
+\cardinality{H}&H&L^H\\
 \hline
 1&\{1\}&L\\[2mm]
 2&\langle\epsilon\rangle&\QQ(a,\zeta)\\

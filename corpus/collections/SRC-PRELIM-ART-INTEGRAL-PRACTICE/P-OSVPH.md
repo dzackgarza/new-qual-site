@@ -45,12 +45,12 @@ $$\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \frac{\sin^3(x)}{\cos(x) \sin^2(x)} = 
 
 ::: {.pf-step #s2}
 
-$\int \tan(x) \, dx = -\ln|\cos(x)| + C$.
+$\int \tan(x) \, dx = -\ln\abs{\cos(x)} + C$.
 
 ::: pf-proof
 
 Substitute $u = \cos(x)$, so $du = -\sin(x) \, dx$:
-$$\int \frac{\sin(x)}{\cos(x)} \, dx = -\int \frac{du}{u} = -\ln|u| + C = -\ln|\cos(x)| + C.$$
+$$\int \frac{\sin(x)}{\cos(x)} \, dx = -\int \frac{du}{u} = -\ln\abs{u} + C = -\ln\abs{\cos(x)} + C.$$
 
 :::
 
@@ -59,7 +59,7 @@ $$\int \frac{\sin(x)}{\cos(x)} \, dx = -\int \frac{du}{u} = -\ln|u| + C = -\ln|\
 ::: pf-qed
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
-$$\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx = \boxed{-\ln|\cos(x)| + C} = \ln|\sec(x)| + C.$$
+$$\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx = \boxed{-\ln\abs{\cos(x)} + C} = \ln\abs{\sec(x)} + C.$$
 
 :::
 

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $g_n$ be a sequence of measurable functions on $\RR^d$, such that $|g_n(x)| \leq 1$ for all $x$, and assume that $g_n \to 0$ almost everywhere. Let $f \in L^1(\RR^d)$. Show that the sequence
+Let $g_n$ be a sequence of measurable functions on $\RR^d$, such that $\abs{g_n(x)} \leq 1$ for all $x$, and assume that $g_n \to 0$ almost everywhere. Let $f \in L^1(\RR^d)$. Show that the sequence
 $$
 f * g_n(x) = \int f(x-y) g_n(y)\,dy \to 0
 $$
@@ -36,7 +36,7 @@ K\subset\RR^d
 $$
 be compact. We prove
 $$
-\sup_{x\in K}|(f*g_n)(x)|\to0.
+\sup_{x\in K}\abs{(f*g_n)(x)}\to0.
 $$
 
 ## Approximate $f$ by a compactly supported continuous function
@@ -56,7 +56,7 @@ $$
 such that
 $$
 \boxed{
-\|f-\varphi\|_{L^1}<\frac{\varepsilon}{3}}.
+\norm{f-\varphi}_{L^1}<\frac{\varepsilon}{3}}.
 $$
 
 
@@ -73,9 +73,9 @@ The space $C_c(\RR^d)$ is dense in $L^1(\RR^d)$.
 For every $x\in\RR^d$ and every $n$,
 $$
 \boxed{
-|((f-\varphi)*g_n)(x)|
+\abs{((f-\varphi)*g_n)(x)}
 \le
-\|f-\varphi\|_{L^1}}.
+\norm{f-\varphi}_{L^1}}.
 $$
 
 
@@ -83,19 +83,19 @@ $$
 
 Since
 $$
-|g_n|\le1,
+\abs{g_n}\le1,
 $$
 $$
 \begin{aligned}
-|((f-\varphi)*g_n)(x)|
+\abs{((f-\varphi)*g_n)(x)}
 &\le
 \int_{\RR^d}
-|f(x-y)-\varphi(x-y)|\,|g_n(y)|\,dy\\
+\abs{f(x-y)-\varphi(x-y)}\,\abs{g_n(y)}\,dy\\
 &\le
 \int_{\RR^d}
-|f(x-y)-\varphi(x-y)|\,dy\\
+\abs{f(x-y)-\varphi(x-y)}\,dy\\
 &=
-\|f-\varphi\|_1.
+\norm{f-\varphi}_1.
 \end{aligned}
 $$
 
@@ -109,7 +109,7 @@ Hence
 $$
 \boxed{
 \sup_{x\in\RR^d}
-|((f-\varphi)*g_n)(x)|
+\abs{((f-\varphi)*g_n)(x)}
 <
 \frac{\varepsilon}{3}}
 $$
@@ -150,15 +150,15 @@ for almost every $y$, while $\varphi(x-y)$ is fixed.
 The integrands satisfy
 $$
 \boxed{
-|\varphi(x-y)g_n(y)|
+\abs{\varphi(x-y)g_n(y)}
 \le
-|\varphi(x-y)|}.
+\abs{\varphi(x-y)}}.
 $$
 
 
 ::: pf-proof
 
-Use $|g_n(y)|\le1$.
+Use $\abs{g_n(y)}\le1$.
 
 :::
 
@@ -168,7 +168,7 @@ Use $|g_n(y)|\le1$.
 
 The dominating function
 $$
-y\mapsto|\varphi(x-y)|
+y\mapsto\abs{\varphi(x-y)}
 $$
 is integrable.
 
@@ -177,9 +177,9 @@ is integrable.
 
 Translation preserves the $L^1$-norm:
 $$
-\int |\varphi(x-y)|\,dy
+\int \abs{\varphi(x-y)}\,dy
 =
-\|\varphi\|_1<\infty.
+\norm{\varphi}_1<\infty.
 $$
 
 :::
@@ -209,10 +209,10 @@ Apply the dominated convergence theorem using steps [](#s1-4){.pf-ref} through [
 For $x,x'\in\RR^d$,
 $$
 \begin{aligned}
-|(\varphi*g_n)(x)-(\varphi*g_n)(x')|
+\abs{(\varphi*g_n)(x)-(\varphi*g_n)(x')}
 \le
 \int
-|\varphi(x-y)-\varphi(x'-y)|\,dy.
+\abs{\varphi(x-y)-\varphi(x'-y)}\,dy.
 \end{aligned}
 $$
 
@@ -221,7 +221,7 @@ $$
 
 Subtract the two convolution integrals and use
 $$
-|g_n(y)|\le1.
+\abs{g_n(y)}\le1.
 $$
 
 :::
@@ -233,7 +233,7 @@ $$
 The right-hand side is
 $$
 \boxed{
-\|\tau_x\varphi-\tau_{x'}\varphi\|_{L^1}},
+\norm{\tau_x\varphi-\tau_{x'}\varphi}_{L^1}},
 $$
 where
 $$
@@ -254,7 +254,7 @@ This is exactly the definition of the displayed $L^1$-norm.
 As $x'\to x$,
 $$
 \boxed{
-\|\tau_x\varphi-\tau_{x'}\varphi\|_{L^1}\to0}.
+\norm{\tau_x\varphi-\tau_{x'}\varphi}_{L^1}\to0}.
 $$
 
 
@@ -287,12 +287,12 @@ Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give a bound on the increme
 
 By equicontinuity, choose $\delta>0$ such that
 $$
-|x-x'|<\delta
+\norm{x-x'}<\delta
 $$
 implies
 $$
 \boxed{
-|(\varphi*g_n)(x)-(\varphi*g_n)(x')|
+\abs{(\varphi*g_n)(x)-(\varphi*g_n)(x')}
 <
 \frac{\varepsilon}{3}}
 $$
@@ -352,7 +352,7 @@ $$
 $$
 $$
 \boxed{
-|(\varphi*g_n)(x_j)|
+\abs{(\varphi*g_n)(x_j)}
 <
 \frac{\varepsilon}{3}}.
 $$
@@ -370,11 +370,11 @@ There are only finitely many points $x_j$. Choose $N$ larger than all individual
 
 Let $x\in K$ and $n\ge N$. Choose $j$ with
 $$
-|x-x_j|<\delta.
+\norm{x-x_j}<\delta.
 $$
 Then
 $$
-|(\varphi*g_n)(x)|
+\abs{(\varphi*g_n)(x)}
 <
 \frac{2\varepsilon}{3}.
 $$
@@ -385,11 +385,11 @@ $$
 By the triangle inequality,
 $$
 \begin{aligned}
-|(\varphi*g_n)(x)|
+\abs{(\varphi*g_n)(x)}
 &\le
-|(\varphi*g_n)(x)-(\varphi*g_n)(x_j)|
+\abs{(\varphi*g_n)(x)-(\varphi*g_n)(x_j)}
 +
-|(\varphi*g_n)(x_j)|\\
+\abs{(\varphi*g_n)(x_j)}\\
 &<
 \frac{\varepsilon}{3}
 +
@@ -409,7 +409,7 @@ using steps [](#s1-12){.pf-ref} and [](#s1-15){.pf-ref}.
 Therefore
 $$
 \boxed{
-\sup_{x\in K}|(\varphi*g_n)(x)|
+\sup_{x\in K}\abs{(\varphi*g_n)(x)}
 <
 \frac{2\varepsilon}{3}}
 $$
@@ -428,11 +428,11 @@ The bound in step [](#s1-16){.pf-ref} holds for every $x\in K$.
 
 For $n\ge N$ and $x\in K$,
 $$
-|f*g_n(x)|
+\abs{f*g_n(x)}
 \le
-|((f-\varphi)*g_n)(x)|
+\abs{((f-\varphi)*g_n)(x)}
 +
-|(\varphi*g_n)(x)|.
+\abs{(\varphi*g_n)(x)}.
 $$
 
 
@@ -454,7 +454,7 @@ $$
 Hence, for $n\ge N$,
 $$
 \boxed{
-\sup_{x\in K}|f*g_n(x)|<\varepsilon}.
+\sup_{x\in K}\abs{f*g_n(x)}<\varepsilon}.
 $$
 
 

@@ -32,7 +32,7 @@ Measure arrival times $X,Y$ in minutes after 2:00, and assume they are independe
 
 The two people meet exactly when
 $$
-|X-Y|\leq10.
+\abs{X-Y}\leq10.
 $$
 
 
@@ -74,7 +74,7 @@ Each triangle has legs of length $50$ and area $1250$.
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, failure is $|X-Y|>10$. The two components lie above $Y=X+10$ and below $Y=X-10$. Each is a right triangle with vertices separated by $60-10=50$ along the two coordinate directions, hence has area $50^2/2=1250$.
+By step [](#s1-1){.pf-ref}, failure is $\abs{X-Y}>10$. The two components lie above $Y=X+10$ and below $Y=X-10$. Each is a right triangle with vertices separated by $60-10=50$ along the two coordinate directions, hence has area $50^2/2=1250$.
 
 :::
 

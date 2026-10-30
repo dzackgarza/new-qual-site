@@ -25,7 +25,7 @@ Show that $f$ is constant.
 
 Choose $M<\infty$ such that
 $$
-|f(z)|\le M
+\abs{f(z)}\le M
 \qquad
 (z\in\CC\setminus E).
 $$
@@ -67,7 +67,7 @@ E\subset\bigcup_{j=1}^N I_j,
 \qquad
 a_j,b_j\notin E,
 \qquad
-\sum_{j=1}^N|I_j|<\varepsilon.
+\sum_{j=1}^N\setmeasure{I_j}<\varepsilon.
 $$
 
 
@@ -100,7 +100,7 @@ Q_j
 $$
 with
 $$
-0<\eta_j\le |I_j|,
+0<\eta_j\le \setmeasure{I_j},
 $$
 such that the rectangles are pairwise disjoint and
 $$
@@ -110,13 +110,13 @@ Moreover,
 $$
 \sum_{j=1}^N\operatorname{per}(Q_j)
 \le
-6\sum_{j=1}^N|I_j|.
+6\sum_{j=1}^N\setmeasure{I_j}.
 $$
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, the finitely many interval closures are pairwise disjoint, so their mutual distances are positive. Choose each $\eta_j>0$ small enough that the rectangles remain disjoint and also $\eta_j\le|I_j|$.
+By step [](#s1-2){.pf-ref}, the finitely many interval closures are pairwise disjoint, so their mutual distances are positive. Choose each $\eta_j>0$ small enough that the rectangles remain disjoint and also $\eta_j\le\setmeasure{I_j}$.
 
 The horizontal sides have nonzero imaginary part and therefore miss $E\subset\RR$. The vertical sides meet the real axis only at $a_j$ and $b_j$, which lie outside $E$ by step [](#s1-2){.pf-ref}. Hence $\partial Q_j\cap E=\varnothing$.
 
@@ -124,9 +124,9 @@ Finally,
 $$
 \operatorname{per}(Q_j)
 =
-2|I_j|+4\eta_j
+2\setmeasure{I_j}+4\eta_j
 \le
-6|I_j|.
+6\setmeasure{I_j}.
 $$
 Summing gives the estimate.
 
@@ -136,20 +136,20 @@ Summing gives the estimate.
 
 ::: {.pf-step #s1-4}
 
-Fix $R>2$ and define, for $|z|<R$,
+Fix $R>2$ and define, for $\abs{z}<R$,
 $$
 F_R(z)
 \coloneqq
 \frac1{2\pi i}
-\int_{|\zeta|=R}
+\int_{\abs{\zeta}=R}
 \frac{f(\zeta)}{\zeta-z}\,d\zeta.
 $$
-Then $F_R$ is holomorphic on the disk $|z|<R$.
+Then $F_R$ is holomorphic on the disk $\abs{z}<R$.
 
 
 ::: pf-proof
 
-The circle $|\zeta|=R$ is disjoint from $E\subset[0,1]$, so $f$ is holomorphic in a neighborhood of that circle. For $|z|<R$, the Cauchy kernel is holomorphic in $z$ and uniformly bounded on compact subsets of the disk. Differentiation under the contour integral therefore shows that $F_R$ is holomorphic.
+The circle $\abs{\zeta}=R$ is disjoint from $E\subset[0,1]$, so $f$ is holomorphic in a neighborhood of that circle. For $\abs{z}<R$, the Cauchy kernel is holomorphic in $z$ and uniformly bounded on compact subsets of the disk. Differentiation under the contour integral therefore shows that $F_R$ is holomorphic.
 
 :::
 
@@ -214,7 +214,7 @@ $$
 $$
 is holomorphic on $\Omega\setminus\{z\}$ and on a neighborhood of every boundary component, because all boundaries avoid $E$.
 
-Apply the Cauchy integral formula on the multiply connected domain $\Omega$. The positively oriented outer boundary is $|\zeta|=R$, while the boundary components of the holes occur with negative orientation relative to $\Omega$. Rewriting the latter with their own positive orientations gives exactly the displayed formula.
+Apply the Cauchy integral formula on the multiply connected domain $\Omega$. The positively oriented outer boundary is $\abs{\zeta}=R$, while the boundary components of the holes occur with negative orientation relative to $\Omega$. Rewriting the latter with their own positive orientations gives exactly the displayed formula.
 
 :::
 
@@ -229,19 +229,19 @@ The inner-boundary term in step [](#s1-6){.pf-ref} can be made arbitrarily small
 
 For $\zeta\in Q_j$, step [](#s1-5){.pf-ref} gives
 $$
-|\zeta-z|
+\abs{\zeta-z}
 \ge
 d/2.
 $$
 Hence
 $$
 \begin{aligned}
-\left|
+\abs{
 \frac1{2\pi i}
 \sum_{j=1}^N
 \int_{\partial Q_j}
 \frac{f(\zeta)}{\zeta-z}\,d\zeta
-\right|
+}
 &\le
 \frac1{2\pi}
 \frac{2M}{d}
@@ -249,7 +249,7 @@ $$
 \operatorname{per}(Q_j)\\
 &\le
 \frac{6M}{\pi d}
-\sum_{j=1}^N|I_j|.
+\sum_{j=1}^N\setmeasure{I_j}.
 \end{aligned}
 $$
 By step [](#s1-2){.pf-ref}, the final sum can be made smaller than any prescribed $\varepsilon>0$.
@@ -310,19 +310,19 @@ $$
 \widetilde f(z)
 =
 \begin{cases}
-F_R(z),&|z|<R,\\
-f(z),&|z|>1.
+F_R(z),&\abs{z}<R,\\
+f(z),&\abs{z}>1.
 \end{cases}
 $$
 On the overlap
 $$
-1<|z|<R,
+1<\abs{z}<R,
 $$
 the two definitions agree by step [](#s1-8){.pf-ref}, so they glue to an entire function on $\CC$.
 
 Off $E$, this extension equals the original function and therefore has modulus at most $M$. Since $\CC\setminus E$ is dense and the extension is continuous, the same bound holds on $E$. Hence
 $$
-|\widetilde f(z)|\le M
+\abs{\widetilde f(z)}\le M
 $$
 for every $z\in\CC$.
 

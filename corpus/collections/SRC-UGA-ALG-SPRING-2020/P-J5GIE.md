@@ -44,7 +44,7 @@ An $R$-module $F$ is free if it has an $R$-basis, equivalently if it is isomorph
 An $R$-module $F$ is called **free** if it satisfies any of the following equivalent conditions:
 1. $F$ possesses an $R$-basis: a subset $B \subseteq F$ such that every element $m \in F$ can be expressed uniquely as a finite $R$-linear combination $m = \sum_{b \in B} r_b b$ with coefficients $r_b \in R$.
 2. $F$ is isomorphic to a direct sum of copies of the regular module $R$: $F \cong \bigoplus_{b \in B} R$.
-3. Universal property of free modules: There exists a subset $B \subseteq F$ such that for every $R$-module $Y$ and every set map $f: B \to Y$, there exists a unique $R$-module homomorphism $\tilde{f}: F \to Y$ such that $\tilde{f}|_B = f$.
+3. Universal property of free modules: There exists a subset $B \subseteq F$ such that for every $R$-module $Y$ and every set map $f: B \to Y$, there exists a unique $R$-module homomorphism $\tilde{f}: F \to Y$ such that $\tilde{f}\restrict_B = f$.
 
 :::
 

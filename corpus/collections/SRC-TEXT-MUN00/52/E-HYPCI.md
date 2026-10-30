@@ -34,7 +34,7 @@ A subset $A$ of $\RR^n$ is said to be star convex if for some point $a_0$ of $A$
 ::: {.solution}
 (a) For example,
 $$
-A=\{(x,y)\in\RR^2:0\le x\le1,\ |y|\le x\}\cup\{(x,0):1\le x\le2\}
+A=\{(x,y)\in\RR^2:0\le x\le1,\ \abs{y}\le x\}\cup\{(x,0):1\le x\le2\}
 $$
 is star convex with respect to $(0,0)$: every radial segment from the origin to a point of $A$ stays in $A$. It is not convex, since $(1,1),(2,0)\in A$ but their midpoint $(3/2,1/2)\notin A$.
 

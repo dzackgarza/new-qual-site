@@ -44,7 +44,7 @@ x_n\to x_0
 $$
 such that
 $$
-|f(x_n)-f(x_0)|\ge\varepsilon
+\abs{f(x_n)-f(x_0)}\ge\varepsilon
 $$
 for every $n$.
 
@@ -73,7 +73,7 @@ $$
 
 For each $n$, the inequality
 $$
-|f(x_n)-f(x_0)|\ge\varepsilon
+\abs{f(x_n)-f(x_0)}\ge\varepsilon
 $$
 places $f(x_n)$ in one of the two displayed regions.
 At least one of these two alternatives occurs infinitely often.
@@ -134,9 +134,9 @@ The sequence $(z_n)$ converges to $x_0$.
 
 Because $z_n$ lies between $x_0$ and $x_n$,
 $$
-|z_n-x_0|
+\abs{z_n-x_0}
 \le
-|x_n-x_0|.
+\abs{x_n-x_0}.
 $$
 Since
 $$

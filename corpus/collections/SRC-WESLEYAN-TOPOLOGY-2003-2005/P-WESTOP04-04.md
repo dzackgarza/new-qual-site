@@ -55,7 +55,7 @@ p^{-1}(U)
 $$
 is a disjoint union of open subsets of $E$, and each restriction
 $$
-p|_{V_\alpha}:V_\alpha\longrightarrow U
+p\restrict_{V_\alpha}:V_\alpha\longrightarrow U
 $$
 is a homeomorphism.
 

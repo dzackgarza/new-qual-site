@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF24F
 kind: problem
-title: 'Meromorphic function with poles in the disc and $|f-1|\le 1/|z|^2$ outside'
+title: 'Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside'
 classification:
   areas:
   - complex-analysis
@@ -20,7 +20,7 @@ Assume that
 
 - the poles of $f$ are in the unit disc $\DD$,
 
-- $|f(z) - 1| \le \dfrac{1}{|z|^2}$ for all $|z| \ge 1$.
+- $\abs{f(z) - 1} \le \dfrac{1}{\abs{z}^2}$ for all $\abs{z} \ge 1$.
 
 (i) Show that $f$ is a rational function.
 
@@ -33,9 +33,9 @@ at a pole.
 
 (i) The estimate
 $$
-|f(z)-1|\le |z|^{-2}
+\abs{f(z)-1}\le \abs{z}^{-2}
 $$
-for $|z|\ge1$ shows that $f$ is holomorphic near $\infty$ with
+for $\abs{z}\ge1$ shows that $f$ is holomorphic near $\infty$ with
 $$
 f(\infty)=1.
 $$

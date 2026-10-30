@@ -19,16 +19,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $g$ be analytic for $|z|\leq 1$ and $|g(z)| < 1$ for $|z| = 1$.
+Let $g$ be analytic for $\abs{z}\leq 1$ and $\abs{g(z)} < 1$ for $\abs{z} = 1$.
 
-(a) Show that $g$ has a unique fixed point in $|z| < 1$.
+(a) Show that $g$ has a unique fixed point in $\abs{z} < 1$.
 
-(b) What happens if we replace $|g(z)| < 1$ with $|g(z)|\leq 1$ for $|z|=1$?
+(b) What happens if we replace $\abs{g(z)} < 1$ with $\abs{g(z)}\leq 1$ for $\abs{z}=1$?
 Give an example if (a) is not true or give a proof if (a) is still true.
 
-(c) What happens if we simply assume that $f$ is analytic for $|z| < 1$ and $|f(z)| < 1$ for $|z| < 1$?
+(c) What happens if we simply assume that $f$ is analytic for $\abs{z} < 1$ and $\abs{f(z)} < 1$ for $\abs{z} < 1$?
 Suppose that $f(z)     \not\equiv  z$.
-Can $f$ have more than one fixed point in $|z| < 1$?
+Can $f$ have more than one fixed point in $\abs{z} < 1$?
 :::
 
 ::: {.hint}

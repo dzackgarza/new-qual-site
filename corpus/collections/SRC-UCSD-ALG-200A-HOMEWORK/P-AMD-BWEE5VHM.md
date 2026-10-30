@@ -36,14 +36,14 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group with
 $$
-|G|=pqr,
+\cardinality{G}=pqr,
 $$
 where $p<q<r$ are distinct primes.
 Prove that $G$ has at least one normal Sylow subgroup.
 :::
 
 ::: {.solution}
-For a prime $\ell\mid |G|$, write $n_\ell$ for the number of Sylow $\ell$-subgroups of $G$.
+For a prime $\ell\mid \cardinality{G}$, write $n_\ell$ for the number of Sylow $\ell$-subgroups of $G$.
 
 ::: pf
 
@@ -103,7 +103,7 @@ Exactly $pq(r-1)$ elements of $G$ are nonidentity elements of Sylow $r$-subgroup
 
 ::: pf-proof
 
-Since $r$ occurs to the first power in $|G|=pqr$, every Sylow $r$-subgroup has order $r$.
+Since $r$ occurs to the first power in $\cardinality{G}=pqr$, every Sylow $r$-subgroup has order $r$.
 Two distinct subgroups of order $r$ intersect trivially: their intersection has order dividing the prime $r$, and a nontrivial intersection would force the two subgroups to be equal.
 Therefore the $pq$ Sylow $r$-subgroups have pairwise disjoint sets of nonidentity elements.
 Each contributes $r-1$ such elements, giving
@@ -124,7 +124,7 @@ There are exactly $pq$ elements of $G$ outside those nonidentity Sylow $r$-eleme
 
 By step [](#s3){.pf-ref}, their number is
 $$
-|G|-pq(r-1)
+\cardinality{G}-pq(r-1)
 =pqr-pq(r-1)
 =pq.
 $$

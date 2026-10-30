@@ -161,13 +161,13 @@ g(x)=e^{-x^2}-e^{-x^4}
 $$
 satisfies
 $$
-|g(x)|<1
+\abs{g(x)}<1
 $$
 for every $x\in\RR$, and
 $$
 g(x)\to0
 $$
-as $|x|\to\infty$.
+as $\abs{x}\to\infty$.
 
 ::: pf-proof
 
@@ -177,7 +177,7 @@ $$
 \qquad\text{and}\qquad
 0<e^{-x^4}\le1.
 $$
-The difference of two numbers in $(0,1]$ has absolute value strictly less than $1$. Also both exponentials tend to $0$ as $|x|\to\infty$, so their difference does as well.
+The difference of two numbers in $(0,1]$ has absolute value strictly less than $1$. Also both exponentials tend to $0$ as $\abs{x}\to\infty$, so their difference does as well.
 
 :::
 
@@ -191,7 +191,7 @@ $$
 $$
 such that
 $$
-|f'(x)|\le\lambda
+\abs{f'(x)}\le\lambda
 $$
 for every $x\in\RR$.
 
@@ -199,9 +199,9 @@ for every $x\in\RR$.
 
 By step [](#p2-s5){.pf-ref}, choose $R>0$ such that
 $$
-|g(x)|<\frac12
+\abs{g(x)}<\frac12
 $$
-whenever $|x|>R$. On the compact interval $[-R,R]$, the continuous function $|g|$ attains a maximum $M$. Step [](#p2-s5){.pf-ref} gives
+whenever $\abs{x}>R$. On the compact interval $[-R,R]$, the continuous function $\abs{g}$ attains a maximum $M$. Step [](#p2-s5){.pf-ref} gives
 $$
 M<1.
 $$
@@ -211,7 +211,7 @@ $$
 $$
 Then $0<\lambda<1$ and
 $$
-|f'(x)|=|g(x)|\le\lambda
+\abs{f'(x)}=\abs{g(x)}\le\lambda
 $$
 for every $x\in\RR$.
 
@@ -235,9 +235,9 @@ f(x)-f(y)=f'(\xi)(x-y).
 $$
 Using step [](#p2-s6){.pf-ref},
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
-\lambda|x-y|.
+\lambda\abs{x-y}.
 $$
 The same inequality is trivial when $x=y$.
 

@@ -19,7 +19,7 @@ audit:
 Let $\mu$ be a finite Borel measure on $\RR^d$.
 For $t>0$ set
 $$
-S_t=\{x\in\RR^d:|x|=t\}.
+S_t=\{x\in\RR^d:\norm{x}=t\}.
 $$
 Prove that
 $$
@@ -47,7 +47,7 @@ For distinct $s,t>0$, the spheres $S_s$ and $S_t$ are disjoint.
 
 ::: pf-proof
 
-If $x\in S_s\cap S_t$, then $|x|=s$ and $|x|=t$, hence $s=t$. Thus distinct radii give disjoint spheres.
+If $x\in S_s\cap S_t$, then $\norm{x}=s$ and $\norm{x}=t$, hence $s=t$. Thus distinct radii give disjoint spheres.
 
 :::
 

@@ -19,18 +19,18 @@ audit:
 For a real $n\times n$ matrix $A$, let $T_A:\RR^n\to\RR^n$ be the associated linear map.
 Use the operator norm
 $$
-\|A\|=\sup_{\|x\|_2=1}\|T_Ax\|_2,
+\norm{A}=\sup_{\norm{x}_2=1}\norm{T_Ax}_2,
 $$
-where $\|\cdot\|_2$ is the Euclidean norm.
+where $\norm{\cdot}_2$ is the Euclidean norm.
 
 (a) Prove that
 $$
-\|A+B\|\leq\|A\|+\|B\|.
+\norm{A+B}\leq\norm{A}+\norm{B}.
 $$
 
 (b) Use part (a) to check that the set $M$ of all real $n\times n$ matrices is a metric space for
 $$
-d(A,B)=\|B-A\|.
+d(A,B)=\norm{B-A}.
 $$
 
 (c) Prove that $M$ is complete for this metric.
@@ -46,7 +46,7 @@ Suggestion: the $(i,j)$ entry of $A$ is $\langle T_Ae_j,e_i\rangle$, where $e_i$
 
 For every matrix $A$ and every $x\in\RR^n$,
 $$
-\|T_Ax\|_2\le \|A\|\,\|x\|_2.
+\norm{T_Ax}_2\le \norm{A}\,\norm{x}_2.
 $$
 
 
@@ -54,19 +54,19 @@ $$
 
 If $x=0$, the inequality is immediate. If $x\ne0$, write
 $$
-u=\frac{x}{\|x\|_2}.
+u=\frac{x}{\norm{x}_2}.
 $$
-Then $\|u\|_2=1$, so by the definition of the operator norm,
+Then $\norm{u}_2=1$, so by the definition of the operator norm,
 $$
-\|T_Au\|_2\le\|A\|.
+\norm{T_Au}_2\le\norm{A}.
 $$
 Therefore
 $$
-\|T_Ax\|_2
+\norm{T_Ax}_2
 =
-\|x\|_2\|T_Au\|_2
+\norm{x}_2\norm{T_Au}_2
 \le
-\|A\|\,\|x\|_2.
+\norm{A}\,\norm{x}_2.
 $$
 
 :::
@@ -77,22 +77,22 @@ $$
 
 For all real $n\times n$ matrices $A,B$,
 $$
-\boxed{\|A+B\|\le\|A\|+\|B\|}.
+\boxed{\norm{A+B}\le\norm{A}+\norm{B}}.
 $$
 
 
 ::: pf-proof
 
-If $\|x\|_2=1$, then
+If $\norm{x}_2=1$, then
 $$
 \begin{aligned}
-\|T_{A+B}x\|_2
+\norm{T_{A+B}x}_2
 &=
-\|T_Ax+T_Bx\|_2\\
+\norm{T_Ax+T_Bx}_2\\
 &\le
-\|T_Ax\|_2+\|T_Bx\|_2\\
+\norm{T_Ax}_2+\norm{T_Bx}_2\\
 &\le
-\|A\|+\|B\|
+\norm{A}+\norm{B}
 \end{aligned}
 $$
 by step [](#s1-1){.pf-ref}. Taking the supremum over all unit vectors $x$ proves the inequality.
@@ -105,12 +105,12 @@ by step [](#s1-1){.pf-ref}. Taking the supremum over all unit vectors $x$ proves
 
 The operator norm satisfies
 $$
-\|A\|\ge0,\qquad
-\|-A\|=\|A\|,
+\norm{A}\ge0,\qquad
+\norm{-A}=\norm{A},
 $$
 and
 $$
-\|A\|=0\Longleftrightarrow A=0.
+\norm{A}=0\Longleftrightarrow A=0.
 $$
 
 
@@ -118,15 +118,15 @@ $$
 
 Nonnegativity is immediate from the definition. Also
 $$
-\|-A\|
+\norm{-A}
 =
-\sup_{\|x\|_2=1}\|-T_Ax\|_2
+\sup_{\norm{x}_2=1}\norm{-T_Ax}_2
 =
-\|A\|.
+\norm{A}.
 $$
-If $A=0$, then $\|A\|=0$. Conversely, if $\|A\|=0$, then step [](#s1-1){.pf-ref} gives
+If $A=0$, then $\norm{A}=0$. Conversely, if $\norm{A}=0$, then step [](#s1-1){.pf-ref} gives
 $$
-\|T_Ax\|_2=0
+\norm{T_Ax}_2=0
 $$
 for every $x$, so $T_A=0$ and hence $A=0$.
 
@@ -138,7 +138,7 @@ for every $x$, so $T_A=0$ and hence $A=0$.
 
 The function
 $$
-d(A,B)=\|B-A\|
+d(A,B)=\norm{B-A}
 $$
 is a metric on the vector space $M$ of real $n\times n$ matrices.
 
@@ -161,9 +161,9 @@ Also
 $$
 d(A,B)
 =
-\|B-A\|
+\norm{B-A}
 =
-\|A-B\|
+\norm{A-B}
 =
 d(B,A)
 $$
@@ -172,11 +172,11 @@ $$
 \begin{aligned}
 d(A,C)
 &=
-\|C-A\|\\
+\norm{C-A}\\
 &=
-\|(C-B)+(B-A)\|\\
+\norm{(C-B)+(B-A)}\\
 &\le
-\|C-B\|+\|B-A\|\\
+\norm{C-B}+\norm{B-A}\\
 &=
 d(B,C)+d(A,B).
 \end{aligned}
@@ -211,11 +211,11 @@ $$
 By Cauchy--Schwarz and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
-|a_{ij}^{(k)}-a_{ij}^{(\ell)}|
+\abs{a_{ij}^{(k)}-a_{ij}^{(\ell)}}
 &\le
-\|T_{A_k-A_\ell}e_j\|_2\|e_i\|_2\\
+\norm{T_{A_k-A_\ell}e_j}_2\norm{e_i}_2\\
 &\le
-\|A_k-A_\ell\|.
+\norm{A_k-A_\ell}.
 \end{aligned}
 $$
 The right side tends to zero as $k,\ell\to\infty$, because $(A_k)$ is Cauchy.
@@ -249,7 +249,7 @@ By step [](#s1-5){.pf-ref}, each entry sequence is Cauchy in the complete space 
 
 One has
 $$
-\|A_k-A\|\longrightarrow0.
+\norm{A_k-A}\longrightarrow0.
 $$
 
 
@@ -265,26 +265,26 @@ $$
 $$
 By Cauchy--Schwarz,
 $$
-|(C_kx)_i|^2
+\abs{(C_kx)_i}^2
 \le
-\left(\sum_{j=1}^n|c_{ij}^{(k)}|^2\right)
-\left(\sum_{j=1}^n|x_j|^2\right)
+\left(\sum_{j=1}^n\abs{c_{ij}^{(k)}}^2\right)
+\left(\sum_{j=1}^n\abs{x_j}^2\right)
 =
-\sum_{j=1}^n|c_{ij}^{(k)}|^2.
+\sum_{j=1}^n\abs{c_{ij}^{(k)}}^2.
 $$
 Summing over $i$ gives
 $$
-\|C_kx\|_2^2
+\norm{C_kx}_2^2
 \le
-\sum_{i,j=1}^n|c_{ij}^{(k)}|^2.
+\sum_{i,j=1}^n\abs{c_{ij}^{(k)}}^2.
 $$
 Hence
 $$
-\|C_k\|
+\norm{C_k}
 \le
-\left(\sum_{i,j=1}^n|c_{ij}^{(k)}|^2\right)^{1/2}.
+\left(\sum_{i,j=1}^n\abs{c_{ij}^{(k)}}^2\right)^{1/2}.
 $$
-By step [](#s1-6){.pf-ref}, every entry $c_{ij}^{(k)}$ tends to zero. Since the sum has only finitely many terms, its square root tends to zero. Therefore $\|A_k-A\|\to0$.
+By step [](#s1-6){.pf-ref}, every entry $c_{ij}^{(k)}$ tends to zero. Since the sum has only finitely many terms, its square root tends to zero. Therefore $\norm{A_k-A}\to0$.
 
 :::
 
@@ -299,7 +299,7 @@ The metric space $(M,d)$ is complete.
 
 Let $(A_k)$ be any Cauchy sequence in $M$. Step [](#s1-6){.pf-ref} constructs a matrix $A\in M$, and step [](#s1-7){.pf-ref} proves
 $$
-d(A_k,A)=\|A-A_k\|\to0.
+d(A_k,A)=\norm{A-A_k}\to0.
 $$
 Thus every Cauchy sequence converges in $M$.
 

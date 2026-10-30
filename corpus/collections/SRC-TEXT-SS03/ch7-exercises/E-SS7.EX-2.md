@@ -48,7 +48,7 @@ Here $d ( n )$ equals the number of divisors of $n _ { \mathrm { : } }$ , and $\
 For $\operatorname{Re}(s) > 1$, both series $\sum_m \frac{a_m}{m^s}$ and $\sum_k \frac{b_k}{k^s}$ converge absolutely.
 
 ::: pf-proof
-$|a_m|, |b_k|$ are bounded, and $\sum \frac{1}{n^{\operatorname{Re} s}}$ converges for $\operatorname{Re} s > 1$.
+$\abs{a_m}, \abs{b_k}$ are bounded, and $\sum \frac{1}{n^{\operatorname{Re} s}}$ converges for $\operatorname{Re} s > 1$.
 :::
 
 :::

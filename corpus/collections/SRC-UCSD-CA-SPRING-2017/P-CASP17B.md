@@ -31,11 +31,11 @@ g(z)=f(z)f(1/z)
 $$
 is bounded near $z=0$ and $f(z)\sim h(0)z^m$, we obtain
 $$
-|f(1/z)|=O(|z|^{-m})\qquad(z\to0).
+\abs{f(1/z)}=O(\abs{z}^{-m})\qquad(z\to0).
 $$
 Equivalently,
 $$
-|f(w)|=O(|w|^m)\qquad(|w|\to\infty).
+\abs{f(w)}=O(\abs{w}^m)\qquad(\abs{w}\to\infty).
 $$
 Cauchy's estimates then imply that $f$ is a polynomial of degree at most $m$.
 Since its zero at $0$ has order exactly $m$, it must be

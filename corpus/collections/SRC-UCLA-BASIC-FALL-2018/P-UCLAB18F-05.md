@@ -17,15 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $B=\{x\in\RR^n:|x|\le1\}$ and let $g:\partial B\to\RR$ be $1$-Lipschitz.
+Let $B=\{x\in\RR^n:\norm{x}\le1\}$ and let $g:\partial B\to\RR$ be $1$-Lipschitz.
 
 (a) Show that
 $$
-f(x)=\inf_{y\in\partial B}\bigl(g(y)+|x-y|\bigr)
+f(x)=\inf_{y\in\partial B}\bigl(g(y)+\norm{x-y}\bigr)
 $$
 is $1$-Lipschitz on $B$.
 
-(b) Let $M(g)$ be the set of all $1$-Lipschitz $h:B\to\RR$ satisfying $h|_{\partial B}=g$.
+(b) Let $M(g)$ be the set of all $1$-Lipschitz $h:B\to\RR$ satisfying $h\restrict_{\partial B}=g$.
 Show that $M(g)$ is compact in $C(B)$ with the supremum norm.
 :::
 
@@ -36,7 +36,7 @@ $$
 f(x)
 =
 \inf_{y\in\partial B}
-\bigl(g(y)+|x-y|\bigr).
+\bigl(g(y)+\norm{x-y}\bigr).
 $$
 
 ::: pf
@@ -55,14 +55,14 @@ M>0
 $$
 such that
 $$
-|g(y)|\le M
+\abs{g(y)}\le M
 $$
 for every $y\in\partial B$.
 For $x\in B$ and $y\in\partial B$,
 $$
 -M
 \le
-g(y)+|x-y|
+g(y)+\norm{x-y}
 \le
 M+2.
 $$
@@ -76,7 +76,7 @@ Hence the infimum is a finite real number.
 
 For all $x,z\in B$,
 $$
-f(x)\le f(z)+|x-z|.
+f(x)\le f(z)+\norm{x-z}.
 $$
 
 
@@ -84,23 +84,23 @@ $$
 
 For every $y\in\partial B$, the triangle inequality gives
 $$
-|x-y|
+\norm{x-y}
 \le
-|x-z|+|z-y|.
+\norm{x-z}+\norm{z-y}.
 $$
 Therefore
 $$
-g(y)+|x-y|
+g(y)+\norm{x-y}
 \le
-|x-z|
+\norm{x-z}
 +
-g(y)+|z-y|.
+g(y)+\norm{z-y}.
 $$
 Taking the infimum over $y\in\partial B$ gives
 $$
 f(x)
 \le
-|x-z|+f(z).
+\norm{x-z}+f(z).
 $$
 
 :::
@@ -116,15 +116,15 @@ The function $f$ is $1$-Lipschitz on $B$.
 
 Step [](#p1-s1-2){.pf-ref} gives
 $$
-f(x)-f(z)\le |x-z|.
+f(x)-f(z)\le \norm{x-z}.
 $$
 Interchanging $x$ and $z$ gives
 $$
-f(z)-f(x)\le |x-z|.
+f(z)-f(x)\le \norm{x-z}.
 $$
 Hence
 $$
-\boxed{|f(x)-f(z)|\le |x-z|}.
+\boxed{\abs{f(x)-f(z)}\le \norm{x-z}}.
 $$
 
 :::
@@ -148,7 +148,7 @@ $$
 
 Conversely, since $g$ is $1$-Lipschitz,
 $$
-g(x)\le g(y)+|x-y|
+g(x)\le g(y)+\norm{x-y}
 $$
 for every $y\in\partial B$.
 Taking the infimum over $y$ gives
@@ -195,9 +195,9 @@ $$
 is $1$-Lipschitz.
 Thus for all $x,z\in B$,
 $$
-|h(x)-h(z)|
+\abs{h(x)-h(z)}
 \le
-|x-z|,
+\norm{x-z},
 $$
 with the same modulus of continuity for every $h$.
 
@@ -219,13 +219,13 @@ $$
 For every $h\in M(g)$ and every $x\in B$,
 $$
 \begin{aligned}
-|h(x)|
+\abs{h(x)}
 &\le
-|h(x)-h(y_0)|+|h(y_0)|\\
+\abs{h(x)-h(y_0)}+\abs{h(y_0)}\\
 &\le
-|x-y_0|+|g(y_0)|\\
+\norm{x-y_0}+\abs{g(y_0)}\\
 &\le
-2+|g(y_0)|.
+2+\abs{g(y_0)}.
 \end{aligned}
 $$
 Thus a single bound works for all $h\in M(g)$ and all $x\in B$.
@@ -247,21 +247,21 @@ h_n\in M(g)
 $$
 and suppose
 $$
-\|h_n-h\|_\infty\to0
+\norm{h_n-h}_\infty\to0
 $$
 for some $h\in C(B)$.
 
 For $x,z\in B$,
 $$
-|h_n(x)-h_n(z)|
+\abs{h_n(x)-h_n(z)}
 \le
-|x-z|.
+\norm{x-z}.
 $$
 Passing to the limit gives
 $$
-|h(x)-h(z)|
+\abs{h(x)-h(z)}
 \le
-|x-z|.
+\norm{x-z}.
 $$
 Thus $h$ is $1$-Lipschitz.
 
@@ -293,7 +293,7 @@ The closure of $M(g)$ in $C(B)$ is compact.
 
 The ball
 $$
-B=\{x\in\RR^n:|x|\le1\}
+B=\{x\in\RR^n:\norm{x}\le1\}
 $$
 is compact.
 By steps [](#p1-s1-6){.pf-ref} through [](#p1-s1-7){.pf-ref}, the family $M(g)$ is equicontinuous and uniformly bounded.
@@ -338,9 +338,9 @@ Step [](#p1-s1-3){.pf-ref} proves part (a), and steps [](#p1-s1-4){.pf-ref} thro
 
 For every $x,x'\in B$ and every $y\in\partial B$,
 $$
-g(y)+|x-y|
+g(y)+\norm{x-y}
 \le
-g(y)+|x'-y|+|x-x'|.
+g(y)+\norm{x'-y}+\norm{x-x'}.
 $$
 
 
@@ -348,9 +348,9 @@ $$
 
 The Euclidean triangle inequality gives
 $$
-|x-y|
+\norm{x-y}
 \le
-|x-x'|+|x'-y|.
+\norm{x-x'}+\norm{x'-y}.
 $$
 Add $g(y)$ to both sides.
 
@@ -362,24 +362,24 @@ Add $g(y)$ to both sides.
 
 Taking the infimum over $y\in\partial B$ in step [](#p2-s1-1){.pf-ref} gives
 $$
-f(x)\le f(x')+|x-x'|.
+f(x)\le f(x')+\norm{x-x'}.
 $$
 
 
 ::: pf-proof
 
-The additive term $|x-x'|$ is independent of $y$, so
+The additive term $\norm{x-x'}$ is independent of $y$, so
 $$
 \begin{aligned}
 f(x)
 &=
 \inf_{y\in\partial B}
-\bigl(g(y)+|x-y|\bigr)\\
+\bigl(g(y)+\norm{x-y}\bigr)\\
 &\le
 \inf_{y\in\partial B}
-\bigl(g(y)+|x'-y|+|x-x'|\bigr)\\
+\bigl(g(y)+\norm{x'-y}+\norm{x-x'}\bigr)\\
 &=
-f(x')+|x-x'|.
+f(x')+\norm{x-x'}.
 \end{aligned}
 $$
 
@@ -391,7 +391,7 @@ $$
 
 Therefore
 $$
-\boxed{|f(x)-f(x')|\le|x-x'|}
+\boxed{\abs{f(x)-f(x')}\le\norm{x-x'}}
 $$
 for all $x,x'\in B$.
 
@@ -400,11 +400,11 @@ for all $x,x'\in B$.
 
 Step [](#p2-s1-2){.pf-ref} gives
 $$
-f(x)-f(x')\le|x-x'|.
+f(x)-f(x')\le\norm{x-x'}.
 $$
 Interchanging $x$ and $x'$ gives
 $$
-f(x')-f(x)\le|x-x'|.
+f(x')-f(x)\le\norm{x-x'}.
 $$
 Combining yields the absolute-value inequality.
 Thus $f$ is $1$-Lipschitz.
@@ -431,7 +431,7 @@ Then
 $$
 f(x)
 \le
-g(x)+|x-x|
+g(x)+\norm{x-x}
 =
 g(x).
 $$
@@ -444,7 +444,7 @@ $$
 
 For every $x,y\in\partial B$,
 $$
-g(y)+|x-y|\ge g(x).
+g(y)+\norm{x-y}\ge g(x).
 $$
 
 
@@ -454,7 +454,7 @@ Since $g$ is $1$-Lipschitz,
 $$
 g(x)-g(y)
 \le
-|x-y|.
+\norm{x-y}.
 $$
 Rearranging gives the displayed inequality.
 
@@ -481,7 +481,7 @@ $$
 f(x)
 =
 \inf_{y\in\partial B}
-\bigl(g(y)+|x-y|\bigr)
+\bigl(g(y)+\norm{x-y}\bigr)
 \ge
 g(x).
 $$
@@ -494,7 +494,7 @@ $$
 
 Thus
 $$
-\boxed{f|_{\partial B}=g}
+\boxed{f\restrict_{\partial B}=g}
 $$
 and in particular
 $$
@@ -527,11 +527,11 @@ $$
 $$
 gives
 $$
-|x-x'|<\delta
+\norm{x-x'}<\delta
 \quad\Longrightarrow\quad
-|h(x)-h(x')|
+\abs{h(x)-h(x')}
 \le
-|x-x'|
+\norm{x-x'}
 <
 \varepsilon
 $$
@@ -555,31 +555,31 @@ $$
 For any $h\in M(g)$ and $x\in B$,
 $$
 \begin{aligned}
-|h(x)|
+\abs{h(x)}
 &\le
-|h(x)-h(y_0)|+|h(y_0)|\\
+\abs{h(x)-h(y_0)}+\abs{h(y_0)}\\
 &\le
-|x-y_0|+|g(y_0)|.
+\norm{x-y_0}+\abs{g(y_0)}.
 \end{aligned}
 $$
 Since
 $$
-|x|\le1
+\norm{x}\le1
 \qquad\text{and}\qquad
-|y_0|=1,
+\norm{y_0}=1,
 $$
 one has
 $$
-|x-y_0|
+\norm{x-y_0}
 \le
-|x|+|y_0|
+\norm{x}+\norm{y_0}
 \le2.
 $$
 Therefore
 $$
-\|h\|_\infty
+\norm{h}_\infty
 \le
-2+|g(y_0)|
+2+\abs{g(y_0)}
 $$
 for every $h\in M(g)$.
 
@@ -606,15 +606,15 @@ uniformly on $B$.
 
 For any $x,x'\in B$,
 $$
-|h_n(x)-h_n(x')|
+\abs{h_n(x)-h_n(x')}
 \le
-|x-x'|.
+\norm{x-x'}.
 $$
 Passing to the limit gives
 $$
-|h(x)-h(x')|
+\abs{h(x)-h(x')}
 \le
-|x-x'|,
+\norm{x-x'},
 $$
 so $h$ is $1$-Lipschitz.
 

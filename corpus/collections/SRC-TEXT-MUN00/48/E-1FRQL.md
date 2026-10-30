@@ -64,31 +64,31 @@ The set $S_N = \{x_1, x_2, \dots, x_N\}$ is finite, and since $x_0$ is irrationa
 
 ::: pf-step
 
-Define $\delta = \min_{1 \le n \le N} |x_0 - x_n| > 0$.
+Define $\delta = \min_{1 \le n \le N} \abs{x_0 - x_n} > 0$.
 
 :::
 
 ::: pf-step
 
-If $|x - x_0| < \delta$, then $x \notin S_N$.
+If $\abs{x - x_0} < \delta$, then $x \notin S_N$.
 
 :::
 
 ::: pf-step
 
-Case 1: If $x \notin \QQ$, $|f(x) - f(x_0)| = |0 - 0| = 0 < \varepsilon$.
+Case 1: If $x \notin \QQ$, $\abs{f(x) - f(x_0)} = \abs{0 - 0} = 0 < \varepsilon$.
 
 :::
 
 ::: pf-step
 
-Case 2: If $x \in \QQ$, then $x = x_k$ for some $k > N$, so $|f(x) - f(x_0)| = \frac{1}{k} < \frac{1}{N} < \varepsilon$.
+Case 2: If $x \in \QQ$, then $x = x_k$ for some $k > N$, so $\abs{f(x) - f(x_0)} = \frac{1}{k} < \frac{1}{N} < \varepsilon$.
 
 :::
 
 ::: pf-step
 
-Thus $|f(x) - f(x_0)| < \varepsilon$ for all $x \in (x_0 - \delta, x_0 + \delta)$, so $f$ is continuous at $x_0$.
+Thus $\abs{f(x) - f(x_0)} < \varepsilon$ for all $x \in (x_0 - \delta, x_0 + \delta)$, so $f$ is continuous at $x_0$.
 
 :::
 
@@ -123,7 +123,7 @@ For any $\delta > 0$, the interval $(x_m - \delta, x_m + \delta)$ contains an ir
 
 ::: pf-step
 
-At this point $y$, $|f(y) - f(x_m)| = |0 - \frac{1}{m}| = \frac{1}{m} > \varepsilon_0$.
+At this point $y$, $\abs{f(y) - f(x_m)} = \abs{0 - \frac{1}{m}} = \frac{1}{m} > \varepsilon_0$.
 
 :::
 
@@ -159,7 +159,7 @@ For each $n \in \{1, \dots, k\}$, choose $\delta_{n, k} > 0$ such that the inter
 ::: pf-step
 
 Define a continuous "tent" function $\phi_{n, k}: \RR \to [0, \frac{1}{n}]$ supported on $[x_n - \delta_{n, k}, x_n + \delta_{n, k}]$ by:
-        $$\phi_{n, k}(x) = \max\left\{0, \; \frac{1}{n}\left(1 - \frac{|x - x_n|}{\delta_{n, k}}\right)\right\}.$$
+        $$\phi_{n, k}(x) = \max\left\{0, \; \frac{1}{n}\left(1 - \frac{\abs{x - x_n}}{\delta_{n, k}}\right)\right\}.$$
 
 :::
 
@@ -177,7 +177,7 @@ For any rational $x_m$, for all $k \ge m$ we have $f_k(x_m) = \phi_{m, k}(x_m) =
 
 ::: pf-step
 
-Let $x$ be irrational and $\varepsilon > 0$. Choose $N$ with $1/N < \varepsilon$ and put $\eta = \min_{1 \le n \le N} |x - x_n| > 0$. For $k > \max(N, 1/\eta)$, $\delta_{n, k} < 1/k < \eta$, so $\phi_{n, k}(x) = 0$ for $n \le N$. The supports of the tents $\phi_{1,k}, \ldots, \phi_{k,k}$ are disjoint, so $f_k(x) = \phi_{n, k}(x) \le 1/n < \varepsilon$ for at most one $n > N$, and $f_k(x) = 0$ otherwise. Hence $\lim_{k \to \infty} f_k(x) = 0 = f(x)$.
+Let $x$ be irrational and $\varepsilon > 0$. Choose $N$ with $1/N < \varepsilon$ and put $\eta = \min_{1 \le n \le N} \abs{x - x_n} > 0$. For $k > \max(N, 1/\eta)$, $\delta_{n, k} < 1/k < \eta$, so $\phi_{n, k}(x) = 0$ for $n \le N$. The supports of the tents $\phi_{1,k}, \ldots, \phi_{k,k}$ are disjoint, so $f_k(x) = \phi_{n, k}(x) \le 1/n < \varepsilon$ for at most one $n > N$, and $f_k(x) = 0$ otherwise. Hence $\lim_{k \to \infty} f_k(x) = 0 = f(x)$.
 
 :::
 

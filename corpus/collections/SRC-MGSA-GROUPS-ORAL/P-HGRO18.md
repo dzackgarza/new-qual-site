@@ -32,7 +32,7 @@ Yes.
 
 Let $n_{11}$ be the number of Sylow $11$-subgroups of $G$. Since
 $$
-|G|=99=3^2\cdot11,
+\cardinality{G}=99=3^2\cdot11,
 $$
 Sylow's theorem gives
 $$

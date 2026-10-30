@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-5A
 kind: problem
-title: The metric $\int_0^1 \lvert f-g\rvert/(1+\lvert f-g\rvert)\,dx$ on $C[0,1]$ is not complete
+title: The metric $\int_0^1 \abs{ f-g}/(1+\abs{ f-g})\,dx$ on $C[0,1]$ is not complete
 classification:
   areas:
   - prelim
@@ -27,7 +27,7 @@ audit:
 Let C denote the space of continuous functions on [0, 1]. Define
 
 $$
-d ( f , g ) = \int _ { 0 } ^ { 1 } { \frac { | f ( x ) - g ( x ) | } { 1 + | f ( x ) - g ( x ) | } } d x .
+d ( f , g ) = \int _ { 0 } ^ { 1 } { \frac { \abs{ f ( x ) - g ( x ) } } { 1 + \abs{ f ( x ) - g ( x ) } } } d x .
 $$
 
 (a) Show that d is a metric on $C .$
@@ -44,7 +44,7 @@ $$
 $$
 Then
 $$
-d(f,g)=\int_0^1\phi(|f(x)-g(x)|)\,dx.
+d(f,g)=\int_0^1\phi(\abs{f(x)-g(x)})\,dx.
 $$
 
 ::: pf
@@ -58,7 +58,7 @@ If $f=g$, then $d(f,g)=0$.
 Conversely, suppose $d(f,g)=0$.
 The integrand
 $$
-x\longmapsto \phi(|f(x)-g(x)|)
+x\longmapsto \phi(\abs{f(x)-g(x)})
 $$
 is continuous and nonnegative.
 If $f(x_0)\ne g(x_0)$ at some point $x_0$, then the integrand is positive at $x_0$ and hence, by continuity, is bounded below by a positive constant on some interval of positive length.
@@ -82,7 +82,7 @@ $$
 $$
 For $f,g,h\in C[0,1]$, set pointwise
 $$
-a=|f-g|,\qquad b=|g-h|,\qquad c=|f-h|.
+a=\abs{f-g},\qquad b=\abs{g-h},\qquad c=\abs{f-h}.
 $$
 Since $c\le a+b$, monotonicity and the preceding inequality give
 $$
@@ -140,14 +140,14 @@ $$
 is nonzero at $a$.
 Hence there exist an interval $J\subset(0,1]$ containing $a$ and a constant $\varepsilon>0$ such that
 $$
-|f(x)-1/x|\ge\varepsilon
+\abs{f(x)-1/x}\ge\varepsilon
 \qquad(x\in J).
 $$
 For all sufficiently large $n$, one has $1/n<\inf J$, so $f_n(x)=1/x$ throughout $J$.
 Therefore
 $$
 d(f_n,f)\ge\int_J\frac{\varepsilon}{1+\varepsilon}\,dx
-=|J|\frac{\varepsilon}{1+\varepsilon}>0,
+=\setmeasure{J}\frac{\varepsilon}{1+\varepsilon}>0,
 $$
 contradicting $d(f_n,f)\to0$.
 Thus $f(a)=1/a$ for every $a\in(0,1]$.

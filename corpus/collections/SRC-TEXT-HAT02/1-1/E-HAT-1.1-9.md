@@ -89,7 +89,7 @@ $$
 \{x:v\cdot x=d\}
 $$
 is an affine plane and therefore has three-dimensional Lebesgue measure zero.
-If $v=0$, then $|d|=1$, so $v\cdot x-d=-d\ne0$ for every $x$ and there is no exceptional set.
+If $v=0$, then $\abs{d}=1$, so $v\cdot x-d=-d\ne0$ for every $x$ and there is no exceptional set.
 The integrands are uniformly bounded by $1$.
 Dominated convergence therefore gives
 $$

@@ -31,7 +31,7 @@ audit:
 ::: {.problem}
 Let $\phi:\RR\to\RR$ be a continuous function with compact support.
 
-a. Prove there is a constant $A$ such that $$||f*\phi||_{L^q} \le A||f||_{L^p} \quad \text{for all } 1\le p\le q\le\infty \quad \text{and all } f\in L^p.$$ If you use Young's convolution inequality you should prove it.
+a. Prove there is a constant $A$ such that $$\norm{f*\phi}_{L^q} \le A\norm{f}_{L^p} \quad \text{for all } 1\le p\le q\le\infty \quad \text{and all } f\in L^p.$$ If you use Young's convolution inequality you should prove it.
 
 b. Show by example that such a general inequality cannot hold for $p>q$.
 :::
@@ -49,7 +49,7 @@ $$
 $$
 Then
 $$
-\|f*g\|_{L^r}\le\|f\|_{L^p}\|g\|_{L^a}.
+\norm{f*g}_{L^r}\le\norm{f}_{L^p}\norm{g}_{L^a}.
 $$
 
 ::: pf-proof
@@ -63,11 +63,11 @@ r\ge a.
 $$
 For fixed $x$, write
 $$
-|f(x-y)g(y)|
+\abs{f(x-y)g(y)}
 =
-|f(x-y)|^{1-p/r}
-|g(y)|^{1-a/r}
-\bigl(|f(x-y)|^p|g(y)|^a\bigr)^{1/r}.
+\abs{f(x-y)}^{1-p/r}
+\abs{g(y)}^{1-a/r}
+\bigl(\abs{f(x-y)}^p\abs{g(y)}^a\bigr)^{1/r}.
 $$
 Apply Hölder's inequality with exponents
 $$
@@ -89,31 +89,31 @@ $$
 $$
 Thus
 $$
-|f*g(x)|
+\abs{f*g(x)}
 \le
-\|f\|_p^{1-p/r}
-\|g\|_a^{1-a/r}
+\norm{f}_p^{1-p/r}
+\norm{g}_a^{1-a/r}
 \left(
-\int_{\RR}|f(x-y)|^p|g(y)|^a\,dy
+\int_{\RR}\abs{f(x-y)}^p\abs{g(y)}^a\,dy
 \right)^{1/r}.
 $$
 Raise to the $r$th power and integrate in $x$.
 Tonelli's theorem gives
 $$
 \begin{aligned}
-\|f*g\|_r^r
+\norm{f*g}_r^r
 &\le
-\|f\|_p^{r-p}
-\|g\|_a^{r-a}
+\norm{f}_p^{r-p}
+\norm{g}_a^{r-a}
 \int_{\RR}\int_{\RR}
-|f(x-y)|^p|g(y)|^a\,dy\,dx\\
+\abs{f(x-y)}^p\abs{g(y)}^a\,dy\,dx\\
 &=
-\|f\|_p^{r-p}
-\|g\|_a^{r-a}
-\left(\int_{\RR}|f(t)|^p\,dt\right)
-\left(\int_{\RR}|g(y)|^a\,dy\right)\\
+\norm{f}_p^{r-p}
+\norm{g}_a^{r-a}
+\left(\int_{\RR}\abs{f(t)}^p\,dt\right)
+\left(\int_{\RR}\abs{g(y)}^a\,dy\right)\\
 &=
-\|f\|_p^r\|g\|_a^r.
+\norm{f}_p^r\norm{g}_a^r.
 \end{aligned}
 $$
 Taking $r$th roots proves the finite-$r$ case.
@@ -126,10 +126,10 @@ $$
 For every $x$, Hölder's inequality directly gives
 $$
 \begin{aligned}
-|f*g(x)|
-&\le\int_{\RR}|f(x-y)||g(y)|\,dy\\
-&\le\|f(x-\cdot)\|_p\|g\|_a\\
-&=\|f\|_p\|g\|_a.
+\abs{f*g(x)}
+&\le\int_{\RR}\abs{f(x-y)}\abs{g(y)}\,dy\\
+&\le\norm{f(x-\cdot)}_p\norm{g}_a\\
+&=\norm{f}_p\norm{g}_a.
 \end{aligned}
 $$
 Taking the essential supremum over $x$ proves the endpoint case.
@@ -142,7 +142,7 @@ Taking the essential supremum over $x$ proves the endpoint case.
 
 There is one finite constant $A_\phi$ such that
 $$
-\|\phi\|_{L^a}\le A_\phi
+\norm{\phi}_{L^a}\le A_\phi
 \qquad
 \text{for every }1\le a\le\infty.
 $$
@@ -151,23 +151,23 @@ $$
 
 Let
 $$
-M=\|\phi\|_{L^\infty},
+M=\norm{\phi}_{L^\infty},
 \qquad
 L=m(\operatorname{supp}\phi)<\infty.
 $$
 For $1\le a<\infty$,
 $$
-\|\phi\|_a^a
-=\int_{\operatorname{supp}\phi}|\phi|^a
+\norm{\phi}_a^a
+=\int_{\operatorname{supp}\phi}\abs{\phi}^a
 \le M^aL,
 $$
 so
 $$
-\|\phi\|_a\le ML^{1/a}\le M\max\{1,L\}.
+\norm{\phi}_a\le ML^{1/a}\le M\max\{1,L\}.
 $$
 For $a=\infty$,
 $$
-\|\phi\|_\infty=M\le M\max\{1,L\}.
+\norm{\phi}_\infty=M\le M\max\{1,L\}.
 $$
 Hence one may take
 $$
@@ -182,7 +182,7 @@ $$
 
 If $1\le p\le q\le\infty$, then
 $$
-\|f*\phi\|_{L^q}\le A_\phi\|f\|_{L^p}.
+\norm{f*\phi}_{L^q}\le A_\phi\norm{f}_{L^p}.
 $$
 
 ::: pf-proof
@@ -202,9 +202,9 @@ $$
 $$
 Applying step [](#s1){.pf-ref} with $g=\phi$ and then step [](#s2){.pf-ref} gives
 $$
-\|f*\phi\|_q
-\le\|f\|_p\|\phi\|_a
-\le A_\phi\|f\|_p.
+\norm{f*\phi}_q
+\le\norm{f}_p\norm{\phi}_a
+\le A_\phi\norm{f}_p.
 $$
 The constant $A_\phi$ depends only on the fixed function $\phi$, not on $p,q$, or $f$.
 This proves part (a).

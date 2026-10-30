@@ -29,7 +29,7 @@ Let
 $$
 g(z)=\overline{f(\overline z)}
 $$
-for $|z|<1$.
+for $\abs{z}<1$.
 
 ::: pf
 
@@ -37,11 +37,11 @@ for $|z|<1$.
 
 If
 $$
-|z|<1,
+\abs{z}<1,
 $$
 then
 $$
-|\overline z|<1.
+\abs{\overline z}<1.
 $$
 
 
@@ -49,7 +49,7 @@ $$
 
 Complex conjugation preserves modulus:
 $$
-|\overline z|=|z|.
+\abs{\overline z}=\abs{z}.
 $$
 Thus $f(\overline z)$ is defined on the whole unit disk.
 
@@ -159,7 +159,7 @@ $$
 
 Again,
 $$
-|\overline h|=|h|.
+\abs{\overline h}=\abs{h}.
 $$
 
 :::

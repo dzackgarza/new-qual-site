@@ -97,9 +97,9 @@ S_nx
 $$
 Since $U$ is unitary,
 $$
-\|S_nx\|
-\le\frac{\|y\|+\|U^ny\|}{n}
-=\frac{2\|y\|}{n}\to0.
+\norm{S_nx}
+\le\frac{\norm{y}+\norm{U^ny}}{n}
+=\frac{2\norm{y}}{n}\to0.
 $$
 Thus $S_nx\to0=Px$ for every $x\in\operatorname{Ran}(I-U)$.
 
@@ -115,16 +115,16 @@ Extend the convergence to all of $M^\perp$.
 
 Each $S_n$ is a contraction:
 $$
-\|S_n\|
-\le\frac1n\sum_{j=0}^{n-1}\|U^j\|=1.
+\norm{S_n}
+\le\frac1n\sum_{j=0}^{n-1}\norm{U^j}=1.
 $$
 By Step 1, $\operatorname{Ran}(I-U)$ is dense in $M^\perp$. Let $x\in M^\perp$ and choose $x_k\in\operatorname{Ran}(I-U)$ with $x_k\to x$. Then
 $$
-\|S_nx\|
-\le\|S_n(x-x_k)\|+\|S_nx_k\|
-\le\|x-x_k\|+\|S_nx_k\|.
+\norm{S_nx}
+\le\norm{S_n(x-x_k)}+\norm{S_nx_k}
+\le\norm{x-x_k}+\norm{S_nx_k}.
 $$
-First choose $k$ so that $\|x-x_k\|$ is small, then let $n\to\infty$ and use Step 2. Hence $S_nx\to0$ for every $x\in M^\perp$.
+First choose $k$ so that $\norm{x-x_k}$ is small, then let $n\to\infty$ and use Step 2. Hence $S_nx\to0$ for every $x\in M^\perp$.
 
 Finally decompose
 $$

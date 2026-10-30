@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $X=C([0,1])$ be the Banach space of real-valued continuous functions on $[0,1]$ equipped with the norm
 $$
-\lVert f\rVert=\max_{x\in[0,1]}|f(x)|.
+\norm{ f}=\max_{x\in[0,1]}\abs{f(x)}.
 $$
 Let $\mathcal A$ be the Borel $\sigma$-algebra on $X$.
 Show that $\mathcal A$ is the smallest $\sigma$-algebra on $X$ that contains all sets of the form
@@ -65,11 +65,11 @@ The map $e_t$ is continuous.
 
 For $f,g\in X$,
 $$
-|e_t(f)-e_t(g)|
+\abs{e_t(f)-e_t(g)}
 =
-|f(t)-g(t)|
+\abs{f(t)-g(t)}
 \le
-\|f-g\|_\infty.
+\norm{f-g}_\infty.
 $$
 Thus $e_t$ is $1$-Lipschitz.
 
@@ -115,9 +115,9 @@ The Borel $\sigma$-algebra $\mathcal A$ contains every generator $S(t,B)$, so it
 For every $h\in C([0,1])$,
 $$
 \boxed{
-\|h\|_\infty
+\norm{h}_\infty
 =
-\sup_{q\in Q}|h(q)|}.
+\sup_{q\in Q}\abs{h(q)}}.
 $$
 
 
@@ -125,25 +125,25 @@ $$
 
 The inequality
 $$
-\sup_{q\in Q}|h(q)|
+\sup_{q\in Q}\abs{h(q)}
 \le
-\|h\|_\infty
+\norm{h}_\infty
 $$
 is immediate.
 
-Conversely, since $|h|$ is continuous on the compact interval $[0,1]$, it attains its maximum at some $x_0$. Choose rationals $q_n\in Q$ with
+Conversely, since $\abs{h}$ is continuous on the compact interval $[0,1]$, it attains its maximum at some $x_0$. Choose rationals $q_n\in Q$ with
 $$
 q_n\to x_0.
 $$
 Continuity gives
 $$
-|h(q_n)|
+\abs{h(q_n)}
 \to
-|h(x_0)|
+\abs{h(x_0)}
 =
-\|h\|_\infty.
+\norm{h}_\infty.
 $$
-Hence the rational supremum is at least $\|h\|_\infty$.
+Hence the rational supremum is at least $\norm{h}_\infty$.
 
 :::
 
@@ -155,7 +155,7 @@ The closed ball
 $$
 \overline B(g,r)
 =
-\{f\in X:\|f-g\|_\infty\le r\}
+\{f\in X:\norm{f-g}_\infty\le r\}
 $$
 can be written as
 $$
@@ -165,7 +165,7 @@ $$
 \bigcap_{q\in Q}
 \left\{
 f\in X:
-|f(q)-g(q)|\le r
+\abs{f(q)-g(q)}\le r
 \right\}}.
 $$
 
@@ -178,11 +178,11 @@ h=f-g.
 $$
 The condition
 $$
-\|f-g\|_\infty\le r
+\norm{f-g}_\infty\le r
 $$
 is equivalent to
 $$
-|f(q)-g(q)|\le r
+\abs{f(q)-g(q)}\le r
 $$
 for every rational $q\in Q$.
 
@@ -196,7 +196,7 @@ For fixed $q\in Q$, the set
 $$
 \left\{
 f:
-|f(q)-g(q)|\le r
+\abs{f(q)-g(q)}\le r
 \right\}
 $$
 belongs to $\Sigma$.
@@ -241,9 +241,9 @@ B(g,r)
 \bigcup_{\substack{m\ge1\\1/m<r}}
 \overline B\left(g,r-\frac1m\right).
 $$
-Indeed, if $\|f-g\|_\infty<r$, choose $m$ so large that
+Indeed, if $\norm{f-g}_\infty<r$, choose $m$ so large that
 $$
-\|f-g\|_\infty
+\norm{f-g}_\infty
 \le
 r-\frac1m.
 $$
@@ -268,15 +268,15 @@ p(x)=\sum_{j=0}^N a_jx^j
 $$
 and $\varepsilon>0$, choose rational numbers $r_j$ so close to $a_j$ that
 $$
-\sum_{j=0}^N|a_j-r_j|<\varepsilon.
+\sum_{j=0}^N\abs{a_j-r_j}<\varepsilon.
 $$
 Then on $[0,1]$,
 $$
-\left|
+\abs{
 p(x)-\sum_{j=0}^Nr_jx^j
-\right|
+}
 \le
-\sum_{j=0}^N|a_j-r_j|
+\sum_{j=0}^N\abs{a_j-r_j}
 <
 \varepsilon.
 $$
@@ -307,11 +307,11 @@ B(f,\varepsilon)\subseteq U.
 $$
 Choose $g\in D$ with
 $$
-\|f-g\|_\infty<\varepsilon/3,
+\norm{f-g}_\infty<\varepsilon/3,
 $$
 and choose rational $r$ with
 $$
-\|f-g\|_\infty<r<2\varepsilon/3.
+\norm{f-g}_\infty<r<2\varepsilon/3.
 $$
 Then
 $$

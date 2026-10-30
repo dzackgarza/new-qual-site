@@ -51,7 +51,7 @@ $\frac{z^2+1}{z^2+4}$ is holomorphic on $\abs z\le1$, so Cauchy's integral formu
 $f(z)=\dfrac{1/4}{z}+\dfrac{3/8}{z+2i}+\dfrac{3/8}{z-2i}$.
 
 ::: pf-proof
-By the cover-up method, the coefficients are $\frac{z^2+1}{z^2+4}\big|_{z=0}=\frac14$, $\frac{z^2+1}{z(z-2i)}\big|_{z=-2i}=\frac{-3}{(-2i)(-4i)}=\frac38$ and $\frac{z^2+1}{z(z+2i)}\big|_{z=2i}=\frac{-3}{(2i)(4i)}=\frac38$.
+By the cover-up method, the coefficients are $\frac{z^2+1}{z^2+4}\evalfrom_{z=0}=\frac14$, $\frac{z^2+1}{z(z-2i)}\evalfrom_{z=-2i}=\frac{-3}{(-2i)(-4i)}=\frac38$ and $\frac{z^2+1}{z(z+2i)}\evalfrom_{z=2i}=\frac{-3}{(2i)(4i)}=\frac38$.
 :::
 
 :::

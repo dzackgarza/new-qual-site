@@ -65,13 +65,13 @@ Each factor is simple.
 
 The factor orders are
 $$
-|C_2|=2,
+\cardinality{C_2}=2,
 \qquad
-|V_4/C_2|=2,
+\cardinality{V_4/C_2}=2,
 \qquad
-|A_4/V_4|=3,
+\cardinality{A_4/V_4}=3,
 \qquad
-|S_4/A_4|=2.
+\cardinality{S_4/A_4}=2.
 $$
 Every group of prime order is simple.
 

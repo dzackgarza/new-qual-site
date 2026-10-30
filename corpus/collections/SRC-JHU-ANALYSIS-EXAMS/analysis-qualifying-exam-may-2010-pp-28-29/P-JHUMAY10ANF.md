@@ -29,7 +29,7 @@ Let $\varphi:\RR\to\RR$ be continuous with compact support.
 
 (a) If $1\le p\le q\le\infty$, prove that there is a constant $A$ such that
 $$
-\|f*\varphi\|_q\le A\|f\|_p
+\norm{f*\varphi}_q\le A\norm{f}_p
 \qquad(f\in L^p).
 $$
 
@@ -49,23 +49,23 @@ Endpoint bounds.
 For $1\le p<\infty$, Minkowski's integral inequality gives
 $$
 \begin{aligned}
-\|f*\varphi\|_p
-&=\left\|\int_{\RR}\varphi(y)f(\cdot-y)\,dy\right\|_p\\
-&\le\int_{\RR}|\varphi(y)|\,\|f(\cdot-y)\|_p\,dy\\
-&=\|\varphi\|_1\|f\|_p.
+\norm{f*\varphi}_p
+&=\norm{\int_{\RR}\varphi(y)f(\cdot-y)\,dy}_p\\
+&\le\int_{\RR}\abs{\varphi(y)}\,\norm{f(\cdot-y)}_p\,dy\\
+&=\norm{\varphi}_1\norm{f}_p.
 \end{aligned}
 $$
 Also, by [[PR-7BGSE|Hölder's inequality]], if $p'$ is conjugate to $p$,
 $$
-|(f*\varphi)(x)|\le\|f\|_p\,\|\varphi(x-\cdot)\|_{p'}=\|f\|_p\|\varphi\|_{p'},
+\abs{(f*\varphi)(x)}\le\norm{f}_p\,\norm{\varphi(x-\cdot)}_{p'}=\norm{f}_p\norm{\varphi}_{p'},
 $$
 so
 $$
-\|f*\varphi\|_\infty\le\|\varphi\|_{p'}\|f\|_p.
+\norm{f*\varphi}_\infty\le\norm{\varphi}_{p'}\norm{f}_p.
 $$
 For $p=\infty$, necessarily $q=\infty$, and directly
 $$
-\|f*\varphi\|_\infty\le\|\varphi\|_1\|f\|_\infty.
+\norm{f*\varphi}_\infty\le\norm{\varphi}_1\norm{f}_\infty.
 $$
 
 :::
@@ -80,18 +80,18 @@ Interpolate the output norm for $p\le q\le\infty$.
 
 Assume $1\le p<\infty$ and let $h=f*\varphi$. If $p\le q<\infty$, then
 $$
-\|h\|_q^q
-=\int |h|^{q-p}|h|^p
-\le\|h\|_\infty^{q-p}\|h\|_p^p.
+\norm{h}_q^q
+=\int \abs{h}^{q-p}\abs{h}^p
+\le\norm{h}_\infty^{q-p}\norm{h}_p^p.
 $$
 Hence
 $$
-\|h\|_q\le\|h\|_\infty^{1-p/q}\|h\|_p^{p/q}.
+\norm{h}_q\le\norm{h}_\infty^{1-p/q}\norm{h}_p^{p/q}.
 $$
 Using step [](#s1){.pf-ref},
 $$
-\|f*\varphi\|_q
-\le\|\varphi\|_{p'}^{1-p/q}\|\varphi\|_1^{p/q}\|f\|_p.
+\norm{f*\varphi}_q
+\le\norm{\varphi}_{p'}^{1-p/q}\norm{\varphi}_1^{p/q}\norm{f}_p.
 $$
 The case $q=\infty$ is already contained in step [](#s1){.pf-ref}. This proves part (a).
 
@@ -111,7 +111,7 @@ $$
 $$
 so $\psi\in C_c$ and
 $$
-(\psi*\varphi)(0)=\int_{\RR}|\varphi(y)|^2\,dy>0.
+(\psi*\varphi)(0)=\int_{\RR}\abs{\varphi(y)}^2\,dy>0.
 $$
 Thus $h:=\psi*\varphi$ is not identically zero.
 
@@ -121,7 +121,7 @@ f_N=\sum_{k=1}^N\psi(\cdot-kL).
 $$
 Then
 $$
-\|f_N\|_p=N^{1/p}\|\psi\|_p,
+\norm{f_N}_p=N^{1/p}\norm{\psi}_p,
 $$
 while
 $$
@@ -129,11 +129,11 @@ f_N*\varphi=\sum_{k=1}^N h(\cdot-kL)
 $$
 and therefore
 $$
-\|f_N*\varphi\|_q=N^{1/q}\|h\|_q.
+\norm{f_N*\varphi}_q=N^{1/q}\norm{h}_q.
 $$
-If an estimate $\|f*\varphi\|_q\le A\|f\|_p$ held with $p>q$, then
+If an estimate $\norm{f*\varphi}_q\le A\norm{f}_p$ held with $p>q$, then
 $$
-N^{1/q-1/p}\le A\frac{\|\psi\|_p}{\|h\|_q}
+N^{1/q-1/p}\le A\frac{\norm{\psi}_p}{\norm{h}_q}
 $$
 for every $N$, impossible because $1/q-1/p>0$. Hence no such general estimate can hold for $p>q$.
 

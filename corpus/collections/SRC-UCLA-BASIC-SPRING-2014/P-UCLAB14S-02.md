@@ -34,7 +34,7 @@ $$
 
 Restrict $S$ to $\operatorname{im}T$:
 $$
-S|_{\operatorname{im}T}:\operatorname{im}T\to V.
+S\restrict_{\operatorname{im}T}:\operatorname{im}T\to V.
 $$
 Its image is $\operatorname{im}(S\circ T)$.
 

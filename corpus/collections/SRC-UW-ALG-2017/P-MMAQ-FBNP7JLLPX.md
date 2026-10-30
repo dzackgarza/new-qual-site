@@ -36,7 +36,7 @@ Hence $n_{19}=1$. Thus the Sylow $19$-subgroup $N\cong C_{19}$ is normal.
 
 Let $P$ be a Sylow $3$-subgroup. Then $P\cong C_3$, $N\cap P=1$, and
 $$
-|NP|=\frac{|N||P|}{|N\cap P|}=57,
+\cardinality{NP}=\frac{\cardinality{N}\cardinality{P}}{\cardinality{N\cap P}}=57,
 $$
 so $G=NP$. Therefore
 $$

@@ -52,20 +52,20 @@ $1/2$, so the two integrals are equal.
 
 (d) **True.** By Hurwitz's theorem, a locally uniform limit of zero-free
 holomorphic functions is either identically zero or zero-free. If $f$ is not
-constant, it is zero-free; moreover $|f|\le1$, and the maximum principle
+constant, it is zero-free; moreover $\abs{f}\le1$, and the maximum principle
 excludes an interior value of modulus $1$. Hence
 $f(G)\subset\DD\setminus\{0\}$.
 
 (e) **False.** By Cauchy--Hadamard,
 $$
-1=\limsup_{n\to\infty}|a_n|^{1/n}.
+1=\limsup_{n\to\infty}\abs{a_n}^{1/n}.
 $$
 For the lacunary series, the relevant limsup is
-$\limsup |a_n|^{1/p_n}$. Since $p_n\ge n$, values with $|a_n|\ge1$ can only
-decrease after taking the $p_n$th root, while values with $|a_n|<1$ remain
+$\limsup \abs{a_n}^{1/p_n}$. Since $p_n\ge n$, values with $\abs{a_n}\ge1$ can only
+decrease after taking the $p_n$th root, while values with $\abs{a_n}<1$ remain
 below $1$. Thus
 $$
-\limsup |a_n|^{1/p_n}\le1,
+\limsup \abs{a_n}^{1/p_n}\le1,
 $$
 so its radius of convergence is at least $1$, never less than $1$.
 :::

@@ -26,7 +26,7 @@ The integral converges absolutely, since the numerator has absolute value 1, whi
 Use a rectangular contour C bounded by $x = R , x = - R , y = 0$ and $y = \pi$ . As $R \to \infty$ the integrals along the vertical parts of the contour tend to 0, since
 
 $$
-\left| \int _ { 0 } ^ { \pi } { \frac { e ^ { i t ( R + i y ) } } { e ^ { R + i y } + e ^ { - R - i y } } } d y \right| \leq \int _ { 0 } ^ { \pi } { \frac { 1 } { e ^ { R } - e ^ { - R } } } d y = { \frac { \pi } { e ^ { R } - e ^ { - R } } } .
+\abs{ \int _ { 0 } ^ { \pi } { \frac { e ^ { i t ( R + i y ) } } { e ^ { R + i y } + e ^ { - R - i y } } } d y } \leq \int _ { 0 } ^ { \pi } { \frac { 1 } { e ^ { R } - e ^ { - R } } } d y = { \frac { \pi } { e ^ { R } - e ^ { - R } } } .
 $$
 
 The integral along the horizontal path $y = \pi$ equals

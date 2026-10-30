@@ -23,17 +23,17 @@ Give an $\varepsilon$-$\delta$ proof that $\lim_{x \to 2} \frac{1}{x^2 + 1} = \f
 ::: {.solution}
 We have
 $$
-\left|\frac1{x^2+1}-\frac15\right|
-=\frac{|4-x^2|}{5(x^2+1)}
-=\frac{|x-2||x+2|}{5(x^2+1)}.
+\abs{\frac1{x^2+1}-\frac15}
+=\frac{\abs{4-x^2}}{5(x^2+1)}
+=\frac{\abs{x-2}\abs{x+2}}{5(x^2+1)}.
 $$
-If $|x-2|<1$, then $1<x<3$, so $|x+2|<5$ and $x^2+1>2$. Hence
+If $\abs{x-2}<1$, then $1<x<3$, so $\abs{x+2}<5$ and $x^2+1>2$. Hence
 $$
-\left|\frac1{x^2+1}-\frac15\right|<\frac12|x-2|.
+\abs{\frac1{x^2+1}-\frac15}<\frac12\abs{x-2}.
 $$
 Given $\varepsilon>0$, choose
 $$
 \delta=\min\{1,2\varepsilon\}.
 $$
-Then $0<|x-2|<\delta$ implies the desired error is $<\varepsilon$.
+Then $0<\abs{x-2}<\delta$ implies the desired error is $<\varepsilon$.
 :::

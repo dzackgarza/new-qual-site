@@ -100,7 +100,7 @@ has a root.
 
 ::: pf-proof
 
-View $\quaternions$ as $\RR^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
+View $\quaternions$ as $\RR^4$. Since the leading term dominates as $\norm{x}\to\infty$, $P$ is proper and extends to a map of one-point compactifications
 $$
 \widehat P:S^4\to S^4.
 $$

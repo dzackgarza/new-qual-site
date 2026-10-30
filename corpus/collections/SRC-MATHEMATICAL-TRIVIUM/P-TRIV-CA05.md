@@ -67,7 +67,7 @@ displayed identity.
 
 ::: {.pf-step #s1-2}
 
-For $|u|<1$,
+For $\abs{u}<1$,
 $$
 (1-u)^{-3}
 =
@@ -123,9 +123,9 @@ into step [](#s1-2){.pf-ref} and use step [](#s1-1){.pf-ref}.
 
 The series converges when
 $$
-|z-i|
+\abs{z-i}
 <
-|3-i|
+\abs{3-i}
 =
 \sqrt{10}.
 $$
@@ -135,14 +135,14 @@ $$
 
 The binomial series in step [](#s1-2){.pf-ref} requires
 $$
-\left|
+\abs{
 \frac{z-i}{3-i}
-\right|
+}
 <1.
 $$
 Since
 $$
-|3-i|
+\abs{3-i}
 =
 \sqrt{3^2+(-1)^2}
 =
@@ -177,7 +177,7 @@ singularity.
 
 Thus the Laurent series about $i$ has region of convergence
 $$
-\boxed{|z-i|<\sqrt{10}}.
+\boxed{\abs{z-i}<\sqrt{10}}.
 $$
 
 

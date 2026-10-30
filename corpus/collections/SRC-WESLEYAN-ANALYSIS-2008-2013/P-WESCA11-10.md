@@ -183,17 +183,17 @@ $$
 
 For sufficiently large $R$ and
 $$
-|z|=R,
+\abs{z}=R,
 $$
 one has
 $$
-|z^4+5z^2+6|
+\abs{z^4+5z^2+6}
 \ge
-|z|^4-5|z|^2-6.
+\abs{z}^4-5\abs{z}^2-6.
 $$
 Hence
 $$
-|F(z)|
+\abs{F(z)}
 \le
 \frac{R^2}{R^4-5R^2-6}
 =
@@ -205,9 +205,9 @@ $$
 $$
 The ML inequality therefore gives
 $$
-\left|
+\abs{
 \int_{C_R}F(z)\,dz
-\right|
+}
 =
 O(R^{-1})
 \longrightarrow0.

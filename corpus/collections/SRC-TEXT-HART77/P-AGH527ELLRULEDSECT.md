@@ -272,9 +272,9 @@ p^*\mathcal E^\vee\tensor\OO_{C\times C}(\Delta).
 $$
 By step [](#s2){.pf-ref} and its proof, every fibre of $q$ satisfies
 $$
-h^0(\mathcal G|_{C\times\{P\}})=1,
+h^0(\mathcal G\restrict_{C\times\{P\}})=1,
 \qquad
-h^1(\mathcal G|_{C\times\{P\}})=0.
+h^1(\mathcal G\restrict_{C\times\{P\}})=0.
 $$
 Cohomology and base change therefore makes
 $$

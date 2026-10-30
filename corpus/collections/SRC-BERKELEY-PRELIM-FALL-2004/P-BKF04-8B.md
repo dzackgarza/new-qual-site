@@ -31,7 +31,7 @@ $$
 \begin{aligned}
 \lambda\int_0^1ay^2\,dx
 &=-\int_0^1yy''\,dx\\
-&=-yy'\Big|_0^1+\int_0^1(y')^2\,dx\\
+&=-yy'\evalfrom_0^1+\int_0^1(y')^2\,dx\\
 &=\int_0^1(y')^2\,dx\\
 &>0,
 \end{aligned}

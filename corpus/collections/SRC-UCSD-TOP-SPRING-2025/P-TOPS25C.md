@@ -40,7 +40,7 @@ $$A=\begin{pmatrix}1&4\\4&1\end{pmatrix}$$
 has determinant $-15$, so it has rank $2$, cokernel $\ZZ/15$, and zero kernel.
 
 ::: pf-proof
-Its Smith normal form is $\operatorname{diag}(1,15)$ because the gcd of its entries is $1$ and $|\det A|=15$.
+Its Smith normal form is $\operatorname{diag}(1,15)$ because the gcd of its entries is $1$ and $\abs{\det A}=15$.
 :::
 
 :::

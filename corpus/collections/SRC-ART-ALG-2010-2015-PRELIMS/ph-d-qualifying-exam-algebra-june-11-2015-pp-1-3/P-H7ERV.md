@@ -29,7 +29,7 @@ Prove that there are at most two fields $M \subseteq \overline{F}$ conjugate to 
 ::: {.pf-step #s1}
 
 The quadratic extension $K/F$ is Galois, and
-$|\Aut_F(K)|=2$.
+$\cardinality{\Aut_F(K)}=2$.
 
 ::: pf-proof
 
@@ -40,7 +40,7 @@ $\alpha$ and $\alpha'$, then
 $\alpha'=-b-\alpha\in K$ for a quadratic
 $X^2+bX+c\in F[X]$. Hence $K/F$ is Galois. Therefore
 $$
-|\Aut_F(K)|=[K:F]=2.
+\cardinality{\Aut_F(K)}=[K:F]=2.
 $$
 
 :::
@@ -83,7 +83,7 @@ embedding.
 ::: {.pf-step #s4}
 
 If $\sigma,\tau\in\Aut_F(\overline F)$ have
-$\sigma|_K=\tau|_K$, then
+$\sigma\restrict_K=\tau\restrict_K$, then
 $$
 \sigma(L)=\tau(L).
 $$
@@ -110,7 +110,7 @@ There are at most two fields conjugate to $L$ over $F$.
 
 By step [](#s2){.pf-ref}, every such field is $\sigma(L)$ for some
 $\sigma\in\Aut_F(\overline F)$. By step [](#s4){.pf-ref}, this image depends only
-on the restriction $\sigma|_K$. Step [](#s1){.pf-ref} gives only two possible
+on the restriction $\sigma\restrict_K$. Step [](#s1){.pf-ref} gives only two possible
 restrictions, namely the two elements of $\Aut_F(K)$. Hence at most two
 distinct images $\sigma(L)$ can occur.
 

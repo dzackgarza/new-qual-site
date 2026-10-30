@@ -83,7 +83,7 @@ $$
 \boxed{
 H^*(SU(n);\ZZ)
 \cong\Lambda(x_3,x_5,\ldots,x_{2n-1}),
-\qquad |x_{2j-1}|=2j-1.}
+\qquad \gradeddegree{x_{2j-1}}=2j-1.}
 $$
 
 
@@ -106,7 +106,7 @@ $$
 \boxed{
 H^*(U(n);\ZZ)
 \cong\Lambda(x_1,x_3,x_5,\ldots,x_{2n-1}),
-\qquad |x_{2j-1}|=2j-1.}
+\qquad \gradeddegree{x_{2j-1}}=2j-1.}
 $$
 
 

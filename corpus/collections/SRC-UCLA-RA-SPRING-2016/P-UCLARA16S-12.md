@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-(a) Find a real-valued harmonic function $v$ defined on the disk $|z|<1$ such that $v(z)>0$ and
+(a) Find a real-valued harmonic function $v$ defined on the disk $\abs{z}<1$ such that $v(z)>0$ and
 $$
 \lim_{z\to1}v(z)=\infty.
 $$
 
-(b) Let $u$ be a real-valued harmonic function in the disk $|z|<1$ such that $u(z)\le M<\infty$ and
+(b) Let $u$ be a real-valued harmonic function in the disk $\abs{z}<1$ such that $u(z)\le M<\infty$ and
 $$
 \limsup_{r\to1}u(re^{i\theta})\le0
 $$
@@ -40,7 +40,7 @@ $$
 \boxed{
 v(z)
 =
--\log\left|\frac{1-z}{2}\right|
+-\log\abs{\frac{1-z}{2}}
 }.
 $$
 Then $v$ is harmonic and strictly positive on $\DD$, and
@@ -71,17 +71,17 @@ is harmonic.
 
 Moreover, for $z\in\DD$,
 $$
-|1-z|<2,
+\abs{1-z}<2,
 $$
 so
 $$
 0<
--\log\left|\frac{1-z}{2}\right|
+-\log\abs{\frac{1-z}{2}}
 =v(z).
 $$
 Finally, as $z\to1$,
 $$
-\left|\frac{1-z}{2}\right|\to0,
+\abs{\frac{1-z}{2}}\to0,
 $$
 and therefore $v(z)\to\infty$.
 

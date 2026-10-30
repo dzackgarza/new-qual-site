@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20E
 kind: problem
-title: "A measure with $|\\int f'\\,d\\mu|\\le\\|f\\|_2$ has a $\\tfrac12$-Hölder density"
+title: "A measure with $\\abs{\\int f'\\,d\\mu}\\le\\norm{f}_2$ has a $\\tfrac12$-Hölder density"
 classification:
   areas:
   - real-analysis
@@ -29,7 +29,7 @@ audit:
 Let $\mu$ be a (positive) Borel measure on $[0, 1]$ and denote by $m$ the Lebesgue measure.
 Assume
 $$
-\left|\int_{[0,1]} f' \, d\mu\right| \leq \left(\int_{[0,1]} |f|^2 \, dm\right)^{1/2} \quad \forall f \in C^1([0, 1]).
+\abs{\int_{[0,1]} f' \, d\mu} \leq \left(\int_{[0,1]} \abs{f}^2 \, dm\right)^{1/2} \quad \forall f \in C^1([0, 1]).
 $$
 
 Prove the following:
@@ -38,7 +38,7 @@ Prove the following:
 
 (2) If $u = d\mu/dm \in L^1(m)$ is the Radon–Nikodym derivative of $\mu$ with respect to $m$, then
 $$
-|u(x) - u(y)| \leq |x - y|^{1/2} \quad \text{for a.e. } x, y \in [0, 1].
+\abs{u(x) - u(y)} \leq \abs{x - y}^{1/2} \quad \text{for a.e. } x, y \in [0, 1].
 $$
 :::
 
@@ -48,7 +48,7 @@ $$
 
 ::: pf-step
 
-There is $v\in L^2([0,1])$ with $\|v\|_2\le1$ and $\int_{[0,1]}f'\,d\mu=\int_0^1 fv\,dx$ for every $f\in C^1([0,1])$.
+There is $v\in L^2([0,1])$ with $\norm{v}_2\le1$ and $\int_{[0,1]}f'\,d\mu=\int_0^1 fv\,dx$ for every $f\in C^1([0,1])$.
 
 ::: pf-proof
 
@@ -59,11 +59,11 @@ L(f):=\int_{[0,1]}f'\,d\mu,
 $$
 The hypothesis gives
 $$
-|L(f)|\le\|f\|_2.
+\abs{L(f)}\le\norm{f}_2.
 $$
 Since $C^1([0,1])$ is dense in $L^2([0,1])$, $L$ extends uniquely to a bounded linear functional on $L^2$ with norm at most $1$. By the Riesz representation theorem, there exists $v\in L^2([0,1])$ with
 $$
-\|v\|_2\le1
+\norm{v}_2\le1
 $$
 such that
 $$
@@ -77,7 +77,7 @@ for every $f\in C^1([0,1])$.
 
 ::: pf-step
 
-With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\RR$ such that $\mu|_{(0,1)}=(c-V)\,m$.
+With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\RR$ such that $\mu\restrict_{(0,1)}=(c-V)\,m$.
 
 ::: pf-proof
 
@@ -95,7 +95,7 @@ D(\mu+V\,m)=0
 $$
 as a distribution on the connected interval $(0,1)$. A distribution with zero derivative on an interval is constant, so there exists $c\in\RR$ such that
 $$
-\mu|_{(0,1)}=(c-V)m.
+\mu\restrict_{(0,1)}=(c-V)m.
 $$
 Thus $\mu$ is absolutely continuous with respect to Lebesgue measure on the open interval, with density
 $$
@@ -117,9 +117,9 @@ Choose $\psi\in C_c^1([0,1))$ with $0\le\psi\le1$ and $\psi(0)=1$. For $\varepsi
 $$
 f_\varepsilon(x):=\int_0^x \psi(t/\varepsilon)\,dt.
 $$
-Then $f_\varepsilon'\to\mathbf1_{\{0\}}$ pointwise on $[0,1]$, with $|f_\varepsilon'|\le1$, while
+Then $f_\varepsilon'\to\mathbf1_{\{0\}}$ pointwise on $[0,1]$, with $\abs{f_\varepsilon'}\le1$, while
 $$
-\|f_\varepsilon\|_2=O(\varepsilon).
+\norm{f_\varepsilon}_2=O(\varepsilon).
 $$
 By dominated convergence with respect to the finite measure $\mu$,
 $$
@@ -127,8 +127,8 @@ $$
 $$
 But the assumed estimate gives
 $$
-\left|\int f_\varepsilon'\,d\mu\right|
-\le\|f_\varepsilon\|_2\longrightarrow0.
+\abs{\int f_\varepsilon'\,d\mu}
+\le\norm{f_\varepsilon}_2\longrightarrow0.
 $$
 Therefore $\mu(\{0\})=0$. Applying the same construction at $1$ gives $\mu(\{1\})=0$.
 
@@ -143,7 +143,7 @@ $$
 
 ::: pf-step
 
-The density $u=d\mu/dm$ satisfies $|u(x)-u(y)|\le|x-y|^{1/2}$ for almost every $(x,y)\in[0,1]^2$.
+The density $u=d\mu/dm$ satisfies $\abs{u(x)-u(y)}\le\abs{x-y}^{1/2}$ for almost every $(x,y)\in[0,1]^2$.
 
 ::: pf-proof
 
@@ -157,13 +157,13 @@ u(x)-u(y)=-\int_y^x v(t)\,dt.
 $$
 Cauchy--Schwarz gives
 $$
-|u(x)-u(y)|
-\le \|v\|_2\,|x-y|^{1/2}
-\le |x-y|^{1/2}.
+\abs{u(x)-u(y)}
+\le \norm{v}_2\,\abs{x-y}^{1/2}
+\le \abs{x-y}^{1/2}.
 $$
 Thus this representative satisfies the estimate for every $x,y$, and therefore the Radon--Nikodym derivative satisfies
 $$
-\boxed{|u(x)-u(y)|\le |x-y|^{1/2}}
+\boxed{\abs{u(x)-u(y)}\le \abs{x-y}^{1/2}}
 $$
 for almost every pair $(x,y)\in[0,1]^2$.
 

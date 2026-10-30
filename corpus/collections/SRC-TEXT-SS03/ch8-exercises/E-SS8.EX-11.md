@@ -21,10 +21,10 @@ audit:
 ---
 
 ::: {.exercise}
-11. Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $| f ( z ) | < M$ for some $M > 0 ,$ then
+11. Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $\abs{ f ( z ) } < M$ for some $M > 0 ,$ then
 
 $$
-\left| \frac {f (z) - f (0)}{M ^ {2} - \overline {{f (0)}} f (z)} \right| \leq \frac {| z |}{M R}.
+\abs{ \frac {f (z) - f (0)}{M ^ {2} - \overline {{f (0)}} f (z)} } \leq \frac {\abs{ z }}{M R}.
 $$
 
 [Hint: Use the Schwarz lemma.]
@@ -45,22 +45,22 @@ h=\phi_a\circ g
 $$
 is holomorphic from $\DD$ to itself and satisfies $h(0)=0$. Schwarz's lemma yields
 $$
-|h(\zeta)|\le|\zeta|.
+\abs{h(\zeta)}\le\abs{\zeta}.
 $$
 For $z=R\zeta$, this becomes
 $$
-\left|\frac{f(z)/M-f(0)/M}{1-\overline{f(0)}f(z)/M^2}\right|
-\le \frac{|z|}{R}.
+\abs{\frac{f(z)/M-f(0)/M}{1-\overline{f(0)}f(z)/M^2}}
+\le \frac{\abs{z}}{R}.
 $$
 Simplifying,
 $$
-M\left|\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}\right|
-\le\frac{|z|}{R},
+M\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}
+\le\frac{\abs{z}}{R},
 $$
 and hence
 $$
 \boxed{
-\left|\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}\right|
-\le\frac{|z|}{MR}}.
+\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}
+\le\frac{\abs{z}}{MR}}.
 $$
 :::

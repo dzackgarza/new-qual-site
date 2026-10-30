@@ -43,7 +43,7 @@ $$
 $$
 By continuity there is $\delta>0$ such that
 $$
-|x-x_0|<\delta,
+\abs{x-x_0}<\delta,
 \qquad x\in[0,1],
 $$
 implies

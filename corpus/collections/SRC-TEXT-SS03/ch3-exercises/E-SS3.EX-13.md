@@ -19,7 +19,7 @@ audit:
 13. Suppose $f ( z )$ is holomorphic in a punctured disc $D _ { r } ( z _ { 0 } ) - \{ z _ { 0 } \}$ . Suppose also that
 
 $$
-| f (z) | \leq A | z - z _ {0} | ^ {- 1 + \epsilon}
+\abs{ f (z) } \leq A \abs{ z - z _ {0} } ^ {- 1 + \epsilon}
 $$
 
 for some $\epsilon > 0$ , and all $z \ \mathrm { n e a r } \ z _ { 0 }$ . Show that the singularity of $f$ at $z _ { 0 }$ is removable.
@@ -30,13 +30,13 @@ Translate so that $z_0=0$. Write the Laurent expansion
 $$
 f(z)=\sum_{n=-\infty}^{\infty}a_n z^n
 $$
-in a punctured disc. For $m\ge1$, Cauchy's coefficient formula on $|z|=\rho$ gives
+in a punctured disc. For $m\ge1$, Cauchy's coefficient formula on $\abs{z}=\rho$ gives
 $$
-a_{-m}=\frac1{2\pi i}\int_{|z|=\rho} f(z)z^{m-1}\,dz.
+a_{-m}=\frac1{2\pi i}\int_{\abs{z}=\rho} f(z)z^{m-1}\,dz.
 $$
 Using the assumed bound,
 $$
-|a_{-m}|\le \rho\cdot A\rho^{-1+\epsilon}\rho^{m-1}
+\abs{a_{-m}}\le \rho\cdot A\rho^{-1+\epsilon}\rho^{m-1}
 =A\rho^{m-1+\epsilon}.
 $$
 Since $m-1+\epsilon>0$, letting $\rho\downarrow0$ gives $a_{-m}=0$ for every $m\ge1$. Thus the principal part vanishes, so the singularity is removable.

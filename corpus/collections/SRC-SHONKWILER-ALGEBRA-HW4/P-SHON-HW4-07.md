@@ -247,7 +247,7 @@ $$
 $$
 then
 $$
-\boxed{|f(S_3)|=2}.
+\boxed{\cardinality{f(S_3)}=2}.
 $$
 
 
@@ -335,11 +335,11 @@ $$
 $$
 given by its action on those three elements, so
 $$
-|\operatorname{Aut}(S_3)|\le6.
+\cardinality{\operatorname{Aut}(S_3)}\le6.
 $$
 The inner automorphism group has order
 $$
-|S_3/Z(S_3)|=6
+\cardinality{S_3/Z(S_3)}=6
 $$
 because $Z(S_3)=1$. Hence every automorphism is inner.
 
@@ -467,7 +467,7 @@ has order $3$ and lies in $SO(2)$.
 
 Injectivity gives
 $$
-|\rho(A_3)|=3.
+\cardinality{\rho(A_3)}=3.
 $$
 The determinant restricted to $\rho(A_3)$ is a homomorphism from a group of odd order $3$ to $\{\pm1\}$, so it is trivial. Hence every element has determinant $1$.
 

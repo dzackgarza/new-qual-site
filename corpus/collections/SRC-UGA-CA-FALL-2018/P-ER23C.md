@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ER23C
 kind: problem
-title: $z^4+6z+3$ has three zeros in $1\le|z|\le 2$
+title: $z^4+6z+3$ has three zeros in $1\le\abs{z}\le 2$
 classification:
   areas:
   - complex-analysis
@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that $P(z) \definedas z^4 + 6z + 3$ has 3 zeros in $\theset{1\leq \abs{z} \leq 2}$.
+Show that $P(z) \coloneqq z^4 + 6z + 3$ has 3 zeros in $\theset{1\leq \abs{z} \leq 2}$.
 :::
 
 ::: {.solution}

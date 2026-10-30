@@ -105,7 +105,7 @@ $$
 
 ::: {.pf-step #s1-3}
 
-Let $C_R$ be the upper semicircle $|z|=R$. Then
+Let $C_R$ be the upper semicircle $\abs{z}=R$. Then
 $$
 \int_{C_R}F(z)\,dz\longrightarrow0
 \qquad(R\to\infty).
@@ -116,20 +116,20 @@ $$
 
 For $R>1$ and $z\in C_R$,
 $$
-|1+z^4|
+\abs{1+z^4}
 \ge
-|z|^4-1
+\abs{z}^4-1
 =R^4-1.
 $$
 Hence
 $$
-|F(z)|
+\abs{F(z)}
 \le
 \frac1{R^4-1}.
 $$
 The arc length of $C_R$ is $\pi R$, so the ML estimate gives
 $$
-\left|\int_{C_R}F(z)\,dz\right|
+\abs{\int_{C_R}F(z)\,dz}
 \le
 \frac{\pi R}{R^4-1}
 \longrightarrow0.

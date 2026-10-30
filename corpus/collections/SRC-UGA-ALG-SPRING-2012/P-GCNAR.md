@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the following matrix as a linear transformation from $V\definedas \CC^5$ to itself:
+Consider the following matrix as a linear transformation from $V\coloneqq \CC^5$ to itself:
 $$
 A=\left(\begin{array}{ccccc}
 -1 & 1 & 0 & 0 & 0 \\

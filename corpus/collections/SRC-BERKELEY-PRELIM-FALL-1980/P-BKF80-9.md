@@ -20,9 +20,9 @@ X=\begin{pmatrix}x&y\\z&t\end{pmatrix},
 $$
 define
 $$
-\|X\|=x^2+y^2+z^2+t^2,
+\norm{X}=x^2+y^2+z^2+t^2,
 \qquad
-d(X,Y)=\|X-Y\|.
+d(X,Y)=\norm{X-Y}.
 $$
 Let
 $$
@@ -121,5 +121,5 @@ Step [](#min-distance-value){.pf-ref} gives both requested conclusions.
 :::
 
 ::: {.remark}
-With $\|X\|$ the sum of the squared entries, $d(X,Y)=\norm{X-Y}_F^2$ is the square of the Frobenius distance and does not satisfy the triangle inequality. For the Frobenius distance $\norm{X-Y}_F$ itself, the minimum distance from $A$ to $\Sigma$ is also $1$, attained at the same $S$.
+With $\norm{X}$ the sum of the squared entries, $d(X,Y)=\norm{X-Y}_F^2$ is the square of the Frobenius distance and does not satisfy the triangle inequality. For the Frobenius distance $\norm{X-Y}_F$ itself, the minimum distance from $A$ to $\Sigma$ is also $1$, attained at the same $S$.
 :::

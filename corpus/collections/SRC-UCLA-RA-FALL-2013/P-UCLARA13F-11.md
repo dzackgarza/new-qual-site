@@ -20,13 +20,13 @@ audit:
 Let $S$ be a subspace of $C([0,1])$.
 Write
 $$
-\|f\|_\infty=\sup_{x\in[0,1]}|f(x)|,
+\norm{f}_\infty=\sup_{x\in[0,1]}\abs{f(x)},
 \qquad
-\|f\|_2=\left(\int_0^1|f(x)|^2\,dx\right)^{1/2}.
+\norm{f}_2=\left(\int_0^1\abs{f(x)}^2\,dx\right)^{1/2}.
 $$
 Suppose there is $K\ge0$ such that
 $$
-\|f\|_\infty\le K\|f\|_2
+\norm{f}_\infty\le K\norm{f}_2
 $$
 for every $f\in S$.
 Show that $S$ is finite-dimensional.
@@ -88,7 +88,7 @@ $$
 Each $f_n$ has $L^2$ norm $1$, so
 $$
 \int_0^1F_N
-=\sum_{n=1}^N\int_0^1|f_n|^2
+=\sum_{n=1}^N\int_0^1\abs{f_n}^2
 =N.
 $$
 
@@ -141,7 +141,7 @@ g_N(x_N)=F_N(x_N)
 $$
 and
 $$
-\|g_N\|_2^2=F_N(x_N).
+\norm{g_N}_2^2=F_N(x_N).
 $$
 
 
@@ -153,8 +153,8 @@ g_N(x_N)=\sum_{n=1}^Nf_n(x_N)^2=F_N(x_N).
 $$
 By orthonormality from step [](#s1-2){.pf-ref},
 $$
-\|g_N\|_2^2
-=\sum_{n=1}^N|c_n|^2
+\norm{g_N}_2^2
+=\sum_{n=1}^N\abs{c_n}^2
 =F_N(x_N).
 $$
 
@@ -175,8 +175,8 @@ $$
 
 Step [](#s1-6){.pf-ref} gives
 $$
-F_N(x_N)=|g_N(x_N)|\leq\|g_N\|_\infty
-\leq K\|g_N\|_2
+F_N(x_N)=\abs{g_N(x_N)}\leq\norm{g_N}_\infty
+\leq K\norm{g_N}_2
 =K\sqrt{F_N(x_N)}.
 $$
 

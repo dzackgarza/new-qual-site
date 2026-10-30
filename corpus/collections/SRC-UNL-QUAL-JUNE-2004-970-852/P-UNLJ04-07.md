@@ -627,7 +627,7 @@ S\subseteq V(G')
 $$
 has
 $$
-|S|\le2
+\cardinality{S}\le2
 $$
 and
 $$
@@ -872,7 +872,7 @@ S\subseteq V(G')
 $$
 with
 $$
-|S|\le2.
+\cardinality{S}\le2.
 $$
 
 If

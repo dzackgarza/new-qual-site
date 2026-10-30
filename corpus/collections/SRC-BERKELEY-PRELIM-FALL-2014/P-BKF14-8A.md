@@ -144,14 +144,14 @@ $r\mapsto S_r$ is injective.
 
 One has
 $$
-|L(\QQ)|=2^{\aleph_0}=|\RR|.
+\cardinality{L(\QQ)}=2^{\aleph_0}=\cardinality{\RR}.
 $$
 
 ::: pf-proof
 
 Step [](#s4){.pf-ref} gives
 $$
-|\RR|\le|L(\QQ)|.
+\cardinality{\RR}\le\cardinality{L(\QQ)}.
 $$
 On the other hand,
 $$
@@ -159,7 +159,7 @@ L(\QQ)\subseteq\mathcal P(\QQ),
 $$
 and because $\QQ$ is countably infinite,
 $$
-|\mathcal P(\QQ)|=2^{\aleph_0}=|\RR|.
+\cardinality{\mathcal P(\QQ)}=2^{\aleph_0}=\cardinality{\RR}.
 $$
 Hence equality holds.
 
@@ -183,7 +183,7 @@ L(X)\subseteq\mathcal P(X),
 $$
 so
 $$
-|L(X)|\le2^{\aleph_0}.
+\cardinality{L(X)}\le2^{\aleph_0}.
 $$
 Step [](#s5){.pf-ref} shows that equality is attained for $\QQ$.
 

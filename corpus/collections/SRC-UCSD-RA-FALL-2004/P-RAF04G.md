@@ -46,8 +46,8 @@ K:=h([-1,1]).
 $$
 Let $\nu=h_*m$ be the pushforward of Lebesgue measure. Then for every measurable $\Phi:K\to\CC$,
 $$
-\int_{-1}^1 |\Phi(h(x))|\,dx
-=\int_K|\Phi(t)|\,d\nu(t).
+\int_{-1}^1 \abs{\Phi(h(x))}\,dx
+=\int_K\abs{\Phi(t)}\,d\nu(t).
 $$
 Thus it is enough to show that the polynomials
 $$
@@ -73,11 +73,11 @@ Approximate continuous functions by zero-constant polynomials in $L^1(K,\nu)$.
 
 Fix $\varphi\in C(K)$ and $\varepsilon>0$. Since $\nu(\{0\})=0$, choose an open neighborhood $U$ of $0$ in $K$ so small that
 $$
-\int_U |\varphi|\,d\nu<\frac\varepsilon2.
+\int_U \abs{\varphi}\,d\nu<\frac\varepsilon2.
 $$
 Choose a continuous cutoff $\chi:K\to[0,1]$ such that $\chi=0$ on a neighborhood of $0$ and $\chi=1$ on $K\setminus U$. Then
 $$
-\|\varphi-\chi\varphi\|_{L^1(\nu)}<\frac\varepsilon2.
+\norm{\varphi-\chi\varphi}_{L^1(\nu)}<\frac\varepsilon2.
 $$
 
 Define
@@ -90,20 +90,20 @@ $$
 $$
 Because $\chi$ vanishes on a neighborhood of $0$, $\psi\in C(K)$. By the Weierstrass approximation theorem, there is a polynomial $q$ such that
 $$
-\|q-\psi\|_{\infty}<
-\frac{\varepsilon}{2\nu(K)\max(1,\sup_{t\in K}|t|)}.
+\norm{q-\psi}_{\infty}<
+\frac{\varepsilon}{2\nu(K)\max(1,\sup_{t\in K}\abs{t})}.
 $$
 Then $p(t):=tq(t)$ has zero constant term and
 $$
 \begin{aligned}
-\|p-\chi\varphi\|_{L^1(\nu)}
-&=\int_K |t|\,|q(t)-\psi(t)|\,d\nu(t)\\
+\norm{p-\chi\varphi}_{L^1(\nu)}
+&=\int_K \abs{t}\,\abs{q(t)-\psi(t)}\,d\nu(t)\\
 &<\frac\varepsilon2.
 \end{aligned}
 $$
 Therefore
 $$
-\|p-\varphi\|_{L^1(\nu)}<\varepsilon.
+\norm{p-\varphi}_{L^1(\nu)}<\varepsilon.
 $$
 So zero-constant polynomials are dense in $C(K)$ with respect to the $L^1(\nu)$ norm.
 

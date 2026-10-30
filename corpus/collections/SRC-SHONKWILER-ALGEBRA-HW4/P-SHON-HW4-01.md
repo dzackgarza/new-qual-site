@@ -19,9 +19,9 @@ audit:
 Let $N\triangleleft G$ be a normal subgroup of a finite group $G$.
 Assume
 $$
-\gcd(|N|,[G:N])=1.
+\gcd(\cardinality{N},[G:N])=1.
 $$
-Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
+Prove that $N$ is the unique subgroup of $G$ of order $\cardinality{N}$.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ H\le G
 $$
 be any subgroup with
 $$
-|H|=|N|.
+\cardinality{H}=\cardinality{N}.
 $$
 
 ::: pf
@@ -92,7 +92,7 @@ is surjective with kernel $H\cap N$.
 Therefore
 $$
 \boxed{
-|HN/N|
+\cardinality{HN/N}
 =
 [H:H\cap N]}.
 $$
@@ -110,7 +110,7 @@ Take orders in the finite-group isomorphism from step [](#s1-2){.pf-ref}.
 
 The integer
 $$
-|HN/N|
+\cardinality{HN/N}
 $$
 divides
 $$
@@ -126,7 +126,7 @@ N\le HN\le G,
 $$
 the quotient $HN/N$ is a subgroup of $G/N$. By Lagrange's theorem,
 $$
-|HN/N|\mid|G/N|=[G:N].
+\cardinality{HN/N}\mid\cardinality{G/N}=[G:N].
 $$
 
 :::
@@ -137,16 +137,16 @@ $$
 
 The integer
 $$
-|HN/N|
+\cardinality{HN/N}
 $$
-also divides $|H|$.
+also divides $\cardinality{H}$.
 
 
 ::: pf-proof
 
 By step [](#s1-3){.pf-ref},
 $$
-|HN/N|=[H:H\cap N],
+\cardinality{HN/N}=[H:H\cap N],
 $$
 and every subgroup index divides the group order in a finite group.
 
@@ -158,12 +158,12 @@ and every subgroup index divides the group order in a finite group.
 
 Since
 $$
-|H|=|N|,
+\cardinality{H}=\cardinality{N},
 $$
 one has
 $$
 \boxed{
-|HN/N|\mid|N|}.
+\cardinality{HN/N}\mid\cardinality{N}}.
 $$
 
 
@@ -180,23 +180,23 @@ Substitute the given equality into step [](#s1-5){.pf-ref}.
 By the coprimality hypothesis,
 $$
 \boxed{
-|HN/N|=1}.
+\cardinality{HN/N}=1}.
 $$
 
 
 ::: pf-proof
 
-Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} show that $|HN/N|$ divides both
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} show that $\cardinality{HN/N}$ divides both
 $$
 [G:N]
 $$
 and
 $$
-|N|.
+\cardinality{N}.
 $$
 Since
 $$
-\gcd(|N|,[G:N])=1,
+\gcd(\cardinality{N},[G:N])=1,
 $$
 the only common positive divisor is $1$.
 
@@ -243,7 +243,7 @@ $$
 
 Since
 $$
-|H|=|N|,
+\cardinality{H}=\cardinality{N},
 $$
 the inclusion in step [](#s1-9){.pf-ref} is equality:
 $$
@@ -261,12 +261,12 @@ A finite subgroup contained in another finite group of the same order must equal
 
 ::: {.pf-step #s1-11}
 
-Thus $N$ is the unique subgroup of $G$ of order $|N|$.
+Thus $N$ is the unique subgroup of $G$ of order $\cardinality{N}$.
 
 
 ::: pf-proof
 
-The subgroup $H$ was arbitrary among subgroups with $|H|=|N|$, and step [](#s1-10){.pf-ref} shows every such $H$ equals $N$.
+The subgroup $H$ was arbitrary among subgroups with $\cardinality{H}=\cardinality{N}$, and step [](#s1-10){.pf-ref} shows every such $H$ equals $N$.
 
 :::
 

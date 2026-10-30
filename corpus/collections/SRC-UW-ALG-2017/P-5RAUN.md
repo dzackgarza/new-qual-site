@@ -43,25 +43,25 @@ $$
 $$
 Thus $ho(G)\subseteq \SL_2(\CC)$.
 
-We now justify that $2\mid |G|$. We use the standard character-degree divisibility argument, included here for completeness. Let $\chi$ be an irreducible complex character of degree $d=\chi(1)$. For each conjugacy class $C$ with representative $c$, the class sum
+We now justify that $2\mid \cardinality{G}$. We use the standard character-degree divisibility argument, included here for completeness. Let $\chi$ be an irreducible complex character of degree $d=\chi(1)$. For each conjugacy class $C$ with representative $c$, the class sum
 $$
 z_C=\sum_{g\in C}g\in Z(\ZZ[G])
 $$
 acts on the irreducible representation by the scalar
 $$
-\omega_C=\frac{|C|\chi(c)}{d}.
+\omega_C=\frac{\cardinality{C}\chi(c)}{d}.
 $$
 Because multiplication by $z_C$ is an integral endomorphism of the finite free abelian group $Z(\ZZ[G])$, Cayley--Hamilton shows that $\omega_C$ is an algebraic integer. Character values are algebraic integers as well. Character orthogonality gives
 $$
-|G|=\sum_{g\in G}\chi(g)\chi(g^{-1})
-=d^2+\sum_{C\ne\{1\}}|C|\chi(c)\chi(c^{-1}).
+\cardinality{G}=\sum_{g\in G}\chi(g)\chi(g^{-1})
+=d^2+\sum_{C\ne\{1\}}\cardinality{C}\chi(c)\chi(c^{-1}).
 $$
 Dividing by $d$,
 $$
-\frac{|G|}{d}
+\frac{\cardinality{G}}{d}
 =d+\sum_{C\ne\{1\}}\omega_C\chi(c^{-1}).
 $$
-The right side is an algebraic integer, while the left side is rational; hence $|G|/d\in\ZZ$. Therefore $d\mid |G|$. Applying this with $d=2$ gives $2\mid |G|$.
+The right side is an algebraic integer, while the left side is rational; hence $\cardinality{G}/d\in\ZZ$. Therefore $d\mid \cardinality{G}$. Applying this with $d=2$ gives $2\mid \cardinality{G}$.
 
 By Cauchy's theorem, $G$ has an element $t$ of order $2$. Since
 $$

@@ -153,9 +153,9 @@ The sheaf $\mcf$ is free on a Zariski neighborhood of $x$.
 
 Choose the basis $m_1,\ldots,m_r$ of $\mcf_x$ from step [](#s2){.pf-ref}. After shrinking
 to an open neighborhood $V$ of $x$, each $m_i$ is represented by a section of
-$\mcf|_V$. These sections define a morphism
+$\mcf\restrict_V$. These sections define a morphism
 $$
-\psi:\OO_V^{\oplus r}\longrightarrow\mcf|_V
+\psi:\OO_V^{\oplus r}\longrightarrow\mcf\restrict_V
 $$
 whose stalk at $x$ is an isomorphism.
 
@@ -163,7 +163,7 @@ Because $\mcf$ is coherent, the kernel and cokernel of $\psi$ are coherent.
 Their stalks at $x$ vanish, so after shrinking $V$ once more both sheaves
 vanish identically. Thus
 $$
-\psi:\OO_V^{\oplus r}\xrightarrow{\sim}\mcf|_V.
+\psi:\OO_V^{\oplus r}\xrightarrow{\sim}\mcf\restrict_V.
 $$
 Hence $\mcf$ is free on a Zariski neighborhood of $x$.
 

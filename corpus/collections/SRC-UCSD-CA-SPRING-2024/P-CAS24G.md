@@ -43,21 +43,21 @@ $$
 (i) If $f$ has a removable singularity at $a$, it extends holomorphically
 across $a$. Then $P\circ f$ also extends holomorphically, so $g$ is removable.
 
-(ii) If $f$ has a pole at $a$, then $|f(z)|\to\infty$ as $z\to a$. Since a
-nonconstant polynomial satisfies $|P(w)|\to\infty$ as $|w|\to\infty$, we get
+(ii) If $f$ has a pole at $a$, then $\abs{f(z)}\to\infty$ as $z\to a$. Since a
+nonconstant polynomial satisfies $\abs{P(w)}\to\infty$ as $\abs{w}\to\infty$, we get
 $$
-|g(z)|=|P(f(z))|\to\infty.
+\abs{g(z)}=\abs{P(f(z))}\to\infty.
 $$
 Thus $g$ has a pole at $a$.
 
 (iii) Suppose $f$ is essential at $a$. If $g=P(f)$ were removable, then $g$
 would be bounded near $a$. Polynomial growth implies that the set
 $$
-\{w:|P(w)|\le M\}
+\{w:\abs{P(w)}\le M\}
 $$
 is bounded for every $M$, so $f$ would be bounded near $a$ and hence
-removable, a contradiction. If $g$ had a pole, then $|P(f(z))|\to\infty$;
-again polynomial growth forces $|f(z)|\to\infty$, so $f$ would have a pole,
+removable, a contradiction. If $g$ had a pole, then $\abs{P(f(z))}\to\infty$;
+again polynomial growth forces $\abs{f(z)}\to\infty$, so $f$ would have a pole,
 also a contradiction. Therefore $g$ is neither removable nor a pole, and its
 isolated singularity at $a$ is essential.
 :::

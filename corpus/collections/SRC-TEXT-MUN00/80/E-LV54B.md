@@ -50,7 +50,7 @@ $U$ is path connected and locally path connected, and the image of $\pi_1(U)$ in
 $s_e(U)$ is the path component of $c^{-1}(U)$ that contains $e$, and $c$ maps it homeomorphically onto $U$.
 
 ::: pf-proof
-$s_e(U)$ is path connected. A path $\gamma$ in $c^{-1}(U)$ from $e$ is the unique lift of $c \circ \gamma$ starting at $e$, and so is $s_e \circ c \circ \gamma$; so $\gamma$ lies in $s_e(U)$. Thus $s_e(U)$ is the path component. Because $c \circ s_e = \id_U$, the map $c|_{s_e(U)}$ is a continuous bijection onto $U$ with continuous inverse $s_e$.
+$s_e(U)$ is path connected. A path $\gamma$ in $c^{-1}(U)$ from $e$ is the unique lift of $c \circ \gamma$ starting at $e$, and so is $s_e \circ c \circ \gamma$; so $\gamma$ lies in $s_e(U)$. Thus $s_e(U)$ is the path component. Because $c \circ s_e = \id_U$, the map $c\restrict_{s_e(U)}$ is a continuous bijection onto $U$ with continuous inverse $s_e$.
 :::
 
 :::
@@ -95,7 +95,7 @@ The first part is step [](#lemma){.pf-ref} for $c = r$. The composite $\pi_1(V_\
 $p^{-1}(U)$ is a disjoint union of open sets, each mapped homeomorphically onto $U$ by $p$.
 
 ::: pf-proof
-By step [](#lemma){.pf-ref} for $c = q$, each $q^{-1}(V_\alpha)$ is a disjoint union of open sets $W_{\alpha\beta}$ mapped homeomorphically onto $V_\alpha$. Then $p^{-1}(U) = \bigsqcup_{\alpha,\beta} W_{\alpha\beta}$, and $p|_{W_{\alpha\beta}} = r|_{V_\alpha} \circ q|_{W_{\alpha\beta}}$ is a homeomorphism onto $U$. Also $p$ is surjective because $q$ and $r$ are.
+By step [](#lemma){.pf-ref} for $c = q$, each $q^{-1}(V_\alpha)$ is a disjoint union of open sets $W_{\alpha\beta}$ mapped homeomorphically onto $V_\alpha$. Then $p^{-1}(U) = \bigsqcup_{\alpha,\beta} W_{\alpha\beta}$, and $p\restrict_{W_{\alpha\beta}} = r\restrict_{V_\alpha} \circ q\restrict_{W_{\alpha\beta}}$ is a homeomorphism onto $U$. Also $p$ is surjective because $q$ and $r$ are.
 :::
 
 :::

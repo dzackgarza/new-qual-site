@@ -25,7 +25,7 @@ B_0=0.
 $$
 Then
 $$
-|B_n|\le M
+\abs{B_n}\le M
 $$
 for every $n$.
 
@@ -71,9 +71,9 @@ which rearranges to the displayed identity.
 
 For integers $m\le N$,
 $$
-\left|
+\abs{
 \sum_{n=m}^N a_nb_n
-\right|
+}
 \le
 2Ma_m.
 $$
@@ -81,11 +81,11 @@ $$
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref} and $|B_n|\le M$,
+By step [](#s1-1){.pf-ref} and $\abs{B_n}\le M$,
 $$
-\left|
+\abs{
 \sum_{n=m}^N a_nb_n
-\right|
+}
 \le
 Ma_N+Ma_m
 +
@@ -103,9 +103,9 @@ a_m-a_N.
 $$
 Hence
 $$
-\left|
+\abs{
 \sum_{n=m}^N a_nb_n
-\right|
+}
 \le
 Ma_N+Ma_m+M(a_m-a_N)
 =
@@ -138,9 +138,9 @@ $$
 for every $m\ge m_0$.
 Then for every $N\ge m\ge m_0$, step [](#s1-2){.pf-ref} gives
 $$
-\left|
+\abs{
 \sum_{n=m}^N a_nb_n
-\right|
+}
 <
 \varepsilon.
 $$

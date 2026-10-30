@@ -48,7 +48,7 @@ See (III, Ex. 11.5--11.7) for further examples and applications.
 Put $A_n=\Gamma(Y_n,\OO_{Y_n})$ and $G_n=A_n^\times$.
 The latter is also $\Gamma(Y_n,\OO_{Y_n}^*)$: the local inverses of an everywhere invertible section agree and glue.
 For an inverse system, the Mittag--Leffler condition means that the images in each fixed term stabilize [@Har10a, Chapter II, §9].
-All the sheaves on the thickenings are regarded as sheaves on their common underlying space $|\mathfrak X|$.
+All the sheaves on the thickenings are regarded as sheaves on their common underlying space $\underlyingspace{\mathfrak X}$.
 
 ::: pf
 
@@ -189,7 +189,7 @@ This is possible because the affine formal opens form a basis and $L_1$ is inver
 Write $U_n$ for the corresponding affine open of $Y_n$, and choose a frame $s_1\in\Gamma(U_1,L_1)$.
 
 Suppose a frame $s_n$ has been chosen.
-The surjection $L_{n+1}|_{U_{n+1}}\to L_n|_{U_n}$ is a surjection of quasi-coherent sheaves on the affine scheme $U_{n+1}$, with $L_n$ regarded there through the quotient structure sheaf.
+The surjection $L_{n+1}\restrict_{U_{n+1}}\to L_n\restrict_{U_n}$ is a surjection of quasi-coherent sheaves on the affine scheme $U_{n+1}$, with $L_n$ regarded there through the quotient structure sheaf.
 Exactness of affine sections therefore lifts $s_n$ to a section $s_{n+1}$ of $L_{n+1}$ on that same open [@Har10a, Proposition II.5.6].
 At every stalk, express $s_{n+1}$ in a local frame of $L_{n+1}$.
 Its coefficient becomes a unit after reduction to $U_n$, since $s_n$ is a frame.
@@ -197,10 +197,10 @@ The kernel of this local ring quotient is nilpotent, so the coefficient itself i
 Hence $s_{n+1}$ is a frame on all of $U_{n+1}$.
 
 Induction gives compatible frames on the fixed neighborhood $\mathfrak U$, without shrinking it as $n$ increases.
-They define compatible isomorphisms $\OO_{U_n}\xrightarrow{\cong}L_n|_{U_n}$.
+They define compatible isomorphisms $\OO_{U_n}\xrightarrow{\cong}L_n\restrict_{U_n}$.
 Taking their inverse limits and using the sectionwise construction of limits [@Har10a, Proposition II.9.2] gives
 $$
-\OO_{\mathfrak U}\xrightarrow{\cong}L|_{\mathfrak U}.
+\OO_{\mathfrak U}\xrightarrow{\cong}L\restrict_{\mathfrak U}.
 $$
 Thus $L$ is invertible.
 

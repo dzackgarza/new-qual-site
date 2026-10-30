@@ -59,9 +59,9 @@ is absolutely convergent.
 
 Translation preserves the $L^2$ norm. Hence Cauchy--Schwarz gives
 $$
-\int_{\RR}|f(x-y)f(y)|\,dy
-\leq\|f(x-\cdot)\|_2\|f\|_2
-=\|f\|_2^2<\infty.
+\int_{\RR}\abs{f(x-y)f(y)}\,dy
+\leq\norm{f(x-\cdot)}_2\norm{f}_2
+=\norm{f}_2^2<\infty.
 $$
 
 :::
@@ -84,8 +84,8 @@ $$
 
 Plancherel gives $F\in L^2$. Therefore
 $$
-\int_{\RR}|F(\xi)^2|\,d\xi
-=\int_{\RR}|F(\xi)|^2\,d\xi<\infty.
+\int_{\RR}\abs{F(\xi)^2}\,d\xi
+=\int_{\RR}\abs{F(\xi)}^2\,d\xi<\infty.
 $$
 
 :::
@@ -104,13 +104,13 @@ $$
 
 First prove the identity for approximations $f_j\in L^1\cap L^2$ converging to $f$ in $L^2$. For such $f_j$, the usual convolution theorem and Fourier inversion apply. Moreover,
 $$
-\|f_j*f_j-f*f\|_\infty
-\leq(\|f_j\|_2+\|f\|_2)\|f_j-f\|_2\to0
+\norm{f_j*f_j-f*f}_\infty
+\leq(\norm{f_j}_2+\norm{f}_2)\norm{f_j-f}_2\to0
 $$
 by Cauchy--Schwarz, while Plancherel gives $F_j\to F$ in $L^2$ and hence
 $$
-\|F_j^2-F^2\|_1
-\leq(\|F_j\|_2+\|F\|_2)\|F_j-F\|_2\to0.
+\norm{F_j^2-F^2}_1
+\leq(\norm{F_j}_2+\norm{F}_2)\norm{F_j-F}_2\to0.
 $$
 Passing to the limit in the inversion formula yields the displayed identity.
 
@@ -163,11 +163,11 @@ F(-t)=\sqrt{2\pi g(t)}.
 $$
 Then
 $$
-|F(-t)|^2=2\pi|g(t)|,
+\abs{F(-t)}^2=2\pi\abs{g(t)},
 $$
 so
 $$
-\|F\|_2^2=2\pi\|g\|_1<\infty.
+\norm{F}_2^2=2\pi\norm{g}_1<\infty.
 $$
 
 :::

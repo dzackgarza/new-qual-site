@@ -24,7 +24,7 @@ f^n=\underbrace{f\circ\cdots\circ f}_{n\text{ factors}}
 $$
 for $n\in\NN$.
 
-(a) Find an explicit constant $M>0$ such that for each $z\in\CC$ either (i) $|f^n(z)|\to\infty$ as $n\to\infty$, or (ii) $|f^n(z)|\le M$ for all $n\in\NN_0$.
+(a) Find an explicit constant $M>0$ such that for each $z\in\CC$ either (i) $\abs{f^n(z)}\to\infty$ as $n\to\infty$, or (ii) $\abs{f^n(z)}\le M$ for all $n\in\NN_0$.
 
 (b) Let $U$ be the set of all $z\in\CC$ for which (i) holds and $K$ the set of all $z\in\CC$ for which (ii) holds.
 Show that $U$ is open and $K$ is compact without “holes”, i.e. $\CC\setminus K$ has no bounded connected components.
@@ -51,14 +51,14 @@ works.
 
 If
 $$
-|w|>2,
+\abs{w}>2,
 $$
 then
 $$
 \boxed{
-|f(w)|
+\abs{f(w)}
 \ge
-|w|^2-1}.
+\abs{w}^2-1}.
 $$
 
 
@@ -66,13 +66,13 @@ $$
 
 By the reverse triangle inequality,
 $$
-|w^2-1|
+\abs{w^2-1}
 \ge
-\bigl||w|^2-1\bigr|
+\abs{\abs{w}^2-1}
 =
-|w|^2-1,
+\abs{w}^2-1,
 $$
-since $|w|>1$.
+since $\abs{w}>1$.
 
 :::
 
@@ -82,18 +82,18 @@ since $|w|>1$.
 
 If
 $$
-|w|>2,
+\abs{w}>2,
 $$
 then
 $$
 \boxed{
-|w|^2-1>\frac32|w|}.
+\abs{w}^2-1>\frac32\abs{w}}.
 $$
 
 
 ::: pf-proof
 
-For $r=|w|>2$,
+For $r=\abs{w}>2$,
 $$
 r^2-1-\frac32r
 =
@@ -109,12 +109,12 @@ $$
 
 Hence if
 $$
-|w|>2,
+\abs{w}>2,
 $$
 then
 $$
 \boxed{
-|f(w)|>\frac32|w|>2}.
+\abs{f(w)}>\frac32\abs{w}>2}.
 $$
 
 
@@ -131,10 +131,10 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 For every $m\ge0$,
 $$
 \boxed{
-|f^{N+m}(z)|
+\abs{f^{N+m}(z)}
 >
 \left(\frac32\right)^m
-|f^N(z)|}.
+\abs{f^N(z)}}.
 $$
 
 
@@ -142,15 +142,15 @@ $$
 
 Use induction. The case $m=0$ is equality. If the bound holds at $m$, then in particular
 $$
-|f^{N+m}(z)|>2,
+\abs{f^{N+m}(z)}>2,
 $$
 so step [](#s1-3){.pf-ref} gives
 $$
-|f^{N+m+1}(z)|
+\abs{f^{N+m+1}(z)}
 >
-\frac32|f^{N+m}(z)|
+\frac32\abs{f^{N+m}(z)}
 >
-\left(\frac32\right)^{m+1}|f^N(z)|.
+\left(\frac32\right)^{m+1}\abs{f^N(z)}.
 $$
 
 :::
@@ -162,7 +162,7 @@ $$
 Therefore
 $$
 \boxed{
-|f^n(z)|\to\infty}.
+\abs{f^n(z)}\to\infty}.
 $$
 
 
@@ -179,7 +179,7 @@ The lower bound in step [](#s1-4){.pf-ref} grows geometrically to $+\infty$.
 Consequently, if the orbit does not tend to infinity, then
 $$
 \boxed{
-|f^n(z)|\le2}
+\abs{f^n(z)}\le2}
 $$
 for every $n\ge0$.
 
@@ -195,8 +195,8 @@ If some iterate had modulus $>2$, step [](#s1-5){.pf-ref} would force escape.
 ::: {.pf-step #s1-7}
 
 Thus for every $z\in\CC$, exactly one of the following holds:
-- $|f^n(z)|\to\infty$;
-- $|f^n(z)|\le2$ for all $n\ge0$.
+- $\abs{f^n(z)}\to\infty$;
+- $\abs{f^n(z)}\le2$ for all $n\ge0$.
 
 
 ::: pf-proof
@@ -232,13 +232,13 @@ $$
 U
 =
 \bigcup_{N=0}^{\infty}
-\{z:|f^N(z)|>2\}}.
+\{z:\abs{f^N(z)}>2\}}.
 $$
 
 
 ::: pf-proof
 
-If $z\in U$, then eventually $|f^N(z)|>2$. Conversely, if some iterate has modulus $>2$, step [](#s1-5){.pf-ref} gives escape.
+If $z\in U$, then eventually $\abs{f^N(z)}>2$. Conversely, if some iterate has modulus $>2$, step [](#s1-5){.pf-ref} gives escape.
 
 :::
 
@@ -248,7 +248,7 @@ If $z\in U$, then eventually $|f^N(z)|>2$. Conversely, if some iterate has modul
 
 For each $N$,
 $$
-\{z:|f^N(z)|>2\}
+\{z:\abs{f^N(z)}>2\}
 $$
 is open.
 
@@ -257,7 +257,7 @@ is open.
 
 The iterate $f^N$ is a polynomial, hence continuous, and
 $$
-\{w:|w|>2\}
+\{w:\abs{w}>2\}
 $$
 is open.
 
@@ -319,7 +319,7 @@ It is the complement of the open set $U$.
 Also,
 $$
 \boxed{
-K\subseteq\{z:|z|\le2\}}.
+K\subseteq\{z:\abs{z}\le2\}}.
 $$
 
 
@@ -327,7 +327,7 @@ $$
 
 The defining condition for $K$ includes the case $n=0$:
 $$
-|f^0(z)|=|z|\le2.
+\abs{f^0(z)}=\abs{z}\le2.
 $$
 
 :::
@@ -379,7 +379,7 @@ $$
 For every $n\ge0$ and every $z\in\partial V$,
 $$
 \boxed{
-|f^n(z)|\le2}.
+\abs{f^n(z)}\le2}.
 $$
 
 
@@ -400,7 +400,7 @@ and this is the defining property of $K$.
 For each fixed $n$, the maximum modulus principle gives
 $$
 \boxed{
-|f^n(z)|\le2}
+\abs{f^n(z)}\le2}
 $$
 for every $z\in V$.
 
@@ -417,7 +417,7 @@ The domain $V$ is bounded, and the polynomial $f^n$ is holomorphic on a neighbor
 
 Hence every $z\in V$ satisfies
 $$
-|f^n(z)|\le2
+\abs{f^n(z)}\le2
 $$
 for all $n\ge0$.
 

@@ -37,7 +37,7 @@ $$
 then $f$ is holomorphic.
 In particular, Morera’s theorem holds under the weaker assumption that $\begin{array} { r } { \int _ { T } f ( z ) d z = 0 } \end{array}$ for all equilateral triangles.
 
-[Hint: As a first step, assume that f is twice real diferentiable, and write $f ( z ) =$ $f ( z _ { 0 } ) + a ( z - z _ { 0 } ) + b ( \overline { { z - z _ { 0 } } } ) + O ( | z - z _ { 0 } | ^ { 2 } )$ for z near $z _ { \mathrm { 0 } }$ . Integrating this expansion over small circles around $z_0$ yields $\partial f / \partial { \overline { { z } } } = b = 0$ at $z _ { 0 }$ . Alternatively, suppose only that $f$ is diferentiable and apply Green’s theorem to conclude that the real and imaginary parts of f satisfy the Cauchy-Riemann equations.
+[Hint: As a first step, assume that f is twice real diferentiable, and write $f ( z ) =$ $f ( z _ { 0 } ) + a ( z - z _ { 0 } ) + b ( \overline { { z - z _ { 0 } } } ) + O ( \abs{ z - z _ { 0 } } ^ { 2 } )$ for z near $z _ { \mathrm { 0 } }$ . Integrating this expansion over small circles around $z_0$ yields $\partial f / \partial { \overline { { z } } } = b = 0$ at $z _ { 0 }$ . Alternatively, suppose only that $f$ is diferentiable and apply Green’s theorem to conclude that the real and imaginary parts of f satisfy the Cauchy-Riemann equations.
 
 In general, let $\varphi ( w ) = \varphi ( x , y )$ (when $w = x + i y )$ denote a smooth function with $0 \leq \varphi ( w ) \leq 1$ , and $\begin{array} { r } { \int _ { \RR ^ { 2 } } \varphi ( w ) d V ( w ) = 1 } \end{array}$ , where $d V ( w ) = d x d y .$ and $\scriptstyle \int$ denotes the usual integral of a function of two variables in $\RR ^ { 2 }$ . For each $\epsilon > 0$ , let $\varphi _ { \epsilon } ( z ) =$ $\epsilon ^ { - 2 } \varphi ( \epsilon ^ { - 1 } z )$ , as well as
 
@@ -58,7 +58,7 @@ If $f$ is $C^2$ and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorph
 
 ::: pf-proof
 
-Near $z_0$ write $f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(|z-z_0|^2)$ with $b=\partial f/\partial\overline z(z_0)$. On $\abs{z-z_0}=r$ the constant and $a(z-z_0)$ integrate to $0$, the error term integrates to $O(r^3)$, and $\int_{|z-z_0|=r}\overline{(z-z_0)}\,dz=2\pi i r^2$. Hence $0=2\pi i b r^2+O(r^3)$, so $b=0$. As $z_0$ is arbitrary, $\partial f/\partial\overline z=0$ and $f$ is holomorphic.
+Near $z_0$ write $f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(\abs{z-z_0}^2)$ with $b=\partial f/\partial\overline z(z_0)$. On $\abs{z-z_0}=r$ the constant and $a(z-z_0)$ integrate to $0$, the error term integrates to $O(r^3)$, and $\int_{\abs{z-z_0}=r}\overline{(z-z_0)}\,dz=2\pi i r^2$. Hence $0=2\pi i b r^2+O(r^3)$, so $b=0$. As $z_0$ is arbitrary, $\partial f/\partial\overline z=0$ and $f$ is holomorphic.
 
 :::
 

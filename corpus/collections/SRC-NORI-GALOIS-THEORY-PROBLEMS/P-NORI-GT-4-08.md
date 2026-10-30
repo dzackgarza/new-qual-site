@@ -179,7 +179,7 @@ The group $\operatorname{Gal}(E/\FF_q)$ has order $n$.
 
 By step [](#s1-3){.pf-ref}, $E/\FF_q$ is finite Galois. Hence the order of its Galois group equals its degree:
 $$
-|\operatorname{Gal}(E/\FF_q)|=[E:\FF_q]=n.
+\cardinality{\operatorname{Gal}(E/\FF_q)}=[E:\FF_q]=n.
 $$
 
 :::

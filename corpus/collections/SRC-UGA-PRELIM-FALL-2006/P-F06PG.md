@@ -24,31 +24,31 @@ Using an $\varepsilon$-$\delta$ argument, show that $f(x)g(x)$ is continuous for
 ::: {.solution}
 Fix $a\in\RR$ and let $\varepsilon>0$. Since $f$ is continuous at $a$, choose $\delta_0>0$ such that
 $$
-|x-a|<\delta_0\Longrightarrow |f(x)-f(a)|<1.
+\abs{x-a}<\delta_0\Longrightarrow \abs{f(x)-f(a)}<1.
 $$
 Then, for such $x$,
 $$
-|f(x)|\le |f(a)|+1=:M.
+\abs{f(x)}\le \abs{f(a)}+1=:M.
 $$
 By continuity of $g$ at $a$, choose $\delta_1>0$ such that
 $$
-|x-a|<\delta_1\Longrightarrow |g(x)-g(a)|<\frac{\varepsilon}{2M}.
+\abs{x-a}<\delta_1\Longrightarrow \abs{g(x)-g(a)}<\frac{\varepsilon}{2M}.
 $$
 By continuity of $f$ at $a$, choose $\delta_2>0$ such that
 $$
-|x-a|<\delta_2\Longrightarrow |f(x)-f(a)|<\frac{\varepsilon}{2(|g(a)|+1)}.
+\abs{x-a}<\delta_2\Longrightarrow \abs{f(x)-f(a)}<\frac{\varepsilon}{2(\abs{g(a)}+1)}.
 $$
 Set
 $$
 \delta=\min\{\delta_0,\delta_1,\delta_2\}.
 $$
-If $|x-a|<\delta$, then
+If $\abs{x-a}<\delta$, then
 $$
 \begin{aligned}
-|f(x)g(x)-f(a)g(a)|
-&\le |f(x)|\,|g(x)-g(a)|+|g(a)|\,|f(x)-f(a)|\\
+\abs{f(x)g(x)-f(a)g(a)}
+&\le \abs{f(x)}\,\abs{g(x)-g(a)}+\abs{g(a)}\,\abs{f(x)-f(a)}\\
 &< M\frac{\varepsilon}{2M}
-+|g(a)|\frac{\varepsilon}{2(|g(a)|+1)}\\
++\abs{g(a)}\frac{\varepsilon}{2(\abs{g(a)}+1)}\\
 &<\varepsilon.
 \end{aligned}
 $$

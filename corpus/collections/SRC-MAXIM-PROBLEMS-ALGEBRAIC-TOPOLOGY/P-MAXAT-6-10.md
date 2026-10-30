@@ -42,7 +42,7 @@ $$
 
 The real determinant of a complex-linear automorphism is positive: if $A\in GL_n(\CC)$, then
 $$
-\det_{\RR}A=|\det_{\CC}A|^2>0.
+\det_{\RR}A=\abs{\det_{\CC}A}^2>0.
 $$
 Thus a reduction to $GL_n(\CC)$ reduces the real structure group to $GL^+_{2n}(\RR)$, which is equivalent to orientability and hence to $w_1(TM)=0$.
 

@@ -36,7 +36,7 @@ The improper integral in the statement converges absolutely.
 
 ::: pf-proof
 
-The integrand is continuous on every bounded interval. For $|x|\ge1$,
+The integrand is continuous on every bounded interval. For $\abs{x}\ge1$,
 $$
 0\le\frac{x^2}{1+x^4}\le\frac1{x^2},
 $$
@@ -93,15 +93,15 @@ $$
 
 ::: pf-proof
 
-For $R>1$ and $|z|=R$,
+For $R>1$ and $\abs{z}=R$,
 $$
-|1+z^4|\ge R^4-1,
+\abs{1+z^4}\ge R^4-1,
 \qquad
-|f(z)|\le\frac{R^2}{R^4-1}.
+\abs{f(z)}\le\frac{R^2}{R^4-1}.
 $$
 The length of $C_R$ is $\pi R$, so the ML estimate gives
 $$
-\left|\int_{C_R}f(z)\,dz\right|
+\abs{\int_{C_R}f(z)\,dz}
 \le\frac{\pi R^3}{R^4-1}
 \longrightarrow0.
 $$

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $G$ is a simple group of order $|G| = 168 = 2^3 \cdot 3 \cdot 7$.
+Suppose that $G$ is a simple group of order $\cardinality{G} = 168 = 2^3 \cdot 3 \cdot 7$.
 
 (a) Show that $G$ does not have any subgroup $H$ with index $[G:H] \leq 6$.
 
@@ -82,7 +82,7 @@ No such injection $G\hookrightarrow S_n$ exists for $n\le6$.
 
 ::: pf-proof
 
-For $n\le5$, $|S_n|\le120<168=|G|$. For $n=6$, injectivity would imply $168\mid720$, but $720/168=30/7$ is not an integer.
+For $n\le5$, $\cardinality{S_n}\le120<168=\cardinality{G}$. For $n=6$, injectivity would imply $168\mid720$, but $720/168=30/7$ is not an integer.
 This contradicts step [](#s3){.pf-ref}.
 
 :::

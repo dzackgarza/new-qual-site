@@ -34,7 +34,7 @@ $$
 be a complex polynomial of degree $n>0$.
 Prove that
 $$
-\frac1{2\pi i}\int_{|z|=R}z^{n-1}|f(z)|^2\,dz
+\frac1{2\pi i}\int_{\abs{z}=R}z^{n-1}\abs{f(z)}^2\,dz
 =a_0\overline{a_n}\,R^{2n}.
 $$
 :::

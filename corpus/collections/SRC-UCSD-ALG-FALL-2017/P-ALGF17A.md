@@ -79,7 +79,7 @@ P_7\cap P_{11}=1
 $$
 and therefore
 $$
-|H|=|P_7||P_{11}|=77.
+\cardinality{H}=\cardinality{P_7}\cardinality{P_{11}}=77.
 $$
 Moreover, for $x\in P_7$ and $y\in P_{11}$, the commutator $[x,y]$ lies in both $P_7$ and $P_{11}$ because both subgroups are normal. Hence
 $$
@@ -104,17 +104,17 @@ $$
 ::: pf-proof
 Let $Q$ be a Sylow $3$-subgroup of $G$. Then
 $$
-|Q|=3,
+\cardinality{Q}=3,
 \qquad
 Q\cong C_3.
 $$
-Since $|H|=77$ is relatively prime to $3$,
+Since $\cardinality{H}=77$ is relatively prime to $3$,
 $$
 H\cap Q=1.
 $$
 Also
 $$
-|HQ|=\frac{|H||Q|}{|H\cap Q|}=77\cdot3=231=|G|.
+\cardinality{HQ}=\frac{\cardinality{H}\cardinality{Q}}{\cardinality{H\cap Q}}=77\cdot3=231=\cardinality{G}.
 $$
 Hence $G=HQ$. Since $H\triangleleft G$, this is an internal semidirect product:
 $$

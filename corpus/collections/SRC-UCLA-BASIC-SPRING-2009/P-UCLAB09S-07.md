@@ -45,9 +45,9 @@ $$
 \boxed{
 \lim_{h\to0}
 \frac{
-\|f(a+h)-f(a)-Ah\|
+\norm{f(a+h)-f(a)-Ah}
 }{
-\|h\|
+\norm{h}
 }
 =0.
 }
@@ -69,7 +69,7 @@ f(a)+Df(a)h+r(h),
 $$
 where
 $$
-\frac{\|r(h)\|}{\|h\|}
+\frac{\norm{r(h)}}{\norm{h}}
 \to0
 $$
 as $h\to0$.
@@ -82,7 +82,7 @@ as $h\to0$.
 
 Differentiability of $f$ at $a$ implies
 $$
-f(a+h)-f(a)=O(\|h\|).
+f(a+h)-f(a)=O(\norm{h}).
 $$
 
 
@@ -97,21 +97,21 @@ $$
 as in step [](#s1-1){.pf-ref}.
 Since $A$ is linear on a finite-dimensional normed space, it is bounded:
 $$
-\|Ah\|
+\norm{Ah}
 \le
-\|A\|\,\|h\|.
+\norm{A}\,\norm{h}.
 $$
 Also
 $$
-\|r(h)\|
+\norm{r(h)}
 =
-o(\|h\|).
+o(\norm{h}).
 $$
 Hence for sufficiently small $h$,
 $$
-\|f(a+h)-f(a)\|
+\norm{f(a+h)-f(a)}
 \le
-(\|A\|+1)\|h\|.
+(\norm{A}+1)\norm{h}.
 $$
 
 :::
@@ -170,7 +170,7 @@ b+Ah+r(h),
 $$
 with
 $$
-\frac{\|r(h)\|}{\|h\|}
+\frac{\norm{r(h)}}{\norm{h}}
 \to0,
 $$
 and
@@ -181,7 +181,7 @@ g(b)+Bk+s(k),
 $$
 with
 $$
-\frac{\|s(k)\|}{\|k\|}
+\frac{\norm{s(k)}}{\norm{k}}
 \to0.
 $$
 
@@ -210,16 +210,16 @@ k(h)\to0
 $$
 and
 $$
-\|k(h)\|=O(\|h\|).
+\norm{k(h)}=O(\norm{h}).
 $$
 
 
 ::: pf-proof
 
-The $O(\|h\|)$ estimate is step [](#s1-2){.pf-ref}.
+The $O(\norm{h})$ estimate is step [](#s1-2){.pf-ref}.
 In particular,
 $$
-\|k(h)\|\to0,
+\norm{k(h)}\to0,
 $$
 so
 $$
@@ -288,7 +288,7 @@ Br(h)
 $$
 satisfies
 $$
-\frac{\|Br(h)\|}{\|h\|}
+\frac{\norm{Br(h)}}{\norm{h}}
 \to0.
 $$
 
@@ -297,10 +297,10 @@ $$
 
 Boundedness of the linear map $B$ gives
 $$
-\frac{\|Br(h)\|}{\|h\|}
+\frac{\norm{Br(h)}}{\norm{h}}
 \le
-\|B\|
-\frac{\|r(h)\|}{\|h\|}.
+\norm{B}
+\frac{\norm{r(h)}}{\norm{h}}.
 $$
 The final factor tends to $0$ by step [](#s1-4){.pf-ref}.
 
@@ -316,7 +316,7 @@ s(k(h))
 $$
 satisfies
 $$
-\frac{\|s(k(h))\|}{\|h\|}
+\frac{\norm{s(k(h))}}{\norm{h}}
 \to0.
 $$
 
@@ -325,10 +325,10 @@ $$
 
 For $h$ such that $k(h)\ne0$,
 $$
-\frac{\|s(k(h))\|}{\|h\|}
+\frac{\norm{s(k(h))}}{\norm{h}}
 =
-\frac{\|s(k(h))\|}{\|k(h)\|}
-\frac{\|k(h)\|}{\|h\|}.
+\frac{\norm{s(k(h))}}{\norm{k(h)}}
+\frac{\norm{k(h)}}{\norm{h}}.
 $$
 By step [](#s1-5){.pf-ref},
 $$
@@ -337,7 +337,7 @@ $$
 so the first factor tends to $0$ by differentiability of $g$.
 The second factor is bounded because
 $$
-\|k(h)\|=O(\|h\|).
+\norm{k(h)}=O(\norm{h}).
 $$
 Hence the product tends to $0$.
 If
@@ -359,9 +359,9 @@ so the conclusion remains valid.
 Therefore
 $$
 \frac{
-\|g(f(a+h))-g(f(a))-BAh\|
+\norm{g(f(a+h))-g(f(a))-BAh}
 }{
-\|h\|
+\norm{h}
 }
 \to0.
 $$
@@ -375,7 +375,7 @@ g(f(a+h))-g(f(a))-BAh
 =
 Br(h)+s(k(h)).
 $$
-Divide by $\|h\|$ and use the triangle inequality together with steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}.
+Divide by $\norm{h}$ and use the triangle inequality together with steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}.
 
 :::
 

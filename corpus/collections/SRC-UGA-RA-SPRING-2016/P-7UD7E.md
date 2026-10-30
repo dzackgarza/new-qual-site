@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UD7E
 kind: problem
-title: Borel measurability of distribution functions and $\int|f|=\int_0^\infty(\phi+\psi)\,d\lambda$
+title: Borel measurability of distribution functions and $\int\abs{f}=\int_0^\infty(\phi+\psi)\,d\lambda$
 classification:
   areas:
   - real-analysis
@@ -28,14 +28,14 @@ audit:
 Let $(X, \mathcal M, \mu)$ be a measure space.
 For $f\in L^1(\mu)$ and $\lambda > 0$, define
 $$
-\phi(\lambda)=\mu(\{x \in X | f(x)>\lambda\}) 
+\phi(\lambda)=\mu(\{x \in X \st f(x)>\lambda\}) 
 \quad \text { and } \quad 
-\psi(\lambda)=\mu(\{x \in X | f(x)<-\lambda\})
+\psi(\lambda)=\mu(\{x \in X \st f(x)<-\lambda\})
 $$
 
 Show that $\phi, \psi$ are Borel measurable and
 $$
-\int_{X}|f| ~d \mu=\int_{0}^{\infty}[\phi(\lambda)+\psi(\lambda)] ~d \lambda
+\int_{X}\abs{f} ~d \mu=\int_{0}^{\infty}[\phi(\lambda)+\psi(\lambda)] ~d \lambda
 $$
 :::
 
@@ -57,13 +57,13 @@ $\lambda \mapsto \mu\{f > \lambda\}$ is decreasing (if $\lambda_1 < \lambda_2$ t
 
 ::: {.pf-step #s2}
 
-$\int_0^\infty \mu\{|f| > \lambda\}\,d\lambda = \int_X |f|\,d\mu$.
+$\int_0^\infty \mu\{\abs{f} > \lambda\}\,d\lambda = \int_X \abs{f}\,d\mu$.
 
 ::: pf-proof
 
 ::: pf-step
 
-Write $\mu\{|f| > \lambda\} = \int_X \chi_{\{|f(x)| > \lambda\}}\,d\mu(x)$.
+Write $\mu\{\abs{f} > \lambda\} = \int_X \chi_{\{\abs{f(x)} > \lambda\}}\,d\mu(x)$.
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ definition of the measure of a set.
 
 ::: {.pf-step #s2-2}
 
-Interchange: $\int_0^\infty\int_X \chi_{\{|f| > \lambda\}}\,d\mu(x)\,d\lambda = \int_X \int_0^\infty \chi_{\{|f(x)| > \lambda\}}\,d\lambda\,d\mu(x)$.
+Interchange: $\int_0^\infty\int_X \chi_{\{\abs{f} > \lambda\}}\,d\mu(x)\,d\lambda = \int_X \int_0^\infty \chi_{\{\abs{f(x)} > \lambda\}}\,d\lambda\,d\mu(x)$.
 
 ::: pf-proof
 
@@ -87,11 +87,11 @@ Tonelli — the integrand is non-negative and measurable.
 
 ::: {.pf-step #s2-3}
 
-$\int_0^\infty \chi_{\{|f(x)| > \lambda\}}\,d\lambda = |f(x)|$ for every $x$.
+$\int_0^\infty \chi_{\{\abs{f(x)} > \lambda\}}\,d\lambda = \abs{f(x)}$ for every $x$.
 
 ::: pf-proof
 
-the inner integral is the length of $\{\lambda > 0 : \lambda < |f(x)|\} = (0, |f(x)|)$.
+the inner integral is the length of $\{\lambda > 0 : \lambda < \abs{f(x)}\} = (0, \abs{f(x)})$.
 
 :::
 
@@ -99,7 +99,7 @@ the inner integral is the length of $\{\lambda > 0 : \lambda < |f(x)|\} = (0, |f
 
 ::: pf-qed
 
-Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} give $\int_0^\infty\mu\{|f|>\lambda\}d\lambda = \int_X|f|d\mu$.
+Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} give $\int_0^\infty\mu\{\abs{f}>\lambda\}d\lambda = \int_X\abs{f}d\mu$.
 
 :::
 
@@ -109,11 +109,11 @@ Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} give $\int_0^\infty\mu\{|f|>\lam
 
 ::: {.pf-step #s3}
 
-$\{|f| > \lambda\} = \{f > \lambda\} \cup \{f < -\lambda\}$, a disjoint union, so $\mu\{|f| > \lambda\} = \phi(\lambda) + \psi(\lambda)$.
+$\{\abs{f} > \lambda\} = \{f > \lambda\} \cup \{f < -\lambda\}$, a disjoint union, so $\mu\{\abs{f} > \lambda\} = \phi(\lambda) + \psi(\lambda)$.
 
 ::: pf-proof
 
-$|f(x)| > \lambda \iff f(x) > \lambda$ or $f(x) < -\lambda$, and the two sets are disjoint.
+$\abs{f(x)} > \lambda \iff f(x) > \lambda$ or $f(x) < -\lambda$, and the two sets are disjoint.
 
 :::
 
@@ -121,7 +121,7 @@ $|f(x)| > \lambda \iff f(x) > \lambda$ or $f(x) < -\lambda$, and the two sets ar
 
 ::: pf-qed
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give $\int_X|f|\,d\mu = \int_0^\infty[\phi(\lambda) + \psi(\lambda)]\,d\lambda$.
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give $\int_X\abs{f}\,d\mu = \int_0^\infty[\phi(\lambda) + \psi(\lambda)]\,d\lambda$.
 
 :::
 

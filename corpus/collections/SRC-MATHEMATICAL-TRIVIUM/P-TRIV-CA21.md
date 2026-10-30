@@ -173,21 +173,21 @@ The outer-circle contribution tends to zero as $R\to\infty$.
 
 ::: pf-proof
 
-On $|z|=R>1$,
+On $\abs{z}=R>1$,
 $$
-|z^p|=R^p
+\abs{z^p}=R^p
 $$
 and
 $$
-|z^2+1|
+\abs{z^2+1}
 \geq
 R^2-1.
 $$
 The outer circle has length $2\pi R$. Hence
 $$
-\left|
+\abs{
 \int_{C_R}F(z)\,dz
-\right|
+}
 \leq
 \frac{2\pi R^{p+1}}{R^2-1}.
 $$
@@ -205,21 +205,21 @@ $\varepsilon\to0^+$.
 
 ::: pf-proof
 
-On $|z|=\varepsilon<1$,
+On $\abs{z}=\varepsilon<1$,
 $$
-|z^p|=\varepsilon^p
+\abs{z^p}=\varepsilon^p
 $$
 and
 $$
-|z^2+1|
+\abs{z^2+1}
 \geq
 1-\varepsilon^2.
 $$
 The inner circle has length $2\pi\varepsilon$, so
 $$
-\left|
+\abs{
 \int_{\gamma_\varepsilon}F(z)\,dz
-\right|
+}
 \leq
 \frac{2\pi\varepsilon^{p+1}}
 {1-\varepsilon^2}

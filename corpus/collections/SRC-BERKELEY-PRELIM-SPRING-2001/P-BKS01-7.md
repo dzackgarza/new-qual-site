@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Let $f_n:[0,1]\to[0,1]$ satisfy
 $$
-|f_n(x)-f_n(y)|\le |x-y|
+\abs{f_n(x)-f_n(y)}\le \abs{x-y}
 $$
-whenever $|x-y|\ge1/n$.
+whenever $\abs{x-y}\ge1/n$.
 Prove that $(f_n)$ has a uniformly convergent subsequence.
 :::
 

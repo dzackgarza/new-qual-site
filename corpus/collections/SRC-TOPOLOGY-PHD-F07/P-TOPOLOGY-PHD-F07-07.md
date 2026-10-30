@@ -44,7 +44,7 @@ is an open cover of $\RR$.
 
 ::: pf-proof
 Each interval $(-n,n)$ is Euclidean open.
-Given $x\in\RR$, choose an integer $n>|x|$.
+Given $x\in\RR$, choose an integer $n>\abs{x}$.
 Then
 $$
 -n<x<n,

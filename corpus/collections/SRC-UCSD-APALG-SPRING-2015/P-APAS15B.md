@@ -79,7 +79,7 @@ $$
  c_{\mu,\nu}^{\lambda}\,
  S^\mu\boxtimes S^\nu.
 $$
-For $\lambda=(2,2,1)$, the nonzero coefficients with $|\mu|=3$, $|\nu|=2$ are
+For $\lambda=(2,2,1)$, the nonzero coefficients with $\multiindexsize{\mu}=3$, $\multiindexsize{\nu}=2$ are
 $$
 c_{(1,1,1),(1,1)}^{(2,2,1)}=1,
 \qquad

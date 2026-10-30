@@ -32,7 +32,7 @@ f(z)=z^4+\frac{z^3}{4}-\frac14.
 $$
 How many zeros does $f$ have in
 $$
-\left\{z\in\CC:\frac12<|z|<1\right\}?
+\left\{z\in\CC:\frac12<\abs{z}<1\right\}?
 $$
 :::
 
@@ -50,7 +50,7 @@ $$
 \begin{aligned}
 \abs{f(z)-z^4}
 &=
-\left|\frac{z^3}{4}-\frac14\right|
+\abs{\frac{z^3}{4}-\frac14}
 \\
 &\le
 \frac14+\frac14
@@ -82,7 +82,7 @@ $$
 \begin{aligned}
 \abs{f(z)}
 &=
-\left|z^4+\frac{z^3}{4}-\frac14\right|
+\abs{z^4+\frac{z^3}{4}-\frac14}
 \\
 &\ge
 \frac14-\abs z^4-\frac{\abs z^3}{4}

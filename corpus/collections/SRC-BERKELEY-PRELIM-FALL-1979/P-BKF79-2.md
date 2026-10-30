@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Suppose $f$ is holomorphic on the open upper half-plane, satisfies
 $$
-|f(z)|\le1
+\abs{f(z)}\le1
 $$
-there, and $f(i)=0$. How large can $|f(2i)|$ be?
+there, and $f(i)=0$. How large can $\abs{f(2i)}$ be?
 :::
 
 ::: {.solution}

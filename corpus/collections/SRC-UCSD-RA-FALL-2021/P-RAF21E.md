@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_n, f \in L^2(\RR)$ satisfy $f_n \to f$ weakly and $\|f_n\|_2 \to \|f\|_2$ as $n \to \infty$.
+Let $f_n, f \in L^2(\RR)$ satisfy $f_n \to f$ weakly and $\norm{f_n}_2 \to \norm{f}_2$ as $n \to \infty$.
 Show that $f_n \to f$ in $L^2(\RR)$.
 :::
 
@@ -36,36 +36,36 @@ Show that $f_n \to f$ in $L^2(\RR)$.
 
 ::: pf-step
 
-$\|f_n-f\|_2^2=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$.
+$\norm{f_n-f}_2^2=\norm{f_n}_2^2+\norm{f}_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$.
 
 ::: pf-proof
 
 Since $L^2(\RR)$ is a Hilbert space,
 $$
-\|f_n-f\|_2^2
-=\|f_n\|_2^2+
-\|f\|_2^2
+\norm{f_n-f}_2^2
+=\norm{f_n}_2^2+
+\norm{f}_2^2
 -2\operatorname{Re}\langle f_n,f\rangle.
 $$
 Weak convergence $f_n\rightharpoonup f$ implies, by testing against the fixed vector $f$,
 $$
-\langle f_n,f\rangle\longrightarrow\langle f,f\rangle=\|f\|_2^2.
+\langle f_n,f\rangle\longrightarrow\langle f,f\rangle=\norm{f}_2^2.
 $$
 The assumed convergence of norms gives
 $$
-\|f_n\|_2^2\longrightarrow\|f\|_2^2.
+\norm{f_n}_2^2\longrightarrow\norm{f}_2^2.
 $$
 Therefore
 $$
-\|f_n-f\|_2^2\longrightarrow
-\|f\|_2^2+
-\|f\|_2^2-
-2\|f\|_2^2
+\norm{f_n-f}_2^2\longrightarrow
+\norm{f}_2^2+
+\norm{f}_2^2-
+2\norm{f}_2^2
 =0.
 $$
 Hence
 $$
-\boxed{\|f_n-f\|_2\to0.}
+\boxed{\norm{f_n-f}_2\to0.}
 $$
 
 :::

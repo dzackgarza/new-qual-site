@@ -18,7 +18,7 @@ Let $S = \operatorname{span}_{\CC}\{\chi_{(a, b)} : a, b \in \RR, \, a < b\}$ be
 
 Show that $S$ is dense in $L^1(\RR)$: for every $f \in L^1(\RR)$, there exists a sequence $(f_n)_{n=1}^\infty \subset S$ such that
 $$
-\lim_{n \to \infty} \|f_n - f\|_{L^1(\RR)} = 0.
+\lim_{n \to \infty} \norm{f_n - f}_{L^1(\RR)} = 0.
 $$
 :::
 
@@ -46,7 +46,7 @@ By the standard construction of Lebesgue integrals, the set of integrable simple
 Thus there exists a simple function
 $$\psi = \sum_{k=1}^m c_k \chi_{E_k},$$
 where $c_k \in \CC$ and $E_k \subset \RR$ are disjoint measurable sets with $m(E_k) < \infty$, such that
-$$\|f - \psi\|_{L^1} < \frac{\varepsilon}{2}.$$
+$$\norm{f - \psi}_{L^1} < \frac{\varepsilon}{2}.$$
 
 :::
 
@@ -61,7 +61,7 @@ Approximation of measurable sets of finite measure by finite unions of open inte
 
 ::: pf-step
 Fix $k \in \{1, \dots, m\}$. Since $m(E_k) < \infty$, by the definition of Lebesgue outer measure, there exists an open set $U_k \supset E_k$ such that
-$$m(U_k \setminus E_k) < \frac{\varepsilon}{4 m (|c_k| + 1)}.$$
+$$m(U_k \setminus E_k) < \frac{\varepsilon}{4 m (\abs{c_k} + 1)}.$$
 
 :::
 
@@ -72,7 +72,7 @@ Every open set in $\RR$ is a countable disjoint union of bounded open intervals:
 
 ::: pf-step
 Since $m(U_k) = \sum_{j=1}^\infty (b_{k, j} - a_{k, j}) < \infty$, there exists an integer $N_k \ge 1$ such that
-$$m\left( U_k \setminus \bigcup_{j=1}^{N_k} (a_{k, j}, b_{k, j}) \right) = \sum_{j=N_k+1}^\infty (b_{k, j} - a_{k, j}) < \frac{\varepsilon}{4 m (|c_k| + 1)}.$$
+$$m\left( U_k \setminus \bigcup_{j=1}^{N_k} (a_{k, j}, b_{k, j}) \right) = \sum_{j=N_k+1}^\infty (b_{k, j} - a_{k, j}) < \frac{\varepsilon}{4 m (\abs{c_k} + 1)}.$$
 
 :::
 
@@ -83,13 +83,13 @@ Define $V_k = \bigcup_{j=1}^{N_k} (a_{k, j}, b_{k, j})$, which is a finite union
 
 ::: pf-step
 The symmetric difference satisfies $E_k \Delta V_k \subseteq (U_k \setminus E_k) \cup (U_k \setminus V_k)$, so
-$$m(E_k \Delta V_k) \le m(U_k \setminus E_k) + m(U_k \setminus V_k) < \frac{\varepsilon}{2 m (|c_k| + 1)}.$$
+$$m(E_k \Delta V_k) \le m(U_k \setminus E_k) + m(U_k \setminus V_k) < \frac{\varepsilon}{2 m (\abs{c_k} + 1)}.$$
 
 :::
 
 ::: pf-step
 Therefore, the $L^1$ distance between indicators satisfies:
-$$\|\chi_{E_k} - \chi_{V_k}\|_{L^1} = \int_\RR |\chi_{E_k} - \chi_{V_k}| \, dm = m(E_k \Delta V_k) < \frac{\varepsilon}{2 m (|c_k| + 1)}.$$
+$$\norm{\chi_{E_k} - \chi_{V_k}}_{L^1} = \int_\RR \abs{\chi_{E_k} - \chi_{V_k}} \, dm = m(E_k \Delta V_k) < \frac{\varepsilon}{2 m (\abs{c_k} + 1)}.$$
 
 :::
 
@@ -114,7 +114,7 @@ Define the function $g = \sum_{k=1}^m c_k \chi_{V_k}$. Since each $\chi_{V_k} \i
 
 ::: pf-step
 Bound the distance between $\psi$ and $g$:
-$$\|\psi - g\|_{L^1} = \left\| \sum_{k=1}^m c_k (\chi_{E_k} - \chi_{V_k}) \right\|_{L^1} \le \sum_{k=1}^m |c_k| \|\chi_{E_k} - \chi_{V_k}\|_{L^1} < \sum_{k=1}^m |c_k| \frac{\varepsilon}{2 m (|c_k| + 1)} < \frac{\varepsilon}{2}.$$
+$$\norm{\psi - g}_{L^1} = \norm{ \sum_{k=1}^m c_k (\chi_{E_k} - \chi_{V_k}) }_{L^1} \le \sum_{k=1}^m \abs{c_k} \norm{\chi_{E_k} - \chi_{V_k}}_{L^1} < \sum_{k=1}^m \abs{c_k} \frac{\varepsilon}{2 m (\abs{c_k} + 1)} < \frac{\varepsilon}{2}.$$
 
 :::
 
@@ -129,7 +129,7 @@ Triangle inequality:
 
 ::: pf-step
 Combining the approximations:
-$$\|f - g\|_{L^1} \le \|f - \psi\|_{L^1} + \|\psi - g\|_{L^1} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
+$$\norm{f - g}_{L^1} \le \norm{f - \psi}_{L^1} + \norm{\psi - g}_{L^1} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
 
 :::
 

@@ -40,9 +40,9 @@ $6$.
 
 By the first isomorphism theorem,
 $$
-|A_4:\ker f|=|\operatorname{im}f|=2,
+\subgroupindex{A_4:\ker f}=\cardinality{\operatorname{im}f}=2,
 $$
-so $|\ker f|=12/2=6$. Every kernel is normal.
+so $\cardinality{\ker f}=12/2=6$. Every kernel is normal.
 
 :::
 
@@ -54,13 +54,13 @@ The group $A_4$ has no normal subgroup of order $6$.
 
 ::: pf-proof
 
-Suppose $N\trianglelefteq A_4$ and $|N|=6$. By Sylow's theorem, $N$ contains a
+Suppose $N\trianglelefteq A_4$ and $\cardinality{N}=6$. By Sylow's theorem, $N$ contains a
 subgroup $P$ of order $3$. Since $N$ is normal, it contains every $A_4$-conjugate
 of $P$.
 
 The group $A_4$ has four Sylow $3$-subgroups, accounting for all eight
 $3$-cycles. Hence $N$ would contain those eight nonidentity elements, contradicting
-$|N|=6$.
+$\cardinality{N}=6$.
 
 :::
 

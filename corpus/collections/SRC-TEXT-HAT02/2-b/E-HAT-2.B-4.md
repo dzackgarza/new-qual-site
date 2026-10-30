@@ -36,9 +36,9 @@ In the unit sphere $S^{p+q-1} \subset \RR^{p+q}$ let $S^{p-1}$ and $S^{q-1}$ be 
 ::: {.solution}
 Write points of $S^{p+q-1}$ as $(x,y)\in\RR^p\oplus\RR^q$. Then
 $$
-S^{p-1}=\{(x,0):\|x\|=1\},
+S^{p-1}=\{(x,0):\norm{x}=1\},
 \qquad
-S^{q-1}=\{(0,y):\|y\|=1\}.
+S^{q-1}=\{(0,y):\norm{y}=1\}.
 $$
 
 ::: pf
@@ -54,11 +54,11 @@ $$
 
 On the complement one has $y\ne0$. Define
 $$
-\Phi(x,y)=\left(\frac y{\|y\|},\frac x{\|y\|}\right).
+\Phi(x,y)=\left(\frac y{\norm{y}},\frac x{\norm{y}}\right).
 $$
 Its inverse is
 $$
-\Phi^{-1}(u,v)=\frac{(v,u)}{\sqrt{1+\|v\|^2}}.
+\Phi^{-1}(u,v)=\frac{(v,u)}{\sqrt{1+\norm{v}^2}}.
 $$
 These formulas are continuous and inverse to one another.
 

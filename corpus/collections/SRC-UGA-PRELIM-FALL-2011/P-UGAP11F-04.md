@@ -29,11 +29,11 @@ $$
 
 For every $x\ne3$,
 $$
-\left|
+\abs{
 \frac1{3-x}-1
-\right|
+}
 =
-\frac{|x-2|}{|3-x|}.
+\frac{\abs{x-2}}{\abs{3-x}}.
 $$
 
 
@@ -57,11 +57,11 @@ and take absolute values.
 
 If
 $$
-|x-2|<\frac12,
+\abs{x-2}<\frac12,
 $$
 then
 $$
-|3-x|>\frac12.
+\abs{3-x}>\frac12.
 $$
 
 
@@ -69,11 +69,11 @@ $$
 
 By the reverse triangle inequality,
 $$
-|3-x|
+\abs{3-x}
 =
-|1-(x-2)|
+\abs{1-(x-2)}
 \ge
-1-|x-2|
+1-\abs{x-2}
 >
 \frac12.
 $$
@@ -108,13 +108,13 @@ This choice is positive for every $\varepsilon>0$.
 
 If
 $$
-0<|x-2|<\delta,
+0<\abs{x-2}<\delta,
 $$
 then
 $$
-\left|
+\abs{
 \frac1{3-x}-1
-\right|
+}
 <\varepsilon.
 $$
 
@@ -123,21 +123,21 @@ $$
 
 Because
 $$
-|x-2|<\delta\le\frac12,
+\abs{x-2}<\delta\le\frac12,
 $$
 step [](#s1-2){.pf-ref} gives
 $$
-|3-x|>\frac12.
+\abs{3-x}>\frac12.
 $$
 Using step [](#s1-1){.pf-ref},
 $$
-\left|
+\abs{
 \frac1{3-x}-1
-\right|
+}
 =
-\frac{|x-2|}{|3-x|}
+\frac{\abs{x-2}}{\abs{3-x}}
 <
-2|x-2|
+2\abs{x-2}
 <
 2\delta
 \le

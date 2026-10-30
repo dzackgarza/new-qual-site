@@ -109,11 +109,11 @@ $$
 
 Naturality of $d\log$ under restriction gives
 $$
-j^*c(E)=c\qty(\OO_X(E)|_D).
+j^*c(E)=c\qty(\OO_X(E)\restrict_D).
 $$
 Because $D$ and $E$ meet transversally,
 $$
-\OO_X(E)|_D
+\OO_X(E)\restrict_D
 \cong
 \OO_D\!\left(\sum_{P\in D\cap E}P\right),
 $$

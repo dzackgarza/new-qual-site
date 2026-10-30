@@ -42,7 +42,7 @@ The unit-circle substitution produces a rational contour integral.
 
 Since $0<a<1$, the real denominator is
 $$
-1-2a\cos\theta+a^2=|e^{i\theta}-a|^2\geq(1-a)^2>0,
+1-2a\cos\theta+a^2=\abs{e^{i\theta}-a}^2\geq(1-a)^2>0,
 $$
 so the integral is an ordinary integral of a continuous
 function. Put $z=e^{i\theta}$, which traverses the unit
@@ -50,7 +50,7 @@ circle counterclockwise, and use $d\theta=dz/(iz)$.
 The denominator becomes
 $1-a(z+z^{-1})+a^2=(z-a)(1-az)/z$. Therefore
 $$
-I=\int_{|z|=1}\frac{dz}{i(z-a)(1-az)}.
+I=\int_{\abs{z}=1}\frac{dz}{i(z-a)(1-az)}.
 $$
 
 :::

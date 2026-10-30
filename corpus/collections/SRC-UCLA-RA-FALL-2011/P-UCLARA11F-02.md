@@ -47,7 +47,7 @@ Fix
 $$
 \xi\in\RR^3,
 \qquad
-\rho=|\xi|.
+\rho=\norm{\xi}.
 $$
 
 ::: pf
@@ -83,7 +83,7 @@ $$
 
 ::: pf-proof
 
-Choose a rotation sending $\xi/|\xi|$ to the north-pole direction when $\xi\ne0$. The case $\xi=0$ is immediate.
+Choose a rotation sending $\xi/\norm{\xi}$ to the north-pole direction when $\xi\ne0$. The case $\xi=0$ is immediate.
 
 :::
 
@@ -212,7 +212,7 @@ $$
 \boxed{
 \int_{S^2}e^{ix\cdot\xi}\,d\sigma(x)
 =
-4\pi\frac{\sin|\xi|}{|\xi|}}.
+4\pi\frac{\sin\norm{\xi}}{\norm{\xi}}}.
 $$
 
 
@@ -249,7 +249,7 @@ $$
 \widehat\sigma(\xi)
 =
 4\pi
-\frac{\sin|\xi|}{|\xi|}}.
+\frac{\sin\norm{\xi}}{\norm{\xi}}}.
 $$
 
 
@@ -320,10 +320,10 @@ $$
 
 By part (a),
 $$
-|\widehat\nu(\xi)|^2
+\abs{\widehat\nu(\xi)}^2
 =
 (4\pi)^4
-\frac{\sin^4|\xi|}{|\xi|^4}.
+\frac{\sin^4\norm{\xi}}{\norm{\xi}^4}.
 $$
 
 
@@ -346,7 +346,7 @@ and use step [](#s1-10){.pf-ref}.
 In polar coordinates on $\RR^3$,
 $$
 \int_{\RR^3}
-|\widehat\nu(\xi)|^2\,d\xi
+\abs{\widehat\nu(\xi)}^2\,d\xi
 =
 C
 \int_0^\infty
@@ -381,7 +381,7 @@ converges.
 
 For $0<r\le1$,
 $$
-|\sin r|\le r,
+\abs{\sin r}\le r,
 $$
 so
 $$
@@ -410,7 +410,7 @@ also converges.
 
 Since
 $$
-|\sin r|\le1,
+\abs{\sin r}\le1,
 $$
 $$
 0\le
@@ -502,10 +502,10 @@ Combine steps [](#s1-11){.pf-ref} and [](#s1-19){.pf-ref}.
 By Cauchy--Schwarz,
 $$
 \boxed{
-|\Lambda(f)|
+\abs{\Lambda(f)}
 \le
-\|g\|_{L^2}\,
-\|f\|_{L^2}}.
+\norm{g}_{L^2}\,
+\norm{f}_{L^2}}.
 $$
 
 

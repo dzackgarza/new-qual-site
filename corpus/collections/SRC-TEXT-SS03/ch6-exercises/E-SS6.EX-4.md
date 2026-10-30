@@ -25,7 +25,7 @@ audit:
 4. Prove that if we take
 
 $$
-f (z) = \frac {1}{(1 - z) ^ {\alpha}}, \quad \mathrm{for} | z | <   1
+f (z) = \frac {1}{(1 - z) ^ {\alpha}}, \quad \mathrm{for} \abs{ z } <   1
 $$
 
 (defined in terms of the principal branch of the logarithm), where $\alpha$ is a fixed complex number not in $\{0,-1,-2,\ldots\}$, then
@@ -50,7 +50,7 @@ $$
 The generalized binomial theorem gives
 $$
 (1-z)^{-\alpha}=\sum_{n=0}^\infty \frac{(\alpha)_n}{n!}z^n,
-\qquad |z|<1,
+\qquad \abs{z}<1,
 $$
 where
 $$

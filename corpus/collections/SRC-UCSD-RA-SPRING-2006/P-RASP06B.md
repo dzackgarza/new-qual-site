@@ -52,10 +52,10 @@ $$
 Then for every $x\in[0,1]$,
 $$
 \begin{aligned}
-|f_j(x)-F(x)|
-&\le |f_j(0)-c|
-+\left|\int_0^x(f_j'(t)-g(t))\,dt\right|\\
-&\le |f_j(0)-c|+\|f_j'-g\|_1.
+\abs{f_j(x)-F(x)}
+&\le \abs{f_j(0)-c}
++\abs{\int_0^x(f_j'(t)-g(t))\,dt}\\
+&\le \abs{f_j(0)-c}+\norm{f_j'-g}_1.
 \end{aligned}
 $$
 The right side tends to $0$, independently of $x$. Hence $f_j\to F$ uniformly, so the pointwise limit exists everywhere and

@@ -115,9 +115,9 @@ z^4\left(
 $$
 The choice of $R$ gives
 $$
-\left|
+\abs{
 \frac{3z^2+z+1}{z^4}
-\right|
+}
 \leq
 \frac{3R^2+R+1}{R^4}
 <1.

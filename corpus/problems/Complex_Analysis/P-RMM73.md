@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Let $f$ be holomorphic in a neighborhood of the closed disk $\overline{D}_r(z_0)$.
 Prove Cauchy's estimate for derivatives:
-$$|f^{(n)}(z_0)| \le \frac{n!}{r^n} \max_{|z-z_0| = r} |f(z)|$$
+$$\abs{f^{(n)}(z_0)} \le \frac{n!}{r^n} \max_{\abs{z-z_0} = r} \abs{f(z)}$$
 and the Mean Value Property:
 $$f(z_0) = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + r e^{i\theta}) \, d\theta.$$
 :::

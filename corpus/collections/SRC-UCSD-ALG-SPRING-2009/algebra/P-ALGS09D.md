@@ -134,7 +134,7 @@ Hence it is the splitting field of $f$.
 Since $f$ is separable over the characteristic-zero field $\QQ$, the extension $E/\QQ$ is Galois.
 By step [](#s1){.pf-ref},
 $$
-|\operatorname{Gal}(E/\QQ)|=[E:\QQ]=4.
+\cardinality{\operatorname{Gal}(E/\QQ)}=[E:\QQ]=4.
 $$
 
 :::

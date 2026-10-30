@@ -97,10 +97,10 @@ $$
 we have
 $$
 \begin{aligned}
-&\left|
+&\abs{
 \int_{\partial R}
 \frac{f_n(\zeta)-g(\zeta)}{\zeta-z}\,d\zeta
-\right|\\
+}\\
 &\qquad\leq
 \frac{\operatorname{length}(\partial R)}{\delta_z}
 \sup_{\zeta\in\partial R}

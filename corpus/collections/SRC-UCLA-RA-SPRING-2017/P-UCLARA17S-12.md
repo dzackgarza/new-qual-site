@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Let $0<\alpha<1$ and let $f(z)$ be analytic on the unit disk $D$. Prove that if
 $$
-|f(z)-f(w)|\le C|z-w|^\alpha
+\abs{f(z)-f(w)}\le C\abs{z-w}^\alpha
 $$
 for all $z,w\in D$ and some constant $C\in\RR$, then there is a constant $A=A(C)<\infty$ such that
 $$
-|f'(z)|\le A(1-|z|)^{\alpha-1}.
+\abs{f'(z)}\le A(1-\abs{z})^{\alpha-1}.
 $$
 :::
 
@@ -35,7 +35,7 @@ $$
 
 Fix $z\in D$ and set
 $$
-d\coloneqq1-|z|,
+d\coloneqq1-\abs{z},
 \qquad
 r\coloneqq\frac d2.
 $$
@@ -44,12 +44,12 @@ Then the closed disk $\overline{B(z,r)}$ is contained in $D$.
 
 ::: pf-proof
 
-If $|\zeta-z|\le r$, then
+If $\abs{\zeta-z}\le r$, then
 $$
-|\zeta|
-\le |z|+r
-=|z|+\frac{1-|z|}{2}
-=\frac{1+|z|}{2}
+\abs{\zeta}
+\le \abs{z}+r
+=\abs{z}+\frac{1-\abs{z}}{2}
+=\frac{1+\abs{z}}{2}
 <1.
 $$
 
@@ -63,7 +63,7 @@ Cauchy's derivative formula gives
 $$
 f'(z)
 =\frac1{2\pi i}
-\int_{|\zeta-z|=r}
+\int_{\abs{\zeta-z}=r}
 \frac{f(\zeta)-f(z)}{(\zeta-z)^2}\,d\zeta.
 $$
 
@@ -84,21 +84,21 @@ on the circle from step [](#s1-1){.pf-ref}.
 
 One has
 $$
-|f'(z)|
+\abs{f'(z)}
 \le C r^{\alpha-1}.
 $$
 
 
 ::: pf-proof
 
-On $|\zeta-z|=r$, the Hölder hypothesis gives
+On $\abs{\zeta-z}=r$, the Hölder hypothesis gives
 $$
-|f(\zeta)-f(z)|\le C r^\alpha.
+\abs{f(\zeta)-f(z)}\le C r^\alpha.
 $$
 Using step [](#s1-2){.pf-ref} and the fact that the circle has length $2\pi r$,
 $$
 \begin{aligned}
-|f'(z)|
+\abs{f'(z)}
 &\le\frac1{2\pi}
 (2\pi r)
 \frac{C r^\alpha}{r^2}\\
@@ -115,19 +115,19 @@ $$
 Therefore
 $$
 \boxed{
-|f'(z)|
-\le 2C(1-|z|)^{\alpha-1}}
+\abs{f'(z)}
+\le 2C(1-\abs{z})^{\alpha-1}}
 $$
 for every $z\in D$.
 
 
 ::: pf-proof
 
-Substitute $r=(1-|z|)/2$ from step [](#s1-1){.pf-ref} into step [](#s1-3){.pf-ref}:
+Substitute $r=(1-\abs{z})/2$ from step [](#s1-1){.pf-ref} into step [](#s1-3){.pf-ref}:
 $$
 C r^{\alpha-1}
-=C\left(\frac{1-|z|}{2}\right)^{\alpha-1}
-=2^{1-\alpha}C(1-|z|)^{\alpha-1}.
+=C\left(\frac{1-\abs{z}}{2}\right)^{\alpha-1}
+=2^{1-\alpha}C(1-\abs{z})^{\alpha-1}.
 $$
 Because $0<\alpha<1$, one has $2^{1-\alpha}\le2$. Thus the required constant may be taken to be
 $$

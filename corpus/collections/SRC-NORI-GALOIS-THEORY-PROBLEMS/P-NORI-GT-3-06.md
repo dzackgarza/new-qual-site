@@ -76,7 +76,7 @@ The roots of $X^p-X$ in any field of characteristic $p$ are exactly the elements
 
 Hence
 $$
-|\ker T|=p.
+\cardinality{\ker T}=p.
 $$
 
 
@@ -113,7 +113,7 @@ Thus every nonempty fiber is a coset of $\ker T$ and has $p$ elements by step []
 
 Therefore
 $$
-|\operatorname{im}T|=\frac qp.
+\cardinality{\operatorname{im}T}=\frac qp.
 $$
 
 

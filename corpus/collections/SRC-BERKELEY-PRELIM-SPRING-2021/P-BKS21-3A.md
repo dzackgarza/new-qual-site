@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-10-02
-  note: Independently reviewed the supplied Berkeley Spring 2021 M-test argument. The conclusion is correct; the printed proof bounds $\sin t/t$ only on the original interval, which need not contain the scaled arguments $x/n^2$. The solution below uses the global inequality $|\sin t|\le |t|$.
+  note: Independently reviewed the supplied Berkeley Spring 2021 M-test argument. The conclusion is correct; the printed proof bounds $\sin t/t$ only on the original interval, which need not contain the scaled arguments $x/n^2$. The solution below uses the global inequality $\abs{\sin t}\le \abs{t}$.
 - event: solution-written
   by: chatgpt
   date: 2026-10-02
@@ -39,7 +39,7 @@ converges uniformly on every bounded interval in $\RR$.
 
 Let $I\subset\RR$ be a bounded interval and set
 $$
-B\coloneqq\sup_{x\in I}|x|<\infty.
+B\coloneqq\sup_{x\in I}\abs{x}<\infty.
 $$
 
 ::: pf
@@ -48,7 +48,7 @@ $$
 
 For every $x\in I$ and every $n\geq1$,
 $$
-\left|\sin\frac{x}{n^2}\right|\leq\frac{B}{n^2}.
+\abs{\sin\frac{x}{n^2}}\leq\frac{B}{n^2}.
 $$
 
 
@@ -56,13 +56,13 @@ $$
 
 The elementary inequality
 $$
-|\sin t|\leq|t|
+\abs{\sin t}\leq\abs{t}
 $$
 holds for every real $t$. Hence
 $$
-\left|\sin\frac{x}{n^2}\right|
+\abs{\sin\frac{x}{n^2}}
 \leq
-\frac{|x|}{n^2}
+\frac{\abs{x}}{n^2}
 \leq
 \frac{B}{n^2}.
 $$

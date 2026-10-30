@@ -28,5 +28,5 @@ D(F^{-1})(F(p))=\bigl(DF(p)\bigr)^{-1}.
 $$
 
 (iii) Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $p\in\Omega$ with $f'(p)\neq0$.
-Then there is an open set $V\ni p$ such that $f(V)$ is open and $f|_V\colon V\to f(V)$ is a [[D-TM4TE|biholomorphism]].
+Then there is an open set $V\ni p$ such that $f(V)$ is open and $f\restrict_V\colon V\to f(V)$ is a [[D-TM4TE|biholomorphism]].
 :::

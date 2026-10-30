@@ -21,7 +21,7 @@ prompts:
 
 ::: {.definition title="Constructible sheaf"}
 Let $X$ be a complex algebraic variety with its analytic topology.
-A sheaf $\mathcal{F}$ of $k$-vector spaces on $X$ is \dfn{constructible} if there is a finite partition $X = \coprod_i X_i$ into Zariski locally closed subvarieties such that each restriction $\mathcal{F}|_{X_i}$ is a local system.
+A sheaf $\mathcal{F}$ of $k$-vector spaces on $X$ is \dfn{constructible} if there is a finite partition $X = \coprod_i X_i$ into Zariski locally closed subvarieties such that each restriction $\mathcal{F}\restrict_{X_i}$ is a local system.
 :::
 
 ::: {.remark}

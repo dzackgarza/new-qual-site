@@ -46,7 +46,7 @@ f_N(x)=\sum_{n=1}^N n^{-x}.
 $$
 Fix a compact interval $[a,b]\subset(1,\infty)$. For $x\in[a,b]$,
 $$
-|n^{-x}|\le n^{-a},
+\abs{n^{-x}}\le n^{-a},
 $$
 and $\sum n^{-a}$ converges. Hence $\sum n^{-x}$ converges uniformly on $[a,b]$ by the Weierstrass $M$-test.
 
@@ -60,7 +60,7 @@ $$
 $$
 for every $n\ge2$. Thus for $x\in[a,b]$,
 $$
-|(\log n)n^{-x}|
+\abs{(\log n)n^{-x}}
 \le Cn^{-(a-\delta)}.
 $$
 Because

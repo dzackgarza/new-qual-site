@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group with $|G| = p(p+1)$, where $p$ is an odd prime and $(p+1) = 2^n$ is a power of 2. Suppose further that $G$ does not have a normal Sylow $p$-subgroup.
+Let $G$ be a group with $\cardinality{G} = p(p+1)$, where $p$ is an odd prime and $(p+1) = 2^n$ is a power of 2. Suppose further that $G$ does not have a normal Sylow $p$-subgroup.
 
 (a) Show that $G$ has a normal subgroup $H$ of order $p+1$.
 Show that $G$ is isomorphic to a semidirect product $H \rtimes \ZZ_p$.
@@ -38,7 +38,7 @@ Hint: Given a nonidentity element $x \in H$, consider the possible size of the c
 ::: {.solution}
 Write
 $$
-|G|=p(p+1)=p2^n.
+\cardinality{G}=p(p+1)=p2^n.
 $$
 
 ::: pf
@@ -91,7 +91,7 @@ Thus exactly $p$ nonidentity elements of $G$ do not lie in a Sylow $p$-subgroup.
 Let $H$ be any Sylow $2$-subgroup.
 Then
 $$
-|H|=2^n=p+1,
+\cardinality{H}=2^n=p+1,
 $$
 so $H$ has exactly $p$ nonidentity elements.
 None of them can lie in a subgroup of order $p$, because a $2$-group and a group of order $p$ have trivial intersection.
@@ -110,17 +110,17 @@ $$
 
 ::: pf-proof
 Let $P$ be a Sylow $p$-subgroup.
-Then $|P|=p$, so
+Then $\cardinality{P}=p$, so
 $$
 P\cong\ZZ_p.
 $$
-Since $|H|=p+1$ and $|P|=p$ are coprime,
+Since $\cardinality{H}=p+1$ and $\cardinality{P}=p$ are coprime,
 $$
 H\cap P=1.
 $$
 Because $H\triangleleft G$, the product $HP$ is a subgroup, and
 $$
-|HP|=\frac{|H||P|}{|H\cap P|}=p(p+1)=|G|.
+\cardinality{HP}=\frac{\cardinality{H}\cardinality{P}}{\cardinality{H\cap P}}=p(p+1)=\cardinality{G}.
 $$
 Thus $G=HP$.
 Therefore $G$ is the internal semidirect product
@@ -132,10 +132,10 @@ $$
 :::
 
 ::: {.pf-step #centralizer-not-divisible-by-p}
-If $1\neq x\in H$, then $p$ does not divide $|C_G(x)|$.
+If $1\neq x\in H$, then $p$ does not divide $\cardinality{C_G(x)}$.
 
 ::: pf-proof
-Suppose instead that $p\mid |C_G(x)|$.
+Suppose instead that $p\mid \cardinality{C_G(x)}$.
 By Cauchy's theorem, $C_G(x)$ contains an element $y$ of order $p$.
 Let
 $$
@@ -151,7 +151,7 @@ $$
 $$
 and therefore
 $$
-|N_G(P)|=p.
+\cardinality{N_G(P)}=p.
 $$
 Since $P\subseteq N_G(P)$ also has order $p$, one has
 $$
@@ -159,7 +159,7 @@ N_G(P)=P.
 $$
 Thus $x\in P$.
 But $x\in H$ and $H\cap P=1$, contradicting $x\neq1$.
-Hence $p\nmid |C_G(x)|$.
+Hence $p\nmid \cardinality{C_G(x)}$.
 :::
 
 :::
@@ -172,20 +172,20 @@ Fix $1\neq x\in H$.
 Because $H\triangleleft G$, every conjugate of $x$ lies in $H$.
 Hence the conjugacy class of $x$ has at most
 $$
-|H|-1=p
+\cardinality{H}-1=p
 $$
 elements.
 By step [](#centralizer-not-divisible-by-p){.pf-ref}, the centralizer $C_G(x)$ has order a power of $2$, say $2^k$ with $0\le k\le n$.
 The orbit-stabilizer formula for conjugation gives
 $$
-|x^G|=[G:C_G(x)]
+\cardinality{x^G}=[G:C_G(x)]
 =\frac{p2^n}{2^k}
 =p2^{n-k}.
 $$
-Since $|x^G|\le p$, necessarily $k=n$.
+Since $\cardinality{x^G}\le p$, necessarily $k=n$.
 Thus
 $$
-|C_G(x)|=2^n=|H|.
+\cardinality{C_G(x)}=2^n=\cardinality{H}.
 $$
 The centralizer is a $2$-subgroup, so by uniqueness of the Sylow $2$-subgroup from step [](#unique-sylow2-normal){.pf-ref},
 $$

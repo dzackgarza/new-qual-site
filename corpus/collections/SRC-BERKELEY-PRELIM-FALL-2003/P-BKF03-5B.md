@@ -66,7 +66,7 @@ is a noncyclic group of order $n$.
 ::: pf-proof
 Its order is
 $$
-|G|=p\cdot p\cdot\frac{n}{p^2}=n.
+\cardinality{G}=p\cdot p\cdot\frac{n}{p^2}=n.
 $$
 The subgroup $C_p\times C_p\times\{1\}$ is not cyclic.
 A subgroup of a cyclic group must be cyclic, so $G$ itself cannot be cyclic.
@@ -88,7 +88,7 @@ Define
 $$
 H=\left\{\begin{pmatrix}a&b\\0&1\end{pmatrix}:a\in\mu_p,\ b\in\FF_q\right\}.
 $$
-Matrix multiplication shows that $H$ is a subgroup of $\operatorname{GL}_2(\FF_q)$, and there are $p$ choices for $a$ and $q$ choices for $b$, so $|H|=pq$.
+Matrix multiplication shows that $H$ is a subgroup of $\operatorname{GL}_2(\FF_q)$, and there are $p$ choices for $a$ and $q$ choices for $b$, so $\cardinality{H}=pq$.
 
 Choose $a\in\mu_p$ with $a\ne1$.
 Then
@@ -117,7 +117,7 @@ is a noncyclic group of order $n$.
 Because $p$ and $q$ are distinct primes dividing $n$, $pq\mid n$.
 Thus
 $$
-|G|=pq\cdot\frac{n}{pq}=n.
+\cardinality{G}=pq\cdot\frac{n}{pq}=n.
 $$
 The direct factor $H$ is nonabelian by step [](#H-nonabelian-order-pq){.pf-ref}, so $G$ is nonabelian.
 Every cyclic group is abelian; hence $G$ is not cyclic.

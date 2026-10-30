@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 Let $G$ be a finite nontrivial group such that any two nonidentity elements of $G$ are conjugate. Prove that
 $$
-|G|=2.
+\cardinality{G}=2.
 $$
 :::
 
@@ -46,7 +46,7 @@ of the nonidentity elements.
 
 ::: {.pf-step #s2}
 
-$|G|-1$ divides $|G|$.
+$\cardinality{G}-1$ divides $\cardinality{G}$.
 
 ::: pf-proof
 
@@ -54,10 +54,10 @@ Under the conjugation action of $G$ on itself, the orbit of $a$ is $a^G$
 and its stabilizer is the centralizer $C_G(a)$. Hence the
 orbit-stabilizer theorem gives
 $$
-|a^G|=[G:C_G(a)].
+\cardinality{a^G}=[G:C_G(a)].
 $$
-In particular, $|a^G|$ divides $|G|$. By step [](#s1){.pf-ref},
-$|a^G|=|G|-1$, proving the claim.
+In particular, $\cardinality{a^G}$ divides $\cardinality{G}$. By step [](#s1){.pf-ref},
+$\cardinality{a^G}=\cardinality{G}-1$, proving the claim.
 
 :::
 
@@ -65,11 +65,11 @@ $|a^G|=|G|-1$, proving the claim.
 
 ::: {.pf-step #s3}
 
-$|G|=\boxed{2}$.
+$\cardinality{G}=\boxed{2}$.
 
 ::: pf-proof
 
-Put $n\coloneqq |G|$. Since $G$ is nontrivial, $n>1$. By step [](#s2){.pf-ref},
+Put $n\coloneqq \cardinality{G}$. Since $G$ is nontrivial, $n>1$. By step [](#s2){.pf-ref},
 $n-1$ divides $n$, and therefore it divides
 $$
 n-(n-1)=1.

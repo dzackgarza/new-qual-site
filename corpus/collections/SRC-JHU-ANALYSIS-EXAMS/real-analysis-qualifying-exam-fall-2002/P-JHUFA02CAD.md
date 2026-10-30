@@ -29,7 +29,7 @@ audit:
 4. Let K be a closed convex subset of a Hilbert space H. Show that for each $x \in H$ , there is a unique $y \in K$ such that
 
 $$
-| | x - y | | = i n f _ { z \in K } | | x - z | |
+\norm{  x - y }  = i n f _ { z \in K } \norm{  x - z } 
 $$
 :::
 

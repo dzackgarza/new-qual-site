@@ -104,7 +104,7 @@ Let $a$ and $b$ denote the core generators of the first and second copies of $V$
 $$
 \pi_1(X_n)
 \cong
-\left\langle a,b\ \middle|\
+\left\langle a,b\ \presentationbar\
  i_{1*}(\mu)=i_{2*}\phi_{n*}(\mu),\
  i_{1*}(\lambda)=i_{2*}\phi_{n*}(\lambda)
 \right\rangle.
@@ -163,7 +163,7 @@ $$
 \pi_1(X_n)\cong
 \begin{cases}
 \ZZ,&n=0,\\
-\ZZ/|n|\ZZ,&n\ne0.
+\ZZ/\abs{n}\ZZ,&n\ne0.
 \end{cases}
 $$
 
@@ -176,7 +176,7 @@ $$
 \cong
 \langle a\mid a^n=1\rangle.
 $$
-For $n=0$, the relation $a^0=1$ is vacuous, giving $\ZZ$. For $n\ne0$, the relation has order $|n|$, giving $\ZZ/|n|\ZZ$.
+For $n=0$, the relation $a^0=1$ is vacuous, giving $\ZZ$. For $n\ne0$, the relation has order $\abs{n}$, giving $\ZZ/\abs{n}\ZZ$.
 :::
 
 :::

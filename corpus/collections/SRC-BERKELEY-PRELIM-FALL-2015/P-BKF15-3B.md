@@ -32,7 +32,7 @@ audit:
 The unit cube in the space $C [ 0 , 1 ]$ of continuous real-valued functions on the interval is defined as the subset
 
 $$
-\{ f \in C [ 0 , 1 ] \mid \| f \| : = \operatorname* { s u p } _ { 0 \leq t \leq 1 } | f ( t ) | \leq 1 \} .
+\{ f \in C [ 0 , 1 ] \mid \norm{ f } : = \operatorname* { s u p } _ { 0 \leq t \leq 1 } \abs{ f ( t ) } \leq 1 \} .
 $$
 
 Prove that there exists a 2-dimensional linear subspace in $C [ 0 , 1 ]$ whose intersection with the unit cube is a circular disk.
@@ -80,9 +80,9 @@ Thus $u$ and $v$ are linearly independent.
 
 For every $a,b\in\RR$,
 $$
-\left\|
+\norm{
 a\cos(2\pi t)+b\sin(2\pi t)
-\right\|_\infty
+}_\infty
 =
 \sqrt{a^2+b^2}.
 $$
@@ -132,7 +132,7 @@ $$
 
 By step [](#s2){.pf-ref},
 $$
-\|au+bv\|_\infty\le1
+\norm{au+bv}_\infty\le1
 \iff
 \sqrt{a^2+b^2}\le1
 \iff

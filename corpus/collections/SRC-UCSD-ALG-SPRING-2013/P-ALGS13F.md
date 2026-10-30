@@ -100,14 +100,14 @@ $$
 :::
 
 ::: pf-step
-Since $E/\QQ$ is a Galois extension, $|\operatorname{Gal}(E/\QQ)| = [E : \QQ] = p(p - 1)$.
+Since $E/\QQ$ is a Galois extension, $\cardinality{\operatorname{Gal}(E/\QQ)} = [E : \QQ] = p(p - 1)$.
 Because an automorphism $\sigma \in \operatorname{Gal}(E/\QQ)$ is uniquely determined by its values on the generators $\zeta_p$ and $\sqrt[p]{2}$, all $p(p - 1)$ pairs must be realized by distinct automorphisms.
 :::
 
 ::: pf-step
 Therefore:
 $$
-\left\{ \left(\sigma(\zeta_p), \sigma\left(\sqrt[p]{2}\right)\right) \;\middle|\; \sigma \in \operatorname{Gal}(E/\QQ) \right\} = \left\{ \left(\zeta_p^a, \, \zeta_p^b \sqrt[p]{2}\right) \;\middle|\; 1 \le a \le p - 1, \; 0 \le b \le p - 1 \right\}.
+\left\{ \left(\sigma(\zeta_p), \sigma\left(\sqrt[p]{2}\right)\right) \;\st\; \sigma \in \operatorname{Gal}(E/\QQ) \right\} = \left\{ \left(\zeta_p^a, \, \zeta_p^b \sqrt[p]{2}\right) \;\st\; 1 \le a \le p - 1, \; 0 \le b \le p - 1 \right\}.
 $$
 :::
 

@@ -48,7 +48,7 @@ The divisors of $49$ are $1,7,49$, and neither $7$ nor $49$ is congruent to $1$ 
 $$
 n_{41}=1.
 $$
-Thus the Sylow $41$-subgroup $Q$ is normal. Since $|Q|=41$, it is cyclic:
+Thus the Sylow $41$-subgroup $Q$ is normal. Since $\cardinality{Q}=41$, it is cyclic:
 $$
 Q\cong C_{41}.
 $$
@@ -102,7 +102,7 @@ $$
 $$
 Thus $P$ and $Q$ commute elementwise. Moreover,
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}=49\cdot41=|G|,
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}=49\cdot41=\cardinality{G},
 $$
 so $PQ=G$. Therefore $G$ is the internal direct product $P\times Q$.
 
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-Every group of order $p^2$ is abelian. Indeed, a nontrivial finite $p$-group has nontrivial center. If $|Z(P)|=p^2$, then $P$ is abelian. If $|Z(P)|=p$, then $P/Z(P)$ has order $p$ and is cyclic; a group whose quotient by its center is cyclic is abelian, again forcing $Z(P)=P$. Thus $P$ is abelian.
+Every group of order $p^2$ is abelian. Indeed, a nontrivial finite $p$-group has nontrivial center. If $\cardinality{Z(P)}=p^2$, then $P$ is abelian. If $\cardinality{Z(P)}=p$, then $P/Z(P)$ has order $p$ and is cyclic; a group whose quotient by its center is cyclic is abelian, again forcing $Z(P)=P$. Thus $P$ is abelian.
 
 The classification of finite abelian groups of order $7^2$ gives exactly the two possibilities
 $$

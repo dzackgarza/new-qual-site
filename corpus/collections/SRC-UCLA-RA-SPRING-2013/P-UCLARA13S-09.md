@@ -106,14 +106,14 @@ For any nonzero complex number $w$,
 $$
 \operatorname{Re}\frac1w
 =
-\frac{\operatorname{Re}w}{|w|^2}.
+\frac{\operatorname{Re}w}{\abs{w}^2}.
 $$
 Taking $w=z-a_j$ gives
 $$
 \operatorname{Re}\frac1{z-a_j}
 =
 \frac{\operatorname{Re}z-\operatorname{Re}a_j}
-{|z-a_j|^2}.
+{\abs{z-a_j}^2}.
 $$
 Because
 $$

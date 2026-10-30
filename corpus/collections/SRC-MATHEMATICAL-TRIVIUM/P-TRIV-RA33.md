@@ -61,7 +61,7 @@ Differentiate each coordinate with respect to $t$.
 
 The speed is constant:
 $$
-\|\gamma'(t)\|
+\norm{\gamma'(t)}
 =
 \sqrt{r^2+a^2}.
 $$
@@ -72,7 +72,7 @@ $$
 Compute
 $$
 \begin{aligned}
-\|\gamma'(t)\|^2
+\norm{\gamma'(t)}^2
 &=
 r^2\sin^2t
 +
@@ -96,7 +96,7 @@ $$
 L(\phi)
 =
 \int_0^\phi
-\|\gamma'(t)\|
+\norm{\gamma'(t)}
 \,dt.
 $$
 

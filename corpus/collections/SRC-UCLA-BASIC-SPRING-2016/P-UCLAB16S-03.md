@@ -97,8 +97,8 @@ where
 $$
 \omega(h)
 =
-\sup_{\substack{u,v\in[0,1]\\|u-v|\le h}}
-|f'(u)-f'(v)|.
+\sup_{\substack{u,v\in[0,1]\\\abs{u-v}\le h}}
+\abs{f'(u)-f'(v)}.
 $$
 
 
@@ -150,7 +150,7 @@ $$
 \begin{aligned}
 n\int_0^h
 (h-s)
-|f'(x_k+s)-f'(x_k)|
+\abs{f'(x_k+s)-f'(x_k)}
 \,ds
 &\le
 n\omega(h)\frac{h^2}{2}\\
@@ -187,7 +187,7 @@ R_n,
 $$
 where
 $$
-|R_n|
+\abs{R_n}
 \le
 \frac{\omega(1/n)}{2}.
 $$

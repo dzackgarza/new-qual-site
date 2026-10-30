@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 Let $F:\RR^n\to\RR^n$ be continuous and suppose there is $\lambda>0$ such that
 $$
-\|F(x)-F(y)\|\ge\lambda\|x-y\|
+\norm{F(x)-F(y)}\ge\lambda\norm{x-y}
 $$
 for all $x,y\in\RR^n$. Prove that $F$ is one-to-one, onto, and has a continuous inverse.
 :::

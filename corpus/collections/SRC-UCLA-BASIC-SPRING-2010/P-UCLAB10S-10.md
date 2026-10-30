@@ -46,9 +46,9 @@ $$
 f(tv)
 =
 \frac{t^2ab}
-{|t|\sqrt{a^2+b^2}}
+{\abs{t}\sqrt{a^2+b^2}}
 =
-|t|
+\abs{t}
 \frac{ab}{\sqrt{a^2+b^2}}.
 $$
 
@@ -68,9 +68,9 @@ f(ta,tb)
 {\sqrt{t^2a^2+t^2b^2}}\\
 &=
 \frac{t^2ab}
-{|t|\sqrt{a^2+b^2}}\\
+{\abs{t}\sqrt{a^2+b^2}}\\
 &=
-|t|
+\abs{t}
 \frac{ab}{\sqrt{a^2+b^2}}.
 \end{aligned}
 $$
@@ -85,7 +85,7 @@ The two-sided directional difference quotient at the origin is
 $$
 \frac{f(tv)-f(0,0)}{t}
 =
-\frac{|t|}{t}
+\frac{\abs{t}}{t}
 \frac{ab}{\sqrt{a^2+b^2}}.
 $$
 
@@ -232,8 +232,8 @@ y=x,
 $$
 one has
 $$
-\frac{|f(t,t)|}
-{\|(t,t)\|_2}
+\frac{\abs{f(t,t)}}
+{\norm{(t,t)}_2}
 =
 \frac12
 $$
@@ -254,19 +254,19 @@ f(t,t)
 =
 \frac{t^2}{\sqrt{2t^2}}
 =
-\frac{|t|}{\sqrt2}.
+\frac{\abs{t}}{\sqrt2}.
 $$
 Also
 $$
-\|(t,t)\|_2
+\norm{(t,t)}_2
 =
-\sqrt2\,|t|.
+\sqrt2\,\abs{t}.
 $$
 Therefore
 $$
-\frac{|f(t,t)|}{\|(t,t)\|_2}
+\frac{\abs{f(t,t)}}{\norm{(t,t)}_2}
 =
-\frac{|t|/\sqrt2}{\sqrt2|t|}
+\frac{\abs{t}/\sqrt2}{\sqrt2\abs{t}}
 =
 \frac12.
 $$
@@ -286,9 +286,9 @@ If $f$ were differentiable there, step [](#s1-6){.pf-ref} says the derivative wo
 The differentiability condition would then require
 $$
 \frac{
-|f(h)-f(0,0)|
+\abs{f(h)-f(0,0)}
 }{
-\|h\|_2
+\norm{h}_2
 }
 \to0
 $$

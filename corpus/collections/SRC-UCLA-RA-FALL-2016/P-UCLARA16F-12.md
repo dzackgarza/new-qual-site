@@ -130,7 +130,7 @@ $$
 $$
 Hence
 $$
-|z-x|<\delta.
+\abs{z-x}<\delta.
 $$
 
 :::
@@ -293,7 +293,7 @@ $$
 
 The numerator is continuous because $f$ is holomorphic on a neighborhood of $\overline V$. By step [](#s1-12){.pf-ref},
 $$
-|\zeta-z|\ge d>0
+\abs{\zeta-z}\ge d>0
 $$
 on the product, so the denominator never vanishes.
 
@@ -400,7 +400,7 @@ The Riemann sums defining $R_N(z)$ converge uniformly in $z\in K$ to the boundar
 
 Fix $\varepsilon>0$. By uniform equicontinuity from step [](#s1-15){.pf-ref}, choose $N$ so large that on each subinterval the oscillation of every integrand, uniformly over $z\in K$, is less than
 $$
-\frac{2\pi\varepsilon}{\sum_{\ell=1}^{L}|\gamma_\ell'|+1}.
+\frac{2\pi\varepsilon}{\sum_{\ell=1}^{L}\abs{\gamma_\ell'}+1}.
 $$
 The standard Riemann-sum estimate on each segment then bounds the difference between its integral and its Riemann sum uniformly in $z$. Summing over the finitely many segments gives a total error $<\varepsilon$.
 

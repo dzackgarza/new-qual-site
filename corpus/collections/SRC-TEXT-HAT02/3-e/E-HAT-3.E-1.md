@@ -74,6 +74,6 @@ so $x^2=0$. Therefore in this case
 $$
 \boxed{H^*(K(\ZZ_m,1);\ZZ_k)
 \cong\Lambda_{\ZZ_k}[x]\otimes\ZZ_k[y],
-\quad |x|=1,\ |y|=2.}
+\quad \gradeddegree{x}=1,\ \gradeddegree{y}=2.}
 $$
 :::

@@ -26,11 +26,11 @@ Show there is no map $f : \quatprojective^n \to \CP^{2n}$ such that the induced 
 
 Write
 $$
-H^*(\CP^{2n};\ZZ)=\ZZ[x]/(x^{2n+1}),\quad |x|=2,
+H^*(\CP^{2n};\ZZ)=\ZZ[x]/(x^{2n+1}),\quad \gradeddegree{x}=2,
 $$
 and
 $$
-H^*(\quatprojective^{n};\ZZ)=\ZZ[u]/(u^{n+1}),\quad |u|=4.
+H^*(\quatprojective^{n};\ZZ)=\ZZ[u]/(u^{n+1}),\quad \gradeddegree{u}=4.
 $$
 
 ::: pf-proof

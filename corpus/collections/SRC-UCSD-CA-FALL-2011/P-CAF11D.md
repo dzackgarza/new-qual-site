@@ -37,14 +37,14 @@ Thus $\phi:G\to\DD$ is conformal.
 Choose a countable dense set $\{\zeta_n\}_{n\ge1}$ on the unit circle. Define
 $$
 H(w)=\sum_{n=1}^\infty 2^{-n}\frac{\zeta_n+w}{\zeta_n-w},
-\qquad |w|<1.
+\qquad \abs{w}<1.
 $$
 On every compact subset of $\DD$ the series converges uniformly, hence
 $H$ is holomorphic. Moreover,
 $$
 \operatorname{Re}\frac{\zeta+w}{\zeta-w}
-=\frac{1-|w|^2}{|\zeta-w|^2}>0
-\qquad (|\zeta|=1,\ |w|<1).
+=\frac{1-\abs{w}^2}{\abs{\zeta-w}^2}>0
+\qquad (\abs{\zeta}=1,\ \abs{w}<1).
 $$
 Therefore
 $$

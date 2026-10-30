@@ -26,11 +26,11 @@ Compute the cohomology ring of $\CP^3 \times \RP^2$.
 
 The integral cohomology rings of the two factors are
 $$
-H^*(\CP^3;\ZZ)\cong\ZZ[x]/(x^4),\qquad |x|=2,
+H^*(\CP^3;\ZZ)\cong\ZZ[x]/(x^4),\qquad \gradeddegree{x}=2,
 $$
 and
 $$
-H^*(\RP^2;\ZZ)\cong \ZZ\cdot1\oplus(\ZZ/2)u,\qquad |u|=2,\quad u^2=0.
+H^*(\RP^2;\ZZ)\cong \ZZ\cdot1\oplus(\ZZ/2)u,\qquad \gradeddegree{u}=2,\quad u^2=0.
 $$
 
 ::: pf-proof
@@ -59,7 +59,7 @@ Therefore
 $$
 \boxed{H^*(\CP^3\times\RP^2;\ZZ)
 \cong
-\ZZ[x,u]/(x^4,\,2u,\,u^2),\qquad |x|=|u|=2.}
+\ZZ[x,u]/(x^4,\,2u,\,u^2),\qquad \gradeddegree{x}=\gradeddegree{u}=2.}
 $$
 
 ::: pf-proof

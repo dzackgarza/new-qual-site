@@ -108,7 +108,7 @@ for every $y\in(0,\pi)$.
 
 ::: pf-proof
 
-Choose distinct $x,z\in(0,\pi)$. Since $0<|z-x|<\pi$,
+Choose distinct $x,z\in(0,\pi)$. Since $0<\abs{z-x}<\pi$,
 $$
 \sin(z-x)\ne0.
 $$

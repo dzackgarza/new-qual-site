@@ -97,13 +97,13 @@ $$
 $$
 If neither factor were a unit, then
 $$
-|N(\alpha)|\ge2,
+\abs{N(\alpha)}\ge2,
 \qquad
-|N(\beta)|\ge2,
+\abs{N(\beta)}\ge2,
 $$
 so necessarily
 $$
-|N(\alpha)|=|N(\beta)|=2.
+\abs{N(\alpha)}=\abs{N(\beta)}=2.
 $$
 Thus some integers $a,b$ would satisfy
 $$
@@ -163,10 +163,10 @@ Every nonzero nonunit of $R$ is a finite product of irreducibles.
 ::: pf-proof
 We induct on the positive integer
 $$
-|N(\alpha)|
+\abs{N(\alpha)}
 $$
 for a nonzero nonunit $\alpha$.
-Since $\alpha$ is not a unit, $|N(\alpha)|\ge2$.
+Since $\alpha$ is not a unit, $\abs{N(\alpha)}\ge2$.
 
 If $\alpha$ is irreducible, there is nothing to prove.
 Otherwise
@@ -176,14 +176,14 @@ $$
 with nonunits $\beta$ and $\gamma$.
 Then
 $$
-|N(\alpha)|=|N(\beta)|\,|N(\gamma)|,
+\abs{N(\alpha)}=\abs{N(\beta)}\,\abs{N(\gamma)},
 $$
 and both factors on the right are at least $2$.
 Consequently
 $$
-2\le |N(\beta)|<|N(\alpha)|,
+2\le \abs{N(\beta)}<\abs{N(\alpha)},
 \qquad
-2\le |N(\gamma)|<|N(\alpha)|.
+2\le \abs{N(\gamma)}<\abs{N(\alpha)}.
 $$
 By induction, both $\beta$ and $\gamma$ are finite products of irreducibles, and hence so is $\alpha$.
 

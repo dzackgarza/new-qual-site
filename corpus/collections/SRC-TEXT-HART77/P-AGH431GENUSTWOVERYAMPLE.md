@@ -75,7 +75,7 @@ $$
 \deg D>0.
 $$
 
-The complete linear system $|D|$ gives a closed immersion
+The complete linear system $\linearsystem{D}$ gives a closed immersion
 $$
 X\longrightarrow\PP^{\ell(D)-1}.
 $$
@@ -106,7 +106,7 @@ for some point $P\in X$.  The exact sequence
 $$
 0\longrightarrow\OO_X
 \longrightarrow\mcl(P)
-\longrightarrow\mcl(P)|_P
+\longrightarrow\mcl(P)\restrict_P
 \longrightarrow0
 $$
 has a one-dimensional quotient on global sections at most.  Since

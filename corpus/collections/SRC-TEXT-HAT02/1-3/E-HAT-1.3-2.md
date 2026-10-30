@@ -50,7 +50,7 @@ p_i^{-1}(U_i)=\coprod_{\alpha_i\in A_i}V^i_{\alpha_i},
 $$
 where each
 $$
-p_i|_{V^i_{\alpha_i}}:V^i_{\alpha_i}\to U_i
+p_i\restrict_{V^i_{\alpha_i}}:V^i_{\alpha_i}\to U_i
 $$
 is a homeomorphism.
 
@@ -109,9 +109,9 @@ is a homeomorphism.
 
 It is the product of the two homeomorphisms
 $$
-p_1|_{V^1_{\alpha_1}}
+p_1\restrict_{V^1_{\alpha_1}}
 \quad\text{and}\quad
-p_2|_{V^2_{\alpha_2}}.
+p_2\restrict_{V^2_{\alpha_2}}.
 $$
 Its inverse is the product of their continuous inverses.
 

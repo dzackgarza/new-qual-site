@@ -48,7 +48,7 @@ Choose an open disc $D \subset U$ centred at $z_0$.
 If $g \equiv 0$ on $D$, then $f \equiv 0$ on $D$, so $f$ is complex differentiable at $z_0$.
 Otherwise $g$ is analytic and not identically zero on the connected set $D$, so its zero $z_0$ is isolated: some punctured disc $D^\ast$ about $z_0$ misses $Z$.
 By step [](#off-zeros){.pf-ref}, $f$ is analytic on $D^\ast$, and $f$ is bounded near $z_0$ because it is continuous.
-By the Riemann removable singularity theorem, $f|_{D^\ast}$ extends to an analytic function $F$ on $D^\ast \cup \{z_0\}$, and $F(z_0) = \lim_{z \to z_0} f(z) = f(z_0)$ by continuity of $f$.
+By the Riemann removable singularity theorem, $f\restrict_{D^\ast}$ extends to an analytic function $F$ on $D^\ast \cup \{z_0\}$, and $F(z_0) = \lim_{z \to z_0} f(z) = f(z_0)$ by continuity of $f$.
 Hence $f = F$ near $z_0$, and $f$ is complex differentiable at $z_0$.
 :::
 

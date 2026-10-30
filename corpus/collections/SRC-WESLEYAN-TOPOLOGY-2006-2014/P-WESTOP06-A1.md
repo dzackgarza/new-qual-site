@@ -23,7 +23,7 @@ $$
    $$
    If $m$ is infinite, prove that
    $$
-   \delta X\le m\quad\Longrightarrow\quad |C(X)|\le2^m.
+   \delta X\le m\quad\Longrightarrow\quad \cardinality{C(X)}\le2^m.
    $$
 :::
 
@@ -40,7 +40,7 @@ The minimum in the definition of $\delta X$ exists.
 
 The space $X$ is dense in itself, so the collection
 $$
-\mathcal K=\{|D|:D\subseteq X,\ \overline D=X\}
+\mathcal K=\{\cardinality{D}:D\subseteq X,\ \overline D=X\}
 $$
 of cardinalities of dense subsets is nonempty. Cardinals are well ordered, so every nonempty collection of cardinals has a least element. Therefore
 $$
@@ -58,14 +58,14 @@ If $D\subseteq X$ is dense, then the restriction map
 $$
 \rho:C(X)\to\RR^D,
 \qquad
-\rho(f)=f|_D,
+\rho(f)=f\restrict_D,
 $$
 is injective.
 
 
 ::: pf-proof
 
-Suppose $f,g\in C(X)$ satisfy $f|_D=g|_D$. The equalizer
+Suppose $f,g\in C(X)$ satisfy $f\restrict_D=g\restrict_D$. The equalizer
 $$
 E=\{x\in X:f(x)=g(x)\}
 $$
@@ -87,7 +87,7 @@ Thus $f=g$, proving injectivity.
 
 If $m$ is infinite and $\delta X\le m$, then
 $$
-|C(X)|\le2^m.
+\cardinality{C(X)}\le2^m.
 $$
 
 
@@ -95,19 +95,19 @@ $$
 
 Choose a dense subset $D\subseteq X$ with
 $$
-|D|=\delta X\le m.
+\cardinality{D}=\delta X\le m.
 $$
 By step [](#s1-2){.pf-ref},
 $$
-|C(X)|\le|\RR^D|=|\RR|^{|D|}.
+\cardinality{C(X)}\le\cardinality{\RR^D}=\cardinality{\RR}^{\cardinality{D}}.
 $$
 Since $m$ is infinite,
 $$
-|\RR|=2^{\aleph_0}\le2^m,
+\cardinality{\RR}=2^{\aleph_0}\le2^m,
 $$
 and therefore
 $$
-|\RR|^{|D|}
+\cardinality{\RR}^{\cardinality{D}}
 \le
 (2^m)^m
 =
@@ -117,7 +117,7 @@ $$
 $$
 Hence
 $$
-\boxed{|C(X)|\le2^m.}
+\boxed{\cardinality{C(X)}\le2^m.}
 $$
 
 :::

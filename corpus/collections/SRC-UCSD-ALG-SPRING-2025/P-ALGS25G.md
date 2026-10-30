@@ -69,9 +69,9 @@ $$
 
 By the fundamental theorem of Galois theory,
 $$
-[K:L]=|P|,
+[K:L]=\cardinality{P},
 \qquad
-[K:F_0]=|G|.
+[K:F_0]=\cardinality{G}.
 $$
 The tower law gives the displayed equality.
 
@@ -175,7 +175,7 @@ By the Galois correspondence and $[F_1:F_0]=p$,
 $$
 [G:H]=[F_1:F_0]=p.
 $$
-Also $K\supseteq L\supsetneq F_1$, so $[K:F_1]>1$, hence $|H|>1$.
+Also $K\supseteq L\supsetneq F_1$, so $[K:F_1]>1$, hence $\cardinality{H}>1$.
 
 :::
 
@@ -187,7 +187,7 @@ The nontrivial finite $p$-group $H$ has a subgroup $H'$ of index $p$.
 
 ::: pf-proof
 
-Every finite $p$-group has a maximal proper subgroup, and the quotient by such a subgroup is a nontrivial finite simple $p$-group, hence cyclic of order $p$. Equivalently, one may take any subgroup of order $|H|/p$, which exists by the standard subgroup structure of finite $p$-groups.
+Every finite $p$-group has a maximal proper subgroup, and the quotient by such a subgroup is a nontrivial finite simple $p$-group, hence cyclic of order $p$. Equivalently, one may take any subgroup of order $\cardinality{H}/p$, which exists by the standard subgroup structure of finite $p$-groups.
 
 :::
 

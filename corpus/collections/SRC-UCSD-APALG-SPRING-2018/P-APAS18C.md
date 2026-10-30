@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS18C
 kind: problem
-title: Cauchy–Schwarz form $|x^*y|^2\leq(x^*Px)(y^*P^{-1}y)$ for positive definite $P$
+title: Cauchy–Schwarz form $\abs{x^*y}^2\leq(x^*Px)(y^*P^{-1}y)$ for positive definite $P$
 classification:
   areas:
   - applied-algebra
@@ -17,7 +17,7 @@ review: draft
 Let $P\in\CC^{n\times n}$ be a positive definite Hermitian matrix.
 Show that
 $$
-|x^*y|^2\leq(x^*Px)(y^*P^{-1}y)
+\abs{x^*y}^2\leq(x^*Px)(y^*P^{-1}y)
 $$
 for all $x,y\in\CC^n$.
 :::

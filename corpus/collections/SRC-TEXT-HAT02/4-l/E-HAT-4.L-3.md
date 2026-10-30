@@ -38,12 +38,12 @@ $$
 Write
 $$
 H^*(\quatprojective^5;\ZZ_3)=\ZZ_3[x]/(x^6),
-\qquad |x|=4,
+\qquad \gradeddegree{x}=4,
 $$
 and
 $$
 H^*(\OP^2;\ZZ_3)=\ZZ_3[y]/(y^3),
-\qquad |y|=8.
+\qquad \gradeddegree{y}=8.
 $$
 
 The Gysin sequence of the $S^4$-bundle shows that

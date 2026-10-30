@@ -63,7 +63,7 @@ for almost every $x\in[0,\pi]$.
 
 Since $0\le\sin^k x\le1$ and $f$ is continuous, $f$ is bounded on $[0,1]$. Thus there is $M<\infty$ such that
 $$
-|f(\sin^k x)|\le M
+\abs{f(\sin^k x)}\le M
 $$
 for every $k$ and every $x\in[0,\pi]$. By dominated convergence,
 $$
@@ -84,21 +84,21 @@ Prove preservation of convergence in measure under $F$.
 
 Fix $\varepsilon>0$. Since $F$ is uniformly continuous, there exists $\delta>0$ such that
 $$
-|u-v|<\delta
+\abs{u-v}<\delta
 \quad\Longrightarrow\quad
-|F(u)-F(v)|<\varepsilon.
+\abs{F(u)-F(v)}<\varepsilon.
 $$
 Therefore
 $$
-\{|F(f_k)-F(f)|\ge\varepsilon\}
+\{\abs{F(f_k)-F(f)}\ge\varepsilon\}
 \subseteq
-\{|f_k-f|\ge\delta\}.
+\{\abs{f_k-f}\ge\delta\}.
 $$
 Taking measures and using $f_k\to f$ in measure gives
 $$
-\mu\bigl(|F(f_k)-F(f)|\ge\varepsilon\bigr)
+\mu\bigl(\abs{F(f_k)-F(f)}\ge\varepsilon\bigr)
 \le
-\mu\bigl(|f_k-f|\ge\delta\bigr)
+\mu\bigl(\abs{f_k-f}\ge\delta\bigr)
 \longrightarrow0.
 $$
 Thus
@@ -119,7 +119,7 @@ Pass weak $L^1$ convergence to distributional derivatives.
 Let $\varphi\in C_c^\infty(\RR^n)$. By definition of distributional derivatives,
 $$
 \langle \partial^\alpha g_k,\varphi\rangle
-=(-1)^{|\alpha|}\int_{\RR^n}g_k(x)\,\partial^\alpha\varphi(x)\,dx.
+=(-1)^{\multiindexsize{\alpha}}\int_{\RR^n}g_k(x)\,\partial^\alpha\varphi(x)\,dx.
 $$
 The test function $\partial^\alpha\varphi$ is bounded, hence belongs to $L^\infty(\RR^n)$. Since $g_k\rightharpoonup g$ weakly in $L^1$,
 $$

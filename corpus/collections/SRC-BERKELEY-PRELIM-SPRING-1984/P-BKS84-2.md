@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 Let $G$ be a $p$-group of order $p^4$, and suppose
 $$
-|Z(G)|=p^2.
+\cardinality{Z(G)}=p^2.
 $$
 Determine the number of conjugacy classes of $G$.
 :::

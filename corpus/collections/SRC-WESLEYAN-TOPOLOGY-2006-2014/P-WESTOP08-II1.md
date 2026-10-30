@@ -210,7 +210,7 @@ to be the identity on the $S^1$ summand and to collapse the whole $S^2$
 summand to the wedge point.
 Then
 $$
-r|_{S^1}
+r\restrict_{S^1}
 =
 \operatorname{id}_{S^1},
 $$

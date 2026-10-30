@@ -94,7 +94,7 @@ On the top cohomology of a closed oriented manifold, $f^*$ is multiplication by 
 
 Thus $\det A=1$, and therefore
 $$
-\boxed{f^*|_{H^1}\in SL_2(\ZZ).}
+\boxed{f^*\restrict_{H^1}\in SL_2(\ZZ).}
 $$
 
 ::: pf-proof

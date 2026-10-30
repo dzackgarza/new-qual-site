@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $A=\{z\in\CC:1<|z|<2\}$ and let $f$ be
+Let $A=\{z\in\CC:1<\abs{z}<2\}$ and let $f$ be
 holomorphic on a neighborhood of $\overline A$, with
-$f|_A$ nonconstant and $|f|=1$ on $\partial A$.
+$f\restrict_A$ nonconstant and $\abs{f}=1$ on $\partial A$.
 Prove that $f$ has at least two zeros in $A$, counted
 with multiplicity.
 :::
@@ -41,10 +41,10 @@ The function maps $A$ into the unit disk and has a positive finite zero count.
 
 ::: pf-proof
 The maximum modulus principle on the compact closed
-annulus gives $|f|\leq1$, with strict inequality in $A$
-because $f|_A$ is nonconstant [@SS03]. If $f$ had no
+annulus gives $\abs{f}\leq1$, with strict inequality in $A$
+because $f\restrict_A$ is nonconstant [@SS03]. If $f$ had no
 zero in $A$, it would have none on $\overline A$, and
-the same principle applied to $1/f$ would give $|f|\geq1$
+the same principle applied to $1/f$ would give $\abs{f}\geq1$
 in $A$, a contradiction. Its number $N$ of zeros in $A$,
 counted with multiplicity, is finite and positive: zeros
 cannot accumulate in the compact subset $\overline A$
@@ -60,8 +60,8 @@ Every point of the unit disk has exactly $N$ preimages in $A$, with multiplicity
 ::: pf-proof
 Give $\partial A$ the positive orientation, outer circle
 counterclockwise and inner circle clockwise. For a fixed
-$w$ with $|w|<1$ and $0\leq t\leq1$, one has
-$|f-tw|\geq1-|w|>0$ on this boundary. The argument
+$w$ with $\abs{w}<1$ and $0\leq t\leq1$, one has
+$\abs{f-tw}\geq1-\abs{w}>0$ on this boundary. The argument
 principle therefore gives
 $$
 N_w(t)=\frac1{2\pi i}\int_{\partial A}
@@ -91,10 +91,10 @@ constant chosen at zero, has exponential $g$.
 The holomorphic function $K=L\circ f$ on $A$ then
 satisfies $e^{K(z)}=g(f(z))=z$. Differentiating gives
 $K'(z)=1/z$. But the integral of a derivative around
-the circle $|z|=3/2$ is zero, whereas direct
+the circle $\abs{z}=3/2$ is zero, whereas direct
 parametrization gives
 $$
-\int_{|z|=3/2}\frac{dz}{z}=2\pi i.
+\int_{\abs{z}=3/2}\frac{dz}{z}=2\pi i.
 $$
 This contradiction excludes $N=1$. Together with
 $N\geq1$, it proves $N\geq2$.

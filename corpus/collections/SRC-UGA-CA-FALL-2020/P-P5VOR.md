@@ -24,12 +24,12 @@ $$
 :::
 
 ::: {.solution}
-Write $I$ for the integral, $\zeta_3\definedas e^{2\pi i\over 3}, \omega_3 \definedas e^{i\pi\over 3}$.
-Take a indented semicircular wedge $\Gamma$ at an angle of $2\pi/3$, noting the pole at $\omega_3 \definedas e^{i \pi \over 3}$:
+Write $I$ for the integral, $\zeta_3\coloneqq e^{2\pi i\over 3}, \omega_3 \coloneqq e^{i\pi\over 3}$.
+Take a indented semicircular wedge $\Gamma$ at an angle of $2\pi/3$, noting the pole at $\omega_3 \coloneqq e^{i \pi \over 3}$:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_06-01-59.png)
 
-Choosing a branch cut of $\log$ along $\theta = -\pi/2$, so $\arg(z) \in (-\pi/2, 3\pi/2)$, this makes $f(z) \definedas z^{\alpha-1}/(1+z^3)$ meromorphic on $\Gamma$.
+Choosing a branch cut of $\log$ along $\theta = -\pi/2$, so $\arg(z) \in (-\pi/2, 3\pi/2)$, this makes $f(z) \coloneqq z^{\alpha-1}/(1+z^3)$ meromorphic on $\Gamma$.
 
 By the ML estimate, the integrals along $C_\eps, C_R$ will vanish in the limit.
 

@@ -158,7 +158,7 @@ This is $\alpha$ on $C_2$, $\beta$ on $C_3$, and $3$ at the identity.
 
 ::: {.pf-step #s6}
 
-One has $\alpha+\beta=-1$ and $\alpha\beta=2$, hence $|\alpha|^2=|\beta|^2=2$.
+One has $\alpha+\beta=-1$ and $\alpha\beta=2$, hence $\abs{\alpha}^2=\abs{\beta}^2=2$.
 
 ::: pf-proof
 
@@ -183,7 +183,7 @@ The character $\theta$ is irreducible.
 Using the class sizes,
 $$
 \langle\theta,\theta\rangle_G
-=\frac1{21}\left(9+3|\alpha|^2+3|\beta|^2\right)
+=\frac1{21}\left(9+3\abs{\alpha}^2+3\abs{\beta}^2\right)
 =\frac{9+6+6}{21}=1.
 $$
 Thus $\theta$ is irreducible.
@@ -227,7 +227,7 @@ $$
 
 The first three rows are irreducible because they are one-dimensional, and the last two are irreducible by steps [](#s7){.pf-ref} and [](#s8){.pf-ref}. Their degree squares sum to
 $$
-1+1+1+9+9=21=|G|,
+1+1+1+9+9=21=\cardinality{G},
 $$
 so there are no further irreducible characters.
 

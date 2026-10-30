@@ -80,7 +80,7 @@ $$
 =\widetilde\sigma(a)
 =\sigma(a),
 $$
-because $a\in K$ and $\widetilde\sigma|_K=\sigma$. Hence $\widetilde\sigma(b)$ is a $p$-th root of $\sigma(a)$ lying in $M$.
+because $a\in K$ and $\widetilde\sigma\restrict_K=\sigma$. Hence $\widetilde\sigma(b)$ is a $p$-th root of $\sigma(a)$ lying in $M$.
 
 :::
 

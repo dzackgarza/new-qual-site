@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $f:[0,1]\to\RR$ be continuously differentiable with $f(0)=0$. Prove that
 $$
-\sup_{0\le x\le1}|f(x)|\le\sqrt{\int_0^1(f'(x))^2\,dx}.
+\sup_{0\le x\le1}\abs{f(x)}\le\sqrt{\int_0^1(f'(x))^2\,dx}.
 $$
 :::
 
@@ -52,7 +52,7 @@ $$
 ::: {.pf-step #cauchy-schwarz-bound}
 For every $x\in[0,1]$,
 $$
-|f(x)|
+\abs{f(x)}
 \le
 \sqrt{x}
 \left(\int_0^x(f'(t))^2\,dt\right)^{1/2}.
@@ -62,8 +62,8 @@ $$
 By [](#fundamental-theorem){.pf-ref} and Cauchy--Schwarz,
 $$
 \begin{aligned}
-|f(x)|
-&=\left|\int_0^x f'(t)\,dt\right|\\
+\abs{f(x)}
+&=\abs{\int_0^x f'(t)\,dt}\\
 &\le
 \left(\int_0^x1^2\,dt\right)^{1/2}
 \left(\int_0^x(f'(t))^2\,dt\right)^{1/2}\\
@@ -79,7 +79,7 @@ $$
 ::: {.pf-step #uniform-bound}
 For every $x\in[0,1]$,
 $$
-|f(x)|
+\abs{f(x)}
 \le
 \left(\int_0^1(f'(t))^2\,dt\right)^{1/2}.
 $$
@@ -101,7 +101,7 @@ Substitute these two bounds into [](#cauchy-schwarz-bound){.pf-ref}.
 Therefore
 $$
 \boxed{
-\sup_{0\le x\le1}|f(x)|
+\sup_{0\le x\le1}\abs{f(x)}
 \le
 \sqrt{\int_0^1(f'(x))^2\,dx}}.
 $$

@@ -25,7 +25,7 @@ State the Maximum Principle.
 
 ::: {.pf-step #s1-1}
 
-**Maximum Principle.** Let $\Omega\subseteq\CC$ be a domain and let $f:\Omega\to\CC$ be holomorphic. If $|f|$ attains a local maximum at a point of $\Omega$, then $f$ is constant on $\Omega$.
+**Maximum Principle.** Let $\Omega\subseteq\CC$ be a domain and let $f:\Omega\to\CC$ be holomorphic. If $\abs{f}$ attains a local maximum at a point of $\Omega$, then $f$ is constant on $\Omega$.
 
 
 ::: pf-proof
@@ -40,7 +40,7 @@ This is the maximum-modulus principle for holomorphic functions.
 
 Equivalently, if $f$ is nonconstant and holomorphic on a domain $\Omega$, then
 $$
-|f(z)|
+\abs{f(z)}
 $$
 has no local maximum at any interior point $z\in\Omega$.
 
@@ -58,9 +58,9 @@ This is the contrapositive of step [](#s1-1){.pf-ref}.
 In particular, if $\Omega$ is bounded, $f$ is continuous on $\overline\Omega$, and $f$ is holomorphic on $\Omega$, then
 $$
 \boxed{
-\max_{z\in\overline\Omega}|f(z)|
+\max_{z\in\overline\Omega}\abs{f(z)}
 =
-\max_{z\in\partial\Omega}|f(z)|}
+\max_{z\in\partial\Omega}\abs{f(z)}}
 $$
 unless $f$ is constant.
 

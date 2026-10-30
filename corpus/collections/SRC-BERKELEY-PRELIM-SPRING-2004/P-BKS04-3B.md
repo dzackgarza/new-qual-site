@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-3B
 kind: problem
-title: $\|A^n\|=O(n^{d-1})$ when every eigenvalue of $A$ has modulus $1$
+title: $\norm{A^n}=O(n^{d-1})$ when every eigenvalue of $A$ has modulus $1$
 classification:
   areas: [prelim]
   topics: []

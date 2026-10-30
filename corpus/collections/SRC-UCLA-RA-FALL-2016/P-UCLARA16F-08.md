@@ -17,18 +17,18 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a continuous complex-valued function on the closed unit disk $\overline D$ such that $f$ is holomorphic on the open disk $D=\{z\in\CC:|z|<1\}$ and $f(0)\ne0$.
+Let $f$ be a continuous complex-valued function on the closed unit disk $\overline D$ such that $f$ is holomorphic on the open disk $D=\{z\in\CC:\abs{z}<1\}$ and $f(0)\ne0$.
 
-(a) Show that if $0<r<1$ and $\inf_{|z|=r}|f(z)|>0$, then
+(a) Show that if $0<r<1$ and $\inf_{\abs{z}=r}\abs{f(z)}>0$, then
 $$
-\frac1{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\,d\theta\ge\log|f(0)|.
+\frac1{2\pi}\int_0^{2\pi}\log\abs{f(re^{i\theta})}\,d\theta\ge\log\abs{f(0)}.
 $$
 
 (b) Show that
 $$
-\bigl|\{\theta\in[0,2\pi]:f(e^{i\theta})=0\}\bigr|=0,
+\setmeasure{\{\theta\in[0,2\pi]:f(e^{i\theta})=0\}}=0,
 $$
-where $|E|$ denotes the Lebesgue measure of $E\subset[0,2\pi]$.
+where $\setmeasure{E}$ denotes the Lebesgue measure of $E\subset[0,2\pi]$.
 :::
 
 ::: {.solution}
@@ -41,19 +41,19 @@ $$
 $$
 and assume
 $$
-\inf_{|z|=r}|f(z)|>0.
+\inf_{\abs{z}=r}\abs{f(z)}>0.
 $$
 
 ::: pf
 
 ::: pf-step
 
-The function $f$ has no zeros on the circle $|z|=r$.
+The function $f$ has no zeros on the circle $\abs{z}=r$.
 
 
 ::: pf-proof
 
-The stated positive lower bound on $|f|$ excludes zeros there.
+The stated positive lower bound on $\abs{f}$ excludes zeros there.
 
 :::
 
@@ -63,7 +63,7 @@ The stated positive lower bound on $|f|$ excludes zeros there.
 
 The function $f$ has only finitely many zeros in the closed disk
 $$
-\{|z|\le r\}.
+\{\abs{z}\le r\}.
 $$
 
 
@@ -85,16 +85,16 @@ The denominator
 $$
 r^2-\overline a z
 $$
-does not vanish on $|z|\le r$.
+does not vanish on $\abs{z}\le r$.
 
 
 ::: pf-proof
 
-For $|z|\le r$,
+For $\abs{z}\le r$,
 $$
-|\overline a z|
+\abs{\overline a z}
 \le
-|a|r
+\abs{a}r
 <
 r^2.
 $$
@@ -109,27 +109,27 @@ $$
 
 ::: {.pf-step #s1-4}
 
-On the boundary circle $|z|=r$,
+On the boundary circle $\abs{z}=r$,
 $$
-\boxed{|B_a(z)|=1}.
+\boxed{\abs{B_a(z)}=1}.
 $$
 
 
 ::: pf-proof
 
-If $|z|=r$, then
+If $\abs{z}=r$, then
 $$
-|r^2-\overline a z|
+\abs{r^2-\overline a z}
 =
-|z|\,|z-a|
+\abs{z}\,\abs{z-a}
 =
-r|z-a|.
+r\abs{z-a}.
 $$
 Therefore
 $$
-|B_a(z)|
+\abs{B_a(z)}
 =
-\frac{r|z-a|}{|r^2-\overline a z|}
+\frac{r\abs{z-a}}{\abs{r^2-\overline a z}}
 =
 1.
 $$
@@ -143,9 +143,9 @@ $$
 At $z=0$,
 $$
 \boxed{
-|B_a(0)|
+\abs{B_a(0)}
 =
-\frac{|a|}{r}}.
+\frac{\abs{a}}{r}}.
 $$
 
 
@@ -165,12 +165,12 @@ $$
 
 ::: pf-step
 
-The function $g$ extends holomorphically to $|z|<r$ and has no zeros there.
+The function $g$ extends holomorphically to $\abs{z}<r$ and has no zeros there.
 
 
 ::: pf-proof
 
-Each $B_{a_j}$ has exactly one zero at $a_j$, with the same multiplicity contribution used in the list of zeros. Dividing by the product cancels all zeros of $f$ in $|z|<r$. Step [](#s1-3){.pf-ref} shows the Blaschke denominators introduce no singularities in the disk. Thus the quotient extends holomorphically and is zero-free.
+Each $B_{a_j}$ has exactly one zero at $a_j$, with the same multiplicity contribution used in the list of zeros. Dividing by the product cancels all zeros of $f$ in $\abs{z}<r$. Step [](#s1-3){.pf-ref} shows the Blaschke denominators introduce no singularities in the disk. Thus the quotient extends holomorphically and is zero-free.
 
 :::
 
@@ -180,14 +180,14 @@ Each $B_{a_j}$ has exactly one zero at $a_j$, with the same multiplicity contrib
 
 The function
 $$
-\log|g(z)|
+\log\abs{g(z)}
 $$
-is harmonic on $|z|<r$.
+is harmonic on $\abs{z}<r$.
 
 
 ::: pf-proof
 
-A zero-free holomorphic function has locally a holomorphic logarithm, whose real part is $\log|g|$. Hence $\log|g|$ is harmonic.
+A zero-free holomorphic function has locally a holomorphic logarithm, whose real part is $\log\abs{g}$. Hence $\log\abs{g}$ is harmonic.
 
 :::
 
@@ -198,17 +198,17 @@ A zero-free holomorphic function has locally a holomorphic logarithm, whose real
 By the mean-value property,
 $$
 \boxed{
-\log|g(0)|
+\log\abs{g(0)}
 =
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|g(re^{i\theta})|\,d\theta}.
+\log\abs{g(re^{i\theta})}\,d\theta}.
 $$
 
 
 ::: pf-proof
 
-Apply the harmonic mean-value property to $\log|g|$ on the disk of radius $r$.
+Apply the harmonic mean-value property to $\log\abs{g}$ on the disk of radius $r$.
 
 :::
 
@@ -216,9 +216,9 @@ Apply the harmonic mean-value property to $\log|g|$ on the disk of radius $r$.
 
 ::: {.pf-step #s1-9}
 
-On $|z|=r$,
+On $\abs{z}=r$,
 $$
-\boxed{|g(z)|=|f(z)|}.
+\boxed{\abs{g(z)}=\abs{f(z)}}.
 $$
 
 
@@ -234,11 +234,11 @@ By step [](#s1-4){.pf-ref}, every factor $B_{a_j}$ has modulus $1$ on the bounda
 
 At the origin,
 $$
-|g(0)|
+\abs{g(0)}
 =
-|f(0)|
+\abs{f(0)}
 \prod_{j=1}^{N}
-\frac r{|a_j|}.
+\frac r{\abs{a_j}}.
 $$
 
 
@@ -246,12 +246,12 @@ $$
 
 Using step [](#s1-5){.pf-ref},
 $$
-\left|
+\abs{
 \prod_{j=1}^{N}B_{a_j}(0)
-\right|
+}
 =
 \prod_{j=1}^{N}
-\frac{|a_j|}{r}.
+\frac{\abs{a_j}}{r}.
 $$
 Since $f(0)\ne0$, none of the zeros $a_j$ equals $0$. Divide.
 
@@ -266,12 +266,12 @@ $$
 \boxed{
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|f(re^{i\theta})|\,d\theta
+\log\abs{f(re^{i\theta})}\,d\theta
 =
-\log|f(0)|
+\log\abs{f(0)}
 +
 \sum_{j=1}^{N}
-\log\frac r{|a_j|}}.
+\log\frac r{\abs{a_j}}}.
 $$
 
 
@@ -292,11 +292,11 @@ Every term in the sum in step [](#s1-11){.pf-ref} is positive.
 
 Each zero satisfies
 $$
-|a_j|<r,
+\abs{a_j}<r,
 $$
 so
 $$
-r/|a_j|>1.
+r/\abs{a_j}>1.
 $$
 
 :::
@@ -310,9 +310,9 @@ $$
 \boxed{
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|f(re^{i\theta})|\,d\theta
+\log\abs{f(re^{i\theta})}\,d\theta
 \ge
-\log|f(0)|}.
+\log\abs{f(0)}}.
 $$
 
 
@@ -328,7 +328,7 @@ Drop the nonnegative sum from step [](#s1-11){.pf-ref}.
 
 The set of radii
 $$
-\{|a|:f(a)=0,\ a\in D\}
+\{\abs{a}:f(a)=0,\ a\in D\}
 $$
 is countable.
 
@@ -347,7 +347,7 @@ Therefore one can choose a sequence
 $$
 r_n\uparrow1
 $$
-such that $f$ has no zeros on $|z|=r_n$.
+such that $f$ has no zeros on $\abs{z}=r_n$.
 
 
 ::: pf-proof
@@ -365,15 +365,15 @@ $$
 \boxed{
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|f(r_ne^{i\theta})|\,d\theta
+\log\abs{f(r_ne^{i\theta})}\,d\theta
 \ge
-\log|f(0)|}.
+\log\abs{f(0)}}.
 $$
 
 
 ::: pf-proof
 
-Since $f$ is continuous on the compact circle $|z|=r_n$ and has no zeros there, its modulus has a positive minimum. Apply part (a), step [](#s1-13){.pf-ref}.
+Since $f$ is continuous on the compact circle $\abs{z}=r_n$ and has no zeros there, its modulus has a positive minimum. Apply part (a), step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -399,7 +399,7 @@ $$
 \delta_n
 =
 \sup_{\theta\in E}
-|f(r_ne^{i\theta})|.
+\abs{f(r_ne^{i\theta})}.
 $$
 Then
 $$
@@ -415,14 +415,14 @@ f(e^{i\theta})=0.
 $$
 Also
 $$
-|r_ne^{i\theta}-e^{i\theta}|
+\abs{r_ne^{i\theta}-e^{i\theta}}
 =
 1-r_n\to0
 $$
 uniformly in $\theta$. Uniform continuity from step [](#s1-17){.pf-ref} therefore gives
 $$
 \sup_{\theta\in E}
-|f(r_ne^{i\theta})-f(e^{i\theta})|
+\abs{f(r_ne^{i\theta})-f(e^{i\theta})}
 \to0.
 $$
 The second term is zero on $E$.
@@ -437,7 +437,7 @@ Let
 $$
 M
 =
-\max_{|z|\le1}|f(z)|.
+\max_{\abs{z}\le1}\abs{f(z)}.
 $$
 Then
 $$
@@ -462,11 +462,11 @@ the maximum is positive.
 For every $n$,
 $$
 \int_0^{2\pi}
-\log|f(r_ne^{i\theta})|\,d\theta
+\log\abs{f(r_ne^{i\theta})}\,d\theta
 \le
-|E|\log\delta_n
+\setmeasure{E}\log\delta_n
 +
-(2\pi-|E|)\log M.
+(2\pi-\setmeasure{E})\log M.
 $$
 
 
@@ -474,19 +474,19 @@ $$
 
 On $E$,
 $$
-|f(r_ne^{i\theta})|
+\abs{f(r_ne^{i\theta})}
 \le
 \delta_n,
 $$
 so
 $$
-\log|f(r_ne^{i\theta})|
+\log\abs{f(r_ne^{i\theta})}
 \le
 \log\delta_n.
 $$
 On the complement of $E$,
 $$
-|f(r_ne^{i\theta})|
+\abs{f(r_ne^{i\theta})}
 \le
 M,
 $$
@@ -500,7 +500,7 @@ so the logarithm is at most $\log M$. Integrate the two bounds over the two meas
 
 Since
 $$
-|E|>0
+\setmeasure{E}>0
 $$
 and
 $$
@@ -514,7 +514,7 @@ the right-hand side in step [](#s1-20){.pf-ref} tends to $-\infty$.
 $$
 \log\delta_n\to-\infty,
 $$
-and it is multiplied by the positive number $|E|$. The remaining term is constant in $n$.
+and it is multiplied by the positive number $\setmeasure{E}$. The remaining term is constant in $n$.
 
 :::
 
@@ -527,7 +527,7 @@ $$
 \boxed{
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|f(r_ne^{i\theta})|\,d\theta
+\log\abs{f(r_ne^{i\theta})}\,d\theta
 \to
 -\infty}.
 $$
@@ -550,7 +550,7 @@ This contradicts the uniform lower bound in step [](#s1-16){.pf-ref}.
 
 Step [](#s1-16){.pf-ref} says every average is at least the finite number
 $$
-\log|f(0)|.
+\log\abs{f(0)}.
 $$
 
 :::
@@ -561,13 +561,13 @@ $$
 
 Hence
 $$
-\boxed{|E|=0}.
+\boxed{\setmeasure{E}=0}.
 $$
 
 
 ::: pf-proof
 
-The assumption $|E|>0$ led to the contradiction in step [](#s1-23){.pf-ref}.
+The assumption $\setmeasure{E}>0$ led to the contradiction in step [](#s1-23){.pf-ref}.
 
 :::
 

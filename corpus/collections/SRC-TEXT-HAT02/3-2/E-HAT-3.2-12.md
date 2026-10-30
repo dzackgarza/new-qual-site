@@ -61,7 +61,7 @@ v=su\in H^3(Q;R),
 $$
 then every odd class is $vu^{k-1}$ and $v^2=0$. Hence
 $$
-H^*(Q;R)\cong R[u,v]/(v^2),\qquad |u|=2,\ |v|=3.
+H^*(Q;R)\cong R[u,v]/(v^2),\qquad \gradeddegree{u}=2,\ \gradeddegree{v}=3.
 $$
 
 On the other hand

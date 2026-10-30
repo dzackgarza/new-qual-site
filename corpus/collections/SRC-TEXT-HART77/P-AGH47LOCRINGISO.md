@@ -250,7 +250,7 @@ f\circ g=\operatorname{id}_U,
 \qquad
 g\circ f=\operatorname{id}_V.
 $$
-So $g:U\to V$ is an isomorphism with inverse $f|_V$.
+So $g:U\to V$ is an isomorphism with inverse $f\restrict_V$.
 Step [](#s3){.pf-ref} gives $g(P)=Q$.
 
 :::

@@ -37,7 +37,7 @@ So $\phi_P$ is surjective for all $P$, and hence $\phi$ is surjective.
 $$
 0 \to \underline{\ZZ} \injects (\OO_\CC, +) \surjectsvia{\exp} (\units{\OO_\CC}, \cdot) \to 0.
 $$
-Let $U \definedas \CCstar$ and let $f(z) = z$, a nowhere-vanishing holomorphic function, so $f \in \units{\OO_\CC}(U)$.
+Let $U \coloneqq \CCstar$ and let $f(z) = z$, a nowhere-vanishing holomorphic function, so $f \in \units{\OO_\CC}(U)$.
 There is no $g \in \OO_\CC(U)$ with $\exp(g) = z$ on all of $U$: such a $g$ would be a single-valued holomorphic branch of $\log z$ on the punctured plane, and $\log$ is multivalued there.
 So $\exp(U)$ is not surjective on sections.
 

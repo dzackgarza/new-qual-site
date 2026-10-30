@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and suppose
 $$
-\int_{-\infty}^{\infty}|f(x)|\,dx<\infty.
+\int_{-\infty}^{\infty}\abs{f(x)}\,dx<\infty.
 $$
 Show that there is a sequence $x_n\to\infty$ such that
 $$

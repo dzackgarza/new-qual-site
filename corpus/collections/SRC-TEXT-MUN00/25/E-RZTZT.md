@@ -49,13 +49,13 @@ $$
 $$
 is continuous coordinatewise, hence continuous into the product. Therefore there is one path component and one component: all of $\RR^\omega$.
 
-(b) In the uniform topology, translation is a homeomorphism, so it suffices to determine the component of $0$. Suppose $x=(x_i)$ is bounded, say $|x_i|\le M$. The straight-line path
+(b) In the uniform topology, translation is a homeomorphism, so it suffices to determine the component of $0$. Suppose $x=(x_i)$ is bounded, say $\abs{x_i}\le M$. The straight-line path
 $$
 \gamma(t)=tx
 $$
 is uniformly continuous in the parameter with respect to the uniform metric, since for $s,t\in[0,1]$,
 $$
-\bar\rho(sx,tx)\le \min\{M|s-t|,1\}.
+\bar\rho(sx,tx)\le \min\{M\abs{s-t},1\}.
 $$
 Hence every bounded sequence lies in the path component of $0$.
 
@@ -73,7 +73,7 @@ is bounded; in fact these components are path components as well.
 
 Conversely, suppose $d=x-y$ is not eventually zero. By translation, take $y=0$. Choose infinitely many indices $i_k$ with $d_{i_k}\ne0$. Define positive scalars $a_i$ by
 $$
-a_{i_k}=\frac{k}{|d_{i_k}|},
+a_{i_k}=\frac{k}{\abs{d_{i_k}}},
 $$
 and $a_i=1$ at all other indices. The coordinatewise scaling
 $$

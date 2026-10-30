@@ -78,7 +78,7 @@ Hence the quotient ring $K = \FF_2[t]/\langle p(t)\rangle$ is a field.
 
 ::: pf-step
 
-The dimension of $K$ as an $\FF_2$-vector space is $\deg(p(t)) = 3$, so $|K| = |\FF_2|^3 = 2^3 = 8$.
+The dimension of $K$ as an $\FF_2$-vector space is $\deg(p(t)) = 3$, so $\cardinality{K} = \cardinality{\FF_2}^3 = 2^3 = 8$.
 
 :::
 

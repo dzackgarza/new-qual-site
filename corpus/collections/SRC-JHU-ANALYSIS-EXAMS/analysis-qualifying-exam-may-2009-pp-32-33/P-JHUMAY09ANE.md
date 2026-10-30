@@ -40,14 +40,14 @@ defines a bounded continuous function on $\RR$.
 
 The convolution is bounded, with
 $$
-\|f*g\|_\infty\le\|f\|_2\|g\|_2.
+\norm{f*g}_\infty\le\norm{f}_2\norm{g}_2.
 $$
 
 ::: pf-proof
 
 For each $x$, the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]] and translation invariance of the $L^2$ norm give
 $$
-|(f*g)(x)|\le \|f\|_2\,\|g(x-\cdot)\|_2=\|f\|_2\|g\|_2.
+\abs{(f*g)(x)}\le \norm{f}_2\,\norm{g(x-\cdot)}_2=\norm{f}_2\norm{g}_2.
 $$
 Taking the supremum over $x$ proves the claim.
 
@@ -68,8 +68,8 @@ $$
 $$
 Applying Cauchy--Schwarz again gives, uniformly in $x$,
 $$
-|(f*g)(x+h)-(f*g)(x)|
-\le\|f\|_2\,\|g(\cdot+h)-g\|_2.
+\abs{(f*g)(x+h)-(f*g)(x)}
+\le\norm{f}_2\,\norm{g(\cdot+h)-g}_2.
 $$
 By [[T-BFOJT|continuity of translation in $L^p$]], the final norm tends to $0$ as $h\to0$. The bound is independent of $x$, so $f*g$ is uniformly continuous, hence continuous.
 

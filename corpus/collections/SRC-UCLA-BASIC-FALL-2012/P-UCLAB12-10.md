@@ -171,11 +171,11 @@ m_+-m_-
 $$
 The hypothesis
 $$
-|\operatorname{Tr}(A)|=2
+\abs{\operatorname{Tr}(A)}=2
 $$
 gives
 $$
-|4-2m_-|=2.
+\abs{4-2m_-}=2.
 $$
 Therefore
 $$

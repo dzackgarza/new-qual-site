@@ -33,7 +33,7 @@ $$
 be entire.
 Find a formula for the coefficients $f_n$ in the Taylor expansion at $0$ of
 $$
-f(z)=\frac1{2\pi i}\int_{|w|=1}g(z/w)h(w)\frac{dw}{w}.
+f(z)=\frac1{2\pi i}\int_{\abs{w}=1}g(z/w)h(w)\frac{dw}{w}.
 $$
 :::
 

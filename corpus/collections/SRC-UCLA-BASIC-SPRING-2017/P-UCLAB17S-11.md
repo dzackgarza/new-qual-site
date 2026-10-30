@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $f_n:[0,1]\to\RR$ be continuous and satisfy
 $$
-|f_n(x)|\le 1+\frac{n}{1+n^2x^2}.
+\abs{f_n(x)}\le 1+\frac{n}{1+n^2x^2}.
 $$
 Define $F_n(x)=\int_0^x f_n(t)\,dt$. Show that there is a subsequence $n_k\to\infty$ such that $F_{n_k}(x)$ converges for every $x\in[0,1]$.
 :::
@@ -40,7 +40,7 @@ x\in[0,1],
 $$
 one has
 $$
-|F_n(x)|
+\abs{F_n(x)}
 \le
 1+\frac{\pi}{2}.
 $$
@@ -50,16 +50,16 @@ $$
 
 By hypothesis,
 $$
-|f_n(t)|
+\abs{f_n(t)}
 \le
 1+\frac{n}{1+n^2t^2}.
 $$
 Therefore
 $$
 \begin{aligned}
-|F_n(x)|
+\abs{F_n(x)}
 &\le
-\int_0^x|f_n(t)|\,dt\\
+\int_0^x\abs{f_n(t)}\,dt\\
 &\le
 \int_0^1
 \left(
@@ -135,9 +135,9 @@ $$
 On $K_m$, the family $(F_n)$ is equi-Lipschitz:
 $$
 \boxed{
-|F_n(x)-F_n(y)|
+\abs{F_n(x)-F_n(y)}
 \le
-\left(1+\frac m2\right)|x-y|.
+\left(1+\frac m2\right)\abs{x-y}.
 }
 $$
 
@@ -155,26 +155,26 @@ $$
 Then
 $$
 \begin{aligned}
-|F_n(y)-F_n(x)|
+\abs{F_n(y)-F_n(x)}
 &=
-\left|
+\abs{
 \int_x^y f_n(t)\,dt
-\right|\\
+}\\
 &\le
 \int_x^y
-|f_n(t)|\,dt.
+\abs{f_n(t)}\,dt.
 \end{aligned}
 $$
 By the hypothesis and step [](#s1-2){.pf-ref},
 $$
-|f_n(t)|
+\abs{f_n(t)}
 \le
 1+\frac m2
 $$
 on $K_m$.
 Thus
 $$
-|F_n(y)-F_n(x)|
+\abs{F_n(y)-F_n(x)}
 \le
 \left(1+\frac m2\right)(y-x).
 $$

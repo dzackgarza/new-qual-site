@@ -67,9 +67,9 @@ Since $\log t=-\log(1/t)$, the displayed identity follows.
 
 For $u\geq1$,
 $$
-\left|
+\abs{
 \frac1{(1+u^4)^{1/4}}-\frac1u
-\right|
+}
 \leq
 \frac1{4u^5}.
 $$

@@ -30,7 +30,7 @@ Consider the cases when $q$ does or does not divide $p^2 - 1$.
 :::
 
 ::: {.solution}
-Let $|G|=p^2q$, where $p$ and $q$ are primes. If $p=q$, then $G$ is a $p$-group of order $p^3$; assume from now on that $p\ne q$.
+Let $\cardinality{G}=p^2q$, where $p$ and $q$ are primes. If $p=q$, then $G$ is a $p$-group of order $p^3$; assume from now on that $p\ne q$.
 
 ::: pf
 
@@ -90,7 +90,7 @@ In the exceptional order-$12$ case, $G$ still has a normal Sylow subgroup.
 
 ::: pf-proof
 
-Let $|G|=12$. If $n_3=1$, the Sylow $3$-subgroup is normal. Suppose $n_3=4$. Distinct subgroups of order $3$ intersect trivially, so the four Sylow $3$-subgroups contain
+Let $\cardinality{G}=12$. If $n_3=1$, the Sylow $3$-subgroup is normal. Suppose $n_3=4$. Distinct subgroups of order $3$ intersect trivially, so the four Sylow $3$-subgroups contain
 $$
 4(3-1)=8
 $$
@@ -124,7 +124,7 @@ Let $P$ and $Q$ be Sylow subgroups of orders $p^2$ and $q$, respectively. Their 
 
 If $P\trianglelefteq G$, then $PQ$ is a subgroup and
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}=p^2q=|G|,
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}=p^2q=\cardinality{G},
 $$
 so
 $$

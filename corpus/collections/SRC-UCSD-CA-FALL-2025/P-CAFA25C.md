@@ -22,7 +22,7 @@ Let $z_1 \in R_1$ and $z_2 \in R_2$.
 (i) Prove that there exists a holomorphic bijective function $f : R_1 \to R_2$ such that $f(z_1) = z_2$.
 
 (ii) Suppose that $g : R_1 \to R_2$ is a holomorphic function such that $g(z_1) = z_2$.
-Prove that $|g'(z_1)| \leq |f'(z_1)|$.
+Prove that $\abs{g'(z_1)} \leq \abs{f'(z_1)}$.
 
 (iii) When does equality occur in (ii)?
 :::
@@ -48,19 +48,19 @@ is a biholomorphism $R_1\to R_2$ and satisfies $f(z_1)=z_2$.
 $$
 G=\phi_2\circ g\circ\phi_1^{-1}:\DD\to\DD.
 $$
-Then $G(0)=0$, so Schwarz's lemma gives $|G'(0)|\le1$. By the chain rule,
+Then $G(0)=0$, so Schwarz's lemma gives $\abs{G'(0)}\le1$. By the chain rule,
 $$
-|G'(0)|
-=\frac{|\phi_2'(z_2)|\,|g'(z_1)|}{|\phi_1'(z_1)|}.
+\abs{G'(0)}
+=\frac{\abs{\phi_2'(z_2)}\,\abs{g'(z_1)}}{\abs{\phi_1'(z_1)}}.
 $$
 For the map $f$ above,
 $$
-|f'(z_1)|
-=\frac{|\phi_1'(z_1)|}{|\phi_2'(z_2)|}.
+\abs{f'(z_1)}
+=\frac{\abs{\phi_1'(z_1)}}{\abs{\phi_2'(z_2)}}.
 $$
 Therefore
 $$
-\boxed{|g'(z_1)|\le|f'(z_1)|.}
+\boxed{\abs{g'(z_1)}\le\abs{f'(z_1)}.}
 $$
 
 (iii) Equality occurs exactly in the equality case of Schwarz's lemma, namely

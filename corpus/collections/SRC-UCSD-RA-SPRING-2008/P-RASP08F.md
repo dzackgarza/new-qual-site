@@ -114,8 +114,8 @@ Translation preserves tempered distributions.
 
 If $T\in\mathcal S'(\RR)$, then translation is a continuous linear automorphism of the Schwartz space. Indeed, for every pair of nonnegative integers $m,k$,
 $$
-\sup_x |x^m(\tau_{-h}\phi)^{(k)}(x)|
-=\sup_x |x^m\phi^{(k)}(x-h)|
+\sup_x \abs{x^m(\tau_{-h}\phi)^{(k)}(x)}
+=\sup_x \abs{x^m\phi^{(k)}(x-h)}
 $$
 is bounded by a finite linear combination of Schwartz seminorms of $\phi$, because $x=(x-h)+h$. Hence
 $$

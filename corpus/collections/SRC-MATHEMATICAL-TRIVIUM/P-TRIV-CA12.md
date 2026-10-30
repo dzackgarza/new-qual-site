@@ -95,7 +95,7 @@ $$
 
 On the semicircular arc $\Gamma_R$,
 $$
-|F(z)|
+\abs{F(z)}
 \leq
 \frac1{R^2-1}.
 $$
@@ -103,11 +103,11 @@ $$
 
 ::: pf-proof
 
-For $|z|=R$,
+For $\abs{z}=R$,
 $$
-|1+z^2|
+\abs{1+z^2}
 \geq
-\bigl||z|^2-1\bigr|
+\abs{\abs{z}^2-1}
 =
 R^2-1
 $$
@@ -131,9 +131,9 @@ as $R\to\infty$.
 
 The length of $\Gamma_R$ is $\pi R$. By the $ML$ estimate and step [](#s1-3){.pf-ref},
 $$
-\left|
+\abs{
 \int_{\Gamma_R}F(z),dz
-\right|
+}
 \leq
 \frac{\pi R}{R^2-1}
 \longrightarrow0.

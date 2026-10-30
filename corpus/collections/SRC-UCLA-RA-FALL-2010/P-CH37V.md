@@ -28,8 +28,8 @@ First we prove $A_N(f)\to I(f)$ when $f$ is a trigonometric polynomial.
 By linearity, it suffices to take $f(x)=e^{2\pi ikx}$ for some $k\in\ZZ$.
 If $k=0$ then $f \equiv 1$, so $A_N(f) = \frac1N\sum_{n=0}^{N-1} 1 = 1$ and $I(f) = \int_0^1 1\,dx = 1$, hence both sides equal $1$; so assume $k\ne0$.
 Then we have $$A_N(f) = \frac1N\sum_{n=0}^{N-1}(e^{2\pi ik\alpha})^n = \frac1N\frac{1-e^{2\pi ik\alpha N}}{1-e^{2\pi ik\alpha}} \to 0 \quad \text{as } N\to\infty$$ $$I(f) = \int_0^1 e^{2\pi ikx}\,dx = 0.$$ Hence $A_N(P)\to I(P)$ for every trigonometric polynomial $P$.
-Now for general $f\in C(\RR/\ZZ)$, fix $\epsilon>0$ and, by the Stone--Weierstrass theorem, let $P$ be a trigonometric polynomial with $||f-P||_{L^\infty}<\epsilon$.
-Then we have $$|A_N(f)-I(f)| \le |A_N(f)-A_N(P)|+|A_N(P)-I(P)|+|I(P)-I(f)|$$ $$\le 2\epsilon+|A_N(P)-I(P)|.$$ Letting $N\to\infty$ gives $\limsup_{N\to\infty}|A_N(f)-I(f)|\le2\epsilon$; since $\epsilon>0$ is arbitrary, $A_N(f)\to I(f)$.
+Now for general $f\in C(\RR/\ZZ)$, fix $\epsilon>0$ and, by the Stone--Weierstrass theorem, let $P$ be a trigonometric polynomial with $\norm{f-P}_{L^\infty}<\epsilon$.
+Then we have $$\abs{A_N(f)-I(f)} \le \abs{A_N(f)-A_N(P)}+\abs{A_N(P)-I(P)}+\abs{I(P)-I(f)}$$ $$\le 2\epsilon+\abs{A_N(P)-I(P)}.$$ Letting $N\to\infty$ gives $\limsup_{N\to\infty}\abs{A_N(f)-I(f)}\le2\epsilon$; since $\epsilon>0$ is arbitrary, $A_N(f)\to I(f)$.
 $\square$
 
 (b) Let $f=\chi_{[a,b]}$.

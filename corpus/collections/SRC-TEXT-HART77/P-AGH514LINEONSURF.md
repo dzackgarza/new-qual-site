@@ -59,7 +59,7 @@ and $H\cdot C=1$.
 Since $X\subseteq\PP^3$ is a nonsingular hypersurface of degree $d$, hypersurface
 adjunction gives
 $$
-K_X=(K_{\PP^3}+X)|_X=(-4H+dH)|_X=(d-4)H.
+K_X=(K_{\PP^3}+X)\restrict_X=(-4H+dH)\restrict_X=(d-4)H.
 $$
 The curve $C$ is a line in $\PP^3$, so its degree with respect to the hyperplane
 class is one. Hence

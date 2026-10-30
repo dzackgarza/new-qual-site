@@ -43,7 +43,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \definedas \AA^2 \sm \theset{(0, 0)}$, an open subset of $\AA^2$.
+Let $U \coloneqq \AA^2 \sm \theset{(0, 0)}$, an open subset of $\AA^2$.
 Prove that any regular function on $U$ extends to a regular function on all of $\AA^2$.
 :::
 
@@ -63,9 +63,9 @@ $$
 A regular function $f\in\OO(U)$ is represented on the two principal
 opens by
 $$
-f|_{D(x)}=\frac{a}{x^m},
+f\restrict_{D(x)}=\frac{a}{x^m},
 \qquad
-f|_{D(y)}=\frac{b}{y^n}
+f\restrict_{D(y)}=\frac{b}{y^n}
 $$
 for some $a,b\in R$ and $m,n\ge0$.
 
@@ -125,7 +125,7 @@ c=c'.
 $$
 Thus
 $$
-f|_{D(x)}=c=f|_{D(y)}.
+f\restrict_{D(x)}=c=f\restrict_{D(y)}.
 $$
 Since $D(x)$ and $D(y)$ cover $U$, the function $f$ is the restriction of
 the polynomial $c$ to all of $U$.

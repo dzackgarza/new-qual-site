@@ -36,25 +36,25 @@ $$
 ::: {.pf-step #s2}
 Let $\varepsilon>0$. Since $f$ is continuous at $L$, there exists $\eta>0$ such that
 $$
-|y-L|<\eta\implies |f(y)-f(L)|<\varepsilon.
+\abs{y-L}<\eta\implies \abs{f(y)-f(L)}<\varepsilon.
 $$
 :::
 
 ::: {.pf-step #s3}
 Since $g(x)\to L$ as $x\to0$, there exists $\delta>0$ such that
 $$
-0<|x|<\delta\implies |g(x)-L|<\eta.
+0<\abs{x}<\delta\implies \abs{g(x)-L}<\eta.
 $$
 :::
 
 ::: {.pf-step #s4}
-Therefore, whenever $0<|x|<\delta$,
+Therefore, whenever $0<\abs{x}<\delta$,
 $$
-|f(g(x))-f(L)|<\varepsilon.
+\abs{f(g(x))-f(L)}<\varepsilon.
 $$
 
 ::: pf-proof
-By step [](#s3){.pf-ref}, the number $g(x)$ satisfies $|g(x)-L|<\eta$; applying step [](#s2){.pf-ref} with $y=g(x)$ yields the displayed inequality.
+By step [](#s3){.pf-ref}, the number $g(x)$ satisfies $\abs{g(x)-L}<\eta$; applying step [](#s2){.pf-ref} with $y=g(x)$ yields the displayed inequality.
 :::
 
 :::

@@ -33,7 +33,7 @@ audit:
 ::: {.problem}
 Compute the integrals
 $$
-\int_{|z-2|=1} \frac{e^z}{z(z-1)^2}\,dz, \qquad \int_0^\infty \frac{\cos 2x}{x^2 + 2}\,dx.
+\int_{\abs{z-2}=1} \frac{e^z}{z(z-1)^2}\,dz, \qquad \int_0^\infty \frac{\cos 2x}{x^2 + 2}\,dx.
 $$
 :::
 
@@ -52,7 +52,7 @@ The first contour passes through a double pole,
 and its one-sided integral diverges there.
 
 ::: pf-proof
-One has $|1-2|=1$, so the pole at $z=1$ lies on
+One has $\abs{1-2}=1$, so the pole at $z=1$ lies on
 the path, not strictly inside it. Set $g(z)=e^z/z$,
 which is holomorphic near $1$. Direct calculation gives
 $g(1)=e$ and $g'(1)=0$. Taylor expansion therefore gives
@@ -62,9 +62,9 @@ $$
 for a function $h$ holomorphic near $1$ [@SS03].
 
 Parametrize the circle by $z(t)=2+e^{it}$ for
-$0\leq t\leq2\pi$. Then $z(\pi)=1$ and $|z'(t)|=1$.
+$0\leq t\leq2\pi$. Then $z(\pi)=1$ and $\abs{z'(t)}=1$.
 Choose $\delta>0$ so the subarc with
-$|t-\pi|\leq\delta$ is in the neighborhood where $h$
+$\abs{t-\pi}\leq\delta$ is in the neighborhood where $h$
 is holomorphic and bounded. On its left portion,
 for $0<\varepsilon<\delta$, the principal part integrates
 exactly to
@@ -103,10 +103,10 @@ $$
 =\frac{\pi}{\sqrt2}e^{-2\sqrt2}
 $$
 [@SS03]. On $\Gamma_R$, one has
-$|e^{2iz}|=e^{-2\operatorname{Im}z}\leq1$ and
-$|z^2+2|\geq R^2-2$. Consequently
+$\abs{e^{2iz}}=e^{-2\operatorname{Im}z}\leq1$ and
+$\abs{z^2+2}\geq R^2-2$. Consequently
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\frac{\pi R}{R^2-2}\longrightarrow0.
 $$
 The real-axis integral converges absolutely, since

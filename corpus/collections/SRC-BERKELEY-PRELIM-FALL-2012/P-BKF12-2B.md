@@ -62,9 +62,9 @@ S_N
 $$
 The remainder satisfies
 $$
-\left|
+\abs{
 \int_0^1\frac{x^N}{1+x}\,dx
-\right|
+}
 \le\int_0^1x^N\,dx
 =\frac1{N+1},
 $$

@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 Let $A \in \Mat(n\times n, \RR)$ be arbitrary.
-Make $\RR^n$ into an $\RR[x]\dash$module by letting $f(x).\vector{v} \definedas f(A)(\vector{v})$ for $f(\vector{v})\in \RR[x]$ and $\vector{v} \in \RR^n$.
+Make $\RR^n$ into an $\RR[x]\dash$module by letting $f(x).\vector{v} \coloneqq f(A)(\vector{v})$ for $f(\vector{v})\in \RR[x]$ and $\vector{v} \in \RR^n$.
 Suppose that this induces the following direct sum decomposition:
 $$
 \RR^n \cong

@@ -38,7 +38,7 @@ $$
 Show that for every $m \geq 1$ there is an $N \times N$ matrix B with rank less than or equal to m such that
 
 $$
-\vert A _ { i j } - B _ { i j } \vert \le \frac { 2 } { m ! }
+\abs{ A _ { i j } - B _ { i j } } \le \frac { 2 } { m ! }
 $$
 
 for all i and $j .$
@@ -74,9 +74,9 @@ $$
 
 If $\abs z\le1$, then
 $$
-\left|
+\abs{
 e^z-\sum_{n=0}^{m-1}\frac{z^n}{n!}
-\right|
+}
 \le
 \frac2{m!}.
 $$
@@ -85,9 +85,9 @@ $$
 
 The exponential series gives
 $$
-\left|
+\abs{
 e^z-\sum_{n=0}^{m-1}\frac{z^n}{n!}
-\right|
+}
 \le
 \sum_{n=m}^{\infty}\frac{\abs z^n}{n!}
 \le

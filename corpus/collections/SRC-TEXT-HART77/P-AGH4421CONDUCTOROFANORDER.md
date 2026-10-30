@@ -138,13 +138,13 @@ of $R$.  Therefore
 $$
 [\OO:R]
 =
-\left|
+\abs{
 \det
 \begin{pmatrix}
 1&0\\
 0&f
 \end{pmatrix}
-\right|
+}
 =f.
 $$
 The index depends only on $R$, so no other positive integer can give the

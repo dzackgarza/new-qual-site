@@ -133,7 +133,7 @@ p^{-1}(W)=W_0\amalg W_1
 $$
 and
 $$
-p|_{W_i}:W_i\longrightarrow W
+p\restrict_{W_i}:W_i\longrightarrow W
 $$
 is a homeomorphism for $i=0,1$.
 

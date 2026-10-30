@@ -76,7 +76,7 @@ definition of $S$-polynomial.
 
 ::: pf-step
 
-**Buchberger's Criterion:** A finite set $G \subset I$ is a Gröbner basis for $I = \langle G \rangle$ if and only if for every pair $1 \le i < j \le |G|$, the remainder on division of $S(f_i, f_j)$ by $G$ using the multivariate division algorithm is zero:
+**Buchberger's Criterion:** A finite set $G \subset I$ is a Gröbner basis for $I = \langle G \rangle$ if and only if for every pair $1 \le i < j \le \cardinality{G}$, the remainder on division of $S(f_i, f_j)$ by $G$ using the multivariate division algorithm is zero:
 $$
 \overline{S(f_i, f_j)}^G = 0.
 $$

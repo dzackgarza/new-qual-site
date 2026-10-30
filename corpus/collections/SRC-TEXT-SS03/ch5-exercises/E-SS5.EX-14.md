@@ -36,15 +36,15 @@ If $P$ is constant, then $F$ is a polynomial and therefore has growth order $0$.
 
 If $P$ has degree $d\ge1$, then $F$ has growth order exactly $d$. Indeed, the upper bound
 $$
-|F(z)|\le A e^{B|z|^d}
+\abs{F(z)}\le A e^{B\abs{z}^d}
 $$
-is immediate from polynomial growth of $P$ and $Q$. Conversely, write the leading term of $P$ as $cz^d$, $c\ne0$, and choose an angle $\theta$ so that $ce^{id\theta}=|c|$. Along $z=re^{i\theta}$,
+is immediate from polynomial growth of $P$ and $Q$. Conversely, write the leading term of $P$ as $cz^d$, $c\ne0$, and choose an angle $\theta$ so that $ce^{id\theta}=\abs{c}$. Along $z=re^{i\theta}$,
 $$
-\Re P(z)=|c|r^d+O(r^{d-1}),
+\Re P(z)=\abs{c}r^d+O(r^{d-1}),
 $$
-while $\log|Q(z)|=O(\log r)$ away from the finitely many zeros of $Q$. Hence
+while $\log\abs{Q(z)}=O(\log r)$ away from the finitely many zeros of $Q$. Hence
 $$
-\log|F(re^{i\theta})|=|c|r^d+O(r^{d-1}),
+\log\abs{F(re^{i\theta})}=\abs{c}r^d+O(r^{d-1}),
 $$
 which rules out every growth-order bound with exponent $<d$.
 

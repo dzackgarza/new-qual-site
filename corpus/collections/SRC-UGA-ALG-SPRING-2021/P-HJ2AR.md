@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Define
 $$
-f(x) \definedas x^4 + 4x^2 + 64 \in \QQ[x]
+f(x) \coloneqq x^4 + 4x^2 + 64 \in \QQ[x]
 .$$
 
 a. Find the splitting field $K$ of $f$ over $\QQ$.
@@ -37,12 +37,12 @@ c. Exhibit explicitly the correspondence between subgroups of $G$ and intermedia
 ::: {.solution}
 \envlist
 
-- First consider $g(z) \definedas z^2 + 4z + 64$.
+- First consider $g(z) \coloneqq z^2 + 4z + 64$.
   Applying the quadratic formula yields
   $$
   z = {-4 \pm \sqrt{16 - 64} \over 2} = -2 \pm {1\over 2}\sqrt{ -15 \cdot 16 } = -2 \pm 2i \sqrt{15}
   .$$
-- Substituting $z=x^2$ yields the splitting field of $f$ as $L\definedas \QQ(\pm \sqrt{ -2 \pm 2i\sqrt{15}})$.
+- Substituting $z=x^2$ yields the splitting field of $f$ as $L\coloneqq \QQ(\pm \sqrt{ -2 \pm 2i\sqrt{15}})$.
 
   - Note that this factorization shows that $f$ is irreducible over $\QQ$, since the two quadratic factors have irrational coefficients and none of the roots are real.
   - Irreducible implies separable over a perfect field, so $L/\QQ$ is a separable extension.
@@ -60,7 +60,7 @@ $$
 ,$$
 where we've used that $\min_{\sqrt 5, \QQ}(x) = x^2-5$ and $\min_{i\sqrt 3, \QQ}(x) = x^2 + 3$, which remains the minimal polynomial over $\QQ(\sqrt 5) \subseteq \RR$ since both roots are not real.
 
-- So $G\definedas \Gal(L/\QQ) \leq S_4$ is a transitive subgroup of size 4, making it either $C_4$ or $C_2^2$.
+- So $G\coloneqq \Gal(L/\QQ) \leq S_4$ is a transitive subgroup of size 4, making it either $C_4$ or $C_2^2$.
 
 - Label the roots:
 $$

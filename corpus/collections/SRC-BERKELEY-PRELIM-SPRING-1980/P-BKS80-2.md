@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 For each $n\ge1$, let $f_n:\RR\to\RR$ be differentiable with
 $$
-|f_n'(x)|\le1
+\abs{f_n'(x)}\le1
 $$
 for all $n,x$. Suppose $f_n(x)\to g(x)$ for every $x\in\RR$.
 Prove that $g$ is continuous.
@@ -34,7 +34,7 @@ Prove that $g$ is continuous.
 
 Every $f_n$ is $1$-Lipschitz:
 $$
-|f_n(x)-f_n(y)|\le|x-y|
+\abs{f_n(x)-f_n(y)}\le\abs{x-y}
 $$
 for all $x,y\in\RR$.
 
@@ -47,11 +47,11 @@ f_n(x)-f_n(y)=f_n'(c)(x-y).
 $$
 Hence
 $$
-|f_n(x)-f_n(y)|
+\abs{f_n(x)-f_n(y)}
 \le
-|x-y|
+\abs{x-y}
 $$
-because $|f_n'(c)|\le1$. The case $x=y$ is immediate.
+because $\abs{f_n'(c)}\le1$. The case $x=y$ is immediate.
 
 :::
 
@@ -61,7 +61,7 @@ because $|f_n'(c)|\le1$. The case $x=y$ is immediate.
 
 The pointwise limit $g$ is also $1$-Lipschitz:
 $$
-|g(x)-g(y)|\le|x-y|
+\abs{g(x)-g(y)}\le\abs{x-y}
 $$
 for all $x,y\in\RR$.
 
@@ -74,7 +74,7 @@ $$
 Taking limits in the inequality from step [](#s1){.pf-ref} and using continuity of
 the absolute-value function gives
 $$
-|g(x)-g(y)|\le|x-y|.
+\abs{g(x)-g(y)}\le\abs{x-y}.
 $$
 
 :::
@@ -89,11 +89,11 @@ The function $g$ is continuous on $\RR$.
 
 Fix $x\in\RR$ and $\varepsilon>0$. If
 $$
-|y-x|<\varepsilon,
+\abs{y-x}<\varepsilon,
 $$
 then step [](#s2){.pf-ref} gives
 $$
-|g(y)-g(x)|\le|y-x|<\varepsilon.
+\abs{g(y)-g(x)}\le\abs{y-x}<\varepsilon.
 $$
 Thus $g$ is continuous at every $x$.
 

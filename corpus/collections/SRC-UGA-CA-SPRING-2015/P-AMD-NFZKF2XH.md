@@ -19,32 +19,32 @@ audit:
 ---
 
 ::: {.problem}
-Let $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$ with $|\alpha|<1$ and ${\DD}=\{z:\ |z|<1\}$.
+Let $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$ with $\abs{\alpha}<1$ and ${\DD}=\{z:\ \abs{z}<1\}$.
 Prove that
 
-- $\displaystyle{\frac{1}{\pi}\iint_{{\DD}} |\psi'_{\alpha}|^2 dx dy =1}$.
+- $\displaystyle{\frac{1}{\pi}\iint_{{\DD}} \abs{\psi'_{\alpha}}^2 dx dy =1}$.
 
 - Show that
   $$
-  \frac{1}{\pi}\iint_{{\DD}} |\psi'_{\alpha}| dx dy
-  =\frac{1-|\alpha|^2}{|\alpha|^2}\log \frac{1}{1-|\alpha|^2}.
+  \frac{1}{\pi}\iint_{{\DD}} \abs{\psi'_{\alpha}} dx dy
+  =\frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}\log \frac{1}{1-\abs{\alpha}^2}.
   $$
 
-Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a conformal map from half disc $\{z=x+iy:\ |z|<1,\ y>0\}$ to upper half plane $\halfplane=\{z=x+iy:\ y>0\}$.
+Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a conformal map from half disc $\{z=x+iy:\ \abs{z}<1,\ y>0\}$ to upper half plane $\halfplane=\{z=x+iy:\ y>0\}$.
 :::
 
 ::: {.solution}
 **Goal:**
 
-1. For $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $|\alpha| < 1$, prove that $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy = 1$.
+1. For $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} < 1$, prove that $\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'(z)}^2 \,dx\,dy = 1$.
 
-2. Prove that $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right)$ (for $\alpha \neq 0$, with limit $1$ as $\alpha \to 0$).
+2. Prove that $\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'(z)} \,dx\,dy = \frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}\log\left(\frac{1}{1-\abs{\alpha}^2}\right)$ (for $\alpha \neq 0$, with limit $1$ as $\alpha \to 0$).
 
-3. Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the upper half-disk $\DD^+ = \{z = x+iy : |z| < 1, y > 0\}$ to the upper half-plane $\halfplane = \{w = u+iv : v > 0\}$.
+3. Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the upper half-disk $\DD^+ = \{z = x+iy : \abs{z} < 1, y > 0\}$ to the upper half-plane $\halfplane = \{w = u+iv : v > 0\}$.
 
 * * *
 
-### Part 1: Area Integral of $|\psi_\alpha'(z)|^2$
+### Part 1: Area Integral of $\abs{\psi_\alpha'(z)}^2$
 
 ::: pf
 
@@ -55,7 +55,7 @@ Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a con
 
 ::: pf-step
 $\psi_\alpha$ is a Möbius transformation with pole at $z = 1/\bar{\alpha}$.
-Since $|\alpha| < 1$, $|1/\bar{\alpha}| > 1$, so $\psi_\alpha$ is holomorphic in a neighborhood of $\overline{\DD}$.
+Since $\abs{\alpha} < 1$, $\abs{1/\bar{\alpha}} > 1$, so $\psi_\alpha$ is holomorphic in a neighborhood of $\overline{\DD}$.
 
 ::: pf-proof
 Pole lies strictly outside the closed unit disk.
@@ -64,7 +64,7 @@ Pole lies strictly outside the closed unit disk.
 :::
 
 ::: pf-step
-For $|z| = 1$, $|\psi_\alpha(z)|^2 = \frac{|\alpha - z|^2}{|1 - \bar{\alpha}z|^2} = \frac{(\alpha - z)(\bar{\alpha} - \bar{z})}{(1 - \bar{\alpha}z)(1 - \alpha \bar{z})} = \frac{|\alpha|^2 - \alpha \bar{z} - \bar{\alpha}z + 1}{1 - \alpha \bar{z} - \bar{\alpha}z + |\alpha|^2|z|^2} = 1$ (since $|z|^2=1$).
+For $\abs{z} = 1$, $\abs{\psi_\alpha(z)}^2 = \frac{\abs{\alpha - z}^2}{\abs{1 - \bar{\alpha}z}^2} = \frac{(\alpha - z)(\bar{\alpha} - \bar{z})}{(1 - \bar{\alpha}z)(1 - \alpha \bar{z})} = \frac{\abs{\alpha}^2 - \alpha \bar{z} - \bar{\alpha}z + 1}{1 - \alpha \bar{z} - \bar{\alpha}z + \abs{\alpha}^2\abs{z}^2} = 1$ (since $\abs{z}^2=1$).
 
 ::: pf-proof
 Algebraic calculation on the boundary circle $\partial \DD$.
@@ -73,7 +73,7 @@ Algebraic calculation on the boundary circle $\partial \DD$.
 :::
 
 ::: pf-step
-$\psi_\alpha(\psi_\alpha(z)) = \frac{\alpha - \frac{\alpha-z}{1-\bar{\alpha}z}}{1 - \bar{\alpha}\frac{\alpha-z}{1-\bar{\alpha}z}} = \frac{\alpha(1-\bar{\alpha}z) - (\alpha-z)}{(1-\bar{\alpha}z) - \bar{\alpha}(\alpha-z)} = \frac{z(1-|\alpha|^2)}{1-|\alpha|^2} = z$.
+$\psi_\alpha(\psi_\alpha(z)) = \frac{\alpha - \frac{\alpha-z}{1-\bar{\alpha}z}}{1 - \bar{\alpha}\frac{\alpha-z}{1-\bar{\alpha}z}} = \frac{\alpha(1-\bar{\alpha}z) - (\alpha-z)}{(1-\bar{\alpha}z) - \bar{\alpha}(\alpha-z)} = \frac{z(1-\abs{\alpha}^2)}{1-\abs{\alpha}^2} = z$.
 
 ::: pf-proof
 $\psi_\alpha$ is its own inverse (an involution), hence a bijection of $\DD$ onto $\DD$.
@@ -86,12 +86,12 @@ $\psi_\alpha$ is its own inverse (an involution), hence a bijection of $\DD$ ont
 :::
 
 ::: pf-step
-**The Jacobian determinant of a holomorphic mapping $\psi(z) = u(x,y) + i v(x,y)$ is $|\psi'(z)|^2$.**
+**The Jacobian determinant of a holomorphic mapping $\psi(z) = u(x,y) + i v(x,y)$ is $\abs{\psi'(z)}^2$.**
 
 ::: pf-proof
 
 ::: pf-step
-By the Cauchy-Riemann equations $u_x = v_y$ and $u_y = -v_x$, the Jacobian determinant is $J_\psi(x,y) = u_x v_y - u_y v_x = u_x^2 + v_x^2 = |u_x + i v_x|^2 = |\psi'(z)|^2$.
+By the Cauchy-Riemann equations $u_x = v_y$ and $u_y = -v_x$, the Jacobian determinant is $J_\psi(x,y) = u_x v_y - u_y v_x = u_x^2 + v_x^2 = \abs{u_x + i v_x}^2 = \abs{\psi'(z)}^2$.
 
 ::: pf-proof
 Standard real-differentiability computation for holomorphic functions.
@@ -104,12 +104,12 @@ Standard real-differentiability computation for holomorphic functions.
 :::
 
 ::: pf-step
-**Compute $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy$.**
+**Compute $\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'(z)}^2 \,dx\,dy$.**
 
 ::: pf-proof
 
 ::: {.pf-step #s3-1}
-By the change of variables formula for 2D integrals under the diffeomorphism $\psi_\alpha: \DD \to \DD$: $$\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy = \iint_{\DD} J_{\psi_\alpha}(x,y) \,dx\,dy = \text{Area}(\psi_\alpha(\DD)) = \text{Area}(\DD) = \pi.$$
+By the change of variables formula for 2D integrals under the diffeomorphism $\psi_\alpha: \DD \to \DD$: $$\iint_{\DD} \abs{\psi_\alpha'(z)}^2 \,dx\,dy = \iint_{\DD} J_{\psi_\alpha}(x,y) \,dx\,dy = \text{Area}(\psi_\alpha(\DD)) = \text{Area}(\DD) = \pi.$$
 
 ::: pf-proof
 Change of variables theorem for planar integrals.
@@ -118,7 +118,7 @@ Change of variables theorem for planar integrals.
 :::
 
 ::: pf-step
-Dividing both sides by $\pi$ yields $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy = \frac{\pi}{\pi} = 1$.
+Dividing both sides by $\pi$ yields $\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'(z)}^2 \,dx\,dy = \frac{\pi}{\pi} = 1$.
 
 ::: pf-proof
 Follows from step [](#s3-1){.pf-ref}.
@@ -134,7 +134,7 @@ Follows from step [](#s3-1){.pf-ref}.
 
 * * *
 
-### Part 2: Area Integral of $|\psi_\alpha'(z)|$
+### Part 2: Area Integral of $\abs{\psi_\alpha'(z)}$
 
 ::: pf
 
@@ -144,7 +144,7 @@ Follows from step [](#s3-1){.pf-ref}.
 ::: pf-proof
 
 ::: {.pf-step #s4-1}
-By the quotient rule: $$\psi_\alpha'(z) = \frac{-(1-\bar{\alpha}z) - (\alpha-z)(-\bar{\alpha})}{(1-\bar{\alpha}z)^2} = \frac{-1 + \bar{\alpha}z + |\alpha|^2 - \bar{\alpha}z}{(1-\bar{\alpha}z)^2} = \frac{-(1-|\alpha|^2)}{(1-\bar{\alpha}z)^2}.$$
+By the quotient rule: $$\psi_\alpha'(z) = \frac{-(1-\bar{\alpha}z) - (\alpha-z)(-\bar{\alpha})}{(1-\bar{\alpha}z)^2} = \frac{-1 + \bar{\alpha}z + \abs{\alpha}^2 - \bar{\alpha}z}{(1-\bar{\alpha}z)^2} = \frac{-(1-\abs{\alpha}^2)}{(1-\bar{\alpha}z)^2}.$$
 
 ::: pf-proof
 Direct differentiation.
@@ -153,7 +153,7 @@ Direct differentiation.
 :::
 
 ::: pf-step
-Therefore, $|\psi_\alpha'(z)| = \frac{1-|\alpha|^2}{|1-\bar{\alpha}z|^2}$.
+Therefore, $\abs{\psi_\alpha'(z)} = \frac{1-\abs{\alpha}^2}{\abs{1-\bar{\alpha}z}^2}$.
 
 ::: pf-proof
 Absolute value of step [](#s4-1){.pf-ref}.
@@ -171,8 +171,8 @@ Absolute value of step [](#s4-1){.pf-ref}.
 ::: pf-proof
 
 ::: {.pf-step #s5-1}
-Without loss of generality, assume $\alpha \neq 0$ (if $\alpha = 0$, $|\psi_0'(z)| = 1$, and $\frac{1}{\pi}\iint_{\DD} 1\,dx\,dy = 1 = \lim_{\alpha\to 0} \frac{1-|\alpha|^2}{|\alpha|^2}\log\frac{1}{1-|\alpha|^2}$). Let $\alpha = a e^{i\phi}$ with $a = |\alpha| \in (0, 1)$.
-By rotational invariance of the disk, substituting $z \mapsto e^{i\phi} z$ allows us to assume $\alpha = a \in (0,1)$ is real: $$\iint_{\DD} \frac{1-a^2}{|1-a z|^2} \,dx\,dy = (1-a^2) \int_0^1 r \left( \int_0^{2\pi} \frac{d\theta}{|1 - a r e^{i\theta}|^2} \right) dr.$$
+Without loss of generality, assume $\alpha \neq 0$ (if $\alpha = 0$, $\abs{\psi_0'(z)} = 1$, and $\frac{1}{\pi}\iint_{\DD} 1\,dx\,dy = 1 = \lim_{\alpha\to 0} \frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1-\abs{\alpha}^2}$). Let $\alpha = a e^{i\phi}$ with $a = \abs{\alpha} \in (0, 1)$.
+By rotational invariance of the disk, substituting $z \mapsto e^{i\phi} z$ allows us to assume $\alpha = a \in (0,1)$ is real: $$\iint_{\DD} \frac{1-a^2}{\abs{1-a z}^2} \,dx\,dy = (1-a^2) \int_0^1 r \left( \int_0^{2\pi} \frac{d\theta}{\abs{1 - a r e^{i\theta}}^2} \right) dr.$$
 
 ::: pf-proof
 Polar coordinates $z = r e^{i\theta}$ and rotation invariance of the area element $dx\,dy = r\,dr\,d\theta$.
@@ -181,17 +181,17 @@ Polar coordinates $z = r e^{i\theta}$ and rotation invariance of the area elemen
 :::
 
 ::: {.pf-step #s5-2}
-For any $c \in (0, 1)$, $\frac{1}{2\pi}\int_0^{2\pi} \frac{d\theta}{|1 - c e^{i\theta}|^2} = \frac{1}{1-c^2}$.
+For any $c \in (0, 1)$, $\frac{1}{2\pi}\int_0^{2\pi} \frac{d\theta}{\abs{1 - c e^{i\theta}}^2} = \frac{1}{1-c^2}$.
 
 ::: pf-proof
 Write $\frac{1}{1-c e^{i\theta}} = \sum_{k=0}^\infty c^k e^{ik\theta}$.
-By Parseval's identity / orthogonality of $\{e^{ik\theta}\}_{k\in\ZZ}$, $\frac{1}{2\pi}\int_0^{2\pi} \left|\sum_{k=0}^\infty c^k e^{ik\theta}\right|^2 d\theta = \sum_{k=0}^\infty (c^k)^2 = \sum_{k=0}^\infty c^{2k} = \frac{1}{1-c^2}$.
+By Parseval's identity / orthogonality of $\{e^{ik\theta}\}_{k\in\ZZ}$, $\frac{1}{2\pi}\int_0^{2\pi} \abs{\sum_{k=0}^\infty c^k e^{ik\theta}}^2 d\theta = \sum_{k=0}^\infty (c^k)^2 = \sum_{k=0}^\infty c^{2k} = \frac{1}{1-c^2}$.
 :::
 
 :::
 
 ::: {.pf-step #s5-3}
-Setting $c = ar$ with $0 \leq ar < 1$, we get $\int_0^{2\pi} \frac{d\theta}{|1 - a r e^{i\theta}|^2} = \frac{2\pi}{1 - a^2 r^2}$.
+Setting $c = ar$ with $0 \leq ar < 1$, we get $\int_0^{2\pi} \frac{d\theta}{\abs{1 - a r e^{i\theta}}^2} = \frac{2\pi}{1 - a^2 r^2}$.
 
 ::: pf-proof
 Applied step [](#s5-2){.pf-ref} with $c = ar$.
@@ -200,7 +200,7 @@ Applied step [](#s5-2){.pf-ref} with $c = ar$.
 :::
 
 ::: {.pf-step #s5-4}
-Integrate with respect to $r$: $$\frac{1}{\pi}\iint_{\DD} |\psi_a'(z)| \,dx\,dy = \frac{1-a^2}{\pi} \int_0^1 r \cdot \frac{2\pi}{1-a^2 r^2} \,dr = (1-a^2) \int_0^1 \frac{2r}{1-a^2 r^2} \,dr.$$
+Integrate with respect to $r$: $$\frac{1}{\pi}\iint_{\DD} \abs{\psi_a'(z)} \,dx\,dy = \frac{1-a^2}{\pi} \int_0^1 r \cdot \frac{2\pi}{1-a^2 r^2} \,dr = (1-a^2) \int_0^1 \frac{2r}{1-a^2 r^2} \,dr.$$
 
 ::: pf-proof
 Substitution of step [](#s5-3){.pf-ref} into step [](#s5-1){.pf-ref}.
@@ -218,7 +218,7 @@ Standard calculus integration.
 :::
 
 ::: pf-step
-Multiplying by $(1-a^2)$ gives: $$\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-a^2}{a^2}\log\left(\frac{1}{1-a^2}\right) = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right).$$
+Multiplying by $(1-a^2)$ gives: $$\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'(z)} \,dx\,dy = \frac{1-a^2}{a^2}\log\left(\frac{1}{1-a^2}\right) = \frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}\log\left(\frac{1}{1-\abs{\alpha}^2}\right).$$
 
 ::: pf-proof
 Combines steps [](#s5-4){.pf-ref} and [](#s5-5){.pf-ref}.
@@ -266,7 +266,7 @@ $f'(z) = 0 \iff z^2 = 1 \iff z = \pm 1 \notin \DD^+$.
 Thus $f'(z) \neq 0$ for all $z \in \DD^+$.
 
 ::: pf-proof
-Points $\pm 1$ have $y=0$ and $|z|=1$, so they lie on the boundary, not in $\DD^+$.
+Points $\pm 1$ have $y=0$ and $\abs{z}=1$, so they lie on the boundary, not in $\DD^+$.
 :::
 
 :::
@@ -338,7 +338,7 @@ Vieta's formulas for $z^2 + 2wz + 1 = 0$.
 :::
 
 ::: pf-step
-Since $w \in \halfplane$, $w \notin [-1, 1]$, so $w^2 - 1 \neq 0$ and the two roots are distinct and neither has modulus $1$ (if $|z|=1$ with $z=e^{i\theta}$, then $-\frac{1}{2}(e^{i\theta}+e^{-i\theta}) = -\cos\theta \in [-1,1] \subset \RR$, which has imaginary part $0$).
+Since $w \in \halfplane$, $w \notin [-1, 1]$, so $w^2 - 1 \neq 0$ and the two roots are distinct and neither has modulus $1$ (if $\abs{z}=1$ with $z=e^{i\theta}$, then $-\frac{1}{2}(e^{i\theta}+e^{-i\theta}) = -\cos\theta \in [-1,1] \subset \RR$, which has imaginary part $0$).
 
 ::: pf-proof
 Modulus 1 points map to the real interval $[-1, 1]$.
@@ -347,17 +347,17 @@ Modulus 1 points map to the real interval $[-1, 1]$.
 :::
 
 ::: pf-step
-Since $|z_1||z_2| = 1$ and $|z_1| \neq 1$, exactly one root has modulus strictly less than $1$ (say $|z_1| < 1$).
+Since $\abs{z_1}\abs{z_2} = 1$ and $\abs{z_1} \neq 1$, exactly one root has modulus strictly less than $1$ (say $\abs{z_1} < 1$).
 
 ::: pf-proof
-If $|z_1| < 1$, then $|z_2| = 1/|z_1| > 1$.
+If $\abs{z_1} < 1$, then $\abs{z_2} = 1/\abs{z_1} > 1$.
 :::
 
 :::
 
 ::: pf-step
-From step [](#s7-2){.pf-ref}, $\text{Im}(w) = \frac{1}{2}(\frac{1}{|z_1|} - |z_1|)\sin(\arg z_1)$.
-Since $\text{Im}(w) > 0$ and $\frac{1}{|z_1|} - |z_1| > 0$, we must have $\sin(\arg z_1) > 0$, which means $\arg(z_1) \in (0, \pi)$, so $z_1 \in \DD^+$.
+From step [](#s7-2){.pf-ref}, $\text{Im}(w) = \frac{1}{2}(\frac{1}{\abs{z_1}} - \abs{z_1})\sin(\arg z_1)$.
+Since $\text{Im}(w) > 0$ and $\frac{1}{\abs{z_1}} - \abs{z_1} > 0$, we must have $\sin(\arg z_1) > 0$, which means $\arg(z_1) \in (0, \pi)$, so $z_1 \in \DD^+$.
 
 ::: pf-proof
 Sign of $\sin(\arg z_1)$ must match the sign of $\text{Im}(w)$.

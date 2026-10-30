@@ -21,7 +21,7 @@ How many roots, counted with multiplicity, does
 $$
 g(z)=6z^3+e^z+1
 $$
-have in the unit disk $|z|<1$?
+have in the unit disk $\abs{z}<1$?
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ have in the unit disk $|z|<1$?
 
 On the unit circle,
 $$
-|e^z+1|<|6z^3|.
+\abs{e^z+1}<\abs{6z^3}.
 $$
 
 
@@ -40,15 +40,15 @@ $$
 
 If
 $$
-|z|=1,
+\abs{z}=1,
 $$
 then
 $$
-|6z^3|=6.
+\abs{6z^3}=6.
 $$
 Also
 $$
-|e^z|
+\abs{e^z}
 =
 e^{\operatorname{Re}z}
 \le
@@ -56,13 +56,13 @@ e,
 $$
 because
 $$
-\operatorname{Re}z\le|z|=1.
+\operatorname{Re}z\le\abs{z}=1.
 $$
 Hence
 $$
-|e^z+1|
+\abs{e^z+1}
 \le
-|e^z|+1
+\abs{e^z}+1
 \le
 e+1
 <6.
@@ -84,7 +84,7 @@ $$
 $$
 have the same number of zeros in
 $$
-|z|<1,
+\abs{z}<1,
 $$
 counted with multiplicity.
 
@@ -93,7 +93,7 @@ counted with multiplicity.
 
 Step [](#s1-1){.pf-ref} gives the strict Rouché inequality
 $$
-|e^z+1|<|6z^3|
+\abs{e^z+1}<\abs{6z^3}
 $$
 on the boundary circle. Rouché's theorem therefore applies.
 
@@ -116,7 +116,7 @@ The comparison function
 $$
 6z^3
 $$
-has a zero of multiplicity $3$ at $z=0$ and no other zeros. By step [](#s1-2){.pf-ref}, $g$ has the same zero count in $|z|<1$.
+has a zero of multiplicity $3$ at $z=0$ and no other zeros. By step [](#s1-2){.pf-ref}, $g$ has the same zero count in $\abs{z}<1$.
 
 :::
 

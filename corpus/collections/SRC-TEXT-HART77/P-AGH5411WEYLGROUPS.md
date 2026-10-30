@@ -201,17 +201,17 @@ generators lies in $\mathcal U$.
 ::: {.pf-step #an-order-bound}
 One has
 $$
-\boxed{|\mathbf A_n|\le n!}.
+\boxed{\cardinality{\mathbf A_n}\le n!}.
 $$
 
 ::: pf-proof
 Step [](#coset-representatives){.pf-ref} gives at most $n$ right cosets of $W_{n-1}$. Hence
 $$
-|W_n|\le n|W_{n-1}|.
+\cardinality{W_n}\le n\cardinality{W_{n-1}}.
 $$
-Starting with $|W_2|\le2$ and iterating gives
+Starting with $\cardinality{W_2}\le2$ and iterating gives
 $$
-|W_n|\le n!.
+\cardinality{W_n}\le n!.
 $$
 :::
 
@@ -374,7 +374,7 @@ E_i\cdot F_{jk}&=
 \begin{cases}1&i\in\{j,k\},\\0&i\notin\{j,k\},\end{cases}\\
 E_i\cdot G_j&=
 \begin{cases}0&i=j,\\1&i\ne j,\end{cases}\\
-F_{ij}\cdot F_{kl}&=1-|\{i,j\}\cap\{k,l\}|,\\
+F_{ij}\cdot F_{kl}&=1-\cardinality{\{i,j\}\cap\{k,l\}},\\
 F_{ij}\cdot G_k&=
 \begin{cases}1&k\in\{i,j\},\\0&k\notin\{i,j\},\end{cases}\\
 G_i\cdot G_j&=0 &&(i\ne j).
@@ -572,7 +572,7 @@ $$
 $$
 is surjective, and
 $$
-\boxed{|G|=72\cdot6!=51840.}
+\boxed{\cardinality{G}=72\cdot6!=51840.}
 $$
 
 ::: pf-proof
@@ -580,13 +580,13 @@ By step [](#h-transitive-on-sixes){.pf-ref}, the subgroup $H=\operatorname{im}(\
 the $72$ sixes. It contains the full stabilizer $\Sigma_6$ of
 $\mathcal S_0$. Hence orbit--stabilizer gives
 $$
-|H|\ge72\cdot6!=51840.
+\cardinality{H}\ge72\cdot6!=51840.
 $$
 
 On the other hand $G$ also acts on the $72$ sixes, and step [](#stabilizer-is-s6){.pf-ref} says that
 the stabilizer of $\mathcal S_0$ in $G$ has order $6!$. Therefore
 $$
-|G|\le72\cdot6!=51840.
+\cardinality{G}\le72\cdot6!=51840.
 $$
 Since
 $$
@@ -646,7 +646,7 @@ $$
 $$
 so
 $$
-|a|\le2.
+\abs{a}\le2.
 $$
 
 If $a=0$, the equations become
@@ -768,7 +768,7 @@ This is type $A_5$, whose Weyl group is $\Sigma_6$ by part (a).
 The standard faithful geometric representation of a Coxeter group
 gives
 $$
-\boxed{|\mathbf E_6|=72\cdot720=51840.}
+\boxed{\cardinality{\mathbf E_6}=72\cdot720=51840.}
 $$
 
 ::: pf-proof
@@ -783,7 +783,7 @@ $\rho$ is therefore the type-$A_5$ Weyl group, of order $720$. Step [](#weyl-tra
 shows that the orbit of $\rho$ consists of all $72$ roots. Orbit--stabilizer
 now gives
 $$
-|\mathbf E_6|
+\cardinality{\mathbf E_6}
 =
 72\cdot720
 =
@@ -806,11 +806,11 @@ $$
 $$
 and shows
 $$
-|G|=51840.
+\cardinality{G}=51840.
 $$
 Step [](#e6-order-51840){.pf-ref} gives
 $$
-|\mathbf E_6|=51840.
+\cardinality{\mathbf E_6}=51840.
 $$
 A surjection between finite groups of equal order is an isomorphism. This
 proves part (c).

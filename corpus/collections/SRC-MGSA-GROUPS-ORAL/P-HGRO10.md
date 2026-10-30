@@ -74,7 +74,7 @@ Therefore $A_5$ has no nontrivial homomorphic image of smaller order.
 
 If the image of $f$ is nontrivial, step [](#s2){.pf-ref} gives
 $$
-|f(A_5)|=|A_5|=60.
+\cardinality{f(A_5)}=\cardinality{A_5}=60.
 $$
 Thus no nontrivial image has smaller order.
 

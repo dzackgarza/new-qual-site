@@ -69,7 +69,7 @@ Since $A$ and $B$ are clopen in $X$, $f$ is continuous.
 
 ::: pf-step
 Because $[0, 1]$ is compact Hausdorff, the universal mapping property of the Stone-Čech compactification gives a unique continuous extension:
-$$\tilde{f}: \beta(X) \to [0, 1] \quad \text{such that } \tilde{f}|_X = f.$$
+$$\tilde{f}: \beta(X) \to [0, 1] \quad \text{such that } \tilde{f}\restrict_X = f.$$
 :::
 
 ::: pf-step

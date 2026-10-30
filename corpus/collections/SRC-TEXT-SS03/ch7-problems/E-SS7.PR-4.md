@@ -78,26 +78,26 @@ $$
 ::: pf-proof
 First we prove $\psi(x,\chi)=o(x)$. The $L$-function $L(s,\chi)$ is entire because $\chi$ is nonprincipal. It does not vanish on the line $\Re s=1$. To see this, note that for $\sigma>1$,
 $$
-3\log|L(\sigma,\chi_0)|+4\log|L(\sigma+it,\chi)|+\log|L(\sigma+2it,\chi^2)|\ge0,
+3\log\abs{L(\sigma,\chi_0)}+4\log\abs{L(\sigma+it,\chi)}+\log\abs{L(\sigma+2it,\chi^2)}\ge0,
 $$
 because the left side is the real part of
 $$
 \sum_{p\nmid q,m}\frac{1}{m}p^{-m\sigma}\left(3+4\chi(p)^mp^{-imt}+\chi(p)^{2m}p^{-2imt}\right),
 $$
-and $3+4\Re z+\Re z^2\ge0$ for $|z|\le1$. If $L(1+it,\chi)=0$ for some $t\ne0$, then as $\sigma\to1^+$, the second term is $4\log(\sigma-1)+O(1)$, the first term is $-3\log(\sigma-1)+O(1)$, and the third term is bounded above, so the sum tends to $-\infty$, a contradiction. Hence $L(1+it,\chi)\ne0$. The same inequality, made quantitative, gives the standard zero-free region
+and $3+4\Re z+\Re z^2\ge0$ for $\abs{z}\le1$. If $L(1+it,\chi)=0$ for some $t\ne0$, then as $\sigma\to1^+$, the second term is $4\log(\sigma-1)+O(1)$, the first term is $-3\log(\sigma-1)+O(1)$, and the third term is bounded above, so the sum tends to $-\infty$, a contradiction. Hence $L(1+it,\chi)\ne0$. The same inequality, made quantitative, gives the standard zero-free region
 $$
-L(s,\chi)\ne0\quad\text{for}\quad \sigma>1-\frac{c}{\log(|t|+2)}
+L(s,\chi)\ne0\quad\text{for}\quad \sigma>1-\frac{c}{\log(\abs{t}+2)}
 $$
 with a constant $c>0$, apart from a possible exceptional real zero $\beta<1$.
 
 The explicit formula for $\psi(x,\chi)$ is
 $$
-\psi(x,\chi)=-\sum_{|\Im\rho|\le T}\frac{x^\rho}{\rho}+O\left(\frac{x\log^2x}{T}\right)
+\psi(x,\chi)=-\sum_{\abs{\Im\rho}\le T}\frac{x^\rho}{\rho}+O\left(\frac{x\log^2x}{T}\right)
 $$
 for $T\ge2$, where $\rho$ runs over the nontrivial zeros of $L(s,\chi)$. It follows from the Perron formula and the contour shift, exactly as in the proof of the prime number theorem; the only change is that $L(s,\chi)$ is entire, so there is no pole at $s=1$. Choose $T=\exp(c'\sqrt{\log x})$. The zero-free region gives
 $$
-\left|\sum_{|\Im\rho|\le T}\frac{x^\rho}{\rho}\right|
-\le x^{1-c/\log T}\sum_{|\Im\rho|\le T}\frac{1}{|\rho|}
+\abs{\sum_{\abs{\Im\rho}\le T}\frac{x^\rho}{\rho}}
+\le x^{1-c/\log T}\sum_{\abs{\Im\rho}\le T}\frac{1}{\abs{\rho}}
 =O\left(xe^{-c''\sqrt{\log x}}\right)=o(x),
 $$
 and the exceptional real zero contributes $O(x^\beta)=o(x)$. The error term is $O(x\log^2x/T)=o(x)$. Hence $\psi(x,\chi)=o(x)$.
@@ -106,7 +106,7 @@ Partial summation gives
 $$
 \pi(x,\chi)=\frac{\psi(x,\chi)}{\log x}+\int_2^x\frac{\psi(t,\chi)}{t\log^2t}\,dt+O(x^{1/2}).
 $$
-The $O(x^{1/2})$ accounts for the prime powers $p^k$ with $k\ge2$. Since $\psi(t,\chi)=o(t)$, for every $\epsilon>0$ we have $|\psi(t,\chi)|\le\epsilon t$ for all large $t$. Hence the first term is $o(x/\log x)$, the integral is $o(x/\log x)$, and $O(x^{1/2})=o(x/\log x)$. Therefore $\pi(x,\chi)=o(x/\log x)$.
+The $O(x^{1/2})$ accounts for the prime powers $p^k$ with $k\ge2$. Since $\psi(t,\chi)=o(t)$, for every $\epsilon>0$ we have $\abs{\psi(t,\chi)}\le\epsilon t$ for all large $t$. Hence the first term is $o(x/\log x)$, the integral is $o(x/\log x)$, and $O(x^{1/2})=o(x/\log x)$. Therefore $\pi(x,\chi)=o(x/\log x)$.
 :::
 
 :::

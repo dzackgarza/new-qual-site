@@ -32,11 +32,11 @@ f_n\to f\quad\text{almost everywhere}.
 $$
 Suppose there is $g\in L^1(\mu)$ with
 $$
-|f_n|\le g\quad\text{almost everywhere for every }n.
+\abs{f_n}\le g\quad\text{almost everywhere for every }n.
 $$
 Then $f\in L^1(\mu)$,
 $$
-\|f_n-f\|_1\to0,
+\norm{f_n-f}_1\to0,
 $$
 and in particular
 $$

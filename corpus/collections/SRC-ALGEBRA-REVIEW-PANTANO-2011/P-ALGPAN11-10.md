@@ -33,9 +33,9 @@ Necessary divisibility conditions.
 
 ::: pf-proof
 
-Since $G$ contains a subgroup of order $7$, Lagrange's theorem gives $7\mid|G|$.
+Since $G$ contains a subgroup of order $7$, Lagrange's theorem gives $7\mid\cardinality{G}$.
 Since no nonidentity element is its own inverse, $G$ has no element of order $2$.
-By Cauchy's theorem, $|G|$ must therefore be odd.
+By Cauchy's theorem, $\cardinality{G}$ must therefore be odd.
 
 :::
 

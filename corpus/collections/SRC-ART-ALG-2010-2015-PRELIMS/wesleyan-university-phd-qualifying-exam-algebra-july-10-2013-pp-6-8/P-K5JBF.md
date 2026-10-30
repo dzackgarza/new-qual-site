@@ -83,7 +83,7 @@ $$
 $$
 Finally,
 $$
-\Delta_3=|\det A|
+\Delta_3=\abs{\det A}
 =8.
 $$
 For Smith invariant factors $d_1\mid d_2\mid d_3$,

@@ -92,7 +92,7 @@ The sequence $(s_k)$ is $\boxed{\text{Cauchy}}$.
 Let $n>m\ge1$. By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
-|s_n-s_m|
+\abs{s_n-s_m}
 &=\sum_{j=m+1}^n\frac1{j^2}\\
 &\le\sum_{j=m+1}^n\left(\frac1{j-1}-\frac1j\right)\\
 &=\frac1m-\frac1n\\
@@ -101,7 +101,7 @@ $$
 $$
 Given $\varepsilon>0$, choose $N\in\NN$ with $N>1/\varepsilon$. If $n,m\ge N$, relabeling if necessary so that $n\ge m$, the preceding estimate gives
 $$
-|s_n-s_m|<\frac1m\le\frac1N<\varepsilon.
+\abs{s_n-s_m}<\frac1m\le\frac1N<\varepsilon.
 $$
 Hence $(s_k)$ satisfies the Cauchy criterion.
 

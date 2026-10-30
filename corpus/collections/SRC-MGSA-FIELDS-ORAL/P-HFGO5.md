@@ -110,7 +110,7 @@ Hence $G$ embeds in
 $$
 S_2\wr S_2\cong D_8,
 $$
-so $|G|\le8$.
+so $\cardinality{G}\le8$.
 
 ::: pf-proof
 
@@ -127,16 +127,16 @@ By step [](#s3){.pf-ref}, the image of $G$ preserves such a partition.
 
 ::: pf-step
 
-Since $E/F$ is nonnormal, $|G|\ne4$; therefore $|G|=8$.
+Since $E/F$ is nonnormal, $\cardinality{G}\ne4$; therefore $\cardinality{G}=8$.
 
 ::: pf-proof
 
-The action on four points is transitive, so $4\mid |G|$. By step [](#s4){.pf-ref},
-$|G|\le8$, hence $|G|$ is $4$ or $8$. If $|G|=4$, then
+The action on four points is transitive, so $4\mid \cardinality{G}$. By step [](#s4){.pf-ref},
+$\cardinality{G}\le8$, hence $\cardinality{G}$ is $4$ or $8$. If $\cardinality{G}=4$, then
 $$
 [K:F]=[E:F]=4
 $$
-and $E=K$, contradicting that $E/F$ is nonnormal. Therefore $|G|=8$.
+and $E=K$, contradicting that $E/F$ is nonnormal. Therefore $\cardinality{G}=8$.
 
 :::
 
@@ -149,7 +149,7 @@ $2$-subgroup of $S_4$, hence isomorphic to $D_8$.
 
 ::: pf-proof
 
-The $2$-part of $|S_4|=24$ is $8$. Thus a subgroup of order $8$ is Sylow, and
+The $2$-part of $\cardinality{S_4}=24$ is $8$. Thus a subgroup of order $8$ is Sylow, and
 the Sylow $2$-subgroups of $S_4$ are dihedral of order $8$.
 
 :::

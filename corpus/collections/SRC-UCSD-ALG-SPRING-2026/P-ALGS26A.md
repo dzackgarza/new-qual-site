@@ -41,7 +41,7 @@ The Sylow $11$-subgroup $N$ of $G$ is unique and normal.
 
 ::: pf-proof
 
-Its number $n_{11}$ divides $35$ and satisfies $n_{11}\equiv1\pmod{11}$. Among the divisors $1,5,7,35$, only $1$ is congruent to $1\pmod{11}$. Hence $n_{11}=1$. Since $|N|=11$, one has $N\cong C_{11}$.
+Its number $n_{11}$ divides $35$ and satisfies $n_{11}\equiv1\pmod{11}$. Among the divisors $1,5,7,35$, only $1$ is congruent to $1\pmod{11}$. Hence $n_{11}=1$. Since $\cardinality{N}=11$, one has $N\cong C_{11}$.
 
 :::
 
@@ -65,7 +65,7 @@ Let $P$ be any Sylow $5$-subgroup. Then $H=PR$ is a subgroup of order $35$.
 
 ::: pf-proof
 
-Because $R\trianglelefteq G$, the product $PR$ is a subgroup. The groups $P$ and $R$ have coprime orders $5$ and $7$, so $P\cap R=1$, and therefore $|PR|=35$.
+Because $R\trianglelefteq G$, the product $PR$ is a subgroup. The groups $P$ and $R$ have coprime orders $5$ and $7$, so $P\cap R=1$, and therefore $\cardinality{PR}=35$.
 
 :::
 
@@ -94,7 +94,7 @@ One has $G=NH$ and $N\cap H=1$.
 
 The intersection has order dividing both $11$ and $35$, so it is trivial. Hence
 $$
-|NH|=|N||H|=11\cdot35=|G|.
+\cardinality{NH}=\cardinality{N}\cardinality{H}=11\cdot35=\cardinality{G}.
 $$
 Thus $NH=G$.
 

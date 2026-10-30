@@ -151,8 +151,8 @@ Two coherent sheaves $\mathcal F_1,\mathcal F_2$ on $X$ whose restrictions to $U
 
 ::: pf-proof
 
-Choose an isomorphism $\alpha:\mathcal F_1|_U\to\mathcal F_2|_U$.
-Its graph is a coherent subsheaf of $(\mathcal F_1\oplus\mathcal F_2)|_U$.
+Choose an isomorphism $\alpha:\mathcal F_1\restrict_U\to\mathcal F_2\restrict_U$.
+Its graph is a coherent subsheaf of $(\mathcal F_1\oplus\mathcal F_2)\restrict_U$.
 The subsheaf-extension assertion of [[P-AGH2515EXTCOH]], step [](#s5){.pf-ref}, extends it to a coherent subsheaf
 $$
 \mathcal G\subseteq\mathcal F_1\oplus\mathcal F_2.
@@ -185,7 +185,7 @@ $$
 $$
 on $U$.
 Choose an extension $\mathcal F$ of the middle sheaf.
-Extend $\mathcal E'\subseteq\mathcal F|_U$ to a coherent subsheaf $\mathcal F'\subseteq\mathcal F$, again by [[P-AGH2515EXTCOH]], step [](#s5){.pf-ref}.
+Extend $\mathcal E'\subseteq\mathcal F\restrict_U$ to a coherent subsheaf $\mathcal F'\subseteq\mathcal F$, again by [[P-AGH2515EXTCOH]], step [](#s5){.pf-ref}.
 The coherent quotient $\mathcal F''=\mathcal F/\mathcal F'$ restricts to $\mathcal E''$.
 The exact sequence on $X$ then gives
 $$
@@ -195,7 +195,7 @@ $$
 Thus the assignment respects every defining relation and induces $s$.
 
 Restricting an extension returns the original sheaf, so $\overline{j^*}\circ s=\id$.
-Conversely, for a coherent sheaf $\mathcal F$ on $X$, its own class is one permitted extension of $\mathcal F|_U$.
+Conversely, for a coherent sheaf $\mathcal F$ on $X$, its own class is one permitted extension of $\mathcal F\restrict_U$.
 Hence $s\circ\overline{j^*}=\id$ on the generators of $K(X)/H$, and therefore on the whole group.
 
 :::

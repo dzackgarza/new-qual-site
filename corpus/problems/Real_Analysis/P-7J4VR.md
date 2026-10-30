@@ -62,7 +62,7 @@ $f_n(x) = \frac{\sin(nx)}{n} \to 0$ uniformly, while $f_n'(x) = \cos(nx)$ satisf
 
 ::: pf-proof
 
-$|f_n| \le 1/n$. So $f_n'(0) \to 1 \neq 0$, the derivative of the limit, and $f_n'(\pi)$ does not converge.
+$\abs{f_n} \le 1/n$. So $f_n'(0) \to 1 \neq 0$, the derivative of the limit, and $f_n'(\pi)$ does not converge.
 
 :::
 
@@ -122,7 +122,7 @@ If $m(E) < \infty$ and $f_n \to f$ uniformly on $E$, then $\lim_n \int_E f_n = \
 
 ::: pf-proof
 
-$\left|\int_E f_n - \int_E f\right| \le \int_E |f_n - f| \le m(E)\sup_E|f_n - f| \to 0$.
+$\abs{\int_E f_n - \int_E f} \le \int_E \abs{f_n - f} \le m(E)\sup_E\abs{f_n - f} \to 0$.
 
 :::
 

@@ -27,8 +27,8 @@ Every bounded analytic function in $\CC \setminus D$ is constant.
 (d) Suppose that $f(z)$ is analytic in $G := \DD \setminus \{0\}$ and that $\int_\gamma z^p f(z)\,dz = 0$ for every closed curve $\gamma: [0,1] \to G$ and every nonnegative integer $p$.
 Then $f(z)$ has a removable singularity at 0.
 
-(e) Let $a$ be a complex number with $|a| > 1$.
-There exists $\epsilon > 0$ such that if a polynomial $p(z)$ satisfies $|p(z)| < \epsilon$ on the closed unit disk $\overline{\DD}$, then $|p(a)| < 1$.
+(e) Let $a$ be a complex number with $\abs{a} > 1$.
+There exists $\epsilon > 0$ such that if a polynomial $p(z)$ satisfies $\abs{p(z)} < \epsilon$ on the closed unit disk $\overline{\DD}$, then $\abs{p(a)} < 1$.
 :::
 
 ::: {.solution}
@@ -51,7 +51,7 @@ theorem makes it constant.
 $$
 f(z)=\sum_{k=-\infty}^{\infty}a_kz^k
 $$
-on $0<|z|<1$. Taking $\gamma$ to be a small positively oriented circle,
+on $0<\abs{z}<1$. Taking $\gamma$ to be a small positively oriented circle,
 $$
 \int_\gamma z^pf(z)\,dz=2\pi i\,a_{-p-1}.
 $$
@@ -62,6 +62,6 @@ coefficient. Hence the singularity at $0$ is removable.
 $$
 p_N(z)=\frac\epsilon2 z^N.
 $$
-Then $|p_N(z)|<\epsilon$ on $\overline{\DD}$, while
-$|p_N(a)|=(\epsilon/2)|a|^N>1$ for all sufficiently large $N$.
+Then $\abs{p_N(z)}<\epsilon$ on $\overline{\DD}$, while
+$\abs{p_N(a)}=(\epsilon/2)\abs{a}^N>1$ for all sufficiently large $N$.
 :::

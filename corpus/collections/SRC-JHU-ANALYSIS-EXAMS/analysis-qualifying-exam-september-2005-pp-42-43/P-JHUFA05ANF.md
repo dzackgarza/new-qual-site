@@ -33,7 +33,7 @@ $H=\{z\in\CC:\operatorname{Re}z>0\}$, meaning holomorphic bijections from $H$ on
 :::
 
 ::: {.solution}
-Write $D=\{w:|w|<1\}$ and
+Write $D=\{w:\abs{w}<1\}$ and
 $$
 T(z)=\frac{z-1}{z+1},\qquad T^{-1}(w)=\frac{1+w}{1-w}.
 $$
@@ -42,7 +42,7 @@ $$
 \boxed{\operatorname{Aut}(H)=
 \left\{z\longmapsto T^{-1}\!\left(
 \lambda\frac{T(z)-a}{1-\overline a T(z)}\right):
-a\in D,\ |\lambda|=1\right\},}
+a\in D,\ \abs{\lambda}=1\right\},}
 $$
 and
 $$
@@ -61,9 +61,9 @@ Part (a) reduces to the disk automorphisms.
 The displayed maps $T,T^{-1}$ are inverse by substitution.
 For $z\in H$ and $w\in D$,
 $$
-1-|T(z)|^2=\frac{4\operatorname{Re}z}{|z+1|^2}>0,
+1-\abs{T(z)}^2=\frac{4\operatorname{Re}z}{\abs{z+1}^2}>0,
 \qquad
-\operatorname{Re}T^{-1}(w)=\frac{1-|w|^2}{|1-w|^2}>0.
+\operatorname{Re}T^{-1}(w)=\frac{1-\abs{w}^2}{\abs{1-w}^2}>0.
 $$
 Thus they are biholomorphic maps between $H$ and $D$.
 Conjugation by $T$ gives a bijection between their
@@ -73,15 +73,15 @@ For a disk automorphism $g$, take $a=g^{-1}(0)$ and let
 $\phi_a(w)=(w-a)/(1-\overline a w)$. The inverse is
 $(v+a)/(1+\overline a v)$; the identity
 $$
-1-|\phi_a(w)|^2=
-\frac{(1-|a|^2)(1-|w|^2)}{|1-\overline a w|^2}
+1-\abs{\phi_a(w)}^2=
+\frac{(1-\abs{a}^2)(1-\abs{w}^2)}{\abs{1-\overline a w}^2}
 $$
 and the corresponding inverse identity show that this
 is a disk automorphism. Both $h=g\circ\phi_a^{-1}$ and
 $h^{-1}$ fix zero. Schwarz's lemma gives
-$|h(w)|\leq|w|=|h^{-1}(h(w))|\leq|h(w)|$.
+$\abs{h(w)}\leq\abs{w}=\abs{h^{-1}(h(w))}\leq\abs{h(w)}$.
 Its equality case implies $h(w)=\lambda w$ with
-$|\lambda|=1$ [@SS03]. Hence $g=\lambda\phi_a$.
+$\abs{\lambda}=1$ [@SS03]. Hence $g=\lambda\phi_a$.
 Conversely each such map is a rotation composed with
 a disk automorphism. Conjugating proves exactly the
 formula for part (a), including its converse.
@@ -101,10 +101,10 @@ Its inverse is holomorphic, hence continuous, by the
 nonvanishing derivative of an injective holomorphic
 function and the inverse function theorem [@SS03].
 For every $M>0$, the set
-$F^{-1}(\{w:|w|\leq M\})$ is compact: it is the
+$F^{-1}(\{w:\abs{w}\leq M\})$ is compact: it is the
 continuous image of this compact disk under the inverse.
 It is therefore bounded. Consequently
-$|F(z)|\to\infty$ as $|z|\to\infty$.
+$\abs{F(z)}\to\infty$ as $\abs{z}\to\infty$.
 
 For small nonzero $\zeta$, put $h(\zeta)=1/F(1/\zeta)$.
 It is holomorphic there and tends to zero. The removable
@@ -112,10 +112,10 @@ singularity theorem extends it with $h(0)=0$ [@SS03].
 Since it is nonzero off zero, its Taylor series has
 a first nonzero term, so $h(\zeta)=\zeta^m u(\zeta)$
 for some $m\geq1$ and holomorphic $u$ with $u(0)\ne0$.
-Thus, for all sufficiently large $|z|$,
-$|F(z)|\leq C|z|^m$ for a constant $C$.
+Thus, for all sufficiently large $\abs{z}$,
+$\abs{F(z)}\leq C\abs{z}^m$ for a constant $C$.
 Cauchy's coefficient estimate for the entire Taylor
-series of $F$ gives $|c_k|\leq CR^{m-k}$ for large $R$.
+series of $F$ gives $\abs{c_k}\leq CR^{m-k}$ for large $R$.
 Letting $R\to\infty$ shows $c_k=0$ for every $k>m$
 [@SS03]. Hence $F$ is a polynomial.
 

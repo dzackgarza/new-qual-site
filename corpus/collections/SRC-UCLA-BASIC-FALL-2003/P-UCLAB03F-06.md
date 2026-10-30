@@ -115,7 +115,7 @@ F(x_n)=y_n.
 $$
 The closed unit disk
 $$
-\overline U=\{x\in\RR^2:\|x\|\le1\}
+\overline U=\{x\in\RR^2:\norm{x}\le1\}
 $$
 is compact. Hence some subsequence $(x_{n_j})$ converges to a point
 $$

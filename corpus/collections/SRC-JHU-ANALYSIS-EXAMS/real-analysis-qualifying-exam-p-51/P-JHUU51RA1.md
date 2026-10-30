@@ -30,7 +30,7 @@ f(0)=f'(0)=f(2)=f'(2)=0.
 $$
 Prove that for every $\varepsilon>0$ there exists $t_\varepsilon>0$ such that
 $$
-\left|\int_0^2 f(x)e^{itx}\,dx\right|\le\frac{\varepsilon}{t}
+\abs{\int_0^2 f(x)e^{itx}\,dx}\le\frac{\varepsilon}{t}
 \qquad(t\ge t_\varepsilon).
 $$
 :::
@@ -52,12 +52,12 @@ $$
 $$
 Therefore, for the given $\varepsilon>0$, there exists $t_\varepsilon>0$ such that
 $$
-\left|\int_0^2 f'(x)e^{itx}\,dx\right|\le\varepsilon
+\abs{\int_0^2 f'(x)e^{itx}\,dx}\le\varepsilon
 \qquad(t\ge t_\varepsilon).
 $$
 Substituting into the integration-by-parts identity yields
 $$
-\left|\int_0^2 f(x)e^{itx}\,dx\right|
+\abs{\int_0^2 f(x)e^{itx}\,dx}
 \le\frac{\varepsilon}{t}
 \qquad(t\ge t_\varepsilon).
 $$

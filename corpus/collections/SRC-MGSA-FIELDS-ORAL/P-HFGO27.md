@@ -28,7 +28,7 @@ Prove that any two finite fields of the same order are isomorphic.
 ::: {.solution}
 Let $K$ and $L$ be finite fields with
 $$
-|K|=|L|=q.
+\cardinality{K}=\cardinality{L}=q.
 $$
 Then $q=p^n$ for the same prime $p$, and both fields contain the same prime
 field $\FF_p$ up to the unique isomorphism fixing $1$.

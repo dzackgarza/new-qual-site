@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APA23C
 kind: problem
-title: 'Modulus of a matrix: singular values and similarity of $|A|$ and $|A^H|$'
+title: 'Modulus of a matrix: singular values and similarity of $\operatorabs{A}$ and $\operatorabs{A^H}$'
 classification:
   areas:
   - applied-algebra
@@ -22,10 +22,10 @@ Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex entr
 
 Consider any $A \in M_{m,n}$.
 
-(a) Define $|A|$, the modulus of $A$.
-Prove that the eigenvalues of $|A|$ are the singular values of $A$.
+(a) Define $\operatorabs{A}$, the modulus of $A$.
+Prove that the eigenvalues of $\operatorabs{A}$ are the singular values of $A$.
 
-(b) Prove that if $m = n$, then $|A|$ and $|A^H|$ are similar.
+(b) Prove that if $m = n$, then $\operatorabs{A}$ and $\operatorabs{A^H}$ are similar.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ Prove that the eigenvalues of $|A|$ are the singular values of $A$.
 ::: pf
 
 ::: {.pf-step #modulus-definition}
-$|A| = (A^H A)^{1/2}$, the unique positive semidefinite square root of $A^H A$.
+$\operatorabs{A} = (A^H A)^{1/2}$, the unique positive semidefinite square root of $A^H A$.
 
 ::: pf-proof
 definition of the modulus of $A$.
@@ -53,7 +53,7 @@ definition of singular values.
 :::
 
 ::: {.pf-step #eigenvalues-of-ahasqrt}
-The eigenvalues of $|A| = (A^H A)^{1/2}$ are the square roots of the eigenvalues of $A^H A$.
+The eigenvalues of $\operatorabs{A} = (A^H A)^{1/2}$ are the square roots of the eigenvalues of $A^H A$.
 
 ::: pf-proof
 if $A^H A$ has eigenvalues $\lambda_i \ge 0$ (it is positive semidefinite), then $(A^H A)^{1/2}$ has eigenvalues $\sqrt{\lambda_i}$.
@@ -62,7 +62,7 @@ if $A^H A$ has eigenvalues $\lambda_i \ge 0$ (it is positive semidefinite), then
 :::
 
 ::: {.pf-step #eigenvalues-of-modulus-are-singular-values}
-Hence the eigenvalues of $|A|$ are exactly the singular values of $A$.
+Hence the eigenvalues of $\operatorabs{A}$ are exactly the singular values of $A$.
 
 ::: pf-proof
 Steps [](#singular-values-definition){.pf-ref} and [](#eigenvalues-of-ahasqrt){.pf-ref}.
@@ -95,7 +95,7 @@ Step [](#ahsa-aah-same-nonzero-eigenvalues){.pf-ref} plus the fact that both hav
 :::
 
 ::: {.pf-step #modulus-formulas-for-a-and-ah}
-$|A| = (A^H A)^{1/2}$ and $|A^H| = (A A^H)^{1/2}$.
+$\operatorabs{A} = (A^H A)^{1/2}$ and $\operatorabs{A^H} = (A A^H)^{1/2}$.
 
 ::: pf-proof
 definition, since $(A^H)^H A^H = A A^H$.
@@ -104,7 +104,7 @@ definition, since $(A^H)^H A^H = A A^H$.
 :::
 
 ::: {.pf-step #modulus-and-adjoint-modulus-same-eigenvalues}
-$|A|$ and $|A^H|$ are both positive semidefinite Hermitian matrices with the same eigenvalues.
+$\operatorabs{A}$ and $\operatorabs{A^H}$ are both positive semidefinite Hermitian matrices with the same eigenvalues.
 
 ::: pf-proof
 Steps [](#ahsa-aah-same-full-spectrum-when-square){.pf-ref} and [](#modulus-formulas-for-a-and-ah){.pf-ref}.
@@ -113,7 +113,7 @@ Steps [](#ahsa-aah-same-full-spectrum-when-square){.pf-ref} and [](#modulus-form
 :::
 
 ::: {.pf-step #modulus-and-adjoint-modulus-similar}
-Hence $|A|$ and $|A^H|$ are unitarily similar (in particular, similar).
+Hence $\operatorabs{A}$ and $\operatorabs{A^H}$ are unitarily similar (in particular, similar).
 
 ::: pf-proof
 two Hermitian matrices are unitarily similar iff they have the same eigenvalues (both are unitarily diagonalizable with the same diagonal).

@@ -37,28 +37,28 @@ Identify $[0,1)$ with the circle $\circlegroup=\RR/\ZZ$ by $x\mapsto x+\ZZ$; thi
 ::: pf
 
 ::: {.pf-step #s1}
-Write $d\nu=f\,d\mu$ with $f\in L^1(|\mu|)$, and fix $\varepsilon>0$. There is a trigonometric polynomial
+Write $d\nu=f\,d\mu$ with $f\in L^1(\totalvariation{\mu})$, and fix $\varepsilon>0$. There is a trigonometric polynomial
 $$
 P(x)=\sum_{m=-N}^N c_m e^{2\pi i m x}
 $$
-with $\int_{\circlegroup}|f-P|\,d|\mu|<\varepsilon$.
+with $\int_{\circlegroup}\abs{f-P}\,d\totalvariation{\mu}<\varepsilon$.
 
 ::: pf-proof
 The density $f$ exists by the Radon--Nikodym theorem for complex measures.
-Continuous functions are dense in $L^1(|\mu|)$ on the compact metric space $\circlegroup$, and trigonometric polynomials are uniformly dense in $C(\circlegroup)$ by the Stone--Weierstrass theorem; since $|\mu|$ is finite, uniform approximation controls the $L^1(|\mu|)$ distance.
+Continuous functions are dense in $L^1(\totalvariation{\mu})$ on the compact metric space $\circlegroup$, and trigonometric polynomials are uniformly dense in $C(\circlegroup)$ by the Stone--Weierstrass theorem; since $\totalvariation{\mu}$ is finite, uniform approximation controls the $L^1(\totalvariation{\mu})$ distance.
 :::
 
 :::
 
 ::: {.pf-step #s2}
-$\limsup_{n\to\infty}|\widehat\nu(n)|\le\varepsilon$.
+$\limsup_{n\to\infty}\abs{\widehat\nu(n)}\le\varepsilon$.
 
 ::: pf-proof
 For every $n$,
 $$
-\left|\widehat\nu(n)-\int_{\circlegroup}e^{2\pi i n x}P(x)\,d\mu(x)\right|
-=\left|\int_{\circlegroup}e^{2\pi i n x}(f-P)\,d\mu\right|
-\le\int_{\circlegroup}|f-P|\,d|\mu|
+\abs{\widehat\nu(n)-\int_{\circlegroup}e^{2\pi i n x}P(x)\,d\mu(x)}
+=\abs{\int_{\circlegroup}e^{2\pi i n x}(f-P)\,d\mu}
+\le\int_{\circlegroup}\abs{f-P}\,d\totalvariation{\mu}
 <\varepsilon,
 $$
 and

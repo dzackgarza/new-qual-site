@@ -38,7 +38,7 @@ One can summarize the result of this exercise as follows: if $X$ has a metric $d
 ::: {.solution}
 (a) The triangle inequality gives the reverse-triangle estimate
 $$
-|d(x,y)-d(x',y')|
+\abs{d(x,y)-d(x',y')}
 \le d(x,x')+d(y,y').
 $$
 Indeed
@@ -51,7 +51,7 @@ d(x,x')<\varepsilon/2,\qquad d(y,y')<\varepsilon/2,
 $$
 then
 $$
-|d(x,y)-d(x',y')|<\varepsilon.
+\abs{d(x,y)-d(x',y')}<\varepsilon.
 $$
 Thus $d:X\times X\to\RR$ is continuous.
 

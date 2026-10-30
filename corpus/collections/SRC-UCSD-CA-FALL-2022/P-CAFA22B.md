@@ -16,7 +16,7 @@ review: draft
 Let $0 \leq t < 1$.
 Show that $f(z) = e^{tz} + z + 1$ has exactly one zero (counting multiplicities) in the left half-plane $\{z : \operatorname{Re} z < 0\}$.
 
-Hint: Consider first $|z| < \varepsilon$ for $\varepsilon > 0$.
+Hint: Consider first $\abs{z} < \varepsilon$ for $\varepsilon > 0$.
 :::
 
 ::: {.remark}
@@ -40,11 +40,11 @@ $\varepsilon=0$, while their derivatives there are $t$ and $1$.
 Consider the half-plane $\operatorname{Re}z<\varepsilon$. On its boundary
 $z=\varepsilon+iy$,
 $$
-|e^{tz}|=e^{t\varepsilon}<1+\varepsilon\le|z+1|.
+\abs{e^{tz}}=e^{t\varepsilon}<1+\varepsilon\le\abs{z+1}.
 $$
 Since $t\ge0$, the exponential is bounded by $e^{t\varepsilon}$ throughout
 that half-plane. On a sufficiently large left semicircle closing the boundary,
-$|z+1|$ is therefore larger than $|e^{tz}|$ as well. Rouché's theorem on the
+$\abs{z+1}$ is therefore larger than $\abs{e^{tz}}$ as well. Rouché's theorem on the
 resulting half-disk shows that
 $$
 e^{tz}+z+1
@@ -55,7 +55,7 @@ $\operatorname{Re}z<\varepsilon$, namely one, counting multiplicity.
 It remains to show that this zero is actually in the left half-plane. If
 $z=iy$ lies on the imaginary axis and is a zero, then
 $$
-|1+iy|=|e^{ity}|=1,
+\abs{1+iy}=\abs{e^{ity}}=1,
 $$
 which forces $y=0$; but $f(0)=2$. Hence there are no zeros on the imaginary
 axis. Since the unique zero in $\operatorname{Re}z<\varepsilon$ cannot lie in

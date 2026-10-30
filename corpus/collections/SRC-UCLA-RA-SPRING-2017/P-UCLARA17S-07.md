@@ -19,22 +19,22 @@ audit:
 ::: {.problem}
 Let $f(z)$ be a one-to-one continuous mapping from the closed annulus
 $$
-\{1\le|z|\le R\}
+\{1\le\abs{z}\le R\}
 $$
 onto the closed annulus
 $$
-\{1\le|z|\le S\}
+\{1\le\abs{z}\le S\}
 $$
-such that $f$ is analytic on the open annulus $\{1<|z|<R\}$. Prove that $S=R$.
+such that $f$ is analytic on the open annulus $\{1<\abs{z}<R\}$. Prove that $S=R$.
 :::
 
 ::: {.solution}
 
 Let
 $$
-A_R\coloneqq\{z:1<|z|<R\},
+A_R\coloneqq\{z:1<\abs{z}<R\},
 \qquad
-A_S\coloneqq\{w:1<|w|<S\}.
+A_S\coloneqq\{w:1<\abs{w}<S\}.
 $$
 
 ::: pf
@@ -58,26 +58,26 @@ On the interior, $f$ is analytic and injective. An injective nonconstant holomor
 
 Define
 $$
-u(w)\coloneqq\frac{\log|w|}{\log S}
+u(w)\coloneqq\frac{\log\abs{w}}{\log S}
 \qquad(w\in A_S).
 $$
-Then $u$ is harmonic, equals $0$ on $|w|=1$, equals $1$ on $|w|=S$, and
+Then $u$ is harmonic, equals $0$ on $\abs{w}=1$, equals $1$ on $\abs{w}=S$, and
 $$
-\int_{A_S}|\nabla u|^2\,dA
+\int_{A_S}\norm{\nabla u}^2\,dA
 =\frac{2\pi}{\log S}.
 $$
 
 
 ::: pf-proof
 
-Since $\log|w|$ is harmonic away from $0$, $u$ is harmonic on $A_S$. In polar coordinates $w=re^{i\theta}$,
+Since $\log\abs{w}$ is harmonic away from $0$, $u$ is harmonic on $A_S$. In polar coordinates $w=re^{i\theta}$,
 $$
-|\nabla u|=\frac1{r\log S}.
+\norm{\nabla u}=\frac1{r\log S}.
 $$
 Therefore
 $$
 \begin{aligned}
-\int_{A_S}|\nabla u|^2\,dA
+\int_{A_S}\norm{\nabla u}^2\,dA
 &=\int_0^{2\pi}\int_1^S
 \frac1{r^2(\log S)^2}\,r\,dr\,d\theta\\
 &=\frac{2\pi}{(\log S)^2}\int_1^S\frac{dr}{r}\\
@@ -97,9 +97,9 @@ v\coloneqq u\circ f
 $$
 is harmonic on $A_R$, extends continuously to the closed annulus, and its boundary values are either
 $$
-v=0\text{ on }|z|=1,
+v=0\text{ on }\abs{z}=1,
 \qquad
-v=1\text{ on }|z|=R,
+v=1\text{ on }\abs{z}=R,
 $$
 or the reverse.
 
@@ -116,11 +116,11 @@ Composition of a harmonic function with a biholomorphic map is harmonic. Continu
 
 One has either
 $$
-v(z)=\frac{\log|z|}{\log R}
+v(z)=\frac{\log\abs{z}}{\log R}
 $$
 for all $z\in A_R$, or
 $$
-v(z)=1-\frac{\log|z|}{\log R}.
+v(z)=1-\frac{\log\abs{z}}{\log R}.
 $$
 
 
@@ -128,9 +128,9 @@ $$
 
 The function
 $$
-h(z)=\frac{\log|z|}{\log R}
+h(z)=\frac{\log\abs{z}}{\log R}
 $$
-is harmonic on $A_R$, continuous on its closure, and has boundary values $0$ on $|z|=1$ and $1$ on $|z|=R$. By the maximum principle, the Dirichlet problem on the annulus has at most one continuous harmonic solution with prescribed boundary values: the difference of two such solutions is harmonic, continuous on the closure, and vanishes on the boundary, hence vanishes identically. Thus $v=h$ in the first boundary-order case and $v=1-h$ in the swapped case.
+is harmonic on $A_R$, continuous on its closure, and has boundary values $0$ on $\abs{z}=1$ and $1$ on $\abs{z}=R$. By the maximum principle, the Dirichlet problem on the annulus has at most one continuous harmonic solution with prescribed boundary values: the difference of two such solutions is harmonic, continuous on the closure, and vanishes on the boundary, hence vanishes identically. Thus $v=h$ in the first boundary-order case and $v=1-h$ in the swapped case.
 
 :::
 
@@ -140,16 +140,16 @@ is harmonic on $A_R$, continuous on its closure, and has boundary values $0$ on 
 
 The Dirichlet energy of $v$ is
 $$
-\int_{A_R}|\nabla v|^2\,dA
+\int_{A_R}\norm{\nabla v}^2\,dA
 =\frac{2\pi}{\log R}.
 $$
 
 
 ::: pf-proof
 
-By step [](#s1-4){.pf-ref}, $|\nabla v|=|\nabla h|$ in either case. The computation in step [](#s1-2){.pf-ref} with $R$ in place of $S$ gives
+By step [](#s1-4){.pf-ref}, $\norm{\nabla v}=\norm{\nabla h}$ in either case. The computation in step [](#s1-2){.pf-ref} with $R$ in place of $S$ gives
 $$
-\int_{A_R}|\nabla h|^2\,dA=\frac{2\pi}{\log R}.
+\int_{A_R}\norm{\nabla h}^2\,dA=\frac{2\pi}{\log R}.
 $$
 
 :::
@@ -160,19 +160,19 @@ $$
 
 Conformal invariance of Dirichlet energy gives
 $$
-\int_{A_R}|\nabla(u\circ f)|^2\,dA
-=\int_{A_S}|\nabla u|^2\,dA.
+\int_{A_R}\norm{\nabla(u\circ f)}^2\,dA
+=\int_{A_S}\norm{\nabla u}^2\,dA.
 $$
 
 
 ::: pf-proof
 
-At each point of $A_R$, the real differential $Df$ is a rotation followed by multiplication of lengths by $|f'|$. Hence
+At each point of $A_R$, the real differential $Df$ is a rotation followed by multiplication of lengths by $\abs{f'}$. Hence
 $$
-|\nabla(u\circ f)|^2
-=|f'|^2\,|\nabla u|^2\circ f.
+\norm{\nabla(u\circ f)}^2
+=\abs{f'}^2\,\norm{\nabla u}^2\circ f.
 $$
-The Jacobian determinant of $f$ is $|f'|^2$. The change-of-variables formula for the biholomorphism $f:A_R\to A_S$ therefore yields the claimed equality.
+The Jacobian determinant of $f$ is $\abs{f'}^2$. The change-of-variables formula for the biholomorphism $f:A_R\to A_S$ therefore yields the claimed equality.
 
 :::
 

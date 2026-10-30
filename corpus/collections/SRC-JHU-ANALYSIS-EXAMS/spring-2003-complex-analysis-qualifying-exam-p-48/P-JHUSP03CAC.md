@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $C$ be the closed curve defined by two pieces: the first piece is given by the set of all $z$ satisfying $|z - 1| = 3$ and $\operatorname{Re}(z - 1) \geq 0$.
+Let $C$ be the closed curve defined by two pieces: the first piece is given by the set of all $z$ satisfying $\abs{z - 1} = 3$ and $\operatorname{Re}(z - 1) \geq 0$.
 The second piece is the straight line segment from $1 + 3i$ to $1 - 3i$.
 Orient $C$ in the counterclockwise direction, and let $\Omega$ be the region enclosed by $C$.
 Suppose $f$ is holomorphic in a neighborhood of $\overline{\Omega}$ with no zeros on $C$.
@@ -123,7 +123,7 @@ $$
 $$
 Both lie in $\Omega$ because their real part is $3/2>1$ and
 $$
-\left|\left(\frac32\pm i\right)-1\right|^2
+\abs{\left(\frac32\pm i\right)-1}^2
 =\frac14+1=\frac54<9.
 $$
 Thus these are exactly all the zeros requested.

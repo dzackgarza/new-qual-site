@@ -29,8 +29,8 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2012, Problem $\# 7 ]$ Write $\DD : = \{ z \in \CC : | z | < 1 \}$ for the open unit disk.
-Suppose $f : \DD \to \DD$ is analytic, and admits a continuous extension $\widetilde { f } : \overline { { \DD } } \to \overline { { \DD } }$ such that $| f ( z ) | = 1$ whenever $| z | = 1$ .
+[Fall 2012, Problem $\# 7 ]$ Write $\DD : = \{ z \in \CC : \abs{ z } < 1 \}$ for the open unit disk.
+Suppose $f : \DD \to \DD$ is analytic, and admits a continuous extension $\widetilde { f } : \overline { { \DD } } \to \overline { { \DD } }$ such that $\abs{ f ( z ) } = 1$ whenever $\abs{ z } = 1$ .
 
 a) Prove that $f$ is a rational function.
 
@@ -40,7 +40,7 @@ c) More generally, suppose that $a _ { 1 } , \dots , a _ { n } \in \DD$ are the 
 Prove that
 
 $$
-f ( z ) = \lambda \prod _ { j = 1 } ^ { n } { \frac { z - a _ { j } } { 1 - { \overline { { a } } } _ { j } z } } , \quad | \lambda | = 1 .
+f ( z ) = \lambda \prod _ { j = 1 } ^ { n } { \frac { z - a _ { j } } { 1 - { \overline { { a } } } _ { j } z } } , \quad \abs{ \lambda } = 1 .
 $$
 :::
 

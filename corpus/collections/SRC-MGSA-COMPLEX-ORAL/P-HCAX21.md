@@ -36,11 +36,11 @@ h=g\circ f^{-1}:\DD\longrightarrow\DD.
 $$
 Then $h$ is an automorphism of the disk and $h(0)=0$. By Schwarz's lemma,
 $$
-|h(z)|\le |z|.
+\abs{h(z)}\le \abs{z}.
 $$
 Applying Schwarz's lemma to $h^{-1}$ gives the reverse inequality, so
 $$
-|h(z)|=|z|
+\abs{h(z)}=\abs{z}
 $$
 for every $z\in\DD$. The rigidity case of Schwarz's lemma therefore yields
 $$

@@ -28,11 +28,11 @@ x'(t)=A(t)x(t),
 $$
 where $A$ is a smooth real $n\times n$ matrix-valued function. Assume that
 $$
-\langle A(t)y,y\rangle\le c\|y\|^2
+\langle A(t)y,y\rangle\le c\norm{y}^2
 $$
 for all $y\in\RR^n$ and all $t$, where $c\in\RR$ is fixed. Prove that every solution satisfies
 $$
-\|x(t)\|\le e^{ct}\|x(0)\|
+\norm{x(t)}\le e^{ct}\norm{x(0)}
 \qquad(t>0).
 $$
 :::

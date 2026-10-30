@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P3GIM
 kind: problem
-title: 'Fitting''s lemma: $V=U\oplus W$ with $\phi|_U$ nilpotent and $\phi|_W$ nonsingular'
+title: 'Fitting''s lemma: $V=U\oplus W$ with $\phi\restrict_U$ nilpotent and $\phi\restrict_W$ nonsingular'
 classification:
   areas:
   - algebra
@@ -20,7 +20,7 @@ Prove that there exists a direct sum decomposition
 $$
 V = U \oplus W,
 $$
-where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent, and $\phi|_W$ is invertible (nonsingular).
+where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi\restrict_U$ is nilpotent, and $\phi\restrict_W$ is invertible (nonsingular).
 :::
 
 ::: {.solution}
@@ -133,30 +133,30 @@ $$\dim_F \ker(\phi^k) + \dim_F \operatorname{Im}(\phi^k) = \dim_F V.$$
 
 ::: {.pf-step #s4}
 
-The restriction $\phi|_U$ is nilpotent, while $\phi|_W$ is invertible.
+The restriction $\phi\restrict_U$ is nilpotent, while $\phi\restrict_W$ is invertible.
 
 ::: pf-proof
 
 ::: pf-step
 
-$\phi|_U$ is nilpotent:
-        - For every $u \in U = \ker(\phi^k)$, $(\phi|_U)^k(u) = \phi^k(u) = 0$.
-        - Thus $(\phi|_U)^k = 0$, so $\phi|_U$ is nilpotent.
+$\phi\restrict_U$ is nilpotent:
+        - For every $u \in U = \ker(\phi^k)$, $(\phi\restrict_U)^k(u) = \phi^k(u) = 0$.
+        - Thus $(\phi\restrict_U)^k = 0$, so $\phi\restrict_U$ is nilpotent.
 
 :::
 
 ::: pf-step
 
-$\phi|_W$ is invertible:
+$\phi\restrict_W$ is invertible:
 
 :::
 
-- Since $W$ is finite-dimensional, $\phi|_W: W \to W$ is invertible if and only if $\ker(\phi|_W) = \{0\}$.
-- Let $w \in \ker(\phi|_W)$. Then $w \in W$ and $\phi(w) = 0$.
+- Since $W$ is finite-dimensional, $\phi\restrict_W: W \to W$ is invertible if and only if $\ker(\phi\restrict_W) = \{0\}$.
+- Let $w \in \ker(\phi\restrict_W)$. Then $w \in W$ and $\phi(w) = 0$.
 - Then $\phi^k(w) = \phi^{k-1}(\phi(w)) = \phi^{k-1}(0) = 0$, so $w \in \ker(\phi^k) = U$.
 - Thus $w \in U \cap W$.
 - By step [](#s3){.pf-ref}, $U \cap W = \{0\}$, so $w = 0$.
-- Therefore $\ker(\phi|_W) = \{0\}$, which proves that $\phi|_W$ is invertible.
+- Therefore $\ker(\phi\restrict_W) = \{0\}$, which proves that $\phi\restrict_W$ is invertible.
 
 :::
 

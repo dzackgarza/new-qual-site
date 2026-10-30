@@ -40,7 +40,7 @@ $$
 For complex characters of a finite group, the scalar product
 $$
 \langle \alpha,\beta\rangle
-=\frac1{|G|}\sum_{g\in G}\alpha(g)\overline{\beta(g)}
+=\frac1{\cardinality{G}}\sum_{g\in G}\alpha(g)\overline{\beta(g)}
 $$
 computes multiplicity. The irreducible characters of $S_5$ are real-valued, so the two quantities in the problem are
 $$

@@ -34,7 +34,7 @@ $\theta$ for which the ordinary improper integral is finite.
 
 The integral depends on $\theta$ only through
 $$
-|\sin\theta|.
+\abs{\sin\theta}.
 $$
 
 
@@ -47,7 +47,7 @@ $$
 1-2\sin^2\theta.
 $$
 Thus replacing $\theta$ by any angle with the same value of
-$|\sin\theta|$ leaves the integrand unchanged.
+$\abs{\sin\theta}$ leaves the integrand unchanged.
 
 :::
 
@@ -65,10 +65,10 @@ $$
 
 If $\sin\theta\ne0$, choose $\vartheta\in(0,\pi)$ with
 $$
-\sin\vartheta=|\sin\theta|.
+\sin\vartheta=\abs{\sin\theta}.
 $$
 By step [](#s1-1){.pf-ref} the two integrands coincide. After computing the formula in this
-range, replace $\sin\vartheta$ by $|\sin\theta|$.
+range, replace $\sin\vartheta$ by $\abs{\sin\theta}$.
 
 :::
 
@@ -249,21 +249,21 @@ $$
 
 ::: pf-proof
 
-Close the real segment by an upper semicircle. On $|z|=R>1$,
+Close the real segment by an upper semicircle. On $\abs{z}=R>1$,
 $$
-|z^2-e^{2i\theta}|
+\abs{z^2-e^{2i\theta}}
 \geq
 R^2-1
 $$
 and
 $$
-|z^2-e^{-2i\theta}|
+\abs{z^2-e^{-2i\theta}}
 \geq
 R^2-1.
 $$
 Thus
 $$
-|F(z)|
+\abs{F(z)}
 \leq
 \frac{R^2}{(R^2-1)^2}.
 $$
@@ -312,15 +312,15 @@ $$
 \operatorname{Res}_{z=i}
 \frac{z^2}{(z^2+1)^2}
 =
-\left.
+\evaluated{
 \frac{d}{dz}
 \frac{z^2}{(z+i)^2}
-\right|_{z=i}
+}_{z=i}
 =
 -\frac{i}{4}.
 $$
 The arc integral again tends to zero because the integrand is
-$O(|z|^{-2})$. Hence
+$O(\abs{z}^{-2})$. Hence
 $$
 \int_{-\infty}^{\infty}
 \frac{x^2}{(x^2+1)^2}\,dx
@@ -369,7 +369,7 @@ $$
 \frac{x^2}
 {x^4-2x^2\cos2\theta+1}\,dx
 =
-\frac{\pi}{2|\sin\theta|}.
+\frac{\pi}{2\abs{\sin\theta}}.
 }
 $$
 
@@ -377,7 +377,7 @@ $$
 ::: pf-proof
 
 Reduce to an angle in $(0,\pi)$ using step [](#s1-2){.pf-ref}, apply step [](#s1-9){.pf-ref}, and replace
-$\sin\vartheta$ by $|\sin\theta|$.
+$\sin\vartheta$ by $\abs{\sin\theta}$.
 
 :::
 

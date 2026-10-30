@@ -49,7 +49,7 @@ Use Tonelli and compute the inner integral.
 
 The function $f$ is nonnegative and measurable, so Tonelli's theorem gives
 $$
-\int_{\RR^2}|f|\,d(x,y)
+\int_{\RR^2}\abs{f}\,d(x,y)
 =\int_0^\infty\int_x^\infty
 x^{1/3}(1+xy)^{-3/2}\,dy\,dx.
 $$
@@ -62,7 +62,7 @@ $$
 $$
 Hence
 $$
-\int_{\RR^2}|f|
+\int_{\RR^2}\abs{f}
 =2\int_0^\infty\frac{dx}{x^{2/3}\sqrt{1+x^2}}.
 $$
 
@@ -100,7 +100,7 @@ $$
 $$
 Therefore
 $$
-\boxed{\int_{\RR^2}|f|<\infty,}
+\boxed{\int_{\RR^2}\abs{f}<\infty,}
 $$
 so $f\in L^1(\RR^2)$.
 

@@ -29,7 +29,7 @@ of sheaves and morphisms is exact if and only if for each $P \in X$ the correspo
 ::: {.solution}
 **Part a.** The clean argument is formal: taking the stalk at $P$ is a filtered colimit over the neighbourhoods of $P$, a kernel is a finite limit, and filtered colimits commute with finite limits.
 This gives $(\ker \phi)_P = \ker(\phi_P)$ at once.
-For the image, write $\im \phi \definedas \ker(\mcg \to \coker \phi)$, so the image is again a kernel, and the same commutation applies.
+For the image, write $\im \phi \coloneqq \ker(\mcg \to \coker \phi)$, so the image is again a kernel, and the same commutation applies.
 
 A direct diagram chase gives the same conclusion.
 
@@ -37,7 +37,7 @@ $(\ker \phi)_P \subseteq \ker(\phi_P)$: let $s \in (\ker \phi)_P$ and represent 
 Passing to germs at $P$ and using that the square relating sections over $U$ to stalks at $P$ commutes, we get $\phi_P(s) = \restrictionof{0}{P} = 0$.
 
 $\ker(\phi_P) \subseteq (\ker \phi)_P$: let $s_P \in \ker(\phi_P)$ and lift it to a pair $(U, s)$ with $s \in \mcf(U)$ and $\restrictionof{s}{P} = s_P$.
-Put $t \definedas \phi(U)(s) \in \mcg(U)$.
+Put $t \coloneqq \phi(U)(s) \in \mcg(U)$.
 Commutativity gives $\restrictionof{t}{P} = \phi_P(s_P) = 0$ in $\mcg_P$.
 Since the germ of $t$ at $P$ vanishes, there is an open $V$ with $P \in V \subseteq U$ and $\restrictionof{t}{V} = 0$ in $\mcg(V)$.
 Because $\phi$ is a morphism of sheaves the restriction squares commute, so $\phi(V)(\restrictionof{s}{V}) = \restrictionof{t}{V} = 0$, which says $\restrictionof{s}{V} \in (\ker \phi)(V)$.
@@ -47,7 +47,7 @@ The diagram chase for images is the same argument run in the other direction.
 
 **Part b.** *Injectivity.* ($\Rightarrow$) If $\phi$ is injective then $\ker \phi = 0$ as a sheaf, so by part (a) we get $\ker(\phi_P) = (\ker \phi)_P = 0$ for every $P$, and $\phi_P$ is injective.
 
-($\Leftarrow$) Suppose $\ker(\phi_P) = 0$ for all $P$, and set $K \definedas \ker \phi$, a sheaf.
+($\Leftarrow$) Suppose $\ker(\phi_P) = 0$ for all $P$, and set $K \coloneqq \ker \phi$, a sheaf.
 By part (a), $K_P = 0$ for all $P$.
 Given a section $s \in K(U)$, each $P \in U$ has a neighbourhood $U_P \subseteq U$ with $\restrictionof{s}{U_P} = 0$, since the germ $s_P$ vanishes.
 The sets $\theset{U_P \st P \in U}$ cover $U$, and $K$ is a sheaf, so the identity axiom forces $s = 0$.

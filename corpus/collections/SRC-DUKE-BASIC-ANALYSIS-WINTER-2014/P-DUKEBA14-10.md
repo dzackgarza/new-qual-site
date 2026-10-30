@@ -38,7 +38,7 @@ Define the fixed-point map on a closed ball.
 ::: pf-proof
 Let $X=C([0,1])$ with the sup norm and set
 $$
-B=\{f\in X:\|f\|_\infty\le2\}.
+B=\{f\in X:\norm{f}_\infty\le2\}.
 $$
 The set $B$ is complete because it is closed in the Banach space $X$. Define
 $$
@@ -55,8 +55,8 @@ Show that $T$ maps $B$ into itself.
 ::: pf-proof
 If $f\in B$, then for $0\le x\le1$,
 $$
-|Tf(x)|
-\le \frac1{1066}\int_0^x|f(s)|^2\,ds+1
+\abs{Tf(x)}
+\le \frac1{1066}\int_0^x\abs{f(s)}^2\,ds+1
 \le \frac4{1066}+1<2.
 $$
 Thus $T(B)\subset B$.
@@ -70,22 +70,22 @@ Prove that $T$ is a contraction on $B$.
 ::: pf-proof
 For $f,g\in B$,
 $$
-|f(s)^2-g(s)^2|
-\le(|f(s)|+|g(s)|)|f(s)-g(s)|
-\le4\|f-g\|_\infty.
+\abs{f(s)^2-g(s)^2}
+\le(\abs{f(s)}+\abs{g(s)})\abs{f(s)-g(s)}
+\le4\norm{f-g}_\infty.
 $$
 Hence
 $$
 \begin{aligned}
-|Tf(x)-Tg(x)|
-&\le \frac1{1066}\int_0^x|f(s)^2-g(s)^2|\,ds\\
-&\le \frac4{1066}\|f-g\|_\infty.
+\abs{Tf(x)-Tg(x)}
+&\le \frac1{1066}\int_0^x\abs{f(s)^2-g(s)^2}\,ds\\
+&\le \frac4{1066}\norm{f-g}_\infty.
 \end{aligned}
 $$
 Taking the supremum over $x$ gives
 $$
-\|Tf-Tg\|_\infty
-\le \frac4{1066}\|f-g\|_\infty,
+\norm{Tf-Tg}_\infty
+\le \frac4{1066}\norm{f-g}_\infty,
 $$
 and $4/1066<1$.
 :::

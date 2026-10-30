@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-CFMLS
 kind: problem
-title: The set of reals with infinitely many rational approximations $|x-p/q|<q^{-3}$
-  has measure zero
+title: The set of reals with infinitely many rational approximations $\abs{x-p/q}<q^{-3}$ has measure zero
 classification:
   areas:
   - real-analysis
@@ -33,7 +32,7 @@ audit:
 ::: {.problem}
 Define
 $$
-E:=\left\{x\in\RR:\left|x-\frac pq\right|<q^{-3}
+E:=\left\{x\in\RR:\abs{x-\frac pq}<q^{-3}
 \text{ for infinitely many }p,q\in\NN\right\}.
 $$
 Prove that $m(E)=0$.
@@ -43,7 +42,7 @@ Prove that $m(E)=0$.
 Fix $N\in\NN$ and work on the bounded interval $[-N,N]$. For each $q\ge1$, let
 $$
 E_{q,N}:=\left\{x\in[-N,N]:
-\left|x-\frac pq\right|<q^{-3}
+\abs{x-\frac pq}<q^{-3}
 \text{ for some }p\in\NN\right\}.
 $$
 Only numerators with

@@ -84,11 +84,11 @@ F=f^{-1}(y)
 $$
 had a positive-dimensional component.  On that fibre,
 $$
-f^*\mathcal O_{\PP^m}(1)|_F
+f^*\mathcal O_{\PP^m}(1)\restrict_F
 $$
 is the pullback of a one-dimensional vector space from the point $y$, hence is the trivial line bundle.  But by step [](#pullback-o1){.pf-ref} this same restriction is
 $$
-\mathcal O_{\PP^n}(d)|_F,
+\mathcal O_{\PP^n}(d)\restrict_F,
 $$
 the restriction of an ample line bundle, and is therefore ample on $F$.  The trivial line bundle on a positive-dimensional proper scheme is not ample.  This is a contradiction.
 

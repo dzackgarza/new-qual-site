@@ -29,7 +29,7 @@ For part (a), use on $\CC_-$ the square-root branch determined by
 $$
 \pi<\arg z<2\pi,
 \qquad
-\sqrt z=|z|^{1/2}e^{i\arg z/2}.
+\sqrt z=\abs{z}^{1/2}e^{i\arg z/2}.
 $$
 This maps $\CC_-$ conformally onto the second quadrant
 $$
@@ -42,7 +42,7 @@ $$
 maps $Q$ conformally onto the upper half of the unit disk. Indeed, the negative
 real boundary ray maps to $(-1,1)$, the positive imaginary boundary ray maps to
 the upper unit semicircle, and for $\operatorname{Re}w<0$ one has
-$|1+w|<|1-w|$. Finally, squaring maps the upper half-disk conformally onto
+$\abs{1+w}<\abs{1-w}$. Finally, squaring maps the upper half-disk conformally onto
 $$
 \DD\setminus[0,1),
 $$
@@ -65,7 +65,7 @@ $$
 so it is conformal away from its real pole. A direct computation gives
 $$
 \operatorname{Im}T(z)
-=\frac{(ad-bc)\operatorname{Im}z}{|cz+d|^2}.
+=\frac{(ad-bc)\operatorname{Im}z}{\abs{cz+d}^2}.
 $$
 Thus $\operatorname{Im}z>0$ implies $\operatorname{Im}T(z)<0$. Since a real
 Möbius transformation is a bijection of the Riemann sphere preserving the real

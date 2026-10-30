@@ -24,8 +24,8 @@ U(x,\xi)=\int_{\RR}e^{-(x+i\xi-y)^2/2}u(y)\,dy,
 $$
 Show that $U(x,\xi)$ is well defined on $\RR^2$ and that there exists a constant $C>0$ such that for all $u\in L^2(\RR)$,
 $$
-\iint_{\RR^2}|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
-=C\int_{\RR}|u(y)|^2\,dy.
+\iint_{\RR^2}\abs{U(x,\xi)}^2e^{-\xi^2}\,dx\,d\xi
+=C\int_{\RR}\abs{u(y)}^2\,dy.
 $$
 Determine $C$ explicitly.
 :::
@@ -40,10 +40,10 @@ $$
 $$
 for which Plancherel's theorem reads
 $$
-\int_{\RR}|\mathcal Fh(\eta)|^2\,d\eta
+\int_{\RR}\abs{\mathcal Fh(\eta)}^2\,d\eta
 =
 2\pi
-\int_{\RR}|h(y)|^2\,dy.
+\int_{\RR}\abs{h(y)}^2\,dy.
 $$
 
 ::: pf
@@ -57,9 +57,9 @@ For every $(x,\xi)\in\RR^2$, the integral defining $U(x,\xi)$ converges absolute
 
 Since
 $$
-\left|
+\abs{
 e^{-(x+i\xi-y)^2/2}
-\right|
+}
 =
 e^{\xi^2/2}
 e^{-(x-y)^2/2},
@@ -68,20 +68,20 @@ Cauchy--Schwarz gives
 $$
 \begin{aligned}
 \int_{\RR}
-\left|
+\abs{
 e^{-(x+i\xi-y)^2/2}u(y)
-\right|dy
+}dy
 &\le
 e^{\xi^2/2}
 \left(
 \int_{\RR}
 e^{-(x-y)^2}\,dy
 \right)^{1/2}
-\|u\|_2\\
+\norm{u}_2\\
 &=
 e^{\xi^2/2}
 \pi^{1/4}
-\|u\|_2
+\norm{u}_2
 <
 \infty.
 \end{aligned}
@@ -122,7 +122,7 @@ xy-\frac{y^2}{2}
 $$
 Hence
 $$
-|e^{xy-y^2/2}|
+\abs{e^{xy-y^2/2}}
 \le
 e^{x^2/2},
 $$
@@ -162,12 +162,12 @@ The last integral is $\mathcal Fh_x(-\xi)$.
 For every fixed $x\in\RR$,
 $$
 \int_{\RR}
-|U(x,\xi)|^2e^{-\xi^2}\,d\xi
+\abs{U(x,\xi)}^2e^{-\xi^2}\,d\xi
 =
 2\pi
 \int_{\RR}
 e^{-(x-y)^2}
-|u(y)|^2\,dy.
+\abs{u(y)}^2\,dy.
 $$
 
 
@@ -175,34 +175,34 @@ $$
 
 By step [](#s1-2){.pf-ref},
 $$
-|U(x,\xi)|^2e^{-\xi^2}
+\abs{U(x,\xi)}^2e^{-\xi^2}
 =
 e^{-x^2}
-|\mathcal Fh_x(-\xi)|^2.
+\abs{\mathcal Fh_x(-\xi)}^2.
 $$
 Therefore Plancherel gives
 $$
 \begin{aligned}
 \int_{\RR}
-|U(x,\xi)|^2e^{-\xi^2}\,d\xi
+\abs{U(x,\xi)}^2e^{-\xi^2}\,d\xi
 &=
 e^{-x^2}
 \int_{\RR}
-|\mathcal Fh_x(\xi)|^2\,d\xi\\
+\abs{\mathcal Fh_x(\xi)}^2\,d\xi\\
 &=
 2\pi e^{-x^2}
 \int_{\RR}
-|h_x(y)|^2\,dy\\
+\abs{h_x(y)}^2\,dy\\
 &=
 2\pi
 \int_{\RR}
 e^{-x^2+2xy-y^2}
-|u(y)|^2\,dy\\
+\abs{u(y)}^2\,dy\\
 &=
 2\pi
 \int_{\RR}
 e^{-(x-y)^2}
-|u(y)|^2\,dy.
+\abs{u(y)}^2\,dy.
 \end{aligned}
 $$
 
@@ -216,10 +216,10 @@ One has
 $$
 \boxed{
 \iint_{\RR^2}
-|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
+\abs{U(x,\xi)}^2e^{-\xi^2}\,dx\,d\xi
 =
 2\pi^{3/2}
-\int_{\RR}|u(y)|^2\,dy
+\int_{\RR}\abs{u(y)}^2\,dy
 }.
 $$
 
@@ -230,24 +230,24 @@ The integrand in step [](#s1-3){.pf-ref} is nonnegative, so Tonelli's theorem pe
 $$
 \begin{aligned}
 \iint_{\RR^2}
-|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
+\abs{U(x,\xi)}^2e^{-\xi^2}\,dx\,d\xi
 &=
 2\pi
 \int_{\RR}
 \int_{\RR}
 e^{-(x-y)^2}
-|u(y)|^2\,dy\,dx\\
+\abs{u(y)}^2\,dy\,dx\\
 &=
 2\pi
 \int_{\RR}
-|u(y)|^2
+\abs{u(y)}^2
 \left(
 \int_{\RR}
 e^{-(x-y)^2}\,dx
 \right)dy\\
 &=
 2\pi\sqrt\pi
-\int_{\RR}|u(y)|^2\,dy.
+\int_{\RR}\abs{u(y)}^2\,dy.
 \end{aligned}
 $$
 Since

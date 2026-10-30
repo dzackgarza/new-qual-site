@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $p \in (1, \infty)$, and for $f \in L^p(\RR)$ define $Tf(x) := \int_0^1 f(x + y) \, dy$.
 
-(a) Show that $\|Tf\|_p \leq \|f\|_p$, and equality holds if and only if $f = 0$ almost everywhere.
+(a) Show that $\norm{Tf}_p \leq \norm{f}_p$, and equality holds if and only if $f = 0$ almost everywhere.
 
 (b) Prove that $(I - T)(L^p(\RR)) \neq L^p(\RR)$, where $I$ is the identity map on $L^p(\RR)$.
 :::
@@ -39,28 +39,28 @@ Let $p \in (1, \infty)$, and for $f \in L^p(\RR)$ define $Tf(x) := \int_0^1 f(x 
 
 ::: pf-step
 
-$\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\RR)$.
+$\norm{Tf}_p\le\norm{f}_p$ for every $f\in L^p(\RR)$.
 
 ::: pf-proof
 
 For almost every $x$, Jensen's inequality for the probability measure on $[0,1]$ gives
 $$
-|Tf(x)|^p
-=\left|\int_0^1 f(x+y)\,dy\right|^p
-\le \int_0^1 |f(x+y)|^p\,dy.
+\abs{Tf(x)}^p
+=\abs{\int_0^1 f(x+y)\,dy}^p
+\le \int_0^1 \abs{f(x+y)}^p\,dy.
 $$
 Integrating in $x$ and using Tonelli together with translation invariance of Lebesgue measure,
 $$
 \begin{aligned}
-\|Tf\|_p^p
-&\le \int_{\RR}\int_0^1|f(x+y)|^p\,dy\,dx\\
-&=\int_0^1\int_{\RR}|f(x+y)|^p\,dx\,dy\\
-&=\|f\|_p^p.
+\norm{Tf}_p^p
+&\le \int_{\RR}\int_0^1\abs{f(x+y)}^p\,dy\,dx\\
+&=\int_0^1\int_{\RR}\abs{f(x+y)}^p\,dx\,dy\\
+&=\norm{f}_p^p.
 \end{aligned}
 $$
 Hence
 $$
-\boxed{\|Tf\|_p\le\|f\|_p.}
+\boxed{\norm{Tf}_p\le\norm{f}_p.}
 $$
 
 :::
@@ -69,11 +69,11 @@ $$
 
 ::: {.pf-step #s2}
 
-If $\|Tf\|_p=\|f\|_p$, then $f=0$ almost everywhere.
+If $\norm{Tf}_p=\norm{f}_p$, then $f=0$ almost everywhere.
 
 ::: pf-proof
 
-Suppose $\|Tf\|_p=\|f\|_p$. Then equality holds in the pointwise Jensen inequality for almost every $x$. Since $1<p<\infty$, the function $z\mapsto |z|^p$ is strictly convex. Therefore, for almost every $x$, the function
+Suppose $\norm{Tf}_p=\norm{f}_p$. Then equality holds in the pointwise Jensen inequality for almost every $x$. Since $1<p<\infty$, the function $z\mapsto \abs{z}^p$ is strictly convex. Therefore, for almost every $x$, the function
 $$
 y\longmapsto f(x+y)
 $$
@@ -97,7 +97,7 @@ $I-T$ is injective.
 
 If $(I-T)f=0$, then $Tf=f$. Hence
 $$
-\|Tf\|_p=\|f\|_p,
+\norm{Tf}_p=\norm{f}_p,
 $$
 and step [](#s2){.pf-ref} implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
 
@@ -107,7 +107,7 @@ and step [](#s2){.pf-ref} implies $f=0$ almost everywhere. Therefore $I-T$ is in
 
 ::: {.pf-step #s4}
 
-For $f_N\coloneqq\mathbf1_{[0,N]}$, $\|(I-T)f_N\|_p/\|f_N\|_p\to0$ as $N\to\infty$.
+For $f_N\coloneqq\mathbf1_{[0,N]}$, $\norm{(I-T)f_N}_p/\norm{f_N}_p\to0$ as $N\to\infty$.
 
 ::: pf-proof
 
@@ -117,19 +117,19 @@ f_N=\mathbf1_{[0,N]}.
 $$
 Then
 $$
-\|f_N\|_p=N^{1/p}.
+\norm{f_N}_p=N^{1/p}.
 $$
 For $x\in[0,N-1]$ we have $Tf_N(x)=1=f_N(x)$, and for $x\notin[-1,N]$ both sides are zero. Thus $(I-T)f_N$ is supported in
 $$
 [-1,0]\cup[N-1,N],
 $$
-and $|(I-T)f_N|\le1$. Hence
+and $\abs{(I-T)f_N}\le1$. Hence
 $$
-\|(I-T)f_N\|_p\le 2^{1/p}.
+\norm{(I-T)f_N}_p\le 2^{1/p}.
 $$
 Therefore
 $$
-\frac{\|(I-T)f_N\|_p}{\|f_N\|_p}
+\frac{\norm{(I-T)f_N}_p}{\norm{f_N}_p}
 \le \left(\frac2N\right)^{1/p}\longrightarrow0.
 $$
 
@@ -145,7 +145,7 @@ $(I-T)(L^p(\RR))\ne L^p(\RR)$.
 
 Suppose $(I-T)(L^p)=L^p$. By step [](#s3){.pf-ref}, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\RR)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
 $$
-\|(I-T)f\|_p\ge C\|f\|_p
+\norm{(I-T)f}_p\ge C\norm{f}_p
 $$
 for every $f\in L^p$.
 

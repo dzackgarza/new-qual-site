@@ -33,7 +33,7 @@ $$
 
 (a) Prove that if $f_n\rightharpoonup f$ weakly in $L^2$ and
 $$
-\|f_n\|_2\to\|f\|_2,
+\norm{f_n}_2\to\norm{f}_2,
 $$
 then $f_n\to f$ strongly in $L^2$.
 
@@ -52,15 +52,15 @@ Weak convergence plus convergence of norms implies strong convergence.
 
 Weak convergence gives, taking the test function $g=f$,
 $$
-(f_n,f)\longrightarrow(f,f)=\|f\|_2^2.
+(f_n,f)\longrightarrow(f,f)=\norm{f}_2^2.
 $$
 Therefore
 $$
 \begin{aligned}
-\|f_n-f\|_2^2
-&=\|f_n\|_2^2+\|f\|_2^2-2(f_n,f)\\
+\norm{f_n-f}_2^2
+&=\norm{f_n}_2^2+\norm{f}_2^2-2(f_n,f)\\
 &\longrightarrow
-\|f\|_2^2+\|f\|_2^2-2\|f\|_2^2=0.
+\norm{f}_2^2+\norm{f}_2^2-2\norm{f}_2^2=0.
 \end{aligned}
 $$
 Hence $f_n\to f$ strongly in $L^2$.
@@ -85,7 +85,7 @@ e_n=\chi_{Q_n}.
 $$
 Then each $e_n$ is bounded by $1$ and
 $$
-\|e_n\|_2=1.
+\norm{e_n}_2=1.
 $$
 The sets $Q_n$ are pairwise disjoint, so $(e_n)$ is an orthonormal sequence. Hence for every $g\in L^2$,
 $$
@@ -97,11 +97,11 @@ e_n\rightharpoonup0.
 $$
 But
 $$
-\|e_n-0\|_2=1
+\norm{e_n-0}_2=1
 $$
 for every $n$, so the sequence does not converge strongly. In fact, for $m\ne n$,
 $$
-\|e_n-e_m\|_2=\sqrt2,
+\norm{e_n-e_m}_2=\sqrt2,
 $$
 so no subsequence is strongly Cauchy.
 

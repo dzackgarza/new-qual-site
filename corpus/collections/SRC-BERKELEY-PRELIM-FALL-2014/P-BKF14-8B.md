@@ -36,7 +36,7 @@ Determine, up to isomorphism, all finite groups $G$ such that $G$ has exactly th
 ::: {.solution}
 Let
 $$
-|G|=g,
+\cardinality{G}=g,
 $$
 and let the three conjugacy classes have sizes
 $$
@@ -57,7 +57,7 @@ Both $r$ and $s$ are proper divisors of $g$.
 
 For any $x\in G$, the size of its conjugacy class is
 $$
-|G:C_G(x)|,
+\subgroupindex{G:C_G(x)},
 $$
 so it divides $g$. A conjugacy class of a nonidentity element cannot
 have size $g$, since its centralizer contains at least the identity and

@@ -43,10 +43,10 @@ audit:
 ::: {.problem}
 Assume that every nonabelian finite group $H$ with
 $$
-|H|<60
+\cardinality{H}<60
 $$
 is not simple.
-Prove that every finite group $G$ with $|G|<60$ is solvable.
+Prove that every finite group $G$ with $\cardinality{G}<60$ is solvable.
 
 The handout states the hypothesis as ``all groups of order less than $60$ are not simple.'' Since every cyclic group of prime order is simple, the nonabelian restriction above is the mathematically necessary interpretation.
 :::
@@ -57,13 +57,13 @@ The handout states the hypothesis as ``all groups of order less than $60$ are no
 
 ::: pf-step
 
-We prove by strong induction on $|G|$ that every finite group $G$ of order less than $60$ is solvable.
+We prove by strong induction on $\cardinality{G}$ that every finite group $G$ of order less than $60$ is solvable.
 
 ::: pf-proof
 
-For $|G|=1$, the group is trivial and hence solvable.
+For $\cardinality{G}=1$, the group is trivial and hence solvable.
 
-Assume now that $1<|G|<60$ and that every group of smaller order is solvable.
+Assume now that $1<\cardinality{G}<60$ and that every group of smaller order is solvable.
 
 :::
 
@@ -95,7 +95,7 @@ $$
 ::: pf-proof
 
 By hypothesis, every nonabelian group of order less than $60$ is not simple.
-Since $G$ is nonabelian and $|G|<60$, the group $G$ is not simple.
+Since $G$ is nonabelian and $\cardinality{G}<60$, the group $G$ is not simple.
 Therefore it has a normal subgroup $N$ satisfying
 $$
 1<N<G.
@@ -113,9 +113,9 @@ Both $N$ and $G/N$ are solvable.
 
 Because $N$ is nontrivial and proper,
 $$
-|N|<|G|
+\cardinality{N}<\cardinality{G}
 \qquad\text{and}\qquad
-|G/N|<|G|.
+\cardinality{G/N}<\cardinality{G}.
 $$
 The induction hypothesis therefore applies to both $N$ and $G/N$.
 

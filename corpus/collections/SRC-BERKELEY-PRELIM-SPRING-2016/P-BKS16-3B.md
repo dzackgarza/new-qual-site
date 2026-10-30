@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-3B
 kind: problem
-title: Lipschitz limit of $\sum(-1)^k/(k+|x|)$ and uniform convergence
+title: Lipschitz limit of $\sum(-1)^k/(k+\abs{x})$ and uniform convergence
 classification:
   areas:
   - prelim
@@ -20,13 +20,13 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-10-02
-  note: Verified the alternating-series estimates for pointwise convergence, the global Lipschitz bound through $|x|$, and the uniform tail estimate.
+  note: Verified the alternating-series estimates for pointwise convergence, the global Lipschitz bound through $\abs{x}$, and the uniform tail estimate.
 ---
 
 ::: {.problem}
 Show that the series
 $$
-\sum_{k=1}^\infty \frac{(-1)^k}{k+|x|}
+\sum_{k=1}^\infty \frac{(-1)^k}{k+\abs{x}}
 $$
 converges pointwise to a Lipschitz function $f(x)$.
 Is the convergence uniform on $\RR$?
@@ -38,7 +38,7 @@ For $u\geq0$, write
 $$
 F(u)\coloneqq\sum_{k=1}^\infty\frac{(-1)^k}{k+u}.
 $$
-Then the function in the problem is $f(x)=F(|x|)$.
+Then the function in the problem is $f(x)=F(\abs{x})$.
 
 ::: pf
 
@@ -79,7 +79,7 @@ a_k\coloneqq\frac{\varepsilon}{(k+u)(k+v)}
 $$
 decrease to $0$. By the alternating-series remainder estimate,
 $$
-|F(u)-F(v)|\leq a_1
+\abs{F(u)-F(v)}\leq a_1
 =
 \frac{v-u}{(1+u)(1+v)}
 \leq v-u.
@@ -100,10 +100,10 @@ The pointwise limit $f$ is $1$-Lipschitz on $\RR$.
 By step [](#s1-2){.pf-ref} and the reverse triangle inequality,
 $$
 \begin{aligned}
-|f(x)-f(y)|
-&=|F(|x|)-F(|y|)|\\
-&\leq\bigl||x|-|y|\bigr|\\
-&\leq|x-y|.
+\abs{f(x)-f(y)}
+&=\abs{F(\abs{x})-F(\abs{y})}\\
+&\leq\abs{\abs{x}-\abs{y}}\\
+&\leq\abs{x-y}.
 \end{aligned}
 $$
 Thus $f$ is Lipschitz with constant $1$.
@@ -121,19 +121,19 @@ The series converges uniformly on $\RR$; the answer to the second question is $\
 
 Let
 $$
-S_N(x)\coloneqq\sum_{k=1}^N\frac{(-1)^k}{k+|x|}.
+S_N(x)\coloneqq\sum_{k=1}^N\frac{(-1)^k}{k+\abs{x}}.
 $$
 For each fixed $x$, the alternating-series remainder estimate gives
 $$
-|f(x)-S_N(x)|
+\abs{f(x)-S_N(x)}
 \leq
-\frac1{N+1+|x|}
+\frac1{N+1+\abs{x}}
 \leq
 \frac1{N+1}.
 $$
 The last bound is independent of $x$ and tends to $0$, so
 $$
-\sup_{x\in\RR}|f(x)-S_N(x)|\longrightarrow0.
+\sup_{x\in\RR}\abs{f(x)-S_N(x)}\longrightarrow0.
 $$
 
 :::

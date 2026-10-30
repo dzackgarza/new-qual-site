@@ -35,9 +35,9 @@ Yes.
 For all $x,y\ge0$,
 $$
 \boxed{
-|\sqrt{x}-\sqrt{y}|
+\abs{\sqrt{x}-\sqrt{y}}
 \le
-\sqrt{|x-y|}
+\sqrt{\abs{x-y}}
 }.
 $$
 
@@ -74,7 +74,7 @@ x+y-2y
 =
 x-y
 =
-|x-y|.
+\abs{x-y}.
 $$
 Both sides are nonnegative, so taking square roots gives the desired inequality.
 
@@ -90,11 +90,11 @@ $$
 $$
 If
 $$
-|x-y|<\delta,
+\abs{x-y}<\delta,
 $$
 then
 $$
-|\sqrt{x}-\sqrt{y}|<\varepsilon.
+\abs{\sqrt{x}-\sqrt{y}}<\varepsilon.
 $$
 
 
@@ -102,9 +102,9 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|\sqrt{x}-\sqrt{y}|
+\abs{\sqrt{x}-\sqrt{y}}
 \le
-\sqrt{|x-y|}
+\sqrt{\abs{x-y}}
 <
 \sqrt{\delta}
 =

@@ -30,7 +30,7 @@ $$
 f ( \theta ) = a _ { 0 } + a _ { 1 } e ^ { i \theta } + a _ { 2 } e ^ { 2 i \theta } + . . . + a _ { n } e ^ { n i \theta } .
 $$
 
-Prove that there exists $\theta \in \RR$ such that $| f ( \theta ) | > | a _ { 0 } |$
+Prove that there exists $\theta \in \RR$ such that $\abs{ f ( \theta ) } > \abs{ a _ { 0 } }$
 :::
 
 ::: {.solution}

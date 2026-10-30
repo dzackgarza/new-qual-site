@@ -102,7 +102,7 @@ Since $p\equiv3\pmod4$, one has $v_2(p-1)=1$ and $4\mid p+1$, so
 $$
 v_2(p^2-1)=v_2(p-1)+v_2(p+1)\ge3.
 $$
-Thus $|E_1^\times|=p^2-1$ has exact $2$-adic valuation $k'\ge3$.
+Thus $\cardinality{E_1^\times}=p^2-1$ has exact $2$-adic valuation $k'\ge3$.
 
 :::
 
@@ -154,7 +154,7 @@ $$
 
 ::: pf-proof
 
-Problem 3.3 applies verbatim to the finite field $E_1=\FF_{p^2}$ because the exact power of $2$ dividing $|E_1^\times|=p^2-1$ is $2^{k'}$ with $k'\ge2$, by step [](#s1-3){.pf-ref}, and $u_1$ is a nonsquare by step [](#s1-4){.pf-ref}. Its conclusion is that every successive square-root adjunction has degree $2$.
+Problem 3.3 applies verbatim to the finite field $E_1=\FF_{p^2}$ because the exact power of $2$ dividing $\cardinality{E_1^\times}=p^2-1$ is $2^{k'}$ with $k'\ge2$, by step [](#s1-3){.pf-ref}, and $u_1$ is a nonsquare by step [](#s1-4){.pf-ref}. Its conclusion is that every successive square-root adjunction has degree $2$.
 
 :::
 

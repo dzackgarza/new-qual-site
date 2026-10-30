@@ -34,11 +34,11 @@ $f \ast g$ is uniformly continuous.
 
 ::: {.pf-step #s1-1}
 
-$|f \ast g(x + h) - f \ast g(x)| \le \|g\|_1 \sup_{z}|f(z + h) - f(z)|$ for all $x, h$.
+$\abs{f \ast g(x + h) - f \ast g(x)} \le \norm{g}_1 \sup_{z}\abs{f(z + h) - f(z)}$ for all $x, h$.
 
 ::: pf-proof
 
-$|f\ast g(x+h) - f\ast g(x)| = \left|\int (f(x + h - y) - f(x - y))g(y)\,dy\right| \le \int |f(x+h-y) - f(x-y)|\,|g(y)|\,dy$, and the first factor of the integrand is at most $\sup_z|f(z+h) - f(z)|$.
+$\abs{f\ast g(x+h) - f\ast g(x)} = \abs{\int (f(x + h - y) - f(x - y))g(y)\,dy} \le \int \abs{f(x+h-y) - f(x-y)}\,\abs{g(y)}\,dy$, and the first factor of the integrand is at most $\sup_z\abs{f(z+h) - f(z)}$.
 
 :::
 
@@ -46,7 +46,7 @@ $|f\ast g(x+h) - f\ast g(x)| = \left|\int (f(x + h - y) - f(x - y))g(y)\,dy\righ
 
 ::: {.pf-step #s1-2}
 
-$\sup_z|f(z + h) - f(z)| \to 0$ as $h \to 0$.
+$\sup_z\abs{f(z + h) - f(z)} \to 0$ as $h \to 0$.
 
 ::: pf-proof
 
@@ -58,7 +58,7 @@ A continuous function with compact support is uniformly continuous.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $\sup_x|f\ast g(x + h) - f\ast g(x)| \to 0$ as $h \to 0$.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $\sup_x\abs{f\ast g(x + h) - f\ast g(x)} \to 0$ as $h \to 0$.
 
 :::
 

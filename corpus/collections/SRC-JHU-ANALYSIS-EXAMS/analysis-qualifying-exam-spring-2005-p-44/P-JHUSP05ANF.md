@@ -46,8 +46,8 @@ A complex exponential produces the required sine integral as its imaginary part.
 Set $F(z)=ze^{iz}/((z^2+1)(z^2+4))$. For real $x$,
 the imaginary part of $F(x)$ is the integrand in the
 question. The complex integral is absolutely convergent:
-$|F(x)|$ is bounded for $|x|\leq1$, and for $|x|\geq1$
-it is at most $|x|^{-3}$. Thus imaginary parts commute
+$\abs{F(x)}$ is bounded for $\abs{x}\leq1$, and for $\abs{x}\geq1$
+it is at most $\abs{x}^{-3}$. Thus imaginary parts commute
 with this integral, and the same assertion holds for
 limits of its truncated integrals.
 
@@ -78,10 +78,10 @@ $$
 \int_{-R}^{R}F(x)\,dx+\int_{\Gamma_R}F(z)\,dz
 =\frac{\pi i}{3}(e^{-1}-e^{-2})
 $$
-[@SS03]. On the arc, $|e^{iz}|=e^{-\operatorname{Im}z}\leq1$,
+[@SS03]. On the arc, $\abs{e^{iz}}=e^{-\operatorname{Im}z}\leq1$,
 and consequently
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\frac{\pi R^2}{(R^2-1)(R^2-4)}\longrightarrow0.
 $$
 Letting $R\to\infty$ and taking imaginary parts now

@@ -34,7 +34,7 @@ n_y\\
 n_z
 \end{pmatrix},
 \qquad
-\|n\|=1,
+\norm{n}=1,
 $$
 and put
 $$

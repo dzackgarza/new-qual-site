@@ -26,12 +26,12 @@ audit:
 ::: {.problem}
 Let $W$ be the subset of the space $C[0,1]$ of real-valued, continuous functions on $[0,1]$ satisfying the conditions:
 $$
-|f(x) - f(y)| \le |x - y| \quad (x, y \in [0,1]) \qquad \int_0^1 f(x)^2\,dx = 1
+\abs{f(x) - f(y)} \le \abs{x - y} \quad (x, y \in [0,1]) \qquad \int_0^1 f(x)^2\,dx = 1
 $$
 
-(A) Prove that $W$ is uniformly bounded, i.e., there exists $M > 0$ such that $|f(x)| \leq M$ for all $x \in [0,1]$. Hint: Show first that $|f(0)| \leq 2$ for all $f \in W$.
+(A) Prove that $W$ is uniformly bounded, i.e., there exists $M > 0$ such that $\abs{f(x)} \leq M$ for all $x \in [0,1]$. Hint: Show first that $\abs{f(0)} \leq 2$ for all $f \in W$.
 
-(B) Prove that $W$ is a compact subset of $C[0,1]$ under the sup norm $\|f\|_\infty = \sup_{x \in [0,1]} |f(x)|$.
+(B) Prove that $W$ is a compact subset of $C[0,1]$ under the sup norm $\norm{f}_\infty = \sup_{x \in [0,1]} \abs{f(x)}$.
 :::
 
 ::: {.solution}
@@ -42,13 +42,13 @@ $$
 
 For every $f\in W$ and every $x\in[0,1]$,
 $$
-|f(x)-f(0)|\le x,
+\abs{f(x)-f(0)}\le x,
 $$
 and hence
 $$
-|f(x)|
+\abs{f(x)}
 \le
-|f(0)|+1.
+\abs{f(0)}+1.
 $$
 
 
@@ -56,9 +56,9 @@ $$
 
 The defining inequality gives
 $$
-|f(x)-f(0)|
+\abs{f(x)-f(0)}
 \le
-|x-0|
+\abs{x-0}
 =x.
 $$
 Since
@@ -67,11 +67,11 @@ x\le1,
 $$
 the triangle inequality gives
 $$
-|f(x)|
+\abs{f(x)}
 \le
-|f(0)|+|f(x)-f(0)|
+\abs{f(0)}+\abs{f(x)-f(0)}
 \le
-|f(0)|+1.
+\abs{f(0)}+1.
 $$
 
 :::
@@ -82,7 +82,7 @@ $$
 
 For every $f\in W$,
 $$
-\boxed{|f(0)|\le2}.
+\boxed{\abs{f(0)}\le2}.
 $$
 
 
@@ -90,7 +90,7 @@ $$
 
 Suppose instead that
 $$
-|f(0)|>2.
+\abs{f(0)}>2.
 $$
 Then for every
 $$
@@ -98,11 +98,11 @@ x\in[0,1],
 $$
 step [](#s1-1){.pf-ref} gives
 $$
-|f(x)|
+\abs{f(x)}
 \ge
-|f(0)|-|f(x)-f(0)|
+\abs{f(0)}-\abs{f(x)-f(0)}
 \ge
-|f(0)|-1
+\abs{f(0)}-1
 >
 1.
 $$
@@ -121,7 +121,7 @@ $$
 $$
 Hence
 $$
-|f(0)|\le2.
+\abs{f(0)}\le2.
 $$
 
 :::
@@ -132,7 +132,7 @@ $$
 
 The family $W$ is uniformly bounded; for example,
 $$
-\boxed{|f(x)|\le3}
+\boxed{\abs{f(x)}\le3}
 $$
 for every $f\in W$ and every $x\in[0,1]$.
 
@@ -141,9 +141,9 @@ for every $f\in W$ and every $x\in[0,1]$.
 
 By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
-|f(x)|
+\abs{f(x)}
 \le
-|f(0)|+1
+\abs{f(0)}+1
 \le
 3.
 $$
@@ -166,12 +166,12 @@ The set $W$ is compact in $C[0,1]$ under the supremum norm.
 ::: pf-proof
 
 By step [](#s1-3){.pf-ref}, $W$ is uniformly bounded.
-Every $f\in W$ satisfies $|f(x)-f(y)|\le|x-y|$, so for $\varepsilon>0$ the choice $\delta=\varepsilon$ works for all $f\in W$ at once; thus $W$ is equicontinuous.
+Every $f\in W$ satisfies $\abs{f(x)-f(y)}\le\abs{x-y}$, so for $\varepsilon>0$ the choice $\delta=\varepsilon$ works for all $f\in W$ at once; thus $W$ is equicontinuous.
 
 The set $W$ is closed.
 Let $f_n\in W$ with $f_n\to f$ uniformly.
-For fixed $x,y$, letting $n\to\infty$ in $|f_n(x)-f_n(y)|\le|x-y|$ gives $|f(x)-f(y)|\le|x-y|$.
-Also $|f_n^2-f^2|=|f_n-f|\,|f_n+f|\le 6\|f_n-f\|_\infty$ on $[0,1]$, because $|f_n|\le3$ and hence $|f|\le3$; so $f_n^2\to f^2$ uniformly and
+For fixed $x,y$, letting $n\to\infty$ in $\abs{f_n(x)-f_n(y)}\le\abs{x-y}$ gives $\abs{f(x)-f(y)}\le\abs{x-y}$.
+Also $\abs{f_n^2-f^2}=\abs{f_n-f}\,\abs{f_n+f}\le 6\norm{f_n-f}_\infty$ on $[0,1]$, because $\abs{f_n}\le3$ and hence $\abs{f}\le3$; so $f_n^2\to f^2$ uniformly and
 $$
 \int_0^1f^2=\lim_{n\to\infty}\int_0^1f_n^2=1.
 $$

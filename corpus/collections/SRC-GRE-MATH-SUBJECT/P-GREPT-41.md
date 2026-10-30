@@ -63,11 +63,11 @@ h^{(n)}(x)=P_n(1/x)e^{-1/x^2}
 $$
 for a polynomial $P_n$. For every integer $N\ge0$,
 $$
-\lim_{x\to0}|x|^{-N}e^{-1/x^2}=0,
+\lim_{x\to0}\abs{x}^{-N}e^{-1/x^2}=0,
 $$
 because with $t=1/x^2$ this becomes a constant power of $t$ times $e^{-t}$
 as $t\to\infty$. Hence every such derivative tends to $0$ at the origin.
-The same estimate, with one additional factor $|x|^{-1}$, shows that the
+The same estimate, with one additional factor $\abs{x}^{-1}$, shows that the
 difference quotient of each extended derivative at $0$ also tends to $0$.
 Inductively, each derivative therefore extends differentiably across $0$ with
 derivative $0$, proving that $h$ is smooth and flat at $0$.

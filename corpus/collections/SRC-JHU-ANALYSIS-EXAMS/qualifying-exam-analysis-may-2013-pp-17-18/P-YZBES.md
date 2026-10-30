@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is only one solution in the unit disc $\{z : |z| < 1\}$ and there are three solutions on the annulus $\{z : 1 < |z| < 2\}$ (counting multiplicities) for the equation $z^4 - 6z + 3 = 0$.
+Prove that there is only one solution in the unit disc $\{z : \abs{z} < 1\}$ and there are three solutions on the annulus $\{z : 1 < \abs{z} < 2\}$ (counting multiplicities) for the equation $z^4 - 6z + 3 = 0$.
 :::
 
 ::: {.solution}
@@ -35,20 +35,20 @@ Put $p(z)=z^4-6z+3$.
 
 ::: {.pf-step #s1}
 
-There is exactly one zero in $|z|<1$, counted with multiplicity.
+There is exactly one zero in $\abs{z}<1$, counted with multiplicity.
 
 ::: pf-proof
 
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|z^4+3|\leq1+3=4<6=|-6z|.
+\abs{z^4+3}\leq1+3=4<6=\abs{-6z}.
 $$
 Both $p$ and $-6z$ are holomorphic on a neighborhood of
 the closed disk. Rouché's theorem therefore gives the same
 number of interior zeros, counted with multiplicity, for
 these two functions [@SS03]. The polynomial $-6z$ has
 exactly one simple zero. Thus the count for $p$ is one.
-Moreover, $|p(z)|\geq6-4>0$ on $|z|=1$, so this circle
+Moreover, $\abs{p(z)}\geq6-4>0$ on $\abs{z}=1$, so this circle
 contains no zero of $p$.
 
 :::
@@ -57,17 +57,17 @@ contains no zero of $p$.
 
 ::: pf-step
 
-There are exactly three zeros in $1<|z|<2$, counted with multiplicity.
+There are exactly three zeros in $1<\abs{z}<2$, counted with multiplicity.
 
 ::: pf-proof
 
-On $|z|=2$,
+On $\abs{z}=2$,
 $$
-|-6z+3|\leq12+3=15<16=|z^4|.
+\abs{-6z+3}\leq12+3=15<16=\abs{z^4}.
 $$
 Rouché's theorem, now comparing $p$ with $z^4$, gives
-four zeros in $|z|<2$, counted with multiplicity [@SS03].
-The strict inequality also excludes zeros on $|z|=2$.
+four zeros in $\abs{z}<2$, counted with multiplicity [@SS03].
+The strict inequality also excludes zeros on $\abs{z}=2$.
 Step [](#s1){.pf-ref} accounts for one of these four zeros in the unit
 disk and excludes zeros on the intervening unit circle.
 Consequently the open annulus contains exactly $4-1=3$

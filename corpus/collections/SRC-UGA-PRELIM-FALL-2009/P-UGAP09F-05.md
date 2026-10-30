@@ -103,10 +103,10 @@ g(a+h,b+k)-g(a,b)
 $$
 Subtracting $g_x(a,b)h+g_y(a,b)k$ gives an error $E(h,k)$ satisfying
 $$
-\frac{|E(h,k)|}{\sqrt{h^2+k^2}}
+\frac{\abs{E(h,k)}}{\sqrt{h^2+k^2}}
 \le
-|g_x(a+\theta h,b+k)-g_x(a,b)|
-+|g_y(a,b+\eta k)-g_y(a,b)|.
+\abs{g_x(a+\theta h,b+k)-g_x(a,b)}
++\abs{g_y(a,b+\eta k)-g_y(a,b)}.
 $$
 As $(h,k)\to(0,0)$, both terms on the right tend to $0$ by continuity of the partial derivatives at $P$. Hence
 $$

@@ -27,7 +27,7 @@ audit:
 Suppose $\lambda \in \CC$ and $f \in L^1(m) = L^1(\RR, m)$ satisfies $f * f * f(x) = \lambda f * f(x)$ for $m$-a.e. $x$.
 Show $f(x) = 0$ for $m$-a.e. $x$.
 
-Recall that $\|f * g\|_{L^1(m)} \leq \|f\|_{L^1(m)} \|g\|_{L^1(m)}$ for all $f, g \in L^1(m)$ and therefore $f * f$ and $f * f * f$ are still in $L^1(m)$.
+Recall that $\norm{f * g}_{L^1(m)} \leq \norm{f}_{L^1(m)} \norm{g}_{L^1(m)}$ for all $f, g \in L^1(m)$ and therefore $f * f$ and $f * f * f$ are still in $L^1(m)$.
 :::
 
 ::: {.solution}
@@ -79,7 +79,7 @@ must be constant.
 By the Riemann--Lebesgue lemma,
 $$
 \widehat f(\xi)\longrightarrow0
-\qquad(|\xi|\to\infty).
+\qquad(\abs{\xi}\to\infty).
 $$
 Therefore the only possible constant is $0$, so again
 $$

@@ -26,14 +26,14 @@ $$
 (b) Let $I$ be the line segment from $p$ to $q$ contained in $G$, and suppose that $f$ is differentiable at every point of $I$.
 Show that for some $c\in I$,
 $$
-\|f(q)-f(p)\|_2
+\norm{f(q)-f(p)}_2
 \leq
-\|f'(c)\|\,\|q-p\|_2.
+\norm{f'(c)}\,\norm{q-p}_2.
 $$
 
 Hint: let $w$ be a unit vector such that
 $$
-\|f(q)-f(p)\|_2=(f(q)-f(p))\mathbin{\cdot}w.
+\norm{f(q)-f(p)}_2=(f(q)-f(p))\mathbin{\cdot}w.
 $$
 :::
 
@@ -55,9 +55,9 @@ such that
 $$
 \lim_{h\to0}
 \frac{
-\|f(x_0+h)-f(x_0)-Lh\|_2
+\norm{f(x_0+h)-f(x_0)-Lh}_2
 }{
-\|h\|_2
+\norm{h}_2
 }
 =0.
 $$
@@ -74,11 +74,11 @@ The linear map $L$, if it exists, is unique.
 
 Indeed, if both $L_1$ and $L_2$ satisfy the limit condition, then for any nonzero $u\in\RR^n$ and scalar $t\ne0$,
 $$
-\|(L_1-L_2)u\|
+\norm{(L_1-L_2)u}
 \le
-\frac{\|f(x_0+tu)-f(x_0)-tL_1u\|}{|t|}
+\frac{\norm{f(x_0+tu)-f(x_0)-tL_1u}}{\abs{t}}
 +
-\frac{\|f(x_0+tu)-f(x_0)-tL_2u\|}{|t|}.
+\frac{\norm{f(x_0+tu)-f(x_0)-tL_2u}}{\abs{t}}.
 $$
 Letting $t\to0$ gives
 $$
@@ -106,7 +106,7 @@ $$
 
 The left-hand side is
 $$
-\|f(q)-f(p)\|_2=0,
+\norm{f(q)-f(p)}_2=0,
 $$
 while the right-hand side is nonnegative.
 
@@ -124,17 +124,17 @@ Define
 $$
 w=
 \frac{f(q)-f(p)}
-{\|f(q)-f(p)\|_2}.
+{\norm{f(q)-f(p)}_2}.
 $$
 Then
 $$
-\|w\|_2=1
+\norm{w}_2=1
 $$
 and
 $$
 (f(q)-f(p))\cdot w
 =
-\|f(q)-f(p)\|_2.
+\norm{f(q)-f(p)}_2.
 $$
 
 
@@ -150,12 +150,12 @@ $$
 (f(q)-f(p))\cdot w
 &=
 \frac{
-\|f(q)-f(p)\|_2^2
+\norm{f(q)-f(p)}_2^2
 }{
-\|f(q)-f(p)\|_2
+\norm{f(q)-f(p)}_2
 }\\
 &=
-\|f(q)-f(p)\|_2.
+\norm{f(q)-f(p)}_2.
 \end{aligned}
 $$
 
@@ -267,9 +267,9 @@ $$
 
 One has
 $$
-\|f(q)-f(p)\|_2
+\norm{f(q)-f(p)}_2
 \le
-\|f'(c)\|\,\|q-p\|_2.
+\norm{f'(c)}\,\norm{q-p}_2.
 $$
 
 
@@ -278,7 +278,7 @@ $$
 By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref},
 $$
 \begin{aligned}
-\|f(q)-f(p)\|_2
+\norm{f(q)-f(p)}_2
 &=
 (f(q)-f(p))\cdot w\\
 &=
@@ -291,17 +291,17 @@ By Cauchy--Schwarz,
 $$
 \bigl(f'(c)(q-p)\bigr)\cdot w
 \le
-\|f'(c)(q-p)\|_2\,\|w\|_2.
+\norm{f'(c)(q-p)}_2\,\norm{w}_2.
 $$
 Since
 $$
-\|w\|_2=1,
+\norm{w}_2=1,
 $$
 and by the definition of the operator norm,
 $$
-\|f'(c)(q-p)\|_2
+\norm{f'(c)(q-p)}_2
 \le
-\|f'(c)\|\,\|q-p\|_2.
+\norm{f'(c)}\,\norm{q-p}_2.
 $$
 Combining the inequalities proves the claim.
 

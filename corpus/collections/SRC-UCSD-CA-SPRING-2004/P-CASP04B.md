@@ -13,21 +13,21 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f \in \mathcal{O}(\DD)$ and assume that $|f(z)| \leq 1$ in $\DD$.
-Show that $$\frac{|f(0)| - |z|}{1 + |f(0)||z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)||z|}.$$
+Let $f \in \mathcal{O}(\DD)$ and assume that $\abs{f(z)} \leq 1$ in $\DD$.
+Show that $$\frac{\abs{f(0)} - \abs{z}}{1 + \abs{f(0)}\abs{z}} \leq \abs{f(z)} \leq \frac{\abs{f(0)} + \abs{z}}{1 - \abs{f(0)}\abs{z}}.$$
 :::
 
 ::: {.solution}
 Put $a=f(0)$. If $f$ is constant the inequalities are immediate. Otherwise
 $f(\DD)\subset\DD$, and Schwarz--Pick applied at $0$ gives
 $$
-\left|\frac{f(z)-a}{1-\overline a f(z)}\right|\le |z|.
+\abs{\frac{f(z)-a}{1-\overline a f(z)}}\le \abs{z}.
 $$
-Set $A=|a|$, $r=|z|$, and $s=|f(z)|$. Then
+Set $A=\abs{a}$, $r=\abs{z}$, and $s=\abs{f(z)}$. Then
 $$
-|f(z)-a|\le r\,|1-\overline a f(z)|\le r(1+As).
+\abs{f(z)-a}\le r\,\abs{1-\overline a f(z)}\le r(1+As).
 $$
-Using $A-s\le|a-f(z)|$ gives
+Using $A-s\le\abs{a-f(z)}$ gives
 $$
 A-s\le r(1+As),
 $$
@@ -35,7 +35,7 @@ hence
 $$
 s\ge\frac{A-r}{1+Ar}.
 $$
-Likewise $s-A\le|f(z)-a|$ gives
+Likewise $s-A\le\abs{f(z)-a}$ gives
 $$
 s-A\le r(1+As),
 $$

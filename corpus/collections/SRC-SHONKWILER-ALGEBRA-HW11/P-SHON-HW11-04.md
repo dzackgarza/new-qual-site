@@ -178,7 +178,7 @@ $$
 
 The subgroup $V_4$ is contained in $A_4$, and
 $$
-|A_4/V_4|=\frac{12}{4}=3.
+\cardinality{A_4/V_4}=\frac{12}{4}=3.
 $$
 Every group of prime order is cyclic.
 

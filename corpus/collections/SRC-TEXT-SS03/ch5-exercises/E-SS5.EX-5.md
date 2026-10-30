@@ -21,7 +21,7 @@ audit:
 5. Show that if $\alpha > 1$ , then
 
 $$
-F _ {\alpha} (z) = \int_ {- \infty} ^ {\infty} e ^ {- | t | ^ {\alpha}} e ^ {2 \pi i z t} d t
+F _ {\alpha} (z) = \int_ {- \infty} ^ {\infty} e ^ {- \abs{ t } ^ {\alpha}} e ^ {2 \pi i z t} d t
 $$
 
 is an entire function of growth order $\alpha / ( \alpha - 1 )$
@@ -29,10 +29,10 @@ is an entire function of growth order $\alpha / ( \alpha - 1 )$
 [Hint: Show that
 
 $$
-- \frac {| t | ^ {\alpha}}{2} + 2 \pi | z | | t | \leq c | z | ^ {\alpha / (\alpha - 1)}
+- \frac {\abs{ t } ^ {\alpha}}{2} + 2 \pi \abs{ z } \abs{ t } \leq c \abs{ z } ^ {\alpha / (\alpha - 1)}
 $$
 
-by considering the two cases $| t | ^ { \alpha - 1 } \leq A | z | { \mathrm { ~ a n d ~ } } | t | ^ { \alpha - 1 } \geq A | z | .$ , for an appropriate constant A.]
+by considering the two cases $\abs{ t } ^ { \alpha - 1 } \leq A \abs{ z } { \mathrm { ~ a n d ~ } } \abs{ t } ^ { \alpha - 1 } \geq A \abs{ z } .$ , for an appropriate constant A.]
 :::
 
 ::: {.solution}
@@ -49,12 +49,12 @@ Holomorphicity of $F_\alpha(z)$:
 
 For any $z = x + iy \in \CC$ and $t \in \RR$:
 $$
-\left| e^{-|t|^\alpha} e^{2\pi i z t} \right| = e^{-|t|^\alpha} e^{-2\pi y t} \le e^{-|t|^\alpha + 2\pi |z| |t|}.
+\abs{ e^{-\abs{t}^\alpha} e^{2\pi i z t} } = e^{-\abs{t}^\alpha} e^{-2\pi y t} \le e^{-\abs{t}^\alpha + 2\pi \abs{z} \abs{t}}.
 $$
 
 ::: pf-proof
 
-$|e^{2\pi i (x+iy)t}| = e^{-2\pi y t} \le e^{2\pi |z| |t|}$.
+$\abs{e^{2\pi i (x+iy)t}} = e^{-2\pi y t} \le e^{2\pi \abs{z} \abs{t}}$.
 
 :::
 
@@ -62,7 +62,7 @@ $|e^{2\pi i (x+iy)t}| = e^{-2\pi y t} \le e^{2\pi |z| |t|}$.
 
 ::: pf-step
 
-Since $\alpha > 1$, as $|t| \to \infty$ the term $-|t|^\alpha$ dominates $2\pi |z| |t|$, ensuring that for any compact subset $K \subset \CC$, the integrand and its $z$-derivative $2\pi i t e^{-|t|^\alpha} e^{2\pi i z t}$ are uniformly dominated by an $L^1(\RR)$ function.
+Since $\alpha > 1$, as $\abs{t} \to \infty$ the term $-\abs{t}^\alpha$ dominates $2\pi \abs{z} \abs{t}$, ensuring that for any compact subset $K \subset \CC$, the integrand and its $z$-derivative $2\pi i t e^{-\abs{t}^\alpha} e^{2\pi i z t}$ are uniformly dominated by an $L^1(\RR)$ function.
 By Morera’s Theorem and Fubini’s Theorem, $F_\alpha(z)$ is an entire function.
 
 ::: pf-proof
@@ -86,9 +86,9 @@ Upper bound on the order of growth:
 ::: pf-step
 
 Let $\beta = \frac{\alpha}{\alpha - 1}$, so that $\frac{1}{\alpha} + \frac{1}{\beta} = 1$ are conjugate exponents.
-By Young’s inequality $ab \le \frac{a^\alpha}{\alpha} + \frac{b^\beta}{\beta}$ with $a = 2^{1/\alpha} |t|$ and $b = 2^{-1/\alpha} (2\pi |z|)$:
+By Young’s inequality $ab \le \frac{a^\alpha}{\alpha} + \frac{b^\beta}{\beta}$ with $a = 2^{1/\alpha} \abs{t}$ and $b = 2^{-1/\alpha} (2\pi \abs{z})$:
 $$
-2\pi |z| |t| = (2^{1/\alpha} |t|) (2^{-1/\alpha} 2\pi |z|) \le \frac{2 |t|^\alpha}{\alpha} + \frac{(2^{-1/\alpha} 2\pi |z|)^\beta}{\beta} \le \frac{|t|^\alpha}{2} + c |z|^\beta,
+2\pi \abs{z} \abs{t} = (2^{1/\alpha} \abs{t}) (2^{-1/\alpha} 2\pi \abs{z}) \le \frac{2 \abs{t}^\alpha}{\alpha} + \frac{(2^{-1/\alpha} 2\pi \abs{z})^\beta}{\beta} \le \frac{\abs{t}^\alpha}{2} + c \abs{z}^\beta,
 $$
 where $c = \frac{(2\pi)^\beta}{\beta 2^{\beta/\alpha}} > 0$.
 
@@ -102,12 +102,12 @@ Young's inequality for conjugate exponents.
 
 ::: pf-step
 
-Rearranging gives $-|t|^\alpha + 2\pi |z| |t| \le -\frac{|t|^\alpha}{2} + c |z|^\beta$.
+Rearranging gives $-\abs{t}^\alpha + 2\pi \abs{z} \abs{t} \le -\frac{\abs{t}^\alpha}{2} + c \abs{z}^\beta$.
 Integrating over $\RR$:
 $$
-|F_\alpha(z)| \le \int_{-\infty}^\infty e^{-|t|^\alpha + 2\pi |z| |t|} \, dt \le e^{c |z|^\beta} \int_{-\infty}^\infty e^{-|t|^\alpha / 2} \, dt = C_0 e^{c |z|^\beta},
+\abs{F_\alpha(z)} \le \int_{-\infty}^\infty e^{-\abs{t}^\alpha + 2\pi \abs{z} \abs{t}} \, dt \le e^{c \abs{z}^\beta} \int_{-\infty}^\infty e^{-\abs{t}^\alpha / 2} \, dt = C_0 e^{c \abs{z}^\beta},
 $$
-where $C_0 = \int_{-\infty}^\infty e^{-|t|^\alpha / 2} \, dt < \infty$.
+where $C_0 = \int_{-\infty}^\infty e^{-\abs{t}^\alpha / 2} \, dt < \infty$.
 Thus the growth order $\rho(F_\alpha) \le \beta = \frac{\alpha}{\alpha - 1}$.
 
 ::: pf-proof
@@ -132,7 +132,7 @@ Lower bound on the order of growth:
 
 Evaluate $F_\alpha$ on the negative imaginary axis $z = -i y$ for $y > 0$:
 $$
-F_\alpha(-iy) = \int_{-\infty}^\infty e^{-|t|^\alpha + 2\pi y t} \, dt \ge \int_0^\infty e^{-t^\alpha + 2\pi y t} \, dt.
+F_\alpha(-iy) = \int_{-\infty}^\infty e^{-\abs{t}^\alpha + 2\pi y t} \, dt \ge \int_0^\infty e^{-t^\alpha + 2\pi y t} \, dt.
 $$
 
 ::: pf-proof

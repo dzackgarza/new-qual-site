@@ -106,7 +106,7 @@ $$
 
 Molien's formula gives
 $$
-M_G(t)=\frac1{|G|}\sum_{g\in G}\frac1{\det(I-tg)}.
+M_G(t)=\frac1{\cardinality{G}}\sum_{g\in G}\frac1{\det(I-tg)}.
 $$
 The identity contributes $(1-t)^{-3}$.
 By step [](#s2){.pf-ref}, each of the three nonidentity elements contributes
@@ -222,7 +222,7 @@ $$
 at the identity this sum is $3$, while at every nonidentity element exactly one of the three nontrivial characters is $1$ and the other two are $-1$, so the sum is $-1$.
 Thus
 $$
-V|_G\cong\chi_1\oplus\chi_2\oplus\chi_3.
+V\restrict_G\cong\chi_1\oplus\chi_2\oplus\chi_3.
 $$
 The module $W$ has exactly the same three nontrivial characters by the sign actions in part (b). Hence the two representations are isomorphic.
 
@@ -232,7 +232,7 @@ The module $W$ has exactly the same three nontrivial characters by the sign acti
 
 ::: pf-step
 
-Consequently, after choosing an eigenbasis $z_1,z_2,z_3$ for $V|_G$ corresponding to the three nontrivial characters,
+Consequently, after choosing an eigenbasis $z_1,z_2,z_3$ for $V\restrict_G$ corresponding to the three nontrivial characters,
 $$
 k[x_1,x_2,x_3]^G
 \cong

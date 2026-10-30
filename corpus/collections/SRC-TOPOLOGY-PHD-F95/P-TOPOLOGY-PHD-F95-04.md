@@ -30,7 +30,7 @@ audit:
 
 ::: {.problem}
 Let $D$ be the closed unit disk in the complex plane.
-Let $\sim$ be the equivalence relation on $D$ defined by $z_1\sim z_2$ if and only if $z_1=z_2$ or $|z_1|=|z_2|<1$.
+Let $\sim$ be the equivalence relation on $D$ defined by $z_1\sim z_2$ if and only if $z_1=z_2$ or $\abs{z_1}=\abs{z_2}<1$.
 Is the quotient topological space Hausdorff?
 (Prove your assertion.)
 :::
@@ -53,12 +53,12 @@ Distinct points of the boundary circle determine distinct points of the quotient
 
 Choose distinct points
 $$
-u,v\in S^1=\{z\in\CC:|z|=1\}.
+u,v\in S^1=\{z\in\CC:\abs{z}=1\}.
 $$
 By definition of the relation, two distinct points can be equivalent only when their common modulus is strictly less than $1$.
 Since
 $$
-|u|=|v|=1
+\abs{u}=\abs{v}=1
 \quad\text{and}\quad
 u\ne v,
 $$
@@ -105,7 +105,7 @@ $$
 For each such $t$, the radius $1-t$ is strictly less than $1$.
 Therefore every point $z\in D$ satisfying
 $$
-|z|=1-t
+\abs{z}=1-t
 $$
 is equivalent to $(1-t)u$ and, by saturation, also belongs to $U$.
 
@@ -149,7 +149,7 @@ $$
 $$
 Then
 $$
-|(1-t)u|=|(1-t)v|=1-t<1,
+\abs{(1-t)u}=\abs{(1-t)v}=1-t<1,
 $$
 so
 $$

@@ -23,7 +23,7 @@ Fix $a=e^{i\theta_0}\in A$. Choose a closed arc $J\subset A$ whose interior
 contains $a$. By continuity, for every $\varepsilon>0$ there is a smaller arc
 $J_0\subset J$ about $a$ on which
 $$
-|f(e^{it})-f(a)|<\varepsilon.
+\abs{f(e^{it})-f(a)}<\varepsilon.
 $$
 Since the Poisson kernel has integral $2\pi$,
 $$

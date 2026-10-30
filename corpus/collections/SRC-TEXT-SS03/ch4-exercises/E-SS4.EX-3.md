@@ -25,13 +25,13 @@ audit:
 3. Show, by contour integration, that if $a > 0$ and $\xi \in \RR$ then
 
 $$
-\frac {1}{\pi} \int_ {- \infty} ^ {\infty} \frac {a}{a ^ {2} + x ^ {2}} e ^ {- 2 \pi i x \xi} d x = e ^ {- 2 \pi a | \xi |},
+\frac {1}{\pi} \int_ {- \infty} ^ {\infty} \frac {a}{a ^ {2} + x ^ {2}} e ^ {- 2 \pi i x \xi} d x = e ^ {- 2 \pi a \abs{ \xi }},
 $$
 
 and check that
 
 $$
-\int_ {- \infty} ^ {\infty} e ^ {- 2 \pi a | \xi |} e ^ {2 \pi i \xi x} d \xi = \frac {1}{\pi} \frac {a}{a ^ {2} + x ^ {2}}.
+\int_ {- \infty} ^ {\infty} e ^ {- 2 \pi a \abs{ \xi }} e ^ {2 \pi i \xi x} d \xi = \frac {1}{\pi} \frac {a}{a ^ {2} + x ^ {2}}.
 $$
 :::
 
@@ -42,7 +42,7 @@ I(\xi)=\int_{-\infty}^{\infty}\frac{a}{a^2+x^2}e^{-2\pi i x\xi}\,dx.
 $$
 For $\xi>0$, close the contour in the lower half-plane. Since
 $$
-|e^{-2\pi i z\xi}|=e^{2\pi \xi\Im z},
+\abs{e^{-2\pi i z\xi}}=e^{2\pi \xi\Im z},
 $$
 the exponential decays there, and the semicircular contribution tends to $0$. The contour is clockwise and contains only the pole $z=-ia$. Its residue is
 $$
@@ -62,13 +62,13 @@ I(\xi)=\pi e^{2\pi a\xi}.
 $$
 At $\xi=0$, direct integration gives $I(0)=\pi$. Therefore
 $$
-\frac1\pi I(\xi)=e^{-2\pi a|\xi|}.
+\frac1\pi I(\xi)=e^{-2\pi a\abs{\xi}}.
 $$
 
 For the inverse transform, split at $0$:
 $$
 \begin{aligned}
-\int_{-\infty}^{\infty}e^{-2\pi a|\xi|}e^{2\pi i\xi x}\,d\xi
+\int_{-\infty}^{\infty}e^{-2\pi a\abs{\xi}}e^{2\pi i\xi x}\,d\xi
 &=\int_0^\infty e^{-2\pi(a-ix)\xi}\,d\xi
  +\int_0^\infty e^{-2\pi(a+ix)\xi}\,d\xi\\
 &=\frac1{2\pi(a-ix)}+\frac1{2\pi(a+ix)}\\

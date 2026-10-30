@@ -57,7 +57,7 @@ audit:
 
 ::: pf-step
 
-$\int \frac{x^3 + 4x^2}{x^2 + 4x + 3} \, dx = \frac{1}{2}x^2 + \frac{3}{2}\ln|x+1| - \frac{9}{2}\ln|x+3| + C$.
+$\int \frac{x^3 + 4x^2}{x^2 + 4x + 3} \, dx = \frac{1}{2}x^2 + \frac{3}{2}\ln\abs{x+1} - \frac{9}{2}\ln\abs{x+3} + C$.
 
 ::: pf-proof
 
@@ -77,7 +77,7 @@ Setting $x = -3 \implies 9 = -2B \implies B = -9/2$.
 
 ::: pf-step
 
-Integrating: $\int \left(x + \frac{3/2}{x+1} - \frac{9/2}{x+3}\right) dx = \frac{1}{2}x^2 + \frac{3}{2}\ln|x+1| - \frac{9}{2}\ln|x+3| + C$.
+Integrating: $\int \left(x + \frac{3/2}{x+1} - \frac{9/2}{x+3}\right) dx = \frac{1}{2}x^2 + \frac{3}{2}\ln\abs{x+1} - \frac{9}{2}\ln\abs{x+3} + C$.
 
 :::
 
@@ -87,7 +87,7 @@ Integrating: $\int \left(x + \frac{3/2}{x+1} - \frac{9/2}{x+3}\right) dx = \frac
 
 ::: pf-step
 
-$\int \frac{2x^3 + 2x^2 - 9x - 1}{x^2 + x - 6} \, dx = x^2 + 2\ln|x+3| + \ln|x-2| + C$.
+$\int \frac{2x^3 + 2x^2 - 9x - 1}{x^2 + x - 6} \, dx = x^2 + 2\ln\abs{x+3} + \ln\abs{x-2} + C$.
 
 ::: pf-proof
 
@@ -107,7 +107,7 @@ Setting $x = -3 \implies -10 = -5A \implies A = 2$.
 
 ::: pf-step
 
-Integrating: $\int \left(2x + \frac{2}{x+3} + \frac{1}{x-2}\right) dx = x^2 + 2\ln|x+3| + \ln|x-2| + C$.
+Integrating: $\int \left(2x + \frac{2}{x+3} + \frac{1}{x-2}\right) dx = x^2 + 2\ln\abs{x+3} + \ln\abs{x-2} + C$.
 
 :::
 
@@ -117,7 +117,7 @@ Integrating: $\int \left(2x + \frac{2}{x+3} + \frac{1}{x-2}\right) dx = x^2 + 2\
 
 ::: pf-step
 
-$\int \frac{3x^3 - 12x^2 + 15x - 5}{(x-2)^2} \, dx = \frac{3}{2}x^2 + 3\ln|x-2| - \frac{1}{x-2} + C$.
+$\int \frac{3x^3 - 12x^2 + 15x - 5}{(x-2)^2} \, dx = \frac{3}{2}x^2 + 3\ln\abs{x-2} - \frac{1}{x-2} + C$.
 
 ::: pf-proof
 
@@ -141,7 +141,7 @@ Dividing by $u^2$: $3u + 6 + \frac{3}{u} + \frac{1}{u^2}$.
 
 ::: pf-step
 
-Integrating: $\frac{3}{2}u^2 + 6u + 3\ln|u| - \frac{1}{u} + C = \frac{3}{2}(x-2)^2 + 6(x-2) + 3\ln|x-2| - \frac{1}{x-2} + C = \frac{3}{2}x^2 + 3\ln|x-2| - \frac{1}{x-2} + C'$.
+Integrating: $\frac{3}{2}u^2 + 6u + 3\ln\abs{u} - \frac{1}{u} + C = \frac{3}{2}(x-2)^2 + 6(x-2) + 3\ln\abs{x-2} - \frac{1}{x-2} + C = \frac{3}{2}x^2 + 3\ln\abs{x-2} - \frac{1}{x-2} + C'$.
 
 :::
 

@@ -69,7 +69,7 @@ $$
 $$
 and therefore
 $$
-|\FF_3(\alpha)|=3^3=27.
+\cardinality{\FF_3(\alpha)}=3^3=27.
 $$
 
 ::: pf-proof

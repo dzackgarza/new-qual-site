@@ -90,7 +90,7 @@ $$
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref} there is $C$ with $|s_n|\le C$. Hence $|s_Nr^N|\le Cr^N\to0$ and the series $\sum s_nr^n$ converges absolutely. Letting $N\to\infty$ in step [](#s2){.pf-ref} gives the identity.
+By step [](#s1){.pf-ref} there is $C$ with $\abs{s_n}\le C$. Hence $\abs{s_Nr^N}\le Cr^N\to0$ and the series $\sum s_nr^n$ converges absolutely. Letting $N\to\infty$ in step [](#s2){.pf-ref} gives the identity.
 
 :::
 
@@ -124,15 +124,15 @@ $$
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Choose $N$ so that $|s_n-s|<\varepsilon$ for every $n\ge N$. Then
+Fix $\varepsilon>0$. Choose $N$ so that $\abs{s_n-s}<\varepsilon$ for every $n\ge N$. Then
 $$
 \begin{aligned}
-(1-r)\sum_{n=1}^{\infty}|s_n-s|r^n
+(1-r)\sum_{n=1}^{\infty}\abs{s_n-s}r^n
 &\le
-(1-r)\sum_{n=1}^{N-1}|s_n-s|r^n
+(1-r)\sum_{n=1}^{N-1}\abs{s_n-s}r^n
 +\varepsilon(1-r)\sum_{n=N}^{\infty}r^n\\
 &\le
-(1-r)\sum_{n=1}^{N-1}|s_n-s|
+(1-r)\sum_{n=1}^{N-1}\abs{s_n-s}
 +\varepsilon.
 \end{aligned}
 $$

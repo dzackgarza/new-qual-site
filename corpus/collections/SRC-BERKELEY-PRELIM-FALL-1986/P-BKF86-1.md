@@ -17,7 +17,7 @@ The Arzelà–Ascoli theorem asserts that a sequence $\{f_n\}$ of continuous rea
 
 (i) $\Omega$ is compact,
 
-(ii) $\sup_n\|f_n\|<\infty$, where $\|f_n\|=\sup\{|f_n(x)| : x\in\Omega\}$,
+(ii) $\sup_n\norm{f_n}<\infty$, where $\norm{f_n}=\sup\{\abs{f_n(x)} : x\in\Omega\}$,
 
 (iii) the sequence is equicontinuous.
 

@@ -242,7 +242,7 @@ g
 $$
 on a punctured disk
 $$
-0<|z|<r
+0<\abs{z}<r
 $$
 such that
 $$
@@ -263,12 +263,12 @@ $$
 
 Integrate around the positively oriented circle
 $$
-|z|=\rho<r.
+\abs{z}=\rho<r.
 $$
 The left-hand side satisfies
 $$
 \frac1{2\pi i}
-\int_{|z|=\rho}
+\int_{\abs{z}=\rho}
 \frac{g'(z)}{g(z)}
 \,dz
 \in
@@ -278,7 +278,7 @@ by the argument principle.
 But the right-hand side gives
 $$
 \frac1{2\pi i}
-\int_{|z|=\rho}
+\int_{\abs{z}=\rho}
 \frac1{2z}
 \,dz
 =

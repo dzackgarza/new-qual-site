@@ -73,16 +73,16 @@ For $1<p<\infty$, $(L^p)^*=L^q$, so Step 1 is exactly weak convergence. For $p=1
 ::: pf
 
 ::: {.pf-step #p2-s1}
-$\|f_k\|_{L^p}^p = \int_{-\pi}^{\pi} |\sin(kx)|^p\, dx$ is constant in $k$ and nonzero.
+$\norm{f_k}_{L^p}^p = \int_{-\pi}^{\pi} \abs{\sin(kx)}^p\, dx$ is constant in $k$ and nonzero.
 
 ::: pf-proof
-by periodicity, $\int_{-\pi}^{\pi} |\sin(kx)|^p\, dx = \int_{-\pi}^{\pi} |\sin(x)|^p\, dx > 0$ (substitute $u = kx$ and use $2\pi$-periodicity).
+by periodicity, $\int_{-\pi}^{\pi} \abs{\sin(kx)}^p\, dx = \int_{-\pi}^{\pi} \abs{\sin(x)}^p\, dx > 0$ (substitute $u = kx$ and use $2\pi$-periodicity).
 :::
 
 :::
 
 ::: {.pf-step #p2-s2}
-Hence $\|f_k\|_{L^p} \not\to 0$.
+Hence $\norm{f_k}_{L^p} \not\to 0$.
 
 ::: pf-proof
 step [](#p2-s1){.pf-ref} shows the norm is a fixed positive constant.
@@ -94,7 +94,7 @@ step [](#p2-s1){.pf-ref} shows the norm is a fixed positive constant.
 Therefore $f_k$ does not converge strongly to $0$ in $L^p(X)$.
 
 ::: pf-proof
-strong convergence to $0$ would force $\|f_k\|_{L^p} \to 0$, contradicting step [](#p2-s2){.pf-ref}.
+strong convergence to $0$ would force $\norm{f_k}_{L^p} \to 0$, contradicting step [](#p2-s2){.pf-ref}.
 :::
 
 :::

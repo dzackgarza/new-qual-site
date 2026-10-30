@@ -57,7 +57,7 @@ v_p((np)!)
 $$
 Therefore a Sylow $p$-subgroup $P$ of $S_{np}$ has order
 $$
-\boxed{|P|=p^n.}
+\boxed{\cardinality{P}=p^n.}
 $$
 
 :::
@@ -73,7 +73,7 @@ Every nontrivial $P$-orbit on the $np$ letters has size exactly $p$.
 Let $\Omega$ be the set of $np$ letters on which $S_{np}$ acts. Since $P$ is
 a $p$-group, every orbit size is a power of $p$. But
 $$
-|\Omega|=np<p^2,
+\cardinality{\Omega}=np<p^2,
 $$
 so an orbit cannot have size $p^2$ or larger. Therefore every orbit has size
 either
@@ -103,7 +103,7 @@ $$
 every $p$-subgroup of $S_p$ has order at most $p$. Because the orbit is
 nontrivial, the image is nontrivial; hence
 $$
-|\rho_O(P)|=p.
+\cardinality{\rho_O(P)}=p.
 $$
 Thus $\rho_O(P)$ is cyclic.
 
@@ -137,7 +137,7 @@ permutation. Thus $\rho$ is injective.
 
 Each factor on the right has order $p$ by step [](#s3){.pf-ref}, so
 $$
-|P|\le p^k.
+\cardinality{P}\le p^k.
 $$
 Using step [](#s1){.pf-ref},
 $$

@@ -38,7 +38,7 @@ Consider the cases when $q$ does or does not divide $p-1$.
 :::
 
 ::: {.solution}
-Let $|G|=pq$ with primes $q<p$.
+Let $\cardinality{G}=pq$ with primes $q<p$.
 
 ::: pf
 
@@ -59,7 +59,7 @@ Since $q<p$, the possibility $n_p=q$ is impossible, hence $n_p=1$. Thus the Sylo
 Every such group is a semidirect product $C_p\rtimes C_q$.
 
 ::: pf-proof
-Let $Q$ be a Sylow $q$-subgroup. Then $P\cap Q=1$ and $|PQ|=pq$, so $G=PQ$. Since $P\trianglelefteq G$,
+Let $Q$ be a Sylow $q$-subgroup. Then $P\cap Q=1$ and $\cardinality{PQ}=pq$, so $G=PQ$. Since $P\trianglelefteq G$,
 $$
 G\cong P\rtimes Q\cong C_p\rtimes_\theta C_q,
 $$

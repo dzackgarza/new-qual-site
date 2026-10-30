@@ -75,19 +75,19 @@ Show that the norms do not tend to zero.
 For every integer $k\ge1$,
 $$
 \begin{aligned}
-\|f_k\|_p^p
-&=\int_{-\pi}^{\pi}|\sin(kx)|^p\,dx\\
-&=\frac1k\int_{-k\pi}^{k\pi}|\sin u|^p\,du.
+\norm{f_k}_p^p
+&=\int_{-\pi}^{\pi}\abs{\sin(kx)}^p\,dx\\
+&=\frac1k\int_{-k\pi}^{k\pi}\abs{\sin u}^p\,du.
 \end{aligned}
 $$
-Since $|\sin u|^p$ has period $\pi$, the interval $[-k\pi,k\pi]$ consists of $2k$ periods. Hence
+Since $\abs{\sin u}^p$ has period $\pi$, the interval $[-k\pi,k\pi]$ consists of $2k$ periods. Hence
 $$
-\|f_k\|_p^p
+\norm{f_k}_p^p
 =2\int_0^\pi\sin^p u\,du,
 $$
 which is a positive constant independent of $k$. Consequently
 $$
-\|f_k\|_p\not\to0,
+\norm{f_k}_p\not\to0,
 $$
 so $f_k$ does not converge strongly to $0$ in $L^p(X)$.
 

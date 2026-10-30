@@ -84,7 +84,7 @@ $$
 $$
 -a+1=-(a-1),\qquad -a-1=-(a+1),
 $$
-and parts (a),(c) show these are integers. Every $d\in\ZZ$ is $0$, a positive integer, or the negative of one. Repeatedly adding or subtracting $1$, and using induction on the positive integer $|d|$, therefore gives
+and parts (a),(c) show these are integers. Every $d\in\ZZ$ is $0$, a positive integer, or the negative of one. Repeatedly adding or subtracting $1$, and using induction on the positive integer $\abs{d}$, therefore gives
 $$
 c+d\in\ZZ,
 \qquad

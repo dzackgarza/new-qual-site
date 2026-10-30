@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF19A
 kind: problem
-title: Non-Sylow $p$-subgroup has $p$ dividing $|N_G(P)/P|$
+title: Non-Sylow $p$-subgroup has $p$ dividing $\cardinality{N_G(P)/P}$
 classification:
   areas:
   - algebra
@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Suppose $G$ is a finite group and $P$ is a $p$-subgroup of $G$ which is not a Sylow $p$-subgroup.
-Prove that $p$ divides $|N_G(P)/P|$.
+Prove that $p$ divides $\cardinality{N_G(P)/P}$.
 :::
 
 ::: {.solution}
@@ -58,14 +58,14 @@ Action of $P$ on the coset space $Q/P$:
 
 ::: pf-step
 Let $X = Q/P = \{xP \mid x \in Q\}$ be the set of left cosets of $P$ in $Q$.
-Because $P \subsetneq Q$ and $Q$ is a $p$-group, $|X| = [Q : P] = p^k$ for some integer $k \ge 1$.
+Because $P \subsetneq Q$ and $Q$ is a $p$-group, $\cardinality{X} = [Q : P] = p^k$ for some integer $k \ge 1$.
 :::
 
 ::: pf-step
 Let $P$ act on $X$ by left multiplication: $y \cdot (xP) = (yx)P$ for $y \in P, x \in Q$.
 Since $P$ is a $p$-group, the number of fixed points satisfies the fixed point congruence:
 $$
-|X^P| \equiv |X| \equiv 0 \pmod p.
+\cardinality{X^P} \equiv \cardinality{X} \equiv 0 \pmod p.
 $$
 :::
 
@@ -79,8 +79,8 @@ Therefore the fixed point set is $X^P = N_Q(P) / P$.
 :::
 
 ::: pf-step
-The coset $eP = P$ is always fixed, so $|X^P| \ge 1$.
-Since $p \mid |X^P|$ and $|X^P| \ge 1$, we have $|X^P| = [N_Q(P) : P] \ge p$, and:
+The coset $eP = P$ is always fixed, so $\cardinality{X^P} \ge 1$.
+Since $p \mid \cardinality{X^P}$ and $\cardinality{X^P} \ge 1$, we have $\cardinality{X^P} = [N_Q(P) : P] \ge p$, and:
 $$
 p \mid [N_Q(P) : P].
 $$
@@ -91,7 +91,7 @@ $$
 :::
 
 ::: pf-step
-Divisibility of $|N_G(P)/P|$:
+Divisibility of $\cardinality{N_G(P)/P}$:
 
 ::: pf-proof
 
@@ -99,12 +99,12 @@ Divisibility of $|N_G(P)/P|$:
 Since $N_Q(P) = N_G(P) \cap Q$, we have the tower of subgroups $P \le N_Q(P) \le N_G(P)$.
 By the multiplicativity of subgroup indices:
 $$
-|N_G(P) / P| = [N_G(P) : P] = [N_G(P) : N_Q(P)] \cdot [N_Q(P) : P].
+\cardinality{N_G(P) / P} = [N_G(P) : P] = [N_G(P) : N_Q(P)] \cdot [N_Q(P) : P].
 $$
 :::
 
 ::: pf-step
-Since $p$ divides $[N_Q(P) : P]$, $p$ divides $|N_G(P)/P|$.
+Since $p$ divides $[N_Q(P) : P]$, $p$ divides $\cardinality{N_G(P)/P}$.
 :::
 
 :::
@@ -113,7 +113,7 @@ Since $p$ divides $[N_Q(P) : P]$, $p$ divides $|N_G(P)/P|$.
 
 ::: pf-qed
 Conclusion:
-$p$ divides $|N_G(P)/P|$.
+$p$ divides $\cardinality{N_G(P)/P}$.
 :::
 
 :::

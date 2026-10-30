@@ -20,10 +20,10 @@ audit:
 For each of the following, determine if the statement is always true or if it is false.
 
 (a) Let $G = \{z \in \CC : \operatorname{Re} z \notin \ZZ\}$.
-Suppose $f \in H(G)$ such that $|f(z)| \leq 1$ for all $z \in G$.
+Suppose $f \in H(G)$ such that $\abs{f(z)} \leq 1$ for all $z \in G$.
 Then $f$ is constant.
 
-(b) There exists $g \in H(B(0; 2))$ with $|g(z)| < 1$ for all $|z| < 2$, with $z + g(z) \neq 0$ for all $z \in \DD$.
+(b) There exists $g \in H(B(0; 2))$ with $\abs{g(z)} < 1$ for all $\abs{z} < 2$, with $z + g(z) \neq 0$ for all $z \in \DD$.
 
 (c) There is an analytic function $f$ on $\DD \setminus \{0\}$ with an essential singularity at $z = 0$ such that $f$ can be extended as a continuous function from the whole disk $\DD$ to the extended plane $\CC_\infty$.
 
@@ -34,7 +34,7 @@ If $\operatorname{Re} f(x) = 0$ for all $x$ with $-1 < x < 1$, then $f$ admits a
 
 (f) If $f: \CC \to \CC$ is analytic and $\operatorname{Re} f(z) \geq c$ for some real constant $c$, then $f$ is constant.
 
-(g) There is a polynomial $p(z)$ such that $|p(z) - 1/z| < 1$ for all $z$ in the annulus $1/2 < |z| < 3/2$.
+(g) There is a polynomial $p(z)$ such that $\abs{p(z) - 1/z} < 1$ for all $z$ in the annulus $1/2 < \abs{z} < 3/2$.
 :::
 
 ::: {.solution}
@@ -76,7 +76,7 @@ assume for contradiction.
 :::
 
 ::: {.pf-step #p2-s2}
-On $|z| = 1$, $|g(z)| < 1 = |z|$.
+On $\abs{z} = 1$, $\abs{g(z)} < 1 = \abs{z}$.
 
 ::: pf-proof
 hypothesis.
@@ -175,7 +175,7 @@ step [](#p4-s2){.pf-ref} and Morera's theorem (or the Schwarz reflection princip
 ::: pf
 
 ::: pf-step
-After translation, assume $G \subset \{|z| \ge r\}$.
+After translation, assume $G \subset \{\abs{z} \ge r\}$.
 
 ::: pf-proof
 hypothesis $G \cap B(0;r) = \varnothing$.
@@ -202,10 +202,10 @@ $f(z_1) = f(z_2) \Rightarrow z_1 = z_2$.
 :::
 
 ::: pf-step
-For $z \in G$, $|f(z)| = \frac{r}{2|z|} \le \frac{1}{2} < 1$, so $f(G) \subset \DD$.
+For $z \in G$, $\abs{f(z)} = \frac{r}{2\abs{z}} \le \frac{1}{2} < 1$, so $f(G) \subset \DD$.
 
 ::: pf-proof
-step [](#p5-s2){.pf-ref} and $|z| \ge r$.
+step [](#p5-s2){.pf-ref} and $\abs{z} \ge r$.
 :::
 
 :::
@@ -226,7 +226,7 @@ definition.
 :::
 
 ::: {.pf-step #p6-s2}
-$g$ is entire and $|g(z)| = e^{-\operatorname{Re} f(z)} \le e^{-c}$, so $g$ is bounded.
+$g$ is entire and $\abs{g(z)} = e^{-\operatorname{Re} f(z)} \le e^{-c}$, so $g$ is bounded.
 
 ::: pf-proof
 step [](#p6-s1){.pf-ref} and $\operatorname{Re} f \ge c$.
@@ -250,7 +250,7 @@ step [](#p6-s2){.pf-ref}.
 ::: pf
 
 ::: {.pf-step #p7-s1}
-Suppose such $p$ exists. Then $|p(z) - 1/z| < 1$ on the circle $|z| = 1$.
+Suppose such $p$ exists. Then $\abs{p(z) - 1/z} < 1$ on the circle $\abs{z} = 1$.
 
 ::: pf-proof
 hypothesis (the annulus contains the unit circle).
@@ -259,16 +259,16 @@ hypothesis (the annulus contains the unit circle).
 :::
 
 ::: {.pf-step #p7-s2}
-$\int_{|z|=1} p(z)\,dz = 0$ and $\int_{|z|=1} \frac{dz}{z} = 2\pi i$.
+$\int_{\abs{z}=1} p(z)\,dz = 0$ and $\int_{\abs{z}=1} \frac{dz}{z} = 2\pi i$.
 
 ::: pf-proof
-$p$ is entire, and $\int_{|z|=1} z^{-1}dz = 2\pi i$.
+$p$ is entire, and $\int_{\abs{z}=1} z^{-1}dz = 2\pi i$.
 :::
 
 :::
 
 ::: {.pf-step #p7-s3}
-Hence $\left|\int_{|z|=1} (p(z) - 1/z)\,dz\right| = 2\pi$.
+Hence $\abs{\int_{\abs{z}=1} (p(z) - 1/z)\,dz} = 2\pi$.
 
 ::: pf-proof
 step [](#p7-s2){.pf-ref}.
@@ -277,10 +277,10 @@ step [](#p7-s2){.pf-ref}.
 :::
 
 ::: {.pf-step #p7-s4}
-But $\left|\int_{|z|=1} (p - 1/z)\,dz\right| \le \int_{|z|=1} |p - 1/z|\,|dz| < \int_{|z|=1} 1\,|dz| = 2\pi$.
+But $\abs{\int_{\abs{z}=1} (p - 1/z)\,dz} \le \int_{\abs{z}=1} \abs{p - 1/z}\,\abs{dz} < \int_{\abs{z}=1} 1\,\abs{dz} = 2\pi$.
 
 ::: pf-proof
-step [](#p7-s1){.pf-ref} and ML-estimate, with strict inequality since $|p - 1/z| < 1$.
+step [](#p7-s1){.pf-ref} and ML-estimate, with strict inequality since $\abs{p - 1/z} < 1$.
 :::
 
 :::

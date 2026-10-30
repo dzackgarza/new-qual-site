@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I08
 kind: problem
-title: 'Subordination: $g(|z|<r)\subset f(|z|<r)$ for univalent $f$'
+title: 'Subordination: $g(\abs{z}<r)\subset f(\abs{z}<r)$ for univalent $f$'
 classification:
   areas: [complex-analysis]
   topics: []

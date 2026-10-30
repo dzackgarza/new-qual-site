@@ -88,7 +88,7 @@ b-3e
 n-2e+2
 \ge0.
 $$
-Thus $|D|$ is base-point-free.
+Thus $\linearsystem{D}$ is base-point-free.
 
 :::
 
@@ -96,7 +96,7 @@ Thus $|D|$ is base-point-free.
 
 ::: {.pf-step #s2}
 
-The system $|D|$ contains a nonsingular member $Y$.
+The system $\linearsystem{D}$ contains a nonsingular member $Y$.
 
 ::: pf-proof
 
@@ -120,21 +120,21 @@ The first summand is very ample by the rational-scroll construction (2.19),
 because $e+q>e$, while step [](#s1){.pf-ref} with $a=1$ shows that $C_0+ef$ is
 base-point-free.  The tensor product of a very ample invertible sheaf with
 globally generated invertible sheaves is very ample.  Hence $D$ is very
-ample, so a general member of $|D|$ is nonsingular by Bertini's theorem.
+ample, so a general member of $\linearsystem{D}$ is nonsingular by Bertini's theorem.
 
-Suppose $q=0$.  The base-point-free system $|C_0+ef|$ defines the usual
+Suppose $q=0$.  The base-point-free system $\linearsystem{C_0+ef}$ defines the usual
 morphism from $\FF_e$ to the rational normal scroll cone: it contracts
 exactly $C_0$ and is an immersion on $X\setminus C_0$.  The system
 
 $$
-|D|=|3(C_0+ef)|
+\linearsystem{D}=\linearsystem{3(C_0+ef)}
 $$
 
 has the same property away from $C_0$.  Moreover,
 $$
 D\cdot C_0=0.
 $$
-Since $|D|$ is base-point-free, a general member does not contain the
+Since $\linearsystem{D}$ is base-point-free, a general member does not contain the
 contracted section $C_0$, and hence is disjoint from it.  Bertini applied
 on $X\setminus C_0$, where the associated morphism is an immersion, then
 shows that a general member is nonsingular.  Choose such a member and call
@@ -209,9 +209,9 @@ Adjunction and the definition $D=H-K_X$ give
 $$
 K_Y
 \cong
-(K_X+Y)|_Y
+(K_X+Y)\restrict_Y
 \cong
-(K_X+D)|_Y
+(K_X+D)\restrict_Y
 \cong
 \OO_Y(H).
 $$
@@ -304,7 +304,7 @@ d+2.
 $$
 Thus the given embedding $X\hookrightarrow\PP^{d+1}$ uses all sections of
 $H$.  Its restriction to $Y$ is therefore defined by the complete canonical
-system $|K_Y|$, as claimed.
+system $\linearsystem{K_Y}$, as claimed.
 
 :::
 
@@ -351,7 +351,7 @@ nonhyperelliptic.
 
 The ruling restricts to a morphism
 $$
-\pi|_Y:Y\longrightarrow\PP^1
+\pi\restrict_Y:Y\longrightarrow\PP^1
 $$
 of degree
 $$
@@ -360,7 +360,7 @@ Y\cdot f
 D\cdot f
 =3.
 $$
-Therefore the pullback of $|\OO_{\PP^1}(1)|$ is a base-point-free
+Therefore the pullback of $\linearsystem{\OO_{\PP^1}(1)}$ is a base-point-free
 $g^1_3$ on $Y$.
 
 By step [](#s6){.pf-ref} the complete canonical map of $Y$ is an embedding.  A

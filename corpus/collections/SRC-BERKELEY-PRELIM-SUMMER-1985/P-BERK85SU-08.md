@@ -30,7 +30,7 @@ p(a)=f(a),\qquad p'(a)=0,
 $$
 and
 $$
-|p(x)-f(x)|<\varepsilon\qquad (x\in[a,b]).
+\abs{p(x)-f(x)}<\varepsilon\qquad (x\in[a,b]).
 $$
 :::
 

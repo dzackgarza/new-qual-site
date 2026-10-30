@@ -35,7 +35,7 @@ hypothesis (antipodal points are $p$ and $-p$, and the segment between them pass
 :::
 
 ::: {.pf-step #define-h}
-Define $H : X \times [0,1] \to S^2$ by $$H(x, t) = \frac{(1 - t) f(x) + t g(x)}{\|(1 - t) f(x) + t g(x)\|}.$$
+Define $H : X \times [0,1] \to S^2$ by $$H(x, t) = \frac{(1 - t) f(x) + t g(x)}{\norm{(1 - t) f(x) + t g(x)}}.$$
 
 ::: pf-proof
 the straight-line homotopy, normalized to lie on $S^2$.

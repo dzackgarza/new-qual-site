@@ -38,9 +38,9 @@ Noting that $dA = r~dr~d\theta$, we can then integrate
   \iint_D 2x ~dA
   = \int_0^{\pi} \int_0^1 2(r(1 + \cos\theta)) r ~dr ~d\theta \\
   = 2\int_0^{\pi} \int_0^1 r^2(1+\cos \theta) ~dr ~d\theta \\
-  = 2\int_0^{\pi} \frac 1 3 r^3(1+\cos \theta) \bigg\rvert_0^1  ~d\theta\\
+  = 2\int_0^{\pi} \frac 1 3 r^3(1+\cos \theta) \evalfrom_0^1  ~d\theta\\
   = \frac 2 3 \int_0^{\pi} (1+\cos \theta)  ~d\theta\\
-  = \frac 2 3 ( \theta + \sin \theta) \bigg\rvert_0^\pi  \\
+  = \frac 2 3 ( \theta + \sin \theta) \evalfrom_0^\pi  \\
   = \frac 2 3 [(\pi + 0) - (0 + 0)]
   = \frac 2 3 \pi. \qed
   $$

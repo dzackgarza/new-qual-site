@@ -36,50 +36,50 @@ z\longmapsto \log(1-rz)
 $$
 is holomorphic on the unit disk, using the branch determined by its power series at $0$. Its real part is
 $$
-\log|1-rz|.
+\log\abs{1-rz}.
 $$
 By the mean-value property for harmonic functions,
 $$
 \frac1{2\pi}\int_0^{2\pi}
-\log|1-re^{i\theta}|\,d\theta
-=\log|1|=0.
+\log\abs{1-re^{i\theta}}\,d\theta
+=\log\abs{1}=0.
 $$
 Hence
 $$
 \int_0^{2\pi}
-\log|1-re^{i\theta}|\,d\theta=0
+\log\abs{1-re^{i\theta}}\,d\theta=0
 $$
 for every $0<r<1$.
 
 Now let $r\uparrow1$. Pointwise for $0<\theta<2\pi$,
 $$
-\log|1-re^{i\theta}|
+\log\abs{1-re^{i\theta}}
 \longrightarrow
-\log|1-e^{i\theta}|.
+\log\abs{1-e^{i\theta}}.
 $$
 To justify passing to the limit, restrict to $r\ge1/2$. Since
 $$
-|1-re^{i\theta}|^2
+\abs{1-re^{i\theta}}^2
 =(1-r)^2+4r\sin^2(\theta/2),
 $$
 the negative part near the endpoints is bounded by a constant multiple of
 $$
-1+|\log\theta|+|\log(2\pi-\theta)|,
+1+\abs{\log\theta}+\abs{\log(2\pi-\theta)},
 $$
 which is integrable, while the positive part is uniformly bounded because
 $$
-|1-re^{i\theta}|\le2.
+\abs{1-re^{i\theta}}\le2.
 $$
 Dominated convergence therefore gives
 $$
 \boxed{
 \int_0^{2\pi}
-\log|1-e^{i\theta}|\,d\theta=0.}
+\log\abs{1-e^{i\theta}}\,d\theta=0.}
 $$
 
 For part (b), use
 $$
-|1-e^{i\theta}|
+\abs{1-e^{i\theta}}
 =2\sin(\theta/2),
 \qquad 0<\theta<2\pi.
 $$

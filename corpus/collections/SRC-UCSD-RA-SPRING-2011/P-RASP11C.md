@@ -29,10 +29,10 @@ audit:
 Let $1 \leq p, p' \leq \infty$ be fixed dual indices.
 Suppose $K(x, y) \geq 0$ is a Lebesgue measurable function on $\RR^n \times \RR^n$ such that there exists a constant $0 \leq K_0 < \infty$ with
 $$
-\iint g(x) K(x, y) f(y) \, dx \, dy \leq K_0 \|g\|_{L^{p'}(\RR^n)} \|f\|_{L^p(\RR^n)}
+\iint g(x) K(x, y) f(y) \, dx \, dy \leq K_0 \norm{g}_{L^{p'}(\RR^n)} \norm{f}_{L^p(\RR^n)}
 $$
 for all measurable $f, g \geq 0$ on $\RR^n$.
-Show that if $f \in L^p(\RR^n)$, then the function $Kf(x) := \int_{\RR^n} K(x, y) f(y) \, dy$ is well defined for (Lebesgue) a.e. $x \in \RR^n$, and one has $\|Kf\|_{L^p(dx)} \leq K_0 \|f\|_{L^p(dx)}$.
+Show that if $f \in L^p(\RR^n)$, then the function $Kf(x) := \int_{\RR^n} K(x, y) f(y) \, dy$ is well defined for (Lebesgue) a.e. $x \in \RR^n$, and one has $\norm{Kf}_{L^p(dx)} \leq K_0 \norm{f}_{L^p(dx)}$.
 :::
 
 ::: {.solution}
@@ -41,19 +41,19 @@ Show that if $f \in L^p(\RR^n)$, then the function $Kf(x) := \int_{\RR^n} K(x, y
 
 ::: pf-step
 
-Apply the hypothesis to the nonnegative function $|f|$.
+Apply the hypothesis to the nonnegative function $\abs{f}$.
 
 ::: pf-proof
 
 Define the extended-valued measurable function
 $$
-h(x):=\int_{\RR^n}K(x,y)|f(y)|\,dy.
+h(x):=\int_{\RR^n}K(x,y)\abs{f(y)}\,dy.
 $$
 By Tonelli, $h$ is measurable and takes values in $[0,\infty]$. For every nonnegative $g\in L^{p'}$,
 $$
 \int_{\RR^n}g(x)h(x)\,dx
-=\iint g(x)K(x,y)|f(y)|\,dx\,dy
-\le K_0\|g\|_{p'}\|f\|_p.
+=\iint g(x)K(x,y)\abs{f(y)}\,dx\,dy
+\le K_0\norm{g}_{p'}\norm{f}_p.
 $$
 
 :::
@@ -68,20 +68,20 @@ Deduce that $h\in L^p$ and estimate its norm.
 
 For a nonnegative measurable function $h$, the dual norm formula gives
 $$
-\|h\|_p
-=\sup\left\{\int gh:\ g\ge0,\ g\in L^{p'},\ \|g\|_{p'}\le1\right\},
+\norm{h}_p
+=\sup\left\{\int gh:\ g\ge0,\ g\in L^{p'},\ \norm{g}_{p'}\le1\right\},
 $$
 with the usual endpoint interpretations for $p=1$ and $p=\infty$.
 
 Applying Step 1 to every such $g$ yields
 $$
-\|h\|_p\le K_0\|f\|_p.
+\norm{h}_p\le K_0\norm{f}_p.
 $$
 In particular $h(x)<\infty$ for almost every $x$.
 
-For completeness, the endpoint cases are contained in the same argument: if $p=1$, test with bounded nonnegative $g$ approaching $1$ to obtain $\int h\le K_0\|f\|_1$; if $p=\infty$, the estimate against every nonnegative $g\in L^1$ implies
+For completeness, the endpoint cases are contained in the same argument: if $p=1$, test with bounded nonnegative $g$ approaching $1$ to obtain $\int h\le K_0\norm{f}_1$; if $p=\infty$, the estimate against every nonnegative $g\in L^1$ implies
 $$
-\operatorname*{ess\,sup}h\le K_0\|f\|_\infty.
+\operatorname*{ess\,sup}h\le K_0\norm{f}_\infty.
 $$
 
 :::
@@ -96,7 +96,7 @@ Define $Kf$ almost everywhere and conclude the operator bound.
 
 At every $x$ for which $h(x)<\infty$,
 $$
-\int_{\RR^n}K(x,y)|f(y)|\,dy<\infty.
+\int_{\RR^n}K(x,y)\abs{f(y)}\,dy<\infty.
 $$
 Hence the integral
 $$
@@ -104,11 +104,11 @@ Kf(x)=\int_{\RR^n}K(x,y)f(y)\,dy
 $$
 is absolutely convergent and therefore well defined. Moreover,
 $$
-|Kf(x)|\le h(x)
+\abs{Kf(x)}\le h(x)
 $$
 almost everywhere. Thus
 $$
-\boxed{\|Kf\|_p\le\|h\|_p\le K_0\|f\|_p.}
+\boxed{\norm{Kf}_p\le\norm{h}_p\le K_0\norm{f}_p.}
 $$
 
 :::

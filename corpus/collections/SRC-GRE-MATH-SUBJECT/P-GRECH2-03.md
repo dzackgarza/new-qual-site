@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH2-03
 kind: problem
-title: One-sided limits of $|x|-[x]$ at $\pm n$
+title: One-sided limits of $\abs{x}-[x]$ at $\pm n$
 classification:
   areas: [prelim]
   topics: []
@@ -19,7 +19,7 @@ audit:
 Let $[x]$ denote the greatest integer $\le x$. If $n$ is a positive integer, then
 
 $$
-\lim_{x \to -n^-} (|x| - [x]) - \lim_{x \to n^-} (|x| - [x]) = ?
+\lim_{x \to -n^-} (\abs{x} - [x]) - \lim_{x \to n^-} (\abs{x} - [x]) = ?
 $$
 
 (A) $-2$
@@ -44,9 +44,9 @@ For $x<-n$ sufficiently close to $-n$, one has
 $$
 -n-1<x<-n,
 $$
-so $[x]=-n-1$. Also $|x|=-x$ near the negative point $-n$. Therefore
+so $[x]=-n-1$. Also $\abs{x}=-x$ near the negative point $-n$. Therefore
 $$
-\lim_{x\to -n^-}(|x|-[x])
+\lim_{x\to -n^-}(\abs{x}-[x])
 =n-(-n-1)
 =2n+1.
 $$
@@ -66,9 +66,9 @@ For $x<n$ sufficiently close to the positive integer $n$,
 $$
 n-1<x<n,
 $$
-so $[x]=n-1$, while $|x|=x$. Hence
+so $[x]=n-1$, while $\abs{x}=x$. Hence
 $$
-\lim_{x\to n^-}(|x|-[x])
+\lim_{x\to n^-}(\abs{x}-[x])
 =n-(n-1)
 =1.
 $$

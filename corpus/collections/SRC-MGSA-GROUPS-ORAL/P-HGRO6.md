@@ -61,7 +61,7 @@ for some homomorphism $\varphi:C_p\to\Aut(C_q)$.
 
 Let $Q$ be the normal Sylow $q$-subgroup and $P$ a Sylow $p$-subgroup. Both
 are cyclic because they have prime order. Since $Q\cap P=1$ and
-$|QP|=|Q||P|=pq=|G|$, we have $G=QP$. Conjugation by $P$ on $Q$ gives the
+$\cardinality{QP}=\cardinality{Q}\cardinality{P}=pq=\cardinality{G}$, we have $G=QP$. Conjugation by $P$ on $Q$ gives the
 required semidirect product.
 
 :::

@@ -53,9 +53,9 @@ Thus the two local powers are $x^\nu$ and $x^{-\nu}$.
 
 ::: {.pf-step #s1-2}
 
-If $\nu\ne0$, the divergent branch has leading power $x^{-|\nu|}$, and the standard normalization of $K_\nu$ gives
+If $\nu\ne0$, the divergent branch has leading power $x^{-\abs{\nu}}$, and the standard normalization of $K_\nu$ gives
 $$
-\boxed{K_\nu(x)\sim 2^{|\nu|-1}\Gamma(|\nu|)x^{-|\nu|}}
+\boxed{K_\nu(x)\sim 2^{\abs{\nu}-1}\Gamma(\abs{\nu})x^{-\abs{\nu}}}
 \qquad(x\to0^+).
 $$
 

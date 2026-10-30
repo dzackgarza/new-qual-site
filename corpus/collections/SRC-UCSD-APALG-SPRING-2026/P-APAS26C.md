@@ -18,7 +18,7 @@ Let $(V, \varphi)$ and $(W, \psi)$ be finite-dimensional unitary representations
 Let $A \in \operatorname{Hom}_G(V, W)$ be a $G$-equivariant linear map with operator norm $\sigma_1 > 0$.
 Prove that
 $$
-V_1 = \{v \in V : \|Av\| = \sigma_1 \|v\|\}
+V_1 = \{v \in V : \norm{Av} = \sigma_1 \norm{v}\}
 $$
 is a subrepresentation of $(V, \varphi)$.
 :::
@@ -47,11 +47,11 @@ $$
 $$
 For $v\in V$,
 $$
-\|Av\|^2=\langle A^*Av,v\rangle.
+\norm{Av}^2=\langle A^*Av,v\rangle.
 $$
 By the spectral theorem,
 $$
-\|Av\|=\sigma_1\|v\|
+\norm{Av}=\sigma_1\norm{v}
 $$
 if and only if $v$ lies in the eigenspace
 $$

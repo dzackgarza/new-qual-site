@@ -31,7 +31,7 @@ Let $X=\PP_k^1$, with $k$ an infinite field.
 :::
 
 ::: {.hint}
-For (a), consider surjections $\mco_V\to k(x)\to0$, where $x\in X$ is a closed point, $V$ is an open neighborhood of $x$, and $\mco_V=j_!(\mco_X|_V)$ for $j:V\hookrightarrow X$.
+For (a), consider surjections $\mco_V\to k(x)\to0$, where $x\in X$ is a closed point, $V$ is an open neighborhood of $x$, and $\mco_V=j_!(\mco_X\restrict_V)$ for $j:V\hookrightarrow X$.
 For (b), consider surjections $\mcl\to\mcl\otimes k(x)\to0$ with $\mcl$ invertible.
 :::
 
@@ -67,12 +67,12 @@ No projective object of $\Mod(X)$ can admit the epimorphism $p$.
 Choose $W,s,x,y$ as in step [](#s1){.pf-ref}, put $V=X\setminus\{y\}$, and let $j:V\hookrightarrow X$.
 The residue map on $V$ extends by zero to an epimorphism
 $$
-q:j_!(\OO_X|_V)\twoheadrightarrow k(x).
+q:j_!(\OO_X\restrict_V)\twoheadrightarrow k(x).
 $$
 Its stalk at $x$ is the residue surjection, and the target has zero stalk at every other point.
-Projectivity would lift the composite $\mcp\xrightarrow{p}\OO_X\to k(x)$ to $h:\mcp\to j_!(\OO_X|_V)$.
+Projectivity would lift the composite $\mcp\xrightarrow{p}\OO_X\to k(x)$ to $h:\mcp\to j_!(\OO_X\restrict_V)$.
 
-There is a natural injection from the [[D-SHFSIX|extension by zero]] $j_!(\OO_X|_V)$ into $\OO_X$: its stalk is the identity on $V$ and is the map from zero outside $V$ [@Har10a, Exercise II.1.19].
+There is a natural injection from the [[D-SHFSIX|extension by zero]] $j_!(\OO_X\restrict_V)$ into $\OO_X$: its stalk is the identity on $V$ and is the map from zero outside $V$ [@Har10a, Exercise II.1.19].
 The image of $h(s)$ under this injection is a regular function on $W$ with zero germ at $y$.
 It therefore vanishes on a nonempty open neighborhood of $y$ in $W$.
 Since $W$ is integral, a regular function with zero generic value is zero everywhere.

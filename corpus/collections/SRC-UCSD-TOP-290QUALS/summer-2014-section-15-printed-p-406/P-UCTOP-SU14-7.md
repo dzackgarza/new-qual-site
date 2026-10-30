@@ -88,7 +88,7 @@ $$
 
 ::: pf-step
 
-Since $|\deg f|=1$, one has $d=1$.
+Since $\abs{\deg f}=1$, one has $d=1$.
 
 ::: pf-proof
 

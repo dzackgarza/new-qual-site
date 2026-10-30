@@ -26,11 +26,11 @@ audit:
 ::: {.problem}
 Let $-\infty < a < b < \infty$, $C([a,b], \RR)$ be the Banach space of continuous functions on $[a,b]$ equipped with the supremum norm,
 $$
-\mathcal{F} := \left\{f \in L^1(\RR, m) \cap C(\RR, \RR) : \int_{\RR} (1 + |k|)\,|\hat{f}(k)|\,dk \leq 1\right\},
+\mathcal{F} := \left\{f \in L^1(\RR, m) \cap C(\RR, \RR) : \int_{\RR} (1 + \abs{k})\,\abs{\hat{f}(k)}\,dk \leq 1\right\},
 $$
 and
 $$
-\mathcal{F}_{[a,b]} := \{f|_{[a,b]} : f \in \mathcal{F}\}.
+\mathcal{F}_{[a,b]} := \{f\restrict_{[a,b]} : f \in \mathcal{F}\}.
 $$
 Show $\mathcal{F}_{[a,b]}$ is a precompact subset of $C([a,b], \RR)$.
 :::
@@ -47,7 +47,7 @@ Use Fourier inversion to obtain a uniform bound.
 
 For $f\in\mathcal F$,
 $$
-\int_{\RR}|\widehat f(k)|\,dk\le1,
+\int_{\RR}\abs{\widehat f(k)}\,dk\le1,
 $$
 so $\widehat f\in L^1(\RR)$. Since also $f\in L^1(\RR)\cap C(\RR)$, the Fourier inversion theorem applies. Thus, with the fixed constant $C_{\mathcal F}>0$ determined by the Fourier-transform normalization,
 $$
@@ -55,8 +55,8 @@ f(x)=C_{\mathcal F}\int_{\RR}\widehat f(k)e^{ikx}\,dk.
 $$
 Consequently
 $$
-|f(x)|
-\le C_{\mathcal F}\int_{\RR}|\widehat f(k)|\,dk
+\abs{f(x)}
+\le C_{\mathcal F}\int_{\RR}\abs{\widehat f(k)}\,dk
 \le C_{\mathcal F}
 $$
 for every $x\in\RR$. Hence the restrictions in $\mathcal F_{[a,b]}$ are uniformly bounded.
@@ -74,13 +74,13 @@ Obtain a common modulus of continuity.
 For $x,y\in\RR$,
 $$
 \begin{aligned}
-|f(x)-f(y)|
-&\le C_{\mathcal F}\int_{\RR}|\widehat f(k)|\,|e^{ikx}-e^{iky}|\,dk\\
-&\le C_{\mathcal F}|x-y|\int_{\RR}|k|\,|\widehat f(k)|\,dk\\
-&\le C_{\mathcal F}|x-y|,
+\abs{f(x)-f(y)}
+&\le C_{\mathcal F}\int_{\RR}\abs{\widehat f(k)}\,\abs{e^{ikx}-e^{iky}}\,dk\\
+&\le C_{\mathcal F}\abs{x-y}\int_{\RR}\abs{k}\,\abs{\widehat f(k)}\,dk\\
+&\le C_{\mathcal F}\abs{x-y},
 \end{aligned}
 $$
-because $|e^{iu}-e^{iv}|\le|u-v|$. Thus every $f\in\mathcal F$ is Lipschitz with the same Lipschitz constant. In particular, $\mathcal F_{[a,b]}$ is equicontinuous.
+because $\abs{e^{iu}-e^{iv}}\le\abs{u-v}$. Thus every $f\in\mathcal F$ is Lipschitz with the same Lipschitz constant. In particular, $\mathcal F_{[a,b]}$ is equicontinuous.
 
 :::
 

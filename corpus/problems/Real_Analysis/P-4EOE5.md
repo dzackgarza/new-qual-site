@@ -38,7 +38,7 @@ audit:
 
 (f) $\star$: Prove continuity in $L^1$, i.e.
 $$
-f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int|f(x+h)-f(x)|=0.
+f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int\abs{f(x+h)-f(x)}=0.
 $$
 
 (g) $\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$

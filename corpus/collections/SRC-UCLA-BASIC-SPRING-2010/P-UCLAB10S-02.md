@@ -22,7 +22,7 @@ Prove that
 $$
 \lambda_k=
 \max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
-\min_{\substack{x\in U\\ \|x\|=1}}
+\min_{\substack{x\in U\\ \norm{x}=1}}
 \langle Ax,x\rangle.
 $$
 :::
@@ -66,7 +66,7 @@ Write
 $$
 x=\sum_{i=1}^k c_i e_i.
 $$
-Since the basis is orthonormal and $\|x\|=1$,
+Since the basis is orthonormal and $\norm{x}=1$,
 $$
 \sum_{i=1}^k c_i^2=1.
 $$
@@ -128,7 +128,7 @@ Hence the minimum is attained and equals $\lambda_k$.
 Consequently,
 $$
 \max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
-\min_{\substack{x\in U\\ \|x\|=1}}
+\min_{\substack{x\in U\\ \norm{x}=1}}
 \langle Ax,x\rangle
 \ge
 \lambda_k.
@@ -223,7 +223,7 @@ write
 $$
 x=\sum_{i=k}^n c_i e_i.
 $$
-Because $\|x\|=1$,
+Because $\norm{x}=1$,
 $$
 \sum_{i=k}^n c_i^2=1.
 $$
@@ -253,7 +253,7 @@ for every $i\ge k$.
 
 For every $k$-dimensional subspace $U$,
 $$
-\min_{\substack{x\in U\\ \|x\|=1}}
+\min_{\substack{x\in U\\ \norm{x}=1}}
 \langle Ax,x\rangle
 \le
 \lambda_k.
@@ -278,7 +278,7 @@ The minimum over all unit vectors in $U$ cannot exceed that particular value.
 Therefore
 $$
 \max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
-\min_{\substack{x\in U\\ \|x\|=1}}
+\min_{\substack{x\in U\\ \norm{x}=1}}
 \langle Ax,x\rangle
 \le
 \lambda_k.
@@ -301,7 +301,7 @@ $$
 \boxed{
 \lambda_k=
 \max_{\substack{U\subseteq\RR^n\\ \dim U=k}}
-\min_{\substack{x\in U\\ \|x\|=1}}
+\min_{\substack{x\in U\\ \norm{x}=1}}
 \langle Ax,x\rangle.
 }
 $$

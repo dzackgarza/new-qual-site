@@ -85,7 +85,7 @@ The class $x^{n+1}$ would lie in $H^{2n+2}(\CP^n;\ZZ)=0$.
 Therefore
 $$
 H^*(\CP^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),
-\qquad |x|=2.
+\qquad \gradeddegree{x}=2.
 $$
 
 ::: pf-proof

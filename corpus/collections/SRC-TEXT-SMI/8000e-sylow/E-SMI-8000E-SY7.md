@@ -43,19 +43,19 @@ For a finite $p$-group action, the number of fixed points is congruent to the si
 Let a finite $p$-group $Q$ act on a finite set $X$. Decompose $X$ into
 $Q$-orbits. For $x\in X$, the orbit-stabilizer theorem gives
 $$
-|Qx|=[Q:Q_x].
+\cardinality{Qx}=[Q:Q_x].
 $$
-Since $|Q|$ is a power of $p$, every orbit size is a power of $p$. An orbit
+Since $\cardinality{Q}$ is a power of $p$, every orbit size is a power of $p$. An orbit
 has size $1$ exactly when its point is fixed by all of $Q$; every other orbit
 therefore has cardinality divisible by $p$.
 
 If $X^Q$ denotes the fixed-point set, summing the orbit sizes yields
 $$
-|X|=|X^Q|+pN
+\cardinality{X}=\cardinality{X^Q}+pN
 $$
 for some integer $N$. Hence
 $$
-\boxed{|X^Q|\equiv |X|\pmod p.}
+\boxed{\cardinality{X^Q}\equiv \cardinality{X}\pmod p.}
 $$
 
 :::
@@ -76,11 +76,11 @@ $$
 This is a well-defined action of the $p$-group $P'$ on the finite set $G/P$.
 Because $P$ is Sylow,
 $$
-|G/P|=[G:P]
+\cardinality{G/P}=[G:P]
 $$
 is not divisible by $p$. By step [](#s1){.pf-ref},
 $$
-|(G/P)^{P'}|\equiv [G:P]\not\equiv0\pmod p.
+\cardinality{(G/P)^{P'}}\equiv [G:P]\not\equiv0\pmod p.
 $$
 Therefore the action has at least one fixed coset, say
 $$
@@ -112,7 +112,7 @@ $$
 Both $P$ and $P'$ are Sylow $p$-subgroups of $G$, so they have the same
 order. Conjugation preserves order, hence
 $$
-|g^{-1}P'g|=|P'|=|P|.
+\cardinality{g^{-1}P'g}=\cardinality{P'}=\cardinality{P}.
 $$
 The displayed inclusion is therefore an equality:
 $$

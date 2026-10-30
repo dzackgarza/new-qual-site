@@ -17,13 +17,13 @@ How many zeroes (counted with multiplicity) does the polynomial $$f(z) = z^7 - 2
 :::
 
 ::: {.solution}
-On $|z|=1$ write
+On $\abs{z}=1$ write
 $$
 f(z)=6z^3+\bigl(z^7-2z^5-z+1\bigr).
 $$
 The remainder satisfies
 $$
-|z^7-2z^5-z+1|\le 1+2+1+1=5<6=|6z^3|.
+\abs{z^7-2z^5-z+1}\le 1+2+1+1=5<6=\abs{6z^3}.
 $$
 Thus Rouché's theorem shows that $f$ and $6z^3$ have the same number of
 zeros in $\DD$, counted with multiplicity. Therefore

@@ -38,7 +38,7 @@ Write $S_\Omega=[0,\Omega)$, where $\Omega$ is the first uncountable ordinal.
 
 (a) We first show that for every $\varepsilon>0$ there is $\alpha<\Omega$ such that
 $$
-|f(\beta)-f(\gamma)|<\varepsilon
+\abs{f(\beta)-f(\gamma)}<\varepsilon
 \qquad(\beta,\gamma>\alpha).
 $$
 If not, recursively choose ordinals
@@ -47,7 +47,7 @@ $$
 $$
 with
 $$
-|f(\alpha_n)-f(\beta_n)|\ge\varepsilon.
+\abs{f(\alpha_n)-f(\beta_n)}\ge\varepsilon.
 $$
 The supremum
 $$
@@ -65,7 +65,7 @@ $$
 $$
 If $\beta,\gamma>\alpha$, then
 $$
-|f(\beta)-f(\gamma)|<1/n
+\abs{f(\beta)-f(\gamma)}<1/n
 $$
 for every $n$, hence $f(\beta)=f(\gamma)$. Thus $f$ is eventually constant.
 

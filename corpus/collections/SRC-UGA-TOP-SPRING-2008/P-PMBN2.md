@@ -153,7 +153,7 @@ The punctured plane strongly deformation retracts onto the unit circle by
 $$
 H(v,t)
 =
-\left((1-t)+\frac{t}{\lVert v\rVert}\right)v,
+\left((1-t)+\frac{t}{\norm{ v}}\right)v,
 \qquad
 v\in\RR^2\setminus\{0\},\quad 0\le t\le1.
 $$

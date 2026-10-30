@@ -112,11 +112,11 @@ f(p)\in V\subseteq\RR^2
 $$
 such that
 $$
-f|_U:U\longrightarrow V
+f\restrict_U:U\longrightarrow V
 $$
 is a $C^1$ diffeomorphism. Moreover,
 $$
-D(f|_U^{-1})(f(x))
+D(f\restrict_U^{-1})(f(x))
 =
 \bigl(Df(x)\bigr)^{-1}
 $$

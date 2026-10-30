@@ -38,7 +38,7 @@ $$
 $$
 Show that the limit exists and that
 $$
-u=(\log|x|)'
+u=(\log\abs{x})'
 $$
 in the sense of distributions.
 :::
@@ -62,18 +62,18 @@ $$
 Hence the truncated principal value can be rewritten as
 $$
 \begin{aligned}
-&\int_{\varepsilon<|x|<1}\frac{\varphi(x)-\varphi(0)}x\,dx
+&\int_{\varepsilon<\abs{x}<1}\frac{\varphi(x)-\varphi(0)}x\,dx
 +
-\int_{|x|\ge1}\frac{\varphi(x)}x\,dx.
+\int_{\abs{x}\ge1}\frac{\varphi(x)}x\,dx.
 \end{aligned}
 $$
 The second integral is absolutely convergent because $\varphi$ has compact support. Near $0$, the mean-value theorem gives
 $$
-|\varphi(x)-\varphi(0)|\le C|x|,
+\abs{\varphi(x)-\varphi(0)}\le C\abs{x},
 $$
 so
 $$
-\left|\frac{\varphi(x)-\varphi(0)}x\right|\le C.
+\abs{\frac{\varphi(x)-\varphi(0)}x}\le C.
 $$
 Thus the first integral converges absolutely as $\varepsilon\to0^+$. Therefore the principal-value limit exists.
 
@@ -83,19 +83,19 @@ Thus the first integral converges absolutely as $\varepsilon\to0^+$. Therefore t
 
 ::: pf-step
 
-The locally integrable function $\log|x|$ defines a distribution.
+The locally integrable function $\log\abs{x}$ defines a distribution.
 
 ::: pf-proof
 
 Since
 $$
-\int_0^1|\log x|\,dx<\infty,
+\int_0^1\abs{\log x}\,dx<\infty,
 $$
-we have $\log|x|\in L^1_{\mathrm{loc}}(\RR)$. Hence it defines a distribution by
+we have $\log\abs{x}\in L^1_{\mathrm{loc}}(\RR)$. Hence it defines a distribution by
 $$
-\langle \log|x|,\varphi\rangle
+\langle \log\abs{x},\varphi\rangle
 =
-\int_{\RR}\log|x|\,\varphi(x)\,dx.
+\int_{\RR}\log\abs{x}\,\varphi(x)\,dx.
 $$
 
 :::
@@ -110,13 +110,13 @@ Its distributional derivative equals $u$.
 
 By definition,
 $$
-\langle (\log|x|)',\varphi\rangle
-=-\int_{\RR}\log|x|\,\varphi'(x)\,dx.
+\langle (\log\abs{x})',\varphi\rangle
+=-\int_{\RR}\log\abs{x}\,\varphi'(x)\,dx.
 $$
 Split at $\pm\varepsilon$ and integrate by parts:
 $$
 \begin{aligned}
-&-\int_{-\infty}^{-\varepsilon}\log|x|\,\varphi'(x)\,dx
+&-\int_{-\infty}^{-\varepsilon}\log\abs{x}\,\varphi'(x)\,dx
 -\int_{\varepsilon}^{\infty}\log x\,\varphi'(x)\,dx\\
 &\qquad=
 \int_{-\infty}^{-\varepsilon}\frac{\varphi(x)}x\,dx
@@ -136,13 +136,13 @@ $$
 $$
 as $\varepsilon\to0^+$. Taking the limit yields
 $$
-\langle (\log|x|)',\varphi\rangle
+\langle (\log\abs{x})',\varphi\rangle
 =\operatorname{p.v.}\int_{\RR}\frac{\varphi(x)}x\,dx
 =\langle u,\varphi\rangle.
 $$
 Thus
 $$
-\boxed{u=(\log|x|)'}
+\boxed{u=(\log\abs{x})'}
 $$
 in $\mathcal D'(\RR)$.
 

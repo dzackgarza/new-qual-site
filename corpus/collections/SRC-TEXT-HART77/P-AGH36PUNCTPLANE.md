@@ -57,9 +57,9 @@ $$
 Let $f\in\mco(X)$.
 On the principal affine opens $D(x)$ and $D(y)$, write
 $$
-f|_{D(x)}=\frac{a}{x^m},
+f\restrict_{D(x)}=\frac{a}{x^m},
 \qquad
-f|_{D(y)}=\frac{b}{y^n}
+f\restrict_{D(y)}=\frac{b}{y^n}
 $$
 with $a,b\in R$ and $m,n\ge0$.
 On the overlap $D(xy)$ these expressions agree, so in the fraction field $k(x,y)$,

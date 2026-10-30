@@ -25,9 +25,9 @@ audit:
 ::: {.problem}
 Let $f$ be a rational function with no poles in the closed upper half-plane. Prove that
 $$
-\sup\{|f(z)|:\operatorname{Im}z\ge0\}
+\sup\{\abs{f(z)}:\operatorname{Im}z\ge0\}
 =
-\sup\{|f(z)|:\operatorname{Im}z=0\}.
+\sup\{\abs{f(z)}:\operatorname{Im}z=0\}.
 $$
 :::
 

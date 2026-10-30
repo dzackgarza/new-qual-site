@@ -44,9 +44,9 @@ K\le\langle H,K\rangle.
 $$
 If $\langle H,K\rangle$ is finite, Lagrange's theorem gives
 $$
-12\mid|\langle H,K\rangle|
+12\mid\cardinality{\langle H,K\rangle}
 \qquad\text{and}\qquad
-30\mid|\langle H,K\rangle|.
+30\mid\cardinality{\langle H,K\rangle}.
 $$
 Hence their least common multiple $60$ divides the order.
 
@@ -108,11 +108,11 @@ Let
 $$
 H=\ZZ_4\times\{0\}\times\ZZ_3\times\{0\},
 $$
-so $|H|=12$, and let
+so $\cardinality{H}=12$, and let
 $$
 K=\{0\}\times\ZZ_2\times\ZZ_3\times\ZZ_5,
 $$
-so $|K|=30$. These subgroups together generate every direct factor, hence
+so $\cardinality{K}=30$. These subgroups together generate every direct factor, hence
 $$
 \langle H,K\rangle=G
 $$
@@ -127,7 +127,7 @@ Let $H$ use the $\ZZ_4$ factor and the first $\ZZ_3$ factor, and
 let $K$ use the $\ZZ_2$ factor, the second $\ZZ_3$ factor, and
 the $\ZZ_5$ factor. Then
 $$
-|H|=12,\qquad |K|=30,
+\cardinality{H}=12,\qquad \cardinality{K}=30,
 $$
 and together they generate $G$, which has order $360$.
 
@@ -150,7 +150,7 @@ The two canonical free factors are subgroups of orders $12$ and $30$, and by
 definition they generate all of $G$. The free product of two nontrivial
 finite groups is countably infinite here, so
 $$
-|\langle C_{12},C_{30}\rangle|=\aleph_0.
+\cardinality{\langle C_{12},C_{30}\rangle}=\aleph_0.
 $$
 
 :::

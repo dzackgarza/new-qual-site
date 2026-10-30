@@ -23,14 +23,14 @@ Then evaluate an appropriate integral.
 ::: {.solution}
 On $C_R$, write $z=Re^{i\theta}$, $0\le\theta\le\pi/2$. Then
 $$
-|e^{iz}|=e^{-R\sin\theta},
+\abs{e^{iz}}=e^{-R\sin\theta},
 \qquad
-|\log z|=|\log R+i\theta|\ge\log R,
-\qquad |dz|=R\,d\theta.
+\abs{\log z}=\abs{\log R+i\theta}\ge\log R,
+\qquad \abs{dz}=R\,d\theta.
 $$
 Using $\sin\theta\ge c\theta$ on this interval,
 $$
-\left|\int_{C_R}\frac{e^{iz}}{\log z}\,dz\right|
+\abs{\int_{C_R}\frac{e^{iz}}{\log z}\,dz}
 \le \frac{R}{\log R}\int_0^{\pi/2}e^{-R\sin\theta}\,d\theta
 \le \frac{R}{\log R}\int_0^\infty e^{-cR\theta}\,d\theta
 =\frac1{c\log R}.

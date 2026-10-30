@@ -21,7 +21,7 @@ $$
 S=\{x+iy:0\le x\le2,\ 0\le y\le2\}.
 $$
 
-1. Compute the maximum value of $|f(z)|$ on $S$.
+1. Compute the maximum value of $\abs{f(z)}$ on $S$.
 
 2. Find the set of points in $S$ where this maximum is attained.
 :::
@@ -34,7 +34,7 @@ $$
 
 If $z=x+iy$, then
 $$
-|e^{z^2}|=e^{x^2-y^2}.
+\abs{e^{z^2}}=e^{x^2-y^2}.
 $$
 
 
@@ -46,11 +46,11 @@ z^2=(x+iy)^2=x^2-y^2+2ixy.
 $$
 For every $w\in\CC$,
 $$
-|e^w|=e^{\operatorname{Re}w}.
+\abs{e^w}=e^{\operatorname{Re}w}.
 $$
 Therefore
 $$
-|e^{z^2}|=e^{\operatorname{Re}(z^2)}
+\abs{e^{z^2}}=e^{\operatorname{Re}(z^2)}
 =e^{x^2-y^2}.
 $$
 
@@ -119,7 +119,7 @@ Conversely, at $(x,y)=(2,0)$ one has $x^2-y^2=4$.
 
 The maximum modulus is
 $$
-\boxed{\max_{z\in S}|f(z)|=e^4,}
+\boxed{\max_{z\in S}\abs{f(z)}=e^4,}
 $$
 and it is attained exactly at
 $$
@@ -131,7 +131,7 @@ $$
 
 The real exponential function is strictly increasing. By steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref},
 $$
-|f(z)|=e^{x^2-y^2}\le e^4,
+\abs{f(z)}=e^{x^2-y^2}\le e^4,
 $$
 with equality exactly when $z=2$.
 

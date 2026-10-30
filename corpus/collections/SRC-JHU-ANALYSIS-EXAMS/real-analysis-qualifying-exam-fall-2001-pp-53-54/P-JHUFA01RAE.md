@@ -108,13 +108,13 @@ Statements (iv) and (v) are true, while (vi) is false.
 
 Since $[0,1]$ has finite measure, Hölder's inequality gives
 $$
-\|f\|_p\le \|f\|_q
+\norm{f}_p\le \norm{f}_q
 $$
 for $f\in L^q([0,1])$, proving (iv).
 
-For sequences, if $a=(a_n)\in\ell^p$, then $a_n\to0$, so all but finitely many terms satisfy $|a_n|\le1$. Hence for all sufficiently large $n$,
+For sequences, if $a=(a_n)\in\ell^p$, then $a_n\to0$, so all but finitely many terms satisfy $\abs{a_n}\le1$. Hence for all sufficiently large $n$,
 $$
-|a_n|^q\le|a_n|^p,
+\abs{a_n}^q\le\abs{a_n}^p,
 $$
 which proves $a\in\ell^q$ and therefore (v).
 
@@ -140,7 +140,7 @@ $$
 $$
 For $f\in L^p\cap L^q$, Hölder interpolation gives
 $$
-\|f\|_s\le \|f\|_p^\theta\|f\|_q^{1-\theta},
+\norm{f}_s\le \norm{f}_p^\theta\norm{f}_q^{1-\theta},
 $$
 so $f\in L^s$.
 

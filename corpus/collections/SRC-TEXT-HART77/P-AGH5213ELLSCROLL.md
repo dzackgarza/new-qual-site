@@ -132,7 +132,7 @@ then $D$ is very ample.
 This is exactly Hartshorne V.2.12(b), proved on
 [[P-AGH5212ELLRULEDAMPLE]]: on a ruled surface over an elliptic curve,
 $$
-|C_0+\mfb f|
+\linearsystem{C_0+\mfb f}
 $$
 is very ample if and only if
 $$
@@ -145,7 +145,7 @@ $$
 
 ::: {.pf-step #s4}
 
-The embedding defined by $|D|$ makes every ruling fibre a line.
+The embedding defined by $\linearsystem{D}$ makes every ruling fibre a line.
 
 ::: pf-proof
 
@@ -159,9 +159,9 @@ D\cdot f
 $$
 Hence
 $$
-\OO_X(D)|_f\cong\OO_{\PP^1}(1).
+\OO_X(D)\restrict_f\cong\OO_{\PP^1}(1).
 $$
-Because the complete system $|D|$ is very ample by step [](#s3){.pf-ref}, its
+Because the complete system $\linearsystem{D}$ is very ample by step [](#s3){.pf-ref}, its
 restriction embeds each fibre as a projective line. Thus the image is a
 scroll over the elliptic curve $C$.
 
@@ -196,7 +196,7 @@ $$
 
 ::: {.pf-step #s6}
 
-The complete linear system $|D|$ has
+The complete linear system $\linearsystem{D}$ has
 $$
 \boxed{h^0(X,\OO_X(D))=2n-e=d}.
 $$
@@ -248,7 +248,7 @@ $$
 
 ::: {.pf-step #s7}
 
-The complete linear system $|D|$ embeds $X$ as an elliptic scroll of
+The complete linear system $\linearsystem{D}$ embeds $X$ as an elliptic scroll of
 degree $d$ in
 $$
 \boxed{\PP^{d-1}}.

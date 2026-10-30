@@ -208,7 +208,7 @@ $$
 
 The subgroups $N$ and $H$ have orders $15$ and $8$, have trivial intersection, and
 $$
-|NH|=15\cdot8=120=|\Gal(L/\QQ)|.
+\cardinality{NH}=15\cdot8=120=\cardinality{\Gal(L/\QQ)}.
 $$
 Thus the full group is their internal semidirect product. By step [](#s6){.pf-ref} the action of the complement $H\cong(\ZZ/15\ZZ)^\times$ on $N\cong\ZZ/15\ZZ$ is multiplication modulo $15$.
 

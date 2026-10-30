@@ -42,7 +42,7 @@ Then $g$ is nonconstant.
 
 ::: pf-proof
 
-If $|F|=q$, the product has degree $q$, so $g$ also has degree $q\ge1$.
+If $\cardinality{F}=q$, the product has degree $q$, so $g$ also has degree $q\ge1$.
 
 :::
 

@@ -42,15 +42,15 @@ Every orbit has cardinality a power of $p$.
 ::: pf-proof
 For $x\in X$, the orbit-stabilizer theorem gives
 $$
-|Gx|=[G:G_x].
+\cardinality{Gx}=[G:G_x].
 $$
 Since
 $$
-|G|=p^k,
+\cardinality{G}=p^k,
 $$
 the index of every subgroup of $G$ is a power of $p$. Thus each orbit size is
 $$
-|Gx|=p^j
+\cardinality{Gx}=p^j
 $$
 for some $0\le j\le k$.
 :::
@@ -64,7 +64,7 @@ At least one orbit has size one.
 Suppose no point were fixed by all of $G$. Then no orbit would have size
 $1$, so every orbit size would be divisible by $p$. Therefore
 $$
-n=|X|=\sum_{i=1}^r|\mathcal O_i|
+n=\cardinality{X}=\sum_{i=1}^r\cardinality{\mathcal O_i}
 $$
 would be divisible by $p$. This contradicts the hypothesis
 $$

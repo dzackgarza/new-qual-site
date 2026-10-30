@@ -170,7 +170,7 @@ $$
 :::
 
 ::: {.pf-step #structure-sheaf-iso}
-Under the homeomorphism of step [](#bijection-is-homeomorphism){.pf-ref}, the structure sheaf on $\operatorname{Spec}A_f$ is naturally isomorphic to the restriction $\mathcal O_X|_{D(f)}$.
+Under the homeomorphism of step [](#bijection-is-homeomorphism){.pf-ref}, the structure sheaf on $\operatorname{Spec}A_f$ is naturally isomorphic to the restriction $\mathcal O_X\restrict_{D(f)}$.
 
 ::: pf-proof
 It is enough to compare the sheaves on the basis
@@ -203,7 +203,7 @@ A_{af}.
 $$
 These isomorphisms commute with restriction to smaller distinguished opens because all restriction maps are localization maps.  Hence they glue to an isomorphism of sheaves on the homeomorphic spaces.
 
-Equivalently, the same conclusion follows stalkwise from step [](#local-ring-iso-af-q-ap){.pf-ref}, since the stalk of $\mathcal O_X|_{D(f)}$ at $\mathfrak p$ is $A_{\mathfrak p}$.
+Equivalently, the same conclusion follows stalkwise from step [](#local-ring-iso-af-q-ap){.pf-ref}, since the stalk of $\mathcal O_X\restrict_{D(f)}$ at $\mathfrak p$ is $A_{\mathfrak p}$.
 :::
 
 :::
@@ -212,7 +212,7 @@ Equivalently, the same conclusion follows stalkwise from step [](#local-ring-iso
 Therefore
 $$
 \boxed{
-\left(D(f),\mathcal O_X|_{D(f)}\right)
+\left(D(f),\mathcal O_X\restrict_{D(f)}\right)
 \cong
 \operatorname{Spec}A_f
 }

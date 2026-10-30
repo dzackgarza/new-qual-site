@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-X7WUF
 kind: problem
-title: Residue at a pole of order $m$ as $\lim_{\tau\to a}\frac{d^{m-1}}{d\tau^{m-1}}\bigl((\tau-a)^m
-  F(\tau)\bigr)$, and $\oint_{|z|=4}\frac{e^\tau}{(\tau^2+\pi^2)^2}\,d\tau$
+title: Residue at a pole of order $m$ as $\lim_{\tau\to a}\frac{d^{m-1}}{d\tau^{m-1}}\bigl((\tau-a)^m F(\tau)\bigr)$, and $\oint_{\abs{z}=4}\frac{e^\tau}{(\tau^2+\pi^2)^2}\,d\tau$
 classification:
   areas:
   - complex-analysis
@@ -25,7 +24,7 @@ $$\frac{1}{2 \pi i}\oint_{C} F(\tau) d\tau =
 
 
 (b) Evaluate $$\oint_{C}\frac{e^{\tau}}{(\tau^2+\pi^2)^2}d\tau$$
-where $C$ is the circle $|z|=4$.
+where $C$ is the circle $\abs{z}=4$.
 :::
 
 ::: {.solution}
@@ -40,7 +39,7 @@ $$
 This follows immediately from the Laurent expansion: the derivative on the
 right equals $(m-1)!$ times the coefficient of $(\tau-a)^{-1}$.
 
-For part (b), the poles inside $|z|=4$ are the double poles $\pm i\pi$. Their
+For part (b), the poles inside $\abs{z}=4$ are the double poles $\pm i\pi$. Their
 residues are
 $$
 \frac1{4\pi^2}+\frac{i}{4\pi^3},

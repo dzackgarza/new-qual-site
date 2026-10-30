@@ -35,7 +35,7 @@ Mark each statement true or false. No justifications are required.
 14. The $a_0$ Fourier coefficient of $e^{-x^2}$ is zero.
 15. If an invertible square matrix has two QR decompositions $A=Q_1R_1=Q_2R_2$, then $R_1=R_2$.
 16. The eigenvalue $1$ of reflection in a line in $\RR^2$ cannot have geometric multiplicity $2$.
-17. If $x'=Ax$ is asymptotically stable, then every eigenvalue $\lambda$ of $A$ satisfies $|\lambda|<1$.
+17. If $x'=Ax$ is asymptotically stable, then every eigenvalue $\lambda$ of $A$ satisfies $\abs{\lambda}<1$.
 18. Solutions of $u_t=u_{xx}$ with initial condition $u(x,0)=\sin(14x)$ converge to $0$ as $t\to\infty$.
 19. If $Av=5v$ and $Au=-u$, then $A(3v+2u)=15v-2u$.
 :::
@@ -405,7 +405,7 @@ $$
 u(x,t)=e^{-196t}\sin(14x).
 $$
 This satisfies $u_t=u_{xx}$ and $u(x,0)=\sin(14x)$, and
-$|u(x,t)|\leq e^{-196t}\to0$. Thus the solution converges uniformly to
+$\abs{u(x,t)}\leq e^{-196t}\to0$. Thus the solution converges uniformly to
 $0$ as $t\to\infty$.
 
 :::

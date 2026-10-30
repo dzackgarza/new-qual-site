@@ -45,7 +45,7 @@ if $(1-t)f(x) - tx = 0$, taking norms gives $1-t = t \implies t = 1/2$, so $f(x)
 ::: pf-step
 Define the straight-line homotopy $H: S^n \times [0, 1] \to S^n$ by:
 $$
-H(x, t) = \frac{(1 - t)f(x) - tx}{\|(1 - t)f(x) - tx\|}.
+H(x, t) = \frac{(1 - t)f(x) - tx}{\norm{(1 - t)f(x) - tx}}.
 $$
 $H$ is a homotopy from $f$ to the antipodal map $a(x) = -x$.
 
@@ -91,7 +91,7 @@ identical norm argument.
 ::: pf-step
 Define the straight-line homotopy $G: S^n \times [0, 1] \to S^n$ by:
 $$
-G(y, t) = \frac{(1 - t)f(y) + ty}{\|(1 - t)f(y) + ty\|}.
+G(y, t) = \frac{(1 - t)f(y) + ty}{\norm{(1 - t)f(y) + ty}}.
 $$
 $G$ is a homotopy from $f$ to the identity map $\operatorname{id}_{S^n}$.
 
@@ -122,7 +122,7 @@ Application to continuous non-vanishing vector fields on $D^n$:
 
 ::: pf-step
 Let $F: D^n \to \RR^n \setminus \{0\}$ be continuous.
-Define the normalized map $\widetilde{F}: D^n \to S^{n-1}$ by $\widetilde{F}(z) = \frac{F(z)}{\|F(z)\|}$, and let $g = \widetilde{F}|_{\partial D^n}: S^{n-1} \to S^{n-1}$.
+Define the normalized map $\widetilde{F}: D^n \to S^{n-1}$ by $\widetilde{F}(z) = \frac{F(z)}{\norm{F(z)}}$, and let $g = \widetilde{F}\restrict_{\partial D^n}: S^{n-1} \to S^{n-1}$.
 
 ::: pf-proof
 $F(z) \neq 0$ ensures $\widetilde{F}$ is well-defined and continuous.
@@ -142,9 +142,9 @@ maps extending to a contractible space are null-homotopic.
 ::: pf-step
 Applying steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to $g: S^{n-1} \to S^{n-1}$:
 
-- There exists $x \in S^{n-1} = \partial D^n$ with $g(x) = x \implies F(x) = \|F(x)\| x$, so $F$ points radially outward at $x$.
+- There exists $x \in S^{n-1} = \partial D^n$ with $g(x) = x \implies F(x) = \norm{F(x)} x$, so $F$ points radially outward at $x$.
 
-- There exists $y \in S^{n-1} = \partial D^n$ with $g(y) = -y \implies F(y) = -\|F(y)\| y$, so $F$ points radially inward at $y$.
+- There exists $y \in S^{n-1} = \partial D^n$ with $g(y) = -y \implies F(y) = -\norm{F(y)} y$, so $F$ points radially inward at $y$.
 
 ::: pf-proof
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} applied to $S^{n-1}$.

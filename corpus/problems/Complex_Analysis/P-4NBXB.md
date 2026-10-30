@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4NBXB
 kind: problem
-title: Zeros of $z^4+5z+3$ in $1<|z|<2$
+title: Zeros of $z^4+5z+3$ in $1<\abs{z}<2$
 classification:
   areas:
   - complex-analysis

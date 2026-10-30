@@ -46,16 +46,16 @@ $$
 K_r=\{z\in D:\operatorname{dist}(z,K)\le r\}
 $$
 is compact and contained in $D$. For every $z\in K$, Cauchy's formula for the
-derivative on the circle $|\zeta-z|=r$ gives
+derivative on the circle $\abs{\zeta-z}=r$ gives
 $$
 f_n'(z)-f'(z)
-=\frac{1}{2\pi i}\int_{|\zeta-z|=r}
+=\frac{1}{2\pi i}\int_{\abs{\zeta-z}=r}
 \frac{f_n(\zeta)-f(\zeta)}{(\zeta-z)^2}\,d\zeta.
 $$
 Hence
 $$
-|f_n'(z)-f'(z)|
-\le \frac1r\sup_{\zeta\in K_r}|f_n(\zeta)-f(\zeta)|.
+\abs{f_n'(z)-f'(z)}
+\le \frac1r\sup_{\zeta\in K_r}\abs{f_n(\zeta)-f(\zeta)}.
 $$
 The right-hand side tends to $0$ independently of $z\in K$. Therefore
 $f_n'\to f'$ uniformly on $K$. Since $K$ was arbitrary, the convergence is

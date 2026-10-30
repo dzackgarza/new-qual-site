@@ -62,7 +62,7 @@ $$
 The action is faithful because a nonidentity $h$ sends $x_1$ to the distinct
 variable $x_h$. Artin's fixed-field theorem therefore gives
 $$
-[E:F]=|A_5|=60
+[E:F]=\cardinality{A_5}=60
 $$
 and identifies the full Galois group with the acting group $A_5$.
 

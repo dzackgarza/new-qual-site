@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Assuming that $| b | < 1$ , show that $f ( z ) = z ^ { 3 } + 3 z ^ { 2 } + b z + b ^ { 2 }$ has exactly two roots (counting multiplicity) in $| z | < 1$
+Assuming that $\abs{ b } < 1$ , show that $f ( z ) = z ^ { 3 } + 3 z ^ { 2 } + b z + b ^ { 2 }$ has exactly two roots (counting multiplicity) in $\abs{ z } < 1$
 :::
 
 ::: {.solution}

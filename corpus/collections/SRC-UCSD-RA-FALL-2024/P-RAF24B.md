@@ -80,7 +80,7 @@ f_E:=\sum_{k=1}^\infty \mathbf1_{U_k}.
 $$
 By Tonelli,
 $$
-\|f_E\|_1
+\norm{f_E}_1
 =\int\sum_{k=1}^\infty\mathbf1_{U_k}
 =\sum_{k=1}^\infty m(U_k)
 <\infty,

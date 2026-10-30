@@ -79,7 +79,7 @@ Since $E/F$ is separable, this condition is equivalent to $E/F$ being normal, he
 (3) If $E/F$ is Galois, then $\Gal(E/F)\cong G/H=\Gal(K/F)/\Gal(K/E)$.
 
 ::: pf-proof
-By step [](#normal){.pf-ref}, $\sigma(E)=E$ for every $\sigma\in G$, so restriction defines a homomorphism $\rho:G\to\Gal(E/F)$, $\rho(\sigma)=\sigma|_E$.
+By step [](#normal){.pf-ref}, $\sigma(E)=E$ for every $\sigma\in G$, so restriction defines a homomorphism $\rho:G\to\Gal(E/F)$, $\rho(\sigma)=\sigma\restrict_E$.
 Its kernel is exactly $H$.
 Every $F$-automorphism of $E$ extends to an $F$-automorphism of the normal extension $K/F$, so $\rho$ is surjective.
 The first isomorphism theorem gives $\Gal(E/F)\cong G/H$.

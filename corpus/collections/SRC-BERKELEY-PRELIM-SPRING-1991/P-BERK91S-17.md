@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 Let $f$ be analytic on the punctured disk
 $$
-0<|z|<r_0
+0<\abs{z}<r_0
 $$
 with Laurent expansion
 $$
@@ -28,7 +28,7 @@ f(z)=\sum_{n=-\infty}^{\infty}c_nz^n.
 $$
 Suppose there is $M>0$ such that
 $$
-r^4\int_0^{2\pi}|f(re^{i\theta})|^2\,d\theta<M
+r^4\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta<M
 \qquad(0<r<r_0).
 $$
 Prove that

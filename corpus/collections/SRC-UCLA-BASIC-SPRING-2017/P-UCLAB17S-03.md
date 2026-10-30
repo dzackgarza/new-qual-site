@@ -132,11 +132,11 @@ But
 $$
 v^TMv
 =
-\lambda\|v\|_2^2.
+\lambda\norm{v}_2^2.
 $$
 Since
 $$
-\|v\|_2^2>0,
+\norm{v}_2^2>0,
 $$
 one has
 $$
@@ -190,7 +190,7 @@ For an eigenvector $v$,
 $$
 v^TMv
 =
-\lambda\|v\|_2^2.
+\lambda\norm{v}_2^2.
 $$
 Positive semidefiniteness gives
 $$
@@ -198,7 +198,7 @@ v^TMv\ge0.
 $$
 Since
 $$
-\|v\|_2^2>0,
+\norm{v}_2^2>0,
 $$
 one gets
 $$

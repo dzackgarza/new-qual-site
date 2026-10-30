@@ -76,7 +76,7 @@ $$
 
 Since $P\trianglelefteq G$, $PQ$ is a subgroup. Also $P\cap Q=1$ because their orders are coprime, so
 $$
-|PQ|=|P||Q|=7\cdot8=56=|G|.
+\cardinality{PQ}=\cardinality{P}\cardinality{Q}=7\cdot8=56=\cardinality{G}.
 $$
 Thus $G=PQ$, giving the indicated semidirect product. The action is conjugation by $Q$ on $P$.
 
@@ -90,7 +90,7 @@ The image of $\varphi$ has order at most $2$. Hence there are only two possible 
 
 ::: pf-proof
 
-The image order divides both $|C_8|=8$ and $|\operatorname{Aut}(C_7)|=6$, so it divides $\gcd(8,6)=2$. Since $C_6$ has a unique subgroup of order $2$, there is exactly one nontrivial image. Also $C_8$ has a unique quotient of order $2$, so the nontrivial homomorphism is unique up to automorphisms of source and target.
+The image order divides both $\cardinality{C_8}=8$ and $\cardinality{\operatorname{Aut}(C_7)}=6$, so it divides $\gcd(8,6)=2$. Since $C_6$ has a unique subgroup of order $2$, there is exactly one nontrivial image. Also $C_8$ has a unique quotient of order $2$, so the nontrivial homomorphism is unique up to automorphisms of source and target.
 
 :::
 

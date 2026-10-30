@@ -34,9 +34,9 @@ $$\lim_{A \to \infty} \int_{-A}^{A} \frac{\sin x}{x} e^{ixt} \, dx.$$
 The requested limit is
 $$
 \boxed{\begin{cases}
-\pi,& |t|<1,\\
-\pi/2,& |t|=1,\\
-0,& |t|>1.
+\pi,& \abs{t}<1,\\
+\pi/2,& \abs{t}=1,\\
+0,& \abs{t}>1.
 \end{cases}}
 $$
 We give $\sin x/x$ its continuous value one at zero.
@@ -121,8 +121,8 @@ $$
 \frac\pi2\bigl(\operatorname{sgn}(1+t)
 +\operatorname{sgn}(1-t)\bigr).
 $$
-Both signs are positive for $|t|<1$, exactly one is zero
-at $t=\pm1$, and the signs cancel for $|t|>1$.
+Both signs are positive for $\abs{t}<1$, exactly one is zero
+at $t=\pm1$, and the signs cancel for $\abs{t}>1$.
 These are the three displayed values. All cancellations
 were made at the finite symmetric endpoints before the
 limit was taken.

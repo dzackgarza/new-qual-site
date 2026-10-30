@@ -20,7 +20,7 @@ audit:
 Problem 7. Let $(f_n)$ be a sequence of real-valued functions on $\RR$.
 Assume that there is $B<\infty$ such that
 $$
-|f_n(x)|\le B
+\abs{f_n(x)}\le B
 $$
 for every $n$ and every $x$.
 Prove that there is a subsequence $(f_{n_k})$ such that
@@ -52,7 +52,7 @@ has a convergent subsequence.
 
 By hypothesis,
 $$
-|f_n(r_1)|\le B
+\abs{f_n(r_1)}\le B
 $$
 for every $n$.
 Thus the sequence is bounded in the compact interval

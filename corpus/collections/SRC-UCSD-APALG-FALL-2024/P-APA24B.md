@@ -60,12 +60,12 @@ TT^*=T^*T
 $$
 gives
 $$
-\sum_{j=1}^n|t_{1j}|^2
-=\sum_{j=1}^n|t_{j1}|^2.
+\sum_{j=1}^n\abs{t_{1j}}^2
+=\sum_{j=1}^n\abs{t_{j1}}^2.
 $$
-Because $T$ is upper triangular, $t_{j1}=0$ for $j>1$, so the right side is $|t_{11}|^2$. Therefore
+Because $T$ is upper triangular, $t_{j1}=0$ for $j>1$, so the right side is $\abs{t_{11}}^2$. Therefore
 $$
-\sum_{j=2}^n|t_{1j}|^2=0,
+\sum_{j=2}^n\abs{t_{1j}}^2=0,
 $$
 and hence $t_{1j}=0$ for every $j>1$.
 Thus

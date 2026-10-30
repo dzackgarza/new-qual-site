@@ -56,7 +56,7 @@ Choose a base point $x_0\in M$ and standard generators
 $$
 \pi_1(M,x_0)
 =\left\langle a_1,b_1,a_2,b_2
-\mathrel{\big|}
+\mathrel{\presentationbar}
 [a_1,b_1][a_2,b_2]=1
 \right\rangle.
 $$

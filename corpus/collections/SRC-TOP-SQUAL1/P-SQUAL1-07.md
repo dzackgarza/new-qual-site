@@ -77,7 +77,7 @@ F(a,b)/H_1
 \cong
 C_4.
 $$
-Thus the index equals $|C_4|=4$.
+Thus the index equals $\cardinality{C_4}=4$.
 
 :::
 

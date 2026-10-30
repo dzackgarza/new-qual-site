@@ -16,12 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on the unit disk, with $f(0)=0$ and $|f(z)|\le1$ for $|z|<1$.
+Let $f$ be holomorphic on the unit disk, with $f(0)=0$ and $\abs{f(z)}\le1$ for $\abs{z}<1$.
 Prove, using the maximum principle, that
 $$
-|f(z)|\le|z|
+\abs{f(z)}\le\abs{z}
 $$
-for $|z|<1$.
+for $\abs{z}<1$.
 :::
 
 ::: {.solution}
@@ -77,11 +77,11 @@ $$
 $$
 On the circle
 $$
-|z|=r,
+\abs{z}=r,
 $$
 one has
 $$
-|g(z)|
+\abs{g(z)}
 \le
 \frac1r.
 $$
@@ -91,17 +91,17 @@ $$
 
 For
 $$
-|z|=r,
+\abs{z}=r,
 $$
 the hypothesis gives
 $$
-|f(z)|\le1.
+\abs{f(z)}\le1.
 $$
 Hence
 $$
-|g(z)|
+\abs{g(z)}
 =
-\frac{|f(z)|}{|z|}
+\frac{\abs{f(z)}}{\abs{z}}
 \le
 \frac1r.
 $$
@@ -114,11 +114,11 @@ $$
 
 For every
 $$
-|z|\le r,
+\abs{z}\le r,
 $$
 one has
 $$
-|g(z)|
+\abs{g(z)}
 \le
 \frac1r.
 $$
@@ -128,13 +128,13 @@ $$
 
 The function $g$ is holomorphic on a neighborhood of the closed disk
 $$
-\{|z|\le r\}.
+\{\abs{z}\le r\}.
 $$
 By the maximum modulus principle,
 $$
-\max_{|z|\le r}|g(z)|
+\max_{\abs{z}\le r}\abs{g(z)}
 =
-\max_{|z|=r}|g(z)|.
+\max_{\abs{z}=r}\abs{g(z)}.
 $$
 Apply the boundary estimate from step [](#s1-2){.pf-ref}.
 
@@ -150,7 +150,7 @@ z\in\DD.
 $$
 Then
 $$
-|g(z)|\le1.
+\abs{g(z)}\le1.
 $$
 
 
@@ -162,11 +162,11 @@ r
 $$
 with
 $$
-|z|<r<1.
+\abs{z}<r<1.
 $$
 Step [](#s1-3){.pf-ref} gives
 $$
-|g(z)|
+\abs{g(z)}
 \le
 \frac1r.
 $$
@@ -176,7 +176,7 @@ r\uparrow1
 $$
 gives
 $$
-|g(z)|\le1.
+\abs{g(z)}\le1.
 $$
 
 :::
@@ -188,9 +188,9 @@ $$
 Therefore
 $$
 \boxed{
-|f(z)|\le|z|
+\abs{f(z)}\le\abs{z}
 \qquad
-(|z|<1).
+(\abs{z}<1).
 }
 $$
 
@@ -207,11 +207,11 @@ f(z)=zg(z).
 $$
 By step [](#s1-4){.pf-ref},
 $$
-|f(z)|
+\abs{f(z)}
 =
-|z|\,|g(z)|
+\abs{z}\,\abs{g(z)}
 \le
-|z|.
+\abs{z}.
 $$
 At
 $$

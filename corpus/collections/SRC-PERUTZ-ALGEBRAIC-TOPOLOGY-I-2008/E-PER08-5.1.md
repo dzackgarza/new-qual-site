@@ -55,7 +55,7 @@ p^{-1}(U)=\coprod_{\alpha}V_\alpha
 $$
 is a disjoint union of open sets and every restriction
 $$
-p|_{V_\alpha}:V_\alpha\to U
+p\restrict_{V_\alpha}:V_\alpha\to U
 $$
 is a homeomorphism.
 
@@ -76,7 +76,7 @@ $$
 Because $I$ has length less than $1$, no two distinct points of $I$ differ by an integer.
 Thus
 $$
-q|_I:I\to U
+q\restrict_I:I\to U
 $$
 is injective; it is also an open continuous surjection, hence a homeomorphism.
 
@@ -86,7 +86,7 @@ q^{-1}(U)=\coprod_{k\in\ZZ}(I+k).
 $$
 The intervals $I+k$ are pairwise disjoint, and translation by $k$ followed by $q$ shows that
 $$
-q|_{I+k}:I+k\to U
+q\restrict_{I+k}:I+k\to U
 $$
 is a homeomorphism for every $k$.
 Hence $U$ is evenly covered.
@@ -104,7 +104,7 @@ The map $p_n:S^1\to S^1$, $p_n(z)=z^n$, is a covering map.
 Fix $e^{i\theta}\in S^1$.
 Choose $0<\varepsilon<\pi$ and let
 $$
-U=\{e^{iu}:|u-\theta|<\varepsilon\}.
+U=\{e^{iu}:\abs{u-\theta}<\varepsilon\}.
 $$
 This is an open arc on which the argument is single-valued.
 
@@ -113,7 +113,7 @@ $$
 V_j=
 \left\{
  e^{iv}:
- \left|v-\frac{\theta+2\pi j}{n}\right|<\frac{\varepsilon}{n}
+ \abs{v-\frac{\theta+2\pi j}{n}}<\frac{\varepsilon}{n}
 \right\}.
 $$
 These arcs are pairwise disjoint and
@@ -127,7 +127,7 @@ e^{iu}\longmapsto
 $$
 so each restriction
 $$
-p_n|_{V_j}:V_j\to U
+p_n\restrict_{V_j}:V_j\to U
 $$
 is a homeomorphism.
 Thus $p_n$ is an $n$-sheeted covering.
@@ -157,7 +157,7 @@ p_i^{-1}(U_i)=\coprod_{\alpha_i}V_{i,\alpha_i}
 $$
 and each
 $$
-p_i|_{V_{i,\alpha_i}}:V_{i,\alpha_i}\xrightarrow{\cong}U_i.
+p_i\restrict_{V_{i,\alpha_i}}:V_{i,\alpha_i}\xrightarrow{\cong}U_i.
 $$
 Then
 $$
@@ -168,9 +168,9 @@ V_{1,\alpha_1}\times V_{2,\alpha_2},
 $$
 and on each component
 $$
-(p_1\times p_2)|_{V_{1,\alpha_1}\times V_{2,\alpha_2}}
+(p_1\times p_2)\restrict_{V_{1,\alpha_1}\times V_{2,\alpha_2}}
 =
-(p_1|_{V_{1,\alpha_1}})\times(p_2|_{V_{2,\alpha_2}}),
+(p_1\restrict_{V_{1,\alpha_1}})\times(p_2\restrict_{V_{2,\alpha_2}}),
 $$
 which is a homeomorphism onto $U_1\times U_2$.
 
@@ -206,11 +206,11 @@ $$
 Every projective point in $U$ has exactly one representative in $H_+$ and exactly one in $H_-$.
 Therefore
 $$
-q|_{H_+}:H_+\to U
+q\restrict_{H_+}:H_+\to U
 $$
 and
 $$
-q|_{H_-}:H_-\to U
+q\restrict_{H_-}:H_-\to U
 $$
 are continuous bijections.
 Their inverses choose, respectively, the unique representative having positive or negative inner product with $x$; these choices vary continuously because the sign cannot change inside $U$.

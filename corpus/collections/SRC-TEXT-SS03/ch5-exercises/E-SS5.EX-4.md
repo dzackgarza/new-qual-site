@@ -27,33 +27,33 @@ F(z) = \prod_{n=1}^{\infty} (1 - e^{-2\pi n t} e^{2\pi i z}).
 $$
 Note that the product defines an entire function of $z$.
 
-(a) Show that $|F(z)| \le A e^{a |z|^2}$, hence $F$ is of order 2.
+(a) Show that $\abs{F(z)} \le A e^{a \abs{z}^2}$, hence $F$ is of order 2.
 
 (b) Show that $F$ vanishes exactly when $z = -i n t + m$ for $n \ge 1$ and $m \in \ZZ$ (integers).
 Deduce that if $\{z_k\}$ is an enumeration of these zeros, we have
 $$
-\sum_k \frac{1}{|z_k|^2} = \infty \quad \text{but} \quad \sum_k \frac{1}{|z_k|^{2+\varepsilon}} < \infty \quad \text{for any } \varepsilon > 0.
+\sum_k \frac{1}{\abs{z_k}^2} = \infty \quad \text{but} \quad \sum_k \frac{1}{\abs{z_k}^{2+\varepsilon}} < \infty \quad \text{for any } \varepsilon > 0.
 $$
 :::
 
 ::: {.solution}
-Write $q=e^{-2\pi t}\in(0,1)$. On every compact subset of $\CC$, the series $\sum_{n\ge1}|q^n e^{2\pi iz}|$ converges uniformly, so
+Write $q=e^{-2\pi t}\in(0,1)$. On every compact subset of $\CC$, the series $\sum_{n\ge1}\abs{q^n e^{2\pi iz}}$ converges uniformly, so
 $$
 F(z)=\prod_{n\ge1}(1-q^n e^{2\pi iz})
 $$
 defines an entire function.
 
-Let $N=\lfloor |z|/t\rfloor+1$. For $n>N$,
+Let $N=\lfloor \abs{z}/t\rfloor+1$. For $n>N$,
 $$
-q^n|e^{2\pi iz}|\le e^{-2\pi nt+2\pi|z|}\le e^{-2\pi t(n-N)},
+q^n\abs{e^{2\pi iz}}\le e^{-2\pi nt+2\pi\abs{z}}\le e^{-2\pi t(n-N)},
 $$
 so the tail product is bounded uniformly in $z$. For $1\le n\le N$,
 $$
-|1-q^ne^{2\pi iz}|\le1+e^{2\pi|z|}\le2e^{2\pi|z|}.
+\abs{1-q^ne^{2\pi iz}}\le1+e^{2\pi\abs{z}}\le2e^{2\pi\abs{z}}.
 $$
 Hence, for suitable $A,a>0$ depending only on $t$,
 $$
-|F(z)|\le A e^{a|z|^2}.
+\abs{F(z)}\le A e^{a\abs{z}^2}.
 $$
 Thus the order is at most $2$.
 
@@ -69,9 +69,9 @@ There are no other zeros because the locally uniformly convergent product is non
 
 For these zeros,
 $$
-|m-int|^2=m^2+n^2t^2.
+\abs{m-int}^2=m^2+n^2t^2.
 $$
-For each $n$, at least $c_t n$ integers satisfy $|m|\le nt$, and for those terms $m^2+n^2t^2\le2n^2t^2$. Consequently
+For each $n$, at least $c_t n$ integers satisfy $\abs{m}\le nt$, and for those terms $m^2+n^2t^2\le2n^2t^2$. Consequently
 $$
 \sum_{n\ge1}\sum_{m\in\ZZ}\frac1{m^2+n^2t^2}
 \ge c\sum_{n\ge1}\frac1n=\infty.
@@ -88,9 +88,9 @@ $$
 $$
 Thus the exponent of convergence of the zero set is exactly $2$.
 
-It remains to rule out order $<2$. If the order were $\rho<2$, choose $\rho<\sigma<2$. Then for large $r$, $\log M(r)=O(r^\sigma)$. Jensen's formula implies that the number $N(r)$ of zeros in $|z|\le r$ satisfies
+It remains to rule out order $<2$. If the order were $\rho<2$, choose $\rho<\sigma<2$. Then for large $r$, $\log M(r)=O(r^\sigma)$. Jensen's formula implies that the number $N(r)$ of zeros in $\abs{z}\le r$ satisfies
 $$
-N(r/2)\log2\le \log M(r)-\log|F(0)|=O(r^\sigma).
+N(r/2)\log2\le \log M(r)-\log\abs{F(0)}=O(r^\sigma).
 $$
-But the lattice above contains at least $c r^2$ points in $|z|\le r$ for all large $r$, a contradiction. Hence the order is exactly $2$.
+But the lattice above contains at least $c r^2$ points in $\abs{z}\le r$ for all large $r$, a contradiction. Hence the order is exactly $2$.
 :::

@@ -201,7 +201,7 @@ Inside the affine $W_j$, choose a distinguished open
 $$
 x\in D_{W_j}(b)\subseteq D_U(a).
 $$
-Write the regular function $b|_{D_U(a)}$ as $c/a^m$ with $c\in A$.
+Write the regular function $b\restrict_{D_U(a)}$ as $c/a^m$ with $c\in A$.
 Then
 $$
 D_{W_j}(b)=D_U(a)\cap D_U(c)=D_U(ac),

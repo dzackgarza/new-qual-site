@@ -29,12 +29,12 @@ Prove that $L^\infty(X,\mathcal B,\mu)$ is complete in the $L^\infty$ norm.
 Let $(f_n)$ be Cauchy in $L^\infty$.
 Choose a subsequence $(f_{n_k})$ such that
 $$
-\|f_{n_{k+1}}-f_{n_k}\|_\infty<2^{-k}
+\norm{f_{n_{k+1}}-f_{n_k}}_\infty<2^{-k}
 \qquad(k\ge1).
 $$
 For each $k$, there is a null set $N_k$ outside which
 $$
-|f_{n_{k+1}}(x)-f_{n_k}(x)|\le2^{-k}.
+\abs{f_{n_{k+1}}(x)-f_{n_k}(x)}\le2^{-k}.
 $$
 Let
 $$
@@ -43,7 +43,7 @@ $$
 Then $\mu(N)=0$.
 For $x\notin N$ and $m>k$,
 $$
-|f_{n_m}(x)-f_{n_k}(x)|
+\abs{f_{n_m}(x)-f_{n_k}(x)}
 \le\sum_{j=k}^{m-1}2^{-j}
 \le2^{1-k}.
 $$
@@ -59,27 +59,27 @@ $$
 Then $f$ is measurable.
 Moreover, for $x\notin N$,
 $$
-|f(x)-f_{n_k}(x)|\le2^{1-k},
+\abs{f(x)-f_{n_k}(x)}\le2^{1-k},
 $$
 so
 $$
-\|f-f_{n_k}\|_\infty\le2^{1-k}\longrightarrow0.
+\norm{f-f_{n_k}}_\infty\le2^{1-k}\longrightarrow0.
 $$
 In particular $f\in L^\infty$.
 
 Finally, since the original sequence $(f_n)$ is Cauchy, given $\varepsilon>0$ choose $N_0$ such that
 $$
 m,n\ge N_0\quad\Longrightarrow\quad
-\|f_m-f_n\|_\infty<\varepsilon/2.
+\norm{f_m-f_n}_\infty<\varepsilon/2.
 $$
 Choose $k$ with $n_k\ge N_0$ and
 $$
-\|f_{n_k}-f\|_\infty<\varepsilon/2.
+\norm{f_{n_k}-f}_\infty<\varepsilon/2.
 $$
 Then for every $n\ge N_0$,
 $$
-\|f_n-f\|_\infty
-\le\|f_n-f_{n_k}\|_\infty+\|f_{n_k}-f\|_\infty
+\norm{f_n-f}_\infty
+\le\norm{f_n-f_{n_k}}_\infty+\norm{f_{n_k}-f}_\infty
 <\varepsilon.
 $$
 Hence $f_n\to f$ in $L^\infty$, and therefore

@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $f$ be entire and let $a_1,\ldots,a_n$ be all of its zeros in $\CC$. Suppose there exist $R>0$ and $\alpha>1$ such that
 $$
-|f(z)|\ge |z|^\alpha
+\abs{f(z)}\ge \abs{z}^\alpha
 $$
-for every $|z|\ge R$. Prove that
+for every $\abs{z}\ge R$. Prove that
 $$
 \sum_{j=1}^n \operatorname{Res}_{z=a_j}\frac1{f(z)}=0.
 $$
@@ -66,7 +66,7 @@ that circle. The residue theorem therefore gives the displayed identity.
 ::: {.pf-step #integral-bound}
 For every $r\ge R_0$,
 $$
-\left|\int_{\abs{z}=r}g(z)\,dz\right|
+\abs{\int_{\abs{z}=r}g(z)\,dz}
 \le 2\pi r^{1-\alpha}.
 $$
 
@@ -79,7 +79,7 @@ $$
 $$
 The circle has length $2\pi r$, so the ML estimate yields
 $$
-\left|\int_{\abs{z}=r}g(z)\,dz\right|
+\abs{\int_{\abs{z}=r}g(z)\,dz}
 \le 2\pi r\cdot r^{-\alpha}
 =2\pi r^{1-\alpha}.
 $$

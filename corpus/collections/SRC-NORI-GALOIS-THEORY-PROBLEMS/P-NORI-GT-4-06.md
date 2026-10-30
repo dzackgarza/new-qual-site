@@ -84,7 +84,7 @@ The set of elements fixed by every automorphism in a group is closed under addit
 
 Artin's theorem on fixed fields gives
 $$
-[L:K]=|S_d|=d!
+[L:K]=\cardinality{S_d}=d!
 $$
 and
 $$
@@ -96,7 +96,7 @@ $$
 
 Artin's theorem states: if a finite group $G$ acts faithfully by automorphisms on a field $L$ and $K=L^G$ is its fixed field, then
 $$
-[L:K]=|G|,
+[L:K]=\cardinality{G},
 $$
 the extension $L/K$ is finite Galois, and the full Galois group is exactly $G$.
 

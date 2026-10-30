@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that, for any $a \in \CC$ and any integer $n \geq 2$, the polynomial $1 + z + az^n$ has at least one root in the disk $\{|z| \leq 2\}$.
+Prove that, for any $a \in \CC$ and any integer $n \geq 2$, the polynomial $1 + z + az^n$ has at least one root in the disk $\{\abs{z} \leq 2\}$.
 
 Hint: The constant term in a monic polynomial is the product of its zeros (up to sign).
 :::
@@ -54,7 +54,7 @@ factor the polynomial (assuming $a \neq 0$; if $a = 0$, the polynomial is $1 + z
 
 ::: {.pf-step #s3}
 
-The constant term is $1 = a(-1)^n \prod_i r_i$, so $\prod_i |r_i| = 1/|a|$.
+The constant term is $1 = a(-1)^n \prod_i r_i$, so $\prod_i \abs{r_i} = 1/\abs{a}$.
 
 ::: pf-proof
 
@@ -66,11 +66,11 @@ the constant term is $a(-1)^n \prod_i r_i = 1$.
 
 ::: {.pf-step #s4}
 
-If all $|r_i| > 2$, then $\prod_i |r_i| > 2^n$, so by step [](#s3){.pf-ref}, $1/|a| > 2^n$, i.e. $|a| < 2^{-n}$.
+If all $\abs{r_i} > 2$, then $\prod_i \abs{r_i} > 2^n$, so by step [](#s3){.pf-ref}, $1/\abs{a} > 2^n$, i.e. $\abs{a} < 2^{-n}$.
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref} and the assumption $|r_i| > 2$.
+Step [](#s3){.pf-ref} and the assumption $\abs{r_i} > 2$.
 
 :::
 
@@ -78,7 +78,7 @@ Step [](#s3){.pf-ref} and the assumption $|r_i| > 2$.
 
 ::: {.pf-step #s5}
 
-On $|z| = 2$, $|az^n| = |a| \cdot 2^n < 1$, and $|1 + z| \ge |z| - 1 = 1$.
+On $\abs{z} = 2$, $\abs{az^n} = \abs{a} \cdot 2^n < 1$, and $\abs{1 + z} \ge \abs{z} - 1 = 1$.
 
 ::: pf-proof
 
@@ -90,7 +90,7 @@ Step [](#s4){.pf-ref} and the reverse triangle inequality.
 
 ::: {.pf-step #s6}
 
-Hence on $|z| = 2$, $|az^n| < 1 \le |1 + z|$, so by Rouché's theorem, $1 + z + az^n$ and $1 + z$ have the same number of zeros in $|z| < 2$.
+Hence on $\abs{z} = 2$, $\abs{az^n} < 1 \le \abs{1 + z}$, so by Rouché's theorem, $1 + z + az^n$ and $1 + z$ have the same number of zeros in $\abs{z} < 2$.
 
 ::: pf-proof
 
@@ -102,7 +102,7 @@ Rouché's theorem.
 
 ::: {.pf-step #s7}
 
-$1 + z$ has exactly one zero in $|z| < 2$ (at $z = -1$).
+$1 + z$ has exactly one zero in $\abs{z} < 2$ (at $z = -1$).
 
 ::: pf-proof
 
@@ -114,7 +114,7 @@ $1 + z = 0$ iff $z = -1$, which has modulus $1 < 2$.
 
 ::: {.pf-step #s8}
 
-Hence $1 + z + az^n$ has a root in $|z| < 2$, contradicting the assumption that all roots have modulus $> 2$.
+Hence $1 + z + az^n$ has a root in $\abs{z} < 2$, contradicting the assumption that all roots have modulus $> 2$.
 
 ::: pf-proof
 
@@ -126,7 +126,7 @@ Steps [](#s6){.pf-ref} and [](#s7){.pf-ref}.
 
 ::: {.pf-step #s9}
 
-Therefore $1 + z + az^n$ has at least one root in $|z| \le 2$.
+Therefore $1 + z + az^n$ has at least one root in $\abs{z} \le 2$.
 
 ::: pf-proof
 

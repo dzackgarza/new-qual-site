@@ -49,9 +49,9 @@ be the set of $H$-orbits in $X$.
 
 2. If $x\in\mathcal O_\alpha$, prove
    $$
-   |\mathcal O_\alpha|=|H:H\cap G_x|
+   \cardinality{\mathcal O_\alpha}=\subgroupindex{H:H\cap G_x}
    \qquad\text{and}\qquad
-   |Y|=|G:HG_x|,
+   \cardinality{Y}=\subgroupindex{G:HG_x},
    $$
    where
    $$
@@ -167,7 +167,7 @@ $$
 is bijective, with inverse $z\mapsto g^{-1}z$.
 Hence
 $$
-|\mathcal O_x|=|\mathcal O_y|.
+\cardinality{\mathcal O_x}=\cardinality{\mathcal O_y}.
 $$
 
 :::
@@ -178,7 +178,7 @@ $$
 
 If $x\in\mathcal O_\alpha$, then
 $$
-|\mathcal O_\alpha|=|H:H\cap G_x|.
+\cardinality{\mathcal O_\alpha}=\subgroupindex{H:H\cap G_x}.
 $$
 
 ::: pf-proof
@@ -197,7 +197,7 @@ Hx\cong H/(H\cap G_x)
 $$
 as sets, and hence
 $$
-|\mathcal O_\alpha|=|H:H\cap G_x|.
+\cardinality{\mathcal O_\alpha}=\subgroupindex{H:H\cap G_x}.
 $$
 
 :::
@@ -240,7 +240,7 @@ $$
 
 We have
 $$
-|Y|=|G:HG_x|.
+\cardinality{Y}=\subgroupindex{G:HG_x}.
 $$
 
 ::: pf-proof
@@ -250,7 +250,7 @@ Hence $Y$ is the orbit of $\mathcal O_x$ under this action.
 By step [](#s6){.pf-ref}, the stabilizer of $\mathcal O_x$ is $HG_x$.
 Orbit-stabilizer therefore gives
 $$
-|Y|=|G:\operatorname{Stab}_G(\mathcal O_x)|=|G:HG_x|.
+\cardinality{Y}=\subgroupindex{G:\operatorname{Stab}_G(\mathcal O_x)}=\subgroupindex{G:HG_x}.
 $$
 
 :::

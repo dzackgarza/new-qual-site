@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 11. For $R>1$, let
 $$
-A_R=\{z\in\CC:1<|z|<R\}.
+A_R=\{z\in\CC:1<\abs{z}<R\}.
 $$
 Assume there is a conformal (i.e. injective, holomorphic) mapping $F$ from $A_{R_1}$ onto $A_{R_2}$. Prove that $R_1=R_2$.
 :::
@@ -64,7 +64,7 @@ w=x+iy\in S_j,
 $$
 then
 $$
-|e^w|=e^x
+\abs{e^w}=e^x
 $$
 lies strictly between $1$ and $R_j=e^{L_j}$, so $p_j(S_j)=A_{R_j}$.
 The strip $S_j$ is simply connected. Two points in $S_j$ have the same
@@ -281,9 +281,9 @@ $$
 $$
 for every $x\in(0,L_1)$. By steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref},
 $$
-|m(x_2)-m(x_1)|
+\abs{m(x_2)-m(x_1)}
 =
-|k|\,(x_2-x_1)
+\abs{k}\,(x_2-x_1)
 =
 x_2-x_1
 $$

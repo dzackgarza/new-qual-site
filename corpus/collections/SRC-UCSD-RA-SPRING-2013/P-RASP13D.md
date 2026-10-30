@@ -79,7 +79,7 @@ Uniform bound via Banach–Steinhaus Theorem:
 For each fixed $x \in X$, the sequence $(A_n(x))_{n=1}^\infty$ converges in $Y$.
 Every convergent sequence in a normed space is bounded:
 $$
-\sup_{n \ge 1} \|A_n(x)\|_Y < \infty \quad \text{for each } x \in X.
+\sup_{n \ge 1} \norm{A_n(x)}_Y < \infty \quad \text{for each } x \in X.
 $$
 
 ::: pf-proof
@@ -94,7 +94,7 @@ convergent sequences in metric spaces are bounded.
 
 Since $X$ is a Banach space and $Y$ is a normed space, by the Uniform Boundedness Principle (Banach–Steinhaus Theorem), pointwise boundedness implies uniform boundedness in operator norm:
 $$
-M := \sup_{n \ge 1} \|A_n\|_{L(X, Y)} < \infty.
+M := \sup_{n \ge 1} \norm{A_n}_{L(X, Y)} < \infty.
 $$
 
 ::: pf-proof
@@ -117,9 +117,9 @@ Continuity of $A$:
 
 ::: pf-step
 
-For any $x \in X$, by continuity of the norm $\|\cdot\|_Y$:
+For any $x \in X$, by continuity of the norm $\norm{\cdot}_Y$:
 $$
-\|A(x)\|_Y = \left\| \lim_{n \to \infty} A_n(x) \right\|_Y = \lim_{n \to \infty} \|A_n(x)\|_Y \le \limsup_{n \to \infty} \|A_n\|_{L(X, Y)} \|x\|_X \le M \|x\|_X.
+\norm{A(x)}_Y = \norm{ \lim_{n \to \infty} A_n(x) }_Y = \lim_{n \to \infty} \norm{A_n(x)}_Y \le \limsup_{n \to \infty} \norm{A_n}_{L(X, Y)} \norm{x}_X \le M \norm{x}_X.
 $$
 
 ::: pf-proof
@@ -132,7 +132,7 @@ continuity of norm and definition of operator norm.
 
 ::: pf-step
 
-Thus $\|A\|_{L(X, Y)} = \sup_{\|x\|_X \le 1} \|A(x)\|_Y \le M < \infty$.
+Thus $\norm{A}_{L(X, Y)} = \sup_{\norm{x}_X \le 1} \norm{A(x)}_Y \le M < \infty$.
 Hence $A$ is a bounded (continuous) linear operator.
 
 ::: pf-proof

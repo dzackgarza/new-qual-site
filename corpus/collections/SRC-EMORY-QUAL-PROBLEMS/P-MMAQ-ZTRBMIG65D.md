@@ -57,7 +57,7 @@ $\text{Int}(\gamma)$ is an open neighborhood of $z_0$.
 
 ::: pf-step
 
-For any $\varepsilon \in (0, \varepsilon_0)$, let $C_\varepsilon$ denote the circle $\{z \in \CC : |z - z_0| = \varepsilon\}$, oriented counterclockwise.
+For any $\varepsilon \in (0, \varepsilon_0)$, let $C_\varepsilon$ denote the circle $\{z \in \CC : \abs{z - z_0} = \varepsilon\}$, oriented counterclockwise.
 
 ::: pf-proof
 
@@ -171,7 +171,7 @@ Follows from steps [](#s1-4){.pf-ref} and [](#s2-3){.pf-ref}.
 
 ::: pf-step
 
-Since $f$ is holomorphic at $z_0$, $f$ is continuous at $z_0$: for any $\delta > 0$, there exists $\varepsilon > 0$ such that $|z - z_0| = \varepsilon \implies |f(z) - f(z_0)| \leq \delta$.
+Since $f$ is holomorphic at $z_0$, $f$ is continuous at $z_0$: for any $\delta > 0$, there exists $\varepsilon > 0$ such that $\abs{z - z_0} = \varepsilon \implies \abs{f(z) - f(z_0)} \leq \delta$.
 
 ::: pf-proof
 
@@ -183,11 +183,11 @@ Continuity of $f$ at $z_0$.
 
 ::: pf-step
 
-On $C_\varepsilon$, the integrand is bounded by: $$\left| \frac{f(z) - f(z_0)}{z - z_0} \right| = \frac{|f(z) - f(z_0)|}{\varepsilon} \leq \frac{\delta}{\varepsilon}.$$
+On $C_\varepsilon$, the integrand is bounded by: $$\abs{ \frac{f(z) - f(z_0)}{z - z_0} } = \frac{\abs{f(z) - f(z_0)}}{\varepsilon} \leq \frac{\delta}{\varepsilon}.$$
 
 ::: pf-proof
 
-$|z - z_0| = \varepsilon$.
+$\abs{z - z_0} = \varepsilon$.
 
 :::
 
@@ -207,7 +207,7 @@ Circumference of circle of radius $\varepsilon$.
 
 ::: pf-step
 
-By the $ML$-inequality: $$\left| \oint_{C_\varepsilon} \frac{f(z) - f(z_0)}{z - z_0} \, dz \right| \leq \frac{\delta}{\varepsilon} \cdot (2\pi \varepsilon) = 2\pi \delta.$$
+By the $ML$-inequality: $$\abs{ \oint_{C_\varepsilon} \frac{f(z) - f(z_0)}{z - z_0} \, dz } \leq \frac{\delta}{\varepsilon} \cdot (2\pi \varepsilon) = 2\pi \delta.$$
 
 ::: pf-proof
 

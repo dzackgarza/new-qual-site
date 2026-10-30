@@ -124,7 +124,7 @@ Apply the universal coefficient theorem for cohomology to step [](#homology-of-B
 With $\FF_2$ coefficients,
 $$\boxed{H^*(A;\FF_2)\cong
 \FF_2[x,a,b]/(x^4,a^2,b^2,ab,ax,bx),}$$
-with $|x|=|a|=|b|=1$.
+with $\gradeddegree{x}=\gradeddegree{a}=\gradeddegree{b}=1$.
 
 ::: pf-proof
 $H^*(\RP^3;\FF_2)=\FF_2[x]/(x^4)$. The graph has degree-$1$ generators $a,b$ with all positive-degree products zero. In a wedge, all products between positive-degree classes from different summands vanish.

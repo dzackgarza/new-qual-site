@@ -39,11 +39,11 @@ The real sequence $(a_k)$ is bounded.
 
 Since $S$ is bounded in $\RR^2$, there is $R>0$ such that
 $$
-\|(a,b)\|\le R
+\norm{(a,b)}\le R
 $$
 for every $(a,b)\in S$. Hence
 $$
-|a_k|\le R
+\abs{a_k}\le R
 $$
 for every $k$.
 
@@ -81,7 +81,7 @@ has a convergent subsequence.
 
 The same bound on $S$ gives
 $$
-|b_{k_j}|\le R
+\abs{b_{k_j}}\le R
 $$
 for every $j$. The one-dimensional Bolzano--Weierstrass theorem therefore gives indices $j_\ell$ and a real number $b$ such that
 $$
@@ -116,11 +116,11 @@ b_{k_{j_\ell}}\to b.
 $$
 Therefore
 $$
-\|x_{k_{j_\ell}}-(a,b)\|^2
+\norm{x_{k_{j_\ell}}-(a,b)}^2
 =
-|a_{k_{j_\ell}}-a|^2
+\abs{a_{k_{j_\ell}}-a}^2
 +
-|b_{k_{j_\ell}}-b|^2
+\abs{b_{k_{j_\ell}}-b}^2
 \longrightarrow0.
 $$
 Thus $x_{k_{j_\ell}}\to(a,b)$.

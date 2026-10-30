@@ -28,7 +28,7 @@ Let $\operatorname{sinc} x = \frac{\sin \pi x}{\pi x}$ (with $\operatorname{sinc
 
 (i) If $a > 0$, $\hat{\chi}_{[-a,a]} = \check{\chi}_{[-a,a]} = 2a\operatorname{sinc}(2ax)$.
 
-(ii) Let $\mathcal{H}_a = \{f \in L^2 : \hat{f}(\xi) = 0 \text{ if } |\xi| > a\}$.
+(ii) Let $\mathcal{H}_a = \{f \in L^2 : \hat{f}(\xi) = 0 \text{ if } \abs{\xi} > a\}$.
 Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax - k) : k \in \ZZ\}$ is an orthonormal basis.
 
 (iii) If $f \in \mathcal{H}_a$, then $f \in C_0$ (continuous vanishing at infinity) and $f = \sum_{-\infty}^{\infty} f\!\left(\frac{k}{2a}\right)\operatorname{sinc}(2ax - k)$ in $L^2$.
@@ -110,14 +110,14 @@ $$
 
 If $f\in\mathcal H_a$, then $\widehat f\in L^2([-a,a])$. Since the interval has finite measure, Cauchy--Schwarz gives
 $$
-\|\widehat f\|_1
-\le (2a)^{1/2}\|\widehat f\|_2<\infty.
+\norm{\widehat f}_1
+\le (2a)^{1/2}\norm{\widehat f}_2<\infty.
 $$
 Therefore Fourier inversion gives
 $$
 f(x)=\int_{-a}^a\widehat f(\xi)e^{2\pi ix\xi}\,d\xi
 $$
-for a continuous representative of $f$. By the Riemann--Lebesgue lemma this representative tends to $0$ as $|x|\to\infty$. Hence
+for a continuous representative of $f$. By the Riemann--Lebesgue lemma this representative tends to $0$ as $\abs{x}\to\infty$. Hence
 $$
 f\in C_0(\RR).
 $$

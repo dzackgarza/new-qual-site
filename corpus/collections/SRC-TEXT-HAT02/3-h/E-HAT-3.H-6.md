@@ -35,7 +35,7 @@ c=\sum_\sigma g_\sigma\sigma
 $$
 such that every point of $X$ has a neighborhood meeting the images of only finitely many simplices with nonzero coefficient. The usual singular boundary formula
 $$
-\partial\sigma=\sum_{i=0}^n(-1)^i\sigma|[v_0,\dots,\widehat v_i,\dots,v_n]
+\partial\sigma=\sum_{i=0}^n(-1)^i\sigma\restrict[v_0,\dots,\widehat v_i,\dots,v_n]
 $$
 extends termwise to locally finite sums. It remains locally finite, since any neighborhood meeting the image of a face also meets the image of its parent simplex, and each simplex has only finitely many faces. Thus the locally finite chains form a chain complex
 $$

@@ -14,7 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be the upper half of the unit disk $|z|<1$.
+Let $A$ be the upper half of the unit disk $\abs{z}<1$.
 Find the temperature $T$ inside $A$ if the circular portion of the boundary is insulated, while on the diameter
 $$
 T=0\quad(0<x<1),
@@ -84,7 +84,7 @@ $$
 
 ::: {.pf-step #s1-3}
 
-The circular boundary $|z|=1$, $\operatorname{Im}z>0$, is insulated.
+The circular boundary $\abs{z}=1$, $\operatorname{Im}z>0$, is insulated.
 
 
 ::: pf-proof

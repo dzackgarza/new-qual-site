@@ -20,7 +20,7 @@ audit:
 Let $K\subset\RR^3$ be nonempty and compact.
 For every Borel probability measure $\mu$ on $K$, define
 $$
-I(\mu)=\int_K\int_K \frac{1}{|x-y|}\,d\mu(x)\,d\mu(y)\in(0,\infty],
+I(\mu)=\int_K\int_K \frac{1}{\norm{x-y}}\,d\mu(x)\,d\mu(y)\in(0,\infty],
 $$
 and let
 $$
@@ -104,7 +104,7 @@ $$
 
 Each probability measure $\mu_n$ defines a positive functional on $C(K)$ of norm
 $$
-\|\mu_n\|
+\norm{\mu_n}
 =
 \mu_n(K)
 =1.
@@ -210,7 +210,7 @@ $$
 k_M(x,y)
 \coloneqq
 \min\left\{
-M,\frac1{|x-y|}
+M,\frac1{\norm{x-y}}
 \right\},
 $$
 with
@@ -219,7 +219,7 @@ k_M(x,x)=M.
 $$
 Then $k_M\in C(K\times K)$ and
 $$
-k_M(x,y)\uparrow \frac1{|x-y|}
+k_M(x,y)\uparrow \frac1{\norm{x-y}}
 $$
 in the extended-real sense as $M\to\infty$.
 
@@ -228,11 +228,11 @@ in the extended-real sense as $M\to\infty$.
 
 Away from the diagonal $x=y$, continuity is immediate. If $(x_j,y_j)\to(x,x)$, then
 $$
-|x_j-y_j|\to0,
+\norm{x_j-y_j}\to0,
 $$
 so
 $$
-\frac1{|x_j-y_j|}\to\infty
+\frac1{\norm{x_j-y_j}}\to\infty
 $$
 whenever $x_j\ne y_j$. Hence for all sufficiently large $j$,
 $$
@@ -240,7 +240,7 @@ k_M(x_j,y_j)=M=k_M(x,x),
 $$
 which proves continuity at the diagonal.
 
-For fixed $(x,y)$ with $x\ne y$, the sequence $k_M(x,y)$ increases to $|x-y|^{-1}$. On the diagonal it increases to $\infty$, which is the prescribed extended value of the Newtonian kernel.
+For fixed $(x,y)$ with $x\ne y$, the sequence $k_M(x,y)$ increases to $\norm{x-y}^{-1}$. On the diagonal it increases to $\infty$, which is the prescribed extended value of the Newtonian kernel.
 
 :::
 
@@ -269,7 +269,7 @@ Since
 $$
 k_M(x,y)
 \le
-\frac1{|x-y|}
+\frac1{\norm{x-y}}
 $$
 in the extended-real sense,
 $$

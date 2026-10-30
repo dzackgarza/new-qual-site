@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O4USN
 kind: problem
-title: $\nu\perp\mu$ and $\nu\ll|\mu|$ implies $\nu=0$
+title: $\nu\perp\mu$ and $\nu\ll\totalvariation{\mu}$ implies $\nu=0$
 classification:
   areas:
   - real-analysis
@@ -30,7 +30,7 @@ $$
 
 ::: {.pf-step #s1}
 
-There is a measurable $A$ with $|\mu|(A) = 0$ and $|\nu|(A^c) = 0$.
+There is a measurable $A$ with $\totalvariation{\mu}(A) = 0$ and $\totalvariation{\nu}(A^c) = 0$.
 
 ::: pf-proof
 
@@ -42,11 +42,11 @@ This is the definition of $\nu \perp \mu$: there is a partition $X = A \sqcup A^
 
 ::: {.pf-step #s2}
 
-$|\nu|(A) = 0$.
+$\totalvariation{\nu}(A) = 0$.
 
 ::: pf-proof
 
-$\nu \ll |\mu|$ means $|\nu|(E) = 0$ whenever $|\mu|(E) = 0$, equivalently $\nu(E) = 0$ for every measurable $E$ with $|\mu|(E) = 0$. Apply it to $E = A$ from step [](#s1){.pf-ref}.
+$\nu \ll \totalvariation{\mu}$ means $\totalvariation{\nu}(E) = 0$ whenever $\totalvariation{\mu}(E) = 0$, equivalently $\nu(E) = 0$ for every measurable $E$ with $\totalvariation{\mu}(E) = 0$. Apply it to $E = A$ from step [](#s1){.pf-ref}.
 
 :::
 
@@ -54,7 +54,7 @@ $\nu \ll |\mu|$ means $|\nu|(E) = 0$ whenever $|\mu|(E) = 0$, equivalently $\nu(
 
 ::: pf-qed
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\nu|(X) = |\nu|(A) + |\nu|(A^c) = 0$. Since $|\nu(E)| \le |\nu|(E)$ for every $E$, $\nu = 0$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\totalvariation{\nu}(X) = \totalvariation{\nu}(A) + \totalvariation{\nu}(A^c) = 0$. Since $\abs{\nu(E)} \le \totalvariation{\nu}(E)$ for every $E$, $\nu = 0$.
 
 :::
 

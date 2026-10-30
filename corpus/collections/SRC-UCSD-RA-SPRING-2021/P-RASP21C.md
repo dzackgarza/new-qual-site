@@ -56,14 +56,14 @@ contains the constants and separates points of $[0,1]$, since $x\mapsto x^2$ is 
 
 Fix $\varphi\in C([0,1])$ and choose $p_k$ so that
 $$
-\|p_k(x^2)-\varphi(x)\|_\infty\to0.
+\norm{p_k(x^2)-\varphi(x)}_\infty\to0.
 $$
 Then
 $$
-\left|\int_0^1h(x)\varphi(x)\,dx\right|
+\abs{\int_0^1h(x)\varphi(x)\,dx}
 \le
-\left|\int_0^1h(x)p_k(x^2)\,dx\right|
-+\|h\|_1\,\|\varphi-p_k(x^2)\|_\infty.
+\abs{\int_0^1h(x)p_k(x^2)\,dx}
++\norm{h}_1\,\norm{\varphi-p_k(x^2)}_\infty.
 $$
 The first term is zero and the second tends to zero, so
 $$

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } | a _ { n } ( z ) |$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ^ { \prime } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of D.
+Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } \abs{ a _ { n } ( z ) }$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \abs{ a _ { n } ^ { \prime } ( z ) }$ converges uniformly on bounded and closed sub-regions of D.
 :::
 
 ::: {.solution}

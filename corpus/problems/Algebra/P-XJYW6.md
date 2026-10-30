@@ -37,5 +37,5 @@ Commuting $A$ and $B$ are simultaneously diagonalizable if and only if each is d
 $$
 V=\bigoplus_\lambda E_\lambda(A),
 $$
-and each $E_\lambda(A)$ is $B$-invariant. The minimal polynomial of $B|_{E_\lambda(A)}$ divides that of $B$, which is a product of distinct linear factors, so $B|_{E_\lambda(A)}$ is diagonalizable and each $E_\lambda(A)$ has a basis of $B$-eigenvectors. Combining these bases gives a basis of simultaneous eigenvectors for $A$ and $B$.
+and each $E_\lambda(A)$ is $B$-invariant. The minimal polynomial of $B\restrict_{E_\lambda(A)}$ divides that of $B$, which is a product of distinct linear factors, so $B\restrict_{E_\lambda(A)}$ is diagonalizable and each $E_\lambda(A)$ has a basis of $B$-eigenvectors. Combining these bases gives a basis of simultaneous eigenvectors for $A$ and $B$.
 :::

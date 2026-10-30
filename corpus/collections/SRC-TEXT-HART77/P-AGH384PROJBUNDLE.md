@@ -56,7 +56,7 @@ Write
 $$
 D=\det\mce=\bigwedge^{n+1}\mce.
 $$
-All statements in parts (a)--(c) are local on $Y$, so we repeatedly use affine open subsets $U=\Spec A$ on which $\mce|_U\cong\OO_U^{n+1}$; then
+All statements in parts (a)--(c) are local on $Y$, so we repeatedly use affine open subsets $U=\Spec A$ on which $\mce\restrict_U\cong\OO_U^{n+1}$; then
 $$
 \pi^{-1}(U)\cong\PP_A^n.
 $$
@@ -88,7 +88,7 @@ $$
 
 For the higher direct images, Proposition III.8.1 says that $R^i\pi_*\OO_X(l)$ is associated to the presheaf
 $$
-U\longmapsto H^i(\pi^{-1}(U),\OO_X(l)|_{\pi^{-1}(U)}).
+U\longmapsto H^i(\pi^{-1}(U),\OO_X(l)\restrict_{\pi^{-1}(U)}).
 $$
 On an affine trivializing open $U=\Spec A$, this is
 $$
@@ -186,7 +186,7 @@ $$
 
 On a trivializing affine open $U=\Spec A$, step [](#s3){.pf-ref} identifies
 $$
-\omega_{X/Y}|_{\pi^{-1}(U)}
+\omega_{X/Y}\restrict_{\pi^{-1}(U)}
 \cong
 \OO_{\PP_A^n}(-n-1)\otimes_A D(U).
 $$
@@ -203,7 +203,7 @@ The local generator of $D=\det\mce$ changes by $\det M$.
 Hence the two factors cancel.
 The local identifications
 $$
-R^n\pi_*\omega_{X/Y}|_U\cong\OO_U
+R^n\pi_*\omega_{X/Y}\restrict_U\cong\OO_U
 $$
 therefore agree on overlaps and glue to a natural global isomorphism.
 This proves the last assertion of part (b).

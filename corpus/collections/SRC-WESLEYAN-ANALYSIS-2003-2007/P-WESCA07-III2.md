@@ -20,11 +20,11 @@ Let $f$ be analytic on the unit disk $D$, with
 $$
 f(0)=f'(0)=0,
 \qquad
-|f'(z)|<1\quad(z\in D).
+\abs{f'(z)}<1\quad(z\in D).
 $$
 Show that
 $$
-|f(z)|\le\frac{|z|^2}{2}
+\abs{f(z)}\le\frac{\abs{z}^2}{2}
 \qquad(z\in D).
 $$
 
@@ -47,7 +47,7 @@ $$
 
 This is exactly the given hypothesis
 $$
-|f'(z)|<1
+\abs{f'(z)}<1
 $$
 for $z\in D$, together with $f'(0)=0$.
 
@@ -59,7 +59,7 @@ for $z\in D$, together with $f'(0)=0$.
 
 For every $w\in D$,
 $$
-|f'(w)|\le |w|.
+\abs{f'(w)}\le \abs{w}.
 $$
 
 
@@ -67,7 +67,7 @@ $$
 
 The function $f'$ is holomorphic on $D$, maps $D$ into itself by step [](#s1-1){.pf-ref}, and vanishes at $0$. Schwarz's lemma therefore gives
 $$
-|f'(w)|\le|w|.
+\abs{f'(w)}\le\abs{w}.
 $$
 
 :::
@@ -104,7 +104,7 @@ $$
 
 One has
 $$
-\boxed{|f(z)|\le\frac{|z|^2}{2}}
+\boxed{\abs{f(z)}\le\frac{\abs{z}^2}{2}}
 $$
 for every $z\in D$.
 
@@ -114,10 +114,10 @@ for every $z\in D$.
 By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
-|f(z)|
-&\le\int_0^1 |f'(tz)|\,|z|\,dt\\
-&\le\int_0^1 t|z|^2\,dt\\
-&=\frac{|z|^2}{2}.
+\abs{f(z)}
+&\le\int_0^1 \abs{f'(tz)}\,\abs{z}\,dt\\
+&\le\int_0^1 t\abs{z}^2\,dt\\
+&=\frac{\abs{z}^2}{2}.
 \end{aligned}
 $$
 

@@ -247,7 +247,7 @@ on $\partial D$.
 ::: pf-proof
 
 With the interior term zero, step [](#s1-4){.pf-ref} reduces to the boundary integral. Since
-$\eta|_{\partial D}$ is arbitrary, the boundary coefficient must vanish.
+$\eta\restrict_{\partial D}$ is arbitrary, the boundary coefficient must vanish.
 
 :::
 

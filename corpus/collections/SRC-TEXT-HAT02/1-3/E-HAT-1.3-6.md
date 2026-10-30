@@ -47,7 +47,7 @@ E_{n,2}\cup E_{n,3}\cup\cdots
 $$
 with
 $$
-q|_{E_{n,m}}:E_{n,m}\longrightarrow C_m
+q\restrict_{E_{n,m}}:E_{n,m}\longrightarrow C_m
 $$
 a homeomorphism for $m\ge2$.
 
@@ -63,16 +63,16 @@ $$
 such that
 $$
 r_n\longrightarrow\infty
-\quad\text{as }|n|\to\infty.
+\quad\text{as }\abs{n}\to\infty.
 $$
 For example, take
 $$
-r_n=|n|+2.
+r_n=\abs{n}+2.
 $$
 
 ::: pf-proof
 
-The only required property is that the selected circle in the attached wedge at the $n$th integer becomes arbitrarily small in the base as $|n|$ grows.
+The only required property is that the selected circle in the attached wedge at the $n$th integer becomes arbitrarily small in the base as $\abs{n}$ grows.
 
 :::
 

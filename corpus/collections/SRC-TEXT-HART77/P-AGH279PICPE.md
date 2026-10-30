@@ -72,13 +72,13 @@ They respect changes of frame and restrictions and give the two global direct-im
 
 Every invertible sheaf $\mathcal M$ on $P$ has, on each sufficiently small affine open $V\subseteq X$, a unique form
 $$
-\mathcal M|_{P|_V}\cong\pi_V^*\mathcal N_V\otimes\OO_{P|_V}(n_V),
+\mathcal M\restrict_{P\restrict_V}\cong\pi_V^*\mathcal N_V\otimes\OO_{P\restrict_V}(n_V),
 \qquad [\mathcal N_V]\in\Pic(V),\quad n_V\in\ZZ.
 $$
 
 ::: pf-proof
 
-Choose $V$ inside a component of $X$ and with a frame for $\mce$; then $V$ is regular, integral, affine and noetherian, and $P|_V\cong\PP_V^{r-1}$ with $r-1\ge1$.
+Choose $V$ inside a component of $X$ and with a frame for $\mce$; then $V$ is regular, integral, affine and noetherian, and $P\restrict_V\cong\PP_V^{r-1}$ with $r-1\ge1$.
 Every local ring of $V$ is factorial because it is regular [@Har10a, Remark II.6.11.1A].
 The local rings of $\PP_V^{r-1}$ are also factorial: on a standard chart, the local ring at a prime over $p\in V$ is a localization of a polynomial ring over the factorial ring $\OO_{V,p}$.
 Both schemes are integral, noetherian and separated, so the [[D-5PQ5W|Cartier–Weil comparison]] identifies their class groups with their Picard groups.
@@ -107,9 +107,9 @@ Hence two integers computed on overlapping affine opens agree at every point of 
 They define a locally constant function $n$.
 
 Put $\mathcal M_0=\mathcal M\otimes\OO_P(-n)$ and define $\mathcal N=\pi_*\mathcal M_0$.
-On each open $V$ of step [](#s2){.pf-ref}, one has $\mathcal M_0|_{P|_V}\cong\pi_V^*\mathcal N_V$.
+On each open $V$ of step [](#s2){.pf-ref}, one has $\mathcal M_0\restrict_{P\restrict_V}\cong\pi_V^*\mathcal N_V$.
 For an invertible sheaf $\mathcal N_V$, the identity $\pi_{V*}\pi_V^*\mathcal N_V\cong\mathcal N_V$ follows from $\pi_{V*}\OO=\OO_V$ by trivializing $\mathcal N_V$ on an open cover of $V$.
-Thus $\mathcal N|_V\cong\mathcal N_V$, and $\mathcal N$ is invertible on all of $X$.
+Thus $\mathcal N\restrict_V\cong\mathcal N_V$, and $\mathcal N$ is invertible on all of $X$.
 
 The counit $\pi^*\pi_*\mathcal M_0\to\mathcal M_0$ is an isomorphism on every such open, because there $\mathcal M_0$ is a pulled-back invertible sheaf and $\pi_*\OO=\OO_X$.
 It is therefore an isomorphism globally.

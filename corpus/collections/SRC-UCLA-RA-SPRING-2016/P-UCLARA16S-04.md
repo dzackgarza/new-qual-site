@@ -85,16 +85,16 @@ Then $P$ is linear and continuous.
 Linearity follows from linearity of the functionals $\widetilde\lambda_j$. Moreover,
 $$
 \begin{aligned}
-\|P(x)\|
+\norm{P(x)}
 &\le
 \sum_{j=1}^n
-|\widetilde\lambda_j(x)|\,\|e_j\|\\
+\abs{\widetilde\lambda_j(x)}\,\norm{e_j}\\
 &\le
 \left(
 \sum_{j=1}^n
-\|\widetilde\lambda_j\|\,\|e_j\|
+\norm{\widetilde\lambda_j}\,\norm{e_j}
 \right)
-\|x\|.
+\norm{x}.
 \end{aligned}
 $$
 Thus $P$ is bounded, hence continuous.

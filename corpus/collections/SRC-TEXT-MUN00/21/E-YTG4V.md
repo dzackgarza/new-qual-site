@@ -87,7 +87,7 @@ $$
 Let $x_0\ne0$ and $\varepsilon>0$, and put $\delta=\min\{\abs{x_0}/2,\ \varepsilon\abs{x_0}^2/2\}$.
 If $\abs{x-x_0}<\delta$, then $\abs x>\abs{x_0}/2$, so
 $$
-\Bigl\lvert\frac1x-\frac1{x_0}\Bigr\rvert=\frac{\abs{x-x_0}}{\abs x\abs{x_0}}<\frac{2\delta}{\abs{x_0}^2}\le\varepsilon.
+\abs{\frac1x-\frac1{x_0}}=\frac{\abs{x-x_0}}{\abs x\abs{x_0}}<\frac{2\delta}{\abs{x_0}^2}\le\varepsilon.
 $$
 :::
 

@@ -26,10 +26,10 @@ $$
 h(z)=zf(z)-1.
 $$
 Then $h$ is holomorphic in $\DD$ and continuous on $\overline{\DD}$.
-On the boundary, $f(z)=1/z$, so $h(z)=0$ whenever $|z|=1$.
+On the boundary, $f(z)=1/z$, so $h(z)=0$ whenever $\abs{z}=1$.
 By the maximum modulus principle,
 $$
-|h(z)|\le \max_{|\zeta|=1}|h(\zeta)|=0
+\abs{h(z)}\le \max_{\abs{\zeta}=1}\abs{h(\zeta)}=0
 $$
 for every $z\in\DD$.
 Hence $h\equiv0$.

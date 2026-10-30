@@ -23,7 +23,7 @@ audit:
 ::: {.exercise}
 Let $f$ be a holomorphic function on the disk $D_{R_0}(0) \subset \CC$ of radius $R_0 > 0$.
 
-(a) Prove that whenever $0 < R < R_0$ and $|z| < R$,
+(a) Prove that whenever $0 < R < R_0$ and $\abs{z} < R$,
 $$
 f(z) = \frac{1}{2\pi} \int_0^{2\pi} f(R e^{i\varphi}) \operatorname{Re}\left( \frac{R e^{i\varphi} + z}{R e^{i\varphi} - z} \right) d\varphi.
 $$
@@ -39,11 +39,11 @@ For part (b), let $z=re^{i\theta}$ and put $\gamma=\varphi-\theta$. Rotating by 
 $$
 \frac{Re^{i\gamma}+r}{Re^{i\gamma}-r}
 =
-\frac{(Re^{i\gamma}+r)(Re^{-i\gamma}-r)}{|Re^{i\gamma}-r|^2}.
+\frac{(Re^{i\gamma}+r)(Re^{-i\gamma}-r)}{\abs{Re^{i\gamma}-r}^2}.
 $$
 The numerator has real part $R^2-r^2$, while
 $$
-|Re^{i\gamma}-r|^2=R^2-2Rr\cos\gamma+r^2.
+\abs{Re^{i\gamma}-r}^2=R^2-2Rr\cos\gamma+r^2.
 $$
 Hence
 $$
@@ -52,16 +52,16 @@ $$
 \frac{R^2-r^2}{R^2-2Rr\cos\gamma+r^2}.
 $$
 
-For part (a), first suppose $0<|z|<R$ and set
+For part (a), first suppose $0<\abs{z}<R$ and set
 $$
 w=\frac{R^2}{\overline z}.
 $$
-Then $|w|>R$. By Cauchy's formula and Cauchy's theorem,
+Then $\abs{w}>R$. By Cauchy's formula and Cauchy's theorem,
 $$
-f(z)=\frac1{2\pi i}\int_{|\zeta|=R}f(\zeta)
+f(z)=\frac1{2\pi i}\int_{\abs{\zeta}=R}f(\zeta)
 \left(\frac1{\zeta-z}-\frac1{\zeta-w}\right)d\zeta.
 $$
-On $|\zeta|=R$,
+On $\abs{\zeta}=R$,
 $$
 \zeta\left(\frac1{\zeta-z}-\frac1{\zeta-w}\right)
 =
@@ -75,5 +75,5 @@ f(z)=\frac1{2\pi}\int_0^{2\pi}
  f(Re^{i\varphi})
  \operatorname{Re}\left(\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}\right)d\varphi.
 $$
-If $z=0$, the formula is exactly the usual mean-value formula, so it holds for every $|z|<R$.
+If $z=0$, the formula is exactly the usual mean-value formula, so it holds for every $\abs{z}<R$.
 :::

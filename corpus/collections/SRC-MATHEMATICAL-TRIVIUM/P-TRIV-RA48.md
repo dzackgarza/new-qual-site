@@ -76,7 +76,7 @@ $$
 \boxed{
 \widetilde f(k)
 =
-\frac1{|a|}
+\frac1{\abs{a}}
 \widetilde g\left(\frac{k}{a}\right).
 }
 $$
@@ -102,7 +102,7 @@ g(u)e^{-i(k/a)u}
 $$
 
 If $a<0$, the substitution reverses the endpoints, contributing an additional
-minus sign that changes $1/a$ to $1/|a|$. The argument remains $k/a$.
+minus sign that changes $1/a$ to $1/\abs{a}$. The argument remains $k/a$.
 
 :::
 

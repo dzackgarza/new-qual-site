@@ -36,7 +36,7 @@ $$
 $$
 the quotient is defined and satisfies
 $$
-|G/N|=[G:N]=42.
+\cardinality{G/N}=[G:N]=42.
 $$
 :::
 
@@ -52,7 +52,7 @@ in $G/N$.
 ::: pf-proof
 By Lagrange's theorem, the order of the element $xN\in G/N$ divides
 $$
-|G/N|=42.
+\cardinality{G/N}=42.
 $$
 Hence its $42$-nd power is the identity coset $N$.
 :::

@@ -70,7 +70,7 @@ There is no homeomorphism $h\colon\RR\to\RR^2$.
 
 ::: pf-proof
 Assume such an $h$ exists, choose $c\in\RR$, and put $a=h(c)$.
-The restriction $h|_{\RR\setminus\{c\}}\colon\RR\setminus\{c\}\to\RR^2\setminus\{a\}$ is a bijection whose inverse is the corresponding restriction of $h^{-1}$, so it is a homeomorphism.
+The restriction $h\restrict_{\RR\setminus\{c\}}\colon\RR\setminus\{c\}\to\RR^2\setminus\{a\}$ is a bijection whose inverse is the corresponding restriction of $h^{-1}$, so it is a homeomorphism.
 By step [](#punctured-line-disconnected){.pf-ref} its domain is disconnected, while by step [](#punctured-plane-path-connected){.pf-ref} its codomain is path-connected and hence connected.
 A homeomorphic image of a disconnected space is disconnected, a contradiction.
 :::

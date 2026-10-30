@@ -86,11 +86,11 @@ $$
 N\hookrightarrow S_n\twoheadrightarrow S_n/A_n\cong C_2
 $$
 has kernel $N\cap A_n=1$, so $N$ embeds in $C_2$.
-Thus $|N|\le 2$.
-If $|N|=2$, write $N=\{1,\tau\}$.
+Thus $\cardinality{N}\le 2$.
+If $\cardinality{N}=2$, write $N=\{1,\tau\}$.
 Normality forces $g\tau g^{-1}=\tau$ for every $g\in S_n$, so $\tau\in Z(S_n)$.
 But $Z(S_n)=1$ for $n\ge 3$: if a nonidentity permutation $\sigma$ moves $i$ to $j\ne i$, choose $k\notin\{i,j\}$; then the transposition $(j\ k)$ does not commute with $\sigma$.
-Hence $|N|\ne2$, so $N=1$.
+Hence $\cardinality{N}\ne2$, so $N=1$.
 
 :::
 

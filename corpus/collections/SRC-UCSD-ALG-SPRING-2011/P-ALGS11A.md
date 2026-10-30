@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group with $|G| = 117 = 9 \cdot 13$ elements which contains an element of order exactly $9$.
+Let $G$ be a group with $\cardinality{G} = 117 = 9 \cdot 13$ elements which contains an element of order exactly $9$.
 Classify all such groups $G$ up to isomorphism.
 :::
 
@@ -59,7 +59,7 @@ The subgroup $P:=\langle x\rangle$ is a Sylow $3$-subgroup and $P\cong C_9$.
 
 ::: pf-proof
 
-Since $x$ has order $9=3^2$, $P$ has the full $3$-part of $|G|$, so it is a Sylow $3$-subgroup.
+Since $x$ has order $9=3^2$, $P$ has the full $3$-part of $\cardinality{G}$, so it is a Sylow $3$-subgroup.
 
 :::
 
@@ -81,7 +81,7 @@ $$
 The intersection $N\cap P$ is trivial because its order divides both $13$ and $9$.
 Since $N$ is normal,
 $$
-|NP|=\frac{|N||P|}{|N\cap P|}=13\cdot9=117=|G|,
+\cardinality{NP}=\frac{\cardinality{N}\cardinality{P}}{\cardinality{N\cap P}}=13\cdot9=117=\cardinality{G},
 $$
 so $G=NP$.
 Conjugation by $P$ on $N$ gives the displayed semidirect product.
@@ -96,7 +96,7 @@ The image of $\theta$ has order either $1$ or $3$.
 
 ::: pf-proof
 
-The image order divides both $|C_9|=9$ and $|C_{12}|=12$, hence divides $\gcd(9,12)=3$.
+The image order divides both $\cardinality{C_9}=9$ and $\cardinality{C_{12}}=12$, hence divides $\gcd(9,12)=3$.
 
 :::
 

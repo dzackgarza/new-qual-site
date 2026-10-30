@@ -136,13 +136,13 @@ $$
 
 The overall factor $A(\sigma)$ cancels. For this Gaussian,
 $$
-\frac{\int x^2|\psi_\sigma|^2dx}{\int|\psi_\sigma|^2dx}
+\frac{\int x^2\abs{\psi_\sigma}^2dx}{\int\abs{\psi_\sigma}^2dx}
 =
 \frac{\sigma^2}{2}
 $$
 and
 $$
-\frac{\int|\psi_\sigma'|^2dx}{\int|\psi_\sigma|^2dx}
+\frac{\int\abs{\psi_\sigma'}^2dx}{\int\abs{\psi_\sigma}^2dx}
 =
 \frac1{2\sigma^2}.
 $$

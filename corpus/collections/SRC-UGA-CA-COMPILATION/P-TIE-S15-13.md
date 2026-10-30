@@ -191,20 +191,20 @@ $$
 \begin{aligned}
 \operatorname{Res}_{z=ia}F
 &=
-\left.
+\evaluated{
 \frac{d}{dz}
 \left(
 \frac{e^{iz}}{(z+ia)^2}
 \right)
-\right|_{z=ia}\\
+}_{z=ia}\\
 &=
-\left.
+\evaluated{
 \left(
 \frac{i e^{iz}}{(z+ia)^2}
 -
 \frac{2e^{iz}}{(z+ia)^3}
 \right)
-\right|_{z=ia}\\
+}_{z=ia}\\
 &=
 -\frac{i e^{-a}(a+1)}{4a^3}.
 \end{aligned}

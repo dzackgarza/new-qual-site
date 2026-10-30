@@ -81,7 +81,7 @@ so $q\mid(p-1)(p+1)$. Because $q>p$, one has $q\nmid p-1$, hence $q\mid p+1$. Th
 
 ::: {.pf-step #s4}
 
-In the exceptional case $|G|=12$, $G$ still has a normal Sylow subgroup.
+In the exceptional case $\cardinality{G}=12$, $G$ still has a normal Sylow subgroup.
 
 ::: pf-proof
 
@@ -113,7 +113,7 @@ The subgroup $N$ and the quotient $G/N$ are both abelian.
 
 ::: pf-proof
 
-A group of prime order is cyclic, and every group of order the square of a prime is abelian. If $|N|=p^2$, then $|G/N|=q$; if $|N|=q$, then $|G/N|=p^2$.
+A group of prime order is cyclic, and every group of order the square of a prime is abelian. If $\cardinality{N}=p^2$, then $\cardinality{G/N}=q$; if $\cardinality{N}=q$, then $\cardinality{G/N}=p^2$.
 
 :::
 

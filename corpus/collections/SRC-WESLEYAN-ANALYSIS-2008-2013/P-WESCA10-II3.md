@@ -96,7 +96,7 @@ $$
 By step [](#s1-2){.pf-ref}, every value is an integer multiple of $\pi$, because winding
 numbers are integers. Conversely, let $m\in\ZZ$. Choose a sufficiently
 small positively oriented circle about $i$ that does not enclose $-i$, and
-traverse it $|m|$ times, reversing its orientation when $m<0$; for $m=0$ take
+traverse it $\abs{m}$ times, reversing its orientation when $m<0$; for $m=0$ take
 any contractible closed path avoiding $\pm i$. The resulting path has
 $$
 n(\gamma,i)=m,

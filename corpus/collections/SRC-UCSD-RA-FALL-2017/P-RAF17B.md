@@ -33,7 +33,7 @@ For the true statements give a brief reason and for the false statements give a 
 2. Suppose that $\omega_0 \in \Omega$ is a point such that $\{\omega_0\} \in \mathcal{B}$ and $0 < \mu(\{\omega_0\}) < \infty$.
    If $f_n \to f$ in $L^2(\mu)$, then $f(\omega_0) = \lim_{n \to \infty} f_n(\omega_0)$.
 
-3. If $f(\omega) = \lim_{n \to \infty} f_n(\omega)$ for $\mu$-a.e. $\omega$, then $f_n \to f$ in measure, i.e. $\lim_{n \to \infty} \mu(|f - f_n| \geq \varepsilon) = 0$ for all $\varepsilon > 0$.
+3. If $f(\omega) = \lim_{n \to \infty} f_n(\omega)$ for $\mu$-a.e. $\omega$, then $f_n \to f$ in measure, i.e. $\lim_{n \to \infty} \mu(\abs{f - f_n} \geq \varepsilon) = 0$ for all $\varepsilon > 0$.
 
 4. If $\mu(\Omega) < \infty$ and $f_n \to f$ in $L^3(\mu)$, then $f_n \to f$ in $L^1(\mu)$.
 :::
@@ -54,7 +54,7 @@ f_n=\mathbf1_{[j2^{-k},(j+1)2^{-k})}
 $$
 for $0\le j<2^k$, with $k\to\infty$ along the enumeration. Then
 $$
-\|f_n\|_2=2^{-k/2}\longrightarrow0,
+\norm{f_n}_2=2^{-k/2}\longrightarrow0,
 $$
 so $f_n\to0$ in $L^2$.
 
@@ -72,16 +72,16 @@ Statement 2 is true.
 
 Since the singleton $\{\omega_0\}$ has positive finite measure,
 $$
-\|f_n-f\|_2^2
+\norm{f_n-f}_2^2
 \ge
-\int_{\{\omega_0\}}|f_n-f|^2\,d\mu
-=|f_n(\omega_0)-f(\omega_0)|^2\mu(\{\omega_0\}).
+\int_{\{\omega_0\}}\abs{f_n-f}^2\,d\mu
+=\abs{f_n(\omega_0)-f(\omega_0)}^2\mu(\{\omega_0\}).
 $$
 Therefore
 $$
-|f_n(\omega_0)-f(\omega_0)|
+\abs{f_n(\omega_0)-f(\omega_0)}
 \le
-\frac{\|f_n-f\|_2}{\mu(\{\omega_0\})^{1/2}}
+\frac{\norm{f_n-f}_2}{\mu(\{\omega_0\})^{1/2}}
 \longrightarrow0.
 $$
 
@@ -103,7 +103,7 @@ f=0.
 $$
 Then $f_n(x)\to0$ for every $x\in\RR$. But for $\varepsilon=1/2$,
 $$
-m\bigl(\{|f_n-f|\ge1/2\}\bigr)
+m\bigl(\{\abs{f_n-f}\ge1/2\}\bigr)
 =m([n,n+1])=1
 $$
 for every $n$. Hence $f_n$ does not converge to $f$ in measure.
@@ -120,15 +120,15 @@ Statement 4 is true.
 
 Let $h_n=f_n-f$. Hölder's inequality with exponents $3$ and $3/2$ gives
 $$
-\|h_n\|_1
-=\int_\Omega |h_n|\cdot1\,d\mu
+\norm{h_n}_1
+=\int_\Omega \abs{h_n}\cdot1\,d\mu
 \le
-\|h_n\|_3\,\|1\|_{3/2}
-=\mu(\Omega)^{2/3}\|h_n\|_3.
+\norm{h_n}_3\,\norm{1}_{3/2}
+=\mu(\Omega)^{2/3}\norm{h_n}_3.
 $$
-Since $\|h_n\|_3\to0$,
+Since $\norm{h_n}_3\to0$,
 $$
-\boxed{\|f_n-f\|_1\to0.}
+\boxed{\norm{f_n-f}_1\to0.}
 $$
 
 :::

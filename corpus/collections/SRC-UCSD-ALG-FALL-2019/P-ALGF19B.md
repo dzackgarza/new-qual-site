@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF19B
 kind: problem
-title: Groups with $|\mathrm{Syl}_p(G)| = p+1$ and $|\mathrm{Syl}_q(G)| = q+1$
+title: Groups with $\cardinality{\mathrm{Syl}_p(G)} = p+1$ and $\cardinality{\mathrm{Syl}_q(G)} = q+1$
 classification:
   areas:
   - algebra
@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 For any finite group $H$ and prime $\ell$, we denote the set of Sylow $\ell$-subgroups of $H$ by $\mathrm{Syl}_\ell(H)$.
-Suppose $p < q$ are odd primes, $G$ is a finite group, and $|\mathrm{Syl}_p(G)| = p + 1$ and $|\mathrm{Syl}_q(G)| = q + 1$.
+Suppose $p < q$ are odd primes, $G$ is a finite group, and $\cardinality{\mathrm{Syl}_p(G)} = p + 1$ and $\cardinality{\mathrm{Syl}_q(G)} = q + 1$.
 
 (a) Suppose $P \in \mathrm{Syl}_p(G)$.
 Prove that $G$ has a Sylow $q$-subgroup $Q$ such that $Q \subseteq N_G(P)$.
 
 (b) In the setting of part (a), let $H = PQ$.
-Argue why $H$ is a subgroup and prove that either $Q \trianglelefteq H$ or $|\mathrm{Syl}_q(H)| = q + 1$.
+Argue why $H$ is a subgroup and prove that either $Q \trianglelefteq H$ or $\cardinality{\mathrm{Syl}_q(H)} = q + 1$.
 
 (c) In the setting of part (b), prove that $H \simeq P \times Q$.
 :::
@@ -53,7 +53,7 @@ $$
 $$
 Every orbit has cardinality a power of $q$. Since $p<q$ are distinct odd primes,
 $$
-|\operatorname{Syl}_p(G)|=p+1<q.
+\cardinality{\operatorname{Syl}_p(G)}=p+1<q.
 $$
 Hence no orbit can have cardinality $q$ or larger, so every orbit has cardinality $1$.
 In particular $Q$ fixes the given $P$, which means
@@ -80,7 +80,7 @@ P\cap Q=1.
 $$
 Consequently
 $$
-|H|=|P|\,|Q|.
+\cardinality{H}=\cardinality{P}\,\cardinality{Q}.
 $$
 
 :::
@@ -91,23 +91,23 @@ $$
 
 Either $Q\trianglelefteq H$ or
 $$
-|\operatorname{Syl}_q(H)|=q+1.
+\cardinality{\operatorname{Syl}_q(H)}=q+1.
 $$
 
 ::: pf-proof
 
 Since $Q$ is a Sylow $q$-subgroup of $G$, it is also a Sylow $q$-subgroup of $H$.
-Moreover, every Sylow $q$-subgroup of $H$ has order $|Q|$, hence is also a Sylow $q$-subgroup of $G$. Therefore
+Moreover, every Sylow $q$-subgroup of $H$ has order $\cardinality{Q}$, hence is also a Sylow $q$-subgroup of $G$. Therefore
 $$
-|\operatorname{Syl}_q(H)|
+\cardinality{\operatorname{Syl}_q(H)}
 \le
-|\operatorname{Syl}_q(G)|
+\cardinality{\operatorname{Syl}_q(G)}
 =q+1.
 $$
 
 Sylow's theorem gives
 $$
-|\operatorname{Syl}_q(H)|\equiv1\pmod q.
+\cardinality{\operatorname{Syl}_q(H)}\equiv1\pmod q.
 $$
 The only positive integers at most $q+1$ with this congruence are $1$ and $q+1$.
 If the number is $1$, then $Q$ is normal in $H$; otherwise it equals $q+1$.
@@ -125,18 +125,18 @@ In fact $Q\trianglelefteq H$.
 
 Again by Sylow's theorem,
 $$
-|\operatorname{Syl}_q(H)|\mid[H:Q].
+\cardinality{\operatorname{Syl}_q(H)}\mid[H:Q].
 $$
 By step [](#s2){.pf-ref},
 $$
-[H:Q]=|P|,
+[H:Q]=\cardinality{P},
 $$
 which is a power of the odd prime $p$ and is therefore odd.
 
-The alternative $|\operatorname{Syl}_q(H)|=q+1$ from step [](#s3){.pf-ref} is impossible because $q$ is odd, so $q+1$ is even and cannot divide the odd integer $|P|$.
+The alternative $\cardinality{\operatorname{Syl}_q(H)}=q+1$ from step [](#s3){.pf-ref} is impossible because $q$ is odd, so $q+1$ is even and cannot divide the odd integer $\cardinality{P}$.
 Hence
 $$
-|\operatorname{Syl}_q(H)|=1,
+\cardinality{\operatorname{Syl}_q(H)}=1,
 $$
 and therefore $Q\trianglelefteq H$.
 

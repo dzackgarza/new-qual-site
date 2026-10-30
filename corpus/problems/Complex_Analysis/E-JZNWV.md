@@ -46,7 +46,7 @@ $\Res_{z=z_1}f=\frac{i}{54}$.
 ::: pf-proof
 $z_1$ is a double pole, so
 $$
-\Res_{z=z_1}f=\frac{d}{dz}\frac{z}{(z-z_2)^2}\Big|_{z=z_1}=-\frac{z_1+z_2}{(z_1-z_2)^3}=-\frac{-4}{(6i)^3}=\frac{4}{-216i}=\frac{i}{54}.
+\Res_{z=z_1}f=\frac{d}{dz}\frac{z}{(z-z_2)^2}\evalfrom_{z=z_1}=-\frac{z_1+z_2}{(z_1-z_2)^3}=-\frac{-4}{(6i)^3}=\frac{4}{-216i}=\frac{i}{54}.
 $$
 :::
 

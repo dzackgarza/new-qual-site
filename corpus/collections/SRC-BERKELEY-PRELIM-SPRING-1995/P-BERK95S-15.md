@@ -25,7 +25,7 @@ $$
 $$
 is a proper subfield of $F$. Prove that
 $$
-|F|=4.
+\cardinality{F}=4.
 $$
 :::
 

@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Find a real number $c$ such that
 $$
-\left|c-\int_{-1/2}^{1/2}\frac{e^x-1}{x}\,dx\right|<0.01.
+\abs{c-\int_{-1/2}^{1/2}\frac{e^x-1}{x}\,dx}<0.01.
 $$
 :::
 

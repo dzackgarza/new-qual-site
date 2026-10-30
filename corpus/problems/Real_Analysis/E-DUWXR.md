@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DUWXR
 kind: problem
-title: $f,g\in L^1$ implies $f\ast g\in L^1$ and $\|f\ast g\|_1\leq\|f\|_1\|g\|_1$
+title: $f,g\in L^1$ implies $f\ast g\in L^1$ and $\norm{f\ast g}_1\leq\norm{f}_1\norm{g}_1$
 classification:
   areas:
   - real-analysis
@@ -33,10 +33,10 @@ $f \ast g$ is defined almost everywhere and belongs to $L^1(\RR)$.
 ::: pf-proof
 
 ::: {.pf-step #s1-1}
-$\int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1 < \infty$.
+$\int\!\int \abs{f(x-y)g(y)}\,dy\,dx = \norm{f}_1 \norm{g}_1 < \infty$.
 
 ::: pf-proof
-The function $(x,y)\mapsto f(x-y)g(y)$ is measurable on $\RR^2$. By Tonelli's theorem, $\int\!\int |f(x-y)g(y)|\,dy\,dx = \int |g(y)| \int |f(x-y)|\,dx\,dy = \int |g(y)| \norm{f}_1\,dy = \norm{f}_1 \norm{g}_1$, since $\int |f(x-y)|\,dx = \norm{f}_1$ for each fixed $y$ by translation invariance of Lebesgue measure.
+The function $(x,y)\mapsto f(x-y)g(y)$ is measurable on $\RR^2$. By Tonelli's theorem, $\int\!\int \abs{f(x-y)g(y)}\,dy\,dx = \int \abs{g(y)} \int \abs{f(x-y)}\,dx\,dy = \int \abs{g(y)} \norm{f}_1\,dy = \norm{f}_1 \norm{g}_1$, since $\int \abs{f(x-y)}\,dx = \norm{f}_1$ for each fixed $y$ by translation invariance of Lebesgue measure.
 :::
 
 :::
@@ -53,7 +53,7 @@ By step [](#s1-1){.pf-ref}, $(x,y)\mapsto f(x-y)g(y)$ is in $L^1(\RR^2)$. By Fub
 $\norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1$.
 
 ::: pf-proof
-$\norm{f\ast g}_1 = \int |f\ast g(x)|\,dx \leq \int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1$, where the last equality is step [](#s1-1){.pf-ref}.
+$\norm{f\ast g}_1 = \int \abs{f\ast g(x)}\,dx \leq \int\!\int \abs{f(x-y)g(y)}\,dy\,dx = \norm{f}_1 \norm{g}_1$, where the last equality is step [](#s1-1){.pf-ref}.
 :::
 
 :::

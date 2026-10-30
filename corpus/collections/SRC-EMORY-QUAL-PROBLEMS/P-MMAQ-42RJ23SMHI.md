@@ -56,11 +56,11 @@ $13$ have trivial intersection: a shared nonidentity
 element would generate both. They therefore contain
 exactly $27\cdot12=324$ distinct nonidentity elements.
 Let $X$ be the complement of this set in $G$.
-Then $|X|=351-324=27$, and the identity lies in $X$.
+Then $\cardinality{X}=351-324=27$, and the identity lies in $X$.
 
 Every Sylow $3$-subgroup $P$ is contained in $X$,
 since the order of a nonidentity element of $P$ is a
-power of three and cannot be thirteen. But $|P|=27=|X|$,
+power of three and cannot be thirteen. But $\cardinality{P}=27=\cardinality{X}$,
 so $P=X$. Consequently every Sylow $3$-subgroup is
 the same subgroup. It is normal by Sylow conjugacy,
 and is nontrivial and proper. This proves nonsimplicity

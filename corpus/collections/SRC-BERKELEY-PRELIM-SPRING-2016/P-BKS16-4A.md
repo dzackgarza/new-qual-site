@@ -146,7 +146,7 @@ $$
 
 Since $q(\lambda)\neq0$, there is a neighborhood of $\lambda$ on which $q$ has no zeros. On a sufficiently small closed disk in that neighborhood, the continuous function $q'/q$ is bounded; choose $M>0$ with
 $$
-\left|\frac{q'(z)}{q(z)}\right|\leq M
+\abs{\frac{q'(z)}{q(z)}}\leq M
 $$
 there.
 

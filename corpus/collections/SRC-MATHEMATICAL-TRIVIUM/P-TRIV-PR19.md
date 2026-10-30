@@ -20,11 +20,11 @@ Let ξ and η be two independent random variables taking values 1 and 0 with the
 Find
 
 $$
-\mathbf { E } ( \xi + \eta | \eta ) .
+\mathbf { E } ( \xi + \eta \given \eta ) .
 $$
 
 $$
-\mathbf { E } ( \xi | \xi + \eta ) .
+\mathbf { E } ( \xi \given \xi + \eta ) .
 $$
 :::
 

@@ -42,9 +42,9 @@ $$
 
 For a fixed $z\in[-1,1]$, the cross-section of the solid by the plane of that $z$ is the square
 $$
-|x|\leq\sqrt{1-z^2},
+\abs{x}\leq\sqrt{1-z^2},
 \qquad
-|y|\leq\sqrt{1-z^2}.
+\abs{y}\leq\sqrt{1-z^2}.
 $$
 
 

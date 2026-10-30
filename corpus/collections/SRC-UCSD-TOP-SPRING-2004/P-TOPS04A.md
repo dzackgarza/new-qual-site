@@ -98,7 +98,7 @@ vanishes. In degree one this Bockstein equals $Sq^1(u)=u^2$, so $u^2=0$.
 
 Therefore the ring is the graded $\FF_2$-vector space
 $$
-\boxed{H^*(X;\FF_2)=\FF_2\{1,u,v\},\quad |u|=n,\ |v|=n+1,}
+\boxed{H^*(X;\FF_2)=\FF_2\{1,u,v\},\quad \gradeddegree{u}=n,\ \gradeddegree{v}=n+1,}
 $$
 with all products of positive-degree elements equal to zero.
 

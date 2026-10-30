@@ -39,7 +39,7 @@ For $R>3$, let
 $$
 D_R
 =
-\{z\in\CC:\operatorname{Re}z>0,\ |z|<R\},
+\{z\in\CC:\operatorname{Re}z>0,\ \abs{z}<R\},
 $$
 whose boundary consists of the vertical segment
 $$
@@ -56,7 +56,7 @@ $$
 
 On the imaginary-axis part of $\partial D_R$,
 $$
-\boxed{|e^{-z}|=1}.
+\boxed{\abs{e^{-z}}=1}.
 $$
 
 
@@ -68,9 +68,9 @@ z=iy,
 $$
 then
 $$
-|e^{-z}|
+\abs{e^{-z}}
 =
-|e^{-iy}|
+\abs{e^{-iy}}
 =
 1.
 $$
@@ -83,7 +83,7 @@ $$
 
 On the same boundary segment,
 $$
-\boxed{|z-2|\ge2}.
+\boxed{\abs{z-2}\ge2}.
 $$
 
 
@@ -91,9 +91,9 @@ $$
 
 If $z=iy$, then
 $$
-|z-2|
+\abs{z-2}
 =
-|-2+iy|
+\abs{-2+iy}
 =
 \sqrt{4+y^2}
 \ge2.
@@ -107,7 +107,7 @@ $$
 
 Hence on the imaginary-axis part,
 $$
-\boxed{|e^{-z}|<|z-2|}.
+\boxed{\abs{e^{-z}}<\abs{z-2}}.
 $$
 
 
@@ -123,7 +123,7 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 On the right semicircle,
 $$
-\boxed{|e^{-z}|\le1}.
+\boxed{\abs{e^{-z}}\le1}.
 $$
 
 
@@ -135,7 +135,7 @@ $$
 $$
 so
 $$
-|e^{-z}|
+\abs{e^{-z}}
 =
 e^{-\operatorname{Re}z}
 \le1.
@@ -149,7 +149,7 @@ $$
 
 On the right semicircle,
 $$
-\boxed{|z-2|\ge R-2}.
+\boxed{\abs{z-2}\ge R-2}.
 $$
 
 
@@ -157,9 +157,9 @@ $$
 
 By the reverse triangle inequality,
 $$
-|z-2|
+\abs{z-2}
 \ge
-\bigl||z|-2\bigr|
+\abs{\abs{z}-2}
 =
 R-2.
 $$
@@ -188,7 +188,7 @@ Subtract $2$ from $R>3$.
 
 Therefore on the right semicircle,
 $$
-\boxed{|e^{-z}|<|z-2|}.
+\boxed{\abs{e^{-z}}<\abs{z-2}}.
 $$
 
 
@@ -204,7 +204,7 @@ Use steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 Thus on all of $\partial D_R$,
 $$
-\boxed{|e^{-z}|<|G(z)|}.
+\boxed{\abs{e^{-z}}<\abs{G(z)}}.
 $$
 
 
@@ -227,7 +227,7 @@ Since
 $$
 F=G-e^{-z},
 $$
-the perturbation $e^{-z}$ has modulus strictly smaller than $|G|$ on the boundary by step [](#s1-8){.pf-ref}.
+the perturbation $e^{-z}$ has modulus strictly smaller than $\abs{G}$ on the boundary by step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -251,7 +251,7 @@ The only zero of $G$ is $2$, and for $R>3$,
 $$
 \operatorname{Re}2>0,
 \qquad
-|2|<R.
+\abs{2}<R.
 $$
 It is a simple zero.
 
@@ -281,7 +281,7 @@ Every zero of $F$ in the open right half-plane belongs to $D_R$ for all sufficie
 
 If $z_0\in H$, then choose
 $$
-R>\max\{3,|z_0|\}.
+R>\max\{3,\abs{z_0}\}.
 $$
 Then $z_0\in D_R$.
 

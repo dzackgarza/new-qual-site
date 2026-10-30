@@ -17,7 +17,7 @@ audit:
 Let $V,W$ be finite-dimensional real inner-product spaces, let $A:V\to W$ be linear, and let $w\in W$.
 Show that the vectors $v\in V$ minimizing
 $$
-\|Av-w\|
+\norm{Av-w}
 $$
 are exactly the solutions of the normal equation
 $$
@@ -144,11 +144,11 @@ the two summands are orthogonal.
 
 If $v$ satisfies the normal equation, then
 $$
-\|Au-w\|^2
+\norm{Au-w}^2
 =
-\|Av-w\|^2
+\norm{Av-w}^2
 +
-\|A(u-v)\|^2
+\norm{A(u-v)}^2
 $$
 for every $u\in V$.
 
@@ -165,7 +165,7 @@ Apply the Pythagorean theorem to the orthogonal decomposition in step [](#s1-3){
 
 Every solution of the normal equation minimizes
 $$
-\|Av-w\|.
+\norm{Av-w}.
 $$
 
 
@@ -173,16 +173,16 @@ $$
 
 Step [](#s1-4){.pf-ref} gives
 $$
-\|Au-w\|^2
+\norm{Au-w}^2
 \ge
-\|Av-w\|^2
+\norm{Av-w}^2
 $$
 for every $u\in V$.
 Taking square roots gives
 $$
-\|Au-w\|
+\norm{Au-w}
 \ge
-\|Av-w\|.
+\norm{Av-w}.
 $$
 Thus $v$ is a minimizer.
 
@@ -194,7 +194,7 @@ Thus $v$ is a minimizer.
 
 Conversely, suppose $v$ minimizes
 $$
-\|Av-w\|.
+\norm{Av-w}.
 $$
 Fix
 $$
@@ -204,7 +204,7 @@ and define
 $$
 \phi(t)
 =
-\|A(v+th)-w\|^2.
+\norm{A(v+th)-w}^2.
 $$
 Then $\phi$ has a minimum at
 $$
@@ -220,9 +220,9 @@ v+th\in V.
 $$
 Since $v$ is a global minimizer,
 $$
-\|Av-w\|
+\norm{Av-w}
 \le
-\|A(v+th)-w\|.
+\norm{A(v+th)-w}.
 $$
 Squaring preserves the inequality because both sides are nonnegative.
 Thus
@@ -258,13 +258,13 @@ $$
 \begin{aligned}
 \phi(t)
 &=
-\|r_v+tAh\|^2\\
+\norm{r_v+tAh}^2\\
 &=
-\|r_v\|^2
+\norm{r_v}^2
 +
 2t\langle r_v,Ah\rangle
 +
-t^2\|Ah\|^2.
+t^2\norm{Ah}^2.
 \end{aligned}
 $$
 Differentiate at $t=0$.
@@ -330,7 +330,7 @@ $$
 Therefore
 $$
 \boxed{
-v\text{ minimizes }\|Av-w\|
+v\text{ minimizes }\norm{Av-w}
 \iff
 A^*Av=A^*w.
 }

@@ -31,7 +31,7 @@ Let $\mathcal H$ be a Hilbert space.
 1. Let $x\in \mathcal H$ and $\theset{u_n}_{n=1}^N$ be an orthonormal set.
   Prove that the best approximation to $x$ in $\mathcal H$ by an element in $\spanof_\CC\theset{u_n}$ is given by
   $$
-  \hat x \definedas \sum_{n=1}^N \inner{x}{u_n}u_n.
+  \hat x \coloneqq \sum_{n=1}^N \inner{x}{u_n}u_n.
   $$
 2. Conclude that finite dimensional subspaces of $\mathcal H$ are always closed.
 :::
@@ -58,7 +58,7 @@ step [](#s1){.pf-ref} gives orthogonality to each basis vector, hence to every f
 :::
 
 ::: {.pf-step #s3}
-For every $y = \sum_n c_n u_n \in \spanof_\CC\theset{u_n}$: $\|x - y\|^2 = \|x - \hat x\|^2 + \|\hat x - y\|^2$.
+For every $y = \sum_n c_n u_n \in \spanof_\CC\theset{u_n}$: $\norm{x - y}^2 = \norm{x - \hat x}^2 + \norm{\hat x - y}^2$.
 
 ::: pf-proof
 $x - y = (x - \hat x) + (\hat x - y)$ with $\hat x - y \in \spanof_\CC\theset{u_n}$ and $x - \hat x \perp \hat x - y$ (step [](#s2){.pf-ref}); the Pythagorean theorem applies.
@@ -67,10 +67,10 @@ $x - y = (x - \hat x) + (\hat x - y)$ with $\hat x - y \in \spanof_\CC\theset{u_
 :::
 
 ::: {.pf-step #s4}
-$\|x - y\| \ge \|x - \hat x\|$ for all $y \in \spanof_\CC\theset{u_n}$, with equality iff $y = \hat x$.
+$\norm{x - y} \ge \norm{x - \hat x}$ for all $y \in \spanof_\CC\theset{u_n}$, with equality iff $y = \hat x$.
 
 ::: pf-proof
-step [](#s3){.pf-ref} shows $\|x - y\|^2 = \|x - \hat x\|^2 + \|\hat x - y\|^2 \ge \|x - \hat x\|^2$; equality forces $\|\hat x - y\| = 0$.
+step [](#s3){.pf-ref} shows $\norm{x - y}^2 = \norm{x - \hat x}^2 + \norm{\hat x - y}^2 \ge \norm{x - \hat x}^2$; equality forces $\norm{\hat x - y} = 0$.
 :::
 
 :::

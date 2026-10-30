@@ -137,7 +137,7 @@ $$
 -
 \frac2r\phi'
 +
-U'(|\phi|^2)\phi
+U'(\abs{\phi}^2)\phi
 =0.
 }
 $$
@@ -177,7 +177,7 @@ $$
 -
 \frac2r\phi^{*\prime}
 +
-U'(|\phi|^2)\phi^*
+U'(\abs{\phi}^2)\phi^*
 =0.
 }
 $$
@@ -185,7 +185,7 @@ $$
 
 ::: pf-proof
 
-Repeat steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} with $\phi$ and $\phi^*$ interchanged. Since $U$ is real-valued, $U'(s)$ is real for real $s=|\phi|^2$, so the result is the complex conjugate of step [](#s1-4){.pf-ref}.
+Repeat steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} with $\phi$ and $\phi^*$ interchanged. Since $U$ is real-valued, $U'(s)$ is real for real $s=\abs{\phi}^2$, so the result is the complex conjugate of step [](#s1-4){.pf-ref}.
 
 :::
 

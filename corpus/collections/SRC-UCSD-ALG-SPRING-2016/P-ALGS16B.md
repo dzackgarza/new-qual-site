@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a (not necessarily finite) group with $|G| > 2$.
+Let $G$ be a (not necessarily finite) group with $\cardinality{G} > 2$.
 Prove that there is an automorphism $\varphi \colon G \to G$ other than the identity map.
 :::
 
@@ -85,7 +85,7 @@ Since $x+x=0$ for every $x$, the axioms for an $\mathbf F_2$-vector space hold.
 
 ::: {.pf-step #s5}
 
-Since $|G|>2$, this vector space has dimension at least $2$.
+Since $\cardinality{G}>2$, this vector space has dimension at least $2$.
 Choose linearly independent vectors $e_1,e_2$ and extend them to a basis.
 
 ::: pf-proof
@@ -112,7 +112,7 @@ It is not the identity because it sends $e_1$ to $e_2\neq e_1$.
 
 ::: pf-step
 
-Therefore every group $G$ with $|G|>2$ has a nonidentity automorphism.
+Therefore every group $G$ with $\cardinality{G}>2$ has a nonidentity automorphism.
 
 ::: pf-proof
 

@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-AQRVL
 kind: problem
-title: Laurent expansions of $\frac{1}{1-z^2}+\frac{1}{z-3}$ in $|z|<1$, $1<|z|<3$,
-  and $|z|>3$
+title: Laurent expansions of $\frac{1}{1-z^2}+\frac{1}{z-3}$ in $\abs{z}<1$, $1<\abs{z}<3$, and $\abs{z}>3$
 classification:
   areas:
   - complex-analysis
@@ -18,11 +17,11 @@ review: draft
 ::: {.problem}
 Expand $\frac{1}{1-z^{2}}+\frac{1}{z-3}$ in a series of the form $\sum_{-\infty}^{\infty} a_{n} z^{n}$ so it converges for
 
-- $|z|<1$,
+- $\abs{z}<1$,
 
-- $1<|z|<3$,
+- $1<\abs{z}<3$,
 
-- $|z|>3$.
+- $\abs{z}>3$.
 
 :::
 

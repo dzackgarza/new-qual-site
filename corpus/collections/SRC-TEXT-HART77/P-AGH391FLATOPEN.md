@@ -43,14 +43,14 @@ The subset $f(U)\subseteq Y$ is constructible.
 
 The open subscheme $U$ is noetherian because $X$ is noetherian, and the restricted morphism
 $$
-f|_U:U\longrightarrow Y
+f\restrict_U:U\longrightarrow Y
 $$
 is of finite type because finite type is preserved by restriction to an open subscheme.
 The whole space $U$ is a constructible subset of itself.
 Chevalley's theorem, Hartshorne II, Exercise 3.19, says that the image of a constructible subset under a finite-type morphism of noetherian schemes is constructible.
 Therefore
 $$
-f(U)=(f|_U)(U)
+f(U)=(f\restrict_U)(U)
 $$
 is constructible in $Y$.
 

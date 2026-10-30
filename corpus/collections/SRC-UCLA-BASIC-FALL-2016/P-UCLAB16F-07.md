@@ -75,13 +75,13 @@ p=e_1+u,
 \qquad
 e_1=(1,0,0),
 \qquad
-\|u\|\le1.
+\norm{u}\le1.
 $$
 Then
 $$
-\|p\|
+\norm{p}
 \le
-\|e_1\|+\|u\|
+\norm{e_1}+\norm{u}
 \le
 1+1
 =2.
@@ -203,7 +203,7 @@ $$
 
 For $p\in B_1$,
 $$
-\|p-c\|\le1.
+\norm{p-c}\le1.
 $$
 The halfspace condition is
 $$

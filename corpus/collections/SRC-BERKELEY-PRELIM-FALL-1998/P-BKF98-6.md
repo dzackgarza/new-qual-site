@@ -37,7 +37,7 @@ $$
 ::: {.pf-step #B-image-in-kerA}
 The restriction
 $$
-B|_{\ker(AB)}:
+B\restrict_{\ker(AB)}:
 \ker(AB)\longrightarrow V
 $$
 has image contained in
@@ -75,7 +75,7 @@ $$
 $$
 because $Bx=0$ implies $ABx=0$. Therefore
 $$
-\ker\bigl(B|_{\ker(AB)}\bigr)
+\ker\bigl(B\restrict_{\ker(AB)}\bigr)
 =
 \{x\in\ker(AB):Bx=0\}
 =
@@ -98,7 +98,7 @@ $$
 ::: pf-proof
 Apply the rank--nullity theorem to
 $$
-B|_{\ker(AB)}.
+B\restrict_{\ker(AB)}.
 $$
 Step [](#restricted-kernel-is-kerB){.pf-ref} identifies its kernel, while its image is
 $B(\ker(AB))$.

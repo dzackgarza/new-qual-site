@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $K$ is a finite field with $|K| = q$.
+Suppose that $K$ is a finite field with $\cardinality{K} = q$.
 Show that if $f \in K[x]$ is irreducible, then $f$ divides $x^{q^n} - x$ in $K[x]$ if and only if $\deg f$ divides $n$.
 :::
 
@@ -44,7 +44,7 @@ Because $f$ is irreducible of degree $d$, it is the minimal polynomial of $\alph
 $$
 [K(\alpha):K]=d.
 $$
-Since $|K|=q$, the finite extension $K(\alpha)$ therefore has $q^d$ elements.
+Since $\cardinality{K}=q$, the finite extension $K(\alpha)$ therefore has $q^d$ elements.
 Thus
 $$
 K(\alpha)\cong \mathbf F_{q^d}.

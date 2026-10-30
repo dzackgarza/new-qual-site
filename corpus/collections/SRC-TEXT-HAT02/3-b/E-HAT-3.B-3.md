@@ -36,7 +36,7 @@ Its reduced cellular chain complex has
 $$
 0\longrightarrow \ZZ\langle a\rangle
 \xrightarrow{m}\ZZ\langle b\rangle\longrightarrow0,
-\qquad |a|=n+1,\ |b|=n.
+\qquad \gradeddegree{a}=n+1,\ \gradeddegree{b}=n.
 $$
 Let
 $$

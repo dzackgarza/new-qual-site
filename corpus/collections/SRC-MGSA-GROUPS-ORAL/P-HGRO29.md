@@ -27,7 +27,7 @@ Prove that $G$ is not simple.
 :::
 
 ::: {.solution}
-Assume throughout that $|G|=n<60$ is composite.
+Assume throughout that $\cardinality{G}=n<60$ is composite.
 
 ::: pf
 
@@ -56,7 +56,7 @@ every non-prime-power composite $n<60$ forces a unique Sylow subgroup.
 
 ::: pf-proof
 
-If $p^a\Vert n$, the number $n_p$ of Sylow $p$-subgroups must satisfy
+If $p^a\exactlydivides n$, the number $n_p$ of Sylow $p$-subgroups must satisfy
 $$
 n_p\equiv1\pmod p,
 \qquad
@@ -154,10 +154,10 @@ conjugation on the four Sylow $3$-subgroups gives
 $$
 \varphi:G\to S_4.
 $$
-The action is transitive, so $4$ divides $|\operatorname{im}\varphi|$; also the
+The action is transitive, so $4$ divides $\cardinality{\operatorname{im}\varphi}$; also the
 image order divides both $36$ and $24$. Hence it is $4$ or $12$, and therefore
 $$
-|\ker\varphi|=9\text{ or }3.
+\cardinality{\ker\varphi}=9\text{ or }3.
 $$
 Thus $G$ has a nontrivial proper normal subgroup.
 
@@ -174,7 +174,7 @@ A group of order $48$ is not simple.
 The number $n_3$ is $1$, $4$, or $16$. If $n_3=1$, we are done. If $n_3=4$,
 the conjugation action on the four Sylow $3$-subgroups gives a nontrivial map
 $G\to S_4$; simplicity would force an embedding, impossible because
-$48>|S_4|=24$.
+$48>\cardinality{S_4}=24$.
 
 If $n_3=16$, the Sylow $3$-subgroups contribute
 $$

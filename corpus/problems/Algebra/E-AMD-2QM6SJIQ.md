@@ -72,7 +72,7 @@ The map $\psi$ is surjective.
 
 The minimal polynomial of $\zeta_n$ over $\QQ$ is the cyclotomic polynomial $\Phi_n(x)$, which is irreducible of degree $\varphi(n)$. Hence
 $$
-|\Gal(K/\QQ)|=[K:\QQ]=\varphi(n)=|(\ZZ/n\ZZ)^\times|.
+\cardinality{\Gal(K/\QQ)}=[K:\QQ]=\varphi(n)=\cardinality{(\ZZ/n\ZZ)^\times}.
 $$
 An injective map between these finite groups is therefore bijective.
 

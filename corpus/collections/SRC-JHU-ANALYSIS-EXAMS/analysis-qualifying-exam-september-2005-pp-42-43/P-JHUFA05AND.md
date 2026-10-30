@@ -33,11 +33,11 @@ $$
 
 (a) Prove that
 $$
-\|f\|\le \liminf_{n\to\infty}\|f_n\|,
+\norm{f}\le \liminf_{n\to\infty}\norm{f_n},
 $$
 and give an example where the inequality is strict.
 
-(b) If in addition $\|f_n\|\to\|f\|$, prove that $f_n\to f$ in norm.
+(b) If in addition $\norm{f_n}\to\norm{f}$, prove that $f_n\to f$ in norm.
 :::
 
 ::: {.solution}
@@ -52,21 +52,21 @@ The norm is weakly lower semicontinuous.
 
 If $f=0$, the claimed inequality is immediate. Assume $f\ne0$ and set
 $$
-g=\frac{f}{\|f\|}.
+g=\frac{f}{\norm{f}}.
 $$
-Then $\|g\|=1$, so by Cauchy--Schwarz
+Then $\norm{g}=1$, so by Cauchy--Schwarz
 $$
-|\langle f_n,g\rangle|\le\|f_n\|.
+\abs{\langle f_n,g\rangle}\le\norm{f_n}.
 $$
 Weak convergence gives
 $$
-\langle f_n,g\rangle\longrightarrow\langle f,g\rangle=\|f\|.
+\langle f_n,g\rangle\longrightarrow\langle f,g\rangle=\norm{f}.
 $$
 Therefore
 $$
-\|f\|
-=\lim_{n\to\infty}|\langle f_n,g\rangle|
-\le\liminf_{n\to\infty}\|f_n\|.
+\norm{f}
+=\lim_{n\to\infty}\abs{\langle f_n,g\rangle}
+\le\liminf_{n\to\infty}\norm{f_n}.
 $$
 
 :::
@@ -85,12 +85,12 @@ $$
 $$
 Thus $e_n\rightharpoonup0$. But
 $$
-\|e_n\|=1
+\norm{e_n}=1
 \qquad\text{for all }n,
 $$
 so
 $$
-0=\|0\|<1=\liminf_n\|e_n\|.
+0=\norm{0}<1=\liminf_n\norm{e_n}.
 $$
 
 :::
@@ -105,20 +105,20 @@ Weak convergence plus convergence of norms implies norm convergence.
 
 Since $f_n\rightharpoonup f$, taking the test vector $g=f$ gives
 $$
-\langle f_n,f\rangle\longrightarrow\langle f,f\rangle=\|f\|^2.
+\langle f_n,f\rangle\longrightarrow\langle f,f\rangle=\norm{f}^2.
 $$
 Using the Hilbert-space identity,
 $$
-\|f_n-f\|^2
-=\|f_n\|^2+\|f\|^2-2\operatorname{Re}\langle f_n,f\rangle.
+\norm{f_n-f}^2
+=\norm{f_n}^2+\norm{f}^2-2\operatorname{Re}\langle f_n,f\rangle.
 $$
-By hypothesis, $\|f_n\|\to\|f\|$, so the right-hand side tends to
+By hypothesis, $\norm{f_n}\to\norm{f}$, so the right-hand side tends to
 $$
-\|f\|^2+\|f\|^2-2\|f\|^2=0.
+\norm{f}^2+\norm{f}^2-2\norm{f}^2=0.
 $$
 Hence
 $$
-\|f_n-f\|\longrightarrow0,
+\norm{f_n-f}\longrightarrow0,
 $$
 which is exactly strong convergence.
 

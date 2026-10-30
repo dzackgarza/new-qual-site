@@ -120,12 +120,12 @@ The canonical divisor of a hyperelliptic curve is not very ample.
 ::: pf-proof
 
 Suppose $K$ were very ample.  Then the embedding defined by the complete
-linear system $|K|$ separates every subscheme of length $2$.  In particular,
+linear system $\linearsystem{K}$ separates every subscheme of length $2$.  In particular,
 the restriction map
 $$
 H^0(X,\OO_X(K))
 \longrightarrow
-H^0(D,\OO_X(K)|_D)
+H^0(D,\OO_X(K)\restrict_D)
 $$
 is surjective.
 
@@ -137,7 +137,7 @@ the exact sequence
 $$
 0\longrightarrow\OO_X(K-D)
 \longrightarrow\OO_X(K)
-\longrightarrow\OO_X(K)|_D
+\longrightarrow\OO_X(K)\restrict_D
 \longrightarrow0
 $$
 would therefore give

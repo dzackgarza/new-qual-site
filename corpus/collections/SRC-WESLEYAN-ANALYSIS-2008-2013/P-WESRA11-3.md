@@ -26,7 +26,7 @@ $$
 
 ::: {.solution}
 
-For an interval $I\subset\RR$, write $|I|$ for its length.
+For an interval $I\subset\RR$, write $\setmeasure{I}$ for its length.
 
 ::: pf
 
@@ -37,7 +37,7 @@ $$
 \boxed{
 m^*(A)
 =\inf\left\{
-\sum_{j=1}^\infty |I_j|:
+\sum_{j=1}^\infty \setmeasure{I_j}:
 A\subseteq\bigcup_{j=1}^\infty I_j,
 \ I_j\text{ open intervals}
 \right\}}.
@@ -66,7 +66,7 @@ A_i\subseteq\bigcup_{j=1}^\infty I_{i,j}
 $$
 and
 $$
-\sum_{j=1}^\infty |I_{i,j}|
+\sum_{j=1}^\infty \setmeasure{I_{i,j}}
 <m^*(A_i)+\frac{\varepsilon}{2^i}.
 $$
 
@@ -94,7 +94,7 @@ By step [](#s1-3){.pf-ref}, the countable family $(I_{i,j})_{i,j\ge1}$ covers $\
 $$
 \begin{aligned}
 m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
-&\le \sum_{i=1}^\infty\sum_{j=1}^\infty |I_{i,j}|\\
+&\le \sum_{i=1}^\infty\sum_{j=1}^\infty \setmeasure{I_{i,j}}\\
 &<\sum_{i=1}^\infty\left(m^*(A_i)+\frac{\varepsilon}{2^i}\right)\\
 &=\sum_{i=1}^\infty m^*(A_i)+\varepsilon.
 \end{aligned}

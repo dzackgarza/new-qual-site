@@ -24,7 +24,7 @@ Let $\ell$ be the line of intersection for the planes $x + y + z = 3$ and $x - y
 The planes have normal vectors (1, 1, 1) and (1, −1, 1); the line of intersection is normal to both of these so it is parallel to
 
 $$
-( 1 , 1 , 1 ) \times ( 1 , - 1 , 1 ) = { \left| \begin{array} { l l l } \hat{\imath} & \hat{\jmath} & \hat{k} \\ { { 1 } } & { { 1 } } & { { 1 } } \\ { { 1 } } & { { - 1 } } & { { 1 } } \end{array} \right| } = ( 2 , 0 , - 2 ) .
+( 1 , 1 , 1 ) \times ( 1 , - 1 , 1 ) = { \determinant{ \begin{array} { l l l } \hat{\imath} & \hat{\jmath} & \hat{k} \\ { { 1 } } & { { 1 } } & { { 1 } } \\ { { 1 } } & { { - 1 } } & { { 1 } } \end{array} } } = ( 2 , 0 , - 2 ) .
 $$
 
 The new plane must be normal to this and contain zero so it is given by $2 x - 2 z = 0 \implies x = z$

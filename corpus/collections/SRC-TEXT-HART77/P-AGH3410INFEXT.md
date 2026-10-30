@@ -98,7 +98,7 @@ Each extension determines a well-defined class in $H^1(X,\mathcal D)$.
 Choose a finite affine open cover $\mathfrak U=(U_i)$ of $X$.
 The affine splitting theorem [[P-AGH287INFEXT]], proved from infinitesimal lifting in [[P-AGH286INFLIFT]], gives isomorphisms of identified extensions
 $$
-\theta_i:(\OO_X\oplus\mcf)|_{U_i}\xrightarrow{\cong}\mathcal A|_{U_i}.
+\theta_i:(\OO_X\oplus\mcf)\restrict_{U_i}\xrightarrow{\cong}\mathcal A\restrict_{U_i}.
 $$
 On each overlap, step [](#s2){.pf-ref} writes the transition uniquely as
 $$
@@ -126,12 +126,12 @@ Every class in $H^1(X,\mathcal D)$ is obtained by gluing split extensions, and t
 
 Use the same finite affine cover.
 By the affine-cover comparison, represent the class by a Čech cocycle $(D_{ij})$.
-Glue the sheaves of $k$-algebras $(\OO_X\oplus\mcf)|_{U_i}$ using the maps $u_{D_{ij}}$ from the $j$th chart to the $i$th chart.
+Glue the sheaves of $k$-algebras $(\OO_X\oplus\mcf)\restrict_{U_i}$ using the maps $u_{D_{ij}}$ from the $j$th chart to the $i$th chart.
 Their composition rule in step [](#s2){.pf-ref} and the cocycle identity give the required gluing identities.
 Explicitly, the resulting sheaf consists of local tuples whose components satisfy $s_i=u_{D_{ij}}(s_j)$ on overlaps.
 It restricts on each $U_i$ to that split extension.
 
-On an affine $U_i=\Spec A_i$ with $\mcf|_{U_i}=\widetilde{M_i}$, the split ringed space is $\Spec(A_i\oplus M_i)$ with the square-zero multiplication.
+On an affine $U_i=\Spec A_i$ with $\mcf\restrict_{U_i}=\widetilde{M_i}$, the split ringed space is $\Spec(A_i\oplus M_i)$ with the square-zero multiplication.
 This was proved by localization in [[P-AGH287INFEXT]], step [](#s1){.pf-ref}.
 Thus the glued ringed space is locally a scheme and is a scheme.
 Every transition fixes the quotient and the kernel, so the quotient maps glue to $\rho$ and the kernel inclusions glue to the specified identification with $\mcf$.

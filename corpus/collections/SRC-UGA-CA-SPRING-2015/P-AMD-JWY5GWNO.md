@@ -21,18 +21,18 @@ audit:
 ::: {.problem}
 Find a conformal map
 
-1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\halfplane$
+1.  from $\{ z: \abs{z - 1/2} > 1/2, \text{Re}(z)>0 \}$ to $\halfplane$
 
-2.  from $\{ z: |z - 1/2| > 1/2, |z| <1  \}$ to $\DD$
+2.  from $\{ z: \abs{z - 1/2} > 1/2, \abs{z} <1  \}$ to $\DD$
 
-3.  from the intersection of the disk $|z + i| < \sqrt{2}$ with
+3.  from the intersection of the disk $\abs{z + i} < \sqrt{2}$ with
     ${\halfplane}$ to ${\DD}$.
 
 4.  from ${\DD}  \backslash [a, 1)$ to
     ${\DD} \backslash [0, 1)$ ($0<a<1$). [Short solution
     possible using Blaschke factor]
 
-5.  from $\{ z: |z| < 1, \text{Re}(z) > 0 \} \backslash (0, 1/2]$ to
+5.  from $\{ z: \abs{z} < 1, \text{Re}(z) > 0 \} \backslash (0, 1/2]$ to
     $\halfplane$.
 :::
 
@@ -41,7 +41,7 @@ Find a conformal map
 
 * * *
 
-### Part 1: Map from $\Omega_1 = \{ z \in \CC : |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\halfplane = \{w : \text{Im}(w) > 0\}$
+### Part 1: Map from $\Omega_1 = \{ z \in \CC : \abs{z - 1/2} > 1/2, \text{Re}(z)>0 \}$ to $\halfplane = \{w : \text{Im}(w) > 0\}$
 
 ::: pf
 
@@ -69,7 +69,7 @@ $x^2+y^2 > 0$ for all $z \neq 0$, so $x > 0 \iff \frac{x}{x^2+y^2} > 0$.
 :::
 
 ::: pf-step
-$|z - 1/2| > 1/2 \iff (x - 1/2)^2 + y^2 > 1/4 \iff x^2 - x + y^2 > 0 \iff x^2+y^2 > x \iff \frac{x}{x^2+y^2} < 1 \iff \text{Re}(1/z) < 1$.
+$\abs{z - 1/2} > 1/2 \iff (x - 1/2)^2 + y^2 > 1/4 \iff x^2 - x + y^2 > 0 \iff x^2+y^2 > x \iff \frac{x}{x^2+y^2} < 1 \iff \text{Re}(1/z) < 1$.
 
 ::: pf-proof
 Direct algebraic manipulation of the disc boundary equation.
@@ -148,7 +148,7 @@ Composition of biholomorphisms is a biholomorphism.
 
 * * *
 
-### Part 2: Map from $\Omega_2 = \{ z : |z - 1/2| > 1/2, |z| < 1 \}$ to $\DD$
+### Part 2: Map from $\Omega_2 = \{ z : \abs{z - 1/2} > 1/2, \abs{z} < 1 \}$ to $\DD$
 
 ::: pf
 
@@ -158,8 +158,8 @@ Composition of biholomorphisms is a biholomorphism.
 ::: pf-proof
 
 ::: pf-step
-The boundary circle $|z| = 1$ passes through $z=1$, so under $w_1 = \frac{1}{z-1}$, it maps to a straight line.
-Since $\text{Re}\left(\frac{1}{e^{i\theta}-1}\right) = \text{Re}\left(\frac{e^{-i\theta}-1}{|e^{i\theta}-1|^2}\right) = \frac{\cos\theta - 1}{2-2\cos\theta} = -\frac{1}{2}$, the image of $|z| < 1$ is the half-plane $\text{Re}(w_1) < -\frac{1}{2}$.
+The boundary circle $\abs{z} = 1$ passes through $z=1$, so under $w_1 = \frac{1}{z-1}$, it maps to a straight line.
+Since $\text{Re}\left(\frac{1}{e^{i\theta}-1}\right) = \text{Re}\left(\frac{e^{-i\theta}-1}{\abs{e^{i\theta}-1}^2}\right) = \frac{\cos\theta - 1}{2-2\cos\theta} = -\frac{1}{2}$, the image of $\abs{z} < 1$ is the half-plane $\text{Re}(w_1) < -\frac{1}{2}$.
 
 ::: pf-proof
 Standard property of inversion mapping circles through the pole to straight lines.
@@ -168,7 +168,7 @@ Standard property of inversion mapping circles through the pole to straight line
 :::
 
 ::: pf-step
-The inner circle $|z - 1/2| = 1/2$ also passes through $z=1$.
+The inner circle $\abs{z - 1/2} = 1/2$ also passes through $z=1$.
 For points on this circle, $z = \frac{1}{2} + \frac{1}{2}e^{i\theta}$, so $z-1 = -\frac{1}{2}(1 - e^{i\theta})$.
 Then $\text{Re}\left(\frac{1}{z-1}\right) = \text{Re}\left(\frac{-2}{1-e^{i\theta}}\right) = -2 \cdot \frac{1}{2} = -1$.
 
@@ -179,7 +179,7 @@ Calculation of real part of $\frac{-2}{1 - \cos\theta - i\sin\theta}$.
 :::
 
 ::: pf-step
-Since $|z-1/2| > 1/2$, the region $\Omega_2$ maps conformally onto the vertical strip $S_2 = \{w_1 : -1 < \text{Re}(w_1) < -1/2\}$.
+Since $\abs{z-1/2} > 1/2$, the region $\Omega_2$ maps conformally onto the vertical strip $S_2 = \{w_1 : -1 < \text{Re}(w_1) < -1/2\}$.
 
 ::: pf-proof
 By continuity and connectedness, evaluating at the test point $z = -1/2 \in \Omega_2$ gives $w_1 = \frac{1}{-3/2} = -2/3 \in (-1, -1/2)$.
@@ -241,7 +241,7 @@ The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\halfplane$ biholomorphic
 
 * * *
 
-### Part 3: Map from $\Omega_3 = \{z \in \halfplane : |z + i| < \sqrt{2}\}$ to $\DD$
+### Part 3: Map from $\Omega_3 = \{z \in \halfplane : \abs{z + i} < \sqrt{2}\}$ to $\DD$
 
 ::: pf
 
@@ -251,7 +251,7 @@ The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\halfplane$ biholomorphic
 ::: pf-proof
 
 ::: pf-step
-The region is bounded by the real line $\text{Im}(z) = 0$ and the circular arc $|z+i| = \sqrt{2}$ in the upper half-plane.
+The region is bounded by the real line $\text{Im}(z) = 0$ and the circular arc $\abs{z+i} = \sqrt{2}$ in the upper half-plane.
 
 ::: pf-proof
 By definition of $\Omega_3$.
@@ -260,7 +260,7 @@ By definition of $\Omega_3$.
 :::
 
 ::: pf-step
-The circle $|z+i|^2 = x^2 + (y+1)^2 = 2$ intersects $y=0$ at $x^2 + 1 = 2 \implies x = \pm 1$.
+The circle $\abs{z+i}^2 = x^2 + (y+1)^2 = 2$ intersects $y=0$ at $x^2 + 1 = 2 \implies x = \pm 1$.
 The vertices of the circular lune are $z_1 = -1$ and $z_2 = 1$.
 
 ::: pf-proof
@@ -270,7 +270,7 @@ Solving $x^2+(0+1)^2=2$.
 :::
 
 ::: pf-step
-The circle $|z+i|=\sqrt{2}$ meets the real axis at an angle: the normal to the circle at $z=1$ is $1 - (-i) = 1+i$ (angle $\pi/4$), while the real axis has normal $i$ (angle $\pi/2$). The internal angle of $\Omega_3$ at both vertices $\pm 1$ is $\pi/4$.
+The circle $\abs{z+i}=\sqrt{2}$ meets the real axis at an angle: the normal to the circle at $z=1$ is $1 - (-i) = 1+i$ (angle $\pi/4$), while the real axis has normal $i$ (angle $\pi/2$). The internal angle of $\Omega_3$ at both vertices $\pm 1$ is $\pi/4$.
 
 ::: pf-proof
 At $z=1$, the tangent vector to the circle is $e^{i 3\pi/4}$, which makes an angle of $\pi/4$ with the real segment $[-1, 1]$.
@@ -395,7 +395,7 @@ Restriction of a biholomorphism to an open subset.
 
 * * *
 
-### Part 5: Map from $\Omega_5 = \{ z : |z| < 1, \text{Re}(z) > 0 \} \setminus (0, 1/2]$ to $\halfplane$
+### Part 5: Map from $\Omega_5 = \{ z : \abs{z} < 1, \text{Re}(z) > 0 \} \setminus (0, 1/2]$ to $\halfplane$
 
 ::: pf
 
@@ -405,7 +405,7 @@ Restriction of a biholomorphism to an open subset.
 ::: pf-proof
 
 ::: pf-step
-The right half-disc $\{|z|<1, \text{Re}(z)>0\} = \{r e^{i\theta} : 0 < r < 1, -\pi/2 < \theta < \pi/2\}$.
+The right half-disc $\{\abs{z}<1, \text{Re}(z)>0\} = \{r e^{i\theta} : 0 < r < 1, -\pi/2 < \theta < \pi/2\}$.
 
 ::: pf-proof
 Polar coordinate description of the right half-disc.
@@ -498,7 +498,7 @@ Composition of $z \mapsto z^2$ and $\psi$.
 The principal square root $w_3 = \sqrt{w_2}$ maps $\DD \setminus (-1, 0]$ conformally onto the right half-disc $\{w_3 \in \DD : \text{Re}(w_3) > 0\}$.
 
 ::: pf-proof
-The principal square root maps the slit plane $\CC \setminus (-\infty, 0]$ to the right half-plane $\text{Re}(w_3) > 0$, and preserves the condition $|w_2| < 1 \iff |w_3| < 1$.
+The principal square root maps the slit plane $\CC \setminus (-\infty, 0]$ to the right half-plane $\text{Re}(w_3) > 0$, and preserves the condition $\abs{w_2} < 1 \iff \abs{w_3} < 1$.
 :::
 
 :::

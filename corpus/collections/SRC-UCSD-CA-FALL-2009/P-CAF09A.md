@@ -19,7 +19,7 @@ Find the principal value of $\log(e^{3+7i})$.
 ::: {.solution}
 The principal logarithm is
 $$
-\operatorname{Log} w=\log|w|+i\operatorname{Arg}w,
+\operatorname{Log} w=\log\abs{w}+i\operatorname{Arg}w,
 \qquad -\pi<\operatorname{Arg}w\le\pi.
 $$
 Now

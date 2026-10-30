@@ -53,13 +53,13 @@ The space $V$ is a vector subspace and $L$ is linear, because limits respect fin
 
 For every $n$,
 $$
-\left|n\int_0^{1/n}f(x)\,dx\right|
-\le n\frac1n\|f\|_\infty
-=\|f\|_\infty.
+\abs{n\int_0^{1/n}f(x)\,dx}
+\le n\frac1n\norm{f}_\infty
+=\norm{f}_\infty.
 $$
 Passing to the limit gives
 $$
-|L(f)|\le\|f\|_\infty.
+\abs{L(f)}\le\norm{f}_\infty.
 $$
 Thus $L$ is a bounded linear functional on $V$ with norm at most $1$. By the Hahn--Banach theorem, $L$ extends to a bounded linear functional
 $$

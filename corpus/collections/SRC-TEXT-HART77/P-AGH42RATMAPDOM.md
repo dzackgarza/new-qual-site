@@ -52,7 +52,7 @@ $$
 be two representatives.
 By the definition of a rational map,
 $$
-\varphi_U|_{U\cap V}=\varphi_V|_{U\cap V}.
+\varphi_U\restrict_{U\cap V}=\varphi_V\restrict_{U\cap V}.
 $$
 Hence the piecewise rule
 $$

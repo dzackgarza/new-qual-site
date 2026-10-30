@@ -40,7 +40,7 @@ $$
 has order $7$. By Lagrange's theorem, the order of this subgroup divides the
 order of the finite group. Hence
 $$
-7\mid |G|.
+7\mid \cardinality{G}.
 $$
 
 :::
@@ -54,7 +54,7 @@ The group order must be odd.
 
 ::: pf-proof
 
-If $2\mid |G|$, then Cauchy's theorem gives an element $x\in G$ of order
+If $2\mid \cardinality{G}$, then Cauchy's theorem gives an element $x\in G$ of order
 $2$. Such an element satisfies
 $$
 x^2=e,
@@ -63,7 +63,7 @@ so
 $$
 x=x^{-1}.
 $$
-Since $x\ne e$, this contradicts the hypothesis. Therefore $2\nmid |G|$.
+Since $x\ne e$, this contradicts the hypothesis. Therefore $2\nmid \cardinality{G}$.
 
 :::
 

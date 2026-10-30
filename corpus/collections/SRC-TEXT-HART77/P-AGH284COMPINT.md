@@ -217,7 +217,7 @@ The conormal sheaf is locally free of rank $r$, since $Y$ and $\PP^n$ are smooth
 The source has the same rank, so the surjection is an isomorphism: over a local ring its square matrix is invertible after reduction modulo the maximal ideal, hence has unit determinant.
 Take determinants in the exact conormal sequence
 $$
-0\to\mathcal I_Y/\mathcal I_Y^2\to\Omega_{\PP^n/k}|_Y\to\Omega_{Y/k}\to0.
+0\to\mathcal I_Y/\mathcal I_Y^2\to\Omega_{\PP^n/k}\restrict_Y\to\Omega_{Y/k}\to0.
 $$
 Using $\omega_{\PP^n}=\OO_{\PP^n}(-n-1)$ and the determinant identity in [[D-MODCONORM]] gives
 $$

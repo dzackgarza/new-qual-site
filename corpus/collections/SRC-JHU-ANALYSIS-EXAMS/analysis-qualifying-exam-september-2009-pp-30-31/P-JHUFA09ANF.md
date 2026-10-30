@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-For $0<|z|<\pi/2$, let
+For $0<\abs{z}<\pi/2$, let
 
 $$
 f(z)=\frac{z}{\tan z}.
@@ -44,7 +44,7 @@ The extension has value $f(0)=1$.
 
 ::: {.pf-step #s1}
 
-The quotient extends holomorphically throughout $|z|<\pi$.
+The quotient extends holomorphically throughout $\abs{z}<\pi$.
 
 ::: pf-proof
 
@@ -61,7 +61,7 @@ Moreover, the exponential formula for sine gives
 $\sin z=0$ exactly when $e^{2iz}=1$. Writing $z=x+iy$,
 the modulus of this equation forces $y=0$; its argument
 then gives $x=k\pi$ for an integer $k$. Thus $s$ has
-no zero in $|z|<\pi$, including zero.
+no zero in $\abs{z}<\pi$, including zero.
 The function
 $$
 F(z)=\frac{\cos z}{s(z)}
@@ -70,7 +70,7 @@ is therefore holomorphic on this whole disk, agrees
 with $f$ near zero, and has $F(0)=1$. This proves (a).
 By [[T-GROTS|holomorphic implies analytic]], the Taylor
 series of $F$ at zero converges throughout every closed
-subdisc of $|z|<\pi$, so its radius is at least $\pi$.
+subdisc of $\abs{z}<\pi$, so its radius is at least $\pi$.
 
 :::
 
@@ -90,7 +90,7 @@ $$
 $$
 If the Taylor series at zero had radius greater than
 $\pi$, its sum would be holomorphic in a neighborhood
-of $\pi$ and would agree with $F$ on $|z|<\pi$.
+of $\pi$ and would agree with $F$ on $\abs{z}<\pi$.
 Continuity would make it bounded as real $z\uparrow\pi$,
 contradicting the nonzero limit above. Thus the radius
 is at most $\pi$, and hence exactly $\pi$.

@@ -17,24 +17,24 @@ For each part, determine if it is always true or sometimes false.
 If true give a brief proof.
 If false give a counterexample.
 
-(a) If $f \in H(\DD)$ with $|f(z)| \leq 3$ for all $z$ satisfying $|z| = 1/2$, then $|f''(0)| \leq 24$.
+(a) If $f \in H(\DD)$ with $\abs{f(z)} \leq 3$ for all $z$ satisfying $\abs{z} = 1/2$, then $\abs{f''(0)} \leq 24$.
 
-(b) Suppose $f \in H(\DD)$ and there exists $C > 0$ such that $|f^{(n)}(0)| \leq Cn!$ for all $n \in \NN$.
+(b) Suppose $f \in H(\DD)$ and there exists $C > 0$ such that $\abs{f^{(n)}(0)} \leq Cn!$ for all $n \in \NN$.
 Then $f$ extends to an entire function.
 
 (c) Let $f, g \in H(G)$, where $G$ is open and connected in $\CC$.
 If $f(z)g(z) \equiv 0$, then either $f$ or $g$ is identically zero in $G$.
 
-(d) Suppose $f \in H(\DD \setminus \{0\})$ such that for any positive integer $m$ and any constant $R > 0$, there exists $z \in B(0; 1/2) \setminus \{0\}$ with $|z^m f(z)| > R$.
-Then for any $c \in \CC$ and any $\epsilon > 0$ there exists $z \in \DD \setminus \{0\}$ with $|f(z) - c| < \epsilon$.
+(d) Suppose $f \in H(\DD \setminus \{0\})$ such that for any positive integer $m$ and any constant $R > 0$, there exists $z \in B(0; 1/2) \setminus \{0\}$ with $\abs{z^m f(z)} > R$.
+Then for any $c \in \CC$ and any $\epsilon > 0$ there exists $z \in \DD \setminus \{0\}$ with $\abs{f(z) - c} < \epsilon$.
 
 (e) If $u(z)$ is a (real-valued) harmonic function defined in all of $\CC$ and satisfying $u(z) \geq -1$ for all $z \in \CC$, then $u$ is constant.
 :::
 
 ::: {.solution}
-(a) **True.** Cauchy's estimate on the circle $|z|=1/2$ gives
+(a) **True.** Cauchy's estimate on the circle $\abs{z}=1/2$ gives
 $$
-|f''(0)|\le \frac{2!\,3}{(1/2)^2}=24.
+\abs{f''(0)}\le \frac{2!\,3}{(1/2)^2}=24.
 $$
 
 (b) **False.** The function
@@ -58,7 +58,7 @@ every $c\in\CC$.
 (e) **True.** Since $\CC$ is simply connected, $u$ has a global harmonic
 conjugate $v$, and $F=u+iv$ is entire. Then
 $$
-|e^{-F(z)}|=e^{-u(z)}\le e.
+\abs{e^{-F(z)}}=e^{-u(z)}\le e.
 $$
 Liouville's theorem makes $e^{-F}$ constant. Differentiating shows $F'=0$, so
 $u$ is constant.

@@ -20,15 +20,15 @@ audit:
 Let $X$ be a Banach space, $Y$ a normed linear space, and $B:X\times Y\to\RR$ bilinear.
 Suppose that for each $x\in X$ there is $C_x\ge0$ with
 $$
-|B(x,y)|\le C_x\|y\|\qquad(y\in Y),
+\abs{B(x,y)}\le C_x\norm{y}\qquad(y\in Y),
 $$
 and for each $y\in Y$ there is $C_y\ge0$ with
 $$
-|B(x,y)|\le C_y\|x\|\qquad(x\in X).
+\abs{B(x,y)}\le C_y\norm{x}\qquad(x\in X).
 $$
 Show that there is $C\ge0$ such that
 $$
-|B(x,y)|\le C\|x\|\|y\|
+\abs{B(x,y)}\le C\norm{x}\norm{y}
 $$
 for all $x\in X$ and $y\in Y$.
 :::
@@ -54,7 +54,7 @@ Then $T_y\in X^*$.
 
 Bilinearity makes $T_y$ linear. The second hypothesis gives
 $$
-|T_y(x)|=|B(x,y)|\leq C_y\|x\|,
+\abs{T_y(x)}=\abs{B(x,y)}\leq C_y\norm{x},
 $$
 so $T_y$ is bounded.
 
@@ -66,11 +66,11 @@ so $T_y$ is bounded.
 
 Consider the family
 $$
-\mathcal T=\{T_y:\|y\|\leq1\}\subset X^*.
+\mathcal T=\{T_y:\norm{y}\leq1\}\subset X^*.
 $$
 For each fixed $x\in X$, this family is pointwise bounded:
 $$
-\sup_{\|y\|\leq1}|T_y(x)|<\infty.
+\sup_{\norm{y}\leq1}\abs{T_y(x)}<\infty.
 $$
 
 
@@ -78,11 +78,11 @@ $$
 
 The first hypothesis gives a constant $C_x$ such that
 $$
-|T_y(x)|=|B(x,y)|\leq C_x\|y\|.
+\abs{T_y(x)}=\abs{B(x,y)}\leq C_x\norm{y}.
 $$
-Thus for $\|y\|\leq1$,
+Thus for $\norm{y}\leq1$,
 $$
-|T_y(x)|\leq C_x,
+\abs{T_y(x)}\leq C_x,
 $$
 and taking the supremum gives a finite bound.
 
@@ -94,8 +94,8 @@ and taking the supremum gives a finite bound.
 
 By the Uniform Boundedness Principle, there exists $C\geq0$ such that
 $$
-\|T_y\|_{X^*}\leq C
-\qquad\text{whenever }\|y\|\leq1.
+\norm{T_y}_{X^*}\leq C
+\qquad\text{whenever }\norm{y}\leq1.
 $$
 
 
@@ -103,7 +103,7 @@ $$
 
 The domain $X$ is Banach by hypothesis, every $T_y$ in the family is a bounded linear map by step [](#s1-1){.pf-ref}, and the family is pointwise bounded by step [](#s1-2){.pf-ref}. The Uniform Boundedness Principle therefore gives
 $$
-\sup_{\|y\|\leq1}\|T_y\|<\infty.
+\sup_{\norm{y}\leq1}\norm{T_y}<\infty.
 $$
 Call this supremum $C$.
 
@@ -113,9 +113,9 @@ Call this supremum $C$.
 
 ::: {.pf-step #s1-4}
 
-If $\|y\|\leq1$, then for every $x\in X$,
+If $\norm{y}\leq1$, then for every $x\in X$,
 $$
-|B(x,y)|\leq C\|x\|.
+\abs{B(x,y)}\leq C\norm{x}.
 $$
 
 
@@ -123,9 +123,9 @@ $$
 
 By definition of operator norm,
 $$
-|B(x,y)|=|T_y(x)|\leq\|T_y\|\,\|x\|,
+\abs{B(x,y)}=\abs{T_y(x)}\leq\norm{T_y}\,\norm{x},
 $$
-and step [](#s1-3){.pf-ref} bounds $\|T_y\|$ by $C$.
+and step [](#s1-3){.pf-ref} bounds $\norm{T_y}$ by $C$.
 
 :::
 
@@ -135,13 +135,13 @@ and step [](#s1-3){.pf-ref} bounds $\|T_y\|$ by $C$.
 
 For arbitrary $y\ne0$, bilinearity gives
 $$
-B(x,y)=\|y\|B\left(x,\frac y{\|y\|}\right).
+B(x,y)=\norm{y}B\left(x,\frac y{\norm{y}}\right).
 $$
 
 
 ::: pf-proof
 
-Since $y=\|y\|(y/\|y\|)$, linearity in the second argument gives the identity.
+Since $y=\norm{y}(y/\norm{y})$, linearity in the second argument gives the identity.
 
 :::
 
@@ -151,17 +151,17 @@ Since $y=\|y\|(y/\|y\|)$, linearity in the second argument gives the identity.
 
 Therefore, for all $x\in X$ and $y\in Y$,
 $$
-\boxed{|B(x,y)|\leq C\|x\|\|y\|.}
+\boxed{\abs{B(x,y)}\leq C\norm{x}\norm{y}.}
 $$
 
 
 ::: pf-proof
 
-If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply step [](#s1-4){.pf-ref} to the unit vector $y/\|y\|$ and use step [](#s1-5){.pf-ref}:
+If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply step [](#s1-4){.pf-ref} to the unit vector $y/\norm{y}$ and use step [](#s1-5){.pf-ref}:
 $$
-|B(x,y)|
-=\|y\|\left|B\left(x,\frac y{\|y\|}\right)\right|
-\leq C\|x\|\|y\|.
+\abs{B(x,y)}
+=\norm{y}\abs{B\left(x,\frac y{\norm{y}}\right)}
+\leq C\norm{x}\norm{y}.
 $$
 
 :::

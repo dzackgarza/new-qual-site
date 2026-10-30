@@ -27,7 +27,7 @@ audit:
 Let $g_k = \chi_{[-1,1]} * \chi_{[-k,k]}$.
 Here $f * g$ is the convolution of $f$ and $g$.
 
-(i) Compute $\|g_k\|_{L^\infty}$.
+(i) Compute $\norm{g_k}_{L^\infty}$.
 
 (ii) Compute the inverse Fourier transform of $g_k$, namely $\mathcal{F}^{-1}(g_k)$.
 
@@ -43,7 +43,7 @@ Hint: Use the open mapping theorem.
 
 ::: pf-step
 
-Compute $\|g_k\|_\infty$.
+Compute $\norm{g_k}_\infty$.
 
 ::: pf-proof
 
@@ -58,7 +58,7 @@ $$
 $$
 Since $k\ge1$, this length is at most $2$, and at $x=0$ it equals $2$. Therefore
 $$
-\boxed{\|g_k\|_\infty=2.}
+\boxed{\norm{g_k}_\infty=2.}
 $$
 
 :::
@@ -111,30 +111,30 @@ $$
 Hence for $k\ge4$,
 $$
 \begin{aligned}
-\|h_k\|_1
-&\ge\int_{1/k}^{1/4}|h_k(x)|\,dx\\
+\norm{h_k}_1
+&\ge\int_{1/k}^{1/4}\abs{h_k(x)}\,dx\\
 &\ge\frac4{\pi^2}
-\int_{1/k}^{1/4}\frac{|\sin(2\pi kx)|}{x}\,dx.
+\int_{1/k}^{1/4}\frac{\abs{\sin(2\pi kx)}}{x}\,dx.
 \end{aligned}
 $$
 With $y=kx$ this becomes
 $$
-\|h_k\|_1
+\norm{h_k}_1
 \ge\frac4{\pi^2}
-\int_1^{k/4}\frac{|\sin(2\pi y)|}{y}\,dy.
+\int_1^{k/4}\frac{\abs{\sin(2\pi y)}}{y}\,dy.
 $$
 For each integer $j\ge1$,
 $$
-\int_j^{j+1}|\sin(2\pi y)|\,dy=\frac2\pi,
+\int_j^{j+1}\abs{\sin(2\pi y)}\,dy=\frac2\pi,
 $$
 so
 $$
-\int_j^{j+1}\frac{|\sin(2\pi y)|}{y}\,dy
+\int_j^{j+1}\frac{\abs{\sin(2\pi y)}}{y}\,dy
 \ge\frac2{\pi(j+1)}.
 $$
 Summing over $1\le j\le\lfloor k/4\rfloor-1$ shows
 $$
-\|h_k\|_1\longrightarrow\infty.
+\norm{h_k}_1\longrightarrow\infty.
 $$
 
 :::
@@ -153,13 +153,13 @@ $$
 $$
 is bounded and injective. Suppose it were onto. Then it would be a bounded linear bijection between Banach spaces, so the bounded inverse theorem would give a constant $C$ such that
 $$
-\|f\|_1\le C\|\widehat f\|_\infty
+\norm{f}_1\le C\norm{\widehat f}_\infty
 \qquad(f\in L^1).
 $$
 
-Apply this to $f=h_k$. Since $\widehat{h_k}=g_k$ and $\|g_k\|_\infty=2$,
+Apply this to $f=h_k$. Since $\widehat{h_k}=g_k$ and $\norm{g_k}_\infty=2$,
 $$
-\|h_k\|_1\le2C
+\norm{h_k}_1\le2C
 $$
 for every $k$, contradicting Step 3. Therefore
 $$

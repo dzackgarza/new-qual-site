@@ -223,13 +223,13 @@ an isomorphism, where $p_W:T_W\to W$ is the projection.
 Indeed, pullback of a Cartier local equation gives the same vertical Weil divisor as in step [](#s1){.pf-ref}.
 For the zero section $s:W\to T_W$, the identity $p_Ws=\operatorname{id}_W$ shows that $s^*$ is the inverse isomorphism.
 
-The divisor $\widetilde Z|_{T_W}$ is Cartier and disjoint from $s(W)$.
+The divisor $\widetilde Z\restrict_{T_W}$ is Cartier and disjoint from $s(W)$.
 Its associated invertible sheaf therefore restricts to the trivial sheaf on $s(W)$: the canonical section is nowhere zero there.
 Injectivity of $s^*$ gives
 $$
-[\OO_{T_W}(\widetilde Z|_{T_W})]=0\quad\text{in }\Pic(T_W).
+[\OO_{T_W}(\widetilde Z\restrict_{T_W})]=0\quad\text{in }\Pic(T_W).
 $$
-Hence $[\widetilde Z|_{T_W}]=0$ in $\Cl(T_W)$.
+Hence $[\widetilde Z\restrict_{T_W}]=0$ in $\Cl(T_W)$.
 Step [](#s1){.pf-ref} ensures that $T$ is regular in codimension one, so deleting $T\setminus T_W$ preserves its class group by Proposition II.6.5(b).
 It follows that $[\widetilde Z]=0$ in $\Cl(T)$.
 Restrict to $T\setminus E$, identify it with $X\setminus\{P\}$, and use step [](#s2){.pf-ref} to conclude $[Z]=0$ in $\Cl(X)$.

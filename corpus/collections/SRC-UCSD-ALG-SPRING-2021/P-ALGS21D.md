@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K$ be a field with $|K| = 64$.
+Let $K$ be a field with $\cardinality{K} = 64$.
 Let $\FF_2$ be the prime subfield of $K$.
 Let $G = \operatorname{Gal}(K/\FF_2)$ act in the natural way on $K$, where for $\sigma \in G$ and $a \in K$ we have $\sigma \cdot a = \sigma(a)$.
 
@@ -72,11 +72,11 @@ There are $2$ elements of orbit size $1$, $2$ of orbit size $2$, $6$ of orbit si
 
 ::: pf-proof
 
-Orbit size $1$: $|\FF_2|=2$.
+Orbit size $1$: $\cardinality{\FF_2}=2$.
 
-Orbit size exactly $2$: $|\FF_4|-|\FF_2|=4-2=2$.
+Orbit size exactly $2$: $\cardinality{\FF_4}-\cardinality{\FF_2}=4-2=2$.
 
-Orbit size exactly $3$: $|\FF_8|-|\FF_2|=8-2=6$, since the only proper subfield of $\FF_8$ is $\FF_2$.
+Orbit size exactly $3$: $\cardinality{\FF_8}-\cardinality{\FF_2}=8-2=6$, since the only proper subfield of $\FF_8$ is $\FF_2$.
 
 The remaining
 $$

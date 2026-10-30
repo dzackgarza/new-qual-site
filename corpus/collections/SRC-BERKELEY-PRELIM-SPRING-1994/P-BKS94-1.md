@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let the collection U of open subsets of R cover the interval [0, 1]. Prove that there is a positive number δ such that any two points x and y of [0, 1] satisfying $| x - y | < \delta$ belong together to some member of the cover U.
+Let the collection U of open subsets of R cover the interval [0, 1]. Prove that there is a positive number δ such that any two points x and y of [0, 1] satisfying $\abs{ x - y } < \delta$ belong together to some member of the cover U.
 :::
 
 ::: {.solution}

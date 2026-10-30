@@ -140,16 +140,16 @@ For $k=0$ the total space is
 $$
 S^2\times S^1.
 $$
-For $k=\pm1$ the total space is $S^3$ with the Hopf fibration, up to orientation of the circle action. For $|k|>1$ the total space is the lens space
+For $k=\pm1$ the total space is $S^3$ with the Hopf fibration, up to orientation of the circle action. For $\abs{k}>1$ the total space is the lens space
 $$
-L(|k|,1)
+L(\abs{k},1)
 $$
 up to orientation convention.
 
 
 ::: pf-proof
 
-Degree zero gives the constant clutching map and hence the product bundle. The Hopf bundle has Chern number $1$, and reversing the $S^1$ action changes the sign. Quotienting the Hopf $S^1$ action on $S^3$ by its subgroup of $|k|$th roots of unity gives the circle bundle of Chern number $k$; its total space is the standard lens space $L(|k|,1)$.
+Degree zero gives the constant clutching map and hence the product bundle. The Hopf bundle has Chern number $1$, and reversing the $S^1$ action changes the sign. Quotienting the Hopf $S^1$ action on $S^3$ by its subgroup of $\abs{k}$th roots of unity gives the circle bundle of Chern number $k$; its total space is the standard lens space $L(\abs{k},1)$.
 
 :::
 

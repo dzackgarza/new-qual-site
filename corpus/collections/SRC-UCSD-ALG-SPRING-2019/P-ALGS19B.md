@@ -77,7 +77,7 @@ By the second isomorphism theorem,
 $$
 P\Phi(G)/\Phi(G)\cong P/(P\cap\Phi(G)).
 $$
-By step [](#s2){.pf-ref}, its order is exactly the $p$-part of $|G/\Phi(G)|$.
+By step [](#s2){.pf-ref}, its order is exactly the $p$-part of $\cardinality{G/\Phi(G)}$.
 
 :::
 
@@ -147,7 +147,7 @@ Therefore every Sylow subgroup of $G$ is normal, so $G$ is nilpotent.
 
 ::: pf-proof
 
-The argument in steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} applies to every prime divisor $p$ of $|G|$. A finite group is nilpotent if and only if all of its Sylow subgroups are normal.
+The argument in steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} applies to every prime divisor $p$ of $\cardinality{G}$. A finite group is nilpotent if and only if all of its Sylow subgroups are normal.
 
 :::
 

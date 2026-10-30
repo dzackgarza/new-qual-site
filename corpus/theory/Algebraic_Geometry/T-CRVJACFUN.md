@@ -45,7 +45,7 @@ $$
 $$
 The point $p_0$ determines a normalized Poincaré line bundle $\mathcal P$ on $X\times_k\Jac(X)$, characterized by
 $$
-\mathcal P|_{\theset{p_0}\times\Jac(X)}\cong\OO_{\Jac(X)},
+\mathcal P\restrict_{\theset{p_0}\times\Jac(X)}\cong\OO_{\Jac(X)},
 $$
 whose pullback along $\operatorname{id}_X\times f$ represents the class corresponding to $f\colon T\to\Jac(X)$.
 

@@ -69,9 +69,9 @@ g(z)=\frac{f(z)-1}{f(z)+1}.
 $$
 The denominator never vanishes because $\operatorname{Re}f>0$.
 Moreover
-$|f(z)+1|^2-|f(z)-1|^2=4\operatorname{Re}f(z)>0$,
-so $g$ is entire and $|g|<1$. Liouville's theorem gives
-$g=c$ for some $|c|<1$ [@SS03]. Solving for $f$ gives
+$\abs{f(z)+1}^2-\abs{f(z)-1}^2=4\operatorname{Re}f(z)>0$,
+so $g$ is entire and $\abs{g}<1$. Liouville's theorem gives
+$g=c$ for some $\abs{c}<1$ [@SS03]. Solving for $f$ gives
 $f=(1+c)/(1-c)$, a constant. It cannot be surjective
 onto $H$, which contains more than one point. Thus no
 surjective map in direction (b) exists.

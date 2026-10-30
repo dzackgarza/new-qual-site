@@ -42,7 +42,7 @@ one fixed point.
 
 For (ii), the statement is false. Take
 $$
-G=\{z:1/2<|z|<2\}
+G=\{z:1/2<\abs{z}<2\}
 $$
 and
 $$

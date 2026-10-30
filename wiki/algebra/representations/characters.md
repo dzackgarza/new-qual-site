@@ -25,7 +25,7 @@ The [[D-CTAKB|character]] $\chi_V$ of a representation $V$ determines $V$ up to 
 
 For representations $V$ and $W$,
 $$
-\inner{\chi_V}{\chi_W} \definedas {1\over\size G}\sum_{g\in G} \chi_V(g)\overline{\chi_W(g)} = \dim \Hom_G(V,W),
+\inner{\chi_V}{\chi_W} \coloneqq {1\over\size G}\sum_{g\in G} \chi_V(g)\overline{\chi_W(g)} = \dim \Hom_G(V,W),
 $$
 and the irreducible characters form an orthonormal basis of the space of class functions on $G$.
 Consequently:

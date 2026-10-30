@@ -33,7 +33,7 @@ Reformulation on the cylinder $W \times I$:
 
 ::: pf-step
 
-Let $p: X \to B$ be a fibration with fiber $F$. Suppose $f_0, f_1: W \to X$ are two lifts of $g: W \to B$ such that $f_0|_A = f_1|_A$.
+Let $p: X \to B$ be a fibration with fiber $F$. Suppose $f_0, f_1: W \to X$ are two lifts of $g: W \to B$ such that $f_0\restrict_A = f_1\restrict_A$.
 
 ::: pf-proof
 

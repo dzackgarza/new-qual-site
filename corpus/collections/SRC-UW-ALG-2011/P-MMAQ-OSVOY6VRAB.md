@@ -101,7 +101,7 @@ $$
 $$
 Among $1,5,7,11$, this gives $a=1,5$. Thus the stabilizer of $i$ is $H_i$. Its fixed field has degree
 $$
-[\QQ(\zeta_{12})^{H_i}:\QQ]=\frac4{|H_i|}=2,
+[\QQ(\zeta_{12})^{H_i}:\QQ]=\frac4{\cardinality{H_i}}=2,
 $$
 and contains the quadratic field $\QQ(i)$, so equality holds.
 

@@ -91,7 +91,7 @@ $$d(x', C) - d(x, C) \le d(x, x').$$
 :::
 
 ::: pf-step
-Thus $|d(x, C) - d(x', C)| \le d(x, x')$, so $x \mapsto d(x, C)$ is 1-Lipschitz continuous on $X$.
+Thus $\abs{d(x, C) - d(x', C)} \le d(x, x')$, so $x \mapsto d(x, C)$ is 1-Lipschitz continuous on $X$.
 
 :::
 

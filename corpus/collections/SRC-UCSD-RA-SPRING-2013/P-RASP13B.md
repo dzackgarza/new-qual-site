@@ -29,7 +29,7 @@ audit:
 Let $(X, \mathcal{M}, \mu)$ be a measure space and $f \in L^1(\mu)$.
 Prove that
 $$
-\lim_{t \to \infty} t \, \mu\{x \in X : |f(x)| \geq t\} = 0.
+\lim_{t \to \infty} t \, \mu\{x \in X : \abs{f(x)} \geq t\} = 0.
 $$
 :::
 
@@ -37,33 +37,33 @@ $$
 ::: {.proof}
 Let
 $$
-E_t:=\{x\in X:|f(x)|\ge t\}.
+E_t:=\{x\in X:\abs{f(x)}\ge t\}.
 $$
-On $E_t$ one has $t\le |f|$, so
+On $E_t$ one has $t\le \abs{f}$, so
 $$
 t\,\mu(E_t)
-\le \int_{E_t}|f|\,d\mu.
+\le \int_{E_t}\abs{f}\,d\mu.
 $$
 
-As $t\to\infty$, the indicators $\mathbf1_{E_t}$ decrease pointwise to $0$ at every point where $|f(x)|<\infty$. Since $f\in L^1$, $|f|<\infty$ almost everywhere, and
+As $t\to\infty$, the indicators $\mathbf1_{E_t}$ decrease pointwise to $0$ at every point where $\abs{f(x)}<\infty$. Since $f\in L^1$, $\abs{f}<\infty$ almost everywhere, and
 $$
-|f|\mathbf1_{E_t}\le |f|\in L^1.
+\abs{f}\mathbf1_{E_t}\le \abs{f}\in L^1.
 $$
 Therefore the dominated convergence theorem gives
 $$
-\int_{E_t}|f|\,d\mu
-=\int_X |f|\mathbf1_{E_t}\,d\mu
+\int_{E_t}\abs{f}\,d\mu
+=\int_X \abs{f}\mathbf1_{E_t}\,d\mu
 \longrightarrow0.
 $$
 Hence
 $$
-0\le t\,\mu\{|f|\ge t\}
-\le \int_{\{|f|\ge t\}}|f|\,d\mu
+0\le t\,\mu\{\abs{f}\ge t\}
+\le \int_{\{\abs{f}\ge t\}}\abs{f}\,d\mu
 \longrightarrow0,
 $$
 and so
 $$
-\boxed{\lim_{t\to\infty}t\,\mu\{|f|\ge t\}=0.}
+\boxed{\lim_{t\to\infty}t\,\mu\{\abs{f}\ge t\}=0.}
 $$
 :::
 :::

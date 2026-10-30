@@ -183,7 +183,7 @@ and $H_i(Y_n)=0$ for $i>2$. Equivalently,
 $$
 (H_1,H_2)=
 \begin{cases}
-(\ZZ/|n|,0),&n\ne0,\\
+(\ZZ/\abs{n},0),&n\ne0,\\
 (\ZZ,\ZZ),&n=0.
 \end{cases}
 $$

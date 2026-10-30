@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-BTVLG2S2
 kind: problem
-title: $|HK|=|H||K|/|H\cap K|$
+title: $\cardinality{HK}=\cardinality{H}\cardinality{K}/\cardinality{H\cap K}$
 classification:
   areas:
   - algebra

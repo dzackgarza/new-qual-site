@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Show that
 $$
-A \coloneqq \left\{ f \in L^3(\RR) : \int_{\RR} |f(x)|^2\,dx < \infty \right\}
+A \coloneqq \left\{ f \in L^3(\RR) : \int_{\RR} \abs{f(x)}^2\,dx < \infty \right\}
 $$
 is a Borel subset of $L^3(\RR)$.
 :::
@@ -34,7 +34,7 @@ For each $n\in\NN$, define
 $$
 \phi_n:L^3(\RR)\to[0,\infty),
 \qquad
-\phi_n(f)=\int_{-n}^{n}|f(x)|^2\,dx.
+\phi_n(f)=\int_{-n}^{n}\abs{f(x)}^2\,dx.
 $$
 
 ::: pf
@@ -43,9 +43,9 @@ $$
 
 For every measurable $h$ on $[-n,n]$,
 $$
-\|h\|_{L^2([-n,n])}
+\norm{h}_{L^2([-n,n])}
 \le
-(2n)^{1/6}\|h\|_{L^3([-n,n])}.
+(2n)^{1/6}\norm{h}_{L^3([-n,n])}.
 $$
 
 
@@ -57,18 +57,18 @@ $$
 \qquad\text{and}\qquad
 3
 $$
-to $|h|^2$ and $1$:
+to $\abs{h}^2$ and $1$:
 $$
-\int_{-n}^{n}|h|^2
+\int_{-n}^{n}\abs{h}^2
 \le
-\left(\int_{-n}^{n}|h|^3\right)^{2/3}
+\left(\int_{-n}^{n}\abs{h}^3\right)^{2/3}
 \left(\int_{-n}^{n}1^3\right)^{1/3}.
 $$
 Thus
 $$
-\|h\|_2^2
+\norm{h}_2^2
 \le
-\|h\|_3^2(2n)^{1/3},
+\norm{h}_3^2(2n)^{1/3},
 $$
 and taking square roots gives the claim.
 
@@ -80,11 +80,11 @@ and taking square roots gives the claim.
 
 For every $f,g\in L^3(\RR)$,
 $$
-|\phi_n(f)-\phi_n(g)|
+\abs{\phi_n(f)-\phi_n(g)}
 \le
 (2n)^{1/3}
-\|f-g\|_3
-\bigl(\|f\|_3+\|g\|_3\bigr).
+\norm{f-g}_3
+\bigl(\norm{f}_3+\norm{g}_3\bigr).
 $$
 
 
@@ -92,25 +92,25 @@ $$
 
 On $[-n,n]$,
 $$
-\bigl||f|^2-|g|^2\bigr|
+\abs{\abs{f}^2-\abs{g}^2}
 \le
-|f-g|(|f|+|g|).
+\abs{f-g}(\abs{f}+\abs{g}).
 $$
 Hence Cauchy--Schwarz gives
 $$
 \begin{aligned}
-|\phi_n(f)-\phi_n(g)|
+\abs{\phi_n(f)-\phi_n(g)}
 &\le
-\|f-g\|_{L^2([-n,n])}
+\norm{f-g}_{L^2([-n,n])}
 \bigl(
-\|f\|_{L^2([-n,n])}
-+\|g\|_{L^2([-n,n])}
+\norm{f}_{L^2([-n,n])}
++\norm{g}_{L^2([-n,n])}
 \bigr).
 \end{aligned}
 $$
 Apply step [](#s1-1){.pf-ref} to each $L^2$ norm and use
 $$
-\|h\|_{L^3([-n,n])}\le\|h\|_{L^3(\RR)}.
+\norm{h}_{L^3([-n,n])}\le\norm{h}_{L^3(\RR)}.
 $$
 The resulting factor is
 $$
@@ -136,17 +136,17 @@ is continuous.
 
 Fix $f\in L^3(\RR)$ and let $g\to f$ in $L^3$. Then
 $$
-\|g\|_3
+\norm{g}_3
 \le
-\|f\|_3+\|g-f\|_3,
+\norm{f}_3+\norm{g-f}_3,
 $$
 so the factor
 $$
-\|f\|_3+\|g\|_3
+\norm{f}_3+\norm{g}_3
 $$
 remains bounded near $f$. Step [](#s1-2){.pf-ref} then implies
 $$
-|\phi_n(g)-\phi_n(f)|\to0.
+\abs{\phi_n(g)-\phi_n(f)}\to0.
 $$
 
 :::
@@ -157,7 +157,7 @@ $$
 
 For every $f\in L^3(\RR)$,
 $$
-\int_{\RR}|f(x)|^2\,dx
+\int_{\RR}\abs{f(x)}^2\,dx
 =
 \lim_{n\to\infty}\phi_n(f)
 $$
@@ -168,9 +168,9 @@ in $[0,\infty]$.
 
 The nonnegative functions
 $$
-|f|^2\chi_{[-n,n]}
+\abs{f}^2\chi_{[-n,n]}
 $$
-increase pointwise to $|f|^2$. The monotone convergence theorem therefore
+increase pointwise to $\abs{f}^2$. The monotone convergence theorem therefore
 gives the equality.
 
 :::
@@ -194,7 +194,7 @@ $$
 
 If
 $$
-\int_{\RR}|f|^2<\infty,
+\int_{\RR}\abs{f}^2<\infty,
 $$
 choose an integer $m$ larger than this integral. Then by step [](#s1-4){.pf-ref},
 $$
@@ -208,7 +208,7 @@ $$
 $$
 for every $n$, then step [](#s1-4){.pf-ref} gives
 $$
-\int_{\RR}|f|^2
+\int_{\RR}\abs{f}^2
 =
 \lim_{n\to\infty}\phi_n(f)
 \le m<\infty.

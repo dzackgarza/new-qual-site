@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-(1) Assume $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ converges in $| z | < R$ . Show that for $r < R$
+(1) Assume $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ converges in $\abs{ z } < R$ . Show that for $r < R$
 
 $$
-\frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } | f ( r e ^ { i \theta } ) | ^ { 2 } d \theta = \sum _ { n = 0 } ^ { \infty } | c _ { n } | ^ { 2 } r ^ { 2 n } .
+\frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } \abs{ f ( r e ^ { i \theta } ) } ^ { 2 } d \theta = \sum _ { n = 0 } ^ { \infty } \abs{ c _ { n } } ^ { 2 } r ^ { 2 n } .
 $$
 
 (2) Deduce Liouville’s theorem from (1).

@@ -106,11 +106,11 @@ so the answer is (B).
 For any unit vector $\mathbf{w}$,
 $$
 D_{\mathbf{w}}f(P)=\nabla f(P)\cdot\mathbf{w}
-\le \|\nabla f(P)\|
+\le \norm{\nabla f(P)}
 $$
 by the Cauchy--Schwarz inequality, with equality when $\mathbf{w}$ points in the direction of the gradient. By step [](#s1-2){.pf-ref},
 $$
-\|\nabla f(P)\|
+\norm{\nabla f(P)}
 =\sqrt{4^2+2^2}
 =\sqrt{20}
 =2\sqrt5.

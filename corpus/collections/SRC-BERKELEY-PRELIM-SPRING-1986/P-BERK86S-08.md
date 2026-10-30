@@ -35,7 +35,7 @@ A(z)=\begin{pmatrix}
 $$
 How many distinct values $z$ satisfy
 $$
-|z|<1
+\abs{z}<1
 $$
 and make $A(z)$ noninvertible?
 :::

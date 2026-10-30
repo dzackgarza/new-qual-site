@@ -29,7 +29,7 @@ If $f_n\to f$ uniformly on $X$, then $f$ is continuous.
 Let $x_0\in X$ and $\varepsilon>0$.
 Choose $N$ such that
 $$
-|f_N(x)-f(x)|<\frac{\varepsilon}{3}
+\abs{f_N(x)-f(x)}<\frac{\varepsilon}{3}
 $$
 for every $x\in X$.
 Since $f_N$ is continuous at $x_0$, there exists $\delta>0$ such that
@@ -38,18 +38,18 @@ d(x,x_0)<\delta
 $$
 implies
 $$
-|f_N(x)-f_N(x_0)|<\frac{\varepsilon}{3}.
+\abs{f_N(x)-f_N(x_0)}<\frac{\varepsilon}{3}.
 $$
 Then
 $$
 \begin{aligned}
-|f(x)-f(x_0)|
+\abs{f(x)-f(x_0)}
 &\le
-|f(x)-f_N(x)|
+\abs{f(x)-f_N(x)}
 +
-|f_N(x)-f_N(x_0)|
+\abs{f_N(x)-f_N(x_0)}
 +
-|f_N(x_0)-f(x_0)|\\
+\abs{f_N(x_0)-f(x_0)}\\
 &<
 \varepsilon.
 \end{aligned}
@@ -206,7 +206,7 @@ Therefore $f_n\to f$ uniformly on $X$.
 
 Step [](#s1-6){.pf-ref} gives
 $$
-\sup_{x\in X}|f_n(x)-f(x)|<\varepsilon
+\sup_{x\in X}\abs{f_n(x)-f(x)}<\varepsilon
 $$
 for every $n\ge N$. This is uniform convergence.
 

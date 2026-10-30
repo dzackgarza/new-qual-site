@@ -107,7 +107,7 @@ P\in W_P\subseteq U\cap V
 $$
 such that
 $$
-t|_{W_P}=s|_{W_P}.
+t\restrict_{W_P}=s\restrict_{W_P}.
 $$
 For every $Q\in W_P$, therefore,
 $$
@@ -133,7 +133,7 @@ is continuous, and for every $s\in\mcf(U)$ the map
 $$
 \bar s:U\longrightarrow\bar s(U)
 $$
-is a homeomorphism with inverse $\pi|_{\bar s(U)}$.
+is a homeomorphism with inverse $\pi\restrict_{\bar s(U)}$.
 
 ::: pf-proof
 
@@ -168,7 +168,7 @@ If $\sigma$ is continuous, then every point $P\in U$ has a neighborhood $W\subse
 $$
 W\subseteq V
 \qquad\text{and}\qquad
-\sigma|_W=\bar s|_W.
+\sigma\restrict_W=\bar s\restrict_W.
 $$
 
 ::: pf-proof
@@ -202,7 +202,7 @@ $$
 $$
 In particular $Q\in V$, so $W\subseteq V$, and
 $$
-\sigma|_W=\bar s|_W.
+\sigma\restrict_W=\bar s\restrict_W.
 $$
 
 :::
@@ -217,11 +217,11 @@ Conversely, any section $\sigma:U\to E$ which is locally of the form $\bar s$ fo
 
 Suppose $U$ has an open cover $\{U_\alpha\}$ such that
 $$
-\sigma|_{U_\alpha}=\bar s_\alpha|_{U_\alpha}
+\sigma\restrict_{U_\alpha}=\bar s_\alpha\restrict_{U_\alpha}
 $$
 for suitable presheaf sections $s_\alpha$.  Each $\bar s_\alpha$ is continuous by the definition of the topology on $E$.  Hence every restriction
 $$
-\sigma|_{U_\alpha}
+\sigma\restrict_{U_\alpha}
 $$
 is continuous.
 
@@ -229,7 +229,7 @@ Continuity is local on the source: for any open $W\subseteq E$,
 $$
 \sigma^{-1}(W)
 =\bigcup_\alpha
-(\sigma|_{U_\alpha})^{-1}(W),
+(\sigma\restrict_{U_\alpha})^{-1}(W),
 $$
 which is open in $U$.  Thus $\sigma$ is continuous.
 
@@ -313,7 +313,7 @@ s_\alpha\in\mcf(V_\alpha)
 $$
 such that
 $$
-\sigma|_{U_\alpha}=\bar s_\alpha|_{U_\alpha}.
+\sigma\restrict_{U_\alpha}=\bar s_\alpha\restrict_{U_\alpha}.
 $$
 
 On an overlap, the germs of $s_\alpha$ and $s_\beta$ agree at every point.  Hence they agree locally near every point of the overlap.  Applying $\phi$, the sections

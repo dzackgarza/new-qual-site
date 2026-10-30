@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-4B
 kind: problem
-title: Contour integral of $(6z^5+1)/(z^6+z+1)$ over $|z|=2$
+title: Contour integral of $(6z^5+1)/(z^6+z+1)$ over $\abs{z}=2$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-10-02
-  note: Verified the strict Rouché inequality on $|z|=2$ and the argument-principle evaluation.
+  note: Verified the strict Rouché inequality on $\abs{z}=2$ and the argument-principle evaluation.
 ---
 
 ::: {.problem}
@@ -54,9 +54,9 @@ The polynomial $P$ has exactly six zeros inside $C$ and no zeros on $C$.
 
 ::: pf-proof
 
-On $C$, one has $|z|=2$, so
+On $C$, one has $\abs{z}=2$, so
 $$
-|z+1|\leq |z|+1=3<64=|z^6|.
+\abs{z+1}\leq \abs{z}+1=3<64=\abs{z^6}.
 $$
 By Rouché's theorem, $z^6$ and
 $$

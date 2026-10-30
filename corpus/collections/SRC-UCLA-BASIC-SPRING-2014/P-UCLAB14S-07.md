@@ -27,7 +27,7 @@ $$
 $$
 with all these series converging absolutely, but such that
 $$
-\sum_n\sum_m |a_{n,m}|=\infty.
+\sum_n\sum_m \abs{a_{n,m}}=\infty.
 $$
 :::
 
@@ -173,7 +173,7 @@ The block has four entries, each of absolute value $c_k=1/k$.
 
 Hence
 $$
-\sum_n\sum_m|a_{n,m}|
+\sum_n\sum_m\abs{a_{n,m}}
 =\sum_{k=1}^{\infty}\frac4k
 =\infty.
 $$

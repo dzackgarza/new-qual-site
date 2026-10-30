@@ -23,21 +23,21 @@ audit:
 
 ::: {.problem}
 Suppose every element of a finite group $G$ has order equal to a power of one fixed prime $p$.
-Must $|G|$ be a power of $p$?
+Must $\cardinality{G}$ be a power of $p$?
 Justify your answer.
 :::
 
 ::: {.solution}
 Yes.
 
-Suppose, for contradiction, that some prime $q\ne p$ divides $|G|$. By
+Suppose, for contradiction, that some prime $q\ne p$ divides $\cardinality{G}$. By
 Cauchy's theorem, $G$ then contains an element of order $q$. But by hypothesis
 every element of $G$ has order a power of $p$, and no positive power of $p$
 equals the distinct prime $q$. This is a contradiction.
 
-Therefore no prime other than $p$ divides $|G|$, so
+Therefore no prime other than $p$ divides $\cardinality{G}$, so
 $$
-|G|=p^n
+\cardinality{G}=p^n
 $$
 for some $n\ge0$.
 :::

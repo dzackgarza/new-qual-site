@@ -107,7 +107,7 @@ $$
 $$
 But $Sx=-x$ would give
 $$
-\langle Sx,x\rangle=-\|x\|^2,
+\langle Sx,x\rangle=-\norm{x}^2,
 $$
 hence $x=0$. Thus $I+S$ is nonsingular. The same argument with $Sx=x$
 shows that $I-S$ is nonsingular.

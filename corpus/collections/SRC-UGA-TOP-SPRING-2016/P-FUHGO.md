@@ -44,7 +44,7 @@ Take the closed orientable genus-$2$ surface $\Sigma_2$, with
 $$
 \pi_1(\Sigma_2)
 =\left\langle a_1,b_1,a_2,b_2
-\mathrel{\Big|}
+\mathrel{\presentationbar}
 [a_1,b_1][a_2,b_2]=1
 \right\rangle.
 $$

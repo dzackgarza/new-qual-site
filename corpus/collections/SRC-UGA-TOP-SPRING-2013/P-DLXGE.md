@@ -123,7 +123,7 @@ Seifert--van Kampen gives
 $$
 \pi_1(\RP^2\#T^2)
 \cong
-\left\langle a,b,c\ \middle|\ a^2[b,c]=1\right\rangle.
+\left\langle a,b,c\ \presentationbar\ a^2[b,c]=1\right\rangle.
 $$
 
 ::: pf-proof
@@ -164,7 +164,7 @@ $$
 \boxed{
 \pi_1(\RP^2\#T^2)
 \cong
-\left\langle a,b,c\ \middle|\ a^2[b,c]=1\right\rangle.}
+\left\langle a,b,c\ \presentationbar\ a^2[b,c]=1\right\rangle.}
 $$
 
 ::: pf-proof

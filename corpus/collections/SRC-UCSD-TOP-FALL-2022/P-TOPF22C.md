@@ -52,7 +52,7 @@ For $N_2$, the mod-$2$ intersection form in the basis of the two crosscap curves
 ::: {.pf-step #s3}
 
 Thus
-$$H^*(K;\FF_2)\cong \FF_2[x,y]/(xy,\ x^2+y^2,\ x^3,\ y^3),\qquad |x|=|y|=1.$$
+$$H^*(K;\FF_2)\cong \FF_2[x,y]/(xy,\ x^2+y^2,\ x^3,\ y^3),\qquad \gradeddegree{x}=\gradeddegree{y}=1.$$
 
 ::: pf-proof
 

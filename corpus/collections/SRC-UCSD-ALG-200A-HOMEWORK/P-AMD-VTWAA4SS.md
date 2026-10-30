@@ -128,7 +128,7 @@ $$
 $$
 By step [](#s2){.pf-ref},
 $$
-|\operatorname{im}(\sigma_a)|=\frac{n}{\gcd(a,n)}.
+\cardinality{\operatorname{im}(\sigma_a)}=\frac{n}{\gcd(a,n)}.
 $$
 Thus $\sigma_a$ is surjective exactly when $\gcd(a,n)=1$.
 Since $G$ is finite, surjectivity is equivalent to bijectivity, so this is exactly the condition for $\sigma_a$ to be an automorphism.

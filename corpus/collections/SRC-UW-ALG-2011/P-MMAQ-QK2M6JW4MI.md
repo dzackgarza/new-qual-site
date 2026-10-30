@@ -46,7 +46,7 @@ $$
 $$
 If an invertible linear map fixes all three nonzero vectors, then in particular it fixes a basis, hence is the identity. Thus the homomorphism is injective. Also
 $$
-|\operatorname{GL}_2(\FF_2)|=(2^2-1)(2^2-2)=3\cdot2=6=|S_3|,
+\cardinality{\operatorname{GL}_2(\FF_2)}=(2^2-1)(2^2-2)=3\cdot2=6=\cardinality{S_3},
 $$
 so it is an isomorphism.
 
@@ -91,7 +91,7 @@ $$
 
 For a finite group over $\CC$, each irreducible representation occurs in the regular representation with multiplicity equal to its dimension. Applying this to the irreducible dimensions $1,1,2$ from step [](#s2){.pf-ref} gives multiplicities $1,1,2$. The total dimension is
 $$
-1^2+1^2+2^2=6=|G|,
+1^2+1^2+2^2=6=\cardinality{G},
 $$
 as required.
 

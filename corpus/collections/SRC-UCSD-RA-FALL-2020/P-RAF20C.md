@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20C
 kind: problem
-title: "Strict inequality $|\\hat f(\\xi)|<\\hat f(0)$ for a positive $L^1$ function"
+title: "Strict inequality $\\abs{\\hat f(\\xi)}<\\hat f(0)$ for a positive $L^1$ function"
 classification:
   areas:
   - real-analysis
@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $f \in L^1(\RR^n)$ and $f > 0$ in $\RR^n$.
-Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\xi \in \RR^n$ with $\xi \neq 0$.
+Prove that the strict inequality $\abs{\hat{f}(\xi)} < \hat{f}(0)$ holds for any $\xi \in \RR^n$ with $\xi \neq 0$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\x
 
 ::: {.pf-step #s1}
 
-$|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\RR^n$.
+$\abs{\widehat f(\xi)}\le\widehat f(0)$ for every $\xi\in\RR^n$.
 
 ::: pf-proof
 
@@ -44,8 +44,8 @@ $$
 $$
 For any $\xi$,
 $$
-|\widehat f(\xi)|
-=\left|\int f(x)e^{-i x\cdot\xi}\,dx\right|
+\abs{\widehat f(\xi)}
+=\abs{\int f(x)e^{-i x\cdot\xi}\,dx}
 \le \int f(x)\,dx
 =\widehat f(0).
 $$
@@ -57,18 +57,18 @@ The normalization $e^{-2\pi i x\cdot\xi}$ changes only the phase factor, and the
 
 ::: {.pf-step #s2}
 
-If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\CC$ with $|c|=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
+If $\xi\ne0$ and $\abs{\widehat f(\xi)}=\widehat f(0)$, then there is $c\in\CC$ with $\abs{c}=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
 
 ::: pf-proof
 
 Suppose for contradiction that $\xi\ne0$ and
 $$
-|\widehat f(\xi)|=\widehat f(0).
+\abs{\widehat f(\xi)}=\widehat f(0).
 $$
 Let
 $$
-c:=\frac{\widehat f(\xi)}{|\widehat f(\xi)|},
-\qquad |c|=1.
+c:=\frac{\widehat f(\xi)}{\abs{\widehat f(\xi)}},
+\qquad \abs{c}=1.
 $$
 Then
 $$
@@ -98,19 +98,19 @@ for almost every $x$.
 
 ::: pf-step
 
-For $\xi\ne0$ and $|c|=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal to $c$ almost everywhere; hence $|\widehat f(\xi)|<\widehat f(0)$.
+For $\xi\ne0$ and $\abs{c}=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal to $c$ almost everywhere; hence $\abs{\widehat f(\xi)}<\widehat f(0)$.
 
 ::: pf-proof
 
-For fixed $\xi\ne0$ and fixed $c\in\CC$ with $|c|=1$, the set
+For fixed $\xi\ne0$ and fixed $c\in\CC$ with $\abs{c}=1$, the set
 $$
 \{x\in\RR^n:e^{-ix\cdot\xi}=c\}
 $$
 is a countable union of affine hyperplanes perpendicular to $\xi$. It therefore has Lebesgue measure zero.
 
-Thus the phase cannot equal the constant $c$ almost everywhere. By step [](#s2){.pf-ref}, equality $|\widehat f(\xi)|=\widehat f(0)$ is therefore impossible for $\xi\ne0$, and step [](#s1){.pf-ref} gives
+Thus the phase cannot equal the constant $c$ almost everywhere. By step [](#s2){.pf-ref}, equality $\abs{\widehat f(\xi)}=\widehat f(0)$ is therefore impossible for $\xi\ne0$, and step [](#s1){.pf-ref} gives
 $$
-\boxed{|\widehat f(\xi)|<\widehat f(0)\quad\text{for every }\xi\ne0.}
+\boxed{\abs{\widehat f(\xi)}<\widehat f(0)\quad\text{for every }\xi\ne0.}
 $$
 
 :::

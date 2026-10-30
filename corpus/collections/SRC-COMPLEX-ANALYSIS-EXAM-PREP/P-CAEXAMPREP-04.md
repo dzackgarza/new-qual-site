@@ -23,7 +23,7 @@ $$
 
 ::: {.solution}
 
-Put $b=|a|>0$. Since $\cos(ax)=\cos(bx)$, it is enough to evaluate the integral with $b>0$.
+Put $b=\abs{a}>0$. Since $\cos(ax)=\cos(bx)$, it is enough to evaluate the integral with $b>0$.
 
 ::: pf
 
@@ -66,15 +66,15 @@ $$
 
 On $C_R$,
 $$
-|e^{ibz}|=e^{-b\operatorname{Im}z}\le1
+\abs{e^{ibz}}=e^{-b\operatorname{Im}z}\le1
 $$
 and, for $R>1$,
 $$
-|1+z^2|\ge R^2-1.
+\abs{1+z^2}\ge R^2-1.
 $$
 Since the length of $C_R$ is $\pi R$, the ML estimate gives
 $$
-\left|\int_{C_R}F(z)\,dz\right|
+\abs{\int_{C_R}F(z)\,dz}
 \le\frac{\pi R}{R^2-1}
 \longrightarrow0.
 $$
@@ -113,7 +113,7 @@ Therefore
 $$
 \boxed{
 \int_{-\infty}^{\infty}\frac{\cos(ax)}{1+x^2}\,dx
-=\pi e^{-|a|}}.
+=\pi e^{-\abs{a}}}.
 $$
 
 
@@ -124,7 +124,7 @@ $$
 \int_{-\infty}^{\infty}\frac{\cos(bx)}{1+x^2}\,dx
 =\pi e^{-b}.
 $$
-Since $b=|a|$ and $\cos(ax)=\cos(bx)$, this is exactly the claimed formula.
+Since $b=\abs{a}$ and $\cos(ax)=\cos(bx)$, this is exactly the claimed formula.
 
 :::
 

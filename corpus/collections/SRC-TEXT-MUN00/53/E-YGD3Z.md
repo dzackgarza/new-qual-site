@@ -33,7 +33,7 @@ Let $p: E \to B$ be a covering map.
 :::
 
 ::: {.solution}
-(a) Every point $e\in E$ has an open slice $V$ such that $p|_V:V\to U$ is a homeomorphism onto an open subset $U\subset B$. So $E$ is locally homeomorphic to $B$; the separation properties below also need points in different slices.
+(a) Every point $e\in E$ has an open slice $V$ such that $p\restrict_V:V\to U$ is a homeomorphism onto an open subset $U\subset B$. So $E$ is locally homeomorphic to $B$; the separation properties below also need points in different slices.
 
 If $B$ is Hausdorff and $e_1\ne e_2$, then if $p(e_1)\ne p(e_2)$, separate their images and pull back the disjoint neighborhoods. If $p(e_1)=p(e_2)$, choose one evenly covered neighborhood of their common image; the two points lie in distinct disjoint slices. Hence $E$ is Hausdorff.
 
@@ -63,9 +63,9 @@ is homeomorphic to the compact space $\overline W$, hence compact, and contains 
 $$
 p^{-1}(b)=\{e_1,\dots,e_r\}
 $$
-is finite, choose $U_j\in\mathcal U$ with $e_j\in U_j$. Choose one evenly covered neighborhood $V$ of $b$, with slices $V_1,\dots,V_r$ containing $e_1,\dots,e_r$, respectively. For each $j$, because $p|_{V_j}:V_j\to V$ is a homeomorphism and $U_j\cap V_j$ is a neighborhood of $e_j$, there is an open neighborhood $W_j\subset V$ of $b$ such that
+is finite, choose $U_j\in\mathcal U$ with $e_j\in U_j$. Choose one evenly covered neighborhood $V$ of $b$, with slices $V_1,\dots,V_r$ containing $e_1,\dots,e_r$, respectively. For each $j$, because $p\restrict_{V_j}:V_j\to V$ is a homeomorphism and $U_j\cap V_j$ is a neighborhood of $e_j$, there is an open neighborhood $W_j\subset V$ of $b$ such that
 $$
-(p|_{V_j})^{-1}(W_j)\subset U_j.
+(p\restrict_{V_j})^{-1}(W_j)\subset U_j.
 $$
 Set $W_b=\bigcap_{j=1}^rW_j$. Then $W_b$ is an open neighborhood of $b$, and
 $$

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that for $|z|<1$,
+Show that for $\abs{z}<1$,
 $$
 \frac{z}{1-z^2}
 +\frac{z^2}{1-z^4}
@@ -51,7 +51,7 @@ Justify any change in the order of summation.
 
 ::: {.pf-step #s1}
 
-For every $k\ge0$ and $|z|<1$,
+For every $k\ge0$ and $\abs{z}<1$,
 $$
 \frac{z^{2^k}}{1-z^{2^{k+1}}}
 =
@@ -60,7 +60,7 @@ $$
 
 ::: pf-proof
 
-Since $|z^{2^{k+1}}|<1$, the geometric-series formula gives
+Since $\abs{z^{2^{k+1}}}<1$, the geometric-series formula gives
 $$
 \frac{1}{1-z^{2^{k+1}}}
 =
@@ -90,14 +90,14 @@ Take $k$ to be the largest exponent such that $2^k$ divides $n$. Then $n/2^k$ is
 
 ::: {.pf-step #s3}
 
-The double series obtained from step [](#s1){.pf-ref} is absolutely convergent for $|z|<1$.
+The double series obtained from step [](#s1){.pf-ref} is absolutely convergent for $\abs{z}<1$.
 
 ::: pf-proof
 
-Put $r=|z|<1$. By step [](#s2){.pf-ref}, the exponents $2^k(2j+1)$, as $(k,j)$ ranges over nonnegative integers, run through every positive integer exactly once. Therefore
+Put $r=\abs{z}<1$. By step [](#s2){.pf-ref}, the exponents $2^k(2j+1)$, as $(k,j)$ ranges over nonnegative integers, run through every positive integer exactly once. Therefore
 $$
 \sum_{k=0}^{\infty}\sum_{j=0}^{\infty}
-\left|z^{2^k(2j+1)}\right|
+\abs{z^{2^k(2j+1)}}
 =
 \sum_{n=1}^{\infty}r^n
 =
@@ -134,7 +134,7 @@ $$
 
 ::: {.pf-step #s5}
 
-For every $k\ge0$ and $|z|<1$,
+For every $k\ge0$ and $\abs{z}<1$,
 $$
 \frac{2^kz^{2^k}}{1+z^{2^k}}
 =
@@ -182,16 +182,16 @@ By step [](#s5){.pf-ref}, the $k$th summand is $A_k-A_{k+1}$. The finite sum the
 
 ::: {.pf-step #s7}
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 \frac{2^{N+1}z^{2^{N+1}}}{1-z^{2^{N+1}}}\longrightarrow0.
 $$
 
 ::: pf-proof
 
-Let $r=|z|<1$. For all sufficiently large $N$, $r^{2^{N+1}}\le1/2$, so
+Let $r=\abs{z}<1$. For all sufficiently large $N$, $r^{2^{N+1}}\le1/2$, so
 $$
-\left|\frac{2^{N+1}z^{2^{N+1}}}{1-z^{2^{N+1}}}\right|
+\abs{\frac{2^{N+1}z^{2^{N+1}}}{1-z^{2^{N+1}}}}
 \le
 2^{N+2}r^{2^{N+1}}.
 $$

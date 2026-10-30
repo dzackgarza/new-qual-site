@@ -105,7 +105,7 @@ $$
 $$
 For every $x\in\CC^n$,
 $$
-\langle A^*Ax,x\rangle=\langle Ax,Ax\rangle=\|Ax\|^2\ge0,
+\langle A^*Ax,x\rangle=\langle Ax,Ax\rangle=\norm{Ax}^2\ge0,
 $$
 so every eigenvalue is nonnegative. Apply step [](#s1){.pf-ref} and order the eigenvalues decreasingly, writing them as $\sigma_i^2$.
 Finally,
@@ -116,7 +116,7 @@ because
 $$
 A^*Ax=0
 \Longleftrightarrow
-0=\langle A^*Ax,x\rangle=\|Ax\|^2
+0=\langle A^*Ax,x\rangle=\norm{Ax}^2
 \Longleftrightarrow
 Ax=0.
 $$

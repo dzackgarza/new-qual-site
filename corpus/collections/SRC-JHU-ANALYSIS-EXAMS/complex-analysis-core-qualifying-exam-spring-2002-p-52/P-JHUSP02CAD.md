@@ -29,9 +29,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Delta=\{z\in\CC:|z|<1\}$, and let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
+Let $\Delta=\{z\in\CC:\abs{z}<1\}$, and let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
 $$
-|f(z)+f(-z)|\le 2|z|^2
+\abs{f(z)+f(-z)}\le 2\abs{z}^2
 $$
 for every $z\in\Delta$.
 
@@ -58,7 +58,7 @@ E(z)=\frac{f(z)+f(-z)}2.
 $$
 The unit disk is convex, and $f(z),f(-z)\in\Delta$, so
 $$
-|E(z)|\le\frac{|f(z)|+|f(-z)|}{2}<1.
+\abs{E(z)}\le\frac{\abs{f(z)}+\abs{f(-z)}}{2}<1.
 $$
 Thus $E:\Delta\to\Delta$ is holomorphic. It is even and, by the normalization,
 $E(0)=f(0)=0$.
@@ -72,10 +72,10 @@ $$
 E(z)=G(z^2),\qquad
 G(w)=\sum_{m=1}^\infty b_{2m}w^m.
 $$
-The series for $G$ converges for $|w|<1$: if $|w|<1$, choose $z$ with
+The series for $G$ converges for $\abs{w}<1$: if $\abs{w}<1$, choose $z$ with
 $z^2=w$, so the corresponding even subseries is absolutely convergent.
 Therefore $G$ is holomorphic on $\Delta$, satisfies $G(0)=0$, and obeys
-$|G(w)|<1$ because $G(w)=E(z)$ for either square root $z$ of $w$.
+$\abs{G(w)}<1$ because $G(w)=E(z)$ for either square root $z$ of $w$.
 Thus $G:\Delta\to\Delta$ is a holomorphic self-map fixing zero.
 
 :::
@@ -90,11 +90,11 @@ Schwarz's lemma gives the required inequality.
 
 Schwarz's lemma [@SS03] applied to $G$ gives
 $$
-|G(w)|\le|w|\qquad(w\in\Delta).
+\abs{G(w)}\le\abs{w}\qquad(w\in\Delta).
 $$
 Putting $w=z^2$ yields
 $$
-\frac12|f(z)+f(-z)|=|E(z)|=|G(z^2)|\le|z|^2.
+\frac12\abs{f(z)+f(-z)}=\abs{E(z)}=\abs{G(z^2)}\le\abs{z}^2.
 $$
 Multiplying by two gives the asserted bound.
 
@@ -110,13 +110,13 @@ Equality at a nonzero point fixes the entire even part.
 
 Suppose equality holds at $z_0\ne0$. Then
 $$
-|G(z_0^2)|=|z_0^2|,
+\abs{G(z_0^2)}=\abs{z_0^2},
 $$
 and $z_0^2\ne0$. The equality case of Schwarz's lemma [@SS03] gives
 $$
 G(w)=\lambda w
 $$
-for some $|\lambda|=1$. Therefore
+for some $\abs{\lambda}=1$. Therefore
 $$
 E(z)=\lambda z^2
 $$
@@ -128,7 +128,7 @@ then $E$ is precisely the even part of this Taylor series, so
 $$
 a_2=\lambda,\qquad a_{2m}=0\quad(m\ne1).
 $$
-In particular $|a_2|=1$.
+In particular $\abs{a_2}=1$.
 
 :::
 
@@ -141,20 +141,20 @@ A disk map with a Taylor coefficient of modulus one at degree two has no other c
 ::: pf-proof
 
 For $0<r<1$, the Taylor partial sums converge uniformly
-to $f$ on $|z|=r$ [@SS03]. Their squared moduli also
+to $f$ on $\abs{z}=r$ [@SS03]. Their squared moduli also
 converge uniformly there. Integrating the finite sums,
 using orthogonality of the exponentials and then passing
 to the limit therefore gives
 $$
-\frac1{2\pi}\int_0^{2\pi}|f(re^{it})|^2\,dt
-=\sum_{n=1}^\infty |a_n|^2r^{2n}.
+\frac1{2\pi}\int_0^{2\pi}\abs{f(re^{it})}^2\,dt
+=\sum_{n=1}^\infty \abs{a_n}^2r^{2n}.
 $$
 The left side is at most one because $f(\Delta)\subset\Delta$. Letting
 $r\uparrow1$ and using monotone convergence for the nonnegative series gives
 $$
-\sum_{n=1}^\infty|a_n|^2\le1.
+\sum_{n=1}^\infty\abs{a_n}^2\le1.
 $$
-Step [](#s3){.pf-ref} gives $|a_2|=1$, so every other coefficient must vanish. Thus
+Step [](#s3){.pf-ref} gives $\abs{a_2}=1$, so every other coefficient must vanish. Thus
 $$
 f(z)=a_2z^2=\lambda z^2=e^{i\theta}z^2
 $$

@@ -25,28 +25,28 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\RR^n)$. Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that if $A$ is measurable and $|A|<\delta$, then
+Let $f\in L^1(\RR^n)$. Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that if $A$ is measurable and $\setmeasure{A}<\delta$, then
 $$
-\left|\int_A f\right|<\varepsilon.
+\abs{\int_A f}<\varepsilon.
 $$
 :::
 
 ::: {.solution}
 Fix $\varepsilon>0$. Since $f\in L^1$, choose $M>0$ so that
 $$
-\int_{\{|f|>M\}}|f|<\frac{\varepsilon}{2}.
+\int_{\{\abs{f}>M\}}\abs{f}<\frac{\varepsilon}{2}.
 $$
 Set
 $$
 \delta=\frac{\varepsilon}{2M}.
 $$
-If $|A|<\delta$, then
+If $\setmeasure{A}<\delta$, then
 $$
 \begin{aligned}
-\left|\int_A f\right|
-&\le\int_A|f|\\
-&\le\int_{A\cap\{|f|\le M\}}|f|+\int_{\{|f|>M\}}|f|\\
-&\le M|A|+\frac{\varepsilon}{2}\\
+\abs{\int_A f}
+&\le\int_A\abs{f}\\
+&\le\int_{A\cap\{\abs{f}\le M\}}\abs{f}+\int_{\{\abs{f}>M\}}\abs{f}\\
+&\le M\setmeasure{A}+\frac{\varepsilon}{2}\\
 &<\varepsilon.
 \end{aligned}
 $$

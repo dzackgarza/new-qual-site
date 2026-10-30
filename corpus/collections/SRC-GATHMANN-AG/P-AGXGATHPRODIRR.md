@@ -33,7 +33,7 @@ We have $Y=\iota_x^{-1}(Z_1)\union\iota_x^{-1}(Z_2)$, a union of two closed subs
 :::
 
 ::: {.pf-step #G-closed}
-For $l=1,2$, the set $G_l\definedas\theset{x\in X\st \theset{x}\cross Y\subseteq Z_l}$ is closed in $X$.
+For $l=1,2$, the set $G_l\coloneqq\theset{x\in X\st \theset{x}\cross Y\subseteq Z_l}$ is closed in $X$.
 
 ::: pf-proof
 A point $x$ lies in $G_l$ exactly when $(x,y)\in Z_l$ for every $y\in Y$, so

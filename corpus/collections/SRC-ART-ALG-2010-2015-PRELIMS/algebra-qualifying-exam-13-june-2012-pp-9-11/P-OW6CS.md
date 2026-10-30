@@ -134,7 +134,7 @@ generate $L$. There are at most five such roots, so
 this action embeds $\operatorname{Gal}(L/\QQ)$
 into $S_5$, adding fixed letters if necessary.
 Lagrange's theorem gives
-$[L:\QQ]=|\operatorname{Gal}(L/\QQ)|\mid120$.
+$[L:\QQ]=\cardinality{\operatorname{Gal}(L/\QQ)}\mid120$.
 For an intermediate field $E$, the tower law makes
 $[E:\QQ]$ a divisor of $[L:\QQ]$ and hence
 of $120$. Since $7\nmid120$, degree seven is impossible.

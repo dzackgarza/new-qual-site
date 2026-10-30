@@ -24,12 +24,12 @@ $$
 ::: {.solution}
 Uniform convergence to zero gives
 $$
-\|f_n\|_{\infty}=\sup_{x\in[0,1]}|f_n(x)|\longrightarrow0.
+\norm{f_n}_{\infty}=\sup_{x\in[0,1]}\abs{f_n(x)}\longrightarrow0.
 $$
 Therefore
 $$
-\left|\int_0^1f_n(x)\,dx\right|
-\leq\int_0^1|f_n(x)|\,dx
-\leq\|f_n\|_{\infty}\longrightarrow0.
+\abs{\int_0^1f_n(x)\,dx}
+\leq\int_0^1\abs{f_n(x)}\,dx
+\leq\norm{f_n}_{\infty}\longrightarrow0.
 $$
 :::

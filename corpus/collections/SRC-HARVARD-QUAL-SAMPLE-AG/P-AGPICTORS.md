@@ -88,7 +88,7 @@ $$
 ::: pf-proof
 The zero section is an effective Cartier divisor in the smooth surface $E$.  Its divisor line bundle satisfies
 $$
-\mathcal O_E(D)|_D
+\mathcal O_E(D)\restrict_D
 \cong
 N_{D/E}.
 $$

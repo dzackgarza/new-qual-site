@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Let $f \in C^1(\RR)$ such that $f(0) = f(1)$ and $\int_0^1 f(x)\,dx = 0$.
 
-(1) Prove that $4\pi^2 \int_0^1 |f(x)|^2\,dx \leq \int_0^1 |f'(x)|^2\,dx$.
+(1) Prove that $4\pi^2 \int_0^1 \abs{f(x)}^2\,dx \leq \int_0^1 \abs{f'(x)}^2\,dx$.
 
-(2) Prove that if $4\pi^2 \int_0^1 |f(x)|^2\,dx = \int_0^1 |f'(x)|^2\,dx$, then there exist $a, b \in \CC$ such that $f(x) = a\cos(2\pi x) + b\sin(2\pi x)$ for every $x \in [0,1]$.
+(2) Prove that if $4\pi^2 \int_0^1 \abs{f(x)}^2\,dx = \int_0^1 \abs{f'(x)}^2\,dx$, then there exist $a, b \in \CC$ such that $f(x) = a\cos(2\pi x) + b\sin(2\pi x)$ for every $x \in [0,1]$.
 :::
 
 ::: {.solution}
@@ -75,24 +75,24 @@ Prove the Poincare inequality.
 
 By Parseval's identity,
 $$
-\int_0^1|f(x)|^2\,dx
-=\sum_{n\in\ZZ}|\widehat f(n)|^2
-=\sum_{n\ne0}|\widehat f(n)|^2.
+\int_0^1\abs{f(x)}^2\,dx
+=\sum_{n\in\ZZ}\abs{\widehat f(n)}^2
+=\sum_{n\ne0}\abs{\widehat f(n)}^2.
 $$
 Using Step 1 and Parseval again,
 $$
-\int_0^1|f'(x)|^2\,dx
-=4\pi^2\sum_{n\in\ZZ}n^2|\widehat f(n)|^2.
+\int_0^1\abs{f'(x)}^2\,dx
+=4\pi^2\sum_{n\in\ZZ}n^2\abs{\widehat f(n)}^2.
 $$
 Since $n^2\ge1$ for $n\ne0$,
 $$
-\int_0^1|f'(x)|^2\,dx
-\ge4\pi^2\sum_{n\ne0}|\widehat f(n)|^2
-=4\pi^2\int_0^1|f(x)|^2\,dx.
+\int_0^1\abs{f'(x)}^2\,dx
+\ge4\pi^2\sum_{n\ne0}\abs{\widehat f(n)}^2
+=4\pi^2\int_0^1\abs{f(x)}^2\,dx.
 $$
 Thus
 $$
-\boxed{4\pi^2\int_0^1|f|^2\le\int_0^1|f'|^2.}
+\boxed{4\pi^2\int_0^1\abs{f}^2\le\int_0^1\abs{f'}^2.}
 $$
 
 :::
@@ -107,12 +107,12 @@ Characterize the equality case.
 
 Equality in Step 2 is equivalent to
 $$
-\sum_{n\ne0}(n^2-1)|\widehat f(n)|^2=0.
+\sum_{n\ne0}(n^2-1)\abs{\widehat f(n)}^2=0.
 $$
 Every summand is nonnegative, so
 $$
 \widehat f(n)=0
-\qquad\text{for every }|n|\ge2.
+\qquad\text{for every }\abs{n}\ge2.
 $$
 Together with $\widehat f(0)=0$, this yields
 $$

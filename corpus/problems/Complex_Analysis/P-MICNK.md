@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MICNK
 kind: problem
-title: $az^n+z+1$ has a root in $|z|\le 2$
+title: $az^n+z+1$ has a root in $\abs{z}\le 2$
 classification:
   areas:
   - complex-analysis

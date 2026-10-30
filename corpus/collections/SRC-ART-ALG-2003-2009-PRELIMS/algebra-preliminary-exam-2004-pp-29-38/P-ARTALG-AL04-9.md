@@ -28,7 +28,7 @@ Given a finite group $G$, show that there are fields $K$ and $F$ such that $K$ i
 :::
 
 ::: {.solution}
-Let $m=|G|$. Take algebraically independent indeterminates
+Let $m=\cardinality{G}$. Take algebraically independent indeterminates
 $x_g$, indexed by $g\in G$, over $\QQ$, and put
 $$
 K=\QQ(x_g:g\in G).
@@ -123,7 +123,7 @@ polynomial. Multiplying these bounds along the tower gives $d$.
 Apply this with $d=[K:F]$. Step [](#s1){.pf-ref} supplies $m$ distinct
 automorphisms and step [](#s2){.pf-ref} gives
 $$
-m\leq |\operatorname{Aut}_F(K)|\leq [K:F]\leq m.
+m\leq \cardinality{\operatorname{Aut}_F(K)}\leq [K:F]\leq m.
 $$
 Equality holds throughout. Hence the injective homomorphism of
 step [](#s1){.pf-ref} is onto, proving $\operatorname{Gal}(K/F)\cong G$.

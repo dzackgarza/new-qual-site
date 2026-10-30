@@ -44,7 +44,7 @@ $$
 Then $h:\DD\to\DD$ is holomorphic, $h(0)=0$, and it fixes the
 nonzero point $\psi_\alpha(\beta)$.
 
-Schwarz's lemma gives $|h(z)|\le|z|$. Since equality holds at the nonzero fixed
+Schwarz's lemma gives $\abs{h(z)}\le\abs{z}$. Since equality holds at the nonzero fixed
 point, the equality case of Schwarz's lemma implies
 $$
 h(z)=e^{i\theta}z

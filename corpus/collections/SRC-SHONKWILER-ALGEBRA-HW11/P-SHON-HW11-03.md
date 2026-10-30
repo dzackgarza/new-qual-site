@@ -132,7 +132,7 @@ Every $K$-automorphism of $\widetilde L$ permutes the roots of $f$. The action i
 Therefore
 $$
 \boxed{
-[\widetilde L:K]=|G|\mid p!}.
+[\widetilde L:K]=\cardinality{G}\mid p!}.
 $$
 
 
@@ -140,11 +140,11 @@ $$
 
 Since $\widetilde L/K$ is finite Galois,
 $$
-[\widetilde L:K]=|G|.
+[\widetilde L:K]=\cardinality{G}.
 $$
 By step [](#s1-5){.pf-ref}, $G$ is a subgroup of $S_p$, so Lagrange's theorem gives
 $$
-|G|\mid|S_p|=p!.
+\cardinality{G}\mid\cardinality{S_p}=p!.
 $$
 
 :::

@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $X$ be a noetherian scheme, and let $\mcf$ be a coherent sheaf.
 
-(a) If the stalk $\mcf_x$ is a free $\OO_x$-module for some point $x \in X$, then there is a neighborhood $U$ of $x$ such that $\mcf|_U$ is free.
+(a) If the stalk $\mcf_x$ is a free $\OO_x$-module for some point $x \in X$, then there is a neighborhood $U$ of $x$ such that $\mcf\restrict_U$ is free.
 
 (b) $\mcf$ is locally free if and only if its stalks $\mcf_x$ are free $\OO_x$-modules for all $x \in X$.
 
@@ -45,7 +45,7 @@ For part (a), a free stalk of rank $r$ extends to a free sheaf of rank $r$ on a 
 ::: pf-proof
 
 Choose an affine neighborhood $V=\Spec A$ of $x$, and let $\mathfrak p$ be the prime corresponding to $x$.
-Since $X$ is noetherian and $\mcf$ is [[D-QNTZY|coherent]], there is a finite $A$-module $M$ with $\mcf|_V\cong\widetilde M$ [@Har10a, Proposition II.5.4].
+Since $X$ is noetherian and $\mcf$ is [[D-QNTZY|coherent]], there is a finite $A$-module $M$ with $\mcf\restrict_V\cong\widetilde M$ [@Har10a, Proposition II.5.4].
 Then $\mcf_x\cong M_{\mathfrak p}$.
 Its free rank $r$ is finite because it is finitely generated over $A_{\mathfrak p}$.
 
@@ -63,8 +63,8 @@ Exactness of localization gives $K_{\mathfrak p}=C_{\mathfrak p}=0$.
 For every member of finite generating lists of $K$ and $C$, choose an element of $A\setminus\mathfrak p$ annihilating it.
 The product $s$ of these finitely many elements lies outside $\mathfrak p$ and annihilates both modules.
 Thus $K_s=C_s=0$, and $u_s:A_s^r\to M_s$ is an isomorphism.
-On $U=D_V(s)$, it induces $\mcf|_U\cong\OO_U^r$.
-If $r=0$, the same argument applies to $u:0\to M$ and gives $\mcf|_U=0$.
+On $U=D_V(s)$, it induces $\mcf\restrict_U\cong\OO_U^r$.
+If $r=0$, the same argument applies to $u:0\to M$ and gives $\mcf\restrict_U=0$.
 
 :::
 
@@ -76,7 +76,7 @@ Part (b) holds.
 
 ::: pf-proof
 
-An isomorphism $\mcf|_U\cong\OO_U^r$ induces $\mcf_x\cong\OO_{X,x}^r$ for every $x\in U$ by passing to stalks.
+An isomorphism $\mcf\restrict_U\cong\OO_U^r$ induces $\mcf_x\cong\OO_{X,x}^r$ for every $x\in U$ by passing to stalks.
 Consequently local freeness implies freeness of every stalk.
 Conversely, if every stalk is free, step [](#s1){.pf-ref} supplies a free neighborhood at each point.
 These neighborhoods cover $X$, proving local freeness.

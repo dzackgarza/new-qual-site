@@ -47,7 +47,7 @@ $$
 $$
 Hence there exists $\delta>0$ such that
 $$
-|y-x|<\delta\quad\Longrightarrow\quad f(y)<a.
+\abs{y-x}<\delta\quad\Longrightarrow\quad f(y)<a.
 $$
 Otherwise one could find a sequence $y_n\to x$ with $f(y_n)\ge a$, forcing
 $$

@@ -54,7 +54,7 @@ $$
 $$
 where the value on $\pm k=\pm ij$ is the product of the values on $i$ and $j$.
 
-The sum of squares of irreducible degrees equals $|Q_8|=8$. The four linear characters contribute $4$, so the remaining irreducible has degree $2$. Let it be $\chi_5$. Orthogonality with $\chi_1,\dots,\chi_4$, together with the class sizes $1,1,2,2,2$, forces
+The sum of squares of irreducible degrees equals $\cardinality{Q_8}=8$. The four linear characters contribute $4$, so the remaining irreducible has degree $2$. Let it be $\chi_5$. Orthogonality with $\chi_1,\dots,\chi_4$, together with the class sizes $1,1,2,2,2$, forces
 $$
 \chi_5=(2,-2,0,0,0).
 $$

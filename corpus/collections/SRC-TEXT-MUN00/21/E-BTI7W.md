@@ -45,7 +45,7 @@ f_n(0)=\frac1{n+1}\longrightarrow0.
 $$
 If $x\ne0$, then $x-1/n\to x$, so for all sufficiently large $n$,
 $$
-|x-1/n|\ge |x|/2.
+\abs{x-1/n}\ge \abs{x}/2.
 $$
 Hence
 $$
@@ -59,7 +59,7 @@ f_n(1/n)=1.
 $$
 Therefore
 $$
-\sup_{x\in\RR}|f_n(x)-0|=1
+\sup_{x\in\RR}\abs{f_n(x)-0}=1
 $$
 for every $n$. In particular the supremum error does not tend to zero, so the convergence is not uniform.
 :::

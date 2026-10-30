@@ -31,7 +31,7 @@ Prove that if $a$ is a nonzero, nonunit element of a strongly Euclidean domain, 
 :::
 
 ::: {.solution}
-Write $\delta(a)=\lvert a\rvert$ for the strongly Euclidean size.
+Write $\delta(a)=\abs{ a}$ for the strongly Euclidean size.
 
 ::: pf
 
@@ -101,7 +101,7 @@ $$
 
 ::: pf-step
 
-Bound the number of irreducible factors by $\lvert a\rvert$.
+Bound the number of irreducible factors by $\abs{ a}$.
 
 ::: pf-proof
 
@@ -112,11 +112,11 @@ $$
 are $r$ distinct positive integers, all at most $\delta(a)$. There are only
 $\delta(a)$ positive integers from $1$ through $\delta(a)$. Therefore
 $$
-r\le\delta(a)=\lvert a\rvert.
+r\le\delta(a)=\abs{ a}.
 $$
 Thus $a$ admits a factorization into at most
 $$
-\boxed{\lvert a\rvert}
+\boxed{\abs{ a}}
 $$
 irreducible elements.
 

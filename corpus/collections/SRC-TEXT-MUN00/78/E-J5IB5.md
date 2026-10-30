@@ -33,11 +33,11 @@ As a closed subspace of the Hausdorff second-countable surface $X$, the space $Y
 
 Away from the circles
 $$
-C_i=h_i(\{z:\|z\|=1/2\}),
+C_i=h_i(\{z:\norm{z}=1/2\}),
 $$
 points of $Y$ have the same ordinary surface charts they had in $X$. At a point of $C_i$, use polar coordinates in the annulus
 $$
-h_i\bigl(\{1/2\le\|z\|<3/4\}\bigr).
+h_i\bigl(\{1/2\le\norm{z}<3/4\}\bigr).
 $$
 Locally the inequality $r\ge1/2$ becomes a half-plane inequality, so each such point has a chart onto an open subset of $H^2$ taking $C_i$ to the boundary line. Hence $Y$ is a 2-manifold with boundary.
 

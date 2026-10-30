@@ -73,7 +73,7 @@ G^{(r+s)}
 $$
 Thus $G$ is solvable.
 
-Now let $|G|=36=2^2\cdot3^2$.
+Now let $\cardinality{G}=36=2^2\cdot3^2$.
 :::
 
 :::
@@ -99,12 +99,12 @@ If $n_3=1$, then $G$ is solvable.
 ::: pf-proof
 Let $P$ be the unique Sylow $3$-subgroup. Then $P\trianglelefteq G$ and
 $$
-|P|=9.
+\cardinality{P}=9.
 $$
 Every group of order $p^2$ is abelian, so $P$ is abelian and therefore solvable.
 The quotient has order
 $$
-|G/P|=4,
+\cardinality{G/P}=4,
 $$
 and every group of order $4$ is abelian, hence solvable.
 By step [](#extension-solvable-lemma){.pf-ref}, $G$ is solvable.
@@ -124,11 +124,11 @@ The conjugation action of $G$ on its Sylow $3$-subgroups is transitive, because 
 
 Also
 $$
-|\operatorname{im}\varphi|\mid |G|=36
+\cardinality{\operatorname{im}\varphi}\mid \cardinality{G}=36
 $$
 by the first isomorphism theorem, and
 $$
-|\operatorname{im}\varphi|\mid |S_4|=24.
+\cardinality{\operatorname{im}\varphi}\mid \cardinality{S_4}=24.
 $$
 Thus its order divides
 $$
@@ -145,8 +145,8 @@ In the case $n_3=4$, the kernel of $\varphi$ is abelian and the image of $\varph
 ::: pf-proof
 By step [](#phi-image-order){.pf-ref},
 $$
-|\ker\varphi|
-=\frac{|G|}{|\operatorname{im}\varphi|}
+\cardinality{\ker\varphi}
+=\frac{\cardinality{G}}{\cardinality{\operatorname{im}\varphi}}
 $$
 is either
 $$

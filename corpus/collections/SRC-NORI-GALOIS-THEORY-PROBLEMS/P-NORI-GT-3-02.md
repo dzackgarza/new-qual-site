@@ -180,7 +180,7 @@ The equation is the kernel of the $\FF_p$-linear map
 $$
 T(x)=x^p-\omega x.
 $$
-By step [](#s1-5){.pf-ref}, $f$ has exactly $p$ distinct roots in its splitting field, and step [](#s1-8){.pf-ref} puts all of them in $\FF_{p^3}$. Hence $|V|=p$, so $V$ has dimension one over $\FF_p$.
+By step [](#s1-5){.pf-ref}, $f$ has exactly $p$ distinct roots in its splitting field, and step [](#s1-8){.pf-ref} puts all of them in $\FF_{p^3}$. Hence $\cardinality{V}=p$, so $V$ has dimension one over $\FF_p$.
 
 :::
 

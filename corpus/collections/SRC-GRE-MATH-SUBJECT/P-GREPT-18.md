@@ -44,7 +44,7 @@ $$
 ::: pf-proof
 
 Since $x+e^{3x}\to1$ as $x\to0$, the base is positive for all sufficiently
-small $|x|$. Taking the natural logarithm of the positive quantity $y(x)$
+small $\abs{x}$. Taking the natural logarithm of the positive quantity $y(x)$
 gives the displayed identity.
 
 :::

@@ -41,15 +41,15 @@ $$
 
 There exists $R>0$ such that on the circle
 $$
-|z|=R
+\abs{z}=R
 $$
 one has
 $$
-\left|
+\abs{
 a_{n-1}z^{n-1}+\cdots+a_0
-\right|
+}
 <
-|a_nz^n|.
+\abs{a_nz^n}.
 $$
 
 
@@ -57,30 +57,30 @@ $$
 
 For
 $$
-|z|=R,
+\abs{z}=R,
 $$
 the triangle inequality gives
 $$
-\left|
+\abs{
 a_{n-1}z^{n-1}+\cdots+a_0
-\right|
+}
 \le
-\sum_{k=0}^{n-1}|a_k|R^k.
+\sum_{k=0}^{n-1}\abs{a_k}R^k.
 $$
 Dividing by
 $$
-|a_n|R^n
+\abs{a_n}R^n
 $$
 gives
 $$
 \frac{
-\sum_{k=0}^{n-1}|a_k|R^k
+\sum_{k=0}^{n-1}\abs{a_k}R^k
 }{
-|a_n|R^n
+\abs{a_n}R^n
 }
 =
 \sum_{k=0}^{n-1}
-\frac{|a_k|}{|a_n|}
+\frac{\abs{a_k}}{\abs{a_n}}
 R^{k-n}.
 $$
 Every exponent
@@ -101,7 +101,7 @@ a_nz^n
 $$
 have the same number of zeros in
 $$
-|z|<R,
+\abs{z}<R,
 $$
 counted with multiplicity.
 
@@ -128,7 +128,7 @@ The strict inequality from step [](#s1-1){.pf-ref} holds on the boundary circle.
 
 The polynomial $p$ has exactly $n$ zeros in
 $$
-|z|<R,
+\abs{z}<R,
 $$
 counted with multiplicity.
 
@@ -162,7 +162,7 @@ n\ge1,
 $$
 step [](#s1-3){.pf-ref} gives at least one zero of $p$ in
 $$
-|z|<R.
+\abs{z}<R.
 $$
 
 :::

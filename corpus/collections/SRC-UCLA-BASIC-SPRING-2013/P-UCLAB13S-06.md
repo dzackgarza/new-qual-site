@@ -58,7 +58,7 @@ $$
 $$
 such that
 $$
-|\mu_j-\lambda_j|<\varepsilon
+\abs{\mu_j-\lambda_j}<\varepsilon
 $$
 for every $j$ and the $\mu_j$ are pairwise distinct.
 
@@ -105,7 +105,7 @@ $$
 $$
 Thus in any matrix norm,
 $$
-\|T_\varepsilon-T\|
+\norm{T_\varepsilon-T}
 \to0
 $$
 as the diagonal perturbations tend to zero.
@@ -171,14 +171,14 @@ Similarity preserves diagonalizability, so $A_\varepsilon$ is diagonalizable by 
 Also,
 $$
 \begin{aligned}
-\|A_\varepsilon-A\|
+\norm{A_\varepsilon-A}
 &=
-\|U(T_\varepsilon-T)U^*\|.
+\norm{U(T_\varepsilon-T)U^*}.
 \end{aligned}
 $$
 For a unitarily invariant norm this equals
 $$
-\|T_\varepsilon-T\|,
+\norm{T_\varepsilon-T},
 $$
 and in any norm it still tends to zero because left and right multiplication by the fixed matrices $U,U^*$ are continuous.
 Thus

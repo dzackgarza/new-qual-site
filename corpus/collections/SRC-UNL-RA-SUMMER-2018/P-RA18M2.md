@@ -40,7 +40,7 @@ Be sure to provide all technical details.
 ::: pf-step
 
 The series is the Taylor series of $\arctan x$ at $0$: $\arctan x = \sum_{n\ge0}(-1)^n\frac{x^{2n+1}}{2n+1}$.
-Proof: $\arctan' x = \frac{1}{1+x^2} = \sum_{n\ge0}(-1)^n x^{2n}$ (geometric series, $|x| < 1$), and termwise integration from $0$ to $x$ gives the claim.
+Proof: $\arctan' x = \frac{1}{1+x^2} = \sum_{n\ge0}(-1)^n x^{2n}$ (geometric series, $\abs{x} < 1$), and termwise integration from $0$ to $x$ gives the claim.
 
 :::
 
@@ -52,8 +52,8 @@ Domain of convergence: $[-1, 1]$.
 
 ::: {.pf-step #s2-1}
 
-For $|x| < 1$: absolute convergence.
-Proof: $\left|(-1)^n\frac{x^{2n+1}}{2n+1}\right| \le |x|^{2n+1}$, geometric with ratio $|x|^2 < 1$.
+For $\abs{x} < 1$: absolute convergence.
+Proof: $\abs{(-1)^n\frac{x^{2n+1}}{2n+1}} \le \abs{x}^{2n+1}$, geometric with ratio $\abs{x}^2 < 1$.
 
 :::
 
@@ -73,8 +73,8 @@ Proof: same Leibniz test.
 
 ::: {.pf-step #s2-4}
 
-For $|x| > 1$: the terms do not tend to $0$.
-Proof: $\left|(-1)^n\frac{x^{2n+1}}{2n+1}\right| = \frac{|x|^{2n+1}}{2n+1} \to \infty$ (exponential beats linear), so the series diverges.
+For $\abs{x} > 1$: the terms do not tend to $0$.
+Proof: $\abs{(-1)^n\frac{x^{2n+1}}{2n+1}} = \frac{\abs{x}^{2n+1}}{2n+1} \to \infty$ (exponential beats linear), so the series diverges.
 
 :::
 
@@ -104,7 +104,7 @@ Approximation of $\pi$: $\pi = 4\arctan 1 = 4\sum_{n\ge0}\frac{(-1)^n}{2n+1}$.
 
 ::: {.pf-step #s4-1}
 
-The alternating series at $x = 1$ has error bounded by the first omitted term: $\left|\frac{\pi}{4} - \sum_{n=0}^{N}\frac{(-1)^n}{2n+1}\right| \le \frac{1}{2N+3}$.
+The alternating series at $x = 1$ has error bounded by the first omitted term: $\abs{\frac{\pi}{4} - \sum_{n=0}^{N}\frac{(-1)^n}{2n+1}} \le \frac{1}{2N+3}$.
 Proof: alternating-series remainder bound.
 
 :::
@@ -119,7 +119,7 @@ Proof: solve the bound of step [](#s4-1){.pf-ref}: error in $\pi$ is $4/(2N+3) <
 ::: {.pf-step #s4-3}
 
 Compute: the partial sum through $n=4000$ (that is, $4001$ terms) gives $\pi \approx 3.141\ldots$; e.g. the partial sums oscillate around $\pi/4 \approx 0.785398$, and $\pi \approx 3.14159$.
-Proof: the alternating-series bound of step [](#s4-1){.pf-ref} guarantees three-decimal accuracy: $|\pi - 4S_N| \le 4/(2N+3) < 0.0005$.
+Proof: the alternating-series bound of step [](#s4-1){.pf-ref} guarantees three-decimal accuracy: $\abs{\pi - 4S_N} \le 4/(2N+3) < 0.0005$.
 (This is the Leibniz formula for $\pi$; it converges slowly — $\sim 4000$ terms — but the bound is rigorous.)
 
 :::

@@ -37,7 +37,7 @@ d(x,y)<\delta
 $$
 implies
 $$
-|F(x)-F(y)|<\varepsilon.
+\abs{F(x)-F(y)}<\varepsilon.
 $$
 
 
@@ -66,17 +66,17 @@ The interval $[0,1]$ is compact.
 By the Heine--Cantor theorem, the continuous function $F$ is uniformly continuous on $[0,1]$.
 Thus for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|F(x)-F(y)|<\varepsilon
+\abs{F(x)-F(y)}<\varepsilon
 $$
 for all $x,y\in[0,1]$.
 In particular, this holds for all $x,y\in(0,1)$.
 Since
 $$
-F|_{(0,1)}=f,
+F\restrict_{(0,1)}=f,
 $$
 the function $f$ is uniformly continuous.
 
@@ -99,11 +99,11 @@ the sequence $(f(x_n))$ is Cauchy.
 Let $\varepsilon>0$.
 Uniform continuity gives $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 $$
 implies
 $$
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 Since $x_n\to0$, there exists $N$ such that
 $$
@@ -112,7 +112,7 @@ $$
 for all $n\ge N$.
 Thus for $m,n\ge N$,
 $$
-|x_n-x_m|
+\abs{x_n-x_m}
 \le
 x_n+x_m
 <
@@ -120,7 +120,7 @@ x_n+x_m
 $$
 Hence
 $$
-|f(x_n)-f(x_m)|<\varepsilon.
+\abs{f(x_n)-f(x_m)}<\varepsilon.
 $$
 So $(f(x_n))$ is Cauchy.
 
@@ -158,11 +158,11 @@ $$
 with $y_n\in(0,1)$.
 Uniform continuity implies
 $$
-|f(x_n)-f(y_n)|\to0,
+\abs{f(x_n)-f(y_n)}\to0,
 $$
 because
 $$
-|x_n-y_n|
+\abs{x_n-y_n}
 \le
 x_n+y_n
 \to0.
@@ -205,14 +205,14 @@ x_n,y_n\to1,
 $$
 then
 $$
-|x_n-y_n|
+\abs{x_n-y_n}
 \le
-|1-x_n|+|1-y_n|
+\abs{1-x_n}+\abs{1-y_n}
 \to0,
 $$
 so uniform continuity forces
 $$
-|f(x_n)-f(y_n)|\to0.
+\abs{f(x_n)-f(y_n)}\to0.
 $$
 Thus the one-sided limit exists and is finite.
 

@@ -23,7 +23,7 @@ $$
 F(z)=\frac{z}{z^4+1}
 $$
 around the positively oriented boundary of the quarter-disk
-$0\le \arg z\le \pi/2$, $|z|\le R$.
+$0\le \arg z\le \pi/2$, $\abs{z}\le R$.
 
 The only pole in the first quadrant is
 $$

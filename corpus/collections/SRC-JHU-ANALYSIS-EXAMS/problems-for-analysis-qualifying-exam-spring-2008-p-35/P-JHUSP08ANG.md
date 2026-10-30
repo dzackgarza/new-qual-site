@@ -29,7 +29,7 @@ Let $U\subset\CC$ be open and $P\in U$. Let $f$ be
 holomorphic on $U$ and nonconstant on the component containing
 $P$, with $f(P)=f'(P)=0$. Use the argument principle to prove
 that there is $\delta>0$ such that $f^{-1}(Q)$ contains at
-least two distinct points whenever $0<|Q|<\delta$.
+least two distinct points whenever $0<\abs{Q}<\delta$.
 :::
 
 ::: {.remark}
@@ -63,7 +63,7 @@ that these two factors are nonzero on a neighborhood of
 the closed disk. Then $f$ has exactly $m$ zeros in the
 disk counted with multiplicity, all at $P$, and $f'$ has
 no zero there except $P$. Set
-$\delta=\min_{|z-P|=r}|f(z)|>0$.
+$\delta=\min_{\abs{z-P}=r}\abs{f(z)}>0$.
 
 :::
 
@@ -75,14 +75,14 @@ The argument-principle count stays equal to $m$ under a small constant perturbat
 
 ::: pf-proof
 
-Fix $0<|Q|<\delta$. For $0\leq t\leq1$ and $|z-P|=r$,
+Fix $0<\abs{Q}<\delta$. For $0\leq t\leq1$ and $\abs{z-P}=r$,
 $$
-|f(z)-tQ|\geq\delta-|Q|>0.
+\abs{f(z)-tQ}\geq\delta-\abs{Q}>0.
 $$
 Thus the argument principle applies to $f-tQ$ on this
 circle and gives its number of zeros, with multiplicity, as
 $$
-N(t)=\frac1{2\pi i}\int_{|z-P|=r}
+N(t)=\frac1{2\pi i}\int_{\abs{z-P}=r}
 \frac{f'(z)}{f(z)-tQ}\,dz\in\ZZ_{\geq0}
 $$
 [@SS03]. The uniform positive denominator bound makes
@@ -105,7 +105,7 @@ them. Each zero is therefore simple by its Taylor expansion.
 Consequently the multiplicity count $m\geq2$ from step [](#s2){.pf-ref}
 counts distinct points of $D(P,r)\subset U$. All of them
 belong to $f^{-1}(Q)$, proving the assertion for every
-$0<|Q|<\delta$.
+$0<\abs{Q}<\delta$.
 
 :::
 

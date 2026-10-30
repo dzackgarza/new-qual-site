@@ -56,11 +56,11 @@ contradicting $\deg f=1$.
 
 Thus $p$ is finite-sheeted, say of degree $d=[\pi_1(N):H]$. Since $N$ is orientable, so is $\widetilde N$, and Exercise 9 gives
 $$
-|\deg p|=d.
+\abs{\deg p}=d.
 $$
 Degrees multiply under composition, so
 $$
-1=|\deg f|=|\deg p|\,|\deg\widetilde f|=d\,|\deg\widetilde f|.
+1=\abs{\deg f}=\abs{\deg p}\,\abs{\deg\widetilde f}=d\,\abs{\deg\widetilde f}.
 $$
 Hence $d=1$. Therefore $H=\pi_1(N)$ and
 $$

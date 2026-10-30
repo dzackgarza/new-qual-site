@@ -39,7 +39,7 @@ Let $u,v\in H^2(S^2\times S^2;\ZZ)$ be the pullbacks of the positive generator o
 $$
 H^*(S^2\times S^2;\ZZ)
 \cong \ZZ[u,v]/(u^2,v^2),
-\qquad |u|=|v|=2,
+\qquad \gradeddegree{u}=\gradeddegree{v}=2,
 $$
 and $uv$ generates $H^4(S^2\times S^2;\ZZ)$ after choosing the product orientation.
 
@@ -50,7 +50,7 @@ If $x\in H^2(\CP^2;\ZZ)$ is the standard generator, then
 $$
 H^*(\CP^2;\ZZ)
 \cong \ZZ[x]/(x^3),
-\qquad |x|=2,
+\qquad \gradeddegree{x}=2,
 $$
 with $x^2$ generating $H^4(\CP^2;\ZZ)$ after choosing the usual orientation.
 

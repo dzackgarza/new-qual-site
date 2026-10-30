@@ -109,13 +109,13 @@ s\in\mathcal F(V)
 $$
 satisfies
 $$
-q(s)=s''|_V.
+q(s)=s''\restrict_V.
 $$
 Order these pairs by extension:
 $$
 (V,s)\le (W,t)
 $$
-if $V\subseteq W$ and $t|_V=s$.
+if $V\subseteq W$ and $t\restrict_V=s$.
 
 The collection is nonempty.  Indeed, surjectivity of the map of stalks
 $$
@@ -138,7 +138,7 @@ t\in\mathcal F(W)
 $$
 with
 $$
-q(t)=s''|_W.
+q(t)=s''\restrict_W.
 $$
 
 On $V\cap W$,
@@ -151,7 +151,7 @@ a\in\mathcal F'(V\cap W)
 $$
 whose image under $\iota$ is
 $$
-t|_{V\cap W}-s|_{V\cap W}.
+t\restrict_{V\cap W}-s\restrict_{V\cap W}.
 $$
 
 Because $\mathcal F'$ is flasque, extend $a$ to
@@ -162,9 +162,9 @@ Replace $t$ by
 $$
 t'=t-\iota(\widetilde a).
 $$
-Then $q(t')=s''|_W$ and
+Then $q(t')=s''\restrict_W$ and
 $$
-t'|_{V\cap W}=s|_{V\cap W}.
+t'\restrict_{V\cap W}=s\restrict_{V\cap W}.
 $$
 Hence $s$ and $t'$ glue to a section on
 $$
@@ -343,7 +343,7 @@ s_P=0
 $$
 for every $P\in U$.  For each $P$, equality of the germ with zero gives an open neighborhood $P\in U_P\subseteq U$ on which
 $$
-s|_{U_P}=0.
+s\restrict_{U_P}=0.
 $$
 The $U_P$ cover $U$, so the uniqueness axiom for $\mathcal F$ gives
 $$

@@ -114,7 +114,7 @@ Every Pontryagin number of an oriented boundary is zero.
 
 Suppose a closed oriented $4n$-manifold $N$ is the oriented boundary of a compact oriented $(4n+1)$-manifold $W$. Along the boundary,
 $$
-TW|_N\cong TN\oplus\varepsilon^1,
+TW\restrict_N\cong TN\oplus\varepsilon^1,
 $$
 so stability and naturality give
 $$

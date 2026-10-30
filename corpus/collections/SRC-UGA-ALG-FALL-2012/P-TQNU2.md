@@ -33,7 +33,7 @@ The group $G$ has a normal abelian subgroup $P$ of order $49$.
 
 ::: pf-proof
 
-The splitting field is Galois in characteristic zero, so $|G|=1225=5^2\cdot7^2$. Sylow's theorems give $n_7\mid25$ and $n_7\equiv1\pmod7$. Among the divisors $1,5,25$ of $25$, only $1$ is congruent to $1$ modulo $7$. Hence the Sylow $7$-subgroup $P$ is unique and normal. Its order is $7^2$, so it is abelian.
+The splitting field is Galois in characteristic zero, so $\cardinality{G}=1225=5^2\cdot7^2$. Sylow's theorems give $n_7\mid25$ and $n_7\equiv1\pmod7$. Among the divisors $1,5,25$ of $25$, only $1$ is congruent to $1$ modulo $7$. Hence the Sylow $7$-subgroup $P$ is unique and normal. Its order is $7^2$, so it is abelian.
 
 :::
 

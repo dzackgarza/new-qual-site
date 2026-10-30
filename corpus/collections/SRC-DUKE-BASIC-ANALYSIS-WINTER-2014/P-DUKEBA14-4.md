@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 On $\RR^n$ define
 $$
-\rho_1(x,y)=\max_{1\le j\le n}|x^j-y^j|,
+\rho_1(x,y)=\max_{1\le j\le n}\abs{x^j-y^j},
 \qquad
-\rho_2(x,y)=\left(\sum_{j=1}^n|x^j-y^j|^2\right)^{1/2}.
+\rho_2(x,y)=\left(\sum_{j=1}^n\abs{x^j-y^j}^2\right)^{1/2}.
 $$
 Prove that a set $U\subset\RR^n$ is $\rho_1$-open if and only if it is $\rho_2$-open.
 :::

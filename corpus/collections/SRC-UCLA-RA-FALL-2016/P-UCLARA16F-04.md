@@ -31,7 +31,7 @@ A_n
 =
 \left\{
 f\in L^2([0,1]):
-\|f\|_2\le n
+\norm{f}_2\le n
 \right\}.}
 $$
 
@@ -50,7 +50,7 @@ $$
 
 ::: pf-proof
 
-If $f\in L^2$, then $\|f\|_2<\infty$, so choose an integer $n\ge\|f\|_2$. Then $f\in A_n$. The reverse inclusion is immediate from the definition of $A_n$.
+If $f\in L^2$, then $\norm{f}_2<\infty$, so choose an integer $n\ge\norm{f}_2$. Then $f\in A_n$. The reverse inclusion is immediate from the definition of $A_n$.
 
 :::
 
@@ -95,12 +95,12 @@ for almost every $x\in[0,1]$.
 
 From $L^1$-convergence, choose a subsequence satisfying
 $$
-\|f_{j_k}-f\|_1<2^{-k}.
+\norm{f_{j_k}-f}_1<2^{-k}.
 $$
 Then
 $$
 \sum_{k=1}^{\infty}
-\|f_{j_k}-f\|_1
+\norm{f_{j_k}-f}_1
 <
 \infty.
 $$
@@ -108,14 +108,14 @@ By Tonelli,
 $$
 \int_0^1
 \sum_{k=1}^{\infty}
-|f_{j_k}(x)-f(x)|
+\abs{f_{j_k}(x)-f(x)}
 \,dx
 <
 \infty.
 $$
 Hence for almost every $x$,
 $$
-\sum_k|f_{j_k}(x)-f(x)|<\infty,
+\sum_k\abs{f_{j_k}(x)-f(x)}<\infty,
 $$
 which implies
 $$
@@ -130,10 +130,10 @@ $$
 
 Fatou's lemma gives
 $$
-\int_0^1|f(x)|^2\,dx
+\int_0^1\abs{f(x)}^2\,dx
 \le
 \liminf_{k\to\infty}
-\int_0^1|f_{j_k}(x)|^2\,dx.
+\int_0^1\abs{f_{j_k}(x)}^2\,dx.
 $$
 
 
@@ -141,7 +141,7 @@ $$
 
 By step [](#s1-3){.pf-ref},
 $$
-|f_{j_k}(x)|^2\to|f(x)|^2
+\abs{f_{j_k}(x)}^2\to\abs{f(x)}^2
 $$
 almost everywhere, and the integrands are nonnegative. Apply Fatou's lemma.
 
@@ -153,7 +153,7 @@ almost everywhere, and the integrands are nonnegative. Apply Fatou's lemma.
 
 Since each $f_{j_k}\in A_n$,
 $$
-\int_0^1|f_{j_k}|^2\,dx
+\int_0^1\abs{f_{j_k}}^2\,dx
 \le
 n^2.
 $$
@@ -163,7 +163,7 @@ $$
 
 This is equivalent to
 $$
-\|f_{j_k}\|_2\le n.
+\norm{f_{j_k}}_2\le n.
 $$
 
 :::
@@ -175,7 +175,7 @@ $$
 Therefore
 $$
 \boxed{
-\int_0^1|f|^2\,dx
+\int_0^1\abs{f}^2\,dx
 \le
 n^2}.
 $$
@@ -202,7 +202,7 @@ $$
 
 Step [](#s1-6){.pf-ref} shows $f\in L^2$ and
 $$
-\|f\|_2\le n.
+\norm{f}_2\le n.
 $$
 
 :::
@@ -275,7 +275,7 @@ $$
 ::: pf-proof
 
 $$
-\int_0^1|h(x)|^2\,dx
+\int_0^1\abs{h(x)}^2\,dx
 =
 \int_0^1\frac{dx}{x}
 =
@@ -295,13 +295,13 @@ $$
 so small that
 $$
 \boxed{
-\lambda\|h\|_1<\varepsilon}.
+\lambda\norm{h}_1<\varepsilon}.
 $$
 
 
 ::: pf-proof
 
-The number $\|h\|_1=2$ is finite by step [](#s1-10){.pf-ref}, so any
+The number $\norm{h}_1=2$ is finite by step [](#s1-10){.pf-ref}, so any
 $$
 0<\lambda<\varepsilon/2
 $$
@@ -337,9 +337,9 @@ and $h\in L^1$, the sum $g$ belongs to $L^1$.
 One has
 $$
 \boxed{
-\|g-f\|_1
+\norm{g-f}_1
 =
-\lambda\|h\|_1
+\lambda\norm{h}_1
 <
 \varepsilon}.
 $$
@@ -402,7 +402,7 @@ Therefore every $L^1$-ball around every $f\in A_n$ contains a point outside $A_n
 
 Given arbitrary $\varepsilon>0$, steps [](#s1-13){.pf-ref} through [](#s1-16){.pf-ref} construct $g$ with
 $$
-\|g-f\|_1<\varepsilon
+\norm{g-f}_1<\varepsilon
 $$
 but
 $$

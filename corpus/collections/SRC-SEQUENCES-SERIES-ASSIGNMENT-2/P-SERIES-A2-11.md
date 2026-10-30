@@ -80,7 +80,7 @@ The sequence $(b_n)$ converges to $0$.
 ::: pf-proof
 
 $$
-|b_n|=\frac1{\sqrt n}\to0.
+\abs{b_n}=\frac1{\sqrt n}\to0.
 $$
 
 :::
@@ -183,7 +183,7 @@ The terms of every convergent series tend to zero.
 Hence there exists $N$ such that for every $n\ge N$,
 $$
 \boxed{
-|n^2a_n|<1}.
+\abs{n^2a_n}<1}.
 $$
 
 
@@ -200,7 +200,7 @@ Apply step [](#s1-8){.pf-ref} with $\varepsilon=1$.
 Therefore, for $n\ge N$,
 $$
 \boxed{
-|a_n|<\frac1{n^2}}.
+\abs{a_n}<\frac1{n^2}}.
 $$
 
 
@@ -216,7 +216,7 @@ Divide step [](#s1-9){.pf-ref} by the positive number $n^2$.
 
 Hence
 $$
-\sum_{n=N}^{\infty}|a_n|
+\sum_{n=N}^{\infty}\abs{a_n}
 $$
 converges.
 

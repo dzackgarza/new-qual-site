@@ -64,13 +64,13 @@ By step [](#s1-1){.pf-ref},
 $$
 \sqrt{\csc^2\theta-1}
 =\sqrt{\cot^2\theta}
-=|\cot\theta|.
+=\abs{\cot\theta}.
 $$
 Since $\theta=\operatorname{arccot}(\pi/4)$,
 $$
 \cot\theta=\frac{\pi}{4}>0.
 $$
-Thus $|\cot\theta|=\pi/4$.
+Thus $\abs{\cot\theta}=\pi/4$.
 
 :::
 

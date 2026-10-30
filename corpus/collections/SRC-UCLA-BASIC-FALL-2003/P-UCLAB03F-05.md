@@ -19,7 +19,7 @@ audit:
 Let $f:\RR^2\to\RR$ have continuous partial derivatives of order $3$.
 Write down explicitly, in terms of partial derivatives of $f$, a quadratic polynomial $P(x,y)$ such that
 $$
-|f(x,y)-P(x,y)|
+\abs{f(x,y)-P(x,y)}
 \leq C(x^2+y^2)^{3/2}
 $$
 for all $(x,y)$ in some sufficiently small neighborhood of $(0,0)$, where $C$ may depend on $f$ but not on $x$ or $y$.
@@ -134,9 +134,9 @@ Differentiate the expression for $g''(t)$ from step [](#s1-2){.pf-ref}. Equality
 
 For $0\le t\le1$,
 $$
-|g'''(t)|
+\abs{g'''(t)}
 \le
-B(|x|+|y|)^3
+B(\abs{x}+\abs{y})^3
 \le
 2\sqrt2\,B(x^2+y^2)^{3/2}.
 $$
@@ -147,18 +147,18 @@ $$
 By step [](#s1-1){.pf-ref} and the formula in step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
-|g'''(t)|
+\abs{g'''(t)}
 &\le
 B\bigl(
-|x|^3+3|x|^2|y|+3|x||y|^2+|y|^3
+\abs{x}^3+3\abs{x}^2\abs{y}+3\abs{x}\abs{y}^2+\abs{y}^3
 \bigr)\\
 &=
-B(|x|+|y|)^3.
+B(\abs{x}+\abs{y})^3.
 \end{aligned}
 $$
 By Cauchy--Schwarz,
 $$
-|x|+|y|
+\abs{x}+\abs{y}
 \le
 \sqrt2\sqrt{x^2+y^2}.
 $$
@@ -195,7 +195,7 @@ for some $\xi\in(0,1)$. By step [](#s1-2){.pf-ref}, the first three terms on the
 For every $(x,y)$ with $x^2+y^2\le r^2$,
 $$
 \boxed{
-|f(x,y)-P(x,y)|
+\abs{f(x,y)-P(x,y)}
 \le
 \frac{\sqrt2\,B}{3}(x^2+y^2)^{3/2}
 }.
@@ -206,9 +206,9 @@ $$
 
 By step [](#s1-5){.pf-ref} and then step [](#s1-4){.pf-ref},
 $$
-|f(x,y)-P(x,y)|
+\abs{f(x,y)-P(x,y)}
 \le
-\frac16|g'''(\xi)|
+\frac16\abs{g'''(\xi)}
 \le
 \frac{2\sqrt2\,B}{6}(x^2+y^2)^{3/2}.
 $$

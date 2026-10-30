@@ -24,10 +24,10 @@ audit:
 Suppose $\CC^3$ is given its usual inner product, and $\psi\colon\CC^3\to\CC^3$ is a linear map.
 Further suppose that the singular values of $\psi$ are $\sigma_1=3$, $\sigma_2=2$ and $\sigma_3=1$.
 
-(a) Determine, with justification, the norms $\|\psi\|_{\mathrm{op}}$ and $\|\psi\|_{\mathrm{Frob}}$.
+(a) Determine, with justification, the norms $\norm{\psi}_{\mathrm{op}}$ and $\norm{\psi}_{\mathrm{Frob}}$.
 
 (b) Let $\lambda\in\CC$ be an eigenvalue of $\psi$.
-Prove that $|\lambda|\in[1,3]$.
+Prove that $\abs{\lambda}\in[1,3]$.
 
 (c) Suppose now that $\psi$ is self-adjoint.
 Prove that $\lambda\in\{-3,-2,-1,1,2,3\}$.
@@ -40,7 +40,7 @@ Prove that $\lambda\in\{-3,-2,-1,1,2,3\}$.
 ::: pf-step
 The operator norm is
 $$
-\boxed{\|\psi\|_{\mathrm{op}}=3}.
+\boxed{\norm{\psi}_{\mathrm{op}}=3}.
 $$
 
 ::: pf-proof
@@ -52,13 +52,13 @@ For a linear map on a finite-dimensional Hermitian space, the operator norm indu
 ::: pf-step
 The Frobenius norm is
 $$
-\boxed{\|\psi\|_{\mathrm{Frob}}=\sqrt{14}}.
+\boxed{\norm{\psi}_{\mathrm{Frob}}=\sqrt{14}}.
 $$
 
 ::: pf-proof
 The squared Frobenius norm is the trace of $\psi^*\psi$, equivalently the sum of the squares of the singular values. Hence
 $$
-\|\psi\|_{\mathrm{Frob}}^2=3^2+2^2+1^2=14.
+\norm{\psi}_{\mathrm{Frob}}^2=3^2+2^2+1^2=14.
 $$
 :::
 
@@ -67,7 +67,7 @@ $$
 ::: {.pf-step #singular-value-bounds-on-image}
 For every vector $v\in\CC^3$,
 $$
-\|v\|\le \|\psi v\|\le3\|v\|.
+\norm{v}\le \norm{\psi v}\le3\norm{v}.
 $$
 
 ::: pf-proof
@@ -79,18 +79,18 @@ $$
 $$
 Since $U$ and $V$ are unitary,
 $$
-\|\psi v\|=\|\Sigma V^*v\|.
+\norm{\psi v}=\norm{\Sigma V^*v}.
 $$
 Writing $w=V^*v=(w_1,w_2,w_3)^T$ gives
 $$
-\|\Sigma w\|^2
-=9|w_1|^2+4|w_2|^2+|w_3|^2.
+\norm{\Sigma w}^2
+=9\abs{w_1}^2+4\abs{w_2}^2+\abs{w_3}^2.
 $$
 Therefore
 $$
-\|w\|^2\le \|\Sigma w\|^2\le9\|w\|^2.
+\norm{w}^2\le \norm{\Sigma w}^2\le9\norm{w}^2.
 $$
-Because $\|w\|=\|v\|$, taking square roots yields the claimed inequalities.
+Because $\norm{w}=\norm{v}$, taking square roots yields the claimed inequalities.
 :::
 
 :::
@@ -98,7 +98,7 @@ Because $\|w\|=\|v\|$, taking square roots yields the claimed inequalities.
 ::: pf-step
 If $\lambda$ is an eigenvalue of $\psi$, then
 $$
-\boxed{1\le|\lambda|\le3}.
+\boxed{1\le\abs{\lambda}\le3}.
 $$
 
 ::: pf-proof
@@ -108,9 +108,9 @@ $$
 $$
 Applying step [](#singular-value-bounds-on-image){.pf-ref} gives
 $$
-\|v\|\le\|\psi v\|=|\lambda|\|v\|\le3\|v\|.
+\norm{v}\le\norm{\psi v}=\abs{\lambda}\norm{v}\le3\norm{v}.
 $$
-Since $v\ne0$, divide by $\|v\|$ to obtain the result.
+Since $v\ne0$, divide by $\norm{v}$ to obtain the result.
 :::
 
 :::
@@ -134,7 +134,7 @@ $$
 $$
 Thus the singular values of $\psi$, which are the nonnegative square roots of the eigenvalues of $\psi^*\psi$, are
 $$
-|\lambda_1|,|\lambda_2|,|\lambda_3|.
+\abs{\lambda_1},\abs{\lambda_2},\abs{\lambda_3}.
 $$
 Their multiset is $\{3,2,1\}$ by hypothesis. Hence each real eigenvalue has absolute value $1$, $2$, or $3$, so each lies in the displayed set.
 :::

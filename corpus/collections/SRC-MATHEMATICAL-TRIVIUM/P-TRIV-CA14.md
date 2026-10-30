@@ -28,7 +28,7 @@ $x=0$. The finite Fourier-transform formula therefore requires $m\ne0$.
 
 Set
 $$
-a=|m|>0
+a=\abs{m}>0
 $$
 and
 $$
@@ -47,7 +47,7 @@ z=Re^{it},
 $$
 one has
 $$
-|e^{i\alpha z}|
+\abs{e^{i\alpha z}}
 =
 e^{-\alpha\operatorname{Im}z}
 \leq1.
@@ -62,7 +62,7 @@ $$
 $$
 Thus
 $$
-|e^{i\alpha z}|
+\abs{e^{i\alpha z}}
 =
 e^{-\alpha\operatorname{Im}z}
 \leq1
@@ -81,23 +81,23 @@ $R\to\infty$.
 
 ::: pf-proof
 
-On $|z|=R$,
+On $\abs{z}=R$,
 $$
-|z^2+a^2|
+\abs{z^2+a^2}
 \geq
 R^2-a^2.
 $$
 By step [](#s1-1){.pf-ref},
 $$
-|F(z)|
+\abs{F(z)}
 \leq
 \frac1{R^2-a^2}.
 $$
 The arc length is $\pi R$, so
 $$
-\left|
+\abs{
 \int_{\Gamma_R}F(z)\,dz
-\right|
+}
 \leq
 \frac{\pi R}{R^2-a^2}
 \longrightarrow0.
@@ -149,7 +149,7 @@ Let $R\to\infty$ and use step [](#s1-2){.pf-ref}.
 
 Suppose $\alpha<0$. On the lower semicircle,
 $$
-|e^{i\alpha z}|
+\abs{e^{i\alpha z}}
 \leq1.
 $$
 
@@ -162,7 +162,7 @@ $$
 $$
 Therefore
 $$
-|e^{i\alpha z}|
+\abs{e^{i\alpha z}}
 =
 e^{-\alpha\operatorname{Im}z}
 \leq1.
@@ -181,15 +181,15 @@ The lower-semicircle contribution tends to zero as $R\to\infty$.
 
 The denominator estimate from step [](#s1-2){.pf-ref} remains valid:
 $$
-|z^2+a^2|
+\abs{z^2+a^2}
 \geq
 R^2-a^2.
 $$
 Together with step [](#s1-4){.pf-ref} and the arc length $\pi R$, the $ML$ estimate gives
 $$
-\left|
+\abs{
 \int_{\Gamma_R^-}F(z)\,dz
-\right|
+}
 \leq
 \frac{\pi R}{R^2-a^2}
 \longrightarrow0.
@@ -268,15 +268,15 @@ $$
 \int_{-\infty}^{\infty}
 \frac{e^{i\alpha x}}{x^2+m^2}\,dx
 =
-\frac{\pi}{|m|}
-e^{-|alpha||m|}.
+\frac{\pi}{\abs{m}}
+e^{-\abs{alpha}\abs{m}}.
 }
 $$
 
 
 ::: pf-proof
 
-Recall $a=|m|$. For $\alpha>0$, step [](#s1-3){.pf-ref} gives
+Recall $a=\abs{m}$. For $\alpha>0$, step [](#s1-3){.pf-ref} gives
 $$
 \frac\pi a e^{-\alpha a}.
 $$
@@ -284,7 +284,7 @@ For $\alpha<0$, step [](#s1-6){.pf-ref} gives
 $$
 \frac\pi a e^{\alpha a}
 =
-\frac\pi a e^{-|alpha|a}.
+\frac\pi a e^{-\abs{alpha}a}.
 $$
 Step [](#s1-7){.pf-ref} handles $\alpha=0$. These are exactly the displayed unified
 formula.

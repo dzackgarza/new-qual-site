@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $f$ be a $C^n$ function on $[0, +\infty)$.
-Compute the distributional $n$-th derivative of $g(x) = f(|x|)$ (which is viewed as a distribution on $\RR$). You may express your answer in terms of the delta distribution.
+Compute the distributional $n$-th derivative of $g(x) = f(\abs{x})$ (which is viewed as a distribution on $\RR$). You may express your answer in terms of the delta distribution.
 
 Hint: You may use induction on $n$ to prove the general formula which you may guess after working out the answer for $n = 1, 2, 3, \ldots$
 :::
@@ -85,7 +85,7 @@ $$
 Equivalently,
 $$
 g^{(m)}_{\mathrm{reg}}(x)
-=\operatorname{sgn}(x)^m f^{(m)}(|x|).
+=\operatorname{sgn}(x)^m f^{(m)}(\abs{x}).
 $$
 
 The jump at $0$ is therefore
@@ -122,7 +122,7 @@ $$
 Substituting the jumps from Step 2 yields
 $$
 D^n g
-=\operatorname{sgn}(x)^n f^{(n)}(|x|)
+=\operatorname{sgn}(x)^n f^{(n)}(\abs{x})
 +\sum_{j=0}^{n-1}
 \bigl(1-(-1)^{n-1-j}\bigr)
 f^{(n-1-j)}(0)\,\delta_0^{(j)}.
@@ -131,8 +131,8 @@ $$
 Only odd derivative orders of $f$ contribute. Writing those orders as $2r+1$, we obtain the compact form
 $$
 \boxed{
-D^n(f(|x|))
-=\operatorname{sgn}(x)^n f^{(n)}(|x|)
+D^n(f(\abs{x}))
+=\operatorname{sgn}(x)^n f^{(n)}(\abs{x})
 +2\sum_{r=0}^{\lfloor(n-2)/2\rfloor}
 f^{(2r+1)}(0)\,
 \delta_0^{(n-2r-2)}.}
@@ -141,14 +141,14 @@ For $n=1$ the sum is empty.
 
 For example,
 $$
-Dg=\operatorname{sgn}(x)f'(|x|),
+Dg=\operatorname{sgn}(x)f'(\abs{x}),
 $$
 $$
-D^2g=f''(|x|)+2f'(0)\delta_0,
+D^2g=f''(\abs{x})+2f'(0)\delta_0,
 $$
 and
 $$
-D^3g=\operatorname{sgn}(x)f^{(3)}(|x|)+2f'(0)\delta_0'.
+D^3g=\operatorname{sgn}(x)f^{(3)}(\abs{x})+2f'(0)\delta_0'.
 $$
 
 :::

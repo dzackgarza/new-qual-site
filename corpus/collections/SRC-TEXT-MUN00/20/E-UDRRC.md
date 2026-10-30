@@ -57,31 +57,31 @@ $$
 
 (b) If either vector is zero the inequality is immediate. Otherwise put
 $$
-u=\frac{\mathbf x}{\|\mathbf x\|},\qquad v=\frac{\mathbf y}{\|\mathbf y\|}.
+u=\frac{\mathbf x}{\norm{\mathbf x}},\qquad v=\frac{\mathbf y}{\norm{\mathbf y}}.
 $$
-Since $\|u\pm v\|^2\ge0$,
+Since $\norm{u\pm v}^2\ge0$,
 $$
 0\le 2\pm2(u\cdot v),
 $$
-so $-1\le u\cdot v\le1$. Multiplying by $\|\mathbf x\|\|\mathbf y\|$ gives
+so $-1\le u\cdot v\le1$. Multiplying by $\norm{\mathbf x}\norm{\mathbf y}$ gives
 $$
-|\mathbf x\cdot\mathbf y|\le\|\mathbf x\|\,\|\mathbf y\|.
+\abs{\mathbf x\cdot\mathbf y}\le\norm{\mathbf x}\,\norm{\mathbf y}.
 $$
 
 (c) Using part (b),
 $$
 \begin{aligned}
-\|\mathbf x+\mathbf y\|^2
-&=\|\mathbf x\|^2+2\mathbf x\cdot\mathbf y+\|\mathbf y\|^2\\
-&\le \|\mathbf x\|^2+2\|\mathbf x\|\|\mathbf y\|+\|\mathbf y\|^2\\
-&=(\|\mathbf x\|+\|\mathbf y\|)^2.
+\norm{\mathbf x+\mathbf y}^2
+&=\norm{\mathbf x}^2+2\mathbf x\cdot\mathbf y+\norm{\mathbf y}^2\\
+&\le \norm{\mathbf x}^2+2\norm{\mathbf x}\norm{\mathbf y}+\norm{\mathbf y}^2\\
+&=(\norm{\mathbf x}+\norm{\mathbf y})^2.
 \end{aligned}
 $$
 Taking nonnegative square roots yields the triangle inequality for the norm.
 
-(d) Define $d(\mathbf x,\mathbf y)=\|\mathbf x-\mathbf y\|$. It is nonnegative and symmetric, and $d(\mathbf x,\mathbf y)=0$ iff every coordinate difference is zero, i.e. $\mathbf x=\mathbf y$. Finally
+(d) Define $d(\mathbf x,\mathbf y)=\norm{\mathbf x-\mathbf y}$. It is nonnegative and symmetric, and $d(\mathbf x,\mathbf y)=0$ iff every coordinate difference is zero, i.e. $\mathbf x=\mathbf y$. Finally
 $$
-d(\mathbf x,\mathbf z)=\|(\mathbf x-\mathbf y)+(\mathbf y-\mathbf z)\|
+d(\mathbf x,\mathbf z)=\norm{(\mathbf x-\mathbf y)+(\mathbf y-\mathbf z)}
 \le d(\mathbf x,\mathbf y)+d(\mathbf y,\mathbf z)
 $$
 by part (c). Thus $d$ is a metric.

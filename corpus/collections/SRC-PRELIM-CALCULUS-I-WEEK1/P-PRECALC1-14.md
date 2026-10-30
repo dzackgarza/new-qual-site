@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Define $f ( 0 ) = 0$ and $\begin{array} { r } { f ( x ) = \frac { | x | } { x } } \end{array}$ for $x \neq 0$ . Compute $\int _ { - 1 } ^ { 1 } f ( x ) d x .$
+Define $f ( 0 ) = 0$ and $\begin{array} { r } { f ( x ) = \frac { \abs{ x } } { x } } \end{array}$ for $x \neq 0$ . Compute $\int _ { - 1 } ^ { 1 } f ( x ) d x .$
 :::
 
 ::: {.solution}
@@ -36,11 +36,11 @@ $$
 
 If $x<0$, then
 $$
-|x|=-x,
+\abs{x}=-x,
 $$
 so
 $$
-\frac{|x|}{x}
+\frac{\abs{x}}{x}
 =
 \frac{-x}{x}
 =
@@ -68,11 +68,11 @@ $$
 
 If $x>0$, then
 $$
-|x|=x,
+\abs{x}=x,
 $$
 so
 $$
-\frac{|x|}{x}=1.
+\frac{\abs{x}}{x}=1.
 $$
 
 :::

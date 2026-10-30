@@ -32,7 +32,7 @@ Let $\mathcal{B}_{\RR^n}$ be the Borel $\sigma$-algebra on $\RR^n$ and let $\mu 
 
 Prove that for every $\epsilon > 0$ there is $\delta > 0$ such that
 $$
-\operatorname{diam}(E) = \sup\{|x - y| : x, y \in E\} < \delta \implies \mu(E) < \epsilon.
+\operatorname{diam}(E) = \sup\{\norm{x - y} : x, y \in E\} < \delta \implies \mu(E) < \epsilon.
 $$
 
 Hint: Start with $E \subset \overline{B_K(0)}$.
@@ -102,14 +102,14 @@ x\in\overline{B_K(0)}.
 $$
 Fix $r>0$. For all sufficiently large $j$,
 $$
-|x_j-x|<\frac r2
+\norm{x_j-x}<\frac r2
 \qquad\text{and}\qquad
 \operatorname{diam}(F_j)<\frac r2.
 $$
 If $y\in F_j$, then
 $$
-|y-x|
-\le |y-x_j|+|x_j-x|
+\norm{y-x}
+\le \norm{y-x_j}+\norm{x_j-x}
 <r.
 $$
 Thus

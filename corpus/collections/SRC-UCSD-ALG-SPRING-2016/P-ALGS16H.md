@@ -66,7 +66,7 @@ Let $K=\operatorname{Frac}(R)$. Since $I eq0$ is an ideal in the domain $R$, $K\
 
 ::: {.pf-step #s3}
 
-If $I=(\alpha)$ with $\alpha=a+b\sqrt{-6}$, then $[R:I]=|N(\alpha)|=a^2+6b^2$.
+If $I=(\alpha)$ with $\alpha=a+b\sqrt{-6}$, then $[R:I]=\abs{N(\alpha)}=a^2+6b^2$.
 
 ::: pf-proof
 

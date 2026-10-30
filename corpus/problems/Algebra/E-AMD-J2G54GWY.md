@@ -52,7 +52,7 @@ The derived subgroup $[S,S]$ is characteristic, hence normal, in $S$. Simplicity
 A finite simple abelian group has prime order.
 
 ::: pf-proof
-Choose a prime $p\mid |S|$. By Cauchy's theorem there is $x\in S$ of order $p$. Since $S$ is abelian, $\langle x\rangle$ is normal; simplicity forces $\langle x\rangle=S$. Hence $|S|=p$.
+Choose a prime $p\mid \cardinality{S}$. By Cauchy's theorem there is $x\in S$ of order $p$. Since $S$ is abelian, $\langle x\rangle$ is normal; simplicity forces $\langle x\rangle=S$. Hence $\cardinality{S}=p$.
 :::
 
 :::

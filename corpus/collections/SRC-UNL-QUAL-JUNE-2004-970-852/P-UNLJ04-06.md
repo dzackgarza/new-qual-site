@@ -17,10 +17,10 @@ audit:
 
 ::: {.problem}
 Let $A _ { 1 } , A _ { 2 } , \ldots , A _ { n }$ be finite sets, and $d _ { 1 } , d _ { 2 } , \ldots , d _ { n }$ non-negative integers.
-Prove that there are disjoint subsets $D _ { i } \subset A _ { i }$ with $| D _ { i } | = d _ { i }$ if and only if for all $I \subset$ $\{ 1 , 2 , \ldots , n \}$ we have
+Prove that there are disjoint subsets $D _ { i } \subset A _ { i }$ with $\cardinality{ D _ { i } } = d _ { i }$ if and only if for all $I \subset$ $\{ 1 , 2 , \ldots , n \}$ we have
 
 $$
-\left| \bigcup _ { i \in I } A _ { i } \right| \geq \sum _ { i \in I } d _ { i } .
+\cardinality{ \bigcup _ { i \in I } A _ { i } } \geq \sum _ { i \in I } d _ { i } .
 $$
 :::
 
@@ -39,7 +39,7 @@ Assume there are pairwise-disjoint subsets
 $$
 D_i\subseteq A_i,
 \qquad
-|D_i|=d_i.
+\cardinality{D_i}=d_i.
 $$
 Let
 $$
@@ -53,15 +53,15 @@ $$
 $$
 Therefore
 $$
-\left|
+\cardinality{
 \bigcup_{i\in I}A_i
-\right|
+}
 \ge
-\left|
+\cardinality{
 \bigsqcup_{i\in I}D_i
-\right|
+}
 =
-\sum_{i\in I}|D_i|
+\sum_{i\in I}\cardinality{D_i}
 =
 \sum_{i\in I}d_i.
 $$
@@ -74,9 +74,9 @@ $$
 
 Assume now that
 $$
-\left|
+\cardinality{
 \bigcup_{i\in I}A_i
-\right|
+}
 \ge
 \sum_{i\in I}d_i
 $$
@@ -145,7 +145,7 @@ $$
 This bipartite graph satisfies Hall's condition:
 $$
 \boxed{
-|N(S)|\ge|S|
+\cardinality{N(S)}\ge\cardinality{S}
 }
 $$
 for every
@@ -178,11 +178,11 @@ N(S)
 $$
 Hence the assumed inequality gives
 $$
-|N(S)|
+\cardinality{N(S)}
 =
-\left|
+\cardinality{
 \bigcup_{i\in I(S)}A_i
-\right|
+}
 \ge
 \sum_{i\in I(S)}d_i.
 $$
@@ -204,13 +204,13 @@ $$
 $$
 Therefore
 $$
-|S|
+\cardinality{S}
 \le
 \sum_{i\in I(S)}d_i.
 $$
 Combining the two inequalities yields
 $$
-|N(S)|\ge|S|.
+\cardinality{N(S)}\ge\cardinality{S}.
 $$
 
 :::
@@ -265,7 +265,7 @@ D_i\subseteq A_i
 $$
 and
 $$
-|D_i|=d_i.
+\cardinality{D_i}=d_i.
 $$
 
 
@@ -290,7 +290,7 @@ m(i,1),\ldots,m(i,d_i)
 $$
 are distinct. Hence
 $$
-|D_i|=d_i.
+\cardinality{D_i}=d_i.
 $$
 
 :::
@@ -350,7 +350,7 @@ D_i\subseteq A_i
 $$
 with
 $$
-|D_i|=d_i
+\cardinality{D_i}=d_i
 $$
 for every
 $$
@@ -366,11 +366,11 @@ $$
 Therefore
 $$
 \boxed{
-\exists\text{ pairwise-disjoint }D_i\subseteq A_i, |D_i|=d_i
+\exists\text{ pairwise-disjoint }D_i\subseteq A_i, \cardinality{D_i}=d_i
 \iff
-\left|
+\cardinality{
 \bigcup_{i\in I}A_i
-\right|
+}
 \ge
 \sum_{i\in I}d_i
 \text{ for all }I.}

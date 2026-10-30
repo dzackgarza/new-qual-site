@@ -61,7 +61,7 @@ $$
 $$
 and its orbit size is
 $$
-|\mathcal O(u)|=[\FF_3(u):\FF_3].
+\cardinality{\mathcal O(u)}=[\FF_3(u):\FF_3].
 $$
 
 ::: pf-proof
@@ -140,7 +140,7 @@ elements of orbit size $6$, hence $696/6=116$ such orbits.
 
 An element has degree strictly less than $6$ exactly when it lies in one of the proper intermediate fields $\FF_9$ or $\FF_{27}$. Their intersection is $\FF_3$, so
 $$
-|\FF_9\cup\FF_{27}|=9+27-3=33.
+\cardinality{\FF_9\cup\FF_{27}}=9+27-3=33.
 $$
 All remaining $729-33=696$ elements have exact degree $6$, and each corresponding orbit has size $6$.
 

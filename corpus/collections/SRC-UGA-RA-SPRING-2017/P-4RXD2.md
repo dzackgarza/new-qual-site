@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-4RXD2
 kind: problem
-title: '$f_n(x)=ae^{-nax}-be^{-nbx}$ with $0<a<b$: $\sum|f_n|\notin L^1([0,\infty))$
-  while $\sum f_n\in L^1$ with integral $\ln(b/a)$'
+title: '$f_n(x)=ae^{-nax}-be^{-nbx}$ with $0<a<b$: $\sum\abs{f_n}\notin L^1([0,\infty))$ while $\sum f_n\in L^1$ with integral $\ln(b/a)$'
 classification:
   areas:
   - real-analysis
@@ -21,7 +20,7 @@ $$
 f_n(x) = a e^{-n a x} - b e^{-n b x} \quad (n \ge 1).
 $$
 
-(a) Show that $\sum_{n=1}^\infty |f_n| \notin L^1([0, \infty))$.
+(a) Show that $\sum_{n=1}^\infty \abs{f_n} \notin L^1([0, \infty))$.
 
 (b) Show that $\sum_{n=1}^\infty f_n \in L^1([0, \infty))$ and
 $$
@@ -66,7 +65,7 @@ Since $\int_0^\infty f_n(x) \, dx = 0$, we have $-\int_0^{x_n} f_n(x) \, dx = \i
 
 ::: pf-step
 Compute the $L^1$ norm of $f_n$:
-$$\int_0^\infty |f_n(x)| \, dx = 2 \int_{x_n}^\infty f_n(x) \, dx = 2 \left[ -\frac{1}{n} e^{-n a x} + \frac{1}{n} e^{-n b x} \right]_{x_n}^\infty = \frac{2}{n} \left( e^{-n a x_n} - e^{-n b x_n} \right).$$
+$$\int_0^\infty \abs{f_n(x)} \, dx = 2 \int_{x_n}^\infty f_n(x) \, dx = 2 \left[ -\frac{1}{n} e^{-n a x} + \frac{1}{n} e^{-n b x} \right]_{x_n}^\infty = \frac{2}{n} \left( e^{-n a x_n} - e^{-n b x_n} \right).$$
 
 :::
 
@@ -82,7 +81,7 @@ Thus $C = e^{-a c} - e^{-b c} > 0$ (since $b > a \implies a c < b c \implies e^{
 
 ::: pf-step
 Therefore:
-$$\int_0^\infty |f_n(x)| \, dx = \frac{2 C}{n}.$$
+$$\int_0^\infty \abs{f_n(x)} \, dx = \frac{2 C}{n}.$$
 
 :::
 
@@ -91,18 +90,18 @@ $$\int_0^\infty |f_n(x)| \, dx = \frac{2 C}{n}.$$
 :::
 
 ::: pf-step
-Part (a): Divergence of the integral of $\sum |f_n|$.
+Part (a): Divergence of the integral of $\sum \abs{f_n}$.
 
 ::: pf-proof
 
 ::: pf-step
 By Tonelli's Theorem for non-negative measurable functions:
-$$\int_0^\infty \sum_{n=1}^\infty |f_n(x)| \, dx = \sum_{n=1}^\infty \int_0^\infty |f_n(x)| \, dx = \sum_{n=1}^\infty \frac{2 C}{n} = 2 C \sum_{n=1}^\infty \frac{1}{n} = \infty.$$
+$$\int_0^\infty \sum_{n=1}^\infty \abs{f_n(x)} \, dx = \sum_{n=1}^\infty \int_0^\infty \abs{f_n(x)} \, dx = \sum_{n=1}^\infty \frac{2 C}{n} = 2 C \sum_{n=1}^\infty \frac{1}{n} = \infty.$$
 
 :::
 
 ::: pf-step
-Therefore $\sum_{n=1}^\infty |f_n| \notin L^1([0, \infty))$.
+Therefore $\sum_{n=1}^\infty \abs{f_n} \notin L^1([0, \infty))$.
 
 :::
 
@@ -148,12 +147,12 @@ $$\lim_{x \to 0^+} S(x) = \lim_{x \to 0^+} \left[ \left(\frac{1}{x} - \frac{a}{2
 :::
 
 ::: pf-step
-Since $S(x)$ is continuous on $(0, \infty)$ and extends continuously to $x = 0$, $S$ is bounded on $(0, 1]$, so $\int_0^1 |S(x)| \, dx < \infty$.
+Since $S(x)$ is continuous on $(0, \infty)$ and extends continuously to $x = 0$, $S$ is bounded on $(0, 1]$, so $\int_0^1 \abs{S(x)} \, dx < \infty$.
 
 :::
 
 ::: pf-step
-As $x \to \infty$, $S(x) \sim a e^{-a x}$, which decays exponentially, so $\int_1^\infty |S(x)| \, dx < \infty$.
+As $x \to \infty$, $S(x) \sim a e^{-a x}$, which decays exponentially, so $\int_1^\infty \abs{S(x)} \, dx < \infty$.
 
 :::
 
@@ -209,7 +208,7 @@ $$\int_0^\infty S(x) \, dx = 0 - \ln\left(\frac{a}{b}\right) = \ln\left(\frac{b}
 Conclusion:
 
 ::: pf-proof
-$\sum_{n=1}^\infty |f_n| \notin L^1([0, \infty))$, whereas $\sum_{n=1}^\infty f_n \in L^1([0, \infty))$ with integral equal to $\ln(b/a)$.
+$\sum_{n=1}^\infty \abs{f_n} \notin L^1([0, \infty))$, whereas $\sum_{n=1}^\infty f_n \in L^1([0, \infty))$ with integral equal to $\ln(b/a)$.
 :::
 
 :::

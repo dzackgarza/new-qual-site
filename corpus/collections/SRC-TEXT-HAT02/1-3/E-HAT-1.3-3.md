@@ -108,7 +108,7 @@ p^{-1}(U_x)=\coprod_{\lambda\in\Lambda_x}W_\lambda,
 $$
 with each
 $$
-p|_{W_\lambda}:W_\lambda\to U_x
+p\restrict_{W_\lambda}:W_\lambda\to U_x
 $$
 a homeomorphism.
 

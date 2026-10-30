@@ -47,7 +47,7 @@ $$
 Therefore
 $$
 \operatorname{Re}\frac1{w-z_j}
-=\frac{\operatorname{Re}(w-z_j)}{|w-z_j|^2}<0
+=\frac{\operatorname{Re}(w-z_j)}{\abs{w-z_j}^2}<0
 $$
 for every $j$. The sum of these reciprocals consequently has strictly negative real part, contradicting
 $$

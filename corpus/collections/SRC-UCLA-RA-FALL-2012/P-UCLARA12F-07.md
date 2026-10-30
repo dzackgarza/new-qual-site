@@ -33,7 +33,7 @@ Show that
 
 For every $z\in\DD$,
 $$
-|f(z)|\le |z|.
+\abs{f(z)}\le \abs{z}.
 $$
 
 
@@ -49,17 +49,17 @@ The map $f$ is holomorphic on $\DD$, satisfies $f(0)=0$, and maps $\DD$ into its
 
 For every $\zeta$ on the unit circle,
 $$
-|f(\zeta)|\le1.
+\abs{f(\zeta)}\le1.
 $$
 
 
 ::: pf-proof
 
-Fix $|\zeta|=1$. For $0<r<1$, step [](#s1-1){.pf-ref} gives
+Fix $\abs{\zeta}=1$. For $0<r<1$, step [](#s1-1){.pf-ref} gives
 $$
-|f(r\zeta)|\le r.
+\abs{f(r\zeta)}\le r.
 $$
-Since $f$ is entire, it is continuous at $\zeta$. Letting $r\uparrow1$ yields $|f(\zeta)|\le1$.
+Since $f$ is entire, it is continuous at $\zeta$. Letting $r\uparrow1$ yields $\abs{f(\zeta)}\le1$.
 
 :::
 
@@ -77,11 +77,11 @@ $$
 
 Define
 $$
-\phi(t)\coloneqq |f(e^{it})|^2.
+\phi(t)\coloneqq \abs{f(e^{it})}^2.
 $$
 By step [](#s1-2){.pf-ref}, $\phi(t)\le1$ for all real $t$, while
 $$
-\phi(0)=|f(1)|^2=1.
+\phi(0)=\abs{f(1)}^2=1.
 $$
 Thus $t=0$ is a maximum of the differentiable real-valued function $\phi$, so $\phi'(0)=0$. Differentiating gives
 $$
@@ -114,7 +114,7 @@ $$
 
 For $0<r<1$, step [](#s1-1){.pf-ref} gives
 $$
-|f(r)|\le r.
+\abs{f(r)}\le r.
 $$
 Set $h=1-r>0$. Since $f$ is holomorphic at $1$,
 $$
@@ -122,12 +122,12 @@ f(1-h)=1-h f'(1)+o(h).
 $$
 Therefore
 $$
-|f(1-h)|^2
+\abs{f(1-h)}^2
 =1-2h\operatorname{Re}f'(1)+o(h).
 $$
 On the other hand,
 $$
-|f(1-h)|^2\le(1-h)^2=1-2h+o(h).
+\abs{f(1-h)}^2\le(1-h)^2=1-2h+o(h).
 $$
 Subtract $1$, divide by $-2h<0$, and let $h\downarrow0$. The inequality reverses under division by the negative quantity and gives
 $$

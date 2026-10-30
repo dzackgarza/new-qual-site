@@ -49,14 +49,14 @@ The difference quotient tends to zero at the origin.
 
 ::: pf-proof
 
-For $z=x+iy$, one has $f(0)=0$ and $|x|,|y|\leq|z|$.
+For $z=x+iy$, one has $f(0)=0$ and $\abs{x},\abs{y}\leq\abs{z}$.
 The triangle inequality gives
 $$
-|f(z)|\leq |x|^3+3|x||y|^2+|y|^3\leq5|z|^3.
+\abs{f(z)}\leq \abs{x}^3+3\abs{x}\abs{y}^2+\abs{y}^3\leq5\abs{z}^3.
 $$
 Thus for $z\ne0$,
 $$
-\left|\frac{f(z)-f(0)}z\right|\leq5|z|^2\longrightarrow0.
+\abs{\frac{f(z)-f(0)}z}\leq5\abs{z}^2\longrightarrow0.
 $$
 This limit is independent of the direction of approach,
 so the complex derivative exists and equals zero.

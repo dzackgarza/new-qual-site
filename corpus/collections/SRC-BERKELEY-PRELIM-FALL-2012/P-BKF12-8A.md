@@ -61,8 +61,8 @@ $a_i\in G$ of order $p_i$.
 
 ::: pf-proof
 
-Since $p_i\mid m$ and $m\mid\lvert G\rvert$, one has
-$p_i\mid\lvert G\rvert$. Cauchy's theorem therefore gives an element
+Since $p_i\mid m$ and $m\mid\cardinality{ G}$, one has
+$p_i\mid\cardinality{ G}$. Cauchy's theorem therefore gives an element
 $a_i\in G$ of order $p_i$.
 
 :::
@@ -144,7 +144,7 @@ G=C_2\times C_2
 \qquad\text{and}\qquad
 m=4,
 $$
-one has $m\mid\lvert G\rvert$, but $G$ has no element of order $m$.
+one has $m\mid\cardinality{ G}$, but $G$ has no element of order $m$.
 
 ::: pf-proof
 

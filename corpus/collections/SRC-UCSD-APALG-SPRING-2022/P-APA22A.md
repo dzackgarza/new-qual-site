@@ -74,7 +74,7 @@ The Jordan blocks of $\phi$ with eigenvalue $0$ are $J_2(0)$ and $J_1(0)$.
 
 ::: pf-proof
 
-The first three columns of $\mathcal M(\phi,B_1,B_1)$ vanish below row $3$, so the span $U$ of the first three vectors of $B_1$ is $\phi$-stable, and $\phi|_U$ has matrix $N=\begin{pmatrix}1&1&0\\-1&-1&0\\0&0&0\end{pmatrix}$. Direct multiplication gives $N^2=0$, and $\operatorname{rank}N=1$, so $\phi|_U$ is nilpotent with Jordan form $J_2(0)\oplus J_1(0)$. Thus $U$ lies in the generalized $0$-eigenspace of $\phi$, which has dimension $3$ by step [](#charpoly){.pf-ref}, so the two are equal.
+The first three columns of $\mathcal M(\phi,B_1,B_1)$ vanish below row $3$, so the span $U$ of the first three vectors of $B_1$ is $\phi$-stable, and $\phi\restrict_U$ has matrix $N=\begin{pmatrix}1&1&0\\-1&-1&0\\0&0&0\end{pmatrix}$. Direct multiplication gives $N^2=0$, and $\operatorname{rank}N=1$, so $\phi\restrict_U$ is nilpotent with Jordan form $J_2(0)\oplus J_1(0)$. Thus $U$ lies in the generalized $0$-eigenspace of $\phi$, which has dimension $3$ by step [](#charpoly){.pf-ref}, so the two are equal.
 
 :::
 

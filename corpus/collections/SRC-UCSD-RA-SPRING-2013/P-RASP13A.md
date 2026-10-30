@@ -32,7 +32,7 @@ Determine if the statements below are True or False.
 
 (c) (5 points) Let $H$ be a real Hilbert space.
 Assume a sequence $\{x_n\}$ converges to $x$ weakly in $H$.
-Then $\lim_{n \to \infty} \|x_n\| = \|x\|$ implies that $\{x_n\}$ converges to $x$ in $H$.
+Then $\lim_{n \to \infty} \norm{x_n} = \norm{x}$ implies that $\{x_n\}$ converges to $x$ in $H$.
 
 (d) (5 points) Let $f, g$, and $f_n$ and $g_n$ ($n = 1, 2, \ldots$) be all real-valued, Lebesgue measurable functions on $\RR$.
 If $f_n \to f$ and $g_n \to g$ in measure, then $f_n g_n \to fg$ in measure.
@@ -90,17 +90,17 @@ Part (c) is true.
 
 Weak convergence gives
 $$
-\langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
+\langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\norm{x}^2.
 $$
 Therefore
 $$
 \begin{aligned}
-\|x_n-x\|^2
-&=\|x_n\|^2+\|x\|^2-2\langle x_n,x\rangle\\
-&\longrightarrow \|x\|^2+\|x\|^2-2\|x\|^2=0,
+\norm{x_n-x}^2
+&=\norm{x_n}^2+\norm{x}^2-2\langle x_n,x\rangle\\
+&\longrightarrow \norm{x}^2+\norm{x}^2-2\norm{x}^2=0,
 \end{aligned}
 $$
-using the assumed convergence $\|x_n\|\to\|x\|$. Hence $x_n\to x$ strongly in $H$.
+using the assumed convergence $\norm{x_n}\to\norm{x}$. Hence $x_n\to x$ strongly in $H$.
 
 :::
 
@@ -128,8 +128,8 @@ f_ng_n(x)=\frac xn.
 $$
 For every $n$,
 $$
-m\left(\left\{x:\left|\frac xn\right|>1\right\}\right)
-=m(\{|x|>n\})
+m\left(\left\{x:\abs{\frac xn}>1\right\}\right)
+=m(\{\abs{x}>n\})
 =\infty.
 $$
 Thus $f_ng_n$ does not converge to $0=fg$ in measure. Hence the statement is false.

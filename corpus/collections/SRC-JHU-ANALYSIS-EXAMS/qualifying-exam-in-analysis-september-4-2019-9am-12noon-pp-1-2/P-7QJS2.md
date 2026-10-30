@@ -25,23 +25,23 @@ audit:
 ---
 
 ::: {.problem}
-4. Let f be a holomorphic function in the punctured disk $\{ z : 0 < | z | < 2 \}$ satisfying
+4. Let f be a holomorphic function in the punctured disk $\{ z : 0 < \abs{ z } < 2 \}$ satisfying
 
 $$
-| f ( z ) | \leq ( \log { \frac { 1 } { | z | } } ) ^ { 1 0 0 } \mathrm { { i n } } \left\{ | z | \leq 1 / 2 \right\} ,
+\abs{ f ( z ) } \leq ( \log { \frac { 1 } { \abs{ z } } } ) ^ { 1 0 0 } \mathrm { { i n } } \left\{ \abs{ z } \leq 1 / 2 \right\} ,
 $$
 
 $$
-| f ( z ) | = 1 \ \mathrm { o n } \ | z | = 1 .
+\abs{ f ( z ) } = 1 \ \mathrm { o n } \ \abs{ z } = 1 .
 $$
 
 a. Show that f has a removable singularity at the origin.
 
-b. Show that if $f ( z ) \neq 0$ in $| z | < 1$ , then f is constant.
+b. Show that if $f ( z ) \neq 0$ in $\abs{ z } < 1$ , then f is constant.
 
 c. (Extra credit) True or false, explain.
 
-$f = \alpha z ^ { n }$ for $\alpha \in \CC , | \alpha | = 1$ and an integer $n \geq 0$
+$f = \alpha z ^ { n }$ for $\alpha \in \CC , \abs{ \alpha } = 1$ and an integer $n \geq 0$
 :::
 
 ::: {.solution}

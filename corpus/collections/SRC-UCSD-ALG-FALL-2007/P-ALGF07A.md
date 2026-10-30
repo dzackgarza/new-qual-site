@@ -132,7 +132,7 @@ For parts (a) and (b): step [](#n5-sylow-count){.pf-ref} (a) and step [](#elemen
 Let $P$ be a Sylow $3$-subgroup of $G$.
 Then
 $$
-|N_G(P)|=\frac{|G|}{n_3}=\frac{240}{n_3}.
+\cardinality{N_G(P)}=\frac{\cardinality{G}}{n_3}=\frac{240}{n_3}.
 $$
 
 ::: pf-proof
@@ -143,14 +143,14 @@ Orbit--stabilizer therefore gives $n_3=[G:N_G(P)]$.
 :::
 
 ::: {.pf-step #no-order-15-subgroup}
-Under the hypothesis that $G$ has no subgroup of order $15$, one has $5\nmid |N_G(P)|$.
+Under the hypothesis that $G$ has no subgroup of order $15$, one has $5\nmid \cardinality{N_G(P)}$.
 
 ::: pf-proof
 The subgroup $P$ is normal in $N_G(P)$ by definition of the normalizer.
-If $5\mid |N_G(P)|$, Cauchy's theorem gives a subgroup $Q\le N_G(P)$ of order $5$.
+If $5\mid \cardinality{N_G(P)}$, Cauchy's theorem gives a subgroup $Q\le N_G(P)$ of order $5$.
 Since $P\trianglelefteq N_G(P)$, the product $PQ$ is a subgroup of $N_G(P)$, and
 $$
-|PQ|=\frac{|P||Q|}{|P\cap Q|}=3\cdot5=15,
+\cardinality{PQ}=\frac{\cardinality{P}\cardinality{Q}}{\cardinality{P\cap Q}}=3\cdot5=15,
 $$
 because $P\cap Q=1$.
 This contradicts the hypothesis.

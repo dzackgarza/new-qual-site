@@ -27,9 +27,9 @@ audit:
 Let $\{f_n\}_n \subset L^1(\RR, m)$ be a sequence of functions such that $f_n \to 0$, $m$-almost everywhere.
 Assume that there exists $M < \infty$ such that
 $$
-\int_{\RR} \max(|f_1|, |f_2|, \ldots, |f_n|)\,dm \leq M, \quad \text{for every } n \geq 1.
+\int_{\RR} \max(\abs{f_1}, \abs{f_2}, \ldots, \abs{f_n})\,dm \leq M, \quad \text{for every } n \geq 1.
 $$
-Prove that $\lim_{n \to \infty} \|f_n\|_1 = 0$.
+Prove that $\lim_{n \to \infty} \norm{f_n}_1 = 0$.
 :::
 
 ::: {.solution}
@@ -44,7 +44,7 @@ Build a single integrable dominating function.
 
 Define
 $$
-g_n:=\max(|f_1|,\ldots,|f_n|).
+g_n:=\max(\abs{f_1},\ldots,\abs{f_n}).
 $$
 Then
 $$
@@ -57,7 +57,7 @@ $$
 $$
 Let
 $$
-g:=\lim_{n\to\infty}g_n=\sup_n|f_n|.
+g:=\lim_{n\to\infty}g_n=\sup_n\abs{f_n}.
 $$
 By the Monotone Convergence Theorem,
 $$
@@ -79,15 +79,15 @@ Apply dominated convergence.
 
 For every $n$,
 $$
-|f_n|\le g,
+\abs{f_n}\le g,
 $$
 and by assumption $f_n\to0$ almost everywhere. Since $g\in L^1$, the Dominated Convergence Theorem gives
 $$
-\int_{\RR}|f_n|\,dm\longrightarrow0.
+\int_{\RR}\abs{f_n}\,dm\longrightarrow0.
 $$
 Hence
 $$
-\boxed{\|f_n\|_1\to0.}
+\boxed{\norm{f_n}_1\to0.}
 $$
 
 :::

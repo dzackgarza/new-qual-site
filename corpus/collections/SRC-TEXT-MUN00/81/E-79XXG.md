@@ -58,7 +58,7 @@ Conversely, a bijection $\phi$ of the vertices commuting with $a \cdot$ and $b \
 Since $p h = p$, $h$ preserves $p^{-1}(x_0)$.
 If $\tilde\gamma$ is the lift of the loop $A$ starting at $v$, then $h \circ \tilde\gamma$ is a lift of $A$ starting at $h(v)$, so by uniqueness of path lifting it ends at $a \cdot h(v)$; likewise for $b$.
 Two covering transformations that agree at $e_0$ are lifts of $p$ agreeing at a point of the connected space $E$, hence equal.
-For the converse, $\phi$ carries the $A$-edge from $v$ to $a \cdot v$ to the $A$-edge from $\phi(v)$ to $a \cdot \phi(v)$, and similarly for $B$; define $h$ on each closed edge $e$ as $(p|_{e'})^{-1} \circ p|_e$ on its interior, where $e'$ is the image edge, and as $\phi$ on vertices.
+For the converse, $\phi$ carries the $A$-edge from $v$ to $a \cdot v$ to the $A$-edge from $\phi(v)$ to $a \cdot \phi(v)$, and similarly for $B$; define $h$ on each closed edge $e$ as $(p\restrict_{e'})^{-1} \circ p\restrict_e$ on its interior, where $e'$ is the image edge, and as $\phi$ on vertices.
 Then $h$ is a homeomorphism with $p h = p$.
 :::
 

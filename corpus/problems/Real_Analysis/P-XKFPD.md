@@ -28,11 +28,11 @@ $$
 \norm{x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n}_H^2
 =
 \norm{x}_H^2-
-\sum_{n=1}^{N}|\langle x,u_n\rangle|^2,
+\sum_{n=1}^{N}\abs{\langle x,u_n\rangle}^2,
 $$
 and deduce Bessel's inequality
 $$
-\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le \norm{x}_H^2.
+\sum_{n=1}^{\infty}\abs{\langle x,u_n\rangle}^2\le \norm{x}_H^2.
 $$
 
 (b) If $(a_n)\in\ell^2(\NN)$, prove that there is $x\in H$ such that
@@ -42,7 +42,7 @@ $$
 $$
 and $x$ may be chosen so that
 $$
-\norm{x}_H=\left(\sum_{n=1}^{\infty}|a_n|^2\right)^{1/2}.
+\norm{x}_H=\left(\sum_{n=1}^{\infty}\abs{a_n}^2\right)^{1/2}.
 $$
 
 (c) Prove that if $(u_n)$ is complete, then Bessel's inequality is an equality.
@@ -54,7 +54,7 @@ $$
 
 ::: pf-step
 
-(a) For $x \in H$ and every $N$, $\norm{x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n}^2 = \norm{x}^2-\sum_{n=1}^{N}|\langle x,u_n\rangle|^2$, and $\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le \norm{x}^2$.
+(a) For $x \in H$ and every $N$, $\norm{x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n}^2 = \norm{x}^2-\sum_{n=1}^{N}\abs{\langle x,u_n\rangle}^2$, and $\sum_{n=1}^{\infty}\abs{\langle x,u_n\rangle}^2\le \norm{x}^2$.
 
 ::: pf-proof
 
@@ -80,22 +80,22 @@ Since the $u_n$ are orthonormal,
 $$
 \norm{s_N}^2
 =
-\sum_{n=1}^N|\langle x,u_n\rangle|^2.
+\sum_{n=1}^N\abs{\langle x,u_n\rangle}^2.
 $$
 Therefore
 $$
 \norm{x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n}^2
 =
 \norm{x}^2-
-\sum_{n=1}^{N}|\langle x,u_n\rangle|^2.
+\sum_{n=1}^{N}\abs{\langle x,u_n\rangle}^2.
 $$
 The left side is nonnegative, so
 $$
-\sum_{n=1}^{N}|\langle x,u_n\rangle|^2\le\norm{x}^2
+\sum_{n=1}^{N}\abs{\langle x,u_n\rangle}^2\le\norm{x}^2
 $$
 for every $N$. Letting $N\to\infty$ gives
 $$
-\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le\norm{x}^2.
+\sum_{n=1}^{\infty}\abs{\langle x,u_n\rangle}^2\le\norm{x}^2.
 $$
 
 :::
@@ -104,7 +104,7 @@ $$
 
 ::: {.pf-step #reconstruct}
 
-(b) If $(a_n)\in\ell^2(\NN)$, then $\sum_n a_n u_n$ converges to some $x \in H$ with $\langle x,u_k\rangle = a_k$ for every $k$ and $\norm{x}^2 = \sum_{n=1}^{\infty}|a_n|^2$.
+(b) If $(a_n)\in\ell^2(\NN)$, then $\sum_n a_n u_n$ converges to some $x \in H$ with $\langle x,u_k\rangle = a_k$ for every $k$ and $\norm{x}^2 = \sum_{n=1}^{\infty}\abs{a_n}^2$.
 
 ::: pf-proof
 
@@ -116,7 +116,7 @@ For $M>N$, orthonormality gives
 $$
 \norm{S_M-S_N}^2
 =
-\sum_{n=N+1}^M|a_n|^2.
+\sum_{n=N+1}^M\abs{a_n}^2.
 $$
 Since $(a_n)\in\ell^2$, the right side tends to $0$ as $M,N\to\infty$. Hence $(S_N)$ is Cauchy. Completeness of $H$ gives some $x\in H$ with
 $$
@@ -135,7 +135,7 @@ $$
 =
 \lim_{N\to\infty}\norm{S_N}^2
 =
-\sum_{n=1}^{\infty}|a_n|^2.
+\sum_{n=1}^{\infty}\abs{a_n}^2.
 $$
 Thus $x$ has the required coefficients and norm.
 
@@ -145,7 +145,7 @@ Thus $x$ has the required coefficients and norm.
 
 ::: pf-step
 
-(c) If $(u_n)$ is complete, then $\norm{x}^2 = \sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2$ for every $x \in H$.
+(c) If $(u_n)$ is complete, then $\norm{x}^2 = \sum_{n=1}^{\infty}\abs{\langle x,u_n\rangle}^2$ for every $x \in H$.
 
 ::: pf-proof
 
@@ -166,7 +166,7 @@ $$
 Thus $x-s$ is orthogonal to every $u_k$. Completeness of the orthonormal sequence means that the only vector orthogonal to every $u_k$ is $0$, so $x=s$. Therefore step [](#reconstruct){.pf-ref} gives
 $$
 \norm{x}^2=
-\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2.
+\sum_{n=1}^{\infty}\abs{\langle x,u_n\rangle}^2.
 $$
 
 :::

@@ -65,7 +65,7 @@ for some homomorphism $\varphi:C_5\to\operatorname{Aut}(C_{11})$.
 Again, a group of prime order is cyclic, so $P\cong C_5$. The intersection $Q\cap P$
 has order dividing both $11$ and $5$, hence is trivial. Therefore
 $$
-|QP|=\frac{|Q||P|}{|Q\cap P|}=55=|G|,
+\cardinality{QP}=\frac{\cardinality{Q}\cardinality{P}}{\cardinality{Q\cap P}}=55=\cardinality{G},
 $$
 so $QP=G$. Since $Q\trianglelefteq G$, this identifies $G$ with the indicated
 semidirect product via the conjugation action of $P$ on $Q$.

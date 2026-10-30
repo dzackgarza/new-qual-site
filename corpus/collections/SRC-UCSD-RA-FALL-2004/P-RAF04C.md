@@ -52,14 +52,14 @@ $$
 $$
 By Cauchy--Schwarz and translation invariance of Lebesgue measure,
 $$
-\left|\int_{\RR}f(x)g(x-n)\,dx\right|
+\abs{\int_{\RR}f(x)g(x-n)\,dx}
 \le
-\left(\int_{n-M}^{n+M}|f(x)|^2\,dx\right)^{1/2}\|g\|_2.
+\left(\int_{n-M}^{n+M}\abs{f(x)}^2\,dx\right)^{1/2}\norm{g}_2.
 $$
 Since $f\in L^2(\RR)$,
 $$
-\int_{n-M}^{n+M}|f(x)|^2\,dx
-\le \int_{n-M}^{\infty}|f(x)|^2\,dx\longrightarrow0.
+\int_{n-M}^{n+M}\abs{f(x)}^2\,dx
+\le \int_{n-M}^{\infty}\abs{f(x)}^2\,dx\longrightarrow0.
 $$
 Hence the desired limit is $0$ whenever $g$ has compact support.
 
@@ -80,16 +80,16 @@ $$
 Then $g_R\to g$ in $L^2(\RR)$. For every $n$,
 $$
 \begin{aligned}
-\left|\int f(x)g(x-n)\,dx\right|
+\abs{\int f(x)g(x-n)\,dx}
 &\le
-\left|\int f(x)g_R(x-n)\,dx\right|\\
+\abs{\int f(x)g_R(x-n)\,dx}\\
 &\qquad+
-\left|\int f(x)(g-g_R)(x-n)\,dx\right|.
+\abs{\int f(x)(g-g_R)(x-n)\,dx}.
 \end{aligned}
 $$
 The second term is bounded, uniformly in $n$, by
 $$
-\|f\|_2\,\|g-g_R\|_2.
+\norm{f}_2\,\norm{g-g_R}_2.
 $$
 Given $\varepsilon>0$, choose $R$ so large that this bound is below $\varepsilon$. For that fixed $R$, Step 1 gives
 $$

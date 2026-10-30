@@ -83,7 +83,7 @@ additive order of $1$ is finite and exceeds one, and a
 composite order would give zero divisors by factoring it.
 The prime subfield is therefore $\FF_p$. If
 $[F:\FF_p]=n$, then counting coordinates in a basis
-gives $|F|=p^n$, with $n\geq1$.
+gives $\cardinality{F}=p^n$, with $n\geq1$.
 
 The Frobenius map $\varphi(a)=a^p$ is a field homomorphism:
 the binomial theorem in characteristic $p$ gives additivity,

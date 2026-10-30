@@ -89,7 +89,7 @@ $$
 
 The real eigenvalue $\lambda$ from step [](#s1-2){.pf-ref} satisfies
 $$
-|\lambda|=1.
+\abs{\lambda}=1.
 $$
 
 
@@ -109,11 +109,11 @@ A^tA=I.
 $$
 Thus $A$ preserves the Euclidean norm:
 $$
-\|Av\|^2
+\norm{Av}^2
 =
 v^tA^tAv
 =
-\|v\|^2.
+\norm{v}^2.
 $$
 Using
 $$
@@ -121,13 +121,13 @@ Av=\lambda v
 $$
 and $v\ne0$,
 $$
-\|v\|
+\norm{v}
 =
-\|Av\|
+\norm{Av}
 =
-|\lambda|\,\|v\|.
+\abs{\lambda}\,\norm{v}.
 $$
-Hence $|\lambda|=1$.
+Hence $\abs{\lambda}=1$.
 
 :::
 
@@ -140,7 +140,7 @@ One of $1$ or $-1$ is an eigenvalue of $A$.
 
 ::: pf-proof
 
-The number $\lambda$ is real by step [](#s1-1){.pf-ref} and satisfies $|\lambda|=1$ by step [](#s1-3){.pf-ref}. Therefore
+The number $\lambda$ is real by step [](#s1-1){.pf-ref} and satisfies $\abs{\lambda}=1$ by step [](#s1-3){.pf-ref}. Therefore
 $$
 \lambda\in\{1,-1\}.
 $$

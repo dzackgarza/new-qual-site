@@ -40,12 +40,12 @@ $$
 $$
 The three primitives are respectively
 $$
-\sqrt{x^2-1},\qquad 2\ln|x+\sqrt{x^2-1}|,
+\sqrt{x^2-1},\qquad 2\ln\abs{x+\sqrt{x^2-1}},
 \qquad \arctan\sqrt{x^2-1}.
 $$
 Thus
 $$
-\boxed{\sqrt{x^2-1}+2\ln|x+\sqrt{x^2-1}|+\arctan\sqrt{x^2-1}+C.}
+\boxed{\sqrt{x^2-1}+2\ln\abs{x+\sqrt{x^2-1}}+\arctan\sqrt{x^2-1}+C.}
 $$
 
 For the second integral, write
@@ -56,6 +56,6 @@ $$
 Then
 $$
 \boxed{\int\frac{x+16}{\sqrt{x^2-4x+8}}\,dx
-=\sqrt{x^2-4x+8}+18\ln\!\left|x-2+\sqrt{x^2-4x+8}\right|+C.}
+=\sqrt{x^2-4x+8}+18\ln\!\abs{x-2+\sqrt{x^2-4x+8}}+C.}
 $$
 :::

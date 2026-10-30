@@ -57,7 +57,7 @@ the only possible poles are the zeros of $\sin(\pi z)$, namely the integers. If 
 $$
 \sin(\pi n)=0,
 \qquad
-\frac{d}{dz}\sin(\pi z)\bigg|_{z=n}=\pi\cos(\pi n)=\pi(-1)^n\ne0,
+\frac{d}{dz}\sin(\pi z)\evalfrom_{z=n}=\pi\cos(\pi n)=\pi(-1)^n\ne0,
 $$
 while the numerator at $n$ is $-\pi n(-1)^n\ne0$. Thus $n$ is a simple pole, and
 $$
@@ -108,7 +108,7 @@ which is the claimed identity.
 
 ::: {.pf-step #s1-3}
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 g(z)=-1+2\sum_{m=1}^{\infty}\frac{z^2}{m^2-z^2}.
 $$
@@ -122,7 +122,7 @@ g(z)
 =-1-2z^2\sum_{m=1}^{\infty}\frac1{z^2-m^2}
 =-1+2\sum_{m=1}^{\infty}\frac{z^2}{m^2-z^2}.
 $$
-The restriction $|z|<1$ avoids every nonzero integer and is the disc of convergence relevant to the Taylor expansion about $0$.
+The restriction $\abs{z}<1$ avoids every nonzero integer and is the disc of convergence relevant to the Taylor expansion about $0$.
 
 :::
 
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-Fix $0<r<1$. For $|z|\le r$ and every $m\ge1$, the geometric-series expansion gives
+Fix $0<r<1$. For $\abs{z}\le r$ and every $m\ge1$, the geometric-series expansion gives
 $$
 \frac{z^2}{m^2-z^2}
 =\sum_{k=1}^{\infty}\frac{z^{2k}}{m^{2k}}.
@@ -146,13 +146,13 @@ $$
 Moreover,
 $$
 \sum_{m=1}^{\infty}\sum_{k=1}^{\infty}
-2\frac{|z|^{2k}}{m^{2k}}
+2\frac{\abs{z}^{2k}}{m^{2k}}
 \le
 2\left(\sum_{m=1}^{\infty}\frac1{m^2}\right)
 \left(\sum_{k=1}^{\infty}r^{2k}\right)
 <\infty.
 $$
-Thus the double series is uniformly absolutely convergent on $|z|\le r$, so step [](#s1-3){.pf-ref} may be rearranged as
+Thus the double series is uniformly absolutely convergent on $\abs{z}\le r$, so step [](#s1-3){.pf-ref} may be rearranged as
 $$
 \begin{aligned}
 g(z)
@@ -161,7 +161,7 @@ g(z)
 \left(2\sum_{m=1}^{\infty}\frac1{m^{2k}}\right)z^{2k}.
 \end{aligned}
 $$
-Since $r<1$ was arbitrary, this is the Taylor expansion of $g$ throughout $|z|<1$, and comparison of coefficients gives the claimed formula.
+Since $r<1$ was arbitrary, this is the Taylor expansion of $g$ throughout $\abs{z}<1$, and comparison of coefficients gives the claimed formula.
 
 :::
 

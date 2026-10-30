@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Write $S^3 = \partial B^4 \subset \CC^2$ as the preimage of $1$ of the function $r^2$, so that $\ker(d(r^2))$ along $S^3$ is $TS^3$.
 There is a complex structure $J$ on $TS^3$ inherited from $\CC^2$.
-Write $\alpha = d(r^2) \circ J$, and let $\xi = \ker(\alpha|_{S^3})$, the standard structure on $S^3$.
+Write $\alpha = d(r^2) \circ J$, and let $\xi = \ker(\alpha\restrict_{S^3})$, the standard structure on $S^3$.
 
 Verify that this is a positive contact form by showing that
 $$
@@ -291,7 +291,7 @@ to the oriented level set $S^3$ be positive.
 Therefore
 $$
 \boxed{
-\xi=\ker(\alpha|_{S^3})}
+\xi=\ker(\alpha\restrict_{S^3})}
 $$
 is a positive contact structure on $S^3$.
 
@@ -318,7 +318,7 @@ $$
 =
 \left(
 \frac{2\zeta}{D},
-\frac{1-|\zeta|^2+it}{D}
+\frac{1-\abs{\zeta}^2+it}{D}
 \right)}.
 $$
 
@@ -343,31 +343,31 @@ Let
 $$
 w_1=\frac{2\zeta}{D},
 \qquad
-w_2=\frac{1-|\zeta|^2+it}{D}.
+w_2=\frac{1-\abs{\zeta}^2+it}{D}.
 $$
 Since
 $$
-|D|^2
+\abs{D}^2
 =
-(1+|\zeta|^2)^2+t^2,
+(1+\abs{\zeta}^2)^2+t^2,
 $$
 one has
 $$
 \begin{aligned}
-|w_1|^2+|w_2|^2
+\abs{w_1}^2+\abs{w_2}^2
 &=
 \frac{
-4|\zeta|^2
+4\abs{\zeta}^2
 +
-(1-|\zeta|^2)^2+t^2
+(1-\abs{\zeta}^2)^2+t^2
 }{
-(1+|\zeta|^2)^2+t^2
+(1+\abs{\zeta}^2)^2+t^2
 }\\
 &=
 \frac{
-1+2|\zeta|^2+|\zeta|^4+t^2
+1+2\abs{\zeta}^2+\abs{\zeta}^4+t^2
 }{
-(1+|\zeta|^2)^2+t^2
+(1+\abs{\zeta}^2)^2+t^2
 }\\
 &=
 1.
@@ -445,7 +445,7 @@ D
 $$
 and since
 $$
-D=1+|\zeta|^2-it,
+D=1+\abs{\zeta}^2-it,
 $$
 one recovers
 $$
@@ -519,12 +519,12 @@ Take the imaginary part.
 A direct differentiation of the Cayley transform gives
 $$
 \boxed{
-\mathcal C^*(\alpha|_{S^3})
+\mathcal C^*(\alpha\restrict_{S^3})
 =
 \frac{
 2
 }{
-(1+|\zeta|^2)^2+t^2
+(1+\abs{\zeta}^2)^2+t^2
 }
 \,\beta}.
 $$
@@ -548,14 +548,14 @@ Differentiating
 $$
 w_1=\frac{2\zeta}{D},
 \qquad
-w_2=\frac{1-|\zeta|^2+it}{D},
+w_2=\frac{1-\abs{\zeta}^2+it}{D},
 $$
 collecting the terms in $dt$ and
 $\operatorname{Im}(\overline\zeta\,d\zeta)$, and using
 $$
-|D|^2
+\abs{D}^2
 =
-(1+|\zeta|^2)^2+t^2
+(1+\abs{\zeta}^2)^2+t^2
 $$
 yields the displayed formula.
 

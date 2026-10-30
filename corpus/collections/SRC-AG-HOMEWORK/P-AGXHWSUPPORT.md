@@ -18,8 +18,8 @@ review: draft
 Let $\mcf\in \Sh(X)$ and $s\in \mcf(U)$ be a section, and define
 $$
 \begin{aligned}
-\supp s &\definedas \theset{p\in U \st s_p \neq 0} \subseteq U \\
-\supp \mcf &\definedas \theset{p\in X \st \mcf_p\neq 0} \subseteq  X
+\supp s &\coloneqq \theset{p\in U \st s_p \neq 0} \subseteq U \\
+\supp \mcf &\coloneqq \theset{p\in X \st \mcf_p\neq 0} \subseteq  X
 \end{aligned}
 ,$$
 where $s_p$ denotes the germ of $s$ in the stalk $\mcf_p$.
@@ -34,7 +34,7 @@ $\supp s$ is closed in $U$.
 
 ::: pf-proof
 Let $p \in U \sm \supp s$, so $s_p = 0$.
-By the definition of the stalk, there is an open neighborhood $W \subseteq U$ of $p$ with $s|_W = 0$.
+By the definition of the stalk, there is an open neighborhood $W \subseteq U$ of $p$ with $s\restrict_W = 0$.
 Then $s_{p'} = 0$ for every $p' \in W$, so $W \subseteq U \sm \supp s$.
 Hence $U \sm \supp s$ is open in $U$.
 :::
@@ -49,7 +49,7 @@ $\supp \mcf$ need not be closed in $X$.
 ::: {.pf-step #sheaf-f}
 Fix $q \in X$ and an abelian group $A \neq 0$, and let $\mcf$ be the sheafification of the presheaf
 $$
-P(U) \definedas
+P(U) \coloneqq
 \begin{cases}
 A & q \notin U \\
 0 & q \in U,

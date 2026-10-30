@@ -37,16 +37,16 @@ $$
 The induced-character formula is
 $$
 \chi^{A\uparrow_H^G}(g)
-=\frac1{|H|}\sum_{\substack{x\in G\\x^{-1}gx\in H}}
+=\frac1{\cardinality{H}}\sum_{\substack{x\in G\\x^{-1}gx\in H}}
 \chi^A(x^{-1}gx).
 $$
 Therefore
 $$
 \begin{aligned}
 (\chi^{A\uparrow_H^G},\phi)_G
-&=\frac1{|G|}\sum_{g\in G}
+&=\frac1{\cardinality{G}}\sum_{g\in G}
 \chi^{A\uparrow_H^G}(g)\overline{\phi(g)}\\
-&=\frac1{|G||H|}
+&=\frac1{\cardinality{G}\cardinality{H}}
 \sum_{x\in G}\sum_{h\in H}
 \chi^A(h)\overline{\phi(xhx^{-1})}.
 \end{aligned}
@@ -59,7 +59,7 @@ Thus the inner sum is independent of $x$, and
 $$
 \begin{aligned}
 (\chi^{A\uparrow_H^G},\phi)_G
-&=\frac1{|H|}\sum_{h\in H}
+&=\frac1{\cardinality{H}}\sum_{h\in H}
 \chi^A(h)\overline{\phi(h)}\\
 &=(\chi^A,\phi\downarrow_H^G)_H.
 \end{aligned}

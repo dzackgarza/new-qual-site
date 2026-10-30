@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Let $U \subseteq \CC$ be an open set and
 
-$$A^2(U) = \{ f \text{ holomorphic on } U : \int_U |f(z)|^2 \, dx \, dy < \infty \}.$$
+$$A^2(U) = \{ f \text{ holomorphic on } U : \int_U \abs{f(z)}^2 \, dx \, dy < \infty \}.$$
 
 Define
 
@@ -37,7 +37,7 @@ Prove that $A^2(U)$ is a Hilbert space when equipped with this inner product.
 :::
 
 ::: {.solution}
-Write $dA=dx\,dy$ and $\|f\|_2=(\int_U|f|^2\,dA)^{1/2}$.
+Write $dA=dx\,dy$ and $\norm{f}_2=(\int_U\abs{f}^2\,dA)^{1/2}$.
 If $U$ is empty, the space consists of the unique empty
 function and is the zero Hilbert space. Assume $U\ne\varnothing$.
 
@@ -50,16 +50,16 @@ The displayed formula is an inner product on $A^2(U)$.
 ::: pf-proof
 
 Linear combinations remain holomorphic, and
-$|af+bg|^2\leq2|a|^2|f|^2+2|b|^2|g|^2$ proves their
+$\abs{af+bg}^2\leq2\abs{a}^2\abs{f}^2+2\abs{b}^2\abs{g}^2$ proves their
 square integrability. Thus $A^2(U)$ is a complex vector space.
 Cauchy–Schwarz gives
-$\int_U|f\overline g|\,dA\leq\|f\|_2\|g\|_2$, so the
+$\int_U\abs{f\overline g}\,dA\leq\norm{f}_2\norm{g}_2$, so the
 inner product is finite [@Fol13]. Linearity in the first
 variable and conjugate symmetry follow from the integral.
 
 If $f(a)\ne0$ at some $a\in U$, continuity gives a disk
-inside $U$ on which $|f|\geq|f(a)|/2>0$. Its positive
-area makes $\int_U|f|^2\,dA>0$. Hence zero norm forces
+inside $U$ on which $\abs{f}\geq\abs{f(a)}/2>0$. Its positive
+area makes $\int_U\abs{f}^2\,dA>0$. Hence zero norm forces
 the holomorphic function itself to be zero everywhere,
 not just almost everywhere. This proves positive definiteness.
 
@@ -77,13 +77,13 @@ Let $h$ be holomorphic on $U$, and suppose
 $\overline{D(a,r)}\subset U$. Cauchy's formula and
 Cauchy–Schwarz on each circle of radius $0<\rho<r$ give
 $$
-|h(a)|^2\leq\frac1{2\pi}\int_0^{2\pi}
-|h(a+\rho e^{it})|^2\,dt
+\abs{h(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}
+\abs{h(a+\rho e^{it})}^2\,dt
 $$
 [@SS03]. Multiply by $2\pi\rho$ and integrate from
 zero to $r$. Polar coordinates yield
 $$
-\pi r^2|h(a)|^2\leq\int_{D(a,r)}|h|^2\,dA.
+\pi r^2\abs{h(a)}^2\leq\int_{D(a,r)}\abs{h}^2\,dA.
 $$
 For a nonempty compact $K\subset U$, choose one $r>0$
 such that $\overline{D(a,r)}\subset U$ for every $a\in K$.
@@ -92,7 +92,7 @@ $U\ne\CC$, take less than the positive distance
 from $K$ to the closed complement, and otherwise take $r=1$.
 It follows that
 $$
-\sup_{a\in K}|h(a)|\leq\frac1{\sqrt\pi r}\|h\|_2.
+\sup_{a\in K}\abs{h(a)}\leq\frac1{\sqrt\pi r}\norm{h}_2.
 $$
 Apply this to differences of elements of $A^2(U)$.
 
@@ -113,16 +113,16 @@ Cauchy estimates show that convergence is uniform on each
 compact subset. The local uniform limit of holomorphic
 functions is holomorphic [@SS03]. Thus $f$ is holomorphic on $U$.
 
-The norms $\|f_n\|_2$ are bounded because the sequence
+The norms $\norm{f_n}_2$ are bounded because the sequence
 is Cauchy. Fatou's lemma gives
 $$
-\int_U|f|^2\,dA\leq\liminf_{n\to\infty}\|f_n\|_2^2<\infty,
+\int_U\abs{f}^2\,dA\leq\liminf_{n\to\infty}\norm{f_n}_2^2<\infty,
 $$
 so $f\in A^2(U)$ [@Fol13]. Given $\varepsilon>0$,
-choose $N$ such that $\|f_n-f_m\|_2<\varepsilon$ for
+choose $N$ such that $\norm{f_n-f_m}_2<\varepsilon$ for
 $n,m\geq N$. For fixed $n\geq N$, apply Fatou again:
 $$
-\|f_n-f\|_2^2\leq\liminf_{m\to\infty}\|f_n-f_m\|_2^2
+\norm{f_n-f}_2^2\leq\liminf_{m\to\infty}\norm{f_n-f_m}_2^2
 \leq\varepsilon^2.
 $$
 Therefore $f_n\to f$ in norm. The inner-product space

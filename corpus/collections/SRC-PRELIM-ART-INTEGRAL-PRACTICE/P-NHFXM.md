@@ -51,15 +51,15 @@ $$
 \int\frac{dx}{\sin x+\cos x}
 =\frac1{\sqrt2}\int \csc\left(x+\frac\pi4\right)\,dx.
 $$
-Using $\int\csc u\,du=\log|\tan(u/2)|+C$,
+Using $\int\csc u\,du=\log\abs{\tan(u/2)}+C$,
 $$
 \boxed{
 \int\frac{dx}{\sin x+\cos x}
-=\frac1{\sqrt2}\log\left|\tan\left(\frac x2+\frac\pi8\right)\right|+C.}
+=\frac1{\sqrt2}\log\abs{\tan\left(\frac x2+\frac\pi8\right)}+C.}
 $$
 Equivalently this is
 $$
--\frac1{\sqrt2}\log\left|\csc\left(x+\frac\pi4\right)+\cot\left(x+\frac\pi4\right)\right|+C.
+-\frac1{\sqrt2}\log\abs{\csc\left(x+\frac\pi4\right)+\cot\left(x+\frac\pi4\right)}+C.
 $$
 
 :::

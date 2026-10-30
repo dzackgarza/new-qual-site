@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be analytic on the upper half-plane $\{z:\operatorname{Im}z>0\}$. Suppose $|f(z)|<1$ throughout the domain and $f(i)=0$. Find the largest possible value of $|f(2i)|$.
+Let $f$ be analytic on the upper half-plane $\{z:\operatorname{Im}z>0\}$. Suppose $\abs{f(z)}<1$ throughout the domain and $f(i)=0$. Find the largest possible value of $\abs{f(2i)}$.
 :::
 
 ::: {.solution}
@@ -65,14 +65,14 @@ y>0,
 $$
 one has
 $$
-|z+i|^2-|z-i|^2
+\abs{z+i}^2-\abs{z-i}^2
 =
 4y
 >0,
 $$
 so
 $$
-|\phi(z)|<1.
+\abs{\phi(z)}<1.
 $$
 Its inverse is
 $$
@@ -115,7 +115,7 @@ $$
 $$
 maps $\DD$ holomorphically into the domain of $f$, and
 $$
-|f|<1
+\abs{f}<1
 $$
 there. Thus $g$ maps $\DD$ into itself. Since
 $$
@@ -138,7 +138,7 @@ $$
 
 Schwarz's lemma gives
 $$
-|g(w)|\le|w|
+\abs{g(w)}\le\abs{w}
 $$
 for every
 $$
@@ -184,7 +184,7 @@ $$
 Every admissible function $f$ satisfies
 $$
 \boxed{
-|f(2i)|
+\abs{f(2i)}
 \le
 \frac13}.
 $$
@@ -200,9 +200,9 @@ g(\phi(2i)).
 $$
 Using steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
-|f(2i)|
+\abs{f(2i)}
 \le
-|\phi(2i)|
+\abs{\phi(2i)}
 =
 \frac13.
 $$
@@ -232,7 +232,7 @@ f(i)=0.
 $$
 By step [](#s1-4){.pf-ref},
 $$
-|f(2i)|
+\abs{f(2i)}
 =
 \frac13.
 $$

@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 For which real numbers $\alpha,\beta$ does
 $$
-\|f\|_2\le\|f\|_{4/3}^{\alpha}\|f\|_4^{\beta}
+\norm{f}_2\le\norm{f}_{4/3}^{\alpha}\norm{f}_4^{\beta}
 $$
 hold for all measurable $f$ for which the right-hand side is finite?
 :::
@@ -51,11 +51,11 @@ $$
 $$
 Next take $f=\mathbf1_E$ for measurable sets $E$ of arbitrary finite positive measure $m(E)=m$. Then
 $$
-\|f\|_2=m^{1/2},
+\norm{f}_2=m^{1/2},
 \qquad
-\|f\|_{4/3}=m^{3/4},
+\norm{f}_{4/3}=m^{3/4},
 \qquad
-\|f\|_4=m^{1/4}.
+\norm{f}_4=m^{1/4}.
 $$
 Thus
 $$
@@ -83,13 +83,13 @@ Sufficiency.
 
 By Hölder's inequality with exponents $4/3$ and $4$,
 $$
-\int |f|^2
-=\int |f|\,|f|
-\le\left(\int|f|^{4/3}\right)^{3/4}\left(\int|f|^4\right)^{1/4}.
+\int \abs{f}^2
+=\int \abs{f}\,\abs{f}
+\le\left(\int\abs{f}^{4/3}\right)^{3/4}\left(\int\abs{f}^4\right)^{1/4}.
 $$
 Taking square roots gives
 $$
-\|f\|_2\le\|f\|_{4/3}^{1/2}\|f\|_4^{1/2}.
+\norm{f}_2\le\norm{f}_{4/3}^{1/2}\norm{f}_4^{1/2}.
 $$
 Thus the claimed pair is both necessary and sufficient.
 

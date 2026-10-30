@@ -30,7 +30,7 @@ ii) Prove that every convergent sequence is Cauchy.
 ::: {.pf-step #s1}
 A sequence $(a_n)$ is Cauchy if for every $\varepsilon>0$ there exists $N\in\NN$ such that
 $$
-m,n\ge N\implies |a_m-a_n|<\varepsilon.
+m,n\ge N\implies \abs{a_m-a_n}<\varepsilon.
 $$
 
 :::
@@ -43,7 +43,7 @@ Suppose $a_n\to L$ for some $L\in\RR$, and let $\varepsilon>0$.
 ::: {.pf-step #s3}
 There exists $N\in\NN$ such that
 $$
-n\ge N\implies |a_n-L|<\frac\varepsilon2.
+n\ge N\implies \abs{a_n-L}<\frac\varepsilon2.
 $$
 
 ::: pf-proof
@@ -53,13 +53,13 @@ This is the definition of convergence of $a_n$ to $L$, applied with $\varepsilon
 :::
 
 ::: {.pf-step #s4}
-If $m,n\ge N$, then $|a_m-a_n|<\varepsilon$.
+If $m,n\ge N$, then $\abs{a_m-a_n}<\varepsilon$.
 
 ::: pf-proof
 By the triangle inequality and step [](#s3){.pf-ref},
 $$
-|a_m-a_n|
-\le |a_m-L|+|a_n-L|
+\abs{a_m-a_n}
+\le \abs{a_m-L}+\abs{a_n-L}
 <\frac\varepsilon2+\frac\varepsilon2
 =\varepsilon.
 $$

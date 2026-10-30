@@ -72,7 +72,7 @@ Each $A_n$ injects into $A$ by inclusion. For a fixed $n$, if there were an inje
 
 For the starred Exercise 8, we show
 $$
-|\mathcal P(\ZZ_+)|=|\RR|.
+\cardinality{\mathcal P(\ZZ_+)}=\cardinality{\RR}.
 $$
 An injection $\mathcal P(\ZZ_+)\to\RR$ is given by the ternary expansion
 $$
@@ -90,6 +90,6 @@ $$
 $$
 Thus there are injections both ways, and Schroeder--Bernstein yields
 $$
-\boxed{|\mathcal P(\ZZ_+)|=|\RR|}.
+\boxed{\cardinality{\mathcal P(\ZZ_+)}=\cardinality{\RR}}.
 $$
 :::

@@ -43,7 +43,7 @@ $$
 
 Because $f$ has no roots on $S^1$,
 $$
-|a_j|\ne1
+\abs{a_j}\ne1
 $$
 for every $j$.
 
@@ -53,7 +53,7 @@ F:S^1\to S^1
 $$
 be the normalized map
 $$
-F(z)=\frac{f(z)}{|f(z)|}.
+F(z)=\frac{f(z)}{\abs{f(z)}}.
 $$
 
 ::: pf
@@ -65,9 +65,9 @@ $$
 \boxed{
 F(z)
 =
-\frac{c}{|c|}
+\frac{c}{\abs{c}}
 \prod_{j=1}^{d}
-\frac{z-a_j}{|z-a_j|}}.
+\frac{z-a_j}{\abs{z-a_j}}}.
 $$
 
 
@@ -75,9 +75,9 @@ $$
 
 Using multiplicativity of the complex modulus,
 $$
-|f(z)|
+\abs{f(z)}
 =
-|c|\prod_{j=1}^{d}|z-a_j|.
+\abs{c}\prod_{j=1}^{d}\abs{z-a_j}.
 $$
 Divide the factorization of $f$ by this expression.
 
@@ -104,11 +104,11 @@ z-ta=0,
 $$
 then
 $$
-|z|=t|a|\le|a|<1,
+\abs{z}=t\abs{a}\le\abs{a}<1,
 $$
 contradicting
 $$
-|z|=1.
+\abs{z}=1.
 $$
 
 :::
@@ -121,7 +121,7 @@ After normalization,
 $$
 \widetilde H(z,t)
 =
-\frac{z-ta}{|z-ta|}
+\frac{z-ta}{\abs{z-ta}}
 $$
 is a homotopy in $S^1$ from $g_a$ to the identity map $z\mapsto z$.
 
@@ -134,7 +134,7 @@ $$
 $$
 At $t=0$,
 $$
-\widetilde H(z,0)=\frac z{|z|}=z
+\widetilde H(z,0)=\frac z{\abs{z}}=z
 $$
 because $z\in S^1$. Step [](#s1-2){.pf-ref} guarantees the normalization is defined throughout.
 
@@ -150,7 +150,7 @@ $$
 $$
 when
 $$
-|a|<1.
+\abs{a}<1.
 $$
 
 
@@ -181,11 +181,11 @@ tz-a=0,
 $$
 then
 $$
-|a|=t|z|\le1,
+\abs{a}=t\abs{z}\le1,
 $$
 contradicting
 $$
-|a|>1.
+\abs{a}>1.
 $$
 
 :::
@@ -198,11 +198,11 @@ After normalization,
 $$
 \widetilde K(z,t)
 =
-\frac{tz-a}{|tz-a|}
+\frac{tz-a}{\abs{tz-a}}
 $$
 is a homotopy from $g_a$ to the constant map
 $$
-z\longmapsto -\frac a{|a|}.
+z\longmapsto -\frac a{\abs{a}}.
 $$
 
 
@@ -216,7 +216,7 @@ At $t=0$,
 $$
 \widetilde K(z,0)
 =
-\frac{-a}{|a|},
+\frac{-a}{\abs{a}},
 $$
 independent of $z$. Step [](#s1-5){.pf-ref} guarantees the denominator is never zero.
 
@@ -232,7 +232,7 @@ $$
 $$
 when
 $$
-|a|>1.
+\abs{a}>1.
 $$
 
 
@@ -294,7 +294,7 @@ $$
 
 The constant factor
 $$
-z\longmapsto\frac c{|c|}
+z\longmapsto\frac c{\abs{c}}
 $$
 has degree $0$.
 
@@ -329,11 +329,11 @@ Apply step [](#s1-8){.pf-ref} repeatedly to the product decomposition in step []
 
 Each root with
 $$
-|a_j|<1
+\abs{a_j}<1
 $$
 contributes $1$, and each root with
 $$
-|a_j|>1
+\abs{a_j}>1
 $$
 contributes $0$.
 
@@ -353,7 +353,7 @@ $$
 \boxed{
 \deg F
 =
-\#\{j:|a_j|<1\}},
+\#\{j:\abs{a_j}<1\}},
 $$
 where roots are counted with multiplicity.
 
@@ -383,7 +383,7 @@ equals the number of roots of $f$ inside the unit circle, counted with multiplic
 
 The displayed composite is exactly
 $$
-z\longmapsto\frac{f(z)}{|f(z)|}=F(z),
+z\longmapsto\frac{f(z)}{\abs{f(z)}}=F(z),
 $$
 whose degree was computed in step [](#s1-12){.pf-ref}.
 

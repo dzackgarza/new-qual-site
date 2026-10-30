@@ -24,17 +24,17 @@ Give an example of a (necessarily infinite) division ring which is NOT a field.
 :::
 
 ::: {.solution}
-Let $D$ be a finite division ring with center $Z$, a finite field of order $q\ge2$, and let $n=\dim_ZD$, so $|D|=q^n$.
+Let $D$ be a finite division ring with center $Z$, a finite field of order $q\ge2$, and let $n=\dim_ZD$, so $\cardinality{D}=q^n$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For $x\in D^\times$ noncentral, $|C_D(x)|=q^d$ with $d\mid n$ and $d<n$.
+For $x\in D^\times$ noncentral, $\cardinality{C_D(x)}=q^d$ with $d\mid n$ and $d<n$.
 
 ::: pf-proof
 
-$C_D(x)=\{y:yx=xy\}$ is a division subring containing $Z$, so $|C_D(x)|=q^d$ with $d=\dim_ZC_D(x)$.
+$C_D(x)=\{y:yx=xy\}$ is a division subring containing $Z$, so $\cardinality{C_D(x)}=q^d$ with $d=\dim_ZC_D(x)$.
 $D$ is a vector space over $C_D(x)$, so $q^n=(q^d)^e$ for some $e$, and $d\mid n$; $d<n$ because $x$ is not central.
 
 :::
@@ -47,7 +47,7 @@ $q-1=(q^n-1)-\sum_{i=1}^m\frac{q^n-1}{q^{d_i}-1}$ for proper divisors $d_i$ of $
 
 ::: pf-proof
 
-This is the class equation of $D^\times$: $|D^\times|=q^n-1$, $|Z(D^\times)|=|Z^\times|=q-1$, and the class of a noncentral $x_i$ has size $[D^\times:C_D(x_i)^\times]=\frac{q^n-1}{q^{d_i}-1}$ with $d_i$ as in step [](#s1){.pf-ref}.
+This is the class equation of $D^\times$: $\cardinality{D^\times}=q^n-1$, $\cardinality{Z(D^\times)}=\cardinality{Z^\times}=q-1$, and the class of a noncentral $x_i$ has size $[D^\times:C_D(x_i)^\times]=\frac{q^n-1}{q^{d_i}-1}$ with $d_i$ as in step [](#s1){.pf-ref}.
 
 :::
 
@@ -75,8 +75,8 @@ $n=1$, so $D=Z$ is a field.
 
 Suppose $n>1$.
 For a primitive $n$th root of unity $\zeta\neq1$, $\operatorname{Re}\zeta<1$, so
-$$|q-\zeta|^2=q^2-2q\operatorname{Re}\zeta+1>(q-1)^2 .$$
-Hence $|\Phi_n(q)|=\prod_\zeta|q-\zeta|>(q-1)^{\varphi(n)}\ge q-1$, contradicting step [](#s3){.pf-ref} since $q-1>0$.
+$$\abs{q-\zeta}^2=q^2-2q\operatorname{Re}\zeta+1>(q-1)^2 .$$
+Hence $\abs{\Phi_n(q)}=\prod_\zeta\abs{q-\zeta}>(q-1)^{\varphi(n)}\ge q-1$, contradicting step [](#s3){.pf-ref} since $q-1>0$.
 
 :::
 

@@ -66,8 +66,8 @@ $$
 $$
 For every fixed $t$, $\phi(\epsilon t)\to\phi(0)$. Also
 $$
-\left|\frac{\phi(\epsilon t)}{1+t^2}\right|
-\leq\frac{\|\phi\|_\infty}{1+t^2},
+\abs{\frac{\phi(\epsilon t)}{1+t^2}}
+\leq\frac{\norm{\phi}_\infty}{1+t^2},
 $$
 and the right side is integrable. Dominated convergence therefore gives
 $$

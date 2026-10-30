@@ -30,11 +30,11 @@ Suppose $(f_n)$ is a sequence of continuous functions on $[0,1]$ converging poin
 ::: {.solution}
 No. Define
 $$
-f_n(x)=\max\{1-n|x-1/n|,0\}.
+f_n(x)=\max\{1-n\abs{x-1/n},0\}.
 $$
 Each $f_n$ is continuous on $[0,1]$, and
 $$
-\|f_n\|_\infty=f_n(1/n)=1.
+\norm{f_n}_\infty=f_n(1/n)=1.
 $$
 Hence $(f_n)$ cannot converge uniformly to $0$.
 

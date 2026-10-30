@@ -20,7 +20,7 @@ Prove that for every $\lambda>1$, the equation
 $$
 ze^{\lambda-z}=1
 $$
-has exactly one root in the disk $|z|<1$, and that this root is real.
+has exactly one root in the disk $\abs{z}<1$, and that this root is real.
 :::
 
 ::: {.solution}

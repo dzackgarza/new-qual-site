@@ -72,7 +72,7 @@ Show uniform convergence on compact subsets $K \subset \DD$:
 ::: pf-proof
 
 ::: pf-step
-Let $K \subset \DD$ be a compact subset, and set $r = \sup_{z \in K} |z| < 1$.
+Let $K \subset \DD$ be a compact subset, and set $r = \sup_{z \in K} \abs{z} < 1$.
 
 ::: pf-proof
 compact subsets of the open unit disk are bounded away from the boundary.
@@ -93,19 +93,19 @@ algebraic identity.
 :::
 
 ::: {.pf-step #s2-3}
-Bound $|u_k(z)|$ on $K$: for $z \in K$,
+Bound $\abs{u_k(z)}$ on $K$: for $z \in K$,
 $$
-|u_k(z)| \le \frac{(1 - a_k)(1 + |z|)}{1 - a_k |z|} \le \frac{1 - a_k}{1 - r} (1 + r) = \left(\frac{1+r}{1-r}\right) \frac{1}{k^2}.
+\abs{u_k(z)} \le \frac{(1 - a_k)(1 + \abs{z})}{1 - a_k \abs{z}} \le \frac{1 - a_k}{1 - r} (1 + r) = \left(\frac{1+r}{1-r}\right) \frac{1}{k^2}.
 $$
 
 ::: pf-proof
-$|1 - a_k z| \ge 1 - a_k |z| \ge 1 - r$ and $|1+z| \le 1+|z| \le 1+r$.
+$\abs{1 - a_k z} \ge 1 - a_k \abs{z} \ge 1 - r$ and $\abs{1+z} \le 1+\abs{z} \le 1+r$.
 :::
 
 :::
 
 ::: pf-step
-Since $\sum_{k=2}^\infty \frac{1}{k^2} < \infty$, the series $\sum_{k=2}^\infty |u_k(z)|$ converges uniformly on $K$ by the Weierstrass $M$-test.
+Since $\sum_{k=2}^\infty \frac{1}{k^2} < \infty$, the series $\sum_{k=2}^\infty \abs{u_k(z)}$ converges uniformly on $K$ by the Weierstrass $M$-test.
 
 ::: pf-proof
 step [](#s2-3){.pf-ref} and Weierstrass $M$-test.
@@ -117,7 +117,7 @@ step [](#s2-3){.pf-ref} and Weierstrass $M$-test.
 By the theorem on infinite products of analytic functions, the partial products $f_n(z) = -z \prod_{k=2}^n \frac{a_k - z}{1 - a_k z}$ converge uniformly on compact subsets of $\DD$ to an analytic function $f: \DD \to \CC$.
 
 ::: pf-proof
-uniform convergence of $\sum |u_k|$ implies uniform convergence of $\prod (1 - u_k)$.
+uniform convergence of $\sum \abs{u_k}$ implies uniform convergence of $\prod (1 - u_k)$.
 :::
 
 :::
@@ -132,7 +132,7 @@ Show that $f(\DD) \subset \DD$:
 ::: pf-proof
 
 ::: pf-step
-Each Blaschke factor $B_k(z) = \frac{a_k - z}{1 - a_k z}$ is a conformal automorphism of $\DD$, so $|B_k(z)| < 1$ for all $z \in \DD$.
+Each Blaschke factor $B_k(z) = \frac{a_k - z}{1 - a_k z}$ is a conformal automorphism of $\DD$, so $\abs{B_k(z)} < 1$ for all $z \in \DD$.
 
 ::: pf-proof
 properties of Möbius transformations of the disk.
@@ -141,7 +141,7 @@ properties of Möbius transformations of the disk.
 :::
 
 ::: pf-step
-Thus $|f_n(z)| \le 1$ for all $z \in \DD$ and all $n$, so $|f(z)| \le 1$ for all $z \in \DD$.
+Thus $\abs{f_n(z)} \le 1$ for all $z \in \DD$ and all $n$, so $\abs{f(z)} \le 1$ for all $z \in \DD$.
 
 ::: pf-proof
 limit of bounded functions.
@@ -159,7 +159,7 @@ $f(0) = 0 \neq 1$.
 :::
 
 ::: pf-step
-By the Maximum Modulus Principle, $|f(z)| < 1$ for all $z \in \DD$, so $f: \DD \to \DD$.
+By the Maximum Modulus Principle, $\abs{f(z)} < 1$ for all $z \in \DD$, so $f: \DD \to \DD$.
 
 ::: pf-proof
 open mapping theorem / maximum modulus principle for non-constant analytic functions.
@@ -277,7 +277,7 @@ $\DD \subset V$ and step [](#s4){.pf-ref}.
 However, the infinite Blaschke product $f(z)$ is not identically zero (it only vanishes at the isolated set $\{a_k\}$).
 
 ::: pf-proof
-an infinite Blaschke product with convergent $\sum (1 - |a_k|)$ is non-trivial.
+an infinite Blaschke product with convergent $\sum (1 - \abs{a_k})$ is non-trivial.
 :::
 
 :::

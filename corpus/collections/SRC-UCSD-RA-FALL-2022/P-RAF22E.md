@@ -28,7 +28,7 @@ audit:
 
 ::: {.problem}
 Let $H$ be a Hilbert space, let $T : H \to H$ be a bounded linear operator, and let $T^* : H \to H$ denote the adjoint of $T$.
-Recall that a linear map $S : H \to H$ is bounded below if there is a constant $c > 0$ such that $\|Sx\| \geq c\|x\|$ for all $x \in H$.
+Recall that a linear map $S : H \to H$ is bounded below if there is a constant $c > 0$ such that $\norm{Sx} \geq c\norm{x}$ for all $x \in H$.
 
 Prove that $T$ is invertible (with bounded inverse) if and only if both $T$ and $T^*$ are bounded below.
 :::
@@ -45,11 +45,11 @@ Invertibility implies both operators are bounded below.
 
 Suppose $T$ is invertible with bounded inverse. Then for every $x\in H$,
 $$
-\|x\|=\|T^{-1}Tx\|\le \|T^{-1}\|\,\|Tx\|,
+\norm{x}=\norm{T^{-1}Tx}\le \norm{T^{-1}}\,\norm{Tx},
 $$
 so
 $$
-\|Tx\|\ge \|T^{-1}\|^{-1}\|x\|.
+\norm{Tx}\ge \norm{T^{-1}}^{-1}\norm{x}.
 $$
 Thus $T$ is bounded below.
 
@@ -71,13 +71,13 @@ A bounded-below operator is injective and has closed range.
 
 Assume now that
 $$
-\|Tx\|\ge c\|x\|
+\norm{Tx}\ge c\norm{x}
 $$
 for some $c>0$. Then $Tx=0$ implies $x=0$, so $T$ is injective.
 
 Let $(Tx_n)$ converge in $H$. Then
 $$
-\|x_n-x_m\|\le c^{-1}\|Tx_n-Tx_m\|,
+\norm{x_n-x_m}\le c^{-1}\norm{Tx_n-Tx_m},
 $$
 so $(x_n)$ is Cauchy. Since $H$ is complete, $x_n\to x$ for some $x\in H$. Continuity of $T$ gives
 $$
@@ -129,11 +129,11 @@ If $T$ and $T^*$ are bounded below, then $T^{-1}$ is bounded.
 
 Since $T$ is bijective, define $T^{-1}:H\to H$. If $y=Tx$, then
 $$
-\|T^{-1}y\|=\|x\|\le c^{-1}\|Tx\|=c^{-1}\|y\|.
+\norm{T^{-1}y}=\norm{x}\le c^{-1}\norm{Tx}=c^{-1}\norm{y}.
 $$
 Hence
 $$
-\|T^{-1}\|\le c^{-1}.
+\norm{T^{-1}}\le c^{-1}.
 $$
 Therefore $T$ is invertible with bounded inverse.
 

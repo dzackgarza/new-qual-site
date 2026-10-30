@@ -32,7 +32,7 @@ Prove that a group of order 120 is not simple.
 
 ::: pf-step
 
-Suppose for contradiction that $G$ is simple and $|G|=120$.
+Suppose for contradiction that $G$ is simple and $\cardinality{G}=120$.
 
 ::: pf-proof
 
@@ -97,7 +97,7 @@ Thus, after identifying $G$ with its image, $G$ is a subgroup of $A_6$ of index 
 
 ::: pf-proof
 
-Since $|A_6|=6!/2=360$ and $|G|=120$,
+Since $\cardinality{A_6}=6!/2=360$ and $\cardinality{G}=120$,
 $$
 [A_6:G]=3.
 $$

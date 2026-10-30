@@ -148,7 +148,7 @@ for every $t\in(-\varepsilon,\varepsilon)$.
 
 ::: pf-proof
 
-The map $\phi$ is continuously differentiable by step [](#s1-2){.pf-ref}, so $\gamma$ is continuously differentiable. By step [](#s1-3){.pf-ref}, $c_0+t\in I$ for every $|t|<\varepsilon$. Step [](#s1-2){.pf-ref} therefore gives
+The map $\phi$ is continuously differentiable by step [](#s1-2){.pf-ref}, so $\gamma$ is continuously differentiable. By step [](#s1-3){.pf-ref}, $c_0+t\in I$ for every $\abs{t}<\varepsilon$. Step [](#s1-2){.pf-ref} therefore gives
 $$
 F(\gamma(t))
 =

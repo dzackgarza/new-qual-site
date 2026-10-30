@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OFKQJ
 kind: problem
-title: Uniform convergence of $\sum|a_n|$ on compacta implies that of $\sum|a_n'|$
+title: Uniform convergence of $\sum\abs{a_n}$ on compacta implies that of $\sum\abs{a_n'}$
 classification:
   areas:
   - complex-analysis
@@ -26,7 +26,7 @@ Let $K\subset D$ be compact. A series of nonnegative functions converges uniform
 ::: pf
 
 ::: {.pf-step #thicken}
-There is $\delta>0$ such that $K'\definedas\theset{w\suchthat \operatorname{dist}(w,K)\le\delta}$ is a compact subset of $D$.
+There is $\delta>0$ such that $K'\coloneqq\theset{w\suchthat \operatorname{dist}(w,K)\le\delta}$ is a compact subset of $D$.
 
 ::: pf-proof
 If $D=\CC$ take $\delta=1$. Otherwise $\operatorname{dist}(K,\CC\setminus D)>0$ because $K$ is compact and $\CC\setminus D$ is closed and disjoint from $K$; take $\delta$ half of it. Then $K'$ is closed and bounded.
@@ -47,7 +47,7 @@ The closed disk of radius $\delta$ about $z$ lies in $K'\subset D$ by step [](#t
 $\sum_n\abs{a_n'}$ converges uniformly on $K$.
 
 ::: pf-proof
-Let $T_N(w)\definedas\sum_{n\ge N}\abs{a_n(w)}$. By hypothesis $\varepsilon_N\definedas\sup_{K'}T_N\to0$. For $z\in K$, summing step [](#pointwise){.pf-ref} over $n\ge N$ and exchanging sum and integral for nonnegative terms (monotone convergence),
+Let $T_N(w)\coloneqq\sum_{n\ge N}\abs{a_n(w)}$. By hypothesis $\varepsilon_N\coloneqq\sup_{K'}T_N\to0$. For $z\in K$, summing step [](#pointwise){.pf-ref} over $n\ge N$ and exchanging sum and integral for nonnegative terms (monotone convergence),
 $$
 \sum_{n\ge N}\abs{a_n'(z)}\le\frac{1}{2\pi\delta}\int_0^{2\pi}T_N(z+\delta e^{it})\,dt\le\frac{\varepsilon_N}{\delta}.
 $$

@@ -96,9 +96,9 @@ $$
 \begin{aligned}
 \abs{x_{n+1}-\alpha}
 &=
-\left\lvert
+\abs{
 \frac{1}{1+x_n}-\frac{1}{1+\alpha}
-\right\rvert\\
+}\\
 &=
 \frac{\abs{x_n-\alpha}}{(1+x_n)(1+\alpha)}.
 \end{aligned}

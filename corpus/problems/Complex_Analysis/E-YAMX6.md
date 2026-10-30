@@ -54,7 +54,7 @@ Both tend to $0$ because $0<\alpha<1$.
 $\operatorname{Res}_{z=-1}f = -\alpha e^{i\pi\alpha}$.
 
 ::: pf-proof
-$z=-1$ is a double pole, so the residue is $\frac{d}{dz}z^\alpha\big|_{z=-1} = \alpha e^{(\alpha-1)\log(-1)} = \alpha e^{i\pi(\alpha-1)}$, using $\arg(-1)=\pi$ on this branch.
+$z=-1$ is a double pole, so the residue is $\frac{d}{dz}z^\alpha\evalfrom_{z=-1} = \alpha e^{(\alpha-1)\log(-1)} = \alpha e^{i\pi(\alpha-1)}$, using $\arg(-1)=\pi$ on this branch.
 :::
 
 :::

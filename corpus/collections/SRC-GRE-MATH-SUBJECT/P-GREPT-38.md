@@ -95,13 +95,13 @@ $$
 By the triangle inequality and condition III,
 $$
 \begin{aligned}
-|f(y)-f(x)|
-&\le\sum_{j=1}^n|f(x_j)-f(x_{j-1})|\\
+\abs{f(y)-f(x)}
+&\le\sum_{j=1}^n\abs{f(x_j)-f(x_{j-1})}\\
 &\le n\left(\frac{y-x}{n}\right)^2
 =\frac{(y-x)^2}{n}.
 \end{aligned}
 $$
-Letting $n\to\infty$ gives $|f(y)-f(x)|=0$. Hence $f(y)=f(x)$ for every
+Letting $n\to\infty$ gives $\abs{f(y)-f(x)}=0$. Hence $f(y)=f(x)$ for every
 $x,y\in[a,b]$, so $f$ is constant.
 
 :::

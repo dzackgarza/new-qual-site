@@ -18,13 +18,13 @@ Let $b \in \DD$ and set $f(z) = z^7 - 2z^5 + b$.
 (a) How many roots (counting multiplicity) does $f$ have in $\DD$?
 How many simple roots does $f$ have in $\DD$?
 
-(b) How many simple roots does $f$ have in $\{1 \leq |z| < 2\}$?
+(b) How many simple roots does $f$ have in $\{1 \leq \abs{z} < 2\}$?
 :::
 
 ::: {.solution}
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|z^7+b|\le 1+|b|<2=|-2z^5|.
+\abs{z^7+b}\le 1+\abs{b}<2=\abs{-2z^5}.
 $$
 By Rouché's theorem, $f$ and $-2z^5$ have the same number of zeros in
 $\DD$, namely $5$, counted with multiplicity.
@@ -36,10 +36,10 @@ $$
 the only critical points are $0$ and $\pm\sqrt{10/7}$. If $b\ne0$, then
 $f(0)=b\ne0$. At $z=\pm\sqrt{10/7}$, the condition $f(z)=0$ would force
 $$
-|b|=\left|z^5(2-z^2)\right|
+\abs{b}=\abs{z^5(2-z^2)}
 =\frac47\left(\frac{10}{7}\right)^{5/2}>1,
 $$
-contrary to $|b|<1$. Thus for $b\ne0$ all five zeros in $\DD$ are
+contrary to $\abs{b}<1$. Thus for $b\ne0$ all five zeros in $\DD$ are
 simple. If $b=0$, then
 $$
 f(z)=z^5(z^2-2),
@@ -47,12 +47,12 @@ $$
 so the only zero in $\DD$ is $0$, with multiplicity $5$, and hence
 there are no simple zeros in $\DD$.
 
-On $|z|=2$,
+On $\abs{z}=2$,
 $$
-|-2z^5+b|\le 64+|b|<65<128=|z^7|.
+\abs{-2z^5+b}\le 64+\abs{b}<65<128=\abs{z^7}.
 $$
-So Rouché gives seven zeros in $|z|<2$, counted with multiplicity. Since five
-lie in $|z|<1$, exactly two lie in $1\le |z|<2$. The critical-point argument
+So Rouché gives seven zeros in $\abs{z}<2$, counted with multiplicity. Since five
+lie in $\abs{z}<1$, exactly two lie in $1\le \abs{z}<2$. The critical-point argument
 above shows that these are simple (also when $b=0$, when they are
 $\pm\sqrt2$). Therefore there are exactly two simple zeros in the annulus.
 :::

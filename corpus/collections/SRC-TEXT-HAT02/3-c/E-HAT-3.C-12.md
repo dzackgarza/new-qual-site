@@ -39,7 +39,7 @@ one has
 $$
 H^*(L;\ZZ_p)\cong
 \Lambda(\alpha)\otimes\ZZ_p[\beta],
-\qquad |\alpha|=1,\ |\beta|=2,
+\qquad \gradeddegree{\alpha}=1,\ \gradeddegree{\beta}=2,
 $$
 with $\beta$ the Bockstein of $\alpha$.
 
@@ -76,5 +76,5 @@ $$
 \boxed{H_*(L;\ZZ_p)
 \cong\Lambda_{\ZZ_p}(x)\otimes\Gamma_{\ZZ_p}(y),}
 $$
-with $|x|=1$, $|y_n|=2n$, and the divided-power multiplication displayed above.
+with $\gradeddegree{x}=1$, $\gradeddegree{y_n}=2n$, and the divided-power multiplication displayed above.
 :::

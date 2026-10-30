@@ -50,9 +50,9 @@ Ax_0-b.
 $$
 Therefore
 $$
-\|A(x_0+z)-b\|
+\norm{A(x_0+z)-b}
 =
-\|Ax_0-b\|.
+\norm{Ax_0-b}.
 $$
 Because $x_0$ is a minimizer, $x_0+z$ attains the same minimum value and belongs to $M$.
 
@@ -95,9 +95,9 @@ The nearest point in a linear subspace of Euclidean space is unique.
 
 Indeed, if two distinct points $u,v$ in the subspace both had minimal distance $d$ to $b$, then their midpoint would also lie in the subspace, and the parallelogram identity would give
 $$
-\left\|b-\frac{u+v}{2}\right\|^2
+\norm{b-\frac{u+v}{2}}^2
 =
-d^2-\frac14\|u-v\|^2
+d^2-\frac14\norm{u-v}^2
 <
 d^2,
 $$

@@ -22,14 +22,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite cyclic group, and let $r$ divide $|G|$.
+Let $G$ be a finite cyclic group, and let $r$ divide $\cardinality{G}$.
 How many subgroups of order $r$ does $G$ have?
 :::
 
 ::: {.solution}
 Exactly one.
 
-Write $G=\langle g\rangle$ with $|G|=n$, and suppose $r\mid n$.
+Write $G=\langle g\rangle$ with $\cardinality{G}=n$, and suppose $r\mid n$.
 
 ::: pf
 
@@ -45,11 +45,11 @@ has order $r$.
 
 In a cyclic group of order $n$,
 $$
-|g^d|=\frac{n}{\gcd(n,d)}.
+\elementorder{g^d}=\frac{n}{\gcd(n,d)}.
 $$
 For $d=n/r$, this gives
 $$
-\left|g^{n/r}\right|=\frac{n}{n/r}=r.
+\elementorder{g^{n/r}}=\frac{n}{n/r}=r.
 $$
 
 :::
@@ -65,7 +65,7 @@ Every subgroup of order $r$ equals $H$.
 Every subgroup of a cyclic group is cyclic. Let $K\le G$ have order $r$.
 Then $K=\langle g^d\rangle$ for some divisor $d$ of $n$, and
 $$
-|K|=\frac nd=r.
+\cardinality{K}=\frac nd=r.
 $$
 Hence $d=n/r$, so
 $$

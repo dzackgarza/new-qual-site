@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH7-36
 kind: problem
-title: Cauchy integral of $(3z^2+z-4)/(z-3)$ over $|z|=5$
+title: Cauchy integral of $(3z^2+z-4)/(z-3)$ over $\abs{z}=5$
 classification:
   areas: [complex-analysis]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $C$ be the counterclockwise-oriented circle $|z| = 5$. If $h(a) = \int_C \frac{3z^2 + z - 4}{z - a}$, what is $h(3)$?
+Let $C$ be the counterclockwise-oriented circle $\abs{z} = 5$. If $h(a) = \int_C \frac{3z^2 + z - 4}{z - a}$, what is $h(3)$?
 
 (A) $2\pi i$
 (B) $16\pi i$
@@ -42,7 +42,7 @@ The point $a=3$ lies inside $C$, and $f$ is holomorphic on and inside $C$.
 
 ::: pf-proof
 
-The contour is the circle $|z|=5$, so $|3|<5$. The function $f$ is a polynomial, hence entire.
+The contour is the circle $\abs{z}=5$, so $\abs{3}<5$. The function $f$ is a polynomial, hence entire.
 
 :::
 

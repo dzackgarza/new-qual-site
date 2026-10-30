@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $G$ is a finite group and $p$ is a prime divisor of $|G|$. Let
+Suppose $G$ is a finite group and $p$ is a prime divisor of $\cardinality{G}$. Let
 $\operatorname{Syl}_p(G)$ denote the set of all Sylow $p$-subgroups of $G$, and
 $$
 O_p(G) := \bigcap_{P \in \operatorname{Syl}_p(G)} P.
@@ -34,13 +34,13 @@ $$
 (b) Suppose $H$ is a subgroup of $G$. Prove that there exists a function
 $f : \operatorname{Syl}_p(H) \to \operatorname{Syl}_p(G)$ such that $f(P) \cap H = P$.
 
-(c) Prove that if $|\operatorname{Syl}_p(H)| = |\operatorname{Syl}_p(G)|$, then
+(c) Prove that if $\cardinality{\operatorname{Syl}_p(H)} = \cardinality{\operatorname{Syl}_p(G)}$, then
 $O_p(H) = O_p(G) \cap H$.
 
 Hint: Show that the function $f$ given in the previous part is a bijection.
 
 (d) Prove that if $O_p(G) = 1$ and $\bar{P}$ is a non-trivial $p$-subgroup of $G$, then
-$|\operatorname{Syl}_p(N_G(\bar{P}))| < |\operatorname{Syl}_p(G)|$.
+$\cardinality{\operatorname{Syl}_p(N_G(\bar{P}))} < \cardinality{\operatorname{Syl}_p(G)}$.
 :::
 
 ::: {.solution}
@@ -76,7 +76,7 @@ Every normal $p$-subgroup $N\trianglelefteq G$ is contained in $O_p(G)$.
 Fix $P\in\operatorname{Syl}_p(G)$. Since $N\trianglelefteq G$, the product $NP$ is
 a subgroup of $G$. Both $N$ and $P$ are $p$-groups, so
 $$
-|NP|=\frac{|N||P|}{|N\cap P|}
+\cardinality{NP}=\frac{\cardinality{N}\cardinality{P}}{\cardinality{N\cap P}}
 $$
 is a power of $p$. By maximality of the Sylow subgroup $P$, one has $NP=P$, hence
 $N\le P$. Since this holds for every Sylow $p$-subgroup $P$,
@@ -143,7 +143,7 @@ Hence $P_1=P_2$.
 
 ::: pf-step
 
-If $|\operatorname{Syl}_p(H)|=|\operatorname{Syl}_p(G)|$, then $f$ is
+If $\cardinality{\operatorname{Syl}_p(H)}=\cardinality{\operatorname{Syl}_p(G)}$, then $f$ is
 bijective and
 $$
 O_p(H)=O_p(G)\cap H.
@@ -190,7 +190,7 @@ $$
 
 If $O_p(G)=1$, then
 $$
-|\operatorname{Syl}_p(N_G(\bar P))|<|\operatorname{Syl}_p(G)|.
+\cardinality{\operatorname{Syl}_p(N_G(\bar P))}<\cardinality{\operatorname{Syl}_p(G)}.
 $$
 
 ::: pf-proof
@@ -199,7 +199,7 @@ Part (b) gives an injection
 $$
 \operatorname{Syl}_p(H)\hookrightarrow\operatorname{Syl}_p(G),
 $$
-so $|\operatorname{Syl}_p(H)|\le |\operatorname{Syl}_p(G)|$. If equality held, part
+so $\cardinality{\operatorname{Syl}_p(H)}\le \cardinality{\operatorname{Syl}_p(G)}$. If equality held, part
 (c) would imply
 $$
 O_p(H)=O_p(G)\cap H=1,

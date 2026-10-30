@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS84-7
 kind: problem
-title: Roots of $z^7-4z^3-11$ in the annulus $1<|z|<2$
+title: Roots of $z^7-4z^3-11$ in the annulus $1<\abs{z}<2$
 classification:
   areas: [prelim]
   topics: []
@@ -28,9 +28,9 @@ z^7-4z^3-11=0
 $$
 that lie between the circles
 $$
-|z|=1
+\abs{z}=1
 \qquad\text{and}\qquad
-|z|=2.
+\abs{z}=2.
 $$
 :::
 

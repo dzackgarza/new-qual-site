@@ -35,7 +35,7 @@ Let $\phi$ be the Euler function.
 
 ::: pf-proof
 
-Let $S = \{k \in \{1, \ldots, n\} : \gcd(k, n) = 1\}$, so $|S| = \phi(n)$. For $k\in S$, $\gcd(n - k, n) = \gcd(k, n) = 1$, so the involution $k \mapsto n - k$ maps $S$ to itself; here $k=n$ is not in $S$ because $\gcd(n,n)=n>1$. A fixed point would satisfy $n=2k$ and $\gcd(n/2,n)=n/2=1$, that is, $n=2$. Since $n>2$, the involution has no fixed points, so it partitions $S$ into two-element sets $\{k,n-k\}$ and $|S|$ is even.
+Let $S = \{k \in \{1, \ldots, n\} : \gcd(k, n) = 1\}$, so $\cardinality{S} = \phi(n)$. For $k\in S$, $\gcd(n - k, n) = \gcd(k, n) = 1$, so the involution $k \mapsto n - k$ maps $S$ to itself; here $k=n$ is not in $S$ because $\gcd(n,n)=n>1$. A fixed point would satisfy $n=2k$ and $\gcd(n/2,n)=n/2=1$, that is, $n=2$. Since $n>2$, the involution has no fixed points, so it partitions $S$ into two-element sets $\{k,n-k\}$ and $\cardinality{S}$ is even.
 
 :::
 

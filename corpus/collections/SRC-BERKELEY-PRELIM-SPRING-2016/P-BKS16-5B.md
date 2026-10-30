@@ -28,7 +28,7 @@ Let
 $$
 f(z)=\sum f_n z^n\qquad\text{and}\qquad g(z)=\sum g_n z^n
 $$
-define holomorphic functions on a neighborhood of the closed unit disk $D=\{z:|z|\le 1\}$.
+define holomorphic functions on a neighborhood of the closed unit disk $D=\{z:\abs{z}\le 1\}$.
 Prove that
 $$
 h(z)=\sum f_n g_n z^n
@@ -42,16 +42,16 @@ also defines a holomorphic function on a neighborhood of $D$.
 
 ::: {.pf-step #s1-1}
 
-There exists a number $\rho>1$ such that both power series for $f$ and $g$ converge on the disk $|z|<\rho$.
+There exists a number $\rho>1$ such that both power series for $f$ and $g$ converge on the disk $\abs{z}<\rho$.
 
 
 ::: pf-proof
 
 By hypothesis, both functions are holomorphic on an open neighborhood of the compact set
 $$
-D=\{z:|z|\leq1\}.
+D=\{z:\abs{z}\leq1\}.
 $$
-Hence there is some $R>1$ such that the closed disk $|z|\leq R$ is still contained in that neighborhood. The power series centered at $0$ therefore have radii of convergence at least $R$. Choose any $\rho$ with
+Hence there is some $R>1$ such that the closed disk $\abs{z}\leq R$ is still contained in that neighborhood. The power series centered at $0$ therefore have radii of convergence at least $R$. Choose any $\rho$ with
 $$
 1<\rho<R.
 $$
@@ -90,22 +90,22 @@ The series
 $$
 \sum_{n=0}^\infty f_ng_nz^n
 $$
-converges absolutely for every $|z|<\rho^2$.
+converges absolutely for every $\abs{z}<\rho^2$.
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref}, the sequences $(f_n\rho^n)$ and $(g_n\rho^n)$ are bounded. Choose $M,N>0$ such that
 $$
-|f_n|\rho^n\leq M,
+\abs{f_n}\rho^n\leq M,
 \qquad
-|g_n|\rho^n\leq N
+\abs{g_n}\rho^n\leq N
 $$
-for every $n$. Then, for $|z|<\rho^2$,
+for every $n$. Then, for $\abs{z}<\rho^2$,
 $$
-|f_ng_nz^n|
+\abs{f_ng_nz^n}
 \leq
-MN\left(\frac{|z|}{\rho^2}\right)^n.
+MN\left(\frac{\abs{z}}{\rho^2}\right)^n.
 $$
 The geometric series on the right converges, so the comparison test gives absolute convergence.
 
@@ -120,7 +120,7 @@ The function $h$ is holomorphic on a neighborhood of $D$.
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, the power series for $h$ has radius of convergence at least $\rho^2$. Since $\rho^2>1$, the disk $|z|<\rho^2$ is an open neighborhood of $D$, and every power series is holomorphic on the interior of its disk of convergence.
+By step [](#s1-3){.pf-ref}, the power series for $h$ has radius of convergence at least $\rho^2$. Since $\rho^2>1$, the disk $\abs{z}<\rho^2$ is an open neighborhood of $D$, and every power series is holomorphic on the interior of its disk of convergence.
 
 :::
 

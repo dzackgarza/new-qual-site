@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-10-02
-  note: Independently reviewed the supplied Berkeley Spring 2017 solution. Its displayed example uses $\log_2(x)$ for all $x\ne0$; the solution below uses $\log_2|x|$ so the example is defined on all of $\RR$.
+  note: Independently reviewed the supplied Berkeley Spring 2017 solution. Its displayed example uses $\log_2(x)$ for all $x\ne0$; the solution below uses $\log_2\abs{x}$ so the example is defined on all of $\RR$.
 - event: solution-written
   by: chatgpt
   date: 2026-10-02
@@ -94,7 +94,7 @@ $$
 f(x)
 =
 \begin{cases}
-x\sin\!\bigl(2\pi\log_2|x|\bigr),&x\ne0,\\
+x\sin\!\bigl(2\pi\log_2\abs{x}\bigr),&x\ne0,\\
 0,&x=0.
 \end{cases}
 $$
@@ -106,14 +106,14 @@ For $x\ne0$,
 $$
 \begin{aligned}
 f(2x)
-&=2x\sin\!\bigl(2\pi\log_2|2x|\bigr)\\
-&=2x\sin\!\bigl(2\pi(1+\log_2|x|)\bigr)\\
+&=2x\sin\!\bigl(2\pi\log_2\abs{2x}\bigr)\\
+&=2x\sin\!\bigl(2\pi(1+\log_2\abs{x})\bigr)\\
 &=2f(x).
 \end{aligned}
 $$
 The same identity holds at $x=0$. The function is continuous away from $0$, and
 $$
-|f(x)|\leq|x|
+\abs{f(x)}\leq\abs{x}
 $$
 shows that $f(x)\to0=f(0)$ as $x\to0$, so it is continuous everywhere.
 
@@ -141,5 +141,5 @@ Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} supplies th
 :::
 
 ::: {.remark}
-The vendored source solution writes $xg(\log_2 x)$ for $x\ne0$. Since the problem asks for a function on all of $\RR$, replacing $\log_2x$ by $\log_2|x|$ gives the intended construction on negative inputs as well.
+The vendored source solution writes $xg(\log_2 x)$ for $x\ne0$. Since the problem asks for a function on all of $\RR$, replacing $\log_2x$ by $\log_2\abs{x}$ gives the intended construction on negative inputs as well.
 :::

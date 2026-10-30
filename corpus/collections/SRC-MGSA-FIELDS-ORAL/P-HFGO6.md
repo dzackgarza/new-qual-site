@@ -84,7 +84,7 @@ $$
 Artin's fixed-field theorem says that if a finite group $G$ acts faithfully by
 automorphisms on a field $K$, then
 $$
-[K:K^G]=|G|
+[K:K^G]=\cardinality{G}
 $$
 and $K/K^G$ is Galois with Galois group exactly $G$.
 Applying this to the action in step [](#s1){.pf-ref} gives

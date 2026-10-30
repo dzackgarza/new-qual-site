@@ -45,9 +45,9 @@ The ring $\ZZ$ is Euclidean.
 
 ::: pf-proof
 
-Use the Euclidean function $d(b)=|b|$ for $b\ne0$. For integers
+Use the Euclidean function $d(b)=\abs{b}$ for $b\ne0$. For integers
 $a,b$ with $b\ne0$, integer division gives $a=qb+r$ with
-$0\leq r<|b|$. Thus $r=0$ or $d(r)<d(b)$, as required.
+$0\leq r<\abs{b}$. Thus $r=0$ or $d(r)<d(b)$, as required.
 
 :::
 

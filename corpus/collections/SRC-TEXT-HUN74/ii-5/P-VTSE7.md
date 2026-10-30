@@ -32,7 +32,7 @@ Show that if every Sylow $p$-subgroup of a finite group $G$ is normal for every 
 ::: {.solution}
 Let
 $$
-|G|=p_1^{a_1}\cdots p_r^{a_r},
+\cardinality{G}=p_1^{a_1}\cdots p_r^{a_r},
 $$
 and let $P_i$ be the Sylow $p_i$-subgroup. By hypothesis each $P_i$ is normal.
 
@@ -44,9 +44,9 @@ If $i\ne j$, then $P_i\cap P_j=\{e\}$.
 
 ::: pf-proof
 
-The order of $P_i\cap P_j$ divides both $|P_i|=p_i^{a_i}$ and
-$|P_j|=p_j^{a_j}$. Since $p_i\ne p_j$, these orders are coprime, so
-$|P_i\cap P_j|=1$.
+The order of $P_i\cap P_j$ divides both $\cardinality{P_i}=p_i^{a_i}$ and
+$\cardinality{P_j}=p_j^{a_j}$. Since $p_i\ne p_j$, these orders are coprime, so
+$\cardinality{P_i\cap P_j}=1$.
 
 :::
 
@@ -120,9 +120,9 @@ The homomorphism $\mu$ is surjective.
 
 Its domain has order
 $$
-\prod_{i=1}^r|P_i|
+\prod_{i=1}^r\cardinality{P_i}
 =\prod_{i=1}^rp_i^{a_i}
-=|G|.
+=\cardinality{G}.
 $$
 By step [](#s4){.pf-ref}, $\mu$ is injective between finite groups of the same order, hence
 surjective.

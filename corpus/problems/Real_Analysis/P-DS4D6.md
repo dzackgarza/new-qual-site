@@ -25,7 +25,7 @@ Let $(K,d)$ be a compact metric space, $f\colon K \to \RR$ continuous, and $\eps
 
 ::: {.pf-step #s1}
 
-For each $z \in K$ there is $\delta_z > 0$ with $|f(x) - f(z)| < \eps/2$ whenever $d(x,z) < \delta_z$.
+For each $z \in K$ there is $\delta_z > 0$ with $\abs{f(x) - f(z)} < \eps/2$ whenever $d(x,z) < \delta_z$.
 
 ::: pf-proof
 
@@ -49,7 +49,7 @@ The balls $B(z, \delta_z/2)$, $z \in K$, form an open cover of the compact space
 
 ::: pf-qed
 
-Put $\delta = \min_i \delta_{z_i}/2 > 0$ and let $d(x,y) < \delta$. By step [](#s2){.pf-ref}, $d(x, z_i) < \delta_{z_i}/2$ for some $i$, and then $d(y, z_i) < \delta + \delta_{z_i}/2 \le \delta_{z_i}$. By step [](#s1){.pf-ref}, $|f(x) - f(y)| \le |f(x) - f(z_i)| + |f(z_i) - f(y)| < \eps$.
+Put $\delta = \min_i \delta_{z_i}/2 > 0$ and let $d(x,y) < \delta$. By step [](#s2){.pf-ref}, $d(x, z_i) < \delta_{z_i}/2$ for some $i$, and then $d(y, z_i) < \delta + \delta_{z_i}/2 \le \delta_{z_i}$. By step [](#s1){.pf-ref}, $\abs{f(x) - f(y)} \le \abs{f(x) - f(z_i)} + \abs{f(z_i) - f(y)} < \eps$.
 
 :::
 
@@ -58,5 +58,5 @@ Put $\delta = \min_i \delta_{z_i}/2 > 0$ and let $d(x,y) < \delta$. By step [](#
 :::
 
 ::: {.solution title="Sequential compactness"}
-Suppose, toward a contradiction, that $f$ is not uniformly continuous on a compact metric space $K$. Then there is $\eps > 0$ such that for every $n \in \NN$ there exist $x_n, y_n \in K$ with $d(x_n, y_n) < 1/n$ but $|f(x_n) - f(y_n)| \ge \eps$. Compactness of $K$ gives a subsequence $x_{n_j} \to x \in K$; then $d(y_{n_j}, x) \le d(y_{n_j}, x_{n_j}) + d(x_{n_j}, x) \to 0$, so $y_{n_j} \to x$ as well. Continuity of $f$ at $x$ forces $|f(x_{n_j}) - f(y_{n_j})| \to 0$, contradicting $|f(x_{n_j}) - f(y_{n_j})| \ge \eps$.
+Suppose, toward a contradiction, that $f$ is not uniformly continuous on a compact metric space $K$. Then there is $\eps > 0$ such that for every $n \in \NN$ there exist $x_n, y_n \in K$ with $d(x_n, y_n) < 1/n$ but $\abs{f(x_n) - f(y_n)} \ge \eps$. Compactness of $K$ gives a subsequence $x_{n_j} \to x \in K$; then $d(y_{n_j}, x) \le d(y_{n_j}, x_{n_j}) + d(x_{n_j}, x) \to 0$, so $y_{n_j} \to x$ as well. Continuity of $f$ at $x$ forces $\abs{f(x_{n_j}) - f(y_{n_j})} \to 0$, contradicting $\abs{f(x_{n_j}) - f(y_{n_j})} \ge \eps$.
 :::

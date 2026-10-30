@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be a continuous function on $\{z \in \CC : 0 < |z| \leq 1\}$ that is analytic on $\{z \in \CC : 0 < |z| < 1\}$.
+Let $f$ be a continuous function on $\{z \in \CC : 0 < \abs{z} \leq 1\}$ that is analytic on $\{z \in \CC : 0 < \abs{z} < 1\}$.
 Assume $f(z) = 0$ for every $z = e^{i\theta}$ with $\frac{\pi}{4} < \theta < \frac{\pi}{3}$.
 Prove $f \equiv 0$.
 :::
@@ -42,7 +42,7 @@ is $0$.
 The extended holomorphic function vanishes on an open set outside the disk, so
 the identity theorem makes it vanish in a neighborhood of $S_0$. Thus the
 original $f$ vanishes on a nonempty open subset of the punctured disk. Since
-$0<|z|<1$ is connected, the identity theorem gives
+$0<\abs{z}<1$ is connected, the identity theorem gives
 $$
 \boxed{f\equiv0}.
 $$

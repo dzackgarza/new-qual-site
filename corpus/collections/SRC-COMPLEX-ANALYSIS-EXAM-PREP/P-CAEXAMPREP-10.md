@@ -44,7 +44,7 @@ If $c=0$, then $ad>bc=0$, so $d\ne0$. If $c\ne0$, the unique zero of $cz+d$ is $
 For every $z$ in the upper half-plane,
 $$
 \operatorname{Im}T(z)
-=\frac{(ad-bc)\operatorname{Im}z}{|cz+d|^2}.
+=\frac{(ad-bc)\operatorname{Im}z}{\abs{cz+d}^2}.
 $$
 
 
@@ -55,8 +55,8 @@ $$
 \begin{aligned}
 T(z)-\overline{T(z)}
 &=\frac{az+b}{cz+d}-\frac{a\overline z+b}{c\overline z+d}\\
-&=\frac{(az+b)(c\overline z+d)-(a\overline z+b)(cz+d)}{|cz+d|^2}\\
-&=\frac{(ad-bc)(z-\overline z)}{|cz+d|^2}.
+&=\frac{(az+b)(c\overline z+d)-(a\overline z+b)(cz+d)}{\abs{cz+d}^2}\\
+&=\frac{(ad-bc)(z-\overline z)}{\abs{cz+d}^2}.
 \end{aligned}
 $$
 Dividing by $2i$ gives the stated formula for the imaginary part.

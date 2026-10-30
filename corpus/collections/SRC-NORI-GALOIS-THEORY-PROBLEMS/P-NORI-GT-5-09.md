@@ -49,7 +49,7 @@ X^p-\tau(a),\qquad \tau\in G,
 $$
 so $L/F$ is finite. Since $K$ contains all $p$-th roots of unity, adjoining one $p$-th root of each $\tau(a)$ adjoins every root of each of these polynomials.
 
-Let $\iota:L\to\overline F$ be an $F$-embedding. Because $K/F$ is normal, $\iota(K)=K$, so $\iota|_K=\rho$ for some $\rho\in G$. If $u^p=\tau(a)$, then
+Let $\iota:L\to\overline F$ be an $F$-embedding. Because $K/F$ is normal, $\iota(K)=K$, so $\iota\restrict_K=\rho$ for some $\rho\in G$. If $u^p=\tau(a)$, then
 $$
 \iota(u)^p
 =\iota(\tau(a))
@@ -126,7 +126,7 @@ $$
 
 ::: pf-proof
 
-Using $b^p=a$ and the fact that $\widetilde\sigma|_K=\sigma$,
+Using $b^p=a$ and the fact that $\widetilde\sigma\restrict_K=\sigma$,
 $$
 c^p
 =\frac{\widetilde\sigma(b)^p}{b^p}

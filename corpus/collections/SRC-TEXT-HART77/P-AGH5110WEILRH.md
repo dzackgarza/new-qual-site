@@ -33,7 +33,7 @@ audit:
 
 ::: {.problem}
 Let $C$ be a curve of genus $g$ defined over the finite field $\FF_q$, and let $N$ be the number of points of $C$ rational over $\FF_q$.
-Then $N=1-a+q$, with $|a| \leqslant 2 g \sqrt{q}$.
+Then $N=1-a+q$, with $\abs{a} \leqslant 2 g \sqrt{q}$.
 
 To prove this, we consider $C$ as a curve over the algebraic closure $k$ of $\FF_q$.
 Let $f: C \rightarrow C$ be the $k$-linear Frobenius morphism obtained by taking $q$ th powers, which makes sense since $C$ is defined over $\FF_q$, so $X_q \cong X$ (See $V, 2.4.1$).
@@ -346,16 +346,16 @@ one has
 $$
 \boxed{N=1-a+q}
 \qquad\text{and}\qquad
-\boxed{|a|\leq2g\sqrt q}.
+\boxed{\abs{a}\leq2g\sqrt q}.
 $$
 
 ::: pf-proof
 
 Steps [](#s8){.pf-ref} and [](#s9){.pf-ref} give
 $$
-|N-q-1|\leq2g\sqrt q.
+\abs{N-q-1}\leq2g\sqrt q.
 $$
-Since $a=-(N-q-1)$, the same bound holds for $|a|$, and the defining equation
+Since $a=-(N-q-1)$, the same bound holds for $\abs{a}$, and the defining equation
 for $a$ rearranges to $N=1-a+q$.
 
 :::

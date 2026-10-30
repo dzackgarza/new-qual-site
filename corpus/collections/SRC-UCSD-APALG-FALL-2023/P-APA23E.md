@@ -69,7 +69,7 @@ By step [](#z-is-central){.pf-ref}, $\rho(z)$ commutes with $\rho(h)$ for every 
 :::
 
 ::: {.pf-step #trace-of-phi}
-The trace of $\varphi$ is $|G|$.
+The trace of $\varphi$ is $\cardinality{G}$.
 
 ::: pf-proof
 Using linearity of trace,
@@ -77,14 +77,14 @@ $$
 \operatorname{tr}(\varphi)
 =\sum_{g\in G}\overline{\chi(g)}\operatorname{tr}(\rho(g))
 =\sum_{g\in G}\overline{\chi(g)}\chi(g)
-=\sum_{g\in G}|\chi(g)|^2.
+=\sum_{g\in G}\abs{\chi(g)}^2.
 $$
 For an irreducible complex character,
 $$
 \langle\chi,\chi\rangle_G
-=\frac1{|G|}\sum_{g\in G}|\chi(g)|^2=1.
+=\frac1{\cardinality{G}}\sum_{g\in G}\abs{\chi(g)}^2=1.
 $$
-Thus $\operatorname{tr}(\varphi)=|G|$.
+Thus $\operatorname{tr}(\varphi)=\cardinality{G}$.
 :::
 
 :::
@@ -92,7 +92,7 @@ Thus $\operatorname{tr}(\varphi)=|G|$.
 ::: pf-step
 Therefore
 $$
-\boxed{c=\frac{|G|}{\dim V}}.
+\boxed{c=\frac{\cardinality{G}}{\dim V}}.
 $$
 
 ::: pf-proof
@@ -102,7 +102,7 @@ $$
 $$
 Combining this with step [](#trace-of-phi){.pf-ref} gives
 $$
-c\dim V=|G|,
+c\dim V=\cardinality{G},
 $$
 and hence the stated value of $c$.
 :::

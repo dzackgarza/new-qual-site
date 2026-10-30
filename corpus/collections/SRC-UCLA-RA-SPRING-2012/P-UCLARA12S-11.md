@@ -20,9 +20,9 @@ audit:
 Let $P(z)$ be a polynomial.
 Show that there exist an integer $n$ and a polynomial $Q(z)$ such that
 $$
-P(z)Q(z)=z^n|P(z)|^2
+P(z)Q(z)=z^n\abs{P(z)}^2
 $$
-whenever $|z|=1$.
+whenever $\abs{z}=1$.
 :::
 
 ::: {.solution}

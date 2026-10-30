@@ -52,13 +52,13 @@ Choose a minimizing sequence.
 
 Let $C$ be a nonempty closed convex subset of a Hilbert space $H$, and set
 $$
-d:=\inf_{x\in C}\|x\|.
+d:=\inf_{x\in C}\norm{x}.
 $$
 Nonemptiness gives $0\leq d<\infty$. By the defining
 property of the infimum, choose $x_n\in C$ with
-$d\leq\|x_n\|<d+1/n$. Then
+$d\leq\norm{x_n}<d+1/n$. Then
 $$
-\|x_n\|^2\longrightarrow d^2.
+\norm{x_n}^2\longrightarrow d^2.
 $$
 
 :::
@@ -77,19 +77,19 @@ $$
 $$
 so
 $$
-\left\|\frac{x_n+x_m}{2}\right\|\ge d.
+\norm{\frac{x_n+x_m}{2}}\ge d.
 $$
 The parallelogram identity gives
 $$
-\left\|\frac{x_n-x_m}{2}\right\|^2
-=\frac12\|x_n\|^2+\frac12\|x_m\|^2
--\left\|\frac{x_n+x_m}{2}\right\|^2.
+\norm{\frac{x_n-x_m}{2}}^2
+=\frac12\norm{x_n}^2+\frac12\norm{x_m}^2
+-\norm{\frac{x_n+x_m}{2}}^2.
 $$
 Therefore
 $$
-\frac14\|x_n-x_m\|^2
+\frac14\norm{x_n-x_m}^2
 \le
-\frac12\|x_n\|^2+\frac12\|x_m\|^2-d^2.
+\frac12\norm{x_n}^2+\frac12\norm{x_m}^2-d^2.
 $$
 The right-hand side tends to $0$ as $m,n\to\infty$. Hence $(x_n)$ is Cauchy.
 
@@ -109,7 +109,7 @@ x\in C.
 $$
 Continuity of the norm gives
 $$
-\|x\|=d.
+\norm{x}=d.
 $$
 Thus $x$ has minimal norm in $C$.
 
@@ -125,17 +125,17 @@ Prove uniqueness.
 
 Suppose $x,y\in C$ both satisfy
 $$
-\|x\|=\|y\|=d.
+\norm{x}=\norm{y}=d.
 $$
 Again $(x+y)/2\in C$, hence
 $$
-\left\|\frac{x+y}{2}\right\|\ge d.
+\norm{\frac{x+y}{2}}\ge d.
 $$
 The parallelogram identity gives
 $$
-\frac14\|x-y\|^2
+\frac14\norm{x-y}^2
 =\frac12d^2+\frac12d^2
--\left\|\frac{x+y}{2}\right\|^2
+-\norm{\frac{x+y}{2}}^2
 \le0.
 $$
 Therefore $x=y$.

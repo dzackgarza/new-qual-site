@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-5A
 kind: problem
-title: No holomorphic $f$ on $\CC\setminus\{0\}$ with $\lvert f(z)\rvert\ge\lvert z\rvert^{-1/2}$
+title: No holomorphic $f$ on $\CC\setminus\{0\}$ with $\abs{ f(z)}\ge\abs{ z}^{-1/2}$
 classification:
   areas:
   - prelim
@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Is there a function f(z) analytic in C \ {0} such that $\begin{array} { r } { | f ( z ) | \geq \frac { 1 } { \sqrt { | z | } } } \end{array}$ for all $z \neq 0 ?$
+Is there a function f(z) analytic in C \ {0} such that $\begin{array} { r } { \abs{ f ( z ) } \geq \frac { 1 } { \sqrt { \abs{ z } } } } \end{array}$ for all $z \neq 0 ?$
 :::
 
 ::: {.solution}

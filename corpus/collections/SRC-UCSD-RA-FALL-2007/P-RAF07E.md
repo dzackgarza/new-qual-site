@@ -46,17 +46,17 @@ $$
 \langle T_a,\varphi\rangle
 :=\int_{\RR}e^{iax}\varphi(x)\,dx.
 $$
-Since $|e^{iax}|=1$,
+Since $\abs{e^{iax}}=1$,
 $$
-|\langle T_a,\varphi\rangle|
-\le \int_{\RR}|\varphi(x)|\,dx.
+\abs{\langle T_a,\varphi\rangle}
+\le \int_{\RR}\abs{\varphi(x)}\,dx.
 $$
 For example,
 $$
-\int_{\RR}|\varphi(x)|\,dx
+\int_{\RR}\abs{\varphi(x)}\,dx
 \le
 \left(\int_{\RR}(1+x^2)^{-1}\,dx\right)
-\sup_{x\in\RR}(1+x^2)|\varphi(x)|.
+\sup_{x\in\RR}(1+x^2)\abs{\varphi(x)}.
 $$
 Thus $T_a$ is a continuous linear functional on the Schwartz space. Therefore $f_a=e^{iax}$ defines a tempered distribution.
 

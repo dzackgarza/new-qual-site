@@ -75,7 +75,7 @@ would be a nontrivial homomorphism. Every $3$-cycle must map to the identity in 
 
 ::: {.pf-step #s1-4}
 
-Therefore the subgroup order not forced by $|G|=12$ is
+Therefore the subgroup order not forced by $\cardinality{G}=12$ is
 $$
 \boxed{6},
 $$

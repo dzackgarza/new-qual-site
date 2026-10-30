@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $f$ be an entire function.
-Assume $|f| \leq \log(|f| + 2)$ on $\CC$.
+Assume $\abs{f} \leq \log(\abs{f} + 2)$ on $\CC$.
 Prove $f$ is constant.
 :::
 
@@ -29,7 +29,7 @@ Prove $f$ is constant.
 
 ::: {.pf-step #s1}
 
-The inequality $|f(z)| \le \log(|f(z)| + 2)$ holds for all $z \in \CC$.
+The inequality $\abs{f(z)} \le \log(\abs{f(z)} + 2)$ holds for all $z \in \CC$.
 
 ::: pf-proof
 
@@ -65,7 +65,7 @@ Step [](#s2){.pf-ref} ($h(t) \le 0$ only for bounded $t$).
 
 ::: {.pf-step #s4}
 
-Therefore $|f(z)|$ is uniformly bounded (there is $M$ with $|f(z)| \le M$ for all $z$).
+Therefore $\abs{f(z)}$ is uniformly bounded (there is $M$ with $\abs{f(z)} \le M$ for all $z$).
 
 ::: pf-proof
 

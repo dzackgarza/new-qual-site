@@ -33,11 +33,11 @@ Let $f$ be a bounded Riemann integrable function on $[0,1]$. Prove that $f^2$ is
 Control the oscillation of $f^2$ by that of $f$.
 
 ::: pf-proof
-Choose $M\ge1$ with $|f(x)|\le M$ on $[0,1]$. For all $x,y$,
+Choose $M\ge1$ with $\abs{f(x)}\le M$ on $[0,1]$. For all $x,y$,
 $$
-|f(x)^2-f(y)^2|
-=|f(x)-f(y)|\,|f(x)+f(y)|
-\le2M|f(x)-f(y)|.
+\abs{f(x)^2-f(y)^2}
+=\abs{f(x)-f(y)}\,\abs{f(x)+f(y)}
+\le2M\abs{f(x)-f(y)}.
 $$
 Hence on every subinterval $I$,
 $$
@@ -55,13 +55,13 @@ Apply the Darboux criterion.
 Given $\varepsilon>0$, Riemann integrability of $f$ gives a partition $P$ such that
 $$
 U(f,P)-L(f,P)
-=\sum_{I\in P}\operatorname{osc}_I(f)|I|
+=\sum_{I\in P}\operatorname{osc}_I(f)\setmeasure{I}
 <\frac{\varepsilon}{2M}.
 $$
 Therefore
 $$
 U(f^2,P)-L(f^2,P)
-\le2M\sum_{I\in P}\operatorname{osc}_I(f)|I|
+\le2M\sum_{I\in P}\operatorname{osc}_I(f)\setmeasure{I}
 <\varepsilon.
 $$
 By the Darboux criterion, $f^2$ is Riemann integrable.

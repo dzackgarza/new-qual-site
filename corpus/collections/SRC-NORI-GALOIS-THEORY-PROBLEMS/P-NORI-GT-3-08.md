@@ -81,7 +81,7 @@ $$
 
 The field $\overline{\FF}_p$ has characteristic $p$, and step [](#s1-1){.pf-ref} verifies the hypothesis
 $$
-|\mu_{n'}(\overline{\FF}_p)|=n'.
+\cardinality{\mu_{n'}(\overline{\FF}_p)}=n'.
 $$
 Problem 3.7 therefore applies directly to
 $$

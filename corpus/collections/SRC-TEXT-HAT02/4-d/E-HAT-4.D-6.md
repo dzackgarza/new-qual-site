@@ -29,7 +29,7 @@ $$\cdots \to H^{j}(M) \xrightarrow{\smile e} H^{j+2}(M) \xrightarrow{\pi^*} H^{j
 ::: pf
 
 ::: {.pf-step #forward}
-If $S^1 \to S^{2n+1} \xrightarrow{\pi} M$ is a fiber bundle, then $M$ is simply connected and $H^*(M) \cong \ZZ[e]/(e^{n+1})$ with $|e| = 2$.
+If $S^1 \to S^{2n+1} \xrightarrow{\pi} M$ is a fiber bundle, then $M$ is simply connected and $H^*(M) \cong \ZZ[e]/(e^{n+1})$ with $\gradeddegree{e} = 2$.
 
 ::: pf-proof
 
@@ -74,7 +74,7 @@ By step [](#cup-iso){.pf-ref}, induction from $H^0(M) = \ZZ$ and $H^1(M) = 0$ gi
 :::
 
 ::: {.pf-step #converse}
-If $M$ is simply connected and $H^*(M) \cong \ZZ[\alpha]/(\alpha^{n+1})$ with $|\alpha| = 2$, then there is a circle bundle $S^1 \to E \to M$ with $E \simeq S^{2n+1}$.
+If $M$ is simply connected and $H^*(M) \cong \ZZ[\alpha]/(\alpha^{n+1})$ with $\gradeddegree{\alpha} = 2$, then there is a circle bundle $S^1 \to E \to M$ with $E \simeq S^{2n+1}$.
 
 ::: pf-proof
 

@@ -39,7 +39,7 @@ $$G_n = \langle x, y \mid x^3 = 1,\; xyx^{-1} = y^n \rangle.$$
 The group $G_n$ is finite exactly when $n\neq1$.
 For $n\neq1$ its order is
 $$
-|G_n|=3|n^3-1|.
+\cardinality{G_n}=3\abs{n^3-1}.
 $$
 
 ::: pf
@@ -84,7 +84,7 @@ Therefore $G_1$ is infinite.
 ::: {.pf-step #normal-form-bound}
 Suppose $n\neq1$ and set
 $$
-m:=|n^3-1|.
+m:=\abs{n^3-1}.
 $$
 Then every element of $G_n$ has one of the forms
 $$
@@ -95,7 +95,7 @@ y^a x,
 y^a x^2,
 \qquad 0\le a<m.
 $$
-In particular, $|G_n|\le3m$.
+In particular, $\cardinality{G_n}\le3m$.
 
 ::: pf-proof
 Conjugating $y$ three times by $x$ gives
@@ -155,7 +155,7 @@ H:=C_m\rtimes_{\alpha} C_3.
 $$
 It has order
 $$
-|H|=3m.
+\cardinality{H}=3m.
 $$
 
 Let $\bar y$ generate $C_m$ and let $\bar x$ generate the $C_3$ factor.
@@ -174,7 +174,7 @@ G_n\twoheadrightarrow H.
 $$
 Consequently
 $$
-|G_n|\ge |H|=3m.
+\cardinality{G_n}\ge \cardinality{H}=3m.
 $$
 :::
 
@@ -183,25 +183,25 @@ $$
 ::: pf-step
 For $n\neq1$, one has
 $$
-G_n\cong C_{|n^3-1|}\rtimes C_3
+G_n\cong C_{\abs{n^3-1}}\rtimes C_3
 $$
 and
 $$
-|G_n|=3|n^3-1|.
+\cardinality{G_n}=3\abs{n^3-1}.
 $$
 
 ::: pf-proof
 By step [](#normal-form-bound){.pf-ref},
 $$
-|G_n|\le3m,
+\cardinality{G_n}\le3m,
 $$
 while step [](#semidirect-product-quotient){.pf-ref} gives a quotient of $G_n$ of order $3m$, so
 $$
-|G_n|\ge3m.
+\cardinality{G_n}\ge3m.
 $$
 Thus
 $$
-|G_n|=3m=3|n^3-1|.
+\cardinality{G_n}=3m=3\abs{n^3-1}.
 $$
 The surjection in step [](#semidirect-product-quotient){.pf-ref} is therefore an isomorphism.
 Together with step [](#n-eq-1-infinite){.pf-ref}, this also proves that $G_n$ is finite if and only if $n\neq1$.

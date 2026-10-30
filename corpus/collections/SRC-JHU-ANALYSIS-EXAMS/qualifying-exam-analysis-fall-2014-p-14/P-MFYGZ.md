@@ -36,16 +36,16 @@ audit:
 2. Let $f \in L ^ { 1 } ( \RR ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,
 
 $$
-M _ { f } ( x ) = \operatorname* { s u p } _ { B } { \frac { 1 } { m ( B ) } } \int _ { B } | f ( y ) | d y , \quad x \in \RR ^ { d }
+M _ { f } ( x ) = \operatorname* { s u p } _ { B } { \frac { 1 } { m ( B ) } } \int _ { B } \abs{ f ( y ) } d y , \quad x \in \RR ^ { d }
 $$
 
 where the supremum is taken over all balls containing the point x. Prove that
 
 $$
-m \big ( \{ x : M _ { f } ( x ) > \alpha \} \big ) \leq \frac { A } { \alpha } | | f | | _ { L ^ { 1 } ( \RR ^ { d } ) } , \quad \forall \alpha > 0
+m \big ( \{ x : M _ { f } ( x ) > \alpha \} \big ) \leq \frac { A } { \alpha } \norm{  f }  _ { L ^ { 1 } ( \RR ^ { d } ) } , \quad \forall \alpha > 0
 $$
 
-where A is a constant depending only on d and $\begin{array} { r } { | | f | | _ { L ^ { 1 } ( \RR ^ { d } ) } = \int _ { \RR ^ { d } } | f ( x ) | d x . } \end{array}$
+where A is a constant depending only on d and $\begin{array} { r } { \norm{  f }  _ { L ^ { 1 } ( \RR ^ { d } ) } = \int _ { \RR ^ { d } } \abs{ f ( x ) } d x . } \end{array}$
 :::
 
 ::: {.solution}
@@ -64,20 +64,20 @@ E_\alpha:=\{x\in\RR^d:M_f(x)>\alpha\}.
 $$
 Take the balls in the definition to be open. Then
 $E_\alpha$ is the union of all balls on which the average
-of $|f|$ exceeds $\alpha$: every point of such a ball has
+of $\abs{f}$ exceeds $\alpha$: every point of such a ball has
 maximal function greater than $\alpha$, and the converse
 follows from the definition of supremum. Thus $E_\alpha$
 is open, in particular measurable. If it is empty, the
 required inequality is immediate; otherwise proceed below.
 For every $x\in E_\alpha$, by definition of $M_f(x)$ there is a ball $B_x$ containing $x$ such that
 $$
-\frac1{m(B_x)}\int_{B_x}|f(y)|\,dy>\alpha.
+\frac1{m(B_x)}\int_{B_x}\abs{f(y)}\,dy>\alpha.
 $$
 Hence
 $$
-\alpha\,m(B_x)<\int_{B_x}|f|\le \|f\|_1.
+\alpha\,m(B_x)<\int_{B_x}\abs{f}\le \norm{f}_1.
 $$
-In particular the radii of all such balls are uniformly bounded in terms of $\alpha$, $d$, and $\|f\|_1$.
+In particular the radii of all such balls are uniformly bounded in terms of $\alpha$, $d$, and $\norm{f}_1$.
 
 :::
 
@@ -114,19 +114,19 @@ Use disjointness and the defining average inequality.
 
 For each selected ball,
 $$
-\alpha\,m(B_j)<\int_{B_j}|f|.
+\alpha\,m(B_j)<\int_{B_j}\abs{f}.
 $$
 Since the $B_j$ are pairwise disjoint,
 $$
 \alpha\sum_j m(B_j)
-\le\sum_j\int_{B_j}|f|
-\le\int_{\RR^d}|f|
-=\|f\|_1.
+\le\sum_j\int_{B_j}\abs{f}
+\le\int_{\RR^d}\abs{f}
+=\norm{f}_1.
 $$
 Combining this with Step 2 gives
 $$
 m(E_\alpha)
-\le \frac{5^d}{\alpha}\|f\|_1.
+\le \frac{5^d}{\alpha}\norm{f}_1.
 $$
 Thus the desired estimate holds with, for example,
 $$

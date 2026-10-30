@@ -53,13 +53,13 @@ y=e^{-x}\sin y.
 $$
 If $y\ne0$, then
 $$
-|y|
-=e^{-x}|\sin y|
-\le|\sin y|
-<|y|,
+\abs{y}
+=e^{-x}\abs{\sin y}
+\le\abs{\sin y}
+<\abs{y},
 $$
 where the first inequality uses $e^{-x}<1$ and the strict inequality uses
-$|\sin y|<|y|$ for $y\ne0$. This is impossible. Hence $y=0$, so every
+$\abs{\sin y}<\abs{y}$ for $y\ne0$. This is impossible. Hence $y=0$, so every
 solution in the right half-plane is real.
 
 :::

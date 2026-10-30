@@ -71,7 +71,7 @@ C_n=K_n\oplus L_n.
 $$
 The restriction
 $$
-\partial_n|_{L_n}:L_n\xrightarrow{\cong}\operatorname{im}\partial_n
+\partial_n\restrict_{L_n}:L_n\xrightarrow{\cong}\operatorname{im}\partial_n
 $$
 is an isomorphism.
 

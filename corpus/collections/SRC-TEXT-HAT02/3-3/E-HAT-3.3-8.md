@@ -46,12 +46,12 @@ while
 $$
 H_n(N,N-\{y\})\cong\ZZ.
 $$
-The image of the fundamental class $[M]$ in the direct sum of local homology groups is the tuple of local orientation generators. On the $i$th summand, the map induced by $f|_{B_i}:B_i\to B$ is multiplication by
+The image of the fundamental class $[M]$ in the direct sum of local homology groups is the tuple of local orientation generators. On the $i$th summand, the map induced by $f\restrict_{B_i}:B_i\to B$ is multiplication by
 $$
 \varepsilon_i=
 \begin{cases}
-+1,&f|_{B_i}\text{ preserves the chosen local orientations},\\
--1,&f|_{B_i}\text{ reverses them}.
++1,&f\restrict_{B_i}\text{ preserves the chosen local orientations},\\
+-1,&f\restrict_{B_i}\text{ reverses them}.
 \end{cases}
 $$
 Hence the image of $[M]$ in $H_n(N,N-\{y\})$ is

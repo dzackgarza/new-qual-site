@@ -93,18 +93,18 @@ m(E\triangle F)<\varepsilon/2.
 $$
 Then
 $$
-\left|\int_E\sin(nt)\,dt-\int_F\sin(nt)\,dt\right|
+\abs{\int_E\sin(nt)\,dt-\int_F\sin(nt)\,dt}
 \le m(E\triangle F)<\varepsilon/2.
 $$
 If $F$ is the disjoint union of $N$ bounded intervals $[a_j,b_j]$, then
 $$
-\left|\int_F\sin(nt)\,dt\right|
-\le\sum_{j=1}^N\frac{|\cos(na_j)-\cos(nb_j)|}{n}
+\abs{\int_F\sin(nt)\,dt}
+\le\sum_{j=1}^N\frac{\abs{\cos(na_j)-\cos(nb_j)}}{n}
 \le\frac{2N}{n}\longrightarrow0.
 $$
 Hence for all sufficiently large $n$,
 $$
-\left|\int_E\sin(nt)\,dt\right|<\varepsilon.
+\abs{\int_E\sin(nt)\,dt}<\varepsilon.
 $$
 Therefore
 $$

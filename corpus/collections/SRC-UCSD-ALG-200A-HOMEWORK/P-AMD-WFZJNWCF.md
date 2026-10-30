@@ -49,10 +49,10 @@ $$
 
 Hint: $P$ is a Sylow $p$-subgroup of $H$ and $N_G(P)=N_H(P)$.
 
-(b) Let $p$ be the largest prime dividing $|G|$.
+(b) Let $p$ be the largest prime dividing $\cardinality{G}$.
 Show that $G$ has a normal Sylow $p$-subgroup.
 
-(c) Conclude by induction on $|G|$ that $G$ is solvable.
+(c) Conclude by induction on $\cardinality{G}$ that $G$ is solvable.
 :::
 
 ::: {.solution}
@@ -132,7 +132,7 @@ This proves part (a).
 
 ::: {.pf-step #s3}
 
-Let $p$ be the largest prime dividing $|G|$ and let $P\in\operatorname{Syl}_p(G)$.
+Let $p$ be the largest prime dividing $\cardinality{G}$ and let $P\in\operatorname{Syl}_p(G)$.
 Then $P\trianglelefteq G$.
 
 ::: pf-proof
@@ -153,7 +153,7 @@ Applying step [](#s2){.pf-ref} with $H=M$ gives
 $$
 q=[G:M]\equiv1\pmod p.
 $$
-Since $q=[G:M]$ divides $|G|$, the prime $q$ is a prime divisor of $|G|$.
+Since $q=[G:M]$ divides $\cardinality{G}$, the prime $q$ is a prime divisor of $\cardinality{G}$.
 The maximality of $p$ therefore gives
 $$
 q\le p.
@@ -252,10 +252,10 @@ The group $G$ is solvable.
 
 ::: pf-proof
 
-We induct on $|G|$.
+We induct on $\cardinality{G}$.
 The trivial group is solvable.
 
-Assume $G\ne1$, let $p$ be the largest prime dividing $|G|$, and choose $P\in\operatorname{Syl}_p(G)$.
+Assume $G\ne1$, let $p$ be the largest prime dividing $\cardinality{G}$, and choose $P\in\operatorname{Syl}_p(G)$.
 By step [](#s3){.pf-ref},
 $$
 P\trianglelefteq G.
@@ -265,7 +265,7 @@ By step [](#s5){.pf-ref}, the $p$-group $P$ is solvable.
 By step [](#s6){.pf-ref}, the quotient $G/P$ again has the property that every maximal subgroup has prime index.
 Since
 $$
-|G/P|<|G|,
+\cardinality{G/P}<\cardinality{G},
 $$
 the induction hypothesis gives that $G/P$ is solvable.
 Applying step [](#s4){.pf-ref} to

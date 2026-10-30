@@ -96,7 +96,7 @@ $$
 
 For every $i$, the restriction
 $$
-P|_{W_i}:W_i\longrightarrow W_i
+P\restrict_{W_i}:W_i\longrightarrow W_i
 $$
 is diagonalizable.
 
@@ -105,10 +105,10 @@ is diagonalizable.
 Since $P$ is diagonalizable, its minimal polynomial $m_P(t)$ splits over
 $F$ as a product of distinct linear factors.
 
-By step [](#s2){.pf-ref}, the restriction $P|_{W_i}$ is defined. Any polynomial that
+By step [](#s2){.pf-ref}, the restriction $P\restrict_{W_i}$ is defined. Any polynomial that
 annihilates $P$ also annihilates the restriction, so the minimal
-polynomial of $P|_{W_i}$ divides $m_P(t)$. It therefore also splits as a
-product of distinct linear factors. Hence $P|_{W_i}$ is diagonalizable.
+polynomial of $P\restrict_{W_i}$ divides $m_P(t)$. It therefore also splits as a
+product of distinct linear factors. Hence $P\restrict_{W_i}$ is diagonalizable.
 
 :::
 
@@ -122,7 +122,7 @@ for $P$ and $Q$.
 ::: pf-proof
 
 For each $i$, choose an eigenbasis of $W_i$ for the diagonalizable
-restriction $P|_{W_i}$ from step [](#s3){.pf-ref}. Every vector in this basis is
+restriction $P\restrict_{W_i}$ from step [](#s3){.pf-ref}. Every vector in this basis is
 already a $Q$-eigenvector with eigenvalue $\lambda_i$ by the definition of
 $W_i$.
 

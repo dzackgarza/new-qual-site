@@ -46,7 +46,7 @@ The map $G/G_x\to Gx$ sending $gG_x$ to $gx$ is a bijection:
 two representatives give the same point exactly when they lie in the
 same left coset. Hence
 $$
-|Gx|=[G:G_x]=\frac{p^n}{|G_x|},
+\cardinality{Gx}=[G:G_x]=\frac{p^n}{\cardinality{G_x}},
 $$
 which is a power of $p$. The orbit is a singleton precisely when
 $gx=x$ for every $g\in G$. Every other orbit has size divisible by $p$.
@@ -62,12 +62,12 @@ The global fixed-point set $X^G$ is nonempty.
 ::: pf-proof
 
 The orbits partition the finite set $X$. The singleton orbits contribute
-exactly $|X^G|$, and all other contributions are divisible by $p$.
+exactly $\cardinality{X^G}$, and all other contributions are divisible by $p$.
 Therefore
 $$
-|X|\equiv |X^G|\pmod p.
+\cardinality{X}\equiv \cardinality{X^G}\pmod p.
 $$
-The left side is nonzero modulo $p$ by hypothesis, so $|X^G|$ cannot
+The left side is nonzero modulo $p$ by hypothesis, so $\cardinality{X^G}$ cannot
 be zero. Any $x\in X^G$ is fixed by every element of $G$, as required.
 
 :::

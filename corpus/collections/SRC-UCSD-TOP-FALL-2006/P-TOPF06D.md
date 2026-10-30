@@ -44,7 +44,7 @@ This is the standard mod-$2$ cohomology ring of real projective space.
 
 ::: {.pf-step #s2}
 
-If $A\subset\RP^n$ is contractible, then $a|_A=0$.
+If $A\subset\RP^n$ is contractible, then $a\restrict_A=0$.
 
 ::: pf-proof
 

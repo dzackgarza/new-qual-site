@@ -55,7 +55,7 @@ $$
 
 ::: {.pf-step #s2}
 
-Every element of $G_n$ has the form $r^j$ or $ar^j$, with $0\le j<n$. Hence $|G_n|\le 2n$.
+Every element of $G_n$ has the form $r^j$ or $ar^j$, with $0\le j<n$. Hence $\cardinality{G_n}\le 2n$.
 
 ::: pf-proof
 
@@ -69,7 +69,7 @@ The relation $ar=r^{-1}a$ lets us move every occurrence of $a$ to the left in an
 
 In fact
 $$
-|G_n|=2n.
+\cardinality{G_n}=2n.
 $$
 
 ::: pf-proof
@@ -86,7 +86,7 @@ Therefore the defining presentation of $G_n$ gives a surjection
 $$
 G_n\twoheadrightarrow D_{2n}.
 $$
-The target has $2n$ elements, while step [](#s2){.pf-ref} gives $|G_n|\le2n$. Hence $|G_n|=2n$ and $G_n\cong D_{2n}$.
+The target has $2n$ elements, while step [](#s2){.pf-ref} gives $\cardinality{G_n}\le2n$. Hence $\cardinality{G_n}=2n$ and $G_n\cong D_{2n}$.
 
 :::
 
@@ -157,7 +157,7 @@ These five representations are all the irreducible complex representations of $G
 
 For a finite group over $\CC$, the dimensions $d_i$ of the irreducible representations satisfy
 $$
-\sum_i d_i^2=|G_4|=8.
+\sum_i d_i^2=\cardinality{G_4}=8.
 $$
 The four one-dimensional representations from step [](#s4){.pf-ref} contribute $4$, and the two-dimensional representation from step [](#s5){.pf-ref} contributes another $4$. Thus
 $$

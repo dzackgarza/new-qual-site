@@ -46,15 +46,15 @@ The class of $n$ is $\{n\}$ exactly when $n$ commutes with every element of $G$.
 Every $G$-conjugacy class of size greater than $1$ has size divisible by $p$.
 
 ::: pf-proof
-The class of $n$ has size $[G:C_G(n)]$, which divides $|G|$ and so is a power of $p$.
+The class of $n$ has size $[G:C_G(n)]$, which divides $\cardinality{G}$ and so is a power of $p$.
 :::
 
 :::
 
 ::: pf-qed
-By steps [](#n-classes-fixed-points-eq-cap-z){.pf-ref} and [](#nontrivial-classes-div-by-p){.pf-ref}, $|N|\equiv|N\cap Z(G)|\pmod p$.
-Since $N\neq1$ is a subgroup of a $p$-group, $p\mid|N|$, so $p\mid|N\cap Z(G)|$.
-As $e\in N\cap Z(G)$, this gives $|N\cap Z(G)|\ge p$, so $N\cap Z(G)\neq1$.
+By steps [](#n-classes-fixed-points-eq-cap-z){.pf-ref} and [](#nontrivial-classes-div-by-p){.pf-ref}, $\cardinality{N}\equiv\cardinality{N\cap Z(G)}\pmod p$.
+Since $N\neq1$ is a subgroup of a $p$-group, $p\mid\cardinality{N}$, so $p\mid\cardinality{N\cap Z(G)}$.
+As $e\in N\cap Z(G)$, this gives $\cardinality{N\cap Z(G)}\ge p$, so $N\cap Z(G)\neq1$.
 :::
 
 :::

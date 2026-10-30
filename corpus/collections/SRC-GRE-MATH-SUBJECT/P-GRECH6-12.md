@@ -85,7 +85,7 @@ For an Abelian group $G$ of order $p^2q^4$, primary decomposition gives
 $$
 G\cong G_{(p)}\oplus G_{(q)},
 $$
-where $|G_{(p)}|=p^2$ and $|G_{(q)}|=q^4$. These primary subgroups are determined intrinsically as the elements of prime-power order for the respective primes, so two such direct sums are isomorphic exactly when their $p$-primary factors are isomorphic and their $q$-primary factors are isomorphic. Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} therefore give $2\cdot5=10$ possibilities.
+where $\cardinality{G_{(p)}}=p^2$ and $\cardinality{G_{(q)}}=q^4$. These primary subgroups are determined intrinsically as the elements of prime-power order for the respective primes, so two such direct sums are isomorphic exactly when their $p$-primary factors are isomorphic and their $q$-primary factors are isomorphic. Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} therefore give $2\cdot5=10$ possibilities.
 
 :::
 

@@ -68,7 +68,7 @@ y^4\le2,
 $$
 so
 $$
-|x|,|y|\le2^{1/4}.
+\abs{x},\abs{y}\le2^{1/4}.
 $$
 Thus $C$ is bounded.
 By Heine--Borel, $C$ is compact.
@@ -87,7 +87,7 @@ is
 $$
 d(x,y)
 =
-\frac{|y-x+100|}{\sqrt2}.
+\frac{\abs{y-x+100}}{\sqrt2}.
 $$
 
 
@@ -103,7 +103,7 @@ ax+by+c=0
 $$
 is
 $$
-\frac{|ax+by+c|}{\sqrt{a^2+b^2}}.
+\frac{\abs{ax+by+c}}{\sqrt{a^2+b^2}}.
 $$
 Substitute
 $$
@@ -130,13 +130,13 @@ $$
 
 By step [](#s1-1){.pf-ref},
 $$
-|x|,|y|\le2^{1/4}<2.
+\abs{x},\abs{y}\le2^{1/4}<2.
 $$
 Hence
 $$
 y-x+100
 \ge
-100-|x|-|y|
+100-\abs{x}-\abs{y}
 >
 100-4
 >
@@ -216,9 +216,9 @@ $$
 \begin{aligned}
 x-y
 &\le
-|x|+|y|\\
+\abs{x}+\abs{y}\\
 &\le
-\bigl(|x|^4+|y|^4\bigr)^{1/4}
+\bigl(\abs{x}^4+\abs{y}^4\bigr)^{1/4}
 \bigl(1^{4/3}+1^{4/3}\bigr)^{3/4}\\
 &=
 2^{1/4}2^{3/4}\\
@@ -247,7 +247,7 @@ $$
 
 For equality in
 $$
-x-y\le |x|+|y|,
+x-y\le \abs{x}+\abs{y},
 $$
 one must have
 $$
@@ -258,15 +258,15 @@ $$
 
 For equality in Hölder with vectors
 $$
-(|x|,|y|)
+(\abs{x},\abs{y})
 \qquad\text{and}\qquad
 (1,1),
 $$
 the quantities
 $$
-|x|^4
+\abs{x}^4
 \qquad\text{and}\qquad
-|y|^4
+\abs{y}^4
 $$
 must be proportional to
 $$
@@ -276,7 +276,7 @@ $$
 $$
 so
 $$
-|x|=|y|.
+\abs{x}=\abs{y}.
 $$
 The constraint
 $$
@@ -284,11 +284,11 @@ x^4+y^4=2
 $$
 then gives
 $$
-2|x|^4=2,
+2\abs{x}^4=2,
 $$
 so
 $$
-|x|=|y|=1.
+\abs{x}=\abs{y}=1.
 $$
 Together with the sign conditions,
 $$
@@ -345,7 +345,7 @@ step [](#s1-2){.pf-ref} gives
 $$
 d
 =
-\frac{|-1-1+100|}{\sqrt2}
+\frac{\abs{-1-1+100}}{\sqrt2}
 =
 \frac{98}{\sqrt2}
 =

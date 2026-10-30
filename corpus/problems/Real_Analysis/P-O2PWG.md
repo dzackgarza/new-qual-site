@@ -62,7 +62,7 @@ If $K$ is compact, $F$ is closed, and $K \cap F = \emptyset$, then $\dist(K, F) 
 
 ::: pf-proof
 
-$x \mapsto \dist(x, F)$ satisfies $|\dist(x, F) - \dist(y, F)| \le d(x, y)$, so it is continuous and attains its minimum on $K$ at some $k_0$, assuming $K$ and $F$ nonempty. If $\dist(k_0, F) = 0$, then $k_0 \in \overline F = F$, contradicting $K \cap F = \emptyset$. See [[E-SA3HI]].
+$x \mapsto \dist(x, F)$ satisfies $\abs{\dist(x, F) - \dist(y, F)} \le d(x, y)$, so it is continuous and attains its minimum on $K$ at some $k_0$, assuming $K$ and $F$ nonempty. If $\dist(k_0, F) = 0$, then $k_0 \in \overline F = F$, contradicting $K \cap F = \emptyset$. See [[E-SA3HI]].
 
 :::
 

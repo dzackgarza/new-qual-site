@@ -32,13 +32,13 @@ $$
 
 (a) Assume
 $$
-\sum_{m,n=1}^\infty |a_{mn}|^2<\infty.
+\sum_{m,n=1}^\infty \abs{a_{mn}}^2<\infty.
 $$
 Show that $T$ is bounded on $c_{00}$ and therefore extends uniquely to a bounded operator on $\ell^2$.
 
 (b) If instead only
 $$
-\sup_{m,n}|a_{mn}|<\infty,
+\sup_{m,n}\abs{a_{mn}}<\infty,
 $$
 must $T$ extend boundedly to $\ell^2$? Explain.
 :::
@@ -59,24 +59,24 @@ $$
 $$
 Hence, by Cauchy--Schwarz in the $m$-sum,
 $$
-|(Tx)_n|^2
+\abs{(Tx)_n}^2
 \le
-\left(\sum_m|a_{mn}|^2\right)
-\left(\sum_m|x_m|^2\right).
+\left(\sum_m\abs{a_{mn}}^2\right)
+\left(\sum_m\abs{x_m}^2\right).
 $$
 Summing over $n$ gives
 $$
 \begin{aligned}
-\|Tx\|_2^2
-&=\sum_n|(Tx)_n|^2\\
+\norm{Tx}_2^2
+&=\sum_n\abs{(Tx)_n}^2\\
 &\le
-\left(\sum_{m,n}|a_{mn}|^2\right)\|x\|_2^2.
+\left(\sum_{m,n}\abs{a_{mn}}^2\right)\norm{x}_2^2.
 \end{aligned}
 $$
 Thus
 $$
-\|Tx\|_2\le
-\left(\sum_{m,n}|a_{mn}|^2\right)^{1/2}\|x\|_2.
+\norm{Tx}_2\le
+\left(\sum_{m,n}\abs{a_{mn}}^2\right)^{1/2}\norm{x}_2.
 $$
 Since $c_{00}$ is dense in $\ell^2$, $T$ extends uniquely by continuity to a bounded operator on $\ell^2$.
 
@@ -105,13 +105,13 @@ a_{mn}=\langle Te_m,e_n\rangle
 $$
 so
 $$
-\sup_{m,n}|a_{mn}|=1.
+\sup_{m,n}\abs{a_{mn}}=1.
 $$
 However,
 $$
-\|Te_m\|_2=\sqrt m,
+\norm{Te_m}_2=\sqrt m,
 \qquad
-\|e_m\|_2=1.
+\norm{e_m}_2=1.
 $$
 Therefore $T$ is unbounded on $c_{00}$ and cannot extend to a bounded operator on $\ell^2$.
 

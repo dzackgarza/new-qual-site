@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-PM5FN
 kind: problem
-title: Bounds relating $\sup_{|z|\le R}|f|$ and $\sup_{|z|\le R}|f'|$ for holomorphic
-  $f$ on $|z|<3R$
+title: Bounds relating $\sup_{\abs{z}\le R}\abs{f}$ and $\sup_{\abs{z}\le R}\abs{f'}$ for holomorphic $f$ on $\abs{z}<3R$
 classification:
   areas:
   - complex-analysis
@@ -20,7 +19,7 @@ Let $R>0$.
 Suppose $f$ is holomorphic on $\theset{z\st \abs{z} < 3R}$.
 Let
 $$
-M_{R}:=\sup _{|z| \leq R}|f(z)|, \quad N_{R}:=\sup _{|z| \leq R}\left|f^{\prime}(z)\right|
+M_{R}:=\sup _{\abs{z} \leq R}\abs{f(z)}, \quad N_{R}:=\sup _{\abs{z} \leq R}\abs{f^{\prime}(z)}
 $$
 
 a.
@@ -60,7 +59,7 @@ $$
 \leq \inverseof{R} M_{2R}\,
 \forall \abs{z} \leq R
 \implies
-N_R\definedas \sup_{\abs{z} \leq R}\abs{f'(z)}
+N_R\coloneqq \sup_{\abs{z} \leq R}\abs{f'(z)}
 \leq \inverseof{R} M_{2R}
 .$$
 

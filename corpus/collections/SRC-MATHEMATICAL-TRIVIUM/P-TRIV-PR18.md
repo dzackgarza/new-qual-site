@@ -20,7 +20,7 @@ Consider the series ω of n experiments whose results are given by independent v
 Denote by $C ( n , \epsilon )$ all typical series, or, more precisely,
 
 $$
-C ( n , \epsilon ) = \left\{ \omega | \mathbf { \epsilon } \left| \frac { S _ { n } ( \omega ) } { n } - p \right| \leqslant \epsilon \right\} ,\tag{47}
+C ( n , \epsilon ) = \left\{ \omega \st \mathbf { \epsilon } \abs{ \frac { S _ { n } ( \omega ) } { n } - p } \leqslant \epsilon \right\} ,\tag{47}
 $$
 
 with some small $\epsilon .$
@@ -60,7 +60,7 @@ Assume $0<p<1$, put $q=1-p$, and write
 $$
 r=\frac{S_n(\omega)}n.
 $$
-For a typical sequence, $|r-p|\leq\epsilon$.
+For a typical sequence, $\abs{r-p}\leq\epsilon$.
 
 ::: pf
 
@@ -110,8 +110,8 @@ $$
 
 If $\omega\in C(n,\epsilon)$, then
 $$
-\left|-\frac1n\log p(\omega)-H\right|
-\leq\epsilon\left|\log\frac qp\right|
+\abs{-\frac1n\log p(\omega)-H}
+\leq\epsilon\abs{\log\frac qp}
 \leq\widetilde\epsilon,
 $$
 for the source's
@@ -123,10 +123,10 @@ $$
 
 ::: pf-proof
 
-The first inequality follows from step [](#s1-2){.pf-ref} and $|r-p|\leq\epsilon$. Since $0<p,q<1$,
+The first inequality follows from step [](#s1-2){.pf-ref} and $\abs{r-p}\leq\epsilon$. Since $0<p,q<1$,
 $$
-\left|\log\frac qp\right|
-\leq|\log q|+|\log p|
+\abs{\log\frac qp}
+\leq\abs{\log q}+\abs{\log p}
 =-\log(pq)
 \leq-2\log(pq),
 $$
@@ -227,7 +227,7 @@ $$
 
 Since $S_n/n$ is the sample mean of independent Bernoulli variables of mean $p$ and variance $pq$, Chebyshev's inequality gives
 $$
-P\left(\left|\frac{S_n}n-p\right|>\epsilon\right)
+P\left(\abs{\frac{S_n}n-p}>\epsilon\right)
 \leq\frac{pq}{n\epsilon^2}\to0.
 $$
 The cardinality inequality is the rearrangement obtained in step [](#s1-6){.pf-ref}.

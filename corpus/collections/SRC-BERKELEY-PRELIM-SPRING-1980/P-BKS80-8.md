@@ -159,7 +159,7 @@ Thus $Av\in E_\mu$.
 
 For every eigenvalue $\mu$ of $A^2$, the restriction
 $$
-A|_{E_\mu}
+A\restrict_{E_\mu}
 $$
 is diagonalizable.
 
@@ -168,7 +168,7 @@ is diagonalizable.
 Because $A$ is invertible, $A^2$ is invertible, so $\mu\ne0$. On
 $E_\mu$ one has
 $$
-(A|_{E_\mu})^2=\mu I.
+(A\restrict_{E_\mu})^2=\mu I.
 $$
 Therefore the minimal polynomial of the restriction divides
 $$

@@ -59,7 +59,7 @@ $\operatorname{Res}(F,k)=\dfrac{(-1)^k}{(k+a)^2}$ for $k\in\ZZ$, and $\operatorn
 
 The poles of $F$ are the zeros $k\in\ZZ$ of $\sin(\pi z)$ and the point $-a\notin\ZZ$. Near $k$, $\sin(\pi z)=(-1)^k\pi(z-k)+O((z-k)^3)$, so $\pi\csc(\pi z)$ has a simple pole with residue $(-1)^k$. At the double pole $-a$,
 $$
-\operatorname{Res}(F,-a)=\left.\frac{d}{dz}\pi\csc(\pi z)\right|_{z=-a}
+\operatorname{Res}(F,-a)=\evaluated{\frac{d}{dz}\pi\csc(\pi z)}_{z=-a}
 =-\pi^2\csc(-\pi a)\cot(-\pi a)
 =-\pi^2\cos(\pi a)\csc^2(\pi a).
 $$

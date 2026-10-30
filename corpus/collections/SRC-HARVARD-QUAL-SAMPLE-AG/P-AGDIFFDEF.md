@@ -161,7 +161,7 @@ $$
 one has
 $$
 \boxed{
-\Omega_{X/Y}|_U\cong\widetilde{\Omega_{B/A}}.
+\Omega_{X/Y}\restrict_U\cong\widetilde{\Omega_{B/A}}.
 }
 $$
 
@@ -190,7 +190,7 @@ $$
 ::: pf-proof
 Quasicoherence is affine-local on $X$.  By step [](#relative-differentials-sheaf){.pf-ref}, on every affine $U=\operatorname{Spec}B$ lying over an affine $V=\operatorname{Spec}A$, the restriction of $\Omega_{X/Y}$ is the sheaf associated to the $B$-module $\Omega_{B/A}$:
 $$
-\Omega_{X/Y}|_U\cong\widetilde{\Omega_{B/A}}.
+\Omega_{X/Y}\restrict_U\cong\widetilde{\Omega_{B/A}}.
 $$
 That is precisely the definition of a quasicoherent $\mathcal O_X$-module.
 :::

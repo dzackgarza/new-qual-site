@@ -34,7 +34,7 @@ Suppose $0 < a < b \leq \infty$, and find examples of functions $f \in L^p((0, \
 
 Consider functions of the form
 $$
-f(x) \definedas x^{- \alpha} \abs{ \log(x) }^{ \beta}.
+f(x) \coloneqq x^{- \alpha} \abs{ \log(x) }^{ \beta}.
 $$
 
 :::
@@ -49,7 +49,7 @@ Each example is $1$ on $(1/2, 2]$, so only the behaviour on $(0, 1/2]$ and on $(
 
 (i) Let
 $$
-f(x) \definedas \begin{cases}
+f(x) \coloneqq \begin{cases}
 x^{-1/b}\,(-\log x)^{-1/b} & 0 < x \le 1/2 \text{ if } b < \infty, \\
 -\log x & 0 < x \le 1/2 \text{ if } b = \infty, \\
 1 & 1/2 < x \le 2,\\
@@ -71,7 +71,7 @@ Near $\infty$, $f^p = x^{-p/a}(\log x)^{-p/a}$ is integrable iff $p > a$: at $p 
 
 (ii) Fix $\delta > 0$ with $(1+\delta)a > 1$, and let
 $$
-f(x) \definedas \begin{cases}
+f(x) \coloneqq \begin{cases}
 x^{-1/b}\,(-\log x)^{-1-\delta} & 0 < x \le 1/2,\\
 1 & 1/2 < x \le 2,\\
 x^{-1/a}\,(\log x)^{-1-\delta} & x > 2 ,
@@ -92,7 +92,7 @@ Near $\infty$, $f^p = x^{-p/a}(\log x)^{-(1+\delta)p}$ is integrable iff $p \ge 
 
 (iii) Fix $\delta > 0$ with $(1+\delta)a > 1$, and let
 $$
-f(x) \definedas \begin{cases}
+f(x) \coloneqq \begin{cases}
 x^{-1/a}\,(-\log x)^{-1-\delta} & 0 < x \le 1/2,\\
 1 & 1/2 < x \le 2,\\
 x^{-1/a}\,(\log x)^{-1-\delta} & x > 2 .

@@ -71,7 +71,7 @@ The product $HQ$ is a $p$-subgroup of $G$ containing $Q$.
 
 Because $H\le N_G(Q)$, the subgroup $Q$ is normal in $HQ$, so $HQ$ is a subgroup and
 $$
-|HQ|=\frac{|H||Q|}{|H\cap Q|},
+\cardinality{HQ}=\frac{\cardinality{H}\cardinality{Q}}{\cardinality{H\cap Q}},
 $$
 a power of $p$. It contains $Q$.
 
@@ -135,7 +135,7 @@ elements.
 
 Orbit–stabilizer and step [](#s5){.pf-ref} give
 $$
-|P\cdot Q|=[P:\operatorname{Stab}_P(Q)]=[P:P\cap Q].
+\cardinality{P\cdot Q}=[P:\operatorname{Stab}_P(Q)]=[P:P\cap Q].
 $$
 
 **(c).**

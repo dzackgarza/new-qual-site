@@ -73,7 +73,7 @@ Thus we identify $G$ with a finite subgroup of $\operatorname{Aut}_F(E)$.
 Let a finite group $H$ act faithfully by automorphisms on a field $K$, and set $K^H:=\{a\in K:\sigma(a)=a\text{ for all }\sigma\in H\}$.
 Then
 $$
-[K:K^H]=|H|
+[K:K^H]=\cardinality{H}
 $$
 and
 $$
@@ -84,7 +84,7 @@ $$
 Write
 $$
 H=\{\sigma_1,\ldots,\sigma_m\},
-\qquad m=|H|.
+\qquad m=\cardinality{H}.
 $$
 We use the linear independence of distinct field homomorphisms: the maps $\sigma_i:K\to K$ are linearly independent over $K$ as functions.
 Indeed, if a nontrivial relation with the fewest nonzero coefficients were
@@ -140,7 +140,7 @@ m\le [K:K^H].
 $$
 Consequently
 $$
-[K:K^H]=m=|H|.
+[K:K^H]=m=\cardinality{H}.
 $$
 The extension has exactly its degree many $K^H$-automorphisms, hence is finite Galois, and all of its automorphisms are the elements of $H$.
 Therefore
@@ -165,7 +165,7 @@ F\subseteq L\subseteq E.
 $$
 Applying step [](#galois-descent-lemma){.pf-ref} to the faithful action of $G$ on $E$ gives
 $$
-[E:L]=|G|
+[E:L]=\cardinality{G}
 $$
 and shows that $E/L$ is Galois with
 $$

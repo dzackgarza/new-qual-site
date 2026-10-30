@@ -477,7 +477,7 @@ Y\equiv aC_0+bf.
 $$
 Since
 $$
-f=(\pi|_Y)\circ\varphi
+f=(\pi\restrict_Y)\circ\varphi
 $$
 has degree $3$,
 $$
@@ -527,7 +527,7 @@ the normalization of $Y$.
 
 The morphism
 $$
-\pi|_Y:Y\longrightarrow C
+\pi\restrict_Y:Y\longrightarrow C
 $$
 is purely inseparable of degree $3$.
 
@@ -535,12 +535,12 @@ is purely inseparable of degree $3$.
 
 Step [](#s9){.pf-ref} identifies the function field of $Y$ with that of its normalization
 $C$. Under this identification, the induced extension of function fields for
-$\pi|_Y$ is exactly the extension induced by
+$\pi\restrict_Y$ is exactly the extension induced by
 $$
 f:C\longrightarrow C.
 $$
 The characteristic-$3$ Frobenius is purely inseparable of degree $3$.
-Therefore so is $\pi|_Y$.
+Therefore so is $\pi\restrict_Y$.
 
 :::
 

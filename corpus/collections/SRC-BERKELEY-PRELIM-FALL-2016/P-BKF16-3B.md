@@ -31,7 +31,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Suppose that $I$ is a closed interval and $f:I\to I$ is smooth with $|f'|$ bounded by some number $r<1$ on $I$.
+(a) Suppose that $I$ is a closed interval and $f:I\to I$ is smooth with $\abs{f'}$ bounded by some number $r<1$ on $I$.
 Let $a_0\in I$ and put $a_{n+1}=f(a_n)$.
 Prove that the sequence $(a_n)$ tends to the unique root of $f(x)=x$ in $I$.
 
@@ -98,7 +98,7 @@ f'(c)
 $$
 This contradicts
 $$
-|f'(c)|\le r<1.
+\abs{f'(c)}\le r<1.
 $$
 
 :::
@@ -109,9 +109,9 @@ $$
 
 If $p$ is the unique fixed point from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, then
 $$
-|a_{n+1}-p|
+\abs{a_{n+1}-p}
 \le
-r|a_n-p|
+r\abs{a_n-p}
 $$
 for every $n\ge0$.
 
@@ -120,9 +120,9 @@ for every $n\ge0$.
 Since $a_n,p\in I$, the mean value theorem gives a point between them
 at which
 $$
-|f(a_n)-f(p)|
+\abs{f(a_n)-f(p)}
 \le
-r|a_n-p|.
+r\abs{a_n-p}.
 $$
 Using
 $$
@@ -144,9 +144,9 @@ The sequence in part (a) converges to $p$.
 
 Iterating step [](#s3){.pf-ref} gives
 $$
-|a_n-p|
+\abs{a_n-p}
 \le
-r^n|a_0-p|.
+r^n\abs{a_0-p}.
 $$
 Since $0\le r<1$,
 $$
@@ -247,7 +247,7 @@ which proves $\cos(J)\subseteq J$.
 
 On $J$,
 $$
-|\cos'(x)|
+\abs{\cos'(x)}
 \le
 \sin d
 <
@@ -258,7 +258,7 @@ $$
 
 The interval $J$ lies in $(0,1)$ by step [](#s6){.pf-ref}. Therefore
 $$
-|\cos'(x)|
+\abs{\cos'(x)}
 =
 \sin x
 \le

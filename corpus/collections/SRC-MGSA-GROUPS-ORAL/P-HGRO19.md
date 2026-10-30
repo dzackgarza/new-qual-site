@@ -27,7 +27,7 @@ Prove that every group of order $36$ has a nontrivial normal subgroup of order $
 
 ::: {.solution}
 Let $n_3$ be the number of Sylow $3$-subgroups of $G$.
-Since $|G|=36=2^2\cdot3^2$, Sylow's theorem gives
+Since $\cardinality{G}=36=2^2\cdot3^2$, Sylow's theorem gives
 $$
 n_3\equiv1\pmod3,
 \qquad
@@ -60,17 +60,17 @@ homomorphism
 $$
 \varphi:G\to S_4.
 $$
-The action is transitive by Sylow conjugacy, so $|\operatorname{im}\varphi|$ is
+The action is transitive by Sylow conjugacy, so $\cardinality{\operatorname{im}\varphi}$ is
 divisible by $4$. Also
 $$
-|\operatorname{im}\varphi|\mid |G|=36
+\cardinality{\operatorname{im}\varphi}\mid \cardinality{G}=36
 \quad\text{and}\quad
-|\operatorname{im}\varphi|\mid |S_4|=24.
+\cardinality{\operatorname{im}\varphi}\mid \cardinality{S_4}=24.
 $$
-Hence $|\operatorname{im}\varphi|$ divides $12$ and is divisible by $4$, so it
+Hence $\cardinality{\operatorname{im}\varphi}$ divides $12$ and is divisible by $4$, so it
 is $4$ or $12$. Therefore
 $$
-|\ker\varphi|=\frac{36}{|\operatorname{im}\varphi|}
+\cardinality{\ker\varphi}=\frac{36}{\cardinality{\operatorname{im}\varphi}}
 $$
 is respectively $9$ or $3$. The kernel is normal in $G$.
 

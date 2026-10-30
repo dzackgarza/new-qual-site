@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $|G| = 12$ and $G$ is a non-abelian group with a normal subgroup of order $4$ (or equivalently, $n_3 = 4$), then $G \cong A_4$.
+Show that if $\cardinality{G} = 12$ and $G$ is a non-abelian group with a normal subgroup of order $4$ (or equivalently, $n_3 = 4$), then $G \cong A_4$.
 :::
 
 ::: {.solution}

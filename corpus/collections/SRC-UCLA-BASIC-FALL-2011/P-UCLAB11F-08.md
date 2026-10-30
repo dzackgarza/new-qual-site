@@ -169,7 +169,7 @@ $$
 
 The restriction
 $$
-A_E:=A|_{\ker B}
+A_E:=A\restrict_{\ker B}
 $$
 is diagonalizable.
 
@@ -198,7 +198,7 @@ W=\operatorname{im}B.
 $$
 For every $\mu\in\CC$, the restriction
 $$
-A_W:=A|_W
+A_W:=A\restrict_W
 $$
 satisfies
 $$

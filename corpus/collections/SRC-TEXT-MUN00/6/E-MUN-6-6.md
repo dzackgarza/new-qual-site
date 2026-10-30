@@ -41,7 +41,7 @@ bijection, inverse $(x_i)\mapsto\{i:x_i=1\}$.
 
 ::: {.pf-step #s2}
 
-Hence $|\mathcal P(A)|=2^n$ finite.
+Hence $\cardinality{\mathcal P(A)}=2^n$ finite.
 
 ::: pf-proof
 

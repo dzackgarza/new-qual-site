@@ -32,7 +32,7 @@ Classify all rings with identity elements that have nine elements.
 
 ::: {.pf-step #s1}
 
-Let $R$ be a ring with identity and $|R|=9$. Its additive group is isomorphic either to $C_9$ or to $C_3\times C_3$.
+Let $R$ be a ring with identity and $\cardinality{R}=9$. Its additive group is isomorphic either to $C_9$ or to $C_3\times C_3$.
 
 ::: pf-proof
 

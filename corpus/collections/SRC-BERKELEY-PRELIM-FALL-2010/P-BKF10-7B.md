@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-7B
 kind: problem
-title: The derivative bound $\lvert f'(0)\rvert\le1$ in Schwarz's lemma
+title: The derivative bound $\abs{ f'(0)}\le1$ in Schwarz's lemma
 classification:
   areas: [prelim]
   topics: []

@@ -21,7 +21,7 @@ Prove that there exists a sequence of rational functions $R_n$ analytic in $\CC 
 
 (i) $\lim_{n \to \infty} R_n(z) = 1$ for all $z \in \DD$.
 
-(ii) $\lim_{n \to \infty} R_n(z) = 2$ for $2 \leq |z| \leq 3$.
+(ii) $\lim_{n \to \infty} R_n(z) = 2$ for $2 \leq \abs{z} \leq 3$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ Prove that there exists a sequence of rational functions $R_n$ analytic in $\CC 
 
 ::: pf-step
 
-The two compact sets $\overline{\DD}$ and $A = \{2 \le |z| \le 3\}$ are disjoint, and $\CC \setminus \{3/2\}$ is connected.
+The two compact sets $\overline{\DD}$ and $A = \{2 \le \abs{z} \le 3\}$ are disjoint, and $\CC \setminus \{3/2\}$ is connected.
 
 ::: pf-proof
 
@@ -54,7 +54,7 @@ since $\overline{\DD}$ and $A$ are disjoint compact sets, they have disjoint nei
 
 ::: {.pf-step #s3}
 
-By Runge's theorem, for each $n$ there is a rational function $R_n$ with poles only at $3/2$ such that $|R_n(z) - h(z)| < 1/n$ for all $z \in \overline{\DD} \cup A$.
+By Runge's theorem, for each $n$ there is a rational function $R_n$ with poles only at $3/2$ such that $\abs{R_n(z) - h(z)} < 1/n$ for all $z \in \overline{\DD} \cup A$.
 
 ::: pf-proof
 
@@ -78,7 +78,7 @@ Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 ::: {.pf-step #s5}
 
-In particular, $R_n(z) \to 1$ for all $z \in \DD$ and $R_n(z) \to 2$ for all $2 \le |z| \le 3$.
+In particular, $R_n(z) \to 1$ for all $z \in \DD$ and $R_n(z) \to 2$ for all $2 \le \abs{z} \le 3$.
 
 ::: pf-proof
 

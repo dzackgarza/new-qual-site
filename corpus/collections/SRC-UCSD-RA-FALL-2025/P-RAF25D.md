@@ -61,8 +61,8 @@ L(f):=\int_\Omega f(x)\,dx.
 $$
 Since $\Omega$ is bounded, $L^n(\Omega)<\infty$, and Cauchy--Schwarz gives
 $$
-|L(f)|
-\le L^n(\Omega)^{1/2}\|f\|_2.
+\abs{L(f)}
+\le L^n(\Omega)^{1/2}\norm{f}_2.
 $$
 Thus $L$ is continuous. Moreover
 $$

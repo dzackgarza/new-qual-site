@@ -20,7 +20,7 @@ Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex comp
 
 (b) For a given $A \in M_{m,n}$, prove that
 $$
-\sigma_1(A) = \max_{x,y \ne 0} \frac{|y^H A x|}{\|y\|_2 \|x\|_2},
+\sigma_1(A) = \max_{x,y \ne 0} \frac{\abs{y^H A x}}{\norm{y}_2 \norm{x}_2},
 $$
 where $\sigma_1(A)$ is the largest singular value of $A$.
 
@@ -42,27 +42,27 @@ These are the singular values of $A$.
 
 (b) By Cauchy--Schwarz,
 $$
-|y^HAx|\le \|y\|_2\,\|Ax\|_2
-\le \|y\|_2\,\sigma_1(A)\|x\|_2.
+\abs{y^HAx}\le \norm{y}_2\,\norm{Ax}_2
+\le \norm{y}_2\,\sigma_1(A)\norm{x}_2.
 $$
 Hence
 $$
-\frac{|y^HAx|}{\|y\|_2\|x\|_2}\le\sigma_1(A).
+\frac{\abs{y^HAx}}{\norm{y}_2\norm{x}_2}\le\sigma_1(A).
 $$
 Let $v_1$ and $u_1$ be right and left singular vectors for $\sigma_1(A)$, normalized so that
 $$
 Av_1=\sigma_1(A)u_1,
 \qquad
-\|u_1\|_2=\|v_1\|_2=1.
+\norm{u_1}_2=\norm{v_1}_2=1.
 $$
 Then
 $$
-|u_1^HAv_1|=\sigma_1(A),
+\abs{u_1^HAv_1}=\sigma_1(A),
 $$
 so equality is attained. Therefore
 $$
 \boxed{\sigma_1(A)=\max_{x,y\ne0}
-\frac{|y^HAx|}{\|y\|_2\|x\|_2}.}
+\frac{\abs{y^HAx}}{\norm{y}_2\norm{x}_2}.}
 $$
 
 (c) Define
@@ -70,14 +70,14 @@ $$
 F(A)=\{x^HAx:x\in\CC^n,\ x^Hx=1\},
 $$
 $$
-\rho(A)=\max\{ |\lambda|:\lambda\in\operatorname{spec}(A)\},
+\rho(A)=\max\{ \abs{\lambda}:\lambda\in\operatorname{spec}(A)\},
 $$
 and
 $$
-\omega(A)=\max\{|z|:z\in F(A)\}
-=\max_{x^Hx=1}|x^HAx|.
+\omega(A)=\max\{\abs{z}:z\in F(A)\}
+=\max_{x^Hx=1}\abs{x^HAx}.
 $$
-If $Ax=\lambda x$ and $\|x\|_2=1$, then
+If $Ax=\lambda x$ and $\norm{x}_2=1$, then
 $$
 \lambda=x^HAx\in F(A).
 $$
@@ -85,9 +85,9 @@ Thus every eigenvalue lies in the field of values, and so
 $$
 \rho(A)\le\omega(A).
 $$
-On the other hand, applying part (b) with $y=x$ and $\|x\|_2=1$ gives
+On the other hand, applying part (b) with $y=x$ and $\norm{x}_2=1$ gives
 $$
-|x^HAx|\le\sigma_1(A).
+\abs{x^HAx}\le\sigma_1(A).
 $$
 Taking the maximum over unit vectors gives
 $$

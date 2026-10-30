@@ -32,13 +32,13 @@ audit:
 ::: {.solution}
 For (a), take
 $$
-f(x)=(1+|x|)^{-3/4}.
+f(x)=(1+\abs{x})^{-3/4}.
 $$
 Then
 $$
-|f(x)|^2=(1+|x|)^{-3/2},
+\abs{f(x)}^2=(1+\abs{x})^{-3/2},
 $$
-which is integrable on $\RR$, while $(1+|x|)^{-3/4}$ is not integrable at infinity. Hence
+which is integrable on $\RR$, while $(1+\abs{x})^{-3/4}$ is not integrable at infinity. Hence
 $$
 f\in L^2(\RR)\setminus L^1(\RR).
 $$
@@ -54,7 +54,7 @@ $$
 $$
 so $g\in L^1((0,1))$. But
 $$
-|g(x)|^2=x^{-3/2},
+\abs{g(x)}^2=x^{-3/2},
 $$
 and
 $$

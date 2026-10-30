@@ -61,7 +61,7 @@ $$
 $$
 Then there exists $N$ such that for all $n\ge N$,
 $$
-|na_n-\ell|<\frac{\ell}{2}.
+\abs{na_n-\ell}<\frac{\ell}{2}.
 $$
 
 
@@ -155,14 +155,14 @@ nonnegative series.
 
 Absolute convergence implies
 $$
-\boxed{|a_n|\to0}.
+\boxed{\abs{a_n}\to0}.
 $$
 
 
 ::: pf-proof
 
 The terms of any convergent series must tend to zero. Apply this to the
-nonnegative series $\sum|a_n|$.
+nonnegative series $\sum\abs{a_n}$.
 
 :::
 
@@ -172,7 +172,7 @@ nonnegative series $\sum|a_n|$.
 
 Therefore there exists $N$ such that
 $$
-\boxed{|a_n|<1}
+\boxed{\abs{a_n}<1}
 $$
 for every $n\ge N$.
 
@@ -194,7 +194,7 @@ $$
 and $n\ge N$, then
 $$
 \boxed{
-|a_n|^p\le|a_n|}.
+\abs{a_n}^p\le\abs{a_n}}.
 $$
 
 
@@ -204,7 +204,7 @@ For $0\le x\le1$ and $p>1$,
 $$
 x^p\le x.
 $$
-Apply this with $x=|a_n|$.
+Apply this with $x=\abs{a_n}$.
 
 :::
 
@@ -215,7 +215,7 @@ Apply this with $x=|a_n|$.
 Hence
 $$
 \boxed{
-\sum_{n=1}^{\infty}|a_n|^p
+\sum_{n=1}^{\infty}\abs{a_n}^p
 \text{ converges}}
 $$
 for every real $p>1$.
@@ -225,7 +225,7 @@ for every real $p>1$.
 
 The tail is bounded termwise by the convergent series
 $$
-\sum_{n=N}^{\infty}|a_n|
+\sum_{n=N}^{\infty}\abs{a_n}
 $$
 using step [](#s1-9){.pf-ref}. Finitely many initial terms do not affect convergence.
 
@@ -247,7 +247,7 @@ $$
 
 Whenever the real power is defined,
 $$
-|a_n^p|=|a_n|^p.
+\abs{a_n^p}=\abs{a_n}^p.
 $$
 Apply step [](#s1-10){.pf-ref}.
 
@@ -304,7 +304,7 @@ It does not converge absolutely.
 ::: pf-proof
 
 $$
-\sum|a_n|
+\sum\abs{a_n}
 =
 \sum\frac1{\sqrt n},
 $$

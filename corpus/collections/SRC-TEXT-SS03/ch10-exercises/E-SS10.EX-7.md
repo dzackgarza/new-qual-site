@@ -26,7 +26,7 @@ $$
 \prod_ {n = 0} ^ {\infty} (1 + x ^ {n}) (1 - x ^ {2 n + 2}) = \sum_ {n = - \infty} ^ {\infty} x ^ {n (n + 1) / 2},
 $$
 
-which holds for $| x | < 1$
+which holds for $\abs{ x } < 1$
 
 (b) The “septagonal number” identity
 
@@ -34,7 +34,7 @@ $$
 \prod_ {n = 0} ^ {\infty} (1 - x ^ {5 n + 1}) (1 - x ^ {5 n + 4}) (1 - x ^ {5 n + 5}) = \sum_ {n = - \infty} ^ {\infty} (- 1) ^ {n} x ^ {n (5 n + 3) / 2},
 $$
 
-which holds for $| x | < 1$
+which holds for $\abs{ x } < 1$
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ We use the Jacobi triple product in the form
 $$
 \sum_{n\in\ZZ}z^n q^{n(n+1)/2}
 =\prod_{m=1}^\infty(1-q^m)(1+zq^m)(1+z^{-1}q^{m-1}),
-\qquad |q|<1.
+\qquad \abs{q}<1.
 \tag{1}
 $$
 

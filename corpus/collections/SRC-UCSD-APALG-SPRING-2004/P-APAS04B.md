@@ -30,7 +30,7 @@ audit:
 (b) Give a $2\times 2$ example of $A\in M_2(\RR)$, where $A\neq 0$, but $x^TAx=0$
 for all $x\in\RR^2$.
 
-(c) Show that $A\in M_n$ is normal iff $\|Ax\|_2=\|A^Hx\|_2$ for all $x\in\CC^n$.
+(c) Show that $A\in M_n$ is normal iff $\norm{Ax}_2=\norm{A^Hx}_2$ for all $x\in\CC^n$.
 
 (d) Show that $A\in M_n$ is normal iff $(Ax,Ay)=(A^Hx,A^Hy)$ for all
 $x,y\in\CC^n$.
@@ -94,12 +94,12 @@ The matrix is visibly nonzero.
 :::
 
 ::: pf-step
-If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\CC^n$.
+If $A$ is normal, then $\norm{Ax}_2=\norm{A^Hx}_2$ for every $x\in\CC^n$.
 
 ::: pf-proof
 Normality means $A^HA=AA^H$. Therefore
 $$
-\|Ax\|_2^2=x^HA^HAx=x^HAA^Hx=\|A^Hx\|_2^2.
+\norm{Ax}_2^2=x^HA^HAx=x^HAA^Hx=\norm{A^Hx}_2^2.
 $$
 Both norms are nonnegative, so they are equal.
 :::
@@ -107,12 +107,12 @@ Both norms are nonnegative, so they are equal.
 :::
 
 ::: {.pf-step #norm-equal-implies-normal}
-Conversely, if $\|Ax\|_2=\|A^Hx\|_2$ for every $x$, then $A$ is normal.
+Conversely, if $\norm{Ax}_2=\norm{A^Hx}_2$ for every $x$, then $A$ is normal.
 
 ::: pf-proof
 For every $x$,
 $$
-0=\|Ax\|_2^2-\|A^Hx\|_2^2
+0=\norm{Ax}_2^2-\norm{A^Hx}_2^2
  =x^H(A^HA-AA^H)x.
 $$
 Applying part (a) (steps [](#diagonal-entries-zero){.pf-ref} and [](#a-is-zero){.pf-ref}) to the matrix $A^HA-AA^H$ gives
@@ -142,7 +142,7 @@ Conversely, if $(Ax,Ay)=(A^Hx,A^Hy)$ for all $x,y$, then $A$ is normal.
 ::: pf-proof
 Setting $y=x$ gives
 $$
-\|Ax\|_2^2=\|A^Hx\|_2^2
+\norm{Ax}_2^2=\norm{A^Hx}_2^2
 $$
 for every $x$. By step [](#norm-equal-implies-normal){.pf-ref}, $A$ is normal.
 :::

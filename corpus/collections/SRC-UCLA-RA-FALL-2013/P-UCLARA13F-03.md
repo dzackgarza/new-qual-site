@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Does there exist a holomorphic function $f:\DD\to\CC$ such that
 $$
-|f(z_n)|\longrightarrow\infty
+\abs{f(z_n)}\longrightarrow\infty
 $$
-for every sequence $(z_n)\subset\DD$ with $|z_n|\to1$?
+for every sequence $(z_n)\subset\DD$ with $\abs{z_n}\to1$?
 Justify your answer.
 :::
 
@@ -48,9 +48,9 @@ This assumes the negation of the desired answer.
 
 The stated sequential property implies that for every $M>0$ there exists $0<r<1$ such that
 $$
-|z|>r
+\abs{z}>r
 \quad\Longrightarrow\quad
-|f(z)|>M.
+\abs{f(z)}>M.
 $$
 
 
@@ -58,11 +58,11 @@ $$
 
 If this failed for some $M>0$, then for every integer $n$ one could choose $z_n\in\DD$ with
 $$
-|z_n|>1-1/n
+\abs{z_n}>1-1/n
 \qquad\text{and}\qquad
-|f(z_n)|\leq M.
+\abs{f(z_n)}\leq M.
 $$
-Then $|z_n|\to1$ but $|f(z_n)|$ would not tend to infinity, contradicting the hypothesis.
+Then $\abs{z_n}\to1$ but $\abs{f(z_n)}$ would not tend to infinity, contradicting the hypothesis.
 
 :::
 
@@ -72,13 +72,13 @@ Then $|z_n|\to1$ but $|f(z_n)|$ would not tend to infinity, contradicting the hy
 
 Taking $M=1$, there exists $r<1$ such that $f$ has no zeros in the annulus
 $$
-r<|z|<1.
+r<\abs{z}<1.
 $$
 
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref}, $|f(z)|>1$ throughout this annulus, so $f(z)\ne0$ there.
+By step [](#s1-2){.pf-ref}, $\abs{f(z)}>1$ throughout this annulus, so $f(z)\ne0$ there.
 
 :::
 
@@ -86,12 +86,12 @@ By step [](#s1-2){.pf-ref}, $|f(z)|>1$ throughout this annulus, so $f(z)\ne0$ th
 
 ::: pf-step
 
-The zeros of $f$ in the closed disk $\{|z|\leq r\}$ are finite in number, counted without multiplicity.
+The zeros of $f$ in the closed disk $\{\abs{z}\leq r\}$ are finite in number, counted without multiplicity.
 
 
 ::: pf-proof
 
-The zero set of a nonzero holomorphic function is discrete. The function is not identically zero because step [](#s1-3){.pf-ref} gives $|f|>1$ near the boundary. A discrete subset of the compact disk $\{|z|\leq r\}$ is finite.
+The zero set of a nonzero holomorphic function is discrete. The function is not identically zero because step [](#s1-3){.pf-ref} gives $\abs{f}>1$ near the boundary. A discrete subset of the compact disk $\{\abs{z}\leq r\}$ is finite.
 
 :::
 
@@ -121,15 +121,15 @@ By step [](#s1-3){.pf-ref} there are no zeros outside the compact disk, so $a_1,
 One has
 $$
 g(z)\longrightarrow0
-\qquad\text{whenever }|z|\to1.
+\qquad\text{whenever }\abs{z}\to1.
 $$
 
 
 ::: pf-proof
 
-The polynomial $p$ is bounded on the unit disk: there is $C<\infty$ with $|p(z)|\leq C$ for $|z|<1$. By the assumed property, $|f(z)|\to\infty$ uniformly toward the boundary in the sense of step [](#s1-2){.pf-ref}. Hence
+The polynomial $p$ is bounded on the unit disk: there is $C<\infty$ with $\abs{p(z)}\leq C$ for $\abs{z}<1$. By the assumed property, $\abs{f(z)}\to\infty$ uniformly toward the boundary in the sense of step [](#s1-2){.pf-ref}. Hence
 $$
-|g(z)|=\frac{|p(z)|}{|f(z)|}\leq\frac C{|f(z)|}\to0.
+\abs{g(z)}=\frac{\abs{p(z)}}{\abs{f(z)}}\leq\frac C{\abs{f(z)}}\to0.
 $$
 
 :::
@@ -140,8 +140,8 @@ $$
 
 For every $0<\rho<1$, the maximum modulus principle gives
 $$
-\max_{|z|\leq\rho}|g(z)|
-=\max_{|z|=\rho}|g(z)|.
+\max_{\abs{z}\leq\rho}\abs{g(z)}
+=\max_{\abs{z}=\rho}\abs{g(z)}.
 $$
 
 
@@ -163,9 +163,9 @@ $$
 
 ::: pf-proof
 
-Fix $z\in\DD$. For every $\rho$ with $|z|<\rho<1$,
+Fix $z\in\DD$. For every $\rho$ with $\abs{z}<\rho<1$,
 $$
-|g(z)|\leq\max_{|w|=\rho}|g(w)|.
+\abs{g(z)}\leq\max_{\abs{w}=\rho}\abs{g(w)}.
 $$
 Step [](#s1-6){.pf-ref}, in its uniform form from step [](#s1-2){.pf-ref}, says the right side tends to zero as $\rho\uparrow1$. Thus $g(z)=0$. Since $z$ was arbitrary, $g\equiv0$.
 

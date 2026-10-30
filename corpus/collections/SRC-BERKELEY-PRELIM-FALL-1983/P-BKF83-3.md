@@ -26,7 +26,7 @@ f:\RR^n\setminus\{0\}\to\RR
 $$
 be $C^1$, and suppose all partial derivatives are uniformly bounded:
 $$
-\left|\frac{\partial f}{\partial x_i}(x)\right|\le M
+\abs{\frac{\partial f}{\partial x_i}(x)}\le M
 $$
 for every $x\ne0$ and every $i$.
 
@@ -53,9 +53,9 @@ $$
 \norm{\nabla f(x)}^2
 =
 \sum_{i=1}^n
-\left|
+\abs{
 \frac{\partial f}{\partial x_i}(x)
-\right|^2
+}^2
 \le
 nM^2.
 $$
@@ -124,9 +124,9 @@ antipodal case.
 Parametrize such an arc by a piecewise $C^1$ curve $\gamma$. Then
 step [](#s1){.pf-ref} and the chain rule give
 $$
-\left|
+\abs{
 \frac{d}{dt}f(\gamma(t))
-\right|
+}
 \le
 M\sqrt n\,\norm{\gamma'(t)}.
 $$

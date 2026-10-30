@@ -39,7 +39,7 @@ $$
 so
 $$
 J(a)
-=\frac2i\int_{|z|=1}
+=\frac2i\int_{\abs{z}=1}
 \frac{dz}{z^2+2az+1}.
 $$
 The roots of the denominator are
@@ -48,7 +48,7 @@ z_\pm=-a\pm\sqrt{a^2-1}.
 $$
 For $a>1$, one has
 $$
-|z_+|<1<|z_-|,
+\abs{z_+}<1<\abs{z_-},
 $$
 so only $z_+$ lies inside the unit circle. Its residue is
 $$

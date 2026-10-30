@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-BCFIC
 kind: problem
-title: Biholomorphism from the crescent $|z|<1$, $|z-\frac12|>\frac12$ to the upper
-  half-plane
+title: Biholomorphism from the crescent $\abs{z}<1$, $\abs{z-\frac12}>\frac12$ to the upper half-plane
 classification:
   areas:
   - complex-analysis
@@ -18,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\frac 1 2| =\frac 1 2$ to the upper half plane $\Im z > 0$.
+Find an analytic isomorphism from the open region between $\abs{z} = 1$ and $\abs{z -\frac 1 2} =\frac 1 2$ to the upper half plane $\Im z > 0$.
 (You may leave your result as a composition of functions).
 :::
 
 ::: {.solution}
-Let $\Omega = \{z \in \CC : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the crescent and $\halfplane = \{w \in \CC : \text{Im}(w) > 0\}$ the upper half-plane.
+Let $\Omega = \{z \in \CC : \abs{z} < 1 \text{ and } \abs{z - 1/2} > 1/2\}$ be the crescent and $\halfplane = \{w \in \CC : \text{Im}(w) > 0\}$ the upper half-plane.
 
 * * *
 
@@ -39,11 +38,11 @@ Let $\Omega = \{z \in \CC : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the cresc
 
 ::: pf-step
 
-Both boundary circles $C_1: |z| = 1$ and $C_2: |z - 1/2| = 1/2$ pass through the point $z = 1$ (the pole of $\phi_1$), and they are tangent to each other at $z=1$ with common vertical tangent.
+Both boundary circles $C_1: \abs{z} = 1$ and $C_2: \abs{z - 1/2} = 1/2$ pass through the point $z = 1$ (the pole of $\phi_1$), and they are tangent to each other at $z=1$ with common vertical tangent.
 
 ::: pf-proof
 
-$1 \in C_1$ since $|1|=1$, and $1 \in C_2$ since $|1-1/2|=1/2$.
+$1 \in C_1$ since $\abs{1}=1$, and $1 \in C_2$ since $\abs{1-1/2}=1/2$.
 
 :::
 
@@ -87,7 +86,7 @@ Scaling of the result from step [](#s1-3){.pf-ref}.
 
 ::: pf-step
 
-The region $\Omega$ lies inside $|z| < 1$ ($\text{Re}(w_1) < -1/2$) and outside $|z - 1/2| = 1/2$ ($\text{Re}(w_1) > -1$). Testing $z = -1/2 \in \Omega$ gives $\phi_1(-1/2) = \frac{1}{-3/2} = -2/3 \in (-1, -1/2)$.
+The region $\Omega$ lies inside $\abs{z} < 1$ ($\text{Re}(w_1) < -1/2$) and outside $\abs{z - 1/2} = 1/2$ ($\text{Re}(w_1) > -1$). Testing $z = -1/2 \in \Omega$ gives $\phi_1(-1/2) = \frac{1}{-3/2} = -2/3 \in (-1, -1/2)$.
 
 ::: pf-proof
 

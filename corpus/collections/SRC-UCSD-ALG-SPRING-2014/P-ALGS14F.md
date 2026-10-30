@@ -171,7 +171,7 @@ E[x]/(m_\alpha)
 \cong
 \prod_{\sigma\in\operatorname{Gal}(E/F)}E.
 $$
-There are $|\operatorname{Gal}(E/F)|=[E:F]$ factors, proving the claim.
+There are $\cardinality{\operatorname{Gal}(E/F)}=[E:F]$ factors, proving the claim.
 
 ::: pf-proof
 

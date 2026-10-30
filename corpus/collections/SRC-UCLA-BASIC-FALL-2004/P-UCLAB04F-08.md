@@ -29,7 +29,7 @@ $$
 
 (b) Let
 $$
-S=\{v\in\RR^n:\|v\|=1\},
+S=\{v\in\RR^n:\norm{v}=1\},
 $$
 let $M$ be the minimum value of $Q$ on $S$, and choose $u\in S$ with $Q(u)=M$.
 Use Lagrange multipliers to prove that $u$ is an eigenvector of $A$ with eigenvalue $M$.
@@ -107,7 +107,7 @@ which equals the $k$th coordinate of $\nabla Q(v)$ by step [](#s1-1){.pf-ref}.
 
 Let
 $$
-h(v)=\|v\|^2.
+h(v)=\norm{v}^2.
 $$
 Then
 $$
@@ -129,7 +129,7 @@ so
 $$
 \nabla h(v)=2v.
 $$
-Since $u\in S$, one has $\|u\|=1$, hence $u\ne0$ and therefore $\nabla h(u)\ne0$.
+Since $u\in S$, one has $\norm{u}=1$, hence $u\ne0$ and therefore $\nabla h(u)\ne0$.
 
 :::
 
@@ -187,7 +187,7 @@ Q(u)
 =
 u\mathbin{\cdot}Au
 =
-\lambda\|u\|^2
+\lambda\norm{u}^2
 =
 \lambda.
 $$

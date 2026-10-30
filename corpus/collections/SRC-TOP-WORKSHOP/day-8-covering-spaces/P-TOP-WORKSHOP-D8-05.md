@@ -37,7 +37,7 @@ Let $h=p\circ g:Y\to B$, which is continuous by hypothesis. Fix $y_0\in Y$, and 
 $$
 s:U\longrightarrow V_0
 $$
-be the inverse of $p|_{V_0}$.
+be the inverse of $p\restrict_{V_0}$.
 
 By continuity of $h$, $h^{-1}(U)$ is a neighborhood of $y_0$. Since $Y$ is locally path connected, choose a path-connected open neighborhood
 $$
@@ -57,5 +57,5 @@ are lifts of the same path $h\circ\gamma$, and they agree at $0$, since both tak
 $$
 g(y)=s(h(y)).
 $$
-Thus $g|_W=s\circ h|_W$, which is continuous. Since $y_0$ was arbitrary, $g$ is continuous on $Y$.
+Thus $g\restrict_W=s\circ h\restrict_W$, which is continuous. Since $y_0$ was arbitrary, $g$ is continuous on $Y$.
 :::

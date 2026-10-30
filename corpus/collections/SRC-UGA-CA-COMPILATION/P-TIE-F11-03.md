@@ -23,7 +23,7 @@ $$
 F ( z ) = z - a - q f ( z ) , \quad { \mathrm { w h e r e } } \quad q { \mathrm { ~ i s ~ a ~ c o m p l e x ~ p a r a m e t e r . } }
 $$
 
-(1) Let $K \subset D$ be a circle with the center at point a and also we assume that $f ( z ) \neq 0$ for $z \in K$ . Prove that the function F has one and only one zero $z = w$ on the closed disc K whose boundary is the circle K if $| q | < \operatorname* { m i n } _ { z \in K } { \frac { | z - a | } { | f ( z ) | } }$
+(1) Let $K \subset D$ be a circle with the center at point a and also we assume that $f ( z ) \neq 0$ for $z \in K$ . Prove that the function F has one and only one zero $z = w$ on the closed disc K whose boundary is the circle K if $\abs{ q } < \operatorname* { m i n } _ { z \in K } { \frac { \abs{ z - a } } { \abs{ f ( z ) } } }$
 
 (2) Let $G ( z )$ be an analytic function on the disk K. Apply the residue theorem to prove that $\frac { G ( w ) } { F ^ { \prime } ( w ) } = \frac { 1 } { 2 \pi i } \int _ { K } \frac { G ( z ) } { F ( z ) }$ dz, where w is the zero from (1).
 

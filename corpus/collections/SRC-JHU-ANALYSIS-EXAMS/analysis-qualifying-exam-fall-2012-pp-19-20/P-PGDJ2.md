@@ -23,7 +23,7 @@ $$
 z^9 + z^6 + 30 z^5 - 3z + 2
 $$
 
-have in the annulus $\{ 1 \leq | z | \leq 3 \}$ . Justify your answer.
+have in the annulus $\{ 1 \leq \abs{ z } \leq 3 \}$ . Justify your answer.
 :::
 
 ::: {.solution}

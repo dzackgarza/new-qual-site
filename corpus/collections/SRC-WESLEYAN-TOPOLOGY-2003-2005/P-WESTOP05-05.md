@@ -233,7 +233,7 @@ The retained extraction does not preserve the spaces or sets whose
 cardinalities are requested. Cardinalities of Čech--Stone compactifications
 depend essentially on the underlying spaces; for example,
 $$
-|\beta X|
+\cardinality{\beta X}
 $$
 cannot be determined from the symbol $\beta$ alone.
 

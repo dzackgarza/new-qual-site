@@ -62,7 +62,7 @@ Thus $G / [G, G] \cong (\ZZ/m\ZZ) \oplus (\ZZ/n\ZZ)$.
 
 ::: pf-step
 
-The order of this finite abelian group is $|G / [G, G]| = |\ZZ/m\ZZ| \cdot |\ZZ/n\ZZ| = mn$.
+The order of this finite abelian group is $\cardinality{G / [G, G]} = \cardinality{\ZZ/m\ZZ} \cdot \cardinality{\ZZ/n\ZZ} = mn$.
 
 :::
 
@@ -125,7 +125,7 @@ Therefore, the set of finite orders of elements in $G$ is $\{d \in \ZZ_+ \mid d 
 ::: pf-step
 
 The abstract group structure of $G$ determines two algebraic invariants:
-        - The order of its abelianization: $P = |G / [G, G]| = mn$.
+        - The order of its abelianization: $P = \cardinality{G / [G, G]} = mn$.
         - The maximum finite order of an element in $G$: $M = \max(m, n)$.
 
 :::

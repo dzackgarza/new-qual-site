@@ -48,10 +48,10 @@ Show that $m(E) = 0$.
 ::: {.concept}
 \envlist
 - Absolute continuity of measures: $\lambda \ll \mu \iff E\in\mathcal{M}, \mu(E) = 0 \implies \lambda(E) = 0$.
-- Radon-Nikodym: if $\lambda \ll \mu$, then there exists a measurable function $\dd{\lambda}{\mu} \definedas f$ where $\lambda(E) = \int_E f \,d\mu$.
+- Radon-Nikodym: if $\lambda \ll \mu$, then there exists a measurable function $\dd{\lambda}{\mu} \coloneqq f$ where $\lambda(E) = \int_E f \,d\mu$.
 - Chebyshev's inequality:
 $$  
-A_c \definedas \theset{ x\in X \suchthat \abs{f(x)} \geq c  } \implies \mu(A_c) \leq c^{-p} \int_{A_c} \abs{f}^p \,d\mu \quad \forall 0 < p < \infty
+A_c \coloneqq \theset{ x\in X \suchthat \abs{f(x)} \geq c  } \implies \mu(A_c) \leq c^{-p} \int_{A_c} \abs{f}^p \,d\mu \quad \forall 0 < p < \infty
 .$$
 :::
 
@@ -128,7 +128,7 @@ Prove part (b) by level sets away from the unique zero of $x^2$.
 
 For $n\ge1$, set
 $$
-E_n:=E\cap\{|x|\ge1/n\}.
+E_n:=E\cap\{\abs{x}\ge1/n\}.
 $$
 On $E_n$ one has $x^2\ge n^{-2}$, hence
 $$

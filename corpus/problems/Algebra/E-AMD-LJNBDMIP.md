@@ -38,18 +38,18 @@ For $\ell=1$ the cycle is the identity, of sign $1=(-1)^0$.
 :::
 
 ::: {.pf-step #sgn-sigma-formula}
-$\sgn(\sigma)=(-1)^{|E|}$.
+$\sgn(\sigma)=(-1)^{\cardinality{E}}$.
 
 ::: pf-proof
 By step [](#cycle-sign){.pf-ref} and multiplicativity of $\sgn$,
 $$\sgn(\sigma)=\prod_{i=1}^r(-1)^{\ell_i-1}=(-1)^{\sum_i(\ell_i-1)}.$$
-The integer $\ell_i-1$ is odd exactly when $i\in E$, so $\sum_i(\ell_i-1)\equiv|E|\pmod 2$.
+The integer $\ell_i-1$ is odd exactly when $i\in E$, so $\sum_i(\ell_i-1)\equiv\cardinality{E}\pmod 2$.
 :::
 
 :::
 
 ::: pf-qed
-By step [](#sgn-sigma-formula){.pf-ref}, $\sigma$ is odd if and only if $(-1)^{|E|}=-1$, that is, if and only if $|E|$ is odd.
+By step [](#sgn-sigma-formula){.pf-ref}, $\sigma$ is odd if and only if $(-1)^{\cardinality{E}}=-1$, that is, if and only if $\cardinality{E}$ is odd.
 :::
 
 :::

@@ -32,7 +32,7 @@ Write $N=2k+2$, let $q:\RP^N\to X(N,k)=\RP^N/\RP^k$, and use coefficients $\math
 
 The mod-$2$ cohomology of $\RP^N$ is
 $$
-H^*(\RP^N;\mathbf F_2)=\mathbf F_2[x]/(x^{N+1}),\qquad |x|=1.
+H^*(\RP^N;\mathbf F_2)=\mathbf F_2[x]/(x^{N+1}),\qquad \gradeddegree{x}=1.
 $$
 
 ::: pf-proof
@@ -105,7 +105,7 @@ H^*(X(2k+2,k);\mathbf F_2)
 /\bigl(a^3,\ a y_i,\ y_i y_j\bigr),
 }
 $$
-where $|a|=k+1$, $|y_i|=i$, and $a^2$ is the nonzero top class in degree $2k+2$.
+where $\gradeddegree{a}=k+1$, $\gradeddegree{y_i}=i$, and $a^2$ is the nonzero top class in degree $2k+2$.
 
 ::: pf-proof
 

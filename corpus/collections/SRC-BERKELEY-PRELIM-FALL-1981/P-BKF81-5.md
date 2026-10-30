@@ -83,11 +83,11 @@ Compute the ratio limit.
 
 Since
 $$
-|\psi|<1<\phi,
+\abs{\psi}<1<\phi,
 $$
 we have
 $$
-\left|\frac\psi\phi\right|<1.
+\abs{\frac\psi\phi}<1.
 $$
 Therefore
 $$

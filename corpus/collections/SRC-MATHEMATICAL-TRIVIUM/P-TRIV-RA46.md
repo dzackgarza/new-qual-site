@@ -276,7 +276,7 @@ $$
 \boxed{
 f(x)
 =
--i\operatorname{sgn}(x)e^{-a|x|},
+-i\operatorname{sgn}(x)e^{-a\abs{x}},
 }
 $$
 with the convention $\operatorname{sgn}(0)=0$.
@@ -286,7 +286,7 @@ with the convention $\operatorname{sgn}(0)=0$.
 
 For $x>0$, this reproduces step [](#s1-5){.pf-ref}. For $x<0$,
 $$
--i\operatorname{sgn}(x)e^{-a|x|}
+-i\operatorname{sgn}(x)e^{-a\abs{x}}
 =
 i e^{ax},
 $$

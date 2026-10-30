@@ -37,7 +37,7 @@ Let $A$ satisfy the hypotheses and let $d>0$ be the least positive degree in whi
 $$
 A\otimes\QQ\cong\QQ[t]
 $$
-as a graded algebra, $|t|=d$ is even. In degree $d$ there are no positive-degree decomposable terms, so the Hopf axioms force
+as a graded algebra, $\gradeddegree{t}=d$ is even. In degree $d$ there are no positive-degree decomposable terms, so the Hopf axioms force
 $$
 \Delta(t)=t\otimes1+1\otimes t.
 $$

@@ -56,7 +56,7 @@ Let $X$ be topologically complete, so there is a metric $d$ on $X$ compatible wi
 
 ::: pf-step
 
-Let $A \subseteq X$ be a closed subspace, equipped with the subspace metric $d_A = d|_{A \times A}$.
+Let $A \subseteq X$ be a closed subspace, equipped with the subspace metric $d_A = d\restrict_{A \times A}$.
 
 :::
 
@@ -187,7 +187,7 @@ Define the embedding $f: U \to X \times \RR$ by $f(x) = (x, \phi(x))$. The map $
 
 ::: pf-step
 
-By parts (a) and (b), the product space $X \times \RR$ is complete under the metric $D((x_1, t_1), (x_2, t_2)) = d(x_1, x_2) + |t_1 - t_2|$.
+By parts (a) and (b), the product space $X \times \RR$ is complete under the metric $D((x_1, t_1), (x_2, t_2)) = d(x_1, x_2) + \abs{t_1 - t_2}$.
 
 :::
 

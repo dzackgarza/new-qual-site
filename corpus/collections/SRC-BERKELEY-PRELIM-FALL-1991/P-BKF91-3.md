@@ -26,7 +26,7 @@ Let $n$ be a positive integer. Evaluate
 $$
 I=\frac{1}{2\pi i}\int_C\frac{z^{n-1}}{3z^n-1}\,dz,
 $$
-where $C$ is the counterclockwise unit circle $|z|=1$.
+where $C$ is the counterclockwise unit circle $\abs{z}=1$.
 :::
 
 ::: {.solution}

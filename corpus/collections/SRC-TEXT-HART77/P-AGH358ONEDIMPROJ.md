@@ -132,7 +132,7 @@ It need not be reduced.
 There is an exact sequence of abelian sheaves
 $$
 1\to\OO_X^\times\to\OO_Z^\times\times\OO_W^\times
-\xrightarrow{(u,v)\mapsto u|_T/v|_T}\OO_T^\times\to1.
+\xrightarrow{(u,v)\mapsto u\restrict_T/v\restrict_T}\OO_T^\times\to1.
 $$
 The kernel assertion follows from the fibre-product identity, including invertibility because compatible inverse pairs also glue.
 For surjectivity, at a point of $T$ the quotient map of local rings $\OO_{Z,x}\to\OO_{T,x}$ is surjective and lifts units: a lift of a unit lies outside the maximal ideal and is a unit.
@@ -173,7 +173,7 @@ For arbitrary $X$ in (d), the map $\Pic X\to\Pic X_{\mathrm{red}}$ is surjective
 
 Let $N$ be the nilradical ideal sheaf of $X$.
 It is nilpotent by noetherianness and a finite affine cover, as in [[P-AGH357AMPLENESS]], step [](#s2){.pf-ref}.
-Choose $e\ge1$ with $N^e=0$, and write $X_j=(|X|,\OO_X/N^j)$ for $1\le j\le e$.
+Choose $e\ge1$ with $N^e=0$, and write $X_j=(\underlyingspace{X},\OO_X/N^j)$ for $1\le j\le e$.
 Then $X_1=X_{\mathrm{red}}$ and $X_e=X$.
 The ideal $N^j/N^{j+1}$ of $X_{j+1}$ has square zero, since $2j\ge j+1$.
 The sequence in [[P-AGH346SQUAREZEROPIC]] gives

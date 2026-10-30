@@ -20,7 +20,7 @@ audit:
 Let $f:[0,1]\to\RR$ and $g:[0,1]\to[0,1]$ be Riemann integrable.
 Suppose that for some $\alpha\in(0,1)$,
 $$
-|g(x)-g(y)|\ge \alpha|x-y|\qquad(x,y\in[0,1]).
+\abs{g(x)-g(y)}\ge \alpha\abs{x-y}\qquad(x,y\in[0,1]).
 $$
 Show that $f\circ g$ is Riemann integrable.
 :::
@@ -46,9 +46,9 @@ then the hypothesis gives
 $$
 0
 =
-|g(x)-g(y)|
+\abs{g(x)-g(y)}
 \ge
-\alpha|x-y|.
+\alpha\abs{x-y}.
 $$
 Since $\alpha>0$,
 $$
@@ -78,19 +78,19 @@ v=g(y).
 $$
 Then
 $$
-|u-v|
+\abs{u-v}
 =
-|g(x)-g(y)|
+\abs{g(x)-g(y)}
 \ge
-\alpha|x-y|.
+\alpha\abs{x-y}.
 $$
 Thus
 $$
-|g^{-1}(u)-g^{-1}(v)|
+\abs{g^{-1}(u)-g^{-1}(v)}
 =
-|x-y|
+\abs{x-y}
 \le
-\frac1\alpha|u-v|.
+\frac1\alpha\abs{u-v}.
 $$
 
 :::
@@ -119,7 +119,7 @@ I_1,I_2,\ldots
 $$
 covering $E$ such that
 $$
-\sum_j |I_j|
+\sum_j \setmeasure{I_j}
 <
 \frac{\varepsilon}{2L}
 $$
@@ -135,11 +135,11 @@ $$
 $$
 has diameter at most
 $$
-L|I_j|.
+L\setmeasure{I_j}.
 $$
 Hence it is contained in an interval of length at most
 $$
-2L|I_j|.
+2L\setmeasure{I_j}.
 $$
 These image intervals cover
 $$

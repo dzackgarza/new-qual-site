@@ -84,11 +84,11 @@ Apply Parseval's identity.
 
 Since $q^2=1$ almost everywhere,
 $$
-\int_0^{2\pi}|q(x)|^2\,dx=2\pi.
+\int_0^{2\pi}\abs{q(x)}^2\,dx=2\pi.
 $$
 Parseval's identity for the real Fourier coefficients gives
 $$
-\frac1\pi\int_0^{2\pi}|q(x)|^2\,dx
+\frac1\pi\int_0^{2\pi}\abs{q(x)}^2\,dx
 =\sum_{k=1}^\infty b_k^2,
 $$
 because the constant and cosine coefficients vanish. Thus

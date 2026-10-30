@@ -87,13 +87,13 @@ $$
 ::: pf-proof
 
 A Sylow $2$-subgroup $P$ has order $4$.
-Since $|N|=5$ and $|P|=4$,
+Since $\cardinality{N}=5$ and $\cardinality{P}=4$,
 $$
 N\cap P=\{1\}.
 $$
 Because $N\normal G$, the product $NP$ is a subgroup, and
 $$
-|NP|=|N||P|=20=|G|.
+\cardinality{NP}=\cardinality{N}\cardinality{P}=20=\cardinality{G}.
 $$
 Thus $G=NP$.
 Conjugation by $P$ on $N$ gives a homomorphism
@@ -171,8 +171,8 @@ The three groups from step [](#s4){.pf-ref} may be represented as
 $$
 \begin{aligned}
 G_1&=C_5\times C_4\cong C_{20},\\
-G_2&=\left\langle a,b\ \middle|\ a^5=b^4=1,\ bab^{-1}=a^{-1}\right\rangle,\\
-G_3&=\left\langle a,b\ \middle|\ a^5=b^4=1,\ bab^{-1}=a^2\right\rangle.
+G_2&=\left\langle a,b\ \presentationbar\ a^5=b^4=1,\ bab^{-1}=a^{-1}\right\rangle,\\
+G_3&=\left\langle a,b\ \presentationbar\ a^5=b^4=1,\ bab^{-1}=a^2\right\rangle.
 \end{aligned}
 $$
 
@@ -239,7 +239,7 @@ $$
 and
 $$
 G_5
-=\left\langle a,u,v\ \middle|\
+=\left\langle a,u,v\ \presentationbar\
  a^5=u^2=v^2=1,
  [u,v]=1,
  uau^{-1}=a^{-1},
@@ -398,9 +398,9 @@ The groups $G_2$ and $G_3$ are not isomorphic.
 
 By steps [](#s11){.pf-ref} and [](#s12){.pf-ref},
 $$
-|Z(G_2)|=2,
+\cardinality{Z(G_2)}=2,
 \qquad
-|Z(G_3)|=1.
+\cardinality{Z(G_3)}=1.
 $$
 Center order is an isomorphism invariant, so
 $$

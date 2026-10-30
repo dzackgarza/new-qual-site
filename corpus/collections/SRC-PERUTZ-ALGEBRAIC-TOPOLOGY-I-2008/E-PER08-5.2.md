@@ -39,7 +39,7 @@ Every point of $Y$ has a neighbourhood on which $p$ is a diffeomorphism.
 
 ::: pf-proof
 
-Since $Dp_y:T_yY\to T_{p(y)}X$ is an isomorphism, the inverse function theorem gives open neighbourhoods $V_y\ni y$ and $U_y\ni p(y)$ such that $p|_{V_y}:V_y\to U_y$ is a diffeomorphism.
+Since $Dp_y:T_yY\to T_{p(y)}X$ is an isomorphism, the inverse function theorem gives open neighbourhoods $V_y\ni y$ and $U_y\ni p(y)$ such that $p\restrict_{V_y}:V_y\to U_y$ is a diffeomorphism.
 
 :::
 

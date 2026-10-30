@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $\{f_j\}$ be a sequence of real-valued functions in $L^1(X, \mu)$ such that $f_j \to f$ a.e. with $f \in L^1(X, \mu)$.
-Suppose $\{g_j\}$ is a sequence of functions in $L^1(X, \mu)$ such that $|f_j| \leq g_j$, $g_j \to g$ a.e. for some $g \in L^1(X, \mu)$, and also $g_j \to g$ in $L^1$.
+Suppose $\{g_j\}$ is a sequence of functions in $L^1(X, \mu)$ such that $\abs{f_j} \leq g_j$, $g_j \to g$ a.e. for some $g \in L^1(X, \mu)$, and also $g_j \to g$ in $L^1$.
 Prove that
 $$
 \int_X f\,d\mu = \lim_{j \to \infty} \int_X f_j\,d\mu.
@@ -48,11 +48,11 @@ f_j(x)\to f(x),
 \qquad
 g_j(x)\to g(x),
 \qquad
-|f_j(x)|\le g_j(x).
+\abs{f_j(x)}\le g_j(x).
 $$
 Taking limits gives
 $$
-|f(x)|\le g(x)
+\abs{f(x)}\le g(x)
 $$
 almost everywhere. In particular $g\ge0$ almost everywhere.
 
@@ -68,11 +68,11 @@ Use Fatou's lemma to prove $L^1$ convergence.
 
 Define
 $$
-h_j:=g_j+g-|f_j-f|.
+h_j:=g_j+g-\abs{f_j-f}.
 $$
 By the triangle inequality and Step 1,
 $$
-|f_j-f|\le |f_j|+|f|\le g_j+g,
+\abs{f_j-f}\le \abs{f_j}+\abs{f}\le g_j+g,
 $$
 so $h_j\ge0$. Moreover,
 $$
@@ -88,7 +88,7 @@ $$
 \left(
 \int_X g_j\,d\mu+
 \int_X g\,d\mu-
-\int_X|f_j-f|\,d\mu
+\int_X\abs{f_j-f}\,d\mu
 \right).
 $$
 Since $g_j\to g$ in $L^1$,
@@ -99,15 +99,15 @@ Hence
 $$
 2\int g
 \le
-2\int g-\limsup_j\|f_j-f\|_1.
+2\int g-\limsup_j\norm{f_j-f}_1.
 $$
 Thus
 $$
-\limsup_j\|f_j-f\|_1\le0,
+\limsup_j\norm{f_j-f}_1\le0,
 $$
 and consequently
 $$
-\boxed{\|f_j-f\|_1\to0.}
+\boxed{\norm{f_j-f}_1\to0.}
 $$
 
 :::
@@ -122,8 +122,8 @@ Conclude convergence of the integrals.
 
 Finally,
 $$
-\left|\int_X f_j\,d\mu-\int_X f\,d\mu\right|
-\le \|f_j-f\|_1\longrightarrow0.
+\abs{\int_X f_j\,d\mu-\int_X f\,d\mu}
+\le \norm{f_j-f}_1\longrightarrow0.
 $$
 Therefore
 $$

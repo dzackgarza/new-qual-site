@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be an analytic function on $\CC$ that satisfies the inequality $|f(z)| \leq e^{\operatorname{Re} z}$ for all $z \in \CC$.
+Let $f$ be an analytic function on $\CC$ that satisfies the inequality $\abs{f(z)} \leq e^{\operatorname{Re} z}$ for all $z \in \CC$.
 Prove that either $f(z) = 0$ for all $z \in \CC$ or $f(z) \neq 0$ for all $z \in \CC$.
 :::
 
@@ -25,7 +25,7 @@ g(z)=e^{-z}f(z)
 $$
 is entire and satisfies
 $$
-|g(z)|=e^{-\operatorname{Re}z}|f(z)|\le1.
+\abs{g(z)}=e^{-\operatorname{Re}z}\abs{f(z)}\le1.
 $$
 By Liouville's theorem, $g$ is constant: $g\equiv c$. Hence
 $$

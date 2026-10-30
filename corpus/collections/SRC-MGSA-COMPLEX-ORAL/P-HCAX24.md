@@ -59,7 +59,7 @@ $$
 Replacing $\gamma$ by $-\gamma$ does not change this fraction, so the formula is well-defined on $PSL_2(\ZZ)$. Moreover,
 $$
 \operatorname{Im}(\gamma\cdot z)
-=\frac{\operatorname{Im}z}{|cz+d|^2}>0,
+=\frac{\operatorname{Im}z}{\abs{cz+d}^2}>0,
 $$
 so every group element preserves $\halfplane$. Matrix multiplication corresponds to composition of the associated Möbius transformations, hence this is a group action.
 

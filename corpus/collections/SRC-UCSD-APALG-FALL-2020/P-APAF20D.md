@@ -31,7 +31,7 @@ $$
 \chi_6 & ? & ? & -1 & ? & ? & 0
 \end{array}
 $$
-The sizes of the conjugacy classes are $|\gamma_1|=1$, $|\gamma_2|=56$, $|\gamma_3|=|\gamma_4|=24$, $|\gamma_5|=21$, $|\gamma_6|=42$.
+The sizes of the conjugacy classes are $\cardinality{\gamma_1}=1$, $\cardinality{\gamma_2}=56$, $\cardinality{\gamma_3}=\cardinality{\gamma_4}=24$, $\cardinality{\gamma_5}=21$, $\cardinality{\gamma_6}=42$.
 
 (a) Fill in the correct values for $\chi_6$.
 

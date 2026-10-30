@@ -62,15 +62,15 @@ e^{-(\alpha+t)x}\sin(\beta x)\,dt\,dx.
 $$
 Its absolute integral equals, by Tonelli's theorem,
 $$
-\int_0^\infty e^{-\alpha x}\frac{|\sin(\beta x)|}{x}\,dx.
+\int_0^\infty e^{-\alpha x}\frac{\abs{\sin(\beta x)}}{x}\,dx.
 $$
 For $0<x\le1$,
 $$
-\frac{|\sin(\beta x)|}{x}\le\beta,
+\frac{\abs{\sin(\beta x)}}{x}\le\beta,
 $$
 so the integral is finite near $0$. For $x\ge1$,
 $$
-e^{-\alpha x}\frac{|\sin(\beta x)|}{x}
+e^{-\alpha x}\frac{\abs{\sin(\beta x)}}{x}
 \le e^{-\alpha x},
 $$
 which is integrable. Hence the double integral is absolutely integrable, and Fubini's theorem applies.

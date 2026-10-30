@@ -53,7 +53,7 @@ $$
 Identify $\mcf'$ with its image in $\mcf$ and put
 $$
 K_n=\mcf'/\mci^n\mcf',\qquad G_n=\mcf/\mci^n\mcf',
-\qquad \mathfrak X_n=(|\mathfrak X|,\OO_{\mathfrak X}/\mci^n).
+\qquad \mathfrak X_n=(\underlyingspace{\mathfrak X},\OO_{\mathfrak X}/\mci^n).
 $$
 The schemes $\mathfrak X_n$ are the ordinary infinitesimal layers on the common underlying space of the [[D-SCHFORMAL|formal scheme]].
 On an affine formal open $\mathfrak U$, their restrictions $\mathfrak U_n$ are affine schemes [@Har10a, Propositions II.9.4 and II.9.5].

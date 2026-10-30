@@ -106,32 +106,32 @@ F=f\,\mathbf 1_J.
 $$
 Then $F\in L^1(\RR)$. Continuity of translations in $L^1(\RR)$ gives
 $$
-\|F(\cdot+q_k-a)-F\|_{L^1(\RR)}
+\norm{F(\cdot+q_k-a)-F}_{L^1(\RR)}
 \longrightarrow0.
 $$
 Indeed, given $\eta>0$, choose $\varphi\in C_c(\RR)$ with
 $$
-\|F-\varphi\|_1<\eta.
+\norm{F-\varphi}_1<\eta.
 $$
 Translations are isometries of $L^1$, while uniform continuity and compact support of $\varphi$ give
 $$
-\|\varphi(\cdot+h)-\varphi\|_1\longrightarrow0
+\norm{\varphi(\cdot+h)-\varphi}_1\longrightarrow0
 \qquad
 (h\to0).
 $$
 Therefore
 $$
-\|F(\cdot+h)-F\|_1
+\norm{F(\cdot+h)-F}_1
 \le
 2\eta
 +
-\|\varphi(\cdot+h)-\varphi\|_1,
+\norm{\varphi(\cdot+h)-\varphi}_1,
 $$
 and then $h\to0$ followed by $\eta\downarrow0$ proves the asserted translation continuity.
 
 After translating variables, this implies
 $$
-\|f(\cdot+q_k)-f(\cdot+a)\|_{L^1(K)}
+\norm{f(\cdot+q_k)-f(\cdot+a)}_{L^1(K)}
 \longrightarrow0.
 $$
 
@@ -181,13 +181,13 @@ h_-(x)
 =
 -h(x)
 \le
-|h(x)-h_k(x)|.
+\abs{h(x)-h_k(x)}.
 $$
 Thus
 $$
-\|h_-\|_{L^1(K)}
+\norm{h_-}_{L^1(K)}
 \le
-\|h-h_k\|_{L^1(K)}
+\norm{h-h_k}_{L^1(K)}
 \longrightarrow0.
 $$
 Hence $h_-=0$ almost everywhere on $K$, which is equivalent to $h\ge0$ almost everywhere there.

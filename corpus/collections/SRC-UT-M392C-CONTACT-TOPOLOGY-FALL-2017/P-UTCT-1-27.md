@@ -26,7 +26,7 @@ Given a nowhere zero section $v$ of $\xi$ over $\partial F$, the relative Euler 
 $$
 e(\xi, v) = \sum_{v(x) = 0} \operatorname{sign}_v(x).
 $$
-Changing $e(\xi, v)$ by $\pm 1$ is the same as adding $\pm 1$ twists to $v|_{\partial F}$, so for suitable $v$ (the "fix" on $v$) the zeros can be pushed to the boundary and $e(\xi, v) = 0$.
+Changing $e(\xi, v)$ by $\pm 1$ is the same as adding $\pm 1$ twists to $v\restrict_{\partial F}$, so for suitable $v$ (the "fix" on $v$) the zeros can be pushed to the boundary and $e(\xi, v) = 0$.
 
 Show that not doing the fix on $v$ above retrieves the Poincaré--Hopf theorem as in the boundaryless case.
 That is, for $F$ compact and connected, show that
@@ -51,7 +51,7 @@ $\partial F$.
 
 On each connected component $C\subset\partial F$, a nowhere-zero
 vector field $v$ that is everywhere parallel to $C$ is homotopic through
-nowhere-zero sections of $TF|_C$ to $T|_C$.
+nowhere-zero sections of $TF\restrict_C$ to $T\restrict_C$.
 
 
 ::: pf-proof
@@ -68,7 +68,7 @@ $$
 Because $C$ is connected, $\lambda$ has constant sign. After positive
 rescaling, $v$ is homotopic either to $T$ or to $-T$. The fields
 $T$ and $-T$ are homotopic through nonzero vectors by rotating through
-angle $\pi$ in the oriented plane $TF|_C$.
+angle $\pi$ in the oriented plane $TF\restrict_C$.
 
 :::
 
@@ -78,12 +78,12 @@ angle $\pi$ in the oriented plane $TF|_C$.
 
 On each connected component $C\subset\partial F$, a nowhere-zero
 vector field $v$ that is everywhere perpendicular to $C$ is likewise
-homotopic through nowhere-zero sections to $T|_C$.
+homotopic through nowhere-zero sections to $T\restrict_C$.
 
 
 ::: pf-proof
 
-Let $N$ be the unit normal to $C$ inside the oriented plane $TF|_C$,
+Let $N$ be the unit normal to $C$ inside the oriented plane $TF\restrict_C$,
 chosen so that $(T,N)$ is an oriented orthonormal frame. A nonzero field
 perpendicular to $C$ is a nonzero scalar multiple of $N$, hence is
 homotopic to $N$ or $-N$. Rotating by the constant angle
@@ -257,11 +257,11 @@ It fixes the $s$-direction and reverses the $t$-direction.
 
 Define a vector field $W$ on the double by
 $$
-W|_{F_+}=w
+W\restrict_{F_+}=w
 $$
 and
 $$
-W|_{F_-}=\rho^*w,
+W\restrict_{F_-}=\rho^*w,
 $$
 using the reflected copy of $w$.
 

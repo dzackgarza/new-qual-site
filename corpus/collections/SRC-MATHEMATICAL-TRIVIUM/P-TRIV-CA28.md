@@ -176,7 +176,7 @@ ix
 \frac{u^2}{2}
 +
 O\left(
-\frac{|u|^3}{\sqrt x}
+\frac{\abs{u}^3}{\sqrt x}
 \right).
 $$
 
@@ -207,7 +207,7 @@ z^{-\nu-1}
 =
 i^{-\nu-1}
 \left(
-1+O(x^{-1/2}|u|)
+1+O(x^{-1/2}\abs{u})
 \right)
 $$
 near the saddle, with

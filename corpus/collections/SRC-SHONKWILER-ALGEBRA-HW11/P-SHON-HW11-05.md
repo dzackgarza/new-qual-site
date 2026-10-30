@@ -20,7 +20,7 @@ Let $p$ be prime.
 
 1. If $G\le S_p$ contains a transposition and a $p$-cycle, show that $G=S_p$.
 
-2. If $f(x)\in K[x]$ is separable and irreducible of degree $p$, and $G$ is its Galois group over $K$, show that $G\le S_p$, that $p\mid |G|$, and that $G$ contains a $p$-cycle.
+2. If $f(x)\in K[x]$ is separable and irreducible of degree $p$, and $G$ is its Galois group over $K$, show that $G\le S_p$, that $p\mid \cardinality{G}$, and that $G$ contains a $p$-cycle.
 
 3. If $f(x)\in\QQ[x]$ is irreducible of degree $p$ and exactly two roots are nonreal, show that its Galois group contains a transposition and hence is $S_p$.
 
@@ -262,7 +262,7 @@ $$
 the tower law gives
 $$
 \boxed{
-p\mid[L:K]=|G|}.
+p\mid[L:K]=\cardinality{G}}.
 $$
 
 
@@ -278,7 +278,7 @@ p[L:K(\alpha)].
 $$
 Because $L/K$ is Galois,
 $$
-[L:K]=|G|.
+[L:K]=\cardinality{G}.
 $$
 
 :::
@@ -292,7 +292,7 @@ By Cauchy's theorem, $G$ contains an element of order $p$.
 
 ::: pf-proof
 
-Step [](#s1-12){.pf-ref} says the prime $p$ divides $|G|$.
+Step [](#s1-12){.pf-ref} says the prime $p$ divides $\cardinality{G}$.
 
 :::
 

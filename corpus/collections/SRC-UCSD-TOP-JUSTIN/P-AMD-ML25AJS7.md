@@ -28,7 +28,7 @@ Define
 $$
 H:X\times I\longrightarrow S^n,
 \qquad
-H(x,t)=\frac{(1-t)f(x)+t g(x)}{\|(1-t)f(x)+t g(x)\|}.
+H(x,t)=\frac{(1-t)f(x)+t g(x)}{\norm{(1-t)f(x)+t g(x)}}.
 $$
 
 ::: pf-proof

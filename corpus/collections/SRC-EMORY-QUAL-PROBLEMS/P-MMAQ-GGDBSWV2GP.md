@@ -104,7 +104,7 @@ Step [](#a-d-equals-phi-d){.pf-ref} with $d = n$.
 Therefore $G$ is cyclic.
 
 ::: pf-proof
-An element of order $n$ generates a subgroup of order $n=|G|$, which is $G$.
+An element of order $n$ generates a subgroup of order $n=\cardinality{G}$, which is $G$.
 :::
 
 :::

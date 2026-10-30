@@ -79,11 +79,11 @@ By step [](#aw-rings){.pf-ref}, $A\cong\prod_i M_{n_i}(D_i)$, and each $D_i$ is 
 For a finite group $G$,
 $$
 \CC[G]\cong \prod_i M_{d_i}(\CC),
-\qquad |G|=\sum_i d_i^2.
+\qquad \cardinality{G}=\sum_i d_i^2.
 $$
 
 ::: pf-proof
-By Maschke's theorem $\CC[G]$ is semisimple, so step [](#aw-algebras){.pf-ref} applies with $k=\CC$. Comparing $\CC$-dimensions gives $|G|=\sum_i d_i^2$.
+By Maschke's theorem $\CC[G]$ is semisimple, so step [](#aw-algebras){.pf-ref} applies with $k=\CC$. Comparing $\CC$-dimensions gives $\cardinality{G}=\sum_i d_i^2$.
 :::
 
 :::

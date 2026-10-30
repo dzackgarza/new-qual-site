@@ -18,11 +18,11 @@ audit:
 ::: {.problem}
 Evaluate
 $$
-\int_{|z-i|=10}\left(z+\frac1z\right)^4\,dz
+\int_{\abs{z-i}=10}\left(z+\frac1z\right)^4\,dz
 $$
 and
 $$
-\int_{|z|=4}\left(\frac{\sin z}{z}\right)^{100}\,dz.
+\int_{\abs{z}=4}\left(\frac{\sin z}{z}\right)^{100}\,dz.
 $$
 :::
 
@@ -70,7 +70,7 @@ z=0,
 $$
 and it lies inside the circle
 $$
-|z-i|=10.
+\abs{z-i}=10.
 $$
 
 
@@ -79,7 +79,7 @@ $$
 The expansion in step [](#s1-1){.pf-ref} shows that the only negative powers occur at
 $z=0$. Moreover,
 $$
-|0-i|=1<10.
+\abs{0-i}=1<10.
 $$
 
 :::
@@ -111,7 +111,7 @@ Step [](#s1-1){.pf-ref} contains no $z^{-1}$-term.
 Therefore
 $$
 \boxed{
-\int_{|z-i|=10}
+\int_{\abs{z-i}=10}
 \left(z+\frac1z\right)^4\,dz
 =0}.
 $$
@@ -121,7 +121,7 @@ $$
 
 By the residue theorem,
 $$
-\int_{|z-i|=10}
+\int_{\abs{z-i}=10}
 \left(z+\frac1z\right)^4\,dz
 =
 2\pi i\,
@@ -190,7 +190,7 @@ A finite product of entire functions is entire.
 
 ::: {.pf-step #s1-7}
 
-On the circle $|z|=4$,
+On the circle $\abs{z}=4$,
 $$
 g(z)^{100}
 =
@@ -200,7 +200,7 @@ $$
 
 ::: pf-proof
 
-The circle $|z|=4$ does not contain $z=0$, so the defining formula for
+The circle $\abs{z}=4$ does not contain $z=0$, so the defining formula for
 $g$ there is exactly
 $$
 g(z)=\frac{\sin z}{z}.
@@ -215,7 +215,7 @@ $$
 Therefore
 $$
 \boxed{
-\int_{|z|=4}
+\int_{\abs{z}=4}
 \left(\frac{\sin z}{z}\right)^{100}\,dz
 =0}.
 $$

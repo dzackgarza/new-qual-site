@@ -97,7 +97,7 @@ Step [](#p1-s2){.pf-ref}.
 :::
 
 ::: {.pf-step #p1-s5}
-$r^2 = |G(iy)|^2 = \frac{\cos^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin \pi y}{1 + \sin \pi y}$.
+$r^2 = \abs{G(iy)}^2 = \frac{\cos^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin \pi y}{1 + \sin \pi y}$.
 
 ::: pf-proof
 Step [](#p1-s2){.pf-ref} and $\cos^2 = 1 - \sin^2$.

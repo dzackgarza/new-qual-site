@@ -34,9 +34,9 @@ The function $f$ is bounded on $[a,b]$.
 ::: pf-proof
 For every $c\in[a,b]$, choose $\delta_c>0$ such that
 $$
-0<|x-c|<\delta_c
+0<\abs{x-c}<\delta_c
 \quad\Longrightarrow\quad
-|f(x)-L_c|<1.
+\abs{f(x)-L_c}<1.
 $$
 Thus on
 $$
@@ -44,9 +44,9 @@ U_c\coloneqq(c-\delta_c,c+\delta_c)\cap[a,b]
 $$
 one has
 $$
-|f(x)|
+\abs{f(x)}
 \leq
-\max\{|f(c)|,|L_c|+1\}.
+\max\{\abs{f(c)},\abs{L_c}+1\}.
 $$
 The sets $U_c$ form an open cover of the compact interval $[a,b]$. Choose a finite subcover
 $$
@@ -54,7 +54,7 @@ U_{c_1},\ldots,U_{c_m}.
 $$
 Taking the maximum of $1$ and the finitely many bounds associated to $c_1,\ldots,c_m$ gives a constant $M\geq1$ such that
 $$
-|f(x)|\leq M
+\abs{f(x)}\leq M
 $$
 for all $x\in[a,b]$.
 :::
@@ -70,16 +70,16 @@ of $[a,b]$, with distinguished points $c_i\in U_i$, such that
 $$
 x,y\in U_i\setminus\{c_i\}
 \quad\Longrightarrow\quad
-|f(x)-f(y)|<
+\abs{f(x)-f(y)}<
 \frac{\eta}{2(b-a)}.
 $$
 
 ::: pf-proof
 For each $c\in[a,b]$, choose $\delta_c>0$ so that
 $$
-0<|x-c|<\delta_c
+0<\abs{x-c}<\delta_c
 \quad\Longrightarrow\quad
-|f(x)-L_c|<
+\abs{f(x)-L_c}<
 \frac{\eta}{4(b-a)}.
 $$
 Let
@@ -89,9 +89,9 @@ U_c\coloneqq
 $$
 If $x,y\in U_c\setminus\{c\}$, then
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \leq
-|f(x)-L_c|+|f(y)-L_c|
+\abs{f(x)-L_c}+\abs{f(y)-L_c}
 <
 \frac{\eta}{2(b-a)}.
 $$

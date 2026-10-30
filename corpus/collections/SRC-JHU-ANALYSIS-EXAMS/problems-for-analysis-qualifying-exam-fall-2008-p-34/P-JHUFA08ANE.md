@@ -23,7 +23,7 @@ $$
 e ^ { z } = 3 z ^ { 7 }
 $$
 
-have in the unit disk $D = \{ x \in \CC : | z | < 1 \} ?$ Justify your answer.
+have in the unit disk $D = \{ x \in \CC : \abs{ z } < 1 \} ?$ Justify your answer.
 :::
 
 ::: {.solution}

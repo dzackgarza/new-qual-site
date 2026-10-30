@@ -96,7 +96,7 @@ has order $p^3$.
 The homomorphism $B\to\operatorname{Aut}(A)$, $b\mapsto\varphi$, is well-defined because $\varphi^p=1$ by step [](#phi-automorphism-order-p){.pf-ref}.
 As a set, the semidirect product is $A\times B$, so
 $$
-|G|=|A||B|=p^2p=p^3.
+\cardinality{G}=\cardinality{A}\cardinality{B}=p^2p=p^3.
 $$
 :::
 
@@ -121,7 +121,7 @@ Hence $ba\ne ab$, so $G$ is nonabelian.
 The group constructed above has the presentation
 $$
 G\cong
-\left\langle a,b\ \middle|\ a^{p^2}=1,\ b^p=1,\ bab^{-1}=a^{1+p}\right\rangle.
+\left\langle a,b\ \presentationbar\ a^{p^2}=1,\ b^p=1,\ bab^{-1}=a^{1+p}\right\rangle.
 $$
 
 ::: pf-proof

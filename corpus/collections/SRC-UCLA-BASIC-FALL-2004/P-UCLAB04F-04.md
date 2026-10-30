@@ -31,7 +31,7 @@ $$
 
 For every $n$,
 $$
-\bigl|\rho(x_n,y)-\rho(x,y)\bigr|
+\abs{\rho(x_n,y)-\rho(x,y)}
 \le
 \rho(x_n,x).
 $$
@@ -89,7 +89,7 @@ By step [](#s1-1){.pf-ref},
 $$
 0
 \le
-\bigl|\rho(x_n,y)-\rho(x,y)\bigr|
+\abs{\rho(x_n,y)-\rho(x,y)}
 \le
 \rho(x_n,x)\to0.
 $$

@@ -44,8 +44,8 @@ Convergence in measure.
 
 Fix $\varepsilon>0$. By Chebyshev's inequality,
 $$
-\mu\{|f_n-f|\ge\varepsilon\}
-\le \frac1{\varepsilon^p}\int_0^1|f_n-f|^p\,dx.
+\mu\{\abs{f_n-f}\ge\varepsilon\}
+\le \frac1{\varepsilon^p}\int_0^1\abs{f_n-f}^p\,dx.
 $$
 The right-hand side tends to $0$ because $f_n\to f$ in $L^p$. Hence $f_n\to f$ in measure.
 
@@ -61,17 +61,17 @@ An almost-everywhere convergent subsequence.
 
 Choose a subsequence $(f_{n_k})$ such that
 $$
-\|f_{n_k}-f\|_p^p\le2^{-k}.
+\norm{f_{n_k}-f}_p^p\le2^{-k}.
 $$
 Then
 $$
-\int_0^1\sum_{k=1}^\infty |f_{n_k}(x)-f(x)|^p\,dx
-=\sum_{k=1}^\infty\|f_{n_k}-f\|_p^p
+\int_0^1\sum_{k=1}^\infty \abs{f_{n_k}(x)-f(x)}^p\,dx
+=\sum_{k=1}^\infty\norm{f_{n_k}-f}_p^p
 \le1.
 $$
 By Tonelli's theorem,
 $$
-\sum_{k=1}^\infty |f_{n_k}(x)-f(x)|^p<\infty
+\sum_{k=1}^\infty \abs{f_{n_k}(x)-f(x)}^p<\infty
 $$
 for almost every $x$. Therefore its terms tend to zero, so
 $$

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x, y) = x^y$, for $x > 0$. Then $\left.\frac{\partial f}{\partial x}\right|_P = \left.\frac{\partial f}{\partial y}\right|_P$ at the point $P = (e, y_0)$, where $y_0 =$
+Let $f(x, y) = x^y$, for $x > 0$. Then $\evaluated{\frac{\partial f}{\partial x}}_P = \evaluated{\frac{\partial f}{\partial y}}_P$ at the point $P = (e, y_0)$, where $y_0 =$
 
 (A) $1$
 (B) $\sqrt{e}$

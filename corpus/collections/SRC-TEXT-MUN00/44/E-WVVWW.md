@@ -43,7 +43,7 @@ F(t)=q_m(t-m+1)\qquad(m-1\le t\le m).
 $$
 The definitions agree at integer endpoints, so the pasting lemma gives continuity. Since the cubes $[-m,m]^n$ exhaust $\RR^n$, $F$ is surjective. Finally define
 $$
-f(t)=F(|t|),\qquad t\in\RR.
+f(t)=F(\abs{t}),\qquad t\in\RR.
 $$
 Then $f:\RR\to\RR^n$ is continuous and surjective.
 :::

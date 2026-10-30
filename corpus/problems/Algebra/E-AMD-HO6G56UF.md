@@ -38,7 +38,7 @@ A(Bv)=B(Av)=\lambda Bv.
 $$
 Thus $B$ restricts to an operator on every $E_A(\lambda)$.
 
-Since $B$ is diagonalizable, its minimal polynomial splits into distinct linear factors. The minimal polynomial of each restriction $B|_{E_A(\lambda)}$ divides the minimal polynomial of $B$, hence also splits into distinct linear factors. Therefore each restriction is diagonalizable.
+Since $B$ is diagonalizable, its minimal polynomial splits into distinct linear factors. The minimal polynomial of each restriction $B\restrict_{E_A(\lambda)}$ divides the minimal polynomial of $B$, hence also splits into distinct linear factors. Therefore each restriction is diagonalizable.
 
 Choose a basis of $B$-eigenvectors inside each $E_A(\lambda)$. The union of these bases is a basis of $V$ consisting of common eigenvectors of $A$ and $B$. Hence $A$ and $B$ are simultaneously diagonalizable.
 :::

@@ -73,7 +73,7 @@ d:X\times X\to\RR
 $$
 is continuous, because
 $$
-|d(x,y)-d(x',y')|
+\abs{d(x,y)-d(x',y')}
 \le
 d(x,x')+d(y,y').
 $$

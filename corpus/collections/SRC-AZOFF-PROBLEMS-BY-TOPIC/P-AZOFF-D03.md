@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $( f _ { n } ) _ { n \in \NN }$ is a sequence of analytic functions on $\DD : = \{ z \in \CC : | z | < 1 \}$ Show that if $\left( f _ { n } \right)$ converges to a function $g\colon \DD \to \CC$ uniformly on each compact subset of $\DD$, then $g$ is analytic on $\DD$.
+Suppose $( f _ { n } ) _ { n \in \NN }$ is a sequence of analytic functions on $\DD : = \{ z \in \CC : \abs{ z } < 1 \}$ Show that if $\left( f _ { n } \right)$ converges to a function $g\colon \DD \to \CC$ uniformly on each compact subset of $\DD$, then $g$ is analytic on $\DD$.
 :::
 
 ::: {.solution}
@@ -97,10 +97,10 @@ Since $f_n(z)\to g(z)$ pointwise and step [](#s1){.pf-ref} gives uniform converg
 $\Gamma$, we have
 $$
 \begin{aligned}
-&\left|
+&\abs{
 \int_\Gamma
 \frac{f_n(\zeta)-g(\zeta)}{\zeta-z}\,d\zeta
-\right|\\
+}\\
 &\qquad\leq
 \frac{\operatorname{length}(\Gamma)}
 {\operatorname{dist}(z,\Gamma)}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4BQIP
 kind: problem
-title: Groups of order $p^3$ are abelian or have $|Z(G)|=p$
+title: Groups of order $p^3$ are abelian or have $\cardinality{Z(G)}=p$
 classification:
   areas:
   - algebra
@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Let $G$ be a group of order $p^3$ for some prime $p$.
-Show that either $G$ is abelian, or $\left| Z(G) \right| = p$.
+Show that either $G$ is abelian, or $\cardinality{ Z(G) } = p$.
 :::
 
 ::: {.solution}
-Let $|G|=p^3$.
+Let $\cardinality{G}=p^3$.
 
 ::: pf
 
@@ -39,7 +39,7 @@ The center $Z(G)$ is nontrivial.
 
 Every finite $p$-group has nontrivial center, by the class equation. Hence
 $$
-|Z(G)|\in\{p,p^2,p^3\}.
+\cardinality{Z(G)}\in\{p,p^2,p^3\}.
 $$
 
 :::
@@ -48,7 +48,7 @@ $$
 
 ::: {.pf-step #s2}
 
-If $|Z(G)|=p^3$, then $G$ is abelian.
+If $\cardinality{Z(G)}=p^3$, then $G$ is abelian.
 
 ::: pf-proof
 
@@ -60,13 +60,13 @@ Then $Z(G)=G$, which is exactly the definition of an abelian group.
 
 ::: {.pf-step #s3}
 
-If $|Z(G)|=p^2$, then $G/Z(G)$ is cyclic.
+If $\cardinality{Z(G)}=p^2$, then $G/Z(G)$ is cyclic.
 
 ::: pf-proof
 
 Its order is
 $$
-|G/Z(G)|=p,
+\cardinality{G/Z(G)}=p,
 $$
 so it is cyclic.
 
@@ -96,13 +96,13 @@ because $z_1,z_2$ are central. Thus all elements commute.
 
 ::: pf-step
 
-Therefore either $G$ is abelian or $|Z(G)|=p$.
+Therefore either $G$ is abelian or $\cardinality{Z(G)}=p$.
 
 ::: pf-proof
 
-If $|Z(G)|=p^3$, use step [](#s2){.pf-ref}. If $|Z(G)|=p^2$, use steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. Hence a nonabelian group cannot have center of order $p^2$ or $p^3$. By step [](#s1){.pf-ref} its center is nontrivial, so the only remaining possibility is
+If $\cardinality{Z(G)}=p^3$, use step [](#s2){.pf-ref}. If $\cardinality{Z(G)}=p^2$, use steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. Hence a nonabelian group cannot have center of order $p^2$ or $p^3$. By step [](#s1){.pf-ref} its center is nontrivial, so the only remaining possibility is
 $$
-|Z(G)|=p.
+\cardinality{Z(G)}=p.
 $$
 
 :::

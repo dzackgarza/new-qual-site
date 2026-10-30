@@ -53,7 +53,7 @@ $$
 f^{(m)}(z_0)
 =
 \frac{m!}{2\pi i}
-\int_{|\zeta-z_0|=r}
+\int_{\abs{\zeta-z_0}=r}
 \frac{f(\zeta)}
 {(\zeta-z_0)^{m+1}}
 \,d\zeta.
@@ -75,7 +75,7 @@ $$
 f(z)
 =
 \frac1{2\pi i}
-\int_{|\zeta-z_0|=r}
+\int_{\abs{\zeta-z_0}=r}
 \frac{f(\zeta)}{\zeta-z}
 \,d\zeta
 $$

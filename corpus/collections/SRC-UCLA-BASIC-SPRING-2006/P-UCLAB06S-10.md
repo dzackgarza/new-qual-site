@@ -133,7 +133,7 @@ Hence $Bv\in E_\lambda$.
 
 The restricted family
 $$
-\{B|_{E_\lambda}:B\in Y\}
+\{B\restrict_{E_\lambda}:B\in Y\}
 $$
 is a commuting family of endomorphisms of the smaller complex vector
 space $E_\lambda$.
@@ -142,13 +142,13 @@ space $E_\lambda$.
 
 Step [](#s5){.pf-ref} makes every restriction well-defined. For $B,C\in Y$,
 $$
-(B|_{E_\lambda})(C|_{E_\lambda})
+(B\restrict_{E_\lambda})(C\restrict_{E_\lambda})
 =
-(BC)|_{E_\lambda}
+(BC)\restrict_{E_\lambda}
 =
-(CB)|_{E_\lambda}
+(CB)\restrict_{E_\lambda}
 =
-(C|_{E_\lambda})(B|_{E_\lambda}),
+(C\restrict_{E_\lambda})(B\restrict_{E_\lambda}),
 $$
 because the members of $Y$ commute.
 

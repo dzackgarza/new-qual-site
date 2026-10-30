@@ -57,7 +57,7 @@ The local uniform limit theorem makes $f$ holomorphic
 on $U$ [@SS03]. Since $f$ is continuous and nonzero on
 the compact circle $\partial D$,
 $$
-\delta:=\min_{z\in\partial D}|f(z)|>0.
+\delta:=\min_{z\in\partial D}\abs{f(z)}>0.
 $$
 In particular $f$ is not identically zero on the component
 of $U$ containing $\overline D$. Its zeros in $\overline D$
@@ -78,9 +78,9 @@ Uniform convergence on the boundary gives the same zero count.
 
 Choose $N$ so that for every $n\geq N$,
 $$
-\sup_{z\in\partial D}|f_n(z)-f(z)|<\delta.
+\sup_{z\in\partial D}\abs{f_n(z)-f(z)}<\delta.
 $$
-Then $|f_n-f|<|f|$ throughout $\partial D$. Rouche's
+Then $\abs{f_n-f}<\abs{f}$ throughout $\partial D$. Rouche's
 theorem applies, since both functions are holomorphic
 on a neighborhood of $\overline D$, and gives equality
 of their numbers of zeros in $D$, counting multiplicities

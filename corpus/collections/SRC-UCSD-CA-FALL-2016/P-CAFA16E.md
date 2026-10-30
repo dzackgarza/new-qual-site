@@ -45,10 +45,10 @@ Therefore there is a subsequence $\{f_{n_k}\}$ converging uniformly on every com
 ::: pf-step
 
 Preserve codomain condition: *Proof:*\
-Uniform convergence on compact sets and the pointwise bound $|f_{n_k}(z)|\le1$ imply for each $z\in U$, $|f(z)|=\lim_k|f_{n_k}(z)|\le1$.
+Uniform convergence on compact sets and the pointwise bound $\abs{f_{n_k}(z)}\le1$ imply for each $z\in U$, $\abs{f(z)}=\lim_k\abs{f_{n_k}(z)}\le1$.
 Hence $f:U\to\overline{\DD}$.
-In fact, maximum principle or Hurwitz prevents interior values with $|f|=1$ unless constant.
-Because $f(a)=\lim_k f_{n_k}(a)=0$, nonconstant behavior is allowed and we get $|f(z)|<1$ for all $z\in U$.
+In fact, maximum principle or Hurwitz prevents interior values with $\abs{f}=1$ unless constant.
+Because $f(a)=\lim_k f_{n_k}(a)=0$, nonconstant behavior is allowed and we get $\abs{f(z)}<1$ for all $z\in U$.
 
 :::
 

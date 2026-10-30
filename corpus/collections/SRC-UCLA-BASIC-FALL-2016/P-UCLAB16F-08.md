@@ -42,7 +42,7 @@ converges.
 
 The values satisfy
 $$
-|f_n(1)|\le1.
+\abs{f_n(1)}\le1.
 $$
 Thus the sequence is bounded in $\RR$.
 By Bolzano--Weierstrass, it has a convergent subsequence.
@@ -173,7 +173,7 @@ f_n(m)
 $$
 Then
 $$
-|f_n(m)|\le1.
+\abs{f_n(m)}\le1.
 $$
 Take
 $$

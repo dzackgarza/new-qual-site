@@ -31,7 +31,7 @@ For part (a), let $a,b\in\DD$ be distinct fixed points of $f$. Choose a disc aut
 $$
 g=\phi\circ f\circ\phi^{-1}.
 $$
-Then $g:\DD\to\DD$ is holomorphic, $g(0)=0$, and $c=\phi(b)\ne0$ is another fixed point. Schwarz's lemma gives $|g(z)|\le|z|$. Since $|g(c)|=|c|$ for $c\ne0$, the equality case of Schwarz's lemma implies
+Then $g:\DD\to\DD$ is holomorphic, $g(0)=0$, and $c=\phi(b)\ne0$ is another fixed point. Schwarz's lemma gives $\abs{g(z)}\le\abs{z}$. Since $\abs{g(c)}=\abs{c}$ for $c\ne0$, the equality case of Schwarz's lemma implies
 $$
 g(z)=e^{i\theta}z
 $$

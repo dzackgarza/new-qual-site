@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Assume that $f(z)$ is an entire function that is $2\pi$-periodic in the sense that $f(z + 2\pi) = f(z)$, and
 $$
-|f(x+iy)| \leq C e^{\alpha|y|},
+\abs{f(x+iy)} \leq C e^{\alpha\abs{y}},
 $$
 for some $C > 0$, where $0 < \alpha < 1$. Prove that $f$ is constant.
 :::
@@ -92,9 +92,9 @@ Divide by $2\pi$.
 
 Therefore
 $$
-|a_n|
+\abs{a_n}
 \le
-C e^{\alpha|y|}e^{ny}
+C e^{\alpha\abs{y}}e^{ny}
 $$
 for every $y\in\RR$.
 
@@ -104,32 +104,32 @@ for every $y\in\RR$.
 From step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
-|a_n|
+\abs{a_n}
 &\le
 \frac1{2\pi}
 \int_0^{2\pi}
-|f(x+iy)|
-\,|e^{-in(x+iy)}|
+\abs{f(x+iy)}
+\,\abs{e^{-in(x+iy)}}
 \,dx.
 \end{aligned}
 $$
 Now
 $$
-|e^{-in(x+iy)}|
+\abs{e^{-in(x+iy)}}
 =
 e^{ny},
 $$
 and the hypothesis gives
 $$
-|f(x+iy)|
+\abs{f(x+iy)}
 \le
-Ce^{\alpha|y|}.
+Ce^{\alpha\abs{y}}.
 $$
 Thus
 $$
-|a_n|
+\abs{a_n}
 \le
-Ce^{\alpha|y|}e^{ny}.
+Ce^{\alpha\abs{y}}e^{ny}.
 $$
 
 :::
@@ -145,7 +145,7 @@ $$
 For $y<0$,
 $$
 \boxed{
-|a_n|
+\abs{a_n}
 \le
 C e^{(n-\alpha)y}}.
 $$
@@ -155,11 +155,11 @@ $$
 
 When $y<0$,
 $$
-|y|=-y.
+\abs{y}=-y.
 $$
 Hence step [](#s1-2){.pf-ref} becomes
 $$
-|a_n|
+\abs{a_n}
 \le
 C e^{-\alpha y}e^{ny}
 =
@@ -197,7 +197,7 @@ Thus
 $$
 e^{(n-\alpha)y}\to0
 $$
-as $y\to-\infty$. Step [](#s1-3){.pf-ref} then forces $|a_n|=0$.
+as $y\to-\infty$. Step [](#s1-3){.pf-ref} then forces $\abs{a_n}=0$.
 
 :::
 
@@ -212,7 +212,7 @@ $$
 For $y>0$,
 $$
 \boxed{
-|a_n|
+\abs{a_n}
 \le
 C e^{(n+\alpha)y}}.
 $$
@@ -222,11 +222,11 @@ $$
 
 When $y>0$,
 $$
-|y|=y.
+\abs{y}=y.
 $$
 Thus step [](#s1-2){.pf-ref} gives
 $$
-|a_n|
+\abs{a_n}
 \le
 Ce^{\alpha y}e^{ny}
 =

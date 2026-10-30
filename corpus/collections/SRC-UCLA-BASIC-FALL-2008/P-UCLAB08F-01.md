@@ -42,7 +42,7 @@ is uniformly continuous on $[0,\infty)$.
 
 For all $s,t\ge0$,
 $$
-|f(t)-f(s)|=0.
+\abs{f(t)-f(s)}=0.
 $$
 Thus for every $\varepsilon>0$, any $\delta>0$ satisfies the definition of uniform continuity.
 
@@ -63,7 +63,7 @@ is uniformly continuous on $[0,\infty)$.
 
 For all $s,t\ge0$,
 $$
-|f(t)-f(s)|=|t-s|.
+\abs{f(t)-f(s)}=\abs{t-s}.
 $$
 Given $\varepsilon>0$, choose
 $$
@@ -71,11 +71,11 @@ $$
 $$
 Then
 $$
-|t-s|<\delta
+\abs{t-s}<\delta
 $$
 implies
 $$
-|f(t)-f(s)|<\varepsilon.
+\abs{f(t)-f(s)}<\varepsilon.
 $$
 
 :::
@@ -101,12 +101,12 @@ y_n=n+\frac1n.
 $$
 Then
 $$
-|x_n-y_n|=\frac1n\longrightarrow0,
+\abs{x_n-y_n}=\frac1n\longrightarrow0,
 $$
 but
 $$
 \begin{aligned}
-|f(y_n)-f(x_n)|
+\abs{f(y_n)-f(x_n)}
 &=
 \left(n+\frac1n\right)^2-n^2\\
 &=
@@ -117,11 +117,11 @@ $$
 $$
 If $f$ were uniformly continuous, taking $\varepsilon=1$ would give some $\delta>0$ such that
 $$
-|s-t|<\delta
+\abs{s-t}<\delta
 $$
 implies
 $$
-|f(s)-f(t)|<1.
+\abs{f(s)-f(t)}<1.
 $$
 For sufficiently large $n$, one has $1/n<\delta$, contradicting the displayed inequality above.
 

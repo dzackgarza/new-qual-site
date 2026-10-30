@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.exercise}
-12. This exercise gives two simple observations about $1 / \Gamma$ (a) Show that $1 / | \Gamma ( s ) |$ is not $O ( e ^ { c | s | } )$ for any $c > 0$ . [Hint: If $s = - k - 1 / 2$ where k is a positive integer, then $| 1 / \Gamma ( s ) | \geq k ! / \pi . ]$
+12. This exercise gives two simple observations about $1 / \Gamma$ (a) Show that $1 / \abs{ \Gamma ( s ) }$ is not $O ( e ^ { c \abs{ s } } )$ for any $c > 0$ . [Hint: If $s = - k - 1 / 2$ where k is a positive integer, then $\abs{ 1 / \Gamma ( s ) } \geq k ! / \pi . ]$
 
-(b) Show that there is no entire function $F ( s )$ with $F ( s ) = O ( e ^ { c \left| { s } \right| } )$ that has simple zeros at $s = 0 , - 1 , - 2 , . . . , - n , . . . ,$ and that vanishes nowhere else.
+(b) Show that there is no entire function $F ( s )$ with $F ( s ) = O ( e ^ { c \abs{ { s } } } )$ that has simple zeros at $s = 0 , - 1 , - 2 , . . . , - n , . . . ,$ and that vanishes nowhere else.
 :::
 
 ::: {.solution}
@@ -29,16 +29,16 @@ audit:
 ::: pf
 
 ::: {.pf-step #p1-s1}
-For $s = -k - 1/2$ (with $k$ a positive integer), $|1/\Gamma(s)| \ge k!/\pi$.
+For $s = -k - 1/2$ (with $k$ a positive integer), $\abs{1/\Gamma(s)} \ge k!/\pi$.
 
 ::: pf-proof
-the hint (using the reflection formula $\Gamma(s)\Gamma(1-s) = \pi/\sin(\pi s)$, which gives $|\Gamma(-k-1/2)| \le \pi/k!$).
+the hint (using the reflection formula $\Gamma(s)\Gamma(1-s) = \pi/\sin(\pi s)$, which gives $\abs{\Gamma(-k-1/2)} \le \pi/k!$).
 :::
 
 :::
 
 ::: {.pf-step #p1-s2}
-If $1/|\Gamma(s)| = O(e^{c|s|})$, then there is $C$ with $1/|\Gamma(s)| \le C e^{c|s|}$ for all $s$.
+If $1/\abs{\Gamma(s)} = O(e^{c\abs{s}})$, then there is $C$ with $1/\abs{\Gamma(s)} \le C e^{c\abs{s}}$ for all $s$.
 
 ::: pf-proof
 definition of big-O.
@@ -65,7 +65,7 @@ $k!/e^{ck} \to \infty$ as $k \to \infty$.
 :::
 
 ::: {.pf-step #p1-s5}
-Hence $1/|\Gamma(s)|$ is not $O(e^{c|s|})$ for any $c > 0$.
+Hence $1/\abs{\Gamma(s)}$ is not $O(e^{c\abs{s}})$ for any $c > 0$.
 
 ::: pf-proof
 step [](#p1-s3){.pf-ref} and step [](#p1-s4){.pf-ref}.
@@ -107,10 +107,10 @@ step [](#p2-s2){.pf-ref}.
 :::
 
 ::: {.pf-step #p2-s4}
-By (a), $1/|\Gamma(s)|$ is not $O(e^{c|s|})$, but $F(s) = O(e^{c|s|})$; this forces $G$ to grow in a way that contradicts the Hadamard factorization theorem (an entire function of order $\le 1$ with no zeros must be $e^{as+b}$, but then $F = e^{as+b}\Gamma$ would not be $O(e^{c|s|})$).
+By (a), $1/\abs{\Gamma(s)}$ is not $O(e^{c\abs{s}})$, but $F(s) = O(e^{c\abs{s}})$; this forces $G$ to grow in a way that contradicts the Hadamard factorization theorem (an entire function of order $\le 1$ with no zeros must be $e^{as+b}$, but then $F = e^{as+b}\Gamma$ would not be $O(e^{c\abs{s}})$).
 
 ::: pf-proof
-step [](#p2-s3){.pf-ref} and (a); more directly, if $F = O(e^{c|s|})$ then $F$ has order $\le 1$, so by Hadamard factorization $F(s) = e^{as+b}\prod_n (1 - s/z_n)$; but the product over the zeros $0, -1, -2, \ldots$ is $1/\Gamma(s)$ (up to a factor), and $1/\Gamma$ is not $O(e^{c|s|})$, contradiction.
+step [](#p2-s3){.pf-ref} and (a); more directly, if $F = O(e^{c\abs{s}})$ then $F$ has order $\le 1$, so by Hadamard factorization $F(s) = e^{as+b}\prod_n (1 - s/z_n)$; but the product over the zeros $0, -1, -2, \ldots$ is $1/\Gamma(s)$ (up to a factor), and $1/\Gamma$ is not $O(e^{c\abs{s}})$, contradiction.
 :::
 
 :::

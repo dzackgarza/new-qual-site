@@ -96,13 +96,13 @@ $$
 =
 \frac{\pi}{e}.
 $$
-On $\Gamma_R$, $\operatorname{Im}z\geq0$, so $|e^{iz}|=e^{-\operatorname{Im}z}\leq1$, while
+On $\Gamma_R$, $\operatorname{Im}z\geq0$, so $\abs{e^{iz}}=e^{-\operatorname{Im}z}\leq1$, while
 $$
-|1+z^2|\geq R^2-1.
+\abs{1+z^2}\geq R^2-1.
 $$
 Since $\Gamma_R$ has length $\pi R$,
 $$
-\left|\int_{\Gamma_R}g(z)\,dz\right|
+\abs{\int_{\Gamma_R}g(z)\,dz}
 \leq
 \frac{\pi R}{R^2-1}
 \longrightarrow0.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF92-7
 kind: problem
-title: The integral $\int_{|z|=1} e^z/[z(2z+1)^2]\,dz$
+title: The integral $\int_{\abs{z}=1} e^z/[z(2z+1)^2]\,dz$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -98,7 +98,7 @@ R(z)
 $$
 the residue at the double pole is
 $$
-\left.\frac{d}{dz}\left(\frac{e^z}{4z}\right)\right|_{z=-1/2}.
+\evaluated{\frac{d}{dz}\left(\frac{e^z}{4z}\right)}_{z=-1/2}.
 $$
 Now
 $$

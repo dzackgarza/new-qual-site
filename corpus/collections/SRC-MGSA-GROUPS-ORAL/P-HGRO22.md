@@ -39,12 +39,12 @@ The center $Z(G)$ is nontrivial.
 
 Apply the class equation:
 $$
-|G|=|Z(G)|+\sum_i [G:C_G(x_i)],
+\cardinality{G}=\cardinality{Z(G)}+\sum_i [G:C_G(x_i)],
 $$
 where the $x_i$ represent the noncentral conjugacy classes. Each noncentral
 class size $[G:C_G(x_i)]$ is a power of $p$ greater than $1$, hence divisible by
-$p$. Since $|G|=p^3$ is divisible by $p$, the class equation implies
-$p\mid |Z(G)|$.
+$p$. Since $\cardinality{G}=p^3$ is divisible by $p$, the class equation implies
+$p\mid \cardinality{Z(G)}$.
 
 :::
 
@@ -56,9 +56,9 @@ The center cannot have order $p^2$ or $p^3$.
 
 ::: pf-proof
 
-If $|Z(G)|=p^3$, then $Z(G)=G$, contradicting that $G$ is nonabelian.
+If $\cardinality{Z(G)}=p^3$, then $Z(G)=G$, contradicting that $G$ is nonabelian.
 
-If $|Z(G)|=p^2$, then $G/Z(G)$ has order $p$, hence is cyclic. But if
+If $\cardinality{Z(G)}=p^2$, then $G/Z(G)$ has order $p$, hence is cyclic. But if
 $G/Z(G)$ is cyclic, then $G$ is abelian: if $G/Z(G)=\langle gZ(G)\rangle$,
 write $x=g^a z$ and $y=g^b w$ with $z,w\in Z(G)$; then $xy=yx$.
 This again contradicts the hypothesis.
@@ -69,7 +69,7 @@ This again contradicts the hypothesis.
 
 ::: pf-step
 
-Therefore $|Z(G)|=p$.
+Therefore $\cardinality{Z(G)}=p$.
 
 ::: pf-proof
 

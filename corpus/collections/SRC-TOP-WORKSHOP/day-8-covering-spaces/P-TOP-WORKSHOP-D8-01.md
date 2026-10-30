@@ -36,7 +36,7 @@ We show that $A$ and its complement are open. Fix $y\in Y$, and choose an evenly
 $$
 p^{-1}(U)=\bigsqcup_{\lambda}V_\lambda,
 $$
-with each $p|_{V_\lambda}:V_\lambda\to U$ a homeomorphism. By continuity of $h,f,g$, after shrinking to a neighborhood $W\ni y$ we may assume $h(W)\subset U$, while $f(W)$ and $g(W)$ lie in the sheets containing $f(y)$ and $g(y)$, respectively.
+with each $p\restrict_{V_\lambda}:V_\lambda\to U$ a homeomorphism. By continuity of $h,f,g$, after shrinking to a neighborhood $W\ni y$ we may assume $h(W)\subset U$, while $f(W)$ and $g(W)$ lie in the sheets containing $f(y)$ and $g(y)$, respectively.
 
 If $f(y)=g(y)$, these are the same sheet. Since $p$ is injective on that sheet and $pf=pg$, we have $f=g$ on $W$. Hence $A$ is open.
 

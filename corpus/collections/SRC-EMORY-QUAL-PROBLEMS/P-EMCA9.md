@@ -35,7 +35,7 @@ B(a,r)\cap f(\CC)=\varnothing.
 $$
 Thus
 $$
-|f(z)-a|\ge r\qquad\text{for every }z\in\CC.
+\abs{f(z)-a}\ge r\qquad\text{for every }z\in\CC.
 $$
 The function
 $$

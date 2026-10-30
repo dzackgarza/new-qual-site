@@ -69,7 +69,7 @@ $$
 $$
 As a dimension check,
 $$
-2\cdot1+3\cdot4+5+6=25=|X|.
+2\cdot1+3\cdot4+5+6=25=\cardinality{X}.
 $$
 
 If a semisimple $G$-module decomposes as $\bigoplus_i m_iV_i$ with pairwise nonisomorphic irreducibles $V_i$, then

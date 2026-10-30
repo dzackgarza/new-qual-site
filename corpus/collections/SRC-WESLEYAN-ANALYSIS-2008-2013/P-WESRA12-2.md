@@ -448,7 +448,7 @@ g\in L^1(X,\lambda)
 $$
 with
 $$
-|f_n(x)|
+\abs{f_n(x)}
 \le
 g(x)
 $$
@@ -578,9 +578,9 @@ the distance function is
 $$
 d(x)
 =
-\left|
+\abs{
 x-\frac1n
-\right|.
+}.
 $$
 For
 $$
@@ -665,9 +665,9 @@ The graph of
 $$
 d(x)
 =
-\left|
+\abs{
 x-\frac1n
-\right|
+}
 $$
 on $I_n$ consists of two triangles.
 Therefore
@@ -731,9 +731,9 @@ The function $f$ is measurable and integrable.
 
 Up to the countable tie set, $f$ is given on each interval $I_n$ by either
 $$
-\left|
+\abs{
 x-\frac1n
-\right|
+}
 $$
 when $n$ is odd or by $0$ when $n$ is even.
 Thus $f$ is measurable.
@@ -745,7 +745,7 @@ $$
 on $[0,1]$.
 Therefore
 $$
-|f|
+\abs{f}
 \le
 1\in L^1([0,1]).
 $$

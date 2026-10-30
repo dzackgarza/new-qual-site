@@ -65,16 +65,16 @@ subgroup of $G=\operatorname{Gal}(K/\QQ)$.
 
 ::: pf-proof
 
-The finite Galois correspondence gives $|G|=105$ and
-$[G:H]=[L:\QQ]=3$, hence $|H|=35$ [@DF04].
+The finite Galois correspondence gives $\cardinality{G}=105$ and
+$[G:H]=[L:\QQ]=3$, hence $\cardinality{H}=35$ [@DF04].
 Let $G$ act by left multiplication on the three left cosets
 of $H$, giving $\rho:G\to S_3$.
 The action is transitive: $yx^{-1}$ sends $xH$ to $yH$.
 
 The order of the image divides $105$, by the first isomorphism
-theorem, and divides $6=|S_3|$, by Lagrange's theorem.
+theorem, and divides $6=\cardinality{S_3}$, by Lagrange's theorem.
 It is therefore $1$ or $3$. Transitivity on three points
-excludes order $1$, so $|\rho(G)|=3$ and $|\ker\rho|=35$.
+excludes order $1$, so $\cardinality{\rho(G)}=3$ and $\cardinality{\ker\rho}=35$.
 Every element of the kernel fixes the coset $H$, so belongs to
 $H$. Since both subgroups have order $35$, $H=\ker\rho$.
 Kernels are normal, proving the claim without any assumption

@@ -84,7 +84,7 @@ f(a)\le f(t)\le f(b),
 $$
 so
 $$
-|f(t)-f(x)|<\varepsilon.
+\abs{f(t)-f(x)}<\varepsilon.
 $$
 Thus $f$ is continuous at $x$.
 
@@ -268,19 +268,19 @@ $$
 $$
 contains none of these finitely many points.
 
-Thus for $|y-x|<\delta$, the first $N$ step functions have the same value at $x$ and $y$.
+Thus for $\abs{y-x}<\delta$, the first $N$ step functions have the same value at $x$ and $y$.
 Hence
 $$
 \begin{aligned}
-|f(y)-f(x)|
+\abs{f(y)-f(x)}
 &\le
 \sum_{n>N}
 2^{-n}
-\left|
+\abs{
 \mathbf1_{[s_n,\infty)}(y)
 -
 \mathbf1_{[s_n,\infty)}(x)
-\right|\\
+}\\
 &\le
 \sum_{n>N}2^{-n}\\
 &<

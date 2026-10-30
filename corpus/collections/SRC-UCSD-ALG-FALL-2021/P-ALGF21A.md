@@ -132,7 +132,7 @@ Consequently every word reduces to $a^r$ or $a^r b$.
 Using $a^8=1$, the exponent may be reduced modulo $8$.
 Hence
 $$
-|G|\le16.
+\cardinality{G}\le16.
 $$
 
 :::
@@ -178,17 +178,17 @@ The homomorphism $\phi:G\to H$ is an isomorphism.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $|G|\le16$.
-By step [](#s4){.pf-ref}, $|H|\ge16$.
+By step [](#s3){.pf-ref}, $\cardinality{G}\le16$.
+By step [](#s4){.pf-ref}, $\cardinality{H}\ge16$.
 But step [](#s2){.pf-ref} gives a surjection $G\twoheadrightarrow H$, so
 $$
-|H|\le |G|.
+\cardinality{H}\le \cardinality{G}.
 $$
 Hence
 $$
-16\le|H|\le|G|\le16,
+16\le\cardinality{H}\le\cardinality{G}\le16,
 $$
-and therefore $|G|=|H|=16$.
+and therefore $\cardinality{G}=\cardinality{H}=16$.
 A surjective homomorphism between finite groups of the same order is injective, so $\phi$ is an isomorphism.
 
 :::

@@ -54,8 +54,8 @@ The point $w=10+10i$ lies outside this circle.
 
 Its distance from the center $2i$ is
 $$
-|w-2i|
-=|10+8i|
+\abs{w-2i}
+=\abs{10+8i}
 =\sqrt{10^2+8^2}
 =\sqrt{164}
 >4.

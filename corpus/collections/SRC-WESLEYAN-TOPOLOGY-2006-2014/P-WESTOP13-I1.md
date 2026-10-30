@@ -100,7 +100,7 @@ $$
 d(x,y)
 \coloneqq
 \sum_{n=1}^{\infty}
-2^{-n}\min\{1,|x_n-y_n|\}.
+2^{-n}\min\{1,\abs{x_n-y_n}\}.
 $$
 Then $d$ is a metric on $U^\omega$ that induces the product topology.
 
@@ -109,7 +109,7 @@ Then $d$ is a metric on $U^\omega$ that induces the product topology.
 
 Each summand is nonnegative and bounded by $2^{-n}$, so the series converges. The triangle inequality follows termwise from the metric
 $$
-(s,t)\longmapsto\min\{1,|s-t|\}
+(s,t)\longmapsto\min\{1,\abs{s-t}\}
 $$
 on $U$. Also $d(x,y)=0$ implies $x_n=y_n$ for every $n$, so $x=y$.
 

@@ -19,8 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \{z : 0 < |z| < 1\} \to \CC$ be holomorphic and assume that $|f(z)| \leq A|z|^{-3/2}$ for some constant $A$.
-Prove that there is a complex constant $\alpha$ such that $g(z) := f(z) - \alpha z^{-1}$ can be extended to a holomorphic function on $\{z : |z| < 1\}$.
+Let $f : \{z : 0 < \abs{z} < 1\} \to \CC$ be holomorphic and assume that $\abs{f(z)} \leq A\abs{z}^{-3/2}$ for some constant $A$.
+Prove that there is a complex constant $\alpha$ such that $g(z) := f(z) - \alpha z^{-1}$ can be extended to a holomorphic function on $\{z : \abs{z} < 1\}$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ Prove that there is a complex constant $\alpha$ such that $g(z) := f(z) - \alpha
 
 ::: pf-step
 
-$f$ has a Laurent expansion $f(z) = \sum_{n=-\infty}^{\infty} a_n z^n$ on $0 < |z| < 1$.
+$f$ has a Laurent expansion $f(z) = \sum_{n=-\infty}^{\infty} a_n z^n$ on $0 < \abs{z} < 1$.
 
 ::: pf-proof
 
@@ -48,7 +48,7 @@ $a_n = 0$ for all $n \le -2$.
 
 ::: pf-step
 
-For $n \le -2$, $a_n = \frac{1}{2\pi i} \oint_{|z| = r} f(z) z^{-n-1}\, dz$ for any $0 < r < 1$.
+For $n \le -2$, $a_n = \frac{1}{2\pi i} \oint_{\abs{z} = r} f(z) z^{-n-1}\, dz$ for any $0 < r < 1$.
 
 ::: pf-proof
 
@@ -60,11 +60,11 @@ Laurent coefficient formula.
 
 ::: {.pf-step #s2-2}
 
-$|a_n| \le \frac{1}{2\pi} \cdot 2\pi r \cdot \sup_{|z|=r} |f(z)| \cdot r^{-n-1} \le A r^{-3/2} \cdot r^{-n-1} = A r^{-n - 5/2}$.
+$\abs{a_n} \le \frac{1}{2\pi} \cdot 2\pi r \cdot \sup_{\abs{z}=r} \abs{f(z)} \cdot r^{-n-1} \le A r^{-3/2} \cdot r^{-n-1} = A r^{-n - 5/2}$.
 
 ::: pf-proof
 
-bound the integral by length times sup; use $|f(z)| \le A |z|^{-3/2} = A r^{-3/2}$.
+bound the integral by length times sup; use $\abs{f(z)} \le A \abs{z}^{-3/2} = A r^{-3/2}$.
 
 :::
 
@@ -88,7 +88,7 @@ Hence $a_n = 0$ for $n \le -2$.
 
 ::: pf-proof
 
-Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} force $|a_n| = 0$.
+Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} force $\abs{a_n} = 0$.
 
 :::
 
@@ -100,7 +100,7 @@ Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} force $|a_n| = 0$.
 
 ::: {.pf-step #s3}
 
-Therefore $f(z) = a_{-1} z^{-1} + h(z)$ where $h$ is holomorphic on $|z| < 1$.
+Therefore $f(z) = a_{-1} z^{-1} + h(z)$ where $h$ is holomorphic on $\abs{z} < 1$.
 
 ::: pf-proof
 
@@ -124,7 +124,7 @@ definition.
 
 ::: {.pf-step #s5}
 
-$g$ extends holomorphically to $|z| < 1$.
+$g$ extends holomorphically to $\abs{z} < 1$.
 
 ::: pf-proof
 

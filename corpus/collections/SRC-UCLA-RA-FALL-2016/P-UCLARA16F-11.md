@@ -32,7 +32,7 @@ is bounded on $\CC\setminus\{0\}$.
 
 Assume
 $$
-|f(z)f(1/z)|\le M
+\abs{f(z)f(1/z)}\le M
 $$
 for every $z\ne0$.
 
@@ -52,12 +52,12 @@ $$
 \boxed{
 f(1/z)\to f(0)}
 $$
-as $|z|\to\infty$.
+as $\abs{z}\to\infty$.
 
 
 ::: pf-proof
 
-As $|z|\to\infty$,
+As $\abs{z}\to\infty$,
 $$
 1/z\to0.
 $$
@@ -69,10 +69,10 @@ Apply continuity of the entire function $f$.
 
 ::: {.pf-step #s1-2}
 
-There exists $R>0$ such that for $|z|\ge R$,
+There exists $R>0$ such that for $\abs{z}\ge R$,
 $$
 \boxed{
-|f(1/z)|\ge\frac{|f(0)|}{2}>0}.
+\abs{f(1/z)}\ge\frac{\abs{f(0)}}{2}>0}.
 $$
 
 
@@ -80,19 +80,19 @@ $$
 
 By step [](#s1-1){.pf-ref}, choose $R$ so large that
 $$
-|f(1/z)-f(0)|
+\abs{f(1/z)-f(0)}
 <
-\frac{|f(0)|}{2}
+\frac{\abs{f(0)}}{2}
 $$
-whenever $|z|\ge R$. The reverse triangle inequality gives
+whenever $\abs{z}\ge R$. The reverse triangle inequality gives
 $$
-|f(1/z)|
+\abs{f(1/z)}
 \ge
-|f(0)|
+\abs{f(0)}
 -
-|f(1/z)-f(0)|
+\abs{f(1/z)-f(0)}
 >
-\frac{|f(0)|}{2}.
+\frac{\abs{f(0)}}{2}.
 $$
 
 :::
@@ -101,12 +101,12 @@ $$
 
 ::: {.pf-step #s1-3}
 
-Hence for $|z|\ge R$,
+Hence for $\abs{z}\ge R$,
 $$
 \boxed{
-|f(z)|
+\abs{f(z)}
 \le
-\frac{2M}{|f(0)|}}.
+\frac{2M}{\abs{f(0)}}}.
 $$
 
 
@@ -114,7 +114,7 @@ $$
 
 By hypothesis,
 $$
-|f(z)|\,|f(1/z)|
+\abs{f(z)}\,\abs{f(1/z)}
 \le
 M.
 $$
@@ -128,7 +128,7 @@ Use the lower bound from step [](#s1-2){.pf-ref} and divide.
 
 The function $f$ is bounded on the closed disk
 $$
-\{|z|\le R\}.
+\{\abs{z}\le R\}.
 $$
 
 

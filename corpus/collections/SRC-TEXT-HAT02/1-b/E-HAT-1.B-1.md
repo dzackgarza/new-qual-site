@@ -40,7 +40,7 @@ x=\sum_{v\in S}\lambda_v v,
 $$
 with finite support $S$, and use the standard $\ell^1$ metric
 $$
-d(x,y)=\sum_v|x_v-y_v|.
+d(x,y)=\sum_v\abs{x_v-y_v}.
 $$
 A simplicial automorphism permutes vertices, hence preserves this metric.
 

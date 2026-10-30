@@ -22,7 +22,7 @@ $$
 { \frac { \partial ^ { 4 } f } { \partial x ^ { 4 } } } + 2 { \frac { \partial ^ { 4 } f } { \partial x ^ { 2 } \partial y ^ { 2 } } } + { \frac { \partial ^ { 4 } f } { \partial y ^ { 4 } } } = 0 .\tag{15}
 $$
 
-Find a functional $J [ f ]$ whose extrema in a class of $C ^ { 4 } ( \bar { D } )$ functions $f = f ( x , y )$ with fixed boundary conditions, $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , satisfy this equation.
+Find a functional $J [ f ]$ whose extrema in a class of $C ^ { 4 } ( \bar { D } )$ functions $f = f ( x , y )$ with fixed boundary conditions, $f ( x , y ) \restrict _ { \partial D } = f _ { 0 } ( x , y )$ , satisfy this equation.
 :::
 
 ::: {.solution}
@@ -70,10 +70,10 @@ so it preserves the prescribed boundary values of $f$.
 
 The first variation is
 $$
-\left.
+\evaluated{
 \frac d{d\varepsilon}
 J[f_\varepsilon]
-\right|_{\varepsilon=0}
+}_{\varepsilon=0}
 =
 \iint_D
 (\Delta f)(\Delta\eta)

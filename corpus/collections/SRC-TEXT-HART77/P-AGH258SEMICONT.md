@@ -45,11 +45,11 @@ The fibers in the definition of $\varphi$ are finite-dimensional because $\mcf$ 
 
 ::: {.pf-step #s1}
 
-If $\varphi(x)=r$, then $x$ has an affine neighborhood $U$ and a surjection $\OO_U^r\to\mcf|_U$.
+If $\varphi(x)=r$, then $x$ has an affine neighborhood $U$ and a surjection $\OO_U^r\to\mcf\restrict_U$.
 
 ::: pf-proof
 
-Take an affine neighborhood $V=\Spec A$ of $x$ with $\mcf|_V\cong\widetilde M$, where $M$ is a finite $A$-module [@Har10a, Proposition II.5.4].
+Take an affine neighborhood $V=\Spec A$ of $x$ with $\mcf\restrict_V\cong\widetilde M$, where $M$ is a finite $A$-module [@Har10a, Proposition II.5.4].
 Let $\mathfrak p$ correspond to $x$.
 Choose elements $m_1,\ldots,m_r\in M$ whose images form a basis of $M_{\mathfrak p}/\mathfrak pM_{\mathfrak p}$: each basis vector can be represented by a fraction from $M$, and multiplication by its nonzero denominator only rescales that basis vector.
 By [[T-DEFNAKA|Nakayama's lemma]], their images generate $M_{\mathfrak p}$.
@@ -59,7 +59,7 @@ The finite module $C=\operatorname{coker}u$ satisfies $C_{\mathfrak p}=0$.
 For each element of a finite generating list of $C$, choose an annihilator outside $\mathfrak p$.
 Their product $s\notin\mathfrak p$ annihilates $C$, so $u_s:A_s^r\to M_s$ is surjective.
 The associated-sheaf map is the asserted surjection on $U=D_V(s)$.
-When $r=0$, this construction gives $\mcf|_U=0$.
+When $r=0$, this construction gives $\mcf\restrict_U=0$.
 
 :::
 
@@ -89,7 +89,7 @@ If $\mcf$ is locally free, then $\varphi$ is locally constant; connectedness mak
 
 ::: pf-proof
 
-On an open set with $\mcf|_U\cong\OO_U^r$, every fiber is $k(y)^r$, so $\varphi(y)=r$ for all $y\in U$.
+On an open set with $\mcf\restrict_U\cong\OO_U^r$, every fiber is $k(y)^r$, so $\varphi(y)=r$ for all $y\in U$.
 Hence each set $\varphi^{-1}(r)$ is open.
 Its complement is the union of the other such sets and is also open, so $\varphi^{-1}(r)$ is closed as well.
 If $X$ is nonempty and connected, the fiber containing any chosen point must be all of $X$.
@@ -110,7 +110,7 @@ Step [](#s1){.pf-ref} gives an affine neighborhood $U=\Spec B$ and a surjective 
 $$
 u:B^r\longrightarrow N
 $$
-whose associated sheaf is a surjection $\OO_U^r\to\mcf|_U$.
+whose associated sheaf is a surjection $\OO_U^r\to\mcf\restrict_U$.
 The ring $B$ is reduced because $X$ is reduced.
 For each $\mathfrak q\in\Spec B$, the induced map
 $$
@@ -123,7 +123,7 @@ Its image in $k(\mathfrak q)^r$ maps to zero under this isomorphism, so every $b
 The kernel of $B\to k(\mathfrak q)$ is $\mathfrak q$, and therefore $b_i\in\mathfrak q$ for every prime $\mathfrak q$.
 The intersection of all prime ideals is the nilradical, which is zero in the reduced ring $B$ [@Har10a, Chapter II, §2].
 Thus every $b_i$ is zero and $u$ is injective.
-It follows that $u$ is an isomorphism and $\mcf|_U\cong\OO_U^r$.
+It follows that $u$ is an isomorphism and $\mcf\restrict_U\cong\OO_U^r$.
 The construction applies at each point, giving local freeness.
 
 :::

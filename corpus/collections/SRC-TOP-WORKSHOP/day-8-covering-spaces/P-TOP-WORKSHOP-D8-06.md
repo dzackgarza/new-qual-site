@@ -38,7 +38,7 @@ A\cap p^{-1}(b)
 $$
 is closed in the compact space $A$, so it is compact.
 
-The fiber is also a discrete subspace of $E$. Indeed, if $e\in p^{-1}(b)$, choose an evenly covered neighborhood $U\ni b$, and let $V$ be the sheet containing $e$. Since $p|_V:V\to U$ is a homeomorphism,
+The fiber is also a discrete subspace of $E$. Indeed, if $e\in p^{-1}(b)$, choose an evenly covered neighborhood $U\ni b$, and let $V$ be the sheet containing $e$. Since $p\restrict_V:V\to U$ is a homeomorphism,
 $$
 V\cap p^{-1}(b)=\{e\}.
 $$

@@ -307,7 +307,7 @@ $$
 
 The restriction
 $$
-T|_{v^\perp}
+T\restrict_{v^\perp}
 $$
 is normal.
 
@@ -316,15 +316,15 @@ is normal.
 By step [](#s8){.pf-ref}, both $T$ and $T^*$ preserve $v^\perp$. Hence the adjoint of
 the restriction is
 $$
-(T|_{v^\perp})^*
+(T\restrict_{v^\perp})^*
 =
-T^*|_{v^\perp}.
+T^*\restrict_{v^\perp}.
 $$
 Restricting the identity
 $$
 TT^*=T^*T
 $$
-to $v^\perp$ gives normality of $T|_{v^\perp}$.
+to $v^\perp$ gives normality of $T\restrict_{v^\perp}$.
 
 :::
 

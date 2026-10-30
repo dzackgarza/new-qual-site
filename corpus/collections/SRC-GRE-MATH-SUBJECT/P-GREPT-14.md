@@ -79,7 +79,7 @@ $$
 \qquad\text{and hence}\qquad
 u=-\frac1{x+C_1}.
 $$
-Integrating once more gives $y=C_2-\log|x+C_1|$, which is
+Integrating once more gives $y=C_2-\log\abs{x+C_1}$, which is
 $y=C_2-\log(x+C_1)$ where $x+C_1>0$. Conversely, this function satisfies
 $y'=-1/(x+C_1)$ and $y''=1/(x+C_1)^2=(y')^2$.
 

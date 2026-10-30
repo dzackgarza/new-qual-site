@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Consider the following matrix:
 $$
-B \definedas
+B \coloneqq
 \begin{bmatrix}
 1 & 3 & 3
 \\

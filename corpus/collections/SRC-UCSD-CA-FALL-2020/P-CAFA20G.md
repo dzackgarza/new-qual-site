@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\DD$ denote the open unit disc, and let $\DD' = \{z \in \CC : |z + 2/5| < 2/5\}$ denote the open disc of center $-2/5$ and radius $2/5$.
+Let $\DD$ denote the open unit disc, and let $\DD' = \{z \in \CC : \abs{z + 2/5} < 2/5\}$ denote the open disc of center $-2/5$ and radius $2/5$.
 Let $\Omega = \DD \setminus \overline{\DD'}$.
 
 Find, with justification, an explicit continuous function $h: \overline{\Omega} \to \RR$, harmonic in $\Omega$, and with boundary values $h = 0$ on $\partial\DD$ and $h = 1$ on $\partial\DD'$.
@@ -27,31 +27,31 @@ points are $-1/2$ and $-2$, so consider the Möbius map
 $$
 \Phi(z)=\frac{z+1/2}{z+2}.
 $$
-On the outer boundary $|z|=1$, one checks that
+On the outer boundary $\abs{z}=1$, one checks that
 $$
-|\Phi(z)|=\frac12,
+\abs{\Phi(z)}=\frac12,
 $$
-while on the inner boundary $|z+2/5|=2/5$,
+while on the inner boundary $\abs{z+2/5}=2/5$,
 $$
-|\Phi(z)|=\frac14.
+\abs{\Phi(z)}=\frac14.
 $$
 Hence $\Phi$ maps $\Omega$ conformally onto the annulus
 $$
-\frac14<|w|<\frac12.
+\frac14<\abs{w}<\frac12.
 $$
 
 On that annulus the radial harmonic function taking boundary values $1$ on
-$|w|=1/4$ and $0$ on $|w|=1/2$ is
+$\abs{w}=1/4$ and $0$ on $\abs{w}=1/2$ is
 $$
-H(w)=\frac{\log(2|w|)}{\log(1/2)}
-=\frac{\log\!\bigl(1/(2|w|)\bigr)}{\log 2}.
+H(w)=\frac{\log(2\abs{w})}{\log(1/2)}
+=\frac{\log\!\bigl(1/(2\abs{w})\bigr)}{\log 2}.
 $$
 Therefore
 $$
 \boxed{\displaystyle
-h(z)=\frac{\log\!\left(\frac{|z+2|}{2|z+1/2|}\right)}{\log 2}}
+h(z)=\frac{\log\!\left(\frac{\abs{z+2}}{2\abs{z+1/2}}\right)}{\log 2}}
 $$
 is harmonic on $\Omega$ and continuous on $\overline\Omega$. On
-$\partial\DD$, $|\Phi|=1/2$, so $h=0$; on
-$\partial\DD'$, $|\Phi|=1/4$, so $h=1$.
+$\partial\DD$, $\abs{\Phi}=1/2$, so $h=0$; on
+$\partial\DD'$, $\abs{\Phi}=1/4$, so $h=1$.
 :::

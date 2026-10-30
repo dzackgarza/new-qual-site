@@ -21,10 +21,10 @@ audit:
 ---
 
 ::: {.exercise}
-1. Suppose ${ \hat { f } } ( \xi ) = O ( e ^ { - a | \xi | ^ { p } } )$ as $| \xi | \to \infty$ , for some $p > 1$ . Then f is holomorphic for all z and satisfies the growth condition
+1. Suppose ${ \hat { f } } ( \xi ) = O ( e ^ { - a \abs{ \xi } ^ { p } } )$ as $\abs{ \xi } \to \infty$ , for some $p > 1$ . Then f is holomorphic for all z and satisfies the growth condition
 
 $$
-| f (z) | \leq A e ^ {C | z | ^ {q}}
+\abs{ f (z) } \leq A e ^ {C \abs{ z } ^ {q}}
 $$
 
 for some $A,C>0$, where $1 / p + 1 / q = 1$
@@ -41,7 +41,7 @@ $$
 $$
 From the hypothesis there are constants $C_0,a_0>0$ such that, after increasing $C_0$ if necessary,
 $$
-|\widehat f(\xi)|\le C_0e^{-a_0|\xi|^p}
+\abs{\widehat f(\xi)}\le C_0e^{-a_0\abs{\xi}^p}
 \qquad(\xi\in\RR).
 \tag{1}
 $$
@@ -58,29 +58,29 @@ uv\le \frac{u^p}{p}+\frac{v^q}{q}.
 $$
 Apply this after scaling to obtain a constant $C_1>0$, depending only on $a_0,p$, such that
 $$
-2\pi |y||\xi|
-\le \frac{a_0}{2}|\xi|^p+C_1|y|^q.
+2\pi \abs{y}\abs{\xi}
+\le \frac{a_0}{2}\abs{\xi}^p+C_1\abs{y}^q.
 \tag{3}
 $$
 Combining (1) and (3),
 $$
-|\widehat f(\xi)e^{2\pi i\xi z}|
-\le C_0e^{-a_0|\xi|^p+2\pi|y||\xi|}
-\le C_0e^{-a_0|\xi|^p/2}e^{C_1|y|^q}.
+\abs{\widehat f(\xi)e^{2\pi i\xi z}}
+\le C_0e^{-a_0\abs{\xi}^p+2\pi\abs{y}\abs{\xi}}
+\le C_0e^{-a_0\abs{\xi}^p/2}e^{C_1\abs{y}^q}.
 \tag{4}
 $$
 The first factor on the right is integrable in $\xi$. On every compact set of $z$ the second factor is uniformly bounded, so (2) converges locally uniformly and may be differentiated under the integral sign to every order. Hence it defines an entire function agreeing with the original $f$ on $\RR$.
 
 Integrating (4) gives
 $$
-|f(z)|\le
-C_0\left(\int_{\RR}e^{-a_0|\xi|^p/2}\,d\xi\right)
-e^{C_1|y|^q}
-\le A e^{C_1|z|^q}.
+\abs{f(z)}\le
+C_0\left(\int_{\RR}e^{-a_0\abs{\xi}^p/2}\,d\xi\right)
+e^{C_1\abs{y}^q}
+\le A e^{C_1\abs{z}^q}.
 $$
 Thus
 $$
-|f(z)|\le A e^{C|z|^q}
+\abs{f(z)}\le A e^{C\abs{z}^q}
 $$
 for suitable constants $A,C>0$.
 :::

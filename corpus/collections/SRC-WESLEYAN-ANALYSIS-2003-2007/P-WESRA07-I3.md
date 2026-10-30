@@ -34,6 +34,6 @@ $$
 and $f_n\to f$ uniformly on $X\setminus E$.
 Equivalently, for every $\varepsilon>0$ there is $E\in\mathcal A$ with $\mu(E)<\varepsilon$ such that
 $$
-\boxed{\sup_{x\in X\setminus E}|f_n(x)-f(x)|\longrightarrow0.}
+\boxed{\sup_{x\in X\setminus E}\abs{f_n(x)-f(x)}\longrightarrow0.}
 $$
 :::

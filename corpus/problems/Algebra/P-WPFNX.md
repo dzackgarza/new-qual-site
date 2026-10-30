@@ -20,7 +20,7 @@ Prove that there is no simple group of order $40$.
 ::: {.solution}
 Let $G$ have order
 $$
-|G|=40=2^3\cdot5.
+\cardinality{G}=40=2^3\cdot5.
 $$
 Let $n_5$ be the number of Sylow $5$-subgroups. Sylow's theorem gives
 $$

@@ -70,11 +70,11 @@ This is the standard factorization of a difference of $n$th powers.
 
 If
 $$
-|x-a|<1,
+\abs{x-a}<1,
 $$
 then
 $$
-\boxed{|x|<|a|+1}.
+\boxed{\abs{x}<\abs{a}+1}.
 $$
 
 
@@ -82,11 +82,11 @@ $$
 
 By the triangle inequality,
 $$
-|x|
+\abs{x}
 \le
-|x-a|+|a|
+\abs{x-a}+\abs{a}
 <
-1+|a|.
+1+\abs{a}.
 $$
 
 :::
@@ -97,11 +97,11 @@ $$
 
 Under the same hypothesis,
 $$
-\left|
+\abs{
 x^{n-1}+x^{n-2}a+\cdots+a^{n-1}
-\right|
+}
 \le
-n(|a|+1)^{n-1}.
+n(\abs{a}+1)^{n-1}.
 $$
 
 
@@ -110,15 +110,15 @@ $$
 There are $n$ terms. Each term has total degree $n-1$ in $x$ and $a$.
 By step [](#s1-2){.pf-ref},
 $$
-|x|<|a|+1,
+\abs{x}<\abs{a}+1,
 $$
 and trivially
 $$
-|a|\le|a|+1.
+\abs{a}\le\abs{a}+1.
 $$
 Hence the modulus of each term is at most
 $$
-(|a|+1)^{n-1}.
+(\abs{a}+1)^{n-1}.
 $$
 Apply the triangle inequality.
 
@@ -130,14 +130,14 @@ Apply the triangle inequality.
 
 Therefore, whenever
 $$
-|x-a|<1,
+\abs{x-a}<1,
 $$
 one has
 $$
 \boxed{
-|x^n-a^n|
+\abs{x^n-a^n}
 \le
-n(|a|+1)^{n-1}|x-a|}.
+n(\abs{a}+1)^{n-1}\abs{x-a}}.
 $$
 
 
@@ -163,7 +163,7 @@ $$
 \min\left\{
 1,\,
 \frac{\varepsilon}
-{n(|a|+1)^{n-1}}
+{n(\abs{a}+1)^{n-1}}
 \right\}}.
 $$
 
@@ -180,12 +180,12 @@ The denominator is positive for every $n\ge1$.
 
 If
 $$
-|x-a|<\delta,
+\abs{x-a}<\delta,
 $$
 then
 $$
 \boxed{
-|x^n-a^n|<\varepsilon}.
+\abs{x^n-a^n}<\varepsilon}.
 $$
 
 
@@ -197,16 +197,16 @@ $$
 $$
 step [](#s1-4){.pf-ref} applies. Also,
 $$
-|x-a|
+\abs{x-a}
 <
 \frac{\varepsilon}
-{n(|a|+1)^{n-1}}.
+{n(\abs{a}+1)^{n-1}}.
 $$
 Thus
 $$
-|x^n-a^n|
+\abs{x^n-a^n}
 \le
-n(|a|+1)^{n-1}|x-a|
+n(\abs{a}+1)^{n-1}\abs{x-a}
 <
 \varepsilon.
 $$
@@ -252,9 +252,9 @@ The point $a$ in step [](#s1-7){.pf-ref} was arbitrary.
 For $x>0$,
 $$
 \boxed{
-|\sqrt x-\sqrt a|
+\abs{\sqrt x-\sqrt a}
 =
-\frac{|x-a|}
+\frac{\abs{x-a}}
 {\sqrt x+\sqrt a}}.
 $$
 
@@ -280,9 +280,9 @@ $$
 one has
 $$
 \boxed{
-|\sqrt x-\sqrt a|
+\abs{\sqrt x-\sqrt a}
 \le
-\frac{|x-a|}{\sqrt a}}.
+\frac{\abs{x-a}}{\sqrt a}}.
 $$
 
 
@@ -317,12 +317,12 @@ If
 $$
 x>0
 \qquad\text{and}\qquad
-|x-a|<\delta,
+\abs{x-a}<\delta,
 $$
 then
 $$
 \boxed{
-|\sqrt x-\sqrt a|<\varepsilon}.
+\abs{\sqrt x-\sqrt a}<\varepsilon}.
 $$
 
 
@@ -330,9 +330,9 @@ $$
 
 By step [](#s1-10){.pf-ref},
 $$
-|\sqrt x-\sqrt a|
+\abs{\sqrt x-\sqrt a}
 \le
-\frac{|x-a|}{\sqrt a}
+\frac{\abs{x-a}}{\sqrt a}
 <
 \frac{\varepsilon\sqrt a}{\sqrt a}
 =
@@ -427,13 +427,13 @@ $$
 
 Therefore
 $$
-\left|
+\abs{
 u^{n-1}
 +
 u^{n-2}v
 +\cdots+
 v^{n-1}
-\right|
+}
 \ge
 a^{(n-1)/n}.
 $$
@@ -452,9 +452,9 @@ The sum is positive and contains the positive term from step [](#s1-15){.pf-ref}
 Taking absolute values in step [](#s1-14){.pf-ref},
 $$
 \boxed{
-|x^{1/n}-a^{1/n}|
+\abs{x^{1/n}-a^{1/n}}
 \le
-\frac{|x-a|}
+\frac{\abs{x-a}}
 {a^{(n-1)/n}}}.
 $$
 
@@ -498,12 +498,12 @@ If
 $$
 x>0
 \qquad\text{and}\qquad
-|x-a|<\delta,
+\abs{x-a}<\delta,
 $$
 then
 $$
 \boxed{
-|x^{1/n}-a^{1/n}|<\varepsilon}.
+\abs{x^{1/n}-a^{1/n}}<\varepsilon}.
 $$
 
 
@@ -511,9 +511,9 @@ $$
 
 Use step [](#s1-17){.pf-ref}:
 $$
-|x^{1/n}-a^{1/n}|
+\abs{x^{1/n}-a^{1/n}}
 \le
-\frac{|x-a|}
+\frac{\abs{x-a}}
 {a^{(n-1)/n}}
 <
 \frac{

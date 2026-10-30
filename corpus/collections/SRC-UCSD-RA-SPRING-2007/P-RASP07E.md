@@ -41,17 +41,17 @@ Start with an absolutely convergent series in $L^2$.
 
 Suppose
 $$
-\sum_{n=1}^\infty \|f_n\|_2<\infty.
+\sum_{n=1}^\infty \norm{f_n}_2<\infty.
 $$
 For $N\ge1$, set
 $$
-G_N:=\sum_{n=1}^N |f_n|.
+G_N:=\sum_{n=1}^N \abs{f_n}.
 $$
 By the triangle inequality in $L^2$,
 $$
-\|G_N\|_2
-\le \sum_{n=1}^N\|f_n\|_2
-\le \sum_{n=1}^\infty\|f_n\|_2=:M.
+\norm{G_N}_2
+\le \sum_{n=1}^N\norm{f_n}_2
+\le \sum_{n=1}^\infty\norm{f_n}_2=:M.
 $$
 Hence
 $$
@@ -73,7 +73,7 @@ The sequence $(G_N)$ is increasing, so
 $$
 G_N^2\uparrow G^2,
 \qquad
-G:=\sum_{n=1}^\infty|f_n|.
+G:=\sum_{n=1}^\infty\abs{f_n}.
 $$
 By the Monotone Convergence Theorem,
 $$
@@ -89,7 +89,7 @@ converges absolutely for almost every $x$. Define
 $$
 f(x):=\sum_{n=1}^\infty f_n(x)
 $$
-on that full-measure set, and define $f$ arbitrarily on the null exceptional set. Since $|f|\le G$, we have $f\in L^2$.
+on that full-measure set, and define $f$ arbitrarily on the null exceptional set. Since $\abs{f}\le G$, we have $f\in L^2$.
 
 :::
 
@@ -103,18 +103,18 @@ Prove convergence in the $L^2$ norm.
 
 For $N<M$,
 $$
-\left\|\sum_{n=N+1}^M f_n\right\|_2
-\le \sum_{n=N+1}^M\|f_n\|_2.
+\norm{\sum_{n=N+1}^M f_n}_2
+\le \sum_{n=N+1}^M\norm{f_n}_2.
 $$
 Letting $M\to\infty$, the partial sums converge pointwise almost everywhere to $f$, while
 $$
-\left|f-\sum_{n=1}^Nf_n\right|
-\le \sum_{n=N+1}^\infty|f_n|.
+\abs{f-\sum_{n=1}^Nf_n}
+\le \sum_{n=N+1}^\infty\abs{f_n}.
 $$
 Applying Fatou to the squared tails gives
 $$
-\left\|f-\sum_{n=1}^Nf_n\right\|_2
-\le \sum_{n=N+1}^\infty\|f_n\|_2
+\norm{f-\sum_{n=1}^Nf_n}_2
+\le \sum_{n=N+1}^\infty\norm{f_n}_2
 \longrightarrow0.
 $$
 Thus every absolutely convergent series in $L^2(X,\mu)$ converges in $L^2$.

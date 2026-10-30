@@ -19,7 +19,7 @@ audit:
 Let $f$ be entire.
 Suppose there are a constant $M$ and a fixed positive integer $n$ such that
 $$
-|f(z)|\le M|z|^n
+\abs{f(z)}\le M\abs{z}^n
 \qquad(z\in\CC).
 $$
 Prove that $f$ is a polynomial of degree at most $n$.
@@ -33,13 +33,13 @@ Prove that $f$ is a polynomial of degree at most $n$.
 
 For every $R>0$,
 $$
-\max_{|z|=R}|f(z)|\le MR^n.
+\max_{\abs{z}=R}\abs{f(z)}\le MR^n.
 $$
 
 
 ::: pf-proof
 
-This is the given growth estimate restricted to the circle $|z|=R$.
+This is the given growth estimate restricted to the circle $\abs{z}=R$.
 
 :::
 
@@ -49,7 +49,7 @@ This is the given growth estimate restricted to the circle $|z|=R$.
 
 For every integer $k\ge0$ and every $R>0$,
 $$
-|f^{(k)}(0)|
+\abs{f^{(k)}(0)}
 \le
 k!MR^{n-k}.
 $$
@@ -57,17 +57,17 @@ $$
 
 ::: pf-proof
 
-By Cauchy's formula for derivatives on the circle $|z|=R$,
+By Cauchy's formula for derivatives on the circle $\abs{z}=R$,
 $$
 f^{(k)}(0)
 =
 \frac{k!}{2\pi i}
-\int_{|z|=R}\frac{f(z)}{z^{k+1}}\,dz.
+\int_{\abs{z}=R}\frac{f(z)}{z^{k+1}}\,dz.
 $$
 Taking absolute values and using the ML estimate together with step [](#s1-1){.pf-ref} gives
 $$
 \begin{aligned}
-|f^{(k)}(0)|
+\abs{f^{(k)}(0)}
 &\le
 \frac{k!}{2\pi}
 (2\pi R)
@@ -93,11 +93,11 @@ $$
 
 For $k>n$, step [](#s1-2){.pf-ref} gives
 $$
-|f^{(k)}(0)|
+\abs{f^{(k)}(0)}
 \le
 k!M R^{n-k}
 $$
-for every $R>0$. Since $n-k<0$, the right-hand side tends to $0$ as $R\to\infty$. Hence $|f^{(k)}(0)|=0$.
+for every $R>0$. Since $n-k<0$, the right-hand side tends to $0$ as $R\to\infty$. Hence $\abs{f^{(k)}(0)}=0$.
 
 :::
 

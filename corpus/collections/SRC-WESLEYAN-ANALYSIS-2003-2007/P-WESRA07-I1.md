@@ -33,13 +33,13 @@ $$
 for almost every $x\in X$.
 Suppose there exists $g\in L^1(\mu)$ such that
 $$
-|f_n(x)|\le g(x)
+\abs{f_n(x)}\le g(x)
 $$
 for almost every $x\in X$ and every $n$.
 
 Then $f\in L^1(\mu)$ and
 $$
-\lim_{n\to\infty}\int_X |f_n-f|\,d\mu=0.
+\lim_{n\to\infty}\int_X \abs{f_n-f}\,d\mu=0.
 $$
 In particular,
 $$

@@ -41,11 +41,11 @@ All limits below are taken relative to $[a,b]$, so at the endpoints they are one
 Fix $x_0\in[a,b]$ and $\varepsilon>0$.
 There exists $\delta>0$ such that
 $$
-0<|y-x_0|<\delta
+0<\abs{y-x_0}<\delta
 $$
 implies
 $$
-|f(y)-L(x_0)|<\frac{\varepsilon}{2}.
+\abs{f(y)-L(x_0)}<\frac{\varepsilon}{2}.
 $$
 
 
@@ -64,11 +64,11 @@ $$
 
 If
 $$
-0<|x-x_0|<\frac{\delta}{2},
+0<\abs{x-x_0}<\frac{\delta}{2},
 $$
 then
 $$
-|L(x)-L(x_0)|
+\abs{L(x)-L(x_0)}
 \le
 \frac{\varepsilon}{2}.
 $$
@@ -87,7 +87,7 @@ y_k\ne x
 $$
 and, for all sufficiently large $k$,
 $$
-|y_k-x|<\frac12\min\{|x-x_0|,\delta-|x-x_0|\}.
+\abs{y_k-x}<\frac12\min\{\abs{x-x_0},\delta-\abs{x-x_0}\}.
 $$
 Then for large $k$,
 $$
@@ -95,11 +95,11 @@ y_k\ne x_0
 $$
 and
 $$
-|y_k-x_0|<\delta.
+\abs{y_k-x_0}<\delta.
 $$
 By step [](#s1-1){.pf-ref},
 $$
-|f(y_k)-L(x_0)|
+\abs{f(y_k)-L(x_0)}
 <
 \frac{\varepsilon}{2}.
 $$
@@ -109,7 +109,7 @@ f(y_k)\to L(x)
 $$
 gives
 $$
-|L(x)-L(x_0)|
+\abs{L(x)-L(x_0)}
 \le
 \frac{\varepsilon}{2}.
 $$
@@ -127,15 +127,15 @@ The function $L$ is continuous on $[a,b]$.
 
 At $x=x_0$,
 $$
-|L(x)-L(x_0)|=0.
+\abs{L(x)-L(x_0)}=0.
 $$
 For
 $$
-0<|x-x_0|<\delta/2,
+0<\abs{x-x_0}<\delta/2,
 $$
 step [](#s1-2){.pf-ref} gives
 $$
-|L(x)-L(x_0)|
+\abs{L(x)-L(x_0)}
 \le
 \frac{\varepsilon}{2}
 <
@@ -193,7 +193,7 @@ E_m
 =
 \left\{
 x\in[a,b]:
-|h(x)|\ge\frac1m
+\abs{h(x)}\ge\frac1m
 \right\}.
 $$
 Then $E_m$ is finite.
@@ -220,7 +220,7 @@ h(x_k)\to0.
 $$
 But
 $$
-|h(x_k)|
+\abs{h(x_k)}
 \ge
 \frac1m
 $$
@@ -258,7 +258,7 @@ D
 $$
 Indeed, if $h(x)\ne0$, choose $m$ so large that
 $$
-1/m\le |h(x)|.
+1/m\le \abs{h(x)}.
 $$
 Each $E_m$ is finite by step [](#s1-5){.pf-ref}.
 A countable union of finite sets is countable.
@@ -281,9 +281,9 @@ L(x)
 $$
 gives a neighborhood $U_x$ in which
 $$
-|f(y)|
+\abs{f(y)}
 \le
-|L(x)|+1
+\abs{L(x)}+1
 $$
 for all
 $$
@@ -295,7 +295,7 @@ The neighborhoods $U_x$ cover the compact interval $[a,b]$.
 Choose a finite subcover.
 Taking the maximum of the finitely many local bounds gives a global bound
 $$
-|f|\le M
+\abs{f}\le M
 $$
 on $[a,b]$.
 
@@ -315,7 +315,7 @@ The function $L$ is continuous on the compact interval $[a,b]$ by step [](#s1-3)
 Therefore their difference $h$ is bounded.
 Choose
 $$
-|h(x)|\le M
+\abs{h(x)}\le M
 $$
 for all $x$.
 
@@ -355,7 +355,7 @@ If $M=0$, then $h\equiv0$ and there is nothing to prove.
 Choose a partition $P$ containing all endpoints of these covering intervals.
 On every partition subinterval not contained in the exceptional cover, no point belongs to $E_m$, so
 $$
-|h(x)|<\frac1m.
+\abs{h(x)}<\frac1m.
 $$
 Hence the oscillation of $h$ there is less than
 $$

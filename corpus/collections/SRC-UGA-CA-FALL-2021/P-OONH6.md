@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-OONH6
 kind: problem
-title: Conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper
-  half-plane
+title: Conformal map from the intersection of $\abs{z-1}<2$ and $\abs{z+1}<2$ to the upper half-plane
 classification:
   areas:
   - complex-analysis
@@ -15,14 +14,14 @@ review: draft
 ---
 
 ::: {.problem}
-Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper half plane.
+Find a conformal map from the intersection of $\abs{z-1}<2$ and $\abs{z+1}<2$ to the upper half plane.
 :::
 
 ::: {.solution}
 
 Let
 $$
-D=\{z\in\CC:|z-1|<2,\ |z+1|<2\}.
+D=\{z\in\CC:\abs{z-1}<2,\ \abs{z+1}<2\}.
 $$
 
 ::: pf
@@ -84,12 +83,12 @@ $$
 
 ::: pf-proof
 
-The point $1$ lies on $|z+1|=2$, and
+The point $1$ lies on $\abs{z+1}=2$, and
 $$
 T(1)=\frac{1-i\sqrt3}{1+i\sqrt3}=e^{-2\pi i/3}.
 $$
 Thus that boundary circle maps to the line of argument $\pi/3$ modulo
-$\pi$. Likewise, $-1$ lies on $|z-1|=2$, and
+$\pi$. Likewise, $-1$ lies on $\abs{z-1}=2$, and
 $$
 T(-1)=\frac{-1-i\sqrt3}{-1+i\sqrt3}=e^{2\pi i/3},
 $$

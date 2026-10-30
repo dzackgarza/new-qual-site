@@ -85,7 +85,7 @@ A subgroup of $S_5$ containing a $5$-cycle and a transposition is $S_5$, so $G =
 :::
 
 ::: {.example title="$x^4+x+1$"}
-$f(x) \definedas x^4+x+1$ is irreducible modulo $2$, so $f$ is irreducible over $\QQ$ and $G$ contains a $4$-cycle.
+$f(x) \coloneqq x^4+x+1$ is irreducible modulo $2$, so $f$ is irreducible over $\QQ$ and $G$ contains a $4$-cycle.
 Modulo $3$, $f$ factors into irreducibles of degrees $1$ and $3$, so $G$ contains a $3$-cycle.
 Hence $12\divides\size G$, and $G$ contains the odd permutation given by the $4$-cycle, so $G = S_4$.
 :::

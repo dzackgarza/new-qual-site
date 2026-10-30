@@ -58,7 +58,7 @@ The group $G$ has a normal subgroup of order $p^2$.
 The class equation for a finite $p$-group shows that its center is nontrivial.
 Choose a central subgroup
 $$
-C\le Z(G),\qquad |C|=p,
+C\le Z(G),\qquad \cardinality{C}=p,
 $$
 using Cauchy's theorem.
 
@@ -69,7 +69,7 @@ By Cauchy's theorem, $G/C$ has a subgroup $K/C$ of order $p$.
 Because $G/C$ is abelian, $K/C$ is normal in $G/C$.
 Its inverse image $K$ is therefore normal in $G$, and
 $$
-|K|=|C|\,|K/C|=p^2.
+\cardinality{K}=\cardinality{C}\,\cardinality{K/C}=p^2.
 $$
 This proves part (a).
 
@@ -83,9 +83,9 @@ In part (b)(i), the only possibility is $G\cong C_{p^3}$.
 
 ::: pf-proof
 
-If $|g|=p^3$, then the cyclic subgroup $\langle g\rangle$ already has
+If $\elementorder{g}=p^3$, then the cyclic subgroup $\langle g\rangle$ already has
 $$
-|\langle g\rangle|=p^3=|G|.
+\cardinality{\langle g\rangle}=p^3=\cardinality{G}.
 $$
 Hence $G=\langle g\rangle$ and
 $$
@@ -103,15 +103,15 @@ In part (b)(ii), $G$ is a semidirect product $C_{p^2}\rtimes C_p$.
 
 ::: pf-proof
 
-Now assume $|g|=p$.
+Now assume $\elementorder{g}=p$.
 Since $g\notin N$, the order-$p$ subgroup $\langle g\rangle$ is not contained in $N$, and therefore
 $$
 N\cap\langle g\rangle=1.
 $$
 Because $N\trianglelefteq G$, the product $N\langle g\rangle$ is a subgroup, and
 $$
-|N\langle g\rangle|
-=\frac{|N|\,|\langle g\rangle|}{|N\cap\langle g\rangle|}
+\cardinality{N\langle g\rangle}
+=\frac{\cardinality{N}\,\cardinality{\langle g\rangle}}{\cardinality{N\cap\langle g\rangle}}
 =p^3.
 $$
 Thus
@@ -170,7 +170,7 @@ $$
 $$
 so every nontrivial action yields the same isomorphism type, with presentation
 $$
-\left\langle n,g\ \middle|\ n^{p^2}=g^p=1,\ gng^{-1}=n^{1+p}\right\rangle.
+\left\langle n,g\ \presentationbar\ n^{p^2}=g^p=1,\ gng^{-1}=n^{1+p}\right\rangle.
 $$
 The two groups are not isomorphic because the first is abelian and the second is not.
 

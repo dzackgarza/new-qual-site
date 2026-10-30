@@ -31,13 +31,13 @@ The improper integral converges absolutely.
 
 On $(0,1]$,
 $$
-\frac{|\log x|}{1+x^2}
+\frac{\abs{\log x}}{1+x^2}
 \leq
-|\log x|,
+\abs{\log x},
 $$
 and
 $$
-\int_0^1|\log x|\,dx=1.
+\int_0^1\abs{\log x}\,dx=1.
 $$
 On $[1,\infty)$,
 $$

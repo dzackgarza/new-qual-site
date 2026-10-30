@@ -24,10 +24,10 @@ audit:
 
 ::: {.problem}
 For $f$ holomorphic on a disc $D_r(z_0)$ and $0<s<r$, let
-$\displaystyle \|f\|_{(\infty, s)} = \text{sup}_{z \in D_s(z_0)}|f(z)|$ and $\displaystyle \|f\|_{(1, r)} = \int_{D_r(z_0)} |f(z)|dx dy$.
+$\displaystyle \norm{f}_{(\infty, s)} = \text{sup}_{z \in D_s(z_0)}\abs{f(z)}$ and $\displaystyle \norm{f}_{(1, r)} = \int_{D_r(z_0)} \abs{f(z)}dx dy$.
 Prove that
 $$
-\|f\|_{(\infty, s)} \le \frac{1}{\pi (r-s)^2}\, \|f\|_{(1, r)}.
+\norm{f}_{(\infty, s)} \le \frac{1}{\pi (r-s)^2}\, \norm{f}_{(1, r)}.
 $$
 :::
 
@@ -65,13 +65,13 @@ $$
 
 ::: pf-step
 
-$\|f\|_{(\infty,s)}\le\dfrac1{\pi(r-s)^2}\|f\|_{(1,r)}$.
+$\norm{f}_{(\infty,s)}\le\dfrac1{\pi(r-s)^2}\norm{f}_{(1,r)}$.
 
 ::: pf-proof
 
 By steps [](#area-mean){.pf-ref} and [](#contained){.pf-ref}, since $\abs f\ge0$,
 $$
-\abs{f(w)}\le\frac1{\pi\rho^2}\iint_{D_\rho(w)}\abs{f(z)}\,dx\,dy\le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
+\abs{f(w)}\le\frac1{\pi\rho^2}\iint_{D_\rho(w)}\abs{f(z)}\,dx\,dy\le\frac1{\pi(r-s)^2}\norm{f}_{(1,r)}.
 $$
 Take the supremum over $w\in D_s(z_0)$.
 

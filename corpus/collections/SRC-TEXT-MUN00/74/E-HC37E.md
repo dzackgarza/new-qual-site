@@ -22,7 +22,7 @@ If $n > 1$, show that the fundamental group of the $n$-fold torus is not abelian
 For the $n$-fold torus,
 $$
 \pi_1(T^{\# n})\cong
-\left\langle \alpha_1,\beta_1,\ldots,\alpha_n,\beta_n\ \middle|\
+\left\langle \alpha_1,\beta_1,\ldots,\alpha_n,\beta_n\ \presentationbar\
 \prod_{i=1}^n[\alpha_i,\beta_i]=1\right\rangle.
 $$
 Let $F=F(\gamma,\delta)$ be the free group on two generators. Define a homomorphism from the free group on the surface generators by

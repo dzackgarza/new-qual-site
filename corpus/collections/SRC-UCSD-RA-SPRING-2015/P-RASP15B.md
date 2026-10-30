@@ -29,7 +29,7 @@ Prove that for any $0 < p < \infty$, $f \in L^p$ if and only if
 $$
 \sum_{k=-\infty}^{\infty} 2^{kp} \lambda_f(2^k) < \infty
 $$
-where $\lambda_f(\alpha) = \mu(\{x : |f|(x) > \alpha\})$.
+where $\lambda_f(\alpha) = \mu(\{x : \abs{f}(x) > \alpha\})$.
 :::
 
 ::: {.solution}
@@ -39,10 +39,10 @@ $$
 \begin{aligned}
 \sum_{k\in\ZZ}2^{kp}\lambda_f(2^k)
 &=\sum_{k\in\ZZ}2^{kp}
-\int_X\mathbf1_{\{|f|>2^k\}}\,d\mu\\
+\int_X\mathbf1_{\{\abs{f}>2^k\}}\,d\mu\\
 &=\int_X
 \sum_{k\in\ZZ}2^{kp}
-\mathbf1_{\{2^k<|f(x)|\}}\,d\mu(x).
+\mathbf1_{\{2^k<\abs{f(x)}\}}\,d\mu(x).
 \end{aligned}
 $$
 
@@ -70,13 +70,13 @@ $$
 $$
 The same inequalities are trivial for $a=0$, and both sides are infinite for $a=\infty$.
 
-Applying this pointwise with $a=|f(x)|$ and integrating gives
+Applying this pointwise with $a=\abs{f(x)}$ and integrating gives
 $$
-\frac{2^{-p}}{1-2^{-p}}\|f\|_p^p
+\frac{2^{-p}}{1-2^{-p}}\norm{f}_p^p
 \le
 \sum_{k\in\ZZ}2^{kp}\lambda_f(2^k)
 \le
-\frac1{1-2^{-p}}\|f\|_p^p.
+\frac1{1-2^{-p}}\norm{f}_p^p.
 $$
 Therefore
 $$

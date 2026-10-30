@@ -120,7 +120,7 @@ Therefore
 $$
 u\xmapsto{\sigma}v\xmapsto{\sigma}-u\xmapsto{\sigma}-v\xmapsto{\sigma}u.
 $$
-Thus $\sigma$ has order $4$. Since $|\Gal(L/\QQ)|=[L:\QQ]=4$, it follows that
+Thus $\sigma$ has order $4$. Since $\cardinality{\Gal(L/\QQ)}=[L:\QQ]=4$, it follows that
 $$
 \Gal(L/\QQ)=\langle\sigma\rangle\cong C_4.
 $$

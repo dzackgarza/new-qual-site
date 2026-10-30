@@ -31,12 +31,12 @@ For (B), consider $f ( x ) = { \sqrt { 1 - x } }$ . Then f is uniformly continuo
 Indeed, notice that f is differentiable on $( - 1 , 1 )$ with $\begin{array} { r } { f ^ { \prime } ( x ) = \frac { 1 } { 2 \sqrt { 1 - x } }  \infty \mathrm { ~ a s ~ } x  1 } \end{array}$ . Thus for any $K > 0$ , we can find $\delta > 0$ such that $f ^ { \prime } ( x ) > K$ when $x \in ( 1 - \delta , 1 ]$ . But then by the mean value theorem, for any $x , y \in \left( 1 - \delta , 1 \right] x \neq y .$ , we can find c between x and y such that
 
 $$
-| f ( x ) - f ( y ) | = \left| f ^ { \prime } ( c ) \right| | x - y | > K | x - y |
+\abs{ f ( x ) - f ( y ) } = \abs{ f ^ { \prime } ( c ) } \abs{ x - y } > K \abs{ x - y }
 $$
 
 which shows that K is not a Lipschitz constant for f . Since $K > 0$ was arbitrary, we conclude that f is not Lipschitz continuous.
 
-For (C), consider $f ( x ) = \left| x \right|$ . Then f is Lipschitz continuous with Lipschitz constant 1 by the reverse triangle inequality, but f is not differentiable at $x = 0$
+For (C), consider $f ( x ) = \abs{ x }$ . Then f is Lipschitz continuous with Lipschitz constant 1 by the reverse triangle inequality, but f is not differentiable at $x = 0$
 
 For (D) consider the function
 

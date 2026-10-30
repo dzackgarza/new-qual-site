@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \RR^3 \to \RR$ be a continuous function of compact support. Show that $u(x) = \int_{\RR^3} \frac{f(y)}{|x - y|} \, dy$ is well defined and that $\lim_{|x| \to \infty} u(x) |x| = \int_{\RR^3} f(y) \, dy$.
+Let $f : \RR^3 \to \RR$ be a continuous function of compact support. Show that $u(x) = \int_{\RR^3} \frac{f(y)}{\norm{x - y}} \, dy$ is well defined and that $\lim_{\norm{x} \to \infty} u(x) \norm{x} = \int_{\RR^3} f(y) \, dy$.
 :::
 
 ::: {.solution}
@@ -78,9 +78,9 @@ Thus $u(x)$ is well defined.
 ::: {.pf-step #ratio-estimate}
 If $L>R$, $\abs x\geq L$, and $y\in\operatorname{supp}f$, then
 $$
-\left|
+\abs{
 \frac{\abs x}{\abs{x-y}}-1
-\right|
+}
 \leq
 \frac{R}{L-R}.
 $$
@@ -88,7 +88,7 @@ $$
 ::: pf-proof
 The reverse triangle inequality gives
 $$
-\bigl|\abs x-\abs{x-y}\bigr|
+\abs{\abs x-\abs{x-y}}
 \leq
 \abs y
 \leq
@@ -104,11 +104,11 @@ L-R.
 $$
 Consequently
 $$
-\left|
+\abs{
 \frac{\abs x}{\abs{x-y}}-1
-\right|
+}
 =
-\frac{\bigl|\abs x-\abs{x-y}\bigr|}{\abs{x-y}}
+\frac{\abs{\abs x-\abs{x-y}}}{\abs{x-y}}
 \leq
 \frac{R}{L-R}.
 $$
@@ -119,9 +119,9 @@ $$
 ::: {.pf-step #difference-bound}
 If $L>R$ and $\abs x\geq L$, then
 $$
-\left|
+\abs{
 \abs x\,u(x)-\int_{\RR^3}f(y)\,dy
-\right|
+}
 \leq
 \frac{R}{L-R}
 \int_{\RR^3}\abs{f(y)}\,dy.

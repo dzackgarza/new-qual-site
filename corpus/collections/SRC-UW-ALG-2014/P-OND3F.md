@@ -111,7 +111,7 @@ Absence of Non-Trivial Finite Subgroups:
 ::: pf-proof
 
 ::: pf-step
-Let $H \le G$ be a finite subgroup of order $|H| = k \ge 1$.
+Let $H \le G$ be a finite subgroup of order $\cardinality{H} = k \ge 1$.
 
 :::
 
@@ -140,7 +140,7 @@ Alternative Direct Field-Theoretic Proof:
 ::: pf-proof
 
 ::: pf-step
-Suppose $H \le \operatorname{Gal}(\overline{\FF}_p/\FF_p)$ is a finite subgroup with $|H| = k > 1$.
+Suppose $H \le \operatorname{Gal}(\overline{\FF}_p/\FF_p)$ is a finite subgroup with $\cardinality{H} = k > 1$.
 
 :::
 
@@ -150,7 +150,7 @@ Let $K = (\overline{\FF}_p)^H$ be the fixed field of $H$.
 :::
 
 ::: pf-step
-By **Artin's Theorem on Galois extensions**, $[\overline{\FF}_p : K] = |H| = k < \infty$.
+By **Artin's Theorem on Galois extensions**, $[\overline{\FF}_p : K] = \cardinality{H} = k < \infty$.
 
 :::
 

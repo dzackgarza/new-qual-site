@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-GLF66
 kind: problem
-title: $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}=\frac{2\pi}{\sqrt{a^2-b^2}}$ for
-  $a>|b|$
+title: $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}=\frac{2\pi}{\sqrt{a^2-b^2}}$ for $a>\abs{b}$
 classification:
   areas:
   - complex-analysis

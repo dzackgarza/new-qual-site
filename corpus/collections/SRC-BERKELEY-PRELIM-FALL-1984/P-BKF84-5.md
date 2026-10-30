@@ -68,18 +68,18 @@ $$
 $$
 For every real $y$,
 $$
-\left|
+\abs{
 \frac{1-y^2}{(1+y^2)^2}
-\right|
+}
 \leq
 \frac{1+y^2}{(1+y^2)^2}
 \leq1.
 $$
 Hence, for $0\leq x\leq1$,
 $$
-\left|
+\abs{
 \frac{\partial F}{\partial y}(x,y)
-\right|
+}
 \leq4.
 $$
 The mean value theorem in the $y$ variable gives
@@ -137,13 +137,13 @@ $$
 \begin{aligned}
 \abs{f_n(x)}
 &=
-\left|
+\abs{
 \frac1n
 +
 \int_0^x
 \bigl(F(t,f_n(t))-F(t,0)\bigr)
 \,dt
-\right|\\
+}\\
 &\leq
 \frac1n
 +

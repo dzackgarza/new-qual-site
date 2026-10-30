@@ -42,7 +42,7 @@ a_n=\frac{(-1)^n}{n}.
 $$
 Hence
 $$
-\limsup_{n\to\infty}|a_n|^{1/n}
+\limsup_{n\to\infty}\abs{a_n}^{1/n}
 =
 \lim_{n\to\infty}n^{-1/n}
 =1.
@@ -53,9 +53,9 @@ R=1.
 $$
 Thus the series converges absolutely for
 $$
-|x-2|<1,
+\abs{x-2}<1,
 $$
-i.e. for $1<x<3$, and diverges for $|x-2|>1$.
+i.e. for $1<x<3$, and diverges for $\abs{x-2}>1$.
 
 :::
 

@@ -29,11 +29,11 @@ audit:
 Let $K \subset \RR^2$ be compact.
 Given $\delta > 0$, consider the set
 $$
-K_\delta := \{x \in \RR^2 : d(x, K) := \inf_{y \in K} |x - y| = \delta\},
+K_\delta := \{x \in \RR^2 : d(x, K) := \inf_{y \in K} \norm{x - y} = \delta\},
 $$
 that is, the collection of points at distance $\delta$ from $K$.
 
-(1) Prove that $K_\delta$ is closed and that the distance is always realized, that is, for every $x \in K_\delta$ there is $y_x \in K$ such that $|y_x - x| = \delta$.
+(1) Prove that $K_\delta$ is closed and that the distance is always realized, that is, for every $x \in K_\delta$ there is $y_x \in K$ such that $\norm{y_x - x} = \delta$.
 
 (2) Given $x \in K_\delta$ and $\epsilon \in (0, \delta)$, show that
 $$
@@ -60,7 +60,7 @@ d_K(x):=d(x,K)
 $$
 is $1$-Lipschitz, since for all $x,z\in\RR^2$,
 $$
-|d_K(x)-d_K(z)|\le |x-z|.
+\abs{d_K(x)-d_K(z)}\le \norm{x-z}.
 $$
 Hence $d_K$ is continuous and
 $$
@@ -70,11 +70,11 @@ is closed.
 
 Fix $x\in K_\delta$. The function
 $$
-y\longmapsto |x-y|
+y\longmapsto \norm{x-y}
 $$
 is continuous on compact $K$, so it attains its minimum at some $y_x\in K$. Thus
 $$
-|x-y_x|=d(x,K)=\delta.
+\norm{x-y_x}=d(x,K)=\delta.
 $$
 
 :::
@@ -89,7 +89,7 @@ Find a quarter-area ball inside the complement of $K_\delta$.
 
 Fix $x\in K_\delta$ and $0<\varepsilon<\delta$. Let
 $$
-u:=\frac{y_x-x}{|y_x-x|}
+u:=\frac{y_x-x}{\norm{y_x-x}}
 $$
 and define
 $$
@@ -99,8 +99,8 @@ Consider the ball $B_{\varepsilon/2}(c)$.
 
 If $z\in B_{\varepsilon/2}(c)$, then
 $$
-|z-x|
-\le |z-c|+|c-x|
+\norm{z-x}
+\le \norm{z-c}+\norm{c-x}
 <\frac\varepsilon2+\frac\varepsilon2
 =\varepsilon,
 $$
@@ -110,18 +110,18 @@ z\in B_\varepsilon(x).
 $$
 Also
 $$
-|c-y_x|=\delta-\frac\varepsilon2,
+\norm{c-y_x}=\delta-\frac\varepsilon2,
 $$
 and therefore
 $$
-|z-y_x|
-\le |z-c|+|c-y_x|
+\norm{z-y_x}
+\le \norm{z-c}+\norm{c-y_x}
 <\frac\varepsilon2+\delta-\frac\varepsilon2
 =\delta.
 $$
 Since $y_x\in K$,
 $$
-d(z,K)\le |z-y_x|<\delta,
+d(z,K)\le \norm{z-y_x}<\delta,
 $$
 so $z\notin K_\delta$. Hence
 $$

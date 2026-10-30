@@ -70,13 +70,13 @@ $$
 $$
 If neither factor were a unit, then
 $$
-|N(\alpha)|\ge2,
+\abs{N(\alpha)}\ge2,
 \qquad
-|N(\beta)|\ge2.
+\abs{N(\beta)}\ge2.
 $$
 Since their product has absolute value $4$, necessarily
 $$
-|N(\alpha)|=|N(\beta)|=2.
+\abs{N(\alpha)}=\abs{N(\beta)}=2.
 $$
 Thus some integers $a,b$ would satisfy
 $$

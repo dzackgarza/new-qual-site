@@ -45,7 +45,7 @@ overlapping connected domains is unique wherever two continuations overlap.
 
 A concrete example is
 $$
-\sum_{n=0}^{\infty}z^n=\frac1{1-z}\qquad(|z|<1).
+\sum_{n=0}^{\infty}z^n=\frac1{1-z}\qquad(\abs{z}<1).
 $$
 Thus the power-series function continues uniquely as $(1-z)^{-1}$ on
 $\CC\setminus\{1\}$.
@@ -53,7 +53,7 @@ $\CC\setminus\{1\}$.
 
 ::: pf-proof
 
-For $|z|<1$, the finite geometric-sum identity gives
+For $\abs{z}<1$, the finite geometric-sum identity gives
 $$
 \sum_{n=0}^{N}z^n=\frac{1-z^{N+1}}{1-z}.
 $$

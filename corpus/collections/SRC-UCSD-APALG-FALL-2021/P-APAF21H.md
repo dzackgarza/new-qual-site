@@ -50,7 +50,7 @@ $$
 ::: pf-proof
 Conjugation by $s$ sends $r$ to $r^{-1}=r^3$, so $r$ and $r^3$ are conjugate, while $r^2$ is central. Conjugating a reflection $r^js$ by $r$ changes the exponent by $2$, so the reflections split into the two classes of even and odd exponents. The displayed sets have total size
 $$
-1+1+2+2+2=8=|D_4|,
+1+1+2+2+2=8=\cardinality{D_4},
 $$
 so they are all conjugacy classes.
 :::
@@ -121,7 +121,7 @@ $$
 ::: pf-proof
 The five displayed irreducibles have degree squares
 $$
-1^2+1^2+1^2+1^2+2^2=8=|D_4|.
+1^2+1^2+1^2+1^2+2^2=8=\cardinality{D_4}.
 $$
 Therefore they exhaust all irreducible complex representations of $D_4$.
 :::

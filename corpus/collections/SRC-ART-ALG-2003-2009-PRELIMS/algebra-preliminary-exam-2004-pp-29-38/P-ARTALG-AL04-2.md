@@ -31,7 +31,7 @@ The Sylow $3$-subgroup and Sylow $5$-subgroup of $G$ are both unique and normal.
 
 Since
 $$
-|G|=15=3\cdot5,
+\cardinality{G}=15=3\cdot5,
 $$
 Sylow's theorems give
 $$
@@ -71,9 +71,9 @@ The subgroups $P$ and $Q$ intersect trivially and commute elementwise.
 
 ::: pf-proof
 
-Because $|P|=3$ and $|Q|=5$,
+Because $\cardinality{P}=3$ and $\cardinality{Q}=5$,
 $$
-|P\cap Q|\mid\gcd(3,5)=1,
+\cardinality{P\cap Q}\mid\gcd(3,5)=1,
 $$
 so
 $$
@@ -122,7 +122,7 @@ so $p=q=e$. Thus $\varphi$ is injective.
 
 Finally,
 $$
-|P\times Q|=3\cdot5=15=|G|,
+\cardinality{P\times Q}=3\cdot5=15=\cardinality{G},
 $$
 so an injective map between these finite sets is surjective. Hence $\varphi$ is an isomorphism.
 

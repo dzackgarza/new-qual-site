@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $K \in L^1(\RR^d)$ with Lebesgue measure.
-Suppose that $\psi_n \in L^2(\RR^d)$ is a sequence of functions such that $\psi_n \to \psi$ (weak $L^2$ convergence), and also with the property that $\psi_n \equiv 0$ for $|x| > 1$.
+Suppose that $\psi_n \in L^2(\RR^d)$ is a sequence of functions such that $\psi_n \to \psi$ (weak $L^2$ convergence), and also with the property that $\psi_n \equiv 0$ for $\norm{x} > 1$.
 Show that
 $$
 f_n(x) = \int_{\RR^d} K(x-y)\,\psi_n(y)\,dy
@@ -49,7 +49,7 @@ The weak limit is also supported in the unit ball.
 
 Let
 $$
-B:=\{x\in\RR^d:|x|\le1\}.
+B:=\{x\in\RR^d:\norm{x}\le1\}.
 $$
 If $h\in L^2(\RR^d)$ is supported in $B^c$, then
 $$
@@ -81,8 +81,8 @@ T_Ku:=K*u.
 $$
 Young's convolution inequality gives
 $$
-\|T_Ku\|_{L^2(\RR^d)}
-\le \|K\|_1\|u\|_2.
+\norm{T_Ku}_{L^2(\RR^d)}
+\le \norm{K}_1\norm{u}_2.
 $$
 Hence
 $$
@@ -102,17 +102,17 @@ Approximate $T_K$ in operator norm by Hilbert--Schmidt operators.
 
 Choose $K_m\in C_c(\RR^d)$ such that
 $$
-\|K_m-K\|_1\longrightarrow0.
+\norm{K_m-K}_1\longrightarrow0.
 $$
 For $u\in L^2(B)$, Young's inequality gives
 $$
-\|(T_{K_m}-T_K)u\|_2
-\le \|K_m-K\|_1\|u\|_2.
+\norm{(T_{K_m}-T_K)u}_2
+\le \norm{K_m-K}_1\norm{u}_2.
 $$
 Therefore
 $$
-\|T_{K_m}-T_K\|_{L^2(B)\to L^2(\RR^d)}
-\le \|K_m-K\|_1\longrightarrow0.
+\norm{T_{K_m}-T_K}_{L^2(B)\to L^2(\RR^d)}
+\le \norm{K_m-K}_1\longrightarrow0.
 $$
 
 For each $m$, the operator $T_{K_m}$ has integral kernel
@@ -124,9 +124,9 @@ $$
 Since $K_m\in L^2(\RR^d)$,
 $$
 \begin{aligned}
-\int_B\int_{\RR^d}|k_m(x,y)|^2\,dx\,dy
-&=\int_B\int_{\RR^d}|K_m(x-y)|^2\,dx\,dy\\
-&=|B|\,\|K_m\|_2^2<\infty.
+\int_B\int_{\RR^d}\abs{k_m(x,y)}^2\,dx\,dy
+&=\int_B\int_{\RR^d}\abs{K_m(x-y)}^2\,dx\,dy\\
+&=\setmeasure{B}\,\norm{K_m}_2^2<\infty.
 \end{aligned}
 $$
 Thus $T_{K_m}$ is Hilbert--Schmidt, hence compact. Since compact operators are closed in the operator norm, $T_K$ is compact.
@@ -147,11 +147,11 @@ $$
 $$
 in $L^2(B)$. Suppose, contrary to the desired conclusion, that
 $$
-\|T_K\psi_n-T_K\psi\|_2\not\to0.
+\norm{T_K\psi_n-T_K\psi}_2\not\to0.
 $$
 Then some subsequence satisfies
 $$
-\|T_K\psi_{n_j}-T_K\psi\|_2\ge\varepsilon>0.
+\norm{T_K\psi_{n_j}-T_K\psi}_2\ge\varepsilon>0.
 $$
 Compactness of $T_K$ gives a further subsequence for which $T_K\psi_{n_{j_\ell}}$ converges strongly to some $v$. On the other hand, bounded linear maps are weak-to-weak continuous, so
 $$
@@ -163,7 +163,7 @@ v=T_K\psi,
 $$
 contradicting the lower bound by $\varepsilon$. Therefore
 $$
-\|T_K\psi_n-T_K\psi\|_2\to0.
+\norm{T_K\psi_n-T_K\psi}_2\to0.
 $$
 Since $f_n=T_K\psi_n$ and $f=T_K\psi$, this is exactly
 $$

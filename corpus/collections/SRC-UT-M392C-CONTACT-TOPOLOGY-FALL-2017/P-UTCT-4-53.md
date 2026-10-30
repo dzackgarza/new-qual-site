@@ -38,7 +38,7 @@ S^3
 =
 \left\{
 (z_1,z_2)\in\CC^2:
-|z_1|^2+|z_2|^2=1
+\abs{z_1}^2+\abs{z_2}^2=1
 \right\},
 $$
 and on the complement of the two coordinate circles use Hopf coordinates
@@ -89,7 +89,7 @@ $$
 \boxed{
 \pi_+(z_1,z_2)
 =
-\frac{z_1z_2}{|z_1z_2|}
+\frac{z_1z_2}{\abs{z_1z_2}}
 =
 e^{i(\theta_1+\theta_2)}}.
 $$

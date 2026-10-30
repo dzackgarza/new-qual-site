@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-02
 kind: problem
-title: Almost everywhere convergence of $\sum_n\int_n^{n+n^{-a}}|f(x+y)|\,dy$ for $f\in L^p$
+title: Almost everywhere convergence of $\sum_n\int_n^{n+n^{-a}}\abs{f(x+y)}\,dy$ for $f\in L^p$
 classification:
   areas:
   - real-analysis
@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Let $f \in L^p(\RR)$, $1 < p < \infty$, and let $a \in \RR$ be such that $a > 1 - \frac{1}{p}$. Show that the series
 $$
-\sum_{n=1}^{\infty} \int_n^{n+n^{-a}} |f(x+y)|\,dy
+\sum_{n=1}^{\infty} \int_n^{n+n^{-a}} \abs{f(x+y)}\,dy
 $$
 converges for almost all $x \in \RR$.
 :::
@@ -45,7 +45,7 @@ G(x)
 =
 \sum_{n=1}^{\infty}
 \int_n^{n+n^{-a}}
-|f(x+y)|\,dy,
+\abs{f(x+y)}\,dy,
 $$
 allowing the value $+\infty$.
 
@@ -63,11 +63,11 @@ For each $n$,
 $$
 \boxed{
 \int_n^{n+n^{-a}}
-|f(x+y)|\,dy
+\abs{f(x+y)}\,dy
 =
 n^{-a}
 \int_0^1
-|f(x+n+n^{-a}z)|\,dz}.
+\abs{f(x+n+n^{-a}z)}\,dz}.
 $$
 
 
@@ -170,7 +170,7 @@ $$
 B_n(x)^p
 \le
 \int_0^1
-|f(x+n+n^{-a}z)|^p\,dz}.
+\abs{f(x+n+n^{-a}z)}^p\,dz}.
 $$
 
 
@@ -191,7 +191,7 @@ $$
 $$
 Take
 $$
-h(z)=|f(x+n+n^{-a}z)|.
+h(z)=\abs{f(x+n+n^{-a}z)}.
 $$
 
 :::
@@ -208,7 +208,7 @@ G(x)^p
 C^p
 \sum_{n=1}^{\infty}
 \int_0^1
-|f(x+n+n^{-a}z)|^p\,dz}.
+\abs{f(x+n+n^{-a}z)}^p\,dz}.
 $$
 
 
@@ -231,7 +231,7 @@ C^p
 \int_0^1
 \sum_{n=1}^{\infty}
 \int_N^{N+1}
-|f(x+n+n^{-a}z)|^p\,dx\,dz.
+\abs{f(x+n+n^{-a}z)}^p\,dx\,dz.
 \end{aligned}
 $$
 
@@ -254,10 +254,10 @@ gives
 $$
 \boxed{
 \int_N^{N+1}
-|f(x+n+n^{-a}z)|^p\,dx
+\abs{f(x+n+n^{-a}z)}^p\,dx
 =
 \int_{N+n+n^{-a}z}^{N+1+n+n^{-a}z}
-|f(u)|^p\,du}.
+\abs{f(u)}^p\,du}.
 $$
 
 
@@ -320,10 +320,10 @@ $$
 Hence
 $$
 \int_N^{N+1}
-|f(x+n+n^{-a}z)|^p\,dx
+\abs{f(x+n+n^{-a}z)}^p\,dx
 \le
 \int_{N+n}^{N+n+2}
-|f(u)|^p\,du.
+\abs{f(u)}^p\,du.
 $$
 
 
@@ -365,9 +365,9 @@ $$
 \boxed{
 \sum_{n=1}^{\infty}
 \int_{N+n}^{N+n+2}
-|f(u)|^p\,du
+\abs{f(u)}^p\,du
 \le
-2\|f\|_{L^p(\RR)}^p}.
+2\norm{f}_{L^p(\RR)}^p}.
 $$
 
 
@@ -376,10 +376,10 @@ $$
 By Tonelli,
 $$
 \sum_n
-\int_{N+n}^{N+n+2}|f(u)|^p\,du
+\int_{N+n}^{N+n+2}\abs{f(u)}^p\,du
 =
 \int_{\RR}
-|f(u)|^p
+\abs{f(u)}^p
 \left(
 \sum_n
 \mathbf1_{[N+n,N+n+2]}(u)
@@ -399,7 +399,7 @@ $$
 \boxed{
 \int_N^{N+1}G(x)^p\,dx
 \le
-2C^p\|f\|_p^p
+2C^p\norm{f}_p^p
 <
 \infty}.
 $$
@@ -465,7 +465,7 @@ $$
 \boxed{
 \sum_{n=1}^{\infty}
 \int_n^{n+n^{-a}}
-|f(x+y)|\,dy
+\abs{f(x+y)}\,dy
 \text{ converges}.}
 $$
 

@@ -41,11 +41,11 @@ Fix $f \in L^p$, let $p'$ be the conjugate exponent of $p$, and let $Tg = f \ast
 
 ::: {.pf-step #s1}
 
-$\|f \ast g\|_p \le \|f\|_p\|g\|_1$ for $g \in L^1$.
+$\norm{f \ast g}_p \le \norm{f}_p\norm{g}_1$ for $g \in L^1$.
 
 ::: pf-proof
 
-Write $f \ast g(x) = \int f(x-y)g(y)\,dy$. By Minkowski's inequality for integrals and translation invariance of the $L^p$ norm, $\|f\ast g\|_p \le \int \|f(\cdot - y)\|_p\,|g(y)|\,dy = \|f\|_p\|g\|_1$.
+Write $f \ast g(x) = \int f(x-y)g(y)\,dy$. By Minkowski's inequality for integrals and translation invariance of the $L^p$ norm, $\norm{f\ast g}_p \le \int \norm{f(\cdot - y)}_p\,\abs{g(y)}\,dy = \norm{f}_p\norm{g}_1$.
 
 :::
 
@@ -53,11 +53,11 @@ Write $f \ast g(x) = \int f(x-y)g(y)\,dy$. By Minkowski's inequality for integra
 
 ::: {.pf-step #s2}
 
-$\|f \ast g\|_\infty \le \|f\|_p\|g\|_{p'}$ for $g \in L^{p'}$.
+$\norm{f \ast g}_\infty \le \norm{f}_p\norm{g}_{p'}$ for $g \in L^{p'}$.
 
 ::: pf-proof
 
-By Hölder's inequality, $|(f\ast g)(x)| \le \int |f(x-y)||g(y)|\,dy \le \|f\|_p\|g\|_{p'}$ for every $x$.
+By Hölder's inequality, $\abs{(f\ast g)(x)} \le \int \abs{f(x-y)}\abs{g(y)}\,dy \le \norm{f}_p\norm{g}_{p'}$ for every $x$.
 
 :::
 
@@ -77,7 +77,7 @@ $\frac{1-\theta}{p} = \frac{p/r}{p} = \frac1r$. Also $1 - \theta + \theta\left(1
 
 ::: pf-qed
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $T$ is bounded $L^1 \to L^p$ and $L^{p'} \to L^\infty$, both with norm at most $\|f\|_p$. By step [](#s3){.pf-ref} and the Riesz--Thorin interpolation theorem, $T$ is bounded $L^q \to L^r$ with norm at most $\|f\|_p^{1-\theta}\|f\|_p^{\theta} = \|f\|_p$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $T$ is bounded $L^1 \to L^p$ and $L^{p'} \to L^\infty$, both with norm at most $\norm{f}_p$. By step [](#s3){.pf-ref} and the Riesz--Thorin interpolation theorem, $T$ is bounded $L^q \to L^r$ with norm at most $\norm{f}_p^{1-\theta}\norm{f}_p^{\theta} = \norm{f}_p$.
 
 :::
 

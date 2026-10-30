@@ -24,7 +24,7 @@ audit:
   note: "Checked the coset action without presupposing normality, both image-order divisibilities, and the final equality of the subgroup with the action kernel."
 ---
 ::: {.problem}
-Let $G$ be a group and let $p$ be the smallest prime divisor of $|G|$.
+Let $G$ be a group and let $p$ be the smallest prime divisor of $\cardinality{G}$.
 Suppose that $H$ is a subgroup of $G$ of index $p$.
 Prove that $H$ is normal.
 :::
@@ -58,8 +58,8 @@ The image of $\rho$ has order exactly $p$.
 
 ::: pf-proof
 
-Let $m=|\rho(G)|$. The first isomorphism theorem and Lagrange's
-theorem give $m\mid |G|$ and $m\mid p!$ [@DF04].
+Let $m=\cardinality{\rho(G)}$. The first isomorphism theorem and Lagrange's
+theorem give $m\mid \cardinality{G}$ and $m\mid p!$ [@DF04].
 Every prime dividing $m$ must therefore be at least $p$, by
 minimality of $p$, and at most $p$, since it divides $p!$.
 Thus $p$ is its only possible prime divisor. The exponent of
@@ -76,7 +76,7 @@ The subgroup $H$ equals $K$ and is normal.
 
 ::: pf-proof
 
-The index of $K$ is $[G:K]=|\rho(G)|=p$. Since $K\subseteq H$,
+The index of $K$ is $[G:K]=\cardinality{\rho(G)}=p$. Since $K\subseteq H$,
 index multiplication gives
 $$
 p=[G:K]=[G:H][H:K]=p[H:K].

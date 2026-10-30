@@ -38,13 +38,13 @@ all derivatives are real.
 :::
 
 ::: {.solution}
-Let $a=3+17i$ and $D=\{w\in\CC:|w|<1\}$.
+Let $a=3+17i$ and $D=\{w\in\CC:\abs{w}<1\}$.
 The possible values are exactly
 $$
 \boxed{\{f'(a):f:H\to H\text{ holomorphic},\ f(a)=a\}
-=\{\lambda\in\CC:|\lambda|\leq1\}.}
+=\{\lambda\in\CC:\abs{\lambda}\leq1\}.}
 $$
-In particular $\max|f'(a)|=1$, and the largest possible
+In particular $\max\abs{f'(a)}=1$, and the largest possible
 real value of $f'(a)$ is also one, attained by $f(z)=z$.
 
 ::: pf
@@ -61,17 +61,17 @@ $$
 is a biholomorphism $H\to D$, with $\phi(a)=0$.
 Indeed,
 $$
-1-|\phi(z)|^2
-=\frac{4\operatorname{Im}a\operatorname{Im}z}{|z-\overline a|^2}>0,
+1-\abs{\phi(z)}^2
+=\frac{4\operatorname{Im}a\operatorname{Im}z}{\abs{z-\overline a}^2}>0,
 \qquad
 \operatorname{Im}\phi^{-1}(w)
-=\operatorname{Im}a\frac{1-|w|^2}{|1-w|^2}>0,
+=\operatorname{Im}a\frac{1-\abs{w}^2}{\abs{1-w}^2}>0,
 $$
 and substitution verifies that the formulas are inverse.
 For $F=\phi\circ f\circ\phi^{-1}$, one has $F:D\to D$
 holomorphic and $F(0)=0$. The chain rule and
 $(\phi^{-1})'(0)=1/\phi'(a)$ give $F'(0)=f'(a)$.
-Schwarz's lemma therefore gives $|f'(a)|\leq1$ [@SS03].
+Schwarz's lemma therefore gives $\abs{f'(a)}\leq1$ [@SS03].
 :::
 
 :::
@@ -80,7 +80,7 @@ Schwarz's lemma therefore gives $|f'(a)|\leq1$ [@SS03].
 Every derivative in that disk is attained.
 
 ::: pf-proof
-For any $|\lambda|\leq1$, the map $w\mapsto\lambda w$
+For any $\abs{\lambda}\leq1$, the map $w\mapsto\lambda w$
 takes $D$ into $D$, including when $\lambda=0$. Thus
 $$
 f_\lambda(z)=\phi^{-1}\bigl(\lambda\phi(z)\bigr)
@@ -90,7 +90,7 @@ derivative $f_\lambda'(a)=\lambda$ by the same chain-rule
 cancellation. This proves equality of the stated sets.
 For example $\lambda=i$ gives a nonreal derivative,
 while $\lambda=1$ gives the identity, which attains both
-$\max|f'(a)|=1$ and the largest real value $f'(a)=1$.
+$\max\abs{f'(a)}=1$ and the largest real value $f'(a)=1$.
 :::
 
 :::

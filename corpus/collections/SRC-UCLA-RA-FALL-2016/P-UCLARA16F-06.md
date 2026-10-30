@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Consider the Banach space $\ell^1$ consisting of all sequences $u=\{x_i\}$ in $\RR$ with
 $$
-\lVert u\rVert_1=\sum_{i=1}^{\infty}|x_i|<\infty,
+\norm{ u}_1=\sum_{i=1}^{\infty}\abs{x_i}<\infty,
 $$
 and the Banach space $\ell^\infty$ consisting of all sequences $v=\{y_i\}$ in $\RR$ with
 $$
-\lVert v\rVert_\infty=\sup_{i\in\NN}|y_i|<\infty.
+\norm{ v}_\infty=\sup_{i\in\NN}\abs{y_i}<\infty.
 $$
 There is a well-defined dual pairing between $\ell^1$ and $\ell^\infty$ given by
 $$
@@ -31,7 +31,7 @@ $$
 $$
 With this dual pairing, $\ell^\infty=(\ell^1)^*$ is the dual space of $\ell^1$.
 
-(a) Show that there exists no sequence $\{u_n\}$ in $\ell^1$ such that (i) $\lVert u_n\rVert_1\ge1$ for all $n\in\NN$ and (ii) $\langle u_n,v\rangle\to0$ for each $v\in\ell^\infty$.
+(a) Show that there exists no sequence $\{u_n\}$ in $\ell^1$ such that (i) $\norm{ u_n}_1\ge1$ for all $n\in\NN$ and (ii) $\langle u_n,v\rangle\to0$ for each $v\in\ell^\infty$.
 
 (b) Show that every weakly convergent sequence $\{u_n\}$ in $\ell^1$ converges in the norm topology of $\ell^1$.
 :::
@@ -46,7 +46,7 @@ u_n=(x_i^{(n)})_{i\ge1}\in\ell^1
 $$
 satisfies
 $$
-\|u_n\|_1\ge1
+\norm{u_n}_1\ge1
 $$
 for every $n$, and
 $$
@@ -90,7 +90,7 @@ The assumed weak convergence to $0$ gives the result.
 
 Choose any $n_1$, and then choose $N_1$ so large that
 $$
-\sum_{i>N_1}|x_i^{(n_1)}|<\varepsilon.
+\sum_{i>N_1}\abs{x_i^{(n_1)}}<\varepsilon.
 $$
 
 
@@ -107,7 +107,7 @@ The vector $u_{n_1}$ belongs to $\ell^1$, so its tails tend to zero.
 Suppose $N_{k-1}$ and $n_{k-1}$ have been chosen. Then one can choose $n_k>n_{k-1}$ such that
 $$
 \sum_{i\le N_{k-1}}
-|x_i^{(n_k)}|
+\abs{x_i^{(n_k)}}
 <
 \varepsilon.
 $$
@@ -134,7 +134,7 @@ Since there are only finitely many such coordinates, their absolute-value sum te
 After choosing $n_k$, choose $N_k>N_{k-1}$ such that
 $$
 \sum_{i>N_k}
-|x_i^{(n_k)}|
+\abs{x_i^{(n_k)}}
 <
 \varepsilon.
 $$
@@ -167,7 +167,7 @@ The $\ell^1$-mass of $u_{n_k}$ outside $I_k$ satisfies
 $$
 \boxed{
 \sum_{i\notin I_k}
-|x_i^{(n_k)}|
+\abs{x_i^{(n_k)}}
 <
 2\varepsilon}.
 $$
@@ -195,7 +195,7 @@ Therefore
 $$
 \boxed{
 \sum_{i\in I_k}
-|x_i^{(n_k)}|
+\abs{x_i^{(n_k)}}
 >
 1-2\varepsilon}.
 $$
@@ -205,11 +205,11 @@ $$
 
 Since
 $$
-\|u_{n_k}\|_1
+\norm{u_{n_k}}_1
 =
-\sum_{i\in I_k}|x_i^{(n_k)}|
+\sum_{i\in I_k}\abs{x_i^{(n_k)}}
 +
-\sum_{i\notin I_k}|x_i^{(n_k)}|
+\sum_{i\notin I_k}\abs{x_i^{(n_k)}}
 \ge1,
 $$
 apply step [](#s1-6){.pf-ref}.
@@ -222,7 +222,7 @@ apply step [](#s1-6){.pf-ref}.
 
 The vector $v$ belongs to $\ell^\infty$ and
 $$
-\boxed{\|v\|_\infty\le1}.
+\boxed{\norm{v}_\infty\le1}.
 $$
 
 
@@ -230,7 +230,7 @@ $$
 
 The blocks $I_k$ are disjoint and cover a subset of $\NN$, so the definition is unambiguous. Every coordinate satisfies
 $$
-|v_i|\le1.
+\abs{v_i}\le1.
 $$
 Set $v_i=0$ on coordinates not belonging to any block.
 
@@ -246,7 +246,7 @@ $$
 x_i^{(n_k)}v_i
 =
 \sum_{i\in I_k}
-|x_i^{(n_k)}|.
+\abs{x_i^{(n_k)}}.
 $$
 
 
@@ -266,10 +266,10 @@ on $I_k$.
 
 The contribution from outside $I_k$ satisfies
 $$
-\left|
+\abs{
 \sum_{i\notin I_k}
 x_i^{(n_k)}v_i
-\right|
+}
 <
 2\varepsilon.
 $$
@@ -277,15 +277,15 @@ $$
 
 ::: pf-proof
 
-Since $|v_i|\le1$,
+Since $\abs{v_i}\le1$,
 $$
-\left|
+\abs{
 \sum_{i\notin I_k}
 x_i^{(n_k)}v_i
-\right|
+}
 \le
 \sum_{i\notin I_k}
-|x_i^{(n_k)}|
+\abs{x_i^{(n_k)}}
 <
 2\varepsilon
 $$
@@ -319,12 +319,12 @@ x_i^{(n_k)}v_i
 x_i^{(n_k)}v_i\\
 &\ge
 \sum_{i\in I_k}
-|x_i^{(n_k)}|
+\abs{x_i^{(n_k)}}
 -
-\left|
+\abs{
 \sum_{i\notin I_k}
 x_i^{(n_k)}v_i
-\right|\\
+}\\
 &>
 (1-2\varepsilon)-2\varepsilon\\
 &=
@@ -421,7 +421,7 @@ $$
 
 Suppose, toward a contradiction, that
 $$
-\|w_n\|_1\not\to0.
+\norm{w_n}_1\not\to0.
 $$
 
 
@@ -442,7 +442,7 @@ $$
 and a subsequence $(w_{n_k})$ such that
 $$
 \boxed{
-\|w_{n_k}\|_1\ge\delta}
+\norm{w_{n_k}}_1\ge\delta}
 $$
 for every $k$.
 
@@ -477,7 +477,7 @@ Since $\delta>0$, this is well defined.
 Then
 $$
 \boxed{
-\|z_k\|_1\ge1}
+\norm{z_k}_1\ge1}
 $$
 for every $k$.
 
@@ -486,10 +486,10 @@ for every $k$.
 
 By step [](#s1-17){.pf-ref},
 $$
-\|z_k\|_1
+\norm{z_k}_1
 =
 \frac1\delta
-\|w_{n_k}\|_1
+\norm{w_{n_k}}_1
 \ge1.
 $$
 
@@ -540,7 +540,7 @@ Part (a), step [](#s1-14){.pf-ref}, says no weakly null sequence in $\ell^1$ can
 Therefore
 $$
 \boxed{
-\|u_n-u\|_1\to0}.
+\norm{u_n-u}_1\to0}.
 $$
 
 
@@ -548,7 +548,7 @@ $$
 
 The assumption in step [](#s1-16){.pf-ref} is impossible, and
 $$
-\|u_n-u\|_1=\|w_n\|_1.
+\norm{u_n-u}_1=\norm{w_n}_1.
 $$
 
 :::

@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\CC:|z|<1\}$ and let $f:D\to\CC$
+Let $D=\{z\in\CC:\abs{z}<1\}$ and let $f:D\to\CC$
 be $C^1$ as a function of two real variables. Require
 $f(1/n)=0$ and $Df(1/n)=0$ for each integer $n\geq2$,
 where $Df$ denotes the real differential.
@@ -79,16 +79,16 @@ A nonholomorphic example is $C^1$ even at the accumulation point.
 Define
 $$
 F(z)=\begin{cases}
-e^{-1/|z|^2}\sin^2(\pi/z),&z\ne0,\\
+e^{-1/\abs{z}^2}\sin^2(\pi/z),&z\ne0,\\
 0,&z=0.
 \end{cases}
 $$
-It is smooth away from zero. For $r=|z|>0$, the exponential
+It is smooth away from zero. For $r=\abs{z}>0$, the exponential
 formulas for sine and cosine give
-$|\sin(\pi/z)|,|\cos(\pi/z)|\leq e^{\pi/r}$. Hence
+$\abs{\sin(\pi/z)},\abs{\cos(\pi/z)}\leq e^{\pi/r}$. Hence
 $$
-|F(z)|\leq e^{-1/r^2+2\pi/r},\qquad
-|F_x(z)|,|F_y(z)|
+\abs{F(z)}\leq e^{-1/r^2+2\pi/r},\qquad
+\abs{F_x(z)},\abs{F_y(z)}
 \leq(2r^{-3}+2\pi r^{-2})e^{-1/r^2+2\pi/r}.
 $$
 For the derivative estimate, the Gaussian factor has
@@ -102,7 +102,7 @@ $-1/(2r^2)$. For every fixed $k\geq0$,
 $r^{-k}e^{-1/(2r^2)}\to0$; this follows, for example,
 by bounding the exponential below by an arbitrarily
 high power in its power series. It follows that
-$F(z)=o(|z|)$ and both first partial derivatives tend
+$F(z)=o(\abs{z})$ and both first partial derivatives tend
 to zero. Thus $DF(0)=0$, the partial derivatives extend
 continuously by zero, and $F\in C^1(D)$.
 :::
@@ -122,7 +122,7 @@ Locally write $s(z)=(z-a)h_a(z)$ with $h_a$ holomorphic
 and $h_a(a)=s'(a)\ne0$. Then
 $$
 F(z)=(z-a)^2 u_a(z),\qquad
-u_a(z)=e^{-1/|z|^2}h_a(z)^2,
+u_a(z)=e^{-1/\abs{z}^2}h_a(z)^2,
 $$
 where $u_a$ is smooth near $a$ and $u_a(a)\ne0$.
 Consequently $F(a)=0$, $DF(a)=0$, and

@@ -51,7 +51,7 @@ $$
 
 Indeed, remove the small disks bounded by the $\gamma_j$ from the region inside $\gamma$. On the resulting region $f$ has no zeros, so
 $$
-\frac{f}{|f|}:\text{region}\longrightarrow S^1
+\frac{f}{\abs{f}}:\text{region}\longrightarrow S^1
 $$
 is continuous. The oriented boundary consists of $\gamma$ together with the circles $\gamma_j$ with the opposite orientation. The total degree of the restriction to this boundary is therefore zero, which gives exactly the displayed identity.
 

@@ -19,7 +19,7 @@ audit:
 Let $V$ be a complex inner product space and let $v,w\in V$.
 Prove the Cauchy--Schwarz inequality
 $$
-|(v,w)|\leq |v|\,|w|.
+\abs{(v,w)}\leq \norm{v}\,\norm{w}.
 $$
 :::
 

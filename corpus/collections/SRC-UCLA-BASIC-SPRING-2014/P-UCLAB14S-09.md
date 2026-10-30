@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Problem 9. Find a function that minimizes
 $$
-\int_0^1 |f'(x)|^2\,dx
+\int_0^1 \abs{f'(x)}^2\,dx
 $$
 among all $f\in C^1(\RR)$ such that $f(0)=0$ and $f(1)=1$.
 Is the minimizing $C^1$ function unique on $[0,1]$?
@@ -53,7 +53,7 @@ The endpoint conditions make the left side equal to $1$.
 
 Cauchy--Schwarz gives
 $$
-1\leq\int_0^1|f'(x)|^2\,dx.
+1\leq\int_0^1\abs{f'(x)}^2\,dx.
 $$
 
 
@@ -61,9 +61,9 @@ $$
 
 Apply Cauchy--Schwarz to $f'$ and the constant function $1$:
 $$
-\left|\int_0^1f'(x)\,dx\right|^2
+\abs{\int_0^1f'(x)\,dx}^2
 \leq
-\left(\int_0^1|f'(x)|^2\,dx\right)
+\left(\int_0^1\abs{f'(x)}^2\,dx\right)
 \left(\int_0^1 1^2\,dx\right).
 $$
 The first factor on the left is $1$ by step [](#s1-1){.pf-ref}, and the final integral is $1$.
@@ -80,7 +80,7 @@ f_0(x)=x
 $$
 is admissible and has energy
 $$
-\int_0^1|f_0'(x)|^2\,dx=1.
+\int_0^1\abs{f_0'(x)}^2\,dx=1.
 $$
 
 

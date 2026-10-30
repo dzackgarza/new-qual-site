@@ -53,7 +53,7 @@ using $AB=BA$. Hence $Bv\in E_\lambda(A)$.
 ::: {.pf-step #b-lambda-diagonalizable}
 For every eigenvalue $\lambda$ of $A$, the restriction
 $$
-B_\lambda:=B|_{E_\lambda(A)}
+B_\lambda:=B\restrict_{E_\lambda(A)}
 $$
 is diagonalizable.
 

@@ -51,13 +51,13 @@ $$
 
 Since
 $$
-\frac1w=\frac{\overline w}{|w|^2},
+\frac1w=\frac{\overline w}{\abs{w}^2},
 $$
 one has
 $$
 \Re\!\left(\frac1w\right)
 =
-\frac{\Re w}{|w|^2}>0.
+\frac{\Re w}{\abs{w}^2}>0.
 $$
 
 :::

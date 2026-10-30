@@ -33,27 +33,27 @@ audit:
 ::: {.solution}
 Recall that the order of an entire function $f$ is the infimum of the positive numbers $\rho$ for which
 $$
-|f(z)|\le A e^{B|z|^\rho}
+\abs{f(z)}\le A e^{B\abs{z}^\rho}
 $$
 for suitable $A,B>0$.
 
-For (a), every polynomial has order $0$. Indeed, if $p$ has degree $m$, then $|p(z)|=O(|z|^m)$, and for every $\rho>0$ one has
+For (a), every polynomial has order $0$. Indeed, if $p$ has degree $m$, then $\abs{p(z)}=O(\abs{z}^m)$, and for every $\rho>0$ one has
 $$
-|z|^m\le C_\rho e^{|z|^\rho}
+\abs{z}^m\le C_\rho e^{\abs{z}^\rho}
 $$
 for all $z$. Thus the infimum of admissible positive $\rho$ is $0$.
 
 For (b),
 $$
-|e^{bz^n}|=e^{\Re(bz^n)}\le e^{|b||z|^n},
+\abs{e^{bz^n}}=e^{\Re(bz^n)}\le e^{\abs{b}\abs{z}^n},
 $$
 so the order is at most $n$. Choose $\theta$ so that
 $$
-b e^{in\theta}=|b|.
+b e^{in\theta}=\abs{b}.
 $$
 Then along $z=re^{i\theta}$,
 $$
-|e^{bz^n}|=e^{|b|r^n}.
+\abs{e^{bz^n}}=e^{\abs{b}r^n}.
 $$
 No bound $Ae^{Br^\rho}$ with $\rho<n$ can dominate this as $r\to\infty$. Hence the order is exactly
 $$
@@ -62,7 +62,7 @@ $$
 
 For (c), along the positive real axis,
 $$
-|e^{e^x}|=e^{e^x}.
+\abs{e^{e^x}}=e^{e^x}.
 $$
 If this function had finite order $\rho$, then for suitable $A,B>0$ we would have
 $$

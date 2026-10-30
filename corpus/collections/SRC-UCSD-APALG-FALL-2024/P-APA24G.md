@@ -17,7 +17,7 @@ review: draft
 Let $(V, \varphi)$ be a finite-dimensional unitary representation of a finite group $G$.
 State the definition of the space $V^G$ of $G$-invariant vectors in $V$, and prove that
 $$
-P = \frac{1}{|G|} \sum_{g \in G} \varphi(g)
+P = \frac{1}{\cardinality{G}} \sum_{g \in G} \varphi(g)
 $$
 is the orthogonal projection of $V$ onto $V^G$.
 :::
@@ -30,7 +30,7 @@ V^G:=\{v\in V:\varphi(g)v=v\text{ for every }g\in G\}.
 $$
 Define
 $$
-P:=\frac1{|G|}\sum_{g\in G}\varphi(g).
+P:=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(g).
 $$
 
 ::: pf
@@ -42,12 +42,12 @@ The image of $P$ is contained in $V^G$.
 Let $v\in V$ and $h\in G$. Then
 $$
 \varphi(h)Pv
-=\frac1{|G|}\sum_{g\in G}\varphi(hg)v.
+=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(hg)v.
 $$
 As $g$ runs through $G$, so does $hg$. Hence
 $$
 \varphi(h)Pv
-=\frac1{|G|}\sum_{k\in G}\varphi(k)v
+=\frac1{\cardinality{G}}\sum_{k\in G}\varphi(k)v
 =Pv.
 $$
 Thus $Pv\in V^G$.
@@ -61,7 +61,7 @@ The operator $P$ acts as the identity on $V^G$.
 ::: pf-proof
 If $v\in V^G$, then $\varphi(g)v=v$ for every $g\in G$. Therefore
 $$
-Pv=\frac1{|G|}\sum_{g\in G}v=v.
+Pv=\frac1{\cardinality{G}}\sum_{g\in G}v=v.
 $$
 :::
 
@@ -91,8 +91,8 @@ $$
 Therefore
 $$
 P^*
-=\frac1{|G|}\sum_{g\in G}\varphi(g)^*
-=\frac1{|G|}\sum_{g\in G}\varphi(g^{-1}).
+=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(g)^*
+=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(g^{-1}).
 $$
 Inversion permutes the elements of $G$, so the final sum equals $P$.
 :::

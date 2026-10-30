@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Recall that a bounded linear operator $T : \mathcal{H} \to \mathcal{H}$ on a Hilbert space $\mathcal{H}$ is self-adjoint if $\langle Tv, w \rangle = \langle v, Tw \rangle$ for all vectors $v, w \in \mathcal{H}$.
 
-(a) Suppose that $T$ is a bounded self-adjoint operator such that $\|v\| \leq \|Tv\|$ for all $v \in \mathcal{H}$.
+(a) Suppose that $T$ is a bounded self-adjoint operator such that $\norm{v} \leq \norm{Tv}$ for all $v \in \mathcal{H}$.
 Show that given any $y \in \mathcal{H}$, there exists $x \in \mathcal{H}$ such that $Tx = y$.
 
 Hint: Prove first that the range of $T$ is a closed subspace of $\mathcal{H}$.
@@ -52,13 +52,13 @@ Tx_n\to y
 $$
 in $\mathcal H$. The lower bound
 $$
-\|v\|\le\|Tv\|
+\norm{v}\le\norm{Tv}
 $$
 gives
 $$
-\|x_n-x_m\|
-\le \|T(x_n-x_m)\|
-=\|Tx_n-Tx_m\|.
+\norm{x_n-x_m}
+\le \norm{T(x_n-x_m)}
+=\norm{Tx_n-Tx_m}.
 $$
 Thus $(x_n)$ is Cauchy. Since $\mathcal H$ is complete, $x_n\to x$ for some $x\in\mathcal H$. Boundedness of $T$ then gives
 $$
@@ -125,7 +125,7 @@ $$
 $$
 Then $T$ is bounded because
 $$
-\|Tf\|_2\le\|f\|_2,
+\norm{Tf}_2\le\norm{f}_2,
 $$
 and it is self-adjoint because multiplication by the real-valued function $x$ is self-adjoint.
 

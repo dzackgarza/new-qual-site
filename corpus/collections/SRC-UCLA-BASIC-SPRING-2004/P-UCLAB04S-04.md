@@ -136,9 +136,9 @@ $$
 d
 =
 \min_{1\le n<N}
-\left|
+\abs{
 x-\frac1n
-\right|
+}
 >
 0.
 $$

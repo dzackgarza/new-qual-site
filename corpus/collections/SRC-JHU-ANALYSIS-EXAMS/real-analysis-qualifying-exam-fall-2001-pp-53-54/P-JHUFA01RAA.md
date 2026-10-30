@@ -34,32 +34,32 @@ exists. Prove that $f$ is uniformly continuous on $[0,\infty)$.
 ::: {.solution}
 Fix $\varepsilon>0$. Since $f(x)\to L$, choose $R>0$ such that
 $$
-|f(x)-L|<\frac\varepsilon2
+\abs{f(x)-L}<\frac\varepsilon2
 \qquad(x\ge R).
 $$
 Then whenever $x,y\ge R$,
 $$
-|f(x)-f(y)|
-\le |f(x)-L|+|f(y)-L|
+\abs{f(x)-f(y)}
+\le \abs{f(x)-L}+\abs{f(y)-L}
 <\varepsilon.
 $$
 
 On the compact interval $[0,R+1]$, the function $f$ is uniformly continuous by the Heine--Cantor theorem. Hence there exists $\delta_0>0$ such that
 $$
-|x-y|<\delta_0,
+\abs{x-y}<\delta_0,
 \qquad x,y\in[0,R+1],
 $$
 implies
 $$
-|f(x)-f(y)|<\varepsilon.
+\abs{f(x)-f(y)}<\varepsilon.
 $$
 Set
 $$
 \delta=\min\{1,\delta_0\}.
 $$
-Suppose $x,y\ge0$ and $|x-y|<\delta$. If both $x,y\ge R$, the tail estimate above applies. Otherwise, one of the two points is $<R$; because $|x-y|<1$, both points then belong to $[0,R+1]$, so the compact-interval estimate applies. Thus in all cases
+Suppose $x,y\ge0$ and $\abs{x-y}<\delta$. If both $x,y\ge R$, the tail estimate above applies. Otherwise, one of the two points is $<R$; because $\abs{x-y}<1$, both points then belong to $[0,R+1]$, so the compact-interval estimate applies. Thus in all cases
 $$
-|x-y|<\delta\implies |f(x)-f(y)|<\varepsilon.
+\abs{x-y}<\delta\implies \abs{f(x)-f(y)}<\varepsilon.
 $$
 Therefore $f$ is uniformly continuous on $[0,\infty)$.
 :::

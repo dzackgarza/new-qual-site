@@ -48,7 +48,7 @@ I_1(a,b) &= \int_0^{\pi/2} \frac{dx}{a\cos^2(x) + b\sin^2(x)}
 = \int_0^{\pi/2} \frac{\sec^2(x)\,dx}{a + b\tan^2(x)}
 = \int_0^\infty \frac{du}{a + bu^2} \\
 &= \frac{1}{a}\int_0^\infty \frac{du}{1 + \frac{b}{a}u^2}
-= \frac{1}{a}\sqrt{\frac{a}{b}}\,\arctan\left(u\sqrt{\frac{b}{a}}\right)\Big|_{u=0}^{u\to\infty}
+= \frac{1}{a}\sqrt{\frac{a}{b}}\,\arctan\left(u\sqrt{\frac{b}{a}}\right)\evalfrom_{u=0}^{u\to\infty}
 = \frac{\pi}{2\sqrt{ab}}.
 \end{aligned}
 $$

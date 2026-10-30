@@ -23,9 +23,9 @@ If false, give a counterexample.
 
 (i) If $u$ and $v$ are two harmonic functions on a region $U$ and the set of points where $u$ and $v$ are equal contains an accumulation belonging to $U$ then $u = v$.
 
-(ii) There is a nonconstant holomorphic function $f(z)$ on the region $U = \CC \setminus \{z \in \CC \mid \operatorname{Im} z = 0, \operatorname{Re} z < 0\}$ such that $|f(z)| \leq 1$.
+(ii) There is a nonconstant holomorphic function $f(z)$ on the region $U = \CC \setminus \{z \in \CC \mid \operatorname{Im} z = 0, \operatorname{Re} z < 0\}$ such that $\abs{f(z)} \leq 1$.
 
-(iii) There are polynomials $p_1, p_2, \ldots$ such that $\frac{1}{z(z-3)} - p_n(z)$ converges uniformly to zero on the annulus $U = \{z \in \CC \mid 1 < |z| < 2\}$ as $n$ tends to infinity.
+(iii) There are polynomials $p_1, p_2, \ldots$ such that $\frac{1}{z(z-3)} - p_n(z)$ converges uniformly to zero on the annulus $U = \{z \in \CC \mid 1 < \abs{z} < 2\}$ as $n$ tends to infinity.
 
 (iv) If $f(z)$ is an entire function then either the image of $f$ is dense in $\CC$ or $f(z)$ is constant.
 
@@ -44,15 +44,15 @@ $$
 U=\CC\setminus(-\infty,0]
 $$
 is simply connected and proper, so by the Riemann mapping theorem there is a
-nonconstant biholomorphism $F:U\to\DD$. In particular $|F|<1$.
+nonconstant biholomorphism $F:U\to\DD$. In particular $\abs{F}<1$.
 
 **(iii) False.** If polynomials $p_n$ converged uniformly on
-$1<|z|<2$ to $1/[z(z-3)]$, then they would converge uniformly on the circle
-$|z|=3/2$. Hence
+$1<\abs{z}<2$ to $1/[z(z-3)]$, then they would converge uniformly on the circle
+$\abs{z}=3/2$. Hence
 $$
-0=\int_{|z|=3/2}p_n(z)\,dz
+0=\int_{\abs{z}=3/2}p_n(z)\,dz
 \longrightarrow
-\int_{|z|=3/2}\frac{dz}{z(z-3)}.
+\int_{\abs{z}=3/2}\frac{dz}{z(z-3)}.
 $$
 The latter integral equals
 $2\pi i\operatorname{Res}_{z=0}(1/[z(z-3)])=-2\pi i/3\ne0$, a

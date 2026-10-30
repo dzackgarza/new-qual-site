@@ -22,9 +22,9 @@ Determine the image under $f$ of each of the following:
 
 1. the real axis (hint: this is a line);
 
-2. the circle $|z|=2$ (hint: this is a circle);
+2. the circle $\abs{z}=2$ (hint: this is a circle);
 
-3. the circle $|z|=1$;
+3. the circle $\abs{z}=1$;
 
 4. the imaginary axis.
 :::
@@ -56,9 +56,9 @@ If $z\in\RR\setminus\{-1\}$, then $(z-1)/(z+1)\in\RR$. Also $f(-1)=\infty$ and $
 
 ::: {.pf-step #s1-2}
 
-The image of $|z|=2$ is the circle
+The image of $\abs{z}=2$ is the circle
 $$
-\boxed{\left|w-\frac53\right|=\frac43}.
+\boxed{\abs{w-\frac53}=\frac43}.
 $$
 
 
@@ -66,9 +66,9 @@ $$
 
 For $w=f(z)$, the inverse formula gives
 $$
-|z|=2
+\abs{z}=2
 \quad\Longleftrightarrow\quad
-|1+w|=2|1-w|.
+\abs{1+w}=2\abs{1-w}.
 $$
 Writing $w=u+iv$ and squaring gives
 $$
@@ -86,9 +86,9 @@ The point $w=1$ does not satisfy this equation, so the inverse formula proves bo
 
 ::: {.pf-step #s1-3}
 
-The image of $|z|=1$ is the extended imaginary axis:
+The image of $\abs{z}=1$ is the extended imaginary axis:
 $$
-\boxed{f(\{|z|=1\})=i\RR\cup\{\infty\}}.
+\boxed{f(\{\abs{z}=1\})=i\RR\cup\{\infty\}}.
 $$
 
 
@@ -96,15 +96,15 @@ $$
 
 For finite $w\ne1$,
 $$
-|z|=1
+\abs{z}=1
 \quad\Longleftrightarrow\quad
-|1+w|=|1-w|.
+\abs{1+w}=\abs{1-w}.
 $$
 If $w=u+iv$, squaring this equality gives
 $$
 (1+u)^2+v^2=(1-u)^2+v^2,
 $$
-hence $u=0$. Conversely, every finite $w$ with $\operatorname{Re}w=0$ satisfies the equality and therefore has a preimage on $|z|=1$. Finally $z=-1$ lies on the source circle and maps to $\infty$.
+hence $u=0$. Conversely, every finite $w$ with $\operatorname{Re}w=0$ satisfies the equality and therefore has a preimage on $\abs{z}=1$. Finally $z=-1$ lies on the source circle and maps to $\infty$.
 
 :::
 
@@ -114,7 +114,7 @@ hence $u=0$. Conversely, every finite $w$ with $\operatorname{Re}w=0$ satisfies 
 
 The image of the extended imaginary axis is the unit circle:
 $$
-\boxed{f(i\RR\cup\{\infty\})=\{|w|=1\}}.
+\boxed{f(i\RR\cup\{\infty\})=\{\abs{w}=1\}}.
 $$
 
 
@@ -122,11 +122,11 @@ $$
 
 If $z=iy$ with $y\in\RR$, then
 $$
-|f(iy)|
-=\frac{|iy-1|}{|iy+1|}
+\abs{f(iy)}
+=\frac{\abs{iy-1}}{\abs{iy+1}}
 =1.
 $$
-Also $f(\infty)=1$, so the image is contained in the unit circle. Conversely, if $|w|=1$ and $w\ne1$, then
+Also $f(\infty)=1$, so the image is contained in the unit circle. Conversely, if $\abs{w}=1$ and $w\ne1$, then
 $$
 \overline{w}=\frac1w
 $$

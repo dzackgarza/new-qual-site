@@ -69,12 +69,12 @@ the group on the right vanishes.  The exact sequence
 $$
 0\longrightarrow A(-Q)
 \longrightarrow A
-\longrightarrow A|_Q
+\longrightarrow A\restrict_Q
 \longrightarrow0
 $$
 therefore shows that
 $$
-H^0(X,A)\longrightarrow A|_Q
+H^0(X,A)\longrightarrow A\restrict_Q
 $$
 is surjective for every $Q$.  Thus $A$ is globally generated.
 

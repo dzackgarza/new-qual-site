@@ -31,7 +31,7 @@ $X$ is a finite set with the following property: The number of subsets of $X$ th
 
 ::: {.pf-step #s1-1}
 
-If $n=|X|$, then
+If $n=\cardinality{X}$, then
 $$
 \binom n3-\binom n2=14.
 $$

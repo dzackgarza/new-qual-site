@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z + 1 ) ( z + 2 ) } } \end{array}$ such that it converges in the regions (a) $| z | < 1 ;$
+OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z + 1 ) ( z + 2 ) } } \end{array}$ such that it converges in the regions (a) $\abs{ z } < 1 ;$
 
-(b) $1 < | z | < 2 ;$
+(b) $1 < \abs{ z } < 2 ;$
 
-(c) $| z | > 2 ;$
+(c) $\abs{ z } > 2 ;$
 
-(d) $0 < | z + 1 | < 1 .$
+(d) $0 < \abs{ z + 1 } < 1 .$
 :::
 
 ::: {.solution}
@@ -60,7 +60,7 @@ $$
 
 ::: {.pf-step #s1-2}
 
-For $|z|<1$,
+For $\abs{z}<1$,
 $$
 \frac1{z+1}
 =
@@ -83,7 +83,7 @@ $$
 =
 \sum_{n=0}^{\infty}(-z)^n,
 $$
-valid for $|z|<1$, and
+valid for $\abs{z}<1$, and
 $$
 \frac1{z+2}
 =
@@ -93,7 +93,7 @@ $$
 \sum_{n=0}^{\infty}
 \left(-\frac z2\right)^n,
 $$
-valid for $|z|<2$.
+valid for $\abs{z}<2$.
 
 :::
 
@@ -101,7 +101,7 @@ valid for $|z|<2$.
 
 ::: {.pf-step #s1-3}
 
-Therefore, for $|z|<1$,
+Therefore, for $\abs{z}<1$,
 $$
 \boxed{
 f(z)
@@ -125,7 +125,7 @@ Subtract the two series in step [](#s1-2){.pf-ref} using step [](#s1-1){.pf-ref}
 
 ::: {.pf-step #s1-4}
 
-For $1<|z|<2$,
+For $1<\abs{z}<2$,
 $$
 \frac1{z+1}
 =
@@ -153,10 +153,10 @@ $$
 \sum_{n=0}^{\infty}
 \left(-\frac1z\right)^n,
 $$
-which converges when $|z|>1$.
+which converges when $\abs{z}>1$.
 
-The second expansion is the one from step [](#s1-2){.pf-ref} and converges when $|z|<2$.
-Thus both are valid simultaneously on $1<|z|<2$.
+The second expansion is the one from step [](#s1-2){.pf-ref} and converges when $\abs{z}<2$.
+Thus both are valid simultaneously on $1<\abs{z}<2$.
 
 :::
 
@@ -164,7 +164,7 @@ Thus both are valid simultaneously on $1<|z|<2$.
 
 ::: {.pf-step #s1-5}
 
-Hence, for $1<|z|<2$,
+Hence, for $1<\abs{z}<2$,
 $$
 \boxed{
 f(z)
@@ -188,7 +188,7 @@ Substitute step [](#s1-4){.pf-ref} into the partial fractions from step [](#s1-1
 
 ::: {.pf-step #s1-6}
 
-For $|z|>2$,
+For $\abs{z}>2$,
 $$
 \frac1{z+1}
 =
@@ -216,7 +216,7 @@ $$
 \sum_{n=0}^{\infty}
 \left(-\frac2z\right)^n,
 $$
-which converges for $|z|>2$.
+which converges for $\abs{z}>2$.
 
 :::
 
@@ -224,7 +224,7 @@ which converges for $|z|>2$.
 
 ::: {.pf-step #s1-7}
 
-Therefore, for $|z|>2$,
+Therefore, for $\abs{z}>2$,
 $$
 \boxed{
 f(z)
@@ -274,7 +274,7 @@ the displayed identity follows.
 
 ::: {.pf-step #s1-9}
 
-For $0<|z+1|<1$,
+For $0<\abs{z+1}<1$,
 $$
 \boxed{
 f(z)
@@ -293,7 +293,7 @@ f(z)
 =
 \frac1w\frac1{1+w}.
 $$
-For $|w|<1$,
+For $\abs{w}<1$,
 $$
 \frac1{1+w}
 =

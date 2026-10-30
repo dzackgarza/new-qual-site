@@ -98,7 +98,7 @@ Thus $Tw\in v^\perp$.
 
 The restriction
 $$
-T|_{v^\perp}:v^\perp\to v^\perp
+T\restrict_{v^\perp}:v^\perp\to v^\perp
 $$
 is symmetric with respect to the Euclidean inner product.
 
@@ -126,7 +126,7 @@ For every $n\ge1$, every real symmetric $n\times n$ matrix has an orthonormal ba
 
 For $n=1$ the assertion is immediate.
 
-Assume it holds in dimension $n-1$, and let $T\in M_n(\RR)$ be symmetric. By step [](#s1-1){.pf-ref}, choose a real eigenvector $v_1$ and normalize it so that $\|v_1\|=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
+Assume it holds in dimension $n-1$, and let $T\in M_n(\RR)$ be symmetric. By step [](#s1-1){.pf-ref}, choose a real eigenvector $v_1$ and normalize it so that $\norm{v_1}=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
 $$
 v_2,\ldots,v_n
 $$

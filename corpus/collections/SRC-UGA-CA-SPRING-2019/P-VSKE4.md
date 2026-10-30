@@ -28,7 +28,7 @@ Show that $f_{n}$ converges to $f$ uniformly on compact subsets of $\Omega$.
 :::
 
 ::: {.solution}
-Write $g(z) \definedas \lim_{n\to\infty}f_n(z)$ for the pointwise limit, then $g(z) = f(z)$ on a set with a limit point.
+Write $g(z) \coloneqq \lim_{n\to\infty}f_n(z)$ for the pointwise limit, then $g(z) = f(z)$ on a set with a limit point.
 By the identity principle, $g\equiv f$ on $\Omega$, making $f$ the pointwise limit of the $f_n$.
 
 By Montel, locally uniformly bounded implies normal and locally equicontinuous.

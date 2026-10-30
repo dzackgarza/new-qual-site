@@ -30,7 +30,7 @@ $$
 f _ { n } ( z ) = 1 + { \frac { 1 } { z } } + { \frac { 1 } { 2 ! z ^ { 2 } } } + \cdots + { \frac { 1 } { n ! z ^ { n } } }
 $$
 
-lie in the circle $| z | < \rho .$
+lie in the circle $\abs{ z } < \rho .$
 :::
 
 ::: {.solution}
@@ -51,31 +51,31 @@ $$
 
 ::: {.pf-step #s1}
 
-For all sufficiently large $n$, the polynomial $p_n$ has no zero in the closed disk $|w|\le R$.
+For all sufficiently large $n$, the polynomial $p_n$ has no zero in the closed disk $\abs{w}\le R$.
 
 ::: pf-proof
 
-On $|w|\le R$,
+On $\abs{w}\le R$,
 $$
-|e^w|=e^{\operatorname{Re}w}\ge e^{-R}.
+\abs{e^w}=e^{\operatorname{Re}w}\ge e^{-R}.
 $$
 Also
 $$
-|e^w-p_n(w)|
-\le \sum_{k=n+1}^{\infty}\frac{|w|^k}{k!}
+\abs{e^w-p_n(w)}
+\le \sum_{k=n+1}^{\infty}\frac{\abs{w}^k}{k!}
 \le \sum_{k=n+1}^{\infty}\frac{R^k}{k!}.
 $$
 The last tail tends to $0$ as $n\to\infty$. Hence for all sufficiently large $n$,
 $$
 \sum_{k=n+1}^{\infty}\frac{R^k}{k!}<e^{-R}.
 $$
-For such $n$ and every $|w|\le R$,
+For such $n$ and every $\abs{w}\le R$,
 $$
-|p_n(w)|
-\ge |e^w|-|e^w-p_n(w)|
+\abs{p_n(w)}
+\ge \abs{e^w}-\abs{e^w-p_n(w)}
 >e^{-R}-e^{-R}=0.
 $$
-Thus $p_n$ has no zero in $|w|\le R$.
+Thus $p_n$ has no zero in $\abs{w}\le R$.
 
 :::
 
@@ -83,7 +83,7 @@ Thus $p_n$ has no zero in $|w|\le R$.
 
 ::: pf-step
 
-Every zero of $f_n$ then satisfies $|z|<\rho$.
+Every zero of $f_n$ then satisfies $\abs{z}<\rho$.
 
 ::: pf-proof
 
@@ -91,11 +91,11 @@ Let $n$ be large enough for step [](#s1){.pf-ref} and suppose $f_n(z)=0$. Since 
 $$
 p_n(w)=f_n(z)=0.
 $$
-By step [](#s1){.pf-ref} this forces $|w|>R=1/\rho$. Therefore
+By step [](#s1){.pf-ref} this forces $\abs{w}>R=1/\rho$. Therefore
 $$
-|z|=\frac1{|w|}<\rho.
+\abs{z}=\frac1{\abs{w}}<\rho.
 $$
-Hence, for all sufficiently large $n$, every zero of $f_n$ lies in the circle $|z|<\rho$.
+Hence, for all sufficiently large $n$, every zero of $f_n$ lies in the circle $\abs{z}<\rho$.
 
 :::
 

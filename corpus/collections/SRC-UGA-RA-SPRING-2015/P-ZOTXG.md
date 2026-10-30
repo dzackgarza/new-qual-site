@@ -47,14 +47,14 @@ The convolution is well defined and bounded.
 
 ::: pf-proof
 
-Let $M:=\|g\|_\infty$. For every $x\in\RR$,
+Let $M:=\norm{g}_\infty$. For every $x\in\RR$,
 $$
-\int_{\RR}|f(y)g(x-y)|\,dy
-\le M\|f\|_1<\infty.
+\int_{\RR}\abs{f(y)g(x-y)}\,dy
+\le M\norm{f}_1<\infty.
 $$
 Thus $(f*g)(x)$ is absolutely convergent and
 $$
-\|f*g\|_\infty\le M\|f\|_1.
+\norm{f*g}_\infty\le M\norm{f}_1.
 $$
 
 :::
@@ -79,8 +79,8 @@ $$
 $$
 and therefore
 $$
-|(f*g)(x+h)-(f*g)(x)|
-\le M\|\tau_{-h}f-f\|_1.
+\abs{(f*g)(x+h)-(f*g)(x)}
+\le M\norm{\tau_{-h}f-f}_1.
 $$
 Translations are strongly continuous on $L^1(\RR)$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Thus $f*g$ is uniformly continuous.
 
@@ -100,7 +100,7 @@ $$
 =\int_{\RR}f(y)
 \frac{g(x+h-y)-g(x-y)}h\,dy.
 $$
-For each fixed $y$, the difference quotient converges to $g'(x-y)$. By the mean value theorem it is bounded in absolute value by $\|g'\|_\infty$. Since $f\in L^1$, dominated convergence yields
+For each fixed $y$, the difference quotient converges to $g'(x-y)$. By the mean value theorem it is bounded in absolute value by $\norm{g'}_\infty$. Since $f\in L^1$, dominated convergence yields
 $$
 \frac d{dx}(f*g)(x)
 =\int_{\RR}f(y)g'(x-y)\,dy

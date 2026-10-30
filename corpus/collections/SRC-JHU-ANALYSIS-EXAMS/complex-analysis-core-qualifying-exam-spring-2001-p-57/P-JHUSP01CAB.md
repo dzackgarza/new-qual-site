@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01CAB
 kind: problem
-title: Zeros of $2z^5+8z-1$ in $1<|z|<2$
+title: Zeros of $2z^5+8z-1$ in $1<\abs{z}<2$
 classification:
   areas:
   - complex-analysis
@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 2. Find the number of zeros of the function $f ( z ) = 2 z ^ { 5 } + 8 z - 1$ in the annulus $1 < | z | < 2$
+Question 2. Find the number of zeros of the function $f ( z ) = 2 z ^ { 5 } + 8 z - 1$ in the annulus $1 < \abs{ z } < 2$
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ There are exactly $\boxed{4}$ zeros in the annulus, and all are simple.
 
 ::: pf-step
 
-There is exactly one zero in $|z|<1$.
+There is exactly one zero in $\abs{z}<1$.
 
 ::: pf-proof
 
@@ -47,13 +47,13 @@ Let
 $$
 p(z)=2z^5+8z-1.
 $$
-On $|z|=1$,
+On $\abs{z}=1$,
 $$
-|2z^5-1|\le 3<8=|8z|.
+\abs{2z^5-1}\le 3<8=\abs{8z}.
 $$
 Rouché's theorem [@SS03] therefore gives the same number of zeros in the unit disk for
 $p$ and $8z$, namely one, counted with multiplicity. The strict inequality also
-shows that $p$ has no zero on $|z|=1$.
+shows that $p$ has no zero on $\abs{z}=1$.
 
 :::
 
@@ -61,16 +61,16 @@ shows that $p$ has no zero on $|z|=1$.
 
 ::: pf-step
 
-There are exactly five zeros in $|z|<2$.
+There are exactly five zeros in $\abs{z}<2$.
 
 ::: pf-proof
 
-On $|z|=2$,
+On $\abs{z}=2$,
 $$
-|8z-1|\le17<64=|2z^5|.
+\abs{8z-1}\le17<64=\abs{2z^5}.
 $$
 A second application of Rouché's theorem gives the same number of zeros in
-$|z|<2$ for $p$ and $2z^5$, namely five, counted with multiplicity. Again the
+$\abs{z}<2$ for $p$ and $2z^5$, namely five, counted with multiplicity. Again the
 strict inequality excludes zeros from the boundary circle.
 
 :::
@@ -83,8 +83,8 @@ Subtracting the two disk counts gives the annular count.
 
 ::: pf-proof
 
-Because neither boundary circle contains a zero, every zero in $|z|<2$ lies
-either in $|z|<1$ or in $1<|z|<2$. Hence the annulus contains
+Because neither boundary circle contains a zero, every zero in $\abs{z}<2$ lies
+either in $\abs{z}<1$ or in $1<\abs{z}<2$. Hence the annulus contains
 $$
 5-1=4
 $$

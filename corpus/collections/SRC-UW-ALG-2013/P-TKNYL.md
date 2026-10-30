@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-TKNYL
 kind: problem
-title: A group of order $2013=3\cdot 11\cdot 61$ has a cyclic normal subgroup of index
-  $3$, and $11$ divides $|Z(G)|$
+title: A group of order $2013=3\cdot 11\cdot 61$ has a cyclic normal subgroup of index $3$, and $11$ divides $\cardinality{Z(G)}$
 classification:
   areas:
   - algebra
@@ -75,9 +74,9 @@ is normal of order $11\cdot61=671$.
 
 Both factors are normal by steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, so their product is a normal subgroup. Their intersection is trivial because their orders are coprime. Therefore
 $$
-|N|=|P_{11}||P_{61}|=11\cdot61=671.
+\cardinality{N}=\cardinality{P_{11}}\cardinality{P_{61}}=11\cdot61=671.
 $$
-Since $|G|=3\cdot671$, the index of $N$ is $3$.
+Since $\cardinality{G}=3\cdot671$, the index of $N$ is $3$.
 
 :::
 
@@ -115,9 +114,9 @@ G\longrightarrow \operatorname{Aut}(P_{11}).
 $$
 Now $P_{11}\cong C_{11}$, so
 $$
-|\operatorname{Aut}(P_{11})|=10.
+\cardinality{\operatorname{Aut}(P_{11})}=10.
 $$
-The order of the image divides both $|G|=2013$ and $10$. Since
+The order of the image divides both $\cardinality{G}=2013$ and $10$. Since
 $$
 \gcd(2013,10)=1,
 $$
@@ -132,11 +131,11 @@ $$
 
 ::: pf-step
 
-Consequently $11\mid |Z(G)|$.
+Consequently $11\mid \cardinality{Z(G)}$.
 
 ::: pf-proof
 
-By step [](#s5){.pf-ref}, the center contains the subgroup $P_{11}$ of order $11$. Lagrange's theorem therefore gives $11\mid |Z(G)|$.
+By step [](#s5){.pf-ref}, the center contains the subgroup $P_{11}$ of order $11$. Lagrange's theorem therefore gives $11\mid \cardinality{Z(G)}$.
 
 :::
 

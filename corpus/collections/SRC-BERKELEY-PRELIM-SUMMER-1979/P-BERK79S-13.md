@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Let $F$ be a finite field with $q$ elements and let $V$ be an $n$-dimensional vector space over $F$.
 
-1. Determine $|V|$.
+1. Determine $\cardinality{V}$.
 
 2. Determine the order of $GL_n(F)$.
 

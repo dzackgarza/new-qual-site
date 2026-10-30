@@ -44,7 +44,7 @@ $$\int p(x) K(x,y) \, dx \leq \beta q(y)$$
 for almost all $y$.
 Show that for $f \in L^2(\RR^n)$ we have
 
-$$\|Tf\|_{L^2} \leq \sqrt{\alpha \beta} \|f\|_{L^2}.$$
+$$\norm{Tf}_{L^2} \leq \sqrt{\alpha \beta} \norm{f}_{L^2}.$$
 
 (This is called Schur's test.)
 :::
@@ -60,7 +60,7 @@ The integral defining $Tf$ converges absolutely almost everywhere.
 ::: pf-proof
 Set
 $$
-B(x)=\int_{\RR^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
+B(x)=\int_{\RR^n}K(x,y)\frac{\abs{f(y)}^2}{q(y)}\,dy.
 $$
 This is a nonnegative measurable function, possibly
 initially infinite. Tonelli and the second kernel inequality
@@ -68,9 +68,9 @@ give [@Fol13]
 $$
 \begin{aligned}
 \int_{\RR^n}p(x)B(x)\,dx
-&=\int_{\RR^n}\frac{|f(y)|^2}{q(y)}
+&=\int_{\RR^n}\frac{\abs{f(y)}^2}{q(y)}
 \left(\int_{\RR^n}p(x)K(x,y)\,dx\right)dy\\
-&\leq\beta\int_{\RR^n}|f(y)|^2\,dy<\infty.
+&\leq\beta\int_{\RR^n}\abs{f(y)}^2\,dy<\infty.
 \end{aligned}
 $$
 Since $p(x)>0$, this implies $B(x)<\infty$ almost
@@ -78,9 +78,9 @@ everywhere. The first kernel inequality also gives
 $A(x):=\int K(x,y)q(y)\,dy\leq\alpha p(x)<\infty$
 for almost every $x$. For points where both bounds hold,
 Cauchy–Schwarz applied to
-$K^{1/2}q^{1/2}$ and $K^{1/2}|f|q^{-1/2}$ yields
+$K^{1/2}q^{1/2}$ and $K^{1/2}\abs{f}q^{-1/2}$ yields
 $$
-\int K(x,y)|f(y)|\,dy\leq A(x)^{1/2}B(x)^{1/2}<\infty
+\int K(x,y)\abs{f(y)}\,dy\leq A(x)^{1/2}B(x)^{1/2}<\infty
 $$
 [@Fol13]. Thus $Tf$ is defined almost everywhere, and
 the usual parameter-integral measurability follows by
@@ -97,33 +97,33 @@ The same weighted inequality gives the claimed norm bound.
 For almost every $x$, Cauchy–Schwarz in the $y$ variable gives
 $$
 \begin{aligned}
-|Tf(x)|^2
-&=\left|\int K(x,y)^{1/2}q(y)^{1/2}
-\,K(x,y)^{1/2}q(y)^{-1/2}f(y)\,dy\right|^2\\
+\abs{Tf(x)}^2
+&=\abs{\int K(x,y)^{1/2}q(y)^{1/2}
+\,K(x,y)^{1/2}q(y)^{-1/2}f(y)\,dy}^2\\
 &\le
 \left(\int K(x,y)q(y)\,dy\right)
-\left(\int K(x,y)\frac{|f(y)|^2}{q(y)}\,dy\right)\\
+\left(\int K(x,y)\frac{\abs{f(y)}^2}{q(y)}\,dy\right)\\
 &\le \alpha p(x)
-\int K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
+\int K(x,y)\frac{\abs{f(y)}^2}{q(y)}\,dy.
 \end{aligned}
 $$
 Integrating in $x$ and using Tonelli's theorem gives [@Fol13]
 $$
 \begin{aligned}
-\|Tf\|_2^2
+\norm{Tf}_2^2
 &\le \alpha
 \int_{\RR^n} p(x)
-\int_{\RR^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy\,dx\\
+\int_{\RR^n}K(x,y)\frac{\abs{f(y)}^2}{q(y)}\,dy\,dx\\
 &=\alpha
-\int_{\RR^n}\frac{|f(y)|^2}{q(y)}
+\int_{\RR^n}\frac{\abs{f(y)}^2}{q(y)}
 \left(\int_{\RR^n}p(x)K(x,y)\,dx\right)dy\\
-&\le \alpha\beta\int_{\RR^n}|f(y)|^2\,dy
-=\alpha\beta\|f\|_2^2.
+&\le \alpha\beta\int_{\RR^n}\abs{f(y)}^2\,dy
+=\alpha\beta\norm{f}_2^2.
 \end{aligned}
 $$
 Taking square roots yields
 $$
-\|Tf\|_{L^2}\le \sqrt{\alpha\beta}\,\|f\|_{L^2}.
+\norm{Tf}_{L^2}\le \sqrt{\alpha\beta}\,\norm{f}_{L^2}.
 $$
 :::
 

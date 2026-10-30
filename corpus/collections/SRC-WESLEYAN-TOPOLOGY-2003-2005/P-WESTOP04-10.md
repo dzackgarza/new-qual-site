@@ -166,7 +166,7 @@ by extension:
 $$
 f\le g
 \iff
-g|_{\mathcal D_f}=f.
+g\restrict_{\mathcal D_f}=f.
 $$
 
 

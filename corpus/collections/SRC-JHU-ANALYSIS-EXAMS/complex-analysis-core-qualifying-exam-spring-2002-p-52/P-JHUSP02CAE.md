@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAE
 kind: problem
-title: Negative Laurent coefficients of $1/\sin z$ on $\pi<|z|<2\pi$
+title: Negative Laurent coefficients of $1/\sin z$ on $\pi<\abs{z}<2\pi$
 classification:
   areas:
   - complex-analysis
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-5. Let $\scriptstyle \sum _ { n = - \infty } ^ { \infty } a _ { n } z ^ { n }$ be the Laurent series expansion of $\scriptstyle { \frac { 1 } { \sin z } }$ on the annulus $\left\{ z \in \CC : \pi < | z | < 2 \pi \right\}$ . Evaluate the coefficients $a _ { n }$ for $n < 0$
+5. Let $\scriptstyle \sum _ { n = - \infty } ^ { \infty } a _ { n } z ^ { n }$ be the Laurent series expansion of $\scriptstyle { \frac { 1 } { \sin z } }$ on the annulus $\left\{ z \in \CC : \pi < \abs{ z } < 2 \pi \right\}$ . Evaluate the coefficients $a _ { n }$ for $n < 0$
 :::
 
 ::: {.solution}
@@ -50,12 +50,12 @@ Fix $r$ with $\pi<r<2\pi$. The Laurent coefficient formula gives, for
 $m\ge1$,
 $$
 a_{-m}
-=\frac1{2\pi i}\int_{|z|=r}
+=\frac1{2\pi i}\int_{\abs{z}=r}
 \frac{1/\sin z}{z^{-m+1}}\,dz
-=\frac1{2\pi i}\int_{|z|=r}\frac{z^{m-1}}{\sin z}\,dz.
+=\frac1{2\pi i}\int_{\abs{z}=r}\frac{z^{m-1}}{\sin z}\,dz.
 $$
 The zeros of sine are exactly the integer multiples of $\pi$, and they are
-simple because $\cos(k\pi)=(-1)^k\ne0$. Inside $|z|<r$ the only such points
+simple because $\cos(k\pi)=(-1)^k\ne0$. Inside $\abs{z}<r$ the only such points
 are $0,\pi,-\pi$. Therefore the residue theorem expresses $a_{-m}$ as the
 sum of the residues of $z^{m-1}/\sin z$ at those three points.
 

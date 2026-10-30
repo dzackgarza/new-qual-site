@@ -29,22 +29,22 @@ $$
 $$
 means that for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-0<|x-a|<\delta\implies |f(x)-L|<\varepsilon.
+0<\abs{x-a}<\delta\implies \abs{f(x)-L}<\varepsilon.
 $$
 
 For $f(x)=1/(1+x^2)$ at $a=1$,
 $$
-\left|\frac1{1+x^2}-\frac12\right|
-=\frac{|1-x^2|}{2(1+x^2)}
-=\frac{|x-1||x+1|}{2(1+x^2)}.
+\abs{\frac1{1+x^2}-\frac12}
+=\frac{\abs{1-x^2}}{2(1+x^2)}
+=\frac{\abs{x-1}\abs{x+1}}{2(1+x^2)}.
 $$
-If $|x-1|<1$, then $0<x<2$, hence $|x+1|<3$ and $1+x^2\ge1$. Therefore
+If $\abs{x-1}<1$, then $0<x<2$, hence $\abs{x+1}<3$ and $1+x^2\ge1$. Therefore
 $$
-\left|\frac1{1+x^2}-\frac12\right|\le \frac32|x-1|.
+\abs{\frac1{1+x^2}-\frac12}\le \frac32\abs{x-1}.
 $$
 Given $\varepsilon>0$, choose
 $$
 \delta=\min\left\{1,\frac{2\varepsilon}{3}\right\}.
 $$
-Then $0<|x-1|<\delta$ implies the desired error is less than $\varepsilon$.
+Then $0<\abs{x-1}<\delta$ implies the desired error is less than $\varepsilon$.
 :::

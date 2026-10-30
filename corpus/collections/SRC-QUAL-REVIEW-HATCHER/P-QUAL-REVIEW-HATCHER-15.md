@@ -115,7 +115,7 @@ H^*(\CP^n)
 \cong
 \ZZ[u]/(u^{n+1})},
 \qquad
-|u|=2.
+\gradeddegree{u}=2.
 $$
 
 

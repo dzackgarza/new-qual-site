@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be the set of $z\in\CC$ such that $|z|\le1$, $\operatorname{Im}(z)\ge0$, and $z\notin\{1,-1\}$.
+Let $A$ be the set of $z\in\CC$ such that $\abs{z}\le1$, $\operatorname{Im}(z)\ge0$, and $z\notin\{1,-1\}$.
 Find an explicit continuous function $u:A\to\RR$ such that
 
 - $u$ is harmonic on the interior of $A$,

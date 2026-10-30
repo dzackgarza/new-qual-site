@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $D = \{ z \in \CC : | z | < 1 \}$ . Find all holomorphic functions $f \colon D \to \CC$ such that $f ( { \frac { 1 } { n } } + i e ^ { - n } )$ is real for all integers $n \geq 2$
+Let $D = \{ z \in \CC : \abs{ z } < 1 \}$ . Find all holomorphic functions $f \colon D \to \CC$ such that $f ( { \frac { 1 } { n } } + i e ^ { - n } )$ is real for all integers $n \geq 2$
 :::
 
 ::: {.solution}

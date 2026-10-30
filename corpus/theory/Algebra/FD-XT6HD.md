@@ -32,8 +32,8 @@ where $C_{r_i}$ is the [[D-HJR7M|companion matrix]] of $r_i$.
 :::
 
 ::: {.remark}
-The polynomial $r_i$ is the [[D-GK5SF|minimal polynomial]] of the restriction $\phi|_{V_i}$.
-If $v_i\in V_i$ corresponds to the class of $1$ in $k[x]/(r_i)$ and $d_i=\deg r_i$, then $v_i,\phi(v_i),\ldots,\phi^{d_i-1}(v_i)$ is a basis of $V_i$, and the matrix of $\phi|_{V_i}$ in this basis is $C_{r_i}$.
+The polynomial $r_i$ is the [[D-GK5SF|minimal polynomial]] of the restriction $\phi\restrict_{V_i}$.
+If $v_i\in V_i$ corresponds to the class of $1$ in $k[x]/(r_i)$ and $d_i=\deg r_i$, then $v_i,\phi(v_i),\ldots,\phi^{d_i-1}(v_i)$ is a basis of $V_i$, and the matrix of $\phi\restrict_{V_i}$ in this basis is $C_{r_i}$.
 Concatenating these bases gives a basis of $V$ in which $\phi$ has its rational canonical form.
 :::
 

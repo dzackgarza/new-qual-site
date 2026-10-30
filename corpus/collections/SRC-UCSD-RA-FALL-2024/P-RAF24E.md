@@ -59,7 +59,7 @@ f:=\sum_{n=1}^\infty 2^{-n}u_n.
 $$
 The series converges uniformly because
 $$
-\sum_{n=1}^\infty\|2^{-n}u_n\|_\infty
+\sum_{n=1}^\infty\norm{2^{-n}u_n}_\infty
 \le\sum_{n=1}^\infty2^{-n}<\infty.
 $$
 Each $u_n\in C_0(X)$, and $C_0(X)$ is closed in the uniform norm, so
@@ -96,11 +96,11 @@ g\le h\quad\Longrightarrow\quad L(g)\le L(h).
 $$
 Hence for real $g$,
 $$
--|g|\le g\le |g|
+-\abs{g}\le g\le \abs{g}
 $$
 implies
 $$
-|L(g)|\le L(|g|).
+\abs{L(g)}\le L(\abs{g}).
 $$
 Consequently, if $L$ were unbounded, then its values on the positive part of the unit ball would also be unbounded. Thus for every $n$ we could choose
 $$
@@ -130,7 +130,7 @@ h_n:=2^{-n}g_n.
 $$
 Then
 $$
-\|h_n\|_\infty\le2^{-n},
+\norm{h_n}_\infty\le2^{-n},
 \qquad
 L(h_n)\ge1.
 $$

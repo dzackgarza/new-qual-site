@@ -20,8 +20,8 @@ If the curve in the $yz$-plane with equation $z=f(y)$ is rotated around the $y$-
 
 (A) $x^2+z^2=[f(y)]^2$
 (B) $x^2+z^2=f(y)$
-(C) $x^2+z^2=|f(y)|$
-(D) $y^2+z^2=|f(y)|$
+(C) $x^2+z^2=\abs{f(y)}$
+(D) $y^2+z^2=\abs{f(y)}$
 (E) $y^2+z^2=[f(x)]^2$
 :::
 

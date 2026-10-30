@@ -74,10 +74,10 @@ Thus $H$ is contained in the group $A(U)$ of even permutations of
 $U$, extended by the identity on the remaining point.
 The group $A(U)$ has order $4!/2=12$.
 
-By step [](#s1){.pf-ref}, an $H$-orbit has size $4$, so $4\mid |H|$ by
-orbit-stabilizer. Also $3\mid |H|$, since $H$ contains $x$ of order
-$3$, by Lagrange's theorem [@DF04]. Hence $12\mid |H|$.
-The inclusion in $A(U)$ now forces $|H|=12$ and $H=A(U)\cong A_4$.
+By step [](#s1){.pf-ref}, an $H$-orbit has size $4$, so $4\mid \cardinality{H}$ by
+orbit-stabilizer. Also $3\mid \cardinality{H}$, since $H$ contains $x$ of order
+$3$, by Lagrange's theorem [@DF04]. Hence $12\mid \cardinality{H}$.
+The inclusion in $A(U)$ now forces $\cardinality{H}=12$ and $H=A(U)\cong A_4$.
 
 :::
 
@@ -102,11 +102,11 @@ have distinct supports whose union has size four. In particular they
 are neither equal nor inverse, and have a common fixed point.
 Step [](#s2){.pf-ref} applies to them and gives
 $$
-|\langle x,z\rangle|=12,\qquad \langle x,z\rangle\leq H,
-\qquad 12\mid |H|.
+\cardinality{\langle x,z\rangle}=12,\qquad \langle x,z\rangle\leq H,
+\qquad 12\mid \cardinality{H}.
 $$
-Step [](#s1){.pf-ref} also makes $H$ transitive on five points, so $5\mid |H|$.
-It follows that $60\mid |H|$. Both original generators are even,
+Step [](#s1){.pf-ref} also makes $H$ transitive on five points, so $5\mid \cardinality{H}$.
+It follows that $60\mid \cardinality{H}$. Both original generators are even,
 so $H\subseteq A_5$, whose order is $5!/2=60$.
 Thus $H=A_5$.
 

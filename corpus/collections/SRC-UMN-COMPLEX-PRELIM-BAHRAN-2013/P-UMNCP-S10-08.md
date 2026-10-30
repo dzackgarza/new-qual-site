@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $f:\DD\to\DD$ be holomorphic.
-Suppose $c\in\DD$ is a fixed point and $|f'(c)|<1$. For any $z_0\in\DD$, define $z_n=f(z_{n-1})$. Prove that $z_n\to c$.
+Suppose $c\in\DD$ is a fixed point and $\abs{f'(c)}<1$. For any $z_0\in\DD$, define $z_n=f(z_{n-1})$. Prove that $z_n\to c$.
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ g(0)=0,
 $$
 and
 $$
-|g'(0)|=|f'(c)|<1.
+\abs{g'(0)}=\abs{f'(c)}<1.
 $$
 
 
@@ -71,11 +71,11 @@ $$
 
 Also,
 $$
-\phi'(c)=\frac1{1-|c|^2},
+\phi'(c)=\frac1{1-\abs{c}^2},
 $$
 while
 $$
-(\phi^{-1})'(0)=1-|c|^2.
+(\phi^{-1})'(0)=1-\abs{c}^2.
 $$
 The chain rule therefore gives
 $$
@@ -95,7 +95,7 @@ Hence the asserted derivative bound holds.
 
 Schwarz's lemma gives
 $$
-|g(w)|\le|w|
+\abs{g(w)}\le\abs{w}
 $$
 for every
 $$
@@ -123,7 +123,7 @@ g'(0),&w=0
 $$
 is holomorphic on $\DD$ and satisfies
 $$
-\boxed{|h(w)|<1}
+\boxed{\abs{h(w)}<1}
 $$
 for every $w\in\DD$.
 
@@ -134,13 +134,13 @@ Since $g(0)=0$, the quotient has a removable singularity at $0$, with value $g'(
 
 Step [](#s1-2){.pf-ref} gives
 $$
-|h(w)|\le1.
+\abs{h(w)}\le1.
 $$
 If equality held at some point of the disk, the maximum-modulus principle would force $h$ to be a unimodular constant. But
 $$
-|h(0)|
+\abs{h(0)}
 =
-|g'(0)|
+\abs{g'(0)}
 <1
 $$
 by step [](#s1-1){.pf-ref}. Therefore equality never occurs.
@@ -196,7 +196,7 @@ Thus induction proves the identity.
 
 The orbit satisfies
 $$
-|w_n|\le|w_0|
+\abs{w_n}\le\abs{w_0}
 $$
 for every $n$.
 
@@ -205,11 +205,11 @@ for every $n$.
 
 By step [](#s1-2){.pf-ref},
 $$
-|w_n|
+\abs{w_n}
 =
-|g(w_{n-1})|
+\abs{g(w_{n-1})}
 \le
-|w_{n-1}|.
+\abs{w_{n-1}}.
 $$
 Iteration gives the claim.
 
@@ -225,7 +225,7 @@ q<1
 $$
 such that
 $$
-|w_{n+1}|\le q|w_n|
+\abs{w_{n+1}}\le q\abs{w_n}
 $$
 for every $n$.
 
@@ -234,28 +234,28 @@ for every $n$.
 
 Let
 $$
-r=|w_0|<1.
+r=\abs{w_0}<1.
 $$
-By step [](#s1-3){.pf-ref}, the continuous function $|h|$ is strictly less than $1$ on the compact disk
+By step [](#s1-3){.pf-ref}, the continuous function $\abs{h}$ is strictly less than $1$ on the compact disk
 $$
-\{|w|\le r\}.
+\{\abs{w}\le r\}.
 $$
 Hence
 $$
 q
 \coloneqq
-\max_{|w|\le r}|h(w)|
+\max_{\abs{w}\le r}\abs{h(w)}
 <1.
 $$
 By step [](#s1-5){.pf-ref}, every $w_n$ lies in this disk. Thus
 $$
-|w_{n+1}|
+\abs{w_{n+1}}
 =
-|g(w_n)|
+\abs{g(w_n)}
 =
-|w_n||h(w_n)|
+\abs{w_n}\abs{h(w_n)}
 \le
-q|w_n|.
+q\abs{w_n}.
 $$
 
 :::
@@ -276,9 +276,9 @@ If $w_0=0$, then $w_n=0$ for every $n$ because $g(0)=0$.
 
 If $w_0\ne0$, step [](#s1-6){.pf-ref} gives
 $$
-|w_n|
+\abs{w_n}
 \le
-q^n|w_0|,
+q^n\abs{w_0},
 $$
 and
 $$

@@ -83,7 +83,7 @@ $$
 Define $G$ as the semidirect product $G = N \rtimes_\theta H = (\ZZ/p^2\ZZ) \rtimes_\theta (\ZZ/p\ZZ)$.
 The order of $G$ is:
 $$
-|G| = |N| \cdot |H| = p^2 \cdot p = p^3.
+\cardinality{G} = \cardinality{N} \cdot \cardinality{H} = p^2 \cdot p = p^3.
 $$
 Since $\theta$ is non-trivial ($1 + p \not\equiv 1 \pmod{p^2}$), $G$ is a non-abelian group of order $p^3$.
 :::

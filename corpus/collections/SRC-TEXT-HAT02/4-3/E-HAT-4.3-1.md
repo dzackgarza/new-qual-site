@@ -71,6 +71,6 @@ $$
 $$
 Naturality of the UCT exact sequence allows its pullback to land in the Ext term; the UCT splitting is not natural. Thus
 $$
-\boxed{f_*|_{\widetilde H_*}=0\text{ while }f^*|_{\widetilde H^*}\ne0.}
+\boxed{f_*\restrict_{\widetilde H_*}=0\text{ while }f^*\restrict_{\widetilde H^*}\ne0.}
 $$
 :::

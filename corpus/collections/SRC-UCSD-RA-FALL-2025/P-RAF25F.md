@@ -26,14 +26,14 @@ audit:
 ---
 
 ::: {.problem}
-Consider the Hilbert space $\ell^2(\NN)$ with the usual norm $\|f\|_2 = (\sum_{n \in \NN} |f(n)|^2)^{1/2}$.
+Consider the Hilbert space $\ell^2(\NN)$ with the usual norm $\norm{f}_2 = (\sum_{n \in \NN} \abs{f(n)}^2)^{1/2}$.
 
 (1) Prove that $\ell^2(\NN)$ is separable, i.e., contains a countable dense subset.
 
 (2) Let $S \subset \ell^2(\NN)$ be an uncountable set.
 Prove that $S$ contains a convergent sequence which consists of pairwise distinct elements of $S$.
 
-Hint: Use (1) to first prove that for every $\epsilon > 0$, there exists $\eta \in \ell^2(\NN)$ such that the set $\{\xi \in S : \|\xi - \eta\|_2 < \epsilon\}$ is uncountable.
+Hint: Use (1) to first prove that for every $\epsilon > 0$, there exists $\eta \in \ell^2(\NN)$ such that the set $\{\xi \in S : \norm{\xi - \eta}_2 < \epsilon\}$ is uncountable.
 :::
 
 ::: {.solution}
@@ -50,11 +50,11 @@ Let $D$ be the set of all finitely supported sequences whose real and imaginary 
 
 Fix $x=(x_n)\in\ell^2$ and $\varepsilon>0$. Choose $N$ so large that
 $$
-\sum_{n>N}|x_n|^2<\frac{\varepsilon^2}{4}.
+\sum_{n>N}\abs{x_n}^2<\frac{\varepsilon^2}{4}.
 $$
 Approximate each of the finitely many coordinates $x_1,\dots,x_N$ by complex rational numbers $q_1,\dots,q_N$ so closely that
 $$
-\sum_{n=1}^N|x_n-q_n|^2<\frac{\varepsilon^2}{4}.
+\sum_{n=1}^N\abs{x_n-q_n}^2<\frac{\varepsilon^2}{4}.
 $$
 Set
 $$
@@ -62,7 +62,7 @@ q=(q_1,\dots,q_N,0,0,\dots)\in D.
 $$
 Then
 $$
-\|x-q\|_2^2<\frac{\varepsilon^2}{2}<\varepsilon^2.
+\norm{x-q}_2^2<\frac{\varepsilon^2}{2}<\varepsilon^2.
 $$
 Thus $D$ is dense, and $\ell^2(\NN)$ is separable.
 
@@ -144,7 +144,7 @@ x_n\in S_n,
 $$
 so
 $$
-\|x_m-x_n\|_2
+\norm{x_m-x_n}_2
 \le\operatorname{diam}(S_n)
 \le2^{1-n}.
 $$

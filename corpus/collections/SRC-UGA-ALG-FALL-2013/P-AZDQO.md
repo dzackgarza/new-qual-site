@@ -95,7 +95,7 @@ Exactly $q^k$ elements of $G$ remain after removing those nonidentity elements.
 ::: pf-proof
 By step [](#nonidentity-elements-count){.pf-ref}, the number remaining is
 $$
-|G|-q^k(p-1)=pq^k-q^k(p-1)=q^k.
+\cardinality{G}-q^k(p-1)=pq^k-q^k(p-1)=q^k.
 $$
 The identity is among these remaining elements.
 :::
@@ -123,7 +123,7 @@ If $n_p=1$, use step [](#np-equals-one-not-simple){.pf-ref}. If $n_p=q^k$, then 
 :::
 
 ::: pf-step
-Now let $|G|=pq$ with $p\ne q$.
+Now let $\cardinality{G}=pq$ with $p\ne q$.
 Then $G$ is not simple.
 
 ::: pf-proof

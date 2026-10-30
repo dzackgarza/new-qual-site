@@ -44,7 +44,7 @@ Prove that $\lim_{n\to\infty}a_n$ exists and is finite.
 For every $\epsilon>0$, there exists $N$ such that for all
 $m>n\ge N$,
 $$
-\left|\sum_{j=n}^{m-1}b_j\right|<\epsilon.
+\abs{\sum_{j=n}^{m-1}b_j}<\epsilon.
 $$
 
 ::: pf-proof
@@ -88,7 +88,7 @@ a_m
 \le
 a_n+\sum_{j=n}^{m-1}b_j
 \le
-a_n+\left|\sum_{j=n}^{m-1}b_j\right|
+a_n+\abs{\sum_{j=n}^{m-1}b_j}
 <
 a_n+\epsilon.
 $$

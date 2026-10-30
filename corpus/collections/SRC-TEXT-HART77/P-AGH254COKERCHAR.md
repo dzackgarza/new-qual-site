@@ -23,14 +23,14 @@ audit:
 ---
 
 ::: {.problem}
-Show that a sheaf of $\OO_X$-modules $\mcf$ on a scheme $X$ is quasi-coherent if and only if every point of $X$ has a neighborhood $U$ such that $\mcf|_U$ is isomorphic to a cokernel of a morphism of free sheaves on $U$.
+Show that a sheaf of $\OO_X$-modules $\mcf$ on a scheme $X$ is quasi-coherent if and only if every point of $X$ has a neighborhood $U$ such that $\mcf\restrict_U$ is isomorphic to a cokernel of a morphism of free sheaves on $U$.
 
 If $X$ is noetherian, then $\mcf$ is coherent if and only if it is locally a cokernel of a morphism of free sheaves of finite rank.
 These properties were originally the definition of quasi-coherent and coherent sheaves.
 :::
 
 ::: {.solution}
-For an open set $U\subseteq X$, put $\OO_U=\OO_X|_U$.
+For an open set $U\subseteq X$, put $\OO_U=\OO_X\restrict_U$.
 For an index set $I$, write $A^{(I)}=\bigoplus_{i\in I}A$ and $\OO_U^{(I)}=\bigoplus_{i\in I}\OO_U$.
 On $U=\Spec A$, the associated-sheaf functor is exact and commutes with direct sums, so
 $$
@@ -46,7 +46,7 @@ A [[D-QNTZY|quasi-coherent]] sheaf has the required local presentation by free s
 
 ::: pf-proof
 
-For each $x\in X$, choose an affine neighborhood $U=\Spec A$ and an $A$-module $M$ with $\mcf|_U\cong\widetilde M$.
+For each $x\in X$, choose an affine neighborhood $U=\Spec A$ and an $A$-module $M$ with $\mcf\restrict_U\cong\widetilde M$.
 Choose a free module $A^{(J)}$ surjecting onto $M$, and a free module $A^{(I)}$ surjecting onto the kernel.
 This gives an exact sequence
 $$
@@ -55,9 +55,9 @@ $$
 Applying the associated-sheaf functor gives
 $$
 \OO_U^{(I)}\xrightarrow{\widetilde u}\OO_U^{(J)}
-\longrightarrow\mcf|_U\longrightarrow0.
+\longrightarrow\mcf\restrict_U\longrightarrow0.
 $$
-Thus $\mcf|_U$ is the asserted cokernel.
+Thus $\mcf\restrict_U$ is the asserted cokernel.
 
 :::
 
@@ -73,7 +73,7 @@ Fix $x\in X$ and an open neighborhood on which the given presentation exists.
 Shrink it to an affine neighborhood $U=\Spec A$ of $x$.
 Restriction is exact and commutes with direct sums, as can be checked on stalks, so there is still an exact sequence
 $$
-\OO_U^{(I)}\xrightarrow{v}\OO_U^{(J)}\longrightarrow\mcf|_U\longrightarrow0.
+\OO_U^{(I)}\xrightarrow{v}\OO_U^{(J)}\longrightarrow\mcf\restrict_U\longrightarrow0.
 $$
 By [[P-AGH253TILDEADJ]], the morphism $v$ corresponds to an $A$-linear map
 $$
@@ -81,7 +81,7 @@ u:A^{(I)}\longrightarrow\Gamma(U,\OO_U^{(J)})\cong A^{(J)}.
 $$
 Its associated-sheaf morphism is $v$, since both have this effect on global sections and the correspondence is injective.
 Set $M=\operatorname{coker}u$.
-Exactness of the associated-sheaf functor identifies $\widetilde M$ with the cokernel of $v$, hence with $\mcf|_U$.
+Exactness of the associated-sheaf functor identifies $\widetilde M$ with the cokernel of $v$, hence with $\mcf\restrict_U$.
 These affine neighborhoods give the defining local descriptions of a [[D-QNTZY|quasi-coherent]] sheaf.
 
 :::
@@ -95,7 +95,7 @@ On a noetherian scheme, [[D-QNTZY|coherence]] is equivalent to the existence of 
 ::: pf-proof
 
 Suppose first that $\mcf$ is [[D-QNTZY|coherent]].
-For each point choose an affine neighborhood $U=\Spec A$ with $\mcf|_U\cong\widetilde M$, where $M$ is finitely generated and $A$ is noetherian [@Har10a, Proposition II.5.4].
+For each point choose an affine neighborhood $U=\Spec A$ with $\mcf\restrict_U\cong\widetilde M$, where $M$ is finitely generated and $A$ is noetherian [@Har10a, Proposition II.5.4].
 Choose a surjection $A^n\to M$ with $n$ finite.
 Its kernel is finitely generated because it is a submodule of the noetherian module $A^n$.
 Choose finitely many generators of this kernel to obtain
@@ -106,7 +106,7 @@ with $m,n$ finite.
 The construction of step [](#s1){.pf-ref} gives the required finite-rank sheaf presentation.
 
 Conversely, shrink a given finite-rank presentation to an affine neighborhood $U=\Spec A$.
-Step [](#s2){.pf-ref} identifies $\mcf|_U$ with $\widetilde M$ for the cokernel $M$ of a map $A^m\to A^n$ with $m,n$ finite.
+Step [](#s2){.pf-ref} identifies $\mcf\restrict_U$ with $\widetilde M$ for the cokernel $M$ of a map $A^m\to A^n$ with $m,n$ finite.
 In particular, $M$ is finitely generated.
 Over the noetherian ring $A$, every kernel of a map $A^r\to M$ with $r$ finite is finitely generated, being a submodule of $A^r$.
 Thus $M$ is a [[D-QNTZY|coherent module]], and the affine local descriptions make $\mcf$ [[D-QNTZY|coherent]].

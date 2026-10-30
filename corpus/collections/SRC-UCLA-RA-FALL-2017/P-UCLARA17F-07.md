@@ -21,7 +21,7 @@ Problem 7. Prove that there exists a meromorphic function $f$ on $\CC$ with the 
 
 1. $f(z)=0$ if and only if $z\in\ZZ$;
 2. $f(z)=\infty$ if and only if $z-\frac13\in\ZZ$;
-3. $|f(x+iy)|\le1$ for all $x\in\RR$ and all $y\in\RR$ with $|y|\ge1$.
+3. $\abs{f(x+iy)}\le1$ for all $x\in\RR$ and all $y\in\RR$ with $\abs{y}\ge1$.
 :::
 
 ::: {.solution}
@@ -206,7 +206,7 @@ This is step [](#s1-6){.pf-ref}.
 One has
 $$
 \boxed{
-|\sin(\pi z)|^2
+\abs{\sin(\pi z)}^2
 =
 \sin^2(\pi x)
 +
@@ -226,7 +226,7 @@ i\cos a\,\sinh b,
 $$
 $$
 \begin{aligned}
-|\sin(a+ib)|^2
+\abs{\sin(a+ib)}^2
 &=
 \sin^2a\,\cosh^2b
 +
@@ -255,11 +255,11 @@ $$
 Likewise,
 $$
 \boxed{
-\left|
+\abs{
 \sin\!\left(
 \pi(z-\tfrac13)
 \right)
-\right|^2
+}^2
 =
 \sin^2\!\left(
 \pi(x-\tfrac13)
@@ -281,7 +281,7 @@ Apply step [](#s1-8){.pf-ref} with $x$ replaced by $x-\tfrac13$.
 
 The numerator satisfies
 $$
-|\sin(\pi z)|^2
+\abs{\sin(\pi z)}^2
 \le
 1+\sinh^2(\pi y).
 $$
@@ -303,11 +303,11 @@ apply step [](#s1-8){.pf-ref}.
 
 The denominator satisfies
 $$
-\left|
+\abs{
 \sin\!\left(
 \pi(z-\tfrac13)
 \right)
-\right|^2
+}^2
 \ge
 \sinh^2(\pi y).
 $$
@@ -325,10 +325,10 @@ The sine-squared term in step [](#s1-9){.pf-ref} is nonnegative.
 
 Therefore
 $$
-\left|
+\abs{
 \frac{\sin(\pi z)}
 {\sin\!\left(\pi(z-\tfrac13)\right)}
-\right|^2
+}^2
 \le
 1+\frac1{\sinh^2(\pi y)}.
 $$
@@ -346,11 +346,11 @@ Divide the upper bound in step [](#s1-10){.pf-ref} by the lower bound in step []
 
 Since
 $$
-|y|\ge1,
+\abs{y}\ge1,
 $$
 one has
 $$
-|\sinh(\pi y)|
+\abs{\sinh(\pi y)}
 \ge
 \sinh\pi.
 $$
@@ -358,7 +358,7 @@ $$
 
 ::: pf-proof
 
-The function $|\sinh t|$ is increasing in $|t|$ for $|t|\ge0$.
+The function $\abs{\sinh t}$ is increasing in $\abs{t}$ for $\abs{t}\ge0$.
 
 :::
 
@@ -399,10 +399,10 @@ divided by $\sinh^2\pi$.
 Therefore
 $$
 \boxed{
-\left|
+\abs{
 \frac{\sin(\pi z)}
 {\sin\!\left(\pi(z-\tfrac13)\right)}
-\right|
+}
 \le
 \coth\pi}.
 $$
@@ -421,11 +421,11 @@ Take nonnegative square roots in steps [](#s1-12){.pf-ref} through [](#s1-14){.p
 Multiplying by $\tanh\pi$,
 $$
 \boxed{
-|f(x+iy)|\le1}
+\abs{f(x+iy)}\le1}
 $$
 whenever
 $$
-|y|\ge1.
+\abs{y}\ge1.
 $$
 
 
@@ -433,13 +433,13 @@ $$
 
 By definition,
 $$
-|f(z)|
+\abs{f(z)}
 =
 \tanh\pi
-\left|
+\abs{
 \frac{\sin(\pi z)}
 {\sin\!\left(\pi(z-\tfrac13)\right)}
-\right|.
+}.
 $$
 Use step [](#s1-15){.pf-ref} and
 $$

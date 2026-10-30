@@ -31,7 +31,7 @@ The James--Bott--Samelson theorem gives
 $$
 H_*(\Omega S^n;\ZZ)
 \cong T(t_d),
-\qquad |t_d|=d,
+\qquad \gradeddegree{t_d}=d,
 $$
 as a graded algebra under the Pontryagin product.
 
@@ -67,7 +67,7 @@ The tensor algebra on one generator has basis
 $$
 1,t,t^2,t^3,\ldots,
 $$
-with $|t^j|=jd$. Thus it has rank one exactly in the displayed degrees.
+with $\gradeddegree{t^j}=jd$. Thus it has rank one exactly in the displayed degrees.
 
 :::
 
@@ -146,7 +146,7 @@ where $b$ corresponds to the dual of $t^2$.
 
 ::: pf-proof
 
-For odd $d$, the basic degree-$d$ class $a=x_1$ satisfies $a^2=0$ by graded commutativity and torsion-freeness. The even tensor powers $t^{2j}$ define classes $\gamma_j(b)=x_{2j}$ of degree $2jd$, and their shuffle coefficients are the ordinary divided-power coefficients after grouping the odd generators in pairs. The odd-index classes are $a\gamma_j(b)=x_{2j+1}$. Thus the graded group from step [](#s1-2){.pf-ref} and the signed shuffle multiplication of step [](#s1-3){.pf-ref} are exactly the tensor product $\Lambda(a)\otimes\Gamma(b)$, with $|a|=d=2m-1$ and $|b|=2d=4m-2$.
+For odd $d$, the basic degree-$d$ class $a=x_1$ satisfies $a^2=0$ by graded commutativity and torsion-freeness. The even tensor powers $t^{2j}$ define classes $\gamma_j(b)=x_{2j}$ of degree $2jd$, and their shuffle coefficients are the ordinary divided-power coefficients after grouping the odd generators in pairs. The odd-index classes are $a\gamma_j(b)=x_{2j+1}$. Thus the graded group from step [](#s1-2){.pf-ref} and the signed shuffle multiplication of step [](#s1-3){.pf-ref} are exactly the tensor product $\Lambda(a)\otimes\Gamma(b)$, with $\gradeddegree{a}=d=2m-1$ and $\gradeddegree{b}=2d=4m-2$.
 
 :::
 

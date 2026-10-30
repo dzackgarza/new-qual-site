@@ -44,7 +44,7 @@ to be a common multiple of the orders of all vertex and edge groups.
 
 Over each vertex space $K(G_v,1)$ take
 $$
-\frac{N}{|G_v|}
+\frac{N}{\cardinality{G_v}}
 $$
 disjoint copies of its universal cover
 $$
@@ -54,10 +54,10 @@ The resulting map over the vertex space has total degree $N$.
 
 ::: pf-proof
 
-Each universal cover has degree $|G_v|$ because its deck group is the finite group $G_v$.
+Each universal cover has degree $\cardinality{G_v}$ because its deck group is the finite group $G_v$.
 Hence
 $$
-\frac{N}{|G_v|}\cdot |G_v|=N.
+\frac{N}{\cardinality{G_v}}\cdot \cardinality{G_v}=N.
 $$
 
 :::
@@ -68,7 +68,7 @@ $$
 
 Over each edge mapping cylinder take
 $$
-\frac{N}{|G_e|}
+\frac{N}{\cardinality{G_e}}
 $$
 copies of the universal lifted edge cylinder
 $$
@@ -77,7 +77,7 @@ $$
 
 ::: pf-proof
 
-The edge classifying space $K(G_e,1)$ has universal cover $E G_e$ of degree $|G_e|$.
+The edge classifying space $K(G_e,1)$ has universal cover $E G_e$ of degree $\cardinality{G_e}$.
 Thus the displayed number of copies again gives total degree $N$ over the interior of the edge cylinder.
 
 :::
@@ -108,13 +108,13 @@ $$
 [G_v:G_e]
 $$
 disjoint copies of $E G_e$.
-Across the $N/|G_v|$ chosen copies of $E G_v$, the total number of such boundary copies is therefore
+Across the $N/\cardinality{G_v}$ chosen copies of $E G_v$, the total number of such boundary copies is therefore
 $$
-\frac{N}{|G_v|}[G_v:G_e]
+\frac{N}{\cardinality{G_v}}[G_v:G_e]
 =
-\frac{N}{|G_v|}\frac{|G_v|}{|G_e|}
+\frac{N}{\cardinality{G_v}}\frac{\cardinality{G_v}}{\cardinality{G_e}}
 =
-\frac{N}{|G_e|},
+\frac{N}{\cardinality{G_e}},
 $$
 exactly the number of lifted edge cylinders from step [](#s2){.pf-ref}.
 Hence the boundary copies can be paired and glued.

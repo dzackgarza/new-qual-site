@@ -114,7 +114,7 @@ $$
 \rho\colon S\longrightarrow
 \Hom(C,C)\oplus\Hom(U,A)\oplus\Hom(W,B),
 \qquad
-\rho(f)=(f|_C,f|_U,f|_W).
+\rho(f)=(f\restrict_C,f\restrict_U,f\restrict_W).
 $$
 
 ::: pf-proof

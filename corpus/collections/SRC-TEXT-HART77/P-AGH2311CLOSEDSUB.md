@@ -241,7 +241,7 @@ Then $\mathcal I$ is a quasi-coherent ideal sheaf.
 ::: pf-proof
 The family is nonempty because $X$ itself is a closed subscheme of $X$, corresponding to the zero ideal sheaf.
 
-On an affine open $U=\Spec A\subseteq X$, each restriction $\mathcal I_\lambda|_U$ corresponds to an ideal $I_\lambda\subseteq A$.  Their sheaf-theoretic sum restricts to the sheaf associated to
+On an affine open $U=\Spec A\subseteq X$, each restriction $\mathcal I_\lambda\restrict_U$ corresponds to an ideal $I_\lambda\subseteq A$.  Their sheaf-theoretic sum restricts to the sheaf associated to
 $$
 \sum_\lambda I_\lambda\subseteq A,
 $$
@@ -318,7 +318,7 @@ the point $f(z)$ lies in $T\cap U$, so the germ of $f^*a$ at $z$ maps to zero in
 
 On an affine open $W=\Spec C\subseteq f^{-1}(U)$, the section $f^*a$ corresponds to an element $c\in C$ lying in every prime ideal of $C$.  Hence $c$ is nilpotent.  Since $Z$ is reduced, $C$ is reduced, so $c=0$.
 
-Thus the ring map $A\to\Gamma(W,\mathcal O_Z)$ kills $J$ on every affine $W$, and $f|_{f^{-1}(U)}$ factors through $\Spec(A/J)$.  These local factorizations glue.
+Thus the ring map $A\to\Gamma(W,\mathcal O_Z)$ kills $J$ on every affine $W$, and $f\restrict_{f^{-1}(U)}$ factors through $\Spec(A/J)$.  These local factorizations glue.
 :::
 
 :::
@@ -329,11 +329,11 @@ The reduced induced subscheme $T_{\mathrm{red}}$ is contained in every closed su
 ::: pf-proof
 If $f$ factors through $Y'$, then
 $$
-f(Z)\subseteq|Y'|.
+f(Z)\subseteq\underlyingspace{Y'}.
 $$
-Since $|Y'|$ is closed,
+Since $\underlyingspace{Y'}$ is closed,
 $$
-T=\overline{f(Z)}\subseteq|Y'|.
+T=\overline{f(Z)}\subseteq\underlyingspace{Y'}.
 $$
 
 Affine-locally, write

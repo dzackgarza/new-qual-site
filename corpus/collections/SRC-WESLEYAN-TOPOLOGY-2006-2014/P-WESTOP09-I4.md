@@ -11,11 +11,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $I=[0,1]$, let $C(X,I)$ be the set of continuous functions from $X$ to $I$, and let $\mathfrak c=|I|$.
+Let $I=[0,1]$, let $C(X,I)$ be the set of continuous functions from $X$ to $I$, and let $\mathfrak c=\cardinality{I}$.
 
-1. Prove that if $X\ne\varnothing$, then $|C(X,I)|\ge\mathfrak c$.
+1. Prove that if $X\ne\varnothing$, then $\cardinality{C(X,I)}\ge\mathfrak c$.
 2. Prove that the set of all functions $I\to I$ has cardinality strictly greater than $\mathfrak c$.
-3. Prove that $|C(I,I)|=\mathfrak c$. The source hints that continuity allows a function on $I$ to be determined by its values on a smaller subset.
+3. Prove that $\cardinality{C(I,I)}=\mathfrak c$. The source hints that continuity allows a function on $I$ to be determined by its values on a smaller subset.
 :::
 
 ::: {.solution}
@@ -26,7 +26,7 @@ Let $I=[0,1]$, let $C(X,I)$ be the set of continuous functions from $X$ to $I$, 
 
 If $X\ne\varnothing$, then
 $$
-\boxed{|C(X,I)|\ge\mathfrak c}.
+\boxed{\cardinality{C(X,I)}\ge\mathfrak c}.
 $$
 
 
@@ -63,7 +63,7 @@ $$
 $$
 is also a function $I\to I$. Hence
 $$
-|I^I|\ge|\{0,1\}^I|=2^{|I|}=2^{\mathfrak c}.
+\cardinality{I^I}\ge\cardinality{\{0,1\}^I}=2^{\cardinality{I}}=2^{\mathfrak c}.
 $$
 Cantor's theorem gives
 $$
@@ -71,7 +71,7 @@ $$
 $$
 Therefore
 $$
-\boxed{|I^I|>\mathfrak c}.
+\boxed{\cardinality{I^I}>\mathfrak c}.
 $$
 
 :::
@@ -106,7 +106,7 @@ Thus $f=g$.
 
 One has
 $$
-|C(I,I)|\le\mathfrak c.
+\cardinality{C(I,I)}\le\mathfrak c.
 $$
 
 
@@ -118,14 +118,14 @@ C(I,I)\hookrightarrow I^Q.
 $$
 Since $Q$ is countable,
 $$
-|I^Q|
+\cardinality{I^Q}
 =\mathfrak c^{\aleph_0}
 =(2^{\aleph_0})^{\aleph_0}
 =2^{\aleph_0\cdot\aleph_0}
 =2^{\aleph_0}
 =\mathfrak c.
 $$
-Hence $|C(I,I)|\le\mathfrak c$.
+Hence $\cardinality{C(I,I)}\le\mathfrak c$.
 
 :::
 
@@ -135,14 +135,14 @@ Hence $|C(I,I)|\le\mathfrak c$.
 
 Therefore
 $$
-\boxed{|C(I,I)|=\mathfrak c}.
+\boxed{\cardinality{C(I,I)}=\mathfrak c}.
 $$
 
 
 ::: pf-proof
 
 Applying step [](#s1-1){.pf-ref} with $X=I$ gives
-$|C(I,I)|\ge\mathfrak c$, while step [](#s1-4){.pf-ref} gives the reverse inequality.
+$\cardinality{C(I,I)}\ge\mathfrak c$, while step [](#s1-4){.pf-ref} gives the reverse inequality.
 
 :::
 

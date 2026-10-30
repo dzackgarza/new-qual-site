@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Suppose $p < q$ are odd primes and $G$ is a group of order $2pq$.
-Prove that $G$ has two normal subgroups $N_1 \subseteq N_2$ such that $|N_2| = pq$ and $|N_1| = q$.
+Prove that $G$ has two normal subgroups $N_1 \subseteq N_2$ such that $\cardinality{N_2} = pq$ and $\cardinality{N_1} = q$.
 :::
 
 ::: {.solution}
@@ -66,7 +66,7 @@ The subgroup $N_2=\ker\varepsilon$ is normal in $G$ and has order $pq$.
 ::: pf-proof
 
 A kernel is normal, and surjectivity in step [](#s1){.pf-ref} gives $[G:N_2]=2$.
-Hence $|N_2|=|G|/2=pq$.
+Hence $\cardinality{N_2}=\cardinality{G}/2=pq$.
 
 :::
 

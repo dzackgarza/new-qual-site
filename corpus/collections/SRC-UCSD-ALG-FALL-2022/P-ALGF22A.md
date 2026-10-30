@@ -78,7 +78,7 @@ $$
 $$
 Therefore
 $$
-|N_G(P)|=\frac{168}{8}=21.
+\cardinality{N_G(P)}=\frac{168}{8}=21.
 $$
 
 :::
@@ -157,7 +157,7 @@ G\hookrightarrow S_4
 $$
 would imply
 $$
-168=|G|\le|S_4|=24,
+168=\cardinality{G}\le\cardinality{S_4}=24,
 $$
 a contradiction.
 Therefore no subgroup of order $42$ exists.

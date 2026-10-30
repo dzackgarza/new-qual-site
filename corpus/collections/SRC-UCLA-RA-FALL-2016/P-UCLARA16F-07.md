@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $H$ be the space of holomorphic functions $f$ on the unit disk $D=\{z\in\CC:|z|<1\}$ such that
+Let $H$ be the space of holomorphic functions $f$ on the unit disk $D=\{z\in\CC:\abs{z}<1\}$ such that
 $$
-\int_D |f(z)|^2\,dA(z)<\infty.
+\int_D \abs{f(z)}^2\,dA(z)<\infty.
 $$
 Here integration is with respect to Lebesgue measure $A$ on $D$.
 The vector space $H$ is a Hilbert space if equipped with the inner product
@@ -48,7 +48,7 @@ z_0\in D.
 $$
 Choose
 $$
-r=\frac{1-|z_0|}{2}>0.
+r=\frac{1-\abs{z_0}}{2}>0.
 $$
 Then
 $$
@@ -61,17 +61,17 @@ $$
 
 For every $f\in H$,
 $$
-|f(z_0)|^2
+\abs{f(z_0)}^2
 \le
 \frac1{\pi r^2}
 \int_{D(z_0,r)}
-|f(z)|^2\,dA(z).
+\abs{f(z)}^2\,dA(z).
 $$
 
 
 ::: pf-proof
 
-The function $|f|^2$ is subharmonic. Apply the subharmonic mean-value inequality on the disk $D(z_0,r)$.
+The function $\abs{f}^2$ is subharmonic. Apply the subharmonic mean-value inequality on the disk $D(z_0,r)$.
 
 :::
 
@@ -81,10 +81,10 @@ The function $|f|^2$ is subharmonic. Apply the subharmonic mean-value inequality
 
 Therefore
 $$
-|f(z_0)|^2
+\abs{f(z_0)}^2
 \le
 \frac1{\pi r^2}
-\|f\|_H^2.
+\norm{f}_H^2.
 $$
 
 
@@ -101,10 +101,10 @@ The integral over $D(z_0,r)$ is bounded above by the integral over the whole uni
 Hence
 $$
 \boxed{
-|L_{z_0}(f)|
+\abs{L_{z_0}(f)}
 \le
 \frac1{\sqrt\pi\,r}\,
-\|f\|_H}.
+\norm{f}_H}.
 $$
 
 
@@ -204,7 +204,7 @@ $$
 $$
 if $n\ne m$, while for $n=m$,
 $$
-\int_D|z|^{2n}\,dA
+\int_D\abs{z}^{2n}\,dA
 =
 2\pi\int_0^1r^{2n+1}\,dr
 =
@@ -220,26 +220,26 @@ $$
 Consequently,
 $$
 \boxed{
-\|f\|_H^2
+\norm{f}_H^2
 =
 \pi
 \sum_{n=0}^{\infty}
-\frac{|a_n|^2}{n+1}}.
+\frac{\abs{a_n}^2}{n+1}}.
 $$
 
 
 ::: pf-proof
 
-For $0<\rho<1$, uniform convergence of the Taylor series on $|z|\le\rho$ and step [](#s1-7){.pf-ref} give
+For $0<\rho<1$, uniform convergence of the Taylor series on $\abs{z}\le\rho$ and step [](#s1-7){.pf-ref} give
 $$
-\int_{|z|<\rho}|f(z)|^2\,dA
+\int_{\abs{z}<\rho}\abs{f(z)}^2\,dA
 =
 \pi
 \sum_{n=0}^{\infty}
-\frac{|a_n|^2}{n+1}
+\frac{\abs{a_n}^2}{n+1}
 \rho^{2n+2}.
 $$
-Let $\rho\uparrow1$. The left-hand side increases to $\|f\|_H^2$, while the right-hand side increases termwise to the displayed series. Apply monotone convergence to the nonnegative sums.
+Let $\rho\uparrow1$. The left-hand side increases to $\norm{f}_H^2$, while the right-hand side increases termwise to the displayed series. Apply monotone convergence to the nonnegative sums.
 
 :::
 
@@ -262,7 +262,7 @@ $$
 
 For
 $$
-|w|<1,
+\abs{w}<1,
 $$
 differentiate the geometric series:
 $$
@@ -280,7 +280,7 @@ Set
 $$
 w=\overline{z_0}z.
 $$
-Since $|z_0|<1$ and $|z|<1$, one has $|w|<1$.
+Since $\abs{z_0}<1$ and $\abs{z}<1$, one has $\abs{w}<1$.
 
 :::
 
@@ -302,23 +302,23 @@ $$
 Using step [](#s1-8){.pf-ref},
 $$
 \begin{aligned}
-\|g_{z_0}\|_H^2
+\norm{g_{z_0}}_H^2
 &=
 \pi
 \sum_{n=0}^{\infty}
-\frac{|b_n|^2}{n+1}\\
+\frac{\abs{b_n}^2}{n+1}\\
 &=
 \frac1\pi
 \sum_{n=0}^{\infty}
-(n+1)|z_0|^{2n}.
+(n+1)\abs{z_0}^{2n}.
 \end{aligned}
 $$
-Since $|z_0|<1$,
+Since $\abs{z_0}<1$,
 $$
 \sum_{n=0}^{\infty}
-(n+1)|z_0|^{2n}
+(n+1)\abs{z_0}^{2n}
 =
-\frac1{(1-|z_0|^2)^2}
+\frac1{(1-\abs{z_0}^2)^2}
 <
 \infty.
 $$

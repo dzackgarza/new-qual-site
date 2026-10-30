@@ -144,9 +144,9 @@ H^t(K(\ZZ,2);\ZZ)
 $$
 where
 $$
-|u_3|=3,
+\gradeddegree{u_3}=3,
 \qquad
-|c_2|=2.
+\gradeddegree{c_2}=2.
 $$
 
 
@@ -164,7 +164,7 @@ $$
 H^*(K(\ZZ,2);\ZZ)
 \cong
 \ZZ[c_2],
-\qquad |c_2|=2.
+\qquad \gradeddegree{c_2}=2.
 $$
 Finally,
 $$
@@ -227,7 +227,7 @@ $$
 
 ::: pf-proof
 
-The Serre differential is a graded derivation. Since $|c_2|$ is even,
+The Serre differential is a graded derivation. Since $\gradeddegree{c_2}$ is even,
 $$
 \begin{aligned}
 d_3(c_2^m)

@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Show that the punctured unit disk $\{z:0<|z|<1\}$ and the annulus $\{z:1<|z|<2\}$ cannot be conformally equivalent.
+Show that the punctured unit disk $\{z:0<\abs{z}<1\}$ and the annulus $\{z:1<\abs{z}<2\}$ cannot be conformally equivalent.
 :::
 
 ::: {.solution}
-Write $D=\{z:|z|<1\}$ and $A=\{w:1<|w|<2\}$.
+Write $D=\{z:\abs{z}<1\}$ and $A=\{w:1<\abs{w}<2\}$.
 Suppose there were a biholomorphism $f:D\setminus\{0\}\to A$
 with holomorphic inverse $g:A\to D\setminus\{0\}$.
 
@@ -41,19 +41,19 @@ The map $f$ extends holomorphically to $D$, with its value at zero in $A$.
 
 ::: pf-proof
 
-The bound $|f|<2$ makes the singularity at zero removable
+The bound $\abs{f}<2$ makes the singularity at zero removable
 [@SS03]. Denote the extension by $F$. Continuity gives
-$1\leq|F(0)|\leq2$. The extension is nonconstant since
+$1\leq\abs{F(0)}\leq2$. The extension is nonconstant since
 its restriction $f$ is bijective onto $A$.
 
-If $|F(0)|=2$, the holomorphic function $F$ attains
+If $\abs{F(0)}=2$, the holomorphic function $F$ attains
 its maximum modulus at an interior point, so it is
 constant by the maximum modulus principle, a contradiction.
-If $|F(0)|=1$, then $F$ is nonzero on $D$, and
+If $\abs{F(0)}=1$, then $F$ is nonzero on $D$, and
 $1/F$ is holomorphic with modulus at most one and with
 modulus one at zero. The same principle makes $1/F$,
 and hence $F$, constant, again a contradiction [@SS03].
-Thus $1<|F(0)|<2$, so $F(0)\in A$.
+Thus $1<\abs{F(0)}<2$, so $F(0)\in A$.
 
 :::
 

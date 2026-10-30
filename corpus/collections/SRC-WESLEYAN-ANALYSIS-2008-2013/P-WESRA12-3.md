@@ -39,7 +39,7 @@ Let $V$ be a real vector space.
 
 A **norm** on $V$ is a function
 $$
-\|\cdot\|:V\to[0,\infty)
+\norm{\cdot}:V\to[0,\infty)
 $$
 such that for all
 $$
@@ -51,19 +51,19 @@ a\in\RR,
 $$
 
 1. $$
-   \|x\|=0
+   \norm{x}=0
    \quad\Longleftrightarrow\quad
    x=0;
    $$
 2. $$
-   \|ax\|
+   \norm{ax}
    =
-   |a|\,\|x\|;
+   \abs{a}\,\norm{x};
    $$
 3. $$
-   \|x+y\|
+   \norm{x+y}
    \le
-   \|x\|+\|y\|.
+   \norm{x}+\norm{y}.
    $$
 
 
@@ -83,7 +83,7 @@ $$
 \boxed{
 d(x,y)
 \coloneqq
-\|x-y\|.
+\norm{x-y}.
 }
 $$
 
@@ -131,7 +131,7 @@ By positive definiteness,
 $$
 d(x,y)=0
 \Longleftrightarrow
-\|x-y\|=0
+\norm{x-y}=0
 \Longleftrightarrow
 x-y=0
 \Longleftrightarrow
@@ -157,11 +157,11 @@ $$
 \begin{aligned}
 d(y,x)
 &=
-\|y-x\|\\
+\norm{y-x}\\
 &=
-\|-(x-y)\|\\
+\norm{-(x-y)}\\
 &=
-|-1|\,\|x-y\|\\
+\abs{-1}\,\norm{x-y}\\
 &=
 d(x,y).
 \end{aligned}
@@ -194,11 +194,11 @@ $$
 \begin{aligned}
 d(x,z)
 &=
-\|x-z\|\\
+\norm{x-z}\\
 &\le
-\|x-y\|
+\norm{x-y}
 +
-\|y-z\|\\
+\norm{y-z}\\
 &=
 d(x,y)+d(y,z).
 \end{aligned}
@@ -212,7 +212,7 @@ $$
 
 Therefore
 $$
-d(x,y)=\|x-y\|
+d(x,y)=\norm{x-y}
 $$
 is a metric.
 
@@ -249,11 +249,11 @@ $$
 be the vector space of real sequences with finite support, equipped with the
 norm
 $$
-\|x\|_2
+\norm{x}_2
 =
 \left(
 \sum_{n=1}^{\infty}
-|x_n|^2
+\abs{x_n}^2
 \right)^{1/2}.
 $$
 Then
@@ -296,7 +296,7 @@ $$
 n>m,
 $$
 $$
-\|x^{(n)}-x^{(m)}\|_2^2
+\norm{x^{(n)}-x^{(m)}}_2^2
 =
 \sum_{k=m+1}^{n}
 \frac1{k^2}.
@@ -373,7 +373,7 @@ be a family of continuous linear maps.
 Assume the family is pointwise bounded:
 $$
 \sup_{T\in\mathcal F}
-\|Tx\|
+\norm{Tx}
 <
 \infty
 \qquad
@@ -383,7 +383,7 @@ Then
 $$
 \boxed{
 \sup_{T\in\mathcal F}
-\|T\|
+\norm{T}
 <
 \infty.
 }

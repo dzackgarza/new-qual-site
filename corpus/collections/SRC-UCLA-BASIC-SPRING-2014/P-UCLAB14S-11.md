@@ -21,11 +21,11 @@ Problem 11. Let $F$ be a set of continuous real-valued functions on $[0,1]$.
 Assume that every sequence from $F$ has a subsequence that converges uniformly on $[0,1]$.
 Prove both of the following:
 
-(i) $F$ is uniformly bounded: there is $M<\infty$ such that $|f(x)|\leq M$ for all $f\in F$ and all $x\in[0,1]$;
+(i) $F$ is uniformly bounded: there is $M<\infty$ such that $\abs{f(x)}\leq M$ for all $f\in F$ and all $x\in[0,1]$;
 
 (ii) $F$ is equicontinuous: for every $\varepsilon>0$ there is $\delta>0$ such that for all $f\in F$ and $x,y\in[0,1]$,
 $$
-|x-y|<\delta\implies |f(x)-f(y)|<\varepsilon.
+\abs{x-y}<\delta\implies \abs{f(x)-f(y)}<\varepsilon.
 $$
 :::
 
@@ -42,13 +42,13 @@ f_n\in F,
 $$
 such that
 $$
-|f_n(x_n)|>n.
+\abs{f_n(x_n)}>n.
 $$
 
 
 ::: pf-proof
 
-This is exactly the negation of the existence of a common finite bound for all values $|f(x)|$ with $f\in F$ and $x\in[0,1]$.
+This is exactly the negation of the existence of a common finite bound for all values $\abs{f(x)}$ with $f\in F$ and $x\in[0,1]$.
 
 :::
 
@@ -63,15 +63,15 @@ The sequence $(f_n)$ cannot have a uniformly convergent subsequence.
 
 If $f_{n_j}\to f$ uniformly, then for all sufficiently large $j$,
 $$
-\|f_{n_j}-f\|_\infty<1.
+\norm{f_{n_j}-f}_\infty<1.
 $$
-Since the continuous function $f$ is bounded on $[0,1]$, say $\|f\|_\infty=C$, this would imply
+Since the continuous function $f$ is bounded on $[0,1]$, say $\norm{f}_\infty=C$, this would imply
 $$
-\|f_{n_j}\|_\infty\leq C+1.
+\norm{f_{n_j}}_\infty\leq C+1.
 $$
 But step [](#s1-1){.pf-ref} gives
 $$
-\|f_{n_j}\|_\infty\geq|f_{n_j}(x_{n_j})|>n_j\to\infty,
+\norm{f_{n_j}}_\infty\geq\abs{f_{n_j}(x_{n_j})}>n_j\to\infty,
 $$
 a contradiction.
 
@@ -96,17 +96,17 @@ The hypothesis says every sequence in $F$ has a uniformly convergent subsequence
 
 Suppose next that $F$ is not equicontinuous. Then there exist $\varepsilon_0>0$, functions $f_n\in F$, and points $x_n,y_n\in[0,1]$ such that
 $$
-|x_n-y_n|<\frac1n
+\abs{x_n-y_n}<\frac1n
 $$
 but
 $$
-|f_n(x_n)-f_n(y_n)|\geq\varepsilon_0.
+\abs{f_n(x_n)-f_n(y_n)}\geq\varepsilon_0.
 $$
 
 
 ::: pf-proof
 
-Negating equicontinuity gives an $\varepsilon_0>0$ such that for every $\delta>0$ there are $f\in F$ and $x,y$ with $|x-y|<\delta$ but $|f(x)-f(y)|\geq\varepsilon_0$. Apply this with $\delta=1/n$.
+Negating equicontinuity gives an $\varepsilon_0>0$ such that for every $\delta>0$ there are $f\in F$ and $x,y$ with $\abs{x-y}<\delta$ but $\abs{f(x)-f(y)}\geq\varepsilon_0$. Apply this with $\delta=1/n$.
 
 :::
 
@@ -129,9 +129,9 @@ This is the assumed sequential compactness property applied to the sequence cons
 
 Since $[0,1]$ is compact, $f$ is uniformly continuous. Hence there exists $\delta>0$ such that
 $$
-|x-y|<\delta
+\abs{x-y}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(y)|<\varepsilon_0/3.
+\abs{f(x)-f(y)}<\varepsilon_0/3.
 $$
 
 
@@ -147,7 +147,7 @@ This is the Heine--Cantor theorem applied to the continuous function $f$ on the 
 
 Choose $j$ sufficiently large that
 $$
-\|f_{n_j}-f\|_\infty<\varepsilon_0/3
+\norm{f_{n_j}-f}_\infty<\varepsilon_0/3
 $$
 and
 $$
@@ -155,7 +155,7 @@ $$
 $$
 Then
 $$
-|f_{n_j}(x_{n_j})-f_{n_j}(y_{n_j})|<\varepsilon_0.
+\abs{f_{n_j}(x_{n_j})-f_{n_j}(y_{n_j})}<\varepsilon_0.
 $$
 
 
@@ -164,10 +164,10 @@ $$
 Using step [](#s1-6){.pf-ref} and the triangle inequality,
 $$
 \begin{aligned}
-|f_{n_j}(x_{n_j})-f_{n_j}(y_{n_j})|
-&\leq |f_{n_j}(x_{n_j})-f(x_{n_j})|\\
-&\quad+|f(x_{n_j})-f(y_{n_j})|\\
-&\quad+|f(y_{n_j})-f_{n_j}(y_{n_j})|\\
+\abs{f_{n_j}(x_{n_j})-f_{n_j}(y_{n_j})}
+&\leq \abs{f_{n_j}(x_{n_j})-f(x_{n_j})}\\
+&\quad+\abs{f(x_{n_j})-f(y_{n_j})}\\
+&\quad+\abs{f(y_{n_j})-f_{n_j}(y_{n_j})}\\
 &<\varepsilon_0/3+\varepsilon_0/3+\varepsilon_0/3
 =\varepsilon_0.
 \end{aligned}

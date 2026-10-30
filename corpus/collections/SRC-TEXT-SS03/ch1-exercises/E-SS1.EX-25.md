@@ -35,7 +35,7 @@ for all integers $n .$ . Here $\gamma$ is any circle centered at the origin with
 
 (b) Same question as before, but with $\gamma$ any circle not containing the origin.
 
-(c) Show that if $\vert a \vert < r < \vert b \vert$ , then
+(c) Show that if $\abs{ a } < r < \abs{ b }$ , then
 
 $$
 \int_ {\gamma} \frac {1}{(z - a) (z - b)} d z = \frac {2 \pi i}{a - b},

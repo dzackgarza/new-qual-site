@@ -34,7 +34,7 @@ Show that, if $H$ is a proper subgroup of $G$, then $H$ is a proper subgroup of 
 
 ::: pf-step
 
-We argue by induction on \,$|G|$. The result is trivial for $|G|=p$.
+We argue by induction on \,$\cardinality{G}$. The result is trivial for $\cardinality{G}=p$.
 
 ::: pf-proof
 

@@ -44,7 +44,7 @@ A subspace $A\subseteq X$ is a deformation retract of $X$ if there is a retracti
 $$
 r:X\to A,
 \qquad
-r|_A=\operatorname{id}_A,
+r\restrict_A=\operatorname{id}_A,
 $$
 such that
 $$
@@ -141,11 +141,11 @@ Write a point of $S^3$ as
 $$
 (u,v)\in\RR^2\times\RR^2,
 \qquad
-\|u\|^2+\|v\|^2=1.
+\norm{u}^2+\norm{v}^2=1.
 $$
 Then
 $$
-C_0=\{(u,0):\|u\|=1\},
+C_0=\{(u,0):\norm{u}=1\},
 $$
 so on $M$ one has $v\ne0$.
 
@@ -157,7 +157,7 @@ by
 $$
 H((u,v),t)
 =
-\frac{((1-t)u,v)}{\sqrt{(1-t)^2\|u\|^2+\|v\|^2}}.
+\frac{((1-t)u,v)}{\sqrt{(1-t)^2\norm{u}^2+\norm{v}^2}}.
 $$
 The denominator is nonzero because $v\ne0$.
 The second coordinate remains a nonzero scalar multiple of $v$, so the image stays in $M$.
@@ -167,9 +167,9 @@ H((u,v),0)=(u,v).
 $$
 At $t=1$,
 $$
-H((u,v),1)=\left(0,\frac{v}{\|v\|}\right)\in D.
+H((u,v),1)=\left(0,\frac{v}{\norm{v}}\right)\in D.
 $$
-If $(u,v)\in D$, then $u=0$ and $\|v\|=1$, so
+If $(u,v)\in D$, then $u=0$ and $\norm{v}=1$, so
 $$
 H((0,v),t)=(0,v)
 $$

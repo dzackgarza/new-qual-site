@@ -78,7 +78,7 @@ If $n$ is odd, a minimal Sullivan model for $S^n$ is
 $$
 (\Lambda(x_n),d=0),
 \qquad
-|x_n|=n.
+\gradeddegree{x_n}=n.
 $$
 
 

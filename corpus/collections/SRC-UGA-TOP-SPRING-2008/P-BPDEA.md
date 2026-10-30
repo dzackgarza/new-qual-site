@@ -57,7 +57,7 @@ The domain $\RR$ is Hausdorff.
 
 The usual topology on $\RR$ is induced by the metric
 $$
-d(x,y)=|x-y|,
+d(x,y)=\abs{x-y},
 $$
 and every metric space is Hausdorff.
 

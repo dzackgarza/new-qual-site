@@ -38,11 +38,11 @@ Characters satisfy $\chi(g^{-1}) = \overline{\chi(g)}$ for all $g \in G$:
 ::: pf-proof
 
 ::: pf-step
-Let $n = \dim_\CC(V)$. The representation $\rho: G \to \operatorname{GL}(V)$ assigns to $g$ an operator $\rho(g)$ of finite order dividing $|G|$.
+Let $n = \dim_\CC(V)$. The representation $\rho: G \to \operatorname{GL}(V)$ assigns to $g$ an operator $\rho(g)$ of finite order dividing $\cardinality{G}$.
 :::
 
 ::: pf-step
-Hence $\rho(g)$ is diagonalizable with eigenvalues $\lambda_1, \dots, \lambda_n \in \CC$, each satisfying $\lambda_j^{|G|} = 1$, so $|\lambda_j| = 1$ and $\lambda_j^{-1} = \overline{\lambda_j}$ for all $j \in \{1, \dots, n\}$.
+Hence $\rho(g)$ is diagonalizable with eigenvalues $\lambda_1, \dots, \lambda_n \in \CC$, each satisfying $\lambda_j^{\cardinality{G}} = 1$, so $\abs{\lambda_j} = 1$ and $\lambda_j^{-1} = \overline{\lambda_j}$ for all $j \in \{1, \dots, n\}$.
 :::
 
 ::: pf-step

@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Consider $x_i'=F_i(x_1,\dots,x_n)$ with $F:\RR^n\to\RR^n$ of class $C^1$.
 
-(a) If $\langle DF(x)z,z\rangle\le0$ for all $x,z$, show that $\|U(t)-V(t)\|^2$ is decreasing for any two solutions $U,V$.
+(a) If $\langle DF(x)z,z\rangle\le0$ for all $x,z$, show that $\norm{U(t)-V(t)}^2$ is decreasing for any two solutions $U,V$.
 
-(b) If $W(t)$ is a solution for $t>0$ and $\langle DF(x)z,z\rangle\le-\|z\|^2$, show that $W(t)$ converges to some $C\in\RR^n$ as $t\to\infty$.
+(b) If $W(t)$ is a solution for $t>0$ and $\langle DF(x)z,z\rangle\le-\norm{z}^2$, show that $W(t)$ converges to some $C\in\RR^n$ as $t\to\infty$.
 :::
 
 ::: {.solution}
@@ -68,7 +68,7 @@ $$
 step [](#integral-representation){.pf-ref} gives
 $$
 \begin{aligned}
-\frac d{dt}\|Z\|^2
+\frac d{dt}\norm{Z}^2
 &=2\langle Z',Z\rangle\\
 &=2\int_0^1
 \left\langle DF(V+sZ)Z,Z\right\rangle ds.
@@ -80,9 +80,9 @@ $$
 $$
 for all $x,z$, every integrand is nonpositive. Hence
 $$
-\frac d{dt}\|U(t)-V(t)\|^2\le0.
+\frac d{dt}\norm{U(t)-V(t)}^2\le0.
 $$
-Thus $\|U(t)-V(t)\|^2$ is nonincreasing, proving part (a).
+Thus $\norm{U(t)-V(t)}^2$ is nonincreasing, proving part (a).
 :::
 
 :::
@@ -93,7 +93,7 @@ Under the stronger hypothesis, the velocity of a solution decays exponentially.
 ::: pf-proof
 Assume now
 $$
-\langle DF(x)z,z\rangle\le-\|z\|^2.
+\langle DF(x)z,z\rangle\le-\norm{z}^2.
 $$
 Because $F$ is $C^1$ and $W'=F(W)$, the solution $W$ is $C^2$ and
 $$
@@ -102,22 +102,22 @@ $$
 Therefore
 $$
 \begin{aligned}
-\frac d{dt}\|W'(t)\|^2
+\frac d{dt}\norm{W'(t)}^2
 &=2\langle W''(t),W'(t)\rangle\\
 &=2\left\langle DF(W(t))W'(t),W'(t)\right\rangle\\
-&\le-2\|W'(t)\|^2.
+&\le-2\norm{W'(t)}^2.
 \end{aligned}
 $$
 Fix $t_0>0$. Multiplying by $e^{2t}$, or integrating this differential
 inequality, gives
 $$
-\|W'(t)\|^2
-\le e^{-2(t-t_0)}\|W'(t_0)\|^2
+\norm{W'(t)}^2
+\le e^{-2(t-t_0)}\norm{W'(t_0)}^2
 $$
 for every $t\ge t_0$. Hence
 $$
-\|W'(t)\|
-\le e^{-(t-t_0)}\|W'(t_0)\|.
+\norm{W'(t)}
+\le e^{-(t-t_0)}\norm{W'(t_0)}.
 $$
 :::
 
@@ -130,10 +130,10 @@ The trajectory is Cauchy and therefore converges.
 If $s>t\ge t_0$, then step [](#velocity-decay){.pf-ref} yields
 $$
 \begin{aligned}
-\|W(s)-W(t)\|
-&\le\int_t^s\|W'(r)\|\,dr\\
-&\le\|W'(t_0)\|\int_t^s e^{-(r-t_0)}\,dr\\
-&\le\|W'(t_0)\|e^{-(t-t_0)}.
+\norm{W(s)-W(t)}
+&\le\int_t^s\norm{W'(r)}\,dr\\
+&\le\norm{W'(t_0)}\int_t^s e^{-(r-t_0)}\,dr\\
+&\le\norm{W'(t_0)}e^{-(t-t_0)}.
 \end{aligned}
 $$
 The final expression tends to $0$ as $t\to\infty$, independently of

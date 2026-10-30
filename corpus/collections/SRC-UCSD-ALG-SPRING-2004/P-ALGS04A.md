@@ -32,7 +32,7 @@ You may use the first two Sylow Theorems without proof.
 ::: {.solution}
 Let $\operatorname{Syl}_p(G)$ denote the set of Sylow $p$-subgroups of $G$, and write
 $$
-n_p:=|\operatorname{Syl}_p(G)|.
+n_p:=\cardinality{\operatorname{Syl}_p(G)}.
 $$
 Fix $P\in\operatorname{Syl}_p(G)$.
 
@@ -40,7 +40,7 @@ Fix $P\in\operatorname{Syl}_p(G)$.
 
 ::: {.pf-step #s1}
 
-The number $n_p$ divides $|G|$.
+The number $n_p$ divides $\cardinality{G}$.
 
 ::: pf-proof
 
@@ -50,7 +50,7 @@ The stabilizer of $P$ is its normalizer $N_G(P)$. Hence orbit-stabilizer gives
 $$
 n_p=[G:N_G(P)],
 $$
-which divides $|G|$.
+which divides $\cardinality{G}$.
 
 :::
 
@@ -68,7 +68,7 @@ But $Q$ is Sylow, so no larger $p$-subgroup can contain it; hence
 $$
 PQ=Q.
 $$
-Thus $P\le Q$. Since $|P|=|Q|$, we obtain $P=Q$.
+Thus $P\le Q$. Since $\cardinality{P}=\cardinality{Q}$, we obtain $P=Q$.
 
 :::
 

@@ -76,7 +76,7 @@ $$
 has four one-dimensional $\mathbf F_3$-subspaces, hence exactly four subgroups
 of order $3$.
 
-There are $27-|G[3]|=18$ elements of order $9$. Each cyclic subgroup of order
+There are $27-\cardinality{G[3]}=18$ elements of order $9$. Each cyclic subgroup of order
 $9$ has $\varphi(9)=6$ generators, so $G$ has exactly $18/6=3$ cyclic
 subgroups of order $9$. The subgroup $G[3]\cong C_3^2$ is one additional,
 noncyclic subgroup of order $9$. Thus there are four subgroups of order $9$.

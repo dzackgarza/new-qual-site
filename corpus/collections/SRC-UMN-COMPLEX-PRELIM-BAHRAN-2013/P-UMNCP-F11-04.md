@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on the right half-plane $\{z:\operatorname{Re}z>0\}$. Suppose $|f(z)|<1$ throughout the domain and $f(1)=0$. Find the largest possible value of $|f(2)|$.
+Let $f$ be holomorphic on the right half-plane $\{z:\operatorname{Re}z>0\}$. Suppose $\abs{f(z)}<1$ throughout the domain and $f(1)=0$. Find the largest possible value of $\abs{f(2)}$.
 :::
 
 ::: {.solution}
@@ -55,18 +55,18 @@ x>0,
 $$
 then
 $$
-|z+1|^2-|z-1|^2
+\abs{z+1}^2-\abs{z-1}^2
 =
 4x
 >0.
 $$
 Thus
 $$
-|z-1|<|z+1|,
+\abs{z-1}<\abs{z+1},
 $$
 so
 $$
-|\phi(z)|<1.
+\abs{\phi(z)}<1.
 $$
 
 The inverse Möbius transformation is
@@ -77,13 +77,13 @@ $$
 $$
 and for
 $$
-|w|<1
+\abs{w}<1
 $$
 one has
 $$
 \operatorname{Re}\phi^{-1}(w)
 =
-\frac{1-|w|^2}{|1-w|^2}
+\frac{1-\abs{w}^2}{\abs{1-w}^2}
 >0.
 $$
 Hence
@@ -125,7 +125,7 @@ $$
 $$
 sends the disk holomorphically into the right half-plane. Since
 $$
-|f|<1,
+\abs{f}<1,
 $$
 the composition maps the disk into itself. Also
 $$
@@ -147,7 +147,7 @@ $$
 
 Schwarz's lemma gives
 $$
-|g(w)|\le|w|
+\abs{g(w)}\le\abs{w}
 $$
 for every
 $$
@@ -191,7 +191,7 @@ $$
 Every admissible function satisfies
 $$
 \boxed{
-|f(2)|
+\abs{f(2)}
 \le
 \frac13}.
 $$
@@ -207,9 +207,9 @@ g(\phi(2)).
 $$
 Using steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} gives
 $$
-|f(2)|
+\abs{f(2)}
 \le
-|\phi(2)|
+\abs{\phi(2)}
 =
 \frac13.
 $$
@@ -239,7 +239,7 @@ f(1)=0.
 $$
 Step [](#s1-4){.pf-ref} gives
 $$
-|f(2)|
+\abs{f(2)}
 =
 \frac13.
 $$

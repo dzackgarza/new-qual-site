@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Evaluate
 $$
-\int_{|z|=1}\frac{\Log(z+e)}{z^2}\,dz.
+\int_{\abs{z}=1}\frac{\Log(z+e)}{z^2}\,dz.
 $$
 :::
 
@@ -46,13 +46,13 @@ $$
 
 If
 $$
-|z|\le1,
+\abs{z}\le1,
 $$
 then
 $$
 \operatorname{Re}(z+e)
 \ge
-e-|z|
+e-\abs{z}
 \ge
 e-1
 >
@@ -120,7 +120,7 @@ gives the stated value.
 
 By Cauchy's integral formula for derivatives,
 $$
-\int_{|z|=1}
+\int_{\abs{z}=1}
 \frac{h(z)}{z^2}
 \,dz
 =
@@ -135,7 +135,7 @@ $$
 h'(0)
 =
 \frac1{2\pi i}
-\int_{|z|=1}
+\int_{\abs{z}=1}
 \frac{h(z)}
 {(z-0)^2}
 \,dz.
@@ -151,7 +151,7 @@ Rearrange.
 Therefore
 $$
 \boxed{
-\int_{|z|=1}
+\int_{\abs{z}=1}
 \frac{\Log(z+e)}{z^2}
 \,dz
 =
@@ -190,12 +190,12 @@ $$
 The corresponding change in the integral is
 $$
 2\pi i k
-\int_{|z|=1}
+\int_{\abs{z}=1}
 \frac{dz}{z^2}.
 $$
 But
 $$
-\int_{|z|=1}
+\int_{\abs{z}=1}
 \frac{dz}{z^2}
 =
 0,

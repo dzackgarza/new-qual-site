@@ -72,8 +72,8 @@ Under the intersection-acyclicity hypothesis, $C^\bullet(\mathfrak U,\mcf)\to\op
 
 ::: pf-proof
 
-For every finite intersection $V$ of cover members, the restricted resolution $\mcf|_V\to I^\bullet|_V$ is exact and consists of flasque sheaves.
-It therefore computes $H^q(V,\mcf|_V)$ after applying $\Gamma(V,-)$ [@Har10a, Proposition III.2.5].
+For every finite intersection $V$ of cover members, the restricted resolution $\mcf\restrict_V\to I^\bullet\restrict_V$ is exact and consists of flasque sheaves.
+It therefore computes $H^q(V,\mcf\restrict_V)$ after applying $\Gamma(V,-)$ [@Har10a, Proposition III.2.5].
 For fixed $p$, the vertical complex $B^{p,\bullet}$ is the product of these section complexes over all the $(p+1)$-fold intersections.
 Products are exact in abelian groups: their kernels are computed componentwise, and a tuple of images has a tuple of preimages by choosing one in each component.
 Hence its cohomology is

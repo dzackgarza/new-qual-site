@@ -16,7 +16,7 @@ review: draft
 Let $G \subset \CC$ be open and connected, and let $h \in H(G)$.
 Suppose that $\{f_n(z)\} \subset H(G)$ is a sequence of analytic functions for which $\lim_{n \to \infty} f_n(z)$ exists (and is finite) for every $z \in G$.
 Put $f(z) := \lim_{n \to \infty} f_n(z)$.
-Suppose that $|f_n'(z)| \leq |h(z)|$ for all $z \in G$.
+Suppose that $\abs{f_n'(z)} \leq \abs{h(z)}$ for all $z \in G$.
 Prove that $f \in H(G)$.
 :::
 
@@ -27,24 +27,24 @@ $$
 $$
 Since $h$ is continuous, there is an $M<\infty$ such that
 $$
-|h(z)|\le M
+\abs{h(z)}\le M
 \qquad(z\in\overline{B(z_0,r)}).
 $$
 Thus
 $$
-|f_n'(z)|\le M
+\abs{f_n'(z)}\le M
 $$
 throughout this disk. Because line segments in the disk stay in the disk,
 $$
-|f_n(z)-f_n(w)|\le M|z-w|
+\abs{f_n(z)-f_n(w)}\le M\abs{z-w}
 \qquad(z,w\in\overline{B(z_0,r)}).
 $$
 So the family $(f_n)$ is equicontinuous there.
 
 Moreover $(f_n(z_0))$ converges, hence is bounded. Therefore
 $$
-|f_n(z)|
-\le |f_n(z_0)|+Mr
+\abs{f_n(z)}
+\le \abs{f_n(z_0)}+Mr
 $$
 shows that $(f_n)$ is uniformly bounded on the closed disk. By Montel's
 theorem, every subsequence has a further subsequence converging uniformly on

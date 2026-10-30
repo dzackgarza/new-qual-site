@@ -121,23 +121,23 @@ converges uniformly on compact subsets of $\DD$.
 
 ::: pf-proof
 
-Fix $0<r<1$. For $|z|\le r$ and every $n$,
+Fix $0<r<1$. For $\abs{z}\le r$ and every $n$,
 $$
-|z-\zeta_n|
+\abs{z-\zeta_n}
 \ge
-1-|z|
+1-\abs{z}
 \ge
 1-r.
 $$
 Hence
 $$
-\left|
+\abs{
 \frac{a_n}{z-\zeta_n}
-\right|
+}
 \le
-\frac{|a_n|}{1-r}.
+\frac{\abs{a_n}}{1-r}.
 $$
-Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergence on $|z|\le r$. Every compact subset of $\DD$ is contained in such a disk, so the convergence is locally uniform.
+Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergence on $\abs{z}\le r$. Every compact subset of $\DD$ is contained in such a disk, so the convergence is locally uniform.
 
 :::
 
@@ -155,7 +155,7 @@ $$
 z\longmapsto
 \frac{a_n}{z-\zeta_n}
 $$
-is holomorphic on $\DD$, because $|\zeta_n|=1$. By step [](#s1-3){.pf-ref}, the series converges uniformly on compact subsets. A locally uniform limit of holomorphic functions is holomorphic.
+is holomorphic on $\DD$, because $\abs{\zeta_n}=1$. By step [](#s1-3){.pf-ref}, the series converges uniformly on compact subsets. A locally uniform limit of holomorphic functions is holomorphic.
 
 :::
 
@@ -168,7 +168,7 @@ Let $\Omega$ be a domain properly containing $\DD$. Then $\Omega$ contains at le
 
 ::: pf-proof
 
-Because $\Omega$ properly contains $\DD$, it contains a point $w\notin\DD$. If $|w|=1$, openness of $\Omega$ gives a nearby point of modulus greater than $1$ that also lies in $\Omega$. Thus $\Omega$ contains a point outside the closed unit disk as well as points inside $\DD$.
+Because $\Omega$ properly contains $\DD$, it contains a point $w\notin\DD$. If $\abs{w}=1$, openness of $\Omega$ gives a nearby point of modulus greater than $1$ that also lies in $\Omega$. Thus $\Omega$ contains a point outside the closed unit disk as well as points inside $\DD$.
 
 Open connected subsets of $\CC$ are path connected, so a path in $\Omega$ from an interior point of $\DD$ to a point outside the closed unit disk must meet the unit circle. Thus $\Omega$ contains some point of $\partial\DD$.
 
@@ -244,10 +244,10 @@ The series is absolutely convergent for each fixed $r<1$ by step [](#s1-3){.pf-r
 
 For every $n\ne k$ and every $0<r<1$,
 $$
-\left|
+\abs{
 \frac{(r-1)\zeta_k}
 {r\zeta_k-\zeta_n}
-\right|
+}
 \le1,
 $$
 and for each fixed $n\ne k$ this quantity tends to $0$ as $r\uparrow1$.
@@ -255,11 +255,11 @@ and for each fixed $n\ne k$ this quantity tends to $0$ as $r\uparrow1$.
 
 ::: pf-proof
 
-Since $|\zeta_k|=|\zeta_n|=1$,
+Since $\abs{\zeta_k}=\abs{\zeta_n}=1$,
 $$
-|r\zeta_k-\zeta_n|
+\abs{r\zeta_k-\zeta_n}
 \ge
-\bigl||\zeta_n|-|r\zeta_k|\bigr|
+\abs{\abs{\zeta_n}-\abs{r\zeta_k}}
 =
 1-r.
 $$
@@ -289,17 +289,17 @@ $$
 
 By steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref},
 $$
-\left|
+\abs{
 a_n
 \frac{(r-1)\zeta_k}
 {r\zeta_k-\zeta_n}
-\right|
+}
 \le
-|a_n|
+\abs{a_n}
 \qquad
 (n\ne k).
 $$
-The sequence $(|a_n|)$ is summable, and each summand tends to $0$ for fixed $n\ne k$. Dominated convergence for series therefore gives
+The sequence $(\abs{a_n})$ is summable, and each summand tends to $0$ for fixed $n\ne k$. Dominated convergence for series therefore gives
 $$
 \sum_{n\ne k}
 a_n

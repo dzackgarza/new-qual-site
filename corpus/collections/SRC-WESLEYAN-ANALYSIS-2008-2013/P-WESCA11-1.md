@@ -96,14 +96,14 @@ Divide the second equation in step [](#s1-2){.pf-ref} by $2$.
 
 The modulus of $2-4i$ is
 $$
-\boxed{|2-4i|=2\sqrt5}.
+\boxed{\abs{2-4i}=2\sqrt5}.
 $$
 
 
 ::: pf-proof
 
 $$
-|2-4i|
+\abs{2-4i}
 =
 \sqrt{2^2+(-4)^2}
 =
@@ -120,7 +120,7 @@ $$
 
 Since
 $$
-|w|^2=|w^2|,
+\abs{w}^2=\abs{w^2},
 $$
 one has
 $$
@@ -131,11 +131,11 @@ $$
 ::: pf-proof
 
 $$
-|w|^2=a^2+b^2,
+\abs{w}^2=a^2+b^2,
 $$
 and
 $$
-|w|^2=|w^2|=|2-4i|.
+\abs{w}^2=\abs{w^2}=\abs{2-4i}.
 $$
 Apply step [](#s1-4){.pf-ref}.
 
@@ -223,13 +223,13 @@ Divide step [](#s1-8){.pf-ref} by $2$.
 
 Thus
 $$
-|a|
+\abs{a}
 =
 \sqrt{1+\sqrt5}
 $$
 and
 $$
-|b|
+\abs{b}
 =
 \sqrt{\sqrt5-1}.
 $$

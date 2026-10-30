@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume f is continuous in the region: $0 < | z - a | \leq R , \ 0 \leq \arg ( z - a ) \leq \beta _ { 0 } \ ( 0 < \beta _ { 0 } \leq 2 \pi )$and the limit$\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A$ exists.
+Assume f is continuous in the region: $0 < \abs{ z - a } \leq R , \ 0 \leq \arg ( z - a ) \leq \beta _ { 0 } \ ( 0 < \beta _ { 0 } \leq 2 \pi )$and the limit$\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A$ exists.
 Show that
 
 $$

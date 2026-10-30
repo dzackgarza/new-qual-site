@@ -68,9 +68,9 @@ The simplicial homeomorphism $f$ permutes the oriented $n$-simplices. A simplex 
 
 The alternating trace on simplicial chains equals the alternating trace on homology:
 $$
-\sum_n(-1)^n\operatorname{tr}(f_*|C_n)
+\sum_n(-1)^n\operatorname{tr}(f_*\restrict C_n)
 =
-\sum_n(-1)^n\operatorname{tr}(f_*|H_n).
+\sum_n(-1)^n\operatorname{tr}(f_*\restrict H_n).
 $$
 
 ::: pf-proof

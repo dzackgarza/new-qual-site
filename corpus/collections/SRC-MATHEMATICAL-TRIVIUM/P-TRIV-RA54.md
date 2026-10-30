@@ -35,17 +35,17 @@ $$
 
 The series converges absolutely for
 $$
-|x|\leq1.
+\abs{x}\leq1.
 $$
 
 
 ::: pf-proof
 
-If $|x|\leq1$, then
+If $\abs{x}\leq1$, then
 $$
-\left|
+\abs{
 \frac{x^{n-1}}{n(n+1)}
-\right|
+}
 \leq
 \frac1{n(n+1)}.
 $$
@@ -65,7 +65,7 @@ telescopes.
 
 If
 $$
-|x|>1,
+\abs{x}>1,
 $$
 the series diverges.
 
@@ -74,7 +74,7 @@ the series diverges.
 
 The term magnitudes are
 $$
-\frac{|x|^{n-1}}{n(n+1)}.
+\frac{\abs{x}^{n-1}}{n(n+1)}.
 $$
 Exponential growth dominates the quadratic denominator, so these terms do not tend to $0$.
 
@@ -86,7 +86,7 @@ Exponential growth dominates the quadratic denominator, so these terms do not te
 
 Therefore the complete convergence set is
 $$
-\boxed{|x|\leq1}.
+\boxed{\abs{x}\leq1}.
 $$
 
 
@@ -118,7 +118,7 @@ Combine the two fractions on the right over the common denominator $n(n+1)$.
 
 ::: {.pf-step #s1-5}
 
-For $|x|<1$ and $x\neq0$,
+For $\abs{x}<1$ and $x\neq0$,
 $$
 S(x)
 =
@@ -152,7 +152,7 @@ $$
 
 ::: pf-proof
 
-For $|x|<1$,
+For $\abs{x}<1$,
 $$
 -\log(1-x)
 =
@@ -199,7 +199,7 @@ $$
 
 ::: {.pf-step #s1-8}
 
-Therefore, for $|x|<1$ and $x\neq0$,
+Therefore, for $\abs{x}<1$ and $x\neq0$,
 $$
 \boxed{
 S(x)

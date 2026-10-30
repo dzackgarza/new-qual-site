@@ -150,9 +150,9 @@ Therefore $N_A\cap N_B=\{0\}$, and the sum is direct.
 ::: {.pf-step #restrictions-inverse}
 The restrictions
 $$
-A|_{N_B}:N_B\to N_A
+A\restrict_{N_B}:N_B\to N_A
 \qquad\text{and}\qquad
-B|_{N_A}:N_A\to N_B
+B\restrict_{N_A}:N_A\to N_B
 $$
 are inverse isomorphisms.
 

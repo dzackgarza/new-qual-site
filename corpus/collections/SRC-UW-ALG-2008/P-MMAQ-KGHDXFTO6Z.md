@@ -29,7 +29,7 @@ Show for any positive integer $n$ that there are irreducible polynomials of degr
 ::: pf-step
 Write
 $$
-|F|=q.
+\cardinality{F}=q.
 $$
 For $n=1$, an irreducible polynomial of degree $1$ is immediate, for example $x-a$ with $a\in F$.
 
@@ -76,7 +76,7 @@ P'(x)=q^n x^{q^n-1}-1=-1
 $$
 in characteristic $p$, because $p\mid q^n$. Thus $P$ has no repeated roots. Since $\overline F$ is algebraically closed, $P$ splits completely there into exactly $q^n$ distinct roots. By definition these roots are precisely the elements of $E$. Hence
 $$
-|E|=q^n.
+\cardinality{E}=q^n.
 $$
 :::
 
@@ -86,7 +86,7 @@ $$
 For each divisor $d$ of $n$, there is at most one subfield of $E$ having $q^d$ elements.
 
 ::: pf-proof
-Let $K\subseteq E$ be a subfield with $|K|=q^d$. Every element $a\in K$ satisfies
+Let $K\subseteq E$ be a subfield with $\cardinality{K}=q^d$. Every element $a\in K$ satisfies
 $$
 a^{q^d}=a.
 $$
@@ -119,9 +119,9 @@ Thus
 $$
 d=[K:F]
 $$
-divides $n$. Because $K\ne E$, we have $d<n$. Since $|F|=q$, a $d$-dimensional vector space over $F$ has $q^d$ elements, so
+divides $n$. Because $K\ne E$, we have $d<n$. Since $\cardinality{F}=q$, a $d$-dimensional vector space over $F$ has $q^d$ elements, so
 $$
-|K|=q^d.
+\cardinality{K}=q^d.
 $$
 :::
 

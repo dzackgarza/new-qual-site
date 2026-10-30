@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 7. Let $f:H\to D$ be a holomorphic map from the upper half plane
 
-$H = \left\{ z \in \CC : \operatorname { I m } z > 0 \right\}$ to the unit disk $D = \{ z \in \CC : | z | < 1 \}$
+$H = \left\{ z \in \CC : \operatorname { I m } z > 0 \right\}$ to the unit disk $D = \{ z \in \CC : \abs{ z } < 1 \}$
 
-Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $| f ^ { \prime } ( i ) |$
+Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $\abs{ f ^ { \prime } ( i ) }$
 :::
 
 ::: {.solution}
@@ -52,9 +52,9 @@ $$
 are inverse holomorphic bijections $H\to D$ and $D\to H$.
 Indeed, direct substitution verifies the inverse identities,
 and for $z\in H$,
-$|z+i|^2-|z-i|^2=4\operatorname{Im}z>0$.
+$\abs{z+i}^2-\abs{z-i}^2=4\operatorname{Im}z>0$.
 For $w\in D$, the inverse satisfies
-$\operatorname{Im}\psi(w)=(1-|w|^2)/|1-w|^2>0$.
+$\operatorname{Im}\psi(w)=(1-\abs{w}^2)/\abs{1-w}^2>0$.
 They send $i$ to zero and zero to $i$, respectively.
 
 Likewise
@@ -64,7 +64,7 @@ T^{-1}(u)=\frac{u+1/2}{1+u/2}
 $$
 are inverse disk automorphisms, since
 $$
-1-|T(v)|^2=\frac{(3/4)(1-|v|^2)}{|1-v/2|^2}>0
+1-\abs{T(v)}^2=\frac{(3/4)(1-\abs{v}^2)}{\abs{1-v/2}^2}>0
 $$
 and the analogous identity holds for the inverse.
 Therefore $F=T\circ f\circ\psi$ maps $D$ holomorphically
@@ -85,9 +85,9 @@ $T'(1/2)=4/3$. The chain rule gives
 $$
 F'(0)=\frac43f'(i)\,2i.
 $$
-Schwarz's lemma implies $|F'(0)|\leq1$ [@SS03]. Hence
+Schwarz's lemma implies $\abs{F'(0)}\leq1$ [@SS03]. Hence
 $$
-|f'(i)|\leq\frac38.
+\abs{f'(i)}\leq\frac38.
 $$
 
 :::
@@ -100,19 +100,19 @@ The bound is attained, and the extremizers are explicit.
 
 ::: pf-proof
 
-For any $\lambda\in\CC$ with $|\lambda|=1$, define
+For any $\lambda\in\CC$ with $\abs{\lambda}=1$, define
 $$
 f_\lambda(z)=T^{-1}(\lambda\phi(z))
 =\frac{\lambda\phi(z)+1/2}{1+\lambda\phi(z)/2}.
 $$
 This is a holomorphic map $H\to D$ with $f_\lambda(i)=1/2$.
 Its normalized map is $F(w)=\lambda w$, so the derivative
-identity in step [](#s2){.pf-ref} gives $|f_\lambda'(i)|=3/8$.
+identity in step [](#s2){.pf-ref} gives $\abs{f_\lambda'(i)}=3/8$.
 For example $\lambda=1$ gives $f_1(z)=(3z-i)/(3z+i)$.
 
 Conversely, equality in the derivative bound forces
-$|F'(0)|=1$, so the equality case of Schwarz's lemma
-gives $F(w)=\lambda w$ for some $|\lambda|=1$ [@SS03].
+$\abs{F'(0)}=1$, so the equality case of Schwarz's lemma
+gives $F(w)=\lambda w$ for some $\abs{\lambda}=1$ [@SS03].
 Undoing the two normalizations gives exactly $f_\lambda$.
 This proves attainability and the asserted maximum.
 

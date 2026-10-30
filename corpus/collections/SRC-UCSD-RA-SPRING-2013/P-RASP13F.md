@@ -32,12 +32,12 @@ The problem concerns finding an explicit solution to the equation $-\Delta u + u
 (a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\RR^n) \cap L^2(\RR^n)$.
 Prove
 $$
-\hat{u}(z) = \frac{\hat{f}(z)}{1 + 4\pi^2 |z|^2}.
+\hat{u}(z) = \frac{\hat{f}(z)}{1 + 4\pi^2 \norm{z}^2}.
 $$
 
-(b) Prove, via the identity $(1 + 4\pi^2 |z|^2)^{-1} = \int_0^\infty e^{-t(1+4\pi^2|z|^2)} \, dt$, that
+(b) Prove, via the identity $(1 + 4\pi^2 \norm{z}^2)^{-1} = \int_0^\infty e^{-t(1+4\pi^2\norm{z}^2)} \, dt$, that
 $$
-u(x) = \int_0^\infty \frac{e^{-t}}{(4\pi t)^{n/2}} \int_{\RR^n} e^{-\frac{|x-y|^2}{4t}} f(y) \, dm(y) \, dt.
+u(x) = \int_0^\infty \frac{e^{-t}}{(4\pi t)^{n/2}} \int_{\RR^n} e^{-\frac{\norm{x-y}^2}{4t}} f(y) \, dm(y) \, dt.
 $$
 :::
 
@@ -64,15 +64,15 @@ $$
 Therefore
 $$
 \widehat{-\Delta u+u}(z)
-=\bigl(1+4\pi^2|z|^2\bigr)\widehat u(z).
+=\bigl(1+4\pi^2\norm{z}^2\bigr)\widehat u(z).
 $$
 Since $-\Delta u+u=f$,
 $$
-\bigl(1+4\pi^2|z|^2\bigr)\widehat u(z)=\widehat f(z),
+\bigl(1+4\pi^2\norm{z}^2\bigr)\widehat u(z)=\widehat f(z),
 $$
 and hence
 $$
-\boxed{\widehat u(z)=\frac{\widehat f(z)}{1+4\pi^2|z|^2}.}
+\boxed{\widehat u(z)=\frac{\widehat f(z)}{1+4\pi^2\norm{z}^2}.}
 $$
 
 :::
@@ -87,20 +87,20 @@ Express the multiplier by Gaussian multipliers.
 
 For every $z$,
 $$
-\frac1{1+4\pi^2|z|^2}
-=\int_0^\infty e^{-t}e^{-4\pi^2t|z|^2}\,dt.
+\frac1{1+4\pi^2\norm{z}^2}
+=\int_0^\infty e^{-t}e^{-4\pi^2t\norm{z}^2}\,dt.
 $$
 Set
 $$
-H_t(x)=\frac1{(4\pi t)^{n/2}}e^{-|x|^2/(4t)}.
+H_t(x)=\frac1{(4\pi t)^{n/2}}e^{-\norm{x}^2/(4t)}.
 $$
-Then $\|H_t\|_1=1$ and, for the same Fourier convention,
+Then $\norm{H_t}_1=1$ and, for the same Fourier convention,
 $$
-\widehat{H_t}(z)=e^{-4\pi^2t|z|^2}.
+\widehat{H_t}(z)=e^{-4\pi^2t\norm{z}^2}.
 $$
 Thus
 $$
-e^{-4\pi^2t|z|^2}\widehat f(z)
+e^{-4\pi^2t\norm{z}^2}\widehat f(z)
 =\widehat{H_t*f}(z).
 $$
 
@@ -120,24 +120,24 @@ v(x)=\int_0^\infty e^{-t}(H_t*f)(x)\,dt.
 $$
 Young's inequality gives
 $$
-\int_0^\infty e^{-t}\|H_t*f\|_1\,dt
-\le \|f\|_1\int_0^\infty e^{-t}\,dt
-=\|f\|_1.
+\int_0^\infty e^{-t}\norm{H_t*f}_1\,dt
+\le \norm{f}_1\int_0^\infty e^{-t}\,dt
+=\norm{f}_1.
 $$
 Hence $v\in L^1$, and Fubini permits taking its Fourier transform under the $t$-integral:
 $$
 \begin{aligned}
 \widehat v(z)
 &=\int_0^\infty e^{-t}\widehat{H_t*f}(z)\,dt\\
-&=\widehat f(z)\int_0^\infty e^{-t}e^{-4\pi^2t|z|^2}\,dt\\
-&=\frac{\widehat f(z)}{1+4\pi^2|z|^2}.
+&=\widehat f(z)\int_0^\infty e^{-t}e^{-4\pi^2t\norm{z}^2}\,dt\\
+&=\frac{\widehat f(z)}{1+4\pi^2\norm{z}^2}.
 \end{aligned}
 $$
 By Step 1, $\widehat v=\widehat u$. Fourier-transform uniqueness on $L^1$ gives $u=v$ almost everywhere. Expanding the convolution yields
 $$
 \boxed{
 u(x)=\int_0^\infty\frac{e^{-t}}{(4\pi t)^{n/2}}
-\int_{\RR^n}e^{-|x-y|^2/(4t)}f(y)\,dy\,dt.}
+\int_{\RR^n}e^{-\norm{x-y}^2/(4t)}f(y)\,dy\,dt.}
 $$
 The right-hand side is the natural continuous representative of the solution.
 

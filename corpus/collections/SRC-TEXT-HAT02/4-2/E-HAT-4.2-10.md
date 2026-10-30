@@ -51,7 +51,7 @@ so
 $$
 \boxed{\pi_n'(X)\cong\ZZ/(p(1)).}
 $$
-Thus it is cyclic of order $|p(1)|$ when $p(1)\ne0$, and infinite cyclic when $p(1)=0$.
+Thus it is cyclic of order $\abs{p(1)}$ when $p(1)\ne0$, and infinite cyclic when $p(1)=0$.
 
 The four finiteness possibilities all occur.
 

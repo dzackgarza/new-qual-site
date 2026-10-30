@@ -77,7 +77,7 @@ $$
 
 Since
 $$
-|n^{-s}|
+\abs{n^{-s}}
 =
 n^{-\sigma},
 $$
@@ -103,7 +103,7 @@ $$
 
 If $\sigma\leq0$, then
 $$
-|n^{-s}|=n^{-\sigma}
+\abs{n^{-s}}=n^{-\sigma}
 $$
 does not tend to $0$.
 
@@ -113,16 +113,16 @@ $$
 $$
 Choose $\delta>0$ so small that
 $$
-|\tau|\log(1+\delta)<\frac\pi3.
+\abs{\tau}\log(1+\delta)<\frac\pi3.
 $$
 For $N<n\leq(1+\delta)N$, the arguments of the complex numbers $n^{-s}$
 differ from that of $N^{-s}$ by less than $\pi/3$. Projecting the block sum
 onto the direction of $N^{-s}$ therefore gives
 $$
-\left|
+\abs{
 \sum_{N<n\leq(1+\delta)N}
 n^{-s}
-\right|
+}
 \geq
 \frac12
 \sum_{N<n\leq(1+\delta)N}
@@ -335,7 +335,7 @@ Near $w=0$,
 $$
 e^w-1\sim w,
 $$
-so the integrand has size $O(|w|^{\sigma-2})$. The small-circle contribution
+so the integrand has size $O(\abs{w}^{\sigma-2})$. The small-circle contribution
 is therefore $O(\varepsilon^{\sigma-1})$, which tends to $0$ because
 $\sigma>1$. Letting $R\to\infty$ and $\varepsilon\to0^+$ gives the
 formula.
@@ -454,7 +454,7 @@ With the orientation inherited from the Hankel contour, the residue theorem
 contributes the negative of $2\pi i$ times the sum of the crossed residues.
 The residue series is absolutely convergent because
 $$
-\sum_{n\neq0}|n|^{\sigma-1}
+\sum_{n\neq0}\abs{n}^{\sigma-1}
 $$
 converges when $\sigma<0$.
 

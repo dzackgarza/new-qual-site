@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Let $(f_n)_{n \in \NN}$ be a sequence of Lebesgue measurable functions defined on $[0,1]$.
-Assume there is a $C > 0$ such that $|f_n(x)| \leq C$ for almost every $x \in [0,1]$ and every $n$, and assume that $\lim_{n \to \infty} \int_0^a f_n(x)\,dx = 0$ for every $a \in (0,1)$.
+Assume there is a $C > 0$ such that $\abs{f_n(x)} \leq C$ for almost every $x \in [0,1]$ and every $n$, and assume that $\lim_{n \to \infty} \int_0^a f_n(x)\,dx = 0$ for every $a \in (0,1)$.
 Prove that
 $$
 \lim_{n \to \infty} \int_0^1 g(x) f_n(x)\,dx = 0
@@ -41,11 +41,11 @@ $$
 $$
 Indeed, for any $a<1$,
 $$
-\left|\int_0^1f_n\right|
+\abs{\int_0^1f_n}
 \le
-\left|\int_0^af_n\right|+\left|\int_a^1f_n\right|
+\abs{\int_0^af_n}+\abs{\int_a^1f_n}
 \le
-\left|\int_0^af_n\right|+C(1-a).
+\abs{\int_0^af_n}+C(1-a).
 $$
 Taking $n\to\infty$ and then $a\uparrow1$ gives the claim.
 
@@ -62,25 +62,25 @@ $$
 
 Now let $g\in L^1([0,1])$ and let $\varepsilon>0$. Choose a step function $s$ with
 $$
-\|g-s\|_1<\frac{\varepsilon}{2C}
+\norm{g-s}_1<\frac{\varepsilon}{2C}
 $$
-(if $C=0$, the conclusion is immediate). Since $|f_n|\le C$ a.e.,
+(if $C=0$, the conclusion is immediate). Since $\abs{f_n}\le C$ a.e.,
 $$
-\left|\int_0^1(g-s)f_n\right|
-\le C\|g-s\|_1
+\abs{\int_0^1(g-s)f_n}
+\le C\norm{g-s}_1
 <\frac\varepsilon2
 $$
 for every $n$. For this fixed $s$, choose $N$ such that
 $$
-\left|\int_0^1s f_n\right|<\frac\varepsilon2
+\abs{\int_0^1s f_n}<\frac\varepsilon2
 $$
 whenever $n\ge N$. Then for $n\ge N$,
 $$
-\left|\int_0^1g f_n\right|
+\abs{\int_0^1g f_n}
 \le
-\left|\int_0^1(g-s)f_n\right|
+\abs{\int_0^1(g-s)f_n}
 +
-\left|\int_0^1s f_n\right|
+\abs{\int_0^1s f_n}
 <\varepsilon.
 $$
 Thus

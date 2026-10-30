@@ -18,10 +18,10 @@ Let $\{ x _ { n } \}$ be a sequence in $( 0 , 1 )$ such that $x _ { n } \to 0$ .
 :::
 
 ::: {.solution}
-Define the sequence $y _ { n } = f ( x _ { n } )$ . Let $\varepsilon > 0$ . Since f is uniformly continuous, there is $\delta > 0$ such that $| x - y | < \delta \implies | f ( x ) - f ( y ) | < \varepsilon$ for all $x , y \in [ 0 , 1 ]$ (that is, δ is independent of $x , y )$ . Since $x _ { n } \to 0$ , in particular $x _ { n }$ is a Cauchy sequence so there is $N \in  { \NN }$ such that $| x _ { n } - x _ { m } | < \delta$ whenever $n , m \geq N$ . But then
+Define the sequence $y _ { n } = f ( x _ { n } )$ . Let $\varepsilon > 0$ . Since f is uniformly continuous, there is $\delta > 0$ such that $\abs{ x - y } < \delta \implies \abs{ f ( x ) - f ( y ) } < \varepsilon$ for all $x , y \in [ 0 , 1 ]$ (that is, δ is independent of $x , y )$ . Since $x _ { n } \to 0$ , in particular $x _ { n }$ is a Cauchy sequence so there is $N \in  { \NN }$ such that $\abs{ x _ { n } - x _ { m } } < \delta$ whenever $n , m \geq N$ . But then
 
 $$
-| y _ { n } - y _ { m } | = | f ( x _ { n } ) - f ( x _ { m } ) | < \varepsilon
+\abs{ y _ { n } - y _ { m } } = \abs{ f ( x _ { n } ) - f ( x _ { m } ) } < \varepsilon
 $$
 
 when $n , m \geq N$ This shows that $y _ { n }$ is a Cauchy sequence and thus converges to some limit $f _ { 0 } \in \RR$ . [This concludes the proof, but performing the same construction for $z _ { n } = f _ { n } ( w _ { n } )$ where $w _ { n }$ is an arbitrary sequence in $( 0 , 1 )$ tending to 1, we find that $z _ { n }  f _ { 1 } \in \RR$ Then defining $F ( 0 ) = f _ { 0 } , F ( 1 ) = f _ { 1 }$ , and $F ( x ) = f ( x )$ , for $x \in ( 0 , 1 )$ , we see that F is a continuous extension of f to [0, 1] which gives an idea of how prove the final note in the problem statement.]

@@ -94,7 +94,7 @@ x^TMM^Tx
 =
 (M^Tx)^T(M^Tx)
 =
-\|M^Tx\|_2^2.
+\norm{M^Tx}_2^2.
 $$
 Hence
 $$

@@ -90,11 +90,11 @@ $$
 
 For $x\ne0$,
 $$
-\left|
+\abs{
 \frac{f(x)}x
-\right|
+}
 =
-\frac{e^{-1/x^4}}{|x|}.
+\frac{e^{-1/x^4}}{\abs{x}}.
 $$
 Set
 $$
@@ -102,7 +102,7 @@ t=\frac1{x^4}.
 $$
 Then $t\to\infty$ as $x\to0$, and
 $$
-\frac{e^{-1/x^4}}{|x|}
+\frac{e^{-1/x^4}}{\abs{x}}
 =
 t^{1/4}e^{-t}
 \longrightarrow
@@ -145,7 +145,7 @@ which is real.
 
 Exactly as in step [](#s1-2){.pf-ref},
 $$
-\frac{e^{-1/y^4}}{|y|}
+\frac{e^{-1/y^4}}{\abs{y}}
 \longrightarrow0.
 $$
 

@@ -20,7 +20,7 @@ audit:
 Let $f:\CC\to\CC$ be holomorphic with $f(z)\ne0$ for every $z\in\CC$.
 Define
 $$
-U=\{z\in\CC:|f(z)|<1\}.
+U=\{z\in\CC:\abs{f(z)}<1\}.
 $$
 Show that every connected component of $U$ is unbounded.
 :::
@@ -33,7 +33,7 @@ $$
 $$
 is a bounded connected component of
 $$
-U=\{z\in\CC:|f(z)|<1\}.
+U=\{z\in\CC:\abs{f(z)}<1\}.
 $$
 
 ::: pf
@@ -47,11 +47,11 @@ The set $U$ is open.
 
 The function
 $$
-z\mapsto |f(z)|
+z\mapsto \abs{f(z)}
 $$
 is continuous, and
 $$
-U=|f|^{-1}((-\infty,1)).
+U=\abs{f}^{-1}((-\infty,1)).
 $$
 
 :::
@@ -79,7 +79,7 @@ z\in\overline\Omega,
 $$
 one has
 $$
-\boxed{|f(z)|\le1}.
+\boxed{\abs{f(z)}\le1}.
 $$
 
 
@@ -95,11 +95,11 @@ z_n\to z.
 $$
 Since
 $$
-|f(z_n)|<1,
+\abs{f(z_n)}<1,
 $$
 continuity gives
 $$
-|f(z)|\le1.
+\abs{f(z)}\le1.
 $$
 
 :::
@@ -114,7 +114,7 @@ z\in\partial\Omega,
 $$
 one has
 $$
-\boxed{|f(z)|=1}.
+\boxed{\abs{f(z)}=1}.
 $$
 
 
@@ -122,11 +122,11 @@ $$
 
 Step [](#s1-3){.pf-ref} gives
 $$
-|f(z)|\le1.
+\abs{f(z)}\le1.
 $$
 Suppose instead that
 $$
-|f(z)|<1.
+\abs{f(z)}<1.
 $$
 Then $z\in U$. Since $U$ is open, there is a connected open disk
 $$
@@ -137,7 +137,7 @@ $$
 \Omega\cup B(z,r)
 $$
 is a connected subset of $U$ strictly larger than the connected component $\Omega$, contradiction.
-Hence $|f(z)|\not<1$, so equality holds.
+Hence $\abs{f(z)}\not<1$, so equality holds.
 
 :::
 
@@ -164,7 +164,7 @@ The reciprocal of a nowhere-zero holomorphic function is holomorphic.
 
 On $\Omega$,
 $$
-\boxed{|g(z)|>1}.
+\boxed{\abs{g(z)}>1}.
 $$
 
 
@@ -172,11 +172,11 @@ $$
 
 By definition of $U$,
 $$
-|f(z)|<1
+\abs{f(z)}<1
 $$
 for $z\in\Omega$, and $f(z)\ne0$. Taking reciprocals gives
 $$
-|g(z)|=\frac1{|f(z)|}>1.
+\abs{g(z)}=\frac1{\abs{f(z)}}>1.
 $$
 
 :::
@@ -187,7 +187,7 @@ $$
 
 On $\partial\Omega$,
 $$
-\boxed{|g(z)|=1}.
+\boxed{\abs{g(z)}=1}.
 $$
 
 
@@ -195,7 +195,7 @@ $$
 
 Use step [](#s1-4){.pf-ref}:
 $$
-|g(z)|=\frac1{|f(z)|}=1.
+\abs{g(z)}=\frac1{\abs{f(z)}}=1.
 $$
 
 :::
@@ -217,7 +217,7 @@ The closure is closed and bounded in $\CC\cong\RR^2$. By Heine--Borel, it is com
 
 ::: {.pf-step #s1-9}
 
-The continuous function $|g|$ attains a maximum on $\overline\Omega$.
+The continuous function $\abs{g}$ attains a maximum on $\overline\Omega$.
 
 
 ::: pf-proof
@@ -237,7 +237,7 @@ This maximum is strictly greater than $1$.
 
 Every point of $\Omega$ satisfies
 $$
-|g|>1
+\abs{g}>1
 $$
 by step [](#s1-6){.pf-ref}.
 
@@ -260,7 +260,7 @@ By step [](#s1-7){.pf-ref}, every boundary point has modulus exactly $1$, while 
 
 ::: pf-step
 
-Hence $|g|$ attains its maximum at an interior point of $\Omega$.
+Hence $\abs{g}$ attains its maximum at an interior point of $\Omega$.
 
 
 ::: pf-proof
@@ -318,11 +318,11 @@ The constant value of $g$ is nonzero because $g=1/f$.
 
 This contradicts the existence of the boundary $\partial\Omega$ with
 $$
-|f|=1
+\abs{f}=1
 $$
 while
 $$
-|f|<1
+\abs{f}<1
 $$
 throughout $\Omega$.
 
@@ -354,7 +354,7 @@ Thus
 $$
 \boxed{
 \text{every connected component of }
-\{z:|f(z)|<1\}
+\{z:\abs{f(z)}<1\}
 \text{ is unbounded}.}
 $$
 

@@ -70,7 +70,7 @@ $$
 :::
 
 ::: pf-step
-If $|G|=p^3$ and $G$ is noncommutative, then $|Z(G)|=p$.
+If $\cardinality{G}=p^3$ and $G$ is noncommutative, then $\cardinality{Z(G)}=p$.
 
 ::: pf-proof
 Let $G$ act on itself by conjugation.
@@ -85,27 +85,27 @@ $$
 is a positive power of $p$ and is therefore divisible by $p$.
 The class equation consequently gives
 $$
-|G|
-=|Z(G)|+
-\sum_{\text{noncentral classes }C}|C|,
+\cardinality{G}
+=\cardinality{Z(G)}+
+\sum_{\text{noncentral classes }C}\cardinality{C},
 $$
 where every summand in the sum is divisible by $p$.
-Since $|G|=p^3$ is divisible by $p$, it follows that $p$ divides $|Z(G)|$.
+Since $\cardinality{G}=p^3$ is divisible by $p$, it follows that $p$ divides $\cardinality{Z(G)}$.
 Hence
 $$
-|Z(G)|\in\{p,p^2,p^3\}.
+\cardinality{Z(G)}\in\{p,p^2,p^3\}.
 $$
 
-The case $|Z(G)|=p^3$ would give $Z(G)=G$, contrary to the hypothesis that $G$ is noncommutative.
-If $|Z(G)|=p^2$, then
+The case $\cardinality{Z(G)}=p^3$ would give $Z(G)=G$, contrary to the hypothesis that $G$ is noncommutative.
+If $\cardinality{Z(G)}=p^2$, then
 $$
-|G/Z(G)|=p,
+\cardinality{G/Z(G)}=p,
 $$
 so $G/Z(G)$ is cyclic.
 By step [](#cyclic-quotient-forces-equality){.pf-ref} this would again imply $G=Z(G)$, a contradiction.
 Therefore the only possibility is
 $$
-|Z(G)|=p.
+\cardinality{Z(G)}=p.
 $$
 :::
 
@@ -126,7 +126,7 @@ G:=D_8\times C_2.
 $$
 Then
 $$
-|G|=8\cdot2=16,
+\cardinality{G}=8\cdot2=16,
 $$
 and $G$ is noncommutative because $D_8$ is noncommutative.
 

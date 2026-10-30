@@ -75,7 +75,7 @@ $$
 \boxed{
 \pi_1(\RP^2\#\RP^2\#\RP^2)
 \cong
-\left\langle a,b,c\ \middle|\ a^2b^2c^2=1\right\rangle .
+\left\langle a,b,c\ \presentationbar\ a^2b^2c^2=1\right\rangle .
 }
 $$
 

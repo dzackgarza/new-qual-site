@@ -25,10 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $R>1$ and let $f$ be analytic on $|z|<R$ except for a simple pole at $z=1$. Suppose
+Let $R>1$ and let $f$ be analytic on $\abs{z}<R$ except for a simple pole at $z=1$. Suppose
 $$
 f(z)=\sum_{n=0}^\infty a_nz^n
-\qquad(|z|<1).
+\qquad(\abs{z}<1).
 $$
 Show that
 $$

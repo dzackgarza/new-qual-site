@@ -30,7 +30,7 @@ Your final answer should not involve complex numbers.
 
 ::: {.pf-step #s1-1}
 
-Since $|re^{i\theta}|=r<1$,
+Since $\abs{re^{i\theta}}=r<1$,
 $$
 \sum_{k=0}^{\infty}r^ke^{ik\theta}
 =
@@ -103,7 +103,7 @@ $$
 
 Taking real parts in step [](#s1-1){.pf-ref} and using step [](#s1-2){.pf-ref} gives the displayed formula. The denominator is real and positive because
 $$
-1-2r\cos\theta+r^2=|1-re^{i\theta}|^2>0.
+1-2r\cos\theta+r^2=\abs{1-re^{i\theta}}^2>0.
 $$
 
 :::

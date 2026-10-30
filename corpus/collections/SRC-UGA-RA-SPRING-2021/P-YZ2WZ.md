@@ -28,14 +28,14 @@ audit:
 ::: {.problem}
 Let $f: \RR \cross \RR \to \RR$ be a measurable function and for $x\in \RR$ define the set
 $$
-E_x \definedas \theset{ y\in \RR \st \mu\qty{ z\in \RR \st f(x,z) = f(x, y) } > 0 } 
+E_x \coloneqq \theset{ y\in \RR \st \mu\qty{ z\in \RR \st f(x,z) = f(x, y) } > 0 } 
 .$$
 Show that the following set is a measurable subset of $\RR \cross \RR$:
 $$
-E \definedas \Union_{x\in \RR} \theset{ x } \cross E_x
+E \coloneqq \Union_{x\in \RR} \theset{ x } \cross E_x
 .$$
 
-> Hint: consider the measurable function $h(x,y,z) \definedas f(x, y) - f(x, z)$.
+> Hint: consider the measurable function $h(x,y,z) \coloneqq f(x, y) - f(x, z)$.
 :::
 
 ::: {.solution}
@@ -48,7 +48,7 @@ Reformulate via the hint.
 ::: pf-proof
 let $h(x,y,z) = f(x,y) - f(x,z)$, measurable on $\RR^3$, and let
 $$
-A \definedas \big\{(x,y,z) \in \RR^3 : h(x,y,z) = 0\big\} = \big\{(x,y,z) : f(x,y) = f(x,z)\big\},
+A \coloneqq \big\{(x,y,z) \in \RR^3 : h(x,y,z) = 0\big\} = \big\{(x,y,z) : f(x,y) = f(x,z)\big\},
 $$
 which is measurable (preimage of $\{0\}$ under a measurable function).
 :::

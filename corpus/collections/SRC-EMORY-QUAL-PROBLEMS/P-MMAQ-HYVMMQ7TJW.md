@@ -57,7 +57,7 @@ field of a separable polynomial [@DF04]. Its automorphisms
 permute the roots. If an automorphism fixes every root,
 it fixes the field they generate over $F$, namely $L$,
 so it is the identity. The action is therefore faithful.
-Since $|G|=[L:F]=n!=|\operatorname{Sym}(X)|$, its image
+Since $\cardinality{G}=[L:F]=n!=\cardinality{\operatorname{Sym}(X)}$, its image
 is the whole symmetric group.
 :::
 
@@ -104,7 +104,7 @@ of $G$. Indeed, if $H\subsetneq J\leq G$, choose
 $g\in J$ moving $r$. Since $H$ permutes the remaining
 roots arbitrarily, the $J$-orbit of $r$ is all of $X$.
 Its stabilizer in $J$ is precisely $H$. Thus
-$|J|=n|H|=n!$, and $J=G$ by orbit-stabilizer.
+$\cardinality{J}=n\cardinality{H}=n!$, and $J=G$ by orbit-stabilizer.
 
 For $F\subseteq E\subseteq F(r)$, Galois correspondence
 gives $H\subseteq\operatorname{Gal}(L/E)\subseteq G$

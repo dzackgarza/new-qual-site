@@ -65,9 +65,9 @@ where $\mathcal I$ cuts out $Z$ and $\mathcal I'$ cuts out $Z'$.
 
 On $U$, one has
 $$
-\mathcal I|_U=\mathcal O_U,
+\mathcal I\restrict_U=\mathcal O_U,
 \qquad
-\mathcal I'|_U=\widetilde{\mathfrak m}.
+\mathcal I'\restrict_U=\widetilde{\mathfrak m}.
 $$
 Hence $\mathcal I/\mathcal I'$ is supported at $x$ and
 $$
@@ -96,7 +96,7 @@ x\in X_f\subseteq U.
 $$
 Inside the affine scheme $U=\operatorname{Spec}A$, this open set is the distinguished open
 $$
-X_f=D(f|_U),
+X_f=D(f\restrict_U),
 $$
 and is therefore affine.
 :::
@@ -244,7 +244,7 @@ $$
 H^i(X,\mathcal F)
 \cong
 \prod_{n\ge1}
-H^i(\operatorname{Spec}k,\mathcal F|_{\operatorname{Spec}k})
+H^i(\operatorname{Spec}k,\mathcal F\restrict_{\operatorname{Spec}k})
 =0
 \qquad(i>0).
 $$

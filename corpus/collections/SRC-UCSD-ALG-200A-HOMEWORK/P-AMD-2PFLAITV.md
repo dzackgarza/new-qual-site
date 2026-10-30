@@ -90,7 +90,7 @@ Every group of order $24$ is not simple.
 
 ::: pf-proof
 
-Let $|G|=24=2^3\cdot3$ and let $n_2$ be the number of Sylow $2$-subgroups.
+Let $\cardinality{G}=24=2^3\cdot3$ and let $n_2$ be the number of Sylow $2$-subgroups.
 Sylow's theorem gives
 $$
 n_2\equiv1\pmod2
@@ -110,7 +110,7 @@ G\hookrightarrow S_3.
 $$
 But
 $$
-|G|=24>6=|S_3|,
+\cardinality{G}=24>6=\cardinality{S_3},
 $$
 which is impossible.
 Therefore $G$ is not simple.
@@ -125,7 +125,7 @@ Every group of order $36$ is not simple.
 
 ::: pf-proof
 
-Let $|G|=36=2^2\cdot3^2$ and let $n_3$ be the number of Sylow $3$-subgroups.
+Let $\cardinality{G}=36=2^2\cdot3^2$ and let $n_3$ be the number of Sylow $3$-subgroups.
 Sylow's theorem gives
 $$
 n_3\equiv1\pmod3
@@ -144,7 +144,7 @@ G\hookrightarrow S_4.
 $$
 This is impossible because
 $$
-|G|=36>24=|S_4|.
+\cardinality{G}=36>24=\cardinality{S_4}.
 $$
 Hence every group of order $36$ is not simple.
 
@@ -158,7 +158,7 @@ Every group of order $48$ is not simple.
 
 ::: pf-proof
 
-Let $|G|=48=2^4\cdot3$ and let $n_2$ be the number of Sylow $2$-subgroups.
+Let $\cardinality{G}=48=2^4\cdot3$ and let $n_2$ be the number of Sylow $2$-subgroups.
 Sylow's theorem gives
 $$
 n_2\equiv1\pmod2
@@ -177,7 +177,7 @@ G\hookrightarrow S_3.
 $$
 But
 $$
-|G|=48>6=|S_3|,
+\cardinality{G}=48>6=\cardinality{S_3},
 $$
 again impossible.
 Therefore every group of order $48$ is not simple.

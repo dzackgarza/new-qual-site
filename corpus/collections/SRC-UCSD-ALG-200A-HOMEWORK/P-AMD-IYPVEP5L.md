@@ -39,7 +39,7 @@ review: draft
 Let $G$ be finite.
 Recall that a subgroup $H\le G$ is a **Hall subgroup** if
 $$
-\gcd(|H|,[G:H])=1.
+\gcd(\cardinality{H},[G:H])=1.
 $$
 Let $H$ be a Hall subgroup of $G$, and let $N\normal G$.
 
@@ -53,7 +53,7 @@ d=[G:H].
 $$
 Since $H$ is Hall in $G$,
 $$
-\gcd(|H|,d)=1.
+\gcd(\cardinality{H},d)=1.
 $$
 
 ::: pf
@@ -67,13 +67,13 @@ The index $[N:H\cap N]$ divides $d$.
 Because $N\normal G$, the product $HN$ is a subgroup of $G$.
 For finite subgroups,
 $$
-|HN|=\frac{|H||N|}{|H\cap N|}.
+\cardinality{HN}=\frac{\cardinality{H}\cardinality{N}}{\cardinality{H\cap N}}.
 $$
 Therefore
 $$
 [HN:H]
-=\frac{|HN|}{|H|}
-=\frac{|N|}{|H\cap N|}
+=\frac{\cardinality{HN}}{\cardinality{H}}
+=\frac{\cardinality{N}}{\cardinality{H\cap N}}
 =[N:H\cap N].
 $$
 The index tower $H\le HN\le G$ gives
@@ -97,16 +97,16 @@ The subgroup $H\cap N$ is a Hall subgroup of $N$.
 
 Since $H\cap N\le H$, Lagrange's theorem gives
 $$
-|H\cap N|\mid |H|.
+\cardinality{H\cap N}\mid \cardinality{H}.
 $$
 By step [](#s1){.pf-ref},
 $$
 [N:H\cap N]\mid d.
 $$
-Any common divisor of $|H\cap N|$ and $[N:H\cap N]$ therefore divides both $|H|$ and $d$.
-Since $\gcd(|H|,d)=1$,
+Any common divisor of $\cardinality{H\cap N}$ and $[N:H\cap N]$ therefore divides both $\cardinality{H}$ and $d$.
+Since $\gcd(\cardinality{H},d)=1$,
 $$
-\gcd(|H\cap N|,[N:H\cap N])=1.
+\gcd(\cardinality{H\cap N},[N:H\cap N])=1.
 $$
 Thus $H\cap N$ is Hall in $N$.
 
@@ -116,7 +116,7 @@ Thus $H\cap N$ is Hall in $N$.
 
 ::: {.pf-step #s3}
 
-The order of $HN/N$ divides $|H|$.
+The order of $HN/N$ divides $\cardinality{H}$.
 
 ::: pf-proof
 
@@ -126,9 +126,9 @@ HN/N\cong H/(H\cap N).
 $$
 Hence
 $$
-|HN/N|=[H:H\cap N]=\frac{|H|}{|H\cap N|},
+\cardinality{HN/N}=[H:H\cap N]=\frac{\cardinality{H}}{\cardinality{H\cap N}},
 $$
-which divides $|H|$.
+which divides $\cardinality{H}$.
 
 :::
 
@@ -164,10 +164,10 @@ The subgroup $HN/N$ is a Hall subgroup of $G/N$.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $|HN/N|$ divides $|H|$, and by step [](#s4){.pf-ref} its index in $G/N$ divides $d$.
-Since $\gcd(|H|,d)=1$, these two divisors are coprime:
+By step [](#s3){.pf-ref}, $\cardinality{HN/N}$ divides $\cardinality{H}$, and by step [](#s4){.pf-ref} its index in $G/N$ divides $d$.
+Since $\gcd(\cardinality{H},d)=1$, these two divisors are coprime:
 $$
-\gcd\bigl(|HN/N|,[G/N:HN/N]\bigr)=1.
+\gcd\bigl(\cardinality{HN/N},[G/N:HN/N]\bigr)=1.
 $$
 Thus $HN/N$ is Hall in $G/N$.
 

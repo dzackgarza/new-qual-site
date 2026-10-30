@@ -56,7 +56,7 @@ $$
 
 Because $\xi_x$ lies between $x$ and $c$,
 $$
-|\xi_x-c|\le |x-c|.
+\abs{\xi_x-c}\le \abs{x-c}.
 $$
 The right side tends to $0$ as $x\to c$, so the squeeze theorem gives $\xi_x\to c$.
 

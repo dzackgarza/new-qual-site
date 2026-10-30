@@ -396,14 +396,14 @@ $$
 
 ::: {.pf-step #conic-globally-generated}
 The residual conics cut out by planes through $L$ form a base-point
-free pencil in $|H-L|$. Consequently
+free pencil in $\linearsystem{H-L}$. Consequently
 $$
 \boxed{\OO_S(Q)\text{ is globally generated}.}
 $$
 
 ::: pf-proof
 Every residual conic has class $H-L=Q$, so these residual conics form a
-one-dimensional linear subsystem of $|Q|$.
+one-dimensional linear subsystem of $\linearsystem{Q}$.
 
 If $x\notin L$, choose a plane through $L$ not containing $x$; its residual
 conic does not contain $x$.
@@ -430,7 +430,7 @@ $$
 \alpha B(x)-\beta A(x)=0.
 $$
 This is one linear condition on $[\alpha:\beta]\in\PP^1$, not every member
-of the pencil. Hence some residual conic avoids $x$. Thus $|Q|$ has no base
+of the pencil. Hence some residual conic avoids $x$. Thus $\linearsystem{Q}$ has no base
 point anywhere on $S$: already this residual-conic subpencil has no base
 point. Therefore $\OO_S(Q)$ is globally generated.
 :::
@@ -500,7 +500,7 @@ $\OO_S(H+L)$ is globally generated everywhere.
 :::
 
 ::: {.pf-step #h-plus-l-birational}
-The morphism defined by $|H+L|$ is birational onto its image.
+The morphism defined by $\linearsystem{H+L}$ is birational onto its image.
 
 ::: pf-proof
 On the open set $S\setminus L$, the subsystem
@@ -509,13 +509,13 @@ s_L\,H^0(S,\OO_S(H))
 \subseteq
 H^0(S,\OO_S(H+L))
 $$
-has the same ratios as the hyperplane system $|H|$. Since $|H|$ is the
+has the same ratios as the hyperplane system $\linearsystem{H}$. Since $\linearsystem{H}$ is the
 given embedding
 $$
 S\hookrightarrow\PP^3,
 $$
 these sections separate general points of $S\setminus L$. The complete
-system $|H+L|$ therefore defines a generically one-to-one morphism, hence a
+system $\linearsystem{H+L}$ therefore defines a generically one-to-one morphism, hence a
 birational morphism onto its image.
 :::
 
@@ -524,13 +524,13 @@ birational morphism onto its image.
 ::: {.pf-step #general-mh-irreducible}
 For every $m\ge1$, a general member of
 $$
-|mH|
+\linearsystem{mH}
 $$
 is nonsingular and irreducible.
 
 ::: pf-proof
 The hyperplane bundle $\OO_S(H)$ is very ample, and every positive power of
-a very ample bundle is very ample. Thus $|mH|$ is the hyperplane system of
+a very ample bundle is very ample. Thus $\linearsystem{mH}$ is the hyperplane system of
 an embedding. Bertini's hyperplane theorem gives a nonsingular general
 member; since $S$ is irreducible of dimension two, a general hyperplane
 section is connected, hence a nonsingular connected curve is irreducible.

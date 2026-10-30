@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $K\subset\RR^n$ be compact. Assume that for every $\varepsilon>0$ and $a,b\in K$ there is a finite sequence $a=x_0,x_1,\dots,x_m=b$ in $K$ with $\|x_k-x_{k-1}\|<\varepsilon$.
+Let $K\subset\RR^n$ be compact. Assume that for every $\varepsilon>0$ and $a,b\in K$ there is a finite sequence $a=x_0,x_1,\dots,x_m=b$ in $K$ with $\norm{x_k-x_{k-1}}<\varepsilon$.
 
 (a) Show that $K$ is connected.
 
@@ -72,7 +72,7 @@ The distance
 $$
 \delta
 =
-\inf\{\|u-v\|:u\in U,\ v\in V\}
+\inf\{\norm{u-v}:u\in U,\ v\in V\}
 $$
 is strictly positive.
 
@@ -81,7 +81,7 @@ is strictly positive.
 
 The continuous function
 $$
-(u,v)\longmapsto\|u-v\|
+(u,v)\longmapsto\norm{u-v}
 $$
 on the compact product
 $$
@@ -120,7 +120,7 @@ a=x_0,x_1,\ldots,x_m=b
 $$
 in $K$ with
 $$
-\|x_k-x_{k-1}\|<\delta.
+\norm{x_k-x_{k-1}}<\delta.
 $$
 
 
@@ -172,13 +172,13 @@ x_j\in V,
 $$
 the definition of $\delta$ gives
 $$
-\|x_j-x_{j-1}\|
+\norm{x_j-x_{j-1}}
 \ge
 \delta.
 $$
 But step [](#s1-4){.pf-ref} gives
 $$
-\|x_j-x_{j-1}\|
+\norm{x_j-x_{j-1}}
 <
 \delta.
 $$

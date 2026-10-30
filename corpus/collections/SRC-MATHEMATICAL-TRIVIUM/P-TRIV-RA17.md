@@ -129,9 +129,9 @@ $$
 +
 \frac{x^2}{2}
 +
-\frac32\log|x-1|
+\frac32\log\abs{x-1}
 -
-\frac12\log|x+1|
+\frac12\log\abs{x+1}
 +
 C.
 }

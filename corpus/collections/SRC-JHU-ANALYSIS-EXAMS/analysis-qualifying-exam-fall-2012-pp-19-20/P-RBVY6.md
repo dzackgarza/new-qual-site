@@ -46,11 +46,11 @@ The case $t>0$.
 ::: pf-proof
 Close the contour by the lower semicircle of radius $R>1$, oriented clockwise. If $z=x+iy$ lies in the lower half-plane, then
 $$
-|e^{-itz}|=e^{ty}\le1.
+\abs{e^{-itz}}=e^{ty}\le1.
 $$
 Hence on the semicircular arc,
 $$
-|F_t(z)|\le \frac1{R^2-1},
+\abs{F_t(z)}\le \frac1{R^2-1},
 $$
 so the arc integral has absolute value at most
 $$
@@ -78,7 +78,7 @@ The case $t<0$.
 ::: pf-proof
 Now close the contour by the upper semicircle. Since $t<0$ and $y\ge0$,
 $$
-|e^{-itz}|=e^{ty}\le1,
+\abs{e^{-itz}}=e^{ty}\le1,
 $$
 so the same arc estimate makes the semicircle contribution tend to zero.
 The enclosed pole is $z=i$, with residue
@@ -107,7 +107,7 @@ $$
 $$
 Combining the three cases,
 $$
-\boxed{\widehat f(t)=\pi e^{-|t|}}.
+\boxed{\widehat f(t)=\pi e^{-\abs{t}}}.
 $$
 :::
 

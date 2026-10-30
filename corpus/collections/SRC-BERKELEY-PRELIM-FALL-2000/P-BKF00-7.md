@@ -24,7 +24,7 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be uniformly continuous and suppose $f(0)=0$. Prove that there exists $B>0$ such that
 $$
-|f(x)|\le1+B|x|
+\abs{f(x)}\le1+B\abs{x}
 $$
 for every $x\in\RR$.
 :::

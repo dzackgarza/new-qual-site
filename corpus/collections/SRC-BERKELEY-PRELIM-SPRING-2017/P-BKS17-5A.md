@@ -113,15 +113,15 @@ $$
 
 Since
 $$
-|r_-|=\frac{2+\sqrt7}{3}>|r_+|
+\abs{r_-}=\frac{2+\sqrt7}{3}>\abs{r_+}
 $$
 and the coefficient of $r_-^n$ in step [](#s1-1){.pf-ref} is nonzero,
 $$
-\limsup_{n\to\infty}|a_n|^{1/n}=|r_-|=\frac{2+\sqrt7}{3}.
+\limsup_{n\to\infty}\abs{a_n}^{1/n}=\abs{r_-}=\frac{2+\sqrt7}{3}.
 $$
 By the Cauchy--Hadamard formula,
 $$
-R=\frac{1}{|r_-|}
+R=\frac{1}{\abs{r_-}}
 =
 \frac{3}{2+\sqrt7}
 =
@@ -134,7 +134,7 @@ $$
 
 ::: {.pf-step #s1-3}
 
-For $|z|<R$,
+For $\abs{z}<R$,
 $$
 (3+4z-z^2)F(z)=3+z.
 $$
@@ -181,7 +181,7 @@ $$
 \qquad\text{and}\qquad
 \sqrt7+2,
 $$
-so the denominator is nonzero for $|z|<R=\sqrt7-2$. Dividing the identity in step [](#s1-3){.pf-ref} gives the stated formula throughout the disk of convergence.
+so the denominator is nonzero for $\abs{z}<R=\sqrt7-2$. Dividing the identity in step [](#s1-3){.pf-ref} gives the stated formula throughout the disk of convergence.
 
 :::
 

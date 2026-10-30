@@ -106,7 +106,7 @@ its normal bundle, equivalently
 $$
 \Delta^2
 =
-\deg\OO_X(\Delta)|_\Delta
+\deg\OO_X(\Delta)\restrict_\Delta
 =
 \deg\mcn_{\Delta/X}.
 $$

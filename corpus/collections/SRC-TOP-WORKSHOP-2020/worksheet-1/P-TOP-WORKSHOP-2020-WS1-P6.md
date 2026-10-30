@@ -42,7 +42,7 @@ K=\ker\varphi.
 $$
 Then $K$ has finite index
 $$
-[G:K]=|H|.
+[G:K]=\cardinality{H}.
 $$
 
 Because a presentation complex is a connected CW complex, the covering-space classification gives a connected based covering

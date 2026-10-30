@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-33
 kind: problem
-title: Contour integral of $e^{1/(1-z)}/z$ around $|z|=3$
+title: Contour integral of $e^{1/(1-z)}/z$ around $\abs{z}=3$
 classification:
   areas:
   - complex-analysis
@@ -37,7 +37,7 @@ z=0
 \qquad\text{and}\qquad
 z=1,
 $$
-and both lie inside $|z|=3$.
+and both lie inside $\abs{z}=3$.
 
 
 ::: pf-proof
@@ -129,7 +129,7 @@ $$
 Therefore
 $$
 \boxed{
-\oint_{|z|=3}\frac{e^{1/(1-z)}}{z}\,dz
+\oint_{\abs{z}=3}\frac{e^{1/(1-z)}}{z}\,dz
 =2\pi i }.
 $$
 
@@ -139,7 +139,7 @@ $$
 The positively oriented circle encloses exactly the two singularities in
 step [](#s1-1){.pf-ref}. By the residue theorem and step [](#s1-4){.pf-ref},
 $$
-\oint_{|z|=3}F(z)\,dz
+\oint_{\abs{z}=3}F(z)\,dz
 =
 2\pi i\cdot1
 =2\pi i.

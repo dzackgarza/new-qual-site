@@ -135,12 +135,12 @@ The derivative is $f'(x) = 1 - x$. For $x \in [0, 1]$, $0 \le f'(x) \le 1$, and 
 
 ::: pf-step
 For distinct $x, y \in [0, 1]$ with $x < y$, the Mean Value Theorem gives:
-$$|f(y) - f(x)| = f'(c)|y - x| = (1 - c)|y - x|$$
-for some $c \in (x, y)$. Since $c > x \ge 0$, $1 - c < 1$, so $|f(y) - f(x)| < |y - x|$. Thus $f$ is a shrinking map.
+$$\abs{f(y) - f(x)} = f'(c)\abs{y - x} = (1 - c)\abs{y - x}$$
+for some $c \in (x, y)$. Since $c > x \ge 0$, $1 - c < 1$, so $\abs{f(y) - f(x)} < \abs{y - x}$. Thus $f$ is a shrinking map.
 :::
 
 ::: pf-step
-Since $\lim_{x \to 0^+} \frac{f(x) - f(0)}{x - 0} = f'(0) = 1$, $\sup_{x \neq y} \frac{|f(x) - f(y)|}{|x - y|} = 1$, so no constant $\alpha < 1$ exists. Thus $f$ is not a contraction.
+Since $\lim_{x \to 0^+} \frac{f(x) - f(0)}{x - 0} = f'(0) = 1$, $\sup_{x \neq y} \frac{\abs{f(x) - f(y)}}{\abs{x - y}} = 1$, so no constant $\alpha < 1$ exists. Thus $f$ is not a contraction.
 :::
 
 :::
@@ -157,11 +157,11 @@ The derivative is $f'(x) = \frac{1}{2}\left(1 + \frac{x}{\sqrt{x^2+1}}\right)$.
 :::
 
 ::: pf-step
-Since $|x| < \sqrt{x^2+1}$, we have $-1 < \frac{x}{\sqrt{x^2+1}} < 1$, which implies $0 < f'(x) < 1$ for all $x \in \RR$.
+Since $\abs{x} < \sqrt{x^2+1}$, we have $-1 < \frac{x}{\sqrt{x^2+1}} < 1$, which implies $0 < f'(x) < 1$ for all $x \in \RR$.
 :::
 
 ::: pf-step
-By the Mean Value Theorem, $|f(x) - f(y)| = f'(c)|x - y| < |x - y|$ for all $x \neq y$, so $f$ is a shrinking map.
+By the Mean Value Theorem, $\abs{f(x) - f(y)} = f'(c)\abs{x - y} < \abs{x - y}$ for all $x \neq y$, so $f$ is a shrinking map.
 :::
 
 ::: pf-step

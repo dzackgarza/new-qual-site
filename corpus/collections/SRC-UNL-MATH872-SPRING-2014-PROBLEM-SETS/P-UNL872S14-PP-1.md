@@ -325,7 +325,7 @@ is continuous on $S^2$.
 Let $q_n\to q$, and write $t_n=t_{q_n}$. Since $A_3$ is contained
 in some ball $B(0,R)$, every half-volume plane meeting the block has
 $$
-|t_n|\le R.
+\abs{t_n}\le R.
 $$
 Thus every subsequence of $(t_n)$ has a convergent further subsequence;
 let

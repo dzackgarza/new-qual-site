@@ -106,7 +106,7 @@ choices.
 Therefore
 $$
 \boxed{
-\left|\operatorname{GL}_n(\FF_p)\right|
+\cardinality{\operatorname{GL}_n(\FF_p)}
 =
 \prod_{j=0}^{n-1}(p^n-p^j)
 =

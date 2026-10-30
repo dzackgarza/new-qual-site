@@ -25,7 +25,7 @@ If $U$ is open and connected, then $\underline{A}(U) = A$; more generally, if ev
 :::
 
 ::: {.definition title="Locally constant sheaf and local system"}
-A sheaf $\mathcal{L}$ of abelian groups on a topological space $X$ is \dfn{locally constant} if every point has an open neighbourhood $U$ with $\mathcal{L}|_U$ isomorphic to a constant sheaf.
+A sheaf $\mathcal{L}$ of abelian groups on a topological space $X$ is \dfn{locally constant} if every point has an open neighbourhood $U$ with $\mathcal{L}\restrict_U$ isomorphic to a constant sheaf.
 A \dfn{local system} is a locally constant sheaf of abelian groups, or of $k$-vector spaces, whose stalks are finitely generated, respectively finite-dimensional.
 :::
 

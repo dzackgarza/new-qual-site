@@ -29,7 +29,7 @@ Determine if each of the following statements is true or false.
 1. If $f, g : \RR \to \RR$ belong to $L^1(\RR)$ and satisfy $\int_{-\infty}^{x} f(t)\,dt \leq \int_{-\infty}^{x} g(t)\,dt$ for all $x \in \RR$, then $f \leq g$ almost everywhere.
 
 2. Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and let $f_n \in L^2(X)$ be a sequence.
-   If $\sup_{n \in \NN} \|f_n\|_2 < \infty$ and $f_n \to f$ almost everywhere, then $\int_X f_n\,d\mu \to \int_X f\,d\mu$.
+   If $\sup_{n \in \NN} \norm{f_n}_2 < \infty$ and $f_n \to f$ almost everywhere, then $\int_X f_n\,d\mu \to \int_X f\,d\mu$.
 
 3. Let $\mu$ be a Radon measure on an LCH space $X$ and let $A$ be an open subset of $X$.
    Define $\mu_A(E) = \mu(A \cap E)$.
@@ -75,26 +75,26 @@ Statement 2 is true.
 
 Let
 $$
-M:=\sup_n\|f_n\|_2<\infty.
+M:=\sup_n\norm{f_n}_2<\infty.
 $$
 By Fatou,
 $$
-\|f\|_2^2\le\liminf_n\|f_n\|_2^2\le M^2,
+\norm{f}_2^2\le\liminf_n\norm{f_n}_2^2\le M^2,
 $$
 so $f\in L^2(X)$. Since $\mu(X)<\infty$, for every measurable $E$,
 $$
-\int_E|f_n|\,d\mu
-\le \|f_n\|_2\mu(E)^{1/2}
+\int_E\abs{f_n}\,d\mu
+\le \norm{f_n}_2\mu(E)^{1/2}
 \le M\mu(E)^{1/2}.
 $$
 Thus $(f_n)$ is uniformly integrable in $L^1$. Since $f_n\to f$ almost everywhere, it also converges to $f$ in measure. Vitali's theorem therefore gives
 $$
-\|f_n-f\|_1\to0.
+\norm{f_n-f}_1\to0.
 $$
 Hence
 $$
-\left|\int_Xf_n\,d\mu-\int_Xf\,d\mu\right|
-\le\|f_n-f\|_1\to0.
+\abs{\int_Xf_n\,d\mu-\int_Xf\,d\mu}
+\le\norm{f_n-f}_1\to0.
 $$
 
 :::

@@ -184,7 +184,7 @@ Use the standard presentation
 $$
 \pi_1(K)
 \cong
-G=\left\langle a,b\ \middle|\ aba^{-1}=b^{-1}\right\rangle.
+G=\left\langle a,b\ \presentationbar\ aba^{-1}=b^{-1}\right\rangle.
 $$
 The relation gives
 $$

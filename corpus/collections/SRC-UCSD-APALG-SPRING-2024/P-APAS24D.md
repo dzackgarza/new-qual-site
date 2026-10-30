@@ -20,11 +20,11 @@ d_{jj}=\eta^{j-1},
 $$
 for $1\le j\le n$, satisfies
 $$
-\|A\|\le\rho(A)+\varepsilon,
+\norm{A}\le\rho(A)+\varepsilon,
 $$
-where the matrix norm $\|\cdot\|$ is defined by
+where the matrix norm $\norm{\cdot}$ is defined by
 $$
-\|B\|=\|D^{-1}BD\|_1
+\norm{B}=\norm{D^{-1}BD}_1
 $$
 for all $B\in M_n(\CC)=\CC^{n\times n}$.
 :::
@@ -41,16 +41,16 @@ $$
 $$
 In particular, the diagonal entries are unchanged. Since the eigenvalues of an upper-triangular matrix are its diagonal entries,
 $$
-\rho(A)=\max_j|a_{jj}|.
+\rho(A)=\max_j\abs{a_{jj}}.
 $$
 
 Let
 $$
-C=\sum_{1\le i<j\le n}|a_{ij}|.
+C=\sum_{1\le i<j\le n}\abs{a_{ij}}.
 $$
 If $C=0$, then $A$ is diagonal and for every $\eta>0$,
 $$
-\|A\|=\|A\|_1=\rho(A).
+\norm{A}=\norm{A}_1=\rho(A).
 $$
 Assume $C>0$. Choose
 $$
@@ -60,9 +60,9 @@ $$
 $$
 For each column $j$,
 $$
-\sum_{i=1}^n |(D^{-1}AD)_{ij}|
+\sum_{i=1}^n \abs{(D^{-1}AD)_{ij}}
 =
-|a_{jj}|+\sum_{i<j}\eta^{j-i}|a_{ij}|.
+\abs{a_{jj}}+\sum_{i<j}\eta^{j-i}\abs{a_{ij}}.
 $$
 Because $j-i\ge1$ and $0<\eta\le1$,
 $$
@@ -70,16 +70,16 @@ $$
 $$
 Hence
 $$
-\sum_i |(D^{-1}AD)_{ij}|
+\sum_i \abs{(D^{-1}AD)_{ij}}
 \le
-|a_{jj}|+\eta C
+\abs{a_{jj}}+\eta C
 <
 \rho(A)+\varepsilon.
 $$
 Taking the maximum over columns gives
 $$
-\|A\|
-=\|D^{-1}AD\|_1
+\norm{A}
+=\norm{D^{-1}AD}_1
 \le\rho(A)+\varepsilon.
 $$
 Thus such an $\eta>0$ exists.

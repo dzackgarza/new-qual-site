@@ -69,13 +69,13 @@ $$
 $$
 as $x\to0$. Thus the singularity at $0$ is removable.
 
-For $|x|\ge1$,
+For $\abs{x}\ge1$,
 $$
-\left|
+\abs{
 \frac{x-\sin x}{x^3}
-\right|
+}
 \le
-\frac1{x^2}+\frac1{|x|^3},
+\frac1{x^2}+\frac1{\abs{x}^3},
 $$
 so the integral converges absolutely at infinity.
 

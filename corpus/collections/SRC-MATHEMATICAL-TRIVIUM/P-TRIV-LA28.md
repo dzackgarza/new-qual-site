@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\RR ^ { 2 }$ with the lengths $| \vec { a } _ { 1 } | = 2 , | \vec { a } _ { 2 } | = 6$ and the angle between them $\phi = \frac { \pi } { 6 }$ . Construct the orthonormal basis $\vec { e } _ { 1 } , \vec { e } _ { 2 }$ such that $\vec { e } _ { 1 } | | \vec { a } _ { 1 }$ , and write the components of $\vec { a } _ { 1 } , \vec { a } _ { 2 }$ in this basis.
+Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\RR ^ { 2 }$ with the lengths $\norm{ \vec { a } _ { 1 } } = 2 , \norm{ \vec { a } _ { 2 } } = 6$ and the angle between them $\phi = \frac { \pi } { 6 }$ . Construct the orthonormal basis $\vec { e } _ { 1 } , \vec { e } _ { 2 }$ such that $\vec { e } _ { 1 } \parallel  \vec { a } _ { 1 }$ , and write the components of $\vec { a } _ { 1 } , \vec { a } _ { 2 }$ in this basis.
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\RR ^ { 2
 
 Define
 $$
-e_1=\frac{a_1}{\|a_1\|}
+e_1=\frac{a_1}{\norm{a_1}}
 =
 \frac{a_1}{2}.
 $$
@@ -36,11 +36,11 @@ Then $e_1$ is a unit vector parallel to $a_1$.
 
 ::: pf-proof
 
-Since $\|a_1\|=2$,
+Since $\norm{a_1}=2$,
 $$
-\|e_1\|
+\norm{e_1}
 =
-\frac{\|a_1\|}{2}
+\frac{\norm{a_1}}{2}
 =1.
 $$
 It is plainly a scalar multiple of $a_1$.

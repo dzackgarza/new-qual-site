@@ -77,7 +77,7 @@ $$
 By the Cauchy--Schwarz inequality,
 $$
 D_{\mathbf{u}}T
-\ge -\|\nabla T(2,2,2)\|,
+\ge -\norm{\nabla T(2,2,2)},
 $$
 with equality exactly when $\mathbf{u}$ points opposite to the gradient. Hence the maximal rate of decrease is attained in the direction of $-\nabla T(2,2,2)$.
 

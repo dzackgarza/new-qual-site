@@ -33,9 +33,9 @@ L\ge0
 $$
 be a Lipschitz constant for $f$:
 $$
-|f(x)-f(y)|
+\abs{f(x)-f(y)}
 \le
-L|x-y|
+L\abs{x-y}
 $$
 for all $x,y\in\RR$.
 
@@ -53,7 +53,7 @@ f\left(x+\frac1n\right)-f(x)
 $$
 Then
 $$
-|g_n(x)|\le L
+\abs{g_n(x)}\le L
 $$
 for every $x$ and $n$.
 
@@ -62,15 +62,15 @@ for every $x$ and $n$.
 
 By the Lipschitz estimate,
 $$
-\left|
+\abs{
 f\left(x+\frac1n\right)-f(x)
-\right|
+}
 \le
 \frac Ln.
 $$
 Multiplying by $n$ gives
 $$
-|g_n(x)|\le L.
+\abs{g_n(x)}\le L.
 $$
 
 :::
@@ -114,7 +114,7 @@ g_n(x)\to0
 $$
 pointwise on $[a,b]$ and
 $$
-|g_n(x)|\le L.
+\abs{g_n(x)}\le L.
 $$
 The constant function $L$ is integrable on $[a,b]$.
 Therefore the dominated convergence theorem gives
@@ -195,23 +195,23 @@ $$
 By continuity of $f$ at $b$,
 $$
 \sup_{u\in[b,b+1/n]}
-|f(u)-f(b)|
+\abs{f(u)-f(b)}
 \to0.
 $$
 Hence
 $$
 \begin{aligned}
-\left|
+\abs{
 n\int_b^{b+1/n}f(u)\,du-f(b)
-\right|
+}
 &=
-\left|
+\abs{
 n\int_b^{b+1/n}
 \bigl(f(u)-f(b)\bigr)\,du
-\right|\\
+}\\
 &\le
 \sup_{u\in[b,b+1/n]}
-|f(u)-f(b)|
+\abs{f(u)-f(b)}
 \to0.
 \end{aligned}
 $$

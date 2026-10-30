@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 For $R>0$, let
 $$
-\Gamma_R=\{z\in\CC:|z|=R,\ \operatorname{Im}z\ge0\}
+\Gamma_R=\{z\in\CC:\abs{z}=R,\ \operatorname{Im}z\ge0\}
 $$
 be the upper semicircle, oriented counterclockwise.
 Prove that

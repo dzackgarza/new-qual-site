@@ -235,9 +235,9 @@ h:X\to[0,1]
 $$
 with
 $$
-h|_A=0,
+h\restrict_A=0,
 \qquad
-h|_B=1.
+h\restrict_B=1.
 $$
 
 ::: pf-proof
@@ -382,9 +382,9 @@ $$
 $$
 Moreover the tail after the $N$th partial sum satisfies, uniformly in $x$,
 $$
-\left|
+\abs{
 \sum_{n>N}2^{-n}g_n(x)
-\right|
+}
 \le
 \sum_{n>N}2^{-n}
 =2^{-N}.
@@ -396,15 +396,15 @@ For completeness, fix $x\in X$ and $\varepsilon>0$.
 Choose $N$ with $2^{1-N}<\varepsilon/3$.
 Continuity of the $N$th partial sum $s_N$ gives a neighborhood $O$ of $x$ on which
 $$
-|s_N(y)-s_N(x)|<\varepsilon/3.
+\abs{s_N(y)-s_N(x)}<\varepsilon/3.
 $$
 For $y\in O$,
 $$
-|f(y)-f(x)|
+\abs{f(y)-f(x)}
 \le
-|f(y)-s_N(y)|
-+|s_N(y)-s_N(x)|
-+|s_N(x)-f(x)|
+\abs{f(y)-s_N(y)}
++\abs{s_N(y)-s_N(x)}
++\abs{s_N(x)-f(x)}
 <\varepsilon.
 $$
 Thus $f$ is continuous.

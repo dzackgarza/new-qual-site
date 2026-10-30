@@ -159,7 +159,7 @@ r(c)
 $$
 Thus
 $$
-r|_C=\operatorname{id}_C.
+r\restrict_C=\operatorname{id}_C.
 $$
 :::
 

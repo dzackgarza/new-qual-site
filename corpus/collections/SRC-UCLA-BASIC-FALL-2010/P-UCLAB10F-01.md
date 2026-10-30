@@ -203,9 +203,9 @@ so $(a,b)\in F$.
 
 The sets are disjoint, but
 $$
-\left\|
+\norm{
 (n,0)-\left(n,\frac1n\right)
-\right\|
+}
 =
 \frac1n\to0.
 $$

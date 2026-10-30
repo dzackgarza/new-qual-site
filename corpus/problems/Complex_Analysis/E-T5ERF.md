@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-T5ERF
 kind: problem
-title: $\|f\|_{(\infty,s)}\le c\|f\|_{(1,r)}$ for holomorphic $f$ near $D_r(z_0)$
+title: $\norm{f}_{(\infty,s)}\le c\norm{f}_{(1,r)}$ for holomorphic $f$ near $D_r(z_0)$
 classification:
   areas:
   - complex-analysis

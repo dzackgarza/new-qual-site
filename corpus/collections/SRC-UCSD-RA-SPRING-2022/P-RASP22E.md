@@ -55,7 +55,7 @@ is closed.
 
 Both spaces are Banach, so the Closed Graph Theorem gives a constant $C<\infty$ such that
 $$
-\boxed{\|f\|_p\le C\|f\|_q\qquad(f\in L^q(X)).}
+\boxed{\norm{f}_p\le C\norm{f}_q\qquad(f\in L^q(X)).}
 $$
 Thus $T$ is bounded.
 
@@ -72,8 +72,8 @@ Apply the bound to characteristic functions.
 Let $E\subseteq X$ be measurable with $0<\mu(E)<\infty$. Then $\mathbf1_E\in L^q(X)$, so
 $$
 \mu(E)^{1/p}
-=\|\mathbf1_E\|_p
-\le C\|\mathbf1_E\|_q
+=\norm{\mathbf1_E}_p
+\le C\norm{\mathbf1_E}_q
 =C\mu(E)^{1/q}.
 $$
 Therefore

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-True or false: A function $f ( z )$ analytic on $| z - a | < r$ and continuous on $| z - a | \leqslant r$ extends, for some $\delta > 0$ , to a function analytic on $| z - a | < r + \delta ?$ Give a proof or a counterexample.
+True or false: A function $f ( z )$ analytic on $\abs{ z - a } < r$ and continuous on $\abs{ z - a } \leqslant r$ extends, for some $\delta > 0$ , to a function analytic on $\abs{ z - a } < r + \delta ?$ Give a proof or a counterexample.
 :::
 
 ::: {.solution}
@@ -28,25 +28,25 @@ It suffices to take $a=0$ and $r=1$.
 ::: {.pf-step #counterexample-function}
 The function
 $$
-f(z):=\sqrt{1-z},\qquad |z|<1,
+f(z):=\sqrt{1-z},\qquad \abs{z}<1,
 $$
-with the principal square root, is analytic on $|z|<1$ and extends continuously to $|z|\leq 1$.
+with the principal square root, is analytic on $\abs{z}<1$ and extends continuously to $\abs{z}\leq 1$.
 
 ::: pf-proof
-If $|z|<1$, then $\operatorname{Re}(1-z)>0$. Hence $1-z$ lies in the right half-plane, on which the principal square root is analytic, so $f$ is analytic on the open unit disc. If $|z|\leq 1$, then $\operatorname{Re}(1-z)\geq 0$, and the principal square root is continuous on this closed right half-plane, including at $0$. Thus the same formula defines a continuous function on the closed unit disc.
+If $\abs{z}<1$, then $\operatorname{Re}(1-z)>0$. Hence $1-z$ lies in the right half-plane, on which the principal square root is analytic, so $f$ is analytic on the open unit disc. If $\abs{z}\leq 1$, then $\operatorname{Re}(1-z)\geq 0$, and the principal square root is continuous on this closed right half-plane, including at $0$. Thus the same formula defines a continuous function on the closed unit disc.
 :::
 
 :::
 
 ::: {.pf-step #no-extension}
-The function in [](#counterexample-function){.pf-ref} has no analytic extension to any disc $|z|<1+\delta$ with $\delta>0$.
+The function in [](#counterexample-function){.pf-ref} has no analytic extension to any disc $\abs{z}<1+\delta$ with $\delta>0$.
 
 ::: pf-proof
-Suppose that such an extension $F$ exists. On $|z|<1$ one has
+Suppose that such an extension $F$ exists. On $\abs{z}<1$ one has
 $$
 F(z)^2=f(z)^2=1-z.
 $$
-Both sides are analytic on the connected disc $|z|<1+\delta$, so the identity theorem gives
+Both sides are analytic on the connected disc $\abs{z}<1+\delta$, so the identity theorem gives
 $$
 F(z)^2=1-z
 $$

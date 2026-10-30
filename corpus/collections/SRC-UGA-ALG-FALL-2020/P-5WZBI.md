@@ -27,7 +27,7 @@ For the nonabelian group(s), give a presentation by generators and relations.
 
 ::: {.solution}
 
-Let $|G|=2p$.
+Let $\cardinality{G}=2p$.
 
 ::: pf
 
@@ -46,7 +46,7 @@ n_p\mid2.
 $$
 Because $p>2$, the only possibility is $n_p=1$. Thus the unique subgroup $P$ of order $p$ is normal and proper, so $G$ is not simple.
 
-If $p=2$, then $|G|=4$. By Cauchy's theorem, $G$ contains an element of order $2$; the subgroup it generates has index $2$, hence is normal. Thus $G$ is again not simple.
+If $p=2$, then $\cardinality{G}=4$. By Cauchy's theorem, $G$ contains an element of order $2$; the subgroup it generates has index $2$, hence is normal. Thus $G$ is again not simple.
 
 :::
 

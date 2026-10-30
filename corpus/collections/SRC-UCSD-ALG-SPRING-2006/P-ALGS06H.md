@@ -36,7 +36,7 @@ Part (a): $\FF_q^\times$ is cyclic:
 ::: pf-proof
 
 ::: pf-step
-Let $G = \FF_q^\times$ be the multiplicative group of the finite field $\FF_q$, which is an abelian group of order $|G| = q - 1$.
+Let $G = \FF_q^\times$ be the multiplicative group of the finite field $\FF_q$, which is an abelian group of order $\cardinality{G} = q - 1$.
 Let $m = \exp(G)$ denote the exponent of $G$, which is the least common multiple of the orders of all elements in $G$.
 By Lagrange's Theorem, $m \le q - 1$.
 :::
@@ -53,7 +53,7 @@ $$
 ::: pf-step
 Combining $m \le q - 1$ and $q - 1 \le m$ gives $m = q - 1$.
 For any finite abelian group, there exists an element whose order equals the exponent $m$.
-Thus there exists $\alpha \in \FF_q^\times$ with $o(\alpha) = q - 1 = |\FF_q^\times|$, so $\FF_q^\times = \langle \alpha \rangle$ is cyclic.
+Thus there exists $\alpha \in \FF_q^\times$ with $o(\alpha) = q - 1 = \cardinality{\FF_q^\times}$, so $\FF_q^\times = \langle \alpha \rangle$ is cyclic.
 :::
 
 :::

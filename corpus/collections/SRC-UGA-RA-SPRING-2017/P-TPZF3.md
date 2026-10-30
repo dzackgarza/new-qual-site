@@ -123,7 +123,7 @@ Because $x\in K_n$, it lies in one of the closed stage-$n$ cylinders $I_n=[a_n,b
 
 Since $a_n\ne b_n$, at least one endpoint, call it $y_n$, is different from $x$. Moreover,
 $$
-|x-y_n|\le b_n-a_n=10^{-n}<\varepsilon.
+\abs{x-y_n}\le b_n-a_n=10^{-n}<\varepsilon.
 $$
 Thus every neighborhood of every $x\in K$ contains a point of $K$ distinct from $x$. Hence $K$ has no isolated points.
 

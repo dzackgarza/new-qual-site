@@ -31,11 +31,11 @@ Since $\log(1+u)$ is holomorphic for $\abs{u}<1$ and has Taylor expansion at $0$
 $$
 \abs{\log(1+u)-u}\le C\abs{u}^2
 $$
-for some constant $C$. If $n>2N$ and $\abs{z}\le N$ this gives $\left\lvert\log\left(1+\frac{z}{n}\right)-\frac{z}{n}\right\rvert\le CN^2n^{-2}$ and $\left\lvert\log\left(1+\frac{z}{n}\right)^n-z\right\rvert\le CN^2n^{-1}$.
+for some constant $C$. If $n>2N$ and $\abs{z}\le N$ this gives $\abs{\log\left(1+\frac{z}{n}\right)-\frac{z}{n}}\le CN^2n^{-2}$ and $\abs{\log\left(1+\frac{z}{n}\right)^n-z}\le CN^2n^{-1}$.
 On the other hand, since $\abs{\sum_{k>0}a^k/k!}\le\sum_{k>0}\abs{a}^k/k!$, we have $\abs{e^a-1}\le e^{\abs{a}}-1$.
 Hence if $n>2N$ and $\abs{z}\le N$ we find
 $$
-\left\lvert\left(1+\frac{z}{n}\right)^n-e^z\right\rvert=\abs{e^z}\cdot\left\lvert e^{\log\left(1+\frac{z}{n}\right)^n-z}-1\right\rvert\le e^N\cdot\left(e^{CN^2n^{-1}}-1\right),
+\abs{\left(1+\frac{z}{n}\right)^n-e^z}=\abs{e^z}\cdot\abs{ e^{\log\left(1+\frac{z}{n}\right)^n-z}-1}\le e^N\cdot\left(e^{CN^2n^{-1}}-1\right),
 $$
-so that $\lim_{n\to\infty}\left\lvert\left(1+\frac{z}{n}\right)^n-e^z\right\rvert=0$ uniformly for $\abs{z}\le N$.
+so that $\lim_{n\to\infty}\abs{\left(1+\frac{z}{n}\right)^n-e^z}=0$ uniformly for $\abs{z}\le N$.
 :::

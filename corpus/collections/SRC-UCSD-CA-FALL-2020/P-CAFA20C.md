@@ -75,7 +75,7 @@ Cauchy estimates on compact sets:
 ::: pf-step
 
 Let $K \subset \CC$ be a compact subset.
-Since $K$ is bounded, there exists $R > 0$ such that $|z| \le R$ for all $z \in K$.
+Since $K$ is bounded, there exists $R > 0$ such that $\abs{z} \le R$ for all $z \in K$.
 
 ::: pf-proof
 
@@ -88,11 +88,11 @@ compactness implies boundedness.
 ::: pf-step
 
 Choose a radius $r > 1$ (e.g. $r = 2$).
-For any $z \in K$, the circle $C_z = \{\zeta \in \CC \mid |\zeta - z| = r\}$ is contained in the closed disk $\overline{B(0, R + r)}$.
+For any $z \in K$, the circle $C_z = \{\zeta \in \CC \mid \abs{\zeta - z} = r\}$ is contained in the closed disk $\overline{B(0, R + r)}$.
 
 ::: pf-proof
 
-triangle inequality $|\zeta| \le |z| + |\zeta - z| \le R + r$.
+triangle inequality $\abs{\zeta} \le \abs{z} + \abs{\zeta - z} \le R + r$.
 
 :::
 
@@ -102,7 +102,7 @@ triangle inequality $|\zeta| \le |z| + |\zeta - z| \le R + r$.
 
 Since $f$ is continuous and $\overline{B(0, R + r)}$ is compact, the supremum:
 $$
-M = \sup_{|\zeta| \le R + r} |f(\zeta)| < \infty.
+M = \sup_{\abs{\zeta} \le R + r} \abs{f(\zeta)} < \infty.
 $$
 
 ::: pf-proof
@@ -121,7 +121,7 @@ $$
 $$
 Thus for all $z \in K$:
 $$
-\left| \frac{f^{(n)}(z)}{n!} \right| \le \frac{1}{2\pi} \frac{M}{r^{n+1}} (2\pi r) = \frac{M}{r^n}.
+\abs{ \frac{f^{(n)}(z)}{n!} } \le \frac{1}{2\pi} \frac{M}{r^{n+1}} (2\pi r) = \frac{M}{r^n}.
 $$
 
 ::: pf-proof

@@ -88,9 +88,9 @@ For the pole at $-1$,
 $$
 \operatorname{Res}_{z=-1}F
 =
-\left.
+\evaluated{
 \frac{z^2+1}{z+4}
-\right|_{z=-1}
+}_{z=-1}
 =
 \frac{2}{3}.
 $$
@@ -99,9 +99,9 @@ For the pole at $-4$,
 $$
 \operatorname{Res}_{z=-4}F
 =
-\left.
+\evaluated{
 \frac{z^2+1}{z+1}
-\right|_{z=-4}
+}_{z=-4}
 =
 \frac{17}{-3}
 =

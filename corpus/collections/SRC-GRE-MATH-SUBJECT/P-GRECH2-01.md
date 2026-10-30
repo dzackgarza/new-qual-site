@@ -39,16 +39,16 @@ for each integer $n \ge 1$. Given that this sequence converges, what is its limi
 
 For every $n\geq1$,
 $$
-|x_n|\leq \frac{1}{n^{1/e}}.
+\abs{x_n}\leq \frac{1}{n^{1/e}}.
 $$
 
 
 ::: pf-proof
 
-Since $|\cos(n\pi)|\leq1$ and $0\leq\sin^2 n\leq1$,
+Since $\abs{\cos(n\pi)}\leq1$ and $0\leq\sin^2 n\leq1$,
 $$
-|x_n|
-=\frac{|\cos(n\pi)|\sin^2 n}{\sqrt[e]{n}}
+\abs{x_n}
+=\frac{\abs{\cos(n\pi)}\sin^2 n}{\sqrt[e]{n}}
 \leq\frac1{\sqrt[e]{n}}
 =\frac1{n^{1/e}}.
 $$

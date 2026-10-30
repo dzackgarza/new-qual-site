@@ -22,9 +22,9 @@ For a nonnegative harmonic function $u$ on $\DD$ that is continuous on
 $\overline{\DD}$, Harnack's inequality states that for $z\in\DD$,
 $$
 \boxed{\displaystyle
-\frac{1-|z|}{1+|z|}\,u(0)
+\frac{1-\abs{z}}{1+\abs{z}}\,u(0)
 \le u(z)\le
-\frac{1+|z|}{1-|z|}\,u(0).}
+\frac{1+\abs{z}}{1-\abs{z}}\,u(0).}
 $$
 
 Write $z=re^{i\phi}$, $0\le r<1$. By the Poisson integral formula,

@@ -205,7 +205,7 @@ n,
 $$
 define finite measures on
 $$
-(E_n,\mathcal M|_{E_n})
+(E_n,\mathcal M\restrict_{E_n})
 $$
 by
 $$

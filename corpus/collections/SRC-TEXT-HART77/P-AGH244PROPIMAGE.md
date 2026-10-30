@@ -33,7 +33,7 @@ Show that $f(Z)$ is closed in $Y$, and that $f(Z)$ with its image subscheme stru
 ::: {.solution}
 Let
 $$
-h=f|_Z:Z\longrightarrow Y.
+h=f\restrict_Z:Z\longrightarrow Y.
 $$
 
 ::: pf
@@ -148,7 +148,7 @@ i:Y'\hookrightarrow Y
 $$
 be the scheme-theoretic image of $h$.  Then
 $$
-|Y'|=h(Z)=f(Z).
+\underlyingspace{Y'}=h(Z)=f(Z).
 $$
 
 ::: pf-proof
@@ -203,12 +203,12 @@ V(I)=\overline{h(W)}.
 $$
 These affine equalities glue, proving
 $$
-|Y'|=\overline{h(Z)}.
+\underlyingspace{Y'}=\overline{h(Z)}.
 $$
 
 Here step [](#s5){.pf-ref} shows that the image is already closed, so
 $$
-|Y'|=\overline{h(Z)}=h(Z).
+\underlyingspace{Y'}=\overline{h(Z)}=h(Z).
 $$
 
 :::
@@ -229,9 +229,9 @@ By definition $h=i\circ q$.  Hence
 $$
 i(q(Z))=h(Z).
 $$
-The closed immersion $i$ is a homeomorphism of $|Y'|$ onto its image in $Y$.  By step [](#s6){.pf-ref} that image is exactly $h(Z)$.  Therefore
+The closed immersion $i$ is a homeomorphism of $\underlyingspace{Y'}$ onto its image in $Y$.  By step [](#s6){.pf-ref} that image is exactly $h(Z)$.  Therefore
 $$
-q(Z)=|Y'|.
+q(Z)=\underlyingspace{Y'}.
 $$
 
 :::

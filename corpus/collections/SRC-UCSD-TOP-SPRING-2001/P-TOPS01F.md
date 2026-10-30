@@ -38,7 +38,7 @@ For every $m\ge1$,
 $$
 H^*(\CP^m;\ZZ)
 \cong \ZZ[x]/(x^{m+1}),
-\qquad |x|=2,
+\qquad \gradeddegree{x}=2,
 $$
 and $x^m$ generates the top cohomology $H^{2m}(\CP^m;\ZZ)$.
 :::

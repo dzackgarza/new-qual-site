@@ -35,7 +35,7 @@ Part (a) is true: if $X$ is a manifold, then $E$ is a manifold of the same dimen
 
 ::: pf-proof
 
-Every $e\in E$ has an evenly covered neighborhood: there is an open neighborhood $U$ of $p(e)$ and a sheet $V\ni e$ such that $p|_V:V\to U$ is a homeomorphism. Choosing $U$ inside a manifold chart transfers that chart to $V$.
+Every $e\in E$ has an evenly covered neighborhood: there is an open neighborhood $U$ of $p(e)$ and a sheet $V\ni e$ such that $p\restrict_V:V\to U$ is a homeomorphism. Choosing $U$ inside a manifold chart transfers that chart to $V$.
 
 :::
 

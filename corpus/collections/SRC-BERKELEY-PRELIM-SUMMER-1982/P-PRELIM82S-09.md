@@ -131,9 +131,9 @@ $m\geq0$.
 
 Fix $m\geq0$ and put $r=\abs{z}<1$. By step [](#s3){.pf-ref},
 $$
-\left|
+\abs{
 \frac{n(n-1)\cdots(n-m+1)}{n^{\log n}}z^{n-m}
-\right|
+}
 \leq
 n^m r^{n-m},
 $$
@@ -157,9 +157,9 @@ $m\geq0$.
 
 Fix $m\geq0$. By step [](#s3){.pf-ref} and $\abs{z}=1$,
 $$
-\left|
+\abs{
 \frac{n(n-1)\cdots(n-m+1)}{n^{\log n}}z^{n-m}
-\right|
+}
 \leq
 n^{m-\log n}.
 $$

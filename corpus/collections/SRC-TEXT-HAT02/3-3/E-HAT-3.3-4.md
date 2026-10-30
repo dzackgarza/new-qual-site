@@ -34,7 +34,7 @@ Let $q:M\to M/G$ be the quotient map. Since the action is a covering-space actio
 
 Fix $y\in M/G$ and choose an evenly covered neighborhood $U$ of $y$. Let $\widetilde U$ be one sheet over $U$. Because $M$ is oriented, $\widetilde U$ inherits a local orientation. Transport this orientation to $U$ using the homeomorphism
 $$
-q|_{\widetilde U}:\widetilde U\xrightarrow{\cong}U.
+q\restrict_{\widetilde U}:\widetilde U\xrightarrow{\cong}U.
 $$
 We must show this does not depend on the chosen sheet. Any two sheets over $U$ differ by a unique deck transformation coming from an element $g\in G$. By hypothesis every such $g$ preserves the orientation of $M$, so the two transported orientations on $U$ agree.
 

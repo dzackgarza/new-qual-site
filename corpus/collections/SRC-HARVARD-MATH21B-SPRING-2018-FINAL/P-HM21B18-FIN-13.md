@@ -16,7 +16,7 @@ audit:
 Assume $2\pi$-periodic spatial boundary conditions, and use the course
 Fourier norm
 $$
-\|g\|^2=\frac1\pi\int_{-\pi}^{\pi}|g(x)|^2\,dx.
+\norm{g}^2=\frac1\pi\int_{-\pi}^{\pi}\abs{g(x)}^2\,dx.
 $$
 In part (c), the initial velocity $x$ is understood as the corresponding
 $2\pi$-periodic $L^2$ function on $(-\pi,\pi)$.
@@ -30,7 +30,7 @@ $$
 u(x,0)=4\sin x+5\sin(2x).
 $$
 
-(b) Use Parseval's equality to compute $\|u(x,1)\|^2$.
+(b) Use Parseval's equality to compute $\norm{u(x,1)}^2$.
 
 (c) Solve
 $$
@@ -92,7 +92,7 @@ $4\sin x+5\sin(2x)$, as required.
 
 The answer to part (b) is
 $$
-\|u(x,1)\|^2=16e^{-18}+25e^{-72}.
+\norm{u(x,1)}^2=16e^{-18}+25e^{-72}.
 $$
 
 
@@ -105,7 +105,7 @@ u(x,1)=4e^{-9}\sin x+5e^{-36}\sin(2x).
 $$
 Parseval's identity therefore gives
 $$
-\|u(x,1)\|^2
+\norm{u(x,1)}^2
 =(4e^{-9})^2+(5e^{-36})^2
 =16e^{-18}+25e^{-72}.
 $$
@@ -297,7 +297,7 @@ $$
 \text{(a)}\quad&
 u(x,t)=4e^{-9t}\sin x+5e^{-36t}\sin(2x),\\
 \text{(b)}\quad&
-\|u(x,1)\|^2=16e^{-18}+25e^{-72},\\
+\norm{u(x,1)}^2=16e^{-18}+25e^{-72},\\
 \text{(c)}\quad&
 u(x,t)=7\cos(\sqrt{227}\,t)\sin(5x)\\
 &\quad+

@@ -103,7 +103,7 @@ $$
 $$
 
 ::: pf-proof
-$|\oint_{\partial T} (f_n - f)\,dz| \le \sup_{z\in\partial T}|f_n(z) - f(z)| \cdot \operatorname{length}(\partial T) \to 0$.
+$\abs{\oint_{\partial T} (f_n - f)\,dz} \le \sup_{z\in\partial T}\abs{f_n(z) - f(z)} \cdot \operatorname{length}(\partial T) \to 0$.
 :::
 
 :::
@@ -146,7 +146,7 @@ distance between a compact set and a disjoint closed set in a metric space is po
 :::
 
 ::: pf-step
-For any $z \in K$, the circle $\gamma_z = \{\zeta \in \CC : |\zeta - z| = r\}$ and its interior disk $D(z, r)$ are completely contained in $A$.
+For any $z \in K$, the circle $\gamma_z = \{\zeta \in \CC : \abs{\zeta - z} = r\}$ and its interior disk $D(z, r)$ are completely contained in $A$.
 
 ::: pf-proof
 definition of $r = r_0 / 2 < r_0$.
@@ -167,7 +167,7 @@ Cauchy's differentiation formula for analytic functions.
 :::
 
 ::: pf-step
-Let $\varepsilon_n = \sup_{\zeta \in A} |f_n(\zeta) - f(\zeta)|$.
+Let $\varepsilon_n = \sup_{\zeta \in A} \abs{f_n(\zeta) - f(\zeta)}$.
 By uniform convergence of $f_n \to f$ on $A$, $\lim_{n\to\infty} \varepsilon_n = 0$.
 
 ::: pf-proof
@@ -177,10 +177,10 @@ definition of uniform convergence.
 :::
 
 ::: pf-step
-For all $\zeta \in \gamma_z$, $|\zeta - z| = r$.
+For all $\zeta \in \gamma_z$, $\abs{\zeta - z} = r$.
 Applying the $ML$-inequality:
 $$
-|f_n'(z) - f'(z)| \le \frac{1}{2\pi} \frac{\varepsilon_n}{r^2} (2\pi r) = \frac{\varepsilon_n}{r}.
+\abs{f_n'(z) - f'(z)} \le \frac{1}{2\pi} \frac{\varepsilon_n}{r^2} (2\pi r) = \frac{\varepsilon_n}{r}.
 $$
 
 ::: pf-proof
@@ -192,7 +192,7 @@ $ML$-inequality with length $(\gamma_z) = 2\pi r$.
 ::: {.pf-step #s3-7}
 Since the bound $\varepsilon_n / r$ is independent of $z \in K$:
 $$
-\sup_{z \in K} |f_n'(z) - f'(z)| \le \frac{\varepsilon_n}{r} \xrightarrow[n\to\infty]{} 0.
+\sup_{z \in K} \abs{f_n'(z) - f'(z)} \le \frac{\varepsilon_n}{r} \xrightarrow[n\to\infty]{} 0.
 $$
 
 ::: pf-proof

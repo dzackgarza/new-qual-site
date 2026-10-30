@@ -56,9 +56,9 @@ Choose
 $$
 0<r_d<\min\{1,\epsilon_d/3\}.
 $$
-If $d\ne e$, then $\epsilon_d\le\|d-e\|$ and $\epsilon_e\le\|d-e\|$, so
+If $d\ne e$, then $\epsilon_d\le\norm{d-e}$ and $\epsilon_e\le\norm{d-e}$, so
 $$
-r_d+r_e<\frac23\|d-e\|<\|d-e\|.
+r_d+r_e<\frac23\norm{d-e}<\norm{d-e}.
 $$
 Hence the closed balls are pairwise disjoint.
 Moreover, if a compact set $K$ meets $B_d$, then $d$ lies in the closed $1$-neighborhood of $K$, which is compact.

@@ -16,12 +16,12 @@ audit:
 ::: {.problem}
 Let $f$ be nonconstant and holomorphic on an open set containing the closed unit disk, and suppose
 $$
-|f(z)|=1\qquad(|z|=1).
+\abs{f(z)}=1\qquad(\abs{z}=1).
 $$
 
 1. Show that $f$ has a zero in the open unit disk.
 
-2. Show that for every $|w_0|<1$, the equation $f(z)=w_0$ has a root in the open unit disk.
+2. Show that for every $\abs{w_0}<1$, the equation $f(z)=w_0$ has a root in the open unit disk.
 
 Thus the image of $f$ contains the unit disk.
 :::
@@ -32,19 +32,19 @@ Thus the image of $f$ contains the unit disk.
 
 ::: {.pf-step #s1-1}
 
-For every $|z|\le1$,
+For every $\abs{z}\le1$,
 $$
-|f(z)|\le1.
+\abs{f(z)}\le1.
 $$
 
 
 ::: pf-proof
 
 The function $f$ is holomorphic on an open neighborhood of the closed
-unit disk, and $|f|=1$ on its boundary. The maximum modulus principle
+unit disk, and $\abs{f}=1$ on its boundary. The maximum modulus principle
 therefore gives
 $$
-|f(z)|\le\max_{|w|=1}|f(w)|=1
+\abs{f(z)}\le\max_{\abs{w}=1}\abs{f(w)}=1
 $$
 throughout the closed unit disk.
 
@@ -60,22 +60,22 @@ The function $f$ has a zero in the open unit disk.
 ::: pf-proof
 
 Suppose instead that $f$ has no zero in the open unit disk. Since
-$|f|=1$ on the unit circle, $f$ is then nowhere zero on the closed
+$\abs{f}=1$ on the unit circle, $f$ is then nowhere zero on the closed
 unit disk. Hence $1/f$ is holomorphic on a neighborhood of that compact
 disk after shrinking the original neighborhood if necessary. On the
 unit circle,
 $$
-\left|\frac1{f(z)}\right|=1.
+\abs{\frac1{f(z)}}=1.
 $$
 Applying the maximum modulus principle to $1/f$ gives
 $$
-\frac1{|f(z)|}\le1
+\frac1{\abs{f(z)}}\le1
 $$
-for $|z|\le1$, so $|f(z)|\ge1$. Combining this with step [](#s1-1){.pf-ref} yields
+for $\abs{z}\le1$, so $\abs{f(z)}\ge1$. Combining this with step [](#s1-1){.pf-ref} yields
 $$
-|f(z)|=1
+\abs{f(z)}=1
 $$
-throughout the unit disk. Thus $|f|$ attains its maximum at every
+throughout the unit disk. Thus $\abs{f}$ attains its maximum at every
 interior point. The strong maximum modulus principle then forces $f$
 to be constant, contrary to the hypothesis. Therefore $f$ has a zero
 in the open unit disk.
@@ -86,14 +86,14 @@ in the open unit disk.
 
 ::: {.pf-step #s1-3}
 
-For every $w_0$ with $|w_0|<1$, the functions $f$ and $f-w_0$ have the same number of zeros in the open unit disk, counted with multiplicity.
+For every $w_0$ with $\abs{w_0}<1$, the functions $f$ and $f-w_0$ have the same number of zeros in the open unit disk, counted with multiplicity.
 
 
 ::: pf-proof
 
 On the unit circle,
 $$
-|f(z)|=1>|w_0|=|-w_0|.
+\abs{f(z)}=1>\abs{w_0}=\abs{-w_0}.
 $$
 Thus Rouché's theorem, applied to $f$ and the constant function
 $-w_0$, shows that $f$ and $f-w_0$ have the same number of zeros in
@@ -105,7 +105,7 @@ the open unit disk, counted with multiplicity.
 
 ::: {.pf-step #s1-4}
 
-For every $|w_0|<1$, there is a $z$ with $|z|<1$ such that
+For every $\abs{w_0}<1$, there is a $z$ with $\abs{z}<1$ such that
 $$
 f(z)=w_0.
 $$
@@ -128,7 +128,7 @@ The image of $f$ contains the open unit disk.
 
 ::: pf-proof
 
-Step [](#s1-4){.pf-ref} applies to every $w_0$ with $|w_0|<1$, so every point of the
+Step [](#s1-4){.pf-ref} applies to every $w_0$ with $\abs{w_0}<1$, so every point of the
 open unit disk lies in the image of $f$.
 
 :::

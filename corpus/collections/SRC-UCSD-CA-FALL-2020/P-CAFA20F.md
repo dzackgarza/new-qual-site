@@ -21,7 +21,7 @@ Let $f: \CC \to \CC$ be given by $f(z) = z - \sin z$.
 
 (a) Show that $f$ is an odd entire function of order less than or equal to 1.
 
-(b) Show that $f$ can be represented as a product $$f(z) = \frac{z^3}{6} \prod_{n=1}^{\infty}\left(1 - \frac{z^2}{a_n^2}\right)$$ where $\{a_n\}$ is a sequence of non-zero complex numbers with $\sum_{n=1}^{\infty} \frac{1}{|a_n|^2} < \infty$.
+(b) Show that $f$ can be represented as a product $$f(z) = \frac{z^3}{6} \prod_{n=1}^{\infty}\left(1 - \frac{z^2}{a_n^2}\right)$$ where $\{a_n\}$ is a sequence of non-zero complex numbers with $\sum_{n=1}^{\infty} \frac{1}{\abs{a_n}^2} < \infty$.
 :::
 
 ::: {.solution}
@@ -62,7 +62,7 @@ $\sin(-z) = -\sin z$.
 
 For any $z = x + iy \in \CC$:
 $$
-|f(z)| \le |z| + |\sin z| \le |z| + \frac{e^{|y|} + e^{-|y|}}{2} \le |z| + e^{|z|} \le C e^{|z|} \quad \text{for some constant } C > 0.
+\abs{f(z)} \le \abs{z} + \abs{\sin z} \le \abs{z} + \frac{e^{\abs{y}} + e^{-\abs{y}}}{2} \le \abs{z} + e^{\abs{z}} \le C e^{\abs{z}} \quad \text{for some constant } C > 0.
 $$
 Thus the growth order of $f$ is:
 $$
@@ -105,10 +105,10 @@ Taylor expansion of $\sin z$.
 
 ::: pf-step
 
-Since $f$ is an odd function, its non-zero zeros occur in symmetric pairs $\pm a_n$ ($n \ge 1$), where $0 < |a_1| \le |a_2| \le \cdots \to \infty$.
+Since $f$ is an odd function, its non-zero zeros occur in symmetric pairs $\pm a_n$ ($n \ge 1$), where $0 < \abs{a_1} \le \abs{a_2} \le \cdots \to \infty$.
 Because $\rho(f) \le 1$, the exponent of convergence of the zeros is at most 1, so:
 $$
-\sum_{n=1}^\infty \frac{1}{|a_n|^2} < \infty.
+\sum_{n=1}^\infty \frac{1}{\abs{a_n}^2} < \infty.
 $$
 
 ::: pf-proof
@@ -180,7 +180,7 @@ matching leading Taylor coefficient.
 ::: pf-step
 
 Conclusion:
-$f(z) = z - \sin z$ is an odd entire function of order $\le 1$, and its Weierstrass/Hadamard product is $\frac{z^3}{6} \prod_{n=1}^\infty (1 - z^2/a_n^2)$ with $\sum |a_n|^{-2} < \infty$. Q.E.D.
+$f(z) = z - \sin z$ is an odd entire function of order $\le 1$, and its Weierstrass/Hadamard product is $\frac{z^3}{6} \prod_{n=1}^\infty (1 - z^2/a_n^2)$ with $\sum \abs{a_n}^{-2} < \infty$. Q.E.D.
 
 ::: pf-proof
 

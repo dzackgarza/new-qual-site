@@ -33,7 +33,7 @@ With $\ZZ_2$ coefficients,
 $$
 H^*(\RP^3;\ZZ_2)
 \cong \ZZ_2[\alpha]/(\alpha^4),
-\qquad |\alpha|=1,
+\qquad \gradeddegree{\alpha}=1,
 $$
 so $\alpha^3\ne0$.
 

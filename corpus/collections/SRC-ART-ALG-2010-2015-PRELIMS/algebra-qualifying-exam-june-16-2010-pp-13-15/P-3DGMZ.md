@@ -30,7 +30,7 @@ Include information about the existence, order, and number $n_p$ of Sylow $p$-su
 
 ::: {.solution}
 Let $G$ be finite, let $p$ be prime, and write
-$|G|=p^a m$ with $a\geq0$ and $p\nmid m$.
+$\cardinality{G}=p^a m$ with $a\geq0$ and $p\nmid m$.
 
 ::: pf
 
@@ -71,8 +71,8 @@ Every orbit has power-of-$p$ size by orbit-stabilizer; hence
 all non-singleton orbits have size divisible by $p$.
 The subgroup $P$ itself is a fixed point. If another Sylow
 subgroup $Q$ is fixed, then $P$ normalizes $Q$. Consequently
-$PQ$ is a subgroup, of order $|P||Q|/|P\cap Q|$, a power
-of $p$. Its order divides $|G|$ and hence is at most $p^a$.
+$PQ$ is a subgroup, of order $\cardinality{P}\cardinality{Q}/\cardinality{P\cap Q}$, a power
+of $p$. Its order divides $\cardinality{G}$ and hence is at most $p^a$.
 But it contains both order-$p^a$ groups $P,Q$, forcing
 $P=PQ=Q$. Thus there is exactly one fixed point, and
 counting orbits gives $n_p\equiv1\pmod p$.
@@ -92,7 +92,7 @@ conjugacy in step [](#s1){.pf-ref} then implies that it is the only
 Sylow subgroup. Conversely, if it is unique, each conjugate
 has the same order and must equal $P$, which is normality.
 For $a=0$, the unique Sylow subgroup is the trivial group,
-so all statements above also cover primes not dividing $|G|$.
+so all statements above also cover primes not dividing $\cardinality{G}$.
 
 :::
 

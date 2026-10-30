@@ -31,7 +31,7 @@ Let $E$ be the splitting field of $f(x)$ over $\QQ$.
 Let $\alpha \in E$ be a zero of $f$, $G := \mathrm{Gal}(E/\QQ)$, and $H := \mathrm{Gal}(E/\QQ[\alpha])$.
 Suppose $H$ is not trivial.
 
-(a) Prove that $[G : H] = p$ and $\gcd(|H|, p) = 1$.
+(a) Prove that $[G : H] = p$ and $\gcd(\cardinality{H}, p) = 1$.
 
 (b) Prove that $H$ is not a normal subgroup of $G$.
 
@@ -88,19 +88,19 @@ G\hookrightarrow S_p.
 $$
 Hence
 $$
-|G|\mid p!.
+\cardinality{G}\mid p!.
 $$
 The prime $p$ occurs exactly once in the factorization of $p!$, so
 $$
-p^2\nmid |G|.
+p^2\nmid \cardinality{G}.
 $$
 By step [](#s1){.pf-ref},
 $$
-|G|=p|H|.
+\cardinality{G}=p\cardinality{H}.
 $$
-Therefore $p\nmid|H|$, i.e.
+Therefore $p\nmid\cardinality{H}$, i.e.
 $$
-\gcd(|H|,p)=1.
+\gcd(\cardinality{H},p)=1.
 $$
 This completes part (a).
 
@@ -166,11 +166,11 @@ Every Sylow $p$-subgroup $P$ of $G$ has order $p$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, $p$ divides $|G|$, while step [](#s2){.pf-ref} and
+By step [](#s1){.pf-ref}, $p$ divides $\cardinality{G}$, while step [](#s2){.pf-ref} and
 $$
-|G|=p|H|
+\cardinality{G}=p\cardinality{H}
 $$
-show that $p^2$ does not divide $|G|$.
+show that $p^2$ does not divide $\cardinality{G}$.
 Therefore a Sylow $p$-subgroup has order exactly $p$.
 
 :::
@@ -183,7 +183,7 @@ Assume for contradiction that
 $$
 N_G(P)=P.
 $$
-Then the number of Sylow $p$-subgroups is $|H|$.
+Then the number of Sylow $p$-subgroups is $\cardinality{H}$.
 
 ::: pf-proof
 
@@ -194,9 +194,9 @@ n_p=[G:N_G(P)].
 $$
 Under the assumption $N_G(P)=P$, steps [](#s5){.pf-ref} and [](#s1){.pf-ref} give
 $$
-n_p=\frac{|G|}{|P|}
-=\frac{p|H|}{p}
-=|H|.
+n_p=\frac{\cardinality{G}}{\cardinality{P}}
+=\frac{p\cardinality{H}}{p}
+=\cardinality{H}.
 $$
 
 :::
@@ -218,26 +218,26 @@ Conversely, every element of order $p$ generates a subgroup of order $p$, which 
 
 Therefore step [](#s6){.pf-ref} implies that the total number of elements of order $p$ is
 $$
-n_p(p-1)=|H|(p-1).
+n_p(p-1)=\cardinality{H}(p-1).
 $$
 Since
 $$
-|G|=p|H|,
+\cardinality{G}=p\cardinality{H},
 $$
 the number of elements whose order is not $p$ is
 $$
-|G|-|H|(p-1)
-=p|H|-|H|(p-1)
-=|H|.
+\cardinality{G}-\cardinality{H}(p-1)
+=p\cardinality{H}-\cardinality{H}(p-1)
+=\cardinality{H}.
 $$
 
-By step [](#s2){.pf-ref}, $p\nmid|H|$.
+By step [](#s2){.pf-ref}, $p\nmid\cardinality{H}$.
 Lagrange's theorem therefore shows that no element of $H$ has order $p$.
 Thus
 $$
 H\subseteq\{g\in G:o(g)\neq p\}.
 $$
-Both sets have cardinality $|H|$, so they are equal.
+Both sets have cardinality $\cardinality{H}$, so they are equal.
 
 :::
 

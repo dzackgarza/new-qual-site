@@ -19,7 +19,7 @@ audit:
 Let $X$ be the set of all infinite sequences $(\sigma_n)_{n=1}^{\infty}$ of $0$'s and $1$'s, endowed with the metric
 $$
 \operatorname{dist}\bigl((\sigma_n),(\sigma_n')\bigr)
-=\sum_{n=1}^{\infty}\frac{|\sigma_n-\sigma_n'|}{2^n}.
+=\sum_{n=1}^{\infty}\frac{\abs{\sigma_n-\sigma_n'}}{2^n}.
 $$
 Give a direct proof that every infinite subset of $X$ has an accumulation point.
 :::
@@ -70,7 +70,7 @@ The first $n$ coordinates of $\sigma$ and $\tau$ agree by step [](#s1-1){.pf-ref
 $$
 \begin{aligned}
 \operatorname{dist}(\sigma,\tau)
-&=\sum_{k=n+1}^{\infty}\frac{|\sigma_k-\tau_k|}{2^k}\\
+&=\sum_{k=n+1}^{\infty}\frac{\abs{\sigma_k-\tau_k}}{2^k}\\
 &\le\sum_{k=n+1}^{\infty}\frac1{2^k}\\
 &=2^{-n}.
 \end{aligned}

@@ -56,7 +56,7 @@ $$
 $$
 Taking Euclidean norms and using
 $$
-\|f(x)\|=\|x\|=1
+\norm{f(x)}=\norm{x}=1
 $$
 gives
 $$
@@ -78,7 +78,7 @@ Thus $v$ never vanishes.
 
 The formula
 $$
-H(x,t)=\frac{(1-t)f(x)-tx}{\|(1-t)f(x)-tx\|}
+H(x,t)=\frac{(1-t)f(x)-tx}{\norm{(1-t)f(x)-tx}}
 $$
 defines a homotopy from $f$ to the antipodal map
 $$
@@ -93,11 +93,11 @@ H:S^n\times[0,1]\to S^n.
 $$
 At $t=0$,
 $$
-H(x,0)=\frac{f(x)}{\|f(x)\|}=f(x),
+H(x,0)=\frac{f(x)}{\norm{f(x)}}=f(x),
 $$
 while at $t=1$,
 $$
-H(x,1)=\frac{-x}{\|-x\|}=-x=a(x).
+H(x,1)=\frac{-x}{\norm{-x}}=-x=a(x).
 $$
 Therefore
 $$

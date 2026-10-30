@@ -63,7 +63,7 @@ h(y)h(x-y)\,dy
 \frac{dy}
 {(1+y^2)(1+(x-y)^2)}.
 $$
-Since $h\in L^1(\RR)$, the convolution is absolutely convergent for almost every $x$; in the present case the displayed integrand is continuous and decays like $|y|^{-4}$, so it is absolutely integrable for every fixed $x$.
+Since $h\in L^1(\RR)$, the convolution is absolutely convergent for almost every $x$; in the present case the displayed integrand is continuous and decays like $\abs{y}^{-4}$, so it is absolutely integrable for every fixed $x$.
 
 :::
 
@@ -75,7 +75,7 @@ For every $\xi\in\RR$,
 $$
 \widehat h(\xi)
 =
-\pi e^{-|\xi|}.
+\pi e^{-\abs{\xi}}.
 $$
 
 
@@ -101,14 +101,14 @@ F_\xi(z)
 $$
 over the contour consisting of $[-R,R]$ and the lower semicircle, oriented clockwise. On the lower semicircle,
 $$
-|e^{-i\xi z}|
+\abs{e^{-i\xi z}}
 =
 e^{\xi\operatorname{Im}z}
 \le1,
 $$
 while
 $$
-|1+z^2|
+\abs{1+z^2}
 \ge
 R^2-1.
 $$
@@ -155,7 +155,7 @@ $$
 
 Use the upper semicircle instead. Since $\xi<0$ and $\operatorname{Im}z\ge0$ there,
 $$
-|e^{-i\xi z}|
+\abs{e^{-i\xi z}}
 =
 e^{\xi\operatorname{Im}z}
 \le1,
@@ -214,7 +214,7 @@ Steps [](#s2-1){.pf-ref} through [](#s2-3){.pf-ref} combine to give
 $$
 \widehat h(\xi)
 =
-\pi e^{-|\xi|}
+\pi e^{-\abs{\xi}}
 $$
 for all real $\xi$.
 
@@ -230,7 +230,7 @@ The Fourier transform of the convolution is
 $$
 \widehat{h*h}(\xi)
 =
-\pi^2e^{-2|\xi|}.
+\pi^2e^{-2\abs{\xi}}.
 $$
 
 
@@ -256,7 +256,7 @@ $$
 =
 \frac1{2\pi}
 \int_{\RR}
-\pi^2e^{-2|\xi|}
+\pi^2e^{-2\abs{\xi}}
 e^{ix\xi}\,d\xi.
 $$
 
@@ -267,7 +267,7 @@ The function $h*h$ belongs to $L^1(\RR)$ because $h\in L^1$, and step [](#s3){.p
 $$
 \widehat{h*h}(\xi)
 =
-\pi^2e^{-2|\xi|}
+\pi^2e^{-2\abs{\xi}}
 \in
 L^1(\RR).
 $$
@@ -282,7 +282,7 @@ Fourier inversion therefore gives the displayed formula at every point of contin
 One has
 $$
 \int_{\RR}
-e^{-2|\xi|}
+e^{-2\abs{\xi}}
 e^{ix\xi}\,d\xi
 =
 \frac4{x^2+4}.
@@ -295,7 +295,7 @@ Using symmetry,
 $$
 \begin{aligned}
 \int_{\RR}
-e^{-2|\xi|}
+e^{-2\abs{\xi}}
 e^{ix\xi}\,d\xi
 &=
 2\operatorname{Re}
@@ -311,7 +311,7 @@ e^{-(2-ix)\xi}\,d\xi\\
 \frac4{x^2+4}.
 \end{aligned}
 $$
-The integral is absolutely convergent because $e^{-2|\xi|}\in L^1$.
+The integral is absolutely convergent because $e^{-2\abs{\xi}}\in L^1$.
 
 :::
 

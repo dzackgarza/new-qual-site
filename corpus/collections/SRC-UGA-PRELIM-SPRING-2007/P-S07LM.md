@@ -34,7 +34,7 @@ $$
 $$
 means: for every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
-0<x-a<\delta\implies |f(x)-L|<\varepsilon.
+0<x-a<\delta\implies \abs{f(x)-L}<\varepsilon.
 $$
 
 :::
@@ -68,14 +68,14 @@ $$
 ::: {.pf-step #s4}
 Therefore, if $0<x<\delta$,
 $$
-\left|\frac1{\ln x}-0\right|<\varepsilon.
+\abs{\frac1{\ln x}-0}<\varepsilon.
 $$
 
 ::: pf-proof
-By step [](#s3){.pf-ref}, $\ln x<0$ and $|\ln x|>1/\varepsilon$. Thus
+By step [](#s3){.pf-ref}, $\ln x<0$ and $\abs{\ln x}>1/\varepsilon$. Thus
 $$
-\left|\frac1{\ln x}\right|
-=\frac1{|\ln x|}
+\abs{\frac1{\ln x}}
+=\frac1{\abs{\ln x}}
 <\varepsilon.
 $$
 :::

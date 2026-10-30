@@ -56,7 +56,7 @@ $$
 gH=H
 $$
 for every $g\in G$, which implies $g\in H$ for every $g$.
-Hence $G=H$, contradicting $|G|=60$ and $|H|=12$.
+Hence $G=H$, contradicting $\cardinality{G}=60$ and $\cardinality{H}=12$.
 Therefore $\rho$ is nontrivial.
 :::
 
@@ -91,7 +91,7 @@ The image $\rho(G)$ is contained in $A_5$.
 ::: pf-proof
 Consider the sign homomorphism restricted to the image:
 $$
-\operatorname{sgn}|_{\rho(G)}:\rho(G)\longrightarrow\{\pm1\}.
+\operatorname{sgn}\restrict_{\rho(G)}:\rho(G)\longrightarrow\{\pm1\}.
 $$
 Because $\rho:G\to\rho(G)$ is an isomorphism by step [](#rho-injective){.pf-ref}, the group $\rho(G)$ is simple.
 If the restricted sign map were nontrivial, its kernel would be a normal subgroup of index $2$ in $\rho(G)$, hence a nontrivial proper normal subgroup.
@@ -110,11 +110,11 @@ Hence $G\cong A_5$.
 ::: pf-proof
 By injectivity,
 $$
-|\rho(G)|=|G|=60.
+\cardinality{\rho(G)}=\cardinality{G}=60.
 $$
 Also
 $$
-|A_5|=\frac{5!}{2}=60.
+\cardinality{A_5}=\frac{5!}{2}=60.
 $$
 By step [](#image-in-a5){.pf-ref}, $\rho(G)\subseteq A_5$, and the two finite groups have the same order.
 Therefore

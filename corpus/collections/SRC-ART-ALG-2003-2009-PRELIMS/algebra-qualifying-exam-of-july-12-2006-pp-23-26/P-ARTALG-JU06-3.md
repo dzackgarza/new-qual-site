@@ -61,13 +61,13 @@ The subgroup $H$ is the kernel of $\rho$, and is therefore normal.
 Every permutation in $\rho(H)$ fixes the coset $H$, so it acts as
 a permutation of the other $p-1$ cosets. Thus $\rho(H)$ is a
 subgroup of $S_{p-1}$, and its order divides $(p-1)!$.
-Its order also divides $|H|$, by the first isomorphism theorem
+Its order also divides $\cardinality{H}$, by the first isomorphism theorem
 and Lagrange's theorem [@DF04].
 
-Every prime dividing $|H|$ divides $|G|=n$, so is at least $p$.
+Every prime dividing $\cardinality{H}$ divides $\cardinality{G}=n$, so is at least $p$.
 Every prime dividing $(p-1)!$ is less than $p$. Hence these two
 integers are relatively prime. This includes $p=2$, when
-$(p-1)!=1$. The two divisibilities imply $|\rho(H)|=1$.
+$(p-1)!=1$. The two divisibilities imply $\cardinality{\rho(H)}=1$.
 Consequently $H\subseteq\ker\rho$, and step [](#s1){.pf-ref} gives the reverse
 containment. Therefore $H=\ker\rho\lhd G$.
 

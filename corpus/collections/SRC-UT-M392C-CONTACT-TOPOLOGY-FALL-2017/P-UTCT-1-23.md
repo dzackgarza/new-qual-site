@@ -284,9 +284,9 @@ $$
 The image consists of the even residue classes modulo $2r$. By the
 first-isomorphism theorem,
 $$
-|\operatorname{im}d_2|
+\cardinality{\operatorname{im}d_2}
 =
-\frac{|\ZZ/p|}{|\ker d_2|}
+\frac{\cardinality{\ZZ/p}}{\cardinality{\ker d_2}}
 =
 \frac{p}{2}
 =

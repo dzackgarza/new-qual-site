@@ -80,7 +80,7 @@ a+b\alpha,
 $$
 Hence
 $$
-|K|=2^2=4.
+\cardinality{K}=2^2=4.
 $$
 
 :::

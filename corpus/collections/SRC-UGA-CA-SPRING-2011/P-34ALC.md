@@ -91,7 +91,7 @@ H(w)=a_2w^{-2}+a_1w^{-1}+a_0+a_{-1}w+a_{-2}w^2+\cdots,
 $$
 with $a_2\ne0$.
 
-Equivalently, the Laurent expansion of $h(z)$ for large $|z|$ has the
+Equivalently, the Laurent expansion of $h(z)$ for large $\abs{z}$ has the
 form
 $$
 h(z)=a_2z^2+a_1z+a_0+O(1/z).

@@ -19,7 +19,7 @@ audit:
 Let $V$ be a finite-dimensional real vector space.
 For a subspace $W\subset V$, define its annihilator by
 $$
-W^0=\{f:V\to\RR\text{ linear}: f|_W=0\}.
+W^0=\{f:V\to\RR\text{ linear}: f\restrict_W=0\}.
 $$
 If $W_1,W_2\subset V$ are subspaces, prove that
 $$

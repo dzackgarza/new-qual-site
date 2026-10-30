@@ -58,7 +58,7 @@ The fundamental group of the torus is the lattice of deck translations of its un
 ::: pf-step
 
 If $u,v\in H^1(X;\ZZ)$ are the dual generators, then
-$$\boxed{H^*(X;\ZZ)\cong\Lambda_{\ZZ}(u,v),\qquad |u|=|v|=1.}$$
+$$\boxed{H^*(X;\ZZ)\cong\Lambda_{\ZZ}(u,v),\qquad \gradeddegree{u}=\gradeddegree{v}=1.}$$
 Equivalently, $u^2=v^2=0$ and $u\smile v$ generates $H^2(X;\ZZ)\cong\ZZ$.
 
 ::: pf-proof

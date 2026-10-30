@@ -45,7 +45,7 @@ Prove by any method you know that:
 
 If $h:X\to Y$ is a homeomorphism and $x\in X$, then
 $$
-h|_{X\setminus\{x\}}:X\setminus\{x\}\longrightarrow Y\setminus\{h(x)\}
+h\restrict_{X\setminus\{x\}}:X\setminus\{x\}\longrightarrow Y\setminus\{h(x)\}
 $$
 is a homeomorphism.
 
@@ -72,7 +72,7 @@ a separation into two nonempty open subsets.
 Hence $\RR\setminus\{a\}$ is disconnected.
 
 For any $b\in\RR^2$, translation by $-b$ identifies $\RR^2\setminus\{b\}$ with $\RR^2\setminus\{0\}$.
-The latter is path connected: if $x,y\ne0$, move radially from $x$ to $x/\|x\|$, follow an arc of the unit circle from $x/\|x\|$ to $y/\|y\|$, and then move radially to $y$.
+The latter is path connected: if $x,y\ne0$, move radially from $x$ to $x/\norm{x}$, follow an arc of the unit circle from $x/\norm{x}$ to $y/\norm{y}$, and then move radially to $y$.
 All three pieces avoid the origin, so their concatenation is a path in $\RR^2\setminus\{0\}$ from $x$ to $y$.
 
 :::
@@ -109,16 +109,16 @@ H:(\RR^n\setminus\{0\})\times[0,1]\longrightarrow\RR^n\setminus\{0\}
 $$
 by
 $$
-H(x,t)=\left((1-t)+\frac{t}{\|x\|}\right)x.
+H(x,t)=\left((1-t)+\frac{t}{\norm{x}}\right)x.
 $$
 The scalar multiplying $x$ is positive, so $H(x,t)\ne0$.
 Moreover,
 $$
 H(x,0)=x,
 \qquad
-H(x,1)=\frac{x}{\|x\|}\in S^{n-1}.
+H(x,1)=\frac{x}{\norm{x}}\in S^{n-1}.
 $$
-If $x\in S^{n-1}$, then $\|x\|=1$ and
+If $x\in S^{n-1}$, then $\norm{x}=1$ and
 $$
 H(x,t)=x
 $$

@@ -26,12 +26,12 @@ audit:
 ::: {.problem}
 Let $f : \RR \to \RR$ be a $2\pi$-periodic function, i.e. $f(x) = f(x + 2\pi)$, such that there exists $C > 0$ (possibly large) and $\epsilon > 0$ (possibly small) with
 $$
-|f(x) - f(y)| \leq C|x - y|^{1/2 + \epsilon}.
+\abs{f(x) - f(y)} \leq C\abs{x - y}^{1/2 + \epsilon}.
 $$
 Show that the Fourier series of $f$ converges uniformly.
 
 Hint: Half credit will be given for the special case $\epsilon = 1/2$, which can be treated more directly.
-For the general case try computing $\int_0^{2\pi} |f(x+h) - f(x)|^2\,dx$ two different ways.
+For the general case try computing $\int_0^{2\pi} \abs{f(x+h) - f(x)}^2\,dx$ two different ways.
 :::
 
 ::: {.solution}
@@ -50,12 +50,12 @@ $$
 $$
 By hypothesis,
 $$
-|f(x+h)-f(x)|\le C|h|^\alpha.
+\abs{f(x+h)-f(x)}\le C\abs{h}^\alpha.
 $$
 Therefore
 $$
-\int_0^{2\pi}|f(x+h)-f(x)|^2\,dx
-\le 2\pi C^2|h|^{2\alpha}.
+\int_0^{2\pi}\abs{f(x+h)-f(x)}^2\,dx
+\le 2\pi C^2\abs{h}^{2\alpha}.
 $$
 
 :::
@@ -82,13 +82,13 @@ $$
 $$
 By Parseval,
 $$
-\int_0^{2\pi}|f(x+h)-f(x)|^2\,dx
-=2\pi\sum_{n\in\ZZ}|c_n|^2|e^{inh}-1|^2.
+\int_0^{2\pi}\abs{f(x+h)-f(x)}^2\,dx
+=2\pi\sum_{n\in\ZZ}\abs{c_n}^2\abs{e^{inh}-1}^2.
 $$
 Combining this with Step 1 gives
 $$
-\sum_{n\in\ZZ}|c_n|^2|e^{inh}-1|^2
-\le C^2|h|^{2\alpha}.
+\sum_{n\in\ZZ}\abs{c_n}^2\abs{e^{inh}-1}^2
+\le C^2\abs{h}^{2\alpha}.
 $$
 
 :::
@@ -107,19 +107,19 @@ h=\frac1N.
 $$
 If
 $$
-N\le |n|\le2N,
+N\le \abs{n}\le2N,
 $$
 then
 $$
-1\le |nh|\le2.
+1\le \abs{nh}\le2.
 $$
 Hence there is an absolute constant $c_0>0$ such that
 $$
-|e^{inh}-1|\ge c_0
+\abs{e^{inh}-1}\ge c_0
 $$
 throughout this range. Therefore Step 2 gives
 $$
-\sum_{N\le |n|\le2N}|c_n|^2
+\sum_{N\le \abs{n}\le2N}\abs{c_n}^2
 \le C_1N^{-2\alpha}
 $$
 for a constant $C_1$ independent of $N$.
@@ -137,16 +137,16 @@ Upgrade the dyadic estimate to absolute summability.
 By Cauchy--Schwarz,
 $$
 \begin{aligned}
-\sum_{N\le |n|\le2N}|c_n|
+\sum_{N\le \abs{n}\le2N}\abs{c_n}
 &\le (2N+2)^{1/2}
-\left(\sum_{N\le |n|\le2N}|c_n|^2\right)^{1/2}\\
+\left(\sum_{N\le \abs{n}\le2N}\abs{c_n}^2\right)^{1/2}\\
 &\le C_2N^{1/2-\alpha}\\
 &=C_2N^{-\varepsilon}.
 \end{aligned}
 $$
 Apply this with $N=2^k$. Then
 $$
-\sum_{2^k\le |n|<2^{k+1}}|c_n|
+\sum_{2^k\le \abs{n}<2^{k+1}}\abs{c_n}
 \le C_2 2^{-k\varepsilon}.
 $$
 Since
@@ -155,7 +155,7 @@ $$
 $$
 we obtain
 $$
-\sum_{n\in\ZZ}|c_n|<\infty.
+\sum_{n\in\ZZ}\abs{c_n}<\infty.
 $$
 
 :::

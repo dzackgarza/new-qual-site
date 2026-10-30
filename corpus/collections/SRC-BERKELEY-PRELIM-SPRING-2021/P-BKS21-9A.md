@@ -43,7 +43,7 @@ be the set of distinct conjugates of $H$.
 
 The number of distinct conjugates of $H$ is
 $$
-|\mathcal C|=[G:N].
+\cardinality{\mathcal C}=[G:N].
 $$
 
 
@@ -59,7 +59,7 @@ The group $G$ acts on its subgroups by conjugation. The stabilizer of $H$ for th
 
 One has
 $$
-|\mathcal C|\leq [G:H].
+\cardinality{\mathcal C}\leq [G:H].
 $$
 
 
@@ -83,17 +83,17 @@ Apply step [](#s1-1){.pf-ref}.
 
 The union of all conjugates satisfies
 $$
-\left|
+\cardinality{
 \bigcup_{K\in\mathcal C}K
-\right|
+}
 \leq
-1+|\mathcal C|(|H|-1).
+1+\cardinality{\mathcal C}(\cardinality{H}-1).
 $$
 
 
 ::: pf-proof
 
-Every $K\in\mathcal C$ is conjugate to $H$, so $|K|=|H|$. Also every subgroup $K$ contains the identity element $e$. Thus, after counting $e$ once, each of the $|\mathcal C|$ conjugates can contribute at most $|H|-1$ further elements. This gives the stated bound.
+Every $K\in\mathcal C$ is conjugate to $H$, so $\cardinality{K}=\cardinality{H}$. Also every subgroup $K$ contains the identity element $e$. Thus, after counting $e$ once, each of the $\cardinality{\mathcal C}$ conjugates can contribute at most $\cardinality{H}-1$ further elements. This gives the stated bound.
 
 :::
 
@@ -101,7 +101,7 @@ Every $K\in\mathcal C$ is conjugate to $H$, so $|K|=|H|$. Also every subgroup $K
 
 ::: {.pf-step #s1-4}
 
-The union of the conjugates has strictly fewer than $|G|$ elements.
+The union of the conjugates has strictly fewer than $\cardinality{G}$ elements.
 
 
 ::: pf-proof
@@ -109,20 +109,20 @@ The union of the conjugates has strictly fewer than $|G|$ elements.
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
-\left|
+\cardinality{
 \bigcup_{g\in G}gHg^{-1}
-\right|
+}
 &\leq
-1+[G:H](|H|-1)\\
+1+[G:H](\cardinality{H}-1)\\
 &=
-1+\frac{|G|}{|H|}(|H|-1)\\
+1+\frac{\cardinality{G}}{\cardinality{H}}(\cardinality{H}-1)\\
 &=
-|G|-[G:H]+1.
+\cardinality{G}-[G:H]+1.
 \end{aligned}
 $$
 Since $H$ is proper, $[G:H]\geq2$. Therefore
 $$
-|G|-[G:H]+1\leq |G|-1<|G|.
+\cardinality{G}-[G:H]+1\leq \cardinality{G}-1<\cardinality{G}.
 $$
 
 :::
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-If the union were all of $G$, its cardinality would be $|G|$, contradicting step [](#s1-4){.pf-ref}.
+If the union were all of $G$, its cardinality would be $\cardinality{G}$, contradicting step [](#s1-4){.pf-ref}.
 
 :::
 

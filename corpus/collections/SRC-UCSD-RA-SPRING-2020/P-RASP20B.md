@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 (1) Let $f \in L^\infty(\RR)$ and $g \in L^1(\RR)$.
-Assume that $f$ is continuous at $x = 1$ with $f(1) = \pi$ and that $g \geq 0$ on $\RR$ and $\|g\|_{L^1(\RR)} = 2$.
+Assume that $f$ is continuous at $x = 1$ with $f(1) = \pi$ and that $g \geq 0$ on $\RR$ and $\norm{g}_{L^1(\RR)} = 2$.
 Calculate
 $$
 \lim_{k \to +\infty} \int_{[-k,k]} f\!\left(1 + \frac{x^2}{k}\right) g(x)\,dm(x).
@@ -50,7 +50,7 @@ Compute the convolution-type limit.
 
 ::: pf-proof
 
-For fixed $x\in\RR$, eventually $|x|\le k$, and
+For fixed $x\in\RR$, eventually $\abs{x}\le k$, and
 $$
 1+\frac{x^2}{k}\longrightarrow1.
 $$
@@ -60,15 +60,15 @@ f\!\left(1+\frac{x^2}{k}\right)\longrightarrow f(1)=\pi.
 $$
 Moreover,
 $$
-\left|\mathbf1_{[-k,k]}(x)f\!\left(1+\frac{x^2}{k}\right)g(x)\right|
-\le \|f\|_\infty |g(x)|,
+\abs{\mathbf1_{[-k,k]}(x)f\!\left(1+\frac{x^2}{k}\right)g(x)}
+\le \norm{f}_\infty \abs{g(x)},
 $$
 and the right side is integrable. Dominated convergence therefore gives
 $$
 \lim_{k\to\infty}\int_{[-k,k]}f\!\left(1+\frac{x^2}{k}\right)g(x)\,dx
 =\pi\int_\RR g(x)\,dx.
 $$
-Since $g\ge0$ and $\|g\|_1=2$,
+Since $g\ge0$ and $\norm{g}_1=2$,
 $$
 \boxed{L=2\pi.}
 $$

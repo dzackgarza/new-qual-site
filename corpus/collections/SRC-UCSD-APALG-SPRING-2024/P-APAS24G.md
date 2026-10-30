@@ -17,7 +17,7 @@ review: draft
 Let $(V,\varphi)$ be a finite-dimensional unitary representation of a finite group $G$.
 State the definition of the space $V^G$ of $G$-invariant vectors in $V$, and prove that
 $$
-P=\frac{1}{|G|}\sum_{g\in G}\varphi(g)
+P=\frac{1}{\cardinality{G}}\sum_{g\in G}\varphi(g)
 $$
 is the orthogonal projection of $V$ onto $V^G$.
 :::
@@ -29,12 +29,12 @@ V^G=\{v\in V:\varphi(g)v=v\text{ for every }g\in G\}.
 $$
 Set
 $$
-P=\frac1{|G|}\sum_{g\in G}\varphi(g).
+P=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(g).
 $$
 For every $h\in G$,
 $$
 \varphi(h)P
-=\frac1{|G|}\sum_{g\in G}\varphi(hg)
+=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(hg)
 =P,
 $$
 because $g\mapsto hg$ permutes $G$. Therefore $Pv\in V^G$ for every $v$, so
@@ -43,7 +43,7 @@ $$
 $$
 Conversely, if $v\in V^G$, then
 $$
-Pv=\frac1{|G|}\sum_{g\in G}v=v.
+Pv=\frac1{\cardinality{G}}\sum_{g\in G}v=v.
 $$
 Thus
 $$
@@ -58,7 +58,7 @@ $$
 Hence
 $$
 P^*
-=\frac1{|G|}\sum_{g\in G}\varphi(g^{-1})
+=\frac1{\cardinality{G}}\sum_{g\in G}\varphi(g^{-1})
 =P,
 $$
 because inversion permutes $G$. Thus $P$ is a self-adjoint idempotent, hence the orthogonal projection onto its image. Therefore

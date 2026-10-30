@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Which of the following sets in $\RR^3$ is compact?
 
-(A) $\{x, y, z \mid |x + y + z| < 5\}$
+(A) $\{x, y, z \mid \abs{x + y + z} < 5\}$
 (B) $\{x, y, z \mid x < 2 \ \& \ y < 2 \ \& \ z < 2\}$
 (C) $\{x, y, z \mid 0 \le x \le 3, 0 \le y \le 3, 0 \le z \le 3\}$
 (D) $\{x, y, z \mid x \ge 0, y \ge 0, z \ge 0\}$
@@ -42,7 +42,7 @@ $$
 $$
 It is closed as a finite product of closed intervals, and it is bounded because every point $(x,y,z)$ in it satisfies
 $$
-\|(x,y,z)\|^2=x^2+y^2+z^2\le 27.
+\norm{(x,y,z)}^2=x^2+y^2+z^2\le 27.
 $$
 
 :::
@@ -73,7 +73,7 @@ For (A), the points
 $$
 \left(5-\frac1n,0,0\right)
 $$
-belong to the set for $n\ge1$ and converge to $(5,0,0)$, which is not in the set because $|5|\not<5$.
+belong to the set for $n\ge1$ and converge to $(5,0,0)$, which is not in the set because $\abs{5}\not<5$.
 
 For (E), the points
 $$

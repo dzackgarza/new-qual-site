@@ -55,7 +55,7 @@ $$
 
 ::: pf-proof
 
-The assumed irreducibility of the degree-six polynomial gives $[F(r):F]=6$, hence $|F(r)|=64$. Finite fields are Galois over their prime fields and the Frobenius automorphism $\sigma(z)=z^2$ generates the Galois group of order six. In particular, the Frobenius conjugates of $r$ belong to $F(r)$, so this field contains all roots of $f$ and is its splitting field.
+The assumed irreducibility of the degree-six polynomial gives $[F(r):F]=6$, hence $\cardinality{F(r)}=64$. Finite fields are Galois over their prime fields and the Frobenius automorphism $\sigma(z)=z^2$ generates the Galois group of order six. In particular, the Frobenius conjugates of $r$ belong to $F(r)$, so this field contains all roots of $f$ and is its splitting field.
 
 :::
 

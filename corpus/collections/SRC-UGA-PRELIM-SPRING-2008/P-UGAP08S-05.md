@@ -217,15 +217,15 @@ $$
 
 Their norms are
 $$
-\|u_1\|
+\norm{u_1}
 =
 \sqrt3,
 \qquad
-\|u_2\|
+\norm{u_2}
 =
 \sqrt2,
 \qquad
-\|u_3\|
+\norm{u_3}
 =
 \sqrt6.
 $$

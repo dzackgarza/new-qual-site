@@ -52,7 +52,7 @@ $$
 and consider the positively oriented boundary of the sector
 $$
 0\le \arg z\le \frac\pi n,
-\qquad |z|\le R,
+\qquad \abs{z}\le R,
 $$
 with $R>1$.
 
@@ -104,9 +104,9 @@ $$
 -e^{i\pi/n}I_n(R).
 $$
 
-On the circular arc $|z|=R$,
+On the circular arc $\abs{z}=R$,
 $$
-|1+z^{2n}|\ge R^{2n}-1.
+\abs{1+z^{2n}}\ge R^{2n}-1.
 $$
 The arc has length $\pi R/n$, hence its integral has absolute value at most
 $$

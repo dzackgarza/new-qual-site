@@ -50,13 +50,13 @@ g(z)=\frac{f(z)-i}{f(z)+i}.
 $$
 Its denominator is nonzero because $f(z)\in H$, and
 $$
-|f(z)+i|^2-|f(z)-i|^2=4\operatorname{Im}f(z)>0.
+\abs{f(z)+i}^2-\abs{f(z)-i}^2=4\operatorname{Im}f(z)>0.
 $$
-Thus $g$ is holomorphic on the punctured plane with $|g|<1$.
+Thus $g$ is holomorphic on the punctured plane with $\abs{g}<1$.
 The removable-singularity theorem extends it to an entire
-function $G$, with $|G(0)|\leq1$ by continuity [@SS03].
+function $G$, with $\abs{G(0)}\leq1$ by continuity [@SS03].
 This entire extension is bounded, so Liouville's theorem
-makes it constant. Its value $c=g(1)$ satisfies $|c|<1$.
+makes it constant. Its value $c=g(1)$ satisfies $\abs{c}<1$.
 Solving the fractional transformation gives
 $$
 f(z)=i\frac{1+c}{1-c}\qquad(z\ne0),

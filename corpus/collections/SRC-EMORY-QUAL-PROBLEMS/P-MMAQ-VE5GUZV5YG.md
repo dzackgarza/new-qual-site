@@ -58,14 +58,14 @@ $gxH$. Multiplication by $g^{-1}$ is its inverse, and
 the multiplication law in $S_n$ verifies the action law.
 Its kernel $N$ is normal in $S_n$ and contained in $H$,
 since an element fixing all cosets fixes the coset $H$.
-In particular $|N|$ divides $|H|=(n-1)!$.
+In particular $\cardinality{N}$ divides $\cardinality{H}=(n-1)!$.
 
 For $n\geq5$, every nontrivial normal subgroup of $S_n$
 contains $A_n$ [@DF04]. Since
-$|A_n|=n!/2>(n-1)!=|H|$, this forces $N=1$.
+$\cardinality{A_n}=n!/2>(n-1)!=\cardinality{H}$, this forces $N=1$.
 For $n=4$, the nontrivial normal subgroups are
 $V_4,A_4,S_4$, of orders $4,12,24$ [@DF04]. None has
-order dividing $|H|=6$, so again $N=1$.
+order dividing $\cardinality{H}=6$, so again $N=1$.
 For $n=3$, the only nontrivial proper normal subgroup
 is $A_3$, of order three [@DF04]; neither it nor $S_3$
 can lie in the order-two group $H$.
@@ -113,7 +113,7 @@ $h\in H_n$, as well as $n$. The stabilizer of $n$ in
 $J$ is exactly $H_n$, because $H_n\leq J$ and $H_n$
 is the full stabilizer in $S_n$.
 Orbit-stabilizer gives
-$|J|=n|H_n|=n!$, hence $J=S_n$.
+$\cardinality{J}=n\cardinality{H_n}=n!$, hence $J=S_n$.
 This proves part (2) and, for $n\geq2$, maximality of $H$.
 :::
 

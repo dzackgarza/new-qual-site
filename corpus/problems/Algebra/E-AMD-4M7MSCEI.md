@@ -34,10 +34,10 @@ Let $\phi\in\Aut(G)$.
 ::: pf
 
 ::: {.pf-step #restriction}
-The restriction $\phi|_K$ is an automorphism of $K$.
+The restriction $\phi\restrict_K$ is an automorphism of $K$.
 
 ::: pf-proof
-Since $K\operatorname{char}G$, both $\phi$ and $\phi^{-1}$ map $K$ onto $K$, so $\phi|_K\colon K\to K$ is a bijective homomorphism.
+Since $K\operatorname{char}G$, both $\phi$ and $\phi^{-1}$ map $K$ onto $K$, so $\phi\restrict_K\colon K\to K$ is a bijective homomorphism.
 :::
 
 :::
@@ -46,7 +46,7 @@ Since $K\operatorname{char}G$, both $\phi$ and $\phi^{-1}$ map $K$ onto $K$, so 
 $\phi(H)=H$, so $H\operatorname{char}G$.
 
 ::: pf-proof
-Since $H\operatorname{char}K$ and $\phi|_K\in\Aut(K)$ by step [](#restriction){.pf-ref}, $\phi(H)=(\phi|_K)(H)=H$. This holds for every $\phi\in\Aut(G)$.
+Since $H\operatorname{char}K$ and $\phi\restrict_K\in\Aut(K)$ by step [](#restriction){.pf-ref}, $\phi(H)=(\phi\restrict_K)(H)=H$. This holds for every $\phi\in\Aut(G)$.
 :::
 
 :::

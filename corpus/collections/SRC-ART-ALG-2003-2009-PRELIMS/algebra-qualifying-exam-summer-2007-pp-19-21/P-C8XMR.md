@@ -70,8 +70,8 @@ u=\sqrt{\frac{s+a}{2}},\qquad
 v=\sqrt{\frac{s-a}{2}}.
 $$
 All radicands are nonnegative, and all three numbers are constructible.
-We have $u^2-v^2=a$ and $2uv=|b|$. Choose
-$\varepsilon\in\{1,-1\}$ with $\varepsilon|b|=b$; either sign is
+We have $u^2-v^2=a$ and $2uv=\abs{b}$. Choose
+$\varepsilon\in\{1,-1\}$ with $\varepsilon\abs{b}=b$; either sign is
 allowed when $b=0$. Then $(u+i\varepsilon v)^2=z$.
 The quadratic formula now shows that every quadratic extension
 of a field of constructible complex numbers still consists of
@@ -90,12 +90,12 @@ to the identity subgroup with every successive index equal to $2$.
 
 We induct on $n$, with the trivial group as the case $n=0$.
 For a nontrivial $2$-group $G$, the conjugacy-class equation shows
-that $|Z(G)|$ is even: every noncentral conjugacy class has size
+that $\cardinality{Z(G)}$ is even: every noncentral conjugacy class has size
 $[G:C_G(g)]$, a power of $2$ greater than $1$.
 Since the center contains the identity, it therefore contains some
 $z\ne1$. By Lagrange's theorem $z$ has order $2^e$ for some $e\geq1$.
 The element $z^{2^{e-1}}$ is central of order $2$; let $C$ be its
-generated subgroup. Then $C\lhd G$ and $|G/C|=2^{n-1}$.
+generated subgroup. Then $C\lhd G$ and $\cardinality{G/C}=2^{n-1}$.
 
 Apply induction to $G/C$. Taking inverse images of its subgroup
 chain gives a chain from $G$ to $C$ with all successive indices $2$,

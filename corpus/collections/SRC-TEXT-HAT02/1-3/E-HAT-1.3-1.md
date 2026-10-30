@@ -46,7 +46,7 @@ p^{-1}(U)=\coprod_{\lambda\in\Lambda}V_\lambda
 $$
 and each restriction
 $$
-p|_{V_\lambda}:V_\lambda\longrightarrow U
+p\restrict_{V_\lambda}:V_\lambda\longrightarrow U
 $$
 is a homeomorphism.
 
@@ -111,7 +111,7 @@ is a homeomorphism.
 
 The homeomorphism
 $$
-p|_{V_\lambda}:V_\lambda\to U
+p\restrict_{V_\lambda}:V_\lambda\to U
 $$
 restricts to a homeomorphism between the inverse image of $A\cap U$ and $A\cap U$.
 But that inverse image is exactly
@@ -127,7 +127,7 @@ $$
 
 Therefore every point of $A$ has an evenly covered neighborhood for
 $$
-p|_{\widetilde A}:\widetilde A\to A,
+p\restrict_{\widetilde A}:\widetilde A\to A,
 $$
 so this restriction is a covering map.
 

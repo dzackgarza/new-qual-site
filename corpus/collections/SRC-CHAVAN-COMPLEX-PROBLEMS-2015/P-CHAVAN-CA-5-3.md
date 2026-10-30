@@ -15,17 +15,17 @@ audit:
 
 ::: {.problem}
 Let $f:\Omega\to\CC$ be an open mapping on an open set $\Omega\subseteq\CC$.
-Define $|f|(z)=|f(z)|$.
+Define $\abs{f}(z)=\abs{f(z)}$.
 
-1. Show that $|f|$ cannot have a local maximum at a point of $\Omega$.
+1. Show that $\abs{f}$ cannot have a local maximum at a point of $\Omega$.
 
-2. If $\overline\Omega$ is compact and $f$ is continuous on $\overline\Omega$, show that $|f|$ attains its maximum on $\partial\Omega$.
+2. If $\overline\Omega$ is compact and $f$ is continuous on $\overline\Omega$, show that $\abs{f}$ attains its maximum on $\partial\Omega$.
 :::
 
 ::: {.solution}
 
 For part (2), the assertion necessarily presupposes that $\Omega$ is nonempty;
-otherwise $|f|$ has no maximum. We interpret continuity on $\overline\Omega$ as
+otherwise $\abs{f}$ has no maximum. We interpret continuity on $\overline\Omega$ as
 the existence of a continuous extension to $\overline\Omega$, denoted again by
 $f$. For $c\in\CC$ and $r>0$, write
 $$
@@ -36,14 +36,14 @@ $$
 
 ::: {.pf-step #s1}
 
-The function $|f|$ cannot have a local maximum at any point of $\Omega$.
+The function $\abs{f}$ cannot have a local maximum at any point of $\Omega$.
 
 
 ::: pf-proof
 
 ::: {.pf-step #s1-1}
 
-Suppose, for contradiction, that $|f|$ has a local maximum at
+Suppose, for contradiction, that $\abs{f}$ has a local maximum at
 $a\in\Omega$. Then there is an $r>0$ such that
 $$
 B(a,r)\subseteq\Omega
@@ -118,14 +118,14 @@ step [](#s1-3){.pf-ref}. Hence the assumed local maximum cannot exist.
 
 ::: {.pf-step #s2}
 
-Under the hypotheses of part (2), $|f|$ attains a maximum at some
+Under the hypotheses of part (2), $\abs{f}$ attains a maximum at some
 $b\in\overline\Omega$.
 
 
 ::: pf-proof
 
 The set $\overline\Omega$ is nonempty and compact, and the continuous extension
-of $f$ makes $|f|=\abs{f}$ continuous on $\overline\Omega$. The extreme value
+of $f$ makes $\abs{f}=\abs{f}$ continuous on $\overline\Omega$. The extreme value
 theorem therefore gives $b\in\overline\Omega$ such that
 $$
 \abs{f(z)}\leq\abs{f(b)}
@@ -143,7 +143,7 @@ Every such maximizing point $b$ belongs to $\partial\Omega$.
 
 ::: pf-proof
 
-If $b\in\Omega$, then the inequality in step [](#s2){.pf-ref} shows that $|f|$ has a local
+If $b\in\Omega$, then the inequality in step [](#s2){.pf-ref} shows that $\abs{f}$ has a local
 maximum at $b$, contradicting step [](#s1){.pf-ref}. Since $\Omega$ is open,
 $$
 \overline\Omega\setminus\Omega=\partial\Omega,
@@ -156,7 +156,7 @@ so $b\in\partial\Omega$.
 
 ::: {.pf-step #s4}
 
-Therefore $|f|$ attains its maximum on $\partial\Omega$.
+Therefore $\abs{f}$ attains its maximum on $\partial\Omega$.
 
 
 ::: pf-proof
@@ -181,7 +181,7 @@ Step [](#s1){.pf-ref} proves part (1), and step [](#s4){.pf-ref} proves part (2)
 ::: {.remark}
 Part (2) needs $\Omega\neq\varnothing$. If $\Omega=\varnothing$, then
 $\overline\Omega$ is compact and the empty map is open and continuous, but
-$|f|$ has no maximum. The phrase "$f$ is continuous on $\overline\Omega$" is
+$\abs{f}$ has no maximum. The phrase "$f$ is continuous on $\overline\Omega$" is
 understood as saying that $f$ extends continuously from $\Omega$ to
 $\overline\Omega$.
 :::

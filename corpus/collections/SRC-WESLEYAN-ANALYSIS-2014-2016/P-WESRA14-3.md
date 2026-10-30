@@ -216,7 +216,7 @@ c_n\mu(A_n)\\
 $$
 Hence
 $$
-\int_X |f|,d\mu
+\int_X \abs{f},d\mu
 <
 \infty.
 $$
@@ -343,7 +343,7 @@ $$
 Therefore
 $$
 \begin{aligned}
-\int_X |f|\,d\mu
+\int_X \abs{f}\,d\mu
 &\ge
 \int_{F_n}f\,d\mu\\
 &\ge
@@ -355,7 +355,7 @@ $$
 \mu(F_n)
 \le
 n
-\int_X |f|\,d\mu
+\int_X \abs{f}\,d\mu
 <
 \infty.
 $$

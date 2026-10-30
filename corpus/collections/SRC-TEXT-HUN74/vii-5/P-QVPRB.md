@@ -31,7 +31,7 @@ $p_\phi(\phi) = 0$.
 
 *Hint: If $A$ is the matrix of $\phi$ and $B = x I_n - A$ then*
 $$
-B^a B = |B| I_n = p_\phi I_n \in M_n(k[x])
+B^a B = \determinant{B} I_n = p_\phi I_n \in M_n(k[x])
 .$$
 *If $E$ is a $k[x]$-module with structure induced by $\phi$, and $\psi$ is the $k[x]$-module endomorphism $E\to E$ with matrix given by $B$, then*
 $$ 

@@ -63,7 +63,7 @@ $$
 
 The function $g$ is holomorphic on $\DD\setminus\{0\}$ and satisfies
 $$
-\boxed{|g(z)|<1}.
+\boxed{\abs{g(z)}<1}.
 $$
 
 
@@ -79,23 +79,23 @@ $$
 $$
 Compute
 $$
-|w+1|^2-|w-1|^2
+\abs{w+1}^2-\abs{w-1}^2
 =
 4\operatorname{Re}w
 >0.
 $$
 Hence
 $$
-|w-1|<|w+1|,
+\abs{w-1}<\abs{w+1},
 $$
 so
 $$
-\left|
+\abs{
 \frac{w-1}{w+1}
-\right|
+}
 <1.
 $$
-Thus $|g(z)|<1$.
+Thus $\abs{g(z)}<1$.
 
 :::
 
@@ -110,7 +110,7 @@ The singularity of $g$ at $0$ is removable.
 
 By step [](#s1-2){.pf-ref},
 $$
-|g(z)|<1
+\abs{g(z)}<1
 $$
 throughout the punctured disk. Thus $g$ is bounded near $0$. Riemann's removable-singularity theorem therefore gives a holomorphic extension
 $$
@@ -125,7 +125,7 @@ $$
 
 The extended value satisfies
 $$
-\boxed{|\widetilde g(0)|<1}.
+\boxed{\abs{\widetilde g(0)}<1}.
 $$
 
 
@@ -133,13 +133,13 @@ $$
 
 Continuity of $\widetilde g$ and step [](#s1-2){.pf-ref} give
 $$
-|\widetilde g(0)|\le1.
+\abs{\widetilde g(0)}\le1.
 $$
-Suppose equality held. Then $|\widetilde g|$ would attain its maximum value $1$ at the interior point $0$. By the maximum-modulus principle, $\widetilde g$ would be constant on the connected disk.
+Suppose equality held. Then $\abs{\widetilde g}$ would attain its maximum value $1$ at the interior point $0$. By the maximum-modulus principle, $\widetilde g$ would be constant on the connected disk.
 
 That constant would have modulus $1$, contradicting
 $$
-|g(z)|<1
+\abs{g(z)}<1
 $$
 for every
 $$
@@ -147,7 +147,7 @@ z\ne0.
 $$
 Hence
 $$
-|\widetilde g(0)|<1.
+\abs{\widetilde g(0)}<1.
 $$
 
 :::

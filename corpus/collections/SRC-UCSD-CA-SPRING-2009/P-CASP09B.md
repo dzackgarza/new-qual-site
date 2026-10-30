@@ -29,7 +29,7 @@ $$
 
 Apply the argument principle to the boundary of the quarter-disk
 $$
-Q_R=\{z:|z|<R,\ 0<\arg z<\pi/2\}
+Q_R=\{z:\abs{z}<R,\ 0<\arg z<\pi/2\}
 $$
 for large $R$. Along the positive real segment, the argument of $P$ is constant
 equal to $0$.

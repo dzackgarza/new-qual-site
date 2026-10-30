@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space, $A\subseteq X$ a subspace, and $I = [0,1]$.
-The pair $(X, A)$ has the \dfn{homotopy extension property} if for every space $Y$, every continuous map $f_0\colon X\to Y$, and every [[D-Z7I7F|homotopy]] $g_t\colon A\to Y$ with $g_0 = f_0|_A$, there is a homotopy $f_t\colon X\to Y$ starting at $f_0$ with $f_t|_A = g_t$ for all $t\in I$ [@Hat02].
+The pair $(X, A)$ has the \dfn{homotopy extension property} if for every space $Y$, every continuous map $f_0\colon X\to Y$, and every [[D-Z7I7F|homotopy]] $g_t\colon A\to Y$ with $g_0 = f_0\restrict_A$, there is a homotopy $f_t\colon X\to Y$ starting at $f_0$ with $f_t\restrict_A = g_t$ for all $t\in I$ [@Hat02].
 Equivalently, every pair of continuous maps $X\times\theset{0}\to Y$ and $A\times I\to Y$ that agree on $A\times\theset{0}$ extends to a continuous map $X\times I\to Y$.
 :::
 

@@ -102,9 +102,9 @@ corresponding coordinate function. Thus
 $$
 \arg(z)
 =\left(\theta\mapsto e^{i\theta}\right)^{-1}
-\left(\frac{z}{|z|}\right)
+\left(\frac{z}{\abs{z}}\right)
 $$
-for $z\in S$. The map $z\mapsto z/|z|$ is continuous on
+for $z\in S$. The map $z\mapsto z/\abs{z}$ is continuous on
 $\CC^*$, so this composition is continuous on $S$, in
 particular at $z_0$.
 

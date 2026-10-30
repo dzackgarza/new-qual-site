@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HBWN6
 kind: problem
-title: $f(y)g(x-y)\in L^1(\RR^2)$ and $\|f*g\|_1\le\|f\|_1\|g\|_1$ for $f,g\in L^1(\RR)$
+title: $f(y)g(x-y)\in L^1(\RR^2)$ and $\norm{f*g}_1\le\norm{f}_1\norm{g}_1$ for $f,g\in L^1(\RR)$
 classification:
   areas:
   - real-analysis
@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $f, g\in L^1(\RR)$. 
-Argue that $H(x, y) \definedas f(y) g(x-y)$ defines a function in $L^1(\RR^2)$ and deduce from this fact that
+Argue that $H(x, y) \coloneqq f(y) g(x-y)$ defines a function in $L^1(\RR^2)$ and deduce from this fact that
 $$
-(f\ast g)(x) \definedas \int_\RR f(y) g(x-y) \,dy
+(f\ast g)(x) \coloneqq \int_\RR f(y) g(x-y) \,dy
 $$
 defines a function in $L^1(\RR)$ that satisfies 
 $$
@@ -80,14 +80,14 @@ is therefore measurable on $\RR^2$.
 Prove that $H\in L^1(\RR^2)$.
 
 ::: pf-proof
-Since $|H|$ is nonnegative and measurable, Tonelli's theorem applies directly:
+Since $\abs{H}$ is nonnegative and measurable, Tonelli's theorem applies directly:
 $$
 \begin{aligned}
-\int_{\RR^2}|H(x,y)|\,dx\,dy
-&=\int_{\RR}|f(y)|
-  \left(\int_{\RR}|g(x-y)|\,dx\right)dy\\
-&=\int_{\RR}|f(y)|\,\|g\|_1\,dy\\
-&=\|f\|_1\|g\|_1<\infty.
+\int_{\RR^2}\abs{H(x,y)}\,dx\,dy
+&=\int_{\RR}\abs{f(y)}
+  \left(\int_{\RR}\abs{g(x-y)}\,dx\right)dy\\
+&=\int_{\RR}\abs{f(y)}\,\norm{g}_1\,dy\\
+&=\norm{f}_1\norm{g}_1<\infty.
 \end{aligned}
 $$
 Hence $H\in L^1(\RR^2)$.
@@ -105,21 +105,21 @@ $$
 $$
 is defined for almost every $x$. Moreover,
 $$
-|(f*g)(x)|
-\le \int_{\RR}|H(x,y)|\,dy.
+\abs{(f*g)(x)}
+\le \int_{\RR}\abs{H(x,y)}\,dy.
 $$
 Integrating in $x$ and using Tonelli,
 $$
 \begin{aligned}
-\|f*g\|_1
-&\le \int_{\RR}\int_{\RR}|H(x,y)|\,dy\,dx\\
-&=\|f\|_1\|g\|_1.
+\norm{f*g}_1
+&\le \int_{\RR}\int_{\RR}\abs{H(x,y)}\,dy\,dx\\
+&=\norm{f}_1\norm{g}_1.
 \end{aligned}
 $$
 Thus
 $$
 \boxed{f*g\in L^1(\RR),\qquad
-\|f*g\|_1\le\|f\|_1\|g\|_1.}
+\norm{f*g}_1\le\norm{f}_1\norm{g}_1.}
 $$
 :::
 

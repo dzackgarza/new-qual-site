@@ -30,12 +30,12 @@ For $E\subseteq\RR$, the **Lebesgue outer measure** of $E$ is
 $$
 m^*(E)
 :=\inf\left\{
-\sum_{k=1}^\infty |I_k|:
+\sum_{k=1}^\infty \setmeasure{I_k}:
 E\subseteq\bigcup_{k=1}^\infty I_k,
 \ I_k\text{ open intervals}
 \right\},
 $$
-where $|I_k|$ denotes the length of the interval $I_k$.
+where $\setmeasure{I_k}$ denotes the length of the interval $I_k$.
 
 The infimum is taken over all countable open-interval covers of $E$; it may be $+\infty$.
 :::

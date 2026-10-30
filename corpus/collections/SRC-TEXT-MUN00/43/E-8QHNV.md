@@ -73,7 +73,7 @@ If $(x_n')$ is another sequence in $A$ converging to $x$, then $d_X(x_n, x_n') \
 
 ::: pf-step
 
-For $x \in A$, taking $x_n = x$ gives $g(x) = f(x)$, so $g|_A = f$.
+For $x \in A$, taking $x_n = x$ gives $g(x) = f(x)$, so $g\restrict_A = f$.
 
 :::
 

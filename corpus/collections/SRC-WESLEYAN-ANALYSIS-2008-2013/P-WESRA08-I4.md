@@ -34,11 +34,11 @@ and let $f\in L^p(\mu)$ and $g\in L^q(\mu)$.
 Then $fg\in L^1(\mu)$ and
 $$
 \boxed{
-\int_X|fg|\,d\mu
-\le \|f\|_p\,\|g\|_q.}
+\int_X\abs{fg}\,d\mu
+\le \norm{f}_p\,\norm{g}_q.}
 $$
 Equivalently,
 $$
-\|fg\|_1\le\|f\|_p\|g\|_q.
+\norm{fg}_1\le\norm{f}_p\norm{g}_q.
 $$
 :::

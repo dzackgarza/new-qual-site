@@ -106,7 +106,7 @@ For an induced trivial character, the standard induced-character formula gives
 $$
 \operatorname{ch}\left(\operatorname{Ind}_\Gamma^{S_{12}}\mathbf1\right)
 =
-\frac1{|\Gamma|}\sum_{g\in\Gamma}p_{\lambda(g)},
+\frac1{\cardinality{\Gamma}}\sum_{g\in\Gamma}p_{\lambda(g)},
 $$
 where $\lambda(g)$ is the cycle type of $g$ in its action on the twelve edges. Using the five classes above, this is exactly
 $$

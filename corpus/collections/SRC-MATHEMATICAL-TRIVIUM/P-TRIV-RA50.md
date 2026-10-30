@@ -35,7 +35,7 @@ $$
 
 Put
 $$
-k=|\vec k|.
+k=\norm{\vec k}.
 $$
 
 ::: pf
@@ -48,7 +48,7 @@ parallel to $\vec k$.
 
 ::: pf-proof
 
-The function $f$ depends only on $r=|\vec r|$, and Lebesgue measure is rotation
+The function $f$ depends only on $r=\norm{\vec r}$, and Lebesgue measure is rotation
 invariant. Thus rotating the coordinate system does not change the integral.
 In the chosen coordinates,
 $$

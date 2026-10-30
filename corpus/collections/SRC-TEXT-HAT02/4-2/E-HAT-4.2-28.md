@@ -57,13 +57,13 @@ K(G,1)\simeq K(\ZZ_p,1)\times K(\ZZ_p,1).
 $$
 For $p=2$,
 $$
-H^*(K(\ZZ_2,1);\FF_2)\cong\FF_2[u],\quad |u|=1,
+H^*(K(\ZZ_2,1);\FF_2)\cong\FF_2[u],\quad \gradeddegree{u}=1,
 $$
 and for odd $p$,
 $$
 H^*(K(\ZZ_p,1);\FF_p)
 \cong\Lambda(u)\otimes\FF_p[v],
-\quad |u|=1,\ |v|=2.
+\quad \gradeddegree{u}=1,\ \gradeddegree{v}=2.
 $$
 In either case the Künneth formula shows that the degree-$d$ cohomology of the product has dimension $d+1$. In particular
 $$

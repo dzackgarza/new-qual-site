@@ -33,7 +33,7 @@ Let $A = \{\varnothing, a\}$, where $\varnothing$ is the empty set. If $B$ is th
 
 If $a=\{\varnothing\}$, then
 $$
-|A\cup B|=4.
+\cardinality{A\cup B}=4.
 $$
 
 
@@ -45,7 +45,7 @@ A=\{\varnothing,\{\varnothing\}\}.
 $$
 Its power set $B=\mathcal P(A)$ has four elements. Moreover,
 $\varnothing\in B$ and $a=\{\varnothing\}\in B$, so $A\subseteq B$.
-Therefore $A\cup B=B$ and $|A\cup B|=4$.
+Therefore $A\cup B=B$ and $\cardinality{A\cup B}=4$.
 
 :::
 
@@ -55,7 +55,7 @@ Therefore $A\cup B=B$ and $|A\cup B|=4$.
 
 If $a=\{\{\varnothing\}\}$, then
 $$
-|A\cup B|=5.
+\cardinality{A\cup B}=5.
 $$
 
 
@@ -65,11 +65,11 @@ Now
 $$
 A=\{\varnothing,\{\{\varnothing\}\}\},
 $$
-so again $|B|=|\mathcal P(A)|=4$. The sole element of
+so again $\cardinality{B}=\cardinality{\mathcal P(A)}=4$. The sole element of
 $a=\{\{\varnothing\}\}$ is $\{\varnothing\}$, which is not an element of
 $A$. Hence $a\nsubseteq A$, so $a\notin\mathcal P(A)=B$. Since
 $\varnothing\in B$, adjoining the two elements of $A$ to $B$ adds exactly the
-new element $a$. Thus $|A\cup B|=5$.
+new element $a$. Thus $\cardinality{A\cup B}=5$.
 
 :::
 
@@ -105,7 +105,7 @@ Step [](#s1-3){.pf-ref} proves that the problem is underdetermined as written.
 
 ::: {.remark}
 The source gives answer (B). That answer follows after adding the intended
-hypothesis $a\notin\mathcal P(A)$: then $a\ne\varnothing$, so $|A|=2$ and
-$|B|=4$; also $\varnothing\in B$ while $a\notin B$, hence
-$|A\cup B|=5$.
+hypothesis $a\notin\mathcal P(A)$: then $a\ne\varnothing$, so $\cardinality{A}=2$ and
+$\cardinality{B}=4$; also $\varnothing\in B$ while $a\notin B$, hence
+$\cardinality{A\cup B}=5$.
 :::

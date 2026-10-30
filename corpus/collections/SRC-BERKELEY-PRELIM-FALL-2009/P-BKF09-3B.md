@@ -30,7 +30,7 @@ f(z)=-1-z-z^2-\cdots+1+2z+3z^2+\cdots=z+2z^2+3z^3+\cdots.
 $$
 The radius of convergence is $1$, since $f(z)$ has a pole at $1$, and is analytic on $B_1(0)$.
 
-Note that for $\abs{z}=\rho<1$, we have $\abs{f(z)}=\left\lvert\frac{z}{(1-z)^2}\right\rvert\ge\rho/(1+\rho)^2$, since $\abs{1-z}\le1+\abs{z}\le1+\rho$, and this is an equality if $z=-\rho$.
+Note that for $\abs{z}=\rho<1$, we have $\abs{f(z)}=\abs{\frac{z}{(1-z)^2}}\ge\rho/(1+\rho)^2$, since $\abs{1-z}\le1+\abs{z}\le1+\rho$, and this is an equality if $z=-\rho$.
 Thus, the disk $B_{\rho/(1+\rho)^2}(0)$ lies outside of the curve $f(\rho e^{i\theta})$, $0\le\theta<2\pi$.
 Let $\abs{a}<1/4$, and choose $0<\rho<1$ such that $\abs{a}<\rho/(1+\rho)^2$, which we may do since $\lim_{\rho\to1}\rho/(1+\rho)^2=1/4$.
 The integral $\frac{1}{2\pi i}\int_{\abs{z}=\rho}\frac{f'(z)}{f(z)-a}\,dz$ gives the multiplicity $\abs{\{z\mid f(z)=a,\ \abs{z}<\rho\}}$ by the argument principle.

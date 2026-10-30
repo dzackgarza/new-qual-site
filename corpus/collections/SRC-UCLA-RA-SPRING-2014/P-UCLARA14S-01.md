@@ -21,7 +21,7 @@ Let $(X,\mathcal A,\mu)$ be a $\sigma$-finite measure space.
 For $t\in\RR$, let $e_t$ be the characteristic function of $(t,\infty)$.
 Prove that for measurable $f,g:X\to\RR$,
 $$
-\|f-g\|_{L^1(X)}=\int_{\RR}\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt.
+\norm{f-g}_{L^1(X)}=\int_{\RR}\norm{e_t\circ f-e_t\circ g}_{L^1(X)}\,dt.
 $$
 :::
 
@@ -34,9 +34,9 @@ $$
 For every $x\in X$,
 $$
 \int_{\RR}
-|e_t(f(x))-e_t(g(x))|\,dt
+\abs{e_t(f(x))-e_t(g(x))}\,dt
 =
-|f(x)-g(x)|.
+\abs{f(x)-g(x)}.
 $$
 
 
@@ -56,18 +56,18 @@ e_t(g(x))
 $$
 Hence
 $$
-|e_t(f(x))-e_t(g(x))|
+\abs{e_t(f(x))-e_t(g(x))}
 =
 \mathbf 1_{[f(x),g(x))}(t)
 $$
 up to endpoints, which do not affect the Lebesgue integral. Therefore
 $$
 \int_{\RR}
-|e_t(f(x))-e_t(g(x))|\,dt
+\abs{e_t(f(x))-e_t(g(x))}\,dt
 =
 g(x)-f(x).
 $$
-The case $g(x)<f(x)$ is identical with the roles reversed, giving $f(x)-g(x)$. Thus the value is always $|f(x)-g(x)|$.
+The case $g(x)<f(x)$ is identical with the roles reversed, giving $f(x)-g(x)$. Thus the value is always $\abs{f(x)-g(x)}$.
 
 :::
 
@@ -79,7 +79,7 @@ The function
 $$
 (x,t)
 \longmapsto
-|e_t(f(x))-e_t(g(x))|
+\abs{e_t(f(x))-e_t(g(x))}
 $$
 is measurable and nonnegative on $X\times\RR$.
 
@@ -105,11 +105,11 @@ is measurable. Hence $(x,t)\mapsto e_t(f(x))$ is measurable. The same holds for 
 One has
 $$
 \int_{\RR}
-\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
+\norm{e_t\circ f-e_t\circ g}_{L^1(X)}\,dt
 =
 \int_X
 \int_{\RR}
-|e_t(f(x))-e_t(g(x))|\,dt\,d\mu(x).
+\abs{e_t(f(x))-e_t(g(x))}\,dt\,d\mu(x).
 $$
 
 
@@ -119,15 +119,15 @@ By step [](#s1-2){.pf-ref}, the integrand is nonnegative and measurable. Since $
 $$
 \begin{aligned}
 \int_{\RR}
-\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
+\norm{e_t\circ f-e_t\circ g}_{L^1(X)}\,dt
 &=
 \int_{\RR}
 \int_X
-|e_t(f(x))-e_t(g(x))|\,d\mu(x)\,dt\\
+\abs{e_t(f(x))-e_t(g(x))}\,d\mu(x)\,dt\\
 &=
 \int_X
 \int_{\RR}
-|e_t(f(x))-e_t(g(x))|\,dt\,d\mu(x).
+\abs{e_t(f(x))-e_t(g(x))}\,dt\,d\mu(x).
 \end{aligned}
 $$
 The equality is valid in $[0,\infty]$.
@@ -141,10 +141,10 @@ The equality is valid in $[0,\infty]$.
 Therefore
 $$
 \boxed{
-\|f-g\|_{L^1(X)}
+\norm{f-g}_{L^1(X)}
 =
 \int_{\RR}
-\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
+\norm{e_t\circ f-e_t\circ g}_{L^1(X)}\,dt
 }.
 $$
 
@@ -155,11 +155,11 @@ Apply step [](#s1-1){.pf-ref} inside the iterated integral from step [](#s1-3){.
 $$
 \begin{aligned}
 \int_{\RR}
-\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
+\norm{e_t\circ f-e_t\circ g}_{L^1(X)}\,dt
 &=
-\int_X|f(x)-g(x)|\,d\mu(x)\\
+\int_X\abs{f(x)-g(x)}\,d\mu(x)\\
 &=
-\|f-g\|_{L^1(X)}.
+\norm{f-g}_{L^1(X)}.
 \end{aligned}
 $$
 

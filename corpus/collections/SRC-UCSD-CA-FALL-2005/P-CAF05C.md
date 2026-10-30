@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that if $f$ is a non-constant analytic function on a bounded region $G \subset \CC$ and is continuous on $\overline{G}$, then either $f$ has a zero in $G$ or $|f(z)|$ reaches its minimum value on $\partial G$.
+Prove that if $f$ is a non-constant analytic function on a bounded region $G \subset \CC$ and is continuous on $\overline{G}$, then either $f$ has a zero in $G$ or $\abs{f(z)}$ reaches its minimum value on $\partial G$.
 :::
 
 ::: {.remark}
@@ -30,14 +30,14 @@ g=\frac1f
 $$
 is holomorphic on $G$ and continuous on $\overline G$.
 
-Because $G$ is bounded, $\overline G$ is compact, so $|f|$ attains a minimum
+Because $G$ is bounded, $\overline G$ is compact, so $\abs{f}$ attains a minimum
 at some point of $\overline G$. Suppose a minimum is attained at an interior
-point $a\in G$. Since $f$ is zero-free, this means that $|g|=1/|f|$ attains a
+point $a\in G$. Since $f$ is zero-free, this means that $\abs{g}=1/\abs{f}$ attains a
 maximum at $a$. By the maximum modulus principle, $g$ is constant on the
 connected region $G$, hence so is $f$, contradicting the hypothesis.
 
-Therefore no minimum of $|f|$ can occur only in the interior. Since a minimum
+Therefore no minimum of $\abs{f}$ can occur only in the interior. Since a minimum
 exists on $\overline G$, at least one minimizing point lies on $\partial G$.
-Thus either $f$ has a zero in $G$, or $|f|$ reaches its minimum value on
+Thus either $f$ has a zero in $G$, or $\abs{f}$ reaches its minimum value on
 $\partial G$.
 :::

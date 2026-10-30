@@ -74,7 +74,7 @@ $$
 P\le gQg^{-1}.
 $$
 Both groups have the same order, namely the largest power of $p$ dividing
-$|G|$. Therefore the inclusion is equality:
+$\cardinality{G}$. Therefore the inclusion is equality:
 $$
 P=gQg^{-1}.
 $$

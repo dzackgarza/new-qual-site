@@ -103,11 +103,11 @@ f=t a+(1-t)b
 $$
 for some $a\in I R[t]$ and $b\in J R[t]$. Since $f$ is independent of $t$, specializing at $t=1$ gives
 $$
-f=a|_{t=1}\in I,
+f=a\evalfrom_{t=1}\in I,
 $$
 while specializing at $t=0$ gives
 $$
-f=b|_{t=0}\in J.
+f=b\evalfrom_{t=0}\in J.
 $$
 Thus $f\in I\cap J$, proving
 $$

@@ -205,14 +205,14 @@ $$
 The only point at infinity is $O$, since setting $z=0$ forces $x=0$.
 For an affine rational point $(x,y)$ with $y\ne0$, define positive rational numbers
 $$
-A=\left|\frac{x^2-1}{y}\right|,\qquad
-B=\left|\frac{2x}{y}\right|,\qquad
-C=\left|\frac{x^2+1}{y}\right|.
+A=\abs{\frac{x^2-1}{y}},\qquad
+B=\abs{\frac{2x}{y}},\qquad
+C=\abs{\frac{x^2+1}{y}}.
 $$
 The equation $y^2=x(x^2-1)$ makes $x$ and $x^2-1$ nonzero.
 Direct calculation gives $A^2+B^2=C^2$ and
 $$
-\frac{AB}{2}=\left|\frac{x(x^2-1)}{y^2}\right|=1.
+\frac{AB}{2}=\abs{\frac{x(x^2-1)}{y^2}}=1.
 $$
 Multiplying by a common positive denominator $N$ gives an integer right triangle of area $N^2$, contradicting step [](#s5){.pf-ref}.
 Thus every affine rational point has $y=0$, and then $x(x-1)(x+1)=0$.

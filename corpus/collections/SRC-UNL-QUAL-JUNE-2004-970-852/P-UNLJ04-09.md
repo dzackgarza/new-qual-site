@@ -34,7 +34,7 @@ $$
 \boxed{
 a(G)
 =
-(-1)^{|V(G)|}\chi(G;-1)}.
+(-1)^{\cardinality{V(G)}}\chi(G;-1)}.
 $$
 
 Indeed, for the edgeless graph on one vertex,
@@ -462,7 +462,7 @@ Define
 $$
 b(G)
 \coloneqq
-(-1)^{|V(G)|}\chi(G;-1).
+(-1)^{\cardinality{V(G)}}\chi(G;-1).
 $$
 Then
 $$
@@ -477,13 +477,13 @@ $$
 
 Let
 $$
-n=|V(G)|.
+n=\cardinality{V(G)}.
 $$
 Then
 $$
-|V(G-e)|=n,
+\cardinality{V(G-e)}=n,
 \qquad
-|V(G/e)|=n-1.
+\cardinality{V(G/e)}=n-1.
 $$
 Evaluate the chromatic recurrence of step [](#s1-1){.pf-ref} at $k=-1$:
 $$
@@ -558,7 +558,7 @@ $$
 \boxed{
 a(G)
 =
-(-1)^{|V(G)|}\chi(G;-1)}.
+(-1)^{\cardinality{V(G)}}\chi(G;-1)}.
 $$
 
 

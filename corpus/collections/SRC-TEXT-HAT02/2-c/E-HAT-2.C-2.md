@@ -59,11 +59,11 @@ $$H_k(S^n; \QQ) \cong \begin{cases} \QQ & k = 0, n, \\ 0 & 0 < k < n \text{ and 
 :::
 
 ::: pf-step
-For $k = 0$, $S^n$ is non-empty and connected, so $f_*: H_0(S^n; \QQ) \to H_0(S^n; \QQ)$ is the identity, with $\operatorname{tr}(f_*|_{H_0}) = 1$.
+For $k = 0$, $S^n$ is non-empty and connected, so $f_*: H_0(S^n; \QQ) \to H_0(S^n; \QQ)$ is the identity, with $\operatorname{tr}(f_*\restrict_{H_0}) = 1$.
 :::
 
 ::: pf-step
-For $k = n$, by definition of topological degree, $f_*: H_n(S^n; \QQ) \to H_n(S^n; \QQ)$ is multiplication by $\deg(f) = d$, so $\operatorname{tr}(f_*|_{H_n}) = d$.
+For $k = n$, by definition of topological degree, $f_*: H_n(S^n; \QQ) \to H_n(S^n; \QQ)$ is multiplication by $\deg(f) = d$, so $\operatorname{tr}(f_*\restrict_{H_n}) = d$.
 :::
 
 ::: pf-step
@@ -72,7 +72,7 @@ If $n = 0$, $S^0 = \{-1, 1\}$ has $H_0(S^0; \QQ) \cong \QQ^2$, where a degree $d
 
 ::: pf-step
 For $n \ge 1$, the Lefschetz number $\Lambda(f)$ is
-$$\Lambda(f) = \sum_{k=0}^n (-1)^k \operatorname{tr}(f_*|_{H_k(S^n; \QQ)}) = (-1)^0 (1) + (-1)^n (d) = 1 + (-1)^n d.$$
+$$\Lambda(f) = \sum_{k=0}^n (-1)^k \operatorname{tr}(f_*\restrict_{H_k(S^n; \QQ)}) = (-1)^0 (1) + (-1)^n (d) = 1 + (-1)^n d.$$
 :::
 
 :::

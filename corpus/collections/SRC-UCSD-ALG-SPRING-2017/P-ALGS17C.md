@@ -135,7 +135,7 @@ $$
 whose determinant is $a^2+6b^2=N(\alpha)$.
 Therefore
 $$
-[R:(\alpha)]=|N(\alpha)|.
+[R:(\alpha)]=\abs{N(\alpha)}.
 $$
 Thus principality of $I$ would force $N(\alpha)=3$, but step [](#s2){.pf-ref} showed that no such element exists.
 Hence $I$ is not principal.

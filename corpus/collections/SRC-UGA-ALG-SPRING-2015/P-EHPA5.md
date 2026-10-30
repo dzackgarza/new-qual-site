@@ -28,7 +28,7 @@ Prove that $N$ is contained in the center of $G$.
 
 - Sizes of conjugacy classes divide the order of the group they live in.
 
-  - This is orbit-stabilizer: $G\actson G$ by $g\cdot x \definedas gx\inverseof{g}$, so $\OO(x) = [x]$.
+  - This is orbit-stabilizer: $G\actson G$ by $g\cdot x \coloneqq gx\inverseof{g}$, so $\OO(x) = [x]$.
     Then $\size \OO(x) = \size G / \size \Stab(x)$, so $\size \OO(x)$ divides $\size G$.
 :::
 

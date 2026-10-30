@@ -29,7 +29,7 @@ Determine the order of $\operatorname{Gal}(F/k)$.
 ::: {.solution}
 One has
 $$
-|\operatorname{Gal}(F/k)|=n.
+\cardinality{\operatorname{Gal}(F/k)}=n.
 $$
 
 ::: pf
@@ -73,7 +73,7 @@ $F$.
 By step [](#s2){.pf-ref} each embedding is an automorphism of $F$ over $k$, and every element of
 $\operatorname{Gal}(F/k)$ is such an embedding. Therefore
 $$
-|\operatorname{Gal}(F/k)|=[F:k]=n.
+\cardinality{\operatorname{Gal}(F/k)}=[F:k]=n.
 $$
 
 :::

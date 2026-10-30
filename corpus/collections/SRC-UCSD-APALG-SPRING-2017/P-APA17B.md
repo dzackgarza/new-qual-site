@@ -35,7 +35,7 @@ so $Bv\in E_\lambda$.
 
 The restriction
 $$
-B|_{E_\lambda}:E_\lambda\to E_\lambda
+B\restrict_{E_\lambda}:E_\lambda\to E_\lambda
 $$
 is again symmetric with respect to the Euclidean inner product, because for $u,v\in E_\lambda$,
 $$

@@ -25,10 +25,10 @@ audit:
 1. Prove that
 
 $$
-\frac {(\Theta^ {\prime} (z | \tau)) ^ {2} - \Theta (z | \tau) \Theta^ {\prime \prime} (z | \tau)}{\Theta (z | \tau) ^ {2}} = \wp_ {\tau} (z - 1 / 2 - \tau / 2) + c _ {\tau},
+\frac {(\Theta^ {\prime} (z \thetaseparator \tau)) ^ {2} - \Theta (z \thetaseparator \tau) \Theta^ {\prime \prime} (z \thetaseparator \tau)}{\Theta (z \thetaseparator \tau) ^ {2}} = \wp_ {\tau} (z - 1 / 2 - \tau / 2) + c _ {\tau},
 $$
 
-where $c _ { \tau }$ can be expressed in terms of the first three derivatives of $\Theta ( z | \tau )$ , with respect to $z$ , at $z = 1 / 2 + \tau / 2$ . Compare this formula with the result in Exercise 5 in the previous chapter.
+where $c _ { \tau }$ can be expressed in terms of the first three derivatives of $\Theta ( z \thetaseparator \tau )$ , with respect to $z$ , at $z = 1 / 2 + \tau / 2$ . Compare this formula with the result in Exercise 5 in the previous chapter.
 :::
 
 ::: {.solution}
@@ -36,14 +36,14 @@ Let
 $$
 z_0=\frac12+\frac\tau2,
 \qquad
-H(z)=\frac{(\Theta'(z|\tau))^2-\Theta(z|\tau)\Theta''(z|\tau)}{\Theta(z|\tau)^2}
+H(z)=\frac{(\Theta'(z\thetaseparator\tau))^2-\Theta(z\thetaseparator\tau)\Theta''(z\thetaseparator\tau)}{\Theta(z\thetaseparator\tau)^2}
 =-\left(\frac{\Theta'}{\Theta}\right)'(z).
 $$
 The theta transformation laws are
 $$
-\Theta(z+1|\tau)=\Theta(z|\tau),
+\Theta(z+1\thetaseparator\tau)=\Theta(z\thetaseparator\tau),
 \qquad
-\Theta(z+\tau|\tau)=e^{-\pi i\tau-2\pi iz}\Theta(z|\tau).
+\Theta(z+\tau\thetaseparator\tau)=e^{-\pi i\tau-2\pi iz}\Theta(z\thetaseparator\tau).
 $$
 Hence
 $$
@@ -53,20 +53,20 @@ $$
 $$
 so $H$ is elliptic with periods $1$ and $\tau$.
 
-By the Jacobi product formula, $\Theta(z|\tau)$ has simple zeros exactly at
+By the Jacobi product formula, $\Theta(z\thetaseparator\tau)$ has simple zeros exactly at
 $$
 z_0+\Lambda,
 \qquad \Lambda=\ZZ+\ZZ\tau.
 $$
 Thus $H$ has a double pole at every point of $z_0+\Lambda$. If $w=z-z_0$, write
 $$
-\Theta(z|\tau)=aw+\frac b2w^2+\frac c6w^3+O(w^4),
+\Theta(z\thetaseparator\tau)=aw+\frac b2w^2+\frac c6w^3+O(w^4),
 $$
 where
 $$
-a=\Theta'(z_0|\tau)\ne0,
-\quad b=\Theta''(z_0|\tau),
-\quad c=\Theta'''(z_0|\tau).
+a=\Theta'(z_0\thetaseparator\tau)\ne0,
+\quad b=\Theta''(z_0\thetaseparator\tau),
+\quad c=\Theta'''(z_0\thetaseparator\tau).
 $$
 Then
 $$
@@ -97,8 +97,8 @@ has no constant term at $w=0$, comparison with (1) gives
 $$
 \boxed{
 c_\tau
-=\frac14\left(\frac{\Theta''(z_0|\tau)}{\Theta'(z_0|\tau)}\right)^2
--\frac13\frac{\Theta'''(z_0|\tau)}{\Theta'(z_0|\tau)} }.
+=\frac14\left(\frac{\Theta''(z_0\thetaseparator\tau)}{\Theta'(z_0\thetaseparator\tau)}\right)^2
+-\frac13\frac{\Theta'''(z_0\thetaseparator\tau)}{\Theta'(z_0\thetaseparator\tau)} }.
 $$
 This is the theta-function analogue of the sigma-function identity of [[E-SS9.EX-5]].
 :::

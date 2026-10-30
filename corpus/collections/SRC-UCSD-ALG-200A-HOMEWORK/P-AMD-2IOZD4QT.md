@@ -36,7 +36,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ act transitively on a finite set $X$ with $|X|\ge2$.
+Let $G$ act transitively on a finite set $X$ with $\cardinality{X}\ge2$.
 
 1. If $G$ is finite, prove that there exists $g\in G$ having no fixed point in $X$.
 
@@ -66,22 +66,22 @@ Since the action is transitive, it has exactly one orbit.
 Burnside's counting lemma therefore gives
 $$
 1
-=\frac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|,
+=\frac1{\cardinality{G}}\sum_{g\in G}\cardinality{\operatorname{Fix}(g)},
 $$
 so
 $$
-\sum_{g\in G}|\operatorname{Fix}(g)|=|G|.
+\sum_{g\in G}\cardinality{\operatorname{Fix}(g)}=\cardinality{G}.
 $$
 
 The identity element fixes every point of $X$, hence
 $$
-|\operatorname{Fix}(e)|=|X|\ge2.
+\cardinality{\operatorname{Fix}(e)}=\cardinality{X}\ge2.
 $$
 If every $g\in G$ fixed at least one point, then
 $$
-\sum_{g\in G}|\operatorname{Fix}(g)|
-\ge |X|+(|G|-1)
-\ge |G|+1,
+\sum_{g\in G}\cardinality{\operatorname{Fix}(g)}
+\ge \cardinality{X}+(\cardinality{G}-1)
+\ge \cardinality{G}+1,
 $$
 contradicting the Burnside count.
 Thus some $g\in G$ fixes no point.

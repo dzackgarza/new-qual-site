@@ -35,11 +35,11 @@ If false give a counterexample or disprove it.
 
 (c) If $T \in \mathcal{S}'(\RR)$ (the space of tempered distributions) and $\frac{d\hat{T}}{d\xi} = 0$, then $T = 0$.
 
-(d) Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be two norms on a vector space $X$ such that $X$ is complete with respect to both norms.
-If $\|\cdot\|_1 \leq \|\cdot\|_2$, then there exists $C > 0$ such that $\|\cdot\|_2 \leq C\|\cdot\|_1$.
+(d) Let $\norm{\cdot}_1$ and $\norm{\cdot}_2$ be two norms on a vector space $X$ such that $X$ is complete with respect to both norms.
+If $\norm{\cdot}_1 \leq \norm{\cdot}_2$, then there exists $C > 0$ such that $\norm{\cdot}_2 \leq C\norm{\cdot}_1$.
 
-(e) Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be two norms on a vector space $X$ such that $X$ is complete with respect to one of the two norms.
-If $\|\cdot\|_1 \leq \|\cdot\|_2$, then there exists $C > 0$ such that $\|\cdot\|_2 \leq C\|\cdot\|_1$.
+(e) Let $\norm{\cdot}_1$ and $\norm{\cdot}_2$ be two norms on a vector space $X$ such that $X$ is complete with respect to one of the two norms.
+If $\norm{\cdot}_1 \leq \norm{\cdot}_2$, then there exists $C > 0$ such that $\norm{\cdot}_2 \leq C\norm{\cdot}_1$.
 
 (f) If $\mu(X) < \infty$, then $L^1(X, \mu) \subset L^2(X, \mu)$.
 
@@ -60,7 +60,7 @@ Part (a) is false.
 
 Take $X=\ell^2$ and let $x_n=e_n$, the standard unit vectors. Then $(e_n)$ is bounded, but
 $$
-\|e_n-e_m\|_2=\sqrt2
+\norm{e_n-e_m}_2=\sqrt2
 \qquad(n\ne m),
 $$
 so it has no Cauchy, hence no convergent, subsequence. Completeness does not imply sequential compactness of bounded sets.
@@ -120,11 +120,11 @@ Part (d) is true.
 
 The identity map
 $$
-I:(X,\|\cdot\|_2)\longrightarrow(X,\|\cdot\|_1)
+I:(X,\norm{\cdot}_2)\longrightarrow(X,\norm{\cdot}_1)
 $$
-is bounded because $\|x\|_1\le\|x\|_2$. It is also a bijection between Banach spaces. By the Bounded Inverse Theorem, its inverse is bounded. Hence there is $C>0$ such that
+is bounded because $\norm{x}_1\le\norm{x}_2$. It is also a bijection between Banach spaces. By the Bounded Inverse Theorem, its inverse is bounded. Hence there is $C>0$ such that
 $$
-\boxed{\|x\|_2\le C\|x\|_1\qquad\forall x\in X.}
+\boxed{\norm{x}_2\le C\norm{x}_1\qquad\forall x\in X.}
 $$
 
 :::
@@ -143,13 +143,13 @@ X=C^1([0,1]),
 $$
 with
 $$
-\|f\|_1:=\|f\|_\infty,
+\norm{f}_1:=\norm{f}_\infty,
 \qquad
-\|f\|_2:=\|f\|_\infty+\|f'\|_\infty.
+\norm{f}_2:=\norm{f}_\infty+\norm{f'}_\infty.
 $$
-Then $\|f\|_1\le\|f\|_2$, and $(X,\|\cdot\|_2)$ is Banach. But no constant $C$ satisfies
+Then $\norm{f}_1\le\norm{f}_2$, and $(X,\norm{\cdot}_2)$ is Banach. But no constant $C$ satisfies
 $$
-\|f\|_2\le C\|f\|_1
+\norm{f}_2\le C\norm{f}_1
 $$
 for all $f$. Indeed, for
 $$
@@ -157,9 +157,9 @@ f_n(x)=\frac{\sin(nx)}n,
 $$
 we have
 $$
-\|f_n\|_1\le\frac1n,
+\norm{f_n}_1\le\frac1n,
 \qquad
-\|f_n\|_2\ge\|f_n'\|_\infty=1.
+\norm{f_n}_2\ge\norm{f_n'}_\infty=1.
 $$
 Thus completeness of only one norm is insufficient.
 
@@ -179,11 +179,11 @@ f(x)=x^{-1/2}.
 $$
 Then
 $$
-\int_0^1|f(x)|\,dx<\infty,
+\int_0^1\abs{f(x)}\,dx<\infty,
 $$
 but
 $$
-\int_0^1|f(x)|^2\,dx
+\int_0^1\abs{f(x)}^2\,dx
 =\int_0^1\frac{dx}{x}=\infty.
 $$
 Thus $f\in L^1\setminus L^2$ even though $\mu(X)<\infty$.
@@ -200,17 +200,17 @@ Part (g) is true.
 
 If $a=(a_n)\in\ell^1$, then
 $$
-\sup_n|a_n|\le\sum_n|a_n|=\|a\|_1.
+\sup_n\abs{a_n}\le\sum_n\abs{a_n}=\norm{a}_1.
 $$
 Hence
 $$
-\sum_n|a_n|^2
-\le \left(\sup_n|a_n|\right)\sum_n|a_n|
-\le\|a\|_1^2.
+\sum_n\abs{a_n}^2
+\le \left(\sup_n\abs{a_n}\right)\sum_n\abs{a_n}
+\le\norm{a}_1^2.
 $$
 Therefore
 $$
-\boxed{\|a\|_2\le\|a\|_1,\qquad \ell^1\subseteq\ell^2.}
+\boxed{\norm{a}_2\le\norm{a}_1,\qquad \ell^1\subseteq\ell^2.}
 $$
 
 :::

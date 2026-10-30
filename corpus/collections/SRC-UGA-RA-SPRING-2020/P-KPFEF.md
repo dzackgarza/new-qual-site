@@ -51,17 +51,17 @@ c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf
 Prove the $L^1$ tails vanish, and give a counterexample to pointwise decay.
 
 ::: pf-proof
-Since $|f|\in L^1(\RR)$ and
+Since $\abs{f}\in L^1(\RR)$ and
 $$
-\mathbf1_{\{|x|\ge N\}}|f(x)|\longrightarrow0
+\mathbf1_{\{\abs{x}\ge N\}}\abs{f(x)}\longrightarrow0
 $$
 pointwise as $N\to\infty$, while
 $$
-0\le \mathbf1_{\{|x|\ge N\}}|f(x)|\le |f(x)|,
+0\le \mathbf1_{\{\abs{x}\ge N\}}\abs{f(x)}\le \abs{f(x)},
 $$
 the Dominated Convergence Theorem gives
 $$
-\boxed{\int_{|x|\ge N}|f(x)|\,dx\longrightarrow0.}
+\boxed{\int_{\abs{x}\ge N}\abs{f(x)}\,dx\longrightarrow0.}
 $$
 
 Pointwise decay need not follow. For example, let
@@ -70,7 +70,7 @@ f(x)=\sum_{k=1}^\infty \mathbf1_{[k,k+2^{-k}]}(x).
 $$
 The intervals are disjoint up to endpoints and
 $$
-\|f\|_1=\sum_{k=1}^\infty 2^{-k}<\infty,
+\norm{f}_1=\sum_{k=1}^\infty 2^{-k}<\infty,
 $$
 so $f\in L^1(\RR)$. But $f(k)=1$ for every positive integer $k$, hence $f(x)$ does not tend to $0$ as $x\to\infty$.
 :::
@@ -85,7 +85,7 @@ Because $f$ is decreasing, the extended limit
 $$
 L:=\lim_{x\to\infty}f(x)
 $$
-exists. If $L\ne0$ or $|L|=\infty$, then $|f(x)|$ is bounded below by a positive constant for all sufficiently large $x$, contradicting $f\in L^1([1,\infty))$. Hence
+exists. If $L\ne0$ or $\abs{L}=\infty$, then $\abs{f(x)}$ is bounded below by a positive constant for all sufficiently large $x$, contradicting $f\in L^1([1,\infty))$. Hence
 $$
 L=0.
 $$
@@ -95,12 +95,12 @@ For $x\ge2$ and $t\in[x/2,x]$, monotonicity gives $f(t)\ge f(x)$. Therefore
 $$
 \frac{x}{2}f(x)
 \le \int_{x/2}^{x} f(t)\,dt
-\le \int_{x/2}^{\infty}|f(t)|\,dt.
+\le \int_{x/2}^{\infty}\abs{f(t)}\,dt.
 $$
 The last tail tends to $0$ because $f\in L^1$. Thus
 $$
 0\le xf(x)
-\le 2\int_{x/2}^{\infty}|f(t)|\,dt
+\le 2\int_{x/2}^{\infty}\abs{f(t)}\,dt
 \longrightarrow0.
 $$
 Consequently

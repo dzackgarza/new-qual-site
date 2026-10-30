@@ -81,11 +81,11 @@ A closed subset of a compact set is compact; apply steps [](#s1-1){.pf-ref} and 
 
 ::: {.pf-step #s2-1}
 
-$\abs{\int_{|y| \le |x|/2} f(x-y)g(y)\,dy} \leq \|g\|_\infty \int_{|z| \ge |x|/2} |f(z)|\,dz$, which tends to $0$ as $|x| \to \infty$.
+$\abs{\int_{\abs{y} \le \abs{x}/2} f(x-y)g(y)\,dy} \leq \norm{g}_\infty \int_{\abs{z} \ge \abs{x}/2} \abs{f(z)}\,dz$, which tends to $0$ as $\abs{x} \to \infty$.
 
 ::: pf-proof
 
-On $\theset{|y| \le |x|/2}$, $|x-y| \ge |x|/2$. Substitute $z = x - y$ and use $|g| \le \|g\|_\infty$. The tail integral of $|f| \in L^1$ tends to $0$ by dominated convergence.
+On $\theset{\abs{y} \le \abs{x}/2}$, $\abs{x-y} \ge \abs{x}/2$. Substitute $z = x - y$ and use $\abs{g} \le \norm{g}_\infty$. The tail integral of $\abs{f} \in L^1$ tends to $0$ by dominated convergence.
 
 :::
 
@@ -93,11 +93,11 @@ On $\theset{|y| \le |x|/2}$, $|x-y| \ge |x|/2$. Substitute $z = x - y$ and use $
 
 ::: {.pf-step #s2-2}
 
-$\abs{\int_{|y| > |x|/2} f(x-y)g(y)\,dy} \leq \|f\|_\infty \int_{|y| > |x|/2} |g(y)|\,dy$, which tends to $0$ as $|x| \to \infty$.
+$\abs{\int_{\abs{y} > \abs{x}/2} f(x-y)g(y)\,dy} \leq \norm{f}_\infty \int_{\abs{y} > \abs{x}/2} \abs{g(y)}\,dy$, which tends to $0$ as $\abs{x} \to \infty$.
 
 ::: pf-proof
 
-Use $|f| \le \|f\|_\infty$; the tail integral of $|g| \in L^1$ tends to $0$.
+Use $\abs{f} \le \norm{f}_\infty$; the tail integral of $\abs{g} \in L^1$ tends to $0$.
 
 :::
 
@@ -105,7 +105,7 @@ Use $|f| \le \|f\|_\infty$; the tail integral of $|g| \in L^1$ tends to $0$.
 
 ::: pf-qed
 
-$f\ast g(x)$ is the sum of the two integrals in steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref}, and both tend to $0$ as $|x| \to \infty$.
+$f\ast g(x)$ is the sum of the two integrals in steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref}, and both tend to $0$ as $\abs{x} \to \infty$.
 
 :::
 
@@ -121,11 +121,11 @@ $f\ast g(x)$ is the sum of the two integrals in steps [](#s2-1){.pf-ref} and [](
 
 ::: {.pf-step #s3-1}
 
-For $M > 0$ write $f = f_M + r_M$ with $f_M = f \chi_{\theset{|f| \le M}}$. Then $|f_M| \le M$ and $\|r_M\|_1 \to 0$ as $M \to \infty$.
+For $M > 0$ write $f = f_M + r_M$ with $f_M = f \chi_{\theset{\abs{f} \le M}}$. Then $\abs{f_M} \le M$ and $\norm{r_M}_1 \to 0$ as $M \to \infty$.
 
 ::: pf-proof
 
-$\int |r_M| = \int_{\theset{|f| > M}} |f| \to 0$ by dominated convergence, since $|f| \in L^1$ and $\chi_{\theset{|f| > M}} \to 0$ a.e.
+$\int \abs{r_M} = \int_{\theset{\abs{f} > M}} \abs{f} \to 0$ by dominated convergence, since $\abs{f} \in L^1$ and $\chi_{\theset{\abs{f} > M}} \to 0$ a.e.
 
 :::
 
@@ -133,11 +133,11 @@ $\int |r_M| = \int_{\theset{|f| > M}} |f| \to 0$ by dominated convergence, since
 
 ::: {.pf-step #s3-2}
 
-$\|r_M \ast g\|_\infty \le \|r_M\|_1 \|g\|_\infty$.
+$\norm{r_M \ast g}_\infty \le \norm{r_M}_1 \norm{g}_\infty$.
 
 ::: pf-proof
 
-$|r_M \ast g(x)| \le \int |r_M(x-y)||g(y)|\,dy \le \|g\|_\infty \|r_M\|_1$.
+$\abs{r_M \ast g(x)} \le \int \abs{r_M(x-y)}\abs{g(y)}\,dy \le \norm{g}_\infty \norm{r_M}_1$.
 
 :::
 
@@ -157,7 +157,7 @@ $f_M$ and $g$ are bounded and in $L^1$, so step [](#s2){.pf-ref} applies.
 
 ::: pf-qed
 
-Given $\eps > 0$, choose $M$ with $\|r_M \ast g\|_\infty < \eps/2$ by steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}, then $R$ with $|f_M \ast g(x)| < \eps/2$ for $|x| > R$ by step [](#s3-3){.pf-ref}. For $|x| > R$, $|f \ast g(x)| \le |f_M \ast g(x)| + |r_M \ast g(x)| < \eps$.
+Given $\eps > 0$, choose $M$ with $\norm{r_M \ast g}_\infty < \eps/2$ by steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}, then $R$ with $\abs{f_M \ast g(x)} < \eps/2$ for $\abs{x} > R$ by step [](#s3-3){.pf-ref}. For $\abs{x} > R$, $\abs{f \ast g(x)} \le \abs{f_M \ast g(x)} + \abs{r_M \ast g(x)} < \eps$.
 
 :::
 

@@ -27,7 +27,7 @@ f:\CC\to\CC
 $$
 be entire and bounded. Choose $M\ge0$ such that
 $$
-\boxed{|f(z)|\le M}
+\boxed{\abs{f(z)}\le M}
 $$
 for every $z\in\CC$.
 
@@ -70,11 +70,11 @@ The function $f$ is entire, so it is holomorphic on all of $\CC$.
 
 On the circle
 $$
-|z-z_0|=R,
+\abs{z-z_0}=R,
 $$
 one has
 $$
-\max |f(z)|\le M.
+\max \abs{f(z)}\le M.
 $$
 
 
@@ -91,7 +91,7 @@ Use the global boundedness hypothesis.
 Cauchy's estimate for the first derivative gives
 $$
 \boxed{
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
 \frac{M}{R}}.
 $$
@@ -101,11 +101,11 @@ $$
 
 The first-derivative Cauchy estimate states that if
 $$
-|f(z)|\le M_R
+\abs{f(z)}\le M_R
 $$
-on $|z-z_0|=R$, then
+on $\abs{z-z_0}=R$, then
 $$
-|f'(z_0)|
+\abs{f'(z_0)}
 \le
 \frac{M_R}{R}.
 $$
@@ -131,7 +131,7 @@ $$
 $$
 tends to $0$, while the left-hand side is independent of $R$. Hence
 $$
-|f'(z_0)|=0.
+\abs{f'(z_0)}=0.
 $$
 
 :::

@@ -280,7 +280,7 @@ Choose $n\ge1$ such that
 $$
 \zeta^n=1.
 $$
-Then $|\zeta|^n=1$, so $|\zeta|=1$ and
+Then $\abs{\zeta}^n=1$, so $\abs{\zeta}=1$ and
 $$
 \zeta=e^{i\theta}
 $$

@@ -64,7 +64,7 @@ in $\mcp(U)$ have equal restrictions to every $U_\alpha$.
 
 For every index $i$, this says
 $$
-s_i|_{U_\alpha}=t_i|_{U_\alpha}
+s_i\restrict_{U_\alpha}=t_i\restrict_{U_\alpha}
 \qquad
 \text{for every }\alpha.
 $$
@@ -110,10 +110,10 @@ $$
 $$
 be a transition morphism.  On every $U_\alpha$,
 $$
-\theta_{ji}(s_j)|_{U_\alpha}
+\theta_{ji}(s_j)\restrict_{U_\alpha}
 =\theta_{ji}(s_{\alpha,j})
 =s_{\alpha,i}
-=s_i|_{U_\alpha},
+=s_i\restrict_{U_\alpha},
 $$
 because each local tuple $s_\alpha$ already lies in the inverse limit.  The sheaf uniqueness axiom for $\mcf_i$ therefore gives
 $$

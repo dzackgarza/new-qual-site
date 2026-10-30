@@ -41,13 +41,13 @@ Boundary nonvanishing gives a positive approximation threshold.
 Write $D=D(P,r)$ and $C=\partial D$. Continuity of $f$
 and compactness of $C$ imply that
 $$
-\delta=\min_{z\in C}|f(z)|>0.
+\delta=\min_{z\in C}\abs{f(z)}>0.
 $$
-It suffices to require $\sup_C|g-f|<\delta$. For such a $g$,
+It suffices to require $\sup_C\abs{g-f}<\delta$. For such a $g$,
 $$
-|g(z)-f(z)|<\delta\leq|f(z)|\qquad(z\in C).
+\abs{g(z)-f(z)}<\delta\leq\abs{f(z)}\qquad(z\in C).
 $$
-In particular $|g(z)|\geq|f(z)|-|g(z)-f(z)|>0$ on $C$.
+In particular $\abs{g(z)}\geq\abs{f(z)}-\abs{g(z)-f(z)}>0$ on $C$.
 
 :::
 

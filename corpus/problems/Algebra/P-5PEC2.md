@@ -40,15 +40,15 @@ The group $\SL_2(\FF_3)$ has order $24$.
 
 First
 $$
-|\GL_2(\FF_3)|=(3^2-1)(3^2-3)=8\cdot6=48.
+\cardinality{\GL_2(\FF_3)}=(3^2-1)(3^2-3)=8\cdot6=48.
 $$
 The determinant map
 $$
 \det:\GL_2(\FF_3)\to\FF_3^\times
 $$
-is surjective, and $|\FF_3^\times|=2$. Its kernel is $\SL_2(\FF_3)$, so
+is surjective, and $\cardinality{\FF_3^\times}=2$. Its kernel is $\SL_2(\FF_3)$, so
 $$
-|\SL_2(\FF_3)|=48/2=24.
+\cardinality{\SL_2(\FF_3)}=48/2=24.
 $$
 
 :::
@@ -88,7 +88,7 @@ in $\FF_3$, so $a=\pm1$. Hence the center is exactly $\{\pm I\}$.
 
 Therefore
 $$
-|\PSL_2(\FF_3)|=12.
+\cardinality{\PSL_2(\FF_3)}=12.
 $$
 
 ::: pf-proof
@@ -114,7 +114,7 @@ $$
 
 The projective line has
 $$
-|\PP^1(\FF_3)|=3+1=4
+\cardinality{\PP^1(\FF_3)}=3+1=4
 $$
 points. The group $\SL_2(\FF_3)$ acts on one-dimensional subspaces of $\FF_3^2$. The kernel consists exactly of scalar matrices, hence of $\{\pm I\}$ by step [](#s2){.pf-ref}. Thus the induced action of $\PSL_2(\FF_3)$ is faithful.
 

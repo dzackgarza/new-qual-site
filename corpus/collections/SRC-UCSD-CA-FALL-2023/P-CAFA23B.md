@@ -124,7 +124,7 @@ But $A_N \not\to 0$ uniformly on compact sets.
 
 ::: pf-proof
 
-on the compact set $\theset{z : |z| = 1/2}$, $|A_N(z)| = N/2^N \to 0$; instead use $A_N(z) = N z^N$ evaluated at $z = 1 - 1/N$: $|A_N(1 - 1/N)| = N(1 - 1/N)^N \to N/e \to \infty$, so the sequence is not uniformly bounded on the compact set $\theset{1 - 1/N : N \ge 2} \cup \theset{1}$ (which is compact), hence does not converge uniformly to $0$.
+on the compact set $\theset{z : \abs{z} = 1/2}$, $\abs{A_N(z)} = N/2^N \to 0$; instead use $A_N(z) = N z^N$ evaluated at $z = 1 - 1/N$: $\abs{A_N(1 - 1/N)} = N(1 - 1/N)^N \to N/e \to \infty$, so the sequence is not uniformly bounded on the compact set $\theset{1 - 1/N : N \ge 2} \cup \theset{1}$ (which is compact), hence does not converge uniformly to $0$.
 
 :::
 

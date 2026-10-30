@@ -57,7 +57,7 @@ Thus
 
 ::: pf-step
 
-For $\Re(s) > 1$, as $M \to \infty$, $|M^{1-s}| = M^{1-\Re(s)} \to 0$.
+For $\Re(s) > 1$, as $M \to \infty$, $\abs{M^{1-s}} = M^{1-\Re(s)} \to 0$.
 
 :::
 

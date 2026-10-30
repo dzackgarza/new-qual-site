@@ -51,22 +51,22 @@ $$
 \boxed{4x+\frac12\ln(x^2+1)+3\arctan x+C,}
 $$
 $$
-\boxed{3\ln|x|+\arctan x+C,}
+\boxed{3\ln\abs{x}+\arctan x+C,}
 $$
 $$
-\boxed{-3\ln|x|+\frac32\ln(x^2+1)+2\arctan x+C,}
+\boxed{-3\ln\abs{x}+\frac32\ln(x^2+1)+2\arctan x+C,}
 $$
 $$
-\boxed{\ln|x-5|+\frac32\ln(x^2+1)+4\arctan x+C,}
+\boxed{\ln\abs{x-5}+\frac32\ln(x^2+1)+4\arctan x+C,}
 $$
 $$
-\boxed{3\ln|x-5|+2\arctan x+C,}
+\boxed{3\ln\abs{x-5}+2\arctan x+C,}
 $$
 $$
-\boxed{-2\ln|x-1|-\frac1{x-1}+\ln(x^2+1)+\arctan x+C,}
+\boxed{-2\ln\abs{x-1}-\frac1{x-1}+\ln(x^2+1)+\arctan x+C,}
 $$
 $$
-\boxed{\frac12x^2+x+3\ln|x+1|+2\arctan x+C,}
+\boxed{\frac12x^2+x+3\ln\abs{x+1}+2\arctan x+C,}
 $$
 and
 $$

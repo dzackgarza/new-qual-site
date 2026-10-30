@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $\alpha_n := 1 - \frac{1}{n^2}$.
-Construct a function $f \in H(\DD)$ whose sequence of zeros (counting multiplicity) is precisely $\{\alpha_n\}$ and for which $|f(z)| \leq 1$ in $\DD$.
+Construct a function $f \in H(\DD)$ whose sequence of zeros (counting multiplicity) is precisely $\{\alpha_n\}$ and for which $\abs{f(z)} \leq 1$ in $\DD$.
 :::
 
 ::: {.solution}
@@ -28,7 +28,7 @@ $$
 $$
 and
 $$
-\sum_{n=1}^\infty(1-|\alpha_n|)
+\sum_{n=1}^\infty(1-\abs{\alpha_n})
 =\sum_{n=1}^\infty\frac1{n^2}<\infty.
 $$
 Hence the Blaschke product with these zeros converges:
@@ -36,7 +36,7 @@ $$
 f(z)=z\prod_{n=2}^\infty
 \frac{\alpha_n-z}{1-\alpha_n z}.
 $$
-Each factor has modulus $1$ on $|z|=1$ and modulus at most $1$ in
+Each factor has modulus $1$ on $\abs{z}=1$ and modulus at most $1$ in
 $\DD$. Standard convergence of Blaschke products shows that the product
 defines a holomorphic function on $\DD$, bounded in modulus by $1$, and
 its zeros, with multiplicity, are exactly the points $\alpha_n$.

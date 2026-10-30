@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-05
 kind: problem
-title: Derivative of $|x|+3x^2$ at $x=-1$
+title: Derivative of $\abs{x}+3x^2$ at $x=-1$
 classification:
   areas:
   - prelim
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x) = |x| + 3x^2$ for $x \in \RR$. What is $f'(-1)$?
+Let $f(x) = \abs{x} + 3x^2$ for $x \in \RR$. What is $f'(-1)$?
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ x=-1,
 $$
 one has
 $$
-\boxed{|x|=-x}.
+\boxed{\abs{x}=-x}.
 $$
 
 
@@ -40,7 +40,7 @@ $$
 
 Every $x$ sufficiently close to $-1$ is negative, and for $x<0$,
 $$
-|x|=-x.
+\abs{x}=-x.
 $$
 
 :::
@@ -61,7 +61,7 @@ $$
 
 Substitute step [](#s1-1){.pf-ref} into
 $$
-f(x)=|x|+3x^2.
+f(x)=\abs{x}+3x^2.
 $$
 
 :::

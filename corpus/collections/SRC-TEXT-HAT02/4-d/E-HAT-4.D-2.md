@@ -50,7 +50,7 @@ as a module. If $b=q^*c$, where $c$ generates $H^2(\CP^\infty;\ZZ_p)$, then
 $$
 H^*(K(\ZZ_p,1);\ZZ_p)
 \cong \ZZ_p[b]\{1,a\},
-\qquad |a|=1,\ |b|=2.
+\qquad \gradeddegree{a}=1,\ \gradeddegree{b}=2.
 $$
 For odd $p$, graded commutativity gives $a^2=-a^2$, hence $a^2=0$, so
 $$
@@ -59,6 +59,6 @@ $$
 $$
 The Bockstein associated to $0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0$ satisfies $\beta(a)=b$. For $p=2$, this Bockstein is $Sq^1$ on degree-one classes, so $b=a^2$. Hence
 $$
-\boxed{H^*(K(\ZZ_2,1);\ZZ_2)\cong\ZZ_2[a],\quad |a|=1.}
+\boxed{H^*(K(\ZZ_2,1);\ZZ_2)\cong\ZZ_2[a],\quad \gradeddegree{a}=1.}
 $$
 :::

@@ -475,7 +475,7 @@ f(x)=0
 $$
 and
 $$
-f|_F=1.
+f\restrict_F=1.
 $$
 This is exactly complete regularity.
 
@@ -584,7 +584,7 @@ f(x)=0
 $$
 and
 $$
-f|_F=1.
+f\restrict_F=1.
 $$
 Then
 $$

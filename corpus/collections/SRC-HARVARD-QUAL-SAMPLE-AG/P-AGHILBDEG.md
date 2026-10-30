@@ -113,7 +113,7 @@ One has
 $$
 h^0(\PP^1,\mathcal O(3))=4,
 $$
-and the displayed monomials form a basis.  The complete linear system $|\mathcal O(3)|$ is very ample, so the associated map is an embedding.  By definition its image is the degree-three rational normal curve in $\PP^3$, i.e. the twisted cubic.
+and the displayed monomials form a basis.  The complete linear system $\linearsystem{\mathcal O(3)}$ is very ample, so the associated map is an embedding.  By definition its image is the degree-three rational normal curve in $\PP^3$, i.e. the twisted cubic.
 :::
 
 :::

@@ -60,7 +60,7 @@ Then $H\trianglelefteq G$.
 
 ::: pf-proof
 
-Fix $\sigma\in G$. The restriction $\sigma|_K:K\to E$ is an $F$-embedding.
+Fix $\sigma\in G$. The restriction $\sigma\restrict_K:K\to E$ is an $F$-embedding.
 Because $K/F$ is finite and normal, every $F$-embedding of $K$ into an algebraic closure has image $K$. Hence $\sigma(K)=K$. By step [](#s1){.pf-ref},
 $$
 \sigma H\sigma^{-1}

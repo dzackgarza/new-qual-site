@@ -35,9 +35,9 @@ Every finite group of order $p^k$, with $k\geq1$, has nontrivial center.
 
 Under conjugation, the classes of elements outside the center have cardinalities $[G:C_G(x)]>1$, each a divisor of $p^k$ and hence divisible by $p$. The class equation
 $$
-|G|=|Z(G)|+\sum_{[x]\text{ noncentral}}[G:C_G(x)]
+\cardinality{G}=\cardinality{Z(G)}+\sum_{[x]\text{ noncentral}}[G:C_G(x)]
 $$
-therefore gives $p\mid |Z(G)|$. Since the identity belongs to $Z(G)$, its cardinality is positive, so $|Z(G)|\geq p>1$.
+therefore gives $p\mid \cardinality{Z(G)}$. Since the identity belongs to $Z(G)$, its cardinality is positive, so $\cardinality{Z(G)}\geq p>1$.
 
 :::
 
@@ -61,7 +61,7 @@ Every group of order $1225$ is abelian.
 
 ::: pf-proof
 
-Let $G$ have order $5^2 7^2$, and write $n_5,n_7$ for the numbers of its Sylow subgroups. Sylow's theorems give $n_5\mid49$ and $n_5\equiv1\pmod5$. Among $1,7,49$, only $1$ meets the congruence, so $n_5=1$. Likewise $n_7\mid25$ and $n_7\equiv1\pmod7$; among $1,5,25$, only $1$ meets that congruence, so $n_7=1$. Hence both Sylow subgroups $P$ and $Q$ are normal. Their orders are relatively prime, so $P\cap Q=1$; their product has order $25\cdot49=|G|$, and $G\cong P\times Q$. By step [](#s2){.pf-ref}, both factors are abelian, hence so is $G$.
+Let $G$ have order $5^2 7^2$, and write $n_5,n_7$ for the numbers of its Sylow subgroups. Sylow's theorems give $n_5\mid49$ and $n_5\equiv1\pmod5$. Among $1,7,49$, only $1$ meets the congruence, so $n_5=1$. Likewise $n_7\mid25$ and $n_7\equiv1\pmod7$; among $1,5,25$, only $1$ meets that congruence, so $n_7=1$. Hence both Sylow subgroups $P$ and $Q$ are normal. Their orders are relatively prime, so $P\cap Q=1$; their product has order $25\cdot49=\cardinality{G}$, and $G\cong P\times Q$. By step [](#s2){.pf-ref}, both factors are abelian, hence so is $G$.
 
 :::
 

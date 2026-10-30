@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\CC\to\CC$ be entire and suppose $\log|f|$ is absolutely integrable with respect to planar Lebesgue measure.
+Let $f:\CC\to\CC$ be entire and suppose $\log\abs{f}$ is absolutely integrable with respect to planar Lebesgue measure.
 Show that $f$ is constant.
 :::
 
@@ -29,7 +29,7 @@ Show that $f$ is constant.
 
 If $f$ is nonconstant, then there exists $z_0\in\CC$ such that
 $$
-\log|f(z_0)|>1.
+\log\abs{f(z_0)}>1.
 $$
 
 
@@ -37,7 +37,7 @@ $$
 
 If a nonconstant entire function were bounded, Liouville's theorem would make it constant. Thus $f$ is unbounded. In particular there exists $z_0$ with
 $$
-|f(z_0)|>e,
+\abs{f(z_0)}>e,
 $$
 which is equivalent to the displayed inequality.
 
@@ -51,14 +51,14 @@ If $f\not\equiv0$, then
 $$
 u(z)
 \coloneqq
-\log|f(z)|
+\log\abs{f(z)}
 $$
 is subharmonic on $\CC$.
 
 
 ::: pf-proof
 
-For a nonzero holomorphic function, $\log|f|$ is a standard subharmonic function, taking the value $-\infty$ at zeros. Equivalently, locally one may factor
+For a nonzero holomorphic function, $\log\abs{f}$ is a standard subharmonic function, taking the value $-\infty$ at zeros. Equivalently, locally one may factor
 $$
 f(z)=(z-a)^m g(z),
 \qquad
@@ -66,9 +66,9 @@ g(a)\ne0,
 $$
 so
 $$
-\log|f(z)|
+\log\abs{f(z)}
 =
-m\log|z-a|+\log|g(z)|,
+m\log\abs{z-a}+\log\abs{g(z)},
 $$
 the sum of a subharmonic function and a harmonic function.
 
@@ -82,9 +82,9 @@ Under the nonconstancy assumption, for every $r>0$,
 $$
 \frac1{2\pi}
 \int_0^{2\pi}
-\log|f(z_0+re^{i\theta})|\,d\theta
+\log\abs{f(z_0+re^{i\theta})}\,d\theta
 \ge
-\log|f(z_0)|
+\log\abs{f(z_0)}
 >
 1.
 $$
@@ -103,7 +103,7 @@ Apply the sub-mean-value inequality for the subharmonic function from step [](#s
 For every $R>0$,
 $$
 \int_{B(z_0,R)}
-\log|f(z)|\,dA(z)
+\log\abs{f(z)}\,dA(z)
 >
 \pi R^2.
 $$
@@ -115,13 +115,13 @@ Using polar coordinates about $z_0$ and step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 \int_{B(z_0,R)}
-\log|f(z)|\,dA(z)
+\log\abs{f(z)}\,dA(z)
 &=
 \int_0^R
 r
 \left(
 \int_0^{2\pi}
-\log|f(z_0+re^{i\theta})|\,d\theta
+\log\abs{f(z_0+re^{i\theta})}\,d\theta
 \right)dr\\
 &>
 \int_0^R 2\pi r\,dr\\
@@ -137,7 +137,7 @@ The local logarithmic singularities at zeros are integrable, so these disk integ
 
 ::: {.pf-step #s1-5}
 
-The nonconstancy assumption contradicts absolute integrability of $\log|f|$.
+The nonconstancy assumption contradicts absolute integrability of $\log\abs{f}$.
 
 
 ::: pf-proof
@@ -147,17 +147,17 @@ $$
 C
 \coloneqq
 \int_{\CC}
-|\log|f(z)||\,dA(z)
+\abs{\log\abs{f(z)}}\,dA(z)
 <
 \infty.
 $$
 For every $R>0$,
 $$
 \int_{B(z_0,R)}
-\log|f(z)|\,dA(z)
+\log\abs{f(z)}\,dA(z)
 \le
 \int_{B(z_0,R)}
-|\log|f(z)||\,dA(z)
+\abs{\log\abs{f(z)}}\,dA(z)
 \le
 C.
 $$

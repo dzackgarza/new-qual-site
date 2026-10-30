@@ -53,15 +53,15 @@ This action has a fixed point.
 
 ::: pf-proof
 
-Write $|G|=p^a m$ with $p\nmid m$. Since $S$ is Sylow,
-$|S|=p^a$, so
+Write $\cardinality{G}=p^a m$ with $p\nmid m$. Since $S$ is Sylow,
+$\cardinality{S}=p^a$, so
 $$
-|G/S|=m
+\cardinality{G/S}=m
 $$
 is not divisible by $p$.
 
 Every $P$-orbit has cardinality a power of $p$. If there were no fixed point,
-every orbit would have cardinality divisible by $p$, forcing $p\mid |G/S|$,
+every orbit would have cardinality divisible by $p$, forcing $p\mid \cardinality{G/S}$,
 contrary to the preceding calculation. Hence some coset $gS$ is fixed by all
 of $P$.
 

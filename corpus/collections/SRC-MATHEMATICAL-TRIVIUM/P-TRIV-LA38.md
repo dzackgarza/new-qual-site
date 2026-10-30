@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Consider the matrix $A = \left[ \begin{array} { l l } { a } & { b } \\ { c } & { d } \end{array} \right] , a , b , c , d \in \RR$ , det $A = 1$ . It transforms the basis vectors ${ \vec { e } } _ { 1 } = \left[ { \begin{array} { l } { 1 } \\ { 0 } \end{array} } \right] , { \vec { e } } _ { 2 } = \left[ { \begin{array} { l } { 0 } \\ { 1 } \end{array} } \right]$ into ${ \vec { g } } _ { 1 } = { \Big [ } { \frac { a } { c } } { \Big ] } , { \vec { g } } _ { 2 } = { \Big [ } { \frac { b } { d } } { \Big ] }$ . One can obtain a useful decomposition of A by making an inverse transformation in three steps.
 
-(a) Construct the rotation matrix $R ^ { - 1 }$ that sends $\vec { g } _ { 1 }$ to $R ^ { - 1 } ( \vec { g } _ { 1 } ) \lVert \vec { e } _ { 1 }$ . How does it act on $\vec { g } _ { 2 } ?$
+(a) Construct the rotation matrix $R ^ { - 1 }$ that sends $\vec { g } _ { 1 }$ to $R ^ { - 1 } ( \vec { g } _ { 1 } ) \parallel \vec { e } _ { 1 }$ . How does it act on $\vec { g } _ { 2 } ?$
 
 (b) Construct the diagonal matrix $P ^ { - 1 }$ such that det $P ^ { - 1 } = 1$ and $P ^ { - 1 } ( R ^ { - 1 } ( \vec { g } _ { 1 } ) ) =$ $\vec { e } _ { 1 }$ . Show that the components of $P ^ { - 1 } ( R ^ { - 1 } ( \vec { g } _ { 2 } ) )$ are ${ \binom { x } { 1 } } , x \in \RR$
 
@@ -397,7 +397,7 @@ with $r>0$, one has
 $$
 g_1=rRe_1.
 $$
-Thus $r=\|g_1\|$ and $Re_1=g_1/\|g_1\|$. A rotation in $SO(2)$ is uniquely
+Thus $r=\norm{g_1}$ and $Re_1=g_1/\norm{g_1}$. A rotation in $SO(2)$ is uniquely
 determined by its first column, so $R$ is unique.
 
 :::
@@ -413,7 +413,7 @@ The factor $P$ is uniquely determined.
 
 Step [](#s1-12){.pf-ref} fixes
 $$
-r=\|g_1\|=\sqrt{a^2+c^2}.
+r=\norm{g_1}=\sqrt{a^2+c^2}.
 $$
 The required positive diagonal matrix with determinant $1$ and first diagonal
 entry $r$ is uniquely

@@ -39,7 +39,7 @@ Every group of order $15$ is solvable.
 
 ::: pf-proof
 
-Let $|G|=15=3\cdot5$. The number $n_5$ of Sylow $5$-subgroups
+Let $\cardinality{G}=15=3\cdot5$. The number $n_5$ of Sylow $5$-subgroups
 divides $3$ and is $1$ modulo $5$, by Sylow's theorems [@DF04].
 Of the divisors $1,3$ of $3$, only $1$ satisfies that congruence.
 Thus there is a unique subgroup $P$ of order $5$; conjugation
@@ -67,7 +67,7 @@ Every group of order $36$ has a nontrivial proper normal subgroup.
 
 ::: pf-proof
 
-Let $|G|=36=2^2\cdot3^2$. Sylow's theorems give
+Let $\cardinality{G}=36=2^2\cdot3^2$. Sylow's theorems give
 $n_3\mid4$ and $n_3\equiv1\pmod3$, so $n_3=1$ or $4$.
 If $n_3=1$, the unique subgroup of order $9$ is normal and is
 nontrivial and proper.
@@ -76,7 +76,7 @@ Suppose $n_3=4$. Conjugation on the four Sylow $3$-subgroups
 gives a homomorphism $\rho:G\to S_4$. Its action is transitive
 by Sylow conjugacy, so it is not the trivial action and
 $\ker\rho\ne G$. It cannot be injective because
-$|G|=36>24=|S_4|$, so $\ker\rho\ne\{1\}$.
+$\cardinality{G}=36>24=\cardinality{S_4}$, so $\ker\rho\ne\{1\}$.
 The kernel is normal, and it is therefore a nontrivial proper
 normal subgroup in this case as well. Neither possibility allows
 $G$ to be simple.

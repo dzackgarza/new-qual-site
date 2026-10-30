@@ -29,10 +29,10 @@ Write points of the plane in polar coordinates $(r, \theta)$, with $\theta$ take
 ::: pf
 
 ::: {.pf-step #disc-model}
-$P^2$ is homeomorphic to the quotient of the closed unit disc $D^2$ by $x \sim -x$ for $|x| = 1$.
+$P^2$ is homeomorphic to the quotient of the closed unit disc $D^2$ by $x \sim -x$ for $\norm{x} = 1$.
 
 ::: pf-proof
-The map $h \colon D^2 \to S^2$, $h(x) = (x, \sqrt{1 - |x|^2})$, followed by the quotient $S^2 \to P^2$, is continuous and surjective, because every antipodal pair has a point with nonnegative last coordinate.
+The map $h \colon D^2 \to S^2$, $h(x) = (x, \sqrt{1 - \norm{x}^2})$, followed by the quotient $S^2 \to P^2$, is continuous and surjective, because every antipodal pair has a point with nonnegative last coordinate.
 Two points of $D^2$ have the same image exactly when they are equal or are antipodal points of $\partial D^2$.
 As $D^2$ is compact and $P^2$ is Hausdorff, the map is closed, hence a quotient map, and induces the homeomorphism.
 :::
@@ -40,12 +40,12 @@ As $D^2$ is compact and $P^2$ is Hausdorff, the map is closed, hence a quotient 
 :::
 
 ::: {.pf-step #annulus}
-Let $q \colon D^2 \to P^2$ be the quotient map of step [](#disc-model){.pf-ref} and $U = q(\{|x| < 1/2\})$.
-Then $U$ is an open disc in $P^2$, and $Y = P^2 \setminus U$ is homeomorphic to the quotient $A/{\sim}$ of the closed annulus $A = \{1/2 \le |x| \le 1\}$ by $x \sim -x$ for $|x| = 1$.
+Let $q \colon D^2 \to P^2$ be the quotient map of step [](#disc-model){.pf-ref} and $U = q(\{\norm{x} < 1/2\})$.
+Then $U$ is an open disc in $P^2$, and $Y = P^2 \setminus U$ is homeomorphic to the quotient $A/{\sim}$ of the closed annulus $A = \{1/2 \le \norm{x} \le 1\}$ by $x \sim -x$ for $\norm{x} = 1$.
 
 ::: pf-proof
-The set $\{|x| < 1/2\}$ is open and saturated, so $U$ is open, and $q$ is injective on it, so $q$ maps it homeomorphically onto $U$ (an injective restriction of a quotient map to an open saturated set is a quotient map onto its image).
-$A$ is saturated with $q(A) = Y$, so $q|_A \colon A \to Y$ is a continuous surjection from a compact space to a Hausdorff space, hence a quotient map, and its identifications are exactly $x \sim -x$ on $|x| = 1$.
+The set $\{\norm{x} < 1/2\}$ is open and saturated, so $U$ is open, and $q$ is injective on it, so $q$ maps it homeomorphically onto $U$ (an injective restriction of a quotient map to an open saturated set is a quotient map onto its image).
+$A$ is saturated with $q(A) = Y$, so $q\restrict_A \colon A \to Y$ is a continuous surjection from a compact space to a Hausdorff space, hence a quotient map, and its identifications are exactly $x \sim -x$ on $\norm{x} = 1$.
 :::
 
 :::

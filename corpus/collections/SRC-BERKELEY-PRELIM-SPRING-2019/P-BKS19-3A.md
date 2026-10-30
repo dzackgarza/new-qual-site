@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-3A
 kind: problem
-title: Sup-norm bound $\max|f|\le\frac18\max|f''|$ with zero boundary values
+title: Sup-norm bound $\max\abs{f}\le\frac18\max\abs{f''}$ with zero boundary values
 classification:
   areas:
   - prelim
@@ -31,7 +31,7 @@ audit:
 Let $f$ be a twice continuously differentiable function on $[0,1]$ such that $f(0)=f(1)=0$.
 Prove that
 $$
-\max_{x\in[0,1]}|f(x)|\le \frac18\max_{x\in[0,1]}|f''(x)|,
+\max_{x\in[0,1]}\abs{f(x)}\le \frac18\max_{x\in[0,1]}\abs{f''(x)},
 $$
 and find an example where equality holds.
 :::
@@ -40,7 +40,7 @@ and find an example where equality holds.
 
 Set
 $$
-M\coloneqq\max_{x\in[0,1]}|f''(x)|.
+M\coloneqq\max_{x\in[0,1]}\abs{f''(x)}.
 $$
 
 ::: pf
@@ -49,14 +49,14 @@ $$
 
 If $f$ is not identically zero, there is a point $\alpha\in(0,1)$ with
 $$
-|f(\alpha)|=\max_{x\in[0,1]}|f(x)|
+\abs{f(\alpha)}=\max_{x\in[0,1]}\abs{f(x)}
 $$
 and $f'(\alpha)=0$.
 
 
 ::: pf-proof
 
-Continuity gives a point where $|f|$ attains its maximum. Since $f(0)=f(1)=0$ and $f$ is not identically zero, the maximum is positive and cannot occur only at an endpoint; hence it is attained at some $\alpha\in(0,1)$. At such a point either $f$ has a local maximum or a local minimum, so Fermat's theorem gives $f'(\alpha)=0$.
+Continuity gives a point where $\abs{f}$ attains its maximum. Since $f(0)=f(1)=0$ and $f$ is not identically zero, the maximum is positive and cannot occur only at an endpoint; hence it is attained at some $\alpha\in(0,1)$. At such a point either $f$ has a local maximum or a local minimum, so Fermat's theorem gives $f'(\alpha)=0$.
 
 :::
 
@@ -69,7 +69,7 @@ After replacing $f(x)$ by $f(1-x)$ if necessary, the point in step [](#s1-1){.pf
 
 ::: pf-proof
 
-If $\alpha\leq\frac12$, there is nothing to prove. If $\alpha>\frac12$, define $g(x)=f(1-x)$. Then $g(0)=g(1)=0$, $\max|g|=\max|f|$, and $\max|g''|=\max|f''|$, while $|g(1-\alpha)|=|f(\alpha)|$ and $1-\alpha<\frac12$. Thus the desired estimate for $g$ is equivalent to that for $f$.
+If $\alpha\leq\frac12$, there is nothing to prove. If $\alpha>\frac12$, define $g(x)=f(1-x)$. Then $g(0)=g(1)=0$, $\max\abs{g}=\max\abs{f}$, and $\max\abs{g''}=\max\abs{f''}$, while $\abs{g(1-\alpha)}=\abs{f(\alpha)}$ and $1-\alpha<\frac12$. Thus the desired estimate for $g$ is equivalent to that for $f$.
 
 :::
 
@@ -79,7 +79,7 @@ If $\alpha\leq\frac12$, there is nothing to prove. If $\alpha>\frac12$, define $
 
 One has
 $$
-\max_{x\in[0,1]}|f(x)|\leq\frac18M.
+\max_{x\in[0,1]}\abs{f(x)}\leq\frac18M.
 $$
 
 
@@ -99,8 +99,8 @@ $$
 $$
 because $f'(\alpha)=0$ by step [](#s1-1){.pf-ref}. Therefore
 $$
-\max|f|
-=|f(\alpha)|
+\max\abs{f}
+=\abs{f(\alpha)}
 \leq
 M\int_0^\alpha x\,dx
 =
@@ -126,13 +126,13 @@ $$
 
 This function satisfies $f(0)=f(1)=0$ and $f''(x)=1$, so
 $$
-\max_{[0,1]}|f''|=1.
+\max_{[0,1]}\abs{f''}=1.
 $$
 Moreover $f(x)\leq0$ on $[0,1]$, with its minimum at $x=1/2$, where
 $$
 f\left(\frac12\right)=-\frac18.
 $$
-Hence $\max|f|=1/8=(1/8)\max|f''|$.
+Hence $\max\abs{f}=1/8=(1/8)\max\abs{f''}$.
 
 :::
 

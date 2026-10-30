@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-COY2N
 kind: problem
-title: $\sup_{\|g\|_1\le 1}\|fg\|_1=\|f\|_\infty$ for continuous $f$ on $[0,1]$
+title: $\sup_{\norm{g}_1\le 1}\norm{fg}_1=\norm{f}_\infty$ for continuous $f$ on $[0,1]$
 classification:
   areas:
   - real-analysis
@@ -29,7 +29,7 @@ audit:
 Let $f: [0, 1] \to \RR$ be continuous.
 Show that
 $$
-\sup \left\{\|f g\|_{1} \suchthat g \in L^{1}[0,1],~~ \|g\|_{1} \leq 1\right\}=\|f\|_{\infty}.
+\sup \left\{\norm{f g}_{1} \suchthat g \in L^{1}[0,1],~~ \norm{g}_{1} \leq 1\right\}=\norm{f}_{\infty}.
 $$
 :::
 
@@ -43,16 +43,16 @@ Prove the upper bound.
 
 ::: pf-proof
 
-For every $g\in L^1([0,1])$ with $\|g\|_1\le1$,
+For every $g\in L^1([0,1])$ with $\norm{g}_1\le1$,
 $$
-\|fg\|_1
-=\int_0^1|f(x)g(x)|\,dx
-\le \|f\|_\infty\|g\|_1
-\le \|f\|_\infty.
+\norm{fg}_1
+=\int_0^1\abs{f(x)g(x)}\,dx
+\le \norm{f}_\infty\norm{g}_1
+\le \norm{f}_\infty.
 $$
 Hence
 $$
-\sup_{\|g\|_1\le1}\|fg\|_1\le\|f\|_\infty.
+\sup_{\norm{g}_1\le1}\norm{fg}_1\le\norm{f}_\infty.
 $$
 
 :::
@@ -67,31 +67,31 @@ Prove the reverse inequality.
 
 Since $f$ is continuous on the compact interval $[0,1]$, there is $x_0\in[0,1]$ such that
 $$
-|f(x_0)|=\|f\|_\infty.
+\abs{f(x_0)}=\norm{f}_\infty.
 $$
 Fix $\varepsilon>0$. By continuity, there is a measurable interval $I\subset[0,1]$ of positive length containing $x_0$ such that
 $$
-|f(x)|\ge \|f\|_\infty-\varepsilon
+\abs{f(x)}\ge \norm{f}_\infty-\varepsilon
 \qquad(x\in I).
 $$
 Set
 $$
 g=\frac{\mathbf1_I}{m(I)}.
 $$
-Then $\|g\|_1=1$ and
+Then $\norm{g}_1=1$ and
 $$
-\|fg\|_1
-=\frac1{m(I)}\int_I|f(x)|\,dx
-\ge \|f\|_\infty-\varepsilon.
+\norm{fg}_1
+=\frac1{m(I)}\int_I\abs{f(x)}\,dx
+\ge \norm{f}_\infty-\varepsilon.
 $$
 Therefore
 $$
-\sup_{\|g\|_1\le1}\|fg\|_1\ge \|f\|_\infty-\varepsilon.
+\sup_{\norm{g}_1\le1}\norm{fg}_1\ge \norm{f}_\infty-\varepsilon.
 $$
 Letting $\varepsilon\downarrow0$ gives the reverse inequality. Thus
 $$
 \boxed{
-\sup_{\|g\|_1\le1}\|fg\|_1=\|f\|_\infty.}
+\sup_{\norm{g}_1\le1}\norm{fg}_1=\norm{f}_\infty.}
 $$
 
 :::

@@ -31,11 +31,11 @@ audit:
 ::: {.problem}
 Let $f$ be holomorphic on the open unit disk
 $$
-\DD=\{z:|z|<1\}.
+\DD=\{z:\abs{z}<1\}.
 $$
 Prove that there is a sequence $(z_n)$ in $\DD$ such that
 $$
-|z_n|\to1
+\abs{z_n}\to1
 $$
 and $(f(z_n))$ is bounded.
 :::

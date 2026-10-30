@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-BSATZ
 kind: problem
-title: $\bigl|\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}\bigr|\le\frac{|z|}{MR}$ for
-  $|f|\le M$ on $D(0,R)$
+title: $\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}\le\frac{\abs{z}}{MR}$ for $\abs{f}\le M$ on $D(0,R)$
 classification:
   areas:
   - complex-analysis
@@ -15,9 +14,9 @@ review: draft
 ---
 
 ::: {.problem}
-Show that if $f: D(0, R) \rightarrow \CC$ is holomorphic, with $|f(z)| \leq M$ for some $M>0$, then
+Show that if $f: D(0, R) \rightarrow \CC$ is holomorphic, with $\abs{f(z)} \leq M$ for some $M>0$, then
 $$
-\left|\frac{f(z)-f(0)}{M^{2}-\overline{f(0)} f(z)}\right| \leq \frac{|z|}{M R} .
+\abs{\frac{f(z)-f(0)}{M^{2}-\overline{f(0)} f(z)}} \leq \frac{\abs{z}}{M R} .
 $$
 :::
 
@@ -25,7 +24,7 @@ $$
 The strategy:
 
 - Write the RHS as $a$.
-  Note that we need to get rid of the $M^2$ on the LHS, so keep the $M$ around and write $a \definedas z/R$ so $z = aR$.
+  Note that we need to get rid of the $M^2$ on the LHS, so keep the $M$ around and write $a \coloneqq z/R$ so $z = aR$.
 
 - Make the substitution to get
 $$
@@ -35,7 +34,7 @@ $$
 \abs{ f(aR)/M - f(0)/M  \over 1 - \bar{f(0)} f(aR)/M^2 } \leq \abs{a} 
 .$$
 
-  - Recognize the LHS as $\psi_w(g(a))$ for $w\definedas f(0)/M$ and $g(a) \definedas f(aR)/M$.
+  - Recognize the LHS as $\psi_w(g(a))$ for $w\coloneqq f(0)/M$ and $g(a) \coloneqq f(aR)/M$.
 
 :::
 
@@ -48,9 +47,9 @@ $$
 F: \DD &\to \CC \\
 z &\mapsto {f(Rz) \over M}
 .$$
-Write $a\definedas F(0)$ and consider the Blaschke factor
+Write $a\coloneqq F(0)$ and consider the Blaschke factor
 $$
-\psi_a(z) \definedas {a-z \over 1-\bar{a} z} \in \Aut(\DD)
+\psi_a(z) \coloneqq {a-z \over 1-\bar{a} z} \in \Aut(\DD)
 ,$$
 and define
 $$

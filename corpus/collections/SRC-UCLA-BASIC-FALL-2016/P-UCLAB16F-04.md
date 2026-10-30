@@ -123,16 +123,16 @@ D_n\to D\ne0,
 $$
 choose $N$ so that
 $$
-|D_n-D|<\frac{|D|}{2}
+\abs{D_n-D}<\frac{\abs{D}}{2}
 $$
 for $n\ge N$.
 Then
 $$
-|D_n|
+\abs{D_n}
 \ge
-|D|-|D_n-D|
+\abs{D}-\abs{D_n-D}
 >
-\frac{|D|}{2}
+\frac{\abs{D}}{2}
 >
 0.
 $$

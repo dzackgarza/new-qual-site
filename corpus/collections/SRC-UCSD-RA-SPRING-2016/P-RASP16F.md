@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
 Let $1 < p < \infty$.
-Suppose $f_k \in L^p(\mu)$ ($k = 1, 2, \ldots$) are such that $\sup_{k \geq 1} \|f_k\|_p < \infty$ and $f_k \to f$ in $L^1(\mu)$ for some $f \in L^1(\mu)$.
+Suppose $f_k \in L^p(\mu)$ ($k = 1, 2, \ldots$) are such that $\sup_{k \geq 1} \norm{f_k}_p < \infty$ and $f_k \to f$ in $L^1(\mu)$ for some $f \in L^1(\mu)$.
 Prove that $f \in L^p(\mu)$ and $f_k \to f$ in $L^q(\mu)$ for any $q \in (1, p)$.
 :::
 
@@ -44,7 +44,7 @@ Show that the limit belongs to $L^p$.
 
 Let
 $$
-M:=\sup_k\|f_k\|_p<\infty.
+M:=\sup_k\norm{f_k}_p<\infty.
 $$
 Since $f_k\to f$ in $L^1$, there is a subsequence $(f_{k_j})$ such that
 $$
@@ -52,13 +52,13 @@ f_{k_j}(x)\to f(x)
 $$
 for almost every $x\in X$. By Fatou's lemma,
 $$
-\int_X |f|^p\,d\mu
-\le \liminf_{j\to\infty}\int_X |f_{k_j}|^p\,d\mu
+\int_X \abs{f}^p\,d\mu
+\le \liminf_{j\to\infty}\int_X \abs{f_{k_j}}^p\,d\mu
 \le M^p.
 $$
 Hence
 $$
-\boxed{f\in L^p(\mu),\qquad \|f\|_p\le M.}
+\boxed{f\in L^p(\mu),\qquad \norm{f}_p\le M.}
 $$
 
 :::
@@ -77,12 +77,12 @@ h_k:=f_k-f.
 $$
 Then
 $$
-\|h_k\|_1\longrightarrow0
+\norm{h_k}_1\longrightarrow0
 $$
 and, by the triangle inequality,
 $$
-\|h_k\|_p
-\le \|f_k\|_p+\|f\|_p
+\norm{h_k}_p
+\le \norm{f_k}_p+\norm{f}_p
 \le 2M.
 $$
 
@@ -102,12 +102,12 @@ $$
 $$
 The standard interpolation inequality gives
 $$
-\|h_k\|_q
-\le \|h_k\|_1^\theta\|h_k\|_p^{1-\theta}.
+\norm{h_k}_q
+\le \norm{h_k}_1^\theta\norm{h_k}_p^{1-\theta}.
 $$
 For completeness, this follows from Hölder after writing
 $$
-|h_k|^q=|h_k|^{\theta q}|h_k|^{(1-\theta)q}
+\abs{h_k}^q=\abs{h_k}^{\theta q}\abs{h_k}^{(1-\theta)q}
 $$
 with conjugate exponents
 $$
@@ -119,9 +119,9 @@ whose reciprocals sum to $1$ precisely because of the defining relation for $\th
 
 Using Step 2,
 $$
-\|f_k-f\|_q
-=\|h_k\|_q
-\le (2M)^{1-\theta}\|h_k\|_1^\theta
+\norm{f_k-f}_q
+=\norm{h_k}_q
+\le (2M)^{1-\theta}\norm{h_k}_1^\theta
 \longrightarrow0.
 $$
 Therefore

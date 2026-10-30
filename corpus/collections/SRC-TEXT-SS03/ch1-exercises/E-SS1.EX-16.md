@@ -64,11 +64,11 @@ In part (a), the radius of convergence is $R=1$.
 
 By the Cauchy-Hadamard formula,
 $$
-R^{-1}=\limsup_{n\to\infty}|a_n|^{1/n}.
+R^{-1}=\limsup_{n\to\infty}\abs{a_n}^{1/n}.
 $$
 Here
 $$
-|a_n|^{1/n}=\exp\!\left(\frac{2\log\log n}{n}\right)\longrightarrow1,
+\abs{a_n}^{1/n}=\exp\!\left(\frac{2\log\log n}{n}\right)\longrightarrow1,
 $$
 so $R^{-1}=1$.
 
@@ -84,9 +84,9 @@ In part (b), the radius of convergence is $R=0$.
 
 For the nonzero coefficients $a_n=n!$,
 $$
-\left|\frac{a_{n+1}}{a_n}\right|=n+1\longrightarrow\infty.
+\abs{\frac{a_{n+1}}{a_n}}=n+1\longrightarrow\infty.
 $$
-Thus for every $z\ne0$, the ratio of successive absolute values of the terms is $(n+1)|z|\to\infty$, so the terms do not even tend to zero. Hence convergence occurs only at $z=0$.
+Thus for every $z\ne0$, the ratio of successive absolute values of the terms is $(n+1)\abs{z}\to\infty$, so the terms do not even tend to zero. Hence convergence occurs only at $z=0$.
 
 :::
 
@@ -100,7 +100,7 @@ In part (c), the radius of convergence is $R=4$.
 
 One has
 $$
-|a_n|^{1/n}
+\abs{a_n}^{1/n}
 =
 \frac{n^{2/n}}{(4^n+3n)^{1/n}}.
 $$
@@ -109,7 +109,7 @@ $$
 (4^n+3n)^{1/n}
 =4\left(1+\frac{3n}{4^n}\right)^{1/n}\longrightarrow4.
 $$
-Therefore $\lim |a_n|^{1/n}=1/4$, so Cauchy-Hadamard gives $R=4$.
+Therefore $\lim \abs{a_n}^{1/n}=1/4$, so Cauchy-Hadamard gives $R=4$.
 
 :::
 
@@ -128,7 +128,7 @@ $$
 \frac{(n+1)^3}{(3n+1)(3n+2)(3n+3)}
 \longrightarrow\frac1{27}.
 $$
-Hence the ratio of successive absolute values of the terms $a_nz^n$ tends to $|z|/27$. The ratio test gives convergence for $|z|<27$ and divergence for $|z|>27$, so the radius is $27$.
+Hence the ratio of successive absolute values of the terms $a_nz^n$ tends to $\abs{z}/27$. The ratio test gives convergence for $\abs{z}<27$ and divergence for $\abs{z}>27$, so the radius is $27$.
 
 :::
 
@@ -147,12 +147,12 @@ c_n=
 $$
 where $(q)_n=q(q+1)\cdots(q+n-1)$. Under the stated assumption on $\alpha$ and $\beta$, all $c_n$ are nonzero, and the hypothesis on $\gamma$ makes the denominator nonzero. Thus
 $$
-\left|\frac{c_{n+1}}{c_n}\right|
+\abs{\frac{c_{n+1}}{c_n}}
 =
-\left|\frac{(n+\alpha)(n+\beta)}{(n+1)(n+\gamma)}\right|
+\abs{\frac{(n+\alpha)(n+\beta)}{(n+1)(n+\gamma)}}
 \longrightarrow1.
 $$
-The ratio test therefore gives convergence for $|z|<1$ and divergence for $|z|>1$.
+The ratio test therefore gives convergence for $\abs{z}<1$ and divergence for $\abs{z}>1$.
 
 :::
 
@@ -182,7 +182,7 @@ c_n=\frac{(-1)^n}{n!(n+r)!}.
 $$
 As a power series in $w=z^2/4$, its coefficient ratio satisfies
 $$
-\left|\frac{c_{n+1}}{c_n}\right|
+\abs{\frac{c_{n+1}}{c_n}}
 =
 \frac1{(n+1)(n+r+1)}\longrightarrow0.
 $$

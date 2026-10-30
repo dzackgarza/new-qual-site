@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if $1 < p < \infty$ and $f_n$ converges to $f$ weakly in $\ell^p(\NN)$, then $\sup_n \|f_n\|_p < \infty$ and $f_n \to f$ pointwise.
+Prove that if $1 < p < \infty$ and $f_n$ converges to $f$ weakly in $\ell^p(\NN)$, then $\sup_n \norm{f_n}_p < \infty$ and $f_n \to f$ pointwise.
 
 (The converse is also true, but you are not asked to prove it here.)
 :::
@@ -47,7 +47,7 @@ T_n(g)=\sum_{k=1}^\infty f_n(k)g(k).
 $$
 Then $T_n$ is bounded and
 $$
-\|T_n\|=\|f_n\|_p.
+\norm{T_n}=\norm{f_n}_p.
 $$
 For every fixed $g\in\ell^q$, weak convergence gives
 $$
@@ -55,11 +55,11 @@ T_n(g)\longrightarrow \sum_{k=1}^\infty f(k)g(k),
 $$
 so the scalar sequence $(T_n(g))_n$ is bounded. Since $\ell^q$ is Banach, the Uniform Boundedness Principle yields
 $$
-\sup_n\|T_n\|<\infty.
+\sup_n\norm{T_n}<\infty.
 $$
 Hence
 $$
-\boxed{\sup_n\|f_n\|_p<\infty.}
+\boxed{\sup_n\norm{f_n}_p<\infty.}
 $$
 
 :::

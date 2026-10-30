@@ -164,7 +164,7 @@ $$
 $$
 Under the direct-product decomposition, the classes $C_1,C_4,C_5$ have trivial $C_2$ component, whereas $C_2,C_3,C_6$ have nontrivial $C_2$ component. Substituting the $D_3$ class and $C_2$ sign values gives exactly the displayed table. The degree squares sum to
 $$
-4\cdot1^2+2\cdot2^2=12=|D_6|,
+4\cdot1^2+2\cdot2^2=12=\cardinality{D_6},
 $$
 so these are all irreducible characters.
 

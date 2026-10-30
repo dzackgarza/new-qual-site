@@ -122,7 +122,7 @@ $$
 Since
 $$
 \limsup_{n\to\infty}
-|a_n|^{1/n}
+\abs{a_n}^{1/n}
 =
 \frac12,
 $$
@@ -218,10 +218,10 @@ n,
 $$
 $$
 \sup_{x\in\RR}
-|f_n(x)|
+\abs{f_n(x)}
 =
 \sup_{x\in\RR}
-\frac{|x|}{n}
+\frac{\abs{x}}{n}
 =
 +\infty.
 $$

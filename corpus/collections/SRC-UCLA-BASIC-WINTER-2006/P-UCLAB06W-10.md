@@ -72,7 +72,7 @@ W=e_1^\perp
 $$
 and let $P_W:V\to W$ be orthogonal projection. Define
 $$
-R=P_W\circ T|_W:W\to W.
+R=P_W\circ T\restrict_W:W\to W.
 $$
 
 

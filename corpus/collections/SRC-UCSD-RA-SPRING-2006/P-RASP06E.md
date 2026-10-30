@@ -33,7 +33,7 @@ Let $H$ be a Hilbert space, $P : H \to H$ a bounded linear operator, $P^* : H \t
 (c) Assume that $P^2 = P$.
 Show that the following are equivalent:
 
-(i) $\mathcal{R}(P)$ is closed and $\|x - Px\| = \inf_{y \in \mathcal{R}(P)} \|x - y\|$ for every $x \in H$.
+(i) $\mathcal{R}(P)$ is closed and $\norm{x - Px} = \inf_{y \in \mathcal{R}(P)} \norm{x - y}$ for every $x \in H$.
 
 (ii) $P = P^*$.
 :::
@@ -83,7 +83,7 @@ P:\mathcal N(P)^\perp\longrightarrow\mathcal R(P)
 $$
 is a bounded bijection. By the Bounded Inverse Theorem there is $C>0$ such that
 $$
-\|x\|\le C\|Px\|
+\norm{x}\le C\norm{Px}
 \qquad(x\in\mathcal N(P)^\perp).
 $$
 
@@ -97,8 +97,8 @@ $$
 $$
 Replacing $y$ by its orthogonal projection onto $\mathcal N(P)^\perp$ gives
 $$
-|L(Py)|\le \|z\|\,\|y_\perp\|
-\le C\|z\|\,\|Py\|,
+\abs{L(Py)}\le \norm{z}\,\norm{y_\perp}
+\le C\norm{z}\,\norm{Py},
 $$
 so $L$ is bounded on the Hilbert space $\mathcal R(P)$.
 
@@ -151,13 +151,13 @@ x-y=(x-Px)+(Px-y)
 $$
 is an orthogonal decomposition, so
 $$
-\|x-y\|^2
-=\|x-Px\|^2+\|Px-y\|^2
-\ge\|x-Px\|^2.
+\norm{x-y}^2
+=\norm{x-Px}^2+\norm{Px-y}^2
+\ge\norm{x-Px}^2.
 $$
 Hence
 $$
-\|x-Px\|=\inf_{y\in\mathcal R(P)}\|x-y\|.
+\norm{x-Px}=\inf_{y\in\mathcal R(P)}\norm{x-y}.
 $$
 
 :::

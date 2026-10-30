@@ -116,7 +116,7 @@ The roots of $f$ in $K$ are precisely the distinct elements $\sigma(\alpha)$ as 
 Since $K/F$ is normal, every $F$-embedding of $F(\alpha)$ into an algebraic closure extends to an element of $G$. Hence the conjugates of $\alpha$ over $F$ are exactly its $G$-orbit.
 By step [](#s5){.pf-ref}, orbit-stabilizer gives
 $$
-|G\cdot\alpha|=[G:H]=n=\deg f,
+\cardinality{G\cdot\alpha}=[G:H]=n=\deg f,
 $$
 so these are all roots of $f$, and they are distinct because $L/F$ is separable.
 

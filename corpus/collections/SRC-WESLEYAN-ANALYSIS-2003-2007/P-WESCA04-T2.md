@@ -108,7 +108,7 @@ $$
 \int_\gamma f(z)\,dz
 =
 \sum_{j=1}^m
-\int_{|z-a_j|=r_j}
+\int_{\abs{z-a_j}=r_j}
 f(z)\,dz,
 $$
 where each small circle on the right is positively oriented.
@@ -127,7 +127,7 @@ $$
 \int_\gamma f(z)\,dz
 -
 \sum_{j=1}^m
-\int_{|z-a_j|=r_j}^{\mathrm{ccw}}
+\int_{\abs{z-a_j}=r_j}^{\mathrm{ccw}}
 f(z)\,dz.
 $$
 Rearranging yields the displayed identity.
@@ -140,7 +140,7 @@ Rearranging yields the displayed identity.
 
 For every $j$,
 $$
-\int_{|z-a_j|=r_j}
+\int_{\abs{z-a_j}=r_j}
 f(z)\,dz
 =
 2\pi i\,
@@ -164,7 +164,7 @@ $$
 
 Termwise integration around the circle gives
 $$
-\int_{|z-a_j|=r_j}
+\int_{\abs{z-a_j}=r_j}
 (z-a_j)^n\,dz
 =
 \begin{cases}

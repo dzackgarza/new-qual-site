@@ -34,7 +34,7 @@ with $0<a<1$. The same Urysohn construction produces a continuous $g:X\to[-ar,ar
 
 The error satisfies
 $$
-|f-g|\le q r,
+\abs{f-g}\le q r,
 \qquad
 q=\max\{1-a,\,2a\}.
 $$

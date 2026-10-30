@@ -277,7 +277,7 @@ $$
 $$
 The restriction
 $$
-\nu_2|_\ell:\ell\cong\PP^1\longrightarrow\PP^5
+\nu_2\restrict_\ell:\ell\cong\PP^1\longrightarrow\PP^5
 $$
 is the complete quadratic Veronese embedding of $\PP^1$.
 Its image

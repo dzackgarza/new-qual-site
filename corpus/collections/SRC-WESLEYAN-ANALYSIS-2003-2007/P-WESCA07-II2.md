@@ -59,7 +59,7 @@ as $z\to0$.
 
 ::: pf-step
 
-The only poles inside $|z|=2$ are the simple poles $z=i$ and $z=-i$.
+The only poles inside $\abs{z}=2$ are the simple poles $z=i$ and $z=-i$.
 
 
 ::: pf-proof
@@ -124,7 +124,7 @@ The curve $\gamma(t)=2e^{it}$, $0\le t\le4\pi$, winds twice positively around bo
 
 ::: pf-proof
 
-As $t$ runs from $0$ to $4\pi$, the circle $|z|=2$ is traversed counterclockwise exactly twice. Both $i$ and $-i$ lie in its interior.
+As $t$ runs from $0$ to $4\pi$, the circle $\abs{z}=2$ is traversed counterclockwise exactly twice. Both $i$ and $-i$ lie in its interior.
 
 :::
 

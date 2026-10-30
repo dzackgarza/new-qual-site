@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-1B
 kind: problem
-title: Entire functions with $\lvert f(z^2)\rvert\le2\lvert f(z)\rvert$ are constant
+title: Entire functions with $\abs{ f(z^2)}\le2\abs{ f(z)}$ are constant
 classification:
   areas: [prelim]
   topics: []
@@ -29,7 +29,7 @@ audit:
 Let $f:\CC\to\CC$ be entire.
 Assume
 $$
-|f(z^2)|\le2|f(z)|
+\abs{f(z^2)}\le2\abs{f(z)}
 $$
 for all $z\in\CC$.
 Show that $f$ is constant.

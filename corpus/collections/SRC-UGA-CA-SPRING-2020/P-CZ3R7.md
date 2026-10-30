@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZ3R7
 kind: problem
-title: $|z-z_1|/|z-z_2|=c$ is a circle
+title: $\abs{z-z_1}/\abs{z-z_2}=c$ is a circle
 classification:
   areas:
   - complex-analysis

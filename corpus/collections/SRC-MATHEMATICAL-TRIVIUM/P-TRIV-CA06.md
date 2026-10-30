@@ -57,7 +57,7 @@ Setting $z=1$ gives $A=1/2$, and setting $z=-1$ gives $B=1/2$.
 
 For
 $$
-|z-1|<2,
+\abs{z-1}<2,
 $$
 one has
 $$
@@ -91,7 +91,7 @@ $$
 =
 \sum_{n=0}^{\infty}(-1)^n w^n
 $$
-converges for $|w|<1$. Take $w=(z-1)/2$.
+converges for $\abs{w}<1$. Take $w=(z-1)/2$.
 
 :::
 
@@ -126,7 +126,7 @@ step [](#s1-1){.pf-ref}.
 The region of convergence is
 $$
 \boxed{
-0<|z-1|<2.
+0<\abs{z-1}<2.
 }
 $$
 
@@ -134,7 +134,7 @@ $$
 ::: pf-proof
 
 The center $z=1$ is a simple pole, so it must be excluded. The geometric
-series from step [](#s1-2){.pf-ref} converges exactly for $|z-1|<2$. The boundary point
+series from step [](#s1-2){.pf-ref} converges exactly for $\abs{z-1}<2$. The boundary point
 $z=-1$ is a singularity of the original function and lies at distance $2$
 from the center, so the outer radius cannot be enlarged.
 

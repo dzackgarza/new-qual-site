@@ -31,7 +31,7 @@ Classify all groups of order 2012 up to isomorphism.
 
 Let $G$ be a group of order
 $$
-|G|=2012=4\cdot 503.
+\cardinality{G}=2012=4\cdot 503.
 $$
 Its Sylow $503$-subgroup $N$ is unique, hence normal, and $N\cong C_{503}$.
 
@@ -54,7 +54,7 @@ Thus $n_{503}=1$. Since $503$ is prime, $N\cong C_{503}$.
 If $P$ is any Sylow $2$-subgroup of $G$, then
 $$
 G=N\rtimes P,
-\qquad |P|=4.
+\qquad \cardinality{P}=4.
 $$
 Hence $P\cong C_4$ or $C_2\times C_2$.
 
@@ -66,7 +66,7 @@ N\cap P=1
 $$
 because the two groups have coprime orders. Therefore
 $$
-|NP|=|N||P|=503\cdot 4=|G|,
+\cardinality{NP}=\cardinality{N}\cardinality{P}=503\cdot 4=\cardinality{G},
 $$
 so $G=NP$, and this is the semidirect product $N\rtimes P$. The two groups of order $4$ are $C_4$ and $C_2\times C_2$.
 
@@ -90,7 +90,7 @@ $$
 $$
 a cyclic group of order $502=2\cdot 251$. The image of the $2$-group $P$ is therefore a $2$-subgroup of a cyclic group whose $2$-part has order $2$. Hence
 $$
-|\operatorname{im}\varphi|\in\{1,2\}.
+\cardinality{\operatorname{im}\varphi}\in\{1,2\}.
 $$
 The unique automorphism of $N$ of order $2$ is inversion $x\mapsto x^{-1}$.
 

@@ -39,14 +39,14 @@ $$
 $$
 For each $n$, choose $x_n\in X$ with
 $$
-\|x_n\|=1
+\norm{x_n}=1
 $$
 and
 $$
 \boxed{
-|\varphi_n(x_n)|
+\abs{\varphi_n(x_n)}
 \ge
-\frac12\|\varphi_n\|}.
+\frac12\norm{\varphi_n}}.
 $$
 
 
@@ -55,9 +55,9 @@ $$
 Separability of $X^*$ gives the countable dense family. By the definition of
 the operator norm,
 $$
-\|\varphi_n\|
+\norm{\varphi_n}
 =
-\sup_{\|x\|\le1}|\varphi_n(x)|.
+\sup_{\norm{x}\le1}\abs{\varphi_n(x)}.
 $$
 If $\varphi_n\ne0$, there exists a unit vector $x_n$ satisfying the displayed
 inequality. If $\varphi_n=0$, choose any unit vector. The Axiom of Choice
@@ -93,7 +93,7 @@ $$
 $$
 such that
 $$
-\varphi|_M=0
+\varphi\restrict_M=0
 \qquad\text{and}\qquad
 \varphi(y)\ne0.
 $$
@@ -113,21 +113,21 @@ $$
 Hence
 $$
 \begin{aligned}
-\frac12\|\varphi_{n_k}\|
+\frac12\norm{\varphi_{n_k}}
 &\le
-|\varphi_{n_k}(x_{n_k})|\\
+\abs{\varphi_{n_k}(x_{n_k})}\\
 &=
-|(\varphi_{n_k}-\varphi)(x_{n_k})|\\
+\abs{(\varphi_{n_k}-\varphi)(x_{n_k})}\\
 &\le
-\|\varphi_{n_k}-\varphi\|
-\|x_{n_k}\|\\
+\norm{\varphi_{n_k}-\varphi}
+\norm{x_{n_k}}\\
 &=
-\|\varphi_{n_k}-\varphi\|.
+\norm{\varphi_{n_k}-\varphi}.
 \end{aligned}
 $$
 Therefore
 $$
-\|\varphi_{n_k}\|\to0.
+\norm{\varphi_{n_k}}\to0.
 $$
 But also
 $$
@@ -135,7 +135,7 @@ $$
 $$
 in norm, so continuity of the norm gives
 $$
-\|\varphi\|=0,
+\norm{\varphi}=0,
 $$
 contradicting $\varphi\ne0$. Thus $M=X$.
 

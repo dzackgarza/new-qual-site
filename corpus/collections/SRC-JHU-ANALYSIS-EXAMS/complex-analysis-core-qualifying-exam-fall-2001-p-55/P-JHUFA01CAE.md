@@ -33,16 +33,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $D_r(0)=\{z\in\CC:|z|<r\}$ and $\Delta=D_1(0)$.
+Let $D_r(0)=\{z\in\CC:\abs{z}<r\}$ and $\Delta=D_1(0)$.
 Use the following subordination result: if $F:\Delta\to\CC$
 is injective and holomorphic, and $g:\Delta\to F(\Delta)$
 is holomorphic with $g(0)=F(0)$, then
 $g(D_r(0))\subset F(D_r(0))$ for $0\leq r<1$.
 Prove that if $g$ is holomorphic on $\Delta$, $g(0)=0$
-and $|\operatorname{Re}g(z)|<1$ for every $z\in\Delta$, then
+and $\abs{\operatorname{Re}g(z)}<1$ for every $z\in\Delta$, then
 
 $$
-| g ( z ) | \leq { \frac { 2 } { \pi } } \log \left\{ { \frac { 1 + | z | } { 1 - | z | } } \right\}
+\abs{ g ( z ) } \leq { \frac { 2 } { \pi } } \log \left\{ { \frac { 1 + \abs{ z } } { 1 - \abs{ z } } } \right\}
 $$
 
 for all $z \in D _ { 1 } ( 0 )$
@@ -51,7 +51,7 @@ for all $z \in D _ { 1 } ( 0 )$
 ::: {.solution}
 Let
 $$
-S=\{w\in\CC:|\operatorname{Re}w|<1\}.
+S=\{w\in\CC:\abs{\operatorname{Re}w}<1\}.
 $$
 
 ::: pf
@@ -74,7 +74,7 @@ maps the unit disk biholomorphically onto the right half-plane. On that
 half-plane take the logarithm with argument in $(-\pi/2,\pi/2)$. Its image is
 the horizontal strip
 $$
-\{u+iv:|v|<\pi/2\}.
+\{u+iv:\abs{v}<\pi/2\}.
 $$
 Multiplication by $2i/\pi$ maps that strip biholomorphically onto
 $S$, because
@@ -89,28 +89,28 @@ The composition is the displayed $F$, and $F(0)=0$.
 
 ::: {.pf-step #s2}
 
-Pointwise subordination uses the closed disk of radius $|z|$.
+Pointwise subordination uses the closed disk of radius $\abs{z}$.
 
 ::: pf-proof
 
-The hypothesis $|\operatorname{Re}g(z)|<1$ says exactly that
+The hypothesis $\abs{\operatorname{Re}g(z)}<1$ says exactly that
 $g:\Delta\to S=F(\Delta)$, and $g(0)=F(0)$. Equivalently,
 $$
 h=F^{-1}\circ g:\Delta\to\Delta
 $$
 is holomorphic with $h(0)=0$. Schwarz's lemma [@SS03] gives
 $$
-|h(z)|\le|z|.
+\abs{h(z)}\le\abs{z}.
 $$
-Thus, for $r=|z|$, put $K_r=\{\zeta\in\CC:|\zeta|\leq r\}$.
+Thus, for $r=\abs{z}$, put $K_r=\{\zeta\in\CC:\abs{\zeta}\leq r\}$.
 Then $h(z)\in K_r$ and
 $$
 g(z)=F(h(z))\in F(K_r).
 $$
 This includes $r=0$, where $K_0=\{0\}$ and $g(0)=0$.
 The open-disk subordination statement in the problem follows
-from the same estimate whenever $|z|<r$; the pointwise
-estimate at $r=|z|$ uses the closed disk $K_r$.
+from the same estimate whenever $\abs{z}<r$; the pointwise
+estimate at $r=\abs{z}$ uses the closed disk $K_r$.
 
 :::
 
@@ -122,24 +122,24 @@ The explicit strip map has the required radial bound.
 
 ::: pf-proof
 
-For $|\zeta|<1$,
+For $\abs{\zeta}<1$,
 $$
 \log\frac{1+\zeta}{1-\zeta}
 =2\sum_{n=0}^{\infty}\frac{\zeta^{2n+1}}{2n+1}.
 $$
-Hence for $|\zeta|\le r<1$,
+Hence for $\abs{\zeta}\le r<1$,
 $$
 \begin{aligned}
-|F(\zeta)|
+\abs{F(\zeta)}
 &\le \frac4\pi\sum_{n=0}^{\infty}\frac{r^{2n+1}}{2n+1}\\
 &=\frac4\pi\operatorname{arctanh}r
 =\frac2\pi\log\frac{1+r}{1-r}.
 \end{aligned}
 $$
-Apply this with $\zeta=h(z)$ and $r=|z|$ from step [](#s2){.pf-ref}. Then
+Apply this with $\zeta=h(z)$ and $r=\abs{z}$ from step [](#s2){.pf-ref}. Then
 $$
-|g(z)|=|F(h(z))|
-\le\frac2\pi\log\frac{1+|z|}{1-|z|},
+\abs{g(z)}=\abs{F(h(z))}
+\le\frac2\pi\log\frac{1+\abs{z}}{1-\abs{z}},
 $$
 which is the required estimate.
 

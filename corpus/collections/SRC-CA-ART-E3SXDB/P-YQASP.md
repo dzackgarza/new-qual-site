@@ -20,7 +20,7 @@ $$
 \lim_{x\to +\infty}f(x+iy) = A
 .$$
 
-Show that if $\gamma_x \definedas \theset{z = x+it \suchthat 0 \leq t \leq b}$, then
+Show that if $\gamma_x \coloneqq \theset{z = x+it \suchthat 0 \leq t \leq b}$, then
 $$
 \lim_{x\to +\infty} \int_{\gamma_x} f(z) \,dz = iAb
 .$$

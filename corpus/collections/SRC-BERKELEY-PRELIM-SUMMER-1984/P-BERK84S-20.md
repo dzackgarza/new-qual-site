@@ -50,15 +50,15 @@ On a large upper semicircle, the contour integral of $F$ tends to zero.
 Let $C_R$ be the upper semicircle $z=Re^{i\theta}$, $0\le\theta\le\pi$, with $R$ large.
 Since the denominator is quadratic, there is a constant $K$ such that on $C_R$,
 $$
-\left|\frac{z}{z^2+4z+20}\right|\le\frac{K}{R}.
+\abs{\frac{z}{z^2+4z+20}}\le\frac{K}{R}.
 $$
 Also
 $$
-|e^{iz}|=e^{-\operatorname{Im}z}=e^{-R\sin\theta}.
+\abs{e^{iz}}=e^{-\operatorname{Im}z}=e^{-R\sin\theta}.
 $$
 Hence
 $$
-\left|\int_{C_R}F(z)\,dz\right|
+\abs{\int_{C_R}F(z)\,dz}
 \le K\int_0^\pi e^{-R\sin\theta}\,d\theta.
 $$
 Using $\sin\theta\ge 2\theta/\pi$ on $[0,\pi/2]$ and symmetry,

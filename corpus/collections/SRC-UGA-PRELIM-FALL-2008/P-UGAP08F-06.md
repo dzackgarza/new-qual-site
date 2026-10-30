@@ -36,7 +36,7 @@ There are constants $c>0$ and $\delta>0$ such that
 $$
 f(x)\ge c
 $$
-whenever $x\in[0,1]$ and $|x-1/2|<\delta$.
+whenever $x\in[0,1]$ and $\abs{x-1/2}<\delta$.
 
 
 ::: pf-proof
@@ -47,9 +47,9 @@ c\coloneqq\frac12 f(1/2)>0.
 $$
 By continuity of $f$ at $1/2$, there is a $\delta>0$ such that
 $$
-|x-1/2|<\delta
+\abs{x-1/2}<\delta
 \quad\Longrightarrow\quad
-|f(x)-f(1/2)|<c.
+\abs{f(x)-f(1/2)}<c.
 $$
 For such $x$,
 $$

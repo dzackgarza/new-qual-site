@@ -53,12 +53,12 @@ $$
 ::: pf-proof
 For every $n$, the inclusion $\widetilde{\mfa^n}\hookrightarrow\OO_X$ becomes an isomorphism on $U$.
 Indeed, a prime outside $V(\mfa)$ omits some element of $\mfa$, which becomes a unit after localization, so $\mfa^nA_{\mathfrak p}=A_{\mathfrak p}$.
-A homomorphism $h:\mfa^n\to M$ therefore gives, by sheafification and restriction, a map $\OO_U\to\widetilde M|_U$.
+A homomorphism $h:\mfa^n\to M$ therefore gives, by sheafification and restriction, a map $\OO_U\to\widetilde M\restrict_U$.
 Its image of $1$ is the corresponding section $\Phi_n(h)$.
 
 For $a\in\mfa$, its restriction to $D(a)$ is explicitly
 $$
-\Phi_n(h)|_{D(a)}=\frac{h(a^n)}{a^n}\in M_a.
+\Phi_n(h)\restrict_{D(a)}=\frac{h(a^n)}{a^n}\in M_a.
 $$
 Restriction of $h$ to a larger ideal power does not change the sheaf map on $U$, since both source ideals there are identified with $\OO_U$ by inclusion.
 Thus the maps $\Phi_n$ are compatible and induce $\Phi$.
@@ -72,7 +72,7 @@ The map $\Phi$ is injective.
 
 ::: pf-proof
 Suppose $h:\mfa^n\to M$ gives the zero section on $U$.
-Then the image module $N=\im h$ has $\widetilde N|_U=0$, because the restriction of the entire sheaf map is zero.
+Then the image module $N=\im h$ has $\widetilde N\restrict_U=0$, because the restriction of the entire sheaf map is zero.
 The module $N$ is finite: it is a quotient of the finite ideal $\mfa^n$.
 By the [[P-AGH256SUPPORT|support and ideal-torsion calculation]], each of its generators is killed by a power of $\mfa$.
 Choosing one exponent for the finitely many generators gives $\mfa^eN=0$ for some $e\ge1$.
@@ -94,7 +94,7 @@ If $U=\varnothing$, its only section is represented by the zero homomorphism, so
 The graph of the section is the coherent subsheaf
 $$
 \mathcal H_U=\{(a,as):a\in\OO_U\}
-\subseteq(\OO_X\oplus\widetilde M)|_U,
+\subseteq(\OO_X\oplus\widetilde M)\restrict_U,
 $$
 isomorphic to $\OO_U$ by the first projection.
 The coherent-subsheaf extension theorem [[P-AGH2515EXTCOH]], part (c), gives a coherent subsheaf $\mathcal H\subseteq\OO_X\oplus\widetilde M$ restricting to this graph.
@@ -102,7 +102,7 @@ Since $X$ is affine, it corresponds to a finite submodule $F\subseteq A\oplus M$
 Write $p:F\to A$ and $v:F\to M$ for the two coordinate projections, and put $K=\ker p$ and $\mathfrak b=p(F)$.
 
 On $U$, the first projection is an isomorphism from the graph onto $\OO_U$.
-Thus $\widetilde K|_U=0$ and $\widetilde{A/\mathfrak b}|_U=0$.
+Thus $\widetilde K\restrict_U=0$ and $\widetilde{A/\mathfrak b}\restrict_U=0$.
 Both modules are finite over the noetherian ring $A$.
 The same support argument as in step [](#s2){.pf-ref} supplies integers $e,d\ge1$ with
 $$
@@ -118,17 +118,17 @@ Choose $N\ge c+e$.
 Then $p$ is injective on $\mfa^NF$, and its image is $\mfa^N\mathfrak b$.
 Its inverse followed by the second projection is an actual module homomorphism
 $$
-h:\mfa^N\mathfrak b\xrightarrow{\ (p|_{\mfa^NF})^{-1}\ }\mfa^NF
+h:\mfa^N\mathfrak b\xrightarrow{\ (p\restrict_{\mfa^NF})^{-1}\ }\mfa^NF
 \xrightarrow{v}M.
 $$
 Since $\mfa^{N+d}\subseteq\mfa^N\mathfrak b$, restrict $h$ to this ideal power.
 
-On $U$, the ideal $\mfa$ is the unit ideal, so $\widetilde{\mfa^NF}|_U=\mathcal H_U$.
+On $U$, the ideal $\mfa$ is the unit ideal, so $\widetilde{\mfa^NF}\restrict_U=\mathcal H_U$.
 Under the first projection, the second projection of this graph is multiplication by the original section $s$.
 The homomorphism $h$ therefore restricts to the map $a\mapsto as$ on $U$.
 The inclusion of $\mfa^{N+d}$ also becomes the identity of $\OO_U$, so step [](#s1){.pf-ref} gives
 $$
-\Phi_{N+d}(h|_{\mfa^{N+d}})=s.
+\Phi_{N+d}(h\restrict_{\mfa^{N+d}})=s.
 $$
 This proves surjectivity without assigning potentially inconsistent values to monomial generators.
 The only module to which Artin--Rees was applied was the finite graph extension $F$, not the arbitrary module $M$.

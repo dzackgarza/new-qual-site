@@ -23,7 +23,7 @@ $$
 $$
 
 (b) Suppose that $D \in M_n$ with $D = \operatorname{diag}(d_1, d_2, \dots, d_n)$.
-Prove that for all $1 \le p \le \infty$ the $p$-norm of $D$ is given by $\|D\|_p = \max_{1 \le i \le n} |d_i|$.
+Prove that for all $1 \le p \le \infty$ the $p$-norm of $D$ is given by $\norm{D}_p = \max_{1 \le i \le n} \abs{d_i}$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ Write a nonzero vector as $x=\sum_i c_i u_i$. Then
 $$
 \frac{x^HAx}{x^Hx}
 =
-\frac{\sum_i \lambda_i|c_i|^2}{\sum_i |c_i|^2}.
+\frac{\sum_i \lambda_i\abs{c_i}^2}{\sum_i \abs{c_i}^2}.
 $$
 This is a weighted average of the real numbers $\lambda_i$, so it is at least $\lambda_n$. Equality is attained for any nonzero vector in the $\lambda_n$-eigenspace, for instance $x=u_n$. Hence
 $$
@@ -44,34 +44,34 @@ $$
 
 (b) Let
 $$
-M=\max_i |d_i|.
+M=\max_i \abs{d_i}.
 $$
 For $1\le p<\infty$ and any $x=(x_1,\ldots,x_n)^T$,
 $$
-\|Dx\|_p^p
+\norm{Dx}_p^p
 =
-\sum_{i=1}^n |d_i x_i|^p
+\sum_{i=1}^n \abs{d_i x_i}^p
 \le
-M^p\sum_{i=1}^n |x_i|^p
-=M^p\|x\|_p^p.
+M^p\sum_{i=1}^n \abs{x_i}^p
+=M^p\norm{x}_p^p.
 $$
-Thus $\|D\|_p\le M$. If $j$ satisfies $|d_j|=M$, then for the standard basis vector $e_j$,
+Thus $\norm{D}_p\le M$. If $j$ satisfies $\abs{d_j}=M$, then for the standard basis vector $e_j$,
 $$
-\frac{\|De_j\|_p}{\|e_j\|_p}=|d_j|=M,
+\frac{\norm{De_j}_p}{\norm{e_j}_p}=\abs{d_j}=M,
 $$
-so $\|D\|_p=M$.
+so $\norm{D}_p=M$.
 
 For $p=\infty$,
 $$
-\|Dx\|_\infty
+\norm{Dx}_\infty
 =
-\max_i |d_i x_i|
+\max_i \abs{d_i x_i}
 \le
-M\max_i|x_i|
-=M\|x\|_\infty,
+M\max_i\abs{x_i}
+=M\norm{x}_\infty,
 $$
 and again equality is attained at $e_j$. Therefore for every $1\le p\le\infty$,
 $$
-\boxed{\|D\|_p=\max_{1\le i\le n}|d_i|}.
+\boxed{\norm{D}_p=\max_{1\le i\le n}\abs{d_i}}.
 $$
 :::

@@ -49,9 +49,9 @@ $$
 
 ::: pf-proof
 
-As $|z|\to\infty$,
+As $\abs{z}\to\infty$,
 $$
-|f(z)|\ge |a_m||z|^m-\sum_{j<m}|a_j||z|^j\longrightarrow\infty.
+\abs{f(z)}\ge \abs{a_m}\abs{z}^m-\sum_{j<m}\abs{a_j}\abs{z}^j\longrightarrow\infty.
 $$
 Hence inverse images of compact sets are bounded and closed, therefore compact. This is exactly the condition for extension to the one-point compactifications.
 
@@ -108,7 +108,7 @@ $$
 f(z)=(z-z_0)^k g(z),
 \qquad g(z_0)\ne0.
 $$
-Choose a small circle $|z-z_0|=\varepsilon$ on which $g$ has no zero. The local degree equals the winding number around $0$ of the image of this circle under $f$. The factor $(z-z_0)^k$ winds exactly $k$ times. The loop $g(z)$ is homotopic in $\CC^*$ to the constant loop $g(z_0)$ when $\varepsilon$ is small, so it contributes winding number $0$. Hence the total winding number, and therefore the local degree, is $k$.
+Choose a small circle $\abs{z-z_0}=\varepsilon$ on which $g$ has no zero. The local degree equals the winding number around $0$ of the image of this circle under $f$. The factor $(z-z_0)^k$ winds exactly $k$ times. The loop $g(z)$ is homotopic in $\CC^*$ to the constant loop $g(z_0)$ when $\varepsilon$ is small, so it contributes winding number $0$. Hence the total winding number, and therefore the local degree, is $k$.
 
 :::
 

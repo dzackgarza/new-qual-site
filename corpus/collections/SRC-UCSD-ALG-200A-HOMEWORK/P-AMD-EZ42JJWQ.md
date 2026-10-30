@@ -99,7 +99,7 @@ n=2^i.
 $$
 Then
 $$
-|D_{2n}|=2n=2^{i+1},
+\cardinality{D_{2n}}=2n=2^{i+1},
 $$
 so $D_{2n}$ is a finite $2$-group.
 By step [](#s1){.pf-ref} it is nilpotent.
@@ -123,7 +123,7 @@ $$
 Because $r$ has order $n$, the element $x$ has order $p$.
 The reflection $s$ has order $2$, so
 $$
-\gcd(|x|,|s|)=1.
+\gcd(\elementorder{x},\elementorder{s})=1.
 $$
 
 The dihedral relation gives

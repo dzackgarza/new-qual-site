@@ -45,7 +45,7 @@ semidirect products, not just their abstract factors.
 ::: {.pf-step #s1}
 
 An extension with finite abelian kernel $N$ and quotient $Q$ splits
-when $\gcd(|N|,|Q|)=1$.
+when $\gcd(\cardinality{N},\cardinality{Q})=1$.
 
 ::: pf-proof
 
@@ -56,7 +56,7 @@ $f(p,q)=s(p)s(q)s(pq)^{-1}\in N$. Associativity gives
 $$
 f(p,q)+f(pq,r)=p\cdot f(q,r)+f(p,qr).
 $$
-Let $S(p)=\sum_{r\in Q}f(p,r)$ and $m=|Q|$. Summing the identity over $r$
+Let $S(p)=\sum_{r\in Q}f(p,r)$ and $m=\cardinality{Q}$. Summing the identity over $r$
 gives
 $$
 m f(p,q)=S(p)+p\cdot S(q)-S(pq).
@@ -135,7 +135,7 @@ $$
  a^2=z,\ b^3=1,\ (ab)^m=1\rangle.
 $$
 Its central subgroup $\langle z\rangle$ has order at most $2$, and its
-quotient is $T_m$. Thus $|\widetilde T_m|\leq 2|T_m|$.
+quotient is $T_m$. Thus $\cardinality{\widetilde T_m}\leq 2\cardinality{T_m}$.
 For $p=m\in\{3,5\}$, the matrices
 $$
 A=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
@@ -156,7 +156,7 @@ $$
 $$
 There are $p^2-1$ choices for a nonzero first column and $p$ choices for
 a second column having determinant $1$, so this matrix group has order
-$p(p^2-1)=2|T_m|$. It is therefore isomorphic to $\widetilde T_m$ and to
+$p(p^2-1)=2\cardinality{T_m}$. It is therefore isomorphic to $\widetilde T_m$ and to
 the extension in this case.
 
 :::
@@ -178,8 +178,8 @@ If the Sylow $3$-subgroup is normal, step [](#s1){.pf-ref} gives
 $H\cong C_3\rtimes P$ for a group $P$ of order $8$, so $H$ is solvable.
 Otherwise there are four Sylow $3$-subgroups. Conjugation on them defines
 $H\to S_4$ with kernel $K$ contained in a normalizer of order $6$.
-If $3$ divided $|K|$, normality would put all four Sylow $3$-subgroups
-inside $K$, requiring at least $1+4(3-1)=9$ elements. Thus $|K|=1$ or $2$.
+If $3$ divided $\cardinality{K}$, normality would put all four Sylow $3$-subgroups
+inside $K$, requiring at least $1+4(3-1)=9$ elements. Thus $\cardinality{K}=1$ or $2$.
 In the first case $H\cong S_4$. In the second, the image is $A_4$, and
 $K\cong C_2$ is central. Step [](#s2){.pf-ref} gives the other two possibilities.
 The series $1\lhd V_4\lhd A_4\lhd S_4$ has abelian factors, and a central
@@ -192,7 +192,7 @@ extension of a solvable group is solvable, proving the assertion in all cases.
 ::: {.pf-step #s4}
 
 A group $G$ of order $120$ is solvable if and only if its Sylow
-$5$-subgroup is normal. In that case $G\cong C_5\rtimes H$ with $|H|=24$.
+$5$-subgroup is normal. In that case $G\cong C_5\rtimes H$ with $\cardinality{H}=24$.
 
 ::: pf-proof
 
@@ -208,15 +208,15 @@ If $N=C_5$, the conclusion follows. Otherwise the induction hypothesis in
 $G/N$ gives a normal subgroup $L/N$ of order $5$. A Sylow $5$-subgroup
 $P$ of $L$ acts trivially on $N$, because
 $$
-|\operatorname{Aut}(C_3)|=2,\qquad
-|\operatorname{GL}_r(\mathbf F_2)|\in\{1,6,168\}
+\cardinality{\operatorname{Aut}(C_3)}=2,\qquad
+\cardinality{\operatorname{GL}_r(\mathbf F_2)}\in\{1,6,168\}
 $$
 are not divisible by $5$. Hence $L=N\times P$, and $P$ is its unique
 Sylow $5$-subgroup. It is characteristic in $L\lhd G$, so normal in $G$.
 The displayed linear-group orders follow by choosing successive independent
 columns; for example $(8-1)(8-2)(8-4)=168$.
 
-For $|G|=120$, a normal Sylow $5$-subgroup is cyclic and step [](#s1){.pf-ref} splits
+For $\cardinality{G}=120$, a normal Sylow $5$-subgroup is cyclic and step [](#s1){.pf-ref} splits
 the extension. Its quotient of order $24$ is solvable by step [](#s3){.pf-ref}, so
 $G$ is solvable as well.
 

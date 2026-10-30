@@ -29,7 +29,7 @@ $$
 $$
 denote the Borel $\sigma$-algebra for the weak topology and
 $$
-\mathcal B_{\|\cdot\|}
+\mathcal B_{\norm{\cdot}}
 $$
 the Borel $\sigma$-algebra for the norm topology.
 
@@ -41,7 +41,7 @@ One has
 $$
 \mathcal B_{\mathrm w}
 \subset
-\mathcal B_{\|\cdot\|}.
+\mathcal B_{\norm{\cdot}}.
 $$
 
 
@@ -57,7 +57,7 @@ The weak topology is coarser than the norm topology because every continuous lin
 
 For every fixed $x\in\ell^2(\ZZ)$, the map
 $$
-y\longmapsto\|y-x\|_2^2
+y\longmapsto\norm{y-x}_2^2
 $$
 is $\mathcal B_{\mathrm w}$-measurable.
 
@@ -82,16 +82,16 @@ $$
 S_n(y)
 \coloneqq
 \sum_{k\in F_n}
-|\langle y-x,e_k\rangle|^2.
+\abs{\langle y-x,e_k\rangle}^2.
 $$
 Each $S_n$ is $\mathcal B_{\mathrm w}$-measurable as a finite sum of measurable functions. By Parseval's identity,
 $$
 S_n(y)
 \longrightarrow
 \sum_{k\in\ZZ}
-|\langle y-x,e_k\rangle|^2
+\abs{\langle y-x,e_k\rangle}^2
 =
-\|y-x\|_2^2.
+\norm{y-x}_2^2.
 $$
 A pointwise limit of measurable functions is measurable.
 
@@ -110,13 +110,13 @@ For $x\in\ell^2(\ZZ)$ and $r>0$,
 $$
 B(x,r)
 =
-\{y:\|y-x\|_2^2<r^2\}.
+\{y:\norm{y-x}_2^2<r^2\}.
 $$
 By step [](#s1-2){.pf-ref}, the squared-distance function is weak-Borel measurable, so
 $$
 B(x,r)
 =
-\bigl(\|\cdot-x\|_2^2\bigr)^{-1}(( -\infty,r^2))
+\bigl(\norm{\cdot-x}_2^2\bigr)^{-1}(( -\infty,r^2))
 $$
 belongs to $\mathcal B_{\mathrm w}$.
 
@@ -146,7 +146,7 @@ $$
 \boxed{
 \mathcal B_{\mathrm w}
 =
-\mathcal B_{\|\cdot\|}
+\mathcal B_{\norm{\cdot}}
 }.
 $$
 
@@ -157,7 +157,7 @@ Step [](#s1-1){.pf-ref} gives
 $$
 \mathcal B_{\mathrm w}
 \subset
-\mathcal B_{\|\cdot\|},
+\mathcal B_{\norm{\cdot}},
 $$
 while step [](#s1-4){.pf-ref} gives the reverse inclusion.
 

@@ -128,18 +128,18 @@ $$
 A
 =\bigcup_{m,k,R\ge1}
 \left(
-\{f-u\ge1/m\}\cap\{|f|\le k\}\cap B_R
+\{f-u\ge1/m\}\cap\{\abs{f}\le k\}\cap B_R
 \right).
 $$
 Hence for some $m,k,R$ the set
 $$
-E:=\{f-u\ge1/m\}\cap\{|f|\le k\}\cap B_R
+E:=\{f-u\ge1/m\}\cap\{\abs{f}\le k\}\cap B_R
 $$
 has finite positive measure.
 
 Set $\varphi=\mathbf1_E$. Then $\varphi\in L^1$, $\varphi\ge0$, and
 $$
-|f\varphi|\le k\mathbf1_E\in L^1,
+\abs{f\varphi}\le k\mathbf1_E\in L^1,
 $$
 so $\varphi\in W$. But again
 $$

@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Find the function $g$ that minimizes
 $$
-\int_0^1 |f'(x)|^2\,dx
+\int_0^1 \abs{f'(x)}^2\,dx
 $$
 among smooth functions $f:[0,1]\to\RR$ satisfying $f(0)=0$ and $f(1)=1$.
 Is the minimizing function unique?
@@ -29,7 +29,7 @@ Is the minimizing function unique?
 
 Let
 $$
-E(f)=\int_0^1|f'(x)|^2\,dx.
+E(f)=\int_0^1\abs{f'(x)}^2\,dx.
 $$
 
 ::: pf
@@ -74,11 +74,11 @@ $$
 
 Apply the Cauchy--Schwarz inequality in $L^2[0,1]$ to the functions $f'$ and $1$:
 $$
-\left|
+\abs{
 \int_0^1f'(x)\cdot1\,dx
-\right|^2
+}^2
 \le
-\left(\int_0^1|f'(x)|^2\,dx\right)
+\left(\int_0^1\abs{f'(x)}^2\,dx\right)
 \left(\int_0^1 1^2\,dx\right).
 $$
 By step [](#s1-1){.pf-ref}, the left side is $1$, while the second factor on the right is also $1$. Thus

@@ -91,7 +91,7 @@ so $B\vector w\in W$. Since $V=\CC\vector v_1\oplus W$, $\dim W=n-1$.
 
 ::: pf-qed
 
-By the inductive hypothesis applied to $B|_W$, there is an orthonormal basis $\mathcal B$ of $W$ in which $B|_W$ has an upper-triangular matrix $\mathbf A'$. Let $\mathcal C$ be $\mathcal B$ followed by $\vector v_1$; it is an orthonormal basis of $V$. By step [](#invariant){.pf-ref}, the first $n-1$ columns of $[B]_{\mathcal C}$ have no $\vector v_1$-component, so
+By the inductive hypothesis applied to $B\restrict_W$, there is an orthonormal basis $\mathcal B$ of $W$ in which $B\restrict_W$ has an upper-triangular matrix $\mathbf A'$. Let $\mathcal C$ be $\mathcal B$ followed by $\vector v_1$; it is an orthonormal basis of $V$. By step [](#invariant){.pf-ref}, the first $n-1$ columns of $[B]_{\mathcal C}$ have no $\vector v_1$-component, so
 $$
 [B]_{\mathcal C}=\begin{pmatrix}\mathbf A' & \vector u\\ 0 & c\end{pmatrix}
 $$

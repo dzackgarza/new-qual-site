@@ -48,11 +48,11 @@ In part (a), the extension $F/K$ is Galois with Galois group $S_3$.
 
 For every finite extension,
 $$
-|\operatorname{Aut}_K(F)|\le [F:K],
+\cardinality{\operatorname{Aut}_K(F)}\le [F:K],
 $$
 with equality exactly for a Galois extension. Here
 $$
-|\operatorname{Aut}_K(F)|=|S_3|=6=[F:K].
+\cardinality{\operatorname{Aut}_K(F)}=\cardinality{S_3}=6=[F:K].
 $$
 Hence $F/K$ is Galois and $\operatorname{Gal}(F/K)\cong S_3$.
 

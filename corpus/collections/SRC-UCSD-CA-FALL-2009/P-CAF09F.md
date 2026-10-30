@@ -28,7 +28,7 @@ $$
 $$
 we have
 $$
-|g(z)|=e^{u(z)+v(z)}<e
+\abs{g(z)}=e^{u(z)+v(z)}<e
 $$
 for every $z\in\CC$. Thus $g$ is bounded and entire, so Liouville's
 theorem implies that $g$ is constant.
