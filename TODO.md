@@ -646,6 +646,17 @@ mathematical correction under its own node, not under copy policy.
       Ahlfors (1979), Ch. 3, \S 3.2 "The Cross Ratio", p. 78, Definition 12.
     **Acceptance:** each item read and repaired. **Closed.**
 
+  - **`ad6-prelim`**. **Needs:** none. Round 6 at 1c16b39fdc; report in the session scratchpad r6-prelim.md.
+    - [ ] P-UGAP08F-04: the title carries a source locator (CARD-02); retitle by the mathematics.
+    - [ ] SRC-UGA-PRELIM-FALL-2008: the P-UGAP13F-06 comment says "repeated exactly", but 3(b) is worded differently.
+    - [ ] P-GB7EM: the solution structure breaks STYLE-08.
+    - [ ] SRC-BERKELEY-PRELIM-SPRING-2013: provenance is Sp13_Solutions.pdf. Keep it if that department PDF prints the problem statements; otherwise find the paper.
+    - [ ] P-BKF20-1B: the hint printed on the paper is missing.
+    - [ ] UGA Spring 2003 #1b and UGA Fall 2015 extractions lose text; re-extract with MinerU Flash.
+    - [ ] UGA Fall 2015 P-5RZWO, P-MOL6S, P-TOIEK, P-3CU65: informal solutions with errors (S/A and f/g mismatches, "take ε→0", "(Maybe not necessary?)", a recurrence in place of a closed form) and "Goal" paragraphs; rewrite under STYLE-08.
+    - [ ] P-3CU65: the title claims more than the problem asks.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
