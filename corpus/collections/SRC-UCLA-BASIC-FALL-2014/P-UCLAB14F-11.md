@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Suppose a $4\times4$ integer matrix has four distinct real eigenvalues
+Suppose a $4\times4$ integer matrix has four distinct real eigenvalues
 $$
 \lambda_1>\lambda_2>\lambda_3>\lambda_4.
 $$

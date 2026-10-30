@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let $A\neq0$ be an $n\times n$ complex matrix. Prove that there is a matrix $B$ such that $B$ and $A+B$ have no eigenvalues in common.
+Let $A\neq0$ be an $n\times n$ complex matrix. Prove that there is a matrix $B$ such that $B$ and $A+B$ have no eigenvalues in common.
 :::
 
 ::: {.solution}

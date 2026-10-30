@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $A=(a_{ij})_{1\leq i,j\leq n}$, where
+Let $A=(a_{ij})_{1\leq i,j\leq n}$, where
 $$
 a_{ij}=\frac1{i+j-1}.
 $$

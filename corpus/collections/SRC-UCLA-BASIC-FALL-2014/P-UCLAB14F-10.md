@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. What is the largest number of $1$'s an invertible $0$-$1$ matrix of size $n\times n$ can have? You must show both that this number is possible and that no larger number is possible.
+What is the largest number of $1$'s an invertible $0$-$1$ matrix of size $n\times n$ can have? You must show both that this number is possible and that no larger number is possible.
 :::
 
 ::: {.solution}

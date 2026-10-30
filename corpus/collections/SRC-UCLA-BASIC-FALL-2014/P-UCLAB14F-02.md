@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let $A,B$ be two closed subsets of $\RR^n$ such that $A\cup B$ and $A\cap B$ are connected. Prove that $A$ is connected.
+Let $A,B$ be two closed subsets of $\RR^n$ such that $A\cup B$ and $A\cap B$ are connected. Prove that $A$ is connected.
 :::
 
 ::: {.solution}

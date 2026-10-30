@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Consider the sequence
+Consider the sequence
 $$
 a_1=\sqrt2,
 \qquad

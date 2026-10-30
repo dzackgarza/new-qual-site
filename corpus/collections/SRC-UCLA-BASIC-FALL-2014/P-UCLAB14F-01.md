@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Show that the function
+Show that the function
 $$
 H(x,y)=x^2+y^2+\abs{x-y}^{-1}
 $$

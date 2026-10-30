@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let $f_n:[0,1]\to\RR$ be monotonically increasing continuous functions. Assume that $f_n$ converge pointwise to a continuous function $f:[0,1]\to\RR$. Prove that $f_n$ converge uniformly to $f$.
+Let $f_n:[0,1]\to\RR$ be monotonically increasing continuous functions. Assume that $f_n$ converge pointwise to a continuous function $f:[0,1]\to\RR$. Prove that $f_n$ converge uniformly to $f$.
 :::
 
 ::: {.solution}

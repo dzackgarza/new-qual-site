@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Among all solutions to the system
+Among all solutions to the system
 $$
 \begin{pmatrix}
 1&1&1&1\\

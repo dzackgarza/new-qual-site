@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Compute the eigenvalues of the following $n\times n$ matrix:
+Compute the eigenvalues of the following $n\times n$ matrix:
 $$
 M=
 \begin{pmatrix}

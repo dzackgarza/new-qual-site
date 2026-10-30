@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let $f_n:[-2,2]\to[0,1]$ be a sequence of convex functions. Show that there is a subsequence which converges uniformly on $[-1,1]$.
+Let $f_n:[-2,2]\to[0,1]$ be a sequence of convex functions. Show that there is a subsequence which converges uniformly on $[-1,1]$.
 :::
 
 ::: {.solution}
