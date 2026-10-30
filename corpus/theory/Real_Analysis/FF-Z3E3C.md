@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-Z3E3C
 kind: fact
 title: Bernoulli's inequality
-slogan: 'For $r\ge1$ and $x\ge-1$, convexity gives $(1+x)^r\ge1+rx$.'
+slogan: 'The tangent line $1+rx$ lies on or below $(1+x)^r$ for $x\ge-1$ when $r\ge1$ is real or $r\ge0$ is an integer, and for every real $x$ when $r$ is an even integer.'
 prompts:
 - State Bernoulli's inequality and say for which $x$ and $n$ it holds.
 classification:
