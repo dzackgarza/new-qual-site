@@ -955,7 +955,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/prelim/worked-exams/fall-2014.md
   - [x] wiki/prelim/worked-exams/fall-2015.md
   - [x] wiki/prelim/worked-exams/fall-2016.md
-  - [ ] wiki/prelim/worked-exams/fall-2017.md
+  - [x] wiki/prelim/worked-exams/fall-2017.md
   - [x] wiki/prelim/worked-exams/index.md
   - [ ] wiki/real-analysis/appendices/appendix-inequalities.md
   - [ ] wiki/real-analysis/appendices/functional-analysis.md
