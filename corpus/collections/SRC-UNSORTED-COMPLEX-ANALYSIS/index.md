@@ -60,7 +60,6 @@ source:
   - id: E-FCYUM
   - id: E-FMLK2
   - id: E-FS7GZ
-  - id: E-FXYTL
   - id: E-G3DCH
   - id: E-G55QF
   - id: E-GFNDF
@@ -137,7 +136,6 @@ source:
   - id: E-UDPOY
   - id: E-UJAF4
   - id: P-Z8MQR
-  - id: P-M9SRT
   - id: E-UUBBS
   - id: E-UVNVV
   - id: E-UWKTZ
