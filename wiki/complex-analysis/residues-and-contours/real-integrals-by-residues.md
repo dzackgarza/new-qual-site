@@ -16,7 +16,6 @@ Upper semicircle; the arc integral tends to $0$ by the ML estimate.
 [[E-UDYDX]]
 [[E-AKF2O]]
 [[E-JZNWV]]
-[[E-SPIVX]]
 
 ## Rational against $e^{iz}$
 
