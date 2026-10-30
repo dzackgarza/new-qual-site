@@ -56,7 +56,13 @@ source:
     problems:
     - P-TOP-WORKSHOP-D1-W1
     - P-TOP-WORKSHOP-D1-W2
+    - P-T11A1
+    - P-AISD5
     - P-TOP-WORKSHOP-D1-02
+    - P-T05A2
+    - P-T06Q1-4
+    - P-T05A4
+    - P-T11A4
     - P-TOP-WORKSHOP-D1-07
     - P-TOP-WORKSHOP-D1-08
     - P-TOP-WORKSHOP-D1-09
@@ -65,25 +71,39 @@ source:
     - P-TOP-WORKSHOP-D2-W1
     - P-TOP-WORKSHOP-D2-W2
     - P-TOP-WORKSHOP-D2-W3
+    - P-T08A2
     - P-TOP-WORKSHOP-D2-02
+    - P-T07A2
+    - P-T06Q1-5
+    - P-T05A3
     - P-EZ2B2
+    - P-4WCFE
+    - P-T10A4
   - name: Day 3 Separation Axioms
     problems:
     - P-TOP-WORKSHOP-D3-W1
     - P-TOP-WORKSHOP-D3-W2
     - P-TOP-WORKSHOP-D3-W3
     - P-TOP-WORKSHOP-D3-01
+    - P-T06Q2-5
     - P-TOP-WORKSHOP-D3-03
     - P-TOP-WORKSHOP-D3-04
     - P-TOP-WORKSHOP-D3-05
     - P-T12A2
+    - P-T12A4
+    - P-T11A3
+    - P-T09A4
   - name: Day 4 Counterexamples and Assorted Problems
     problems:
     - P-TOP-WORKSHOP-D4-W1
     - P-TOP-WORKSHOP-D4-W2
     - P-TOP-WORKSHOP-D4-W3
+    - P-T09A2
+    - P-T08A1
     - P-TOP-WORKSHOP-D4-03
     - P-TOP-WORKSHOP-D4-04
+    - P-T10A1
+    - P-T08A3
     - P-TOP-WORKSHOP-D4-03B
     - P-TOP-WORKSHOP-D4-04B
   - name: Day 7 Fundamental Groups
@@ -98,7 +118,10 @@ source:
     - P-T05B1
     - P-T08B1
     - P-TOP-WORKSHOP-D7-G06
-    - P-TOP-WORKSHOP-D7-G04
+    - P-T11B1
+    - P-T12B4
+    - P-T12Q2-5
+    - P-T10B3
     - P-TOP-WORKSHOP-D7-G05
   - name: Day 8 Covering Spaces
     problems:
@@ -112,10 +135,14 @@ source:
     - P-TOP-WORKSHOP-D8-06
     - P-TOP-WORKSHOP-D8-07
     - P-TOP-WORKSHOP-D8-08
-    - P-TOP-WORKSHOP-D8-12
+    - P-T07B2
+    - P-T08B2
+    - P-T09B2
+    - P-T13B1
   - name: Day 9 Homology
     problems:
     - P-TOP-WORKSHOP-D9-HW1
+    - P-TOP-WORKSHOP-D9-HW2
     - P-TOP-WORKSHOP-D9-01
     - P-TOP-WORKSHOP-D9-02
     - P-TOP-WORKSHOP-D9-03
@@ -123,6 +150,7 @@ source:
     - P-TOP-WORKSHOP-D9-05
     - P-TOP-WORKSHOP-D9-06
     - P-T12B3
+    - P-T13B3
   - name: Legacy packet — Homotopy and retractions
     problems:
     - P-TOP-WORKSHOP-HR-W1
