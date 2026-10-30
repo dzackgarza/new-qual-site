@@ -991,7 +991,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/resources/books-notes.md
   - [x] wiki/real-analysis/resources/extra-questions.md
   - [x] wiki/real-analysis/resources/index.md
-  - [ ] wiki/real-analysis/resources/preface.md
+  - [x] wiki/real-analysis/resources/preface.md
   - [ ] wiki/real-analysis/resources/problems.md
   - [ ] wiki/real-analysis/resources/solutions.md
   - [ ] wiki/real-analysis/resources/topics.md
