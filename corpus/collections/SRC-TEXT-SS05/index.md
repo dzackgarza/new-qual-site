@@ -20,6 +20,8 @@ source:
   sections:
     - name: Ch. 2 Exercises
       problems:
+        - id: P-236QU
+          comment: "2.9 as part (a)"
         - id: P-V33ML
           comment: "2.19"
         - id: E-DUWXR
