@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X,d)$ be a bounded metric space and suppose $C(X)$, with the supremum norm, is separable.
+Let $(X,d)$ be a bounded metric space and suppose that the space $C(X)$ of bounded continuous real-valued functions on $X$, with the supremum norm, is separable.
 
 (a) Show that for every $\varepsilon>0$ there is a countable $Z_\varepsilon\subseteq X$ such that for every $x\in X$ some $z\in Z_\varepsilon$ satisfies
 $$
