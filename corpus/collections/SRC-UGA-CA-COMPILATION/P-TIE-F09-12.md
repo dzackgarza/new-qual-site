@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $D = \{ z : \ \abs{ z } < 1 , \ \abs{ z - 1 / 2 } > 1 / 2 \}$ to the unit disk $\ \Delta = \{ z :$ $\abs{ z } < 1 \}$
+Find a conformal map from $D = \{ z : \abs{z} < 1,\ \abs{z - 1/2} > 1/2 \}$ to the unit disk $\Delta = \{ z : \abs{z} < 1 \}$.
 :::
 
 ::: {.solution}

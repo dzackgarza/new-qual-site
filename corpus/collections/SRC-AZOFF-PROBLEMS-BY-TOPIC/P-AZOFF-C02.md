@@ -5,7 +5,8 @@ kind: problem
 title: Conformal map of a horizontal strip onto the unit disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

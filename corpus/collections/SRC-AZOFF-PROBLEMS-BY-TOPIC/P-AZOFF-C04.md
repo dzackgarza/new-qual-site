@@ -5,7 +5,9 @@ kind: problem
 title: Conformal map of the right half-plane outside $\abs{z-i}\le 1$ onto the upper half-plane
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

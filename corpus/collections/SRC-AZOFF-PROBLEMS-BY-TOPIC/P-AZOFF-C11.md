@@ -5,7 +5,8 @@ kind: problem
 title: Conformal map of a slit lens onto the upper half-plane
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

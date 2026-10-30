@@ -5,7 +5,9 @@ kind: problem
 title: Möbius map of the upper half-plane onto the disk and the image of a quadrant
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

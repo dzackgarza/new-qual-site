@@ -5,7 +5,8 @@ kind: problem
 title: Conformal map of $\CC\setminus\{x\in\RR:\abs{x}\ge1\}$ onto the disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

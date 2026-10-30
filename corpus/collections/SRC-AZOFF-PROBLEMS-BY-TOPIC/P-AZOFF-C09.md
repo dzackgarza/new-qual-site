@@ -5,7 +5,8 @@ kind: problem
 title: Conformal map of the slit plane $\CC\setminus(-\infty,0]$ onto the disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

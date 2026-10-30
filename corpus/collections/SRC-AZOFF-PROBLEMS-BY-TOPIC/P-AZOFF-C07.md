@@ -5,7 +5,9 @@ kind: problem
 title: Conformal map of a non-concentric circular region onto an annulus
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

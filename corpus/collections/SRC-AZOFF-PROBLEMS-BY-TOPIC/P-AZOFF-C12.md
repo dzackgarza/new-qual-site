@@ -5,7 +5,8 @@ kind: problem
 title: Möbius transformations preserving the extended real line
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:
@@ -47,13 +48,13 @@ T(z)=\frac{az+b}{cz+d}.
 $$
 Consider the following conditions.
 
-a) $T$ maps $\RR \cup \{\infty\}$ onto itself.
+(a) $T$ maps $\RR \cup \{\infty\}$ onto itself.
 
-b) It is possible to choose $a, b, c, d \in \RR$.
+(b) It is possible to choose $a, b, c, d \in \RR$.
 
-c) $\overline{Tz} = T(\overline{z})$ for every $z \in \CC \cup \{\infty\}$.
+(c) $\overline{Tz} = T(\overline{z})$ for every $z \in \CC \cup \{\infty\}$.
 
-d) There exist $\alpha \in \RR$ and $\beta \in \CC \setminus \RR$ satisfying $T(\alpha) = \alpha$ and $T(\overline{\beta}) = \overline{T\beta}$.
+(d) There exist $\alpha \in \RR$ and $\beta \in \CC \setminus \RR$ satisfying $T(\alpha) = \alpha$ and $T(\overline{\beta}) = \overline{T\beta}$.
 
 Prove that (a), (b), and (c) are equivalent. Prove that (d) implies these
 conditions, and show that the converse need not hold.
