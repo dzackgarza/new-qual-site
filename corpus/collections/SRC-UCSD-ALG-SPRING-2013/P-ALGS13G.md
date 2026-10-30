@@ -20,11 +20,17 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-08
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam hypothesis "the degree of any finite extension E/F is divisible by p" fails
+    for E = F and so is never satisfied; the statement now requires it for E different from
+    F, as the solution uses it.
 ---
 
 ::: {.problem}
 Let $F$ be a field and $p$ be a prime.
-Suppose that the degree of any finite field extension $E/F$ is divisible by $p$.
+Suppose that the degree of any finite field extension $E/F$ with $E \neq F$ is divisible by $p$.
 Prove that the degree of any finite separable extension $E/F$ is a power of $p$.
 :::
 
