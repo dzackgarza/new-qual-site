@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-7
 kind: problem
 title: Fourier-series solution of $f''+kf=g$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Fourier Series, Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

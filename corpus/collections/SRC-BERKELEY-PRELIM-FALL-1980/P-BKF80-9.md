@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-9
 kind: problem
 title: Distance from $\operatorname{diag}(1,2)$ to the singular two-by-two matrices
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Matrix Norms, Determinants]}
 relations: []
 review: draft
 audit:

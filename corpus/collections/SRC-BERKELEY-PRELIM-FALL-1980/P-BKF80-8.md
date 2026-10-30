@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-8
 kind: problem
 title: $GL_2(\FF_2)$ is isomorphic to $S_3$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Matrix Groups, Symmetric Groups]}
 relations: []
 review: draft
 audit:

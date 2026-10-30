@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-3
 kind: problem
 title: Analytic interpolation at the points $\pm1/n$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Identity Theorem, Power Series]}
 relations: []
 review: draft
 audit:

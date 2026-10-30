@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-1
 kind: problem
 title: Differentiate an integral with moving endpoints and parameter-dependent integrand
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Differentiation Under the Integral Sign, Leibniz Rule]}
 relations: []
 review: draft
 audit:

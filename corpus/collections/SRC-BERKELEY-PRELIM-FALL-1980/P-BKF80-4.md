@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-4
 kind: problem
 title: Stabilizers and a coset of half-turns in $SO(3)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Orthogonal Groups, Cosets]}
 relations: []
 review: draft
 audit:
@@ -18,8 +18,9 @@ $$
 H_v=\{T\in G:T v=v\}.
 $$
 
-1. Show that $H_v$ is a subgroup of $G$.
-2. Let $S_v$ be the set of rotations through $180^\circ$ about lines orthogonal to $v$. Show that $S_v$ is a coset of $H_v$ in $G$.
+(a) Show that $H_v$ is a subgroup of $G$.
+
+(b) Let $S_v$ be the set of rotations through $180^\circ$ about lines orthogonal to $v$. Show that $S_v$ is a coset of $H_v$ in $G$.
 :::
 
 ::: {.solution}
@@ -84,7 +85,7 @@ Thus $R^{-1}T\in H_v$, so $T\in RH_v$. Therefore $S_v=RH_v$.
 :::
 
 ::: pf-qed
-Step [](#hv-subgroup){.pf-ref} proves part 1, and step [](#sv-coset){.pf-ref} proves that $S_v$ is a left coset of $H_v$ in $G$.
+Step [](#hv-subgroup){.pf-ref} proves part (a), and step [](#sv-coset){.pf-ref} proves that $S_v$ is a left coset of $H_v$ in $G$.
 :::
 
 :::

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-6
 kind: problem
 title: Complex subrings of $M_2(\RR)$ and a matrix polynomial equation
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Matrix Rings, Field Extensions]}
 relations: []
 review: draft
 audit:
@@ -20,13 +20,15 @@ S=\left\{
 \right\}.
 $$
 
-1. Exhibit an isomorphism $S\cong\CC$.
-2. Prove that
+(a) Exhibit an isomorphism $S\cong\CC$.
+
+(b) Prove that
 $$
 A=\begin{pmatrix}0&3\\-4&1\end{pmatrix}
 $$
 lies in a subring of $M_2(\RR)$ isomorphic to $S$.
-3. Prove that there exists $X\in M_2(\RR)$ such that
+
+(c) Prove that there exists $X\in M_2(\RR)$ such that
 $$
 X^4+13X=A.
 $$
@@ -144,7 +146,7 @@ $$
 :::
 
 ::: pf-qed
-Step [](#phi-iso){.pf-ref} proves part 1, step [](#t-subring-iso){.pf-ref} proves part 2, and step [](#x-exists){.pf-ref} proves part 3.
+Step [](#phi-iso){.pf-ref} proves part (a), step [](#t-subring-iso){.pf-ref} proves part (b), and step [](#x-exists){.pf-ref} proves part (c).
 :::
 
 :::

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF80-5
 kind: problem
 title: Evaluate $\int_0^\infty x^{m-1}/(1+x^n)\,dx$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Residues, Contour Integration]}
 relations: []
 review: draft
 audit:
