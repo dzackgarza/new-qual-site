@@ -64,3 +64,8 @@ $$
 \le\frac{\abs{z}}{MR}}.
 $$
 :::
+
+::: {.remark title="Variations"}
+If $f\colon D(a,R)\to D(0,M)$ is holomorphic with $f(a)=0$, then $\abs{f(z)}\le\frac{M}{R}\abs{z-a}$.
+Apply the main inequality to $z\mapsto f(z+a)$ on $D(0,R)$; since its value at $0$ is $0$, the inequality reads $\frac{\abs{f(z+a)}}{M^2}\le\frac{\abs z}{MR}$.
+:::
