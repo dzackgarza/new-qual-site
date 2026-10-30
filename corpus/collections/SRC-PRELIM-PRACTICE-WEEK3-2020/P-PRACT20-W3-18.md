@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f ( x _ { 1 } , \ldots , x _ { n } ) = \sum _ { 1 \leq i < j \leq n } x _ { i } x _ { j }$ . Find $\frac { \partial f } { \partial x _ { n } }$
+Let $f(x_{1}, \ldots, x_{n}) = \sum_{1 \leq i < j \leq n} x_{i} x_{j}$. Find $\frac{\partial f}{\partial x_{n}}$.
 :::
 
 ::: {.solution}

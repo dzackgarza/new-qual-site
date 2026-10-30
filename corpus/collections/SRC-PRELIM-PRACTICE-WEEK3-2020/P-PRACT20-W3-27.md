@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let C be the triangle with vertices (0, 0), (1, 0), (1, 2). Find the path integral of $\mathbf { F } ( x , y ) = ( x y , x ^ { 2 } y ^ { 3 } )$ around this curve.
+Let $C$ be the triangle with vertices $(0, 0)$, $(1, 0)$, $(1, 2)$. Find the path integral of $\mathbf{F}(x, y) = (xy, x^{2} y^{3})$ around this curve.
 :::
 
 ::: {.solution}

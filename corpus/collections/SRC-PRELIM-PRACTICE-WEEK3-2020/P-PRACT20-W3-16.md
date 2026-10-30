@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find all functions f (x, y) satisfying ${ \frac { \partial f } { \partial x } } ( x , y ) = 2 x + y , \quad { \frac { \partial f } { \partial y } } ( x , y ) = x + 2 y .$
+Find all functions $f(x, y)$ satisfying $\frac{\partial f}{\partial x}(x, y) = 2x + y$, $\frac{\partial f}{\partial y}(x, y) = x + 2y$.
 :::
 
 ::: {.solution}

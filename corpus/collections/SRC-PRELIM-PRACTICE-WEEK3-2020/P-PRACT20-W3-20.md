@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Minimize the function $f ( x , y , z ) = x + 4 z$ on the curve $x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 2$
+Minimize the function $f(x, y, z) = x + 4z$ on the curve $x^{2} + y^{2} + z^{2} = 2$.
 :::
 
 ::: {.solution}

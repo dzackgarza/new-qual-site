@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Evaluate $\int _ { 0 } ^ { \infty } \frac { \sin ( t ) } { t } d t$ by differentiating $I ( s ) = \int _ { 0 } ^ { \infty } e ^ { - s t } \frac { \sin ( t ) } { t } d t$ with respect to s.
+Evaluate $\int_{0}^{\infty} \frac{\sin(t)}{t}\, dt$ by differentiating $I(s) = \int_{0}^{\infty} e^{-st} \frac{\sin(t)}{t}\, dt$ with respect to $s$.
 :::
 
 ::: {.solution}

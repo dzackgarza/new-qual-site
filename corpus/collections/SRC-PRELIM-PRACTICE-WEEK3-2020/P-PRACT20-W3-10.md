@@ -12,9 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-The polynomial $\begin{array} { r } { p ( x ) = 1 + \frac { 1 } { 2 } ( x - 1 ) - \frac { 1 } { 8 } ( x - 1 ) ^ { 2 } } \end{array}$ is used to approximate $\sqrt { 1 . 0 1 }$ Which of the following best approximates the error ${ \sqrt { 1 . 0 1 } } - p ( 1 . 0 1 ) !$
+The polynomial $p(x) = 1 + \frac{1}{2}(x - 1) - \frac{1}{8}(x - 1)^{2}$ is used to approximate $\sqrt{1.01}$. Which of the following best approximates the error $\sqrt{1.01} - p(1.01)$?
 
-(A) $\textstyle { \frac { 1 } { 1 6 } } \times 1 0 ^ { - 6 }$ (B) $\scriptstyle { \frac { 1 } { 4 8 } } \times 1 0 ^ { - 8 }$ (C) $\frac { 3 } { 8 } \times 1 0 ^ { - 1 0 }$ (D) $- \frac { 3 } { 8 } \times 1 0 ^ { - 1 0 }$ (E) $\begin{array} { r } { - \frac { 1 } { 1 6 } \times 1 0 ^ { - 6 } . } \end{array}$
+(A) $\frac{1}{16} \times 10^{-6}$ (B) $\frac{1}{48} \times 10^{-8}$ (C) $\frac{3}{8} \times 10^{-10}$ (D) $-\frac{3}{8} \times 10^{-10}$ (E) $-\frac{1}{16} \times 10^{-6}$.
 :::
 
 ::: {.solution}

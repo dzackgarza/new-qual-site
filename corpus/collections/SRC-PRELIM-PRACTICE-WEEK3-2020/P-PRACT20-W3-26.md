@@ -12,10 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let C be the ellipse given by $( x / a ) ^ { 2 } + ( y / b ) ^ { 2 } = 1$ (where $a , b > 0 )$ . Calculate
-
+Let $\mathcal{C}$ be the ellipse given by $(x/a)^{2} + (y/b)^{2} = 1$ (where $a, b > 0$). Calculate
 $$
-\oint _ { \mathcal { C } } ( - y ) d x + x d y .
+\oint_{\mathcal{C}} (-y)\, dx + x\, dy.
 $$
 :::
 

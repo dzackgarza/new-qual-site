@@ -12,19 +12,15 @@ review: draft
 ---
 
 ::: {.problem}
-For $a , b > 0$ and $n \in \NN$ , define
-
+For $a, b > 0$ and $n \in \NN$, define
 $$
-I _ { n } ( a , b ) = \int _ { 0 } ^ { \pi / 2 } \frac { d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n } } .
+I_{n}(a, b) = \int_{0}^{\pi/2} \frac{dx}{(a \cos^{2}(x) + b \sin^{2}(x))^{n}}.
 $$
-
 Show that
-
 $$
-\frac { \partial I _ { n } } { \partial a } + \frac { \partial I _ { n } } { \partial b } + n I _ { n + 1 } = 0 .
+\frac{\partial I_{n}}{\partial a} + \frac{\partial I_{n}}{\partial b} + n I_{n+1} = 0.
 $$
-
-Evaluate $I _ { 1 } ( a , b )$ explicitly and use this to evaluate $I _ { 2 } ( a , b )$
+Evaluate $I_{1}(a, b)$ explicitly and use this to evaluate $I_{2}(a, b)$.
 :::
 
 ::: {.solution}

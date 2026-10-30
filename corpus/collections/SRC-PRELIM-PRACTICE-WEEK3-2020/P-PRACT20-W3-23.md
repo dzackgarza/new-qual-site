@@ -12,13 +12,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $D = \{ ( x , y ) \in \RR ^ { 2 } : x \geq 0 , y \geq 0 \}$ . Calculate
-
+Let $D = \{ (x, y) \in \RR^{2} : x \geq 0, y \geq 0 \}$. Calculate
 $$
-\int \int _ { D } e ^ { - ( x ^ { 2 } + y ^ { 2 } ) } d x d y
+\iint_{D} e^{-(x^{2} + y^{2})}\, dx\, dy.
 $$
-
-Use this to evaluate the Gaussian integral $\int _ { - \infty } ^ { \infty } e ^ { - x ^ { 2 } } d x .$
+Use this to evaluate the Gaussian integral $\int_{-\infty}^{\infty} e^{-x^{2}}\, dx$.
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-In how many of the standard octants of xyz-space does the graph of $f ( x , y ) = e ^ { x + y }$ appear?
+In how many of the standard octants of $xyz$-space does the graph of $f(x, y) = e^{x + y}$ appear?
 :::
 
 ::: {.solution}

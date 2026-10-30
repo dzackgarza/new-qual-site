@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Assume that $\textstyle f ( x ) = \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ converges on $( - 1 , 1 )$ . Find the Maclaurin series for $g ( x ) = f ( x ) / ( 1 - x )$
+Assume that $f(x) = \sum_{n=0}^{\infty} a_{n} x^{n}$ converges on $(-1, 1)$. Find the Maclaurin series for $g(x) = f(x)/(1 - x)$.
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\alpha \in \RR$ . Find the Taylor Series for $( 1 + x ) ^ { \alpha }$ around $x = 0$
+Let $\alpha \in \RR$. Find the Taylor Series for $(1 + x)^{\alpha}$ around $x = 0$.
 :::
 
 ::: {.solution}

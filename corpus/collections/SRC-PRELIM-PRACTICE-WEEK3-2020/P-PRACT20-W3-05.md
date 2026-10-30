@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the value of $\textstyle \sum _ { n = 1 } ^ { \infty } n ^ { 2 } x ^ { n }$ wherever the series converges.
+Find the value of $\sum_{n=1}^{\infty} n^{2} x^{n}$ wherever the series converges.
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find $a _ { 0 } , a _ { 1 } , a _ { 2 } , a _ { 3 }$ such that $x ^ { 3 } - x + 1 = a _ { 0 } + a _ { 1 } ( x - 2 ) + a _ { 2 } ( x - 2 ) ^ { 2 } + a _ { 3 } ( x - 2 ) ^ { 3 }$
+Find $a_{0}, a_{1}, a_{2}, a_{3}$ such that $x^{3} - x + 1 = a_{0} + a_{1}(x - 2) + a_{2}(x - 2)^{2} + a_{3}(x - 2)^{3}$.
 :::
 
 ::: {.solution}

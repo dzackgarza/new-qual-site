@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let F be a constant unit force in the direction of $( - 1 , 0 , 1 )$ . Find the work done by F on a particle which moves along the path $r ( t ) = ( t , t ^ { 2 } , t ^ { 3 } )$ for $t \in [ 0 , 1 ]$
+Let $F$ be a constant unit force in the direction of $(-1, 0, 1)$. Find the work done by $F$ on a particle which moves along the path $r(t) = (t, t^{2}, t^{3})$ for $t \in [0, 1]$.
 :::
 
 ::: {.solution}

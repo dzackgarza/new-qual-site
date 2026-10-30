@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the Taylor Series for $\begin{array} { r } { f ( x ) = \int _ { 0 } ^ { x } \frac { \sin ( t ) } { t } d t } \end{array}$ about $x = 0$
+Find the Taylor Series for $\displaystyle f(x) = \int_{0}^{x} \frac{\sin(t)}{t}\, dt$ about $x = 0$.
 :::
 
 ::: {.solution}

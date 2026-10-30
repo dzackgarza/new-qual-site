@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-What is the flux of $\mathbf { F } ( x , y , z ) = ( x , y , z )$ through the surface $z = { \sqrt { 1 - x ^ { 2 } - y ^ { 2 } } }$ with normal pointing upward?
+What is the flux of $\mathbf{F}(x, y, z) = (x, y, z)$ through the surface $z = \sqrt{1 - x^{2} - y^{2}}$ with normal pointing upward?
 :::
 
 ::: {.solution}

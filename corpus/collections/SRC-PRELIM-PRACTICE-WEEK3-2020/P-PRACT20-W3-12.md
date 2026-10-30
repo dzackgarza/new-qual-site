@@ -12,9 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $\mathcal { C } _ { 0 }$ is an equilateral triangle of area 1 and that $\mathcal { C } _ { n + 1 }$ is formed by adding an equilateral triangle on the middle third of each line segment forming the boundary of ${ \mathcal { C } } _ { n }$ . The first few steps are pictured as follows:
+Suppose $\mathcal{C}_{0}$ is an equilateral triangle of area $1$ and that $\mathcal{C}_{n+1}$ is formed by adding an equilateral triangle on the middle third of each line segment forming the boundary of $\mathcal{C}_{n}$. The first few steps are pictured as follows:
 
-The Koch Snowflake is $\mathcal { C } _ { \infty }$ ; the limiting shape of this process.
+The Koch Snowflake is $\mathcal{C}_{\infty}$; the limiting shape of this process.
 Find the area of the Koch Snowflake.
 
 ![The first steps of the Koch snowflake construction.](../../../assets/attachments/prelim-practice-week3-2020/page-4.png)

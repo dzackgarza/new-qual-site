@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-For which values of x does $\sum _ { n = 1 } ^ { \infty } { \frac { n ! x ^ { 2 n } } { n ^ { n } ( 1 + x ^ { 2 n } ) } }$ converge?
+For which values of $x$ does $\displaystyle \sum_{n=1}^{\infty} \frac{n!\, x^{2n}}{n^{n} (1 + x^{2n})}$ converge?
 :::
 
 ::: {.solution}

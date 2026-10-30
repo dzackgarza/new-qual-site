@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $\textstyle f ( x ) = \sum _ { n = 1 } ^ { \infty } ( - 1 ) ^ { n } x ^ { 3 n }$ for $x \in ( - 1 , 1 )$ . Find a closed form for $f ^ { \prime } ( x )$
+Suppose $f(x) = \sum_{n=1}^{\infty} (-1)^{n} x^{3n}$ for $x \in (-1, 1)$. Find a closed form for $f'(x)$.
 :::
 
 ::: {.solution}

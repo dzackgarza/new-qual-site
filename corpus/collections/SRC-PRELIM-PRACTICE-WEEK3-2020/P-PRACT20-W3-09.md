@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find $f ^ { ( 1 0 0 ) } ( 2 )$ for $\textstyle f ( x ) = { \frac { 3 } { x ^ { 2 } + 5 x + 4 } }$
+Find $f^{(100)}(2)$ for $f(x) = \frac{3}{x^{2} + 5x + 4}$.
 :::
 
 ::: {.solution}

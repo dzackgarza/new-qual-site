@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the integral of $f ( x , y ) = e ^ { y ^ { 2 } }$ over the triangular region bounded by the graph of $y = \abs{ x }$ for $x \in [ - 2 , 2 ]$ and the line $y = 2$
+Find the integral of $f(x, y) = e^{y^{2}}$ over the triangular region bounded by the graph of $y = \abs{x}$ for $x \in [-2, 2]$ and the line $y = 2$.
 :::
 
 ::: {.solution}

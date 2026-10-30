@@ -12,8 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-For which x does $\textstyle \sum _ { n = 1 } ^ { \infty } n ! x ^ { n }$ converge?
-What about $\scriptstyle \sum _ { n = 1 } ^ { \infty } n ! x ^ { n ^ { 2 } } ?$
+For which $x$ does $\sum_{n=1}^{\infty} n!\, x^{n}$ converge?
+What about $\sum_{n=1}^{\infty} n!\, x^{n^{2}}$?
 :::
 
 ::: {.solution}

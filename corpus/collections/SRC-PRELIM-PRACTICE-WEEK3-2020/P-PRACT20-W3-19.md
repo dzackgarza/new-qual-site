@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Set up an area integral (i.e. an integral in xy-space) which represents the volume of the solid bounded above by the graph of $z = 6 - x ^ { 2 } - 2 y ^ { 2 }$ and below by the graph of $z = - 2 + x ^ { 2 } + 2 y ^ { 2 }$
+Set up an area integral (i.e. an integral in $xy$-space) which represents the volume of the solid bounded above by the graph of $z = 6 - x^{2} - 2y^{2}$ and below by the graph of $z = -2 + x^{2} + 2y^{2}$.
 :::
 
 ::: {.solution}
