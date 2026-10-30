@@ -131,3 +131,8 @@ and hence, by step [](#s1){.pf-ref}, an $R/(p)$-vector space.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Part 4 holds for any commutative ring $R$, any $R$-module $A$, and any $p\in R$: $A[p]$ is an $R/(p)$-module under $(r+(p))a=ra$.
+The proof of part 4 applies unchanged, since it uses only $r-r'\in(p)$ and the commutativity of $R$; only the last sentence, that the module is a vector space, needs $(p)$ maximal.
+:::
