@@ -43,3 +43,7 @@ By step [](#chains){.pf-ref} and Zorn's lemma, $\Sigma$ has a maximal element $\
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The case of the zero ideal gives the common form: every nonzero commutative ring with identity has a maximal ideal.
+:::
