@@ -1030,7 +1030,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/homology/index.md
   - [x] wiki/topology/index.md
   - [ ] wiki/topology/point-set/definitions.md
-  - [ ] wiki/topology/point-set/examples.md
+  - [x] wiki/topology/point-set/examples.md
   - [ ] wiki/topology/point-set/index.md
   - [ ] wiki/topology/point-set/notation-and-background.md
   - [ ] wiki/topology/point-set/point-set.md
