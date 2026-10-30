@@ -835,7 +835,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/sheaves-of-modules/differentials.md
   - [x] wiki/algebraic-geometry/sheaves-of-modules/index.md
   - [x] wiki/algebraic-geometry/sheaves-of-modules/line-bundles.md
-  - [ ] wiki/algebraic-geometry/sheaves-of-modules/operations.md
+  - [x] wiki/algebraic-geometry/sheaves-of-modules/operations.md
   - [ ] wiki/algebraic-geometry/sheaves-of-modules/projective-sheaves.md
   - [ ] wiki/algebraic-geometry/sheaves-of-modules/quasicoherence.md
   - [ ] wiki/algebraic-geometry/sheaves/index.md
