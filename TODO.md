@@ -973,7 +973,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/functional-analysis/index.md
   - [x] wiki/real-analysis/functional-analysis/operators.md
   - [x] wiki/real-analysis/functional-analysis/which-big-theorem.md
-  - [ ] wiki/real-analysis/index.md
+  - [x] wiki/real-analysis/index.md
   - [ ] wiki/real-analysis/inequalities.md
   - [ ] wiki/real-analysis/integration/construction.md
   - [ ] wiki/real-analysis/integration/index.md
