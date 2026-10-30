@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS07D
 kind: problem
-title: "Tensor product decomposition of C[x]/(x^n) ⊗ C[x]/(x^m)"
+title: "Decomposition of $\\CC[x]/\\langle x^n\\rangle \\otimes_{\\CC[x]} \\CC[x]/\\langle x^m\\rangle$"
 classification:
   areas:
   - algebra
