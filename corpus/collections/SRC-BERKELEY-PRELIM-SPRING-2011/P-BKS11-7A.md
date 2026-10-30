@@ -25,12 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-If $0 < r < 1$ , find
-
+If $0 < r < 1$, find
 $$
-\sum _ { k = 0 } ^ { \infty } r ^ { k } \cos ( k \theta ) .
+\sum_{k=0}^{\infty} r^{k} \cos(k\theta).
 $$
-
 Your final answer should not involve any complex numbers.
 :::
 

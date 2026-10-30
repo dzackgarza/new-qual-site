@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-For each of the following 4 statements, give either a counterexample or a reason why it is true.
+For each of the following $4$ statements, give either a counterexample or a reason why it is true.
 
-(a) For every real matrix A there is a real matrix B with $B ^ { - 1 } A B$ diagonal.
+(a) For every real matrix $A$ there is a real matrix $B$ with $B^{-1} A B$ diagonal.
 
-(b) For every symmetric real matrix A there is a real matrix B with $B ^ { - 1 } A B$ diagonal.
+(b) For every symmetric real matrix $A$ there is a real matrix $B$ with $B^{-1} A B$ diagonal.
 
-(c) For every complex matrix A there is a complex matrix B with $B ^ { - 1 } A B$ diagonal.
+(c) For every complex matrix $A$ there is a complex matrix $B$ with $B^{-1} A B$ diagonal.
 
-(d) For every symmetric complex matrix A there is a complex matrix B with $B ^ { - 1 } A B$ diagonal.
+(d) For every symmetric complex matrix $A$ there is a complex matrix $B$ with $B^{-1} A B$ diagonal.
 :::
 
 ::: {.solution}

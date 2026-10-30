@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the polynomial $x ^ { 4 } + x + 2011$ is irreducible over $\QQ .$
+Prove that the polynomial $x^{4} + x + 2011$ is irreducible over $\QQ$.
 :::
 
 ::: {.solution}

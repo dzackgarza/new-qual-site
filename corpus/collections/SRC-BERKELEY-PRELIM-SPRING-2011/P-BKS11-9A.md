@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-The Catalan numbers $C ( n )$ satisfy $C ( 0 ) = 1 , C ( n ) = C ( 0 ) C ( n - 1 ) + C ( 1 ) C ( n - 2 ) + \cdots +$ $C ( n - 1 ) C ( 0 )$ if $n > 0$ . Find the function $\textstyle \sum _ { n = 0 } ^ { \infty } C ( n ) x ^ { n }$ and use this to evaluate $C ( n )$
+The Catalan numbers $C(n)$ satisfy $C(0) = 1$, $C(n) = C(0) C(n-1) + C(1) C(n-2) + \cdots + C(n-1) C(0)$ if $n > 0$. Find the function $\sum_{n=0}^{\infty} C(n) x^{n}$ and use this to evaluate $C(n)$.
 :::
 
 ::: {.solution}

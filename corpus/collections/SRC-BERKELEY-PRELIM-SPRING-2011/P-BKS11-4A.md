@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M _ { n } ( k )$ be the n by n matrices over a field k. Find (with proof) all linear maps f from $M _ { n } ( k )$ to k such that $f ( A B ) = f ( B A )$ for all matrices A and B.
+Let $M_{n}(k)$ be the $n$ by $n$ matrices over a field $k$. Find (with proof) all linear maps $f$ from $M_{n}(k)$ to $k$ such that $f(AB) = f(BA)$ for all matrices $A$ and $B$.
 :::
 
 ::: {.solution}

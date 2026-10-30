@@ -26,9 +26,8 @@ audit:
 
 ::: {.problem}
 Use residues to compute
-
 $$
-\int _ { 0 } ^ { \infty } { \frac { d x } { x ^ { 4 } + 1 } } .
+\int_{0}^{\infty} \frac{dx}{x^{4} + 1}.
 $$
 :::
 

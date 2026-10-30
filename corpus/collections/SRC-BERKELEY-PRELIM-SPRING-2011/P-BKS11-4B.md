@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-For which real numbers x does the matrix-valued series $\sum _ { n = 0 } ^ { \infty } x ^ { n } A ^ { n }$ converge, where A is the matrix $\begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}$?
+For which real numbers $x$ does the matrix-valued series $\sum_{n=0}^{\infty} x^{n} A^{n}$ converge, where $A$ is the matrix $\begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}$?
 :::
 
 ::: {.solution}
