@@ -15,28 +15,11 @@ audit:
 ::: {.problem}
 Let $A$ be an $n\times n$ real matrix.
 
-::: pf
+(a) Define an $LU$ decomposition of $A$ and state a necessary and sufficient condition for such a decomposition to exist.
 
-::: pf-step
+(b) If the diagonal entries of $L$ are normalized to be $1$, prove that the decomposition, when it exists, is unique.
 
-Define an $LU$ decomposition of $A$ and state a necessary and sufficient condition for such a decomposition to exist.
-
-:::
-
-::: pf-step
-
-If the diagonal entries of $L$ are normalized to be $1$, prove that the decomposition, when it exists, is unique.
-
-:::
-
-::: pf-step
-
-Find an $LU$ decomposition of
-
-:::
-
-:::
-
+(c) Find an $LU$ decomposition of
 $$
 \begin{pmatrix}4&3\\6&3\end{pmatrix}.
 $$
@@ -220,7 +203,7 @@ $$
 ::: pf-proof
 
 Sufficiency is step [](#p2-s3){.pf-ref} and necessity is step [](#p2-s4){.pf-ref}.
-This answers part step [](#p2-s1){.pf-ref}.
+This answers part (a).
 
 :::
 
@@ -254,7 +237,7 @@ $$
 A=L_\ell U.
 $$
 Different values of $\ell$ give different normalized decompositions.
-Thus the source's part step [](#p2-s2){.pf-ref} cannot be true for arbitrary existing triangular factorizations.
+Thus the source's part (b) cannot be true for arbitrary existing triangular factorizations.
 
 :::
 
@@ -421,7 +404,7 @@ $$
 6&3
 \end{pmatrix}.
 $$
-This proves part step [](#p2-s3){.pf-ref}.
+This proves part (c).
 
 :::
 
@@ -430,8 +413,8 @@ This proves part step [](#p2-s3){.pf-ref}.
 ::: pf-qed
 
 Step [](#p2-s5){.pf-ref} gives the standard no-pivot existence criterion.
-Step [](#p2-s6){.pf-ref} records the literal source defect in part step [](#p2-s2){.pf-ref}, while step [](#p2-s7){.pf-ref} proves the intended uniqueness statement under the nonzero-pivot hypothesis.
-Step [](#p2-s9){.pf-ref} gives the requested decomposition in part step [](#p2-s3){.pf-ref}.
+Step [](#p2-s6){.pf-ref} records the literal source defect in part (b), while step [](#p2-s7){.pf-ref} proves the intended uniqueness statement under the nonzero-pivot hypothesis.
+Step [](#p2-s9){.pf-ref} gives the requested decomposition in part (c).
 
 :::
 

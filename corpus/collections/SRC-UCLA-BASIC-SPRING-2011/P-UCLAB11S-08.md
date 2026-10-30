@@ -15,22 +15,9 @@ audit:
 ::: {.problem}
 Give examples of the following.
 
-::: pf
+(a) A function $f:[0,1]\to\RR$ that is not Riemann integrable although $\abs{f}$ is Riemann integrable.
 
-::: pf-step
-
-A function $f:[0,1]\to\RR$ that is not Riemann integrable although $\abs{f}$ is Riemann integrable.
-
-:::
-
-::: pf-step
-
-Continuous functions $f_n,f:[0,1]\to\RR$ such that $f_n(t)\to f(t)$ for every $t\in[0,1]$, but
-
-:::
-
-:::
-
+(b) Continuous functions $f_n,f:[0,1]\to\RR$ such that $f_n(t)\to f(t)$ for every $t\in[0,1]$, but
 $$
 \int_0^1 f_n(t)\,dt
 $$
@@ -46,7 +33,7 @@ $$
 
 ::: {.pf-step #p2-s1}
 
-For part step [](#p2-s1){.pf-ref}, define
+For part (a), define
 $$
 f(x)
 =
@@ -139,7 +126,7 @@ L(f,P)=-1.
 $$
 The upper and lower Darboux integrals are different.
 Thus $f$ is not Riemann integrable.
-This completes part step [](#p2-s1){.pf-ref}.
+This completes part (a).
 
 :::
 
@@ -147,7 +134,7 @@ This completes part step [](#p2-s1){.pf-ref}.
 
 ::: {.pf-step #p2-s5}
 
-For part step [](#p2-s2){.pf-ref}, define for
+For part (b), define for
 $$
 n\ge2
 $$
@@ -310,7 +297,7 @@ $$
 
 ::: pf-qed
 
-Steps [](#p2-s1){.pf-ref}, [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref} and [](#p2-s4){.pf-ref} give the example required in part step [](#p2-s1){.pf-ref}, and steps [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref} and [](#p2-s8){.pf-ref} give the example required in part step [](#p2-s2){.pf-ref}.
+Steps [](#p2-s1){.pf-ref}, [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref} and [](#p2-s4){.pf-ref} give the example required in part (a), and steps [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref} and [](#p2-s8){.pf-ref} give the example required in part (b).
 
 :::
 

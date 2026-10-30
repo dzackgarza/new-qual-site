@@ -13,23 +13,9 @@ audit:
   note: Checked against Problem 11 of the retained UCLA Basic Examination, Spring 2011.
 ---
 ::: {.problem}
+(a) Prove that every connected subset $A\subset\RR$ is arcwise connected.
 
-::: pf
-
-::: pf-step
-
-Prove that every connected subset $A\subset\RR$ is arcwise connected.
-
-:::
-
-::: pf-step
-
-Give an example of a connected subset of $\RR^2$ that is not arcwise connected.
-
-:::
-
-:::
-
+(b) Give an example of a connected subset of $\RR^2$ that is not arcwise connected.
 :::
 
 ::: {.solution}
@@ -131,7 +117,7 @@ Thus every pair of points can be joined by an arc.
 
 ::: pf-step
 
-For part step [](#p2-s2){.pf-ref}, define
+For part (b), define
 $$
 G
 =
@@ -557,7 +543,7 @@ $$
 
 ::: pf-qed
 
-Step [](#p2-s2){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and step [](#p2-s12){.pf-ref} gives the example required in part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s2){.pf-ref} proves part (a), and step [](#p2-s12){.pf-ref} gives the example required in part (b).
 
 :::
 

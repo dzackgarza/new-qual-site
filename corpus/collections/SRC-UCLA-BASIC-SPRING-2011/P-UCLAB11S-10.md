@@ -15,22 +15,9 @@ audit:
 ::: {.problem}
 Let $f$ be defined on an open set $G\subset\RR^2$, and let $(x_0,y_0)\in G$.
 
-::: pf
+(a) Define what it means for $f$ to be differentiable at $(x_0,y_0)$.
 
-::: pf-step
-
-Define what it means for $f$ to be differentiable at $(x_0,y_0)$.
-
-:::
-
-::: pf-step
-
-Prove that if $\partial f/\partial x$ and $\partial f/\partial y$ exist and are continuous on an open neighborhood of $(x_0,y_0)$, then $f$ is differentiable at $(x_0,y_0)$.
-
-:::
-
-:::
-
+(b) Prove that if $\partial f/\partial x$ and $\partial f/\partial y$ exist and are continuous on an open neighborhood of $(x_0,y_0)$, then $f$ is differentiable at $(x_0,y_0)$.
 :::
 
 ::: {.solution}
@@ -331,7 +318,7 @@ Step [](#p2-s9){.pf-ref} is exactly the differentiability criterion from step []
 
 ::: pf-qed
 
-Step [](#p2-s1){.pf-ref} answers part step [](#p2-s1){.pf-ref}, and steps [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref}, [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref}, [](#p2-s8){.pf-ref}, [](#p2-s9){.pf-ref} and [](#p2-s10){.pf-ref} prove part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s1){.pf-ref} answers part (a), and steps [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref}, [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref}, [](#p2-s8){.pf-ref}, [](#p2-s9){.pf-ref} and [](#p2-s10){.pf-ref} prove part (b).
 
 :::
 

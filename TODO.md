@@ -341,7 +341,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCLA-BASIC-SPRING-2008
   - [x] SRC-UCLA-BASIC-SPRING-2009
   - [x] SRC-UCLA-BASIC-SPRING-2010
-  - [ ] SRC-UCLA-BASIC-SPRING-2011
+  - [x] SRC-UCLA-BASIC-SPRING-2011
   - [ ] SRC-UCLA-BASIC-SPRING-2013
   - [ ] SRC-UCLA-BASIC-SPRING-2014
   - [ ] SRC-UCLA-BASIC-SPRING-2015
@@ -1738,6 +1738,14 @@ mathematical correction under its own node, not under copy policy.
     measure of $f\mapsto\int_A f\,d\mu$ agrees with $\mu_A$ on open sets and on subsets of $A$;
     the open question is the mass it gives to $\partial A$) and write a correct answer.
     **Acceptance:** the card states the correct truth value with a complete proof or counterexample.
+  - **`ad-topf22h-cube-gluing`**. **Needs:** none. P-TOPF22H (UCSD Topology Fall 2022): the cube
+    figure does not fix the face identifications. The P glyphs on the front and back faces are
+    upright at diagonally opposite positions, the R on the right face is mirrored, and the two Q
+    glyphs are vertical flips of each other. The written solution assumes P and Q are translations
+    and R is a half-turn, which the figure does not support. Read the glyphs from the exam page,
+    decide the gluing maps, and rewrite the statement and the solution.
+    **Acceptance:** the card statement names each face map, and the solution computes the
+    space for that gluing.
 
 ### Marking a node closed
 

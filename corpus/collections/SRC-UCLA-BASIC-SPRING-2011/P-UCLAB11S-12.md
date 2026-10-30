@@ -23,26 +23,13 @@ $$
 $$
 Recall that every contraction of a complete metric space has a unique fixed point.
 
-::: pf
-
-::: pf-step
-
-Use this fixed-point theorem to obtain the solution of
+(a) Use this fixed-point theorem to obtain the solution of
 $$
 f'(t)=f(t),\qquad f(0)=1,
 $$
 carefully explaining why the theorem applies.
 
-:::
-
-::: pf-step
-
-Determine the successive approximations $T(0),T^2(0),T^3(0),\ldots$.
-
-:::
-
-:::
-
+(b) Determine the successive approximations $T(0),T^2(0),T^3(0),\ldots$.
 :::
 
 ::: {.solution}
@@ -314,7 +301,7 @@ e^x
 $$
 so it is a fixed point of $T$.
 By uniqueness from step [](#p2-s5){.pf-ref}, it is the only fixed point.
-This solves part step [](#p2-s1){.pf-ref}.
+This solves part (a).
 
 :::
 
@@ -472,7 +459,7 @@ The explicit formula from step [](#p2-s12){.pf-ref} is the sequence of partial s
 
 ::: pf-qed
 
-Steps [](#p2-s1){.pf-ref}, [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref}, [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref} and [](#p2-s8){.pf-ref} solve part step [](#p2-s1){.pf-ref}, and steps [](#p2-s9){.pf-ref}, [](#p2-s10){.pf-ref}, [](#p2-s11){.pf-ref}, [](#p2-s12){.pf-ref} and [](#p2-s13){.pf-ref} determine the successive approximations in part step [](#p2-s2){.pf-ref}.
+Steps [](#p2-s1){.pf-ref}, [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref}, [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref} and [](#p2-s8){.pf-ref} solve part (a), and steps [](#p2-s9){.pf-ref}, [](#p2-s10){.pf-ref}, [](#p2-s11){.pf-ref}, [](#p2-s12){.pf-ref} and [](#p2-s13){.pf-ref} determine the successive approximations in part (b).
 
 :::
 
