@@ -5,8 +5,10 @@ kind: problem
 title: Maximum principle for bounded subharmonic functions outside the unit disk
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Subharmonic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

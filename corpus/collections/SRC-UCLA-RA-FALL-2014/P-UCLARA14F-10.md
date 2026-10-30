@@ -5,8 +5,10 @@ kind: problem
 title: Completeness of the Fock space of entire functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

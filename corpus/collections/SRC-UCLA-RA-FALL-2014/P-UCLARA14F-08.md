@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions of exponential type and growth of derivatives at 0
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

@@ -5,8 +5,11 @@ kind: problem
 title: Locally uniform limits of injective holomorphic functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Biholomorphisms
+  - Normal Families
+  - Argument Principle
 relations: []
 review: draft
 audit:

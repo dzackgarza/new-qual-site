@@ -5,8 +5,9 @@ kind: problem
 title: Harnack inequality for nonnegative harmonic functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

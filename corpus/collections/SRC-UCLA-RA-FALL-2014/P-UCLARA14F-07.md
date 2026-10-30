@@ -5,8 +5,9 @@ kind: problem
 title: Conformal map from a slit upper half-plane to the disk
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:
