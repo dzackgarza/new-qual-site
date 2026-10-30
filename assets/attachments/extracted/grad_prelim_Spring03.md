@@ -4,32 +4,21 @@ Graduate Preliminary Examination, Spring 2003
 
 Instructions: Work 7 of the 8 problems.
 
-#1. (a) Define the span of vectors $v _ { 1 } , . . . , v _ { k }$ in $\mathbb { R } ^ { n }$
+#1. (a) Define the span of vectors $v_1, \dots, v_k$ in $\mathbb{R}^n$.
+(b) Prove that if $w$ lies in the span of $v_1, \dots, v_k$, then the span of $v_1, \dots, v_k, w$ is equal to the span of $v_1, \dots, v_k$.
 
-$$
-v _ { 1 } , . . . , v _ { k } ,
-$$
-
-$$
-v _ { 1 } , . . . , v _ { k }
-$$
-
-$$
-v _ { 1 } , . . . , v _ { k } , w
-$$
-
-#2. Does there exist a $\Im \times 2$ complex matrix A such that
+#2. Does there exist a $3 \times 2$ complex matrix A such that
 
 $$
 A ^ { t } A = I _ { 2 } , { \mathrm { ~ a n d ~ } } A A ^ { t } = I _ { 3 } ?
 $$
 
-If ${ \mathfrak { s o } } ,$ giv an example; if not, prove it.
-Here Ik is the 60 $I _ { k }$ $k \times k$ identity matrix.
+If so, give an example; if not, prove it.
+Here $I_k$ is the $k \times k$ identity matrix.
 
 #3. Prove the formula $\textstyle \sum _ { i = 1 } ^ { n } i ^ { 2 } = { \frac { n ( n + 1 ) ( 2 n + 1 ) } { 6 } }$
 
-#4. Prove that $\pmb { x } >$ ln x for all ${ \pmb x } > { \pmb 0 } .$
+#4. Prove that $x > \ln x$ for all $x > 0$.
 
 #5. Prove that any linear function $L : \mathbb { R } ^ { 2 } \to \mathbb { R } ^ { 2 }$ is continuous.
 
@@ -37,7 +26,7 @@ Here Ik is the 60 $I _ { k }$ $k \times k$ identity matrix.
 If so, give an example; if not, prove it.
 
 #7. (a) Let f be a real-valued function defined on Rn.
-Define differentiability of f at a $\mathbb { R } ^ { n }$ $\pmb { f }$ point p.
+Define differentiability of $f$ at a point $p$.
 
 (b) Show that the function $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ defined by
 
@@ -49,3 +38,5 @@ is not differentiable at (0, 0).
 
 #8. Consider the line integral $\textstyle \int _ { C } 2 x d x + x ^ { 2 } y d y ,$ , where C is the boundary of the unit square in the 1st quadrant.
 Evaluate the line integral (a) directly and (b) by using Green's theorem.
+
+<!-- MinerU Flash extraction. MinerU Flash dropped or garbled #1(b), the 3 x 2 of #2, the last sentence of #2, #4 and #7(a) on every run; those locations were transcribed from a render of page 1 (2026-10-31). -->

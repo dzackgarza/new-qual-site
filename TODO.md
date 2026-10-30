@@ -652,7 +652,7 @@ mathematical correction under its own node, not under copy policy.
     - [x] P-GB7EM: the solution structure breaks STYLE-08.
     - [x] SRC-BERKELEY-PRELIM-SPRING-2013: provenance is Sp13_Solutions.pdf. Keep it if that department PDF prints the problem statements; otherwise find the paper. Kept: the PDF prints every problem statement.
     - [x] P-BKF20-1B: the hint printed on the paper is missing.
-    - [ ] UGA Spring 2003 #1b and UGA Fall 2015 extractions lose text; re-extract with MinerU Flash. Open: on 2026-10-31 MinerU Flash lost the same text (1b of Spring 2003; inline symbols of Fall 2015), and `just ocr-pdf` returned HTTP 429 on every attempt; rerun `just ocr-pdf` on both PDFs.
+    - [x] UGA Spring 2003 #1b and UGA Fall 2015 extractions lose text. MinerU Flash drops the same locations on every run; they are transcribed from page renders and noted in each extraction.
     - [x] UGA Fall 2015 P-5RZWO, P-MOL6S, P-TOIEK, P-3CU65: informal solutions with errors (S/A and f/g mismatches, "take ε→0", "(Maybe not necessary?)", a recurrence in place of a closed form) and "Goal" paragraphs; rewrite under STYLE-08.
     - [x] P-3CU65: the title claims more than the problem asks.
     **Acceptance:** each item read and repaired.
