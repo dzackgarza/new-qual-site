@@ -90,7 +90,6 @@ source:
   - id: P-X1WOB
   - id: P-XHQRW
   - id: P-XKFPD
-  - id: P-XLANN
 ---
 
 ::: {.remark}
