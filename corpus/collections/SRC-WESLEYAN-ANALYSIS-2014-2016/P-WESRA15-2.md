@@ -22,6 +22,8 @@ $$
 \mu(C)=\nu(C)\qquad(C\in\mathcal C).
 $$
 Prove that $\mu(A)=\nu(A)$ for every $A\in\mathcal A$.
+
+Hint: show that the collection of all sets on which $\mu$ and $\nu$ agree is a $\sigma$-algebra.
 :::
 
 ::: {.solution}

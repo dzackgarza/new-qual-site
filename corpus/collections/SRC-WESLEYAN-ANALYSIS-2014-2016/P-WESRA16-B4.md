@@ -32,7 +32,7 @@ $$
 \lim_{n\to\infty}\int_{\RR}f^n
 =\alpha\lambda(X)+\beta\lambda(Y)+\gamma\lambda(Z).
 $$
-Determine the relevant contributions using monotone and dominated convergence.
+Hint: you will need the Monotone Convergence Theorem and the Dominated Convergence Theorem.
 :::
 
 ::: {.solution}

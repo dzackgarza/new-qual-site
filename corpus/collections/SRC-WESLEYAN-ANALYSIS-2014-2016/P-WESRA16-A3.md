@@ -27,7 +27,9 @@ $$
 $$
 \lim_{n\to\infty}\int_{\RR^d}f\mathbf1_{M_n}
 $$
-exists, identifying the limit.
+exists.
+
+Hint: you will need the Monotone Convergence Theorem.
 :::
 
 ::: {.solution}

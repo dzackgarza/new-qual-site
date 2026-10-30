@@ -22,6 +22,8 @@ $$
 \{x:(f_0(x),f_1(x),\dots)\text{ converges}\}
 $$
 is measurable.
+
+Hint: for $q\in\QQ$ and $n,k\in\NN$, let $C_{q,n,k}=\{x:\abs{f_n(x)-q}\le2^{-k}\}$.
 :::
 
 ::: {.solution}

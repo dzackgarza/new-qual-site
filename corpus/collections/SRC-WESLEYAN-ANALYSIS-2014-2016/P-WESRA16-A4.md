@@ -28,6 +28,7 @@ construct simple functions $\varphi_n$ with $\varphi_0=0$, $\varphi_n\uparrow f$
 $$
 f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}.
 $$
+Hint: notice that $f=\sum_{n=0}^\infty(\varphi_{n+1}-\varphi_n)$.
 :::
 
 ::: {.solution}

@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on a domain containing $0$, not identically zero, with
+Let $f$ be holomorphic on a domain containing $0$, with
 $$
 f(0)=f'(0)=f''(0)=0.
 $$
@@ -29,6 +29,11 @@ $$
 f(z)=w
 $$
 has at least three zeros counted with multiplicity.
+:::
+
+::: {.remark}
+As printed, the claim fails for $f\equiv0$: then $f(z)=w$ has no solution for $w\ne0$.
+The intended hypothesis is that $f$ is not identically zero, and the solution assumes it.
 :::
 
 ::: {.solution}
