@@ -5,7 +5,8 @@ kind: problem
 title: Fekete's lemma for subadditive sequences
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---

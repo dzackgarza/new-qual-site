@@ -5,7 +5,8 @@ kind: problem
 title: The Fresnel-type integral $\int_0^\infty e^{iwt}t^{-1/2}\,dt$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---

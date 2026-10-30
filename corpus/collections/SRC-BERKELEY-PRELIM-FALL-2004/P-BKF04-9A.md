@@ -5,7 +5,8 @@ kind: problem
 title: $\int_0^1 f(x)e^{inx^3}\,dx\to0$ for continuous $f$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---

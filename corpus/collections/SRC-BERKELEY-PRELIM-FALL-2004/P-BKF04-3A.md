@@ -5,7 +5,8 @@ kind: problem
 title: A nonconstant entire $f$ composed with an essential singularity of $g$ gives an essential singularity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---

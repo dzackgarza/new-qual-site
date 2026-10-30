@@ -5,7 +5,8 @@ kind: problem
 title: Isomorphism classes of the rings $\QQ[x]/(x^3-cx)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---

@@ -5,7 +5,8 @@ kind: problem
 title: Dimension of the span of commutators $AB-BA$ in $M_n(\RR)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

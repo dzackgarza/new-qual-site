@@ -5,7 +5,8 @@ kind: problem
 title: A disk self-map with $f(-\frac12)=0$ and $f(0)=\frac12$ has $f(\frac12)=\frac45$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---

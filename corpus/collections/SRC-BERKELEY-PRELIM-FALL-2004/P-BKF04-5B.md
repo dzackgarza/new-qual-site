@@ -5,7 +5,8 @@ kind: problem
 title: Smallest field of characteristic $7$ containing a root of $x^{18}+x^{17}+\cdots+x+1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---

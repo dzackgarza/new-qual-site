@@ -5,7 +5,8 @@ kind: problem
 title: Decay of the Newtonian potential $\int f(y)/\norm{x-y}\,dy$ of a compactly supported $f$ on $\RR^3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---
@@ -23,6 +24,7 @@ converges, where the integral is over all $y \in \RR^{3}$.
 :::
 
 ::: {.solution}
+
 (a) Let $M$ be the maximum value of $\abs{f}$; it exists because $f$ is continuous and vanishes outside a compact set. Fix $x$. Choose $R$ large enough that $f(y)=0$ whenever $\abs{x-y}>R$. Using polar coordinates centered at $x$,
 
 $$

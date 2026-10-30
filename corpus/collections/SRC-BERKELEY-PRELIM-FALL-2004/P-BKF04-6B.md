@@ -5,7 +5,8 @@ kind: problem
 title: Averages of $f$ over the circle $\abs{z}=1/n$ for $f$ with a pole at $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---

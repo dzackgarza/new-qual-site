@@ -5,7 +5,8 @@ kind: problem
 title: A congruence condition on square-free $n$ forcing every group of order $n$ to be abelian
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---

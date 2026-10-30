@@ -5,7 +5,8 @@ kind: problem
 title: $A$ is diagonalizable iff every nilpotent $f(A)$ is zero
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

@@ -5,7 +5,8 @@ kind: problem
 title: A complex linear map with $\langle Tv,v\rangle=0$ for all $v$ is zero
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

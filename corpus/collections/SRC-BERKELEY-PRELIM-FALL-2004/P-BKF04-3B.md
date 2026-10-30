@@ -5,7 +5,8 @@ kind: problem
 title: Sizes of rational matrices satisfying $A^3+A+I=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

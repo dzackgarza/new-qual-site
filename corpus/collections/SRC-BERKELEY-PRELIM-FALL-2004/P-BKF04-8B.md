@@ -5,7 +5,8 @@ kind: problem
 title: Positivity of $\lambda$ for $y''+\lambda a y=0$ with $y(0)=0$, $y'(1)=0$, and $a>0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---

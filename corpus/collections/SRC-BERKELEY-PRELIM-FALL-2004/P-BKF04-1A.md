@@ -5,7 +5,8 @@ kind: problem
 title: The delay integral equation $y(x)=\int_0^\infty e^{-2s}y(x-s)\,ds$ with $y=e^x$ on $x\le0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---
@@ -22,29 +23,70 @@ and find an explicit formula for $y(x)$ for $x > 0$.
 :::
 
 ::: {.solution}
-Suppose that $y ( x )$ is a solution. For $x > 0$ , the substitution $s = x - t$ yields
 
-$$
-\begin{array} { c } { { y ( x ) = \displaystyle \int _ { - \infty } ^ { x } e ^ { - 2 ( x - t ) } y ( t ) d t } } \\ { { e ^ { 2 x } y ( x ) = \displaystyle \int _ { - \infty } ^ { x } e ^ { 2 t } y ( t ) d t . } } \end{array}\tag{1}
-$$
+::: pf
 
-The right hand side is continuous as a function of x, so $e ^ { 2 x } y ( x )$ is continuous on $\RR _ { > 0 }$ , and multiplying by $e ^ { - 2 x }$ shows that $y ( x )$ is continuous on $\RR _ { > 0 }$ . This in turn implies that the right hand side is differentiable, and the same argument now shows that $y ( x )$ is differentiable on ${ \RR } _ { > 0 }$ . Differentiating both sides for $x > 0$ yields
+::: {.pf-step #s1}
 
+A function $y$ with $y(x)=e^x$ for $x\le0$ satisfies the integral equation for $x>0$ if and only if
 $$
-\begin{array} { c } { { e ^ { 2 x } ( y ^ { \prime } + 2 y ) = e ^ { 2 x } y } } \\ { { y ^ { \prime } + 2 y = y } } \\ { { y ^ { \prime } = - y } } \\ { { y = c e ^ { - x } } } \end{array}
+e^{2x}y(x)=\int_{-\infty}^{x}e^{2t}y(t)\,dt\qquad(x>0).
 $$
 
-for some $c \in \RR$ . Substituting this back into (1) yields, for $x > 0$
+::: pf-proof
 
-$$
-\begin{array} { c } { { c e ^ { x } = \displaystyle \int _ { - \infty } ^ { 0 } e ^ { 3 t } d t + \int _ { 0 } ^ { x } c e ^ { t } d t } } \\ { { } } \\ { { c e ^ { x } = \displaystyle \frac { 1 } { 3 } + c ( e ^ { x } - 1 ) } } \\ { { } } \\ { { c = \displaystyle \frac { 1 } { 3 } } } \\ { { } } \\ { { y ( x ) = \displaystyle \frac { 1 } { 3 } e ^ { - x } . } } \end{array}
-$$
+The substitution $t=x-s$ gives $\int_0^\infty e^{-2s}y(x-s)\,ds=\int_{-\infty}^x e^{-2(x-t)}y(t)\,dt$. Multiply by $e^{2x}$.
 
-Thus if there is a solution, it must be
+:::
 
-$$
-y ( x ) = { \left\{ \begin{array} { l l } { { \frac { 1 } { 3 } } e ^ { - x } } & { { \mathrm { i f ~ } } x > 0 } \\ { e ^ { x } } & { { \mathrm { i f ~ } } x \leq 0 } \end{array} \right. }
-$$
+:::
 
-Because (1) is equivalent to the integral equation in the original problem, this function indeed satisfies the conditions of the problem.
+::: {.pf-step #s2}
+
+A solution satisfies $y(x)=ce^{-x}$ for $x>0$, for some $c\in\RR$.
+
+::: pf-proof
+
+The right side of step [](#s1){.pf-ref} is continuous in $x$, so $y$ is continuous on $(0,\infty)$. Then the right side is differentiable with derivative $e^{2x}y(x)$, so $y$ is differentiable on $(0,\infty)$. Differentiation gives $e^{2x}(y'+2y)=e^{2x}y$, so $y'=-y$ on $(0,\infty)$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$c=\frac13$.
+
+::: pf-proof
+
+Substitute step [](#s2){.pf-ref} into step [](#s1){.pf-ref}: for $x>0$,
+$$
+ce^{x}=\int_{-\infty}^0e^{3t}\,dt+\int_0^x ce^{t}\,dt=\frac13+c(e^x-1),
+$$
+so $c=\frac13$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The function with $y(x)=\frac13e^{-x}$ for $x>0$ and $y(x)=e^x$ for $x\le0$ is a solution.
+
+::: pf-proof
+
+It is piecewise continuous. The computation of step [](#s3){.pf-ref} with $c=\frac13$ shows that it satisfies the identity of step [](#s1){.pf-ref}, which is equivalent to the integral equation.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref} any solution equals the function of step [](#s4){.pf-ref}, which is a solution. So the solution is unique, and $y(x)=\frac13e^{-x}$ for $x>0$.
+
+:::
+
+:::
+
 :::

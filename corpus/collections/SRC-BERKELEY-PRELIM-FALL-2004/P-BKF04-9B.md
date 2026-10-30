@@ -5,7 +5,8 @@ kind: problem
 title: Every group of order $30$ has a cyclic subgroup of order $15$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
