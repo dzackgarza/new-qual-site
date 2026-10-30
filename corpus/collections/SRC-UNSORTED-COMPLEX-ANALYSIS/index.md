@@ -132,7 +132,6 @@ source:
   - id: E-NIPUY
   - id: E-NKDKF
   - id: E-NT2T3
-  - id: E-NTKTA
   - id: E-NZY3B
   - id: E-O5SOQ
   - id: E-ORJPT

@@ -150,7 +150,6 @@ The other identities follow in the same way, since $\pi\csc(\pi z)$ has residue 
 :::
 
 [[E-2GYXM]]
-[[E-NTKTA]]
 [[E-ARVUV]]
 [[E-4WFQM]]
 [[E-6XPQW]]
