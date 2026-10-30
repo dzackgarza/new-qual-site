@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF07A
 kind: problem
-title: "True or False: metric space convergence, contour integrals, Picard's theorem, biholomorphisms, and harmonicity"
+title: "True or False: subsequential convergence, contour integrals, entire functions omitting a disk, biholomorphisms, and harmonicity"
 classification:
   areas:
   - complex-analysis
