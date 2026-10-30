@@ -90,7 +90,7 @@ If $\operatorname{char}R=2$, a skew-symmetric form need not be alternating.
 
 ::: pf-proof
 
-Let $R=B=\mathbb{F}_2$, $n=2$ and $f(x,y)=xy$. Since $-1=1$ in $R$,
+Let $R=B=\FF_2$, $n=2$ and $f(x,y)=xy$. Since $-1=1$ in $R$,
 skew-symmetry is symmetry, and $f(x,y)=f(y,x)$. But $f(1,1)=1\ne0$, so $f$ is
 not alternating. Step [](#s1){.pf-ref} still holds, so in characteristic $2$
 alternating forms are a proper subset of skew-symmetric forms in general.
