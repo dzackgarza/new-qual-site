@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS21G
 kind: problem
-title: "Z[x]/(2x-1) is isomorphic to the localization of Z at powers of 2"
+title: "$\\ZZ[x]/(2x-1)$ is isomorphic to the localization of $\\ZZ$ at powers of $2$"
 classification:
   areas:
   - algebra

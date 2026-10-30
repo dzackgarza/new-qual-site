@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS21B
 kind: problem
-title: "Centralizer and nilpotent subgroups of order p in S_p"
+title: "Centralizer and nilpotent overgroups of a subgroup of order $p$ in $S_p$"
 classification:
   areas:
   - algebra

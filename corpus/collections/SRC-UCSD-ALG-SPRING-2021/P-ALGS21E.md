@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS21E
 kind: problem
-title: "Higher Ext groups over Z for Z/2Z with coefficients in Z and Q"
+title: "$\\operatorname{Ext}^i_\\ZZ(\\ZZ/2\\ZZ, \\ZZ)$ and $\\operatorname{Ext}^i_\\ZZ(\\ZZ/2\\ZZ, \\QQ)$"
 classification:
   areas:
   - algebra
