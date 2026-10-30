@@ -32,7 +32,7 @@ audit:
 ---
 
 ::: {.problem}
-Use Tsen's theorem to show that given a flat family $X\to Y$ with $Y$ a curve where the fibers smooth curves of genus 0, this determines a Zariski $\PP^1$-bundle iff there exists a relative degree 1 line bundle on $X$ over $Y$.
+Use Tsen's theorem to show that given a flat family $X\to Y$ with $Y$ a curve whose fibers are smooth curves of genus 0, this determines a Zariski $\PP^1$-bundle iff there exists a relative degree 1 line bundle on $X$ over $Y$.
 :::
 
 ::: {.solution}
