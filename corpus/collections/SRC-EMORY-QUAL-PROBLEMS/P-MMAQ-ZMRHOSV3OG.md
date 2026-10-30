@@ -21,14 +21,16 @@ audit:
 ---
 
 ::: {.problem}
-1. State the Schwarz lemma for analytic functions in the unit disc.
+(a) State the Schwarz lemma for analytic functions in the unit disc.
 
-2. Let $f: \DD \to \DD$ be an analytic map from the unit disc $\DD$ into itself.
-   Use the Schwarz lemma to show that for each $a\in \DD$ we have `\begin{align*} \dfrac{|f'(a)|}{1-|f(a)|^2} \leq \dfrac{1}{1-|a|^2} \end{align*}`{=tex}
+(b) Let $f: \DD \to \DD$ be an analytic map from the unit disc $\DD$ into itself. Use the Schwarz lemma to show that for each $a\in \DD$ we have
+$$
+\frac{\abs{f'(a)}}{1-\abs{f(a)}^2} \leq \frac{1}{1-\abs{a}^2}.
+$$
 :::
 
 ::: {.solution}
-### Part 1: Statement of the Schwarz Lemma
+### Part (a): Statement of the Schwarz Lemma
 
 **Schwarz Lemma:** Let $\DD = \{z \in \CC : \abs{z} < 1\}$.
 If $g: \DD \to \DD$ is a holomorphic function satisfying $g(0) = 0$, then:
@@ -40,7 +42,7 @@ If $g: \DD \to \DD$ is a holomorphic function satisfying $g(0) = 0$, then:
 
 * * *
 
-### Part 2: Proof of the Schwarz-Pick Derivative Inequality
+### Part (b): Proof of the Schwarz-Pick Derivative Inequality
 
 ::: pf
 
@@ -157,7 +159,7 @@ $\phi_a(0) = a$, $f(a) = b$, $\phi_b(b) = 0$.
 
 ::: {.pf-step #s3-1}
 
-By Part 1, since $g$ is holomorphic on $\DD$, $g(\DD) \subseteq \DD$, and $g(0) = 0$, we have: $$\abs{g'(0)} \leq 1.$$
+By part (a), since $g$ is holomorphic on $\DD$, $g(\DD) \subseteq \DD$, and $g(0) = 0$, we have: $$\abs{g'(0)} \leq 1.$$
 
 ::: pf-proof
 

@@ -25,14 +25,14 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group.
 
-1. Prove that if $H < G$ is a proper subgroup, then $G$ is not the union of conjugates of $H$.
+(a) Prove that if $H < G$ is a proper subgroup, then $G$ is not the union of conjugates of $H$.
 
-2. Suppose that $G$ acts transitively on a set $X$ with $\cardinality{X} > 1$.
-   Prove that there exists an element of $G$ with no fixed points in $X$.
+(b) Suppose that $G$ acts transitively on a set $X$ with $\cardinality{X} > 1$.
+Prove that there exists an element of $G$ with no fixed points in $X$.
 :::
 
 ::: {.remark title="Variations"}
-For $G=\Sym(X)$ with $\cardinality{X}=n>1$, part 2 gives a permutation of $X$ with no fixed point. The proof of part 2 applies unchanged, because $\Sym(X)$ acts transitively on $X$.
+For $G=\Sym(X)$ with $\cardinality{X}=n>1$, part (b) gives a permutation of $X$ with no fixed point. The proof of part (b) applies unchanged, because $\Sym(X)$ acts transitively on $X$.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ For $G=\Sym(X)$ with $\cardinality{X}=n>1$, part 2 gives a permutation of $X$ wi
 ::: pf
 
 ::: {.pf-step #no-union-of-conjugates}
-(1) $G \neq \bigcup_{g \in G} gHg^{-1}$ for $H < G$ proper.
+(a) $G \neq \bigcup_{g \in G} gHg^{-1}$ for $H < G$ proper.
 
 ::: pf-proof
 
@@ -85,7 +85,7 @@ It has fewer than $\cardinality{G}$ elements.
 :::
 
 ::: {.pf-step #fixed-point-free-element-exists}
-(2) A transitive action on $\cardinality{X} > 1$ has a fixed-point-free element.
+(b) A transitive action on $\cardinality{X} > 1$ has a fixed-point-free element.
 
 ::: pf-proof
 
@@ -139,7 +139,7 @@ Step [](#no-union-of-conjugates){.pf-ref} says $G$ is not a union of conjugates 
 :::
 
 ::: pf-qed
-Step [](#no-union-of-conjugates){.pf-ref} proves (1); step [](#fixed-point-free-element-exists){.pf-ref} proves (2).
+Step [](#no-union-of-conjugates){.pf-ref} proves part (a); step [](#fixed-point-free-element-exists){.pf-ref} proves part (b).
 :::
 
 :::

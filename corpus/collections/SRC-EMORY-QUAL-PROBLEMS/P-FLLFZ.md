@@ -35,13 +35,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Show that $\sqrt{2+\sqrt{2}}$ is a root of $p(x) = x^4 - 4x^2 + 2 \in \QQ[x]$.
+(a) Show that $\sqrt{2+\sqrt{2}}$ is a root of $p(x) = x^4 - 4x^2 + 2 \in \QQ[x]$.
 
-2. Prove that $\QQ(\sqrt{2 + \sqrt{2}})$ is a Galois extension of $\QQ$ and find its Galois group.
+(b) Prove that $\QQ(\sqrt{2 + \sqrt{2}})$ is a Galois extension of $\QQ$ and find its Galois group.
 
-3. Let $f(x) = x^3 - 5$.
-   Determine the splitting field $K$ of $f(x)$ over $\QQ$ and the Galois group of $f(x)$.
-   Give an example of a proper sub-extension $\QQ \subset L \subset K$, such that $L/\QQ$ is Galois.
+(c) Let $f(x) = x^3 - 5$.
+Determine the splitting field $K$ of $f(x)$ over $\QQ$ and the Galois group of $f(x)$.
+Give an example of a proper sub-extension $\QQ \subset L \subset K$, such that $L/\QQ$ is Galois.
 :::
 
 ::: {.hint}
@@ -134,7 +134,7 @@ $r^3=s^2=1$ and $srs=r^{-1}$ and generate the group.
 :::
 
 ::: pf-step
-A proper Galois subextension in part (3) is
+A proper Galois subextension in part (c) is
 $L=\QQ(\zeta)$.
 
 ::: pf-proof

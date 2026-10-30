@@ -32,9 +32,9 @@ audit:
 ---
 
 ::: {.problem}
-- Prove that a group of order $351=3^3\cdot 13$ cannot be simple.
+(a) Prove that a group of order $351=3^3\cdot 13$ cannot be simple.
 
-- Prove that a group of order $33$ must be cyclic.
+(b) Prove that a group of order $33$ must be cyclic.
 :::
 
 ::: {.solution}

@@ -30,12 +30,12 @@ audit:
 ::: {.problem}
 Let $f$ be a continuous function on $[0,1]$. Consider the following statements.
 
-1. $f$ is absolutely continuous.
-2. For any $\varepsilon>0$ there exists $\delta>0$ such that $m^*(f(E))<\varepsilon$ for any set $E\subseteq[0,1]$ with $m^*(E)<\delta$.
-3. $m^*(f(E))=0$ for any set $E\subseteq[0,1]$ with $m^*(E)=0$.
+(i) $f$ is absolutely continuous.
+(ii) For any $\varepsilon>0$ there exists $\delta>0$ such that $m^*(f(E))<\varepsilon$ for any set $E\subseteq[0,1]$ with $m^*(E)<\delta$.
+(iii) $m^*(f(E))=0$ for any set $E\subseteq[0,1]$ with $m^*(E)=0$.
 
-Prove that (1) implies (2) and that (2) implies (3).
-Determine whether (3) implies (1).
+Prove that (i) implies (ii) and that (ii) implies (iii).
+Determine whether (iii) implies (i).
 :::
 
 ::: {.solution}
@@ -73,7 +73,7 @@ m^*(f(E))
 &=\int_U\abs{f'}<\varepsilon.
 \end{aligned}
 $$
-Thus (1) implies (2).
+Thus (i) implies (ii).
 :::
 
 :::
@@ -82,7 +82,7 @@ Thus (1) implies (2).
 The small-image condition implies Lusin's $N$-property.
 
 ::: pf-proof
-Assume (2), and let $E\subseteq[0,1]$ satisfy $m(E)=0$. Given $\varepsilon>0$, let $\delta$ be supplied by (2). Since $m(E)=0<\delta$,
+Assume (ii), and let $E\subseteq[0,1]$ satisfy $m(E)=0$. Given $\varepsilon>0$, let $\delta$ be supplied by (ii). Since $m(E)=0<\delta$,
 $$
 m^*(f(E))<\varepsilon.
 $$
@@ -90,13 +90,13 @@ As $\varepsilon>0$ is arbitrary,
 $$
 m^*(f(E))=0.
 $$
-Hence (2) implies (3).
+Hence (ii) implies (iii).
 :::
 
 :::
 
 ::: {.pf-step #lusin-n-does-not-imply-absolute-continuity}
-Condition (3) does not imply absolute continuity.
+Condition (iii) does not imply absolute continuity.
 
 ::: pf-proof
 Define
@@ -107,7 +107,7 @@ f(x)=x\sin(x^{-2})\quad(0<x\le1).
 $$
 This function is continuous on $[0,1]$.
 
-First we prove that it satisfies (3). Let $E\subseteq[0,1]$ have measure zero and fix $a\in(0,1)$. On $[a,1]$, the function $f$ is $C^1$, hence Lipschitz. Therefore
+First we prove that it satisfies (iii). Let $E\subseteq[0,1]$ have measure zero and fix $a\in(0,1)$. On $[a,1]$, the function $f$ is $C^1$, hence Lipschitz. Therefore
 $$
 m^*(f(E\cap[a,1]))=0.
 $$
@@ -140,16 +140,16 @@ $$
 $$
 Since $t_k\asymp k^{-1/2}$, this tends to $\infty$. Hence $f$ has unbounded variation on $[0,1]$.
 
-Every absolutely continuous function on a compact interval has bounded variation, so $f$ is not absolutely continuous. Thus (3) does not imply (1).
+Every absolutely continuous function on a compact interval has bounded variation, so $f$ is not absolutely continuous. Thus (iii) does not imply (i).
 :::
 
 :::
 
 ::: pf-step
-For continuous $f$ of bounded variation on $[0,1]$, conditions (1), (2), and (3) are equivalent.
+For continuous $f$ of bounded variation on $[0,1]$, conditions (i), (ii), and (iii) are equivalent.
 
 ::: pf-proof
-The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. For $f$ of bounded variation this gives (3) implies (1), and steps [](#absolute-continuity-implies-small-image){.pf-ref} and [](#small-image-implies-lusin-n){.pf-ref} give the other implications. The function of step [](#lusin-n-does-not-imply-absolute-continuity){.pf-ref} has unbounded variation.
+The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. For $f$ of bounded variation this gives (iii) implies (i), and steps [](#absolute-continuity-implies-small-image){.pf-ref} and [](#small-image-implies-lusin-n){.pf-ref} give the other implications. The function of step [](#lusin-n-does-not-imply-absolute-continuity){.pf-ref} has unbounded variation.
 :::
 
 :::
@@ -159,7 +159,7 @@ The Banach--Zarecki theorem states that a real-valued function on a compact inte
 
 ::: {.remark}
 The source asks to show that the three statements are equivalent for every continuous $f$.
-That is false: a continuous function satisfying (3) need not have bounded variation, and so need not be absolutely continuous.
+That is false: a continuous function satisfying (iii) need not have bounded variation, and so need not be absolutely continuous.
 Under the additional hypothesis that $f$ has bounded variation, the three statements are equivalent; this is the Banach--Zarecki theorem.
 The source writes $m$ for the measure of the arbitrary sets $E$ and $f(E)$; outer measure is used here because such sets need not be measurable.
 :::

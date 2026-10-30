@@ -34,10 +34,10 @@ audit:
 Let $H$ be a subgroup of $S_n$ of index $n$.
 Prove:
 
-1. There is an isomorphism $f: S_n \to S_n$ such that $f(H)$ is the subgroup of $S_n$ stabilizing $n$.
-   In particular, $H$ is isomorphic to $S_{n-1}$.
+(a) There is an isomorphism $f: S_n \to S_n$ such that $f(H)$ is the subgroup of $S_n$ stabilizing $n$.
+In particular, $H$ is isomorphic to $S_{n-1}$.
 
-2. The only subgroups of $S_n$ containing $H$ are $S_n$ and $H$.
+(b) The only subgroups of $S_n$ containing $H$ are $S_n$ and $H$.
 :::
 
 ::: {.solution}
@@ -94,7 +94,7 @@ f(H)=\{\sigma\in S_n:\sigma(n)=n\}=:H_n.
 $$
 Restriction to $\{1,\ldots,n-1\}$ is an isomorphism
 $H_n\to S_{n-1}$: any permutation of those letters
-extends uniquely by fixing $n$. This proves part (1).
+extends uniquely by fixing $n$. This proves part (a).
 :::
 
 :::
@@ -114,7 +114,7 @@ $J$ is exactly $H_n$, because $H_n\leq J$ and $H_n$
 is the full stabilizer in $S_n$.
 Orbit-stabilizer gives
 $\cardinality{J}=n\cardinality{H_n}=n!$, hence $J=S_n$.
-This proves part (2) and, for $n\geq2$, maximality of $H$.
+This proves part (b) and, for $n\geq2$, maximality of $H$.
 :::
 
 :::

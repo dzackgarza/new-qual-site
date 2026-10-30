@@ -34,9 +34,9 @@ audit:
 Let $V$ be a vector space over a field $F$.
 The evaluation map $e\colon V \to (V^\vee)^\vee$ is defined by $e(v)(f) \coloneqq f(v)$ for $v\in V$ and $f\in V^\vee$.
 
-1. Prove that $e$ is an injection.
+(a) Prove that $e$ is an injection.
 
-2. Prove that $e$ is an isomorphism if and only if $V$ is finite dimensional.
+(b) Prove that $e$ is an isomorphism if and only if $V$ is finite dimensional.
 :::
 
 ::: {.solution}
@@ -81,7 +81,7 @@ $$
 Hence $\Phi=e(v)$, proving surjectivity. If $V=0$,
 the same statement uses the empty basis and all
 three spaces are zero. Together with step [](#e-is-linear-and-injective){.pf-ref},
-this proves the forward implication in part (2).
+this proves the forward implication in part (b).
 :::
 
 :::

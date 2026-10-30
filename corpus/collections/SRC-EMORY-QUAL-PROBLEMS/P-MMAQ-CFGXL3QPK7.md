@@ -30,9 +30,9 @@ $$
 \lim_{\abs{z}\to\infty}\abs{f(z)}=\infty.
 $$
 
-1. Show that $f$ has only finitely many poles.
+(a) Show that $f$ has only finitely many poles.
 
-2. Show that $f$ is a rational function.
+(b) Show that $f$ is a rational function.
 :::
 
 ::: {.solution}

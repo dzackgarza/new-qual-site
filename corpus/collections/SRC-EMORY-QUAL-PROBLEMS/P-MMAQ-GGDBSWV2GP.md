@@ -24,16 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $G$ be a group of order $n$.
-   Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$.
-   Show that $G$ is cyclic.
+(a) Let $G$ be a group of order $n$.
+Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$.
+Show that $G$ is cyclic.
 
-2. Let $F$ be a field.
-   Show that every finite subgroup of the group of units $F^\times$ is cyclic.
+(b) Let $F$ be a field.
+Show that every finite subgroup of the group of units $F^\times$ is cyclic.
 :::
 
 ::: {.solution}
-**Part 1.**
+**Part (a).**
 
 ::: pf
 
@@ -111,7 +111,7 @@ An element of order $n$ generates a subgroup of order $n=\cardinality{G}$, which
 
 :::
 
-**Part 2.**
+**Part (b).**
 
 ::: pf
 
@@ -134,16 +134,16 @@ The elements of $H$ of order dividing $d$ are roots of the polynomial $x^d - 1$ 
 :::
 
 ::: {.pf-step #h-is-cyclic}
-Hence $H$ is cyclic by part 1.
+Hence $H$ is cyclic by part (a).
 
 ::: pf-proof
-Step [](#at-most-one-subgroup-per-order-in-h){.pf-ref} and part 1.
+Step [](#at-most-one-subgroup-per-order-in-h){.pf-ref} and part (a).
 :::
 
 :::
 
 ::: pf-qed
-Step [](#g-is-cyclic-part1){.pf-ref} (part 1) and step [](#h-is-cyclic){.pf-ref} (part 2).
+Step [](#g-is-cyclic-part1){.pf-ref} (part (a)) and step [](#h-is-cyclic){.pf-ref} (part (b)).
 :::
 
 :::

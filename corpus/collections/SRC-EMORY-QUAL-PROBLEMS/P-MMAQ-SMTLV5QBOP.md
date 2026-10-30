@@ -31,8 +31,9 @@ audit:
 Let $f\in L^1([0,1])$.
 Show that
 
-1. The limit $\lim_{p\to 0^+} \norm{ f }_p$ exists.
-2. If $m\{x:f(x)=0\}>0$, then this limit is zero.
+(a) The limit $\lim_{p\to 0^+} \norm{ f }_p$ exists.
+
+(b) If $m\{x:f(x)=0\}>0$, then this limit is zero.
 :::
 
 ::: {.solution}
