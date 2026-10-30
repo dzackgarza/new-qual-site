@@ -3,7 +3,12 @@ schema: qual/card@1
 id: P-WESTOP05-10
 kind: problem
 title: Lift multiplication to the universal cover of a topological group and prove associativity
-classification: {areas: [topology], topics: []}
+classification:
+  areas:
+  - topology
+  topics:
+  - Covering Spaces
+  - Groups
 relations: []
 review: draft
 audit:
