@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2. How many solutions does the equation
+How many solutions does the equation
 $$
 z + e^{-z} = 2 + i
 $$

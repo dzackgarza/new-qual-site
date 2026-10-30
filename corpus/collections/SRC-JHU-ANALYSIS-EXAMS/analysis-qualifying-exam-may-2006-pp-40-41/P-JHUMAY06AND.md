@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4. Let $f_{n} \colon D \to (-\infty, 1)$, $n = 1, 2, \ldots$, be an increasing sequence of harmonic functions on the unit disk $D$ such that $f_{n}(0) \to 1$ as $n \to \infty$. (I.e., $f_{n}(z) \leq f_{n+1}(z) < 1$, $\forall n \geq 1$.) Prove that $f_{n}(z) \to 1$ as $n \to \infty$, for all $z \in D$.
+Let $f_{n} \colon D \to (-\infty, 1)$, $n = 1, 2, \ldots$, be an increasing sequence of harmonic functions on the unit disk $D$ such that $f_{n}(0) \to 1$ as $n \to \infty$. (I.e., $f_{n}(z) \leq f_{n+1}(z) < 1$, $\forall n \geq 1$.) Prove that $f_{n}(z) \to 1$ as $n \to \infty$, for all $z \in D$.
 :::
 
 ::: {.solution}

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-9. Suppose that $f$ is in $L^{1}(\RR)$. Prove directly (i.e., without citing properties of the Fourier transform) that the function
+Suppose that $f$ is in $L^{1}(\RR)$. Prove directly (i.e., without citing properties of the Fourier transform) that the function
 $$
 \widehat{f}(t) = \int_{\RR} e^{-ixt}f(x) \, dx
 $$

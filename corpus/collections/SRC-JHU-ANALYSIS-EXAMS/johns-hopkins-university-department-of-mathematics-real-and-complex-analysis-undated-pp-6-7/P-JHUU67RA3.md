@@ -44,22 +44,22 @@ $$
 \norm{f}_\infty=\operatorname*{ess\,sup}_I\abs{f}.
 $$
 
-1. Show that $C(I)$ with the norm $\norm{\cdot}_p$, $1\le p<\infty$, is not Banach.
+(a) Show that $C(I)$ with the norm $\norm{\cdot}_p$, $1\le p<\infty$, is not Banach.
 
-2. Prove that $L^p(I)$, meaning measurable finite-$p$-norm functions modulo equality almost everywhere, is Banach for $1\le p\le\infty$.
+(b) Prove that $L^p(I)$, meaning measurable finite-$p$-norm functions modulo equality almost everywhere, is Banach for $1\le p\le\infty$.
 
-3. Prove that there is no smooth function $h\in C^\infty(\RR)$ such that
+(c) Prove that there is no smooth function $h\in C^\infty(\RR)$ such that
 $$
 (f*h)(x):=\int_0^1 f(y)h(x-y)\,dy=f(x)
 \qquad\text{for every }f\in L^1([0,1])\text{ and almost every }x\in[0,1].
 $$
 
-4. Prove Hölder's inequality: if $1/p+1/q=1$, then
+(d) Prove Hölder's inequality: if $1/p+1/q=1$, then
 $$
 \int_I\abs{fg}\le \norm{f}_p\norm{g}_q.
 $$
 
-5. Deduce Young's convolution inequality on $\RR$: if
+(e) Deduce Young's convolution inequality on $\RR$: if
 $$
 1\le p,q,r\le\infty,
 \qquad

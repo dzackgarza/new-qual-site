@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4. (20 points) Let $D$ denote the unit disc $\{z \st \abs{z} < 1\}$. Determine a holomorphic mapping $f$ of $D$ onto itself for which $f(\frac{1}{2}) = -\frac{1}{\pi}$.
+Let $D$ denote the unit disc $\{z \st \abs{z} < 1\}$. Determine a holomorphic mapping $f$ of $D$ onto itself for which $f(\frac{1}{2}) = -\frac{1}{\pi}$.
 :::
 
 ::: {.solution}

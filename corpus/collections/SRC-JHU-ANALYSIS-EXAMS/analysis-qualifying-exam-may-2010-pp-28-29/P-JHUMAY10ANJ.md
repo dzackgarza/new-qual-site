@@ -33,7 +33,7 @@ F(x)=\int_{\RR}\chi_E(y)\chi_E(y-x)\,dy
 $$
 is continuous.
 
-(b) If $\setmeasure{E}>0$, possibly infinite, prove that $E-E$ contains an interval $(-\varepsilon,\varepsilon)$ for some $\varepsilon>0$.
+(b) If $\setmeasure{E}>0$, possibly infinite, use (a) to prove that $E-E$ contains an interval $(-\varepsilon,\varepsilon)$ for some $\varepsilon>0$.
 :::
 
 ::: {.solution}

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4) Does there exist a surjective holomorphic map $f : D \to \CC$ from the unit disc to the whole complex plane? Prove that your answer is correct.
+Does there exist a surjective holomorphic map $f : D \to \CC$ from the unit disc to the whole complex plane? Prove that your answer is correct.
 :::
 
 ::: {.solution}

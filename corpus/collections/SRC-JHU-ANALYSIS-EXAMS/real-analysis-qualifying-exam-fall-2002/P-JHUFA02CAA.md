@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $\psi(x) = x$ on $[0, \frac{1}{2}]$, $\psi(x) = 1 - x$ on $[\frac{1}{2}, 1]$ and extended periodically of period $1$. Define $f(x) = \sum_{n=0}^{\infty} 2^{-n}\psi(8^{n}x)$.
+Let $\psi(x) = x$ on $[0, \frac{1}{2}]$, $\psi(x) = 1 - x$ on $[\frac{1}{2}, 1]$ and extended periodically of period $1$. Define $f(x) = \sum_{n=0}^{\infty} 2^{-n}\psi(8^{n}x)$.
 
-i. Show that $f(x)$ is continuous everywhere.
+(i) Show that $f(x)$ is continuous everywhere.
 
-ii. Show that $f(x)$ is differentiable nowhere.
+(ii) Show that $f(x)$ is differentiable nowhere.
 
 Hint: Consider the difference quotients
 $$

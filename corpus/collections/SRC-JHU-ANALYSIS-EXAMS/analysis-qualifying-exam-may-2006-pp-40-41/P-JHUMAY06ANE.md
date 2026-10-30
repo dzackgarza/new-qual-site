@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-5. Let $H$ denote the upper half plane $\{z \in \CC \st \Im z > 0\}$. Suppose that $f \colon H \to H$ is holomorphic, and $f(3 + 17i) = 3 + 17i$. What is the maximum possible value of $f'(3 + 17i)$? Give a reason for your answer (and try not to do any lengthy computations).
+Let $H$ denote the upper half plane $\{z \in \CC \st \Im z > 0\}$. Suppose that $f \colon H \to H$ is holomorphic, and $f(3 + 17i) = 3 + 17i$. What is the maximum possible value of $\abs{f'(3 + 17i)}$? Give a reason for your answer (and try not to do any lengthy computations).
 :::
 
 ::: {.remark}

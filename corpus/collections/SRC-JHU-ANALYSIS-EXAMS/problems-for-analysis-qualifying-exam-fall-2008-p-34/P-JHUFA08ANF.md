@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-6) (10 points) Let $f \colon \CC \to \CC$ be an entire function. Prove that if there exists some real number $C$ and some positive integer $k$ so that
+Let $f \colon \CC \to \CC$ be an entire function. Prove that if there exists some real number $C$ and some positive integer $k$ so that
 $$
 \abs{f(z)} \leq C\abs{z}^{k}
 $$

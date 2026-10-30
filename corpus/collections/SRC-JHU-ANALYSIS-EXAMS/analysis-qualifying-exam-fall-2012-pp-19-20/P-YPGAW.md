@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-5. For each natural number $n$, let $f_{n} \colon [0, 1] \to \RR$ be a sequence of absolutely integrable functions, and let $f \colon [0, 1] \to \RR$ be another absolutely integrable function such that
+For each natural number $n$, let $f_{n} \colon [0, 1] \to \RR$ be a sequence of absolutely integrable functions, and let $f \colon [0, 1] \to \RR$ be another absolutely integrable function such that
 $$
 \int_{0}^{1} \abs{f_{n}(x) - f(x)} \, dx \to 0, \qquad \text{as} \quad n \to \infty.
 $$

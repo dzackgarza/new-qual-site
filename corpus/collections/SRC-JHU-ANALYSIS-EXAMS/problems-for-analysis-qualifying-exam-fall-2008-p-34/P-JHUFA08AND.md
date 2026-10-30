@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4) (10 points) Use residues to verify that
+Use residues to verify that
 $$
 \int_{0}^{\infty} \frac{\ln x}{(x^{2} + 4)^{2}} \, dx = \frac{\pi}{32}(\ln 2 - 1).
 $$

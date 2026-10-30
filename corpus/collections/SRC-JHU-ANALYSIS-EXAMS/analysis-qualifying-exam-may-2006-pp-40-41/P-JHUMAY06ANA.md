@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $P$ be a point in an open set $U$ in $\CC$, and suppose that $f$ is a meromorphic function on $U$ with a pole at $P$. Prove that there is no holomorphic function $g \colon U \setminus \{P\} \to \CC$ such that $e^{g(z)} = f(z)$ for all $z \in U \setminus \{P\}$.
+Let $P$ be a point in an open set $U$ in $\CC$, and suppose that $f$ is a meromorphic function on $U$ with a pole at $P$. Prove that there is no holomorphic function $g \colon U \setminus \{P\} \to \CC$ such that $e^{g(z)} = f(z)$ for all $z \in U \setminus \{P\}$.
 :::
 
 ::: {.solution}

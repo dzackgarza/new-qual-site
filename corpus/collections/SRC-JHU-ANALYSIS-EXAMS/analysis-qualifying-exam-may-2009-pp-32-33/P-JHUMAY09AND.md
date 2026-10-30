@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-4. Let $f(x) = \frac{1}{x^{2} + 1}$. Use a contour integral consisting of the interval $[-R, R] \subset \RR$ and a semicircle of radius $R$ to compute the Fourier transform
+Let $f(x) = \frac{1}{x^{2} + 1}$. Use a contour integral consisting of the interval $[-R, R] \subset \RR$ and a semicircle of radius $R$ to compute the Fourier transform
 $$
 \widehat{f}(1) = \int_{\RR} f(x)e^{-ix} \, dx.
 $$

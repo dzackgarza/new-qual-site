@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Compute: $\displaystyle\int_{0}^{\infty} \frac{dx}{1 + x^{3}}$.
+Compute: $\displaystyle\int_{0}^{\infty} \frac{dx}{1 + x^{3}}$.
 :::
 
 ::: {.solution}

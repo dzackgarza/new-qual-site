@@ -18,15 +18,15 @@ audit:
 ---
 
 ::: {.problem}
-1) (15 points) Consider the mapping $F \colon [0, 1] \to [0, 1]$ given by $F(s) = s^{2}$.
+Consider the mapping $F \colon [0, 1] \to [0, 1]$ given by $F(s) = s^{2}$.
 
 Let $F^{-j}(A)$ be the inverse image of $j$ iterates of $F$ applied to a measurable subset $A \subset [0, 1]$. That is, if $F = F^{1}$ and $F^{j}$, $j = 2, 3, \ldots$, is defined inductively as $F^{j} = F^{j-1} \circ F$, then $F^{-j}(A) = \{x \st F^{j}x = y \text{ for some } y \in A\}$.
 
-a) Given $N = 1, 2, \dots$, show that $\mu_{N}(A) = N^{-1}\sum_{j < N} \setmeasure{F^{-j}(A)}$ is a measure which is absolutely continuous with respect to Lebesgue measure. Here $\setmeasure{B}$ denotes the Lebesgue measure of a measurable set.
+(a) Given $N = 1, 2, \dots$, show that $\mu_{N}(A) = N^{-1}\sum_{j < N} \setmeasure{F^{-j}(A)}$ is a measure which is absolutely continuous with respect to Lebesgue measure. Here $\setmeasure{B}$ denotes the Lebesgue measure of a measurable set.
 
-b) Show that $\mu_{N}([a, b]) \to 0$ if $0 < a < b \leq 1$.
+(b) Show that $\mu_{N}([a, b]) \to 0$ if $0 < a < b \leq 1$.
 
-c) If $f$ is a continuous function on $[0, 1]$ does
+(c) If $f$ is a continuous function on $[0, 1]$ does
 $$
 \lim_{N \to \infty} \int_{[0, 1]} f(s) \, d\mu_{N}(s)
 $$

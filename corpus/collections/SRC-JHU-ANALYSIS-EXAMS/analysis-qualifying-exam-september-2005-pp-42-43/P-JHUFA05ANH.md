@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-8. Let $H=\{z\in\CC:\operatorname{Re}z>0\}$ be the right half-plane.
+Let $H=\{z\in\CC:\operatorname{Re}z>0\}$ be the right half-plane.
 
 (a) Does there exist a surjective holomorphic map $f : H \to \CC ?$ Either give an example or prove that one does not exist.
 

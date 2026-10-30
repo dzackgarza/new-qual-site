@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-1. Find all entire functions f such that $\abs{ f ( z ) } = 1$ whenever $\abs{ z } = 1$ . Give explicit formulas for the functions and give a proof for your answer.
-   (An entire function is a holomorphic function on C.)
+Find all entire functions $f$ such that $\abs{f(z)} = 1$ whenever $\abs{z} = 1$. Give explicit formulas for the functions and give a proof for your answer.
+(An entire function is a holomorphic function on $\CC$.)
 :::
 
 ::: {.solution}

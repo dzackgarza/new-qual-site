@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_j\in L^2(\RR^n)$ with $f_j\to f$ in $L^2$. Suppose there exists $M<\infty$ such that
+Let $f_j\in L^2(\RR^n)$ with $f_j\to f$ in $L^2$, and let $\sigma\in\RR$. Suppose there exists $M<\infty$ such that
 $$
 \norm{f_j}_{H^\sigma}\le M
 \qquad(j\ge1),

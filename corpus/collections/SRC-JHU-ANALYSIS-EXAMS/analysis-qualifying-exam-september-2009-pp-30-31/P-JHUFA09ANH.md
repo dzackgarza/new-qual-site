@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-8. Let $h$ be a harmonic function on the punctured disk
+Let $h$ be a harmonic function on the punctured disk
 $$
 U \coloneqq \{z \in \CC \st 0 < \abs{z} < 1\}.
 $$

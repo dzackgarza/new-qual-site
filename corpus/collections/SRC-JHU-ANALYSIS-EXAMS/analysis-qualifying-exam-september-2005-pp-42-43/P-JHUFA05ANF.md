@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-6. (a) Describe all the automorphisms of the right half-plane
+(a) Describe all the automorphisms of the right half-plane
 $H=\{z\in\CC:\operatorname{Re}z>0\}$, meaning holomorphic bijections from $H$ onto itself.
 
 (b) Describe all the automorphisms of $\CC$ (holomorphic bijective maps from $\CC$ onto $\CC$).

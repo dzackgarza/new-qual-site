@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-6) Let $D = \{ z \in \CC : \abs{ z } < 1 \}$ and P and Q be distinct points in D. Prove the following statement: If f and g are conformal (or equivalently biholomorphic) self-maps of D, $f ( P ) = g ( P )$ and $f ( Q ) = g ( Q )$ , then $f \equiv g$
+Let $D = \{ z \in \CC : \abs{ z } < 1 \}$ and P and Q be distinct points in D. Prove the following statement: If f and g are conformal (or equivalently biholomorphic) self-maps of D, $f ( P ) = g ( P )$ and $f ( Q ) = g ( Q )$ , then $f \equiv g$
 :::
 
 ::: {.solution}

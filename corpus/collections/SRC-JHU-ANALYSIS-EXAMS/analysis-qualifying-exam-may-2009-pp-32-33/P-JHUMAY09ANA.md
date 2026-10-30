@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Find all meromorphic functions $f$ on $\CC$ such that
+Find all meromorphic functions $f$ on $\CC$ such that
 $$
 \abs{f(z)} \leq \frac{\log(2 + \abs{z}^{2})}{\abs{z}} \qquad \text{for all } z \neq 0.
 $$

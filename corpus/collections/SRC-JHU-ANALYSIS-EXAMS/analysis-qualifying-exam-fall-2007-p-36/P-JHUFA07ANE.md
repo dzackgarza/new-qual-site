@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-5) Give examples of functions $f$ and $g$ on $\RR$ so that $f \in L^{1} \setminus L^{2}$ and $g \in L^{2} \setminus L^{1}$.
+Give examples of functions $f$ and $g$ on $\RR$ so that $f \in L^{1} \setminus L^{2}$ and $g \in L^{2} \setminus L^{1}$.
 :::
 
 ::: {.solution}

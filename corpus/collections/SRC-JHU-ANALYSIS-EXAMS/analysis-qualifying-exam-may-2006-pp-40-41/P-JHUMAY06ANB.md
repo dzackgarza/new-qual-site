@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-2. How many zeros does the polynomial
+How many zeros does the polynomial
 $$
 z^{7} - 4z^{3} + z - \tfrac{1}{2}
 $$

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-6. Find all the poles of the function
+Find all the poles of the function
 $$
 f(z) = \frac{e^{\pi z}}{(z^{2} + 1)^{2}}.
 $$

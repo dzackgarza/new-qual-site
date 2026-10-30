@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Use residues to calculate the integral
+Use residues to calculate the integral
 $$
 \int_{0}^{\infty} \frac{dx}{x^{4} + 4}.
 $$

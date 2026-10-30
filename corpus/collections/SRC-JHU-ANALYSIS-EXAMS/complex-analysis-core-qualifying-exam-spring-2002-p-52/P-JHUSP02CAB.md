@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Evaluate the integral
+Evaluate the integral
 $$
 \int_{0}^{2\pi} \frac{dx}{a^{2} + \cos^{2} x},
 $$

@@ -26,17 +26,17 @@ audit:
 ---
 
 ::: {.problem}
-3. Let $\mathcal{O}(D)$ denote the space of holomorphic functions on the unit disk $D$ and let
+Let $\mathcal{O}(D)$ denote the space of holomorphic functions on the unit disk $D$ and let
 $$
 \mathcal{H} = \mathcal{O}(D) \cap L^{2}(D) = \left\{f \in \mathcal{O}(D) \st \int_{D} \abs{f}^{2} \, dx \, dy < +\infty\right\}.
 $$
 
-a) Show that for all compact sets $K \subset D$, there is a constant $C_{K} \in \RR^{+}$ such that
+(a) Show that for all compact sets $K \subset D$, there is a constant $C_{K} \in \RR^{+}$ such that
 $$
 \sup_{z \in K} \abs{f(z)} \leq C_{K}\norm{f}_{L^{2}(D)}.
 $$
 
-b) Show that $\mathcal{H}$ is a closed subspace of $L^{2}(D)$ and hence is a Hilbert space.
+(b) Show that $\mathcal{H}$ is a closed subspace of $L^{2}(D)$ and hence is a Hilbert space.
 :::
 
 ::: {.solution}

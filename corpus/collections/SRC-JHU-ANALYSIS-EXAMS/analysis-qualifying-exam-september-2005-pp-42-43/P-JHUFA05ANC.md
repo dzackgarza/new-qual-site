@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-3. Let $g_{n}$ be a sequence of functions in $L^{1}(S^{1}, d\theta)$ where $S^{1}$ is the unit circle $\{e^{i\theta} \st 0 \leq \theta \leq 2\pi\}$. We say that $g_{n} \to 0$ weakly if $\int_{S^{1}} g_{n}(e^{i\theta})f(e^{i\theta}) \, d\theta \to 0$ as $n \to \infty$ for all $f \in C(S^{1})$.
+Let $g_{n}$ be a sequence of functions in $L^{1}(S^{1}, d\theta)$ where $S^{1}$ is the unit circle $\{e^{i\theta} \st 0 \leq \theta \leq 2\pi\}$. We say that $g_{n} \to 0$ weakly if $\int_{S^{1}} g_{n}(e^{i\theta})f(e^{i\theta}) \, d\theta \to 0$ as $n \to \infty$ for all $f \in C(S^{1})$.
 
 Question: Suppose that $\{g_{n}\}$ is a sequence in $L^{1}(S^{1}, d\theta)$ and $\int_{S^{1}} e^{ik\theta}g_{n}(e^{i\theta}) \, d\theta \to 0$ as $n \to \infty$ for all $k \in \ZZ$. Need $g_{n} \to 0$ weakly? Give either a proof or a counterexample.
 :::

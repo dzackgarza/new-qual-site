@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-7) (10 points) Let $D \subset \CC$ be the unit disk and $\Omega \subset \CC$ a bounded, simply connected domain. If $f_{1} \colon D \to \Omega$ and $f_{2} \colon D \to \Omega$ are holomorphic bijections so that $f_{1}(0) = f_{2}(0)$, then how are $f_{1}$ and $f_{2}$ related to each other?
+Let $D \subset \CC$ be the unit disk and $\Omega \subset \CC$ a bounded, simply connected domain. If $f_{1} \colon D \to \Omega$ and $f_{2} \colon D \to \Omega$ are holomorphic bijections so that $f_{1}(0) = f_{2}(0)$, then how are $f_{1}$ and $f_{2}$ related to each other?
 :::
 
 ::: {.solution}

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < \abs{ z }$ Show that u must be constant.
+Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < \abs{z}$. Show that u must be constant.
 :::
 
 ::: {.solution}

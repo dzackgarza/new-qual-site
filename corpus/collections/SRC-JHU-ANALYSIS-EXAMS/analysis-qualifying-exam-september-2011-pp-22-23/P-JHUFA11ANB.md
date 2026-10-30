@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $h : \CC \to \RR$ be a harmonic function such that h is bounded below.
-   Prove that h is constant.
+Let $h : \CC \to \RR$ be a harmonic function such that $h$ is bounded below.
+Prove that $h$ is constant.
 :::
 
 ::: {.solution}

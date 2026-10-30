@@ -30,15 +30,15 @@ We use the notation
 
 $$\norm{f}_{L^2(U)} = \left(\int_U \abs{f}^2 \, dx \, dy\right)^{1/2}.$$
 
-- Let $f : U \to \CC$ be a holomorphic function.
-  Show that for any compact set $K \subset U$, there is a constant $C_K$ such that
+(a) Let $f : U \to \CC$ be a holomorphic function.
+Show that for any compact set $K \subset U$, there is a constant $C_K$ such that
 
 $$\sup_{z \in K} \abs{f(z)} \leq C_K \norm{f}_{L^2(U)}.$$
 
-- Prove that $\{f \text{ is holomorphic on } U : \norm{f}_{L^2(U)} \leq 1\}$ is a normal family.
+(b) Prove that $\{f \text{ is holomorphic on } U : \norm{f}_{L^2(U)} \leq 1\}$ is a normal family.
 
-- Suppose $U$ is the punctured disc $D(0,1) \setminus \{0\}$.
-  If $f$ is holomorphic on $U$ and $\norm{f}_{L^2(U)} < \infty$, prove that $z = 0$ is a removable singularity of $f$.
+(c) Suppose $U$ is the punctured disc $D(0,1) \setminus \{0\}$.
+If $f$ is holomorphic on $U$ and $\norm{f}_{L^2(U)} < \infty$, prove that $z = 0$ is a removable singularity of $f$.
 :::
 
 ::: {.solution}

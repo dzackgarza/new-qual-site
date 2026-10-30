@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-4. Let $h$ be a harmonic function on the domain
+Let $h$ be a harmonic function on the domain
 $$
 U \coloneqq \{z \in \CC \st \abs{z} > 1\}.
 $$

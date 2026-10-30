@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Suppose $\{f_{n}\}_{n=1}^{\infty} \subset L^{2}(\RR)$ is a sequence that converges to $0$ in the $L^{2}$ norm; in other words,
+Suppose $\{f_{n}\}_{n=1}^{\infty} \subset L^{2}(\RR)$ is a sequence that converges to $0$ in the $L^{2}$ norm; in other words,
 $$
 \norm{f_{n}}_{L^{2}(\RR)} = \left(\int_{-\infty}^{\infty} \abs{f_{n}}^{2} \, dx\right)^{\frac{1}{2}} \to 0.
 $$

@@ -32,6 +32,7 @@ $$
 \norm{f*\varphi}_q\le A\norm{f}_p
 \qquad(f\in L^p).
 $$
+If you use Young's convolution inequality, prove it.
 
 (b) Show by example that no such general estimate can hold when $p>q$.
 :::

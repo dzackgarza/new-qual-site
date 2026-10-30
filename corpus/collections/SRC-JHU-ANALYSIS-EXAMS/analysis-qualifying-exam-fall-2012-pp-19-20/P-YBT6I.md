@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-7. Let
+Let
 $$
 f * g(x) \coloneqq \int_{-\infty}^{+\infty} f(y)g(x - y) \, dy
 $$

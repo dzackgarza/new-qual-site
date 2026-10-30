@@ -25,15 +25,15 @@ audit:
 ---
 
 ::: {.problem}
-5. Let
+Let
 $$
 f(x + iy) = x^{3} - 3xy^{2} + iy^{3}.
 $$
 State whether each of the following is true or false and give proofs for your answers:
 
-a) the complex derivative $f'(0)$ exists;
+(a) the complex derivative $f'(0)$ exists;
 
-b) $f$ is holomorphic in a neighborhood of $0$.
+(b) $f$ is holomorphic in a neighborhood of $0$.
 :::
 
 ::: {.solution}

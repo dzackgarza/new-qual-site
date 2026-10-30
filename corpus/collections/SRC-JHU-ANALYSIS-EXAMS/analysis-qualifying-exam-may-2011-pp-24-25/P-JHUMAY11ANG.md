@@ -31,10 +31,12 @@ $$
 \norm{f}_p\le\norm{f}_\infty.
 $$
 
-(b) Prove that
+(b) Show that $\norm{f}_\infty \le \lim_{p\to\infty}\norm{f}_p$, and conclude that
 $$
 \lim_{p\to\infty}\norm{f}_p=\norm{f}_\infty.
 $$
+
+Hint: Given $\varepsilon>0$, consider $A_\varepsilon=\{x\in[0,1]:\abs{f(x)}>\norm{f}_\infty-\varepsilon\}$.
 :::
 
 ::: {.solution}

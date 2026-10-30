@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Find all possible values of
+Find all possible values of
 $$
 \int_{\gamma} \frac{e^{\pi z}}{(z - 1)(z - i)^{2}} \, dz
 $$

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Suppose that $f \colon D_{1}(0) \to \CC$ is a one-to-one holomorphic function with $\Omega = f(D_{1}(0))$. Let $g \colon D_{1}(0) \to \Omega$ be another holomorphic function with $g(0) = f(0)$. Show that for each $0 \leq r < 1$, $g(D_{r}(0)) \subset f(D_{r}(0))$.
+Suppose that $f \colon D_{1}(0) \to \CC$ is a one-to-one holomorphic function with $\Omega = f(D_{1}(0))$. Let $g \colon D_{1}(0) \to \Omega$ be another holomorphic function with $g(0) = f(0)$. Show that for each $0 \leq r < 1$, $g(D_{r}(0)) \subset f(D_{r}(0))$.
 :::
 
 ::: {.solution}

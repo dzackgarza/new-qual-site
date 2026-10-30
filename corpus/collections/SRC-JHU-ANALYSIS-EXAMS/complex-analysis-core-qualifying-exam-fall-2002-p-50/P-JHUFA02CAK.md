@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-6. (20 points) Evaluate the integral:
+Evaluate the integral:
 $$
 \int_{0}^{\infty} \frac{u^{2} \, du}{u^{6} + 1}
 $$

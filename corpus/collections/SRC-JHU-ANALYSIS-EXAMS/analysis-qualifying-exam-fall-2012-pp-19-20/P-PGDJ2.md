@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-1. How many zeros does the polynomial
+How many zeros does the polynomial
 
 $$
 z^9 + z^6 + 30 z^5 - 3z + 2

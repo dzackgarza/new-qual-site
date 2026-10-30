@@ -25,10 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-1. Define a normal family of holomorphic functions on an open,
-   possibly unbounded, domain $U$.
-2. If $\mathcal F$ is normal on the open unit disk $D$, prove
-   that $\mathcal F'=\{f':f\in\mathcal F\}$ is normal on $D$.
+(a) Define a normal family of holomorphic functions on an open,
+possibly unbounded, domain $U$.
+
+(b) If $\mathcal F$ is normal on the open unit disk $D$, prove
+that $\mathcal F'=\{f':f\in\mathcal F\}$ is normal on $D$.
 :::
 
 ::: {.solution}

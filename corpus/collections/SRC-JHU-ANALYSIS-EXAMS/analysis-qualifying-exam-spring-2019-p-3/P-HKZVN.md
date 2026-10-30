@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 1.2. Fix a measurable function $f \colon \RR^{2} \to \RR$ and, for every $x, y \in \RR$, let
+Fix a measurable function $f \colon \RR^{2} \to \RR$ and, for every $x, y \in \RR$, let
 $$
 f_{x} \colon \RR \to \RR \quad \text{and} \quad f_{y} \colon \RR \to \RR
 $$

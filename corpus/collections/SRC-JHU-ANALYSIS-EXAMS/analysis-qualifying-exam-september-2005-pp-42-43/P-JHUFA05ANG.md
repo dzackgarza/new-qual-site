@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-7. How many zeros does the polynomial
+How many zeros does the polynomial
 $$
 z^{9} + z^{5} - 8z^{3} - z + 2
 $$

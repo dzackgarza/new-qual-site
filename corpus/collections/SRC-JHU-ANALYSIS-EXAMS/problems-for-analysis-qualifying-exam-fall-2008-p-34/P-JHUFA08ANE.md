@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-5) (10 points) How many solutions does the equation
+How many solutions does the equation
 $$
 e^{z} = 3z^{7}
 $$
-have in the unit disk $D = \{x \in \CC \st \abs{z} < 1\}$? Justify your answer.
+have in the unit disk $D = \{z \in \CC \st \abs{z} < 1\}$? Justify your answer.
 :::
 
 ::: {.solution}

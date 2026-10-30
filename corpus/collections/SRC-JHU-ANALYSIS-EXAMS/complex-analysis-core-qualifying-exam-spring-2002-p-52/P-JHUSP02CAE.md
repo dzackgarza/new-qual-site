@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-5. Let $\sum_{n=-\infty}^{\infty} a_{n}z^{n}$ be the Laurent series expansion of $\frac{1}{\sin z}$ on the annulus $\{z \in \CC \st \pi < \abs{z} < 2\pi\}$. Evaluate the coefficients $a_{n}$ for $n < 0$.
+Let $\sum_{n=-\infty}^{\infty} a_{n}z^{n}$ be the Laurent series expansion of $\frac{1}{\sin z}$ on the annulus $\{z \in \CC \st \pi < \abs{z} < 2\pi\}$. Evaluate the coefficients $a_{n}$ for $n < 0$.
 :::
 
 ::: {.solution}

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-5) Prove the following statement: If f and g are entire functions, $g ( z ) \neq 0$ and $\abs{ f ( z ) } \leq \abs{ g ( z ) }$ for all $z \in \CC .$ , then $f ( z ) = C g ( z )$ for some constant C.
+Prove the following statement: If f and g are entire functions, $g ( z ) \neq 0$ and $\abs{ f ( z ) } \leq \abs{ g ( z ) }$ for all $z \in \CC$, then $f ( z ) = C g ( z )$ for some constant C.
 :::
 
 ::: {.solution}

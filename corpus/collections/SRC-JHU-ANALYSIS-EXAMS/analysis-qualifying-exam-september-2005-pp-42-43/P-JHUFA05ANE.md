@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-5. Use contour integration to evaluate
+Use contour integration to evaluate
 $$
 \int_{0}^{+\infty} \frac{dx}{x^{1/3}(1 + x)}.
 $$

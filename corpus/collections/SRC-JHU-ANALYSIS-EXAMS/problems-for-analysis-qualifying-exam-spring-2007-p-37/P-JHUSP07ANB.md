@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2) Calculate the integral $\displaystyle\int_{0}^{2\pi} \frac{d\theta}{1 - 2a\cos\theta + a^{2}}$, where $0 < a < 1$.
+Calculate the integral $\displaystyle\int_{0}^{2\pi} \frac{d\theta}{1 - 2a\cos\theta + a^{2}}$, where $0 < a < 1$.
 :::
 
 ::: {.solution}

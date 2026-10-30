@@ -31,9 +31,9 @@ audit:
 ---
 
 ::: {.problem}
-1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < \abs{ z } < 3 \}$ , then f extends holomorphically to the disc $\{ z : \abs{ z } < 3 \}$
+(a) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < \abs{ z } < 3 \}$ , then f extends holomorphically to the disc $\{ z : \abs{ z } < 3 \}$
 
-(b) (15 points) Determine whether the following is true: If f is holomorphic on the annulus $\{ z : 1 < \abs{ z } < 3 \}$ , then f extends meromorphically to the disc $\{ z : \abs{ z } < 3 \}$
+(b) Determine whether the following is true: If f is holomorphic on the annulus $\{ z : 1 < \abs{ z } < 3 \}$ , then f extends meromorphically to the disc $\{ z : \abs{ z } < 3 \}$
 :::
 
 ::: {.solution}

@@ -25,7 +25,9 @@ audit:
 ---
 
 ::: {.problem}
-3. Let $U$ be a bounded domain in $\CC$, and let $f \colon U \to U$ such that $f$ is holomorphic. Let $P \in U$ and suppose that $f(P) = P$. Prove that $\abs{f'(P)} \leq 1$.
+Let $U$ be a bounded domain in $\CC$, and let $f \colon U \to U$ such that $f$ is holomorphic. Let $P \in U$ and suppose that $f(P) = P$. Prove that $\abs{f'(P)} \leq 1$.
+
+Hint: Consider the sequence of iterates $f_n = f \circ f \circ \cdots \circ f$ ($n$ times).
 :::
 
 ::: {.hint}

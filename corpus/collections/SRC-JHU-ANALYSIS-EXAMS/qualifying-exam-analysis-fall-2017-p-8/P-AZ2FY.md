@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-3. For a Radon measure $\mu$, with $\int_{\RR^{n}} d\mu = C$. Prove that for all $\epsilon > 0$, there exists a set $E_{\epsilon} \subset \RR^{n}$ such that
+For a Radon measure $\mu$, with $\int_{\RR^{n}} d\mu = C$. Prove that for all $\epsilon > 0$, there exists a set $E_{\epsilon} \subset \RR^{n}$ such that
 $$
 \mathcal{M}^1(E_\epsilon) \coloneqq \inf_{E_\epsilon \subset \bigcup_i B_i} \sum_i \operatorname{diam}(B_i) < 10\epsilon,
 $$

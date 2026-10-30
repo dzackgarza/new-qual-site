@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 1.1. Suppose that $f_{j} \in L^{2}(\RR^{d})$, $j = 1, 2, \ldots$, and $f \in L^{2}(\RR^{d})$ satisfy
+Suppose that $f_{j} \in L^{2}(\RR^{d})$, $j = 1, 2, \ldots$, and $f \in L^{2}(\RR^{d})$ satisfy
 $$
 \lim_{j \to \infty} \int_{\RR^{d}} f_{j}g = \int_{\RR^{d}} fg
 $$

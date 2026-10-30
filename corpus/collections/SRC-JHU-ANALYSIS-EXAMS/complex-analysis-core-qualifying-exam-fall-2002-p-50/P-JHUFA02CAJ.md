@@ -26,11 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-5. Let $P(z) = z^{7} + z^{3} + \frac{1}{16}$.
+Let $P(z) = z^{7} + z^{3} + \frac{1}{16}$.
 
-(a) (5 points) Show that $P$ has no multiple zeros.
+(a) Show that $P$ has no multiple zeros.
 
-(b) (15 points) Determine the number of zeros of $P$ that lie in the closed disc $\abs{z} \leq \frac{1}{2}$.
+(b) Determine the number of zeros of $P$ that lie in the closed disc $\abs{z} \leq \frac{1}{2}$.
 :::
 
 ::: {.solution}
