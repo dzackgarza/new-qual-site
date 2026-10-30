@@ -41,7 +41,7 @@ $$
 $$
 With this convention, Plancherel extends the Fourier transform to $L^2(\RR)$ and
 $$
-\widehat{f*f}=\widehat f^{,2}.
+\widehat{f*f}=\widehat f^{2}.
 $$
 
 ::: pf
