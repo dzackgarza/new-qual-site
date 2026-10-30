@@ -29,7 +29,7 @@ Let $(X, \mathcal M, \mu)$ be a measure space.
 For $f\in L^1(\mu)$ and $\lambda > 0$, define
 $$
 \phi(\lambda)=\mu(\{x \in X \st f(x)>\lambda\}) 
-\quad \text { and } \quad 
+\quad \text{and} \quad 
 \psi(\lambda)=\mu(\{x \in X \st f(x)<-\lambda\})
 $$
 
