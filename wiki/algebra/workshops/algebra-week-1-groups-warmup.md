@@ -125,7 +125,7 @@ For everything that follows, assume $G$ is a finite group.
 
 ## Warmup problems
 
-[[P-6HPKO]] [[P-2J6HK]] [[P-QJ7MD]] [[P-MMAQ-4KOVSOH5J4]] [[P-KXSW3]] [[P-KPEPM]]
+[[P-6HPKO]] [[P-2J6HK]] [[P-HGRO20]] [[P-MMAQ-4KOVSOH5J4]] [[P-KXSW3]] [[P-KPEPM]]
 
 ## Qual problems
 
