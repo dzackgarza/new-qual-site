@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/FA_ALGEBRA_200ABC.pdf
+- assets/attachments/FA_ALGEBRA_200ABC.pdf
 source:
   source_kind: university-exam
   institution: ucsd

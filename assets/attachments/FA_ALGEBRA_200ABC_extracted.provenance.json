@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA_ALGEBRA_200ABC.pdf",
+  "source_pdf_sha256": "d6aaff588952294b0a517baca623edc86dece952c887884b5b80783920640d62",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA_ALGEBRA_200ABC.pdf",
+  "extracted_markdown": "assets/attachments/FA_ALGEBRA_200ABC_extracted.md",
+  "extracted_markdown_sha256": "0da642d79f458820196543b90bcbdca21a4c01ebf28a645b213777faf20dece2",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA_ALGEBRA_200ABC.pdf --language en",
+  "generated_at": "2026-10-30"
+}

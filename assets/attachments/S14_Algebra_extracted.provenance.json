@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/S14_Algebra.pdf",
+  "source_pdf_sha256": "b0514017a903ef39a6270bfabe02164e85594c79b6a02c71cad227284ce53afb",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/S14_Algebra.pdf",
+  "extracted_markdown": "assets/attachments/S14_Algebra_extracted.md",
+  "extracted_markdown_sha256": "626dafbe0e541568d31fd5c92faa149ea7bde4ad58190ff720214fe428711e8b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/S14_Algebra.pdf --language en",
+  "generated_at": "2026-10-30"
+}

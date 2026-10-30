@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/200-Qual-SP21.pdf
+- assets/attachments/200-Qual-SP21.pdf
 source:
   source_kind: university-exam
   institution: ucsd

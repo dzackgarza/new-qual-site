@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/second-version-alg-qual.pdf
+- assets/attachments/second-version-alg-qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd

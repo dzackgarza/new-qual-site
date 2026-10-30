@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA11_200_Algebra_Qual.pdf
+- assets/attachments/FA11_200_Algebra_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd

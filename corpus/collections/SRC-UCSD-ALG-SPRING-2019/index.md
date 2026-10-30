@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/Algebra-Qual-Spring-2019.pdf
+- assets/attachments/Algebra-Qual-Spring-2019.pdf
 source:
   source_kind: university-exam
   institution: ucsd

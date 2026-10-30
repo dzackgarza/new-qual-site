@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA21-Algebra.pdf",
+  "source_pdf_sha256": "5ec140d925abde993c10890ace5712b1334f6c9d7e5a996d93e6247717f965fa",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Algebra.pdf",
+  "extracted_markdown": "assets/attachments/FA21-Algebra_extracted.md",
+  "extracted_markdown_sha256": "2d943fe1ada343045e5ee01f420c348c26a24bd5d31991d386190d7db8f5b2d8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA21-Algebra.pdf --language en",
+  "generated_at": "2026-10-30"
+}

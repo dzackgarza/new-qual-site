@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP22-200ABC-Algebra.pdf",
+  "source_pdf_sha256": "242e3e0722a6fc12282c6380b6dfdd5ee9bf54691180f09f680a8c4c13b22b45",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP22-200ABC-Algebra.pdf",
+  "extracted_markdown": "assets/attachments/SP22-200ABC-Algebra_extracted.md",
+  "extracted_markdown_sha256": "76f2720f814f89a0ae3208bd55f67afdabbe5b0dbe3a202fbd3de219b72c8611",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP22-200ABC-Algebra.pdf --language en",
+  "generated_at": "2026-10-30"
+}

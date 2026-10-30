@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP08_200_Algebra_Qual.pdf",
+  "source_pdf_sha256": "5eaec3df7a5e30164f9f082e21de5df5ecd2b45c6bebed4908f956fa0c436118",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP08_200_Algebra_Qual.pdf",
+  "extracted_markdown": "assets/attachments/SP08_200_Algebra_Qual_extracted.md",
+  "extracted_markdown_sha256": "3ada6df4c5574eac0ee6a94b8e312ea45f3e54b77873f2af0dab98eae9e78bfa",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP08_200_Algebra_Qual.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA25_-_Algebra_Qualifying_Exam.pdf",
+  "source_pdf_sha256": "ace39470bcd62fc04946e80c80c8d0bb9e8b62248bf985555f4ffdd6a45844cd",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA25%20-%20Algebra%20Qualifying%20Exam.pdf",
+  "extracted_markdown": "assets/attachments/FA25_-_Algebra_Qualifying_Exam_extracted.md",
+  "extracted_markdown_sha256": "5e86f3407f34363b81cd362c7edcbbdc85b209286d16f533454509333923ca61",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA25_-_Algebra_Qualifying_Exam.pdf --language en",
+  "generated_at": "2026-10-30"
+}
