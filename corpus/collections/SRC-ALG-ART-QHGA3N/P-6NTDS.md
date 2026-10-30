@@ -52,16 +52,39 @@ Theorems used in the proof:
 ::: {.solution}
 > Proof due to Paco Adajar.
 
-Since $Z(G)$ is a subgroup of $G$ and $\cardinality{G} = p^3$, by Lagrange's theorem, $\cardinality{Z(G)} \in \{1, p, p^2, p^3\}$.
+::: pf
 
-Since we stipulated that $G$ is nonabelian, $\cardinality{Z(G)} \ne p^3$.
-Also, since $G$ is a $p$-group, it has nontrivial center, so $\cardinality{Z(G)} \ne 1$.
-Finally, by the $G/Z(G)$ theorem, $\cardinality{Z(G)} \ne p^2$: if $\cardinality{Z(G)} = p^2$, then $\cardinality{G/Z(G)} = p$ and so $G/Z(G)$ would be cyclic, meaning that $G$ is abelian.
-Hence, $\cardinality{Z(G)} = p$.
+::: {.pf-step #s1}
+$\cardinality{Z(G)}=p$.
 
-Then, since $\cardinality{Z(G)} = p$, we have that $\cardinality{G/Z(G)} = p^2$, and so $G/Z(G)$ is abelian.
-Thus, $[G, G] \subseteq Z(G)$.
-Since $\cardinality{Z(G)} = p$, then $\cardinality{[G,G]} \in \{ 1, p\}$ again by Lagrange's theorem.
-If $\cardinality{[G,G]} = p$ then $[G,G] = Z(G)$ and we are done.
-And, indeed, we must have $\cardinality{[G,G]} = p$, because $G$ is nonabelian and so $\cardinality{[G,G]} \ne 1$.
+::: pf-proof
+By Lagrange's theorem, $\cardinality{Z(G)}\in\{1,p,p^2,p^3\}$. Since $G$ is nonabelian, $\cardinality{Z(G)}\ne p^3$. Since $G$ is a nontrivial $p$-group, its center is nontrivial, so $\cardinality{Z(G)}\ne1$. If $\cardinality{Z(G)}=p^2$, then $G/Z(G)$ has order $p$ and is cyclic, so $G$ is abelian by the $G/Z(G)$ theorem, a contradiction.
+:::
+
+:::
+
+::: {.pf-step #s2}
+$[G,G]\subseteq Z(G)$.
+
+::: pf-proof
+By step [](#s1){.pf-ref}, $\cardinality{G/Z(G)}=p^2$, so $G/Z(G)$ is abelian. Hence $[G,G]\le Z(G)$, since $[G,G]$ is the smallest normal subgroup with abelian quotient.
+:::
+
+:::
+
+::: {.pf-step #s3}
+$\boxed{[G,G]=Z(G)}$.
+
+::: pf-proof
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} and Lagrange's theorem, $\cardinality{[G,G]}\in\{1,p\}$. Since $G$ is nonabelian, $[G,G]\ne1$, so $\cardinality{[G,G]}=p=\cardinality{Z(G)}$, and the inclusion of step [](#s2){.pf-ref} is an equality.
+:::
+
+:::
+
+::: pf-qed
+Step [](#s3){.pf-ref} is the required equality.
+:::
+
+:::
+
 :::
