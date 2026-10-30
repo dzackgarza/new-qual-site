@@ -914,7 +914,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/holomorphic-functions/is-it-holomorphic.md
   - [x] wiki/complex-analysis/holomorphic-functions/power-series.md
   - [x] wiki/complex-analysis/holomorphic-functions/the-cauchy-riemann-equations.md
-  - [ ] wiki/complex-analysis/index.md
+  - [x] wiki/complex-analysis/index.md
   - [ ] wiki/complex-analysis/residues-and-contours/arc-estimates.md
   - [ ] wiki/complex-analysis/residues-and-contours/computing-residues.md
   - [ ] wiki/complex-analysis/residues-and-contours/index.md
