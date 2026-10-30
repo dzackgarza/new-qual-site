@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F12IN
 kind: problem
-title: $A \subseteq f^{-1}(f(A))$, with equality iff $f$ is injective
+title: $A\subseteq f^{-1}(f(A))$, with equality when $f$ is injective
 classification:
   areas:
   - prelim
