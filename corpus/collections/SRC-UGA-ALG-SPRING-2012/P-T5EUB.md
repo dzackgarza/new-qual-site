@@ -22,7 +22,7 @@ a.
 Show that $H$ is a subgroup of any Sylow $p\dash$subgroup of $G$.
 
 b.
-Show that $G$ contains a nonzero abelian normal subgroup of order divisible by $p$.
+Show that $G$ contains a nontrivial abelian normal subgroup of order divisible by $p$.
 :::
 
 ::: {.concept}
