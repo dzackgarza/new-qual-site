@@ -30,5 +30,5 @@ Let $R$ be a commutative ring with $1$.
 :::
 
 ::: {.remark}
-The characterizations of fields by $R[x]$ being a PID and by simplicity are [[E-XH2QU]] and [[E-HOJKE]].
+A commutative ring $R$ is a field if and only if [[E-XH2QU|$R[x]$ is a principal ideal domain]], and if and only if [[E-HOJKE|$R$ is a simple ring]].
 :::

@@ -569,8 +569,8 @@ mathematical correction under its own node, not under copy policy.
     - [x] FD-T7IQV proof mixes $G^i$ and $G_i$ for one series (NOT-3).
     - [x] CARD-04: D-RG5FO and D-H4TDM both define the Gram matrix of a bilinear form and its
       change of basis; merge, keeping distinct content. D-RG5FO shows "Suggest a slogan".
-    - [ ] PR-GEHJF remark: the sentence built around inserted card titles is ungrammatical.
-    **Acceptance:** each item read and repaired.
+    - [x] PR-GEHJF remark: the sentence built around inserted card titles is ungrammatical.
+    **Acceptance:** each item read and repaired. **Closed.**
 
   Round 4 (revision `e6068b271c`, algebraic-geometry wiki) injected the node below;
   `audited-deployment` needs it.
