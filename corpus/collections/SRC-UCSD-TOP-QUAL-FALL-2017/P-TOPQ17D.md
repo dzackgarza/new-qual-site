@@ -71,7 +71,7 @@ where $E_j=\ZZ/2$ if $j>0$ is even and $E_j=0$ otherwise.
 
 ::: pf-proof
 
-Substitute step [](#s3){.pf-ref} into step [](#s2){.pf-ref}>. For $n=1$, the $H_0(X)\otimes H_1(\RP^2)$ term gives $\ZZ/2$ while $H_1(X)=\ZZ/1=0$.
+Substitute step [](#s3){.pf-ref} into step [](#s2){.pf-ref}. For $n=1$, the $H_0(X)\otimes H_1(\RP^2)$ term gives $\ZZ/2$ while $H_1(X)=\ZZ/1=0$.
 
 :::
 
