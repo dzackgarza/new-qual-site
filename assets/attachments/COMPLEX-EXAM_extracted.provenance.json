@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/COMPLEX-EXAM.pdf",
+  "source_pdf_sha256": "7913c4eaa5a71685a6d15c5bf09e02d78637538b5fc84c51d53634c55deb4312",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/COMPLEX-EXAM.pdf",
+  "extracted_markdown": "assets/attachments/COMPLEX-EXAM_extracted.md",
+  "extracted_markdown_sha256": "cb0d3234d2617de1c7a345fcb04b152bcded54a65d6ad1b70aad7f282a7f9327",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/COMPLEX-EXAM.pdf --language en",
+  "generated_at": "2026-10-30"
+}

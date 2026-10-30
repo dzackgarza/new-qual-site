@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA21-Complex.pdf",
+  "source_pdf_sha256": "0d451bfef8fc9c04857430a9b4cbf6571eb383ed4cb12f5027a9282785e74c55",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Complex.pdf",
+  "extracted_markdown": "assets/attachments/FA21-Complex_extracted.md",
+  "extracted_markdown_sha256": "8c017e962f58b8f9d1f95b545b1eef542f7551030e58d59d34f1495861107a08",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA21-Complex.pdf --language en",
+  "generated_at": "2026-10-30"
+}

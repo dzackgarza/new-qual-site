@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/QFall2025.pdf",
+  "source_pdf_sha256": "bffaebe9fda386fbad131fd9cc21977754e7e9f6abda479d76562eaf7a4213bb",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/QFall2025.pdf",
+  "extracted_markdown": "assets/attachments/QFall2025_extracted.md",
+  "extracted_markdown_sha256": "57a84c16818d938d6dface8b4ef890b4a9cfc869a96f46f88276af8b2179f894",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/QFall2025.pdf --language en",
+  "generated_at": "2026-10-30"
+}

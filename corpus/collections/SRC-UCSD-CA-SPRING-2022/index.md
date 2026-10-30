@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP22-220ABC-Complex.pdf
+- assets/attachments/SP22-220ABC-Complex.pdf
 source:
   source_kind: university-exam
   institution: ucsd

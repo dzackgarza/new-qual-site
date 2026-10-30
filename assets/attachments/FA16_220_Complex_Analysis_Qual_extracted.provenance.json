@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA16_220_Complex_Analysis_Qual.pdf",
+  "source_pdf_sha256": "0d6cf1e2227b6b4f887b32313685cd6fe40f696fc9edadcc251cb33e9a0d12ff",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA16_220_Complex_Analysis_Qual.pdf",
+  "extracted_markdown": "assets/attachments/FA16_220_Complex_Analysis_Qual_extracted.md",
+  "extracted_markdown_sha256": "c3f52f83104b6754dfb1c45b7f20ddc19aaec83e5c2135ff12f5746f762d8c5e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA16_220_Complex_Analysis_Qual.pdf --language en",
+  "generated_at": "2026-10-30"
+}

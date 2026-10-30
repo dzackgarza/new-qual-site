@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/MATH-220-EXAM-Fall-2019.pdf",
+  "source_pdf_sha256": "82feb6325b0a7d17c4b78208db7d2053aa7906e7c0093e90fc285b536b4a372d",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/MATH-220-EXAM-Fall-2019.pdf",
+  "extracted_markdown": "assets/attachments/MATH-220-EXAM-Fall-2019_extracted.md",
+  "extracted_markdown_sha256": "19eb5e986bb23be76615fd5d63a8292f2244be4caf93c21fd43a3c4663d4deb4",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/MATH-220-EXAM-Fall-2019.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/QFall2025.pdf
+- assets/attachments/QFall2025.pdf
 source:
   source_kind: university-exam
   institution: ucsd

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP22-220ABC-Complex.pdf",
+  "source_pdf_sha256": "11b7d1fda9bd7539fa15a7108ec2bcb8cf03ad6b3ddcc83d672d4de77e003fda",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP22-220ABC-Complex.pdf",
+  "extracted_markdown": "assets/attachments/SP22-220ABC-Complex_extracted.md",
+  "extracted_markdown_sha256": "a5dfc5a94a2bacd1cff9c0a12ee822d2648b91269149ae23da42b14075834663",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP22-220ABC-Complex.pdf --language en",
+  "generated_at": "2026-10-30"
+}

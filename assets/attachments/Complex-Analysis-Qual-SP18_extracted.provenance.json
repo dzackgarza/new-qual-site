@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Complex-Analysis-Qual-SP18.pdf",
+  "source_pdf_sha256": "7deada057974435c461a8033974d9b4e3a8f77ddaf243e7f3eb9d50633105886",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Analysis-Qual-SP18.pdf",
+  "extracted_markdown": "assets/attachments/Complex-Analysis-Qual-SP18_extracted.md",
+  "extracted_markdown_sha256": "830faa29171e1d71abc12a1b50b26356d9633ce6dc05af20e6c0d35910ecf395",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Complex-Analysis-Qual-SP18.pdf --language en",
+  "generated_at": "2026-10-30"
+}

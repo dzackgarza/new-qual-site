@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Complex-Qual-Exam-Fall-13.pdf",
+  "source_pdf_sha256": "21d7b79bedb4fb33dd70145c30a858a1b07287e11180b894f986bbe0b9d5e4ee",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Qual-Exam-Fall-13.pdf",
+  "extracted_markdown": "assets/attachments/Complex-Qual-Exam-Fall-13_extracted.md",
+  "extracted_markdown_sha256": "5cbcfe3d1093a469acb352ae7cd5c062612c79cb00f9cbaa99fbbcdd39fe3750",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Complex-Qual-Exam-Fall-13.pdf --language en",
+  "generated_at": "2026-10-30"
+}

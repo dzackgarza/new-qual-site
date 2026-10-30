@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP24%20math%20220%20exam.pdf
+- assets/attachments/SP24_math_220_exam.pdf
 source:
   source_kind: university-exam
   institution: ucsd

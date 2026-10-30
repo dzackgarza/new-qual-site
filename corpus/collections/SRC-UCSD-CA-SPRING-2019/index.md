@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Qual-220-Spring-2019.pdf
+- assets/attachments/Complex-Qual-220-Spring-2019.pdf
 source:
   source_kind: university-exam
   institution: ucsd

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA22_COMPLEX_220ABC.pdf",
+  "source_pdf_sha256": "5f239d305eb87d995195b3f1170202756c4b1c44b40330302022ae7b3257a626",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_COMPLEX_220ABC.pdf",
+  "extracted_markdown": "assets/attachments/FA22_COMPLEX_220ABC_extracted.md",
+  "extracted_markdown_sha256": "8d0800187abf4869b8323aa1f3442a87dc3e9398d3e07e773a260ce3379ba172",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA22_COMPLEX_220ABC.pdf --language en",
+  "generated_at": "2026-10-30"
+}

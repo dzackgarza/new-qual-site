@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Complex-Qual-220-Spring-2019.pdf",
+  "source_pdf_sha256": "2f6ed00118ed057adbf524ea9dfb172b101ab2087d958dc5546c40f3f67c5366",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Qual-220-Spring-2019.pdf",
+  "extracted_markdown": "assets/attachments/Complex-Qual-220-Spring-2019_extracted.md",
+  "extracted_markdown_sha256": "f47ed5656814bfa3c66051a527b2493c77762332a407fa801ce3616fd204b14c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Complex-Qual-220-Spring-2019.pdf --language en",
+  "generated_at": "2026-10-30"
+}
