@@ -16,8 +16,9 @@ import yaml
 from pydantic import TypeAdapter
 
 from .emit import _collection_source_links, compile_tikzcd_block
-from .model import MARKDOWN, Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter, unread_math, validate_fenced_divs
+from .model import FRONT_MATTER, MARKDOWN, Card, CollectionCard, CompilationSource, ExamSource, HomeworkSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter, unread_math, validate_fenced_divs
 from .pandoc_batch import PandocFailure, PandocServer
+from .publication import PublicationManifest
 from .tex import mark_definienda
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
@@ -39,6 +40,10 @@ BAR_SIZES = frozenset({"\\left", "\\right", "\\middle"} | {f"\\{size}{side}" for
 MATH_SPAN = re.compile(r"\$\$(?P<display>.+?)\$\$|\$(?![\s$])(?P<inline>(?:[^$\\]|\\.)+?)(?<!\s)\$(?!\d)", re.DOTALL)
 CODE = re.compile(r"^(?P<fence>```+|~~~+).*?^(?P=fence)[ \t]*$|(?P<ticks>`+)(?!`).+?(?<!`)(?P=ticks)(?!`)", re.DOTALL | re.MULTILINE)
 TEX_TOKEN = re.compile(r"\\(?:[A-Za-z]+|.)|.", re.DOTALL)
+# A link target the wiki resolver reads as a card id: a bare name, no directory, in the
+# uppercase-prefix shape every corpus id has (`P-QJ7MD`, `E-SS1.EX-19`, `SRC-UCLA-RA-FALL-2010`).
+LINK_TARGET = re.compile(r"\[\[(?P<wiki>[^\]|#]+)|\]\((?P<markdown>[^)\s#]+)")
+CARD_ID_SHAPE = re.compile(r"^[A-Z][A-Z0-9]*-[A-Za-z0-9._-]+$")
 
 
 @dataclass(frozen=True)
@@ -182,6 +187,78 @@ def check_git_changes(changes: list[GitChange]) -> int:
         print("\n".join(errors), file=sys.stderr)
         return 1
     print(f"Card YAML and schema: {len(cards)} changed file(s) checked")
+    return 0
+
+
+def tree_sources(revision: str) -> dict[Path, str]:
+    """Every corpus, wiki and publication blob at one commit, read through one `git cat-file --batch`."""
+    listing = subprocess.run(["git", "ls-tree", "-r", "-z", revision, "--", "corpus/", "wiki/", "publications/"], check=True, stdout=subprocess.PIPE, text=True).stdout
+    entries = [(fields.split()[2], Path(name)) for fields, name in (record.split("\t", 1) for record in listing.split("\0") if record) if name.endswith((".md", ".yaml"))]
+    batch = subprocess.run(["git", "cat-file", "--batch"], input="".join(f"{oid}\n" for oid, _ in entries).encode(), check=True, stdout=subprocess.PIPE).stdout
+    sources: dict[Path, str] = {}
+    offset = 0
+    for _, path in entries:
+        header_end = batch.index(b"\n", offset)
+        size = int(batch[offset:header_end].split()[2])
+        sources[path] = batch[header_end + 1 : header_end + 1 + size].decode()
+        offset = header_end + 2 + size
+    return sources
+
+
+def dangling_references(revision: str) -> list[str]:
+    """References at one commit to a card id that no card at that commit carries.
+
+    The full build reports the same references (index.validate: relations and collection
+    members; emit._manifest_card: guide items; wiki.resolve_links: page links) after Pandoc
+    has read every card. Here only front matter is parsed, so a card deleted by a merge
+    is caught before the push instead of in the deploy.
+    """
+    sources = tree_sources(revision)
+    ids: set[str] = set()
+    referring: list[Path] = []
+    for path, text in sources.items():
+        if path.parts[0] != "corpus" or (match := FRONT_MATTER.match(text)) is None:
+            continue
+        # Only the id line is read from most headers, as `identity` does; a header that
+        # names other cards is validated whole. Other header defects are the diff check's.
+        lines = match["front"].splitlines()
+        ids.update(yaml.load(line, Loader=yaml.CSafeLoader)["id"] for line in lines if ID_FIELD.match(line))
+        if "kind: collection" in lines or any(line.startswith("relations:") and line != "relations: []" for line in lines):
+            referring.append(path)
+    page_stems = {path.stem.lower() for path in sources if path.parts[0] == "wiki"}
+    errors: list[str] = []
+    for path in referring:
+        try:
+            card = card_header(sources[path], path)
+        except ValueError as exc:
+            errors.append(str(exc))
+            continue
+        errors.extend(f"{path}: relation target {relation.target!r} has no card" for relation in card.relations if relation.target not in ids)
+        if isinstance(card, CollectionCard):
+            source = card.source
+            problems = source.problems if isinstance(source, (ExamSource, HomeworkSource, CompilationSource)) else []
+            sections = source.sections if isinstance(source, (TextbookSource, CompilationSource)) else []
+            errors.extend(f"{path}: lists {entry.id!r}, which has no card" for entry in [*problems, *(entry for section in sections for entry in section.problems)] if entry.id not in ids)
+    for path, text in sources.items():
+        if path.parts[0] == "publications":
+            manifest = PublicationManifest.model_validate(yaml.load(text, Loader=yaml.CSafeLoader))
+            errors.extend(f"{path}: {section.slug} names {item.ref!r}, which has no card" for section in manifest.sections for item in section.items if item.ref not in ids)
+        elif path.suffix == ".md":
+            for match in LINK_TARGET.finditer(text):
+                target = (match["wiki"] or match["markdown"]).strip()
+                if CARD_ID_SHAPE.match(target) and target not in ids and target.lower() not in page_stems:
+                    errors.append(f"{path}: links {target!r}, which has no card")
+    return errors
+
+
+def check_references(revisions: list[str]) -> int:
+    """Run `dangling_references` at each selected commit that no other selected commit descends from."""
+    tips = subprocess.run(["git", "merge-base", "--independent", *revisions], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
+    errors = [f"{tip[:12]} {error}" for tip in tips for error in dangling_references(tip)]
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+    print(f"Card references: {len(tips)} outgoing tip(s) resolve")
     return 0
 
 
@@ -369,14 +446,17 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "check-staged":
             return check_git_cards("index", ("--cached",))
         if args.command == "check-range":
-            return check_git_cards("HEAD", (args.base, "HEAD"))
+            return check_git_cards("HEAD", (args.base, "HEAD")) or check_references(["HEAD"])
         if args.command == "check-changes":
             if args.mode == "staged":
                 _refuse_secondary_worktrees()
             changes = [GitChange.model_validate_json(line) for line in sys.stdin]
             if any((change.version == "index") != (args.mode == "staged") for change in changes):
                 raise ValueError("Git blob versions must match the requested validation mode")
-            return check_git_changes(changes)
+            if args.mode == "staged":
+                return check_git_changes(changes)
+            # The shared hook's payload omits deletions, and the pushed tip is HEAD on main (QUAL-09).
+            return check_git_changes(changes) or check_references(["HEAD", *dict.fromkeys(change.version for change in changes)])
         if args.command in ("list", "unsolved", "sample"):
             if args.command == "sample" and args.count <= 0:
                 raise ValueError("sample count must be positive")

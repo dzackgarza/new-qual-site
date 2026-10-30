@@ -186,3 +186,33 @@ def test_shared_push_payload_validates_each_exact_candidate_commit(repo: Path) -
     assert result.returncode == 1
     assert "corpus/one card.md" in result.stderr
     assert "mapping values are not allowed" in result.stderr
+
+
+def test_push_rejects_a_deleted_card_that_is_still_referenced(repo: Path) -> None:
+    collection = (ROOT / "tests/fixtures/kinds/SRC-HW.md").read_text().replace("    term: spring\n", "    term: spring\n  problems:\n  - P-GONE\n")
+    (repo / "corpus/P-GONE.md").write_text(CARD.replace("PRB-INDEXP", "P-GONE"))
+    (repo / "corpus/SRC-HW.md").write_text(collection)
+    (repo / "wiki").mkdir()
+    (repo / "wiki/groups.md").write_text("---\ntitle: Groups\norder: 1\n---\n\nSee [[P-GONE]] and [[groups]].\n")
+    (repo / "publications").mkdir()
+    (repo / "publications/guide.yaml").write_text(
+        "schema: qual/publication@2\nid: GUIDE-ALGEBRA\nkind: study-guide\ntitle: Algebra\nlede: Groups.\nsections:\n"
+        "  - slug: groups\n    title: Groups\n    parent: GUIDE-ALGEBRA\n    lede: Groups.\n    items:\n      - ref: P-GONE\n"
+    )
+    git(repo, "add", "-A")
+    git(repo, "commit", "-qm", "reference the card")
+
+    def push() -> subprocess.CompletedProcess[str]:
+        # A deletion-only range gives the shared hook no changed card to send.
+        return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=repo, input="", capture_output=True, text=True)
+
+    assert push().returncode == 0
+    git(repo, "rm", "-q", "corpus/P-GONE.md")
+    git(repo, "commit", "-qm", "merge the card away")
+
+    result = push()
+
+    assert result.returncode == 1
+    for referrer in ("corpus/SRC-HW.md", "wiki/groups.md", "publications/guide.yaml"):
+        assert f"{referrer}: " in result.stderr
+    assert result.stderr.count("'P-GONE'") == 3

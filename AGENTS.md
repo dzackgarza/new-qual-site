@@ -830,7 +830,9 @@ The same changed-card validation obligation holds at each supported content rout
 - **Push.** The push hook validates the committed card blobs in the outgoing range, including cards
   committed without hooks, and runs the shared syntax checks. It calls `scripts/local-validate.py` with
   the exact blob identities, so content commits made through the hook-free authoring route are still
-  checked before upload.
+  checked before upload. At the outgoing tip it also rejects any collection member, relation target,
+  guide `ref`, or card-id link in a card or wiki page that names an id no card carries, so a
+  `CARD-04` merge that deletes a card must repoint every reference in the same push.
 
 - **Local diagnosis before a push.** `just test-push` is the explicit project diagnostic command: it
   runs the shared tier and then adds the extraction-residue check, the macro-mirror check, and the focused
