@@ -801,7 +801,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md
   - [x] wiki/algebraic-geometry/cohomology/families.md
   - [ ] wiki/algebraic-geometry/cohomology/index.md
-  - [ ] wiki/algebraic-geometry/cohomology/projective-schemes.md
+  - [x] wiki/algebraic-geometry/cohomology/projective-schemes.md
   - [ ] wiki/algebraic-geometry/cohomology/vanishing-and-duality.md
   - [ ] wiki/algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces.md
   - [ ] wiki/algebraic-geometry/curves-and-surfaces/curves-in-projective-space.md
