@@ -750,7 +750,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/groups/notation.md
   - [x] wiki/algebra/groups/quotients-and-products.md
   - [x] wiki/algebra/groups/series-and-solvability.md
-  - [ ] wiki/algebra/groups/the-standard-families.md
+  - [x] wiki/algebra/groups/the-standard-families.md
   - [ ] wiki/algebra/index.md
   - [ ] wiki/algebra/linear-algebra/determinants-and-eigenvalues.md
   - [ ] wiki/algebra/linear-algebra/find-the-canonical-form.md
