@@ -2,24 +2,23 @@
 schema: qual/card@1
 id: P-34ALC
 kind: problem
-title: Functions on the Riemann sphere with a simple pole at $2$ and a double pole
-  at infinity
+title: Meromorphic functions with a simple pole at $2$ and a double pole at $\infty$
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Meromorphic Functions
-  - Poles
-  - Riemann Surfaces
+    - Meromorphic Functions
+    - Poles
+    - Riemann Surfaces
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-25
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-25
 ---
 ::: {.problem}
-Find all functions on the Riemann sphere that have a simple pole at $z=2$ and a double pole at $z=\infty$, but are analytic elsewhere.
+Find all meromorphic functions that have a simple pole at $z=2$ and a double pole at $z=\infty$, but are analytic elsewhere. Prove that your list is complete.
 :::
 
 ::: {.solution}
