@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS18C
 kind: problem
-title: "Jordan form of a matrix with minimal polynomial t^p - 1"
+title: "Jordan form of a matrix with minimal polynomial $t^p - 1$"
 classification:
   areas:
   - algebra

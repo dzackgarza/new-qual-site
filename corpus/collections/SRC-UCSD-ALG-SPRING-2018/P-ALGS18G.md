@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS18G
 kind: problem
-title: "Galois theory of splitting fields of degree p+1 polynomials with specific Galois group structure"
+title: "Splitting field of degree $p(p+1)$ of an irreducible polynomial of degree $p+1$"
 classification:
   areas:
   - algebra

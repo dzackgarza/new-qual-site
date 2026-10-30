@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS18F
 kind: problem
-title: "Degree of irreducible factors of x^{p^n} - x over F_p divides n"
+title: "Degree of irreducible factors of $x^{p^n} - x$ over $\\FF_p$ divides $n$"
 classification:
   areas:
   - algebra
