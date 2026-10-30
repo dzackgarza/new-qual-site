@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find, with proof, all entire functions satisfying $\abs{ f ( z ) } \leq \sqrt { \abs{ z } } \mathrm { ~ f o r ~ } \abs{ z } > 1 0$
+Find, with proof, all entire functions satisfying $\abs{f(z)} \leq \sqrt{\abs{z}}$ for $\abs{z} > 10$.
 :::
 
 ::: {.solution}

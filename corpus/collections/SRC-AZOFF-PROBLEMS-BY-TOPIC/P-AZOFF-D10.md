@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f : \CC \to \CC$ is entire and bounded.
-Use Cauchy’s formula to prove that $f ^ { \prime }$ is identically zero and hence that $f$ is constant.
+Suppose $f \colon \CC \to \CC$ is entire and bounded.
+Use Cauchy’s formula to prove that $f'$ is identically zero and hence that $f$ is constant.
 This is Liouville’s Theorem.
 :::
 

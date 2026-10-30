@@ -37,11 +37,9 @@ audit:
 
 ::: {.problem}
 Suppose that $f$ is a continuous function on $\RR$ which vanishes outside some finite interval and for each $z \in \CC$ define
-
 $$
-g ( z ) = \int _ { - \infty } ^ { \infty } f ( t ) \exp ( - i z t ) d t .
+g(z) = \int_{-\infty}^{\infty} f(t) \exp(-izt)\, dt.
 $$
-
 Show that $g$ is entire.
 :::
 

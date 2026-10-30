@@ -30,13 +30,13 @@ audit:
 Suppose $f$ is analytic on the open unit disk.
 Determine, with proof, which of the following are possible.
 
-a) $\textstyle f ( { \frac { 1 } { n } } ) = ( - 1 ) ^ { n }$ for each integer $n > 1$
+a) $f\left(\frac{1}{n}\right) = (-1)^{n}$ for each integer $n > 1$.
 
-b) $\begin{array} { r } { f ( \frac { 1 } { n } ) = \exp ( - n ) } \end{array}$ for each even integer $n > 1$ while $\begin{array} { r } { f ( \frac { 1 } { n } ) = 0 } \end{array}$ for each odd integer $n > 1$
+b) $f\left(\frac{1}{n}\right) = \exp(-n)$ for each even integer $n > 1$ while $f\left(\frac{1}{n}\right) = 0$ for each odd integer $n > 1$.
 
-c) $\begin{array} { r } { f ( \frac { 1 } { n ^ { 2 } } ) = \frac { 1 } { n } } \end{array}$ for each integer $n > 1$
+c) $f\left(\frac{1}{n^{2}}\right) = \frac{1}{n}$ for each integer $n > 1$.
 
-d) $\begin{array} { r } { f ( \frac { 1 } { n } ) = \frac { n - 2 } { n - 1 } } \end{array}$ for each integer $n > 1$
+d) $f\left(\frac{1}{n}\right) = \frac{n - 2}{n - 1}$ for each integer $n > 1$.
 :::
 
 ::: {.solution}

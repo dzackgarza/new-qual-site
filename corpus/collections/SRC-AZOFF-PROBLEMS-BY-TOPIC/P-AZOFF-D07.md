@@ -40,7 +40,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f : \CC \to \CC$ is entire and $\abs{ f ( z ) } \leq \abs{ z } ^ { \frac { 1 } { 2 } }$ whenever $\abs{ z } > 1 0$ . Prove that $f$ is constant.
+Suppose $f \colon \CC \to \CC$ is entire and $\abs{f(z)} \leq \abs{z}^{\frac{1}{2}}$ whenever $\abs{z} > 10$. Prove that $f$ is constant.
 :::
 
 ::: {.remark title="Variations"}

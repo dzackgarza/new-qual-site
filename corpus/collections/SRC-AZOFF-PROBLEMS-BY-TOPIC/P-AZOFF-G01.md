@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $\textstyle \int _ { 0 } ^ { \infty } { \frac { d x } { ( 1 + x ^ { 2 } ) ( 1 + 9 x ^ { 2 } ) } }$
+Calculate $\displaystyle \int_{0}^{\infty} \frac{dx}{(1 + x^{2})(1 + 9x^{2})}$.
 :::
 
 ::: {.solution}

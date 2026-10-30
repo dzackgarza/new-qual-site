@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \sin x } { x ( x ^ { 2 } + 1 ) } } d x$
+Evaluate $\displaystyle \int_{0}^{\infty} \frac{\sin x}{x(x^{2} + 1)}\, dx$.
 :::
 
 ::: {.solution}

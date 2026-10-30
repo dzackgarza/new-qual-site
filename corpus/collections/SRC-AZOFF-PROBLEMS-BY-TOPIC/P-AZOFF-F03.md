@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the Laurent expansions of $\frac { z + 1 } { z ( z - 1 ) ^ { 2 } }$ about
+Find the Laurent expansions of $\frac{z + 1}{z(z - 1)^{2}}$ about
 
 a) $z = 0$
 

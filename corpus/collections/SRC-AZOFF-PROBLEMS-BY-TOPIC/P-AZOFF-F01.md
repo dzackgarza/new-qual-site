@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the Laurent expansions of $\textstyle { \frac { z + 1 } { z ( z - 1 ) } }$ about
+Find the Laurent expansions of $\frac{z + 1}{z(z - 1)}$ about
 
 a) $z = 0$
 

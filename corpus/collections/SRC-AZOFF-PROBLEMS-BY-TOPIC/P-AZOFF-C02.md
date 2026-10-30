@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Exhibit a conformal map from the strip $\{ z \in \CC : 0 < \operatorname { I m } ( z ) < 1 \}$ onto the open unit disk.
+Exhibit a conformal map from the strip $\{ z \in \CC : 0 < \Im(z) < 1 \}$ onto the open unit disk.
 :::
 
 ::: {.solution}

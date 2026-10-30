@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \sqrt { x } } { ( x + 1 ) ^ { 2 } } } d x$
+Evaluate $\displaystyle \int_{0}^{\infty} \frac{\sqrt{x}}{(x + 1)^{2}}\, dx$.
 :::
 
 ::: {.solution}

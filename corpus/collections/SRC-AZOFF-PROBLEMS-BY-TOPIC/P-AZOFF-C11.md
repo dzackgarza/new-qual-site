@@ -32,11 +32,9 @@ audit:
 
 ::: {.problem}
 Find a bijective conformal map from
-
 $$
-G : = \{ z \in \CC : \abs{ z - 1 } < { \sqrt { 2 } } , ~ \abs{ z + 1 } < { \sqrt { 2 } } \} ~ \backslash ~ [ 0 , i )
+G := \{ z \in \CC : \abs{z - 1} < \sqrt{2},\ \abs{z + 1} < \sqrt{2} \} \setminus [0, i)
 $$
-
 onto the open upper half plane.
 :::
 

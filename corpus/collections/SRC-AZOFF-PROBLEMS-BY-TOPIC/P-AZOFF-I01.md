@@ -29,18 +29,17 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2012, Problem $\# 7 ]$ Write $\DD : = \{ z \in \CC : \abs{ z } < 1 \}$ for the open unit disk.
-Suppose $f : \DD \to \DD$ is analytic, and admits a continuous extension $\widetilde { f } : \overline { { \DD } } \to \overline { { \DD } }$ such that $\abs{ f ( z ) } = 1$ whenever $\abs{ z } = 1$ .
+[Fall 2012, Problem \#7] Write $\DD := \{ z \in \CC : \abs{z} < 1 \}$ for the open unit disk.
+Suppose $f \colon \DD \to \DD$ is analytic, and admits a continuous extension $\widetilde{f} \colon \overline{\DD} \to \overline{\DD}$ such that $\abs{f(z)} = 1$ whenever $\abs{z} = 1$.
 
 a) Prove that $f$ is a rational function.
 
-b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^n$ for some $\lambda \in \CC$ of absolute value 1 and some natural number $n$ .
+b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^{n}$ for some $\lambda \in \CC$ of absolute value $1$ and some natural number $n$.
 
-c) More generally, suppose that $a _ { 1 } , \dots , a _ { n } \in \DD$ are the zeros of $f$, listed with multiplicity.
+c) More generally, suppose that $a_{1}, \ldots, a_{n} \in \DD$ are the zeros of $f$, listed with multiplicity.
 Prove that
-
 $$
-f ( z ) = \lambda \prod _ { j = 1 } ^ { n } { \frac { z - a _ { j } } { 1 - { \overline { { a } } } _ { j } z } } , \quad \abs{ \lambda } = 1 .
+f(z) = \lambda \prod_{j=1}^{n} \frac{z - a_{j}}{1 - \overline{a}_{j} z}, \quad \abs{\lambda} = 1.
 $$
 :::
 

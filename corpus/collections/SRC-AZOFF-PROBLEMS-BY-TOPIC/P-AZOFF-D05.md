@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is no sequence of polynomials that converge uniformly to the function $\textstyle f ( z ) = { \frac { 1 } { z } }$ on the unit circle.
+Prove that there is no sequence of polynomials that converge uniformly to the function $f(z) = \frac{1}{z}$ on the unit circle.
 :::
 
 ::: {.solution}

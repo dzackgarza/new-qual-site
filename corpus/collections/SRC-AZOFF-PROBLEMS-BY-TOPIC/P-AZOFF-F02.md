@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the Laurent expansions of $\exp ( \textstyle { \frac { 1 } { z } } )$ and $\cos { \left( { \frac { 1 } { z } } \right) }$ about the origin.
+Find the Laurent expansions of $\exp\left(\frac{1}{z}\right)$ and $\cos\left(\frac{1}{z}\right)$ about the origin.
 :::
 
 ::: {.solution}

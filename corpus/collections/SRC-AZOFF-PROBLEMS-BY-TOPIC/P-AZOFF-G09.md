@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\textstyle \int _ { - \infty } ^ { \infty } { \frac { 1 + x ^ { 2 } } { 1 + x ^ { 4 } } } d x$
+Evaluate $\displaystyle \int_{-\infty}^{\infty} \frac{1 + x^{2}}{1 + x^{4}}\, dx$.
 :::
 
 ::: {.solution}
