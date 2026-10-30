@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS05M
 kind: problem
-title: "Infinitely many maximal right ideals in n × n matrices over Q"
+title: "Infinitely many maximal right ideals in $M_n(\\QQ)$"
 classification:
   areas:
   - algebra

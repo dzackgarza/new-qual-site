@@ -394,7 +394,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-ALG-REVIEW-GROUPS
   - [x] SRC-UCSD-ALG-REVIEW-RINGS-MODULES
   - [x] SRC-UCSD-ALG-SPRING-2004
-  - [ ] SRC-UCSD-ALG-SPRING-2005
+  - [x] SRC-UCSD-ALG-SPRING-2005
   - [ ] SRC-UCSD-ALG-SPRING-2006
   - [ ] SRC-UCSD-ALG-SPRING-2007
   - [ ] SRC-UCSD-ALG-SPRING-2008

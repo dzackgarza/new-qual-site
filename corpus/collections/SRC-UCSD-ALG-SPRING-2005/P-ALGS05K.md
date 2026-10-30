@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS05K
 kind: problem
-title: "In a ring where every element satisfies x^n = x, every prime ideal is maximal"
+title: "In a ring where every element satisfies $x^{n(x)} = x$, every prime ideal is maximal"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS05A
 kind: problem
-title: "Properties of the symmetrization map T(X) = (X - X^T)/2 on M_3"
+title: "The skew-symmetric part map $T(X) = \\tfrac{1}{2}(X - X^T)$ on $M_n(\\RR)$"
 classification:
   areas:
   - algebra
