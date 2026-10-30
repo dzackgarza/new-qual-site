@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let Let $f:{\CC}\rightarrow {\CC}$ be an entire function.
+(a) Let $f:{\CC}\rightarrow {\CC}$ be an entire function.
 Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $\abs{z}>R$ the inequality $$\abs{f(z)} \leq L \abs{z}^m$$ holds.
 Prove that $f$ is a polynomial of degree $\leq m$.
 

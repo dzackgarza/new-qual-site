@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) $f: D\rightarrow {\CC}$ be a continuous function, where $D\subset {\CC}$ is a domain.Let $\alpha:[a,b]\rightarrow D$ be a smooth curve.
+(a) Let $f: D\rightarrow {\CC}$ be a continuous function, where $D\subset {\CC}$ is a domain. Let $\alpha:[a,b]\rightarrow D$ be a smooth curve.
 Give a precise definition of the *complex line integral* $$\int_{\alpha} f.$$
 
 (b) Assume that there exists a constant $M$ such that $\abs{f(\tau)}\leq M$ for all $\tau\in \mbox{\textrm Image}(\alpha$). Prove that $$\abs{ \int_{\alpha} f }\leq M \times \mbox{\textrm length}(\alpha).$$
