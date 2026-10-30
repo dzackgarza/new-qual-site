@@ -30,6 +30,8 @@ Let $k$ be a field.
 [Note: This is very closely related to a homework problem. Do not use the result of that problem unless you are planning to reprove it.]
 :::
 
+:::
+
 ::: {.solution}
 Write
 $$
@@ -70,5 +72,4 @@ Thus every equivariant map $\CC[M_1]\to S^{(1,1)}$ is zero, and none is surjecti
 
 :::
 
-:::
 :::
