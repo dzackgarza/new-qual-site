@@ -558,7 +558,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-SUMMER-2015
   - [x] SRC-UGA-ALG-FALL-2012
   - [x] SRC-UGA-ALG-FALL-2013
-  - [ ] SRC-UGA-ALG-FALL-2014
+  - [x] SRC-UGA-ALG-FALL-2014
   - [ ] SRC-UGA-ALG-FALL-2015
   - [ ] SRC-UGA-ALG-FALL-2016
   - [ ] SRC-UGA-ALG-FALL-2017
