@@ -19,7 +19,7 @@ source:
   - P-UGAP08F-01
   - P-UGAP08F-02
   - id: P-UGAP13F-06
-    comment: Fall 2008 Problem 3; repeated exactly as Fall 2013 Problem 6
+    comment: 'Fall 2008 Problem 3; repeated as Fall 2013 Problem 6, whose part (b) asks to prove or disprove that the sequence is Cauchy where Fall 2008 asks to prove it'
   - P-UGAP08F-04
   - P-UGAP08F-05
   - P-UGAP08F-06
