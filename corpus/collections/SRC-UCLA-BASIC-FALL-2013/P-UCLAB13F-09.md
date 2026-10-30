@@ -3,7 +3,10 @@ schema: qual/card@1
 id: P-UCLAB13F-09
 kind: problem
 title: An annihilating polynomial of degree at most the dimension
-classification: {areas: [prelim], topics: []}
+classification:
+  areas:
+  - prelim
+  topics: []
 relations: []
 review: draft
 audit:
@@ -11,10 +14,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against Problem 9 of the retained UCLA Basic Examination, Fall 2013.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The source asks for 'a polynomial' of degree at most d, which the zero polynomial
+    satisfies trivially. The statement now asks for a nonzero polynomial.
 ---
 
 ::: {.problem}
-Let $A$ be an endomorphism of a vector space $V$ of dimension $d$ over a field $F$. Show from first principles, without using Jordan form or the Cayley–Hamilton theorem, that $A$ satisfies a polynomial $P(X)\in F[X]$ of degree at most $d$.
+Let $A$ be an endomorphism of a vector space $V$ of dimension $d$ over a field $F$. Show from first principles, without using Jordan form or the Cayley–Hamilton theorem, that $A$ satisfies a nonzero polynomial $P(X)\in F[X]$ of degree at most $d$.
 :::
 
 ::: {.solution}
