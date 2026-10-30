@@ -202,7 +202,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-DUKE-BASIC-ANALYSIS-WINTER-2014
   - [x] SRC-EMORY-QUAL-PROBLEMS
   - [x] SRC-FIELDS-HOMEWORK-1
-  - [ ] SRC-GATHMANN-AG
+  - [x] SRC-GATHMANN-AG
   - [ ] SRC-GRE-GR8767-CALCULUS-SELECTION
   - [ ] SRC-GRE-MATH-SUBJECT
   - [ ] SRC-HARVARD-MATH213A-2017
@@ -692,7 +692,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UNL-QUAL-852-970-JANUARY-2006
   - [x] SRC-UNL-QUAL-970-953-JANUARY-2004
   - [x] SRC-UNL-QUAL-JUNE-2004-970-852
-  - [ ] SRC-UNL-RA-SPRING-2019
+  - [x] SRC-UNL-RA-SPRING-2019
   - [ ] SRC-UNL-RA-SUMMER-2016
   - [ ] SRC-UNL-RA-SUMMER-2018
   - [ ] SRC-UNSORTED-ALGEBRA
