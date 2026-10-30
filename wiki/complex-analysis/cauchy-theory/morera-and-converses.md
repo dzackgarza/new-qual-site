@@ -42,4 +42,4 @@ Goursat's theorem proves Cauchy's theorem for triangles and rectangles with no c
 
 ## Problems
 
-[[E-WIANB]]
+[[E-QO2S7]]
