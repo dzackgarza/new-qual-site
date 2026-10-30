@@ -5,17 +5,18 @@ kind: problem
 title: Cayley-Hamilton theorem
 classification:
   areas:
-  - algebra
+    - algebra
+    - applied-algebra
   topics:
-  - Minimal and Characteristic Polynomials
-  - Jordan Canonical Form
-  - Linear Algebra
+    - Minimal and Characteristic Polynomials
+    - Jordan Canonical Form
+    - Linear Algebra
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-29
 ---
 ::: {.problem}
 Let $T:V\to V$ be a linear transformation where $V$ is a finite-dimensional vector space over $\CC$.
@@ -87,4 +88,11 @@ Step [](#s4){.pf-ref} proves the Cayley–Hamilton theorem.
 
 :::
 
+:::
+
+::: {.remark title="Variations"}
+The same theorem may be asked with the Schur decomposition in place of canonical forms.
+Write $U^*AU=T$ with $U$ unitary and $T$ upper triangular with diagonal $\lambda_1,\ldots,\lambda_n$, so $p(x)=\prod_j(x-\lambda_j)$.
+With $V_j=\operatorname{span}\{e_1,\ldots,e_j\}$, upper triangularity gives $(T-\lambda_jI)V_j\subseteq V_{j-1}$, so $\prod_{j}(T-\lambda_jI)$ maps $\CC^n=V_n$ to $V_0=0$.
+Hence $p(T)=0$, and $p(A)=U\,p(T)\,U^*=0$.
 :::

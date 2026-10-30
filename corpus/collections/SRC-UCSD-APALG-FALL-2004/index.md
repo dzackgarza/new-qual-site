@@ -17,7 +17,7 @@ source:
   institution: ucsd
   area: applied-algebra
   problems:
-  - P-APAF04A
+  - P-HAEQ7
   - P-APAF04B
   - P-APAS04C
   - P-APAF04D
