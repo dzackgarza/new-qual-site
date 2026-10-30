@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF10F
 kind: problem
-title: "Splitting fields and degrees of x^6 + 1 and x^6 - 1 over Q"
+title: "Splitting fields and degrees of $x^6+1$ and $x^6-1$ over $\\QQ$"
 classification:
   areas:
   - algebra

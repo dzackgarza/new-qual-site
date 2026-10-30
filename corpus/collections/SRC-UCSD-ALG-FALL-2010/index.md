@@ -19,7 +19,7 @@ source:
   problems:
   - P-ALGF10A
   - P-ALGF10B
-  - P-ALGF10C
+  - P-AMD-ARC4WWRO
   - P-ALGF10D
   - P-ALGF10E
   - P-ALGF10F
