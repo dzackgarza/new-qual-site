@@ -30,7 +30,7 @@ Express $z^3$ and all cube roots of $z$ in the form $a+bi$.
 
 The modulus and argument of
 $$
-z=1+\sqrt3,i
+z=1+\sqrt3\,i
 $$
 are
 $$
@@ -103,14 +103,14 @@ $$
 Equivalently, a direct calculation gives
 $$
 \begin{aligned}
-(1+\sqrt3,i)^2
+(1+\sqrt3\,i)^2
 &=
--2+2\sqrt3,i,
+-2+2\sqrt3\,i,
 \end{aligned}
 $$
 and multiplying once more by
 $$
-1+\sqrt3,i
+1+\sqrt3\,i
 $$
 gives $-8$.
 

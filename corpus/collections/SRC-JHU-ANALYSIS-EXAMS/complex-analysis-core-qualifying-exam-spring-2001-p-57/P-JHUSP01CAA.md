@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 1. Suppose that $f , g$ are entire holomorphic functions with $\abs{ f ( z ) } \leq \abs{ g ( z ) }$ for all $z \in \CC$ . Prove that there is a constant $c \in \CC$ so that $f = c g$ ·
+Suppose that $f, g$ are entire holomorphic functions with $\abs{ f ( z ) } \leq \abs{ g ( z ) }$ for all $z \in \CC$ . Prove that there is a constant $c \in \CC$ so that $f = cg$.
 :::
 
 ::: {.solution}
