@@ -6,7 +6,8 @@ title: Quadratic convergence of Newton's method
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -26,15 +27,15 @@ audit:
 ::: {.problem}
 Suppose that $f$ is a smooth real function defined for all real $x$, such that $\abs{f'(x)} \geq \epsilon > 0$ and $\abs{f''(x)} \leq M > 0$ for all $x$.
 
-(1) Show that $f$ has a unique zero $z$.
+(a) Show that $f$ has a unique zero $z$.
 
-(2) Given $x_{0}$, define a sequence by $x_{n+1} = x_{n} - f(x_{n})/f'(x_{n})$. Show that
+(b) Given $x_{0}$, define a sequence by $x_{n+1} = x_{n} - f(x_{n})/f'(x_{n})$. Show that
 $$
 \abs{x_{n+1} - z} \leq \abs{x_{n} - z}^{2} M/\epsilon.
 $$
 (Hint: $f(x_n) = \int_z^{x_n} f'(x)\,dx$.)
 
-(3) Show that the sequence $\{x_{n}\}$ converges to the zero $z$ of $f$ provided that $\abs{f(x_0)} < \epsilon^2/M$.
+(c) Show that the sequence $\{x_{n}\}$ converges to the zero $z$ of $f$ provided that $\abs{f(x_0)} < \epsilon^2/M$.
 :::
 
 ::: {.solution}
@@ -133,7 +134,7 @@ of $f$.
 
 ::: pf-proof
 
-Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. This proves part (1).
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. This proves part (a).
 
 :::
 
@@ -298,7 +299,7 @@ $$
 \leq
 \frac{M}{\varepsilon}.
 $$
-This proves part (2).
+This proves part (b).
 
 :::
 
@@ -376,7 +377,7 @@ $$
 
 ::: {.pf-step #s12}
 
-Under the hypothesis of part (3),
+Under the hypothesis of part (c),
 $$
 x_n\longrightarrow z.
 $$
@@ -398,7 +399,7 @@ $$
 \frac{\varepsilon}{M}q_n
 \longrightarrow0.
 $$
-This proves part (3).
+This proves part (c).
 
 :::
 
@@ -406,8 +407,8 @@ This proves part (3).
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} proves part (1), step [](#s9){.pf-ref} proves part (2), and step [](#s12){.pf-ref} proves
-part (3).
+Step [](#s4){.pf-ref} proves part (a), step [](#s9){.pf-ref} proves part (b), and step [](#s12){.pf-ref} proves
+part (c).
 
 :::
 

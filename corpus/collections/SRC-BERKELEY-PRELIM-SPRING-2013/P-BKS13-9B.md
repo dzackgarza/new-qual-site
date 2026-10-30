@@ -6,7 +6,8 @@ title: Squares in finite fields; every element is a sum of two squares
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-If F is a finite field, show that more than half the elements of F are squares. Show that every element is the sum of 2 squares.
+If $F$ is a finite field, show that more than half the elements of $F$ are squares. Show that every element is the sum of $2$ squares.
 :::
 
 ::: {.solution}

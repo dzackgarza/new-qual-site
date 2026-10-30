@@ -6,7 +6,8 @@ title: Poisson kernel limit $\int f(t)\,\epsilon/(\epsilon^2+t^2)\,dt$ as $\epsi
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

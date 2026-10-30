@@ -6,7 +6,8 @@ title: Triple orthogonal complements in inner product spaces
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

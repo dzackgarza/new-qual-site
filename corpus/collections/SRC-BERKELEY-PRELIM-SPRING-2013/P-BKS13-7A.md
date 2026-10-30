@@ -6,7 +6,8 @@ title: Complex matrices of finite order are diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

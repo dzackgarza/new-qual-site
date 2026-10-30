@@ -6,7 +6,8 @@ title: A trigonometric polynomial exceeds its constant term in modulus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

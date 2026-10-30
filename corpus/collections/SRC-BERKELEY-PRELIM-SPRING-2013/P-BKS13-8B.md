@@ -6,7 +6,8 @@ title: Average trace of permutation matrices in $S_n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

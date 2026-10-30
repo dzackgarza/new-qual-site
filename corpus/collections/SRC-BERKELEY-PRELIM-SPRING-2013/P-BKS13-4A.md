@@ -6,7 +6,8 @@ title: Contour integral of $\cosh(\pi z)/(z(z^2+1))$ over $\abs{z}=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

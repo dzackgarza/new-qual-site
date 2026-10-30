@@ -6,7 +6,8 @@ title: Convergence of $\int_0^\infty x\exp(-x^6\sin^2 x)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

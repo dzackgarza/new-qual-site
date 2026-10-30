@@ -6,7 +6,8 @@ title: Cayley transform between orthogonal and skew-symmetric matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -26,17 +27,19 @@ audit:
 ::: {.problem}
 Prove the following three statements about real $n\times n$ matrices.
 
-1. If $A$ is an orthogonal matrix whose eigenvalues are all different from $-1$, then $I+A$ is nonsingular and
+(a) If $A$ is an orthogonal matrix whose eigenvalues are all different from $-1$, then $I+A$ is nonsingular and
 $$
 S=(I-A)(I+A)^{-1}
 $$
 is skew-symmetric.
-2. If $S$ is a skew-symmetric matrix, then
+
+(b) If $S$ is a skew-symmetric matrix, then
 $$
 A=(I-S)(I+S)^{-1}
 $$
 is an orthogonal matrix with no eigenvalue equal to $-1$.
-3. The correspondence (called the Cayley transform) $A\leftrightarrow S$ from Parts 1 and 2 is one-to-one.
+
+(c) The correspondence (called the Cayley transform) $A\leftrightarrow S$ from parts (a) and (b) is one-to-one.
 :::
 
 ::: {.solution}
@@ -45,7 +48,7 @@ is an orthogonal matrix with no eigenvalue equal to $-1$.
 
 ::: {.pf-step #s1}
 
-Under the hypotheses of part 1, the matrix $I+A$ is nonsingular.
+Under the hypotheses of part (a), the matrix $I+A$ is nonsingular.
 
 ::: pf-proof
 
@@ -127,7 +130,7 @@ S^T
 =
 -S.
 $$
-This proves part 1.
+This proves part (a).
 
 :::
 
@@ -234,7 +237,7 @@ I+(I-S)(I+S)^{-1}\\
 \end{aligned}
 $$
 Step [](#s3){.pf-ref} shows that $I+S$ is invertible, so $I+A$ is invertible.
-Therefore $-1$ is not an eigenvalue of $A$. This completes part 2.
+Therefore $-1$ is not an eigenvalue of $A$. This completes part (b).
 
 :::
 
@@ -242,7 +245,7 @@ Therefore $-1$ is not an eigenvalue of $A$. This completes part 2.
 
 ::: {.pf-step #s6}
 
-Starting from an orthogonal $A$ as in part 1, applying the second
+Starting from an orthogonal $A$ as in part (a), applying the second
 formula to its Cayley transform recovers $A$.
 
 ::: pf-proof
@@ -285,7 +288,7 @@ $$
 ::: {.pf-step #s7}
 
 Starting from a skew-symmetric $S$, applying the first formula to
-the matrix $A$ from part 2 recovers $S$.
+the matrix $A$ from part (b) recovers $S$.
 
 ::: pf-proof
 
@@ -319,7 +322,7 @@ $$
 ::: {.pf-step #s8}
 
 The two Cayley-transform formulas define inverse bijections between
-the matrices in parts 1 and 2.
+the matrices in parts (a) and (b).
 
 ::: pf-proof
 
@@ -333,8 +336,8 @@ two stated classes of matrices.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part 1, steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part 2, and step
-[](#s8){.pf-ref} proves part 3.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), and step
+[](#s8){.pf-ref} proves part (c).
 
 :::
 

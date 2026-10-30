@@ -6,7 +6,8 @@ title: Fourier series solution of $f''+kf=g$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

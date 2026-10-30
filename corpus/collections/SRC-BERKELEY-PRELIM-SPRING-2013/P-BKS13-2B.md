@@ -6,7 +6,8 @@ title: Nested intersections of closed connected subsets of a compact metric spac
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

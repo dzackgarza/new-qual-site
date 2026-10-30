@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^1\arctan x\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

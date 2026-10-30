@@ -6,7 +6,8 @@ title: Rationality of $\log_m n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

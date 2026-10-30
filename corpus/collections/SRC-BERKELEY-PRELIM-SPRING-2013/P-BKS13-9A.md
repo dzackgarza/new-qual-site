@@ -6,7 +6,8 @@ title: Finite-dimensional domains over a field are fields
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let K be a field. Let R be an integral domain which contains K and is finite-dimensional (as a vector space) over K. Prove that R is a field.
+Let $K$ be a field. Let $R$ be an integral domain which contains $K$ and is finite-dimensional (as a vector space) over $K$. Prove that $R$ is a field.
 :::
 
 ::: {.solution}
