@@ -38,7 +38,6 @@ source:
   - id: E-7ZCKU
   - id: E-AHBVF
   - id: E-AIQEU
-  - id: E-AKF2O
   - id: E-ALB7C
   - id: E-AOQLK
   - id: E-AXBZQ
