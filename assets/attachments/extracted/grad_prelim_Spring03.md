@@ -22,10 +22,10 @@ Here $I_k$ is the $k \times k$ identity matrix.
 
 #5. Prove that any linear function $L : \mathbb { R } ^ { 2 } \to \mathbb { R } ^ { 2 }$ is continuous.
 
-#6. Does there exist a divergent series $\textstyle \sum _ { i = 0 } ^ { \infty } a _ { i }$ of positive real numbers $\pmb { a _ { i } }$ such that $\sum _ { i = 0 } ^ { \infty } \sqrt { a _ { i } }$ converges?
+#6. Does there exist a divergent series $\textstyle \sum _ { i = 0 } ^ { \infty } a _ { i }$ of positive real numbers $a_i$ such that $\sum _ { i = 0 } ^ { \infty } \sqrt { a _ { i } }$ converges?
 If so, give an example; if not, prove it.
 
-#7. (a) Let f be a real-valued function defined on Rn.
+#7. (a) Let $f$ be a real-valued function defined on $\mathbb{R}^n$.
 Define differentiability of $f$ at a point $p$.
 
 (b) Show that the function $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ defined by

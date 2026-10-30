@@ -15,7 +15,7 @@ R stands for the real numbers.
 
 6. Find the Maclaurin series of the function $f ( x ) = \arctan x$ and use an appropriate Maclaurin polynomial to approximate $\arctan .01$ with an error of less than $1 0 ^ { - 5 }$.
 
-7. Suppose $\left( f _ { n } \right)$ is a sequence of bounded functions taking R into R which converge uniformly to a function $g$. Prove that there is a number $M > 0$ satisfying $| f _ { n } ( x ) | \leq M$ for all natural numbers $n$ and all real numbers $x$.
+7. Suppose $\left( f _ { n } \right)$ is a sequence of bounded functions taking $\mathbb{R}$ into $\mathbb{R}$ which converge uniformly to a function $g$. Prove that there is a number $M > 0$ satisfying $| f _ { n } ( x ) | \leq M$ for all natural numbers $n$ and all real numbers $x$.
 
 8. Suppose $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ has continuous partial derivatives at $(0, 0)$. Prove that $f$ has directional derivatives in every direction at the origin.
 
