@@ -86,7 +86,12 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 - Surgery on manifolds
 - Simplicial complexes, such as the following:
 
-  ![A small simplicial complex](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
+  ![A simplicial complex X on vertices 1, 2, 3, 4: the shaded triangle 234 and the edges 12 and 13](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
+
+  As a list of simplices,
+  $$
+  X = \theset{\theset1,\theset2,\theset3,\theset4,\ \theset{1,2},\theset{1,3},\theset{2,3},\theset{2,4},\theset{3,4},\ \theset{2,3,4}}.
+  $$
 
 :::
 
