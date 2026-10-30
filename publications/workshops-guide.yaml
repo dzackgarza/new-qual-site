@@ -3,15 +3,13 @@ id: GUIDE-WORKSHOPS
 kind: study-guide
 title: Workshops
 lede: >-
-  Problems from the qualifying-exam workshops in algebra, real analysis, complex analysis,
-  and topology, listed in the order of the workshop sessions.
+  Problems from the qualifying-exam workshops in algebra, real analysis, complex analysis, and topology, listed in the order of the workshop sessions.
 sections:
   - slug: algebra
     title: Algebra
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Four sessions, in order: a warm-up on groups, finite group theory, Sylow theory, and
-      rings.
+      Four sessions, in order: a warm-up on groups, finite group theory, Sylow theory, and rings.
     items:
       # Algebra Week 1 Groups Warmup
       - ref: P-SERVA
@@ -47,7 +45,7 @@ sections:
       - ref: P-HYQCG
       - ref: P-N2TM2
       - ref: P-YMVNK
-      - ref: P-BQVDL
+      - ref: P-W13SP
       - ref: P-KOQPF
       - ref: P-Q44SQ
       - ref: P-BXBHJ
@@ -75,8 +73,7 @@ sections:
     title: Real analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      One session on real-analysis preliminaries. The UNL workshop packet is listed under
-      [real analysis workshop packet](real-analysis-workshop-packet.html).
+      One session on real-analysis preliminaries. The UNL workshop packet is listed under [real analysis workshop packet](real-analysis-workshop-packet.html).
     items:
       # Real Week 1 Preliminaries
       - ref: E-JY5OT
@@ -90,10 +87,7 @@ sections:
     title: Complex analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Two sessions: preliminaries, on the material of [holomorphy and
-      analyticity](../GUIDE-COMPLEX-ANALYSIS/holomorphy-and-analyticity.html), and [Cauchy
-      theory](../GUIDE-COMPLEX-ANALYSIS/cauchy-theory.html), with exercises that apply the
-      Cauchy integral formula.
+      Two sessions: preliminaries, on the material of [holomorphy and analyticity](../GUIDE-COMPLEX-ANALYSIS/holomorphy-and-analyticity.html), and [Cauchy theory](../GUIDE-COMPLEX-ANALYSIS/cauchy-theory.html), with exercises that apply the Cauchy integral formula.
     items:
       # Complex Week 1 Preliminaries
       - ref: E-N6DX3
@@ -106,9 +100,7 @@ sections:
     title: Topology
     parent: GUIDE-WORKSHOPS
     lede: >-
-      One session on point-set topology, with problems on separation axioms and compactness.
-      The workshop packets are listed under [topology workshop
-      packets](topology-workshop-packets.html).
+      One session on point-set topology, with problems on separation axioms and compactness. The workshop packets are listed under [topology workshop packets](topology-workshop-packets.html).
     items:
       # Topology Week 1 Preliminaries
       - ref: E-YUGKU
@@ -141,10 +133,7 @@ sections:
     title: Real analysis workshop packet
     parent: real-analysis
     lede: >-
-      The UNL real-analysis workshop packet, by day. Days 1, 9, and 10 are the May 2016, January
-      2019, and May 2018 qualifying exams, and Days 2--8 are topic sheets. The worksheets state
-      results and definitions on convergence of sequences and series of functions, and problems on
-      the sheets apply them.
+      The UNL real-analysis workshop packet, by day. Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying exams, and Days 2--8 are topic sheets. The worksheets state results and definitions on convergence of sequences and series of functions, and problems on the sheets apply them.
     items:
       - ref: SRC-RA-WORKSHOP
       # The numbered results the worksheets state and then set problems against.
@@ -175,10 +164,7 @@ sections:
     title: Topology workshop packets
     parent: topology
     lede: >-
-      Two UNL topology workshops. The first runs by day through compactness, connectedness,
-      separation axioms, and counterexamples, then fundamental groups, covering spaces, and
-      homology, followed by a legacy packet on homotopy and retractions and a revised packet
-      that covers the same topics. The May 2020 workshop is a sequence of worksheets, 1 to 5.
+      Two UNL topology workshops. The first runs by day through compactness, connectedness, separation axioms, and counterexamples, then fundamental groups, covering spaces, and homology, followed by a legacy packet on homotopy and retractions and a revised packet that covers the same topics. The May 2020 workshop is a sequence of worksheets, 1 to 5.
     items:
       - ref: SRC-TOP-WORKSHOP
       - ref: SRC-TOP-WORKSHOP-2020

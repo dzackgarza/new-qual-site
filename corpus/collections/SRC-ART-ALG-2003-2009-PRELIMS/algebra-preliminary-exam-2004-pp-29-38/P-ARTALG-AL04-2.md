@@ -161,3 +161,7 @@ Step [](#s4){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Equivalently: there is exactly one group of order $15$ up to isomorphism.
+:::

@@ -83,7 +83,7 @@ title: "Algebra qual prep week 2: finite group theory"
 
 [[P-N2TM2]] [[P-YMVNK]]
 
-[[P-BQVDL]] [[P-KOQPF]]
+[[P-W13SP]] [[P-KOQPF]]
 
 [[P-Q44SQ]]
 

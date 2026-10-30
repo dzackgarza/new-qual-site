@@ -116,3 +116,7 @@ Step [](#s3){.pf-ref} gives the complete classification up to isomorphism.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+A common form asks for the number of isomorphism classes and lists each class in both invariant factor form and elementary divisor form.
+:::
