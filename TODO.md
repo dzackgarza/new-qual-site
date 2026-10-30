@@ -698,17 +698,17 @@ mathematical correction under its own node, not under copy policy.
     **Acceptance:** the detector reports no `mineru-spaced` finding.
 
   - **`ad9-exams`**. **Needs:** none. Round 9 at 2cd9297bd3; report in the session scratchpad r9-exams.md.
-    - [ ] P-RASP23D: the solution says the Riesz measure is inner regular on every Borel set; it is not ($E=\RR\times\{0\}$, Rudin RCA 2.17). The answer is No.
-    - [ ] P-MMAQ-OXWRG3VWFJ (b): asks about intermediate groups; the source asks about intermediate fields of a Galois extension of degree 2009.
-    - [ ] SRC-UW-ALG-2009 and SRC-UW-ALGEBRA-2005-2018 section 2009: the paper has 8 problems; Problems 5 and 8 have no card. Add them.
-    - [ ] P-UCLARA13F-10: `\widehat f^{,2}` has a stray comma.
-    - [ ] P-UCLARA13F-04: lost the closed domain; $u$ is continuous on $\overline{\mathbb D}\setminus\{0\}$.
-    - [ ] P-UCLARA13F-01 … -06: classified real analysis; the paper marks Problems 1-6 complex analysis.
-    - [ ] P-CASP19G: stale parenthetical about ν in the solution.
-    - [ ] P-8XT86: the source's second norm |||·||| and the new norm on X are typeset as the original norm, so the statement reads as tautologies.
-    - [ ] P-NIC7C: λ: T(X)→ℂ; the exam's spaces are real.
-    - [ ] P-TOP-WORKSHOP-D4-03: "(Jan '04 # A3)" in the statement (CARD-02).
-    - [ ] Card pages list one collection twice when a card appears in two sections of it (P-TOP-WORKSHOP-D3-04, -D3-05); render one entry per appearance with its section name.
+    - [x] P-RASP23D: the solution says the Riesz measure is inner regular on every Borel set; it is not ($E=\RR\times\{0\}$, Rudin RCA 2.17). The answer is No.
+    - [x] P-MMAQ-OXWRG3VWFJ (b): asks about intermediate groups; the source asks about intermediate fields of a Galois extension of degree 2009.
+    - [x] SRC-UW-ALG-2009 and SRC-UW-ALGEBRA-2005-2018 section 2009: the paper has 8 problems; Problems 5 and 8 have no card. Add them.
+    - [x] P-UCLARA13F-10: `\widehat f^{,2}` has a stray comma.
+    - [x] P-UCLARA13F-04: lost the closed domain; $u$ is continuous on $\overline{\mathbb D}\setminus\{0\}$.
+    - [x] P-UCLARA13F-01 … -06: classified real analysis; the paper marks Problems 1-6 complex analysis.
+    - [x] P-CASP19G: stale parenthetical about ν in the solution.
+    - [x] P-8XT86: the source's second norm |||·||| and the new norm on X are typeset as the original norm, so the statement reads as tautologies.
+    - [x] P-NIC7C: λ: T(X)→ℂ; the exam's spaces are real.
+    - [x] P-TOP-WORKSHOP-D4-03: "(Jan '04 # A3)" in the statement (CARD-02).
+    - [x] Card pages list one collection twice when a card appears in two sections of it (P-TOP-WORKSHOP-D3-04, -D3-05); render one entry per appearance with its section name.
     **Acceptance:** each item read and repaired.
 
   - **`ad9-prelim`**. **Needs:** none. Round 9 at 2cd9297bd3; report in the session scratchpad r9-prelim.md.
