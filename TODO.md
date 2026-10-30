@@ -794,7 +794,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/workshops/algebra-week-2-finite-group-theory.md
   - [x] wiki/algebra/workshops/algebra-week-3-sylow-theory.md
   - [x] wiki/algebra/workshops/algebra-week-4-rings.md
-  - [ ] wiki/algebra/workshops/algebra-week-n-1-linear-algebra.md
+  - [x] wiki/algebra/workshops/algebra-week-n-1-linear-algebra.md
   - [ ] wiki/algebra/workshops/algebra-week-n-rep-theory.md
   - [ ] wiki/algebra/workshops/index.md
   - [ ] wiki/algebraic-geometry/cohomology/computing-cohomology.md
