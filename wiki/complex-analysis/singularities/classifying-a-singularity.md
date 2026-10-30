@@ -61,10 +61,9 @@ Let $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc about $z_0$.
 
 This criterion also gives the order of a pole and the residue $c_{-1}$.
 
-::: {.remark title="Order as a valuation"}
-For $f(z) = \sum_{k\in\ZZ} c_k(z-z_0)^k$ on a punctured disc about $z_0$, let $v_{z_0}(f) \coloneqq \min\theset{k \st c_k\neq 0}$, with $v_{z_0}(f) = -\infty$ when infinitely many negative coefficients are nonzero.
-Then a zero of order $n$ has $v_{z_0}(f) = n$, a pole of order $n$ has $v_{z_0}(f) = -n$, a removable singularity has $v_{z_0}(f) \geq 0$, and an essential singularity has $v_{z_0}(f) = -\infty$.
-:::
+[[D-IWIA5]]
+
+In terms of the order, a zero of order $n$ has $v_{z_0}(f) = n$, a pole of order $n$ has $v_{z_0}(f) = -n$, a removable singularity has $v_{z_0}(f) \geq 0$, and an essential singularity has $v_{z_0}(f) = -\infty$.
 
 ## Summary
 
