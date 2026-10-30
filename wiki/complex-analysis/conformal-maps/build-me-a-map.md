@@ -47,8 +47,6 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
 - **Region bounded by two circular arcs $\to$ sector or strip.** A Möbius transformation sending the two intersection points of the arcs to $0$ and $\infty$ maps the region onto a sector.
   If the arcs are tangent at one point, a Möbius transformation sending that point to $\infty$ maps the region onto a strip.
 
-  ![](../../../../assets/assets/figures/2021-12-10_17-12-12.png)
-
 - **Slit plane $\to \HH$.** The branch of $\sqrt z$ with argument in $(0,\pi)$ maps $\CC\sm[0,\infty)$ onto $\HH$.
 
 - **Reflections and inversions.** $z\mapsto -z$ maps $\HH$ onto $Q_{34}$.
@@ -95,9 +93,9 @@ Sectors:
 
 Logs and exponentials:
 
-![](../../../../assets/assets/figures/2021-12-10_16-47-00.png)
+![The exponential maps the rectangle with corners a + ic and b + id onto the annular sector between radii e^a and e^b and between arguments c and d; vertical segments go to circular arcs.](../../../../assets/assets/figures/2021-12-10_16-47-00.png)
 
-![](../../../../assets/assets/figures/2021-12-10_16-47-30.png)
+![The exponential maps the strip 0 < Im z < pi onto the upper half-plane, the half-strip with Re z < 0 onto the upper half of the unit disc, and the rectangle a < Re z < b, 0 < Im z < pi onto the upper half of the annulus e^a < abs w < e^b.](../../../../assets/assets/figures/2021-12-10_16-47-30.png)
 
 [[PR-3CDLG]]
 
@@ -108,10 +106,6 @@ Logs and exponentials:
 [[PR-7TLAS]]
 
 Joukowski maps:
-
-![](../../../../assets/assets/figures/2021-12-29_03-07-40.png)
-
-![](../../../../assets/assets/figures/2021-12-29_23-56-30.png)
 
 [[PR-IK6LA]]
 
