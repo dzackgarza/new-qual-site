@@ -668,14 +668,14 @@ mathematical correction under its own node, not under copy policy.
     **Acceptance:** each item read and repaired. **Closed.** The sort lives in vocabularies/citation-style.csl, the CSL owner of bibliography order.
 
   - **`ad7-text`**. **Needs:** none. Round 7 at 3f0a38feb1; report in the session scratchpad r7-text.md.
-    - [ ] Zotero: Miranda title still lower case; [RBKG13] lists Bers as an author (authors are Rodríguez, Kra, Gilman); [Hart10] is the 1977 GTM 52; [Harr10] is the 1992 GTM 133; Munkres publishers carry catalogue residue ("Addison-Wesley publ", "Prentice Hall, Inc"). Fix in Zotero, re-sync, repoint changed keys.
-    - [ ] Zotero: the PDF FX65DFGE on Dummit–Foote A4FFDNKB is Herstein's Abstract Algebra; remove or replace that attachment.
-    - [ ] P-MMAQ-WV7QEYSPXM: hint typo `\sigma_{\varphi_1}(K)\inverseof{\sigma}` (should be $\sigma\varphi_1(K)\sigma^{-1}$) and "construcing"; SRC-TEXT-DF04 gives no exercise locator (5.5.6).
-    - [ ] SRC-TEXT-HUN74: 63 of 73 appearances have no exercise locator.
-    - [ ] SRC-TEXT-HAT02, SRC-TEXT-SS03: the pages show no exercise numbers; give each appearance its locator.
-    - [ ] E-SS1.EX-13: the statement never introduces Ω (the book: open set Ω; the solution assumes a region).
-    - [ ] E-SS4.EX-9: `z` and `S` outside math, the doubled comma in "closure of $S ,$ ,", and a leading "9." in the statement.
-    **Acceptance:** each item read and repaired.
+    - [x] Zotero: Miranda title still lower case; [RBKG13] lists Bers as an author (authors are Rodríguez, Kra, Gilman); [Hart10] is the 1977 GTM 52; [Harr10] is the 1992 GTM 133; Munkres publishers carry catalogue residue ("Addison-Wesley publ", "Prentice Hall, Inc"). Fix in Zotero, re-sync, repoint changed keys.
+    - [x] Zotero: the PDF FX65DFGE on Dummit–Foote A4FFDNKB is Herstein's Abstract Algebra; remove or replace that attachment.
+    - [x] P-MMAQ-WV7QEYSPXM: hint typo `\sigma_{\varphi_1}(K)\inverseof{\sigma}` (should be $\sigma\varphi_1(K)\sigma^{-1}$) and "construcing"; SRC-TEXT-DF04 gives no exercise locator (5.5.6).
+    - [x] SRC-TEXT-HUN74: 63 of 73 appearances have no exercise locator.
+    - [x] SRC-TEXT-HAT02, SRC-TEXT-SS03: the pages show no exercise numbers; give each appearance its locator.
+    - [x] E-SS1.EX-13: the statement never introduces Ω (the book: open set Ω; the solution assumes a region).
+    - [x] E-SS4.EX-9: `z` and `S` outside math, the doubled comma in "closure of $S ,$ ,", and a leading "9." in the statement.
+    **Acceptance:** each item read and repaired. **Closed.** The DF04, HUN74, HAT02 and SS03 appearances carry their book locators.
 
   - **`ad7-prelim`**. **Needs:** none. Round 7 at 3f0a38feb1; report in the session scratchpad r7-prelim.md.
     - [ ] P-JHUSP01CAA: extraction residue in the statement ("Question 1.", trailing "·").
