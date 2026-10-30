@@ -24,8 +24,7 @@ Assume that $f$ is continuous at $a = e^{i\theta_0}$, and show that $\lim_{z \to
 :::
 
 ::: {.solution}
-Write the Poisson integral as $u$ (the statement denotes it by $\nu$ in the
-display). Since
+Since
 $$
 \frac1{2\pi}\int_{-\pi}^{\pi}P_r(t)\,dt=1,
 $$
