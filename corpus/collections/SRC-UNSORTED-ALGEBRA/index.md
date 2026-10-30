@@ -570,7 +570,6 @@ source:
   - id: P-TBIU4
   - id: P-TFKBW
   - id: P-TG5VQ
-  - id: P-TGGYQ
   - id: P-TKCUS
   - id: P-TLBS5
   - id: P-TLOJE
@@ -586,7 +585,6 @@ source:
   - id: P-TTUVH
   - id: P-TVSSR
   - id: P-U547U
-  - id: P-UE7LL
   - id: P-UECFO
   - id: P-UFCQH
   - id: P-UFD6Y
