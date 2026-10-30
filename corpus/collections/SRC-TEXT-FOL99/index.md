@@ -32,8 +32,6 @@ source:
           comment: '6.6'
         - id: P-XLANN
           comment: "6.7 as part (a)"
-        - id: P-RVL3K
-          comment: "6.7 as part (a)"
         - id: P-YTOGK
           comment: '6.31'
 ---
