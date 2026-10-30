@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APASP07F
 kind: problem
-title: "Schur function products and decomposition of simple S_5 modules"
+title: Schur function products and decomposition of simple S_5 modules
 classification:
   areas:
   - applied-algebra
@@ -15,10 +15,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Part (a) corrected to the product s_lambda s_(1,1) for each lambda with three boxes,
+    as printed on the exam (checked against PDF page 1); solution part (b) corrected: the
+    restriction contains V_(3) x V_(2), not V_(3) x V_(1,1).'
 ---
 
 ::: {.problem}
-(a) Expand the product of Schur functions $s_{(2)} \cdot s_{(1)}$ into a linear combination of Schur functions for all Young diagrams $\lambda$ with three boxes.
+(a) Expand the product of Schur functions $s_\lambda s_{(1,1)}$ into a linear combination of Schur functions for all Young diagrams $\lambda$ with three boxes.
 
 (b) Decompose the simple $S_5$-module $V_{(3,2)}$ into a direct sum of simple $S_3 \times S_2$-modules, with $S_3$ permuting the letters $\{1, 2, 3\}$ and $S_2$ permuting the letters $\{4, 5\}$.
 
@@ -27,29 +33,36 @@ audit:
 
 ::: {.solution}
 
-**Goal.** Expand $s_{(2)}s_{(1)}$, decompose $V_{(3,2)}$ as an $S_3 \times S_2$-module and as an $S_3$-module, and describe the commutant.
+**Goal.** Expand $s_\lambda s_{(1,1)}$ for $\lambda\vdash3$, decompose $V_{(3,2)}$ as an $S_3 \times S_2$-module and as an $S_3$-module, and describe the commutant.
 
 ::: pf
 
 ::: {.pf-step #part-a-expansion}
-(a) $s_{(2)} \cdot s_{(1)} = s_{(3)} + s_{(2,1)}$.
+(a)
+$$
+s_{(3)}s_{(1,1)}=s_{(4,1)}+s_{(3,1,1)},\qquad
+s_{(2,1)}s_{(1,1)}=s_{(3,2)}+s_{(3,1,1)}+s_{(2,2,1)}+s_{(2,1,1,1)},
+$$
+$$
+s_{(1,1,1)}s_{(1,1)}=s_{(2,2,1)}+s_{(2,1,1,1)}+s_{(1,1,1,1,1)}.
+$$
 
 ::: pf-proof
 
 ::: pf-step
-By the Pieri rule, $s_{(2)} s_{(1)}$ is the sum of $s_\lambda$ over all $\lambda$ obtained by adding one box to $(2)$.
+By the dual Pieri rule, $s_\lambda s_{(1,1)}$ is the sum of $s_\mu$ over all $\mu$ obtained from $\lambda$ by adding two boxes, no two in the same row.
 
 ::: pf-proof
-the Pieri rule: multiplying by $s_{(1)}$ adds a single box in all ways yielding a valid Young diagram.
+This is the Pieri rule for multiplication by the elementary symmetric function $e_2=s_{(1,1)}$.
 :::
 
 :::
 
 ::: pf-step
-Adding one box to $(2)$ gives $(3)$ and $(2,1)$.
+The admissible ways to add two boxes in distinct rows are the following. To $(3)$: rows $1,2$ give $(4,1)$ and rows $2,3$ give $(3,1,1)$. To $(2,1)$: rows $1,2$, $1,3$, $2,3$ and $3,4$ give $(3,2)$, $(3,1,1)$, $(2,2,1)$ and $(2,1,1,1)$. To $(1,1,1)$: rows $1,2$, $1,4$ and $4,5$ give $(2,2,1)$, $(2,1,1,1)$ and $(1^5)$.
 
 ::: pf-proof
-the box can go in row 1 (giving $(3)$) or row 2 (giving $(2,1)$).
+Any other choice of two rows leaves a row longer than the row above it. As a check, the dimensions of the $S_5$-modules match $\binom52\dim V_\lambda$: $4+6=10$, $5+6+5+4=20$ and $5+4+1=10$.
 :::
 
 :::
@@ -59,7 +72,7 @@ the box can go in row 1 (giving $(3)$) or row 2 (giving $(2,1)$).
 :::
 
 ::: {.pf-step #part-b-decomposition}
-(b) $V_{(3,2)} \downarrow S_3 \times S_2 = (V_{(3)} \boxtimes V_{(1,1)}) \oplus (V_{(2,1)} \boxtimes V_{(2)}) \oplus (V_{(2,1)} \boxtimes V_{(1,1)})$.
+(b) $V_{(3,2)} \downarrow S_3 \times S_2 = (V_{(3)} \boxtimes V_{(2)}) \oplus (V_{(2,1)} \boxtimes V_{(2)}) \oplus (V_{(2,1)} \boxtimes V_{(1,1)})$.
 
 ::: pf-proof
 
@@ -73,10 +86,10 @@ the branching rule for $S_{n_1} \times S_{n_2} \le S_{n_1 + n_2}$.
 :::
 
 ::: {.pf-step #lr-coefficient-pairs}
-For $\lambda = (3,2)$, the pairs $(\mu, \nu)$ with $\mu \vdash 3$, $\nu \vdash 2$, $\mu, \nu \subseteq \lambda$, and $c^{(3,2)}_{\mu\nu} \neq 0$ are $((3), (1,1))$, $((2,1), (2))$, $((2,1), (1,1))$, each with coefficient $1$.
+For $\lambda = (3,2)$, the pairs $(\mu, \nu)$ with $\mu \vdash 3$, $\nu \vdash 2$, $\mu, \nu \subseteq \lambda$, and $c^{(3,2)}_{\mu\nu} \neq 0$ are $((3), (2))$, $((2,1), (2))$, $((2,1), (1,1))$, each with coefficient $1$.
 
 ::: pf-proof
-compute the skew shapes $(3,2)/\mu$ and count LR tableaux of content $\nu$: $(3,2)/(3)$ is a column of two boxes (content $(1,1)$); $(3,2)/(2,1)$ is two boxes in distinct rows and columns (contents $(2)$ and $(1,1)$ each give one tableau).
+compute the skew shapes $(3,2)/\mu$ and count LR tableaux of content $\nu$: $(3,2)/(3)$ is a row of two boxes (content $(2)$); $(3,2)/(2,1)$ is two boxes in distinct rows and columns (contents $(2)$ and $(1,1)$ each give one tableau).
 :::
 
 :::
@@ -103,7 +116,7 @@ hook-length formula gives $\dim V_{(3,2)} = 5$, $\dim V_{(3)} = 1$, $\dim V_{(1,
 Restrict the $S_3 \times S_2$ decomposition to $S_3$ (forgetting the $S_2$ factor).
 
 ::: pf-proof
-$V_{(3)} \boxtimes V_{(1,1)}$ restricts to $V_{(3)}$; each $V_{(2,1)} \boxtimes V_{(\cdot)}$ restricts to $V_{(2,1)}$.
+$V_{(3)} \boxtimes V_{(2)}$ restricts to $V_{(3)}$; each $V_{(2,1)} \boxtimes V_{(\cdot)}$ restricts to $V_{(2,1)}$.
 :::
 
 :::
