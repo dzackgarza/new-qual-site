@@ -38,4 +38,8 @@ source:
           comment: '3.5'
         - id: P-DPR0E
           comment: "3.32"
+    - name: Ch. 4 Exercises
+      problems:
+        - id: P-MLJMH
+          comment: "4.5(c) as part (b)"
 ---
