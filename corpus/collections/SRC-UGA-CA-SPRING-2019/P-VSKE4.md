@@ -28,15 +28,28 @@ Show that $f_{n}$ converges to $f$ uniformly on compact subsets of $\Omega$.
 :::
 
 ::: {.solution}
-Write $g(z) \coloneqq \lim_{n\to\infty}f_n(z)$ for the pointwise limit, then $g(z) = f(z)$ on a set with a limit point.
-By the identity principle, $g\equiv f$ on $\Omega$, making $f$ the pointwise limit of the $f_n$.
+Let $A$ be the set where $f_n\to f$ pointwise; by hypothesis it has a limit point in $\Omega$.
 
-By Montel, locally uniformly bounded implies normal and locally equicontinuous.
-So $\theset{f_n}$ is normal, and thus has a locally uniformly convergent subsequence $\theset{f_{n_k}}$.
-Since singletons $\theset{z}$ are compact, $f_{n_k}(z) \to g(z)$ pointwise, and by uniqueness of limits, $\lim_{k\to\infty } f_{n_k} = g = f$ on any compact $K \subseteq \Omega$.
+::: pf
 
-It remains to show that the original sequence $\theset{f_n}$ converges locally uniformly to $f$, not just the subsequence.
-Suppose not, then there exists a compact $K \subseteq \Omega$ and $\eps>0$ so that $\norm{f_n - f}_{K, \infty} > \eps$ for infinitely many $n$.
-This produces a subsequence $\theset{f_{n_j}}$ with $\norm{f_{n_j} - f} > \eps$ for all $j$.
-However, since $\mcf$ was normal, *every* subsequence has a locally uniformly convergent subsequence, so this has a further subsequence $f_{n_{j'}}$ uniformly converging to $f$, a contradiction.
+::: {.pf-step #sub}
+Every subsequence of $(f_n)$ has a further subsequence that converges to $f$ uniformly on compact subsets of $\Omega$.
+
+::: pf-proof
+By Montel's theorem, a family of holomorphic functions that is uniformly bounded on compact subsets is normal. So a given subsequence has a further subsequence converging uniformly on compact subsets to some $h$, which is holomorphic by Weierstrass's theorem. On $A$ the pointwise limit of this subsequence is $f$, so $h=f$ on $A$. Since $\Omega$ is connected and $A$ has a limit point in $\Omega$, the identity theorem gives $h=f$.
+:::
+
+:::
+
+::: pf-step
+$f_n\to f$ uniformly on compact subsets of $\Omega$.
+
+::: pf-proof
+If not, there are a compact $K\subseteq\Omega$, an $\varepsilon>0$ and a subsequence $(f_{n_j})$ with $\sup_K\abs{f_{n_j}-f}\ge\varepsilon$ for all $j$. No further subsequence of $(f_{n_j})$ converges to $f$ uniformly on $K$, which contradicts step [](#sub){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

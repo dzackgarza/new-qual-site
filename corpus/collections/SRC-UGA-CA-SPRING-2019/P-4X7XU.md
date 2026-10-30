@@ -14,62 +14,40 @@ review: draft
 ---
 
 ::: {.problem}
-Find a conformal map that maps the region 
+Find a conformal map from
 $$
-R = \theset{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
-$$
-to the upper half plane.
-:::
-
-::: {.problem}
-Find a conformal map from 
-$$
-\theset{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }
+\theset{ z\st \abs{z -1 / 2} >1 / 2,\ \Re(z)>0 }
 $$
 to $\halfplane$.
-
 :::
 
 ::: {.solution}
-The main step: blow up the tangency.
+Let $R$ be the given region.
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_00-52-48.png)
+::: pf
 
-The individual maps:
+::: {.pf-step #inv}
+$z\mapsto1/z$ maps $R$ biholomorphically onto the strip $S=\{0<\Re w<1\}$.
 
-- Send $0\to \infty$ by $z\mapsto {1\over z}$ to map $R$ to $0<\Re(z)<1$
-- Rotate with $z\mapsto iz$ to map this to $0< \Im(z) < 1$
-- Dilate by $z\mapsto \pi z$ to get $0 < \Im(z) < \pi$
-- Apply $z\mapsto e^z$ to map to $\HH$.
+::: pf-proof
+For $z\neq0$, $\Re(1/z)=\Re z/\abs{z}^2$. So $\Re z>0$ iff $\Re(1/z)>0$, and $\abs{z-\frac12}>\frac12$ iff $\abs{z}^2>\Re z$ iff $\Re(1/z)<1$. Since $0\notin R$ and $0\notin S$, and $1/z$ is its own inverse, it is a bijection $R\to S$.
+:::
 
-That steps 1 and 2 work requires a bit of analysis.
-Use that $f(z) \coloneqq 1/z$ satisfies $f(\RR) = \RR$ and $f(i\RR) = i \RR$.
-To see where the circle $C_1$ gets mapped to, parameterize it as
-$$
-\gamma(t) \coloneqq \theset{{1\over 2}\qty{1+e^{it}} \st t\in [-\pi, \pi]}
-.$$
+:::
 
-Now computing its image:
-$$
-f(\gamma(t)) 
-&= {2 \over 1 + e^{it}} \\
-&= {2e^{-it\over 2} \over e^{-it\over 2}(1 + e^{it})} \\
-&= {2e^{-it} \over e^{-it\over 2} + e^{it\over 2} } \\
-&= { 2e^{-it\over 2} \over 2\cos\qty{t\over 2} } \\
-&= \sec\qty{t\over 2}\qty{\cos\qty{-t\over 2} + i\sin\qty{-t\over 2}} \\
-&= \sec\qty{t\over 2}\qty{\cos\qty{t\over 2} - i\sin\qty{t\over 2}} \\
-&= 1 - i\tan\qty{t\over 2}
-,$$
-and as $t$ runs from $-\pi$ to $\pi$, $-\tan\qty{t\over 2}$ runs from $+\infty$ to $-\infty$.
-So this is a line along $z=1$, oriented top to bottom as in the image.
+::: {.pf-step #exp}
+$w\mapsto e^{\pi iw}$ maps $S$ biholomorphically onto $\halfplane$.
 
-Similarly, computing $f(i\RR)$: parameterize $\gamma(t) = it$ with $t\in (-\infty, \infty)$, then
-$$
-f(\gamma(t)) = {1\over it} = -{i\over t}
-,$$
-and as $t$ runs from $0$ to $\infty$, $-1/t$ runs from $-\infty$ to $0$, and as $t$ runs from $-\infty$ to $0$, $-1/t$ runs from $0$ to $\infty$.
-So $f(i\RR)$ is oriented from bottom to top, as in the image.
+::: pf-proof
+For $w=s+it\in S$, $e^{\pi iw}=e^{-\pi t}e^{i\pi s}$ has argument $\pi s\in(0,\pi)$, so it lies in $\halfplane$. Every $\zeta=\rho e^{i\theta}\in\halfplane$ with $0<\theta<\pi$ is the image of exactly one point of $S$, namely $w=\theta/\pi-(i/\pi)\log\rho$, because two preimages differ by an even integer and real parts in $(0,1)$ differ by less than $1$.
+:::
 
-That the region outside the disc is mapped to the strip shown: points $x\in \RR$ with $\abs{x} > 1$ map to $\abs{x}<1$, which is in the strip.
-One can also conclude this by handedness: the original region is on the right with respect to $C_1$ and also on the right with respect to $i\RR$, so the new region should be on the right with respect to both $f(i\RR)$ and $f(C_1)$ with their induced orientations.
+:::
+
+::: pf-qed
+By steps [](#inv){.pf-ref} and [](#exp){.pf-ref}, $\boxed{z\mapsto e^{\pi i/z}}$ is a conformal map of $R$ onto $\halfplane$.
+:::
+
+:::
+
 :::

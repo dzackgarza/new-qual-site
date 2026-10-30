@@ -31,36 +31,35 @@ Estimate $N_{R}$ in terms of $M_{2 R}$ from above.
 :::
 
 ::: {.solution}
-First note that by the maximum modulus principal, it suffices to consider sups on the boundary, i.e.
-$$
-M_R = \sup_{\abs{z} = R}\abs{f(z)}, \qquad N_R = \sup_{\abs{z} = R} \abs{f'(z)}
-.$$
 
-The first estimate: **stuck!**
+::: pf
 
-The second estimate: suppose $z_0 \in \DD_R(0)$, then any $D_R(z_0)$ is contained in $D_{2R}(0)$, So for any such $z_0$, apply Cauchy's integral formula centered at $z_0$:
+::: {.pf-step #a}
+$M_R\le\abs{f(0)}+R\,N_R$. No bound by $N_R$ alone is possible.
+
+::: pf-proof
+For $\abs{z}\le R$, integrate $f'$ along the segment from $0$ to $z$: $f(z)=f(0)+\int_0^1f'(tz)\,z\,dt$, so $\abs{f(z)}\le\abs{f(0)}+\abs{z}N_R\le\abs{f(0)}+RN_R$. A nonzero constant $f$ has $N_R=0$ and $M_R>0$, so the term $\abs{f(0)}$ cannot be removed.
+:::
+
+:::
+
+::: {.pf-step #b}
+$N_R\le M_{2R}/R$.
+
+::: pf-proof
+Let $\abs{z_0}\le R$. The closed disk $\abs{\xi-z_0}\le R$ lies in $\abs{\xi}\le2R$, which lies in the domain $\abs{\xi}<3R$. Cauchy's formula gives
 $$
-f^{(1)}(z_0) &= {1\over 2\pi i }\oint_{\bd\DD_{R}(z_0)} {f(\xi)\over (\xi-z_0)^2 }\dxi \\
-\implies
-\abs{ f^{(1)}(z_0)}
-&\leq {1\over 2\pi} \oint_{\bd\DD_{R}(z_0)} \abs{f(\xi)\over (\xi-z_0)^2 }\dxi \\
-&= {1\over 2\pi} \oint_{\bd\DD_R(z_0)} { \abs{f(\xi)} \over \abs{\xi-z_0}^2 } \dxi \\
-&= {1\over 2\pi} \oint_{\bd\DD_R(z_0)} { \abs{f(\xi)} \over R^2 } \dxi \\
-&\leq {1\over 2\pi} R^{-2} \oint_{\bd\DD_R(z_0)} { \sup_{z\in \bd\DD_{R}(z_0) } \abs{f(z)} } \dxi \\
-&= {1\over 2\pi} R^{-2} \sup_{\bd\DD_R(z_0) } \abs{f(z)} \cdot 2\pi R \\
-&= \inverseof{R} \sup_{\bd\DD_R(z_0) } \abs{f(z)} \\
-&\leq \inverseof{R} M_{2R}
-,$$
-where we've used in the last step that $\DD_R(z_0) \subseteq \DD_{2R}(0)$, and sups can only get larger when taken over larger sets.
-Since this was an arbitrary $z_0\in \DD_R(0)$, this holds for all $z$ with $\abs{z} \leq R$.
-Since taking sups preserves inequalities, we have
+f'(z_0)=\frac1{2\pi i}\oint_{\abs{\xi-z_0}=R}\frac{f(\xi)}{(\xi-z_0)^2}\,d\xi,
 $$
-\abs{f'(z_0)}
-\leq \inverseof{R} M_{2R}\,
-\forall \abs{z} \leq R
-\implies
-N_R\coloneqq \sup_{\abs{z} \leq R}\abs{f'(z)}
-\leq \inverseof{R} M_{2R}
-.$$
+and the ML estimate gives $\abs{f'(z_0)}\le\frac1{2\pi}\cdot2\pi R\cdot\frac{M_{2R}}{R^2}=\frac{M_{2R}}R$. Take the supremum over $\abs{z_0}\le R$.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#a){.pf-ref} and [](#b){.pf-ref} answer parts a and b.
+:::
+
+:::
 
 :::

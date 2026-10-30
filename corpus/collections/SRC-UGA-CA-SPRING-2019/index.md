@@ -5,24 +5,25 @@ kind: collection
 title: UGA complex-analysis Spring 2019
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics: []
 relations: []
 review: draft
 provenance:
-- assets/attachments/ComplexQual_Sp19.pdf
+  - assets/attachments/ComplexQual_Sp19.pdf
 source:
   source_kind: university-exam
   institution: uga
   area: complex-analysis
   problems:
-  - P-FQJMB
-  - P-PM5FN
-  - P-EA222
-  - P-ZAVLU
-  - id: P-4X7XU
-    comment: Spring 2019.6
-  - P-VSKE4
+    - P-FQJMB
+    - P-UGAS15-2
+    - P-PM5FN
+    - P-EA222
+    - P-ZAVLU
+    - id: P-4X7XU
+      comment: Spring 2019.6
+    - P-VSKE4
   date:
     kind: academic-term
     term: spring

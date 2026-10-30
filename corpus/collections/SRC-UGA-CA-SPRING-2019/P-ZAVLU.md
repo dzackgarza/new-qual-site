@@ -40,62 +40,43 @@ $$
 :::
 
 ::: {.solution}
-This is the **Schwarz–Pick lemma**.
+For $a\in\DD$ let $\varphi_a(z)=\dfrac{z-a}{1-\bar az}$. It is an automorphism of $\DD$ with $\varphi_a(a)=0$ and inverse $\varphi_{-a}$. The asserted inequality reads $\abs{\varphi_{f(w)}(f(z))}\le\abs{\varphi_w(z)}$.
 
-- Fix $z_1$ and let $w_1 = f(z_1)$.
-  Define
-  $$
-  \psi_{a}(z) \coloneqq {a-z \over 1-\bar{a}z} \in \Aut(\DD)
-  .$$
+::: pf
 
-  - Note that inequality now reads
-  $$
-  \abs{\psi_{f(w)}(f(z)) } \leq \abs{\psi_w(z)}
-  .$$
-  Moreover $\psi_a$ is an involution that swaps $a$ and $0$.
+::: {.pf-step #F}
+Fix $w\in\DD$ and put $F=\varphi_{f(w)}\circ f\circ\varphi_{-w}$. Then $F$ is a holomorphic self-map of $\DD$ with $F(0)=0$, and $\abs{F(\zeta)}\le\abs{\zeta}$ on $\DD$.
 
-- Now set up a situation where Schwarz's lemma will apply: 
-$$
-0 \mapsvia{\psi_{z_1}} z_1 \mapsvia{f} f(z) \mapsvia{\psi_{f(z_1)}} 0 
-,$$
-  so $F\coloneqq \psi_{f(z_1)} \circ f \circ \psi_{z_1} \in \Aut(\DD)$ and $F(0) = 0$.
+::: pf-proof
+$F(0)=\varphi_{f(w)}(f(w))=0$, and $F$ is a composition of holomorphic self-maps of $\DD$. The bound is the Schwarz lemma.
+:::
 
-- Apply Schwarz we get $\abs{F(z)} \leq \abs{z}$ for all $z$, so
-$$
-\abs{F(z)} &\leq \abs{z} \\
-\implies \abs{
-f(z_1) - (f\circ \psi_{z_1})(z) 
-\over 
-1 - \bar{f(z_1)} \cdot (f\circ \psi_{z_1}) (z)
-} &\leq \abs{ z} \\
-\implies \abs{f(z_1) - f(w) \over 1 - \bar{f(z_1)}\cdot f(w) }
-&\leq \abs{\psi_{z_1}(z)}
-&& w\coloneqq \psi_{z_1}(z) \\
-\implies \abs{f(z_1) - f(w) \over 1 - \bar{f(z_1)}\cdot f(w) }
-&\leq \abs{z_1 - z \over 1 - \bar{z_1} z }
-.$$
+:::
 
-- Since $z_1$ was arbitrary and fixed and $w$ was a free variable, this holds for all $z,w\in \DD$.
+::: {.pf-step #ineq}
+For all $z,w\in\DD$, $\abs{\varphi_{f(w)}(f(z))}\le\abs{\varphi_w(z)}$.
 
-- Strictness: suppose equality holds, we'll show that $f(z) = {az+b\over cz+d}$
+::: pf-proof
+Apply step [](#F){.pf-ref} at $\zeta=\varphi_w(z)$, for which $\varphi_{-w}(\zeta)=z$.
+:::
 
-- By Schwarz, $F(z) = \lambda z$ for $\lambda \in S^1$.
-  Thus
-  $$
-  (\psi_{f(z_1)} \circ f \circ \psi_{z_1}) (z) &= \lambda z \\
-  \implies
-  (f \circ \psi_{z_1}) (z) &= \inverseof{\psi_{f(z_1)}}(\lambda z ) \\
-  \implies
-  f(w) &= \inverseof{\psi_{f(z_1)}}(\lambda \inverseof{\psi_{z_1}}(w) ) 
-  && w\coloneqq \psi_{z_1}(z) \\
-  &= \psi_{f(z_1)} \qty{\lambda \psi_{z_1}(w)} \\
-  &= \lambda \psi_{\bar \lambda f(z_1)} \qty{\psi_{z_1}(w)} \\
-  &\coloneqq \lambda \psi_a(\psi_b(w)) \\
-  &=\lambda\qty{ a- \psi_b(w) \over 1 - \bar a \psi_b(w) } \\
-  &= \quad \vdots \\
-  &= -\lambda \qty{ \frac{{\left(a \overline{b} - 1\right)} z - a + b}{{\left(\overline{a} - \overline{b}\right)}z - b \overline{a} + 1} } \\
-  &= \qty{ \frac{-\lambda {\left(a \overline{b} - 1\right)} z + \lambda( a - b)}{{\left(\overline{a} - \overline{b}\right)}z + (- b \overline{a} + 1)} }
-  ,$$
-  which is evidently a linear fractional transformation.
+:::
+
+::: {.pf-step #eq}
+If equality holds for one pair $z\neq w$, then $f$ is a linear fractional transformation of $\DD$ onto itself. Conversely, for such $f$ equality holds for all $z,w$.
+
+::: pf-proof
+If equality holds at $z\neq w$, then $\zeta=\varphi_w(z)\neq0$ satisfies $\abs{F(\zeta)}=\abs{\zeta}$, so the equality case of the Schwarz lemma gives $F(\zeta)=\lambda\zeta$ with $\abs{\lambda}=1$. Then $f=\varphi_{-f(w)}\circ(\lambda\,\cdot)\circ\varphi_w$ is a composition of linear fractional automorphisms of $\DD$.
+
+Conversely, if $f$ is a linear fractional automorphism of $\DD$, then for each $w$ the map $F$ of step [](#F){.pf-ref} is an automorphism of $\DD$ fixing $0$, hence a rotation $\zeta\mapsto\lambda\zeta$ by the Schwarz lemma applied to $F$ and $F^{-1}$. So $\abs{F(\zeta)}=\abs{\zeta}$ for all $\zeta$, which is equality in step [](#ineq){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Step [](#ineq){.pf-ref} is the inequality, and step [](#eq){.pf-ref} identifies the equality case: the inequality is strict for all $z\neq w$ unless $f$ is a linear fractional map of $\DD$ onto itself.
+:::
+
+:::
 
 :::

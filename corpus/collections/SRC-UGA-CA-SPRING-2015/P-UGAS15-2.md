@@ -96,3 +96,7 @@ $$
 :::
 
 :::
+
+::: remark
+One printing takes $n=3$.
+:::
