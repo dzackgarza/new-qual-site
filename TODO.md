@@ -303,7 +303,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TOP-UNL-2007Q2
   - [x] SRC-TOP-UNL-2008Q2
   - [x] SRC-TOP-UNL-2009Q2
-  - [ ] SRC-TOP-UNL-2010Q2
+  - [x] SRC-TOP-UNL-2010Q2
   - [ ] SRC-TOP-UNL-2014Q2
   - [ ] SRC-TOP-UNL-2016Q2
   - [ ] SRC-TOP-UNL-2017Q1
