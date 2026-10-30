@@ -16,9 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-a. State the chromatic recurrence satisfied by the chromatic polynomial $\chi ( G ; k )$
+a. State the chromatic recurrence satisfied by the chromatic polynomial $\chi(G;k)$.
 
-b. Prove the for any graph G the number of acyclic orientations of G is $\chi ( G ; - 1 )$ . [An orientation of a graph G is an assignment of a direction to every edge of G. Such an orientation is acyclic if the resulting directed graph contains no directed cycles.]
+b. Prove that for any graph $G$ the number of acyclic orientations of $G$ is $\chi(G;-1)$.
+(An orientation of a graph $G$ is an assignment of a direction to every edge of $G$. Such an orientation is acyclic if the resulting directed graph contains no directed cycles.)
 :::
 
 The printed statement in part (b) is missing the standard sign. If

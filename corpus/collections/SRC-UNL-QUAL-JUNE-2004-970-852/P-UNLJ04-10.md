@@ -776,3 +776,7 @@ Step [](#s1-1){.pf-ref} states Turán's theorem, step [](#s1-5){.pf-ref} proves 
 :::
 
 :::
+
+::: remark
+The printed part c does not restrict $r$. For $r=2$ it fails: a graph with $t_1(n)+1=1$ edge contains only one $K_2$.
+:::

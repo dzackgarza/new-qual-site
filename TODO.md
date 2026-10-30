@@ -691,7 +691,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UNL-QUAL-852-871-JUNE-2007
   - [x] SRC-UNL-QUAL-852-970-JANUARY-2006
   - [x] SRC-UNL-QUAL-970-953-JANUARY-2004
-  - [ ] SRC-UNL-QUAL-JUNE-2004-970-852
+  - [x] SRC-UNL-QUAL-JUNE-2004-970-852
   - [ ] SRC-UNL-RA-SPRING-2019
   - [ ] SRC-UNL-RA-SUMMER-2016
   - [ ] SRC-UNL-RA-SUMMER-2018

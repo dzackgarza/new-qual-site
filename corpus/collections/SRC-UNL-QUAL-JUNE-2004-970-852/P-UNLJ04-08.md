@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Prove that every graph has a bipartition $V ( G ) = X \cup Y$ with the property that $e ( X , Y ) \geq e ( G ) / 2$ . Further, show that if G is cubic then we can achieve $e ( X , Y ) \geq$ $n ( G ) = 2 e ( G ) / 3$
+Prove that every graph $G$ has a bipartition $V(G)=X\cup Y$ with the property that $e(X,Y)\ge e(G)/2$.
+Further, show that if $G$ is cubic, then one can achieve $e(X,Y)\ge n(G)=2e(G)/3$.
 :::
 
 ::: {.solution}
