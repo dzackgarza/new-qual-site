@@ -637,7 +637,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-RA-FALL-2019
   - [x] SRC-UGA-RA-FALL-2020
   - [x] SRC-UGA-RA-FALL-2021
-  - [ ] SRC-UGA-RA-SPRING-2005
+  - [x] SRC-UGA-RA-SPRING-2005
   - [ ] SRC-UGA-RA-SPRING-2006
   - [ ] SRC-UGA-RA-SPRING-2007
   - [ ] SRC-UGA-RA-SPRING-2008
@@ -1751,6 +1751,11 @@ mathematical correction under its own node, not under copy policy.
     sheet 7 #9, sheet 11 #5, and sheet 13 #2-18. Sheets 5, 6 and 9 have no checked-in extraction.
     **Acceptance:** each listed item is a card in the collection in source order, and sheets 5,
     6 and 9 are extracted and compared with their cards.
+  - **`ad-uga-ra05-complex-part`**. **Needs:** none. SRC-UGA-RA-SPRING-2005: the retained
+    Combined_Analysis_Spring_2005.docx is one exam with a real-analysis part and a five-problem
+    complex-analysis part, and the collection lists only the real part. Add the complex part as
+    cards and as a second section of this collection, and classify the collection under both
+    areas. **Acceptance:** the collection lists all ten problems in source order, in two sections.
   - **`ad-justin-band-figure`**. **Needs:** none. P-AMD-CM4OPBUE (sheet 3 #4): the left band
     figure appears to have interlinked bands, and the solution claims the surface is planar with
     boundary circles capped to give $S^2$. Read the figure from the page render, decide the
