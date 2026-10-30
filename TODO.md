@@ -759,7 +759,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/linear-algebra/matrix-counterexamples.md
   - [x] wiki/algebra/linear-algebra/minimal-and-characteristic-polynomials.md
   - [x] wiki/algebra/linear-algebra/rational-canonical-form.md
-  - [ ] wiki/algebra/linear-algebra/smith-normal-form.md
+  - [x] wiki/algebra/linear-algebra/smith-normal-form.md
   - [ ] wiki/algebra/linear-algebra/the-spectral-theorem.md
   - [ ] wiki/algebra/linear-algebra/undergrad-review.md
   - [ ] wiki/algebra/modules/classify-this-module.md
