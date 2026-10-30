@@ -11,9 +11,6 @@ topics:
 
 [[D-0SYCY]]
 
-The Jacobian rank condition is computational for a presented variety, while regularity of the local ring is intrinsic and extends to schemes.
-Over a perfect field the two criteria agree.
-
 ## Smooth hyperplane sections
 
 [[T-BERTINI]]
@@ -30,8 +27,7 @@ Over a perfect field the two criteria agree.
 
 [[D-QJ5M9]]
 
-Regular local rings are normal, and a normal variety is regular in codimension one; equivalently, its singular locus has codimension at least two.
-For a normal curve this leaves no singular points, which is why normalization resolves curve singularities; the local rings of a smooth curve are discrete valuation rings.
+A normal variety is regular in codimension one: its singular locus has codimension at least two.
 
 ## Where the singular points are
 
