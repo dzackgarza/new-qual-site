@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $p$ be a prime integer, let $M(p)$ denote the space obtained as the identification space of the $2$-disc $D^2$ under the identification: $x \sim y$ if $x, y \in \partial D^2 = S^1$ and $x = e^{2\pi i y/p}$, $n \in \ZZ$.
+Let $p$ be a prime integer, let $M(p)$ denote the space obtained as the identification space of the $2$-disc $D^2$ under the identification: $x \sim y$ if $x, y \in \partial D^2 = S^1$ and $x = e^{2\pi i n/p}y$ for some $n \in \ZZ$.
 Find the values of $p$ for which $M(p)$ is homotopy equivalent to a compact boundaryless manifold.
 :::
 
@@ -72,11 +72,11 @@ Modulo $2$, multiplication by the odd integer $p$ is an isomorphism, so the cell
 
 ::: {.pf-step #s4}
 
-Hence for odd $p$, $M(p)$ cannot be homotopy equivalent to a compact connected boundaryless manifold of positive dimension.
+Hence for odd $p$, $M(p)$ cannot be homotopy equivalent to a compact connected boundaryless manifold.
 
 ::: pf-proof
 
-Every closed connected $d$-manifold has $H_d(-;\FF_2)\cong\FF_2$ by mod-$2$ Poincaré duality, whereas step [](#s3){.pf-ref} gives zero reduced mod-$2$ homology in every positive degree.
+Every closed connected $d$-manifold has $H_d(-;\FF_2)\cong\FF_2$ by mod-$2$ Poincaré duality, whereas step [](#s3){.pf-ref} gives zero reduced mod-$2$ homology in every positive degree. A connected closed $0$-manifold is a point, which is excluded because $H_1(M(p);\ZZ)\cong\ZZ/p\ne0$.
 
 :::
 
