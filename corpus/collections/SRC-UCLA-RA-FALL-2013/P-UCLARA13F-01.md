@@ -5,8 +5,10 @@ kind: problem
 title: Proper holomorphic maps between plane domains are surjective
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:

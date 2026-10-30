@@ -5,8 +5,10 @@ kind: problem
 title: No holomorphic germ with prescribed values at inverse squares
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Identity Theorem
+  - Power Series
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: No holomorphic function blows up along every approach to the disk boundary
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Maximum Modulus Principle
+  - Zeros
 relations: []
 review: draft
 audit:

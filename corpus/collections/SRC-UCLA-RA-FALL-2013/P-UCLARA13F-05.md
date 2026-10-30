@@ -5,8 +5,9 @@ kind: problem
 title: '$L^1$-bounded holomorphic functions on the disk form a normal family'
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Normal Families
 relations: []
 review: draft
 audit:

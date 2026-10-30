@@ -5,8 +5,10 @@ kind: problem
 title: A removable subharmonic singularity under an averaged growth condition
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Subharmonic Functions
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

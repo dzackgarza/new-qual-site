@@ -5,8 +5,10 @@ kind: problem
 title: Derivative bound for a bounded-domain holomorphic self-map fixing zero
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Schwarz Lemma
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:
