@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with 1. We say R satisfies the ascending chain condition if whenever $I _ { 1 } \subseteq I _ { 2 } \subseteq I _ { 3 } \subseteq \cdots$ · is an ascending chain of ideals, there is an integer N such that $I _ { k } = I _ { N }$ for all $k \geqslant N$ Show that R satisfies the ascending chain condition if and only if every ideal of R is finitely generated.
+Let $R$ be a commutative ring with $1$. We say $R$ satisfies the ascending chain condition if whenever $I_{1} \subseteq I_{2} \subseteq I_{3} \subseteq \cdots$ is an ascending chain of ideals, there is an integer $N$ such that $I_{k} = I_{N}$ for all $k \geqslant N$. Show that $R$ satisfies the ascending chain condition if and only if every ideal of $R$ is finitely generated.
 :::
 
 ::: {.solution}

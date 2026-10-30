@@ -18,13 +18,13 @@ audit:
 ::: {.problem}
 Give an example of each of the following.
 
-(a) An irreducible polynomial of degree 3 in $\ZZ _ { 3 } [ x ]$
+(a) An irreducible polynomial of degree $3$ in $\ZZ_{3}[x]$.
 
-(b) A polynomial in $\ZZ [ x ]$ that is not irreducible in $\ZZ [ x ]$ but is irreducible in $\QQ [ x ]$
+(b) A polynomial in $\ZZ[x]$ that is not irreducible in $\ZZ[x]$ but is irreducible in $\QQ[x]$.
 
-(c) A non-commutative ring of characteristic $p , p \mathrm { ~ a ~ }$ prime.
+(c) A non-commutative ring of characteristic $p$, $p$ a prime.
 
-(d) A ring with exactly 6 invertible elements.
+(d) A ring with exactly $6$ invertible elements.
 
 (e) An infinite non-commutative ring with only finitely many ideals.
 
@@ -40,7 +40,7 @@ Give an example of each of the following.
 
 (k) A finite non-commutative ring.
 
-(l) A commutative ring with a sequence $\{ P _ { n } \} _ { n = 1 } ^ { \infty }$ of prime ideals such that $P _ { n }$ is properly contained in $P _ { n + 1 }$ for all n.
+(l) A commutative ring with a sequence $\{P_{n}\}_{n=1}^{\infty}$ of prime ideals such that $P_{n}$ is properly contained in $P_{n+1}$ for all $n$.
 
 (m) A non-zero prime ideal of a commutative ring that is not a maximal ideal.
 

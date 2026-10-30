@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 3 ( { \bmod { 4 } } )$ , then $x ^ { 2 } + 1$ is irreducible in $\ZZ _ { p } [ x ]$
+Show that if $p$ is a prime such that $p \equiv 3 \pmod{4}$, then $x^{2} + 1$ is irreducible in $\ZZ_{p}[x]$.
 :::
 
 ::: {.solution}

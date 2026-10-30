@@ -16,7 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with identity and define $U _ { 2 } ( R ) \ = \ \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \ \st \ a , b , c \in R \right\}$ Prove that every R-automorphism of $U _ { 2 } ( R )$ is inner.
+Let $R$ be a commutative ring with identity and define
+$$
+U_{2}(R) = \left\{ \begin{bmatrix} a & b \\ 0 & c \end{bmatrix} \st a, b, c \in R \right\}.
+$$
+Prove that every $R$-automorphism of $U_{2}(R)$ is inner.
 :::
 
 ::: {.solution}

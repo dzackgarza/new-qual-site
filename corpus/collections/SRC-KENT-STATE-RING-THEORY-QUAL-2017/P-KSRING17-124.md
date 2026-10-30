@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with identity and M a maximal ideal of R. Let $R _ { M }$ be the ring of quotients of R with respect to the multiplicative set $R - M = \{ s \in R \mid s \not \in M \}$ . Show the following.
+Let $R$ be a commutative ring with identity and $M$ a maximal ideal of $R$. Let $R_{M}$ be the ring of quotients of $R$ with respect to the multiplicative set $R - M = \{s \in R \st s \notin M\}$. Show the following.
 
-(a) $\begin{array} { r } { M _ { M } = \{ \frac { a } { s } \mid a \in M , s \not \in M \} } \end{array}$ is the unique maximal ideal of $R _ { M }$
+(a) $M_{M} = \{\frac{a}{s} \st a \in M,\ s \notin M\}$ is the unique maximal ideal of $R_{M}$.
 
-(b) The fields $R / M$ and $R _ { M } / M _ { M }$ are isomorphic.
+(b) The fields $R/M$ and $R_{M}/M_{M}$ are isomorphic.
 :::
 
 ::: {.solution}

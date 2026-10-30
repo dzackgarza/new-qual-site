@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Denote the set of invertible elements of the ring $\ZZ _ { n }$ by $U _ { n }$
+[NEW] Denote the set of invertible elements of the ring $\ZZ_{n}$ by $U_{n}$.
 
-(a) List all the elements of $U _ { 2 4 }$
+(a) List all the elements of $U_{24}$.
 
-(b) Is $U _ { 2 4 }$ a cyclic group under multiplication?
-Justify your answer.
+(b) Is $U_{24}$ a cyclic group under multiplication? Justify your answer.
 :::
 
 ::: {.solution}

@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a , b \in \QQ \}$
+Let $\QQ$ be the field of rational numbers and $D = \{a + b\sqrt{2} \st a, b \in \QQ\}$.
 
-(a) Show that D is a subring of the field of real numbers.
+(a) Show that $D$ is a subring of the field of real numbers.
 
-(b) Show that D is a principal ideal domain.
+(b) Show that $D$ is a principal ideal domain.
 
-(c) Show that $\sqrt { 3 }$ is not an element of D.
+(c) Show that $\sqrt{3}$ is not an element of $D$.
 :::
 
 ::: {.solution}

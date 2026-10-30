@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let m and n be relatively prime integers.
+Let $m$ and $n$ be relatively prime integers.
 
-(a) Show that if c and d are any integers, then there is an integer x such that $x \equiv c ( \mathrm { m o d } m )$ and $x \equiv d ( \mathrm { m o d } n )$
+(a) Show that if $c$ and $d$ are any integers, then there is an integer $x$ such that $x \equiv c \pmod{m}$ and $x \equiv d \pmod{n}$.
 
-(b) Show that $\ZZ _ { m n }$ and $\ZZ _ { m } \times \ZZ _ { n }$ are isomorphic as rings.
+(b) Show that $\ZZ_{mn}$ and $\ZZ_{m} \times \ZZ_{n}$ are isomorphic as rings.
 :::
 
 ::: {.solution}

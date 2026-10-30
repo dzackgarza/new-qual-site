@@ -16,14 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $R = C [ 0 , 1 ]$ be the ring of all continuous real-valued functions on [0, 1], with addition and multiplication defined as follows.
-For $f , g \in R$ and $x \in [ 0 , 1 ]$
-
+Let $R = C[0, 1]$ be the ring of all continuous real-valued functions on $[0, 1]$, with addition and multiplication defined as follows. For $f, g \in R$ and $x \in [0, 1]$,
 $$
-\begin{array} { l } { { ( f + g ) ( x ) = f ( x ) + g ( x ) } } \\ { { ( f g ) ( x ) = f ( x ) g ( x ) . } } \end{array}
+\begin{aligned} (f + g)(x) &= f(x) + g(x), \\ (fg)(x) &= f(x)g(x). \end{aligned}
 $$
-
-Prove that if M is a maximal ideal of R, then there is a real number $x _ { 0 } \in [ 0 , 1 ]$ such that $M = \{ f \in R \mid f ( x _ { 0 } ) = 0 \}$ .
+Prove that if $M$ is a maximal ideal of $R$, then there is a real number $x_{0} \in [0, 1]$ such that $M = \{f \in R \st f(x_{0}) = 0\}$.
 :::
 
 ::: {.solution}

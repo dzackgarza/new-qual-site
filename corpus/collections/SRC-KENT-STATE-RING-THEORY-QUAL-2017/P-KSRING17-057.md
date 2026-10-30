@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with 1 such that for every x in R there is an integer $n > 1$ (depending on x) such that $x ^ { n } = x$ . Show that every prime ideal of R is maximal.
+Let $R$ be a commutative ring with $1$ such that for every $x$ in $R$ there is an integer $n > 1$ (depending on $x$) such that $x^{n} = x$. Show that every prime ideal of $R$ is maximal.
 :::
 
 ::: {.solution}

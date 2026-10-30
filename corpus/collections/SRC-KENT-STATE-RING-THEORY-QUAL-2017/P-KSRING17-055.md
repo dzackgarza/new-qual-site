@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with identity and let C be a chain of prime ideals of R. Show that $\cup _ { P \in { \mathcal { C } } } P$ and $\cap _ { P \in { \mathcal { C } } } P$ are prime ideals of R.
+Let $R$ be a commutative ring with identity and let $\mathcal{C}$ be a chain of prime ideals of $R$. Show that $\bigcup_{P \in \mathcal{C}} P$ and $\bigcap_{P \in \mathcal{C}} P$ are prime ideals of $R$.
 :::
 
 ::: {.solution}

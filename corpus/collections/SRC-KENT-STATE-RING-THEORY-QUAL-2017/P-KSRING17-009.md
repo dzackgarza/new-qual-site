@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-If $\left(\frac{\cdot}{\cdot}\right)$ denotes the Legendre symbol, prove Euler’s Criterion: if p is a prime and a is any integer relatively prime to p, then $a ^ { ( p - 1 ) / 2 } \equiv \left( { \frac { a } { p } } \right)$ (mod p).
+If $\left(\frac{\cdot}{\cdot}\right)$ denotes the Legendre symbol, prove Euler's Criterion: if $p$ is a prime and $a$ is any integer relatively prime to $p$, then $a^{(p-1)/2} \equiv \left(\frac{a}{p}\right) \pmod{p}$.
 :::
 
 ::: {.remark}

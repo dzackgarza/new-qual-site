@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let D be a principal ideal domain and let P be a non-zero prime ideal.
-Show that $D _ { P }$ , the localization of D at P , is a principal ideal domain and has a unique irreducible element, up to associates.
+Let $D$ be a principal ideal domain and let $P$ be a non-zero prime ideal. Show that $D_{P}$, the localization of $D$ at $P$, is a principal ideal domain and has a unique irreducible element, up to associates.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the polynomial $f ( x ) = x ^ { 4 } + 5 x ^ { 2 } + 3 x + 2$ is irreducible over the field of rational numbers.
+Show that the polynomial $f(x) = x^{4} + 5x^{2} + 3x + 2$ is irreducible over the field of rational numbers.
 :::
 
 ::: {.solution}

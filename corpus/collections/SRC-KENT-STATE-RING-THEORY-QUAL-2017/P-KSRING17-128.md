@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with 1 and D a multiplicative subset of R containing 1. Let J be an ideal in the ring of fractions $D ^ { - 1 } R$ and let
-
+Let $R$ be a commutative ring with $1$ and $D$ a multiplicative subset of $R$ containing $1$. Let $J$ be an ideal in the ring of fractions $D^{-1}R$ and let
 $$
-I = \{ a \in R \mid { \frac { a } { d } } \in J { \mathrm { ~ f o r ~ s o m e ~ } } d \in D \} .
+I = \left\{a \in R \st \frac{a}{d} \in J \text{ for some } d \in D\right\}.
 $$
-
-Show that I is an ideal of R.
+Show that $I$ is an ideal of $R$.
 :::
 
 ::: {.solution}

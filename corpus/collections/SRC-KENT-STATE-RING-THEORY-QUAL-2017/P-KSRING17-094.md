@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let π be an irreducible element of a principal ideal domain R. Prove that π is a prime element (that is, π | ab implies ${ \pi } \mid a \ \mathrm { o r } \ \pi \mid b )$
+Let $\pi$ be an irreducible element of a principal ideal domain $R$. Prove that $\pi$ is a prime element (that is, $\pi \divides ab$ implies $\pi \divides a$ or $\pi \divides b$).
 :::
 
 ::: {.solution}

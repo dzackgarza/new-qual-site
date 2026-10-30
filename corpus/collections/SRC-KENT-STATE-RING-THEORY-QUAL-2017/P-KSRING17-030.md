@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A ring R is called simple if $R ^ { 2 } \neq 0$ and 0 and R are its only ideals.
-Show that the center of a simple ring is 0 or a field.
+A ring $R$ is called simple if $R^{2} \neq 0$ and $0$ and $R$ are its only ideals. Show that the center of a simple ring is $0$ or a field.
 :::
 
 ::: {.solution}

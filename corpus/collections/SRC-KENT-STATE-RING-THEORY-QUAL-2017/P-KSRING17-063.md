@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with 1. An ideal I of R is called a primary ideal if $I \neq R$ and for all $x , y \in R$ with $x y \in I$ , either $x \in I$ or $y ^ { n } \in I$ for some integer n $\geqslant 1$ .
+Let $R$ be a commutative ring with $1$. An ideal $I$ of $R$ is called a primary ideal if $I \neq R$ and for all $x, y \in R$ with $xy \in I$, either $x \in I$ or $y^{n} \in I$ for some integer $n \geqslant 1$.
 
-(a) Show that an ideal I of R is primary if and only if $R / I \ne 0$ and every zero-divisor in $R / I$ is nilpotent.
+(a) Show that an ideal $I$ of $R$ is primary if and only if $R/I \ne 0$ and every zero-divisor in $R/I$ is nilpotent.
 
-(b) Show that if I is a primary ideal of R then the radical Rad(I) of I is a prime ideal.
-(Recall that $\operatorname { R a d } ( I ) = \{ x \in R \mid x ^ { n } \in I$ for some n}.)
+(b) Show that if $I$ is a primary ideal of $R$ then the radical $\operatorname{Rad}(I)$ of $I$ is a prime ideal. (Recall that $\operatorname{Rad}(I) = \{x \in R \st x^{n} \in I \text{ for some } n\}$.)
 :::
 
 ::: {.solution}

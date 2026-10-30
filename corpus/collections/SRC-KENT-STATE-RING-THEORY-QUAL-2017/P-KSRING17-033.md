@@ -16,20 +16,18 @@ audit:
 ---
 
 ::: {.problem}
-Let $R = C [ 0 , 1 ]$ be the set of all continuous real-valued functions on [0, 1]. Define addition and multiplication on R as follows.
-For $f , g \in R$ and $x \in [ 0 , 1 ]$ ,
-
+Let $R = C[0, 1]$ be the set of all continuous real-valued functions on $[0, 1]$. Define addition and multiplication on $R$ as follows. For $f, g \in R$ and $x \in [0, 1]$,
 $$
-( f + g ) ( x ) = f ( x ) + g ( x ) { \mathrm { ~ a n d ~ } } ( f g ) ( x ) = f ( x ) g ( x ) .
+(f + g)(x) = f(x) + g(x) \quad \text{and} \quad (fg)(x) = f(x)g(x).
 $$
 
-(a) Show that R with these operations is a commutative ring with identity.
+(a) Show that $R$ with these operations is a commutative ring with identity.
 
-(b) Find the units of R.
+(b) Find the units of $R$.
 
-(c) If $f \in R$ and $f ^ { 2 } = f ,$ , then $f = 0 _ { R }$ or $f = 1 _ { R }$
+(c) If $f \in R$ and $f^{2} = f$, then $f = 0_{R}$ or $f = 1_{R}$.
 
-(d) If n is a positive integer and $f \in R$ is such that $f ^ { n } = 0 _ { R }$ , then $f = 0 _ { R }$
+(d) If $n$ is a positive integer and $f \in R$ is such that $f^{n} = 0_{R}$, then $f = 0_{R}$.
 :::
 
 ::: {.solution}

@@ -16,14 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Find all values of a in $\ZZ _ { 3 }$ such that the quotient ring
-
+Find all values of $a$ in $\ZZ_{3}$ such that the quotient ring
 $$
-\ZZ _ { 3 } [ x ] / ( x ^ { 3 } + x ^ { 2 } + a x + 1 )
+\ZZ_{3}[x]/(x^{3} + x^{2} + ax + 1)
 $$
-
-is a field.
-Justify your answer.
+is a field. Justify your answer.
 :::
 
 ::: {.solution}

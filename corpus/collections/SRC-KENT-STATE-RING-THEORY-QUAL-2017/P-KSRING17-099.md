@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\ZZ [ \sqrt { - 2 } ] = \{ a + b \sqrt { - 2 } \ \st \ a , b \in \ZZ \}$ is a Euclidean domain.
+Prove that $\ZZ[\sqrt{-2}] = \{a + b\sqrt{-2} \st a, b \in \ZZ\}$ is a Euclidean domain.
 :::
 
 ::: {.solution}

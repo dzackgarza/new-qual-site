@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that a non-zero ring R in which $x ^ { 2 } = x$ for all $x \in R$ is of characteristic 2 and is commutative.
+Show that a non-zero ring $R$ in which $x^{2} = x$ for all $x \in R$ is of characteristic $2$ and is commutative.
 :::
 
 ::: {.solution}

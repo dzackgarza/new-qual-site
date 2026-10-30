@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with identity that has exactly one prime ideal P . Prove the following.
+Let $R$ be a commutative ring with identity that has exactly one prime ideal $P$. Prove the following.
 
-(a) $R / P$ is a field.
+(a) $R/P$ is a field.
 
-(b) R is isomorphic to $R _ { P }$ , the ring of quotients of R with respect to the multiplicative set $R - P = \{ s \in R \mid s \not \in P \}$
+(b) $R$ is isomorphic to $R_{P}$, the ring of quotients of $R$ with respect to the multiplicative set $R - P = \{s \in R \st s \notin P\}$.
 :::
 
 ::: {.solution}

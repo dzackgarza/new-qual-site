@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Denote the set of invertible elements of the ring $\ZZ _ { n }$ by $U _ { n }$
+Denote the set of invertible elements of the ring $\ZZ_{n}$ by $U_{n}$.
 
-(a) List all the elements of $U _ { 1 8 }$
+(a) List all the elements of $U_{18}$.
 
-(b) Is $U _ { 1 8 }$ a cyclic group under multiplication?
-Justify your answer.
+(b) Is $U_{18}$ a cyclic group under multiplication? Justify your answer.
 :::
 
 ::: {.solution}

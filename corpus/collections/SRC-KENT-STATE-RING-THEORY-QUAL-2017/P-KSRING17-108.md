@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Show that $x ^ { 4 } + x ^ { 3 } + x ^ { 2 } + x + 1$ is irreducible in $\ZZ _ { 3 } [ x ]$
+(a) Show that $x^{4} + x^{3} + x^{2} + x + 1$ is irreducible in $\ZZ_{3}[x]$.
 
-(b) Show that $x ^ { 4 } + 1$ is not irreducible in $\ZZ _ { 3 } [ x ]$
+(b) Show that $x^{4} + 1$ is not irreducible in $\ZZ_{3}[x]$.
 :::
 
 ::: {.solution}

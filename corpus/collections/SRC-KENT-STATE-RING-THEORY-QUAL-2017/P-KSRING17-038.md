@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 1 { \ : } ( \mathrm { m o d \ : } 6 )$ , then $x ^ { 3 } + 1$ splits in $\ZZ _ { p } [ x ]$
+Show that if $p$ is a prime such that $p \equiv 1 \pmod{6}$, then $x^{3} + 1$ splits in $\ZZ_{p}[x]$.
 :::
 
 ::: {.solution}

@@ -20,10 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-Suppose R is a domain and I and J are ideals of R such that IJ is a nonzero principal ideal.
-Show that I (and by symmetry J) is finitely generated.
+Suppose $R$ is a domain and $I$ and $J$ are ideals of $R$ such that $IJ$ is a nonzero principal ideal. Show that $I$ (and by symmetry $J$) is finitely generated.
 
-[Hint: If $I J = ( a )$ , then $a = \sum _ { i = 1 } ^ { n } x _ { i } y _ { i }$ for some $x _ { i } \in I$ and $y _ { i } \in J$ . Show the $x _ { i }$ generate I.]
+[Hint: If $IJ = (a)$, then $a = \sum_{i=1}^{n} x_{i}y_{i}$ for some $x_{i} \in I$ and $y_{i} \in J$. Show the $x_{i}$ generate $I$.]
 :::
 
 ::: {.solution}

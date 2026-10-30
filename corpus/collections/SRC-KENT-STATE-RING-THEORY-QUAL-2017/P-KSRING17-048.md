@@ -16,14 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Find all values of a in $\ZZ _ { 5 }$ such that the quotient ring
-
+Find all values of $a$ in $\ZZ_{5}$ such that the quotient ring
 $$
-\ZZ _ { 5 } [ x ] / ( x ^ { 3 } + 2 x ^ { 2 } + a x + 3 )
+\ZZ_{5}[x]/(x^{3} + 2x^{2} + ax + 3)
 $$
-
-is a field.
-Justify your answer.
+is a field. Justify your answer.
 :::
 
 ::: {.solution}

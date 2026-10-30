@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let D be a unique factorization domain and F its field of fractions.
-Prove that if d is an irreducible element in D, then there is no $x \in F$ such that $x ^ { 2 } = d .$
+Let $D$ be a unique factorization domain and $F$ its field of fractions. Prove that if $d$ is an irreducible element in $D$, then there is no $x \in F$ such that $x^{2} = d$.
 :::
 
 ::: {.solution}

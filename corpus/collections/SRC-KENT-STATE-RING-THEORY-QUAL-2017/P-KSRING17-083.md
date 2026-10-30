@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \ZZ ( { \sqrt { 2 1 } } ) = \{ m + n { \sqrt { 2 1 } } \mid m , n \in \ZZ \}$ and $F = \QQ ( { \sqrt { 2 1 } } )$ , the field of fractions of D. Show the following:
+Let $D = \ZZ(\sqrt{21}) = \{m + n\sqrt{21} \st m, n \in \ZZ\}$ and $F = \QQ(\sqrt{21})$, the field of fractions of $D$. Show the following:
 
-(a) $x ^ { 2 } - x - 5$ is irreducible in $D [ x ]$ but not in $F [ x ]$
+(a) $x^{2} - x - 5$ is irreducible in $D[x]$ but not in $F[x]$.
 
-(b) D is not a unique factorization domain.
+(b) $D$ is not a unique factorization domain.
 :::
 
 ::: {.solution}

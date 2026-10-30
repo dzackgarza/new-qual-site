@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime and let R be the ring of all $2 \times 2$ matrices of the form $\left[ \begin{array} { c c } { a } & { b } \\ { p b } & { a } \end{array} \right]$ , where $a , b \in \ZZ$ . Prove that R is isomorphic to $\ZZ [ { \sqrt { p } } ]$
+Let $p$ be a prime and let $R$ be the ring of all $2 \times 2$ matrices of the form $\begin{bmatrix} a & b \\ pb & a \end{bmatrix}$, where $a, b \in \ZZ$. Prove that $R$ is isomorphic to $\ZZ[\sqrt{p}]$.
 :::
 
 ::: {.solution}

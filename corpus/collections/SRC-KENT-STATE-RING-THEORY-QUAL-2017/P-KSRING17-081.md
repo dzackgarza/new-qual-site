@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 1 ( { \bmod { 4 } } )$ , then $\ZZ [ { \sqrt { p } } ]$ is not a unique factorization domain.
+Show that if $p$ is a prime such that $p \equiv 1 \pmod{4}$, then $\ZZ[\sqrt{p}]$ is not a unique factorization domain.
 :::
 
 ::: {.solution}

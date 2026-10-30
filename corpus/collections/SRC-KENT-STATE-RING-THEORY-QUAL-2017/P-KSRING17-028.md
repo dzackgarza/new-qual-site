@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime and $F _ { p }$ the set of all $2 \times 2$ matrices of the form $\left[ \begin{array} { r r } { a } & { b } \\ { - b } & { a } \end{array} \right]$ , where $a , b \in \ZZ _ { p }$
+Let $p$ be a prime and $F_{p}$ the set of all $2 \times 2$ matrices of the form $\begin{bmatrix} a & b \\ -b & a \end{bmatrix}$, where $a, b \in \ZZ_{p}$.
 
-(a) Show that $F _ { p }$ is a commutative ring with identity.
+(a) Show that $F_{p}$ is a commutative ring with identity.
 
-(b) Show that $F _ { 7 }$ is a field.
+(b) Show that $F_{7}$ is a field.
 
-(c) Show that $F _ { 1 3 }$ is not a field.
+(c) Show that $F_{13}$ is not a field.
 :::
 
 ::: {.solution}

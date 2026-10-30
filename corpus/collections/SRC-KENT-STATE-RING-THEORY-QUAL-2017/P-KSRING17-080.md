@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that there is an integer b with $p = b ^ { 2 } + 4$ , then $\ZZ [ { \sqrt { p } } ]$ is not a unique factorization domain.
+Show that if $p$ is a prime such that there is an integer $b$ with $p = b^{2} + 4$, then $\ZZ[\sqrt{p}]$ is not a unique factorization domain.
 :::
 
 ::: {.solution}

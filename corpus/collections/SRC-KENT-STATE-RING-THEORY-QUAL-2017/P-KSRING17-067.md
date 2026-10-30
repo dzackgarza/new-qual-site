@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with 1 and let I be an ideal of R satisfying $I ^ { 2 } = \{ 0 \}$ . Show that if $a + I \in R / I$ is an idempotent element of $R / I$ , then the coset $a + I$ contains an idempotent element of R.
+Let $R$ be a commutative ring with $1$ and let $I$ be an ideal of $R$ satisfying $I^{2} = \{0\}$. Show that if $a + I \in R/I$ is an idempotent element of $R/I$, then the coset $a + I$ contains an idempotent element of $R$.
 :::
 
 ::: {.solution}

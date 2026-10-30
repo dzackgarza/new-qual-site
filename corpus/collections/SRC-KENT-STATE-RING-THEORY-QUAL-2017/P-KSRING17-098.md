@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let D be a unique factorization domain and p a fixed irreducible element of D such that if q is any irreducible element of $D ,$ then q is an associate of $p .$ Show the following.
+Let $D$ be a unique factorization domain and $p$ a fixed irreducible element of $D$ such that if $q$ is any irreducible element of $D$, then $q$ is an associate of $p$. Show the following.
 
-(a) If d is a nonzero element of D, then d is uniquely expressible in the form $u p ^ { n }$ , where u is a unit of D and n is a non-negative integer.
+(a) If $d$ is a nonzero element of $D$, then $d$ is uniquely expressible in the form $up^{n}$, where $u$ is a unit of $D$ and $n$ is a non-negative integer.
 
-(b) D is a Euclidean domain.
+(b) $D$ is a Euclidean domain.
 :::
 
 ::: {.solution}

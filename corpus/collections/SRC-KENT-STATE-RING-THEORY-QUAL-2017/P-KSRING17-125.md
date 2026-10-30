@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be an integral domain, S a multiplicative set, and let $\begin{array} { r } { S ^ { - 1 } R = \{ \frac { r } { s } \ \st \ r \in R , \ s \in S \} } \end{array}$ (contained in the field of fractions of R). Show that if P is a prime ideal of R, then $S ^ { - 1 } P$ is either a prime ideal of $S ^ { - 1 } R$ or else equals $S ^ { - 1 } R$
+Let $R$ be an integral domain, $S$ a multiplicative set, and let $S^{-1}R = \{\frac{r}{s} \st r \in R,\ s \in S\}$ (contained in the field of fractions of $R$). Show that if $P$ is a prime ideal of $R$, then $S^{-1}P$ is either a prime ideal of $S^{-1}R$ or else equals $S^{-1}R$.
 :::
 
 ::: {.solution}

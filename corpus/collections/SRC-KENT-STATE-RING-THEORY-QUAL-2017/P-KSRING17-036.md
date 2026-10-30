@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if p is a prime such that $p \equiv 1 { \bigl ( } { \mathrm { m o d ~ } } 4 { \bigr ) }$ , then $x ^ { 2 } + 1$ is not irreducible in $\ZZ _ { p } [ x ]$
+Show that if $p$ is a prime such that $p \equiv 1 \pmod{4}$, then $x^{2} + 1$ is not irreducible in $\ZZ_{p}[x]$.
 :::
 
 ::: {.solution}

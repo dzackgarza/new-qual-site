@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring and P a prime ideal of R. Show that there is a prime ideal $P _ { 0 } \subseteq P$ that does not properly contain any prime ideal.
+Let $R$ be a commutative ring and $P$ a prime ideal of $R$. Show that there is a prime ideal $P_{0} \subseteq P$ that does not properly contain any prime ideal.
 :::
 
 ::: {.solution}

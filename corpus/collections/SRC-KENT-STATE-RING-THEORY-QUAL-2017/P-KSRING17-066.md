@@ -16,15 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with identity.
-An ideal I of R is irreducible if it cannot be expressed as the intersection of two ideals of R neither of which is contained in the other.
-Show the following.
+Let $R$ be a commutative ring with identity. An ideal $I$ of $R$ is irreducible if it cannot be expressed as the intersection of two ideals of $R$ neither of which is contained in the other. Show the following.
 
-(a) If P is a prime ideal then P is irreducible.
+(a) If $P$ is a prime ideal then $P$ is irreducible.
 
-(b) If x is a non-zero element of R, then there is an ideal $I _ { x }$ , maximal with respect to the property that $x \notin I _ { x } .$ , and $I _ { x }$ is irreducible.
+(b) If $x$ is a non-zero element of $R$, then there is an ideal $I_{x}$, maximal with respect to the property that $x \notin I_{x}$, and $I_{x}$ is irreducible.
 
-(c) If every irreducible ideal of R is a prime ideal, then 0 is the only nilpotent element of R.
+(c) If every irreducible ideal of $R$ is a prime ideal, then $0$ is the only nilpotent element of $R$.
 :::
 
 ::: {.solution}

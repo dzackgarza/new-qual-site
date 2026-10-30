@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \ZZ ( { \sqrt { - 1 1 } } ) = \{ m + n { \sqrt { - 1 1 } } \mid m , n \in \ZZ \}$ and $F = \QQ ( { \sqrt { - 1 1 } } )$ its field of fractions.
-Show the following:
+Let $D = \ZZ(\sqrt{-11}) = \{m + n\sqrt{-11} \st m, n \in \ZZ\}$ and $F = \QQ(\sqrt{-11})$ its field of fractions. Show the following:
 
-(a) $x ^ { 2 } - x + 3$ is irreducible in $D [ x ]$ but not in $F [ x ]$
+(a) $x^{2} - x + 3$ is irreducible in $D[x]$ but not in $F[x]$.
 
-(b) D is not a unique factorization domain.
+(b) $D$ is not a unique factorization domain.
 :::
 
 ::: {.solution}

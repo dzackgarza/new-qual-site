@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Let R be a commutative ring with identity and let $I _ { 1 } , I _ { 2 } , \ldots , I _ { n }$ be pairwise comaximal ideals of $R \ ( { \mathrm { i . e . , } } \ I _ { i } + I _ { j } = R { \mathrm { i f } } \ i \neq j )$ . Show that $I _ { i } + \bigcap _ { j \neq i } I _ { j } = R$ for all i.
+[NEW] Let $R$ be a commutative ring with identity and let $I_{1}, I_{2}, \ldots, I_{n}$ be pairwise comaximal ideals of $R$ (i.e., $I_{i} + I_{j} = R$ if $i \neq j$). Show that $I_{i} + \bigcap_{j \neq i} I_{j} = R$ for all $i$.
 :::
 
 ::: {.solution}

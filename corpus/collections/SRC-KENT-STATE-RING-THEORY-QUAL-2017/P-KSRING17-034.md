@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let S be the ring of all bounded, continuous functions $f : \RR \to \RR$ , where R is the set of real numbers.
-Let I be the set of functions f in S such that $f ( t ) \to 0 { \mathrm { ~ a s ~ } } \abs{ t } \to \infty$
+Let $S$ be the ring of all bounded, continuous functions $f \colon \RR \to \RR$, where $\RR$ is the set of real numbers. Let $I$ be the set of functions $f$ in $S$ such that $f(t) \to 0$ as $\abs{t} \to \infty$.
 
-(a) Show that I is an ideal of S.
+(a) Show that $I$ is an ideal of $S$.
 
-(b) Suppose $x \in S$ is such that there is an $i \in I$ with ix = x. Show that $x ( t ) = 0$ for all sufficiently large |t|.
+(b) Suppose $x \in S$ is such that there is an $i \in I$ with $ix = x$. Show that $x(t) = 0$ for all sufficiently large $\abs{t}$.
 :::
 
 ::: {.solution}

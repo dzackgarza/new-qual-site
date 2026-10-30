@@ -20,9 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a nonzero commutative ring with 1 in which every proper ideal is a prime ideal.
-Prove that R is a field.
-(Hint: For $a \neq 0$ consider the ideals (a) and $( a ^ { 2 } ) . \mathrm { , }$ )
+Let $R$ be a nonzero commutative ring with $1$ in which every proper ideal is a prime ideal. Prove that $R$ is a field. (Hint: For $a \neq 0$ consider the ideals $(a)$ and $(a^{2})$.)
 :::
 
 ::: {.solution}

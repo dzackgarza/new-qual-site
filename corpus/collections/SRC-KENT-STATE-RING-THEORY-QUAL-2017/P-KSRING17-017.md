@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let m, n be positive integers such that m divides n. Then the natural map $\varphi : \ZZ _ { n } \to \ZZ _ { m }$ given by $a + ( n ) \mapsto a + ( m )$ is a surjective ring homomorphism.
-If $U _ { n } , U _ { m }$ are the units of $\ZZ _ { n }$ and $\ZZ _ { m }$ , respectively, show that $\varphi : U _ { n } \to U _ { m }$ is a surjective group homomorphism.
+Let $m, n$ be positive integers such that $m$ divides $n$. Then the natural map $\varphi \colon \ZZ_{n} \to \ZZ_{m}$ given by $a + (n) \mapsto a + (m)$ is a surjective ring homomorphism. If $U_{n}, U_{m}$ are the units of $\ZZ_{n}$ and $\ZZ_{m}$, respectively, show that $\varphi \colon U_{n} \to U_{m}$ is a surjective group homomorphism.
 :::
 
 ::: {.solution}

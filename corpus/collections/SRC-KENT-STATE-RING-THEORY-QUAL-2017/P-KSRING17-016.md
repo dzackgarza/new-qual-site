@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be any ring with identity, and n any positive integer.
-If $M _ { n } ( R )$ denotes the ring of $n \times n$ matrices with entries in R, prove that $M _ { n } ( I )$ is an ideal of $M _ { n } ( R )$ whenever I is an ideal of R, and that every ideal of $M _ { n } ( R )$ has this form.
+Let $R$ be any ring with identity, and $n$ any positive integer. If $M_{n}(R)$ denotes the ring of $n \times n$ matrices with entries in $R$, prove that $M_{n}(I)$ is an ideal of $M_{n}(R)$ whenever $I$ is an ideal of $R$, and that every ideal of $M_{n}(R)$ has this form.
 :::
 
 ::: {.solution}

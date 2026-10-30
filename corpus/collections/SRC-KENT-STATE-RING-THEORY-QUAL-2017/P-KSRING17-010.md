@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $R _ { 1 }$ and $R _ { 2 }$ be commutative rings with identities and let $R = R _ { 1 } \times R _ { 2 }$ . Show that every ideal I of R is of the form $I = I _ { 1 } \times I _ { 2 }$ with $I _ { i }$ an ideal of $R _ { i }$ for $i = 1 , 2$
+Let $R_{1}$ and $R_{2}$ be commutative rings with identities and let $R = R_{1} \times R_{2}$. Show that every ideal $I$ of $R$ is of the form $I = I_{1} \times I_{2}$ with $I_{i}$ an ideal of $R_{i}$ for $i = 1, 2$.
 :::
 
 ::: {.solution}

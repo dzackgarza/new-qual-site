@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $U ( R )$ denote the group of units of a ring R. Prove that if m divides n, then the natural ring homomorphism $\ZZ _ { n } \to \ZZ _ { m }$ maps $U ( \ZZ _ { n } )$ onto $U ( \ZZ _ { m } )$
+Let $U(R)$ denote the group of units of a ring $R$. Prove that if $m$ divides $n$, then the natural ring homomorphism $\ZZ_{n} \to \ZZ_{m}$ maps $U(\ZZ_{n})$ onto $U(\ZZ_{m})$.
 
-Give an example that shows that $U ( R )$ does not have to map onto $U ( S )$ under a surjective ring homomorphism $R \to S$ .
+Give an example that shows that $U(R)$ does not have to map onto $U(S)$ under a surjective ring homomorphism $R \to S$.
 :::
 
 ::: {.solution}
