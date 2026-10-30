@@ -85,7 +85,7 @@ In general, if $f:\RR^2\to\RR$ is $C^1$, then at every point $p$ of a level set 
 
 If $f(\gamma(t))=c$ for all $t$, the chain rule gives
 $$
-0=\frac{d}{dt}f(\gamma(t))\Big|_{t=t_0}=\nabla f(p)\cdot\gamma'(t_0).
+0=\frac{d}{dt}f(\gamma(t))\evalfrom_{t=t_0}=\nabla f(p)\cdot\gamma'(t_0).
 $$
 For a unit vector $u$, the directional derivative is $D_uf(p)=\nabla f(p)\cdot u$, which by the Cauchy--Schwarz inequality is largest when $u=\nabla f(p)/\abs{\nabla f(p)}$.
 

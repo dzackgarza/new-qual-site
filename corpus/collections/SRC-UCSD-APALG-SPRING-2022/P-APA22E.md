@@ -28,7 +28,6 @@ Let $k$ be a field.
 (b) Prove or disprove: for every $n \geq 1$ and every field $k$ there is a surjective $S_{2n}$-equivariant map $\phi$ from $k[M_n]$ onto the Specht module $S^{(n,n)}$.
 
 [Note: This is very closely related to a homework problem. Do not use the result of that problem unless you are planning to reprove it.]
-:::
 
 :::
 
@@ -68,6 +67,8 @@ There is exactly one perfect matching of $\{1,2\}$, so $\CC[M_1]$ is the trivial
 The Specht module $S^{(1,1)}$ is the sign representation, on which the transposition acts by $-1$.
 An equivariant map $\phi$ from the trivial representation satisfies $(12)\phi(v)=\phi(v)$, while $(12)$ acts by $-1$ on the target; since $2\ne0$ in $\CC$, $\phi(v)=0$.
 Thus every equivariant map $\CC[M_1]\to S^{(1,1)}$ is zero, and none is surjective.
+:::
+
 :::
 
 :::
