@@ -536,7 +536,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-FALL-2025
   - [x] SRC-UCSD-TOP-JUSTIN
   - [x] SRC-UCSD-TOP-QUAL-FALL-2017
-  - [ ] SRC-UCSD-TOP-SPRING-2000
+  - [x] SRC-UCSD-TOP-SPRING-2000
   - [ ] SRC-UCSD-TOP-SPRING-2001
   - [ ] SRC-UCSD-TOP-SPRING-2002
   - [ ] SRC-UCSD-TOP-SPRING-2004
