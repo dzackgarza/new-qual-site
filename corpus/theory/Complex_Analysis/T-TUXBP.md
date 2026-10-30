@@ -2,16 +2,15 @@
 schema: qual/card@1
 id: T-TUXBP
 kind: theorem
-title: Implicit function theorem for $C^r$ maps
+title: Implicit function theorem
 slogan: 'An invertible derivative block in the solved-for variables makes the zero set locally a unique $C^r$ graph.'
 classification:
   areas:
   - complex-analysis
+  - real-analysis
   topics:
   - Calculus
-relations:
-- kind: related-to
-  target: T-QMGPN
+relations: []
 review: draft
 ---
 
@@ -26,7 +25,7 @@ Suppose $(\vector a,\vector b)\in A$ satisfies $f(\vector a,\vector b)=0$ and
 $$
 \det\frac{\partial f}{\partial\vector y}(\vector a,\vector b)\neq0.
 $$
-Then there are a neighbourhood $B\subseteq\RR^k$ of $\vector a$ and a unique continuous $g\colon B\to\RR^n$ with $g(\vector a)=\vector b$ and
+Then there are a connected open neighbourhood $B\subseteq\RR^k$ of $\vector a$ and a unique continuous $g\colon B\to\RR^n$ with $g(\vector a)=\vector b$ and
 $$
 f(\vector x,g(\vector x))=0\quad\text{for all }\vector x\in B,
 $$
@@ -40,5 +39,4 @@ $$
 \qquad\text{so}\qquad
 Dg(\vector x)=-\Bigl[\frac{\partial f}{\partial\vector y}(\vector x,g(\vector x))\Bigr]^{-1}\frac{\partial f}{\partial\vector x}(\vector x,g(\vector x)).
 $$
-The proof applies the inverse function theorem to $F(\vector x,\vector y)\coloneqq(\vector x,f(\vector x,\vector y))$, whose derivative at a point is invertible if and only if $\partial f/\partial\vector y$ is invertible there.
 :::

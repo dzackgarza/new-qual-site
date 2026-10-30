@@ -44,7 +44,6 @@ Since $f$ is continuous, $f(x) = \lim_k f(x_k) = \lim_k x_{k+1} = x$.
 
 ## The implicit and inverse function theorems
 
-[[T-QMGPN]]
 
 ::: {.slogan}
 Near a point where the derivative in the dependent variables is nonsingular, the solution set of the equation is the graph of a function.
