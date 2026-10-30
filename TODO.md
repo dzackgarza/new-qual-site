@@ -933,7 +933,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/singularities/laurent-series.md
   - [x] wiki/complex-analysis/singularities/meromorphic-functions.md
   - [x] wiki/complex-analysis/singularities/removable-poles-essential.md
-  - [ ] wiki/complex-analysis/standard-integrals.md
+  - [x] wiki/complex-analysis/standard-integrals.md
   - [ ] wiki/complex-analysis/workshops/complex-week-1-preliminaries.md
   - [ ] wiki/complex-analysis/workshops/complex-week-2-cauchy.md
   - [ ] wiki/complex-analysis/workshops/index.md
