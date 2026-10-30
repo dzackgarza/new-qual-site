@@ -62,3 +62,7 @@ These numbers, for all $k$, determine how many summands $R/(p^e)$ occur for each
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Apply the theorem to finitely generated abelian groups: they are the finitely generated $\ZZ$-modules, and $\ZZ$ is a PID.
+:::
