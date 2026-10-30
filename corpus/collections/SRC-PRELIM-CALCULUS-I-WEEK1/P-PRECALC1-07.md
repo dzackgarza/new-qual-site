@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f ( x ) = 3 x ^ { 2 } + b x + c$ has a non-simple root at $x = 2$ . What is $f ( 5 ) ?$
+Suppose that $f(x) = 3x^{2} + bx + c$ has a non-simple root at $x = 2$. What is $f(5)$?
 :::
 
 ::: {.solution}

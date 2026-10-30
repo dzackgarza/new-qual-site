@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-How many real roots does $2 x ^ { 5 } + 8 x - 7$ have?
+How many real roots does $2x^{5} + 8x - 7$ have?
 :::
 
 ::: {.solution}

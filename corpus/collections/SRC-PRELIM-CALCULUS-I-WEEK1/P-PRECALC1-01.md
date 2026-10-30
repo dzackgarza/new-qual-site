@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-What is the tangent line to the graph of $y = x + e ^ { x }$ at $x = 0 ?$
+What is the tangent line to the graph of $y = x + e^{x}$ at $x = 0$?
 :::
 
 ::: {.solution}

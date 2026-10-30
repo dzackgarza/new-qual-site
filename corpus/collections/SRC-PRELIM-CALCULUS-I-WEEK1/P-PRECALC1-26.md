@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Calculate $\int _ { - 3 } ^ { 3 } \abs{ x + 1 } d x .$
+Calculate $\displaystyle \int_{-3}^{3} \abs{x + 1}\, dx$.
 :::
 
 ::: {.solution}

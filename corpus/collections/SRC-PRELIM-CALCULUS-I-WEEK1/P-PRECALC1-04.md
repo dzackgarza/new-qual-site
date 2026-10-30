@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $c > 0$ . Find the minimum value of $f ( x ) = e ^ { x } - c x$ among $x \in \RR$
+Let $c > 0$. Find the minimum value of $f(x) = e^{x} - cx$ among $x \in \RR$.
 :::
 
 ::: {.solution}

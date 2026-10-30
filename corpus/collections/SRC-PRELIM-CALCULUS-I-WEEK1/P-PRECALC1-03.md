@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { \cos ( \beta x ) - 1 } { x ^ { 2 } } }$ for $\beta \in \RR$
+Evaluate $\displaystyle \lim_{x \to 0} \frac{\cos(\beta x) - 1}{x^{2}}$ for $\beta \in \RR$.
 :::
 
 ::: {.solution}

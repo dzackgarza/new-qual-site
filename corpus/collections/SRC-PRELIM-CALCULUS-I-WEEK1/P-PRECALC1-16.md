@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\begin{array} { r } { f ( x ) = \int _ { 0 } ^ { x } \cos ^ { 2 } ( t ^ { 2 } ) d t } \end{array}$ . Find $( f ^ { - 1 } ) ^ { \prime } ( y )$ for $y = f ( 3 )$
+Let $\displaystyle f(x) = \int_{0}^{x} \cos^{2}(t^{2})\, dt$. Find $(f^{-1})'(y)$ for $y = f(3)$.
 :::
 
 ::: {.solution}

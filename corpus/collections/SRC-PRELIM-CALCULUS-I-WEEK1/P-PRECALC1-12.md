@@ -12,7 +12,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\begin{array} { r } { J = \int _ { 0 } ^ { 1 } \sqrt { 1 - x ^ { 4 } } d x , \quad K = \int _ { 0 } ^ { 1 } \sqrt { 1 + x ^ { 4 } } d x , \quad L = \int _ { 0 } ^ { 1 } \sqrt { 1 - x ^ { 8 } } d x } \end{array}$ . Order the numbers $J , K , L , 1$ in increasing order.
+Let
+$$
+J = \int_{0}^{1} \sqrt{1 - x^{4}}\, dx, \qquad K = \int_{0}^{1} \sqrt{1 + x^{4}}\, dx, \qquad L = \int_{0}^{1} \sqrt{1 - x^{8}}\, dx.
+$$
+Order the numbers $J, K, L, 1$ in increasing order.
 :::
 
 ::: {.solution}

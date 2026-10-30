@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\textstyle f ( x ) = \int _ { 1 } ^ { x } { \frac { d t } { 1 + t ^ { 2 } } }$ . Find an equation for the tangent line at $( 2 , f ( 2 ) )$ .
+Let $\displaystyle f(x) = \int_{1}^{x} \frac{dt}{1 + t^{2}}$. Find an equation for the tangent line at $(2, f(2))$.
 :::
 
 ::: {.solution}

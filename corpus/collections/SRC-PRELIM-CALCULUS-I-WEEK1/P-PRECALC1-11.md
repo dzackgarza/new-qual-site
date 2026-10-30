@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f ( x ) = x ^ { 2 + \sin ( x ) }$ for $x > 0$ . Find $f ^ { \prime } ( x )$
+Let $f(x) = x^{2 + \sin(x)}$ for $x > 0$. Find $f'(x)$.
 :::
 
 ::: {.solution}

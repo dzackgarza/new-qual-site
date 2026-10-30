@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that f is differentiable at $x = x _ { 0 }$ . What is $\operatorname* { l i m } _ { h \to 0 } { \frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } - h ) } { h } } \ ?$
+Suppose that $f$ is differentiable at $x = x_{0}$. What is $\displaystyle \lim_{h \to 0} \frac{f(x_{0} + h) - f(x_{0} - h)}{h}$?
 :::
 
 ::: {.solution}

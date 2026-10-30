@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the first derivative of $\begin{array} { r } { f ( x ) = \frac { x ^ { 3 } } { ( 6 x ^ { 2 } + 1 ) \sqrt [ 3 ] { ( x + 3 ) ^ { 4 } } } } \end{array}$ when $x > 0$
+Find the first derivative of $\displaystyle f(x) = \frac{x^{3}}{(6x^{2} + 1) \sqrt[3]{(x + 3)^{4}}}$ when $x > 0$.
 :::
 
 ::: {.solution}

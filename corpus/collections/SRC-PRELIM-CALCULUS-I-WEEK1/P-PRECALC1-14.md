@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Define $f ( 0 ) = 0$ and $\begin{array} { r } { f ( x ) = \frac { \abs{ x } } { x } } \end{array}$ for $x \neq 0$ . Compute $\int _ { - 1 } ^ { 1 } f ( x ) d x .$
+Define $f(0) = 0$ and $f(x) = \frac{\abs{x}}{x}$ for $x \neq 0$. Compute $\displaystyle \int_{-1}^{1} f(x)\, dx$.
 :::
 
 ::: {.solution}

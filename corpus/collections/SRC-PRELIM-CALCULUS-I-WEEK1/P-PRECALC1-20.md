@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the derivative $\frac { d } { d x } \int _ { 0 } ^ { x ^ { 2 } } e ^ { - t ^ { 2 } } d t$
+Compute the derivative $\displaystyle \frac{d}{dx} \int_{0}^{x^{2}} e^{-t^{2}}\, dt$.
 :::
 
 ::: {.solution}
