@@ -542,8 +542,6 @@ source:
   - id: P-S333B
   - id: P-S3BCC
   - id: P-S5JSR
-  - id: P-D8RQW
-  - id: P-F2KNT
   - id: P-G5HVP
   - id: P-J9QXL
   - id: P-L3WZM
@@ -657,7 +655,6 @@ source:
   - id: P-XQ4R6
   - id: P-XR6IK
   - id: P-XRTSC
-  - id: P-XT3LV
   - id: P-XVHAO
   - id: P-XVXER
   - id: P-XW3UP
