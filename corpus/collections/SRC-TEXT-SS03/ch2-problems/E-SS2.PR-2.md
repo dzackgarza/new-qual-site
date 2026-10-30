@@ -33,6 +33,7 @@ $$
 as $r \to 1$. Similarly, if $\theta = 2\pi p/q$ where $p$ and $q$ are positive integers and $z = re^{i\theta}$, then
 $$
 \abs{F(re^{i\theta})} \geq c_{p/q} \frac{1}{1 - r} \log(1/(1 - r))
+$$
 :::
 
 ::: {.solution}
