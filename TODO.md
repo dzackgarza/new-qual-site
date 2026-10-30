@@ -858,7 +858,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] wiki/algebraic-geometry/varieties/index.md
   - [x] wiki/algebraic-geometry/varieties/regular-functions.md
   - [x] wiki/algebraic-geometry/varieties/smooth-and-singular.md
-  - [ ] wiki/algebraic-geometry/varieties/the-dictionary.md
+  - [x] wiki/algebraic-geometry/varieties/the-dictionary.md
   - [ ] wiki/applied-algebra/grobner-bases/index.md
   - [ ] wiki/applied-algebra/index.md
   - [ ] wiki/applied-algebra/invariant-theory/index.md
