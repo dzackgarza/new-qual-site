@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Negate the following statements without using the word “not.”
 
-1. For every real number $x$, there is a real number $y$ such that $\abs{x-y}\geq2017$.
+(a) For every real number $x$, there is a real number $y$ such that $\abs{x-y}\geq2017$.
 
-2. The function $f:\RR\to\RR$ is continuous.
+(b) The function $f:\RR\to\RR$ is continuous.
 :::
 
 ::: {.solution}

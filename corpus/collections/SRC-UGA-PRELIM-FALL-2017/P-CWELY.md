@@ -27,10 +27,13 @@ $$
 V=\{(x,y,z)\in\RR^3:3x+4y+5z=0\}.
 $$
 
-1. Show that $V$ is a linear subspace of $\RR^3$.
-2. Prove or disprove that some linear map $S:\RR^3\to\RR^3$ has kernel $V$.
-3. Prove or disprove that some linear map $T:\RR^3\to\RR^3$ has image $V$.
-4. Prove or disprove that some linear map $U:\RR^3\to\RR^3$ has both kernel and image equal to $V$.
+(a) Show that $V$ is a linear subspace of $\RR^3$.
+
+(b) Prove or disprove that some linear map $S:\RR^3\to\RR^3$ has kernel $V$.
+
+(c) Prove or disprove that some linear map $T:\RR^3\to\RR^3$ has image $V$.
+
+(d) Prove or disprove that some linear map $U:\RR^3\to\RR^3$ has both kernel and image equal to $V$.
 :::
 
 ::: {.solution}

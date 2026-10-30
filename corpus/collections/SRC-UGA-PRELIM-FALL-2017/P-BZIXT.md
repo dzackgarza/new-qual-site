@@ -20,11 +20,11 @@ g(f(x))=x
 $$
 for every $x\in X$.
 
-1. Show that $f$ is injective.
+(a) Show that $f$ is injective.
 
-2. Show that $g$ is surjective.
+(b) Show that $g$ is surjective.
 
-3. Give an example in which neither $f$ nor $g$ is bijective.
+(c) Give an example in which neither $f$ nor $g$ is bijective.
 :::
 
 ::: {.solution}
