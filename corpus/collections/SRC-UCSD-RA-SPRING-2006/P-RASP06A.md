@@ -24,13 +24,15 @@ audit:
 ---
 
 ::: {.problem}
+Let $m = dx$ denote Lebesgue measure, and let $(X, \mathcal{M}, \mu)$ be a measure space.
+
 Determine if the statements below are True or False.
 If True, give a brief proof.
 If False, give a counterexample.
 
 (a) If $f \in C([0,1])$, $f'$ exists a.e. ($m$) and $f' = 0$ a.e. ($m$), then $f$ is constant.
 
-(b) If $E_1 \supset E_2 \supset \cdots$ are measurable sets such that $\mu(E_j) = 0$ for some $j$, then $\lim_{j \to \infty} \mu(E_j) = 0$.
+(b) If $X \supset E_1 \supset E_2 \supset \cdots$ are $\mathcal{M}$-measurable sets such that $\mu\bigl(\bigcap_j E_j\bigr) = 0$, then $\lim_{j \to \infty} \mu(E_j) = 0$.
 
 (c) Suppose $\{f_j\}$ is a sequence in $L^1(X, \mu)$ with $f_1 \geq f_2 \geq \cdots \geq 0$ a.e. ($\mu$), and let $f(x) = \lim_{j \to \infty} f_j(x)$ a.e. ($\mu$). Then $\int_X f\,d\mu = \lim_{j \to \infty} \int_X f_j\,d\mu$.
 
@@ -64,23 +66,11 @@ for almost every $x\in[0,1]$. Hence continuity together with existence of the de
 
 ::: pf-step
 
-Part (b) is true.
+Part (b) is false.
 
 ::: pf-proof
 
-Suppose $\mu(E_{j_0})=0$. Since the sets are decreasing,
-$$
-E_j\subseteq E_{j_0}
-\qquad(j\ge j_0).
-$$
-Therefore
-$$
-0\le\mu(E_j)\le\mu(E_{j_0})=0,
-$$
-so $\mu(E_j)=0$ for every $j\ge j_0$. Hence
-$$
-\boxed{\mu(E_j)\to0.}
-$$
+Take $X=\RR$ with $\mu=m$ and $E_j=[j,\infty)$. The sets decrease and $\bigcap_jE_j=\varnothing$, so $\mu\bigl(\bigcap_jE_j\bigr)=0$. But $\mu(E_j)=\infty$ for every $j$, so $\mu(E_j)\not\to0$. (Continuity from above needs $\mu(E_j)<\infty$ for some $j$.)
 
 :::
 
