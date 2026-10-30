@@ -44,7 +44,7 @@ For a positive integer $n$, let $I_n$ denote the $n\times n$ identity matrix.
    \Spec(A) = [-1, 1, 1]
    $$
 
-1. Every symmetric matrix with $A$ real spectrum admits a real eigendecomposition $\Lambda D \Lambda^T$, where $D$ is diagonal with entries the eigenvalues of $A$ and $\Lambda$ are orthogonal (which are also invertible).
+3. By the spectral theorem, the real symmetric matrix $A$ admits a factorization $A = \Lambda D \Lambda^T$, where $D$ is diagonal with the eigenvalues of $A$ as entries and $\Lambda$ is orthogonal, so $\Lambda^T = \inverseof{\Lambda}$.
    Here, we only need the fact that $A$ is diagonalizable by invertible matrices.
    In our case we have $[D^2]_{ii} = (\pm 1)^2 = 1$ so $D^2 = I_n$.
    Thus we have $$A^2 = (\Lambda D \inverseof{\Lambda})^2 = \Lambda D^2 \inverseof{\Lambda} = \Lambda I_n \inverseof{\Lambda} = I_n. \qed$$
