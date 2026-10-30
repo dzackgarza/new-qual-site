@@ -58,3 +58,7 @@ $$
 \boxed{2\abs{f'(0)}\le d}.
 $$
 :::
+
+::: {.remark title="Variations"}
+Some versions also ask for a proof of the equality case: $2\abs{f'(0)}=d$ if and only if $f(z)=a_0+a_1z$.
+:::
