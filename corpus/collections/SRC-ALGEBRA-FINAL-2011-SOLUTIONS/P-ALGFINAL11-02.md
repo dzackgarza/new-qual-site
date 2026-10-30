@@ -11,24 +11,19 @@ review: draft
 ---
 
 ::: {.problem}
-Let $n > 1$ be in $\ZZ ,$ and let $R { : = } \ZZ [ { \sqrt { - n } } ]$
-
-For $x = a + b { \sqrt { - n } } \in R \left( a , b \in \ZZ \right)$ , set ${ \bar { x } } = a - b { \sqrt { - n } } .$ , and define the norm
-
+Let $n > 1$ be in $\ZZ$, and let $R := \ZZ[\sqrt{-n}]$.
+For $x = a + b\sqrt{-n} \in R$ ($a, b \in \ZZ$), set $\bar{x} = a - b\sqrt{-n}$, and define the norm
 $$
-N ( x ) = x \bar { x } = a ^ { 2 } + n b ^ { 2 } .
+N(x) = x\bar{x} = a^{2} + nb^{2}.
 $$
 
-(a) Assuming $x \neq 0$ , describe group isomorphisms $R / x R \cong R / \bar { x } R \cong x R / x \bar { x } R .$
+(a) Assuming $x \neq 0$, describe group isomorphisms $R/xR \cong R/\bar{x}R \cong xR/x\bar{x}R$.
 
-[4]
+(b) Deduce from (a) that $N(x)^{2} = [R : xR]\,[xR : x\bar{x}R] = [R : xR]^{2}$.
 
-(b) Deduce from (a) that $N ( x ) ^ { 2 } = [ R : x R ] [ x R : x \bar { x } R ] = [ R : x R ] ^ { 2 }$ . [3]
+(c) Deduce from (b) that if $N(x)$ is prime in $\ZZ$ then $x$ is prime in $R$.
 
-(c) Deduce from (b) that if N (x) is prime in $\ZZ$ then x is prime in R. [4]
-
-(d) Deduce from (c) that if p is a prime in $\ZZ$ then there is at most one way to represent p in the form $p = a ^ { 2 } + n b ^ { 2 }$ where a and b are positive integers.
-[4]
+(d) Deduce from (c) that if $p$ is a prime in $\ZZ$ then there is *at most one* way to represent $p$ in the form $p = a^{2} + nb^{2}$ where $a$ and $b$ are positive integers.
 :::
 
 ::: {.solution}

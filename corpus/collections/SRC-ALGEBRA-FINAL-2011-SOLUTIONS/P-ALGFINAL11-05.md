@@ -11,25 +11,20 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f ( X ) = X ^ { 6 } + a X ^ { 3 } + 1 \in \ZZ [ X ]$ be irreducible, and let $\mathcal G \subset S _ { 6 }$ be its galois group.
-(Analyzing possible factorizations, it is not hard to show—but you needn’t do so now—that f is reducible $\iff a = p ^ { 3 } - 3 p$ for some $p \in \ZZ . )$
+Let $f(X) = X^{6} + aX^{3} + 1 \in \ZZ[X]$ be irreducible, and let $\mathcal{G} \subset S_{6}$ be its Galois group.
+(Analyzing possible factorizations, it is not hard to show—but you needn't do so now—that $f$ is reducible $\iff a = p^{3} - 3p$ for some $p \in \ZZ$.)
 
-Let $F$ be a splitting field of $f \ ( \mathrm { o v e r } \ \QQ )$
+Let $F$ be a splitting field of $f$ (over $\QQ$).
 
-(a) Show that $\mathrm { i f } \ \abs{ a } \geq 2$ then $f$ has a real root $x ,$ and that with ω a primitive cube root of unity, the other roots are ωx, $\omega ^ { 2 } x , 1 / x , \omega / x$ , and $\omega ^ { 2 } / x$ [6]
+(a) Show that if $\abs{a} \geq 2$ then $f$ has a real root $x$, and that with $\omega$ a primitive cube root of unity, the other roots are $\omega x$, $\omega^{2}x$, $1/x$, $\omega/x$, and $\omega^{2}/x$.
 
-(b) Show that $\mathcal { G }$ is isomorphic to the order-12 dihedral group $D _ { 1 2 }$
+(b) Show that $\mathcal{G}$ is isomorphic to the order-12 dihedral group $D_{12}$.
 
-[10]
+*Hint.* Show that there is an order-6 automorphism $\psi$ of $F$ with $\psi x = \omega/x$ and $\psi\omega = \omega^{2}$. Also, complex conjugation gives an automorphism $\gamma$ of order 2.
 
-Hint.
-Show that there is an order-6 automorphism ψ of F with $\psi x = \omega / x$ and $\psi \omega = \omega ^ { 2 }$ . Also, complex conjugation gives an automorphism γ of order 2.
+(c) For $x$ as in (a), it is easily seen—and you may assume—that $x + 1/x$, $\omega x + 1/(\omega x)$, and $\omega^{2}x + 1/(\omega^{2}x)$ make up a single $\mathcal{G}$-orbit, and are distinct roots of $X^{3} - 3X + a$.
 
-(c) For x as in $\mathrm { ( a ) }$ , it is easily seen—and you may assume—that $x + 1 / x , \omega x + 1 / ( \omega x )$ and $\omega ^ { 2 } x + 1 / ( \omega ^ { 2 } x )$ make up a single $\mathcal { G } _ { \mathrm { - o r b i t } }$ , and are distinct roots of $X ^ { 3 } - 3 X + a$
-
-Show that there are precisely three fields $E \subset F$ such that $[ E : \QQ ] = 3$ , that these are conjugate to each other, and that each is generated over $\QQ$ by a root of $X ^ { 3 } - 3 X + a$ . [9]
-
-Total points:[80]
+Show that there are precisely three fields $E \subset F$ such that $[E : \QQ] = 3$, that these are conjugate to each other, and that each is generated over $\QQ$ by a root of $X^{3} - 3X + a$.
 :::
 
 ::: {.solution}

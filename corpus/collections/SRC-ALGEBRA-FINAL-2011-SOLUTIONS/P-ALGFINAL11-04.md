@@ -11,13 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let K be a finite field of cardinality $q ,$ let $n > 0$ be an integer relatively prime to $q ,$ and let $\zeta$ be a primitive n-th root of unity lying in some field $L \supset K$ with $[ L : K ] = m$
+Let $K$ be a finite field of cardinality $q$, let $n > 0$ be an integer relatively prime to $q$, and let $\zeta$ be a primitive $n$-th root of unity lying in some field $L \supset K$ with $[L : K] = m$.
 
-(a) Show that n divides $q ^ { m } - 1$
+(a) Show that $n$ divides $q^{m} - 1$.
 
-[4]
-
-(b) Show that $[ K ( \zeta ) : K ]$ is the order of $q$ in the group $( \ZZ / n \ZZ ) ^ { * }$ (units in $\ZZ / n \ZZ )$ . [6]
+(b) Show that $[K(\zeta) : K]$ is the order of $q$ in the group $(\ZZ/n\ZZ)^{*}$ (units in $\ZZ/n\ZZ$).
 :::
 
 ::: {.solution}

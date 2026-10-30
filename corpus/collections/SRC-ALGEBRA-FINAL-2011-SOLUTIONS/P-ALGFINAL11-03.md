@@ -11,14 +11,9 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Prove that in $\ZZ [ { \sqrt { - 5 } } ]$ , 7 is irreducible but not prime.
+(a) Prove that in $\ZZ[\sqrt{-5}]$, $7$ is irreducible but not prime.
 
-[10]
-
-(b) Is $\ZZ [ { \sqrt { - 5 } } ]$ a Principal Ideal Domain?
-(Justify your answer.)
-
-[5]
+(b) Is $\ZZ[\sqrt{-5}]$ a Principal Ideal Domain? (Justify your answer.)
 :::
 
 ::: {.solution}
