@@ -735,7 +735,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/galois-theory/compute-this-galois-group.md
   - [x] wiki/algebra/galois-theory/cyclotomic-and-radical-extensions.md
   - [x] wiki/algebra/galois-theory/index.md
-  - [ ] wiki/algebra/galois-theory/the-correspondence.md
+  - [x] wiki/algebra/galois-theory/the-correspondence.md
   - [ ] wiki/algebra/galois-theory/worked-examples.md
   - [ ] wiki/algebra/group-actions/index.md
   - [ ] wiki/algebra/group-actions/orbit-stabilizer.md
