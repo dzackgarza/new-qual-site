@@ -20,40 +20,45 @@ Show that $N \cong \im f \oplus \ker g$.
 :::
 
 ::: {.solution}
-\envlist
 
-- We have the following situation:
+::: pf
 
-\begin{tikzcd}
-	M &&& N
-	\arrow["f", from=1-1, to=1-4]
-	\arrow["g"', curve={height=24pt}, dashed, from=1-4, to=1-1]
-\end{tikzcd}
+::: {.pf-step #sum}
 
-> [Link to Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCJNIl0sWzMsMCwiTiJdLFswLDEsImYiXSxbMSwwLCJnIiwyLHsiY3VydmUiOjQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+$N=\im f+\ker g$.
 
-- Claim: $\im f + \ker g \subseteq N$, and this is in fact an equality.
-  - For $n\in N$, write
-  $$
-  n = n + (f\circ g)(n) - (f\circ g)(n) = \qty{n - (f\circ g)(n) } + (f\circ g)(n)
-  .$$
-  - The first term is in $\ker g$:
-  $$
-  g \qty{ n - (f\circ g)(n) }
-  &= g(n) - (g\circ f \circ g)(n)\\
-  &= g(n) - (\id_N \circ g)(n)\\
-  &= g(n) - g(n) \\
-  &= 0
-  .$$
-  - The second term is in $\im f$: it is $(f\circ g)(n) = f(g(n))$, which is the image under $f$ of the element $g(n) \in M$.
-- Claim: the sum is direct.
-  - Suppose $n\in \ker(g) \intersect \im(f)$, so $g(n) = 0$ and $n=f(m)$ for some $m\in M$.
-  Then
-  $$
-  0 = g(n) = g(f(m)) = (g\circ f)(m)
-  = \id_M(m) = m
-  ,$$
-  so $m=0$ and since $f$ is a morphism in $R\dash$modules, $n\coloneqq f(m) = 0$.
+::: pf-proof
+
+For $n\in N$ write $n=\bigl(n-f(g(n))\bigr)+f(g(n))$. The second term lies in $\im f$. The first lies in $\ker g$, because
+$$
+g\bigl(n-f(g(n))\bigr)=g(n)-(g\circ f)(g(n))=g(n)-g(n)=0.
+$$
+
 :::
 
+:::
 
+::: {.pf-step #direct}
+
+$\im f\cap\ker g=0$.
+
+::: pf-proof
+
+If $n=f(m)$ and $g(n)=0$, then $m=(g\circ f)(m)=g(n)=0$, so $n=f(0)=0$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Steps [](#sum){.pf-ref} and [](#direct){.pf-ref}, the addition map $\im f\oplus\ker g\to N$, $(a,b)\mapsto a+b$, is a surjective and injective $R$-module homomorphism. Hence
+$$
+\boxed{N\cong\im f\oplus\ker g.}
+$$
+
+:::
+
+:::
+
+:::

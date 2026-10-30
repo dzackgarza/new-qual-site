@@ -24,46 +24,56 @@ D_{2m} = \generators{\sigma, \tau \suchthat \sigma^m = 1 = \tau^2, \tau \sigma =
 :::
 
 ::: {.solution}
-\envlist
 
-- Suppose $G = \generators{ a, b}$ with $a^2 = b^2 = e$, satisfying some unknown relations.
+Let $H=\langle s,t\rangle$ and $r=st$. Let $m$ be the order of $r$, which is finite because $G$ is finite.
 
-- Consider $ab$.
-  Since $G$ is finite, this has finite order, so $(ab)^n = e$ for some $n\geq 2$.
+::: pf
 
-- Note $\generators{ab, b} \subseteq \generators{a, b}$, since any finite word in $ab, b$ is also a finite word in $a, b$.
+::: {.pf-step #gens}
 
-- Since $(ab)b = ab^2 = a$, we have $\generators{ab, b} \subseteq \generators{a, b}$, so $\generators{ab, b} = \generators{a, b}$.
-
-- Write $D_{2n} = F(r, s) / \ker \pi$ for $\pi: F(r, s)\to D_{2n}$ the canonical presentation map.
-
-- Define 
+$H=\langle r,t\rangle$, $m\ge2$, and
 $$
-\psi: F(r, s) &\to G \\
-r &\mapsto ab \\
-t &\mapsto b
-.$$
+r^m=1=t^2,\qquad trt^{-1}=r^{-1}.
+$$
 
-- This is surjective: the generators $ab$ and $b$ of $G$ are both in the image (they are the images of $r$ and $t$ respectively), and a homomorphism whose image contains a generating set is surjective.
+::: pf-proof
 
-- We'll show that $ab, a$ satisfy all of the relations defining $D_{2n}$, which factors $\psi$ through $\ker \pi$, yielding a surjection $\tilde \psi: D_{2n} \surjects G$.
+$rt=st^2=s$, so $s\in\langle r,t\rangle$, and clearly $\langle r,t\rangle\subseteq H$. Since $s\neq t$ and $t=t^{-1}$, $r=st^{-1}\neq1$, so $m\ge2$. Finally $trt^{-1}=tst=t^{-1}s^{-1}=(st)^{-1}=r^{-1}$, using $s=s^{-1}$ and $t=t^{-1}$.
 
-  - $(ab)^n = e$ by construction, $b^2 = e$ by assumption, and 
-  $$
-  b (ab) \inverseof{b} = bab\inverseof{b} = ba = \inverseof{b} \inverseof{a} = \inverseof{(ab)}
-  ,$$
-  corresponding to the relation $sr\inverseof{s} = \inverseof{r}$.
-  Here we've used that $o(a) = o(b) = 2$ implies $a=\inverseof{a}, b=\inverseof{b}$.
+:::
 
-- Surjectivity of $\tilde \psi$ yields $2n = \size D_{2n} \geq \size G$.
+:::
 
-- The claim is that $\size G \geq 2n$, which forces $\size G = 2n$.
-  Then $\tilde \psi$ will be a surjective group morphism between groups of the same order, and thus an isomorphism.
+::: {.pf-step #onto}
 
-  - We have $\generators{ ab }\leq G$, so $n\divides \size G$.
+There is a surjective homomorphism $D_{2m}\to H$ with $\sigma\mapsto r$ and $\tau\mapsto t$, so $\cardinality{H}\le2m$.
 
-  - Since $b\not\in \generators{ ab }$, this forces $\size G > n$, so $\size G \geq 2n$.
+::: pf-proof
 
-> Remark: see a more direct proof in [Theorem 2.1 and Theorem 1.1 here](https://kconrad.math.uconn.edu/blurbs/grouptheory/dihedral2.pdf)
+By Step [](#gens){.pf-ref}, $r$ and $t$ satisfy the defining relations of $D_{2m}$; the relation $\tau\sigma=\sigma^{-1}\tau$ is $trt^{-1}=r^{-1}$. By von Dyck's theorem the assignment extends to a homomorphism, and its image contains the generators $r,t$ of $H$.
+
+:::
+
+:::
+
+::: {.pf-step #outside}
+
+$t\notin\langle r\rangle$, so $\cardinality{H}\ge2m$.
+
+::: pf-proof
+
+Suppose $t=r^k$. Then $t$ commutes with $r$, so $r^{-1}=trt^{-1}=r$ and $m=2$. Then $\langle r\rangle=\{1,r\}$, and $t\neq1$ gives $t=r=st$, so $s=1$, contradicting that $s$ has order $2$. Hence $\langle r\rangle$ is a subgroup of order $m$ of $H$ that is not all of $H$, and its index in $H$ is at least $2$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Steps [](#onto){.pf-ref} and [](#outside){.pf-ref}, the surjection $D_{2m}\to H$ is a map between finite groups of the same order $2m$, hence an isomorphism. So $\langle s,t\rangle\cong D_{2m}$ with $m\ge2$.
+
+:::
+
+:::
 
 :::
