@@ -635,7 +635,7 @@ mathematical correction under its own node, not under copy policy.
   Round 5 (revision `fe84046a76`, analysis guides) injected the node below;
   `audited-deployment` needs it.
   - **`ad5-analysis`**. **Needs:** none.
-    - [ ] PR-L35O7, case $p=\infty$: the exceptional set omits
+    - [x] PR-L35O7, case $p=\infty$: the exceptional set omits
       $\{\abs{f_{n_1}} > \norm{f_{n_1}}_\infty\}$, so "bounded" does not follow; add it.
     - [x] Renderer and CITE-1: a citation links only when a `SRC-TEXT-<key>` collection exists.
       [Foll13] (13 uses; the collection is SRC-TEXT-FOL99, a different edition), [Apos74],

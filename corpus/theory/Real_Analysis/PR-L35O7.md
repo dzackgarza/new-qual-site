@@ -74,7 +74,8 @@ For each $k$ there is a null set $Z_k$ outside which
 $$
 \abs{f_{n_{k+1}}-f_{n_k}}\leq2^{-k}.
 $$
-Outside the null set $Z\coloneqq\bigcup_kZ_k$, the series of successive differences converges uniformly by the Weierstrass $M$-test.
+The set $Z_0\coloneqq\theset{\abs{f_{n_1}}>\norm{f_{n_1}}_\infty}$ is also null.
+Outside the null set $Z\coloneqq\bigcup_{k\geq0}Z_k$, the series of successive differences converges uniformly by the Weierstrass $M$-test, and $\abs{f_{n_k}}\leq\norm{f_{n_1}}_\infty+1$ for every $k$.
 Hence $(f_{n_k})$ converges uniformly on $X\setminus Z$ to a bounded measurable function $f$, extended by $0$ on $Z$, and
 $$
 \norm{f-f_{n_k}}_\infty\leq2^{1-k}.
