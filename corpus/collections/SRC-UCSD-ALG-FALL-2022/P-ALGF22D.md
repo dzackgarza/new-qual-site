@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF22D
 kind: problem
-title: "Galois group of an irreducible cubic with exactly one real root is S_3"
+title: "Irreducible cubic with one real root has Galois group $S_3$"
 classification:
   areas:
   - algebra

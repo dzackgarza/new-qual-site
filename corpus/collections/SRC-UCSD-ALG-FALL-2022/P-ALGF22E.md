@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF22E
 kind: problem
-title: "Flat quotient ring implies I ∩ J = IJ for all ideals J"
+title: "Flat $R/I$ implies $I \\cap J = IJ$"
 classification:
   areas:
   - algebra

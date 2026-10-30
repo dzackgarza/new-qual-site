@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF22C
 kind: problem
-title: "Galois group and primitive element for Q(sqrt(2), sqrt(3), i)"
+title: "Galois group and primitive element of $\\QQ(\\sqrt{2},\\sqrt{3},i)$"
 classification:
   areas:
   - algebra

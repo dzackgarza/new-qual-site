@@ -386,7 +386,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-ALG-FALL-2019
   - [x] SRC-UCSD-ALG-FALL-2020
   - [x] SRC-UCSD-ALG-FALL-2021
-  - [ ] SRC-UCSD-ALG-FALL-2022
+  - [x] SRC-UCSD-ALG-FALL-2022
   - [ ] SRC-UCSD-ALG-FALL-2023
   - [ ] SRC-UCSD-ALG-FALL-2024
   - [ ] SRC-UCSD-ALG-FALL-2025

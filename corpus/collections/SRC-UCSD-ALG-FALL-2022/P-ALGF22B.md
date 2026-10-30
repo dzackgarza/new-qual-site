@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF22B
 kind: problem
-title: "Conditions on r for a group presentation to yield order pq"
+title: "Presentation $\\langle a,b \\mid a^p, b^q, bab^{-1}=a^r\\rangle$ of order $pq$"
 classification:
   areas:
   - algebra
