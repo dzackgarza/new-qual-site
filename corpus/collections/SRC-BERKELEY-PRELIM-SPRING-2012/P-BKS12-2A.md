@@ -6,7 +6,8 @@ title: A finite group is not the union of conjugates of a proper subgroup
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -24,7 +24,7 @@ source:
   - P-BKF11-8A
   - P-BKS12-8A
   - P-BKS11-2A
-  - P-BKS21-9A
+  - P-BKS12-2A
   - P-BKF11-1B
   - P-BKS12-1A
   - P-BKF12-3A
