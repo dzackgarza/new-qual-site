@@ -30,7 +30,7 @@ source:
     problems:
     - P-ALGS08A
     - P-ALGS08B
-    - P-ALGS08C
+    - P-67U4W
   - name: Spring 2007, problem 1
     problems:
     - P-ALGS07A

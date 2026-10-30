@@ -19,7 +19,7 @@ source:
   problems:
   - P-ALGS08A
   - P-ALGS08B
-  - P-ALGS08C
+  - P-67U4W
   - P-ALGS08D
   - P-ALGS08E
   - P-ALGS08F
