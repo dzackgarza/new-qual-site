@@ -5,7 +5,8 @@ kind: problem
 title: $(n+1)\int_0^1x^nf(x)\,dx\to f(1)$ for continuous $f$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

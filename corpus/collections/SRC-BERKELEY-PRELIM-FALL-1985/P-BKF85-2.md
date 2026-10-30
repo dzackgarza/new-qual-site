@@ -5,7 +5,8 @@ kind: problem
 title: A unique real root of $ze^{\lambda-z}=1$ in the unit disk
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

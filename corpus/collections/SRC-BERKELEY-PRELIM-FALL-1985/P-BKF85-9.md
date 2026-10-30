@@ -5,7 +5,8 @@ kind: problem
 title: Maximum Euclidean norm on the ellipsoid $v^TAv=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

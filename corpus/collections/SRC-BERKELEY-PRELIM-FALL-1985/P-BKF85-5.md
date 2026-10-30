@@ -5,7 +5,8 @@ kind: problem
 title: Zeros of $z^4+3z^2+z+1$ in the right half-plane
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

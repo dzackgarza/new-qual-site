@@ -5,7 +5,8 @@ kind: problem
 title: Divergence to infinity for an autonomous ODE
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 audit:

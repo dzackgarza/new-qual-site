@@ -5,7 +5,8 @@ kind: problem
 title: Number of monic irreducible quadratics and cubics over $\FF_5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -16,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-1. How many distinct monic irreducible polynomials of degree $2$ are there over $\FF_5$?
+(a) How many distinct monic irreducible polynomials of degree $2$ are there over $\FF_5$?
 
-2. How many distinct monic irreducible polynomials of degree $3$ are there over $\FF_5$?
+(b) How many distinct monic irreducible polynomials of degree $3$ are there over $\FF_5$?
 :::
 
 ::: {.solution}

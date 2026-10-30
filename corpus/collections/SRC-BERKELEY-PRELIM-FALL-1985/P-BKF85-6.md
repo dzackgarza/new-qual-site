@@ -5,7 +5,8 @@ kind: problem
 title: Extreme eigenvalue bounds for a tridiagonal matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
