@@ -23,7 +23,7 @@ For a cubic $t^3+pt+q$, $\Delta = -4p^3-27q^2$.
 
 ## Quartics
 
-For an irreducible quartic $f\in\QQ[x]$, the Galois group is one of $S_4$, $A_4$, $D_4$, $C_4$, $C_2^2$, and the [[D-4DWC5|resolvent cubic]] together with the discriminant $\Delta$ determines which.
+For an irreducible quartic $f\in\QQ[x]$, the Galois group is one of $S_4$, $A_4$, $D_4$, $C_4$, $C_2^2$, and the [[D-4DWC5|resolvent cubic]] together with the discriminant $\Delta$ determines which, except that $D_4$ and $C_4$ are separated by whether $f$ stays irreducible over $\QQ(\sqrt\Delta)$.
 
 [[D-4DWC5]]
 
