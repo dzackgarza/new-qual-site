@@ -868,7 +868,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/applied-algebra/symmetric-functions/index.md
   - [x] wiki/archives/card-archives.md
   - [x] wiki/archives/further-studying.md
-  - [ ] wiki/archives/graduate-topics.md
+  - [x] wiki/archives/graduate-topics.md
   - [ ] wiki/archives/index.md
   - [ ] wiki/archives/qual-workshop-index.md
   - [ ] wiki/archives/solution-compendia.md
