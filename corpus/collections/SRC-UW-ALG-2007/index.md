@@ -20,6 +20,11 @@ source:
   - P-MMAQ-PY65OT2X3L
   - P-GZX6P
   - P-MMAQ-2E54Q6DNML
+  - P-UWALG07-4
+  - P-UWALG07-5
+  - P-UWALG07-6
+  - P-UWALG07-7
+  - P-UWALG07-8
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2007
 ---

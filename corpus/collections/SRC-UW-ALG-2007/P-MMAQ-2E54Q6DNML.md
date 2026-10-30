@@ -159,17 +159,17 @@ so $a$ and $b$ do not commute; hence it is nonabelian.
 
 :::
 
-::: pf-step
+::: pf-qed
 
 Therefore there are exactly two groups of order $21$ up to isomorphism:
-
-:::
-
-:::
-
 $$
 \boxed{C_{21}}
 \qquad\text{and}\qquad
 \boxed{C_7\rtimes C_3\text{ with nontrivial action}}.
 $$
+
+:::
+
+:::
+
 :::
