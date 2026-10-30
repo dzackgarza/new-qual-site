@@ -5,8 +5,10 @@ kind: problem
 title: $L^p$ harmonic functions on the plane vanish
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

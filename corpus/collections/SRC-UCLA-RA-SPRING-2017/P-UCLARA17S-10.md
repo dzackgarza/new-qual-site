@@ -5,8 +5,9 @@ kind: problem
 title: Harmonic functions modulo real parts of analytic functions on a punctured plane
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

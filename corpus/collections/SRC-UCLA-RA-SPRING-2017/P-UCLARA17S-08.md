@@ -5,8 +5,10 @@ kind: problem
 title: Critical points of finite Blaschke products
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Blaschke Factors
+  - Zeros
 relations: []
 review: draft
 audit:

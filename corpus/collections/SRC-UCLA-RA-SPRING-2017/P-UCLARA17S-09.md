@@ -5,8 +5,10 @@ kind: problem
 title: Jensen's formula and the convergence exponent of zeros
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 audit:

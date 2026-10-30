@@ -5,8 +5,10 @@ kind: problem
 title: Derivative growth of Hölder continuous analytic functions on the disk
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

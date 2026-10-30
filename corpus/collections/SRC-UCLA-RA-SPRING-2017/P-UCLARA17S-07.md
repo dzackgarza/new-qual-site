@@ -5,8 +5,10 @@ kind: problem
 title: Conformal homeomorphisms of closed annuli preserve the modulus
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Conformal Maps
+  - Harmonic Functions
 relations: []
 review: draft
 audit:
