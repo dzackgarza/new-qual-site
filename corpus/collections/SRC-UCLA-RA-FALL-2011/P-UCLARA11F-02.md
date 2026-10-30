@@ -6,7 +6,9 @@ title: 'Fourier transform of surface measure on $S^2$ and an $L^2$ functional'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - L²
 relations: []
 review: draft
 audit:

@@ -6,7 +6,10 @@ title: Continuity and decay of an Lp convolution
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Convolution
+  - Lp Spaces
+  - Continuity
 relations: []
 review: draft
 audit:

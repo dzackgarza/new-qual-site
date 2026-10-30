@@ -6,7 +6,10 @@ title: 'Weighted time derivative implies an $L^2$ limit'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L²
+  - Completeness
+  - Integrals
 relations: []
 review: draft
 audit:

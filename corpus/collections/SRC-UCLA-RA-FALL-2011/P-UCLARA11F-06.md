@@ -6,7 +6,10 @@ title: Upper semicontinuity of measure under weak-star convergence
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
+  - Metric Spaces
 relations: []
 review: draft
 audit:

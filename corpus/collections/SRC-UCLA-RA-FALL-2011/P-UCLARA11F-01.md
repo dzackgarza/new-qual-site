@@ -6,7 +6,10 @@ title: Egorov theorem on almost-uniform convergence
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Egorov
+  - Convergence of Functions
+  - Measure Theory
 relations: []
 review: draft
 audit:

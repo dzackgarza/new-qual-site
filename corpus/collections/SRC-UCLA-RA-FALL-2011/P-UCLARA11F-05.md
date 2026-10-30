@@ -6,7 +6,9 @@ title: Weak type estimate for the Hardy-Littlewood maximal function
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Maximal Functions
+  - L¹
 relations: []
 review: draft
 audit:
