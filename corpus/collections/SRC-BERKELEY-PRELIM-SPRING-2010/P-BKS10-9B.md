@@ -6,7 +6,8 @@ title: Ramsey bound $R(m+1,n+1)\le\binom{m+n}{m}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

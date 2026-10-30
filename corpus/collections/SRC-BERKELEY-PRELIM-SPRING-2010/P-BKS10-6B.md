@@ -6,7 +6,8 @@ title: Last decimal digit of $7^{7^{7^7}}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

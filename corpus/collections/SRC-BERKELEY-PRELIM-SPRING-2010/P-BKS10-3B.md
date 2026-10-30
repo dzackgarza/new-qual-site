@@ -6,7 +6,8 @@ title: Zeros of $z^7+e^z$ in the upper half of the disk $\abs{z}<2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

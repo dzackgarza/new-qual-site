@@ -6,7 +6,8 @@ title: Number of Sylow $67$-subgroups of a group of order $2010$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

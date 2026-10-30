@@ -6,7 +6,8 @@ title: Solutions of $y'=2^y-1/x$ with $y(1)\ge0$ increase on $[1,b)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

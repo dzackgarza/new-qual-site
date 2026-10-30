@@ -6,7 +6,8 @@ title: Simplicity of a full matrix ring
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

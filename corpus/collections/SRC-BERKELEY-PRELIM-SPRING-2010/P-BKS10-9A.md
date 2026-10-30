@@ -6,7 +6,8 @@ title: Solutions of $xy'+y=x$ for $x>0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

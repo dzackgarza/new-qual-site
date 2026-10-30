@@ -6,7 +6,8 @@ title: Four diagonalizability assertions for matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -27,13 +28,13 @@ audit:
 Let $A,B$ be complex square matrices of the same size.
 Prove or disprove each assertion:
 
-1. If $A$ and $B$ are diagonalizable, then $A+B$ is diagonalizable.
+(a) If $A$ and $B$ are diagonalizable, then $A+B$ is diagonalizable.
 
-2. If $A$ and $B$ are diagonalizable, then $AB$ is diagonalizable.
+(b) If $A$ and $B$ are diagonalizable, then $AB$ is diagonalizable.
 
-3. If $A^2=A$, then $A$ is diagonalizable.
+(c) If $A^2=A$, then $A$ is diagonalizable.
 
-4. If $AB$ is diagonalizable and invertible, then $BA$ is diagonalizable.
+(d) If $AB$ is diagonalizable and invertible, then $BA$ is diagonalizable.
 :::
 
 ::: {.solution}
@@ -42,7 +43,7 @@ Let $V\coloneqq\CC^n$ be the common underlying vector space.
 ::: pf
 
 ::: {.pf-step #assertion-one-false}
-Assertion 1 is false.
+Assertion (a) is false.
 
 ::: pf-proof
 Take
@@ -76,7 +77,7 @@ cannot be diagonalizable.
 :::
 
 ::: {.pf-step #assertion-two-false}
-Assertion 2 is false.
+Assertion (b) is false.
 
 ::: pf-proof
 Set
@@ -128,7 +129,7 @@ diagonalizable.
 :::
 
 ::: {.pf-step #assertion-three-true}
-Assertion 3 is true.
+Assertion (c) is true.
 
 ::: pf-proof
 Assume
@@ -160,7 +161,7 @@ eigenvalues $0$ and $1$, so $A$ is diagonalizable.
 :::
 
 ::: {.pf-step #assertion-four-true}
-Assertion 4 is true.
+Assertion (d) is true.
 
 ::: pf-proof
 If $AB$ is invertible, then

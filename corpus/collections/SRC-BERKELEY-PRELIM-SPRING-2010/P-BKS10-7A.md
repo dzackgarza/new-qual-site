@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^\infty\frac{x\sin 2x}{x^2+3}\,dx$ by residues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

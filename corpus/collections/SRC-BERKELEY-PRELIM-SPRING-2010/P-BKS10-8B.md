@@ -6,7 +6,8 @@ title: A Hermitian matrix with $A^5+A=2I$ is the identity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Characteristic polynomial of an invariant-subspace restriction
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Number of subfields of the splitting field of $x^5-2$ over $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

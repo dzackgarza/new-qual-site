@@ -6,7 +6,8 @@ title: Vanishing high moments force a continuous function to vanish
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

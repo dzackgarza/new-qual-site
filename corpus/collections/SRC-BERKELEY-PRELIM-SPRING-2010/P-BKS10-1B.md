@@ -6,7 +6,8 @@ title: Uniform convergence and mean value of $\sum_{n\ge0} e^{i\sqrt n\,x}/(n^2+
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

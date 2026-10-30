@@ -6,7 +6,8 @@ title: Residues of $\cot z/z^2$ and the Basel sum $\sum_{n\ge1}1/n^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

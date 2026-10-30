@@ -6,7 +6,8 @@ title: Invertibility of a sum of commuting finite-order matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
