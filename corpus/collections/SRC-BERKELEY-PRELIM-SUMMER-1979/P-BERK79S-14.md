@@ -5,7 +5,8 @@ kind: problem
 title: Cancellation for direct products of finite abelian groups
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

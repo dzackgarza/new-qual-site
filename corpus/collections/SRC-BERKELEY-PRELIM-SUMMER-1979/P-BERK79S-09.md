@@ -5,7 +5,8 @@ kind: problem
 title: One- and two-dimensional invariant subspaces of a linear operator on $\RR^3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -29,9 +30,9 @@ audit:
 ::: {.problem}
 Prove that every linear transformation $T:\RR^3\to\RR^3$ has
 
-1. a one-dimensional invariant subspace; and
+(a) a one-dimensional invariant subspace; and
 
-2. a two-dimensional invariant subspace.
+(b) a two-dimensional invariant subspace.
 :::
 
 ::: {.solution}
@@ -198,7 +199,7 @@ Step [](#s5){.pf-ref} shows that it is $T$-invariant.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (2).
+Step [](#s3){.pf-ref} proves part (a), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b).
 
 :::
 

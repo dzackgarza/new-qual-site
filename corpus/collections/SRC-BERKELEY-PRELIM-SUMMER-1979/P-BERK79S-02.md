@@ -5,7 +5,8 @@ kind: problem
 title: Polynomial gcds are unchanged by extending the coefficient field
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

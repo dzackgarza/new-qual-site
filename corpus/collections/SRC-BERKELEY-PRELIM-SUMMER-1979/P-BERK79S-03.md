@@ -5,7 +5,8 @@ kind: problem
 title: Maxima and minima of $\langle v_0,Av_0\rangle$ on the orthogonal group
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

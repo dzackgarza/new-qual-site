@@ -5,7 +5,8 @@ kind: problem
 title: A function vanishing exactly on the unit sphere can have negative Laplacian on the closed ball
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

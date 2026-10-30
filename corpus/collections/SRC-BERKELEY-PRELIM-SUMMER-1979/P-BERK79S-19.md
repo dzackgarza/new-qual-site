@@ -5,7 +5,8 @@ kind: problem
 title: Compactness of an integral transform of an $L^2$-bounded sequence
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -39,9 +40,9 @@ g_n(x)=\int_0^1\sqrt{x+y}\,f_n(y)\,dy,
 \qquad 0\le x\le1.
 $$
 
-1. Find a constant $K\ge0$ such that $\abs{g_n(x)}\le K$ for every $n$ and every $x\in[0,1]$.
+(a) Find a constant $K\ge0$ such that $\abs{g_n(x)}\le K$ for every $n$ and every $x\in[0,1]$.
 
-2. Prove that some subsequence of $\{g_n\}$ converges uniformly on $[0,1]$.
+(b) Prove that some subsequence of $\{g_n\}$ converges uniformly on $[0,1]$.
 :::
 
 ::: {.solution}
@@ -282,7 +283,7 @@ which converges uniformly on $[0,1]$.
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} answers part (1), and step [](#s8){.pf-ref} proves part (2).
+Step [](#s4){.pf-ref} answers part (a), and step [](#s8){.pf-ref} proves part (b).
 
 :::
 

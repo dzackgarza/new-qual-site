@@ -5,7 +5,8 @@ kind: problem
 title: Idempotent matrices of equal rank are similar
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

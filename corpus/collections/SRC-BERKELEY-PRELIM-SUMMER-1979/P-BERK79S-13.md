@@ -5,7 +5,8 @@ kind: problem
 title: Cardinality of $V$ and orders of $GL_n(F)$ and $SL_n(F)$ over a finite field
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -29,11 +30,11 @@ audit:
 ::: {.problem}
 Let $F$ be a finite field with $q$ elements and let $V$ be an $n$-dimensional vector space over $F$.
 
-1. Determine $\cardinality{V}$.
+(a) Determine $\cardinality{V}$.
 
-2. Determine the order of $GL_n(F)$.
+(b) Determine the order of $GL_n(F)$.
 
-3. Determine the order of $SL_n(F)$.
+(c) Determine the order of $SL_n(F)$.
 :::
 
 ::: {.solution}
@@ -210,8 +211,8 @@ $\abs{SL_n(F)}$.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} answers part (1), step [](#s4){.pf-ref} answers part (2), and step [](#s7){.pf-ref}
-answers part (3).
+Step [](#s1){.pf-ref} answers part (a), step [](#s4){.pf-ref} answers part (b), and step [](#s7){.pf-ref}
+answers part (c).
 
 :::
 

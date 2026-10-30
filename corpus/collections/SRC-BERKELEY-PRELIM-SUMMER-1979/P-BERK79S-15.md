@@ -5,7 +5,8 @@ kind: problem
 title: Convergence of $\sum_n z/(1+z^2)^n$ outside the lemniscate $\abs{1+z^2}=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

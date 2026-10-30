@@ -5,7 +5,8 @@ kind: problem
 title: Rational inputs making $3t^3+10t^2-3t$ integral
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: $x^2/(1+x^4)$ attains its maximum along a solution of $5x''+10x'+6x=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: A discontinuous derivative and Darboux's intermediate-value property
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -29,13 +30,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Give an example of a differentiable function $f:\RR\to\RR$ whose derivative $f'$ is not continuous.
+(a) Give an example of a differentiable function $f:\RR\to\RR$ whose derivative $f'$ is not continuous.
 
-2. Let $f$ be differentiable and suppose
-   $$
-   f'(0)<2<f'(1).
-   $$
-   Prove that $f'(x)=2$ for some $x\in[0,1]$.
+(b) Let $f$ be differentiable and suppose
+$$
+f'(0)<2<f'(1).
+$$
+Prove that $f'(x)=2$ for some $x\in[0,1]$.
 :::
 
 ::: {.solution}
@@ -44,7 +45,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-For part (1), define
+For part (a), define
 $$
 f(x)
 =
@@ -115,7 +116,7 @@ $$
 
 ::: {.pf-step #s3}
 
-The derivative $f'$ from part (1) is not continuous at $0$.
+The derivative $f'$ from part (a) is not continuous at $0$.
 
 ::: pf-proof
 
@@ -144,7 +145,7 @@ Hence $f'$ is discontinuous at $0$.
 
 ::: {.pf-step #s4}
 
-For part (2), define
+For part (b), define
 $$
 h(x)=f(x)-2x.
 $$
@@ -282,8 +283,8 @@ Thus $f'(c)=2$.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the requested example for part (1), and step [](#s8){.pf-ref}
-proves part (2).
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the requested example for part (a), and step [](#s8){.pf-ref}
+proves part (b).
 
 :::
 

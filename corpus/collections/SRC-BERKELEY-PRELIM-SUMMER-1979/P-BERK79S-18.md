@@ -5,7 +5,8 @@ kind: problem
 title: Linear independence of $x,Tx,T^2x$ when $T^3x=Tx+x$ over $\QQ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Automorphism group of a cyclic group of prime order
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

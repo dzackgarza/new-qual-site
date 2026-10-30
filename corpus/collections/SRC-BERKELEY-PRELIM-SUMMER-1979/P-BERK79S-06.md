@@ -5,7 +5,8 @@ kind: problem
 title: A circle integral extracting the extreme coefficients of a polynomial
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

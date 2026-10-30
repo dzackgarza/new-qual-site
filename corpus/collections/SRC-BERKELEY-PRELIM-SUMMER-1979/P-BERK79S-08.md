@@ -5,7 +5,8 @@ kind: problem
 title: A uniformly continuous homeomorphism onto $\RR^n$ has full domain
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
