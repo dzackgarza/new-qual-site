@@ -846,7 +846,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/stacks-and-moduli/spaces-and-stacks.md
   - [x] wiki/algebraic-geometry/syllabus.md
   - [x] wiki/algebraic-geometry/toric/affine-computations.md
-  - [ ] wiki/algebraic-geometry/toric/criteria.md
+  - [x] wiki/algebraic-geometry/toric/criteria.md
   - [ ] wiki/algebraic-geometry/toric/index.md
   - [ ] wiki/algebraic-geometry/toric/polytopes-and-divisors.md
   - [ ] wiki/algebraic-geometry/toric/surfaces-and-morphisms.md
