@@ -181,8 +181,6 @@ source:
   - id: E-UUBBS
   - id: E-UVNVV
   - id: E-UWKTZ
-  - id: E-SS3.EX-1
-    comment: Stein--Shakarchi 3.1
   - id: E-VA3OK
   - id: E-VGNUI
   - id: E-VWVTY
