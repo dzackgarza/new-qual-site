@@ -728,7 +728,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/fields/extensions.md
   - [x] wiki/algebra/fields/finite-fields.md
   - [x] wiki/algebra/fields/index.md
-  - [ ] wiki/algebra/fields/polynomials.md
+  - [x] wiki/algebra/fields/polynomials.md
   - [ ] wiki/algebra/fields/review-sheet-1.md
   - [ ] wiki/algebra/fields/separability.md
   - [ ] wiki/algebra/fields/splitting-and-normal.md
