@@ -12,7 +12,7 @@ Worked evaluations and exercises, grouped by the contour cases on [[complex-anal
 
 Upper semicircle; the arc integral tends to $0$ by the ML estimate.
 
-[[E-IZKCV]]
+[[E-SS3.EX-2]]
 [[E-UDYDX]]
 [[E-SS3.EX-6]]
 [[E-JZNWV]]

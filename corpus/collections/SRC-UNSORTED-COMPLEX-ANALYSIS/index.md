@@ -95,7 +95,6 @@ source:
   - id: E-ITVTT
   - id: E-IVHVW
     comment: Stein–Shakarchi 2.13
-  - id: E-IZKCV
   - id: E-J3QMJ
   - id: E-JLGWE
   - id: E-JOSK3
