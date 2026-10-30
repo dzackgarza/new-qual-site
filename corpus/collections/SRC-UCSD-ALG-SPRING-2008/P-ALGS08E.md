@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS08E
 kind: problem
-title: "Solvability by radicals for polynomials with V4 and S3 Galois groups"
+title: "Solvability by radicals with Galois group $\\ZZ_2 \\times \\ZZ_2$ or $S_3$"
 classification:
   areas:
   - algebra
