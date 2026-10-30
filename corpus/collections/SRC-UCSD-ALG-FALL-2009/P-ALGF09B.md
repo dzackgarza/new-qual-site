@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF09B
 kind: problem
-title: "Normal subgroup and abelianness for a group of order p(p+1)"
+title: "Normal subgroup and abelianness for a group of order $p(p+1)$"
 classification:
   areas:
   - algebra

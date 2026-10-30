@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF09A
 kind: problem
-title: "Presentation of a semidirect product Z_m ⋊_φ Z_n"
+title: "Presentation of a semidirect product $\\ZZ_m\\rtimes_\\phi\\ZZ_n$"
 classification:
   areas:
   - algebra

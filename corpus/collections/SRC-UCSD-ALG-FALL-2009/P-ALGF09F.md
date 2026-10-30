@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF09F
 kind: problem
-title: "A matrix with A^3 = A decomposes C^n into a direct sum of three subspaces"
+title: "A matrix with $A^3=A$ decomposes $\\CC^n$ into a direct sum of three subspaces"
 classification:
   areas:
   - algebra
