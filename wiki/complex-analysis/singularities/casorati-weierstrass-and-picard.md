@@ -9,7 +9,7 @@ topics:
 
 # Casorati-Weierstrass and Picard
 
-This page collects the theorems on the values a holomorphic function takes on a punctured neighbourhood of an essential singularity.
+This page collects the theorems on the values a holomorphic function takes on a punctured neighborhood of an essential singularity.
 
 ## Casorati--Weierstrass
 
