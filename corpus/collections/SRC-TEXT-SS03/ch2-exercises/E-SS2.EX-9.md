@@ -74,3 +74,7 @@ By step [](#s2){.pf-ref}, $\varphi(z)=z$ near $0$, so $\varphi(z)=z$ on the conn
 ::: {.remark}
 Connectedness is needed. For $\Omega=\DD\cup D_1(3)$, the map equal to $z$ on $\DD$ and to the constant $3$ on $D_1(3)$ is holomorphic from $\Omega$ to $\Omega$, fixes $0$ with derivative $1$, and is not linear.
 :::
+
+::: {.remark title="Variations"}
+The conclusion is often stated as $\varphi(z)=z$ for all $z\in\Omega$, with $\Omega$ a bounded domain. The argument shows $\varphi(z)=z$ near $z_0$, and connectedness of $\Omega$ extends this by the identity theorem.
+:::
